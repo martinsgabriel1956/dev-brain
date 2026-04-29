@@ -112,3 +112,4 @@ E2E não bloqueia merge de PR — é lento demais. Bloqueia o **deploy para prod
 ## Key Sources
 
 - [[sources/piramide-de-testes]]
+- [[sources/roadmap-dev-senior-2026]] — testes como seguro contra decisões ruins da IA (pilar 5)

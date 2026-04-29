@@ -72,3 +72,4 @@ public static void exibirNotas(int[] notas, int[] qtd) { ... }
 ## Key Sources
 
 - [[sources/logica-programacao-sem-matematica]]
+- [[sources/roadmap-dev-senior-2026]] — decomposição como sub-tópico do pilar 1: pensar antes de codar

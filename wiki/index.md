@@ -8,6 +8,8 @@ Catálogo de todas as páginas do knowledge graph.
 
 | Página | Hook |
 |---|---|
+| [[sources/por-que-devs-nao-terminam-projetos]] | Psicologia do cemitério de projetos — dopamina, planning fallacy, scope creep, perfeccionismo, MVP e goal gradient effect |
+| [[sources/roadmap-dev-senior-2026]] | 5 pilares para sênior em 2026 — pensar antes de codar, entender execução, sistema vs arquivos, produção, IA sem dependência |
 | [[sources/trimodal-compensacao-tech]] | Modelo trimodal de compensação em tech — 3 tiers, por que sites de salário erram, equity como diferencial, decisão de empresa > decisão de cargo |
 | [[sources/5-principios-programador]] | 5 princípios aprendidos na dor — logs, usuários caóticos, tech debt deliberado, naming, paridade local-prod |
 | [[sources/apagao-de-seniors-vibe-coding]] | Vibe coding + apagão de sêniors — detector N+1, property-based testing, memory profiling, segurança e arquitetura no código da IA |
@@ -553,6 +555,9 @@ Catálogo de todas as páginas do knowledge graph.
 
 | Página | Hook |
 |---|---|
+| [[concepts/vocabulario-tecnico]] | Nomear conceitos com precisão — sem isso, documentação não faz sentido e discussões excluem |
+| [[concepts/pensamento-sistemico]] | Pensar em sistema (carga real, inputs inesperados) vs arquivos que passam em teste |
+| [[concepts/ia-ciclo-dependencia]] | Quanto menos entende o que IA gera, menos consegue avaliar — ciclo de degradação |
 | [[concepts/dev-e-negocio]] | Dev que entende receita, custo e margem influencia resultados reais |
 | [[concepts/ownership-proativo]] | Puxar responsabilidade por projetos de alto impacto — não esperar cair no colo |
 | [[concepts/contratacao-barra-alta]] | Manter padrões elevados na contratação — sênior deve participar do filtro |

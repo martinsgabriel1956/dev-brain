@@ -144,3 +144,4 @@ Coleta:   OpenTelemetry (vendor-neutral)
 - [[sources/observabilidade]]
 - [[wiki/sources/diferenciais-portfolio-backend-junior]]
 - [[sources/5-principios-programador]]
+- [[sources/roadmap-dev-senior-2026]] — pilar 4: ler o sistema como sistema vivo (logs, métricas)

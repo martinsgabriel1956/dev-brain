@@ -4,6 +4,60 @@ Registro cronológico de todas as operações no wiki.
 
 ---
 
+## [2026-04-29] ingest | A Ciência por Trás de Projetos Inacabados
+
+**Source:** `wiki/sources/por-que-devs-nao-terminam-projetos.md`
+**Raw:** `raw/por-que-devs-nao-terminam-projetos.md`
+**Skill:** `tech-mentor-leadership`
+
+**Páginas criadas (sources):**
+- `wiki/sources/por-que-devs-nao-terminam-projetos.md`
+
+**Páginas criadas (concepts):**
+- `wiki/concepts/dopamina-e-projetos.md`
+- `wiki/concepts/planning-fallacy.md`
+- `wiki/concepts/scope-creep.md`
+- `wiki/concepts/mvp.md`
+- `wiki/concepts/perfeccionismo-em-devs.md`
+- `wiki/concepts/paralisia-por-analise.md`
+- `wiki/concepts/goal-gradient-effect.md`
+- `wiki/concepts/aprendizado-por-luta.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/vibe-coding.md` — backlink + relação com aprendizado-por-luta
+- `wiki/concepts/aprendizado-deliberado.md` — backlink + Kolb
+
+**Notas:** Fonte de psicologia aplicada a devs. Conceitos técnicos ausentes no wiki — 8 novos. Open question relevante: onde está a linha entre "bom o suficiente" e tech debt intencional em side projects.
+
+---
+
+## [2026-04-29] ingest | Roadmap Dev Sênior 2026 — 5 Pilares Fundamentais
+
+**Source:** `wiki/sources/roadmap-dev-senior-2026.md`
+**Raw:** `raw/roadmap-dev-senior-2026.md`
+**Skill:** `tech-mentor-leadership` (skills path indisponível — ingest sem calibração de referência)
+
+**Páginas criadas (sources):**
+- `wiki/sources/roadmap-dev-senior-2026.md`
+
+**Páginas criadas (concepts):**
+- `wiki/concepts/vocabulario-tecnico.md`
+- `wiki/concepts/pensamento-sistemico.md`
+- `wiki/concepts/ia-ciclo-dependencia.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/abstracao.md`
+- `wiki/concepts/decomposicao-de-problemas.md`
+- `wiki/concepts/observabilidade.md`
+- `wiki/concepts/vibe-coding.md`
+- `wiki/concepts/piramide-de-testes.md`
+
+**Conceitos cobertos:** 5 pilares (pensar antes de codar, execução real, pensamento sistêmico, sistemas em produção, IA sem dependência), ciclo de degradação por IA, vocabulário técnico como base
+
+**Open questions:** velocidade real do ciclo de degradação de competência; como medir qualidade de julgamento técnico vs geração de código
+
+---
+
 ## [2026-04-29] ingest | A Natureza Trimodal da Compensação em Tech
 
 **Source:** `wiki/sources/trimodal-compensacao-tech.md`

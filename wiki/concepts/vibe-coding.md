@@ -96,3 +96,5 @@ Quem não sabe verificar esses problemas não consegue revisar o código que a I
 - [[sources/divida-cognitiva-ai-brainfry]]
 - [[sources/ia-salario-ou-carga-de-trabalho]]
 - [[sources/apagao-de-seniors-vibe-coding]]
+- [[sources/roadmap-dev-senior-2026]] — pilar 5: ciclo de degradação via IA → ver [[concepts/ia-ciclo-dependencia]]
+- [[sources/por-que-devs-nao-terminam-projetos]] — vibe coding elimina o mecanismo de luta → ver [[concepts/aprendizado-por-luta]]

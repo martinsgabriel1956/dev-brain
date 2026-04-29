@@ -47,3 +47,4 @@ Sem prática, o cérebro mantém conceitos errados junto com corretos — não t
 - [[sources/como-aprender-programacao-3-dicas]]
 - [[sources/logica-programacao-sem-matematica]]
 - [[sources/principio-da-inversao-programador]]
+- [[sources/por-que-devs-nao-terminam-projetos]] — Kolb experiential learning: fazer → refletir → adaptar → ver [[concepts/aprendizado-por-luta]]

@@ -65,3 +65,4 @@ Misturar níveis na mesma função é um code smell — viola [[single-responsib
 ## Key sources
 
 - [[wiki/sources/acoplamento-abstracao-estado]]
+- [[sources/roadmap-dev-senior-2026]] — abstração como pilar 2: camadas que escondem complexidade sem esconder clareza
