@@ -4,7 +4,7 @@ title: "Abstraction Illusion"
 aliases: ["abstraction illusion", "ilusão de abstração", "padrão acessível não apropriado"]
 date_created: 2026-04-23
 date_updated: 2026-04-23
-source_count: 2
+source_count: 3
 tags: [ia, arquitetura, over-engineering, constraints, decisao]
 skill: tech-mentor-backend
 status: stable
@@ -45,3 +45,4 @@ Ver [[sources/super-productivity-ai-architecture-guide]] — workflow de 7 passo
 
 - [[sources/super-productivity-ai-architecture-guide]]
 - [[sources/clean-architecture-ia-custo-real]]
+- [[sources/overengineering-carol-ate-quinta]]

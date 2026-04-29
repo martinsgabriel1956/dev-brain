@@ -4,7 +4,7 @@ title: "Abstraction Bloat"
 aliases: ["abstraction bloat", "over-engineering ia", "complexidade gerada por agente"]
 date_created: 2026-04-23
 date_updated: 2026-04-23
-source_count: 3
+source_count: 4
 tags: [ia, agentes, arquitetura, over-engineering, qualidade, tokens]
 skill: tech-mentor-ai
 status: stable
@@ -47,3 +47,4 @@ Abstraction bloat cria um loop de custo:
 - [[sources/addy-osmani-80-problem-agentic-coding]]
 - [[sources/clean-architecture-ia-custo-real]]
 - [[sources/super-productivity-ai-architecture-guide]]
+- [[sources/overengineering-carol-ate-quinta]]

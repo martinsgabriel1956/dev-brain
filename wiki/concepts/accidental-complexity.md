@@ -4,7 +4,7 @@ title: "Complexidade Acidental"
 aliases: ["complexidade acidental", "accidental complexity", "tech debt estrutural"]
 date_created: 2026-04-23
 date_updated: 2026-04-23
-source_count: 1
+source_count: 2
 tags: [accidental-complexity, tech-debt, fred-brooks, arquitetura, refactoring]
 skill: tech-mentor-system-design
 status: stable
@@ -61,3 +61,4 @@ A maioria do que times chamam de "tech debt" é complexidade acidental acumulada
 ## Key Sources
 
 - [[sources/conceitos-que-ninguem-ensina]]
+- [[sources/overengineering-carol-ate-quinta]]

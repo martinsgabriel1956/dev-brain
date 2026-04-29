@@ -8,6 +8,8 @@ Catálogo de todas as páginas do knowledge graph.
 
 | Página | Hook |
 |---|---|
+| [[sources/encoding-hashing-encryption]] | Encoding vs Hashing vs Encryption — representação reversível, hash irreversível, encryption com chave |
+| [[sources/overengineering-carol-ate-quinta]] | Over-engineering — KISS, ego-driven development, abstração prematura, conhecimento restrito no time |
 | [[sources/por-que-devs-nao-terminam-projetos]] | Psicologia do cemitério de projetos — dopamina, planning fallacy, scope creep, perfeccionismo, MVP e goal gradient effect |
 | [[sources/roadmap-dev-senior-2026]] | 5 pilares para sênior em 2026 — pensar antes de codar, entender execução, sistema vs arquivos, produção, IA sem dependência |
 | [[sources/trimodal-compensacao-tech]] | Modelo trimodal de compensação em tech — 3 tiers, por que sites de salário erram, equity como diferencial, decisão de empresa > decisão de cargo |

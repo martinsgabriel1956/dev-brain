@@ -4,6 +4,48 @@ Registro cronológico de todas as operações no wiki.
 
 ---
 
+## [2026-04-29] ingest | Encoding vs Hashing vs Encryption
+
+**Source:** `wiki/sources/encoding-hashing-encryption.md`
+**Raw:** `raw/encoding-hashing-encryption.md`
+**Skill:** `tech-mentor-security`
+
+**Páginas criadas (sources):**
+- `wiki/sources/encoding-hashing-encryption.md`
+
+**Páginas criadas (concepts):**
+- `wiki/concepts/encoding.md`
+- `wiki/concepts/hashing.md`
+- `wiki/concepts/encryption.md`
+- `wiki/concepts/caesar-cipher.md`
+
+**Notas:** Source introdutório/didático. Cobre fundamentos com exemplos concretos (URL encoding, WhatsApp E2E, Caesar Cipher). Open question: diferença entre hash de senha (bcrypt/argon2 com salt) vs hash de integridade (SHA-256) não é endereçada pelo source — possível expansão em `hashing.md`.
+
+---
+
+## [2026-04-29] ingest | Over-Engineering: Quando o Código Bonito Vira um Problema
+
+**Source:** `wiki/sources/overengineering-carol-ate-quinta.md`
+**Raw:** `raw/overengineering-carol-ate-quinta.md`
+**Skill:** `tech-mentor-backend`
+
+**Páginas criadas (sources):**
+- `wiki/sources/overengineering-carol-ate-quinta.md`
+
+**Páginas criadas (concepts):**
+- `wiki/concepts/over-engineering.md`
+- `wiki/concepts/kiss.md`
+- `wiki/concepts/ego-driven-development.md`
+
+**Páginas atualizadas (concepts):**
+- `wiki/concepts/accidental-complexity.md` — backlink + source_count 1→2
+- `wiki/concepts/abstraction-bloat.md` — backlink + source_count 3→4
+- `wiki/concepts/abstraction-illusion.md` — backlink + source_count 2→3
+
+**Notas:** Source de vídeo/transcrição PT-BR. Vetor humano (ego + experiência) do mesmo fenômeno que abstraction-bloat documenta para IA. Converge com listen-notes-good-enough-engineering. Tensão produtiva com clean-architecture e solid — padrões corretos, aplicação errada é a fonte do problema.
+
+---
+
 ## [2026-04-29] ingest | A Ciência por Trás de Projetos Inacabados
 
 **Source:** `wiki/sources/por-que-devs-nao-terminam-projetos.md`
