@@ -1,0 +1,36 @@
+---
+type: concept
+title: "Neuroplasticidade"
+aliases: ["plasticidade neuronal", "neuroplasticity"]
+date_created: 2026-04-22
+date_updated: 2026-04-22
+source_count: 1
+tags: [aprendizado, neurociencia, memoria, carreira]
+skill: tech-mentor-leadership
+status: stable
+---
+
+# Neuroplasticidade
+
+Capacidade do sistema nervoso de mudar, adaptar-se e moldar-se a nível estrutural e funcional ao longo do desenvolvimento e quando sujeito a novas experiências. É a base da formação de memórias e da aprendizagem.
+
+## Implicação para Programação
+
+O cérebro muda sua estrutura física para se adaptar ao que é exposto. Isso significa que:
+
+1. Estudar sem entender nada ainda é útil — prepara circuitos neuronais para receber a informação
+2. Educadores com boa didática preparam o terreno antes de transferir informação — os ruins apenas transferem
+3. Parar e deixar o cérebro "desfragmentar" após estudo intenso é parte do processo, não sinal de fraqueza
+
+## Relação com o Processo de Aprendizagem
+
+```
+Avalanche de conteúdo (sem entender) → patinar → pausa →
+prática → intercalar teoria/prática → clique
+```
+
+A pausa é quando a neuroplasticidade acontece: o cérebro reorganiza os circuitos em background.
+
+## Key Sources
+
+- [[sources/como-aprender-programacao-3-dicas]]

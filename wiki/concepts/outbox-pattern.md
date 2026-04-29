@@ -1,0 +1,41 @@
+---
+type: concept
+title: "Outbox Pattern"
+aliases: ["transactional outbox", "outbox + cdc", "outbox"]
+date_created: 2026-04-22
+date_updated: 2026-04-22
+source_count: 1
+tags: [sistemas-distribuidos, mensageria, outbox, cdc, consistencia]
+skill: tech-mentor-system-design
+status: stub
+---
+
+# Outbox Pattern
+
+Garante entrega de mensagens/eventos sem [[concepts/two-phase-commit]] — usando uma tabela `outbox` no mesmo banco da transação.
+
+## Mecanismo
+
+```
+1. Transação local: escreve no banco + escreve evento na tabela outbox
+2. CDC (Debezium) lê o outbox e publica no broker (Kafka, etc.)
+3. Broker entrega ao consumidor
+```
+
+Atomicidade garantida pela transação local — não precisa de lock distribuído.
+
+## Por que Funciona
+
+Escrever no banco principal e na tabela outbox é uma única transação ACID. O CDC é assíncrono — se falhar, retenta. Garante **at-least-once delivery**.
+
+## Trade-off
+
+Latência adicional (CDC é assíncrono). Consumidor deve ser idempotente (mensagem pode ser entregue mais de uma vez).
+
+## Alternativa ao 2PC
+
+[[concepts/two-phase-commit]] garante entrega síncrona com risco de blocking. Outbox garante entrega assíncrona com risco de duplicação — trade-off de latência vs complexidade.
+
+## Key Sources
+
+- [[sources/3pc]]

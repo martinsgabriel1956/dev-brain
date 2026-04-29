@@ -1,0 +1,221 @@
+{
+  "main": {
+    "id": "3f17abc7db531af4",
+    "type": "split",
+    "children": [
+      {
+        "id": "33df683e2e374249",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "99c9cf39d475595e",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Visualização em gráfico"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "462dd15d7de42ee9",
+    "type": "split",
+    "children": [
+      {
+        "id": "79bd6d37f7a0f461",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d783eb9091204fb6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "ac7cae862c722dad",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "50dcd2100d1a0ddb",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "9bfcec930350f90f",
+    "type": "split",
+    "children": [
+      {
+        "id": "40fc1dd0f32c3031",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6ffde4f969af6c2d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "wiki/index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para index"
+            }
+          },
+          {
+            "id": "bbce761faed622cd",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "wiki/index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para index"
+            }
+          },
+          {
+            "id": "f8d75aa8c0ce9ce4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "cfb631195dbdedb6",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "7cda9525afe52650",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "wiki/index.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false
+    }
+  },
+  "active": "99c9cf39d475595e",
+  "lastOpenFiles": [
+    "wiki/concepts/mobile-testes.md",
+    "wiki/concepts/mobile-testes.md.tmp.614857.1777025675409",
+    "wiki/concepts/mobile-state-management-local.md",
+    "wiki/concepts/mobile-state-management-local.md.tmp.614857.1777025658979",
+    "wiki/concepts/mobile-state-management-global.md",
+    "wiki/concepts/mobile-state-management-global.md.tmp.614857.1777025646960",
+    "wiki/concepts/mobile-seguranca.md",
+    "wiki/concepts/mobile-seguranca.md.tmp.614857.1777025635158",
+    "wiki/concepts/mobile-push-notifications.md",
+    "wiki/concepts/mobile-push-notifications.md.tmp.614857.1777025613373",
+    "wiki/concepts/mobile-publicacao-aso.md",
+    "wiki/concepts/mobile-publicacao-aso.md.tmp.614857.1777025599295",
+    "wiki/concepts/mobile-profiling.md",
+    "wiki/concepts/mobile-profiling.md.tmp.614857.1777025582352",
+    "wiki/concepts/mobile-permissoes.md",
+    "wiki/concepts/mobile-performance-listas.md",
+    "wiki/concepts/mobile-performance-listas.md.tmp.614857.1777025552613",
+    "wiki/concepts/mobile-on-device-ai.md",
+    "wiki/concepts/mobile-on-device-ai.md.tmp.614857.1777025540084",
+    "wiki/concepts/mobile-offline-first-avancado.md",
+    "wiki/concepts/mobile-offline-first-avancado.md.tmp.614857.1777025526125",
+    "wiki/concepts/mobile-offline-first-basico.md",
+    "wiki/concepts/mobile-navegacao.md",
+    "wiki/concepts/mobile-monitoramento.md",
+    "wiki/concepts/mobile-monetizacao.md",
+    "wiki/concepts/mobile-metricas-criticas.md",
+    "wiki/concepts/mobile-layouts-responsivos.md",
+    "wiki/concepts/mobile-kmp.md",
+    "wiki/concepts/mobile-feature-flags.md",
+    "wiki/concepts/mobile-design-system.md",
+    "wiki/concepts/mobile-deep-links.md",
+    "wiki/concepts/mobile-cross-platform-decision.md",
+    "wiki/concepts/mobile-cicd.md",
+    "wiki/concepts/mobile-chamadas-http.md",
+    "wiki/concepts/mobile-biometria.md",
+    "wiki/concepts/mobile-baseline-profiles.md"
+  ]
+}
