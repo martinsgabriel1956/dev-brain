@@ -4,7 +4,7 @@ title: "Testar o Próprio Código"
 aliases: ["self testing", "testes automatizados", "testar antes de entregar", "happy path só"]
 date_created: 2026-04-22
 date_updated: 2026-04-26
-source_count: 2
+source_count: 3
 tags: [testes, hábitos, qualidade, craftsmanship, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -61,3 +61,4 @@ Usuários não seguem o fluxo esperado. Eles digitam emoji em campos de nome, su
 
 - [[wiki/sources/habitos-ruins-de-programador]]
 - [[sources/5-principios-programador]]
+- [[wiki/sources/4-habitos-programador-ineficiente]]

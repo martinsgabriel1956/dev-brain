@@ -50,6 +50,7 @@ Catálogo de todas as páginas do knowledge graph.
 | [[sources/useeffect-problemas-e-solucoes]] | Três anti-padrões de useEffect: estado derivado, stale closure, race condition em fetch |
 | [[sources/desenvolvedor-acima-da-media-10-itens]] | 10 comportamentos que distinguem devs acima da média — negócio, ownership, liderança |
 | [[sources/habitos-ruins-de-programador]] | 4 hábitos ruins de programador — dizer sim pra tudo, definição de pronto, testes, commits |
+| [[sources/4-habitos-programador-ineficiente]] | 4 Habits That Make You an Inefficient Developer — artigo original do Medium com URL, versão EN traduzida |
 | [[sources/comparacao-na-carreira-dev]] | Comparação com colegas no início da carreira — bastidor vs palco, familiaridade vs capacidade |
 | [[sources/piramide-de-testes]] | Estratégia de testes em camadas — unitário, integração, E2E e variantes Trophy |
 | [[sources/tdd]] | TDD Red/Green/Refactor — ciclo obrigatório, escolas Detroit vs London |

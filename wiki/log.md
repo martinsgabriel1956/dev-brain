@@ -2,6 +2,22 @@
 
 Registro cronológico de todas as operações no wiki.
 
+## [2026-04-29] ingest | 4 Habits That Make You an Inefficient Developer
+
+**Source:** [[wiki/sources/4-habitos-programador-ineficiente]]  
+**Raw file:** `raw/4-habitos-programador-ineficiente.md`  
+**URL:** https://medium.com/better-programming/4-habits-that-make-you-an-inefficient-developer-f4384c4b9df5  
+**Skill:** tech-mentor-leadership  
+
+**Páginas tocadas:**
+- Criada: `wiki/sources/4-habitos-programador-ineficiente.md`
+- Atualizada: `wiki/concepts/dizer-sim-para-tudo.md` (source_count 1→2)
+- Atualizada: `wiki/concepts/definicao-de-pronto.md` (source_count 1→2)
+- Atualizada: `wiki/concepts/testar-proprio-codigo.md` (source_count 2→3)
+- Atualizada: `wiki/concepts/atomic-commits.md` (source_count 1→2)
+
+**Notas:** Source complementa ingest anterior (`habitos-ruins-de-programador`, 2026-04-22) — agora com URL primária do artigo original e conteúdo traduzido para EN. Os 4 conceitos centrais já existiam na wiki com backlinks; este ingest reforça a cobertura dessas páginas com a fonte canônica.
+
 ---
 
 ## [2026-04-29] ingest | Encoding vs Hashing vs Encryption

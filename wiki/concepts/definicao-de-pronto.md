@@ -4,7 +4,7 @@ title: "Definição de Pronto"
 aliases: ["definition of done", "DoD", "o que é pronto", "pronto de verdade"]
 date_created: 2026-04-22
 date_updated: 2026-04-22
-source_count: 1
+source_count: 2
 tags: [hábitos, qualidade, craftsmanship, código, entrega, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -53,3 +53,4 @@ Outro sintoma: revisar o próprio PR focando em estilização e formatação em 
 ## Key Sources
 
 - [[wiki/sources/habitos-ruins-de-programador]]
+- [[wiki/sources/4-habitos-programador-ineficiente]]

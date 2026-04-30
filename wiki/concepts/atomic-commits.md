@@ -4,7 +4,7 @@ title: "Atomic Commits"
 aliases: ["commit atômico", "commits pequenos", "PR pequeno", "unidade funcional de commit"]
 date_created: 2026-04-22
 date_updated: 2026-04-22
-source_count: 1
+source_count: 2
 tags: [git, commits, hábitos, craftsmanship, code-review, qualidade]
 skill: tech-mentor-leadership
 status: stable
@@ -67,3 +67,4 @@ Não existe número mágico de linhas, mas o princípio é: **um PR deve ser rev
 ## Key Sources
 
 - [[wiki/sources/habitos-ruins-de-programador]]
+- [[wiki/sources/4-habitos-programador-ineficiente]]
