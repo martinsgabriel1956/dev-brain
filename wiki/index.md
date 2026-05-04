@@ -255,7 +255,13 @@ Catálogo de todas as páginas do knowledge graph.
 | [[sources/go-producao]] | Go Produção — graceful shutdown, health checks, Prometheus, OpenTelemetry, pprof, Docker multi-stage |
 | [[sources/go-stdlib]] | Go Stdlib — net/http, encoding/json, database/sql, table-driven tests, log/slog |
 | [[sources/acoplamento-abstracao-estado]] | Acoplamento, Abstração e Estado — lentes de design: o que cada termo revela no código |
+| [[sources/design-pattern-proxy]] | Proxy pattern — interceptador entre cliente e objeto real; cache, controle de acesso, log |
+| [[sources/pensamento-estruturado-resolucao-de-problemas]] | Método de 5 passos para resolver qualquer problema — árvore de decomposição, pensamento regressivo, hipótese e validação |
+| [[sources/como-multiplas-linguagens-vivem-num-unico-binario]] | Pipeline GCC 4 fases, static/dynamic linking, ABI, FFI — como linguagens diferentes coexistem num único binário |
 | [[sources/diferenciais-portfolio-backend-junior]] | Portfólio Backend Júnior — 7 diferenciais reais vs o que NÃO focar na primeira vaga |
+| [[sources/erros-workflow-research-plan-implement]] | 3 erros do workflow RPI — instruction budget, plano horizontal, não ler o código |
+| [[sources/context-engineering-avancado-para-coding-agents]] | Dumb zone, compaction intencional, RPI, mental alignment — context engineering avançado |
+| [[sources/ports-and-adapters-codebase-para-ia]] | Codebase legível para humanos = legível para IA — Ports & Adapters antes/depois com blog |
 
 ---
 
@@ -358,6 +364,11 @@ Catálogo de todas as páginas do knowledge graph.
 | [[concepts/documentar-conquistas]] | Bullet points diários de vitórias — agrega para avaliações de performance |
 | [[concepts/sem-balas-de-prata]] | Não existe arquitetura, framework ou linguagem universal — opinião precisa de argumento |
 | [[concepts/decomposicao-de-problemas]] | Dividir problema em passos + SRP em métodos — núcleo da lógica de programação |
+| [[concepts/pensamento-estruturado]] | 5 passos para resolver qualquer problema — habilidade treinável, não dom |
+| [[concepts/arvore-de-decomposicao]] | Quebra hierárquica de problema vago em perguntas específicas e testáveis |
+| [[concepts/pensamento-regressivo]] | Começar pelo estado final e mapear de trás pra frente — evita suposições |
+| [[concepts/causa-raiz]] | Ponto de origem real do problema — atue somente aqui, não no sintoma |
+| [[concepts/hipotese-e-validacao]] | Formular hipótese e validar com dados antes de agir — evita dias no ponto errado |
 
 ### Carreira & Portfólio
 
@@ -374,6 +385,21 @@ Catálogo de todas as páginas do knowledge graph.
 | [[concepts/documentacao-api-swagger]] | Swagger + Scalar — API reference automática; 1 em 10 devs faz isso |
 | [[concepts/error-handling-estruturado]] | Classes de erro + HTTP codes corretos + handler global |
 | [[concepts/sql-alem-do-basico]] | JOINs, agregações, subqueries, window functions — sair do CRUD |
+
+### Design Patterns
+
+| Página | Hook |
+|---|---|
+| [[concepts/proxy-pattern]] | Substituto/interceptador que controla acesso ao objeto real |
+| [[concepts/structural-patterns]] | Categoria GoF de padrões de composição de objetos |
+| [[concepts/decorator-pattern]] | Extensão de comportamento em cadeia (stub) |
+| [[concepts/facade-pattern]] | Interface simplificada para subsistema complexo (stub) |
+| [[concepts/adapter-pattern]] | Conversão de interface incompatível (stub) |
+| [[concepts/cache-layer]] | Armazenamento de resultados custosos para evitar reprocessamento |
+| [[concepts/lazy-initialization]] | Criação adiada de objetos pesados (Virtual Proxy) |
+| [[concepts/open-closed-principle]] | Aberto para extensão, fechado para modificação |
+| [[concepts/single-responsibility-principle]] | Uma classe, uma razão para mudar |
+| [[concepts/liskov-substitution-principle]] | Implementações substituem contratos sem quebrar comportamento |
 
 ### Software Design
 
@@ -491,6 +517,16 @@ Catálogo de todas as páginas do knowledge graph.
 | Página | Hook |
 |---|---|
 | [[concepts/divida-cognitiva]] | Falta de entendimento acumulada ao delegar para IA — quebra a capacidade do time de pensar |
+| [[concepts/hexagonal-architecture]] | Ports (interfaces) + Adapters (implementações) — isola domínio da infra, contexto mínimo para IA |
+| [[concepts/codebase-legibilidade-ia]] | Qualidade do código > qualidade do prompt — legibilidade humana = legibilidade para agentes |
+| [[concepts/rpi-workflow]] | Research → Plan → Implement — framework de context engineering para coding agents |
+| [[concepts/instruction-budget]] | ~150–200 instruções seguíveis com consistência — system prompt + CLAUDE.md + MCPs somam |
+| [[concepts/dumb-zone]] | Zona de degradação da context window acima de ~40% — o modelo perde qualidade |
+| [[concepts/compaction-intencional]] | Comprimir contexto periodicamente em markdown antes de cruzar o threshold |
+| [[concepts/plano-vertical]] | Implementação por fatias testáveis imediatamente vs plano horizontal por camada |
+| [[concepts/design-discussion]] | Alinhamento de direção antes do código — 200 linhas revisáveis em 10 minutos |
+| [[concepts/separacao-de-contextos]] | Research e plan em sessões distintas — impede contaminação de fase |
+| [[concepts/mental-alignment]] | O real propósito do code review — sincronização do modelo mental do time |
 | [[concepts/ai-brainfry]] | Esgotamento por supervisão de IA — +14% esforço mental, +12% fadiga, +19% sobrecarga |
 | [[concepts/vibe-coding]] | Múltiplas threads de agentes paralelas — alta iniciativa, baixa acabativa, paralisia por foco |
 | [[concepts/navigation-paradox]] | Agente perde 1/4 dos arquivos críticos em deps escondidas (DI); ferramenta de grafos ignorada 58% |
@@ -596,6 +632,19 @@ Catálogo de todas as páginas do knowledge graph.
 | [[concepts/comunicacao-tecnica]] | Tradução na ponta emissora — responsabilidade de quem fala, não de quem ouve |
 | [[concepts/curriculo-vs-portfolio]] | Promessa vs prova — currículo descreve, portfólio demonstra maestria |
 
+### CS Fundamentals — Compilação & Linking
+
+| Página | Hook |
+|---|---|
+| [[concepts/pipeline-de-compilacao]] | 4 fases do GCC — pré-processamento, compilação (→ assembly), montagem (→ .o), linking |
+| [[concepts/object-file]] | Produto intermediário da montagem — código de máquina sem endereços resolvidos |
+| [[concepts/static-linking]] | Copia código de biblioteca no executável — autocontido, sem dependências externas |
+| [[concepts/dynamic-linking]] | Referência lazy a .so/.dll — carregado em runtime, compartilhado entre processos |
+| [[concepts/toolchain]] | Pipeline de ferramentas plugáveis — GCC é GNU Compiler Collection, não "compilador C" |
+| [[concepts/abi]] | Application Binary Interface — contrato binário entre linguagens (calling convention, layout, name mangling) |
+| [[concepts/calling-convention]] | Regras de registradores para passar parâmetros entre funções — ponto mais comum de falha ao misturar linguagens |
+| [[concepts/ffi]] | Foreign Function Interface — extern, #[no_mangle], CGo — mecanismos para chamar entre linguagens no mesmo processo |
+
 ### CS Fundamentals — Sistemas Operacionais
 
 | Página | Hook |
@@ -636,6 +685,8 @@ Catálogo de todas as páginas do knowledge graph.
 | [[entities/figma]] | Ferramenta de design — papel varia por abordagem (design first vs code first) |
 | [[entities/dribbble]] | Plataforma de referências visuais para devs frontend |
 | [[entities/lovable]] | Ferramenta IA para construção de apps — exemplo de design de produto acessível |
+| [[entities/gang-of-four]] | Autores do catálogo oficial de 23 padrões de projeto (GoF) |
+| [[entities/refactoring-guru]] | Site de referência para padrões de projeto em PT-BR |
 | [[entities/charlie-munger]] | Investidor, sócio de Buffett — popularizou o princípio da inversão como modelo mental |
 | [[entities/george-hotz]] | geohot — hacker do iPhone/PS3, carro autônomo open source, citado sobre aprendizado na prática |
 | [[entities/karl-gustav-jakob-jacobi]] | Matemático alemão — origem do "inverter, sempre inverta" |

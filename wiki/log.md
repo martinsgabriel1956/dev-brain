@@ -2,6 +2,162 @@
 
 Registro cronológico de todas as operações no wiki.
 
+## [2026-05-04] ingest | Ports and Adapters — Codebase Preparada para IA
+
+**Source:** [[wiki/sources/ports-and-adapters-codebase-para-ia]]
+**Raw file:** `raw/ports-and-adapters-codebase-para-ia.md`
+**Skill:** `tech-mentor-backend` — ref `architecture-foundations.md`
+
+**Páginas criadas (sources):**
+- `wiki/sources/ports-and-adapters-codebase-para-ia.md`
+
+**Páginas criadas (concepts):**
+- `wiki/concepts/hexagonal-architecture.md` — resolveu órfão: era referenciado por `sources/hexagonal-architecture.md` desde 2026-04-23 mas nunca criado
+- `wiki/concepts/codebase-legibilidade-ia.md` — insight central: legibilidade humana = legibilidade para agentes
+
+**Páginas atualizadas:**
+- `wiki/sources/hexagonal-architecture.md` — backlink para novo source
+- `wiki/concepts/acoplamento.md` — backlink + source_count implícito
+
+**Notas:** Vídeo PT-BR (autor: Galego). Ângulo principal: a qualidade da codebase importa mais do que o prompt ou o modelo — é o claim mais direto sobre o tema que o wiki tem até agora. O exemplo antes/depois (god class 238 linhas → ports and adapters modular) concretiza o que Navigation Paradox e Addy Osmani descrevem abstratamente. Conceito novo importante: `codebase-legibilidade-ia` como síntese do princípio. Bonus: criado `hexagonal-architecture` concept page que estava faltando desde o batch ingest de 2026-04-23 (era referenciado como wikilink mas nunca escrito).
+
+**Questões abertas:**
+- Existe tamanho de módulo "ideal" para agente trabalhar sem abrir outros módulos?
+- Como medir ROI do refactor em termos de qualidade de resposta do agente?
+
+---
+
+## [2026-05-04] ingest | Erros do Workflow RPI + Context Engineering Avançado para Coding Agents
+
+**Sources:**
+- [[wiki/sources/erros-workflow-research-plan-implement]]
+- [[wiki/sources/context-engineering-avancado-para-coding-agents]]
+
+**Raw files:**
+- `raw/erros-workflow-research-plan-implement.md`
+- `raw/context-engineering-avancado-para-coding-agents.md`
+
+**Skill:** `tech-mentor-ai` — refs `context-engineering.md` + `reasoning-models-2025.md`
+
+**Páginas criadas (sources):**
+- `wiki/sources/erros-workflow-research-plan-implement.md`
+- `wiki/sources/context-engineering-avancado-para-coding-agents.md`
+
+**Páginas criadas (concepts):**
+- `wiki/concepts/rpi-workflow.md`
+- `wiki/concepts/instruction-budget.md`
+- `wiki/concepts/dumb-zone.md`
+- `wiki/concepts/compaction-intencional.md`
+- `wiki/concepts/plano-vertical.md`
+- `wiki/concepts/design-discussion.md`
+- `wiki/concepts/separacao-de-contextos.md`
+- `wiki/concepts/mental-alignment.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/vertical-slice-architecture.md` — backlinks + source_count 1→3
+- `wiki/concepts/comprehension-debt.md` — backlinks + source_count 1→3
+
+**Notas:** Dois sources complementares sobre o mesmo tema — um em PT-BR (análise dos erros do RPI), outro traduzido do EN (talk do Dex na AI Engineer). Conceito mais importante: **instruction budget** — a maioria dos devs nunca contou quantas instruções o agente está recebendo no total (system prompt + CLAUDE.md + MCPs). O threshold empírico de ~150–200 é fácil de ultrapassar sem perceber. Segundo insight crítico: **dumb zone** a partir de ~40% da context window — MCPs verbosos empurram o agente para essa zona permanentemente. Conexão forte com conceitos já existentes: vertical-slice-architecture (plano vertical é VSA aplicado a workflow), comprehension-debt (não ler o código durante research é o caminho direto para ele).
+
+**Questões abertas:**
+- Instruction budget de 150–200 é por conversa ou por turn?
+- O threshold de 40% vale para modelos com context window de 1M+ tokens?
+- Compaction intencional tem custo de tokens de escrita — qual o break-even?
+
+---
+
+## [2026-05-02] ingest | Como Múltiplas Linguagens Vivem Num Único Binário
+
+**Source:** [[wiki/sources/como-multiplas-linguagens-vivem-num-unico-binario]]
+**Raw file:** `raw/como-multiplas-linguagens-vivem-num-unico-binario.md`
+**URL:** null (vídeo do canal Core Dumped — George)
+**Skill:** `lang-systems` — refs `compiladores-interpretadores.md` + `polyglot-wasm-comparative.md`
+
+**Páginas criadas (sources):**
+- `wiki/sources/como-multiplas-linguagens-vivem-num-unico-binario.md`
+
+**Páginas criadas (concepts):**
+- `wiki/concepts/pipeline-de-compilacao.md`
+- `wiki/concepts/object-file.md`
+- `wiki/concepts/static-linking.md`
+- `wiki/concepts/dynamic-linking.md`
+- `wiki/concepts/toolchain.md`
+- `wiki/concepts/abi.md`
+- `wiki/concepts/calling-convention.md`
+- `wiki/concepts/ffi.md`
+
+**Notas:** Transcrição de vídeo PT-BR (traduzida de EN). Fonte de altíssima qualidade para entender a cadeia compilação→linking→interop. Insight central: o linker é o ponto de encontro entre linguagens — object files são o formato neutro. Dois pontos contra-intuitivos bem explicados: (1) compiladores não geram código de máquina diretamente — passam por assembly; (2) ABI compatibility é necessária além de ter um linker em comum. Conecta com skill `compiladores-interpretadores.md` (pipeline, LLVM IR) e `polyglot-wasm-comparative.md` (interop entre linguagens em produção). Não há contradições com o wiki existente.
+
+**Questões abertas:**
+- Próxima parte do vídeo cobre linguagens compiladas + interpretadas — qual é o mecanismo equivalente ao linker nesse caso?
+- Como o LLVM IR se encaixa nesse modelo? Seria uma forma de pular a fase de object file?
+
+---
+
+## [2026-05-01] ingest | Pensamento Estruturado para Resolução de Problemas
+
+**Source:** [[wiki/sources/pensamento-estruturado-resolucao-de-problemas]]
+**Raw file:** `raw/pensamento-estruturado-resolucao-de-problemas.md`
+**URL:** null
+**Skill:** `tech-mentor-leadership` (skills path indisponível — ingest sem calibração de referência)
+
+**Páginas criadas (sources):**
+- `wiki/sources/pensamento-estruturado-resolucao-de-problemas.md`
+
+**Páginas criadas (concepts):**
+- `wiki/concepts/pensamento-estruturado.md`
+- `wiki/concepts/arvore-de-decomposicao.md`
+- `wiki/concepts/pensamento-regressivo.md`
+- `wiki/concepts/causa-raiz.md`
+- `wiki/concepts/hipotese-e-validacao.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/decomposicao-de-problemas.md` — backlink + source_count 1→2
+- `wiki/concepts/pensamento-sistemico.md` — backlink + source_count 1→2
+
+**Notas:** Transcrição de vídeo PT-BR (canal Faculdade Rocket City, autor não identificado). O método de 5 passos é agnóstico de linguagem e aplicável além de problemas técnicos. Insight central: em nenhum momento você precisa mexer no código para chegar à causa raiz — a decomposição acontece antes. Conexão relevante com IA: pensamento estruturado é o que transforma a IA de geradora de ruído em ferramenta de precisão. Complementa cluster existente de carreira/aprendizado ([[decomposicao-de-problemas]], [[pensamento-sistemico]], [[dados-vs-intuicao]], [[principio-da-inversao]]).
+
+**Questões abertas:**
+- Como aplicar a árvore de decomposição em problemas de produto (não só técnicos)?
+- Existe um limite de profundidade útil para a decomposição antes de virar análise infinita?
+
+---
+
+## [2026-05-01] ingest | Padrão de Projeto: Proxy
+
+**Source:** [[wiki/sources/design-pattern-proxy]]
+**Raw file:** `raw/design-pattern-proxy.md`
+**URL:** https://refactoring.guru/pt-br/design-patterns/proxy
+**Skill:** `tech-mentor-backend` (skills path indisponível — ingest sem calibração de referência)
+
+**Páginas criadas (sources):**
+- `wiki/sources/design-pattern-proxy.md`
+
+**Páginas criadas (concepts):**
+- `wiki/concepts/proxy-pattern.md`
+- `wiki/concepts/structural-patterns.md`
+- `wiki/concepts/cache-layer.md`
+- `wiki/concepts/open-closed-principle.md`
+- `wiki/concepts/single-responsibility-principle.md`
+- `wiki/concepts/liskov-substitution-principle.md`
+- `wiki/concepts/decorator-pattern.md`
+- `wiki/concepts/facade-pattern.md`
+- `wiki/concepts/adapter-pattern.md`
+- `wiki/concepts/repository-pattern.md`
+- `wiki/concepts/lazy-initialization.md`
+
+**Páginas criadas (entities):**
+- `wiki/entities/gang-of-four.md`
+- `wiki/entities/refactoring-guru.md`
+
+**Notas:** Transcrição de vídeo PT-BR (autor: Renato Augusto). Padrão mais versátil da categoria estrutural — casos de uso cobrem cache, controle de acesso, log, lazy init, validação. Conceito central: o proxy e o objeto real devem implementar a mesma interface (LSP) para o cliente ser agnóstico. Distinção de Decorator documentada: motivação diferente (controle de acesso vs extensão de comportamento). Princípios SOLID 3 (SRP, OCP, LSP) ancorados com exemplos concretos do mesmo caso prático.
+
+**Questões abertas:**
+- Em que momento o Proxy vira over-engineering vs. quando é a solução certa?
+- Como testar unitariamente um proxy com cache sem precisar de infra real?
+
+---
+
 ## [2026-04-29] ingest | 4 Habits That Make You an Inefficient Developer
 
 **Source:** [[wiki/sources/4-habitos-programador-ineficiente]]  

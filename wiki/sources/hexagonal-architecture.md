@@ -3,7 +3,7 @@ type: source
 title: "Hexagonal Architecture (Ports & Adapters)"
 aliases: ["hexagonal architecture", "ports and adapters", "alistair cockburn", "driving ports", "driven ports"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
+date_updated: 2026-05-04
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/hexagonal-architecture.md
 source_url: ""
 date_published: ""
@@ -40,6 +40,10 @@ Hexagonal Architecture (Alistair Cockburn) isola o domínio de todas as dependê
 - [[concepts/driving-ports]]
 - [[concepts/driven-ports]]
 - [[concepts/clean-architecture]]
+
+## Key Sources Adicionais
+
+- [[sources/ports-and-adapters-codebase-para-ia]] — exemplo antes/depois com blog + ângulo de IA (2026-05-04)
 
 ## Open Questions
 

@@ -4,7 +4,7 @@ title: "Decomposição de Problemas"
 aliases: ["problem decomposition", "quebrar problemas", "dividir para conquistar", "passos menores"]
 date_created: 2026-04-22
 date_updated: 2026-04-22
-source_count: 1
+source_count: 2
 tags: [logica, algoritmos, solid, iniciante, pensamento-computacional]
 skill: tech-mentor-leadership
 status: stable
@@ -73,3 +73,4 @@ public static void exibirNotas(int[] notas, int[] qtd) { ... }
 
 - [[sources/logica-programacao-sem-matematica]]
 - [[sources/roadmap-dev-senior-2026]] — decomposição como sub-tópico do pilar 1: pensar antes de codar
+- [[sources/pensamento-estruturado-resolucao-de-problemas]] — método de 5 passos com [[arvore-de-decomposicao]] como ferramenta central

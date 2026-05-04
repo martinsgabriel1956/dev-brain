@@ -58,3 +58,4 @@ Sistemas altamente acoplados congelam: uma mudança pequena quebra coisas inespe
 ## Key sources
 
 - [[wiki/sources/acoplamento-abstracao-estado]]
+- [[sources/ports-and-adapters-codebase-para-ia]] — forte acoplamento em god class quebra três módulos por uma mudança

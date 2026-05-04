@@ -3,8 +3,8 @@ type: concept
 title: "Comprehension Debt"
 aliases: ["comprehension debt", "dívida de compreensão", "dívida cognitiva código ia"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
-source_count: 1
+date_updated: 2026-05-04
+source_count: 3
 tags: [ia, agentes, qualidade, ownership, cognição, divida-tecnica]
 skill: tech-mentor-ai
 status: stable
@@ -46,3 +46,5 @@ Dívida cognitiva (Margaret Storey, 2026) é o esforço mental extra de supervis
 ## Key Sources
 
 - [[sources/addy-osmani-80-problem-agentic-coding]]
+- [[sources/erros-workflow-research-plan-implement]] — não ler o código durante o research é o caminho direto para comprehension debt
+- [[sources/context-engineering-avancado-para-coding-agents]] — mental alignment como antídoto coletivo

@@ -4,7 +4,7 @@ title: "Pensamento Sistêmico"
 aliases: ["systems thinking", "pensar em sistema", "visão de sistema"]
 date_created: 2026-04-29
 date_updated: 2026-04-29
-source_count: 1
+source_count: 2
 tags: [arquitetura, sistemas, fundamentos, carreira, design]
 skill: tech-mentor-leadership
 status: draft
@@ -42,3 +42,4 @@ Devs que focam em "fazer funcionar" sem perguntar "o que acontece quando cresce?
 ## Key Sources
 
 - [[sources/roadmap-dev-senior-2026]]
+- [[sources/pensamento-estruturado-resolucao-de-problemas]] — complementa: pensar sobre o problema antes de qualquer código

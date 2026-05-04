@@ -3,8 +3,8 @@ type: concept
 title: "Vertical Slice Architecture"
 aliases: ["vertical slice", "feature-first architecture", "slice por feature"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
-source_count: 1
+date_updated: 2026-05-04
+source_count: 3
 tags: [arquitetura, modularidade, feature-first, agentes, tokens]
 skill: tech-mentor-backend
 status: stub
@@ -58,3 +58,5 @@ Sem discipline, Vertical Slice pode levar a duplicação de lógica entre featur
 ## Key Sources
 
 - [[sources/clean-architecture-ia-custo-real]]
+- [[sources/erros-workflow-research-plan-implement]] — plano vertical como aplicação do VSA a workflow de agente
+- [[sources/context-engineering-avancado-para-coding-agents]] — implementação incremental para manter context window baixa
