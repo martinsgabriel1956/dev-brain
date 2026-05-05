@@ -30,3 +30,4 @@ Comunicação assíncrona entre serviços via broker de mensagens. Resolve acopl
 ## Key Sources
 
 - [[sources/mensageria]]
+- [[sources/design-pattern-observer]] — distinção Observer (in-process) vs Pub/Sub (broker distribuído)

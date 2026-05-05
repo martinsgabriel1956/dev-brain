@@ -2,6 +2,129 @@
 
 Registro cronológico de todas as operações no wiki.
 
+## [2026-05-05] ingest | Observer — Padrão de Projeto Comportamental (Refactoring Guru)
+
+**Source:** [[sources/design-pattern-observer]]
+**Raw file:** `raw/design-pattern-observer.md`
+**URL:** https://refactoring.guru/pt-br/design-patterns/observer
+**Skill:** `tech-mentor-backend` — ref `design-patterns.md`
+
+**Páginas criadas (sources):**
+- `wiki/sources/design-pattern-observer.md`
+
+**Páginas criadas (concepts):**
+- `wiki/concepts/chain-of-responsibility-pattern.md` — stub; base do padrão de middleware HTTP; contraponto ao Observer (sequencial vs broadcast)
+- `wiki/concepts/pub-sub.md` — stable; distinção crítica com Observer formalizada (direto vs broker)
+
+**Páginas atualizadas (backlink adicionado):**
+- `wiki/concepts/observer-pattern.md` — source_count 1→2
+- `wiki/concepts/behavioral-patterns.md` — source_count 2→3
+- `wiki/concepts/mediator-pattern.md` — distinção Mediator vs Observer aprofundada; source_count 1→2
+- `wiki/concepts/command-pattern.md` — source_count 1→2
+- `wiki/concepts/mensageria.md` — Observer vs Pub/Sub como contexto; source_count 1→2
+
+**Notas:** Fonte canônica do Refactoring Guru (PT-BR). Dois insights que faltavam na wiki: (1) distinção formal Observer vs Pub/Sub — Observer é in-process e direto, Pub/Sub usa broker intermediário e permite cross-service; (2) distinção Mediator vs Observer é "bem obscura" segundo o próprio artigo — podem ser usados simultaneamente, e Observer pode implementar Mediator dinamicamente. Ponto prático importante: assinantes são notificados em **ordem aleatória** — se a ordem importa, Observer não é a ferramenta certa sem camada adicional. `pub-sub` criado como stable porque a distinção com Observer é o conceito mais importante e recorrente no contexto de mensageria.
+
+**Questões em aberto:**
+- Como garantir ordem de notificação quando ela importa?
+- Memory leaks por assinantes não removidos — como gerenciar ciclo de vida?
+- Quando usar Observer in-process vs mensageria externa (Kafka, SNS)?
+
+---
+
+## [2026-05-05] ingest | Strategy — Padrão de Projeto Comportamental (Refactoring Guru)
+
+**Source:** [[sources/design-pattern-strategy]]
+**Raw file:** `raw/design-pattern-strategy.md`
+**URL:** https://refactoring.guru/pt-br/design-patterns/strategy
+**Skill:** `tech-mentor-backend` — ref `design-patterns.md`
+
+**Páginas criadas (sources):**
+- `wiki/sources/design-pattern-strategy.md`
+
+**Páginas criadas (concepts):**
+- `wiki/concepts/template-method-pattern.md` — stub; contraponto direto ao Strategy (herança vs composição)
+- `wiki/concepts/state-pattern.md` — stub; estrutura idêntica ao Strategy, intenção diferente
+- `wiki/concepts/command-pattern.md` — stub; ambos parametrizam com ação, propósitos distintos
+- `wiki/concepts/bridge-pattern.md` — stub; estrutura similar (composição), propósito estrutural
+
+**Páginas atualizadas (backlink adicionado):**
+- `wiki/concepts/strategy-pattern.md` — source_count 1→2
+- `wiki/concepts/open-closed-principle.md` — source_count 2→3
+- `wiki/concepts/behavioral-patterns.md` — source_count 1→2
+- `wiki/concepts/decorator-pattern.md` — distinção Decorator vs Strategy; source_count 1→2
+
+**Notas:** Fonte canônica do Refactoring Guru (PT-BR). Insights que faltavam na wiki: (1) o **contexto não sabe qual estratégia está usando** — trabalha apenas pela interface; (2) distinção precisa Strategy vs Template Method: mesmo propósito, mecanismo oposto — herança estática vs composição dinâmica; (3) distinção Strategy vs State: estrutura idêntica, mas State gerencia transições automáticas enquanto Strategy é trocada explicitamente pelo cliente; (4) em linguagens com funções de primeira classe, funções anônimas podem substituir as classes ConcreteStrategy.
+
+**Questões em aberto:**
+- Em TypeScript/JS, quando usar classes ConcreteStrategy vs funções de primeira classe?
+- Como testar Contexto quando a estratégia tem efeitos colaterais (I/O, rede)?
+
+---
+
+## [2026-05-05] ingest | Facade — Padrão de Projeto Estrutural (Refactoring Guru)
+
+**Source:** [[sources/design-pattern-facade]]
+**Raw file:** `raw/design-pattern-facade.md`
+**URL:** https://refactoring.guru/pt-br/design-patterns/facade
+**Skill:** `tech-mentor-backend` — ref `design-patterns.md`
+
+**Páginas criadas (sources):**
+- `wiki/sources/design-pattern-facade.md`
+
+**Páginas criadas (concepts):**
+- `wiki/concepts/mediator-pattern.md` — stub; distinção central com Facade documentada
+- `wiki/concepts/flyweight-pattern.md` — stub; distinção com Facade (muitos objetos vs um objeto)
+- `wiki/concepts/god-object.md` — anti-pattern; risco explícito quando Facade acumula lógica
+- `wiki/concepts/abstract-factory.md` — stub; alternativa ao Facade quando a preocupação é criação de objetos
+
+**Páginas atualizadas (backlink adicionado):**
+- `wiki/concepts/facade-pattern.md` — source_count 2→3
+- `wiki/concepts/adapter-pattern.md` — distinção Facade vs Adapter formalizada; source_count 2→3
+- `wiki/concepts/proxy-pattern.md` — relação Facade vs Proxy documentada; source_count 1→2
+- `wiki/concepts/singleton-pattern.md` — Facade frequentemente vira Singleton; source_count 1→2
+
+**Notas:** Fonte canônica do Refactoring Guru (PT-BR). Adiciona rigor à definição do Facade — especialmente dois pontos que faltavam na wiki: (1) o subsistema **não está ciente** da fachada, objetos internos se comunicam diretamente entre si; (2) **Fachada Adicional** como solução para evitar que a fachada principal vire God Object. Distinções formalizadas: Facade ≠ Adapter, Facade ≠ Mediator, Facade ≠ Proxy. `god-object` criado como anti-pattern estável — era referenciado em dois sources mas nunca tinha página própria.
+
+**Questões em aberto:**
+- Quando faz sentido ter Fachada Adicional vs dividir em múltiplas classes de serviço?
+- Como testar uma fachada que inicializa o subsistema internamente (sem DI)?
+
+---
+
+## [2026-05-05] ingest | Sete Padrões de Design de Software
+
+**Source:** [[sources/sete-padroes-de-design-de-software]]
+**Raw file:** `raw/sete-padroes-de-design-de-software.md`
+**Skill:** `tech-mentor-backend` — ref `design-patterns.md`
+
+**Páginas criadas (sources):**
+- `wiki/sources/sete-padroes-de-design-de-software.md`
+
+**Páginas criadas (concepts):**
+- `wiki/concepts/singleton-pattern.md`
+- `wiki/concepts/builder-pattern.md`
+- `wiki/concepts/factory-pattern.md`
+- `wiki/concepts/strategy-pattern.md`
+- `wiki/concepts/observer-pattern.md`
+- `wiki/concepts/gang-of-four.md` (em concepts/ — entity equivalente já existe em entities/)
+- `wiki/concepts/creational-patterns.md`
+- `wiki/concepts/behavioral-patterns.md`
+
+**Páginas atualizadas (stub → stable):**
+- `wiki/concepts/facade-pattern.md` — enriquecido com código, trade-offs, exemplos; source_count 1→2
+- `wiki/concepts/adapter-pattern.md` — enriquecido com código, trade-offs, distinção Proxy; source_count 1→2
+- `wiki/concepts/open-closed-principle.md` — enriquecido com exemplo Strategy, limitações; source_count 1→2
+- `wiki/concepts/structural-patterns.md` — tabela completa dos 7 padrões, distinção de criacionais; source_count 1→2
+
+**Notas:** Transcrição de vídeo EN (canal Forest, YouTube), traduzida e estruturada. Cobre 7 dos 23 padrões GoF com exemplos TypeScript práticos. Claim mais importante: Strategy Pattern como aplicação direta do Open/Closed Principle — a classe consumidora fica intocada, nova estratégia = nova classe. Segundo insight relevante: Singleton é essencialmente uma variável global glorificada — usar apenas quando unicidade é genuinamente necessária. Facade e Observer já existiam como stubs do ingest de Proxy (2026-05-01) — promovidos a stable com conteúdo rico.
+
+**Questões abertas:**
+- O source não cobre Decorator, Proxy, Command, Template Method, Chain of Responsibility — todos relevantes segundo a ref `design-patterns.md`.
+- Singleton em multi-thread exige double-checked locking — não coberto no vídeo.
+
+---
+
 ## [2026-05-04] ingest | Ports and Adapters — Codebase Preparada para IA
 
 **Source:** [[wiki/sources/ports-and-adapters-codebase-para-ia]]

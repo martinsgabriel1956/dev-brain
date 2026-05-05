@@ -27,3 +27,4 @@ Ambos encapsulam um objeto e implementam a mesma interface — a diferença est�
 ## Key Sources
 
 - [[wiki/sources/design-pattern-proxy]]
+- [[sources/design-pattern-strategy]] — distinção Decorator (pele) vs Strategy (miolo/algoritmo)

@@ -109,6 +109,10 @@ Catálogo de todas as páginas do knowledge graph.
 | [[sources/ddd-tactical]] | DDD Tático — Aggregate, Entity, Value Object, Domain Event, Repository, Factory |
 | [[sources/dependency-injection]] | Dependency Injection — IoC container, constructor injection, testabilidade |
 | [[sources/design-patterns-gof]] | GoF Patterns — Creational, Structural, Behavioral; quando usar cada categoria |
+| [[sources/sete-padroes-de-design-de-software]] | 7 padrões GoF com exemplos TypeScript — Singleton, Builder, Factory, Facade, Adapter, Strategy, Observer |
+| [[sources/design-pattern-facade]] | Facade (Refactoring Guru) — estrutura canônica, pseudocódigo, aplicabilidade, relações com 6 padrões |
+| [[sources/design-pattern-strategy]] | Strategy (Refactoring Guru) — contexto/estratégia, pseudocódigo, relações com Command/Template/State/Decorator |
+| [[sources/design-pattern-observer]] | Observer (Refactoring Guru) — mecanismo de assinatura, EventManager, relações com Chain/Command/Mediator, Observer vs Pub/Sub |
 | [[sources/event-driven-architecture]] | EDA — event sourcing, CQRS, choreography vs orchestration, schema evolution |
 | [[sources/event-ordering-long-running]] | Event Ordering — particionamento por chave, inbox pattern, long-running processes |
 | [[sources/event-versioning]] | Event Versioning — upcasting, weak schema, consumer-driven schema evolution |

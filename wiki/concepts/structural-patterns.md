@@ -1,29 +1,36 @@
 ---
 type: concept
 title: "Padrões Estruturais (GoF)"
-aliases: ["structural patterns", "padrões estruturais"]
+aliases: ["structural patterns", "padrões estruturais", "structural-patterns"]
 date_created: 2026-05-01
-date_updated: 2026-05-01
-source_count: 1
+date_updated: 2026-05-05
+source_count: 2
 tags: [design-patterns, structural, gof, oop]
 skill: tech-mentor-backend
-status: stub
+status: stable
 ---
 
-## Definição
+# Structural Patterns (Padrões Estruturais)
 
-Categoria de padrões de projeto do [[gang-of-four]] que trata de como classes e objetos são compostos para formar estruturas maiores.
+Uma das três categorias dos 23 padrões [[gang-of-four]]. Tratam de **como objetos se relacionam e se compõem** para formar estruturas maiores — como Legos.
 
-## Padrões da Categoria
+## Os 7 Padrões Estruturais GoF
 
-- Adapter
-- Bridge
-- Composite
-- **[[decorator-pattern]]**
-- **[[facade-pattern]]**
-- Flyweight
-- **[[proxy-pattern]]**
+| Padrão | Problema que resolve |
+|---|---|
+| [[adapter-pattern]] | Compatibiliza interfaces incompatíveis |
+| [[facade-pattern]] | Interface simplificada sobre subsistema complexo |
+| [[decorator-pattern]] | Adiciona comportamento sem alterar a classe |
+| [[proxy-pattern]] | Controla acesso ao objeto real (cache, auth, lazy load) |
+| Bridge | Separa abstração de implementação |
+| Composite | Trata objetos individuais e composições uniformemente |
+| Flyweight | Compartilha estado para suportar grande número de objetos |
+
+## Distinção de Criacionais
+
+Padrões criacionais tratam de *como* objetos nascem. Padrões estruturais tratam de *como* eles se organizam e colaboram depois de existir.
 
 ## Key Sources
 
 - [[wiki/sources/design-pattern-proxy]]
+- [[sources/sete-padroes-de-design-de-software]]

@@ -52,3 +52,4 @@ Modificar a classe original viola [[open-closed-principle]]. O Proxy permite est
 ## Key Sources
 
 - [[wiki/sources/design-pattern-proxy]]
+- [[sources/design-pattern-facade]] — relações com Facade e distinção entre os dois
