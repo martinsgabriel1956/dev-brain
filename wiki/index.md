@@ -268,10 +268,27 @@ Catálogo de todas as páginas do knowledge graph.
 | [[sources/erros-workflow-research-plan-implement]] | 3 erros do workflow RPI — instruction budget, plano horizontal, não ler o código |
 | [[sources/context-engineering-avancado-para-coding-agents]] | Dumb zone, compaction intencional, RPI, mental alignment — context engineering avançado |
 | [[sources/ports-and-adapters-codebase-para-ia]] | Codebase legível para humanos = legível para IA — Ports & Adapters antes/depois com blog |
+| [[sources/aws-infraestrutura-global]] | Infraestrutura global da AWS: 39 regiões, 123 AZs, 750+ POPs, backbone de fibra de 9M km |
+| [[sources/iam-introduction-users-groups-policies]] | AWS IAM — usuários, grupos, policies JSON, princípio do menor privilégio |
 
 ---
 
 ## Concepts
+
+### Cloud & Infraestrutura AWS
+
+| Página | Hook |
+|---|---|
+| [[concepts/regiao-aws]] | Área geográfica isolada da AWS com mínimo de 3 AZs |
+| [[concepts/zona-de-disponibilidade]] | Data center isolado dentro de uma região; base de HA na AWS |
+| [[concepts/zona-local-aws]] | Extensão de região AWS em centros metropolitanos para baixa latência |
+| [[concepts/aws-wavelength]] | Infraestrutura AWS embutida em redes 5G de operadoras |
+| [[concepts/aws-outposts]] | Rack/servidor AWS instalado fisicamente no data center do cliente |
+| [[concepts/zona-local-dedicada]] | Infraestrutura AWS dedicada para soberania digital e compliance |
+| [[concepts/aws-cloudfront]] | CDN global da AWS com 750+ POPs |
+| [[concepts/backbone-de-rede-aws]] | Rede privada de fibra óptica da AWS (9M+ km) |
+| [[concepts/soberania-digital]] | Controle de dados dentro de fronteiras jurisdicionais |
+| [[concepts/alta-disponibilidade]] | Resiliência por redundância em múltiplas AZs/regiões |
 
 ### Go
 
@@ -708,6 +725,7 @@ Catálogo de todas as páginas do knowledge graph.
 | [[entities/yjs]] | Biblioteca CRDT de sequência — padrão da indústria para edição colaborativa em tempo real |
 | [[entities/fred-brooks]] | Autor de "No Silver Bullet" (1986) e "Mythical Man-Month" — cunhou complexidade essencial vs acidental |
 | [[entities/margaret-storey]] | Pesquisadora UBC — formalizou conceito de dívida cognitiva aplicada a times com IA (2026) |
+| [[entities/amazon-web-services]] | Maior provedor de cloud do mundo; opera 39 regiões e 123 AZs globalmente |
 
 ---
 

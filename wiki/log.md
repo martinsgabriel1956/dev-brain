@@ -2,6 +2,38 @@
 
 Registro cronológico de todas as operações no wiki.
 
+## [2026-05-06] ingest | IAM Introduction — Users, Groups, Policies
+
+- **Source:** [[sources/iam-introduction-users-groups-policies]]
+- **Skill:** tech-mentor-infra (referência: `references/cloud/aws.md`)
+- **Páginas criadas:**
+  - `sources/iam-introduction-users-groups-policies.md`
+  - `concepts/aws-iam.md`
+  - `concepts/principio-menor-privilegio.md`
+- **Páginas atualizadas:**
+  - `entities/amazon-web-services.md` — adicionada seção IAM
+  - `wiki/index.md` — nova entrada IAM
+- **Notas:** Aula 01 de módulo IAM. Conceitos fundamentais: usuários, grupos (não aninhados), policies JSON, princípio do menor privilégio. Questões em aberto: diferença IAM Roles vs Users para workloads, integração com AWS Organizations, SCPs.
+
+## [2026-05-06] ingest | Infraestrutura Global da AWS
+
+- **Source:** [[sources/aws-infraestrutura-global]]
+- **Skill:** tech-mentor-infra (referência: `references/cloud/aws.md`)
+- **Páginas criadas:**
+  - `sources/aws-infraestrutura-global.md`
+  - `concepts/regiao-aws.md`
+  - `concepts/zona-de-disponibilidade.md`
+  - `concepts/zona-local-aws.md`
+  - `concepts/aws-wavelength.md`
+  - `concepts/aws-outposts.md`
+  - `concepts/zona-local-dedicada.md`
+  - `concepts/aws-cloudfront.md`
+  - `concepts/backbone-de-rede-aws.md`
+  - `concepts/soberania-digital.md`
+  - `concepts/alta-disponibilidade.md`
+  - `entities/amazon-web-services.md`
+- **Notas:** Primeira ingest de infraestrutura de cloud. Números-chave: 39 regiões, 123 AZs, 750+ POPs CloudFront, backbone de 9M km de fibra. Questões em aberto: SLA por região, conformidade LGPD certificada, latência backbone AWS vs internet pública Brasil→EUA.
+
 ## [2026-05-05] ingest | Compliance — Fundamentos para Engenheiros
 
 **Source:** [[sources/compliance]]
