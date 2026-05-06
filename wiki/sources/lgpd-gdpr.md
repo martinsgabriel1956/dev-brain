@@ -42,6 +42,7 @@ LGPD (Brasil) e GDPR (Europa): mesmo framework de princípios. 6 bases legais pr
 - [[concepts/breach-notification]]
 - [[concepts/dpo]]
 - [[entities/anpd]]
+- [[sources/compliance]]
 
 ## Open Questions
 

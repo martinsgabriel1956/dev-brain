@@ -73,6 +73,7 @@ Catálogo de todas as páginas do knowledge graph.
 | [[sources/fintech-system-design]] | FinTech — ledger dupla entrada, idempotência financeira, antifraude em camadas, conciliação |
 | [[sources/graceful-degradation]] | Graceful Degradation — hierarquia de fallbacks, fail-open vs fail-closed, Promise.allSettled |
 | [[sources/idempotencia]] | Idempotência — idempotency key, CAS, at-least-once, deduplicação financeira |
+| [[sources/clusters]] | Clusters — compute (K8s), database (Patroni), cache (Redis), search (ES), trade-offs, CAP |
 | [[sources/load-balancer]] | Load Balancer — L4 vs L7, algoritmos, health check, alta disponibilidade, dois níveis |
 | [[sources/mensageria]] | Mensageria — queue vs stream, Kafka/SQS/RabbitMQ, DLQ, outbox pattern, at-least-once |
 | [[sources/presence-system]] | Presence System — heartbeat + Redis TTL, multi-node Pub/Sub, typing indicator |
@@ -146,6 +147,7 @@ Catálogo de todas as páginas do knowledge graph.
 | [[sources/bug-bounty]] | Bug Bounty — VDP, CVSS v3.1, HackerOne/Bugcrowd, report quality, triage |
 | [[sources/cloud-security]] | Cloud Security — OIDC Workload Identity, Permission Boundaries, SCPs, CSPM/Prowler |
 | [[sources/compliance-soc2-pci]] | Compliance — SOC 2 Type I vs II, PCI-DSS tokenization, audit logging |
+| [[sources/compliance]] | Compliance — visão geral para engenheiros: frameworks, security vs compliance, audit log, DSAR, data residency |
 | [[sources/container-hardening]] | Container Hardening — Distroless, rootless, DROP ALL capabilities, Seccomp, PSS |
 | [[sources/data-privacy]] | Data Privacy — crypto-shredding, PII in logs, pseudonymization, Privacy by Design |
 | [[sources/devsecops-pipeline]] | DevSecOps — SAST (Semgrep), SCA (Snyk), Trivy, DAST (ZAP), Conftest |
@@ -586,6 +588,13 @@ Catálogo de todas as páginas do knowledge graph.
 | [[concepts/postgresql]] | Default para tudo — JSONB, full-text, pg_vector, Timescaledb |
 | [[concepts/database-index]] | Índices aceleram reads ao custo de overhead em escritas |
 | [[concepts/database-transactions]] | $transaction obrigatório para operações dependentes |
+| [[concepts/cluster]] | Compute/DB/Cache/Search clusters — control plane, failover, CAP, quando usar/evitar |
+| [[concepts/compliance]] | Compliance como disciplina de engenharia — frameworks, security vs compliance, audit log, DSAR, data residency |
+| [[concepts/audit-log]] | Audit Log — schema imutável, evidência universal para SOC2/PCI/ISO27001/LGPD |
+| [[concepts/data-residency]] | Data Residency — restrição geográfica de dados, impacto em arquitetura multi-region |
+| [[concepts/dsar]] | DSAR — direito de acesso/deleção (LGPD Art. 18, GDPR Art. 17), deleção em cascata em múltiplos sistemas |
+| [[concepts/control-plane]] | Coordinator central — Kubernetes scheduler, Patroni, Redis gossip |
+| [[concepts/redis-cluster]] | 16.384 hash slots, gossip protocol, MOVED/ASK, hash tags |
 | [[concepts/read-replicas]] | Réplicas para workload read-heavy — roteamento explícito |
 | [[concepts/read-your-writes]] | Consistência pós-escrita com réplicas — flag Redis por N segundos |
 | [[concepts/connection-pooling]] | PgBouncer — 1000 conexões de entrada → 20 conexões reais |

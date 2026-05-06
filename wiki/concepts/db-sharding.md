@@ -3,8 +3,8 @@ type: concept
 title: "DB Sharding"
 aliases: ["sharding", "database sharding", "horizontal partitioning"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
-source_count: 1
+date_updated: 2026-05-05
+source_count: 2
 tags: [sharding, escalabilidade, banco-de-dados, consistent-hashing, shard-key]
 skill: tech-mentor-system-design
 status: stub
@@ -26,3 +26,4 @@ Particionamento horizontal de um banco de dados em múltiplos nós independentes
 ## Key Sources
 
 - [[sources/db-sharding]]
+- [[sources/clusters]]

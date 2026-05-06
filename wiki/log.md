@@ -2,6 +2,59 @@
 
 Registro cronológico de todas as operações no wiki.
 
+## [2026-05-05] ingest | Compliance — Fundamentos para Engenheiros
+
+**Source:** [[sources/compliance]]
+**Raw file:** `raw/compliance.md`
+**Skill:** `tech-mentor-security`
+
+**Páginas criadas (sources):**
+- `wiki/sources/compliance.md`
+
+**Páginas criadas (concepts):**
+- `wiki/concepts/compliance.md` — stable; compliance vs security, 5 frameworks, 3 cenários de engenharia (data residency, audit log, DSAR)
+- `wiki/concepts/audit-log.md` — stable; schema mínimo, satisfaz SOC2/PCI/ISO27001/LGPD simultaneamente
+- `wiki/concepts/data-residency.md` — stub; restrição geográfica de dados → muda topologia multi-region
+- `wiki/concepts/dsar.md` — stub; deleção em cascata em DB + Redis + S3 + backups
+
+**Páginas atualizadas (backlink adicionado):**
+- `wiki/sources/lgpd-gdpr.md` — backlink para [[sources/compliance]]
+- `wiki/sources/compliance-soc2-pci.md` — backlink para [[sources/compliance]]
+
+**Notas:** Fonte interna (tech-mentor skill). Distinção central: compliance = prova documentada ≠ segurança = estado real. Do ponto de vista de engenharia, compliance vira problema arquitetural em 3 cenários concretos: data residency (muda topologia), audit log (muda schema/fluxo de escrita), DSAR (exige mapa de todos os stores de dados do usuário). Audit log estruturado é evidência reutilizável para múltiplos frameworks — uma única tabela satisfaz SOC2 CC7.2, PCI-DSS Req 10, ISO 27001 A.12.4 e LGPD Art. 37.
+
+**Questões em aberto:**
+- Como implementar data residency em multi-tenant SaaS sem multiplicar custo de infra?
+- Qual a estratégia de backup que satisfaz LGPD sem impossibilitar restore?
+
+---
+
+## [2026-05-05] ingest | Clusters — Fundamentos
+
+**Source:** [[sources/clusters]]
+**Raw file:** `raw/clusters.md`
+**Skill:** `tech-mentor-infra`
+
+**Páginas criadas (sources):**
+- `wiki/sources/clusters.md`
+
+**Páginas criadas (concepts):**
+- `wiki/concepts/cluster.md` — stable; tipo principal de fundamento de sistemas distribuídos; cobre 4 tipos (compute, database, cache, search) com trade-offs
+- `wiki/concepts/control-plane.md` — stub; coordinator central; contrasta K8s (centralizado) vs Redis Cluster (gossip, descentralizado)
+- `wiki/concepts/redis-cluster.md` — stub; 16.384 hash slots, gossip protocol, limitações de multi-key ops
+
+**Páginas atualizadas (backlink adicionado):**
+- `wiki/concepts/load-balancer.md` — source_count 1→2; LB é entry point do cluster
+- `wiki/concepts/db-sharding.md` — source_count 1→2; consistent hashing é base do Redis Cluster
+
+**Notas:** Fonte interna (tech-mentor skill). Conceito chave: cada tipo de cluster tem estratégia própria de distribuição de estado — pods por scheduler (K8s), primary/replica (databases), hash slots (Redis), shards (Elasticsearch). O trade-off central é sempre complexidade operacional de estado distribuído vs ganho de capacidade/disponibilidade. `cap-theorem` referenciado mas ainda sem página — candidato para próxima ingestão.
+
+**Questões em aberto:**
+- Como funciona resharding em Redis Cluster sem downtime?
+- Custo operacional de Postgres + Patroni vs RDS Multi-AZ na prática?
+
+---
+
 ## [2026-05-05] ingest | Observer — Padrão de Projeto Comportamental (Refactoring Guru)
 
 **Source:** [[sources/design-pattern-observer]]
