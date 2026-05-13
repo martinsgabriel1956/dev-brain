@@ -1,76 +1,41 @@
 ---
 type: concept
 title: "Decomposição de Problemas"
-aliases: ["problem decomposition", "quebrar problemas", "dividir para conquistar", "passos menores"]
-date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 2
-tags: [logica, algoritmos, solid, iniciante, pensamento-computacional]
-skill: tech-mentor-leadership
-status: stable
+aliases: ["problem decomposition", "quebrar em partes menores"]
+date_created: 2026-05-13
+date_updated: 2026-05-13
+source_count: 1
+tags: [decomposicao, fundamentos, cs-fundamentals]
+skill: cs-fundamentals
+status: draft
 ---
 
 # Decomposição de Problemas
 
-Técnica central de lógica de programação: dividir um problema complexo em passos menores e sequenciais, depois implementar cada passo isoladamente. É o oposto de tentar resolver tudo de uma vez.
+Técnica de resolver um problema complexo quebrando-o em subproblemas menores e mais simples, cada um resolvível de forma (quase) independente.
 
-## Processo
+## Por que funciona
 
-```
-1. Identificar o objetivo final
-2. Perguntar: quais são as etapas necessárias para chegar lá?
-3. Escrever os passos em linguagem natural antes de codificar
-4. Implementar passo a passo — validar cada um antes do próximo
-```
+Nenhum problema complexo é resolvido de uma única vez. Ao decompor, cada parte menor pode ser pensada, testada e corrigida sem afetar as outras.
 
-## Exemplo — Caixa Eletrônico (Java)
+## Exemplo: caixa eletrônico
 
-**Problema:** dado valor de saque, retornar quantidade de notas por denominação.
+| Módulo | Responsabilidade |
+|---|---|
+| Autenticação | Verificar cartão e senha |
+| Verificação de saldo | Checar saldo disponível |
+| Validação do saque | Checar limite diário e dinheiro no caixa |
+| Execução do saque | Debitar e liberar dinheiro físico |
+| Encerramento | Devolver cartão, comprovante, encerrar sessão |
 
-```java
-// Passo 1: entrada
-Scanner scanner = new Scanner(System.in);
-int valor = scanner.nextInt();
+A autenticação não precisa saber nada sobre saldo. Isso é [[separacao-de-responsabilidades]] na prática.
 
-// Passo 2: denominações
-int[] notas = {100, 50, 20, 5, 2};
+## Relação com outros conceitos
 
-// Passo 3: cálculo (divisão inteira + módulo)
-int[] qtd = new int[notas.length];
-for (int i = 0; i < notas.length; i++) {
-    if (valor >= notas[i]) {
-        qtd[i] = valor / notas[i];
-        valor = valor % notas[i];
-    }
-}
+- Viabiliza [[separacao-de-responsabilidades]]
+- É o passo 2 do framework de [[logica-de-programacao]]
+- Cada subproblema gera seu próprio [[fluxo-logico]]
 
-// Passo 4: exibição
-for (int i = 0; i < notas.length; i++) {
-    if (qtd[i] > 0)
-        System.out.println(qtd[i] + " nota(s) de " + notas[i]);
-}
-```
+## Key sources
 
-## Aplicar SRP Após Decomposição
-
-Depois de identificar os passos, cada passo vira um método com responsabilidade única:
-
-```java
-public static int obterValorSaque(Scanner scanner) { ... }
-public static int[] calcularNotas(int valor, int[] notas) { ... }
-public static void exibirNotas(int[] notas, int[] qtd) { ... }
-```
-
-**Benefício:** quando algo falha, o stack trace aponta para o método responsável — não para um main monolítico de 80 linhas.
-
-## Relação com Outros Conceitos
-
-- Aplica [[concepts/aprendizado-deliberado]] na prática: cada passo é um exercício isolado
-- Prepara terreno para OO/DDD: métodos → classes → use cases
-- Matemática necessária é básica — divisão inteira e módulo, não cálculo
-
-## Key Sources
-
-- [[sources/logica-programacao-sem-matematica]]
-- [[sources/roadmap-dev-senior-2026]] — decomposição como sub-tópico do pilar 1: pensar antes de codar
-- [[sources/pensamento-estruturado-resolucao-de-problemas]] — método de 5 passos com [[arvore-de-decomposicao]] como ferramenta central
+- [[wiki/sources/logica-de-programacao-quatro-passos]]
