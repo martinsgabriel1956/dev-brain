@@ -3,8 +3,8 @@ type: concept
 title: "Runbook"
 aliases: ["runbook", "playbook", "operational runbook"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-05-17
+source_count: 2
 tags: [sre, operações, incidentes, documentação, kubernetes]
 skill: tech-mentor-infra
 status: stable
@@ -62,6 +62,11 @@ kubectl rollout status deploy/order-api -n production
 
 Versionado junto ao código (mesmo repo) garante atualização junto com mudanças de infraestrutura. Wiki pode ficar desatualizado.
 
+## Pré-requisitos e Rollback
+
+Runbook efetivo inclui: **Pré-requisitos** (permissões, ferramentas), **Passos numerados** (comandos exatos), **Verificação de sucesso** e **Rollback** explícito. Quando a causa não está identificada, não use runbook — use [[playbook]].
+
 ## Key Sources
 
 - [[sources/sre-error-budget-incidents]]
+- [[wiki/sources/runbook]]

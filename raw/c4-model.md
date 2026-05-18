@@ -165,9 +165,18 @@ Usuario    Next.js    OrderAPI    PostgreSQL    Stripe    Kafka
 - Level 4 (código) — o código é a fonte de verdade
 - Diagramas manuais para sistemas que mudam rápido — use DSL
 
+## Relação com HLD e LLD
+
+```
+C4 Level 1 + 2  ≈  HLD  (visão macro: sistemas, containers e integrações)
+C4 Level 3 + 4  ≈  LLD  (detalhe de implementação: componentes e código)
+```
+
+O C4 é a **convenção** para estruturar HLD e LLD com consistência. Sem ele, cada engenheiro desenha num nível diferente e ninguém sabe qual audiência deve consumir aquele artefato.
+
 ## Conceitos Relacionados
 
-[[adr]] · [[wardley-maps]] · [[rfc]] · [[microsservicos]] · [[bounded-context]]
+[[high-level-design]] · [[low-level-design]] · [[adr]] · [[wardley-maps]] · [[rfc]] · [[microsservicos]] · [[bounded-context]]
 
 ---
 *Fonte: tech-mentor skill · tech-mentor-system-design · 2026-04-13*
