@@ -34,3 +34,4 @@ Ser autodidata não significa ausência de medo ou frustração. Significa agir 
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]] — distinção central entre autodidatas e pessoas passivas; argumento da infância
+- [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]] — autodidata como versão carreira de [[wiki/concepts/aprendizado-continuo]]; buscar o porquê, não só o como

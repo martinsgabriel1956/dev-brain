@@ -14,6 +14,8 @@ date_updated: 2026-05-17
 | [[wiki/sources/gpt3-language-models-are-few-shot-learners]] | GPT-3 (175B) formaliza in-context learning — aprender tarefas via exemplos no prompt sem atualizar pesos; few-shot rivaliza com fine-tuned SOTA em vários benchmarks |
 | [[wiki/sources/logica-de-programacao-quatro-passos]] | Quatro passos para transformar qualquer problema em código: entender, decompor, criar fluxo, traduzir |
 | [[wiki/sources/akita-como-aprender-programacao]] | Autodidatas avançam independente do material; copie código por centenas de horas; DSA é a fundação inegociável; Design Patterns são para depois |
+| [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]] | As 6 soft skills que separam quem executa tarefas de quem resolve problemas e cresce na carreira |
+| [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]] | Como agentes de IA com janelas de token estão mudando comportamento e rotina de devs |
 | [[wiki/sources/trd-technical-requirements-document]] | TRD traduz PRD em especificação técnica — contratos, NFRs, segurança; distinto de RFC (proposta aberta) e ADR (decisão registrada) |
 | [[wiki/sources/architecture-decision-record]] | ADR captura decisões arquiteturais — imutável, datado, versionado com o código; RFC propõe, ADR registra |
 | [[wiki/sources/request-for-comments]] | RFC propõe mudanças grandes demais para decidir em silêncio — coleta objeções antes de implementar; RFC aceito gera ADR |
@@ -27,6 +29,31 @@ date_updated: 2026-05-17
 | [[wiki/sources/post-mortem]] | Post-mortem blameless analisa incidentes após resolução — 5 Porquês até causa sistêmica, action items com dono e prazo |
 
 ## Concepts
+
+### Carreira & Soft Skills
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/soft-skills]] | Habilidades humanas que potencializam o técnico — o multiplicador da carreira |
+| [[wiki/concepts/comunicacao-tecnica]] | Ser entendido, não apenas falar — acelerador de time |
+| [[wiki/concepts/colaboracao-times]] | Construir junto; empatia de papel e gestão de conflito |
+| [[wiki/concepts/autonomia-responsabilidade]] | Liberdade + maturidade para alinhar expectativas antes de executar |
+| [[wiki/concepts/pensamento-critico]] | Causa raiz antes do código — executor vs. solucionador |
+| [[wiki/concepts/aprendizado-continuo]] | Saber aprender, não acumular cursos; mantém a carreira viva |
+| [[wiki/concepts/adaptabilidade]] | Continuar performando quando o contexto muda |
+| [[wiki/concepts/inteligencia-emocional]] | Operar sob pressão, crítica e conflito sem perder equilíbrio |
+
+### Agentes & LLMOps
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/agente-ia]] | Sistema baseado em LLM que executa tarefas autonomamente com loop de ação |
+| [[wiki/concepts/janela-de-contexto]] | Limite de tokens por sessão; o reset é gatilho para token anxiety |
+| [[wiki/concepts/llmops]] | Práticas e cultura para operar LLMs e agentes em produção |
+| [[wiki/concepts/token-anxiety]] | Ansiedade de não desperdiçar a janela de tokens — fenômeno social emergente |
+| [[wiki/concepts/fomo-tecnologico]] | FOMO amplificado por releases de modelos; paradoxo: mais capacidade = mais ansiedade |
+| [[wiki/concepts/burnout-dev]] | Esgotamento em dev; linha mais tênue que nunca com agentes disponíveis para todos |
+| [[wiki/concepts/dopamina-produtividade]] | Loop de recompensa que torna difícil parar mesmo quando o descanso seria melhor |
 
 ### LLMs e IA
 
@@ -87,10 +114,13 @@ date_updated: 2026-05-17
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/eduarda-rocket-city]] | Engenheira de software internacional, criadora de conteúdo no canal Rocket City |
 | [[wiki/entities/openai]] | Organização responsável pelo GPT-3/4 — formalizou in-context learning e scaling laws |
 | [[wiki/entities/jason-wei]] | Pesquisador Google Brain — lead author do paper de chain-of-thought prompting e do paper de emergent abilities |
 | [[wiki/entities/fabio-akita]] | Programador brasileiro, autodidata desde 1991, criador do canal Akita On Rails |
 | [[wiki/entities/christopher-alexander]] | Arquiteto que criou a linguagem de patterns original — inspiração para o GoF |
+| [[wiki/entities/nikon-cotaro]] | Autor do artigo Token Anxiety (fev/2025) |
+| [[wiki/entities/claude-code]] | CLI da Anthropic com agentes e janela de contexto com reset |
 
 ### Documentação de Arquitetura
 

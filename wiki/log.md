@@ -2,6 +2,52 @@
 
 ---
 
+## [2026-05-19] ingest | Soft Skills que Realmente Fazem Diferença na Carreira em Tecnologia
+
+**Source:** [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]
+**Skill:** tech-mentor-leadership (`references/career-progression.md`)
+
+**Páginas criadas:**
+- `wiki/sources/soft-skills-carreira-tecnologia-eduarda.md`
+- `wiki/concepts/soft-skills.md`
+- `wiki/concepts/colaboracao-times.md`
+- `wiki/concepts/autonomia-responsabilidade.md`
+- `wiki/concepts/pensamento-critico.md`
+- `wiki/concepts/aprendizado-continuo.md`
+- `wiki/concepts/adaptabilidade.md`
+- `wiki/concepts/inteligencia-emocional.md`
+- `wiki/entities/eduarda-rocket-city.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/comunicacao-tecnica.md` — +1 fonte (página já existia de ingest anterior); backlink adicionado
+- `wiki/concepts/burnout-dev.md` — +1 fonte; inteligência emocional como proteção contra burnout
+- `wiki/concepts/autodidata.md` — +1 fonte; conexão com aprendizado-continuo
+
+**Notas:** Fonte é transcrição de vídeo do canal Rocket City. Argumento central: hard skills são o piso mínimo, soft skills são o multiplicador. As seis alavancas — comunicação, colaboração, autonomia, pensamento crítico, aprendizado contínuo e inteligência emocional/adaptabilidade — separam executor de solucionador e determinam quem constrói cultura vs. quem apenas entrega código. Conexão importante com wiki existente: aprendizado contínuo é a versão carreira do autodidata (Akita); inteligência emocional é a defesa direta contra burnout (token anxiety). Questões em aberto: soft skills são treináveis deliberadamente? Como medi-las? Em contextos com agentes de IA, qual soft skill se torna mais crítica?
+
+---
+
+## [2026-05-18] ingest | Token Anxiety — Como os Agentes de IA Estão Mudando o Comportamento dos Devs
+
+**Source:** [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
+**Skill:** tech-mentor-ai (domínio: LLMs, agentes, LLMOps, comportamento)
+
+**Páginas criadas:**
+- `wiki/sources/token-anxiety-agentes-ia-comportamento-devs.md`
+- `wiki/concepts/token-anxiety.md`
+- `wiki/concepts/agente-ia.md`
+- `wiki/concepts/janela-de-contexto.md`
+- `wiki/concepts/fomo-tecnologico.md`
+- `wiki/concepts/burnout-dev.md`
+- `wiki/concepts/dopamina-produtividade.md`
+- `wiki/concepts/llmops.md`
+- `wiki/entities/nikon-cotaro.md`
+- `wiki/entities/claude-code.md`
+
+**Notas:** Fonte é transcrição de vídeo brasileiro comentando o artigo *Token Anxiety* de Nikon Cotaro (fev/2025). Argumento central: ferramentas de agentes com janela de tokens finita (ex.: Claude Code com reset 3–5h) estão criando um novo padrão de ansiedade que distorce comportamentos sociais, rotinas e prioridades de desenvolvedores. O fenômeno amplifica FOMO (mais capacidade = mais ansiedade, não menos) e torna a linha entre ownership saudável e burnout mais tênue para todos — não apenas seniores. Camada brasileira: dev que compete no mercado internacional sente urgência amplificada. Questões em aberto: o fenômeno chegou massivamente ao Brasil? Pricing diferenciado por horário é real? Como diferenciar operacionalmente ownership saudável de token anxiety patológica?
+
+---
+
 ## [2026-05-17] ingest | Chain-of-Thought Prompting Elicits Reasoning in Large Language Models
 
 **Source:** [[wiki/sources/chain-of-thought-prompting]]
