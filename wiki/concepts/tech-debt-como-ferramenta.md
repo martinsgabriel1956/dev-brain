@@ -3,8 +3,8 @@ type: concept
 title: "Tech Debt como Ferramenta"
 aliases: ["tech debt deliberado", "dívida técnica estratégica", "ship with debt"]
 date_created: 2026-04-26
-date_updated: 2026-04-29
-source_count: 2
+date_updated: 2026-06-02
+source_count: 3
 tags: [tech-debt, carreira, craftsmanship, estrategia, velocidade]
 skill: tech-mentor-leadership
 status: draft
@@ -54,3 +54,4 @@ A maioria das features falha. Não construa uma catedral para algo que pode ser 
 ## Key Sources
 
 - [[sources/5-principios-programador]]
+- [[wiki/sources/5-principles-that-changed-me-as-a-programmer]]

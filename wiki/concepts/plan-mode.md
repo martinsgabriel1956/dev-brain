@@ -3,8 +3,8 @@ type: concept
 title: "Plan Mode"
 aliases: ["modo planejamento", "auto-accept", "shift tab claude code"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 1
+date_updated: 2026-06-02
+source_count: 2
 tags: [claude-code, plan-mode, agente-ia, workflow, context-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -68,6 +68,26 @@ Isso transforma seu workflow padrão em um comando reutilizável.
 
 Plan Mode é uma forma de [[human-in-the-loop]] leve: o humano revisa a intenção antes da execução, sem precisar aprovar cada ferramenta individualmente. É menos granular que aprovar cada `Edit`, mas mais seguro que Auto-accept cego.
 
+## Guideline de Granularidade
+
+Quando usar Plan Mode versus alternativas:
+
+| Escopo da tarefa | Abordagem recomendada |
+|-----------------|----------------------|
+| Pontual, 1 arquivo, linha específica | Execução direta |
+| 2–3 arquivos, complexidade moderada | Plan Mode |
+| Múltiplos domínios (front+back), feature completa | [[wiki/concepts/spec-driven-development|Spec Driven Development]] |
+
+## Persistindo o Plano
+
+Uma boa prática é salvar o plano aprovado em arquivo dentro do projeto (com timestamp e slug). Isso permite:
+- Rastrear decisões de planejamento ao longo do tempo
+- Retomar após interrupções sem perder o plano
+- Usar o plano como input para agentes de tech spec em fluxos SDD
+
+O Codex não salva o plano automaticamente — configure o harness para fazê-lo se necessário.
+
 ## Key Sources
 
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
+- [[wiki/sources/formacao-ia-devs-aula-03-plan-mode]]

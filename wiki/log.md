@@ -2,6 +2,119 @@
 
 ---
 
+## [2026-06-02] ingest | Formação IA para Devs — MCPs, Plan Mode, Agentes de Planejamento + 5 Principles
+
+**Skills:** `tech-mentor-ai` (aulas MCP, Plan Mode, SDD) · `tech-mentor-leadership` (5 Principles)
+
+**Fontes ingeridas:**
+- `raw/Aula 01 - MCPs - Parte 1.md` → [[wiki/sources/formacao-ia-devs-aula-01-mcp-parte1]]
+- `raw/Aula 02 - MCPs - Parte 2.md` → [[wiki/sources/formacao-ia-devs-aula-02-mcp-parte2]]
+- `raw/Aula 03 - Plan Mode.md` → [[wiki/sources/formacao-ia-devs-aula-03-plan-mode]]
+- `raw/Aula 04 - Agentes de Planejamento.md` → [[wiki/sources/formacao-ia-devs-aula-04-agentes-planejamento]]
+- `raw/Aula 05 - Q&A.md` → [[wiki/sources/formacao-ia-devs-aula-05-qa]]
+- `raw/5-principles-that-changed-me-as-a-programmer.md` → [[wiki/sources/5-principles-that-changed-me-as-a-programmer]]
+
+**Páginas criadas (novas):**
+
+Concepts:
+- [[wiki/concepts/model-context-protocol]]
+- [[wiki/concepts/mcp-arquitetura]]
+- [[wiki/concepts/cli-vs-mcp]]
+- [[wiki/concepts/tech-spec]]
+- [[wiki/concepts/human-in-the-loop]]
+- [[wiki/concepts/task-looper]]
+- [[wiki/concepts/agente-prd]]
+- [[wiki/concepts/logging-estruturado]]
+- [[wiki/concepts/quadrante-de-fowler]]
+
+**Páginas atualizadas:**
+- [[wiki/concepts/plan-mode]] — +1 fonte, +seção guideline de granularidade, +seção persistência do plano; source_count 1→2
+- [[wiki/concepts/spec-driven-development]] — +2 fontes, +seção fluxo com agentes especializados, +seção onde ficam padrões de arquitetura, +seção quando usar SDD; source_count 4→6
+- [[wiki/concepts/prd-product-requirements-document]] — +2 fontes, +seção PRD no contexto de IA; source_count 1→3; status stub→stable
+- [[wiki/concepts/sensores-vs-guias]] — +1 fonte; source_count 1→2
+- [[wiki/concepts/tech-debt-como-ferramenta]] — +1 fonte; source_count 2→3
+- [[wiki/concepts/naming]] — +1 fonte; source_count 2→3
+
+**Notas:** Seis fontes em dois clusters. (1) MCPs e SDD (5 aulas): MCP arquitetura host/client/server explicada em detalhe, decisão CLI vs MCP formalizada, fluxo completo do Spec Driven Development com agentes especializados (PRD→TechSpec→Tarefas), HITL obrigatório em cada etapa, task looper para automação em projetos grandes. Frase central: "PRD não é um documento para a empresa, é um documento para a IA." (2) 5 Principles: cinco lições práticas — logs com contexto, testar o impossível, tech debt deliberado, naming como custo cognitivo, paridade dev-prod. Sem contradições com wiki existente.
+
+---
+
+## [2026-06-02] ingest | Formação IA para Devs — Aulas 01–04 (Partes 2) + 5 Dicas JS
+
+**Fontes:**
+- [[wiki/sources/formacao-ia-devs-aula-01-context-harness-engineering]]
+- [[wiki/sources/formacao-ia-devs-aula-02-rules]]
+- [[wiki/sources/formacao-ia-devs-aula-03-skills]]
+- [[wiki/sources/formacao-ia-devs-aula-04-qa]]
+- [[wiki/sources/5-dicas-performance-javascript]]
+
+**Skills usadas:** `tech-mentor-ai` (aulas 01–04), `lang-dynamic` (JS performance)
+
+**Páginas criadas (novas):**
+
+Concepts:
+- [[wiki/concepts/system-prompt-arquitetura]]
+- [[wiki/concepts/sensores-vs-guias]]
+- [[wiki/concepts/memoria-curto-longo-prazo-ia]]
+- [[wiki/concepts/rules-agente]]
+- [[wiki/concepts/skills-agente]]
+- [[wiki/concepts/design-md-padrao]]
+- [[wiki/concepts/event-loop-performance-js]]
+
+Sources:
+- 5 páginas de source (listadas acima)
+
+**Páginas atualizadas:**
+- [[wiki/concepts/context-engineering-harness]] — seções de sensores vs guias + rules vs skills adicionadas; source_count 3→6
+- [[wiki/concepts/harness]] — seção de duas camadas (provider vs user); source_count 4→5
+- [[wiki/concepts/ciclo-agente]] — seção de sensores reduzindo iterações + citação brute-force; source_count 2→3
+
+**Notas:** Aulas são partes 2 das mesmas sessões já ingerias (aula 01 abertura, aula 02 mercado, etc.). Conteúdo central das novas partes: (1) system design ao vivo do harness — guias vs sensores, system prompt architecture, memória curto/longo prazo; (2) rules pattern: agents.md, problema de rules excessivas, simlinks; (3) skills pattern: lazy-loading do front-matter, skills.sh, design.md do Google; (4) Q&A sobre scaffolding, legado e custos. Arquivo de JS performance é fonte independente de Erick Wendel sobre event loop e Web Streams. Contradições: nenhuma nova contra wiki existente.
+
+---
+
+## [2026-06-02] ingest | Formação IA para Devs — Módulo 1 (Aulas 01–06)
+
+**Fontes:**
+- [[wiki/sources/formacao-ia-devs-aula-01-abertura]]
+- [[wiki/sources/formacao-ia-devs-aula-02-mercado-perfil-profissional]]
+- [[wiki/sources/formacao-ia-devs-aula-03-llm]]
+- [[wiki/sources/formacao-ia-devs-aula-04-harness]]
+- [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]
+- [[wiki/sources/formacao-ia-devs-aula-06-qa]]
+
+**Skill usada:** `tech-mentor-ai`
+
+**Páginas criadas (novas):**
+
+Concepts:
+- [[wiki/concepts/harness]]
+- [[wiki/concepts/niveis-adocao-ia-l0-l4]]
+- [[wiki/concepts/tool-call]]
+- [[wiki/concepts/degradacao-de-contexto]]
+- [[wiki/concepts/reasoning-level]]
+- [[wiki/concepts/worktree-paralelismo]]
+- [[wiki/concepts/spec-driven-development]]
+- [[wiki/concepts/ciclo-agente]]
+- [[wiki/concepts/meta-prompting]]
+- [[wiki/concepts/xml-markdown-prompts]]
+- [[wiki/concepts/novo-perfil-dev-ia]]
+- [[wiki/concepts/token-maxing]]
+- [[wiki/concepts/modelo-frontier]]
+- [[wiki/concepts/context-engineering-harness]]
+- [[wiki/concepts/codigo-legado-ia]]
+- [[wiki/concepts/mixture-of-experts]]
+
+Entities:
+- [[wiki/entities/rodrigo-branas]]
+- [[wiki/entities/pedro-nauke]]
+- [[wiki/entities/anthropic]]
+- [[wiki/entities/codex-openai]]
+
+**Notas:** Transcrições de 6 aulas ao vivo do Módulo 1 da Formação IA para Devs. Conteúdo central: o conceito de harness como evolução do "modelo sozinho", níveis L0–L4 de adoção, spec-driven como abordagem L3, degradação de contexto após 400k tokens, e a evolução prompt→context→harness engineering. Contradições com wiki existente: nenhuma. Contradições internas: Anthropic diz que Opus não degrada; Nauke discorda por experiência prática (flag para verificar com versões 4.x mais novas).
+
+---
+
 ## [2026-06-01] ingest | Estruturas de Dados na Prática — Array, Hashmap, Fila, Pilha e Árvore
 
 **Source:** [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]

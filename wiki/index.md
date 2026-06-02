@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-06-01
+date_updated: 2026-06-02
 ---
 
 # Wiki Index
@@ -40,6 +40,23 @@ date_updated: 2026-06-01
 | [[wiki/sources/ia-custo-roi-bolha-ou-realidade]] | Custo real da IA com dados — 71% sem ROI, paradoxo de Jevons, AI Washing e por que não é bolha mas curva de adoção |
 | [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]] | CRUD está resolvido, sênior é escasso — o diferencial agora é harness de qualidade e sistemas robustos |
 | [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]] | Hype de IA é produto deliberado do ciclo VC→IPO; FOMO é estratégia; open source garante que a mudança é permanente |
+| [[wiki/sources/formacao-ia-devs-aula-01-abertura]] | Abertura do Módulo 1 — LLM, Harness, Spec-Driven, Subagents; instrutores Rodrigo Branas e Pedro Nauke |
+| [[wiki/sources/formacao-ia-devs-aula-01-context-harness-engineering]] | Arquitetura do harness: guias vs sensores, system prompt, memória curto/longo prazo, loop agentico como brute-force |
+| [[wiki/sources/formacao-ia-devs-aula-02-rules]] | Rules = guardrails sempre no system prompt; agents.md padrão de mercado; CLAUDE.md é o outlier Anthropic; <300 linhas |
+| [[wiki/sources/formacao-ia-devs-aula-03-skills]] | Skills = pastas lazy-loaded; só front-matter no system prompt; skills.sh com 100k skills; design.md padrão Google |
+| [[wiki/sources/formacao-ia-devs-aula-04-qa]] | Q&A: scaffolding via CLI, refactoring legado por spec-driven, caveman tokens não resolve, mapa de navegabilidade |
+| [[wiki/sources/5-dicas-performance-javascript]] | Erick Wendel: Web Streams, evitar Sync, arquitetura assíncrona, OpenTelemetry, Playwright + Artillery |
+| [[wiki/sources/formacao-ia-devs-aula-02-mercado-perfil-profissional]] | L0–L4 adoption levels, token maxing, novo perfil dev, pressão de CEOs, paralelismo via worktrees |
+| [[wiki/sources/formacao-ia-devs-aula-03-llm]] | LLM = gerador de tokens probabilístico; degradação >400k tokens; reasoning levels; frontier vs open-weight 2026 |
+| [[wiki/sources/formacao-ia-devs-aula-04-harness]] | Harness = tudo ao redor do LLM; tool calls; 1 prompt → 40+ ciclos; contexto explícito = menos custo |
+| [[wiki/sources/formacao-ia-devs-aula-05-hands-on]] | XML+Markdown template vs prompt vago; meta-prompting; plan mode manual; 3 harnesses comparados |
+| [[wiki/sources/formacao-ia-devs-aula-06-qa]] | Q&A: revisão de código com IA, arquitetura importa, legado, juniores, Go como linguagem AI-friendly |
+| [[wiki/sources/formacao-ia-devs-aula-01-mcp-parte1]] | MCP arquitetura: host/client/server, JSON-RPC, primitivas tools/resources/prompts — antes não havia padronização |
+| [[wiki/sources/formacao-ia-devs-aula-02-mcp-parte2]] | MCPs como sensores do harness; CLI economiza contexto; file system é o padrão de mercado para contexto IA |
+| [[wiki/sources/formacao-ia-devs-aula-03-plan-mode]] | Plan Mode: salvar plano em arquivo, guideline de granularidade (1 arquivo → direto, 2-3 → Plan Mode, multi-domínio → SDD) |
+| [[wiki/sources/formacao-ia-devs-aula-04-agentes-planejamento]] | SDD completo: Agente PRD → Tech Spec → Tarefas isoladas; PRD é para a IA, não para a empresa |
+| [[wiki/sources/formacao-ia-devs-aula-05-qa]] | Q&A: Resume retoma onde parou, padrões de arquitetura ficam em rules, SDD funciona para refactoring e migrações |
+| [[wiki/sources/5-principles-that-changed-me-as-a-programmer]] | Logs estruturados são infraestrutura crítica; tech debt Prudente+Deliberado é válido; naming é custo cognitivo permanente |
 
 ## Concepts
 
@@ -100,6 +117,46 @@ date_updated: 2026-06-01
 | [[wiki/concepts/fomo-tecnologico]] | FOMO amplificado por releases de modelos; paradoxo: mais capacidade = mais ansiedade |
 | [[wiki/concepts/burnout-dev]] | Esgotamento em dev; linha mais tênue que nunca com agentes disponíveis para todos |
 | [[wiki/concepts/dopamina-produtividade]] | Loop de recompensa que torna difícil parar mesmo quando o descanso seria melhor |
+| [[wiki/concepts/harness]] | Tudo ao redor do LLM: tool calls, contexto, memória, MCP, subagentes — o que dá ao modelo "olhos e mãos" |
+| [[wiki/concepts/tool-call]] | Mecanismo (2023, OpenAI) que permite ao LLM requisitar execução de funções externas — game changer |
+| [[wiki/concepts/ciclo-agente]] | Loop prompt → tool calls → contexto → resposta; 1 prompt pode gerar 40+ ciclos internos |
+| [[wiki/concepts/degradacao-de-contexto]] | Qualidade cai após ~400k tokens; solução: auto-compact; nunca encher a janela por encher |
+| [[wiki/concepts/reasoning-level]] | Low/Medium/High/Extra-High — controla tokens internos de raciocínio; extra-high ≠ sempre melhor |
+| [[wiki/concepts/modelo-frontier]] | Modelos mais capazes: Opus 4.7, GPT-5.5, Gemini 3.1, Kimi K2.6, GLM 5.1 — tabela de preços 2026 |
+| [[wiki/concepts/mixture-of-experts]] | Arquitetura MoE: por que modelos open source chineses são 10x mais baratos que frontier densos |
+| [[wiki/concepts/token-maxing]] | Consumo compulsivo de tokens como sinal de produtividade — fenômeno do Vale do Silício, 2026 |
+
+### Processo de Desenvolvimento com IA
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/niveis-adocao-ia-l0-l4]] | L0 (hater) → L4 (fábrica); a maioria dos devs está no L2; salto de produtividade real ocorre no L3 |
+| [[wiki/concepts/spec-driven-development]] | Planning-first: spec antes de executar; LLM executa autônoma; dev revisa resultado, não linha a linha |
+| [[wiki/concepts/worktree-paralelismo]] | Git worktrees isolam tarefas paralelas; base do trabalho L3 — múltiplas specs rodando simultaneamente |
+| [[wiki/concepts/context-engineering-harness]] | Rules + skills + MCPs formam o "mapa" do projeto — fator decisivo de qualidade acima do modelo escolhido |
+| [[wiki/concepts/rules-agente]] | Guardrails sempre no system prompt — agents.md/CLAUDE.md; onboarding digital do projeto |
+| [[wiki/concepts/skills-agente]] | Pastas lazy-loaded: só front-matter no system prompt; corpo sob demanda — substitui 80% das rules |
+| [[wiki/concepts/sensores-vs-guias]] | Guias direcionam antes; sensores corrigem durante — qualidade dos sensores determina autocorreção |
+| [[wiki/concepts/system-prompt-arquitetura]] | O prompt escondido: rules + skills front-matter + MCPs schemas, sempre antes do prompt do usuário |
+| [[wiki/concepts/memoria-curto-longo-prazo-ia]] | Short-term = context window (apagada); long-term = system prompt (sempre reinjetado) |
+| [[wiki/concepts/design-md-padrao]] | Padrão Google 2026: spec de design em .md para UIs visualmente consistentes com identidade de marca |
+| [[wiki/concepts/novo-perfil-dev-ia]] | Dev 2026 = tech lead/analista de sistemas; foco em planejamento e design, não em codificação linha a linha |
+| [[wiki/concepts/xml-markdown-prompts]] | Tags XML + Markdown: padrão de estruturação de prompts recomendado por Anthropic e OpenAI |
+| [[wiki/concepts/meta-prompting]] | Placeholders descritivos no template guiam o LLM a raciocinar ativamente sobre o que preencher |
+| [[wiki/concepts/codigo-legado-ia]] | IA funciona melhor em legado que greenfield quando há referências ricas; desafio é técnica, não capacidade |
+| [[wiki/concepts/model-context-protocol]] | Protocolo padrão Anthropic para integrar LLMs a ferramentas externas — "USB-C das integrações de IA" |
+| [[wiki/concepts/mcp-arquitetura]] | Host/Client/Server + transportes stdio/SSE/Streamable HTTP — server deve ficar em pé, não subir e cair |
+| [[wiki/concepts/cli-vs-mcp]] | CLI usa treinamento da LLM e economiza contexto; MCP expõe tools delimitadas — critério de decisão |
+| [[wiki/concepts/tech-spec]] | Segundo artefato do SDD: traduz o PRD em decisões técnicas (contratos, schemas, arquitetura) |
+| [[wiki/concepts/human-in-the-loop]] | HITL em três granularidades: por tool call, por plan, por etapa SDD — Plan Mode é a forma leve |
+| [[wiki/concepts/task-looper]] | Executor automático de tarefas SDD — itera pela lista aprovada com critérios de aceite, sem intervenção |
+| [[wiki/concepts/agente-prd]] | Agente interativo que refina requisitos com perguntas e gera o PRD para consumo do agente de Tech Spec |
+
+### JavaScript / Node.js Performance
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/event-loop-performance-js]] | Single-thread JS: qualquer Sync bloqueia todos os clientes — Web Streams e arquitetura assíncrona como solução |
 
 ### Claude Code — Recursos e Padrões
 
@@ -182,6 +239,13 @@ date_updated: 2026-06-01
 | [[wiki/concepts/efeitos-colaterais]] | Tudo que uma função faz além de retornar valor — devem ser explícitos e isolados nas periferias |
 | [[wiki/concepts/complexidade-acidental]] | Complexidade que vem de implementação, não do problema — Out of the Tar Pit; mutabilidade é a maior fonte |
 
+### Boas Práticas de Engenharia
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/logging-estruturado]] | Logs com contexto (user_id, trace_id, error) — a diferença entre "vejo o problema" e "3h chutando" |
+| [[wiki/concepts/quadrante-de-fowler]] | Dois eixos: Deliberado/Inadvertido × Prudente/Imprudente; só Prudente+Deliberado é aceitável |
+
 ### Padrões e Design
 
 | Página | Hook |
@@ -210,6 +274,10 @@ date_updated: 2026-06-01
 | [[wiki/entities/nubank]] | Maior banco digital da América Latina (100M clientes) — escolheu Clojure + Datomic + Event Sourcing |
 | [[wiki/entities/clojure]] | Dialeto Lisp funcional na JVM — imutabilidade por default, linguagem principal do Nubank |
 | [[wiki/entities/rich-hickey]] | Criador do Clojure e do Datomic — defensor de imutabilidade e design simples |
+| [[wiki/entities/rodrigo-branas]] | Instrutor brasileiro, 25 anos de dev — co-criador da Formação IA para Devs; foco em harness e spec-driven |
+| [[wiki/entities/pedro-nauke]] | Instrutor brasileiro, 22 anos de dev — criador do Compose; especialista em spec-driven e paralelismo de tarefas |
+| [[wiki/entities/anthropic]] | Criadora do Claude e do Claude Code — definiu specs de rules/skills/MCP que viraram padrão de mercado |
+| [[wiki/entities/codex-openai]] | Harness de codificação da OpenAI baseado em GPT-5.x — par do Claude Code em 2026 |
 
 ### Documentação de Arquitetura
 
