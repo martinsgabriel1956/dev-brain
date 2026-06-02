@@ -1,0 +1,57 @@
+---
+type: concept
+title: "Fila (Queue)"
+aliases: ["queue", "FIFO", "fila de dados"]
+date_created: 2026-06-01
+date_updated: 2026-06-01
+source_count: 1
+tags: [cs-fundamentals, estruturas-de-dados, fila, queue, fifo]
+skill: cs-fundamentals
+status: draft
+---
+
+# Fila (Queue)
+
+Estrutura de dados **FIFO** — *First In, First Out*: o primeiro elemento a entrar é o primeiro a sair. Inserção ocorre no final (*enqueue*), remoção ocorre no início (*dequeue*).
+
+## Operações e Complexidade
+
+| Operação | Complexidade |
+|---|---|
+| Enqueue (inserir no fim) | O(1) |
+| Dequeue (remover do início) | O(1) |
+| Peek (ver o primeiro sem remover) | O(1) |
+| Busca por valor | O(n) |
+
+## Analogia
+
+Uma fila de pessoas. A primeira a chegar é a primeira a ser atendida. Ninguém fura a fila.
+
+Ou: mensagens no celular — chegam na ordem em que foram enviadas.
+
+## Onde Aparece na Prática
+
+- **Filas de jobs** (background processing): tarefa mais antiga processa primeiro
+- **Mensageria** (Kafka, RabbitMQ, SQS): consumidores processam mensagens na ordem de chegada
+- **Filas de impressão**: documento enviado primeiro imprime primeiro
+- **BFS** (Busca em Largura em grafos): usa fila internamente
+
+## Quando Usar
+
+- Processamento em ordem de chegada é um requisito
+- Você precisa desacoplar produtor de consumidor (buffer)
+- Load leveling: absorver picos de trabalho sem perder requisições
+
+## Nota: Fila como Estrutura vs. Filas de Mensageria
+
+Esta página trata da **estrutura de dados** fila. Sistemas de mensageria como Kafka e RabbitMQ implementam conceitos de fila em nível distribuído — mesma lógica FIFO, mas com garantias adicionais de durabilidade, particionamento e reprocessamento.
+
+## Relação com outros conceitos
+
+- [[pilha]] — estrutura inversa: LIFO em vez de FIFO
+- [[array]] — uma fila pode ser implementada sobre um array circular
+- [[event-sourcing]] — eventos são consumidos em ordem; fila é o mecanismo subjacente
+
+## Key sources
+
+- [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]

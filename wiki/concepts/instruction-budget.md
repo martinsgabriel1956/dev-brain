@@ -3,8 +3,8 @@ type: concept
 title: "Instruction Budget"
 aliases: ["orçamento de instruções", "limite de instruções", "instruction limit"]
 date_created: 2026-05-04
-date_updated: 2026-05-04
-source_count: 2
+date_updated: 2026-06-01
+source_count: 3
 tags: [context-engineering, coding-agents, llm, ai-engineering]
 skill: tech-mentor-ai
 status: draft
@@ -47,7 +47,17 @@ Instruction budget e [[concepts/dumb-zone]] são problemas relacionados mas dist
 
 Um agente pode estar na smart zone (40% da context window) e ainda assim estar acima do instruction budget se o system prompt for muito denso em regras.
 
+## Evidência Empírica do Custo
+
+Paper da Universidade de Zurique (2024) quantifica o custo de arquivos de contexto:
+
+- Arquivo gerado por LLM: **+20% de custo** vs. sem arquivo
+- Arquivo gerado por humano: **+19% de custo** vs. sem arquivo
+
+Isso confirma empiricamente que cada instrução adicionada ao `agents.md` ou `CLAUDE.md` tem custo real. O [[claude-md|arquivo de contexto é necessário]] (sem ele, alucinação aumenta), mas deve ser estritamente enxuto.
+
 ## Key Sources
 
 - [[sources/erros-workflow-research-plan-implement]]
 - [[sources/context-engineering-avancado-para-coding-agents]]
+- [[wiki/sources/agents-md-vale-a-pena-paper-zurique]] — dados empíricos de custo por tamanho de arquivo de contexto

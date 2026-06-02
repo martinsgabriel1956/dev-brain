@@ -45,6 +45,15 @@ Não significa: fazer tudo certo em todos os passos.
 
 A [[wiki/concepts/autodidata|postura autodidata]] é incompatível com vergonha paralisante. A vergonha de errar em público é o mecanismo que bloqueia o desenvolvimento de fluência. Crianças não têm esse bloqueio — por isso aprendem mais rápido.
 
+## Relação com IA e [[esforco-produtivo]]
+
+Quem busca perfeição tende a pedir ajuda à IA no primeiro sinal de erro — para não passar pela frustração de estar errado. Isso impede o [[esforco-produtivo]]: o intervalo entre o problema e a ajuda onde o aprendizado acontece.
+
+A fluência se constrói justamente passando pelo erro, não evitando-o. O objetivo não é acertar de primeira — é avançar apesar do erro.
+
+> "Não precisa sofrer três dias no mesmo problema. Mas também não precisa pedir ajuda no primeiro sinal de desconforto." — [[wiki/sources/ia-e-aprendizado-programacao-iniciantes]]
+
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]] — fluência como objetivo vs. perfeição como bloqueio; analogia com inglês; a criança que aprende sem vergonha
+- [[wiki/sources/ia-e-aprendizado-programacao-iniciantes]] — o desconforto como parte necessária; pedir ajuda só depois de tentar

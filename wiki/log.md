@@ -2,6 +2,264 @@
 
 ---
 
+## [2026-06-01] ingest | Estruturas de Dados na Prática — Array, Hashmap, Fila, Pilha e Árvore
+
+**Source:** [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
+**Skill:** cs-fundamentals (`references/data-structures.md`)
+
+**Páginas criadas:**
+- `wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore.md`
+- `wiki/concepts/array.md`
+- `wiki/concepts/hashmap.md`
+- `wiki/concepts/fila.md`
+- `wiki/concepts/pilha.md`
+- `wiki/concepts/arvore.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/algoritmos-e-estruturas-de-dados.md` — source_count 2→3; seção adicionada com links para os cinco conceitos individuais
+
+**Notas:** Fonte é transcrição de vídeo introdutório de canal parceiro da Rocket City. Argumento central: a escolha de estrutura de dados é uma decisão implícita que a maioria dos devs toma sem perceber — e a escolha errada em escala para o sistema. O ponto mais prático é o framework de três perguntas de decisão (posição vs. identificador / ordem / hierarquia) que cobre a maioria dos casos do dia a dia. As cinco páginas individuais foram criadas como stubs ricos em conteúdo — com complexidade Big-O, analogias, quando usar/não usar, e conexões com sistemas reais. Questão em aberto: o vídeo anuncia continuação sobre Big O notation — ingerir quando disponível para fechar o loop teórico das complexidades mencionadas.
+
+---
+
+## [2026-06-01] ingest | Os 7 Níveis de Como Engenheiros Usam IA
+
+**Source:** [[wiki/sources/escala-niveis-uso-ia-engenheiros]]
+**Skill:** tech-mentor-leadership (`references/technical-mentoring.md`, `references/career-progression.md`)
+
+**Páginas criadas:**
+- `wiki/sources/escala-niveis-uso-ia-engenheiros.md`
+- `wiki/concepts/escala-maturidade-ia-dev.md`
+- `wiki/entities/steve-ex-google-amazon.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/era-agentica.md` — seção adicionada conectando os níveis 5–7 como materialização individual da era agêntica
+- `wiki/concepts/learning-gap-organizacional.md` — seção adicionada explicando por que estudos de 20–30% medem os níveis errados
+- `wiki/concepts/autonomia-tecnica.md` — paradoxo do nível 4: mais delegação exige mais conhecimento de domínio
+- `wiki/concepts/dependencia-ia.md` — source_count 1→2; níveis 0–2 como zona de estagnação e dependência
+- `wiki/entities/valdemar-neto.md` — source_count 2→3; terceira fonte deste autor
+
+**Notas:** Fonte é transcrição de vídeo do Valdemar Neto — terceira fonte deste autor no wiki. Conceito central criado: escala-maturidade-ia-dev (não existia). Conexão forte com wiki existente: a escala fecha o loop entre era-agentica (macro), learning-gap-organizacional (organizacional) e autonomia-tecnica/dependencia-ia (individual) — agora há um framework que mapeia onde cada dev está. Questão em aberto: o "Steve" que criou o framework não foi identificado pelo sobrenome na fonte — pode ser Steve Yegge (ex-Google, ex-Amazon, conhecido por ensaios sobre engenharia) mas não verificado. O paradoxo central ("mais nível = mais skill, não menos") é uma contradição direta com narrativas de "IA vai substituir devs" — conexão com crenca-de-alta-eficacia e dependencia-ia.
+
+---
+
+## [2026-06-01] ingest | Context Engineering para Codebases Grandes — Progressive Disclosure, On-Demand Loading e o Workflow RPI
+
+**Source:** [[wiki/sources/context-engineering-codebases-grandes-rpi]]
+**Skill:** tech-mentor-ai (`references/ai/context-engineering.md`, `references/ai/agents-core.md`)
+
+**Páginas criadas:**
+- `wiki/sources/context-engineering-codebases-grandes-rpi.md`
+- `wiki/concepts/progressive-disclosure-ia.md`
+- `wiki/concepts/memoria-de-longo-prazo-ia.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/rpi-workflow.md` — source_count 2→3; seções adicionadas sobre memória de longo prazo e progressive disclosure como complementos do RPI
+- `wiki/concepts/separacao-de-contextos.md` — source_count 2→3; extensão com memória de longo prazo como ponte entre sessões separadas
+- `wiki/concepts/codebase-legibilidade-ia.md` — source_count 2→3; MVC god class como anti-padrão específico; progressive disclosure como mitigação
+- `wiki/entities/valdemar-neto.md` — source_count 1→2; segunda fonte deste autor
+
+**Notas:** Fonte é transcrição de vídeo do Valdemar Neto — segunda fonte deste autor no wiki. O conceito de RPI já existia (rpi-workflow.md, separacao-de-contextos.md), então o ingest focou no que era genuinamente novo: progressive disclosure (arquivos por diretório), on-demand loading com Cursor Rules/Skills, e memória de longo prazo para refatorações grandes. Conexão importante: progressive-disclosure-ia + claude-md + instruction-budget formam agora um cluster coerente sobre gestão de contexto no CLAUDE.md — três conceitos que se reforçam mutuamente com dados empíricos (paper de Zurique) e exemplos práticos (este vídeo). O padrão de sub-planos com memória de longo prazo resolve o problema de refatorações que não cabem numa sessão sem estourar a context window.
+
+---
+
+## [2026-06-01] ingest | agents.md e CLAUDE.md Ainda Valem a Pena? O que o Paper de Zurique Realmente Diz
+
+**Source:** [[wiki/sources/agents-md-vale-a-pena-paper-zurique]]
+**Skill:** tech-mentor-ai (`references/ai/context-engineering.md`, `references/ai/agents-core.md`)
+
+**Páginas criadas:**
+- `wiki/sources/agents-md-vale-a-pena-paper-zurique.md`
+- `wiki/entities/valdemar-neto.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/claude-md.md` — source_count 1→2; tabela com dados do paper de Zurique; seção de estratégia enxuto + links adicionada
+- `wiki/concepts/instruction-budget.md` — source_count 2→3; evidência empírica do custo (+19–20%) adicionada como validação dos ~150 instruções máx.
+- `wiki/concepts/llmops.md` — source_count 2→3; seção sobre gestão de arquivos de contexto como problema de LLMOps
+
+**Notas:** Fonte é análise de vídeo do Valdemar Neto sobre paper da Universidade de Zurique. Argumento central: o paper é real e os números são válidos, mas a métrica usada (testes passaram?) não captura qualidade — então a conclusão "delete o agents.md" é precipitada. A estratégia correta é manter o arquivo mas mantê-lo enxuto com links para arquivos específicos. Conexão forte com wiki existente: instruction-budget (dado empírico agora confirmado por paper), claude-md (estratégia de links reforçada), llmops (custo de arquivos de contexto como trade-off explícito). Furo metodológico registrado: o paper assume que arquivos existentes nos repos foram escritos por humanos — podem ter sido gerados por LLM. Questão em aberto: não existe ainda paper que avalie qualidade de código (segurança, design) além de taxa de sucesso em testes — lacuna importante na literatura.
+
+---
+
+## [2026-06-01] ingest | Let It Crash — Graceful Shutdown com AsyncLocalStorage no Node.js
+
+**Source:** [[wiki/sources/let-it-crash-nodejs-asynclocalstorage]]
+**Skill:** tech-mentor-backend (`references/architecture-resilience-patterns.md`, `references/graceful-degradation.md`)
+
+**Páginas criadas:**
+- `wiki/sources/let-it-crash-nodejs-asynclocalstorage.md`
+- `wiki/concepts/let-it-crash.md`
+- `wiki/concepts/graceful-shutdown.md`
+- `wiki/concepts/asynclocalstorage.md`
+- `wiki/concepts/excecao-vs-erro.md`
+- `wiki/entities/eric-lenda.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/robustez-de-sistemas.md` — source_count 1→2; seção adicionada sobre Let it Crash como estratégia de robustez complementar ao harness de qualidade
+
+**Notas:** Fonte é transcrição de vídeo do canal de Eric Lenda sobre sistemas confiáveis em Node.js. Argumento central: exceções imprevisíveis (banco de dados fora, memória esgotada) não devem ser recuperadas — devem desencadear um graceful shutdown e o orquestrador recria instâncias limpas. A implementação sem `try/catch` usa `AsyncLocalStorage` para rastrear o `response` do cliente específico que causou a exceção. Conceitos novos: todos os quatro conceitos criados são novos no wiki. Conexão com wiki existente: robustez-de-sistemas (enriquecida — Let it Crash é a estratégia runtime que complementa o harness de qualidade, que é a estratégia de prevenção). Armadilha documentada: `async` na função de contexto do `AsyncLocalStorage.run()` quebra o rastreamento. Questão em aberto: como combinar Let it Crash com Circuit Breaker — são complementares mas a fonte não explora a interação.
+
+---
+
+## [2026-06-01] ingest | Lógica de Programação — O Que É de Verdade
+
+**Source:** [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]]
+**Skill:** tech-mentor-leadership (`references/technical-mentoring.md`, `references/career-progression.md`) + cs-fundamentals (secundário)
+
+**Páginas criadas:**
+- `wiki/sources/logica-de-programacao-o-que-e-de-verdade.md`
+- `wiki/concepts/repertorio.md`
+- `wiki/entities/john-romero.md`
+- `wiki/entities/edsger-dijkstra.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/logica-de-programacao.md` — source_count 1→2, status draft→stable; reescrita com os 5 pilares, crítica ao DSA como substituto, "programação = descrição inambígua" (Dijkstra)
+- `wiki/concepts/decomposicao-de-problemas.md` — source_count 1→2; novo exemplo com clone de Netflix; conexão com repertório
+- `wiki/concepts/algoritmos-e-estruturas-de-dados.md` — source_count 1→2; seção adicionada sobre DSA como parte — não o todo — da lógica
+- `wiki/concepts/aprendizado-por-exposicao.md` — source_count 2→3; seção adicionada conectando exposição ativa com construção de repertório
+- `wiki/concepts/software-3.md` — source_count 1→2; seção adicionada conectando Dijkstra ("descrever = programar") com o comportamento empírico de LLMs replicando ambiguidades do prompt
+
+**Notas:** Fonte é transcrição de vídeo de canal brasileiro focado em DSA/LeetCode. Argumento central: a pergunta real por trás de "lógica de programação" é "como me torno competente?" e a resposta são 5 pilares — decomposição, pesquisa, repertório, projetos e intuição. Conceito novo central: [[repertorio]] (não existia no wiki). Conexão forte com fontes anteriores: converge com Akita (autodidata, prática) e com ia-e-aprendizado (dependência vs autonomia). Contradição potencial: Akita diz "DSA é a fundação inegociável"; esta fonte diz "DSA é parte pequena do todo" — ambas coexistem se entendidas como: DSA é fundação necessária mas não suficiente. Observação relevante: demonstração empírica com GPT-4.1 confirma argumento de Dijkstra — LLM replica ambiguidades da descrição em português, o que conecta diretamente com software-3.md.
+
+---
+
+## [2026-05-31] ingest | Conteúdo Técnico Não Rende Mais — O que Isso Significa para Devs
+
+**Source:** [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
+**Skill:** tech-mentor-backend (`references/software-craftsmanship.md`, `references/architecture-eda-patterns.md`)
+
+**Páginas criadas:**
+- `wiki/sources/conteudo-tecnico-ia-robustez-sistemas.md`
+- `wiki/concepts/robustez-de-sistemas.md`
+- `wiki/concepts/crud-resolvido.md`
+- `wiki/concepts/harness-de-qualidade.md`
+- `wiki/concepts/pipeline-de-qualidade.md`
+- `wiki/concepts/teste-de-mutacao.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/era-agentica.md` — +1 fonte; seção adicionada sobre CRUD resolvido e escassez de sênior
+- `wiki/concepts/n-plus-one.md` — +1 fonte; seção adicionada sobre N+1 como erro estrutural típico da IA e mitigação via harness
+- `wiki/concepts/tdd.md` — +1 fonte; seção adicionada sobre TDD com IA (mais poderoso e mais necessário)
+
+**Notas:** Fonte é vídeo de canal de tecnologia sobre o domínio de conteúdo de IA e o que isso significa para devs. Argumento central: CRUD está resolvido, porta de entrada do júnior fechou, o diferencial é harness de qualidade + robustez. Conexão forte com ingests anteriores: era-agentica (expandida), learning-gap-organizacional (harness é o que fecha o gap no nível técnico). O conceito de "harness de qualidade" como pipeline determinística (passa/não passa) é paralelo direto ao conceito de "hooks garantidos vs CLAUDE.md" do ingest do Claude Code — mesma lógica: ferramenta > intenção. Questão em aberto: projeção de "80% dos devs vencidos" em 2 anos — verificar.
+
+---
+
+## [2026-05-31] ingest | IA para Empresas — Custo, ROI e Por que Não é uma Bolha
+
+**Source:** [[wiki/sources/ia-custo-roi-bolha-ou-realidade]]
+**Skill:** tech-mentor-ai (`references/ai/token-economics.md`, `references/ai/llmops.md`, `references/ai/agents-core.md`)
+
+**Páginas criadas:**
+- `wiki/sources/ia-custo-roi-bolha-ou-realidade.md`
+- `wiki/concepts/ai-washing.md`
+- `wiki/concepts/paradoxo-de-jevons.md`
+- `wiki/concepts/roi-de-ia.md`
+- `wiki/concepts/era-agentica.md`
+- `wiki/concepts/learning-gap-organizacional.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/token-anxiety.md` — source_count 1→2; seção adicionada sobre token anxiety no nível organizacional (Uber, Microsoft); conexão com paradoxo de Jevons e era agêntica
+- `wiki/concepts/llmops.md` — source_count 1→2; seção adicionada conectando LLMOps a ROI organizacional, learning gap e AI washing
+- `wiki/concepts/agente-ia.md` — tags atualizados (via era-agentica)
+
+**Notas:** Fonte é transcrição de vídeo de análise crítica com dados sobre custo e ROI de IA em empresas. Tese central: não é bolha — é curva de adoção que a maioria está subindo errado. Três fontes independentes convergem (Writer 29%, MIT 5%, Mercer 27%) — cada uma com critério diferente, todas apontando o mesmo buraco. Conceito central novo: learning gap organizacional (MIT) como diagnóstico do problema. Conexão cruzada importante: o paradoxo de Jevons explica por que o custo por dev aumenta mesmo com tokens mais baratos; esse fenômeno agrava o token-anxiety existente no wiki. Questões em aberto: projeção de 24x de Goldman Sachs é estimativa — verificar dados reais em 2027/2028; a queda de ação do GitLab (8%) indica que o mercado está mudando de postura sobre AI washing — acompanhar.
+
+---
+
+## [2026-05-31] ingest | O Profissional do Futuro — IA, Identidade e Aprendizado
+
+**Source:** [[wiki/sources/profissional-do-futuro-ia-identidade-aprendizado]]
+**Skill:** tech-mentor-leadership (`references/technical-mentoring.md`, `references/career-progression.md`)
+
+**Páginas criadas:**
+- `wiki/sources/profissional-do-futuro-ia-identidade-aprendizado.md`
+- `wiki/concepts/nexialista.md`
+- `wiki/concepts/crenca-de-alta-eficacia.md`
+- `wiki/concepts/aprender-a-aprender.md`
+- `wiki/concepts/zona-de-desconforto-da-aprendizagem.md`
+- `wiki/concepts/observador-tercerático.md`
+- `wiki/entities/luiz-tibirica.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/adaptabilidade.md` — source_count 1→2; seção adicionada conectando nexialista, aprender-a-aprender e crença de alta eficácia
+- `wiki/concepts/aprendizado-continuo.md` — source_count 1→2; distinção aprendizado contínuo vs. aprender-a-aprender
+- `wiki/concepts/aprendizado-passivo.md` — source_count 1→2; estatística de queda de 17% (Anthropic); conexão com crença de alta eficácia
+
+**Notas:** Fonte é transcrição de conversa/podcast entre Luiz Tibiriçá (growth hacker, 42 anos em bancos), Débora (educação/cognição) e Ronald (host). Teses centrais: (1) IA zerou o game de acesso — diferencial agora é aprender-a-aprender; (2) profissional que teme substituição tem baixa crença de eficácia e pode de fato ser substituído; (3) implementar IA sem organizar dados/processos primeiro é fracasso garantido. Conceito original de Luiz: Observador Tercerático (status draft — sem respaldo acadêmico ainda). Conexão forte com ingest anterior (ia-e-aprendizado-programacao-iniciantes): ambos convergem que o risco é o aprendizado passivo, não a IA em si. Questão em aberto: a queda de 17% citada (artigo Anthropic) não tem link — verificar antes de usar como referência.
+
+---
+
+## [2026-05-31] ingest | IA e Aprendizado de Programação — Como Usar sem Parar de Aprender
+
+**Source:** [[wiki/sources/ia-e-aprendizado-programacao-iniciantes]]
+**Skill:** tech-mentor-leadership (`references/technical-mentoring.md`, `references/career-progression.md`)
+
+**Páginas criadas:**
+- `wiki/sources/ia-e-aprendizado-programacao-iniciantes.md`
+- `wiki/concepts/aprendizado-passivo.md`
+- `wiki/concepts/dependencia-ia.md`
+- `wiki/concepts/autonomia-tecnica.md`
+- `wiki/concepts/esforco-produtivo.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/autodidata.md` — source_count 1→2; seção adicionada sobre relação com IA e dependência; conexão com autonomia-tecnica
+- `wiki/concepts/aprendizado-por-exposicao.md` — source_count 1→2; distinção crítica entre exposição ativa e cópia passiva com IA
+- `wiki/concepts/fluencia-vs-perfeicao.md` — +1 fonte; seção adicionada conectando esforço produtivo com busca prematura de perfeição via IA
+
+**Notas:** Fonte é transcrição de vídeo de programadora brasileira sobre uso de IA por iniciantes. Argumento central: o risco não é a IA em si, é o aprendizado passivo que ela facilita. Dois perfis distintos (criador não-técnico vs. profissional de dev); dois extremos igualmente errados ("proibir IA" vs. "não precisa mais estudar"). A regra de ouro: se não consegue explicar o código, o conhecimento não é seu. Conexão forte com Akita (autodidata, exposição ativa, fluência) — os dois vídeos se reforçam: Akita diz "não fique copiando código de tutorial", este diz "não terceirize o raciocínio pra IA". Questão em aberto: onde está a linha entre esforço produtivo e bloqueio improdutivo? A fonte não define um critério objetivo de tempo.
+
+---
+
+## [2026-05-31] ingest | Claude Code — Guia Prático (Full Cycle)
+
+**Source:** [[wiki/sources/claude-code-guia-pratico-full-cycle]]
+**Skill:** tech-mentor-ai (`references/ai/mcp.md`, `references/ai/agents-core.md`, `references/ai/context-engineering.md`)
+
+**Páginas criadas:**
+- `wiki/sources/claude-code-guia-pratico-full-cycle.md`
+- `wiki/concepts/claude-md.md`
+- `wiki/concepts/hooks-agente.md`
+- `wiki/concepts/plan-mode.md`
+- `wiki/concepts/slash-commands-agente.md`
+- `wiki/concepts/context-compaction.md`
+- `wiki/concepts/mcp-server.md`
+
+**Páginas atualizadas:**
+- `wiki/entities/claude-code.md` — source_count 1→2, status stub→stable; reescrita com tabela de recursos, planos, comandos essenciais e integração IDE
+- `wiki/concepts/context-window.md` — source_count 1→2; seção adicionada sobre gestão de contexto em agentes e compactação
+- `wiki/concepts/agente-ia.md` — source_count 1→2; seção adicionada com Claude Code como exemplo concreto de agente
+
+**Notas:** Fonte é transcrição de vídeo do canal Full Cycle sobre Claude Code CLI. Argumento central: Claude Code é um agente CLI que integra com IDEs via extensão; o diferencial está em dominar CLAUDE.md, hooks e commands para criar workflows reproduzíveis e consistentes. Distinção crítica documentada: CLAUDE.md é guideline (o LLM pode ignorar), hooks são garantidos pelo runtime. Armadilha de custo: usar API Key diretamente pode custar centenas de dólares — sempre usar plano de assinatura. Conexão com wiki existente: context-window (enriquecida com compactação), agente-ia (Claude Code como exemplo concreto), token-anxiety (compactação como catalisador). Questão em aberto: qual a combinação ideal de Plan Mode + Commands + Hooks para diferentes tipos de tarefa (features novas vs bug fixes vs refactoring)?
+
+---
+
+## [2026-05-31] ingest | Por que o Nubank Escolheu Clojure e Datomic
+
+**Source:** [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
+**Skill:** tech-mentor-backend (`references/event-sourcing-cqrs.md`, `references/fintech.md`)
+
+**Páginas criadas:**
+- `wiki/sources/nubank-clojure-datomic-event-sourcing.md`
+- `wiki/concepts/event-sourcing.md`
+- `wiki/concepts/cqrs.md`
+- `wiki/concepts/programacao-funcional.md`
+- `wiki/concepts/efeitos-colaterais.md`
+- `wiki/concepts/ddd.md`
+- `wiki/concepts/complexidade-acidental.md`
+- `wiki/concepts/datomic.md`
+- `wiki/concepts/ledger-imutavel.md`
+- `wiki/entities/nubank.md`
+- `wiki/entities/clojure.md`
+- `wiki/entities/rich-hickey.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/imutabilidade.md` — source_count 1→2, status stub→stable; seções adicionadas: sistemas financeiros, event sourcing, programação funcional, out of the tar pit
+
+**Notas:** Fonte é transcrição de vídeo do canal Nova Devs analisando decisões técnicas fundacionais do Nubank. Argumento central: o CTO do Nubank baseou as escolhas de Clojure + Datomic + Event Sourcing no paper "Out of the Tar Pit" (Moseley & Marks), que identifica mutabilidade e efeitos colaterais como fontes principais de complexidade acidental em sistemas grandes. A combinação funcional + imutável + event-sourced permite que o codebase "envelheça como vinho" em vez de "leite". Conexão com wiki existente: imutabilidade (conceito já existia como stub, promovido para stable). Questões em aberto: como o Nubank faz onboarding de novos engenheiros para uma stack de Clojure/Event Sourcing de alta complexidade? Clojure é linguagem de nicho — como lidar com contratação em escala?
+
+---
+
 ## [2026-05-19] ingest | Soft Skills que Realmente Fazem Diferença na Carreira em Tecnologia
 
 **Source:** [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]

@@ -3,11 +3,11 @@ type: concept
 title: "FOMO Tecnológico"
 aliases: ["fomo", "fear of missing out", "ansiedade de adoção"]
 date_created: 2026-05-18
-date_updated: 2026-05-18
-source_count: 1
-tags: [comportamento, produtividade, agentes-ia, burnout]
+date_updated: 2026-05-31
+source_count: 2
+tags: [comportamento, produtividade, agentes-ia, burnout, hype-de-ia]
 skill: tech-mentor-ai
-status: draft
+status: stable
 ---
 
 ## Definição
@@ -37,6 +37,17 @@ Antes eram seguidores. Depois, faturamento. Hoje, quantidade de agentes.
 
 ---
 
+## FOMO como Produto Deliberado
+
+Há uma distinção importante: FOMO tecnológico pode ser um **fenômeno emergente** (consequência natural do ritmo acelerado de releases) ou um **produto engenheirado** (resultado de capital intencionalmente queimado para criar ansiedade de adoção).
+
+No caso da IA generativa, os dois coexistem. Empresas de IA captaram bilhões, precisam mostrar crescimento de usuários para investidores (narrativa de IPO), e financiam conteúdo de FOMO porque esse tipo de conteúdo engaja melhor. Canais de tecnologia são patrocinados por valores acima do mercado exatamente porque a empresa de IA precisa da audiência, não necessariamente do retorno financeiro imediato do usuário adquirido.
+
+> *"Conteúdo de FOMO engaja muito bem. Você junta interesse natural das pessoas com algo que é novidade, com muito dinheiro dessas empresas — é quase inevitável."*
+
+Isso não torna o FOMO falso — torna o ecossistema de informação sobre IA distorcido por incentivos. Ver [[hype-de-ia]].
+
 ## Key Sources
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
+- [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]

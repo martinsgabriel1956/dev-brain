@@ -63,6 +63,19 @@ Começa pelo comportamento externo. Mocka todos os colaboradores ainda não exis
 - [[piramide-de-testes]] — onde TDD vive na estratégia de testes
 - [[testar-proprio-codigo]] — hábito relacionado
 
+## TDD com IA
+
+Na [[era-agentica]], TDD via IA é mais poderoso do que nunca — e mais necessário. A IA gera testes em volume rapidamente, mas tende a criar testes que apenas executam o código sem validar o comportamento real. TDD inverte esse problema: o teste é escrito primeiro (por você ou pela IA), e o código só existe para passar no teste.
+
+Forçar TDD via [[harness-de-qualidade]]:
+- Pipeline rejeita código sem cobertura de teste adequada
+- [[teste-de-mutacao]] valida que os testes gerados pela IA realmente testam comportamento
+- O ciclo red-green-refactor garante que o código é testável por design
+
+> *"Manda a IA fazer TDD. Ela consegue fazer isso. Configura os linters com boas regras. Ela vai seguir."*
+
 ## Key Sources
 
 - [[wiki/sources/tdd]]
+- [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
+- [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]

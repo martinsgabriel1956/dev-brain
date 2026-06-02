@@ -3,8 +3,8 @@ type: concept
 title: "Codebase Legibilidade para IA"
 aliases: ["codebase para ia", "código legível ia", "qualidade código ia"]
 date_created: 2026-05-04
-date_updated: 2026-05-04
-source_count: 2
+date_updated: 2026-06-01
+source_count: 3
 tags: [ia-engineering, codebase-quality, acoplamento, context-engineering, coding-agents]
 skill: tech-mentor-backend
 status: stable
@@ -64,7 +64,14 @@ Manter código legível quebra o ciclo na origem.
 - [[concepts/vertical-slice-architecture]] — feature-first em vez de camada-first reduz número de arquivos por feature
 - [[concepts/single-responsibility-principle]] — uma razão para mudar = contexto mínimo para a IA
 
+## MVC Monolítico como Anti-Padrão Específico
+
+MVC com múltiplos services sem relação num diretório único é um dos piores cenários para IA: o agente precisa escanear tudo para entender qualquer coisa. Código modular por domínio (billing, identity, content) permite que o agente carregue só o módulo relevante.
+
+Combinado com [[progressive-disclosure-ia]] — guidelines por diretório — o agente fica ainda mais focado: carrega as regras do módulo que está alterando, não de todos.
+
 ## Key Sources
 
 - [[sources/ports-and-adapters-codebase-para-ia]]
 - [[sources/navigation-paradox-2026]]
+- [[wiki/sources/context-engineering-codebases-grandes-rpi]] — MVC god class vs. codebase modular; guidelines por diretório como mitigação

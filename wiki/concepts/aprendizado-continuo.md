@@ -3,8 +3,8 @@ type: concept
 title: "Aprendizado Contínuo"
 aliases: ["lifelong learning", "continuous learning", "aprendizado permanente"]
 date_created: 2026-05-19
-date_updated: 2026-05-19
-source_count: 1
+date_updated: 2026-05-31
+source_count: 2
 tags: [soft-skills, aprendizado, carreira, mentalidade]
 skill: tech-mentor-leadership
 status: stable
@@ -41,6 +41,13 @@ Aprendizado contínuo potencializa todas as outras soft skills: quem aprende con
 - [[wiki/concepts/pensamento-critico]] — aprender bem requer pensar criticamente sobre o que aprender
 - [[wiki/concepts/adaptabilidade]] — aprendizado contínuo é o mecanismo de adaptação
 
+## Aprendizado Contínuo vs. Aprender a Aprender
+
+Aprendizado contínuo é a *postura*. [[aprender-a-aprender]] é a *habilidade técnica* de aprender com eficiência crescente.
+
+Sem "aprender a aprender", aprendizado contínuo vira consumo de conteúdo sem profundidade — o ciclo do hype de ferramentas onde você nunca desenvolve nada de verdade.
+
 ## Key Sources
 
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]
+- [[wiki/sources/profissional-do-futuro-ia-identidade-aprendizado]]

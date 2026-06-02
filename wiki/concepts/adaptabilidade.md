@@ -3,9 +3,9 @@ type: concept
 title: "Adaptabilidade"
 aliases: ["adaptability", "flexibilidade profissional", "resiliência a mudança"]
 date_created: 2026-05-19
-date_updated: 2026-05-19
-source_count: 1
-tags: [soft-skills, adaptabilidade, carreira, resiliência]
+date_updated: 2026-05-31
+source_count: 2
+tags: [soft-skills, adaptabilidade, carreira, resiliência, profissional-do-futuro]
 skill: tech-mentor-leadership
 status: stable
 ---
@@ -37,6 +37,15 @@ Uma pessoa pode ser adaptável a nível técnico (aprender nova stack rapidament
 - [[wiki/concepts/aprendizado-continuo]] — adaptabilidade técnica depende de aprendizado contínuo
 - [[wiki/concepts/burnout-dev]] — baixa adaptabilidade combinada com alta demanda é caminho para burnout
 
+## Adaptabilidade como Atributo Central do Profissional do Futuro
+
+Na era da IA, a velocidade de mudança eliminou a possibilidade de roadmaps de 3 anos. O [[nexialista]] que conecta múltiplas áreas só é sustentável se [[aprender-a-aprender]] e adaptabilidade forem habilidades ativas.
+
+> *"O profissional do futuro não é o mais atualizado — é o mais adaptável."* — Débora
+
+[[crenca-de-alta-eficacia]] é o preditor psicológico da adaptabilidade: quem acredita na própria capacidade de mudar, muda.
+
 ## Key Sources
 
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]
+- [[wiki/sources/profissional-do-futuro-ia-identidade-aprendizado]]

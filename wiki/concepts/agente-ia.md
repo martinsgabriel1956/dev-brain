@@ -3,8 +3,8 @@ type: concept
 title: "Agente de IA"
 aliases: ["agente", "AI agent", "agentes de ia"]
 date_created: 2026-05-18
-date_updated: 2026-05-18
-source_count: 1
+date_updated: 2026-05-31
+source_count: 2
 tags: [agentes-ia, llm, llmops, automacao]
 skill: tech-mentor-ai
 status: draft
@@ -41,6 +41,15 @@ Reflete que ainda não existe vocabulário maduro para descrever as relações d
 
 ---
 
+## Exemplo Concreto: Claude Code
+
+[[claude-code]] é um agente de desenvolvimento que demonstra os padrões na prática:
+- **Tool use:** lê/escreve arquivos, executa comandos, acessa MCP servers
+- **Loop de ação:** plan → execute → observe → repeat
+- **Subagentes:** delega subtarefas a agentes especializados ([[hooks-agente]] permitem reagir ao fim de cada subagente via `SubagentStop`)
+- **Memória:** [[claude-md]] persiste contexto entre sessões; [[context-compaction]] gerencia janela
+
 ## Key Sources
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
+- [[wiki/sources/claude-code-guia-pratico-full-cycle]]

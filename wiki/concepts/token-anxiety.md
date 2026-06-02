@@ -3,9 +3,9 @@ type: concept
 title: "Token Anxiety"
 aliases: ["ansiedade de token", "token ansiedade"]
 date_created: 2026-05-18
-date_updated: 2026-05-18
-source_count: 1
-tags: [agentes-ia, comportamento, produtividade, burnout, llmops]
+date_updated: 2026-05-31
+source_count: 2
+tags: [agentes-ia, comportamento, produtividade, burnout, llmops, token-economics, era-agentica]
 skill: tech-mentor-ai
 status: draft
 ---
@@ -52,6 +52,13 @@ Quando o fenômeno não tem nome, ele é normalizado por padrão. Nomear como *T
 
 ---
 
+## Token Anxiety no Nível Organizacional
+
+O que era fenômeno individual agora opera em escala de board: Uber queimou o orçamento de IA de 2026 em 4 meses; Microsoft cancelou licenças internas do Claude Code. O [[paradoxo-de-jevons]] amplifica: tokens mais baratos → mais casos de uso → conta maior → mais pressão de custo.
+
+Na [[era-agentica]], agentes rodam a noite inteira fazendo tarefas inteiras — o consumo de tokens por dev passou para centenas e milhares de dólares/mês. A ansiedade individual de "não desperdiçar tokens" tem agora um espelho corporativo: "quanto estamos gastando nisso?"
+
 ## Key Sources
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
+- [[wiki/sources/ia-custo-roi-bolha-ou-realidade]]

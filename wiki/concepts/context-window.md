@@ -3,8 +3,8 @@ type: concept
 title: "Context Window"
 aliases: ["janela de contexto", "context length", "token limit"]
 date_created: 2026-05-17
-date_updated: 2026-05-17
-source_count: 1
+date_updated: 2026-05-31
+source_count: 2
 tags: [llm, context-window, tokens, prompt-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -43,6 +43,17 @@ Tamanho máximo de tokens que um modelo de linguagem pode processar em uma únic
 - [[hyperparameters-llm]] — `max_tokens` controla o tamanho do completion
 - [[in-context-learning]] — exemplos few-shot consomem tokens do context window
 
+## Em Agentes de Desenvolvimento
+
+No [[claude-code]], a janela de contexto (~200k tokens) acumula ao longo da sessão. Quando fica cheia, o agente faz [[context-compaction]] automática — resume o histórico para continuar trabalhando, mas com perda de nuances. Boas práticas:
+
+- **Uma tarefa por sessão** — evita enchimento desnecessário
+- **[[claude-md]] como memória persistente** — o que importa fica em arquivo, não no histórico
+- **`/compact`** para compactar manualmente antes da transição de tarefas
+
+Isso é uma das causas do fenômeno [[token-anxiety]]: a consciência de que o contexto "expira" cria urgência nos desenvolvedores.
+
 ## Fontes
 
 - [[wiki/sources/microsoft-prompt-engineering-guide]]
+- [[wiki/sources/claude-code-guia-pratico-full-cycle]]

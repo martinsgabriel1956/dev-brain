@@ -3,8 +3,8 @@ type: concept
 title: "Software 3.0"
 aliases: ["software 3.0", "Software 2.0", "programação por prompts"]
 date_created: 2026-05-17
-date_updated: 2026-05-17
-source_count: 1
+date_updated: 2026-06-01
+source_count: 2
 tags: [prompt-engineering, llm, software-3, karpathy, paradigma]
 skill: tech-mentor-ai
 status: stable
@@ -49,6 +49,13 @@ Origem: [Twitter exchange com Chris Olah](https://twitter.com/karpathy/status/12
 
 - [[wiki/entities/andrej-karpathy]] — cunhou o conceito
 
+## Programação = Descrição Inambígua (Dijkstra)
+
+A conexão entre Software 3.0 e a crítica de [[wiki/entities/edsger-dijkstra]] é direta: se "o ato de descrever um programa de forma inambígua e o ato de programar são a mesma coisa", então a LLM como executor de descrições em linguagem natural é a realização literal dessa ideia.
+
+O limite prático: **a LLM replicará as ambiguidades da descrição**. Se o prompt não especifica validação, mutabilidade ou paralelismo, o código gerado também não especificará. Verificado empiricamente com GPT-4.1 — a descrição em português produziu o mesmo código Python com as mesmas omissões.
+
 ## Fontes
 
 - [[wiki/sources/microsoft-prompt-engineering-guide]]
+- [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — demonstração empírica de que LLM replica ambiguidades do prompt; crítica de Dijkstra como fundamento teórico
