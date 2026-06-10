@@ -3,8 +3,8 @@ type: concept
 title: "Novo Perfil do Desenvolvedor na Era da IA"
 aliases: ["dev ia", "engenheiro ia 2026", "novo dev", "perfil profissional ia"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 3
+date_updated: 2026-06-09
+source_count: 4
 tags: [carreira, perfil-profissional, ia-para-devs, arquitetura, planejamento]
 skill: tech-mentor-ai
 status: draft
@@ -52,8 +52,13 @@ O gerente não escreve as linhas de código. Mas sem boas especificações do ge
 
 CEOs e gestores esperam que um dev que domina harness + visão de produto entregue em 2–3 dias o que antes levava um mês. Quem não se adapta a esse ritmo está em posição frágil. Empresas já medem **consumo de tokens** como proxy de produtividade (especialmente no Vale do Silício — [[wiki/concepts/token-maxing]]).
 
+## Formalização: Product Engineer
+
+O conceito descrito aqui ganhou nome formal confirmado por dados de campo do Vale do Silício em 2026: [[product-engineer]]. Stripe, Linear e Vercel já contratam com essa terminologia. O Product Engineer tem duas faces inseparáveis: senso de produto (fala com PM, mede impacto, tem [[taste-dev]]) + harness e qualidade (constrói a infra que builders e agentes usam). A observação de campo reforça a analogia do gerente: o dev não escreve mais a maioria do código — decide o que e como construir, e valida o resultado.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-02-mercado-perfil-profissional]]
 - [[wiki/sources/formacao-ia-devs-aula-06-qa]]
 - [[wiki/sources/formacao-ia-devs-aula-01-abertura]]
+- [[wiki/sources/product-engineer-vale-do-silicio-2026]]

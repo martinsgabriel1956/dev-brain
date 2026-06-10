@@ -3,8 +3,8 @@ type: concept
 title: "Níveis de Adoção de IA — L0 a L4"
 aliases: ["L0 L1 L2 L3 L4", "escada de maturidade IA dev", "niveis ia branas nauke"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 2
+date_updated: 2026-06-09
+source_count: 3
 tags: [ia-para-devs, adocao, maturidade, produtividade, spec-driven]
 skill: tech-mentor-ai
 status: stable
@@ -57,8 +57,13 @@ Ter 100% do código gerado por IA não significa estar no L3. No L2, a autonomia
 | L3 | 70–90% | Alto | $100–200/mês |
 | L4 | ~100% | Total | $15k+/mês (Devin) |
 
+## L3 na Prática: o Product Engineer
+
+Dados de campo do Vale do Silício (2026) descrevem o L3 em operação como o [[product-engineer]]. O tech lead do Databricks usa os intervalos entre reuniões para disparar 2–3 agents e revisa os PRs resultantes em blocos concentrados — não linha a linha. A engenheira do Cursor dispara ~5 agents simultâneos por feature com critério claro de granularidade: "a menor quantidade de trabalho mais a maior quantidade que um agente consegue fazer sem esbarrar em outro agente." O paralelismo real no trabalho diário é o marcador que separa L2 de L3.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-02-mercado-perfil-profissional]]
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/escala-niveis-uso-ia-engenheiros]]
+- [[wiki/sources/product-engineer-vale-do-silicio-2026]]

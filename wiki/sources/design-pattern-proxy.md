@@ -1,72 +1,63 @@
 ---
 type: source
 title: "Padrão de Projeto: Proxy"
-aliases: ["proxy pattern", "design pattern proxy"]
+aliases: ["proxy pattern video", "renato augusto proxy", "design pattern proxy cache"]
 date_created: 2026-05-01
-date_updated: 2026-05-01
+date_updated: 2026-06-05
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/design-pattern-proxy.md
-source_url: https://refactoring.guru/pt-br/design-patterns/proxy
-author: Renato Augusto
-date_published: null
-date_ingested: 2026-05-01
-tags: [design-patterns, structural, proxy, cache, solid, oop]
+source_url: ""
+author: "Renato Augusto"
+date_published: ""
+date_ingested: 2026-06-05
+source_count: 0
+tags: [proxy-pattern, design-patterns, structural, cache, solid, ocp, srp, decorator-pattern, open-closed, single-responsibility]
 skill: tech-mentor-backend
 status: stable
 ---
 
 ## TL;DR
 
-O padrão Proxy insere um objeto intermediário entre o cliente e o objeto real, permitindo controlar o acesso e adicionar comportamentos (cache, log, validação, controle de acesso) sem modificar a classe original e sem poluir o código cliente.
+Proxy é um interceptador entre cliente e objeto real: implementa a mesma interface, recebe o objeto real no construtor e adiciona uma camada (cache, auth, log, validação) sem modificar nenhum dos dois lados. O cliente nunca sabe se está falando com o Proxy ou com o objeto real. Principal motivação de uso: evitar ferir OCP e SRP ao adicionar infraestrutura fora da classe de negócio e fora do Controller.
 
-## Problema Central
+## Key Claims
 
-Uma classe `ReportGenerator` com lógica pesada demorava 5 segundos por requisição. Onde adicionar cache sem violar SRP (não no Controller) e sem violar OCP (não na classe original)?
+**Claim:** Cache pertence ao Proxy, não ao Controller nem à classe de serviço.
+**Evidence:** Controller não deve conter infraestrutura (viola SRP). Modificar a classe de serviço para adicionar cache viola OCP — mexer em código em produção é arriscado. O Proxy encapsula esse comportamento numa classe nova sem tocar em nenhuma das duas.
+**Confidence:** alta — demonstrado com exemplo concreto (ReportGenerator + ReportGeneratorProxy).
 
-**Resposta:** criar `ReportGeneratorProxy` que encapsula o `ReportGenerator` real e adiciona a camada de cache.
+**Claim:** O Proxy só funciona como substituto transparente se compartilhar a mesma interface do objeto real.
+**Evidence:** O Controller depende da interface `IReportGenerator`. Tanto `ReportGenerator` quanto `ReportGeneratorProxy` a implementam — o Controller não muda, só troca qual instância recebe. Isso é LSP em ação.
+**Confidence:** alta.
 
-## Afirmações-chave
-
-| Afirmação | Evidência | Confiança |
-|---|---|---|
-| Proxy é um padrão estrutural | Catalogado pelo GoF | Alta |
-| Proxy serve como substituto/espaço reservado | Definição do padrão | Alta |
-| Ambos devem implementar a mesma interface | Necessário para LSP — cliente não distingue proxy do real | Alta |
-| Diferente do Decorator, que decora em cadeia | Decorator tem motivação de extensão; Proxy tem motivação de controle de acesso | Alta |
-| Aplicável a cache, log, validação, lazy init, controle de acesso | Listado no Refactoring Guru e demonstrado no exemplo | Alta |
+**Claim:** A diferença entre Proxy e Decorator está na motivação, não na estrutura.
+**Evidence:** Ambos encapsulam um objeto e implementam a mesma interface. Proxy intercepta acesso e adiciona infraestrutura (cache, controle); Decorator adiciona comportamento funcional em cadeia. Cache não é regra de negócio — é infraestrutura, portanto vai no Proxy.
+**Confidence:** alta.
 
 ## Fluxo de Execução (exemplo de cache)
 
 ```
 Cliente → ReportGeneratorProxy.generate()
             ├── cache HIT  → retorna dado do cache (imediato)
-            └── cache MISS → chama ReportGenerator.generate() (5s)
+            └── cache MISS → chama ReportGenerator.generate() (operação pesada)
                               → armazena no cache (TTL 1h)
                               → retorna resultado
 ```
 
-## Conceitos e Entidades Relacionados
+## Entities & Concepts Touched
 
-- [[proxy-pattern]] — conceito principal
-- [[structural-patterns]] — categoria do padrão
-- [[cache-layer]] — uso mais comum demonstrado
-- [[open-closed-principle]] — razão para não modificar a classe original
-- [[single-responsibility-principle]] — razão para não colocar cache no Controller
-- [[liskov-substitution-principle]] — interface compartilhada garante substituição
-- [[decorator-pattern]] — padrão similar com motivação diferente
-- [[facade-pattern]] — padrão similar mencionado
-- [[adapter-pattern]] — padrão similar mencionado
-- [[repository-pattern]] — padrão de infraestrutura usado no exemplo
-- [[lazy-initialization]] — caso de uso do Proxy
-- [[gang-of-four]] — autores do catálogo oficial
-- [[refactoring-guru]] — referência de estudo
+- [[concepts/proxy-pattern]]
+- [[concepts/decorator-pattern]]
+- [[concepts/cache-layer]]
+- [[concepts/lazy-initialization]]
+- [[concepts/open-closed-principle]]
+- [[concepts/single-responsibility-principle]]
+- [[concepts/design-patterns]]
+- [[entities/gang-of-four]]
+- [[entities/renato-augusto]]
 
-## Perguntas em Aberto
+## Open Questions
 
 - Em que momento o Proxy vira over-engineering vs. quando é a solução certa?
 - Como testar unitariamente um proxy com cache sem precisar de infra real?
-
-## Citações Relevantes
-
-> "Padrão de projeto proxy é como se fosse um interceptador — do código cliente eu não consigo conversar diretamente com a classe que eu queria, tenho que passar por um proxy primeiro."
-
-> "A gente pode fazer diversas coisas como cache, log, validação... esse padrão de projeto aqui ele é muito versátil."
+- Em linguagens sem interfaces explícitas (Go, duck typing), como o Proxy se expressa idiomaticamente?
+- Proxy vs. Middleware em frameworks web — quando usar um e quando usar o outro?

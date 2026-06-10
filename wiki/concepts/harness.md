@@ -3,8 +3,8 @@ type: concept
 title: "Harness"
 aliases: ["AI harness", "harness de IA", "coding harness"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 5
+date_updated: 2026-06-09
+source_count: 6
 tags: [harness, llm, tool-call, agente, context-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -70,6 +70,10 @@ IDE e harness são camadas separadas. O harness usa `read_file`/`write_file` ind
 
 **User harness** — o que você fornece: rules, skills, MCPs, sensores. É onde está a maior alavanca de qualidade. Ver [[wiki/concepts/sensores-vs-guias]].
 
+## Harness como Trabalho Central do Product Engineer
+
+Dados de campo do Cursor (2026) mostram o harness em maturidade: code review automatizado por t-shirt size, specs estruturadas para agentes, MCP central com governança, self-healing por request, agents que abrem PRs sozinhos. Construir essa infraestrutura — não escrever o código em si — é a face 2 do [[product-engineer]]. A evolução do dev não é "deixar de construir" — é construir em camada diferente.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
@@ -77,3 +81,4 @@ IDE e harness são camadas separadas. O harness usa `read_file`/`write_file` ind
 - [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/formacao-ia-devs-aula-01-context-harness-engineering]]
+- [[wiki/sources/product-engineer-vale-do-silicio-2026]]

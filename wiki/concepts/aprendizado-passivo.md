@@ -3,8 +3,8 @@ type: concept
 title: "Aprendizado Passivo"
 aliases: ["passive learning", "copia sem entender", "ilusão de aprendizado"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 2
+date_updated: 2026-06-05
+source_count: 3
 tags: [aprendizado-passivo, aprendizado, iniciante, dependencia-ia, autonomia-tecnica]
 skill: tech-mentor-leadership
 status: stable
@@ -83,3 +83,4 @@ Quem tem baixa crença de eficácia tende ao aprendizado passivo porque não acr
 
 - [[wiki/sources/ia-e-aprendizado-programacao-iniciantes]]
 - [[wiki/sources/profissional-do-futuro-ia-identidade-aprendizado]]
+- [[wiki/sources/papinho-tech-solo-aprender-a-aprender]] — ângulo EAD: vídeo de alta qualidade técnica (câmera, áudio, didática) cria ilusão de aprendizado; metodologia de aula expositiva sozinha não produz aprendizado

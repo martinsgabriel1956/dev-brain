@@ -3,8 +3,8 @@ type: concept
 title: "Token Anxiety"
 aliases: ["ansiedade de token", "token ansiedade"]
 date_created: 2026-05-18
-date_updated: 2026-05-31
-source_count: 2
+date_updated: 2026-06-09
+source_count: 3
 tags: [agentes-ia, comportamento, produtividade, burnout, llmops, token-economics, era-agentica]
 skill: tech-mentor-ai
 status: draft
@@ -58,7 +58,14 @@ O que era fenômeno individual agora opera em escala de board: Uber queimou o or
 
 Na [[era-agentica]], agentes rodam a noite inteira fazendo tarefas inteiras — o consumo de tokens por dev passou para centenas e milhares de dólares/mês. A ansiedade individual de "não desperdiçar tokens" tem agora um espelho corporativo: "quanto estamos gastando nisso?"
 
+## Token Anxiety para Devs Não-Anglófonos
+
+Há uma camada adicional de ansiedade para devs que escrevem em português: além de gerenciar o uso eficiente da janela, eles pagam **62% mais tokens** para expressar a mesma informação. A [[token-tax-multilingual]] significa que o context budget se esgota mais rápido, o reset ocorre em menos conteúdo, e o custo por sessão é maior — sem que o dev perceba que a variável é o idioma, não o volume de trabalho.
+
+---
+
 ## Key Sources
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
 - [[wiki/sources/ia-custo-roi-bolha-ou-realidade]]
+- [[wiki/sources/custo-tokens-portugues-vs-ingles]]

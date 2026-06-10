@@ -3,8 +3,8 @@ type: concept
 title: "Design Patterns"
 aliases: ["padrões de projeto", "GoF", "Gang of Four patterns"]
 date_created: 2026-05-16
-date_updated: 2026-05-16
-source_count: 1
+date_updated: 2026-06-09
+source_count: 2
 tags: [design, arquitetura, padroes, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -50,6 +50,11 @@ Frameworks *são* manifestações de patterns em forma de código reutilizável:
 
 Estudar a [[wiki/concepts/fundacao-tecnica|fundação]] antes de estudar frameworks torna o aprendizado de qualquer framework muito mais rápido.
 
+## Pré-requisito: Modelagem OO
+
+Antes de estudar design patterns é obrigatório dominar [[modelagem-orientada-a-objetos]] — saber o que vira classe, o que vira atributo e como os objetos se relacionam. Sem esse fundamento, o dev não tem critério para avaliar quando um pattern é adequado. O resultado é [[over-engineering]]: patterns aplicados em todo lugar sem problema correspondente ("verde neném").
+
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]] — quando *não* estudar patterns; origem em Christopher Alexander; relação com GoF e Java; patterns como nomes para o que você já fazia
+- [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]] — modelagem OO como pré-requisito; verde neném como sintoma de pular estágios

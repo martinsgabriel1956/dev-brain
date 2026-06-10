@@ -1,36 +1,62 @@
 # Padrão de Projeto: Proxy
 
-**Autor:** Renato Augusto  
-**Fonte:** Transcrição de vídeo (YouTube)  
-**Referência oficial:** https://refactoring.guru/pt-br/design-patterns/proxy  
-**Categoria:** Padrões Estruturais
+**Autor:** Renato Augusto
+**Formato:** Transcrição de vídeo (canal no YouTube)
+**Categoria do padrão:** Estrutural (GoF)
+**Idioma original:** Português (BR)
+**Data de transcrição:** 2026-06-05
 
 ---
 
-## O que é o Proxy?
+## Introdução
 
-O padrão Proxy serve como um **substituto ou espaço reservado para outro objeto**, permitindo controlar o acesso a ele. Com isso, é possível executar ações antes ou depois que uma requisição chega ao objeto original.
-
-É como um **interceptador** entre o código cliente e o objeto real: o cliente nunca conversa diretamente com a classe alvo — ele passa pelo proxy primeiro.
-
-> Similaridade com outros padrões: Facade, Adapter, Decorator — porém com **motivação diferente**. O Decorator decora em cadeia; o Proxy intercepta uma comunicação específica e adiciona uma camada no meio.
+O padrão Proxy é agnóstico de linguagem e framework — o conceito arquitetural se aplica em qualquer stack. Tem similaridade visual com Facade, Adapter e Decorator, mas com motivação completamente diferente.
 
 ---
 
-## Motivação
+## O que é o Proxy
 
-Imagine uma classe `ReportGenerator` que gera relatórios. Com o tempo, a lógica ficou pesada e passou a demorar 5 segundos por requisição. O front-end fica travado esperando.
+O Proxy serve como **substituto ou espaço reservado para outro objeto**, permitindo controlar o acesso a ele. Em vez do código cliente conversar diretamente com a classe alvo, ele passa por um intermediário — o Proxy.
 
-**Onde colocar o cache?**
+```
+Cliente → Proxy → Objeto Real
+```
 
-- No Controller? Viola SRP e insere regra de infraestrutura onde não deveria.
-- No próprio `ReportGenerator`? Viola OCP — mexer em código em produção é arriscado.
+Esse intermediário pode:
+- Adicionar funcionalidades (cache, log, validação)
+- Fazer verificações antes ou depois da chamada
+- Atrasar a inicialização do objeto real (lazy initialization)
+- Controlar permissões de acesso
 
-**Solução:** criar uma classe `ReportGeneratorProxy` que encapsula o `ReportGenerator` real e adiciona a camada de cache sem tocar no código existente.
+> **Resumo em uma frase:** o Proxy intercepta a comunicação entre cliente e objeto, adicionando uma camada no meio sem modificar nenhum dos dois.
 
 ---
 
-## Estrutura do Exemplo (Framework Web)
+## Motivação — O Problema
+
+Imagine um gerador de relatórios numa aplicação web:
+
+```
+GET /reports/:id
+→ Controller busca o Report no repositório
+→ Passa o Report para ReportGenerator.generate()
+→ Retorna os dados ao front-end
+```
+
+Com o crescimento do sistema, a lógica ficou pesada. A operação passou a levar **5 segundos** para retornar — tempo inaceitável para o usuário.
+
+**Solução óbvia (errada):** implementar cache direto no Controller ou na classe de serviço.
+
+**Por que é errado:**
+- Controller não deve conter regras de negócio ou infraestrutura
+- Jogar cache no `ReportGenerator` viola o **Single Responsibility Principle** e o **Open/Closed Principle**
+- Modificar código que já está em produção é arriscado
+
+**Solução correta:** criar um Proxy.
+
+---
+
+## Estrutura do Projeto de Exemplo
 
 ```
 src/
@@ -40,31 +66,41 @@ src/
     ReportGenerator             # classe real com lógica pesada
     ReportGeneratorProxy        # proxy com camada de cache
   repositories/
-    ReportRepository            # acesso ao banco de dados
+    ReportRepository            # acesso ao banco de dados (Data Mapper pattern)
   entities/
     Report                      # entidade com atributo id
 ```
 
 ---
 
-## Interface Compartilhada
+## Implementação Passo a Passo
 
-Para o proxy funcionar, ambos (`ReportGenerator` e `ReportGeneratorProxy`) devem implementar a mesma interface:
+### 1. Criar a Interface
+
+Para que o Proxy possa se passar pelo objeto original, ambos devem implementar a mesma interface:
 
 ```typescript
-interface ReportGeneratorInterface {
+interface IReportGenerator {
   generate(report: Report): any[];
 }
 ```
 
-Isso garante que o Controller não precisa saber se está falando com o proxy ou com a classe real.
-
----
-
-## Implementação do Proxy (com Cache)
+### 2. Fazer a Classe Original Implementar a Interface
 
 ```typescript
-class ReportGeneratorProxy implements ReportGeneratorInterface {
+class ReportGenerator implements IReportGenerator {
+  generate(report: Report): any[] {
+    // lógica pesada aqui — simula 5 segundos
+    sleep(5000);
+    return ['conteúdo do relatório'];
+  }
+}
+```
+
+### 3. Criar o Proxy
+
+```typescript
+class ReportGeneratorProxy implements IReportGenerator {
   constructor(
     private reportGenerator: ReportGenerator,
     private cache: CacheInterface
@@ -74,70 +110,100 @@ class ReportGeneratorProxy implements ReportGeneratorInterface {
     const cacheKey = `report_${report.id}`;
 
     return this.cache.get(cacheKey, () => {
-      // Executa apenas se o cache estiver vazio ou expirado
+      // expira após 1 hora
+      // só executa quando o cache está vazio ou expirado
       return this.reportGenerator.generate(report);
-    }, { expiresIn: 3600 }); // expira em 1 hora
+    }, { expiresIn: 3600 });
   }
 }
 ```
 
-**Fluxo:**
-1. Proxy verifica se existe cache para `report_<id>`
-2. Se existir → retorna do cache (resposta imediata)
-3. Se não existir → chama `ReportGenerator.generate()` (5s), armazena no cache, retorna o resultado
-4. Após 1 hora o cache expira e o ciclo se repete
+**O que acontece em cada chamada:**
 
----
+| Situação | Comportamento |
+|---|---|
+| Primeira chamada (cache vazio) | Executa `ReportGenerator.generate()`, armazena no cache, retorna |
+| Chamadas seguintes (cache válido) | Retorna do cache imediatamente — `ReportGenerator` não é chamado |
+| Após 1 hora (cache expirado) | Executa novamente, atualiza o cache |
 
-## No Controller (código cliente)
+### 4. Substituir no Controller
 
 ```typescript
-// Antes
-const reportGenerator = new ReportGenerator(repository);
+// antes
+const reportGenerator = new ReportGenerator();
 
-// Depois — apenas troca para o proxy
+// depois — única mudança no Controller
 const reportGenerator = new ReportGeneratorProxy(
-  new ReportGenerator(repository),
+  new ReportGenerator(),
   cache
 );
 
-// O restante do código não muda
+// a chamada permanece idêntica — Controller não sabe que é um Proxy
 const reportData = reportGenerator.generate(report);
 ```
 
 ---
 
-## Outros Casos de Uso do Proxy
+## Por que Funciona — O Princípio
 
-| Caso | Descrição |
+O Controller é o **código cliente**. Ele só sabe que está lidando com algo que implementa `IReportGenerator`. Não sabe — e não precisa saber — se é o objeto real ou um Proxy.
+
+Isso é possível porque:
+1. Proxy e objeto real compartilham a mesma interface
+2. O Controller depende da abstração (interface), não da implementação concreta
+
+---
+
+## Outras Aplicações do Proxy
+
+Além de cache, o mesmo padrão se aplica a:
+
+| Uso | O que o Proxy faz |
 |---|---|
-| **Cache** | Evita reprocessamento de operações custosas |
-| **Controle de acesso** | Verifica permissões antes de delegar ao objeto real |
-| **Log** | Registra chamadas sem poluir a classe original |
-| **Lazy initialization** | Adia a criação de objetos pesados até o momento do uso |
-| **Validação** | Verifica regras antes de repassar a requisição |
+| **Cache** | Armazena resultado e evita reprocessamento |
+| **Controle de acesso** | Verifica permissão do usuário antes de delegar |
+| **Log** | Registra chamadas antes/depois de executar |
+| **Lazy initialization** | Adia criação de objetos pesados até o primeiro uso |
+| **Validação** | Valida entrada antes de passar ao objeto real |
+| **Rate limiting** | Controla frequência de chamadas ao objeto real |
 
 ---
 
-## Princípios Respeitados
+## Diferença entre Proxy e Decorator
 
-- **SRP:** cache/log/validação ficam fora da classe de serviço e do controller
-- **OCP:** a classe original não é modificada; cria-se algo novo
-- **LSP:** o proxy implementa a mesma interface, podendo substituir o original
-
----
-
-## Diferença do Decorator
+Visualmente são parecidos — ambos encapsulam um objeto e delegam chamadas. A diferença está na **motivação**:
 
 | | Proxy | Decorator |
 |---|---|---|
-| **Propósito** | Controlar acesso / interceptar | Adicionar comportamento em cadeia |
-| **Motivação** | Infraestrutura, segurança, cache | Extensão de funcionalidade |
-| **Instanciação** | Geralmente cria internamente o objeto real | Recebe o objeto decorado externamente |
+| **Propósito** | Controlar acesso / interceptar comunicação | Adicionar comportamento em cadeia |
+| **Quem conhece quem** | Proxy conhece a classe concreta | Decorator conhece a interface |
+| **Composição** | Geralmente uma camada única | Pode ser encadeado (decorator de decorator) |
+| **Exemplo** | Cache, auth, log de acesso | Adicionar funcionalidades incrementais |
+
+> Cache não é regra de negócio do `ReportGenerator` — é infraestrutura. Por isso vai no Proxy, não no Decorator.
+
+---
+
+## Princípios SOLID Respeitados
+
+- **SRP (Single Responsibility):** cada classe tem uma responsabilidade — `ReportGenerator` gera, `ReportGeneratorProxy` gerencia cache
+- **OCP (Open/Closed):** código existente não é modificado, apenas estendido com nova classe
+- **LSP (Liskov Substitution):** Proxy implementa a mesma interface e pode substituir o original sem o cliente perceber
+
+---
+
+## Resumo
+
+O Proxy é um interceptador. Cria-se uma classe que:
+1. Implementa a mesma interface do objeto real
+2. Recebe o objeto real no construtor
+3. Adiciona a lógica necessária (cache, auth, log) antes ou depois de delegar
+
+O código cliente não sabe — e não precisa saber — se está falando com o objeto real ou com o Proxy.
 
 ---
 
 ## Referências
 
-- [Refactoring Guru — Proxy (PT-BR)](https://refactoring.guru/pt-br/design-patterns/proxy)
-- Livro: *Padrões de Projeto* — Gang of Four (GoF)
+- Livro GoF — *Padrões de Projeto: Soluções Reutilizáveis de Software Orientado a Objetos*
+- [Refactoring.Guru — Proxy Pattern](https://refactoring.guru/design-patterns/proxy)

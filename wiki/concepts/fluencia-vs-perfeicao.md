@@ -57,3 +57,4 @@ A fluência se constrói justamente passando pelo erro, não evitando-o. O objet
 
 - [[wiki/sources/akita-como-aprender-programacao]] — fluência como objetivo vs. perfeição como bloqueio; analogia com inglês; a criança que aprende sem vergonha
 - [[wiki/sources/ia-e-aprendizado-programacao-iniciantes]] — o desconforto como parte necessária; pedir ajuda só depois de tentar
+- [[sources/quanto-tempo-aprender-programacao]] — fluência (momento em que a solução se desenha automaticamente) é produto de exposição repetida, não de intensidade; não tem como acelerar

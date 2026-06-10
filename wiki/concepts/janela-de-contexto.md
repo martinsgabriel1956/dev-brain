@@ -3,8 +3,8 @@ type: concept
 title: "Janela de Contexto"
 aliases: ["context window", "context length", "janela de tokens"]
 date_created: 2026-05-18
-date_updated: 2026-05-18
-source_count: 1
+date_updated: 2026-06-09
+source_count: 2
 tags: [llm, tokens, agentes-ia, llmops]
 skill: tech-mentor-ai
 status: draft
@@ -36,6 +36,15 @@ Modelos mais recentes têm expandido consistentemente o tamanho da janela (de 4k
 
 ---
 
+## Idioma Afeta o Consumo da Janela
+
+O custo em tokens de um texto não é neutro em relação ao idioma. Devido ao [[byte-pair-encoding]], escrever em português consome **62% mais tokens** do que o equivalente em inglês — ver [[token-tax-multilingual]].
+
+Na prática: um `CLAUDE.md` de 500 linhas em português esgota 62% mais contexto por sessão do que em inglês. Em uso intenso com [[spec-driven-development]], esse multiplicador é um custo real.
+
+---
+
 ## Key Sources
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
+- [[wiki/sources/custo-tokens-portugues-vs-ingles]]

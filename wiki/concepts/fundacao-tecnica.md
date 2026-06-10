@@ -3,8 +3,8 @@ type: concept
 title: "Fundação Técnica"
 aliases: ["fundamentos", "base técnica", "foundations"]
 date_created: 2026-05-16
-date_updated: 2026-05-16
-source_count: 1
+date_updated: 2026-06-09
+source_count: 2
 tags: [aprendizado, carreira, fundamentos]
 skill: tech-mentor-leadership
 status: stable
@@ -34,6 +34,19 @@ Linguagem da moda, framework da moda — são simples de aprender *se* a fundaç
 
 > "Aprender um novo framework tem que ser simples. Aprender uma nova linguagem tem que ser simples. Se não está sendo, é sinal de fundação fraca."
 
+## Progressão Incremental de Aprendizado
+
+A fundação não é aprendida de uma vez — segue uma progressão de três estágios que não podem ser pulados sem custo:
+
+| Estágio | Conteúdo |
+|---|---|
+| 1 | [[logica-de-programacao]], algoritmos, dominar uma linguagem |
+| 2 | [[modelagem-orientada-a-objetos]] — classes, atributos, relacionamentos |
+| 3 | [[design-patterns]], TDD, arquitetura |
+
+Pular do estágio 1 para o 3 é a causa mais comum de [[over-engineering]]: aplicar patterns sem o modelo mental para avaliar quando eles resolvem um problema real.
+
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]] — metáfora do puxadinho; hype vs. fundação; Akita aprendendo Elixir e Crystal em semanas graças à experiência acumulada
+- [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]] — progressão de 3 estágios; OOP modeling como pré-requisito; otimização prematura

@@ -3,8 +3,8 @@ type: concept
 title: "Autodidata"
 aliases: ["autodidatismo", "self-teaching", "aprendizado autônomo"]
 date_created: 2026-05-16
-date_updated: 2026-05-31
-source_count: 2
+date_updated: 2026-06-05
+source_count: 3
 tags: [aprendizado, mentalidade, carreira, dependencia-ia, autonomia-tecnica]
 skill: tech-mentor-leadership
 status: stable
@@ -44,3 +44,4 @@ Construir [[autonomia-tecnica]] exige a mesma postura do autodidata: tentar, err
 - [[wiki/sources/akita-como-aprender-programacao]] — distinção central entre autodidatas e pessoas passivas; argumento da infância
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]] — autodidata como versão carreira de [[wiki/concepts/aprendizado-continuo]]; buscar o porquê, não só o como
 - [[wiki/sources/ia-e-aprendizado-programacao-iniciantes]] — autodidata vs. ciclo preguiçoso com IA; usar IA como tutora preserva a postura autodidata
+- [[wiki/sources/papinho-tech-solo-aprender-a-aprender]] — autoconsciência como base do autodidatismo; professor não controla o quanto você vai se aplicar — só você controla isso

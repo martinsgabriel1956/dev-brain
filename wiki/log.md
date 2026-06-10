@@ -2,6 +2,199 @@
 
 ---
 
+## [2026-06-10] ingest | Cinco Práticas de Segurança do Pragmatic Programmer
+
+**Source:** [[wiki/sources/cinco-praticas-seguranca-pragmatic-programmer]]
+**Skill:** tech-mentor-security (ref: secure-design-patterns.md + appsec-owasp.md)
+**Páginas criadas:**
+- `wiki/sources/cinco-praticas-seguranca-pragmatic-programmer.md`
+- `wiki/concepts/principio-do-menor-privilegio.md`
+- `wiki/concepts/secure-by-default.md`
+- `wiki/concepts/timing-attack.md`
+- `wiki/concepts/sql-injection.md`
+- `wiki/concepts/sast.md`
+- `wiki/concepts/secrets-management.md`
+- `wiki/concepts/xss.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/attack-surface.md` — exemplos concretos: S3 público, IDs sequenciais, outputs como vetores (timing), backlink
+- `wiki/concepts/defense-in-depth.md` — backlink
+- `wiki/concepts/waf.md` — backlink + distinção SAST vs WAF
+
+**Notas:** Vídeo de CTO (não identificado). Framing de dev, não de especialista em segurança. Argumento central: segurança é cultura, não feature — cada dev é responsável. Questão aberta: capítulo exato do Pragmatic Programmer que origina as 5 práticas não citado (provavelmente edição 20th anniversary). XSS criado como stub — mencionado brevemente na fonte.
+
+---
+
+## [2026-06-10] ingest | Como Strings Realmente Funcionam (por Baixo dos Panos)
+
+**Source:** [[wiki/sources/como-strings-realmente-funcionam]]
+**Skill:** cs-fundamentals (ref: regex-text-processing.md + number-systems-representation.md)
+**Páginas criadas:**
+- `wiki/sources/como-strings-realmente-funcionam.md`
+- `wiki/concepts/string.md`
+- `wiki/concepts/charset.md`
+- `wiki/concepts/ascii.md`
+- `wiki/concepts/unicode.md`
+- `wiki/concepts/utf-8.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/imutabilidade.md` — seção nova sobre imutabilidade de strings (motivação técnica: proteger encoding UTF-8)
+- `wiki/concepts/encoding.md` — distinção explícita entre encoding de texto (UTF-8) e encoding de transporte (Base64, URL)
+
+**Notas:** Vídeo YouTube com exemplos em Go. Argumento central: string é slice de bytes; imutabilidade existe para proteger UTF-8 de corrupção por indexação direta. Questão aberta: como o algoritmo UTF-8 usa bits de prefixo para marcar largura do caractere — fonte sugere um vídeo separado sobre isso. Nota: `encoding.md` existente cobria ângulo de segurança (transport encoding); a distinção foi registrada explicitamente no verbete para evitar conflação.
+
+---
+
+## [2026-06-10] ingest | Quanto Tempo Leva para Aprender Programação?
+
+**Source:** [[wiki/sources/quanto-tempo-aprender-programacao]]
+**Skill:** tech-mentor-leadership (ref: technical-mentoring.md)
+**Páginas criadas:**
+- `wiki/sources/quanto-tempo-aprender-programacao.md`
+- `wiki/concepts/vale-do-desespero.md`
+- `wiki/concepts/pratica-deliberada.md`
+- `wiki/concepts/reconhecimento-de-padroes.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/autoconsciencia-de-aprendizado.md` — backlink + ângulo do tempo de aprendizado
+- `wiki/concepts/entender-vs-aprender.md` — backlink + vale do desespero como ponto de crise
+- `wiki/concepts/fluencia-vs-perfeicao.md` — backlink + fluência como produto de exposição, não aceleração
+
+**Notas:** Vídeo YouTube de autora não identificada. Argumento central: o cérebro aprende padrões (não sintaxe), e esse processo tem um tempo biológico — a única estratégia válida é trocar o foco de prazo para quilometragem. Questão aberta: referência exata da pesquisa com xadrezistas não citada (provável Chase & Simon 1973 ou Ericsson). Range de 800–1.000 horas para júnior sem fonte explícita.
+
+---
+
+## [2026-06-09] ingest | Aprenda antes de aplicar — Fundamentos e Otimização Prematura
+
+**Source:** [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]]
+**Skill:** tech-mentor-leadership (`references/software-craftsmanship.md`)
+
+**Páginas criadas:**
+- `wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura.md`
+- `wiki/concepts/otimizacao-prematura.md`
+- `wiki/concepts/over-engineering.md`
+- `wiki/concepts/modelagem-orientada-a-objetos.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/fundacao-tecnica.md` — tabela de progressão de 3 estágios adicionada; link para over-engineering e modelagem OO; source_count 1→2
+- `wiki/concepts/design-patterns.md` — seção sobre pré-requisito de modelagem OO; link para over-engineering; source_count 1→2
+- `wiki/concepts/logica-de-programacao.md` — referenciado como estágio 1 da progressão incremental; source_count 2→3
+- `wiki/index.md` — três novos conceitos na seção "Padrões e Design" + source adicionada
+
+**Notas:** Fonte é transcrição de vídeo de dev brasileiro não identificado. Dois argumentos centrais: (1) a progressão incremental de aprendizado tem 3 estágios que não podem ser pulados — programação/algoritmos → modelagem OO → design patterns/arquitetura; pular leva ao "verde neném" (over-engineering ingênuo); (2) otimização prematura é a raiz de todo mal (Knuth) — refatorar antes de otimizar é sempre a ordem correta. Conexão forte com wiki existente: `fundacao-tecnica` (reforçado com a progressão explícita), `design-patterns` (pré-requisito de modelagem OO era implícito, agora explicitado). Conceito novo mais relevante: `modelagem-orientada-a-objetos` preenchia uma lacuna — estava implícito em várias páginas mas não tinha página própria. Questão aberta: autor não identificado — vídeo parece anterior a 2022.
+
+---
+
+## [2026-06-09] ingest | Construir a coisa que constrói a coisa — O Product Engineer em 2026
+
+**Source:** [[wiki/sources/product-engineer-vale-do-silicio-2026]]
+**Skill:** tech-mentor-ai (`references/ai/agentic-patterns-2025.md`)
+
+**Páginas criadas:**
+- `wiki/sources/product-engineer-vale-do-silicio-2026.md`
+- `wiki/concepts/product-engineer.md`
+- `wiki/concepts/taste-dev.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/novo-perfil-dev-ia.md` — Product Engineer é a formalização do conceito; source_count 3→4
+- `wiki/concepts/niveis-adocao-ia-l0-l4.md` — L3 na prática: tech lead Databricks + engenheira Cursor com 5 agents simultâneos; source_count 2→3
+- `wiki/concepts/harness.md` — harness como trabalho central do Product Engineer; exemplos do Cursor em maturidade; source_count 5→6
+- `wiki/concepts/worktree-paralelismo.md` — confirmação de campo: 5 agents simultâneos por feature; source_count 3→4
+- `wiki/concepts/spec-driven-development.md` — critério de granularidade de task confirmado em campo; source_count 6→7
+- `wiki/entities/valdemar-neto.md` — quarta fonte deste autor; source_count 3→4
+- `wiki/index.md` — nova seção "Perfil Profissional & Product Engineering" + source adicionada
+
+**Notas:** Fonte é relato de viagem do Valdemar Neto ao Vale do Silício — conversas com Cursor, Tray, Stripe, Databricks e outras empresas. Conceito central novo: Product Engineer (duas faces inseparáveis: senso de produto + harness). Conceito novo: taste (julgamento estético e de qualidade sem regra explícita). Dado de campo importante: 40–50% dos usuários do Cursor não são devs — builders entregando em produção. As quatro histórias concretas (Databricks, Cursor task decomposition, decisão por dados, incidente com Canvas) são evidências empíricas do L3 em operação que enriquecem diretamente `niveis-adocao-ia-l0-l4`, `spec-driven-development` e `worktree-paralelismo`. Conexão importante: `product-engineer` é a formalização do que `novo-perfil-dev-ia` descrevia de forma mais abstrata — os dois conceitos agora se linkam explicitamente. Questão aberta: o critério de granularidade de task ("menor trabalho que agente consegue fazer sem esbarrar em outro") é aplicável fora de ambientes com MCPs centrais e agents bem configurados?
+
+---
+
+## [2026-06-09] ingest | Você paga 62% a mais usando IA em português
+
+**Source:** [[wiki/sources/custo-tokens-portugues-vs-ingles]]
+**Skill:** tech-mentor-ai (`references/ai/token-economics.md`)
+
+**Páginas criadas:**
+- `wiki/sources/custo-tokens-portugues-vs-ingles.md`
+- `wiki/concepts/token-tax-multilingual.md`
+- `wiki/concepts/byte-pair-encoding.md`
+- `wiki/entities/pascadev.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/janela-de-contexto.md` — seção sobre idioma afetando consumo da janela; source_count 1→2
+- `wiki/concepts/claude-md.md` — seção sobre custo do CLAUDE.md em português; source_count 2→3
+- `wiki/concepts/token-anxiety.md` — seção sobre token tax amplificando ansiedade de devs não-anglófonos; source_count 2→3
+- `wiki/entities/anthropic.md` — seção sobre tokenizador BPE e token tax; source_count 4→5
+- `wiki/index.md` — nova seção "Token Economics & Custo" + source e entity adicionadas
+
+**Notas:** Fonte é transcrição de vídeo do canal PascaDev. Argumento central: a maioria dos devs brasileiros não sabe que escrever em português custa 62% mais tokens do que em inglês no Anthropic. A causa é técnica (BPE treinado em corpus inglês), não intencional. O impacto é concreto: `CLAUDE.md`, specs e prompts em português drenam o context budget 62% mais rápido por sessão. Três estratégias apresentadas — "tudo em inglês", "artefatos em inglês / conversas em português", "ignorar e aceitar". Conexão identificada com token-anxiety (token tax amplifica a ansiedade para devs não-anglófonos) e com claude-md (idioma do arquivo é variável de custo invisível). Questão aberta: o estudo específico citado não foi linkado na transcrição — números plausíveis mas verificar fonte primária antes de usar como referência em contexto formal.
+
+---
+
+## [2026-06-05] ingest | Padrão de Projeto: Proxy
+
+**Source:** [[wiki/sources/design-pattern-proxy]]
+**Skill:** tech-mentor-backend (`references/design-patterns.md`)
+
+**Páginas criadas:**
+- `wiki/sources/design-pattern-proxy.md` (enriquecimento de stub existente)
+- `wiki/entities/renato-augusto.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/proxy-pattern.md` — exemplo concreto de cache proxy adicionado; source_count 1→2
+- `wiki/concepts/cache-layer.md` — source adicionada com contexto; source_count 1→2
+- `wiki/concepts/decorator-pattern.md` — source_count 1→2
+- `wiki/concepts/lazy-initialization.md` — source_count 1→2
+- `wiki/index.md` — source e entity adicionadas
+
+**Notas:** Fonte é transcrição de vídeo de Renato Augusto sobre o padrão Proxy GoF. Argumento central: cache não é regra de negócio — pertence ao Proxy, não ao Controller nem à classe de serviço. A source page já existia como stub antecipado; foi enriquecida com Key Claims completas e fluxo de execução. Nenhuma contradição com wiki existente. Questões abertas: Proxy vs. Middleware em frameworks web; teste unitário de proxy com cache.
+
+---
+
+## [2026-06-05] ingest | Aprender a Aprender — Papinho Tech Solo
+
+**Source:** [[wiki/sources/papinho-tech-solo-aprender-a-aprender]]
+**Skill:** tech-mentor-leadership (`references/technical-mentoring.md`)
+
+**Páginas criadas:**
+- `wiki/sources/papinho-tech-solo-aprender-a-aprender.md`
+- `wiki/concepts/entender-vs-aprender.md`
+- `wiki/concepts/autoconsciencia-de-aprendizado.md`
+- `wiki/entities/linuxtips.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/autodidata.md` — source adicionada; professor não controla aplicação, só o aluno controla
+- `wiki/concepts/memoria-muscular.md` — analogias da bicicleta e do bebê adicionadas com link para `entender-vs-aprender`
+- `wiki/concepts/aprendizado-passivo.md` — ângulo EAD adicionado; vídeo de qualidade técnica cria ilusão de aprendizado
+- `wiki/index.md` — source e entity adicionadas; dois novos conceitos na seção Aprendizado e Mentalidade
+
+**Notas:** Fonte é episódio de podcast gravado em Gramado durante o Gramado Summit. Argumento central: entender e aprender são processos distintos — vídeo produz entendimento, não aprendizado; o EAD amplifica essa confusão. Nenhuma contradição com wiki existente — reforça e complementa páginas já consolidadas como `autodidata`, `aprendizado-passivo` e `memoria-muscular`. Questão aberta: existe pesquisa formal sobre "ilusão de fluência" no EAD?
+
+---
+
+## [2026-06-05] ingest | Padrões Arquiteturais de Segurança: Gatekeeper, Valet Key e Token Relay
+
+**Source:** [[wiki/sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
+**Skill:** tech-mentor-security (`references/security/secure-design-patterns.md`, `references/appsec-api.md`)
+
+**Páginas criadas:**
+- `wiki/sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay.md`
+- `wiki/concepts/gatekeeper-pattern.md`
+- `wiki/concepts/valet-key-pattern.md`
+- `wiki/concepts/token-relay-pattern.md`
+- `wiki/concepts/attack-surface.md`
+- `wiki/concepts/defense-in-depth.md`
+- `wiki/concepts/waf.md`
+- `wiki/entities/bernardo-lobato.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/media-upload-pattern.md` — adicionado link para `valet-key-pattern` e source
+- `wiki/concepts/rate-limiting.md` — adicionada dimensão de segurança e link para `gatekeeper-pattern`
+- `wiki/index.md` — nova seção "Segurança de APIs & Arquitetura" + entry na source table + entity
+
+**Notas:** Fonte é transcrição de vídeo do canal de Bernardo Lobato. Argumento central: segurança robusta nasce no design arquitetural, não no código — as três perguntas guias são "por que esse serviço está exposto?", "por que o cliente precisa falar com isso?" e "quem pode entrar por onde?". Conexão identificada com `media-upload-pattern` (presigned URL é implementação do Valet Key). Nenhuma contradição com wiki existente. Questões abertas: Token Relay com tokens opacos vs JWT em múltiplos saltos; Valet Key em cenários multi-tenant.
+
+---
+
 ## [2026-06-02] ingest | Formação IA para Devs — MCPs, Plan Mode, Agentes de Planejamento + 5 Principles
 
 **Skills:** `tech-mentor-ai` (aulas MCP, Plan Mode, SDD) · `tech-mentor-leadership` (5 Principles)

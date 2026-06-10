@@ -3,8 +3,8 @@ type: concept
 title: "Spec-Driven Development"
 aliases: ["SDD", "spec driven", "desenvolvimento orientado a especificação", "planning-first"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 6
+date_updated: 2026-06-09
+source_count: 7
 tags: [spec-driven, planejamento, ia-para-devs, harness, agente, qualidade]
 skill: tech-mentor-ai
 status: stable
@@ -94,6 +94,14 @@ A spec não é uma "living documentation" permanente. É produzida para guiar um
 | Artefato: um prompt | Artefato: spec + tasks + contexto do projeto |
 | Autonomia: baixa (L2) | Autonomia: alta (L3) |
 
+## Critério de Granularidade Confirmado em Campo
+
+A engenheira do Cursor (2026) articula o critério para tamanho de task para agente:
+
+> "A menor quantidade de trabalho mais a maior quantidade que um agente consegue fazer sem esbarrar em outro agente."
+
+Na prática: uma feature completa com migration, schema e API repository é feita junta — para que o agente entregue de ponta a ponta sem dependência bloqueante de outro agente. Cada feature dispara ~5 agents simultâneos. A coordenação antes era entre devs paralelos; agora é entre agentes paralelos — o trabalho de coordenação não acabou, mudou de objeto.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-01-abertura]]
@@ -102,3 +110,4 @@ A spec não é uma "living documentation" permanente. É produzida para guiar um
 - [[wiki/sources/formacao-ia-devs-aula-06-qa]]
 - [[wiki/sources/formacao-ia-devs-aula-04-agentes-planejamento]]
 - [[wiki/sources/formacao-ia-devs-aula-05-qa]]
+- [[wiki/sources/product-engineer-vale-do-silicio-2026]]

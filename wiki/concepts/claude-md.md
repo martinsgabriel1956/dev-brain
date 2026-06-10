@@ -3,8 +3,8 @@ type: concept
 title: "CLAUDE.md"
 aliases: ["claude md", "project memory", "user memory", "memory claude code"]
 date_created: 2026-05-31
-date_updated: 2026-06-01
-source_count: 2
+date_updated: 2026-06-09
+source_count: 3
 tags: [claude-code, claude-md, memory, context-engineering, agente-ia]
 skill: tech-mentor-ai
 status: stable
@@ -111,7 +111,12 @@ Para convenções de testes: ver @testing-conventions.md
 
 Isso reduz o custo por sessão sem perder as garantias de qualidade. Adicionar correções de tooling progressivamente — só quando o agente alucinar em algo específico.
 
+## Idioma do CLAUDE.md Impacta o Custo
+
+Devido à [[token-tax-multilingual]], um `CLAUDE.md` escrito em português consome **62% mais context budget** por sessão do que o equivalente em inglês. O efeito se repete em toda sessão — não é custo único. Combinado com a recomendação de manter o arquivo enxuto (ver [[instruction-budget]] e paper de Zurique), escrever em inglês é a escolha de melhor custo-benefício quando possível.
+
 ## Key Sources
 
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/agents-md-vale-a-pena-paper-zurique]] — paper de Zurique; evidência empírica de custo e efetividade; estratégia enxuto + links
+- [[wiki/sources/custo-tokens-portugues-vs-ingles]] — token tax de 62% para português; impacto direto no context budget por sessão

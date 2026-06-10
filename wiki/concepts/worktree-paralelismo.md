@@ -3,8 +3,8 @@ type: concept
 title: "Worktree e Paralelismo de Tarefas"
 aliases: ["worktree parallelism", "git worktree IA", "paralelismo de tarefas ia"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 3
+date_updated: 2026-06-09
+source_count: 4
 tags: [worktree, paralelismo, git, spec-driven, produtividade]
 skill: tech-mentor-ai
 status: stable
@@ -50,8 +50,13 @@ Pedro chegou a rodar 6 contas simultâneas (3 Codex + 3 Claude Code) para desenv
 - **Sandboxes** (Daytona, a2b): ambientes virtualizados que resolvem o problema do banco compartilhado
 - **Devin**: usa VM completa por task — a versão comercial/cara do mesmo conceito
 
+## Paralelismo Real no Cursor (2026)
+
+Confirmação de campo: cada feature full stack no Cursor dispara ~5 Claude agents simultâneos + 1 agente de code review + a engenheira validando. O tech lead do Databricks usa os intervalos entre reuniões para disparar 2–3 agents e revisar PRs nos blocos livres. Esses padrões confirmam que o paralelismo não é teórico — é o fluxo diário de [[product-engineer|product engineers]] em empresas de ponta.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-02-mercado-perfil-profissional]]
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/formacao-ia-devs-aula-06-qa]]
+- [[wiki/sources/product-engineer-vale-do-silicio-2026]]

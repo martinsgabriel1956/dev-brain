@@ -3,9 +3,9 @@ type: concept
 title: "Imutabilidade"
 aliases: ["immutability", "dados imutáveis", "readonly"]
 date_created: 2026-04-25
-date_updated: 2026-05-31
-source_count: 2
-tags: [imutabilidade, software-design, estado, clean-code, programacao-funcional, datomic, event-sourcing]
+date_updated: 2026-06-10
+source_count: 3
+tags: [imutabilidade, software-design, estado, clean-code, programacao-funcional, datomic, event-sourcing, strings, encoding]
 skill: tech-mentor-backend
 status: stable
 ---
@@ -72,7 +72,14 @@ Bugs de mutabilidade são difíceis de reproduzir, explodem em runtime, e surgem
 
 [[programacao-funcional]] torna imutabilidade o padrão estrutural do paradigma. Em [[clojure]], todas as estruturas de dados são imutáveis por default.
 
+## Imutabilidade de Strings
+
+Em quase todas as linguagens (Go, Java, Python, JavaScript, C#, Rust), [[string|strings]] são imutáveis. O motivo não é apenas evitar aliasing — é proteger o **encoding**. Uma string [[utf-8]] é um slice de bytes onde caracteres podem ocupar 1–4 bytes. Alterar 1 byte arbitrário pode fragmentar um caractere multi-byte, corrompendo silenciosamente o encoding.
+
+Exemplo: o caractere chinês `世` ocupa 3 bytes em UTF-8. Sobrescrever apenas o primeiro byte resultaria em uma sequência inválida — o computador não saberia interpretar os bytes restantes. Por isso, ao invés de mutar, linguagens como Go forçam criar uma nova string.
+
 ## Key sources
 
 - [[wiki/sources/acoplamento-abstracao-estado]]
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
+- [[sources/como-strings-realmente-funcionam]] — motivação técnica para imutabilidade de strings: proteger encoding UTF-8 de corrupção por indexação de bytes

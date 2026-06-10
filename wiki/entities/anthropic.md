@@ -3,8 +3,8 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 4
+date_updated: 2026-06-09
+source_count: 5
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs]
 skill: tech-mentor-ai
 status: stable
@@ -41,9 +41,14 @@ Google fez investimento bilionário na Anthropic (cifra não confirmada na fonte
 
 Opus caiu de $15.75/M (input) para ~$5/M — movimento que tornou o uso do Opus mais acessível e aumentou sua adoção.
 
+## Tokenizador e Token Tax
+
+O tokenizador do Claude usa [[byte-pair-encoding]] com foco em inglês, resultando no pior multiplicador de custo para idiomas não-ingleses entre os principais provedores (OpenAI, Google). Português paga ~1.62× mais tokens que inglês — ver [[token-tax-multilingual]]. Não é intenção maliciosa; é consequência do corpus de treinamento ser predominantemente em inglês.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
+- [[wiki/sources/custo-tokens-portugues-vs-ingles]]

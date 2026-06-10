@@ -41,11 +41,25 @@ Diferentes sistemas aceitam diferentes conjuntos de caracteres. URLs, por exempl
 
 Base64 não é criptografia. É apenas uma forma de representar dados binários como texto ASCII. Qualquer pessoa pode decodificar base64 sem nenhuma chave. Usar base64 para "esconder" dados sensíveis é um erro de segurança.
 
+## Encoding de Texto vs. Encoding de Transporte
+
+Este verbete cobre *encoding de transporte* — transformações para transmitir dados entre sistemas. Existe uma categoria distinta: *encoding de texto* (charset encoding), que define como caracteres são armazenados em memória.
+
+| | Encoding de transporte | Encoding de texto |
+|---|---|---|
+| **Exemplos** | Base64, URL encoding, Hex | UTF-8, UTF-16, Latin-1 |
+| **Propósito** | Tornar dados transmissíveis | Mapear codepoints para bytes |
+| **Charset** | Não relevante | Depende de um [[charset]] |
+
+Ver [[utf-8]] para encoding de texto.
+
 ## Relação com outros conceitos
 
 - [[concepts/hashing]] — irreversível, sem chave. Encoding é reversível e sem chave.
 - [[concepts/encryption]] — reversível, mas requer chave. Encoding é reversível sem chave.
+- [[utf-8]] — encoding de texto para [[unicode]]; conceito distinto do encoding de transporte
 
 ## Key Sources
 
 - [[sources/encoding-hashing-encryption]]
+- [[sources/como-strings-realmente-funcionam]] — distinção entre charset encoding (UTF-8) e transport encoding (Base64)

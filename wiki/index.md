@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-06-02
+date_updated: 2026-06-10
 ---
 
 # Wiki Index
@@ -20,6 +20,8 @@ date_updated: 2026-06-02
 | [[wiki/sources/escala-niveis-uso-ia-engenheiros]] | 7 níveis de uso de IA: do negacionista ao arquiteto — o que muda é o modelo mental, não a ferramenta |
 | [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]] | Array, Hashmap, Fila, Pilha e Árvore — três perguntas para escolher a estrutura certa |
 | [[wiki/sources/akita-como-aprender-programacao]] | Autodidatas avançam independente do material; copie código por centenas de horas; DSA é a fundação inegociável; Design Patterns são para depois |
+| [[wiki/sources/quanto-tempo-aprender-programacao]] | 800–1.000 horas para júnior; cérebro aprende padrões, não sintaxe; o vale do desespero é estrutural — troque prazo por quilometragem |
+| [[wiki/sources/como-strings-realmente-funcionam]] | String é slice de bytes + charset + encoding; imutabilidade existe para proteger UTF-8 de corrupção por indexação |
 | [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]] | As 6 soft skills que separam quem executa tarefas de quem resolve problemas e cresce na carreira |
 | [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]] | Como agentes de IA com janelas de token estão mudando comportamento e rotina de devs |
 | [[wiki/sources/trd-technical-requirements-document]] | TRD traduz PRD em especificação técnica — contratos, NFRs, segurança; distinto de RFC (proposta aberta) e ADR (decisão registrada) |
@@ -57,6 +59,13 @@ date_updated: 2026-06-02
 | [[wiki/sources/formacao-ia-devs-aula-04-agentes-planejamento]] | SDD completo: Agente PRD → Tech Spec → Tarefas isoladas; PRD é para a IA, não para a empresa |
 | [[wiki/sources/formacao-ia-devs-aula-05-qa]] | Q&A: Resume retoma onde parou, padrões de arquitetura ficam em rules, SDD funciona para refactoring e migrações |
 | [[wiki/sources/5-principles-that-changed-me-as-a-programmer]] | Logs estruturados são infraestrutura crítica; tech debt Prudente+Deliberado é válido; naming é custo cognitivo permanente |
+| [[wiki/sources/cinco-praticas-seguranca-pragmatic-programmer]] | 5 práticas do Pragmatic Programmer: superfície de ataque, menor privilégio, defaults seguros, criptografia, updates — e nunca credencial no código |
+| [[wiki/sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]] | Gatekeeper centraliza entrada, Valet Key emite credenciais temporárias, Token Relay propaga identidade — segurança nasce no design da arquitetura |
+| [[wiki/sources/papinho-tech-solo-aprender-a-aprender]] | Entender ≠ aprender — EAD cria ilusão de fluência; autoconsciência de como você aprende é a variável que o professor não controla |
+| [[wiki/sources/design-pattern-proxy]] | Proxy intercepta comunicação entre cliente e objeto real — cache, auth, log sem tocar na classe original nem no Controller |
+| [[wiki/sources/custo-tokens-portugues-vs-ingles]] | Português custa 62% mais tokens que inglês no Anthropic — BPE treinado em corpus inglês é a causa; impacto direto no CLAUDE.md e specs |
+| [[wiki/sources/product-engineer-vale-do-silicio-2026]] | Relato do Vale do Silício: o Product Engineer constrói a coisa que constrói a coisa — duas faces (senso de produto + harness), 40-50% dos usuários do Cursor não são devs |
+| [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]] | Progressão incremental de aprendizado em 3 estágios; over-engineering ("verde neném"); otimização prematura é a raiz de todo mal (Knuth) |
 
 ## Concepts
 
@@ -95,6 +104,13 @@ date_updated: 2026-06-02
 | [[wiki/concepts/pipeline-de-qualidade]] | Lint → testes → coverage → mutation → segurança → E2E; passa ou não passa |
 | [[wiki/concepts/teste-de-mutacao]] | Valida que os testes realmente testam comportamento — não só executam sem quebrar |
 
+### Perfil Profissional & Product Engineering
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/product-engineer]] | Constrói a coisa que constrói a coisa — senso de produto + harness; o cargo do dev em 2026 |
+| [[wiki/concepts/taste-dev]] | Julgamento estético e de qualidade sem regra explícita — o diferencial do Product Engineer |
+
 ### IA em Organizações — Custo, ROI e Adoção
 
 | Página | Hook |
@@ -104,6 +120,13 @@ date_updated: 2026-06-02
 | [[wiki/concepts/paradoxo-de-jevons]] | Token mais barato → consumo cresce mais → conta maior; o paradoxo central da era agêntica |
 | [[wiki/concepts/era-agentica]] | Agentes fazem tarefas inteiras; modelo de custo muda de sugestão para funcionalidade |
 | [[wiki/concepts/learning-gap-organizacional]] | O gap entre qualidade do modelo e ROI capturado — só 5% (MIT) fecham esse gap |
+
+### Token Economics & Custo
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/token-tax-multilingual]] | Português paga 62% mais tokens que inglês — BPE favorece idiomas com mais dados de treinamento |
+| [[wiki/concepts/byte-pair-encoding]] | Algoritmo que transforma texto em tokens — otimizado para inglês, penaliza idiomas não-ingleses |
 
 ### Agentes & LLMOps
 
@@ -203,11 +226,18 @@ date_updated: 2026-06-02
 | [[wiki/concepts/edge-case]] | Cenários fora do fluxo principal que precisam ser tratados explicitamente |
 | [[wiki/concepts/algoritmos-e-estruturas-de-dados]] | A fundação que separa amadores de profissionais — DSA antes de qualquer framework |
 | [[wiki/concepts/repertorio]] | Acúmulo de experiência prática que gera reconhecimento de padrões e intuição — o terceiro pilar da competência |
+| [[wiki/concepts/string]] | Slice de bytes + charset + encoding — imutável porque alterar bytes quebra UTF-8 silenciosamente |
+| [[wiki/concepts/charset]] | Mapeamento valor numérico → caractere; distinto de encoding (que é o algoritmo de serialização) |
+| [[wiki/concepts/ascii]] | 128 caracteres em 7 bits; charset e encoding ao mesmo tempo; subconjunto de UTF-8 |
+| [[wiki/concepts/unicode]] | Charset universal com >1M codepoints; não é encoding — precisa de UTF-8 para ser serializado |
+| [[wiki/concepts/utf-8]] | Encoding de largura variável para Unicode; criado por Ken Thompson e Rob Pike; padrão da web |
 
 ### Aprendizado e Mentalidade
 
 | Página | Hook |
 |---|---|
+| [[wiki/concepts/entender-vs-aprender]] | Entender é cognitivo, aprender é habilidade — a ilusão de fluência surge quando se confunde os dois |
+| [[wiki/concepts/autoconsciencia-de-aprendizado]] | Descobrir como você especificamente aprende — o núcleo do "aprender a aprender" |
 | [[wiki/concepts/autodidata]] | Quem investiga o porquê quando o procedimento falha, em vez de travar |
 | [[wiki/concepts/hacker-mindset]] | Curiosidade ativa — não só faz a pergunta, mas procura a resposta |
 | [[wiki/concepts/aprendizado-por-exposicao]] | Copiar código sem objetivo por centenas de horas para formar fluência |
@@ -224,6 +254,9 @@ date_updated: 2026-06-02
 | [[wiki/concepts/zona-de-desconforto-da-aprendizagem]] | ZDA: aprender é biologicamente desconfortável; abraçar o caos é o mecanismo do crescimento |
 | [[wiki/concepts/nexialista]] | Profissional que conecta múltiplas áreas criando soluções que especialistas isolados não conseguem |
 | [[wiki/concepts/observador-tercerático]] | Conceito de Luiz Tibiriçá: co-criar novos conceitos operando cérebro orgânico e IA em paralelo |
+| [[wiki/concepts/vale-do-desespero]] | O ponto em que o aprendiz entende cada peça mas não consegue arquitetar — etapa estrutural, não sinal de incapacidade |
+| [[wiki/concepts/pratica-deliberada]] | 800–1.000 horas para júnior; prática no limite da competência atual, com feedback — não repetição mecânica |
+| [[wiki/concepts/reconhecimento-de-padroes]] | O que separa mestre de amador (xadrez e programação): repertório de padrões, não inteligência ou sintaxe |
 
 ### Arquitetura Backend & Event-Driven
 
@@ -246,6 +279,24 @@ date_updated: 2026-06-02
 | [[wiki/concepts/logging-estruturado]] | Logs com contexto (user_id, trace_id, error) — a diferença entre "vejo o problema" e "3h chutando" |
 | [[wiki/concepts/quadrante-de-fowler]] | Dois eixos: Deliberado/Inadvertido × Prudente/Imprudente; só Prudente+Deliberado é aceitável |
 
+### Segurança de APIs & Arquitetura
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/gatekeeper-pattern]] | Ponto único de entrada obrigatório — centraliza autenticação, rate limiting e logging, reduz superfície de ataque |
+| [[wiki/concepts/valet-key-pattern]] | Credencial temporária de escopo mínimo — cliente acessa recurso diretamente sem a API virar proxy |
+| [[wiki/concepts/token-relay-pattern]] | Identidade do usuário viaja por todos os saltos internos — autorização fina em cada serviço |
+| [[wiki/concepts/attack-surface]] | Conjunto de pontos de entrada exploráveis — quanto menor, mais fácil de defender |
+| [[wiki/concepts/defense-in-depth]] | Múltiplas camadas independentes — se uma falha, as outras contêm o dano |
+| [[wiki/concepts/waf]] | Filtro de borda HTTP — bloqueia OWASP Top 10 e DDoS antes de chegar na aplicação |
+| [[wiki/concepts/principio-do-menor-privilegio]] | Permissão exata e nada mais — limita o raio de explosão quando um componente é comprometido |
+| [[wiki/concepts/secure-by-default]] | Estado padrão é o mais seguro — fail-secure, confirmação explícita para ações destrutivas |
+| [[wiki/concepts/sql-injection]] | Input não sanitizado executado como SQL — Bobby Tables; prevenção: queries parametrizadas |
+| [[wiki/concepts/xss]] | Injeção de JavaScript no browser da vítima — mesma classe do SQLi, contexto HTML/JS |
+| [[wiki/concepts/timing-attack]] | Tempo de resposta como canal de informação — variação de latência revela segredos |
+| [[wiki/concepts/sast]] | Análise estática de segurança no código — detecta padrões vulneráveis antes do deploy |
+| [[wiki/concepts/secrets-management]] | Credenciais nunca no código — .env local, GitHub Secrets/AWS SM em produção |
+
 ### Padrões e Design
 
 | Página | Hook |
@@ -253,11 +304,17 @@ date_updated: 2026-06-02
 | [[wiki/concepts/pattern-recognition]] | Capacidade humana de detectar repetições — base do aprendizado por exposição |
 | [[wiki/concepts/design-patterns]] | Catálogo de soluções nomeadas — útil só depois de já ter visto os padrões na prática |
 | [[wiki/concepts/anti-pattern]] | Repetição que parece solução mas cria problemas — frequência não implica qualidade |
+| [[wiki/concepts/over-engineering]] | "Verde neném" — aplicar patterns sem base; pular etapas da progressão produz complexidade sem valor |
+| [[wiki/concepts/otimizacao-prematura]] | Raiz de todo mal (Knuth) — otimizar antes de ter projeto bom torna o código rígido e difícil |
+| [[wiki/concepts/modelagem-orientada-a-objetos]] | Pré-requisito obrigatório para design patterns — classes, atributos, relacionamentos antes de GoF |
 
 ## Entities
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/bernardo-lobato]] | Desenvolvedor e criador de conteúdo brasileiro — arquitetura de software e padrões avançados |
+| [[wiki/entities/linuxtips]] | Plataforma brasileira de educação em tecnologia — DevOps, Cloud, Kubernetes, podcast Papinho Tech Solo |
+| [[wiki/entities/renato-augusto]] | Desenvolvedor e criador de conteúdo brasileiro — padrões de projeto GoF e orientação a objetos |
 | [[wiki/entities/eduarda-rocket-city]] | Engenheira de software internacional, criadora de conteúdo no canal Rocket City |
 | [[wiki/entities/openai]] | Organização responsável pelo GPT-3/4 — formalizou in-context learning e scaling laws |
 | [[wiki/entities/jason-wei]] | Pesquisador Google Brain — lead author do paper de chain-of-thought prompting e do paper de emergent abilities |
@@ -277,6 +334,7 @@ date_updated: 2026-06-02
 | [[wiki/entities/rodrigo-branas]] | Instrutor brasileiro, 25 anos de dev — co-criador da Formação IA para Devs; foco em harness e spec-driven |
 | [[wiki/entities/pedro-nauke]] | Instrutor brasileiro, 22 anos de dev — criador do Compose; especialista em spec-driven e paralelismo de tarefas |
 | [[wiki/entities/anthropic]] | Criadora do Claude e do Claude Code — definiu specs de rules/skills/MCP que viraram padrão de mercado |
+| [[wiki/entities/pascadev]] | Canal brasileiro de conteúdo sobre IA e Claude Code — série sobre eficiência com LLMs |
 | [[wiki/entities/codex-openai]] | Harness de codificação da OpenAI baseado em GPT-5.x — par do Claude Code em 2026 |
 
 ### Documentação de Arquitetura

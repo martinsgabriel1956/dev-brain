@@ -3,9 +3,9 @@ type: concept
 title: "Rate Limiting"
 aliases: ["throttling", "rate limit", "token bucket", "sliding window"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
-source_count: 1
-tags: [rate-limiting, token-bucket, sliding-window, redis, throttling, protecao-api]
+date_updated: 2026-06-05
+source_count: 2
+tags: [rate-limiting, token-bucket, sliding-window, redis, throttling, protecao-api, gatekeeper, attack-surface]
 skill: tech-mentor-backend
 status: stub
 ---
@@ -26,6 +26,11 @@ Mecanismo de controle que limita a frequência de requests para proteger APIs de
 
 **Implementação:** Redis + Lua script (atomicidade). Hierarquia: global → por IP → por usuário → por endpoint.
 
+## Dimensão de Segurança
+
+Rate limiting é também responsabilidade do [[concepts/gatekeeper-pattern]] — aplicado na borda antes de chegar nos serviços internos. Reduz [[concepts/attack-surface]] contra brute force, credential stuffing e DDoS na camada de aplicação.
+
 ## Key Sources
 
 - [[sources/rate-limiting]]
+- [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
