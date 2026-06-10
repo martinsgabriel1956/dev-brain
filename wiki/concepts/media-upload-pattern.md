@@ -5,7 +5,7 @@ aliases: ["presigned url", "upload direto s3", "media upload", "direct upload"]
 date_created: 2026-04-22
 date_updated: 2026-04-22
 source_count: 1
-tags: [system-design, s3, upload, cdn, performance, infra]
+tags: [system-design, s3, upload, cdn, performance, infra, valet-key, presigned-url]
 skill: tech-mentor-system-design
 status: stable
 ---
@@ -44,6 +44,10 @@ CloudFront (ou equivalente) serve a mídia aos recipients. Origin é S3. TTL de 
 
 WhatsApp comprime imagens para max 1600px antes do upload. Reduz volume de storage e tempo de upload sem degradar UX significativamente.
 
+## Relação com Valet Key Pattern
+
+Este fluxo é uma implementação do [[concepts/valet-key-pattern]]: a API não transporta os dados, apenas autoriza o acesso e emite uma credencial temporária (presigned URL). O cliente interage diretamente com o recurso.
+
 ## Relacionado
 
 [[concepts/cache-hot-path]] — CDN é o cache de mídia, mesmo princípio de servir do edge.
@@ -51,3 +55,4 @@ WhatsApp comprime imagens para max 1600px antes do upload. Reduz volume de stora
 ## Key Sources
 
 - [[sources/case-whatsapp]]
+- [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]

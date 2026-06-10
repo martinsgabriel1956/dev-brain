@@ -3,8 +3,8 @@ type: concept
 title: "Aprendizado por Exposição"
 aliases: ["aprender por exposição", "input flooding", "aprendizado por imitação"]
 date_created: 2026-05-16
-date_updated: 2026-05-16
-source_count: 1
+date_updated: 2026-06-01
+source_count: 3
 tags: [aprendizado, fluencia, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -36,6 +36,20 @@ A [[wiki/concepts/memoria-muscular|memória muscular]] se forma com a repetiçã
 - Seguir um tutorial passo a passo sem desviar.
 - Decorar sintaxe antes de ver como ela aparece em código real.
 
+## Distinção Crítica com o Uso Passivo de IA
+
+Exposição ativa (copiar, digitar, quebrar, observar padrões) é diferente de [[aprendizado-passivo]] (copiar e colar código gerado por IA sem processar).
+
+A diferença: na exposição ativa, o esforço de digitação e modificação força o cérebro a processar o padrão. No copiar e colar passivo, o código passa direto para o editor sem construir nenhuma representação mental.
+
+Usar IA para **mostrar alternativas** ou **exemplos de padrões** é exposição ativa. Copiar a solução sem entender é aprendizado passivo.
+
+## Relação com [[repertorio]]
+
+Aprendizado por exposição é o mecanismo pelo qual o [[repertorio]] se constrói. Cada hora de exposição ativa a padrões reais de código deposita um fragmento de repertório. Com acúmulo suficiente, esses fragmentos se conectam em reconhecimento instantâneo de padrões — o que o programador experiente chama de "intuição".
+
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]] — recomendação central de copiar código sem objetivo; analogia com datilografia e português
+- [[wiki/sources/ia-e-aprendizado-programacao-iniciantes]] — distinção entre exposição ativa e cópia passiva de código gerado por IA
+- [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — exposição ativa como base de construção de repertório; tutoriais repetem receita, projetos variados constroem repertório real

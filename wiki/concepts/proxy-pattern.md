@@ -3,8 +3,8 @@ type: concept
 title: "Proxy Pattern"
 aliases: ["padrão proxy", "design pattern proxy"]
 date_created: 2026-05-01
-date_updated: 2026-05-01
-source_count: 1
+date_updated: 2026-06-05
+source_count: 2
 tags: [design-patterns, structural, proxy, oop]
 skill: tech-mentor-backend
 status: stable
@@ -48,6 +48,25 @@ Modificar a classe original viola [[open-closed-principle]]. O Proxy permite est
 - **[[decorator-pattern]]:** adiciona comportamento em cadeia, motivação de extensão funcional
 - **[[facade-pattern]]:** simplifica interface de subsistema complexo
 - **[[adapter-pattern]]:** converte interface incompatível
+
+## Exemplo Concreto — Cache Proxy
+
+```typescript
+class ReportGeneratorProxy implements IReportGenerator {
+  constructor(private real: ReportGenerator, private cache: CacheInterface) {}
+
+  generate(report: Report): any[] {
+    return this.cache.get(`report_${report.id}`, () => {
+      return this.real.generate(report); // só executa em cache miss
+    }, { expiresIn: 3600 });
+  }
+}
+
+// No Controller — única linha que muda:
+const generator = new ReportGeneratorProxy(new ReportGenerator(), cache);
+```
+
+O Controller não sabe que está lidando com um Proxy — depende apenas da interface `IReportGenerator`.
 
 ## Key Sources
 

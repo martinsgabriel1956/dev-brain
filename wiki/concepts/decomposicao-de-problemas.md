@@ -3,8 +3,8 @@ type: concept
 title: "Decomposição de Problemas"
 aliases: ["problem decomposition", "quebrar em partes menores"]
 date_created: 2026-05-13
-date_updated: 2026-05-13
-source_count: 1
+date_updated: 2026-06-01
+source_count: 2
 tags: [decomposicao, fundamentos, cs-fundamentals]
 skill: cs-fundamentals
 status: draft
@@ -36,6 +36,25 @@ A autenticação não precisa saber nada sobre saldo. Isso é [[separacao-de-res
 - É o passo 2 do framework de [[logica-de-programacao]]
 - Cada subproblema gera seu próprio [[fluxo-logico]]
 
+## Exemplo: clone de Netflix
+
+| Subproblema | Pergunta concreta |
+|---|---|
+| Autenticação | Cadastro, login, sessão |
+| Galeria | Thumbnails, navegação |
+| Página de vídeo | URL `/video/id=123`, player |
+| Entrega do vídeo | **Onde está o arquivo? Como chega ao usuário?** |
+
+A decomposição transforma "clone Netflix" — nebuloso demais para começar — em perguntas acionáveis que já apontam para soluções pesquisáveis.
+
+## Relação com outros conceitos
+
+- Viabiliza [[separacao-de-responsabilidades]]
+- É o primeiro pilar do framework de [[logica-de-programacao]]
+- Cada subproblema gera seu próprio [[fluxo-logico]]
+- Com [[repertorio]] suficiente, a decomposição acelera por reconhecimento de padrões
+
 ## Key sources
 
-- [[wiki/sources/logica-de-programacao-quatro-passos]]
+- [[wiki/sources/logica-de-programacao-quatro-passos]] — framework de 4 passos; caixa eletrônico como exemplo
+- [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — primeiro pilar dos 5; exemplo com clone de Netflix e remoção de elemento de array

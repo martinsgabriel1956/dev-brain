@@ -3,8 +3,8 @@ type: concept
 title: "RPI Workflow"
 aliases: ["research plan implement", "RPI", "research-plan-implement"]
 date_created: 2026-05-04
-date_updated: 2026-05-04
-source_count: 2
+date_updated: 2026-06-01
+source_count: 3
 tags: [coding-agents, context-engineering, workflow, ai-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -50,7 +50,24 @@ A separação research/plan evita [[concepts/separacao-de-contextos|contaminaç�
 
 O RPI pertence à mesma família do Spec-Driven Development, mas com foco explícito em **context engineering** em vez de especificação formal. A distinção importa porque "spec-driven dev" sofreu semantic diffusion — o termo virou vago. O que importa não é o nome, mas os princípios: compaction, smart zone, human-in-the-loop nos pontos de maior alavancagem.
 
+## Memória de Longo Prazo para Refatorações Grandes
+
+Quando a mudança é grande demais para um único plano (ex.: refatoração de 13+ serviços para DDD tático), o plano se tornaria enorme e geraria um PR irrevisuável. A solução:
+
+1. Salvar o output do research em um arquivo `.md` (memória de longo prazo)
+2. Revisar e validar manualmente — compartilhar com o time
+3. Quebrar em subplanos por fase de implementação
+4. Executar cada fase em uma sessão separada com contexto baixo
+5. Um PR por fase → revisão humana → merge
+
+Ver [[memoria-de-longo-prazo-ia]] para o padrão detalhado.
+
+## Enriquecimento com Progressive Disclosure
+
+O RPI funciona melhor quando o codebase usa [[progressive-disclosure-ia]]: arquivos de contexto organizados por diretório/responsabilidade. Na fase de implement, o agente carrega apenas as guidelines do módulo que está sendo alterado — não de todo o projeto.
+
 ## Key Sources
 
 - [[sources/erros-workflow-research-plan-implement]]
 - [[sources/context-engineering-avancado-para-coding-agents]]
+- [[wiki/sources/context-engineering-codebases-grandes-rpi]] — sub-planos para refatorações grandes; memória de longo prazo; progressive disclosure na prática

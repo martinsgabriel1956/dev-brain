@@ -3,8 +3,8 @@ type: concept
 title: "Naming"
 aliases: ["nomeação", "naming things", "nomear variáveis", "nomes ruins"]
 date_created: 2026-04-26
-date_updated: 2026-04-29
-source_count: 2
+date_updated: 2026-06-02
+source_count: 3
 tags: [naming, clean-code, craftsmanship, legibilidade, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -43,3 +43,4 @@ Se 6 meses atrás você não entende o que `data2` significa, nomeie agora. Se v
 ## Key Sources
 
 - [[sources/5-principios-programador]]
+- [[wiki/sources/5-principles-that-changed-me-as-a-programmer]]

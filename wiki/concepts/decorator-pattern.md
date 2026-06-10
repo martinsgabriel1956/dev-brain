@@ -3,8 +3,8 @@ type: concept
 title: "Decorator Pattern"
 aliases: ["padrão decorator", "design pattern decorator"]
 date_created: 2026-05-01
-date_updated: 2026-05-01
-source_count: 1
+date_updated: 2026-06-05
+source_count: 2
 tags: [design-patterns, structural, decorator, oop]
 skill: tech-mentor-backend
 status: stub

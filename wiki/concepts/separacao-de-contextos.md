@@ -3,8 +3,8 @@ type: concept
 title: "Separação de Contextos"
 aliases: ["context separation", "context isolation", "sessões separadas"]
 date_created: 2026-05-04
-date_updated: 2026-05-04
-source_count: 2
+date_updated: 2026-06-01
+source_count: 3
 tags: [context-engineering, coding-agents, workflow]
 skill: tech-mentor-ai
 status: stable
@@ -49,7 +49,12 @@ O pai nunca acumula o ruído da exploração — sua context window permanece li
 - Compaction: comprime o histórico de uma sessão para reutilizar em outra
 - Separação: garante que certas informações nunca entrem em determinadas sessões
 
+## Extensão: Memória de Longo Prazo entre Sessões
+
+Separação de contextos garante que sessões não se contaminem. [[memoria-de-longo-prazo-ia]] conecta essas sessões via arquivo persistido: o output do research é salvo como `.md` e serve de input para sessões futuras — sem re-explorar o codebase.
+
 ## Key Sources
 
 - [[sources/erros-workflow-research-plan-implement]]
 - [[sources/context-engineering-avancado-para-coding-agents]]
+- [[wiki/sources/context-engineering-codebases-grandes-rpi]] — memória de longo prazo como extensão natural da separação de contextos; sub-agentes como implementação técnica confirmada

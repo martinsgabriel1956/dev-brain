@@ -3,8 +3,8 @@ type: concept
 title: "Algoritmos e Estruturas de Dados"
 aliases: ["DSA", "data structures", "estruturas de dados", "algoritmos"]
 date_created: 2026-05-16
-date_updated: 2026-05-16
-source_count: 1
+date_updated: 2026-06-01
+source_count: 3
 tags: [fundamentos, cs-fundamentals, algoritmos, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -49,6 +49,22 @@ Você era *obrigado* a lidar com ponteiros, alocação de memória e estruturas 
 
 DSA *é* a fundação técnica. Sem ela, estudar [[wiki/concepts/design-patterns|Design Patterns]], frameworks, ou arquitetura de sistemas é construir em cima de areia.
 
+## DSA como parte — não o todo — da lógica de programação
+
+DSA amplia o [[repertorio]] e melhora a capacidade de resolver problemas, mas confundir DSA com "lógica de programação" é leviano. Os outros pilares — [[decomposicao-de-problemas]], habilidade de pesquisa, projetos variados e intuição — são igualmente ou mais importantes para competência profissional real.
+
+## Conceitos Individuais
+
+Cada estrutura tem sua própria página com complexidade, analogias e quando usar:
+
+- [[array]] — O(1) por índice; fraco em inserção/remoção no meio
+- [[hashmap]] — O(1) por chave; busca por identificador
+- [[fila]] — FIFO; processamento em ordem de chegada
+- [[pilha]] — LIFO; operações de undo, call stack
+- [[arvore]] — O(log n); hierarquia, índices de banco de dados
+
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]] — afirmação de que DSA é o que separa amadores de profissionais; por que linguagens modernas escondem essas estruturas; sequência de aprendizado
+- [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — DSA é parte pequena do todo; confundir DSA com lógica de programação seria "leviano"
+- [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]] — introdução prática às cinco estruturas; três perguntas de decisão; quando usar cada uma

@@ -42,6 +42,16 @@ Habilite query logging no Prisma ou use `EXPLAIN ANALYZE`. Se ver dezenas de que
 
 Use `include`/`join` para carregar relacionamentos em uma única query com JOIN no banco.
 
+## N+1 na Era da IA
+
+O problema N+1 é um dos erros estruturais mais frequentes da IA gerando código. A IA foca em entregar a feature pedida — não em como ela se enquadra no sistema como um todo. Ela faz a query para buscar uma lista, depois outra query para cada item, e não percebe que está criando um loop de chamadas ao banco.
+
+> *"Ela só quer te entregar a tela que você pediu."*
+
+Mitigação via [[harness-de-qualidade]]: ferramentas de análise de query (APM, slow query log, testes de performance) detectam N+1 de forma determinística. O dev sênior que sabe o que procurar consegue configurar o harness para bloquear esse padrão antes do commit.
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
+- [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
+- [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]

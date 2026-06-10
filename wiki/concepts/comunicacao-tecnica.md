@@ -51,3 +51,4 @@ A combinação das três características (profundidade + abrangência + comunic
 ## Key Sources
 
 - [[sources/tres-caracteristicas-melhor-candidato]]
+- [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]] — comunicação como acelerador de time; escuta ativa e adaptação ao público

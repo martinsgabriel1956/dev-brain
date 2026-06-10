@@ -1,58 +1,73 @@
 ---
 type: concept
 title: "Over-Engineering"
-aliases: ["over-engineering", "overengineering", "complexidade desnecessária", "engenharia excessiva"]
-date_created: 2026-04-29
-date_updated: 2026-04-29
+aliases: ["overengineering", "verde neném", "engenharia excessiva", "gold plating"]
+date_created: 2026-06-09
+date_updated: 2026-06-09
 source_count: 1
-tags: [over-engineering, accidental-complexity, kiss, design-patterns, carreira, qualidade]
-skill: tech-mentor-backend
+tags: [design, qualidade, anti-pattern, aprendizado, design-patterns]
+skill: tech-mentor-leadership
 status: stable
 ---
 
 ## Definição
 
-Over-engineering é a introdução de complexidade técnica além do necessário para resolver o problema atual. Acontece quando decisões de engenharia são guiadas por padrões, abstrações ou arquiteturas que não têm justificativa nos requisitos reais do projeto.
+Aplicar soluções mais complexas do que o problema exige — frequentemente por falta de entendimento do domínio, por querer usar um conceito recém-aprendido, ou por antecipar requisitos que nunca chegarão.
 
-É tão prejudicial quanto a gambiarra — mas mais difícil de detectar porque parece correto, bonito e defensável.
+No contexto de aprendizado, a forma mais comum é o **"verde neném"**: alguém que acabou de aprender design patterns tenta aplicar todos eles em tudo, tornando o código mais difícil, não melhor.
 
-## Por que acontece
+---
 
-**Progressão inversa de expertise:** Iniciantes pensam simples por limitação de conhecimento. Seniores precisam ativamente suprimir o viés de complexidade acumulado. Pensar simples é fácil quando você sabe pouco; é difícil quando você sabe muito.
+## Por Que Acontece
 
-**Ego como vetor:** A abstração deixa de ser ferramenta e vira demonstração de conhecimento. O dev abstrai "para ficar bonito" ao invés de abstrair por requisito real.
+### Em iniciantes
+- Querer aplicar tudo que aprendeu de uma vez
+- Ainda não ter julgamento para saber quando um pattern cabe
+- Confundir complexidade com qualidade
 
-**Síndrome do impostor invertida:** Dev júnior vê o código do sênior aprovado sem comentários e conclui que "simples não é suficiente". Começa a adicionar complexidade para parecer mais sênior.
+### Em devs experientes
+- Antecipar requisitos hipotéticos ("vamos precisar disso no futuro")
+- Otimizar prematuramente para flexibilidade que nunca será necessária
 
-**Pensamento hipotético sem ancoragem:** "E se esse código de caldo de cana um dia fosse usado para fritar pastel?" — antecipar requisitos fictícios em vez de requisitos reais.
+---
 
-## Consequências
+## Sintomas
 
-- **Conhecimento restrito:** Só meia dúzia de pessoas entende a arquitetura. Os demais criam gambiarras para contornar o que não entendem.
-- **Frankensteins:** Dois padrões arquiteturais no mesmo projeto com gambiarras conectando os dois.
-- **Código duplicado:** Devs sem contexto reimplementam funcionalidade que já existe — simplesmente porque não conseguem navegar na arquitetura existente.
-- **Performance degradada:** Camadas desnecessárias de abstração têm custo real (ver [[concepts/abstraction-bloat]]).
-- **Onboarding lento:** Novos membros gastam tempo entendendo a arquitetura, não resolvendo problemas de negócio.
+- Abstração onde não há variação real
+- Padrões GoF aplicados a problemas simples
+- Interfaces com uma única implementação criadas "por precaução"
+- Hierarquias de herança profundas para algo que poderia ser um enum
+- Mais infraestrutura do que lógica de negócio
 
-## Diagnóstico
+---
 
-> "Essa abstração resolve um problema real no contexto atual — ou estou antecipando um requisito fictício?"
+## Causa Raiz no Aprendizado
 
-Sinais de over-engineering:
-- Mudar um comportamento exige alterar N arquivos em N camadas.
-- A explicação da arquitetura leva mais tempo que a explicação do problema.
-- Outros devs criam workarounds ao redor do código "bonito".
-- A palavra "talvez um dia" aparece na justificativa de uma decisão.
+Over-engineering em quem está aprendendo é quase sempre sintoma de **pular etapas na progressão**. Quem aprende design patterns sem antes dominar [[modelagem-orientada-a-objetos]] não tem julgamento para saber quando um pattern resolve um problema real — então aplica em tudo.
 
-## Relação com outros conceitos
+A progressão que evita isso:
+1. Dominar [[logica-de-programacao]] e algoritmos
+2. Dominar [[modelagem-orientada-a-objetos]]
+3. Só então estudar [[design-patterns]] e arquitetura
 
-- [[concepts/kiss]] — o princípio que over-engineering viola
-- [[concepts/accidental-complexity]] — a complexidade resultante do over-engineering
-- [[concepts/abstraction-bloat]] — forma específica com IA como vetor
-- [[concepts/abstraction-illusion]] — padrão acessível ≠ padrão apropriado
-- [[concepts/ego-driven-development]] — o mecanismo psicológico por trás
+---
+
+## Relação com Otimização Prematura
+
+[[otimizacao-prematura]] é o análogo de over-engineering no nível de performance: aplicar esforço excessivo onde não há necessidade comprovada. Ambos são sintomas de afoiteza.
+
+---
+
+## Conexões
+
+- [[otimizacao-prematura]] — análogo em performance
+- [[anti-pattern]] — over-engineering é um anti-pattern clássico
+- [[design-patterns]] — fonte mais comum de over-engineering em quem está aprendendo
+- [[modelagem-orientada-a-objetos]] — o pré-requisito que, quando pulado, leva ao verde neném
+- [[fundacao-tecnica]] — base necessária para o julgamento de quando não sobre-engenheirar
+
+---
 
 ## Key Sources
 
-- [[sources/overengineering-carol-ate-quinta]]
-- [[sources/listen-notes-good-enough-engineering]]
+- [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]]
