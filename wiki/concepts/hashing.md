@@ -3,8 +3,8 @@ type: concept
 title: "Hashing"
 aliases: ["hashing", "hash", "função hash", "hash criptográfico"]
 date_created: 2026-04-29
-date_updated: 2026-04-29
-source_count: 1
+date_updated: 2026-06-11
+source_count: 2
 tags: [hashing, segurança, senhas, integridade, criptografia, sha256, bcrypt, argon2]
 skill: tech-mentor-security
 status: stable
@@ -46,12 +46,24 @@ Hashing é o processo de converter dados em uma representação de comprimento f
 
 **Importante:** SHA-256 e bcrypt não são intercambiáveis. Para senhas, use bcrypt ou argon2 — eles incluem salt (proteção contra rainbow tables) e custo computacional ajustável (proteção contra força bruta).
 
+## Por Que Velocidade é um Problema em Password Hashing
+
+MD5 e SHA geram **bilhões de hashes/segundo** — ótimo para integridade de arquivos, catastrófico para senhas. Um atacante com a wordlist [[entities/rockyou]] (29 bilhões de senhas reais) testa tudo em segundos.
+
+Algoritmos especializados ([[concepts/bcrypt]], [[concepts/argon2]]) são **intencionalmente lentos** ([[concepts/cpu-hard]]). O [[concepts/argon2]] adiciona [[concepts/memory-hard]]: ocupa RAM configurável por instância, limitando o paralelismo de GPUs. Com [[concepts/salt]] por usuário, [[concepts/rainbow-table]]s pré-computadas se tornam inviáveis.
+
+Ver [[concepts/password-hashing]] para a visão completa do problema.
+
 ## Relação com outros conceitos
 
 - [[concepts/encoding]] — reversível, sem chave. Hashing é irreversível.
 - [[concepts/encryption]] — reversível com chave. Hashing é irreversível.
+- [[concepts/password-hashing]] — aplicação especializada de hashing para senhas
+- [[concepts/salt]] — unicidade por usuário em password hashing
+- [[concepts/rainbow-table]] — ataque baseado em hashes pré-computados
 
 ## Key Sources
 
 - [[sources/encoding-hashing-encryption]]
 - [[sources/autenticacao-segura]]
+- [[sources/seguranca-armazenamento-senhas-banco-de-dados]]

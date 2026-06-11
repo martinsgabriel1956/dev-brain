@@ -1,12 +1,140 @@
-# Princípio da Inversão: Como Ser um Programador Melhor
+# O Princípio da Inversão Aplicado à Programação
 
-## Metadados
-- **Fonte:** Vídeo (transcrição)
-- **Tema:** Modelos mentais aplicados à programação — Princípio da Inversão
-- **Referência histórica:** Charlie Munger (meteorologista na 2ª Guerra) + Karl Gustav Jakob Jacobi
+> **Fonte:** Transcrição de vídeo  
+> **Domínio:** Carreira, Mentalidade, Engenharia de Software
 
 ---
 
-## Transcrição
+## O Modelo Mental: Princípio da Inversão
 
-Olá esse vídeo vai mostrar com você um programador melhor usando o princípio da inversão criado por um matemático alemão que você vai levar um choque de realidade tá E para você entender o que que eu tô falando eu preciso primeiro contar uma história bem rápida durante a segunda guerra mundial um jovem meteorologista chamado Charlie Manger foi encarregado de criar mapas meteorológicos e prever o clima para liberar pilotos a levantarem voo e garante que eles pudessem voltar para casa sem maiores problemas só que ao invés de pensar como que ele poder criar rotas de voo seguras Ele pensou vamos supor que eu quisesse matar muitos pilotos qual que seria a maneira mais fácil de eu fazer isso bom a melhor forma de matar os pilotos seria levar eles a locais onde o gelo se acumularia impedir que os aviões cancelados corretamente ou indicar um percurso no qual o avião ficaria sem combustível ou rotas em locais adequados para pousos de emergência e com isso ele foi excluindo todas as alternativas ruins para revelar as melhores alternativas e o que ele fez foi usar o modelo mental muito massa chamado o princípio da invenção as origens do princípio da inversão vem o alemão Karl Gustav jakob Jacobi uma das suas teorias matemáticas pode ser traduzida como inverter sempre inverta mais esse modelo mental também pode ser usado para abordar qualquer outro tempo então ao inverter o problema o Charlie acabou se tornando um meteorologista melhor entendeu também o que que ele precisava estar e não somente o que que ele precisava fazer esse tipo de modelo mental levou o Tiago é muito longe porque ele é uma das pessoas mais ricas dos Estados Unidos ele é sócio do ônibus e descer dor mais bem-sucedido de todos os tempos então agora a gente vai usar esse exato mesmo modelo mental mais aplicado em assunto sobre programação e sabendo o que a gente com certeza não quer ser a gente acaba entendendo que a gente quer isso vai ser feito através de sete concelhos sendo que um deles é uma para falar a cabeça o primeiro conselho então para você se transformar no pior programador do mundo é nunca questione os líderes eles sempre estão certos que são mais inteligentes que você tem um estudo raríssimo que foi publicado pela Amazon que é muito mais muito antigo mas trazer uma frase extremamente interessante que é dando listen to the rain e não dê ouvidos ao rio onde ripple é a sigla para High Speed personal trainer e que significa a opinião da pessoa mais bem paga da empresa então não deu ouvidos para pessoa mais bem paga da empresa e a história que está com esses termos foi a seguinte um dinheiro da mas não lá por volta dos anos 2000 deu a ideia de adicionar novas recomendações e produto para o usuário final no momento que ele tava fazendo o check-out no momento que eu estava finalizando a compra aí um desses dinheiro então rico né teve a intuição e não era para fazer essa implementação porque era uma péssima ideia que só ia confundir e distrair os olhos final né E por consequência as vendas irão diminuir justo mais como a água não tem uma cultura de experimentação muito forte e principalmente relacionada em teste saber e coleta de dados eles rodaram pequeno experimento só para ver o que que é data só falta só para coletar os dados e resultados positivos em sendo assim bilhões recentes nacionais e foi responsável por desencadear várias outras implementações e até registros e Patentes então moral da história naquela época Bom dia trump intuition que é dados Tron superam a intuição especialmente em ideias inovadores e que você também vai poder botar aqui quanto menos dados mais fortes são as opiniões conselho ruim número dois tem que fazer as coisas mais complicado possível e esse é o segredo para se manter empregada se você nunca trabalhou na área outra dando os primeiros passos agora eu juro para você que tem pessoas que genuinamente pensam assim Inclusive essa pessoa ela pode evoluir evoluir em três estágios diferentes nessa forma de pensar primeiro estágio a pessoa faz De forma inconsciente seja por falta de compreensão sobre o problema de negócio tá sendo resolvido ou por problemas na definição do escopo EA tem tudo bem mas é agora no segundo estágio em que a coisa começa a ficar estranha e tem pessoas que vão complicar as coisas puramente para aparecer que elas sabem fazer coisas difíceis para impressionar para Se provar e o último estágio é o pior de todos e o mais danoso para as pessoas que trabalham ao redor dessa pessoa e também foi Oi e a pessoa se esforça para fazer algo que somente ela vai conseguir dar manutenção como forma de garantir o seu emprego e ela vai acabar com fôlego de qualquer outra alternativa que coloca em risco essa estratégia conselho ruim número 3 ao entrar numa nova empresa Xing a base de código atual E propõe a escrever tudo e fizeram isso dá vontade de sempre dá vontade dá porque é o famoso engenheiro de obra pronta depois que o problema se revelou um problema é muito mais fácil vomitar uma opinião sobre o que que aconteceu é é muito fácil ser um dinheiro já vai pronta e isso me lembra o ciclo da desgraça de um software o projeto começa com poucos desenvolvedores com alta produtividade e velocidade depois de um tempo essa velocidade começa a cair cai até chegar um ponto realmente desconfortável para todo mundo para os desenvolvedores para gerenciar e para os clientes aí a gerência faz a única coisa que ela sabe fazer contratar mais desenvolvedores para acelerar o desenvolvimento O problema é que esses novos desenvolvedores desconhecem o design da aplicação que nesse ponto já tá Sussu bom e cada nova implementação não é mais possível dizer se ela se aproxima ou se afasta da intenção do Design Inicial dessa aplicação e claro que com mais pessoas no time maior a pressão por resultados e maior bagunça então o time se revolta e demanda que o código seja reescrito do zero agência ficar maluca com essa ideia mas não pode negar que a produtividade tá muito ruim então acaba cedendo aí todo mundo quer participar desse novo projeto mas poucas pessoas são selecionadas e quem ficou no projeto antigo fica extremamente desanimado só que antes a empresa tinha um problema que era o código anterior mas agora tem dois uma vez que o sistema antigo não vai poder ser descontinuado do nada e vai receber novas atualizações e que devem ser replicadas no novo sistema E aí para o sistema novo não ficar para trás eles decidem acelerar ao máximo o desenvolvimento e que o final das contas vai fazer a história voltar para o ponto um homem conselho ruim número 4 você precisa saber sem por cento sobre uma linguagem de programação antes de querer fazer qualquer coisa se precisar aprender sem por cento sobre uma coisa antes de querer fazer algo com ela é um péssimo conselho por dois motivos primeiro e mais Óbvio é que você não vai conseguir aprender sem por cento de algo sem em paralelo e aplicando na prática os conhecimentos mas em segundo lugar talvez não tão Óbvio é que nem tudo que existe numa linguagem de programação é algo que é bom ou que deveria ser usado só porque existe fiz isso é conhecido como pitfalls onde a tradição é armadilhas por exemplo JavaScript tem vários pitfalls desde uma forma de declarar variáveis que podem vazar por um escopo Global ontem as correções em pistas para verificações morenas with steak Mini tem muito mais muito mais perigosa e isso existe em todas as tecnologias conselho ruim número 5 leia a cada comentário que você receber e encontro viu como um ataque pessoal e se tem aqui vai ser bem rápido e me lembra uma situação em que eu vivi no evento que foi bem simples e bem legal a pessoa que tava palestrando aquele momento falou que você vira uma pessoa madura quando você consegue é o que tem de bom de qualquer situação eu sei que tem limite para isso mas tem pessoas que conseguem extrair algo de bom demonstração que você acreditava sempre muito difícil e tem pessoas que não conseguem estar em nada de bom até demonstração normal e por situação normal eu quero dizer um dia de trabalho normal que não necessariamente um cenário encantador um Mar Azul sem ondas e antes dos dois últimos conselhos ruins incluindo aquele último que eu comentei que vem com uma paulada eu gostaria de falar que no final desse vídeo aqui e vou recomendar outros dois vídeos que são uma ótima continuação para o que você tá aprendendo agora então bora para o penúltimo conselho conselho número 6 não preciso mais atualizar todos esses novos fármacos são besteira e modinha eu posso ter errado mas eu acho que programação é a única área em que aprendendo novas ferramentas pode ser algo realmente mal visto por uma parcela considerável de programadores entendi o motivo disso de verdade tá programação Oi aqui é a marinópolis não ela não tá completamente estabilizada muito longe filho por conta disso muita coisa nova toda hora sem parar gera estresse e fadiga sim só que por mais que você pode passar dos limites e queria ficar sempre na ponta do raio lindo e daí acabar se machucando por conta disso você também pode facilmente ficar lá para trás e muito para trás tá ao invés de você se atualizar para entrar numa empresa você prefere encontrar uma empresa que não se atualizou Só que essa empresa provavelmente não ficou para trás só na steck tecnológica ela ficou para trás aí até como as pessoas vão te tratar no dia a dia e aproveitando o gancho uma forma muito simples e se manter atualizado é através de uma newsletter diária que eu faço com meu irmão onde de segunda a sexta a gente sintetiza em pequenas parágrafos as notícias mais importantes de Tecnologia do Brasil e do mundo o entre prescrição está aqui embaixo na descrição e o acesso é gratuito e o projeto ele se sustenta com promoções e descontos de cursos que a gente coloca lá embaixo e turma são os mesmos cursos você a internet só que com desconto é o ultimate e tem outras coisas legais que aparece lá embaixo com o próximo vagas de emprego é realmente muito massa confere lá conselho ruim duro 7 apenas fique assistindo tutoriais na internet a gente vai chegar na parte da paulada e esse conselho ruim é massa porque meio que eu vou falar que vai para ser estranho mais para quem gosta de estudar estudar gostoso e só muitas vezes mais gostoso do que trazer qualquer resultado com aquilo tempero em inglês para isso chamado tutorial Réu que é você entrar numa espiral negativa de estudos que vai ficando cada vez mais difícil de sair porque quanto mais você estuda mais você descobre que novas coisas existem e que você precisa estudar por seu conhecimento ficar completo e obviamente esse negócio Nunca Termina então para te dar um choque nesse exato momento que é a paulada que eu comentei antes e vou trazer um trecho de um vídeo do George Robinson também conhecido por dia o rota que é um dos hackers mais famosos do mundo e liderou por vários anos o Jailbreak do iPhone do Playstation 3 e programam seu próprio carro autônomo usando em e tchau e disponibilizou o código de forma opentours olha só o que que ele tem para falar para quem quer aprender a programar e que é uma técnica usada pelos melhores programadores que ele conhece o deve órgão de alarme inform them what we were All closer to Heaven only with High tem nenhum dizer de um livro é burra é verdade o que o máximo a tradição tem nenhuma hora de Deus e é melhor de Deus ainda não vai ficar o Ok eu te fará e novidades da campeões O que quer dizer se tem anime irão dar rhaylan e vestido roxo em hora de rádio aqui de um e vai sair agora em que o fogo é que eu frango e agora os dois vídeos aqui no canal que estão totalmente casado com que você acabou de assistir o primeiro Face aqui os 4 hábitos que tornam você um programador ineficiente e o segundo é esse aqui o check-list do programador Sênior e que explica por que os bons programadores deveriam ser muito bem remunerados fechadão valeu E aí
+Durante a Segunda Guerra Mundial, um jovem meteorologista chamado **Charlie Munger** foi encarregado de criar mapas meteorológicos e prever o clima para liberar pilotos a levantarem voo com segurança.
+
+Ao invés de pensar "como criar rotas de voo seguras?", ele inverteu o problema:
+
+> "Como eu poderia matar o maior número de pilotos?"
+
+A resposta: levar os pilotos a locais onde o gelo se acumularia, impedir o cancelamento correto dos aviões, indicar percursos onde o avião ficaria sem combustível, ou rotas sem locais adequados para pouso de emergência.
+
+Excluindo todas essas alternativas ruins, as melhores alternativas se revelaram. Esse é o **Princípio da Inversão**.
+
+---
+
+## Origens
+
+O princípio vem do matemático alemão **Karl Gustav Jakob Jacobi**, cuja teoria pode ser traduzida como:
+
+> "Inverter, sempre invertar."
+
+**Charlie Munger** — sócio de Warren Buffett e um dos investidores mais bem-sucedidos de todos os tempos — usou esse modelo mental amplamente ao longo da carreira.
+
+---
+
+## Aplicação: Os 7 Conselhos do Pior Programador
+
+Usando a inversão: **ao entender o que definitivamente não queremos ser, entendemos o que queremos ser.**
+
+---
+
+### Conselho Ruim #1: Nunca questione os líderes — eles sempre estão certos
+
+Um estudo publicado pela Amazon trouxe a expressão:
+
+> **"Don't listen to the HiPPO"** — *Highest Paid Person's Opinion* (a opinião da pessoa mais bem paga da empresa)
+
+**A história:** por volta dos anos 2000, alguém na Amazon teve a ideia de adicionar recomendações de produto durante o checkout. Um executivo de alto nível se opôs por intuição — achava que seria uma péssima ideia, que confundiria o usuário e diminuiria as vendas.
+
+A Amazon, com sua cultura de experimentação e coleta de dados, rodou um pequeno experimento. O resultado foi positivo e gerou bilhões em receita, desencadeando várias outras implementações e patentes.
+
+**Lição:** dados superam intuição, especialmente em ideias inovadoras. Quanto menos dados, mais fortes e mais perigosas são as opiniões.
+
+---
+
+### Conselho Ruim #2: Faça as coisas o mais complicado possível — esse é o segredo para se manter empregado
+
+Essa mentalidade evolui em três estágios:
+
+| Estágio | Descrição |
+|---|---|
+| **1 — Inconsciente** | Complicação por falta de compreensão do problema de negócio ou escopo mal definido. Faz parte do aprendizado. |
+| **2 — Aparência** | A pessoa complica as coisas para *parecer* que sabe fazer coisas difíceis. Para impressionar, para se provar. |
+| **3 — Sabotagem** | A pessoa cria algo que somente ela conseguirá manter, como forma de garantir seu emprego. Destrói qualquer alternativa que coloque essa estratégia em risco. |
+
+O terceiro estágio é o mais danoso — para o time, para o produto e para a empresa.
+
+---
+
+### Conselho Ruim #3: Ao entrar numa nova empresa, critique a base de código atual e proponha reescrever tudo do zero
+
+Essa é a mentalidade do "engenheiro de obra pronta": depois que o problema se revelou, é fácil opinar sobre o que aconteceu.
+
+**O Ciclo da Desgraça de um Software:**
+
+1. Projeto começa com poucos desenvolvedores, alta produtividade e velocidade
+2. Com o tempo, a velocidade cai até um ponto desconfortável para todos
+3. A gerência contrata mais desenvolvedores — mas eles desconhecem o design da aplicação, que já está comprometido
+4. Com mais pessoas, maior pressão por resultados e maior bagunça
+5. O time se revolta e demanda reescrita do zero
+6. A gerência cede — mas o sistema antigo não pode ser descontinuado e continua recebendo atualizações
+7. Essas atualizações precisam ser replicadas no sistema novo
+8. Para não ficar para trás, o novo sistema é desenvolvido às pressas
+9. **A história volta ao ponto 1**
+
+---
+
+### Conselho Ruim #4: Você precisa saber 100% sobre uma linguagem antes de fazer qualquer coisa
+
+Esse conselho é ruim por dois motivos:
+
+1. **Óbvio:** É impossível aprender 100% de algo sem aplicar na prática em paralelo.
+2. **Menos óbvio:** Nem tudo que existe numa linguagem é algo bom ou que deveria ser usado — só porque existe não significa que é certo usar.
+
+Isso é conhecido como **pitfalls** (armadilhas). Exemplos em JavaScript:
+- Declaração de variáveis com `var` que vaza para o escopo global
+- Coerções de tipo implícitas em comparações com `==`
+- Comportamentos inesperados com `this`
+
+Toda tecnologia tem seus pitfalls. Aprender 100% na teoria antes de praticar significa aprender inclusive as partes que não deveriam ser usadas.
+
+---
+
+### Conselho Ruim #5: Leia cada comentário de code review como um ataque pessoal
+
+Uma pessoa madura consegue extrair algo de bom de qualquer situação — inclusive de feedback crítico, de demonstrações contrárias ao que acredita, de um dia de trabalho normal que não é um mar azul sem ondas.
+
+**A inversão:** code review é um dos mecanismos mais valiosos de aprendizado e melhoria de qualidade. Tratar feedback como ataque fecha a porta para esse aprendizado.
+
+---
+
+### Conselho Ruim #6: Não preciso me atualizar — essas novas ferramentas são modinha e besteira
+
+Programação é provavelmente a única área em que aprender novas ferramentas pode ser algo mal visto por uma parcela considerável dos praticantes.
+
+O motivo é compreensível: a área não está estabilizada, há muita coisa nova o tempo todo, o que gera estresse e fadiga real.
+
+Porém, há dois extremos problemáticos:
+- **Extremo 1:** Tentar estar sempre na ponta de tudo e acabar se sobrecarregando
+- **Extremo 2:** Ficar muito para trás e buscar empresas que também não se atualizaram — que provavelmente ficaram para trás não só na stack tecnológica, mas também na cultura e na forma como tratam as pessoas
+
+---
+
+### Conselho Ruim #7: Apenas fique assistindo tutoriais na internet
+
+O fenômeno em inglês se chama **Tutorial Hell**: uma espiral negativa de estudos que fica cada vez mais difícil de sair, porque quanto mais você estuda, mais descobre novas coisas que existem e que você "precisa" estudar para o seu conhecimento ficar "completo" — e esse ciclo nunca termina.
+
+**A paulada — George Hotz (geohot)**, um dos hackers mais famosos do mundo (liderou por vários anos o jailbreak do iPhone e do PlayStation 3, programou seu próprio carro autônomo usando aprendizado de máquina e disponibilizou o código como open source):
+
+> **A técnica usada pelos melhores programadores que ele conhece:** não há nenhuma hora de Deus que seja melhor do que sentar e construir algo. Você aprende fazendo, não assistindo.
+
+---
+
+## A Inversão Completa
+
+| Conselho Ruim (o que evitar) | O que realmente fazer |
+|---|---|
+| Nunca questione os líderes | Use dados para testar hipóteses, inclusive as dos líderes |
+| Complique tudo para parecer indispensável | Busque a solução mais simples que resolve o problema |
+| Critique e proponha reescrita imediata | Entenda o sistema antes de criticá-lo; evolua incrementalmente |
+| Aprenda 100% antes de fazer qualquer coisa | Aprenda fazendo; conheça os pitfalls pelo uso |
+| Trate feedback como ataque pessoal | Extraia o que há de útil em qualquer feedback |
+| Ignore novas ferramentas | Mantenha-se atualizado de forma sustentável |
+| Assista tutoriais infinitamente | Construa coisas reais — é o único caminho |

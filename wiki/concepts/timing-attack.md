@@ -3,8 +3,8 @@ type: concept
 title: "Timing Attack"
 aliases: ["timing attack", "ataque de temporização", "side-channel timing", "crypto.timingSafeEqual"]
 date_created: 2026-06-10
-date_updated: 2026-06-10
-source_count: 1
+date_updated: 2026-06-11
+source_count: 2
 tags: [security, timing-attack, side-channel, criptografia, appsec, senhas]
 skill: tech-mentor-security
 status: stable
@@ -60,7 +60,11 @@ Ver [[attack-surface]]: superfície de ataque inclui os outputs do sistema, não
 
 - [[attack-surface]] — outputs (incluindo latência) são parte da superfície de ataque
 - [[defense-in-depth]] — comparação de tempo constante é uma camada de controle na validação de credenciais
+- [[concepts/bcrypt]] — já usa comparação de tempo constante internamente
+- [[concepts/argon2]] — idem; bibliotecas maduras de password hashing abstraem isso
+- [[concepts/password-hashing]] — contexto onde timing attacks em verificação de senha são relevantes
 
 ## Key Sources
 
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — exemplo didático: descobrir senha de 9 chars com 26×9 tentativas em vez de 26^9
+- [[sources/seguranca-armazenamento-senhas-banco-de-dados]] — bcrypt e Argon2 como implementações que já resolvem o problema

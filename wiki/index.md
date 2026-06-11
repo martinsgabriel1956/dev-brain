@@ -66,6 +66,8 @@ date_updated: 2026-06-10
 | [[wiki/sources/custo-tokens-portugues-vs-ingles]] | Português custa 62% mais tokens que inglês no Anthropic — BPE treinado em corpus inglês é a causa; impacto direto no CLAUDE.md e specs |
 | [[wiki/sources/product-engineer-vale-do-silicio-2026]] | Relato do Vale do Silício: o Product Engineer constrói a coisa que constrói a coisa — duas faces (senso de produto + harness), 40-50% dos usuários do Cursor não são devs |
 | [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]] | Progressão incremental de aprendizado em 3 estágios; over-engineering ("verde neném"); otimização prematura é a raiz de todo mal (Knuth) |
+| [[wiki/sources/principio-da-inversao-programador]] | 7 conselhos do pior programador invertidos via Munger/Jacobi — revela o que um bom programador deve ser; geohot: não há substituto para construir |
+| [[wiki/sources/design-first-vs-code-first-referencias]] | Design First vs Code First, Design Engineer como cargo do meio, fake delay, Linear como referência máxima — design é interação, não só visual |
 
 ## Concepts
 
@@ -81,6 +83,9 @@ date_updated: 2026-06-10
 | [[wiki/concepts/aprendizado-continuo]] | Saber aprender, não acumular cursos; mantém a carreira viva |
 | [[wiki/concepts/adaptabilidade]] | Continuar performando quando o contexto muda |
 | [[wiki/concepts/inteligencia-emocional]] | Operar sob pressão, crítica e conflito sem perder equilíbrio |
+| [[wiki/concepts/dados-vs-intuicao]] | Dados superam intuição especialmente em ideias inovadoras — quanto menos dados, mais fortes e perigosas são as opiniões |
+| [[wiki/concepts/maturidade-tecnica]] | Capacidade de extrair aprendizado de qualquer situação, incluindo as adversas |
+| [[wiki/concepts/atualizacao-tecnologica]] | Custo de ficar estagnado vs. fadiga de perseguir novidades — empresa que não evoluiu na stack também não evoluiu na cultura |
 
 ### Qualidade de Software com IA
 
@@ -257,6 +262,9 @@ date_updated: 2026-06-10
 | [[wiki/concepts/vale-do-desespero]] | O ponto em que o aprendiz entende cada peça mas não consegue arquitetar — etapa estrutural, não sinal de incapacidade |
 | [[wiki/concepts/pratica-deliberada]] | 800–1.000 horas para júnior; prática no limite da competência atual, com feedback — não repetição mecânica |
 | [[wiki/concepts/reconhecimento-de-padroes]] | O que separa mestre de amador (xadrez e programação): repertório de padrões, não inteligência ou sintaxe |
+| [[wiki/concepts/principio-da-inversao]] | Inverter o problema para revelar a solução — Jacobi/Munger; lista o pior caso para encontrar o melhor |
+| [[wiki/concepts/tutorial-hell]] | Espiral de consumo passivo de conteúdo — quanto mais você estuda, mais descobre que precisa estudar; saída: construir algo |
+| [[wiki/concepts/aprendizado-deliberado]] | Prática com intenção, feedback e dificuldade progressiva — antídoto ao tutorial hell |
 
 ### Arquitetura Backend & Event-Driven
 
@@ -278,6 +286,9 @@ date_updated: 2026-06-10
 |---|---|
 | [[wiki/concepts/logging-estruturado]] | Logs com contexto (user_id, trace_id, error) — a diferença entre "vejo o problema" e "3h chutando" |
 | [[wiki/concepts/quadrante-de-fowler]] | Dois eixos: Deliberado/Inadvertido × Prudente/Imprudente; só Prudente+Deliberado é aceitável |
+| [[wiki/concepts/complexidade-como-estrategia]] | Três estágios: inconsciente → aparência → sabotagem — criar código incompreensível para se tornar insubstituível |
+| [[wiki/concepts/ciclo-da-desgraca-software]] | Espiral reescrita→mesmo problema→dois sistemas; alternativa: refatoração incremental com strangler fig |
+| [[wiki/concepts/pitfalls-de-linguagem]] | Armadilhas que existem na linguagem mas não devem ser usadas — descobertas pelo uso, não pelo estudo teórico |
 
 ### Segurança de APIs & Arquitetura
 
@@ -296,6 +307,26 @@ date_updated: 2026-06-10
 | [[wiki/concepts/timing-attack]] | Tempo de resposta como canal de informação — variação de latência revela segredos |
 | [[wiki/concepts/sast]] | Análise estática de segurança no código — detecta padrões vulneráveis antes do deploy |
 | [[wiki/concepts/secrets-management]] | Credenciais nunca no código — .env local, GitHub Secrets/AWS SM em produção |
+| [[wiki/concepts/password-hashing]] | Armazenar senhas exige algoritmo lento + salt + pepper — plaintext e MD5/SHA são inseguros |
+| [[wiki/concepts/salt]] | String aleatória por usuário concatenada à senha — invalida rainbow tables pré-computadas |
+| [[wiki/concepts/pepper]] | Segredo do servidor concatenado à senha — defesa se só o banco vazar |
+| [[wiki/concepts/bcrypt]] | CPU-hard clássico (fator de trabalho configurável) — superado por rigs de GPU sem memory-hard |
+| [[wiki/concepts/argon2]] | Estado da arte: CPU-hard + memory-hard — gargalo de VRAM derrota paralelismo de GPU |
+| [[wiki/concepts/cpu-hard]] | Algoritmo intencionalmente lento — cada tentativa de brute-force custa ciclos de CPU |
+| [[wiki/concepts/memory-hard]] | Ocupa RAM por instância — limita paralelismo de GPU pelo gargalo de VRAM |
+| [[wiki/concepts/rainbow-table]] | Tabela hash→senha pré-computada — reutilizável contra qualquer banco sem salt |
+| [[wiki/concepts/ataque-pre-computacao]] | Trabalho feito uma vez, reutilizado em múltiplos vazamentos — salt invalida o reaproveitamento |
+
+### Frontend & Design Engineering
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/design-first]] | Layout no Figma antes do código — padrão em times grandes com designers dedicados; Figma fica desatualizado em times pequenos |
+| [[wiki/concepts/code-first]] | Codar com component libraries sem layout prévio — velocidade alta, risco de Frankenstein visual |
+| [[wiki/concepts/design-engineer]] | Cargo do meio: conhecimentos de design aplicados diretamente no código — experimentações no código, Figma como referência |
+| [[wiki/concepts/component-library]] | Shadcn, Radix, Headless UI — componentes pré-prontos; headless dá controle total, estilizadas são mais rápidas |
+| [[wiki/concepts/fake-delay]] | Delay mínimo intencional (300ms) para garantir feedback visual perceptível — performance percebida é design |
+| [[wiki/concepts/design-como-interacao]] | Design se manifesta na interação, não na primeira impressão — micro-interações, onboarding, feedback, linguagem |
 
 ### Padrões e Design
 
@@ -336,6 +367,14 @@ date_updated: 2026-06-10
 | [[wiki/entities/anthropic]] | Criadora do Claude e do Claude Code — definiu specs de rules/skills/MCP que viraram padrão de mercado |
 | [[wiki/entities/pascadev]] | Canal brasileiro de conteúdo sobre IA e Claude Code — série sobre eficiência com LLMs |
 | [[wiki/entities/codex-openai]] | Harness de codificação da OpenAI baseado em GPT-5.x — par do Claude Code em 2026 |
+| [[wiki/entities/rockyou]] | Empresa que vazou 32M senhas em plaintext em 2009 — originou a wordlist com bilhões de senhas reais |
+| [[wiki/entities/pedro-duarte]] | Brasileiro, co-fundador Radix UI + Stitches (adquiridos WorkOS), hoje Raycast — referência em design de interação |
+| [[wiki/entities/linear]] | Ferramenta de issues — referência máxima de design e performance frontend; todo dev deveria usar ao menos uma vez |
+| [[wiki/entities/radix-ui]] | Biblioteca headless acessível — fundação do Shadcn/UI; co-criada por Pedro Duarte |
+| [[wiki/entities/lovable]] | Principal ferramenta de vibe-coding 2025 — sucesso deve-se ao design de produto, não só à tecnologia |
+| [[wiki/entities/charlie-munger]] | Sócio de Warren Buffett — popularizou o princípio da inversão como modelo mental; usou inversão para criar rotas aéreas seguras na 2ª Guerra |
+| [[wiki/entities/karl-gustav-jakob-jacobi]] | Matemático alemão — originou o princípio "inverter, sempre invertar" |
+| [[wiki/entities/george-hotz]] | Geohot — hacker do iPhone/PS3, carro autônomo open source; "não há substituto para sentar e construir algo" |
 
 ### Documentação de Arquitetura
 

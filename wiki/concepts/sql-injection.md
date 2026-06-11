@@ -3,8 +3,8 @@ type: concept
 title: "SQL Injection"
 aliases: ["sql injection", "sqli", "injeção sql", "bobby tables"]
 date_created: 2026-06-10
-date_updated: 2026-06-10
-source_count: 1
+date_updated: 2026-06-11
+source_count: 2
 tags: [security, sql-injection, owasp, input-sanitization, appsec, attack-surface]
 skill: tech-mentor-security
 status: stable
@@ -62,12 +62,18 @@ Todo input do usuário — nome, e-mail, senha, parâmetros de URL, cabeçalhos 
 
 O mesmo princípio se aplica a: XSS (injeção HTML/JS), Command Injection (shell), SSTI (template engines), XXE (XML).
 
+## Papel Histórico no Armazenamento de Senhas
+
+A popularização do SQL Injection nos anos 90 foi o gatilho que expôs o padrão de armazenar senhas em **plaintext**. Quando um atacante ganhava acesso ao banco via SQLi, recebia as senhas literalmente como o usuário havia digitado — e as reutilizava em outros serviços. Esse ciclo levou à adoção de [[concepts/password-hashing]] como resposta. O caso [[entities/rockyou]] (2009) mostrou que décadas depois empresas ainda não tinham aprendido a lição.
+
 ## Relação com Outros Conceitos
 
 - [[attack-surface]] — inputs são a superfície de ataque mais explorada
 - [[principio-do-menor-privilegio]] — reduz o impacto de uma injeção bem-sucedida
 - [[xss]] — injeção de código em contexto diferente (HTML/JS em vez de SQL)
+- [[concepts/password-hashing]] — resposta ao problema exposto pelos vazamentos via SQLi
 
 ## Key Sources
 
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — Bobby Tables como exemplo central de sanitização de input
+- [[sources/seguranca-armazenamento-senhas-banco-de-dados]] — contexto histórico: SQLi nos anos 90 como vetor que expôs o plaintext

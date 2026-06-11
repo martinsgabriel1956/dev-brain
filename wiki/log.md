@@ -2,6 +2,85 @@
 
 ---
 
+## [2026-06-11] ingest | Design First vs Code First — Abordagens e Referências de Design
+
+**Source:** [[wiki/sources/design-first-vs-code-first-referencias]]
+**Skill:** `tech-mentor-frontend` (skill não encontrado — ingest sem calibração de domínio; marcado para re-ingest quando skill estiver disponível)
+
+**Nota:** Páginas core criadas em sessão anterior (2026-04-22) sem registro no log nem no index. Este entry fecha o ingest e adiciona as páginas que faltavam.
+
+**Páginas criadas (sessão anterior):**
+- `wiki/sources/design-first-vs-code-first-referencias.md`
+- `wiki/concepts/design-engineer.md`
+- `wiki/concepts/design-first.md`
+- `wiki/concepts/code-first.md`
+- `wiki/concepts/fake-delay.md`
+- `wiki/entities/lovable.md`
+
+**Páginas criadas (esta sessão):**
+- `wiki/concepts/component-library.md`
+- `wiki/concepts/design-como-interacao.md`
+- `wiki/entities/pedro-duarte.md`
+- `wiki/entities/linear.md`
+- `wiki/entities/radix-ui.md`
+
+**Notas:** Fonte é transcrição de vídeo do canal Rocket City. Argumento central: Design Engineer é o cargo que resolve a tensão entre Design First (Figma desatualiza) e Code First (risco de Frankenstein). Design não é estética — é interação, e o Linear é a referência máxima disso. Fake delay é exemplo concreto: 300ms mínimo para feedback visual mesmo em ações instantâneas. Questões abertas: quando o Figma deixa de fazer sentido completamente para um Design Engineer? Como medir qualidade de interação objetivamente?
+
+---
+
+## [2026-06-11] ingest | O Princípio da Inversão Aplicado à Programação
+
+**Source:** [[wiki/sources/principio-da-inversao-programador]]
+**Skill:** tech-mentor-leadership (`references/technical-mentoring.md`, `references/career-progression.md`)
+
+**Nota:** Páginas criadas em sessão anterior (2026-04-22) sem registro no log nem no index. Este entry fecha o ingest.
+
+**Páginas criadas (sessão anterior):**
+- `wiki/sources/principio-da-inversao-programador.md`
+- `wiki/concepts/principio-da-inversao.md`
+- `wiki/concepts/dados-vs-intuicao.md`
+- `wiki/concepts/complexidade-como-estrategia.md`
+- `wiki/concepts/ciclo-da-desgraca-software.md`
+- `wiki/concepts/pitfalls-de-linguagem.md`
+- `wiki/concepts/maturidade-tecnica.md`
+- `wiki/concepts/atualizacao-tecnologica.md`
+- `wiki/concepts/tutorial-hell.md`
+- `wiki/concepts/aprendizado-deliberado.md`
+- `wiki/entities/charlie-munger.md`
+- `wiki/entities/karl-gustav-jakob-jacobi.md`
+- `wiki/entities/george-hotz.md`
+
+**Notas:** Fonte aplica o modelo mental de inversão (Jacobi/Munger) a 7 hábitos do pior programador. Conclusão central: dados > intuição (HiPPO effect), complexidade intencional é sabotagem, reescrita do zero reproduce o ciclo, e geohot sintetiza o antídoto ao tutorial hell — não há substituto para construir algo. Questões abertas: equilíbrio entre questionar líderes e ser produtivo; como sair do ciclo da desgraça além de refatoração incremental.
+
+---
+
+## [2026-06-11] ingest | Segurança e Armazenamento de Senhas no Banco de Dados
+
+**Source:** [[wiki/sources/seguranca-armazenamento-senhas-banco-de-dados]]
+**Skill:** tech-mentor-security (`references/crypto.md`)
+
+**Páginas criadas:**
+- `wiki/sources/seguranca-armazenamento-senhas-banco-de-dados.md`
+- `wiki/concepts/password-hashing.md`
+- `wiki/concepts/argon2.md`
+- `wiki/concepts/bcrypt.md`
+- `wiki/concepts/salt.md`
+- `wiki/concepts/pepper.md`
+- `wiki/concepts/rainbow-table.md`
+- `wiki/concepts/cpu-hard.md`
+- `wiki/concepts/memory-hard.md`
+- `wiki/concepts/ataque-pre-computacao.md`
+- `wiki/entities/rockyou.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/hashing.md` — seção sobre velocidade como problema, backlinks para salt/rainbow-table/password-hashing
+- `wiki/concepts/sql-injection.md` — seção sobre papel histórico no armazenamento de senhas + RockYou
+- `wiki/concepts/timing-attack.md` — backlinks para bcrypt/argon2/password-hashing
+
+**Notas:** Fonte é transcrição de vídeo de Renato Augusto cobrindo a evolução histórica do armazenamento de senhas (anos 90 → 2026). Argumento central: entender os fundamentos (paralelismo, núcleos, memória de GPU) é o que diferencia quem configura segurança corretamente de quem usa defaults sem saber se são seguros. Questões abertas: rotação de pepper sem invalidar senhas existentes; memory_cost mínimo recomendado em 2026; viabilidade de migração progressiva de bcrypt para Argon2id.
+
+---
+
 ## [2026-06-10] ingest | Cinco Práticas de Segurança do Pragmatic Programmer
 
 **Source:** [[wiki/sources/cinco-praticas-seguranca-pragmatic-programmer]]

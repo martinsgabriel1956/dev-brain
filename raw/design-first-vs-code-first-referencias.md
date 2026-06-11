@@ -1,5 +1,140 @@
-# Design First vs Code First — Abordagens e Referências de Design
+# Design First vs Code First — Abordagens e Referências de Design para Devs
 
-## Transcrição
+> **Fonte:** Transcrição de vídeo — Canal Rocket City (Eduarda)  
+> **Domínio:** Frontend, Design Engineering, UX
 
-como devs né a gente sempre cai na hora que a gente vai criar um projeto na hora que a gente vai trabalhar num projeto entre duas abordagens na hora da gente trabalhar o design de um de um projeto que é a abordagem design first ou abordagem code first né eu acho que muitos de vocês conhecem essas bibliotecas que ficaram famosas aí nos últimos últimos anos né o Sheds Cien por exemplo Cos Hey UI e tem vários né a Versa lançou deles de AI que é o Versal AI elements por exemplo que são esses conjuntos né de componentes pré-estilizados eh que tu utiliza para construir uma aplicação e e geralmente quando você parte para utilizar uma dessas ferramentas né você tá indo por um lado de code first que é basicamente você é sair codando sem mesmo criar um layout antes né você usa desses componentes desses templates dessas estruturas semiprontas para sair codando isso é legal porque assim tu ganha uma velocidade né tu não precisa ter muita criatividade mas por se tratarem de componentes muitas vezes isolados que não tem muito o contexto da aplicação que tu tá querendo criar geralmente se tu não tem uma visão de design tu acaba criando um Frankstein gigantesco com isso né porque você tem poucas referências de eh aplicações que são próximas à sua a menos que você esteja criando uma aplicação que é muito igual a outras aplicações você não tem muita referência e você acaba criando um Frankstein porque você não tem essas noções de design por outro lado existe essa abordagem de design first que é onde você primeiro constrói o design que é onde a maioria das aplicações hoje seguem né as as grandes empresas você primeiro constrói o design e depois leva isso para dentro do código geralmente essa é a forma que as empresas mais usam porque isso garante na maioria das vezes uma padronização maior porém é um grande risco também por se você é a mesma pessoa que coda e faz o design a chance do Figma começar a ficar desatualizado dado as alterações que você faz no código é muito grande né então geralmente essa abordagem de design first de desenhar né o layout antes de sair codando é uma abordagem onde você geralmente seguida em times maiores onde você tem uma uma separação muito clara de designers e de pessoas que vão codar o front end times separados quando você é a mesma pessoa o mesmo time ou as mesmas duas três pessoas que codam e fazem o design fazem o design na maioria das vezes né a gente chama isso de um quase o novo cargo aí queridinho lá do da do Vale do Silício das Texas que é o o Design Engineer né que é a pessoa que ela tem conhecimentos de design mas muitas vezes esse esses conhecimentos eles são aplicados na hora da construção do layout já via código então são pessoas que muitas vezes elas fazem as experimentações de layout diretamente no código né o Figma ele fica mais como uma ferramenta de testes do que necessariamente uma ferramenta que você vai utilizar como base para construir o seu layout e aí você usa não só o Figma claro mas outras ferramentas como Hive por exemplo para animações e algumas outras semelhantes para você ir construindo o o seu layout né só que como eu falei né todas essas abordagens elas requerem boas referências de design e aqui eu quero passar para vocês algumas referências que eu sigo na hora de criar os meus designs e que cara para mim funciona super bem eu gosto muito de acompanhar se vocês forem front ends ou fui steack gostarem de design ou tem interesse nisso eu altamente recomendo vocês darem uma olhadinha nessas referências e nessas pessoas para mim a primeira referência que é cara assim onde eu me mantenho mais atualizado é o X né o Twitter não tem como fugir e aí eu vou mostrar alguns perfis de algumas pessoas aqui dentro do Twitter que eu acho que vale a pena vocês seguirem caso vocês queiram eh entender um pouquinho mais de design e pegar boas referências na hora de criar os layouts de vocês primeira delas é o Eu posso mandar essa lista depois para vocês o RA é um cara bem famosinho aí ah ele trabalha na como design engineer né Versal né o staff design engineer ele é um cara que ele tem um site muito legal então se vocês virem aqui no site deles no site dele e rodarem um pouquinho vocês vão encontrar nossa ele mudou o site dele não era assim project Craft acho que é craft esse craft dele é vários mini como que eu posso dizer experimentações envolvendo ah design usabilidade e com implementação né via código então tu consegue ver tudo isso aqui implementado mesmo com código entender como que são feitas né o cuidado o detalhismo a as animações eh e é e tudo isso é é design né e tudo isso eu acho que que é cada vez mais ã o papel deves frontes também tá eu não vou entrar muito foco porque tem muitos perfis que eu quero mostrar para vocês a gente tem o Stephen ah o Stephen ele é founder da paper eu não sei quem conhece o que que é paper né o paper ele é uma ferramenta que ganhou bastante holofotes aí ela ainda tá em construção que ela é um Figma focado em Design Engineers ela é um Figma focado em devs que são altamente conectados com design então pensa que tu pode ver os componentes da tua aplicação como como e realmente modificar tua aplicação o que o Dreamweaver queria fazer lá nos anos ah 2000 o paper tá se propondo a tentar fazer isso né e o Stephen ele posta bastante coisa sobre design bastante experimentação cara assim é muito legal mesmo eh é um dos perfis aí que de vez em quando eu entro para consumir o conteúdo nem todos eles eu sigo são conteúdos que eu entro mais sob demanda porque senão assim o meu Twitter senão cara eu não consigo é conteúdo demais eu não tenho essa capacidade de consumir essa quantidade de conteúdo o Pedro brasileiro é um dos fundadores aí da Radiix né Radix Y Stitches Models comprado pela WorkOS e agora trabalha na Raycast cara eu acho o Pedro fantástico tem inclusive um vídeo com ele aqui no canal da Rocket City que eu fiz lá em 2019 se eu não me engano é um cara que também posta bastante sobre design e veja que design não necessariamente galera tá associado com eh layouts bonitinhos né a gente pensa em design muitas vezes como simplesmente dashboards páginas de login componentes botões mas design não é isso né não é só isso design tem muito a ver com cara a usabilidade né com a experiência que tu entrega pro teu usuário onboarding o primeiro contato as animações né tudo isso é algo que a gente tem que dar muito cuidado eu acho que essa é a parte mais difícil de aprender eh desenhar um um botão bonito um botão ele é quase igual de um site pro outro agora por que que um site parece tão mais leve tão mais gostoso de trabalhar por que eh dá mais prazer eu clicar num botão num linear da vida ou clicar num botão num num outro site qualquer né e aí falando em Linear né por coincidentemente o Paul McGregor ele é designer no Linear ele é um dos caras que participou de toda essa ah concepção do Liner eu acho que o Liner uma das maiores referências de design e maiores referências de front end também eh eu acho que não tem uma pessoa aí que trabalha como frontend que trabalha como Fack que não tenha uma referência no Liner o Liner ele é uma referência em aplicação rápida em aplicação acessível em aplicação com ótimo design então assim esse vocês nunca utilizaram o Lineer pelo menos usem pelo menos uma vez para ter essa experiência eu falei bastante sobre o Liner quando eu fiz o vídeo sobre offline first que é uma metodologia aí que tá vindo forte no frontend tem esse rapaz aqui eh que ele trabalha nessa Architect que é uma empresa nova mas eu eu achei bem legal também ele é um rapaz bem novinho ah ele tem 21 anos e cara ele traz bastante hackzinhos esse aqui eu gostei porque ele é um pouco mais técnico eu queria trazer um pelo menos uma referência para vocês um pouco mais técnica né que fala um pouquinho sobre cara bastante coisa sobre fake delays né então aqui tem um post bem legal que eu vi dele um tempo atrás que é aqui ó a parte de fake delay né então imagina que tu tá clicando para enviar uma mensagem veja que ele coloca um delay mínimo de 300 ms para dar um mostrar o spinnerzinho e dar uma uma sensação melhor pro usuário que tá vendo mesmo que pro usuário não faça a menor diferença né 50 para 300 ms ele aplica um delay mínimo nas interações em algumas interações é claro para dar essa sensação mais gostosa digamos assim mais prazerosa de clicar num botão e tudo isso é design é é bem louco porque a gente acha que as aplicações que a gente usa elas têm um bom design simplesmente porque a gente olha para elas e elas são bonitas mas não é o design ele se mostra no momento que a gente tá interagindo com as aplicações né e não só na hora que a gente tá e abrindo elas tem o Gavin ah eu acho que dispensa apresentações ele é um dos principais designers na Open AI open AI hoje empresa que tá mais crescendo aí né e é um cara que tá muito forte aí nas construções dos principais produtos da Open AI é um cara que fala bastante sobre design só que ele fala um pouco mais sobre um design mais digamos não tão web design é um design mais assim mais purista digamos assim né mas é legal também eu acho que quem quer entrar um pouquinho mais a fundo é um cara legal ah de seguir ah e por último aqui né o Ned que ele é foundovable acho que Lovable todo mundo conhece também não tem mais como fugir né loable hoje é um dos produtos de mais sucesso e eu acho que assim cara assim não é à toa que esses produtos tiveram sucesso não é só simplesmente pela tecnologia por trás sabe o Lovable a gente pensar ele como hoje a principal ferramenta que pessoas não técnicas conseguem construir coisas técnicas exige muito design exige muito trabalho de design né porque o trabalho de design como eu falei não é só criar algo bonito é você conhecer seu público criar algo que seja acessível pro seu público e por isso que é o design ele vai muito além de você simplesmente criar algo bonito né entender o seu público e sair ah construindo algo que seja direcionado isso é muito importante você entender se você começar simplesmente estudar design pela parte prática né vou ali sair colocando cores para ver se elas combinam muitas vezes você vai sim chegar em algum momento que você cria coisas bonitas mas não necessariamente aquilo vai ter utilidade pro mundo né e aí assim acho que não tem como fugir também de referências de onde você encontra boas fontes de design e eu já assim eu já vi as uma quantidade de sites tremenda e eu até hoje ainda uso o drible para mim é uma das formas mais legais de você ter boas referências eh de design né então assim o Dribble ele é meu companheiro então por exemplo cara tô em algum momento desenhando ah uma tabela né uma listagem então eu geralmente vou em table ah por exemplo table design e aí e filtro por web aqui ele já mostrou praticamente quase tudo o web né e assim eu vou pegando referências né de layouts e e não simplesmente sair copiando né dificilmente eu clico em um aqui e eu falo: "Cara vou copiar exatamente com isso"
+---
+
+## 1. As Duas Abordagens
+
+### Code First
+
+Começar pelo código usando bibliotecas de componentes pré-estilizados sem criar um layout antes.
+
+**Exemplos de ferramentas:** Shadcn/UI, Radix UI, Vercel AI Elements, Cos Hey UI.
+
+**Vantagens:**
+- Velocidade de desenvolvimento
+- Não exige criatividade de design
+
+**Problemas:**
+- Componentes são isolados e não têm contexto da aplicação
+- Sem visão de design, o resultado tende a ser um "Frankenstein" — partes que não conversam entre si
+- Funciona bem apenas quando a aplicação é muito semelhante a outras existentes que serviram de referência
+
+---
+
+### Design First
+
+Criar o layout completo antes de escrever código. Abordagem padrão em grandes empresas.
+
+**Ferramenta principal:** Figma
+
+**Vantagens:**
+- Maior padronização
+- Visão coesa da aplicação antes da implementação
+
+**Problemas:**
+- Em times pequenos (1-3 pessoas que fazem design e código), o Figma fica rapidamente desatualizado à medida que o código evolui
+- Funciona bem quando há **separação clara** entre designers e desenvolvedores frontend
+
+---
+
+### O Design Engineer — O Cargo do Meio
+
+Quando a mesma pessoa (ou pequeno time) faz design e código, surge o papel do **Design Engineer**: profissional com conhecimentos de design que aplica esses conhecimentos diretamente no código.
+
+- As experimentações de layout acontecem no código, não no Figma
+- O Figma vira ferramenta de testes e referência, não a fonte da verdade
+- Outras ferramentas usadas: Hive (animações), entre outras
+
+> É o cargo "queridinho" do Vale do Silício no momento — uma resposta prática ao problema de manter Figma e código sincronizados.
+
+---
+
+## 2. O Que Realmente é Design
+
+Design não é só criar layouts bonitos. Design é:
+
+- **Usabilidade** — o quão fácil e prazerosa é a interação
+- **Onboarding** — a primeira impressão do usuário
+- **Animações e micro-interações** — o que diferencia um produto "gostoso" de usar
+- **Conhecer o público** — criar algo direcionado a quem vai usar
+
+**Exemplo concreto — Fake Delay:**
+
+```
+Problema: ação executa em 50ms, muito rápido para o usuário perceber feedback
+Solução:  aplicar delay mínimo de 300ms antes de mostrar o spinner
+
+const MIN_DELAY = 300
+await Promise.all([fetchData(), sleep(MIN_DELAY)])
+```
+
+O usuário não percebe a diferença entre 50ms e 300ms, mas percebe a ausência do feedback visual. O delay artificial cria uma sensação mais prazerosa de interação — isso é design.
+
+> Design se manifesta no momento da interação, não na primeira visualização.
+
+---
+
+## 3. Referências para Seguir (X / Twitter)
+
+### RA — Staff Design Engineer na Vercel
+- Tem um site ("Craft") com mini-experimentações de design + usabilidade implementadas em código
+- Mostra o detalhismo, as animações e o cuidado de implementação que definem o nível de Design Engineer
+
+### Stephen — Founder da Paper
+- **Paper**: ferramenta nova que se propõe a ser um Figma focado em Design Engineers e devs — permite ver e modificar componentes reais da aplicação diretamente no editor (o que o Dreamweaver tentou fazer nos anos 2000, com abordagem moderna)
+- Posta bastante sobre design e experimentações
+
+### Pedro Duarte — Co-fundador da Radix UI / Stitches
+- Brasileiro
+- Radix e Stitches foram adquiridos pela WorkOS; hoje trabalha na Raycast
+- Posta sobre design com foco em usabilidade e experiência, não só estética
+- Entrevistado no canal Rocket City (2019)
+
+### Paul McGregor — Designer no Linear
+- Participou da concepção do Linear
+- **Linear** é referência obrigatória de design para frontend: aplicação rápida, acessível, com design de altíssima qualidade
+- Referência em "por que clicar num botão aqui é mais prazeroso do que em outros lugares"
+
+### Dev no Architect (21 anos) — Referência Técnica
+- Traz conteúdo mais técnico sobre UX e micro-interações
+- Conhecido pelo post sobre **fake delays** — técnica de aplicar delay mínimo (300ms) em interações para garantir feedback visual adequado
+
+### Gavin — Designer na OpenAI
+- Um dos principais designers nos produtos da OpenAI
+- Abordagem mais "purista" de design, menos focada em web especificamente
+- Relevante para quem quer aprofundar além de UI/UX web
+
+### Ned — Founder do Lovable
+- Lovable: principal ferramenta para pessoas não técnicas construírem produtos técnicos em 2025/2026
+- O sucesso do Lovable não é só tecnologia — é resultado de muito trabalho de design para tornar o produto acessível ao público não técnico
+- Exemplo de que design é sobre conhecer e servir o seu público
+
+---
+
+## 4. Ferramentas de Referência Visual
+
+### Dribbble
+- Principal fonte de referências visuais de design para o autor
+- Uso prático: pesquisar pelo componente que está sendo construído (ex: "table design") e filtrar por "web"
+- Não para copiar, mas para capturar referências e direções visuais
+
+---
+
+## 5. Resumo das Abordagens
+
+| | Code First | Design First | Design Engineer |
+|---|---|---|---|
+| Ponto de partida | Componentes pré-prontos | Layout no Figma | Código direto |
+| Velocidade inicial | Alta | Média | Alta |
+| Risco principal | Frankenstein visual | Figma desatualizado | Requer conhecimento de design |
+| Melhor contexto | Protótipos rápidos | Times grandes com designers dedicados | Times pequenos / solo devs |
+| Ferramenta principal | Shadcn, Radix, etc | Figma | Código + Figma como referência |
+
+---
+
+## 6. A Regra de Ouro
+
+Estudar design apenas pela prática (combinação de cores, espaçamentos) pode levar a criar coisas bonitas, mas sem utilidade real. O passo fundamental é **entender o público** — design sem audiência definida é decoração.
