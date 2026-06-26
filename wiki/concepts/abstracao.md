@@ -3,8 +3,8 @@ type: concept
 title: "Abstração"
 aliases: ["abstraction", "esconder detalhes", "contrato genérico"]
 date_created: 2026-04-25
-date_updated: 2026-04-25
-source_count: 1
+date_updated: 2026-06-26
+source_count: 2
 tags: [abstracao, software-design, clean-code, arquitetura, interfaces]
 skill: tech-mentor-backend
 status: stable
@@ -66,3 +66,4 @@ Misturar níveis na mesma função é um code smell — viola [[single-responsib
 
 - [[wiki/sources/acoplamento-abstracao-estado]]
 - [[sources/roadmap-dev-senior-2026]] — abstração como pilar 2: camadas que escondem complexidade sem esconder clareza
+- [[wiki/sources/10-conceitos-fundamentais-computacao]] — abstração como o #1 conceito fundamental; cada um dos 9 outros conceitos é uma camada de abstração

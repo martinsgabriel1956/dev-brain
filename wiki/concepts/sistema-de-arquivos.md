@@ -3,8 +3,8 @@ type: concept
 title: "Sistema de Arquivos"
 aliases: ["file system", "filesystem", "ext4", "NTFS", "APFS", "sistema de arquivo"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-06-26
+source_count: 2
 tags: [sistema-operacional, storage, cs-fundamentals]
 skill: cs-fundamentals
 status: stable
@@ -68,3 +68,4 @@ Mecanismo que registra operações pendentes em um log antes de executá-las. Se
 ## Key Sources
 
 - [[sources/sistema-operacional-por-baixo-dos-panos]]
+- [[sources/como-sistemas-operacionais-funcionam]]

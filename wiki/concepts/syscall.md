@@ -3,8 +3,8 @@ type: concept
 title: "Syscall"
 aliases: ["syscall", "system call", "chamada de sistema", "chamada ao kernel"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-06-26
+source_count: 2
 tags: [sistema-operacional, kernel, cs-fundamentals]
 skill: cs-fundamentals
 status: stable
@@ -60,3 +60,4 @@ Syscall tem overhead — troca de modo (user → kernel → user) custa dezenas 
 ## Key Sources
 
 - [[sources/sistema-operacional-por-baixo-dos-panos]]
+- [[sources/como-sistemas-operacionais-funcionam]]

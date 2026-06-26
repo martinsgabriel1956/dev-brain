@@ -1,25 +1,40 @@
 ---
 type: concept
 title: "Aprender Ensinando"
-aliases: ["learn by teaching", "feynman technique", "ensinar para aprender"]
+aliases: ["learn by teaching", "feynman technique", "ensinar para aprender", "técnica feynman aplicada a código"]
 date_created: 2026-04-29
-date_updated: 2026-04-29
-source_count: 1
-tags: [aprendizado, mentoria, pair-programming, gaps, onboarding]
+date_updated: 2026-06-20
+source_count: 2
+tags: [aprendizado, mentoria, pair-programming, gaps, onboarding, metacognição]
 skill: tech-mentor-leadership
-status: stub
+status: stable
 ---
 
-## TL;DR
+# Aprender Ensinando
 
-Tentar explicar um conceito para outra pessoa é a forma mais eficaz de descobrir onde estão os próprios gaps de entendimento. Se você não consegue explicar claramente, você não entendeu claramente.
+Técnica de consolidação de aprendizado que consiste em explicar para outra pessoa o que você acredita ter entendido — e pedir para ser testado. O ato de articular a compreensão expõe os gaps de forma imediata e precisa.
 
-## Aplicação Prática
+Se você não consegue explicar claramente, você não entendeu claramente. Variante da Técnica de Feynman.
 
-Durante o onboarding num codebase novo: anote o que você acha que entendeu, explique para um colega, peça que ele corrija onde você está errado. Os pontos onde a explicação trava são exatamente os pontos onde o aprendizado ainda é superficial.
+## Aplicação Prática em Codebase
 
-Relacionado à Técnica de Feynman: explicar um conceito em linguagem simples até que ele faça sentido completo.
+Após explorar uma parte do sistema:
+1. Escolha um colega que conhece a codebase
+2. Explique como você acredita que aquele fluxo funciona
+3. Peça para ele testar sua compreensão com perguntas
+4. Onde você travar ou errar → estude aquele ponto especificamente
+5. Repita
+
+Os pontos onde a explicação trava são exatamente os pontos onde o aprendizado ainda é superficial.
+
+## Relação com [[wiki/concepts/pair-programming]]
+
+O pair programming cria o contexto natural para esse exercício: você observa, depois tenta explicar o que viu, e o colega corrige em tempo real.
+
+## Relação com [[wiki/concepts/aprendizado-por-impressoes]]
+
+Ensinar é uma das impressões mais densas — obriga síntese ativa em vez de reconhecimento passivo.
 
 ## Key Sources
 
-- [[sources/como-aprender-um-codebase-novo]]
+- [[wiki/sources/como-aprender-novas-codebases]]

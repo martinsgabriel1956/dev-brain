@@ -3,8 +3,8 @@ type: concept
 title: "Mutex"
 aliases: ["mutex", "mutual exclusion", "lock", "semáforo binário"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-06-26
+source_count: 3
 tags: [sistema-operacional, concorrência, sincronização, cs-fundamentals]
 skill: cs-fundamentals
 status: stable
@@ -62,3 +62,5 @@ Sem sincronização, duas threads modificando o mesmo estado simultaneamente pro
 ## Key Sources
 
 - [[sources/sistema-operacional-por-baixo-dos-panos]]
+- [[sources/como-sistemas-operacionais-funcionam]]
+- [[wiki/sources/10-conceitos-fundamentais-computacao]]

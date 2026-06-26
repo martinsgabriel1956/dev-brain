@@ -3,8 +3,8 @@ type: concept
 title: "ACID"
 aliases: ["atomicity", "consistency isolation durability", "acid properties"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-06-26
+source_count: 2
 tags: [banco-de-dados, acid, transactions, postgresql, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -30,3 +30,4 @@ A maioria dos bancos NoSQL oferece consistência eventual, não ACID completo. P
 ## Key Sources
 
 - [[sources/banco-de-dados]]
+- [[wiki/sources/10-conceitos-fundamentais-computacao]]

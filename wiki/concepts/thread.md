@@ -3,8 +3,8 @@ type: concept
 title: "Thread"
 aliases: ["thread", "linha de execução", "worker thread", "multithreading"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-06-26
+source_count: 3
 tags: [sistema-operacional, concorrência, thread, cs-fundamentals]
 skill: cs-fundamentals
 status: stable
@@ -61,3 +61,5 @@ Quando thread A espera thread B que espera thread A → ambas bloqueadas para se
 ## Key Sources
 
 - [[sources/sistema-operacional-por-baixo-dos-panos]]
+- [[sources/como-sistemas-operacionais-funcionam]]
+- [[wiki/sources/10-conceitos-fundamentais-computacao]]

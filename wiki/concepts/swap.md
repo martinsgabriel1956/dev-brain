@@ -3,8 +3,8 @@ type: concept
 title: "Swap"
 aliases: ["swap", "swap space", "paging to disk", "memória virtual em disco"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-06-26
+source_count: 2
 tags: [sistema-operacional, memória, performance, cs-fundamentals]
 skill: cs-fundamentals
 status: stable
@@ -60,3 +60,4 @@ Se o sistema começa a fazer swap constantemente (**thrashing**), a performance 
 ## Key Sources
 
 - [[sources/sistema-operacional-por-baixo-dos-panos]]
+- [[sources/como-sistemas-operacionais-funcionam]]

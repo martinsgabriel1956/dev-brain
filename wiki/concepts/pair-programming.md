@@ -1,13 +1,13 @@
 ---
 type: concept
 title: "Pair Programming"
-aliases: ["pairing", "programação em par", "pair up"]
+aliases: ["pairing", "programação em par", "pair up", "pair coding"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
-tags: [carreira, habitos, colaboração, aprendizado, programador-junior]
+date_updated: 2026-06-20
+source_count: 2
+tags: [carreira, habitos, colaboração, aprendizado, programador-junior, onboarding]
 skill: tech-mentor-leadership
-status: stub
+status: stable
 ---
 
 # Pair Programming
@@ -33,6 +33,21 @@ A barreira de pedir pairing aumenta no remoto — uma mensagem no Slack tem mais
 
 [[concepts/voluntariar-para-desconhecido]] — pairing é a forma de encarar o desafio sem ficar completamente sozinho.
 
+## Modo de aprendizado: observar antes de participar
+
+Quando ainda aprendendo a codebase, o papel mais valioso é o de observador ativo:
+- Veja como o dev que conhece a codebase **navega** (busca, jump-to-definition, grep)
+- Observe quais **perguntas** ele faz antes de codar
+- Note como ele **decide** onde fazer a mudança (qual arquivo, qual função)
+- Veja que **testes** ele escreve e com qual intenção
+
+Essa observação revela o modelo mental de quem já conhece o sistema mais rápido do que qualquer leitura de código.
+
+## Mentalidade correta
+
+> "O objetivo não é parecer inteligente — é ficar inteligente o mais rápido possível."
+
 ## Key Sources
 
 - [[sources/9-habitos-programador-junior]]
+- [[wiki/sources/como-aprender-novas-codebases]]

@@ -3,8 +3,8 @@ type: concept
 title: "Load Balancer"
 aliases: ["lb", "load balancing", "l4", "l7", "round robin"]
 date_created: 2026-04-23
-date_updated: 2026-05-05
-source_count: 2
+date_updated: 2026-06-26
+source_count: 3
 tags: [load-balancer, l4, l7, round-robin, health-check, alta-disponibilidade, infra]
 skill: tech-mentor-infra
 status: stub
@@ -26,7 +26,12 @@ Componente que distribui tráfego entre múltiplas instâncias de um serviço pa
 
 **Em microsserviços:** dois níveis — externo (L7 + SSL) + interno (service mesh/Envoy).
 
+## Pré-requisito
+
+Para distribuir livremente, os servidores precisam ser [[stateless]]. Com estado em memória, é necessário usar [[sticky-session]] — o que limita os benefícios de distribuição.
+
 ## Key Sources
 
 - [[sources/load-balancer]]
 - [[sources/clusters]]
+- [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]

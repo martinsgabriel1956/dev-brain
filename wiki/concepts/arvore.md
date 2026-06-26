@@ -3,8 +3,8 @@ type: concept
 title: "Árvore (Tree)"
 aliases: ["tree", "árvore binária", "binary tree", "BST", "B-tree"]
 date_created: 2026-06-01
-date_updated: 2026-06-01
-source_count: 1
+date_updated: 2026-06-26
+source_count: 2
 tags: [cs-fundamentals, estruturas-de-dados, arvore, tree, hierarquia, big-o]
 skill: cs-fundamentals
 status: draft
@@ -67,3 +67,4 @@ Entender árvores te ajuda a entender por que `SELECT` em coluna sem índice var
 ## Key sources
 
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
+- [[wiki/sources/10-conceitos-fundamentais-computacao]]

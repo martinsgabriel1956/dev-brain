@@ -1,41 +1,80 @@
-# 4 Hábitos Ruins de Programador (e Como Corrigir)
+# 4 Hábitos Ruins de Programador
 
-## Transcrição
+> Transcrição/adaptação de vídeo. Autor do artigo de referência: **Dano** — artigo: *"For Web Da Nec"*
 
-você não é um programador ruim você pode ter hábitos de um programador ruim e dentro desse vídeo a gente vai ver quatro desses hábitos para dar uma clareada o que pode estar acontecendo e delegados vão faltar é muito importante você aprender a diferença entre ser algo ou estará algo por exemplo quando as pessoas escrevem os comentários aqui dos vídeos algo do tipo foods mas eu não sou um bom programador eu fico louco porque é como se eu tivesse lido algo do tipo
-putz eu sou cansado é não
-você pode estar cansado assim como você pode estar num nível de programador de desenvolvimento ruim e eu não sei se vocês já perceberam mas parece que às vezes o cérebro se faz de burro se já notaram isso é muito massa o pedaço de carne mais sofisticado desse planeta inteiro se depara com duas escolhas uma que talvez vá gerar progresso mas desconforto garantido e outra que com certeza não vai gerar progresso mas pelo menos o conforto está garantido
-daí você pode estar se perguntando mas tá só para confirmar na primeira alternativa você não está garantido o progresso mas está garantido desconforto sim e é por isso que vídeos como a história dana eles vão gerar a mesma quantidade de desconforto e progresso e se você parar pra pensar se ele não tivesse gerado desconforto talvez ele não teria chance alguma de geral progresso que lhe gerou e se você ainda não viu esse vídeo eu coloquei o link na descrição mais cuidado porque a sensação é de levar um soco no estômago
-o artigo de hoje não vai gerar esse nível de desconforto mas ele vai gerar que ele a eu preciso parar de fazer essas coisas
-o artigo foi escrito por um autor chamado dano e se chama for web da nec e na ficha dela por eo link também está na descrição então vamos lá hábito ruim número 1 falar assim pra tudo assim como o autor do artigo colocou falar assim para todo mundo pelo menos tentar ajudá tudo é sim uma postura mega louvá agora a vida me ensinou rapidinho que uma promessa na verdade é uma dívida e você tem que tomar muito cuidado pra não sair assumindo dívidas de forma descontrolada porque o limite do
-o tempo vai estourar e os juros são extremamente caros e mesmo que você dê conta de falar assim pra todo mundo
-a sua performance como programador é a sua produtividade no geral vai lá para baixo de tantas vezes que você vai ser interrompido
-eu sempre fui uma pessoa que falava assim para todo mundo principalmente quando entrava em uma empresa nova é um comportamento super normal
-se você está entrando numa tribo nova em que as pessoas ainda te enxergam como um desconhecido que você não entrar
-servindo pra mostrar que você serve para alguma coisa eu não sei só que às vezes chega a um ponto que eu comecei a perceber que às vezes eu virava uma espécie de nicotina as pessoas elas ficavam viciadas em querer escutar a minha opinião sobre alguma coisa que elas vão fazer sobre algum risco que elas iam tomar por exemplo a pessoa escreveu um e-mail perigoso de se mandar só que ela pedir a minha opinião antes de mandar esse meio e chegou um ponto em que eu li o e mail
-mas eu falava pra pessoa que eu ia dar minha opinião só depois que ela tivesse mandado e meio e eu fazia isso por um motivo bem simples se o revisar seu e mail seu décimo minha opinião e talvez até alterar alguma coisa no e mail se esse meio dessa errado a gente ia dividir a culpa e se esse meio desse certo a gente é dividir a conquista e se você parar pra pensar
-vai ser muito mais poderoso para essa pessoa
-se eu assumir 100% do risco e 100% do retorno
-são dessas pequenas oportunidades e interações e são várias que você começa a destravar novos líderes dentro da sua empresa ao invés de ficar diluindo sempre a mesma pessoa você pode inclusive ter trabalhado em uma empresa em que ela só consegue rodar
-se uma pessoa é específico consegue destravar as outras pessoas é um saco e isso leva a outra condição que eu passava em que as pessoas elas vinham com dúvidas
-a procura pela resposta só colocar uma coisa estranha parecia que elas vinham com um cérebro desligado
-aí eu falava interessantíssimas problema e eu sei exatamente a resposta mas não vou falar
-você tem ferramentas o suficiente dentro da sua cabeça para descobrir a resposta também aí parece que o cérebro da pessoa ligava de volta era maior
-agora por favor
-percebam se um nível de senioridade da pessoa está compatível com o nível de risco que ela está assumindo não vai deixar uma pessoa que acabou de entrar na empresa mal sabe programar e ganhou acesso ao banco de dados de produção sabe por que te perguntar vou dar sequência aqui no banco de dados de produção para atualizar o nome de um cliente que você acha que entende o mínimo de sql sabe que o dia nessa firma e vai ser bem agitado no bom e no meio do artigo o autor destaca uma frase do paulo coelho que diz o seguinte quando disser sim pra outros certifique se de não estar dizendo não pra si mesmo e eu adicionaria ainda que se você tiver toda hora aniquilando o risco das outras pessoas
-você também vai estar inibindo o surgimento de novos líderes hábito ruim número dois à sua definição da palavra pronto possivelmente não é pronto na verdade programação tem uma característica interessante
-o ato de você digitar letras e números para formar um código é apenas uma das milhares tarefas que um provável preciso fazer e é visível a diferença no comportamento entre um programador que entendeu isso
-versos um programador que ainda não teve esse click se você acredita que pegar uma eixo programa de primeira e marca lá no giro está finalizado o seu trabalho está pronto é bem possível que esteja muito longe disso e eu falo isso porque você chegou a olhar para o seu código de forma crítica e se perguntar se algum outro desenvolvedor conseguir entender isso de forma fácil senão essa é a maior imagem que você tem pra refatorar um código e significa que realmente não está pronto
-o que você tinha entregado era apenas um rascunho e fora isso a alteração que você fez nem algum reflexo em documentação e aí quando você está na posição de fazer o envio de um código
-você acaba lendo o dia mas à procura de erros na estilização do código do que realmente o pessoal que importa que é a regra de negócio só que é mais difícil
-entendi e por último você acabou testando só o caminho feliz dessa implementação e é por isso que a gente tem o próximo item hábito ruim número 3 não testar o seu próprio código
-nessa parte do art
-o autor trata de um contexto em que tem um programador e um que há é um colo chuva disse que é uma pessoa especializada em testar com óleo
-independente se na sua empresa tem essa configuração ou não você testar somente o caminho feliz de um código que você acabou de fazer
-chega a ser tão besta quanto você me falar que você concorda com a sua própria opinião você precisa aprender a escrever testes automatizados e eu sugiro que você comece o quanto antes para ganhar prática e ganhar velocidade inclusive chegar ao ponto de um dia vocês e enganado pelo seu próprio teste é de doer marcelina então garanta o comportamento das coisas funcionando e garanta também quando elas deveriam retornar mensagens de erro hábito ruim número 4 fazer convites gigantescos essa é fácil qualquer sensação que você sente quando precisa fazer o envio de um convite um povo request gigantesco é um saco
-você não sabe quando é que aquilo vai terminar
-e aí não bate nem a vontade de começar o que eu quero dizer com isso é que é muito comum você fazer um convite que quebra um teste e ela me seguindo você faz um outro convite que conserva esse teste
-o que eu sugiro você vai fazer daqui pra frente é no mesmo comitê fazer a alteração do código ea alteração que faz passar o teste transforme ele numa unidade de alteração funcional e não num diário você vai perceber como que cada comitiva vai se transformar numa coisa mais valiosa mas bem modelado e você está percebendo que tudo isso aqui dá relacionadas é um programador melhor com menos hábitos ruins e como conseqüência mais rápidos bons super conectado a isso tem um vídeo no canal que vai mostrar para você e para o seu chefe porque bons desenvolvedores deveriam ser muito bem remunerados é um vídeo que bombom aqui no canal e se você procura ser mais valorizado na nossa área é mandatório que você assista ele do início ao fim
-esse vídeo se chama checklist do programador sênior e para assistir ele é só clicar aqui
-fechada
-valeu
+---
+
+## Introdução
+
+Você não é um programador ruim — você pode **ter hábitos** de um programador ruim. Há uma diferença fundamental entre *ser* algo e *estar* algo. Quando alguém escreve "eu não sou um bom programador", o problema está na formulação: você pode estar num nível ruim de desenvolvimento, assim como pode estar cansado — não *ser* cansado.
+
+O cérebro, o pedaço de carne mais sofisticado do planeta, frequentemente se depara com duas escolhas:
+
+- Uma que pode gerar progresso, mas com desconforto garantido.
+- Outra que não gera progresso, mas garante conforto.
+
+---
+
+## Hábito Ruim #1 — Falar "Sim" para Tudo
+
+Tentar ajudar a todos é uma postura louvável, mas uma promessa é uma dívida. Assumir dívidas de forma descontrolada tem um custo alto: o tempo estoura e os juros são caríssimos. Mesmo que você consiga dar conta, sua performance e produtividade como programador caem — você é constantemente interrompido.
+
+Esse comportamento é comum ao entrar numa empresa nova: querer mostrar que você "serve para alguma coisa". O problema aparece quando você vira uma espécie de dependência — as pessoas ficam viciadas em sua opinião antes de qualquer decisão ou risco.
+
+**Exemplo prático:** Se alguém pede para você revisar um e-mail arriscado antes de enviá-lo, ao revisar você divide a culpa se der errado e divide o crédito se der certo. Mas se a pessoa assumir 100% do risco e 100% do retorno, ela cresce muito mais.
+
+Ao aniquilar o risco das outras pessoas o tempo todo, você também inibe o surgimento de novos líderes.
+
+> *"Quando disser sim para outros, certifique-se de não estar dizendo não para si mesmo."* — Paulo Coelho
+
+**Atenção:** calibre o nível de senioridade com o nível de risco. Não deixe alguém inexperiente tomar decisões críticas sem supervisão (ex: queries em banco de produção sem WHERE).
+
+---
+
+## Hábito Ruim #2 — Sua Definição de "Pronto" Não É Pronto
+
+Programação tem uma característica importante: digitar código é apenas uma das milhares de tarefas de um programador. A diferença entre quem entendeu isso e quem não entendeu é visível.
+
+Acreditar que rodar o código e marcar como "finalizado" é estar pronto é, provavelmente, estar muito longe disso. Perguntas que indicam que algo realmente não está pronto:
+
+- Você olhou para o código de forma crítica?
+- Outro desenvolvedor conseguiria entender isso facilmente?
+- Você refatorou o que estava confuso?
+- A alteração tem reflexo na documentação?
+- Na revisão, você focou em regras de negócio ou só em estilo?
+- Você testou além do caminho feliz?
+
+O que foi entregado era um rascunho, não a entrega final.
+
+---
+
+## Hábito Ruim #3 — Não Testar o Próprio Código
+
+Testar apenas o caminho feliz de uma implementação é tão ingênuo quanto concordar com a própria opinião sem questionamento.
+
+- Escreva testes automatizados — comece o quanto antes para ganhar prática e velocidade.
+- Garanta o comportamento das coisas funcionando **e** garanta o comportamento quando elas deveriam retornar erros.
+- Ser enganado pelo próprio teste dói, mas é um aprendizado valioso.
+
+Mesmo que sua empresa tenha uma pessoa dedicada a QA, isso não transfere a responsabilidade de você testar o que escreve.
+
+---
+
+## Hábito Ruim #4 — Fazer Commits/PRs Gigantescos
+
+A sensação ao revisar um pull request gigantesco é ruim: você não sabe quando vai terminar, e nem dá vontade de começar.
+
+Um padrão comum e problemático:
+
+1. Você faz um commit que quebra um teste.
+2. Num commit seguinte, você corrige o teste.
+
+**O que fazer:** No mesmo commit, faça a alteração do código **e** a alteração que faz o teste passar. Transforme cada commit numa unidade de alteração funcional — não num diário de mudanças.
+
+Commits bem modelados são mais valiosos, mais fáceis de revisar e mais fáceis de reverter.
+
+---
+
+## Síntese
+
+Todos esses hábitos estão conectados: corrigi-los torna você um programador melhor, com menos fricção, e como consequência — mais rápido e mais valioso.

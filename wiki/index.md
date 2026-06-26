@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-06-10
+date_updated: 2026-06-26
 ---
 
 # Wiki Index
@@ -68,8 +68,29 @@ date_updated: 2026-06-10
 | [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]] | Progressão incremental de aprendizado em 3 estágios; over-engineering ("verde neném"); otimização prematura é a raiz de todo mal (Knuth) |
 | [[wiki/sources/principio-da-inversao-programador]] | 7 conselhos do pior programador invertidos via Munger/Jacobi — revela o que um bom programador deve ser; geohot: não há substituto para construir |
 | [[wiki/sources/design-first-vs-code-first-referencias]] | Design First vs Code First, Design Engineer como cargo do meio, fake delay, Linear como referência máxima — design é interação, não só visual |
+| [[wiki/sources/como-aprender-novas-codebases]] | Método iterativo de 10 etapas para absorver qualquer codebase — leitura como primer, exploração com intenção, tarefas core, pair programming e ciclo de revisita |
+| [[wiki/sources/habitos-ruins-de-programador]] | 4 hábitos ruins que derrubam qualidade e produtividade — dizer sim para tudo, definição fraca de pronto, não testar o próprio código, PRs gigantescos |
+| [[wiki/sources/como-sistemas-operacionais-funcionam]] | Do clique duplo à primeira tela: processos, threads, escalonador, memória virtual, sistema de arquivos e syscalls — tudo em milissegundos |
+| [[wiki/sources/como-arquitetar-com-cache-e-redis]] | Redis como solução de cache: o que é, pontos fortes e fracos, e três padrões arquiteturais — Feature Flags, Cache-Aside e CQRS com Redis como read layer |
+| [[wiki/sources/10-conceitos-fundamentais-computacao]] | Os 10 conceitos base de toda computação — do binário à abstração; a fundação que não muda mesmo quando linguagens e frameworks mudam |
+| [[wiki/sources/escalabilidade-vertical-horizontal-system-design]] | Vertical vs horizontal, Load Balancer, stateless, CDN, auto scaling, sharding, replicação — quando e como escalar cada camada |
 
 ## Concepts
+
+### Onboarding & Aprendizado de Codebase
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/onboarding-de-codebase]] | Método iterativo para absorver qualquer codebase — 10 etapas que se aprofundam a cada volta |
+| [[wiki/concepts/exploracao-com-intencao]] | Seguir o fio de uma feature real no código em vez de navegar aleatoriamente |
+| [[wiki/concepts/modelo-mental-de-fluxo-de-dados]] | Representação interna de como dados fluem na codebase — o objetivo final do onboarding |
+| [[wiki/concepts/aprendizado-por-impressoes]] | Cada exposição ao mesmo conceito aprofunda a compreensão — spaced exposure em codebases |
+| [[wiki/concepts/pair-programming]] | Programação em par como acelerador de aprendizado — observe antes de participar |
+| [[wiki/concepts/aprender-ensinando]] | Explicar para ser testado revela exatamente onde estão os gaps de compreensão |
+| [[wiki/concepts/good-first-issue]] | Tarefa de entrada que toca o core do sistema — contribui e aprende ao mesmo tempo |
+| [[wiki/concepts/entendimento-de-dominio]] | Saber para quê e para quem o software existe — fundação de decisões arquiteturais boas |
+| [[wiki/concepts/testes-como-aprendizado]] | Escrever testes força compreensão do comportamento esperado — valida entendimento com feedback |
+| [[wiki/concepts/ciclo-de-revisita]] | Repetir as etapas do onboarding com profundidade crescente a cada volta |
 
 ### Carreira & Soft Skills
 
@@ -216,6 +237,37 @@ date_updated: 2026-06-10
 | [[wiki/concepts/fine-tuning]] | Continuar treinamento num dataset específico de tarefa — alternativa mais custosa ao ICL |
 | [[wiki/concepts/emergent-ability]] | Capacidade que não existe em modelos pequenos e aparece abruptamente acima de certo limiar de escala — CoT é o exemplo canônico |
 
+### Fundamentos de Sistemas Operacionais
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/processo]] | Instância em execução de um programa — PID, ciclo de vida (new→ready→running→waiting→terminated), memória isolada |
+| [[wiki/concepts/thread]] | Unidade de execução dentro de um processo — compartilha memória, mais barata que processo, risco de race condition |
+| [[wiki/concepts/deadlock]] | Bloqueio mútuo eterno — duas threads esperam uma pela outra; prevenção via ordenação de locks ou timeout |
+| [[wiki/concepts/mutex]] | Chave de porta para seções críticas — garante que só uma thread acessa o recurso compartilhado por vez |
+| [[wiki/concepts/escalonador]] | Árbitro do processador — Round-Robin, filas de prioridade, aging; Linux usa CFS para processos normais |
+| [[wiki/concepts/context-switch]] | Troca de processo no processador — salva/restaura estado completo; TLB flush é o custo extra entre processos |
+| [[wiki/concepts/interrupcao-de-hardware]] | Sinal que para o processador e transfere controle ao SO — timer, teclado, disco; base do escalonador preemptivo |
+| [[wiki/concepts/memoria-virtual]] | Cada processo crê ter toda a memória — page table traduz virtual→físico; page fault é o custo do miss |
+| [[wiki/concepts/swap]] | Extensão da RAM no disco — páginas frias movidas para liberar RAM; uso excessivo causa thrashing |
+| [[wiki/concepts/sistema-de-arquivos]] | Abstração sobre blocos do disco — nomes, hierarquia, tabela de blocos; deletar só remove a referência |
+| [[wiki/concepts/syscall]] | Única ponte autorizada user mode → kernel — open/read/write/fork; custo de ~100–300ns por context switch |
+| [[wiki/concepts/kernel]] | Núcleo do SO com acesso total ao hardware — kernel mode vs user mode; kernel panic é fatal porque não há fundação embaixo |
+
+### Fundamentos de CS
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/logica-booleana]] | AND, OR, NOT — as três operações que constroem qualquer circuito a partir de 0s e 1s |
+| [[wiki/concepts/big-o]] | Notação que descreve como o tempo cresce com os dados — O(log n) com 1B elementos = 30 comparações |
+| [[wiki/concepts/recursao]] | Função que chama ela mesma — caso base (para) + caso recursivo (divide) |
+| [[wiki/concepts/lista-encadeada]] | Nós encadeados por ponteiros — inserção O(1) no meio, acesso O(n) por posição |
+| [[wiki/concepts/concorrencia]] | Gerenciar múltiplas tarefas — race condition é o risco central quando threads compartilham estado |
+| [[wiki/concepts/paralelismo]] | Executar múltiplas tarefas ao mesmo tempo — requer múltiplos cores; oposto de concorrência |
+| [[wiki/concepts/compilador]] | Traduz código-fonte em código de máquina via lexer → parser → AST → otimizador |
+| [[wiki/concepts/protocolo-de-rede]] | Regras de comunicação em camadas — HTTP diz o quê, TCP garante entrega, IP define rota |
+| [[wiki/concepts/criptografia]] | Hashing irreversível, simétrica (mesma chave) e assimétrica (par público/privado) — base do HTTPS |
+
 ### Fundamentos de Lógica e Programação
 
 | Página | Hook |
@@ -266,6 +318,33 @@ date_updated: 2026-06-10
 | [[wiki/concepts/tutorial-hell]] | Espiral de consumo passivo de conteúdo — quanto mais você estuda, mais descobre que precisa estudar; saída: construir algo |
 | [[wiki/concepts/aprendizado-deliberado]] | Prática com intenção, feedback e dificuldade progressiva — antídoto ao tutorial hell |
 
+### Escalabilidade & System Design
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/escalabilidade-vertical]] | Scale up — simples mas com teto físico e single point of failure |
+| [[wiki/concepts/escalabilidade-horizontal]] | Scale out — sem teto teórico, requer stateless e load balancer |
+| [[wiki/concepts/stateless]] | Servidor sem estado — pré-requisito da escalabilidade horizontal |
+| [[wiki/concepts/sticky-session]] | Afinidade de sessão — solução paliativa que adia o problema real |
+| [[wiki/concepts/cdn]] | Rede de edge servers geográficos — cache global da camada web |
+| [[wiki/concepts/auto-scaling]] | Adição/remoção automática de instâncias por regras de métricas |
+| [[wiki/concepts/sharding]] | Divisão de banco em múltiplos shards — escala writes e armazenamento |
+| [[wiki/concepts/replicacao-de-banco]] | Cópias do banco para leitura — escala reads e aumenta disponibilidade |
+| [[wiki/concepts/gargalo]] | Ponto mais lento da cadeia — identificar antes de escalar qualquer coisa |
+| [[wiki/concepts/cap-theorem]] | Consistência vs Disponibilidade vs Partição — o trade-off central de sistemas distribuídos |
+
+### Cache & Redis
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/redis]] | Banco NoSQL in-memory chave-valor — sub-milissegundo, single CPU, escala horizontal via cluster |
+| [[wiki/concepts/cache]] | Guardar dados em memória para resposta rápida — hierarquia L1→L4, padrões e quando não usar |
+| [[wiki/concepts/cache-aside]] | Lazy Loading: tenta cache, em miss vai ao banco com TTL — análogo ao padrão Flyweight |
+| [[wiki/concepts/feature-flag]] | Interruptores de funcionalidade em runtime — Redis é ideal pela latência mínima no fluxo de execução |
+| [[wiki/concepts/banco-in-memory]] | Armazenamento primário em RAM — Redis, persistência RDB/AOF opcional |
+| [[wiki/concepts/escalabilidade-horizontal]] | Mais máquinas ao invés de mais recursos na mesma — NoSQL e Redis cluster como caso principal |
+| [[wiki/concepts/tradeoff-de-cache]] | Cache sempre adiciona complexidade — invalidação, sincronismo e consistência eventual como custos |
+
 ### Arquitetura Backend & Event-Driven
 
 | Página | Hook |
@@ -289,6 +368,10 @@ date_updated: 2026-06-10
 | [[wiki/concepts/complexidade-como-estrategia]] | Três estágios: inconsciente → aparência → sabotagem — criar código incompreensível para se tornar insubstituível |
 | [[wiki/concepts/ciclo-da-desgraca-software]] | Espiral reescrita→mesmo problema→dois sistemas; alternativa: refatoração incremental com strangler fig |
 | [[wiki/concepts/pitfalls-de-linguagem]] | Armadilhas que existem na linguagem mas não devem ser usadas — descobertas pelo uso, não pelo estudo teórico |
+| [[wiki/concepts/dizer-sim-para-tudo]] | Dizer sim para tudo fragmenta foco e inibe surgimento de líderes — promessa é dívida, tempo estoura |
+| [[wiki/concepts/definicao-de-pronto]] | Código que só funciona não está pronto — legível + testado + documentado + revisado por regra de negócio |
+| [[wiki/concepts/testar-proprio-codigo]] | Testar só o caminho feliz é concordar com a própria opinião — testes automatizados cobrem erro e happy path |
+| [[wiki/concepts/atomic-commits]] | Commit atômico = alteração + teste que a valida juntos — unidade funcional, não diário de mudanças |
 
 ### Segurança de APIs & Arquitetura
 

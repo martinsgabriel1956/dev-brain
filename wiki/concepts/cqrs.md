@@ -3,8 +3,8 @@ type: concept
 title: "CQRS — Command Query Responsibility Segregation"
 aliases: ["command query responsibility segregation", "cqrs pattern"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 1
+date_updated: 2026-06-26
+source_count: 2
 tags: [cqrs, arquitetura, event-sourcing, ddd, sistemas-distribuidos]
 skill: tech-mentor-backend
 status: draft
@@ -47,6 +47,21 @@ Em prática: events persistidos, projeções (read models) construídas por CQRS
 
 O [[nubank]] utiliza CQRS em conjunto com [[event-sourcing]] e [[datomic]]. A separação permite que o estado atual (saldo, status) seja reconstruído a partir do event log sem poluir o modelo de domínio.
 
+## Redis como Read Layer
+
+[[redis]] é uma escolha comum como camada de leitura em CQRS: gravações vão ao SQL (fonte de verdade), leituras vão ao Redis (projeção otimizada). Um batch ou trigger sincroniza SQL → Redis.
+
+```
+[Domínio]
+  ├── Write → [SQL]       ← fonte de verdade
+  └── Read  → [Redis]     ← projeção rápida
+                  ↑
+          [Batch / Trigger de sync]
+```
+
+Esse padrão resolve o trade-off leitura/escrita sem abrir mão de consistência nas escritas.
+
 ## Key Sources
 
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
+- [[wiki/sources/como-arquitetar-com-cache-e-redis]]

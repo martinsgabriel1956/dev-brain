@@ -3,8 +3,8 @@ type: concept
 title: "Hashmap"
 aliases: ["hash map", "hash table", "dicionário", "mapa", "dictionary"]
 date_created: 2026-06-01
-date_updated: 2026-06-01
-source_count: 1
+date_updated: 2026-06-26
+source_count: 2
 tags: [cs-fundamentals, estruturas-de-dados, hashmap, performance, big-o]
 skill: cs-fundamentals
 status: draft
@@ -71,3 +71,4 @@ Um dicionário físico. Você não lê página por página — vai direto à let
 ## Key sources
 
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
+- [[wiki/sources/10-conceitos-fundamentais-computacao]]

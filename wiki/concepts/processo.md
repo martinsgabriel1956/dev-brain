@@ -3,8 +3,8 @@ type: concept
 title: "Processo"
 aliases: ["process", "PID", "process ID", "instância de programa"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-06-26
+source_count: 2
 tags: [sistema-operacional, processo, concorrência, cs-fundamentals]
 skill: cs-fundamentals
 status: stable
@@ -61,3 +61,4 @@ Ver [[concepts/thread]] para a comparação completa.
 ## Key Sources
 
 - [[sources/sistema-operacional-por-baixo-dos-panos]]
+- [[sources/como-sistemas-operacionais-funcionam]]

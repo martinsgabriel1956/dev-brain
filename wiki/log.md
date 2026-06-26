@@ -2,6 +2,151 @@
 
 ---
 
+## [2026-06-26] ingest | 10 Conceitos Fundamentais da Computação
+
+**Source:** [[wiki/sources/10-conceitos-fundamentais-computacao]]
+**Skill:** `cs-fundamentals` | Referências: `algorithms-complexity.md`, `data-structures.md`, `compiler-fundamentals.md`, `network-fundamentals.md`, `cryptography-applied.md`, `os-fundamentals.md`, `database-theory.md`
+
+**Páginas criadas:**
+- `wiki/sources/10-conceitos-fundamentais-computacao.md`
+- `wiki/concepts/logica-booleana.md`
+- `wiki/concepts/big-o.md`
+- `wiki/concepts/recursao.md`
+- `wiki/concepts/concorrencia.md`
+- `wiki/concepts/paralelismo.md`
+- `wiki/concepts/compilador.md`
+- `wiki/concepts/protocolo-de-rede.md`
+- `wiki/concepts/criptografia.md`
+- `wiki/concepts/lista-encadeada.md`
+
+**Páginas atualizadas (backlink + source_count):**
+- `array.md`, `hashmap.md`, `arvore.md`, `thread.md`, `deadlock.md`, `mutex.md`, `abstracao.md`, `acid.md`
+
+**Notas:** Fonte didática sem referências acadêmicas formais. Cobre os 10 conceitos base da CS de forma superficial mas precisa — bom material de ancoragem para tópicos já existentes no wiki. Abstração como meta-conceito unificador é o insight central.
+
+---
+
+## [2026-06-26] ingest | Escalabilidade: Vertical vs Horizontal — System Design
+
+**Source:** [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
+**Skill:** `tech-mentor-system-design` | Referência: `references/system-design.md`
+
+**Páginas criadas:**
+- `wiki/sources/escalabilidade-vertical-horizontal-system-design.md`
+- `wiki/concepts/escalabilidade-vertical.md`
+- `wiki/concepts/stateless.md`
+- `wiki/concepts/sticky-session.md`
+- `wiki/concepts/cdn.md`
+- `wiki/concepts/auto-scaling.md`
+- `wiki/concepts/sharding.md`
+- `wiki/concepts/replicacao-de-banco.md`
+- `wiki/concepts/gargalo.md`
+- `wiki/concepts/cap-theorem.md` (stub — necessita fonte dedicada)
+
+**Páginas atualizadas (backlink + source_count):**
+- `escalabilidade-horizontal.md`, `load-balancer.md`, `cache.md`
+
+**Notas:** Fonte didática introdutória de System Design — boa para ancoragem de conceitos de escalabilidade. Sharding e CAP Theorem foram criados como stubs; o vídeo os menciona mas não os aprofunda. Open question: fonte dedicada de CAP/PACELC está em falta no wiki.
+
+---
+
+## [2026-06-26] ingest | Como Arquitetar com Cache e Redis
+
+**Source:** [[wiki/sources/como-arquitetar-com-cache-e-redis]]
+**Skill:** `tech-mentor-backend` | Referência: `references/redis-advanced.md`
+
+**Páginas criadas:**
+- `wiki/sources/como-arquitetar-com-cache-e-redis.md`
+- `wiki/concepts/redis.md`
+- `wiki/concepts/cache.md`
+- `wiki/concepts/cache-aside.md`
+- `wiki/concepts/feature-flag.md`
+- `wiki/concepts/banco-in-memory.md`
+- `wiki/concepts/escalabilidade-horizontal.md`
+- `wiki/concepts/tradeoff-de-cache.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/cqrs.md` — seção "Redis como Read Layer" adicionada; source_count 1→2
+- `wiki/concepts/nosql.md` — seção de escalabilidade horizontal adicionada; backlink para nova source; source_count 1→2
+
+**Index:** source adicionada + nova seção "Cache & Redis" com 7 conceitos
+
+**Notas:** Transcrição de vídeo em português sobre arquitetura com Redis. Conteúdo cobre fundamentos (NoSQL vs SQL, in-memory, chave-valor), pontos fortes/fracos e três arquiteturas práticas: Feature Flags com batch, Cache-Aside/Flyweight e CQRS com Redis como read layer. Referência `redis-advanced.md` confirmou e enriqueceu os padrões com exemplos de cache stampede, TTL design, write-through e write-behind — esses padrões avançados não estão na fonte, mas foram registrados nas páginas de conceito. **Questões em aberto:** (1) A fonte afirma "segurança limitada" do Redis, mas o Redis 6+ introduziu ACLs granulares — afirmação pode estar desatualizada; (2) A fonte não menciona Memcached como alternativa; (3) A fonte não distingue Cache-Aside do padrão Read-Through — são diferentes mas a fonte usa "Flyweight" como analogia para os dois.
+
+---
+
+## [2026-06-26] ingest | Como Sistemas Operacionais Funcionam por Baixo dos Panos
+
+**Source:** [[wiki/sources/como-sistemas-operacionais-funcionam]]
+**Skill:** `cs-fundamentals` | Referência: `references/os-fundamentals.md`
+
+**Páginas criadas:**
+- `wiki/sources/como-sistemas-operacionais-funcionam.md`
+
+**Páginas atualizadas (backlink + source_count 1→2):**
+- `wiki/concepts/processo.md`
+- `wiki/concepts/thread.md`
+- `wiki/concepts/deadlock.md`
+- `wiki/concepts/mutex.md`
+- `wiki/concepts/escalonador.md`
+- `wiki/concepts/context-switch.md`
+- `wiki/concepts/interrupcao-de-hardware.md`
+- `wiki/concepts/memoria-virtual.md`
+- `wiki/concepts/swap.md`
+- `wiki/concepts/sistema-de-arquivos.md`
+- `wiki/concepts/syscall.md`
+- `wiki/concepts/kernel.md`
+
+**Index:** source adicionada + nova seção "Fundamentos de Sistemas Operacionais" com 12 conceitos
+
+**Notas:** Transcrição de vídeo em português sobre internals de SO. Os 12 conceitos já existiam no wiki desde 2026-04-22 com referência a `[[sources/sistema-operacional-por-baixo-dos-panos]]` — source que nunca foi criada (link quebrado pré-existente, não corrigido neste ingest). Esta ingest cria a source correta. Questões em aberto: overhead real de context switch com Spectre/Meltdown mitigations; como runtimes como Go e asyncio agendam goroutines/coroutines sobre threads do kernel; o vídeo não cobre io_uring (Linux 5.1+).
+
+---
+
+## [2026-06-20] ingest | 4 Hábitos Ruins de Programador
+
+**Source:** [[wiki/sources/habitos-ruins-de-programador]]
+**Skill:** `tech-mentor-leadership` | Referência: `references/software-craftsmanship.md`
+
+**Páginas criadas (sessão anterior — 2026-04-22, sem registro):**
+- `wiki/sources/habitos-ruins-de-programador.md`
+- `wiki/concepts/dizer-sim-para-tudo.md`
+- `wiki/concepts/definicao-de-pronto.md`
+- `wiki/concepts/testar-proprio-codigo.md`
+- `wiki/concepts/atomic-commits.md`
+
+**Ações desta sessão:**
+- `wiki/index.md` — source e 4 conceitos adicionados (seções Sources e Boas Práticas de Engenharia)
+- `wiki/log.md` — ingest registrado retroativamente
+
+**Notas:** Transcrição de vídeo comentando artigo "For Web Developers" de "Dano". Framing central: você não *é* um programador ruim, você pode *estar* com hábitos ruins — identidade vs. comportamento. Os 4 hábitos cobrem dimensões complementares: gestão de compromissos (dizer sim para tudo), qualidade de entrega (definição de pronto), robustez de código (testar além do happy path) e colaboração via git (commits atômicos). Questão em aberto: qual tamanho de PR é revisável numa sessão de foco? Como dizer não em culturas de "sempre ajudar"?
+
+---
+
+## [2026-06-20] ingest | Como Aprender Novas Codebases
+
+**Source:** [[wiki/sources/como-aprender-novas-codebases]]
+**Skill:** `tech-mentor-leadership` | Referência: `references/onboarding-tecnico.md`
+
+**Páginas criadas:**
+- `wiki/sources/como-aprender-novas-codebases.md`
+- `wiki/concepts/onboarding-de-codebase.md`
+- `wiki/concepts/modelo-mental-de-fluxo-de-dados.md`
+- `wiki/concepts/good-first-issue.md`
+- `wiki/concepts/entendimento-de-dominio.md`
+- `wiki/concepts/testes-como-aprendizado.md`
+- `wiki/concepts/ciclo-de-revisita.md`
+
+**Páginas atualizadas (stubs → stable):**
+- `wiki/concepts/exploracao-com-intencao.md`
+- `wiki/concepts/aprendizado-por-impressoes.md`
+- `wiki/concepts/pair-programming.md`
+- `wiki/concepts/aprender-ensinando.md`
+
+**Notas:** Transcrição de vídeo em inglês traduzida para PT-BR. Método central: ciclo iterativo de 10 etapas onde a compreensão aprofunda a cada volta. Alinha bem com material já no wiki sobre aprendizado (pratica-deliberada, esforco-produtivo, aprendizado-continuo). A distinção entre exploração com intenção e browse aleatório é o claim mais acionável. Questões abertas: tempo médio para atingir o "ver o código ao usar o app"; como adaptar para solo devs sem pair programming.
+
+---
+
 ## [2026-06-11] ingest | Design First vs Code First — Abordagens e Referências de Design
 
 **Source:** [[wiki/sources/design-first-vs-code-first-referencias]]

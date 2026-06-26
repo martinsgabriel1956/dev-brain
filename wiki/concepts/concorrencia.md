@@ -1,0 +1,71 @@
+---
+type: concept
+title: "Concorrência"
+aliases: ["concurrency", "execução concorrente", "multitarefa"]
+date_created: 2026-06-26
+date_updated: 2026-06-26
+source_count: 1
+tags: [cs-fundamentals, concorrencia, paralelismo, race-condition, threads]
+skill: cs-fundamentals
+status: draft
+---
+
+# Concorrência
+
+**Gerenciar várias tarefas ao mesmo tempo** — não necessariamente executando-as simultaneamente. Um único processador pode ser concorrente alternando entre tarefas rapidamente (interleaving), dando a ilusão de simultaneidade.
+
+## Concorrência ≠ Paralelismo
+
+| | Concorrência | [[paralelismo]] |
+|---|---|---|
+| **Definição** | Lida com múltiplas tarefas | Executa múltiplas tarefas ao mesmo tempo |
+| **Processadores** | 1 suficiente | Exige múltiplos cores |
+| **Analogia** | Cozinheiro sozinho alternando entre tarefas | Dois cozinheiros cozinhando ao mesmo tempo |
+| **Exemplo** | Event loop do Node.js | SIMD, GPU, multicore |
+
+## O problema central: Race Condition
+
+Quando duas [[thread]]s acessam o mesmo dado compartilhado sem coordenação, o resultado depende da **ordem de execução** — que é imprevisível.
+
+### Exemplo clássico — saldo bancário
+
+```
+Thread A lê saldo: R$ 100
+Thread B lê saldo: R$ 100
+Thread A subtrai 50, grava: R$ 50
+Thread B subtrai 50, grava: R$ 50  ← sobrescreve Thread A
+Resultado: R$ 50 (deveria ser R$ 0)
+```
+
+Dinheiro foi criado do nada — a race condition corrompeu o estado.
+
+## Mecanismos de controle
+
+| Mecanismo | O que faz |
+|---|---|
+| [[mutex]] | Garante acesso exclusivo a uma seção crítica |
+| Semáforo | Controla quantas threads acessam simultaneamente |
+| Lock | Variante de mutex com escopo mais explícito |
+| Operação atômica | Leitura + escrita indivisível no nível de hardware |
+
+## O risco de coordenação: [[deadlock]]
+
+Se Thread A espera Thread B liberar o recurso X, e Thread B espera Thread A liberar o recurso Y — nenhuma avança para sempre.
+
+## Concorrência em diferentes modelos
+
+- **Threads** (C, Java, Python GIL) — memória compartilhada, necessita locks
+- **Event Loop** (Node.js, JavaScript) — single-thread concorrente via callbacks/Promises; sem race conditions mas também sem paralelismo real de CPU
+- **Actor Model** (Erlang, Akka) — atores comunicam via mensagens, sem memória compartilhada
+- **CSP** (Go channels) — goroutines se comunicam por canais tipados
+
+## Relação com outros conceitos
+
+- [[paralelismo]] — a distinção é fundamental; confundir os dois leva a soluções erradas
+- [[thread]] — a unidade de execução que torna concorrência possível
+- [[deadlock]] — o pior caso quando coordenação falha
+- [[mutex]] — o mecanismo mais comum de proteção
+
+## Key sources
+
+- [[wiki/sources/10-conceitos-fundamentais-computacao]]

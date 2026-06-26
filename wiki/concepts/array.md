@@ -3,8 +3,8 @@ type: concept
 title: "Array"
 aliases: ["vetor", "lista indexada", "indexed array"]
 date_created: 2026-06-01
-date_updated: 2026-06-01
-source_count: 1
+date_updated: 2026-06-26
+source_count: 2
 tags: [cs-fundamentals, estruturas-de-dados, array, performance, big-o]
 skill: cs-fundamentals
 status: draft
@@ -61,3 +61,4 @@ Uma fila de pessoas num show. Você sabe que a 10ª pessoa está na posição 9.
 ## Key sources
 
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
+- [[wiki/sources/10-conceitos-fundamentais-computacao]]

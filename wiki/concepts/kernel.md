@@ -3,8 +3,8 @@ type: concept
 title: "Kernel"
 aliases: ["kernel", "núcleo do SO", "kernel mode", "ring 0"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-06-26
+source_count: 2
 tags: [sistema-operacional, kernel, cs-fundamentals]
 skill: cs-fundamentals
 status: stable
@@ -68,3 +68,4 @@ Linux é monolítico mas suporta **módulos de kernel** carregados dinamicamente
 ## Key Sources
 
 - [[sources/sistema-operacional-por-baixo-dos-panos]]
+- [[sources/como-sistemas-operacionais-funcionam]]

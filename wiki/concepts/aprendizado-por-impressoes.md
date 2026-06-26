@@ -1,25 +1,37 @@
 ---
 type: concept
 title: "Aprendizado por Impressões"
-aliases: ["impressões repetidas", "first impression learning", "spaced exposure"]
+aliases: ["impressões repetidas", "first impression learning", "spaced exposure", "múltiplas exposições"]
 date_created: 2026-04-29
-date_updated: 2026-04-29
-source_count: 1
+date_updated: 2026-06-20
+source_count: 2
 tags: [aprendizado, cognição, onboarding, codebase, spaced-repetition]
 skill: tech-mentor-leadership
-status: stub
+status: stable
 ---
 
-## TL;DR
+# Aprendizado por Impressões
 
-Cada exposição ao mesmo conceito ou codebase gera uma "impressão". A primeira é superficial e incompleta — mas planta uma semente. A segunda gera reconhecimento. A terceira consolida. Quanto mais impressões, mais profundo o aprendizado.
+Princípio de que cada exposição ao mesmo conceito ou codebase aprofunda a compreensão de forma cumulativa. A primeira leitura da documentação não ensina; prepara o terreno para que as leituras seguintes façam sentido mais rápido.
 
-## Aplicação em Codebases
+## A analogia do capítulo antes da aula
 
-Ler a documentação sem entender tudo ainda vale a pena. Quando o código apresentar o mesmo conceito, o reconhecimento acontece — e as perguntas ficam mais inteligentes. Repetir o ciclo (docs → uso → código → tarefas → docs de novo) aprofunda progressivamente.
+Ler o capítulo antes da aula não garante compreensão imediata. Mas quando o professor explica o conteúdo, o aluno tem "aha moments" — reconhece conceitos que leu, faz perguntas mais inteligentes, e o aprendizado na terceira exposição (o exercício/tarefa) é mais profundo.
+
+Aplicado a codebases:
+- **1ª impressão:** ler a documentação → familiaridade vaga, sem compreensão
+- **2ª impressão:** usar o app + explorar o código → contexto começa a conectar
+- **3ª impressão:** completar uma tarefa real → modelo mental começa a se formar
+- **N-ésima impressão:** ciclo repetido → compreensão arquitetural profunda
 
 Análogo à spaced repetition usada em flashcards, mas aplicado ao aprendizado de sistemas complexos.
 
+## Relação com outros conceitos
+
+- [[wiki/concepts/pratica-deliberada]] — as impressões precisam ser ativas, não passivas
+- [[wiki/concepts/aprendizado-por-exposicao]] — variante focada em copiar código; aqui o foco é em exposições variadas ao mesmo conceito
+- [[wiki/concepts/ciclo-de-revisita]] — o mecanismo que garante múltiplas impressões ao longo do tempo
+
 ## Key Sources
 
-- [[sources/como-aprender-um-codebase-novo]]
+- [[wiki/sources/como-aprender-novas-codebases]]

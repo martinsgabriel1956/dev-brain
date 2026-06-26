@@ -3,8 +3,8 @@ type: concept
 title: "Escalonador"
 aliases: ["scheduler", "escalonador de processos", "CPU scheduler", "agendador"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-06-26
+source_count: 2
 tags: [sistema-operacional, scheduling, concorrência, cs-fundamentals]
 skill: cs-fundamentals
 status: stable
@@ -54,3 +54,4 @@ Via [[concepts/interrupcao-de-hardware]]: um timer de hardware dispara a cada N 
 ## Key Sources
 
 - [[sources/sistema-operacional-por-baixo-dos-panos]]
+- [[sources/como-sistemas-operacionais-funcionam]]
