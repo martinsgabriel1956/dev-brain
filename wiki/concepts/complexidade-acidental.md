@@ -3,8 +3,8 @@ type: concept
 title: "Complexidade Acidental"
 aliases: ["accidental complexity", "essential complexity"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [complexidade-acidental, programacao-funcional, out-of-the-tar-pit, arquitetura]
 skill: tech-mentor-backend
 status: stable
@@ -43,6 +43,11 @@ Distinção do paper *"Out of the Tar Pit"* (Moseley & Marks): **complexidade es
 
 *"Out of the Tar Pit"* (2006, Moseley & Marks) é o texto fundacional que influenciou as escolhas técnicas do [[nubank]]. O paper argumenta que a maioria dos bugs e da dificuldade de manutenção em sistemas grandes vem de estado mutável e efeitos colaterais — não da complexidade inerente do domínio.
 
+## Segunda fonte da distinção: The Mythical Man-Month
+
+[[wiki/sources/engenheiro-vs-programador-mercado-ia|A fonte]] cita a mesma dicotomia essencial/acidental a partir de *The Mythical Man-Month* (Frederick Brooks, 1975), independente de "Out of the Tar Pit": o programador lida com complexidade acidental o dia inteiro (configurar ferramenta, framework, dependências); o engenheiro foca em minimizar a complexidade acidental para lidar com a complexidade essencial do problema real. Ver [[wiki/concepts/engenheiro-vs-programador]].
+
 ## Key Sources
 
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
+- [[wiki/sources/engenheiro-vs-programador-mercado-ia]] — mesma distinção essencial/acidental via Frederick Brooks (Mythical Man-Month), não Out of the Tar Pit

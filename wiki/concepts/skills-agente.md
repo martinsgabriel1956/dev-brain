@@ -3,8 +3,8 @@ type: concept
 title: "Skills (Padrão de Harness)"
 aliases: ["skills harness", "agents skills", "skill pattern ia", "skills.sh"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 2
+date_updated: 2026-07-03
+source_count: 3
 tags: [skills, harness, context-engineering, lazy-loading, system-prompt]
 skill: tech-mentor-ai
 status: stable
@@ -84,6 +84,12 @@ Modelos ainda não carregam skills de forma confiável sem sinalização. Estrat
 - Instala para múltiplos harnesses simultaneamente
 - Repositório auditado do Pedro Nauke: `github.com/pedronok/skills`
 
+## Skill vs. Subagente
+
+Formato de arquivo quase idêntico (front-matter + corpo Markdown), mas propósito diferente. Uma skill não aceita `model` nem `tools` customizados — é só um prompt reutilizável carregado sob demanda. Um [[wiki/concepts/subagentes|subagente]] roda em paralelo, com processo e janela de contexto próprios, e pode fixar modelo e restringir tools. Ver comparação completa em [[wiki/concepts/subagentes]].
+
+**Risco de sobreposição:** acumular muitas skills (inclusive baixadas de repositórios públicos como "awesome claude skills") junto com muitos subagentes customizados tende a confundir o roteamento automático do próprio modelo — ele pode acionar uma skill genérica quando o usuário esperava um subagente específico, porque as descrições se sobrepõem. Curadoria (poucas skills/agentes bem descritos) supera acúmulo.
+
 ## Aviso de Segurança
 
 Skills podem conter scripts executáveis. **Skills de terceiros não verificadas podem conter código malicioso** (roubar `.env`, etc.). Verificar antes de instalar.
@@ -92,3 +98,4 @@ Skills podem conter scripts executáveis. **Skills de terceiros não verificadas
 
 - [[wiki/sources/formacao-ia-devs-aula-03-skills]]
 - [[wiki/sources/formacao-ia-devs-aula-02-rules]]
+- [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]

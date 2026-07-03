@@ -3,8 +3,8 @@ type: concept
 title: "Aprendizado Passivo"
 aliases: ["passive learning", "copia sem entender", "ilusão de aprendizado"]
 date_created: 2026-05-31
-date_updated: 2026-06-05
-source_count: 3
+date_updated: 2026-07-03
+source_count: 5
 tags: [aprendizado-passivo, aprendizado, iniciante, dependencia-ia, autonomia-tecnica]
 skill: tech-mentor-leadership
 status: stable
@@ -79,8 +79,18 @@ Um artigo da Anthropic (citado por Débora) aponta queda de **17% na capacidade 
 
 Quem tem baixa crença de eficácia tende ao aprendizado passivo porque não acredita que o esforço cognitivo vai resultar em crescimento. A [[crenca-de-alta-eficacia]] é o preditor psicológico de quem vai usar IA ativamente vs. passivamente.
 
+## Origem Pré-IA: Tutoriais Passo-a-Passo
+
+[[wiki/sources/akita-oferta-procura-matematica-carreira]] descreve o mesmo padrão sem IA: cursos baseados em tutorial ensinam a "copiar o comando, colar no terminal, cruzar os dedos" — o aluno aprende a ler e copiar, não sabe por que digita aquele comando naquela ordem, por que a ferramenta existe, que problema real ela resolve, nem que alternativas existem. Reforça que o padrão de [[aprendizado-passivo]] é estrutural ao formato "tutorial", independente de a fonte ser um vídeo, uma documentação ou uma IA.
+
+## O Caso do Dev "Nativo de IA" (últimos ~18 meses)
+
+[[wiki/sources/atrofia-cognitiva-ia-programacao]] recorta um perfil específico dentro do aprendizado passivo: quem começou a programar já com Claude Code (ou equivalente) do lado desde o primeiro dia, sem nunca ter passado pelo ciclo de escrever sozinho, errar e debugar sem assistência. Diferente de quem construiu [[wiki/concepts/fundacao-tecnica]] antes de usar IA (e por isso recupera skill esquecida rápido), esse perfil não tem base para recuperar — o medo de dependência aqui é descrito como "um medo justo de ter". A recomendação da fonte para esse perfil é focar em [[wiki/concepts/sintaxe-vs-conhecimento-perene|conhecimento perene]] (debugging de produção, causas de erros HTTP) em vez de tentar "codar tudo na mão".
+
 ## Key Sources
 
 - [[wiki/sources/ia-e-aprendizado-programacao-iniciantes]]
 - [[wiki/sources/profissional-do-futuro-ia-identidade-aprendizado]]
 - [[wiki/sources/papinho-tech-solo-aprender-a-aprender]] — ângulo EAD: vídeo de alta qualidade técnica (câmera, áudio, didática) cria ilusão de aprendizado; metodologia de aula expositiva sozinha não produz aprendizado
+- [[wiki/sources/akita-oferta-procura-matematica-carreira]] — tutorial passo-a-passo pré-IA já produzia o mesmo padrão de cópia sem entendimento
+- [[wiki/sources/atrofia-cognitiva-ia-programacao]] — dev que aprendeu a programar já com IA do lado (últimos ~18 meses) nunca construiu a base que tornaria o esquecimento reversível

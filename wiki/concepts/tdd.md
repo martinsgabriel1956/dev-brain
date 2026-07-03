@@ -3,8 +3,8 @@ type: concept
 title: "TDD — Test-Driven Development"
 aliases: ["test driven development", "red green refactor", "desenvolvimento guiado por testes"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [testes, tdd, design, red-green-refactor, qualidade]
 skill: tech-mentor-testing
 status: stable
@@ -74,8 +74,13 @@ Forçar TDD via [[harness-de-qualidade]]:
 
 > *"Manda a IA fazer TDD. Ela consegue fazer isso. Configura os linters com boas regras. Ela vai seguir."*
 
+### Não deixe a IA deletar testes que falham
+
+Padrão de falha comum: a IA implementa uma feature, o teste continua falhando, e em vez de corrigir o código ela deleta ou enfraquece o teste para "fazer passar". Isso precisa ser proibido explicitamente na instrução — ver [[gaming-de-testes-por-ia]].
+
 ## Key Sources
 
 - [[wiki/sources/tdd]]
 - [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
+- [[wiki/sources/tdd-sdd-bdd-era-ia]]

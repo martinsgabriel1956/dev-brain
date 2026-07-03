@@ -3,8 +3,8 @@ type: concept
 title: "Escalabilidade Horizontal"
 aliases: ["horizontal scaling", "scale out", "escalar horizontalmente"]
 date_created: 2026-06-26
-date_updated: 2026-06-26
-source_count: 2
+date_updated: 2026-07-03
+source_count: 3
 tags: [escalabilidade, arquitetura, sistemas-distribuidos, nosql, redis, backend]
 skill: tech-mentor-backend
 status: stable
@@ -50,7 +50,12 @@ Normalização e transações ACID entre tabelas exigem coordenação entre nós
 
 Quando distribuir dados entre máquinas, entra o [[cap-theorem]] — consistência vs disponibilidade vs tolerância a partições.
 
+## Caso especial: serviços de conexão persistente (WebSocket)
+
+Escalar horizontalmente um serviço de conexões longas (WebSocket) tem uma restrição que serviços HTTP request-response não têm: exige [[wiki/concepts/load-balancer|load balancer de camada 4]] em vez de camada 7, porque o LB não pode reabrir a conexão para rotear (quebraria o tunelamento TCP). Além disso, servidores replicados não se comunicam entre si automaticamente — precisam de um broker externo (ex: [[wiki/concepts/redis]] Pub/Sub) para que uma mensagem publicada num servidor alcance um usuário conectado em outro. Ver [[wiki/concepts/chat-distribuido]].
+
 ## Key Sources
 
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
+- [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — escalabilidade horizontal de servidores WebSocket, LB L4 obrigatório, comunicação entre servidores via Redis Pub/Sub

@@ -3,8 +3,8 @@ type: concept
 title: "Robustez de Sistemas"
 aliases: ["sistemas robustos", "robustez", "software robusto"]
 date_created: 2026-05-31
-date_updated: 2026-06-01
-source_count: 2
+date_updated: 2026-07-03
+source_count: 3
 tags: [robustez, arquitetura, qualidade, escalabilidade, testes, segurança, era-agentica]
 skill: tech-mentor-backend
 status: stable
@@ -80,3 +80,4 @@ Isso complementa o [[harness-de-qualidade]]: o harness previne que código ruim 
 - [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
 - [[wiki/sources/let-it-crash-nodejs-asynclocalstorage]] — Let it Crash como estratégia de robustez; graceful shutdown em Node.js
+- [[wiki/sources/tdd-sdd-bdd-era-ia]] — TDD/SDD impostos via harness aumentam a chance da IA acertar a intenção

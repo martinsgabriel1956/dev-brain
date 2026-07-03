@@ -3,8 +3,8 @@ type: entity
 title: "Claude Code"
 aliases: ["claude code cli"]
 date_created: 2026-05-18
-date_updated: 2026-05-31
-source_count: 2
+date_updated: 2026-07-03
+source_count: 3
 tags: [ferramenta, agentes-ia, anthropic, llmops, cli, mcp, hooks]
 skill: tech-mentor-ai
 status: stable
@@ -26,6 +26,8 @@ CLI da Anthropic que age como [[agente-ia]] de desenvolvimento diretamente no te
 | [[hooks-agente]] | Automação garantida em eventos (PreToolUse, PostToolUse, Stop) |
 | [[mcp-server]] | Integração com ferramentas externas via protocolo MCP |
 | [[context-compaction]] | Compactação automática da janela de contexto (~200k tokens) |
+| [[wiki/concepts/worktree-paralelismo]] | `claude --worktree <nome>` — cópia isolada do repo por agente, paralelismo de file system |
+| [[wiki/concepts/subagentes]] | `.claude/agents/*.md` — paralelismo de contexto, model/tools customizáveis por subagente |
 
 ## Planos (referência da gravação — verificar preços atuais)
 
@@ -76,3 +78,4 @@ O mecanismo de [[context-compaction]] da janela de contexto do Claude Code é um
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
+- [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]

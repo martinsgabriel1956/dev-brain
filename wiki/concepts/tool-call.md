@@ -3,8 +3,8 @@ type: concept
 title: "Tool Call"
 aliases: ["function calling", "tool use", "chamada de ferramenta"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 2
+date_updated: 2026-07-03
+source_count: 3
 tags: [tool-call, harness, agente, llm, function-calling]
 skill: tech-mentor-ai
 status: stable
@@ -41,6 +41,19 @@ Mecanismo introduzido pela OpenAI em 2023 que permite a um LLM requisitar a exec
 - **Modelos treinados em tool call**: GPT-5.x, Opus 4.7, Kimi K2.6 têm fine-tuning específico para continuar executando loops de tool calls sem parar prematuramente. Modelos antigos (GPT-4.1) paravam no meio do loop.
 - **Segurança**: tools rodam na sua máquina. Uma skill ou MCP malicioso pode usar tool calls para exfiltrar dados, deletar arquivos, etc.
 
+## Tools Nativas do Claude Code
+
+| Tool | O que faz |
+|---|---|
+| `Agent`/`Task` | Lança [[wiki/concepts/subagentes]] em paralelo |
+| `AskUserQuestion` | Faz perguntas ao usuário antes de prosseguir |
+| `Bash` | Executa comandos shell |
+| `Glob` | Acha arquivos por pattern matching (nome/path) |
+| `Grep` | Acha conteúdo dentro de arquivos por pattern matching |
+| `Read`/`Write`/`Edit` | Lê, cria/sobrescreve e edita arquivos |
+
+Restringir as tools disponíveis a um [[wiki/concepts/subagentes|subagente]] (ex.: um "code reviewer" só com `Read`/`Grep`/`Glob`/`Bash`, sem `Write`/`Edit`) reduz o system prompt desse subagente e, com isso, o consumo de tokens — a mesma lógica de "escolher a tool certa para a tarefa certa" descrita acima.
+
 ## Analogia
 
 Assim como um programa em JavaScript não sabe que horas são e faz uma syscall ao OS para obter o timestamp, o LLM não sabe o que tem no seu filesystem e faz uma "syscall" ao harness para descobrir.
@@ -49,3 +62,4 @@ Assim como um programa em JavaScript não sabe que horas são e faz uma syscall 
 
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
+- [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]

@@ -3,8 +3,8 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-06-09
-source_count: 5
+date_updated: 2026-07-03
+source_count: 7
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs]
 skill: tech-mentor-ai
 status: stable
@@ -31,7 +31,7 @@ Ver [[wiki/entities/claude-code]]. Principal harness de codificação da Anthrop
 - **Rules** (CLAUDE.md / project rules)
 - **Skills** (conjuntos de instruções reutilizáveis)
 - **MCP** (Model Context Protocol) — protocolo aberto para tools/resources
-- **Subagents**
+- **Subagents** — ver [[wiki/concepts/subagentes]]
 
 ## Relação com Google
 
@@ -45,6 +45,8 @@ Opus caiu de $15.75/M (input) para ~$5/M — movimento que tornou o uso do Opus 
 
 O tokenizador do Claude usa [[byte-pair-encoding]] com foco em inglês, resultando no pior multiplicador de custo para idiomas não-ingleses entre os principais provedores (OpenAI, Google). Português paga ~1.62× mais tokens que inglês — ver [[token-tax-multilingual]]. Não é intenção maliciosa; é consequência do corpus de treinamento ser predominantemente em inglês.
 
+Demonstração via [[entities/vercel-ai-sdk]] com Claude 3.5 Haiku: o prompt `"Hello World"` (2 palavras) já consome 11 tokens de entrada — contra apenas 4 no Gemini 2.0 Flash Lite do Google para o mesmo prompt. Contagens de tokens de entrada/saída não são comparáveis entre provedores porque cada um usa um vocabulário de tokenizer próprio — ver [[tokenizacao]].
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
@@ -52,3 +54,5 @@ O tokenizador do Claude usa [[byte-pair-encoding]] com foco em inglês, resultan
 - [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/custo-tokens-portugues-vs-ingles]]
+- [[wiki/sources/tokens-llm-fundamentos-typescript]]
+- [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]

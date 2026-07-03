@@ -3,8 +3,8 @@ type: concept
 title: "Byte Pair Encoding"
 aliases: ["BPE", "tokenização BPE", "byte pair encoding"]
 date_created: 2026-06-09
-date_updated: 2026-06-09
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [tokenizacao, bpe, llm, token-economics, nlp]
 skill: tech-mentor-ai
 status: stable
@@ -21,6 +21,18 @@ O BPE funciona de forma iterativa:
 4. Repete até atingir o tamanho de vocabulário desejado (tipicamente 32k–100k tokens)
 
 O resultado é um vocabulário de tokens que reflete **os padrões mais frequentes no corpus de treinamento**.
+
+### Tamanho do Vocabulário como Trade-off
+
+Vocabulário maior → menos tokens por texto (mais eficiência), mas exige modelo maior para "abrigar" o vocabulário. Exemplo didático com a palavra `"understanding"`:
+
+| Tamanho do vocabulário | Tokens |
+|---|---|
+| ~1.000 | `under` `st` `and` `ing` (5) |
+| ~50.000 | `under` `standing` (3) |
+| ~200.000 | 2 |
+
+Um tokenizer que treina só até o nível de caractere (sem merges) sempre produz `nº tokens == nº caracteres` — a versão sem nenhum ganho do algoritmo, útil para entender por que o passo iterativo de merge importa. Ver [[tokenizacao]] para o pipeline completo de encode/decode.
 
 ---
 
@@ -56,9 +68,11 @@ O Hugging Face oferece um playground de tokenização interativo que permite vis
 - [[token-tax-multilingual]] — consequência direta do BPE treinado em corpus inglês
 - [[janela-de-contexto]] — tokens são a unidade que preenche e esgota a janela de contexto
 - [[completion]] — output do modelo também é cobrado por tokens gerados via BPE
+- [[tokenizacao]] — conceito geral de token, vocabulário e pipeline encode/decode
 
 ---
 
 ## Key Sources
 
 - [[wiki/sources/custo-tokens-portugues-vs-ingles]]
+- [[wiki/sources/tokens-llm-fundamentos-typescript]]

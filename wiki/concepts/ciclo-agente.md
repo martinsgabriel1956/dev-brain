@@ -3,8 +3,8 @@ type: concept
 title: "Ciclo do Agente (Agent Loop)"
 aliases: ["agent loop", "ciclo agentico", "prompt tool call loop"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 3
+date_updated: 2026-07-03
+source_count: 4
 tags: [agente, tool-call, harness, ciclo, loop]
 skill: tech-mentor-ai
 status: stable
@@ -68,6 +68,10 @@ O LLM decide a sequência de ações. A qualidade da sequência depende de:
 
 Cada sensor (teste, linter, bash execute) que fornece feedback reduz o número de ciclos necessários para a LLM chegar ao resultado correto. Sem sensores → LLM executa às cegas → mais iterações → mais custo. Ver [[wiki/concepts/sensores-vs-guias]].
 
+## Conter o Crescimento do Ciclo com Subagentes
+
+Delegar parte do ciclo a um [[wiki/concepts/subagentes|subagente]] evita que os tool calls intermediários dessa sub-tarefa acumulem na janela de contexto do agente pai — só o resultado final retorna. É uma forma de manter o loop principal curto mesmo quando a tarefa geral exige muitos ciclos internos (ex.: pesquisa em múltiplas fontes em paralelo).
+
 ## É um Brute-Force Até Funcionar
 
 > "É um baita brute-force. É um brute-force até funcionar." — Rodrigo Branas
@@ -79,3 +83,4 @@ O loop agêntico não é elegante — é iterativo e incremental. A qualidade do
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
 - [[wiki/sources/formacao-ia-devs-aula-01-context-harness-engineering]]
+- [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]

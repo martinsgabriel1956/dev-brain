@@ -3,8 +3,8 @@ type: concept
 title: "Worktree e Paralelismo de Tarefas"
 aliases: ["worktree parallelism", "git worktree IA", "paralelismo de tarefas ia"]
 date_created: 2026-06-02
-date_updated: 2026-06-09
-source_count: 4
+date_updated: 2026-07-03
+source_count: 5
 tags: [worktree, paralelismo, git, spec-driven, produtividade]
 skill: tech-mentor-ai
 status: stable
@@ -50,6 +50,16 @@ Pedro chegou a rodar 6 contas simultâneas (3 Codex + 3 Claude Code) para desenv
 - **Sandboxes** (Daytona, a2b): ambientes virtualizados que resolvem o problema do banco compartilhado
 - **Devin**: usa VM completa por task — a versão comercial/cara do mesmo conceito
 
+## `claude --worktree`: Wrapper Nativo no Claude Code
+
+O [[wiki/entities/claude-code]] embutiu o fluxo como comando de primeira classe: `claude --worktree <nome>` cria a cópia do repositório automaticamente em `.claude/worktrees/<nome>`, sem precisar rodar `git worktree add` manualmente. Cada sessão do Claude aberta numa worktree diferente trabalha em cópias físicas dos arquivos — dois agentes podem editar o "mesmo" arquivo lógico (mesmo path) sem gerar conflito, porque fisicamente são arquivos distintos.
+
+Boa prática documentada no `CLAUDE.md`: instruir o agente a **encerrar a worktree** ao finalizar as alterações (commit → encerrar worktree → abrir PR) — caso contrário, os arquivos da cópia podem acabar sendo commitados junto ao repositório principal se não estiverem no `.gitignore`.
+
+## Worktree vs. Subagente
+
+Worktree é paralelismo a nível de **file system** (cópias físicas, PRs separadas). Ver [[wiki/concepts/subagentes]] para o paralelismo equivalente a nível de **janela de contexto** (resultado convergido numa única PR). Regra prática: tarefas independentes que virarão entregas separadas → worktree; uma tarefa grande dividida em partes que convergem para uma única entrega → subagente.
+
 ## Paralelismo Real no Cursor (2026)
 
 Confirmação de campo: cada feature full stack no Cursor dispara ~5 Claude agents simultâneos + 1 agente de code review + a engenheira validando. O tech lead do Databricks usa os intervalos entre reuniões para disparar 2–3 agents e revisar PRs nos blocos livres. Esses padrões confirmam que o paralelismo não é teórico — é o fluxo diário de [[product-engineer|product engineers]] em empresas de ponta.
@@ -60,3 +70,4 @@ Confirmação de campo: cada feature full stack no Cursor dispara ~5 Claude agen
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/formacao-ia-devs-aula-06-qa]]
 - [[wiki/sources/product-engineer-vale-do-silicio-2026]]
+- [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]

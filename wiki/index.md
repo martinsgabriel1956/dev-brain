@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-06-26
+date_updated: 2026-07-03
 ---
 
 # Wiki Index
@@ -9,6 +9,7 @@ date_updated: 2026-06-26
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] | SQL é linguagem, não banco de dados — a confusão do Twitter na thread de Uncle Bob, e o que um banco relacional faz por baixo (B-tree, WAL, parser, planner) |
 | [[wiki/sources/chain-of-thought-prompting]] | CoT prompting (Wei et al., 2022) — passos intermediários como exemplares few-shot é uma capacidade emergente de ~100B+ parâmetros; supera GPT-3 fine-tuned no GSM8K via prompting apenas |
 | [[wiki/sources/microsoft-prompt-engineering-guide]] | Quatro padrões de prompt engineering (Tell/Show/Describe/Remind) + Software 3.0 — guia prático da Microsoft para obter boas completions do Codex/GPT |
 | [[wiki/sources/gpt3-language-models-are-few-shot-learners]] | GPT-3 (175B) formaliza in-context learning — aprender tarefas via exemplos no prompt sem atualizar pesos; few-shot rivaliza com fine-tuned SOTA em vários benchmarks |
@@ -75,6 +76,15 @@ date_updated: 2026-06-26
 | [[wiki/sources/10-conceitos-fundamentais-computacao]] | Os 10 conceitos base de toda computação — do binário à abstração; a fundação que não muda mesmo quando linguagens e frameworks mudam |
 | [[wiki/sources/escalabilidade-vertical-horizontal-system-design]] | Vertical vs horizontal, Load Balancer, stateless, CDN, auto scaling, sharding, replicação — quando e como escalar cada camada |
 | [[wiki/sources/the-comparison-trap-in-programming-careers]] | Bastidor vs palco + familiaridade vs capacidade — as duas formas de comparação que destroem iniciantes; quatro estratégias para medir evolução contra si mesmo |
+| [[wiki/sources/tokens-llm-fundamentos-typescript]] | Tokens em LLMs explicados via TypeScript — encode/decode, treino de tokenizer, trade-off de vocabulário, palavras raras custam mais tokens |
+| [[wiki/sources/akita-oferta-procura-matematica-carreira]] | Lei de oferta e procura em ciclos de mercado tech; raciocínio matemático básico (juros compostos) como diferencial de carreira; apego a ferramentas como estagnação |
+| [[wiki/sources/engenheiro-vs-programador-mercado-ia]] | Programador executa, engenheiro governa — o paradoxo da IA (mais código gerado = mais demanda por quem governa) e o roadmap de fundamentos em dois eixos, técnico e humano |
+| [[wiki/sources/server-sent-events-sse-tempo-real]] | SSE na prática: formato `data`/`event`, polling disfarçado como erro comum, Redis Pub/Sub entre microsserviços, Singleton na conexão, auth via JWT em query string |
+| [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]] | Worktrees (paralelismo de file system, `claude --worktree`) vs. subagentes (paralelismo de contexto, `.claude/agents/`) — quando usar cada um e o risco de excesso de skills/agentes sobrepostos |
+| [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]] | Go não é passageiro — cloud native por design, já consolidado em Mercado Livre/Mercado Pago/Stone; estratégia para frontend migrar: mirar pleno e usar fullstack como ponte |
+| [[wiki/sources/updates-tempo-real-polling-sse-websocket]] | Polling, SSE e WebSocket sob a lente de entrevista — quando polling simples é a resposta certa, LB L4 vs L7, tópico por usuário no Redis Pub/Sub, tabela de mensagens pendentes para offline |
+| [[wiki/sources/atrofia-cognitiva-ia-programacao]] | Sintaxe já era irrelevante antes da IA (autocomplete + Google); conhecimento perene (401/500, debugging de produção) é o que importa; fundação sólida torna atrofia reversível, mas quem aprendeu já com IA não tem o que recuperar |
+| [[wiki/sources/tdd-sdd-bdd-era-ia]] | TDD (red-green-refactor), SDD (contrato de boundary — OpenAPI/Protobuf/GraphQL) e BDD (Gherkin) como práticas com viés comportamental que também funcionam impostas sobre IA; proibir a IA de deletar testes que falham |
 
 ## Concepts
 
@@ -113,6 +123,14 @@ date_updated: 2026-06-26
 | [[wiki/concepts/linha-de-largada]] | Ponto de partida determinado por exposição anterior, não aptidão — invalida comparações de velocidade |
 | [[wiki/concepts/log-de-aprendizado]] | Registro semanal de aprendizado que torna visível a evolução sub-perceptível no dia a dia |
 | [[wiki/concepts/disciplina-vs-talento]] | Disciplina consistente supera talento no longo prazo — a única competição válida é com o eu do passado |
+| [[wiki/concepts/ciclo-de-mercado-tech]] | Mercado tech segue ciclos de abundância e depressão por oferta e procura — ciclo de abundância atual está terminando |
+| [[wiki/concepts/apego-a-ferramentas]] | Prender-se à primeira ferramenta aprendida é sinal de estagnação, não de expertise — martelo e chave de fenda |
+| [[wiki/concepts/engenheiro-vs-programador]] | Programador executa dentro de um espaço definido; engenheiro questiona a formulação do problema e governa a complexidade — mentalidade, não título |
+| [[wiki/concepts/governanca-de-codigo-gerado-por-ia]] | Quanto mais IA gera código, mais se precisa de engenheiros para governá-lo — metralhadora para quem não sabe mirar |
+| [[wiki/concepts/pensamento-em-producao]] | Código escrito é 10% do trabalho; os outros 90% são o sistema rodando em produção com usuários reais |
+| [[wiki/concepts/arquitetura-de-software]] | Não existe arquitetura boa para tudo — existe arquitetura certa para o contexto certo |
+| [[wiki/concepts/ponte-fullstack-para-especializacao]] | Migrar de frontend para backend numa stack de nicho (Go): mirar pleno, não júnior, e usar vaga fullstack como ponte de entrada |
+| [[wiki/concepts/sintaxe-vs-conhecimento-perene]] | Memorizar sintaxe já era irrelevante antes da IA — o que não se atrofia é o julgamento sobre causa/efeito (erros HTTP, debugging de produção) |
 
 ### Qualidade de Software com IA
 
@@ -135,6 +153,7 @@ date_updated: 2026-06-26
 | [[wiki/concepts/harness-de-qualidade]] | Ferramental que força padrões de código bom de forma determinística ao redor da IA |
 | [[wiki/concepts/pipeline-de-qualidade]] | Lint → testes → coverage → mutation → segurança → E2E; passa ou não passa |
 | [[wiki/concepts/teste-de-mutacao]] | Valida que os testes realmente testam comportamento — não só executam sem quebrar |
+| [[wiki/concepts/gaming-de-testes-por-ia]] | IA deleta ou enfraquece testes que falham em vez de corrigir o código — proibir explicitamente |
 
 ### Perfil Profissional & Product Engineering
 
@@ -159,6 +178,7 @@ date_updated: 2026-06-26
 |---|---|
 | [[wiki/concepts/token-tax-multilingual]] | Português paga 62% mais tokens que inglês — BPE favorece idiomas com mais dados de treinamento |
 | [[wiki/concepts/byte-pair-encoding]] | Algoritmo que transforma texto em tokens — otimizado para inglês, penaliza idiomas não-ingleses |
+| [[wiki/concepts/tokenizacao]] | O que é um token, pipeline encode/decode, e por que o tamanho do vocabulário é o trade-off central |
 
 ### Agentes & LLMOps
 
@@ -188,6 +208,7 @@ date_updated: 2026-06-26
 | [[wiki/concepts/niveis-adocao-ia-l0-l4]] | L0 (hater) → L4 (fábrica); a maioria dos devs está no L2; salto de produtividade real ocorre no L3 |
 | [[wiki/concepts/spec-driven-development]] | Planning-first: spec antes de executar; LLM executa autônoma; dev revisa resultado, não linha a linha |
 | [[wiki/concepts/worktree-paralelismo]] | Git worktrees isolam tarefas paralelas; base do trabalho L3 — múltiplas specs rodando simultaneamente |
+| [[wiki/concepts/subagentes]] | Paralelismo a nível de contexto — subtarefas convergem numa única PR; model/tools customizáveis por agente |
 | [[wiki/concepts/context-engineering-harness]] | Rules + skills + MCPs formam o "mapa" do projeto — fator decisivo de qualidade acima do modelo escolhido |
 | [[wiki/concepts/rules-agente]] | Guardrails sempre no system prompt — agents.md/CLAUDE.md; onboarding digital do projeto |
 | [[wiki/concepts/skills-agente]] | Pastas lazy-loaded: só front-matter no system prompt; corpo sob demanda — substitui 80% das rules |
@@ -308,6 +329,7 @@ date_updated: 2026-06-26
 | [[wiki/concepts/fluencia-vs-perfeicao]] | Fluência é operar mesmo errando — perfeição no início bloqueia o aprendizado |
 | [[wiki/concepts/foco-profundo]] | Estado de concentração ininterrupta incompatível com redes sociais |
 | [[wiki/concepts/fundacao-tecnica]] | Multiplicador de aprendizado — torna qualquer nova tecnologia simples |
+| [[wiki/concepts/raciocinio-matematico-aplicado]] | Pensamento matemático (não decorado) como fundação que não envelhece — testado com exemplo de juros compostos |
 | [[wiki/concepts/aprendizado-passivo]] | Copiar código sem entender — ilusão de progresso que impede construção de raciocínio |
 | [[wiki/concepts/dependencia-ia]] | Ciclo preguiçoso de prompts disfarçado de produtividade — antônimo de autonomia |
 | [[wiki/concepts/autonomia-tecnica]] | Entender, explicar, modificar e sustentar código independentemente — o diferencial real |
@@ -339,6 +361,13 @@ date_updated: 2026-06-26
 | [[wiki/concepts/gargalo]] | Ponto mais lento da cadeia — identificar antes de escalar qualquer coisa |
 | [[wiki/concepts/cap-theorem]] | Consistência vs Disponibilidade vs Partição — o trade-off central de sistemas distribuídos |
 
+### Realtime & Comunicação
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/server-sent-events]] | Conexão HTTP mantida aberta, servidor→cliente; formato `data`/`event`, Redis Pub/Sub para escalar, erro comum de polling disfarçado |
+| [[wiki/concepts/websocket-vs-polling]] | Polling, long polling, SSE e WebSocket comparados — trade-offs de latência, overhead e bidirecionalidade |
+
 ### Cache & Redis
 
 | Página | Hook |
@@ -350,6 +379,13 @@ date_updated: 2026-06-26
 | [[wiki/concepts/banco-in-memory]] | Armazenamento primário em RAM — Redis, persistência RDB/AOF opcional |
 | [[wiki/concepts/escalabilidade-horizontal]] | Mais máquinas ao invés de mais recursos na mesma — NoSQL e Redis cluster como caso principal |
 | [[wiki/concepts/tradeoff-de-cache]] | Cache sempre adiciona complexidade — invalidação, sincronismo e consistência eventual como custos |
+
+### Bancos de Dados & SQL
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/orm]] | ORM não elimina SQL, gera SQL por baixo dos panos — abstração, não substituição |
+| [[wiki/concepts/domain-specific-language]] | DSL para banco de dados quase sempre é wrapper em cima de SQL; Datalog do Datomic é a exceção real |
 
 ### Arquitetura Backend & Event-Driven
 
@@ -436,9 +472,13 @@ date_updated: 2026-06-26
 | [[wiki/entities/linuxtips]] | Plataforma brasileira de educação em tecnologia — DevOps, Cloud, Kubernetes, podcast Papinho Tech Solo |
 | [[wiki/entities/renato-augusto]] | Desenvolvedor e criador de conteúdo brasileiro — padrões de projeto GoF e orientação a objetos |
 | [[wiki/entities/eduarda-rocket-city]] | Engenheira de software internacional, criadora de conteúdo no canal Rocket City |
-| [[wiki/entities/openai]] | Organização responsável pelo GPT-3/4 — formalizou in-context learning e scaling laws |
+| [[wiki/entities/openai]] | Organização responsável pelo GPT-3/4 — formalizou in-context learning e scaling laws; criadora do tokenizer tiktoken |
+| [[wiki/entities/google]] | Criadora do Gemini e do harness AntiGravity — concorrente de Anthropic e OpenAI, tokenizer próprio |
+| [[wiki/entities/matt-pocock]] | Educador de TypeScript/AI (AI Hero) — fundamentos de LLM explicados via código TypeScript |
+| [[wiki/entities/vercel-ai-sdk]] | SDK TypeScript da Vercel para chamar múltiplos provedores de LLM com API unificada |
 | [[wiki/entities/jason-wei]] | Pesquisador Google Brain — lead author do paper de chain-of-thought prompting e do paper de emergent abilities |
 | [[wiki/entities/fabio-akita]] | Programador brasileiro, autodidata desde 1991, criador do canal Akita On Rails |
+| [[wiki/entities/lucas-badico]] | Programador e professor brasileiro, criador de conteúdo sobre Golang e carreira; defende a ponte fullstack como caminho de entrada ao backend |
 | [[wiki/entities/john-romero]] | Co-criador de Doom — "programação é criatividade baseada em lógica" |
 | [[wiki/entities/edsger-dijkstra]] | Cientista da computação holandês — programação formal, crítica à linguagem natural em código |
 | [[wiki/entities/eric-lenda]] | Criador de conteúdo brasileiro — JavaScript/Node.js avançado |
@@ -464,6 +504,9 @@ date_updated: 2026-06-26
 | [[wiki/entities/charlie-munger]] | Sócio de Warren Buffett — popularizou o princípio da inversão como modelo mental; usou inversão para criar rotas aéreas seguras na 2ª Guerra |
 | [[wiki/entities/karl-gustav-jakob-jacobi]] | Matemático alemão — originou o princípio "inverter, sempre invertar" |
 | [[wiki/entities/george-hotz]] | Geohot — hacker do iPhone/PS3, carro autônomo open source; "não há substituto para sentar e construir algo" |
+| [[wiki/entities/pedro-camaforte]] | Dev sênior, cria série de system design para entrevistas — foco no que separa resposta mediana de resposta de sênior |
+| [[wiki/entities/uncle-bob]] | Robert C. Martin — associado a Clean Code/Clean Architecture/SOLID; citado em thread sobre SQL não ser feito para ser embutido em programas |
+| [[wiki/entities/lucas-montano]] | Criador de conteúdo brasileiro — argumenta que o pânico de "atrofia cognitiva" por IA mede o tipo errado de habilidade (sintaxe, não conhecimento perene) |
 
 ### Documentação de Arquitetura
 

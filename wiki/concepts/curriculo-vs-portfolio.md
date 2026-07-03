@@ -3,8 +3,8 @@ type: concept
 title: "Currículo vs Portfólio"
 aliases: ["currículo vs portfólio", "promise vs proof", "promessa vs prova"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [carreira, contratação, portfólio, evidência]
 skill: tech-mentor-leadership
 status: stable
@@ -45,8 +45,10 @@ Escolas produzem currículos. A velocidade dos negócios tornou difícil para es
 - [[concepts/profundidade-e-maestria]] — portfólio é a prova da profundidade
 - [[concepts/abrangencia-profissional]] — portfólio pode mostrar múltiplas dimensões
 - [[entities/randy-nelson]] — origem da distinção promessa vs prova
+- [[wiki/concepts/ponte-fullstack-para-especializacao]] — quando não há experiência formal na stack-alvo, o portfólio (e o discurso "entrego o que um pleno entrega") substitui o currículo como prova
 
 ## Key Sources
 
 - [[sources/tres-caracteristicas-melhor-candidato]]
 - [[wiki/sources/diferenciais-portfolio-backend-junior]]
+- [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]

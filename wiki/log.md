@@ -21,6 +21,238 @@
 - `wiki/concepts/pratica-deliberada.md`
 
 **Notas:** Transcrição de vídeo em português — traduzida e formatada em Markdown antes do ingest. Autora não identificada. Fonte confirma e reforça com narrativa em primeira pessoa conceitos já bem estabelecidos no wiki. Nenhuma contradição. Questão aberta: "vergonha de código antigo como evidência de crescimento" tem nome na literatura? Possível relação com efeito Dunning-Kruger invertido.
+## [2026-07-03] ingest | SQL não é Banco de Dados: A Confusão da Galera no Twitter
+
+**Source:** [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
+**Skill:** tech-mentor-backend (`references/architecture-foundations.md`)
+
+**Páginas criadas:**
+- `wiki/sources/sql-nao-e-banco-de-dados-uncle-bob.md`
+- `wiki/concepts/orm.md`
+- `wiki/concepts/domain-specific-language.md`
+- `wiki/entities/uncle-bob.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/sql-injection.md` — nova seção contestando "eliminar SQL elimina SQL attacks", nota de nomenclatura Bobby Tables vs. Bob Tables, Key Sources
+- `wiki/concepts/postgresql.md` — nota sobre Supabase (BaaS) continuar sendo Postgres/SQL por baixo, Key Sources
+- `wiki/concepts/nosql.md` — nota desambiguando "SQL embutido no código" de "relacional vs. NoSQL", Key Sources
+- `wiki/concepts/relational-vs-nosql.md` — nota sobre eixo ortogonal SQL-cru-vs-abstração, Key Sources
+- `wiki/concepts/datomic.md` — nota sobre Datalog como exemplo de linguagem de query alternativa ao SQL, Key Sources
+- `wiki/concepts/database-index.md` — nota ligando índice a B-tree e à dificuldade de reimplementar indexação, Key Sources
+- `wiki/concepts/database-transactions.md` — nota sobre transactions como parte difícil de recriar num banco do zero, Key Sources
+- `wiki/concepts/arvore.md` — Key Sources
+- `wiki/concepts/sql-alem-do-basico.md` — link para orm.md, Key Sources
+- `wiki/index.md`
+
+**Notas:** Fonte é transcrição de vídeo/reação (autor brasileiro não identificado no arquivo bruto) a uma thread do Twitter atribuída a Robert C. Martin ("Uncle Bob") sobre SQL nunca ter sido pensado para uso embutido em programas. O valor real da fonte não é a polêmica em si, mas a explicação didática de que (1) SQL é uma linguagem, não o banco; (2) ORMs e DSLs são wrappers sobre SQL, não substitutos; (3) um banco relacional tem no mínimo quatro camadas (armazenamento via B-tree/WAL, comunicação/query, planner, execução); (4) BaaS como Supabase continua executando SQL por baixo. Contradição sinalizada com a wiki: a afirmação da thread de que "eliminar SQL elimina SQL attacks" simplifica demais — `sql-injection.md` já documenta que a defesa real é parametrização, não ausência de SQL. Questão aberta: não há confirmação da autoria/URL da thread nem do post "Bob Tables" citado — tratado com cautela nas páginas atualizadas.
+
+---
+
+## [2026-07-03] ingest | TDD, SDD e BDD na Era da IA
+
+**Source:** [[wiki/sources/tdd-sdd-bdd-era-ia]]
+**Skill:** tech-mentor-testing (`references/test-patterns.md`, `references/test-strategy.md`)
+
+**Páginas criadas:**
+- `wiki/sources/tdd-sdd-bdd-era-ia.md`
+- `wiki/concepts/gaming-de-testes-por-ia.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/tdd.md` — nova seção "Não deixe a IA deletar testes que falham", Key Sources
+- `wiki/concepts/bdd.md` — nota sobre recomendação de BDD sem experiência prática, Key Sources
+- `wiki/concepts/spec-driven-development.md` — nova seção sobre origem não-IA do termo (contratos de boundary: OpenAPI, Protobuf/gRPC, GraphQL), Key Sources
+- `wiki/concepts/harness-de-qualidade.md` — reforço do componente TDD com o guardrail de gaming de testes, novo componente SDD, Key Sources
+- `wiki/concepts/documentacao-api-swagger.md` — backlink para spec-driven-development, Key Sources
+- `wiki/concepts/robustez-de-sistemas.md` — Key Sources
+- `wiki/index.md`
+
+**Notas:** Fonte é transcrição de vídeo curto (autor não identificado) cobrindo TDD, SDD e BDD com foco no ângulo "isso funciona também impondo sobre IA". Maior parte do conteúdo já estava coberto por fontes anteriores mais técnicas ([[wiki/sources/tdd]], [[wiki/sources/bdd]], [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]); a contribuição nova e mais concreta é o alerta específico sobre a IA deletar testes que falham em vez de corrigir o código (novo conceito `gaming-de-testes-por-ia`) e a origem do termo SDD como contrato de API/boundary entre serviços (complementa a definição de `spec-driven-development`, que na wiki estava focada em specs para agentes). Nenhuma contradição com a wiki existente. Questão aberta: falta dado quantitativo (não anedótico) sobre o efeito de TDD/SDD impostos via harness na taxa de acerto da IA.
+
+---
+
+## [2026-07-03] ingest | Atrofia Cognitiva, IA e a Síndrome do Pânico de Esquecer Programar
+
+**Source:** [[wiki/sources/atrofia-cognitiva-ia-programacao]]
+**Skill:** tech-mentor-ai (`references/ai-assisted-engineering.md`)
+
+**Páginas criadas:**
+- `wiki/sources/atrofia-cognitiva-ia-programacao.md`
+- `wiki/concepts/sintaxe-vs-conhecimento-perene.md`
+- `wiki/entities/lucas-montano.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/divida-cognitiva.md`
+- `wiki/concepts/fundacao-tecnica.md`
+- `wiki/concepts/aprendizado-passivo.md`
+- `wiki/concepts/engenheiro-vs-programador.md`
+- `wiki/concepts/governanca-de-codigo-gerado-por-ia.md`
+- `wiki/concepts/pensamento-em-producao.md`
+- `wiki/concepts/autodidata.md`
+- `wiki/sources/apagao-de-seniors-vibe-coding.md`
+
+**Notas:** Transcrição de vídeo (Lucas Montano) argumentando que o pânico sobre "atrofia cognitiva" por IA mede o tipo errado de habilidade — memorizar sintaxe já era irrelevante desde autocomplete de IDE e busca no Google, muito antes de LLMs. O que importa é conhecimento perene (causas de erro 401/500, debugging de produção, propagação de exceções). Reforça [[wiki/concepts/fundacao-tecnica]] (esquecimento é reversível quando há base) e [[wiki/concepts/pensamento-em-producao]] (exemplos concretos do que é conhecimento perene). Sem contradição direta com a wiki — adiciona nuance a [[wiki/concepts/divida-cognitiva]]: o risco real de dependência de IA não é esquecer sintaxe, é perder julgamento e capacidade de explicar decisões (ilustrado pelo caso do tech lead sênior que não consegue explicar seu próprio PR). Papers acadêmicos citados na fala (2026, sobre "disuse atrophy"/"cognitive offloading" e "The Instrumental Dissolution of Typing") não têm referência verificável — marcados como confiança baixa/média em [[wiki/sources/atrofia-cognitiva-ia-programacao]]. Questão aberta: quanto a distinção "fundação sólida recupera rápido vs. dev nativo-de-IA nunca teve base" se sustenta além de analogia e experiência pessoal do autor.
+
+---
+
+## [2026-07-03] ingest | Updates em Tempo Real: Polling, SSE e WebSocket na Entrevista
+
+**Source:** [[wiki/sources/updates-tempo-real-polling-sse-websocket]]
+**Skill:** `tech-mentor-backend` (`references/realtime.md` — WebSocket vs SSE, Redis Pub/Sub scaling; `references/networking-protocols.md` — Load Balancer L4 vs L7)
+
+**Páginas criadas:**
+- `wiki/sources/updates-tempo-real-polling-sse-websocket.md`
+- `wiki/entities/pedro-camaforte.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/load-balancer.md` — seção "Por que L7 quebra o fluxo" (LB L7 reempacota a requisição; L4 só encaminha bytes por menor nº de conexões), backlink
+- `wiki/concepts/websocket-vs-polling.md` — seção "Polling não é uma escolha inferior — é uma escolha de escala", backlink
+- `wiki/concepts/pub-sub.md` — seção "Padrão: um tópico por usuário para chat/WebSocket" (`user:<id>`, `group:<id>`), backlink
+- `wiki/concepts/chat-distribuido.md` — seção "Usuário offline: tabela de mensagens pendentes" (dois vieses: histórico vs. limpeza pós-entrega estilo WhatsApp; alternativa por timestamp), backlink
+- `wiki/concepts/redis.md` — backlink (Redis Pub/Sub como broker entre servidores WebSocket replicados)
+- `wiki/concepts/mensageria.md` — backlink (mitigação de perda de mensagem via tabela de pendentes)
+- `wiki/concepts/server-sent-events.md` — backlink (mesmo mecanismo de Pub/Sub usado por WebSocket também propaga SSE entre instâncias)
+- `wiki/concepts/escalabilidade-horizontal.md` — seção "Caso especial: serviços de conexão persistente (WebSocket)", backlink
+- `wiki/concepts/protocolo-de-rede.md` — seção "WebSocket: upgrade de HTTP para TCP", backlink
+
+**Notas:** Fonte é uma transcrição de vídeo já em português — sem necessidade de tradução, só formatação em Markdown. Overlap temático relevante com duas fontes já existentes ([[wiki/sources/server-sent-events-sse-tempo-real]] e [[wiki/sources/websocket-sse-realtime]]), mas sem contradição — esta fonte contribui especificamente com a moldura de entrevista (quando polling é a resposta certa, o "porquê" do LB L4, o padrão de tópico-por-usuário no Redis, e o padrão de mensagens pendentes para offline). Nenhuma página nova de conceito foi necessária — os conceitos centrais (WebSocket, SSE, Load Balancer, Pub/Sub, Chat Distribuído) já existiam e foram aprofundados.
+
+---
+
+## [2026-07-03] ingest | Golang e o Mercado de Trabalho: Como Migrar do Frontend para o Backend
+
+**Source:** [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]
+**Skill:** `tech-mentor-leadership` (career/mercado — índice `career-progression.md` / `technical-strategy.md`; conteúdo específico de Go calibrado por analogia com `lang-systems/go-fundamentos.md` já existente na wiki)
+
+**Páginas criadas:**
+- `wiki/sources/golang-mercado-trabalho-frontend-para-backend.md`
+- `wiki/entities/lucas-badico.md`
+- `wiki/concepts/ponte-fullstack-para-especializacao.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/ciclo-de-mercado-tech.md` — contra-exemplo do Ruby on Rails (influência sem onda de mercado) e nota sobre Go cloud native, backlink
+- `wiki/concepts/go-fundamentos.md` — seções "Filosofia: Pragmatismo vs. Expressividade (Go vs. Rust)" e "Design Cloud Native", backlink
+- `wiki/concepts/portfolio-backend-junior.md` — seção "Mirando pleno em vez de júnior", link para a nova ponte fullstack
+- `wiki/concepts/curriculo-vs-portfolio.md` — nota sobre portfólio substituindo currículo quando não há experiência formal na stack-alvo
+- `wiki/concepts/apego-a-ferramentas.md` — contraste entre apego individual e tecnologia influente que nunca virou onda de mercado (Ruby on Rails)
+- `wiki/index.md` — nova fonte, novo conceito, nova entidade
+
+**Notas:** Fonte é opinião qualificada de um criador de conteúdo (Lucas Badico), não dado de mercado medido — números de adoção (40/60 Brasil, 80/20 EUA) sinalizados como estimativa pessoal no próprio source page. Nenhuma contradição direta com conteúdo existente; reforça e adiciona nuance ao padrão já registrado em [[wiki/concepts/ciclo-de-mercado-tech]] e [[wiki/concepts/apego-a-ferramentas]].
+
+---
+
+## [2026-07-03] ingest | Múltiplos Agentes no Claude Code — Work Trees e Subagentes
+
+**Source:** [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
+**Skill:** `tech-mentor-ai` (`references/ai/agents-orchestration.md`)
+
+**Páginas criadas:**
+- `wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code.md`
+- `wiki/concepts/subagentes.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/worktree-paralelismo.md` — seção sobre `claude --worktree` nativo, comparação worktree vs. subagente, backlink
+- `wiki/entities/claude-code.md` — linhas de worktree/subagentes na tabela de recursos principais
+- `wiki/entities/anthropic.md` — backlink de "Subagents" para a nova página de conceito
+- `wiki/concepts/agente-ia.md` — subagentes e worktrees detalhados no exemplo Claude Code
+- `wiki/concepts/tool-call.md` — tabela de tools nativas do Claude Code (Agent, AskUserQuestion, Bash, Glob, Grep, Read/Write/Edit) e nota sobre restringir tools por subagente
+- `wiki/concepts/ciclo-agente.md` — subagentes como forma de conter o crescimento do ciclo/contexto do agente pai
+- `wiki/concepts/skills-agente.md` — comparação skill vs. subagente e risco de sobreposição ("parafernália") confundindo roteamento automático
+- `wiki/concepts/janela-de-contexto.md` — subagentes e worktrees como estratégias de economia de janela
+- `wiki/concepts/reasoning-level.md` — reasoning baixo pode esconder oportunidades de paralelismo automático
+- `wiki/index.md` — novo source e novo conceito indexados
+
+**Notas:** Transcrição de live coding (HiperDev) sobre as duas formas nativas do Claude Code de rodar múltiplos agentes em paralelo. Sem contradição com `wiki/concepts/worktree-paralelismo.md` (fonte anterior cobria `git worktree` manual/spec-driven; esta fonte acrescenta o wrapper nativo `claude --worktree` e a distinção formal contra subagentes). Ponto de atenção registrado como questão aberta: a afirmação de que skills não suportam `model`/`tools` customizados foi checada ao vivo, mas vale reconfirmar contra a documentação oficial mais recente da Anthropic.
+
+---
+
+## [2026-07-03] ingest | Server-Sent Events (SSE): Comunicação em Tempo Real na Prática
+
+**Source:** [[wiki/sources/server-sent-events-sse-tempo-real]]
+**Skill:** `tech-mentor-backend` (`references/realtime.md`)
+
+**Páginas criadas:**
+- `wiki/sources/server-sent-events-sse-tempo-real.md`
+- `wiki/concepts/server-sent-events.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/websocket-vs-polling.md` — backlink + referência à página nova de SSE
+- `wiki/concepts/redis.md` — seção de conexão como Singleton, Pub/Sub sem criação prévia de canal
+- `wiki/concepts/pub-sub.md` — exemplo prático de Redis Pub/Sub notificando endpoint SSE
+- `wiki/concepts/singleton-pattern.md` — caso de uso: conexão Redis compartilhada em Pub/Sub
+- `wiki/concepts/protocolo-de-rede.md` — SSE como conexão TCP/HTTP mantida aberta
+- `wiki/concepts/mensageria.md` — Redis Pub/Sub como notificador leve (sem persistência/replay) vs Kafka/SQS/RabbitMQ
+- `wiki/concepts/graceful-shutdown.md` — cleanup por conexão individual (`req.on('close')`) como caso análogo ao shutdown de processo
+- `wiki/concepts/load-balancer.md` — WebSocket exige LB L4; SSE não exige infra especializada
+- `wiki/index.md` — nova seção "Realtime & Comunicação", novo source indexado
+
+**Notas:** Transcrição de vídeo tutorial (autor se identifica só como "Renato" no texto) sobre SSE, cobrindo polling → long polling → SSE → WebSocket em ordem crescente de sofisticação, com implementação prática em Node.js/Express + Redis Pub/Sub para arquitetura distribuída. Nenhuma contradição com `wiki/concepts/websocket-vs-polling.md` (que já cobria a comparação em nível mais superficial) — esta fonte aprofunda implementação e erros de produção. Questão aberta registrada na fonte: risco de exposição de JWT em logs quando passado via query string, ponto não coberto pela transcrição original mas relevante para produção.
+
+---
+
+## [2026-07-03] ingest | O Mercado Não Precisa de Mais Programadores
+
+**Source:** [[wiki/sources/engenheiro-vs-programador-mercado-ia]]
+**Skill:** `tech-mentor-leadership` (`references/career-progression.md`)
+
+**Páginas criadas:**
+- `wiki/sources/engenheiro-vs-programador-mercado-ia.md`
+- `wiki/concepts/engenheiro-vs-programador.md`
+- `wiki/concepts/governanca-de-codigo-gerado-por-ia.md`
+- `wiki/concepts/pensamento-em-producao.md`
+- `wiki/concepts/arquitetura-de-software.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/fundacao-tecnica.md` (engenheiro coleciona modelos mentais, não ferramentas; eixo vertical/horizontal)
+- `wiki/concepts/apego-a-ferramentas.md` (mesma ideia reforçada com outro enquadramento — roadmap.sh, ciclo de ~3 anos de ferramentas)
+- `wiki/concepts/complexidade-acidental.md` (segunda fonte independente da distinção essencial/acidental, via Mythical Man-Month de Brooks, não Out of the Tar Pit)
+- `wiki/concepts/algoritmos-e-estruturas-de-dados.md` (DSA como primeiro item do eixo vertical de fundamentos)
+- `wiki/concepts/entendimento-de-dominio.md` (modelagem de domínio como tradução do problema real para código — DDD, Ousterhout)
+
+**Notas:** Fonte recebida como transcrição pura, sem autor/canal identificado — `author` ficou em branco no frontmatter; nenhuma entidade de pessoa foi criada. A distinção complexidade essencial vs. acidental já existia no wiki a partir de "Out of the Tar Pit" ([[wiki/sources/nubank-clojure-datomic-event-sourcing]]); esta fonte cita a mesma dicotomia via outra origem (Frederick Brooks, 1975) — sem contradição, reforço cruzado de duas fontes primárias independentes. Em aberto: livros citados (Clean Architecture, DDIA, DDD, Fundamentals of Software Architecture, Mythical Man-Month, Lean Startup, Inspired) ainda não têm fonte própria no wiki — são citações de segunda mão.
+
+---
+
+## [2026-07-03] ingest | Oferta, Procura e Matemática Básica — Por Que Sua Carreira em Programação Vai Sofrer
+
+**Source:** [[wiki/sources/akita-oferta-procura-matematica-carreira]]
+**Skill:** `tech-mentor-leadership` (`references/career-progression.md`) — domínio secundário: segurança (`password-hashing`, não recarregada skill própria)
+
+**Páginas criadas:**
+- `wiki/sources/akita-oferta-procura-matematica-carreira.md`
+- `wiki/concepts/ciclo-de-mercado-tech.md`
+- `wiki/concepts/raciocinio-matematico-aplicado.md`
+- `wiki/concepts/apego-a-ferramentas.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/autodidata.md` (lavagem cerebral do sistema educacional formal treina passividade)
+- `wiki/concepts/aprendizado-passivo.md` (tutorial passo-a-passo pré-IA já produzia o mesmo padrão de cópia sem entendimento)
+- `wiki/concepts/fundacao-tecnica.md` (raciocínio matemático como componente da fundação)
+- `wiki/concepts/password-hashing.md` (caso real citado: vazamento Ministério da Saúde, senha em plaintext)
+- `wiki/entities/fabio-akita.md` (perfil ampliado: empresa de outsourcing, caso Vivo ~2002, visão de mercado)
+
+**Notas:** Segundo vídeo de Fábio Akita ingerido — mesmo autor de [[wiki/sources/akita-como-aprender-programacao]], mas foco diferente: ciclos de mercado, raciocínio matemático e apego a ferramentas, em vez de metodologia de aprendizado por exposição. Sem contradição direta com o wiki existente; complementa [[wiki/concepts/autodidata]] e [[wiki/concepts/fundacao-tecnica]]. Possível tensão leve de dados biográficos entre as duas fontes (idade em que começou a programar varia entre "~13 anos" e "14-15 anos" nas duas transcrições) — dentro da margem normal de variação de memória entre vídeos diferentes, não tratado como contradição formal. Questão aberta: nenhuma fonte no wiki até agora testa empiricamente a correlação entre raciocínio matemático e competência como programador — é argumentada por analogia/anedota em ambas as fontes do autor.
+
+---
+
+## [2026-07-03] ingest | Tokens em LLMs — Fundamentos com TypeScript
+
+**Source:** [[wiki/sources/tokens-llm-fundamentos-typescript]]
+**Skill:** `tech-mentor-ai` (`references/ai/fundamentals.md`)
+
+**Páginas criadas:**
+- `wiki/sources/tokens-llm-fundamentos-typescript.md`
+- `wiki/concepts/tokenizacao.md`
+- `wiki/entities/matt-pocock.md`
+- `wiki/entities/vercel-ai-sdk.md`
+- `wiki/entities/google.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/byte-pair-encoding.md` (trade-off de tamanho de vocabulário + fonte)
+- `wiki/concepts/token-tax-multilingual.md` (generalização: palavra rara "frabjous" sofre o mesmo efeito que idiomas não-ingleses)
+- `wiki/entities/anthropic.md` (exemplo Claude 3.5 Haiku via AI SDK: 11 tokens de entrada para "Hello World")
+- `wiki/entities/openai.md` (tiktoken / o200k_base como tokenizer do GPT-4o)
+
+**Notas:** Fonte é vídeo de Matt Pocock (AI Hero) explicando fundamentos de tokens em LLM via TypeScript/`js-tiktoken`/AI SDK. Sem contradição com o wiki existente — na verdade complementa diretamente [[wiki/concepts/byte-pair-encoding]] e [[wiki/concepts/token-tax-multilingual]] (já criados a partir de [[wiki/sources/custo-tokens-portugues-vs-ingles]]), adicionando o mecanismo de treino do tokenizer (nível-caractere → subpalavra → BPE) e o trade-off de tamanho de vocabulário que faltava nessas páginas. Questão aberta: fonte não cobre o multiplicador de token tax para português no Gemini/Google, só documentado para Anthropic.
 
 ---
 

@@ -72,6 +72,10 @@ O vibe coding pode criar um apagão de devs sêniors: menos gente aprendendo fun
 - [[property-based-testing]] — testa propriedades invariantes com inputs aleatórios e concorrentes
 - [[adaptive-thinking]] — modelo decide autonomamente quanto "pensar" (controle removido do usuário)
 
+## Ver também
+
+- [[wiki/sources/atrofia-cognitiva-ia-programacao]] — contraponto: argumenta que o "apagão de sêniors" não é atrofia de sintaxe, e sim risco de nunca construir julgamento sobre performance/confiabilidade/segurança/arquitetura quando a IA está no fluxo desde o início da carreira
+
 ---
 
 ## Conexões com Outras Sources
