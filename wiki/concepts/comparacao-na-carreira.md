@@ -3,8 +3,8 @@ type: concept
 title: "Comparação na Carreira"
 aliases: ["bastidor vs palco", "síndrome do impostor", "comparação com colegas", "primeiro degrau"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-06-26
+source_count: 2
 tags: [carreira, mentalidade, comparação, iniciante, impostor]
 skill: tech-mentor-leadership
 status: stable
@@ -38,8 +38,10 @@ Comparação desordenada cria a sensação de que você "não tem dom" — e pod
 - [[log-de-aprendizado]] — ferramenta para mudar o referencial de comparação
 - [[linha-de-largada]] — por que linhas de largada diferentes tornam a comparação injusta
 - [[mentoria-tecnica]] — papel do mentor em reencadrar o referencial
+- [[disciplina-vs-talento]] — conclusão natural de reencadrar a comparação: disciplina supera talento
 
 ## Key Sources
 
 - [[sources/comparacao-na-carreira-dev]]
 - [[sources/como-aprender-programacao-3-dicas]]
+- [[wiki/sources/the-comparison-trap-in-programming-careers]] — as duas formas de comparação nomeadas explicitamente; quatro estratégias práticas para mudar o referencial; "a única competição é com o meu eu do passado"

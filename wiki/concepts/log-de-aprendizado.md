@@ -3,8 +3,8 @@ type: concept
 title: "Log de Aprendizado"
 aliases: ["learning log", "diário de aprendizado", "registro de evolução"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-06-26
+source_count: 2
 tags: [carreira, aprendizado, mentalidade, progresso, iniciante]
 skill: tech-mentor-leadership
 status: stable
@@ -43,3 +43,4 @@ Commits atômicos funcionam como log de aprendizado implícito no histórico do 
 
 - [[wiki/sources/comparacao-na-carreira-dev]]
 - [[sources/9-habitos-programador-junior]]
+- [[wiki/sources/the-comparison-trap-in-programming-careers]] — estratégia descrita em primeira pessoa: anotar ao menos uma coisa nova por semana; no final do mês a lista surpreende mesmo em períodos que pareciam estagnados

@@ -74,6 +74,7 @@ date_updated: 2026-06-26
 | [[wiki/sources/como-arquitetar-com-cache-e-redis]] | Redis como solução de cache: o que é, pontos fortes e fracos, e três padrões arquiteturais — Feature Flags, Cache-Aside e CQRS com Redis como read layer |
 | [[wiki/sources/10-conceitos-fundamentais-computacao]] | Os 10 conceitos base de toda computação — do binário à abstração; a fundação que não muda mesmo quando linguagens e frameworks mudam |
 | [[wiki/sources/escalabilidade-vertical-horizontal-system-design]] | Vertical vs horizontal, Load Balancer, stateless, CDN, auto scaling, sharding, replicação — quando e como escalar cada camada |
+| [[wiki/sources/the-comparison-trap-in-programming-careers]] | Bastidor vs palco + familiaridade vs capacidade — as duas formas de comparação que destroem iniciantes; quatro estratégias para medir evolução contra si mesmo |
 
 ## Concepts
 
@@ -107,6 +108,11 @@ date_updated: 2026-06-26
 | [[wiki/concepts/dados-vs-intuicao]] | Dados superam intuição especialmente em ideias inovadoras — quanto menos dados, mais fortes e perigosas são as opiniões |
 | [[wiki/concepts/maturidade-tecnica]] | Capacidade de extrair aprendizado de qualquer situação, incluindo as adversas |
 | [[wiki/concepts/atualizacao-tecnologica]] | Custo de ficar estagnado vs. fadiga de perseguir novidades — empresa que não evoluiu na stack também não evoluiu na cultura |
+| [[wiki/concepts/comparacao-na-carreira]] | Medir seu primeiro degrau pela régua de quem está no meio da escada — o erro que leva à desistência prematura |
+| [[wiki/concepts/familiaridade-vs-capacidade]] | Velocidade inicial ≠ talento — é histórico acumulado de vida; linha de largada explica tudo |
+| [[wiki/concepts/linha-de-largada]] | Ponto de partida determinado por exposição anterior, não aptidão — invalida comparações de velocidade |
+| [[wiki/concepts/log-de-aprendizado]] | Registro semanal de aprendizado que torna visível a evolução sub-perceptível no dia a dia |
+| [[wiki/concepts/disciplina-vs-talento]] | Disciplina consistente supera talento no longo prazo — a única competição válida é com o eu do passado |
 
 ### Qualidade de Software com IA
 

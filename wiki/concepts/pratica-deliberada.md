@@ -3,8 +3,8 @@ type: concept
 title: "Prática Deliberada"
 aliases: ["deliberate practice", "10000 horas", "regra das 10000 horas", "800 horas júnior", "horas de prática"]
 date_created: 2026-06-10
-date_updated: 2026-06-10
-source_count: 1
+date_updated: 2026-06-26
+source_count: 2
 tags: [aprendizado, carreira, mentalidade, iniciante, maestria]
 skill: tech-mentor-leadership
 status: stable
@@ -58,3 +58,4 @@ A implicação prática: consistência diária em volume razoável supera sprint
 ## Key Sources
 
 - [[sources/quanto-tempo-aprender-programacao]] — tabela de horas/tempo, teto cognitivo diário, analogia da mangueira de incêndio
+- [[wiki/sources/the-comparison-trap-in-programming-careers]] — estratégia de "refazer exercícios antigos do zero sem ver a solução" como forma de medir progresso; equivale a prática deliberada com feedback imediato sobre velocidade e automatização

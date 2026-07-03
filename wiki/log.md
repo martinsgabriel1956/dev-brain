@@ -2,6 +2,28 @@
 
 ---
 
+## [2026-06-26] ingest | The Comparison Trap in Programming Careers
+
+**Source:** [[wiki/sources/the-comparison-trap-in-programming-careers]]
+**Skill:** `tech-mentor-leadership` (path `/home/nemomartins/...` não encontrado — skill aplicada por mapeamento de domínio)
+
+**Páginas criadas:**
+- `wiki/sources/the-comparison-trap-in-programming-careers.md`
+- `wiki/concepts/disciplina-vs-talento.md`
+
+**Páginas atualizadas (backlink + source_count):**
+- `wiki/concepts/comparacao-na-carreira.md`
+- `wiki/concepts/familiaridade-vs-capacidade.md`
+- `wiki/concepts/linha-de-largada.md`
+- `wiki/concepts/log-de-aprendizado.md`
+- `wiki/concepts/repertorio.md`
+- `wiki/concepts/fluencia-vs-perfeicao.md`
+- `wiki/concepts/pratica-deliberada.md`
+
+**Notas:** Transcrição de vídeo em português — traduzida e formatada em Markdown antes do ingest. Autora não identificada. Fonte confirma e reforça com narrativa em primeira pessoa conceitos já bem estabelecidos no wiki. Nenhuma contradição. Questão aberta: "vergonha de código antigo como evidência de crescimento" tem nome na literatura? Possível relação com efeito Dunning-Kruger invertido.
+
+---
+
 ## [2026-06-26] ingest | 10 Conceitos Fundamentais da Computação
 
 **Source:** [[wiki/sources/10-conceitos-fundamentais-computacao]]
