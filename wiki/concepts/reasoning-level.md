@@ -3,8 +3,8 @@ type: concept
 title: "Reasoning Level (Nível de Raciocínio)"
 aliases: ["reasoning level", "nivel de reasoning", "extended thinking", "thinking budget"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 2
+date_updated: 2026-07-03
+source_count: 3
 tags: [reasoning, llm, custo, qualidade, tokens]
 skill: tech-mentor-ai
 status: stable
@@ -41,6 +41,10 @@ Ao resolver "uma camisa de $40 com 25% de desconto e depois 10% de cupom", você
 
 Claude Code abre no Extra High com Opus 4.7 por padrão. Para tarefas corriqueiras, ajustar manualmente economiza tokens e tempo.
 
+## Reasoning Baixo Pode Esconder Oportunidades de Paralelismo
+
+Com effort/reasoning baixo, o Claude Code pode deixar de reconhecer que uma tarefa é paralelizável em [[wiki/concepts/subagentes]] — um mesmo prompt de pesquisa (comparar 3 provedores) só disparou 3 subagentes em paralelo depois de subir o effort de low para high. Reasoning insuficiente não só piora a resposta, como pode reduzir a própria capacidade de orquestração do agente.
+
 ## Relação com Custo
 
 O nível de reasoning não muda o preço do modelo (input/output price per token é o mesmo), mas gera mais tokens de raciocínio que são cobrados como output. Extra High pode multiplicar o custo de output de uma tarefa em 3–5x.
@@ -49,3 +53,4 @@ O nível de reasoning não muda o preço do modelo (input/output price per token
 
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
+- [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]

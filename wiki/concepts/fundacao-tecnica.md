@@ -3,8 +3,8 @@ type: concept
 title: "Fundação Técnica"
 aliases: ["fundamentos", "base técnica", "foundations"]
 date_created: 2026-05-16
-date_updated: 2026-06-09
-source_count: 2
+date_updated: 2026-07-03
+source_count: 5
 tags: [aprendizado, carreira, fundamentos]
 skill: tech-mentor-leadership
 status: stable
@@ -23,6 +23,9 @@ Além disso:
 - Como sistemas operacionais gerenciam processos e threads
 - Como redes funcionam (TCP/IP, HTTP)
 - Como bancos de dados indexam e buscam dados
+- [[raciocinio-matematico-aplicado|Raciocínio matemático aplicado]] — matemática, estatística e lógica quantitativa, não decorada mas aplicada a problemas reais (complexidade de queries, detecção de bugs de performance)
+
+Essa fundação é também o que permite [[fundacao-tecnica|resistir]] aos [[ciclo-de-mercado-tech|ciclos de mercado]]: linguagens e frameworks mudam a cada ciclo, mas quem tem fundação sólida aprende a ferramenta nova rápido, em vez de recomeçar do zero a cada onda de tecnologia.
 
 ## A metáfora do puxadinho
 
@@ -46,7 +49,16 @@ A fundação não é aprendida de uma vez — segue uma progressão de três est
 
 Pular do estágio 1 para o 3 é a causa mais comum de [[over-engineering]]: aplicar patterns sem o modelo mental para avaliar quando eles resolvem um problema real.
 
+## Fundação sólida torna a atrofia reversível
+
+[[wiki/sources/atrofia-cognitiva-ia-programacao]] adiciona uma distinção sobre o que acontece quando a fundação já foi construída e depois há um período de desuso (inclusive por depender de IA): a skill esquecida volta rápido, "como andar de bicicleta", porque a fundação continua lá — só a prática de superfície (sintaxe, ver [[wiki/concepts/sintaxe-vs-conhecimento-perene]]) enferrujou. O autor relata 3 anos sem escrever código e retorno ao melhor momento da carreira como evidência dessa reversibilidade.
+
+Isso não se aplica a quem nunca construiu a fundação — um dev que aprendeu a programar já com IA do lado nos últimos ~18 meses não tem o que "lembrar": o medo de dependência, nesse caso, é justificado e distinto do pânico de atrofia de quem já tem anos de prática.
+
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]] — metáfora do puxadinho; hype vs. fundação; Akita aprendendo Elixir e Crystal em semanas graças à experiência acumulada
 - [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]] — progressão de 3 estágios; OOP modeling como pré-requisito; otimização prematura
+- [[wiki/sources/akita-oferta-procura-matematica-carreira]] — raciocínio matemático como componente da fundação que não envelhece entre ciclos de mercado
+- [[wiki/sources/engenheiro-vs-programador-mercado-ia]] — engenheiro coleciona modelos mentais, não ferramentas; divide a fundação em eixo vertical (DSA, arquitetura, domínio, SO/redes, banco de dados) e horizontal (comunicação, produto, complexidade, produção)
+- [[wiki/sources/atrofia-cognitiva-ia-programacao]] — fundação sólida torna o esquecimento de sintaxe reversível; sem fundação, não há o que recuperar

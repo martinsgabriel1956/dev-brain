@@ -3,8 +3,8 @@ type: entity
 title: "OpenAI"
 aliases: ["Open AI"]
 date_created: 2026-05-17
-date_updated: 2026-05-17
-source_count: 2
+date_updated: 2026-07-03
+source_count: 3
 tags: [openai, organização, llm, ia]
 skill: tech-mentor-ai
 status: stable
@@ -33,7 +33,12 @@ Organização de pesquisa em inteligência artificial fundada em 2015. Responsá
 
 - **Codex** (2021) — modelo especializado em código, base do GitHub Copilot. Translada linguagem natural → código em mais de 12 linguagens.
 
+## Tokenizador
+
+Criadora do `tiktoken`, tokenizer BPE oficial da OpenAI (implementação JS: `js-tiktoken`). `o200k_base` é o tokenizer usado pelo GPT-4o — ver [[byte-pair-encoding]] e [[tokenizacao]].
+
 ## Fontes
 
 - [[wiki/sources/gpt3-language-models-are-few-shot-learners]]
 - [[wiki/sources/microsoft-prompt-engineering-guide]]
+- [[wiki/sources/tokens-llm-fundamentos-typescript]]

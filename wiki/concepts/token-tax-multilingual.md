@@ -3,8 +3,8 @@ type: concept
 title: "Token Tax Multilingual"
 aliases: ["token tax", "imposto do token", "custo idioma tokens", "multilingual token penalty"]
 date_created: 2026-06-09
-date_updated: 2026-06-09
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [token-economics, tokenizacao, bpe, custo-ia, portugues, llm]
 skill: tech-mentor-ai
 status: stable
@@ -43,6 +43,8 @@ O algoritmo [[byte-pair-encoding]] cria um vocabulário de tokens baseado na fre
 - Palavras em português → quebradas em mais pedaços porque aparecem com menor frequência no corpus
 
 Não é um bug de design intencional — é consequência direta de onde os dados de treinamento estão concentrados. Melhora à medida que os modelos treinam com mais dados multilíngues.
+
+O mesmo efeito ocorre com qualquer padrão pouco frequente no corpus, não só idiomas: a palavra inventada `"frabjous"` (poema *Jabberwocky*, Lewis Carroll) é dividida em 4 tokens separados pelo tokenizer `o200k_base` (GPT-4o) — muito mais que uma palavra comum receberia. Idiomas não-ingleses pagam essa mesma penalidade de forma sistemática porque, em bloco, seus padrões são menos frequentes no corpus de treino. O efeito também penaliza linguagens de programação menos populares (ex. Haskell) frente às mais usadas (ex. JavaScript): menos tokens por linha de código é mais uma vantagem de adoção na era da IA.
 
 ---
 
@@ -84,9 +86,11 @@ A decisão depende do contexto — não há resposta universalmente certa.
 - [[token-anxiety]] — token tax amplifica a ansiedade de devs não-anglófonos
 - [[paradoxo-de-jevons]] — token mais barato + token tax = custo ainda relevante para devs brasileiros
 - [[spec-driven-development]] — specs em português custam 62% mais tokens
+- [[tokenizacao]] — conceito geral de token e vocabulário; palavras raras em qualquer idioma sofrem o mesmo efeito
 
 ---
 
 ## Key Sources
 
 - [[wiki/sources/custo-tokens-portugues-vs-ingles]]
+- [[wiki/sources/tokens-llm-fundamentos-typescript]]

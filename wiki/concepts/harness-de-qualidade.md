@@ -3,8 +3,8 @@ type: concept
 title: "Harness de Qualidade"
 aliases: ["quality harness", "harness ia", "ferramental de qualidade"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [harness, qualidade, pipeline-de-qualidade, tdd, testes, era-agentica, robustez]
 skill: tech-mentor-backend
 status: stable
@@ -27,7 +27,10 @@ A IA segue **regras impostas por ferramenta** mais consistentemente do que regra
 ## Componentes do Harness
 
 ### TDD obrigatório
-Mandar a IA fazer [[tdd]] — o ciclo test-first força código que passa em testes antes de ser aceito. Resultado mais previsível e com menos bugs estruturais.
+Mandar a IA fazer [[tdd]] — o ciclo test-first força código que passa em testes antes de ser aceito. Resultado mais previsível e com menos bugs estruturais. Instrução crítica que precisa acompanhar isso: proibir a IA de deletar ou enfraquecer testes que falham em vez de corrigir o código — ver [[gaming-de-testes-por-ia]].
+
+### Spec-Driven Development obrigatório
+Da mesma forma que TDD, [[spec-driven-development]] pode ser imposto: contrato de API (OpenAPI/Swagger, `.proto`, schema GraphQL) definido antes da IA implementar qualquer lado da boundary.
 
 ### Linters com regras de código
 Configurar linters (ESLint, Biome, etc.) com regras específicas do projeto. A IA vai seguir o que o linter rejeitar — não o que você pediu no prompt.
@@ -76,3 +79,4 @@ Harness de qualidade é o mecanismo que constrói [[robustez-de-sistemas]] quand
 
 - [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
+- [[wiki/sources/tdd-sdd-bdd-era-ia]]

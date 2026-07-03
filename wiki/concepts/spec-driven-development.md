@@ -3,8 +3,8 @@ type: concept
 title: "Spec-Driven Development"
 aliases: ["SDD", "spec driven", "desenvolvimento orientado a especificação", "planning-first"]
 date_created: 2026-06-02
-date_updated: 2026-06-09
-source_count: 7
+date_updated: 2026-07-03
+source_count: 8
 tags: [spec-driven, planejamento, ia-para-devs, harness, agente, qualidade]
 skill: tech-mentor-ai
 status: stable
@@ -85,6 +85,18 @@ A spec não é uma "living documentation" permanente. É produzida para guiar um
 - **Cairo**: harness com spec-driven nativo
 - **Claude Code Plan Mode**: `/plan` ou Shift+Tab para entrar no modo de planejamento sem executar
 
+## Origem Não-IA do Termo: SDD como Contrato de Boundary
+
+Antes de virar sinônimo de "spec para agentes de IA", SDD (também lido como Schema-Driven Development) já era prática comum entre times humanos: especificar o contrato de uma *boundary* — o limite entre dois serviços ou entre frontend e backend — antes de qualquer lado escrever código. Os artefatos variam por protocolo:
+
+| Protocolo | Artefato de spec |
+|---|---|
+| REST | OpenAPI/Swagger — ver [[documentacao-api-swagger]] |
+| gRPC | arquivos `.proto` (Protobuf) — geram stubs tanto no produtor quanto no consumidor |
+| GraphQL | schema GraphQL |
+
+O objetivo é o mesmo do SDD para agentes: acordar o contrato primeiro evita o retrabalho clássico de "o Lego não encaixou" quando dois lados desenvolvem em paralelo sem alinhar a interface.
+
 ## Diferença de Prompt Engineering
 
 | Prompt Engineering | Spec-Driven Development |
@@ -111,3 +123,4 @@ Na prática: uma feature completa com migration, schema e API repository é feit
 - [[wiki/sources/formacao-ia-devs-aula-04-agentes-planejamento]]
 - [[wiki/sources/formacao-ia-devs-aula-05-qa]]
 - [[wiki/sources/product-engineer-vale-do-silicio-2026]]
+- [[wiki/sources/tdd-sdd-bdd-era-ia]] — origem não-IA do termo, contratos de API como boundary (OpenAPI, Protobuf, GraphQL)

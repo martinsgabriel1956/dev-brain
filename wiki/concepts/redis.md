@@ -3,8 +3,8 @@ type: concept
 title: "Redis"
 aliases: ["redis cache", "redis db"]
 date_created: 2026-06-26
-date_updated: 2026-06-26
-source_count: 1
+date_updated: 2026-07-03
+source_count: 3
 tags: [redis, cache, nosql, banco-in-memory, chave-valor, backend]
 skill: tech-mentor-backend
 status: stable
@@ -55,8 +55,12 @@ A chave pode ser longa e semântica. Busca por prefixo (`GET cod_cliente:*`) per
 - **[[cqrs]] read layer** — Redis como projeção otimizada de leitura; SQL como fonte de verdade
 - **[[feature-flag]]** — interruptores de código com latência mínima
 - **Session store** — tokens de sessão, permissões de menu, extrato do cliente
-- **Pub/Sub** — broadcast efêmero em tempo real (sem persistência)
+- **Pub/Sub** — broadcast efêmero em tempo real (sem persistência); `PUBLISH`/`SUBSCRIBE` num canal não exige criação prévia — publicar cria o canal implicitamente. Usado como notificador entre microsserviços em [[wiki/concepts/server-sent-events]]
 - **Streams** — fila robusta com consumer groups e ACK
+
+## Conexão como Singleton
+
+Abrir uma nova conexão Redis por requisição HTTP não escala — 100 usuários simultâneos numa arquitetura SSE/Pub/Sub geram 100 conexões abertas, o que pode derrubar a instância. O Redis é projetado para multiplexar uma única conexão entre muitos assinantes; a prática correta é usar [[wiki/concepts/singleton-pattern]] para reutilizar uma conexão compartilhada. Ver [[wiki/concepts/connection-pooling]] para o mesmo princípio aplicado a bancos relacionais.
 
 ## Quando NÃO Usar Redis
 
@@ -72,3 +76,5 @@ A chave pode ser longa e semântica. Busca por prefixo (`GET cod_cliente:*`) per
 ## Key Sources
 
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
+- [[wiki/sources/server-sent-events-sse-tempo-real]] — Redis Pub/Sub como notificador entre microsserviços, armadilha da conexão sem Singleton
+- [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — Redis Pub/Sub como broker entre servidores WebSocket replicados, tópico por usuário/grupo

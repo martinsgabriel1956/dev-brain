@@ -3,8 +3,8 @@ type: concept
 title: "Agente de IA"
 aliases: ["agente", "AI agent", "agentes de ia"]
 date_created: 2026-05-18
-date_updated: 2026-05-31
-source_count: 2
+date_updated: 2026-07-03
+source_count: 3
 tags: [agentes-ia, llm, llmops, automacao]
 skill: tech-mentor-ai
 status: draft
@@ -46,10 +46,12 @@ Reflete que ainda não existe vocabulário maduro para descrever as relações d
 [[claude-code]] é um agente de desenvolvimento que demonstra os padrões na prática:
 - **Tool use:** lê/escreve arquivos, executa comandos, acessa MCP servers
 - **Loop de ação:** plan → execute → observe → repeat
-- **Subagentes:** delega subtarefas a agentes especializados ([[hooks-agente]] permitem reagir ao fim de cada subagente via `SubagentStop`)
+- **Subagentes:** delega subtarefas a agentes especializados, cada um com janela de contexto própria — ver [[wiki/concepts/subagentes]] ([[hooks-agente]] permitem reagir ao fim de cada subagente via `SubagentStop`)
+- **Worktrees:** paralelismo a nível de file system, alternativa aos subagentes quando as tarefas devem virar entregas/PRs separadas — ver [[wiki/concepts/worktree-paralelismo]]
 - **Memória:** [[claude-md]] persiste contexto entre sessões; [[context-compaction]] gerencia janela
 
 ## Key Sources
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
+- [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]

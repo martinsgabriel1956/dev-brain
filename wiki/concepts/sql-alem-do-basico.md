@@ -3,8 +3,8 @@ type: concept
 title: "SQL Além do Básico"
 aliases: ["sql avançado portfolio", "joins agregações subqueries", "domínio SQL"]
 date_created: 2026-04-25
-date_updated: 2026-04-25
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [sql, postgresql, mysql, portfolio, backend, banco-de-dados]
 skill: tech-mentor-leadership
 status: stub
@@ -54,7 +54,9 @@ PostgreSQL é o banco relacional mais comum em vagas backend modernas. Demonstra
 
 - [[portfolio-backend-junior]]
 - [[testes-integracao-banco-real]] — SQL complexo precisa de testes reais, não mocks
+- [[wiki/concepts/orm]] — ORM esconde SQL até você bater num caso de borda; dominar SQL é o que resolve esse caso
 
 ## Key sources
 
 - [[wiki/sources/diferenciais-portfolio-backend-junior]]
+- [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]

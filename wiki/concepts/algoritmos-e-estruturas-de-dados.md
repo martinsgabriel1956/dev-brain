@@ -3,8 +3,8 @@ type: concept
 title: "Algoritmos e Estruturas de Dados"
 aliases: ["DSA", "data structures", "estruturas de dados", "algoritmos"]
 date_created: 2026-05-16
-date_updated: 2026-06-01
-source_count: 3
+date_updated: 2026-07-03
+source_count: 4
 tags: [fundamentos, cs-fundamentals, algoritmos, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -68,3 +68,4 @@ Cada estrutura tem sua própria página com complexidade, analogias e quando usa
 - [[wiki/sources/akita-como-aprender-programacao]] — afirmação de que DSA é o que separa amadores de profissionais; por que linguagens modernas escondem essas estruturas; sequência de aprendizado
 - [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — DSA é parte pequena do todo; confundir DSA com lógica de programação seria "leviano"
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]] — introdução prática às cinco estruturas; três perguntas de decisão; quando usar cada uma
+- [[wiki/sources/engenheiro-vs-programador-mercado-ia]] — DSA como o primeiro dos fundamentos do "eixo vertical" da engenharia; explica por que sistemas degradam ao escalar de mil para cem mil usuários; livro-base Introduction to Algorithms (Cormen)

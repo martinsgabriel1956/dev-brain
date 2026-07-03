@@ -3,8 +3,8 @@ type: concept
 title: "Password Hashing"
 aliases: ["hashing de senhas", "armazenamento seguro de senhas", "password storage"]
 date_created: 2026-06-11
-date_updated: 2026-06-11
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [segurança, criptografia, password-hashing, autenticação]
 skill: tech-mentor-security
 status: stable
@@ -73,6 +73,11 @@ $hash = password_hash($password . $pepper, PASSWORD_ARGON2ID, [
 - [[concepts/ataque-pre-computacao]] — classe de ataques que password hashing mitiga
 - [[concepts/timing-attack]] — comparação de hashes deve usar tempo constante
 
+## Caso Real Citado: Vazamento no Ministério da Saúde
+
+[[wiki/entities/fabio-akita]] cita o vazamento de dados do Ministério da Saúde (Brasil) como exemplo de amadorismo: senhas de usuário gravadas como *plaintext* no banco. Heurística prática para identificar esse tipo de falha de fora: se um site oferece "receber sua senha esquecida por e-mail" (em vez de um link de reset), ele necessariamente armazena a senha em texto plano ou reversível — sinal de que a aplicação está insegura.
+
 ## Key Sources
 
 - [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
+- [[wiki/sources/akita-oferta-procura-matematica-carreira]]

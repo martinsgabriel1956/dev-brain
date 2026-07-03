@@ -3,8 +3,8 @@ type: concept
 title: "PostgreSQL"
 aliases: ["postgres", "pg"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [banco-de-dados, postgresql, relacional, jsonb, vetorial]
 skill: tech-mentor-system-design
 status: stable
@@ -31,6 +31,11 @@ Não migre para NoSQL por performance antes de:
 3. Configurar [[concepts/connection-pooling]] com PgBouncer
 4. Avaliar [[concepts/read-replicas]] para reads
 
+## Backend as a Service Ainda é Postgres
+
+Supabase é um exemplo de BaaS que expõe Postgres via API REST/realtime. Chamar a API não elimina SQL — por baixo, o motor continua sendo Postgres executando SQL. Ver [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]].
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
+- [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]

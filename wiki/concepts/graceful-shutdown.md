@@ -3,8 +3,8 @@ type: concept
 title: "Graceful Shutdown"
 aliases: ["desligamento gracioso", "encerramento controlado", "shutdown sequence"]
 date_created: 2026-06-01
-date_updated: 2026-06-01
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [resiliencia, backend, nodejs, processo, orquestrador, infraestrutura]
 skill: tech-mentor-backend
 status: draft
@@ -75,13 +75,19 @@ process.on('unhandledRejection', (reason) => { /* ... */ });
 
 O Kubernetes envia `SIGTERM` e aguarda um `terminationGracePeriodSeconds` (padrão 30s) antes de enviar `SIGKILL`. A aplicação deve completar o graceful shutdown dentro desse janela.
 
+## Caso por conexão: streaming (SSE/WebSocket)
+
+O mesmo princípio se aplica por conexão individual, não só no shutdown do processo inteiro: uma conexão [[wiki/concepts/server-sent-events|SSE]] mantida aberta precisa detectar quando o cliente fecha a aba/navegador (`req.on('close')`) e liberar recursos associados (inscrição em canal Redis, timers, buffers). Sem esse cleanup por conexão, o servidor acumula trabalho tentando escrever em conexões mortas — o mesmo problema do `process.exit()` abrupto, só que em escala de milhares de conexões individuais em vez de um único processo.
+
 ## Relação com outros conceitos
 
 - [[let-it-crash]] — graceful shutdown é a implementação do ciclo Let it Crash
 - [[asynclocalstorage]] — permite identificar o cliente específico a ser respondido durante o shutdown
 - [[excecao-vs-erro]] — graceful shutdown só é acionado por exceções, não por erros de domínio
 - [[robustez-de-sistemas]] — graceful shutdown é um dos atributos de um sistema robusto
+- [[wiki/concepts/server-sent-events]] — cleanup de conexão individual ao detectar desconexão do cliente
 
 ## Key sources
 
 - [[wiki/sources/let-it-crash-nodejs-asynclocalstorage]] — implementação completa em Node.js com Sequelize e AsyncLocalStorage
+- [[wiki/sources/server-sent-events-sse-tempo-real]] — cleanup de conexões SSE individuais ao detectar fechamento pelo cliente

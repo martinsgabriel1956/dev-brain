@@ -3,8 +3,8 @@ type: concept
 title: "BDD — Behavior-Driven Development"
 aliases: ["behavior driven development", "gherkin", "cucumber", "specs executáveis"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [testes, bdd, gherkin, cucumber, especificação, living-docs]
 skill: tech-mentor-testing
 status: stable
@@ -73,6 +73,9 @@ BDD sem engajamento do negócio = testes com sintaxe mais verbosa. Se só o dev 
 - [[living-documentation]] — output natural do BDD via CI
 - [[piramide-de-testes]] — BDD vive no topo/meio da pirâmide
 
+Vale notar: BDD é frequentemente citado como boa prática por pessoas que admitem ter pouca experiência prática com ele — reforça a "armadilha crítica" acima, já que é fácil recomendar BDD em tese sem ter sentido o overhead na prática.
+
 ## Key Sources
 
 - [[wiki/sources/bdd]]
+- [[wiki/sources/tdd-sdd-bdd-era-ia]] — cobertura mais rasa, autor declara pouca prática com BDD

@@ -3,8 +3,8 @@ type: concept
 title: "Portfólio Backend Júnior"
 aliases: ["portfólio primeira vaga", "diferenciais backend junior", "primeira vaga backend"]
 date_created: 2026-04-25
-date_updated: 2026-04-25
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [carreira, backend, junior, portfolio]
 skill: tech-mentor-leadership
 status: stable
@@ -38,6 +38,10 @@ O diferencial numa primeira vaga de backend não é arquitetura sofisticada — 
 
 > Uma aplicação bem testada é mais importante que uma com a melhor arquitetura do mundo.
 
+## Mirando pleno em vez de júnior
+
+Para tecnologias com menos vagas júnior formais (ex.: Go), a mesma lógica de portfólio se aplica com o alvo ajustado para cima: construir prova de nível pleno, não júnior, e usar isso para concorrer a vagas pleno oferecendo trabalhar por salário júnior. Ver [[wiki/concepts/ponte-fullstack-para-especializacao]] para a estratégia completa de migração via fullstack.
+
 ## Relações
 
 - [[testes-integracao-banco-real]]
@@ -47,7 +51,9 @@ O diferencial numa primeira vaga de backend não é arquitetura sofisticada — 
 - [[sql-alem-do-basico]]
 - [[observabilidade]]
 - [[curriculo-vs-portfolio]]
+- [[wiki/concepts/ponte-fullstack-para-especializacao]]
 
 ## Key sources
 
 - [[wiki/sources/diferenciais-portfolio-backend-junior]]
+- [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]

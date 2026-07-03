@@ -3,8 +3,8 @@ type: concept
 title: "Datomic"
 aliases: ["datomic db", "immutable database"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [datomic, event-sourcing, imutabilidade, clojure, fintech, time-travel]
 skill: tech-mentor-backend
 status: draft
@@ -51,6 +51,11 @@ O [[nubank]] escolheu Datomic porque:
 
 Datomic é essencialmente [[event-sourcing]] no nível do banco de dados. A diferença: em Event Sourcing você design seus próprios eventos; Datomic gerencia isso internamente com datoms.
 
+## Linguagem de Query: Datalog em vez de SQL
+
+Datomic é citado em [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] como exemplo concreto de que a camada 2 de um banco de dados (comunicação/query) não precisa ser SQL — Datomic usa **Datalog**. Isso ilustra o ponto central da fonte: SQL é uma escolha de linguagem de query entre várias possíveis, não uma parte obrigatória do que é "um banco de dados".
+
 ## Key Sources
 
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
+- [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
