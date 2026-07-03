@@ -4,7 +4,7 @@ title: "ORM (Object-Relational Mapping)"
 aliases: ["orm", "object relational mapping", "mapeamento objeto-relacional"]
 date_created: 2026-07-03
 date_updated: 2026-07-03
-source_count: 1
+source_count: 2
 tags: [orm, sql, banco-de-dados, prisma, hibernate, doctrine, abstracao]
 skill: tech-mentor-backend
 status: stub
@@ -36,6 +36,8 @@ SELECT * FROM users WHERE active = true;
 
 Um ORM esconde SQL até você bater num caso de borda — query complexa, agregação pesada, ou performance ruim por N+1 queries. Nesses casos, entender o SQL gerado (ou escrever raw SQL) continua sendo necessário. Ver [[wiki/concepts/sql-alem-do-basico]] — dominar SQL além do ORM é um diferencial de portfólio.
 
+Em sistemas com relacionamentos muito profundos e muitas chaves compostas, algumas lógicas ficam quase impossíveis de expressar via ORM — nesse ponto, SQL direto deixa de ser opcional. Escrever a query diretamente também dá mais controle sobre otimização: você sabe exatamente quais tabelas relaciona, quais colunas retorna e se está batendo o [[wiki/concepts/database-index|índice]], algo que queries geradas por ORM tendem a não garantir. Ver [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]].
+
 ## Alternativas
 
 - **DSL customizada** — ver [[wiki/concepts/domain-specific-language]]
@@ -45,3 +47,4 @@ Um ORM esconde SQL até você bater num caso de borda — query complexa, agrega
 ## Key Sources
 
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
+- [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]

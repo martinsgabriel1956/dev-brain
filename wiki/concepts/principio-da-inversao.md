@@ -3,8 +3,8 @@ type: concept
 title: "Princípio da Inversão"
 aliases: ["inversion principle", "inverter sempre inverta", "Jacobi inversion", "Munger inversion"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [modelo-mental, resolução-de-problemas, carreira, mentalidade]
 skill: tech-mentor-leadership
 status: stable
@@ -42,12 +42,19 @@ O [[sources/principio-da-inversao-programador]] aplica o modelo para identificar
 | Ignorar novas tecnologias | Estagnação tem custo — [[concepts/atualizacao-tecnologica]] |
 | Só assistir tutoriais | Prática é insubstituível — [[concepts/tutorial-hell]] |
 
+## Relação com outros modelos mentais de decisão
+
+Assim como o princípio da inversão, [[wiki/concepts/skin-in-the-game]] e [[wiki/concepts/antifragilidade]] (ambos de Nassim Taleb) são heurísticas para decidir sob incerteza sem depender de previsão certeira: em vez de tentar prever o resultado certo, a inversão pergunta "o que garante o pior resultado", e a antifragilidade pergunta "qual aposta limita minha perda se eu errar".
+
 ## Ver também
 
 - [[concepts/aprendizado-deliberado]] — prática como mecanismo de seleção
 - [[entities/charlie-munger]] — principal popularizador do modelo
 - [[entities/karl-gustav-jakob-jacobi]] — origem matemática
+- [[wiki/concepts/antifragilidade]] — outro modelo mental de decisão sob incerteza
+- [[wiki/concepts/decisao-terceirizada]] — o oposto do que esses modelos propõem: decidir sem raciocínio próprio
 
 ## Key Sources
 
 - [[sources/principio-da-inversao-programador]]
+- [[wiki/sources/pare-de-terceirizar-suas-decisoes]]

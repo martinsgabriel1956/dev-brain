@@ -4,7 +4,7 @@ title: "Complexidade Acidental"
 aliases: ["accidental complexity", "essential complexity"]
 date_created: 2026-05-31
 date_updated: 2026-07-03
-source_count: 2
+source_count: 3
 tags: [complexidade-acidental, programacao-funcional, out-of-the-tar-pit, arquitetura]
 skill: tech-mentor-backend
 status: stable
@@ -47,7 +47,12 @@ Distinção do paper *"Out of the Tar Pit"* (Moseley & Marks): **complexidade es
 
 [[wiki/sources/engenheiro-vs-programador-mercado-ia|A fonte]] cita a mesma dicotomia essencial/acidental a partir de *The Mythical Man-Month* (Frederick Brooks, 1975), independente de "Out of the Tar Pit": o programador lida com complexidade acidental o dia inteiro (configurar ferramenta, framework, dependências); o engenheiro foca em minimizar a complexidade acidental para lidar com a complexidade essencial do problema real. Ver [[wiki/concepts/engenheiro-vs-programador]].
 
+## Terceira fonte: por que a indústria vendeu "aprenda o framework" como suficiente
+
+[[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] usa a mesma dicotomia para explicar por que operadores de CRUD travam quando o sistema escala: aprender o framework da vez resolve só a complexidade acidental — e a indústria vendeu essa parte como a história toda (sobretudo até ~2022) porque era a necessidade imediata do mercado. A complexidade essencial (concorrência, consistência, falha, escala) só aparece quando o sistema cresce, a rede falha no meio de uma transação, ou duas requisições colidem — e é aí que quem só sabe CRUD fica refém do framework.
+
 ## Key Sources
 
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]] — mesma distinção essencial/acidental via Frederick Brooks (Mythical Man-Month), não Out of the Tar Pit
+- [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — por que "aprenda o framework" foi vendido como suficiente até o sistema escalar

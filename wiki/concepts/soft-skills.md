@@ -3,8 +3,8 @@ type: concept
 title: "Soft Skills"
 aliases: ["habilidades humanas", "habilidades interpessoais", "people skills"]
 date_created: 2026-05-19
-date_updated: 2026-05-19
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [soft-skills, carreira, liderança, comunicação, colaboração]
 skill: tech-mentor-leadership
 status: stable
@@ -38,7 +38,11 @@ Hard skills abrem a porta. Soft skills determinam o quanto você avança depois 
 - [[wiki/concepts/autodidata]] — mentalidade autodidata é soft skill aplicada ao aprendizado técnico
 - [[wiki/concepts/burnout-dev]] — inteligência emocional fraca é risco direto de burnout
 - [[wiki/concepts/foco-profundo]] — autonomia depende de foco sem supervisão
+- [[wiki/concepts/comunicacao-persuasiva]] — recorte tático da comunicação: vender decisão técnica em linguagem de negócio
+- [[wiki/concepts/habilidade-de-lidar-com-pessoas]] — recorte de Renato Augusto/Dale Carnegie sobre confiança e influência interpessoal
+- [[wiki/concepts/imagem-profissional]] — aparência e autopercepção como soft skill negligenciada
 
 ## Key Sources
 
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]
+- [[wiki/sources/3-soft-skills-que-poucos-programadores-dominam]] — comunicação persuasiva, imagem profissional e a estatística (não verificada) de 85% interpessoal / 15% técnico

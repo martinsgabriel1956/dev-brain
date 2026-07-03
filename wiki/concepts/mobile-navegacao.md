@@ -3,8 +3,8 @@ type: concept
 title: "Navegação Mobile"
 aliases: ["react navigation", "navigation compose", "gorouter flutter", "mobile routing"]
 date_created: 2026-04-24
-date_updated: 2026-04-24
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [mobile, navegacao, react-navigation, navigation-compose, gorouter, stack, tab]
 skill: tech-mentor-mobile
 status: stable
@@ -71,6 +71,10 @@ final router = GoRouter(routes: [
 ]);
 ```
 
+## O Risco Escondido: Memória e Ciclo de Vida
+
+Cada tela empilhada na navigation stack não é "de graça" — ela segura estado, imagens, listeners e a árvore de views inteira na memória. Se o ciclo de vida de cada tela (criada → ativa → pausada → destruída) não é gerenciado corretamente, a memória só sobe: telas que deveriam ter morrido continuam vivas, listeners que ninguém cancelou continuam escutando, imagens que ninguém liberou continuam ocupando RAM. O sintoma final é o sistema operacional matando o app por falta de memória. A diferença entre o app que trava e o que "voa" está exatamente em entender estado e ciclo de vida, não em empilhar mais uma tela. Ver [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]].
+
 ## Ver também
 
 - [[mobile-deep-links]] — integrar deep links com navegação
@@ -79,3 +83,4 @@ final router = GoRouter(routes: [
 ## Key Sources
 
 - [[wiki/sources/mobile-navegacao]]
+- [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — vazamento de memória por navigation stack e ciclo de vida mal gerenciados; OOM kill como sintoma final

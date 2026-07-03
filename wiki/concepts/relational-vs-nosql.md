@@ -4,7 +4,7 @@ title: "Relacional vs NoSQL"
 aliases: ["sql vs nosql", "relational vs document", "escolha de banco"]
 date_created: 2026-04-22
 date_updated: 2026-07-03
-source_count: 2
+source_count: 4
 tags: [banco-de-dados, nosql, postgresql, system-design, trade-offs]
 skill: tech-mentor-system-design
 status: stable
@@ -40,7 +40,23 @@ Não existe escolha universal. Cada tipo resolve um problema diferente.
 
 Essa comparação (relacional vs. NoSQL) é frequentemente confundida com uma discussão diferente: se a aplicação deve escrever SQL diretamente no código ou abstrair isso via [[wiki/concepts/orm]]/[[wiki/concepts/domain-specific-language]]. São eixos ortogonais — você pode usar SQL cru ou um ORM tanto num banco relacional quanto (via camadas de tradução) sobre um BaaS documental. Ver [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]].
 
+## Por Domínio de Negócio: ACID vs. BASE
+
+Além do eixo técnico (queries, escala, schema), a escolha também depende do domínio:
+
+| Quer consistência forte ([[wiki/concepts/acid]]) | Quer disponibilidade/escala ([[wiki/concepts/base-basically-available-soft-state-eventual|BASE]]) |
+|---|---|
+| Pagamentos, bancos, estoque, tickets | Redes sociais, analytics, logs, cache, recomendação |
+
+Na prática, essa regra não é absoluta: já existem bancos relacionais usados onde não precisavam e bancos NoSQL usados em instituições de pagamento. Ver [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]].
+
+## Critério Prático: Precisa de Junções Múltiplas?
+
+Se o sistema precisa alcançar um mesmo dado por vários caminhos diferentes via junções (essencialmente teoria dos conjuntos), a necessidade de um schema formalizado e relacionamentos declarados aponta para banco relacional. Já cenários de dado não estruturado, machine learning ou data lake tendem a se encaixar melhor em não relacional — não como categoria única, mas por estratégia (grafo, documento, etc., conforme a necessidade específica). Bancos relacionais modernos com coluna JSON indexável (ver [[wiki/concepts/postgresql]]) já cobrem boa parte do que levaria alguém a montar uma infraestrutura poliglota. Ver [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]].
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
+- [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] — quadro de decisão ACID vs. BASE por domínio de negócio
+- [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]

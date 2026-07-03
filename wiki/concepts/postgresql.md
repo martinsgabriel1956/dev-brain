@@ -4,7 +4,7 @@ title: "PostgreSQL"
 aliases: ["postgres", "pg"]
 date_created: 2026-04-22
 date_updated: 2026-07-03
-source_count: 2
+source_count: 3
 tags: [banco-de-dados, postgresql, relacional, jsonb, vetorial]
 skill: tech-mentor-system-design
 status: stable
@@ -35,7 +35,12 @@ Não migre para NoSQL por performance antes de:
 
 Supabase é um exemplo de BaaS que expõe Postgres via API REST/realtime. Chamar a API não elimina SQL — por baixo, o motor continua sendo Postgres executando SQL. Ver [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]].
 
+## JSONB como Ponte para NoSQL
+
+A coluna `JSONB` indexável é o motivo prático de muita gente não precisar de uma infraestrutura poliglota: cobre boa parte do caso de uso que levaria alguém a adotar um banco não relacional para dado semi-estruturado. Ver [[wiki/concepts/relational-vs-nosql]] e [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]].
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
+- [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]

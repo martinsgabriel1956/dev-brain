@@ -3,8 +3,8 @@ type: concept
 title: "Definição de Pronto"
 aliases: ["definition of done", "DoD", "o que é pronto", "pronto de verdade"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 2
+date_updated: 2026-07-03
+source_count: 3
 tags: [hábitos, qualidade, craftsmanship, código, entrega, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -45,12 +45,18 @@ Código que só você entende não está pronto — é um rascunho. A "maior ima
 
 Outro sintoma: revisar o próprio PR focando em estilização e formatação em vez de regra de negócio. Estilo é mais fácil de checar — mas regra de negócio é o que importa.
 
+## Prioridade: regra de negócio antes de estilo
+
+A ordem importa. Primeiro confirmar que a implementação cobre a regra de negócio pedida — código limpo que não resolve o pedido do PO não é "pronto", é só bonito. Formatação e convenções vêm depois. Ver [[wiki/concepts/code-review]].
+
 ## Ver também
 
 - [[testar-proprio-codigo]] — um dos critérios de "pronto"
 - [[atomic-commits]] — commits que representam unidades funcionais prontas
+- [[wiki/concepts/pensamento-em-producao]] — "pronto" só se confirma depois de validar em produção
 
 ## Key Sources
 
 - [[wiki/sources/habitos-ruins-de-programador]]
 - [[wiki/sources/4-habitos-programador-ineficiente]]
+- [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] — regra de negócio como critério #1, antes de estilo

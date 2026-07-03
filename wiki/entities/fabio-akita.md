@@ -4,7 +4,7 @@ title: "Fábio Akita"
 aliases: ["Akita", "Akita On Rails"]
 date_created: 2026-05-16
 date_updated: 2026-07-03
-source_count: 2
+source_count: 3
 tags: [pessoa, programador, youtuber, brasil]
 skill: tech-mentor-leadership
 status: stable
@@ -35,7 +35,12 @@ Programador brasileiro, criador de conteúdo técnico no canal *Akita On Rails* 
 
 Defende que o mercado de programação segue [[wiki/concepts/ciclo-de-mercado-tech|ciclos de abundância e depressão]] regidos por oferta e procura, e que [[wiki/concepts/raciocinio-matematico-aplicado|raciocínio matemático básico]] — não a linguagem da moda — é o que diferencia profissionais entre ciclos. Crítico de [[wiki/concepts/apego-a-ferramentas|apego a ferramentas]] específicas ("tecnologia não é time de futebol").
 
+## Visão de Tomada de Decisão
+
+Rejeita explicitamente o papel de conselheiro de carreira: recusa-se a dizer o que alguém deve estudar ou decidir, argumentando que ninguém tem [[wiki/concepts/skin-in-the-game|skin in the game]] suficiente na vida alheia para opinar com propriedade sobre [[wiki/concepts/decisao-terceirizada|decisões terceirizadas]]. Defende [[wiki/concepts/antifragilidade|apostas antifrágeis]] de ~10 anos em tecnologia (ex.: aposta pessoal em Ruby on Rails em 2005) em vez de tentar prever com certeza a próxima tecnologia vencedora. Critica o [[wiki/concepts/cargo-cult-tecnologico|cargo cult tecnológico]] de copiar arquitetura de Netflix/Google/Facebook sem considerar o próprio contexto de escala — "compare-se com o dia um deles, não com a versão madura de hoje". Também nomeia a [[wiki/concepts/falacia-do-custo-afundado|falácia do custo afundado]] como o principal motivo de as pessoas persistirem em cursos e livros ruins.
+
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]]
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]]
+- [[wiki/sources/pare-de-terceirizar-suas-decisoes]]

@@ -3,8 +3,8 @@ type: concept
 title: "MVP (Minimum Viable Product)"
 aliases: ["mvp", "produto mínimo viável", "minimum viable product"]
 date_created: 2026-04-29
-date_updated: 2026-04-29
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [projetos, produtividade, entrega, planejamento, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -38,11 +38,17 @@ O menor conjunto de funcionalidades que (1) resolve o problema central e (2) pod
 
 Se o MVP não gera vergonha, está grande demais.
 
+## MVP e Vibe Coding
+
+MVPs e protótipos são o contexto onde [[wiki/concepts/vibe-coding]] entrega valor real: validar uma hipótese de negócio rapidamente, sem o custo de implementação manual completa. O risco não é usar vibe coding para validar — é confundir o MVP validado com um sistema pronto para produção sem revisão arquitetural, de segurança e de contexto de negócio. Ver [[wiki/sources/vibe-coding-limites-maturidade-profissional]].
+
 ## Ver Também
 
 - [[concepts/scope-creep]] — inimigo principal do MVP
 - [[concepts/dopamina-e-projetos]] — entrega do MVP gera dopamina real, não apenas antecipada
+- [[wiki/concepts/vibe-coding]] — ferramenta natural para construir MVPs rápido
 
 ## Key Sources
 
 - [[sources/por-que-devs-nao-terminam-projetos]]
+- [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — MVP como um dos contextos onde vibe coding brilha

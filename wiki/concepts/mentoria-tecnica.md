@@ -3,8 +3,8 @@ type: concept
 title: "Mentoria Técnica"
 aliases: ["mentoring", "mentorar júniors", "replicar conhecimento"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [carreira, mentoria, liderança, júnior, cultura, crescimento]
 skill: tech-mentor-leadership
 status: stable
@@ -41,12 +41,19 @@ Mentorar força clareza. Se você não consegue explicar uma decisão técnica p
 
 De nada adianta contratar bons júniors e abandoná-los — ver [[contratacao-barra-alta]].
 
+## O outro lado: por que o code review do sênior sai seco
+
+Falta de tempo, não má vontade, costuma ser a causa de comentários secos ou pouco explicados num [[wiki/concepts/code-review]] — sêniors sobrecarregados revisam entre outras entregas, sem espaço para explicar o "porquê". Isso reforça a importância de sessões dedicadas de mentoria, separadas do review em si, para o júnior não interpretar falta de tato como julgamento.
+
 ## Ver também
 
 - [[one-on-one]] — formato estruturado de acompanhamento individual
 - [[contratacao-barra-alta]] — contratar bem é o primeiro passo, mentorar é o segundo
+- [[wiki/concepts/code-review]] — o momento onde a falta de mentoria estruturada mais dói
+- [[wiki/concepts/sindrome-do-impostor]] — o que a ausência de mentoria alimenta no júnior
 
 ## Key Sources
 
 - [[wiki/sources/desenvolvedor-acima-da-media-10-itens]]
 - [[wiki/sources/habitos-ruins-de-programador]]
+- [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] — comentários secos no review costumam vir de falta de tempo, não de má intenção

@@ -4,7 +4,7 @@ title: "WebSocket vs Polling"
 aliases: ["websocket", "long polling", "http polling", "sse"]
 date_created: 2026-04-22
 date_updated: 2026-07-03
-source_count: 3
+source_count: 4
 tags: [system-design, websocket, realtime, protocolo, chat]
 skill: tech-mentor-system-design
 status: stable
@@ -57,3 +57,4 @@ Para sistemas com poucos usuários simultâneos e tolerância a delay de segundo
 - [[sources/case-whatsapp]]
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — implementação prática de SSE e long polling, erros comuns de produção
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — quando polling é a resposta certa em entrevista; LB L4 vs L7; erros mais comuns
+- [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] — WhatsApp citado como exemplo de arquitetura que exige LB de camada 4 por usar WebSocket (vídeo dedicado à arquitetura completa ainda não ingerido)

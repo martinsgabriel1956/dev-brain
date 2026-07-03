@@ -56,3 +56,7 @@ Banco de dados persiste estado. PostgreSQL é o default — migre só quando ele
 > "50 pods × 20 conexões = 1000 conexões → PgBouncer → 20 conexões reais no PostgreSQL"
 
 > "Read replicas não substituem queries lentas — otimize os índices primeiro"
+
+## Ver também
+
+- [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]] — quando SQL direto se torna necessário (chaves compostas), organização de regra de negócio via stored procedure/materialized view, e regra prática de relatório sempre bater em réplica

@@ -4,7 +4,7 @@ title: "Protocolo de Rede"
 aliases: ["network protocol", "TCP/IP", "HTTP", "modelo em camadas", "OSI"]
 date_created: 2026-06-26
 date_updated: 2026-07-03
-source_count: 3
+source_count: 5
 tags: [cs-fundamentals, redes, protocolos, tcp-ip, http, networking]
 skill: cs-fundamentals
 status: draft
@@ -67,6 +67,14 @@ Nem toda comunicação HTTP segue request→resposta→fim. [[wiki/concepts/serv
 
 Diferente do SSE (que nunca sai do HTTP), o WebSocket começa como uma requisição HTTP comum, mas carrega cabeçalhos especiais (`Upgrade: websocket`, `Connection: Upgrade`) que pedem ao servidor para trocar de protocolo. Depois desse handshake, a conexão deixa de falar HTTP e passa a ser um túnel TCP bidirecional cru, mantido aberto — daí a exigência de [[wiki/concepts/load-balancer|load balancer de camada 4]], que opera no nível de TCP e não entende (nem precisa entender) o conteúdo que passa por dentro.
 
+## UDP em tempo real: jogos e videochamada
+
+Jogos online (ex.: FPS) e videochamada (ex.: Google Meet) usam UDP em vez de TCP/HTTP porque toleram perda de pacote em troca de velocidade — é por isso que uma chamada de vídeo "pixela" ou trava quando a rede piora: os pacotes perdidos simplesmente não são reenviados. Encapsular cada frame/tiro numa requisição HTTP seria inviável (overhead de desempacotar sessão, headers e cookies a cada interação). Esse tipo de tráfego exige [[wiki/concepts/load-balancer|load balancer de camada 4]], que só encaminha bytes por IP/porta sem interpretar o conteúdo.
+
+## O que acontece antes do primeiro byte de um JSON
+
+Antes de qualquer resposta HTTP chegar, três etapas já consumiram latência: **DNS** resolve o nome para IP, o **TCP three-way handshake** (SYN, SYN-ACK, ACK) abre a conexão, e o **TLS** negocia a criptografia por cima dela — só então o HTTP trafega. Quando um app está lento, o gargalo costuma estar numa dessas camadas, não no código de tela; quem entende essa sequência debuga em minutos o que quem só opera CRUD leva dias chutando. Ver [[wiki/concepts/bluetooth-le]] para o equivalente em conexões sem fio de curto alcance (advertising → scan → pair → GATT, em vez de DNS → TCP → TLS).
+
 ## Relação com outros conceitos
 
 - [[abstracao]] — o modelo em camadas é abstração aplicada a redes: cada camada esconde como a de baixo funciona
@@ -79,3 +87,5 @@ Diferente do SSE (que nunca sai do HTTP), o WebSocket começa como uma requisiç
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — SSE como tunelamento HTTP/TCP mantido aberto
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — handshake HTTP→TCP do WebSocket e por que exige LB de camada 4
+- [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] — UDP em jogos e videochamada; analogia dos Correios para camada 4 (caminhoneiro) vs camada 7 (atendente/triagem)
+- [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — DNS → TCP handshake → TLS → HTTP como latência escondida atrás de "digitar uma URL e apertar enter"

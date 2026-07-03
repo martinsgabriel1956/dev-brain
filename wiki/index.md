@@ -1,6 +1,8 @@
 ---
 type: index
 date_updated: 2026-07-03
+
+
 ---
 
 # Wiki Index
@@ -9,7 +11,14 @@ date_updated: 2026-07-03
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] | André Casciotti: não peça permissão, separe mudanças em partes coesas, use automações pessoais como veículo de prática de baixo risco |
+| [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] | 5 passos para reduzir a fricção do primeiro code review: regra de negócio antes de estilo, revisar com IA sem virar dependência, testar em ambiente externo, não levar comentários pro pessoal, validar em produção |
+| [[wiki/sources/pare-de-terceirizar-suas-decisoes]] | Akita: pare de terceirizar decisões de carreira para influencers e de parar de cargo-cultar stack de big tech — skin in the game, antifragilidade e custo afundado |
+| [[wiki/sources/3-soft-skills-que-poucos-programadores-dominam]] | Renato Augusto: comunicação persuasiva (gatilhos de urgência/ganância), imagem profissional mesmo em home office, e habilidade de lidar com pessoas (Dale Carnegie) como as soft skills que a IA não substitui |
+| [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] | ACID (atomicidade, consistência, isolamento, durabilidade) vs. BASE (basically available, soft state, eventual consistency) — o tradeoff corretude/performance vs. disponibilidade/escala, e quando usar cada um |
+| [[wiki/sources/vibe-coding-limites-maturidade-profissional]] | Vibe coding brilha em MVPs, protótipos, docs e testes; sistemas sustentáveis e seguros ainda exigem arquitetura, contexto de negócio e julgamento humano — vendê-los como prontos sem isso é ilusão e desonestidade |
 | [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] | SQL é linguagem, não banco de dados — a confusão do Twitter na thread de Uncle Bob, e o que um banco relacional faz por baixo (B-tree, WAL, parser, planner) |
+| [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]] | Q&A: ORM inviável com relacionamentos profundos/chaves compostas força SQL direto; stored procedure com moderação; relatório sempre bate em réplica; relacional vs. não relacional depende da necessidade de junções múltiplas |
 | [[wiki/sources/chain-of-thought-prompting]] | CoT prompting (Wei et al., 2022) — passos intermediários como exemplares few-shot é uma capacidade emergente de ~100B+ parâmetros; supera GPT-3 fine-tuned no GSM8K via prompting apenas |
 | [[wiki/sources/microsoft-prompt-engineering-guide]] | Quatro padrões de prompt engineering (Tell/Show/Describe/Remind) + Software 3.0 — guia prático da Microsoft para obter boas completions do Codex/GPT |
 | [[wiki/sources/gpt3-language-models-are-few-shot-learners]] | GPT-3 (175B) formaliza in-context learning — aprender tarefas via exemplos no prompt sem atualizar pesos; few-shot rivaliza com fine-tuned SOTA em vários benchmarks |
@@ -85,6 +94,9 @@ date_updated: 2026-07-03
 | [[wiki/sources/updates-tempo-real-polling-sse-websocket]] | Polling, SSE e WebSocket sob a lente de entrevista — quando polling simples é a resposta certa, LB L4 vs L7, tópico por usuário no Redis Pub/Sub, tabela de mensagens pendentes para offline |
 | [[wiki/sources/atrofia-cognitiva-ia-programacao]] | Sintaxe já era irrelevante antes da IA (autocomplete + Google); conhecimento perene (401/500, debugging de produção) é o que importa; fundação sólida torna atrofia reversível, mas quem aprendeu já com IA não tem o que recuperar |
 | [[wiki/sources/tdd-sdd-bdd-era-ia]] | TDD (red-green-refactor), SDD (contrato de boundary — OpenAPI/Protobuf/GraphQL) e BDD (Gherkin) como práticas com viés comportamental que também funcionam impostas sobre IA; proibir a IA de deletar testes que falham |
+| [[wiki/sources/iso-27001-dicionario-programador]] | SGSI organizado em torno da tríade CIA; Anexo A 2022 com 93 controles em 4 temas; controles A.8.28/A.5.15/A.5.8/A.8.25/A.5.3 relevantes para devs; Policy as Code (OPA/Gatekeeper) como implementação; ISO 42001 para governança de IA |
+| [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] | Tipos de load balancer (hardware/software/cloud), por que AWS/Azure separam LB de camada 4 e 7, e algoritmos de balanceamento (Round Robin, Weighted, Least Connections, Least Time, Sticky) com demo prática em Nginx |
+| [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] | "Operador de CRUD" vs. engenheiro — o mundo debaixo do CRUD (redes, Bluetooth, streams, mobile, banco de dados); IA entrega o fácil, não o simples; repertório é a cola que a IA não substitui |
 
 ## Concepts
 
@@ -108,6 +120,8 @@ date_updated: 2026-07-03
 | Página | Hook |
 |---|---|
 | [[wiki/concepts/soft-skills]] | Habilidades humanas que potencializam o técnico — o multiplicador da carreira |
+| [[wiki/concepts/code-review]] | Regra de negócio antes de estilo — e por que o primeiro review de um júnior costuma vir cheio de comentários |
+| [[wiki/concepts/sindrome-do-impostor]] | Confundir "código reprovado" com "eu fui reprovado" — o gatilho mais comum no primeiro emprego |
 | [[wiki/concepts/comunicacao-tecnica]] | Ser entendido, não apenas falar — acelerador de time |
 | [[wiki/concepts/colaboracao-times]] | Construir junto; empatia de papel e gestão de conflito |
 | [[wiki/concepts/autonomia-responsabilidade]] | Liberdade + maturidade para alinhar expectativas antes de executar |
@@ -129,8 +143,21 @@ date_updated: 2026-07-03
 | [[wiki/concepts/governanca-de-codigo-gerado-por-ia]] | Quanto mais IA gera código, mais se precisa de engenheiros para governá-lo — metralhadora para quem não sabe mirar |
 | [[wiki/concepts/pensamento-em-producao]] | Código escrito é 10% do trabalho; os outros 90% são o sistema rodando em produção com usuários reais |
 | [[wiki/concepts/arquitetura-de-software]] | Não existe arquitetura boa para tudo — existe arquitetura certa para o contexto certo |
+| [[wiki/concepts/contexto-organizacional-para-arquitetura]] | Maturidade de plataforma, processo e know-how da empresa como restrição real de arquitetura — não só a tecnologia "certa" em abstrato |
+| [[wiki/concepts/confidencialidade-de-dados-em-prompts-ia]] | Não jogar código ou dado corporativo sigiloso em ferramentas de IA de terceiros fora do perímetro da empresa |
 | [[wiki/concepts/ponte-fullstack-para-especializacao]] | Migrar de frontend para backend numa stack de nicho (Go): mirar pleno, não júnior, e usar vaga fullstack como ponte de entrada |
 | [[wiki/concepts/sintaxe-vs-conhecimento-perene]] | Memorizar sintaxe já era irrelevante antes da IA — o que não se atrofia é o julgamento sobre causa/efeito (erros HTTP, debugging de produção) |
+| [[wiki/concepts/decisao-terceirizada]] | Pedir para influencer/palestrante decidir sua carreira por você — falha porque ninguém tem contexto da sua história nem skin in the game |
+| [[wiki/concepts/skin-in-the-game]] | Só vale ouvir com propriedade quem arca com o prejuízo se o próprio conselho der errado |
+| [[wiki/concepts/antifragilidade]] | Antifrágil não é prejuízo zero, é pouco prejuízo — apostar em várias tecnologias/décadas em vez de tentar acertar 100% |
+| [[wiki/concepts/cargo-cult-tecnologico]] | Copiar a stack de Netflix/Google/Facebook sem ter a escala deles — compare-se com o dia um delas, não com a versão madura |
+| [[wiki/concepts/falacia-do-custo-afundado]] | Continuar um livro/curso ruim só porque já investiu tempo nele só aumenta o prejuízo |
+| [[wiki/concepts/curva-de-adocao-tecnologica]] | Toda tecnologia segue uma curva em S — início devagar, crescimento exponencial, desaceleração; nada dura para sempre |
+| [[wiki/concepts/granularidade-de-mudanca]] | Mudança grande gera barreira grande — separe em partes pequenas e coesas que ainda gerem valor real |
+| [[wiki/concepts/automacao-pessoal-para-aprender]] | Automações pessoais fora do pipeline da empresa como veículo de prática deliberada de baixo risco |
+| [[wiki/concepts/comunicacao-persuasiva]] | Vender decisão técnica (refatoração) com gatilhos de urgência/ganância em linguagem de negócio, não em jargão técnico |
+| [[wiki/concepts/imagem-profissional]] | Aparência mesmo em home office afeta autopercepção e percepção alheia de liderança — evidência citada é fraca/não rastreável |
+| [[wiki/concepts/habilidade-de-lidar-com-pessoas]] | Confiança e influência interpessoal (Dale Carnegie) como maior alavanca de sucesso profissional segundo Renato Augusto — estatística 85/15 sem fonte primária rastreável |
 
 ### Qualidade de Software com IA
 
@@ -294,6 +321,7 @@ date_updated: 2026-07-03
 | [[wiki/concepts/compilador]] | Traduz código-fonte em código de máquina via lexer → parser → AST → otimizador |
 | [[wiki/concepts/protocolo-de-rede]] | Regras de comunicação em camadas — HTTP diz o quê, TCP garante entrega, IP define rota |
 | [[wiki/concepts/criptografia]] | Hashing irreversível, simétrica (mesma chave) e assimétrica (par público/privado) — base do HTTPS |
+| [[wiki/concepts/bluetooth-le]] | Advertising → scan → pair → GATT — o "handshake" do Bluetooth Low Energy; gerenciar mal o ciclo gera conexão fantasma e dreno de bateria |
 
 ### Fundamentos de Lógica e Programação
 
@@ -386,6 +414,14 @@ date_updated: 2026-07-03
 |---|---|
 | [[wiki/concepts/orm]] | ORM não elimina SQL, gera SQL por baixo dos panos — abstração, não substituição |
 | [[wiki/concepts/domain-specific-language]] | DSL para banco de dados quase sempre é wrapper em cima de SQL; Datalog do Datomic é a exceção real |
+| [[wiki/concepts/acid]] | Atomicidade, Consistência, Isolamento, Durabilidade — garantias fortes dos bancos relacionais |
+| [[wiki/concepts/base-basically-available-soft-state-eventual]] | O contraponto de ACID — disponibilidade e escala em troca de consistência eventual |
+| [[wiki/concepts/relational-vs-nosql]] | Não existe escolha universal; trade-offs de consistência, queries, escala e schema por tipo de banco |
+| [[wiki/concepts/database-transactions]] | Mecanismo que garante atomicidade — `$transaction` como invocação do contrato ACID |
+| [[wiki/concepts/database-index]] | Estrutura (B-tree/hash) que acelera queries e garante unicidade ao custo de overhead em escritas |
+| [[wiki/concepts/consistency-models]] | Espectro de Linearizability a Eventual Consistency — o que um cliente pode observar após uma escrita |
+| [[wiki/concepts/stored-procedure]] | Lógica armazenada e executada no banco — mover regra de negócio pra lá compensa em agregação de grande volume, mas com moderação |
+| [[wiki/concepts/materialized-view]] | View com resultado persistido em disco — meio-termo entre SQL cru repetido e stored procedure |
 
 ### Arquitetura Backend & Event-Driven
 
@@ -441,6 +477,11 @@ date_updated: 2026-07-03
 | [[wiki/concepts/memory-hard]] | Ocupa RAM por instância — limita paralelismo de GPU pelo gargalo de VRAM |
 | [[wiki/concepts/rainbow-table]] | Tabela hash→senha pré-computada — reutilizável contra qualquer banco sem salt |
 | [[wiki/concepts/ataque-pre-computacao]] | Trabalho feito uma vez, reutilizado em múltiplos vazamentos — salt invalida o reaproveitamento |
+| [[wiki/concepts/iso-27001]] | Framework de gestão (SGSI) organizado em torno da tríade CIA — 93 controles do Anexo A em 4 temas, SoA justifica o que se aplica |
+| [[wiki/concepts/sgsi-isms]] | O objeto central que a ISO 27001 exige: políticas + processos + tecnologia geridos como sistema, não ferramenta isolada |
+| [[wiki/concepts/triade-cia]] | Confidencialidade, integridade, disponibilidade — o critério que justifica todo controle de segurança da informação |
+| [[wiki/concepts/segregacao-de-funcoes]] | Quem desenvolve não deve poder fazer deploy sozinho — controle A.5.3, tenso em times pequenos |
+| [[wiki/concepts/iso-42001]] | Governança de IA responsável — cobre a lacuna que a ISO 27001 deixa em aberto com LLMs |
 
 ### Frontend & Design Engineering
 
@@ -470,7 +511,8 @@ date_updated: 2026-07-03
 |---|---|
 | [[wiki/entities/bernardo-lobato]] | Desenvolvedor e criador de conteúdo brasileiro — arquitetura de software e padrões avançados |
 | [[wiki/entities/linuxtips]] | Plataforma brasileira de educação em tecnologia — DevOps, Cloud, Kubernetes, podcast Papinho Tech Solo |
-| [[wiki/entities/renato-augusto]] | Desenvolvedor e criador de conteúdo brasileiro — padrões de projeto GoF e orientação a objetos |
+| [[wiki/entities/renato-augusto]] | Desenvolvedor e criador de conteúdo brasileiro — padrões de projeto GoF e orientação a objetos, carreira e soft skills |
+| [[wiki/entities/dale-carnegie]] | Autor de "Como Fazer Amigos e Influenciar Pessoas" (1936) — confiança e influência genuína como base da habilidade interpessoal |
 | [[wiki/entities/eduarda-rocket-city]] | Engenheira de software internacional, criadora de conteúdo no canal Rocket City |
 | [[wiki/entities/openai]] | Organização responsável pelo GPT-3/4 — formalizou in-context learning e scaling laws; criadora do tokenizer tiktoken |
 | [[wiki/entities/google]] | Criadora do Gemini e do harness AntiGravity — concorrente de Anthropic e OpenAI, tokenizer próprio |
@@ -507,6 +549,8 @@ date_updated: 2026-07-03
 | [[wiki/entities/pedro-camaforte]] | Dev sênior, cria série de system design para entrevistas — foco no que separa resposta mediana de resposta de sênior |
 | [[wiki/entities/uncle-bob]] | Robert C. Martin — associado a Clean Code/Clean Architecture/SOLID; citado em thread sobre SQL não ser feito para ser embutido em programas |
 | [[wiki/entities/lucas-montano]] | Criador de conteúdo brasileiro — argumenta que o pânico de "atrofia cognitiva" por IA mede o tipo errado de habilidade (sintaxe, não conhecimento perene) |
+| [[wiki/entities/mercado-livre]] | Maior e-commerce/fintech da América Latina — combina ISO 27001 + PCI-DSS + Zero Trust; adotante consolidado de Go em produção |
+| [[wiki/entities/andre-casciotti]] | Criador de conteúdo brasileiro, canal Próximo Nível — carreira dev, granularidade de mudança, automações pessoais como prática |
 
 ### Documentação de Arquitetura
 
