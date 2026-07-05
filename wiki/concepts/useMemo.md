@@ -3,8 +3,8 @@ type: concept
 title: "useMemo"
 aliases: ["use memo", "memoização React", "memoize"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-04
+source_count: 2
 tags: [react, hooks, performance, memoização, useMemo]
 skill: tech-mentor-frontend
 status: stable
@@ -39,7 +39,7 @@ const filteredOrders = useMemo(
 
 ## Relação com React Compiler
 
-O [[concurrent-mode|React Compiler]] (React 19 beta) pode eliminar a necessidade de `useMemo` manual ao inferir memoização automaticamente. Ainda em beta — não remover `useMemo` existente sem testar.
+O [[react-compiler]] (React 19) pode eliminar a necessidade de `useMemo` manual ao inferir memoização automaticamente. Continua útil em casos de borda — ex. integração com libs de terceiros que dependem de referência estável. Não remova `useMemo` existente sem testar/medir.
 
 ## Ver também
 
@@ -50,3 +50,4 @@ O [[concurrent-mode|React Compiler]] (React 19 beta) pode eliminar a necessidade
 ## Key Sources
 
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
+- [[wiki/sources/react-19-memoization-sem-usememo-usecallback]]

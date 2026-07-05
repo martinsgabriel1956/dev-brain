@@ -3,8 +3,8 @@ type: concept
 title: "Burnout em Desenvolvimento"
 aliases: ["burnout", "esgotamento profissional", "developer burnout"]
 date_created: 2026-05-18
-date_updated: 2026-05-18
-source_count: 1
+date_updated: 2026-07-04
+source_count: 2
 tags: [burnout, saude-mental, produtividade, comportamento, carreira]
 skill: tech-mentor-ai
 status: draft
@@ -45,7 +45,12 @@ Esse é o mecanismo central: a [[dopamina-produtividade]] gerada pelos agentes t
 
 ---
 
+## Confundir Atividade com Progresso
+
+Outro caminho para o burnout, independente de agentes de IA: perseguir uma meta ambiciosa (ex. "ser milionário até os 30") tentando ser o máximo produtivo possível, mas na prática ficando cada vez mais [[wiki/concepts/ativo-vs-produtivo|ativo em vez de produtivo]]. O resultado é menos tempo livre, sensação de trabalho que não rende, e amargura que vaza para a vida pessoal — sem nunca chegar mais perto do objetivo original.
+
 ## Key Sources
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]] — inteligência emocional como proteção direta contra burnout; lidar com pressão e prazos sem perder equilíbrio
+- [[wiki/sources/produtividade-falsa-vs-verdadeira]] — atividade disfarçada de produtividade como caminho lento para o esgotamento e a amargura

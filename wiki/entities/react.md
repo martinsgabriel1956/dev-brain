@@ -3,8 +3,8 @@ type: entity
 title: "React"
 aliases: ["ReactJS", "React.js"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-04
+source_count: 2
 tags: [react, frontend, biblioteca, facebook, meta]
 skill: tech-mentor-frontend
 status: stable
@@ -38,3 +38,4 @@ Biblioteca JavaScript para construção de interfaces de usuário. Criada pelo F
 ## Key Sources
 
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
+- [[wiki/sources/react-19-memoization-sem-usememo-usecallback]]

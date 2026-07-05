@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-07-03
+date_updated: 2026-07-04
 
 
 ---
@@ -97,6 +97,10 @@ date_updated: 2026-07-03
 | [[wiki/sources/iso-27001-dicionario-programador]] | SGSI organizado em torno da tríade CIA; Anexo A 2022 com 93 controles em 4 temas; controles A.8.28/A.5.15/A.5.8/A.8.25/A.5.3 relevantes para devs; Policy as Code (OPA/Gatekeeper) como implementação; ISO 42001 para governança de IA |
 | [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] | Tipos de load balancer (hardware/software/cloud), por que AWS/Azure separam LB de camada 4 e 7, e algoritmos de balanceamento (Round Robin, Weighted, Least Connections, Least Time, Sticky) com demo prática em Nginx |
 | [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] | "Operador de CRUD" vs. engenheiro — o mundo debaixo do CRUD (redes, Bluetooth, streams, mobile, banco de dados); IA entrega o fácil, não o simples; repertório é a cola que a IA não substitui |
+| [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]] | Vulnerabilidades comuns de app/SaaS além dos grandes CVEs: webhook sem validação de assinatura, IDOR/BOLA, exposição excessiva de dados, falta de rate limiting, mass assignment, TOCTOU e o anti-padrão raiz de confiar no frontend para regras de negócio |
+| [[wiki/sources/produtividade-falsa-vs-verdadeira]] | Ativo vs. produtivo, Pareto 80/20, eficácia antes de eficiência, e a técnica da "pergunta do ataque cardíaco" (Tim Ferriss) para achar as poucas tarefas de real impacto |
+| [[wiki/sources/apagao-de-seniors-vibe-coding]] | Vibe coding pode gerar um apagão de sêniors; kit de sobrevivência técnico contra os 4 pilares que a IA ignora — N+1 detector, property-based testing para race conditions, memory profiling, dependency/secret scanning |
+| [[wiki/sources/react-19-memoization-sem-usememo-usecallback]] | React Compiler (React 19) automatiza a memoização que antes exigia useMemo/useCallback manuais; hooks manuais sobrevivem só em casos de borda (libs de terceiros, código fora das Rules of Hooks) |
 
 ## Concepts
 
@@ -147,6 +151,11 @@ date_updated: 2026-07-03
 | [[wiki/concepts/confidencialidade-de-dados-em-prompts-ia]] | Não jogar código ou dado corporativo sigiloso em ferramentas de IA de terceiros fora do perímetro da empresa |
 | [[wiki/concepts/ponte-fullstack-para-especializacao]] | Migrar de frontend para backend numa stack de nicho (Go): mirar pleno, não júnior, e usar vaga fullstack como ponte de entrada |
 | [[wiki/concepts/sintaxe-vs-conhecimento-perene]] | Memorizar sintaxe já era irrelevante antes da IA — o que não se atrofia é o julgamento sobre causa/efeito (erros HTTP, debugging de produção) |
+| [[wiki/concepts/ativo-vs-produtivo]] | Terminar tarefas no prazo mas preencher o resto do tempo com atividade de aparência produtiva não é ser produtivo — é procrastinação sofisticada |
+| [[wiki/concepts/principio-de-pareto]] | 80% dos resultados vêm de 20% do esforço — fazer bem feito ou gastar muito tempo numa tarefa não a torna importante |
+| [[wiki/concepts/eficacia-vs-eficiencia]] | Eficácia é fazer a coisa certa; eficiência é fazer qualquer coisa de forma econômica — otimizar a execução antes de validar a tarefa é o erro padrão |
+| [[wiki/concepts/tecnica-do-ataque-cardiaco]] | "Se você só pudesse trabalhar 2h/dia, no que trabalharia?" — técnica de Tim Ferriss para achar as tarefas de real impacto |
+| [[wiki/concepts/sobrecarga-de-informacao]] | Riqueza de informação cria pobreza de atenção (Herbert Simon) — consumir conteúdo sem aplicação é desperdício disfarçado de aprendizado |
 | [[wiki/concepts/decisao-terceirizada]] | Pedir para influencer/palestrante decidir sua carreira por você — falha porque ninguém tem contexto da sua história nem skin in the game |
 | [[wiki/concepts/skin-in-the-game]] | Só vale ouvir com propriedade quem arca com o prejuízo se o próprio conselho der errado |
 | [[wiki/concepts/antifragilidade]] | Antifrágil não é prejuízo zero, é pouco prejuízo — apostar em várias tecnologias/décadas em vez de tentar acertar 100% |
@@ -181,6 +190,10 @@ date_updated: 2026-07-03
 | [[wiki/concepts/pipeline-de-qualidade]] | Lint → testes → coverage → mutation → segurança → E2E; passa ou não passa |
 | [[wiki/concepts/teste-de-mutacao]] | Valida que os testes realmente testam comportamento — não só executam sem quebrar |
 | [[wiki/concepts/gaming-de-testes-por-ia]] | IA deleta ou enfraquece testes que falham em vez de corrigir o código — proibir explicitamente |
+| [[wiki/concepts/apagao-de-seniors]] | Risco de escassez de sêniors se vibe coding virar padrão: menos gente aprende fundamentos, mais gente só orquestra prompts |
+| [[wiki/concepts/n-plus-um-detector]] | Middleware que conta queries por request e alerta quando ultrapassa threshold — detecta N+1 antes de produção |
+| [[wiki/concepts/property-based-testing]] | Bombardeia função com inputs aleatórios/concorrentes e verifica invariante — eficaz contra race conditions geradas por IA |
+| [[wiki/concepts/adaptive-thinking]] | Modelo decide sozinho quanto "pensar"; hipótese de que remove controle do usuário para gerenciar custo de inferência |
 
 ### Perfil Profissional & Product Engineering
 
@@ -482,6 +495,12 @@ date_updated: 2026-07-03
 | [[wiki/concepts/triade-cia]] | Confidencialidade, integridade, disponibilidade — o critério que justifica todo controle de segurança da informação |
 | [[wiki/concepts/segregacao-de-funcoes]] | Quem desenvolve não deve poder fazer deploy sozinho — controle A.5.3, tenso em times pequenos |
 | [[wiki/concepts/iso-42001]] | Governança de IA responsável — cobre a lacuna que a ISO 27001 deixa em aberto com LLMs |
+| [[wiki/concepts/idor]] | IDOR/BOLA — acessar objeto por ID sem checar ownership; #1 do OWASP API Top 10 |
+| [[wiki/concepts/mass-assignment]] | BOPLA — aceitar o body inteiro sem whitelist permite alterar campos como `role` |
+| [[wiki/concepts/webhook-signature-validation]] | HMAC + `timingSafeEqual` + replay/idempotência — validar que o webhook veio da fonte certa |
+| [[wiki/concepts/exposicao-excessiva-de-dados]] | Retornar a entidade inteira em vez de projetar campos vaza dados sensíveis mesmo sem exibi-los na UI |
+| [[wiki/concepts/toctou]] | Intervalo entre check e use permite saque/estoque duplicado sob concorrência — corrigido com transactions atômicas |
+| [[wiki/concepts/confiar-no-frontend]] | Anti-padrão raiz: regra de negócio só no cliente é sempre contornável — servidor deve revalidar tudo |
 
 ### Frontend & Design Engineering
 
@@ -493,6 +512,10 @@ date_updated: 2026-07-03
 | [[wiki/concepts/component-library]] | Shadcn, Radix, Headless UI — componentes pré-prontos; headless dá controle total, estilizadas são mais rápidas |
 | [[wiki/concepts/fake-delay]] | Delay mínimo intencional (300ms) para garantir feedback visual perceptível — performance percebida é design |
 | [[wiki/concepts/design-como-interacao]] | Design se manifesta na interação, não na primeira impressão — micro-interações, onboarding, feedback, linguagem |
+| [[wiki/concepts/react-compiler]] | Compilador do React 19 que memoiza valores e funções automaticamente em build time, reduzindo a necessidade de useMemo/useCallback manuais |
+| [[wiki/concepts/useMemo]] | Hook que memoiza o resultado de um cálculo — só recalcula quando as dependências mudam; overhead supera ganho em cálculos triviais |
+| [[wiki/concepts/useCallback]] | Hook que memoiza a referência de uma função entre renders — essencial para não quebrar `React.memo` em componentes filhos |
+| [[wiki/concepts/concurrent-mode]] | Modelo de renderização do React 18+ que pausa/retoma/prioriza renders sem bloquear a UI — useTransition e useDeferredValue |
 
 ### Padrões e Design
 

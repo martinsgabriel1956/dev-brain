@@ -1490,3 +1490,88 @@ Entities:
 - `wiki/index.md` — nova fonte na tabela de Sources; novo conceito `bluetooth-le` em "Fundamentos de CS"
 
 **Notas:** Fonte original é transcrição de fala (ASR) recebida em bloco único e sem pontuação — limpa de erros de reconhecimento, pontuada e estruturada em seções pelo agente, mas mantida em português (usuário confirmou explicitamente antes da ingestão que "traduzir" neste pedido não significava trocar de idioma). Autoria/canal não identificado no texto recebido — nenhuma entidade criada; se o usuário confirmar o canal de origem, criar `wiki/entities/<nome>.md`. Esta fonte é altamente complementar a [[wiki/sources/engenheiro-vs-programador-mercado-ia]] (mesmo tema geral — programador/operador de CRUD vs. engenheiro, complexidade acidental/essencial, repertório vs. ferramenta, IA comoditizando execução — possivelmente mesmo tipo de canal), mas com exemplos e ângulo diferentes: esta cobre redes/Bluetooth/streams/mobile em detalhe técnico maior, a outra cobre o framework eixo-vertical/eixo-horizontal com recomendação de livros. Sem contradições entre as duas — reforço mútuo. Três lacunas registradas como Perguntas Abertas na própria fonte: (1) citação de Rich Hickey ("fácil vs. simples") não verificada contra a palestra original; (2) hierarquia de serviços Bluetooth (GATT) descrita não checada contra a especificação oficial do Bluetooth SIG; (3) autoria não identificada.
+
+---
+
+## [2026-07-04] ingest | Vulnerabilidades Comuns de Segurança em Apps/SaaS
+
+**Source:** [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]]
+**Skill:** tech-mentor-security (`/home/nemomartins/Documentos/skills/tech-mentor-security/SKILL.md`, referências `appsec-api.md` e `appsec-js-vulns.md`)
+
+**Páginas criadas:**
+- `wiki/sources/vulnerabilidades-comuns-seguranca-apps.md`
+- `wiki/concepts/idor.md` (IDOR/BOLA — Broken Object Level Authorization)
+- `wiki/concepts/mass-assignment.md` (BOPLA — Broken Object Property Level Authorization)
+- `wiki/concepts/webhook-signature-validation.md` (HMAC, timing-safe compare, replay/idempotência)
+- `wiki/concepts/exposicao-excessiva-de-dados.md` (Excessive Data Exposure)
+- `wiki/concepts/toctou.md` (Time of Check to Time of Use — race condition de backend)
+- `wiki/concepts/confiar-no-frontend.md` (anti-padrão raiz: client-side trust)
+
+**Páginas atualizadas:**
+- `wiki/concepts/rate-limiting.md` — nova seção sobre custo financeiro direto da ausência de rate limit (registros falsos, cota de e-mail); `source_count` 2 → 3
+- `wiki/concepts/attack-surface.md` — nova seção "Rotas Previsíveis como Superfície" (webhook em path padrão); `source_count` 1 → 2
+- `wiki/concepts/timing-attack.md` — nova seção aplicando o conceito à assinatura de webhook; `source_count` 2 → 3
+- `wiki/concepts/race-condition.md` — nova seção distinguindo a race condition de frontend (fetch/useEffect) da TOCTOU de backend; `source_count` 1 → 2
+- `wiki/index.md` — nova fonte na tabela de Sources; 6 novos conceitos em "Segurança de APIs & Arquitetura"
+
+**Notas:** Fonte era transcrição bruta de um vídeo em português com fala coloquial e sem pontuação (incluindo uma demonstração prática de bypass client-side via DevTools/breakpoint) — reescrita em `raw/` como markdown estruturado por seção antes da ingestão, sem tradução (já estava em português) e sem alterar o conteúdo técnico. Distinção deliberada feita entre [[wiki/concepts/toctou]] (race condition de concorrência em recurso compartilhado no backend, ex. saldo/estoque) e [[wiki/concepts/race-condition]] (bug de frontend por respostas de fetch fora de ordem em `useEffect`) — mesma família de nome mas causas e correções diferentes; ambas as páginas agora se referenciam. Conteúdo é altamente complementar a [[wiki/sources/owasp-top10]] e [[wiki/sources/api-security]] (IDOR/BOLA, Mass Assignment/BOPLA já documentados ali sob a ótica OWASP formal) — esta fonte cobre os mesmos temas com exemplos mais concretos e de forma mais didática/prática, incluindo TOCTOU e a demonstração de bypass de frontend, que não estavam nas fontes anteriores. Sem contradições encontradas. Duas Perguntas Abertas registradas na própria fonte: falta de menção a ferramentas de detecção automatizada de IDOR/BOLA em CI, e falta de exemplo de locking distribuído (fora de um único banco transacional) para TOCTOU em arquitetura multi-serviço.
+
+---
+
+## [2026-07-04] ingest | Produtividade Falsa vs. Produtividade Verdadeira
+
+**Source:** [[wiki/sources/produtividade-falsa-vs-verdadeira]]
+**Skill:** tech-mentor-leadership (`/home/nemomartins/Documentos/skills/tech-mentor-leadership/SKILL.md` — nenhum arquivo de referência específico casou com o tópico; ingerido com conhecimento base do skill, conforme protocolo)
+
+**Páginas criadas:**
+- `wiki/sources/produtividade-falsa-vs-verdadeira.md`
+- `wiki/concepts/ativo-vs-produtivo.md` (distinção central: terminar tarefas no prazo vs. preencher tempo livre com atividade de aparência produtiva)
+- `wiki/concepts/principio-de-pareto.md` (80/20 — qualidade/tempo investido não torna uma tarefa importante)
+- `wiki/concepts/eficacia-vs-eficiencia.md` (fazer a coisa certa vs. fazer qualquer coisa de forma econômica)
+- `wiki/concepts/tecnica-do-ataque-cardiaco.md` (técnica de Tim Ferriss para achar as tarefas de maior impacto)
+- `wiki/concepts/sobrecarga-de-informacao.md` (Herbert Simon — riqueza de informação cria pobreza de atenção; Pascal — incapacidade de silêncio)
+
+**Páginas atualizadas:**
+- `wiki/concepts/burnout-dev.md` — nova seção "Confundir Atividade com Progresso"; `source_count` 1 → 2
+- `wiki/concepts/dopamina-produtividade.md` — nova seção "Sobrecarga de Informação como Distração"; `source_count` 1 → 2
+- `wiki/index.md` — nova fonte na tabela de Sources; 5 novos conceitos em "Carreira & Soft Skills"
+
+**Notas:** Fonte original era transcrição bruta de ASR (fala em bloco único, sem pontuação) — reescrita em `raw/produtividade-falsa-vs-verdadeira.md` como markdown estruturado por seções pelo agente, mantida em português (não havia necessidade de tradução). Autoria não confirmada explicitamente no texto: há pistas fortes (canal paralelo sobre aviação/música, esposa Renata, filho Oliver de 7 meses) consistentes com o criador de conteúdo Felipe Deschamps, mas nenhuma página de entidade foi criada até confirmação do usuário — mesmo cuidado já registrado no ingest de [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] em 2026-07-03. Conteúdo é complementar a [[wiki/concepts/otimizacao-prematura]] (mesma lógica de "acertar o alvo antes de otimizar a pontaria", aplicada a código em vez de produtividade pessoal) e a [[wiki/concepts/paralisia-por-analise]] (excesso — de opções ou de estímulo — travando resultado real). Sem contradições encontradas com o restante da wiki. Três questões abertas registradas na própria fonte: autoria não confirmada, citações de Pascal/Herbert Simon não verificadas contra fonte primária, e três vídeos relacionados do mesmo autor mencionados mas não ingeridos.
+
+---
+
+## [2026-07-04] fix | Apagão de Devs Sêniors e Vibe Coding — drift de índice
+
+**Source:** [[wiki/sources/apagao-de-seniors-vibe-coding]] (já existente em `raw/` e já ingerida em 2026-04-29 — usuário colou a mesma transcrição novamente pedindo para recriar o `.md` e rodar "ingest this"; conteúdo idêntico ao já ingerido, nenhuma criação nova de fonte)
+
+**Achado:** a fonte tinha página completa em `wiki/sources/`, estava referenciada em outras páginas e no log, mas nunca apareceu em `wiki/index.md` (index/log drift), e duas das páginas de conceito que ela linka (`[[apagao-de-seniors]]`, `[[adaptive-thinking]]`) nunca foram criadas (broken links de stub pendente).
+
+**Páginas criadas:**
+- `wiki/concepts/apagao-de-seniors.md` (stub)
+- `wiki/concepts/adaptive-thinking.md` (stub)
+
+**Páginas atualizadas:**
+- `wiki/index.md` — adicionada linha da fonte na tabela de Sources; adicionadas 4 linhas em "Qualidade de Software com IA" (apagao-de-seniors, n-plus-um-detector, property-based-testing, adaptive-thinking — as duas últimas também estavam faltando no índice apesar de já existirem)
+
+**Notas:** Nenhum conteúdo novo foi ingerido — apenas fechamento de lacunas de um ingest anterior incompleto. Raw file não foi recriado por já existir com conteúdo idêntico ao colado pelo usuário.
+
+---
+
+## [2026-07-04] ingest | React 19 Memoization: Chega o Fim do useMemo e useCallback?
+
+**Source:** [[wiki/sources/react-19-memoization-sem-usememo-usecallback]]
+**Skill:** tech-mentor-frontend (`references/frameworks/react-performance.md`)
+**URL original:** https://medium.com/front-end-world/react-19-memoization-no-more-usememo-usecallback-3a09a986f9c7 (autor: Komal Raut, Medium, fev/2025)
+
+**Páginas criadas:**
+- `wiki/sources/react-19-memoization-sem-usememo-usecallback.md`
+- `wiki/concepts/react-compiler.md` (conceito próprio — antes o React Compiler só existia embutido, mal referenciado, dentro de `concurrent-mode.md`)
+
+**Páginas atualizadas:**
+- `wiki/concepts/useMemo.md` — `source_count` 1 → 2; corrigido link quebrado/mal rotulado `[[concurrent-mode|React Compiler]]` para `[[react-compiler]]`
+- `wiki/concepts/useCallback.md` — `source_count` 1 → 2; mesma correção de link
+- `wiki/concepts/concurrent-mode.md` — seção "React Compiler (beta)" substituída por link de distinção para `[[react-compiler]]` (conteúdo movido, não duplicado)
+- `wiki/entities/react.md` — `source_count` 1 → 2; nova fonte
+- `wiki/index.md` — nova linha em Sources; 4 novas linhas em "Frontend & Design Engineering" (react-compiler, useMemo, useCallback, concurrent-mode — as três últimas já existiam como páginas mas nunca tinham entrado no índice, um drift antigo)
+
+**Notas:** Artigo em inglês, traduzido integralmente para PT-BR em `raw/react-19-memoization-sem-usememo-usecallback.md` antes da ingestão (conteúdo colado pelo usuário — WebFetch inicial só retornou introdução por paywall do Medium). Conteúdo é introdutório e superficial frente ao que já estava em [[wiki/sources/react-tudo-que-voce-precisa-saber]] — sem contradições, mas também sem detalhamento técnico novo (não cita `babel-plugin-react-compiler`, não menciona a exigência de aderência às Rules of Hooks). Aproveitado o ingest para corrigir um drift antigo: `useMemo`, `useCallback` e `concurrent-mode` já existiam como páginas estáveis desde 2026-04-22 mas nunca haviam sido listadas em `wiki/index.md`. Duas perguntas abertas registradas na própria fonte: falta de exemplo concreto de "cálculo custoso que o compiler não otimiza", e ausência de benchmark real citado pelo autor.

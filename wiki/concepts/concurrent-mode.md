@@ -3,7 +3,7 @@ type: concept
 title: "Concurrent Mode"
 aliases: ["React Concurrent", "concorrência React", "useTransition", "useDeferredValue"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
+date_updated: 2026-07-04
 source_count: 1
 tags: [react, performance, concurrent-mode, react-18, react-19]
 skill: tech-mentor-frontend
@@ -48,14 +48,9 @@ function SearchResults({ query }: { query: string }) {
 | Controle | Você controla qual setState é não urgente | Você adia o valor num filho |
 | Uso | Quando você controla o setState | Quando recebe o valor via prop |
 
-## React Compiler (React 19 beta)
+## Relação com o React Compiler
 
-Analisa o código estaticamente e adiciona memoization automática — pode eliminar `useMemo`/`useCallback` manual em muitos casos. Ainda em beta.
-
-```javascript
-// babel.config.js
-plugins: [["babel-plugin-react-compiler", { compilationMode: "annotation" }]]
-```
+O [[react-compiler]] é um recurso distinto — atua em build time memoizando valores/funções automaticamente, enquanto Concurrent Mode atua em runtime priorizando renders. Ambos chegaram junto com React 18/19 e são frequentemente confundidos por serem apresentados juntos como "novidades de performance".
 
 ## Key Sources
 

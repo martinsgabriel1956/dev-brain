@@ -3,8 +3,8 @@ type: concept
 title: "Timing Attack"
 aliases: ["timing attack", "ataque de temporização", "side-channel timing", "crypto.timingSafeEqual"]
 date_created: 2026-06-10
-date_updated: 2026-06-11
-source_count: 2
+date_updated: 2026-07-04
+source_count: 3
 tags: [security, timing-attack, side-channel, criptografia, appsec, senhas]
 skill: tech-mentor-security
 status: stable
@@ -64,7 +64,12 @@ Ver [[attack-surface]]: superfície de ataque inclui os outputs do sistema, não
 - [[concepts/argon2]] — idem; bibliotecas maduras de password hashing abstraem isso
 - [[concepts/password-hashing]] — contexto onde timing attacks em verificação de senha são relevantes
 
+## Timing Attack em Assinatura de Webhook
+
+O mesmo princípio se aplica à validação de webhooks: comparar a assinatura HMAC recebida com `===` vaza, por diferença de tempo, em qual byte a assinatura correta diverge — permitindo reconstruí-la. Ver [[wiki/concepts/webhook-signature-validation]].
+
 ## Key Sources
 
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — exemplo didático: descobrir senha de 9 chars com 26×9 tentativas em vez de 26^9
 - [[sources/seguranca-armazenamento-senhas-banco-de-dados]] — bcrypt e Argon2 como implementações que já resolvem o problema
+- [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]] — timing attack aplicado à validação de assinatura de webhook

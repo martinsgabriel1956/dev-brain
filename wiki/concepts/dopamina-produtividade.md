@@ -3,8 +3,8 @@ type: concept
 title: "Dopamina e Produtividade"
 aliases: ["dopamina produtividade", "reward loop", "loop de recompensa"]
 date_created: 2026-05-18
-date_updated: 2026-05-18
-source_count: 1
+date_updated: 2026-07-04
+source_count: 2
 tags: [comportamento, produtividade, neurociencia, burnout, agentes-ia]
 skill: tech-mentor-ai
 status: stub
@@ -28,6 +28,11 @@ Redes sociais operam no mesmo mecanismo (scroll infinito, likes, notificações)
 
 ---
 
+## Sobrecarga de Informação como Distração
+
+A busca constante por [[wiki/concepts/sobrecarga-de-informacao|estímulo e informação]] segue o mesmo mecanismo dopaminérgico — consumir conteúdo com aparência de estudo/trabalho, mesmo sem aplicação real, entrega uma dose de recompensa que reforça o comportamento mesmo quando ele é, na prática, [[wiki/concepts/ativo-vs-produtivo|atividade em vez de produtividade]].
+
 ## Key Sources
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
+- [[wiki/sources/produtividade-falsa-vs-verdadeira]] — superestimulação e "avião empinado demais" como metáfora de dopamina buscando mais estímulo mesmo em queda
