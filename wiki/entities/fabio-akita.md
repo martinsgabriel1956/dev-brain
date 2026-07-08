@@ -3,8 +3,8 @@ type: entity
 title: "Fábio Akita"
 aliases: ["Akita", "Akita On Rails"]
 date_created: 2026-05-16
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-07-07
+source_count: 3
 tags: [pessoa, programador, youtuber, brasil]
 skill: tech-mentor-leadership
 status: stable
@@ -35,7 +35,12 @@ Programador brasileiro, criador de conteúdo técnico no canal *Akita On Rails* 
 
 Defende que o mercado de programação segue [[wiki/concepts/ciclo-de-mercado-tech|ciclos de abundância e depressão]] regidos por oferta e procura, e que [[wiki/concepts/raciocinio-matematico-aplicado|raciocínio matemático básico]] — não a linguagem da moda — é o que diferencia profissionais entre ciclos. Crítico de [[wiki/concepts/apego-a-ferramentas|apego a ferramentas]] específicas ("tecnologia não é time de futebol").
 
+## Raiz Filosófica
+
+Em [[wiki/sources/akita-discurso-howard-roark-a-nascente-ayn-rand]], Akita lê o discurso de defesa de Howard Roark (*A Nascente*, [[wiki/entities/ayn-rand]]) e afirma que tentou viver seguindo esses princípios — apontando essa fonte como origem de vários temas que já tratou sobre a vida de empreendedores, criadores e inovadores. O discurso defende [[wiki/concepts/objetivismo|Objetivismo]]: a dicotomia [[wiki/concepts/criador-vs-parasita|criador vs. parasita]] e a [[wiki/concepts/independencia-como-motor-criativo|independência]] como necessidade básica de quem cria — coerente com sua defesa do autodidatismo e sua crítica ao apego a ferramentas, ainda que a fonte trate de filosofia moral, não de carreira tech diretamente.
+
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]]
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]]
+- [[wiki/sources/akita-discurso-howard-roark-a-nascente-ayn-rand]]

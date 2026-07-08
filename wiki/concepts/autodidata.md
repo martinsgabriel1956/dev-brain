@@ -3,8 +3,8 @@ type: concept
 title: "Autodidata"
 aliases: ["autodidatismo", "self-teaching", "aprendizado autônomo"]
 date_created: 2026-05-16
-date_updated: 2026-07-03
-source_count: 5
+date_updated: 2026-07-07
+source_count: 6
 tags: [aprendizado, mentalidade, carreira, dependencia-ia, autonomia-tecnica]
 skill: tech-mentor-leadership
 status: stable
@@ -47,6 +47,10 @@ Em [[wiki/sources/akita-oferta-procura-matematica-carreira]], Akita aprofunda a 
 
 [[wiki/sources/atrofia-cognitiva-ia-programacao]] traz um paralelo histórico: o mesmo debate sobre "atrofia" já existia antes da IA, quando a habilidade central de um dev era "fazer uma boa pesquisa no Google" em vez de memorizar. A postura autodidata não muda de natureza com a chegada da IA — continua sendo "investigar o porquê quando o procedimento falha", só que a ferramenta de investigação mudou (Google → IA). Quem usa IA de forma autodidata pede explicações e testa hipóteses; quem usa de forma passiva pede a resposta pronta e para de investigar.
 
+## Raiz filosófica: independência como necessidade básica do criador
+
+No discurso de Howard Roark que Akita lê em [[wiki/sources/akita-discurso-howard-roark-a-nascente-ayn-rand]], a independência é tratada como a necessidade básica de quem cria — "a mente que raciocina não pode trabalhar sob nenhuma forma de coerção". É a mesma postura descrita aqui em termos práticos: o autodidata não delega ao procedimento a decisão de avançar. Ver [[wiki/concepts/independencia-como-motor-criativo]] para a versão filosófica (Objetivismo) dessa mesma ideia.
+
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]] — distinção central entre autodidatas e pessoas passivas; argumento da infância
@@ -55,3 +59,4 @@ Em [[wiki/sources/akita-oferta-procura-matematica-carreira]], Akita aprofunda a 
 - [[wiki/sources/papinho-tech-solo-aprender-a-aprender]] — autoconsciência como base do autodidatismo; professor não controla o quanto você vai se aplicar — só você controla isso
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]] — sistema educacional formal treina passividade; mercado real exige o oposto
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]] — precedente pré-IA: "saber pesquisar no Google" já era a habilidade central antes de "saber prompar uma IA"
+- [[wiki/sources/akita-discurso-howard-roark-a-nascente-ayn-rand]] — raiz filosófica (Objetivismo): independência como necessidade básica do criador

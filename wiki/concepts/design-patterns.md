@@ -38,8 +38,8 @@ Estudar patterns primeiro e tentar aplicar resulta em uso incorreto de todas as 
 - **Observer** — notificação de mudança de estado
 - **Builder** — construção incremental de objetos complexos
 - **Chain of Responsibility** — passar request por uma cadeia de handlers
-- **Repository** — abstrair o acesso a dados (popularizado no Rails via Martin Fowler)
-- **Active Record** — registro que conhece sua própria persistência (Martin Fowler, PoEAA, 2003)
+- **Repository** — abstrair o acesso a dados (popularizado no Rails via [[wiki/entities/martin-fowler]])
+- **Active Record** — registro que conhece sua própria persistência ([[wiki/entities/martin-fowler]], PoEAA, 2003)
 
 ## Frameworks como implementações de patterns
 

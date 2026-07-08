@@ -3,9 +3,9 @@ type: concept
 title: "Deadlock"
 aliases: ["deadlock", "impasse", "bloqueio mútuo", "abraço mortal"]
 date_created: 2026-04-22
-date_updated: 2026-06-26
-source_count: 3
-tags: [sistema-operacional, concorrência, sincronização, cs-fundamentals]
+date_updated: 2026-07-07
+source_count: 4
+tags: [sistema-operacional, concorrência, sincronização, cs-fundamentals, mysql, gap-locking]
 skill: cs-fundamentals
 status: stable
 ---
@@ -48,6 +48,10 @@ Quebrar qualquer uma das 4 previne deadlock.
 - **Deadlock**: threads bloqueadas para sempre (nenhuma avança)
 - **Starvation**: thread nunca é agendada, mas o sistema avança. Solução: aging de prioridade no [[concepts/escalonador]]
 
+## Deadlock em Banco de Dados: Gap Locking do MySQL
+
+Deadlock não é só de threads em memória — bancos relacionais também sofrem. O InnoDB (MySQL) trava, por padrão, não só a linha lida mas também os espaços vazios ("gaps") ao redor dela, para prevenir phantom reads em `REPEATABLE READ`. Isso amplia o escopo de bloqueio muito além do necessário e pode gerar deadlock sob alta concorrência de inserts/deletes na mesma faixa de índice — mesmo quando as transações, à primeira vista, não deveriam competir pelo mesmo recurso. Ver [[wiki/concepts/mysql]] e o caso da [[wiki/entities/shopify]] em [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]], que precisou corrigir gap locking (além de PK mal desenhada e ordem de execução divergente) antes de escalar reserva de estoque via [[wiki/concepts/skip-locked]].
+
 ## Ver também
 
 - [[concepts/mutex]] — mecanismo que, se mal usado, causa deadlock
@@ -59,3 +63,4 @@ Quebrar qualquer uma das 4 previne deadlock.
 - [[sources/sistema-operacional-por-baixo-dos-panos]]
 - [[sources/como-sistemas-operacionais-funcionam]]
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
+- [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] — gap locking do MySQL como causa de deadlock em reserva de estoque de alta concorrência

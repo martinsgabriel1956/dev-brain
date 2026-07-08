@@ -14,7 +14,7 @@ status: stable
 
 ## TL;DR
 
-Framework de Martin Fowler para categorizar tech debt em dois eixos: Deliberado vs. Inadvertido e Prudente vs. Imprudente. Apenas o debt Prudente+Deliberado é aceitável como ferramenta consciente de engenharia.
+Framework de [[wiki/entities/martin-fowler]] para categorizar tech debt em dois eixos: Deliberado vs. Inadvertido e Prudente vs. Imprudente. Apenas o debt Prudente+Deliberado é aceitável como ferramenta consciente de engenharia.
 
 ## Os Quatro Quadrantes
 

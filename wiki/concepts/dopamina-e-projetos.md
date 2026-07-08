@@ -3,9 +3,9 @@ type: concept
 title: "Dopamina e Projetos"
 aliases: ["dopamine trap", "antecipação de recompensa", "dopamina ideação"]
 date_created: 2026-04-29
-date_updated: 2026-04-29
-source_count: 1
-tags: [psicologia, produtividade, motivacao, projetos, carreira]
+date_updated: 2026-07-07
+source_count: 2
+tags: [psicologia, produtividade, motivacao, projetos, carreira, startup]
 skill: tech-mentor-leadership
 status: stable
 ---
@@ -36,6 +36,11 @@ Não é falta de disciplina — é bioquímica. A solução não é "ter mais fo
 2. **[[concepts/mvp]]** — escopo mínimo reduz o gap entre ideação e entrega
 3. **Regra do "termine antes de começar"** — não iniciar projeto novo enquanto o atual não atingiu MVP
 
+## Padrão Análogo: o "Dev Emocionado"
+
+[[concepts/lean-startup]] descreve o mesmo mecanismo por outro ângulo: o dev desmotivado no emprego atual troca a dopamina da ideação de código por um novo projeto próprio, sem validar se a dor que ele imagina resolver é real. A metodologia Lean Startup existe justamente para redirecionar esse impulso — canalizando a energia da ideação para validação estruturada antes de construir.
+
 ## Key Sources
 
 - [[sources/por-que-devs-nao-terminam-projetos]]
+- [[sources/lean-startup-para-devs-mano-deivin]]

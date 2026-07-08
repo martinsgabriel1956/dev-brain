@@ -3,9 +3,9 @@ type: concept
 title: "Connection Pooling"
 aliases: ["pgbouncer", "pool de conexões", "database pool"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
-tags: [banco-de-dados, performance, pgbouncer, postgresql, escalabilidade]
+date_updated: 2026-07-07
+source_count: 2
+tags: [banco-de-dados, performance, pgbouncer, postgresql, mysql, escalabilidade]
 skill: tech-mentor-system-design
 status: stable
 ---
@@ -43,6 +43,11 @@ default_pool_size = 20     # conexões reais no banco
 - `transaction` — conexão retorna ao pool após cada transação. **Recomendado.**
 - `statement` — retorna após cada statement. Incompatível com transações multi-statement.
 
+## Diagnóstico: Tempo de Conexão Segurada, Não Latência de Query
+
+Um sistema pode ter CPU baixa e queries individuais rápidas e ainda assim bater um teto de escalabilidade — porque o gargalo real é uma parte do código segurando conexões do pool por mais tempo do que deveria, esgotando o pool para todo o resto. Otimizar a query em si não resolve, porque a query não é o problema. A técnica de diagnóstico é etiquetar cada operação SQL por origem (ex: "checkout", "reserva") e medir **quanto tempo cada uma segura uma conexão aberta**, não sua latência de execução. Foi assim que a [[wiki/entities/shopify]] descobriu que o gargalo de escalabilidade estava em código legado do checkout, não nas queries de reserva de estoque que pareciam ser o problema. Ver [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]].
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
+- [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] — instrumentação por tempo de conexão segurada, não latência de query

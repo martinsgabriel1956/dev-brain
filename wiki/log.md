@@ -2,6 +2,134 @@
 
 ---
 
+## [2026-07-07] ingest | Integration Test (Martin Fowler)
+
+**Source:** [[wiki/sources/integration-test-martin-fowler]] — https://martinfowler.com/bliki/IntegrationTest.html
+**Skill:** tech-mentor-testing (índice de `references/` consultado — `test-patterns.md` e `test-strategy.md` não continham a distinção narrow/broad nem solitary/sociable antes desta ingestão)
+
+**Páginas criadas:**
+- `raw/integration-test-martin-fowler.md` — resumo/paráfrase em PT-BR do artigo original (não tradução literal, por direitos autorais)
+- `wiki/sources/integration-test-martin-fowler.md`
+- `wiki/entities/martin-fowler.md`
+- `wiki/concepts/teste-de-integracao-estreito-vs-amplo.md`
+- `wiki/concepts/unit-test-solitario-vs-sociavel.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/contract-testing.md` — nova seção sobre o papel do contract testing na estratégia de narrow integration test de Fowler, +1 fonte
+- `wiki/concepts/test-doubles.md` — nova seção sobre o termo TestDouble e seu uso em narrow integration tests, +1 fonte
+- `wiki/concepts/piramide-de-testes.md` — nova seção sobre a camada "Integração" se dividir em estreita/ampla, +1 fonte
+- `wiki/concepts/testes-integracao-banco-real.md` — nova seção reconciliando "nunca mockar o banco" com o narrow integration test de Fowler (banco próprio ≠ serviço externo), +1 fonte
+- `wiki/concepts/tdd.md` — link entre escolas London/Detroit e unit test solitário/sociável, +1 fonte
+- `wiki/concepts/ci-cd.md` — nota sobre o termo "Deployment Pipeline" (Fowler) e onde cada tipo de teste de integração roda no pipeline, +1 fonte
+- `wiki/concepts/quadrante-de-fowler.md` — menção textual convertida em wikilink para a nova entidade
+- `wiki/concepts/design-patterns.md` — menções a Repository/Active Record convertidas em wikilink para a nova entidade
+- `wiki/index.md` — nova seção "Testes & Qualidade" (indexava as 5 páginas de teste pré-existentes que nunca tinham entrado no índice, + as 2 novas), entrada de fonte, entrada de entidade
+
+**Notas:** Artigo do bliki de Fowler (jan/2018, revisado jun/2021) sobre a ambiguidade do termo "integration test". Conteúdo foi salvo em `raw/` como resumo/paráfrase estruturado, não tradução literal, para respeitar os direitos autorais do texto original — a URL fonte fica registrada em `source_url` para quem quiser o texto exato. Contradição identificada e documentada nas Open Questions da fonte: `testes-integracao-banco-real.md` recomenda nunca mockar o banco, o que à primeira vista tensiona com a defesa de Fowler por dublês em testes de integração — resolvido explicitando que banco de dados próprio da aplicação não se qualifica como o tipo de "serviço externo" que Fowler tem em mente (mantido por outro time, com seu próprio build/deploy). Gap identificado na skill `tech-mentor-testing`: os arquivos de referência de testes não cobriam a distinção narrow/broad nem solitary/sociable antes desta ingestão, apesar de serem vocabulário padrão da indústria — sinalizado como open question na fonte para eventual atualização da skill (fora do escopo desta ingestão, que não edita `skills/`).
+
+---
+
+## [2026-07-07] ingest | O Discurso de Howard Roark (A Nascente, Ayn Rand) — lido por Fábio Akita
+
+**Source:** [[wiki/sources/akita-discurso-howard-roark-a-nascente-ayn-rand]]
+**Skill:** tech-mentor-leadership (sem arquivo de referência específico para filosofia objetivista/individualismo no índice da skill — respondendo com conhecimento base do texto, seguindo o precedente de `akita-como-aprender-programacao.md` e `akita-oferta-procura-matematica-carreira.md`, já classificados sob esta skill como fontes de Fábio Akita sobre carreira/mentalidade)
+
+**Páginas criadas:**
+- `wiki/sources/akita-discurso-howard-roark-a-nascente-ayn-rand.md`
+- `wiki/entities/ayn-rand.md`
+- `wiki/concepts/objetivismo.md`
+- `wiki/concepts/criador-vs-parasita.md`
+- `wiki/concepts/altruismo-coercitivo.md`
+- `wiki/concepts/independencia-como-motor-criativo.md`
+
+**Páginas atualizadas:**
+- `wiki/entities/fabio-akita.md` — nova seção "Raiz Filosófica", +1 fonte
+- `wiki/concepts/autodidata.md` — nova seção "Raiz filosófica: independência como necessidade básica do criador", +1 fonte
+- `wiki/concepts/hacker-mindset.md` — nova seção "Raiz filosófica: buscar a própria resposta como independência", +1 fonte
+- `wiki/index.md`
+
+**Notas:** Fonte é transcrição de vídeo (canal Akita On Rails) em que Fábio Akita lê na íntegra o discurso de defesa de Howard Roark no julgamento (livro *A Nascente*, de Ayn Rand), afirmando que tentou viver seguindo esses princípios e que o texto é origem de vários temas que já abordou sobre carreira e criação. Conteúdo é filosofia/ideologia (Objetivismo), não conhecimento técnico — primeira fonte puramente filosófica ingerida na wiki. Dicotomia central: criador (independência como necessidade básica, motivado pela própria verdade) vs. parasita (dependência da mente alheia, motivado por controlar relações); crítica ao altruísmo como doutrina moral obrigatória que inverteu os fundamentos éticos ao tratar dependência como virtude. Conexões tecidas com conceitos já estabelecidos de carreira/mentalidade ligados a Akita (autodidata, hacker mindset) como raiz filosófica comum, não como fonte técnica adicional. Contradição/tensão identificada e documentada nas Open Questions da fonte: o discurso trata a dicotomia altruísmo/egoísmo como total e mutuamente excludente, sem espaço para reciprocidade não-sacrificial (cuidado mútuo, colaboração comunitária) — e generaliza "os maiores horrores da história" ao altruísmo sem citar casos verificáveis, o que é retórica de ficção filosófica, não tese historiográfica. Marcado como leitura crítica em todas as páginas novas, não como fato estabelecido.
+
+---
+
+## [2026-07-07] ingest | 5 (ou 6) Dicas Para Projetos Novos
+
+**Source:** [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]
+**Skill:** tech-mentor-leadership (sem arquivo de referência específico para "checklist de setup de projeto novo" no índice da skill — respondendo com conhecimento base do vídeo, seguindo o precedente de `habitos-ruins-de-programador.md`, `como-aprender-novas-codebases.md` e `por-que-devs-nao-terminam-projetos.md`, todos já classificados sob esta skill)
+
+**Páginas criadas:**
+- `wiki/sources/5-ou-6-dicas-para-projetos-novos.md`
+- `wiki/concepts/checklist-primeiro-dia-projeto.md`
+- `wiki/concepts/escolha-de-stack.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/orm.md` — nova seção "ORM Mínima: Migrations Automáticas Desde o Primeiro Deploy" (Drizzle), Key Sources
+- `wiki/concepts/ci-cd.md` — nova seção "Deploy Imediato do Boilerplate (Antes de Qualquer Funcionalidade)", Key Sources
+- `wiki/concepts/piramide-de-testes.md` — nova seção "Testes Desde o Dia 1 de um Projeto Novo" (Vitest + Cypress), Key Sources
+- `wiki/concepts/rules-agente.md` — nova seção "AGENTS.md como Etapa do Setup Inicial de Projeto", Key Sources
+- `wiki/concepts/mvp.md` — nova seção "Estrutura Inicial a Serviço do MVP", Ver Também, Key Sources
+- `wiki/concepts/living-documentation.md` — nota cruzada em "Quando usar/evitar" (README manual é aceitável no contexto do checklist de projeto novo), Key Sources
+- `wiki/sources/por-que-devs-nao-terminam-projetos.md` — nova entrada em Open Questions cruzando com o antídoto tático desta fonte
+- `wiki/index.md`
+
+**Notas:** Fonte é transcrição de vídeo (YouTube, canal não identificado — sem URL de origem, patrocínio HostGator) com um checklist tático para o primeiro dia de uma codebase nova: (1) escolha de stack por objetivo (aprender vs. monetizar) e framework batteries-included para SaaS solo; (2) documentar estrutura inicial rumo ao MVP antes de codar; (3) deploy imediato do boilerplate com CD automático a cada merge; (4) ORM mínima (Drizzle) com migrations automáticas desde o dia 1; (5) testes (Vitest + Cypress) na pipeline antes de qualquer feature; (6) documentação dupla — README para humanos, AGENTS.md para IA. Nenhuma contradição direta com a wiki existente; a fonte é essencialmente tática/prescritiva e se conecta bem com conceitos já estabelecidos (CI/CD, ORM, pirâmide de testes, rules-agente, MVP). Um ponto de nuance real foi identificado e documentado: a recomendação de README escrito manualmente parece à primeira vista tensionar com `living-documentation.md` (que trata README manual como anti-padrão), mas na verdade está alinhada com a própria seção "Quando evitar" daquele conceito (MVP/protótipo, time pequeno) — não é contradição, é o caso de uso correto da exceção já documentada. Autor/canal do vídeo não identificado nesta ingestão — sinalizado como questão aberta na fonte.
+
+---
+
+## [2026-07-07] ingest | Lean Startup para Devs: Por Que Você Não Deveria Sair Escrevendo Código Direto
+
+**Source:** [[wiki/sources/lean-startup-para-devs-mano-deivin]]
+**Skill:** tech-mentor-leadership (sem arquivo de referência específico para Lean Startup/metodologia de produto no índice da skill — respondendo com conhecimento base do vídeo, seguindo o precedente de `mvp.md` e `por-que-devs-nao-terminam-projetos.md`, ambos já classificados sob esta skill)
+
+**Páginas criadas:**
+- `wiki/sources/lean-startup-para-devs-mano-deivin.md`
+- `wiki/concepts/lean-startup.md`
+- `wiki/concepts/build-measure-learn.md`
+- `wiki/concepts/validacao-de-problema.md`
+- `wiki/concepts/aprendizagem-validada.md`
+- `wiki/concepts/contabilizacao-de-inovacao.md`
+- `wiki/concepts/pivotar-ou-perseverar.md`
+- `wiki/concepts/inovacao-continua.md`
+- `wiki/entities/eric-ries.md`
+- `wiki/entities/mano-deivin.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/mvp.md` — nova seção "MVP como Unidade do Ciclo Lean Startup", ponto 4 em "Por Que Devs Falham no MVP" (automação prematura), Key Sources
+- `wiki/concepts/dopamina-e-projetos.md` — nova seção "Padrão Análogo: o 'Dev Emocionado'", Key Sources
+- `wiki/index.md`
+
+**Notas:** Fonte é transcrição de vídeo do canal brasileiro Mano Deivin resumindo *A Startup Enxuta* (Eric Ries) para devs tentados a largar o emprego e construir produto próprio. O vídeo organiza o livro em "6 fases" (Visão, Construir-Medir-Aprender, Aprendizagem Validada, Contabilização de Inovação, Crescimento Sustentável, Pivô ou Persevere) mais Inovação Contínua — simplificação didática que difere da estrutura formal do livro (Visão / Direção / Aceleração em três partes). Sinalizado como questão aberta na página da fonte para eventual checagem contra o texto original. Forte sobreposição temática com fontes já existentes sobre MVP e ciclo de dopamina em projetos (`por-que-devs-nao-terminam-projetos`) — ambas atualizadas com backlink cruzado. Nenhuma contradição direta com a wiki existente; a fonte complementa o tema de "por que devs não terminam/lançam projetos" com o ângulo inverso (por que não validar antes de começar a construir). Conteúdo publicitário do vídeo (indicação de plataforma de pagamento patrocinada) foi mantido como nota isolada em `raw/`, fora do corpo técnico.
+
+---
+
+## [2026-07-07] ingest | Shopify Trocou Redis por MySQL e Segurou US$ 5,1 Milhões por Minuto na Black Friday
+
+**Source:** [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]]
+**Skill:** tech-mentor-backend (`references/distributed-locking.md`)
+
+**Páginas criadas:**
+- `wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday.md`
+- `wiki/concepts/mysql.md`
+- `wiki/concepts/grande-rollback.md`
+- `wiki/concepts/solid-queue.md`
+- `wiki/entities/shopify.md`
+- `wiki/entities/37signals.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/skip-locked.md` — nova seção "Além de Filas de Job: Reserva de Estoque" (caso Shopify), tag mysql, Key Sources
+- `wiki/concepts/redis.md` — nova seção "Caso Real: Substituindo Redis por SQL Puro (Grande Rollback)", Key Sources
+- `wiki/concepts/cache.md` — Key Sources com contraponto do case
+- `wiki/concepts/distributed-lock.md` — Key Sources
+- `wiki/concepts/deadlock.md` — nova seção "Deadlock em Banco de Dados: Gap Locking do MySQL", Key Sources
+- `wiki/concepts/connection-pooling.md` — nova seção "Diagnóstico: Tempo de Conexão Segurada, Não Latência de Query", Key Sources
+- `wiki/sources/uuid-primary-key-mysql.md` — link para novo `concepts/mysql`
+- `wiki/sources/listen-notes-boring-tech-one-person-company.md` — link cruzado sobre "fonte única de verdade" e Grande Rollback
+- `wiki/index.md`
+
+**Notas:** Fonte é transcrição de vídeo (YouTube, canal de tecnologia brasileiro) analisando um artigo de engenharia da Shopify (não linkado na transcrição original — falta a URL primária). Núcleo técnico: reserva de estoque migrou de Redis+MySQL sincronizados por duas escritas não-atômicas para um modelo 100% MySQL com `SELECT FOR UPDATE SKIP LOCKED`, onde cada unidade de estoque é uma linha física (não uma coluna numérica). Precisaram corrigir três problemas clássicos de banco (PK mal desenhada, gap locking do InnoDB, ordem de execução divergente) antes de escalar. O achado mais interessante é o diagnóstico: mesmo com queries otimizadas, o sistema não escalava por gargalo de **tempo de conexão segurada por operação** (não latência de query) — e o gargalo real estava em código legado do checkout, não na reserva de estoque que parecia ser o problema. A fonte conecta o case a uma teoria recorrente do canal, o "Grande Rollback" (empresas em escala voltando de Redis/brokers para primitivas do banco relacional), citando a 37signals/Solid Queue como precedente — nome transcrito de forma ambígua no áudio ("Thury Syve Sos"), mantido como interpretação de melhor esforço e sinalizado como questão aberta na página da entidade. Conteúdo promocional do vídeo (inscrição no canal, patrocínio, cupom) foi removido na transformação para `raw/`, mantendo só a análise técnica.
+
+---
+
 ## [2026-07-03] ingest | SQL não é Banco de Dados: A Confusão da Galera no Twitter
 
 **Source:** [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
@@ -1228,3 +1356,24 @@ Entities:
 - `wiki/concepts/edge-case.md`
 
 **Notas:** Vídeo introdutório de lógica de programação usando caixa eletrônico como exemplo central. Anuncia próxima fonte sobre estruturas de dados. Nenhuma contradição (wiki iniciado neste ingest).
+
+---
+
+## [2026-04-22] ingest | useEffect — Problemas, Armadilhas e Soluções
+
+**Source:** [[wiki/sources/useeffect-problemas-e-solucoes]]
+**Skill:** tech-mentor-frontend
+
+**Páginas criadas:**
+- `wiki/sources/useeffect-problemas-e-solucoes.md`
+- `wiki/concepts/derived-state.md`
+- `wiki/concepts/stale-closure.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/useEffect.md`
+- `wiki/concepts/useState.md`
+- `wiki/concepts/useMemo.md`
+- `wiki/concepts/tanstack-query.md`
+- `wiki/concepts/race-condition.md`
+
+**Notas:** Transcrição de vídeo sobre os três anti-padrões mais comuns do `useEffect`: (1) sincronizar estado derivado via effects encadeados em vez de calcular na renderização — gera renderizações extras e janelas de estado inconsistente; (2) stale closure em contadores/timers por não usar a updater function do `setState`; (3) fetch de dados em `useEffect` sem `AbortController`, com race condition e memory leak. Regra de ouro: "o melhor effect é o que você deleta." Nenhuma contradição com a wiki existente — reforça e detalha claims já presentes em [[wiki/concepts/useEffect]] e [[wiki/concepts/tanstack-query]]. Este registro completa um ingest que havia sido deixado incompleto (source e concept pages já existiam, mas faltavam no índice e no log).

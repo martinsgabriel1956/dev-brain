@@ -3,8 +3,8 @@ type: concept
 title: "TDD — Test-Driven Development"
 aliases: ["test driven development", "red green refactor", "desenvolvimento guiado por testes"]
 date_created: 2026-04-22
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-07-07
+source_count: 3
 tags: [testes, tdd, design, red-green-refactor, qualidade]
 skill: tech-mentor-testing
 status: stable
@@ -50,6 +50,8 @@ Começa pelas unidades internas do domínio. Usa objetos reais, mocka apenas I/O
 ### London (Outside-In / Mockist)
 Começa pelo comportamento externo. Mocka todos os colaboradores ainda não existentes — o design emerge das interfaces que o teste exige. Risco: mocks podem mascarar integração quebrada.
 
+Essas duas escolas mapeiam quase diretamente para a distinção de Fowler entre [[unit-test-solitario-vs-sociavel|unit test solitário (London) e sociável (Detroit)]].
+
 ## Quando usar / evitar
 
 **Use:** lógica de negócio com múltiplos caminhos, refatorando legado (testes antes de mudar qualquer linha), algoritmos com comportamento claro antes da implementação.
@@ -84,3 +86,4 @@ Padrão de falha comum: a IA implementa uma feature, o teste continua falhando, 
 - [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
 - [[wiki/sources/tdd-sdd-bdd-era-ia]]
+- [[wiki/sources/integration-test-martin-fowler]]

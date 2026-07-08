@@ -3,9 +3,9 @@ type: concept
 title: "ORM (Object-Relational Mapping)"
 aliases: ["orm", "object relational mapping", "mapeamento objeto-relacional"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 1
-tags: [orm, sql, banco-de-dados, prisma, hibernate, doctrine, abstracao]
+date_updated: 2026-07-07
+source_count: 2
+tags: [orm, sql, banco-de-dados, prisma, hibernate, doctrine, abstracao, drizzle, migrations]
 skill: tech-mentor-backend
 status: stub
 ---
@@ -36,6 +36,12 @@ SELECT * FROM users WHERE active = true;
 
 Um ORM esconde SQL até você bater num caso de borda — query complexa, agregação pesada, ou performance ruim por N+1 queries. Nesses casos, entender o SQL gerado (ou escrever raw SQL) continua sendo necessário. Ver [[wiki/concepts/sql-alem-do-basico]] — dominar SQL além do ORM é um diferencial de portfólio.
 
+## ORM Mínima: Migrations Automáticas Desde o Primeiro Deploy
+
+Para projetos novos, uma heurística prática: prefira ORMs **mínimas**, que fiquem o mais próximo possível de SQL puro, mas que garantam três coisas — geração automática de arquivos de **migration**, **schema** explícito e **type safety** na codebase. No ecossistema JavaScript, **Drizzle** é um exemplo dessa categoria (alternativa mais enxuta a Prisma/TypeORM).
+
+Na prática do [[wiki/concepts/checklist-primeiro-dia-projeto]], isso significa iniciar o banco de dev e configurar o deploy para já **triggar as migrations automaticamente** desde o primeiro commit — mesmo que o projeto ainda não tenha nenhuma funcionalidade real (ex.: só uma migração inicial para tabela de usuários). Adiar essa configuração costuma virar problema mais caro de resolver depois.
+
 ## Alternativas
 
 - **DSL customizada** — ver [[wiki/concepts/domain-specific-language]]
@@ -45,3 +51,4 @@ Um ORM esconde SQL até você bater num caso de borda — query complexa, agrega
 ## Key Sources
 
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
+- [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]

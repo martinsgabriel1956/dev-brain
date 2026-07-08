@@ -46,6 +46,7 @@ Devs não terminam projetos por quatro razões psicológicas encadeadas: dopamin
 
 - O goal gradient effect pode ser engineerado artificialmente via task decomposition granular (micro-tasks) sem virar cargo cult de processo?
 - Como distinguir "bom o suficiente" de "dívida técnica intencional"? A linha é tênue em side projects.
+- [[wiki/sources/5-ou-6-dicas-para-projetos-novos]] propõe um antídoto tático para a causa "ausência de estrutura → sobrecarga cognitiva" identificada aqui: documentar a estrutura inicial num `.md` antes de codar, e fazer deploy do Hello World no dia 1 — reduz ambiguidade cedo, quando o custo de errar ainda é baixo.
 
 ## Raw Quotes
 

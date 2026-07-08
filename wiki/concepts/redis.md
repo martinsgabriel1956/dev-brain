@@ -3,9 +3,9 @@ type: concept
 title: "Redis"
 aliases: ["redis cache", "redis db"]
 date_created: 2026-06-26
-date_updated: 2026-07-03
-source_count: 3
-tags: [redis, cache, nosql, banco-in-memory, chave-valor, backend]
+date_updated: 2026-07-07
+source_count: 4
+tags: [redis, cache, nosql, banco-in-memory, chave-valor, backend, grande-rollback]
 skill: tech-mentor-backend
 status: stable
 ---
@@ -68,6 +68,10 @@ Abrir uma nova conexão Redis por requisição HTTP não escala — 100 usuário
 - Dados com alta volatilidade (mudam a cada request)
 - Datasets que cabem em memória de processo (L1 cache resolve sem Redis)
 
+## Caso Real: Substituindo Redis por SQL Puro (Grande Rollback)
+
+A [[wiki/entities/shopify]] tinha reserva de estoque em Redis com fonte de verdade em [[wiki/concepts/mysql]] — duas escritas não-atômicas sincronizadas (reservar no Redis, depois confirmar/limpar no MySQL). Esse desenho gerava um problema clássico: dependendo da ordem das duas operações, o item vendia sem dar baixa no estoque real, ou ficava bloqueado como "fantasma" no banco. A solução não foi otimizar a sincronização — foi eliminar a necessidade dela, movendo a reserva inteira para dentro do MySQL com [[wiki/concepts/skip-locked]], numa única transação atômica. Ver [[wiki/concepts/grande-rollback]] e [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]].
+
 ## Escalabilidade
 
 - **Sentinel** — HA sem sharding; failover automático; dataset cabe em um nó
@@ -78,3 +82,4 @@ Abrir uma nova conexão Redis por requisição HTTP não escala — 100 usuário
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — Redis Pub/Sub como notificador entre microsserviços, armadilha da conexão sem Singleton
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — Redis Pub/Sub como broker entre servidores WebSocket replicados, tópico por usuário/grupo
+- [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] — caso onde Redis + MySQL sincronizados foi substituído por MySQL puro com SKIP LOCKED

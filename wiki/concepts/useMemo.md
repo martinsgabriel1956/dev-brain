@@ -3,8 +3,8 @@ type: concept
 title: "useMemo"
 aliases: ["use memo", "memoização React", "memoize"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-07
+source_count: 2
 tags: [react, hooks, performance, memoização, useMemo]
 skill: tech-mentor-frontend
 status: stable
@@ -50,3 +50,4 @@ O [[concurrent-mode|React Compiler]] (React 19 beta) pode eliminar a necessidade
 ## Key Sources
 
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
+- [[wiki/sources/useeffect-problemas-e-solucoes]]

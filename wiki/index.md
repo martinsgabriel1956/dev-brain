@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-07-03
+date_updated: 2026-07-07
 ---
 
 # Wiki Index
@@ -84,6 +84,12 @@ date_updated: 2026-07-03
 | [[wiki/sources/updates-tempo-real-polling-sse-websocket]] | Polling, SSE e WebSocket sob a lente de entrevista — quando polling simples é a resposta certa, LB L4 vs L7, tópico por usuário no Redis Pub/Sub, tabela de mensagens pendentes para offline |
 | [[wiki/sources/atrofia-cognitiva-ia-programacao]] | Sintaxe já era irrelevante antes da IA (autocomplete + Google); conhecimento perene (401/500, debugging de produção) é o que importa; fundação sólida torna atrofia reversível, mas quem aprendeu já com IA não tem o que recuperar |
 | [[wiki/sources/tdd-sdd-bdd-era-ia]] | TDD (red-green-refactor), SDD (contrato de boundary — OpenAPI/Protobuf/GraphQL) e BDD (Gherkin) como práticas com viés comportamental que também funcionam impostas sobre IA; proibir a IA de deletar testes que falham |
+| [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] | Shopify substituiu reserva de estoque Redis+MySQL por MySQL puro com SKIP LOCKED; corrigiu gap locking e PK mal desenhada; gargalo real era conexão segurada pelo checkout legado, não a query de reserva; -50% leituras, -33% transações, US$ 5,1M/min na Black Friday 2025 |
+| [[wiki/sources/lean-startup-para-devs-mano-deivin]] | Dev desmotivado quer largar tudo e construir seu próprio produto — Lean Startup (Eric Ries) como antídoto: validar a dor antes de codar, MVP de funcionalidade única, ciclo construir-medir-aprender, teste A/B, e apaixonar-se pelo problema, não pela solução |
+| [[wiki/sources/5-ou-6-dicas-para-projetos-novos]] | Checklist do primeiro dia de um projeto novo: escolha de stack (aprender vs. monetizar), estrutura documentada antes de codar, deploy imediato do boilerplate com CD automático, ORM mínima com migrations desde o dia 1, testes na pipeline antes de features, README + AGENTS.md |
+| [[wiki/sources/akita-discurso-howard-roark-a-nascente-ayn-rand]] | Akita lê o discurso de Howard Roark (*A Nascente*, Ayn Rand): criador vs. parasita, independência como necessidade básica de quem cria, crítica ao altruísmo como doutrina coercitiva |
+| [[wiki/sources/useeffect-problemas-e-solucoes]] | Três anti-padrões de `useEffect`: estado derivado sincronizado via effects encadeados, stale closure em contadores, fetch sem AbortController — "o melhor effect é o que você deleta" |
+| [[wiki/sources/integration-test-martin-fowler]] | Martin Fowler desambigua "integration test": estreito (double + contract test, rápido) vs. amplo (serviços reais, lento); confusão irmã com unit test solitário/sociável |
 
 ## Concepts
 
@@ -125,6 +131,18 @@ date_updated: 2026-07-03
 | [[wiki/concepts/arquitetura-de-software]] | Não existe arquitetura boa para tudo — existe arquitetura certa para o contexto certo |
 | [[wiki/concepts/ponte-fullstack-para-especializacao]] | Migrar de frontend para backend numa stack de nicho (Go): mirar pleno, não júnior, e usar vaga fullstack como ponte de entrada |
 | [[wiki/concepts/sintaxe-vs-conhecimento-perene]] | Memorizar sintaxe já era irrelevante antes da IA — o que não se atrofia é o julgamento sobre causa/efeito (erros HTTP, debugging de produção) |
+
+### Produto & Lean Startup
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/lean-startup]] | Metodologia de Eric Ries para validar produtos antes de construir — visão, construir-medir-aprender, aprendizagem validada, contabilização de inovação, crescimento sustentável, pivô ou persevere |
+| [[wiki/concepts/build-measure-learn]] | Ciclo iterativo central do Lean Startup — MVP de funcionalidade única, funil medido com estranhos, aprendizado por conversa direta com usuários |
+| [[wiki/concepts/validacao-de-problema]] | Confirmar que a dor é real e compartilhada antes de pensar em solução — a concorrência real costuma ser uma solução informal já em uso (WhatsApp, planilha) |
+| [[wiki/concepts/aprendizagem-validada]] | Teste A/B para decidir entre hipóteses de produto com dados, não achismo |
+| [[wiki/concepts/contabilizacao-de-inovacao]] | Consolidar faturamento, retenção e monetização depois que o produto já está validado |
+| [[wiki/concepts/pivotar-ou-perseverar]] | Decisão entre mudar de direção ou dobrar a aposta — possível sem trauma porque a paixão é pelo problema, não pela solução |
+| [[wiki/concepts/inovacao-continua]] | Manter a essência validada e adicionar novas frentes sem perdê-la — Uber e iFood como exemplos |
 
 ### Qualidade de Software com IA
 
@@ -340,6 +358,15 @@ date_updated: 2026-07-03
 | [[wiki/concepts/tutorial-hell]] | Espiral de consumo passivo de conteúdo — quanto mais você estuda, mais descobre que precisa estudar; saída: construir algo |
 | [[wiki/concepts/aprendizado-deliberado]] | Prática com intenção, feedback e dificuldade progressiva — antídoto ao tutorial hell |
 
+### Filosofia do Criador (Objetivismo)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/objetivismo]] | Sistema filosófico de Ayn Rand — razão, egoísmo racional e capitalismo laissez-faire |
+| [[wiki/concepts/criador-vs-parasita]] | Criador enfrenta a natureza sozinho e precisa de independência; parasita enfrenta através de outras pessoas e precisa de dependência |
+| [[wiki/concepts/altruismo-coercitivo]] | Crítica ao altruísmo como doutrina moral obrigatória — dependência tratada como virtude |
+| [[wiki/concepts/independencia-como-motor-criativo]] | Independência total em função e motivo como necessidade básica de quem cria |
+
 ### Escalabilidade & System Design
 
 | Página | Hook |
@@ -380,6 +407,10 @@ date_updated: 2026-07-03
 |---|---|
 | [[wiki/concepts/orm]] | ORM não elimina SQL, gera SQL por baixo dos panos — abstração, não substituição |
 | [[wiki/concepts/domain-specific-language]] | DSL para banco de dados quase sempre é wrapper em cima de SQL; Datalog do Datomic é a exceção real |
+| [[wiki/concepts/mysql]] | InnoDB, gap locking, estoque como linhas físicas vs coluna numérica, diagnóstico por tempo de conexão segurada |
+| [[wiki/concepts/skip-locked]] | `SELECT FOR UPDATE SKIP LOCKED` — fila de jobs e reserva de estoque de alta concorrência sem broker externo |
+| [[wiki/concepts/grande-rollback]] | Tendência de empresas em escala abandonando Redis/brokers por primitivas do banco relacional — Shopify e 37signals |
+| [[wiki/concepts/solid-queue]] | Fila de background jobs da 37signals 100% sobre banco relacional, sem Redis nem Kafka |
 
 ### Arquitetura Backend & Event-Driven
 
@@ -408,6 +439,8 @@ date_updated: 2026-07-03
 | [[wiki/concepts/definicao-de-pronto]] | Código que só funciona não está pronto — legível + testado + documentado + revisado por regra de negócio |
 | [[wiki/concepts/testar-proprio-codigo]] | Testar só o caminho feliz é concordar com a própria opinião — testes automatizados cobrem erro e happy path |
 | [[wiki/concepts/atomic-commits]] | Commit atômico = alteração + teste que a valida juntos — unidade funcional, não diário de mudanças |
+| [[wiki/concepts/checklist-primeiro-dia-projeto]] | Seis etapas do dia 1 de uma codebase nova — deploy, ORM/migrations e testes resolvidos antes de qualquer feature, quando o custo de errar ainda é baixo |
+| [[wiki/concepts/escolha-de-stack]] | Aprender vs. monetizar como eixo central da escolha de stack; framework batteries-included acelera SaaS solo |
 
 ### Segurança de APIs & Arquitetura
 
@@ -446,6 +479,25 @@ date_updated: 2026-07-03
 | [[wiki/concepts/component-library]] | Shadcn, Radix, Headless UI — componentes pré-prontos; headless dá controle total, estilizadas são mais rápidas |
 | [[wiki/concepts/fake-delay]] | Delay mínimo intencional (300ms) para garantir feedback visual perceptível — performance percebida é design |
 | [[wiki/concepts/design-como-interacao]] | Design se manifesta na interação, não na primeira impressão — micro-interações, onboarding, feedback, linguagem |
+
+### React & Hooks
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/derived-state]] | Se dá para calcular a partir de estado/props existentes, não é estado — calcula na renderização em vez de sincronizar via `useEffect` |
+| [[wiki/concepts/stale-closure]] | `useEffect` com array de dependências vazio congela variáveis da primeira renderização — closure captura variáveis, não valores |
+
+### Testes & Qualidade
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/tdd]] | Red-Green-Refactor — o teste vem antes para sentir o acoplamento antes de criá-lo, não para cobertura |
+| [[wiki/concepts/test-doubles]] | Dummy/Stub/Fake/Spy/Mock (Meszaros) — Fake robusto testa o contrato, Mock frágil testa o nome do método |
+| [[wiki/concepts/contract-testing]] | Consumer-Driven Contracts + Pact — valida que dois serviços concordam com o formato da comunicação sem rodar juntos |
+| [[wiki/concepts/piramide-de-testes]] | Unitário → Integração → E2E; quanto mais alto, mais lento, caro e frágil |
+| [[wiki/concepts/testes-integracao-banco-real]] | Nunca mockar o banco em testes de integração — o valor do teste está em validar a query real |
+| [[wiki/concepts/teste-de-integracao-estreito-vs-amplo]] | Fowler separa "integration test" em estreito (double + contract test, rápido) e amplo (serviços reais, lento) |
+| [[wiki/concepts/unit-test-solitario-vs-sociavel]] | Solitário mocka tudo (London), sociável usa colaboradores reais (Detroit) — confusão irmã do narrow/broad |
 
 ### Padrões e Design
 
@@ -500,7 +552,13 @@ date_updated: 2026-07-03
 | [[wiki/entities/george-hotz]] | Geohot — hacker do iPhone/PS3, carro autônomo open source; "não há substituto para sentar e construir algo" |
 | [[wiki/entities/pedro-camaforte]] | Dev sênior, cria série de system design para entrevistas — foco no que separa resposta mediana de resposta de sênior |
 | [[wiki/entities/uncle-bob]] | Robert C. Martin — associado a Clean Code/Clean Architecture/SOLID; citado em thread sobre SQL não ser feito para ser embutido em programas |
+| [[wiki/entities/shopify]] | E-commerce que hospeda ~14% das lojas americanas — substituiu reserva de estoque Redis+MySQL por MySQL puro com SKIP LOCKED, segurando US$ 5,1M/minuto na Black Friday 2025 |
+| [[wiki/entities/37signals]] | Empresa por trás do Basecamp e Rails — saiu do cloud para hardware próprio; criadora do Solid Queue, fila 100% sobre banco relacional |
 | [[wiki/entities/lucas-montano]] | Criador de conteúdo brasileiro — argumenta que o pânico de "atrofia cognitiva" por IA mede o tipo errado de habilidade (sintaxe, não conhecimento perene) |
+| [[wiki/entities/eric-ries]] | Autor de *A Startup Enxuta* — ex-programador que criou a metodologia Lean Startup depois de lançar um produto que ninguém queria |
+| [[wiki/entities/mano-deivin]] | Canal brasileiro de YouTube sobre carreira e produto para devs |
+| [[wiki/entities/ayn-rand]] | Escritora e filósofa russo-americana — criadora do Objetivismo; autora de *A Nascente* |
+| [[wiki/entities/martin-fowler]] | Chief Scientist Thoughtworks, autor de *Refactoring* e *PoEAA* — mantém o bliki, referência em terminologia de testes e arquitetura |
 
 ### Documentação de Arquitetura
 

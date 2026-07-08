@@ -3,8 +3,8 @@ type: concept
 title: "Test Doubles"
 aliases: ["dublê de teste", "mock stub fake spy", "xunit test patterns"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-07
+source_count: 2
 tags: [testes, test-doubles, mock, stub, fake, spy, dummy]
 skill: tech-mentor-testing
 status: stable
@@ -54,12 +54,19 @@ Se um teste precisa mockar 5+ dependências, o código tem **acoplamento alto de
 
 Substitui APIs externas no nível da rede com `msw`. O código nem sabe que está sendo interceptado — mais fiel ao comportamento real que mocks de `fetch`.
 
+## O termo "TestDouble" e o teste de integração estreito
+
+Cunhado por [[wiki/entities/martin-fowler]]. É a peça que viabiliza o [[teste-de-integracao-estreito-vs-amplo|narrow integration test]]: em vez de ativar um serviço externo real para testar a integração, exercita-se o código que fala com esse serviço contra um double — desde que ele seja fiel o suficiente (checado por [[contract-testing]]).
+
 ## Ver também
 
 - [[tdd]] — contexto onde test doubles são usados
 - [[piramide-de-testes]] — doubles são a ferramenta dos testes unitários
 - [[race-condition]] — MSW ajuda a testar race conditions de rede
+- [[teste-de-integracao-estreito-vs-amplo]] — uso de doubles fora do unitário, em testes de integração estreitos
+- [[unit-test-solitario-vs-sociavel]] — doubles definem se um unit test é solitário ou sociável
 
 ## Key Sources
 
 - [[wiki/sources/test-doubles]]
+- [[wiki/sources/integration-test-martin-fowler]]

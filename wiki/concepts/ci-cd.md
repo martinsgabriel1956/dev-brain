@@ -3,9 +3,9 @@ type: concept
 title: "CI/CD"
 aliases: ["CI/CD", "continuous integration", "continuous delivery", "continuous deployment", "pipeline de entrega"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
-tags: [devops, cicd, deploy, automação, qualidade]
+date_updated: 2026-07-07
+source_count: 3
+tags: [devops, cicd, deploy, automação, qualidade, projetos-novos]
 skill: tech-mentor-infra
 status: stable
 ---
@@ -34,6 +34,8 @@ Lint (30s) → Unit (2min) → Build (3min) → Integration (5min) → Security 
 
 Se lint falhar, nada mais executa — economiza tempo e recursos.
 
+O termo "Deployment Pipeline" é de [[wiki/entities/martin-fowler]]. Ele defende que [[teste-de-integracao-estreito-vs-amplo|testes de integração estreitos]] — por serem tão rápidos quanto unitários — devem rodar nos estágios iniciais do pipeline, dando feedback rápido; testes de integração amplos (system/E2E tests), sendo lentos, ficam melhor como gate de deploy do que de PR.
+
 ## Por que CI/CD importa
 
 Sem CI/CD:
@@ -45,6 +47,12 @@ Com CI/CD:
 - Changes pequenas e frequentes → risco baixo por deploy
 - Build reproduzível — mesmo processo sempre
 - Rollback = 1 comando ou automático
+
+## Deploy Imediato do Boilerplate (Antes de Qualquer Funcionalidade)
+
+Para um projeto novo, o CD não deve esperar a primeira feature. Recomendação prática, parte do [[wiki/concepts/checklist-primeiro-dia-projeto]]: assim que o framework gerar o boilerplate/Hello World, fazer o deploy dele imediatamente, com CD automático a cada merge para `main` (ex.: GitHub Actions apontando para uma VPS).
+
+Motivo: é comum construir algo que só roda localmente (sem Docker, sem infraestrutura real) e descobrir na hora do primeiro deploy real que nada funciona no provedor escolhido — gerando horas de debugging tardio. Fazendo o deploy no dia 1, cada problema de ambiente aparece isolado e barato de corrigir, em vez de se acumular.
 
 ## 6 Princípios de Pipeline Saudável
 
@@ -66,3 +74,5 @@ Com CI/CD:
 ## Key Sources
 
 - [[sources/cicd-pipeline]]
+- [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]
+- [[wiki/sources/integration-test-martin-fowler]]

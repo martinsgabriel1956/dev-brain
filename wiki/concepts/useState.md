@@ -3,8 +3,8 @@ type: concept
 title: "useState"
 aliases: ["use state", "estado local React"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-07
+source_count: 2
 tags: [react, hooks, estado, useState]
 skill: tech-mentor-frontend
 status: stable
@@ -58,3 +58,4 @@ Quando há mais de 2-3 estados relacionados que mudam juntos → ver [[useReduce
 ## Key Sources
 
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
+- [[wiki/sources/useeffect-problemas-e-solucoes]]

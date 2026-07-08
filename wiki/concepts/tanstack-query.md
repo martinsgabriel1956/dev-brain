@@ -3,8 +3,8 @@ type: concept
 title: "TanStack Query"
 aliases: ["React Query", "react-query", "tanstack-query", "@tanstack/react-query"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-07
+source_count: 2
 tags: [tanstack-query, server-state, cache, frontend, react]
 skill: tech-mentor-frontend
 status: stable
@@ -78,3 +78,4 @@ gcTime    → quanto tempo o dado fica no cache após não ter consumidores
 ## Key Sources
 
 - [[wiki/sources/tanstack-query-tudo-que-voce-precisa-saber]]
+- [[wiki/sources/useeffect-problemas-e-solucoes]]

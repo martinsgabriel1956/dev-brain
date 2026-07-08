@@ -33,6 +33,7 @@ UUIDv4 (aleatório) como primary key no MySQL causa dois problemas sérios: page
 
 ## Conceitos
 
+- [[wiki/concepts/mysql]] — comportamento de índice/lock do InnoDB, ver também caso de gap locking e reserva de estoque em [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]]
 - [[concepts/uuid]] — versões, trade-offs e quando usar cada uma
 - [[concepts/page-splitting]] — rebalanceamento do B+ Tree com chaves aleatórias
 - [[concepts/database-index]] — B+ Tree, como primary key afeta toda indexação

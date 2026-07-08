@@ -3,9 +3,9 @@ type: concept
 title: "Living Documentation"
 aliases: ["documentação viva", "docs from tests", "cucumber report", "structurizr"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
-tags: [testes, documentação, bdd, openapi, ci, living-docs]
+date_updated: 2026-07-07
+source_count: 2
+tags: [testes, documentação, bdd, openapi, ci, living-docs, readme, agents-md]
 skill: tech-mentor-testing
 status: stable
 ---
@@ -88,6 +88,8 @@ Diagramas C4 gerados de código — nunca desenhados no Miro, com diff rastreáv
 **Use:** múltiplos stakeholders não-técnicos, APIs públicas ou consumidas por outros times, sistemas regulados, arquitetura complexa que muda frequentemente.
 **Evite:** MVP ou protótipo descartável, time pequeno com comunicação direta.
 
+Esse "evite" é exatamente o contexto do [[wiki/concepts/checklist-primeiro-dia-projeto]]: para um solo dev iniciando um projeto novo, a recomendação é README + `AGENTS.md` escritos e mantidos manualmente — não living documentation. A justificativa é a mesma: escala pequena, sem stakeholders externos, custo de automação não compensa ainda.
+
 ## Ver também
 
 - [[bdd]] — principal gerador de living documentation
@@ -98,3 +100,4 @@ Diagramas C4 gerados de código — nunca desenhados no Miro, com diff rastreáv
 ## Key Sources
 
 - [[wiki/sources/living-documentation]]
+- [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]

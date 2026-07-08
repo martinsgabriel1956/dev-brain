@@ -3,9 +3,9 @@ type: concept
 title: "SKIP LOCKED"
 aliases: ["select for update skip locked", "skip locked postgresql", "fila no banco"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
-tags: [postgresql, concorrencia, filas, sistemas-distribuidos, banco]
+date_updated: 2026-07-07
+source_count: 2
+tags: [postgresql, mysql, concorrencia, filas, sistemas-distribuidos, banco, reserva-de-estoque]
 skill: tech-mentor-system-design
 status: stable
 ---
@@ -80,6 +80,13 @@ async function claimNextJob(workerId: string) {
 | Visibilidade | Query direta na tabela | Dashboard do broker |
 | Complexidade | Baixa | Alta |
 
+## Além de Filas de Job: Reserva de Estoque
+
+O mesmo padrão se aplica fora do contexto de fila de job. A [[wiki/entities/shopify]] usa `SKIP LOCKED` no MySQL para reserva de estoque em e-commerce: em vez de uma coluna `estoque` numérica, cada unidade física vira uma linha própria na tabela. Reservar N unidades = travar e mover N linhas específicas numa única transação — workers concorrentes pulam linhas já reservadas em vez de esperar. Para produtos com estoque muito grande, um pool limitado (ex: 1.000 linhas por produto/local) é reabastecido automaticamente conforme esvazia. Ver [[wiki/concepts/mysql]] para os problemas de gap locking que precisaram ser corrigidos antes desse padrão escalar, e [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] para o case completo.
+
+O **[[wiki/concepts/solid-queue]]** da [[wiki/entities/37signals]] é outro exemplo — fila de background jobs inteira sobre banco relacional (MySQL/PostgreSQL/SQLite), sem broker externo.
+
 ## Key Sources
 
-- [[sources/skip-locked-fencing-token]]
+- [[wiki/sources/skip-locked-fencing-token]]
+- [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] — SKIP LOCKED aplicado a reserva de estoque (não fila de job), em escala de US$ 5,1M/minuto

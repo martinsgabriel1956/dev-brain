@@ -3,9 +3,9 @@ type: concept
 title: "Distributed Lock"
 aliases: ["lock distribuído", "redis set nx", "distributed locking"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
-tags: [system-design, redis, concorrencia, distributed-systems, race-condition]
+date_updated: 2026-07-07
+source_count: 2
+tags: [system-design, redis, mysql, concorrencia, distributed-systems, race-condition]
 skill: tech-mentor-system-design
 status: stable
 ---
@@ -58,3 +58,4 @@ Processo lento ressuscita após TTL expirar e acredita ainda ter o lock. Soluç�
 
 - [[sources/case-uber]]
 - [[sources/skip-locked-fencing-token]]
+- [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] — reserva de estoque via linhas físicas + [[concepts/skip-locked]] no MySQL, sem lock explícito de aplicação

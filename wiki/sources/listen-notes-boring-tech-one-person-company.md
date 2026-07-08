@@ -87,7 +87,7 @@ Wenbin Fang detalha como opera o [Listen Notes](https://www.listennotes.com/) (b
 - [[boring-technology]] — escolher tecnologias comprovadas em vez de novas e arriscadas
 - [[infraestrutura-assincrona]] — separação entre processamento síncrono (web) e assíncrono (workers)
 - [[monorepo]] — repositório único para todo o código
-- [[source-of-truth]] — PostgreSQL como única fonte verdadeira de dados
+- [[source-of-truth]] — PostgreSQL como única fonte verdadeira de dados; mesmo princípio aplicado por [[wiki/entities/shopify]] ao mover o estoque inteiro para o MySQL — ver [[wiki/concepts/grande-rollback]] e [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]]
 
 ---
 

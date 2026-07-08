@@ -3,9 +3,9 @@ type: concept
 title: "Pirâmide de Testes"
 aliases: ["test pyramid", "ice cream cone", "testing trophy", "estratégia de testes"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
-tags: [testes, pirâmide, estratégia, unitário, integração, e2e]
+date_updated: 2026-07-07
+source_count: 3
+tags: [testes, pirâmide, estratégia, unitário, integração, e2e, projetos-novos]
 skill: tech-mentor-testing
 status: stable
 ---
@@ -102,14 +102,29 @@ Para sistemas com muito I/O e lógica de domínio rasa (Next.js, CRUD APIs), o c
 
 E2E não bloqueia merge de PR — é lento demais. Bloqueia o **deploy para produção**.
 
+## Testes Desde o Dia 1 de um Projeto Novo
+
+Parte do [[wiki/concepts/checklist-primeiro-dia-projeto]]: configurar testes unitário e e2e na pipeline de CI **antes mesmo de existir qualquer funcionalidade real** — no ecossistema JS, um par comum é Vitest (unitário) + Cypress (e2e). Ter isso rodando desde cedo bloqueando merge garante que a base da pirâmide já existe quando a primeira feature real chega, em vez de virar dívida técnica para "depois".
+
+## A camada de "Integração" tem duas variantes
+
+[[teste-de-integracao-estreito-vs-amplo|Martin Fowler]] separa a camada de integração em duas práticas que a pirâmide costuma tratar como uma só:
+- **estreita** — testa só a fatia de código que fala com um serviço externo, contra um double; roda quase na velocidade de um unitário e pode ficar no mesmo estágio deles no CI;
+- **ampla** — ativa serviços reais; mais próxima do E2E em custo e fragilidade.
+
+Isso explica por que times diferentes descrevem a "camada do meio" da pirâmide com expectativas de velocidade tão distintas.
+
 ## Ver também
 
 - [[tdd]] — prática que preenche a base da pirâmide
 - [[contract-testing]] — camada entre integração e E2E em microsserviços
 - [[test-doubles]] — como isolar dependências nos unitários
 - [[testar-proprio-codigo]] — hábito de cobrir além do happy path
+- [[teste-de-integracao-estreito-vs-amplo]] — a camada "Integração" desta pirâmide se divide em estreita e ampla
 
 ## Key Sources
 
 - [[sources/piramide-de-testes]]
 - [[sources/roadmap-dev-senior-2026]] — testes como seguro contra decisões ruins da IA (pilar 5)
+- [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]
+- [[wiki/sources/integration-test-martin-fowler]]
