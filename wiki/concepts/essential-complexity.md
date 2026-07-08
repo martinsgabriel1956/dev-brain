@@ -3,8 +3,8 @@ type: concept
 title: "Complexidade Essencial"
 aliases: ["complexidade essencial", "essential complexity", "complexidade inerente"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [essential-complexity, fred-brooks, arquitetura, domain-complexity]
 skill: tech-mentor-system-design
 status: stable
@@ -51,6 +51,11 @@ Domain-Driven Design é, em essência, uma metodologia para lidar bem com comple
 - [[concepts/ddd-strategic]] — estratégia para gerenciar complexidade essencial de domínio
 - [[entities/fred-brooks]] — autor do conceito
 
+## Gatilhos concretos que expõem a complexidade essencial
+
+[[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] lista gatilhos bem concretos e cotidianos que forçam a complexidade essencial a aparecer para quem só opera CRUD: o sistema crescer, o usuário dobrar, a rede cair no meio de uma transação, duas requisições chegarem ao mesmo tempo. Cada um desses gatilhos corresponde a um domínio específico do "mundo debaixo do CRUD" — [[wiki/concepts/protocolo-de-rede|redes]], [[wiki/concepts/back-pressure|streams]], [[wiki/concepts/idempotencia|mensageria]] — que a fonte percorre em detalhe.
+
 ## Key Sources
 
 - [[sources/conceitos-que-ninguem-ensina]]
+- [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — gatilhos concretos (escala, rede, concorrência) que forçam a complexidade essencial a emergir para o operador de CRUD

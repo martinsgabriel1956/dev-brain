@@ -3,8 +3,8 @@ type: concept
 title: "Design System Mobile"
 aliases: ["mobile design tokens", "figma to code mobile", "mobile component library"]
 date_created: 2026-04-24
-date_updated: 2026-04-24
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [mobile, design-system, tokens, componentes, figma, dark-mode, theming]
 skill: tech-mentor-mobile
 status: stable
@@ -82,3 +82,4 @@ export function Button({ label, variant, onPress, disabled }: ButtonProps) {
 ## Key Sources
 
 - [[wiki/sources/mobile-design-system]]
+- [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — citado como exemplo de que "design system, mesmo no front, não é empilhar componente" — é consistência e acessibilidade que escalam para um time inteiro sem virar caos

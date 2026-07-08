@@ -9,7 +9,14 @@ date_updated: 2026-07-07
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] | André Casciotti: não peça permissão, separe mudanças em partes coesas, use automações pessoais como veículo de prática de baixo risco |
+| [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] | 5 passos para reduzir a fricção do primeiro code review: regra de negócio antes de estilo, revisar com IA sem virar dependência, testar em ambiente externo, não levar comentários pro pessoal, validar em produção |
+| [[wiki/sources/pare-de-terceirizar-suas-decisoes]] | Akita: pare de terceirizar decisões de carreira para influencers e de parar de cargo-cultar stack de big tech — skin in the game, antifragilidade e custo afundado |
+| [[wiki/sources/3-soft-skills-que-poucos-programadores-dominam]] | Renato Augusto: comunicação persuasiva (gatilhos de urgência/ganância), imagem profissional mesmo em home office, e habilidade de lidar com pessoas (Dale Carnegie) como as soft skills que a IA não substitui |
+| [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] | ACID (atomicidade, consistência, isolamento, durabilidade) vs. BASE (basically available, soft state, eventual consistency) — o tradeoff corretude/performance vs. disponibilidade/escala, e quando usar cada um |
+| [[wiki/sources/vibe-coding-limites-maturidade-profissional]] | Vibe coding brilha em MVPs, protótipos, docs e testes; sistemas sustentáveis e seguros ainda exigem arquitetura, contexto de negócio e julgamento humano — vendê-los como prontos sem isso é ilusão e desonestidade |
 | [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] | SQL é linguagem, não banco de dados — a confusão do Twitter na thread de Uncle Bob, e o que um banco relacional faz por baixo (B-tree, WAL, parser, planner) |
+| [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]] | Q&A: ORM inviável com relacionamentos profundos/chaves compostas força SQL direto; stored procedure com moderação; relatório sempre bate em réplica; relacional vs. não relacional depende da necessidade de junções múltiplas |
 | [[wiki/sources/chain-of-thought-prompting]] | CoT prompting (Wei et al., 2022) — passos intermediários como exemplares few-shot é uma capacidade emergente de ~100B+ parâmetros; supera GPT-3 fine-tuned no GSM8K via prompting apenas |
 | [[wiki/sources/microsoft-prompt-engineering-guide]] | Quatro padrões de prompt engineering (Tell/Show/Describe/Remind) + Software 3.0 — guia prático da Microsoft para obter boas completions do Codex/GPT |
 | [[wiki/sources/gpt3-language-models-are-few-shot-learners]] | GPT-3 (175B) formaliza in-context learning — aprender tarefas via exemplos no prompt sem atualizar pesos; few-shot rivaliza com fine-tuned SOTA em vários benchmarks |
@@ -75,6 +82,7 @@ date_updated: 2026-07-07
 | [[wiki/sources/como-arquitetar-com-cache-e-redis]] | Redis como solução de cache: o que é, pontos fortes e fracos, e três padrões arquiteturais — Feature Flags, Cache-Aside e CQRS com Redis como read layer |
 | [[wiki/sources/10-conceitos-fundamentais-computacao]] | Os 10 conceitos base de toda computação — do binário à abstração; a fundação que não muda mesmo quando linguagens e frameworks mudam |
 | [[wiki/sources/escalabilidade-vertical-horizontal-system-design]] | Vertical vs horizontal, Load Balancer, stateless, CDN, auto scaling, sharding, replicação — quando e como escalar cada camada |
+| [[wiki/sources/the-comparison-trap-in-programming-careers]] | Bastidor vs palco + familiaridade vs capacidade — as duas formas de comparação que destroem iniciantes; quatro estratégias para medir evolução contra si mesmo |
 | [[wiki/sources/tokens-llm-fundamentos-typescript]] | Tokens em LLMs explicados via TypeScript — encode/decode, treino de tokenizer, trade-off de vocabulário, palavras raras custam mais tokens |
 | [[wiki/sources/akita-oferta-procura-matematica-carreira]] | Lei de oferta e procura em ciclos de mercado tech; raciocínio matemático básico (juros compostos) como diferencial de carreira; apego a ferramentas como estagnação |
 | [[wiki/sources/engenheiro-vs-programador-mercado-ia]] | Programador executa, engenheiro governa — o paradoxo da IA (mais código gerado = mais demanda por quem governa) e o roadmap de fundamentos em dois eixos, técnico e humano |
@@ -90,6 +98,13 @@ date_updated: 2026-07-07
 | [[wiki/sources/akita-discurso-howard-roark-a-nascente-ayn-rand]] | Akita lê o discurso de Howard Roark (*A Nascente*, Ayn Rand): criador vs. parasita, independência como necessidade básica de quem cria, crítica ao altruísmo como doutrina coercitiva |
 | [[wiki/sources/useeffect-problemas-e-solucoes]] | Três anti-padrões de `useEffect`: estado derivado sincronizado via effects encadeados, stale closure em contadores, fetch sem AbortController — "o melhor effect é o que você deleta" |
 | [[wiki/sources/integration-test-martin-fowler]] | Martin Fowler desambigua "integration test": estreito (double + contract test, rápido) vs. amplo (serviços reais, lento); confusão irmã com unit test solitário/sociável |
+| [[wiki/sources/iso-27001-dicionario-programador]] | SGSI organizado em torno da tríade CIA; Anexo A 2022 com 93 controles em 4 temas; controles A.8.28/A.5.15/A.5.8/A.8.25/A.5.3 relevantes para devs; Policy as Code (OPA/Gatekeeper) como implementação; ISO 42001 para governança de IA |
+| [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] | Tipos de load balancer (hardware/software/cloud), por que AWS/Azure separam LB de camada 4 e 7, e algoritmos de balanceamento (Round Robin, Weighted, Least Connections, Least Time, Sticky) com demo prática em Nginx |
+| [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] | "Operador de CRUD" vs. engenheiro — o mundo debaixo do CRUD (redes, Bluetooth, streams, mobile, banco de dados); IA entrega o fácil, não o simples; repertório é a cola que a IA não substitui |
+| [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]] | Vulnerabilidades comuns de app/SaaS além dos grandes CVEs: webhook sem validação de assinatura, IDOR/BOLA, exposição excessiva de dados, falta de rate limiting, mass assignment, TOCTOU e o anti-padrão raiz de confiar no frontend para regras de negócio |
+| [[wiki/sources/produtividade-falsa-vs-verdadeira]] | Ativo vs. produtivo, Pareto 80/20, eficácia antes de eficiência, e a técnica da "pergunta do ataque cardíaco" (Tim Ferriss) para achar as poucas tarefas de real impacto |
+| [[wiki/sources/apagao-de-seniors-vibe-coding]] | Vibe coding pode gerar um apagão de sêniors; kit de sobrevivência técnico contra os 4 pilares que a IA ignora — N+1 detector, property-based testing para race conditions, memory profiling, dependency/secret scanning |
+| [[wiki/sources/react-19-memoization-sem-usememo-usecallback]] | React Compiler (React 19) automatiza a memoização que antes exigia useMemo/useCallback manuais; hooks manuais sobrevivem só em casos de borda (libs de terceiros, código fora das Rules of Hooks) |
 
 ## Concepts
 
@@ -113,6 +128,8 @@ date_updated: 2026-07-07
 | Página | Hook |
 |---|---|
 | [[wiki/concepts/soft-skills]] | Habilidades humanas que potencializam o técnico — o multiplicador da carreira |
+| [[wiki/concepts/code-review]] | Regra de negócio antes de estilo — e por que o primeiro review de um júnior costuma vir cheio de comentários |
+| [[wiki/concepts/sindrome-do-impostor]] | Confundir "código reprovado" com "eu fui reprovado" — o gatilho mais comum no primeiro emprego |
 | [[wiki/concepts/comunicacao-tecnica]] | Ser entendido, não apenas falar — acelerador de time |
 | [[wiki/concepts/colaboracao-times]] | Construir junto; empatia de papel e gestão de conflito |
 | [[wiki/concepts/autonomia-responsabilidade]] | Liberdade + maturidade para alinhar expectativas antes de executar |
@@ -123,14 +140,37 @@ date_updated: 2026-07-07
 | [[wiki/concepts/dados-vs-intuicao]] | Dados superam intuição especialmente em ideias inovadoras — quanto menos dados, mais fortes e perigosas são as opiniões |
 | [[wiki/concepts/maturidade-tecnica]] | Capacidade de extrair aprendizado de qualquer situação, incluindo as adversas |
 | [[wiki/concepts/atualizacao-tecnologica]] | Custo de ficar estagnado vs. fadiga de perseguir novidades — empresa que não evoluiu na stack também não evoluiu na cultura |
+| [[wiki/concepts/comparacao-na-carreira]] | Medir seu primeiro degrau pela régua de quem está no meio da escada — o erro que leva à desistência prematura |
+| [[wiki/concepts/familiaridade-vs-capacidade]] | Velocidade inicial ≠ talento — é histórico acumulado de vida; linha de largada explica tudo |
+| [[wiki/concepts/linha-de-largada]] | Ponto de partida determinado por exposição anterior, não aptidão — invalida comparações de velocidade |
+| [[wiki/concepts/log-de-aprendizado]] | Registro semanal de aprendizado que torna visível a evolução sub-perceptível no dia a dia |
+| [[wiki/concepts/disciplina-vs-talento]] | Disciplina consistente supera talento no longo prazo — a única competição válida é com o eu do passado |
 | [[wiki/concepts/ciclo-de-mercado-tech]] | Mercado tech segue ciclos de abundância e depressão por oferta e procura — ciclo de abundância atual está terminando |
 | [[wiki/concepts/apego-a-ferramentas]] | Prender-se à primeira ferramenta aprendida é sinal de estagnação, não de expertise — martelo e chave de fenda |
 | [[wiki/concepts/engenheiro-vs-programador]] | Programador executa dentro de um espaço definido; engenheiro questiona a formulação do problema e governa a complexidade — mentalidade, não título |
 | [[wiki/concepts/governanca-de-codigo-gerado-por-ia]] | Quanto mais IA gera código, mais se precisa de engenheiros para governá-lo — metralhadora para quem não sabe mirar |
 | [[wiki/concepts/pensamento-em-producao]] | Código escrito é 10% do trabalho; os outros 90% são o sistema rodando em produção com usuários reais |
 | [[wiki/concepts/arquitetura-de-software]] | Não existe arquitetura boa para tudo — existe arquitetura certa para o contexto certo |
+| [[wiki/concepts/contexto-organizacional-para-arquitetura]] | Maturidade de plataforma, processo e know-how da empresa como restrição real de arquitetura — não só a tecnologia "certa" em abstrato |
+| [[wiki/concepts/confidencialidade-de-dados-em-prompts-ia]] | Não jogar código ou dado corporativo sigiloso em ferramentas de IA de terceiros fora do perímetro da empresa |
 | [[wiki/concepts/ponte-fullstack-para-especializacao]] | Migrar de frontend para backend numa stack de nicho (Go): mirar pleno, não júnior, e usar vaga fullstack como ponte de entrada |
 | [[wiki/concepts/sintaxe-vs-conhecimento-perene]] | Memorizar sintaxe já era irrelevante antes da IA — o que não se atrofia é o julgamento sobre causa/efeito (erros HTTP, debugging de produção) |
+| [[wiki/concepts/ativo-vs-produtivo]] | Terminar tarefas no prazo mas preencher o resto do tempo com atividade de aparência produtiva não é ser produtivo — é procrastinação sofisticada |
+| [[wiki/concepts/principio-de-pareto]] | 80% dos resultados vêm de 20% do esforço — fazer bem feito ou gastar muito tempo numa tarefa não a torna importante |
+| [[wiki/concepts/eficacia-vs-eficiencia]] | Eficácia é fazer a coisa certa; eficiência é fazer qualquer coisa de forma econômica — otimizar a execução antes de validar a tarefa é o erro padrão |
+| [[wiki/concepts/tecnica-do-ataque-cardiaco]] | "Se você só pudesse trabalhar 2h/dia, no que trabalharia?" — técnica de Tim Ferriss para achar as tarefas de real impacto |
+| [[wiki/concepts/sobrecarga-de-informacao]] | Riqueza de informação cria pobreza de atenção (Herbert Simon) — consumir conteúdo sem aplicação é desperdício disfarçado de aprendizado |
+| [[wiki/concepts/decisao-terceirizada]] | Pedir para influencer/palestrante decidir sua carreira por você — falha porque ninguém tem contexto da sua história nem skin in the game |
+| [[wiki/concepts/skin-in-the-game]] | Só vale ouvir com propriedade quem arca com o prejuízo se o próprio conselho der errado |
+| [[wiki/concepts/antifragilidade]] | Antifrágil não é prejuízo zero, é pouco prejuízo — apostar em várias tecnologias/décadas em vez de tentar acertar 100% |
+| [[wiki/concepts/cargo-cult-tecnologico]] | Copiar a stack de Netflix/Google/Facebook sem ter a escala deles — compare-se com o dia um delas, não com a versão madura |
+| [[wiki/concepts/falacia-do-custo-afundado]] | Continuar um livro/curso ruim só porque já investiu tempo nele só aumenta o prejuízo |
+| [[wiki/concepts/curva-de-adocao-tecnologica]] | Toda tecnologia segue uma curva em S — início devagar, crescimento exponencial, desaceleração; nada dura para sempre |
+| [[wiki/concepts/granularidade-de-mudanca]] | Mudança grande gera barreira grande — separe em partes pequenas e coesas que ainda gerem valor real |
+| [[wiki/concepts/automacao-pessoal-para-aprender]] | Automações pessoais fora do pipeline da empresa como veículo de prática deliberada de baixo risco |
+| [[wiki/concepts/comunicacao-persuasiva]] | Vender decisão técnica (refatoração) com gatilhos de urgência/ganância em linguagem de negócio, não em jargão técnico |
+| [[wiki/concepts/imagem-profissional]] | Aparência mesmo em home office afeta autopercepção e percepção alheia de liderança — evidência citada é fraca/não rastreável |
+| [[wiki/concepts/habilidade-de-lidar-com-pessoas]] | Confiança e influência interpessoal (Dale Carnegie) como maior alavanca de sucesso profissional segundo Renato Augusto — estatística 85/15 sem fonte primária rastreável |
 
 ### Produto & Lean Startup
 
@@ -166,6 +206,10 @@ date_updated: 2026-07-07
 | [[wiki/concepts/pipeline-de-qualidade]] | Lint → testes → coverage → mutation → segurança → E2E; passa ou não passa |
 | [[wiki/concepts/teste-de-mutacao]] | Valida que os testes realmente testam comportamento — não só executam sem quebrar |
 | [[wiki/concepts/gaming-de-testes-por-ia]] | IA deleta ou enfraquece testes que falham em vez de corrigir o código — proibir explicitamente |
+| [[wiki/concepts/apagao-de-seniors]] | Risco de escassez de sêniors se vibe coding virar padrão: menos gente aprende fundamentos, mais gente só orquestra prompts |
+| [[wiki/concepts/n-plus-um-detector]] | Middleware que conta queries por request e alerta quando ultrapassa threshold — detecta N+1 antes de produção |
+| [[wiki/concepts/property-based-testing]] | Bombardeia função com inputs aleatórios/concorrentes e verifica invariante — eficaz contra race conditions geradas por IA |
+| [[wiki/concepts/adaptive-thinking]] | Modelo decide sozinho quanto "pensar"; hipótese de que remove controle do usuário para gerenciar custo de inferência |
 
 ### Perfil Profissional & Product Engineering
 
@@ -306,6 +350,7 @@ date_updated: 2026-07-07
 | [[wiki/concepts/compilador]] | Traduz código-fonte em código de máquina via lexer → parser → AST → otimizador |
 | [[wiki/concepts/protocolo-de-rede]] | Regras de comunicação em camadas — HTTP diz o quê, TCP garante entrega, IP define rota |
 | [[wiki/concepts/criptografia]] | Hashing irreversível, simétrica (mesma chave) e assimétrica (par público/privado) — base do HTTPS |
+| [[wiki/concepts/bluetooth-le]] | Advertising → scan → pair → GATT — o "handshake" do Bluetooth Low Energy; gerenciar mal o ciclo gera conexão fantasma e dreno de bateria |
 
 ### Fundamentos de Lógica e Programação
 
@@ -411,6 +456,14 @@ date_updated: 2026-07-07
 | [[wiki/concepts/skip-locked]] | `SELECT FOR UPDATE SKIP LOCKED` — fila de jobs e reserva de estoque de alta concorrência sem broker externo |
 | [[wiki/concepts/grande-rollback]] | Tendência de empresas em escala abandonando Redis/brokers por primitivas do banco relacional — Shopify e 37signals |
 | [[wiki/concepts/solid-queue]] | Fila de background jobs da 37signals 100% sobre banco relacional, sem Redis nem Kafka |
+| [[wiki/concepts/acid]] | Atomicidade, Consistência, Isolamento, Durabilidade — garantias fortes dos bancos relacionais |
+| [[wiki/concepts/base-basically-available-soft-state-eventual]] | O contraponto de ACID — disponibilidade e escala em troca de consistência eventual |
+| [[wiki/concepts/relational-vs-nosql]] | Não existe escolha universal; trade-offs de consistência, queries, escala e schema por tipo de banco |
+| [[wiki/concepts/database-transactions]] | Mecanismo que garante atomicidade — `$transaction` como invocação do contrato ACID |
+| [[wiki/concepts/database-index]] | Estrutura (B-tree/hash) que acelera queries e garante unicidade ao custo de overhead em escritas |
+| [[wiki/concepts/consistency-models]] | Espectro de Linearizability a Eventual Consistency — o que um cliente pode observar após uma escrita |
+| [[wiki/concepts/stored-procedure]] | Lógica armazenada e executada no banco — mover regra de negócio pra lá compensa em agregação de grande volume, mas com moderação |
+| [[wiki/concepts/materialized-view]] | View com resultado persistido em disco — meio-termo entre SQL cru repetido e stored procedure |
 
 ### Arquitetura Backend & Event-Driven
 
@@ -468,6 +521,17 @@ date_updated: 2026-07-07
 | [[wiki/concepts/memory-hard]] | Ocupa RAM por instância — limita paralelismo de GPU pelo gargalo de VRAM |
 | [[wiki/concepts/rainbow-table]] | Tabela hash→senha pré-computada — reutilizável contra qualquer banco sem salt |
 | [[wiki/concepts/ataque-pre-computacao]] | Trabalho feito uma vez, reutilizado em múltiplos vazamentos — salt invalida o reaproveitamento |
+| [[wiki/concepts/iso-27001]] | Framework de gestão (SGSI) organizado em torno da tríade CIA — 93 controles do Anexo A em 4 temas, SoA justifica o que se aplica |
+| [[wiki/concepts/sgsi-isms]] | O objeto central que a ISO 27001 exige: políticas + processos + tecnologia geridos como sistema, não ferramenta isolada |
+| [[wiki/concepts/triade-cia]] | Confidencialidade, integridade, disponibilidade — o critério que justifica todo controle de segurança da informação |
+| [[wiki/concepts/segregacao-de-funcoes]] | Quem desenvolve não deve poder fazer deploy sozinho — controle A.5.3, tenso em times pequenos |
+| [[wiki/concepts/iso-42001]] | Governança de IA responsável — cobre a lacuna que a ISO 27001 deixa em aberto com LLMs |
+| [[wiki/concepts/idor]] | IDOR/BOLA — acessar objeto por ID sem checar ownership; #1 do OWASP API Top 10 |
+| [[wiki/concepts/mass-assignment]] | BOPLA — aceitar o body inteiro sem whitelist permite alterar campos como `role` |
+| [[wiki/concepts/webhook-signature-validation]] | HMAC + `timingSafeEqual` + replay/idempotência — validar que o webhook veio da fonte certa |
+| [[wiki/concepts/exposicao-excessiva-de-dados]] | Retornar a entidade inteira em vez de projetar campos vaza dados sensíveis mesmo sem exibi-los na UI |
+| [[wiki/concepts/toctou]] | Intervalo entre check e use permite saque/estoque duplicado sob concorrência — corrigido com transactions atômicas |
+| [[wiki/concepts/confiar-no-frontend]] | Anti-padrão raiz: regra de negócio só no cliente é sempre contornável — servidor deve revalidar tudo |
 
 ### Frontend & Design Engineering
 
@@ -479,6 +543,10 @@ date_updated: 2026-07-07
 | [[wiki/concepts/component-library]] | Shadcn, Radix, Headless UI — componentes pré-prontos; headless dá controle total, estilizadas são mais rápidas |
 | [[wiki/concepts/fake-delay]] | Delay mínimo intencional (300ms) para garantir feedback visual perceptível — performance percebida é design |
 | [[wiki/concepts/design-como-interacao]] | Design se manifesta na interação, não na primeira impressão — micro-interações, onboarding, feedback, linguagem |
+| [[wiki/concepts/react-compiler]] | Compilador do React 19 que memoiza valores e funções automaticamente em build time, reduzindo a necessidade de useMemo/useCallback manuais |
+| [[wiki/concepts/useMemo]] | Hook que memoiza o resultado de um cálculo — só recalcula quando as dependências mudam; overhead supera ganho em cálculos triviais |
+| [[wiki/concepts/useCallback]] | Hook que memoiza a referência de uma função entre renders — essencial para não quebrar `React.memo` em componentes filhos |
+| [[wiki/concepts/concurrent-mode]] | Modelo de renderização do React 18+ que pausa/retoma/prioriza renders sem bloquear a UI — useTransition e useDeferredValue |
 
 ### React & Hooks
 
@@ -516,7 +584,8 @@ date_updated: 2026-07-07
 |---|---|
 | [[wiki/entities/bernardo-lobato]] | Desenvolvedor e criador de conteúdo brasileiro — arquitetura de software e padrões avançados |
 | [[wiki/entities/linuxtips]] | Plataforma brasileira de educação em tecnologia — DevOps, Cloud, Kubernetes, podcast Papinho Tech Solo |
-| [[wiki/entities/renato-augusto]] | Desenvolvedor e criador de conteúdo brasileiro — padrões de projeto GoF e orientação a objetos |
+| [[wiki/entities/renato-augusto]] | Desenvolvedor e criador de conteúdo brasileiro — padrões de projeto GoF e orientação a objetos, carreira e soft skills |
+| [[wiki/entities/dale-carnegie]] | Autor de "Como Fazer Amigos e Influenciar Pessoas" (1936) — confiança e influência genuína como base da habilidade interpessoal |
 | [[wiki/entities/eduarda-rocket-city]] | Engenheira de software internacional, criadora de conteúdo no canal Rocket City |
 | [[wiki/entities/openai]] | Organização responsável pelo GPT-3/4 — formalizou in-context learning e scaling laws; criadora do tokenizer tiktoken |
 | [[wiki/entities/google]] | Criadora do Gemini e do harness AntiGravity — concorrente de Anthropic e OpenAI, tokenizer próprio |
@@ -559,6 +628,8 @@ date_updated: 2026-07-07
 | [[wiki/entities/mano-deivin]] | Canal brasileiro de YouTube sobre carreira e produto para devs |
 | [[wiki/entities/ayn-rand]] | Escritora e filósofa russo-americana — criadora do Objetivismo; autora de *A Nascente* |
 | [[wiki/entities/martin-fowler]] | Chief Scientist Thoughtworks, autor de *Refactoring* e *PoEAA* — mantém o bliki, referência em terminologia de testes e arquitetura |
+| [[wiki/entities/mercado-livre]] | Maior e-commerce/fintech da América Latina — combina ISO 27001 + PCI-DSS + Zero Trust; adotante consolidado de Go em produção |
+| [[wiki/entities/andre-casciotti]] | Criador de conteúdo brasileiro, canal Próximo Nível — carreira dev, granularidade de mudança, automações pessoais como prática |
 
 ### Documentação de Arquitetura
 

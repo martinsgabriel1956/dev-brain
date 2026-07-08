@@ -3,8 +3,8 @@ type: concept
 title: "Teorema CAP"
 aliases: ["CAP theorem", "CAP", "consistência disponibilidade partição", "PACELC"]
 date_created: 2026-06-26
-date_updated: 2026-06-26
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [system-design, sistemas-distribuidos, cap-theorem, consistencia, disponibilidade]
 skill: tech-mentor-system-design
 status: stub
@@ -47,6 +47,11 @@ O CAP descreve o comportamento *em partição*. PACELC estende: mesmo sem parti�
 - [[sharding]] — a escolha da shard key e do modelo de consistência reflete o CAP
 - [[replicacao-de-banco]] — replicação assíncrona = AP; síncrona = CP
 
+## Relação com ACID/BASE
+
+A escolha AP do teorema CAP é essencialmente o que [[wiki/concepts/base-basically-available-soft-state-eventual|BASE]] formaliza como padrão de design (Basically Available + Eventual Consistency); a escolha CP tende a se aproximar das garantias de [[wiki/concepts/acid]]. Ver exemplos de domínio por tipo de garantia em [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]].
+
 ## Key sources
 
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]] (menção superficial — necessita fonte dedicada)
+- [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] — BASE como formalização prática da escolha AP

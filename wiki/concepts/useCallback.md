@@ -3,8 +3,8 @@ type: concept
 title: "useCallback"
 aliases: ["use callback", "memoizar função React"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-04
+source_count: 2
 tags: [react, hooks, performance, memoização, useCallback]
 skill: tech-mentor-frontend
 status: stable
@@ -44,8 +44,9 @@ const fn = useMemo(() => () => compute(a, b), [a, b]);
 
 ## Relação com React Compiler
 
-O React Compiler (React 19 beta) pode eliminar `useCallback` manual — ver [[useMemo]].
+O [[react-compiler]] (React 19) pode eliminar `useCallback` manual na maioria dos casos — sobra útil sobretudo quando o filho com `React.memo` depende de igualdade referencial estrita e o compiler não cobre o trecho (ex. código fora das Rules of Hooks).
 
 ## Key Sources
 
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
+- [[wiki/sources/react-19-memoization-sem-usememo-usecallback]]

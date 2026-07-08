@@ -3,8 +3,8 @@ type: concept
 title: "Repertório Técnico"
 aliases: ["repertorio", "repertório de programador", "padrões acumulados"]
 date_created: 2026-06-01
-date_updated: 2026-06-01
-source_count: 1
+date_updated: 2026-07-03
+source_count: 3
 tags: [aprendizado, fundamentos, programacao, carreira, pattern-recognition]
 skill: tech-mentor-leadership
 status: draft
@@ -47,6 +47,12 @@ Repetir a mesma receita 20 vezes não constrói repertório — constrói profic
 - [[autonomia-tecnica]] — alta autonomia técnica pressupõe repertório suficiente para operar sem guia
 - [[fluencia-vs-perfeicao]] — fluência é o sintoma externo de repertório interno bem construído
 
+## A cola entre a IA e o repertório
+
+[[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] enquadra repertório como o que multiplica o valor da IA, não o que ela substitui: a IA entrega qualquer domínio isolado (front, mobile, dados, infra) com facilidade, mas não tem o repertório de quem já resolveu um problema parecido em outro contexto anos atrás. Quem tem repertório largo aponta a IA para 10 domínios diferentes e cola tudo; quem só tem CRUD aponta a IA só para fazer CRUD. Exemplos pessoais concretos do autor: fazer apps de realidade aumentada foi fácil porque já dominava 3D e animação (faltava só aprender detecção de padrão para ancoragem — e ele já sabia que a malha precisa ser leve para RA rodar bem); animação com código hoje é natural porque entende de timeline e *ease in/ease out* desde o Flash/ActionScript — a ferramenta só trocou de nome, os conceitos continuam os mesmos.
+
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — conceito central; repertório como terceiro pilar da competência em programação
+- [[wiki/sources/the-comparison-trap-in-programming-careers]] — exemplo concreto do repertório em ação: o ponto e vírgula, que no início causava pânico, passa a ser resolvido instantaneamente; bugs que tomavam dias passam a ser óbvios — esse é o sinal de que repertório foi construído
+- [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — repertório como "cola" que multiplica o que a IA entrega; exemplos pessoais de transferência entre domínios (3D/RA, Flash/animação)

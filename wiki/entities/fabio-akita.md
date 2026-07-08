@@ -38,9 +38,13 @@ Defende que o mercado de programação segue [[wiki/concepts/ciclo-de-mercado-te
 ## Raiz Filosófica
 
 Em [[wiki/sources/akita-discurso-howard-roark-a-nascente-ayn-rand]], Akita lê o discurso de defesa de Howard Roark (*A Nascente*, [[wiki/entities/ayn-rand]]) e afirma que tentou viver seguindo esses princípios — apontando essa fonte como origem de vários temas que já tratou sobre a vida de empreendedores, criadores e inovadores. O discurso defende [[wiki/concepts/objetivismo|Objetivismo]]: a dicotomia [[wiki/concepts/criador-vs-parasita|criador vs. parasita]] e a [[wiki/concepts/independencia-como-motor-criativo|independência]] como necessidade básica de quem cria — coerente com sua defesa do autodidatismo e sua crítica ao apego a ferramentas, ainda que a fonte trate de filosofia moral, não de carreira tech diretamente.
+## Visão de Tomada de Decisão
+
+Rejeita explicitamente o papel de conselheiro de carreira: recusa-se a dizer o que alguém deve estudar ou decidir, argumentando que ninguém tem [[wiki/concepts/skin-in-the-game|skin in the game]] suficiente na vida alheia para opinar com propriedade sobre [[wiki/concepts/decisao-terceirizada|decisões terceirizadas]]. Defende [[wiki/concepts/antifragilidade|apostas antifrágeis]] de ~10 anos em tecnologia (ex.: aposta pessoal em Ruby on Rails em 2005) em vez de tentar prever com certeza a próxima tecnologia vencedora. Critica o [[wiki/concepts/cargo-cult-tecnologico|cargo cult tecnológico]] de copiar arquitetura de Netflix/Google/Facebook sem considerar o próprio contexto de escala — "compare-se com o dia um deles, não com a versão madura de hoje". Também nomeia a [[wiki/concepts/falacia-do-custo-afundado|falácia do custo afundado]] como o principal motivo de as pessoas persistirem em cursos e livros ruins.
 
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]]
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]]
 - [[wiki/sources/akita-discurso-howard-roark-a-nascente-ayn-rand]]
+- [[wiki/sources/pare-de-terceirizar-suas-decisoes]]

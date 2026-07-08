@@ -4,7 +4,7 @@ title: "Ciclo de Mercado Tech"
 aliases: ["ciclo de abundância e depressão", "lei da oferta e procura em tech", "ciclo de contratação tech"]
 date_created: 2026-07-03
 date_updated: 2026-07-03
-source_count: 2
+source_count: 3
 tags: [carreira, mercado-de-trabalho, oferta-e-procura, ciclo-economico]
 skill: tech-mentor-leadership
 status: draft
@@ -41,14 +41,21 @@ O autor argumenta que tentar prever qual será a próxima linguagem/framework "q
 
 Em ciclo de depressão, a prioridade das empresas deixa de ser "produzir funcionalidade nova rápido" e passa a ser **otimizar e extrair mais valor do que já existe** — o que favorece quem sabe raciocinar sobre trade-offs, não só seguir padrões prontos. Mercados em depressão filtram naturalmente quem tem [[fundacao-tecnica|fundação técnica]] real de quem só teve sorte de entrar durante a abundância.
 
+## Cada onda como curva de adoção
+
+Cada onda de tecnologia listada acima é, individualmente, uma [[wiki/concepts/curva-de-adocao-tecnologica|curva de adoção em S]]: começa devagar, cresce exponencialmente, desacelera. O próprio autor descreve ter apostado cedo em Ruby on Rails (2005), na fase inicial daquela curva — ilustrando a estratégia de [[wiki/concepts/antifragilidade|apostar em várias tecnologias ao longo de ~10 anos]] em vez de tentar prever com certeza qual onda vai vencer.
+
 ## Conexões
 
 - [[apego-a-ferramentas]] — por que ficar preso a uma ferramenta específica amplia o dano de cada virada de ciclo
 - [[raciocinio-matematico-aplicado]] — a habilidade que não perde valor entre ciclos
 - [[fundacao-tecnica]] — o que sobrevive quando o mercado esfria e filtra profissionais
 - [[autodidata]] — quem aprendeu a aprender sozinho consegue "nadar" tanto em ciclos de abundância quanto de depressão
+- [[wiki/concepts/curva-de-adocao-tecnologica]] — o padrão em S por trás de cada onda individual
+- [[wiki/concepts/antifragilidade]] — a estratégia de aposta que lida com a incerteza sobre qual onda vai vencer
 
 ## Key Sources
 
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]]
 - [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]
+- [[wiki/sources/pare-de-terceirizar-suas-decisoes]]

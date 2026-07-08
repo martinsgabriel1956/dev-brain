@@ -3,8 +3,8 @@ type: concept
 title: "Race Condition"
 aliases: ["condição de corrida", "race condition fetch React", "request fora de ordem"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-04
+source_count: 2
 tags: [react, bug, fetch, async, useEffect, race-condition]
 skill: tech-mentor-frontend
 status: stable
@@ -85,12 +85,18 @@ function handleSearch(query: string) {
 }
 ```
 
+## Race Condition no Backend: TOCTOU
+
+A race condition acima é específica de frontend (ordem de respostas de rede sobrescrevendo estado). A mesma família de bug existe no backend, sobre recursos compartilhados (saldo, estoque) — ver [[wiki/concepts/toctou]] para o caso de saque duplicado e a correção via transactions atômicas.
+
 ## Ver também
 
 - [[useEffect]] — onde race condition aparece
 - [[tanstack-query]] — solução recomendada para fetch
 - [[stale-closure]] — outro bug comum em useEffect
+- [[wiki/concepts/toctou]] — variante backend/concorrência da mesma classe de bug
 
 ## Key Sources
 
 - [[wiki/sources/useeffect-problemas-e-solucoes]]
+- [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]]

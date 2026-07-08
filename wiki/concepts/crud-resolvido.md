@@ -3,8 +3,8 @@ type: concept
 title: "CRUD Resolvido"
 aliases: ["crud ia", "crud automatizado", "porta de entrada fechada"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [crud-resolvido, era-agentica, dev-junior, mercado-de-trabalho, ia-e-dev]
 skill: tech-mentor-backend
 status: stable
@@ -52,7 +52,12 @@ Ao mesmo tempo que fechou a porta do júnior, a [[era-agentica]] criou escassez 
 
 CRUD resolvido torna o aprendizado passivo ainda mais perigoso: um júnior que usa IA para gerar CRUDs sem entender o que está acontecendo pula exatamente a fase de aprendizado que constrói a base para trabalhar com sistemas complexos.
 
+## Operador de CRUD como Figura Central
+
+[[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] nomeia diretamente essa figura: "operador de CRUD" — quem soube dominar o CRUD melhor que muita gente que vive disso, mas nunca foi além. A fonte argumenta que o problema não é saber CRUD, é *parar* nele — e que a IA comoditizou justamente essa camada, deixando quem só tem CRUD competindo com uma máquina mais rápida e barata no que faz de mais básico.
+
 ## Key Sources
 
 - [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
+- [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — cunha o termo "operador de CRUD"; liga o problema a complexidade acidental vs. essencial e a "fácil vs. simples" da IA

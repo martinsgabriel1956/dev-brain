@@ -3,8 +3,8 @@ type: concept
 title: "Escalabilidade Vertical"
 aliases: ["vertical scaling", "scale up", "upgrade de servidor"]
 date_created: 2026-06-26
-date_updated: 2026-06-26
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [system-design, escalabilidade, infra, performance, tradeoff]
 skill: tech-mentor-system-design
 status: draft
@@ -49,3 +49,4 @@ Tornar um único servidor **mais potente**: mais CPU, mais RAM, mais disco, mais
 ## Key sources
 
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
+- [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] — reforça que escalar horizontalmente só faz sentido depois de esgotar a vertical

@@ -3,8 +3,8 @@ type: concept
 title: "Comunicação Técnica"
 aliases: ["comunicação", "comunicação efetiva", "tradução técnica", "emissor receptor"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [carreira, comunicação, liderança, soft-skills]
 skill: tech-mentor-leadership
 status: stable
@@ -47,8 +47,10 @@ A combinação das três características (profundidade + abrangência + comunic
 - [[concepts/abrangencia-profissional]] — pré-requisito para comunicação cross-domain
 - [[concepts/profundidade-e-maestria]] — profundidade sem comunicação fica presa na cabeça
 - [[entities/randy-nelson]] — origem do framework
+- [[wiki/concepts/comunicacao-persuasiva]] — aplicação tática do mesmo princípio: traduzir para a linguagem de quem decide, não para o próprio jargão
 
 ## Key Sources
 
 - [[sources/tres-caracteristicas-melhor-candidato]]
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]] — comunicação como acelerador de time; escuta ativa e adaptação ao público
+- [[wiki/sources/3-soft-skills-que-poucos-programadores-dominam]] — vender refatoração/decisão técnica em termos de negócio (urgência/ganância), não em jargão

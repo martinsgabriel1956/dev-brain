@@ -4,7 +4,7 @@ title: "Governança de Código Gerado por IA"
 aliases: ["paradoxo da ia no codigo", "governar codigo de ia"]
 date_created: 2026-07-03
 date_updated: 2026-07-03
-source_count: 2
+source_count: 3
 tags: [ia-no-processo-de-engenharia, arquitetura, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -35,7 +35,12 @@ A IA ameaça quem permanece só na camada de execução e não evolui para julga
 
 [[wiki/sources/atrofia-cognitiva-ia-programacao]] descreve uma falha de governança mais severa que um dev usar IA para resolver seu próprio ticket: alguém **fora do time técnico** conectando o repositório do projeto a uma IA e gerando tickets com detalhamento técnico no backlog — sem nenhum engenheiro tendo formulado ou revisado o problema antes de virar tarefa. Isso quebra a premissa central da governança de código gerado por IA: não há humano exercendo julgamento em nenhum ponto do fluxo, nem na geração do requisito nem na geração do código.
 
+## Vender Vibe Coding Como Produção é Falta de Governança
+
+[[wiki/sources/vibe-coding-limites-maturidade-profissional]] descreve outro caso limite: construir um sistema inteiramente por [[wiki/concepts/vibe-coding|vibe coding]] e vendê-lo como pronto para produção — seguro, moderno, testado — sem nenhuma revisão arquitetural, de segurança ou de contexto de negócio. Isso é falta de governança na ponta de saída (venda ao cliente), não só na ponta de entrada (geração do requisito): o risco recai sobre quem comprou confiando na promessa de qualidade.
+
 ## Key Sources
 
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]]
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]] — caso limite: pessoa não técnica gerando tickets via IA conectada ao repositório, sem nenhum julgamento de engenharia no fluxo
+- [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — caso limite: vender sistema vibe-coded como pronto para produção sem revisão humana

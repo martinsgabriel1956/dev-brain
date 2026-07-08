@@ -3,8 +3,8 @@ type: concept
 title: "Dependência de IA"
 aliases: ["ai dependency", "dependência ferramenta", "loop de prompts"]
 date_created: 2026-05-31
-date_updated: 2026-06-01
-source_count: 2
+date_updated: 2026-07-03
+source_count: 3
 tags: [dependencia-ia, ia-e-programacao, aprendizado-passivo, autonomia-tecnica, iniciante]
 skill: tech-mentor-leadership
 status: stable
@@ -78,7 +78,12 @@ Há uma sobreposição: [[token-anxiety]] é a ansiedade de não desperdiçar to
 
 Na [[escala-maturidade-ia-dev]], os níveis 0–2 são a zona onde o risco de dependência é maior — a IA não mudou fundamentalmente a forma de trabalhar, e o desenvolvedor ainda faz 100% do raciocínio (ou delega o raciocínio sem construir o próprio). A transição para o nível 4 (Diretor) é o ponto onde a relação se inverte: você especifica o comportamento e valida — em vez de copiar e aceitar.
 
+## Caso de Uso na Fronteira: Revisar o Próprio Código com IA Antes do PR
+
+Pedir para uma IA revisar/sugerir melhorias no próprio código antes de abrir um [[wiki/concepts/code-review]] é uso produtivo **somente se** vier acompanhado de pedir explicação do "porquê" de cada mudança sugerida. Aceitar as sugestões sem entendê-las transforma uma prática potencialmente boa em dependência disfarçada — o risco reaparece mais tarde, num teste técnico sem acesso à ferramenta.
+
 ## Key Sources
 
 - [[wiki/sources/ia-e-aprendizado-programacao-iniciantes]]
 - [[wiki/sources/escala-niveis-uso-ia-engenheiros]] — níveis 0–2 como zona de estagnação e dependência
+- [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] — revisar código com IA antes do PR só funciona se vier com "por que" explicado

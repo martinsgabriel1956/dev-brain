@@ -3,8 +3,8 @@ type: concept
 title: "Inteligência Emocional"
 aliases: ["IE", "EQ", "emotional intelligence", "maturidade emocional"]
 date_created: 2026-05-19
-date_updated: 2026-05-19
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [soft-skills, inteligencia-emocional, carreira, resiliência, liderança]
 skill: tech-mentor-leadership
 status: stable
@@ -35,13 +35,20 @@ Baixa inteligência emocional combinada com alta pressão é um dos caminhos mai
 - **[[wiki/concepts/adaptabilidade]]** = resposta ao que muda *fora* de você
 - **Inteligência emocional** = resposta ao que você sente *por dentro* quando as coisas mudam
 
+## Não Levar Code Review para o Lado Pessoal
+
+Um caso concreto de IE em ação: separar "meu código foi reprovado" de "eu fui reprovado". A crítica recai sobre o código, não sobre quem escreveu — reagir defensivamente ("não faz sentido") atrapalha mais do que ouvir primeiro e questionar depois. Ver [[wiki/concepts/code-review]] e [[wiki/concepts/sindrome-do-impostor]].
+
 ## Conexões
 
 - [[wiki/concepts/soft-skills]]
 - [[wiki/concepts/adaptabilidade]] — par inseparável
 - [[wiki/concepts/burnout-dev]] — IE é a principal proteção contra burnout em tech
 - [[wiki/concepts/colaboracao-times]] — conflitos de time exigem IE para não escalarem
+- [[wiki/concepts/code-review]] — receber crítica ao código sem torná-la pessoal
+- [[wiki/concepts/sindrome-do-impostor]] — o risco emocional quando a IE falha nesse momento
 
 ## Key Sources
 
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]
+- [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] — não tornar pessoal os comentários de code review

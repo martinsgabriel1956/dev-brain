@@ -3,8 +3,8 @@ type: concept
 title: "Idempotência"
 aliases: ["idempotência", "idempotency", "idempotency key"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [distribuidos, resiliencia, api, retry, mensageria]
 skill: tech-mentor-system-design
 status: stable
@@ -68,3 +68,4 @@ async function processPayment(idempotencyKey: string, data: PaymentData) {
 
 - [[sources/retry-backoff]]
 - [[wiki/sources/acoplamento-abstracao-estado]]
+- [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — idempotência como resposta ao webhook duplicado; errar at-least-once vs. exactly-once cobra o cliente em dobro ou perde o pedido

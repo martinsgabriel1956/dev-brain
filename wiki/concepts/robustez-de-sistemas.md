@@ -4,7 +4,7 @@ title: "Robustez de Sistemas"
 aliases: ["sistemas robustos", "robustez", "software robusto"]
 date_created: 2026-05-31
 date_updated: 2026-07-03
-source_count: 3
+source_count: 4
 tags: [robustez, arquitetura, qualidade, escalabilidade, testes, segurança, era-agentica]
 skill: tech-mentor-backend
 status: stable
@@ -75,9 +75,14 @@ Uma das estratégias concretas para construir sistemas robustos é o [[let-it-cr
 
 Isso complementa o [[harness-de-qualidade]]: o harness previne que código ruim entre, Let it Crash garante que quando o ambiente falhar, o sistema se comporta de forma previsível.
 
+## Vibe Coding e a Ilusão de Robustez
+
+[[wiki/concepts/vibe-coding|Vibe coding]] entrega bem MVPs e protótipos, mas não robustez por padrão: sustentabilidade a longo prazo, escala e segurança sem brechas exigem julgamento humano sobre arquitetura, integrações e contexto de negócio que um prompt não cobre sozinho. Ver [[wiki/sources/vibe-coding-limites-maturidade-profissional]].
+
 ## Key Sources
 
 - [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
 - [[wiki/sources/let-it-crash-nodejs-asynclocalstorage]] — Let it Crash como estratégia de robustez; graceful shutdown em Node.js
 - [[wiki/sources/tdd-sdd-bdd-era-ia]] — TDD/SDD impostos via harness aumentam a chance da IA acertar a intenção
+- [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — robustez exige julgamento humano sobre arquitetura e contexto de negócio que vibe coding não supre

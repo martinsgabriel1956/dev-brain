@@ -39,7 +39,7 @@ const filteredOrders = useMemo(
 
 ## Relação com React Compiler
 
-O [[concurrent-mode|React Compiler]] (React 19 beta) pode eliminar a necessidade de `useMemo` manual ao inferir memoização automaticamente. Ainda em beta — não remover `useMemo` existente sem testar.
+O [[react-compiler]] (React 19) pode eliminar a necessidade de `useMemo` manual ao inferir memoização automaticamente. Continua útil em casos de borda — ex. integração com libs de terceiros que dependem de referência estável. Não remova `useMemo` existente sem testar/medir.
 
 ## Ver também
 
@@ -51,3 +51,4 @@ O [[concurrent-mode|React Compiler]] (React 19 beta) pode eliminar a necessidade
 
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
 - [[wiki/sources/useeffect-problemas-e-solucoes]]
+- [[wiki/sources/react-19-memoization-sem-usememo-usecallback]]

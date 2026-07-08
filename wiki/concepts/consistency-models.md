@@ -3,8 +3,8 @@ type: concept
 title: "Modelos de Consistência"
 aliases: ["modelos de consistência", "consistency models", "linearizability", "sequential consistency", "causal consistency", "eventual consistency"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [sistemas-distribuidos, consistencia, cap, linearizability, eventual, causal]
 skill: tech-mentor-system-design
 status: stable
@@ -121,6 +121,11 @@ dynamodb.getItem({ ..., ConsistentRead: true });
 
 **Armadilha:** eventual para inventário = overselling. Linearizable para view count = gargalo desnecessário.
 
+## Eventual Consistency e o Acrônimo BASE
+
+Eventual Consistency é o "E" de [[wiki/concepts/base-basically-available-soft-state-eventual|BASE]] — o conjunto de garantias mais fracas, comum em Cassandra/DynamoDB, contraposto a [[wiki/concepts/acid]]. Exemplo concreto de leitura desatualizada: escrever `saldo = 150` numa réplica e, no mesmo instante, ler `80` de outra réplica que ainda não recebeu a propagação — não é comum, mas é possível, e ilustra por que "consistência eventual" não tem prazo garantido. Ver [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]].
+
 ## Key Sources
 
 - [[sources/modelos-de-consistencia]]
+- [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] — exemplo de réplicas não sincronizadas e o acrônimo BASE

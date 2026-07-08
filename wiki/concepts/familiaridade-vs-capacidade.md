@@ -3,8 +3,8 @@ type: concept
 title: "Familiaridade vs Capacidade"
 aliases: ["velocidade de aprendizado", "linha de largada", "exposição anterior", "dom para programação"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-06-26
+source_count: 2
 tags: [carreira, mentalidade, aprendizado, iniciante]
 skill: tech-mentor-leadership
 status: stable
@@ -48,3 +48,4 @@ Comparar velocidade de aprendizado no início da carreira é **comparar históri
 
 - [[sources/comparacao-na-carreira-dev]]
 - [[sources/como-aprender-programacao-3-dicas]]
+- [[wiki/sources/the-comparison-trap-in-programming-careers]] — narrativa em primeira pessoa: viu código pela primeira vez aos 17; colegas dominavam em semanas o que ela levava um mês; conclui que a diferença era histórico acumulado de vida inteira

@@ -3,8 +3,8 @@ type: concept
 title: "Paridade Local–Produção"
 aliases: ["staging parity", "works on my machine", "local vs prod", "paridade de ambiente"]
 date_created: 2026-04-26
-date_updated: 2026-04-29
-source_count: 2
+date_updated: 2026-07-03
+source_count: 3
 tags: [staging, producao, docker, devops, debugging, ambiente]
 skill: tech-mentor-leadership
 status: draft
@@ -37,6 +37,10 @@ O bug que só acontece em prod é o pior — você não consegue reproduzir, ent
 
 O [Twelve-Factor App](https://12factor.net/dev-prod-parity) formaliza paridade como princípio: minimizar gap entre dev, staging e produção em tempo (deploys frequentes), pessoal (dev faz deploy) e ferramentas (mesmos serviços em todos os ambientes).
 
+## Sequência de teste antes de subir um PR
+
+Válido especialmente para quem está começando: nunca validar mudanças direto em produção. Ordem recomendada — ambiente de desenvolvimento → homologação (com QA, se houver) → só então abrir o code review. Depois do deploy, validar manualmente em produção antes de marcar a tarefa como concluída — ver [[wiki/concepts/pensamento-em-producao]] e [[wiki/concepts/code-review]].
+
 ## Relacionado
 
 [[concepts/observabilidade]] · [[sources/cicd-pipeline]] · [[sources/zero-downtime-deploy]]
@@ -44,3 +48,4 @@ O [Twelve-Factor App](https://12factor.net/dev-prod-parity) formaliza paridade c
 ## Key Sources
 
 - [[sources/5-principios-programador]]
+- [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] — sequência dev/homologação/produção antes de abrir PR

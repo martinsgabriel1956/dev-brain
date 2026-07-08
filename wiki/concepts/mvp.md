@@ -46,6 +46,9 @@ No [[concepts/lean-startup]], o MVP não é o produto final reduzido — é o ar
 ## Estrutura Inicial a Serviço do MVP
 
 O [[wiki/concepts/checklist-primeiro-dia-projeto]] propõe documentar a estrutura inicial do projeto num `.md` **antes** de codar, pensando explicitamente no MVP — evita tanto a gambiarra sem plano quanto o over-engineering para um produto que ainda não existe.
+## MVP e Vibe Coding
+
+MVPs e protótipos são o contexto onde [[wiki/concepts/vibe-coding]] entrega valor real: validar uma hipótese de negócio rapidamente, sem o custo de implementação manual completa. O risco não é usar vibe coding para validar — é confundir o MVP validado com um sistema pronto para produção sem revisão arquitetural, de segurança e de contexto de negócio. Ver [[wiki/sources/vibe-coding-limites-maturidade-profissional]].
 
 ## Ver Também
 
@@ -54,9 +57,11 @@ O [[wiki/concepts/checklist-primeiro-dia-projeto]] propõe documentar a estrutur
 - [[concepts/lean-startup]] — metodologia onde o MVP é a unidade tática de validação
 - [[concepts/build-measure-learn]] — ciclo iterativo que consome e refina o MVP
 - [[wiki/concepts/checklist-primeiro-dia-projeto]] — sequência tática do dia 1 a serviço do MVP
+- [[wiki/concepts/vibe-coding]] — ferramenta natural para construir MVPs rápido
 
 ## Key Sources
 
 - [[sources/por-que-devs-nao-terminam-projetos]]
 - [[sources/lean-startup-para-devs-mano-deivin]]
 - [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]
+- [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — MVP como um dos contextos onde vibe coding brilha

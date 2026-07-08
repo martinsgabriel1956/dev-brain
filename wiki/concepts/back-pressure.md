@@ -3,8 +3,8 @@ type: concept
 title: "Back Pressure"
 aliases: ["back pressure", "backpressure", "pressão de volta", "producer consumer imbalance"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [back-pressure, streaming, reactive, producer-consumer, flow-control]
 skill: tech-mentor-system-design
 status: stable
@@ -77,3 +77,4 @@ fromEvent(eventSource, "data").pipe(
 
 - [[sources/conceitos-que-ninguem-ensina]]
 - [[sources/reactive-architecture]]
+- [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — back pressure citado como exemplo do "mundo debaixo do CRUD": produtor mais rápido que consumidor exige decidir entre descartar, segurar ou derrubar

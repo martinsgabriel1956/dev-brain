@@ -3,8 +3,8 @@ type: concept
 title: "Compliance"
 aliases: ["conformidade", "regulatory compliance", "compliance técnico"]
 date_created: 2026-05-05
-date_updated: 2026-05-05
-source_count: 2
+date_updated: 2026-07-03
+source_count: 3
 tags: [compliance, lgpd, gdpr, pci-dss, soc2, hipaa, iso-27001, security, audit]
 skill: tech-mentor-security
 status: stable
@@ -56,13 +56,18 @@ async function deleteUserData(userId: string) {
 }
 ```
 
+## ISO 27001 em Detalhe
+
+Ver [[concepts/iso-27001]] para a estrutura completa da norma. Resumo: framework de gestão ([[concepts/sgsi-isms]]) organizado em torno da [[concepts/triade-cia]], com um Anexo A de 93 controles (versão 2022) dos quais a empresa aplica apenas os relevantes ao seu risco, documentados na SoA (Statement of Applicability). O controle A.5.3 — [[concepts/segregacao-de-funcoes]] — é o mais tenso na prática: quem desenvolve não deveria poder fazer deploy sozinho em produção.
+
 ## Key Sources
 
 - [[sources/compliance]] — visão geral: frameworks, security vs compliance, cenários de engenharia
 - [[sources/compliance-soc2-pci]] — SOC 2 Type I vs II, PCI-DSS tokenização, audit logging como evidência universal
 - [[sources/lgpd-gdpr]] — data mapping, lawful basis, 72h breach notification
 - [[sources/hipaa-sox]] — PHI/BAA, Segregation of Duties, S3 Object Lock
+- [[wiki/sources/iso-27001-dicionario-programador]] — estrutura da norma (cláusulas + Anexo A), SoA, controles relevantes para devs, Policy as Code, ISO 42001
 
 ## Conceitos Relacionados
 
-[[concepts/audit-log]] · [[concepts/data-residency]] · [[concepts/dsar]] · [[concepts/zero-trust]] · [[concepts/data-privacy]]
+[[concepts/audit-log]] · [[concepts/data-residency]] · [[concepts/dsar]] · [[concepts/zero-trust]] · [[concepts/data-privacy]] · [[concepts/iso-27001]] · [[concepts/sgsi-isms]] · [[concepts/segregacao-de-funcoes]]

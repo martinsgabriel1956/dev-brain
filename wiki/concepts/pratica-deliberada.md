@@ -3,8 +3,8 @@ type: concept
 title: "Prática Deliberada"
 aliases: ["deliberate practice", "10000 horas", "regra das 10000 horas", "800 horas júnior", "horas de prática"]
 date_created: 2026-06-10
-date_updated: 2026-06-10
-source_count: 1
+date_updated: 2026-07-03
+source_count: 3
 tags: [aprendizado, carreira, mentalidade, iniciante, maestria]
 skill: tech-mentor-leadership
 status: stable
@@ -48,13 +48,20 @@ O cérebro tem capacidade limitada de processar informação genuinamente nova p
 
 A implicação prática: consistência diária em volume razoável supera sprints intensos seguidos de burnout.
 
+## Prática de Curso vs. Prática no Mundo Real
+
+Exercício de curso é deliberadamente simplificado por razões didáticas — boa arquitetura, responsabilidades bem divididas, ausência de prazo ou política interna. Isso tem valor, mas é bem menor do que praticar num contexto real: um problema real, sem solução pronta, sob restrição de tempo e infraestrutura. Uma forma concreta de estruturar essa prática de "mundo real" com risco controlado é a [[wiki/concepts/automacao-pessoal-para-aprender]] — programas pequenos, fora do pipeline de entrega da empresa, que resolvem um problema manual real usando a tecnologia que se quer praticar.
+
 ## Relação com Outros Conceitos
 
 - [[reconhecimento-de-padroes]] — é o que a prática deliberada forma; o objetivo não é memorizar sintaxe
 - [[vale-do-desespero]] — atravessa-se com prática deliberada; não com mais teoria
 - [[aprendizado-passivo]] — o oposto de prática deliberada; ilusão de progresso sem formação de repertório
 - [[autoconsciencia-de-aprendizado]] — para praticar deliberadamente é preciso saber onde está o limite atual
+- [[wiki/concepts/automacao-pessoal-para-aprender]] — veículo concreto de prática deliberada com contexto real e risco baixo
 
 ## Key Sources
 
 - [[sources/quanto-tempo-aprender-programacao]] — tabela de horas/tempo, teto cognitivo diário, analogia da mangueira de incêndio
+- [[wiki/sources/the-comparison-trap-in-programming-careers]] — estratégia de "refazer exercícios antigos do zero sem ver a solução" como forma de medir progresso; equivale a prática deliberada com feedback imediato sobre velocidade e automatização
+- [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] — prática de curso vs. prática real; automações pessoais de baixo risco como veículo de prática deliberada

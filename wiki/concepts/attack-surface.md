@@ -3,8 +3,8 @@ type: concept
 title: "Attack Surface (Superfície de Ataque)"
 aliases: ["attack surface", "superfície de ataque", "minimização de superfície", "surface minimization"]
 date_created: 2026-06-05
-date_updated: 2026-06-05
-source_count: 1
+date_updated: 2026-07-04
+source_count: 2
 tags: [attack-surface, security, arquitetura-seguranca, defense-in-depth, gatekeeper]
 skill: tech-mentor-security
 status: stable
@@ -48,7 +48,12 @@ A pergunta que guia a redução: **"Por que isso precisa estar acessível?"**
 **Outputs como vetores**
 Não só inputs: logs com dados sensíveis, tempo de resposta variável, tamanho de respostas de erro — tudo pode vazar informação. Ver [[timing-attack]].
 
+## Rotas Previsíveis como Superfície
+
+Rotas de webhook em paths padrão (`/api/webhook`, `/api/hook`) são um exemplo de superfície ampliada por convenção: qualquer atacante pode chutar a rota e testar se ela responde. Ver [[wiki/concepts/webhook-signature-validation]] para a defesa (assinatura HMAC), que reduz o dano mesmo quando a rota é encontrada.
+
 ## Key Sources
 
 - [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — exemplos: inputs do usuário, S3 público, IDs sequenciais, outputs e timing como vetores
+- [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]] — rotas de webhook previsíveis como superfície de ataque

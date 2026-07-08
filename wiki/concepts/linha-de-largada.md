@@ -3,8 +3,8 @@ type: concept
 title: "Linha de Largada"
 aliases: ["ponto de partida", "starting point", "histórico anterior", "background técnico"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-06-26
+source_count: 2
 tags: [carreira, mentalidade, iniciante, diversidade, aprendizado]
 skill: tech-mentor-leadership
 status: stable
@@ -33,3 +33,4 @@ Em code reviews, onboarding e mentoria: reconhecer que um dev júnior com linha 
 ## Key Sources
 
 - [[wiki/sources/comparacao-na-carreira-dev]]
+- [[wiki/sources/the-comparison-trap-in-programming-careers]] — "a nossa linha de largada foi um ponto totalmente diferente" — quem teve robótica e computador desde criança chega à frente; não é dom, é contexto

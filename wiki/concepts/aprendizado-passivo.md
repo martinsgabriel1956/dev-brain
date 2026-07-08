@@ -4,7 +4,7 @@ title: "Aprendizado Passivo"
 aliases: ["passive learning", "copia sem entender", "ilusão de aprendizado"]
 date_created: 2026-05-31
 date_updated: 2026-07-03
-source_count: 5
+source_count: 6
 tags: [aprendizado-passivo, aprendizado, iniciante, dependencia-ia, autonomia-tecnica]
 skill: tech-mentor-leadership
 status: stable
@@ -87,9 +87,14 @@ Quem tem baixa crença de eficácia tende ao aprendizado passivo porque não acr
 
 [[wiki/sources/atrofia-cognitiva-ia-programacao]] recorta um perfil específico dentro do aprendizado passivo: quem começou a programar já com Claude Code (ou equivalente) do lado desde o primeiro dia, sem nunca ter passado pelo ciclo de escrever sozinho, errar e debugar sem assistência. Diferente de quem construiu [[wiki/concepts/fundacao-tecnica]] antes de usar IA (e por isso recupera skill esquecida rápido), esse perfil não tem base para recuperar — o medo de dependência aqui é descrito como "um medo justo de ter". A recomendação da fonte para esse perfil é focar em [[wiki/concepts/sintaxe-vs-conhecimento-perene|conhecimento perene]] (debugging de produção, causas de erros HTTP) em vez de tentar "codar tudo na mão".
 
+## "Entupir de Teoria" Sem Praticar (Ângulo Pré-IA)
+
+[[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] descreve o mesmo padrão sem mencionar IA em nenhum momento: a abundância atual de cursos, livros e vídeos tornou mais fácil consumir informação, mas isso não converte em habilidade sem prática — "é com a prática que essa informação começa a virar habilidade". A fonte reforça que o gargalo não é a IA, é a ausência de prática num contexto real (ver [[wiki/concepts/pratica-deliberada]] e [[wiki/concepts/automacao-pessoal-para-aprender]]); a IA apenas acelera um padrão que já existia.
+
 ## Key Sources
 
 - [[wiki/sources/ia-e-aprendizado-programacao-iniciantes]]
+- [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] — "entupir de teoria" sem praticar como padrão anterior e independente da IA
 - [[wiki/sources/profissional-do-futuro-ia-identidade-aprendizado]]
 - [[wiki/sources/papinho-tech-solo-aprender-a-aprender]] — ângulo EAD: vídeo de alta qualidade técnica (câmera, áudio, didática) cria ilusão de aprendizado; metodologia de aula expositiva sozinha não produz aprendizado
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]] — tutorial passo-a-passo pré-IA já produzia o mesmo padrão de cópia sem entendimento

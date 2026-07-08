@@ -3,8 +3,8 @@ type: concept
 title: "Vibe Coding"
 aliases: ["vibe coding", "vibe-coding", "coding por vibração", "agentic coding", "orquestração de agentes"]
 date_created: 2026-04-23
-date_updated: 2026-04-26
-source_count: 2
+date_updated: 2026-07-03
+source_count: 3
 tags: [vibe-coding, agentes-ia, produtividade, divida-cognitiva, ai-brainfry, paralelismo-cognitivo]
 skill: tech-mentor-ai
 status: stable
@@ -50,6 +50,18 @@ Vibe Coding resolve o gargalo errado. Gera velocidade onde não havia gargalo; c
 - Prototipagem exploratória sem compromisso de produção
 - Tarefas isoladas com escopo claro e curto
 - Geração de boilerplate bem definido
+- [[mvp|MVPs]], documentação e testes — tarefas repetitivas de baixo esforço intelectual que a IA executa rápido e de forma confiável com um bom prompt, validando hipóteses de negócio (ver [[wiki/sources/vibe-coding-limites-maturidade-profissional]])
+
+## O Limite Não É Técnico, É de Julgamento
+
+Vender um sistema puramente vibe-coded como pronto para produção é uma ilusão — e desonesto quando quem vende já tem conhecimento técnico e ignora os riscos, ou não tem e finge que a IA resolveu tudo. O que a IA não supre sozinha:
+
+- Arquitetura e integrações entre sistemas
+- Segurança sem brechas exploráveis
+- [[wiki/concepts/contexto-organizacional-para-arquitetura|Contexto organizacional]]: maturidade de plataforma, processo, know-how da empresa
+- Análise de custo real vs. disposição do cliente a pagar
+
+O uso saudável da IA por um arquiteto é para brainstorm, alternativas e explicar trade-offs — nunca para substituir o [[wiki/concepts/pensamento-critico|pensamento crítico]] sobre o negócio. Ver [[wiki/sources/vibe-coding-limites-maturidade-profissional]].
 
 ## Quando Vibe Coding falha
 
@@ -98,3 +110,4 @@ Quem não sabe verificar esses problemas não consegue revisar o código que a I
 - [[sources/apagao-de-seniors-vibe-coding]]
 - [[sources/roadmap-dev-senior-2026]] — pilar 5: ciclo de degradação via IA → ver [[concepts/ia-ciclo-dependencia]]
 - [[sources/por-que-devs-nao-terminam-projetos]] — vibe coding elimina o mecanismo de luta → ver [[concepts/aprendizado-por-luta]]
+- [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — onde vibe coding brilha (MVP, docs, testes) vs. onde exige julgamento humano (arquitetura, segurança, contexto de negócio)

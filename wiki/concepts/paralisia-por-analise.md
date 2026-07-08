@@ -3,8 +3,8 @@ type: concept
 title: "Paralisia por Análise"
 aliases: ["analysis paralysis", "paralisia de decisão", "overthinking"]
 date_created: 2026-04-29
-date_updated: 2026-04-29
-source_count: 1
+date_updated: 2026-07-03
+source_count: 2
 tags: [psicologia, produtividade, decisao, carreira, projetos]
 skill: tech-mentor-leadership
 status: stable
@@ -41,11 +41,17 @@ Lei de Hick: o tempo de decisão aumenta logaritmicamente com o número de opç�
 - **[[concepts/mvp]]**: a tecnologia importa menos quando o escopo é mínimo
 - Decisões de arquitetura podem mudar — começar é mais valioso que escolher certo
 
+## Terceirizar a decisão como fuga da paralisia
+
+[[wiki/concepts/decisao-terceirizada|Pedir para um influencer decidir por você]] é uma saída comum para a paralisia por análise — mas troca um problema (excesso de opções) por outro (decisão sem contexto, tomada por quem não tem [[wiki/concepts/skin-in-the-game]] no resultado). O antídoto de [[wiki/entities/fabio-akita]] é o mesmo do timeboxing: aceitar que nenhuma decisão será perfeita, decidir com o que se tem, e tratar o erro como recuperável.
+
 ## Ver Também
 
 - [[concepts/perfeccionismo-em-devs]] — perfeccionismo alimenta paralisia
 - [[concepts/planning-fallacy]] — planejar demais é outra forma de paralisia
+- [[wiki/concepts/decisao-terceirizada]] — terceirizar a decisão como fuga da paralisia, sem resolver a causa raiz
 
 ## Key Sources
 
 - [[sources/por-que-devs-nao-terminam-projetos]]
+- [[wiki/sources/pare-de-terceirizar-suas-decisoes]]

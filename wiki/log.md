@@ -127,6 +127,76 @@
 - `wiki/index.md`
 
 **Notas:** Fonte é transcrição de vídeo (YouTube, canal de tecnologia brasileiro) analisando um artigo de engenharia da Shopify (não linkado na transcrição original — falta a URL primária). Núcleo técnico: reserva de estoque migrou de Redis+MySQL sincronizados por duas escritas não-atômicas para um modelo 100% MySQL com `SELECT FOR UPDATE SKIP LOCKED`, onde cada unidade de estoque é uma linha física (não uma coluna numérica). Precisaram corrigir três problemas clássicos de banco (PK mal desenhada, gap locking do InnoDB, ordem de execução divergente) antes de escalar. O achado mais interessante é o diagnóstico: mesmo com queries otimizadas, o sistema não escalava por gargalo de **tempo de conexão segurada por operação** (não latência de query) — e o gargalo real estava em código legado do checkout, não na reserva de estoque que parecia ser o problema. A fonte conecta o case a uma teoria recorrente do canal, o "Grande Rollback" (empresas em escala voltando de Redis/brokers para primitivas do banco relacional), citando a 37signals/Solid Queue como precedente — nome transcrito de forma ambígua no áudio ("Thury Syve Sos"), mantido como interpretação de melhor esforço e sinalizado como questão aberta na página da entidade. Conteúdo promocional do vídeo (inscrição no canal, patrocínio, cupom) foi removido na transformação para `raw/`, mantendo só a análise técnica.
+## [2026-07-03] ingest | Pare de Terceirizar Suas Decisões
+
+**Source:** [[wiki/sources/pare-de-terceirizar-suas-decisoes]]
+**Skill:** tech-mentor-leadership (path de skills configurado em CLAUDE.md, `/home/nemomartins/Documentos/new/skills/`, não existe neste ambiente — ver nota abaixo)
+
+**Páginas criadas:**
+- `wiki/sources/pare-de-terceirizar-suas-decisoes.md`
+- `wiki/concepts/decisao-terceirizada.md`
+- `wiki/concepts/skin-in-the-game.md`
+- `wiki/concepts/antifragilidade.md`
+- `wiki/concepts/cargo-cult-tecnologico.md`
+- `wiki/concepts/falacia-do-custo-afundado.md`
+- `wiki/concepts/curva-de-adocao-tecnologica.md`
+
+**Páginas atualizadas:**
+- `wiki/entities/fabio-akita.md` — nova seção "Visão de Tomada de Decisão"; `source_count` 2 → 3
+- `wiki/concepts/paralisia-por-analise.md` — nuance sobre terceirizar decisão como fuga da paralisia; `source_count` 1 → 2
+- `wiki/concepts/principio-da-inversao.md` — link com skin in the game/antifragilidade como modelos mentais de decisão sob incerteza; `source_count` 1 → 2
+- `wiki/concepts/ciclo-de-mercado-tech.md` — cada onda como curva de adoção em S; `source_count` 2 → 3
+- `wiki/concepts/aprender-a-aprender.md` — leitura não-linear de livros técnicos e ligação com custo afundado; `source_count` 1 → 2
+- `index.md` — nova fonte na tabela de Sources + 6 novos conceitos na seção "Carreira & Soft Skills"
+
+**Notas:** Terceira fonte de [[wiki/entities/fabio-akita]] na wiki (após [[wiki/sources/akita-como-aprender-programacao]] e [[wiki/sources/akita-oferta-procura-matematica-carreira]]). O locutor se identifica na transcrição bruta como "Fábio, a Quinta" — quase certamente um erro de transcrição por voz para "Fábio Akita" (confirmado pelo estilo, conteúdo e menções de episódios anteriores do canal). Cruza diretamente com [[wiki/concepts/ciclo-de-mercado-tech]] (mesmo autor, mesmo argumento sobre ondas de tecnologia por década) e com [[wiki/concepts/paralisia-por-analise]] (excesso de escolha/informação). Nenhuma contradição com o wiki existente.
+
+**Drift encontrado:** o `CLAUDE.md` deste repositório referencia `/home/nemomartins/Documentos/new/skills/` e `/home/nemomartins/Documentos/new/dev-study/` como paths absolutos do sistema de skills e do vault Obsidian — nenhum dos dois existe neste ambiente (`$HOME` é `/home/gabriel-martins`, repo real está em `/home/gabriel-martins/Documentos/dev-brain`, e não há pasta `.obsidian/templates/`). O ingest seguiu o padrão de frontmatter e estrutura observado nas páginas existentes de `wiki/sources/` e `wiki/concepts/` em vez do template inexistente. Vale corrigir o `CLAUDE.md` para os paths reais deste ambiente, ou documentar que esses paths são específicos de outra máquina.
+
+---
+
+## [2026-07-03] ingest | ACID vs. BASE: As Garantias que os Bancos de Dados Nos Dão
+
+**Source:** [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]]
+**Skill:** tech-mentor-system-design
+
+**Páginas criadas:**
+- `wiki/sources/acid-vs-base-garantias-bancos-de-dados.md`
+- `wiki/concepts/base-basically-available-soft-state-eventual.md` (stub — BASE não tinha página dedicada, só era citado implicitamente em `consistency-models.md`)
+
+**Páginas atualizadas:**
+- `wiki/concepts/acid.md` — exemplo de custo de performance da constraint de e-mail único; link para BASE
+- `wiki/concepts/consistency-models.md` — exemplo de leitura desatualizada em réplica não sincronizada; link para BASE
+- `wiki/concepts/relational-vs-nosql.md` — quadro de decisão ACID vs. BASE por domínio de negócio (pagamentos/estoque vs. likes/analytics/logs/cache/recomendação)
+- `wiki/concepts/database-index.md` — exemplo concreto de índice hash como mecanismo de unicidade
+- `wiki/concepts/database-transactions.md` — nuance sobre isolamento em transações concorrentes (não é "ausência de interferência", é "resultado final serial-consistente")
+- `wiki/concepts/cap-theorem.md` — relação entre BASE/ACID e a escolha AP/CP do teorema CAP
+- `index.md` — adicionadas 6 linhas ausentes da seção "Bancos de Dados & SQL" que já existiam no disco mas não estavam indexadas (`acid`, `relational-vs-nosql`, `database-transactions`, `database-index`, `consistency-models`, além do novo `base-basically-available-soft-state-eventual`)
+
+**Notas:** Fonte é transcrição de vídeo do mesmo canal/autor de [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] (menciona curso de System Design com lançamento em junho de 2026). Nenhuma contradição com o wiki existente — os conceitos de ACID e consistência eventual já estavam documentados via [[wiki/sources/banco-de-dados]] e [[wiki/sources/modelos-de-consistencia]]/[[wiki/sources/cap-pacelc-consistencia]], mas o acrônimo **BASE** em si nunca tinha ganhado página própria, e o exemplo do e-mail único como ilustração concreta do custo de performance da consistência é novo. Drift de índice pré-existente encontrado e corrigido de passagem: seis páginas de conceito sobre banco de dados existiam no disco desde abril/2026 mas nunca haviam sido adicionadas a `index.md` — vale considerar um `/lint` completo depois para checar se há mais casos assim.
+
+---
+
+## [2026-07-03] ingest | Vibe Coding: Limites, Riscos e o Papel do Profissional Maduro
+
+**Source:** [[wiki/sources/vibe-coding-limites-maturidade-profissional]]
+**Skill:** tech-mentor-ai
+
+**Páginas criadas:**
+- `wiki/sources/vibe-coding-limites-maturidade-profissional.md`
+- `wiki/concepts/confidencialidade-de-dados-em-prompts-ia.md` (stub)
+- `wiki/concepts/contexto-organizacional-para-arquitetura.md` (stub)
+
+**Páginas atualizadas:**
+- `wiki/concepts/vibe-coding.md` — nova seção sobre o limite ser de julgamento, não técnico
+- `wiki/concepts/mvp.md` — MVP como contexto onde vibe coding entrega valor real
+- `wiki/concepts/arquitetura-de-software.md` — seção sobre decisão arquitetural exigir contexto organizacional, não só um prompt
+- `wiki/concepts/pensamento-critico.md` — o que a IA não substitui na análise de negócio/arquitetura
+- `wiki/concepts/engenheiro-vs-programador.md` — a mesma distinção pela ótica de uma arquiteta usando IA sem delegar a decisão
+- `wiki/concepts/robustez-de-sistemas.md` — vibe coding não entrega robustez por padrão
+- `wiki/concepts/governanca-de-codigo-gerado-por-ia.md` — vender sistema vibe-coded como pronto para produção como caso limite de falta de governança
+
+**Notas:** Fonte é transcrição de vídeo (perspectiva de arquiteta de software) sobre os limites do vibe coding. Argumento central: vibe coding brilha em MVP/protótipos/docs/testes, mas sistemas sustentáveis exigem arquitetura, segurança e — o ponto mais novo em relação ao que já estava no wiki — análise de **contexto organizacional** (maturidade de plataforma, CI/CD, processo entre áreas, know-how e licenciamento) e cuidado com **confidencialidade de dados** em prompts. Nenhuma contradição com [[wiki/sources/apagao-de-seniors-vibe-coding]] ou [[wiki/sources/engenheiro-vs-programador-mercado-ia]] — é o mesmo argumento reforçado por uma terceira fonte independente, com ênfase diferente (negócio/organização em vez de técnicas de detecção de bugs). Questão aberta: não há critério objetivo, em nenhuma das três fontes, para saber quando um MVP "saiu" do estágio de validação e precisa de revisão arquitetural formal antes de produção.
 
 ---
 
@@ -364,7 +434,27 @@
 **Notas:** Fonte é vídeo de Matt Pocock (AI Hero) explicando fundamentos de tokens em LLM via TypeScript/`js-tiktoken`/AI SDK. Sem contradição com o wiki existente — na verdade complementa diretamente [[wiki/concepts/byte-pair-encoding]] e [[wiki/concepts/token-tax-multilingual]] (já criados a partir de [[wiki/sources/custo-tokens-portugues-vs-ingles]]), adicionando o mecanismo de treino do tokenizer (nível-caractere → subpalavra → BPE) e o trade-off de tamanho de vocabulário que faltava nessas páginas. Questão aberta: fonte não cobre o multiplicador de token tax para português no Gemini/Google, só documentado para Anthropic.
 
 ---
+## [2026-06-26] ingest | The Comparison Trap in Programming Careers
 
+**Source:** [[wiki/sources/the-comparison-trap-in-programming-careers]]
+**Skill:** `tech-mentor-leadership` (path `/home/nemomartins/...` não encontrado — skill aplicada por mapeamento de domínio)
+
+**Páginas criadas:**
+- `wiki/sources/the-comparison-trap-in-programming-careers.md`
+- `wiki/concepts/disciplina-vs-talento.md`
+
+**Páginas atualizadas (backlink + source_count):**
+- `wiki/concepts/comparacao-na-carreira.md`
+- `wiki/concepts/familiaridade-vs-capacidade.md`
+- `wiki/concepts/linha-de-largada.md`
+- `wiki/concepts/log-de-aprendizado.md`
+- `wiki/concepts/repertorio.md`
+- `wiki/concepts/fluencia-vs-perfeicao.md`
+- `wiki/concepts/pratica-deliberada.md`
+
+**Notas:** Transcrição de vídeo em português — traduzida e formatada em Markdown antes do ingest. Autora não identificada. Fonte confirma e reforça com narrativa em primeira pessoa conceitos já bem estabelecidos no wiki. Nenhuma contradição. Questão aberta: "vergonha de código antigo como evidência de crescimento" tem nome na literatura? Possível relação com efeito Dunning-Kruger invertido.
+
+---
 ## [2026-06-26] ingest | 10 Conceitos Fundamentais da Computação
 
 **Source:** [[wiki/sources/10-conceitos-fundamentais-computacao]]
@@ -1377,3 +1467,254 @@ Entities:
 - `wiki/concepts/race-condition.md`
 
 **Notas:** Transcrição de vídeo sobre os três anti-padrões mais comuns do `useEffect`: (1) sincronizar estado derivado via effects encadeados em vez de calcular na renderização — gera renderizações extras e janelas de estado inconsistente; (2) stale closure em contadores/timers por não usar a updater function do `setState`; (3) fetch de dados em `useEffect` sem `AbortController`, com race condition e memory leak. Regra de ouro: "o melhor effect é o que você deleta." Nenhuma contradição com a wiki existente — reforça e detalha claims já presentes em [[wiki/concepts/useEffect]] e [[wiki/concepts/tanstack-query]]. Este registro completa um ingest que havia sido deixado incompleto (source e concept pages já existiam, mas faltavam no índice e no log).
+## [2026-07-03] ingest | Como Não Ser Humilhado no Primeiro Code Review
+
+**Source:** [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]]
+**Skill:** tech-mentor-leadership (path de skills configurado em CLAUDE.md, `/home/nemomartins/Documentos/new/skills/`, não existe neste ambiente — drift já registrado no ingest de [[wiki/sources/pare-de-terceirizar-suas-decisoes]])
+
+**Páginas criadas:**
+- `wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review.md`
+- `wiki/concepts/code-review.md`
+- `wiki/concepts/sindrome-do-impostor.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/paridade-local-producao.md` — sequência dev/homologação/produção antes de abrir PR; `source_count` 2 → 3
+- `wiki/concepts/definicao-de-pronto.md` — regra de negócio como critério #1, antes de estilo; `source_count` 2 → 3
+- `wiki/concepts/inteligencia-emocional.md` — não levar comentários de code review pro lado pessoal; `source_count` 1 → 2
+- `wiki/concepts/mentoria-tecnica.md` — comentários secos no review costumam ser falta de tempo, não má intenção; `source_count` 1 → 2
+- `wiki/concepts/pensamento-em-producao.md` — validar manualmente em produção antes de fechar a tarefa; `source_count` 2 → 3
+- `wiki/concepts/autonomia-responsabilidade.md` — alinhar com o PO antes do PR; não criar tarefas fora do escopo; `source_count` 1 → 2
+- `wiki/concepts/dependencia-ia.md` — revisar código com IA antes do PR só é uso produtivo se vier com "porquê" explicado; `source_count` 2 → 3
+- `wiki/index.md` — nova fonte na tabela de Sources + 2 novos conceitos em "Carreira & Soft Skills"
+
+**Notas:** Fonte original é a transcrição bruta de um vídeo (autor/canal não identificado no texto) sobre a dinâmica emocional e prática do primeiro code review de um júnior. Como reproduzir a transcrição quase-literal envolveria recriar conteúdo protegido de terceiros, o arquivo em `raw/` foi escrito como resumo estruturado (não verbatim) a pedido do usuário — logo esta fonte tem menos densidade de citação direta que ingests anteriores. Nenhuma contradição com o wiki existente; reforça e conecta diretamente com [[wiki/concepts/definicao-de-pronto]] e [[wiki/concepts/inteligencia-emocional]], que já cobriam parte do terreno (regra de negócio antes de estilo; feedback sem defensividade). Questão aberta registrada na fonte: como equilibrar "não criar tarefa que ninguém pediu" com a expectativa de iniciativa técnica de um júnior.
+
+---
+
+## [2026-07-03] ingest | ISO 27001 — Dicionário do Programador
+
+**Source:** [[wiki/sources/iso-27001-dicionario-programador]]
+**Skill:** tech-mentor-security (path de skills configurado em CLAUDE.md, `/home/nemomartins/Documentos/new/skills/`, não existe neste ambiente — path real encontrado em `/home/gabriel-martins/Documentos/skills/tech-mentor-security/SKILL.md`; drift já registrado em ingests anteriores). Referência específica carregada: `references/compliance-audit.md`, seção "ISO 27001 para Engenheiros".
+
+**Páginas criadas:**
+- `wiki/sources/iso-27001-dicionario-programador.md`
+- `wiki/concepts/iso-27001.md`
+- `wiki/concepts/sgsi-isms.md`
+- `wiki/concepts/triade-cia.md`
+- `wiki/concepts/segregacao-de-funcoes.md`
+- `wiki/concepts/iso-42001.md`
+- `wiki/entities/mercado-livre.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/compliance.md` — nova seção "ISO 27001 em Detalhe" (SGSI, tríade CIA, Anexo A, SoA, segregação de funções); `source_count` 2 → 3
+- `wiki/concepts/audit-log.md` — nota sobre renumeração do Anexo A na versão 2022 (A.12.4 pré-2022 vs. numeração atual); `source_count` 2 → 3
+- `wiki/concepts/principio-menor-privilegio.md` — mapeamento para o controle A.5.15 do Anexo A; `source_count` 1 → 2
+- `wiki/entities/nubank.md` — nova seção "Segurança e Compliance" (certificação ISO 27001, "modo rua" como controle de acesso contextual); `source_count` 1 → 2
+- `wiki/index.md` — nova fonte na tabela de Sources; 5 novos conceitos em "Segurança de APIs & Arquitetura"; nova entidade Mercado Livre
+
+**Notas:** Fonte é a transcrição bruta (traduzida/limpa a pedido do usuário, conteúdo já estava em português) de um vídeo do formato "Dicionário do Programador" (apresentadores Gabriel e Vanessa Weber) sobre ISO/IEC 27001. Contradição potencial e não resolvida: a numeração de controles do Anexo A citada nesta fonte usa a versão 2022 (A.8.28, A.5.15, A.5.8, A.8.25, A.5.3, A.8.4, A.5.34), enquanto [[wiki/sources/compliance-soc2-pci]] e [[wiki/concepts/audit-log]] (ingeridos antes) citam numeração pré-2022 ("A.12.4" para logging). A reorganização de 2022 de fato renumerou o Anexo A de 114 para 93 controles — não é necessariamente erro de nenhuma das duas fontes — mas o mapeamento exato entre as duas numerações não foi verificado contra o texto oficial da norma em nenhum dos dois ingests. Fica como questão aberta registrada na própria fonte. Outra ressalva: os percentuais citados ("40% mais rápido" para contratos enterprise e para implementação da ISO 42001 partindo da 27001) não têm fonte primária no vídeo e foram marcados como não verificados na fonte. Trecho comercial do vídeo (patrocínio Hostinger) foi preservado no raw mas excluído da ingestão por não ser conteúdo técnico.
+
+---
+
+## [2026-07-03] ingest | 3 Dicas para Colocar Conhecimento em Prática no Trabalho
+
+**Source:** [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]]
+**Skill:** tech-mentor-leadership (`/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/SKILL.md`, referência `technical-mentoring.md`)
+
+**Páginas criadas:**
+- `wiki/sources/3-dicas-colocar-conhecimento-em-pratica.md`
+- `wiki/concepts/granularidade-de-mudanca.md`
+- `wiki/concepts/automacao-pessoal-para-aprender.md`
+- `wiki/entities/andre-casciotti.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/pratica-deliberada.md` — nova seção "Prática de Curso vs. Prática no Mundo Real"; `source_count` 2 → 3
+- `wiki/concepts/aprendizado-passivo.md` — "entupir de teoria" como padrão pré-IA e independente dela; `source_count` 5 → 6
+- `wiki/concepts/aprender-a-aprender.md` — convergência independente com Fábio Akita sobre leitura não-linear de livros técnicos; `source_count` 2 → 3
+- `wiki/concepts/autonomia-responsabilidade.md` — nova seção registrando a tensão entre "não peça permissão" (prática pessoal) e "não crie tarefa fora do escopo" (entrega formal); `source_count` 2 → 3
+- `wiki/concepts/coesao.md` — coesão aplicada a mudanças de processo, não só a código; `source_count` 1 → 2
+- `wiki/concepts/cargo-cult-tecnologico.md` — variante do cargo cult motivada por vaidade tecnológica pessoal, não por autoridade de big tech; `source_count` 1 → 2
+- `wiki/concepts/zona-de-desconforto-da-aprendizagem.md` — ambiente real de trabalho como fonte estrutural de desconforto produtivo; `source_count` 1 → 2
+- `wiki/index.md` — nova fonte na tabela de Sources; 2 novos conceitos em "Carreira & Soft Skills"; nova entidade André Casciotti
+
+**Notas:** Fonte original é a transcrição bruta de um vídeo do canal "Próximo Nível" (André Casciotti), já em português — o pedido de "traduzir" foi interpretado como organizar a fala corrida em prosa estruturada com seções, não tradução de idioma (registrado ao usuário antes da ingestão). Nenhuma contradição forte com o wiki existente; a única tensão real é parcial, entre a Dica 3 ("não peça permissão, vai lá e faz") e a recomendação já registrada em [[wiki/concepts/autonomia-responsabilidade]] de não criar tarefas fora do escopo pedido — reconciliada no texto porque a fonte fala majoritariamente de automações pessoais fora do pipeline formal de entrega, não de tarefas dentro do sprint. Achado interessante: convergência independente entre esta fonte e [[wiki/sources/pare-de-terceirizar-suas-decisoes]] (Fábio Akita) sobre abandonar a leitura linear de livros técnicos — dois criadores de conteúdo relatando a mesma mudança de método sem se referenciar.
+
+---
+
+## [2026-07-03] ingest | 3 Soft Skills Que Poucos Programadores Dominam
+
+**Source:** [[wiki/sources/3-soft-skills-que-poucos-programadores-dominam]]
+**Skill:** tech-mentor-leadership (`/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/SKILL.md`, referência `managing-up.md`)
+
+**Páginas criadas:**
+- `wiki/sources/3-soft-skills-que-poucos-programadores-dominam.md`
+- `wiki/concepts/comunicacao-persuasiva.md`
+- `wiki/concepts/imagem-profissional.md`
+- `wiki/concepts/habilidade-de-lidar-com-pessoas.md`
+- `wiki/entities/dale-carnegie.md`
+
+**Páginas atualizadas:**
+- `wiki/entities/renato-augusto.md` — nova key source (soft skills/carreira, além do conteúdo prévio de design patterns); `source_count` 1 → 2, tags ampliadas
+- `wiki/concepts/soft-skills.md` — novas conexões (comunicação persuasiva, habilidade de lidar com pessoas, imagem profissional); `source_count` 1 → 2
+- `wiki/concepts/comunicacao-tecnica.md` — nova key source e link para comunicação persuasiva como aplicação tática do mesmo princípio; `source_count` 1 → 2
+- `wiki/index.md` — nova fonte na tabela de Sources; 3 novos conceitos em "Carreira & Soft Skills"; nova entidade Dale Carnegie
+
+**Notas:** Fonte original é a transcrição bruta de um vídeo de Renato Augusto, já em português (pedido de "traduzir" não se aplicou — apenas organização em prosa estruturada, registrado ao usuário). Duas alegações da fonte têm evidência fraca e foram marcadas como tal na própria página: (1) a estatística "85% do sucesso profissional vem de habilidade interpessoal, 15% de habilidade técnica", atribuída a "Instituto Carnegie" e Harvard sem citação rastreável — número amplamente repetido em conteúdo de carreira sem base sólida conhecida; (2) o "estudo da EO University" sobre vestimenta e liderança, não identificável. Cruzamento com skill: os dois "gatilhos emocionais" (urgência/ganância) da fonte para vender refatoração são uma versão simplificada e menos rigorosa do framework de *managing up* de `references/managing-up.md` — que exige dados concretos (custo, horas, incidentes passados) em vez de apelo emocional puro, marcado com `[skill: tech-mentor-leadership]` em [[wiki/concepts/comunicacao-persuasiva]] e na própria fonte. Nenhuma contradição forte com o restante da wiki; reforça [[wiki/concepts/soft-skills]] e [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]] com uma camada mais tática (persuasão, aparência) que os textos anteriores sobre soft skills não cobriam.
+
+---
+
+## [2026-07-03] ingest | Escalabilidade Horizontal, Load Balancer e Algoritmos de Balanceamento
+
+**Source:** [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]]
+**Skill:** tech-mentor-system-design (`/home/gabriel-martins/Documentos/skills/tech-mentor-system-design/SKILL.md`, referências `system-design.md` e `multi-region-global-lb.md`)
+
+**Páginas criadas:**
+- `wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/load-balancer.md` — nova seção "Tipos de Load Balancer" (hardware/software/cloud) e seção "Algoritmos de Balanceamento" expandida (Weighted Round Robin, Least Connections, Least Response Time, Sticky Round Robin, IP Hash); `source_count` 5 → 6
+- `wiki/concepts/escalabilidade-vertical.md` — nova key source; `source_count` 1 → 2
+- `wiki/concepts/escalabilidade-horizontal.md` — nova key source; `source_count` 3 → 4
+- `wiki/concepts/protocolo-de-rede.md` — nova seção "UDP em tempo real: jogos e videochamada"; `source_count` 3 → 4
+- `wiki/concepts/websocket-vs-polling.md` — nota sobre WhatsApp como exemplo de arquitetura L4/WebSocket; `source_count` 3 → 4
+- `wiki/entities/renato-augusto.md` — nova key source (terceiro domínio de conteúdo: system design/escalabilidade, além de design patterns e soft skills); `source_count` 2 → 3, tags ampliadas, bio atualizada com menção ao "Mapa do Arquiteto"
+- `wiki/index.md` — nova fonte na tabela de Sources
+
+**Notas:** Fonte original é a transcrição bruta de outro vídeo de Renato Augusto (mesmo criador já registrado em [[wiki/entities/renato-augusto]]), em português — pedido de "traduzir" interpretado neste caso como manter em português e apenas estruturar em prosa/Markdown (confirmado com o usuário antes da ingestão, diferente da vez anterior em que ficou ambíguo). O caminho de skills referenciado no CLAUDE.md do projeto (`/home/nemomartins/Documentos/new/skills/`) não existe nesta máquina — a skill foi carregada do caminho real usado em ingests recentes (`/home/gabriel-martins/Documentos/skills/`). Esta fonte aprofunda [[wiki/sources/escalabilidade-vertical-horizontal-system-design]], que já cobria escalabilidade vertical/horizontal e Load Balancer em nível introdutório; a nova fonte adiciona a taxonomia de tipos de LB (hardware/software/cloud), a razão pela qual AWS/Azure mantêm produtos separados por camada OSI, e uma camada prática de algoritmos de balanceamento com configuração real em Nginx — sem contradições com o conteúdo existente. Duas lacunas registradas como Open Questions na própria fonte: (1) a promessa do autor de um vídeo dedicado (duas partes) sobre a arquitetura do WhatsApp, ainda não ingerido; (2) a afirmação de que `least_time` é exclusivo do Nginx Plus, não verificada contra documentação oficial atual — marcada como alegação da fonte, não confirmada pela skill.
+
+---
+
+## [2026-07-03] ingest | ORM vs. SQL Puro: Organização de Regras de Negócio e Escolha de Banco de Dados
+
+**Source:** [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]
+**Skill:** tech-mentor-backend (`/home/gabriel-martins/Documentos/skills/tech-mentor-backend/SKILL.md`, referência `architecture-foundations.md` — anti-pattern "Leaky Abstraction" citando ORM — e `architecture/read-replicas-pooling.md`)
+
+**Páginas criadas:**
+- `wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados.md`
+- `wiki/concepts/stored-procedure.md` (stub)
+- `wiki/concepts/materialized-view.md` (stub)
+
+**Páginas atualizadas:**
+- `wiki/concepts/orm.md` — nova seção reforçando a limitação em relacionamentos profundos/chaves compostas e a vantagem de precisão do SQL direto; `source_count` 1 → 2
+- `wiki/concepts/sql-alem-do-basico.md` — nova seção "SQL Direto como Escolha Deliberada"; `source_count` 2 → 3
+- `wiki/concepts/database-index.md` — nova nota sobre certeza de estar batendo o índice ao escrever SQL direto; `source_count` 3 → 4
+- `wiki/concepts/read-replicas.md` — nova seção "Regra Prática: Relatório Nunca Bate em Produção" (razão de escala: ~10% do tempo é escrita); `source_count` 1 → 2
+- `wiki/concepts/relational-vs-nosql.md` — novo critério prático (junções múltiplas vs. dado não estruturado/ML) e nota sobre JSONB reduzir necessidade de poliglota; `source_count` 3 → 4
+- `wiki/concepts/postgresql.md` — nova seção "JSONB como Ponte para NoSQL"; `source_count` 2 → 3
+- `wiki/sources/banco-de-dados.md` — nova seção "Ver também" apontando para a nova fonte
+- `wiki/index.md` — nova fonte na tabela de Sources; dois novos conceitos (stored-procedure, materialized-view) em "Bancos de Dados & SQL"
+
+**Notas:** Fonte original era uma transcrição automática (STT) de um Q&A de live/stream, cheia de erros de reconhecimento — vários termos técnicos foram deturpados foneticamente (ex.: "história possível" → *stored procedure*, "trilhas" → *triggers*, "cores"/"correr" → *queries*/*query*, "curva" → *cursor*, "banco no circo" → *banco NoSQL*). O arquivo `raw/` foi reconstruído por inferência de contexto técnico, não é uma transcrição literal verificada palavra a palavra — registrado explicitamente como nota no topo do arquivo raw e reforçado aqui. Autoria não identificada (sem nome de canal ou palestrante no texto bruto); não foi atribuído a [[wiki/entities/fabio-akita]] apesar de estilo e tema (crítica a ORM, ênfase em SQL direto, escalabilidade) serem compatíveis — evitada atribuição sem evidência direta. Conteúdo é altamente complementar a [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] (mesma tensão SQL-abstraído-vs-direto, ângulo diferente) e a [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]]/[[wiki/sources/read-replicas-connection-pooling]] — sem contradições encontradas. Duas Perguntas Abertas registradas na própria fonte: falta de exemplo concreto de query com chave composta inviável em ORM, e falta de critério objetivo para "quando uma stored procedure deixa de ser saudável".
+
+---
+
+## [2026-07-03] ingest | Operador de CRUD vs. Engenheiro: O Que Existe Debaixo do CRUD
+
+**Source:** [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]]
+**Skill:** tech-mentor-leadership (`/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/SKILL.md`, referência `career-progression.md`)
+
+**Páginas criadas:**
+- `wiki/sources/operador-de-crud-vs-engenheiro-repertorio.md`
+- `wiki/concepts/bluetooth-le.md` (stub — advertising/scan/pair/GATT, restrições de MTU e reconexão)
+
+**Páginas atualizadas:**
+- `wiki/concepts/crud-resolvido.md` — nova seção nomeando "operador de CRUD" como a figura central desta fonte; `source_count` 1 → 2
+- `wiki/concepts/complexidade-acidental.md` — terceira fonte independente da dicotomia acidental/essencial, ligada a por que a indústria vendeu "aprenda o framework" como suficiente até 2022; `source_count` 2 → 3
+- `wiki/concepts/essential-complexity.md` — gatilhos concretos (escala, rede, concorrência) que forçam a complexidade essencial a emergir; `source_count` 1 → 2
+- `wiki/concepts/engenheiro-vs-programador.md` — "operador de CRUD" como sinônimo de programador nesta dicotomia; conexão com "fácil vs. simples" da IA; `source_count` 3 → 4
+- `wiki/concepts/repertorio.md` — nova seção "A cola entre a IA e o repertório"; exemplos pessoais do autor (RA/3D, Flash/animação); `source_count` 2 → 3
+- `wiki/concepts/back-pressure.md` — nova key source; `source_count` 1 → 2
+- `wiki/concepts/idempotencia.md` — nova key source (webhook duplicado, at-least-once vs. exactly-once); `source_count` 1 → 2
+- `wiki/concepts/protocolo-de-rede.md` — nova seção "O que acontece antes do primeiro byte de um JSON" (DNS → TCP handshake → TLS → HTTP); `source_count` 4 → 5
+- `wiki/concepts/database-index.md` — nova seção "Operador vs. Engenheiro no Uso do Índice"; `source_count` 4 → 5
+- `wiki/concepts/mobile-navegacao.md` — nova seção "O Risco Escondido: Memória e Ciclo de Vida" (navigation stack, OOM kill); `source_count` 1 → 2
+- `wiki/concepts/mobile-design-system.md` — nova key source; `source_count` 1 → 2
+- `wiki/concepts/algoritmos-e-estruturas-de-dados.md` — nova key source (matemática como gramática, laço dentro de laço); `source_count` 4 → 5
+- `wiki/index.md` — nova fonte na tabela de Sources; novo conceito `bluetooth-le` em "Fundamentos de CS"
+
+**Notas:** Fonte original é transcrição de fala (ASR) recebida em bloco único e sem pontuação — limpa de erros de reconhecimento, pontuada e estruturada em seções pelo agente, mas mantida em português (usuário confirmou explicitamente antes da ingestão que "traduzir" neste pedido não significava trocar de idioma). Autoria/canal não identificado no texto recebido — nenhuma entidade criada; se o usuário confirmar o canal de origem, criar `wiki/entities/<nome>.md`. Esta fonte é altamente complementar a [[wiki/sources/engenheiro-vs-programador-mercado-ia]] (mesmo tema geral — programador/operador de CRUD vs. engenheiro, complexidade acidental/essencial, repertório vs. ferramenta, IA comoditizando execução — possivelmente mesmo tipo de canal), mas com exemplos e ângulo diferentes: esta cobre redes/Bluetooth/streams/mobile em detalhe técnico maior, a outra cobre o framework eixo-vertical/eixo-horizontal com recomendação de livros. Sem contradições entre as duas — reforço mútuo. Três lacunas registradas como Perguntas Abertas na própria fonte: (1) citação de Rich Hickey ("fácil vs. simples") não verificada contra a palestra original; (2) hierarquia de serviços Bluetooth (GATT) descrita não checada contra a especificação oficial do Bluetooth SIG; (3) autoria não identificada.
+
+---
+
+## [2026-07-04] ingest | Vulnerabilidades Comuns de Segurança em Apps/SaaS
+
+**Source:** [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]]
+**Skill:** tech-mentor-security (`/home/nemomartins/Documentos/skills/tech-mentor-security/SKILL.md`, referências `appsec-api.md` e `appsec-js-vulns.md`)
+
+**Páginas criadas:**
+- `wiki/sources/vulnerabilidades-comuns-seguranca-apps.md`
+- `wiki/concepts/idor.md` (IDOR/BOLA — Broken Object Level Authorization)
+- `wiki/concepts/mass-assignment.md` (BOPLA — Broken Object Property Level Authorization)
+- `wiki/concepts/webhook-signature-validation.md` (HMAC, timing-safe compare, replay/idempotência)
+- `wiki/concepts/exposicao-excessiva-de-dados.md` (Excessive Data Exposure)
+- `wiki/concepts/toctou.md` (Time of Check to Time of Use — race condition de backend)
+- `wiki/concepts/confiar-no-frontend.md` (anti-padrão raiz: client-side trust)
+
+**Páginas atualizadas:**
+- `wiki/concepts/rate-limiting.md` — nova seção sobre custo financeiro direto da ausência de rate limit (registros falsos, cota de e-mail); `source_count` 2 → 3
+- `wiki/concepts/attack-surface.md` — nova seção "Rotas Previsíveis como Superfície" (webhook em path padrão); `source_count` 1 → 2
+- `wiki/concepts/timing-attack.md` — nova seção aplicando o conceito à assinatura de webhook; `source_count` 2 → 3
+- `wiki/concepts/race-condition.md` — nova seção distinguindo a race condition de frontend (fetch/useEffect) da TOCTOU de backend; `source_count` 1 → 2
+- `wiki/index.md` — nova fonte na tabela de Sources; 6 novos conceitos em "Segurança de APIs & Arquitetura"
+
+**Notas:** Fonte era transcrição bruta de um vídeo em português com fala coloquial e sem pontuação (incluindo uma demonstração prática de bypass client-side via DevTools/breakpoint) — reescrita em `raw/` como markdown estruturado por seção antes da ingestão, sem tradução (já estava em português) e sem alterar o conteúdo técnico. Distinção deliberada feita entre [[wiki/concepts/toctou]] (race condition de concorrência em recurso compartilhado no backend, ex. saldo/estoque) e [[wiki/concepts/race-condition]] (bug de frontend por respostas de fetch fora de ordem em `useEffect`) — mesma família de nome mas causas e correções diferentes; ambas as páginas agora se referenciam. Conteúdo é altamente complementar a [[wiki/sources/owasp-top10]] e [[wiki/sources/api-security]] (IDOR/BOLA, Mass Assignment/BOPLA já documentados ali sob a ótica OWASP formal) — esta fonte cobre os mesmos temas com exemplos mais concretos e de forma mais didática/prática, incluindo TOCTOU e a demonstração de bypass de frontend, que não estavam nas fontes anteriores. Sem contradições encontradas. Duas Perguntas Abertas registradas na própria fonte: falta de menção a ferramentas de detecção automatizada de IDOR/BOLA em CI, e falta de exemplo de locking distribuído (fora de um único banco transacional) para TOCTOU em arquitetura multi-serviço.
+
+---
+
+## [2026-07-04] ingest | Produtividade Falsa vs. Produtividade Verdadeira
+
+**Source:** [[wiki/sources/produtividade-falsa-vs-verdadeira]]
+**Skill:** tech-mentor-leadership (`/home/nemomartins/Documentos/skills/tech-mentor-leadership/SKILL.md` — nenhum arquivo de referência específico casou com o tópico; ingerido com conhecimento base do skill, conforme protocolo)
+
+**Páginas criadas:**
+- `wiki/sources/produtividade-falsa-vs-verdadeira.md`
+- `wiki/concepts/ativo-vs-produtivo.md` (distinção central: terminar tarefas no prazo vs. preencher tempo livre com atividade de aparência produtiva)
+- `wiki/concepts/principio-de-pareto.md` (80/20 — qualidade/tempo investido não torna uma tarefa importante)
+- `wiki/concepts/eficacia-vs-eficiencia.md` (fazer a coisa certa vs. fazer qualquer coisa de forma econômica)
+- `wiki/concepts/tecnica-do-ataque-cardiaco.md` (técnica de Tim Ferriss para achar as tarefas de maior impacto)
+- `wiki/concepts/sobrecarga-de-informacao.md` (Herbert Simon — riqueza de informação cria pobreza de atenção; Pascal — incapacidade de silêncio)
+
+**Páginas atualizadas:**
+- `wiki/concepts/burnout-dev.md` — nova seção "Confundir Atividade com Progresso"; `source_count` 1 → 2
+- `wiki/concepts/dopamina-produtividade.md` — nova seção "Sobrecarga de Informação como Distração"; `source_count` 1 → 2
+- `wiki/index.md` — nova fonte na tabela de Sources; 5 novos conceitos em "Carreira & Soft Skills"
+
+**Notas:** Fonte original era transcrição bruta de ASR (fala em bloco único, sem pontuação) — reescrita em `raw/produtividade-falsa-vs-verdadeira.md` como markdown estruturado por seções pelo agente, mantida em português (não havia necessidade de tradução). Autoria não confirmada explicitamente no texto: há pistas fortes (canal paralelo sobre aviação/música, esposa Renata, filho Oliver de 7 meses) consistentes com o criador de conteúdo Felipe Deschamps, mas nenhuma página de entidade foi criada até confirmação do usuário — mesmo cuidado já registrado no ingest de [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] em 2026-07-03. Conteúdo é complementar a [[wiki/concepts/otimizacao-prematura]] (mesma lógica de "acertar o alvo antes de otimizar a pontaria", aplicada a código em vez de produtividade pessoal) e a [[wiki/concepts/paralisia-por-analise]] (excesso — de opções ou de estímulo — travando resultado real). Sem contradições encontradas com o restante da wiki. Três questões abertas registradas na própria fonte: autoria não confirmada, citações de Pascal/Herbert Simon não verificadas contra fonte primária, e três vídeos relacionados do mesmo autor mencionados mas não ingeridos.
+
+---
+
+## [2026-07-04] fix | Apagão de Devs Sêniors e Vibe Coding — drift de índice
+
+**Source:** [[wiki/sources/apagao-de-seniors-vibe-coding]] (já existente em `raw/` e já ingerida em 2026-04-29 — usuário colou a mesma transcrição novamente pedindo para recriar o `.md` e rodar "ingest this"; conteúdo idêntico ao já ingerido, nenhuma criação nova de fonte)
+
+**Achado:** a fonte tinha página completa em `wiki/sources/`, estava referenciada em outras páginas e no log, mas nunca apareceu em `wiki/index.md` (index/log drift), e duas das páginas de conceito que ela linka (`[[apagao-de-seniors]]`, `[[adaptive-thinking]]`) nunca foram criadas (broken links de stub pendente).
+
+**Páginas criadas:**
+- `wiki/concepts/apagao-de-seniors.md` (stub)
+- `wiki/concepts/adaptive-thinking.md` (stub)
+
+**Páginas atualizadas:**
+- `wiki/index.md` — adicionada linha da fonte na tabela de Sources; adicionadas 4 linhas em "Qualidade de Software com IA" (apagao-de-seniors, n-plus-um-detector, property-based-testing, adaptive-thinking — as duas últimas também estavam faltando no índice apesar de já existirem)
+
+**Notas:** Nenhum conteúdo novo foi ingerido — apenas fechamento de lacunas de um ingest anterior incompleto. Raw file não foi recriado por já existir com conteúdo idêntico ao colado pelo usuário.
+
+---
+
+## [2026-07-04] ingest | React 19 Memoization: Chega o Fim do useMemo e useCallback?
+
+**Source:** [[wiki/sources/react-19-memoization-sem-usememo-usecallback]]
+**Skill:** tech-mentor-frontend (`references/frameworks/react-performance.md`)
+**URL original:** https://medium.com/front-end-world/react-19-memoization-no-more-usememo-usecallback-3a09a986f9c7 (autor: Komal Raut, Medium, fev/2025)
+
+**Páginas criadas:**
+- `wiki/sources/react-19-memoization-sem-usememo-usecallback.md`
+- `wiki/concepts/react-compiler.md` (conceito próprio — antes o React Compiler só existia embutido, mal referenciado, dentro de `concurrent-mode.md`)
+
+**Páginas atualizadas:**
+- `wiki/concepts/useMemo.md` — `source_count` 1 → 2; corrigido link quebrado/mal rotulado `[[concurrent-mode|React Compiler]]` para `[[react-compiler]]`
+- `wiki/concepts/useCallback.md` — `source_count` 1 → 2; mesma correção de link
+- `wiki/concepts/concurrent-mode.md` — seção "React Compiler (beta)" substituída por link de distinção para `[[react-compiler]]` (conteúdo movido, não duplicado)
+- `wiki/entities/react.md` — `source_count` 1 → 2; nova fonte
+- `wiki/index.md` — nova linha em Sources; 4 novas linhas em "Frontend & Design Engineering" (react-compiler, useMemo, useCallback, concurrent-mode — as três últimas já existiam como páginas mas nunca tinham entrado no índice, um drift antigo)
+
+**Notas:** Artigo em inglês, traduzido integralmente para PT-BR em `raw/react-19-memoization-sem-usememo-usecallback.md` antes da ingestão (conteúdo colado pelo usuário — WebFetch inicial só retornou introdução por paywall do Medium). Conteúdo é introdutório e superficial frente ao que já estava em [[wiki/sources/react-tudo-que-voce-precisa-saber]] — sem contradições, mas também sem detalhamento técnico novo (não cita `babel-plugin-react-compiler`, não menciona a exigência de aderência às Rules of Hooks). Aproveitado o ingest para corrigir um drift antigo: `useMemo`, `useCallback` e `concurrent-mode` já existiam como páginas estáveis desde 2026-04-22 mas nunca haviam sido listadas em `wiki/index.md`. Duas perguntas abertas registradas na própria fonte: falta de exemplo concreto de "cálculo custoso que o compiler não otimiza", e ausência de benchmark real citado pelo autor.
