@@ -3,8 +3,8 @@ type: concept
 title: "Documentar Conquistas"
 aliases: ["keep notes about wins", "registro de vitórias", "bullet journal dev"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-09
+source_count: 2
 tags: [carreira, habitos, produtividade, performance, liderança]
 skill: tech-mentor-leadership
 status: stub
@@ -32,3 +32,4 @@ Conquistas grandes são raras. Pequenas vitórias diárias são a base real do p
 ## Key Sources
 
 - [[sources/9-habitos-programador-junior]]
+- [[sources/pensamento-estruturado-resolucao-de-problemas]] — passo 5 do método de resolução de problemas: documentar o que foi descoberto durante o diagnóstico serve de insumo pronto na próxima vez que um problema parecido aparecer

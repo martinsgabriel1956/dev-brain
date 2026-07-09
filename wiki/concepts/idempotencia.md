@@ -3,9 +3,9 @@ type: concept
 title: "Idempotência"
 aliases: ["idempotência", "idempotency", "idempotency key"]
 date_created: 2026-04-22
-date_updated: 2026-07-03
-source_count: 2
-tags: [distribuidos, resiliencia, api, retry, mensageria]
+date_updated: 2026-07-09
+source_count: 3
+tags: [distribuidos, resiliencia, api, retry, mensageria, double-spend, double-submit]
 skill: tech-mentor-system-design
 status: stable
 ---
@@ -64,8 +64,26 @@ async function processPayment(idempotencyKey: string, data: PaymentData) {
 - POST que cria recursos ou processa pagamentos
 - Qualquer operação com efeito colateral financeiro
 
+## Double Spend / Double Submit — a Chave Gerada pelo Servidor
+
+Double spend (transações) e double submit (formulários) são o mesmo problema por ângulos diferentes: um request se duplica por bug, duplo clique acidental ou abuso deliberado.
+
+Variante importante do padrão: em vez do **cliente** gerar e enviar a Idempotency Key (vulnerável — um atacante reenvia o request com uma chave diferente e burla a dedução), o **servidor** pode gerar a chave como um **hash dos campos submetidos** (ex.: origem, destino, data do voo). Isso torna a dedução robusta contra reenvio malicioso, não só contra duplo clique acidental.
+
+A definição de quais campos entram no hash — e qual a janela de tempo que caracteriza duplicidade (a mesma compra hoje vs. amanhã pode ser legítima) — é uma **decisão de negócio**, não só técnica.
+
+Camadas complementares, cada uma cobrindo um ângulo diferente do problema:
+
+| Camada | Cobre duplo clique acidental? | Cobre abuso deliberado? |
+|---|---|---|
+| Desabilitar botão de submit no frontend | Sim | Não — atacante ignora o frontend |
+| Redirect após POST (padrão [[wiki/concepts/post-redirect-get]]) | Sim | Não |
+| Idempotency Key (hash gerado no servidor + storage compartilhado) | Sim | Sim |
+| Unique Constraint no banco (quando existe campo genuinamente único) | Sim | Sim — mas só se há campo único aplicável |
+
 ## Key Sources
 
 - [[sources/retry-backoff]]
 - [[wiki/sources/acoplamento-abstracao-estado]]
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — idempotência como resposta ao webhook duplicado; errar at-least-once vs. exactly-once cobra o cliente em dobro ou perde o pedido
+- [[wiki/sources/double-spend-double-submit]] — double spend/double submit como o mesmo problema; chave de idempotência gerada no servidor via hash dos campos (mais robusta que chave enviada pelo cliente); janela de tempo de duplicidade como decisão de negócio

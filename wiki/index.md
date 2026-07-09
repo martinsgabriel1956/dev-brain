@@ -5,14 +5,17 @@ date_updated: 2026-07-09
 
 
 
+
 # Wiki Index
 
 ## Sources
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/double-spend-double-submit]] | Double spend/double submit são o mesmo problema — camadas complementares: frontend desabilita botão, redirect após POST (PRG), Idempotency Key (hash gerado no servidor + storage compartilhado), e Unique Constraint no banco quando há campo genuinamente único |
 | [[wiki/sources/html-vs-markdown-para-agentes-de-ia]] | HTML vs. Markdown como formato de saída de agentes — maior densidade de informação vs. ~20x mais tokens; mais um quality gate real de CI para qualidade de transcrição (Whisper local) |
 | [[wiki/sources/como-vender-um-saas-sem-audiencia]] | Build in public já era: viralizar sketch sem parecer propaganda, feature vendível desde o dia zero, conhecer LTV antes do CAC, ser usuário do próprio produto |
+| [[wiki/sources/pensamento-estruturado-resolucao-de-problemas]] | Resolver problemas é saber pensar, não experiência ou talento — árvore de decomposição, pensar de trás pra frente, testar hipóteses antes de agir, documentar o que se descobriu |
 | [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] | André Casciotti: não peça permissão, separe mudanças em partes coesas, use automações pessoais como veículo de prática de baixo risco |
 | [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] | 5 passos para reduzir a fricção do primeiro code review: regra de negócio antes de estilo, revisar com IA sem virar dependência, testar em ambiente externo, não levar comentários pro pessoal, validar em produção |
 | [[wiki/sources/pare-de-terceirizar-suas-decisoes]] | Akita: pare de terceirizar decisões de carreira para influencers e de parar de cargo-cultar stack de big tech — skin in the game, antifragilidade e custo afundado |
@@ -122,6 +125,7 @@ date_updated: 2026-07-09
 | [[wiki/sources/como-um-compilador-transforma-codigo-em-instrucoes-de-maquina]] | Pipeline de 6 estágios de um compilador — lexing, parsing (AST), análise semântica (tabela de símbolos), IR, otimização (constant folding, DCE, loop unrolling, inlining) e geração de código (alocação de registradores); compilador vs. interpretador vs. JIT |
 | [[wiki/sources/pub-sub-message-queue-bullmq-na-pratica]] | Pub/Sub publica um fato, message queue publica um trabalho — distinção pelo modelo de dependência (quem depende de quem); quickstart de BullMQ com producer/worker sobre Redis |
 | [[wiki/sources/como-evitar-over-engineering-david-farley]] | Refuta o "triângulo de ferro" com dados DORA/Accelerate; maior problema da indústria é under-engineering, não over-engineering; walking skeleton do LMAX como antídoto contra resolver requisitos não-funcionais cedo demais |
+| [[wiki/sources/diferenciais-portfolio-backend-junior]] | Para a primeira vaga de backend, o diferencial não é arquitetura sofisticada — é profissionalismo nas bases: testes de integração com banco real, Docker/deploy real, SQL além do CRUD, documentação Swagger, error handling estruturado e observabilidade |
 
 ## Concepts
 
@@ -425,6 +429,18 @@ date_updated: 2026-07-09
 | [[wiki/concepts/unicode]] | Charset universal com >1M codepoints; não é encoding — precisa de UTF-8 para ser serializado |
 | [[wiki/concepts/utf-8]] | Encoding de largura variável para Unicode; criado por Ken Thompson e Rob Pike; padrão da web |
 
+### Resolução de Problemas & Debugging Estruturado
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/pensamento-estruturado]] | Resolver qualquer problema não é dom, é prática — saber como o próprio raciocínio funciona diante do desconhecido |
+| [[wiki/concepts/arvore-de-decomposicao]] | Quebrar um problema vago ("sistema lento") em perguntas cada vez mais específicas até virar solução acionável |
+| [[wiki/concepts/pensamento-regressivo]] | Partir do estado final desejado e mapear de trás pra frente, em vez de arriscar suposições para frente |
+| [[wiki/concepts/causa-raiz]] | O ponto de origem real do problema — atuar no sintoma sem achá-la resolve só temporariamente |
+| [[wiki/concepts/hipotese-e-validacao]] | "Pode ser" não é resposta — validar com dados antes de agir, ou arrisca dias resolvendo a coisa errada |
+| [[wiki/concepts/pensamento-sistemico]] | Enxergar como as partes de um sistema se conectam, não só resolver o problema pontual |
+| [[wiki/concepts/debugging]] | Aplicação direta do pensamento estruturado a um bug técnico concreto |
+
 ### Aprendizado e Mentalidade
 
 | Página | Hook |
@@ -492,6 +508,13 @@ date_updated: 2026-07-09
 | [[wiki/concepts/load-balancer]] | Distribui tráfego entre instâncias — L4 (cego, rápido) vs L7 (inspeciona HTTP, roteia por path/header) |
 | [[wiki/concepts/alta-disponibilidade]] | Sistema continua operacional mesmo com falhas de componente — redundância, health check, deploy gradual |
 | [[wiki/concepts/observabilidade]] | Entender o que acontece por dentro via logs (o quê), métricas (crescendo?) e traces (onde o tempo foi gasto) |
+
+### Idempotência & Deduplicação de Requests
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/idempotencia]] | Mesmo resultado não importa quantas vezes a operação executa — pré-requisito para retry seguro; chave gerada pelo servidor (hash dos campos) é mais robusta contra abuso que chave enviada pelo cliente |
+| [[wiki/concepts/post-redirect-get]] | Redirect 303 após POST evita reenvio acidental de formulário — não protege contra reenvio via script, só via navegador |
 
 ### Estratégias de Deploy
 
@@ -666,6 +689,12 @@ date_updated: 2026-07-09
 | [[wiki/concepts/modelagem-orientada-a-objetos]] | Pré-requisito obrigatório para design patterns — classes, atributos, relacionamentos antes de GoF |
 | [[wiki/concepts/walking-skeleton]] | Fatia mínima da arquitetura fim-a-fim em produção cedo; caso LMAX — peça provisória isolada atrás de abstração trocável |
 | [[wiki/concepts/dora-metrics]] | Deployment Frequency, Lead Time, Change Failure Rate, MTTR — velocidade e qualidade se correlacionam positivamente, refutando o "triângulo de ferro" |
+| [[wiki/concepts/portfolio-backend-junior]] | Checklist do diferencial numa primeira vaga de backend — profissionalismo nos fundamentos, não arquitetura sofisticada |
+| [[wiki/concepts/docker-portfolio]] | Docker Compose + Dockerfile multi-stage numa aplicação de portfólio demonstra as ferramentas que qualquer empresa de backend vai exigir |
+| [[wiki/concepts/documentacao-api-swagger]] | Swagger/OpenAPI + Scalar como API reference — diferencial raro, ~1 em 10 devs se preocupa com documentação de portfólio |
+| [[wiki/concepts/error-handling-estruturado]] | Classes de erro específicas + HTTP codes corretos por caso + error handler global para o inesperado |
+| [[wiki/concepts/sql-alem-do-basico]] | JOINs, agregações e subqueries — sinal de que o dev saiu do CRUD básico e entende como o banco funciona de verdade |
+| [[wiki/concepts/curriculo-vs-portfolio]] | Currículo é promessa de onde você esteve; portfólio é prova do que você produziu |
 
 ## Entities
 

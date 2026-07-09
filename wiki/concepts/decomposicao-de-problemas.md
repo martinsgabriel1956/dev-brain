@@ -3,8 +3,8 @@ type: concept
 title: "Decomposição de Problemas"
 aliases: ["problem decomposition", "quebrar em partes menores"]
 date_created: 2026-05-13
-date_updated: 2026-06-01
-source_count: 2
+date_updated: 2026-07-09
+source_count: 3
 tags: [decomposicao, fundamentos, cs-fundamentals]
 skill: cs-fundamentals
 status: draft
@@ -54,7 +54,12 @@ A decomposição transforma "clone Netflix" — nebuloso demais para começar �
 - Cada subproblema gera seu próprio [[fluxo-logico]]
 - Com [[repertorio]] suficiente, a decomposição acelera por reconhecimento de padrões
 
+## Aplicação em debugging: a árvore de decomposição
+
+Fora do design de sistemas, a mesma técnica se aplica a diagnosticar um problema vago em produção ("o sistema tá lento"). Em vez de decompor em módulos, decompõe-se em perguntas cada vez mais específicas (onde, quando, para quem) até chegar numa causa isolável — ver [[arvore-de-decomposicao]] e [[pensamento-estruturado]].
+
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-quatro-passos]] — framework de 4 passos; caixa eletrônico como exemplo
 - [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — primeiro pilar dos 5; exemplo com clone de Netflix e remoção de elemento de array
+- [[wiki/sources/pensamento-estruturado-resolucao-de-problemas]] — aplicação da decomposição ao debugging de produção via árvore de perguntas (onde/quando/para quem)

@@ -3,8 +3,8 @@ type: concept
 title: "IA — Ciclo de Dependência"
 aliases: ["ia dependencia", "degradacao por ia", "vibe coding dependencia", "ciclo de degradacao"]
 date_created: 2026-04-29
-date_updated: 2026-04-29
-source_count: 1
+date_updated: 2026-07-09
+source_count: 2
 tags: [ia, carreira, vibe-coding, competencia, fundamentos]
 skill: tech-mentor-leadership
 status: stable
@@ -56,3 +56,4 @@ IA amplifica o que você já sabe. Dev que entende sistemas usa IA para acelerar
 
 - [[sources/roadmap-dev-senior-2026]]
 - [[sources/apagao-de-seniors-vibe-coding]]
+- [[sources/pensamento-estruturado-resolucao-de-problemas]] — sem pensamento estruturado, a IA devolve "um milhão de possibilidades" em vez de uma solução específica; pensar bem é o que torna o uso de IA produtivo em vez de mais um ciclo de dependência

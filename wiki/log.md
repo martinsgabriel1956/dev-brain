@@ -2,6 +2,23 @@
 
 ---
 
+## [2026-07-09] ingest | Double Spend / Double Submit
+
+**Source:** [[wiki/sources/double-spend-double-submit]] — transcrição bruta de ASR (fala em bloco único, sem pontuação, com propaganda de patrocinador intercalada) colada pelo usuário, já em português (sem necessidade de tradução), reescrita como markdown estruturado por camada de solução em `raw/double-spend-double-submit.md`
+**Skill:** tech-mentor-backend — carregado `SKILL.md` em `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/`; índice apontou para `references/idempotency-patterns.md` como referência específica do tópico (Idempotency, Idempotency Key, Dedup, Upsert, CAS), consultado para calibrar os claims e identificar duas lacunas que o vídeo deixa em aberto (lock de concorrência e TTL por domínio)
+
+**Páginas criadas:**
+- `wiki/sources/double-spend-double-submit.md`
+- `wiki/concepts/post-redirect-get.md` (stub) — padrão PRG (303 após POST), citado no vídeo como camada que resolve reenvio acidental de formulário mas não abuso deliberado
+
+**Páginas atualizadas:**
+- `wiki/concepts/idempotencia.md` — `source_count` 2 → 3; nova seção "Double Spend / Double Submit — a Chave Gerada pelo Servidor" com a variante de gerar a Idempotency Key no servidor via hash dos campos (mais robusta contra abuso deliberado que chave enviada pelo cliente) e tabela comparando as 4 camadas de defesa por tipo de ameaça (duplo clique acidental vs. abuso deliberado)
+- `wiki/index.md` — nova linha em Sources (topo da tabela); nova seção "Idempotência & Deduplicação de Requests" com `idempotencia` e `post-redirect-get` (fechando de passagem um drift antigo: nem `idempotencia` nem `retry-backoff` estavam indexados apesar de já existirem como páginas estáveis — `retry-backoff` permanece fora do índice por não ter sido tocado nesta ingestão)
+
+**Notas:** Conteúdo não contradiz [[wiki/concepts/idempotencia]] — na verdade preenche uma lacuna real: a página existente só documentava a Idempotency Key enviada pelo cliente (padrão Stripe), sem discutir a variante mais robusta de gerá-la no servidor via hash determinístico dos campos, nem a distinção entre ameaça acidental (duplo clique) e deliberada (abuso/scripting), que é o eixo central deste vídeo. O vídeo é didático e evita alegações fortes sem qualificação — a maior parte do conteúdo é consistente com `references/idempotency-patterns.md` da skill. Duas lacunas do vídeo ficaram registradas como Open Questions na fonte: falta de discussão sobre lock de concorrência entre requests simultâneos com a mesma chave (a skill cobre isso com um lock key separado do cache key) e ausência de uma estratégia concreta de TTL por tipo de operação (a skill sugere valores diferenciados: pagamento 30 dias, pedido 7 dias). Entidades: nenhuma relevante — o patrocínio (Abacus AI) foi tratado como contexto tangencial, não como entidade da wiki.
+
+---
+
 ## [2026-07-09] ingest | Build in Public Já Era: Como Vender um SaaS Sem Audiência
 
 **Source:** [[wiki/sources/como-vender-um-saas-sem-audiencia]] — transcrição bruta de ASR (fala em bloco único, sem pontuação) colada pelo usuário, já em português (sem necessidade de tradução), reescrita como markdown estruturado por tópico em `raw/como-vender-um-saas-sem-audiencia.md`
@@ -2067,3 +2084,29 @@ Entities:
 - `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (`walking-skeleton`, `dora-metrics`); nova linha em Entities (`david-farley`)
 
 **Notas:** O achado central e genuinamente novo da fonte é a refutação do "triângulo de ferro" com a pesquisa DORA/*Accelerate* — nenhuma página da wiki tratava essa correlação empírica entre velocidade e qualidade de forma explícita antes, apesar de `over-engineering.md`, `ci-cd.md` e `tdd.md` já tocarem tangencialmente nos mesmos temas. O segundo achado relevante é a distinção entre as duas causas de over-engineering em devs experientes — perfeccionismo (já documentado, convergente com `overengineering-carol-ate-quinta`) vs. falta de confiança/antecipação de requisitos não-funcionais (nova, com o caso concreto do LMAX e o padrão formal "walking skeleton"). Duas claims da fonte carecem de fonte primária e foram marcadas como não verificadas: (1) a anedota da Thoughtworks/Martin Fowler sobre a origem do ágil, refletida com ressalva explícita na página da entidade; (2) os detalhes técnicos do caso LMAX (mensageria XML/HTTP → protocolo binário), que são plausíveis e consistentes com o trabalho público de Farley mas não foram citados com fonte primária no vídeo — registrado como questão em aberto na source. Nenhuma contradição encontrada com o restante da wiki; a fonte complementa `over-engineering.md` sem substituir nada do que já estava documentado.
+
+---
+
+## [2026-07-09] retroactive fix | Pensamento Estruturado para Resolução de Problemas
+
+**Contexto:** O usuário colou a mesma transcrição já ingerida em 2026-05-01 (`raw/pensamento-estruturado-resolucao-de-problemas.md`, `wiki/sources/pensamento-estruturado-resolucao-de-problemas.md`). Ao invés de duplicar, foi feito um sweep de lint focado nessa fonte, revelando que o ingest original (passos 1–5 do workflow) ficou completo, mas os passos 6–7 (indexação e log) nunca foram executados — drift clássico de índice/log.
+
+**Achados corrigidos:**
+- `wiki/index.md` — fonte nunca constava em Sources; adicionada. Os 5 conceitos criados por esse ingest (`pensamento-estruturado`, `arvore-de-decomposicao`, `pensamento-regressivo`, `causa-raiz`, `hipotese-e-validacao`) e o pré-existente `pensamento-sistemico` nunca tinham entrada no índice; criada nova seção "Resolução de Problemas & Debugging Estruturado"
+- `wiki/concepts/debugging.md` — linkado pela source (`[[debugging]]`) mas a página nunca existia — link quebrado. Criado stub
+- `wiki/concepts/decomposicao-de-problemas.md`, `wiki/concepts/ia-ciclo-dependencia.md`, `wiki/concepts/documentar-conquistas.md` — listados como "Conceitos e Entidades Relacionados" na source, mas nenhum dos três citava a source de volta (backlink faltando); adicionado `Key sources`/seção e `source_count` incrementado em cada um
+
+**Notas:** Nenhum conteúdo novo foi extraído da transcrição em si — o texto colado é idêntico ao já processado. O trabalho aqui foi puramente de reparo de drift (workflow de lint), não de ingest. `raw/` não foi tocado.
+
+---
+
+## [2026-07-09] retroactive fix | Diferenciais de Portfólio para Dev Backend Júnior
+
+**Contexto:** O usuário pediu para transformar a transcrição em MD em `raw/` e ingerir. A transcrição já existia como `raw/diferenciais-portfolio-backend-junior.md` e já tinha sido processada como `wiki/sources/diferenciais-portfolio-backend-junior.md` (ambos commitados no commit inicial `efce70d`), com os 9 conceitos relacionados já criados e backlinkados. Em vez de duplicar, foi feito um sweep de lint focado nessa fonte — mesmo padrão de drift já visto em outras fontes desse commit inicial: passos 1–5 do workflow completos, passos 6–7 (indexação e log) nunca executados.
+
+**Achados corrigidos:**
+- `wiki/index.md` — fonte nunca constava em Sources; adicionada. 6 dos 9 conceitos citados pela source (`portfolio-backend-junior`, `docker-portfolio`, `documentacao-api-swagger`, `error-handling-estruturado`, `sql-alem-do-basico`, `curriculo-vs-portfolio`) nunca tinham entrada no índice — adicionados à seção Concepts
+- `wiki/concepts/comparacao-na-carreira.md` — listado nos "Conceitos tocados" da source mas não citava a source de volta (backlink faltando); adicionada linha em Key Sources e `source_count` 3 → 4
+- `wiki/sources/diferenciais-portfolio-backend-junior.md` — `source_file` apontava para o path do repo antigo (`/home/nemomartins/Documentos/new/dev-study/...`); corrigido para o path atual (`/home/gabriel-martins/Documentos/dev-brain/...`)
+
+**Notas:** Nenhum conteúdo novo foi extraído da transcrição em si — o texto colado é idêntico ao já processado (mesmo conteúdo, só que em fala bruta em vez da versão já estruturada salva em `raw/`). O trabalho aqui foi puramente de reparo de drift, não de ingest. `raw/` não foi tocado.

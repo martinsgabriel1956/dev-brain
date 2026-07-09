@@ -4,7 +4,7 @@ title: "Diferenciais de Portfólio para Dev Backend Júnior"
 aliases: ["diferenciais backend junior", "portfólio backend primeira vaga"]
 date_created: 2026-04-25
 date_updated: 2026-04-25
-source_file: "/home/nemomartins/Documentos/new/dev-study/raw/diferenciais-portfolio-backend-junior.md"
+source_file: "/home/gabriel-martins/Documentos/dev-brain/raw/diferenciais-portfolio-backend-junior.md"
 source_url: ""
 author: ""
 date_published: 2026-04-25
