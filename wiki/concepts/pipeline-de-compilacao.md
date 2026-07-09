@@ -3,8 +3,8 @@ type: concept
 title: "Pipeline de Compilação"
 aliases: ["compilation pipeline", "fases do compilador", "GCC phases"]
 date_created: 2026-05-02
-date_updated: 2026-05-02
-source_count: 1
+date_updated: 2026-07-09
+source_count: 3
 tags: [compilacao, gcc, toolchain, sistemas, assembly]
 skill: lang-systems
 status: stable
@@ -61,6 +61,16 @@ Cada fase é um programa separado e plugável. Isso permite:
 
 O ponto de encontro entre linguagens é o [[concepts/object-file]] — formato binário neutro que o linker entende. Linguagens diferentes geram object files compatíveis para a mesma arquitetura, permitindo que o [[concepts/toolchain]] as combine.
 
+## Relação com o pipeline de front-end (lexer → codegen)
+
+As 4 fases acima (pré-processamento, compilação, montagem, linking) são a visão de **toolchain/CLI** — como o GCC organiza binários separados no disco. Dentro da fase 2 ("Compilação", `cc1`), existe um segundo pipeline, mais granular, que é o que efetivamente traduz C pré-processado em assembly: análise léxica → análise sintática (AST) → análise semântica (tabela de símbolos, checagem de tipos) → representação intermediária (IR) → otimização → geração de código. Ver [[wiki/concepts/compilador]] para o detalhamento desse pipeline interno. Os dois níveis não são concorrentes: o pipeline de 4 fases do GCC é sobre *quais programas rodam e em que ordem*; o pipeline de 6 estágios é sobre *o que acontece dentro do estágio de compilação propriamente dito*.
+
+## Backend plugável via LLVM
+
+Em vez de implementar a fase de otimização/geração de código do zero, uma linguagem pode gerar sua própria representação intermediária (IR) e delegar a partir daí para o [[wiki/entities/llvm]], que cuida de otimização e geração de código nativo para várias arquiteturas. É o mesmo princípio de "cada fase plugável" descrito acima, só que com um backend de terceiros assumindo as fases finais. Rust e Swift usam esse modelo.
+
 ## Key Sources
 
 - [[sources/como-multiplas-linguagens-vivem-num-unico-binario]]
+- [[wiki/sources/como-criar-uma-linguagem-de-programacao]] — LLVM como backend plugável; visão do pipeline sob a ótica de quem projeta uma linguagem nova, não só de quem compila C
+- [[wiki/sources/como-um-compilador-transforma-codigo-em-instrucoes-de-maquina]] — pipeline interno de 6 estágios (lexer → parser → semântica → IR → otimização → codegen) que roda dentro da fase de "Compilação" deste pipeline de 4 fases

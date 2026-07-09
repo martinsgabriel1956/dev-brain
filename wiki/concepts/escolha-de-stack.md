@@ -3,8 +3,8 @@ type: concept
 title: "Escolha de Stack"
 aliases: ["escolher stack", "stack choice", "framework batteries included", "escolha de framework"]
 date_created: 2026-07-07
-date_updated: 2026-07-07
-source_count: 1
+date_updated: 2026-07-09
+source_count: 2
 tags: [stack, framework, projetos, mvp, saas, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -38,11 +38,17 @@ Comparados a um setup mais nu como **Node + Express**, que entrega menos coisas 
 - **Single-page application** → um framework como Next.js pode fazer mais sentido
 - **Backend computacionalmente pesado** → Python ou JavaScript podem não ser a escolha ideal
 
+## A Dicotomia Formalizada pela Tríade Retorno-Risco-Liquidez
+
+O [[wiki/concepts/avaliar-hype-tecnologico]] explica *por que* essa dicotomia aprender-vs-monetizar existe: aprender tecnologia nova é uma aposta de retorno-conhecimento, viável com risco controlado (ex.: projeto pessoal sem expectativa financeira); monetizar exige retorno financeiro real, o que empurra a escolha para tecnologia já dominada, de risco/liquidez conhecidos.
+
 ## Ver Também
 
 - [[wiki/concepts/checklist-primeiro-dia-projeto]] — a escolha de stack é o primeiro passo do checklist
 - [[wiki/concepts/mvp]] — a stack escolhida deve servir o MVP, não o produto final imaginado
+- [[wiki/concepts/avaliar-hype-tecnologico]] — modelo de decisão para adotar tecnologia emergente/hype
 
 ## Key Sources
 
 - [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]
+- [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]]

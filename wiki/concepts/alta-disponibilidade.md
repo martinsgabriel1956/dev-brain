@@ -3,8 +3,8 @@ type: concept
 title: "Alta Disponibilidade"
 aliases: ["HA", "High Availability", "Alta Disponibilidade Cloud"]
 date_created: 2026-05-06
-date_updated: 2026-05-06
-source_count: 1
+date_updated: 2026-07-09
+source_count: 2
 tags: ["alta-disponibilidade", "resiliência", "aws", "arquitetura", "sre"]
 skill: tech-mentor-infra
 status: stub
@@ -49,3 +49,4 @@ O design com mínimo de **3 AZs por região** existe especificamente para suport
 ## Key Sources
 
 - [[wiki/sources/aws-infraestrutura-global]]
+- [[wiki/sources/10-conceitos-fundamentais-backend]] — framing didático agnóstico de cloud: disponibilidade como "continuar rodando mesmo quando acontecem falhas", via load balancer que não manda tráfego a instância travada e deploy que não derruba todas as máquinas ao mesmo tempo

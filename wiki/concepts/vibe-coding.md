@@ -3,8 +3,8 @@ type: concept
 title: "Vibe Coding"
 aliases: ["vibe coding", "vibe-coding", "coding por vibração", "agentic coding", "orquestração de agentes"]
 date_created: 2026-04-23
-date_updated: 2026-07-03
-source_count: 3
+date_updated: 2026-07-09
+source_count: 5
 tags: [vibe-coding, agentes-ia, produtividade, divida-cognitiva, ai-brainfry, paralelismo-cognitivo]
 skill: tech-mentor-ai
 status: stable
@@ -103,6 +103,14 @@ LLMs geram código para o caminho feliz. Os problemas invisíveis em dev que exp
 
 Quem não sabe verificar esses problemas não consegue revisar o código que a IA gerou. Ver [[sources/apagao-de-seniors-vibe-coding]] para técnicas práticas de detecção.
 
+## Vibe Coding como Hype em Formação
+
+Citado como exemplo de hype tecnológico em formação (junto com MCP) no momento de [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]] — um assunto que "pipocava" repetidamente em múltiplos canais simultaneamente. Ver [[wiki/concepts/avaliar-hype-tecnologico]] para o modelo de decisão sobre quando vale a pena embarcar num hype como este.
+
+## "Specs to Code" É Vibe Coding com Outro Nome
+
+[[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] argumenta que o movimento "specs to code" (nunca olhar o código gerado, só editar a especificação e reexecutar) é, na prática, vibe coding disfarçado de disciplina: mesmo padrão de decadência progressiva do código a cada rodada, só que sem a sensação óbvia de estar "no flow". A saída proposta pelo autor não é abandonar [[wiki/concepts/spec-driven-development|SDD]], mas reintroduzir disciplina de design — [[wiki/entities/fred-brooks|design concept]] compartilhado, [[wiki/concepts/ddd|linguagem ubíqua]] e [[wiki/concepts/modulo-profundo|módulos profundos]] — antes de qualquer geração de código.
+
 ## Key Sources
 
 - [[sources/divida-cognitiva-ai-brainfry]]
@@ -111,3 +119,5 @@ Quem não sabe verificar esses problemas não consegue revisar o código que a I
 - [[sources/roadmap-dev-senior-2026]] — pilar 5: ciclo de degradação via IA → ver [[concepts/ia-ciclo-dependencia]]
 - [[sources/por-que-devs-nao-terminam-projetos]] — vibe coding elimina o mecanismo de luta → ver [[concepts/aprendizado-por-luta]]
 - [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — onde vibe coding brilha (MVP, docs, testes) vs. onde exige julgamento humano (arquitetura, segurança, contexto de negócio)
+- [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]] — citado como exemplo de hype em formação, no momento do vídeo
+- [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] — "specs to code" como vibe coding disfarçado

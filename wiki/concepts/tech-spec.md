@@ -3,8 +3,8 @@ type: concept
 title: "Tech Spec (Especificação Técnica)"
 aliases: ["tech spec", "especificação técnica", "technical specification sdd"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 2
+date_updated: 2026-07-09
+source_count: 3
 tags: [spec-driven, tech-spec, planejamento, documentacao, harness]
 skill: tech-mentor-ai
 status: stable
@@ -55,7 +55,12 @@ Cada tarefa derivada da Tech Spec deve ser pequena o suficiente para:
 - Ser reexecutável isoladamente se interrompida
 - Ser verificável com um critério de aceite claro
 
+## Especificar Mudanças de Módulo e Interface, Não Só Endpoints
+
+[[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] acrescenta um item concreto ao "O que Contém": a tech spec deve ser específica sobre **quais [[wiki/concepts/modulo-profundo|módulos]] mudam e como suas interfaces são modificadas** — não só contratos de API externos, mas as fronteiras internas entre módulos profundos da aplicação. Citando Kent Beck ("invista no design do sistema todos os dias"), o argumento é que ignorar essas fronteiras na spec é o que faz o "specs to code" desinvestir do design em vez de investir nele a cada mudança.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-04-agentes-planejamento]]
 - [[wiki/sources/formacao-ia-devs-aula-05-qa]]
+- [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]

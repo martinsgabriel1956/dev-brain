@@ -3,9 +3,9 @@ type: entity
 title: "Fred Brooks"
 aliases: ["fred brooks", "Frederick Brooks", "No Silver Bullet", "Mythical Man-Month"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
-source_count: 1
-tags: [fred-brooks, essential-complexity, accidental-complexity, software-engineering, mythical-man-month]
+date_updated: 2026-07-09
+source_count: 2
+tags: [fred-brooks, essential-complexity, accidental-complexity, software-engineering, mythical-man-month, design-concept]
 skill: tech-mentor-system-design
 status: stable
 ---
@@ -24,6 +24,8 @@ Frederick P. Brooks Jr. (1931–2022) — cientista da computação americano, g
 
 Argumento central: não existe bala de prata em software porque a maior parte da dificuldade é complexidade essencial — nenhuma linguagem, ferramenta ou metodologia pode remover o que é inerente ao domínio.
 
+**"The Design of Design" (2010)** — introduz a ideia de **design concept**: quando mais de uma pessoa projeta algo junto, existe uma teoria compartilhada e invisível do que está sendo construído flutuando entre elas — não é um artefato, não cabe num documento, mas precisa ser genuinamente compartilhada antes de qualquer plano fazer sentido. [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] aplica essa ideia à colaboração humano-IA: a causa de "a IA não fez o que eu queria" é a ausência de um design concept compartilhado entre dev e IA, resolvida forçando uma fase de entrevista adversarial (percorrendo "cada ramo da árvore de decisão de design") antes de qualquer PRD ou plano.
+
 ## Citação central
 
 > "The hardest single part of building a software system is deciding precisely what to build. No other part of the conceptual work is so difficult to establish, or so prone to causing the disaster if not done right."
@@ -37,3 +39,4 @@ Argumento central: não existe bala de prata em software porque a maior parte da
 ## Key Sources
 
 - [[sources/conceitos-que-ninguem-ensina]]
+- [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]

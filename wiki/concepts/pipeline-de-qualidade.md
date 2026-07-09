@@ -3,8 +3,8 @@ type: concept
 title: "Pipeline de Qualidade"
 aliases: ["quality pipeline", "pipeline de código", "ci quality gates"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 1
+date_updated: 2026-07-09
+source_count: 2
 tags: [pipeline-de-qualidade, harness, qualidade, ci-cd, testes, segurança, era-agentica]
 skill: tech-mentor-backend
 status: stable
@@ -77,7 +77,12 @@ Hoje é mais fácil do que nunca criar o ferramental completo:
 - A IA gera o YAML; você revisa as regras de negócio
 - Uma vez configurado, a pipeline roda para todo código gerado pela mesma IA
 
+## Exemplo — Quality Gate de Qualidade de Modelo (não só de código)
+
+Um quality gate não precisa se limitar a lint/tipagem/segurança de código — pode validar a qualidade de um *modelo de ML* embarcado no produto. Exemplo real: um app de transcrição por voz (Persua) mantém dois áudios de referência (um gravado por humano, um gerado por IA) a partir do mesmo texto-alvo. Todo PR aciona um workflow de CI que roda os modelos Whisper locais do projeto contra esses áudios, compara a transcrição gerada com o texto-alvo, calcula uma nota de qualidade e **falha o teste (bloqueando o merge) se a nota cair abaixo de um baseline definido**. Combinado com um segundo gate de qualidade de código (lint, duplicação, complexidade ciclomática), esse padrão permitiu ao autor delegar uma tarefa inteira a um agente — inclusive deixá-lo rodar sem supervisão por horas — com confiança de que nem dívida técnica nem regressão de qualidade do modelo passariam despercebidas.
+
 ## Key Sources
 
 - [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
+- [[wiki/sources/html-vs-markdown-para-agentes-de-ia]] — exemplo concreto de quality gate para qualidade de transcrição (Whisper local), não apenas para qualidade de código

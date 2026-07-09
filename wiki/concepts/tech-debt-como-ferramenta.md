@@ -3,8 +3,8 @@ type: concept
 title: "Tech Debt como Ferramenta"
 aliases: ["tech debt deliberado", "dívida técnica estratégica", "ship with debt"]
 date_created: 2026-04-26
-date_updated: 2026-06-02
-source_count: 3
+date_updated: 2026-07-09
+source_count: 5
 tags: [tech-debt, carreira, craftsmanship, estrategia, velocidade]
 skill: tech-mentor-leadership
 status: draft
@@ -47,11 +47,21 @@ Tech debt não é sinônimo de código ruim — é uma **decisão financeira con
 
 A maioria das features falha. Não construa uma catedral para algo que pode ser demolido no mês que vem.
 
+## Pagando o Debt Inadvertido — Boy Scout Rule
+
+O quadrante de Fowler descreve como *tomar* debt conscientemente. Para o debt inadvertido que se acumula de qualquer forma (código que degrada com o tempo mesmo sem decisão explícita), a estratégia de pagamento contínuo mais citada é a [[wiki/concepts/boy-scout-rule]]: deixar o código um pouco mais limpo a cada mudança, em vez de esperar por um projeto de refactoring dedicado.
+
+## Leitura via Tríade Retorno-Risco-Liquidez
+
+O [[wiki/concepts/avaliar-hype-tecnologico]] descreve o mesmo raciocínio com outro vocabulário: tomar tech debt (ou over-engineering, ou adotar uma tecnologia hype) sempre significa aceitar risco alto e liquidez baixa — a decisão só é boa se a rentabilidade esperada compensar esses dois eixos ruins. Uma dívida tomada sem retorno proporcional é, nesse modelo, simplesmente um mau negócio, e é isso que separa debt Prudente+Deliberado de debt Imprudente.
+
 ## Relacionado
 
-[[concepts/observabilidade]] · [[sources/conceitos-que-ninguem-ensina]]
+[[concepts/observabilidade]] · [[sources/conceitos-que-ninguem-ensina]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/avaliar-hype-tecnologico]]
 
 ## Key Sources
 
 - [[sources/5-principios-programador]]
 - [[wiki/sources/5-principles-that-changed-me-as-a-programmer]]
+- [[wiki/sources/5-principios-que-mudaram-como-programador]]
+- [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]]

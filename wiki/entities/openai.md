@@ -42,3 +42,4 @@ Criadora do `tiktoken`, tokenizer BPE oficial da OpenAI (implementação JS: `js
 - [[wiki/sources/gpt3-language-models-are-few-shot-learners]]
 - [[wiki/sources/microsoft-prompt-engineering-guide]]
 - [[wiki/sources/tokens-llm-fundamentos-typescript]]
+- [[wiki/sources/html-vs-markdown-para-agentes-de-ia]] — Prompt Guidance da OpenAI recomenda Markdown estruturado (não HTML); mantém ferramenta própria de otimização de prompt por modelo

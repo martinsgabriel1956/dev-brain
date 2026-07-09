@@ -3,8 +3,8 @@ type: concept
 title: "Comunicação Persuasiva"
 aliases: ["gatilhos mentais", "venda de ideia técnica", "persuasão técnica"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 1
+date_updated: 2026-07-09
+source_count: 2
 tags: [comunicacao, persuasao, soft-skills, carreira, negociacao]
 skill: tech-mentor-leadership
 status: draft
@@ -33,12 +33,18 @@ Gatilhos emocionais bem aplicados aceleram a decisão, mas dependem de a alegaç
 
 O enquadramento de "gatilhos emocionais" (urgência/ganância) é uma versão simplificada do que a literatura de liderança técnica chama de *managing up* — negociar tempo para débito técnico traduzindo sempre para velocidade e risco, nunca para "dívida técnica" em si. Exemplo do framework: em vez de "precisamos de um sprint para pagar dívida técnica", "o módulo X causa 3h extras por feature nova; no próximo trimestre isso custa Nh; com 1 sprint agora, eliminamos esse custo e o risco de incidente que já ocorreu 2x". `[skill: tech-mentor-leadership]` A diferença é que managing up pede dados concretos (custo, horas, incidentes passados) em vez de apelar puramente à emoção — mais rigoroso e menos manipulável do que os dois gatilhos descritos na fonte de Renato Augusto.
 
+## Aplicação em marketing de produto
+
+O mesmo princípio — não expor o argumento cru, traduzi-lo para a moeda que o público realmente valoriza — aparece fora do contexto interno de empresa em [[wiki/concepts/marketing-organico-viral]]: uma sketch de produto que se apresenta abertamente como propaganda falha em persuadir; ela só funciona quando não parece propaganda. É a mesma lógica de "gatilho emocional bem aplicado depende de a alegação de fundo ser verdadeira" — a sketch só viraliza de forma sustentável se o produto realmente entrega o que a peça sugere.
+
 ## Ver também
 
 - [[wiki/concepts/comunicacao-tecnica]] — princípio geral de que a tradução é responsabilidade de quem fala
 - [[wiki/concepts/habilidade-de-lidar-com-pessoas]] — persuasão é um caso aplicado de influência interpessoal
 - [[wiki/concepts/soft-skills]]
+- [[wiki/concepts/marketing-organico-viral]] — mesma lógica de tradução de mensagem aplicada a marketing de produto para consumidor
 
 ## Key Sources
 
 - [[wiki/sources/3-soft-skills-que-poucos-programadores-dominam]]
+- [[wiki/sources/como-vender-um-saas-sem-audiencia]]

@@ -3,8 +3,8 @@ type: concept
 title: "Arquitetura de Software"
 aliases: ["software architecture", "decisao arquitetural"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-07-09
+source_count: 3
 tags: [arquitetura, carreira, fundamentos, ia]
 skill: tech-mentor-leadership
 status: draft
@@ -36,9 +36,14 @@ Perguntar para uma IA "que arquitetura eu uso?" com um prompt enxuto não substi
 - *Designing Data-Intensive Applications* (Martin Kleppmann) — sistemas distribuídos, o livro que "separa júnior de sênior" nesse tema
 - *Domain-Driven Design* (Eric Evans) e *A Philosophy of Software Design* (John Ousterhout) — tradução de domínio de negócio em modelo de código, ver [[wiki/concepts/entendimento-de-dominio]]
 
-Nenhum desses livros foi lido/ingerido diretamente ainda no wiki — são citações de segunda mão a partir da fonte abaixo.
+Nenhum desses livros foi lido/ingerido diretamente ainda no wiki — são citações de segunda mão a partir da fonte abaixo. **Atualização:** *A Philosophy of Software Design* passou a ter citação de primeira mão (ainda que via palestra, não o livro em si) em [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] — ver [[wiki/entities/john-ousterhout]] e [[wiki/concepts/modulo-profundo]].
+
+## Módulos Profundos: a Unidade Estrutural que Decide se a Arquitetura Escala
+
+[[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] concretiza "decisões de estrutura que escalam bem vs. geram bola de neve" (frase de abertura desta página) com o conceito de Ousterhout: poucos módulos grandes com interface simples ([[wiki/concepts/modulo-profundo|módulos profundos]]) escalam; muitos módulos pequenos com interfaces complexas (módulos rasos) geram a bola de neve. Na era da IA isso ganha um segundo motivo para importar: agentes de IA navegam mal bases de código com módulos rasos, e produzem módulos rasos por padrão quando não há uma interface bem projetada guiando a implementação.
 
 ## Key Sources
 
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]]
 - [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — fatores de contexto de negócio e organizacional que uma decisão arquitetural precisa considerar
+- [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] — módulos profundos como unidade estrutural concreta

@@ -49,6 +49,7 @@ Demonstração via [[entities/vercel-ai-sdk]] com Claude 3.5 Haiku: o prompt `"H
 
 ## Key Sources
 
+- [[wiki/sources/html-vs-markdown-para-agentes-de-ia]] — citada de passagem como tendo "divulgado algo parecido" sobre preferir HTML a Markdown na saída de agentes; a fonte não linka o material original, então tratar como não verificado
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]

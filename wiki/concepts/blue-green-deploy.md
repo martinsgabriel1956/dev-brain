@@ -3,8 +3,8 @@ type: concept
 title: "Blue/Green Deploy"
 aliases: ["blue green", "blue-green deployment", "swap de ambiente"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-09
+source_count: 2
 tags: [devops, deploy, cicd, kubernetes, rollback, infra]
 skill: tech-mentor-infra
 status: stable
@@ -61,6 +61,11 @@ spec:
 
 → [[concepts/deploy-strategies]]
 
+## Por que o rollback é tão rápido
+
+A versão antiga (Blue) continua de pé, rodando em paralelo, mesmo depois do swap — rollback é literalmente redirecionar o tráfego de volta, sem precisar reverter código nem refazer deploy. Essa é a vantagem central que o distingue do [[concepts/rolling-update]] (rollback lento, pod a pod) e justifica pagar o custo de 2x infraestrutura durante a janela de transição.
+
 ## Key Sources
 
 - [[sources/blue-green-canary-rolling]]
+- [[sources/tipos-de-deploy]]

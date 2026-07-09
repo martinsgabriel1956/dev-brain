@@ -3,8 +3,8 @@ type: concept
 title: "Canary Release"
 aliases: ["canary deploy", "canary release", "lançamento canário"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-09
+source_count: 2
 tags: [devops, deploy, cicd, canary, observabilidade, argo-rollouts, infra]
 skill: tech-mentor-infra
 status: stable
@@ -69,6 +69,14 @@ Observabilidade madura. Sem métricas confiáveis, análise automática não fun
 
 v1 e v2 servem ao mesmo tempo. API e DB schema **devem** ser backward compatible. → [[concepts/expand-contract]]
 
+## Canary Deployment vs. Canary Release (feature flag)
+
+Existe uma segunda forma de "Canary" que não é essa estratégia de infraestrutura: em vez de duas instâncias, você segrega usuários em grupos e mostra uma feature escondida atrás de uma [[concepts/feature-flags|feature flag]] para uma fração deles (o que a Meta chama de "massive rollout at massive scale"). Tecnicamente isso é um **release** gradual, não um **deploy** gradual — ver [[concepts/deploy-vs-release]]. O termo "Canary deployment" tradicionalmente se refere à versão com instâncias/tráfego separado descrita acima.
+
+## Canary vs. A/B Testing
+
+Mecanicamente parecido (split de tráfego por percentual), mas o objetivo é diferente: Canary reduz **risco técnico** (a v2 quebra alguma coisa?); [[concepts/ab-testing-deployment]] valida **hipótese de negócio** (a v2 vende/converte mais?). Ver essa página para o comparativo completo.
+
 ## Comparativo
 
 → [[concepts/deploy-strategies]]
@@ -76,3 +84,4 @@ v1 e v2 servem ao mesmo tempo. API e DB schema **devem** ser backward compatible
 ## Key Sources
 
 - [[sources/blue-green-canary-rolling]]
+- [[sources/tipos-de-deploy]]

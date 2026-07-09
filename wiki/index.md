@@ -1,7 +1,9 @@
 ---
 type: index
-date_updated: 2026-07-07
+date_updated: 2026-07-09
 ---
+
+
 
 # Wiki Index
 
@@ -9,6 +11,8 @@ date_updated: 2026-07-07
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/html-vs-markdown-para-agentes-de-ia]] | HTML vs. Markdown como formato de saída de agentes — maior densidade de informação vs. ~20x mais tokens; mais um quality gate real de CI para qualidade de transcrição (Whisper local) |
+| [[wiki/sources/como-vender-um-saas-sem-audiencia]] | Build in public já era: viralizar sketch sem parecer propaganda, feature vendível desde o dia zero, conhecer LTV antes do CAC, ser usuário do próprio produto |
 | [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] | André Casciotti: não peça permissão, separe mudanças em partes coesas, use automações pessoais como veículo de prática de baixo risco |
 | [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] | 5 passos para reduzir a fricção do primeiro code review: regra de negócio antes de estilo, revisar com IA sem virar dependência, testar em ambiente externo, não levar comentários pro pessoal, validar em produção |
 | [[wiki/sources/pare-de-terceirizar-suas-decisoes]] | Akita: pare de terceirizar decisões de carreira para influencers e de parar de cargo-cultar stack de big tech — skin in the game, antifragilidade e custo afundado |
@@ -67,6 +71,7 @@ date_updated: 2026-07-07
 | [[wiki/sources/formacao-ia-devs-aula-04-agentes-planejamento]] | SDD completo: Agente PRD → Tech Spec → Tarefas isoladas; PRD é para a IA, não para a empresa |
 | [[wiki/sources/formacao-ia-devs-aula-05-qa]] | Q&A: Resume retoma onde parou, padrões de arquitetura ficam em rules, SDD funciona para refactoring e migrações |
 | [[wiki/sources/5-principles-that-changed-me-as-a-programmer]] | Logs estruturados são infraestrutura crítica; tech debt Prudente+Deliberado é válido; naming é custo cognitivo permanente |
+| [[wiki/sources/5-principios-que-mudaram-como-programador]] | Boy Scout Rule, evitar otimização prematura, código para o mantenedor, YAGNI e "faça a coisa mais simples que poderia funcionar" (XP) |
 | [[wiki/sources/cinco-praticas-seguranca-pragmatic-programmer]] | 5 práticas do Pragmatic Programmer: superfície de ataque, menor privilégio, defaults seguros, criptografia, updates — e nunca credencial no código |
 | [[wiki/sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]] | Gatekeeper centraliza entrada, Valet Key emite credenciais temporárias, Token Relay propaga identidade — segurança nasce no design da arquitetura |
 | [[wiki/sources/papinho-tech-solo-aprender-a-aprender]] | Entender ≠ aprender — EAD cria ilusão de fluência; autoconsciência de como você aprende é a variável que o professor não controla |
@@ -81,6 +86,7 @@ date_updated: 2026-07-07
 | [[wiki/sources/como-sistemas-operacionais-funcionam]] | Do clique duplo à primeira tela: processos, threads, escalonador, memória virtual, sistema de arquivos e syscalls — tudo em milissegundos |
 | [[wiki/sources/como-arquitetar-com-cache-e-redis]] | Redis como solução de cache: o que é, pontos fortes e fracos, e três padrões arquiteturais — Feature Flags, Cache-Aside e CQRS com Redis como read layer |
 | [[wiki/sources/10-conceitos-fundamentais-computacao]] | Os 10 conceitos base de toda computação — do binário à abstração; a fundação que não muda mesmo quando linguagens e frameworks mudam |
+| [[wiki/sources/9-algoritmos-que-todo-programador-deveria-saber]] | Nove algoritmos em três categorias — ordenação (Bubble, Insertion, Merge), busca (Linear, Binary) e grafo (DFS, BFS, Dijkstra, A*) |
 | [[wiki/sources/escalabilidade-vertical-horizontal-system-design]] | Vertical vs horizontal, Load Balancer, stateless, CDN, auto scaling, sharding, replicação — quando e como escalar cada camada |
 | [[wiki/sources/the-comparison-trap-in-programming-careers]] | Bastidor vs palco + familiaridade vs capacidade — as duas formas de comparação que destroem iniciantes; quatro estratégias para medir evolução contra si mesmo |
 | [[wiki/sources/tokens-llm-fundamentos-typescript]] | Tokens em LLMs explicados via TypeScript — encode/decode, treino de tokenizer, trade-off de vocabulário, palavras raras custam mais tokens |
@@ -105,6 +111,17 @@ date_updated: 2026-07-07
 | [[wiki/sources/produtividade-falsa-vs-verdadeira]] | Ativo vs. produtivo, Pareto 80/20, eficácia antes de eficiência, e a técnica da "pergunta do ataque cardíaco" (Tim Ferriss) para achar as poucas tarefas de real impacto |
 | [[wiki/sources/apagao-de-seniors-vibe-coding]] | Vibe coding pode gerar um apagão de sêniors; kit de sobrevivência técnico contra os 4 pilares que a IA ignora — N+1 detector, property-based testing para race conditions, memory profiling, dependency/secret scanning |
 | [[wiki/sources/react-19-memoization-sem-usememo-usecallback]] | React Compiler (React 19) automatiza a memoização que antes exigia useMemo/useCallback manuais; hooks manuais sobrevivem só em casos de borda (libs de terceiros, código fora das Rules of Hooks) |
+| [[wiki/sources/como-criar-uma-linguagem-de-programacao]] | As 7 decisões encadeadas para criar uma linguagem: propósito → gramática/EBNF → lexer/parser/AST → sistema de tipos → modelo de execução (interpretador/nativo/bytecode+VM+JIT) → gerenciamento de memória → stdlib/ecossistema/LSP; Crafting Interpreters como recurso prático |
+| [[wiki/sources/como-eu-investiria-como-programador-ate-50000]] | Lucas Montano: finanças pessoais por faixa salarial de dev (até R$ 50.000) — abaixo de R$ 5.000 investir em si mesmo bate qualquer renda fixa; reserva de emergência, dolarização via bonds, tributação de PJ e diversificação de RSU nas faixas mais altas |
+| [[wiki/sources/10-conceitos-fundamentais-backend]] | As 10 ideias que sustentam qualquer backend profissional, em ordem crescente de importância: requisição/resposta → contrato de API → validação → autenticação/autorização → modelagem de dados → transações → cache → filas/workers → escala/disponibilidade → observabilidade (o meta-conceito que amarra todos) |
+| [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]] | Filipe Deschamps (TabNews): a tríade retorno-risco-liquidez dos investimentos aplicada a hype tecnológico — caso real Node.js no Pagar.me vs. C# na Stone, e a postura de nunca entrar num hype buscando só retorno financeiro |
+| [[wiki/sources/sistemas-de-arquivos-explicados]] | Panorama cronológico de sistemas de arquivos: FAT12→FAT16→FAT32→exFAT (Microsoft), HFS→HFS+→APFS (Apple), ext2→ext3→ext4 (Linux) e ZFS — cada geração resolve o limite de tamanho ou a falta de journaling/checksum da anterior |
+| [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] | Matt Pocock: "código não é barato" — specs to code sem inspeção degenera em vibe coding; design concept compartilhado, linguagem ubíqua, TDD e módulos profundos como antídoto |
+| [[wiki/sources/tipos-de-deploy]] | Deploy vs. release, deploy manual vs. automático (a diferença é o gatilho), e seis estratégias: Recreate, Rolling, Blue/Green, Canary, A/B e Shadow deployment |
+| [[wiki/sources/desenvolvedor-acima-da-media-10-itens]] | 10 itens do checklist "Liro Boy" (60 itens) para se destacar como sênior: entender o negócio, ownership proativo, contratação com barra alta, mentoria, 1:1s, PoC antes de produção, flexibilidade técnica, Extreme Ownership, trazer solução junto do problema |
+| [[wiki/sources/como-um-compilador-transforma-codigo-em-instrucoes-de-maquina]] | Pipeline de 6 estágios de um compilador — lexing, parsing (AST), análise semântica (tabela de símbolos), IR, otimização (constant folding, DCE, loop unrolling, inlining) e geração de código (alocação de registradores); compilador vs. interpretador vs. JIT |
+| [[wiki/sources/pub-sub-message-queue-bullmq-na-pratica]] | Pub/Sub publica um fato, message queue publica um trabalho — distinção pelo modelo de dependência (quem depende de quem); quickstart de BullMQ com producer/worker sobre Redis |
+| [[wiki/sources/como-evitar-over-engineering-david-farley]] | Refuta o "triângulo de ferro" com dados DORA/Accelerate; maior problema da indústria é under-engineering, não over-engineering; walking skeleton do LMAX como antídoto contra resolver requisitos não-funcionais cedo demais |
 
 ## Concepts
 
@@ -171,6 +188,19 @@ date_updated: 2026-07-07
 | [[wiki/concepts/comunicacao-persuasiva]] | Vender decisão técnica (refatoração) com gatilhos de urgência/ganância em linguagem de negócio, não em jargão técnico |
 | [[wiki/concepts/imagem-profissional]] | Aparência mesmo em home office afeta autopercepção e percepção alheia de liderança — evidência citada é fraca/não rastreável |
 | [[wiki/concepts/habilidade-de-lidar-com-pessoas]] | Confiança e influência interpessoal (Dale Carnegie) como maior alavanca de sucesso profissional segundo Renato Augusto — estatística 85/15 sem fonte primária rastreável |
+| [[wiki/concepts/reserva-de-emergencia]] | Colchão de liquidez de ~3 meses via Tesouro Selic — não maximiza retorno, existe para permitir assumir riscos de carreira sem risco de ruína |
+| [[wiki/concepts/freelance-como-alavanca-de-renda]] | Um freela de R$ 500 aumenta renda mensal em 1/3 quando a base é baixa — retorno que nenhuma renda fixa entrega no mesmo prazo |
+| [[wiki/concepts/dolarizacao-de-renda]] | Diluir risco político/cambial via bonds corporativos em dólar (nota de crédito externo) sem precisar de conta no exterior |
+| [[wiki/concepts/holding-patrimonial]] | Estrutura societária para múltiplas PJs/fontes de renda em faturamento alto — estratégias de tributação impossíveis via CPF pessoa física |
+| [[wiki/concepts/dev-e-negocio]] | Dev acima da média entende o que gera receita (ou economiza custo) e opera nessa camada de negócio, não só na técnica |
+| [[wiki/concepts/ownership-proativo]] | Puxar responsabilidade por um projeto de alto impacto antes que caia no colo — com clareza prévia do que é sucesso |
+| [[wiki/concepts/contratacao-barra-alta]] | Envolver-se no processo de contratação e filtrar pela pessoa que mais faz bem à empresa — decide o jogo de longo prazo do time |
+| [[wiki/concepts/mentoria-tecnica]] | Sênior que replica conhecimento para júniors acelera o crescimento deles e preserva a cultura técnica ao longo do tempo |
+| [[wiki/concepts/one-on-one]] | Reunião individual cara a cara em sala fechada — mecanismo principal para descobrir o que reuniões de status não revelam |
+| [[wiki/concepts/prova-de-conceito]] | Testar tecnologia emergente em protótipo pequeno antes de arriscar produto consolidado — mata a ansiedade sem colocar valor em risco |
+| [[wiki/concepts/flexibilidade-tecnica]] | Aceitar múltiplas visões e soluções válidas — inflexibilidade trava inovação e tira espaço de crescimento de outros |
+| [[wiki/concepts/extreme-ownership]] | Jocko Willink/Leif Babin: o líder é responsável por tudo que acontece no time — sem desculpas, sem terceirizar culpa |
+| [[wiki/concepts/problema-com-solucao]] | Trazer problema ao gestor sempre com uma sugestão de solução — distingue quem quer resolver de quem só reclama |
 
 ### Produto & Lean Startup
 
@@ -183,6 +213,9 @@ date_updated: 2026-07-07
 | [[wiki/concepts/contabilizacao-de-inovacao]] | Consolidar faturamento, retenção e monetização depois que o produto já está validado |
 | [[wiki/concepts/pivotar-ou-perseverar]] | Decisão entre mudar de direção ou dobrar a aposta — possível sem trauma porque a paixão é pelo problema, não pela solução |
 | [[wiki/concepts/inovacao-continua]] | Manter a essência validada e adicionar novas frentes sem perdê-la — Uber e iFood como exemplos |
+| [[wiki/concepts/produto-vendivel-desde-o-dia-zero]] | Primeira feature já deve ser vendível — não lançar grátis esperando apego para converter depois |
+| [[wiki/concepts/ltv-cac]] | Não investir em aquisição sem saber o LTV — tráfego "orgânico sintético" também tem custo |
+| [[wiki/concepts/marketing-organico-viral]] | Sketch de produto que viraliza sem parecer propaganda — build in public deixou de ser pré-requisito |
 
 ### Qualidade de Software com IA
 
@@ -199,6 +232,9 @@ date_updated: 2026-07-07
 | [[wiki/concepts/array]] | Acesso O(1) por índice; inserção/remoção no meio é O(n) — use quando a posição importa |
 | [[wiki/concepts/hashmap]] | Acesso O(1) por chave; busca por identificador independente do tamanho da coleção |
 | [[wiki/concepts/fila]] | FIFO — primeiro a entrar, primeiro a sair; filas de jobs, mensageria, BFS |
+| [[wiki/concepts/pub-sub]] | Publisher/subscriber — publica um fato para quem estiver ouvindo; fan-out, desacoplamento total via broker |
+| [[wiki/concepts/mensageria]] | Comunicação assíncrona via broker — queue (consumo único) vs. stream (replay); Kafka, SQS, RabbitMQ |
+| [[wiki/concepts/bullmq]] | Lib de filas para Node.js/Bun sobre Redis — producer/worker como processos independentes, sem chamada de função direta |
 | [[wiki/concepts/pilha]] | LIFO — último a entrar, primeiro a sair; undo, call stack, DFS |
 | [[wiki/concepts/arvore]] | O(log n) por busca; hierarquia natural; base dos índices de banco de dados |
 | [[wiki/concepts/crud-resolvido]] | CRUD simples automatizado pela IA; porta de entrada do júnior fechada; sênior em escassez |
@@ -305,6 +341,7 @@ date_updated: 2026-07-07
 | Página | Hook |
 |---|---|
 | [[wiki/concepts/prompt-engineering]] | Construção sistemática de prompts para elicitar outputs de LLMs — primeira alavanca, barata e iterável |
+| [[wiki/concepts/html-vs-markdown-formato-de-saida-agentes]] | HTML tem maior densidade de informação que Markdown para output de agentes (tabelas, diagramas, interações), ao custo de muito mais tokens — sem consenso ou benchmark formal |
 | [[wiki/concepts/completion]] | Texto gerado pelo modelo em resposta a um prompt — gerado token a token por modelo autoregressivo |
 | [[wiki/concepts/zero-shot-learning]] | Prompt sem exemplos — só instrução; ponto de partida antes de escalar para few-shot |
 | [[wiki/concepts/chain-of-thought]] | Forçar raciocínio passo a passo no prompt — melhora performance em tarefas de lógica e matemática |
@@ -334,6 +371,13 @@ date_updated: 2026-07-07
 | [[wiki/concepts/memoria-virtual]] | Cada processo crê ter toda a memória — page table traduz virtual→físico; page fault é o custo do miss |
 | [[wiki/concepts/swap]] | Extensão da RAM no disco — páginas frias movidas para liberar RAM; uso excessivo causa thrashing |
 | [[wiki/concepts/sistema-de-arquivos]] | Abstração sobre blocos do disco — nomes, hierarquia, tabela de blocos; deletar só remove a referência |
+| [[wiki/concepts/journaling]] | Write-ahead log de disco — registra mudanças antes de aplicá-las; troca throughput por resiliência a queda de energia |
+| [[wiki/concepts/fat32]] | FAT12→FAT16→FAT32: cada geração destrava um limite de tamanho; sobrevive hoje só por compatibilidade universal |
+| [[wiki/concepts/exfat]] | Meio-termo Microsoft entre FAT32 e NTFS — limite de arquivo quase ilimitado, sem journaling; padrão de mídia portátil Win+Mac |
+| [[wiki/concepts/ntfs]] | Sistema de arquivos padrão do Windows — journaling, permissões, criptografia, compressão; fraco fora do ecossistema Windows |
+| [[wiki/concepts/apfs]] | HFS→HFS+→APFS: linhagem Apple, salto de HD para SSD/flash em 2017 — criptografia forte, snapshots |
+| [[wiki/concepts/ext4]] | ext2→ext3→ext4: padrão do Linux, journaling desde o ext3, até 16 TB por arquivo e 1 exabyte por volume |
+| [[wiki/concepts/zfs]] | Sun Microsystems, 2006 — checksums constantes e auto-reparo; prioriza integridade sobre simplicidade, usado em data centers |
 | [[wiki/concepts/syscall]] | Única ponte autorizada user mode → kernel — open/read/write/fork; custo de ~100–300ns por context switch |
 | [[wiki/concepts/kernel]] | Núcleo do SO com acesso total ao hardware — kernel mode vs user mode; kernel panic é fatal porque não há fundação embaixo |
 
@@ -351,6 +395,11 @@ date_updated: 2026-07-07
 | [[wiki/concepts/protocolo-de-rede]] | Regras de comunicação em camadas — HTTP diz o quê, TCP garante entrega, IP define rota |
 | [[wiki/concepts/criptografia]] | Hashing irreversível, simétrica (mesma chave) e assimétrica (par público/privado) — base do HTTPS |
 | [[wiki/concepts/bluetooth-le]] | Advertising → scan → pair → GATT — o "handshake" do Bluetooth Low Energy; gerenciar mal o ciclo gera conexão fantasma e dreno de bateria |
+| [[wiki/concepts/sistema-de-tipos]] | Estática vs. dinâmica vs. inferência — quando os erros de tipo são pegos: compilação ou runtime |
+| [[wiki/concepts/gerenciamento-de-memoria]] | Manual, garbage collector ou ownership (Rust) — a decisão de runtime mais difícil de reverter numa linguagem |
+| [[wiki/concepts/gramatica-formal-ebnf]] | EBNF define o que é sintaticamente válido; precedência e associatividade resolvem ambiguidade (`1 + 2 * 3`) |
+| [[wiki/concepts/language-server-protocol]] | Protocolo da Microsoft que desacopla editor de linguagem — um servidor, N editores com autocomplete e erros inline |
+| [[wiki/concepts/standard-library-e-ecossistema]] | Stdlib, package manager e tooling — o que faz uma linguagem tecnicamente boa sobreviver de fato |
 
 ### Fundamentos de Lógica e Programação
 
@@ -366,6 +415,9 @@ date_updated: 2026-07-07
 | [[wiki/concepts/caminho-feliz]] | Fluxo ideal em que tudo ocorre conforme esperado |
 | [[wiki/concepts/edge-case]] | Cenários fora do fluxo principal que precisam ser tratados explicitamente |
 | [[wiki/concepts/algoritmos-e-estruturas-de-dados]] | A fundação que separa amadores de profissionais — DSA antes de qualquer framework |
+| [[wiki/concepts/algoritmos-de-ordenacao]] | Bubble Sort O(n²), Insertion Sort O(n²)/O(n) melhor caso, Merge Sort O(n log n) estável — não há um melhor universal |
+| [[wiki/concepts/algoritmos-de-busca]] | Linear Search O(n) vs Binary Search O(log n) — a busca binária exige dados já ordenados |
+| [[wiki/concepts/algoritmos-de-grafo]] | DFS, BFS, Dijkstra e A* — do backtrack ingênuo ao roteamento com heurística do Google Maps |
 | [[wiki/concepts/repertorio]] | Acúmulo de experiência prática que gera reconhecimento de padrões e intuição — o terceiro pilar da competência |
 | [[wiki/concepts/string]] | Slice de bytes + charset + encoding — imutável porque alterar bytes quebra UTF-8 silenciosamente |
 | [[wiki/concepts/charset]] | Mapeamento valor numérico → caractere; distinto de encoding (que é o algoritmo de serialização) |
@@ -427,6 +479,35 @@ date_updated: 2026-07-07
 | [[wiki/concepts/gargalo]] | Ponto mais lento da cadeia — identificar antes de escalar qualquer coisa |
 | [[wiki/concepts/cap-theorem]] | Consistência vs Disponibilidade vs Partição — o trade-off central de sistemas distribuídos |
 
+### Fundamentos de Backend (Request/Response ao Deploy)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/requisicao-resposta]] | O idioma básico do backend — método, rota, headers, body de um lado; status code do outro |
+| [[wiki/concepts/contrato-de-api]] | API como contrato entre cliente e servidor — permite mudar o backend por dentro sem quebrar quem consome |
+| [[wiki/concepts/validacao-de-entrada]] | Nunca confiar no client — separação em camadas (controller/service/banco) evita regra de negócio espalhada |
+| [[wiki/concepts/autenticacao-e-autorizacao]] | Duas perguntas diferentes: quem é você (autenticação) vs. o que você pode fazer (autorização) |
+| [[wiki/concepts/modelagem-de-dados]] | Como o mundo real vira estrutura no banco — tradeoff entre modelar pouco (confuso) e normalizar demais (joins) |
+| [[wiki/concepts/filas-e-workers]] | Desacoplar pedido de processamento pesado — riscos: job falha, processa 2x, fila cresce mais que o consumo |
+| [[wiki/concepts/load-balancer]] | Distribui tráfego entre instâncias — L4 (cego, rápido) vs L7 (inspeciona HTTP, roteia por path/header) |
+| [[wiki/concepts/alta-disponibilidade]] | Sistema continua operacional mesmo com falhas de componente — redundância, health check, deploy gradual |
+| [[wiki/concepts/observabilidade]] | Entender o que acontece por dentro via logs (o quê), métricas (crescendo?) e traces (onde o tempo foi gasto) |
+
+### Estratégias de Deploy
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/deploy-vs-release]] | Deploy é colocar o código na máquina; release é ligar o comportamento para o usuário — dois eventos separáveis via feature flag ou tráfego direcionado |
+| [[wiki/concepts/deploy-strategies]] | Comparativo de todas as estratégias — Recreate, Rolling, Blue/Green, Canary, A/B, Shadow — rollback, custo e quando usar cada uma |
+| [[wiki/concepts/recreate-deployment]] | Desliga a instância antiga e sobe a nova — mais simples, mas downtime inevitável na janela entre shutdown e start |
+| [[wiki/concepts/rolling-update]] | Substituição gradual pod a pod — nativo no Kubernetes, tráfego misto exige compatibilidade de API e banco |
+| [[wiki/concepts/blue-green-deploy]] | Dois ambientes em paralelo, troca atômica no load balancer — rollback instantâneo, custo 2x durante a transição |
+| [[wiki/concepts/canary-release]] | Percentual pequeno de tráfego vai para a versão nova para reduzir risco técnico — requer observabilidade madura |
+| [[wiki/concepts/ab-testing-deployment]] | Split de tráfego como o Canary, mas para validar hipótese de negócio (conversão, receita) em vez de risco técnico |
+| [[wiki/concepts/shadow-deployment]] | Tráfego real duplicado para a v2 sem que nenhum usuário veja a resposta — valida com dados de produção, risco zero |
+| [[wiki/concepts/zero-downtime-deploy]] | Estratégia de tráfego + migrations backward compatible via Expand-Contract — nunca migrar schema e código no mesmo deploy |
+| [[wiki/concepts/feature-flags]] | Ativa/desativa funcionalidades em produção sem novo deploy — o mecanismo mais comum para separar deploy de release |
+
 ### Realtime & Comunicação
 
 | Página | Hook |
@@ -484,6 +565,9 @@ date_updated: 2026-07-07
 | Página | Hook |
 |---|---|
 | [[wiki/concepts/logging-estruturado]] | Logs com contexto (user_id, trace_id, error) — a diferença entre "vejo o problema" e "3h chutando" |
+| [[wiki/concepts/boy-scout-rule]] | Deixe o código um pouco mais limpo a cada mudança — estratégia de pagamento contínuo de dívida técnica inadvertida |
+| [[wiki/concepts/codigo-para-o-mantenedor]] | Escreva pensando em quem vai manter, inclusive você mesmo no futuro — vale também para código gerado por IA |
+| [[wiki/concepts/fazer-a-coisa-mais-simples-que-poderia-funcionar]] | Princípio de XP: resolva com a solução mais simples válida agora, refatore depois se necessário |
 | [[wiki/concepts/quadrante-de-fowler]] | Dois eixos: Deliberado/Inadvertido × Prudente/Imprudente; só Prudente+Deliberado é aceitável |
 | [[wiki/concepts/complexidade-como-estrategia]] | Três estágios: inconsciente → aparência → sabotagem — criar código incompreensível para se tornar insubstituível |
 | [[wiki/concepts/ciclo-da-desgraca-software]] | Espiral reescrita→mesmo problema→dois sistemas; alternativa: refatoração incremental com strangler fig |
@@ -494,6 +578,9 @@ date_updated: 2026-07-07
 | [[wiki/concepts/atomic-commits]] | Commit atômico = alteração + teste que a valida juntos — unidade funcional, não diário de mudanças |
 | [[wiki/concepts/checklist-primeiro-dia-projeto]] | Seis etapas do dia 1 de uma codebase nova — deploy, ORM/migrations e testes resolvidos antes de qualquer feature, quando o custo de errar ainda é baixo |
 | [[wiki/concepts/escolha-de-stack]] | Aprender vs. monetizar como eixo central da escolha de stack; framework batteries-included acelera SaaS solo |
+| [[wiki/concepts/triade-retorno-risco-liquidez]] | Retorno, risco e liquidez nunca são bons ao mesmo tempo — modelo de investimentos generalizado para qualquer decisão da vida |
+| [[wiki/concepts/avaliar-hype-tecnologico]] | Adotar tecnologia hype é risco alto + liquidez baixa; só compensa se o retorno for proporcionalmente alto — caso Node.js no Pagar.me vs. C# na Stone |
+| [[wiki/concepts/modulo-profundo]] | Deep module (Ousterhout): poucos módulos grandes com interface simples escondendo complexidade — o oposto de muitos módulos rasos que a IA produz por padrão |
 
 ### Segurança de APIs & Arquitetura
 
@@ -574,9 +661,11 @@ date_updated: 2026-07-07
 | [[wiki/concepts/pattern-recognition]] | Capacidade humana de detectar repetições — base do aprendizado por exposição |
 | [[wiki/concepts/design-patterns]] | Catálogo de soluções nomeadas — útil só depois de já ter visto os padrões na prática |
 | [[wiki/concepts/anti-pattern]] | Repetição que parece solução mas cria problemas — frequência não implica qualidade |
-| [[wiki/concepts/over-engineering]] | "Verde neném" — aplicar patterns sem base; pular etapas da progressão produz complexidade sem valor |
+| [[wiki/concepts/over-engineering]] | "Verde neném" — aplicar patterns sem base; pular etapas da progressão produz complexidade sem valor; under-engineering é o problema mais comum |
 | [[wiki/concepts/otimizacao-prematura]] | Raiz de todo mal (Knuth) — otimizar antes de ter projeto bom torna o código rígido e difícil |
 | [[wiki/concepts/modelagem-orientada-a-objetos]] | Pré-requisito obrigatório para design patterns — classes, atributos, relacionamentos antes de GoF |
+| [[wiki/concepts/walking-skeleton]] | Fatia mínima da arquitetura fim-a-fim em produção cedo; caso LMAX — peça provisória isolada atrás de abstração trocável |
+| [[wiki/concepts/dora-metrics]] | Deployment Frequency, Lead Time, Change Failure Rate, MTTR — velocidade e qualidade se correlacionam positivamente, refutando o "triângulo de ferro" |
 
 ## Entities
 
@@ -589,7 +678,10 @@ date_updated: 2026-07-07
 | [[wiki/entities/eduarda-rocket-city]] | Engenheira de software internacional, criadora de conteúdo no canal Rocket City |
 | [[wiki/entities/openai]] | Organização responsável pelo GPT-3/4 — formalizou in-context learning e scaling laws; criadora do tokenizer tiktoken |
 | [[wiki/entities/google]] | Criadora do Gemini e do harness AntiGravity — concorrente de Anthropic e OpenAI, tokenizer próprio |
-| [[wiki/entities/matt-pocock]] | Educador de TypeScript/AI (AI Hero) — fundamentos de LLM explicados via código TypeScript |
+| [[wiki/entities/matt-pocock]] | Educador de TypeScript/AI (AI Hero) — fundamentos de LLM, e a tese de que fundamentos de software importam mais que nunca na era da IA |
+| [[wiki/entities/fred-brooks]] | Mythical Man-Month, No Silver Bullet, e o conceito de "design concept" — teoria compartilhada e invisível do que está sendo construído |
+| [[wiki/entities/john-ousterhout]] | A Philosophy of Software Design — define complexidade como estrutura difícil de mudar; cunhou "módulos profundos" |
+| [[wiki/entities/kent-beck]] | Criador do TDD moderno e da XP — "invista no design do sistema todos os dias" |
 | [[wiki/entities/vercel-ai-sdk]] | SDK TypeScript da Vercel para chamar múltiplos provedores de LLM com API unificada |
 | [[wiki/entities/jason-wei]] | Pesquisador Google Brain — lead author do paper de chain-of-thought prompting e do paper de emergent abilities |
 | [[wiki/entities/fabio-akita]] | Programador brasileiro, autodidata desde 1991, criador do canal Akita On Rails |
@@ -628,8 +720,15 @@ date_updated: 2026-07-07
 | [[wiki/entities/mano-deivin]] | Canal brasileiro de YouTube sobre carreira e produto para devs |
 | [[wiki/entities/ayn-rand]] | Escritora e filósofa russo-americana — criadora do Objetivismo; autora de *A Nascente* |
 | [[wiki/entities/martin-fowler]] | Chief Scientist Thoughtworks, autor de *Refactoring* e *PoEAA* — mantém o bliki, referência em terminologia de testes e arquitetura |
+| [[wiki/entities/david-farley]] | Coautor de *Continuous Delivery* com Jez Humble; envolvido no LMAX; refuta o "triângulo de ferro" com dados DORA |
 | [[wiki/entities/mercado-livre]] | Maior e-commerce/fintech da América Latina — combina ISO 27001 + PCI-DSS + Zero Trust; adotante consolidado de Go em produção |
 | [[wiki/entities/andre-casciotti]] | Criador de conteúdo brasileiro, canal Próximo Nível — carreira dev, granularidade de mudança, automações pessoais como prática |
+| [[wiki/entities/robert-nystrom]] | Autor de *Crafting Interpreters* — implementação passo a passo da linguagem Lox (interpretador Java + VM bytecode em C) |
+| [[wiki/entities/llvm]] | Infraestrutura de compilador reutilizável — backend de otimização/codegen multi-arquitetura usado por Rust e Swift |
+| [[wiki/entities/filipe-deschamps]] | Programador brasileiro, fundador do TabNews — quadro Request/Response; aplica a tríade retorno-risco-liquidez a decisões de carreira e adoção de hype |
+| [[wiki/entities/tabnews]] | Comunidade brasileira de conteúdo técnico fundada por Filipe Deschamps — newsletter e formato Request/Response |
+| [[wiki/entities/pagar-me]] | Fintech brasileira de pagamentos — adotou Node.js quando o modelo assíncrono ainda era hype, apostando em concorrência sem multi-threading complexo |
+| [[wiki/entities/stone]] | Fintech brasileira, mesmo grupo do Pagar.me — stack C# mais madura, mas com mais dificuldade de contratação que o Pagar.me/Node.js na mesma época |
 
 ### Documentação de Arquitetura
 

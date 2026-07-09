@@ -3,8 +3,8 @@ type: concept
 title: "Fila (Queue)"
 aliases: ["queue", "FIFO", "fila de dados"]
 date_created: 2026-06-01
-date_updated: 2026-06-01
-source_count: 1
+date_updated: 2026-07-09
+source_count: 2
 tags: [cs-fundamentals, estruturas-de-dados, fila, queue, fifo]
 skill: cs-fundamentals
 status: draft
@@ -51,7 +51,10 @@ Esta página trata da **estrutura de dados** fila. Sistemas de mensageria como K
 - [[pilha]] — estrutura inversa: LIFO em vez de FIFO
 - [[array]] — uma fila pode ser implementada sobre um array circular
 - [[event-sourcing]] — eventos são consumidos em ordem; fila é o mecanismo subjacente
+- [[wiki/concepts/filas-e-workers]] — o padrão arquitetural de processamento assíncrono construído sobre esta estrutura
+- [[wiki/concepts/bullmq]] — implementação concreta dessa estrutura sobre Redis, com producer/worker como processos independentes
 
 ## Key sources
 
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
+- [[wiki/sources/pub-sub-message-queue-bullmq-na-pratica]]

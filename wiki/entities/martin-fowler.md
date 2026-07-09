@@ -3,9 +3,9 @@ type: entity
 title: "Martin Fowler"
 aliases: ["Fowler", "martinfowler.com"]
 date_created: 2026-07-07
-date_updated: 2026-07-07
-source_count: 1
-tags: [thoughtworks, autor, testes, arquitetura, tech-debt, refactoring]
+date_updated: 2026-07-09
+source_count: 2
+tags: [thoughtworks, autor, testes, arquitetura, tech-debt, refactoring, agile]
 skill: tech-mentor-testing
 status: stable
 ---
@@ -28,11 +28,17 @@ Fowler é conhecido por identificar quando um termo popular carrega significados
 - Feature Toggles — ver [[wiki/sources/feature-flags]]
 - [[contract-testing]] e [[test-doubles]] — terminologia (`TestDouble`, `ContractTest`) usada de forma consistente entre suas fontes
 
+## Anedota (não verificada): origem do ágil e projeto atrasado na Thoughtworks
+
+[[wiki/sources/como-evitar-over-engineering-david-farley]] relata, de segunda mão e sem fonte primária citada, um projeto da Thoughtworks atrasado um ano no qual Fowler teria sido chamado para ajudar — situado como parte da origem do movimento ágil/Extreme Programming (entregar pequenos incrementos com testes automatizados, antes do termo "ágil" ser associado a processos como Scrum). Não verificado nesta wiki; ver "Open Questions" na fonte.
+
 ## Ver também
 
 - [[piramide-de-testes]]
 - [[ci-cd]] — termo "DeploymentPipeline" é dele
+- [[walking-skeleton]] — padrão da mesma tradição de entrega incremental (Extreme Programming/continuous delivery)
 
 ## Key Sources
 
 - [[wiki/sources/integration-test-martin-fowler]]
+- [[wiki/sources/como-evitar-over-engineering-david-farley]]

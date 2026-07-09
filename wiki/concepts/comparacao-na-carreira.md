@@ -3,8 +3,8 @@ type: concept
 title: "Comparação na Carreira"
 aliases: ["bastidor vs palco", "síndrome do impostor", "comparação com colegas", "primeiro degrau"]
 date_created: 2026-04-22
-date_updated: 2026-06-26
-source_count: 2
+date_updated: 2026-07-09
+source_count: 3
 tags: [carreira, mentalidade, comparação, iniciante, impostor]
 skill: tech-mentor-leadership
 status: stable
@@ -45,3 +45,4 @@ Comparação desordenada cria a sensação de que você "não tem dom" — e pod
 - [[sources/comparacao-na-carreira-dev]]
 - [[sources/como-aprender-programacao-3-dicas]]
 - [[wiki/sources/the-comparison-trap-in-programming-careers]] — as duas formas de comparação nomeadas explicitamente; quatro estratégias práticas para mudar o referencial; "a única competição é com o meu eu do passado"
+- [[wiki/sources/como-eu-investiria-como-programador-ate-50000]] — régua de teto salarial de um professor (R$ 5.000) usada como "régua máxima" pessoal do autor, mesmo padrão de comparação externa aplicado a dinheiro em vez de código

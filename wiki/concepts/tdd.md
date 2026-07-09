@@ -3,9 +3,9 @@ type: concept
 title: "TDD — Test-Driven Development"
 aliases: ["test driven development", "red green refactor", "desenvolvimento guiado por testes"]
 date_created: 2026-04-22
-date_updated: 2026-07-07
-source_count: 3
-tags: [testes, tdd, design, red-green-refactor, qualidade]
+date_updated: 2026-07-09
+source_count: 5
+tags: [testes, tdd, design, red-green-refactor, qualidade, dora]
 skill: tech-mentor-testing
 status: stable
 ---
@@ -80,6 +80,18 @@ Forçar TDD via [[harness-de-qualidade]]:
 
 Padrão de falha comum: a IA implementa uma feature, o teste continua falhando, e em vez de corrigir o código ela deleta ou enfraquece o teste para "fazer passar". Isso precisa ser proibido explicitamente na instrução — ver [[gaming-de-testes-por-ia]].
 
+### "Outrunning your headlights" — por que a IA precisa de TDD mais que o humano
+
+[[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] aplica um termo do Pragmatic Programmer ("outrunning your headlights" — dirigir mais rápido do que o alcance dos faróis permite enxergar) ao comportamento padrão de LLMs: mesmo com type-checking, acesso ao browser e testes automatizados disponíveis, a IA tende a gerar uma quantidade grande de código de uma vez, e só depois checa tipos ou roda testes — o oposto do ciclo RED-GREEN-REFACTOR. A taxa de feedback é o "limite de velocidade"; TDD força a IA a andar nesse limite, em passos pequenos e deliberados, em vez de acumular risco antes de qualquer verificação.
+
+### TDD depende de módulos testáveis
+
+A mesma fonte argumenta que testar é intrinsecamente difícil (decidir tamanho da unidade, o que mockar, quais comportamentos testar) e que **[[wiki/concepts/modulo-profundo|módulos profundos]]** — poucos módulos grandes com interface simples — são o que torna uma base de código genuinamente testável: a fronteira de teste é a própria interface do módulo, sem precisar mockar uma teia de dependências internas. Uma base de código cheia de módulos rasos gera testes flaky ou excessivamente mockados, prejudicando o próprio loop de feedback que o TDD depende.
+
+## TDD não é o que atrasa a entrega
+
+Contraintuitivamente, aplicar TDD não torna a entrega mais lenta — a pesquisa [[dora-metrics|DORA]] (*Accelerate*) mostra que equipes com melhores práticas de engenharia (incluindo testes automatizados como pré-condição para deploy contínuo) entregam com mais frequência e menor lead time, não menos. TDD é parte do que torna um sistema seguro de mudar rapidamente — sem ele, cada mudança exige validação manual, que é o gargalo real. Ver [[over-engineering]] para a discussão mais ampla dessa correlação.
+
 ## Key Sources
 
 - [[wiki/sources/tdd]]
@@ -87,3 +99,5 @@ Padrão de falha comum: a IA implementa uma feature, o teste continua falhando, 
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
 - [[wiki/sources/tdd-sdd-bdd-era-ia]]
 - [[wiki/sources/integration-test-martin-fowler]]
+- [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
+- [[wiki/sources/como-evitar-over-engineering-david-farley]]

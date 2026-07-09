@@ -3,8 +3,8 @@ type: concept
 title: "Entendimento de Domínio"
 aliases: ["domain understanding", "contexto de negócio", "entender o domínio"]
 date_created: 2026-06-20
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-07-09
+source_count: 3
 tags: [dominio, negocio, arquitetura, onboarding, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -43,7 +43,12 @@ Decisões arquiteturais sempre refletem restrições e prioridades do domínio. 
 
 [[wiki/sources/engenheiro-vs-programador-mercado-ia|Outra fonte]] enquadra essa mesma ideia como "design de software e modelagem de domínio": o objetivo não é decorar padrões de design (Singleton, Factory, Observer) isoladamente, mas saber modelar o domínio de negócio de forma que o código conte a história do problema. Cita *Domain-Driven Design* (Eric Evans) e *A Philosophy of Software Design* (Ousterhout) como referências. Ver [[wiki/concepts/arquitetura-de-software]].
 
+## Linguagem Ubíqua Extraída da Codebase para Alinhar com a IA
+
+[[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] descreve uma prática concreta para este problema aplicada à colaboração com IA: uma skill varre a base de código, extrai a terminologia de domínio já em uso e gera um arquivo markdown com tabelas de termos — o equivalente prático da Ubiquitous Language do DDD (ver [[wiki/concepts/ddd]]), mas derivado do código existente em vez de escrito do zero em workshop.
+
 ## Key sources
 
 - [[wiki/sources/como-aprender-novas-codebases]]
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]]
+- [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]

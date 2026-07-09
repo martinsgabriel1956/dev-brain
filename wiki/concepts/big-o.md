@@ -3,8 +3,8 @@ type: concept
 title: "Big O"
 aliases: ["complexidade de algoritmos", "Big-O notation", "O(n)", "complexidade assintótica"]
 date_created: 2026-06-26
-date_updated: 2026-06-26
-source_count: 1
+date_updated: 2026-07-09
+source_count: 2
 tags: [cs-fundamentals, algoritmos, big-o, complexidade, performance]
 skill: cs-fundamentals
 status: draft
@@ -56,7 +56,11 @@ O(1) pode ser mais lento que O(n) para entradas pequenas se a constante for gran
 - [[array]] — acesso O(1), busca O(n)
 - [[hashmap]] — busca O(1) amortizado
 - [[recursao]] — a complexidade de algoritmos recursivos é calculada pela relação de recorrência
+- [[wiki/concepts/algoritmos-de-ordenacao]] — Bubble/Insertion Sort O(n²) vs Merge Sort O(n log n) como exemplo concreto da tabela acima
+- [[wiki/concepts/algoritmos-de-busca]] — Linear Search O(n) vs Binary Search O(log n), o mesmo salto ilustrado no "caso do O(log n)" acima
+- [[wiki/concepts/algoritmos-de-grafo]] — DFS/BFS O(V+E), Dijkstra O((V+E) log V)
 
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
+- [[wiki/sources/9-algoritmos-que-todo-programador-deveria-saber]]

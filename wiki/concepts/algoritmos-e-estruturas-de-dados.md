@@ -3,8 +3,8 @@ type: concept
 title: "Algoritmos e Estruturas de Dados"
 aliases: ["DSA", "data structures", "estruturas de dados", "algoritmos"]
 date_created: 2026-05-16
-date_updated: 2026-07-03
-source_count: 5
+date_updated: 2026-07-09
+source_count: 6
 tags: [fundamentos, cs-fundamentals, algoritmos, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -36,10 +36,10 @@ Quando você entende estruturas de dados e algoritmos, coisas como:
 ## Sequência de aprendizado sugerida
 
 1. Estruturas básicas: array, linked list, stack, queue, hash map, set
-2. Algoritmos de ordenação: QuickSort, MergeSort
-3. Busca: binary search, BFS, DFS
+2. [[wiki/concepts/algoritmos-de-ordenacao|Algoritmos de ordenação]]: QuickSort, MergeSort
+3. [[wiki/concepts/algoritmos-de-busca|Busca]]: binary search, BFS, DFS
 4. Estruturas avançadas: Bloom Filters, consistent hashing
-5. Grafos e suas representações
+5. [[wiki/concepts/algoritmos-de-grafo|Grafos]] e suas representações
 
 ## Por que Pascal e C eram boas linguagens iniciais
 
@@ -70,3 +70,4 @@ Cada estrutura tem sua própria página com complexidade, analogias e quando usa
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]] — introdução prática às cinco estruturas; três perguntas de decisão; quando usar cada uma
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]] — DSA como o primeiro dos fundamentos do "eixo vertical" da engenharia; explica por que sistemas degradam ao escalar de mil para cem mil usuários; livro-base Introduction to Algorithms (Cormen)
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — matemática (complexidade, probabilidade, cache) como "gramática por baixo do que você constrói"; exemplo do laço dentro do laço que derruba o sistema com 1000 usuários
+- [[wiki/sources/9-algoritmos-que-todo-programador-deveria-saber]] — nove algoritmos concretos das três categorias citadas na sequência de aprendizado acima: ordenação, busca e grafo, com mecanismo, complexidade e caso de uso de cada um

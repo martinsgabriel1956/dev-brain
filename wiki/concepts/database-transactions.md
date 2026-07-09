@@ -3,8 +3,8 @@ type: concept
 title: "Database Transactions"
 aliases: ["transações", "prisma transaction", "$transaction"]
 date_created: 2026-04-22
-date_updated: 2026-07-03
-source_count: 3
+date_updated: 2026-07-09
+source_count: 4
 tags: [banco-de-dados, acid, transactions, prisma, postgresql]
 skill: tech-mentor-system-design
 status: stable
@@ -49,3 +49,4 @@ Duas transações concorrentes sobre o mesmo dado não deixam de rodar — Isola
 - [[sources/banco-de-dados]]
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] — mesmo exemplo de transferência bancária para atomicidade; nuance sobre isolamento em escritas concorrentes
+- [[wiki/sources/10-conceitos-fundamentais-backend]] — mesmo exemplo de transferência bancária (R$100), reforçado com o caso de duas compras simultâneas do último item em estoque

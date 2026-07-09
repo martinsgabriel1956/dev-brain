@@ -3,8 +3,8 @@ type: concept
 title: "YAGNI — You Ain't Gonna Need It"
 aliases: ["yagni", "you ain't gonna need it", "não vou precisar disso"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
-source_count: 3
+date_updated: 2026-07-09
+source_count: 4
 tags: [arquitetura, principios, pragmatismo, over-engineering, xp]
 skill: tech-mentor-backend
 status: stable
@@ -38,8 +38,11 @@ A abstração é justificada quando a dor é real:
 
 YAGNI não contradiz DDD ou Clean Architecture — ele questiona a *implementação ritualística*. Os princípios estratégicos (bounded context, separação de domínio e infra) continuam válidos. O que YAGNI questiona é: interface para cada repositório com uma única implementação, use case para cada operação CRUD, mappers em todas as direções.
 
+Ver também [[wiki/concepts/fazer-a-coisa-mais-simples-que-poderia-funcionar]] — mesmo espírito de XP/Kent Beck aplicado a um eixo diferente: YAGNI questiona *o que construir agora*, o outro questiona *quão complexa deve ser a solução do problema atual*.
+
 ## Key Sources
 
 - [[sources/clean-architecture-ia-custo-real]]
 - [[sources/super-productivity-ai-architecture-guide]]
 - [[sources/addy-osmani-80-problem-agentic-coding]]
+- [[wiki/sources/5-principios-que-mudaram-como-programador]]

@@ -3,8 +3,8 @@ type: concept
 title: "Rolling Update"
 aliases: ["rolling deploy", "rolling update", "atualização gradual"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-09
+source_count: 2
 tags: [devops, deploy, cicd, kubernetes, rolling, infra]
 skill: tech-mentor-infra
 status: stable
@@ -54,6 +54,11 @@ spec:
 
 → [[concepts/deploy-strategies]]
 
+## Alternativa mais simples (e mais arriscada)
+
+Se você não substituir gradualmente e simplesmente desligar tudo e subir a nova versão de uma vez, isso é [[concepts/recreate-deployment]] — mais simples, mas com downtime na janela entre shutdown e start.
+
 ## Key Sources
 
 - [[sources/blue-green-canary-rolling]]
+- [[sources/tipos-de-deploy]]

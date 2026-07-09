@@ -3,8 +3,8 @@ type: concept
 title: "Otimização Prematura"
 aliases: ["premature optimization", "otimizar prematuramente", "premature optimization root of all evil"]
 date_created: 2026-06-09
-date_updated: 2026-06-09
-source_count: 1
+date_updated: 2026-07-09
+source_count: 2
 tags: [performance, qualidade, design, engenharia-de-software, anti-pattern]
 skill: tech-mentor-leadership
 status: stable
@@ -56,6 +56,8 @@ Um código bem projetado é naturalmente mais fácil de otimizar — as abstraç
 - Em sistemas onde performance é requisito não-funcional crítico e conhecido desde o início (sistemas embarcados, engines de jogos, processamento de imagem em tempo real)
 - Na escolha de algoritmo ou estrutura de dados — decisão de design, não micro-otimização
 
+Reforçado por uma segunda fonte: usar microsserviços para uma base de 100 usuários, ou adicionar cache para algo que não precisa, são exemplos concretos do mesmo erro — otimizar (nesse caso, para escala) antes de haver evidência de que a otimização é necessária. O problema nunca é otimizar; é otimizar sem saber o quê e quando.
+
 ---
 
 ## Conexões
@@ -69,3 +71,4 @@ Um código bem projetado é naturalmente mais fácil de otimizar — as abstraç
 ## Key Sources
 
 - [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]]
+- [[wiki/sources/5-principios-que-mudaram-como-programador]]

@@ -3,8 +3,8 @@ type: concept
 title: "Zero-Downtime Deploy"
 aliases: ["zero downtime", "deploy sem downtime", "deploy sem interrupção"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 2
+date_updated: 2026-07-09
+source_count: 3
 tags: [devops, deploy, cicd, availability, infra, kubernetes, migrations]
 skill: tech-mentor-system-design
 status: stable
@@ -13,6 +13,8 @@ status: stable
 # Zero-Downtime Deploy
 
 Deploy que não interrompe o serviço para usuários finais. Exige duas coisas: estratégia de tráfego + migrations backward compatible. **Regra fundamental: nunca migre schema e código no mesmo deploy.**
+
+O oposto direto é o [[concepts/recreate-deployment]] — shutdown seguido de start, com uma janela de downtime inevitável entre os dois. Toda estratégia desta página existe justamente para eliminar essa janela.
 
 ## Por Estratégia
 
@@ -98,3 +100,4 @@ spec:
 
 - [[sources/blue-green-canary-rolling]]
 - [[sources/zero-downtime-deploy]]
+- [[sources/tipos-de-deploy]]

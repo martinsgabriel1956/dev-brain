@@ -3,8 +3,8 @@ type: concept
 title: "Concorrência"
 aliases: ["concurrency", "execução concorrente", "multitarefa"]
 date_created: 2026-06-26
-date_updated: 2026-06-26
-source_count: 1
+date_updated: 2026-07-09
+source_count: 2
 tags: [cs-fundamentals, concorrencia, paralelismo, race-condition, threads]
 skill: cs-fundamentals
 status: draft
@@ -59,13 +59,19 @@ Se Thread A espera Thread B liberar o recurso X, e Thread B espera Thread A libe
 - **Actor Model** (Erlang, Akka) — atores comunicam via mensagens, sem memória compartilhada
 - **CSP** (Go channels) — goroutines se comunicam por canais tipados
 
+## Decisão de design em linguagens novas
+
+Ao projetar uma linguagem do zero, o modelo de concorrência do runtime (threads, event loop, goroutines/CSP) é uma das decisões mais difíceis de reverter depois: todo código escrito pelos usuários passa a se apoiar nela desde o primeiro programa. Está diretamente acoplada à decisão de [[wiki/concepts/gerenciamento-de-memoria]] — memória compartilhada entre threads exige sincronização (mutex, locks), enquanto o modelo de ownership do Rust é o que viabiliza concorrência segura sem data races em tempo de compilação.
+
 ## Relação com outros conceitos
 
 - [[paralelismo]] — a distinção é fundamental; confundir os dois leva a soluções erradas
 - [[thread]] — a unidade de execução que torna concorrência possível
 - [[deadlock]] — o pior caso quando coordenação falha
 - [[mutex]] — o mecanismo mais comum de proteção
+- [[wiki/concepts/gerenciamento-de-memoria]] — modelo de memória e modelo de concorrência do runtime são decisões de design acopladas
 
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
+- [[wiki/sources/como-criar-uma-linguagem-de-programacao]] — concorrência como decisão de runtime ao projetar uma linguagem, difícil de reverter depois

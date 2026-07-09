@@ -3,8 +3,8 @@ type: concept
 title: "KISS — Keep It Simple"
 aliases: ["kiss", "keep it simple", "pensar simples", "simplicidade intencional"]
 date_created: 2026-04-29
-date_updated: 2026-04-29
-source_count: 1
+date_updated: 2026-07-09
+source_count: 2
 tags: [kiss, over-engineering, principios, qualidade, design-patterns]
 skill: tech-mentor-backend
 status: stable
@@ -44,7 +44,9 @@ Se qualquer resposta for "nenhum", "ninguém", ">3" ou "sim" — reavalie.
 - **YAGNI** (You Aren't Gonna Need It) — complementar: não adicione o que não é necessário agora.
 - **[[concepts/over-engineering]]** — KISS é o antídoto.
 - **[[concepts/accidental-complexity]]** — KISS é a prática que previne complexidade acidental.
+- **[[wiki/concepts/fazer-a-coisa-mais-simples-que-poderia-funcionar]]** — princípio irmão, de origem em XP: heurística mais específica de "primeira tentativa" ao escrever uma solução nova, enquanto KISS é a disciplina geral que vale em qualquer momento do design.
 
 ## Key Sources
 
 - [[sources/overengineering-carol-ate-quinta]]
+- [[wiki/sources/5-principios-que-mudaram-como-programador]]

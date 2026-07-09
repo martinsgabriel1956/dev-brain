@@ -3,8 +3,8 @@ type: concept
 title: "Recursão"
 aliases: ["recursion", "função recursiva", "chamada recursiva"]
 date_created: 2026-06-26
-date_updated: 2026-06-26
-source_count: 1
+date_updated: 2026-07-09
+source_count: 2
 tags: [cs-fundamentals, algoritmos, recursao, pilha-de-execucao, dividir-e-conquistar]
 skill: cs-fundamentals
 status: draft
@@ -60,8 +60,8 @@ retorna 5×24 = 120
 
 ## Onde aparece
 
-- Percorrer [[arvore]] (DFS, BFS recursivo)
-- Algoritmos de ordenação (mergesort, quicksort)
+- Percorrer [[arvore]] (DFS, BFS recursivo) — ver [[wiki/concepts/algoritmos-de-grafo]] para o mecanismo completo de backtrack do DFS
+- [[wiki/concepts/algoritmos-de-ordenacao|Algoritmos de ordenação]] (mergesort, quicksort)
 - Fractais e geração procedural
 - Sistema de arquivos (diretórios dentro de diretórios)
 - Backtracking (sudoku, N-rainhas)
@@ -76,3 +76,4 @@ retorna 5×24 = 120
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
+- [[wiki/sources/9-algoritmos-que-todo-programador-deveria-saber]]

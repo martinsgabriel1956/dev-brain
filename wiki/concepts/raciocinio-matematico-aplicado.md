@@ -3,8 +3,8 @@ type: concept
 title: "Raciocínio Matemático Aplicado"
 aliases: ["pensamento matemático", "matemática básica para devs", "raciocínio quantitativo"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 1
+date_updated: 2026-07-09
+source_count: 2
 tags: [matematica, raciocinio, fundacao-tecnica, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -40,7 +40,9 @@ Ao contrário de linguagens e frameworks — que mudam a cada [[ciclo-de-mercado
 - [[ciclo-de-mercado-tech]] — habilidade que sobrevive independente de qual ferramenta está em alta
 - [[aprendizado-passivo]] — cursos de tutorial ensinam cópia, não raciocínio matemático
 - [[autodidata]] — postura necessária para buscar essa fundação por conta própria, já que cursos não ensinam
+- [[wiki/concepts/reserva-de-emergencia]] — decisão de juros compostos/renda fixa aplicada na prática por faixa salarial
 
 ## Key Sources
 
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]]
+- [[wiki/sources/como-eu-investiria-como-programador-ate-50000]] — mesma tese aplicada de forma prática: tesouro pré-fixado, IPCA+ e cautela com juros compostos mal calculados em investimentos

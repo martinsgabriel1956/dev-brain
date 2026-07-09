@@ -3,8 +3,8 @@ type: concept
 title: "Spec-Driven Development"
 aliases: ["SDD", "spec driven", "desenvolvimento orientado a especificação", "planning-first"]
 date_created: 2026-06-02
-date_updated: 2026-07-03
-source_count: 8
+date_updated: 2026-07-09
+source_count: 9
 tags: [spec-driven, planejamento, ia-para-devs, harness, agente, qualidade]
 skill: tech-mentor-ai
 status: stable
@@ -114,6 +114,12 @@ A engenheira do Cursor (2026) articula o critério para tamanho de task para age
 
 Na prática: uma feature completa com migration, schema e API repository é feita junta — para que o agente entregue de ponta a ponta sem dependência bloqueante de outro agente. Cada feature dispara ~5 agents simultâneos. A coordenação antes era entre devs paralelos; agora é entre agentes paralelos — o trabalho de coordenação não acabou, mudou de objeto.
 
+## Crítica: "Specs to Code" Sem Disciplina de Design Degenera em Vibe Coding
+
+[[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] traz uma crítica pontual a uma variante popular do SDD — o movimento "specs to code", onde o dev nunca olha o código gerado, só edita a especificação e "roda o compilador de novo" quando algo está errado. Relato do autor: cada rodada, sem inspeção do código nem investimento deliberado em design, produzia código progressivamente pior — paralelo direto à entropia de software do Pragmatic Programmer, e, segundo ele, "[[wiki/concepts/vibe-coding|vibe coding]] por outro nome".
+
+O ponto não invalida SDD como definido acima (spec como contrato de execução, revisão no nível de PR) — é um alerta específico contra a versão que trata a spec como o único artefato que importa e o código como totalmente descartável. A crítica reforça o item "Revisão" do processo (revisar o resultado prático, não pular a revisão inteiramente) e conecta com [[wiki/concepts/modulo-profundo]]: specs geram código ruim persistentemente quando a base de código não tem estrutura (módulos profundos, interfaces simples) que force a IA a produzir algo revisável.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-01-abertura]]
@@ -124,3 +130,4 @@ Na prática: uma feature completa com migration, schema e API repository é feit
 - [[wiki/sources/formacao-ia-devs-aula-05-qa]]
 - [[wiki/sources/product-engineer-vale-do-silicio-2026]]
 - [[wiki/sources/tdd-sdd-bdd-era-ia]] — origem não-IA do termo, contratos de API como boundary (OpenAPI, Protobuf, GraphQL)
+- [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] — crítica ao "specs to code" sem inspeção de código

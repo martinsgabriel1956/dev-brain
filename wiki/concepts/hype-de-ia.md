@@ -3,8 +3,8 @@ type: concept
 title: "Hype de IA"
 aliases: ["hype ia", "ia hype", "narrativa ia investidores"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 1
+date_updated: 2026-07-09
+source_count: 2
 tags: [hype-de-ia, fomo-tecnologico, era-agentica, roi-de-ia, ai-washing]
 skill: tech-mentor-ai
 status: stable
@@ -64,6 +64,11 @@ A tese de que "a bolha vai estourar e voltamos ao código manual" está errada p
 
 O hype vai se normalizar. A tecnologia não vai regredir.
 
+## Sinal de Detecção de Hype (Não Só de IA)
+
+Este documento foca no hype de IA especificamente (financiado por VC), mas o padrão de detecção de qualquer hype tecnológico — um assunto "pipocando" repetidamente em canais independentes (Twitter/X, Hacker News, comunidades técnicas, newsletters) — é generalizado em [[wiki/concepts/avaliar-hype-tecnologico]], junto com o modelo [[wiki/concepts/triade-retorno-risco-liquidez]] para decidir se vale a pena embarcar nele.
+
 ## Key Sources
 
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
+- [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]]

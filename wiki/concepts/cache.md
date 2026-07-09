@@ -3,8 +3,8 @@ type: concept
 title: "Cache"
 aliases: ["caching", "cache de aplicação"]
 date_created: 2026-06-26
-date_updated: 2026-07-07
-source_count: 3
+date_updated: 2026-07-09
+source_count: 4
 tags: [cache, performance, redis, arquitetura, backend, grande-rollback]
 skill: tech-mentor-backend
 status: stable
@@ -69,3 +69,4 @@ Adicionar cache aumenta a complexidade: [[tradeoff-de-cache]]. É necessário pe
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]] — cache como "melhor amigo antes de escalar"; banco é o gargalo mais comum
 - [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] — contraponto: cache como camada de reserva foi removido em favor do banco relacional puro, ver [[wiki/concepts/grande-rollback]]
+- [[wiki/sources/10-conceitos-fundamentais-backend]] — framing didático de cache hit/miss; a pergunta central não é "usar cache ou não" mas "quando essa resposta deixa de ser verdade"

@@ -3,8 +3,8 @@ type: concept
 title: "Sistema de Arquivos"
 aliases: ["file system", "filesystem", "ext4", "NTFS", "APFS", "sistema de arquivo"]
 date_created: 2026-04-22
-date_updated: 2026-06-26
-source_count: 2
+date_updated: 2026-07-09
+source_count: 3
 tags: [sistema-operacional, storage, cs-fundamentals]
 skill: cs-fundamentals
 status: stable
@@ -49,15 +49,19 @@ Por isso:
 
 | Sistema | SO | Destaques |
 |---|---|---|
-| **ext4** | Linux | Journaling, performance geral, padrão |
-| **NTFS** | Windows | Permissões granulares, journaling, compressão |
-| **APFS** | macOS | Snapshots, criptografia nativa, copy-on-write |
-| **ZFS** | Linux/BSD | Integridade (checksums), snapshots, RAID integrado |
+| FAT12/16/[[concepts/fat32\|32]] | Windows / universal | Sem journaling, arquivo até 4 GB (FAT32) — sobrevive por compatibilidade |
+| [[concepts/exfat]] | Windows + macOS | Sucessor do FAT32 sem o limite de 4 GB, ainda sem journaling — mídia portátil |
+| [[concepts/ntfs]] | Windows | Permissões granulares, journaling, compressão |
+| [[concepts/apfs]] (e HFS+) | macOS | Snapshots, criptografia nativa, copy-on-write |
+| [[concepts/ext4]] (e ext2/3) | Linux | Journaling, performance geral, padrão |
+| [[concepts/zfs]] | Linux/BSD | Integridade (checksums), snapshots, RAID integrado |
 | **Btrfs** | Linux | Copy-on-write, snapshots, subvolumes |
+
+Linhagem histórica completa (evolução dentro de cada família) em [[wiki/sources/sistemas-de-arquivos-explicados]].
 
 ## Journaling
 
-Mecanismo que registra operações pendentes em um log antes de executá-las. Se o sistema travar no meio de uma escrita, o journal permite recuperação consistente.
+Mecanismo que registra operações pendentes em um log antes de executá-las. Se o sistema travar no meio de uma escrita, o journal permite recuperação consistente. Detalhado em [[concepts/journaling]].
 
 ## Ver também
 
@@ -69,3 +73,4 @@ Mecanismo que registra operações pendentes em um log antes de executá-las. Se
 
 - [[sources/sistema-operacional-por-baixo-dos-panos]]
 - [[sources/como-sistemas-operacionais-funcionam]]
+- [[wiki/sources/sistemas-de-arquivos-explicados]]
