@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-07-09
+date_updated: 2026-07-10
 ---
 
 
@@ -20,6 +20,7 @@ date_updated: 2026-07-09
 | [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] | 5 passos para reduzir a fricção do primeiro code review: regra de negócio antes de estilo, revisar com IA sem virar dependência, testar em ambiente externo, não levar comentários pro pessoal, validar em produção |
 | [[wiki/sources/pare-de-terceirizar-suas-decisoes]] | Akita: pare de terceirizar decisões de carreira para influencers e de parar de cargo-cultar stack de big tech — skin in the game, antifragilidade e custo afundado |
 | [[wiki/sources/3-soft-skills-que-poucos-programadores-dominam]] | Renato Augusto: comunicação persuasiva (gatilhos de urgência/ganância), imagem profissional mesmo em home office, e habilidade de lidar com pessoas (Dale Carnegie) como as soft skills que a IA não substitui |
+| [[wiki/sources/tres-caracteristicas-melhor-candidato]] | Randy Nelson (ex-Pixar/Apple): profundidade via maestria em qualquer assunto (não anos de experiência), abrangência (ser interessado, não interessante) e comunicação (tradução na ponta de quem emite) |
 | [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] | ACID (atomicidade, consistência, isolamento, durabilidade) vs. BASE (basically available, soft state, eventual consistency) — o tradeoff corretude/performance vs. disponibilidade/escala, e quando usar cada um |
 | [[wiki/sources/vibe-coding-limites-maturidade-profissional]] | Vibe coding brilha em MVPs, protótipos, docs e testes; sistemas sustentáveis e seguros ainda exigem arquitetura, contexto de negócio e julgamento humano — vendê-los como prontos sem isso é ilusão e desonestidade |
 | [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] | SQL é linguagem, não banco de dados — a confusão do Twitter na thread de Uncle Bob, e o que um banco relacional faz por baixo (B-tree, WAL, parser, planner) |
@@ -126,6 +127,7 @@ date_updated: 2026-07-09
 | [[wiki/sources/pub-sub-message-queue-bullmq-na-pratica]] | Pub/Sub publica um fato, message queue publica um trabalho — distinção pelo modelo de dependência (quem depende de quem); quickstart de BullMQ com producer/worker sobre Redis |
 | [[wiki/sources/como-evitar-over-engineering-david-farley]] | Refuta o "triângulo de ferro" com dados DORA/Accelerate; maior problema da indústria é under-engineering, não over-engineering; walking skeleton do LMAX como antídoto contra resolver requisitos não-funcionais cedo demais |
 | [[wiki/sources/diferenciais-portfolio-backend-junior]] | Para a primeira vaga de backend, o diferencial não é arquitetura sofisticada — é profissionalismo nas bases: testes de integração com banco real, Docker/deploy real, SQL além do CRUD, documentação Swagger, error handling estruturado e observabilidade |
+| [[wiki/sources/acoplamento-abstracao-estado]] | Acoplamento, abstração e estado como lentes para ler código, não termos para decorar — função god acoplada vs. separação por responsabilidade, interface como abstração, estado isolado (recebe/retorna) vs. estado global mutado |
 
 ## Concepts
 
@@ -160,6 +162,8 @@ date_updated: 2026-07-09
 | [[wiki/concepts/inteligencia-emocional]] | Operar sob pressão, crítica e conflito sem perder equilíbrio |
 | [[wiki/concepts/dados-vs-intuicao]] | Dados superam intuição especialmente em ideias inovadoras — quanto menos dados, mais fortes e perigosas são as opiniões |
 | [[wiki/concepts/maturidade-tecnica]] | Capacidade de extrair aprendizado de qualquer situação, incluindo as adversas |
+| [[wiki/concepts/profundidade-e-maestria]] | Maestria em qualquer assunto (mesmo fora da área técnica) é prognóstico de sucesso em qualquer outro problema — o "hardware mental" se transfere |
+| [[wiki/concepts/abrangencia-profissional]] | Ser interessado, não apenas interessante — sinal é se curvar para frente ao ouvir um problema, não chegar com a solução pronta |
 | [[wiki/concepts/atualizacao-tecnologica]] | Custo de ficar estagnado vs. fadiga de perseguir novidades — empresa que não evoluiu na stack também não evoluiu na cultura |
 | [[wiki/concepts/comparacao-na-carreira]] | Medir seu primeiro degrau pela régua de quem está no meio da escada — o erro que leva à desistência prematura |
 | [[wiki/concepts/familiaridade-vs-capacidade]] | Velocidade inicial ≠ talento — é histórico acumulado de vida; linha de largada explica tudo |
@@ -604,6 +608,13 @@ date_updated: 2026-07-09
 | [[wiki/concepts/triade-retorno-risco-liquidez]] | Retorno, risco e liquidez nunca são bons ao mesmo tempo — modelo de investimentos generalizado para qualquer decisão da vida |
 | [[wiki/concepts/avaliar-hype-tecnologico]] | Adotar tecnologia hype é risco alto + liquidez baixa; só compensa se o retorno for proporcionalmente alto — caso Node.js no Pagar.me vs. C# na Stone |
 | [[wiki/concepts/modulo-profundo]] | Deep module (Ousterhout): poucos módulos grandes com interface simples escondendo complexidade — o oposto de muitos módulos rasos que a IA produz por padrão |
+| [[wiki/concepts/lentes-de-codigo]] | Acoplamento, abstração e estado não são termos para decorar — são lentes que revelam se o código é bom ou só funciona; central para avaliar código gerado por IA |
+| [[wiki/concepts/acoplamento]] | Grau de dependência entre partes — quanto uma mudança em A força mudança em B; god function vs. funções separadas por responsabilidade |
+| [[wiki/concepts/abstracao]] | Esconder o que não precisa ser visto atrás de um contrato — troca de implementação (banco → API) sem tocar no código consumidor |
+| [[wiki/concepts/coesao]] | Quanto as responsabilidades dentro de uma unidade estão relacionadas entre si — alta coesão interna + baixo acoplamento externo é o alvo |
+| [[wiki/concepts/single-responsibility]] | Uma unidade deve ter uma única razão para mudar — o critério é o ator que causa a mudança, não o número de linhas |
+| [[wiki/concepts/efeito-colateral]] | O que uma função muda além do que retorna — o objetivo não é eliminar efeitos, é isolá-los e torná-los explícitos |
+| [[wiki/concepts/estado-compartilhado]] | Múltiplas funções lendo/mutando o mesmo estado tornam debugging impossível em escala — solução: funções que recebem estado e retornam novo estado |
 
 ### Segurança de APIs & Arquitetura
 
@@ -704,6 +715,7 @@ date_updated: 2026-07-09
 | [[wiki/entities/linuxtips]] | Plataforma brasileira de educação em tecnologia — DevOps, Cloud, Kubernetes, podcast Papinho Tech Solo |
 | [[wiki/entities/renato-augusto]] | Desenvolvedor e criador de conteúdo brasileiro — padrões de projeto GoF e orientação a objetos, carreira e soft skills |
 | [[wiki/entities/dale-carnegie]] | Autor de "Como Fazer Amigos e Influenciar Pessoas" (1936) — confiança e influência genuína como base da habilidade interpessoal |
+| [[wiki/entities/randy-nelson]] | Ex-Pixar, hoje Apple — educador; autor da palestra sobre as três características (profundidade, abrangência, comunicação) de um candidato excepcional |
 | [[wiki/entities/eduarda-rocket-city]] | Engenheira de software internacional, criadora de conteúdo no canal Rocket City |
 | [[wiki/entities/openai]] | Organização responsável pelo GPT-3/4 — formalizou in-context learning e scaling laws; criadora do tokenizer tiktoken |
 | [[wiki/entities/google]] | Criadora do Gemini e do harness AntiGravity — concorrente de Anthropic e OpenAI, tokenizer próprio |

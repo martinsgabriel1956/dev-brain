@@ -2110,3 +2110,26 @@ Entities:
 - `wiki/sources/diferenciais-portfolio-backend-junior.md` — `source_file` apontava para o path do repo antigo (`/home/nemomartins/Documentos/new/dev-study/...`); corrigido para o path atual (`/home/gabriel-martins/Documentos/dev-brain/...`)
 
 **Notas:** Nenhum conteúdo novo foi extraído da transcrição em si — o texto colado é idêntico ao já processado (mesmo conteúdo, só que em fala bruta em vez da versão já estruturada salva em `raw/`). O trabalho aqui foi puramente de reparo de drift, não de ingest. `raw/` não foi tocado.
+
+---
+
+## [2026-07-10] retroactive fix | Acoplamento, Abstração e Estado — Lentes para Enxergar Código
+
+**Contexto:** O usuário pediu para transformar a transcrição em MD em `raw/` e ingerir. A transcrição já existia como `raw/acoplamento-abstracao-estado.md` e já tinha sido processada como `wiki/sources/acoplamento-abstracao-estado.md` (datado 2026-04-25), com os 9 conceitos relacionados (`acoplamento`, `abstracao`, `estado-compartilhado`, `imutabilidade`, `efeito-colateral`, `coesao`, `idempotencia`, `single-responsibility`, `lentes-de-codigo`) já criados e todos com backlink correto em "Key sources". Mesmo padrão de drift já visto em outras fontes deste repo: passos 1–5 do workflow completos, passos 6–7 (indexação e log) nunca executados.
+
+**Achados corrigidos:**
+- `wiki/index.md` — fonte nunca constava em Sources; adicionada. 7 dos 9 conceitos (`lentes-de-codigo`, `acoplamento`, `abstracao`, `coesao`, `single-responsibility`, `efeito-colateral`, `estado-compartilhado`) nunca tinham entrada no índice — adicionados à seção "Boas Práticas de Engenharia" (`idempotencia` e `imutabilidade` já constavam em outras seções)
+
+**Notas:** Nenhum conteúdo novo foi extraído da transcrição em si — o texto colado é idêntico ao já processado. O trabalho aqui foi puramente de reparo de drift (workflow de lint), não de ingest. `raw/` não foi tocado; `source_file` na frontmatter da source já apontava para o path correto do repo atual, sem necessidade de correção.
+
+---
+
+## [2026-07-10] retroactive fix | Três Características para Ser o Melhor Candidato
+
+**Contexto:** O usuário pediu para transformar a transcrição em MD em `raw/` e ingerir. A transcrição já existia, já limpa em formato Markdown, como `raw/tres-caracteristicas-melhor-candidato.md`, e já tinha sido processada como `wiki/sources/tres-caracteristicas-melhor-candidato.md` (datado 2026-04-23), com os 6 conceitos/entidade relacionados (`profundidade-e-maestria`, `abrangencia-profissional`, `comunicacao-tecnica`, `curriculo-vs-portfolio`, `maturidade-tecnica`, `comparacao-na-carreira`, `randy-nelson`) já criados. Mesmo padrão de drift já visto repetidas vezes neste repo: passos 1–5 do workflow completos, passos 6–7 (indexação e log) nunca executados.
+
+**Achados corrigidos:**
+- `wiki/index.md` — fonte nunca constava em Sources; adicionada. `profundidade-e-maestria` e `abrangencia-profissional` nunca tinham entrada no índice — adicionados à seção "Carreira & Soft Skills". Entidade `randy-nelson` nunca constava em Entities — adicionada
+- `wiki/concepts/comparacao-na-carreira.md` — listado nos "Conceitos Tocados" da source mas não citava a source de volta (backlink faltando); adicionada linha em Key Sources e `source_count` 4 → 5
+
+**Notas:** Nenhum conteúdo novo foi extraído da transcrição em si — o texto colado é idêntico ao já processado. O trabalho aqui foi puramente de reparo de drift (workflow de lint), não de ingest. `raw/` não foi tocado; `source_file` na frontmatter da source já apontava para o path correto do repo atual, sem necessidade de correção. As outras 5 páginas relacionadas (`profundidade-e-maestria`, `abrangencia-profissional`, `comunicacao-tecnica`, `curriculo-vs-portfolio`, `maturidade-tecnica`, `randy-nelson`) já citavam a source corretamente em "Key sources" — apenas a indexação central estava faltando.
