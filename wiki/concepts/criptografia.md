@@ -3,9 +3,9 @@ type: concept
 title: "Criptografia"
 aliases: ["cryptography", "encryption", "hashing", "criptografia assimétrica", "criptografia simétrica"]
 date_created: 2026-06-26
-date_updated: 2026-06-26
-source_count: 1
-tags: [cs-fundamentals, criptografia, seguranca, hashing, tls, https]
+date_updated: 2026-07-10
+source_count: 3
+tags: [cs-fundamentals, criptografia, seguranca, hashing, tls, https, hmac]
 skill: cs-fundamentals
 status: draft
 ---
@@ -74,13 +74,24 @@ Inversão da assimétrica para **autenticidade**:
 
 Garante que a mensagem veio de quem diz ser.
 
+[[wiki/concepts/ssh]] usa esse mesmo princípio de prova-de-posse: o cliente demonstra ter a chave privada correspondente à chave pública registrada no `authorized_keys` do servidor, sem transmitir a chave privada — mais próximo de assinatura digital do que de "encriptar/decriptar dados".
+
+## HMAC: um meio-termo entre hash e assinatura assimétrica
+
+Nem toda garantia de integridade exige criptografar o dado (perde-se a legibilidade) nem exige chave assimétrica (cara computacionalmente em alto volume). [[wiki/concepts/hmac]] resolve isso derivando duas chaves (interna e externa) a partir do mesmo segredo via padding — em vez de simplesmente concatenar `secret + mensagem` antes de fazer hash, o que é vulnerável a ataque de extensão de mensagem. HMAC garante integridade e autenticidade com o custo baixo de uma função de hash, ao preço de não ter não-repúdio (qualquer lado com o segredo pode gerar ou verificar).
+
 ## Relação com outros conceitos
 
 - [[protocolo-de-rede]] — TLS é a camada que o HTTPS adiciona sobre HTTP/TCP
 - [[abstracao]] — HTTPS abstrai toda essa complexidade; o browser exibe um cadeado
 - [[password-hashing]] — aplicação específica de hashing para senhas com salt e custo computacional
 - [[acid]] — bancos de dados financeiros dependem de canais seguros para operações de transferência
+- [[wiki/concepts/ssh]] — autenticação por par de chaves (Ed25519) como aplicação prática de criptografia assimétrica
+- [[wiki/concepts/hmac]] — integridade/autenticidade via chave simétrica derivada, sem o custo de assinatura assimétrica
+- [[wiki/concepts/local-first]] — caso de uso que motiva HMAC: validar dado do cliente sem persistir no servidor
 
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
+- [[wiki/sources/ssh-chaves-como-funcionam]]
+- [[wiki/sources/hmac-integridade-mensagem-local-first-entrevista]]

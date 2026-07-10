@@ -3,8 +3,8 @@ type: concept
 title: "Unit Test Solitário vs. Sociável"
 aliases: ["solitary unit test", "sociable unit test", "teste unitário solitário", "teste unitário sociável"]
 date_created: 2026-07-07
-date_updated: 2026-07-07
-source_count: 1
+date_updated: 2026-07-10
+source_count: 2
 tags: [testes, unit-test, tdd, martin-fowler, terminologia]
 skill: tech-mentor-testing
 status: stable
@@ -46,3 +46,4 @@ Continua usando "unit test" para os dois casos, qualificando com **"solitary"** 
 ## Key Sources
 
 - [[wiki/sources/integration-test-martin-fowler]]
+- [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — exemplo do teste de `add` que "sociabiliza" ao passar a chamar `db.save` real via SQLite, deixando de ser solitário

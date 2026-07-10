@@ -2,6 +2,95 @@
 
 ---
 
+## [2026-07-10] ingest | HMAC: Integridade de Mensagem em Local-First (Entrevista de System Design)
+
+**Source:** [[wiki/sources/hmac-integridade-mensagem-local-first-entrevista]] — transcrição bruta de ASR (fala em bloco único, sem pontuação) colada pelo usuário, já em português (sem necessidade de tradução), reescrita como markdown estruturado por etapa de raciocínio em `raw/hmac-integridade-mensagem-local-first-entrevista.md`.
+**Skill:** tech-mentor-security — carregado `SKILL.md` e `references/crypto.md` em `/home/gabriel-martins/Documentos/skills/tech-mentor-security/` (path real deste ambiente; o CLAUDE.md referencia `/home/nemomartins/...`, que não existe aqui). A referência já cobre HMAC (seção "Assinaturas Digitais e HMAC", com a tabela HMAC vs. assinatura assimétrica) mas não detalha a construção interna ipad/opad — a fonte preenche exatamente essa lacuna de mecânica do algoritmo.
+
+**Páginas criadas:**
+- `wiki/sources/hmac-integridade-mensagem-local-first-entrevista.md`
+- `wiki/concepts/hmac.md` — novo conceito; mecânica da construção HMAC (ipad `0x36`/opad `0x5C`, normalização de chave, duas etapas de hash) que não tinha página própria — `webhook-signature-validation.md` já usava HMAC como caixa-preta, sem explicar por que a construção é resistente a ataque de extensão de mensagem
+- `wiki/concepts/local-first.md` — novo conceito; padrão de tratar dado do cliente como fidedigno para evitar custo de storage/lookup no servidor, com HMAC como mecanismo de integridade
+
+**Páginas atualizadas:**
+- `wiki/concepts/webhook-signature-validation.md` — `source_count` 1 → 2; nova seção "Como o HMAC é construído por baixo" linkando para o novo conceito
+- `wiki/concepts/criptografia.md` — `source_count` 2 → 3; nova seção "HMAC: um meio-termo entre hash e assinatura assimétrica"
+- `wiki/concepts/encryption.md` — `source_count` 2 → 3; nova seção "Integridade sem confidencialidade: quando encryption é a ferramenta errada"
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts na seção de Segurança
+
+**Notas:** Nenhuma contradição com a wiki existente — a fonte converge com `references/crypto.md` da skill (mesma tabela HMAC vs. assinatura assimétrica, mesmo motivo de custo computacional) e complementa `webhook-signature-validation.md` com a camada de mecânica interna que faltava. Duas lacunas da fonte registradas como Open Questions em `wiki/sources/hmac-integridade-mensagem-local-first-entrevista.md`: (1) o esquema descrito não tem timestamp/nonce contra replay, ao contrário do padrão já documentado para webhooks; (2) não fecha qual algoritmo de hash de bloco de 64 bytes é usado na prática além de citar MD5/SHA-1 como exemplo de tamanho de bloco. Autor/canal não identificado na transcrição — nenhuma entidade nova.
+
+---
+
+## [2026-04-22] ingest | 9 Hábitos que eu gostaria de ter aprendido sendo Programador Júnior
+
+**Source:** [[wiki/sources/9-habitos-programador-junior]] — transcrição de vídeo PT-BR (transcrição de fala corrida, sem pontuação) já em português, reescrita como markdown estruturado em `raw/9-habitos-programador-junior.md`, cruzada com o artigo original "9 Habits I Wish I Had as a Junior Developer" de Tom Hombergs.
+**Skill:** tech-mentor-leadership.
+
+**Páginas criadas:**
+- `wiki/sources/9-habitos-programador-junior.md`
+- `wiki/entities/tom-hombergs.md`
+- `wiki/concepts/voluntariar-para-desconhecido.md`
+- `wiki/concepts/comunicar-progresso.md`
+- `wiki/concepts/escrever-para-aprender.md`
+- `wiki/concepts/bloqueio-de-agenda.md`
+- `wiki/concepts/pausa-estrategica.md`
+- `wiki/concepts/fazer-por-voce.md`
+- `wiki/concepts/pair-programming.md`
+- `wiki/concepts/pomodoro.md`
+- `wiki/concepts/documentar-conquistas.md`
+- `wiki/concepts/sem-balas-de-prata.md`
+
+**Notas:** Entrada registrada retroativamente — as páginas já existiam no repositório (ingest anterior a este log ter sido consultado), mas `wiki/index.md` e `wiki/log.md` não tinham o registro correspondente. Este commit fecha esse drift, sem alterar o conteúdo já ingerido.
+
+---
+
+## [2026-07-10] ingest | Testes Unitários, Integração e E2E — uma conversa opinativa
+
+**Source:** [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — transcrição bruta de ASR (fala corrida, sem pontuação, com bloco publicitário no meio) colada pelo usuário, já em português (sem necessidade de tradução), reescrita como markdown estruturado em `raw/teste-unitario-integracao-e2e-opiniao.md`. O bloco de patrocínio (curso de investimentos) foi preservado por integridade da transcrição, mas isolado ao final, fora do corpo técnico.
+**Skill:** tech-mentor-testing — carregado `SKILL.md` em `/home/gabriel-martins/Documentos/skills/tech-mentor-testing/` (path real do repo). O índice da skill mapeia pirâmide/estratégia de testes, TDD, mocks e test doubles para `references/test-strategy.md` e `references/test-patterns.md`; conteúdo da fonte é consistente com o material de referência, sem contradições — é essencialmente uma opinião pessoal sobre como *alocar* investimento entre as três camadas já bem documentadas na wiki, não uma reformulação técnica delas.
+
+**Páginas criadas:**
+- `wiki/sources/teste-unitario-integracao-e2e-opiniao.md`
+- `wiki/concepts/criterios-de-bom-teste.md` — novo conceito; formaliza os cinco critérios (determinístico, conciso, relevante, compreensível, durável) que a fonte usa para avaliar testes de qualquer camada, e que não tinham página própria na wiki (apareciam espalhados/implícitos em `piramide-de-testes.md` e `gaming-de-testes-por-ia.md`)
+
+**Páginas atualizadas:**
+- `wiki/concepts/piramide-de-testes.md` — `source_count` 3 → 4; nova seção "Não é bem uma pirâmide — é alocação de recursos", com a tese central da fonte (custo de dev-time/infra como restrição real) e o achado de que E2E vale desproporcionalmente mais em código legado sem dono e desproporcionalmente menos em startups em pivot constante
+- `wiki/concepts/tdd.md` — `source_count` 5 → 6; nova seção curta ligando "100% coverage ≠ ausência de bugs" a [[wiki/concepts/criterios-de-bom-teste]]
+- `wiki/concepts/test-doubles.md` — `source_count` 2 → 3; nova seção sobre o limite do mock de banco (assertion de chamada não prova persistência)
+- `wiki/concepts/testar-proprio-codigo.md` — `source_count` 3 → 4; nova seção reforçando que testar além do happy path não garante ausência de bug, só não-regressão do que já foi pensado
+- `wiki/concepts/gaming-de-testes-por-ia.md` — `source_count` 1 → 2; nova seção ligando testes flaky/irrelevantes a serem terreno mais fácil para gaming (humano ou IA) — a fonte menciona explicitamente "vibe coding" mudando testes que falham em vez de corrigir o código, reforçando o padrão já documentado nesta página
+- `wiki/concepts/testes-integracao-banco-real.md` — `source_count` 2 → 3; nova seção sobre mock de banco mal pensado "não integrar de verdade"
+- `wiki/concepts/contract-testing.md` — `source_count` 2 → 3; nova seção sobre mockar as pontas de um fluxo (ex. PSP/fornecedor) como alternativa mais barata a ativar dependências reais
+- `wiki/concepts/teste-de-integracao-estreito-vs-amplo.md` — `source_count` 1 → 2; linha adicional em Key Sources com o caso prático de "amplo" ambíguo em sistema com dependências externas
+- `wiki/concepts/unit-test-solitario-vs-sociavel.md` — `source_count` 1 → 2; linha adicional em Key Sources com o exemplo da fonte (teste de `add` que socializa ao ganhar um `db.save` real)
+- `wiki/index.md` — nova linha em Sources; nova linha em "Testes & Qualidade" para `criterios-de-bom-teste`
+
+**Notas:** Nenhuma contradição encontrada com o que já estava documentado — a fonte é convergente com `piramide-de-testes.md`, `teste-de-integracao-estreito-vs-amplo.md` e `testes-integracao-banco-real.md`, mas adiciona uma camada de opinião/julgamento de custo-benefício que a wiki ainda não tinha explícita (a pirâmide como problema de alocação de recursos, não como hierarquia fixa). O autor/canal não se identifica na transcrição, então nenhuma entidade de autoria foi criada — registrado como open question na source. `raw/` contém a transcrição bruta original preservada (incluindo o trecho publicitário), sem edição de conteúdo.
+
+---
+
+## [2026-07-10] ingest | Estruturas de Dados, Algoritmos e Big O — Como Escolher
+
+**Source:** [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]] — transcrição bruta de ASR (fala em bloco único, sem pontuação) colada pelo usuário, já em português (sem necessidade de tradução), reescrita como markdown estruturado em `raw/estruturas-de-dados-algoritmos-big-o-como-escolher.md`. É a continuação direta anunciada em [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]] ("o vídeo anuncia continuação sobre Big O" — open question já registrada naquela fonte).
+**Skill:** cs-fundamentals — carregado `SKILL.md` em `/home/gabriel-martins/Documentos/skills/cs-fundamentals/` (path real do repo; o CLAUDE.md referencia um path antigo `/home/nemomartins/...` que não existe mais neste ambiente). Índice apontou para `references/algorithms-complexity.md`, consultado para validar a formalização O/Θ/Ω (limite superior/exato/inferior = pior/médio/melhor caso) e a análise amortizada — claims da fonte consistentes com a referência, sem contradições.
+
+**Páginas criadas:**
+- `wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher.md`
+- `wiki/concepts/melhor-caso-pior-caso-caso-medio.md` — novo conceito; formaliza a distinção que a fonte introduz via exemplo de busca linear
+- `wiki/concepts/time-space-tradeoff.md` — novo conceito; também fecha um link quebrado: [[wiki/sources/two-sum-explicacao]] já referenciava `[[concepts/time-space-tradeoff]]` desde 2026-04-23 sem a página existir
+
+**Páginas atualizadas:**
+- `wiki/concepts/big-o.md` — `source_count` 2 → 3; nova seção "As quatro curvas essenciais para começar" (O(1)/O(n)/O(log n)/O(n²) como ponto de partida antes da tabela completa) e nova frase de abertura sobre por que medir em milissegundos engana
+- `wiki/concepts/algoritmos-e-estruturas-de-dados.md` — `source_count` 6 → 7; nova seção "Como escolher a estrutura certa: operação primeiro" com o framework de quatro perguntas e a distinção estrutura de dados vs. algoritmo
+- `wiki/concepts/array.md`, `wiki/concepts/hashmap.md`, `wiki/concepts/fila.md` — `source_count` +1 cada; linha em Key sources amarrando ao exemplo específico usado na fonte (array como ponto de partida didático; hashmap como exemplo do trade-off tempo/memória; fila como exemplo de "operação onde ordem de chegada importa")
+- `wiki/concepts/algoritmos-de-busca.md` — `source_count` 1 → 2; busca linear agora documenta melhor caso O(1) além de pior/médio O(n); link para o novo conceito de melhor/pior/caso médio
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em "Fundamentos de CS" para os conceitos criados
+
+**Notas:** Conteúdo não contradiz nada já registrado — é estritamente aditivo e formaliza o que a fonte anterior deixou como pergunta em aberto. Nenhuma entidade nova. `raw/` recebeu apenas o novo arquivo desta transcrição; nenhum arquivo existente foi tocado.
+
+---
+
 ## [2026-07-09] ingest | Double Spend / Double Submit
 
 **Source:** [[wiki/sources/double-spend-double-submit]] — transcrição bruta de ASR (fala em bloco único, sem pontuação, com propaganda de patrocinador intercalada) colada pelo usuário, já em português (sem necessidade de tradução), reescrita como markdown estruturado por camada de solução em `raw/double-spend-double-submit.md`
@@ -2133,3 +2222,166 @@ Entities:
 - `wiki/concepts/comparacao-na-carreira.md` — listado nos "Conceitos Tocados" da source mas não citava a source de volta (backlink faltando); adicionada linha em Key Sources e `source_count` 4 → 5
 
 **Notas:** Nenhum conteúdo novo foi extraído da transcrição em si — o texto colado é idêntico ao já processado. O trabalho aqui foi puramente de reparo de drift (workflow de lint), não de ingest. `raw/` não foi tocado; `source_file` na frontmatter da source já apontava para o path correto do repo atual, sem necessidade de correção. As outras 5 páginas relacionadas (`profundidade-e-maestria`, `abrangencia-profissional`, `comunicacao-tecnica`, `curriculo-vs-portfolio`, `maturidade-tecnica`, `randy-nelson`) já citavam a source corretamente em "Key sources" — apenas a indexação central estava faltando.
+
+---
+
+## [2026-07-10] ingest | 5 (ou 6) Recursos Para Se Tornar um Desenvolvedor Melhor
+
+**Fonte:** [[wiki/sources/5-recursos-para-ser-um-desenvolvedor-melhor]] (Augusto Galego) — transcrição bruta salva em `raw/5-recursos-para-ser-um-desenvolvedor-melhor.md`.
+
+**Skill carregada:** `tech-mentor-leadership` (domínio de carreira/mentoria).
+
+**Páginas criadas:**
+- `wiki/sources/5-recursos-para-ser-um-desenvolvedor-melhor.md`
+- `wiki/concepts/roadmap-sh.md`
+- `wiki/concepts/documentacao-oficial-como-recurso.md`
+- `wiki/concepts/cs50.md`
+- `wiki/concepts/livros-recomendados-programador.md`
+- `wiki/concepts/contribuir-open-source.md`
+- `wiki/concepts/custo-beneficio-cursos-online.md`
+- `wiki/concepts/aprendizado-multimodal.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/good-first-issue.md` — já existia (criado a partir de [[wiki/sources/como-aprender-novas-codebases]] com foco em onboarding interno de time); enriquecido com a perspectiva complementar de contribuição externa a projetos open source, `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; nova seção "Recursos de Aprendizado" em Concepts com os 7 conceitos novos
+
+**Notas:** Vídeo opinativo sobre recursos de estudo — contesta LeetCode como melhor uso do tempo e propõe documentação oficial, roadmap.sh, CS50, uma seleção crítica de livros (Refactoring endossado sem ressalvas, Clean Code com reserva explícita sobre o autor), cursos com teto de preço (Udemy ~R$20-30, nunca R$5-10 mil para uma tecnologia pontual) e contribuição em open source via `good first issue`. Fecha reforçando que nenhum recurso substitui escrever muito código na prática. Nenhuma contradição relevante encontrada com o restante do wiki — a avaliação de Clean Code é subjetiva e fica registrada como tal, sem outra fonte no wiki que a contradiga ou reforce até o momento.
+
+---
+
+## [2026-07-10] ingest | Loop Engineering: Por Que Você Deveria Estar Desenhando Loops, Não Prompts
+
+**Fonte:** [[wiki/sources/loop-engineering-planner-critic-grafo]] (autor autoidentificado como "Hulk" na transcrição) — transcrição bruta traduzida/limpa salva em `raw/loop-engineering-planner-critic-grafo.md`.
+
+**Skill carregada:** `tech-mentor-ai` (domínio de agentes/harness/orquestração), referências `agentic-patterns-2025.md` (Padrão 1 — Planner-Executor-Critic) usadas para calibrar nomenclatura.
+
+**Páginas criadas:**
+- `wiki/sources/loop-engineering-planner-critic-grafo.md`
+- `wiki/concepts/loop-engineering.md`
+- `wiki/concepts/planner-executor-critic.md`
+- `wiki/concepts/rubrica-de-verificacao.md`
+- `wiki/concepts/langgraph.md`
+- `wiki/concepts/grafo-como-abstracao-de-agentes.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/harness.md` — nova seção "Próximo Degrau: Loop Engineering"; `source_count` 6 → 7
+- `wiki/concepts/ciclo-agente.md` — nova seção sobre sistematizar o brute-force com rúbrica+verificador; `source_count` 4 → 5
+- `wiki/concepts/subagentes.md` — nova seção sobre subagentes como executores num loop PEC; `source_count` 1 → 2
+- `wiki/sources/agentes-orquestracao.md` — **lint incidental**: os links `[[concepts/planner-executor-critic]]` e `[[concepts/langgraph]]` citados nessa fonte (2026-04-23) nunca tinham sido criados (drift pré-existente); corrigidos para `wiki/concepts/...` e agora resolvem para as páginas criadas nesta ingestão. Os outros 6 links quebrados dessa fonte (`supervisor-pattern`, `handoff-pattern`, `swarm-pattern`, `durable-execution`, `error-boundary-agents`, `checkpointing-agents`) **não** foram corrigidos — fora do escopo desta ingestão, sinalizados para lint futuro.
+- `wiki/index.md` — nova linha em Sources; 5 novos conceitos adicionados à seção "Agentes & LLMOps"
+
+**Notas:** Vídeo propõe uma progressão de abstração (prompt engineering → context engineering → harness engineering → loop engineering) e demonstra na prática um sistema Planner-Executor-Critic: um Planner (GPT-5.5) decompõe a entrada em até ~160 subtarefas simultâneas, gerando prompt e rúbrica para cada subagente; um Verificador — obrigatoriamente um modelo diferente do executor, para evitar bias — julga o resultado contra a rúbrica e gera follow-ups (até 3 tentativas no exemplo mostrado) ou aprova. O vídeo defende o grafo (G=(V,E), nós=computação/LLM, arestas=condição de fluxo determinística) como abstração central, independente de LangGraph ou qualquer outro framework. Reforça diretamente [[wiki/sources/agentes-orquestracao]], que já citava Planner-Executor-Critic e LangGraph em termos quase idênticos mas sem exemplo prático nem páginas de conceito criadas — esta ingestão preenche essa lacuna. Sem contradições novas com o resto do wiki; reconhece a mesma tensão token-infinito-vs-qualidade-de-codebase já registrada em [[wiki/concepts/vibe-coding-limites-maturidade-profissional]]. Autoria do vídeo ("Hulk") não verificada externamente — mantida como consta na transcrição, sem criar entidade dedicada dado o baixo grau de confiança na identificação.
+
+---
+
+## [2026-07-10] ingest | Chaves SSH — Como Funcionam, Servidor, Cliente e Configuração
+
+**Fonte:** [[wiki/sources/ssh-chaves-como-funcionam]] — transcrição de vídeo já em português (sem necessidade de tradução), limpa de repetições/disfluências de fala e organizada em seções, salva em `raw/ssh-chaves-como-funcionam.md`.
+
+**Skill carregada:** `tech-mentor-security`, seção "Identidade & Acesso" (`references/identity-iam.md`, exemplo Teleport para acesso unificado SSH) e "Criptografia" (`references/crypto.md`, criptografia assimétrica) usadas para calibrar nomenclatura e evitar tratar SSH como "encriptação de dados" quando na verdade é prova-de-posse de chave (mais próximo de assinatura digital).
+
+**Nota sobre paths do CLAUDE.md:** a skill em `/home/nemomartins/Documentos/new/skills/` referenciada no CLAUDE.md deste repo não existe neste ambiente — o diretório real de skills é `/home/gabriel-martins/Documentos/skills/`. Usado o path real; sinalizado para o usuário corrigir o CLAUDE.md se for drift de configuração.
+
+**Páginas criadas:**
+- `wiki/sources/ssh-chaves-como-funcionam.md`
+- `wiki/concepts/ssh.md`
+- `wiki/concepts/hardening-de-servidor.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/encryption.md` — nova linha na seção "Assimétrica" ligando Ed25519/SSH ao par chave pública/privada; `source_count` 1 → 2
+- `wiki/concepts/criptografia.md` — nota após "Assinatura digital" enquadrando autenticação SSH como prova-de-posse, não encriptação de dados; `source_count` 1 → 2
+- `wiki/concepts/principio-do-menor-privilegio.md` — nova frase ligando chave SSH + bastion host como duas camadas de menor privilégio (rede + credencial); `source_count` 1 → 2
+- `wiki/concepts/defense-in-depth.md` — hardening de infraestrutura adicionado como camada fora da pilha de aplicação já listada; `source_count` 1 → 2
+- `wiki/concepts/secure-by-default.md` — exemplo de sshd com defaults de distro mais fracos, reforçados explicitamente; `source_count` 1 → 2
+- `wiki/concepts/attack-surface.md` — `AllowTcpForwarding no` e `PermitRootLogin no` como redução de superfície na camada de SO; `source_count` 2 → 3
+- `wiki/index.md` — nova linha em Sources; 2 novos conceitos (`ssh`, `hardening-de-servidor`) na seção "Segurança de APIs & Arquitetura"
+
+**Notas:** Vídeo prático (dois containers Docker como cliente/servidor) cobrindo o ciclo completo de chave SSH: gerar par com `ssh-keygen -t ed25519`, autorizar via `authorized_keys`, permissões de arquivo (`700` no diretório, restrito ao dono na chave privada, `644` na pública), configuração do daemon (`sshd_config.d/*.conf`, `PubkeyAuthentication yes` + senha desativada) e aliases de cliente (`~/.ssh/config` com `IdentitiesOnly yes`). Reforça diretamente [[wiki/concepts/encryption]] e [[wiki/concepts/criptografia]] com um exemplo concreto de criptografia assimétrica fora do contexto de TLS/HTTPS já documentado nessas páginas. Também demonstra em código o padrão narrado em [[wiki/concepts/principio-do-menor-privilegio]] (bastion host via SSH) — antes só citado como exemplo abstrato, agora com o mecanismo de autenticação detalhado. Sem contradições com o resto do wiki. Uma alegação de confiança média não verificada nesta ingestão: a ordem exata de leitura de `sshd_config.d/*.conf` pelo OpenSSH (primeira regra que casa prevalece) — fica registrada como open question na fonte para checagem futura contra a documentação oficial do OpenSSH.
+
+---
+
+## [2026-07-10] ingest | Golang: Mercado, Salários e Pesquisa Código Fonte TV (2024)
+
+**Fonte:** [[wiki/sources/golang-mercado-salarios-pesquisa-2024]] — transcrição de fala corrida em português (sem necessidade de tradução), limpa e organizada em seções, salva em `raw/golang-mercado-salarios-pesquisa-2024.md`. Vídeo do canal Código Fonte TV cruzando a pesquisa salarial própria do canal (pesquisa.codefonte.com.br) com o Go Developer Survey oficial do Google.
+
+**Skill carregada:** `tech-mentor-leadership` (mesma skill usada em [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]], tema equivalente de carreira/mercado para Go), seção "Carreira & Níveis" (`references/career-progression.md`) consultada para calibrar linguagem de salário/nível.
+
+**Páginas criadas:**
+- `wiki/sources/golang-mercado-salarios-pesquisa-2024.md`
+- `wiki/entities/codigo-fonte-tv.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/go-fundamentos.md` — nova frase na seção "Design Cloud Native" com dados de uso do Go Developer Survey (74% API/RPC, maior fatia de experiência 16+ anos); `source_count` 2 → 3
+- `wiki/concepts/go-ecossistema.md` — nova seção "Uso Declarado em Produção" cruzando stdlib/ecossistema já documentado com uso real reportado e vagas reais do LinkedIn (Clean Architecture, microsserviços, AWS/GCP); `source_count` 1 → 2
+- `wiki/concepts/ciclo-de-mercado-tech.md` — nova frase dando números concretos (Go paga mais que Java em todos os níveis, maior gap no Sênior) ao mecanismo de oferta/demanda já descrito; `source_count` 3 → 4
+- `wiki/concepts/modelo-trimodal-compensacao.md` — nova seção "Um Segundo Eixo: Linguagem/Stack, não só Tier de Empresa" distinguindo o eixo de tier de empresa (Orosz) do eixo de raridade de stack (Go vs Java); `source_count` 1 → 2
+- `wiki/concepts/dolarizacao-de-renda.md` — nova seção "Especialização em Nicho como Via de Acesso" com o dado de 27,7% dos devs Go no Brasil atuando remoto para o exterior vs. 12% em Java; `source_count` 1 → 2
+- `wiki/concepts/ponte-fullstack-para-especializacao.md` — nova seção "Dado de Mercado que Sustenta a Estratégia" com o perfil de experiência dos devs Go (majoritariamente seniors migrando de stack); `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; nova linha em Entities (`codigo-fonte-tv`)
+
+**Notas:** Vídeo de dados/pesquisa (não opinativo como a fonte irmã [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]) trazendo números concretos que sustentam claims que antes só existiam como opinião qualificada no wiki: salário Go > Java em todos os níveis (maior gap no Sênior, ~R$6.000/mês), 93-97% de satisfação em duas pesquisas independentes (Google e Código Fonte), e 27,7% dos devs Go no Brasil trabalhando remoto para empresas estrangeiras (vs. 12% em Java). Reforça diretamente [[wiki/concepts/ciclo-de-mercado-tech]] (a "onda Go" tem números reais por trás) e [[wiki/concepts/ponte-fullstack-para-especializacao]] (o perfil etário/experiência dos devs Go confirma que júnior/pleno concorre contra seniors migrando de stack, não contra outros júniors). Também abre uma conexão nova com [[wiki/concepts/modelo-trimodal-compensacao]] — até agora esse conceito só descrevia variação por tier de empresa (Orosz); esta fonte evidencia um eixo independente, raridade de stack, operando pelo mesmo mecanismo de oferta/demanda. Uma inconsistência não resolvida na própria fonte: o valor de PJ em Go citado na fala ("211.000") é quase certamente erro de transcrição para R$ 21.000 — mantido como open question na fonte, sem correção silenciosa do dado original.
+
+---
+
+## [2026-07-10] ingest | A Filosofia do Design de Software — Introdução (Cap. 1)
+
+**Fonte:** [[wiki/sources/filosofia-do-design-de-software-introducao]] — transcrição em inglês do capítulo introdutório de *A Philosophy of Software Design* (John Ousterhout), traduzida integralmente para português e salva em `raw/filosofia-do-design-de-software-introducao.md`.
+
+**Skill carregada:** `tech-mentor-backend`, seção "Evolutionary Architecture & Quality" (`references/architecture-evolutionary.md`) consultada para calibrar linguagem de qualidade/complexidade arquitetural — mesma skill já usada em [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]], que citava este mesmo autor de segunda mão.
+
+**Páginas criadas:**
+- `wiki/sources/filosofia-do-design-de-software-introducao.md`
+- `wiki/concepts/modelo-cascata-vs-desenvolvimento-incremental.md`
+- `wiki/concepts/red-flags-de-design.md`
+
+**Páginas atualizadas:**
+- `wiki/entities/john-ousterhout.md` — nova seção "Do capítulo introdutório (fonte primária)"; `status` stub → draft; `source_count` 1 → 2
+- `wiki/concepts/modulo-profundo.md` — nova seção "Origem no enquadramento geral do livro" ligando módulos profundos às duas estratégias gerais contra complexidade (eliminar vs. encapsular) que abrem o livro; `source_count` 1 → 2
+- `wiki/concepts/accidental-complexity.md` — nova seção "Modelo cascata como gerador estrutural de complexidade acidental", mecanismo causal de processo (Ousterhout) complementar ao diagnóstico de Fred Brooks já documentado; `source_count` 2 → 3
+- `wiki/concepts/arquitetura-de-software.md` — nova seção "Design de arquitetura como processo contínuo, não fase única"; citação de Ousterhout deixa de ser só de segunda mão; `source_count` 3 → 4
+- `wiki/concepts/code-review.md` — nova seção "Code review como método de treino de design, não só de correção"; `source_count` 1 → 2
+- `wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia.md` — nota de atualização apontando para a nova fonte primária que confirma a citação de segunda mão de Ousterhout
+- `wiki/index.md` — nova linha em Sources; 2 novas linhas em Concepts (seção "Boas Práticas de Engenharia")
+
+**Notas:** Primeira ingestão de texto primário do próprio livro de Ousterhout — até aqui só existia citação de segunda mão via uma palestra de Matt Pocock ([[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]). O capítulo 1 traz o enquadramento geral que faltava: complexidade como a real limitação ao escrever software (não física, não de ferramentas), as duas estratégias gerais contra ela (eliminar vs. encapsular — sendo [[wiki/concepts/modulo-profundo]] a elaboração detalhada da segunda, já documentada), por que o modelo cascata falha estruturalmente para software (sem mecanismo de retorno ao design quando os problemas do design inicial aparecem), e o método de trabalho recomendado para todo o livro: reconhecer "red flags" de design, best exercitado via code review do código de outra pessoa. Conecta-se de forma nova com [[wiki/concepts/accidental-complexity]] — Fred Brooks (já documentado) descreve *o quê* é complexidade acidental e suas formas comuns; Ousterhout aqui descreve um mecanismo causal de *processo* (ausência de revisão de design pós-implementação) que explica por que ela se acumula sem correção sob cascata. Sem contradições com o resto do wiki. Uma lacuna registrada como open question na fonte: o texto cita "define errors out of existence" como exemplo de princípio do livro mas não o desenvolve — capítulo dedicado a esse tópico ainda não foi ingerido.
+
+---
+
+## [2026-07-10] ingest | Mappers — Conversão de Entidades Entre Camadas
+
+**Fonte:** [[wiki/sources/mappers-conversao-entre-camadas]] — transcrição de fala corrida em português (sem necessidade de tradução), limpa e organizada em seções, salva em `raw/mappers-conversao-entre-camadas.md`. Vídeo de aula prática sobre uma aplicação de notificações em camadas (entities, use case, HTTP, repositório Prisma).
+
+**Skill carregada:** `tech-mentor-backend`, seção "Clean Architecture, Ports & Adapters, DDD" (`references/architecture-foundations.md`) consultada para calibrar terminologia de Repository/DDD; nenhuma entrada explícita de "mapper" no índice da skill, então o conceito foi calibrado por analogia com Repository/Adapter já presentes na referência.
+
+**Páginas criadas:**
+- `wiki/sources/mappers-conversao-entre-camadas.md`
+- `wiki/concepts/mapper-pattern.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/repository-pattern.md` — nova frase ligando Data Mapper ao `mapper-pattern` como implementação concreta da conversão campo-a-campo; `source_count` 1 → 2
+- `wiki/concepts/adapter-pattern.md` — nova seção "Diferença do Mapper" distinguindo conversão de interface (Adapter) de conversão de forma de dados (Mapper); `source_count` 2 → 3
+- `wiki/concepts/hexagonal-architecture.md` — frase no componente Adapter apontando o mapper como peça interna de um adapter de persistência; `source_count` 2 → 3
+- `wiki/concepts/ddd.md` — nova seção "Value Object Precisa Ser Desembrulhado na Borda" ligando mapper ao desembrulho de Value Objects na conversão para persistência; `source_count` 2 → 3
+- `wiki/sources/presenters.md` — nota de atualização cruzando Presenter (caso HTTP) com Mapper (caso genérico/persistência) como a mesma solução em camadas diferentes
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção "Padrões e Design")
+
+**Notas:** Fonte prática e específica (um único exemplo de código: `Notification` + Prisma), mas o conceito generaliza bem — cria uma página nova (`mapper-pattern`) que várias páginas já existentes tangenciavam sem nomear explicitamente: [[wiki/concepts/repository-pattern]] já citava "Data Mapper" como padrão de persistência (Prisma, Doctrine) mas sem descrever a mecânica da conversão; [[wiki/sources/presenters]] já descrevia exatamente o mesmo problema (mesma entidade, formato diferente por camada) só que do lado HTTP, sem nomear a solução como "mapper". A distinção mais nova e potencialmente reutilizável: Mapper vs. Adapter — ambos convertem entre formatos incompatíveis, mas Adapter resolve incompatibilidade de **interface/comportamento** e Mapper resolve incompatibilidade de **forma de dados**, uma distinção que não estava formalizada em nenhuma página antes desta ingestão. Sem contradições com o resto do wiki. Open question registrada na fonte: o vídeo não mostra o mapper simétrico (`toDomain`, reconstruindo a entidade com Value Objects a partir da linha crua do banco) — só o sentido `toPrisma`.
+
+---
+
+## [2026-07-10] ingest | Os 8 Tipos de JavaScript
+
+**Fonte:** [[wiki/sources/8-tipos-de-javascript]] — transcrição de vídeo em português (sem necessidade de tradução), limpa e organizada em seções, salva em `raw/8-tipos-de-javascript.md`. Qualidade da transcrição original era baixa (erros de reconhecimento de fala como "true string" para `toString`); texto corrigido por inferência de contexto técnico.
+
+**Skill carregada:** `lang-dynamic` (JavaScript/tipagem dinâmica), seguindo a convenção de tag já usada em [[wiki/sources/5-dicas-performance-javascript]].
+
+**Páginas criadas:**
+- `wiki/sources/8-tipos-de-javascript.md`
+- `wiki/concepts/tipos-primitivos-javascript.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/pitfalls-de-linguagem.md` — expandida a seção de coerção implícita com o mecanismo detalhado de `typeof null`, `==` vs `===` (com exemplo concreto `null == undefined`), e a distinção parâmetro default (`undefined`) vs. fallback `||` (qualquer falsy); `source_count` 1 → 2
+- `wiki/concepts/sistema-de-tipos.md` — nova seção "'Tipagem fraca' é um eixo diferente de estática/dinâmica", distinguindo o eixo já documentado (quando os tipos são checados) do eixo de conversão implícita que esta fonte traz; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção "JavaScript / Node.js Performance")
+
+**Notas:** Fonte didática cobrindo os 8 tipos primitivos de JavaScript (`null`, `undefined`, `boolean`, `number`, `bigint`, `string`, `symbol`, `object`) e duas formas de checagem de tipo (`typeof` vs. `Object.prototype.toString.call()`), com ênfase nas armadilhas de conversão implícita de tipo. Conecta-se com duas páginas já existentes sem sobrepor: [[wiki/concepts/pitfalls-de-linguagem]] já citava `typeof null` e `==` vs `===` como armadilhas gerais de JS, mas sem o mecanismo interno (por que `typeof null` é `"object"`, e como `Object.prototype.toString.call()` é historicamente usado — ex. Underscore — como alternativa mais precisa); [[wiki/concepts/sistema-de-tipos]] descrevia tipagem estática vs. dinâmica como o eixo central de sistemas de tipos, e esta fonte deixa explícito que "tipagem fraca" (o rótulo comum para JS) é um eixo ortogonal — sobre conversão implícita, não sobre quando o erro é pego. Distinção nova e potencialmente reutilizável, não formalizada antes: parâmetros default de função reagem apenas a `undefined`, enquanto expressões com `||` reagem a qualquer valor falsy — confundir os dois é fonte comum de bugs silenciosos (ex.: `bar(0)` se comporta diferente dependendo de qual mecanismo é usado). Sem contradições com o resto do wiki. Open question registrada na fonte: autoria do vídeo não identificada com confiança (transcrição ambígua no trecho de autoapresentação) — nenhuma página de entidade foi criada para evitar atribuição incorreta.

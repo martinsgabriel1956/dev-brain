@@ -3,8 +3,8 @@ type: concept
 title: "Testar o Próprio Código"
 aliases: ["self testing", "testes automatizados", "testar antes de entregar", "happy path só"]
 date_created: 2026-04-22
-date_updated: 2026-04-26
-source_count: 3
+date_updated: 2026-07-10
+source_count: 4
 tags: [testes, hábitos, qualidade, craftsmanship, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -57,8 +57,13 @@ Usuários não seguem o fluxo esperado. Eles digitam emoji em campos de nome, su
 
 > "O impossível se torna possível no segundo em que alguém começa a digitar." — [[sources/5-principios-programador]]
 
+## Testar além do happy path não garante ausência de bug
+
+Mesmo cobrindo erros e edge cases previstos, teste nenhum garante que não existe bug — só garante que os cenários *pensados* não regridem. Ver [[criterios-de-bom-teste]].
+
 ## Key Sources
 
 - [[wiki/sources/habitos-ruins-de-programador]]
 - [[sources/5-principios-programador]]
 - [[wiki/sources/4-habitos-programador-ineficiente]]
+- [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — teste não previne bug não-imaginado, só regressão do que já foi pensado

@@ -3,8 +3,8 @@ type: concept
 title: "Fila (Queue)"
 aliases: ["queue", "FIFO", "fila de dados"]
 date_created: 2026-06-01
-date_updated: 2026-07-09
-source_count: 2
+date_updated: 2026-07-10
+source_count: 3
 tags: [cs-fundamentals, estruturas-de-dados, fila, queue, fifo]
 skill: cs-fundamentals
 status: draft
@@ -58,3 +58,4 @@ Esta página trata da **estrutura de dados** fila. Sistemas de mensageria como K
 
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
 - [[wiki/sources/pub-sub-message-queue-bullmq-na-pratica]]
+- [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]] — "pegar o próximo job" como exemplo canônico de operação onde a ordem de chegada é o critério de escolha da estrutura

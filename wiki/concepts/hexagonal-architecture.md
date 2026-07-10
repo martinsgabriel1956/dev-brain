@@ -3,8 +3,8 @@ type: concept
 title: "Hexagonal Architecture (Ports & Adapters)"
 aliases: ["arquitetura hexagonal", "ports and adapters", "ports adapters", "hexagonal"]
 date_created: 2026-05-04
-date_updated: 2026-05-04
-source_count: 2
+date_updated: 2026-07-10
+source_count: 3
 tags: [arquitetura, hexagonal, ports-adapters, acoplamento, testabilidade]
 skill: tech-mentor-backend
 status: stable
@@ -33,6 +33,8 @@ interface UserRepository {
 
 ### Adapter (Implementação)
 Implementa o contrato. Pode ser trocado sem quebrar o domínio.
+
+Dentro de um adapter de persistência, a conversão campo-a-campo entre a entidade de domínio e o formato exigido pela tecnologia concreta (ex: Prisma) costuma ser isolada num [[wiki/concepts/mapper-pattern]] dedicado — mantém o adapter enxuto e concentra a lógica de conversão num único lugar, reaproveitável em todos os métodos do repositório.
 
 ```typescript
 class InMemoryUserAdapter implements UserRepository {
@@ -122,3 +124,4 @@ it("should throw when email already exists", async () => {
 
 - [[sources/hexagonal-architecture]] — referência técnica aprofundada (Alistair Cockburn, driving/driven ports)
 - [[sources/ports-and-adapters-codebase-para-ia]] — antes/depois com exemplo de blog + ângulo de IA
+- [[wiki/sources/mappers-conversao-entre-camadas]] — mapper como peça dentro do adapter de persistência

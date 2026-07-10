@@ -3,8 +3,8 @@ type: concept
 title: "Testes de Integração com Banco Real"
 aliases: ["testes integração banco", "não mockar banco", "banco de teste dedicado"]
 date_created: 2026-04-25
-date_updated: 2026-07-07
-source_count: 2
+date_updated: 2026-07-10
+source_count: 3
 tags: [testes, integracao, banco-de-dados, portfolio, backend]
 skill: tech-mentor-leadership
 status: stable
@@ -63,7 +63,12 @@ Bater no banco real não é a mesma coisa que um [[teste-de-integracao-estreito-
 - [[idempotencia]] — testes de integração validam idempotência de operações
 - [[teste-de-integracao-estreito-vs-amplo]] — por que banco real não é "teste amplo" no sentido de Fowler
 
+## Um mock de banco mal pensado "não integra"
+
+Se o double do banco não reproduz os mesmos problemas do banco real (constraints, tipos, comportamento de driver), o teste de integração que o usa não está de fato validando integração nenhuma — é só um teste mais fraco escrito pelo próprio autor do código, testando as próprias suposições em vez da realidade.
+
 ## Key sources
 
 - [[wiki/sources/diferenciais-portfolio-backend-junior]]
 - [[wiki/sources/integration-test-martin-fowler]]
+- [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — "se você não criar o banco de dados de teste real, você está testando um mock que você mesmo escreveu"

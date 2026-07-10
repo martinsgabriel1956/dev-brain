@@ -3,8 +3,8 @@ type: concept
 title: "Code Review"
 aliases: ["revisão de código", "pull request review", "PR review"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 1
+date_updated: 2026-07-10
+source_count: 2
 tags: [code-review, qualidade, carreira, júnior, mentoria]
 skill: tech-mentor-leadership
 status: draft
@@ -41,12 +41,18 @@ A crítica é ao código, não à pessoa — ver [[wiki/concepts/inteligencia-em
 
 O trabalho não termina no merge: validar manualmente em produção após o deploy faz parte do ciclo — ver [[wiki/concepts/pensamento-em-producao]].
 
+## Code review como método de treino de design, não só de correção
+
+[[wiki/sources/filosofia-do-design-de-software-introducao]] (John Ousterhout) argumenta que code review é o veículo prático recomendado para aplicar princípios de design abstratos: é mais fácil ver problemas de design no código de outra pessoa do que no próprio. A ferramenta concreta são os [[wiki/concepts/red-flags-de-design|red flags de design]] — sinais de que um trecho está mais complicado do que precisa. Isso é um ângulo diferente do já documentado nesta página (que foca em regra de negócio e comunicação): aqui code review é também prática deliberada de reconhecimento de complexidade desnecessária, que compõe ao longo do tempo com a experiência de quem revisa.
+
 ## Relacionado
 
 - [[wiki/concepts/definicao-de-pronto]] — code review é um dos critérios de "pronto"
 - [[wiki/concepts/mentoria-tecnica]] — quem revisa está, na prática, mentorando
 - [[wiki/concepts/sindrome-do-impostor]] — reação emocional comum a comentários de review
+- [[wiki/concepts/red-flags-de-design]] — heurística concreta para o que procurar durante a revisão
 
 ## Key Sources
 
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]]
+- [[wiki/sources/filosofia-do-design-de-software-introducao]]

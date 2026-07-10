@@ -3,8 +3,8 @@ type: concept
 title: "Sistema de Tipos"
 aliases: ["type system", "tipagem estática", "tipagem dinâmica", "inferência de tipos", "static vs dynamic typing"]
 date_created: 2026-07-09
-date_updated: 2026-07-09
-source_count: 1
+date_updated: 2026-07-10
+source_count: 2
 tags: [cs-fundamentals, linguagens-de-programacao, tipagem, compiladores]
 skill: cs-fundamentals
 status: draft
@@ -25,6 +25,10 @@ Conjunto de regras que decide o que uma linguagem considera um valor válido de 
 
 Exemplo do trade-off prático: somar um número com uma string. Em JavaScript (dinâmica), o número é convertido e concatenado silenciosamente. Em Python (dinâmica), lança erro em runtime. Numa linguagem estaticamente tipada como Rust, essa operação inválida nem passa pela compilação.
 
+### "Tipagem fraca" é um eixo diferente de estática/dinâmica
+
+JavaScript costuma ser descrito como de "tipagem fraca" — não porque os tipos sejam checados em momento diferente (isso é o eixo estática/dinâmica acima), mas porque a linguagem **converte tipos implicitamente** em vez de lançar erro (`"1" + 2` → `"12"`, `null == undefined` → `true`). Ver [[wiki/concepts/tipos-primitivos-javascript]] para os 8 tipos primitivos de JS e o detalhamento de onde essa conversão implícita acontece (concatenação, `==`, parâmetros default vs. `||`).
+
 ## Inferência de tipos — o meio-termo
 
 Linguagens como TypeScript e Rust deduzem o tipo sem exigir declaração explícita: `let x = 42` já é reconhecido como número pelo compilador. Mantém boa parte da segurança da tipagem estática com a concisão da dinâmica.
@@ -41,3 +45,4 @@ Um sistema de tipos completo também precisa decidir: se uma função pode retor
 ## Key sources
 
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]]
+- [[wiki/sources/8-tipos-de-javascript]]

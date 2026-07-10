@@ -3,8 +3,8 @@ type: concept
 title: "Harness"
 aliases: ["AI harness", "harness de IA", "coding harness"]
 date_created: 2026-06-02
-date_updated: 2026-06-09
-source_count: 6
+date_updated: 2026-07-10
+source_count: 7
 tags: [harness, llm, tool-call, agente, context-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -74,6 +74,10 @@ IDE e harness são camadas separadas. O harness usa `read_file`/`write_file` ind
 
 Dados de campo do Cursor (2026) mostram o harness em maturidade: code review automatizado por t-shirt size, specs estruturadas para agentes, MCP central com governança, self-healing por request, agents que abrem PRs sozinhos. Construir essa infraestrutura — não escrever o código em si — é a face 2 do [[product-engineer]]. A evolução do dev não é "deixar de construir" — é construir em camada diferente.
 
+## Próximo Degrau: Loop Engineering
+
+Depois de harness engineering (melhorar o ambiente ao redor do modelo), o degrau seguinte é [[wiki/concepts/loop-engineering|loop engineering]] — melhorar o ciclo completo de execução como estrutura repetível e disparável automaticamente (por prompt, schedule ou evento), não apenas uma execução isolada.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
@@ -82,3 +86,4 @@ Dados de campo do Cursor (2026) mostram o harness em maturidade: code review aut
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/formacao-ia-devs-aula-01-context-harness-engineering]]
 - [[wiki/sources/product-engineer-vale-do-silicio-2026]]
+- [[wiki/sources/loop-engineering-planner-critic-grafo]] — propõe loop engineering como degrau seguinte a harness engineering

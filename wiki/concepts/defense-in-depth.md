@@ -3,8 +3,8 @@ type: concept
 title: "Defense in Depth"
 aliases: ["defense in depth", "defesa em profundidade", "camadas de segurança", "layered security"]
 date_created: 2026-06-05
-date_updated: 2026-06-05
-source_count: 1
+date_updated: 2026-07-10
+source_count: 2
 tags: [defense-in-depth, security, arquitetura-seguranca, least-privilege, gatekeeper, waf]
 skill: tech-mentor-security
 status: stable
@@ -37,8 +37,10 @@ Cada camada é independente: um serviço interno ainda valida input mesmo que ve
 - [[concepts/waf]] — camada antes do gateway (borda de rede)
 - [[concepts/token-relay-pattern]] — garante que identidade e autorização persistam em todas as camadas internas
 - [[concepts/valet-key-pattern]] — aplica least privilege na camada de credenciais
+- [[wiki/concepts/hardening-de-servidor]] — camada de infraestrutura (SO/serviço), fora da pilha de aplicação listada acima
 
 ## Key Sources
 
 - [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — as 5 práticas do Pragmatic Programmer como instâncias de camadas de defense in depth
+- [[wiki/sources/ssh-chaves-como-funcionam]] — hardening de SSH como exemplo de camada de infraestrutura

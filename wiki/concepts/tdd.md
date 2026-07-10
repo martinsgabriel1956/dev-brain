@@ -3,8 +3,8 @@ type: concept
 title: "TDD — Test-Driven Development"
 aliases: ["test driven development", "red green refactor", "desenvolvimento guiado por testes"]
 date_created: 2026-04-22
-date_updated: 2026-07-09
-source_count: 5
+date_updated: 2026-07-10
+source_count: 6
 tags: [testes, tdd, design, red-green-refactor, qualidade, dora]
 skill: tech-mentor-testing
 status: stable
@@ -92,6 +92,10 @@ A mesma fonte argumenta que testar é intrinsecamente difícil (decidir tamanho 
 
 Contraintuitivamente, aplicar TDD não torna a entrega mais lenta — a pesquisa [[dora-metrics|DORA]] (*Accelerate*) mostra que equipes com melhores práticas de engenharia (incluindo testes automatizados como pré-condição para deploy contínuo) entregam com mais frequência e menor lead time, não menos. TDD é parte do que torna um sistema seguro de mudar rapidamente — sem ele, cada mudança exige validação manual, que é o gargalo real. Ver [[over-engineering]] para a discussão mais ampla dessa correlação.
 
+## 100% de cobertura não é o objetivo
+
+Cobertura alta prova que uma linha foi executada, não que ela foi exercitada com os valores certos — não existe forma de testar (via TDD ou não) um bug que ninguém pensou em cobrir. Ver [[criterios-de-bom-teste]] para os cinco critérios (determinístico, conciso, relevante, compreensível, durável) usados para julgar se um teste feito sob TDD realmente vale o ciclo red-green-refactor.
+
 ## Key Sources
 
 - [[wiki/sources/tdd]]
@@ -101,3 +105,4 @@ Contraintuitivamente, aplicar TDD não torna a entrega mais lenta — a pesquisa
 - [[wiki/sources/integration-test-martin-fowler]]
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
 - [[wiki/sources/como-evitar-over-engineering-david-farley]]
+- [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — cobertura alta ≠ ausência de bugs

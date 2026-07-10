@@ -3,7 +3,7 @@ type: source
 title: "Fundamentos de Software Importam Mais que Nunca na Era da IA"
 aliases: ["software fundamentals matter more than ever", "code is not cheap", "palestra matt pocock ia"]
 date_created: 2026-07-09
-date_updated: 2026-07-09
+date_updated: 2026-07-10
 source_file: /home/gabriel-martins/Documentos/dev-brain/raw/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia.md
 source_url: ""
 author: "Matt Pocock (AI Hero)"
@@ -65,6 +65,8 @@ Palestra de Matt Pocock (aihero.dev) argumentando que **código não é barato**
 - [[wiki/concepts/entendimento-de-dominio]]
 - [[wiki/concepts/prd-product-requirements-document]]
 - [[wiki/concepts/tech-spec]]
+
+**Nota de atualização (2026-07-10):** [[wiki/sources/filosofia-do-design-de-software-introducao]] ingeriu o capítulo introdutório do próprio livro de Ousterhout citado aqui de segunda mão — traz a fonte primária que confirma a definição de complexidade citada nesta palestra e adiciona o contexto que faltava aqui: as duas estratégias gerais do livro (eliminar vs. encapsular via módulos profundos) e por que design é processo contínuo, nunca uma fase única.
 
 ## Open Questions
 

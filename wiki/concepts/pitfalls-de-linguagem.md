@@ -3,8 +3,8 @@ type: concept
 title: "Pitfalls de Linguagem"
 aliases: ["language pitfalls", "armadilhas de linguagem", "gotchas", "bad parts"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-10
+source_count: 2
 tags: [javascript, typescript, linguagem, qualidade, anti-pattern]
 skill: tech-mentor-leadership
 status: stable
@@ -39,7 +39,11 @@ for (var i = 0; i < 3; i++) {
 
 **`with` statement** — cria escopo dinâmico, impossível de otimizar, proibido em strict mode.
 
-**`==` vs `===`** — coerção de tipo em `==` produz resultados contraintuitivos.
+**`==` vs `===`** — coerção de tipo em `==` produz resultados contraintuitivos. Exemplo: `null == undefined` → `true` (coerção), mas `null === undefined` → `false` (comparação estrita, sem conversão).
+
+**`typeof null === "object"`** — bug histórico da linguagem, mantido por compatibilidade retroativa. Internamente tudo em JS deriva de `Object`, então `typeof` erra nesse caso. `Object.prototype.toString.call(null)` (→ `"[object Null]"`) é uma forma mais precisa de checar tipo, historicamente usada em bibliotecas como Underscore. Ver [[wiki/concepts/tipos-primitivos-javascript]] para os 8 tipos primitivos e a comparação completa `typeof` vs. `Object.prototype.toString.call()`.
+
+**Parâmetro default vs. `||` fallback — pitfall sutil.** `function bar(a = [1,2,3])` só usa o default quando `a` é `undefined` — `bar(null)` retorna `null`. Já `a = a || [1,2,3]` substitui *qualquer* valor falsy (incluindo `0` e `null`), não só `undefined`. Confundir os dois mecanismos é fonte comum de bugs silenciosos.
 
 ## O padrão geral
 
@@ -62,3 +66,4 @@ Conhecer os pitfalls permite usar a linguagem com as partes boas e evitar as arm
 ## Key Sources
 
 - [[sources/principio-da-inversao-programador]]
+- [[wiki/sources/8-tipos-de-javascript]]

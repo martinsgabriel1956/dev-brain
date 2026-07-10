@@ -3,8 +3,8 @@ type: concept
 title: "Secure by Default"
 aliases: ["secure defaults", "defaults seguros", "fail-secure", "segurança por padrão"]
 date_created: 2026-06-10
-date_updated: 2026-06-10
-source_count: 1
+date_updated: 2026-07-10
+source_count: 2
 tags: [security, secure-defaults, appsec, ux-seguranca, defense-in-depth]
 skill: tech-mentor-security
 status: stable
@@ -46,6 +46,9 @@ Boas empresas exigem troca de senha padrão + ativação de 2FA na primeira sema
 **S3 e recursos de storage**
 O padrão de qualquer recurso de storage deve ser privado. Tornar público deve ser uma ação explícita e deliberada — não o default.
 
+**Servidor SSH**
+Distros muitas vezes trazem `sshd` com defaults mais fracos do que o desejável — daí a necessidade de reforçar explicitamente `PasswordAuthentication no`, `PermitEmptyPasswords no` e `PermitRootLogin no` em vez de depender do padrão de fábrica. Ver [[wiki/concepts/hardening-de-servidor]] e [[wiki/concepts/ssh]].
+
 ## Por Que Importa
 
 Sistemas são operados por humanos que cometem erros. Quando o default é inseguro, o erro humano é o caminho de menor resistência. Quando o default é seguro, o erro humano precisa ir contra a corrente para criar a vulnerabilidade.
@@ -59,3 +62,4 @@ Sistemas são operados por humanos que cometem erros. Quando o default é insegu
 ## Key Sources
 
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — exemplos: campo de senha, deleção com confirmação, 2FA no onboarding
+- [[wiki/sources/ssh-chaves-como-funcionam]] — hardening de sshd_config como reforço explícito sobre defaults de distro

@@ -3,8 +3,8 @@ type: concept
 title: "Ciclo do Agente (Agent Loop)"
 aliases: ["agent loop", "ciclo agentico", "prompt tool call loop"]
 date_created: 2026-06-02
-date_updated: 2026-07-03
-source_count: 4
+date_updated: 2026-07-10
+source_count: 5
 tags: [agente, tool-call, harness, ciclo, loop]
 skill: tech-mentor-ai
 status: stable
@@ -78,9 +78,14 @@ Delegar parte do ciclo a um [[wiki/concepts/subagentes|subagente]] evita que os 
 
 O loop agêntico não é elegante — é iterativo e incremental. A qualidade dos guias e sensores determina quantas iterações são necessárias.
 
+## Sistematizando o Brute-Force com Rúbrica e Verificador
+
+[[wiki/concepts/planner-executor-critic|Planner-Executor-Critic]] adiciona estrutura a esse brute-force: em vez de o ciclo repetir tool calls até o próprio executor "achar" que terminou, uma [[wiki/concepts/rubrica-de-verificacao|rúbrica]] explícita e um verificador (modelo diferente do executor) decidem objetivamente quando parar. Não elimina a natureza iterativa do ciclo, mas torna o critério de parada determinístico em vez de implícito.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
 - [[wiki/sources/formacao-ia-devs-aula-01-context-harness-engineering]]
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
+- [[wiki/sources/loop-engineering-planner-critic-grafo]] — critério de parada explícito (rúbrica + verificador) para o ciclo agêntico

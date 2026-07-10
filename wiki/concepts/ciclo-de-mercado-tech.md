@@ -3,8 +3,8 @@ type: concept
 title: "Ciclo de Mercado Tech"
 aliases: ["ciclo de abundância e depressão", "lei da oferta e procura em tech", "ciclo de contratação tech"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 3
+date_updated: 2026-07-10
+source_count: 4
 tags: [carreira, mercado-de-trabalho, oferta-e-procura, ciclo-economico]
 skill: tech-mentor-leadership
 status: draft
@@ -33,6 +33,8 @@ Quem ficou preso à ferramenta de uma onda perdeu, sequencialmente, as ondas seg
 
 [[wiki/entities/lucas-badico]] reforça a onda 2020s do Go com um contra-exemplo de "onda que não emplacou": Ruby on Rails teve forte influência histórica no ecossistema mas nunca gerou volume relevante de vagas no Brasil além de algumas consultorias — ao contrário do Go, hoje consolidado em Mercado Livre, Mercado Pago e Stone. A diferença, segundo o autor, é que Go foi desenhado como linguagem *cloud native* (ver [[wiki/concepts/go-fundamentos]]), o que amplia sua adoção além de qualquer moda passageira.
 
+Dados de pesquisa salarial dão números concretos a essa consolidação: em 2024, [[wiki/sources/golang-mercado-salarios-pesquisa-2024]] mostra Go pagando acima de Java em todos os níveis (maior gap no Sênior: ~R$ 6.000/mês), com o mercado de Go descrito como "mais seleto" — 75% dos devs Go atuam em backend puro, contra 59% em Java. É um exemplo concreto do efeito oferta/demanda: onda ainda não saturada de profissionais paga prêmio sobre onda mais madura e com mais gente disponível.
+
 ## O que Não Muda entre Ciclos
 
 O autor argumenta que tentar prever qual será a próxima linguagem/framework "quente" é perda de tempo — o que não perde valor entre ciclos é [[raciocinio-matematico-aplicado|raciocínio fundamental]] (matemática, lógica, capacidade de aprender rápido), porque essas habilidades transferem entre qualquer ferramenta específica.
@@ -59,3 +61,4 @@ Cada onda de tecnologia listada acima é, individualmente, uma [[wiki/concepts/c
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]]
 - [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]
 - [[wiki/sources/pare-de-terceirizar-suas-decisoes]]
+- [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]

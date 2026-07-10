@@ -3,8 +3,8 @@ type: concept
 title: "Algoritmos e Estruturas de Dados"
 aliases: ["DSA", "data structures", "estruturas de dados", "algoritmos"]
 date_created: 2026-05-16
-date_updated: 2026-07-09
-source_count: 6
+date_updated: 2026-07-10
+source_count: 7
 tags: [fundamentos, cs-fundamentals, algoritmos, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -53,6 +53,21 @@ DSA *é* a fundação técnica. Sem ela, estudar [[wiki/concepts/design-patterns
 
 DSA amplia o [[repertorio]] e melhora a capacidade de resolver problemas, mas confundir DSA com "lógica de programação" é leviano. Os outros pilares — [[decomposicao-de-problemas]], habilidade de pesquisa, projetos variados e intuição — são igualmente ou mais importantes para competência profissional real.
 
+## Como escolher a estrutura certa: operação primeiro
+
+A pergunta que precede qualquer escolha de estrutura não é "qual estrutura é melhor?" — é "qual operação eu preciso otimizar?". Toda estrutura prioriza algumas operações (buscar, inserir, remover, percorrer, manter ordem, consultar por chave) e torna outras mais caras. Se o sistema busca o tempo todo, escolha pensando em busca; se insere e remove o tempo todo, escolha pensando nisso; se precisa manter ordem, saiba que essa ordem tem custo.
+
+### Quatro perguntas antes de escrever a solução
+
+1. Qual é o N (tamanho da entrada)?
+2. Qual a operação mais comum?
+3. Qual estrutura de dados ajuda essa operação?
+4. Como esse custo aumenta quando o N cresce? (ver [[wiki/concepts/big-o]])
+
+### Estrutura de dados vs. algoritmo
+
+A estrutura de dados é *como* os dados ficam guardados; o algoritmo é a sequência de passos executada sobre eles. Os dois andam juntos: às vezes a melhoria vem de mudar o algoritmo, às vezes vem de guardar os dados de outro jeito — e a estrutura certa costuma tornar o algoritmo necessário muito mais simples e direto (ex: buscar por e-mail numa lista exige testar item por item; com um índice por e-mail, o algoritmo vai direto à chave).
+
 ## Conceitos Individuais
 
 Cada estrutura tem sua própria página com complexidade, analogias e quando usar:
@@ -71,3 +86,4 @@ Cada estrutura tem sua própria página com complexidade, analogias e quando usa
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]] — DSA como o primeiro dos fundamentos do "eixo vertical" da engenharia; explica por que sistemas degradam ao escalar de mil para cem mil usuários; livro-base Introduction to Algorithms (Cormen)
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — matemática (complexidade, probabilidade, cache) como "gramática por baixo do que você constrói"; exemplo do laço dentro do laço que derruba o sistema com 1000 usuários
 - [[wiki/sources/9-algoritmos-que-todo-programador-deveria-saber]] — nove algoritmos concretos das três categorias citadas na sequência de aprendizado acima: ordenação, busca e grafo, com mecanismo, complexidade e caso de uso de cada um
+- [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]] — continuação direta de "estruturas de dados na prática"; framework de escolha por operação, distinção estrutura/algoritmo, e as quatro perguntas antes de escrever a solução

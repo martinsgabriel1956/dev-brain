@@ -40,3 +40,7 @@ Presenter é a camada que transforma a saída do UseCase em formato adequado par
 
 - Presenter em NestJS com Interceptors — quando usar `ClassSerializerInterceptor` vs Presenter explícito?
 - Presenter para streaming responses (SSE, WebSocket) — como modelar saída incremental vs saída completa?
+
+## Nota de Atualização (2026-07-10)
+
+[[wiki/sources/mappers-conversao-entre-camadas]] descreve o mesmo problema — divergência de formato da mesma entidade entre camadas — a partir do lado de persistência (Prisma), nomeando a solução genérica de [[wiki/concepts/mapper-pattern]]. Presenter é o caso específico desse padrão aplicado à camada HTTP/apresentação.

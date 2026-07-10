@@ -3,8 +3,8 @@ type: concept
 title: "Go — Fundamentos da Linguagem"
 aliases: ["golang fundamentos", "go tipos", "go slices", "go zero values"]
 date_created: 2026-04-24
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-07-10
+source_count: 3
 tags: [go, fundamentos, tipos, slices, maps, structs, zero-values, cloud-native, filosofia-de-linguagem]
 skill: lang-systems
 status: stable
@@ -91,6 +91,8 @@ Segundo [[wiki/entities/lucas-badico]], a diferença central na filosofia de des
 
 Go foi desenhado desde o início para sustentar a infraestrutura em cloud do Google — não uma linguagem de propósito geral adaptada depois para cloud, como aconteceu com outras. Isso é apontado como o principal motivo da adoção consolidada do Go em empresas brasileiras como Mercado Livre, Mercado Pago e Stone, e como diferencial frente a tecnologias que tiveram forte influência histórica mas nunca escalaram para adoção em massa (ex.: Ruby on Rails). Ver [[wiki/concepts/ciclo-de-mercado-tech]].
 
+O Go Developer Survey oficial do Google confirma esse padrão de adoção com dados de uso: 74% dos devs Go usam a linguagem para APIs e serviços RPC (destaque para gRPC), 63% para CLIs, e a maior fatia de experiência profissional entre respondentes está em 16+ anos de codificação — reforçando que Go tende a ser adotado por devs experientes migrando de outra stack para casos de uso de cloud/microsserviços, não como primeira linguagem. Ver [[wiki/sources/golang-mercado-salarios-pesquisa-2024]].
+
 ## Ver também
 
 - [[go-oop-composicao]] — como structs evoluem para OOP via composição
@@ -102,3 +104,4 @@ Go foi desenhado desde o início para sustentar a infraestrutura em cloud do Goo
 
 - [[wiki/sources/go-fundamentos]]
 - [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]
+- [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]

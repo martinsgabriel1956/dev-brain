@@ -3,8 +3,8 @@ type: concept
 title: "Test Doubles"
 aliases: ["dublê de teste", "mock stub fake spy", "xunit test patterns"]
 date_created: 2026-04-22
-date_updated: 2026-07-07
-source_count: 2
+date_updated: 2026-07-10
+source_count: 3
 tags: [testes, test-doubles, mock, stub, fake, spy, dummy]
 skill: tech-mentor-testing
 status: stable
@@ -66,7 +66,12 @@ Cunhado por [[wiki/entities/martin-fowler]]. É a peça que viabiliza o [[teste-
 - [[teste-de-integracao-estreito-vs-amplo]] — uso de doubles fora do unitário, em testes de integração estreitos
 - [[unit-test-solitario-vs-sociavel]] — doubles definem se um unit test é solitário ou sociável
 
+## Limite do mock: verifica a chamada, não o resultado
+
+Mockar um banco de dados permite verificar que `db.save` foi chamado, mas não confirma que o dado foi de fato persistido — para isso o teste precisa parar de mockar e rodar contra um banco real (mesmo que dedicado a testes), o que o desloca de unitário para [[testes-integracao-banco-real|teste de integração]].
+
 ## Key Sources
 
 - [[wiki/sources/test-doubles]]
 - [[wiki/sources/integration-test-martin-fowler]]
+- [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — limite do mock de banco: assertion de chamada não prova persistência

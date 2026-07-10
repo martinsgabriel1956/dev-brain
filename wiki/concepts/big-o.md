@@ -3,8 +3,8 @@ type: concept
 title: "Big O"
 aliases: ["complexidade de algoritmos", "Big-O notation", "O(n)", "complexidade assintótica"]
 date_created: 2026-06-26
-date_updated: 2026-07-09
-source_count: 2
+date_updated: 2026-07-10
+source_count: 3
 tags: [cs-fundamentals, algoritmos, big-o, complexidade, performance]
 skill: cs-fundamentals
 status: draft
@@ -13,6 +13,17 @@ status: draft
 # Big O
 
 Notação que descreve como o **tempo de execução** (ou uso de memória) de um algoritmo cresce conforme o tamanho da entrada cresce. Responde: "se eu dobrar os dados, o que acontece com o tempo?"
+
+Medir performance só em milissegundos engana — o resultado muda com máquina, linguagem, banco, cache e ambiente. Big O troca essa medida instável por uma pergunta genérica: quando a entrada dobra, o número de passos fica quase igual, dobra, ou cresce muito mais que o dobro?
+
+## As quatro curvas essenciais para começar
+
+Antes de decorar a tabela completa, quatro curvas já cobrem a maioria dos casos do dia a dia:
+
+- **O(1)** — aumentar os dados quase não muda a quantidade de passos.
+- **O(n)** — o código olha item por item; dobrar a lista dobra o trabalho. Um loop simples tem essa cara.
+- **O(log n)** — cada passo corta uma parte grande do problema (ex: busca que descarta metade das opções a cada iteração).
+- **O(n²)** — cada item é comparado com vários outros; dois loops aninhados geram essa curva, que cresce muito mais rápido que o dobro quando a entrada dobra.
 
 ## Tabela de complexidades
 
@@ -59,8 +70,11 @@ O(1) pode ser mais lento que O(n) para entradas pequenas se a constante for gran
 - [[wiki/concepts/algoritmos-de-ordenacao]] — Bubble/Insertion Sort O(n²) vs Merge Sort O(n log n) como exemplo concreto da tabela acima
 - [[wiki/concepts/algoritmos-de-busca]] — Linear Search O(n) vs Binary Search O(log n), o mesmo salto ilustrado no "caso do O(log n)" acima
 - [[wiki/concepts/algoritmos-de-grafo]] — DFS/BFS O(V+E), Dijkstra O((V+E) log V)
+- [[wiki/concepts/melhor-caso-pior-caso-caso-medio]] — a mesma operação tem complexidade diferente dependendo do cenário medido
+- [[wiki/concepts/time-space-tradeoff]] — Big O também mede espaço, não só tempo; menor notação nem sempre é a melhor escolha
 
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/9-algoritmos-que-todo-programador-deveria-saber]]
+- [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]] — framing das "quatro curvas essenciais" e introdução informal via "quantos passos a mais quando os dados dobram"

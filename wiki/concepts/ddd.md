@@ -3,8 +3,8 @@ type: concept
 title: "DDD — Domain-Driven Design"
 aliases: ["domain-driven design", "ddd", "domínio"]
 date_created: 2026-05-31
-date_updated: 2026-07-09
-source_count: 2
+date_updated: 2026-07-10
+source_count: 3
 tags: [ddd, arquitetura, bounded-context, aggregate, domain-events, hexagonal]
 skill: tech-mentor-backend
 status: draft
@@ -54,7 +54,12 @@ O [[nubank]] usa DDD como base para organizar o domínio financeiro — contas, 
 
 [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] aplica o pilar Ubiquitous Language fora do contexto tradicional de DDD (dev ↔ especialista de domínio) para o contexto de dev ↔ IA: verborragia e desalinhamento entre plano e implementação são sintoma de que dev e IA não compartilham vocabulário. A prática descrita: extrair a terminologia de domínio já presente na base de código para um arquivo markdown com tabelas de termos, mantido aberto durante todo o planejamento com a IA. Relato do autor: isso reduziu a verbosidade dos "thinking traces" da IA e aumentou o alinhamento entre o que foi planejado e o que foi implementado — o mesmo mecanismo de "conversas, código e conversas com especialistas derivam do mesmo modelo" descrito no pilar acima, só que a IA ocupa o papel do "especialista" a ser alinhado.
 
+## Value Object Precisa Ser Desembrulhado na Borda
+
+Um Value Object (ex: `content` de uma `Notification`, validado e imutável no domínio) não é serializável diretamente para persistência ou banco — a conversão explícita (`notification.content.value`) fica a cargo do [[wiki/concepts/mapper-pattern]] na borda do domínio, não do Value Object em si. Isso mantém a regra "domínio não conhece infraestrutura" (ver seção "Arquitetura Hexagonal + DDD" acima) mesmo quando o dado que sai do domínio não é um primitivo.
+
 ## Key Sources
 
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
+- [[wiki/sources/mappers-conversao-entre-camadas]]

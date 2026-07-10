@@ -3,8 +3,8 @@ type: concept
 title: "Princípio do Menor Privilégio"
 aliases: ["least privilege", "principle of least privilege", "PoLP", "menor privilégio", "permissão mínima"]
 date_created: 2026-06-10
-date_updated: 2026-06-10
-source_count: 1
+date_updated: 2026-07-10
+source_count: 2
 tags: [security, least-privilege, iam, vpc, appsec, arquitetura-seguranca, defense-in-depth]
 skill: tech-mentor-security
 status: stable
@@ -37,6 +37,8 @@ Se um serviço comprometido só tem permissão de leitura no banco, o atacante a
 **Banco de dados dentro de VPC**
 Na maioria dos sistemas não existe motivo para o banco ser acessível fora da VPC. O frontend jamais deve ter acesso direto ao banco. Para acesso externo necessário (migrations, debugging), use um **bastion host**: uma EC2 dentro da VPC, acessada via SSH, que então se comunica com o banco. O endpoint do banco nunca fica exposto.
 
+O menor privilégio também se aplica ao próprio acesso SSH: [[wiki/concepts/ssh]] configurado com `PubkeyAuthentication` e sem fallback de senha já restringe quem consegue autenticar; combinar isso com um bastion host acessível só por chave é o menor privilégio aplicado em duas camadas (rede + credencial).
+
 **Funcionários e admins**
 - Admin completo não deve ser o default para todos
 - Mapear o que cada papel precisa e conceder exatamente isso
@@ -52,3 +54,4 @@ Na maioria dos sistemas não existe motivo para o banco ser acessível fora da V
 ## Key Sources
 
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — exemplos: backend read-only, banco dentro de VPC, bastion host para acesso externo
+- [[wiki/sources/ssh-chaves-como-funcionam]] — chave SSH como credencial mínima para acesso a bastion hosts

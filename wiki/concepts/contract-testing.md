@@ -3,8 +3,8 @@ type: concept
 title: "Contract Testing"
 aliases: ["teste de contrato", "pact", "consumer-driven contracts", "can-i-deploy"]
 date_created: 2026-04-22
-date_updated: 2026-07-07
-source_count: 2
+date_updated: 2026-07-10
+source_count: 3
 tags: [testes, contract-testing, pact, microservices, ci, distribuídos]
 skill: tech-mentor-testing
 status: stable
@@ -74,7 +74,12 @@ Contract testing não substitui E2E — são camadas diferentes da [[piramide-de
 - [[race-condition]] — problema que contract testing não resolve (lógica de negócio)
 - [[teste-de-integracao-estreito-vs-amplo]] — onde contract testing entra na estratégia de Fowler
 
+## Alternativa mais barata: mockar as pontas do sistema
+
+Quando ativar o serviço externo real (ex.: staging de um provedor de pagamentos) é caro ou lento, uma alternativa observada na prática é mockar as pontas do fluxo e testar só o sistema próprio no meio — aceitando o risco de não saber se a dependência externa de fato se comporta como o mock assume. Contract testing é o que fecha esse risco sem precisar do serviço real rodando junto.
+
 ## Key Sources
 
 - [[wiki/sources/contract-testing]]
 - [[wiki/sources/integration-test-martin-fowler]]
+- [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — exemplo de PSP/fornecedor mockados nas pontas de um fluxo de pagamento

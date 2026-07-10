@@ -3,8 +3,8 @@ type: concept
 title: "Complexidade Acidental"
 aliases: ["complexidade acidental", "accidental complexity", "tech debt estrutural"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
-source_count: 2
+date_updated: 2026-07-10
+source_count: 3
 tags: [accidental-complexity, tech-debt, fred-brooks, arquitetura, refactoring]
 skill: tech-mentor-system-design
 status: stable
@@ -51,14 +51,21 @@ A maioria do que times chamam de "tech debt" é complexidade acidental acumulada
 3. **Refatorar com cobertura** — complexidade acidental em código sem testes é a mais perigosa de mexer. Adicionar testes antes de refatorar.
 4. **Priorizar pelo custo** — complexidade no caminho crítico (deploy, onboarding, debugging) tem prioridade sobre complexidade em código estável.
 
+## Modelo cascata como gerador estrutural de complexidade acidental
+
+[[wiki/sources/filosofia-do-design-de-software-introducao]] (John Ousterhout) descreve um mecanismo causal distinto de Fred Brooks para gerar complexidade acidental: no modelo cascata, os problemas do design inicial só ficam aparentes depois que a implementação já está avançada, e o processo não tem mecanismo para revisar o design nesse ponto — então desenvolvedores remendam os problemas sem mudar o design geral, causando "explosão de complexidade". Ver [[wiki/concepts/modelo-cascata-vs-desenvolvimento-incremental]]. Isso complementa o diagnóstico de Brooks (abstração errada, decisões não reconciliadas, funções god) com uma causa de processo: não é só decisão individual malfeita, é a ausência estrutural de um ponto de retorno ao design.
+
 ## Relação com outros conceitos
 
 - [[concepts/essential-complexity]] — o contraponto: complexidade que não pode ser removida
 - [[concepts/temporal-coupling]] — temporal coupling é uma forma específica de complexidade acidental
 - [[concepts/evolutionary-architecture]] — fitness functions detectam aumento de complexidade acidental automaticamente
 - [[entities/fred-brooks]] — autor do conceito ("No Silver Bullet", 1986)
+- [[wiki/concepts/modelo-cascata-vs-desenvolvimento-incremental]] — mecanismo de processo (Ousterhout) que explica por que complexidade acidental se acumula sem correção sob cascata
+- [[wiki/concepts/red-flags-de-design]] — heurística prática para detectar complexidade acidental cedo, antes que ela se acumule
 
 ## Key Sources
 
 - [[sources/conceitos-que-ninguem-ensina]]
 - [[sources/overengineering-carol-ate-quinta]]
+- [[wiki/sources/filosofia-do-design-de-software-introducao]]

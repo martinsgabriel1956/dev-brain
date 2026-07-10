@@ -3,8 +3,8 @@ type: concept
 title: "Pirâmide de Testes"
 aliases: ["test pyramid", "ice cream cone", "testing trophy", "estratégia de testes"]
 date_created: 2026-04-22
-date_updated: 2026-07-07
-source_count: 3
+date_updated: 2026-07-10
+source_count: 4
 tags: [testes, pirâmide, estratégia, unitário, integração, e2e, projetos-novos]
 skill: tech-mentor-testing
 status: stable
@@ -114,6 +114,16 @@ Parte do [[wiki/concepts/checklist-primeiro-dia-projeto]]: configurar testes uni
 
 Isso explica por que times diferentes descrevem a "camada do meio" da pirâmide com expectativas de velocidade tão distintas.
 
+## Não é bem uma pirâmide — é alocação de recursos
+
+Uma leitura mais opinativa da pirâmide: a proporção "certa" entre camadas não é uma regra fixa, é um problema de **alocação de recursos**. Recursos de dev-time e infraestrutura não são infinitos; cada teste E2E a mais é uma semana que não foi gasta em outra coisa. As perguntas que decidem quanto investir em cada camada: qual custo você quer prevenir, qual erro não pode acontecer, quanto tempo seria poupado garantindo que um bug não volta após merge.
+
+Dois contextos que empurram o balanço para fora da pirâmide "padrão":
+- **Código legado sem dono conhecido:** aqui o valor de E2E é desproporcionalmente alto — um teste que cobre "usuário clicou, fez X, resultou em Y" dá liberdade para refatorar um monolito espaguete com confiança, mesmo sem entender o código por dentro.
+- **Startup em pivot constante, mudando UI/fluxo com frequência:** aqui o valor de E2E cai — a UI muda rápido demais para os testes serem duráveis, e o custo não se justifica sem uma base de clientes que dependa da estabilidade.
+
+Nessa leitura, o teste de maior valor por unidade de custo tende a ser um teste de integração que exercita uma regra de negócio de ponta a ponta — ex.: `POST /users` seguido de `GET /users/:id` confirmando que o dado persistiu — sem precisar da fragilidade e do custo de um E2E completo. Ver [[criterios-de-bom-teste]] para os critérios usados para julgar se um teste especifico vale o investimento.
+
 ## Ver também
 
 - [[tdd]] — prática que preenche a base da pirâmide
@@ -121,6 +131,7 @@ Isso explica por que times diferentes descrevem a "camada do meio" da pirâmide 
 - [[test-doubles]] — como isolar dependências nos unitários
 - [[testar-proprio-codigo]] — hábito de cobrir além do happy path
 - [[teste-de-integracao-estreito-vs-amplo]] — a camada "Integração" desta pirâmide se divide em estreita e ampla
+- [[criterios-de-bom-teste]] — determinístico, conciso, relevante, compreensível, durável
 
 ## Key Sources
 
@@ -128,3 +139,4 @@ Isso explica por que times diferentes descrevem a "camada do meio" da pirâmide 
 - [[sources/roadmap-dev-senior-2026]] — testes como seguro contra decisões ruins da IA (pilar 5)
 - [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]
 - [[wiki/sources/integration-test-martin-fowler]]
+- [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — releitura da pirâmide como problema de alocação de recursos; valor assimétrico de E2E entre legado e startup em pivot

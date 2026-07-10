@@ -3,8 +3,8 @@ type: concept
 title: "Good First Issue"
 aliases: ["boa primeira issue", "ponto de entrada na codebase", "first task"]
 date_created: 2026-06-20
-date_updated: 2026-06-20
-source_count: 1
+date_updated: 2026-07-10
+source_count: 2
 tags: [onboarding, codebase, open-source, contribuicao, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -36,6 +36,11 @@ Invente uma com o critério acima. Pergunte: "Qual feature pequena toca o coraç
 
 Do lado de quem faz onboarding de outros, sempre manter 2-3 issues marcadas como `good-first-issue` no backlog. Ver [[wiki/concepts/onboarding-de-codebase]] para o protocolo completo.
 
+## Perspectiva de quem contribui de fora
+
+Além do uso interno de onboarding em times, `good first issue`/`good first fix` também funciona como ponto de entrada padrão no GitHub para quem quer [[wiki/concepts/contribuir-open-source|contribuir com open source]] em projetos de terceiros que já usa no dia a dia — mesmo critério de escopo pequeno e core do produto, aplicado de fora para dentro em vez de dentro de um time.
+
 ## Key sources
 
 - [[wiki/sources/como-aprender-novas-codebases]]
+- [[wiki/sources/5-recursos-para-ser-um-desenvolvedor-melhor]]

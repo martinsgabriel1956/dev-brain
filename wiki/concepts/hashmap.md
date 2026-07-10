@@ -3,8 +3,8 @@ type: concept
 title: "Hashmap"
 aliases: ["hash map", "hash table", "dicionário", "mapa", "dictionary"]
 date_created: 2026-06-01
-date_updated: 2026-06-26
-source_count: 2
+date_updated: 2026-07-10
+source_count: 3
 tags: [cs-fundamentals, estruturas-de-dados, hashmap, performance, big-o]
 skill: cs-fundamentals
 status: draft
@@ -67,8 +67,10 @@ Um dicionário físico. Você não lê página por página — vai direto à let
 
 - [[array]] — alternativa quando acesso por posição é suficiente
 - [[arvore]] — alternativa para buscas ordenadas e por intervalo
+- [[wiki/concepts/time-space-tradeoff]] — hashmap é o exemplo canônico de trocar memória por velocidade de busca
 
 ## Key sources
 
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
+- [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]] — exemplo do trade-off tempo/memória: índice por e-mail (hashmap) troca espaço extra por busca O(1) em vez de O(n) numa lista

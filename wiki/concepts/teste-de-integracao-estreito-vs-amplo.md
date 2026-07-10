@@ -3,8 +3,8 @@ type: concept
 title: "Teste de Integração: Estreito vs. Amplo"
 aliases: ["narrow integration test", "broad integration test", "teste de integração narrow", "teste de integração broad", "system test", "end-to-end test (Fowler)"]
 date_created: 2026-07-07
-date_updated: 2026-07-07
-source_count: 1
+date_updated: 2026-07-10
+source_count: 2
 tags: [testes, integracao, martin-fowler, contract-testing, microservices, terminologia]
 skill: tech-mentor-testing
 status: stable
@@ -57,3 +57,4 @@ Para evitar a ambiguidade, Fowler prefere renomear em vez de qualificar todo mun
 ## Key Sources
 
 - [[wiki/sources/integration-test-martin-fowler]]
+- [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — caso prático de "amplo" ambíguo em sistema com PSP e fornecedor externos

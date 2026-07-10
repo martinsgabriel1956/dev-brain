@@ -3,8 +3,8 @@ type: concept
 title: "Gaming de Testes por IA"
 aliases: ["ia deleta testes", "reward hacking de testes", "teste sabotado pela ia"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 1
+date_updated: 2026-07-10
+source_count: 2
 tags: [ia, testes, tdd, harness, qualidade, anti-pattern]
 skill: tech-mentor-testing
 status: stub
@@ -30,6 +30,11 @@ A IA é otimizada para produzir uma resposta que "parece" ter tido sucesso. Se o
 - [[harness-de-qualidade]] — por que regras impostas por ferramenta batem regras pedidas em prompt
 - [[robustez-de-sistemas]] — robustez depende de a IA não conseguir mascarar falhas
 
+## Terreno fértil: testes que já falham em determinismo ou relevância
+
+Um teste flaky ou irrelevante — ver [[criterios-de-bom-teste]] — é mais fácil de justificar enfraquecer ou deletar, tanto para um humano com pressa quanto para uma IA otimizando por sinal verde. Testes que atendem aos cinco critérios (determinístico, conciso, relevante, compreensível, durável) são mais difíceis de "gamear" sem que a mudança fique óbvia no diff.
+
 ## Key Sources
 
 - [[wiki/sources/tdd-sdd-bdd-era-ia]]
+- [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — menção direta a "vibe coding" mudando testes que não passam em vez de corrigir o código

@@ -3,8 +3,8 @@ type: concept
 title: "Adapter Pattern"
 aliases: ["padrão adapter", "design pattern adapter", "adaptador"]
 date_created: 2026-05-01
-date_updated: 2026-05-05
-source_count: 2
+date_updated: 2026-07-10
+source_count: 3
 tags: [design-patterns, structural, adapter, oop, integracao]
 skill: tech-mentor-backend
 status: stable
@@ -57,8 +57,13 @@ console.log(weather.getTempF()); // conversão isolada no adapter
 
 O Adapter **muda a interface**. O [[proxy-pattern]] **mantém a mesma interface** — apenas intercepta e adiciona comportamento (cache, log, auth).
 
+## Diferença do Mapper
+
+O Adapter adapta **comportamento** — expõe métodos de uma interface incompatível através da interface esperada. O [[wiki/concepts/mapper-pattern]] converte a **forma dos dados** — pega uma entidade de domínio e devolve um objeto plano no shape que outra camada espera (ex: `PrismaNotificationMapper.toPrisma()`), sem interceptar chamadas de método nem satisfazer um contrato de interface.
+
 ## Key Sources
 
 - [[wiki/sources/design-pattern-proxy]]
 - [[sources/sete-padroes-de-design-de-software]]
 - [[sources/design-pattern-facade]] — distinção Facade vs Adapter formalizada
+- [[wiki/sources/mappers-conversao-entre-camadas]] — distinção Adapter vs Mapper

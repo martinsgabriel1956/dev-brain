@@ -3,8 +3,8 @@ type: concept
 title: "Go — Ecossistema e Tooling"
 aliases: ["go chi", "go sqlc", "go golangci-lint", "go modules", "go gin echo"]
 date_created: 2026-04-24
-date_updated: 2026-04-24
-source_count: 1
+date_updated: 2026-07-10
+source_count: 2
 tags: [go, ecossistema, chi, sqlc, sqlx, gorm, linting, modules]
 skill: lang-systems
 status: stable
@@ -77,6 +77,10 @@ linters:
 
 `golangci-lint run` em CI — bloqueia merge em novas violações.
 
+## Uso Declarado em Produção (Go Developer Survey)
+
+Confirmando o encaixe da stdlib/ecossistema acima com o uso real reportado pelo Go Developer Survey do Google: 74% dos devs Go usam a linguagem para APIs e serviços RPC (com destaque para gRPC em comunicação serviço-a-serviço, não só REST), 63% para ferramentas CLI, e 45% já para frontend/sites via frameworks Go. Vagas reais no mercado brasileiro (checadas ao vivo no LinkedIn) combinam Go com Clean Architecture, Design Patterns, microsserviços, AWS/GCP e Git Flow — reforçando que o ecossistema Go não é usado isolado, sempre dentro de um conjunto maior de práticas de backend moderno. Ver [[wiki/sources/golang-mercado-salarios-pesquisa-2024]].
+
 ## Ver também
 
 - [[go-stdlib]] — entender net/http antes de adicionar Chi
@@ -86,3 +90,4 @@ linters:
 ## Key Sources
 
 - [[wiki/sources/go-ecossistema]]
+- [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]

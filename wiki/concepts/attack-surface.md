@@ -3,8 +3,8 @@ type: concept
 title: "Attack Surface (Superfície de Ataque)"
 aliases: ["attack surface", "superfície de ataque", "minimização de superfície", "surface minimization"]
 date_created: 2026-06-05
-date_updated: 2026-07-04
-source_count: 2
+date_updated: 2026-07-10
+source_count: 3
 tags: [attack-surface, security, arquitetura-seguranca, defense-in-depth, gatekeeper]
 skill: tech-mentor-security
 status: stable
@@ -32,6 +32,7 @@ A pergunta que guia a redução: **"Por que isso precisa estar acessível?"**
 - Desabilitar endpoints não usados
 - APIs internas em rede privada, sem exposição pública
 - Documentação de API (Swagger/OpenAPI) com autenticação em produção
+- No nível de infraestrutura: [[wiki/concepts/ssh]] com `AllowTcpForwarding no` e login de root desativado reduz o que um daemon SSH exposto realmente permite — ver [[wiki/concepts/hardening-de-servidor]]
 
 ## Relação com Defense in Depth
 
@@ -57,3 +58,4 @@ Rotas de webhook em paths padrão (`/api/webhook`, `/api/hook`) são um exemplo 
 - [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — exemplos: inputs do usuário, S3 público, IDs sequenciais, outputs e timing como vetores
 - [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]] — rotas de webhook previsíveis como superfície de ataque
+- [[wiki/sources/ssh-chaves-como-funcionam]] — hardening de sshd_config como redução de superfície na camada de infraestrutura

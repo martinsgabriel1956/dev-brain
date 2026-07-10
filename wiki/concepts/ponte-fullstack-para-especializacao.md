@@ -3,8 +3,8 @@ type: concept
 title: "Ponte Fullstack para Especialização"
 aliases: ["fullstack como entrada para backend", "mirar no pleno", "estratégia de migração frontend-backend"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 1
+date_updated: 2026-07-10
+source_count: 2
 tags: [carreira, fullstack, backend, migracao, junior, pleno]
 skill: tech-mentor-leadership
 status: draft
@@ -34,6 +34,10 @@ Numa empresa de 8 pessoas citada pela fonte, 3 dos 4 desenvolvedores eram origin
 
 É mais fácil identificar e entrar nessas empresas "ponte" através de conexões diretas com quem já trabalha lá como fullstack do que via candidatura fria — reforça a importância de comunidade e network no processo de migração de carreira.
 
+## Dado de Mercado que Sustenta a Estratégia
+
+[[wiki/sources/golang-mercado-salarios-pesquisa-2024]] mostra que quem já entra em Go tende a ser sênior migrando de outra stack, não iniciante puro — a maior concentração de experiência entre devs Go no Go Developer Survey é 16+ anos de codificação. Isso é evidência indireta a favor da ponte fullstack: júnior/pleno vindo do frontend não está competindo por vagas Go contra outros júniors, está competindo por atenção num mercado dominado por seniors migrando de stack — o que reforça a recomendação de "mirar no pleno" em vez de esperar vaga júnior específica.
+
 ## Relações
 
 - [[wiki/concepts/portfolio-backend-junior]] — o que construir para sustentar a postura de "pleno mesmo sem experiência formal"
@@ -44,3 +48,4 @@ Numa empresa de 8 pessoas citada pela fonte, 3 dos 4 desenvolvedores eram origin
 ## Key Sources
 
 - [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]
+- [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]

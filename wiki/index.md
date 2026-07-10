@@ -12,6 +12,12 @@ date_updated: 2026-07-10
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/8-tipos-de-javascript]] | Os 8 tipos de JS (`null`, `undefined`, `boolean`, `number`, `bigint`, `string`, `symbol`, `object`); `typeof` vs. `Object.prototype.toString.call()`; `==` vs `===`; default de parâmetro (`undefined`) vs. fallback `\|\|` (qualquer falsy) |
+| [[wiki/sources/filosofia-do-design-de-software-introducao]] | Tradução do cap. 1 de *A Philosophy of Software Design*: complexidade como maior limitação real ao escrever software; eliminar vs. encapsular; por que waterfall falha e design incremental funciona; red flags via code review |
+| [[wiki/sources/ssh-chaves-como-funcionam]] | Chave SSH é par assimétrico (privada nunca sai da origem, pública vai pro `authorized_keys` do destino) e é unidirecional por par — `sshd_config.d` com `PubkeyAuthentication yes` + senha desativada é o padrão de indústria; `~/.ssh/config` cria aliases com `IdentitiesOnly` |
+| [[wiki/sources/loop-engineering-planner-critic-grafo]] | "Você não faz o prompt, você desenha o sistema que faz o prompt" — Planner gera prompt+rúbrica dinamicamente para subagentes, Verificador (outro modelo) aprova/rejeita, grafo (nós=LLM, arestas=determinístico) é o nível de abstração |
+| [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] | Vídeo opinativo: teste nunca previne bug 100%, só regressão; pirâmide de testes é problema de alocação de recursos; sweet spot é teste de integração validando regra de negócio ponta a ponta |
+| [[wiki/sources/9-habitos-programador-junior]] | Tom Hombergs + vídeo PT-BR: voluntariar para o desconhecido, comunicar progresso continuamente, escrever para aprender, bloquear agenda, começar do zero após pausa, e fazer tudo por você — não pelo chefe |
 | [[wiki/sources/double-spend-double-submit]] | Double spend/double submit são o mesmo problema — camadas complementares: frontend desabilita botão, redirect após POST (PRG), Idempotency Key (hash gerado no servidor + storage compartilhado), e Unique Constraint no banco quando há campo genuinamente único |
 | [[wiki/sources/html-vs-markdown-para-agentes-de-ia]] | HTML vs. Markdown como formato de saída de agentes — maior densidade de informação vs. ~20x mais tokens; mais um quality gate real de CI para qualidade de transcrição (Whisper local) |
 | [[wiki/sources/como-vender-um-saas-sem-audiencia]] | Build in public já era: viralizar sketch sem parecer propaganda, feature vendível desde o dia zero, conhecer LTV antes do CAC, ser usuário do próprio produto |
@@ -35,6 +41,7 @@ date_updated: 2026-07-10
 | [[wiki/sources/context-engineering-codebases-grandes-rpi]] | Progressive disclosure + on-demand loading + RPI com memória de longo prazo para refatorações grandes |
 | [[wiki/sources/escala-niveis-uso-ia-engenheiros]] | 7 níveis de uso de IA: do negacionista ao arquiteto — o que muda é o modelo mental, não a ferramenta |
 | [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]] | Array, Hashmap, Fila, Pilha e Árvore — três perguntas para escolher a estrutura certa |
+| [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]] | Continuação sobre Big O: escolha por operação, estrutura vs. algoritmo, quatro curvas essenciais, trade-off tempo/memória, melhor/pior/caso médio |
 | [[wiki/sources/akita-como-aprender-programacao]] | Autodidatas avançam independente do material; copie código por centenas de horas; DSA é a fundação inegociável; Design Patterns são para depois |
 | [[wiki/sources/quanto-tempo-aprender-programacao]] | 800–1.000 horas para júnior; cérebro aprende padrões, não sintaxe; o vale do desespero é estrutural — troque prazo por quilometragem |
 | [[wiki/sources/como-strings-realmente-funcionam]] | String é slice de bytes + charset + encoding; imutabilidade existe para proteger UTF-8 de corrupção por indexação |
@@ -128,6 +135,10 @@ date_updated: 2026-07-10
 | [[wiki/sources/como-evitar-over-engineering-david-farley]] | Refuta o "triângulo de ferro" com dados DORA/Accelerate; maior problema da indústria é under-engineering, não over-engineering; walking skeleton do LMAX como antídoto contra resolver requisitos não-funcionais cedo demais |
 | [[wiki/sources/diferenciais-portfolio-backend-junior]] | Para a primeira vaga de backend, o diferencial não é arquitetura sofisticada — é profissionalismo nas bases: testes de integração com banco real, Docker/deploy real, SQL além do CRUD, documentação Swagger, error handling estruturado e observabilidade |
 | [[wiki/sources/acoplamento-abstracao-estado]] | Acoplamento, abstração e estado como lentes para ler código, não termos para decorar — função god acoplada vs. separação por responsabilidade, interface como abstração, estado isolado (recebe/retorna) vs. estado global mutado |
+| [[wiki/sources/5-recursos-para-ser-um-desenvolvedor-melhor]] | Augusto Galego: documentação oficial, roadmap.sh, CS50, livros com custo-benefício (Refactoring sim, Clean Code com reserva), cursos até R$30 e contribuir com open source — nada substitui escrever muito código |
+| [[wiki/sources/golang-mercado-salarios-pesquisa-2024]] | Go paga acima de Java em todos os níveis (maior gap no Sênior, ~R$6.000/mês); Go Developer Survey confirma 93% de satisfação; 27,7% dos devs Go no Brasil atuam remoto para o exterior contra 12% em Java |
+| [[wiki/sources/hmac-integridade-mensagem-local-first-entrevista]] | Pergunta de entrevista de system design sobre integridade de mensagem: carrinho local-first sem storage no servidor — por que criptografar quebra a exibição, chave assimétrica é cara demais, e HMAC (ipad/opad derivados do mesmo segredo, duas etapas de hash) é a resposta certa contra ataque de extensão de mensagem |
+| [[wiki/sources/mappers-conversao-entre-camadas]] | A mesma entidade (`Notification`) é representada de forma diferente em cada camada de uma arquitetura em camadas — mapper estático por camada (`PrismaNotificationMapper.toPrisma()`) converte entre formatos e isola o acoplamento à tecnologia, não ao domínio |
 
 ## Concepts
 
@@ -164,6 +175,18 @@ date_updated: 2026-07-10
 | [[wiki/concepts/maturidade-tecnica]] | Capacidade de extrair aprendizado de qualquer situação, incluindo as adversas |
 | [[wiki/concepts/profundidade-e-maestria]] | Maestria em qualquer assunto (mesmo fora da área técnica) é prognóstico de sucesso em qualquer outro problema — o "hardware mental" se transfere |
 | [[wiki/concepts/abrangencia-profissional]] | Ser interessado, não apenas interessante — sinal é se curvar para frente ao ouvir um problema, não chegar com a solução pronta |
+
+### Recursos de Aprendizado
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/roadmap-sh]] | Mapa ordenado de tópicos por área (284k stars no GitHub) — direcionamento, não profundidade |
+| [[wiki/concepts/documentacao-oficial-como-recurso]] | Ler a doc do próprio framework — recurso óbvio e mais negligenciado |
+| [[wiki/concepts/cs50]] | Curso gratuito de Harvard como base de fundamentos para quem não fez faculdade |
+| [[wiki/concepts/livros-recomendados-programador]] | Refactoring com endosso pleno, Clean Code com reserva explícita — custo-benefício como critério |
+| [[wiki/concepts/contribuir-open-source]] | Contribuir com o que você já usa — good first issue como ponto de entrada |
+| [[wiki/concepts/custo-beneficio-cursos-online]] | R$20-30 compensa, R$5-10 mil para uma tecnologia pontual não |
+| [[wiki/concepts/aprendizado-multimodal]] | Curso + documentação + projeto ao mesmo tempo, não em sequência |
 | [[wiki/concepts/atualizacao-tecnologica]] | Custo de ficar estagnado vs. fadiga de perseguir novidades — empresa que não evoluiu na stack também não evoluiu na cultura |
 | [[wiki/concepts/comparacao-na-carreira]] | Medir seu primeiro degrau pela régua de quem está no meio da escada — o erro que leva à desistência prematura |
 | [[wiki/concepts/familiaridade-vs-capacidade]] | Velocidade inicial ≠ talento — é histórico acumulado de vida; linha de largada explica tudo |
@@ -300,6 +323,11 @@ date_updated: 2026-07-10
 | [[wiki/concepts/modelo-frontier]] | Modelos mais capazes: Opus 4.7, GPT-5.5, Gemini 3.1, Kimi K2.6, GLM 5.1 — tabela de preços 2026 |
 | [[wiki/concepts/mixture-of-experts]] | Arquitetura MoE: por que modelos open source chineses são 10x mais baratos que frontier densos |
 | [[wiki/concepts/token-maxing]] | Consumo compulsivo de tokens como sinal de produtividade — fenômeno do Vale do Silício, 2026 |
+| [[wiki/concepts/loop-engineering]] | Degrau seguinte a harness engineering: desenhar o ciclo completo como estrutura repetível, disparável por prompt, schedule ou evento |
+| [[wiki/concepts/planner-executor-critic]] | Planner gera prompt+rúbrica para subagentes; Critic (modelo distinto do executor) aprova ou devolve follow-up |
+| [[wiki/concepts/rubrica-de-verificacao]] | Critérios explícitos de aceite gerados junto com o prompt — contrato entre Planner e Verificador |
+| [[wiki/concepts/langgraph]] | Framework que representa estado de agente como grafo — nodes são passos, edges são transições condicionais |
+| [[wiki/concepts/grafo-como-abstracao-de-agentes]] | G=(V,E): nós são computação/LLM, arestas são condição de fluxo determinística — abstração independente de framework |
 
 ### Processo de Desenvolvimento com IA
 
@@ -333,6 +361,7 @@ date_updated: 2026-07-10
 | Página | Hook |
 |---|---|
 | [[wiki/concepts/event-loop-performance-js]] | Single-thread JS: qualquer Sync bloqueia todos os clientes — Web Streams e arquitetura assíncrona como solução |
+| [[wiki/concepts/tipos-primitivos-javascript]] | Os 8 tipos de JS e por que `typeof null === "object"` — `Object.prototype.toString.call()` como checagem mais precisa |
 
 ### Claude Code — Recursos e Padrões
 
@@ -395,6 +424,8 @@ date_updated: 2026-07-10
 |---|---|
 | [[wiki/concepts/logica-booleana]] | AND, OR, NOT — as três operações que constroem qualquer circuito a partir de 0s e 1s |
 | [[wiki/concepts/big-o]] | Notação que descreve como o tempo cresce com os dados — O(log n) com 1B elementos = 30 comparações |
+| [[wiki/concepts/melhor-caso-pior-caso-caso-medio]] | A mesma busca pode ser O(1), O(n) ou "o que costuma acontecer" — "complexidade" sem qualificação numa entrevista é o pior caso |
+| [[wiki/concepts/time-space-tradeoff]] | Gastar mais memória (índice) para economizar passos — Big O mais baixo nem sempre é a melhor escolha |
 | [[wiki/concepts/recursao]] | Função que chama ela mesma — caso base (para) + caso recursivo (divide) |
 | [[wiki/concepts/lista-encadeada]] | Nós encadeados por ponteiros — inserção O(1) no meio, acesso O(n) por posição |
 | [[wiki/concepts/concorrencia]] | Gerenciar múltiplas tarefas — race condition é o risco central quando threads compartilham estado |
@@ -608,6 +639,8 @@ date_updated: 2026-07-10
 | [[wiki/concepts/triade-retorno-risco-liquidez]] | Retorno, risco e liquidez nunca são bons ao mesmo tempo — modelo de investimentos generalizado para qualquer decisão da vida |
 | [[wiki/concepts/avaliar-hype-tecnologico]] | Adotar tecnologia hype é risco alto + liquidez baixa; só compensa se o retorno for proporcionalmente alto — caso Node.js no Pagar.me vs. C# na Stone |
 | [[wiki/concepts/modulo-profundo]] | Deep module (Ousterhout): poucos módulos grandes com interface simples escondendo complexidade — o oposto de muitos módulos rasos que a IA produz por padrão |
+| [[wiki/concepts/modelo-cascata-vs-desenvolvimento-incremental]] | Waterfall falha para software porque é impossível visualizar o design inteiro antes de construir — design incremental corrige o design cedo, enquanto o sistema ainda é pequeno |
+| [[wiki/concepts/red-flags-de-design]] | Sinal de que um trecho de código é mais complicado do que precisa — melhor exercitado no código de outra pessoa via code review, não no próprio |
 | [[wiki/concepts/lentes-de-codigo]] | Acoplamento, abstração e estado não são termos para decorar — são lentes que revelam se o código é bom ou só funciona; central para avaliar código gerado por IA |
 | [[wiki/concepts/acoplamento]] | Grau de dependência entre partes — quanto uma mudança em A força mudança em B; god function vs. funções separadas por responsabilidade |
 | [[wiki/concepts/abstracao]] | Esconder o que não precisa ser visto atrás de um contrato — troca de implementação (banco → API) sem tocar no código consumidor |
@@ -620,6 +653,8 @@ date_updated: 2026-07-10
 
 | Página | Hook |
 |---|---|
+| [[wiki/concepts/ssh]] | Chave privada nunca sai da origem, pública vai pro `authorized_keys` do destino — acesso é unidirecional por par de chaves, `~/.ssh/config` cria aliases |
+| [[wiki/concepts/hardening-de-servidor]] | Reduzir superfície de um host desativando o que não é necessário — presets escalonados (paranoico/equilibrado/básico) para SSH e afins |
 | [[wiki/concepts/gatekeeper-pattern]] | Ponto único de entrada obrigatório — centraliza autenticação, rate limiting e logging, reduz superfície de ataque |
 | [[wiki/concepts/valet-key-pattern]] | Credencial temporária de escopo mínimo — cliente acessa recurso diretamente sem a API virar proxy |
 | [[wiki/concepts/token-relay-pattern]] | Identidade do usuário viaja por todos os saltos internos — autorização fina em cada serviço |
@@ -650,6 +685,8 @@ date_updated: 2026-07-10
 | [[wiki/concepts/idor]] | IDOR/BOLA — acessar objeto por ID sem checar ownership; #1 do OWASP API Top 10 |
 | [[wiki/concepts/mass-assignment]] | BOPLA — aceitar o body inteiro sem whitelist permite alterar campos como `role` |
 | [[wiki/concepts/webhook-signature-validation]] | HMAC + `timingSafeEqual` + replay/idempotência — validar que o webhook veio da fonte certa |
+| [[wiki/concepts/hmac]] | Chave interna e externa derivadas do mesmo segredo via padding (ipad `0x36`/opad `0x5C`) — integridade sem o custo de assinatura assimétrica, resistente a ataque de extensão de mensagem |
+| [[wiki/concepts/local-first]] | Dado calculado no servidor vive só no cliente — HMAC garante integridade na volta sem pagar custo de storage/lookup |
 | [[wiki/concepts/exposicao-excessiva-de-dados]] | Retornar a entidade inteira em vez de projetar campos vaza dados sensíveis mesmo sem exibi-los na UI |
 | [[wiki/concepts/toctou]] | Intervalo entre check e use permite saque/estoque duplicado sob concorrência — corrigido com transactions atômicas |
 | [[wiki/concepts/confiar-no-frontend]] | Anti-padrão raiz: regra de negócio só no cliente é sempre contornável — servidor deve revalidar tudo |
@@ -687,6 +724,7 @@ date_updated: 2026-07-10
 | [[wiki/concepts/testes-integracao-banco-real]] | Nunca mockar o banco em testes de integração — o valor do teste está em validar a query real |
 | [[wiki/concepts/teste-de-integracao-estreito-vs-amplo]] | Fowler separa "integration test" em estreito (double + contract test, rápido) e amplo (serviços reais, lento) |
 | [[wiki/concepts/unit-test-solitario-vs-sociavel]] | Solitário mocka tudo (London), sociável usa colaboradores reais (Detroit) — confusão irmã do narrow/broad |
+| [[wiki/concepts/criterios-de-bom-teste]] | Determinístico, conciso, relevante, compreensível, durável — e 100% de cobertura não garante ausência de bug |
 
 ### Padrões e Design
 
@@ -694,6 +732,7 @@ date_updated: 2026-07-10
 |---|---|
 | [[wiki/concepts/pattern-recognition]] | Capacidade humana de detectar repetições — base do aprendizado por exposição |
 | [[wiki/concepts/design-patterns]] | Catálogo de soluções nomeadas — útil só depois de já ter visto os padrões na prática |
+| [[wiki/concepts/mapper-pattern]] | Classe estática por camada que converte entidade de domínio para o formato de outra camada (Prisma, HTTP) — isola o acoplamento à tecnologia, não ao domínio |
 | [[wiki/concepts/anti-pattern]] | Repetição que parece solução mas cria problemas — frequência não implica qualidade |
 | [[wiki/concepts/over-engineering]] | "Verde neném" — aplicar patterns sem base; pular etapas da progressão produz complexidade sem valor; under-engineering é o problema mais comum |
 | [[wiki/concepts/otimizacao-prematura]] | Raiz de todo mal (Knuth) — otimizar antes de ter projeto bom torna o código rígido e difícil |
@@ -727,6 +766,7 @@ date_updated: 2026-07-10
 | [[wiki/entities/jason-wei]] | Pesquisador Google Brain — lead author do paper de chain-of-thought prompting e do paper de emergent abilities |
 | [[wiki/entities/fabio-akita]] | Programador brasileiro, autodidata desde 1991, criador do canal Akita On Rails |
 | [[wiki/entities/lucas-badico]] | Programador e professor brasileiro, criador de conteúdo sobre Golang e carreira; defende a ponte fullstack como caminho de entrada ao backend |
+| [[wiki/entities/codigo-fonte-tv]] | Canal brasileiro de YouTube com pesquisa salarial própria (pesquisa.codefonte.com.br); cruza dados com pesquisas oficiais de fabricantes de linguagem |
 | [[wiki/entities/john-romero]] | Co-criador de Doom — "programação é criatividade baseada em lógica" |
 | [[wiki/entities/edsger-dijkstra]] | Cientista da computação holandês — programação formal, crítica à linguagem natural em código |
 | [[wiki/entities/eric-lenda]] | Criador de conteúdo brasileiro — JavaScript/Node.js avançado |
