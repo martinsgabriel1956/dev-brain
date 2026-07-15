@@ -3,8 +3,8 @@ type: concept
 title: "Boy Scout Rule"
 aliases: ["regra do escoteiro", "leave the campground cleaner", "deixe o código mais limpo do que encontrou"]
 date_created: 2026-07-09
-date_updated: 2026-07-09
-source_count: 1
+date_updated: 2026-07-15
+source_count: 2
 tags: [craftsmanship, tech-debt, refactoring, clean-code, principios]
 skill: tech-mentor-leadership
 status: stable
@@ -32,7 +32,7 @@ Não se limita a nomes — qualquer melhoria pequena e segura (extrair uma funç
 ## Limites do Princípio
 
 - Não é licença para expandir o escopo do PR indefinidamente — a melhoria deve ser pequena e não deve arriscar quebrar o comportamento existente.
-- Difere de refactoring dedicado: a Boy Scout Rule é sempre acoplada a uma mudança que já estava sendo feita por outro motivo, não é uma tarefa própria.
+- Difere de refactoring dedicado: a Boy Scout Rule é sempre acoplada a uma mudança que já estava sendo feita por outro motivo, não é uma tarefa própria. [[wiki/sources/o-que-e-refatoracao-quando-usar]] chama esse mesmo tipo de aproveitamento de "refatoração oportunista" — a diferença é de escala: a Boy Scout Rule cobre micro-limpezas (nomes, comentário morto), enquanto a refatoração oportunista pode envolver restruturar um método inteiro antes de estender uma feature parecida.
 - Complementar, não substituto, de estratégias maiores de pagamento de dívida técnica como [[wiki/concepts/strangler-fig]] ou debt sprints.
 
 ## Relação com Outros Princípios
@@ -43,3 +43,4 @@ Não se limita a nomes — qualquer melhoria pequena e segura (extrair uma funç
 ## Key Sources
 
 - [[wiki/sources/5-principios-que-mudaram-como-programador]]
+- [[wiki/sources/o-que-e-refatoracao-quando-usar]] — distingue Boy Scout Rule (micro-limpeza acoplada a qualquer mudança) de [[wiki/concepts/refatoracao|refatoração oportunista]] (reestruturação maior, mas ainda aproveitando trabalho que já seria feito)

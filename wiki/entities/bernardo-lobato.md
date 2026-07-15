@@ -3,8 +3,8 @@ type: entity
 title: "Bernardo Lobato"
 aliases: ["Bernardo Lobato"]
 date_created: 2026-06-05
-date_updated: 2026-06-05
-source_count: 1
+date_updated: 2026-07-15
+source_count: 2
 tags: [arquitetura-software, segurança, criador-de-conteudo, youtube, backend]
 skill: tech-mentor-security
 status: stub
@@ -17,3 +17,4 @@ Desenvolvedor e criador de conteúdo brasileiro. Publica vídeos toda sexta-feir
 ## Key Sources
 
 - [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
+- [[wiki/sources/o-que-e-refatoracao-quando-usar]] — vídeo introdutório de uma série planejada sobre refatoração

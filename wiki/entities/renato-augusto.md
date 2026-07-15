@@ -3,8 +3,8 @@ type: entity
 title: "Renato Augusto"
 aliases: ["Renato Augusto"]
 date_created: 2026-06-05
-date_updated: 2026-07-03
-source_count: 3
+date_updated: 2026-07-15
+source_count: 4
 tags: [design-patterns, oop, arquitetura, criador-de-conteudo, youtube, carreira, soft-skills, system-design]
 skill: tech-mentor-backend
 status: stub
@@ -19,3 +19,4 @@ Desenvolvedor e criador de conteúdo brasileiro. Publica vídeos sobre padrões 
 - [[sources/design-pattern-proxy]]
 - [[wiki/sources/3-soft-skills-que-poucos-programadores-dominam]] — comunicação persuasiva, imagem profissional e habilidade de lidar com pessoas
 - [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] — escalabilidade horizontal, tipos de load balancer, camadas OSI e algoritmos de balanceamento com demonstração prática em Nginx
+- [[wiki/sources/design-pattern-adapter]] — Adapter Pattern com exemplo de troca de biblioteca de PDF (DomPDF → TCPDF), acoplamento, SRP e testabilidade

@@ -3,8 +3,8 @@ type: concept
 title: "Model Context Protocol (MCP)"
 aliases: ["MCP", "model context protocol", "protocol mcp"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 3
+date_updated: 2026-07-15
+source_count: 4
 tags: [mcp, model-context-protocol, tools, harness, json-rpc, anthropic]
 skill: tech-mentor-ai
 status: stable
@@ -47,8 +47,13 @@ Ver [[wiki/concepts/cli-vs-mcp]].
 
 A tendência é que empresas como Salesforce passem a oferecer MCPs como interface principal para seus produtos, no lugar de (ou complementando) APIs REST tradicionais.
 
+## Caso de uso: observabilidade
+
+MCPs de domínio (Tools que expõem um backend inteiro, não uma função isolada) permitem que um agente correlacione dados sem que o humano escreva a query manualmente — ex. um MCP de Grafana expondo Prometheus/Loki/Tempo para investigação de incidentes. Ver [[wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp]].
+
 ## Key Sources
 
 - [[wiki/sources/mcp]]
 - [[wiki/sources/formacao-ia-devs-aula-01-mcp-parte1]]
 - [[wiki/sources/formacao-ia-devs-aula-02-mcp-parte2]]
+- [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — Grafana MCP como exemplo de MCP de domínio para observabilidade

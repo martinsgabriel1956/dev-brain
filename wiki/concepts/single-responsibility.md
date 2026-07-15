@@ -3,8 +3,8 @@ type: concept
 title: "Single Responsibility Principle"
 aliases: ["SRP", "princípio da responsabilidade única", "single responsibility"]
 date_created: 2026-04-25
-date_updated: 2026-04-25
-source_count: 1
+date_updated: 2026-07-15
+source_count: 2
 tags: [single-responsibility, solid, software-design, clean-code]
 skill: tech-mentor-backend
 status: stub
@@ -44,3 +44,4 @@ Uma função pode orquestrar múltiplas operações e ainda ter responsabilidade
 ## Key sources
 
 - [[wiki/sources/acoplamento-abstracao-estado]]
+- [[wiki/sources/design-pattern-adapter]] — classe que gera PDF via `new DomPdf()` direto tem duas razões para mudar (regra de negócio e API da lib externa); resolvido extraindo o [[wiki/concepts/adapter-pattern|Adapter]]

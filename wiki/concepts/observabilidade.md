@@ -3,8 +3,8 @@ type: concept
 title: "Observabilidade"
 aliases: ["observabilidade", "observability", "três pilares", "metrics logs traces"]
 date_created: 2026-04-22
-date_updated: 2026-07-09
-source_count: 5
+date_updated: 2026-07-15
+source_count: 6
 tags: [observabilidade, metricas, logs, traces, prometheus, sre, infraestrutura]
 skill: tech-mentor-system-design
 status: stable
@@ -135,9 +135,17 @@ Traces:   Jaeger ou Grafana Tempo
 Coleta:   OpenTelemetry (vendor-neutral)
 ```
 
+## Erro comum de arquitetura: pular o Collector
+
+Boa prática de produção com [[wiki/concepts/distributed-tracing|OpenTelemetry]]: a aplicação nunca deve enviar telemetria direto para Prometheus/Loki/Tempo — ela envia para o **OpenTelemetry Collector**, que centraliza formatação e roteamento e distribui para cada backend especializado. Mandar o dado direto da aplicação pro backend final (pulando o Collector) é apontado como o erro mais comum ao montar essa stack.
+
+## De coleta a correlação automática
+
+A prioridade de implementação acima (logs → métricas RED → SLO → tracing) é sobre **coletar** dados. Uma vez coletados e centralizados, um agente de IA com acesso via MCP aos backends (ex. Grafana MCP → Prometheus/Loki/Tempo) consegue correlacionar os três pilares automaticamente e produzir relatórios de causa raiz que antes exigiam investigação manual de dias ou semanas. Ver [[wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp]]. O ouro continua nos dados — a IA acelera a correlação, não substitui a coleta.
+
 ## Relacionado
 
-[[concepts/sli]] · [[concepts/slo]] · [[concepts/error-budget]] · [[concepts/blameless-post-mortem]] · [[concepts/circuit-breaker]] · [[concepts/service-mesh]]
+[[concepts/sli]] · [[concepts/slo]] · [[concepts/error-budget]] · [[concepts/blameless-post-mortem]] · [[concepts/circuit-breaker]] · [[concepts/service-mesh]] · [[wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp]]
 
 ## Key Sources
 
@@ -146,3 +154,4 @@ Coleta:   OpenTelemetry (vendor-neutral)
 - [[sources/5-principios-programador]]
 - [[sources/roadmap-dev-senior-2026]] — pilar 4: ler o sistema como sistema vivo (logs, métricas)
 - [[wiki/sources/10-conceitos-fundamentais-backend]] — observabilidade como "meta-conceito" nº 1: o que amarra cache, fila, banco e autenticação no mundo real; logs = o que aconteceu, métricas = está crescendo?, traces = onde o tempo foi gasto
+- [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — arquitetura do Collector como ponto único de roteamento; correlação automática de telemetria via agente de IA + MCP

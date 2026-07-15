@@ -3,8 +3,8 @@ type: concept
 title: "Portfólio Backend Júnior"
 aliases: ["portfólio primeira vaga", "diferenciais backend junior", "primeira vaga backend"]
 date_created: 2026-04-25
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-07-15
+source_count: 3
 tags: [carreira, backend, junior, portfolio]
 skill: tech-mentor-leadership
 status: stable
@@ -53,7 +53,12 @@ Para tecnologias com menos vagas júnior formais (ex.: Go), a mesma lógica de p
 - [[curriculo-vs-portfolio]]
 - [[wiki/concepts/ponte-fullstack-para-especializacao]]
 
+## Antes do portfólio: passar na triagem
+
+Em processo real de triagem de currículos júnior, dois filtros vêm antes de qualquer avaliação de portfólio técnico: [[wiki/concepts/otimizacao-ats-curriculo]] (repetição da stack-alvo para passar no robô) e a presença do link de GitHub em si — sem ele, o portfólio nem chega a ser avaliado.
+
 ## Key sources
 
 - [[wiki/sources/diferenciais-portfolio-backend-junior]]
 - [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]
+- [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]] — triagem de currículos reais confirmando GitHub/portfólio como filtro eliminatório, não apenas diferencial

@@ -3,8 +3,8 @@ type: concept
 title: "Acoplamento"
 aliases: ["coupling", "baixo acoplamento", "alto acoplamento"]
 date_created: 2026-04-25
-date_updated: 2026-04-25
-source_count: 1
+date_updated: 2026-07-15
+source_count: 2
 tags: [acoplamento, software-design, clean-code, arquitetura]
 skill: tech-mentor-backend
 status: stable
@@ -59,3 +59,4 @@ Sistemas altamente acoplados congelam: uma mudança pequena quebra coisas inespe
 
 - [[wiki/sources/acoplamento-abstracao-estado]]
 - [[sources/ports-and-adapters-codebase-para-ia]] — forte acoplamento em god class quebra três módulos por uma mudança
+- [[wiki/sources/design-pattern-adapter]] — `new` de uma classe concreta de baixo nível (lib externa) dentro de uma classe de alto nível é a manifestação de acoplamento que o [[wiki/concepts/adapter-pattern]] resolve

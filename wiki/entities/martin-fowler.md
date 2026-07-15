@@ -3,8 +3,8 @@ type: entity
 title: "Martin Fowler"
 aliases: ["Fowler", "martinfowler.com"]
 date_created: 2026-07-07
-date_updated: 2026-07-09
-source_count: 2
+date_updated: 2026-07-15
+source_count: 3
 tags: [thoughtworks, autor, testes, arquitetura, tech-debt, refactoring, agile]
 skill: tech-mentor-testing
 status: stable
@@ -17,6 +17,10 @@ Chief Scientist da Thoughtworks, autor de *Refactoring* e *Patterns of Enterpris
 ## Traço característico: precisão terminológica
 
 Fowler é conhecido por identificar quando um termo popular carrega significados conflitantes e propor uma separação mais precisa em vez de deixar a ambiguidade se acumular — como fez com "integration test" (ver [[teste-de-integracao-estreito-vs-amplo]] e [[unit-test-solitario-vs-sociavel]]).
+
+## Autor do livro-fonte de Refatoração
+
+*Refactoring: Improving the Design of Existing Code* é citado em [[wiki/sources/o-que-e-refatoracao-quando-usar]] como referência para a política de tratamento de bugs encontrados durante uma refatoração: bug já conhecido e priorizado fica como está (o objetivo é reproduzir exatamente o comportamento externo pré-refatoração); bug novo pode ser corrigido na hora, mas só com certeza absoluta de que é real. O mesmo livro é citado como fonte de gráficos que argumentam que investir continuamente no design interno reduz — não aumenta — o tempo de entrega de features futuras. Ver [[wiki/concepts/refatoracao]].
 
 ## Termos e frameworks cunhados/popularizados, presentes nesta wiki
 
@@ -42,3 +46,4 @@ Fowler é conhecido por identificar quando um termo popular carrega significados
 
 - [[wiki/sources/integration-test-martin-fowler]]
 - [[wiki/sources/como-evitar-over-engineering-david-farley]]
+- [[wiki/sources/o-que-e-refatoracao-quando-usar]]

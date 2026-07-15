@@ -3,8 +3,8 @@ type: concept
 title: "Load Balancer"
 aliases: ["lb", "load balancing", "l4", "l7", "round robin"]
 date_created: 2026-04-23
-date_updated: 2026-07-09
-source_count: 7
+date_updated: 2026-07-15
+source_count: 8
 tags: [load-balancer, l4, l7, round-robin, health-check, alta-disponibilidade, infra, nginx]
 skill: tech-mentor-infra
 status: stub
@@ -39,6 +39,8 @@ Componente que distribui tráfego entre múltiplas instâncias de um serviço pa
 
 **Em microsserviços:** dois níveis — externo (L7 + SSL) + interno (service mesh/Envoy).
 
+**L4 e o par `IP:porta`:** o roteamento "cego" do L4 nada mais é do que ler [[wiki/concepts/porta-de-rede|IP e porta]] do pacote — sem abrir o payload da aplicação. É por isso que L4 serve qualquer protocolo (TCP genérico, UDP) enquanto L7 exige entender o protocolo de aplicação específico (HTTP).
+
 ## Pré-requisito
 
 Para distribuir livremente, os servidores precisam ser [[stateless]]. Com estado em memória, é necessário usar [[sticky-session]] — o que limita os benefícios de distribuição.
@@ -57,4 +59,5 @@ Conexões WebSocket são de longa duração e stateful — um L7 comum pode ter 
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — WebSocket exige LB L4 e infra especializada; SSE não
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — por que L7 quebra o fluxo do WebSocket; LB L4 roteia por menor número de conexões
 - [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] — tipos de LB (hardware/software/cloud), algoritmos de balanceamento (Weighted RR, Least Connections, Least Time, Sticky RR), demonstração prática com Nginx
+- [[wiki/sources/portas-de-rede-como-funcionam]] — L4 roteia por `IP:porta`, sem inspecionar conteúdo
 - [[wiki/sources/10-conceitos-fundamentais-backend]] — regra didática mínima: "o load balancer não deveria mandar tráfego para uma instância que travou"

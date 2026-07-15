@@ -2,6 +2,72 @@
 
 ---
 
+## [2026-07-15] ingest | O Que É Refatoração (e Quando Usar)
+
+**Fonte:** [[wiki/sources/o-que-e-refatoracao-quando-usar]] — transcrição de fala corrida em português (sem necessidade de tradução), limpa e organizada em seções, salva em `raw/o-que-e-refatoracao-quando-usar.md`. Vídeo introdutório de [[wiki/entities/bernardo-lobato]] anunciando uma possível série sobre refatoração no canal.
+
+**Skill carregada:** `tech-mentor-backend`, `references/software-craftsmanship.md` (seção "Technical Debt — Quadrantes e Estratégia de Pagamento", que já cobre Boy Scout Rule e o alerta contra "refactoring project" de 6 meses com feature freeze) — mesma skill já usada em [[wiki/sources/design-pattern-adapter]] e [[wiki/sources/design-pattern-facade]].
+
+**Páginas criadas:**
+- `wiki/sources/o-que-e-refatoracao-quando-usar.md`
+- `wiki/concepts/refatoracao.md` — novo conceito central: refatoração como mudança de estrutura interna sem alterar comportamento externo, com pilares (dois chapéus, passos pequenos, testes como rede de segurança) e critérios de quando/quando não refatorar
+- `wiki/concepts/dois-chapeus-kent-beck.md` — novo conceito: metáfora de Kent Beck para adicionar funcionalidade e refatorar como atividades mutuamente exclusivas no tempo
+
+**Páginas atualizadas:**
+- `wiki/concepts/god-object.md` — nova seção "Como uma God Class nasce sprint a sprint", exemplo narrativo de degradação incremental sob prazo; `source_count` 2 → 3
+- `wiki/concepts/piramide-de-testes.md` — nova seção ligando a base da pirâmide ao pré-requisito de segurança para refatorar (E2E citado como caro/lento demais para esse ciclo); `source_count` 4 → 5
+- `wiki/concepts/tech-debt-como-ferramenta.md` — nova seção "Quando refatoração vira débito técnico", critério prático (horas/dias de esforço) complementar ao Quadrante de Fowler; `source_count` 5 → 6
+- `wiki/concepts/boy-scout-rule.md` — nota distinguindo Boy Scout Rule (micro-limpeza) de refatoração oportunista (reestruturação maior); `source_count` 1 → 2
+- `wiki/entities/martin-fowler.md` — nova seção "Autor do livro-fonte de Refatoração" (política de bugs encontrados durante refatoração; gráficos de tempo de entrega); `source_count` 2 → 3
+- `wiki/entities/kent-beck.md` — nova seção sobre a metáfora dos dois chapéus; `source_count` 1 → 2
+- `wiki/entities/bernardo-lobato.md` — nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (seção "Padrões e Design")
+
+**Notas:** Fonte é uma introdução de série, propositalmente na superfície — o autor adia code smells, catálogo de técnicas de Fowler e "como refatorar com segurança usando testes" para vídeos futuros. A wiki já tinha material adjacente maduro ([[wiki/concepts/tech-debt-como-ferramenta]], [[wiki/concepts/boy-scout-rule]], [[wiki/concepts/god-object]], [[wiki/concepts/piramide-de-testes]]) mas nenhuma página dedicada ao conceito central de refatoração em si — daí a criação de [[wiki/concepts/refatoracao]] como página nova, não apenas mais uma seção espalhada. Reforça sem contradizer: a política de bugs durante refatoração (deixar bug conhecido, corrigir só bug novo com certeza absoluta) e a metáfora dos dois chapéus de Kent Beck são citações nomeadas e específicas, ambas consistentes com o material já presente sobre TDD (RED-GREEN-REFACTOR) e sobre o Quadrante de Fowler. Open questions registradas na fonte: não há heurística objetiva para o limiar "refatoração oportunista vs. vira débito técnico" além de bom senso; a citação atribuída ao livro de Fowler sobre bugs é paráfrase, não citação textual — vale confirmar numa ingestão futura do próprio livro.
+
+---
+
+## [2026-07-15] ingest | Análise de Currículos de Programador Júnior — Dicas de ATS e Portfólio
+
+**Fonte:** [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]] — transcrição de fala corrida em português (sem necessidade de tradução), limpa e organizada em seções por candidato, salva em `raw/analise-curriculos-programador-junior-dicas-ats.md`. Vídeo de reação a currículos enviados por espectadores de um curso/comunidade não identificada com confiança na transcrição.
+
+**Skill carregada:** `tech-mentor-leadership` — carregado `SKILL.md` em `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/` (path real deste ambiente; o CLAUDE.md referencia `/home/nemomartins/...`, que não existe aqui). Consultado `references/leadership/engineering-hiring.md` para calibrar o vocabulário de triagem/processo seletivo.
+
+**Páginas criadas:**
+- `wiki/sources/analise-curriculos-programador-junior-dicas-ats.md`
+- `wiki/concepts/otimizacao-ats-curriculo.md` — novo conceito: repetição de palavras-chave da stack-alvo no currículo para passar no filtro automático (ATS) antes da avaliação humana
+
+**Páginas atualizadas:**
+- `wiki/concepts/curriculo-vs-portfolio.md` — nova seção "Na prática de triagem: GitHub ativo como prova mínima" com caso real de descarte por ausência de link; `source_count` 2 → 3
+- `wiki/concepts/portfolio-backend-junior.md` — nova seção "Antes do portfólio: passar na triagem" ligando o filtro de ATS/GitHub como etapa anterior ao portfólio técnico em si; `source_count` 2 → 3
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts
+
+**Notas:** Fonte de baixa densidade técnica mas alta especificidade prática — é uma reação ao vivo a currículos reais, não um artigo teórico, então grande parte do conteúdo é avaliação caso a caso (seis candidatos, a maioria rejeitada por falta de GitHub, formatação ruim ou cores/fonte problemáticas). O ponto novo o suficiente para virar página própria foi a mecânica de ATS (contagem de menções de palavra-chave), que a wiki já tocava de raspão em outras fontes de carreira mas nunca tinha detalhado como conceito — daí [[wiki/concepts/otimizacao-ats-curriculo]]. O restante do conteúdo (GitHub como prova, formatação, discurso de "pensar produto", conhecimento de IA aplicada no currículo) encaixou como reforço direto em [[wiki/concepts/curriculo-vs-portfolio]] e [[wiki/concepts/portfolio-backend-junior]], sem contradição com o que já existia. Nenhuma entidade nova foi criada: o apresentador não se identifica na transcrição, e os candidatos avaliados são pessoas privadas (nomes completos citados), não entidades de relevância pública para a wiki — decisão deliberada de não criar páginas de entidade para eles. Open question registrada na fonte: nome do canal/apresentador não identificado com confiança.
+
+---
+
+## [2026-07-15] ingest | Portas de Rede — Como Funcionam
+
+**Source:** [[wiki/sources/portas-de-rede-como-funcionam]] — transcrição de vídeo em inglês (fala corrida, sem pontuação), traduzida para português e organizada em seções, salva em `raw/portas-de-rede-como-funcionam.md`.
+
+**Skill:** `tech-mentor-networking` — carregado `SKILL.md` em `/home/gabriel-martins/Documentos/skills/tech-mentor-networking/` (path real deste ambiente; o CLAUDE.md referencia `/home/nemomartins/...`, que não existe aqui). Consultado `references/protocols-transport.md` para calibrar terminologia de estados de conexão (`LISTEN`/`ESTABLISHED`/`TIME_WAIT`/`CLOSE_WAIT`) e confirmar que `ss` é o substituto moderno de `netstat` no Linux — a fonte usa `netstat` (Windows), então essa diferença de ferramenta por plataforma foi registrada como nota, não como contradição.
+
+**Páginas criadas:**
+- `wiki/sources/portas-de-rede-como-funcionam.md`
+- `wiki/concepts/porta-de-rede.md` — novo conceito central; nenhuma página existente descrevia porta como conceito próprio (apenas mencionada de passagem em `protocolo-de-rede`, `ssh`, `load-balancer`)
+- `wiki/entities/iana.md` — nova entidade; autoridade citada como gestora de IPs, domínios e portas, sem página própria até então
+
+**Páginas atualizadas:**
+- `wiki/concepts/protocolo-de-rede.md` — nova seção "Porta: o endereçamento dentro do host", ligando `IP:porta` ao modelo em camadas já documentado; `source_count` 5 → 6
+- `wiki/concepts/dns.md` — nota distinguindo resolução de nome (DNS) de resolução de serviço (porta), duas camadas de endereçamento complementares; `source_count` 1 → 2
+- `wiki/concepts/ssh.md` — nova frase relacionando a porta 22 (well-known port do SSH) à diretiva `Port` já documentada em `~/.ssh/config`/`sshd_config`; `source_count` 1 → 2
+- `wiki/concepts/load-balancer.md` — nova frase explicando que o roteamento "cego" do L4 é literalmente ler `IP:porta` sem abrir o payload; `source_count` 7 → 8
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção de fundamentos de rede); nova linha em Entities
+
+**Notas:** Fonte introdutória/fundamentos (nível iniciante), mas preenchia uma lacuna real: o wiki já tinha várias páginas mencionando portas de passagem (443 em SSE/WebSocket, 22 em SSH, `IP:porta` em load balancer) sem nenhuma página que tratasse "porta" como conceito de primeira classe com suas três faixas IANA e a distinção servidor (well-known/registered) vs. cliente (dynamic/ephemeral). Essa distinção — portas dinâmicas existem para demultiplexar respostas no lado do cliente, não para identificar serviços — não estava formalizada em nenhuma página antes desta ingestão. Sem contradições com o resto do wiki; a única discrepância é de ferramenta (netstat vs. ss), documentada como nota de plataforma, não como erro da fonte. Open question registrada na fonte: ela não distingue portas TCP de portas UDP (o conceito de porta é agnóstico ao transporte, mas isso ficou implícito, não explícito, no vídeo original).
+
+---
+
 ## [2026-07-10] ingest | HMAC: Integridade de Mensagem em Local-First (Entrevista de System Design)
 
 **Source:** [[wiki/sources/hmac-integridade-mensagem-local-first-entrevista]] — transcrição bruta de ASR (fala em bloco único, sem pontuação) colada pelo usuário, já em português (sem necessidade de tradução), reescrita como markdown estruturado por etapa de raciocínio em `raw/hmac-integridade-mensagem-local-first-entrevista.md`.
@@ -2385,3 +2451,50 @@ Entities:
 - `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção "JavaScript / Node.js Performance")
 
 **Notas:** Fonte didática cobrindo os 8 tipos primitivos de JavaScript (`null`, `undefined`, `boolean`, `number`, `bigint`, `string`, `symbol`, `object`) e duas formas de checagem de tipo (`typeof` vs. `Object.prototype.toString.call()`), com ênfase nas armadilhas de conversão implícita de tipo. Conecta-se com duas páginas já existentes sem sobrepor: [[wiki/concepts/pitfalls-de-linguagem]] já citava `typeof null` e `==` vs `===` como armadilhas gerais de JS, mas sem o mecanismo interno (por que `typeof null` é `"object"`, e como `Object.prototype.toString.call()` é historicamente usado — ex. Underscore — como alternativa mais precisa); [[wiki/concepts/sistema-de-tipos]] descrevia tipagem estática vs. dinâmica como o eixo central de sistemas de tipos, e esta fonte deixa explícito que "tipagem fraca" (o rótulo comum para JS) é um eixo ortogonal — sobre conversão implícita, não sobre quando o erro é pego. Distinção nova e potencialmente reutilizável, não formalizada antes: parâmetros default de função reagem apenas a `undefined`, enquanto expressões com `||` reagem a qualquer valor falsy — confundir os dois é fonte comum de bugs silenciosos (ex.: `bar(0)` se comporta diferente dependendo de qual mecanismo é usado). Sem contradições com o resto do wiki. Open question registrada na fonte: autoria do vídeo não identificada com confiança (transcrição ambígua no trecho de autoapresentação) — nenhuma página de entidade foi criada para evitar atribuição incorreta.
+
+---
+
+## [2026-07-15] ingest | Padrão de Projeto: Adapter (Renato Augusto)
+
+**Fonte:** [[wiki/sources/design-pattern-adapter]] — transcrição de fala corrida em português (sem necessidade de tradução), limpa e organizada em seções, salva em `raw/design-pattern-adapter.md`. Vídeo do Renato Augusto sobre o Adapter Pattern com exemplo prático de um gerador de relatório de vendas em PDF (PHP, DomPDF → TCPDF).
+
+**Skill carregada:** `tech-mentor-backend`, `references/design-patterns.md` (seção Structural, entrada "Adapter") — mesma skill já usada em [[wiki/sources/design-pattern-proxy]] e [[wiki/sources/design-pattern-facade]].
+
+**Páginas criadas:**
+- `wiki/sources/design-pattern-adapter.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/adapter-pattern.md` — nova seção "Exemplo: troca de biblioteca sem tocar na regra de negócio" (caso DomPDF/TCPDF); `source_count` 3 → 4
+- `wiki/concepts/single-responsibility.md` — novo key source ligando `new` direto numa lib externa dentro de uma classe de negócio a duas razões de mudar (viola SRP); `source_count` 1 → 2
+- `wiki/concepts/acoplamento.md` — novo key source: `new` de classe concreta de baixo nível dentro de classe de alto nível como manifestação de acoplamento resolvida pelo Adapter; `source_count` 1 → 2
+- `wiki/concepts/abstracao.md` — novo key source: extrair interface própria do domínio entre consumidor e lib externa é o que viabiliza troca de lib sem tocar no consumidor; `source_count` 2 → 3
+- `wiki/entities/renato-augusto.md` — nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/index.md` — nova linha em Sources
+
+**Notas:** Quarta fonte do Adapter Pattern na wiki (já havia 3 via [[wiki/sources/design-pattern-proxy]], [[sources/sete-padroes-de-design-de-software]] e [[sources/design-pattern-facade]]), mas a primeira com um exemplo de código completo e refatorado ao vivo especificamente para esse padrão — as três fontes anteriores mencionavam Adapter só de passagem ou em contraste com Proxy/Facade. Reforça três conceitos já maduros na wiki sem contradição: [[wiki/concepts/acoplamento]] (o `new` direto como manifestação concreta), [[wiki/concepts/single-responsibility]] (duas razões de mudar) e [[wiki/concepts/abstracao]] (interface como o que permite substituição). Nenhuma página nova de conceito foi necessária — o vídeo é um bom exemplo didático encaixando em taxonomia já estabelecida, não um conceito novo. Open question registrada na fonte: o vídeo argumenta testabilidade mas não escreve o teste unitário de fato; fica em aberto como um fake de `PdfAdapter` seria implementado na prática.
+
+---
+
+## [2026-07-15] ingest | Observabilidade de Ponta a Ponta com OpenTelemetry — Palestra em Amsterdã
+
+**Fonte:** [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — transcrição de fala corrida em português (sem necessidade de tradução), limpa e organizada em seções, salva em `raw/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam.md`. Reapresentação em vídeo de uma palestra dada em Amsterdã pelo autor do canal (ver [[wiki/entities/eric-lenda]]) sobre observabilidade fullstack com OpenTelemetry, unida à sua experiência como especialista em performance de aplicações JavaScript e ao uso de agentes de IA via MCP (Grafana MCP, Context7) para automatizar investigação de incidentes.
+
+**Skill carregada:** `tech-mentor-infra`, `references/observability/opentelemetry-deep.md` e `references/observability-foundations.md` — mesma skill já usada em [[wiki/sources/distributed-tracing]] e [[wiki/sources/observabilidade]].
+
+**Páginas criadas:**
+- `wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam.md`
+- `wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp.md` — novo conceito: correlação automática de métricas/logs/traces por um agente de IA conectado via MCP a backends de observabilidade, transformando investigação manual de semanas em relatório de minutos
+
+**Páginas atualizadas:**
+- `wiki/concepts/observabilidade.md` — nova seção sobre o Collector como ponto único de roteamento (erro comum: aplicação enviando direto pro backend, pulando o Collector) e nova seção ligando coleta → correlação automática via IA/MCP; `source_count` 5 → 6
+- `wiki/concepts/distributed-tracing.md` — expandida de stub para draft: seção sobre OpenTelemetry como padrão vendor-neutral (contribuições de New Relic/Splunk/Google/Amazon/Grafana/Datadog no mesmo projeto), instrumentação de bibliotecas de baixo nível (não só rotas HTTP) com caso real de ganho de ~50% de performance, e uso por IA para correlação automática; `source_count` 1 → 2
+- `wiki/concepts/mcp-server.md` — nova seção "Exemplo de domínio: Grafana MCP para observabilidade"; `source_count` 1 → 2
+- `wiki/concepts/model-context-protocol.md` — nova seção "Caso de uso: observabilidade"; `source_count` 3 → 4
+- `wiki/concepts/gargalo.md` — novo key source ligando CPU profile/flame graph como técnica prática de identificar gargalo de código; `source_count` 1 → 2
+- `wiki/entities/eric-lenda.md` — nova linha em Key sources, bio expandida (especialista em performance JS, palestras em 20+ países); `source_count` 1 → 2
+- `wiki/entities/anthropic.md` — novo key source (menção de passagem a erros `503` da API do Claude como exemplo do "novo normal" de sistemas caindo); `source_count` 7 → 8
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção MCP/IA)
+
+**Notas:** Fonte com bastante densidade técnica cobrindo três eixos: (1) arquitetura de OpenTelemetry (Collector como hub de roteamento, os três pilares, instrumentação de libs de baixo nível), reforçando e expandindo [[wiki/concepts/observabilidade]] e [[wiki/concepts/distributed-tracing]] sem contradição — ambas já tinham a stack recomendada (Prometheus/Loki/Tempo/Grafana) mas nenhuma detalhava a arquitetura do Collector como ponto único de roteamento nem o erro comum de pular essa etapa; (2) o processo manual de investigação de performance pré-IA do autor (CPU profile/flame graph, Clinic.js, mirar produção em vez de staging), que ligou a [[wiki/concepts/gargalo]] uma técnica prática já esperada mas não documentada (profiling de CPU); (3) o padrão mais novo da fonte — um agente de IA com acesso via MCP a backends de observabilidade correlacionando telemetria automaticamente para achar causa raiz — que não tinha página própria na wiki, por isso a criação de [[wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp]]. Dois casos de segurança reais foram registrados na fonte (extensão maliciosa do VS Code Marketplace no GitHub, ataque de supply chain no NPM afetando 84+ pacotes incluindo o Codex, e um minerador de Bitcoin rodando via RCE numa aplicação Next.js do próprio autor, contido pelo isolamento do container Kubernetes) mas não geraram páginas de conceito novas nem edições em páginas de segurança existentes — são citados como motivação ("por que observabilidade importa"), não como conteúdo técnico de segurança aprofundado o suficiente para expandir [[wiki/sources/supply-chain-security]] ou similares; ficou registrado apenas na fonte. Open questions registradas na fonte: nome do framework da consultoria de performance do autor não identificado com confiança (transcrição distorcida, "Miture JS"/"mito") — nenhuma entidade nova criada para evitar atribuição incorreta; link do repositório de exemplo multi-serviço citado na palestra não foi capturado na transcrição; CVE da vulnerabilidade Next.js/React do caso do minerador não identificado.
+
+---

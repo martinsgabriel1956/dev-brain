@@ -1,7 +1,8 @@
 ---
 type: index
-date_updated: 2026-07-10
+date_updated: 2026-07-15
 ---
+
 
 
 
@@ -12,6 +13,7 @@ date_updated: 2026-07-10
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]] | Reação a currículos reais de candidatos júnior: repetição da stack-alvo para passar no ATS, ausência de GitHub como motivo de descarte explícito, formatação/legibilidade e discurso de "pensar produto" como diferenciais |
 | [[wiki/sources/8-tipos-de-javascript]] | Os 8 tipos de JS (`null`, `undefined`, `boolean`, `number`, `bigint`, `string`, `symbol`, `object`); `typeof` vs. `Object.prototype.toString.call()`; `==` vs `===`; default de parâmetro (`undefined`) vs. fallback `\|\|` (qualquer falsy) |
 | [[wiki/sources/filosofia-do-design-de-software-introducao]] | Tradução do cap. 1 de *A Philosophy of Software Design*: complexidade como maior limitação real ao escrever software; eliminar vs. encapsular; por que waterfall falha e design incremental funciona; red flags via code review |
 | [[wiki/sources/ssh-chaves-como-funcionam]] | Chave SSH é par assimétrico (privada nunca sai da origem, pública vai pro `authorized_keys` do destino) e é unidirecional por par — `sshd_config.d` com `PubkeyAuthentication yes` + senha desativada é o padrão de indústria; `~/.ssh/config` cria aliases com `IdentitiesOnly` |
@@ -139,6 +141,10 @@ date_updated: 2026-07-10
 | [[wiki/sources/golang-mercado-salarios-pesquisa-2024]] | Go paga acima de Java em todos os níveis (maior gap no Sênior, ~R$6.000/mês); Go Developer Survey confirma 93% de satisfação; 27,7% dos devs Go no Brasil atuam remoto para o exterior contra 12% em Java |
 | [[wiki/sources/hmac-integridade-mensagem-local-first-entrevista]] | Pergunta de entrevista de system design sobre integridade de mensagem: carrinho local-first sem storage no servidor — por que criptografar quebra a exibição, chave assimétrica é cara demais, e HMAC (ipad/opad derivados do mesmo segredo, duas etapas de hash) é a resposta certa contra ataque de extensão de mensagem |
 | [[wiki/sources/mappers-conversao-entre-camadas]] | A mesma entidade (`Notification`) é representada de forma diferente em cada camada de uma arquitetura em camadas — mapper estático por camada (`PrismaNotificationMapper.toPrisma()`) converte entre formatos e isola o acoplamento à tecnologia, não ao domínio |
+| [[wiki/sources/portas-de-rede-como-funcionam]] | Porta é um número virtual (0–65.535) que, com o IP, roteia dados ao serviço certo — faixas IANA (well-known, registered, dynamic), portas dinâmicas por conexão de saída, estados listening/established/closed, netstat na prática |
+| [[wiki/sources/design-pattern-adapter]] | Renato Augusto: classe de negócio acoplada via `new` a uma lib externa de PDF (DomPDF) fere SRP e é intestável — Adapter extrai uma interface própria do domínio, e trocar de lib (DomPDF → TCPDF) passa a exigir só um novo adaptador |
+| [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] | Palestra em Amsterdã: OpenTelemetry como padrão vendor-neutral roteado por um Collector central; agente de IA via Grafana MCP correlaciona métricas/logs/traces sozinho e acha causa raiz em código — "o ouro está nos dados, não na IA" |
+| [[wiki/sources/o-que-e-refatoracao-quando-usar]] | Bernardo Lobato: refatoração é mudar estrutura interna sem alterar comportamento externo — dois chapéus de Kent Beck, God Class nascendo sprint a sprint sob prazo, testes na base da pirâmide como rede de segurança, passos pequenos, refatoração oportunista vs. planejada |
 
 ## Concepts
 
@@ -350,6 +356,7 @@ date_updated: 2026-07-10
 | [[wiki/concepts/codigo-legado-ia]] | IA funciona melhor em legado que greenfield quando há referências ricas; desafio é técnica, não capacidade |
 | [[wiki/concepts/model-context-protocol]] | Protocolo padrão Anthropic para integrar LLMs a ferramentas externas — "USB-C das integrações de IA" |
 | [[wiki/concepts/mcp-arquitetura]] | Host/Client/Server + transportes stdio/SSE/Streamable HTTP — server deve ficar em pé, não subir e cair |
+| [[wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp]] | Agente com Grafana MCP correlaciona métricas/logs/traces sozinho e acha causa raiz em código — semanas de investigação viram minutos, mas só se os dados já existirem |
 | [[wiki/concepts/cli-vs-mcp]] | CLI usa treinamento da LLM e economiza contexto; MCP expõe tools delimitadas — critério de decisão |
 | [[wiki/concepts/tech-spec]] | Segundo artefato do SDD: traduz o PRD em decisões técnicas (contratos, schemas, arquitetura) |
 | [[wiki/concepts/human-in-the-loop]] | HITL em três granularidades: por tool call, por plan, por etapa SDD — Plan Mode é a forma leve |
@@ -432,6 +439,7 @@ date_updated: 2026-07-10
 | [[wiki/concepts/paralelismo]] | Executar múltiplas tarefas ao mesmo tempo — requer múltiplos cores; oposto de concorrência |
 | [[wiki/concepts/compilador]] | Traduz código-fonte em código de máquina via lexer → parser → AST → otimizador |
 | [[wiki/concepts/protocolo-de-rede]] | Regras de comunicação em camadas — HTTP diz o quê, TCP garante entrega, IP define rota |
+| [[wiki/concepts/porta-de-rede]] | Número virtual (0–65.535) que identifica serviço/processo num host — IANA organiza em well-known, registered e dynamic; SO atribui porta dinâmica por conexão de saída para demultiplexar respostas |
 | [[wiki/concepts/criptografia]] | Hashing irreversível, simétrica (mesma chave) e assimétrica (par público/privado) — base do HTTPS |
 | [[wiki/concepts/bluetooth-le]] | Advertising → scan → pair → GATT — o "handshake" do Bluetooth Low Energy; gerenciar mal o ciclo gera conexão fantasma e dreno de bateria |
 | [[wiki/concepts/sistema-de-tipos]] | Estática vs. dinâmica vs. inferência — quando os erros de tipo são pegos: compilação ou runtime |
@@ -745,11 +753,15 @@ date_updated: 2026-07-10
 | [[wiki/concepts/error-handling-estruturado]] | Classes de erro específicas + HTTP codes corretos por caso + error handler global para o inesperado |
 | [[wiki/concepts/sql-alem-do-basico]] | JOINs, agregações e subqueries — sinal de que o dev saiu do CRUD básico e entende como o banco funciona de verdade |
 | [[wiki/concepts/curriculo-vs-portfolio]] | Currículo é promessa de onde você esteve; portfólio é prova do que você produziu |
+| [[wiki/concepts/otimizacao-ats-curriculo]] | Repetir a stack-alvo 2-3x no currículo para passar no filtro automático (ATS) antes de qualquer avaliação humana |
+| [[wiki/concepts/refatoracao]] | Mudar estrutura interna sem alterar comportamento externo — dois chapéus de Kent Beck, passos pequenos, testes na base da pirâmide como rede de segurança, refatoração oportunista vs. planejada |
+| [[wiki/concepts/dois-chapeus-kent-beck]] | Adicionar funcionalidade e refatorar são atividades mutuamente exclusivas no tempo — cada uma com sua própria disciplina de validação |
 
 ## Entities
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/iana]] | Internet Assigned Numbers Authority — coordena globalmente endereços IP, nomes de domínio e números de porta |
 | [[wiki/entities/bernardo-lobato]] | Desenvolvedor e criador de conteúdo brasileiro — arquitetura de software e padrões avançados |
 | [[wiki/entities/linuxtips]] | Plataforma brasileira de educação em tecnologia — DevOps, Cloud, Kubernetes, podcast Papinho Tech Solo |
 | [[wiki/entities/renato-augusto]] | Desenvolvedor e criador de conteúdo brasileiro — padrões de projeto GoF e orientação a objetos, carreira e soft skills |

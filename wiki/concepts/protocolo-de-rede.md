@@ -3,8 +3,8 @@ type: concept
 title: "Protocolo de Rede"
 aliases: ["network protocol", "TCP/IP", "HTTP", "modelo em camadas", "OSI"]
 date_created: 2026-06-26
-date_updated: 2026-07-03
-source_count: 5
+date_updated: 2026-07-15
+source_count: 6
 tags: [cs-fundamentals, redes, protocolos, tcp-ip, http, networking]
 skill: cs-fundamentals
 status: draft
@@ -75,6 +75,10 @@ Jogos online (ex.: FPS) e videochamada (ex.: Google Meet) usam UDP em vez de TCP
 
 Antes de qualquer resposta HTTP chegar, três etapas já consumiram latência: **DNS** resolve o nome para IP, o **TCP three-way handshake** (SYN, SYN-ACK, ACK) abre a conexão, e o **TLS** negocia a criptografia por cima dela — só então o HTTP trafega. Quando um app está lento, o gargalo costuma estar numa dessas camadas, não no código de tela; quem entende essa sequência debuga em minutos o que quem só opera CRUD leva dias chutando. Ver [[wiki/concepts/bluetooth-le]] para o equivalente em conexões sem fio de curto alcance (advertising → scan → pair → GATT, em vez de DNS → TCP → TLS).
 
+## Porta: o endereçamento dentro do host
+
+`IP:porta` é o par completo de endereçamento: o IP diz qual host (camada de rede), a porta diz qual serviço/processo dentro daquele host (camada de transporte). Portas são um número virtual de 0 a 65.535, administradas pela [[wiki/entities/iana]] em três faixas — well-known (ex. HTTP/80, HTTPS/443, SSH/22), registered (ex. RDP/3389) e private/dynamic, estas últimas atribuídas pelo sistema operacional ao **cliente** a cada nova conexão de saída, para que a resposta volte ao processo exato que a originou (ex.: cada aba de vídeo aberta ganha sua própria porta dinâmica local, mesmo todas conectando ao mesmo servidor remoto na porta 443). Ver [[wiki/concepts/porta-de-rede]] para as faixas, estados de conexão (`LISTEN`/`ESTABLISHED`) e ferramentas de diagnóstico (`ss` no Linux, `netstat` no Windows).
+
 ## Relação com outros conceitos
 
 - [[abstracao]] — o modelo em camadas é abstração aplicada a redes: cada camada esconde como a de baixo funciona
@@ -84,6 +88,7 @@ Antes de qualquer resposta HTTP chegar, três etapas já consumiram latência: *
 
 ## Key sources
 
+- [[wiki/sources/portas-de-rede-como-funcionam]] — porta como endereçamento de serviço dentro do host, faixas IANA e portas dinâmicas
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — SSE como tunelamento HTTP/TCP mantido aberto
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — handshake HTTP→TCP do WebSocket e por que exige LB de camada 4

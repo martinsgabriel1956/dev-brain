@@ -3,8 +3,8 @@ type: concept
 title: "Pirâmide de Testes"
 aliases: ["test pyramid", "ice cream cone", "testing trophy", "estratégia de testes"]
 date_created: 2026-04-22
-date_updated: 2026-07-10
-source_count: 4
+date_updated: 2026-07-15
+source_count: 5
 tags: [testes, pirâmide, estratégia, unitário, integração, e2e, projetos-novos]
 skill: tech-mentor-testing
 status: stable
@@ -124,6 +124,10 @@ Dois contextos que empurram o balanço para fora da pirâmide "padrão":
 
 Nessa leitura, o teste de maior valor por unidade de custo tende a ser um teste de integração que exercita uma regra de negócio de ponta a ponta — ex.: `POST /users` seguido de `GET /users/:id` confirmando que o dado persistiu — sem precisar da fragilidade e do custo de um E2E completo. Ver [[criterios-de-bom-teste]] para os critérios usados para julgar se um teste especifico vale o investimento.
 
+## Base da pirâmide como pré-requisito de refatoração segura
+
+[[wiki/concepts/refatoracao]] recorre explicitamente à base da pirâmide (unitário + integração estreita) como a rede de segurança para refatorar sem quebrar comportamento — E2E é citado como custoso e lento demais para o ciclo curto de refatorar em passos pequenos. Se a funcionalidade a ser refatorada não tem testes, a recomendação é escrevê-los primeiro, só para aquele escopo, antes de mexer na estrutura.
+
 ## Ver também
 
 - [[tdd]] — prática que preenche a base da pirâmide
@@ -137,6 +141,7 @@ Nessa leitura, o teste de maior valor por unidade de custo tende a ser um teste 
 
 - [[sources/piramide-de-testes]]
 - [[sources/roadmap-dev-senior-2026]] — testes como seguro contra decisões ruins da IA (pilar 5)
+- [[wiki/sources/o-que-e-refatoracao-quando-usar]] — base da pirâmide como pré-requisito de segurança para refatorar
 - [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]
 - [[wiki/sources/integration-test-martin-fowler]]
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — releitura da pirâmide como problema de alocação de recursos; valor assimétrico de E2E entre legado e startup em pivot

@@ -3,8 +3,8 @@ type: concept
 title: "SSH e Chaves SSH"
 aliases: ["ssh", "secure shell", "chave ssh", "ssh-keygen", "authorized_keys", "openssh"]
 date_created: 2026-07-10
-date_updated: 2026-07-10
-source_count: 1
+date_updated: 2026-07-15
+source_count: 2
 tags: [ssh, openssh, ed25519, autenticacao, criptografia-assimetrica, iam, hardening, bastion]
 skill: tech-mentor-security
 status: stable
@@ -72,7 +72,9 @@ Host two
 - [[wiki/concepts/criptografia]] / [[wiki/concepts/encryption]] — Ed25519 é o mesmo tipo de criptografia assimétrica usada em TLS e assinaturas digitais.
 - [[wiki/concepts/principio-do-menor-privilegio]] — SSH é o canal citado para acesso a bastion hosts em arquiteturas de VPC fechada.
 - [[wiki/concepts/hardening-de-servidor]] — chave SSH é a base sobre a qual o hardening de acesso remoto é construído.
+- [[wiki/concepts/porta-de-rede]] — SSH é uma das quatro well-known ports citadas como exemplo canônico (porta 22), ao lado de HTTP/80, HTTPS/443 e SMTP/25; a diretiva `Port` no `~/.ssh/config` e no `sshd_config` é justamente onde essa porta pode ser trocada do padrão.
 
 ## Key Sources
 
 - [[wiki/sources/ssh-chaves-como-funcionam]]
+- [[wiki/sources/portas-de-rede-como-funcionam]] — porta 22 como well-known port do SSH

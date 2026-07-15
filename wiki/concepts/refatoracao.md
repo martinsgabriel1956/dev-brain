@@ -1,0 +1,66 @@
+---
+type: concept
+title: "Refatoração"
+aliases: ["refactoring", "refatorar"]
+date_created: 2026-07-15
+date_updated: 2026-07-15
+source_count: 1
+tags: [refactoring, clean-code, craftsmanship, design-de-software, tech-debt]
+skill: tech-mentor-backend
+status: draft
+---
+
+# Refatoração
+
+Processo de modificar a estrutura interna de um sistema de software **sem alterar seu comportamento externo**. Não é sinônimo de "reescrever" nem de "corrigir bug" — é melhorar o design do código depois que ele já foi escrito, preservando exatamente o que o sistema faz por fora.
+
+## Dois pilares da definição
+
+1. **Comportamento externo intacto.** Uma refatoração nunca deve ser feita ao mesmo tempo que se adiciona ou altera uma funcionalidade — ver [[wiki/concepts/dois-chapeus-kent-beck]].
+2. **Estrutura interna livre para mudar** — às vezes drasticamente — desde que o resultado observável (inputs/outputs, efeitos colaterais) permaneça o mesmo.
+
+## Por que o design degrada com o tempo
+
+Todo sistema tende a começar organizado. A cada nova feature, cada hotfix sob pressão de prazo, o design bem pensado vai sendo "atropelado" — um `if` aqui, uma regra ali, até uma classe que começou coesa virar um [[wiki/concepts/god-object]] que ninguém tem coragem de tocar. Um compilador não se importa se o código está feio; o humano sim — código com design ruim é difícil de entender, difícil de saber tudo que precisa mudar, e por isso mais propenso a bugs.
+
+## Como não piorar o código refatorando
+
+A garantia central é **cobertura de testes automatizados** — de preferência barata e rápida de rodar (base da [[wiki/concepts/piramide-de-testes]], não testes E2E). Se a funcionalidade a ser refatorada não tem testes, o primeiro passo é escrevê-los só para aquele escopo, para mapear o comportamento real antes de mexer na estrutura.
+
+A refatoração deve avançar em **passos pequenos**, nunca reescrevendo um módulo inteiro de uma vez numa branch isolada — o risco é terminar com um estado que não entrega nem a refatoração nem funcionalidade nova, e um merge quase impossível. O processo deve permitir parar a qualquer momento sem deixar o comportamento externo do sistema quebrado; se a refatoração deixa o sistema quebrado por horas ou dias, é sinal de alerta.
+
+### Bugs encontrados durante a refatoração
+
+Segundo [[wiki/entities/martin-fowler]] (*Refactoring: Improving the Design of Existing Code*): um bug **já conhecido e priorizado** deve ser deixado como está — o objetivo é reproduzir exatamente o comportamento externo que existia antes da refatoração começar. Um bug **novo, ainda não mapeado**, pode ser corrigido no mesmo momento, mas só com certeza absoluta de que é de fato um bug real — senão a refatoração se mistura com mudança de comportamento.
+
+## Quando refatorar é uma boa ideia
+
+- **Refatoração oportunista** (a mais comum e recomendada): imediatamente antes de adicionar uma funcionalidade nova muito parecida com um comportamento já existente. A alternativa ruim é duplicar o método/código, o que obriga a alterar em múltiplos lugares sempre que a regra compartilhada mudar no futuro.
+- Quando o código está difícil de entender (lógica confusa, duplicação) e é preciso se embrenhar nele de qualquer forma para dar manutenção.
+- Se a refatoração necessária ultrapassa horas/dias de esforço, o caminho é registrá-la como [[wiki/concepts/tech-debt-como-ferramenta|débito técnico]] para um momento mais oportuno, em vez de insistir ali.
+
+Existem também **refatorações planejadas** (revisões de código dedicadas), mais raras que as oportunistas.
+
+## Quando NÃO refatorar
+
+- Algoritmo complicado (às vezes proprietário) que funciona desde a primeira versão e não precisa ser entendido/alterado agora — refatorar só compensa se for necessário mexer internamente naquele código.
+- Quando reescrever do zero é mais barato que refatorar — decisão arriscada, pois só dá para saber que algo é "difícil de refatorar" depois de já ter se debruçado sobre o código por um tempo.
+
+## Benefícios (por que vale o esforço)
+
+1. Freia a degradação contínua do design.
+2. Aumenta a manutenibilidade — código refatorado é mais legível para quem for mexer nele depois (frequentemente você mesmo).
+3. Ajuda a encontrar bugs e comportamentos inesperados, como efeito colateral de entender melhor a estrutura interna.
+4. Contraintuitivamente, **acelera** a entrega: segundo Fowler, investir no design interno reduz o tempo de entrega de features futuras, porque adicionar comportamento a um código bem desenhado é mais rápido que a um código degradado.
+
+## Gestão e o hábito da refatoração
+
+Refatoração idealmente não é um "projeto" à parte que precisa de aprovação — é incorporada no tempo normal de desenvolvimento de uma feature, do mesmo jeito que se reserva tempo para escrever testes. Com gestão pouco técnica, a recomendação prática é simplesmente não pedir permissão para esse tempo embutido. Com gestão técnica, vale abrir a discussão sobre quando uma refatoração deixa de ser oportunista e deve virar item priorizado de débito técnico.
+
+## Relacionado
+
+[[wiki/concepts/dois-chapeus-kent-beck]] · [[wiki/concepts/tech-debt-como-ferramenta]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/piramide-de-testes]] · [[wiki/concepts/god-object]] · [[wiki/entities/martin-fowler]] · [[wiki/entities/kent-beck]]
+
+## Key Sources
+
+- [[wiki/sources/o-que-e-refatoracao-quando-usar]]

@@ -3,8 +3,8 @@ type: concept
 title: "MCP Server — Configuração e Uso no Claude Code"
 aliases: ["mcp server claude code", "configurar mcp", "claude mcp cli"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 1
+date_updated: 2026-07-15
+source_count: 2
 tags: [mcp, claude-code, agente-ia, ferramentas, llmops]
 skill: tech-mentor-ai
 status: stable
@@ -89,7 +89,12 @@ MCP (Model Context Protocol) define como LLMs se conectam a ferramentas externas
 
 Ver [[wiki/sources/mcp]] para detalhes do protocolo (Tools, Resources, Prompts, Sampling, transportes stdio/SSE).
 
+## Exemplo de domínio: Grafana MCP para observabilidade
+
+Um servidor MCP não precisa ser genérico (filesystem, Docker) — pode expor um domínio inteiro. O **Grafana MCP**, por exemplo, dá ao agente acesso a Prometheus (métricas), Loki (logs) e Tempo/Jaeger (traces) através do Grafana como hub único. Combinado com um MCP de documentação (ex. Context7, para obter a doc atualizada da lib que precisa de correção), um prompt simples do tipo "investigue os erros 500 desse endpoint nos últimos 15 minutos" pode virar um relatório de causa raiz com linha de código específica, gerado em minutos. Ver [[wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp]].
+
 ## Key Sources
 
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/mcp]]
+- [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — Grafana MCP + Context7 usados juntos para investigação automatizada de incidentes

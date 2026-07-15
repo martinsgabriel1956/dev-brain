@@ -3,8 +3,8 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-07-03
-source_count: 7
+date_updated: 2026-07-15
+source_count: 8
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs]
 skill: tech-mentor-ai
 status: stable
@@ -57,3 +57,4 @@ Demonstração via [[entities/vercel-ai-sdk]] com Claude 3.5 Haiku: o prompt `"H
 - [[wiki/sources/custo-tokens-portugues-vs-ingles]]
 - [[wiki/sources/tokens-llm-fundamentos-typescript]]
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
+- [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — citada de passagem: erros `503` frequentes da API do Claude ("modelo ocupado, tente novamente") como exemplo do "novo normal" de sistemas caindo, exigindo estratégias de retry no lado do cliente

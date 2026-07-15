@@ -3,8 +3,8 @@ type: concept
 title: "Gargalo"
 aliases: ["bottleneck", "gargalo de sistema", "ponto de contenção"]
 date_created: 2026-06-26
-date_updated: 2026-06-26
-source_count: 1
+date_updated: 2026-07-15
+source_count: 2
 tags: [system-design, performance, escalabilidade, debugging, monitoramento]
 skill: tech-mentor-system-design
 status: draft
@@ -68,3 +68,4 @@ Na maioria dos sistemas web, a camada de aplicação escala facilmente (é [[sta
 ## Key sources
 
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
+- [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — CPU profile/flame graph como técnica prática de "gargalo de código": tirar uma foto da CPU para achar a função que mais consome tempo de execução; caso real onde isso revelou um pacote compartilhado travando o event loop, corrigido com ~50% de ganho de velocidade

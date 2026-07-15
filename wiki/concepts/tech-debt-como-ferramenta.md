@@ -3,8 +3,8 @@ type: concept
 title: "Tech Debt como Ferramenta"
 aliases: ["tech debt deliberado", "dívida técnica estratégica", "ship with debt"]
 date_created: 2026-04-26
-date_updated: 2026-07-09
-source_count: 5
+date_updated: 2026-07-15
+source_count: 6
 tags: [tech-debt, carreira, craftsmanship, estrategia, velocidade]
 skill: tech-mentor-leadership
 status: draft
@@ -55,6 +55,10 @@ O quadrante de Fowler descreve como *tomar* debt conscientemente. Para o debt in
 
 O [[wiki/concepts/avaliar-hype-tecnologico]] descreve o mesmo raciocínio com outro vocabulário: tomar tech debt (ou over-engineering, ou adotar uma tecnologia hype) sempre significa aceitar risco alto e liquidez baixa — a decisão só é boa se a rentabilidade esperada compensar esses dois eixos ruins. Uma dívida tomada sem retorno proporcional é, nesse modelo, simplesmente um mau negócio, e é isso que separa debt Prudente+Deliberado de debt Imprudente.
 
+## Quando refatoração vira débito técnico
+
+[[wiki/sources/o-que-e-refatoracao-quando-usar]] dá um critério prático de fronteira, complementar ao Quadrante de Fowler: se uma [[wiki/concepts/refatoracao|refatoração]] identificada durante o trabalho normal (a "refatoração oportunista") exigir mais que algumas horas de esforço, ela deixa de ser algo a se resolver ali mesmo e deve ser mapeada como débito técnico formal, para ser priorizada num momento mais oportuno — em vez de bloquear a entrega atual tentando reescrever tudo de uma vez.
+
 ## Relacionado
 
 [[concepts/observabilidade]] · [[sources/conceitos-que-ninguem-ensina]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/avaliar-hype-tecnologico]]
@@ -65,3 +69,4 @@ O [[wiki/concepts/avaliar-hype-tecnologico]] descreve o mesmo raciocínio com ou
 - [[wiki/sources/5-principles-that-changed-me-as-a-programmer]]
 - [[wiki/sources/5-principios-que-mudaram-como-programador]]
 - [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]]
+- [[wiki/sources/o-que-e-refatoracao-quando-usar]] — critério prático: refatoração oportunista que passa de horas/dias vira débito técnico formal
