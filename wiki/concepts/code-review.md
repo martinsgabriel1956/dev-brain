@@ -4,8 +4,8 @@ title: "Code Review"
 aliases: ["revisão de código", "pull request review", "PR review"]
 date_created: 2026-07-03
 date_updated: 2026-07-16
-source_count: 3
-tags: [code-review, qualidade, carreira, júnior, mentoria]
+source_count: 4
+tags: [code-review, qualidade, carreira, júnior, mentoria, grill-me]
 skill: tech-mentor-leadership
 status: draft
 ---
@@ -49,6 +49,10 @@ O trabalho não termina no merge: validar manualmente em produção após o depl
 
 Em times que usam IA generativa/agêntica pesadamente, [[wiki/concepts/divida-cognitiva]] prescreve code review como um dos três checkpoints regulares para reconstruir entendimento compartilhado — junto com retrospectivas. A régua concreta: **nenhuma mudança gerada por IA vai para produção sem que ao menos uma pessoa consiga explicar totalmente o que ela faz e por quê**, não apenas confirmar que os testes passaram. Isso é mais estrito do que o critério de "regra de negócio primeiro" já documentado acima — aqui o objetivo não é só corrigir bug de escopo, é garantir que a teoria do programa (ver [[wiki/concepts/teoria-do-programa-naur]]) não se perca entre a geração pela IA e o merge.
 
+## Por Que o "Looking Good to Me" Aumentou com Agentes Autônomos
+
+[[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] descreve o mecanismo por trás da degradação do code review na era de agentes com harness próprio: quando o agente rodava de forma mais incremental (ex.: Claude Code via CLI sendo corrigido passo a passo), o dev participava do processo de criação e revisava naturalmente ao longo do caminho. Com agentes que rodam por mais tempo, escrevem os próprios testes automatizados e entram em loops longos, não sobra tempo de revisar tudo antes de concluir a tarefa com qualidade — e, como "ninguém gosta de ler código", a tendência é aprovar sem ler linha a linha (o "looking good to me" superficial). A mitigação proposta não é revisar mais, mas inverter quem audita quem: a skill [[wiki/concepts/skills-agente|Grill Me]] ([[wiki/entities/matt-pocock]]) faz a IA entrevistar o dev sobre decisões de implementação até garantir entendimento mútuo, como substituto parcial da leitura linha a linha.
+
 ## Relacionado
 
 - [[wiki/concepts/definicao-de-pronto]] — code review é um dos critérios de "pronto"
@@ -62,3 +66,4 @@ Em times que usam IA generativa/agêntica pesadamente, [[wiki/concepts/divida-co
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]]
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]
 - [[wiki/sources/cognitive-debt-margaret-storey]] — code review como checkpoint de entendimento compartilhado, requisito mínimo de "uma pessoa entende totalmente" antes do deploy
+- [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — "looking good to me" como sintoma de agentes autônomos de longa duração; skill Grill Me como mitigação

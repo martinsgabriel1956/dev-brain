@@ -3,9 +3,9 @@ type: concept
 title: "Skills (Padrão de Harness)"
 aliases: ["skills harness", "agents skills", "skill pattern ia", "skills.sh"]
 date_created: 2026-06-02
-date_updated: 2026-07-03
-source_count: 3
-tags: [skills, harness, context-engineering, lazy-loading, system-prompt]
+date_updated: 2026-07-16
+source_count: 4
+tags: [skills, harness, context-engineering, lazy-loading, system-prompt, grill-me, rfc]
 skill: tech-mentor-ai
 status: stable
 ---
@@ -90,6 +90,14 @@ Formato de arquivo quase idêntico (front-matter + corpo Markdown), mas propósi
 
 **Risco de sobreposição:** acumular muitas skills (inclusive baixadas de repositórios públicos como "awesome claude skills") junto com muitos subagentes customizados tende a confundir o roteamento automático do próprio modelo — ele pode acionar uma skill genérica quando o usuário esperava um subagente específico, porque as descrições se sobrepõem. Curadoria (poucas skills/agentes bem descritos) supera acúmulo.
 
+## Caso: Workforce Multiagente com Skills Curtas (<70 linhas)
+
+[[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] relata um padrão (atribuído a "Conrado", discutido no Stubborn Club) de separar um workforce de agentes por papel — dev, QA, PO — cada um com uma skill curta (menos de 70 linhas) baseada em especificações técnicas, em vez de um prompt genérico único. O efeito prático: o agente coder passa a fazer uma fatia menor do trabalho total (de ~15% para ~10%), porque skills de outros papéis (ex.: QA) absorvem quality gates que antes ficavam implícitos no prompt do coder.
+
+## Caso: Grill Me (Matt Pocock) — a skill que audita o entendimento do dev, não o código da IA
+
+A mesma fonte descreve a skill **Grill Me**, de [[wiki/entities/matt-pocock]]: um arquivo `.md` com instrução para a IA "entrevistar incansavelmente" o usuário sobre um plano ou design até alcançar entendimento compartilhado, resolvendo cada ramo da árvore de decisão. O autor do vídeo adaptou o prompt para focar em decisões de implementação relevantes ao domínio (cada `if`/cláusula de regra de negócio relevante vira uma pergunta), invertendo o fluxo usual de revisão: em vez do dev ler linha a linha o código gerado, é a IA que questiona o dev até garantir que ele entendeu o que foi construído. Ver também [[wiki/concepts/vibe-coding]] e [[wiki/concepts/rfc-request-for-comments]] para o contexto mais amplo de perda de janela de revisão incremental que motiva essa skill.
+
 ## Aviso de Segurança
 
 Skills podem conter scripts executáveis. **Skills de terceiros não verificadas podem conter código malicioso** (roubar `.env`, etc.). Verificar antes de instalar.
@@ -99,3 +107,4 @@ Skills podem conter scripts executáveis. **Skills de terceiros não verificadas
 - [[wiki/sources/formacao-ia-devs-aula-03-skills]]
 - [[wiki/sources/formacao-ia-devs-aula-02-rules]]
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
+- [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — skill Grill Me (Matt Pocock) e workforce multiagente com skills curtas (<70 linhas) por papel

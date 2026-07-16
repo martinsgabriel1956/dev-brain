@@ -3,8 +3,8 @@ type: concept
 title: "ROI de IA"
 aliases: ["retorno de ia", "ai roi", "valor da ia", "ia roi organizacional"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 1
+date_updated: 2026-07-16
+source_count: 2
 tags: [roi-de-ia, ia-organizacional, llmops, token-economics, learning-gap-organizacional]
 skill: tech-mentor-ai
 status: stable
@@ -79,6 +79,11 @@ Ano 1:     até 34% de retorno possível — se atravessar a fase
 
 Na era agêntica, o custo por dev explodiu ($200–2.000+/mês). ROI positivo exige que o valor gerado pelo agente supere esse custo — o que só acontece com processo e governança adequados.
 
+## Previsão Gartner: Custo de Codificação Supera Salário Médio até 2028
+
+A [[wiki/entities/gartner]] projeta que o custo de codificação com IA vai superar o salário médio de um desenvolvedor até **2028**. O motivo apontado não é a tecnologia em si, mas a falta de disciplina de consumo de tokens — que não surge da escolha do desenvolvedor, já que devs tendem a otimizar velocidade e conveniência em vez de eficiência de custo. Sem visibilidade institucional clara do uso de tokens, a organização arrisca estourar orçamento e perder a capacidade de rastrear resultado de custo versus valor — o oposto exato do que o [[wiki/concepts/capital-de-tokens|capital de tokens]] exigiria se fosse tratado com o mesmo rigor de medição do capital humano.
+
 ## Key Sources
 
 - [[wiki/sources/ia-custo-roi-bolha-ou-realidade]]
+- [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] — previsão Gartner 2028 e o conceito de capital de tokens

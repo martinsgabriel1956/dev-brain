@@ -2550,3 +2550,58 @@ Entities:
 **Notas:** Fonte com bastante densidade técnica cobrindo três eixos: (1) arquitetura de OpenTelemetry (Collector como hub de roteamento, os três pilares, instrumentação de libs de baixo nível), reforçando e expandindo [[wiki/concepts/observabilidade]] e [[wiki/concepts/distributed-tracing]] sem contradição — ambas já tinham a stack recomendada (Prometheus/Loki/Tempo/Grafana) mas nenhuma detalhava a arquitetura do Collector como ponto único de roteamento nem o erro comum de pular essa etapa; (2) o processo manual de investigação de performance pré-IA do autor (CPU profile/flame graph, Clinic.js, mirar produção em vez de staging), que ligou a [[wiki/concepts/gargalo]] uma técnica prática já esperada mas não documentada (profiling de CPU); (3) o padrão mais novo da fonte — um agente de IA com acesso via MCP a backends de observabilidade correlacionando telemetria automaticamente para achar causa raiz — que não tinha página própria na wiki, por isso a criação de [[wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp]]. Dois casos de segurança reais foram registrados na fonte (extensão maliciosa do VS Code Marketplace no GitHub, ataque de supply chain no NPM afetando 84+ pacotes incluindo o Codex, e um minerador de Bitcoin rodando via RCE numa aplicação Next.js do próprio autor, contido pelo isolamento do container Kubernetes) mas não geraram páginas de conceito novas nem edições em páginas de segurança existentes — são citados como motivação ("por que observabilidade importa"), não como conteúdo técnico de segurança aprofundado o suficiente para expandir [[wiki/sources/supply-chain-security]] ou similares; ficou registrado apenas na fonte. Open questions registradas na fonte: nome do framework da consultoria de performance do autor não identificado com confiança (transcrição distorcida, "Miture JS"/"mito") — nenhuma entidade nova criada para evitar atribuição incorreta; link do repositório de exemplo multi-serviço citado na palestra não foi capturado na transcrição; CVE da vulnerabilidade Next.js/React do caso do minerador não identificado.
 
 ---
+
+## [2026-07-16] ingest | Custo Real da IA: Tokens, Produtividade e Demissões
+
+**Fonte:** [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] — transcrição de episódio do CDF Café ([[wiki/entities/codigo-fonte-tv]]) em português (sem necessidade de tradução), limpa e organizada em seções, salva em `raw/custo-real-ia-tokens-produtividade-demissoes.md`.
+
+**Skill carregada:** `tech-mentor-ai`, `references/ai/token-economics.md` — mesma skill já usada em [[wiki/sources/ia-custo-roi-bolha-ou-realidade]], que já cobria boa parte da mesma tese central (produtividade ≠ redução de custo, paradoxo de Jevons, AI Washing).
+
+**Páginas criadas:**
+- `wiki/sources/custo-real-ia-tokens-produtividade-demissoes.md`
+- `wiki/concepts/capital-de-tokens.md` — novo conceito: expressão de Satya Nadella para consumo de tokens como novo capital organizacional análogo ao capital humano, formalizando a migração de custo de capital humano para capital computacional
+- `wiki/entities/gartner.md` — consultoria citada recorrentemente na wiki sem página própria até agora; centraliza as projeções (custo superando salário até 2028, queda de 90% no custo de inferência até 2030, sem correlação demissão/ROI)
+- `wiki/entities/uber.md` — caso de estouro de orçamento de IA por token maxing sem limite
+- `wiki/entities/microsoft.md` — demissões, cancelamento de licenças do Claude Code, mudança de cobrança do Copilot, e "capital de tokens" de Nadella
+- `wiki/entities/meta.md` — memorando de Zuckerberg admitindo erro na reestruturação de equipes por IA
+- `wiki/entities/palantir-technologies.md` — crítica do CEO ao modelo de cobrança por token e à exposição de dados de empresas a modelos de terceiros
+
+**Páginas atualizadas:**
+- `wiki/concepts/token-maxing.md` — nova seção "Caso Corporativo: Uber Sem Limite de Orçamento"; `source_count` 2 → 3
+- `wiki/concepts/ai-washing.md` — nova seção com a pesquisa Resume Templates (59%/17%/42%/9%/45%/45%) e novo caso Meta (contraponto ao padrão GitLab: reconhecimento público do erro em vez de manter a narrativa); `source_count` 1 → 2
+- `wiki/concepts/roi-de-ia.md` — nova seção com a previsão Gartner de custo superando salário médio até 2028; `source_count` 1 → 2
+- `wiki/concepts/paradoxo-de-jevons.md` — nova seção confirmando o caso Uber por uma segunda fonte, com a crítica do CEO da Palantir sobre timing token maxing vs. ROI; `source_count` 1 → 2
+- `wiki/concepts/era-agentica.md` — nova seção "De Capital Humano para Capital Computacional" linkando ao conceito novo; `source_count` 1 → 2
+- `wiki/entities/codigo-fonte-tv.md` — nova linha em Key Sources, perfil expandido com menção ao segmento CDF Café; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção IA em Organizações); cinco novas linhas em Entities
+
+**Notas:** Esta fonte é majoritariamente reforço e expansão de uma tese já bem estabelecida na wiki via [[wiki/sources/ia-custo-roi-bolha-ou-realidade]] (produtividade individual real, ROI organizacional não comprovado, paradoxo de Jevons, AI Washing) — nenhuma contradição encontrada, apenas dados novos e casos concretos adicionais (Uber com atribuição a token maxing especificamente, Gartner 2028, Meta/Zuckerberg, Palantir, pesquisa Resume Templates com números mais granulares que a wiki não tinha ainda: 9%/45%/45%/17%/42%/59%). O único conceito genuinamente novo foi [[wiki/concepts/capital-de-tokens]] (Nadella) — não existia página equivalente, e o termo é distinto o suficiente de token economics genérico para justificar página própria. Optou-se por criar entidades dedicadas para Gartner, Uber, Microsoft, Meta e Palantir porque todas já apareciam citadas inline em múltiplas páginas da wiki (ex.: Gartner em três conceitos diferentes) sem nunca ter uma página própria — consolida citações dispersas em um único lugar. Open questions registradas na fonte: metodologia da pesquisa Resume Templates não detalhada (tratar percentuais como direcionais); atribuição da fala do Uber a "presidente" vs. CFO não confirmada; citação de Nadella sobre "capital de tokens" é de segunda mão (comentário do canal sobre artigo, não link direto); não está claro se Zuckerberg testou o Claude Code pessoalmente ou apenas o citou como referência de mercado.
+
+---
+
+## [2026-07-16] ingest | RFCs, Grill Me e o Risco da Preguiça no Vibe Coding
+
+**Fonte:** [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — transcrição de outro episódio do CDF Café ([[wiki/entities/codigo-fonte-tv]]) em português (sem necessidade de tradução), limpa, pontuada e organizada em seções, com o bloco publicitário (patrocínio App Max) removido por não ser conteúdo técnico. Salva em `raw/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding.md`.
+
+**Skill carregada:** `tech-mentor-ai` — os caminhos de skill externos referenciados em CLAUDE.md (`/home/nemomartins/Documentos/new/skills/`) não existem nesta máquina; seguiu-se o mesmo precedente já registrado no ingest anterior (custo-real-ia-tokens), aplicando calibração de domínio por conhecimento direto em vez de ler o arquivo de skill externo.
+
+**Páginas criadas:**
+- `wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding.md`
+- `wiki/concepts/quality-gate.md` — novo conceito: limites estruturais de análise estática (tamanho de função/arquivo, duplicação) forçando a IA a modularizar o próprio código gerado, com o caso prático do app code.persua.com
+- `wiki/entities/fabricio-arcanjo.md` — participante do Stubborn Club citado diretamente com tese própria (especificações agnósticas à linguagem de programação)
+
+**Páginas atualizadas:**
+- `wiki/concepts/rfc-request-for-comments.md` — nova seção "RFC como Source of Truth para Agentes de IA" (inversão de tempo 80/20 planejamento/execução, especificações agnósticas à linguagem); passou de `status: stub` para `draft`; `source_count` 1 → 2
+- `wiki/concepts/vibe-coding.md` — nova entrada em "Mitigações práticas" (RFC + skill Grill Me invertendo quem revisa quem); `source_count` 5 → 6
+- `wiki/concepts/skills-agente.md` — duas novas seções: workforce multiagente com skills <70 linhas por papel (relato de "Conrado"), e a skill Grill Me (Matt Pocock) em detalhe; `source_count` 3 → 4
+- `wiki/concepts/capital-de-tokens.md` — nova seção "O Paradoxo da Informação Invertida" (segunda citação de Nadella nesta wiki, dessa vez sobre traces/evals/adapted weights/memory accumulates); `source_count` 1 → 2
+- `wiki/concepts/ddd.md` — nova seção "Especificação Agnóstica à Linguagem de Programação como Extensão de Ubiquitous Language" (tese de Fabrício Arcanjo); `source_count` 3 → 4
+- `wiki/concepts/code-review.md` — nova seção "Por Que o 'Looking Good to Me' Aumentou com Agentes Autônomos"; `source_count` 3 → 4
+- `wiki/entities/matt-pocock.md` — nova seção confirmando a skill Grill Me adotada e adaptada por outro criador de conteúdo (CDF Café), com a descrição original da skill citada na fonte; `source_count` 2 → 3
+- `wiki/entities/microsoft.md` — nova seção "Satya Nadella e o 'Paradoxo da Informação Invertida'"; `source_count` 1 → 2
+- `wiki/entities/codigo-fonte-tv.md` — nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (seção "Processo de Desenvolvimento com IA"); nova linha em Entities
+
+**Notas:** Fonte com um único eixo central bem definido — a perda da janela de revisão incremental à medida que agentes ganham harness próprio e rodam por mais tempo — e duas famílias de mitigação já bem documentadas na wiki por ângulos adjacentes: (1) [[wiki/concepts/rfc-request-for-comments|RFC]]/especificação como source of truth anti-alucinação, que ganha aqui o dado concreto da proporção 80/20 planejamento/execução e a variante "agnóstica à linguagem" (tese de Fabrício Arcanjo, nova entidade), não presente antes na wiki; (2) a skill **Grill Me**, que já tinha menção de passagem na página de [[wiki/entities/matt-pocock]] (via outra fonte), mas ganha aqui detalhamento completo da mecânica (IA entrevista o dev sobre decisões de implementação em vez do dev ler código linha a linha) e um novo conceito dedicado a [[wiki/concepts/quality-gate|quality gates]] como reforço estrutural que não existia antes como página própria — havia menções dispersas a linters/análise estática em várias páginas de segurança e arquitetura, mas nenhuma consolidando o ângulo específico "limite estrutural força a IA a modularizar". Nenhuma contradição encontrada com o que já estava documentado em [[wiki/concepts/vibe-coding]] ou [[wiki/concepts/code-review]] — esta fonte é complementar, adicionando o mecanismo causal (por que a revisão degradou) e uma mitigação concreta (Grill Me) a um sintoma que a wiki já descrevia. Open questions registradas na fonte: grafia de "Stubborn Club" incerta (fonético na transcrição); teses atribuídas a Fabrício Arcanjo e a "Conrado" vêm de relato de segunda mão de uma comunidade fechada, sem link público verificável; "paradoxo da informação invertida" de Nadella também é citação de segunda mão, mesma ressalva já aplicada à citação anterior de "capital de tokens"; app "code.persua.com"/Persua não recebeu página própria por baixa relevância fora do exemplo específico de modularização por flavor.
+
+---

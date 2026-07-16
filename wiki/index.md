@@ -147,6 +147,8 @@ date_updated: 2026-07-16
 | [[wiki/sources/o-que-e-refatoracao-quando-usar]] | Bernardo Lobato: refatoração é mudar estrutura interna sem alterar comportamento externo — dois chapéus de Kent Beck, God Class nascendo sprint a sprint sob prazo, testes na base da pirâmide como rede de segurança, passos pequenos, refatoração oportunista vs. planejada |
 | [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] | Ownership (um dono por valor), borrowing (`&`/`&mut` — N leitores OU 1 escritor) e lifetimes (referência nunca outlive o valor) eliminam use-after-free, double-free e data races em compile-time, sem GC — trade-off: aprendizado e compilação mais lentos |
 | [[wiki/sources/cognitive-debt-margaret-storey]] | Fonte primária de "cognitive debt": dívida técnica mora no código, dívida cognitiva mora na cabeça do time — fundamentada na teoria de Peter Naur (1985) de que um programa é uma teoria, não o código-fonte |
+| [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] | Episódio CDF Café: produtividade com IA é real mas custo sobe (caso Uber), Gartner projeta custo de codificação superando salário médio até 2028, 59% das empresas usam IA como bode expiatório para demissões, Meta admite erro de reestruturação, capital de tokens (Nadella) |
+| [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] | Episódio CDF Café: RFC como source of truth anti-alucinação (80/20 planejamento/execução), especificações agnósticas à linguagem (Fabrício Arcanjo), skill Grill Me (Matt Pocock) invertendo quem revisa quem, quality gates forçando modularização |
 
 ## Concepts
 
@@ -302,6 +304,7 @@ date_updated: 2026-07-16
 | [[wiki/concepts/paradoxo-de-jevons]] | Token mais barato → consumo cresce mais → conta maior; o paradoxo central da era agêntica |
 | [[wiki/concepts/era-agentica]] | Agentes fazem tarefas inteiras; modelo de custo muda de sugestão para funcionalidade |
 | [[wiki/concepts/learning-gap-organizacional]] | O gap entre qualidade do modelo e ROI capturado — só 5% (MIT) fecham esse gap |
+| [[wiki/concepts/capital-de-tokens]] | Nadella: consumo de tokens como novo capital organizacional, análogo ao capital humano |
 
 ### Token Economics & Custo
 
@@ -355,7 +358,8 @@ date_updated: 2026-07-16
 | [[wiki/concepts/subagentes]] | Paralelismo a nível de contexto — subtarefas convergem numa única PR; model/tools customizáveis por agente |
 | [[wiki/concepts/context-engineering-harness]] | Rules + skills + MCPs formam o "mapa" do projeto — fator decisivo de qualidade acima do modelo escolhido |
 | [[wiki/concepts/rules-agente]] | Guardrails sempre no system prompt — agents.md/CLAUDE.md; onboarding digital do projeto |
-| [[wiki/concepts/skills-agente]] | Pastas lazy-loaded: só front-matter no system prompt; corpo sob demanda — substitui 80% das rules |
+| [[wiki/concepts/skills-agente]] | Pastas lazy-loaded: só front-matter no system prompt; corpo sob demanda — substitui 80% das rules; skill Grill Me inverte quem revisa quem |
+| [[wiki/concepts/quality-gate]] | Limites estruturais (tamanho de função/arquivo, duplicação) em CI forçam a IA a modularizar o próprio código gerado |
 | [[wiki/concepts/sensores-vs-guias]] | Guias direcionam antes; sensores corrigem durante — qualidade dos sensores determina autocorreção |
 | [[wiki/concepts/system-prompt-arquitetura]] | O prompt escondido: rules + skills front-matter + MCPs schemas, sempre antes do prompt do usuário |
 | [[wiki/concepts/memoria-curto-longo-prazo-ia]] | Short-term = context window (apagada); long-term = system prompt (sempre reinjetado) |
@@ -836,6 +840,12 @@ date_updated: 2026-07-16
 | [[wiki/entities/tabnews]] | Comunidade brasileira de conteúdo técnico fundada por Filipe Deschamps — newsletter e formato Request/Response |
 | [[wiki/entities/pagar-me]] | Fintech brasileira de pagamentos — adotou Node.js quando o modelo assíncrono ainda era hype, apostando em concorrência sem multi-threading complexo |
 | [[wiki/entities/stone]] | Fintech brasileira, mesmo grupo do Pagar.me — stack C# mais madura, mas com mais dificuldade de contratação que o Pagar.me/Node.js na mesma época |
+| [[wiki/entities/gartner]] | Consultoria de mercado — projeta custo de codificação com IA superando salário médio de dev até 2028 |
+| [[wiki/entities/uber]] | Estourou orçamento anual de IA em 4 meses por token maxing sem limite de consumo |
+| [[wiki/entities/microsoft]] | Primeira grande onda de demissões em massa; Satya Nadella cunhou "capital de tokens" |
+| [[wiki/entities/meta]] | Zuckerberg admite em memorando que a reestruturação de equipes por IA foi antecipada demais |
+| [[wiki/entities/palantir-technologies]] | CEO critica modelo de cobrança por token e levanta a questão de quem controla a economia de IA |
+| [[wiki/entities/fabricio-arcanjo]] | Participante do Stubborn Club — defende especificações técnicas agnósticas à linguagem de programação, focadas em DDD e padrões |
 
 ### Documentação de Arquitetura
 

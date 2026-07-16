@@ -3,8 +3,8 @@ type: concept
 title: "Vibe Coding"
 aliases: ["vibe coding", "vibe-coding", "coding por vibração", "agentic coding", "orquestração de agentes"]
 date_created: 2026-04-23
-date_updated: 2026-07-09
-source_count: 5
+date_updated: 2026-07-16
+source_count: 6
 tags: [vibe-coding, agentes-ia, produtividade, divida-cognitiva, ai-brainfry, paralelismo-cognitivo]
 skill: tech-mentor-ai
 status: stable
@@ -79,6 +79,8 @@ O uso saudável da IA por um arquiteto é para brainstorm, alternativas e explic
 
 **Review obrigatório antes de commit** — não aprovar o que não foi lido linha a linha.
 
+**RFC como fonte da verdade + skill "Grill Me" invertendo quem revisa quem** — [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] documenta uma mitigação de duas pernas: (1) [[wiki/concepts/rfc-request-for-comments|RFC]] escrita antes de codar, como norte que evita que a IA viole arquitetura; (2) a skill **Grill Me** ([[wiki/entities/matt-pocock]]), que faz a IA entrevistar o dev sobre decisões de implementação até entendimento mútuo — em vez do dev ler linha a linha o código gerado, é a IA que audita o entendimento do dev. É uma resposta direta ao mesmo sintoma já documentado nesta página ("a gente para de revisar código gerado pela IA, depois para até de revisar as próprias regras do sistema") quando os agentes passaram a rodar por mais tempo com harness próprio, sem deixar janela de revisão incremental.
+
 ## Relação com outros conceitos
 
 - [[concepts/divida-cognitiva]] — vibe coding é o principal vetor de acúmulo de dívida cognitiva
@@ -121,3 +123,4 @@ Citado como exemplo de hype tecnológico em formação (junto com MCP) no moment
 - [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — onde vibe coding brilha (MVP, docs, testes) vs. onde exige julgamento humano (arquitetura, segurança, contexto de negócio)
 - [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]] — citado como exemplo de hype em formação, no momento do vídeo
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] — "specs to code" como vibe coding disfarçado
+- [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — RFC + skill Grill Me como mitigação prática à perda de janela de revisão incremental

@@ -3,8 +3,8 @@ type: concept
 title: "DDD — Domain-Driven Design"
 aliases: ["domain-driven design", "ddd", "domínio"]
 date_created: 2026-05-31
-date_updated: 2026-07-10
-source_count: 3
+date_updated: 2026-07-16
+source_count: 4
 tags: [ddd, arquitetura, bounded-context, aggregate, domain-events, hexagonal]
 skill: tech-mentor-backend
 status: draft
@@ -58,8 +58,13 @@ O [[nubank]] usa DDD como base para organizar o domínio financeiro — contas, 
 
 Um Value Object (ex: `content` de uma `Notification`, validado e imutável no domínio) não é serializável diretamente para persistência ou banco — a conversão explícita (`notification.content.value`) fica a cargo do [[wiki/concepts/mapper-pattern]] na borda do domínio, não do Value Object em si. Isso mantém a regra "domínio não conhece infraestrutura" (ver seção "Arquitetura Hexagonal + DDD" acima) mesmo quando o dado que sai do domínio não é um primitivo.
 
+## Especificação Agnóstica à Linguagem de Programação como Extensão de Ubiquitous Language
+
+[[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] registra uma tese (atribuída a [[wiki/entities/fabricio-arcanjo]], discutida no Stubborn Club) que empurra o pilar Ubiquitous Language um passo além: especificações técnicas escritas para orientar agentes de IA deveriam ser **agnósticas à linguagem de programação**, focadas em DDD e padrões — documentando entradas/saídas rigorosamente em Markdown. A vantagem prática: com entradas e saídas bem definidas, a mesma especificação permite pedir a um agente que implemente (ou "transpile") a arquitetura em linguagens diferentes (Rust, .NET, Java, Go, TypeScript) sem perder a regra de negócio, reduzindo ambiguidade. É uma tese que gerou debate no grupo — o trade-off implícito é que abstrair a especificação da linguagem-alvo exige rigor extra na definição de contratos que, em uma especificação já acoplada a uma stack específica, muitas vezes fica implícito no próprio código.
+
 ## Key Sources
 
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
+- [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — especificações agnósticas à linguagem de programação (tese de Fabrício Arcanjo), transpilação de arquitetura entre stacks
 - [[wiki/sources/mappers-conversao-entre-camadas]]

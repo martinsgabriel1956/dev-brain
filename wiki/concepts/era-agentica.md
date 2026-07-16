@@ -3,8 +3,8 @@ type: concept
 title: "Era Agêntica"
 aliases: ["agentic era", "era dos agentes", "agentes de ia em producao"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 1
+date_updated: 2026-07-16
+source_count: 2
 tags: [era-agentica, agente-ia, token-economics, paradoxo-de-jevons, llmops]
 skill: tech-mentor-ai
 status: stable
@@ -72,9 +72,14 @@ Os níveis 5–7 da [[escala-maturidade-ia-dev]] são a materialização individ
 
 A maioria dos devs ainda opera nos níveis 1–2 — o que explica por que estudos medem apenas 20–30% de ganho enquanto a diferença real entre nível 2 e nível 4 é de ~5x.
 
+## De Capital Humano para Capital Computacional
+
+Satya Nadella (CEO da [[wiki/entities/microsoft]]) descreve essa migração de custo com o termo **[[wiki/concepts/capital-de-tokens|capital de tokens]]**: assim como o capital humano historicamente gerou conhecimento e valor, o volume de tokens consumidos por agentes passa a ser tratado como um ativo equivalente — reforçando, em outras palavras, o mesmo fenômeno que a tabela de custo por dev acima já descreve.
+
 ## Key Sources
 
 - [[wiki/sources/ia-custo-roi-bolha-ou-realidade]]
 - [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
 - [[wiki/sources/escala-niveis-uso-ia-engenheiros]] — níveis 5–7 como materialização individual da era agêntica
+- [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] — capital de tokens (Nadella) e previsão Gartner 2028

@@ -3,8 +3,8 @@ type: concept
 title: "Paradoxo de Jevons"
 aliases: ["jevons paradox", "efeito rebote", "rebound effect", "paradoxo jevons ia"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 1
+date_updated: 2026-07-16
+source_count: 2
 tags: [paradoxo-de-jevons, token-economics, era-agentica, custo-ia, economia]
 skill: tech-mentor-ai
 status: stable
@@ -50,6 +50,11 @@ Uber queimou o orçamento de IA de 2026 em 4 meses. Microsoft cancelou licenças
 
 O Paradoxo de Jevons opera no nível organizacional (conta total). [[token-anxiety]] opera no nível individual (ansiedade de desperdiçar tokens disponíveis). São faces do mesmo fenômeno de escassez percebida em um contexto de abundância crescente.
 
+## Segundo Caso Documentado: Uber
+
+O caso Uber (orçamento de IA de 2026 estourado em 4 meses) já estava registrado aqui de fonte anterior; uma segunda fonte ([[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]]) confirma o mesmo episódio com o detalhe de que o estouro veio especificamente de token maxing sem limite de consumo — ver [[wiki/concepts/token-maxing]]. A mesma fonte traz a formulação do CEO da [[wiki/entities/palantir-technologies]] sobre o "timing" entre token maxing e ROI: o paradoxo só se resolve se a queda de custo de inferência dos hyperscalers acompanhar a velocidade com que o consumo cresce — e, pela lógica de Jevons, ela estruturalmente não acompanha.
+
 ## Key Sources
 
 - [[wiki/sources/ia-custo-roi-bolha-ou-realidade]]
+- [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] — segunda confirmação do caso Uber, com crítica do CEO da Palantir ao timing token maxing vs. ROI

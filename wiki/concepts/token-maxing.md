@@ -3,8 +3,8 @@ type: concept
 title: "Token Maxing"
 aliases: ["token maxing", "token anxiety produtividade", "consumo compulsivo de tokens"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 2
+date_updated: 2026-07-16
+source_count: 3
 tags: [token-maxing, produtividade, vale-do-silicio, comportamento, ia-para-devs]
 skill: tech-mentor-ai
 status: draft
@@ -39,7 +39,12 @@ Fenômeno comportamental emergente no Vale do Silício (2026) onde desenvolvedor
 
 [[wiki/concepts/token-anxiety]] é a ansiedade de não desperdiçar a janela de tokens durante uma tarefa. Token maxing é a versão organizacional e social: ansiedade de não ter consumido *suficiente* ao longo do dia.
 
+## Caso Corporativo: Uber Sem Limite de Orçamento
+
+O token maxing não é só comportamento individual — se manifesta em nível corporativo quando a empresa não define teto de consumo. Segundo o presidente/CFO da [[wiki/entities/uber]], o gasto com IA "já está ficando difícil de justificar": a empresa estourou em abril todo o orçamento anual reservado para inteligência artificial, aparentemente por não ter colocado limite no consumo de tokens. O CEO da [[wiki/entities/palantir-technologies]] descreve o movimento inverso como tendência de mercado: empresas migrando de uma mentalidade de token maxing para uma mentalidade de retorno sobre investimento — mas alerta que o fator decisivo é o *timing* entre esse ajuste de mentalidade e a redução real de custo pelos hyperscalers.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-02-mercado-perfil-profissional]]
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
+- [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] — caso Uber e crítica do CEO da Palantir ao token maxing como estratégia corporativa
