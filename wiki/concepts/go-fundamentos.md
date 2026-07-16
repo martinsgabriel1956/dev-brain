@@ -3,8 +3,8 @@ type: concept
 title: "Go — Fundamentos da Linguagem"
 aliases: ["golang fundamentos", "go tipos", "go slices", "go zero values"]
 date_created: 2026-04-24
-date_updated: 2026-07-10
-source_count: 3
+date_updated: 2026-07-16
+source_count: 4
 tags: [go, fundamentos, tipos, slices, maps, structs, zero-values, cloud-native, filosofia-de-linguagem]
 skill: lang-systems
 status: stable
@@ -87,6 +87,8 @@ const (
 
 Segundo [[wiki/entities/lucas-badico]], a diferença central na filosofia de design entre Go e Rust não é técnica, é de propósito: Rust é pensado para soluções *clever* — muitas features, muitas formas de resolver o mesmo problema. Go tem poucas formas de fazer cada coisa, o que força uma solução mais crua e menos "bonita", mas consistente e fácil de manter. Programar em Go pensando como Rust tende a não funcionar bem; o caminho inverso (Rust pensando como Go) funciona, mas fica aquém do ideal na linguagem mais expressiva.
 
+Essa diferença de propósito aparece concretamente na decisão de memória: Go usa garbage collector (menos controle, mais conforto), Rust usa ownership/borrow checker (mais controle e previsibilidade, mais decisões explícitas exigidas desde o primeiro programa). Ver [[wiki/concepts/rust-ownership-borrowing-lifetimes]] e [[wiki/concepts/rust-fundamentos]] para o detalhamento do lado Rust dessa comparação.
+
 ## Design Cloud Native
 
 Go foi desenhado desde o início para sustentar a infraestrutura em cloud do Google — não uma linguagem de propósito geral adaptada depois para cloud, como aconteceu com outras. Isso é apontado como o principal motivo da adoção consolidada do Go em empresas brasileiras como Mercado Livre, Mercado Pago e Stone, e como diferencial frente a tecnologias que tiveram forte influência histórica mas nunca escalaram para adoção em massa (ex.: Ruby on Rails). Ver [[wiki/concepts/ciclo-de-mercado-tech]].
@@ -99,9 +101,11 @@ O Go Developer Survey oficial do Google confirma esse padrão de adoção com da
 - [[go-concorrencia]] — goroutines e channels
 - [[go-stdlib]] — net/http, json, database/sql
 - [[wiki/concepts/ponte-fullstack-para-especializacao]] — estratégia de carreira para quem quer entrar no ecossistema Go vindo de outra stack
+- [[wiki/concepts/rust-fundamentos]] — o lado Rust do contraste pragmatismo vs. expressividade
 
 ## Key Sources
 
 - [[wiki/sources/go-fundamentos]]
 - [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]
 - [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]
+- [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — contraponto Rust: ownership/borrow checker em vez de GC, mais expressividade ao custo de mais decisões explícitas

@@ -3,8 +3,8 @@ type: concept
 title: "Dívida Cognitiva"
 aliases: ["divida cognitiva", "cognitive debt", "acumulo de falta de entendimento", "debt cognitivo"]
 date_created: 2026-04-23
-date_updated: 2026-07-03
-source_count: 3
+date_updated: 2026-07-16
+source_count: 4
 tags: [divida-cognitiva, saude-mental, ai-brainfry, tech-debt, modelo-mental, agentes-ia]
 skill: tech-mentor-ai
 status: stable
@@ -58,6 +58,20 @@ A dívida técnica quebra o build. A dívida cognitiva quebra a capacidade do ti
 
 **Time-boxing de orquestração** — limitar threads paralelas de agentes. Foco em finalizar antes de iniciar.
 
+### As três práticas de Margaret Storey (fonte primária)
+
+A fonte original que cunha o termo prescreve três estratégias concretas de time, não apenas disciplina individual:
+
+1. **Exigir que ao menos uma pessoa entenda totalmente** cada mudança gerada por IA antes do deploy — não "os testes passaram", mas uma pessoa capaz de explicar a decisão.
+2. **Documentar não apenas *o que* mudou, mas *por quê*** — o código já mostra o quê; o que se perde com IA é o porquê.
+3. **Checkpoints regulares de reconstrução de entendimento compartilhado**, via code review e retrospectivas — porque a teoria do programa (ver [[wiki/concepts/teoria-do-programa-naur]]) tende a se fragmentar entre pessoas mesmo sem IA, e a IA acelera essa fragmentação ao gerar código mais rápido do que o time consegue internalizar.
+
+### Sinais de alerta (fonte primária)
+
+- Membros do time hesitando em fazer mudanças por medo de consequências não previstas
+- Dependência crescente de "conhecimento tribal" concentrado em uma ou duas pessoas
+- O sistema se tornando cada vez mais opaco com o tempo
+
 ## Relação com outros conceitos
 
 - [[concepts/ai-brainfry]] — ai brainfry é o efeito; dívida cognitiva é o mecanismo
@@ -65,6 +79,7 @@ A dívida técnica quebra o build. A dívida cognitiva quebra a capacidade do ti
 - [[concepts/accidental-complexity]] — dívida cognitiva e complexidade acidental se retroalimentam
 - [[concepts/llmops-observabilidade]] — observabilidade de LLMs ajuda a tornar o comportamento dos agentes mais explicável
 - [[concepts/comprehension-debt]] — faceta específica: erosão progressiva da capacidade de entender o próprio código gerado por IA
+- [[wiki/concepts/teoria-do-programa-naur]] — base teórica (Peter Naur, 1985): dívida cognitiva é, na prática, a teoria do programa nunca tendo se formado ou tendo se perdido entre os membros do time
 
 ## Burnout voluntário com autonomia
 
@@ -80,7 +95,8 @@ Ver também: [[concepts/ia-como-chicote-de-produtividade]] para o contraste com 
 
 ## Key Sources
 
-- [[sources/divida-cognitiva-ai-brainfry]]
+- [[sources/divida-cognitiva-ai-brainfry]] — fonte secundária (HBR), citava Storey sem ser a fonte primária
 - [[sources/addy-osmani-80-problem-agentic-coding]]
 - [[sources/ia-salario-ou-carga-de-trabalho]]
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]] — distingue esquecimento de sintaxe (irrelevante) de dívida cognitiva real (perda de julgamento e capacidade de explicar decisões)
+- [[wiki/sources/cognitive-debt-margaret-storey]] — fonte primária do termo, ingerida diretamente: teoria do programa de Naur como base, e as três práticas concretas de prevenção

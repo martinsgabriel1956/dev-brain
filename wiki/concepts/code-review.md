@@ -3,8 +3,8 @@ type: concept
 title: "Code Review"
 aliases: ["revisão de código", "pull request review", "PR review"]
 date_created: 2026-07-03
-date_updated: 2026-07-10
-source_count: 2
+date_updated: 2026-07-16
+source_count: 3
 tags: [code-review, qualidade, carreira, júnior, mentoria]
 skill: tech-mentor-leadership
 status: draft
@@ -45,14 +45,20 @@ O trabalho não termina no merge: validar manualmente em produção após o depl
 
 [[wiki/sources/filosofia-do-design-de-software-introducao]] (John Ousterhout) argumenta que code review é o veículo prático recomendado para aplicar princípios de design abstratos: é mais fácil ver problemas de design no código de outra pessoa do que no próprio. A ferramenta concreta são os [[wiki/concepts/red-flags-de-design|red flags de design]] — sinais de que um trecho está mais complicado do que precisa. Isso é um ângulo diferente do já documentado nesta página (que foca em regra de negócio e comunicação): aqui code review é também prática deliberada de reconhecimento de complexidade desnecessária, que compõe ao longo do tempo com a experiência de quem revisa.
 
+## Code review como antídoto a dívida cognitiva em times com IA
+
+Em times que usam IA generativa/agêntica pesadamente, [[wiki/concepts/divida-cognitiva]] prescreve code review como um dos três checkpoints regulares para reconstruir entendimento compartilhado — junto com retrospectivas. A régua concreta: **nenhuma mudança gerada por IA vai para produção sem que ao menos uma pessoa consiga explicar totalmente o que ela faz e por quê**, não apenas confirmar que os testes passaram. Isso é mais estrito do que o critério de "regra de negócio primeiro" já documentado acima — aqui o objetivo não é só corrigir bug de escopo, é garantir que a teoria do programa (ver [[wiki/concepts/teoria-do-programa-naur]]) não se perca entre a geração pela IA e o merge.
+
 ## Relacionado
 
 - [[wiki/concepts/definicao-de-pronto]] — code review é um dos critérios de "pronto"
 - [[wiki/concepts/mentoria-tecnica]] — quem revisa está, na prática, mentorando
 - [[wiki/concepts/sindrome-do-impostor]] — reação emocional comum a comentários de review
 - [[wiki/concepts/red-flags-de-design]] — heurística concreta para o que procurar durante a revisão
+- [[wiki/concepts/divida-cognitiva]] — code review como checkpoint contra fragmentação de entendimento compartilhado em times com IA
 
 ## Key Sources
 
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]]
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]
+- [[wiki/sources/cognitive-debt-margaret-storey]] — code review como checkpoint de entendimento compartilhado, requisito mínimo de "uma pessoa entende totalmente" antes do deploy

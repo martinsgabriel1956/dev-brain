@@ -3,7 +3,7 @@ type: concept
 title: "Gramática Formal e EBNF"
 aliases: ["EBNF", "Extended Backus-Naur Form", "gramática de linguagem de programação", "precedência de operadores", "associatividade"]
 date_created: 2026-07-09
-date_updated: 2026-07-09
+date_updated: 2026-07-16
 source_count: 1
 tags: [cs-fundamentals, linguagens-de-programacao, gramatica, parsers, compiladores]
 skill: cs-fundamentals
@@ -41,6 +41,7 @@ Essas regras, apesar de parecerem detalhes pequenos, determinam como *todo* cód
 
 - [[wiki/concepts/compilador]] — a gramática é o contrato que o parser aplica para transformar tokens numa AST válida
 - [[wiki/concepts/sistema-de-tipos]] — a gramática define o que é sintaticamente válido; o sistema de tipos define, depois, o que é semanticamente válido
+- [[wiki/entities/peter-naur]] — o "Naur" de Backus-Naur Form é a mesma pessoa por trás da [[wiki/concepts/teoria-do-programa-naur|teoria do programa]] (1985), num domínio bem diferente: notação de gramática vs. epistemologia de engenharia de software
 
 ## Key sources
 

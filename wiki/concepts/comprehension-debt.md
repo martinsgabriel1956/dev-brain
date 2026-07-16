@@ -3,8 +3,8 @@ type: concept
 title: "Comprehension Debt"
 aliases: ["comprehension debt", "dívida de compreensão", "dívida cognitiva código ia"]
 date_created: 2026-04-23
-date_updated: 2026-05-04
-source_count: 3
+date_updated: 2026-07-16
+source_count: 4
 tags: [ia, agentes, qualidade, ownership, cognição, divida-tecnica]
 skill: tech-mentor-ai
 status: stable
@@ -34,7 +34,7 @@ A promessa de estar "quase lá" é o hook psicológico. Cada iteração adiciona
 
 ## Diferença de [[concepts/divida-cognitiva]]
 
-Dívida cognitiva (Margaret Storey, 2026) é o esforço mental extra de supervisionar IA (+14%). Comprehension debt é a *erosão progressiva* da capacidade de entender o próprio código. São fenômenos relacionados mas distintos.
+**Correção (2026-07-16, a partir da fonte primária de Storey):** a estatística de +14% de esforço mental vem de uma pesquisa citada pela HBR sobre supervisão de IA, não do post original de Margaret-Anne Storey. Na fonte primária de Storey, dívida cognitiva é definida de forma mais ampla e sem essa métrica: é a distância entre a velocidade de geração de código da IA e a capacidade real do time de reter a *teoria do programa* (ver [[wiki/concepts/teoria-do-programa-naur]]) — ou seja, um fenômeno **coletivo/de time**. Comprehension debt, por outro lado, é a erosão *individual e progressiva* da capacidade da pessoa de entender o próprio código que ela mesma aprovou. São facetas do mesmo problema em escalas diferentes: dívida cognitiva é o risco de time perder a teoria compartilhada; comprehension debt é o mecanismo pelo qual um indivíduo perde a sua própria.
 
 ## Como Mitigar
 
@@ -48,3 +48,4 @@ Dívida cognitiva (Margaret Storey, 2026) é o esforço mental extra de supervis
 - [[sources/addy-osmani-80-problem-agentic-coding]]
 - [[sources/erros-workflow-research-plan-implement]] — não ler o código durante o research é o caminho direto para comprehension debt
 - [[sources/context-engineering-avancado-para-coding-agents]] — mental alignment como antídoto coletivo
+- [[wiki/sources/cognitive-debt-margaret-storey]] — fonte primária de "cognitive debt"; corrige a atribuição da estatística de +14% (é da HBR, não de Storey) e fundamenta a distinção individual/coletivo com a teoria do programa de Naur

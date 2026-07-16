@@ -3,8 +3,8 @@ type: concept
 title: "Sistema de Tipos"
 aliases: ["type system", "tipagem estática", "tipagem dinâmica", "inferência de tipos", "static vs dynamic typing"]
 date_created: 2026-07-09
-date_updated: 2026-07-10
-source_count: 2
+date_updated: 2026-07-16
+source_count: 3
 tags: [cs-fundamentals, linguagens-de-programacao, tipagem, compiladores]
 skill: cs-fundamentals
 status: draft
@@ -37,12 +37,18 @@ Linguagens como TypeScript e Rust deduzem o tipo sem exigir declaração explíc
 
 Um sistema de tipos completo também precisa decidir: se uma função pode retornar tipos diferentes, se variáveis podem mudar de tipo, como genéricos funcionam, e como representar a ausência de valor (null, `Option`/`Maybe`, `undefined`). Cada uma dessas decisões afeta diretamente a segurança e a ergonomia da linguagem.
 
+## Ausência de valor e erro como tipo, não como valor mágico
+
+Rust representa ausência de valor com `Option<T>` (`Some`/`None`) em vez de um `null` implícito, e erro recuperável com `Result<T, E>` (`Ok`/`Err`) em vez de exceptions não tipadas. O `match` sobre esses tipos é exaustivo — o compilador exige tratar todos os casos, então o erro (ou a ausência) aparece no tipo da função, não escondido atrás de um valor que só quebra quando alguém esquece de checar. O mesmo princípio se estende a `enum`: modelar estado com variantes exaustivas (em vez de campos soltos) torna combinações inválidas irrepresentáveis em compile-time. Ver [[wiki/concepts/rust-fundamentos]].
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/compilador]] — o sistema de tipos é validado sobre a AST que o parser produz, antes (estática) ou depois (dinâmica) da geração de código
 - [[wiki/concepts/gerenciamento-de-memoria]] — em Rust, o *type checker* e o *borrow checker* trabalham juntos: ownership é, em parte, verificação de tipos em tempo de compilação
+- [[wiki/concepts/rust-fundamentos]] — `Option`/`Result`/`enum` exaustivo como exemplo concreto de sistema de tipos carregando comportamento possível
 
 ## Key sources
 
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]]
 - [[wiki/sources/8-tipos-de-javascript]]
+- [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — `Option`/`Result`/`match` exaustivo como caso concreto de tipo carregando o comportamento possível

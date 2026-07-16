@@ -3,8 +3,8 @@ type: concept
 title: "Tech Debt como Ferramenta"
 aliases: ["tech debt deliberado", "dívida técnica estratégica", "ship with debt"]
 date_created: 2026-04-26
-date_updated: 2026-07-15
-source_count: 6
+date_updated: 2026-07-16
+source_count: 7
 tags: [tech-debt, carreira, craftsmanship, estrategia, velocidade]
 skill: tech-mentor-leadership
 status: draft
@@ -59,9 +59,13 @@ O [[wiki/concepts/avaliar-hype-tecnologico]] descreve o mesmo raciocínio com ou
 
 [[wiki/sources/o-que-e-refatoracao-quando-usar]] dá um critério prático de fronteira, complementar ao Quadrante de Fowler: se uma [[wiki/concepts/refatoracao|refatoração]] identificada durante o trabalho normal (a "refatoração oportunista") exigir mais que algumas horas de esforço, ela deixa de ser algo a se resolver ali mesmo e deve ser mapeada como débito técnico formal, para ser priorizada num momento mais oportuno — em vez de bloquear a entrega atual tentando reescrever tudo de uma vez.
 
+## Onde o débito mora: código vs. cabeça do time
+
+Todo o raciocínio acima (Quadrante de Fowler, regra do if, Boy Scout Rule) assume que o débito reside **no código** — é isso que a métrica de hotspot, o refactoring e o backlog técnico atacam. [[wiki/concepts/divida-cognitiva]] descreve uma categoria distinta que esse ferramental não cobre: débito que reside **na cabeça dos desenvolvedores** — entendimento compartilhado sobre por que decisões foram tomadas, que se perde ou nunca se forma, especialmente quando IA generativa/agêntica gera código mais rápido do que o time consegue internalizar a teoria por trás dele (ver [[wiki/concepts/teoria-do-programa-naur]]). Um time pode ter zero débito técnico mensurável (baixa complexidade ciclomática, boa cobertura de testes) e ainda assim travar por dívida cognitiva alta — os dois eixos são independentes, não o mesmo problema com nomes diferentes.
+
 ## Relacionado
 
-[[concepts/observabilidade]] · [[sources/conceitos-que-ninguem-ensina]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/avaliar-hype-tecnologico]]
+[[concepts/observabilidade]] · [[sources/conceitos-que-ninguem-ensina]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/avaliar-hype-tecnologico]] · [[wiki/concepts/divida-cognitiva]]
 
 ## Key Sources
 
@@ -70,3 +74,4 @@ O [[wiki/concepts/avaliar-hype-tecnologico]] descreve o mesmo raciocínio com ou
 - [[wiki/sources/5-principios-que-mudaram-como-programador]]
 - [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]]
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]] — critério prático: refatoração oportunista que passa de horas/dias vira débito técnico formal
+- [[wiki/sources/cognitive-debt-margaret-storey]] — contraste "onde mora o débito": código (dívida técnica) vs. cabeça do time (dívida cognitiva)

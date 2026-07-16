@@ -2,6 +2,58 @@
 
 ---
 
+## [2026-07-16] ingest | Cognitive Debt (Margaret-Anne Storey — fonte primária)
+
+**Fonte:** [[wiki/sources/cognitive-debt-margaret-storey]] — post de blog em inglês, buscado via WebFetch de https://margaretstorey.com/blog/2026/02/09/cognitive-debt/, traduzido para PT-BR e salvo em `raw/cognitive-debt.md` (seguindo o mesmo padrão já usado para fontes em inglês como [[wiki/sources/chain-of-thought-prompting]]).
+
+**Skill carregada:** `tech-mentor-leadership`, `references/tech-debt-management.md` — mapeamento de domínio "tech debt/liderança técnica" do CLAUDE.md deste repo. Confirmado que nem `tech-debt-management.md` nem `ai-strategy-engineering.md` já cobriam "cognitive debt" antes desta ingestão.
+
+**Descoberta pré-ingestão importante:** a wiki já tinha [[wiki/concepts/divida-cognitiva]], [[wiki/concepts/comprehension-debt]] e a entity [[wiki/entities/margaret-storey]], todos construídos **de segunda mão** a partir de [[wiki/sources/divida-cognitiva-ai-brainfry]] (artigo da HBR que cita Storey sem ser a fonte primária). O post original da própria Storey nunca havia sido ingerido diretamente. Essa ingestão corrige isso e revela duas imprecisões herdadas da fonte secundária:
+1. **Afiliação institucional errada** — a entity dizia "University of British Columbia (UBC)"; o rodapé da fonte primária diz **University of Victoria** + **Canada Research Chair em Aspectos Humanos e Sociais de Engenharia de Software**. Corrigido em `wiki/entities/margaret-storey.md`.
+2. **Atribuição errada de estatística** — `comprehension-debt.md` atribuía a Storey a métrica "+14% esforço mental" que na verdade vem de uma pesquisa diferente citada pela HBR (contexto de "AI brainfry"/supervisão de IA), não do post de Storey. Corrigido na seção "Diferença de divida-cognitiva".
+
+**Páginas criadas:**
+- `wiki/sources/cognitive-debt-margaret-storey.md`
+- `wiki/concepts/teoria-do-programa-naur.md` — novo conceito: a teoria de Peter Naur (1985) de que um programa é uma teoria que vive na mente do(s) desenvolvedor(es), não o código-fonte — base teórica explícita sobre a qual Storey constrói "cognitive debt"
+- `wiki/entities/peter-naur.md` — nova entity: liga duas contribuições da mesma pessoa em domínios distantes — Backus-Naur Form (gramática, já citada em [[wiki/concepts/gramatica-formal-ebnf]]) e a teoria do programa (epistemologia de engenharia de software)
+
+**Páginas atualizadas:**
+- `wiki/entities/margaret-storey.md` — correção de afiliação (University of Victoria, não UBC) e título (Canada Research Chair); nova referência à teoria de Naur; `source_count` 1 → 2
+- `wiki/concepts/divida-cognitiva.md` — nova seção com as três práticas concretas de prevenção da fonte primária (exigir compreensão humana antes do deploy, documentar o porquê, checkpoints regulares) e os sinais de alerta (hesitação em mudar, conhecimento tribal, opacidade crescente); link para teoria-do-programa-naur; `source_count` 3 → 4
+- `wiki/concepts/comprehension-debt.md` — correção da atribuição da estatística de +14% (não é de Storey) e reformulação da diferenciação entre os dois conceitos como coletivo (dívida cognitiva) vs. individual (comprehension debt); `source_count` 3 → 4
+- `wiki/concepts/gramatica-formal-ebnf.md` — backlink para a entity `peter-naur` conectando BNF à teoria do programa
+- `wiki/concepts/code-review.md` — nova seção "Code review como antídoto a dívida cognitiva em times com IA"; `source_count` 2 → 3
+- `wiki/concepts/tech-debt-como-ferramenta.md` — nova seção "Onde o débito mora: código vs. cabeça do time", deixando explícito que dívida técnica e dívida cognitiva são eixos independentes; `source_count` 6 → 7
+- `wiki/index.md` — nova linha em Sources; nova subseção "Dívida Cognitiva & Teoria do Programa" em Concepts (as três páginas — `divida-cognitiva`, `comprehension-debt`, `teoria-do-programa-naur` — nunca tinham sido indexadas, apesar de já existirem no disco desde abril; corrigido como drift trivial durante esta ingestão); duas novas linhas em Entities (`margaret-storey`, `peter-naur`)
+
+**Notas:** Esta ingestão é um caso de "fonte primária alcança a wiki depois da secundária" — a estrutura conceitual já existia e estava correta na essência (dívida técnica no código vs. dívida cognitiva na cabeça do time), mas carregava dois erros factuais herdados de inferência/transcrição da fonte HBR que só a leitura direta do post da própria Storey permitiu corrigir. Ao aprofundar a fundamentação teórica, o achado mais valioso foi a conexão explícita da fonte com Peter Naur (1985) — um conceito de 40 anos antes que a wiki não tinha registrado em nenhum lugar, apesar de já citar "Backus-Naur Form" en passant em `gramatica-formal-ebnf.md` sem nunca ter criado uma entity para a pessoa por trás do nome. Nenhuma contradição nova foi encontrada além das duas correções acima. Open question registrada na fonte: a própria autora trata "medir dívida cognitiva" como pergunta de pesquisa em aberto — não criar a expectativa de que existe uma métrica validada até uma fonte futura confirmar isso.
+
+---
+
+## [2026-07-16] ingest | Rust: Por Que Tanto Hype (Ownership, Borrowing, Lifetimes)
+
+**Fonte:** [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — transcrição de fala corrida em português (ASR sem pontuação, erros óbvios de transcrição corrigidos por contexto: "Rush" → Rust, "INAM" → `enum`, "OM" → `impl`, "e-comercial" → `&`, "vc exclamação" → `vec!`), reescrita em seções e salva em `raw/rust-por-que-tanto-hype-ownership-borrowing-lifetimes.md`. Sem necessidade de tradução — fonte já em PT-BR. Autor/canal não identificado, sem URL de origem.
+
+**Skill carregada:** `lang-systems`, `references/rust.md` — path real de skills neste ambiente é `/home/gabriel-martins/Documentos/skills/`, não `/home/nemomartins/...` (path do CLAUDE.md do repo, que aponta para outra máquina/usuário e não existe aqui; mesma discrepância já flagueada em `wiki/log.md:271` no ingest de [[wiki/sources/como-criar-uma-linguagem-de-programacao]]).
+
+**Páginas criadas:**
+- `wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes.md`
+- `wiki/concepts/rust-ownership-borrowing-lifetimes.md` — novo conceito central: ownership (move semantics, um dono por valor), borrowing (`&`/`&mut`, regra N leitores OU 1 escritor) e lifetimes (referência não outlive o valor), e por que isso é verificado inteiramente em compile-time sem custo de runtime
+- `wiki/concepts/rust-fundamentos.md` — novo conceito: `Option`/`Result` sem `null` implícito, `match` exaustivo sobre `enum` para estado inválido irrepresentável, traits com static dispatch/monomorphization, Cargo como toolchain unificada, tradeoffs de adoção (aprendizado, velocidade de compilação, verbosidade) e exemplos de adoção real (Linux, Android, Firecracker, Pingora, Deno, uv)
+
+**Páginas atualizadas:**
+- `wiki/concepts/gerenciamento-de-memoria.md` — seção "Ownership (Rust)" linkada ao novo conceito detalhado; `source_count` 1 → 2
+- `wiki/concepts/sistema-de-tipos.md` — nova seção "Ausência de valor e erro como tipo, não como valor mágico" (`Option`/`Result`/`enum` exaustivo); `source_count` 2 → 3
+- `wiki/concepts/compilador.md` — nova seção "Análise além de tipos: o borrow checker do Rust", posicionando o borrow checker como passada de análise semântica adicional própria de Rust; `source_count` 3 → 4
+- `wiki/concepts/concorrencia.md` — nova seção "Fearless concurrency (Rust)" explicando como a regra de exclusividade do borrowing elimina data races em compile-time; `source_count` 2 → 3
+- `wiki/concepts/toolchain.md` — nova seção "Cargo: toolchain com gerenciador de pacotes embutido"; `source_count` 1 → 2
+- `wiki/concepts/go-fundamentos.md` — parágrafo novo ligando a diferença de filosofia Go/Rust já registrada (via [[wiki/entities/lucas-badico]]) à decisão concreta de memória (GC vs. ownership); `source_count` 3 → 4
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts
+
+**Notas:** Fonte de alta densidade técnica sobre uma linguagem sem página própria na wiki até agora (só menções de passagem em `gerenciamento-de-memoria`, `sistema-de-tipos`, `compilador`, `go-fundamentos` e no entity `llvm`). Optei por duas páginas de conceito novas em vez de uma só, seguindo a regra "um conceito por página": `rust-ownership-borrowing-lifetimes` cobre estritamente o modelo de memória/concorrência (o que já era referenciado por outras páginas), e `rust-fundamentos` cobre o resto da linguagem (tipos, traits, tooling, adoção) — evita que a página de ownership fique sobrecarregada e mantém a fronteira clara caso uma fonte futura sobre Rust async/Tokio precise expandir só um dos dois lados. Nenhuma contradição encontrada com conteúdo existente — as menções prévias a Rust em `gerenciamento-de-memoria` e `go-fundamentos` eram superficiais e foram apenas aprofundadas, não corrigidas. Optei por **não** editar as entities `google.md` ou criar entities novas para AWS/Cloudflare/Deno — a fonte cita esses adotantes de memória, sem link ou verificação, e `google.md` já existe com skill `tech-mentor-ai` (domínio cruzado); registrado como open question na fonte em vez de forçar uma entity com baixa confiança. Open questions registradas na fonte: adoção de Rust em Linux/Android/Firecracker/Pingora/Deno/uv não verificada contra fonte primária; estruturas de dados cíclicas (`Rc`/`Weak`/`RefCell`) mencionadas de passagem mas fora do escopo; async/await e Tokio não cobertos apesar de Deno ser citado como usuário de Tokio — fica para uma fonte futura de `rust-advanced`/`rust-axum`.
+
+---
+
 ## [2026-07-15] ingest | O Que É Refatoração (e Quando Usar)
 
 **Fonte:** [[wiki/sources/o-que-e-refatoracao-quando-usar]] — transcrição de fala corrida em português (sem necessidade de tradução), limpa e organizada em seções, salva em `raw/o-que-e-refatoracao-quando-usar.md`. Vídeo introdutório de [[wiki/entities/bernardo-lobato]] anunciando uma possível série sobre refatoração no canal.

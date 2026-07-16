@@ -3,8 +3,8 @@ type: concept
 title: "Compilador"
 aliases: ["compiler", "compilação", "interpretador", "AST", "análise léxica"]
 date_created: 2026-06-26
-date_updated: 2026-07-09
-source_count: 3
+date_updated: 2026-07-16
+source_count: 4
 tags: [cs-fundamentals, compiladores, interpretadores, ast, linguagens-de-programacao]
 skill: cs-fundamentals
 status: draft
@@ -77,6 +77,10 @@ Bytecode é sequencial e compacto, o que o torna mais rápido de executar do que
 
 O pipeline lexer → parser → AST → codegen é o *mecanismo*. Antes dele, quem projeta uma linguagem decide: qual [[wiki/concepts/sistema-de-tipos|sistema de tipos]] usar (estática/dinâmica/inferência), qual [[wiki/concepts/gerenciamento-de-memoria|modelo de gerenciamento de memória]] (manual/GC/ownership) e como a [[wiki/concepts/gramatica-formal-ebnf|gramática formal]] resolve ambiguidade via precedência e associatividade. Essas escolhas não são independentes — o propósito da linguagem (controle de hardware vs. produtividade vs. segurança de memória) determina em cascata as demais.
 
+## Análise além de tipos: o borrow checker do Rust
+
+Análise semântica normalmente verifica tipos, escopo e aridade. Rust adiciona uma passada extra que a maioria dos compiladores não tem: o **borrow checker**, que verifica se todo empréstimo de referência (`&`/`&mut`) respeita ownership e exclusividade, e se nenhuma referência sobrevive (*outlives*) o valor que aponta (*lifetime*). É essa passada adicional — não o pipeline lexer→parser→codegen em si — que torna Rust capaz de rejeitar use-after-free e data races antes da primeira linha rodar. Ver [[wiki/concepts/rust-ownership-borrowing-lifetimes]].
+
 ## Relação com abstração
 
 O compilador é a [[abstracao]] que permite escrever `let x = 10` e não se preocupar com registradores, pilha de execução ou endereços de memória. É uma das camadas mais importantes da hierarquia de abstrações.
@@ -92,3 +96,4 @@ O compilador é a [[abstracao]] que permite escrever `let x = 10` e não se preo
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]] — decisões de design (propósito, gramática, tipos, memória, ecossistema) que antecedem e envolvem o pipeline de compilação
 - [[wiki/sources/como-um-compilador-transforma-codigo-em-instrucoes-de-maquina]] — detalhamento da análise semântica (tabela de símbolos), da IR como forma atômica que evita explosão N×M, e da alocação de registradores na geração de código
+- [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — borrow checker como passada de análise semântica adicional, própria de Rust

@@ -3,8 +3,8 @@ type: concept
 title: "Gerenciamento de Memória (Linguagens de Programação)"
 aliases: ["memory management", "garbage collector", "GC", "ownership", "manual memory management"]
 date_created: 2026-07-09
-date_updated: 2026-07-09
-source_count: 1
+date_updated: 2026-07-16
+source_count: 2
 tags: [cs-fundamentals, linguagens-de-programacao, memoria, garbage-collector, rust, runtime]
 skill: cs-fundamentals
 status: draft
@@ -26,7 +26,7 @@ O runtime monitora quais objetos ainda estão referenciados/em uso e libera auto
 
 ### Ownership (Rust)
 
-Cada valor tem exatamente um dono. Quando o dono sai do escopo, a memória é liberada automaticamente. Não existe GC nem `free` manual espalhado pelo código — o compilador (*borrow checker*) verifica essas regras em tempo de compilação, eliminando a classe inteira de bugs de manual (use-after-free, double-free) sem o custo de runtime de um GC.
+Cada valor tem exatamente um dono. Quando o dono sai do escopo, a memória é liberada automaticamente. Não existe GC nem `free` manual espalhado pelo código — o compilador (*borrow checker*) verifica essas regras em tempo de compilação, eliminando a classe inteira de bugs de manual (use-after-free, double-free) sem o custo de runtime de um GC. Detalhamento completo (borrowing, `&`/`&mut`, lifetimes, e por que isso também elimina data races) em [[wiki/concepts/rust-ownership-borrowing-lifetimes]].
 
 ## Por que a decisão é difícil de reverter
 
@@ -41,3 +41,4 @@ O modelo de memória escolhido molda como todo o resto da linguagem — e do có
 ## Key sources
 
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]]
+- [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — aprofundamento de ownership em Rust: move semantics, regra de exclusividade do borrowing (N leitores OU 1 escritor) e lifetimes como garantia de que referência não outlive o valor

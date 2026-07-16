@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-07-15
+date_updated: 2026-07-16
 ---
 
 
@@ -145,6 +145,8 @@ date_updated: 2026-07-15
 | [[wiki/sources/design-pattern-adapter]] | Renato Augusto: classe de negócio acoplada via `new` a uma lib externa de PDF (DomPDF) fere SRP e é intestável — Adapter extrai uma interface própria do domínio, e trocar de lib (DomPDF → TCPDF) passa a exigir só um novo adaptador |
 | [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] | Palestra em Amsterdã: OpenTelemetry como padrão vendor-neutral roteado por um Collector central; agente de IA via Grafana MCP correlaciona métricas/logs/traces sozinho e acha causa raiz em código — "o ouro está nos dados, não na IA" |
 | [[wiki/sources/o-que-e-refatoracao-quando-usar]] | Bernardo Lobato: refatoração é mudar estrutura interna sem alterar comportamento externo — dois chapéus de Kent Beck, God Class nascendo sprint a sprint sob prazo, testes na base da pirâmide como rede de segurança, passos pequenos, refatoração oportunista vs. planejada |
+| [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] | Ownership (um dono por valor), borrowing (`&`/`&mut` — N leitores OU 1 escritor) e lifetimes (referência nunca outlive o valor) eliminam use-after-free, double-free e data races em compile-time, sem GC — trade-off: aprendizado e compilação mais lentos |
+| [[wiki/sources/cognitive-debt-margaret-storey]] | Fonte primária de "cognitive debt": dívida técnica mora no código, dívida cognitiva mora na cabeça do time — fundamentada na teoria de Peter Naur (1985) de que um programa é uma teoria, não o código-fonte |
 
 ## Concepts
 
@@ -335,6 +337,14 @@ date_updated: 2026-07-15
 | [[wiki/concepts/langgraph]] | Framework que representa estado de agente como grafo — nodes são passos, edges são transições condicionais |
 | [[wiki/concepts/grafo-como-abstracao-de-agentes]] | G=(V,E): nós são computação/LLM, arestas são condição de fluxo determinística — abstração independente de framework |
 
+### Dívida Cognitiva & Teoria do Programa
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/divida-cognitiva]] | Dívida técnica mora no código; dívida cognitiva mora na cabeça do time — IA acelera a segunda sem reduzir a primeira |
+| [[wiki/concepts/comprehension-debt]] | Erosão progressiva e individual da capacidade de entender o próprio código aprovado — "mais 5 minutos de prompt" vira 5 horas |
+| [[wiki/concepts/teoria-do-programa-naur]] | Peter Naur (1985): um programa é uma teoria na mente de quem o construiu, não o código-fonte — base teórica de "cognitive debt" |
+
 ### Processo de Desenvolvimento com IA
 
 | Página | Hook |
@@ -444,6 +454,8 @@ date_updated: 2026-07-15
 | [[wiki/concepts/bluetooth-le]] | Advertising → scan → pair → GATT — o "handshake" do Bluetooth Low Energy; gerenciar mal o ciclo gera conexão fantasma e dreno de bateria |
 | [[wiki/concepts/sistema-de-tipos]] | Estática vs. dinâmica vs. inferência — quando os erros de tipo são pegos: compilação ou runtime |
 | [[wiki/concepts/gerenciamento-de-memoria]] | Manual, garbage collector ou ownership (Rust) — a decisão de runtime mais difícil de reverter numa linguagem |
+| [[wiki/concepts/rust-ownership-borrowing-lifetimes]] | Um dono por valor, `&`/`&mut` com regra N leitores OU 1 escritor, e lifetime garantindo que referência não outlive o valor — tudo verificado em compile-time pelo borrow checker |
+| [[wiki/concepts/rust-fundamentos]] | `Option`/`Result` sem `null` implícito, `match` exaustivo, traits com static dispatch, Cargo como toolchain unificada, e onde a adoção real de Rust compensa o custo de aprendizado |
 | [[wiki/concepts/gramatica-formal-ebnf]] | EBNF define o que é sintaticamente válido; precedência e associatividade resolvem ambiguidade (`1 + 2 * 3`) |
 | [[wiki/concepts/language-server-protocol]] | Protocolo da Microsoft que desacopla editor de linguagem — um servidor, N editores com autocomplete e erros inline |
 | [[wiki/concepts/standard-library-e-ecossistema]] | Stdlib, package manager e tooling — o que faz uma linguagem tecnicamente boa sobreviver de fato |
@@ -762,6 +774,8 @@ date_updated: 2026-07-15
 | Página | Hook |
 |---|---|
 | [[wiki/entities/iana]] | Internet Assigned Numbers Authority — coordena globalmente endereços IP, nomes de domínio e números de porta |
+| [[wiki/entities/margaret-storey]] | Professora, University of Victoria, Canada Research Chair — cunhou "cognitive debt" (2026) sobre a base teórica de Peter Naur |
+| [[wiki/entities/peter-naur]] | Turing Award 2005 — Backus-Naur Form (gramática) e "Programming as Theory Building" (1985), base de "cognitive debt" |
 | [[wiki/entities/bernardo-lobato]] | Desenvolvedor e criador de conteúdo brasileiro — arquitetura de software e padrões avançados |
 | [[wiki/entities/linuxtips]] | Plataforma brasileira de educação em tecnologia — DevOps, Cloud, Kubernetes, podcast Papinho Tech Solo |
 | [[wiki/entities/renato-augusto]] | Desenvolvedor e criador de conteúdo brasileiro — padrões de projeto GoF e orientação a objetos, carreira e soft skills |
