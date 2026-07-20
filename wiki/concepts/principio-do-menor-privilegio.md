@@ -3,8 +3,8 @@ type: concept
 title: "Princípio do Menor Privilégio"
 aliases: ["least privilege", "principle of least privilege", "PoLP", "menor privilégio", "permissão mínima"]
 date_created: 2026-06-10
-date_updated: 2026-07-10
-source_count: 2
+date_updated: 2026-07-20
+source_count: 3
 tags: [security, least-privilege, iam, vpc, appsec, arquitetura-seguranca, defense-in-depth]
 skill: tech-mentor-security
 status: stable
@@ -44,9 +44,13 @@ O menor privilégio também se aplica ao próprio acesso SSH: [[wiki/concepts/ss
 - Mapear o que cada papel precisa e conceder exatamente isso
 - Acesso just-in-time para ambientes de produção — sem standing privilege
 
+**Agentes de IA (não só serviços/humanos)**
+[[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] aplica o mesmo princípio a um agente de codificação de IA: em vez de dar acesso total ao filesystem do usuário, o [[wiki/concepts/agent-containment|AI Jail]] expõe apenas o diretório do projeto atual, com granularidade por subpasta (ex.: `.claude/` como somente leitura, o restante do projeto como leitura+escrita) — o agente recebe exatamente o que precisa para operar, nada além disso.
+
 ## Relação com Outros Conceitos
 
 - [[defense-in-depth]] — o menor privilégio é uma das camadas; contém o dano quando outras camadas falham
+- [[wiki/concepts/agent-containment]] — PoLP aplicado especificamente ao processo de um agente de IA, não só a serviços humanos
 - [[attack-surface]] — reduzir privilégios reduz o impacto de cada ponto de entrada
 - [[secure-by-default]] — o menor privilégio é o default seguro para permissões
 - [[secrets-management]] — secrets acessíveis apenas pelos serviços que precisam deles
@@ -55,3 +59,4 @@ O menor privilégio também se aplica ao próprio acesso SSH: [[wiki/concepts/ss
 
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — exemplos: backend read-only, banco dentro de VPC, bastion host para acesso externo
 - [[wiki/sources/ssh-chaves-como-funcionam]] — chave SSH como credencial mínima para acesso a bastion hosts
+- [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — permissões granulares de leitura/escrita por pasta para um agente de IA

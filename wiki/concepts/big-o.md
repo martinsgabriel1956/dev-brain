@@ -3,8 +3,8 @@ type: concept
 title: "Big O"
 aliases: ["complexidade de algoritmos", "Big-O notation", "O(n)", "complexidade assintótica"]
 date_created: 2026-06-26
-date_updated: 2026-07-10
-source_count: 3
+date_updated: 2026-07-20
+source_count: 4
 tags: [cs-fundamentals, algoritmos, big-o, complexidade, performance]
 skill: cs-fundamentals
 status: draft
@@ -56,6 +56,10 @@ Com apenas 20 cidades no Problema do Caixeiro Viajante (qual rota menor passa po
 3. Ignore constantes e termos menores — O(2n + 5) é O(n).
 4. Pergunte: funciona com 10× mais dados? 100×?
 
+## Uso Prático em Entrevista de Coding
+
+Fora do cálculo formal, Big O tem uma utilidade direta em [[wiki/concepts/entrevista-tecnica-coding|entrevistas técnicas de coding]]: saber a complexidade das estruturas e algoritmos comuns ajuda a saber **que perguntas de esclarecimento fazer** antes de codar. Exemplo: perguntar ao entrevistador se o input já está ordenado permite descartar de saída qualquer algoritmo de ordenação (O(n log n)) do conjunto de abordagens possíveis, em vez de reaprender essa decisão do zero durante a resolução.
+
 ## Big O ≠ tempo real
 
 O(1) pode ser mais lento que O(n) para entradas pequenas se a constante for grande (ex: hash table com custo fixo alto vs array de 5 elementos). Big O é relevante para entradas **grandes**.
@@ -78,3 +82,4 @@ O(1) pode ser mais lento que O(n) para entradas pequenas se a constante for gran
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/9-algoritmos-que-todo-programador-deveria-saber]]
 - [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]] — framing das "quatro curvas essenciais" e introdução informal via "quantos passos a mais quando os dados dobram"
+- [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]] — Big O como ferramenta para saber que perguntas fazer numa entrevista, não só para calcular complexidade

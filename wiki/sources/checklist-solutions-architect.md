@@ -41,3 +41,7 @@ Checklist de 24 domínios para Solutions Architect: Fundamentos de Arquitetura, 
 
 - Como priorizar os gaps do checklist dado tempo limitado de aprendizado?
 - Wardley Maps na prática em times de engenharia — como facilitar sessões sem virar cerimônia vazia?
+
+## Conexão com outras fontes
+
+[[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]] argumenta que uma pós-graduação formal em arquitetura de software não cobre este checklist na prática — apenas na teoria/conceito de cada domínio — o que reforça que os gaps técnicos listados aqui precisam ser fechados majoritariamente fora da sala de aula (projetos reais, laboratórios próprios, estudo autodidata).

@@ -3,8 +3,8 @@ type: entity
 title: "Dale Carnegie"
 aliases: ["Dale Carnegie"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 1
+date_updated: 2026-07-20
+source_count: 2
 tags: [autor, soft-skills, comunicacao, lideranca]
 skill: tech-mentor-leadership
 status: stub
@@ -17,3 +17,4 @@ Autor americano, escritor de *Como Fazer Amigos e Influenciar Pessoas* (1936), o
 ## Key Sources
 
 - [[wiki/sources/3-soft-skills-que-poucos-programadores-dominam]]
+- [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]] — citado como leitura recomendada para arquitetos desenvolverem comunicação e soft skills

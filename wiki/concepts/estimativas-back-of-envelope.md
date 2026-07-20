@@ -3,8 +3,8 @@ type: concept
 title: "Estimativas Back-of-Envelope"
 aliases: ["back of envelope", "estimativas de escala", "capacity estimation"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-20
+source_count: 2
 tags: [system-design, estimativas, entrevista, escala, capacity-planning]
 skill: tech-mentor-system-design
 status: stub
@@ -37,6 +37,9 @@ Redis GEO: 5M × 70 bytes       = 350MB            → cabe em 1 instância
 
 Mostra que a escolha de tecnologia é baseada em números, não em preferência. "Redis porque é mais rápido" é fraco. "Redis porque PostgreSQL não suporta 1.25M writes/s" é arquitetura.
 
+Em [[wiki/concepts/entrevista-system-design|entrevistas de system design]], esse "plano de capacidade" costuma ser explicitamente esperado como etapa da sessão — não algo opcional para quem quer impressionar: requisições por segundo/minuto, picos de acesso, banda necessária e replication factor em disco.
+
 ## Key Sources
 
 - [[sources/case-uber]]
+- [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]

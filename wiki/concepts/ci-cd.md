@@ -3,8 +3,8 @@ type: concept
 title: "CI/CD"
 aliases: ["CI/CD", "continuous integration", "continuous delivery", "continuous deployment", "pipeline de entrega"]
 date_created: 2026-04-22
-date_updated: 2026-07-09
-source_count: 5
+date_updated: 2026-07-20
+source_count: 6
 tags: [devops, cicd, deploy, automação, qualidade, projetos-novos, dora]
 skill: tech-mentor-infra
 status: stable
@@ -27,6 +27,8 @@ A maioria das empresas opera em Continuous Delivery — todo commit está pronto
 ## Deploy Manual vs. Automático — a diferença é o gatilho
 
 Um deploy manual (SSH na máquina, `git pull`, `npm start`) e um deploy automático (pipeline disparada por merge na `main`) podem executar exatamente os mesmos comandos por baixo. A diferença não é **o que** é executado, é **o que dispara** a execução: decisão humana pontual vs. regra automática. Deploy automático reduz erro humano e torna difícil esquecer de deployar, além de permitir gates adicionais (ex.: só deploya se os testes passarem).
+
+**Exemplo concreto do lado manual:** um deploy [[concepts/blue-green-deploy]] numa VPS única, disparado inteiramente por SSH com uma sequência de scripts bash (clonar, subir instância, trocar roteamento do reverse proxy) rodados um a um pelo operador — sem CI, sem gate, sem gatilho automático. → [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]]
 
 Qual **estratégia** de tráfego o deploy (manual ou automático) usa — [[concepts/recreate-deployment]], [[concepts/rolling-update]], [[concepts/blue-green-deploy]], [[concepts/canary-release]] — é uma decisão ortogonal. Continuous Deployment, em particular, tende a usar Rolling como padrão de fato, mas nada o obriga.
 
@@ -96,3 +98,4 @@ A pesquisa [[dora-metrics|DORA]] (livro *Accelerate*) mostra que Deployment Freq
 - [[wiki/sources/integration-test-martin-fowler]]
 - [[wiki/sources/tipos-de-deploy]]
 - [[wiki/sources/como-evitar-over-engineering-david-farley]]
+- [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]] — exemplo concreto de deploy 100% manual via SSH, sem pipeline

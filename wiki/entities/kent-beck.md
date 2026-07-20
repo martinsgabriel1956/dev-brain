@@ -3,8 +3,8 @@ type: entity
 title: "Kent Beck"
 aliases: ["kent beck"]
 date_created: 2026-07-09
-date_updated: 2026-07-19
-source_count: 4
+date_updated: 2026-07-20
+source_count: 5
 tags: [autor, tdd, extreme-programming, design-incremental, junit, xunit, yagni]
 skill: tech-mentor-testing
 status: stub
@@ -32,9 +32,13 @@ Em 1997, num voo de Zurique para a OOPSLA em Atlanta, Beck programou em par com 
 
 Beck é o autor do livro fundador da Extreme Programming, onde [[wiki/concepts/yagni]] foi apresentado. [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] atribui esse livro a Ron Jeffries — provável imprecisão da fonte, registrada como nota de verificação em [[wiki/concepts/yagni]]. Jeffries é cocriador da XP junto com Beck no [[wiki/entities/c3-project|projeto C3]], mas não é o autor do livro em questão.
 
+## "Make the hard change easy" — Tidy First?
+
+[[wiki/sources/cognitive-debt-margaret-storey]] cita Beck (com link para [tidyfirst.substack.com/p/tidy-first-example](https://tidyfirst.substack.com/p/tidy-first-example)) como origem do enquadramento "make the hard change easy, then make the easy change" — ordenar tidying antes de mudanças arriscadas. A autora argumenta que a relutância em fazer esse trabalho preparatório, sob pressão por velocidade com IA, é o que leva à dívida cognitiva. Isso confirma, a favor de *Tidy First?*, a nota de verificação abaixo sobre a citação "invest in the design of the system every day" — mesma obra, mesmo argumento de investir continuamente em preparar o terreno antes de mudar.
+
 ## Nota de verificação
 
-A citação acima foi atribuída a Beck na palestra-fonte, mas a obra exata não foi identificada durante a ingestão — provavelmente de *Tidy First?* ou de material de XP, a confirmar em ingestão futura.
+A citação "invest in the design of the system every day" foi atribuída a Beck na palestra-fonte, mas a obra exata não foi identificada durante aquela ingestão — provavelmente de *Tidy First?*, como sugere a citação equivalente em [[wiki/sources/cognitive-debt-margaret-storey]], a confirmar em ingestão futura que leia o livro diretamente.
 
 ## Key Sources
 
@@ -42,3 +46,4 @@ A citação acima foi atribuída a Beck na palestra-fonte, mas a obra exata não
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]] — metáfora dos dois chapéus
 - [[wiki/sources/xunit-martin-fowler]] — origem do JUnit e do framework de testes que o antecedeu
 - [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] — verificação de autoria de *Extreme Programming Explained*, origem do YAGNI
+- [[wiki/sources/cognitive-debt-margaret-storey]] — "make the hard change easy" (*Tidy First?*) como prevenção de dívida cognitiva

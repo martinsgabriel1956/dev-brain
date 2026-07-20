@@ -3,8 +3,8 @@ type: concept
 title: "High Level Design (HLD)"
 aliases: ["HLD", "High-Level Design"]
 date_created: 2026-05-17
-date_updated: 2026-05-17
-source_count: 1
+date_updated: 2026-07-20
+source_count: 2
 tags: [system-design, arquitetura, hld, documentacao]
 skill: tech-mentor-system-design
 status: stable
@@ -36,10 +36,15 @@ Artefato que alinha engenheiros, PMs e stakeholders técnicos sobre a direção 
 
 HLD define os blocos. [[low-level-design]] define como cada bloco é implementado internamente.
 
+## Em entrevista de system design
+
+Em uma [[wiki/concepts/entrevista-system-design|entrevista de system design]], o desenho do HLD é a última etapa da sessão, não a primeira — vem depois de levantar requisitos, montar plano de capacidade ([[wiki/concepts/estimativas-back-of-envelope]]) e modelar dados/API. O entrevistador avalia se o desenho é coerente com tudo que foi dito antes dele.
+
 ## Key Sources
 
 - [[wiki/sources/high-level-design]]
+- [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]
 
 ## Conceitos Relacionados
 
-[[low-level-design]] · [[adr-architecture-decision-record]] · [[trd-technical-requirements-document]]
+[[low-level-design]] · [[adr-architecture-decision-record]] · [[trd-technical-requirements-document]] · [[wiki/concepts/entrevista-system-design]]

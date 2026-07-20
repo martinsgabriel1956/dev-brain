@@ -3,8 +3,8 @@ type: concept
 title: "Load Balancer"
 aliases: ["lb", "load balancing", "l4", "l7", "round robin"]
 date_created: 2026-04-23
-date_updated: 2026-07-15
-source_count: 8
+date_updated: 2026-07-20
+source_count: 9
 tags: [load-balancer, l4, l7, round-robin, health-check, alta-disponibilidade, infra, nginx]
 skill: tech-mentor-infra
 status: stub
@@ -51,6 +51,10 @@ Conexões WebSocket são de longa duração e stateful — um L7 comum pode ter 
 
 **Por que L7 quebra o fluxo:** um LB de camada 7 não é um simples repassador — ele termina a conexão HTTP recebida, lê os cabeçalhos, empacota uma nova requisição e a reenvia ao servidor escolhido. Para request-response isso é transparente, mas para WebSocket quebra o tunelamento TCP contínuo que a conexão precisa manter. O LB L4 evita isso porque nunca abre o conteúdo — apenas encaminha bytes ao servidor com menos conexões abertas no momento (uma forma de balanceamento por carga de conexão, não por round-robin cego).
 
+## Load Balancer vs. Reverse Proxy
+
+Nem todo [[wiki/concepts/reverse-proxy]] é um load balancer: um LB decide **entre múltiplas instâncias equivalentes** usando algum algoritmo (Round Robin, Least Connections...); um reverse proxy pode apontar para **um único destino fixo** e ainda assim já cumprir seu papel — só interceptar, inspecionar e repassar. Num deploy [[wiki/concepts/blue-green-deploy|blue/green]] de host único, o Nginx atua como reverse proxy nesse segundo sentido: nunca distribui tráfego entre blue e green ao mesmo tempo, só redireciona 100% para um dos dois por vez.
+
 ## Key Sources
 
 - [[sources/load-balancer]]
@@ -61,3 +65,4 @@ Conexões WebSocket são de longa duração e stateful — um L7 comum pode ter 
 - [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] — tipos de LB (hardware/software/cloud), algoritmos de balanceamento (Weighted RR, Least Connections, Least Time, Sticky RR), demonstração prática com Nginx
 - [[wiki/sources/portas-de-rede-como-funcionam]] — L4 roteia por `IP:porta`, sem inspecionar conteúdo
 - [[wiki/sources/10-conceitos-fundamentais-backend]] — regra didática mínima: "o load balancer não deveria mandar tráfego para uma instância que travou"
+- [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]] — Nginx como reverse proxy (não LB) num deploy blue/green de host único, redirecionando 100% do tráfego para uma porta por vez

@@ -3,8 +3,8 @@ type: concept
 title: "Reconhecimento de Padrões"
 aliases: ["pattern recognition", "padrões de solução", "padrões de problema", "repertório de padrões"]
 date_created: 2026-06-10
-date_updated: 2026-06-10
-source_count: 1
+date_updated: 2026-07-20
+source_count: 2
 tags: [aprendizado, maestria, pratica-deliberada, cognicao, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -44,6 +44,10 @@ Reconhecimento de padrões é produto de [[pratica-deliberada]] — especificame
 
 Esse processo é o que acontece enquanto o aprendiz atravessa o [[vale-do-desespero]].
 
+## Caso Prático: Por Que Não Adianta Decorar Problema do LeetCode
+
+O mesmo princípio explica um conselho recorrente de entrevistadores técnicos: "não memorize o problema, memorize o padrão." Um candidato pode fazer centenas de problemas no LeetCode e continuar sem evoluir a capacidade real de resolver problemas — se o foco for memorizar a solução exata de cada problema em vez de reconhecer o padrão de solução por trás dele. Entrevistadores evitam usar problemas prontos justamente porque memorização de solução específica não prova capacidade de resolver algo novo — só repertório de padrão prova isso. Ver [[wiki/concepts/entrevista-tecnica-coding]].
+
 ## Por Que Não Tem Como Acelerar
 
 O reconhecimento de padrões é formado por consolidação neural — é literalmente o cérebro criando conexões novas entre estímulos. Esse processo tem um tempo biológico. Não é comprometido pela qualidade do professor ou do curso — é comprometido pela quantidade de exposição.
@@ -59,3 +63,4 @@ Daí a afirmação: "tu não leva tempo para decorar uma sintaxe — tu leva mui
 ## Key Sources
 
 - [[sources/quanto-tempo-aprender-programacao]] — pesquisa dos xadrezistas como analogia central; "tu não leva tempo para decorar sintaxe, leva tempo pro cérebro reconhecer padrões"
+- [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]] — aplicação prática em entrevistas de coding: "memorize o padrão, não o problema"

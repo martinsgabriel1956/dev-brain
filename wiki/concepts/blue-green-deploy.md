@@ -3,8 +3,8 @@ type: concept
 title: "Blue/Green Deploy"
 aliases: ["blue green", "blue-green deployment", "swap de ambiente"]
 date_created: 2026-04-22
-date_updated: 2026-07-09
-source_count: 2
+date_updated: 2026-07-20
+source_count: 3
 tags: [devops, deploy, cicd, kubernetes, rollback, infra]
 skill: tech-mentor-infra
 status: stable
@@ -65,7 +65,12 @@ spec:
 
 A versão antiga (Blue) continua de pé, rodando em paralelo, mesmo depois do swap — rollback é literalmente redirecionar o tráfego de volta, sem precisar reverter código nem refazer deploy. Essa é a vantagem central que o distingue do [[concepts/rolling-update]] (rollback lento, pod a pod) e justifica pagar o custo de 2x infraestrutura durante a janela de transição.
 
+## Blue/Green num Host Único (sem Kubernetes)
+
+O mesmo conceito — duas versões vivas em paralelo, troca atômica de roteamento, rollback instantâneo — funciona sem cluster nenhum: um [[wiki/concepts/reverse-proxy|reverse proxy]] (Nginx) na frente de duas instâncias da aplicação, cada uma numa porta diferente, na mesma VPS. Em vez de trocar `Service.selector` no Kubernetes, um script edita a diretiva `proxy_pass` do Nginx e recarrega a config — a operação é a mesma "seta de roteamento", só que implementada manualmente com scripts bash em vez de um controller.
+
 ## Key Sources
 
 - [[sources/blue-green-canary-rolling]]
 - [[sources/tipos-de-deploy]]
+- [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]] — demo prática em VPS única, sem Kubernetes: Nginx como reverse proxy trocando entre duas portas via script

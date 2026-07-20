@@ -3,8 +3,8 @@ type: concept
 title: "Kernel"
 aliases: ["kernel", "núcleo do SO", "kernel mode", "ring 0"]
 date_created: 2026-04-22
-date_updated: 2026-06-26
-source_count: 2
+date_updated: 2026-07-20
+source_count: 3
 tags: [sistema-operacional, kernel, cs-fundamentals]
 skill: cs-fundamentals
 status: stable
@@ -58,6 +58,10 @@ Programas comuns travam sem afetar o sistema porque rodam em user mode, isolados
 
 Linux é monolítico mas suporta **módulos de kernel** carregados dinamicamente (drivers, por exemplo).
 
+## Panorama por sistema operacional
+
+Para o contexto de propósito/mercado de cada SO que roda um destes kernels (não só a mecânica interna), ver [[wiki/concepts/windows]], [[wiki/concepts/macos]], [[wiki/concepts/linux]], [[wiki/concepts/unix]] e [[wiki/concepts/bsd]].
+
 ## Ver também
 
 - [[concepts/syscall]] — interface entre user mode e kernel
@@ -69,3 +73,4 @@ Linux é monolítico mas suporta **módulos de kernel** carregados dinamicamente
 
 - [[sources/sistema-operacional-por-baixo-dos-panos]]
 - [[sources/como-sistemas-operacionais-funcionam]]
+- [[wiki/sources/8-sistemas-operacionais-explicados]] — panorama comparativo de propósito/mercado dos SOs que rodam sobre estes kernels

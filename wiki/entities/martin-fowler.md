@@ -3,8 +3,8 @@ type: entity
 title: "Martin Fowler"
 aliases: ["Fowler", "martinfowler.com"]
 date_created: 2026-07-07
-date_updated: 2026-07-19
-source_count: 5
+date_updated: 2026-07-20
+source_count: 6
 tags: [thoughtworks, autor, testes, arquitetura, tech-debt, refactoring, agile]
 skill: tech-mentor-testing
 status: stable
@@ -38,6 +38,10 @@ Fowler é conhecido por identificar quando um termo popular carrega significados
 
 Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter usado o framework de testes caseiro de [[wiki/entities/kent-beck]] no projeto [[wiki/entities/c3-project|C3]] (origem da Extreme Programming), e ter sido um dos primeiros usuários alfa do [[wiki/entities/junit]] — chegando a enviar contribuições de volta para Beck e Erich Gamma logo após sua criação em 1997.
 
+## Future of Software Engineering Retreat
+
+[[wiki/sources/cognitive-debt-margaret-storey]] cita uma sessão (breakout session) do "Future of Software Engineering Retreat", organizado por Fowler e a Thoughtworks, onde se discutiu que desenvolvedores precisam desacelerar e usar pair programming, refatoração e TDD para endereçar tanto dívida técnica quanto [[wiki/concepts/divida-cognitiva|dívida cognitiva]]. Citação de segunda mão — a fonte primária (o fragment de Fowler) não foi lida nesta ingestão.
+
 ## Anedota (não verificada): origem do ágil e projeto atrasado na Thoughtworks
 
 [[wiki/sources/como-evitar-over-engineering-david-farley]] relata, de segunda mão e sem fonte primária citada, um projeto da Thoughtworks atrasado um ano no qual Fowler teria sido chamado para ajudar — situado como parte da origem do movimento ágil/Extreme Programming (entregar pequenos incrementos com testes automatizados, antes do termo "ágil" ser associado a processos como Scrum). Não verificado nesta wiki; ver "Open Questions" na fonte.
@@ -55,3 +59,4 @@ Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter us
 - [[wiki/sources/xunit-martin-fowler]]
 - [[wiki/sources/como-evitar-over-engineering-david-farley]]
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]]
+- [[wiki/sources/cognitive-debt-margaret-storey]] — Future of Software Engineering Retreat

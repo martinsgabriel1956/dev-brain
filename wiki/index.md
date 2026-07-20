@@ -13,6 +13,11 @@ date_updated: 2026-07-20
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/8-sistemas-operacionais-explicados]] | Panorama dos 8 SOs mais conhecidos: Windows, macOS, Linux, Chrome OS, Android, iOS, Unix e BSD — propósito, mercado, vantagens e desvantagens de cada um |
+| [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]] | Full Cycle (Wesley Willians): 5 dicas para entrevista de system design/lousa branca — gerenciar tempo, requisitos core antes de desenhar, plano de capacidade, modelagem de dados/API, e só então o desenho; nunca citar tecnologia que não domina |
+| [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] | AI Jail (Fábio Akita): sandbox via Bubblewrap para conter agentes de codificação de IA contra supply chain attacks (ex.: npm postinstall malicioso); modelo de 3 camadas — sessão/AI Jail, código/Git, SO imutável; comparação com o opt-out do sandbox nativo do Claude Code |
+| [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]] | Renato Augusto: "vale a pena" sem objetivo definido não tem resposta; pós-graduação em arquitetura ensina teoria, não prática, nem em instituições renomadas; vantagens reais são networking, acesso a vagas com exigência de diploma e visão de negócio (churn, CAC, LTV) |
+| [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]] | Anthony D. Mays (ex-entrevistador big tech): memorize o padrão, não o problema; resposta certa não basta, processo de raciocínio importa mais; ficar travado é esperado; fazer perguntas de esclarecimento é trabalho do candidato, não do entrevistador |
 | [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] | Everton Oliveira: KISS (origem Marinha dos EUA) e YAGNI como os dois princípios que resolvem o dilema velocidade vs. qualidade — exemplo de refactor de validação de status e de repositório com métodos CRUD implementados por precaução |
 | [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]] | Reação a currículos reais de candidatos júnior: repetição da stack-alvo para passar no ATS, ausência de GitHub como motivo de descarte explícito, formatação/legibilidade e discurso de "pensar produto" como diferenciais |
 | [[wiki/sources/8-tipos-de-javascript]] | Os 8 tipos de JS (`null`, `undefined`, `boolean`, `number`, `bigint`, `string`, `symbol`, `object`); `typeof` vs. `Object.prototype.toString.call()`; `==` vs `===`; default de parâmetro (`undefined`) vs. fallback `\|\|` (qualquer falsy) |
@@ -157,6 +162,7 @@ date_updated: 2026-07-20
 | [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] | Episódio CDF Café: RFC como source of truth anti-alucinação (80/20 planejamento/execução), especificações agnósticas à linguagem (Fabrício Arcanjo), skill Grill Me (Matt Pocock) invertendo quem revisa quem, quality gates forçando modularização |
 | [[wiki/sources/underengineering-overengineering-mario-souto]] | Mário Souto (DevSoutinho): under-engineering é mais comum que over-engineering — não reinventar libs maduras (React Hook Form, Tailwind), variável de ambiente em vez de hardcode na Vercel, acoplamento login/criar conta, CI mínimo de ~31 linhas (lint+teste) com branch protection |
 | [[wiki/sources/sistema-produtividade-ia-adapta]] | Sistema pessoal de produtividade em 3 pilares (planejamento/priorização/execução): dump mental + regra dos 5 minutos, matriz de Eisenhower + tarefa principal do dia, execução via Adapta (skills de contexto pessoal + roteamento automático de modelo) |
+| [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]] | Demo prática de blue/green numa VPS única: Nginx como reverse proxy trocando entre duas portas via script, sem Kubernetes; deploy 100% manual via SSH como etapa antes de automatizar |
 
 ## Concepts
 
@@ -193,6 +199,11 @@ date_updated: 2026-07-20
 | [[wiki/concepts/maturidade-tecnica]] | Capacidade de extrair aprendizado de qualquer situação, incluindo as adversas |
 | [[wiki/concepts/profundidade-e-maestria]] | Maestria em qualquer assunto (mesmo fora da área técnica) é prognóstico de sucesso em qualquer outro problema — o "hardware mental" se transfere |
 | [[wiki/concepts/abrangencia-profissional]] | Ser interessado, não apenas interessante — sinal é se curvar para frente ao ouvir um problema, não chegar com a solução pronta |
+| [[wiki/concepts/entrevista-tecnica-coding]] | Memorize o padrão, não o problema — processo de raciocínio e perguntas de esclarecimento importam mais que a resposta certa |
+| [[wiki/concepts/entrevista-system-design]] | Whiteboard interview: requisitos core antes de desenhar, plano de capacidade, modelagem de dados/API, e só então o high-level design |
+| [[wiki/concepts/networking-de-carreira]] | Mercado invisível de indicações — quanto mais sênior o cargo, mais a vaga é preenchida por "você conhece alguém?" em vez de vaga aberta |
+| [[wiki/concepts/credencialismo-formacao-formal]] | Diploma como proxy de disciplina, não de competência técnica — "tecnologia se ensina, disciplina não" |
+| [[wiki/concepts/definicao-de-objetivo-antes-de-decisao]] | "Vale a pena" sem objetivo definido é como perguntar se um avião vale a pena sem saber o destino |
 
 ### Recursos de Aprendizado
 
@@ -455,6 +466,14 @@ date_updated: 2026-07-20
 | [[wiki/concepts/zfs]] | Sun Microsystems, 2006 — checksums constantes e auto-reparo; prioriza integridade sobre simplicidade, usado em data centers |
 | [[wiki/concepts/syscall]] | Única ponte autorizada user mode → kernel — open/read/write/fork; custo de ~100–300ns por context switch |
 | [[wiki/concepts/kernel]] | Núcleo do SO com acesso total ao hardware — kernel mode vs user mode; kernel panic é fatal porque não há fundação embaixo |
+| [[wiki/concepts/windows]] | Maior base instalada do mundo — ampla compatibilidade de hardware, maior alvo de malware, BSOD como kernel panic |
+| [[wiki/concepts/macos]] | Exclusivo de hardware Apple — controle vertical rende estabilidade, forte em edição criativa, fraco para jogos |
+| [[wiki/concepts/linux]] | Família de distros, não um SO único — leve, gratuito, domina servidores; barreira de entrada é a linha de comando |
+| [[wiki/concepts/chrome-os]] | Leve e dependente de nuvem — Chromebooks de boot rápido, forte offline limitado e sem softwares desktop pesados |
+| [[wiki/concepts/android]] | Mobile open source mais popular do mundo — alta personalização, mas fragmentação de updates e bloatware |
+| [[wiki/concepts/ios]] | Mobile exclusivo Apple — estável e curado, mas altamente restritivo a customização e sideload |
+| [[wiki/concepts/unix]] | Ancestral multiusuário/multitarefa dos anos 60 — domínio de bancos e centros de pesquisa, licenciamento caro |
+| [[wiki/concepts/bsd]] | Família derivada do Unix de Berkeley — infra/embarcados, citado em PS4/PS5 e na CDN da Netflix |
 
 ### Fundamentos de CS
 
@@ -582,6 +601,7 @@ date_updated: 2026-07-20
 | [[wiki/concepts/modelagem-de-dados]] | Como o mundo real vira estrutura no banco — tradeoff entre modelar pouco (confuso) e normalizar demais (joins) |
 | [[wiki/concepts/filas-e-workers]] | Desacoplar pedido de processamento pesado — riscos: job falha, processa 2x, fila cresce mais que o consumo |
 | [[wiki/concepts/load-balancer]] | Distribui tráfego entre instâncias — L4 (cego, rápido) vs L7 (inspeciona HTTP, roteia por path/header) |
+| [[wiki/concepts/reverse-proxy]] | Fica na frente da aplicação e repassa a requisição — só vira load balancer quando escolhe entre múltiplos destinos equivalentes |
 | [[wiki/concepts/alta-disponibilidade]] | Sistema continua operacional mesmo com falhas de componente — redundância, health check, deploy gradual |
 | [[wiki/concepts/observabilidade]] | Entender o que acontece por dentro via logs (o quê), métricas (crescendo?) e traces (onde o tempo foi gasto) |
 
@@ -606,6 +626,7 @@ date_updated: 2026-07-20
 | [[wiki/concepts/shadow-deployment]] | Tráfego real duplicado para a v2 sem que nenhum usuário veja a resposta — valida com dados de produção, risco zero |
 | [[wiki/concepts/zero-downtime-deploy]] | Estratégia de tráfego + migrations backward compatible via Expand-Contract — nunca migrar schema e código no mesmo deploy |
 | [[wiki/concepts/feature-flags]] | Ativa/desativa funcionalidades em produção sem novo deploy — o mecanismo mais comum para separar deploy de release |
+| [[wiki/concepts/systemd]] | Init system do Linux (PID 1) — mantém o processo da aplicação vivo entre trocas de tráfego, independente do roteamento |
 
 ### Realtime & Comunicação
 
@@ -731,6 +752,9 @@ date_updated: 2026-07-20
 | [[wiki/concepts/exposicao-excessiva-de-dados]] | Retornar a entidade inteira em vez de projetar campos vaza dados sensíveis mesmo sem exibi-los na UI |
 | [[wiki/concepts/toctou]] | Intervalo entre check e use permite saque/estoque duplicado sob concorrência — corrigido com transactions atômicas |
 | [[wiki/concepts/confiar-no-frontend]] | Anti-padrão raiz: regra de negócio só no cliente é sempre contornável — servidor deve revalidar tudo |
+| [[wiki/concepts/agent-containment]] | Isolar o processo de um agente de IA (sandbox) para limitar dano se ele executar código malicioso vindo de uma dependência comprometida |
+| [[wiki/concepts/supply-chain-security]] | SBOM, SLSA, Sigstore/Cosign contra dependências comprometidas; ataques via `postinstall` malicioso (ex.: npm) como vetor mais direto |
+| [[wiki/concepts/sistema-operacional-imutavel]] | Root somente-leitura (NixOS/Fedora Silverblue) — dano ao sistema não sobrevive a um reboot |
 
 ### Frontend & Design Engineering
 
@@ -796,6 +820,12 @@ date_updated: 2026-07-20
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/bubblewrap]] | Binário de sandboxing do GNOME (usado pelo Flatpak) — base técnica do AI Jail e do sandbox nativo do Claude Code |
+| [[wiki/entities/augusto-galego]] | Criador de conteúdo técnico brasileiro — demo prática de deploy blue/green com Nginx numa VPS |
+| [[wiki/entities/hostgator]] | Provedora de hospedagem/VPS — patrocinadora da demo de deploy blue/green de Augusto Galego |
+| [[wiki/entities/anthony-d-mays]] | Ex-entrevistador técnico big tech ("de Compton ao Google") — autor do conselho "memorize o padrão, não o problema" para entrevistas de coding |
+| [[wiki/entities/wesley-willians]] | Apresentador do canal Full Cycle — conteúdo sobre arquitetura de software, system design e carreira |
+| [[wiki/entities/full-cycle]] | Canal/comunidade brasileira de arquitetura de software e MBA em Arquitetura Full Cycle |
 | [[wiki/entities/everton-oliveira]] | Engenheiro de software sênior e criador de conteúdo brasileiro — princípios de entrega rápida e com qualidade (KISS, YAGNI) |
 | [[wiki/entities/mario-souto]] | Staff Software Engineer e criador de conteúdo brasileiro, canal DevSoutinho — under-engineering vs. over-engineering |
 | [[wiki/entities/iana]] | Internet Assigned Numbers Authority — coordena globalmente endereços IP, nomes de domínio e números de porta |

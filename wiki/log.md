@@ -2794,3 +2794,166 @@ Entities:
 **Notas:** Fonte é resumo/resenha de livro (não fonte primária) de um criador que já tinha entidade própria na wiki por um vídeo anterior — segundo caso de conteúdo desse canal ingerido. A skill `tech-mentor-leadership` não tem arquivo de referência dedicado a foco/atenção/distração pessoal (mesma lacuna já observada nas fontes anteriores de produtividade), então o conteúdo foi calibrado com conhecimento geral, seguindo o precedente já estabelecido nesta wiki. Uma tensão real (não contradição) foi identificada e reconciliada entre esta fonte e [[wiki/concepts/regra-dos-5-minutos]] (fazer na hora vs. anotar e continuar) — a diferença é o contexto de aplicação (triagem de lista capturada vs. interrupção de tarefa em andamento), documentada em ambas as páginas envolvidas. Nenhuma citação inventada: uma primeira versão desta página continha uma frase sintetizada apresentada como citação direta na seção de Citações, corrigida antes da finalização para usar apenas trechos literais da transcrição. Open question registrada na fonte: o livro *Hooked*, mencionado repetidamente como contexto e mencionado como tema de um vídeo anterior do mesmo canal, não foi ingerido nesta wiki — se localizado, vale ingestão própria linkando aos conceitos criados aqui. A motivação pessoal atribuída a Nir Eyal para escrever o livro (arrependimento) é leitura do apresentador sem citação primária, marcada como baixa confiança na fonte e na página do autor.
 
 ---
+
+## [2026-07-20] ingest | AI Jail: Sandbox para Agentes de IA (artigo de Fábio Akita)
+
+**Fonte:** [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — transcrição ASR bruta de vídeo em português (sem necessidade de tradução), fornecida pelo usuário como texto corrido sem pontuação/parágrafos, reescrita como Markdown estruturado por seções (introdução/contexto de supply chain, o que é o AI Jail, demonstração, comparação com o sandbox nativo do Claude Code, as três camadas de defesa, suporte por SO, fechamento), preservando o trecho de patrocínio (PostHog) como nota lateral. Salva em `raw/ai-jail-sandbox-para-agentes-de-ia-akita.md`.
+
+**Skill carregada:** `tech-mentor-security` — índice consultado (`SKILL.md`); referências carregadas: `references/security/secure-design-patterns.md` (Defense in Depth, Principle of Least Privilege — mapeiam diretamente o modelo de três camadas do artigo) e `references/container-hardening.md` (rootless/least-privilege como paralelo técnico ao sandboxing de agente).
+
+**Páginas criadas:**
+- `wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita.md`
+- `wiki/concepts/agent-containment.md` — conceito central da fonte; **resolve um link quebrado pré-existente**: `wiki/sources/ai-safety-guardrails.md` já referenciava `[[concepts/agent-containment]]` (containment como 3ª camada do modelo de guardrails de LLM) desde 2026-04-23 sem a página existir — criada agora e retroativamente citada por aquela fonte
+- `wiki/concepts/supply-chain-security.md` — **resolve outro link quebrado pré-existente**: referenciado por `wiki/sources/supply-chain-security.md` desde 2026-04-23 sem a página existir; criado agora com o vetor de ataque via `postinstall` descrito na nova fonte, complementando o conteúdo original de SBOM/SLSA/Sigstore
+- `wiki/concepts/sistema-operacional-imutavel.md` — terceira camada do modelo de defesa (NixOS/Fedora Silverblue)
+- `wiki/entities/bubblewrap.md` — ferramenta técnica de sandboxing (GNOME/Flatpak) por trás do AI Jail e do sandbox nativo do Claude Code
+
+**Páginas atualizadas:**
+- `wiki/entities/fabio-akita.md` — nova seção "Segurança: AI Jail"; `source_count` 3 → 4
+- `wiki/concepts/defense-in-depth.md` — nova seção com o exemplo das três camadas contra agente de IA comprometido; `source_count` 2 → 3
+- `wiki/concepts/principio-do-menor-privilegio.md` — nova subseção "Agentes de IA (não só serviços/humanos)" com o exemplo de permissões granulares do AI Jail; `source_count` 2 → 3
+- `wiki/concepts/harness.md` — expandida a seção "Quem Executa as Tools?" linkando a `agent-containment` e `supply-chain-security`; `source_count` 7 → 8
+- `wiki/entities/claude-code.md` — nova seção "Sandbox Nativo" (Bubblewrap/Sandbox-exec desde out/2025, comparação com o AI Jail); `source_count` 3 → 4
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (Segurança de APIs & Arquitetura); nova linha em Entities
+
+**Notas:** Autoria do canal não identificada na transcrição — o apresentador comenta o trabalho de [[wiki/entities/fabio-akita]], mas não é o próprio Akita; seguindo o precedente já estabelecido nesta wiki para fontes de criador anônimo (ex.: [[wiki/sources/sistema-produtividade-ia-adapta]]), nenhuma entidade foi criada para o canal. Esta ingestão também funcionou como correção incidental de dois links quebrados pré-existentes na wiki (`concepts/agent-containment` e `concepts/supply-chain-security`, ambos referenciados por fontes ingeridas em 2026-04-23 sem a página-alvo ter sido criada na época) — ainda restam quebrados, fora do escopo desta ingestão, os links `concepts/sbom`, `concepts/slsa`, `concepts/provenance`, `concepts/dependency-pinning`, `entities/sigstore` e `entities/cosign`, todos referenciados por `wiki/sources/supply-chain-security.md`. Duas claims da fonte foram marcadas com confiança média/não verificada: o caso "Axios comprometido em março de 2026" (sem CVE/advisory citado) e o comportamento exato de opt-out do sandbox do Claude Code (nome da flag e se vem ativado por padrão não confirmados contra documentação oficial da Anthropic).
+
+---
+
+## [2026-07-20] ingest | LeetCode: você provavelmente está se preparando errado para entrevistas de coding (Anthony D. Mays)
+
+**Fonte:** [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]] — transcrição de vídeo em inglês fornecida pelo usuário como texto corrido sem pontuação/parágrafos; traduzida para português e reescrita como Markdown estruturado por seções (introdução, "eu não confio em você", resposta certa não basta, é trabalho do entrevistador ajudar, resumo/takeaways). Salva em `raw/leetcode-como-se-preparar-entrevistas-coding-anthony-mays.md`.
+
+**Skill carregada:** `tech-mentor-leadership` — `SKILL.md` consultado; referência carregada: `references/leadership/engineering-hiring.md` (perspectiva do lado do entrevistador/contratante — anti-padrão "Leetcode hard obrigatório" e sinais positivos de "fazer perguntas de clarificação antes de desenhar" em entrevista de system design, usados para contextualizar e cross-referenciar a tese da fonte).
+
+**Páginas criadas:**
+- `wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays.md`
+- `wiki/entities/anthony-d-mays.md` — autor, ex-entrevistador técnico big tech
+- `wiki/concepts/entrevista-tecnica-coding.md` — conceito central da fonte: entrevista de coding como avaliação de processo de raciocínio e comunicação, não de resposta memorizada
+
+**Páginas atualizadas:**
+- `wiki/concepts/reconhecimento-de-padroes.md` — nova seção "Caso Prático: Por Que Não Adianta Decorar Problema do LeetCode"; `source_count` 1 → 2
+- `wiki/concepts/big-o.md` — nova seção "Uso Prático em Entrevista de Coding"; `source_count` 3 → 4
+- `wiki/concepts/algoritmos-e-estruturas-de-dados.md` — nova seção "DSA em entrevista técnica de coding"; `source_count` 7 → 8
+- `wiki/concepts/aprendizado-por-luta.md` — nova seção "Caso Prático: Ficar Travado numa Entrevista de Coding"; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (Carreira & Soft Skills); nova linha em Entities
+
+**Notas:** Fonte é vídeo original em inglês (primeira ingestão desta wiki que exigiu tradução completa do inglês para o português, diferente do precedente recente com `wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita.md`, que já vinha em português). O artigo original de 2022 citado pelo autor no próprio vídeo não foi localizado nem ingerido — apenas o vídeo-resumo foi usado como fonte primária desta ingestão. Identificada e documentada uma conexão de reforço mútuo (não contradição) entre esta fonte (perspectiva do candidato se preparando) e o conteúdo já presente na skill `tech-mentor-leadership/references/leadership/engineering-hiring.md` (perspectiva de quem contrata): ambas convergem em tratar "Leetcode" como proxy ruim quando reduzido a memorização, e "fazer perguntas antes de agir" como sinal positivo real — documentado na seção "Conexão com a perspectiva do entrevistador/contratante" da fonte.
+
+---
+
+## [2026-07-20] ingest | Deploy Blue/Green na Prática — VPS + Nginx (Demo)
+
+**Fonte:** [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]] — transcrição ASR bruta de vídeo em português (sem necessidade de tradução), fornecida pelo usuário como texto corrido sem pontuação/parágrafos, reescrita como Markdown estruturado por seções (introdução/setup, arquitetura da demo, preparação do repositório, configuração da VPS, scripts de automação manual, troca de tráfego, encerramento). Salva em `raw/deploy-blue-green-na-pratica-vps-nginx.md`.
+
+**Skill carregada:** `tech-mentor-infra` — índice consultado (`SKILL.md`); referência carregada: `references/devops/ci-cd-strategies.md` (comparativo Blue/Green vs Canary vs Rolling, usado para validar a descrição da demo contra o modelo conceitual já presente na skill) e consulta pontual a `references/linux-essentials.md` (systemd, nginx como pacote/processo Linux).
+
+**Páginas criadas:**
+- `wiki/sources/deploy-blue-green-na-pratica-vps-nginx.md`
+- `wiki/concepts/reverse-proxy.md` — conceito central da fonte, distinto de [[wiki/concepts/load-balancer]] (que já existia mas nunca havia sido explicitamente diferenciado de reverse proxy na wiki)
+- `wiki/concepts/systemd.md` — stub sobre o init system citado na demo como responsável por manter as instâncias Node vivas
+- `wiki/entities/augusto-galego.md` — autor/apresentador da demo
+- `wiki/entities/hostgator.md` — provedora de VPS, patrocinadora do vídeo
+
+**Páginas atualizadas:**
+- `wiki/concepts/blue-green-deploy.md` — nova seção "Blue/Green num Host Único (sem Kubernetes)"; `source_count` 2 → 3
+- `wiki/concepts/deploy-strategies.md` — nova linha em Key Sources linkando a implementação prática; `source_count` 2 → 3
+- `wiki/concepts/ci-cd.md` — novo parágrafo com exemplo concreto de deploy 100% manual via SSH na seção "Deploy Manual vs. Automático"; `source_count` 5 → 6
+- `wiki/concepts/load-balancer.md` — nova seção "Load Balancer vs. Reverse Proxy" distinguindo os dois papéis; `source_count` 8 → 9
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (reverse-proxy, systemd); duas novas linhas em Entities
+
+**Notas:** Autoria identificada a partir do domínio mencionado na fala ("augustogalego.com") — nenhuma outra fonte deste canal existia previamente na wiki. A skill `tech-mentor-infra` cobre blue/green e reverse proxy apenas em nível conceitual/comparativo (`ci-cd-strategies.md`), sem exemplo de host único fora de Kubernetes — o conteúdo prático desta fonte (Nginx com duas portas na mesma VPS) preenche essa lacuna e foi usado para gerar a distinção nova entre `reverse-proxy` e `load-balancer`, que a wiki não tinha antes apesar de `load-balancer.md` já ter `source_count: 8`. Nenhuma claim técnica de risco foi identificada — o próprio apresentador é explícito sobre não ser especialista em Nginx/DevOps, e a fonte foi tratada como relato de prática funcional, não como referência normativa de configuração.
+
+---
+
+## [2026-07-20] ingest | Pós-Graduação em Arquitetura de Software: Vale a Pena?
+
+**Fonte:** [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]] — transcrição de vídeo em português, sem pontuação/parágrafos, fornecida pelo usuário como texto corrido; reescrita como Markdown estruturado por seções (cenários por trás da pergunta, preço/duração, grade curricular, ausência de prática, as três vantagens reais, conclusão). Sem necessidade de tradução (fonte já em português). Salva em `raw/pos-graduacao-arquitetura-software-vale-a-pena.md`.
+
+**Skill carregada:** `tech-mentor-leadership` — índice consultado (`SKILL.md`); referência carregada: `references/career-progression.md` (progressão de carreira Senior→Staff→Principal/Architect, influência sem autoridade, brag document) — usada para confirmar enquadramento de carreira/identidade profissional da fonte, embora o conteúdo específico sobre decisão de cursar pós-graduação não estivesse coberto por nenhum arquivo de referência existente.
+
+**Páginas criadas:**
+- `wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena.md`
+- `wiki/concepts/networking-de-carreira.md` — mercado invisível de indicações, mais relevante quanto mais sênior o cargo
+- `wiki/concepts/credencialismo-formacao-formal.md` — diploma como proxy de disciplina, não de competência técnica
+- `wiki/concepts/definicao-de-objetivo-antes-de-decisao.md` — "vale a pena" sem objetivo definido não tem resposta útil
+
+**Páginas atualizadas:**
+- `wiki/entities/renato-augusto.md` — nova linha em Key Sources; primeira menção explícita do "Mapa do Arquiteto" como produto próprio dentro de uma fonte; `source_count` 4 → 5
+- `wiki/entities/dale-carnegie.md` — nova linha em Key Sources (segunda citação do livro *Como Fazer Amigos e Influenciar Pessoas*); `source_count` 1 → 2
+- `wiki/concepts/arquitetura-de-software.md` — nova seção "Virar Arquiteto: Formação Formal Não Ensina a Parte Prática"; `source_count` 4 → 5
+- `wiki/concepts/dev-e-negocio.md` — nova seção "Aplicação a arquitetura de software"; `source_count` 1 → 2
+- `wiki/concepts/ltv-cac.md` — nova seção "Relevância para Arquitetura de Software"; `source_count` 1 → 2
+- `wiki/sources/checklist-solutions-architect.md` — nova seção "Conexão com outras fontes" linkando de volta
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (Carreira & Soft Skills)
+
+**Notas:** Autoria identificada por citação explícita do produto "Mapa do Arquiteto" já documentado em [[wiki/entities/renato-augusto]] a partir de fontes anteriores do mesmo autor — nenhuma fonte prévia havia citado o produto dentro do próprio conteúdo, apenas na página da entidade. A skill `tech-mentor-leadership` não tem um arquivo de referência dedicado à decisão "vale a pena fazer pós-graduação" (mais próximo é `career-progression.md`, focado em progressão Staff+/Principal, não em formação formal vs. autodidata) — tratado como lacuna da skill, respondido com conhecimento da própria fonte. Nenhuma claim de risco técnico identificada; principais claims não verificáveis (proporção de vagas que exigem diploma, generalização de "nenhuma pós ensina prática" a partir de experiência em uma única instituição) foram documentados em Open Questions na fonte.
+
+---
+
+## [2026-07-20] ingest | 5 Dicas para Passar em Entrevistas de Lousa Branca / System Design
+
+**Fonte:** [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]] — transcrição de vídeo em português (canal Full Cycle, Wesley Willians), fornecida pelo usuário como texto corrido sem pontuação; reescrita como Markdown estruturado por seções (contexto, cinco dicas, dica extra sobre tecnologia não dominada, fechamento sobre "não sei"). Sem necessidade de tradução (fonte já em português). Salva em `raw/5-dicas-entrevistas-lousa-branca-system-design.md`.
+
+**Skill carregada:** `tech-mentor-system-design` — diretório de skills `tech-mentor-*` não está presente neste ambiente local (caminho referenciado em CLAUDE.md, `/home/nemomartins/Documentos/new/skills/`, não existe nesta máquina); calibração de domínio feita a partir do conteúdo já registrado na wiki para o mesmo domínio ([[wiki/concepts/estimativas-back-of-envelope]], [[wiki/concepts/high-level-design]], já com `skill: tech-mentor-system-design`).
+
+**Páginas criadas:**
+- `wiki/sources/5-dicas-entrevistas-lousa-branca-system-design.md`
+- `wiki/concepts/entrevista-system-design.md` — estrutura recomendada de sessão de whiteboard/system design (requisitos → capacidade → dados/API → desenho), distinta de entrevista de coding
+- `wiki/entities/wesley-willians.md` — apresentador do canal Full Cycle
+- `wiki/entities/full-cycle.md` — canal/comunidade e MBA em Arquitetura Full Cycle
+
+**Páginas atualizadas:**
+- `wiki/concepts/entrevista-tecnica-coding.md` — backlink para `entrevista-system-design` como formato irmão (mesma estrutura de "levar a dizer não sei"); `source_count` 1 → 2
+- `wiki/concepts/arquitetura-de-software.md` — nova seção "Como isso é avaliado em entrevista"; `source_count` 5 → 6
+- `wiki/concepts/estimativas-back-of-envelope.md` — nova frase ligando plano de capacidade a etapa obrigatória de entrevista; `source_count` 1 → 2
+- `wiki/concepts/high-level-design.md` — nova seção "Em entrevista de system design"; `source_count` 1 → 2
+- `wiki/concepts/modelagem-de-dados.md` — nova seção "Em entrevista de system design"; `source_count` 1 → 2
+- `wiki/concepts/contrato-de-api.md` — backlink para `entrevista-system-design`; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources, duas novas linhas em Concepts (`entrevista-system-design`), duas novas linhas em Entities (Wesley Willians, Full Cycle)
+
+**Notas:** O diretório `/home/nemomartins/Documentos/new/skills/` referenciado em CLAUDE.md para as skills `tech-mentor-*` não existe neste ambiente — a calibração de domínio para esta fonte foi feita por analogia com páginas já existentes na wiki para o mesmo domínio (system design), não por leitura de um `SKILL.md` real. Flag para o usuário: se as skills existirem em outra máquina/caminho, vale confirmar o caminho correto para ingests futuros terem calibração de domínio completa. Conteúdo é claramente promocional do MBA Full Cycle — tratado como opinião de mercado, sem claims técnicos de risco.
+
+---
+
+## [2026-07-20] ingest | 8 Sistemas Operacionais Explicados em 8 Minutos
+
+**Fonte:** [[wiki/sources/8-sistemas-operacionais-explicados]] — transcrição de vídeo em português, sem pontuação/parágrafos, fornecida pelo usuário como texto corrido; reescrita como Markdown estruturado por seções (uma por SO: Windows, macOS, Linux, Chrome OS, Android, iOS, Unix, BSD). Sem necessidade de tradução (fonte já em português). Salva em `raw/8-sistemas-operacionais-explicados.md`. Nenhum autor/canal identificável no texto.
+
+**Skill carregada:** `cs-fundamentals` — diretório `/home/nemomartins/Documentos/new/skills/` continua ausente neste ambiente (mesma lacuna já registrada nos ingests anteriores); calibração feita por analogia com [[wiki/concepts/kernel]], página já existente na wiki com `skill: cs-fundamentals` para o mesmo domínio de sistemas operacionais.
+
+**Páginas criadas:**
+- `wiki/sources/8-sistemas-operacionais-explicados.md`
+- `wiki/concepts/windows.md`
+- `wiki/concepts/macos.md`
+- `wiki/concepts/linux.md`
+- `wiki/concepts/chrome-os.md`
+- `wiki/concepts/android.md`
+- `wiki/concepts/ios.md`
+- `wiki/concepts/unix.md`
+- `wiki/concepts/bsd.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/kernel.md` — nova seção "Panorama por sistema operacional" linkando aos 5 novos conceitos de SO com kernel próprio (Windows, macOS, Linux, Unix, BSD); nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/index.md` — nova linha em Sources; oito novas linhas em Concepts, dentro da seção já existente "Fundamentos de Sistemas Operacionais"
+
+**Notas:** Nenhuma entidade individual (pessoa/canal) foi criada nesta ingestão — a transcrição não identifica autor, canal ou data de publicação, apenas menciona empresas (Microsoft, Apple, Google, AT&T, UC Berkeley) já cobertas dentro do corpo de cada página de conceito. Encontrada uma imprecisão na fonte, documentada em Open Questions e replicada com nota de correção em `wiki/concepts/bsd.md`: PS4/PS5 rodam uma variante modificada de FreeBSD (Orbis OS), e a Netflix usa FreeBSD principalmente em sua CDN própria (Open Connect), não em "toda a distribuição de conteúdo" como a fala sugere. Demais claims (datas de lançamento, criadores, exemplos de uso) são consistentes com conhecimento já registrado em [[wiki/concepts/kernel]] e não geraram contradição.
+
+---
+
+## [2026-07-20] ingest (reforço) | Cognitive Debt (Margaret-Anne Storey) — releitura completa
+
+**Fonte:** [[wiki/sources/cognitive-debt-margaret-storey]] — mesma URL já ingerida em 2026-07-16 (https://margaretstorey.com/blog/2026/02/09/cognitive-debt/). O usuário pediu para transformar o post em MD em `raw/` e ingerir novamente; ao buscar a página via WebFetch, o primeiro fetch retornou apenas um resumo (não o texto verbatim), então o HTML bruto foi baixado via `curl` e o artigo completo foi extraído e traduzido linha a linha para `raw/cognitive-debt.md`, substituindo a tradução anterior (que já estava truncada — faltavam os parágrafos sobre Fred Brooks, Kent Beck e o Future of Software Engineering Retreat). Nenhuma fonte nova foi criada porque o source page já existia; esta entrada documenta apenas o reforço de conteúdo.
+
+**Skill carregada:** `tech-mentor-leadership` (mesma da ingestão original) — diretório `/home/nemomartins/Documentos/new/skills/` continua ausente neste ambiente.
+
+**Páginas atualizadas:**
+- `raw/cognitive-debt.md` — tradução completa substituindo a versão truncada anterior
+- `wiki/sources/cognitive-debt-margaret-storey.md` — três novos Key Claims (Fred Brooks/coordenação de agentes, Kent Beck/*Tidy First?*, Martin Fowler/Future of Software Engineering Retreat); três novos backlinks em Entities & Concepts Touched; `date_updated` 2026-07-16 → 2026-07-20; tags acrescidas
+- `wiki/entities/fred-brooks.md` — nova seção "Coordenação e agentes de IA" ligando a Lei de Brooks a sobrecarga de coordenação com agentes de IA; `source_count` 2 → 3
+- `wiki/entities/kent-beck.md` — nova seção "'Make the hard change easy' — Tidy First?"; resolve a nota de verificação em aberto sobre a obra de origem da citação "invest in the design of the system every day" (provavelmente *Tidy First?*); `source_count` 4 → 5
+- `wiki/entities/martin-fowler.md` — nova seção "Future of Software Engineering Retreat"; `source_count` 5 → 6
+
+**Notas:** Nenhuma página em `wiki/index.md` precisou de nova linha — a fonte, os conceitos e as três entidades já estavam indexados desde 2026-07-16. Este ingest é um caso de fonte primária que, na primeira passada, foi processada a partir de um resumo do WebFetch em vez do texto completo — lição para futuras ingestões: preferir `curl` + leitura do HTML bruto quando o WebFetch retornar algo visivelmente mais curto que o esperado para o tamanho do artigo.
+
+---

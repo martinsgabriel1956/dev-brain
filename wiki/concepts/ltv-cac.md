@@ -3,8 +3,8 @@ type: concept
 title: "LTV e CAC"
 aliases: ["lifetime value", "custo de aquisição de cliente", "unit economics", "LTV/CAC"]
 date_created: 2026-07-09
-date_updated: 2026-07-09
-source_count: 1
+date_updated: 2026-07-20
+source_count: 2
 tags: [ltv, cac, growth, unit-economics, saas, retencao]
 skill: tech-mentor-leadership
 status: draft
@@ -30,6 +30,11 @@ Custo de aquisição não se resume a tráfego pago rastreável. Microinfluencia
 
 LTV está diretamente ligado a por que o usuário continua pagando. Um produto cuja funcionalidade-core tem uso recorrente (ex.: reuniões de trabalho contínuas) tende a ter LTV mais alto que um produto de uso pontual (ex.: uma ferramenta usada só durante a busca de um emprego) — ver [[wiki/concepts/produto-vendivel-desde-o-dia-zero]] para a discussão de como escolher essa funcionalidade-core.
 
+## Relevância para Arquitetura de Software
+
+[[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]] cita CAC e LTV (junto com churn e ROI) como conhecimento de negócio que um arquiteto de software precisa ter — não para calcular esses números, mas para entender o vocabulário e a motivação por trás de decisões técnicas que vêm do negócio (ex.: um aumento reportado de churn pode exigir investigação de performance/disponibilidade da arquitetura).
+
 ## Key Sources
 
 - [[wiki/sources/como-vender-um-saas-sem-audiencia]]
+- [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]]

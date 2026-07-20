@@ -3,8 +3,8 @@ type: concept
 title: "Contrato de API"
 aliases: ["API contract", "contrato de interface", "interface contract"]
 date_created: 2026-07-09
-date_updated: 2026-07-09
-source_count: 1
+date_updated: 2026-07-20
+source_count: 2
 tags: [api, contrato, backend, arquitetura, desacoplamento]
 skill: tech-mentor-backend
 status: stub
@@ -28,8 +28,10 @@ Enquanto o contrato não muda, o cliente continua funcionando. Um contrato bem f
 
 - [[wiki/concepts/requisicao-resposta]] — o contrato formaliza o formato dessas mensagens
 - [[wiki/concepts/validacao-de-entrada]] — o contrato define o que é uma entrada válida; a validação garante em runtime
+- [[wiki/concepts/entrevista-system-design]] — modelar endpoints, request/response e protocolo (HTTP vs. gRPC) é etapa avaliada em entrevista de arquitetura
 - Ver também tratamento mais aprofundado de versionamento e breaking changes em `references/api-versioning-lifecycle.md` (tech-mentor-backend)
 
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-backend]]
+- [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]

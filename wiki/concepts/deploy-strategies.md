@@ -3,8 +3,8 @@ type: concept
 title: "Deploy Strategies"
 aliases: ["estratégias de deploy", "deployment strategies"]
 date_created: 2026-04-22
-date_updated: 2026-07-09
-source_count: 2
+date_updated: 2026-07-20
+source_count: 3
 tags: [devops, deploy, cicd, infra, system-design]
 skill: tech-mentor-infra
 status: stable
@@ -54,3 +54,4 @@ Canary e Rolling têm v1 e v2 simultaneamente. DB schema e API **devem** suporta
 
 - [[sources/blue-green-canary-rolling]]
 - [[sources/tipos-de-deploy]]
+- [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]] — implementação prática de [[concepts/blue-green-deploy]] num host único, via [[wiki/concepts/reverse-proxy]] e scripts manuais

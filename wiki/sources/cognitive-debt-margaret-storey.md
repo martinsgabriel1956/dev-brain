@@ -3,13 +3,13 @@ type: source
 title: "Cognitive Debt (Margaret-Anne Storey, fonte primária)"
 aliases: ["cognitive debt storey", "dívida cognitiva storey", "teoria do programa naur", "theory of programs"]
 date_created: 2026-07-16
-date_updated: 2026-07-16
+date_updated: 2026-07-20
 source_file: /home/gabriel-martins/Documentos/dev-brain/raw/cognitive-debt.md
 source_url: "https://margaretstorey.com/blog/2026/02/09/cognitive-debt/"
 date_published: "2026-02-09"
 date_ingested: 2026-07-16
 source_count: 0
-tags: [divida-cognitiva, tech-debt, peter-naur, theory-of-programs, code-review, ia-agentica, liderança-tecnica]
+tags: [divida-cognitiva, tech-debt, peter-naur, theory-of-programs, code-review, ia-agentica, liderança-tecnica, fred-brooks, kent-beck, martin-fowler]
 skill: tech-mentor-leadership
 status: stable
 ---
@@ -44,6 +44,18 @@ Fonte primária que cunha "cognitive debt": dívida técnica mora no código, d�
 **Evidence:** A autora encerra o post afirmando explicitamente que o tema demanda investigação séria nessas três frentes, sem propor uma métrica validada.
 **Confidence:** alta — é uma afirmação da própria autora sobre o estado da pesquisa, não uma inferência externa.
 
+**Claim:** A dinâmica de dívida cognitiva ecoa a observação de Fred Brooks (*Mythical Man-Month*) de que adicionar mais agentes a um projeto aumenta sobrecarga de coordenação e decisões invisíveis — o mesmo mecanismo por trás da Lei de Brooks ("adicionar pessoas a um projeto atrasado o atrasa mais"), agora aplicado a agentes de IA em vez de humanos.
+**Evidence:** "Adding more agents to a project may add more coordination overhead, invisible decisions, and thus cognitive load." A autora reconhece que agentes também podem *reduzir* carga cognitiva (resumindo mudanças), mas as restrições de memória e capacidade humana continuam sendo esticadas pela pressão por velocidade.
+**Confidence:** alta
+
+**Claim:** Kent Beck's *Tidy First?* fornece o enquadramento de prevenção: a relutância em "tornar a mudança difícil, fácil" (fazer o tidying antes da mudança arriscada) é o que leva à dívida cognitiva.
+**Evidence:** "The reluctance to slow down and to do the work that Kent Beck calls 'make the hard change easy' is what will lead to cognitive debt and load in the future" — com link direto para [tidyfirst.substack.com/p/tidy-first-example](https://tidyfirst.substack.com/p/tidy-first-example). Isso resolve, a favor de *Tidy First?* (não *Extreme Programming Explained* ou material de XP genérico), a "Nota de verificação" em aberto em [[wiki/entities/kent-beck]] sobre a origem exata da citação "invest in the design of the system every day".
+**Confidence:** alta
+
+**Claim:** Martin Fowler e a Thoughtworks organizaram um "Future of Software Engineering Retreat" onde se discutiu que desenvolvedores precisam desacelerar e usar pair programming, refatoração e TDD para endereçar tanto dívida técnica quanto dívida cognitiva.
+**Evidence:** Referência a uma sessão (breakout session) nesse retreat, com link para martinfowler.com/fragments/2026-02-09.html e para a página do evento no site da Thoughtworks. A autora participou dessa sessão.
+**Confidence:** média — a fonte primária do retreat (o próprio fragment de Fowler) não foi lida nesta ingestão, apenas citada de segunda mão pelo post de Storey.
+
 ## Entities & Concepts Touched
 
 - [[wiki/concepts/divida-cognitiva]]
@@ -53,6 +65,9 @@ Fonte primária que cunha "cognitive debt": dívida técnica mora no código, d�
 - [[wiki/concepts/code-review]]
 - [[wiki/entities/margaret-storey]]
 - [[wiki/entities/peter-naur]]
+- [[wiki/entities/fred-brooks]]
+- [[wiki/entities/kent-beck]]
+- [[wiki/entities/martin-fowler]]
 
 ## Open Questions
 

@@ -3,9 +3,9 @@ type: concept
 title: "Arquitetura de Software"
 aliases: ["software architecture", "decisao arquitetural"]
 date_created: 2026-07-03
-date_updated: 2026-07-10
-source_count: 4
-tags: [arquitetura, carreira, fundamentos, ia]
+date_updated: 2026-07-20
+source_count: 6
+tags: [arquitetura, carreira, fundamentos, ia, pos-graduacao]
 skill: tech-mentor-leadership
 status: draft
 ---
@@ -46,9 +46,19 @@ Nenhum desses livros foi lido/ingerido diretamente ainda no wiki — são citaç
 
 [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] concretiza "decisões de estrutura que escalam bem vs. geram bola de neve" (frase de abertura desta página) com o conceito de Ousterhout: poucos módulos grandes com interface simples ([[wiki/concepts/modulo-profundo|módulos profundos]]) escalam; muitos módulos pequenos com interfaces complexas (módulos rasos) geram a bola de neve. Na era da IA isso ganha um segundo motivo para importar: agentes de IA navegam mal bases de código com módulos rasos, e produzem módulos rasos por padrão quando não há uma interface bem projetada guiando a implementação.
 
+## Virar Arquiteto: Formação Formal Não Ensina a Parte Prática
+
+[[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]] traz uma perspectiva de transição de carreira (programador → arquiteto) que complementa as seções acima: uma pós-graduação em arquitetura de software — independente da instituição, mesmo as mais renomadas — ensina teoria e conceito sobre os tópicos desta página (microsserviços, sistemas distribuídos, DDD, cloud), mas não prática, porque a grade cobre dezenas de tópicos com carga horária curta demais para laboratório real. As vantagens reais de cursar uma pós não são técnicas: [[wiki/concepts/networking-de-carreira]], acesso a vagas que formalmente exigem diploma ([[wiki/concepts/credencialismo-formacao-formal]]), e as matérias de negócio (churn, CAC, LTV) que ensinam a conectar decisão arquitetural a motivação real de negócio — ver [[wiki/concepts/dev-e-negocio]]. Isso reforça o ponto já registrado nesta página de que fundamentos técnicos (redes, concorrência, memória, HTTP) não vêm de credencial alguma — precisam ser construídos à parte, formação formal ou não.
+
+## Como isso é avaliado em entrevista
+
+[[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]] descreve como o repertório documentado nesta página é avaliado na prática: uma [[wiki/concepts/entrevista-system-design|entrevista de system design]] não recompensa quem desenha rápido, mas quem levanta requisitos, monta plano de capacidade e modela dados/API antes de desenhar — e pune quem cita tecnologia sem domínio real, ecoando o ponto desta página de que decisão arquitetural exige análise de contexto real, não um prompt ou uma resposta decorada.
+
 ## Key Sources
 
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]]
 - [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — fatores de contexto de negócio e organizacional que uma decisão arquitetural precisa considerar
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] — módulos profundos como unidade estrutural concreta
 - [[wiki/sources/filosofia-do-design-de-software-introducao]] — por que design (arquitetural ou não) é processo contínuo, não fase única
+- [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]] — pós-graduação em arquitetura ensina teoria, não prática; vantagens reais são networking, credencial e visão de negócio
+- [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]] — como o repertório de arquitetura é avaliado em entrevista de system design

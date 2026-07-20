@@ -3,8 +3,8 @@ type: concept
 title: "Dev e Negócio"
 aliases: ["desenvolvedor e negócio", "business awareness dev", "entender o negócio"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-20
+source_count: 2
 tags: [carreira, senioridade, negócio, receita, impacto, liderança]
 skill: tech-mentor-leadership
 status: stable
@@ -44,6 +44,11 @@ Ser sênior não é escala de profundidade técnica. É escala de **escopo de in
 - [[ownership-proativo]] — consequência natural de entender o negócio
 - [[extreme-ownership]] — princípios de responsabilidade alinhados
 
+## Aplicação a arquitetura de software
+
+[[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]] aplica esse conceito especificamente a arquitetos: as matérias de negócio/administração de uma pós-graduação (churn, [[wiki/concepts/ltv-cac|CAC/LTV]], ROI, margem) são citadas como o maior diferencial competitivo da grade, porque decisão arquitetural sem entendimento do motivo de negócio por trás dela é decisão no vácuo — exemplo dado: reagir a um aumento de churn reportado pelo CEO exige primeiro entender o que é churn antes de propor qualquer solução técnica (performance, disponibilidade, etc.).
+
 ## Key Sources
 
 - [[wiki/sources/desenvolvedor-acima-da-media-10-itens]]
+- [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]] — aplicação do conceito à decisão arquitetural especificamente

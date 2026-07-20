@@ -3,8 +3,8 @@ type: entity
 title: "Claude Code"
 aliases: ["claude code cli"]
 date_created: 2026-05-18
-date_updated: 2026-07-03
-source_count: 3
+date_updated: 2026-07-20
+source_count: 4
 tags: [ferramenta, agentes-ia, anthropic, llmops, cli, mcp, hooks]
 skill: tech-mentor-ai
 status: stable
@@ -68,6 +68,10 @@ Esc            → para a execução atual
 
 ---
 
+## Sandbox Nativo
+
+Desde outubro de 2025, o Claude Code tem sandbox próprio usando [[wiki/entities/bubblewrap]] no Linux e Sandbox-exec no Mac — o mesmo stack técnico usado pelo projeto independente [[wiki/concepts/agent-containment|AI Jail]]. Diferença apontada por [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]]: por padrão, quando um comando falha por restrição do sandbox, o próprio agente pode tentar de novo pulando a restrição (padrão de retry ativado por padrão de fábrica) — mecanismo de opt-out não verificado contra a documentação oficial nesta ingestão, mas que, se real, muda quem controla a saída da cela (o agente, não só o usuário). Ver [[wiki/concepts/defense-in-depth]] para a comparação completa com o AI Jail, que não tem esse opt-out.
+
 ## Relevância para Token Anxiety
 
 O mecanismo de [[context-compaction]] da janela de contexto do Claude Code é um dos principais catalisadores do fenômeno [[token-anxiety]]: desenvolvedores sentem urgência de maximizar o uso dos tokens disponíveis antes do reset, distorcendo rotinas e prioridades.
@@ -79,3 +83,4 @@ O mecanismo de [[context-compaction]] da janela de contexto do Claude Code é um
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
+- [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — sandbox nativo (Bubblewrap/Sandbox-exec) e comparação com o AI Jail

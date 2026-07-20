@@ -3,8 +3,8 @@ type: concept
 title: "Algoritmos e Estruturas de Dados"
 aliases: ["DSA", "data structures", "estruturas de dados", "algoritmos"]
 date_created: 2026-05-16
-date_updated: 2026-07-10
-source_count: 7
+date_updated: 2026-07-20
+source_count: 8
 tags: [fundamentos, cs-fundamentals, algoritmos, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -68,6 +68,10 @@ A pergunta que precede qualquer escolha de estrutura não é "qual estrutura é 
 
 A estrutura de dados é *como* os dados ficam guardados; o algoritmo é a sequência de passos executada sobre eles. Os dois andam juntos: às vezes a melhoria vem de mudar o algoritmo, às vezes vem de guardar os dados de outro jeito — e a estrutura certa costuma tornar o algoritmo necessário muito mais simples e direto (ex: buscar por e-mail numa lista exige testar item por item; com um índice por e-mail, o algoritmo vai direto à chave).
 
+## DSA em [[wiki/concepts/entrevista-tecnica-coding|entrevista técnica de coding]]
+
+O valor de DSA numa entrevista ao vivo não é só "resolver o problema" — é usar o vocabulário de estruturas e algoritmos para fazer as perguntas certas de esclarecimento antes de codar (ex.: perguntar se o input já está ordenado descarta algoritmos de ordenação do conjunto de opções). Entrevistadores tendem a evitar problemas prontos de plataformas de prática justamente para observar esse processo de raciocínio, não a resposta memorizada — ver [[wiki/concepts/reconhecimento-de-padroes]] sobre por que memorizar o padrão importa mais que memorizar o problema específico.
+
 ## Conceitos Individuais
 
 Cada estrutura tem sua própria página com complexidade, analogias e quando usar:
@@ -87,3 +91,4 @@ Cada estrutura tem sua própria página com complexidade, analogias e quando usa
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — matemática (complexidade, probabilidade, cache) como "gramática por baixo do que você constrói"; exemplo do laço dentro do laço que derruba o sistema com 1000 usuários
 - [[wiki/sources/9-algoritmos-que-todo-programador-deveria-saber]] — nove algoritmos concretos das três categorias citadas na sequência de aprendizado acima: ordenação, busca e grafo, com mecanismo, complexidade e caso de uso de cada um
 - [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]] — continuação direta de "estruturas de dados na prática"; framework de escolha por operação, distinção estrutura/algoritmo, e as quatro perguntas antes de escrever a solução
+- [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]] — DSA/Big O como ferramenta para saber que perguntas fazer numa entrevista técnica, pela perspectiva de um ex-entrevistador

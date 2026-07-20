@@ -3,8 +3,8 @@ type: concept
 title: "Harness"
 aliases: ["AI harness", "harness de IA", "coding harness"]
 date_created: 2026-06-02
-date_updated: 2026-07-10
-source_count: 7
+date_updated: 2026-07-20
+source_count: 8
 tags: [harness, llm, tool-call, agente, context-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -27,6 +27,8 @@ Um LLM isolado só consegue operar dentro do seu treinamento — não lê arquiv
 ## Quem Executa as Tools?
 
 **A LLM apenas orquestra. O harness executa.** Quando o modelo pede "liste os arquivos do diretório", é o processo local do harness que roda o `ls` e devolve o resultado ao contexto. Isso significa que tools maliciosas numa skill ou MCP não verificado rodam na máquina do usuário, não nos servidores do provider.
+
+Esse mesmo fato é o que justifica isolar o processo do harness do restante do sistema — ver [[wiki/concepts/agent-containment]]. Se o harness roda `npm install` e a dependência instalada foi comprometida por um ataque de [[wiki/concepts/supply-chain-security|supply chain]], o código malicioso herda os privilégios do processo do harness na máquina real do usuário — não um sandbox do provedor.
 
 ## Ciclo de Uso
 
@@ -87,3 +89,4 @@ Depois de harness engineering (melhorar o ambiente ao redor do modelo), o degrau
 - [[wiki/sources/formacao-ia-devs-aula-01-context-harness-engineering]]
 - [[wiki/sources/product-engineer-vale-do-silicio-2026]]
 - [[wiki/sources/loop-engineering-planner-critic-grafo]] — propõe loop engineering como degrau seguinte a harness engineering
+- [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — execução local de tool calls como o risco que motiva contenção/sandboxing do processo do harness
