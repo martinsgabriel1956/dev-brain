@@ -3,8 +3,8 @@ type: concept
 title: "TDD — Test-Driven Development"
 aliases: ["test driven development", "red green refactor", "desenvolvimento guiado por testes"]
 date_created: 2026-04-22
-date_updated: 2026-07-10
-source_count: 6
+date_updated: 2026-07-19
+source_count: 7
 tags: [testes, tdd, design, red-green-refactor, qualidade, dora]
 skill: tech-mentor-testing
 status: stable
@@ -51,6 +51,10 @@ Começa pelas unidades internas do domínio. Usa objetos reais, mocka apenas I/O
 Começa pelo comportamento externo. Mocka todos os colaboradores ainda não existentes — o design emerge das interfaces que o teste exige. Risco: mocks podem mascarar integração quebrada.
 
 Essas duas escolas mapeiam quase diretamente para a distinção de Fowler entre [[unit-test-solitario-vs-sociavel|unit test solitário (London) e sociável (Detroit)]].
+
+## Origem: do framework caseiro em Smalltalk ao JUnit
+
+Antes do TDD ser formalizado, [[wiki/entities/kent-beck]] já construía frameworks de teste caseiros em Smalltalk para rodar testes rapidamente dentro do ciclo de edição — usados no projeto [[wiki/entities/c3-project|C3]], o "projeto de nascimento" da Extreme Programming. Em 1997, Beck e Erich Gamma ([[wiki/entities/gang-of-four|Gang of Four]]) criaram o [[wiki/entities/junit]] num voo para a OOPSLA — o framework que, segundo [[wiki/entities/martin-fowler]], foi essencial para sustentar o crescimento de XP e TDD na indústria, ao ser simples o suficiente para encorajar adoção em massa. Ver [[wiki/sources/xunit-martin-fowler]].
 
 ## Quando usar / evitar
 
@@ -106,3 +110,4 @@ Cobertura alta prova que uma linha foi executada, não que ela foi exercitada co
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
 - [[wiki/sources/como-evitar-over-engineering-david-farley]]
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — cobertura alta ≠ ausência de bugs
+- [[wiki/sources/xunit-martin-fowler]] — origem histórica do JUnit e da família Xunit

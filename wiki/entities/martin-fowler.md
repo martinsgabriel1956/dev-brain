@@ -3,8 +3,8 @@ type: entity
 title: "Martin Fowler"
 aliases: ["Fowler", "martinfowler.com"]
 date_created: 2026-07-07
-date_updated: 2026-07-15
-source_count: 3
+date_updated: 2026-07-19
+source_count: 5
 tags: [thoughtworks, autor, testes, arquitetura, tech-debt, refactoring, agile]
 skill: tech-mentor-testing
 status: stable
@@ -30,7 +30,13 @@ Fowler é conhecido por identificar quando um termo popular carrega significados
 - [[tolerant-reader]] / [[wiki/sources/tolerant-reader]] — robustez de consumers em schema evolution
 - Repository e Active Record (via *PoEAA*) — ver [[design-patterns]]
 - Feature Toggles — ver [[wiki/sources/feature-flags]]
-- [[contract-testing]] e [[test-doubles]] — terminologia (`TestDouble`, `ContractTest`) usada de forma consistente entre suas fontes
+- [[contract-testing]] — terminologia (`ContractTest`) usada de forma consistente entre suas fontes
+- [[test-doubles]] — divulgou o termo guarda-chuva "TestDouble" no bliki em 2006, mas a taxonomia dos cinco tipos (Dummy/Fake/Stub/Spy/Mock) é de autoria de [[wiki/entities/gerard-meszaros]], não dele — ver [[wiki/sources/test-double-martin-fowler]]
+- [[wiki/concepts/seedwork]] — termo cunhado por ele para descrever frameworks mínimos reconstruídos por cada time, a partir de discussão originada num post de Michael Feathers
+
+## Testemunha e participante da origem do JUnit
+
+Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter usado o framework de testes caseiro de [[wiki/entities/kent-beck]] no projeto [[wiki/entities/c3-project|C3]] (origem da Extreme Programming), e ter sido um dos primeiros usuários alfa do [[wiki/entities/junit]] — chegando a enviar contribuições de volta para Beck e Erich Gamma logo após sua criação em 1997.
 
 ## Anedota (não verificada): origem do ágil e projeto atrasado na Thoughtworks
 
@@ -45,5 +51,7 @@ Fowler é conhecido por identificar quando um termo popular carrega significados
 ## Key Sources
 
 - [[wiki/sources/integration-test-martin-fowler]]
+- [[wiki/sources/test-double-martin-fowler]]
+- [[wiki/sources/xunit-martin-fowler]]
 - [[wiki/sources/como-evitar-over-engineering-david-farley]]
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]]

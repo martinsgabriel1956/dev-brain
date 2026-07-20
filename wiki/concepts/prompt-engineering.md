@@ -3,8 +3,8 @@ type: concept
 title: "Prompt Engineering"
 aliases: ["engenharia de prompt", "prompt design"]
 date_created: 2026-05-17
-date_updated: 2026-07-09
-source_count: 3
+date_updated: 2026-07-19
+source_count: 4
 tags: [prompt-engineering, llm, few-shot, codex, software-3]
 skill: tech-mentor-ai
 status: stable
@@ -76,9 +76,14 @@ Não há estrutura obrigatória — os modelos são flexíveis. Itere e meça.
 
 O Prompt Guidance da OpenAI recomenda Markdown estruturado (papel/objetivo + instrução), consistente com o padrão Tell/Show/Describe/Remind acima. Mas não há formato universalmente ótimo: a formatação ideal varia por modelo (a própria OpenAI mantém uma ferramenta para otimizar prompts por modelo específico), e modelos mais antigos de chain-of-thought historicamente performavam melhor com tags estruturais (estilo XML) do que com Markdown puro ou HTML. Ver [[wiki/concepts/html-vs-markdown-formato-de-saida-agentes]] para o debate equivalente aplicado ao *output* de um agente (não ao prompt de entrada).
 
+## "Tell It" Fora de Contexto de Código
+
+[[wiki/sources/sistema-produtividade-ia-adapta]] aplica o padrão Tell It a um domínio não técnico: prompts de planejamento pessoal que declaram explicitamente formato de saída esperado (divisão por dia, foco do dia, ordem de execução, período sugerido) e critérios de organização (energia, prioridade, carga mental) — mesma lógica de "declarar restrições e formato antes da instrução" usada em prompts de codificação, mostrando que o padrão não é específico de tarefas técnicas.
+
 ## Fontes
 
 - [[wiki/sources/microsoft-prompt-engineering-guide]]
 - [[wiki/sources/gpt3-language-models-are-few-shot-learners]]
 - [[wiki/sources/chain-of-thought-prompting]] — evidência empírica de que CoT (few-shot com passos intermediários) é a técnica mais eficaz para raciocínio multi-etapas
 - [[wiki/sources/html-vs-markdown-para-agentes-de-ia]] — contraste entre a recomendação de Markdown da OpenAI e o uso de tags/HTML em fluxos de produção reais
+- [[wiki/sources/sistema-produtividade-ia-adapta]] — padrão Tell It aplicado a prompts de planejamento pessoal, fora de contexto de codificação

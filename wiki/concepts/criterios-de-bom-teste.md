@@ -3,8 +3,8 @@ type: concept
 title: "Critérios de Bom Teste"
 aliases: ["determinístico conciso relevante", "o que faz um teste bom", "qualidade de testes"]
 date_created: 2026-07-10
-date_updated: 2026-07-10
-source_count: 1
+date_updated: 2026-07-19
+source_count: 2
 tags: [testes, qualidade, flaky, relevância, craftsmanship]
 skill: tech-mentor-testing
 status: stable
@@ -47,3 +47,4 @@ Na prática, relevância tende a importar mais que concisão — um teste leveme
 ## Key Sources
 
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]]
+- [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] — KISS aplicado a testes: remover testes de baixo valor em favor de uma suíte focada no coração do problema

@@ -3,8 +3,8 @@ type: concept
 title: "Over-Engineering"
 aliases: ["overengineering", "verde neném", "engenharia excessiva", "gold plating"]
 date_created: 2026-06-09
-date_updated: 2026-07-09
-source_count: 2
+date_updated: 2026-07-19
+source_count: 4
 tags: [design, qualidade, anti-pattern, aprendizado, design-patterns, dora, under-engineering]
 skill: tech-mentor-leadership
 status: stable
@@ -21,6 +21,8 @@ No contexto de aprendizado, a forma mais comum é o **"verde neném"**: alguém 
 ## O maior problema da indústria não é over-engineering — é under-engineering
 
 Antes de tratar dos cuidados contra over-engineering, vale registrar a proporção: segundo observação de David Farley e consenso informal coletado entre desenvolvedores, o problema mais comum na indústria de software é o oposto — falta de engenharia, não excesso. Over-engineering é real e merece atenção, mas não é a causa mais frequente de sistemas ruins. Ver [[wiki/sources/como-evitar-over-engineering-david-farley]].
+
+Essa mesma tese aparece de forma independente em [[wiki/sources/underengineering-overengineering-mario-souto]] (Mário Souto), que descreve a versão detalhada do problema oposto em [[wiki/concepts/under-engineering]] — com sintomas concretos (acoplamento, hardcode, ausência de CI) e antídotos práticos que não exigem nenhuma técnica de over-engineering para serem resolvidos.
 
 ## Por Que Acontece
 
@@ -85,6 +87,7 @@ A progressão que evita isso:
 - [[walking-skeleton]] — técnica concreta para evitar over-engineering por falta de confiança
 - [[dora-metrics]] — evidência empírica de que a disciplina que evita over-engineering também melhora velocidade de entrega
 - [[kiss]] — princípio irmão, mesma disciplina de suprimir complexidade desnecessária
+- [[wiki/concepts/under-engineering]] — extremo oposto; ambos derivados do mesmo card de sintomas em [[wiki/sources/underengineering-overengineering-mario-souto]]
 
 ---
 
@@ -92,3 +95,5 @@ A progressão que evita isso:
 
 - [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]]
 - [[wiki/sources/como-evitar-over-engineering-david-farley]]
+- [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] — KISS e YAGNI apresentados como os dois princípios que atacam diretamente o dilema velocidade vs. qualidade, o mesmo dilema que over-engineering resolve mal
+- [[wiki/sources/underengineering-overengineering-mario-souto]] — segunda fonte, independente de David Farley, chegando à mesma conclusão de que under-engineering é o problema mais comum; origem da página [[wiki/concepts/under-engineering]]

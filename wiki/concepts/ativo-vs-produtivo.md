@@ -3,8 +3,8 @@ type: concept
 title: "Ativo vs. Produtivo"
 aliases: ["ser ativo não é ser produtivo", "atividade como procrastinação", "produtividade falsa"]
 date_created: 2026-07-04
-date_updated: 2026-07-04
-source_count: 1
+date_updated: 2026-07-20
+source_count: 3
 tags: [produtividade, carreira, habitos, procrastinacao]
 skill: tech-mentor-leadership
 status: draft
@@ -32,6 +32,16 @@ Dias em que se faz "um monte de coisa" mas termina-se insatisfeito ou com a sens
 - [[wiki/concepts/tecnica-do-ataque-cardiaco]] — técnica prática para identificar o que é realmente produtivo antes de despejar tempo em atividade
 - [[wiki/concepts/burnout-dev]] — o ciclo de estar sempre ocupado sem sensação de progresso real é caminho para o esgotamento
 
+## Sistema como Antídoto Estrutural
+
+[[wiki/sources/sistema-produtividade-ia-adapta]] chega à mesma distinção por um ângulo mais operacional: a autora descreve a sensação de "trabalhar muito mas não avançar" e atribui isso à falta de um sistema (planejamento → priorização → execução), não à falta de esforço — formulação equivalente a "estar ativo sem estar produtivo", mas com a receita prática (dump mental, matriz de priorização, tarefa única do dia) em vez do diagnóstico isolado. Ver [[wiki/concepts/dump-mental]] e [[wiki/concepts/matriz-de-eisenhower]].
+
+## Ceder a Gatilho Interno como Atividade Disfarçada
+
+[[wiki/sources/indistraivel-nir-eyal-mano-deivin]] descreve um mecanismo concreto de como o padrão "ativo, mas não produtivo" acontece minuto a minuto: um [[wiki/concepts/gatilho-interno-vs-externo|gatilho interno]] (uma lembrança que surge no meio de uma tarefa) dispara uma cadeia de ações que, cada uma isoladamente, parece legítima — mas que no total substitui a tarefa original por horas de atividade não planejada. A diferença para o diagnóstico já registrado nesta página é o nível de granularidade: em vez de um padrão observado ao longo do dia, é o mecanismo momento a momento pelo qual esse padrão se instala.
+
 ## Key Sources
 
 - [[wiki/sources/produtividade-falsa-vs-verdadeira]]
+- [[wiki/sources/sistema-produtividade-ia-adapta]]
+- [[wiki/sources/indistraivel-nir-eyal-mano-deivin]]

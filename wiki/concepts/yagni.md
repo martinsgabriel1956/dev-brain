@@ -3,8 +3,8 @@ type: concept
 title: "YAGNI — You Ain't Gonna Need It"
 aliases: ["yagni", "you ain't gonna need it", "não vou precisar disso"]
 date_created: 2026-04-23
-date_updated: 2026-07-09
-source_count: 4
+date_updated: 2026-07-19
+source_count: 6
 tags: [arquitetura, principios, pragmatismo, over-engineering, xp]
 skill: tech-mentor-backend
 status: stable
@@ -34,11 +34,25 @@ A abstração é justificada quando a dor é real:
 - Tem um segundo caso de uso real agora? Se sim → extrai (após o segundo caso, nunca antes)
 - O contrato de um serviço externo vai poluir seu domínio? → Anticorruption Layer
 
+## Benefícios
+
+- **Foco no que realmente importa** — o tempo economizado em features especulativas vai para o que é essencial à entrega atual.
+- **Entregas mais rápidas** — menos código para escrever, revisar e testar antes de considerar a feature pronta.
+- **Menos complexidade** — a base de código tem funcionalidades específicas para o que se propõe a resolver; quem lê o código consegue identificar exatamente o que existe implementado, sem precisar distinguir "o que é usado" de "o que foi implementado por precaução".
+
+## Nota de atribuição bibliográfica
+
+[[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] atribui o livro que apresenta o YAGNI a "Ronald Jeffries" — provável imprecisão. O livro fundador é *Extreme Programming Explained* (1999), de [[wiki/entities/kent-beck]]. Ron Jeffries é cocriador da Extreme Programming junto com Beck no [[wiki/entities/c3-project|projeto C3]] e autor de obras próprias sobre XP, mas não do livro citado nessa fonte.
+
 ## Relação com Outros Princípios
 
 YAGNI não contradiz DDD ou Clean Architecture — ele questiona a *implementação ritualística*. Os princípios estratégicos (bounded context, separação de domínio e infra) continuam válidos. O que YAGNI questiona é: interface para cada repositório com uma única implementação, use case para cada operação CRUD, mappers em todas as direções.
 
 Ver também [[wiki/concepts/fazer-a-coisa-mais-simples-que-poderia-funcionar]] — mesmo espírito de XP/Kent Beck aplicado a um eixo diferente: YAGNI questiona *o que construir agora*, o outro questiona *quão complexa deve ser a solução do problema atual*.
+
+## Ignorar YAGNI como sinal de over-engineering, na prática
+
+[[wiki/sources/underengineering-overengineering-mario-souto]] lista "ignorar YAGNI" entre os sinais de [[wiki/concepts/over-engineering]] discutidos a partir de um card/tweet, ao lado de microsserviços prematuros e otimização prematura — reforçando o vínculo já registrado nesta página entre violar YAGNI e over-engineering. A mesma fonte dá um exemplo do lado oposto do mesmo princípio: construir a própria lib de formulário do zero em vez de usar React Hook Form ou Formik não é exatamente "abstração especulativa" no sentido clássico de YAGNI, mas é a mesma disciplina aplicada a infraestrutura — "você não vai precisar construir isso, alguém já construiu e mantém."
 
 ## Key Sources
 
@@ -46,3 +60,5 @@ Ver também [[wiki/concepts/fazer-a-coisa-mais-simples-que-poderia-funcionar]] �
 - [[sources/super-productivity-ai-architecture-guide]]
 - [[sources/addy-osmani-80-problem-agentic-coding]]
 - [[wiki/sources/5-principios-que-mudaram-como-programador]]
+- [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] — exemplo de repositório com métodos CRUD implementados por precaução; benefícios de foco, velocidade e menor complexidade
+- [[wiki/sources/underengineering-overengineering-mario-souto]] — "ignorar YAGNI" listado como sinal de over-engineering; exemplo de usar React Hook Form/Formik em vez de construir gerenciamento de formulário do zero

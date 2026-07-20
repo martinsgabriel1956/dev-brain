@@ -3,9 +3,9 @@ type: concept
 title: "Skills (Padrão de Harness)"
 aliases: ["skills harness", "agents skills", "skill pattern ia", "skills.sh"]
 date_created: 2026-06-02
-date_updated: 2026-07-16
-source_count: 4
-tags: [skills, harness, context-engineering, lazy-loading, system-prompt, grill-me, rfc]
+date_updated: 2026-07-19
+source_count: 6
+tags: [skills, harness, context-engineering, lazy-loading, system-prompt, grill-me, rfc, babysitting-de-agentes, produto-de-consumo]
 skill: tech-mentor-ai
 status: stable
 ---
@@ -98,6 +98,14 @@ Formato de arquivo quase idêntico (front-matter + corpo Markdown), mas propósi
 
 A mesma fonte descreve a skill **Grill Me**, de [[wiki/entities/matt-pocock]]: um arquivo `.md` com instrução para a IA "entrevistar incansavelmente" o usuário sobre um plano ou design até alcançar entendimento compartilhado, resolvendo cada ramo da árvore de decisão. O autor do vídeo adaptou o prompt para focar em decisões de implementação relevantes ao domínio (cada `if`/cláusula de regra de negócio relevante vira uma pergunta), invertendo o fluxo usual de revisão: em vez do dev ler linha a linha o código gerado, é a IA que questiona o dev até garantir que ele entendeu o que foi construído. Ver também [[wiki/concepts/vibe-coding]] e [[wiki/concepts/rfc-request-for-comments]] para o contexto mais amplo de perda de janela de revisão incremental que motiva essa skill.
 
+## Caso: Skill de Babysit — o Agente Monitora o Próprio Pull Request
+
+[[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] recomenda encapsular numa skill dedicada e customizável o fluxo de **babysitting** de PR: depois de abrir o pull request, o agente entra em loop verificando se o CI está verde, se revisores deixaram comentários, endereçando-os e resolvendo as conversas no GitHub — sem precisar reexplicar esse comportamento a cada tarefa nova. É um exemplo do uso "como processo" já descrito acima (workflow completo empacotado), aplicado especificamente ao ciclo de vida de um PR depois que o código já foi gerado, complementando skills de geração de código com uma skill de acompanhamento pós-criação.
+
+## Caso: Skill como Contexto Pessoal Persistente em Produto de Consumo
+
+[[wiki/sources/sistema-produtividade-ia-adapta]] mostra um uso de skills fora de contexto de codificação: a plataforma [[wiki/entities/adapta]] deixa o usuário configurar skills com contexto de rotina pessoal (tipo de trabalho, horário fixo de expediente, hábitos recorrentes) e um "assistente de rotina" com forma de pensar e prioridades próprias, usado depois para planejamento semanal e apoio a decisões de carreira. A lógica é a mesma do uso "como guardrail contextual" já documentado acima (contexto que não precisa ser reexplicado a cada prompt), só que aplicada a produtividade pessoal em vez de padrões de código — evidência de que o padrão skill (front-matter leve + corpo carregado sob demanda) se generalizou para além de harnesses de desenvolvimento.
+
 ## Aviso de Segurança
 
 Skills podem conter scripts executáveis. **Skills de terceiros não verificadas podem conter código malicioso** (roubar `.env`, etc.). Verificar antes de instalar.
@@ -108,3 +116,5 @@ Skills podem conter scripts executáveis. **Skills de terceiros não verificadas
 - [[wiki/sources/formacao-ia-devs-aula-02-rules]]
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — skill Grill Me (Matt Pocock) e workforce multiagente com skills curtas (<70 linhas) por papel
+- [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — skill de babysit para o agente monitorar e endereçar comentários no próprio PR até poder mergear
+- [[wiki/sources/sistema-produtividade-ia-adapta]] — skill como contexto pessoal persistente (rotina, prioridades) em produto de consumo, fora de contexto de codificação

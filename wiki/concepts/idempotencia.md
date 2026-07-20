@@ -3,8 +3,8 @@ type: concept
 title: "Idempotência"
 aliases: ["idempotência", "idempotency", "idempotency key"]
 date_created: 2026-04-22
-date_updated: 2026-07-09
-source_count: 3
+date_updated: 2026-07-19
+source_count: 4
 tags: [distribuidos, resiliencia, api, retry, mensageria, double-spend, double-submit]
 skill: tech-mentor-system-design
 status: stable
@@ -87,3 +87,4 @@ Camadas complementares, cada uma cobrindo um ângulo diferente do problema:
 - [[wiki/sources/acoplamento-abstracao-estado]]
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — idempotência como resposta ao webhook duplicado; errar at-least-once vs. exactly-once cobra o cliente em dobro ou perde o pedido
 - [[wiki/sources/double-spend-double-submit]] — double spend/double submit como o mesmo problema; chave de idempotência gerada no servidor via hash dos campos (mais robusta que chave enviada pelo cliente); janela de tempo de duplicidade como decisão de negócio
+- [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] — exemplo de [[wiki/concepts/kiss]] aplicado a uma checagem de status habilitados para reprocessamento (adjacente ao padrão de Idempotency Key, não idêntico)

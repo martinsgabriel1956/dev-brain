@@ -3,9 +3,9 @@ type: concept
 title: "Pipeline de Qualidade"
 aliases: ["quality pipeline", "pipeline de código", "ci quality gates"]
 date_created: 2026-05-31
-date_updated: 2026-07-09
-source_count: 2
-tags: [pipeline-de-qualidade, harness, qualidade, ci-cd, testes, segurança, era-agentica]
+date_updated: 2026-07-19
+source_count: 5
+tags: [pipeline-de-qualidade, harness, qualidade, ci-cd, testes, segurança, era-agentica, ratchet, npm-audit, under-engineering]
 skill: tech-mentor-backend
 status: stable
 ---
@@ -81,8 +81,19 @@ Hoje é mais fácil do que nunca criar o ferramental completo:
 
 Um quality gate não precisa se limitar a lint/tipagem/segurança de código — pode validar a qualidade de um *modelo de ML* embarcado no produto. Exemplo real: um app de transcrição por voz (Persua) mantém dois áudios de referência (um gravado por humano, um gerado por IA) a partir do mesmo texto-alvo. Todo PR aciona um workflow de CI que roda os modelos Whisper locais do projeto contra esses áudios, compara a transcrição gerada com o texto-alvo, calcula uma nota de qualidade e **falha o teste (bloqueando o merge) se a nota cair abaixo de um baseline definido**. Combinado com um segundo gate de qualidade de código (lint, duplicação, complexidade ciclomática), esse padrão permitiu ao autor delegar uma tarefa inteira a um agente — inclusive deixá-lo rodar sem supervisão por horas — com confiança de que nem dívida técnica nem regressão de qualidade do modelo passariam despercebidas.
 
+## Exemplo Concreto — Pipeline com Ratchet de Baseline (npm audit em Dois Níveis)
+
+[[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] documenta um pipeline real, camada por camada: `npm ci` (instalação determinística) → `npm audit --audit-level critical` (bloqueia o merge) → `npm audit --audit-level high` (só avisa, não bloqueia — separar os dois níveis evita que uma vulnerabilidade de severidade média trave todo PR) → lint → testes com coverage (Jest) → um script de quality gate dedicado, que coleta métricas atuais (incluindo duplicação de código via `jscpd`) e as compara contra uma baseline congelada (ver [[wiki/concepts/ratchet-baseline]]). O diferencial em relação à descrição genérica desta página: os artefatos de coverage e relatórios são enviados como **upload de CI**, não apenas comentados no PR, especificamente para que o próprio agente de IA tenha acesso a eles durante o [[wiki/concepts/quality-gate|babysitting]] do pull request.
+
+## Exemplo Mínimo — Pipeline de ~31 Linhas Como Piso Aceitável
+
+[[wiki/sources/underengineering-overengineering-mario-souto]] descreve o outro extremo da escala em relação aos exemplos elaborados já documentados acima (ratchet, quality gate de modelo de ML): um pipeline de apenas dois workflows de GitHub Actions — lint e teste automatizado, cerca de 31 linhas de YAML no total — configurado como *required status check* via regra de proteção de branch (branch protection rule exigindo pull request + status checks aprovados antes do merge). O autor trata esse setup mínimo como o "caminho mínimo" que evita [[wiki/concepts/under-engineering]] sem exigir nenhuma das camadas mais sofisticadas da pipeline completa (mutação, complexidade ciclomática, SAST) — reforçando que "pipeline de qualidade" não é binário entre "nada" e "todas as sete camadas": mesmo duas camadas, obrigatórias via CI, já mudam o comportamento de um projeto pequeno.
+
 ## Key Sources
 
 - [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
 - [[wiki/sources/html-vs-markdown-para-agentes-de-ia]] — exemplo concreto de quality gate para qualidade de transcrição (Whisper local), não apenas para qualidade de código
+- [[wiki/sources/gate-de-qualidade-definicoes-formais]] — fundamentação teórica: cada camada desta pipeline é um [[wiki/concepts/quality-gate|quality gate]] no sentido formal (critérios de entrada/saída, resultado binário, disparo por critério não por data)
+- [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — pipeline concreto com npm audit em dois níveis de severidade, jscpd para duplicação, e artefatos de CI expostos para o próprio agente de IA consumir durante o babysitting do PR
+- [[wiki/sources/underengineering-overengineering-mario-souto]] — pipeline mínimo de ~31 linhas (lint + teste) como piso aceitável contra under-engineering, sem exigir as camadas mais sofisticadas

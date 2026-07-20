@@ -3,8 +3,8 @@ type: concept
 title: "Vibe Coding"
 aliases: ["vibe coding", "vibe-coding", "coding por vibração", "agentic coding", "orquestração de agentes"]
 date_created: 2026-04-23
-date_updated: 2026-07-16
-source_count: 6
+date_updated: 2026-07-19
+source_count: 7
 tags: [vibe-coding, agentes-ia, produtividade, divida-cognitiva, ai-brainfry, paralelismo-cognitivo]
 skill: tech-mentor-ai
 status: stable
@@ -81,6 +81,10 @@ O uso saudável da IA por um arquiteto é para brainstorm, alternativas e explic
 
 **RFC como fonte da verdade + skill "Grill Me" invertendo quem revisa quem** — [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] documenta uma mitigação de duas pernas: (1) [[wiki/concepts/rfc-request-for-comments|RFC]] escrita antes de codar, como norte que evita que a IA viole arquitetura; (2) a skill **Grill Me** ([[wiki/entities/matt-pocock]]), que faz a IA entrevistar o dev sobre decisões de implementação até entendimento mútuo — em vez do dev ler linha a linha o código gerado, é a IA que audita o entendimento do dev. É uma resposta direta ao mesmo sintoma já documentado nesta página ("a gente para de revisar código gerado pela IA, depois para até de revisar as próprias regras do sistema") quando os agentes passaram a rodar por mais tempo com harness próprio, sem deixar janela de revisão incremental.
 
+## Ratchet de Baseline como Mitigação Mecânica (Não Depende de Disciplina)
+
+[[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] documenta uma mitigação de natureza diferente das duas anteriores (RFC e Grill Me, que dependem de disciplina humana de planejar/entender): o padrão [[wiki/concepts/ratchet-baseline]], que bloqueia mecanicamente, via CI, qualquer PR que piore métricas de qualidade em relação a uma baseline congelada. A vantagem declarada pelo autor é que isso permite deixar a IA escrever ~100% do código gerado por múltiplos agentes em paralelo sem depender de o dev revisar linha a linha — o controle de qualidade vira parte do pipeline, não do julgamento de quem está no flow do vibe coding.
+
 ## Relação com outros conceitos
 
 - [[concepts/divida-cognitiva]] — vibe coding é o principal vetor de acúmulo de dívida cognitiva
@@ -124,3 +128,4 @@ Citado como exemplo de hype tecnológico em formação (junto com MCP) no moment
 - [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]] — citado como exemplo de hype em formação, no momento do vídeo
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] — "specs to code" como vibe coding disfarçado
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — RFC + skill Grill Me como mitigação prática à perda de janela de revisão incremental
+- [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — ratchet de baseline como mitigação mecânica via CI, alternativa/complemento à disciplina de RFC e Grill Me

@@ -3,9 +3,9 @@ type: entity
 title: "Gang of Four (GoF)"
 aliases: ["GoF", "gang of four"]
 date_created: 2026-05-01
-date_updated: 2026-05-01
-source_count: 1
-tags: [design-patterns, books, oop]
+date_updated: 2026-07-19
+source_count: 2
+tags: [design-patterns, books, oop, junit, testes]
 skill: tech-mentor-backend
 status: stable
 ---
@@ -13,6 +13,10 @@ status: stable
 ## Quem são
 
 Erich Gamma, Richard Helm, Ralph Johnson e John Vlissides — os quatro autores do livro *Design Patterns: Elements of Reusable Object-Oriented Software* (1994), considerado o catálogo oficial dos 23 padrões de projeto clássicos.
+
+## Erich Gamma também é coautor do JUnit
+
+Além do *Design Patterns*, Erich Gamma programou em par com [[wiki/entities/kent-beck]] a primeira versão do [[wiki/entities/junit]], num voo de Zurique para a OOPSLA 1997 — feita test-first. JUnit se tornou o membro fundador da família de frameworks de teste "Xunit". Ver [[wiki/sources/xunit-martin-fowler]].
 
 ## Categorias do Catálogo
 
@@ -23,3 +27,4 @@ Erich Gamma, Richard Helm, Ralph Johnson e John Vlissides — os quatro autores 
 ## Key Sources
 
 - [[wiki/sources/design-pattern-proxy]]
+- [[wiki/sources/xunit-martin-fowler]] — Erich Gamma, coautor do JUnit

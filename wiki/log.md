@@ -2,6 +2,145 @@
 
 ---
 
+## [2026-07-19] ingest | Under-Engineering vs Over-Engineering — Mário Souto (DevSoutinho)
+
+**Fonte:** [[wiki/sources/underengineering-overengineering-mario-souto]] — transcrição de vídeo do YouTube em português (sem necessidade de tradução), limpa e organizada em seções a partir de um dump de transcrição automática sem pontuação, fornecido pelo usuário. Salva em `raw/underengineering-overengineering-mario-souto.md`.
+
+**Skill carregada:** `tech-mentor-leadership` — referências consultadas: `references/code-review-culture.md` e `references/tech-debt-management.md` (o vídeo mistura sinais de design/arquitetura com cultura de review, CI e débito técnico, todos mapeados nesta skill).
+
+**Páginas criadas:**
+- `wiki/sources/underengineering-overengineering-mario-souto.md`
+- `wiki/entities/mario-souto.md` — autor identificado via **[external]** busca na web (Staff Software Engineer, GDE, GitHub Star, MS MVP, canal DevSoutinho); nome do canal ouvido na transcrição como "canal da Absolut", corrigido na wiki para a hipótese mais provável ("canal do Soutinho"), com a correção registrada como nota de transcrição e não aplicada ao `raw/`
+- `wiki/concepts/under-engineering.md` — novo conceito: fazer menos do que o projeto exige (acoplamento, hardcode, ausência de CI, copy-paste sem estrutura), contraponto de [[wiki/concepts/over-engineering]] e, segundo duas fontes independentes na wiki, o problema mais comum na prática
+
+**Páginas atualizadas:**
+- `wiki/concepts/over-engineering.md` — nova seção citando esta fonte como segunda corroboração independente (além de David Farley) de que under-engineering é mais comum; link para o novo conceito; `source_count` 3 → 4
+- `wiki/concepts/yagni.md` — nova seção "Ignorar YAGNI como sinal de over-engineering, na prática", ligando o exemplo de React Hook Form/Formik ao espírito de YAGNI aplicado a infraestrutura; `source_count` 5 → 6
+- `wiki/concepts/acoplamento.md` — nova seção com o exemplo de login/criação de conta acoplados no mesmo arquivo, tratado como under-engineering; `source_count` 2 → 3
+- `wiki/concepts/code-review.md` — nova seção "Tipos genéricos como item recorrente de review" (`any` e primitivos vs. enum); `source_count` 5 → 6
+- `wiki/concepts/pipeline-de-qualidade.md` — nova seção "Exemplo Mínimo — Pipeline de ~31 Linhas Como Piso Aceitável"; `source_count` 4 → 5
+- `wiki/concepts/quality-gate.md` — nova seção "Branch Protection como Mecanismo de Enforcement" (required status checks como o que de fato torna um check em gate bloqueante); `source_count` 3 → 4
+- `wiki/concepts/tech-debt-como-ferramenta.md` — nova seção "'Mais Rápido' É Relativo — Atalho Sem Decisão Consciente", mapeando o argumento da fonte para a célula Imprudente+Inadvertido do Quadrante de Fowler; `source_count` 7 → 8
+- `wiki/concepts/secrets-management.md` — nova seção "Variável de Ambiente Configurada no Provedor de Deploy" (exemplo real na Vercel); `source_count` 1 → 2
+- `wiki/entities/react.md` — nova linha em Key Sources citando React Hook Form como exemplo de lib madura preferível a build própria; `source_count` 2 → 3
+- `wiki/index.md` — nova linha em Sources, Concepts (under-engineering) e Entities (mario-souto)
+
+**Notas:** Fonte prática e anedótica (relato de experiência pessoal do autor no próprio projeto), sem dados quantitativos — tratada com confiança correspondente em todas as claims. Principal contribuição para a wiki: uma segunda fonte, totalmente independente da linha David Farley/DORA, chegando à mesma conclusão de que under-engineering (não over-engineering) é o problema mais comum — o que justificou promover under-engineering a página própria em vez de deixá-lo como apenas uma tag dentro de [[wiki/concepts/over-engineering]]. Nenhuma contradição encontrada com o que já estava documentado; a fonte majoritariamente reforça e dá exemplos concretos (React Hook Form, branch protection, Vercel/Supabase, variável de ambiente) para conceitos que já existiam de forma mais teórica (YAGNI, secrets management, quality gate, tech debt). Duas questões em aberto registradas na fonte: (1) identidade exata do canal citado na abertura do vídeo — "canal do Soutinho" vs. possível referência à Alura, não resolvida com certeza a partir só do áudio; (2) conteúdo exato do tweet/card usado como base do vídeo, com vários termos irrecuperáveis pela transcrição automática.
+
+---
+
+## [2026-07-19] ingest | Quality Gate e Ratchet: Qualidade de Código com Múltiplos Agentes de IA
+
+**Fonte:** [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — transcrição de vídeo pessoal (sem roteiro fechado) de um criador de conteúdo não identificado com confiança, em português (sem necessidade de tradução), limpa, pontuada e organizada em seções a partir de um dump de transcrição automática sem pontuação. Salva em `raw/quality-gate-ratchet-multiplos-agentes-ia.md`.
+
+**Skill carregada:** `tech-mentor-testing` — mesma skill já usada em [[wiki/concepts/quality-gate]] e [[wiki/sources/gate-de-qualidade-definicoes-formais]]; nenhum arquivo de `references/` cobre especificamente o padrão ratchet/baseline (o mais próximo, `references/test-strategy.md`, cobre Technical Debt e Architecture Fitness Functions, conceitos adjacentes mas não idênticos), calibração aplicada via conhecimento de domínio direto combinado com o que já existe consolidado na wiki sobre quality gate.
+
+**Páginas criadas:**
+- `wiki/sources/quality-gate-ratchet-multiplos-agentes-ia.md`
+- `wiki/concepts/ratchet-baseline.md` — novo conceito: padrão de baseline de métricas de qualidade congelada em CI, que só pode melhorar ou empatar (nunca regredir) a cada PR
+
+**Páginas atualizadas:**
+- `wiki/concepts/quality-gate.md` — três novas seções: "Ratchet: A Baseline Só Pode Melhorar" (link para o novo conceito), "Babysitting: o Agente Monitora o Próprio Pull Request" (loop de CI+comentários+resolução de conversas), e "Exemplo de Pipeline de CI Concreto" (npm audit em dois níveis, jscpd, upload de artefatos para o próprio agente consumir); `source_count` 2 → 3
+- `wiki/concepts/pipeline-de-qualidade.md` — nova seção "Exemplo Concreto — Pipeline com Ratchet de Baseline (npm audit em Dois Níveis)"; `source_count` 3 → 4
+- `wiki/concepts/code-review.md` — nova seção "Babysitting: o Agente Fecha o Próprio Loop de Revisão", registrando o humano como novo gargalo de revisão em escala; `source_count` 4 → 5
+- `wiki/concepts/vibe-coding.md` — nova seção "Ratchet de Baseline como Mitigação Mecânica (Não Depende de Disciplina)", contrastando com as mitigações de RFC/Grill Me já documentadas (que dependem de disciplina humana); `source_count` 6 → 7
+- `wiki/concepts/codebase-legibilidade-ia.md` — nova seção "Comentários no Código Como Sinal de Recuperação para Agentes", qualificando a tabela existente de características de código legível para IA; `source_count` 3 → 4
+- `wiki/concepts/comentarios-o-que-nao-o-como.md` — nova seção "Nuance na Era de Agentes: Comentário Como Contexto Recuperável"; `source_count` 1 → 2
+- `wiki/concepts/skills-agente.md` — nova seção "Caso: Skill de Babysit — o Agente Monitora o Próprio Pull Request"; `source_count` 4 → 5
+- `wiki/concepts/capital-de-tokens.md` — nova seção "Hipótese: Incentivo do Provedor para Output Imperfeito de Primeira" (hipótese não verificada do autor sobre por que modelos não corrigem tudo de primeira); `source_count` 2 → 3
+- `wiki/entities/uncle-bob.md` — nova seção "Análise Estática no Pull Request como Não Negociável" (terceira menção); `source_count` 2 → 3
+- `wiki/entities/anthropic.md` — nova seção "Custo do Ultra Review / Ultra Plan em Teste Pessoal"; `source_count` 8 → 9
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts
+
+**Notas:** Fonte fortemente prática e complementar às duas fontes já existentes sobre quality gate: [[wiki/sources/gate-de-qualidade-definicoes-formais]] (puramente teórica, definições da literatura) e [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] (foco em RFC e na skill Grill Me como mitigação de perda de entendimento, sem métricas automatizadas concretas). Esta fonte traz o que faltava: um exemplo real e detalhado de pipeline de CI com métricas concretas (project "Strawberry": 483 violações de ESLint, 2,2% duplicação, 7% cobertura, 19 arquivos acima do limite), um script de quality gate real (baseline.json + coletor de métricas + comparação), e o conceito de **ratchet** que não existia antes na wiki como página própria — apesar de o espírito já estar presente de forma difusa em [[wiki/concepts/boy-scout-rule]] e em Architecture Fitness Functions (dentro de `references/test-strategy.md` da skill), nenhuma página consolidava especificamente o padrão de "baseline congelada, só pode melhorar ou empatar". Nenhuma contradição encontrada com o que já estava documentado — esta fonte reforça e operacionaliza o padrão "limites estruturais forçam a IA a modularizar" já registrado em [[wiki/concepts/quality-gate]] pela fonte RFCs/Grill Me, com um caso mais detalhado (crescimento real de arquivo de 1000 para 1140 linhas). O padrão "babysitting" de PR por agentes também aprofunda o mecanismo causal do "looking good to me" já documentado em [[wiki/concepts/code-review]], mostrando que a resposta que o próprio ecossistema está adotando não é revisar mais, mas mecanizar via CI. Open questions registradas na fonte: identidade do autor não confirmada (menciona Instagram e o Stubborn Club, mesma comunidade já citada em outra fonte, mas formato solo em primeira pessoa diferente do formato de podcast em dupla do CDF Café — não é possível confirmar se é a mesma pessoa); nome completo do app "Strawberry" cortado na transcrição; unidade monetária do gasto com Ultra Review/Ultra Plan não especificada; nome de produto concorrente citado de forma incerta ("Mitos"/"mito").
+
+---
+
+## [2026-07-19] ingest | KISS e YAGNI — Como Entregar Projetos Mais Rápido e Com Mais Qualidade
+
+**Fonte:** [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] — transcrição de vídeo de Everton Oliveira (engenheiro de software sênior), em português (sem necessidade de tradução), limpa, pontuada e organizada em seções a partir de um dump de transcrição automática sem pontuação. Salva em `raw/kiss-yagni-entrega-rapida-qualidade.md`.
+
+**Skill carregada:** `tech-mentor-backend` — mesma skill já usada em [[wiki/concepts/kiss]] e [[wiki/concepts/yagni]]; nenhum arquivo de `references/` específico para os dois princípios (são conhecimento geral de arquitetura/design já coberto diretamente), calibração aplicada via conhecimento de domínio direto, seguindo o precedente já registrado em ingests anteriores desta wiki.
+
+**Páginas criadas:**
+- `wiki/sources/kiss-yagni-entrega-rapida-qualidade.md`
+- `wiki/entities/everton-oliveira.md` — autor do vídeo, novo criador de conteúdo brasileiro na wiki
+
+**Páginas atualizadas:**
+- `wiki/concepts/kiss.md` — três novas seções: origem na Marinha dos EUA (sem fonte primária, nota registrada), KISS aplicado a testes (remover testes de baixo valor), e exemplo de refactor (cadeia de `if`s → early return + lista de status permitidos) com trecho de código ilustrativo; nova seção de benefícios (bugs, custo, velocidade, qualidade, retenção de usuário via UX simples); `source_count` 2 → 3
+- `wiki/concepts/yagni.md` — nova seção de benefícios (foco, velocidade, menos complexidade) com o exemplo de repositório com métodos CRUD implementados por precaução; nova nota de verificação bibliográfica (ver Notas); `source_count` 4 → 5
+- `wiki/entities/kent-beck.md` — nova seção confirmando a autoria de *Extreme Programming Explained* (1999), em contraste com a atribuição incorreta da fonte nova a Ron Jeffries; `source_count` 3 → 4
+- `wiki/concepts/idempotencia.md` — nova linha em Key Sources amarrando o exemplo de refactor do KISS (checagem de status reprocessável) ao conceito, como caso adjacente mas não idêntico ao padrão de Idempotency Key; `source_count` 3 → 4
+- `wiki/concepts/over-engineering.md` — nova linha em Key Sources conectando KISS/YAGNI como os dois princípios que atacam o dilema velocidade vs. qualidade que over-engineering resolve mal; `source_count` 2 → 3
+- `wiki/concepts/criterios-de-bom-teste.md` — nova linha em Key Sources reforçando o critério de relevância com o exemplo de KISS aplicado a testes de baixo valor; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; nova linha em Entities
+
+**Notas:** Fonte curta e majoritariamente reforço de dois conceitos já `status: stable` e bem documentados na wiki ([[wiki/concepts/kiss]] via [[wiki/sources/overengineering-carol-ate-quinta]] e [[wiki/sources/5-principios-que-mudaram-como-programador]]; [[wiki/concepts/yagni]] via quatro fontes prévias) — nenhuma contradição de fundo encontrada, apenas ângulos e exemplos novos (origem histórica do KISS, KISS aplicado a testes e a UX/retenção de usuário, exemplo concreto de refactor de validação de status). A única discrepância real encontrada foi bibliográfica: a fonte atribui o livro que apresenta o YAGNI a "Ronald Jeffries", quando o livro fundador (*Extreme Programming Explained*, 1999) é de Kent Beck — Jeffries é cocriador da XP junto com Beck no [[wiki/entities/c3-project|projeto C3]], mas não autor dessa obra específica. Registrada como nota de verificação em [[wiki/concepts/yagni]] e [[wiki/entities/kent-beck]], sem alterar o `raw/` (imutável). Open questions registradas na fonte: origem exata do KISS na Marinha dos EUA sem data/fonte primária (atribuição alternativa mais comum na literatura é Kelly Johnson, Lockheed Skunk Works); exemplos de código do vídeo (refactor de validação de transferência e de métodos de repositório) foram narrados verbalmente, não capturados como código real na transcrição; canal/URL/data de publicação do vídeo não fornecidos.
+
+---
+
+## [2026-07-19] ingest | Gate de Qualidade — Definições da Literatura
+
+**Fonte:** [[wiki/sources/gate-de-qualidade-definicoes-formais]] — transcrição de um vídeo curto (aula da "professora Simone", sobrenome/curso não identificados), em português (sem necessidade de tradução), limpa e pontuada preservando os nomes de autores exatamente como capturados pela transcrição automática. Salva em `raw/gate-de-qualidade-definicoes-formais.md`.
+
+**Skill carregada:** `tech-mentor-testing` — índice de `SKILL.md` consultado; o tópico "quality gate formal/milestone/critérios de entrada-saída" não tem seção própria em nenhum `references/*.md` da skill (o mais próximo, `references/test-strategy.md`, cobre Production Readiness Checklist e Test Review em PRs, mas não a taxonomia de definições formais de gate), então a fonte primária da transcrição foi tratada como a referência principal para esse ângulo específico, com a skill calibrando apenas terminologia e categorização.
+
+**Páginas criadas:**
+- `wiki/sources/gate-de-qualidade-definicoes-formais.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/quality-gate.md` — nova seção "Definições Formais da Literatura" com as três definições citadas na fonte e as cinco características estruturais que elas têm em comum (critérios de entrada/saída, ciclo dev ou teste, disparo por critério não data, resultado binário, gates em paralelo); `skill` mudou de `tech-mentor-ai` para `tech-mentor-testing` (a página deixou de ser específica do ângulo "IA gerando código" e passou a cobrir o conceito geral); `status` `stub` → `draft`; `source_count` 1 → 2
+- `wiki/concepts/pipeline-de-qualidade.md` — nova linha em Key Sources amarrando cada camada da pipeline (lint, tipagem, cobertura, segurança, mutação, E2E) ao conceito formal de quality gate desta fonte; `source_count` 2 → 3
+- `wiki/concepts/definicao-de-pronto.md` — novo link em "Ver também" para [[wiki/concepts/quality-gate]], enquadrando Definição de Pronto como a versão informal/pessoal do mesmo princípio que o quality gate formaliza e automatiza (sem nova claim de fonte, por isso `source_count` não mudou)
+- `wiki/index.md` — nova linha em Sources; TL;DR de `quality-gate` atualizado para refletir o conceito formal além do caso de uso original (IA/clean code)
+
+**Notas:** Fonte curta e puramente teórica — três definições de quality gate citadas em sequência (uma com autor não identificado com confiança na transcrição, "soa como Puxava"; uma segunda igualmente incerta, "soa como Adultos"; e uma terceira atribuída a "Schneider", nome citado com clareza mas sem nome completo/obra/ano) mais uma síntese das características estruturais comuns às três. Não há sobreposição com [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] (que já tinha originado a página `quality-gate.md` a partir do ângulo prático "limites estruturais forçam IA a modularizar código") — esta fonte nova é o lado teórico/acadêmico do mesmo conceito, e as duas se complementam sem contradição. Seguindo o precedente já registrado em ingests anteriores para nomes distorcidos por transcrição automática (ex.: "Miture JS"/"mito" em [[wiki/sources/context-engineering-codebases-grandes-rpi]]), os dois autores não identificados com confiança não geraram entidades novas — ficaram citados apenas dentro do texto da fonte e do conceito, marcados como incertos. Também não foi criada entidade para "Schneider" (nome comum demais em engenharia de software para atribuir com segurança sem nome completo) nem para a autora do vídeo, "professora Simone" (só o primeiro nome disponível, sem curso/canal identificável, relevância insuficiente para uma entidade própria). Open questions registradas na fonte: identidade dos dois autores não identificados; identidade completa de "Schneider"; identidade/canal da professora Simone.
+
+---
+
+## [2026-07-19] ingest | Xunit (Martin Fowler — fonte primária)
+
+**Fonte:** [[wiki/sources/xunit-martin-fowler]] — bliki entry curto (17 jan 2006, mesma data do Test Double) buscado via `curl` direto no HTML em https://martinfowler.com/bliki/Xunit.html (novamente evitando o resumo do WebFetch, que passa por um modelo menor, para preservar o texto exato), traduzido para PT-BR e salvo em `raw/xunit-martin-fowler.md` (mesmo padrão de `raw/test-double-martin-fowler.md`).
+
+**Skill carregada:** `tech-mentor-testing`, `references/test-patterns.md`/`references/test-tooling.md` (índice consultado; a origem histórica do JUnit não está coberta ali como tópico próprio, então esta fonte primária é a referência principal).
+
+**Descoberta pré-ingestão importante:** a wiki cobria TDD e Test Doubles com boa profundidade, mas não tinha nenhuma página sobre a origem histórica do próprio JUnit/Xunit, nem sobre Kent Beck como coautor do framework (a entity dele cobria só TDD/XP conceituais). Também não existia nenhuma entity para o próprio JUnit, nem para o projeto C3 (nascimento da Extreme Programming) — apesar de C3 e Seedwork serem citados por nome pelo próprio Fowler no artigo.
+
+**Páginas criadas:**
+- `wiki/sources/xunit-martin-fowler.md`
+- `wiki/entities/junit.md` — nova entity: o framework, coautoria Beck/Gamma, origem da família Xunit
+- `wiki/entities/c3-project.md` — nova entity: projeto Chrysler, nascimento da XP, onde o framework pré-JUnit de Beck foi usado
+- `wiki/concepts/seedwork.md` — novo conceito: framework mínimo reconstruído por cada time, termo de Fowler usado no próprio artigo para descrever o framework pré-JUnit de Beck
+
+**Páginas atualizadas:**
+- `wiki/entities/kent-beck.md` — nova seção sobre a criação do framework caseiro e coautoria do JUnit; `skill` corrigida de `tech-mentor-backend` para `tech-mentor-testing` (mais aderente ao conteúdo real da página); `source_count` 2 → 3
+- `wiki/entities/martin-fowler.md` — nova seção "Testemunha e participante da origem do JUnit"; nova entrada de termo cunhado (Seedwork); `source_count` 4 → 5
+- `wiki/entities/gang-of-four.md` — nova seção conectando Erich Gamma à coautoria do JUnit; `source_count` 1 → 2; também corrigida a ausência da página no índice (drift pré-existente, nunca listada em `wiki/index.md` — corrigido nesta ingestão)
+- `wiki/concepts/tdd.md` — nova seção "Origem: do framework caseiro em Smalltalk ao JUnit"; `source_count` 6 → 7
+- `wiki/concepts/test-doubles.md` — frase de atribuição a Meszaros expandida para conectar explicitamente à origem da família Xunit; `source_count` 4 → 5
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`seedwork`); novas linhas em Entities (`junit`, `c3-project`, `gang-of-four`)
+
+**Notas:** as páginas bliki `C3` e `Seedwork`, citadas por nome no artigo, foram consultadas diretamente via `curl` (não via WebFetch resumido) só para calibrar os dois stubs criados — não foram tratadas como ingestão própria e completa, e os stubs citam essas URLs como `[external]` em vez de linká-las como `wiki/sources/`. Ambas são candidatas naturais a uma ingestão própria futura, especialmente C3 por seu papel histórico na origem da Extreme Programming. Nenhuma contradição encontrada com conteúdo pré-existente da wiki — a ingestão foi puramente aditiva (história de origem que faltava atrás de conceitos já bem cobertos). Open question registrada na fonte: o relato de Fowler sobre ter influenciado a convenção de assert-message-como-primeiro-argumento do JUnit não tem confirmação independente nesta wiki, só a memória pessoal dele no bliki.
+
+## [2026-07-19] ingest | Test Double (Martin Fowler — fonte primária)
+
+**Fonte:** [[wiki/sources/test-double-martin-fowler]] — bliki entry curto (17 jan 2006) buscado via `curl` em https://martinfowler.com/bliki/TestDouble.html (WebFetch resumiu de mais, então o HTML foi baixado direto para extrair o texto completo e exato), traduzido para PT-BR e salvo em `raw/test-double-martin-fowler.md` (mesmo padrão de `raw/integration-test-martin-fowler.md`).
+
+**Skill carregada:** `tech-mentor-testing`, `references/test-tooling.md` (seção "Test Doubles com Precisão") — mapeamento de domínio "testes" do CLAUDE.md deste repo.
+
+**Descoberta pré-ingestão importante:** a wiki já tinha [[wiki/concepts/test-doubles]] e [[wiki/sources/test-doubles]] (este último sintetizado pela skill, não a fonte primária real do martinfowler.com). A concept page afirmava "Cunhado por [[wiki/entities/martin-fowler]]" para o termo TestDouble — a leitura da fonte primária mostra que isso é impreciso: Fowler divulgou o termo guarda-chuva "Test Double" no bliki, mas credita explicitamente a **Gerard Meszaros** a autoria da taxonomia dos cinco tipos (Dummy/Fake/Stub/Spy/Mock), criada para o livro *xUnit Test Patterns* (2007). Corrigido nesta ingestão.
+
+**Páginas criadas:**
+- `wiki/sources/test-double-martin-fowler.md`
+- `wiki/entities/gerard-meszaros.md` — nova entity: autor da taxonomia de Test Doubles, nunca citado na wiki antes apesar do conceito já existir há meses
+
+**Páginas atualizadas:**
+- `wiki/concepts/test-doubles.md` — seção "O termo TestDouble..." reescrita para separar autoria do termo guarda-chuva (Fowler) da taxonomia interna (Meszaros); nova entrada em Key Sources; `source_count` 3 → 4
+- `wiki/entities/martin-fowler.md` — item sobre `test-doubles` corrigido para não implicar que ele criou a taxonomia; nova entrada em Key Sources; `source_count` 3 → 4
+- `wiki/index.md` — nova linha em Sources; nova linha em Entities (`gerard-meszaros`)
+
+**Notas:** Fonte curta (bliki entry de ~300 palavras) — por isso o número de páginas tocadas ficou abaixo do range usual de 10-15; o conteúdo genuinamente novo se concentra em duas coisas: o texto exato/definições canônicas dos cinco tipos de double (já bem cobertas na wiki via síntese da skill, agora com a fonte primária citada) e a correção de atribuição de autoria Fowler→Meszaros, que é o achado mais valioso desta ingestão. Nenhuma outra contradição encontrada. Open questions registradas na fonte: o livro *xUnit Test Patterns* em si nunca foi ingerido diretamente, e o artigo "Mocks Aren't Stubs" (citado como leitura complementar pelo próprio Fowler) é candidato natural para uma próxima ingestão.
+
 ## [2026-07-16] ingest | Cognitive Debt (Margaret-Anne Storey — fonte primária)
 
 **Fonte:** [[wiki/sources/cognitive-debt-margaret-storey]] — post de blog em inglês, buscado via WebFetch de https://margaretstorey.com/blog/2026/02/09/cognitive-debt/, traduzido para PT-BR e salvo em `raw/cognitive-debt.md` (seguindo o mesmo padrão já usado para fontes em inglês como [[wiki/sources/chain-of-thought-prompting]]).
@@ -2603,5 +2742,55 @@ Entities:
 - `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (seção "Processo de Desenvolvimento com IA"); nova linha em Entities
 
 **Notas:** Fonte com um único eixo central bem definido — a perda da janela de revisão incremental à medida que agentes ganham harness próprio e rodam por mais tempo — e duas famílias de mitigação já bem documentadas na wiki por ângulos adjacentes: (1) [[wiki/concepts/rfc-request-for-comments|RFC]]/especificação como source of truth anti-alucinação, que ganha aqui o dado concreto da proporção 80/20 planejamento/execução e a variante "agnóstica à linguagem" (tese de Fabrício Arcanjo, nova entidade), não presente antes na wiki; (2) a skill **Grill Me**, que já tinha menção de passagem na página de [[wiki/entities/matt-pocock]] (via outra fonte), mas ganha aqui detalhamento completo da mecânica (IA entrevista o dev sobre decisões de implementação em vez do dev ler código linha a linha) e um novo conceito dedicado a [[wiki/concepts/quality-gate|quality gates]] como reforço estrutural que não existia antes como página própria — havia menções dispersas a linters/análise estática em várias páginas de segurança e arquitetura, mas nenhuma consolidando o ângulo específico "limite estrutural força a IA a modularizar". Nenhuma contradição encontrada com o que já estava documentado em [[wiki/concepts/vibe-coding]] ou [[wiki/concepts/code-review]] — esta fonte é complementar, adicionando o mecanismo causal (por que a revisão degradou) e uma mitigação concreta (Grill Me) a um sintoma que a wiki já descrevia. Open questions registradas na fonte: grafia de "Stubborn Club" incerta (fonético na transcrição); teses atribuídas a Fabrício Arcanjo e a "Conrado" vêm de relato de segunda mão de uma comunidade fechada, sem link público verificável; "paradoxo da informação invertida" de Nadella também é citação de segunda mão, mesma ressalva já aplicada à citação anterior de "capital de tokens"; app "code.persua.com"/Persua não recebeu página própria por baixa relevância fora do exemplo específico de modularização por flavor.
+
+---
+
+## [2026-07-19] ingest | Sistema de Produtividade com IA: Planejamento, Priorização e Execução (Adapta)
+
+**Fonte:** [[wiki/sources/sistema-produtividade-ia-adapta]] — transcrição ASR bruta de um vídeo em português (sem necessidade de tradução), reescrita como Markdown estruturado por seções (introdução, três pilares, três casos de uso, roteamento entre modelos, encerramento), mantendo conteúdo e idioma originais. Salva em `raw/sistema-produtividade-ia-adapta.md`.
+
+**Skill carregada:** `tech-mentor-ai` — lida de `/home/nemomartins/Documentos/new/skills/tech-mentor-ai/SKILL.md` (índice consultado; referências `prompt-engineering.md` e `model-routing-selection.md` lidas por completo). Diferente de ingests anteriores registrados neste log, o diretório de skills existe nesta máquina/sessão e foi lido diretamente. Parte do conteúdo da fonte (matriz de Eisenhower, regra dos 5 minutos, MIT) é produtividade genérica não coberta por `tech-mentor-ai`; tratada com conhecimento geral e marcada `[external]` nas páginas correspondentes, seguindo o precedente de calibração mista já usado para fontes de produtividade anteriores (ex.: `tech-mentor-leadership` em [[wiki/sources/produtividade-falsa-vs-verdadeira]]).
+
+**Páginas criadas:**
+- `wiki/sources/sistema-produtividade-ia-adapta.md`
+- `wiki/concepts/dump-mental.md` — captura total antes de organizar
+- `wiki/concepts/regra-dos-5-minutos.md` — filtro de triagem pós-captura, com nota `[external]` sobre a regra dos 2 minutos do GTD (David Allen), não citada na fonte
+- `wiki/concepts/matriz-de-eisenhower.md` — quatro quadrantes urgente×importante, com nota `[external]` sobre a atribuição histórica (Eisenhower/Covey), não discutida na fonte
+- `wiki/concepts/tarefa-principal-do-dia.md` — MIT, com nota `[external]` sobre a equivalência ao termo em inglês
+- `wiki/concepts/roteamento-automatico-de-modelo.md` — padrão técnico de model routing (complexity/cascade/intent-based, calibrado via referência `tech-mentor-ai`) aplicado ao caso comercial da Adapta (mecanismo interno não público, tratado como claim de fabricante)
+- `wiki/entities/adapta.md` — agregador brasileiro de modelos de IA; fatos de produto verificados por busca externa em `adapta.org`/`docs.adapta.org` (marcado `[external]`) para não repetir claims de marketing sem checagem, já que a própria fonte é material promocional
+
+**Páginas atualizadas:**
+- `wiki/concepts/skills-agente.md` — nova seção "Skill como Contexto Pessoal Persistente em Produto de Consumo" (uso de skills fora de codificação); `source_count` 5 → 6
+- `wiki/concepts/prompt-engineering.md` — nova seção sobre o padrão "Tell It" aplicado a prompts de planejamento pessoal; `source_count` 3 → 4
+- `wiki/concepts/ativo-vs-produtivo.md` — nova seção "Sistema como Antídoto Estrutural"; `source_count` 1 → 2
+- `wiki/concepts/eficacia-vs-eficiencia.md` — nova seção com o exemplo operacional da matriz de Eisenhower + tarefa única; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; quatro novas linhas em "Recursos de Aprendizado"; uma nova linha em "Agentes & LLMOps"; nova linha em Entities
+
+**Notas:** Fonte com estrutura clara de conteúdo patrocinado/afiliado (call-to-action com garantia de 30 dias na descrição, citado no próprio vídeo) — tratada com o mesmo rigor de uma fonte promocional: alegações de qualidade técnica do produto (Adapta ONE Pro reduzir alucinação, ser "mais completo") foram marcadas como claim de marketing não verificado, e a identidade/mecânica pública do produto foi checada por busca externa em vez de aceita apenas pela fala da autora do vídeo. A maior parte do conteúdo técnico novo (dump mental, regra dos 5 minutos, matriz de Eisenhower, MIT) é produtividade pessoal genérica, já adjacente a conceitos existentes na wiki ([[wiki/concepts/ativo-vs-produtivo]], [[wiki/concepts/eficacia-vs-eficiencia]], [[wiki/concepts/tecnica-do-ataque-cardiaco]], [[wiki/concepts/principio-de-pareto]]) — nenhuma contradição encontrada, a fonte é complementar e mais prescritiva/operacional do que as anteriores, que ficavam mais no nível de diagnóstico. O conteúdo genuinamente técnico (skills como contexto persistente aplicadas a um produto de consumo, e roteamento automático de modelo como categoria comercial) estende [[wiki/concepts/skills-agente]] e o vocabulário de model routing da skill `tech-mentor-ai` para fora do domínio de codificação, onde a wiki ainda não tinha exemplos. Autoria da fonte não identificada — nenhuma entidade criada para a criadora do vídeo, seguindo o precedente de [[wiki/sources/produtividade-falsa-vs-verdadeira]] e [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]]. Open question registrada na fonte: mecanismo exato de decisão do roteador "ONE" da Adapta não é público em nenhuma fonte consultada.
+
+---
+
+## [2026-07-20] ingest | Indistraível (Nir Eyal) — Resenha Resumida por Mano Deivin
+
+**Fonte:** [[wiki/sources/indistraivel-nir-eyal-mano-deivin]] — transcrição ASR bruta de um vídeo em português (sem necessidade de tradução), fornecida pelo usuário como texto corrido sem pontuação/parágrafos, reescrita como Markdown estruturado por seções (introdução, quatro conceitos do livro, encerramento), mantendo conteúdo e idioma originais e preservando o trecho de publicidade patrocinada (marca de vestuário) como nota lateral em vez de removê-lo silenciosamente. Salva em `raw/indistraivel-nir-eyal-mano-deivin.md`.
+
+**Skill carregada:** `tech-mentor-leadership` — índice consultado (`SKILL.md`); nenhum arquivo de `references/` cobre foco/atenção/distração como tópico dedicado (protocolo da skill: sem match no índice → responder com conhecimento base, sinalizado aqui). Mesmo padrão de calibração mista já usado em fontes de produtividade anteriores desta wiki (ex.: [[wiki/sources/sistema-produtividade-ia-adapta]], [[wiki/sources/produtividade-falsa-vs-verdadeira]]): produtividade pessoal genérica tratada com conhecimento geral, sem correspondência exata na skill de liderança técnica além do domínio adjacente de carreira/produtividade.
+
+**Páginas criadas:**
+- `wiki/sources/indistraivel-nir-eyal-mano-deivin.md`
+- `wiki/concepts/gatilho-interno-vs-externo.md` — dicotomia central do livro; inclui nota `[external]` ligando o vocabulário de "gatilho" ao livro anterior do autor, *Hooked* (não ingerido diretamente), e uma seção resolvendo uma tensão aparente com [[wiki/concepts/regra-dos-5-minutos]]
+- `wiki/concepts/time-boxing.md` — conceito que já aparecia mencionado en passant em [[wiki/concepts/paralisia-por-analise]] (como mitigação pontual de decisão) sem página própria; criado a partir desta fonte e linkado de volta
+- `wiki/concepts/pactos-anti-distracao.md` — os três tipos de pacto (esforço, preço, público) como mecanismo estrutural anti-força-de-vontade
+- `wiki/entities/nir-eyal.md` — autor; nota de baixa confiança sobre a motivação atribuída pelo apresentador (arrependimento com o sucesso de *Hooked*), por não ter citação primária
+
+**Páginas atualizadas:**
+- `wiki/entities/mano-deivin.md` — nova seção "Série de resumos de livros"; `source_count` 1 → 2
+- `wiki/concepts/paralisia-por-analise.md` — nova seção linkando ao [[wiki/concepts/time-boxing|time boxing]] recém-criado como generalização da mitigação já documentada; `source_count` 2 → 3
+- `wiki/concepts/regra-dos-5-minutos.md` — nova seção "Tensão aparente com gatilhos internos", reconciliando com o conselho de *Indistraível* de anotar em vez de agir; `source_count` 1 → 2
+- `wiki/concepts/ativo-vs-produtivo.md` — nova seção descrevendo o mecanismo momento a momento (gatilho interno → cadeia de distração) por trás do padrão já diagnosticado nesta página; `source_count` 2 → 3
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (cluster de produtividade); nova linha em Entities
+
+**Notas:** Fonte é resumo/resenha de livro (não fonte primária) de um criador que já tinha entidade própria na wiki por um vídeo anterior — segundo caso de conteúdo desse canal ingerido. A skill `tech-mentor-leadership` não tem arquivo de referência dedicado a foco/atenção/distração pessoal (mesma lacuna já observada nas fontes anteriores de produtividade), então o conteúdo foi calibrado com conhecimento geral, seguindo o precedente já estabelecido nesta wiki. Uma tensão real (não contradição) foi identificada e reconciliada entre esta fonte e [[wiki/concepts/regra-dos-5-minutos]] (fazer na hora vs. anotar e continuar) — a diferença é o contexto de aplicação (triagem de lista capturada vs. interrupção de tarefa em andamento), documentada em ambas as páginas envolvidas. Nenhuma citação inventada: uma primeira versão desta página continha uma frase sintetizada apresentada como citação direta na seção de Citações, corrigida antes da finalização para usar apenas trechos literais da transcrição. Open question registrada na fonte: o livro *Hooked*, mencionado repetidamente como contexto e mencionado como tema de um vídeo anterior do mesmo canal, não foi ingerido nesta wiki — se localizado, vale ingestão própria linkando aos conceitos criados aqui. A motivação pessoal atribuída a Nir Eyal para escrever o livro (arrependimento) é leitura do apresentador sem citação primária, marcada como baixa confiança na fonte e na página do autor.
 
 ---

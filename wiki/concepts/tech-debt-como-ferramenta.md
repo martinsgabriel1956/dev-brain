@@ -3,9 +3,9 @@ type: concept
 title: "Tech Debt como Ferramenta"
 aliases: ["tech debt deliberado", "dívida técnica estratégica", "ship with debt"]
 date_created: 2026-04-26
-date_updated: 2026-07-16
-source_count: 7
-tags: [tech-debt, carreira, craftsmanship, estrategia, velocidade]
+date_updated: 2026-07-19
+source_count: 8
+tags: [tech-debt, carreira, craftsmanship, estrategia, velocidade, under-engineering]
 skill: tech-mentor-leadership
 status: draft
 ---
@@ -63,6 +63,10 @@ O [[wiki/concepts/avaliar-hype-tecnologico]] descreve o mesmo raciocínio com ou
 
 Todo o raciocínio acima (Quadrante de Fowler, regra do if, Boy Scout Rule) assume que o débito reside **no código** — é isso que a métrica de hotspot, o refactoring e o backlog técnico atacam. [[wiki/concepts/divida-cognitiva]] descreve uma categoria distinta que esse ferramental não cobre: débito que reside **na cabeça dos desenvolvedores** — entendimento compartilhado sobre por que decisões foram tomadas, que se perde ou nunca se forma, especialmente quando IA generativa/agêntica gera código mais rápido do que o time consegue internalizar a teoria por trás dele (ver [[wiki/concepts/teoria-do-programa-naur]]). Um time pode ter zero débito técnico mensurável (baixa complexidade ciclomática, boa cobertura de testes) e ainda assim travar por dívida cognitiva alta — os dois eixos são independentes, não o mesmo problema com nomes diferentes.
 
+## "Mais Rápido" É Relativo — Atalho Sem Decisão Consciente
+
+[[wiki/sources/underengineering-overengineering-mario-souto]] descreve, sem usar o vocabulário do Quadrante de Fowler, exatamente a célula **Imprudente + Inadvertido** (a pior, "risco" e não "débito" no sentido estrito): atalhos como hardcode, código copiado sem estrutura, ou pular CI, tomados só porque "o projeto está corrido", sem qualquer plano de pagamento. A formulação da fonte: "o mais rápido é muito relativo — ele é mais rápido no momento em que você tá fazendo, porque pode ser que daqui três dias dê um problema, e você vai pagar por esse mais rápido que você fez três dias atrás." Isso é o mesmo raciocínio já documentado no Quadrante de Fowler, mas aplicado aos sintomas concretos de [[wiki/concepts/under-engineering]] em vez de a uma decisão arquitetural maior.
+
 ## Relacionado
 
 [[concepts/observabilidade]] · [[sources/conceitos-que-ninguem-ensina]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/avaliar-hype-tecnologico]] · [[wiki/concepts/divida-cognitiva]]
@@ -75,3 +79,4 @@ Todo o raciocínio acima (Quadrante de Fowler, regra do if, Boy Scout Rule) assu
 - [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]]
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]] — critério prático: refatoração oportunista que passa de horas/dias vira débito técnico formal
 - [[wiki/sources/cognitive-debt-margaret-storey]] — contraste "onde mora o débito": código (dívida técnica) vs. cabeça do time (dívida cognitiva)
+- [[wiki/sources/underengineering-overengineering-mario-souto]] — "o mais rápido é relativo" como formulação prática do débito Imprudente+Inadvertido aplicado a sintomas de under-engineering

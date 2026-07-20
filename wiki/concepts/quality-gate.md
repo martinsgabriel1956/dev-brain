@@ -1,18 +1,36 @@
 ---
 type: concept
 title: "Quality Gate"
-aliases: ["quality gates", "portão de qualidade", "análise estática em pull request"]
+aliases: ["quality gates", "portão de qualidade", "gate de qualidade", "análise estática em pull request"]
 date_created: 2026-07-16
-date_updated: 2026-07-16
-source_count: 1
-tags: [quality-gate, linter, analise-estatica, clean-code, modularizacao, ia]
-skill: tech-mentor-ai
-status: stub
+date_updated: 2026-07-19
+source_count: 4
+tags: [quality-gate, linter, analise-estatica, clean-code, modularizacao, ia, milestone, criterios-de-qualidade, ratchet, babysitting-de-agentes, branch-protection]
+skill: tech-mentor-testing
+status: draft
 ---
 
 # Quality Gate
 
 Conjunto de regras automatizadas (linter, análise estática, limites estruturais) que um pull request precisa passar antes de ser mergeado. Diferente de uma [[wiki/concepts/rfc-request-for-comments|RFC]] — que define o que deve ser feito antes de codar — o quality gate valida o que foi de fato produzido, incluindo código gerado por IA.
+
+## Definições Formais da Literatura
+
+[[wiki/sources/gate-de-qualidade-definicoes-formais]] reforça que não existe uma definição única e "mais correta" de quality gate — é um conceito com múltiplas formulações complementares na literatura de engenharia de software:
+
+- **Checklist formal + aprovação por gate** (autor não identificado com confiança na transcrição da fonte) — listas de verificação formais usadas ao longo da vida de um projeto; em cada gate ocorre aprovação formal e aceitação, com avaliação da qualidade e integridade do produto comunicada aos stakeholders corretos.
+- **Milestone com critérios pré-definidos** (autor não identificado com confiança na transcrição da fonte) — quality gates são milestones e pontos de decisão com critérios pré-definidos e focados na qualidade.
+- **Ponto de verificação de ciclo de vida (Schneider)** — um quality gate é um ponto de verificação onde um conjunto de critérios de qualidade pré-definidos precisa ser atendido para que o processo avance de uma etapa para outra em seu ciclo de vida; nessa visão o gate cumpre o papel de milestone através de regras que atendem a padrões de qualidade.
+
+Dessas três visões, a fonte extrai características estruturais válidas independente da definição escolhida:
+
+- **Exige critérios de entrada e saída explícitos** — sem eles não há como avaliar objetivamente se o gate foi atingido.
+- **Pode existir no ciclo de desenvolvimento ou no ciclo de teste** — não é exclusivo de uma fase específica.
+- **É disparado por critérios, não por datas** — o gate é atingido quando os critérios são cumpridos, não em um prazo fixo do calendário.
+- **Produz um resultado binário** — aprovado ou reprovado, sem estado intermediário.
+- **Múltiplos gates podem rodar em paralelo, avaliados por pessoas diferentes** — ex.: um dev trabalha em um gate de qualidade de código enquanto outro dev trabalha, simultaneamente, em um gate que avalia se a quantidade e severidade de defeitos abertos atende ao critério de aprovação para produção.
+
+Essa camada teórica generaliza o que já era descrito de forma prática em [[wiki/concepts/pipeline-de-qualidade]] — cada camada de uma pipeline de qualidade (lint, tipagem, cobertura, segurança, mutação, E2E) é, na prática, um quality gate no sentido formal acima: um ponto de verificação com critérios de entrada/saída definidos e resultado binário.
 
 ## Quality Gate Forçando Clean Code em Código Gerado por IA
 
@@ -20,10 +38,29 @@ Conjunto de regras automatizadas (linter, análise estática, limites estruturai
 
 **Caso prático citado (app code.persua.com):** ao pedir para a IA modularizar um app por "flavor" (variante de build), o processo passou por etapas sucessivas — primeiro modularização com `if`s em runtime (trechos de código não executados dependendo do flavor buildado), depois questões de build mais finas: desabilitar renderização de componentes não usados, desabilitar arquivos/pacotes/assets por flavor para reduzir o tamanho final do build, e inspecionar o artefato final para verificar compliance com as regras de modularização definidas.
 
+## Ratchet: A Baseline Só Pode Melhorar
+
+[[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] detalha o mecanismo que torna um quality gate sustentável quando ~100% do código é gerado por IA: o padrão [[wiki/concepts/ratchet-baseline|ratchet]] ("catraca"). Em vez de exigir um padrão de qualidade ideal (o que faria todo PR falhar num projeto que nunca teve controle de qualidade), o gate congela o estado atual de métricas — violações de lint, % de duplicação, % de cobertura, arquivos acima de um limite de tamanho — como baseline, e bloqueia qualquer PR que piore qualquer uma delas, mesmo que seja por 0,1 ponto percentual. A partir daí o repositório só pode melhorar ou empatar. Isso desloca a exigência de "a IA precisa acertar de primeira" para "a IA não pode regredir o que já existe" — um critério objetivo, automatizável e compatível com deixar a IA escrever a maior parte (ou toda) a base de código sem o projeto virar um "slop" em poucos meses.
+
+## Babysitting: o Agente Monitora o Próprio Pull Request
+
+A mesma fonte descreve um padrão operacional que fecha o loop do quality gate: depois de abrir o PR, o próprio agente de IA fica em **babysitting** — verificando repetidamente se o CI está verde e se revisores (Copilot, ferramenta externa, ou um humano) deixaram comentários; quando há comentários, o agente os endereça e resolve as conversas no GitHub, até o PR poder ser mergeado. A recomendação prática é encapsular esse comportamento numa skill dedicada e customizável (ver [[wiki/concepts/skills-agente]]), em vez de reexplicar o fluxo a cada tarefa.
+
+## Exemplo de Pipeline de CI Concreto
+
+A mesma fonte documenta um pipeline real por trás do quality gate: `npm ci` (instalação determinística) → `npm audit --audit-level critical` (bloqueia merge) → `npm audit --audit-level high` (avisa, não bloqueia) → lint → testes com coverage (Jest) → um script de quality gate que coleta métricas (incluindo duplicação via `jscpd`), compara contra a baseline congelada, e escreve um sumário em Markdown com métricas, baseline e falhas. Os artefatos (coverage, relatórios) são enviados como upload do CI — não apenas comentados no PR — porque **o próprio agente de IA precisa ter acesso a eles** durante o babysitting para entender o que está falhando, não só um humano lendo a UI do PR. Ver também a instância paralela desse padrão para qualidade de *modelo* (não só de código) em [[wiki/concepts/pipeline-de-qualidade]].
+
 ## Quality Gate Não Substitui Entendimento do Projeto
 
 A mesma fonte é explícita sobre o limite dessa prática: **"tu não pode só ter agentes pra revisar, só ter agentes pra testar, só ter linter [...] se tu deixar o entendimento do teu próprio projeto ir por água abaixo."** Quality gates, testes automatizados e linters rodando em paralelo garantem qualidade objetiva e mensurável, mas não substituem o dev entender as regras que a IA colocou no sistema — para isso, a fonte recorre à skill [[wiki/concepts/skills-agente|Grill Me]] como complemento, não como substituto.
 
+## Branch Protection como Mecanismo de Enforcement
+
+Todos os exemplos acima descrevem *o que* um gate verifica; [[wiki/sources/underengineering-overengineering-mario-souto]] descreve o mecanismo mínimo que transforma um check de CI em gate de fato — sem ele, lint e teste podem rodar e falhar sem impedir o merge. No GitHub, isso é feito via regra de proteção de branch (Settings → Branches): exigir pull request antes de merge, e marcar os nomes dos jobs do GitHub Actions (ex.: `lint`, `test`) como *required status checks*. Só a partir dessa configuração o "passou/não passou" descrito na definição formal de quality gate (resultado binário, critério de entrada/saída) vira, de fato, bloqueante — antes disso é só um relatório que qualquer um pode ignorar.
+
 ## Key Sources
 
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]]
+- [[wiki/sources/gate-de-qualidade-definicoes-formais]] — definições formais da literatura (checklist/aprovação por gate, milestone com critérios pré-definidos, ponto de verificação de Schneider) e características estruturais (critérios de entrada/saída, disparo por critério não por data, resultado binário, gates em paralelo)
+- [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — padrão ratchet/baseline, babysitting de PR por agentes, pipeline de CI concreto (npm audit em dois níveis, jscpd para duplicação)
+- [[wiki/sources/underengineering-overengineering-mario-souto]] — branch protection com required status checks como mecanismo mínimo de enforcement, sobre um pipeline de apenas lint + teste

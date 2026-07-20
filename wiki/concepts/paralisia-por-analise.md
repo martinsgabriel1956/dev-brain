@@ -3,8 +3,8 @@ type: concept
 title: "Paralisia por Análise"
 aliases: ["analysis paralysis", "paralisia de decisão", "overthinking"]
 date_created: 2026-04-29
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-07-20
+source_count: 3
 tags: [psicologia, produtividade, decisao, carreira, projetos]
 skill: tech-mentor-leadership
 status: stable
@@ -45,13 +45,19 @@ Lei de Hick: o tempo de decisão aumenta logaritmicamente com o número de opç�
 
 [[wiki/concepts/decisao-terceirizada|Pedir para um influencer decidir por você]] é uma saída comum para a paralisia por análise — mas troca um problema (excesso de opções) por outro (decisão sem contexto, tomada por quem não tem [[wiki/concepts/skin-in-the-game]] no resultado). O antídoto de [[wiki/entities/fabio-akita]] é o mesmo do timeboxing: aceitar que nenhuma decisão será perfeita, decidir com o que se tem, e tratar o erro como recuperável.
 
+## Time Boxing como Conceito Próprio
+
+O timeboxing citado acima como mitigação pontual da paralisia por análise ganhou uma página dedicada, [[wiki/concepts/time-boxing]], a partir de [[wiki/sources/indistraivel-nir-eyal-mano-deivin]] — lá o mecanismo é generalizado para além da tomada de decisão: não é só "decida em X minutos", é blindar blocos inteiros da agenda por tipo de tarefa, reduzindo tanto a paralisia de decisão quanto a fragmentação de foco durante a execução.
+
 ## Ver Também
 
 - [[concepts/perfeccionismo-em-devs]] — perfeccionismo alimenta paralisia
 - [[concepts/planning-fallacy]] — planejar demais é outra forma de paralisia
 - [[wiki/concepts/decisao-terceirizada]] — terceirizar a decisão como fuga da paralisia, sem resolver a causa raiz
+- [[wiki/concepts/time-boxing]] — versão generalizada do timeboxing, além do uso específico de decisão
 
 ## Key Sources
 
 - [[sources/por-que-devs-nao-terminam-projetos]]
 - [[wiki/sources/pare-de-terceirizar-suas-decisoes]]
+- [[wiki/sources/indistraivel-nir-eyal-mano-deivin]]

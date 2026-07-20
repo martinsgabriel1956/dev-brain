@@ -3,9 +3,9 @@ type: entity
 title: "Uncle Bob (Robert C. Martin)"
 aliases: ["uncle bob", "robert c. martin", "robert cecil martin"]
 date_created: 2026-07-03
-date_updated: 2026-07-09
-source_count: 2
-tags: [clean-code, clean-architecture, solid, autor]
+date_updated: 2026-07-19
+source_count: 3
+tags: [clean-code, clean-architecture, solid, autor, quality-gate]
 skill: tech-mentor-backend
 status: stub
 ---
@@ -24,7 +24,12 @@ Numa thread analisada em [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]], Un
 
 Segunda menção, em [[wiki/sources/5-principios-que-mudaram-como-programador]]: Uncle Bob é creditado como quem popularizou a [[wiki/concepts/boy-scout-rule]] na comunidade de programação — a prática de deixar o código um pouco mais limpo a cada mudança feita numa base de código existente.
 
+## Análise Estática no Pull Request como Não Negociável
+
+Terceira menção, em [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]]: citado via Twitter argumentando que programadores são lentos para escrever código, mas isso não é motivo para abrir mão de qualidade — a recomendação concreta atribuída a ele é colocar análise estática e análise de qualidade de código diretamente no fluxo de pull request. O autor da fonte credita essa citação como o gatilho direto que o levou a montar seu próprio [[wiki/concepts/quality-gate|quality gate]] com padrão [[wiki/concepts/ratchet-baseline|ratchet]].
+
 ## Key Sources
 
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/5-principios-que-mudaram-como-programador]]
+- [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — citação sobre análise estática em PR como gatilho para o setup de quality gate do autor

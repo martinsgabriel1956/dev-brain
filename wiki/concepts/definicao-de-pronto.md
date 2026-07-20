@@ -3,7 +3,7 @@ type: concept
 title: "Definição de Pronto"
 aliases: ["definition of done", "DoD", "o que é pronto", "pronto de verdade"]
 date_created: 2026-04-22
-date_updated: 2026-07-03
+date_updated: 2026-07-19
 source_count: 3
 tags: [hábitos, qualidade, craftsmanship, código, entrega, carreira]
 skill: tech-mentor-leadership
@@ -54,6 +54,7 @@ A ordem importa. Primeiro confirmar que a implementação cobre a regra de negó
 - [[testar-proprio-codigo]] — um dos critérios de "pronto"
 - [[atomic-commits]] — commits que representam unidades funcionais prontas
 - [[wiki/concepts/pensamento-em-producao]] — "pronto" só se confirma depois de validar em produção
+- [[wiki/concepts/quality-gate]] — versão formalizada e automatizável do mesmo princípio: em vez de um checklist pessoal, um conjunto de critérios de entrada/saída avaliado de forma binária (aprovado/reprovado) em um ponto do ciclo de vida do software
 
 ## Key Sources
 

@@ -3,8 +3,8 @@ type: entity
 title: "React"
 aliases: ["ReactJS", "React.js"]
 date_created: 2026-04-22
-date_updated: 2026-07-04
-source_count: 2
+date_updated: 2026-07-19
+source_count: 3
 tags: [react, frontend, biblioteca, facebook, meta]
 skill: tech-mentor-frontend
 status: stable
@@ -39,3 +39,4 @@ Biblioteca JavaScript para construção de interfaces de usuário. Criada pelo F
 
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
 - [[wiki/sources/react-19-memoization-sem-usememo-usecallback]]
+- [[wiki/sources/underengineering-overengineering-mario-souto]] — React Hook Form citado como exemplo de lib madura a preferir em vez de construir gerenciamento de formulário do zero, evitando [[wiki/concepts/under-engineering]]

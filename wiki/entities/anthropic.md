@@ -3,9 +3,9 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-07-15
-source_count: 8
-tags: [anthropic, claude, llm, harness, mcp, ia-para-devs]
+date_updated: 2026-07-19
+source_count: 9
+tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia]
 skill: tech-mentor-ai
 status: stable
 ---
@@ -47,6 +47,10 @@ O tokenizador do Claude usa [[byte-pair-encoding]] com foco em inglês, resultan
 
 Demonstração via [[entities/vercel-ai-sdk]] com Claude 3.5 Haiku: o prompt `"Hello World"` (2 palavras) já consome 11 tokens de entrada — contra apenas 4 no Gemini 2.0 Flash Lite do Google para o mesmo prompt. Contagens de tokens de entrada/saída não são comparáveis entre provedores porque cada um usa um vocabulário de tokenizer próprio — ver [[tokenizacao]].
 
+## Custo do Ultra Review / Ultra Plan em Teste Pessoal
+
+[[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] relata um teste pessoal do autor com o Ultra Review e o Ultra Plan da Anthropic: gastou cerca de 150 (unidade monetária não especificada na fonte) só testando, com o Ultra Review consumindo ~30 por execução — e um bug fazia a ferramenta crashar depois de já ter consumido o saldo disponível, sem entregar resultado, obrigando a adicionar mais crédito para completar e ver o output. Tratado como relato de experiência individual, não como benchmark de custo oficial da Anthropic.
+
 ## Key Sources
 
 - [[wiki/sources/html-vs-markdown-para-agentes-de-ia]] — citada de passagem como tendo "divulgado algo parecido" sobre preferir HTML a Markdown na saída de agentes; a fonte não linka o material original, então tratar como não verificado
@@ -58,3 +62,4 @@ Demonstração via [[entities/vercel-ai-sdk]] com Claude 3.5 Haiku: o prompt `"H
 - [[wiki/sources/tokens-llm-fundamentos-typescript]]
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
 - [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — citada de passagem: erros `503` frequentes da API do Claude ("modelo ocupado, tente novamente") como exemplo do "novo normal" de sistemas caindo, exigindo estratégias de retry no lado do cliente
+- [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — custo elevado do Ultra Review/Ultra Plan em teste pessoal, incluindo bug de crash que consumiu saldo sem entregar resultado

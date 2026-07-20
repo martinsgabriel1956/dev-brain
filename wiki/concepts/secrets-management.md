@@ -3,9 +3,9 @@ type: concept
 title: "Secrets Management"
 aliases: ["secrets management", "gerenciamento de segredos", "env variables", "credenciais", ".env"]
 date_created: 2026-06-10
-date_updated: 2026-06-10
-source_count: 1
-tags: [security, secrets-management, env, credenciais, devsecops, ci-cd]
+date_updated: 2026-07-19
+source_count: 2
+tags: [security, secrets-management, env, credenciais, devsecops, ci-cd, under-engineering]
 skill: tech-mentor-security
 status: stable
 ---
@@ -63,6 +63,10 @@ Propriedade desejável: **secrets configurados não são mais visíveis** — ne
 3. **`.env` de produção commitado** → exposta no histórico do git
 4. **`.env` local com credencial de produção** → risco se a máquina for comprometida
 
+## Variável de Ambiente Configurada no Provedor de Deploy
+
+[[wiki/sources/underengineering-overengineering-mario-souto]] descreve o fluxo do lado "gestão em produção" desta página aplicado a um projeto pessoal na Vercel: valores de configuração — incluindo chaves públicas expostas ao navegador e a chave de API da OpenAI usada em outro projeto do autor — ficam todos como variáveis de ambiente configuradas no painel da Vercel (Settings do ambiente), não hardcoded no código. O benefício prático citado, além de segurança: trocar um valor e disparar um novo deploy sem tocar no código-fonte. A fonte trata hardcode de configuração como um dos sinais centrais de [[wiki/concepts/under-engineering]] — não é tratado como problema exclusivamente de segurança, mas também de manutenção (mudar um valor não deveria exigir um PR).
+
 ## Relação com Outros Conceitos
 
 - [[principio-do-menor-privilegio]] — cada secret deve ter escopo mínimo (API key com permissão só do que precisa)
@@ -72,3 +76,4 @@ Propriedade desejável: **secrets configurados não são mais visíveis** — ne
 ## Key Sources
 
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — regra de não commitar + .env + ferramentas de secrets management; história do frontend com credenciais hardcoded
+- [[wiki/sources/underengineering-overengineering-mario-souto]] — variáveis de ambiente configuradas na Vercel em vez de hardcode, incluindo chave de API da OpenAI; hardcode tratado como sintoma de under-engineering

@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-07-16
+date_updated: 2026-07-20
 ---
 
 
@@ -13,6 +13,7 @@ date_updated: 2026-07-16
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] | Everton Oliveira: KISS (origem Marinha dos EUA) e YAGNI como os dois princípios que resolvem o dilema velocidade vs. qualidade — exemplo de refactor de validação de status e de repositório com métodos CRUD implementados por precaução |
 | [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]] | Reação a currículos reais de candidatos júnior: repetição da stack-alvo para passar no ATS, ausência de GitHub como motivo de descarte explícito, formatação/legibilidade e discurso de "pensar produto" como diferenciais |
 | [[wiki/sources/8-tipos-de-javascript]] | Os 8 tipos de JS (`null`, `undefined`, `boolean`, `number`, `bigint`, `string`, `symbol`, `object`); `typeof` vs. `Object.prototype.toString.call()`; `==` vs `===`; default de parâmetro (`undefined`) vs. fallback `\|\|` (qualquer falsy) |
 | [[wiki/sources/filosofia-do-design-de-software-introducao]] | Tradução do cap. 1 de *A Philosophy of Software Design*: complexidade como maior limitação real ao escrever software; eliminar vs. encapsular; por que waterfall falha e design incremental funciona; red flags via code review |
@@ -113,10 +114,15 @@ date_updated: 2026-07-16
 | [[wiki/sources/tdd-sdd-bdd-era-ia]] | TDD (red-green-refactor), SDD (contrato de boundary — OpenAPI/Protobuf/GraphQL) e BDD (Gherkin) como práticas com viés comportamental que também funcionam impostas sobre IA; proibir a IA de deletar testes que falham |
 | [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] | Shopify substituiu reserva de estoque Redis+MySQL por MySQL puro com SKIP LOCKED; corrigiu gap locking e PK mal desenhada; gargalo real era conexão segurada pelo checkout legado, não a query de reserva; -50% leituras, -33% transações, US$ 5,1M/min na Black Friday 2025 |
 | [[wiki/sources/lean-startup-para-devs-mano-deivin]] | Dev desmotivado quer largar tudo e construir seu próprio produto — Lean Startup (Eric Ries) como antídoto: validar a dor antes de codar, MVP de funcionalidade única, ciclo construir-medir-aprender, teste A/B, e apaixonar-se pelo problema, não pela solução |
+| [[wiki/sources/indistraivel-nir-eyal-mano-deivin]] | Resumo de *Indistraível* (Nir Eyal): dominar gatilhos internos (anotar em vez de agir), time boxing, hackear gatilhos externos (notificações) e pactos anti-distração (esforço, preço, público) — o antídoto do autor ao próprio *Hooked* |
 | [[wiki/sources/5-ou-6-dicas-para-projetos-novos]] | Checklist do primeiro dia de um projeto novo: escolha de stack (aprender vs. monetizar), estrutura documentada antes de codar, deploy imediato do boilerplate com CD automático, ORM mínima com migrations desde o dia 1, testes na pipeline antes de features, README + AGENTS.md |
 | [[wiki/sources/akita-discurso-howard-roark-a-nascente-ayn-rand]] | Akita lê o discurso de Howard Roark (*A Nascente*, Ayn Rand): criador vs. parasita, independência como necessidade básica de quem cria, crítica ao altruísmo como doutrina coercitiva |
 | [[wiki/sources/useeffect-problemas-e-solucoes]] | Três anti-padrões de `useEffect`: estado derivado sincronizado via effects encadeados, stale closure em contadores, fetch sem AbortController — "o melhor effect é o que você deleta" |
 | [[wiki/sources/integration-test-martin-fowler]] | Martin Fowler desambigua "integration test": estreito (double + contract test, rápido) vs. amplo (serviços reais, lento); confusão irmã com unit test solitário/sociável |
+| [[wiki/sources/test-double-martin-fowler]] | Fonte primária do termo "Test Double" (bliki, 2006): Dummy/Fake/Stub/Spy/Mock — taxonomia de Gerard Meszaros, relatada e divulgada por Fowler, não inventada por ele |
+| [[wiki/sources/xunit-martin-fowler]] | Fonte primária da história do JUnit (bliki, 2006): do framework caseiro de Kent Beck em Smalltalk ao voo com Erich Gamma na OOPSLA 1997 até a proliferação de ports que virou a família "Xunit" |
+| [[wiki/sources/gate-de-qualidade-definicoes-formais]] | Três definições formais de Quality Gate da literatura (checklist/aprovação por gate, milestone com critérios pré-definidos, ponto de verificação de Schneider) e suas características estruturais: critérios de entrada/saída, disparo por critério (não data), resultado binário, gates em paralelo |
+| [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] | Quality gate com padrão ratchet (baseline congelada só pode melhorar/empatar) no projeto Strawberry; babysitting de PR pelo próprio agente de IA; pipeline de CI real (npm audit em dois níveis, jscpd para duplicação); comentários no código como contexto recuperável por agentes via grep |
 | [[wiki/sources/iso-27001-dicionario-programador]] | SGSI organizado em torno da tríade CIA; Anexo A 2022 com 93 controles em 4 temas; controles A.8.28/A.5.15/A.5.8/A.8.25/A.5.3 relevantes para devs; Policy as Code (OPA/Gatekeeper) como implementação; ISO 42001 para governança de IA |
 | [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] | Tipos de load balancer (hardware/software/cloud), por que AWS/Azure separam LB de camada 4 e 7, e algoritmos de balanceamento (Round Robin, Weighted, Least Connections, Least Time, Sticky) com demo prática em Nginx |
 | [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] | "Operador de CRUD" vs. engenheiro — o mundo debaixo do CRUD (redes, Bluetooth, streams, mobile, banco de dados); IA entrega o fácil, não o simples; repertório é a cola que a IA não substitui |
@@ -149,6 +155,8 @@ date_updated: 2026-07-16
 | [[wiki/sources/cognitive-debt-margaret-storey]] | Fonte primária de "cognitive debt": dívida técnica mora no código, dívida cognitiva mora na cabeça do time — fundamentada na teoria de Peter Naur (1985) de que um programa é uma teoria, não o código-fonte |
 | [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] | Episódio CDF Café: produtividade com IA é real mas custo sobe (caso Uber), Gartner projeta custo de codificação superando salário médio até 2028, 59% das empresas usam IA como bode expiatório para demissões, Meta admite erro de reestruturação, capital de tokens (Nadella) |
 | [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] | Episódio CDF Café: RFC como source of truth anti-alucinação (80/20 planejamento/execução), especificações agnósticas à linguagem (Fabrício Arcanjo), skill Grill Me (Matt Pocock) invertendo quem revisa quem, quality gates forçando modularização |
+| [[wiki/sources/underengineering-overengineering-mario-souto]] | Mário Souto (DevSoutinho): under-engineering é mais comum que over-engineering — não reinventar libs maduras (React Hook Form, Tailwind), variável de ambiente em vez de hardcode na Vercel, acoplamento login/criar conta, CI mínimo de ~31 linhas (lint+teste) com branch protection |
+| [[wiki/sources/sistema-produtividade-ia-adapta]] | Sistema pessoal de produtividade em 3 pilares (planejamento/priorização/execução): dump mental + regra dos 5 minutos, matriz de Eisenhower + tarefa principal do dia, execução via Adapta (skills de contexto pessoal + roteamento automático de modelo) |
 
 ## Concepts
 
@@ -242,6 +250,13 @@ date_updated: 2026-07-16
 | [[wiki/concepts/flexibilidade-tecnica]] | Aceitar múltiplas visões e soluções válidas — inflexibilidade trava inovação e tira espaço de crescimento de outros |
 | [[wiki/concepts/extreme-ownership]] | Jocko Willink/Leif Babin: o líder é responsável por tudo que acontece no time — sem desculpas, sem terceirizar culpa |
 | [[wiki/concepts/problema-com-solucao]] | Trazer problema ao gestor sempre com uma sugestão de solução — distingue quem quer resolver de quem só reclama |
+| [[wiki/concepts/dump-mental]] | Capturar tudo que está na cabeça num único lugar antes de organizar — elimina o custo mental de tentar lembrar tudo |
+| [[wiki/concepts/regra-dos-5-minutos]] | Se leva menos de 5 minutos, faça na hora em vez de anotar para depois |
+| [[wiki/concepts/matriz-de-eisenhower]] | Quatro quadrantes (urgente × importante) para parar de tratar tudo como prioridade |
+| [[wiki/concepts/tarefa-principal-do-dia]] | Eleger uma única tarefa que, se cumprida, já torna o dia bem-sucedido — MIT |
+| [[wiki/concepts/gatilho-interno-vs-externo]] | Gatilho externo vem de fora (notificação); interno vem de dentro (uma lembrança no meio de outra tarefa) — o segundo é o mais negligenciado, e o antídoto é anotar em vez de agir na hora |
+| [[wiki/concepts/time-boxing]] | Alocar intervalo fixo para cada bloco de trabalho — agrupa tarefas simples, protege blocos complexos, dá vazão a gatilhos internos sem quebrar o foco atual |
+| [[wiki/concepts/pactos-anti-distracao]] | Pacto de esforço (fricção física), de preço (aposta cobrada por terceiro) e público (declaração social) — deslocam a decisão de resistir à distração para antes do momento de tentação |
 
 ### Produto & Lean Startup
 
@@ -339,6 +354,7 @@ date_updated: 2026-07-16
 | [[wiki/concepts/rubrica-de-verificacao]] | Critérios explícitos de aceite gerados junto com o prompt — contrato entre Planner e Verificador |
 | [[wiki/concepts/langgraph]] | Framework que representa estado de agente como grafo — nodes são passos, edges são transições condicionais |
 | [[wiki/concepts/grafo-como-abstracao-de-agentes]] | G=(V,E): nós são computação/LLM, arestas são condição de fluxo determinística — abstração independente de framework |
+| [[wiki/concepts/roteamento-automatico-de-modelo]] | Camada que escolhe automaticamente qual LLM responde cada prompt (complexity/cascade/intent-based) — caso comercial: Adapta ONE |
 
 ### Dívida Cognitiva & Teoria do Programa
 
@@ -359,7 +375,8 @@ date_updated: 2026-07-16
 | [[wiki/concepts/context-engineering-harness]] | Rules + skills + MCPs formam o "mapa" do projeto — fator decisivo de qualidade acima do modelo escolhido |
 | [[wiki/concepts/rules-agente]] | Guardrails sempre no system prompt — agents.md/CLAUDE.md; onboarding digital do projeto |
 | [[wiki/concepts/skills-agente]] | Pastas lazy-loaded: só front-matter no system prompt; corpo sob demanda — substitui 80% das rules; skill Grill Me inverte quem revisa quem |
-| [[wiki/concepts/quality-gate]] | Limites estruturais (tamanho de função/arquivo, duplicação) em CI forçam a IA a modularizar o próprio código gerado |
+| [[wiki/concepts/quality-gate]] | Ponto de verificação com critérios de entrada/saída, resultado binário e disparo por critério (não data); na prática, limites estruturais (tamanho de função/arquivo, duplicação) em CI forçam a IA a modularizar o próprio código gerado |
+| [[wiki/concepts/ratchet-baseline]] | "Catraca" de qualidade: baseline de métricas (lint, duplicação, cobertura, tamanho de arquivo) congelada em CI; nenhum PR pode piorá-la, só melhorar ou empatar |
 | [[wiki/concepts/sensores-vs-guias]] | Guias direcionam antes; sensores corrigem durante — qualidade dos sensores determina autocorreção |
 | [[wiki/concepts/system-prompt-arquitetura]] | O prompt escondido: rules + skills front-matter + MCPs schemas, sempre antes do prompt do usuário |
 | [[wiki/concepts/memoria-curto-longo-prazo-ia]] | Short-term = context window (apagada); long-term = system prompt (sempre reinjetado) |
@@ -743,6 +760,7 @@ date_updated: 2026-07-16
 |---|---|
 | [[wiki/concepts/tdd]] | Red-Green-Refactor — o teste vem antes para sentir o acoplamento antes de criá-lo, não para cobertura |
 | [[wiki/concepts/test-doubles]] | Dummy/Stub/Fake/Spy/Mock (Meszaros) — Fake robusto testa o contrato, Mock frágil testa o nome do método |
+| [[wiki/concepts/seedwork]] | Framework mínimo que cada time reconstrói por conta própria em vez de compartilhar um só — origem do framework de testes de Kent Beck antes do JUnit |
 | [[wiki/concepts/contract-testing]] | Consumer-Driven Contracts + Pact — valida que dois serviços concordam com o formato da comunicação sem rodar juntos |
 | [[wiki/concepts/piramide-de-testes]] | Unitário → Integração → E2E; quanto mais alto, mais lento, caro e frágil |
 | [[wiki/concepts/testes-integracao-banco-real]] | Nunca mockar o banco em testes de integração — o valor do teste está em validar a query real |
@@ -759,6 +777,7 @@ date_updated: 2026-07-16
 | [[wiki/concepts/mapper-pattern]] | Classe estática por camada que converte entidade de domínio para o formato de outra camada (Prisma, HTTP) — isola o acoplamento à tecnologia, não ao domínio |
 | [[wiki/concepts/anti-pattern]] | Repetição que parece solução mas cria problemas — frequência não implica qualidade |
 | [[wiki/concepts/over-engineering]] | "Verde neném" — aplicar patterns sem base; pular etapas da progressão produz complexidade sem valor; under-engineering é o problema mais comum |
+| [[wiki/concepts/under-engineering]] | Fazer menos do que o projeto exige — acoplamento, hardcode, sem CI, copy-paste sem estrutura; mais comum que over-engineering, e o antídoto não exige nenhuma técnica sofisticada |
 | [[wiki/concepts/otimizacao-prematura]] | Raiz de todo mal (Knuth) — otimizar antes de ter projeto bom torna o código rígido e difícil |
 | [[wiki/concepts/modelagem-orientada-a-objetos]] | Pré-requisito obrigatório para design patterns — classes, atributos, relacionamentos antes de GoF |
 | [[wiki/concepts/walking-skeleton]] | Fatia mínima da arquitetura fim-a-fim em produção cedo; caso LMAX — peça provisória isolada atrás de abstração trocável |
@@ -777,6 +796,8 @@ date_updated: 2026-07-16
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/everton-oliveira]] | Engenheiro de software sênior e criador de conteúdo brasileiro — princípios de entrega rápida e com qualidade (KISS, YAGNI) |
+| [[wiki/entities/mario-souto]] | Staff Software Engineer e criador de conteúdo brasileiro, canal DevSoutinho — under-engineering vs. over-engineering |
 | [[wiki/entities/iana]] | Internet Assigned Numbers Authority — coordena globalmente endereços IP, nomes de domínio e números de porta |
 | [[wiki/entities/margaret-storey]] | Professora, University of Victoria, Canada Research Chair — cunhou "cognitive debt" (2026) sobre a base teórica de Peter Naur |
 | [[wiki/entities/peter-naur]] | Turing Award 2005 — Backus-Naur Form (gramática) e "Programming as Theory Building" (1985), base de "cognitive debt" |
@@ -791,7 +812,10 @@ date_updated: 2026-07-16
 | [[wiki/entities/matt-pocock]] | Educador de TypeScript/AI (AI Hero) — fundamentos de LLM, e a tese de que fundamentos de software importam mais que nunca na era da IA |
 | [[wiki/entities/fred-brooks]] | Mythical Man-Month, No Silver Bullet, e o conceito de "design concept" — teoria compartilhada e invisível do que está sendo construído |
 | [[wiki/entities/john-ousterhout]] | A Philosophy of Software Design — define complexidade como estrutura difícil de mudar; cunhou "módulos profundos" |
-| [[wiki/entities/kent-beck]] | Criador do TDD moderno e da XP — "invista no design do sistema todos os dias" |
+| [[wiki/entities/kent-beck]] | Criador do TDD moderno e da XP — "invista no design do sistema todos os dias"; coautor do JUnit com Erich Gamma |
+| [[wiki/entities/junit]] | Framework de testes criado por Kent Beck e Erich Gamma num voo para a OOPSLA 1997 — origem da família de frameworks Xunit |
+| [[wiki/entities/c3-project]] | Chrysler Comprehensive Compensation — projeto de nascimento da Extreme Programming, onde o framework de testes de Kent Beck foi usado |
+| [[wiki/entities/gang-of-four]] | Erich Gamma, Richard Helm, Ralph Johnson e John Vlissides — autores de *Design Patterns* (1994); Gamma também coautor do JUnit |
 | [[wiki/entities/vercel-ai-sdk]] | SDK TypeScript da Vercel para chamar múltiplos provedores de LLM com API unificada |
 | [[wiki/entities/jason-wei]] | Pesquisador Google Brain — lead author do paper de chain-of-thought prompting e do paper de emergent abilities |
 | [[wiki/entities/fabio-akita]] | Programador brasileiro, autodidata desde 1991, criador do canal Akita On Rails |
@@ -829,8 +853,10 @@ date_updated: 2026-07-16
 | [[wiki/entities/lucas-montano]] | Criador de conteúdo brasileiro — argumenta que o pânico de "atrofia cognitiva" por IA mede o tipo errado de habilidade (sintaxe, não conhecimento perene) |
 | [[wiki/entities/eric-ries]] | Autor de *A Startup Enxuta* — ex-programador que criou a metodologia Lean Startup depois de lançar um produto que ninguém queria |
 | [[wiki/entities/mano-deivin]] | Canal brasileiro de YouTube sobre carreira e produto para devs |
+| [[wiki/entities/nir-eyal]] | Autor de *Hooked* e *Indistraível* — escreveu o segundo livro como antídoto ao próprio primeiro |
 | [[wiki/entities/ayn-rand]] | Escritora e filósofa russo-americana — criadora do Objetivismo; autora de *A Nascente* |
 | [[wiki/entities/martin-fowler]] | Chief Scientist Thoughtworks, autor de *Refactoring* e *PoEAA* — mantém o bliki, referência em terminologia de testes e arquitetura |
+| [[wiki/entities/gerard-meszaros]] | Autor de *xUnit Test Patterns* (2007) — criou a taxonomia de Test Doubles (Dummy/Fake/Stub/Spy/Mock) divulgada por Martin Fowler |
 | [[wiki/entities/david-farley]] | Coautor de *Continuous Delivery* com Jez Humble; envolvido no LMAX; refuta o "triângulo de ferro" com dados DORA |
 | [[wiki/entities/mercado-livre]] | Maior e-commerce/fintech da América Latina — combina ISO 27001 + PCI-DSS + Zero Trust; adotante consolidado de Go em produção |
 | [[wiki/entities/andre-casciotti]] | Criador de conteúdo brasileiro, canal Próximo Nível — carreira dev, granularidade de mudança, automações pessoais como prática |
@@ -846,6 +872,7 @@ date_updated: 2026-07-16
 | [[wiki/entities/meta]] | Zuckerberg admite em memorando que a reestruturação de equipes por IA foi antecipada demais |
 | [[wiki/entities/palantir-technologies]] | CEO critica modelo de cobrança por token e levanta a questão de quem controla a economia de IA |
 | [[wiki/entities/fabricio-arcanjo]] | Participante do Stubborn Club — defende especificações técnicas agnósticas à linguagem de programação, focadas em DDD e padrões |
+| [[wiki/entities/adapta]] | Agregador brasileiro de modelos de IA (adapta.org) — skills de contexto pessoal + roteamento automático de modelo (ONE/ONE Pro) |
 
 ### Documentação de Arquitetura
 

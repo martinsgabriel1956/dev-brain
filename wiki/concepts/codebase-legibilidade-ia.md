@@ -3,9 +3,9 @@ type: concept
 title: "Codebase Legibilidade para IA"
 aliases: ["codebase para ia", "código legível ia", "qualidade código ia"]
 date_created: 2026-05-04
-date_updated: 2026-06-01
-source_count: 3
-tags: [ia-engineering, codebase-quality, acoplamento, context-engineering, coding-agents]
+date_updated: 2026-07-19
+source_count: 4
+tags: [ia-engineering, codebase-quality, acoplamento, context-engineering, coding-agents, comentarios]
 skill: tech-mentor-backend
 status: stable
 ---
@@ -70,8 +70,13 @@ MVC com múltiplos services sem relação num diretório único é um dos piores
 
 Combinado com [[progressive-disclosure-ia]] — guidelines por diretório — o agente fica ainda mais focado: carrega as regras do módulo que está alterando, não de todos.
 
+## Comentários no Código Como Sinal de Recuperação para Agentes
+
+[[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] traz um ângulo que qualifica a tabela acima: comentários próximos ao código voltam a ter valor prático explicitamente por causa de como AI harnesses recuperam contexto. Como agentes buscam (via grep ou ferramenta equivalente) o arquivo específico que precisam alterar e então leem seu conteúdo sob demanda, um comentário explicando o quê e o porquê de um trecho é informação que o agente **efetivamente vai ler** no momento da tarefa — diferente de documentação externa (um README grande, por exemplo), que pode nunca ser recuperada na busca porque não está fisicamente perto do código sendo editado. O autor da fonte é explícito que isso o fez reconsiderar a posição clássica ("código autoexplicativo dispensa comentário") especificamente no contexto de agentes — ver [[wiki/concepts/comentarios-o-que-nao-o-como]] para a regra geral que essa observação qualifica, não substitui.
+
 ## Key Sources
 
 - [[sources/ports-and-adapters-codebase-para-ia]]
 - [[sources/navigation-paradox-2026]]
 - [[wiki/sources/context-engineering-codebases-grandes-rpi]] — MVC god class vs. codebase modular; guidelines por diretório como mitigação
+- [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — comentários próximos ao código como informação que agentes efetivamente recuperam via grep, ao contrário de documentação externa

@@ -3,9 +3,9 @@ type: concept
 title: "Code Review"
 aliases: ["revisão de código", "pull request review", "PR review"]
 date_created: 2026-07-03
-date_updated: 2026-07-16
-source_count: 4
-tags: [code-review, qualidade, carreira, júnior, mentoria, grill-me]
+date_updated: 2026-07-19
+source_count: 6
+tags: [code-review, qualidade, carreira, júnior, mentoria, grill-me, babysitting-de-agentes, quality-gate, under-engineering]
 skill: tech-mentor-leadership
 status: draft
 ---
@@ -53,6 +53,14 @@ Em times que usam IA generativa/agêntica pesadamente, [[wiki/concepts/divida-co
 
 [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] descreve o mecanismo por trás da degradação do code review na era de agentes com harness próprio: quando o agente rodava de forma mais incremental (ex.: Claude Code via CLI sendo corrigido passo a passo), o dev participava do processo de criação e revisava naturalmente ao longo do caminho. Com agentes que rodam por mais tempo, escrevem os próprios testes automatizados e entram em loops longos, não sobra tempo de revisar tudo antes de concluir a tarefa com qualidade — e, como "ninguém gosta de ler código", a tendência é aprovar sem ler linha a linha (o "looking good to me" superficial). A mitigação proposta não é revisar mais, mas inverter quem audita quem: a skill [[wiki/concepts/skills-agente|Grill Me]] ([[wiki/entities/matt-pocock]]) faz a IA entrevistar o dev sobre decisões de implementação até garantir entendimento mútuo, como substituto parcial da leitura linha a linha.
 
+## Babysitting: o Agente Fecha o Próprio Loop de Revisão
+
+[[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] descreve um padrão que reorganiza quem participa do ciclo de code review quando o volume de PRs gerados por IA excede a capacidade humana de revisar: depois de abrir o PR, o próprio agente entra em **babysitting** — checando repetidamente se o CI está verde e se revisores (Copilot, ferramenta externa, ou humano) deixaram comentários, endereçando-os e resolvendo as conversas no GitHub, até o PR estar pronto para merge sem intervenção humana no meio do processo. Isso não elimina a revisão humana (que continua acontecendo via comentários no PR), mas remove o humano do loop de "verificar se o CI passou e corrigir o óbvio" — liberando tempo de revisão para julgamento de mais alto nível. O autor identifica essa mudança como a origem de um novo gargalo: **o humano vira o gargalo do próprio processo de revisão**, porque não é possível paralelizar a leitura de código na mesma proporção em que os agentes paralelizam a geração — "não consigo entregar quatro tarefas ao mesmo tempo se precisar ler 10.000 linhas de código por dia". A resposta proposta não é revisar mais rápido, mas colocar [[wiki/concepts/quality-gate|quality gates]] automatizados com [[wiki/concepts/ratchet-baseline|ratchet]] para barrar regressões antes mesmo de chegarem à revisão humana, partindo da premissa de que "como qualquer controle de qualidade, o humano é falho".
+
+## Tipos genéricos como item recorrente de review
+
+[[wiki/sources/underengineering-overengineering-mario-souto]] cita dois apontamentos de review que se repetem na prática e que a fonte conecta a [[wiki/concepts/under-engineering]] (falta de flexibilidade/robustez, não excesso dela): tipos genéricos demais (`any` em TypeScript) em vez de tipos específicos, e passar tipos primitivos (string) onde um enum representaria melhor um conjunto fechado de valores (ex.: tipos de pagamento passados como string solta). O ponto não é "tipar tudo por tipar" — é que a ausência de tipo específico é, na prática, ausência de validação, o mesmo sintoma de under-engineering que aparece em "ausência de checks automatizados".
+
 ## Relacionado
 
 - [[wiki/concepts/definicao-de-pronto]] — code review é um dos critérios de "pronto"
@@ -67,3 +75,5 @@ Em times que usam IA generativa/agêntica pesadamente, [[wiki/concepts/divida-co
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]
 - [[wiki/sources/cognitive-debt-margaret-storey]] — code review como checkpoint de entendimento compartilhado, requisito mínimo de "uma pessoa entende totalmente" antes do deploy
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — "looking good to me" como sintoma de agentes autônomos de longa duração; skill Grill Me como mitigação
+- [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — babysitting de PR pelo próprio agente (loop de CI + comentários + resolução de conversas); humano como gargalo de revisão em escala
+- [[wiki/sources/underengineering-overengineering-mario-souto]] — tipos genéricos (`any`) e primitivos soltos em vez de enum como itens recorrentes de review, ligados a under-engineering
