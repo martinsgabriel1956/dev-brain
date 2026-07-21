@@ -4,7 +4,7 @@ title: "Arquitetura de Software"
 aliases: ["software architecture", "decisao arquitetural"]
 date_created: 2026-07-03
 date_updated: 2026-07-20
-source_count: 6
+source_count: 7
 tags: [arquitetura, carreira, fundamentos, ia, pos-graduacao]
 skill: tech-mentor-leadership
 status: draft
@@ -54,6 +54,10 @@ Nenhum desses livros foi lido/ingerido diretamente ainda no wiki — são citaç
 
 [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]] descreve como o repertório documentado nesta página é avaliado na prática: uma [[wiki/concepts/entrevista-system-design|entrevista de system design]] não recompensa quem desenha rápido, mas quem levanta requisitos, monta plano de capacidade e modela dados/API antes de desenhar — e pune quem cita tecnologia sem domínio real, ecoando o ponto desta página de que decisão arquitetural exige análise de contexto real, não um prompt ou uma resposta decorada.
 
+## Fronteiras de Aplicação Não Se Resolvem Só na Tecnologia
+
+[[wiki/sources/application-boundary-martin-fowler]] reforça, de um ângulo mais antigo (2003) e mais fundamental que o "contexto organizacional" já documentado nesta página: nem a própria unidade "aplicação" tem definição puramente técnica. Fowler descreve aplicações como construções sociais — vistas como uma unidade única por três grupos diferentes (devs via código, negócio via funcionalidade, financiadores via orçamento) que nem sempre concordam entre si. Ver [[wiki/concepts/application-boundary]] e [[wiki/concepts/contexto-organizacional-para-arquitetura]].
+
 ## Key Sources
 
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]]
@@ -62,3 +66,4 @@ Nenhum desses livros foi lido/ingerido diretamente ainda no wiki — são citaç
 - [[wiki/sources/filosofia-do-design-de-software-introducao]] — por que design (arquitetural ou não) é processo contínuo, não fase única
 - [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]] — pós-graduação em arquitetura ensina teoria, não prática; vantagens reais são networking, credencial e visão de negócio
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]] — como o repertório de arquitetura é avaliado em entrevista de system design
+- [[wiki/sources/application-boundary-martin-fowler]] — aplicações são construções sociais, não unidades tecnicamente objetivas

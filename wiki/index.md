@@ -163,6 +163,7 @@ date_updated: 2026-07-20
 | [[wiki/sources/underengineering-overengineering-mario-souto]] | Mário Souto (DevSoutinho): under-engineering é mais comum que over-engineering — não reinventar libs maduras (React Hook Form, Tailwind), variável de ambiente em vez de hardcode na Vercel, acoplamento login/criar conta, CI mínimo de ~31 linhas (lint+teste) com branch protection |
 | [[wiki/sources/sistema-produtividade-ia-adapta]] | Sistema pessoal de produtividade em 3 pilares (planejamento/priorização/execução): dump mental + regra dos 5 minutos, matriz de Eisenhower + tarefa principal do dia, execução via Adapta (skills de contexto pessoal + roteamento automático de modelo) |
 | [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]] | Demo prática de blue/green numa VPS única: Nginx como reverse proxy trocando entre duas portas via script, sem Kubernetes; deploy 100% manual via SSH como etapa antes de automatizar |
+| [[wiki/sources/application-boundary-martin-fowler]] | Martin Fowler (bliki, 2003): aplicações são construções sociais — devs, negócio e financiadores enxergam "unidade única" de formas diferentes; fronteiras são traçadas por política, não por critério técnico; contra a previsão de que SOA extinguiria aplicações |
 
 ## Concepts
 
@@ -673,6 +674,7 @@ date_updated: 2026-07-20
 | [[wiki/concepts/event-sourcing]] | Persistir eventos imutáveis em vez de estado — replay para calcular estado atual; auditoria nativa |
 | [[wiki/concepts/cqrs]] | Separar modelos de escrita e leitura — write emite eventos, read mantém projeções otimizadas |
 | [[wiki/concepts/ddd]] | Domínio no centro, adapters na borda — aggregates, domain events, bounded context |
+| [[wiki/concepts/application-boundary]] | Aplicações são construções sociais — devs, negócio e orçamento enxergam "uma unidade única" de formas diferentes; fronteira real é política, não técnica |
 | [[wiki/concepts/datomic]] | Banco de dados imutável com time-travel — append-only, datoms, snapshots; fundação do Nubank |
 | [[wiki/concepts/ledger-imutavel]] | Saldo = soma de transações; nunca UPDATE em entradas financeiras — padrão fintech obrigatório |
 | [[wiki/concepts/programacao-funcional]] | Imutabilidade + funções puras + efeitos explícitos — paradigma que elimina complexidade acidental |

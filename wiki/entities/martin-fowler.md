@@ -4,7 +4,7 @@ title: "Martin Fowler"
 aliases: ["Fowler", "martinfowler.com"]
 date_created: 2026-07-07
 date_updated: 2026-07-20
-source_count: 6
+source_count: 7
 tags: [thoughtworks, autor, testes, arquitetura, tech-debt, refactoring, agile]
 skill: tech-mentor-testing
 status: stable
@@ -33,6 +33,7 @@ Fowler é conhecido por identificar quando um termo popular carrega significados
 - [[contract-testing]] — terminologia (`ContractTest`) usada de forma consistente entre suas fontes
 - [[test-doubles]] — divulgou o termo guarda-chuva "TestDouble" no bliki em 2006, mas a taxonomia dos cinco tipos (Dummy/Fake/Stub/Spy/Mock) é de autoria de [[wiki/entities/gerard-meszaros]], não dele — ver [[wiki/sources/test-double-martin-fowler]]
 - [[wiki/concepts/seedwork]] — termo cunhado por ele para descrever frameworks mínimos reconstruídos por cada time, a partir de discussão originada num post de Michael Feathers
+- [[wiki/concepts/application-boundary]] — tese de 2003 de que "aplicações são construções sociais", argumentando contra a previsão da época de que SOA tornaria aplicações obsoletas — ver [[wiki/sources/application-boundary-martin-fowler]]
 
 ## Testemunha e participante da origem do JUnit
 
@@ -60,3 +61,4 @@ Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter us
 - [[wiki/sources/como-evitar-over-engineering-david-farley]]
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]]
 - [[wiki/sources/cognitive-debt-margaret-storey]] — Future of Software Engineering Retreat
+- [[wiki/sources/application-boundary-martin-fowler]] — aplicações como construções sociais

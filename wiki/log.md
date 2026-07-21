@@ -2,6 +2,25 @@
 
 ---
 
+## [2026-07-20] ingest | Application Boundary (Martin Fowler)
+
+**Fonte:** [[wiki/sources/application-boundary-martin-fowler]] — bliki entry de Martin Fowler (11 de setembro de 2003), traduzido do inglês para PT-BR nesta ingestão. Salvo em `raw/application-boundary-martin-fowler.md`.
+
+**Skill carregada:** `tech-mentor-backend` — referência consultada: `references/architecture/ddd-advanced.md` (seção "Bounded Context" / "Strategic DDD"), a mais próxima do tema central do artigo (fronteiras de sistema definidas por relações organizacionais, não só técnicas).
+
+**Páginas criadas:**
+- `wiki/sources/application-boundary-martin-fowler.md`
+- `wiki/concepts/application-boundary.md` — novo conceito: aplicações como construções sociais, vistas como "uma unidade única" de formas diferentes por devs (código), negócio (funcionalidade) e financiadores (orçamento); fronteira real definida por política organizacional, não por critério técnico objetivo
+
+**Páginas atualizadas:**
+- `wiki/entities/martin-fowler.md` — nova linha na lista de termos/teses e em Key Sources; `source_count` 6 → 7
+- `wiki/concepts/ddd.md` — nova seção "Bounded Context como Fronteira Social, não só Técnica", ligando este bliki entry de 2003 (anterior à formalização de Bounded Context) ao strategic design de DDD, que o próprio Fowler recomenda como leitura complementar no artigo original; `source_count` 4 → 5
+- `wiki/concepts/contexto-organizacional-para-arquitetura.md` — nova seção "Precursor de 2003: Fronteiras Como Construção Social"; `source_count` 1 → 2
+- `wiki/concepts/arquitetura-de-software.md` — nova seção "Fronteiras de Aplicação Não Se Resolvem Só na Tecnologia"; `source_count` 6 → 7
+- `wiki/index.md` — nova linha em Sources e em Concepts (seção "Arquitetura Backend & Event-Driven")
+
+**Notas:** Artigo curto (3 parágrafos), sem dados quantitativos — bliki entry de opinião/observação. Nenhuma contradição encontrada com o que já estava na wiki; a fonte antecipa em ~20 anos (2003) o argumento que hoje sustenta [[wiki/concepts/contexto-organizacional-para-arquitetura]] e o strategic design de [[wiki/concepts/ddd]], e foi tratada como precursor histórico desses conceitos já documentados, não como novidade isolada. Duas questões em aberto registradas na fonte: (1) nenhuma fonte primária de DDD estratégico (Eric Evans/Vaughn Vernon) foi ainda ingerida diretamente — só referenciada de segunda mão via esta fonte e via `tech-mentor-backend`; (2) o contexto histórico específico do discurso "SOA vai substituir aplicações" de 2003 contra o qual Fowler argumenta não tem fonte primária própria na wiki, foi inferido só do texto do bliki.
+
 ## [2026-07-19] ingest | Under-Engineering vs Over-Engineering — Mário Souto (DevSoutinho)
 
 **Fonte:** [[wiki/sources/underengineering-overengineering-mario-souto]] — transcrição de vídeo do YouTube em português (sem necessidade de tradução), limpa e organizada em seções a partir de um dump de transcrição automática sem pontuação, fornecido pelo usuário. Salva em `raw/underengineering-overengineering-mario-souto.md`.
