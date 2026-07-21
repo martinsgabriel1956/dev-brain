@@ -3,8 +3,8 @@ type: concept
 title: "Novo Perfil do Desenvolvedor na Era da IA"
 aliases: ["dev ia", "engenheiro ia 2026", "novo dev", "perfil profissional ia"]
 date_created: 2026-06-02
-date_updated: 2026-06-09
-source_count: 4
+date_updated: 2026-07-21
+source_count: 5
 tags: [carreira, perfil-profissional, ia-para-devs, arquitetura, planejamento]
 skill: tech-mentor-ai
 status: draft
@@ -56,9 +56,14 @@ CEOs e gestores esperam que um dev que domina harness + visão de produto entreg
 
 O conceito descrito aqui ganhou nome formal confirmado por dados de campo do Vale do Silício em 2026: [[product-engineer]]. Stripe, Linear e Vercel já contratam com essa terminologia. O Product Engineer tem duas faces inseparáveis: senso de produto (fala com PM, mede impacto, tem [[taste-dev]]) + harness e qualidade (constrói a infra que builders e agentes usam). A observação de campo reforça a analogia do gerente: o dev não escreve mais a maioria do código — decide o que e como construir, e valida o resultado.
 
+## Recorte de Frontend
+
+[[wiki/sources/impacto-ia-mercado-frontend]] aplica o mesmo conceito ao mercado de frontend especificamente: "você não é mais um engenheiro de frontend, você é um desenvolvedor fullstack que entende de produto." O sinal mais concreto de pressão de mercado é salarial — sênior remoto caiu de uma média de 14–18k (pandemia) para 11–14k pós-IA, majoritariamente em vagas híbridas. A fonte reforça que o requisito de spec-driven + harness próprio já é filtro de entrevista, não diferencial.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-02-mercado-perfil-profissional]]
 - [[wiki/sources/formacao-ia-devs-aula-06-qa]]
 - [[wiki/sources/formacao-ia-devs-aula-01-abertura]]
 - [[wiki/sources/product-engineer-vale-do-silicio-2026]]
+- [[wiki/sources/impacto-ia-mercado-frontend]]

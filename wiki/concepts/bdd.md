@@ -3,8 +3,8 @@ type: concept
 title: "BDD — Behavior-Driven Development"
 aliases: ["behavior driven development", "gherkin", "cucumber", "specs executáveis"]
 date_created: 2026-04-22
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-07-21
+source_count: 3
 tags: [testes, bdd, gherkin, cucumber, especificação, living-docs]
 skill: tech-mentor-testing
 status: stable
@@ -75,7 +75,12 @@ BDD sem engajamento do negócio = testes com sintaxe mais verbosa. Se só o dev 
 
 Vale notar: BDD é frequentemente citado como boa prática por pessoas que admitem ter pouca experiência prática com ele — reforça a "armadilha crítica" acima, já que é fácil recomendar BDD em tese sem ter sentido o overhead na prática.
 
+## Given/When/Then sem Gherkin — uso pessoal de planejamento
+
+[[wiki/concepts/mapear-entrada-processamento-saida]] usa a mesma sintaxe dado/quando/então do Gherkin acima, mas como anotação pessoal de um dev antes de codificar — sem `.feature` files, step definitions ou engajamento de PO/QA. Não é BDD (falta o ritual completo de spec compartilhada e viva no CI), mas mostra que o valor do formato Given/When/Then como ferramenta de *pensamento* é separável do valor de BDD como *processo* de alinhamento com o negócio.
+
 ## Key Sources
 
 - [[wiki/sources/bdd]]
 - [[wiki/sources/tdd-sdd-bdd-era-ia]] — cobertura mais rasa, autor declara pouca prática com BDD
+- [[wiki/sources/3-pilares-testes-automatizados-produtividade]] — Given/When/Then usado como anotação pessoal de planejamento, fora do contexto formal de BDD

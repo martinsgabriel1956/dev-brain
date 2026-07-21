@@ -4,7 +4,7 @@ title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
 date_updated: 2026-07-21
-source_count: 10
+source_count: 11
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia]
 skill: tech-mentor-ai
 status: stable
@@ -55,6 +55,14 @@ Demonstração via [[entities/vercel-ai-sdk]] com Claude 3.5 Haiku: o prompt `"H
 
 Segundo [[wiki/sources/kimi-k3-china-mercado-ia-open-source]], a Anthropic já vende para Enterprise no Brasil — sinal, na leitura da fonte, de que a empresa sabe que não há vantagem competitiva sustentável apenas em vender token/API, daí o Claude Code ser frequentemente subsidiado com promoções e créditos gratuitos recorrentes. Ligado à tese de [[wiki/concepts/corrida-preco-qualidade-llm]]: concorrência de modelos open source (Kimi, DeepSeek) pressiona preço para baixo no mercado como um todo.
 
+## Bug de Billing no Claude Max 20 (String "hermes" no Git History)
+
+[[wiki/sources/hermes-agent-open-claw-learning-loop]] relata um segundo incidente de billing (o primeiro está na seção "Custo do Ultra Review" acima): um usuário do Claude Max 20 (US$200/mês) teve o uso extra consumido por um bug na detecção de ferramentas de terceiros da Anthropic, disparado ao encontrar a string "hermes" (de `hermes.md`, convenção real para specs de prompt de sistema em projetos de agentes) no Git history do usuário. Um representante da Anthropic (citado como "Tarik" na fonte, não confirmado externamente) admitiu publicamente o bug — "bug na detecção de ferramentas de terceiros e na forma como incluímos o status do Git no prompt do sistema" — e ofereceu reembolso aos afetados.
+
+## Dreaming in Claude
+
+Feature anunciada pela Anthropic dias antes da publicação de [[wiki/sources/hermes-agent-open-claw-learning-loop]]: permite revisar sessões passadas de agentes Claude, extrair padrões e curar memórias ao longo do tempo — resposta direta ao mesmo padrão de "learning loop com skill/memória persistente" que projetos open source como [[wiki/entities/hermes-agent]] e [[wiki/entities/open-claw]] já implementavam. Sem página própria na wiki ainda; candidata a stub caso surja fonte dedicada.
+
 ## Key Sources
 
 - [[wiki/sources/html-vs-markdown-para-agentes-de-ia]]
@@ -68,3 +76,4 @@ Segundo [[wiki/sources/kimi-k3-china-mercado-ia-open-source]], a Anthropic já v
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
 - [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — citada de passagem: erros `503` frequentes da API do Claude ("modelo ocupado, tente novamente") como exemplo do "novo normal" de sistemas caindo, exigindo estratégias de retry no lado do cliente
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — custo elevado do Ultra Review/Ultra Plan em teste pessoal, incluindo bug de crash que consumiu saldo sem entregar resultado
+- [[wiki/sources/hermes-agent-open-claw-learning-loop]] — bug de billing no Claude Max 20 disparado pela string "hermes" no Git history; anúncio do Dreaming in Claude

@@ -3,8 +3,8 @@ type: concept
 title: "Product Engineer"
 aliases: ["product engineer", "produto engineer", "engenheiro de produto"]
 date_created: 2026-06-09
-date_updated: 2026-06-09
-source_count: 1
+date_updated: 2026-07-21
+source_count: 2
 tags: [carreira, perfil-profissional, harness, produto, taste, ia-para-devs, builders]
 skill: tech-mentor-ai
 status: stable
@@ -87,6 +87,11 @@ Os quatro movimentos práticos para começar essa semana — segundo [[wiki/sour
 
 ---
 
+## Confirmação no Mercado de Frontend
+
+[[wiki/sources/impacto-ia-mercado-frontend]] descreve o mesmo fenômeno sem usar o termo formal: "hoje a gente tem uma preocupação em gerar ferramental para que a IA gere código de qualidade — a gente constrói a coisa que constrói a coisa." A fonte também nota que essa transição é o que separa quem sobrevive a um layoff de quem é pego desprevenido — reforçando a face 2 (harness e qualidade) como não-opcional.
+
 ## Key Sources
 
 - [[wiki/sources/product-engineer-vale-do-silicio-2026]]
+- [[wiki/sources/impacto-ia-mercado-frontend]]

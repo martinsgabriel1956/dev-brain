@@ -3,8 +3,8 @@ type: entity
 title: "Claude Code"
 aliases: ["claude code cli"]
 date_created: 2026-05-18
-date_updated: 2026-07-20
-source_count: 4
+date_updated: 2026-07-21
+source_count: 6
 tags: [ferramenta, agentes-ia, anthropic, llmops, cli, mcp, hooks]
 skill: tech-mentor-ai
 status: stable
@@ -28,6 +28,9 @@ CLI da Anthropic que age como [[agente-ia]] de desenvolvimento diretamente no te
 | [[context-compaction]] | Compactação automática da janela de contexto (~200k tokens) |
 | [[wiki/concepts/worktree-paralelismo]] | `claude --worktree <nome>` — cópia isolada do repo por agente, paralelismo de file system |
 | [[wiki/concepts/subagentes]] | `.claude/agents/*.md` — paralelismo de contexto, model/tools customizáveis por subagente |
+| [[wiki/concepts/rewind-checkpoints-claude-code]] | Checkpoints ao longo da conversa; `rewind` volta a um ponto anterior sem depender só de commits Git |
+| [[wiki/concepts/gerenciamento-de-sessoes-claude-code]] | Renomear e retomar sessões salvas localmente; `/go` para objetivos verificáveis de longo prazo |
+| [[wiki/concepts/modelo-por-leverage-tarefa]] | Alocar modelos mais fortes (Fable) para planejamento/arquitetura, mais leves (Sonnet) para execução rotineira |
 
 ## Planos (referência da gravação — verificar preços atuais)
 
@@ -68,6 +71,14 @@ Esc            → para a execução atual
 
 ---
 
+## Seleção Automática de Ferramentas
+
+As tools do Claude Code carregam descrições que entram no contexto do modelo — não é necessário nomear explicitamente qual ferramenta usar (ex.: "use o Playwright para testar isso"). Um pedido genérico como "testa aí no navegador" já é suficiente para o agente inferir e selecionar a ferramenta certa, embora nomear explicitamente também funcione e continue sendo válido quando há ambiguidade real entre ferramentas equivalentes.
+
+## Retenção de Dados de Sessão
+
+Sessões ficam retidas localmente em `~/.claude/projects` por padrão durante 30 dias, período configurável. Sessões individuais podem ser deletadas manualmente; enquanto não deletadas, ficam disponíveis para consulta, leitura ou análise.
+
 ## Sandbox Nativo
 
 Desde outubro de 2025, o Claude Code tem sandbox próprio usando [[wiki/entities/bubblewrap]] no Linux e Sandbox-exec no Mac — o mesmo stack técnico usado pelo projeto independente [[wiki/concepts/agent-containment|AI Jail]]. Diferença apontada por [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]]: por padrão, quando um comando falha por restrição do sandbox, o próprio agente pode tentar de novo pulando a restrição (padrão de retry ativado por padrão de fábrica) — mecanismo de opt-out não verificado contra a documentação oficial nesta ingestão, mas que, se real, muda quem controla a saída da cela (o agente, não só o usuário). Ver [[wiki/concepts/defense-in-depth]] para a comparação completa com o AI Jail, que não tem esse opt-out.
@@ -78,9 +89,15 @@ O mecanismo de [[context-compaction]] da janela de contexto do Claude Code é um
 
 ---
 
+## Comparação com Harnesses de Learning Loop (Hermes Agent, Open Claw)
+
+[[wiki/sources/hermes-agent-open-claw-learning-loop]] compara o Claude Code a projetos open source como [[wiki/entities/hermes-agent]] e [[wiki/entities/open-claw]], que embutem um [[wiki/concepts/closed-loop-skill-learning|closed-loop skill learning system]] sobre uma [[wiki/concepts/agent-memory-tres-camadas|memória em três camadas]]. Tese central da fonte: "Hermes não é o Claude Code com mais memória" — a diferença não é quantidade de memória, mas o loop que gera e refina skills automaticamente a partir do histórico de tarefas. O Claude Code foi citado no ranking global de uso de tokens do OpenRouter (perdendo para o Hermes Agent na semana anterior à publicação da fonte), e a Anthropic respondeu ao mesmo padrão com a feature "Dreaming in Claude" (ver [[wiki/entities/anthropic]]).
+
 ## Key Sources
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
 - [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — sandbox nativo (Bubblewrap/Sandbox-exec) e comparação com o AI Jail
+- [[wiki/sources/hermes-agent-open-claw-learning-loop]] — comparação com harnesses de learning loop (Hermes Agent, Open Claw)
+- [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — checkpoints/rewind, gerenciamento de sessões, `/go`, alocação de modelo por leverage, seleção automática de ferramentas, retenção de 30 dias

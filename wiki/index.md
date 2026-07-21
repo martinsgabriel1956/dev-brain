@@ -7,12 +7,15 @@ date_updated: 2026-07-21
 
 
 
+
 # Wiki Index
 
 ## Sources
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] | ~19 boas práticas de Claude Code atribuídas à documentação oficial da Anthropic: verificação embutida no prompt, descrever resultado e não passos, checkpoints/rewind, gerenciamento de sessões, `/go`, alocação de modelo por leverage, sandbox para loops não interrompidos, retenção de 30 dias |
+| [[wiki/sources/3-pilares-testes-automatizados-produtividade]] | Erick Wendel: 3 pilares — entender a tarefa antes de codificar (loop de confirmação de entendimento), setup de live reload/debug/testes integrados (node --watch/--inspect/--test + launch.json), e decompor tarefa em entrada/processamento/saída + Given/When/Then antes de implementar (exemplo Rinha de Backend); tipagem forte via JSDoc sem TypeScript |
 | [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] | Autoria inferida (Filipe Deschamps): 5 armadilhas de mentalidade ao aprender a programar — bomba de efeito moral (choque de complexidade que paralisa), relação criador-criatura (pedestal técnico), programar sem mirar impacto real, escolher o projeto (com "adrenalina") antes da tecnologia, e desligar autocomplete para não sabotar a spaced repetition |
 | [[wiki/sources/kimi-k3-china-mercado-ia-open-source]] | Kimi K3 (Moonshot, 2,8T parâmetros, MoE 896/16 experts, até 75% economia de KV Cache) como estudo de caso: sanções de exportação de chips forçam inovação arquitetural que, ao virar open source, espalha conhecimento de inferência barata — tese central: a camada de aplicação importa mais que o modelo, lock-in em um único provedor não faz sentido |
 | [[wiki/sources/8-sistemas-operacionais-explicados]] | Panorama dos 8 SOs mais conhecidos: Windows, macOS, Linux, Chrome OS, Android, iOS, Unix e BSD — propósito, mercado, vantagens e desvantagens de cada um |
@@ -116,6 +119,8 @@ date_updated: 2026-07-21
 | [[wiki/sources/server-sent-events-sse-tempo-real]] | SSE na prática: formato `data`/`event`, polling disfarçado como erro comum, Redis Pub/Sub entre microsserviços, Singleton na conexão, auth via JWT em query string |
 | [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]] | Worktrees (paralelismo de file system, `claude --worktree`) vs. subagentes (paralelismo de contexto, `.claude/agents/`) — quando usar cada um e o risco de excesso de skills/agentes sobrepostos |
 | [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]] | Go não é passageiro — cloud native por design, já consolidado em Mercado Livre/Mercado Pago/Stone; estratégia para frontend migrar: mirar pleno e usar fullstack como ponte |
+| [[wiki/sources/impacto-ia-mercado-frontend]] | IA comoditizou nichos de CRUD (agência, freelancer de landing page, consultoria pequena/média) e comprimiu salário de sênior remoto (14–18k → 11–14k); requisitos viraram spec-driven + harness próprio; monorepo favorece contexto de IA mais que microfrontends |
+| [[wiki/sources/5-boas-praticas-uiux-ux-pilot]] | Comparação Cursor vs. UX Pilot na mesma landing page: hierarquia visual, lei da proximidade (Gestalt), affordance e interface como máquina de estados — os quatro conceitos de design que fazem prompts de geração de UI saírem de resultado genérico para profissional |
 | [[wiki/sources/updates-tempo-real-polling-sse-websocket]] | Polling, SSE e WebSocket sob a lente de entrevista — quando polling simples é a resposta certa, LB L4 vs L7, tópico por usuário no Redis Pub/Sub, tabela de mensagens pendentes para offline |
 | [[wiki/sources/atrofia-cognitiva-ia-programacao]] | Sintaxe já era irrelevante antes da IA (autocomplete + Google); conhecimento perene (401/500, debugging de produção) é o que importa; fundação sólida torna atrofia reversível, mas quem aprendeu já com IA não tem o que recuperar |
 | [[wiki/sources/tdd-sdd-bdd-era-ia]] | TDD (red-green-refactor), SDD (contrato de boundary — OpenAPI/Protobuf/GraphQL) e BDD (Gherkin) como práticas com viés comportamental que também funcionam impostas sobre IA; proibir a IA de deletar testes que falham |
@@ -165,7 +170,9 @@ date_updated: 2026-07-21
 | [[wiki/sources/underengineering-overengineering-mario-souto]] | Mário Souto (DevSoutinho): under-engineering é mais comum que over-engineering — não reinventar libs maduras (React Hook Form, Tailwind), variável de ambiente em vez de hardcode na Vercel, acoplamento login/criar conta, CI mínimo de ~31 linhas (lint+teste) com branch protection |
 | [[wiki/sources/sistema-produtividade-ia-adapta]] | Sistema pessoal de produtividade em 3 pilares (planejamento/priorização/execução): dump mental + regra dos 5 minutos, matriz de Eisenhower + tarefa principal do dia, execução via Adapta (skills de contexto pessoal + roteamento automático de modelo) |
 | [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]] | Demo prática de blue/green numa VPS única: Nginx como reverse proxy trocando entre duas portas via script, sem Kubernetes; deploy 100% manual via SSH como etapa antes de automatizar |
-| [[wiki/sources/application-boundary-martin-fowler]] | Martin Fowler (bliki, 2003): aplicações são construções sociais — devs, negócio e financiadores enxergam "unidade única" de formas diferentes; fronteiras são traçadas por política, não por critério técnico; contra a previsão de que SOA extinguiria aplicações |
+| [[wiki/sources/application-boundary-martin-fowler]] | Martin Fowler (bliki, 2003): aplicações são construções sociais — devs, negócio e financiadores enxergam "unidade única" de formas diferentes; fronteiras são traçadas por política, não por critério técnico; contra a previsão de que SOA extinguiria aplicações
+| [[wiki/sources/papinho-tech-solo-adaptabilidade]] | Vestimenta e comunicação são adaptação estratégica ao contexto, não perda de essência; recusa em se adaptar fecha portas; comunicação muda por nível hierárquico e por canal de conteúdo |
+| [[wiki/sources/hermes-agent-open-claw-learning-loop]] | Hermes Agent (open source, MIT): closed-loop skill learning system de 5 etapas sobre memória em três camadas (sessão/persistente/skill) indexada via FTS5; gancho é o bug real de billing no Claude Max 20 disparado pela string "hermes" no Git history |
 
 ## Concepts
 
@@ -207,6 +214,8 @@ date_updated: 2026-07-21
 | [[wiki/concepts/networking-de-carreira]] | Mercado invisível de indicações — quanto mais sênior o cargo, mais a vaga é preenchida por "você conhece alguém?" em vez de vaga aberta |
 | [[wiki/concepts/credencialismo-formacao-formal]] | Diploma como proxy de disciplina, não de competência técnica — "tecnologia se ensina, disciplina não" |
 | [[wiki/concepts/definicao-de-objetivo-antes-de-decisao]] | "Vale a pena" sem objetivo definido é como perguntar se um avião vale a pena sem saber o destino |
+| [[wiki/concepts/nichos-frontend-automatizados-ia]] | Agência, freelancer de landing page e consultoria de CRUD foram os nichos de frontend mais comoditizados pela IA — arquitetura e observabilidade blindaram quem já operava nessa maturidade |
+| [[wiki/concepts/monorepo-vs-microfrontends-ia]] | Monorepo junta contexto para o agente numa alteração vertical; microfrontends fragmentam a mesma mudança em várias tarefas cross-repo, exigindo linkar worktree/PR manualmente |
 
 ### Recursos de Aprendizado
 
@@ -373,6 +382,8 @@ date_updated: 2026-07-21
 | [[wiki/concepts/export-controls-chips-ia]] | Sanções de exportação de chips NVIDIA para a China — pressão de fundo por trás de inovação arquitetural em MoE/KV Cache |
 | [[wiki/concepts/corrida-preco-qualidade-llm]] | Concorrência entre frontier fechado e open source empurra preço para baixo e qualidade para cima simultaneamente |
 | [[wiki/concepts/camada-de-aplicacao-vs-modelo]] | Com modelos cada vez mais equivalentes, a vantagem competitiva migra do modelo para a camada de aplicação |
+| [[wiki/concepts/agent-memory-tres-camadas]] | Memória de sessão + persistente (`memory.md`) + skill, indexada via FTS5 do SQLite — padrão comum a orquestradores de agente, não exclusivo de um projeto |
+| [[wiki/concepts/closed-loop-skill-learning]] | Loop de 5 etapas (task completion → pattern extraction → skill creation → refinement → periodic audit) que gera e refina skills automaticamente a partir do histórico de tarefas |
 
 ### Dívida Cognitiva & Teoria do Programa
 
@@ -390,6 +401,9 @@ date_updated: 2026-07-21
 | [[wiki/concepts/spec-driven-development]] | Planning-first: spec antes de executar; LLM executa autônoma; dev revisa resultado, não linha a linha |
 | [[wiki/concepts/worktree-paralelismo]] | Git worktrees isolam tarefas paralelas; base do trabalho L3 — múltiplas specs rodando simultaneamente |
 | [[wiki/concepts/subagentes]] | Paralelismo a nível de contexto — subtarefas convergem numa única PR; model/tools customizáveis por agente |
+| [[wiki/concepts/rewind-checkpoints-claude-code]] | Checkpoints e `rewind` no Claude Code — voltar a um ponto anterior da conversa sem depender só de commits Git |
+| [[wiki/concepts/gerenciamento-de-sessoes-claude-code]] | Renomear/retomar sessões locais do Claude Code; `/go` para objetivos verificáveis de longo prazo; retenção de 30 dias |
+| [[wiki/concepts/modelo-por-leverage-tarefa]] | Modelo mais forte para planejamento/arquitetura, mais leve para execução rotineira — alocação por alavancagem da tarefa |
 | [[wiki/concepts/context-engineering-harness]] | Rules + skills + MCPs formam o "mapa" do projeto — fator decisivo de qualidade acima do modelo escolhido |
 | [[wiki/concepts/rules-agente]] | Guardrails sempre no system prompt — agents.md/CLAUDE.md; onboarding digital do projeto |
 | [[wiki/concepts/skills-agente]] | Pastas lazy-loaded: só front-matter no system prompt; corpo sob demanda — substitui 80% das rules; skill Grill Me inverte quem revisa quem |
@@ -778,6 +792,10 @@ date_updated: 2026-07-21
 | [[wiki/concepts/component-library]] | Shadcn, Radix, Headless UI — componentes pré-prontos; headless dá controle total, estilizadas são mais rápidas |
 | [[wiki/concepts/fake-delay]] | Delay mínimo intencional (300ms) para garantir feedback visual perceptível — performance percebida é design |
 | [[wiki/concepts/design-como-interacao]] | Design se manifesta na interação, não na primeira impressão — micro-interações, onboarding, feedback, linguagem |
+| [[wiki/concepts/hierarquia-visual]] | Dois CTAs com o mesmo peso visual competem pela atenção — o mais fácil de clicar rouba conversão do que importa |
+| [[wiki/concepts/lei-da-proximidade-gestalt]] | Elementos próximos são lidos como um grupo único (Gestalt) — o logo da Unilever forma um U só quando os ícones estão juntos |
+| [[wiki/concepts/affordance]] | Propriedade visual que sugere como usar um elemento sem curva de aprendizado — botões sem cursor pointer ou hover confundem o usuário |
+| [[wiki/concepts/maquina-de-estados-ui]] | Componente sem estado de loading mapeado é o sintoma mais comum de não pensar a UI como máquina de estados |
 | [[wiki/concepts/react-compiler]] | Compilador do React 19 que memoiza valores e funções automaticamente em build time, reduzindo a necessidade de useMemo/useCallback manuais |
 | [[wiki/concepts/useMemo]] | Hook que memoiza o resultado de um cálculo — só recalcula quando as dependências mudam; overhead supera ganho em cálculos triviais |
 | [[wiki/concepts/useCallback]] | Hook que memoiza a referência de uma função entre renders — essencial para não quebrar `React.memo` em componentes filhos |
@@ -803,6 +821,10 @@ date_updated: 2026-07-21
 | [[wiki/concepts/teste-de-integracao-estreito-vs-amplo]] | Fowler separa "integration test" em estreito (double + contract test, rápido) e amplo (serviços reais, lento) |
 | [[wiki/concepts/unit-test-solitario-vs-sociavel]] | Solitário mocka tudo (London), sociável usa colaboradores reais (Detroit) — confusão irmã do narrow/broad |
 | [[wiki/concepts/criterios-de-bom-teste]] | Determinístico, conciso, relevante, compreensível, durável — e 100% de cobertura não garante ausência de bug |
+| [[wiki/concepts/mapear-entrada-processamento-saida]] | Decompor tarefa em entrada/processamento/saída + Given/When/Then antes de implementar — cada linha vira um teste anotado antes do primeiro código |
+| [[wiki/concepts/loop-de-confirmacao-de-entendimento]] | Ouvir a explicação inteira sem interromper, depois dizer de volta "o que eu entendi foi X" — antes de cair para implementação |
+| [[wiki/concepts/setup-live-reload-debug-testes]] | Live reload + `--inspect` + `node --test` integrados via `launch.json` — testes e debugger rodam a cada Ctrl+S, sem sair do editor |
+| [[wiki/concepts/tipagem-com-jsdoc]] | `@typedef`/`@param`/`@returns` dão autocomplete e validação de tipo em JavaScript puro, sem TypeScript |
 
 ### Padrões e Design
 
@@ -832,10 +854,16 @@ date_updated: 2026-07-21
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/erick-wendel]] | Criador de conteúdo brasileiro sobre Node.js e testes automatizados — método de 3 pilares para produtividade com testes |
+| [[wiki/entities/rinha-de-backend]] | Desafio open source de backend (transações crédito/débito) — usado como exemplo de decomposição de tarefa em casos de teste |
+| [[wiki/entities/ux-pilot]] | Ferramenta de geração de UI/UX por IA (telas completas ou wireframes) que exporta pro Figma, de onde o MCP conecta a uma IA de código |
 | [[wiki/entities/moonshot-ai]] | Lab chinês criador do Kimi — Kimi K3 (2,8T parâmetros, MoE 896/16 experts) publica método de inferência aberto para descentralizar conhecimento de servir modelos grandes |
 | [[wiki/entities/deepseek]] | Lab chinês — DeepSeek V4 Pro, maior open source antes do Kimi K3; DeepSeek Flash V4 como referência de modelo barato para tarefas do dia a dia |
 | [[wiki/entities/nvidia]] | Fabricante de GPUs — sujeita a sanções de exportação de chips para a China, pressão de fundo por trás de inovação em MoE/KV Cache |
 | [[wiki/entities/bubblewrap]] | Binário de sandboxing do GNOME (usado pelo Flatpak) — base técnica do AI Jail e do sandbox nativo do Claude Code |
+| [[wiki/entities/hermes-agent]] | Agente open source (MIT) com closed-loop skill learning system e memória em três camadas — liderou ranking de tokens do OpenRouter |
+| [[wiki/entities/open-claw]] | Agente open source (MIT), referência de mercado que motivou Hermes Agent e o "Dreaming in Claude" da Anthropic |
+| [[wiki/entities/hostinger]] | Provedora de VPS (menção patrocinada) — servidor virtual livre, físico gerenciado (DDoS, firewall IA, backups semanais) |
 | [[wiki/entities/augusto-galego]] | Criador de conteúdo técnico brasileiro — demo prática de deploy blue/green com Nginx numa VPS |
 | [[wiki/entities/hostgator]] | Provedora de hospedagem/VPS — patrocinadora da demo de deploy blue/green de Augusto Galego |
 | [[wiki/entities/anthony-d-mays]] | Ex-entrevistador técnico big tech ("de Compton ao Google") — autor do conselho "memorize o padrão, não o problema" para entrevistas de coding |

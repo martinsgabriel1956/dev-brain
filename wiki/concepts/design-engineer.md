@@ -3,8 +3,8 @@ type: concept
 title: "Design Engineer"
 aliases: ["design engineering", "dev com visão de design", "frontend designer"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-21
+source_count: 2
 tags: [design, frontend, cargo, design-engineer, workflow]
 skill: tech-mentor-frontend
 status: stable
@@ -47,12 +47,19 @@ O Design Engineer colapsa esse atrito sendo fluente nos dois lados.
 | Gavin | Designer na OpenAI |
 | Ned | Founder do Lovable |
 
+## Fundamentos que a IA não aplica sozinha
+
+Ferramentas de geração de UI por IA (ex.: [[wiki/entities/ux-pilot]], Cursor) produzem resultados sensivelmente melhores quando o prompt declara explicitamente princípios clássicos de design que um Design Engineer aplicaria por repertório: [[wiki/concepts/hierarquia-visual]], [[wiki/concepts/lei-da-proximidade-gestalt]] e [[wiki/concepts/affordance]]. Sem isso, a IA tende a gerar CTAs concorrentes, elementos "soltos" sem agrupamento visual, e botões sem sinalização de clicabilidade (`cursor: pointer`, hover) — os mesmos erros que um Design Engineer aprende a evitar por conhecimento de design, não de código.
+
 ## Ver também
 
 - [[design-first]] — workflow que Design Engineers tendem a adaptar/hibridizar
 - [[code-first]] — ponto de partida natural de muitos Design Engineers
 - [[fake-delay]] — exemplo de detalhe de UX que Design Engineers se importam
+- [[wiki/concepts/hierarquia-visual]] — princípio de design aplicável tanto no código quanto em prompts de geração de UI
+- [[wiki/concepts/affordance]] — sinalização de interatividade, um dos detalhes que Design Engineers cuidam por padrão
 
 ## Key Sources
 
 - [[wiki/sources/design-first-vs-code-first-referencias]]
+- [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]

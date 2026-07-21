@@ -3,8 +3,8 @@ type: concept
 title: "Comunicação Persuasiva"
 aliases: ["gatilhos mentais", "venda de ideia técnica", "persuasão técnica"]
 date_created: 2026-07-03
-date_updated: 2026-07-09
-source_count: 2
+date_updated: 2026-07-21
+source_count: 3
 tags: [comunicacao, persuasao, soft-skills, carreira, negociacao]
 skill: tech-mentor-leadership
 status: draft
@@ -43,8 +43,10 @@ O mesmo princípio — não expor o argumento cru, traduzi-lo para a moeda que o
 - [[wiki/concepts/habilidade-de-lidar-com-pessoas]] — persuasão é um caso aplicado de influência interpessoal
 - [[wiki/concepts/soft-skills]]
 - [[wiki/concepts/marketing-organico-viral]] — mesma lógica de tradução de mensagem aplicada a marketing de produto para consumidor
+- [[wiki/concepts/adaptabilidade]] — persuasão é um caso específico do princípio mais geral de adaptar comunicação ao público
 
 ## Key Sources
 
 - [[wiki/sources/3-soft-skills-que-poucos-programadores-dominam]]
 - [[wiki/sources/como-vender-um-saas-sem-audiencia]]
+- [[wiki/sources/papinho-tech-solo-adaptabilidade]] — adaptação de registro de comunicação por nível hierárquico e por canal

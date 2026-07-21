@@ -3,8 +3,8 @@ type: concept
 title: "Observabilidade"
 aliases: ["observabilidade", "observability", "três pilares", "metrics logs traces"]
 date_created: 2026-04-22
-date_updated: 2026-07-15
-source_count: 6
+date_updated: 2026-07-21
+source_count: 7
 tags: [observabilidade, metricas, logs, traces, prometheus, sre, infraestrutura]
 skill: tech-mentor-system-design
 status: stable
@@ -155,3 +155,4 @@ A prioridade de implementação acima (logs → métricas RED → SLO → tracin
 - [[sources/roadmap-dev-senior-2026]] — pilar 4: ler o sistema como sistema vivo (logs, métricas)
 - [[wiki/sources/10-conceitos-fundamentais-backend]] — observabilidade como "meta-conceito" nº 1: o que amarra cache, fila, banco e autenticação no mundo real; logs = o que aconteceu, métricas = está crescendo?, traces = onde o tempo foi gasto
 - [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — arquitetura do Collector como ponto único de roteamento; correlação automática de telemetria via agente de IA + MCP
+- [[wiki/sources/impacto-ia-mercado-frontend]] — observabilidade como um dos itens que menos mudou com IA, citado como marcador de maturidade de plataforma que blinda orgs do impacto de mercado

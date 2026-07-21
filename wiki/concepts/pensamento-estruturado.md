@@ -3,8 +3,8 @@ type: concept
 title: "Pensamento Estruturado"
 aliases: ["structured thinking", "raciocínio estruturado"]
 date_created: 2026-05-01
-date_updated: 2026-05-01
-source_count: 1
+date_updated: 2026-07-21
+source_count: 2
 tags: [carreira, resolucao-de-problemas, habilidade, debugging]
 skill: tech-mentor-leadership
 status: stable
@@ -32,6 +32,11 @@ A maioria das pessoas tenta resolver o problema grande de uma vez. Isso gera par
 
 Pensamento estruturado é o que torna a IA útil. Sem ele, você chega com uma pergunta vaga e recebe mil possibilidades. Com ele, você já sabe a pergunta certa — a IA responde de forma específica e acionável. Veja [[ia-ciclo-dependencia]].
 
+## Aplicação a tarefas de programação: entender antes de codificar
+
+[[wiki/concepts/loop-de-confirmacao-de-entendimento]] é uma instância concreta do passo 1 ("Entender") aplicada especificamente ao momento de receber uma tarefa de outra pessoa. [[wiki/concepts/mapear-entrada-processamento-saida]] é a instância concreta do passo 2 ("Decompor") aplicada a tarefas de programação especificamente: dividir a especificação em casos de entrada/processamento/saída antes de implementar, cada um virando diretamente um teste automatizado.
+
 ## Key Sources
 
 - [[wiki/sources/pensamento-estruturado-resolucao-de-problemas]]
+- [[wiki/sources/3-pilares-testes-automatizados-produtividade]] — aplicação do "entender antes de decompor" especificamente a tarefas de programação, via confirmação de entendimento e mapeamento entrada/processamento/saída

@@ -3,8 +3,8 @@ type: concept
 title: "Estado"
 aliases: ["state", "program state", "estado do sistema"]
 date_created: 2026-05-13
-date_updated: 2026-05-13
-source_count: 1
+date_updated: 2026-07-21
+source_count: 2
 tags: [estado, state, fundamentos, cs-fundamentals]
 skill: cs-fundamentals
 status: draft
@@ -44,7 +44,9 @@ bloquear_cartao()  # decisão baseada no estado acumulado
 - É o que diferencia fluxos com memória de fluxos sem memória
 - Complicações de estado compartilhado são a raiz de muitos bugs de concorrência
 - Em frontend: gerenciado por useState, Zustand, Redux etc.
+- [[wiki/concepts/maquina-de-estados-ui]] — aplicação deste conceito especificamente a componentes de interface (loading, erro, sucesso), incluindo o anti-padrão de estados mutuamente exclusivos coexistindo
 
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-quatro-passos]]
+- [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]

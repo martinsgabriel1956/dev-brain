@@ -3,8 +3,8 @@ type: concept
 title: "Agent Containment (Contenção de Agentes de IA)"
 aliases: ["agent containment", "contenção de agente", "sandboxing de agente de ia", "ai jail"]
 date_created: 2026-07-20
-date_updated: 2026-07-20
-source_count: 2
+date_updated: 2026-07-21
+source_count: 3
 tags: [agent-containment, sandboxing, security, defense-in-depth, principio-do-menor-privilegio, ai-safety, harness]
 skill: tech-mentor-security
 status: stable
@@ -39,6 +39,10 @@ A fonte propõe empilhar contenção de sessão com duas outras camadas independ
 2. **Código** (Git com push manual) — permite reverter dano ao filesystem do projeto via `git checkout`, mesmo que a cela falhe.
 3. **Sistema operacional imutável** — ver [[wiki/concepts/sistema-operacional-imutavel]] — garante que, mesmo se algo escapar da cela, a raiz do sistema volta ao estado original no próximo reboot.
 
+## Recomendação Oficial: Sandbox para Loops Não Interrompidos
+
+A própria Anthropic recomenda usar algum mecanismo de sandbox (VM, container ou dev container) sempre que o [[wiki/entities/claude-code]] roda em um loop não interrompido — sem um humano aprovando cada passo, como em automações de longa duração (`/go`, ver [[wiki/concepts/gerenciamento-de-sessoes-claude-code]]). A justificativa é a mesma da contenção de sessão descrita acima: sem alguém revisando cada ação em tempo real, o isolamento do processo passa a ser a única barreira prática contra um comando destrutivo ou uma dependência maliciosa.
+
 ## Relação com Outros Conceitos
 
 - [[wiki/concepts/principio-do-menor-privilegio]] — a contenção é PoLP aplicado ao próprio agente de IA, não só a serviços/usuários humanos.
@@ -50,3 +54,4 @@ A fonte propõe empilhar contenção de sessão com duas outras camadas independ
 
 - [[wiki/sources/ai-safety-guardrails]] — containment como terceira camada do modelo de guardrails de LLM (input filters → output filters → containment)
 - [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — implementação concreta via Bubblewrap, comparação com o sandbox nativo do Claude Code
+- [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — recomendação oficial da Anthropic de usar VM/container/dev container para loops de agente não interrompidos

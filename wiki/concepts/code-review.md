@@ -3,8 +3,8 @@ type: concept
 title: "Code Review"
 aliases: ["revisão de código", "pull request review", "PR review"]
 date_created: 2026-07-03
-date_updated: 2026-07-19
-source_count: 6
+date_updated: 2026-07-21
+source_count: 7
 tags: [code-review, qualidade, carreira, júnior, mentoria, grill-me, babysitting-de-agentes, quality-gate, under-engineering]
 skill: tech-mentor-leadership
 status: draft
@@ -61,6 +61,10 @@ Em times que usam IA generativa/agêntica pesadamente, [[wiki/concepts/divida-co
 
 [[wiki/sources/underengineering-overengineering-mario-souto]] cita dois apontamentos de review que se repetem na prática e que a fonte conecta a [[wiki/concepts/under-engineering]] (falta de flexibilidade/robustez, não excesso dela): tipos genéricos demais (`any` em TypeScript) em vez de tipos específicos, e passar tipos primitivos (string) onde um enum representaria melhor um conjunto fechado de valores (ex.: tipos de pagamento passados como string solta). O ponto não é "tipar tudo por tipar" — é que a ausência de tipo específico é, na prática, ausência de validação, o mesmo sintoma de under-engineering que aparece em "ausência de checks automatizados".
 
+## Arquivo Dedicado de Review no Claude Code
+
+A recomendação oficial da Anthropic para o [[wiki/entities/claude-code]] é manter um arquivo separado (`review`) com instruções pertinentes só a code review — critérios do que checar, o que ignorar — mantendo informações gerais do projeto no [[wiki/concepts/claude-md|CLAUDE.md]]. Separar os dois evita que o contexto de review fique diluído entre regras de projeto e critérios de revisão, e vice-versa. O Claude Code também expõe um comando `/code-review`, recomendado com o effort "ultra" para revisões de código substancial e complexo.
+
 ## Relacionado
 
 - [[wiki/concepts/definicao-de-pronto]] — code review é um dos critérios de "pronto"
@@ -77,3 +81,4 @@ Em times que usam IA generativa/agêntica pesadamente, [[wiki/concepts/divida-co
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — "looking good to me" como sintoma de agentes autônomos de longa duração; skill Grill Me como mitigação
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — babysitting de PR pelo próprio agente (loop de CI + comentários + resolução de conversas); humano como gargalo de revisão em escala
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — tipos genéricos (`any`) e primitivos soltos em vez de enum como itens recorrentes de review, ligados a under-engineering
+- [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — arquivo dedicado `review` separado do CLAUDE.md; `/code-review --ultra` para revisões complexas

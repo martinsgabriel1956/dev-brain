@@ -3,8 +3,8 @@ type: concept
 title: "Hooks de Agente"
 aliases: ["hooks claude code", "agent hooks", "hooks automação"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 1
+date_updated: 2026-07-21
+source_count: 2
 tags: [claude-code, hooks, automacao, agente-ia, llmops, context-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -116,6 +116,11 @@ Hooks = comandos garantidos pelo runtime (sempre executados)
 
 Use os dois em conjunto: CLAUDE.md para contexto e diretrizes gerais, hooks para garantir comportamentos críticos.
 
+## Caso: Hook de Fim de Sessão Alimentando Pattern Extraction
+
+[[wiki/sources/hermes-agent-open-claw-learning-loop]] descreve um uso manual comum, precursor da automação do [[wiki/concepts/closed-loop-skill-learning|closed-loop skill learning system]] do Hermes Agent: um hook disparado ao fim da sessão (`Stop`) que coleta tudo que se repetiu na tarefa e alimenta uma chamada de LLM geradora de padrões, cujo output realimenta o arquivo de regras/skill do projeto — ou seja, `Stop` usado não só para notificação, mas como gatilho de curadoria de memória entre sessões.
+
 ## Key Sources
 
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
+- [[wiki/sources/hermes-agent-open-claw-learning-loop]] — hook de `Stop` como pattern extraction manual, precursor do closed-loop skill learning

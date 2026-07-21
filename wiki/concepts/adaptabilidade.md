@@ -3,8 +3,8 @@ type: concept
 title: "Adaptabilidade"
 aliases: ["adaptability", "flexibilidade profissional", "resiliência a mudança"]
 date_created: 2026-05-19
-date_updated: 2026-05-31
-source_count: 2
+date_updated: 2026-07-21
+source_count: 3
 tags: [soft-skills, adaptabilidade, carreira, resiliência, profissional-do-futuro]
 skill: tech-mentor-leadership
 status: stable
@@ -30,6 +30,14 @@ São complementares, frequentemente confundidas:
 
 Uma pessoa pode ser adaptável a nível técnico (aprender nova stack rapidamente) mas ter baixa inteligência emocional (desregular sob pressão de prazo).
 
+## Adaptação sem Perda de Essência (Vestimenta, Comunicação, Contexto)
+
+[[wiki/sources/papinho-tech-solo-adaptabilidade]] argumenta que adaptabilidade não é abrir mão de quem você é — é ajustar a forma de se comunicar e se apresentar sem mudar a essência. Exemplo concreto: o mesmo apresentador se veste formalmente (camisa social) num congresso acadêmico de educação e informalmente (camiseta, bermuda) num evento de startups — a pessoa é a mesma, o contexto exige registros diferentes. Ver detalhamento em [[wiki/concepts/imagem-profissional]].
+
+A recusa em se adaptar ("eu sou assim e pronto, quem quiser que aceite") é descrita como escolha legítima, mas de alto risco: as pessoas vão julgar de qualquer forma, e a falta de adaptação fecha portas — especialmente quando a pessoa representa algo maior que si mesma (uma empresa, uma marca). Isso é mais grave quanto maior a visibilidade/representação envolvida.
+
+O mesmo princípio se aplica ao nível de comunicação esperado conforme a progressão de carreira (júnior → pleno → sênior → tech lead → staff/principal): o registro de comunicação muda a cada nível — staff/principal interage mais com executivos e precisa adaptar a linguagem — sem que isso signifique mudança de identidade. Ver [[wiki/concepts/comunicacao-tecnica]].
+
 ## Conexões
 
 - [[wiki/concepts/soft-skills]]
@@ -49,3 +57,4 @@ Na era da IA, a velocidade de mudança eliminou a possibilidade de roadmaps de 3
 
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]
 - [[wiki/sources/profissional-do-futuro-ia-identidade-aprendizado]]
+- [[wiki/sources/papinho-tech-solo-adaptabilidade]] — vestimenta/comunicação como adaptação estratégica sem perda de essência; comunicação por nível hierárquico

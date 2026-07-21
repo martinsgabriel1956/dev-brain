@@ -3,8 +3,8 @@ type: concept
 title: "Skills (Padrão de Harness)"
 aliases: ["skills harness", "agents skills", "skill pattern ia", "skills.sh"]
 date_created: 2026-06-02
-date_updated: 2026-07-19
-source_count: 6
+date_updated: 2026-07-21
+source_count: 7
 tags: [skills, harness, context-engineering, lazy-loading, system-prompt, grill-me, rfc, babysitting-de-agentes, produto-de-consumo]
 skill: tech-mentor-ai
 status: stable
@@ -106,6 +106,10 @@ A mesma fonte descreve a skill **Grill Me**, de [[wiki/entities/matt-pocock]]: u
 
 [[wiki/sources/sistema-produtividade-ia-adapta]] mostra um uso de skills fora de contexto de codificação: a plataforma [[wiki/entities/adapta]] deixa o usuário configurar skills com contexto de rotina pessoal (tipo de trabalho, horário fixo de expediente, hábitos recorrentes) e um "assistente de rotina" com forma de pensar e prioridades próprias, usado depois para planejamento semanal e apoio a decisões de carreira. A lógica é a mesma do uso "como guardrail contextual" já documentado acima (contexto que não precisa ser reexplicado a cada prompt), só que aplicada a produtividade pessoal em vez de padrões de código — evidência de que o padrão skill (front-matter leve + corpo carregado sob demanda) se generalizou para além de harnesses de desenvolvimento.
 
+## Caso: Skill Auto-Gerada por Learning Loop (Hermes Agent)
+
+[[wiki/sources/hermes-agent-open-claw-learning-loop]] descreve um passo além da criação manual de skills: um [[wiki/concepts/closed-loop-skill-learning|closed-loop skill learning system]] (usado pelo [[wiki/entities/hermes-agent]]) que extrai padrões de tarefas concluídas, cria a skill automaticamente e depois a **refina** — mesclando ou simplificando skills sobrepostas — sem que o desenvolvedor escreva o `SKILL.md` à mão. A mesma fonte reforça o limite já documentado nos casos acima: a skill gerada nasce específica de domínio (ex.: "sumarizar PR do GitHub") e não generaliza para decisões de maior julgamento (ex.: planejar migração de banco de dados).
+
 ## Aviso de Segurança
 
 Skills podem conter scripts executáveis. **Skills de terceiros não verificadas podem conter código malicioso** (roubar `.env`, etc.). Verificar antes de instalar.
@@ -118,3 +122,4 @@ Skills podem conter scripts executáveis. **Skills de terceiros não verificadas
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — skill Grill Me (Matt Pocock) e workforce multiagente com skills curtas (<70 linhas) por papel
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — skill de babysit para o agente monitorar e endereçar comentários no próprio PR até poder mergear
 - [[wiki/sources/sistema-produtividade-ia-adapta]] — skill como contexto pessoal persistente (rotina, prioridades) em produto de consumo, fora de contexto de codificação
+- [[wiki/sources/hermes-agent-open-claw-learning-loop]] — skill auto-gerada e auto-refinada por closed-loop skill learning system, limite de generalização por domínio

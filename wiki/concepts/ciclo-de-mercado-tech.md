@@ -3,8 +3,8 @@ type: concept
 title: "Ciclo de Mercado Tech"
 aliases: ["ciclo de abundância e depressão", "lei da oferta e procura em tech", "ciclo de contratação tech"]
 date_created: 2026-07-03
-date_updated: 2026-07-10
-source_count: 4
+date_updated: 2026-07-21
+source_count: 5
 tags: [carreira, mercado-de-trabalho, oferta-e-procura, ciclo-economico]
 skill: tech-mentor-leadership
 status: draft
@@ -47,6 +47,10 @@ Em ciclo de depressão, a prioridade das empresas deixa de ser "produzir funcion
 
 Cada onda de tecnologia listada acima é, individualmente, uma [[wiki/concepts/curva-de-adocao-tecnologica|curva de adoção em S]]: começa devagar, cresce exponencialmente, desacelera. O próprio autor descreve ter apostado cedo em Ruby on Rails (2005), na fase inicial daquela curva — ilustrando a estratégia de [[wiki/concepts/antifragilidade|apostar em várias tecnologias ao longo de ~10 anos]] em vez de tentar prever com certeza qual onda vai vencer.
 
+## Ciclo de Depressão Setorial: Frontend Pós-IA
+
+[[wiki/sources/impacto-ia-mercado-frontend]] documenta uma versão setorial (não de linguagem/framework, mas de nicho de atuação) do mesmo mecanismo: a IA comoditizou o escopo de CRUD simples que sustentava agências, freelancers de landing page e consultorias pequenas/médias — encolhendo a demanda nesses nichos e comprimindo salário de sênior remoto (14–18k pandemia → 11–14k pós-IA, majoritariamente híbrido). Times com arquitetura de plataforma madura (microfrontends, design system, observabilidade, governança) ficaram relativamente blindados, porque nunca competiram nesse escopo simples em primeiro lugar — reforçando que fundação técnica/arquitetural, e não o nicho onde se está, é o que atravessa o ciclo de depressão.
+
 ## Conexões
 
 - [[apego-a-ferramentas]] — por que ficar preso a uma ferramenta específica amplia o dano de cada virada de ciclo
@@ -62,3 +66,4 @@ Cada onda de tecnologia listada acima é, individualmente, uma [[wiki/concepts/c
 - [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]
 - [[wiki/sources/pare-de-terceirizar-suas-decisoes]]
 - [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]
+- [[wiki/sources/impacto-ia-mercado-frontend]]

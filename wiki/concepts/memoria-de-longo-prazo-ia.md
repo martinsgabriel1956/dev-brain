@@ -3,8 +3,8 @@ type: concept
 title: "Memória de Longo Prazo para Agentes"
 aliases: ["long-term memory", "memória de longo prazo", "plano persistido", "research output salvo"]
 date_created: 2026-06-01
-date_updated: 2026-06-01
-source_count: 1
+date_updated: 2026-07-21
+source_count: 2
 tags: [context-engineering, coding-agents, rpi-workflow, refatoracao, subplano]
 skill: tech-mentor-ai
 status: draft
@@ -88,6 +88,11 @@ Memória de longo prazo é a extensão natural da separação de contextos: enqu
 - [[dumb-zone]] — subplanos mantêm cada sessão na smart zone
 - [[progressive-disclosure-ia]] — disclosure entre sessões em vez de dentro de uma sessão
 
+## Distinção de Escopo: Memória de Preferências vs. Memória de Refatoração
+
+Esta página cobre memória persistida para uma única mudança grande (research → subplanos de uma refatoração). Para memória de propósito geral entre sessões distintas — preferências do usuário, padrões de tarefas recorrentes, skills geradas automaticamente — ver [[wiki/concepts/agent-memory-tres-camadas]] e [[wiki/concepts/closed-loop-skill-learning]], que descrevem um padrão irmão com escopo mais amplo.
+
 ## Key sources
 
 - [[wiki/sources/context-engineering-codebases-grandes-rpi]] — padrão demonstrado com refatoração de SubscriptionService para DDD tático (13+ serviços, 6 PRs)
+- [[wiki/sources/hermes-agent-open-claw-learning-loop]] — padrão irmão de memória entre sessões, com escopo mais amplo (preferências e skills, não só refactoring plans)

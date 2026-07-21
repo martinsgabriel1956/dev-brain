@@ -2,6 +2,26 @@
 
 ---
 
+## [2026-07-21] ingest | Adaptabilidade — Papinho Tech Solo
+
+**Fonte:** [[wiki/sources/papinho-tech-solo-adaptabilidade]] — transcrição de podcast em português (Papinho Tech Solo, gravada em Gramado durante o Gramado Summit), texto corrido sem pontuação, fornecida pelo usuário; reescrita como Markdown estruturado por seções (introdução, adaptação de público entre dois eventos, comunicação não-verbal, adaptabilidade como skill de mercado, adaptação forçada por eventos externos, analogia de jogos FPS, fechamento). Sem necessidade de tradução (fonte já em português). Salva em `raw/papinho-tech-solo-adaptabilidade.md`.
+
+**Skill carregada:** `tech-mentor-leadership` — consistente com a fonte irmã já ingerida do mesmo apresentador/podcast, [[wiki/sources/papinho-tech-solo-aprender-a-aprender]].
+
+**Páginas criadas:**
+- `wiki/sources/papinho-tech-solo-adaptabilidade.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/adaptabilidade.md` — nova seção "Adaptação sem Perda de Essência (Vestimenta, Comunicação, Contexto)"; `source_count` 2 → 3
+- `wiki/concepts/imagem-profissional.md` — nova seção "Vestimenta como Comunicação Não-Verbal, Não como Identidade Fixa"; `source_count` 1 → 2
+- `wiki/concepts/comunicacao-tecnica.md` — nova seção "Comunicação Muda com o Nível Hierárquico"; `source_count` 2 → 3
+- `wiki/concepts/soft-skills.md` — novo Key Source; `source_count` inalterado no frontmatter mas linha adicionada
+- `wiki/concepts/comunicacao-persuasiva.md` — novo backlink cruzado com adaptabilidade; `source_count` 2 → 3
+- `wiki/entities/linuxtips.md` — novo Key Source; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources
+
+**Notas:** Nenhuma contradição encontrada com o wiki existente — a fonte converge fortemente com o que já estava documentado em [[wiki/concepts/adaptabilidade]] e [[wiki/concepts/imagem-profissional]], adicionando exemplos concretos novos (contraste de vestimenta entre dois eventos consecutivos, comunicação por nível hierárquico de carreira, adaptação de formato de conteúdo por rede social). Nenhum dado quantitativo novo — todas as alegações têm confiança média (opinião de criador de conteúdo, sem pesquisa citada).
+
 ## [2026-07-21] ingest | 5 Cuidados que eu teria se fosse começar a programar hoje
 
 **Fonte:** [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] — transcrição de vídeo em português, texto corrido sem pontuação, fornecida pelo usuário; reescrita como Markdown estruturado por seções (introdução + um cuidado por seção: bomba de efeito moral, relação criador-criatura, programação como profissão vs. impacto, desânimo para iniciar/projeto antes da tecnologia, autocomplete). Sem necessidade de tradução (fonte já em português). Salva em `raw/5-cuidados-antes-de-comecar-a-programar.md`.
@@ -3032,5 +3052,141 @@ Entities:
 - `wiki/entities/martin-fowler.md` — nova seção "Future of Software Engineering Retreat"; `source_count` 5 → 6
 
 **Notas:** Nenhuma página em `wiki/index.md` precisou de nova linha — a fonte, os conceitos e as três entidades já estavam indexados desde 2026-07-16. Este ingest é um caso de fonte primária que, na primeira passada, foi processada a partir de um resumo do WebFetch em vez do texto completo — lição para futuras ingestões: preferir `curl` + leitura do HTML bruto quando o WebFetch retornar algo visivelmente mais curto que o esperado para o tamanho do artigo.
+
+---
+
+## [2026-07-21] ingest | O que a IA Realmente Impactou no Mercado de Frontend
+
+**Fonte:** [[wiki/sources/impacto-ia-mercado-frontend]] — transcrição de vídeo fornecida diretamente pelo usuário (colada no chat, não um arquivo pré-existente); transformada em Markdown organizado por seções e salva em `raw/impacto-ia-mercado-frontend.md`. O texto já estava em português, sem necessidade de tradução. Autor não identificado no conteúdo (o falante se dirige a alguém chamado "Isaac", sem mais contexto) — sinalizado em Open Questions no source page.
+
+**Skill carregada:** `tech-mentor-frontend` — diretório `/home/nemomartins/Documentos/new/skills/` continua ausente neste ambiente (usuário atual é `gabriel-martins`, não `nemomartins`), então a calibração de domínio seguiu os padrões já demonstrados nas páginas existentes da wiki em vez do arquivo de skill.
+
+**Páginas criadas:**
+- `raw/impacto-ia-mercado-frontend.md`
+- `wiki/sources/impacto-ia-mercado-frontend.md`
+- `wiki/concepts/monorepo-vs-microfrontends-ia.md` (stub) — monorepo concentra contexto para o agente numa alteração vertical; microfrontends fragmentam a mesma mudança em várias tarefas cross-repo
+- `wiki/concepts/nichos-frontend-automatizados-ia.md` (stub) — agência, freelancer de landing page e consultoria de CRUD como os nichos mais comoditizados pela IA dentro do mercado de frontend
+
+**Páginas atualizadas:**
+- `wiki/concepts/novo-perfil-dev-ia.md` — nova seção "Recorte de Frontend"; `source_count` 4 → 5
+- `wiki/concepts/product-engineer.md` — nova seção "Confirmação no Mercado de Frontend"; `source_count` 1 → 2
+- `wiki/concepts/spec-driven-development.md` — nova linha em Key Sources (SDD como filtro de entrevista); `source_count` 9 → 10
+- `wiki/concepts/harness.md` — nova linha em Key Sources (harness próprio como requisito de contratação); `source_count` 8 → 9
+- `wiki/concepts/worktree-paralelismo.md` — nova seção "Worktree Cross-Repo em Microfrontends"; `source_count` 5 → 6
+- `wiki/concepts/ciclo-de-mercado-tech.md` — nova seção "Ciclo de Depressão Setorial: Frontend Pós-IA"; `source_count` 4 → 5
+- `wiki/concepts/observabilidade.md` — nova linha em Key Sources (observabilidade como marcador de maturidade que blinda do impacto de mercado); `source_count` 6 → 7
+- `wiki/concepts/monorepo-mobile.md` — nova linha em "Relacionado" linkando ao novo stub; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (seção "Carreira & Soft Skills")
+
+**Notas:** Nenhuma entidade nova foi criada — o vídeo não identifica autor, canal ou empresa própria (apenas cita empresas já cobertas na wiki como exemplos de vagas híbridas: Luiza Labs, Hotmart, Itaú, sem página dedicada). Nenhuma contradição encontrada com o restante da wiki; o conteúdo reforça e dá um recorte setorial (frontend especificamente) a conceitos já estabelecidos em [[wiki/concepts/novo-perfil-dev-ia]] e [[wiki/concepts/ciclo-de-mercado-tech]]. Números de salário e proporção de vagas são estimativas de observação do autor, sem fonte de dado formal — tratados como opinião qualificada no source page.
+
+---
+
+## [2026-07-21] ingest | 5 Boas Práticas de UI/UX (com Cursor e UX Pilot)
+
+**Fonte:** [[wiki/sources/5-boas-praticas-uiux-ux-pilot]] — transcrição de vídeo colada diretamente no chat pelo usuário (não um arquivo pré-existente); transformada em Markdown organizado por seções e salva em `raw/5-boas-praticas-uiux-ux-pilot.md`. Texto já em português, sem necessidade de tradução.
+
+**Skill carregada:** `tech-mentor-frontend` — diretório `/home/nemomartins/Documentos/new/skills/` continua ausente neste ambiente (usuário atual é `gabriel-martins`), então a calibração de domínio seguiu os padrões já demonstrados em outras páginas de design/frontend da wiki (ex.: [[wiki/concepts/design-como-interacao]], [[wiki/concepts/design-engineer]]) em vez do arquivo de skill.
+
+**Páginas criadas:**
+- `raw/5-boas-praticas-uiux-ux-pilot.md`
+- `wiki/sources/5-boas-praticas-uiux-ux-pilot.md`
+- `wiki/concepts/hierarquia-visual.md` — peso de fonte/cor/posicionamento definindo a ordem em que o olho percorre a tela; inclui padrões Z e F de leitura
+- `wiki/concepts/lei-da-proximidade-gestalt.md` — elementos próximos são lidos como grupo único, independente do conteúdo
+- `wiki/concepts/affordance.md` — propriedade visual que sugere como um elemento deve ser usado; falhas comuns em UI gerada por IA (cursor pointer, hover, sublinhado ausentes)
+- `wiki/concepts/maquina-de-estados-ui.md` — componente de UI como máquina de estados explícita (idle, loading, erro, sucesso); anti-padrão de estados mutuamente exclusivos coexistindo
+- `wiki/entities/ux-pilot.md` (stub) — ferramenta de geração de UI/UX por IA que exporta pro Figma, de onde o MCP conecta a uma IA de código (Cursor/Claude Code)
+
+**Páginas atualizadas:**
+- `wiki/concepts/design-como-interacao.md` — nova seção sobre hierarquia/proximidade/affordance como camadas anteriores à interação; `source_count` 1 → 2
+- `wiki/concepts/design-engineer.md` — nova seção sobre fundamentos de design que a IA não aplica sozinha sem prompt explícito; `source_count` 1 → 2
+- `wiki/entities/figma.md` — nova seção sobre o papel do Figma como artefato intermediário num pipeline UX Pilot → Figma → MCP → IA de código; `source_count` 1 → 2
+- `wiki/concepts/design-first.md` — nova seção sobre a variante do fluxo com geração de conceito por IA antes do Figma; `source_count` 1 → 2
+- `wiki/concepts/estado.md` — novo link para `maquina-de-estados-ui` como aplicação do conceito a componentes de interface; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; quatro novas linhas em Concepts (seção "Frontend & Design Engineering"); nova linha em Entities
+
+**Notas:** Nenhuma contradição encontrada com o restante da wiki — o conteúdo é consistente e complementar a [[wiki/concepts/design-como-interacao]] e [[wiki/concepts/design-engineer]], adicionando quatro conceitos de design clássico (hierarquia visual, Gestalt, affordance, máquina de estados) que não estavam cobertos explicitamente na wiki até agora. O artigo externo citado no vídeo sobre padrões Z/F de leitura não foi linkado na transcrição — sinalizado em Open Questions no source page caso a fonte original seja localizada depois. Cursor (ferramenta) segue sem página dedicada na wiki, consistente com o tratamento dado a ele em outras fontes já ingeridas (mencionado em texto, sem entidade própria).
+
+---
+
+## [2026-07-21] ingest | 3 Pilares para Testes Automatizados e Produtividade no Dia a Dia
+
+**Fonte:** [[wiki/sources/3-pilares-testes-automatizados-produtividade]] — transcrição de vídeo colada diretamente no chat pelo usuário, reescrita como Markdown estruturado e salva em `raw/3-pilares-testes-automatizados-produtividade.md`. Texto já em português (removidas apenas repetições de fala e cacoetes de edição), sem necessidade de tradução. Autor identificado explicitamente no próprio vídeo: Erick Wendel.
+
+**Skill carregada:** `tech-mentor-testing`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-testing/SKILL.md` (o path do skill existe neste ambiente sob o usuário `gabriel-martins`, diferente do path documentado em CLAUDE.md sob `nemomartins` — localizado via busca no filesystem).
+
+**Páginas criadas:**
+- `raw/3-pilares-testes-automatizados-produtividade.md`
+- `wiki/sources/3-pilares-testes-automatizados-produtividade.md`
+- `wiki/concepts/loop-de-confirmacao-de-entendimento.md` — ouvir a explicação inteira sem interromper, depois dizer de volta "o que eu entendi foi X", antes de implementar
+- `wiki/concepts/mapear-entrada-processamento-saida.md` — decompor tarefa em entrada/processamento/saída + Given/When/Then, cada linha virando um teste anotado antes do primeiro código
+- `wiki/concepts/setup-live-reload-debug-testes.md` — live reload + `--inspect` + `node --test` integrados via `launch.json`, testes e debugger rodando a cada Ctrl+S
+- `wiki/concepts/tipagem-com-jsdoc.md` — `@typedef`/`@param`/`@returns` para autocomplete e validação de tipo em JavaScript puro, sem TypeScript
+- `wiki/entities/erick-wendel.md` (stub) — autor do vídeo
+- `wiki/entities/rinha-de-backend.md` (stub) — desafio open source usado como exemplo prático
+
+**Páginas atualizadas:**
+- `wiki/concepts/tdd.md` — nova seção "Mapear entrada/processamento/saída antes do primeiro teste"; `source_count` 7 → 8
+- `wiki/concepts/bdd.md` — nova seção sobre Given/When/Then usado como anotação pessoal fora do contexto formal de BDD; `source_count` 2 → 3
+- `wiki/concepts/debugging.md` — nova seção sobre setup prático de debugger integrado a live reload e testes; `source_count` 1 → 2
+- `wiki/concepts/comunicacao-tecnica.md` — nova seção "Confirmar entendimento antes de implementar"; `source_count` 3 → 4
+- `wiki/concepts/pensamento-estruturado.md` — nova seção aplicando os passos "Entender"/"Decompor" a tarefas de programação; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; quatro novas linhas em Concepts (seção "Testes & Qualidade"); duas novas linhas em Entities
+
+**Notas:** Nenhuma contradição encontrada com o restante da wiki — o conteúdo reforça e dá técnica concreta a conceitos já estabelecidos ([[wiki/concepts/tdd]], [[wiki/concepts/comunicacao-tecnica]], [[wiki/concepts/pensamento-estruturado]], [[wiki/concepts/debugging]]), sem sobrepor páginas existentes. O uso de Given/When/Then fora do contexto de BDD foi tratado como uso distinto e complementar em [[wiki/concepts/bdd]], não como equivalência. Duas observações técnicas da fonte (comportamento de `--experimental-test-coverage` com `--inspect`, e o nome do treinamento pago do autor) foram registradas como Open Questions no source page por serem específicas de versão/ambiente ou puramente promocionais. Path da skill `tech-mentor-testing` divergiu do documentado em CLAUDE.md (usuário `nemomartins` vs. `gabriel-martins`), mas foi localizado e carregado normalmente via busca no filesystem — sem impacto na calibração de domínio.
+
+---
+
+## [2026-07-21] ingest | Hermes Agent: o Novo Open Claw? Learning Loop, Skill Auto-Gerada e o Bug de Detecção que Torrou 200 Dólares no Claude Max 20
+
+**Fonte:** [[wiki/sources/hermes-agent-open-claw-learning-loop]] — transcrição de vídeo colada pelo usuário no chat, já em português (removidas apenas repetições de fala/cacoetes de edição), sem necessidade de tradução. Reescrita como Markdown estruturado por seções (bug do commit "Hermes", por que todo mundo fala do Hermes, o bug em si e a resposta da Anthropic, mudança de formato do canal, learning loop em 5 etapas, ressalva de domínio específico, construir vs. usar pronto, messaging gateway, pergunta em aberto, fechamento) e salva em `raw/hermes-agent-open-claw-learning-loop.md`. Autor do vídeo não se identifica explicitamente na transcrição.
+
+**Skill carregada:** `tech-mentor-ai`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/SKILL.md`; referência principal usada foi `references/ai/agent-memory.md` (taxonomia de memória cognitiva → técnica, working/episódica/semântica/procedural, external memory stores) para calibrar a comparação com a arquitetura de três camadas descrita na fonte.
+
+**Páginas criadas:**
+- `raw/hermes-agent-open-claw-learning-loop.md`
+- `wiki/sources/hermes-agent-open-claw-learning-loop.md`
+- `wiki/concepts/agent-memory-tres-camadas.md` — memória de sessão + persistente + skill, indexada via FTS5 do SQLite
+- `wiki/concepts/closed-loop-skill-learning.md` — loop de 5 etapas que gera e refina skills automaticamente a partir do histórico de tarefas
+- `wiki/entities/hermes-agent.md` (stub) — agente open source protagonista da fonte
+- `wiki/entities/open-claw.md` (stub) — agente open source citado como referência de mercado
+- `wiki/entities/hostinger.md` (stub) — VPS citada em bloco patrocinado
+
+**Páginas atualizadas:**
+- `wiki/concepts/harness.md` — nova seção "Harnesses com Learning Loop Embutido (Hermes Agent, Open Claw)"; `source_count` 9 → 10
+- `wiki/concepts/skills-agente.md` — novo caso "Skill Auto-Gerada por Learning Loop (Hermes Agent)"; `source_count` 6 → 7
+- `wiki/concepts/hooks-agente.md` — novo caso de hook de `Stop` alimentando pattern extraction; `source_count` 1 → 2
+- `wiki/concepts/memoria-de-longo-prazo-ia.md` — nova seção de distinção de escopo frente a `agent-memory-tres-camadas`; `source_count` 1 → 2
+- `wiki/entities/anthropic.md` — novas seções sobre o bug de billing no Claude Max 20 e sobre o "Dreaming in Claude"; `source_count` 10 → 11
+- `wiki/entities/claude-code.md` — nova seção de comparação com harnesses de learning loop; `source_count` 4 → 5
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (seção "Agentes & LLMOps"); três novas linhas em Entities
+
+**Notas:** Nenhuma contradição encontrada com o restante da wiki. [[wiki/concepts/memoria-de-longo-prazo-ia]] já cobria memória persistida entre sessões, mas com escopo estreito (research → subplanos de uma refatoração RPI) — tratado como conceito irmão de `agent-memory-tres-camadas`, não substituído. [[wiki/concepts/hooks-agente]] já descrevia hooks como automação garantida pelo runtime; o novo caso (hook de `Stop` alimentando geração de padrões) é um uso adicional, não contraditório. O bug de billing no Claude Max 20 é o segundo incidente de billing registrado na entidade Anthropic (o primeiro, em [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]], foi o crash do Ultra Review consumindo saldo sem entregar resultado) — ambos tratados como relatos individuais, não como avaliação sistemática de confiabilidade de billing. Open questions registradas no source page: identidade do representante da Anthropic citado como "Tarik" não confirmada externamente; ausência de link/repositório do Hermes Agent na transcrição impede verificação de detalhes de implementação; autor do vídeo não se identifica explicitamente.
+
+---
+
+## [2026-07-21] ingest | 20 Melhores Práticas de Claude Code Segundo a Própria Anthropic
+
+**Fonte:** [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — transcrição de vídeo colada pelo usuário no chat, já em português (bloco de patrocínio da AUVP removido por não ser conteúdo técnico), sem necessidade de tradução. Reescrita como Markdown estruturado por seções (introdução + 19 práticas numeradas + observação final) e salva em `raw/20-melhores-praticas-claude-code-segundo-anthropic.md`. Autor do vídeo não se identifica explicitamente na transcrição.
+
+**Skill carregada:** `tech-mentor-ai`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/SKILL.md` (path divergente do documentado em CLAUDE.md sob `nemomartins`, localizado via busca no filesystem, mesmo padrão de ingestões anteriores); referência principal consultada foi `references/ai-assisted-engineering.md`.
+
+**Páginas criadas:**
+- `raw/20-melhores-praticas-claude-code-segundo-anthropic.md`
+- `wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic.md`
+- `wiki/concepts/rewind-checkpoints-claude-code.md` — checkpoints e `rewind`, complementar (não substituto) ao Git
+- `wiki/concepts/gerenciamento-de-sessoes-claude-code.md` — `/rename`, `--resume`, `/go`, retenção local de 30 dias
+- `wiki/concepts/modelo-por-leverage-tarefa.md` — alocação de modelo por alavancagem da tarefa (Fable para planejamento, Sonnet para execução)
+
+**Páginas atualizadas:**
+- `wiki/concepts/prompt-engineering.md` — nova seção "Verificação Embutida no Prompt (Agentes de Código)"; `source_count` 4 → 5
+- `wiki/concepts/code-review.md` — nova seção sobre arquivo dedicado `review` e `/code-review --ultra`; `source_count` 6 → 7
+- `wiki/concepts/agent-containment.md` — nova seção sobre sandbox recomendado para loops não interrompidos; `source_count` 2 → 3
+- `wiki/concepts/claude-md.md` — nota sobre comitar `.claude/` de projeto (não pessoal); `source_count` 3 → 4
+- `wiki/concepts/context-compaction.md` — novas seções `/clear`, `/context` e escopo de diretório mínimo; `source_count` 1 → 2
+- `wiki/entities/claude-code.md` — três novas linhas na tabela de Recursos Principais; novas seções "Seleção Automática de Ferramentas" e "Retenção de Dados de Sessão"; `source_count` 5 → 6
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (seção "Agentes & LLMOps")
+
+**Notas:** Nenhuma contradição encontrada com o restante da wiki — o conteúdo é consistente e reforça práticas já documentadas em [[wiki/concepts/context-compaction]], [[wiki/concepts/code-review]] e [[wiki/concepts/agent-containment]], adicionando granularidade nova (checkpoints/rewind, gerenciamento de sessões, alocação de modelo por leverage) que não estava coberta explicitamente na wiki até agora. Sintaxe exata de comandos citados (`/rename`, `/rewind`, `/go`) não foi verificada contra a documentação oficial atual — registrada como open question no source page, já que pode divergir da nomenclatura real da CLI em versões futuras. Path da skill `tech-mentor-ai` divergiu do documentado em CLAUDE.md (usuário `nemomartins` vs. `gabriel-martins`), consistente com ingestões anteriores.
 
 ---

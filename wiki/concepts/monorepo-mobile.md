@@ -3,8 +3,8 @@ type: concept
 title: "Monorepo Mobile"
 aliases: ["monorepo apps mobile", "turborepo mobile", "pnpm workspaces mobile"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
-source_count: 1
+date_updated: 2026-07-21
+source_count: 2
 tags: [mobile, monorepo, turborepo, platform-engineering, devex]
 skill: tech-mentor-mobile
 status: stable
@@ -50,4 +50,9 @@ Monorepo quando os apps são mantidos pelo mesmo time e compartilham UI. Repos s
 ## Relacionado
 
 - [[concepts/shared-sdk]] — packages do monorepo formam o shared SDK
+- [[wiki/concepts/monorepo-vs-microfrontends-ia]] — mesmo trade-off (compartilhamento vs. blast radius) discutido sob a ótica de contexto de agentes de IA no frontend web
+
+## Key Sources
+
 - [[sources/mobile-platform-engineering]]
+- [[wiki/sources/impacto-ia-mercado-frontend]]

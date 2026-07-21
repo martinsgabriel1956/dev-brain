@@ -3,8 +3,8 @@ type: concept
 title: "TDD — Test-Driven Development"
 aliases: ["test driven development", "red green refactor", "desenvolvimento guiado por testes"]
 date_created: 2026-04-22
-date_updated: 2026-07-19
-source_count: 7
+date_updated: 2026-07-21
+source_count: 8
 tags: [testes, tdd, design, red-green-refactor, qualidade, dora]
 skill: tech-mentor-testing
 status: stable
@@ -96,6 +96,10 @@ A mesma fonte argumenta que testar é intrinsecamente difícil (decidir tamanho 
 
 Contraintuitivamente, aplicar TDD não torna a entrega mais lenta — a pesquisa [[dora-metrics|DORA]] (*Accelerate*) mostra que equipes com melhores práticas de engenharia (incluindo testes automatizados como pré-condição para deploy contínuo) entregam com mais frequência e menor lead time, não menos. TDD é parte do que torna um sistema seguro de mudar rapidamente — sem ele, cada mudança exige validação manual, que é o gargalo real. Ver [[over-engineering]] para a discussão mais ampla dessa correlação.
 
+## Mapear entrada/processamento/saída antes do primeiro teste
+
+O ciclo RED-GREEN-REFACTOR pressupõe saber o que testar primeiro — na prática, o passo que precede o RED é decompor a tarefa em casos discretos. [[wiki/concepts/mapear-entrada-processamento-saida]] descreve essa técnica: três campos-guia (entrada, processamento, saída) preenchidos progressivamente conforme a especificação e as regras de negócio ficam claras, combinados com sentenças dado/quando/então, cada uma virando diretamente um teste anotado antes de qualquer implementação. Complementado por [[wiki/concepts/setup-live-reload-debug-testes]] — live reload, `--inspect` e `node --test` integrados via `launch.json`, fazendo cada `Ctrl+S` rodar os testes com o debugger já conectado, sem sair do editor.
+
 ## 100% de cobertura não é o objetivo
 
 Cobertura alta prova que uma linha foi executada, não que ela foi exercitada com os valores certos — não existe forma de testar (via TDD ou não) um bug que ninguém pensou em cobrir. Ver [[criterios-de-bom-teste]] para os cinco critérios (determinístico, conciso, relevante, compreensível, durável) usados para julgar se um teste feito sob TDD realmente vale o ciclo red-green-refactor.
@@ -111,3 +115,4 @@ Cobertura alta prova que uma linha foi executada, não que ela foi exercitada co
 - [[wiki/sources/como-evitar-over-engineering-david-farley]]
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — cobertura alta ≠ ausência de bugs
 - [[wiki/sources/xunit-martin-fowler]] — origem histórica do JUnit e da família Xunit
+- [[wiki/sources/3-pilares-testes-automatizados-produtividade]] — decomposição de tarefa em entrada/processamento/saída como passo pré-RED; setup de live reload/debug/testes integrados via `node --test` + `--inspect` + `launch.json`

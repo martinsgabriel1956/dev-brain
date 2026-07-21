@@ -3,8 +3,8 @@ type: concept
 title: "CLAUDE.md"
 aliases: ["claude md", "project memory", "user memory", "memory claude code"]
 date_created: 2026-05-31
-date_updated: 2026-06-09
-source_count: 3
+date_updated: 2026-07-21
+source_count: 4
 tags: [claude-code, claude-md, memory, context-engineering, agente-ia]
 skill: tech-mentor-ai
 status: stable
@@ -83,6 +83,8 @@ O LLM lê o `CLAUDE.md` como contexto e tenta seguir as instruções, mas pode i
 
 São complementares, não substitutos.
 
+A própria Anthropic recomenda comitar o `.claude/` de **projeto** (incluindo o `settings.json` de projeto) mas nunca o `.claude/` **pessoal** do usuário — comitar a versão de projeto garante que toda a equipe trabalhe com as mesmas especificações do Claude Code e permite evoluir esse comportamento coletivamente, em vez de cada dev divergir silenciosamente.
+
 ## Evidência Empírica: o Paper de Zurique
 
 Paper da Universidade de Zurique testou repositórios com e sem arquivos de contexto:
@@ -120,3 +122,4 @@ Devido à [[token-tax-multilingual]], um `CLAUDE.md` escrito em português conso
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/agents-md-vale-a-pena-paper-zurique]] — paper de Zurique; evidência empírica de custo e efetividade; estratégia enxuto + links
 - [[wiki/sources/custo-tokens-portugues-vs-ingles]] — token tax de 62% para português; impacto direto no context budget por sessão
+- [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — recomendação de comitar `.claude/` de projeto (não o pessoal) para alinhamento de equipe

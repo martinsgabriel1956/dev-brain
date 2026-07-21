@@ -3,8 +3,8 @@ type: concept
 title: "Soft Skills"
 aliases: ["habilidades humanas", "habilidades interpessoais", "people skills"]
 date_created: 2026-05-19
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-07-21
+source_count: 3
 tags: [soft-skills, carreira, liderança, comunicação, colaboração]
 skill: tech-mentor-leadership
 status: stable
@@ -46,3 +46,4 @@ Hard skills abrem a porta. Soft skills determinam o quanto você avança depois 
 
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]
 - [[wiki/sources/3-soft-skills-que-poucos-programadores-dominam]] — comunicação persuasiva, imagem profissional e a estatística (não verificada) de 85% interpessoal / 15% técnico
+- [[wiki/sources/papinho-tech-solo-adaptabilidade]] — adaptabilidade aplicada a vestimenta, comunicação por nível hierárquico e formato de conteúdo por canal

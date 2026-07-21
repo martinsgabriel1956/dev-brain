@@ -3,8 +3,8 @@ type: concept
 title: "Design como Interação"
 aliases: ["design is interaction", "design além do visual", "design funcional"]
 date_created: 2026-06-11
-date_updated: 2026-06-11
-source_count: 1
+date_updated: 2026-07-21
+source_count: 2
 tags: [design, ux, interação, micro-interações, performance-percebida]
 skill: tech-mentor-frontend
 status: stable
@@ -52,12 +52,25 @@ Técnicas concretas:
 
 ---
 
+## Camadas Anteriores à Interação: Hierarquia, Proximidade e Affordance
+
+Antes de a interação acontecer, três decisões estruturais já influenciam como o usuário vai perceber e usar a interface:
+
+- [[wiki/concepts/hierarquia-visual]] — qual elemento o olho encontra primeiro.
+- [[wiki/concepts/lei-da-proximidade-gestalt]] — quais elementos são lidos como um grupo único.
+- [[wiki/concepts/affordance]] — o que cada elemento sugere sobre como deve ser usado (clicar, arrastar, digitar).
+
+Erros recorrentes em UI gerada rapidamente por IA — como a ausência de `cursor: pointer`, hover ou sublinhado em links — são falhas de affordance, não só de estética: quebram a promessa implícita de "isto é interativo" antes mesmo da micro-interação acontecer.
+
 ## Relação com Outros Conceitos
 
 - [[concepts/fake-delay]] — exemplo prático de design de interação
 - [[concepts/design-engineer]] — o papel que implementa design como interação
 - [[entities/linear]] — referência máxima de aplicação com design de interação de alta qualidade
+- [[wiki/concepts/hierarquia-visual]] — estrutura de atenção que precede a interação
+- [[wiki/concepts/affordance]] — sinalização de como interagir com um elemento
 
 ## Key Sources
 
 - [[sources/design-first-vs-code-first-referencias]]
+- [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]

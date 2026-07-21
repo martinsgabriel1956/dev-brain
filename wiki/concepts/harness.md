@@ -3,8 +3,8 @@ type: concept
 title: "Harness"
 aliases: ["AI harness", "harness de IA", "coding harness"]
 date_created: 2026-06-02
-date_updated: 2026-07-20
-source_count: 8
+date_updated: 2026-07-21
+source_count: 10
 tags: [harness, llm, tool-call, agente, context-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -80,6 +80,10 @@ Dados de campo do Cursor (2026) mostram o harness em maturidade: code review aut
 
 Depois de harness engineering (melhorar o ambiente ao redor do modelo), o degrau seguinte é [[wiki/concepts/loop-engineering|loop engineering]] — melhorar o ciclo completo de execução como estrutura repetível e disparável automaticamente (por prompt, schedule ou evento), não apenas uma execução isolada.
 
+## Harnesses com Learning Loop Embutido (Hermes Agent, Open Claw)
+
+[[wiki/sources/hermes-agent-open-claw-learning-loop]] descreve uma nova geração de harness que embute um [[wiki/concepts/closed-loop-skill-learning|closed-loop skill learning system]] — o harness não só executa tool calls, mas extrai padrões do histórico de execuções e gera/refina skills sozinho, sobre uma [[wiki/concepts/agent-memory-tres-camadas|memória em três camadas]]. Exemplos citados: [[wiki/entities/hermes-agent]] e [[wiki/entities/open-claw]] (ambos open source/MIT), e o "Dreaming in Claude" da Anthropic como resposta proprietária ao mesmo padrão. Isso desloca parte do trabalho antes feito manualmente com [[wiki/concepts/hooks-agente]] (extrair padrões de sessões passadas) para dentro do próprio ciclo do harness.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
@@ -90,3 +94,5 @@ Depois de harness engineering (melhorar o ambiente ao redor do modelo), o degrau
 - [[wiki/sources/product-engineer-vale-do-silicio-2026]]
 - [[wiki/sources/loop-engineering-planner-critic-grafo]] — propõe loop engineering como degrau seguinte a harness engineering
 - [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — execução local de tool calls como o risco que motiva contenção/sandboxing do processo do harness
+- [[wiki/sources/impacto-ia-mercado-frontend]] — harness próprio (skills, agente de code review a partir de causas de incidente) como requisito de contratação em frontend, não só prática de produtividade
+- [[wiki/sources/hermes-agent-open-claw-learning-loop]] — harness com closed-loop skill learning embutido (Hermes Agent, Open Claw)

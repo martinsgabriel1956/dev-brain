@@ -3,8 +3,8 @@ type: concept
 title: "Worktree e Paralelismo de Tarefas"
 aliases: ["worktree parallelism", "git worktree IA", "paralelismo de tarefas ia"]
 date_created: 2026-06-02
-date_updated: 2026-07-03
-source_count: 5
+date_updated: 2026-07-21
+source_count: 6
 tags: [worktree, paralelismo, git, spec-driven, produtividade]
 skill: tech-mentor-ai
 status: stable
@@ -64,6 +64,10 @@ Worktree é paralelismo a nível de **file system** (cópias físicas, PRs separ
 
 Confirmação de campo: cada feature full stack no Cursor dispara ~5 Claude agents simultâneos + 1 agente de code review + a engenheira validando. O tech lead do Databricks usa os intervalos entre reuniões para disparar 2–3 agents e revisar PRs nos blocos livres. Esses padrões confirmam que o paralelismo não é teórico — é o fluxo diário de [[product-engineer|product engineers]] em empresas de ponta.
 
+## Worktree Cross-Repo em Microfrontends
+
+[[wiki/sources/impacto-ia-mercado-frontend]] descreve uma variante do problema em arquiteturas de microfrontends/múltiplos repositórios: como o worktree isola uma cópia de working directory mas não o contexto de outro repositório, o dev precisa linkar manualmente o worktree/PR do backend ao worktree/PR do frontend para sinalizar a interface entre eles — trabalho de coordenação que um monorepo não exige, porque ali o mesmo contexto já contém os dois lados. Ver [[wiki/concepts/monorepo-vs-microfrontends-ia]].
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-02-mercado-perfil-profissional]]
@@ -71,3 +75,4 @@ Confirmação de campo: cada feature full stack no Cursor dispara ~5 Claude agen
 - [[wiki/sources/formacao-ia-devs-aula-06-qa]]
 - [[wiki/sources/product-engineer-vale-do-silicio-2026]]
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
+- [[wiki/sources/impacto-ia-mercado-frontend]]
