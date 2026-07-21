@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-07-20
+date_updated: 2026-07-21
 ---
 
 
@@ -13,6 +13,8 @@ date_updated: 2026-07-20
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] | Autoria inferida (Filipe Deschamps): 5 armadilhas de mentalidade ao aprender a programar — bomba de efeito moral (choque de complexidade que paralisa), relação criador-criatura (pedestal técnico), programar sem mirar impacto real, escolher o projeto (com "adrenalina") antes da tecnologia, e desligar autocomplete para não sabotar a spaced repetition |
+| [[wiki/sources/kimi-k3-china-mercado-ia-open-source]] | Kimi K3 (Moonshot, 2,8T parâmetros, MoE 896/16 experts, até 75% economia de KV Cache) como estudo de caso: sanções de exportação de chips forçam inovação arquitetural que, ao virar open source, espalha conhecimento de inferência barata — tese central: a camada de aplicação importa mais que o modelo, lock-in em um único provedor não faz sentido |
 | [[wiki/sources/8-sistemas-operacionais-explicados]] | Panorama dos 8 SOs mais conhecidos: Windows, macOS, Linux, Chrome OS, Android, iOS, Unix e BSD — propósito, mercado, vantagens e desvantagens de cada um |
 | [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]] | Full Cycle (Wesley Willians): 5 dicas para entrevista de system design/lousa branca — gerenciar tempo, requisitos core antes de desenhar, plano de capacidade, modelagem de dados/API, e só então o desenho; nunca citar tecnologia que não domina |
 | [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] | AI Jail (Fábio Akita): sandbox via Bubblewrap para conter agentes de codificação de IA contra supply chain attacks (ex.: npm postinstall malicioso); modelo de 3 camadas — sessão/AI Jail, código/Git, SO imutável; comparação com o opt-out do sandbox nativo do Claude Code |
@@ -367,6 +369,10 @@ date_updated: 2026-07-20
 | [[wiki/concepts/langgraph]] | Framework que representa estado de agente como grafo — nodes são passos, edges são transições condicionais |
 | [[wiki/concepts/grafo-como-abstracao-de-agentes]] | G=(V,E): nós são computação/LLM, arestas são condição de fluxo determinística — abstração independente de framework |
 | [[wiki/concepts/roteamento-automatico-de-modelo]] | Camada que escolhe automaticamente qual LLM responde cada prompt (complexity/cascade/intent-based) — caso comercial: Adapta ONE |
+| [[wiki/concepts/kv-cache]] | Cache de chaves/valores de atenção — evita reprocessar contexto a cada token; Kimi K3 promete até 75% de economia |
+| [[wiki/concepts/export-controls-chips-ia]] | Sanções de exportação de chips NVIDIA para a China — pressão de fundo por trás de inovação arquitetural em MoE/KV Cache |
+| [[wiki/concepts/corrida-preco-qualidade-llm]] | Concorrência entre frontier fechado e open source empurra preço para baixo e qualidade para cima simultaneamente |
+| [[wiki/concepts/camada-de-aplicacao-vs-modelo]] | Com modelos cada vez mais equivalentes, a vantagem competitiva migra do modelo para a camada de aplicação |
 
 ### Dívida Cognitiva & Teoria do Programa
 
@@ -566,6 +572,10 @@ date_updated: 2026-07-20
 | [[wiki/concepts/principio-da-inversao]] | Inverter o problema para revelar a solução — Jacobi/Munger; lista o pior caso para encontrar o melhor |
 | [[wiki/concepts/tutorial-hell]] | Espiral de consumo passivo de conteúdo — quanto mais você estuda, mais descobre que precisa estudar; saída: construir algo |
 | [[wiki/concepts/aprendizado-deliberado]] | Prática com intenção, feedback e dificuldade progressiva — antídoto ao tutorial hell |
+| [[wiki/concepts/bomba-de-efeito-moral]] | Choque de complexidade que paralisa pelo susto, não pela dificuldade real — some numa segunda leitura sem o susto |
+| [[wiki/concepts/relacao-criador-criatura]] | Colocar programador admirado num pedestal e se tratar como inferior — bloqueia o próprio potencial |
+| [[wiki/concepts/maximizar-pontos-fortes]] | Objetivo de programar não é ser bom em programar, é aumentar área de impacto — aproxime a técnica do seu forte real |
+| [[wiki/concepts/projeto-com-adrenalina]] | Escolher o projeto real (pelo interesse genuíno) antes da tecnologia — a stack vem depois, em função do projeto |
 
 ### Filosofia do Criador (Objetivismo)
 
@@ -822,6 +832,9 @@ date_updated: 2026-07-20
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/moonshot-ai]] | Lab chinês criador do Kimi — Kimi K3 (2,8T parâmetros, MoE 896/16 experts) publica método de inferência aberto para descentralizar conhecimento de servir modelos grandes |
+| [[wiki/entities/deepseek]] | Lab chinês — DeepSeek V4 Pro, maior open source antes do Kimi K3; DeepSeek Flash V4 como referência de modelo barato para tarefas do dia a dia |
+| [[wiki/entities/nvidia]] | Fabricante de GPUs — sujeita a sanções de exportação de chips para a China, pressão de fundo por trás de inovação em MoE/KV Cache |
 | [[wiki/entities/bubblewrap]] | Binário de sandboxing do GNOME (usado pelo Flatpak) — base técnica do AI Jail e do sandbox nativo do Claude Code |
 | [[wiki/entities/augusto-galego]] | Criador de conteúdo técnico brasileiro — demo prática de deploy blue/green com Nginx numa VPS |
 | [[wiki/entities/hostgator]] | Provedora de hospedagem/VPS — patrocinadora da demo de deploy blue/green de Augusto Galego |

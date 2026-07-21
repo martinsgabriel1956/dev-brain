@@ -46,6 +46,10 @@ Em 2026, self-hosted open-weight é viável para workloads > 10M tokens/dia — 
 - [[concepts/multi-tier-routing]]
 - [[concepts/cascade-pattern-llm]]
 
+## Conexão com Kimi K3 e Mercado de IA
+
+[[wiki/sources/kimi-k3-china-mercado-ia-open-source]] (2026-07-21) discute o mesmo tema de knowledge diffusion por open source de um ângulo de mercado/negócio: a Moonshot AI publica não só o modelo Kimi K3 mas o método de servi-lo em inferência, permitindo que qualquer provedor com hardware replique — o mesmo fenômeno que sustenta a viabilidade de self-hosted discutida nesta fonte (vLLM, SGLang para modelos MoE como Qwen3.5).
+
 ## Open Questions
 
 - Como medir "complexidade" de uma query para o router multi-tier sem gastar tokens de modelo caro para classificar?

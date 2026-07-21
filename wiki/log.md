@@ -2,6 +2,64 @@
 
 ---
 
+## [2026-07-21] ingest | 5 Cuidados que eu teria se fosse começar a programar hoje
+
+**Fonte:** [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] — transcrição de vídeo em português, texto corrido sem pontuação, fornecida pelo usuário; reescrita como Markdown estruturado por seções (introdução + um cuidado por seção: bomba de efeito moral, relação criador-criatura, programação como profissão vs. impacto, desânimo para iniciar/projeto antes da tecnologia, autocomplete). Sem necessidade de tradução (fonte já em português). Salva em `raw/5-cuidados-antes-de-comecar-a-programar.md`.
+
+**Skill carregada:** `tech-mentor-leadership` — diretório de skills localizado em `/home/gabriel-martins/Documentos/skills/` (caminho real nesta máquina, diferente do referenciado em CLAUDE.md). O índice de `references/` desse skill é focado em liderança/gestão corporativa (career progression, mentoring, RFC, etc.) e não tem um arquivo específico para mentalidade de aprendizado de iniciantes — nenhuma referência específica foi carregada, mas a skill foi mantida por consistência com fontes anteriores do mesmo domínio já ingeridas sob `tech-mentor-leadership` (ex.: [[wiki/sources/como-aprender-programacao-3-dicas]], [[wiki/sources/akita-como-aprender-programacao]]).
+
+**Autoria:** atribuída por inferência a [[wiki/entities/filipe-deschamps]] (pistas internas da transcrição: vídeo do fogo do Doom, vídeo sobre estudante que "hackeou" um exame, newsletter feita "com meu irmão") — não confirmada explicitamente, sinalizada como tal na fonte e na entidade.
+
+**Páginas criadas:**
+- `wiki/sources/5-cuidados-antes-de-comecar-a-programar.md`
+- `wiki/concepts/bomba-de-efeito-moral.md` — choque de complexidade que paralisa pelo susto, não pela dificuldade real
+- `wiki/concepts/relacao-criador-criatura.md` — pedestal técnico que bloqueia o próprio potencial
+- `wiki/concepts/maximizar-pontos-fortes.md` — impacto real como objetivo, não a habilidade isolada
+- `wiki/concepts/projeto-com-adrenalina.md` — escolher o projeto antes da tecnologia, inclusive como estratégia de portfólio
+
+**Páginas atualizadas:**
+- `wiki/entities/filipe-deschamps.md` — nova seção sobre autoria inferida; `source_count` 1 → 2
+- `wiki/concepts/spaced-repetition.md` — nova seção "Autocomplete como Inimigo do Aprendiz"; `source_count` 1 → 2
+- `wiki/concepts/aprender-a-aprender.md` — nova seção citando o curso "Learning How to Learn" como origem do princípio; `source_count` 3 → 4
+- `wiki/concepts/postura-de-programador.md` — nova seção com a citação de Calvin Coolidge sobre persistência; `source_count` 2 → 3
+- `wiki/concepts/sindrome-do-impostor.md` — novo backlink relacionando à dinâmica criador-criatura; `source_count` 1 → 2
+- `wiki/concepts/portfolio-backend-junior.md` — nova seção sobre implementar sozinho uma feature da empresa-alvo; `source_count` 3 → 4
+- `wiki/concepts/dopamina-e-projetos.md` — nova seção de tensão com "escolher pelo critério de adrenalina"; `source_count` 2 → 3
+- `wiki/concepts/memoria-muscular.md` — nova seção sobre desligar autocomplete para forçar digitação manual; `source_count` 2 → 3
+- `wiki/index.md` — nova linha em Sources; quatro novas linhas em Concepts, seção "Aprendizado e Mentalidade"
+
+**Notas:** Nenhuma contradição factual encontrada com a wiki existente — o conteúdo é mentalidade/opinião, não afirmações verificáveis. Uma tensão conceitual real foi documentada (não uma contradição, mas um ponto de atenção): a recomendação de escolher projeto pelo critério de "adrenalina" ([[wiki/concepts/projeto-com-adrenalina]]) usa o mesmo gatilho dopaminérgico de antecipação que, segundo [[wiki/concepts/dopamina-e-projetos]], costuma levar ao abandono de projetos — registrado em ambas as páginas como questão em aberto sobre onde fica a fronteira entre "escolher bem" e "abandonar cedo".
+
+---
+
+## [2026-07-21] ingest | Kimi K3: a China já alcançou os modelos americanos?
+
+**Fonte:** [[wiki/sources/kimi-k3-china-mercado-ia-open-source]] — transcrição de vídeo em português, texto corrido sem pontuação, fornecida pelo usuário; reescrita como Markdown estruturado por seções (pergunta central, dimensão do lançamento, arquitetura/KV Cache, categorias de LLM, MoE, sanções de hardware, dinâmica de preço/qualidade, camada de aplicação, conclusão). Sem necessidade de tradução (fonte já em português). Salva em `raw/kimi-k3-china-mercado-ia-open-source.md`.
+
+**Skill carregada:** `tech-mentor-ai` — skills `tech-mentor-*` encontradas neste ambiente em `/home/gabriel-martins/Documentos/skills/` (caminho diferente do referenciado em CLAUDE.md, `/home/nemomartins/Documentos/new/skills/`, que não existe nesta máquina). Referências consultadas: `references/ai/inference-optimization.md` (seção KV Cache/PagedAttention/RadixAttention) e `references/ai/llm-providers-2026.md` (linha do Kimi K2.5/Moonshot) para calibrar terminologia técnica antes de escrever as páginas.
+
+**Páginas criadas:**
+- `wiki/sources/kimi-k3-china-mercado-ia-open-source.md`
+- `wiki/concepts/kv-cache.md` — cache de chaves/valores de atenção; caso Kimi K3 (até 75% de economia)
+- `wiki/concepts/export-controls-chips-ia.md` — sanções de exportação de chips NVIDIA como pressão de fundo por inovação arquitetural
+- `wiki/concepts/corrida-preco-qualidade-llm.md` — dinâmica de mercado: preço caindo, qualidade subindo, por concorrência open source vs. frontier fechado
+- `wiki/concepts/camada-de-aplicacao-vs-modelo.md` — tese de que vantagem competitiva migra do modelo para a camada de aplicação
+- `wiki/entities/moonshot-ai.md` — lab criador do Kimi; estratégia de publicar receita de inferência, não só o modelo
+- `wiki/entities/deepseek.md` — DeepSeek V4 Pro e DeepSeek Flash V4
+- `wiki/entities/nvidia.md` — fabricante de GPU sujeito a sanções de exportação
+
+**Páginas atualizadas:**
+- `wiki/concepts/mixture-of-experts.md` — nova seção "Caso Kimi K3": 896 experts, 16 ativados; hipótese especulativa de MoE em modelos frontier fechados; `source_count` 1 → 2
+- `wiki/concepts/modelo-frontier.md` — nova linha na tabela para Kimi K3; `source_count` 2 → 3
+- `wiki/entities/openai.md` — nova seção sobre tamanho estimado (5-10T parâmetros) por dedução de preço e hipótese especulativa de MoE; `source_count` 3 → 4
+- `wiki/entities/anthropic.md` — nova seção sobre venda Enterprise no Brasil e subsídio de produto (Claude Code) como resposta à concorrência open source; `source_count` 9 → 10
+- `wiki/sources/open-weight-deployment.md` — nova seção "Conexão com Kimi K3 e Mercado de IA" linkando de volta
+- `wiki/index.md` — nova linha em Sources; cinco novas linhas em Concepts (seção "Agentes & LLMOps"); três novas linhas em Entities
+
+**Notas:** Fonte é de negócio/mercado, não técnica — os números do Kimi K3 (2,8T parâmetros, 896/16 experts, 75% de economia de KV Cache) vêm de divulgação da própria Moonshot via benchmarks e API, sem verificação independente (o próprio autor reconhece isso na fala). A hipótese de que GPT e "Fable" (citado no vídeo ao lado de GPT-5.6 e Sonnet — não fica claro se é o mesmo Fable 5 documentado alhures nesta wiki) também usem MoE é especulação por analogia, não confirmação pública da OpenAI/Anthropic — documentada como tal em Open Questions na fonte e nas páginas tocadas. Diretório de skills `tech-mentor-*` existe nesta máquina em caminho diferente do hardcoded em CLAUDE.md (`/home/gabriel-martins/Documentos/skills/` vs. `/home/nemomartins/Documentos/new/skills/`); flag para o usuário caso valha atualizar o CLAUDE.md com o caminho correto local.
+
+---
+
 ## [2026-07-20] ingest | Application Boundary (Martin Fowler)
 
 **Fonte:** [[wiki/sources/application-boundary-martin-fowler]] — bliki entry de Martin Fowler (11 de setembro de 2003), traduzido do inglês para PT-BR nesta ingestão. Salvo em `raw/application-boundary-martin-fowler.md`.

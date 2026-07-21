@@ -3,8 +3,8 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-07-19
-source_count: 9
+date_updated: 2026-07-21
+source_count: 10
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia]
 skill: tech-mentor-ai
 status: stable
@@ -51,9 +51,14 @@ Demonstração via [[entities/vercel-ai-sdk]] com Claude 3.5 Haiku: o prompt `"H
 
 [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] relata um teste pessoal do autor com o Ultra Review e o Ultra Plan da Anthropic: gastou cerca de 150 (unidade monetária não especificada na fonte) só testando, com o Ultra Review consumindo ~30 por execução — e um bug fazia a ferramenta crashar depois de já ter consumido o saldo disponível, sem entregar resultado, obrigando a adicionar mais crédito para completar e ver o output. Tratado como relato de experiência individual, não como benchmark de custo oficial da Anthropic.
 
+## Venda Enterprise no Brasil e Subsídio de Produto
+
+Segundo [[wiki/sources/kimi-k3-china-mercado-ia-open-source]], a Anthropic já vende para Enterprise no Brasil — sinal, na leitura da fonte, de que a empresa sabe que não há vantagem competitiva sustentável apenas em vender token/API, daí o Claude Code ser frequentemente subsidiado com promoções e créditos gratuitos recorrentes. Ligado à tese de [[wiki/concepts/corrida-preco-qualidade-llm]]: concorrência de modelos open source (Kimi, DeepSeek) pressiona preço para baixo no mercado como um todo.
+
 ## Key Sources
 
-- [[wiki/sources/html-vs-markdown-para-agentes-de-ia]] — citada de passagem como tendo "divulgado algo parecido" sobre preferir HTML a Markdown na saída de agentes; a fonte não linka o material original, então tratar como não verificado
+- [[wiki/sources/html-vs-markdown-para-agentes-de-ia]]
+- [[wiki/sources/kimi-k3-china-mercado-ia-open-source]] — venda Enterprise no Brasil, subsídio de produto como resposta à concorrência open source — citada de passagem como tendo "divulgado algo parecido" sobre preferir HTML a Markdown na saída de agentes; a fonte não linka o material original, então tratar como não verificado
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]

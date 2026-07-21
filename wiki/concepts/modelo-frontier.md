@@ -3,8 +3,8 @@ type: concept
 title: "Modelos Frontier"
 aliases: ["frontier models", "modelos de ponta", "modelos comerciais avancados"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 2
+date_updated: 2026-07-21
+source_count: 3
 tags: [modelos, frontier, llm, openai, anthropic, google]
 skill: tech-mentor-ai
 status: draft
@@ -23,6 +23,7 @@ Os modelos de linguagem mais capazes disponíveis no mercado em um dado momento 
 | GPT-5.4 | OpenAI | Melhor custo-benefício que 5.5 para muitas tarefas |
 | Gemini 3.1 | Google | Puxou contexto de 1M tokens; forte em multimodal |
 | Kimi K2.6 | Moonshot (open-weight) | Resultado comparável a frontier por fração do preço |
+| Kimi K3 | Moonshot (open-weight, lançamento parcial) | 2,8T parâmetros, MoE 896/16 experts, até 75% economia de KV Cache — ver [[wiki/entities/moonshot-ai]] |
 | GLM 5.1 | Zhipu AI (open-weight) | MoE barato e eficiente |
 | Qwen 3.6 | Alibaba (open-weight) | MoE; muito bom para código |
 
@@ -46,3 +47,4 @@ Ver [[wiki/sources/formacao-ia-devs-aula-03-llm]] para tabela de preços por tok
 
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
+- [[wiki/sources/kimi-k3-china-mercado-ia-open-source]] — Kimi K3, 2,8T parâmetros, lançamento parcial

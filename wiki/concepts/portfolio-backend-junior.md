@@ -3,8 +3,8 @@ type: concept
 title: "Portfólio Backend Júnior"
 aliases: ["portfólio primeira vaga", "diferenciais backend junior", "primeira vaga backend"]
 date_created: 2026-04-25
-date_updated: 2026-07-15
-source_count: 3
+date_updated: 2026-07-21
+source_count: 4
 tags: [carreira, backend, junior, portfolio]
 skill: tech-mentor-leadership
 status: stable
@@ -57,8 +57,13 @@ Para tecnologias com menos vagas júnior formais (ex.: Go), a mesma lógica de p
 
 Em processo real de triagem de currículos júnior, dois filtros vêm antes de qualquer avaliação de portfólio técnico: [[wiki/concepts/otimizacao-ats-curriculo]] (repetição da stack-alvo para passar no robô) e a presença do link de GitHub em si — sem ele, o portfólio nem chega a ser avaliado.
 
+## Implementar uma única feature da empresa-alvo
+
+[[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] descreve uma variante mais radical do mesmo princípio, a partir da experiência de quem já esteve do lado de recrutamento: implementar sozinho uma única funcionalidade (ou tela, no caso de front-end) do sistema de uma empresa-alvo específica, e anexar o link na candidatura. O peso dessa demonstração é descrito como desproporcionalmente maior do que o esperado, porque uma pessoa sozinha entregando algo equivalente ao trabalho de um time evidencia domínio direto, sem a diluição de comunicação e prioridades que cresce com o tamanho do time. Ver [[wiki/concepts/projeto-com-adrenalina]] para o raciocínio mais amplo de escolher o projeto (e não a tecnologia) como primeiro passo.
+
 ## Key sources
 
 - [[wiki/sources/diferenciais-portfolio-backend-junior]]
 - [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]
 - [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]] — triagem de currículos reais confirmando GitHub/portfólio como filtro eliminatório, não apenas diferencial
+- [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] — estratégia de implementar sozinho uma feature da empresa-alvo

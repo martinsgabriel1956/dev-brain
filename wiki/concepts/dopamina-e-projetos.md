@@ -3,8 +3,8 @@ type: concept
 title: "Dopamina e Projetos"
 aliases: ["dopamine trap", "antecipação de recompensa", "dopamina ideação"]
 date_created: 2026-04-29
-date_updated: 2026-07-07
-source_count: 2
+date_updated: 2026-07-21
+source_count: 3
 tags: [psicologia, produtividade, motivacao, projetos, carreira, startup]
 skill: tech-mentor-leadership
 status: stable
@@ -40,7 +40,12 @@ Não é falta de disciplina — é bioquímica. A solução não é "ter mais fo
 
 [[concepts/lean-startup]] descreve o mesmo mecanismo por outro ângulo: o dev desmotivado no emprego atual troca a dopamina da ideação de código por um novo projeto próprio, sem validar se a dor que ele imagina resolver é real. A metodologia Lean Startup existe justamente para redirecionar esse impulso — canalizando a energia da ideação para validação estruturada antes de construir.
 
+## Tensão com "Escolher pelo Critério de Adrenalina"
+
+[[wiki/concepts/projeto-com-adrenalina]] recomenda escolher o primeiro projeto de aprendizado justamente pelo critério de "gerar adrenalina" (interesse genuíno) em vez de pela tecnologia. Isso é, em essência, o mesmo gatilho dopaminérgico de antecipação descrito aqui — a diferença proposta é de fase: usar a adrenalina para *escolher* o que construir (uma decisão pontual) não é o mesmo que deixá-la guiar a execução inteira, onde o padrão de abandono ao surgir uma ideia nova de fato se manifesta.
+
 ## Key Sources
 
 - [[sources/por-que-devs-nao-terminam-projetos]]
 - [[sources/lean-startup-para-devs-mano-deivin]]
+- [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] — tensão entre "adrenalina como critério de escolha" e o mecanismo de dopamina de antecipação

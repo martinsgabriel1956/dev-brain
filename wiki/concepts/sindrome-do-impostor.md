@@ -3,8 +3,8 @@ type: concept
 title: "Síndrome do Impostor"
 aliases: ["impostor syndrome", "medo de ser descoberto", "sensação de fraude"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 1
+date_updated: 2026-07-21
+source_count: 2
 tags: [carreira, saúde-mental, júnior, inteligência-emocional]
 skill: tech-mentor-leadership
 status: draft
@@ -34,7 +34,9 @@ Distinguir "o código foi reprovado" de "eu fui reprovado" — ver [[wiki/concep
 - [[wiki/concepts/inteligencia-emocional]] — regular a resposta emocional a crítica é o antídoto direto
 - [[wiki/concepts/mentoria-tecnica]] — mentoria bem-feita reduz a ambiguidade que alimenta a síndrome
 - [[wiki/concepts/maturidade-tecnica]] — capacidade de extrair aprendizado mesmo de situações adversas
+- [[wiki/concepts/relacao-criador-criatura]] — variante da mesma família: em vez de sentir-se fraude apesar da própria competência, a pessoa infla a competência alheia (colocando-a num pedestal) a ponto de anular a percepção da própria capacidade
 
 ## Key Sources
 
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]]
+- [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] — descreve a dinâmica de pedestal ("relação criador-criatura") como bloqueio de potencial

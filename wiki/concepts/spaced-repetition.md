@@ -3,8 +3,8 @@ type: concept
 title: "Spaced Repetition (Efeito do Espaçamento)"
 aliases: ["spaced repetition", "efeito do espaçamento", "repetição espaçada"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-21
+source_count: 2
 tags: [aprendizado, memoria, tecnica, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -34,6 +34,11 @@ Isso é spaced repetition em ação: ao longo de dias de prática, cada digitaç
 
 Spaced repetition é a aplicação prática de [[concepts/neuroplasticidade]]: a exposição espaçada dá tempo ao cérebro para reorganizar os circuitos entre sessões.
 
+## Autocomplete como Inimigo do Aprendiz
+
+[[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] chega à mesma regra de "nunca copiar/colar" por outro caminho: recomenda desligar autocomplete e corretores automáticos durante a fase de aprendizado, porque eles eliminam a necessidade de digitar manualmente — o mecanismo que, na prática, gera as reexposições espaçadas necessárias para reter o conteúdo. A fonte cita o curso "Learning How to Learn" ("[[wiki/concepts/aprender-a-aprender]]") como origem do princípio de espaçar a exposição ao mesmo conteúdo ao longo dos dias, em vez de concentrá-la num único bloco de estudo. A ressalva: essa recomendação vale para a fase de aprendizado — não é uma regra geral contra autocomplete no dia a dia profissional de quem já é produtivo.
+
 ## Key Sources
 
 - [[sources/como-aprender-programacao-3-dicas]]
+- [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]]

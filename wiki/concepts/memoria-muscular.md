@@ -3,8 +3,8 @@ type: concept
 title: "Memória Muscular"
 aliases: ["muscle memory", "memória procedural"]
 date_created: 2026-05-16
-date_updated: 2026-06-05
-source_count: 2
+date_updated: 2026-07-21
+source_count: 3
 tags: [aprendizado, pratica, habilidade]
 skill: tech-mentor-leadership
 status: stable
@@ -30,7 +30,12 @@ A exposição massiva a código (copiar, digitar, quebrar) é o mecanismo que *c
 
 [[wiki/sources/papinho-tech-solo-aprender-a-aprender]] traz duas analogias que reforçam o mesmo ponto: ninguém aprende a andar de bicicleta só porque entendeu as regras (freio, equilíbrio, pedalada). E o bebê não aprende a andar observando adultos — aprende caindo, levantando, repetindo até a habilidade se tornar automática. A memória muscular é o mecanismo subjacente em ambos os casos. Ver [[concepts/entender-vs-aprender]].
 
+## Desligar o Autocomplete para Forçar a Digitação Manual
+
+[[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] chega à mesma conclusão sobre exposição massiva por outra via: recomenda desligar autocomplete e corretores automáticos durante o aprendizado e digitar tudo manualmente, mesmo copiando de uma fonte externa (dividindo a tela em vez de copiar e colar). O raciocínio é o mesmo — sem o esforço motor repetido de digitar cada token, a memória muscular não se forma.
+
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]] — analogia do monociclo; recomendação de copiar código para formar memória muscular
 - [[wiki/sources/papinho-tech-solo-aprender-a-aprender]] — analogias da bicicleta e do bebê aprendendo a andar
+- [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] — desligar autocomplete para forçar digitação manual

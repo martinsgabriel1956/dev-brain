@@ -3,8 +3,8 @@ type: concept
 title: "Postura de Programador"
 aliases: ["postura de sobrevivência", "motivação intrínseca programação", "comprometimento com programação"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 2
+date_updated: 2026-07-21
+source_count: 3
 tags: [mentalidade, carreira, motivacao, postura]
 skill: tech-mentor-leadership
 status: stable
@@ -38,7 +38,12 @@ Buscar deliberadamente uma razão de futuro que faça sentido pessoal — não t
 
 Complementa [[concepts/tempo-variavel-capacidade-fixa]] (modelo mental) e [[concepts/aprendizado-deliberado]] (processo técnico). Sem postura, as técnicas não sustentam consistência de longo prazo.
 
+## Persistência Acima de Talento
+
+[[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] reforça a mesma ideia por outro ângulo, citando Calvin Coolidge: "nada no mundo consegue tomar o lugar da persistência — nem talento, nem genialidade, nem educação, sozinhos, garantem sucesso". A fonte conecta isso a onde investir o sofrimento do aprendizado: em aprender algo novo, não em autodepreciação diante de [[wiki/concepts/relacao-criador-criatura|programadores admirados colocados num pedestal]].
+
 ## Key Sources
 
 - [[sources/como-aprender-programacao-3-dicas]]
 - [[sources/logica-programacao-sem-matematica]]
+- [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]]
