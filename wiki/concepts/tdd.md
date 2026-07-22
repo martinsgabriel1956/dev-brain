@@ -3,8 +3,8 @@ type: concept
 title: "TDD — Test-Driven Development"
 aliases: ["test driven development", "red green refactor", "desenvolvimento guiado por testes"]
 date_created: 2026-04-22
-date_updated: 2026-07-21
-source_count: 8
+date_updated: 2026-07-22
+source_count: 9
 tags: [testes, tdd, design, red-green-refactor, qualidade, dora]
 skill: tech-mentor-testing
 status: stable
@@ -104,6 +104,10 @@ O ciclo RED-GREEN-REFACTOR pressupõe saber o que testar primeiro — na prátic
 
 Cobertura alta prova que uma linha foi executada, não que ela foi exercitada com os valores certos — não existe forma de testar (via TDD ou não) um bug que ninguém pensou em cobrir. Ver [[criterios-de-bom-teste]] para os cinco critérios (determinístico, conciso, relevante, compreensível, durável) usados para julgar se um teste feito sob TDD realmente vale o ciclo red-green-refactor.
 
+## Expectativa que quebra é sinal de bug, não de teste errado
+
+[[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] ilustra o princípio central do RED com um caso concreto de segurança: um teste espera `403` para uma rota sensível de migrations acessada por usuário anônimo, mas o código retorna `200`. A expectativa está certa — o código é que está exposto, sem nenhum middleware de autorização no handler. A fonte estende o mesmo raciocínio à fase de manutenção: meses depois, uma alteração não relacionada (permissão liberada por engano em outro arquivo) faz o mesmo teste voltar a falhar sozinho, em modo watch, pegando a regressão sem qualquer verificação manual — o mesmo teste escrito uma vez continua funcionando como especificação executável indefinidamente. Ver [[wiki/concepts/tres-estagios-maturidade-testes]] para o enquadramento de "teste automatizado com watch mode" como estágio mais maduro de validação de código, depois de clicar manualmente na UI e de usar um cliente HTTP dedicado (Postman).
+
 ## Key Sources
 
 - [[wiki/sources/tdd]]
@@ -116,3 +120,4 @@ Cobertura alta prova que uma linha foi executada, não que ela foi exercitada co
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — cobertura alta ≠ ausência de bugs
 - [[wiki/sources/xunit-martin-fowler]] — origem histórica do JUnit e da família Xunit
 - [[wiki/sources/3-pilares-testes-automatizados-produtividade]] — decomposição de tarefa em entrada/processamento/saída como passo pré-RED; setup de live reload/debug/testes integrados via `node --test` + `--inspect` + `launch.json`
+- [[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] — expectativa que quebra expõe bug de autorização real; teste como rede de segurança contra regressão futura não relacionada

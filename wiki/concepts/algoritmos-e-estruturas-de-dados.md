@@ -92,3 +92,4 @@ Cada estrutura tem sua própria página com complexidade, analogias e quando usa
 - [[wiki/sources/9-algoritmos-que-todo-programador-deveria-saber]] — nove algoritmos concretos das três categorias citadas na sequência de aprendizado acima: ordenação, busca e grafo, com mecanismo, complexidade e caso de uso de cada um
 - [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]] — continuação direta de "estruturas de dados na prática"; framework de escolha por operação, distinção estrutura/algoritmo, e as quatro perguntas antes de escrever a solução
 - [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]] — DSA/Big O como ferramenta para saber que perguntas fazer numa entrevista técnica, pela perspectiva de um ex-entrevistador
+- [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]] — estudo de DSA prepara o brainstorm de soluções (etapa 7 de "Os Seis Passos"), incluindo o princípio de trocar espaço por velocidade

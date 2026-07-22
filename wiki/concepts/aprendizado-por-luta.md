@@ -56,3 +56,4 @@ O mesmo princípio aparece do lado do avaliador em [[wiki/concepts/entrevista-te
 
 - [[sources/por-que-devs-nao-terminam-projetos]]
 - [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]] — ficar travado em entrevista técnica como sinal esperado, não fracasso
+- [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]] — o roteiro de dez etapas de prática simulada é desenhado para expor o candidato à mesma dificuldade real da entrevista, sem atalhos

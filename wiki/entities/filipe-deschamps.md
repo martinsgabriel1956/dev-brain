@@ -3,8 +3,8 @@ type: entity
 title: "Filipe Deschamps"
 aliases: ["filipe deschamps"]
 date_created: 2026-07-09
-date_updated: 2026-07-21
-source_count: 2
+date_updated: 2026-07-22
+source_count: 3
 tags: [criador-de-conteudo, carreira, tabnews, pagar-me]
 skill: tech-mentor-leadership
 status: stub
@@ -26,7 +26,12 @@ Mantém no TabNews um quadro chamado "Request/Response", onde um usuário da com
 
 Aplica o [[wiki/concepts/triade-retorno-risco-liquidez]] (originalmente um conceito de investimentos) para avaliar decisões técnicas e de carreira, incluindo quando vale a pena correr atrás de uma tecnologia emergente/hype — ver [[wiki/concepts/avaliar-hype-tecnologico]].
 
+## Os Três Estágios de Maturidade Para Testar Código
+
+Em [[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] (autoria também inferida, mas com evidência interna forte — cita "2014", o Pagar.me e usa o TabNews como codebase de demonstração), narra a própria progressão de maturidade ao validar código: de clicar manualmente na interface (2014, Angular), passando por usar o Postman contra a API do Pagar.me (cultura de dogfooding), até testes automatizados em modo watch com Jest — usados para expor e corrigir uma vulnerabilidade real de autorização na rota de migrations do TabNews. Ver [[wiki/concepts/tres-estagios-maturidade-testes]].
+
 ## Key Sources
 
 - [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]]
 - [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] — autoria inferida, não confirmada
+- [[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] — autoria inferida, não confirmada

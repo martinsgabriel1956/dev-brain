@@ -2,6 +2,49 @@
 
 ---
 
+## [2026-07-22] ingest | Os 3 Estágios de Maturidade Para Testar Código
+
+**Fonte:** [[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] — transcrição de vídeo em português, texto corrido sem pontuação, fornecida pelo usuário; reescrita como Markdown estruturado por seções (introdução, estágio 1 iniciante, estágio 2 intermediário, estágio 3 experiente com demonstração passo a passo, recomendação de curso, fechamento). Sem necessidade de tradução (fonte já em português). Salva em `raw/os-3-estagios-de-maturidade-para-testar-codigo.md`.
+
+**Skill carregada:** `tech-mentor-testing` (diretório real: `/home/gabriel-martins/Documentos/skills/`) — tópico central é TDD/watch-mode/regressão, mapeado em `references/test-patterns.md` e `references/test-tooling.md` no índice da skill.
+
+**Autoria:** atribuída por inferência a [[wiki/entities/filipe-deschamps]] — evidência interna forte: "Felipinho de Champs de 2014", experiência no [[wiki/entities/pagar-me]], e demonstração prática usando o TabNews (projeto do próprio autor) como codebase — mesmo padrão de pistas já usado para inferir autoria em [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]].
+
+**Páginas criadas:**
+- `wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo.md`
+- `wiki/concepts/tres-estagios-maturidade-testes.md` — os três estágios (UI manual, Postman/API-first + dogfooding, testes automatizados em modo watch) e por que expectativa quebrando é sinal de bug, não de teste errado
+
+**Páginas atualizadas:**
+- `wiki/concepts/setup-live-reload-debug-testes.md` — nova seção sobre modo watch com Jest como o mesmo padrão descrito com `node --test`; `source_count` 1 → 2
+- `wiki/concepts/tdd.md` — nova seção sobre expectativa que quebra expondo bug de autorização real e teste pegando regressão futura não relacionada; `source_count` 8 → 9
+- `wiki/entities/filipe-deschamps.md` — nova seção sobre os três estágios de maturidade; `source_count` 2 → 3
+- `wiki/entities/pagar-me.md` — nova seção sobre cultura de dogfooding e API-first; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources e em Testes & Qualidade (Concepts)
+
+**Notas:** Nenhuma contradição com o wiki existente — a fonte converge com [[wiki/concepts/tdd]] e [[wiki/concepts/setup-live-reload-debug-testes]], adicionando um exemplo concreto novo (vulnerabilidade de autorização real pega por teste, com Jest/modo watch em vez de `node --test`). Grafia do nome do curso recomendado ("Fábio Vedovelle") não confirmada — sinalizado como Open Question na fonte. Nenhum dado quantitativo novo — relato de experiência pessoal do autor.
+
+## [2026-07-22] ingest | Como Praticar Questões de LeetCode (Do Jeito Certo)
+
+**Fonte:** [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]] — artigo de Anthony D. Mays (Medium, 2022-05-10, https://medium.com/@anthonydmays/how-to-practice-leetcode-questions-the-right-way-4f9735cf06c6), fornecido em texto pelo usuário após o WebFetch inicial retornar conteúdo truncado por paywall. Traduzido e condensado (paráfrase estruturada, não reprodução literal) em `raw/como-praticar-leetcode-da-forma-certa-anthony-mays.md`. É o artigo original de 2022 que o vídeo já ingerido em [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]] apenas resumia — resolve a "Open Question" que essa fonte havia deixado em aberto.
+
+**Skill carregada:** `tech-mentor-leadership` (diretório real: `/home/gabriel-martins/Documentos/skills/`) — mantida por consistência com a fonte irmã já ingerida do mesmo autor. Sem arquivo de referência específico para framework de mock interview nesse skill (mesma situação já registrada em ingests anteriores).
+
+**Páginas criadas:**
+- `wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays.md`
+- `wiki/concepts/seis-passos-mock-interview.md` — o roteiro de dez etapas do framework "Os Seis Passos" (ferramenta sem IDE, entrevistador simulado, cronômetro, articular o problema de ouvido, perguntas/suposições, exemplos como casos de teste, brainstorm+Big-O, implementação sem pseudocódigo, teste contra checklist, otimização; diário de progresso)
+
+**Páginas atualizadas:**
+- `wiki/concepts/entrevista-tecnica-coding.md` — nova seção "O roteiro de prática: Os Seis Passos"; novo backlink; `source_count` 2 → 3
+- `wiki/entities/anthony-d-mays.md` — reescrito para refletir que o artigo original agora está ingerido diretamente (não só via vídeo); `source_count` 1 → 2
+- `wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays.md` — Open Question sobre o artigo original marcada como resolvida, com backlink
+- `wiki/concepts/big-o.md` — nova frase sobre estimar Big-O antes de implementar (etapa 7 do framework); novo Key Source
+- `wiki/concepts/reconhecimento-de-padroes.md` — novo Key Source (repertório de padrões sustentando o brainstorm da etapa 7)
+- `wiki/concepts/algoritmos-e-estruturas-de-dados.md` — novo Key Source (DSA preparando o brainstorm de soluções)
+- `wiki/concepts/aprendizado-por-luta.md` — novo Key Source (o roteiro de dez etapas expõe o candidato à dificuldade real, sem atalhos)
+- `wiki/index.md` — nova linha em Sources e em Concepts (Carreira & Soft Skills)
+
+**Notas:** Nenhuma contradição com o wiki existente — o artigo é a fonte primária que o vídeo já ingerido apenas resumia, então reforça e detalha (framework prático completo) em vez de divergir. Nenhum dado quantitativo novo além do já registrado (>32.000 leituras, ~2.000 likes citados no artigo). Claim central tratado como opinião de prática de mercado de um ex-entrevistador/coach, não como estudo controlado.
+
 ## [2026-07-21] ingest | Adaptabilidade — Papinho Tech Solo
 
 **Fonte:** [[wiki/sources/papinho-tech-solo-adaptabilidade]] — transcrição de podcast em português (Papinho Tech Solo, gravada em Gramado durante o Gramado Summit), texto corrido sem pontuação, fornecida pelo usuário; reescrita como Markdown estruturado por seções (introdução, adaptação de público entre dois eventos, comunicação não-verbal, adaptabilidade como skill de mercado, adaptação forçada por eventos externos, analogia de jogos FPS, fechamento). Sem necessidade de tradução (fonte já em português). Salva em `raw/papinho-tech-solo-adaptabilidade.md`.

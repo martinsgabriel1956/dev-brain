@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-07-21
+date_updated: 2026-07-22
 ---
 
 
@@ -14,6 +14,7 @@ date_updated: 2026-07-21
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] | Filipe Deschamps (autoria inferida): três estágios de maturidade para testar código — clicar manualmente na UI, Postman contra API-first/dogfooding no Pagar.me, e testes automatizados em modo watch (Jest); expectativa que quebra expõe vulnerabilidade real de autorização (403 vs 200) e o mesmo teste pega regressão futura sem verificação manual |
 | [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] | ~19 boas práticas de Claude Code atribuídas à documentação oficial da Anthropic: verificação embutida no prompt, descrever resultado e não passos, checkpoints/rewind, gerenciamento de sessões, `/go`, alocação de modelo por leverage, sandbox para loops não interrompidos, retenção de 30 dias |
 | [[wiki/sources/3-pilares-testes-automatizados-produtividade]] | Erick Wendel: 3 pilares — entender a tarefa antes de codificar (loop de confirmação de entendimento), setup de live reload/debug/testes integrados (node --watch/--inspect/--test + launch.json), e decompor tarefa em entrada/processamento/saída + Given/When/Then antes de implementar (exemplo Rinha de Backend); tipagem forte via JSDoc sem TypeScript |
 | [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] | Autoria inferida (Filipe Deschamps): 5 armadilhas de mentalidade ao aprender a programar — bomba de efeito moral (choque de complexidade que paralisa), relação criador-criatura (pedestal técnico), programar sem mirar impacto real, escolher o projeto (com "adrenalina") antes da tecnologia, e desligar autocomplete para não sabotar a spaced repetition |
@@ -23,6 +24,7 @@ date_updated: 2026-07-21
 | [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] | AI Jail (Fábio Akita): sandbox via Bubblewrap para conter agentes de codificação de IA contra supply chain attacks (ex.: npm postinstall malicioso); modelo de 3 camadas — sessão/AI Jail, código/Git, SO imutável; comparação com o opt-out do sandbox nativo do Claude Code |
 | [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]] | Renato Augusto: "vale a pena" sem objetivo definido não tem resposta; pós-graduação em arquitetura ensina teoria, não prática, nem em instituições renomadas; vantagens reais são networking, acesso a vagas com exigência de diploma e visão de negócio (churn, CAC, LTV) |
 | [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]] | Anthony D. Mays (ex-entrevistador big tech): memorize o padrão, não o problema; resposta certa não basta, processo de raciocínio importa mais; ficar travado é esperado; fazer perguntas de esclarecimento é trabalho do candidato, não do entrevistador |
+| [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]] | Artigo original (2022) de Anthony D. Mays: entrevista é exercício colaborativo, não prova solo; framework "Os Seis Passos" como roteiro de dez etapas de mock interview — cronômetro real, ouvir o problema sem ler o enunciado, estimar Big-O antes de codar, implementar sem pseudocódigo, diário de progresso |
 | [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] | Everton Oliveira: KISS (origem Marinha dos EUA) e YAGNI como os dois princípios que resolvem o dilema velocidade vs. qualidade — exemplo de refactor de validação de status e de repositório com métodos CRUD implementados por precaução |
 | [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]] | Reação a currículos reais de candidatos júnior: repetição da stack-alvo para passar no ATS, ausência de GitHub como motivo de descarte explícito, formatação/legibilidade e discurso de "pensar produto" como diferenciais |
 | [[wiki/sources/8-tipos-de-javascript]] | Os 8 tipos de JS (`null`, `undefined`, `boolean`, `number`, `bigint`, `string`, `symbol`, `object`); `typeof` vs. `Object.prototype.toString.call()`; `==` vs `===`; default de parâmetro (`undefined`) vs. fallback `\|\|` (qualquer falsy) |
@@ -210,6 +212,7 @@ date_updated: 2026-07-21
 | [[wiki/concepts/profundidade-e-maestria]] | Maestria em qualquer assunto (mesmo fora da área técnica) é prognóstico de sucesso em qualquer outro problema — o "hardware mental" se transfere |
 | [[wiki/concepts/abrangencia-profissional]] | Ser interessado, não apenas interessante — sinal é se curvar para frente ao ouvir um problema, não chegar com a solução pronta |
 | [[wiki/concepts/entrevista-tecnica-coding]] | Memorize o padrão, não o problema — processo de raciocínio e perguntas de esclarecimento importam mais que a resposta certa |
+| [[wiki/concepts/seis-passos-mock-interview]] | Roteiro de dez etapas para transformar prática solo de LeetCode em simulação fiel de entrevista real — cronômetro, sem ler o enunciado, Big-O antes de codar |
 | [[wiki/concepts/entrevista-system-design]] | Whiteboard interview: requisitos core antes de desenhar, plano de capacidade, modelagem de dados/API, e só então o high-level design |
 | [[wiki/concepts/networking-de-carreira]] | Mercado invisível de indicações — quanto mais sênior o cargo, mais a vaga é preenchida por "você conhece alguém?" em vez de vaga aberta |
 | [[wiki/concepts/credencialismo-formacao-formal]] | Diploma como proxy de disciplina, não de competência técnica — "tecnologia se ensina, disciplina não" |
@@ -825,6 +828,7 @@ date_updated: 2026-07-21
 | [[wiki/concepts/loop-de-confirmacao-de-entendimento]] | Ouvir a explicação inteira sem interromper, depois dizer de volta "o que eu entendi foi X" — antes de cair para implementação |
 | [[wiki/concepts/setup-live-reload-debug-testes]] | Live reload + `--inspect` + `node --test` integrados via `launch.json` — testes e debugger rodam a cada Ctrl+S, sem sair do editor |
 | [[wiki/concepts/tipagem-com-jsdoc]] | `@typedef`/`@param`/`@returns` dão autocomplete e validação de tipo em JavaScript puro, sem TypeScript |
+| [[wiki/concepts/tres-estagios-maturidade-testes]] | UI manual → Postman/API-first → Jest em modo watch — o que muda não é o cliente HTTP, é se a verificação vira especificação permanente ou checagem descartável |
 
 ### Padrões e Design
 

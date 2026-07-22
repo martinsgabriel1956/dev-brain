@@ -3,8 +3,8 @@ type: concept
 title: "Entrevista Técnica de Coding"
 aliases: ["coding interview", "entrevista estilo leetcode", "live coding interview", "whiteboard interview"]
 date_created: 2026-07-20
-date_updated: 2026-07-20
-source_count: 2
+date_updated: 2026-07-22
+source_count: 3
 tags: [carreira, entrevistas, coding-interview, algoritmos, comunicacao]
 skill: tech-mentor-leadership
 status: draft
@@ -34,8 +34,13 @@ Praticar muitos problemas ajuda a desenvolver a intuição de quais perguntas fa
 
 Se houver mais de uma solução possível, é válido perguntar ao entrevistador qual ele prefere — evita gastar tempo implementando algo que os dois já sabem que não é ideal. Só implementar a solução ingênua (naive) de primeira sem cogitar alternativas é desperdiçar esse sinal.
 
+## O roteiro de prática: "Os Seis Passos"
+
+O artigo original do mesmo autor (fonte primária do vídeo já citado acima) detalha o framework prático completo por trás do conselho "pratique com outra pessoa": um roteiro de dez etapas de entrevista simulada — cronômetro real, ouvir o problema sem olhar o enunciado, perguntar e reafirmar suposições, estimar Big-O antes de codar, implementar sem pseudocódigo, testar contra uma checklist mental. Ver [[wiki/concepts/seis-passos-mock-interview]] para o detalhamento completo.
+
 ## Relação com outros conceitos
 
+- [[wiki/concepts/seis-passos-mock-interview]] — o roteiro concreto de prática que operacionaliza os princípios acima
 - [[wiki/concepts/reconhecimento-de-padroes]] — o mecanismo cognitivo por trás de "memorize o padrão, não o problema"
 - [[wiki/concepts/algoritmos-e-estruturas-de-dados]] — fundamento que sustenta as perguntas certas a fazer
 - [[wiki/concepts/big-o]] — usado para filtrar abordagens via perguntas de esclarecimento
@@ -46,4 +51,5 @@ Se houver mais de uma solução possível, é válido perguntar ao entrevistador
 ## Key sources
 
 - [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]]
+- [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]] — artigo original com o roteiro completo de dez etapas ("Os Seis Passos")
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]
