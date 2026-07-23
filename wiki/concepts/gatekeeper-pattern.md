@@ -3,8 +3,8 @@ type: concept
 title: "Gatekeeper Pattern"
 aliases: ["gatekeeper", "ponto único de entrada", "single entry point"]
 date_created: 2026-06-05
-date_updated: 2026-06-05
-source_count: 1
+date_updated: 2026-07-23
+source_count: 2
 tags: [gatekeeper, api-gateway, bff, attack-surface, arquitetura-seguranca, defense-in-depth]
 skill: tech-mentor-security
 status: stable
@@ -35,8 +35,8 @@ Um [[concepts/waf]] complementa mas não substitui o Gatekeeper. O WAF opera em 
 
 ## Implementações Comuns
 
-- **API Gateway** (AWS API Gateway, Kong, Nginx) — roteamento + auth + rate limit
-- **BFF (Backend for Frontend)** — Gatekeeper especializado por tipo de cliente (web, mobile, parceiro)
+- **API Gateway** (AWS API Gateway, Kong, Nginx) — roteamento + auth + rate limit. Ver [[wiki/concepts/api-gateway]] para a formalização arquitetural completa (roteamento, mapeamento de payload, edge functions, single point of failure).
+- **BFF (Backend for Frontend)** — Gatekeeper especializado por tipo de cliente (web, mobile, parceiro). Ver [[wiki/concepts/bff-pattern]].
 - **Ingress Controller** (Kubernetes) — Gatekeeper de borda no cluster
 
 ## Anti-patterns
@@ -48,3 +48,4 @@ Um [[concepts/waf]] complementa mas não substitui o Gatekeeper. O WAF opera em 
 ## Key Sources
 
 - [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
+- [[wiki/sources/api-gateway-padrao-essencial-arquiteturas-distribuidas]]

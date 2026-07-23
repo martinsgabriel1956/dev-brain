@@ -3,8 +3,8 @@ type: concept
 title: "Over-Engineering"
 aliases: ["overengineering", "verde neném", "engenharia excessiva", "gold plating"]
 date_created: 2026-06-09
-date_updated: 2026-07-19
-source_count: 4
+date_updated: 2026-07-23
+source_count: 5
 tags: [design, qualidade, anti-pattern, aprendizado, design-patterns, dora, under-engineering]
 skill: tech-mentor-leadership
 status: stable
@@ -97,3 +97,4 @@ A progressão que evita isso:
 - [[wiki/sources/como-evitar-over-engineering-david-farley]]
 - [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] — KISS e YAGNI apresentados como os dois princípios que atacam diretamente o dilema velocidade vs. qualidade, o mesmo dilema que over-engineering resolve mal
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — segunda fonte, independente de David Farley, chegando à mesma conclusão de que under-engineering é o problema mais comum; origem da página [[wiki/concepts/under-engineering]]
+- [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]] — terceira fonte independente reforçando a refutação do "triângulo de ferro": entregar algo funcional e imperfeito vale mais que algo inacabado e "perfeito", e overthinking sobre escalabilidade sem usuários é citado como erro pessoal do próprio autor mesmo após 20+ anos de carreira

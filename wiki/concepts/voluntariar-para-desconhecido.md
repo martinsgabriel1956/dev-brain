@@ -3,8 +3,8 @@ type: concept
 title: "Voluntariar para o Desconhecido"
 aliases: ["volunteer for unknown", "peitando o desafio", "hábito 1 junior"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-23
+source_count: 2
 tags: [carreira, habitos, aprendizado, coragem, programador-junior]
 skill: tech-mentor-leadership
 status: stable
@@ -28,6 +28,11 @@ Cada projeto é um mundo novo: pessoas novas, requisitos novos, frameworks novos
 - Não finja que sabe.
 - Se travar, use [[concepts/pair-programming]] para kickoff.
 
+## Reforço: Por Que Evitar Tarefas Difíceis é Pior do que Arriscar
+
+[[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]] chega à mesma conclusão por outro ângulo: quem só faz trabalho mediano nunca se destaca, porque só pega o que já sabe fazer. Peitar o desconhecido exige três ingredientes específicos — **calma** (o estado de "não ter habilidade ainda" é provisório, ver [[wiki/concepts/sindrome-do-impostor]]), **coragem** (aceitar o risco real de não conseguir) e **cara de pau** (pedir ajuda sem constrangimento, já que a maioria das pessoas gosta de ensinar). A mesma fonte também observa o lado inverso: tarefas realmente complexas tendem a ir naturalmente para quem já é sênior — então, se uma tarefa chegou até um júnior, ela já foi calibrada como algo dentro do alcance dele, mesmo que pareça difícil à primeira vista.
+
 ## Key Sources
 
 - [[sources/9-habitos-programador-junior]]
+- [[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]] — reforça o argumento com o tripé calma/coragem/cara-de-pau e a observação de que tarefas complexas demais raramente chegam a quem está começando

@@ -3,8 +3,8 @@ type: concept
 title: "Exploração com Intenção"
 aliases: ["intentional exploration", "explorar código com objetivo", "seguir o fio", "navegação intencional"]
 date_created: 2026-04-29
-date_updated: 2026-06-20
-source_count: 2
+date_updated: 2026-07-23
+source_count: 3
 tags: [codebase, aprendizado, debugging, fluxo-de-dados, onboarding]
 skill: tech-mentor-leadership
 status: stable
@@ -43,6 +43,11 @@ Rastrear essa pergunta no Excalidraw revela `onPointerDown` → `createGenericEl
 | Constrói modelo mental | Acumula código solto |
 | Progresso mensurável | Sensação vaga de familiaridade |
 
+## Aplicação em Manutenção (Não Só Onboarding)
+
+[[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]] aplica o mesmo mecanismo a um cenário diferente do onboarding original: **descobrir pontos de alteração** numa codebase já conhecida pelo time, ao receber uma tarefa de correção/ajuste. O erro comum descrito é o oposto da exploração com intenção — o iniciante busca direto o ponto aparentemente óbvio (ex.: um `Ctrl+Shift+F` pelo texto exato de uma mensagem de erro), ignorando que a causa real pode estar numa regra de negócio anterior no fluxo. A técnica recomendada é idêntica: comece pela ação do usuário (onde clica, como chega na tela, o que precisa preencher) e siga o fluxo completo — front-end → controller/API → service → banco — anotando o que cada trecho faz, até identificar o ponto real que precisa mudar. Isso amplia o escopo da técnica de "aprender uma codebase nova" para "diagnosticar corretamente onde alterar", mesmo em código já familiar ao time.
+
 ## Key Sources
 
 - [[wiki/sources/como-aprender-novas-codebases]]
+- [[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]] — mesma técnica aplicada a descoberta de pontos de alteração em manutenção/correção de bugs

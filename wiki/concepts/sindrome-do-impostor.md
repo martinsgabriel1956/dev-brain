@@ -3,8 +3,8 @@ type: concept
 title: "Síndrome do Impostor"
 aliases: ["impostor syndrome", "medo de ser descoberto", "sensação de fraude"]
 date_created: 2026-07-03
-date_updated: 2026-07-21
-source_count: 2
+date_updated: 2026-07-23
+source_count: 3
 tags: [carreira, saúde-mental, júnior, inteligência-emocional]
 skill: tech-mentor-leadership
 status: draft
@@ -29,6 +29,12 @@ Ansiedade pré-existente (medo de demissão, medo de não passar no período de 
 
 Distinguir "o código foi reprovado" de "eu fui reprovado" — ver [[wiki/concepts/code-review]] e [[wiki/concepts/inteligencia-emocional]]. Na maioria dos casos, os comentários refletem desconhecimento do padrão da empresa, não incompetência.
 
+## A Variante Sênior
+
+[[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]] documenta uma segunda manifestação da síndrome, do lado oposto da carreira: o dev sênior frequentemente acha que o conhecimento acumulado não é mais suficiente, que está "ultrapassado" — sensação alimentada pelo ritmo de evolução da área de tecnologia, que é genuinamente mais rápido do que em outras profissões. Às vezes essa sensação reflete uma lacuna real de atualização, às vezes é apenas a mesma síndrome do impostor com outro sintoma. A implicação prática: a síndrome do impostor não tem "prazo de validade" na carreira — ela muda de forma, mas continua presente mesmo com anos de experiência.
+
+Essa mesma fonte também reforça um antídoto adicional ao já registrado acima: lembrar que **o estado atual de falta de habilidade é provisório, não permanente** — "você não tem habilidade ainda" é uma afirmação sobre o momento presente, não sobre uma limitação fixa. Ver [[wiki/concepts/disciplina-vs-talento]] para o argumento completo de que habilidade é adquirida, não nata.
+
 ## Relacionado
 
 - [[wiki/concepts/inteligencia-emocional]] — regular a resposta emocional a crítica é o antídoto direto
@@ -40,3 +46,4 @@ Distinguir "o código foi reprovado" de "eu fui reprovado" — ver [[wiki/concep
 
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]]
 - [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] — descreve a dinâmica de pedestal ("relação criador-criatura") como bloqueio de potencial
+- [[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]] — variante sênior da síndrome (medo de estar desatualizado) e o enquadramento de que o estado atual de falta de habilidade é provisório

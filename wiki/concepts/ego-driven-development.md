@@ -3,8 +3,8 @@ type: concept
 title: "Ego-Driven Development"
 aliases: ["ego-driven development", "ego na engenharia", "desenvolvimento guiado por ego"]
 date_created: 2026-04-29
-date_updated: 2026-04-29
-source_count: 1
+date_updated: 2026-07-23
+source_count: 2
 tags: [ego, over-engineering, carreira, qualidade, comportamento, soft-skills]
 skill: tech-mentor-backend
 status: stable
@@ -35,6 +35,10 @@ Não é um diagnóstico moral — é um padrão comportamental documentado, espe
 
 Ego-driven development não é só um problema individual. Quando o código resultante exige conhecimento restrito, o time ao redor cria gambiarras para contornar o que não entende. O resultado final pode ser pior do que uma gambiarra direta — um Frankenstein com arquitetura bonita por fora e remendos por dentro.
 
+## Ego em Discussões Técnicas
+
+[[wiki/entities/pedro-nauke]] descreve um sintoma comportamental adicional, distinto da abstração-como-troféu já documentada acima: o sênior que trava discussões técnicas sem fim por teimosia em discordar do consenso do time, mesmo sem argumento técnico novo. O efeito é sistêmico — desacelera o ritmo do time e cria clima negativo — mesmo quando o código em si ainda não foi escrito. Reforça que ego-driven development não se manifesta só em decisões de código, mas também no processo de decisão coletiva que antecede o código.
+
 ## Relação com outros conceitos
 
 - [[concepts/over-engineering]] — ego-driven development é o mecanismo psicológico que produz over-engineering
@@ -44,3 +48,4 @@ Ego-driven development não é só um problema individual. Quando o código resu
 ## Key Sources
 
 - [[sources/overengineering-carol-ate-quinta]]
+- [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]]
