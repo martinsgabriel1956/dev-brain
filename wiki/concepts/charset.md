@@ -3,8 +3,8 @@ type: concept
 title: "Charset"
 aliases: ["character set", "conjunto de caracteres", "mapeamento de caracteres"]
 date_created: 2026-06-10
-date_updated: 2026-06-10
-source_count: 1
+date_updated: 2026-07-22
+source_count: 2
 tags: [charset, encoding, strings, unicode, ascii, cs-fundamentals]
 skill: cs-fundamentals
 status: stable
@@ -42,3 +42,4 @@ O [[unicode]] define um espaço de mais de 1 milhão de codepoints. Alguns codep
 ## Key Sources
 
 - [[sources/como-strings-realmente-funcionam]]
+- [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — implementação prática do encoding UTF-8 sobre o charset Unicode

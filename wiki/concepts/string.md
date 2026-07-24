@@ -3,9 +3,9 @@ type: concept
 title: "String"
 aliases: ["string", "cadeia de caracteres", "string internals", "strings imutáveis"]
 date_created: 2026-06-10
-date_updated: 2026-06-10
-source_count: 1
-tags: [strings, encoding, cs-fundamentals, imutabilidade, charset, utf-8]
+date_updated: 2026-07-22
+source_count: 2
+tags: [strings, encoding, cs-fundamentals, imutabilidade, charset, utf-8, decode]
 skill: cs-fundamentals
 status: stable
 ---
@@ -76,6 +76,11 @@ Em Go, `rune` é um alias para `int32` — representa um codepoint [[unicode]] c
 - [[utf-8]] — o encoding mais usado para Unicode; largura variável, compatível com ASCII
 - [[imutabilidade]] — o princípio que protege o encoding de ser corrompido
 
+## Como uma Runa é Reconstruída a Partir de Bytes
+
+[[wiki/sources/algoritmo-decode-utf8-com-tdd]] implementa, na prática, o processo inverso da indexação por byte descrita acima: dado um slice de bytes, reconstrói a runa completa usando [[bitwise-operations|AND, OR e left shift]] — a mesma lógica que o Go executa internamente ao converter bytes em caracteres UTF-8.
+
 ## Key Sources
 
 - [[sources/como-strings-realmente-funcionam]]
+- [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — implementação do algoritmo de decode bytes → runa

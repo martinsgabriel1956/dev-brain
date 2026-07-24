@@ -2,6 +2,33 @@
 
 ---
 
+## [2026-07-22] ingest | Como Transformar um Slice de Bytes em uma String Utilizando o Encode UTF-8
+
+**Fonte:** [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — transcrição de vídeo em português, texto corrido sem pontuação, fornecida pelo usuário; reescrita como Markdown estruturado (introdução, disclaimer sobre TDD com testes importados da stdlib de Go, especificação RFC 3629, detecção de comprimento pelo primeiro byte, montagem da runa via AND/OR/left shift, validações de input inválido — continuação byte, overlong encoding, surrogate pairs, codepoint máximo). Sem necessidade de tradução (fonte já em português). Salva em `raw/algoritmo-decode-utf8-com-tdd.md`. É a continuação direta prometida no fim de [[wiki/sources/como-strings-realmente-funcionam]], que havia deixado como questão aberta exatamente "como o algoritmo UTF-8 determina quantos bytes usa para cada codepoint" — questão agora fechada.
+
+**Skill carregada:** `cs-fundamentals` (mesma skill da fonte-mãe [[wiki/sources/como-strings-realmente-funcionam]], por continuidade de domínio) — referência `references/number-systems-representation.md` consultada para calibrar terminologia de bit manipulation (AND/OR/shift, máscaras) antes de escrever `wiki/concepts/bitwise-operations.md`.
+
+**Nota:** apesar do título da fonte dizer "encode", a função implementada no vídeo (`DecodeRune`) é um decoder (bytes → runa) — sinalizado explicitamente na fonte para não distorcer a nomenclatura na wiki.
+
+**Páginas criadas:**
+- `wiki/sources/algoritmo-decode-utf8-com-tdd.md`
+- `wiki/concepts/bitwise-operations.md` — AND/OR/left shift como padrão composto para parsing binário
+- `wiki/concepts/overlong-encoding.md` — regra de largura mínima do UTF-8 e como detectá-la
+
+**Páginas atualizadas:**
+- `wiki/concepts/utf-8.md` — nova seção "Algoritmo de Decode (Bytes → Runa)" com o passo a passo do vídeo e as 4 validações obrigatórias; `source_count` 1 → 2
+- `wiki/concepts/unicode.md` — nova seção "Limites: Codepoint Máximo e Faixa Reservada para Surrogates" (`U+10FFFF`, `U+D800`–`U+DFFF`); `source_count` 1 → 2
+- `wiki/concepts/ascii.md` — nova seção sobre o fast path ASCII num decoder UTF-8; `source_count` 1 → 2
+- `wiki/concepts/charset.md` — novo Key Source; `source_count` 1 → 2
+- `wiki/concepts/string.md` — nova seção "Como uma Runa é Reconstruída a Partir de Bytes"; `source_count` 1 → 2
+- `wiki/concepts/tdd.md` — nova seção "Importar Testes de uma Implementação de Referência como Oráculo"; `source_count` 8 → 9
+- `wiki/concepts/go-fundamentos.md` — cross-link do bitmask via `iota` para `bitwise-operations` e para a fonte nova; `source_count` 4 → 5
+- `wiki/concepts/go-stdlib.md` — nova seção "unicode/utf8"; `source_count` 1 → 2
+- `wiki/concepts/rfc-request-for-comments.md` — nova seção "Homônimo: RFC como Especificação Técnica (IETF)" distinguindo do sentido de processo organizacional já documentado; `source_count` 2 → 3
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (`bitwise-operations`, `overlong-encoding`)
+
+**Notas:** Nenhuma contradição de conteúdo com o wiki existente — fonte estritamente complementar e tecnicamente consistente com `utf-8.md`, `unicode.md` e `ascii.md`. Uma colisão terminológica identificada e documentada: "RFC" nesta fonte significa especificação técnica IETF (RFC 3629), sentido distinto do já registrado em `rfc-request-for-comments.md` (processo organizacional de proposta). Questão aberta nova (menor): o vídeo não implementa o lado *encode* (runa → bytes) apesar do título — lacuna sem cobertura na wiki até o momento.
+
 ## [2026-07-21] ingest | Adaptabilidade — Papinho Tech Solo
 
 **Fonte:** [[wiki/sources/papinho-tech-solo-adaptabilidade]] — transcrição de podcast em português (Papinho Tech Solo, gravada em Gramado durante o Gramado Summit), texto corrido sem pontuação, fornecida pelo usuário; reescrita como Markdown estruturado por seções (introdução, adaptação de público entre dois eventos, comunicação não-verbal, adaptabilidade como skill de mercado, adaptação forçada por eventos externos, analogia de jogos FPS, fechamento). Sem necessidade de tradução (fonte já em português). Salva em `raw/papinho-tech-solo-adaptabilidade.md`.

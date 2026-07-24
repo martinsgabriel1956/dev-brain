@@ -3,9 +3,9 @@ type: concept
 title: "Go — Fundamentos da Linguagem"
 aliases: ["golang fundamentos", "go tipos", "go slices", "go zero values"]
 date_created: 2026-04-24
-date_updated: 2026-07-16
-source_count: 4
-tags: [go, fundamentos, tipos, slices, maps, structs, zero-values, cloud-native, filosofia-de-linguagem]
+date_updated: 2026-07-22
+source_count: 5
+tags: [go, fundamentos, tipos, slices, maps, structs, zero-values, cloud-native, filosofia-de-linguagem, bitwise]
 skill: lang-systems
 status: stable
 ---
@@ -77,6 +77,8 @@ const (
 )
 ```
 
+O mesmo trio de operadores por trás do bitmask acima (`&`, `|`, `<<`) é a base de qualquer parsing binário em Go — ver [[bitwise-operations]] para o padrão geral e [[wiki/sources/algoritmo-decode-utf8-com-tdd]] para um caso real: reconstruir uma `rune` (também um tipo próprio, forte, alias de `int32`) a partir de bytes UTF-8.
+
 ## Controle de Fluxo
 
 - `for` é o único loop — substitui `while`, `do-while` e `for`
@@ -109,3 +111,4 @@ O Go Developer Survey oficial do Google confirma esse padrão de adoção com da
 - [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]
 - [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]
 - [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — contraponto Rust: ownership/borrow checker em vez de GC, mais expressividade ao custo de mais decisões explícitas
+- [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — bitmask/bitwise (`&`, `\|`, `<<`) aplicado a um caso real: decode de UTF-8 byte a byte

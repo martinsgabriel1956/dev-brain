@@ -3,8 +3,8 @@ type: concept
 title: "TDD — Test-Driven Development"
 aliases: ["test driven development", "red green refactor", "desenvolvimento guiado por testes"]
 date_created: 2026-04-22
-date_updated: 2026-07-21
-source_count: 8
+date_updated: 2026-07-22
+source_count: 9
 tags: [testes, tdd, design, red-green-refactor, qualidade, dora]
 skill: tech-mentor-testing
 status: stable
@@ -104,6 +104,10 @@ O ciclo RED-GREEN-REFACTOR pressupõe saber o que testar primeiro — na prátic
 
 Cobertura alta prova que uma linha foi executada, não que ela foi exercitada com os valores certos — não existe forma de testar (via TDD ou não) um bug que ninguém pensou em cobrir. Ver [[criterios-de-bom-teste]] para os cinco critérios (determinístico, conciso, relevante, compreensível, durável) usados para julgar se um teste feito sob TDD realmente vale o ciclo red-green-refactor.
 
+## Importar Testes de uma Implementação de Referência como Oráculo
+
+Quando a interface, o input e o output já são conhecidos por uma especificação externa (RFC, protocolo, formato de arquivo), é possível pular a etapa de escrever os testes do zero e **importar a suite de testes de uma implementação de referência já validada**. [[wiki/sources/algoritmo-decode-utf8-com-tdd]] faz isso ao copiar a suite de testes do pacote `unicode/utf8` da standard library de Go para validar uma implementação própria de decode UTF-8 — os testes cobrem edge cases (sequências de bytes inválidas, overlong encoding, surrogate pairs) que seriam difíceis de antecipar escrevendo do zero. Passar em toda a suite importada é evidência forte de que a implementação está correta e não apenas "parece funcionar" nos casos óbvios. É uma variação do ciclo clássico RED → GREEN → REFACTOR: a primeira rodada dos testes falha propositalmente (a função ainda nem existe), confirmando que os testes de fato exercitam o comportamento esperado antes de qualquer código de produção ser escrito.
+
 ## Key Sources
 
 - [[wiki/sources/tdd]]
@@ -116,3 +120,4 @@ Cobertura alta prova que uma linha foi executada, não que ela foi exercitada co
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — cobertura alta ≠ ausência de bugs
 - [[wiki/sources/xunit-martin-fowler]] — origem histórica do JUnit e da família Xunit
 - [[wiki/sources/3-pilares-testes-automatizados-produtividade]] — decomposição de tarefa em entrada/processamento/saída como passo pré-RED; setup de live reload/debug/testes integrados via `node --test` + `--inspect` + `launch.json`
+- [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — importar a suite de testes de uma implementação de referência (stdlib de Go) como oráculo de corretude

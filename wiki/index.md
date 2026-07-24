@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-07-21
+date_updated: 2026-07-22
 ---
 
 
@@ -58,6 +58,7 @@ date_updated: 2026-07-21
 | [[wiki/sources/akita-como-aprender-programacao]] | Autodidatas avançam independente do material; copie código por centenas de horas; DSA é a fundação inegociável; Design Patterns são para depois |
 | [[wiki/sources/quanto-tempo-aprender-programacao]] | 800–1.000 horas para júnior; cérebro aprende padrões, não sintaxe; o vale do desespero é estrutural — troque prazo por quilometragem |
 | [[wiki/sources/como-strings-realmente-funcionam]] | String é slice de bytes + charset + encoding; imutabilidade existe para proteger UTF-8 de corrupção por indexação |
+| [[wiki/sources/algoritmo-decode-utf8-com-tdd]] | Continuação prometida do vídeo de strings: implementa `DecodeRune` em Go via TDD (testes importados da stdlib), usando AND/OR/left shift; valida overlong encoding, surrogate pairs e codepoint máximo |
 | [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]] | As 6 soft skills que separam quem executa tarefas de quem resolve problemas e cresce na carreira |
 | [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]] | Como agentes de IA com janelas de token estão mudando comportamento e rotina de devs |
 | [[wiki/sources/trd-technical-requirements-document]] | TRD traduz PRD em especificação técnica — contratos, NFRs, segurança; distinto de RFC (proposta aberta) e ADR (decisão registrada) |
@@ -544,6 +545,8 @@ date_updated: 2026-07-21
 | [[wiki/concepts/ascii]] | 128 caracteres em 7 bits; charset e encoding ao mesmo tempo; subconjunto de UTF-8 |
 | [[wiki/concepts/unicode]] | Charset universal com >1M codepoints; não é encoding — precisa de UTF-8 para ser serializado |
 | [[wiki/concepts/utf-8]] | Encoding de largura variável para Unicode; criado por Ken Thompson e Rob Pike; padrão da web |
+| [[wiki/concepts/bitwise-operations]] | AND extrai/zera bits, OR mescla, left shift abre espaço — o trio por trás de todo parsing binário |
+| [[wiki/concepts/overlong-encoding]] | Codificar UTF-8 com mais bytes do que o mínimo necessário — sintaticamente válido, mas proibido pelo padrão |
 
 ### Resolução de Problemas & Debugging Estruturado
 

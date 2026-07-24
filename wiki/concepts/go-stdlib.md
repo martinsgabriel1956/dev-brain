@@ -3,9 +3,9 @@ type: concept
 title: "Go — Standard Library Essencial"
 aliases: ["go net/http server", "go encoding json", "go database/sql", "go table-driven tests", "go slog"]
 date_created: 2026-04-24
-date_updated: 2026-04-24
-source_count: 1
-tags: [go, stdlib, net-http, json, database-sql, testing, slog]
+date_updated: 2026-07-22
+source_count: 2
+tags: [go, stdlib, net-http, json, database-sql, testing, slog, unicode-utf8]
 skill: lang-systems
 status: stable
 ---
@@ -96,6 +96,10 @@ func TestAdd(t *testing.T) {
 }
 ```
 
+## unicode/utf8
+
+Pacote de referência para tudo relacionado a codificação/decodificação [[utf-8]] em Go — `utf8.RuneCountInString`, `utf8.DecodeRune`. [[wiki/sources/algoritmo-decode-utf8-com-tdd]] reimplementa `DecodeRune` do zero como exercício didático e **importa a própria suite de testes desse pacote** da stdlib como oráculo de corretude — validando a implementação própria contra os mesmos edge cases (sequências inválidas, overlong encoding, surrogate pairs) que o time do Go já mapeou. Ver [[tdd]] para a técnica geral de importar testes de uma implementação de referência.
+
 ## log/slog (Go 1.21+)
 
 ```go
@@ -116,3 +120,4 @@ Substitui `log` padrão — structured logging nativo sem dependência externa.
 ## Key Sources
 
 - [[wiki/sources/go-stdlib]]
+- [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — `unicode/utf8` como referência e fonte de testes para uma reimplementação didática de `DecodeRune`

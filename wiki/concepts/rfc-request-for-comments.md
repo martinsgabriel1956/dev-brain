@@ -3,8 +3,8 @@ type: concept
 title: "RFC — Request for Comments"
 aliases: ["RFC", "Request for Comments"]
 date_created: 2026-05-17
-date_updated: 2026-07-16
-source_count: 2
+date_updated: 2026-07-22
+source_count: 3
 tags: [rfc, documentação, processo, arquitetura, ia, source-of-truth]
 skill: tech-mentor-system-design
 status: draft
@@ -22,7 +22,12 @@ Uso: quando a decisão ainda está em aberto e múltiplos stakeholders devem opi
 
 Uma variante discutida na mesma fonte é a **especificação agnóstica à linguagem de programação** (tese atribuída a [[wiki/entities/fabricio-arcanjo]]): documentar entradas/saídas rigorosamente em Markdown, focado em [[wiki/concepts/ddd|DDD]] e padrões, permite pedir a um agente para implementar a mesma arquitetura em linguagens diferentes (Rust, .NET, Java, Go, TypeScript) a partir de um único documento, reduzindo ambiguidade.
 
+## Homônimo: RFC como Especificação Técnica (IETF)
+
+Fora do contexto de processo organizacional documentado acima, "RFC" também é o nome dado aos documentos de especificação técnica publicados pela IETF — ex.: RFC 3629, que define o padrão [[utf-8]]. É o mesmo termo, sentido completamente diferente: aqui não há coleta de objeções nem decisão em aberto, é uma especificação normativa e estável que implementações devem seguir. [[wiki/sources/algoritmo-decode-utf8-com-tdd]] usa "RFC" exclusivamente nesse segundo sentido, ao implementar um decoder UTF-8 diretamente a partir da tabela de codificação definida na RFC 3629. Sinalizado aqui para não confundir os dois usos ao pesquisar "RFC" na wiki.
+
 ## Key Sources
 
 - [[wiki/sources/trd-technical-requirements-document]]
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — RFC como source of truth anti-alucinação para IA; inversão de tempo 80/20 planejamento/execução; especificações agnósticas à linguagem
+- [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — uso homônimo do termo: RFC como especificação técnica IETF (RFC 3629 / UTF-8), não processo de proposta
