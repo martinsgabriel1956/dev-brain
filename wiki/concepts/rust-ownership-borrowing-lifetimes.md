@@ -3,8 +3,8 @@ type: concept
 title: "Rust — Ownership, Borrowing e Lifetimes"
 aliases: ["ownership rust", "borrow checker", "lifetimes rust", "fearless concurrency", "move semantics rust", "&mut vs &"]
 date_created: 2026-07-16
-date_updated: 2026-07-16
-source_count: 1
+date_updated: 2026-07-24
+source_count: 2
 tags: [rust, ownership, borrowing, lifetimes, borrow-checker, memory-safety, data-race]
 skill: lang-systems
 status: stable
@@ -94,6 +94,11 @@ Ownership, borrowing e lifetimes são checados inteiramente em compile-time — 
 - [[wiki/concepts/concorrencia]] — a regra de exclusividade do borrowing (N leitores OU 1 escritor) é o que torna data races impossíveis sem locks em runtime
 - [[wiki/concepts/rust-fundamentos]] — traits, `Option`/`Result`, `enum` exaustivo e cargo, que se apoiam nessas garantias de memória para formar o resto da linguagem
 
+## Borrow Checker como Harness para Loops Agênticos
+
+[[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] cita a migração do Ban (>500.000 linhas) para Rust como motivada, em parte, por essa garantia de memory safety em tempo de compilação servir como [[wiki/concepts/harness|harness]] objetivo para um agente rodando em [[wiki/concepts/loop-engineering|loop]]: em vez de o modelo "interpretar" se um trecho é memory-safe, o compilador rejeita o código diretamente — um sensor determinístico, ao contrário da linguagem anterior citada (Zig), que compila código que só quebra em produção.
+
 ## Key Sources
 
 - [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]]
+- [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — borrow checker como harness/sensor objetivo na migração do Ban para Rust via loop criador

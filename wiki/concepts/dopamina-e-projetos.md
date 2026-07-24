@@ -3,8 +3,8 @@ type: concept
 title: "Dopamina e Projetos"
 aliases: ["dopamine trap", "antecipação de recompensa", "dopamina ideação"]
 date_created: 2026-04-29
-date_updated: 2026-07-21
-source_count: 3
+date_updated: 2026-07-24
+source_count: 4
 tags: [psicologia, produtividade, motivacao, projetos, carreira, startup]
 skill: tech-mentor-leadership
 status: stable
@@ -44,8 +44,13 @@ Não é falta de disciplina — é bioquímica. A solução não é "ter mais fo
 
 [[wiki/concepts/projeto-com-adrenalina]] recomenda escolher o primeiro projeto de aprendizado justamente pelo critério de "gerar adrenalina" (interesse genuíno) em vez de pela tecnologia. Isso é, em essência, o mesmo gatilho dopaminérgico de antecipação descrito aqui — a diferença proposta é de fase: usar a adrenalina para *escolher* o que construir (uma decisão pontual) não é o mesmo que deixá-la guiar a execução inteira, onde o padrão de abandono ao surgir uma ideia nova de fato se manifesta.
 
+## Treino do Circuito por Estímulos Projetados (Jogos/Redes Sociais)
+
+[[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] descreve o mesmo circuito de recompensa por outro ângulo temporal: exposição diária e prolongada a jogos e redes sociais — ambientes com objetivos e recompensas *desenhados por terceiros* — treina o cérebro a ficar orientado a **objetivos definidos externamente**, não a **ações autogeradas**. O efeito prático é que, diante de um [[wiki/concepts/problema-de-escopo-aberto|problema de escopo aberto]] sem objetivos pré-mastigados (carreira, projeto pessoal sem deadline externo), o mesmo circuito que se ativa fácil em jogos não encontra estímulo equivalente — e a pessoa trava, não por falta de vontade, mas por falta de treino nesse tipo específico de ativação.
+
 ## Key Sources
 
 - [[sources/por-que-devs-nao-terminam-projetos]]
 - [[sources/lean-startup-para-devs-mano-deivin]]
 - [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] — tensão entre "adrenalina como critério de escolha" e o mecanismo de dopamina de antecipação
+- [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] — jogos/redes sociais treinando o circuito de recompensa para orientação a objetivos definidos por terceiros, não a ações autogeradas

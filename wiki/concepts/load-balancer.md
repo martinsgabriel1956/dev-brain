@@ -3,8 +3,8 @@ type: concept
 title: "Load Balancer"
 aliases: ["lb", "load balancing", "l4", "l7", "round robin"]
 date_created: 2026-04-23
-date_updated: 2026-07-20
-source_count: 9
+date_updated: 2026-07-24
+source_count: 10
 tags: [load-balancer, l4, l7, round-robin, health-check, alta-disponibilidade, infra, nginx]
 skill: tech-mentor-infra
 status: stub
@@ -66,3 +66,4 @@ Nem todo [[wiki/concepts/reverse-proxy]] é um load balancer: um LB decide **ent
 - [[wiki/sources/portas-de-rede-como-funcionam]] — L4 roteia por `IP:porta`, sem inspecionar conteúdo
 - [[wiki/sources/10-conceitos-fundamentais-backend]] — regra didática mínima: "o load balancer não deveria mandar tráfego para uma instância que travou"
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]] — Nginx como reverse proxy (não LB) num deploy blue/green de host único, redirecionando 100% do tráfego para uma porta por vez
+- [[wiki/sources/system-design-simulador-hotel-booking-replit]] — inserido entre client e app server num exercício de hotel booking; o material reforça que a escolha do algoritmo (round robin, least connections etc.) deve ser justificada numa entrevista, mesmo quando o foco do exercício está em outra camada

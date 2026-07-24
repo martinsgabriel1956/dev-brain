@@ -14,6 +14,12 @@ date_updated: 2026-07-24
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] | Jogos e redes sociais treinam o cérebro para problemas de escopo fechado (objetivo + caminho previsível); vida real exige operacionalizar problemas de escopo aberto e trocar foco de resultado por ação; "burrice" costuma ser inexperiência, cuja cura é experimentar (base: playlist do Dr. Alok Kanojia) |
+| [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]] | Código Fonte TV: Mitos e Fable 5 (Anthropic) e GPT 5.6 (OpenAI) — modelos de IA capazes de achar vulnerabilidades de software em escala inédita (falhas de décadas em OpenBSD, FFmpeg, kernel Linux), restritos ao consórcio Glasswing e depois bloqueados pelo governo dos EUA após a NSA relatar sistemas confidenciais comprometidos em horas; jailbreak do Fable 5 documentado (702/7.828 tentativas); Japão (Sakana AI/Fugo) e China (360/Tulong Fang, Zhipu AI/GLM 5.2) já reivindicam capacidade equivalente |
+| [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] | Bernardo Lobato: estudar microsserviços vale a pena mesmo sem usar em produção, porque funciona como eixo unificado de aprendizado (bounded context, circuit breaker, saga, observabilidade, mensageria, times autônomos); relato pessoal de retorno ao mercado após anos em monólitos legados; fundamentos como o que permite curar sugestões de IA |
+| [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] | Três níveis do dev loop (React → spec driven → humano) e loop engineering como quarta camada; distinção loop fixo (sem side effect) vs. loop criador (roadmap iterativo, risco de perpetuar bugs); caso Ban→Rust e jogo MMO completo construído em um final de semana; quatro perguntas para decidir se vale usar loop |
+| [[wiki/sources/jspace-cerebro-cloud-antropic]] | Lucas Montano reage à pesquisa "J-Space" da Anthropic: espaço interno de ativações do Claude vinculável a palavras nunca ditas, lido via Jacobian Lens; não é chain-of-thought; tese pessoal do autor de que isso vira base de cobrança/auditoria de agentes |
+| [[wiki/sources/system-design-simulador-hotel-booking-replit]] | System design como a competência que a IA não substitui — construção de um simulador de system design via Replit e exercício prático de hotel booking (gargalo no banco → cache → load balancer → réplicas → fila Kafka, nota de IA 58/100) |
 | [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]] | Pedro Nauck: 5 verdades duras de 20+ anos de carreira — ego não discrimina por senioridade, side projects populares viram maldição de manutenção (caso Docz), reinventar a roda é remix com custo de manutenção, cultura brasileira do "hard worker" normalizou entrega mínima, e overthinking/over-engineering resolve problemas que ainda não existem |
 | [[wiki/sources/api-gateway-padrao-essencial-arquiteturas-distribuidas]] | Bernardo Lobato: API Gateway como ponto único de entrada (roteamento, auth, mapeamento de payload, edge functions); API Composition/API Composer para orquestrar e agregar múltiplos endpoints; BFF como Gateway especializado por tipo de cliente; desafios centrais são single point of failure e Gateway virando gargalo por acúmulo de funções de borda |
 | [[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]] | André Casciotti: tarefas difíceis parecem mais difíceis do que são — síndrome do impostor ataca em todo nível, tarefas complexas naturalmente vão para seniores; 3 técnicas: seguir o fluxo do código desde a ação do usuário, dividir tarefas até responder "seguro?"/"tenho prazo?", organizar trabalho com lista escrita e progresso visível |
@@ -205,6 +211,7 @@ date_updated: 2026-07-24
 | [[wiki/concepts/soft-skills]] | Habilidades humanas que potencializam o técnico — o multiplicador da carreira |
 | [[wiki/concepts/code-review]] | Regra de negócio antes de estilo — e por que o primeiro review de um júnior costuma vir cheio de comentários |
 | [[wiki/concepts/sindrome-do-impostor]] | Confundir "código reprovado" com "eu fui reprovado" — o gatilho mais comum no primeiro emprego |
+| [[wiki/concepts/problema-de-escopo-aberto]] | Escopo fechado (jogo, objetivo + caminho previsível) vs. escopo aberto (vida real, sem limites definidos) — operacionalizar o problema em pedaços fechados e trocar foco de resultado por ação |
 | [[wiki/concepts/comunicacao-tecnica]] | Ser entendido, não apenas falar — acelerador de time |
 | [[wiki/concepts/colaboracao-times]] | Construir junto; empatia de papel e gestão de conflito |
 | [[wiki/concepts/autonomia-responsabilidade]] | Liberdade + maturidade para alinhar expectativas antes de executar |
@@ -378,6 +385,7 @@ date_updated: 2026-07-24
 | [[wiki/concepts/fomo-tecnologico]] | FOMO amplificado por releases de modelos; paradoxo: mais capacidade = mais ansiedade |
 | [[wiki/concepts/burnout-dev]] | Esgotamento em dev; linha mais tênue que nunca com agentes disponíveis para todos |
 | [[wiki/concepts/dopamina-produtividade]] | Loop de recompensa que torna difícil parar mesmo quando o descanso seria melhor |
+| [[wiki/concepts/dopamina-e-projetos]] | Antecipação da recompensa gera mais dopamina que a construção real — ciclo de iniciar projetos sem terminar nenhum |
 | [[wiki/concepts/harness]] | Tudo ao redor do LLM: tool calls, contexto, memória, MCP, subagentes — o que dá ao modelo "olhos e mãos" |
 | [[wiki/concepts/tool-call]] | Mecanismo (2023, OpenAI) que permite ao LLM requisitar execução de funções externas — game changer |
 | [[wiki/concepts/ciclo-agente]] | Loop prompt → tool calls → contexto → resposta; 1 prompt pode gerar 40+ ciclos internos |
@@ -477,6 +485,7 @@ date_updated: 2026-07-24
 | [[wiki/concepts/autoregressive-language-model]] | Arquitetura decoder-only que gera token a token — base do GPT-3 e da maioria dos LLMs modernos |
 | [[wiki/concepts/fine-tuning]] | Continuar treinamento num dataset específico de tarefa — alternativa mais custosa ao ICL |
 | [[wiki/concepts/emergent-ability]] | Capacidade que não existe em modelos pequenos e aparece abruptamente acima de certo limiar de escala — CoT é o exemplo canônico |
+| [[wiki/concepts/j-space-interpretabilidade]] | Espaço interno de ativações do Claude vinculável a palavras nunca verbalizadas no output, lido via Jacobian Lens (Anthropic) — distinto de chain-of-thought, que é texto observável |
 
 ### Fundamentos de Sistemas Operacionais
 
@@ -630,6 +639,7 @@ date_updated: 2026-07-24
 | [[wiki/concepts/replicacao-de-banco]] | Cópias do banco para leitura — escala reads e aumenta disponibilidade |
 | [[wiki/concepts/gargalo]] | Ponto mais lento da cadeia — identificar antes de escalar qualquer coisa |
 | [[wiki/concepts/cap-theorem]] | Consistência vs Disponibilidade vs Partição — o trade-off central de sistemas distribuídos |
+| [[wiki/concepts/simulador-de-system-design]] | Playground que roda tráfego simulado sobre o diagrama e pontua o desenho com IA — não é só desenhar, é testar |
 
 ### Fundamentos de Backend (Request/Response ao Deploy)
 
@@ -724,6 +734,7 @@ date_updated: 2026-07-24
 | [[wiki/concepts/api-gateway]] | Ponto único de entrada externo — roteamento, auth de borda, mapeamento de payload entre protocolos; single point of failure por natureza, mitigado com escala horizontal e observabilidade |
 | [[wiki/concepts/bff-pattern]] | API Gateway especializado por tipo de cliente — resolve over-fetching/under-fetching agregando dados exatamente no formato que aquele frontend precisa |
 | [[wiki/concepts/api-composition]] | API Composer orquestra múltiplas chamadas em paralelo (fan-out) e devolve um único resultado lapidado — técnica central por trás de BFFs e agregação de endpoints |
+| [[wiki/concepts/microsservicos]] | Decomposição por bounded context, não por camada técnica; monolito modular é o ponto de partida correto para ~90% dos casos; estudar o estilo funciona como eixo de aprendizado que amarra circuit breaker, saga, observabilidade e mensageria |
 
 ### Boas Práticas de Engenharia
 
@@ -876,6 +887,8 @@ date_updated: 2026-07-24
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/sakana-ai]] | Empresa japonesa de IA — Fugo, pool de modelos que superou Fable 5 e alguns benchmarks do Mitos preview em cybersegurança |
+| [[wiki/entities/alok-kanojia]] | Psiquiatra formado em Harvard (canal HealthyGamer/"Dr. K") — fonte primária citada sobre o impacto de jogos no cérebro e problemas de escopo aberto vs. fechado |
 | [[wiki/entities/erick-wendel]] | Criador de conteúdo brasileiro sobre Node.js e testes automatizados — método de 3 pilares para produtividade com testes |
 | [[wiki/entities/rinha-de-backend]] | Desafio open source de backend (transações crédito/débito) — usado como exemplo de decomposição de tarefa em casos de teste |
 | [[wiki/entities/ux-pilot]] | Ferramenta de geração de UI/UX por IA (telas completas ou wireframes) que exporta pro Figma, de onde o MCP conecta a uma IA de código |
@@ -886,6 +899,7 @@ date_updated: 2026-07-24
 | [[wiki/entities/hermes-agent]] | Agente open source (MIT) com closed-loop skill learning system e memória em três camadas — liderou ranking de tokens do OpenRouter |
 | [[wiki/entities/open-claw]] | Agente open source (MIT), referência de mercado que motivou Hermes Agent e o "Dreaming in Claude" da Anthropic |
 | [[wiki/entities/hostinger]] | Provedora de VPS (menção patrocinada) — servidor virtual livre, físico gerenciado (DDoS, firewall IA, backups semanais) |
+| [[wiki/entities/replit]] | Plataforma de agentes de IA — workers paralelos (possível `git worktree`), taskboard multiplayer, testes end-to-end automáticos do próprio agente |
 | [[wiki/entities/augusto-galego]] | Criador de conteúdo técnico brasileiro — demo prática de deploy blue/green com Nginx numa VPS |
 | [[wiki/entities/hostgator]] | Provedora de hospedagem/VPS — patrocinadora da demo de deploy blue/green de Augusto Galego |
 | [[wiki/entities/anthony-d-mays]] | Ex-entrevistador técnico big tech ("de Compton ao Google") — autor do conselho "memorize o padrão, não o problema" para entrevistas de coding |

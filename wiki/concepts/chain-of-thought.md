@@ -3,8 +3,8 @@ type: concept
 title: "Chain-of-Thought"
 aliases: ["CoT", "chain of thought", "raciocínio passo a passo"]
 date_created: 2026-05-17
-date_updated: 2026-05-17
-source_count: 2
+date_updated: 2026-07-24
+source_count: 3
 tags: [llm, prompt-engineering, raciocínio, chain-of-thought, cot, emergent-ability]
 skill: tech-mentor-ai
 status: stable
@@ -76,7 +76,12 @@ Problema: [...]
 - **Tree of Thoughts** — explorar múltiplos caminhos de raciocínio em paralelo
 - **Reasoning Models (o1/o3)** — CoT internalizado no próprio treinamento do modelo
 
+## CoT vs. J-Space (Interpretabilidade)
+
+CoT é raciocínio *textual*, deliberado, observável por padrão (o modelo escreve um rascunho e reusa como input). A pesquisa de interpretabilidade da Anthropic sobre [[j-space-interpretabilidade]] mostra uma camada distinta: processamento residual pré-token, nunca escrito, que só é observável com uma ferramenta dedicada (Jacobian Lens). Um modelo pode responder direto (sem CoT visível) e ainda assim ter processado passos intermediários silenciosamente nesse espaço interno — evidência de que a ausência de CoT no output não implica ausência de raciocínio multi-etapa.
+
 ## Fontes
 
 - [[wiki/sources/chain-of-thought-prompting]]
 - [[wiki/sources/microsoft-prompt-engineering-guide]]
+- [[wiki/sources/jspace-cerebro-cloud-antropic]]

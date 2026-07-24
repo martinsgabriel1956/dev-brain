@@ -3,8 +3,8 @@ type: concept
 title: "Circuit Breaker"
 aliases: ["circuit breaker pattern", "disjuntor", "opossum"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 2
+date_updated: 2026-07-24
+source_count: 3
 tags: [resiliencia, circuit-breaker, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -113,3 +113,4 @@ Circuit breaker decide **SE** tenta. [[concepts/bulkhead]] decide **QUANTOS** te
 
 - [[sources/bulkhead]]
 - [[sources/circuit-breaker]]
+- [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — circuit breaker citado como conceito que se aplica em qualquer chamada de API externa (banco, serviço de pagamento, terceiro), mesmo dentro de uma aplicação única — não é exclusividade de sistemas distribuídos, ver [[wiki/concepts/microsservicos]]

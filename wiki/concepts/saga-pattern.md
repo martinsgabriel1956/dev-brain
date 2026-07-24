@@ -3,8 +3,8 @@ type: concept
 title: "Saga Pattern"
 aliases: ["saga", "saga distribuída", "compensating transactions"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-24
+source_count: 2
 tags: [sistemas-distribuidos, consistencia, saga, microsservicos, compensação]
 skill: tech-mentor-system-design
 status: stub
@@ -40,3 +40,4 @@ Consistência eventual — não ACID. Compensações podem falhar também (saga 
 ## Key Sources
 
 - [[sources/3pc]]
+- [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — saga pattern/consistência eventual citado como conceito que ajuda a lidar com cenários de concorrência e integração mesmo num único banco de dados, fora de arquitetura distribuída

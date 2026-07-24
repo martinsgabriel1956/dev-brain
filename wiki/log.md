@@ -2,6 +2,107 @@
 
 ---
 
+## [2026-07-24] ingest | Problemas de Escopo Aberto vs. Escopo Fechado (e Por Que Isso Explica a "Preguiça")
+
+**Fonte:** [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] — transcrição de vídeo em português colada pelo usuário no chat (fala transcrita automaticamente, sem pontuação/parágrafos), já em português (sem necessidade de tradução), reorganizada em seções, limpa de repetições e hesitações de fala. Salva em `raw/problemas-de-escopo-aberto-vs-fechado.md`. Autor do vídeo não identificado explicitamente no texto; conteúdo atribuído pelo próprio autor a uma playlist de 15 vídeos do Dr. Alok Kanojia (Harvard, canal HealthyGamer).
+
+**Skill carregada:** `tech-mentor-leadership`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/SKILL.md` — tema de carreira/mentalidade não mapeia para nenhuma linha específica do índice de referências (mais próximo de mentoria/desenvolvimento individual), então a resposta usou conhecimento base do domínio de liderança técnica/carreira, seguindo o protocolo de "arquivo de referência não encontrado" da skill.
+
+**Páginas criadas:**
+- `raw/problemas-de-escopo-aberto-vs-fechado.md`
+- `wiki/sources/problemas-de-escopo-aberto-vs-fechado.md`
+- `wiki/concepts/problema-de-escopo-aberto.md` — conceito central novo (escopo aberto vs. fechado, operacionalizar, foco em ação vs. resultado, experiência vs. inteligência)
+- `wiki/entities/alok-kanojia.md` — stub, fonte primária citada pelo autor do vídeo
+
+**Páginas atualizadas:**
+- `wiki/concepts/sindrome-do-impostor.md` — nova seção "Burrice vs. Inteligência é Na Verdade Experiência vs. Inexperiência"; `source_count` 3 → 4
+- `wiki/concepts/dopamina-e-projetos.md` — nova seção sobre treino do circuito de recompensa por estímulo projetado (jogos/redes sociais); `source_count` 3 → 4
+- `wiki/concepts/dopamina-produtividade.md` — nova seção sobre jogos como estímulo projetado vs. mundo real sem design; `source_count` 2 → 3
+- `wiki/concepts/bomba-de-efeito-moral.md` — nova entrada relacionando "nuvem/bomba de fumaça de escopo aberto" ao mesmo efeito de choque desproporcional; `source_count` 1 → 2
+- `wiki/concepts/disciplina-vs-talento.md` — nova seção "Quarta Fonte" com o desafio "One Punch Man" como caso de progresso via ação consistente; `source_count` 3 → 4
+- `wiki/concepts/arvore-de-decomposicao.md` — nova seção generalizando "operacionalizar" para fora do debugging técnico; `source_count` 1 → 2
+- `wiki/concepts/decomposicao-de-problemas.md` — nova seção sobre aplicação a problemas de carreira/vida; `source_count` 3 → 4
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (`problema-de-escopo-aberto`, e `dopamina-e-projetos`, que estava sem entrada no índice apesar de já existir); nova linha em Entities (`alok-kanojia`)
+
+**Notas:** Fonte converge fortemente com o cluster já existente de mentalidade/carreira da wiki — [[wiki/concepts/sindrome-do-impostor]], [[wiki/concepts/bomba-de-efeito-moral]] e [[wiki/concepts/disciplina-vs-talento]] descrevem, por ângulos distintos, o mesmo padrão central: dificuldade inicial não é incompetência, é falta de exposição, e o antídoto é ação pequena e repetida. A técnica de "operacionalizar um problema" também é, na prática, a mesma [[wiki/concepts/arvore-de-decomposicao]]/[[wiki/concepts/decomposicao-de-problemas]] já documentada para debugging técnico, agora generalizada para qualquer problema de vida — nenhuma contradição, apenas extensão do escopo de aplicação. Registrada como open question no source page: o mecanismo neurocientífico específico (lobo frontal, homeostase, circuito de recompensa) não tem estudo primário citado nesta fonte — vem de segunda mão via a playlist do Dr. Alok Kanojia, que não foi assistida/verificada nesta ingestão, portanto tratada como confiança média até eventual cruzamento direto com a fonte primária.
+
+---
+
+## [2026-07-24] ingest | Vale a Pena Estudar Microsserviços (Mesmo Que Você Nunca Vá Usar)
+
+**Fonte:** [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — transcrição de vídeo em português colada pelo usuário no chat, já em português (sem necessidade de tradução), reorganizada em seções e limpa de repetições/hesitações de fala. Salva em `raw/vale-a-pena-estudar-microsservicos-mesmo-sem-usar.md`. Autor: Bernardo Lobato, já documentado em [[wiki/entities/bernardo-lobato]] a partir de dois outros vídeos.
+
+**Skill carregada:** `tech-mentor-backend`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/SKILL.md` e do arquivo `references/architecture-foundations.md` (seção "Microsserviços vs Monolito Modular") para calibrar a claim central do vídeo sobre quando extrair microsserviço.
+
+**Páginas criadas:**
+- `raw/vale-a-pena-estudar-microsservicos-mesmo-sem-usar.md`
+- `wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar.md`
+- `wiki/concepts/microsservicos.md` — página nova; já era referenciada como `[[concepts/microsservicos]]` por [[wiki/sources/microsservicos]] desde 2026-04-23, mas nunca tinha sido criada (link órfão corrigido nesta ingestão)
+
+**Páginas atualizadas:**
+- `wiki/entities/bernardo-lobato.md` — nova entrada em Key Sources (terceiro vídeo do autor na wiki); `source_count` 3 → 4
+- `wiki/concepts/circuit-breaker.md` — nova entrada em Key Sources (circuit breaker como conceito aplicável fora de sistemas distribuídos); `source_count` 2 → 3
+- `wiki/concepts/saga-pattern.md` — nova entrada em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/observabilidade.md` — nova entrada em Key Sources; `source_count` 7 → 8
+- `wiki/concepts/mensageria.md` — nova entrada em Key Sources; `source_count` 5 → 6
+- `wiki/concepts/vibe-coding.md` — nova entrada em Key Sources, terceira fonte independente reforçando "O Limite Não É Técnico, É de Julgamento"; `source_count` 9 → 10
+- `wiki/concepts/over-engineering.md` — nova entrada em Key Sources (efeito manada histórico de microsserviços como caso concreto de over-engineering arquitetural); `source_count` 6 → 7
+- `wiki/concepts/autonomia-tecnica.md` — nova entrada em Key Sources (repertório como o que permite curar sugestões de IA); `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção "Arquitetura Backend & Event-Driven")
+
+**Notas:** Nenhuma contradição com o restante da wiki — o vídeo é essencialmente uma reflexão de carreira, não uma fonte técnica hands-on, e converge fortemente com material já registrado: a tese "fundamentos sobrevivem ao hype" repete o padrão de [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]], e a fronteira "IA acelera decisão mas não substitui julgamento" é a mesma já central em [[wiki/concepts/vibe-coding]] e [[wiki/concepts/autonomia-tecnica]]. O achado mais relevante da ingestão foi estrutural, não de conteúdo: a página de conceito `[[concepts/microsservicos]]` estava referenciada por uma fonte de abril/2026 mas nunca existia — órfão de quatro meses corrigido ao criar `wiki/concepts/microsservicos.md`. As claims sobre Keycloak como peça pronta reaproveitável e sobre o "efeito manada" histórico não são verificáveis quantitativamente nesta fonte — registradas como relato/opinião do autor, sem contradição com o resto da wiki.
+
+---
+
+## [2026-07-24] ingest | Loop Engineering: Os Níveis do Dev Loop e um Jogo Completo Construído em um Final de Semana
+
+**Fonte:** [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — transcrição de vídeo em português colada pelo usuário no chat, limpa de hesitações/repetições de fala e reorganizada em seções. Já em português, sem necessidade de tradução. Salva em `raw/loop-engineering-niveis-dev-loop-jogo-mmo.md`. Autoria/canal não identificados no texto colado.
+
+**Skill carregada:** `tech-mentor-ai`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/SKILL.md`. Referência consultada: `references/ai/agentic-patterns-2025.md` (Planner-Executor-Critic, agent scaffolding) para calibrar a leitura dos subagentes `planner`/`implementer`/`evaluator` descritos na fonte.
+
+**Páginas criadas:**
+- `raw/loop-engineering-niveis-dev-loop-jogo-mmo.md`
+- `wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/loop-engineering.md` — nova seção "Os Três Níveis do Dev Loop Anteriores ao Termo", "Loop Agêntico vs. Cron Job", "Loop Fixo vs. Loop Criador" (com subseções de referência sólida e memória entre iterações), e "Quatro Perguntas Para Decidir se Vale Usar um Loop"; status `draft` → `stable`; `source_count` 1 → 2
+- `wiki/concepts/harness.md` — nova entrada em Key Sources (linguagem como harness: Rust vs. Zig na migração do Ban); `source_count` 10 → 11
+- `wiki/concepts/spec-driven-development.md` — nova entrada em Key Sources (SDD como "nível 2" do dev loop, base do loop criador); `source_count` 10 → 11
+- `wiki/concepts/human-in-the-loop.md` — nova seção "HITL como Nível 3 do Dev Loop"; `source_count` 2 → 3
+- `wiki/concepts/task-looper.md` — nova seção "Exemplo Concreto: Roadmap + Memória Entre Fases"; `source_count` 1 → 2
+- `wiki/concepts/rust-ownership-borrowing-lifetimes.md` — nova seção "Borrow Checker como Harness para Loops Agênticos"; `source_count` 1 → 2
+- `wiki/concepts/piramide-de-testes.md` — nova seção "E2E como Critério de Aceite em Loops Agênticos Longos"; `source_count` 5 → 6
+- `wiki/concepts/vibe-coding.md` — nova seção "OpenCode Como Vibe Coding em Escala de Loop"; `source_count` 8 → 9
+- `wiki/entities/claude-code.md` — nova seção "Citação de Boris (Criador) sobre Loop Engineering"; `source_count` 6 → 7
+- `wiki/index.md` — nova linha em Sources
+
+**Notas:** Reforço direto com [[wiki/sources/loop-engineering-planner-critic-grafo]] (já na wiki desde 2026-07-10) — ambas as fontes citam separadamente Boris (Claude Code) e o criador do OpenCode como vozes do hype recente de loop engineering, o que é confirmação cruzada, não a mesma citação reaproveitada. A distinção **loop fixo vs. loop criador** é original desta fonte e foi promovida para dentro do conceito central. Três afirmações não foram verificáveis de forma independente e ficaram registradas como open questions no source page: o nome exato do framework "TLC Spec Driven" (pode ser apelido interno do autor, sem confirmação como ferramenta pública), o número de "~1,3 milhão de asserções de teste" do Ban pré-migração (citado de memória, "se não me engano"), e a identidade do autor/canal do vídeo (não presente no texto colado).
+
+---
+
+## [2026-07-24] ingest | J-Space: a Anthropic Abriu o Cérebro do Claude
+
+**Fonte:** [[wiki/sources/jspace-cerebro-cloud-antropic]] — transcrição de vídeo (Lucas Montano) colada pelo usuário no chat, limpa de hesitações e cacoetes de fala, reorganizada em seções (resumo do vídeo oficial da Anthropic sobre J-Space + análise técnica própria do autor sobre transformers/Jacobian Lens + tese pessoal de monetização). Já em português, sem necessidade de tradução. Salva em `raw/jspace-cerebro-cloud-antropic.md`.
+
+**Skill carregada:** `tech-mentor-ai`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/SKILL.md`. Nenhum arquivo de `references/` cobre especificamente interpretabilidade mecanística/circuit tracing (índice não lista o tópico) — seguido o protocolo da skill de responder com conhecimento base e sinalizar a lacuna; conteúdo tratado a partir da fonte primária (vídeo da Anthropic) em vez de material de referência da skill.
+
+**Páginas criadas:**
+- `raw/jspace-cerebro-cloud-antropic.md`
+- `wiki/sources/jspace-cerebro-cloud-antropic.md`
+- `wiki/concepts/j-space-interpretabilidade.md`
+
+**Páginas atualizadas:**
+- `wiki/entities/anthropic.md` — nova seção "Pesquisa de Interpretabilidade: J-Space e Jacobian Lens"; `source_count` 11 → 12
+- `wiki/entities/lucas-montano.md` — novo parágrafo sobre conteúdo reagindo a pesquisa técnica de IA; `source_count` 3 → 4
+- `wiki/concepts/chain-of-thought.md` — nova seção "CoT vs. J-Space (Interpretabilidade)" distinguindo raciocínio textual observável de processamento residual silencioso; `source_count` 2 → 3
+- `wiki/concepts/autoregressive-language-model.md` — nova seção sobre a Jacobian Lens operando sobre as ativações residuais do mecanismo de previsão de próximo token; `source_count` 1 → 2
+- `wiki/concepts/emergent-ability.md` — novo exemplo (J-Space como estrutura emergente não programada); `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção "LLMs e IA")
+
+**Notas:** Nenhuma contradição com o restante da wiki. A fonte reforça a distinção já estabelecida em [[wiki/concepts/chain-of-thought]] entre raciocínio observável (CoT, texto) e processamento emergente não-verbalizado, adicionando uma camada nova (J-Space) que antes não tinha página própria. Duas tensões registradas como open questions no source page: (1) a claim central sobre detecção de "falsificação/manipulação" no J-Space vem de experimentos controlados da própria Anthropic, sem dado de taxa de falso positivo/negativo em produção; (2) a tese de monetização ("vai virar cobrança") é opinião pessoal do autor do vídeo, não uma afirmação ou produto anunciado pela Anthropic — tratada como especulação de baixa confiança, distinta das claims de pesquisa (alta confiança, fonte primária).
+
+---
+
 ## [2026-07-24] ingest | Objetos vs. Estruturas de Dados na Clean Architecture
 
 **Fonte:** [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — transcrição de vídeo em português colada pelo usuário no chat (texto corrido, sem pontuação original), reescrita como Markdown estruturado (definições de objeto/estrutura de dados a partir de um post de blog de Uncle Bob, crítica ao nome "Object-Relational Mapper", e o fluxo completo do diagrama de cenário web do livro *Clean Architecture*). Sem necessidade de tradução (fonte já em português). Salva em `raw/objetos-vs-estruturas-de-dados-clean-architecture.md`. Autoria não identificada no áudio.
@@ -3362,5 +3463,60 @@ Entities:
 - `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (seção "Carreira & Soft Skills")
 
 **Notas:** Nenhuma contradição forte com o restante da wiki, mas duas tensões de enquadramento foram registradas como questões em aberto no source page: (1) a claim de que "é fácil se destacar porque a maioria é preguiçosa" contrasta com o enquadramento mais construtivo de [[wiki/concepts/disciplina-vs-talento]] (disciplina própria, não comparação com a preguiça alheia); (2) a generalização cultural sobre o Brasil ("hard worker culture") é baseada em anedota pessoal de um único ex-chefe, sem dado comparativo — tratada como opinião forte do autor em [[wiki/concepts/cultura-do-trabalhador-esforcado]], não como achado verificável. As demais claims (ego, side projects, reinventar a roda, over-engineering) reforçam diretamente conceitos já estabelecidos na wiki com boa convergência.
+
+---
+
+## [2026-07-24] ingest | System Design na Prática: Simulador e Hotel Booking com Replit
+
+**Fonte:** [[wiki/sources/system-design-simulador-hotel-booking-replit]] — transcrição de vídeo em português colada pelo usuário no chat, sem repetições/hesitações de fala, reorganizada em seções. Salva em `raw/system-design-simulador-hotel-booking-replit.md`. Autoria não identificada no texto colado.
+
+**Skill carregada:** `tech-mentor-system-design`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-system-design/SKILL.md` (path divergente do documentado em CLAUDE.md sob `nemomartins`, localizado via busca no filesystem, mesmo padrão de ingestões anteriores). Índice de referências consultado para confirmar cobertura de load balancer, cache, escalabilidade horizontal, mensageria e gargalo/bottleneck.
+
+**Páginas criadas:**
+- `raw/system-design-simulador-hotel-booking-replit.md`
+- `wiki/sources/system-design-simulador-hotel-booking-replit.md`
+- `wiki/entities/replit.md`
+- `wiki/concepts/simulador-de-system-design.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/cache.md` — nova entrada em Key Sources (demo de cache resolvendo bottleneck de leitura); `source_count` 4 → 5
+- `wiki/concepts/load-balancer.md` — nova entrada em Key Sources; `source_count` 9 → 10
+- `wiki/concepts/escalabilidade-horizontal.md` — nova entrada em Key Sources (réplicas removem alerta do banco mas deslocam gargalo para app server); `source_count` 5 → 6
+- `wiki/concepts/gargalo.md` — nova entrada em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/mensageria.md` — nova entrada em Key Sources (Kafka sem consumidor definido no exercício); `source_count` 4 → 5
+- `wiki/concepts/over-engineering.md` — nova entrada em Key Sources (Kafka como possível over-engineering; "simulador de caos" incluído cedo demais no MVP); `source_count` 5 → 6
+- `wiki/concepts/mvp.md` — nova entrada em Key Sources (lançar com monetização e escopo mínimo desde o dia um); `source_count` 3 → 4
+- `wiki/concepts/entrevista-system-design.md` — nova seção "Practicar Fora do Contexto de Entrevista" e novo link para `simulador-de-system-design`; `source_count` 1 → 2
+- `wiki/concepts/worktree-paralelismo.md` — nova entrada em Key Sources (workers do Replit como possível wrapper de `git worktree`); `source_count` 6 → 7
+- `wiki/concepts/vibe-coding.md` — nova entrada em Key Sources; `source_count` 7 → 8
+- `wiki/entities/augusto-galego.md` — nova seção "Colaboração em Projeto de Terceiros"; `source_count` 1 → 2
+- `wiki/concepts/analytics-pipeline.md` — nova entrada em Key Sources (definição didática de OLTP vs. OLAP); `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção "Escalabilidade & System Design"); nova linha em Entities
+
+**Notas:** Nenhuma contradição com o restante da wiki — o material converge fortemente com [[wiki/concepts/gargalo]] (identificar o gargalo antes de escalar, cache primeiro, depois réplicas) e com [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]] na tese de que system design é repertório, não sintaxe decorada. Duas afirmações do vídeo não são verificáveis de forma independente e foram registradas como open questions no source page: (1) se o "worker" paralelo do Replit é de fato implementado com `git worktree` (inferência do autor, não confirmação técnica); (2) a qualidade do harness do Replit (testes end-to-end automáticos), avaliada num vídeo patrocinado pela própria empresa, sem comparação com concorrentes nesta fonte. O produto (simulador de system design) está em estágio de protótipo/MVP durante o próprio vídeo, sem dado de uso real ou conversão.
+
+---
+
+## [2026-07-24] ingest | Mitos e Fable 5: os modelos de IA bloqueados pelo governo dos EUA por poder de cybersegurança
+
+**Fonte:** [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]] (Código Fonte TV) — `raw/mitos-fable-5-bloqueio-governo-eua-cyberseguranca.md`
+
+**Skill:** tech-mentor-security (caminho `/home/nemomartins/Documentos/new/skills/` referenciado no CLAUDE.md não existe nesta máquina; skill selecionada por inferência de domínio a partir do mapeamento OWASP/AppSec/red-teaming da tabela skill→domínio, sem leitura de SKILL.md)
+
+**Páginas criadas:**
+- `wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca.md`
+- `wiki/entities/sakana-ai.md` (stub)
+
+**Páginas atualizadas:**
+- `wiki/entities/anthropic.md` — nova seção "Mitos e Fable 5: Modelos de Cybersegurança Bloqueados pelo Governo dos EUA"; nova entrada em Key Sources; `source_count` 12 → 13
+- `wiki/sources/ai-safety-guardrails.md` — nova seção Key Sources (evidência empírica de jailbreak: 702/7.828 tentativas no Fable 5); `source_count` 0 → 1
+- `wiki/sources/ai-llm-security.md` — nova entrada em Key Sources (lado ofensivo do espectro de AI red teaming)
+- `wiki/sources/pentest-redteam.md` — nova entrada em Key Sources (descoberta automatizada de vulnerabilidades em escala industrial)
+- `wiki/sources/bug-bounty.md` — nova entrada em Key Sources (consórcio fechado Glasswing como alternativa a bug bounty público)
+- `wiki/sources/kimi-k3-china-mercado-ia-open-source.md` — atualização de open question sobre identidade do "Fable" citado, agora cruzada com esta fonte
+- `wiki/concepts/modelo-frontier.md` — nova seção "Subclasse: Modelos Frontier de Cybersegurança (não-públicos)"; nova entrada em Key Sources; `source_count` 3 → 4
+- `wiki/index.md` — nova linha em Sources; nova linha em Entities (Sakana AI)
+
+**Notas:** Fonte é transcrição de vídeo (áudio-para-texto automático) sobre uma nova subclasse de modelos frontier especializados em cybersegurança ofensiva/defensiva (Mitos, Fable 5 da Anthropic; GPT 5.6 da OpenAI) que motivou bloqueio de acesso pelo governo dos EUA após a NSA relatar sistemas confidenciais comprometidos em horas. Reforça diretamente [[wiki/sources/ai-safety-guardrails]] (guardrails não são impenetráveis — dado quantitativo novo: 702/7.828 jailbreaks bem-sucedidos no Fable 5) e converge com a tese de [[wiki/sources/kimi-k3-china-mercado-ia-open-source]] de que a vantagem americana em IA não é permanente, agora estendida especificamente ao domínio de cybersegurança (Japão via Sakana AI/Fugo, China via 360/Tulong Fang e Zhipu AI/GLM 5.2). Abre um ângulo novo não coberto antes na wiki: bloqueio governamental de acesso a modelos de IA por risco de segurança nacional, distinto de export controls de hardware. Nomes "Mitos" e "Fable 5" não confirmados externamente — tratados como possivelmente sujeitos a erro de transcrição automática e registrados como open question na fonte. Números citados (10.000+ falhas, 7.828 tentativas de jailbreak, 150 organizações em 15 países) vêm de fala no vídeo sem link para fonte primária — não verificados de forma independente.
 
 ---

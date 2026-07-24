@@ -3,8 +3,8 @@ type: concept
 title: "Bomba de Efeito Moral"
 aliases: ["choque de complexidade", "paralisia pelo susto", "efeito moral da bomba"]
 date_created: 2026-07-21
-date_updated: 2026-07-21
-source_count: 1
+date_updated: 2026-07-24
+source_count: 2
 tags: [aprendizado, mentalidade, carreira, iniciantes]
 skill: tech-mentor-leadership
 status: draft
@@ -33,7 +33,9 @@ Reconhecer o efeito no momento em que ele acontece ("estou tomando um susto, nã
 - [[wiki/concepts/zona-de-desconforto-da-aprendizagem]] — a bomba de efeito moral é um caso extremo de desconforto que, sem reconhecimento consciente, empurra a pessoa para fora da zona produtiva e para a paralisia
 - [[wiki/concepts/sindrome-do-impostor]] — os dois efeitos se reforçam: o choque de complexidade pode ser interpretado como prova de incompetência, alimentando a sensação de fraude
 - [[wiki/concepts/spaced-repetition]] — releituras espaçadas do mesmo conteúdo são, na prática, o antídoto empírico relatado para o efeito
+- [[wiki/concepts/problema-de-escopo-aberto]] — [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] descreve quase o mesmo efeito com outra metáfora: um problema de escopo aberto é uma "nuvem" ou "bomba de fumaça" que paralisa pelo susto do tamanho aparente, não pela dificuldade real de cada pedaço — o antídoto lá é operacionalizar em ações pequenas, análogo à releitura sem susto proposta aqui
 
 ## Key Sources
 
 - [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]]
+- [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] — problema de escopo aberto como "nuvem"/"bomba de fumaça" que paralisa pelo susto do tamanho, não pela dificuldade real

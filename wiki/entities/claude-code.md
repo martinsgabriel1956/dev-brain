@@ -3,8 +3,8 @@ type: entity
 title: "Claude Code"
 aliases: ["claude code cli"]
 date_created: 2026-05-18
-date_updated: 2026-07-21
-source_count: 6
+date_updated: 2026-07-24
+source_count: 7
 tags: [ferramenta, agentes-ia, anthropic, llmops, cli, mcp, hooks]
 skill: tech-mentor-ai
 status: stable
@@ -93,6 +93,10 @@ O mecanismo de [[context-compaction]] da janela de contexto do Claude Code é um
 
 [[wiki/sources/hermes-agent-open-claw-learning-loop]] compara o Claude Code a projetos open source como [[wiki/entities/hermes-agent]] e [[wiki/entities/open-claw]], que embutem um [[wiki/concepts/closed-loop-skill-learning|closed-loop skill learning system]] sobre uma [[wiki/concepts/agent-memory-tres-camadas|memória em três camadas]]. Tese central da fonte: "Hermes não é o Claude Code com mais memória" — a diferença não é quantidade de memória, mas o loop que gera e refina skills automaticamente a partir do histórico de tarefas. O Claude Code foi citado no ranking global de uso de tokens do OpenRouter (perdendo para o Hermes Agent na semana anterior à publicação da fonte), e a Anthropic respondeu ao mesmo padrão com a feature "Dreaming in Claude" (ver [[wiki/entities/anthropic]]).
 
+## Citação de Boris (Criador) sobre Loop Engineering
+
+[[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] cita Boris, criador do Claude Code, dizendo que trabalha "em loops que decidem o que fazer" em vez de dar prompts — citação usada (junto com uma fala similar do criador do OpenCode) como gatilho do hype recente em torno de [[wiki/concepts/loop-engineering]].
+
 ## Key Sources
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
@@ -101,3 +105,4 @@ O mecanismo de [[context-compaction]] da janela de contexto do Claude Code é um
 - [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — sandbox nativo (Bubblewrap/Sandbox-exec) e comparação com o AI Jail
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]] — comparação com harnesses de learning loop (Hermes Agent, Open Claw)
 - [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — checkpoints/rewind, gerenciamento de sessões, `/go`, alocação de modelo por leverage, seleção automática de ferramentas, retenção de 30 dias
+- [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — citação de Boris sobre trabalhar "em loops que decidem o que fazer"

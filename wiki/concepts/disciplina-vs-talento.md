@@ -3,8 +3,8 @@ type: concept
 title: "Disciplina vs Talento"
 aliases: ["talento não é determinante", "disciplina supera talento", "dom para programação"]
 date_created: 2026-06-26
-date_updated: 2026-07-23
-source_count: 3
+date_updated: 2026-07-24
+source_count: 4
 tags: [carreira, mentalidade, aprendizado, disciplina, talento, iniciante]
 skill: tech-mentor-leadership
 status: stable
@@ -44,6 +44,10 @@ A única variável que o iniciante controla é a constância da prática. Talent
 
 [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]] chega a uma conclusão adjacente mas com enquadramento diferente: argumenta que é "fácil se destacar hoje porque a maioria é preguiçosa", em vez de ancorar o destaque na disciplina consistente do próprio praticante (como fazem as duas fontes acima). Ver [[wiki/concepts/cultura-do-trabalhador-esforcado]] para a claim completa — tratada como opinião pessoal forte, não como reforço direto desta tese.
 
+## Quarta Fonte: Progresso via Ação Consistente, Não Talento
+
+[[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] chega à mesma conclusão pelo caminho de um exemplo concreto fora de programação: o desafio "One Punch Man" (correr 10km, 100 flexões/abdominais/agachamentos por dia) não foi resolvido de uma vez por talento atlético, mas operacionalizado em passos mínimos e crescentes (andar 2km → correr 200m → 500m → 1km → 1,6km), cada etapa reforçando a próxima. O ponto central é o mesmo desta página: o remédio para não ter uma habilidade ainda é praticar a ação repetidamente, não esperar aptidão inata. Ver [[wiki/concepts/problema-de-escopo-aberto]] para o mecanismo completo de foco em ação vs. resultado.
+
 ## Ver Também
 
 - [[familiaridade-vs-capacidade]] — mecanismo que explica por que o "talento" parece real
@@ -56,3 +60,4 @@ A única variável que o iniciante controla é a constância da prática. Talent
 - [[wiki/sources/the-comparison-trap-in-programming-careers]] — conclusão central: "disciplina supera talento"
 - [[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]] — segunda fonte independente com a mesma conclusão, aplicada ao contexto de tarefas difíceis
 - [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]] — terceira fonte, tensão de enquadramento (ver seção acima)
+- [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] — quarta fonte; desafio "One Punch Man" como caso concreto de progresso via ação consistente operacionalizada em passos mínimos

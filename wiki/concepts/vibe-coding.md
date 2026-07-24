@@ -3,8 +3,8 @@ type: concept
 title: "Vibe Coding"
 aliases: ["vibe coding", "vibe-coding", "coding por vibração", "agentic coding", "orquestração de agentes"]
 date_created: 2026-04-23
-date_updated: 2026-07-19
-source_count: 7
+date_updated: 2026-07-24
+source_count: 10
 tags: [vibe-coding, agentes-ia, produtividade, divida-cognitiva, ai-brainfry, paralelismo-cognitivo]
 skill: tech-mentor-ai
 status: stable
@@ -117,6 +117,10 @@ Citado como exemplo de hype tecnológico em formação (junto com MCP) no moment
 
 [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] argumenta que o movimento "specs to code" (nunca olhar o código gerado, só editar a especificação e reexecutar) é, na prática, vibe coding disfarçado de disciplina: mesmo padrão de decadência progressiva do código a cada rodada, só que sem a sensação óbvia de estar "no flow". A saída proposta pelo autor não é abandonar [[wiki/concepts/spec-driven-development|SDD]], mas reintroduzir disciplina de design — [[wiki/entities/fred-brooks|design concept]] compartilhado, [[wiki/concepts/ddd|linguagem ubíqua]] e [[wiki/concepts/modulo-profundo|módulos profundos]] — antes de qualquer geração de código.
 
+## OpenCode Como Vibe Coding em Escala de Loop
+
+[[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] descreve o criador do OpenCode (Peter) como "mais vibe coder" — o próprio OpenCode foi construído com vibe coding — e nota que por isso nem tudo que ele defende sobre trabalhar "só em loops" encaixa diretamente em desenvolvimento enterprise mais complexo, ao contrário do criador do Claude Code (Boris), citado como referência mais aplicável a esse contexto.
+
 ## Key Sources
 
 - [[sources/divida-cognitiva-ai-brainfry]]
@@ -127,5 +131,8 @@ Citado como exemplo de hype tecnológico em formação (junto com MCP) no moment
 - [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — onde vibe coding brilha (MVP, docs, testes) vs. onde exige julgamento humano (arquitetura, segurança, contexto de negócio)
 - [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]] — citado como exemplo de hype em formação, no momento do vídeo
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] — "specs to code" como vibe coding disfarçado
+- [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — criador do OpenCode citado como "mais vibe coder" (fez o próprio OpenCode via vibe coding)
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — RFC + skill Grill Me como mitigação prática à perda de janela de revisão incremental
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — ratchet de baseline como mitigação mecânica via CI, alternativa/complemento à disciplina de RFC e Grill Me
+- [[wiki/sources/system-design-simulador-hotel-booking-replit]] — argumenta que [[wiki/concepts/entrevista-system-design|system design]] é justamente o conhecimento que quem vibe coda (mesmo sem saber programar) não pode delegar para a IA, já que é o que determina se a arquitetura do produto escala; demonstra o fluxo de criação de um SaaS com [[wiki/entities/replit|Replit]] e um colaborador convidado ([[wiki/entities/augusto-galego]])
+- [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — argumenta que fundamentos de arquitetura (ex.: microsserviços) são o que permite ao dev distinguir uma boa sugestão de IA de "salada de letrinhas bonitas"; a IA acelera decisão mas não substitui a curadoria de quem entende o contexto do sistema — mesma fronteira já documentada acima em "O Limite Não É Técnico, É de Julgamento", agora reforçada por uma terceira fonte independente

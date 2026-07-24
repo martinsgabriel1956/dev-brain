@@ -3,13 +3,13 @@ type: source
 title: "AI Safety & Guardrails"
 aliases: ["ai safety", "guardrails llm", "llama guard", "nemo guardrails"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
+date_updated: 2026-07-24
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/ai-safety-guardrails.md
 source_url: ""
 author: ""
 date_published: ""
 date_ingested: 2026-04-23
-source_count: 0
+source_count: 1
 tags: [ai-safety, guardrails, llama-guard, nemo-guardrails, jailbreak, indirect-injection, tool-poisoning, agent-containment, red-teaming, shadow-mode]
 skill: tech-mentor-ai
 status: stable
@@ -50,6 +50,10 @@ Guardrails são camadas de defesa em profundidade para sistemas LLM: input filte
 - [[concepts/red-teaming-automatizado]]
 - [[entities/llama-guard]]
 - [[entities/nemo-guardrails]]
+
+## Key Sources
+
+- [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]] — evidência empírica concreta de que guardrails reforçados não são impenetráveis: laboratório italiano contornou o Fable 5 (Anthropic) em 702 de 7.828 tentativas de jailbreak, mesmo com salvaguardas extras para biologia/química/exploração de vulnerabilidades
 
 ## Open Questions
 

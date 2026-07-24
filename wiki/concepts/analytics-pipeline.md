@@ -3,8 +3,8 @@ type: concept
 title: "Analytics Pipeline"
 aliases: ["pipeline de analytics", "async analytics", "event analytics"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-24
+source_count: 2
 tags: [system-design, analytics, kafka, clickhouse, async, olap]
 skill: tech-mentor-system-design
 status: stub
@@ -52,3 +52,4 @@ No contexto mobile, o analytics pipeline começa no cliente com o [[concepts/ada
 
 - [[sources/case-url-shortener]]
 - [[sources/mobile-platform-engineering]]
+- [[wiki/sources/system-design-simulador-hotel-booking-replit]] — definição didática simples de OLTP (operações rápidas do dia a dia, muita escrita e leitura pequena) vs. OLAP (consulta, agregação e exploração de grandes volumes), citada como um dos conceitos que estudar system design força a aprender

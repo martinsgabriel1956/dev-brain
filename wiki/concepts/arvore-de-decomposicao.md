@@ -3,8 +3,8 @@ type: concept
 title: "Árvore de Decomposição"
 aliases: ["decomposition tree", "problem breakdown tree", "breakdown hierárquico"]
 date_created: 2026-05-01
-date_updated: 2026-05-01
-source_count: 1
+date_updated: 2026-07-24
+source_count: 2
 tags: [resolucao-de-problemas, debugging, pensamento-estruturado]
 skill: tech-mentor-leadership
 status: stable
@@ -45,6 +45,11 @@ Resultado: "sistema lento com 1000 usuários na tela inicial" → problema de es
 
 > Em nenhum momento você precisa mexer no código para chegar à causa raiz. A decomposição acontece antes de qualquer linha de código.
 
+## Generalização para Fora do Debugging: "Operacionalizar um Problema"
+
+[[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] descreve a mesma técnica com outro nome — "operacionalizar" — aplicada a qualquer [[wiki/concepts/problema-de-escopo-aberto|problema de escopo aberto]] da vida, não só a diagnóstico técnico. Exemplo: em vez de decompor "sistema lento" em onde/quando/para quem, decompor "correr 10km" em passos crescentes (andar 2km → correr 200m → 500m → 1km). O princípio é idêntico: perguntas/ações específicas geram progresso específico, o problema abstrato original não precisa ser resolvido de uma vez.
+
 ## Key Sources
 
 - [[wiki/sources/pensamento-estruturado-resolucao-de-problemas]]
+- [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] — "operacionalizar um problema" como a mesma técnica generalizada para problemas de vida fora do debugging técnico

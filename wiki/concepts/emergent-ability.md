@@ -3,8 +3,8 @@ type: concept
 title: "Emergent Ability"
 aliases: ["capacidade emergente", "emergência em LLMs", "emergent capabilities"]
 date_created: 2026-05-17
-date_updated: 2026-05-17
-source_count: 1
+date_updated: 2026-07-24
+source_count: 2
 tags: [llm, scaling, emergência, raciocínio, chain-of-thought]
 skill: tech-mentor-ai
 status: draft
@@ -48,7 +48,12 @@ Hipóteses (nenhuma definitiva):
 - [[few-shot-learning]] — também melhora de forma não-linear com escala
 - [[foundation-model]] — modelos treinados a escala suficiente para que emergências ocorram
 
+## Outro Exemplo: J-Space
+
+[[j-space-interpretabilidade]] — o espaço interno de ativações vinculáveis a palavras descoberto pela Anthropic no Claude — é descrito como uma estrutura que "emergiu do treinamento" sem ter sido programada de propósito, no mesmo espírito de outras capacidades emergentes: ninguém desenhou explicitamente uma divisão consciente/inconsciente na arquitetura, mas ela surgiu como subproduto de escala e treinamento.
+
 ## Fontes
 
 - [[wiki/sources/chain-of-thought-prompting]]
+- [[wiki/sources/jspace-cerebro-cloud-antropic]]
 - Wei et al. (2022b) — "Emergent Abilities of Large Language Models" [external]

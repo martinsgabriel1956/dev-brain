@@ -3,8 +3,8 @@ type: concept
 title: "Modelos Frontier"
 aliases: ["frontier models", "modelos de ponta", "modelos comerciais avancados"]
 date_created: 2026-06-02
-date_updated: 2026-07-21
-source_count: 3
+date_updated: 2026-07-24
+source_count: 4
 tags: [modelos, frontier, llm, openai, anthropic, google]
 skill: tech-mentor-ai
 status: draft
@@ -43,8 +43,13 @@ Ver [[wiki/concepts/degradacao-de-contexto]] para como a qualidade dos modelos f
 
 Ver [[wiki/sources/formacao-ia-devs-aula-03-llm]] para tabela de preços por token.
 
+## Subclasse: Modelos Frontier de Cybersegurança (não-públicos)
+
+Além dos modelos frontier de uso geral acima, surgiu em 2026 uma subclasse de modelos frontier especializados em cybersegurança ofensiva/defensiva — capazes de descobrir vulnerabilidades de software em escala industrial (falhas de décadas de idade em OpenBSD, FFmpeg, kernel Linux). Diferem dos modelos da tabela acima por não serem lançados ao público: Mitos e Fable 5 (Anthropic) e Mitos 5 foram restritos a um consórcio fechado (Glasswing) e depois formalmente bloqueados pelo governo dos EUA; o GPT 5.6 (OpenAI) seguiu o mesmo padrão de bloqueio. Japão (Sakana AI/Fugo) e China (360/Tulong Fang, Zhipu AI/GLM 5.2) já reivindicam capacidade equivalente. Ver [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]].
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/kimi-k3-china-mercado-ia-open-source]] — Kimi K3, 2,8T parâmetros, lançamento parcial
+- [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]] — subclasse de modelos frontier de cybersegurança bloqueados por risco de segurança nacional (Mitos, Fable 5, GPT 5.6)

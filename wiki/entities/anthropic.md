@@ -3,8 +3,8 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-07-21
-source_count: 11
+date_updated: 2026-07-24
+source_count: 13
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia]
 skill: tech-mentor-ai
 status: stable
@@ -63,6 +63,14 @@ Segundo [[wiki/sources/kimi-k3-china-mercado-ia-open-source]], a Anthropic já v
 
 Feature anunciada pela Anthropic dias antes da publicação de [[wiki/sources/hermes-agent-open-claw-learning-loop]]: permite revisar sessões passadas de agentes Claude, extrair padrões e curar memórias ao longo do tempo — resposta direta ao mesmo padrão de "learning loop com skill/memória persistente" que projetos open source como [[wiki/entities/hermes-agent]] e [[wiki/entities/open-claw]] já implementavam. Sem página própria na wiki ainda; candidata a stub caso surja fonte dedicada.
 
+## Pesquisa de Interpretabilidade: J-Space e Jacobian Lens
+
+Pesquisa publicada pela própria Anthropic identificando um espaço interno no Claude ([[wiki/concepts/j-space-interpretabilidade]]) — padrões de ativação vinculáveis a palavras que o modelo processa mas nunca verbaliza no output, lidos via uma técnica nova chamada Jacobian Lens. A própria Anthropic é cautelosa e nega que isso prove consciência ou experiência subjetiva — trata como uma "maquinaria mental" estruturalmente análoga (não equivalente) à divisão consciente/inconsciente humana. Ver [[wiki/sources/jspace-cerebro-cloud-antropic]].
+
+## Mitos e Fable 5: Modelos de Cybersegurança Bloqueados pelo Governo dos EUA
+
+Segundo [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]], a Anthropic desenvolveu uma classe de modelos especializados em cybersegurança ofensiva/defensiva — o **Mitos** (anunciado abril de 2026) e depois **Fable 5** e **Mitos 5** — capazes de encontrar vulnerabilidades de software em escala inédita (falha de 27 anos no OpenBSD, 16 anos no FFmpeg, brechas no núcleo do Linux, 10.000+ falhas de gravidade alta/crítica via o consórcio fechado **Glasswing**, que cresceu de ~50 para ~150 organizações em 15 países entre abril e junho de 2026). A capacidade foi julgada perigosa o suficiente para que a Anthropic nunca liberasse o Mitos ao público, e para que o governo dos EUA bloqueasse formalmente o acesso ao Fable 5 e ao Mitos 5 — inclusive para funcionários não-americanos da própria Anthropic — depois que a NSA relatou sistemas confidenciais comprometidos "em questão de horas". Mesmo com salvaguardas reforçadas, um laboratório italiano conseguiu contornar o Fable 5 em 702 de 7.828 tentativas de jailbreak — nuance que qualifica a robustez real dos guardrails da empresa (ver [[wiki/sources/ai-safety-guardrails]]).
+
 ## Key Sources
 
 - [[wiki/sources/html-vs-markdown-para-agentes-de-ia]]
@@ -77,3 +85,5 @@ Feature anunciada pela Anthropic dias antes da publicação de [[wiki/sources/he
 - [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — citada de passagem: erros `503` frequentes da API do Claude ("modelo ocupado, tente novamente") como exemplo do "novo normal" de sistemas caindo, exigindo estratégias de retry no lado do cliente
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — custo elevado do Ultra Review/Ultra Plan em teste pessoal, incluindo bug de crash que consumiu saldo sem entregar resultado
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]] — bug de billing no Claude Max 20 disparado pela string "hermes" no Git history; anúncio do Dreaming in Claude
+- [[wiki/sources/jspace-cerebro-cloud-antropic]] — pesquisa de interpretabilidade (J-Space, Jacobian Lens): espaço interno de ativações vinculáveis a palavras nunca verbalizadas no output
+- [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]] — Mitos e Fable 5, modelos de cybersegurança bloqueados pelo governo dos EUA; consórcio Glasswing; jailbreak documentado do Fable 5

@@ -3,8 +3,8 @@ type: concept
 title: "Autoregressive Language Model"
 aliases: ["modelo autorregressivo", "decoder-only", "causal LM"]
 date_created: 2026-05-17
-date_updated: 2026-05-17
-source_count: 1
+date_updated: 2026-07-24
+source_count: 2
 tags: [llm, transformer, arquitetura, autoregressive]
 skill: tech-mentor-ai
 status: draft
@@ -43,6 +43,11 @@ GPT-3 ([[wiki/sources/gpt3-language-models-are-few-shot-learners]]) usa esta arq
 
 A descoberta de [[in-context-learning]] mostrou que modelos autorregressivos grandes são meta-aprendizes eficientes. O paradigma de fine-tuning encoder-decoder foi gradualmente substituído por ICL + instruction tuning em decoder-only.
 
+## Interpretabilidade das Ativações Residuais
+
+A pesquisa de [[j-space-interpretabilidade]] da Anthropic (Jacobian Lens) opera diretamente sobre o mecanismo de previsão do próximo token que define esse tipo de modelo: calcula, via derivadas parciais (Jacobiano), a direção nas ativações residuais do stream que mais aumenta a probabilidade de cada palavra do vocabulário aparecer na próxima posição — tornando legível (e alterável) parte do processamento interno que antecede a escolha do token gerado.
+
 ## Fontes
 
 - [[wiki/sources/gpt3-language-models-are-few-shot-learners]]
+- [[wiki/sources/jspace-cerebro-cloud-antropic]]

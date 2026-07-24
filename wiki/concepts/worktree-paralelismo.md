@@ -3,8 +3,8 @@ type: concept
 title: "Worktree e Paralelismo de Tarefas"
 aliases: ["worktree parallelism", "git worktree IA", "paralelismo de tarefas ia"]
 date_created: 2026-06-02
-date_updated: 2026-07-21
-source_count: 6
+date_updated: 2026-07-24
+source_count: 7
 tags: [worktree, paralelismo, git, spec-driven, produtividade]
 skill: tech-mentor-ai
 status: stable
@@ -76,3 +76,4 @@ Confirmação de campo: cada feature full stack no Cursor dispara ~5 Claude agen
 - [[wiki/sources/product-engineer-vale-do-silicio-2026]]
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
 - [[wiki/sources/impacto-ia-mercado-frontend]]
+- [[wiki/sources/system-design-simulador-hotel-booking-replit]] — [[wiki/entities/replit|Replit]] expõe esse padrão na UI como "workers": uma sessão principal roda uma tarefa maior enquanto subtarefas paralelas de colaboradores rodam isoladas, com merge automático de volta e resolução de conflitos pelo próprio harness — hipótese do autor de que é `git worktree` por baixo dos panos, mas sem confirmação técnica

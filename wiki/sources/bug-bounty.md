@@ -42,6 +42,10 @@ Bug Bounty: programa de recompensa por vulnerabilidades reportadas responsavelme
 - [[concepts/vdp]]
 - [[concepts/pentest]]
 
+## Key Sources
+
+- [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]] — contraponto ao modelo de bug bounty aberto: a Anthropic optou por *não* disponibilizar publicamente o Mitos, criando em vez disso um consórcio fechado por convite (Glasswing) para achar vulnerabilidades — mesma lógica de "descoberta responsável de vulnerabilidades" do bug bounty, mas com o buscador de vulnerabilidades sendo o próprio modelo de IA, não um pesquisador humano independente
+
 ## Open Questions
 
 - Bug bounty privado vs público — como decidir quando um programa está maduro o suficiente para ser público?

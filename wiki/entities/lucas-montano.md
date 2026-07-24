@@ -3,8 +3,8 @@ type: entity
 title: "Lucas Montano"
 aliases: ["Lucas Montano"]
 date_created: 2026-07-03
-date_updated: 2026-07-09
-source_count: 3
+date_updated: 2026-07-24
+source_count: 4
 tags: [criador-de-conteudo, ia, carreira, financas-pessoais, saas, growth]
 skill: tech-mentor-ai
 status: stub
@@ -20,8 +20,11 @@ Também produz conteúdo sobre finanças pessoais para programadores — [[wiki/
 
 Também tem um produto SaaS próprio, "Persoa" (também citado como "Pessoa"), inicialmente posicionado como "ChatGPT invisível em entrevista de emprego" (público vindo de ferramentas como Roy Lee/Cluely/Interview Coder) e depois pivotado para tradução de reunião em tempo real, buscando uso recorrente em vez de uso único — ver [[wiki/sources/como-vender-um-saas-sem-audiencia]]. Relata ter viralizado sketches do produto (25M+ views num vídeo só no Instagram, 50M+ somando cortes em TikTok/Instagram) sem citar a marca dentro do próprio vídeo, revelando o produto apenas nos comentários. O "Stupid Button Club" está migrando de acesso vitalício para anuidade recorrente a partir do mês seguinte ao vídeo, mantendo o vitalício para quem já era membro.
 
+Também produz conteúdo reagindo a pesquisa técnica de IA — [[wiki/sources/jspace-cerebro-cloud-antropic]] reage ao vídeo da Anthropic sobre J-Space/Jacobian Lens, contrapondo a leitura "filosófica" viral do Twitter (consciência em LLMs) com uma explicação técnica própria de arquitetura de transformers, e arriscando a tese de que a Anthropic vai monetizar a observabilidade desse espaço interno como fez com "thinking tokens" nos reasoning models.
+
 ## Key Sources
 
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]]
 - [[wiki/sources/como-eu-investiria-como-programador-ate-50000]]
 - [[wiki/sources/como-vender-um-saas-sem-audiencia]]
+- [[wiki/sources/jspace-cerebro-cloud-antropic]]

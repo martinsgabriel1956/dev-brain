@@ -3,8 +3,8 @@ type: concept
 title: "Human-in-the-Loop (HITL)"
 aliases: ["HITL", "human in the loop", "aprovação humana agente"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 2
+date_updated: 2026-07-24
+source_count: 3
 tags: [hitl, human-in-the-loop, agente, spec-driven, aprovacao, controle]
 skill: tech-mentor-ai
 status: stable
@@ -43,7 +43,12 @@ Após aprovação em cada etapa, a execução da etapa seguinte pode ser autôno
 
 O [[wiki/concepts/plan-mode|Plan Mode]] é uma forma leve de HITL: o humano revisa a intenção antes da execução sem aprovar cada ferramenta individualmente.
 
+## HITL como "Nível 3" do Dev Loop
+
+[[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] posiciona o humano-no-loop como o terceiro de três níveis do dev loop (loop React → spec driven → humano decide o próximo passo entre specs — abre PR, triagem de bug, consulta métricas). [[wiki/concepts/loop-engineering|Loop engineering]] é proposto como uma quarta camada que automatiza justamente essa decisão que hoje cabe ao humano nesse nível — mas a fonte é explícita que o loop não decide sozinho *qual* o próximo roadmap: essa continua sendo uma decisão humana mesmo em loops avançados ("loop criador").
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-04-agentes-planejamento]]
 - [[wiki/sources/formacao-ia-devs-aula-05-qa]]
+- [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — HITL como nível 3 do dev loop; loop engineering automatiza a execução entre specs mas não a decisão de intenção/roadmap

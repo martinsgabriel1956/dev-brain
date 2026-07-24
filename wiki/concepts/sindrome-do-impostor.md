@@ -3,8 +3,8 @@ type: concept
 title: "Síndrome do Impostor"
 aliases: ["impostor syndrome", "medo de ser descoberto", "sensação de fraude"]
 date_created: 2026-07-03
-date_updated: 2026-07-23
-source_count: 3
+date_updated: 2026-07-24
+source_count: 4
 tags: [carreira, saúde-mental, júnior, inteligência-emocional]
 skill: tech-mentor-leadership
 status: draft
@@ -35,6 +35,10 @@ Distinguir "o código foi reprovado" de "eu fui reprovado" — ver [[wiki/concep
 
 Essa mesma fonte também reforça um antídoto adicional ao já registrado acima: lembrar que **o estado atual de falta de habilidade é provisório, não permanente** — "você não tem habilidade ainda" é uma afirmação sobre o momento presente, não sobre uma limitação fixa. Ver [[wiki/concepts/disciplina-vs-talento]] para o argumento completo de que habilidade é adquirida, não nata.
 
+## Reenquadramento: "Burrice vs. Inteligência" É Na Verdade "Experiência vs. Inexperiência"
+
+[[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] chega a um antídoto adjacente por outro caminho: travar diante de um problema difícil é comumente interpretado como prova de "burrice" — especialmente por quem carrega a imagem social de "pessoa inteligente" (caso comum de programadores). Isso cria uma cilada específica: para proteger essa imagem, a pessoa evita qualquer situação que ameace expô-la como incompetente, fazendo só o que já domina. O reenquadramento é trocar o eixo "burrice vs. inteligência" por "experiência vs. inexperiência" — dificuldade não mede inteligência, mede exposição prévia ao tipo de problema. Ver [[wiki/concepts/problema-de-escopo-aberto]] para o mecanismo completo (foco em ação, não em resultado, como remédio prático para a inexperiência).
+
 ## Relacionado
 
 - [[wiki/concepts/inteligencia-emocional]] — regular a resposta emocional a crítica é o antídoto direto
@@ -47,3 +51,4 @@ Essa mesma fonte também reforça um antídoto adicional ao já registrado acima
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]]
 - [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] — descreve a dinâmica de pedestal ("relação criador-criatura") como bloqueio de potencial
 - [[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]] — variante sênior da síndrome (medo de estar desatualizado) e o enquadramento de que o estado atual de falta de habilidade é provisório
+- [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] — reenquadramento "burrice vs. inteligência" → "experiência vs. inexperiência"; remédio para inexperiência é experimentar

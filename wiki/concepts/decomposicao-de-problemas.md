@@ -3,8 +3,8 @@ type: concept
 title: "Decomposição de Problemas"
 aliases: ["problem decomposition", "quebrar em partes menores"]
 date_created: 2026-05-13
-date_updated: 2026-07-09
-source_count: 3
+date_updated: 2026-07-24
+source_count: 4
 tags: [decomposicao, fundamentos, cs-fundamentals]
 skill: cs-fundamentals
 status: draft
@@ -58,8 +58,13 @@ A decomposição transforma "clone Netflix" — nebuloso demais para começar �
 
 Fora do design de sistemas, a mesma técnica se aplica a diagnosticar um problema vago em produção ("o sistema tá lento"). Em vez de decompor em módulos, decompõe-se em perguntas cada vez mais específicas (onde, quando, para quem) até chegar numa causa isolável — ver [[arvore-de-decomposicao]] e [[pensamento-estruturado]].
 
+## Aplicação a problemas de carreira e vida: escopo aberto
+
+[[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] generaliza a mesma técnica ainda mais, chamando-a de "operacionalizar" um [[wiki/concepts/problema-de-escopo-aberto|problema de escopo aberto]] — não um sistema técnico, mas metas amplas como "conseguir um emprego" ou "correr 10km", quebradas em ações fechadas e crescentes até virarem algo que já dá pra começar hoje.
+
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-quatro-passos]] — framework de 4 passos; caixa eletrônico como exemplo
 - [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — primeiro pilar dos 5; exemplo com clone de Netflix e remoção de elemento de array
 - [[wiki/sources/pensamento-estruturado-resolucao-de-problemas]] — aplicação da decomposição ao debugging de produção via árvore de perguntas (onde/quando/para quem)
+- [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] — "operacionalizar" um problema de escopo aberto de carreira/vida, generalizando a técnica além do contexto técnico

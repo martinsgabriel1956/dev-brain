@@ -46,6 +46,10 @@ OWASP LLM Top 10 define as ameaças específicas de sistemas com LLMs. Os 3 mais
 - [[concepts/owasp-llm]]
 - [[concepts/ai-red-teaming]]
 
+## Key Sources
+
+- [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]] — caso extremo de "AI red teaming" invertido: modelos da Anthropic (Mitos, Fable 5) usados para *encontrar* vulnerabilidades em software de terceiros (OpenBSD, FFmpeg, kernel Linux) em escala tão alta que motivou bloqueio governamental de acesso — ilustra o lado ofensivo do mesmo espectro de capacidade que este source discute do lado defensivo (proteger sistemas próprios de LLM)
+
 ## Open Questions
 
 - Como implementar isolamento de namespace RAG sem degradar recall em queries cross-tenant legítimas?

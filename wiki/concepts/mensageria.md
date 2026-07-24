@@ -3,8 +3,8 @@ type: concept
 title: "Mensageria"
 aliases: ["message broker", "queue", "stream", "eda", "event driven"]
 date_created: 2026-04-23
-date_updated: 2026-07-09
-source_count: 4
+date_updated: 2026-07-24
+source_count: 6
 tags: [mensageria, kafka, rabbitmq, sqs, queue, stream, eda, at-least-once, dlq]
 skill: tech-mentor-backend
 status: stub
@@ -38,3 +38,5 @@ Comunicação assíncrona entre serviços via broker de mensagens. Resolve acopl
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — Redis Pub/Sub como notificador entre microsserviços, sem persistência nem replay
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — mitigação da perda de mensagem via tabela de pendentes, quando o assinante Redis Pub/Sub está offline
 - [[wiki/sources/pub-sub-message-queue-bullmq-na-pratica]] — distinção prática Pub/Sub vs queue e quickstart de BullMQ sobre Redis
+- [[wiki/sources/system-design-simulador-hotel-booking-replit]] — Kafka escolhido num exercício de hotel booking pelo critério "capacidade de lidar com grandes volumes de dados", com ressalva explícita de possível [[wiki/concepts/over-engineering]] para o caso de uso; a IA avaliadora do exercício aponta corretamente que Kafka foi introduzido no desenho sem nenhum consumidor definido — reforça que escolher a tecnologia certa não substitui desenhar quem consome a fila
+- [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — comunicação assíncrona (filas/eventos) citada como conceito que ensina quando desacoplar processos (e-mail, geração de relatório) do fluxo principal, mesmo fora de arquitetura distribuída

@@ -3,8 +3,8 @@ type: concept
 title: "Harness"
 aliases: ["AI harness", "harness de IA", "coding harness"]
 date_created: 2026-06-02
-date_updated: 2026-07-21
-source_count: 10
+date_updated: 2026-07-24
+source_count: 11
 tags: [harness, llm, tool-call, agente, context-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -96,3 +96,4 @@ Depois de harness engineering (melhorar o ambiente ao redor do modelo), o degrau
 - [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — execução local de tool calls como o risco que motiva contenção/sandboxing do processo do harness
 - [[wiki/sources/impacto-ia-mercado-frontend]] — harness próprio (skills, agente de code review a partir de causas de incidente) como requisito de contratação em frontend, não só prática de produtividade
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]] — harness com closed-loop skill learning embutido (Hermes Agent, Open Claw)
+- [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — a própria linguagem como harness (Rust vs. Zig na migração do Ban: compilador memory-safe como sensor objetivo); harness fraco em testes e2e removidos fez erros se acumularem num loop criador

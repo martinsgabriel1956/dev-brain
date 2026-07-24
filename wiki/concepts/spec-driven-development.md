@@ -3,8 +3,8 @@ type: concept
 title: "Spec-Driven Development"
 aliases: ["SDD", "spec driven", "desenvolvimento orientado a especificação", "planning-first"]
 date_created: 2026-06-02
-date_updated: 2026-07-21
-source_count: 10
+date_updated: 2026-07-24
+source_count: 11
 tags: [spec-driven, planejamento, ia-para-devs, harness, agente, qualidade]
 skill: tech-mentor-ai
 status: stable
@@ -132,3 +132,4 @@ O ponto não invalida SDD como definido acima (spec como contrato de execução,
 - [[wiki/sources/tdd-sdd-bdd-era-ia]] — origem não-IA do termo, contratos de API como boundary (OpenAPI, Protobuf, GraphQL)
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] — crítica ao "specs to code" sem inspeção de código
 - [[wiki/sources/impacto-ia-mercado-frontend]] — SDD como filtro de entrevista no mercado de frontend: "não tem para onde correr"
+- [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — SDD como "nível 2" do dev loop (receita humana que dispara vários loops React); base do "loop criador" quando encadeado automaticamente fase a fase via roadmap

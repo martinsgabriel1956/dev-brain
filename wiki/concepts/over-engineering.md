@@ -3,8 +3,8 @@ type: concept
 title: "Over-Engineering"
 aliases: ["overengineering", "verde neném", "engenharia excessiva", "gold plating"]
 date_created: 2026-06-09
-date_updated: 2026-07-23
-source_count: 5
+date_updated: 2026-07-24
+source_count: 7
 tags: [design, qualidade, anti-pattern, aprendizado, design-patterns, dora, under-engineering]
 skill: tech-mentor-leadership
 status: stable
@@ -97,4 +97,6 @@ A progressão que evita isso:
 - [[wiki/sources/como-evitar-over-engineering-david-farley]]
 - [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] — KISS e YAGNI apresentados como os dois princípios que atacam diretamente o dilema velocidade vs. qualidade, o mesmo dilema que over-engineering resolve mal
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — segunda fonte, independente de David Farley, chegando à mesma conclusão de que under-engineering é o problema mais comum; origem da página [[wiki/concepts/under-engineering]]
+- [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — descreve o "efeito manada" histórico de microsserviços (startups adotando o estilo desde o início sem necessidade real, só para parecer em dia com o mercado) como caso concreto de over-engineering em nível arquitetural, hoje corrigido por decisões mais "com pé no chão"
 - [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]] — terceira fonte independente reforçando a refutação do "triângulo de ferro": entregar algo funcional e imperfeito vale mais que algo inacabado e "perfeito", e overthinking sobre escalabilidade sem usuários é citado como erro pessoal do próprio autor mesmo após 20+ anos de carreira
+- [[wiki/sources/system-design-simulador-hotel-booking-replit]] — dois exemplos concretos no mesmo material: (1) Kafka citado como possível over-engineering para um sistema de reserva de hotel, usado mesmo assim como exercício didático com ressalva explícita; (2) o próprio autor admite ter incluído um "simulador de caos" no MVP de um produto novo antes de validar a funcionalidade central (o simulador), classificando isso como erro de escopo em retrospecto

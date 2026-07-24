@@ -3,8 +3,8 @@ type: concept
 title: "Entrevista de System Design (Whiteboard Interview)"
 aliases: ["system design interview", "whiteboard interview", "lousa branca", "entrevista de arquitetura"]
 date_created: 2026-07-20
-date_updated: 2026-07-20
-source_count: 1
+date_updated: 2026-07-24
+source_count: 2
 tags: [system-design, entrevistas, arquitetura, carreira]
 skill: tech-mentor-system-design
 status: draft
@@ -38,6 +38,11 @@ Assim como na [[wiki/concepts/entrevista-tecnica-coding|entrevista de coding]], 
 - [[wiki/concepts/modelagem-de-dados]] e [[wiki/concepts/contrato-de-api]] — etapas intermediárias antes do desenho
 - [[wiki/concepts/entrevista-tecnica-coding]] — mesma estrutura de "levar o candidato ao limite", formato diferente (algoritmo vs. arquitetura)
 - [[wiki/concepts/arquitetura-de-software]] — o repertório que a sessão avalia
+- [[wiki/concepts/simulador-de-system-design]] — ferramenta de prática que simula tráfego sobre o desenho e pontua com IA, pensada para treinar o mesmo repertório fora do contexto de entrevista
+
+## Practicar Fora do Contexto de Entrevista
+
+[[wiki/sources/system-design-simulador-hotel-booking-replit]] argumenta que esse repertório não serve só para passar em entrevista — é a competência que sobra quando a IA escreve o código, inclusive para quem está apenas [[wiki/concepts/vibe-coding|vibe codando]] um projeto sem saber programar. Isso motivou a criação de um [[wiki/concepts/simulador-de-system-design]] como produto: um playground onde o mesmo repertório de gargalo, cache, escalabilidade e mensageria é treinado com feedback em tempo real, em vez de só desenhado numa lousa estática.
 
 ## Key sources
 
