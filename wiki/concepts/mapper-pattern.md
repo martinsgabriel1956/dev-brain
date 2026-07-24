@@ -3,8 +3,8 @@ type: concept
 title: "Mapper Pattern"
 aliases: ["mapper", "data mapper por camada", "toPrisma", "toDomain"]
 date_created: 2026-07-10
-date_updated: 2026-07-10
-source_count: 1
+date_updated: 2026-07-24
+source_count: 2
 tags: [design-patterns, mapper, clean-architecture, hexagonal, prisma, camadas, acoplamento]
 skill: tech-mentor-backend
 status: stable
@@ -54,6 +54,11 @@ Ambos convertem entre formatos incompatíveis, mas com propósitos distintos: o 
 
 Ao mapear para persistência, campos que são [[wiki/concepts/ddd|Value Objects]] no domínio (ex: `content` como objeto com validação) precisam ser desembrulhados para o tipo primitivo que o banco entende (`content.value`) — o mapper é o lugar natural para essa extração, mantendo o Value Object imutável e sem lógica de serialização própria.
 
+## Por que "Object-Relational Mapper" é um Nome Equivocado
+
+[[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] dá a justificativa teórica para o que esta página já descreve na prática: um banco relacional contém apenas **estruturas de dados** (linhas/campos sem comportamento — ver [[wiki/concepts/objeto-vs-estrutura-de-dados]]), enquanto uma entidade de domínio é um **objeto** (dados + comportamento). Como os dois lados não são equivalentes, o mapper não "mapeia" um para o outro — ele **transfere dados** de um formato para o outro. Uncle Bob (fonte do post original) sugere que o nome correto seria algo como *Relational Datastructure Mapper*, não *Object-Relational Mapper* — reforça por que o mapper "pertence à camada/tecnologia, não ao domínio", como já registrado acima.
+
 ## Key Sources
 
 - [[wiki/sources/mappers-conversao-entre-camadas]]
+- [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — justificativa teórica (objeto vs. estrutura de dados) para por que ORM é um nome equivocado

@@ -3,8 +3,8 @@ type: concept
 title: "Hexagonal Architecture (Ports & Adapters)"
 aliases: ["arquitetura hexagonal", "ports and adapters", "ports adapters", "hexagonal"]
 date_created: 2026-05-04
-date_updated: 2026-07-10
-source_count: 3
+date_updated: 2026-07-24
+source_count: 4
 tags: [arquitetura, hexagonal, ports-adapters, acoplamento, testabilidade]
 skill: tech-mentor-backend
 status: stable
@@ -91,6 +91,10 @@ São o mesmo princípio com terminologia diferente:
 | Adapter | Camada Frameworks/Infra |
 | Driving Port | Controller |
 | Driven Port | Repository, Gateway |
+| Input Boundary | Driving Port (entrada) |
+| Output Boundary | Driven Port (saída, ex: Presenter) |
+
+O vocabulário de [[wiki/concepts/clean-architecture]] chama essas interfaces de "Input Boundary" e "Output Boundary" — mesmo mecanismo de inversão de dependência via polimorfismo, descrito em [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] como "protocolo" entre Controller/Use Case e entre Use Case/Presenter.
 
 ## In-Memory Adapters — Superpoder de Testabilidade
 
@@ -125,3 +129,4 @@ it("should throw when email already exists", async () => {
 - [[sources/hexagonal-architecture]] — referência técnica aprofundada (Alistair Cockburn, driving/driven ports)
 - [[sources/ports-and-adapters-codebase-para-ia]] — antes/depois com exemplo de blog + ângulo de IA
 - [[wiki/sources/mappers-conversao-entre-camadas]] — mapper como peça dentro do adapter de persistência
+- [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — equivalência Input/Output Boundary ↔ Driving/Driven Port

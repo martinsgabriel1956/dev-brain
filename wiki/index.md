@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-07-23
+date_updated: 2026-07-24
 ---
 
 
@@ -48,6 +48,7 @@ date_updated: 2026-07-23
 | [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] | ACID (atomicidade, consistência, isolamento, durabilidade) vs. BASE (basically available, soft state, eventual consistency) — o tradeoff corretude/performance vs. disponibilidade/escala, e quando usar cada um |
 | [[wiki/sources/vibe-coding-limites-maturidade-profissional]] | Vibe coding brilha em MVPs, protótipos, docs e testes; sistemas sustentáveis e seguros ainda exigem arquitetura, contexto de negócio e julgamento humano — vendê-los como prontos sem isso é ilusão e desonestidade |
 | [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] | SQL é linguagem, não banco de dados — a confusão do Twitter na thread de Uncle Bob, e o que um banco relacional faz por baixo (B-tree, WAL, parser, planner) |
+| [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] | Post de blog de Uncle Bob: objeto vs. estrutura de dados como conceitos opostos; por que "Object-Relational Mapper" é nome equivocado; fluxo completo de Clean Architecture numa aplicação web (Controller → Use Case → Entities → Presenter → View) |
 | [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]] | Q&A: ORM inviável com relacionamentos profundos/chaves compostas força SQL direto; stored procedure com moderação; relatório sempre bate em réplica; relacional vs. não relacional depende da necessidade de junções múltiplas |
 | [[wiki/sources/chain-of-thought-prompting]] | CoT prompting (Wei et al., 2022) — passos intermediários como exemplares few-shot é uma capacidade emergente de ~100B+ parâmetros; supera GPT-3 fine-tuned no GSM8K via prompting apenas |
 | [[wiki/sources/microsoft-prompt-engineering-guide]] | Quatro padrões de prompt engineering (Tell/Show/Describe/Remind) + Software 3.0 — guia prático da Microsoft para obter boas completions do Codex/GPT |
@@ -852,6 +853,8 @@ date_updated: 2026-07-23
 | [[wiki/concepts/pattern-recognition]] | Capacidade humana de detectar repetições — base do aprendizado por exposição |
 | [[wiki/concepts/design-patterns]] | Catálogo de soluções nomeadas — útil só depois de já ter visto os padrões na prática |
 | [[wiki/concepts/mapper-pattern]] | Classe estática por camada que converte entidade de domínio para o formato de outra camada (Prisma, HTTP) — isola o acoplamento à tecnologia, não ao domínio |
+| [[wiki/concepts/objeto-vs-estrutura-de-dados]] | Uncle Bob: objeto = funções sobre dados implícitos/encapsulados; estrutura de dados = dados expostos operados por funções externas — conceitos literalmente opostos, não sobrepostos |
+| [[wiki/concepts/clean-architecture]] | Regra de dependência apontando para dentro; fluxo de aplicação web camada a camada — Controller empacota Input Data, Use Case orquestra Entities, Presenter reempacota em ViewModel |
 | [[wiki/concepts/anti-pattern]] | Repetição que parece solução mas cria problemas — frequência não implica qualidade |
 | [[wiki/concepts/over-engineering]] | "Verde neném" — aplicar patterns sem base; pular etapas da progressão produz complexidade sem valor; under-engineering é o problema mais comum |
 | [[wiki/concepts/under-engineering]] | Fazer menos do que o projeto exige — acoplamento, hardcode, sem CI, copy-paste sem estrutura; mais comum que over-engineering, e o antídoto não exige nenhuma técnica sofisticada |

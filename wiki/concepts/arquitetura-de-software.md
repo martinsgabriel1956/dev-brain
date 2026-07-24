@@ -3,8 +3,8 @@ type: concept
 title: "Arquitetura de Software"
 aliases: ["software architecture", "decisao arquitetural"]
 date_created: 2026-07-03
-date_updated: 2026-07-20
-source_count: 7
+date_updated: 2026-07-24
+source_count: 8
 tags: [arquitetura, carreira, fundamentos, ia, pos-graduacao]
 skill: tech-mentor-leadership
 status: draft
@@ -28,6 +28,10 @@ A IA ajuda um arquiteto a discutir alternativas, explicar trade-offs para públi
 - Se a empresa tem *know-how* e licenciamento para as tecnologias sugeridas
 
 Perguntar para uma IA "que arquitetura eu uso?" com um prompt enxuto não substitui essa análise. Ver [[wiki/sources/vibe-coding-limites-maturidade-profissional]].
+
+## Clean Architecture em Detalhe: Objetos vs. Estruturas de Dados
+
+[[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] concretiza um dos livros citados abaixo (*Clean Architecture*, Robert Martin) com o diagrama de cenário típico numa aplicação web e a distinção teórica que o sustenta — [[wiki/concepts/objeto-vs-estrutura-de-dados|objeto vs. estrutura de dados]]. Ver página dedicada [[wiki/concepts/clean-architecture]] para o detalhamento camada a camada (Controller, Use Case, Entities, Presenter, ViewModel).
 
 ## Leituras de referência citadas
 
@@ -67,3 +71,4 @@ Nenhum desses livros foi lido/ingerido diretamente ainda no wiki — são citaç
 - [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]] — pós-graduação em arquitetura ensina teoria, não prática; vantagens reais são networking, credencial e visão de negócio
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]] — como o repertório de arquitetura é avaliado em entrevista de system design
 - [[wiki/sources/application-boundary-martin-fowler]] — aplicações são construções sociais, não unidades tecnicamente objetivas
+- [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — fluxo detalhado de Clean Architecture numa aplicação web e a distinção objeto vs. estrutura de dados que o sustenta

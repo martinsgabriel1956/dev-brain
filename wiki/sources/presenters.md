@@ -3,7 +3,7 @@ type: source
 title: "Presenters"
 aliases: ["presenter", "presenters", "view model", "output port", "interface adapters", "clean architecture presenter"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
+date_updated: 2026-07-24
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/presenters.md
 source_url: ""
 date_published: ""
@@ -44,3 +44,7 @@ Presenter é a camada que transforma a saída do UseCase em formato adequado par
 ## Nota de Atualização (2026-07-10)
 
 [[wiki/sources/mappers-conversao-entre-camadas]] descreve o mesmo problema — divergência de formato da mesma entidade entre camadas — a partir do lado de persistência (Prisma), nomeando a solução genérica de [[wiki/concepts/mapper-pattern]]. Presenter é o caso específico desse padrão aplicado à camada HTTP/apresentação.
+
+## Nota de Atualização (2026-07-24)
+
+O link `[[concepts/clean-architecture]]` citado acima agora aponta para uma página real: [[wiki/concepts/clean-architecture]], criada a partir de [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — essa fonte nova descreve o fluxo completo de Clean Architecture numa aplicação web (Controller → Use Case → Entities → Presenter → View), do qual o Presenter/ViewModel descrito nesta página é apenas o trecho final (Output Data → Presenter → ViewModel → View).

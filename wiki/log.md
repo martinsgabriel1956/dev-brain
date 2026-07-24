@@ -2,6 +2,34 @@
 
 ---
 
+## [2026-07-24] ingest | Objetos vs. Estruturas de Dados na Clean Architecture
+
+**Fonte:** [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — transcrição de vídeo em português colada pelo usuário no chat (texto corrido, sem pontuação original), reescrita como Markdown estruturado (definições de objeto/estrutura de dados a partir de um post de blog de Uncle Bob, crítica ao nome "Object-Relational Mapper", e o fluxo completo do diagrama de cenário web do livro *Clean Architecture*). Sem necessidade de tradução (fonte já em português). Salva em `raw/objetos-vs-estruturas-de-dados-clean-architecture.md`. Autoria não identificada no áudio.
+
+**Skill carregada:** `tech-mentor-backend`, lida de `/home/nemomartins/Documentos/new/skills/tech-mentor-backend/SKILL.md` — referência `references/architecture-foundations.md` consultada (seção "Clean Architecture") para calibrar terminologia arquitetural antes de escrever as páginas de conceito.
+
+**Lacuna fechada:** [[wiki/concepts/clean-architecture]] já era citado (link quebrado, `[[concepts/clean-architecture]]`) desde 2026-04-23 em [[wiki/sources/presenters]], sem a página existir. Esta fonte forneceu material suficiente para criar o hub central.
+
+**Páginas criadas:**
+- `raw/objetos-vs-estruturas-de-dados-clean-architecture.md`
+- `wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture.md`
+- `wiki/concepts/clean-architecture.md` — hub central: fluxo Controller → Use Case → Entities → Presenter → View, tabela objeto vs. estrutura de dados por peça
+- `wiki/concepts/objeto-vs-estrutura-de-dados.md` — definições opostas de Uncle Bob, implicações para ORM e para Clean Architecture
+
+**Páginas atualizadas:**
+- `wiki/entities/uncle-bob.md` — nova seção "Objetos vs. Estruturas de Dados (Post de Blog)"; `source_count` 3 → 4
+- `wiki/concepts/mapper-pattern.md` — nova seção sobre por que "Object-Relational Mapper" é nome equivocado; `source_count` 1 → 2
+- `wiki/concepts/repository-pattern.md` — nova seção sobre Data Access interface + Data Mapper no fluxo da Clean Architecture; `source_count` 2 → 3
+- `wiki/concepts/hexagonal-architecture.md` — tabela de equivalência ampliada com Input/Output Boundary ↔ Driving/Driven Port; `source_count` 3 → 4
+- `wiki/concepts/adapter-pattern.md` — nova seção sobre Input/Output Boundary como inversão de dependência; `source_count` 4 → 5
+- `wiki/concepts/arquitetura-de-software.md` — nova seção linkando ao detalhamento de Clean Architecture; `source_count` 7 → 8
+- `wiki/sources/presenters.md` — nota de atualização fechando o link quebrado para `clean-architecture`
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (seção "Padrões e Design")
+
+**Notas:** Nenhuma contradição encontrada — o conteúdo é altamente convergente com o que já estava documentado em [[wiki/concepts/mapper-pattern]] (mapper é acoplado à camada/tecnologia, não ao domínio) e [[wiki/sources/presenters]] (Presenter/ViewModel na camada HTTP), apenas fornecendo a justificativa teórica subjacente (objeto ≠ estrutura de dados) e generalizando o fluxo para a aplicação inteira. Duas questões em aberto registradas no source page: autoria não identificada no áudio, e o título/URL exato do post de blog de Uncle Bob não foi capturado com clareza na transcrição (vale confirmar contra `blog.cleancoder.com` antes de citar como fonte primária).
+
+---
+
 ## [2026-07-22] ingest | Como Transformar um Slice de Bytes em uma String Utilizando o Encode UTF-8
 
 **Fonte:** [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — transcrição de vídeo em português, texto corrido sem pontuação, fornecida pelo usuário; reescrita como Markdown estruturado (introdução, disclaimer sobre TDD com testes importados da stdlib de Go, especificação RFC 3629, detecção de comprimento pelo primeiro byte, montagem da runa via AND/OR/left shift, validações de input inválido — continuação byte, overlong encoding, surrogate pairs, codepoint máximo). Sem necessidade de tradução (fonte já em português). Salva em `raw/algoritmo-decode-utf8-com-tdd.md`. É a continuação direta prometida no fim de [[wiki/sources/como-strings-realmente-funcionam]], que havia deixado como questão aberta exatamente "como o algoritmo UTF-8 determina quantos bytes usa para cada codepoint" — questão agora fechada.

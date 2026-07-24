@@ -3,8 +3,8 @@ type: concept
 title: "Adapter Pattern"
 aliases: ["padrão adapter", "design pattern adapter", "adaptador"]
 date_created: 2026-05-01
-date_updated: 2026-07-15
-source_count: 4
+date_updated: 2026-07-24
+source_count: 5
 tags: [design-patterns, structural, adapter, oop, integracao]
 skill: tech-mentor-backend
 status: stable
@@ -65,6 +65,10 @@ O Adapter adapta **comportamento** — expõe métodos de uma interface incompat
 
 Caso didático (geração de relatório em PDF): uma classe de negócio (`SalesReportGenerator`) que dá `new` direto numa lib externa (DomPDF) e chama seus métodos específicos (`loadHtml`, `setPaper`, `render`) está violando [[single-responsibility]] — muda por dois motivos (regra de negócio *e* API da lib) — e fica impossível de testar unitariamente sem gerar o PDF de verdade. Extraindo uma interface própria do domínio (`PdfAdapter.generate(fileName, content)`) e um adaptador concreto (`DomPdfAdapter`) injetado via construtor, a troca por outra lib com API totalmente diferente (TCPDF: `writeHTML`, `setFont`) exige só um novo adaptador (`TcpdfAdapter implements PdfAdapter`) — zero alteração na classe de negócio. Regra prática: sempre que uma classe de alto nível instancia diretamente uma classe concreta de baixo nível/externa, é sinal para aplicar o Adapter.
 
+## Inversão de Dependência nas Fronteiras da Clean Architecture
+
+As interfaces `Input Boundary`, `Output Boundary` e `Data Access` descritas em [[wiki/concepts/clean-architecture]] são o mesmo mecanismo estrutural do Adapter — uma interface própria do domínio que isola o código de alto nível de uma dependência concreta — aplicado nas fronteiras entre Controller/Use Case, Use Case/Presenter e Use Case/persistência. Ver [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]], que chama essas interfaces de "protocolo".
+
 ## Key Sources
 
 - [[wiki/sources/design-pattern-proxy]]
@@ -72,3 +76,4 @@ Caso didático (geração de relatório em PDF): uma classe de negócio (`SalesR
 - [[sources/design-pattern-facade]] — distinção Facade vs Adapter formalizada
 - [[wiki/sources/mappers-conversao-entre-camadas]] — distinção Adapter vs Mapper
 - [[wiki/sources/design-pattern-adapter]] — caso DomPDF/TCPDF: extração de interface + adaptador concreto elimina acoplamento a lib externa e viabiliza testabilidade
+- [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — Input/Output Boundary e Data Access interface como aplicação do mesmo princípio nas fronteiras da Clean Architecture
