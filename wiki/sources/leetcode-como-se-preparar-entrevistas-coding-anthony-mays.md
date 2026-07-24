@@ -47,7 +47,7 @@ O ponto de vista desta fonte é o do candidato se preparando, mas complementa a 
 
 ## Open Questions
 
-- O artigo original de 2022 citado pelo autor não foi localizado/ingerido diretamente nesta wiki — apenas o vídeo que o resume foi usado como fonte.
+- ~~O artigo original de 2022 citado pelo autor não foi localizado/ingerido diretamente nesta wiki~~ — resolvido em 2026-07-22: ingerido em [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]], que detalha o framework prático completo ("Os Seis Passos") só resumido aqui.
 - Não há dados objetivos (taxa de aprovação, estudo controlado) que sustentem a afirmação de que memorizar problemas "não ajuda" — é opinião de um ex-entrevistador experiente, tratada aqui como visão de prática de mercado, não como claim cientificamente verificado.
 
 ## Raw Quotes

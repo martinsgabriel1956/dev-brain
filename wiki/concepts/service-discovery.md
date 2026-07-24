@@ -3,8 +3,8 @@ type: concept
 title: "Service Discovery"
 aliases: ["service discovery", "descoberta de serviços", "service registry"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-23
+source_count: 2
 tags: [sistemas-distribuidos, networking, microsservicos, kubernetes, consul]
 skill: tech-mentor-system-design
 status: stable
@@ -29,7 +29,7 @@ Client → escolhe instância (round-robin) → OrderService
 
 ## Server-Side Discovery
 
-Cliente envia para um Load Balancer/API Gateway que consulta o registry e roteia.
+Cliente envia para um Load Balancer/[[wiki/concepts/api-gateway]] que consulta o registry e roteia. Na ausência de qualquer forma de discovery, o problema aparece de forma prática: subir uma nova instância de um serviço não adianta nada se o client não tem como aprender o novo endereço — ele continua batendo na instância antiga, o que motiva introduzir um componente central como o API Gateway (ver [[wiki/sources/api-gateway-padrao-essencial-arquiteturas-distribuidas]]).
 
 ```
 Client → Load Balancer (Envoy/Kong) → Service Registry → instância
@@ -99,3 +99,4 @@ const services = await consul.health.service({ service: "order-service", passing
 ## Key Sources
 
 - [[sources/service-discovery]]
+- [[wiki/sources/api-gateway-padrao-essencial-arquiteturas-distribuidas]]

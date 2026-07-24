@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-07-22
+date_updated: 2026-07-23
 ---
 
 
@@ -14,6 +14,10 @@ date_updated: 2026-07-22
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]] | Pedro Nauck: 5 verdades duras de 20+ anos de carreira — ego não discrimina por senioridade, side projects populares viram maldição de manutenção (caso Docz), reinventar a roda é remix com custo de manutenção, cultura brasileira do "hard worker" normalizou entrega mínima, e overthinking/over-engineering resolve problemas que ainda não existem |
+| [[wiki/sources/api-gateway-padrao-essencial-arquiteturas-distribuidas]] | Bernardo Lobato: API Gateway como ponto único de entrada (roteamento, auth, mapeamento de payload, edge functions); API Composition/API Composer para orquestrar e agregar múltiplos endpoints; BFF como Gateway especializado por tipo de cliente; desafios centrais são single point of failure e Gateway virando gargalo por acúmulo de funções de borda |
+| [[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]] | André Casciotti: tarefas difíceis parecem mais difíceis do que são — síndrome do impostor ataca em todo nível, tarefas complexas naturalmente vão para seniores; 3 técnicas: seguir o fluxo do código desde a ação do usuário, dividir tarefas até responder "seguro?"/"tenho prazo?", organizar trabalho com lista escrita e progresso visível |
+| [[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] | Filipe Deschamps (autoria inferida): três estágios de maturidade para testar código — clicar manualmente na UI, Postman contra API-first/dogfooding no Pagar.me, e testes automatizados em modo watch (Jest); expectativa que quebra expõe vulnerabilidade real de autorização (403 vs 200) e o mesmo teste pega regressão futura sem verificação manual |
 | [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] | ~19 boas práticas de Claude Code atribuídas à documentação oficial da Anthropic: verificação embutida no prompt, descrever resultado e não passos, checkpoints/rewind, gerenciamento de sessões, `/go`, alocação de modelo por leverage, sandbox para loops não interrompidos, retenção de 30 dias |
 | [[wiki/sources/3-pilares-testes-automatizados-produtividade]] | Erick Wendel: 3 pilares — entender a tarefa antes de codificar (loop de confirmação de entendimento), setup de live reload/debug/testes integrados (node --watch/--inspect/--test + launch.json), e decompor tarefa em entrada/processamento/saída + Given/When/Then antes de implementar (exemplo Rinha de Backend); tipagem forte via JSDoc sem TypeScript |
 | [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] | Autoria inferida (Filipe Deschamps): 5 armadilhas de mentalidade ao aprender a programar — bomba de efeito moral (choque de complexidade que paralisa), relação criador-criatura (pedestal técnico), programar sem mirar impacto real, escolher o projeto (com "adrenalina") antes da tecnologia, e desligar autocomplete para não sabotar a spaced repetition |
@@ -23,6 +27,7 @@ date_updated: 2026-07-22
 | [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] | AI Jail (Fábio Akita): sandbox via Bubblewrap para conter agentes de codificação de IA contra supply chain attacks (ex.: npm postinstall malicioso); modelo de 3 camadas — sessão/AI Jail, código/Git, SO imutável; comparação com o opt-out do sandbox nativo do Claude Code |
 | [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]] | Renato Augusto: "vale a pena" sem objetivo definido não tem resposta; pós-graduação em arquitetura ensina teoria, não prática, nem em instituições renomadas; vantagens reais são networking, acesso a vagas com exigência de diploma e visão de negócio (churn, CAC, LTV) |
 | [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]] | Anthony D. Mays (ex-entrevistador big tech): memorize o padrão, não o problema; resposta certa não basta, processo de raciocínio importa mais; ficar travado é esperado; fazer perguntas de esclarecimento é trabalho do candidato, não do entrevistador |
+| [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]] | Artigo original (2022) de Anthony D. Mays: entrevista é exercício colaborativo, não prova solo; framework "Os Seis Passos" como roteiro de dez etapas de mock interview — cronômetro real, ouvir o problema sem ler o enunciado, estimar Big-O antes de codar, implementar sem pseudocódigo, diário de progresso |
 | [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] | Everton Oliveira: KISS (origem Marinha dos EUA) e YAGNI como os dois princípios que resolvem o dilema velocidade vs. qualidade — exemplo de refactor de validação de status e de repositório com métodos CRUD implementados por precaução |
 | [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]] | Reação a currículos reais de candidatos júnior: repetição da stack-alvo para passar no ATS, ausência de GitHub como motivo de descarte explícito, formatação/legibilidade e discurso de "pensar produto" como diferenciais |
 | [[wiki/sources/8-tipos-de-javascript]] | Os 8 tipos de JS (`null`, `undefined`, `boolean`, `number`, `bigint`, `string`, `symbol`, `object`); `typeof` vs. `Object.prototype.toString.call()`; `==` vs `===`; default de parâmetro (`undefined`) vs. fallback `\|\|` (qualquer falsy) |
@@ -211,12 +216,19 @@ date_updated: 2026-07-22
 | [[wiki/concepts/profundidade-e-maestria]] | Maestria em qualquer assunto (mesmo fora da área técnica) é prognóstico de sucesso em qualquer outro problema — o "hardware mental" se transfere |
 | [[wiki/concepts/abrangencia-profissional]] | Ser interessado, não apenas interessante — sinal é se curvar para frente ao ouvir um problema, não chegar com a solução pronta |
 | [[wiki/concepts/entrevista-tecnica-coding]] | Memorize o padrão, não o problema — processo de raciocínio e perguntas de esclarecimento importam mais que a resposta certa |
+| [[wiki/concepts/seis-passos-mock-interview]] | Roteiro de dez etapas para transformar prática solo de LeetCode em simulação fiel de entrevista real — cronômetro, sem ler o enunciado, Big-O antes de codar |
 | [[wiki/concepts/entrevista-system-design]] | Whiteboard interview: requisitos core antes de desenhar, plano de capacidade, modelagem de dados/API, e só então o high-level design |
 | [[wiki/concepts/networking-de-carreira]] | Mercado invisível de indicações — quanto mais sênior o cargo, mais a vaga é preenchida por "você conhece alguém?" em vez de vaga aberta |
 | [[wiki/concepts/credencialismo-formacao-formal]] | Diploma como proxy de disciplina, não de competência técnica — "tecnologia se ensina, disciplina não" |
+| [[wiki/concepts/divisao-de-tarefas-em-partes-menores]] | Divida até responder "tenho segurança?" e "consigo dar prazo?" — pare quando não der mais para dividir entre duas pessoas |
+| [[wiki/concepts/organizacao-pessoal-do-trabalho]] | Anotar em papel, listar subtarefas, riscar progresso — fecha os "loops abertos" que ficam martelando na cabeça |
+| [[wiki/concepts/estimativa-como-habilidade-treinavel]] | Dar prazo mesmo sem pressão e comparar depois — treina o orçamento antes de precisar sob cobrança real |
 | [[wiki/concepts/definicao-de-objetivo-antes-de-decisao]] | "Vale a pena" sem objetivo definido é como perguntar se um avião vale a pena sem saber o destino |
 | [[wiki/concepts/nichos-frontend-automatizados-ia]] | Agência, freelancer de landing page e consultoria de CRUD foram os nichos de frontend mais comoditizados pela IA — arquitetura e observabilidade blindaram quem já operava nessa maturidade |
 | [[wiki/concepts/monorepo-vs-microfrontends-ia]] | Monorepo junta contexto para o agente numa alteração vertical; microfrontends fragmentam a mesma mudança em várias tarefas cross-repo, exigindo linkar worktree/PR manualmente |
+| [[wiki/concepts/side-project-como-armadilha]] | Side project popular vira manutenção obrigatória — pode ser mais maldição do que bênção sem cronograma dedicado |
+| [[wiki/concepts/reinventar-a-roda]] | Reinventar raramente é inovação genuína — é remix, e o custo real está na manutenção extra desnecessária |
+| [[wiki/concepts/cultura-do-trabalhador-esforcado]] | "Hard worker" como padrão mínimo obrigatório em vez de diferencial — esforço aparente mascarando entrega inconsistente |
 
 ### Recursos de Aprendizado
 
@@ -708,6 +720,9 @@ date_updated: 2026-07-22
 | [[wiki/concepts/imutabilidade]] | Valores que não mudam após criados — elimina bugs de estado compartilhado |
 | [[wiki/concepts/efeitos-colaterais]] | Tudo que uma função faz além de retornar valor — devem ser explícitos e isolados nas periferias |
 | [[wiki/concepts/complexidade-acidental]] | Complexidade que vem de implementação, não do problema — Out of the Tar Pit; mutabilidade é a maior fonte |
+| [[wiki/concepts/api-gateway]] | Ponto único de entrada externo — roteamento, auth de borda, mapeamento de payload entre protocolos; single point of failure por natureza, mitigado com escala horizontal e observabilidade |
+| [[wiki/concepts/bff-pattern]] | API Gateway especializado por tipo de cliente — resolve over-fetching/under-fetching agregando dados exatamente no formato que aquele frontend precisa |
+| [[wiki/concepts/api-composition]] | API Composer orquestra múltiplas chamadas em paralelo (fan-out) e devolve um único resultado lapidado — técnica central por trás de BFFs e agregação de endpoints |
 
 ### Boas Práticas de Engenharia
 
@@ -828,6 +843,7 @@ date_updated: 2026-07-22
 | [[wiki/concepts/loop-de-confirmacao-de-entendimento]] | Ouvir a explicação inteira sem interromper, depois dizer de volta "o que eu entendi foi X" — antes de cair para implementação |
 | [[wiki/concepts/setup-live-reload-debug-testes]] | Live reload + `--inspect` + `node --test` integrados via `launch.json` — testes e debugger rodam a cada Ctrl+S, sem sair do editor |
 | [[wiki/concepts/tipagem-com-jsdoc]] | `@typedef`/`@param`/`@returns` dão autocomplete e validação de tipo em JavaScript puro, sem TypeScript |
+| [[wiki/concepts/tres-estagios-maturidade-testes]] | UI manual → Postman/API-first → Jest em modo watch — o que muda não é o cliente HTTP, é se a verificação vira especificação permanente ou checagem descartável |
 
 ### Padrões e Design
 
@@ -935,7 +951,7 @@ date_updated: 2026-07-22
 | [[wiki/entities/gerard-meszaros]] | Autor de *xUnit Test Patterns* (2007) — criou a taxonomia de Test Doubles (Dummy/Fake/Stub/Spy/Mock) divulgada por Martin Fowler |
 | [[wiki/entities/david-farley]] | Coautor de *Continuous Delivery* com Jez Humble; envolvido no LMAX; refuta o "triângulo de ferro" com dados DORA |
 | [[wiki/entities/mercado-livre]] | Maior e-commerce/fintech da América Latina — combina ISO 27001 + PCI-DSS + Zero Trust; adotante consolidado de Go em produção |
-| [[wiki/entities/andre-casciotti]] | Criador de conteúdo brasileiro, canal Próximo Nível — carreira dev, granularidade de mudança, automações pessoais como prática |
+| [[wiki/entities/andre-casciotti]] | Criador de conteúdo brasileiro, canal Próximo Nível — carreira dev, granularidade de mudança, síndrome do impostor em todo nível de carreira, decomposição de tarefas |
 | [[wiki/entities/robert-nystrom]] | Autor de *Crafting Interpreters* — implementação passo a passo da linguagem Lox (interpretador Java + VM bytecode em C) |
 | [[wiki/entities/llvm]] | Infraestrutura de compilador reutilizável — backend de otimização/codegen multi-arquitetura usado por Rust e Swift |
 | [[wiki/entities/filipe-deschamps]] | Programador brasileiro, fundador do TabNews — quadro Request/Response; aplica a tríade retorno-risco-liquidez a decisões de carreira e adoção de hype |

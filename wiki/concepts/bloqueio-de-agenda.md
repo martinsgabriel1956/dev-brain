@@ -3,8 +3,8 @@ type: concept
 title: "Bloqueio de Agenda"
 aliases: ["time blocking", "bloquear horário", "agenda própria"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-23
+source_count: 2
 tags: [carreira, habitos, produtividade, foco, agenda]
 skill: tech-mentor-leadership
 status: stable
@@ -38,6 +38,9 @@ Sem bloqueio: reunião → tarefa começa → reunião → contexto perdido → 
 
 [[concepts/pomodoro]] — técnica complementar para gerenciar o tempo dentro do bloco reservado.
 
+[[wiki/concepts/side-project-como-armadilha]] — mesmo mecanismo aplicado a side projects: reservar dias/horários específicos evita que o projeto pessoal consuma tempo de forma não estruturada e vire fonte de sobrecarga.
+
 ## Key Sources
 
 - [[sources/9-habitos-programador-junior]]
+- [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]]

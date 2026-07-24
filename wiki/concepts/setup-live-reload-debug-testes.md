@@ -3,8 +3,8 @@ type: concept
 title: "Setup de Live Reload, Debug e Testes Integrados"
 aliases: ["live reload node", "node --watch --inspect", "launch.json debug testes", "ambiente de desenvolvimento produtivo"]
 date_created: 2026-07-21
-date_updated: 2026-07-21
-source_count: 1
+date_updated: 2026-07-22
+source_count: 2
 tags: [testes, debugging, node-js, produtividade, vscode, ferramental]
 skill: tech-mentor-testing
 status: draft
@@ -67,6 +67,11 @@ Com o debugger conectado, o "Debug Console" do editor permite executar expressõ
 
 O ganho não é conveniência marginal — é eliminar a necessidade de sair do ambiente de desenvolvimento para validar qualquer hipótese. Ver [[wiki/concepts/debugging]] para o processo de investigação em si, e [[wiki/concepts/tdd]] para o ciclo RED-GREEN-REFACTOR que esse setup viabiliza em velocidade de `Ctrl+S`.
 
+## Modo watch como terceiro estágio de maturidade (Jest)
+
+[[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] descreve o mesmo padrão com Jest em vez de `node --test`: tela dividida entre teste e runner em modo watch, onde qualquer alteração salva reroda o teste automaticamente. A fonte enquadra esse setup como o terceiro (e mais maduro) estágio de uma progressão pessoal — antes dele vêm testar clicando manualmente na interface, e depois testar via cliente HTTP dedicado (Postman). Ver [[wiki/concepts/tres-estagios-maturidade-testes]] para a progressão completa. O ganho demonstrado ali vai além do feedback rápido: o mesmo teste que expõe um bug de autorização (rota retornando `200` em vez de `403` para usuário anônimo) continua rodando em modo watch meses depois, pegando uma regressão futura completamente não relacionada assim que ela é introduzida.
+
 ## Key Sources
 
 - [[wiki/sources/3-pilares-testes-automatizados-produtividade]]
+- [[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] — modo watch com Jest como terceiro estágio de maturidade; teste como rede de segurança contra regressão

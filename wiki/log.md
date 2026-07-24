@@ -28,6 +28,97 @@
 - `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (`bitwise-operations`, `overlong-encoding`)
 
 **Notas:** Nenhuma contradição de conteúdo com o wiki existente — fonte estritamente complementar e tecnicamente consistente com `utf-8.md`, `unicode.md` e `ascii.md`. Uma colisão terminológica identificada e documentada: "RFC" nesta fonte significa especificação técnica IETF (RFC 3629), sentido distinto do já registrado em `rfc-request-for-comments.md` (processo organizacional de proposta). Questão aberta nova (menor): o vídeo não implementa o lado *encode* (runa → bytes) apesar do título — lacuna sem cobertura na wiki até o momento.
+## [2026-07-23] ingest | API Gateway: Padrão Essencial em Arquiteturas Distribuídas
+
+**Fonte:** [[wiki/sources/api-gateway-padrao-essencial-arquiteturas-distribuidas]] — transcrição de vídeo do canal de Bernardo Lobato, colada pelo usuário no chat, texto corrido sem pontuação, já em português (sem necessidade de tradução). Reescrita como Markdown estruturado por seções (introdução/problema, solução com componente intermediário, definição formal de API Gateway, API Composition, edge functions, BFF, benefícios, desafios, tecnologias de mercado, fechamento). Salva em `raw/api-gateway-padrao-essencial-arquiteturas-distribuidas.md`.
+
+**Skill carregada:** `tech-mentor-backend` (diretório real: `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/`, divergente do path documentado em CLAUDE.md sob `nemomartins`, consistente com ingestões anteriores); referências principais consultadas: `references/api-gateway.md` (responsabilidades, ferramentas, single point of failure, armadilhas) e `references/api-composition-patterns.md` (fan-out, `Promise.all`/`Promise.allSettled`, DataLoader/request collapsing).
+
+**Páginas criadas:**
+- `raw/api-gateway-padrao-essencial-arquiteturas-distribuidas.md`
+- `wiki/sources/api-gateway-padrao-essencial-arquiteturas-distribuidas.md`
+- `wiki/concepts/api-gateway.md` — formalização do padrão: responsabilidades, ferramentas de mercado, edge functions, SPOF, comparação com service mesh
+- `wiki/concepts/bff-pattern.md` — Gateway especializado por cliente, resolve over-fetching/under-fetching, risco de BFF inchado
+- `wiki/concepts/api-composition.md` (draft) — API Composer, fan-out, request collapsing
+
+**Páginas atualizadas:**
+- `wiki/concepts/gatekeeper-pattern.md` — links para as novas páginas `api-gateway` e `bff-pattern` como implementações detalhadas do princípio de ponto único de entrada; `source_count` 1 → 2
+- `wiki/concepts/service-discovery.md` — nova frase na seção Server-Side Discovery amarrando o motivo prático (nova instância inacessível sem discovery) citado nesta fonte; `source_count` 1 → 2
+- `wiki/entities/bernardo-lobato.md` — nova linha em Key Sources (terceira fonte do autor); `source_count` 2 → 3
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (seção "Arquitetura Backend & Event-Driven")
+
+**Notas:** Nenhuma contradição direta encontrada. Esta fonte fecha um gap concreto de orfandade: [[wiki/sources/api-gateway-bff]] (fonte de abril/2026, foco em código) e [[wiki/concepts/gatekeeper-pattern]] (fonte de junho/2026, foco em segurança) já linkavam para `[[concepts/api-gateway]]` e `[[concepts/bff-pattern]]`, mas essas páginas nunca haviam sido criadas — eram links quebrados. Esta ingestão cria as três páginas de conceito faltantes (`api-gateway`, `bff-pattern`, e a nova `api-composition`, não coberta antes) e as conecta às duas fontes anteriores. Uma divergência foi registrada como open question no source page: a recomendação do autor por implementação própria do API Gateway contrasta com a tendência de mercado documentada em `references/api-gateway.md` da skill (Kong, AWS API Gateway, Traefik como escolhas usuais) — tratada como opinião pessoal do autor, não como consenso, e não alterada na página de conceito.
+
+---
+
+## [2026-07-23] ingest | Como Lidar com Tarefas Difíceis Sendo Júnior
+
+**Fonte:** [[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]] — transcrição de vídeo do quadro "Próximo Nível" (André Casciotti), colada pelo usuário no chat, texto corrido sem pontuação, já em português (sem necessidade de tradução). Reescrita como Markdown estruturado por seções (introdução, mudança de mentalidade/síndrome do impostor, dica 1 — descubra os pontos de alteração, dica 2 — divida tarefas em partes menores, dica 3 — organize seu trabalho, conclusão). Salva em `raw/como-lidar-com-tarefas-dificeis-sendo-junior.md`.
+
+**Skill carregada:** `tech-mentor-leadership` (diretório real: `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/`, divergente do path documentado em CLAUDE.md sob `nemomartins`, consistente com ingestões anteriores) — tópico central é carreira júnior/síndrome do impostor/decomposição de tarefas, mapeado ao índice geral da skill (mentoria técnica e produtividade individual).
+
+**Páginas criadas:**
+- `raw/como-lidar-com-tarefas-dificeis-sendo-junior.md`
+- `wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior.md`
+- `wiki/concepts/divisao-de-tarefas-em-partes-menores.md` — critério de parada por duas perguntas (segurança/prazo) e regra de divisibilidade entre duas pessoas
+- `wiki/concepts/organizacao-pessoal-do-trabalho.md` — anotação em papel, lista de subtarefas priorizada, progresso visível, loop aberto (Efeito Zeigarnik, `[external]`)
+- `wiki/concepts/estimativa-como-habilidade-treinavel.md` — dar prazo mesmo sem pressão como treino deliberado de orçamento
+
+**Páginas atualizadas:**
+- `wiki/concepts/sindrome-do-impostor.md` — nova seção "A Variante Sênior" (medo de estar desatualizado) e reforço do enquadramento "estado atual é provisório"; `source_count` 2 → 3
+- `wiki/concepts/voluntariar-para-desconhecido.md` — nova seção reforçando o argumento com o tripé calma/coragem/cara-de-pau; `source_count` 1 → 2
+- `wiki/concepts/disciplina-vs-talento.md` — segunda fonte independente chegando à mesma conclusão (habilidade adquirida, não talento nato); `source_count` 1 → 2
+- `wiki/concepts/exploracao-com-intencao.md` — nova seção aplicando a técnica a descoberta de pontos de alteração em manutenção/correção de bugs (não só onboarding); `source_count` 2 → 3
+- `wiki/entities/andre-casciotti.md` — novo tema recorrente (síndrome do impostor em todo nível, decomposição de tarefas) e novo source; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (seção "Carreira & Soft Skills"); hook da entidade André Casciotti atualizado
+
+**Notas:** Nenhuma contradição encontrada com o restante da wiki. O conteúdo reforça, com nuance nova, dois conceitos já documentados a partir de outras fontes: [[wiki/concepts/sindrome-do-impostor]] ganha a variante sênior (não coberta antes) e [[wiki/concepts/disciplina-vs-talento]] ganha uma segunda fonte independente para a mesma tese. A técnica de "descobrir pontos de alteração" (comece do começo, siga o fluxo do código, anote) é mecanicamente idêntica a [[wiki/concepts/exploracao-com-intencao]], só que aplicada a manutenção/correção de bug em vez de onboarding puro — tratada como extensão de escopo, não como conceito novo. Duas afirmações da fonte carecem de embasamento citado no próprio vídeo mas têm paralelo em pesquisa externa não citada pelo autor: anotação em papel (Mueller & Oppenheimer, 2014) e "loop aberto" mental (Efeito Zeigarnik, 1927) — ambas marcadas como `[external]` nas páginas correspondentes. A distinção entre [[wiki/concepts/estimativa-como-habilidade-treinavel]] (prazo de entrega de tarefas) e [[wiki/concepts/estimativas-back-of-envelope]] (capacidade/tráfego em system design) foi registrada explicitamente para evitar confusão de escopo entre as duas skills (`tech-mentor-leadership` vs. `tech-mentor-system-design`) — a página de back-of-envelope não foi editada por pertencer a domínio distinto.
+
+---
+
+## [2026-07-22] ingest | Os 3 Estágios de Maturidade Para Testar Código
+
+**Fonte:** [[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] — transcrição de vídeo em português, texto corrido sem pontuação, fornecida pelo usuário; reescrita como Markdown estruturado por seções (introdução, estágio 1 iniciante, estágio 2 intermediário, estágio 3 experiente com demonstração passo a passo, recomendação de curso, fechamento). Sem necessidade de tradução (fonte já em português). Salva em `raw/os-3-estagios-de-maturidade-para-testar-codigo.md`.
+
+**Skill carregada:** `tech-mentor-testing` (diretório real: `/home/gabriel-martins/Documentos/skills/`) — tópico central é TDD/watch-mode/regressão, mapeado em `references/test-patterns.md` e `references/test-tooling.md` no índice da skill.
+
+**Autoria:** atribuída por inferência a [[wiki/entities/filipe-deschamps]] — evidência interna forte: "Felipinho de Champs de 2014", experiência no [[wiki/entities/pagar-me]], e demonstração prática usando o TabNews (projeto do próprio autor) como codebase — mesmo padrão de pistas já usado para inferir autoria em [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]].
+
+
+**Páginas criadas:**
+- `wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo.md`
+- `wiki/concepts/tres-estagios-maturidade-testes.md` — os três estágios (UI manual, Postman/API-first + dogfooding, testes automatizados em modo watch) e por que expectativa quebrando é sinal de bug, não de teste errado
+
+**Páginas atualizadas:**
+- `wiki/concepts/setup-live-reload-debug-testes.md` — nova seção sobre modo watch com Jest como o mesmo padrão descrito com `node --test`; `source_count` 1 → 2
+- `wiki/concepts/tdd.md` — nova seção sobre expectativa que quebra expondo bug de autorização real e teste pegando regressão futura não relacionada; `source_count` 8 → 9
+- `wiki/entities/filipe-deschamps.md` — nova seção sobre os três estágios de maturidade; `source_count` 2 → 3
+- `wiki/entities/pagar-me.md` — nova seção sobre cultura de dogfooding e API-first; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources e em Testes & Qualidade (Concepts)
+
+**Notas:** Nenhuma contradição com o wiki existente — a fonte converge com [[wiki/concepts/tdd]] e [[wiki/concepts/setup-live-reload-debug-testes]], adicionando um exemplo concreto novo (vulnerabilidade de autorização real pega por teste, com Jest/modo watch em vez de `node --test`). Grafia do nome do curso recomendado ("Fábio Vedovelle") não confirmada — sinalizado como Open Question na fonte. Nenhum dado quantitativo novo — relato de experiência pessoal do autor.
+
+## [2026-07-22] ingest | Como Praticar Questões de LeetCode (Do Jeito Certo)
+
+**Fonte:** [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]] — artigo de Anthony D. Mays (Medium, 2022-05-10, https://medium.com/@anthonydmays/how-to-practice-leetcode-questions-the-right-way-4f9735cf06c6), fornecido em texto pelo usuário após o WebFetch inicial retornar conteúdo truncado por paywall. Traduzido e condensado (paráfrase estruturada, não reprodução literal) em `raw/como-praticar-leetcode-da-forma-certa-anthony-mays.md`. É o artigo original de 2022 que o vídeo já ingerido em [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]] apenas resumia — resolve a "Open Question" que essa fonte havia deixado em aberto.
+
+**Skill carregada:** `tech-mentor-leadership` (diretório real: `/home/gabriel-martins/Documentos/skills/`) — mantida por consistência com a fonte irmã já ingerida do mesmo autor. Sem arquivo de referência específico para framework de mock interview nesse skill (mesma situação já registrada em ingests anteriores).
+
+**Páginas criadas:**
+- `wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays.md`
+- `wiki/concepts/seis-passos-mock-interview.md` — o roteiro de dez etapas do framework "Os Seis Passos" (ferramenta sem IDE, entrevistador simulado, cronômetro, articular o problema de ouvido, perguntas/suposições, exemplos como casos de teste, brainstorm+Big-O, implementação sem pseudocódigo, teste contra checklist, otimização; diário de progresso)
+
+**Páginas atualizadas:**
+- `wiki/concepts/entrevista-tecnica-coding.md` — nova seção "O roteiro de prática: Os Seis Passos"; novo backlink; `source_count` 2 → 3
+- `wiki/entities/anthony-d-mays.md` — reescrito para refletir que o artigo original agora está ingerido diretamente (não só via vídeo); `source_count` 1 → 2
+- `wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays.md` — Open Question sobre o artigo original marcada como resolvida, com backlink
+- `wiki/concepts/big-o.md` — nova frase sobre estimar Big-O antes de implementar (etapa 7 do framework); novo Key Source
+- `wiki/concepts/reconhecimento-de-padroes.md` — novo Key Source (repertório de padrões sustentando o brainstorm da etapa 7)
+- `wiki/concepts/algoritmos-e-estruturas-de-dados.md` — novo Key Source (DSA preparando o brainstorm de soluções)
+- `wiki/concepts/aprendizado-por-luta.md` — novo Key Source (o roteiro de dez etapas expõe o candidato à dificuldade real, sem atalhos)
+- `wiki/index.md` — nova linha em Sources e em Concepts (Carreira & Soft Skills)
+
+**Notas:** Nenhuma contradição com o wiki existente — o artigo é a fonte primária que o vídeo já ingerido apenas resumia, então reforça e detalha (framework prático completo) em vez de divergir. Nenhum dado quantitativo novo além do já registrado (>32.000 leituras, ~2.000 likes citados no artigo). Claim central tratado como opinião de prática de mercado de um ex-entrevistador/coach, não como estudo controlado.
 
 ## [2026-07-21] ingest | Adaptabilidade — Papinho Tech Solo
 
@@ -3215,5 +3306,33 @@ Entities:
 - `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (seção "Agentes & LLMOps")
 
 **Notas:** Nenhuma contradição encontrada com o restante da wiki — o conteúdo é consistente e reforça práticas já documentadas em [[wiki/concepts/context-compaction]], [[wiki/concepts/code-review]] e [[wiki/concepts/agent-containment]], adicionando granularidade nova (checkpoints/rewind, gerenciamento de sessões, alocação de modelo por leverage) que não estava coberta explicitamente na wiki até agora. Sintaxe exata de comandos citados (`/rename`, `/rewind`, `/go`) não foi verificada contra a documentação oficial atual — registrada como open question no source page, já que pode divergir da nomenclatura real da CLI em versões futuras. Path da skill `tech-mentor-ai` divergiu do documentado em CLAUDE.md (usuário `nemomartins` vs. `gabriel-martins`), consistente com ingestões anteriores.
+
+---
+
+## [2026-07-23] ingest | Verdades Duras Depois de 20+ Anos Programando
+
+**Fonte:** [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]] — transcrição de vídeo em inglês colada pelo usuário no chat, traduzida integralmente para português, reorganizada em seções e limpa de repetições/hesitações de fala. Salva em `raw/verdades-duras-programador-20-anos-pedro-nauck.md`. Autor: Pedro Nauck, dev na Fuel Network.
+
+**Skill carregada:** `tech-mentor-leadership`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/SKILL.md` (path divergente do documentado em CLAUDE.md sob `nemomartins`, localizado via busca no filesystem, mesmo padrão de ingestões anteriores). Conteúdo é mentoria de carreira geral (ego, side projects, over-engineering, cultura de trabalho), sem um arquivo de referência único no índice da skill — calibração usada em nível de skill.
+
+**Descoberta de identidade:** o autor é a mesma pessoa já documentada em [[wiki/entities/pedro-nauke]] (Formação IA para Devs) — grafia do sobrenome diverge entre fontes ("Nauke" vs. "Nauck"), confirmado por coincidência de "22 anos"/"20+ anos" de experiência, criação do Docz e perfil de dev brasileiro em tooling.
+
+**Páginas criadas:**
+- `raw/verdades-duras-programador-20-anos-pedro-nauck.md`
+- `wiki/sources/verdades-duras-programador-20-anos-pedro-nauck.md`
+- `wiki/concepts/side-project-como-armadilha.md`
+- `wiki/concepts/reinventar-a-roda.md`
+- `wiki/concepts/cultura-do-trabalhador-esforcado.md`
+
+**Páginas atualizadas:**
+- `wiki/entities/pedro-nauke.md` — aliases "Nauck" adicionado, seção "Posições e Opiniões Conhecidas (Carreira)" nova, menção ao Docz e Fuel Network; `source_count` 6 → 7
+- `wiki/concepts/ego-driven-development.md` — nova seção "Ego em Discussões Técnicas" (sintoma de travar discussão por teimosia); `source_count` 1 → 2
+- `wiki/concepts/over-engineering.md` — nova entrada em Key Sources reforçando a refutação do "triângulo de ferro"; `source_count` 4 → 5
+- `wiki/concepts/disciplina-vs-talento.md` — nova seção "Tensão com uma Terceira Fonte" (claim de "fácil se destacar porque a maioria é preguiçosa" tratada como opinião não verificável, não como reforço direto); `source_count` 2 → 3
+- `wiki/concepts/organizacao-pessoal-do-trabalho.md` — novo link para `cultura-do-trabalhador-esforcado` como antídoto operacional; `source_count` 1 → 2
+- `wiki/concepts/bloqueio-de-agenda.md` — novo link para `side-project-como-armadilha` (mesmo mecanismo de reserva de tempo); `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (seção "Carreira & Soft Skills")
+
+**Notas:** Nenhuma contradição forte com o restante da wiki, mas duas tensões de enquadramento foram registradas como questões em aberto no source page: (1) a claim de que "é fácil se destacar porque a maioria é preguiçosa" contrasta com o enquadramento mais construtivo de [[wiki/concepts/disciplina-vs-talento]] (disciplina própria, não comparação com a preguiça alheia); (2) a generalização cultural sobre o Brasil ("hard worker culture") é baseada em anedota pessoal de um único ex-chefe, sem dado comparativo — tratada como opinião forte do autor em [[wiki/concepts/cultura-do-trabalhador-esforcado]], não como achado verificável. As demais claims (ego, side projects, reinventar a roda, over-engineering) reforçam diretamente conceitos já estabelecidos na wiki com boa convergência.
 
 ---

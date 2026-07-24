@@ -64,3 +64,4 @@ Daí a afirmação: "tu não leva tempo para decorar uma sintaxe — tu leva mui
 
 - [[sources/quanto-tempo-aprender-programacao]] — pesquisa dos xadrezistas como analogia central; "tu não leva tempo para decorar sintaxe, leva tempo pro cérebro reconhecer padrões"
 - [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]] — aplicação prática em entrevistas de coding: "memorize o padrão, não o problema"
+- [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]] — o repertório de padrões sustenta o brainstorm de soluções na etapa 7 do framework "Os Seis Passos"

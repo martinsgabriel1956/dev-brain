@@ -107,6 +107,9 @@ Cobertura alta prova que uma linha foi executada, não que ela foi exercitada co
 ## Importar Testes de uma Implementação de Referência como Oráculo
 
 Quando a interface, o input e o output já são conhecidos por uma especificação externa (RFC, protocolo, formato de arquivo), é possível pular a etapa de escrever os testes do zero e **importar a suite de testes de uma implementação de referência já validada**. [[wiki/sources/algoritmo-decode-utf8-com-tdd]] faz isso ao copiar a suite de testes do pacote `unicode/utf8` da standard library de Go para validar uma implementação própria de decode UTF-8 — os testes cobrem edge cases (sequências de bytes inválidas, overlong encoding, surrogate pairs) que seriam difíceis de antecipar escrevendo do zero. Passar em toda a suite importada é evidência forte de que a implementação está correta e não apenas "parece funcionar" nos casos óbvios. É uma variação do ciclo clássico RED → GREEN → REFACTOR: a primeira rodada dos testes falha propositalmente (a função ainda nem existe), confirmando que os testes de fato exercitam o comportamento esperado antes de qualquer código de produção ser escrito.
+## Expectativa que quebra é sinal de bug, não de teste errado
+
+[[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] ilustra o princípio central do RED com um caso concreto de segurança: um teste espera `403` para uma rota sensível de migrations acessada por usuário anônimo, mas o código retorna `200`. A expectativa está certa — o código é que está exposto, sem nenhum middleware de autorização no handler. A fonte estende o mesmo raciocínio à fase de manutenção: meses depois, uma alteração não relacionada (permissão liberada por engano em outro arquivo) faz o mesmo teste voltar a falhar sozinho, em modo watch, pegando a regressão sem qualquer verificação manual — o mesmo teste escrito uma vez continua funcionando como especificação executável indefinidamente. Ver [[wiki/concepts/tres-estagios-maturidade-testes]] para o enquadramento de "teste automatizado com watch mode" como estágio mais maduro de validação de código, depois de clicar manualmente na UI e de usar um cliente HTTP dedicado (Postman).
 
 ## Key Sources
 
@@ -121,3 +124,4 @@ Quando a interface, o input e o output já são conhecidos por uma especificaç�
 - [[wiki/sources/xunit-martin-fowler]] — origem histórica do JUnit e da família Xunit
 - [[wiki/sources/3-pilares-testes-automatizados-produtividade]] — decomposição de tarefa em entrada/processamento/saída como passo pré-RED; setup de live reload/debug/testes integrados via `node --test` + `--inspect` + `launch.json`
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — importar a suite de testes de uma implementação de referência (stdlib de Go) como oráculo de corretude
+- [[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] — expectativa que quebra expõe bug de autorização real; teste como rede de segurança contra regressão futura não relacionada
