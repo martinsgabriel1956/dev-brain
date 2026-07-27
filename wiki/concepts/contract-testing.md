@@ -4,7 +4,7 @@ title: "Contract Testing"
 aliases: ["teste de contrato", "pact", "consumer-driven contracts", "can-i-deploy"]
 date_created: 2026-04-22
 date_updated: 2026-07-27
-source_count: 5
+source_count: 6
 tags: [testes, contract-testing, pact, microservices, ci, distribuídos]
 skill: tech-mentor-testing
 status: stable
@@ -103,3 +103,4 @@ Quando ativar o serviço externo real (ex.: staging de um provedor de pagamentos
 - [[wiki/sources/contract-test-martin-fowler]] — cadência de execução, tratamento de falha e SelfInitializingFake
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — exemplo de PSP/fornecedor mockados nas pontas de um fluxo de pagamento
 - [[wiki/sources/consumer-driven-contracts-martin-fowler]] — origem do termo (Ian Robinson, 2006), modelo de três camadas, Must Ignore pattern
+- [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — Tolerant Reader e Consumer-Driven Contracts citados como técnicas que permitem contratos de serviço evoluírem de forma independente sem gerenciamento central; menciona um time na Austrália que orienta a construção de novos serviços pelo contrato (definido antes do código), evitando over-building via YAGNI

@@ -3,8 +3,8 @@ type: concept
 title: "YAGNI — You Ain't Gonna Need It"
 aliases: ["yagni", "you ain't gonna need it", "não vou precisar disso"]
 date_created: 2026-04-23
-date_updated: 2026-07-19
-source_count: 6
+date_updated: 2026-07-27
+source_count: 8
 tags: [arquitetura, principios, pragmatismo, over-engineering, xp]
 skill: tech-mentor-backend
 status: stable
@@ -54,6 +54,14 @@ Ver também [[wiki/concepts/fazer-a-coisa-mais-simples-que-poderia-funcionar]] �
 
 [[wiki/sources/underengineering-overengineering-mario-souto]] lista "ignorar YAGNI" entre os sinais de [[wiki/concepts/over-engineering]] discutidos a partir de um card/tweet, ao lado de microsserviços prematuros e otimização prematura — reforçando o vínculo já registrado nesta página entre violar YAGNI e over-engineering. A mesma fonte dá um exemplo do lado oposto do mesmo princípio: construir a própria lib de formulário do zero em vez de usar React Hook Form ou Formik não é exatamente "abstração especulativa" no sentido clássico de YAGNI, mas é a mesma disciplina aplicada a infraestrutura — "você não vai precisar construir isso, alguém já construiu e mantém."
 
+## Ordem de Prioridade entre YAGNI, SOLID e DRY
+
+[[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]] (Chris Kiehl) propõe uma hierarquia explícita entre os três princípios — **YAGNI, SOLID, DRY, nessa ordem** — que nenhuma fonte anterior na wiki havia formulado: primeiro decidir *se* algo deve existir (YAGNI), depois *como* estruturá-lo bem caso exista (SOLID), e só então eliminar repetição (DRY). A ordem reforça o que já está documentado acima — YAGNI questiona o que construir antes de qualquer princípio de qualidade de código entrar em jogo.
+
+## YAGNI Aplicado à Construção de Contrato de Serviço
+
+[[wiki/sources/microsservicos-martin-fowler-james-lewis]] descreve um exemplo concreto de YAGNI aplicado a arquitetura de microsserviços: um time na Austrália orienta a construção de novos serviços por [[wiki/concepts/contract-testing|contratos orientados pelo consumidor]] definidos *antes* do código — o serviço é então construído apenas até o ponto em que satisfaz o contrato, "uma abordagem elegante para evitar o dilema do YAGNI ao construir novo software". É o mesmo princípio de "não implemente até precisar" aplicado no nível de fronteira de serviço, não só no nível de classe/função.
+
 ## Key Sources
 
 - [[sources/clean-architecture-ia-custo-real]]
@@ -62,3 +70,4 @@ Ver também [[wiki/concepts/fazer-a-coisa-mais-simples-que-poderia-funcionar]] �
 - [[wiki/sources/5-principios-que-mudaram-como-programador]]
 - [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] — exemplo de repositório com métodos CRUD implementados por precaução; benefícios de foco, velocidade e menor complexidade
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — "ignorar YAGNI" listado como sinal de over-engineering; exemplo de usar React Hook Form/Formik em vez de construir gerenciamento de formulário do zero
+- [[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]] — ordem de prioridade explícita YAGNI → SOLID → DRY; escalar sem necessidade real como sinal de mau engenheiro

@@ -3,8 +3,8 @@ type: concept
 title: "Circuit Breaker"
 aliases: ["circuit breaker pattern", "disjuntor", "opossum"]
 date_created: 2026-04-22
-date_updated: 2026-07-24
-source_count: 3
+date_updated: 2026-07-27
+source_count: 4
 tags: [resiliencia, circuit-breaker, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -100,6 +100,10 @@ API não-crítica (analytics): threshold 30%, resetTimeout 10s
 ## Relação com Bulkhead
 
 Circuit breaker decide **SE** tenta. [[concepts/bulkhead]] decide **QUANTOS** tentam ao mesmo tempo. Use os dois juntos — bulkhead envolve circuit breaker.
+
+## Origem na Literatura de Microsserviços: Design for Failure
+
+[[wiki/sources/microsservicos-martin-fowler-james-lewis]] situa o circuit breaker (junto de Bulkhead e Timeout, de *Release It!*) como resposta padrão ao princípio de "Design for Failure": qualquer chamada a um serviço remoto pode falhar por indisponibilidade do fornecedor, e o cliente precisa responder de forma graciosa — desvantagem inerente de decompor um sistema em serviços que um monolito em processo não tem. O artigo cita o Simian Army da Netflix (indução deliberada de falhas de serviços e datacenters em produção, durante o horário comercial) como prática de validar essa resiliência na prática, não só em teoria. Também cita a regra prática do Guardian.co.uk — no máximo uma chamada síncrona por requisição de usuário — como forma de evitar o "efeito multiplicativo de downtime" (downtime do sistema = produto dos downtimes de cada componente numa cadeia síncrona).
 
 ## Ver também
 

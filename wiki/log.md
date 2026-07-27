@@ -2,6 +2,84 @@
 
 ---
 
+## [2026-07-27] ingest | O que o Entrevistador Está Pescando numa Entrevista de System Design (Padrão BigTech)
+
+**Fonte:** [[wiki/sources/anatomia-entrevista-system-design-bigtech]] — transcrição de vídeo já em português, sem necessidade de tradução. O bloco de patrocínio de terceiros no início ("UVP", escola de investimentos) foi removido por não ser conteúdo técnico — mesmo critério já aplicado a blocos patrocinados equivalentes em ingestões anteriores. Limpa, estruturada em markdown por seções (introdução, pipeline bigtech, requisitos, BOE, API, esquema de dados, o que realmente importa, HLD, tradeoffs/escala, comunicação, fechamento) e salva em `raw/anatomia-entrevista-system-design-bigtech.md`.
+
+**Skill:** `tech-mentor-system-design` — **não pôde ser carregada**: o caminho `/home/nemomartins/Documentos/new/skills/tech-mentor-system-design/SKILL.md` referenciado nas instruções do projeto não existe neste ambiente/máquina. Ingest feito por analogia com fontes já calibradas do mesmo domínio ([[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]], [[wiki/sources/system-design-por-nivel-junior-pleno-senior]], [[wiki/concepts/entrevista-system-design]]). Sinalizado como skill drift para revisão futura.
+
+**Autoria:** transcrição não nomeia o autor/canal. Inferida como Augusto Galego por coincidência textual forte com [[wiki/entities/augusto-galego]] já documentado (mesma trajetória, mesmo curso pago "mais de um ano de produção", mesma política de reembolso integral em um mês, mesmo bloco patrocinado "UVP" removido no início). Registrado como open question na fonte — inferência, não confirmação.
+
+**Páginas criadas:**
+- `raw/anatomia-entrevista-system-design-bigtech.md`
+- `wiki/sources/anatomia-entrevista-system-design-bigtech.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/entrevista-system-design.md` — nova seção "O Pipeline Completo ao Redor da Sessão (Padrão BigTech)"; `source_count` 3 → 4
+- `wiki/concepts/estimativas-back-of-envelope.md` — nova seção "BOE Mede Noção de Escala, Não Precisão"; `source_count` 3 → 4
+- `wiki/concepts/high-level-design.md` — nova linha em Key Sources sobre HLD como vocabulário vs. decoreba; `source_count` 3 → 4
+- `wiki/concepts/cap-theorem.md` — nova seção "Consistência é Negociável Conforme o Domínio" (exemplo likes de vídeo vs. transação bancária); `source_count` 3 → 4
+- `wiki/concepts/modelagem-de-dados.md` — nova seção "Esquema Híbrido SQL + NoSQL" (DynamoDB/S3); `source_count` 2 → 3
+- `wiki/concepts/contrato-de-api.md` — nova linha em Key Sources sobre contraste de API trivial vs. não trivial (upload de vídeo); `source_count` 3 → 4
+- `wiki/concepts/db-sharding.md` — nova linha em Key Sources sobre tradeoff de escrita do SQL como motivador de sharding/NoSQL; `source_count` 3 → 4
+- `wiki/concepts/entrevista-tecnica-coding.md` — nova linha em Key sources sobre comunicação/raciocínio em voz alta; `source_count` 3 → 4
+- `wiki/entities/augusto-galego.md` — nova linha em Key Sources (autoria inferida, com ressalva); `source_count` 3 → 4
+- `wiki/index.md` — nova linha em Sources
+
+**Notas:** Fonte-irmã de [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] (mesmo autor inferido): aquela segmenta a profundidade cobrada por nível de senioridade, esta detalha o conteúdo de cada etapa da sessão em si e acrescenta o pipeline completo de entrevista bigtech (RH → técnica/LeetCode → system design → fit) que não estava documentado antes na wiki. Contribuições genuinamente novas: distinção requisitos funcionais vs. não funcionais como par explícito (antes só mencionada de passagem), o padrão de esquema híbrido SQL+NoSQL com apontamento entre bancos (DynamoDB → S3), o exemplo concreto de consistência negociável (likes de vídeo) enriquecendo [[wiki/concepts/cap-theorem]], e um glossário PT/EN de termos de entrevista (bottleneck, throughput, celebrity problem, N+1) que não tinha equivalente na wiki. Nenhuma contradição encontrada com fontes existentes — reforça e detalha, não conflita. Limitação relevante: autoria inferida por coincidência textual (curso, reembolso, bloco patrocinado), não confirmada por nome citado no áudio — sinalizada como open question na fonte e na entidade. Como em ingestões recentes de system design, a skill `tech-mentor-system-design` não pôde ser carregada por ausência do path de skills neste ambiente.
+
+---
+
+## [2026-07-27] ingest | IA Não Substitui Sistemas Corporativos Determinísticos
+
+**Fonte:** [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] — transcrição de vídeo de autor de curso de COBOL/mainframe (canal não identificado no áudio) já em português, sem necessidade de tradução. Limpa e estruturada em markdown por seções (introdução, caso real, diagnóstico, determinismo, para onde o modelo caminha, mainframe/COBOL, pergunta final) e salva em `raw/ia-nao-substitui-sistemas-corporativos-deterministicos.md`.
+
+**Skill:** `tech-mentor-ai` — **não pôde ser carregada**: o caminho `/home/nemomartins/Documentos/new/skills/tech-mentor-ai/SKILL.md` referenciado nas instruções do projeto não existe neste ambiente/máquina. Ingest feito por analogia com fontes já calibradas do mesmo domínio ([[wiki/sources/como-llms-funcionam]], [[wiki/sources/ia-custo-roi-bolha-ou-realidade]]). Sinalizado como skill drift para revisão futura — mesmo padrão de limitação já registrado em ingestões anteriores.
+
+**Páginas criadas:**
+- `raw/ia-nao-substitui-sistemas-corporativos-deterministicos.md`
+- `wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos.md`
+- `wiki/concepts/determinismo-vs-probabilismo-em-ia.md` — novo stub: primeira página da wiki cristalizando a distinção entre tarefas que toleram variação de resposta (interpretação/resumo) e tarefas que exigem output idêntico sempre (cálculo, validação de regra de negócio), e por que LLMs são estruturalmente inadequados para a segunda categoria
+
+**Páginas atualizadas:**
+- `wiki/concepts/robustez-de-sistemas.md` — nova seção sobre sistemas determinísticos (juros, impostos, folha) como limite estrutural da robustez via IA; `source_count` 4 → 5
+- `wiki/concepts/pipeline-de-qualidade.md` — nova seção sobre o caso de falha ao usar LLM como gate em vez de ferramenta determinística; `source_count` 5 → 6
+- `wiki/concepts/harness-de-qualidade.md` — nova seção sobre o que acontece quando a IA substitui o harness inteiro em vez de operar dentro dele; `source_count` 2 → 3
+- `wiki/concepts/rubrica-de-verificacao.md` — nova seção sobre inconsistência de julgamento sem rubrica fechada; `source_count` 1 → 2
+- `wiki/concepts/governanca-de-codigo-gerado-por-ia.md` — nova seção sobre substituir software determinístico pela IA como ausência mais estrutural de governança; `source_count` 3 → 4
+- `wiki/concepts/tokenizacao.md` — nova seção sobre a consequência prática de análise por token vs. leitura linha a linha; `source_count` 1 → 2
+- `wiki/sources/ia-custo-roi-bolha-ou-realidade.md` — nova seção cruzando explicação mecanística (ferramenta errada para a tarefa) com o desalinhamento de custo/ROI já documentado; `source_count` 0 → 1
+- `wiki/sources/custo-real-ia-tokens-produtividade-demissoes.md` — nova seção cruzando com o fenômeno de "IA como bode expiatório" para demissões; `source_count` 0 → 1
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção "Qualidade de Software com IA": `determinismo-vs-probabilismo-em-ia`)
+
+**Notas:** Nenhuma entidade nomeada foi criada — o autor/canal não se identifica no áudio além de mencionar um curso de COBOL ao final, registrado como open question na fonte para retroligar se identificado futuramente. Contribuição genuinamente nova: nenhuma fonte anterior havia articulado explicitamente a distinção "ferramenta de análise semântica vs. ferramenta de análise determinística" como o motivo estrutural (não apenas de custo) por trás de projetos de IA corporativos fracassados — isso complementa, sem contradizer, o material já denso sobre custo/ROI/demissões ([[wiki/sources/ia-custo-roi-bolha-ou-realidade]], [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]]) e o núcleo já existente sobre harness/pipeline/robustez determinística ([[wiki/concepts/harness-de-qualidade]], [[wiki/concepts/pipeline-de-qualidade]], [[wiki/concepts/robustez-de-sistemas]]), que já usavam a palavra "determinístico" mas sem essa fonte explicando o mecanismo de tokenização por trás da falha. Nenhuma contradição encontrada. Limitação relevante desta ingestão, sinalizada na própria fonte: o diagnóstico central ("você está usando ferramenta errada") foi dado pela própria IA questionada sobre sua falha — plausível e coerente com a arquitetura de transformers, mas não verificado contra fonte técnica independente sobre confiabilidade de LLM-as-judge, o que fica como open question; e a claim de que "cortes de projeto não são bolha" carece de exemplos nomeados de empresas/projetos, sendo interpretação pessoal do autor.
+
+---
+
+## [2026-07-27] ingest | A Insanidade de Ser um Programador Hoje (reação ao artigo de Vitor Sousa Pereira)
+
+**Fonte:** [[wiki/sources/a-insanidade-de-ser-um-programador-hoje]] — transcrição de vídeo de reação (canal/narrador não identificado no áudio) ao artigo ["The Insanity of Being a Software Engineer"](https://0x1.pt/2025/04/06/the-insanity-of-being-a-software-engineer/) de Vitor Sousa Pereira (0x1.pt, publicado 06/04/2025, discutido no Hacker News/Lobsters/daily.dev). Transcrição bruta já estava em português — narrador lê/parafraseia trechos do artigo original em inglês e reage — limpa e estruturada em markdown, sem necessidade de tradução do áudio, em `raw/a-insanidade-de-ser-um-programador-hoje.md`. Autoria do artigo original confirmada via busca na web e leitura do post em `0x1.pt` (não fornecida no áudio, que citava o nome de forma pouco clara).
+
+**Skill:** `tech-mentor-leadership` — **não pôde ser carregada**: o caminho `/home/nemomartins/Documentos/new/skills/tech-mentor-leadership/SKILL.md` referenciado nas instruções do projeto não existe neste ambiente/máquina. Ingest feito por analogia com fontes já calibradas do mesmo domínio ([[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]], [[wiki/sources/pare-de-terceirizar-suas-decisoes]]). Sinalizado como skill drift para revisão futura.
+
+**Páginas criadas:**
+- `raw/a-insanidade-de-ser-um-programador-hoje.md`
+- `wiki/sources/a-insanidade-de-ser-um-programador-hoje.md`
+- `wiki/entities/vitor-sousa-pereira.md` — novo stub: autor do blog `0x1.pt`, autor do artigo original
+- `wiki/entities/ken-thompson.md` — novo stub: criador do Unix e do `grep`, citado na fonte como exemplo de senso de comunidade
+- `wiki/concepts/curva-de-aprendizado.md` — novo stub: eixo "o que sabe" vs. "o que consegue criar" não é linear, com barreiras discretas (exemplo central: cadeia de pré-requisitos para enviar e-mail via SMTP)
+
+**Páginas atualizadas:**
+- `wiki/concepts/unix.md` — nova seção "Origem como Subproduto e o Senso de Comunidade" (Ken Thompson, jogo *Space Travel*, `grep` privado antes de público); `source_count` 1 → 2
+- `wiki/concepts/nexialista.md` — nova seção "Precisão Histórica: Quando o 'Full Stack' da Tabela Acima Realmente Existiu", datando a separação front-end/back-end em 2006-2007 e distinguindo nexialismo genuíno de fullstack por corte de custo; `source_count` 1 → 2
+- `wiki/concepts/cargo-cult-tecnologico.md` — nova seção "A Variante por Consenso de Mercado ('React é a Forma Certa')", terceira variante do padrão (nem autoridade de big tech, nem vaidade pessoal — consenso coletivo de mercado); `source_count` 2 → 3
+- `wiki/concepts/aprendizado-por-luta.md` — nova seção "Caso Prático: A Cadeia de Barreiras para Enviar um E-mail"; `source_count` 2 → 3
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`curva-de-aprendizado`, seção "Carreira & Soft Skills"); duas novas linhas em Entities (`vitor-sousa-pereira`, `ken-thompson`)
+
+**Notas:** Fonte de carreira/reflexão histórica que converge com múltiplos temas já densos na wiki sem introduzir contradições — reforça de ângulo próprio (história pessoal de quem viveu a transição) o que [[wiki/concepts/nexialista]] já registrava de forma menos datada sobre a alternância full stack → especialização → conexão de áreas, e adiciona uma terceira variante de [[wiki/concepts/cargo-cult-tecnologico]] (consenso de mercado, não autoridade de empresa específica). Contribuição mais original: a tese de que a área ficou simultaneamente mais complexa (mais abstração, mais ferramentas) e menos especializada (menos gente aprende os protocolos de baixo nível, ex.: SMTP/POP3/IMAP, que antes eram conhecimento comum) — ninguém na wiki havia formulado essa relação inversa entre abstração crescente e profundidade de conhecimento de protocolo antes. Limitações registradas como open questions na fonte: (1) skill de domínio não carregável neste ambiente, mesmo padrão já visto em ingests anteriores; (2) o canal/narrador do vídeo de reação não foi identificado no áudio — nenhuma entity foi criada para ele, e a autoria do vídeo em si (distinta da autoria do artigo original) fica como lacuna para uma fonte futura preencher; (3) o artigo original não foi lido integralmente, só os trechos citados pelo narrador.
+
+---
+
 ## [2026-07-27] ingest | Contract Test (Martin Fowler)
 
 **Fonte:** [[wiki/sources/contract-test-martin-fowler]] — bliki de Martin Fowler, publicado em 12/01/2011, originalmente chamado "Integration Contract Test" e renomeado depois para "Contract Test". Conteúdo salvo como paráfrase/resumo em PT-BR (não tradução literal) em `raw/contract-test-martin-fowler.md`, seguindo o mesmo padrão de `raw/integration-test-martin-fowler.md` e `raw/test-double-martin-fowler.md`.
@@ -3644,5 +3722,178 @@ Entities:
 - `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`must-ignore-pattern`, seção "Testes & Qualidade"); nova linha em Entities (`ian-robinson`)
 
 **Notas:** Esta fonte precede e explica a origem do termo "Consumer-Driven Contracts" já usado (sem citação de origem) em [[wiki/concepts/contract-testing]] desde uma ingestão anterior — a wiki agora distingue explicitamente a formulação original de Robinson (2006, agnóstica de ferramenta, contrato pode ser planilha ou teste) da ferramentagem moderna em torno do Pact/`can-i-deploy` já documentada. Contradição/imprecisão evitada proativamente: como o artigo está hospedado em martinfowler.com, há risco de atribuí-lo a Fowler — registrado explicitamente como obra de Ian Robinson em três lugares (fonte, entity de Fowler, entity de Thoughtworks). Duas open questions ficaram na fonte: (1) o artigo cita Schematron sem que a wiki tenha uma fonte primária sobre a ferramenta; (2) foi identificada uma inconsistência estrutural pré-existente em `wiki/sources/tolerant-reader.md` (tipado como `source` mas fazendo papel de `concept`, com links quebrados para `concepts/robustness-principle`, `concepts/expand-contract`, `concepts/backward-compatibility`, `concepts/event-versioning`) — sinalizada para o próximo `lint the wiki`, não corrigida nesta ingestão por estar fora do escopo da fonte atual.
+
+---
+
+## [2026-07-27] ingest | Software development topics I've changed my mind on after 6 years in the industry (Chris Kiehl)
+
+**Fonte:** [[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]] — post curto de Chris Kiehl (blog Blogomatano), publicado em 2021-01-23. Baixado via `curl`, convertido de HTML para conteúdo estruturado e **traduzido integralmente do inglês para PT-BR** (não é resumo) em `raw/topicos-desenvolvimento-software-mudei-de-ideia-6-anos.md`.
+
+**Skill:** `tech-mentor-leadership` — **não pôde ser carregada**: o caminho `/home/nemomartins/Documentos/new/skills/tech-mentor-leadership/SKILL.md` referenciado nas instruções do projeto não existe neste ambiente/máquina. Ingest feito por analogia com fontes já calibradas do mesmo domínio ([[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]]). Sinalizado como skill drift para revisão futura.
+
+**Páginas criadas:**
+- `raw/topicos-desenvolvimento-software-mudei-de-ideia-6-anos.md`
+- `wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos.md`
+- `wiki/entities/chris-kiehl.md` — novo stub: autor do blog Blogomatano e do livro *Data-Oriented Programming in Java*
+
+**Páginas atualizadas:**
+- `wiki/concepts/kiss.md` — nova seção "'Boas Práticas' Não São Leis Universais"; `source_count` 3 → 4
+- `wiki/concepts/yagni.md` — nova seção "Ordem de Prioridade entre YAGNI, SOLID e DRY" (contribuição nova: nenhuma fonte anterior havia ordenado os três princípios entre si); `source_count` 6 → 7
+- `wiki/concepts/arquitetura-de-software.md` — nova seção "Dano Estrutural de Abstração Ruim vs. Implementação Porca"; `source_count` 8 → 9
+- `wiki/concepts/microsservicos.md` — nova seção "Opinião Estável ao Longo da Carreira: Microsserviços Exigem Justificativa"; `source_count` 2 → 3
+- `wiki/index.md` — nova linha em Sources; nova linha em Entities (`chris-kiehl`)
+
+**Notas:** Fonte curta (lista de opiniões, sem ensaio elaborado) que converge fortemente com o núcleo já denso de KISS/YAGNI/arquitetura/microsserviços da wiki, sem introduzir nenhuma contradição — cada claim reforça, de um ângulo independente (retrospectiva pessoal de carreira, não conteúdo instrucional), teses já documentadas: boas práticas são contextuais ([[wiki/concepts/kiss]]), escalar sem necessidade real é sinal de mau engenheiro ([[wiki/concepts/yagni]]), abstração ruim causa dano estrutural ([[wiki/concepts/arquitetura-de-software]]), microsserviços exigem justificativa ([[wiki/concepts/microsservicos]]). Uma contribuição genuinamente nova: a ordem de prioridade explícita **YAGNI → SOLID → DRY**, que nenhuma fonte anterior havia formulado. A wiki ainda não tem uma página de concept dedicada a DRY (só aparece mencionado dentro de KISS/YAGNI) — candidato a stub se uma fonte futura aprofundar o tema, registrado como open question na fonte. Limitação relevante desta ingestão: a skill `tech-mentor-leadership` não pôde ser carregada por ausência do path `/home/nemomartins/Documentos/new/skills/` neste ambiente — calibração foi feita por analogia, não por leitura direta da skill.
+
+---
+
+## [2026-07-27] ingest | Por que letras minúsculas economizam dados (Lucas Montano)
+
+**Fonte:** [[wiki/sources/por-que-letras-minusculas-economizam-dados]] — transcrição de vídeo de Lucas Montano reagindo a um artigo (autor/URL original não identificados no áudio) sobre por que trocar maiúsculas por minúsculas economiza dados após compactação. Transcrição bruta já estava em português — sem necessidade de tradução — apenas limpa e estruturada em markdown em `raw/por-que-letras-minusculas-economizam-dados.md`.
+
+**Skill:** `cs-fundamentals` — **não pôde ser carregada**: o caminho `/home/nemomartins/Documentos/new/skills/cs-fundamentals/SKILL.md` referenciado nas instruções do projeto não existe neste ambiente/máquina. Ingest feito por analogia de domínio (compressão/algoritmos é claramente CS fundamentals, não backend/infra/etc.), mesmo padrão de limitação já registrado em ingestões anteriores. Sinalizado como skill drift.
+
+**Páginas criadas:**
+- `raw/por-que-letras-minusculas-economizam-dados.md`
+- `wiki/sources/por-que-letras-minusculas-economizam-dados.md`
+- `wiki/concepts/compactacao-de-texto.md` — novo stub: primeira página da wiki cobrindo Huffman coding, deflate e LZSS/LZ77
+
+**Páginas atualizadas:**
+- `wiki/sources/http-tcp-quic.md` — open question sobre HPACK vs. QPACK ligada ao novo conceito (HPACK usa tabela de Huffman estática, mesmo princípio); `source_count` 0 → 1; `date_updated` atualizado
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção "Fundamentos de CS": `compactacao-de-texto`)
+
+**Notas:** Território genuinamente novo na wiki — nenhuma fonte anterior cobria Huffman coding, deflate ou LZ77/LZSS, apesar de "compressão"/"compactação" aparecerem de passagem em várias fontes (HTTP/2 HPACK, streaming de vídeo AV1, sistemas de arquivos). A única conexão direta e substantiva encontrada foi com [[wiki/sources/http-tcp-quic]]: HPACK (compressão de headers HTTP/2) usa uma tabela de Huffman estática, o mesmo princípio de "caractere frequente → código curto" documentado aqui, mas aplicado a headers HTTP em vez de texto livre — a open question já existente sobre HPACK vs. QPACK foi enriquecida com essa ligação em vez de respondida. `wiki/concepts/entropia-de-software.md` foi verificada e descartada como conexão: apesar do nome parecido, trata de degradação estrutural de código (tech debt), não de entropia de informação — nenhuma relação real com o tema desta fonte. Nenhuma contradição encontrada. Limitação relevante: a skill `cs-fundamentals` não pôde ser carregada pelo mesmo motivo de ambiente já registrado em ingestões anteriores; e a fonte original em inglês citada pelo vídeo não foi identificada por nome ou URL, ficando como open question na fonte.
+
+---
+
+## [2026-07-27] ingest | System Design para Cada Nível: Júnior, Pleno e Sênior (Augusto Galego)
+
+**Fonte:** [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — transcrição de vídeo de Augusto Galego já em português, sem necessidade de tradução. Limpa, estruturada em markdown por seções (introdução, entrevista vs. trabalho, progressão júnior/pleno/sênior, encerramento) e salva em `raw/system-design-por-nivel-junior-pleno-senior.md`. O bloco de patrocínio de terceiros no início (escola de investimentos "UVP") foi removido por não ser conteúdo técnico — mesmo critério já aplicado em ingestão anterior ao remover bloco da AUVP. O pitch do próprio curso de System Design do autor, ao final, foi mantido de forma resumida por ser diretamente relevante ao perfil e à autoridade declarada do autor sobre o tema.
+
+**Skill:** `tech-mentor-system-design` — **não pôde ser carregada**: o caminho `/home/nemomartins/Documentos/new/skills/tech-mentor-system-design/SKILL.md` referenciado nas instruções do projeto não existe neste ambiente/máquina. Ingest feito por analogia com fontes já calibradas do mesmo domínio ([[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]], [[wiki/concepts/high-level-design]], [[wiki/concepts/cap-theorem]]). Sinalizado como skill drift para revisão futura.
+
+**Páginas criadas:**
+- `raw/system-design-por-nivel-junior-pleno-senior.md`
+- `wiki/sources/system-design-por-nivel-junior-pleno-senior.md`
+- `wiki/concepts/niveis-de-senioridade-system-design.md` — novo stub: primeira página da wiki cobrindo explicitamente a progressão de expectativas de system design por nível de senioridade (júnior/pleno/sênior/sênior-plus)
+
+**Páginas atualizadas:**
+- `wiki/entities/augusto-galego.md` — nova seção "Conteúdo de Carreira e System Design"; tags ampliadas com `system-design`, `carreira`; `source_count` 2 → 3
+- `wiki/concepts/entrevista-system-design.md` — nova seção "O Mesmo Formato, Profundidade Diferente por Nível"; `source_count` 2 → 3
+- `wiki/concepts/high-level-design.md` — nova linha em Key Sources sobre atribuição de HLD completo a sênior/sênior-plus; `source_count` 2 → 3
+- `wiki/concepts/estimativas-back-of-envelope.md` — nova seção "Precisão Aumenta com o Nível de Senioridade"; `source_count` 2 → 3
+- `wiki/concepts/cap-theorem.md` — nova seção "Marcador de Nível Sênior em Entrevista"; `source_count` 2 → 3
+- `wiki/concepts/load-balancer.md` — nova linha em Key sources sobre load balancer como conhecimento "dado" a partir de pleno/sênior; `source_count` 10 → 11
+- `wiki/concepts/cdn.md` — nova seção "Exemplo de Nível Sênior: Restrição Geográfica de Conteúdo" (caso Netflix); `source_count` 1 → 2
+- `wiki/concepts/db-sharding.md` — nova linha em Key Sources sobre sharding como tópico de aprofundamento sênior; `source_count` 2 → 3
+- `wiki/concepts/comparacao-na-carreira.md` — nova linha ligando a falta de consenso sobre rótulos júnior/pleno/sênior a essa fonte; `source_count` 5 → 6
+- `wiki/concepts/cache.md` — nova linha em Key Sources sobre cache-aside como aprofundamento esperado em sênior; `source_count` 5 → 6
+- `wiki/concepts/api-gateway.md` — nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/filas-e-workers.md` — nova linha em Key sources sobre workers como ferramenta de escala em nível sênior; `source_count` 2 → 3
+- `wiki/concepts/microsservicos.md` — nova seção "Decisão Atribuída a Sênior-Plus"; `source_count` 3 → 4
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção "Escalabilidade & System Design": `niveis-de-senioridade-system-design`)
+
+**Notas:** Fonte complementa diretamente [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]] (mesma estrutura de sessão de entrevista, agora cruzada com nível de senioridade) e conecta com o tema mais amplo, já presente na wiki, de falta de consenso sobre definições de carreira ([[wiki/concepts/comparacao-na-carreira]]). Contribuição genuinamente nova: nenhuma fonte anterior havia proposto uma progressão explícita de expectativas de system design por nível (júnior soluciona/demonstra fundação → pleno resolve com racional prático → sênior otimiza/lidera a conversa), nem a distinção entre o que é cobrado em entrevista (compreensão do todo, em qualquer nível) vs. o que é usado no trabalho real (visão rasa do todo + profundidade local, exceto a partir de sênior). Nenhuma contradição encontrada com fontes existentes. Limitações: autor admite que a categorização é subjetiva, baseada em experiência pessoal, sem dados de mercado citados; vídeo termina com pitch do próprio curso pago, registrado como open question sobre possível viés de enquadramento; e, como em ingestões recentes, a skill `tech-mentor-system-design` não pôde ser carregada por ausência do path de skills neste ambiente — calibração feita por analogia com fontes já existentes do mesmo domínio.
+
+---
+
+## [2026-07-27] ingest | Como Escolher o Banco de Dados Certo: História, ACID, CAP e Números Reais (TI das Antigas)
+
+**Fonte:** [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — transcrição de vídeo já em português (sem necessidade de tradução), limpa e estruturada em markdown por seções (introdução, pré-história dos SGBDs, ACID, CAP, banco a banco com números de instância única, guia por cenário, conclusão) e salva em `raw/como-escolher-banco-de-dados-historia-acid-cap.md`.
+
+**Skill:** `tech-mentor-backend`, carregada de `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/SKILL.md` — path correto identificado nesta sessão (`/home/gabriel-martins/Documentos/skills/`, não `/home/nemomartins/...` como as instruções do projeto referenciam). Seções `CAP Theorem` e `Modelos de Consistência` de `references/distributed-systems.md` foram lidas e confirmaram a precisão técnica da explicação de CAP/PACELC do vídeo (PostgreSQL/MySQL = CP; Cassandra/DynamoDB = AP). Sinalizado para as próximas ingestões: o path de skills existe neste ambiente sob o usuário `gabriel-martins`, ao contrário do que ingestões anteriores registraram.
+
+**Páginas criadas:**
+- `raw/como-escolher-banco-de-dados-historia-acid-cap.md`
+- `wiki/sources/como-escolher-banco-de-dados-historia-acid-cap.md`
+- `wiki/concepts/oracle-database.md` — novo stub: RAC, Flashback Query, licenciamento por núcleo
+- `wiki/concepts/sql-server.md` — novo stub: limites por edição (Express vs Standard), SSMS
+- `wiki/concepts/sqlite.md` — novo stub: lock global de escrita, modo WAL, uso embarcado
+- `wiki/concepts/mongodb.md` — novo stub: documento BSON, ausência de JOIN nativo, complementar ao relacional
+- `wiki/entities/edgar-codd.md` — novo stub: paper de 1970 (IBM) que originou o modelo relacional
+
+**Páginas atualizadas:**
+- `wiki/concepts/acid.md` — nova seção "Origem Histórica: Por Que o Relacional Existe" (Codd, 1970); `source_count` 3 → 4
+- `wiki/concepts/cap-theorem.md` — nova seção "Escolha de Banco como Decisão de Negócio, Não Técnica"; `source_count` 4 → 5
+- `wiki/concepts/mysql.md` — novas seções "Conexão Simultânea ≠ Usuário Online" e "Limites Documentados de Conexão (Instância Única)"; `source_count` 2 → 3
+- `wiki/concepts/postgresql.md` — novas seções "Processo por Conexão, Não Thread" e "Postgres vs MySQL em Cargas Analíticas"; `source_count` 3 → 4
+- `wiki/concepts/redis.md` — nova seção "Redis Quase Nunca é o Banco Principal"; `source_count` 4 → 5
+- `wiki/concepts/nosql.md` — nova seção "MongoDB: Exemplo Concreto de Schema Variável"; `source_count` 3 → 4
+- `wiki/concepts/relational-vs-nosql.md` — nova seção "Guia Direto por Cenário (Instância Única)" cobrindo os 7 bancos do vídeo; `source_count` 4 → 5
+- `wiki/index.md` — nova linha em Sources; novas linhas em Concepts (seção "Bancos de Dados & SQL": `postgresql`, `oracle-database`, `sql-server`, `sqlite`, `mongodb`) e em Entities (`edgar-codd`)
+
+**Notas:** Fonte funciona como um "hub" que amarra conceitos já existentes na wiki (ACID, CAP, MySQL, PostgreSQL, Redis, NoSQL) com quatro bancos que ainda não tinham página própria (Oracle, SQL Server, SQLite, MongoDB) e com a origem histórica do modelo relacional, até então ausente da wiki apesar de ACID já ser página estável. Contribuição genuinamente nova: números concretos de capacidade em instância única (conexões, RAM por conexão, limites por edição) para cada banco, com nota explícita de que são o piso — não o teto — de capacidade, já que o autor promete um vídeo futuro sobre escala horizontal/vertical (ainda não ingerido, registrado como open question). Nenhuma contradição encontrada com fontes existentes: a explicação de CAP bate com [[wiki/concepts/cap-theorem]] e com a referência da skill; a tese de que Redis não é banco principal já estava documentada em [[wiki/concepts/redis]] via o caso Shopify. Duas claims specíficas ficaram sem verificação de fonte primária e foram registradas como open questions na fonte: a certificação DO-178C do SQLite em aviônica Airbus, e os números exatos de conexão por hardware (estimativas do autor, sem benchmark linkado).
+
+---
+
+## [2026-07-27] ingest | Facade: o Padrão de Projeto Mais Simples de Implementar (Renato Augusto)
+
+**Fonte:** [[wiki/sources/design-pattern-facade-renato-augusto]] — transcrição de vídeo já em português (sem necessidade de tradução), limpa e estruturada em markdown por seções (introdução, analogia, problema com exemplo de e-commerce, implementação, debate sobre SRP, fechamento) e salva em `raw/design-pattern-facade-renato-augusto.md`.
+
+**Skill:** `tech-mentor-backend`, carregada de `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/SKILL.md`. Seção de Design Patterns em `references/design-patterns.md` confirma o mesmo exemplo canônico (Facade orquestrando checkout/pedido a partir de um Controller) usado no vídeo, validando a precisão técnica do exemplo prático.
+
+**Páginas criadas:**
+- `raw/design-pattern-facade-renato-augusto.md`
+- `wiki/sources/design-pattern-facade-renato-augusto.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/facade-pattern.md` — nova seção "Facade e o 'S' do SOLID" (contra-argumento de que Facade não fere SRP por operar em nível de abstração diferente) e "Sinal prático para extrair uma Facade" (duplicação de fluxo entre Controllers como gatilho); `source_count` 2 → 3
+- `wiki/concepts/single-responsibility-principle.md` — nova seção "'Razão para mudar' vs. 'faz só uma coisa'"; `source_count` 1 → 2
+- `wiki/entities/renato-augusto.md` — nova linha em Key Sources; `source_count` 5 → 6
+- `wiki/index.md` — nova linha em Sources
+
+**Notas:** Fonte é a segunda sobre Facade na wiki, ao lado de [[wiki/sources/design-pattern-facade]] (Refactoring Guru). Onde a fonte canônica é mais formal (estrutura GoF, relação com Adapter/Mediator/Flyweight/Singleton/Proxy), esta fonte contribui um exemplo prático de e-commerce e, principalmente, um ângulo até então ausente na wiki: o debate explícito sobre se Facade fere o SRP, com o argumento de que o princípio é sobre "único motivo de mudança" e não sobre "uma linha de código, uma ação" — esse argumento foi propagado também para [[wiki/concepts/single-responsibility-principle]], que antes só citava o caso do Proxy. Nenhuma contradição encontrada com a fonte existente; a fonte reforça o risco de God Object citado por ela pelo ângulo inverso (não extrair a Facade também é um risco, de duplicação de fluxo entre Controllers). Limitação registrada como open question na fonte: a defesa de que Facade não fere SRP não cita fonte primária (GoF ou Robert C. Martin), sendo posição interpretativa do autor.
+
+---
+
+## [2026-07-27] ingest | Você Realmente Sabe Como Projetar Arquitetura Frontend de Grande Porte?
+
+**Fonte:** [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] — transcrição de vídeo já em português (autor não identificado no áudio), sem necessidade de tradução, limpa e estruturada em markdown por seções (introdução, demo de microfrontends parciais, custo real escondido, panorama de cinco arquiteturas, escala de complexidade, conclusão) e salva em `raw/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice.md`.
+
+**Skill:** `tech-mentor-frontend`, carregada de `/home/gabriel-martins/Documentos/skills/tech-mentor-frontend/SKILL.md`. Seção `references/micro-frontends-deep.md` (Module Federation, versionamento via `singleton`/`strictVersion`, CI/CD independente por MFE) confirmou tecnicamente o custo de versionamento e deploy fragmentado descrito na fonte; `references/frontend-architecture.md` (Bounded Contexts, Module Boundaries, Monorepo com Feature Packages) confirmou a mecânica de fronteiras por domínio e a regra "apps importam de packages, packages nunca importam de apps" usada para calibrar os novos conceitos de monolito modular e monorepo frontend.
+
+**Páginas criadas:**
+- `raw/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice.md`
+- `wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice.md`
+- `wiki/concepts/microfrontends-parciais.md` — novo stub: composição via Shadow DOM/Custom Events, vantagem vendida (desacoplamento, polirrepo) vs. custo real (performance, CI/CD, versionamento, governança)
+- `wiki/concepts/microfrontend-baseado-em-rotas.md` — novo stub: proxy reverso + builds separados via libs de monorepo, arquitetura preferida do autor por relação benefício/complexidade
+- `wiki/concepts/monolito-modular-frontend.md` — novo stub: fronteiras por domínio dentro de um build único, contraste com arquitetura em camadas, ponto de partida antes de builds separados
+- `wiki/concepts/monorepo-frontend.md` — novo stub: apps consomem libs/packages como dependências instaláveis, regra de dependência de uma via
+
+**Páginas atualizadas:**
+- `wiki/concepts/monorepo-vs-microfrontends-ia.md` — nova seção "Reforço Independente: Custo de Coordenação Já Existe Sem IA", mostrando que o argumento monorepo > polirrepo antecede a IA; `source_count` 1 → 2
+- `wiki/concepts/vertical-slice-architecture.md` — nova seção "Vertical Slice Dentro de um Módulo (Frontend)", aplicando o princípio de isolamento pré-extração ao contexto frontend, com o risco de virar regra filosófica rígida; `source_count` 3 → 4
+- `wiki/concepts/feature-sliced-architecture.md` — nova seção "Relação com Monolito Modular e Microfrontend Baseado em Rotas"; `source_count` 1 → 2
+- `wiki/concepts/microsservicos.md` — nova seção "O Mesmo Princípio de Extração Tardia no Frontend", cruzando a tese de extração tardia (já documentada do lado backend) com o equivalente frontend desta fonte; `source_count` 4 → 5
+- `wiki/index.md` — nova linha em Sources; quatro novas linhas em Concepts na seção "Frontend & Design Engineering"
+
+**Notas:** Fonte introduz na wiki uma escala explícita de cinco níveis de arquitetura frontend (camadas → modular → vertical slice → microfrontend baseado em rotas → microfrontends parciais distribuídos), até então ausente — a wiki já tinha peças soltas (Feature-Sliced Architecture, Vertical Slice Architecture do lado backend, Monorepo vs. Microfrontends para IA) mas não a moldura que as ordena por complexidade crescente. Contribuição genuinamente nova: a demonstração prática (Shell + React/Angular/Solid.js comunicando via Custom Events) como caso concreto do extremo mais custoso, e o argumento de que microfrontends parciais/polirrepo são "vendidos" com base numa imagem de versatilidade que raramente se sustenta fora de bigtechs com ferramental maduro. Reforça, por um ângulo independente e sem menção a IA, a tese já registrada em [[wiki/concepts/monorepo-vs-microfrontends-ia]] de que monorepo consolida contexto/coordenação melhor que polirrepo — e reforça, do lado frontend, o princípio de extração tardia já estabelecido em [[wiki/concepts/microsservicos]] para o lado backend. Nenhuma contradição encontrada com fontes existentes. Limitações registradas como open questions na fonte: nenhum dado quantitativo real de produção foi citado (a comparação de complexidade é qualitativa/experiencial do autor), e a fonte não aprofunda Module Federation como mecanismo alternativo de composição em runtime para microfrontends parciais — documentado em detalhe em `references/micro-frontends-deep.md` da skill, mas não mencionado no vídeo.
+
+---
+
+## [2026-07-27] ingest | Microservices (James Lewis e Martin Fowler, 2014)
+
+**Fonte:** [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — artigo original em inglês (martinfowler.com/articles/microservices.html, 25 mar 2014), traduzido integralmente para português e salvo em `raw/microsservicos-martin-fowler-james-lewis.md`. Conteúdo obtido via `curl` do HTML público e lido na íntegra (corpo principal + 14 notas de rodapé + 7 sidebars); imagens/figuras preservadas apenas como legenda, não reproduzidas.
+
+**Skill:** `tech-mentor-backend`, carregada de `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/SKILL.md`. Seção "Microsserviços vs Monolito Modular" de `references/architecture-foundations.md` confirma que o caminho arquitetural saudável (monolito modular → extrair microsserviço com necessidade real) e o critério de decomposição por bounded context, já documentados na wiki, batem com a tese original de 2014 — o artigo é a fonte primária histórica do que a skill já descrevia de forma consolidada.
+
+**Páginas criadas:**
+- `raw/microsservicos-martin-fowler-james-lewis.md`
+- `wiki/sources/microsservicos-martin-fowler-james-lewis.md`
+- `wiki/entities/james-lewis.md` — novo stub: coautor do artigo, Principal Consultant na Thoughtworks, apresentou as ideias centrais publicamente já em março de 2012
+
+**Páginas atualizadas:**
+- `wiki/concepts/microsservicos.md` — duas novas seções ("O Artigo Original de 2014" e "Origem no Debate sobre SOA e a Lei de Conway") resumindo as nove características do artigo e a postura de "otimismo cauteloso" dos autores, frequentemente perdida em resumos populares; `source_count` 5 → 6
+- `wiki/entities/martin-fowler.md` — nova entrada na lista de termos/artigos cunhados por ele; `source_count` 10 → 11
+- `wiki/entities/thoughtworks.md` — nova linha citando James Lewis como segundo Principal Consultant relevante nesta wiki; `source_count` 2 → 3
+- `wiki/entities/ian-robinson.md` — nova seção citando a frase "Be of the web, not behind the web", atribuída a ele no artigo de microsserviços; `source_count` 1 → 2
+- `wiki/concepts/application-boundary.md` — nova seção conectando a tese de 2003 (fronteira de aplicação como construção social) à decomposição de serviço por capacidade de negócio via Lei de Conway; `source_count` 1 → 2
+- `wiki/concepts/contexto-organizacional-para-arquitetura.md` — nova seção com a citação direta de Conway (1968) e o mecanismo descrito no artigo (decompor por camada técnica força "lógica em todo lugar"); `source_count` 2 → 3
+- `wiki/concepts/circuit-breaker.md` — nova seção "Origem na Literatura de Microsserviços: Design for Failure", citando Simian Army da Netflix e a regra do Guardian.co.uk de uma chamada síncrona por requisição; `source_count` 3 → 4
+- `wiki/concepts/contract-testing.md` — nova linha em Key Sources citando Tolerant Reader/Consumer-Driven Contracts como técnicas de evolução de contrato sem gerenciamento central, e o exemplo do time australiano que constrói serviços a partir do contrato; `source_count` 5 → 6
+- `wiki/concepts/yagni.md` — nova seção com o exemplo do artigo (construir serviço só até satisfazer o contrato definido antes do código) como aplicação de YAGNI no nível de fronteira de serviço; `source_count` 7 → 8
+- `wiki/index.md` — nova linha em Sources; nova linha em Entities (James Lewis)
+
+**Notas:** Esta é a fonte primária histórica que faltava na wiki — [[wiki/concepts/microsservicos]] já citava fartamente conceitos derivados dela (bounded context, distributed monolith, resiliência obrigatória) via a skill e via fontes secundárias (ex.: [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]]), mas nunca o artigo original. Contribuição genuinamente nova: a citação direta de Conway (1968) como mecanismo explícito por trás da decomposição por capacidade de negócio, a distinção "smart endpoints, dumb pipes" vs. ESB (com a citação de Jim Webber sobre "Erroneous Spaghetti Box"), e — o ponto mais frequentemente perdido em resumos populares do artigo — a postura textual de "otimismo cauteloso" dos próprios autores, que explicitamente recusam declarar microsserviços "o futuro" da arquitetura de software, citando riscos reais de imaturidade (refatoração cara entre processos, deslocamento de complexidade para as conexões, dependência de habilidade do time). Nenhuma contradição encontrada com o conteúdo já existente na wiki; o artigo é consistente com, e é a origem histórica de, boa parte do que [[wiki/concepts/microsservicos]] já documentava. Duas lacunas identificadas e registradas como open questions na fonte (não corrigidas nesta ingestão, por estarem fora do escopo de um ingest): as páginas de conceito `wiki/concepts/distributed-monolith`, `wiki/concepts/ddd-strategic` e `wiki/concepts/conways-law` são referenciadas por múltiplas outras páginas (incluindo `wiki/sources/conways-law` e `wiki/sources/ddd-strategic`, já ingeridas) mas nunca foram criadas — links quebrados preexistentes, recomendados para o próximo "lint the wiki".
 
 ---

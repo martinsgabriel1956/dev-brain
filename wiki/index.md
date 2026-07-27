@@ -10,12 +10,15 @@ date_updated: 2026-07-27
 
 
 
+
 # Wiki Index
 
 ## Sources
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/anatomia-entrevista-system-design-bigtech]] | Pipeline bigtech de 5 etapas (RH → técnica/LeetCode → system design → fit) e o que cada etapa da sessão de system design (requisitos, BOE, API, esquema SQL+NoSQL, HLD, tradeoffs) está de fato avaliando — compreensão do problema exposta em voz alta, não caixinhas decoradas |
+| [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] | Curso de COBOL/mainframe: validador de tarefas via LLM falhou de forma inconsistente por 3 semanas — as 3 IAs (GPT, Claude, Gemini) diagnosticaram "ferramenta de análise semântica usada para análise determinística"; sistemas corporativos (juros, impostos, folha) exigem 100% previsibilidade, não "quase certo"; cortes de projetos de IA não são bolha, são erro de enquadramento (IA substituindo software em vez de interpretar para ele) |
 | [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]] | Percurso de 70 anos da autenticação: user ID sem senha (time-sharing anos 60) → senha com hash+salt (Unix, 1976) → MFA (sei/tenho/sou) → segundo fator (RSA SecurID → HOTP/TOTP → U2F/WebAuthn) → biometria (3 gerações) → identidade federada (SSO → OAuth 2.0 → OpenID Connect) → JWT com Access/Refresh Token |
 | [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] | Jogos e redes sociais treinam o cérebro para problemas de escopo fechado (objetivo + caminho previsível); vida real exige operacionalizar problemas de escopo aberto e trocar foco de resultado por ação; "burrice" costuma ser inexperiência, cuja cura é experimentar (base: playlist do Dr. Alok Kanojia) |
 | [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]] | Código Fonte TV: Mitos e Fable 5 (Anthropic) e GPT 5.6 (OpenAI) — modelos de IA capazes de achar vulnerabilidades de software em escala inédita (falhas de décadas em OpenBSD, FFmpeg, kernel Linux), restritos ao consórcio Glasswing e depois bloqueados pelo governo dos EUA após a NSA relatar sistemas confidenciais comprometidos em horas; jailbreak do Fable 5 documentado (702/7.828 tentativas); Japão (Sakana AI/Fugo) e China (360/Tulong Fang, Zhipu AI/GLM 5.2) já reivindicam capacidade equivalente |
@@ -193,6 +196,14 @@ date_updated: 2026-07-27
 | [[wiki/sources/papinho-tech-solo-adaptabilidade]] | Vestimenta e comunicação são adaptação estratégica ao contexto, não perda de essência; recusa em se adaptar fecha portas; comunicação muda por nível hierárquico e por canal de conteúdo |
 | [[wiki/sources/hermes-agent-open-claw-learning-loop]] | Hermes Agent (open source, MIT): closed-loop skill learning system de 5 etapas sobre memória em três camadas (sessão/persistente/skill) indexada via FTS5; gancho é o bug real de billing no Claude Max 20 disparado pela string "hermes" no Git history |
 | [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] | Timeout não distingue falha, processamento em andamento ou sucesso com resposta perdida; chave de idempotência nasce no cliente por intenção (não por conteúdo); corrida entre tentativas resolvida por INSERT atômico; idempotência ≠ transação (problemas complementares); Outbox/Inbox propaga a identidade entre fronteiras de serviço; identidades de negócio por produto (saque ID, emissão ID, crédito ID, client order ID) |
+| [[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]] | Chris Kiehl, retrospectiva de 6 anos de carreira: tipagem estática ganha valor em time, arquitetura importa mais que quase tudo, "boas práticas" são contextuais, DRY é meio não fim, ordem de prioridade YAGNI/SOLID/DRY, entrevistas técnicas "completamente quebradas", monólitos bons na maioria dos casos |
+| [[wiki/sources/por-que-letras-minusculas-economizam-dados]] | Lucas Montano: por que letras minúsculas comprimem melhor que maiúsculas — Huffman coding (árvore menor com menos variedade de caracteres) + LZSS/LZ77 (ponteiros para sequências repetidas) explicam o deflate/gzip; caso Hacker News (title case → sentence case) economiza 31 bytes/página; escovação de bits comparada a otimizar imagens/JS/cache, que economiza ordens de magnitude mais |
+| [[wiki/sources/a-insanidade-de-ser-um-programador-hoje]] | Reação ao artigo de Vitor Sousa Pereira: Unix/`grep` nasceram como ferramenta privada de Ken Thompson depois compartilhada de graça; front-end/back-end como especialidades separadas é invenção de 2006-2007, não histórico; fullstack como corte de custo, não escolha técnica; curva de aprendizado descontínua (caso SMTP); área ficou mais complexa e menos especializada ao mesmo tempo |
+| [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] | Augusto Galego: entrevista de system design cobra compreensão do todo em todo nível, mas no trabalho real só sênior costuma precisar dela; júnior soluciona e demonstra fundação, pleno resolve com racional prático, sênior otimiza e lidera a conversa sobre CAP/sharding/cache/monolito-vs-microsserviços |
+| [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] | TI das Antigas: história do modelo relacional (Codd, IBM 1970) até hoje; ACID e CAP como decisão de negócio, não hype; números reais de instância única (conexões, volume, latência) para MySQL, PostgreSQL, Oracle, SQL Server, SQLite, Redis e MongoDB, com guia direto por cenário |
+| [[wiki/sources/design-pattern-facade-renato-augusto]] | Renato Augusto: Facade via exemplo de e-commerce (OrderController → OrderFacade) — Controller não deve carregar fluxo/regra de negócio; defesa de que Facade não fere o SRP porque opera num nível de abstração diferente das classes que orquestra |
+| [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] | Cinco níveis de arquitetura frontend (camadas → modular → vertical slice → microfrontend baseado em rotas → microfrontends parciais distribuídos); demo prática Shell + React/Angular/Solid.js via Custom Events expõe o custo real de microfrontends parciais (performance, CI/CD fragmentado, versionamento, governança); tese central: a maioria das decisões saudáveis fica entre monolito modular e microfrontend baseado em rotas, não nos extremos |
+| [[wiki/sources/microsservicos-martin-fowler-james-lewis]] | James Lewis e Martin Fowler (25 mar 2014): artigo original que cunhou a definição de microsserviços — nove características comuns, "smart endpoints and dumb pipes" contra ESBs, Lei de Conway como razão para decompor por capacidade de negócio, Polyglot Persistence, Design for Failure (Simian Army, Circuit Breaker); os próprios autores recusam declarar microsserviços "o futuro" sem ressalvas |
 
 ## Concepts
 
@@ -257,6 +268,7 @@ date_updated: 2026-07-27
 | [[wiki/concepts/side-project-como-armadilha]] | Side project popular vira manutenção obrigatória — pode ser mais maldição do que bênção sem cronograma dedicado |
 | [[wiki/concepts/reinventar-a-roda]] | Reinventar raramente é inovação genuína — é remix, e o custo real está na manutenção extra desnecessária |
 | [[wiki/concepts/cultura-do-trabalhador-esforcado]] | "Hard worker" como padrão mínimo obrigatório em vez de diferencial — esforço aparente mascarando entrega inconsistente |
+| [[wiki/concepts/curva-de-aprendizado]] | Conhecimento não cresce linear com o que você consegue criar — cada objetivo esconde uma cadeia de pré-requisitos não óbvios (caso SMTP) |
 
 ### Recursos de Aprendizado
 
@@ -366,6 +378,7 @@ date_updated: 2026-07-27
 | [[wiki/concepts/n-plus-um-detector]] | Middleware que conta queries por request e alerta quando ultrapassa threshold — detecta N+1 antes de produção |
 | [[wiki/concepts/property-based-testing]] | Bombardeia função com inputs aleatórios/concorrentes e verifica invariante — eficaz contra race conditions geradas por IA |
 | [[wiki/concepts/adaptive-thinking]] | Modelo decide sozinho quanto "pensar"; hipótese de que remove controle do usuário para gerenciar custo de inferência |
+| [[wiki/concepts/determinismo-vs-probabilismo-em-ia]] | LLM tokeniza e responde por probabilidade, não lê linha a linha; tarefas que exigem mesmo output sempre (juros, impostos, folha) precisam de software determinístico, não julgamento de modelo |
 
 ### Perfil Profissional & Product Engineering
 
@@ -563,6 +576,7 @@ date_updated: 2026-07-27
 | [[wiki/concepts/gramatica-formal-ebnf]] | EBNF define o que é sintaticamente válido; precedência e associatividade resolvem ambiguidade (`1 + 2 * 3`) |
 | [[wiki/concepts/language-server-protocol]] | Protocolo da Microsoft que desacopla editor de linguagem — um servidor, N editores com autocomplete e erros inline |
 | [[wiki/concepts/standard-library-e-ecossistema]] | Stdlib, package manager e tooling — o que faz uma linguagem tecnicamente boa sobreviver de fato |
+| [[wiki/concepts/compactacao-de-texto]] | Huffman coding (código curto para caractere frequente, árvore encolhe com menos variedade de caixa) + LZSS/LZ77 (ponteiro para sequência repetida) = deflate/gzip; por isso maiúsculas custam mais depois de compactar mesmo custando o mesmo antes |
 
 ### Fundamentos de Lógica e Programação
 
@@ -660,6 +674,7 @@ date_updated: 2026-07-27
 | [[wiki/concepts/gargalo]] | Ponto mais lento da cadeia — identificar antes de escalar qualquer coisa |
 | [[wiki/concepts/cap-theorem]] | Consistência vs Disponibilidade vs Partição — o trade-off central de sistemas distribuídos |
 | [[wiki/concepts/simulador-de-system-design]] | Playground que roda tráfego simulado sobre o diagrama e pontua o desenho com IA — não é só desenhar, é testar |
+| [[wiki/concepts/niveis-de-senioridade-system-design]] | Júnior soluciona e demonstra fundação, pleno resolve com racional prático, sênior otimiza e lidera a conversa — entrevista cobra o todo em qualquer nível, trabalho real só exige isso a partir de sênior |
 
 ### Fundamentos de Backend (Request/Response ao Deploy)
 
@@ -737,6 +752,11 @@ date_updated: 2026-07-27
 | [[wiki/concepts/consistency-models]] | Espectro de Linearizability a Eventual Consistency — o que um cliente pode observar após uma escrita |
 | [[wiki/concepts/stored-procedure]] | Lógica armazenada e executada no banco — mover regra de negócio pra lá compensa em agregação de grande volume, mas com moderação |
 | [[wiki/concepts/materialized-view]] | View com resultado persistido em disco — meio-termo entre SQL cru repetido e stored procedure |
+| [[wiki/concepts/postgresql]] | Processo por conexão (não thread) + PgBouncer obrigatório; até 50% mais rápido que MySQL em cargas analíticas |
+| [[wiki/concepts/oracle-database]] | RAC multiplica sessões horizontalmente; Flashback Query, licenciamento por núcleo custa milhões/ano |
+| [[wiki/concepts/sql-server]] | Escolha operacional (não técnica) quando a empresa já vive no ecossistema Windows/.NET/Power BI |
+| [[wiki/concepts/sqlite]] | Biblioteca embarcada, arquivo único, lock global de escrita — não substituto de banco cliente-servidor |
+| [[wiki/concepts/mongodb]] | Documento BSON sem esquema fixo; sem JOIN nativo; complementa o relacional, não substitui |
 
 ### Arquitetura Backend & Event-Driven
 
@@ -851,6 +871,10 @@ date_updated: 2026-07-27
 | [[wiki/concepts/useMemo]] | Hook que memoiza o resultado de um cálculo — só recalcula quando as dependências mudam; overhead supera ganho em cálculos triviais |
 | [[wiki/concepts/useCallback]] | Hook que memoiza a referência de uma função entre renders — essencial para não quebrar `React.memo` em componentes filhos |
 | [[wiki/concepts/concurrent-mode]] | Modelo de renderização do React 18+ que pausa/retoma/prioriza renders sem bloquear a UI — useTransition e useDeferredValue |
+| [[wiki/concepts/monolito-modular-frontend]] | Fronteiras por domínio dentro de um único build — ponto de partida correto antes de cogitar builds separados ou microfrontends |
+| [[wiki/concepts/microfrontend-baseado-em-rotas]] | Proxy reverso + builds separados por módulo via libs de monorepo — maior parte dos benefícios de desacoplamento com a menor complexidade adicionada |
+| [[wiki/concepts/microfrontends-parciais]] | Múltiplos frameworks coexistindo na mesma tela via Shadow DOM/eventos — desacoplamento alto vendido, custo real em performance/CI-CD/versionamento/governança |
+| [[wiki/concepts/monorepo-frontend]] | Apps consomem libs/packages compartilhados como dependências instaláveis — dependência flui numa via só, apps nunca são importadas por packages |
 
 ### React & Hooks
 
@@ -911,6 +935,7 @@ date_updated: 2026-07-27
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/edgar-codd]] | IBM, 1970: paper do modelo relacional e independência de dados — fundamento de tudo que veio depois |
 | [[wiki/entities/rsa-security]] | Criadora do SecurID — token de hardware que popularizou o segundo fator de autenticação nos anos 90 |
 | [[wiki/entities/ietf]] | Padronizou HOTP (RFC 4226) e TOTP (RFC 6238), tirando a autenticação por OTP das mãos de fornecedores proprietários |
 | [[wiki/entities/sakana-ai]] | Empresa japonesa de IA — Fugo, pool de modelos que superou Fable 5 e alguns benchmarks do Mitos preview em cybersegurança |
@@ -994,6 +1019,7 @@ date_updated: 2026-07-27
 | [[wiki/entities/gerard-meszaros]] | Autor de *xUnit Test Patterns* (2007) — criou a taxonomia de Test Doubles (Dummy/Fake/Stub/Spy/Mock) divulgada por Martin Fowler |
 | [[wiki/entities/thoughtworks]] | Consultoria de software onde Martin Fowler é Chief Scientist — fundada por Roy Singham, não por Fowler (contradição sinalizada contra fonte que afirma o contrário) |
 | [[wiki/entities/ian-robinson]] | Principal Consultant na Thoughtworks — autor do artigo de 2006 que cunha o padrão Consumer-Driven Contracts, hospedado no site de Martin Fowler mas não escrito por ele |
+| [[wiki/entities/james-lewis]] | Principal Consultant na Thoughtworks — coautor com Martin Fowler do artigo de 2014 que cunhou a definição de microsserviços |
 | [[wiki/entities/david-farley]] | Coautor de *Continuous Delivery* com Jez Humble; envolvido no LMAX; refuta o "triângulo de ferro" com dados DORA |
 | [[wiki/entities/mercado-livre]] | Maior e-commerce/fintech da América Latina — combina ISO 27001 + PCI-DSS + Zero Trust; adotante consolidado de Go em produção |
 | [[wiki/entities/andre-casciotti]] | Criador de conteúdo brasileiro, canal Próximo Nível — carreira dev, granularidade de mudança, síndrome do impostor em todo nível de carreira, decomposição de tarefas |
@@ -1010,6 +1036,9 @@ date_updated: 2026-07-27
 | [[wiki/entities/palantir-technologies]] | CEO critica modelo de cobrança por token e levanta a questão de quem controla a economia de IA |
 | [[wiki/entities/fabricio-arcanjo]] | Participante do Stubborn Club — defende especificações técnicas agnósticas à linguagem de programação, focadas em DDD e padrões |
 | [[wiki/entities/adapta]] | Agregador brasileiro de modelos de IA (adapta.org) — skills de contexto pessoal + roteamento automático de modelo (ONE/ONE Pro) |
+| [[wiki/entities/chris-kiehl]] | Autor do blog Blogomatano e de *Data-Oriented Programming in Java* — retrospectivas de carreira listando opiniões de engenharia que mudaram/permaneceram |
+| [[wiki/entities/vitor-sousa-pereira]] | Autor do blog `0x1.pt` — escreveu "The Insanity of Being a Software Engineer" (2025), lista satírica da escalada de exigências técnicas esperadas de um único engenheiro |
+| [[wiki/entities/ken-thompson]] | Criador do Unix e do `grep` na AT&T — Unix nasceu como subproduto de rodar melhor seu jogo *Space Travel*; `grep` era comando privado antes de virar público |
 
 ### Documentação de Arquitetura
 

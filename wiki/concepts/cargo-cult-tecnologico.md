@@ -3,8 +3,8 @@ type: concept
 title: "Cargo Cult Tecnológico"
 aliases: ["copiar stack de big tech", "solução Netflix Google Facebook sem contexto", "cargo cult de arquitetura"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-07-27
+source_count: 3
 tags: [arquitetura, tomada-de-decisao, carreira, escala, contexto]
 skill: tech-mentor-leadership
 status: draft
@@ -40,6 +40,10 @@ Assistir a uma palestra de um ciclista profissional sobre a bicicleta de 8 mil d
 
 [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] descreve uma variante do mesmo padrão que não vem de copiar big tech, mas de vaidade tecnológica pessoal: querer trocar uma linguagem ou stack de produção só porque se aprendeu um recurso novo e achou legal ("quero trocar Java por Clojure porque estudei closures"), ou adotar mensageria/eventos assíncronos sem necessidade real, só para "ser o primeiro" a usar. O mecanismo é o mesmo do cargo cult — decisão técnica desconectada do contexto e do valor real — mas a motivação aqui é vaidade individual, não autoridade percebida de uma empresa grande. Ver [[wiki/concepts/granularidade-de-mudanca]] para o critério de "valor real" que deveria filtrar qualquer mudança, pequena ou grande.
 
+## A Variante por Consenso de Mercado ("React é a Forma Certa")
+
+[[wiki/sources/a-insanidade-de-ser-um-programador-hoje]] descreve uma terceira variante, distinta tanto da autoridade de big tech quanto da vaidade pessoal: adoção por **consenso coletivo do mercado**, sem gatilho identificável de uma empresa específica. A fonte descreve React (e, por extensão, TypeScript/Redux/Webpack em volta dele) como algo que "a mente coletiva de programação decidiu" ser "a maneira certa" de desenvolver — convenção que vira padrão de contratação e de vaga sem que cada empresa individualmente tenha avaliado se o próprio contexto (tamanho de time, complexidade real de UI) justifica essa pilha específica. O mecanismo de fundo é o mesmo (decisão técnica desconectada de contexto), mas a fonte da autoridade percebida aqui não é "porque a Netflix faz assim", é "porque é isso que todo mundo espera que se saiba".
+
 ## Ver também
 
 - [[wiki/concepts/decisao-terceirizada]] — o hábito geral de decisão por procuração
@@ -51,3 +55,4 @@ Assistir a uma palestra de um ciclista profissional sobre a bicicleta de 8 mil d
 
 - [[wiki/sources/pare-de-terceirizar-suas-decisoes]]
 - [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] — a variante por vaidade tecnológica pessoal, não por autoridade de big tech
+- [[wiki/sources/a-insanidade-de-ser-um-programador-hoje]] — a variante por consenso coletivo de mercado ("React é a forma certa"), sem autoridade de empresa específica

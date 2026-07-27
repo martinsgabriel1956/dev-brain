@@ -4,7 +4,7 @@ title: "Thoughtworks"
 aliases: ["ThoughtWorks", "topworx"]
 date_created: 2026-07-27
 date_updated: 2026-07-27
-source_count: 2
+source_count: 3
 tags: [consultoria, software, martin-fowler, brasil]
 skill: tech-mentor-backend
 status: stub
@@ -20,7 +20,10 @@ Aparece em [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edic
 
 [[wiki/entities/ian-robinson]], Principal Consultant da Thoughtworks, é autor do artigo que cunha o padrão Consumer-Driven Contracts (2006) — ver [[wiki/sources/consumer-driven-contracts-martin-fowler]].
 
+[[wiki/entities/james-lewis]], também Principal Consultant da Thoughtworks, é coautor com Fowler do artigo de 2014 que cunhou a definição de microsserviços — ver [[wiki/sources/microsservicos-martin-fowler-james-lewis]].
+
 ## Key Sources
 
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]]
 - [[wiki/sources/consumer-driven-contracts-martin-fowler]] — Ian Robinson, Principal Consultant
+- [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — James Lewis, Principal Consultant, coautoria com Fowler

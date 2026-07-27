@@ -3,8 +3,8 @@ type: concept
 title: "DB Sharding"
 aliases: ["sharding", "database sharding", "horizontal partitioning"]
 date_created: 2026-04-23
-date_updated: 2026-05-05
-source_count: 2
+date_updated: 2026-07-27
+source_count: 4
 tags: [sharding, escalabilidade, banco-de-dados, consistent-hashing, shard-key]
 skill: tech-mentor-system-design
 status: stub
@@ -27,3 +27,5 @@ Particionamento horizontal de um banco de dados em múltiplos nós independentes
 
 - [[sources/db-sharding]]
 - [[sources/clusters]]
+- [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — sharding (horizontal/vertical, partições, escolha de shard key) é citado como tópico de aprofundamento típico de entrevista sênior, junto de reader replicas e Federation
+- [[wiki/sources/anatomia-entrevista-system-design-bigtech]] — tradeoff de escrita do SQL como motivador de sharding/NoSQL em sistemas de throughput alto

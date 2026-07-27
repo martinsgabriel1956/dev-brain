@@ -4,7 +4,7 @@ title: "Martin Fowler"
 aliases: ["Fowler", "martinfowler.com"]
 date_created: 2026-07-07
 date_updated: 2026-07-27
-source_count: 10
+source_count: 11
 tags: [thoughtworks, autor, testes, arquitetura, tech-debt, refactoring, agile]
 skill: tech-mentor-testing
 status: stable
@@ -41,6 +41,7 @@ Segundo [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]
 - [[test-doubles]] — divulgou o termo guarda-chuva "TestDouble" no bliki em 2006, mas a taxonomia dos cinco tipos (Dummy/Fake/Stub/Spy/Mock) é de autoria de [[wiki/entities/gerard-meszaros]], não dele — ver [[wiki/sources/test-double-martin-fowler]]
 - [[wiki/concepts/seedwork]] — termo cunhado por ele para descrever frameworks mínimos reconstruídos por cada time, a partir de discussão originada num post de Michael Feathers
 - [[wiki/concepts/application-boundary]] — tese de 2003 de que "aplicações são construções sociais", argumentando contra a previsão da época de que SOA tornaria aplicações obsoletas — ver [[wiki/sources/application-boundary-martin-fowler]]
+- [[wiki/concepts/microsservicos]] — coautor (com [[wiki/entities/james-lewis]]) do artigo de 2014 que cunhou a definição do termo hoje citada universalmente na indústria; mesma característica de precisão terminológica descrita acima aparece aqui como recusa a declarar microsserviços "o futuro" sem ressalvas — ver [[wiki/sources/microsservicos-martin-fowler-james-lewis]]
 
 ## Hospeda, mas não escreve: Consumer-Driven Contracts
 
@@ -76,3 +77,4 @@ Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter us
 - [[wiki/sources/application-boundary-martin-fowler]] — aplicações como construções sociais
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] — motivos da 2ª edição de Refactoring, 20 anos depois
 - [[wiki/sources/consumer-driven-contracts-martin-fowler]] — artigo de Ian Robinson hospedado no site de Fowler, não escrito por ele
+- [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — artigo de 2014 que cunhou a definição de microsserviços, coautoria com [[wiki/entities/james-lewis]]

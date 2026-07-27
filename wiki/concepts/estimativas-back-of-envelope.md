@@ -3,8 +3,8 @@ type: concept
 title: "Estimativas Back-of-Envelope"
 aliases: ["back of envelope", "estimativas de escala", "capacity estimation"]
 date_created: 2026-04-22
-date_updated: 2026-07-20
-source_count: 2
+date_updated: 2026-07-27
+source_count: 4
 tags: [system-design, estimativas, entrevista, escala, capacity-planning]
 skill: tech-mentor-system-design
 status: stub
@@ -39,7 +39,17 @@ Mostra que a escolha de tecnologia é baseada em números, não em preferência.
 
 Em [[wiki/concepts/entrevista-system-design|entrevistas de system design]], esse "plano de capacidade" costuma ser explicitamente esperado como etapa da sessão — não algo opcional para quem quer impressionar: requisições por segundo/minuto, picos de acesso, banda necessária e replication factor em disco.
 
+## Precisão Aumenta com o Nível de Senioridade
+
+[[wiki/concepts/niveis-de-senioridade-system-design]] observa que estimativas de capacidade raramente são cobradas de júnior, aparecem "em algum nível" para pleno, e se tornam centrais e mais precisas para sênior — porque com pouco tempo de entrevista (1–2h), estimar de antemão o volume/escala esperado permite identificar gargalos (CPU? network?) preventivamente, antes de escolher onde investir profundidade (sharding, cache, réplicas).
+
+## BOE Mede Noção de Escala, Não Precisão
+
+[[wiki/sources/anatomia-entrevista-system-design-bigtech]] reduz o BOE a três perguntas centrais — requests/segundo, volume de dados armazenados, banda necessária — e enquadra o objetivo como validar se uma solução "de VPS de R$ 20" ainda serve ou se é preciso cache/replicação/particionamento. Reforça a mesma ideia de "cálculo de padeiro/guardanapo": não precisa ser preciso, precisa ser razoável o suficiente para orientar a arquitetura.
+
 ## Key Sources
 
 - [[sources/case-uber]]
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]
+- [[wiki/sources/system-design-por-nivel-junior-pleno-senior]]
+- [[wiki/sources/anatomia-entrevista-system-design-bigtech]]

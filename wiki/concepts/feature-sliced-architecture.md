@@ -3,8 +3,8 @@ type: concept
 title: "Feature-Sliced Architecture"
 aliases: ["feature-based structure", "arquitetura por feature React", "feature slices"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-27
+source_count: 2
 tags: [react, arquitetura, organização, escalabilidade, frontend-architecture]
 skill: tech-mentor-frontend
 status: stable
@@ -60,6 +60,11 @@ src/hooks/                         src/features/customers/
 src/utils/                         src/shared/
 ```
 
+## Relação com Monolito Modular e Microfrontend Baseado em Rotas
+
+Feature-Sliced Architecture organiza o *código dentro de um único build*; [[wiki/concepts/monolito-modular-frontend]] aplica o mesmo princípio de fronteira por domínio só que como base para eventualmente separar builds por módulo em [[wiki/concepts/microfrontend-baseado-em-rotas]]. A regra "features não importam de outras features diretamente, comunicam via `shared/`" é a mesma regra de dependência de uma via (`shared` → `entities` → `features` → `widgets` → `pages` → `app`) que sustenta os Module Boundaries descritos em `references/frontend-architecture.md` da skill `tech-mentor-frontend`.
+
 ## Key Sources
 
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
+- [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] — mesmo princípio de fronteira por domínio aplicado um nível acima, como base da transição de monolito modular para microfrontend baseado em rotas

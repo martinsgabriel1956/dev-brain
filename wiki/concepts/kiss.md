@@ -3,8 +3,8 @@ type: concept
 title: "KISS — Keep It Simple"
 aliases: ["kiss", "keep it simple", "pensar simples", "simplicidade intencional"]
 date_created: 2026-04-29
-date_updated: 2026-07-19
-source_count: 3
+date_updated: 2026-07-27
+source_count: 4
 tags: [kiss, over-engineering, principios, qualidade, design-patterns, testes]
 skill: tech-mentor-backend
 status: stable
@@ -88,8 +88,13 @@ O ganho não é só linhas de código — é a legibilidade para quem lê depois
 - **[[concepts/accidental-complexity]]** — KISS é a prática que previne complexidade acidental.
 - **[[wiki/concepts/fazer-a-coisa-mais-simples-que-poderia-funcionar]]** — princípio irmão, de origem em XP: heurística mais específica de "primeira tentativa" ao escrever uma solução nova, enquanto KISS é a disciplina geral que vale em qualquer momento do design.
 
+## "Boas Práticas" Não São Leis Universais
+
+[[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]] (Chris Kiehl) formula, de outro ângulo, o mesmo espírito do Teste KISS acima: "boas práticas são contextuais e não amplamente aplicáveis — segui-las cegamente faz de você um idiota". A fonte também afirma que projetar sistemas escaláveis sem necessidade real "faz de você um engenheiro ruim" — reforço direto e sem ressalvas do vínculo já documentado nesta página entre KISS e evitar escalabilidade hipotética.
+
 ## Key Sources
 
 - [[sources/overengineering-carol-ate-quinta]]
 - [[wiki/sources/5-principios-que-mudaram-como-programador]]
 - [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] — origem na Marinha dos EUA, KISS aplicado a testes, exemplo de refactor de validação de status, benefício de retenção de usuário via UX simples
+- [[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]] — "boas práticas" como contextuais, não leis; escalar sem necessidade real como sinal de mau engenheiro

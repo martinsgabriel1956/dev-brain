@@ -3,8 +3,8 @@ type: concept
 title: "PostgreSQL"
 aliases: ["postgres", "pg"]
 date_created: 2026-04-22
-date_updated: 2026-07-03
-source_count: 3
+date_updated: 2026-07-27
+source_count: 4
 tags: [banco-de-dados, postgresql, relacional, jsonb, vetorial]
 skill: tech-mentor-system-design
 status: stable
@@ -39,8 +39,17 @@ Supabase é um exemplo de BaaS que expõe Postgres via API REST/realtime. Chamar
 
 A coluna `JSONB` indexável é o motivo prático de muita gente não precisar de uma infraestrutura poliglota: cobre boa parte do caso de uso que levaria alguém a adotar um banco não relacional para dado semi-estruturado. Ver [[wiki/concepts/relational-vs-nosql]] e [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]].
 
+## Processo por Conexão, Não Thread
+
+Diferença arquitetural fundamental frente ao [[wiki/concepts/mysql|MySQL]]: o Postgres usa um **processo do sistema operacional** (fork) para cada conexão, não uma thread. Isolamento melhor — um processo travando não derruba os outros — mas custo maior: manter centenas de conexões IDLE consome recurso real mesmo sem query rodando. É por isso que [[wiki/concepts/connection-pooling|PgBouncer]] é considerado obrigatório em produção, e não apenas uma otimização — ele multiplexa milhares de conexões de aplicação em algumas centenas de conexões reais no banco (limite prático direto costuma ficar em 500–2.000).
+
+## Postgres vs MySQL em Cargas Analíticas
+
+Benchmarks independentes citados mostram Postgres até 50% mais rápido que MySQL em cargas com CTEs e agregações pesadas — uma das razões pelas quais equipes migram de MySQL para Postgres quando os relatórios/joins complexos começam a pesar. PostGIS (geoespacial) e pgvector (busca vetorial para IA) reforçam o mesmo padrão do JSONB: extensão nativa cobrindo o que levaria a adotar um banco especializado à parte.
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]
+- [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — arquitetura processo-por-conexão, PgBouncer como padrão, e comparação de performance analítica com MySQL

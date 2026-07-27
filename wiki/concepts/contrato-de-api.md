@@ -4,7 +4,7 @@ title: "Contrato de API"
 aliases: ["API contract", "contrato de interface", "interface contract"]
 date_created: 2026-07-09
 date_updated: 2026-07-27
-source_count: 3
+source_count: 4
 tags: [api, contrato, backend, arquitetura, desacoplamento]
 skill: tech-mentor-backend
 status: stub
@@ -38,3 +38,4 @@ Enquanto o contrato não muda, o cliente continua funcionando. Um contrato bem f
 - [[wiki/sources/10-conceitos-fundamentais-backend]]
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]
 - [[wiki/sources/consumer-driven-contracts-martin-fowler]] — Must Ignore pattern e o modelo Provider/Consumer/Consumer-Driven Contract
+- [[wiki/sources/anatomia-entrevista-system-design-bigtech]] — contraste entre API trivial (`POST /urls`) e API que exige multipart upload, autenticação e presigned URL (upload de vídeo) como demonstração de repertório real de design de API

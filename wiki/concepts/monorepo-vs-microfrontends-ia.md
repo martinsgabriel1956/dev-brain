@@ -3,8 +3,8 @@ type: concept
 title: "Monorepo vs. Microfrontends para Contexto de IA"
 aliases: ["monorepo para agentes de ia", "microfrontends e contexto de ia", "arquitetura para ia frontend"]
 date_created: 2026-07-21
-date_updated: 2026-07-21
-source_count: 1
+date_updated: 2026-07-27
+source_count: 2
 tags: [frontend, monorepo, microfrontends, harness, ia-para-devs, context-engineering]
 skill: tech-mentor-frontend
 status: stub
@@ -27,6 +27,11 @@ Isso não invalida microfrontends como escolha arquitetural — os motivos clás
 - [[wiki/concepts/monorepo-mobile]] — mesmo trade-off (consistência/compartilhamento vs. blast radius), aplicado a apps mobile em vez de microfrontends web
 - [[wiki/concepts/harness]] — parte do ferramental que um projeto precisa construir para IA trabalhar bem é justamente reduzir esse atrito entre repositórios
 
+## Reforço Independente: Custo de Coordenação Já Existe Sem IA
+
+[[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] chega à mesma conclusão por um ângulo totalmente independente — sem falar de agentes de IA. O custo de fragmentar uma mudança entre repositórios (bump de versão de framework repetido N vezes, atualização de Design System exigindo PR e deploy por microfrontend consumidor) já é alto para humanos em [[wiki/concepts/microfrontends-parciais|microfrontends parciais/polirrepo]] — o [[wiki/concepts/monorepo-frontend|monorepo com libs]] resolve isso via grafo de dependências único, o mesmo mecanismo que aqui reduz o custo de contexto para o agente. Ou seja: o argumento "monorepo > polirrepo para mudanças verticais" não nasceu da IA, só ganhou um custo adicional explícito com ela.
+
 ## Key Sources
 
 - [[wiki/sources/impacto-ia-mercado-frontend]]
+- [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] — mesmo trade-off monorepo/libs vs. polirrepo de microfrontends, justificado por CI/CD, versionamento e governança — independente de agentes de IA

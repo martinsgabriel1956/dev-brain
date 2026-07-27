@@ -3,8 +3,8 @@ type: concept
 title: "Application Boundary — Aplicações como Construções Sociais"
 aliases: ["fronteira de aplicação", "limite de aplicação", "applications are social constructions"]
 date_created: 2026-07-20
-date_updated: 2026-07-20
-source_count: 1
+date_updated: 2026-07-27
+source_count: 2
 tags: [arquitetura, ddd, bounded-context, contexto-organizacional, martin-fowler]
 skill: tech-mentor-backend
 status: stub
@@ -38,6 +38,11 @@ O próprio Fowler aponta a seção de *strategic design* de [[wiki/concepts/ddd]
 
 Mesma tese central de [[wiki/sources/conways-law]] ("organizações produzem sistemas que espelham suas estruturas de comunicação"), aplicada aqui à unidade "aplicação" em vez de à unidade "serviço/módulo". Ver detalhamento em [[wiki/sources/application-boundary-martin-fowler]] — seção "Conexão com Conway's Law e Monolito Modular".
 
+## Mesma Dupla Autoral, Um Ano Depois: Microsserviços como Aplicação da Tese
+
+[[wiki/sources/microsservicos-martin-fowler-james-lewis]] (2014), do mesmo Fowler, aplica implicitamente a mesma lógica: a decomposição correta em serviços segue capacidades de negócio — não camadas técnicas —, porque a fronteira "certa" de um componente reflete organização humana (a Lei de Conway, citada explicitamente no artigo) tanto quanto reflete o domínio técnico. Onde este bliki entry de 2003 pergunta "onde termina uma aplicação", o artigo de microsserviços de 2014 pergunta a mesma coisa em escala menor — "onde termina um serviço" — e chega à mesma resposta: política e comunicação organizacional, não um critério técnico isolado.
+
 ## Key Sources
 
 - [[wiki/sources/application-boundary-martin-fowler]]
+- [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — mesma tese aplicada à fronteira de serviço, via Lei de Conway

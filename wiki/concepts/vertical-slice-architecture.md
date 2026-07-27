@@ -3,9 +3,9 @@ type: concept
 title: "Vertical Slice Architecture"
 aliases: ["vertical slice", "feature-first architecture", "slice por feature"]
 date_created: 2026-04-23
-date_updated: 2026-05-04
-source_count: 3
-tags: [arquitetura, modularidade, feature-first, agentes, tokens]
+date_updated: 2026-07-27
+source_count: 4
+tags: [arquitetura, modularidade, feature-first, agentes, tokens, frontend]
 skill: tech-mentor-backend
 status: stub
 ---
@@ -55,8 +55,15 @@ Vertical Slice não resolve tudo — shared code (auth, logging, DB client) aind
 
 Sem discipline, Vertical Slice pode levar a duplicação de lógica entre features. A solução é extrair para `shared/` *depois* do segundo caso — ver [[concepts/yagni]].
 
+## Vertical Slice Dentro de um Módulo (Frontend)
+
+[[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] aplica o mesmo princípio um nível abaixo do módulo, dentro de uma arquitetura [[wiki/concepts/monolito-modular-frontend|modular]]: quando uma funcionalidade dentro de um módulo já nasce mais complexa, o instinto de "por que não desacopla, cria um projeto/microfrontend separado?" deve ser resistido — primeiro isola-se a funcionalidade via vertical slice dentro do próprio módulo, e só se extrai de fato quando a necessidade real de desacoplamento aparecer. É a mesma lógica de extração tardia documentada em [[wiki/concepts/microsservicos]] (monolito modular como ponto de partida, extração só com necessidade real), aplicada à fronteira entre "módulo" e "feature complexa dentro do módulo" em vez de entre "monólito" e "serviço".
+
+**Risco registrado pelo autor:** tratar vertical slice como regra filosófica rígida ("isso deveria ficar dentro do módulo/feature") em vez de ferramenta prática já gerou conflito de time — o critério deve ser "isso facilita", não "isso está no lugar certo segundo a teoria".
+
 ## Key Sources
 
 - [[sources/clean-architecture-ia-custo-real]]
 - [[sources/erros-workflow-research-plan-implement]] — plano vertical como aplicação do VSA a workflow de agente
 - [[sources/context-engineering-avancado-para-coding-agents]] — implementação incremental para manter context window baixa
+- [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] — vertical slice dentro de um módulo frontend como isolamento pré-extração, e o risco de virar regra filosófica rígida em vez de ferramenta prática

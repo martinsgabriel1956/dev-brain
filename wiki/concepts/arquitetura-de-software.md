@@ -3,8 +3,8 @@ type: concept
 title: "Arquitetura de Software"
 aliases: ["software architecture", "decisao arquitetural"]
 date_created: 2026-07-03
-date_updated: 2026-07-24
-source_count: 8
+date_updated: 2026-07-27
+source_count: 9
 tags: [arquitetura, carreira, fundamentos, ia, pos-graduacao]
 skill: tech-mentor-leadership
 status: draft
@@ -62,9 +62,14 @@ Nenhum desses livros foi lido/ingerido diretamente ainda no wiki — são citaç
 
 [[wiki/sources/application-boundary-martin-fowler]] reforça, de um ângulo mais antigo (2003) e mais fundamental que o "contexto organizacional" já documentado nesta página: nem a própria unidade "aplicação" tem definição puramente técnica. Fowler descreve aplicações como construções sociais — vistas como uma unidade única por três grupos diferentes (devs via código, negócio via funcionalidade, financiadores via orçamento) que nem sempre concordam entre si. Ver [[wiki/concepts/application-boundary]] e [[wiki/concepts/contexto-organizacional-para-arquitetura]].
 
+## Dano Estrutural de Abstração Ruim vs. Implementação Porca
+
+[[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]] (Chris Kiehl) formula em uma frase o mesmo argumento já registrado acima sobre custo de decisão arquitetural errada, de um ângulo comparativo: "uma implementação porca de uma boa abstração não causa dano líquido à base de código; uma abstração ruim ou uma camada faltando faz tudo apodrecer". A distinção é útil porque separa dois eixos que costumam ser confundidos — qualidade de *implementação* (local, corrigível) vs. qualidade de *abstração/arquitetura* (estrutural, se propaga).
+
 ## Key Sources
 
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]]
+- [[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]] — abstração ruim causa dano estrutural que implementação porca não causa
 - [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — fatores de contexto de negócio e organizacional que uma decisão arquitetural precisa considerar
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] — módulos profundos como unidade estrutural concreta
 - [[wiki/sources/filosofia-do-design-de-software-introducao]] — por que design (arquitetural ou não) é processo contínuo, não fase única

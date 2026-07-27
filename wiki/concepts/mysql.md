@@ -3,8 +3,8 @@ type: concept
 title: "MySQL"
 aliases: ["mysql", "innodb"]
 date_created: 2026-07-07
-date_updated: 2026-07-07
-source_count: 2
+date_updated: 2026-07-27
+source_count: 3
 tags: [mysql, banco-de-dados, sql, innodb, gap-locking, skip-locked, backend]
 skill: tech-mentor-backend
 status: draft
@@ -34,7 +34,16 @@ Em sistemas de alta concorrência com muitas inserções/deleções na mesma fai
 
 Uma armadilha de diagnóstico: otimizar queries individuais (menor tempo de execução) não resolve gargalos causados por **conexões seguradas por tempo desproporcional** em alguma parte do código — mesmo com CPU baixa e latência de query aceitável, o sistema pode não escalar porque o pool de conexões está saturado por operações que seguram a conexão aberta por mais tempo do que deveriam. Instrumentar por **tempo de conexão por operação** (não por query) expõe esse tipo de gargalo. Ver [[wiki/concepts/connection-pooling]].
 
+## Conexão Simultânea ≠ Usuário Online
+
+Distinção crítica de capacity planning: a maioria dos usuários navegando numa aplicação web está lendo/pensando, sem conexão ativa no banco — a conexão é aberta, usada em milissegundos e fechada só no momento do write. Na prática, ~600 usuários simultâneos geram tipicamente 20–50 conexões reais no MySQL, não 600. O que de fato ocupa uma conexão por tempo desproporcional é query longa, transação aberta não comitada, ou vazamento de conexão por bug — o mesmo padrão de diagnóstico já descrito acima em "Diagnóstico de Gargalo".
+
+## Limites Documentados de Conexão (Instância Única)
+
+Padrão de fábrica sem alterar `my.cnf`: 151 conexões. Em servidores com 128–256 GB de RAM, 5.000–10.000 conexões são operacionalmente viáveis; configurações documentadas em 512 GB chegam a 100.000. Cada conexão consome ~1 MB de RAM só para gerenciar a thread — 10.000 conexões já são ~10 GB de overhead antes de processar qualquer linha de dado. Acima de ~5.000 conexões em instância única, context switching de threads costuma virar gargalo. Ao estourar o limite configurado, o MySQL não enfileira — retorna imediatamente o erro `1040 Too many connections`; uma conexão extra é reservada exclusivamente para `root`, para permitir diagnóstico mesmo com o limite esgotado. Ver [[wiki/concepts/cap-theorem]] para o porquê de bancos relacionais como o MySQL priorizarem recusar conexão a arriscar inconsistência.
+
 ## Key Sources
 
 - [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]]
 - [[wiki/sources/uuid-primary-key-mysql]] — UUID como PK degrada performance de índice B-tree no InnoDB
+- [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — limites reais de conexão em instância única e a distinção conexão vs. usuário online

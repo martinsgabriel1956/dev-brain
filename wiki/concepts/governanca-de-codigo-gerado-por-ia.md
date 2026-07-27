@@ -3,8 +3,8 @@ type: concept
 title: "Governança de Código Gerado por IA"
 aliases: ["paradoxo da ia no codigo", "governar codigo de ia"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 3
+date_updated: 2026-07-27
+source_count: 4
 tags: [ia-no-processo-de-engenharia, arquitetura, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -39,8 +39,13 @@ A IA ameaça quem permanece só na camada de execução e não evolui para julga
 
 [[wiki/sources/vibe-coding-limites-maturidade-profissional]] descreve outro caso limite: construir um sistema inteiramente por [[wiki/concepts/vibe-coding|vibe coding]] e vendê-lo como pronto para produção — seguro, moderno, testado — sem nenhuma revisão arquitetural, de segurança ou de contexto de negócio. Isso é falta de governança na ponta de saída (venda ao cliente), não só na ponta de entrada (geração do requisito): o risco recai sobre quem comprou confiando na promessa de qualidade.
 
+## Substituir Software Determinístico pela IA é a Ausência Mais Estrutural de Governança
+
+[[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] descreve uma variante distinta dos casos limite já registrados nesta página: não é falta de revisão humana sobre código gerado, é usar a IA para substituir a própria camada de decisão/registro que um sistema determinístico deveria ter. O autor tentou trocar scripts de validação (software tradicional, regra fixa) por julgamento de LLM — e a "governança" que faltou não foi revisão de PR, foi a decisão arquitetural de manter a IA como camada de interpretação e deixar o processamento lógico com o software tradicional. Argumento central da fonte: a IA torna mais evidente, não menos, a importância de quem sabe construir sistemas previsíveis — o oposto da narrativa de que a IA substitui o engenheiro.
+
 ## Key Sources
 
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]]
+- [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] — caso de governança arquitetural: IA substituindo a camada de decisão determinística em vez de apenas interpretar
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]] — caso limite: pessoa não técnica gerando tickets via IA conectada ao repositório, sem nenhum julgamento de engenharia no fluxo
 - [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — caso limite: vender sistema vibe-coded como pronto para produção sem revisão humana

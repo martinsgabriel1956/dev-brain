@@ -3,8 +3,8 @@ type: concept
 title: "Facade Pattern"
 aliases: ["padrão facade", "design pattern facade", "fachada"]
 date_created: 2026-05-01
-date_updated: 2026-05-05
-source_count: 2
+date_updated: 2026-07-27
+source_count: 3
 tags: [design-patterns, structural, facade, oop, encapsulamento]
 skill: tech-mentor-backend
 status: stable
@@ -50,6 +50,14 @@ facade.placeOrder(order);
 | Reduz acoplamento | Pode esconder complexidade que deveria ser visível |
 | Ponto único de mudança para a orquestração | |
 
+## Facade e o "S" do SOLID
+
+Crítica comum: uma Facade que orquestra pagamento, notificação e estoque parece ferir a responsabilidade única. Contra-argumento (via [[wiki/sources/design-pattern-facade-renato-augusto]]): SRP é sobre ter **um único motivo para mudar**, não sobre "uma linha de código, uma ação". A razão de mudança da Facade é *o processo que ela orquestra* mudar (ex: adicionar um passo novo) — as classes internas que ela chama continuam com SRP estrito cada uma. O sintoma de que isso descamba para [[god-object]] é a Facade acumular responsabilidades **não relacionadas** ao fluxo que ela representa, não o fato de chamar várias classes.
+
+### Sinal prático para extrair uma Facade
+
+Quando o mesmo fluxo de orquestração (ex: processar um pedido) precisa ser repetido em mais de um Controller/rota, deixar a lógica solta em cada Controller cria risco de divergência — uma mudança de regra aplicada em um lugar e esquecida no outro. Esse é o gatilho concreto para migrar o fluxo para dentro de uma Facade: um único ponto de mudança.
+
 ## Diferença do Proxy
 
 O Facade simplifica acesso a **múltiplos** componentes. O [[proxy-pattern]] substitui **um único** objeto e controla o acesso a ele.
@@ -65,3 +73,4 @@ O Facade simplifica acesso a **múltiplos** componentes. O [[proxy-pattern]] sub
 - [[wiki/sources/design-pattern-proxy]]
 - [[sources/sete-padroes-de-design-de-software]]
 - [[sources/design-pattern-facade]]
+- [[wiki/sources/design-pattern-facade-renato-augusto]]

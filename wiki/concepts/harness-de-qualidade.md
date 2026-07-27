@@ -3,8 +3,8 @@ type: concept
 title: "Harness de Qualidade"
 aliases: ["quality harness", "harness ia", "ferramental de qualidade"]
 date_created: 2026-05-31
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-07-27
+source_count: 3
 tags: [harness, qualidade, pipeline-de-qualidade, tdd, testes, era-agentica, robustez]
 skill: tech-mentor-backend
 status: stable
@@ -75,8 +75,13 @@ O resultado é determinístico: **a ferramenta passou ou não passou** — indep
 
 Harness de qualidade é o mecanismo que constrói [[robustez-de-sistemas]] quando a IA está gerando o código. Sem harness, velocidade de geração = velocidade de acumulação de débito técnico.
 
+## O que Acontece Sem Harness: Substituir o Gate Inteiro pela IA
+
+[[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] é o exemplo negativo desta página: em vez de usar a IA *dentro* de um harness determinístico, o autor tentou usar a IA *como* o próprio mecanismo de validação — sem pipeline, sem regra fixa, só o julgamento do modelo sobre o código do aluno. O resultado foi exatamente o previsto por esta página: sem ferramenta determinística ao redor, o comportamento da IA ficou inconsistente entre execuções e entre modelos. Ver [[wiki/concepts/determinismo-vs-probabilismo-em-ia]].
+
 ## Key Sources
 
 - [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
 - [[wiki/sources/tdd-sdd-bdd-era-ia]]
+- [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] — caso negativo: IA usada como o próprio gate, sem harness ao redor, resultado inconsistente

@@ -3,8 +3,8 @@ type: concept
 title: "CDN"
 aliases: ["Content Delivery Network", "rede de distribuição de conteúdo", "edge cache"]
 date_created: 2026-06-26
-date_updated: 2026-06-26
-source_count: 1
+date_updated: 2026-07-27
+source_count: 2
 tags: [system-design, cdn, cache, performance, escalabilidade, rede]
 skill: tech-mentor-system-design
 status: draft
@@ -64,6 +64,11 @@ Em um sistema com três camadas (web, aplicação, dados), CDN é a solução ca
 - [[escalabilidade-horizontal]] — CDN é escalabilidade horizontal aplicada à entrega de conteúdo
 - [[protocolo-de-rede]] — CDN opera nas camadas HTTP e TCP; usa Anycast para roteamento geográfico
 
+## Exemplo de Nível Sênior: Restrição Geográfica de Conteúdo
+
+[[wiki/concepts/niveis-de-senioridade-system-design]] usa o exemplo de um usuário poder assistir um filme no Brasil mas não na Alemanha (caso Netflix) como pergunta típica de entrevista sênior: a resposta esperada combina CDN regional (Brasil e Alemanha) com identificação global de onde pertence a assinatura do usuário, localizando o conteúdo por região.
+
 ## Key sources
 
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
+- [[wiki/sources/system-design-por-nivel-junior-pleno-senior]]

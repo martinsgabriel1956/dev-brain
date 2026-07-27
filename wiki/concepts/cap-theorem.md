@@ -3,8 +3,8 @@ type: concept
 title: "Teorema CAP"
 aliases: ["CAP theorem", "CAP", "consistência disponibilidade partição", "PACELC"]
 date_created: 2026-06-26
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-07-27
+source_count: 5
 tags: [system-design, sistemas-distribuidos, cap-theorem, consistencia, disponibilidade]
 skill: tech-mentor-system-design
 status: stub
@@ -51,7 +51,22 @@ O CAP descreve o comportamento *em partição*. PACELC estende: mesmo sem parti�
 
 A escolha AP do teorema CAP é essencialmente o que [[wiki/concepts/base-basically-available-soft-state-eventual|BASE]] formaliza como padrão de design (Basically Available + Eventual Consistency); a escolha CP tende a se aproximar das garantias de [[wiki/concepts/acid]]. Ver exemplos de domínio por tipo de garantia em [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]].
 
+## Marcador de Nível Sênior em Entrevista
+
+[[wiki/concepts/niveis-de-senioridade-system-design]] cita CAP explicitamente como vocabulário esperado de candidatos sênior/sênior-plus, junto ao tradeoff latência vs. vazão vs. disponibilidade — não é cobrado de júnior e aparece só "em algum nível" para pleno.
+
+## Consistência é Negociável Conforme o Domínio
+
+[[wiki/sources/anatomia-entrevista-system-design-bigtech]] ilustra a escolha C vs. A com dois extremos concretos: transação bancária não pode abrir mão de consistência forte; contador de likes de vídeo pode aceitar garantia BASE (301 vs. 302 exibido não muda nada na prática). A compreensão do problema — não uma regra técnica universal — é o que define essa fronteira. A mesma fonte liga o tradeoff de escrita do SQL (mais difícil de escalar) ao motivo pelo qual sistemas de alto throughput preferem NoSQL e abrem mão de ACID.
+
+## Escolha de Banco como Decisão de Negócio, Não Técnica
+
+[[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] resume a implicação prática do CAP para escolha de stack: bancos relacionais (MySQL, PostgreSQL, Oracle) escolhem CP — preferem indisponibilidade temporária a dado errado; bancos NoSQL em geral escolhem AP via consistência eventual. Quando alguém recomenda "usa MongoDB que é mais rápido", o que está sendo dito de fato é que aquele banco abre mão de consistência forte em troca de disponibilidade/escala — uma troca que pode ser excelente ou desastrosa dependendo do domínio.
+
 ## Key sources
 
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]] (menção superficial — necessita fonte dedicada)
 - [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] — BASE como formalização prática da escolha AP
+- [[wiki/sources/system-design-por-nivel-junior-pleno-senior]]
+- [[wiki/sources/anatomia-entrevista-system-design-bigtech]]
+- [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — CP vs AP aplicado à escolha de MySQL/PostgreSQL/Oracle (CP) vs. MongoDB/Redis-eventual (AP tendencial)

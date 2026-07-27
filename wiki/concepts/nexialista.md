@@ -3,8 +3,8 @@ type: concept
 title: "Nexialista"
 aliases: ["nexialismo", "polimata", "polymath", "profissional multidisciplinar"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 1
+date_updated: 2026-07-27
+source_count: 2
 tags: [nexialista, polimata, carreira, profissional-do-futuro, adaptabilidade, aprender-a-aprender]
 skill: tech-mentor-leadership
 status: stable
@@ -31,6 +31,10 @@ O diferencial não é saber muitas coisas. É **conectar** essas coisas de forma
 | Agora | **Conexão de áreas**: quem conecta pontos de múltiplas áreas tem vantagem competitiva real |
 
 A educação formal colocou as pessoas em caixinhas — aulas de probabilidade e de programação que não se falam, embora tenham relação direta. O nexialista ignora essas fronteiras.
+
+### Precisão Histórica: Quando o "Full Stack" da Tabela Acima Realmente Existiu
+
+[[wiki/sources/a-insanidade-de-ser-um-programador-hoje]] data com mais precisão a linha "Décadas passadas" da tabela: a distinção front-end/back-end **não existia antes de 2006-2007** — até lá, o padrão era "dev desktop" ou "dev web" (webmaster), sem separação de especialidade, porque o front-end ainda não tinha complexidade suficiente para justificar um especialista dedicado. A separação surgiu quando o front-end ficou mais complexo, e o "full stack" atual (2010s em diante) não é retorno ao modelo antigo por escolha técnica — segundo a fonte, é corte de custo: quando o mercado convergiu em React como "a forma certa" de fazer front-end, empresas simultaneamente pararam de contratar dois especialistas separados, fundindo as responsabilidades de volta numa única vaga. Ou seja, a "conexão de áreas" da era atual (linha "Agora" da tabela) e o "full stack" fundido por pressão de custo (2010s+) coexistem e podem ser confundidos — vale distinguir intenção (nexialismo genuíno vs. redução de headcount).
 
 ## Nexialista vs. Especialista
 
@@ -60,3 +64,4 @@ O nexialista só é sustentável se [[aprender-a-aprender]] for sua habilidade c
 ## Key Sources
 
 - [[wiki/sources/profissional-do-futuro-ia-identidade-aprendizado]]
+- [[wiki/sources/a-insanidade-de-ser-um-programador-hoje]] — precisão histórica sobre quando front-end/back-end viraram especialidades separadas (2006-2007) e o full stack atual como corte de custo, não escolha técnica

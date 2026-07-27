@@ -3,8 +3,8 @@ type: concept
 title: "Robustez de Sistemas"
 aliases: ["sistemas robustos", "robustez", "software robusto"]
 date_created: 2026-05-31
-date_updated: 2026-07-03
-source_count: 4
+date_updated: 2026-07-27
+source_count: 5
 tags: [robustez, arquitetura, qualidade, escalabilidade, testes, segurança, era-agentica]
 skill: tech-mentor-backend
 status: stable
@@ -79,9 +79,14 @@ Isso complementa o [[harness-de-qualidade]]: o harness previne que código ruim 
 
 [[wiki/concepts/vibe-coding|Vibe coding]] entrega bem MVPs e protótipos, mas não robustez por padrão: sustentabilidade a longo prazo, escala e segurança sem brechas exigem julgamento humano sobre arquitetura, integrações e contexto de negócio que um prompt não cobre sozinho. Ver [[wiki/sources/vibe-coding-limites-maturidade-profissional]].
 
+## Sistemas Determinísticos (Juros, Impostos, Folha) Não Toleram "Quase Certo"
+
+[[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] descreve o caso limite da robustez: sistemas corporativos que calculam juros, impostos ou salário precisam gerar o mesmo output para o mesmo input hoje, amanhã e daqui a 5 anos — sem espaço para interpretação. Um teste real do autor (validador de tarefas de COBOL via LLM) mostrou que modelos de IA aprovavam e reprovavam o mesmo tipo de erro de forma inconsistente entre execuções, porque tokenizam e respondem por probabilidade em vez de ler o conteúdo linha a linha. Ver [[wiki/concepts/determinismo-vs-probabilismo-em-ia]] para a distinção central que essa fonte introduz na wiki.
+
 ## Key Sources
 
 - [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
+- [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] — sistemas determinísticos como o limite estrutural da robustez via IA; caso real de validador LLM inconsistente
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
 - [[wiki/sources/let-it-crash-nodejs-asynclocalstorage]] — Let it Crash como estratégia de robustez; graceful shutdown em Node.js
 - [[wiki/sources/tdd-sdd-bdd-era-ia]] — TDD/SDD impostos via harness aumentam a chance da IA acertar a intenção

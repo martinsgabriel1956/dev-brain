@@ -3,8 +3,8 @@ type: concept
 title: "Comparação na Carreira"
 aliases: ["bastidor vs palco", "síndrome do impostor", "comparação com colegas", "primeiro degrau"]
 date_created: 2026-04-22
-date_updated: 2026-07-10
-source_count: 5
+date_updated: 2026-07-27
+source_count: 6
 tags: [carreira, mentalidade, comparação, iniciante, impostor]
 skill: tech-mentor-leadership
 status: stable
@@ -48,3 +48,4 @@ Comparação desordenada cria a sensação de que você "não tem dom" — e pod
 - [[wiki/sources/como-eu-investiria-como-programador-ate-50000]] — régua de teto salarial de um professor (R$ 5.000) usada como "régua máxima" pessoal do autor, mesmo padrão de comparação externa aplicado a dinheiro em vez de código
 - [[wiki/sources/diferenciais-portfolio-backend-junior]] — o dilema de fundo da pergunta original ("como me destacar sem experiência") já é uma comparação implícita com candidatos que têm anos de mercado; a resposta desloca o referencial de "quanto tempo de experiência" para "quais fundamentos concretos você domina"
 - [[wiki/sources/tres-caracteristicas-melhor-candidato]] — currículo (promessa) vs. portfólio (prova): "currículo é promessa de onde você esteve; portfólio é prova do que você produziu" desloca a comparação de anos-de-experiência para maestria demonstrável
+- [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — "nenhuma empresa sequer concorda na definição de o que é um júnior, um pleno, um sênior": a falta de consenso sobre rótulos de carreira, aplicada aqui especificamente ao eixo de system design, é a mesma raiz da comparação sem referencial estável descrita nesta página

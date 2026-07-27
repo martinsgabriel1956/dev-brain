@@ -3,8 +3,8 @@ type: concept
 title: "Entrevista Técnica de Coding"
 aliases: ["coding interview", "entrevista estilo leetcode", "live coding interview", "whiteboard interview"]
 date_created: 2026-07-20
-date_updated: 2026-07-22
-source_count: 3
+date_updated: 2026-07-27
+source_count: 4
 tags: [carreira, entrevistas, coding-interview, algoritmos, comunicacao]
 skill: tech-mentor-leadership
 status: draft
@@ -53,3 +53,4 @@ O artigo original do mesmo autor (fonte primária do vídeo já citado acima) de
 - [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]]
 - [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]] — artigo original com o roteiro completo de dez etapas ("Os Seis Passos")
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]
+- [[wiki/sources/anatomia-entrevista-system-design-bigtech]] — mesma tese de "expor o raciocínio em voz alta" aplicada à entrevista de system design, dentro do pipeline completo de entrevista bigtech (RH → técnica/LeetCode → system design → fit)

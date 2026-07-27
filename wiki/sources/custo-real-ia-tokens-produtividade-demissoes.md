@@ -3,8 +3,8 @@ type: source
 title: "Custo Real da IA: Tokens, Produtividade e Demissões"
 aliases: ["custo real da ia", "capital de tokens vs capital humano", "cdf cafe custo ia"]
 date_created: 2026-07-16
-date_updated: 2026-07-16
-source_count: 0
+date_updated: 2026-07-27
+source_count: 1
 tags: [tech-mentor-ai, token-economics, roi-de-ia, ai-washing, paradoxo-de-jevons, era-agentica, demissao, gartner, palantir, meta, capital-de-tokens]
 skill: tech-mentor-ai
 status: stable
@@ -73,3 +73,7 @@ Episódio do CDF Café ([[wiki/entities/codigo-fonte-tv]]) argumentando que a pr
 > "À medida que os custos aumentam e novos modelos se mostram mais caros do que interações anteriores, as empresas estão mudando de uma mentalidade de token maxing em prol de um retorno de investimento." — CEO da Palantir
 
 > "Sem visibilidade clara do uso de token em tarefas de desenvolvimento, as organizações arriscam estouros no orçamento e reduzem a capacidade de rastrear resultados de custo a valor." — Gartner
+
+## Explicação Complementar: Nem Todo Corte é Só Custo
+
+[[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] soma uma camada técnica ao bode-expiatório documentado aqui (59% das empresas usando IA como justificativa para demissão/congelamento sem função de fato substituída): parte dos projetos de IA cortados, segundo essa fonte, falha não por custo de token, mas por tentar usar um modelo probabilístico para uma tarefa que exige determinismo — erro de enquadramento anterior ao problema de custo.

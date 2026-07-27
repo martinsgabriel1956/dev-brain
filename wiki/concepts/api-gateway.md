@@ -3,8 +3,8 @@ type: concept
 title: "API Gateway"
 aliases: ["api gateway", "gateway de api", "ponto único de entrada de api"]
 date_created: 2026-07-23
-date_updated: 2026-07-23
-source_count: 2
+date_updated: 2026-07-27
+source_count: 3
 tags: [api-gateway, arquitetura-distribuida, gatekeeper, roteamento, edge-functions, single-point-of-failure]
 skill: tech-mentor-backend
 status: stable
@@ -82,3 +82,4 @@ Complementares, não substitutos — ver [[wiki/concepts/service-mesh]].
 
 - [[wiki/sources/api-gateway-bff]]
 - [[wiki/sources/api-gateway-padrao-essencial-arquiteturas-distribuidas]]
+- [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — API Gateway aparece como conhecimento esperado a partir do nível pleno, junto de workers e load balancer

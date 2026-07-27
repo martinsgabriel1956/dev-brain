@@ -3,8 +3,8 @@ type: concept
 title: "Tokenização"
 aliases: ["token", "tokens", "encode/decode llm", "vocabulário de tokens"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 1
+date_updated: 2026-07-27
+source_count: 2
 tags: [tokenizacao, llm-fundamentals, tokens, vocabulario, bpe]
 skill: tech-mentor-ai
 status: stable
@@ -54,6 +54,11 @@ Palavras incomuns no corpus de treino (nomes inventados, jargão raro) são frag
 - [[token-tax-multilingual]] — consequência da tokenização para idiomas não-ingleses
 - [[token-economics]] — custo é cobrado por token de entrada e saída, a taxas diferentes
 
+## Consequência Prática: Análise por Token ≠ Leitura Linha a Linha
+
+[[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] traz um exemplo concreto do custo de a IA operar sobre tokens em vez de texto: um LLM não lê um programa fonte linha a linha como um humano — ele tokeniza o conteúdo, monta contexto e gera resposta por probabilidade. Isso explicou, no relato do autor, por que três LLMs diferentes (ChatGPT, Claude, Gemini) falhavam de forma inconsistente em uma checagem sintática trivial (identificar se um programa COBOL estava em free format ou fixed format) — uma tarefa que um parser determinístico resolve sem ambiguidade, mas que depende de reconstrução probabilística a partir de tokens para um LLM. Ver [[wiki/concepts/determinismo-vs-probabilismo-em-ia]].
+
 ## Key Sources
 
 - [[wiki/sources/tokens-llm-fundamentos-typescript]]
+- [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] — caso real de falha em checagem sintática trivial por processamento via tokens em vez de leitura linha a linha

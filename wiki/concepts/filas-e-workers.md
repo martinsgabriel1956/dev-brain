@@ -3,8 +3,8 @@ type: concept
 title: "Filas e Workers"
 aliases: ["job queue", "background processing", "async workers", "processamento assíncrono"]
 date_created: 2026-07-09
-date_updated: 2026-07-09
-source_count: 2
+date_updated: 2026-07-27
+source_count: 3
 tags: [filas, workers, background-jobs, mensageria, backend, retry, idempotencia]
 skill: tech-mentor-backend
 status: stub
@@ -48,3 +48,4 @@ Producer e worker como dois processos independentes (ex.: Bun), comunicando-se a
 
 - [[wiki/sources/10-conceitos-fundamentais-backend]]
 - [[wiki/sources/pub-sub-message-queue-bullmq-na-pratica]]
+- [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — workers aparecem como conhecimento esperado a partir de pleno; em nível sênior, o uso de background jobs/workers para aliviar carga do sistema é tratado como ferramenta central de escala

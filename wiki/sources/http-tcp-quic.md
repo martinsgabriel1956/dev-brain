@@ -3,12 +3,12 @@ type: source
 title: "TCP/IP, HTTP/1.1, HTTP/2, HTTP/3 e QUIC"
 aliases: ["http3", "quic", "tcp", "http2", "multiplexing", "head of line blocking", "tls handshake"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
+date_updated: 2026-07-27
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/http-tcp-quic.md
 source_url: ""
 date_published: ""
 date_ingested: 2026-04-23
-source_count: 0
+source_count: 1
 tags: [tcp, http, http2, http3, quic, tls, head-of-line-blocking, multiplexing, 0rtt, networking]
 skill: tech-mentor-backend
 status: stable
@@ -45,4 +45,4 @@ Evolução HTTP: HTTP/1.1 (keep-alive, HoL blocking por conexão) → HTTP/2 (mu
 ## Open Questions
 
 - HTTP/3 em load balancers internos — quando vale o overhead de QUIC para tráfego intra-DC já confiável?
-- HPACK vs QPACK header compression — quais são as diferenças práticas em performance?
+- HPACK vs QPACK header compression — quais são as diferenças práticas em performance? Parcialmente conectado por [[wiki/sources/por-que-letras-minusculas-economizam-dados]]: HPACK usa uma tabela de Huffman estática (baseada em frequências típicas de headers HTTP), o mesmo princípio de "caracteres mais frequentes, código mais curto" documentado em [[wiki/concepts/compactacao-de-texto]] — ainda falta uma fonte dedicada a QPACK para comparar diretamente.

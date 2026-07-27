@@ -3,8 +3,8 @@ type: source
 title: "IA para Empresas — Custo, ROI e Por que Não é uma Bolha"
 aliases: ["ia roi bolha", "custo ia empresas", "ai washing roi"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 0
+date_updated: 2026-07-27
+source_count: 1
 tags: [ia-roi, custo-ia, ai-washing, paradoxo-de-jevons, era-agentica, token-economics, llmops, organizacoes]
 skill: tech-mentor-ai
 status: stable
@@ -71,6 +71,10 @@ Análise com dados de múltiplas fontes (Writer, Mercer, MIT, Gartner, Goldman S
 - [[agente-ia]] — era agêntica multiplica consumo de tokens
 
 ---
+
+## Explicação Mecanística Complementar para Cortes de Projeto
+
+[[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] complementa esta fonte com uma explicação técnica, não apenas financeira, para projetos de IA cortados: além do desalinhamento de custo/ROI documentado aqui, a fonte argumenta que parte dos fracassos vem de usar IA (ferramenta probabilística) para substituir software tradicional em tarefas que exigem determinismo (cálculo, validação de regra de negócio) — um erro de enquadramento da tarefa, não necessariamente falha do modelo ou bolha de mercado.
 
 ## Contradições / Questões Abertas
 

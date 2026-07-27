@@ -3,8 +3,8 @@ type: concept
 title: "NoSQL"
 aliases: ["not only sql", "bancos não relacionais"]
 date_created: 2026-04-22
-date_updated: 2026-07-03
-source_count: 3
+date_updated: 2026-07-27
+source_count: 4
 tags: [banco-de-dados, nosql, mongodb, redis, cassandra, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -40,8 +40,13 @@ Bancos NoSQL escalam melhor **horizontalmente** ([[escalabilidade-horizontal]]):
 
 Uma thread analisada em [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] gerou confusão generalizada: pessoas comparando SQL a NoSQL quando a discussão original era sobre **acoplar aplicação a SQL como linguagem de query** (vs. abstrair via ORM/DSL) — um eixo ortogonal a "qual modelo de dados usar". Firestore/MongoDB não substituem a pergunta "devo escrever SQL cru no código", eles resolvem um problema diferente (modelo de dados documental vs. relacional).
 
+## MongoDB: Exemplo Concreto de Schema Variável
+
+Caso didático de [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]]: um e-commerce que vende notebook (processador, RAM, polegadas), camiseta (tamanho, cor, material) e livro (ISBN, autor, edição) no mesmo catálogo. Em SQL, as duas opções são ruins — tabela com 200 colunas majoritariamente nulas, ou arquitetura EAV (entity-attribute-value) tecnicamente correta mas com péssima performance de query. No MongoDB, cada produto é um documento só com os campos que fazem sentido para ele; um novo tipo de produto começa a ser inserido sem migration, sem `ALTER TABLE`, sem downtime. Ver [[wiki/concepts/mongodb]].
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
+- [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — exemplo concreto de catálogo com schema variável (notebook/camiseta/livro) e limite de conexões do MongoDB em instância única

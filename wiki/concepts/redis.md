@@ -3,8 +3,8 @@ type: concept
 title: "Redis"
 aliases: ["redis cache", "redis db"]
 date_created: 2026-06-26
-date_updated: 2026-07-07
-source_count: 4
+date_updated: 2026-07-27
+source_count: 5
 tags: [redis, cache, nosql, banco-in-memory, chave-valor, backend, grande-rollback]
 skill: tech-mentor-backend
 status: stable
@@ -77,9 +77,14 @@ A [[wiki/entities/shopify]] tinha reserva de estoque em Redis com fonte de verda
 - **Sentinel** — HA sem sharding; failover automático; dataset cabe em um nó
 - **Cluster** — sharding horizontal com 16.384 hash slots; dataset maior que memória de um nó
 
+## Redis Quase Nunca é o Banco Principal
+
+Reforço direto do caso Shopify acima: em quase 100% dos casos reais, Redis não é a fonte de verdade — ele vive como camada de velocidade em cima de um banco relacional (MySQL, PostgreSQL, Oracle), que continua sendo quem detém o dado real. Quando o cache expira, a aplicação busca no banco relacional e recarrega no Redis — uma arquitetura de duas camadas de leitura. Performance de referência: >100 mil operações/segundo em hardware comum, até ~1 milhão OPS/s com pipeline e batching, latência sub-milissegundo por tudo estar em RAM. Persistência (RDB/AOF) é opcional por design — se o servidor cair sem AOF configurado, os dados são perdidos desde o último snapshot.
+
 ## Key Sources
 
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — Redis Pub/Sub como notificador entre microsserviços, armadilha da conexão sem Singleton
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — Redis Pub/Sub como broker entre servidores WebSocket replicados, tópico por usuário/grupo
 - [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] — caso onde Redis + MySQL sincronizados foi substituído por MySQL puro com SKIP LOCKED
+- [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — Redis como camada de velocidade sobre banco relacional, nunca fonte de verdade; números de OPS/s e riscos de persistência

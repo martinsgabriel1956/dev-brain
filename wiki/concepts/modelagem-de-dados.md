@@ -3,8 +3,8 @@ type: concept
 title: "Modelagem de Dados"
 aliases: ["data modeling", "modelagem relacional", "normalização"]
 date_created: 2026-07-09
-date_updated: 2026-07-20
-source_count: 2
+date_updated: 2026-07-27
+source_count: 3
 tags: [banco-de-dados, modelagem, normalizacao, indice, backend]
 skill: tech-mentor-backend
 status: stub
@@ -36,7 +36,12 @@ Em uma [[wiki/concepts/entrevista-system-design|entrevista de system design]], a
 - [[wiki/concepts/entrevista-system-design]] — modelagem de dados como sinal de repertório em entrevista
 - Ver aprofundamento de índices, EXPLAIN ANALYZE e query optimization em `references/database-query-optimization.md` (tech-mentor-backend)
 
+## Esquema Híbrido SQL + NoSQL
+
+[[wiki/sources/anatomia-entrevista-system-design-bigtech]] descreve o padrão esperado em sistemas grandes: parte transacional (consistência forte) num banco SQL, parte de alto throughput/dados menos estruturados num NoSQL — com colunas SQL apontando para chaves em key-value stores (ex.: DynamoDB) ou para objetos em blob store (ex.: S3). Misturar bancos de propósitos diferentes no mesmo esquema é apresentado como sinal de domínio real, não de "escolher um banco só".
+
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-backend]]
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]
+- [[wiki/sources/anatomia-entrevista-system-design-bigtech]]
