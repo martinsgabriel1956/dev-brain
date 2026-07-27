@@ -3,8 +3,8 @@ type: concept
 title: "TDD — Test-Driven Development"
 aliases: ["test driven development", "red green refactor", "desenvolvimento guiado por testes"]
 date_created: 2026-04-22
-date_updated: 2026-07-22
-source_count: 9
+date_updated: 2026-07-27
+source_count: 10
 tags: [testes, tdd, design, red-green-refactor, qualidade, dora]
 skill: tech-mentor-testing
 status: stable
@@ -25,6 +25,8 @@ RED → GREEN → REFACTOR → RED → GREEN → REFACTOR → ...
 - **REFACTOR**: melhore sem quebrar os testes
 
 Sem o Refactor, TDD é apenas "testes primeiro" — acumula débito técnico com os testes.
+
+[[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] liga explicitamente a primeira das três dicas de Fowler para refatorar com segurança — nunca misturar adicionar funcionalidade com refatorar — ao mesmo ciclo RED-GREEN-REFACTOR: primeiro faz funcionar (RED → GREEN), depois refatora (REFACTOR), nunca as duas coisas ao mesmo tempo. Ver [[wiki/concepts/dois-chapeus-kent-beck]].
 
 ## Armadilha: testar implementação, não comportamento
 
@@ -125,3 +127,4 @@ Quando a interface, o input e o output já são conhecidos por uma especificaç�
 - [[wiki/sources/3-pilares-testes-automatizados-produtividade]] — decomposição de tarefa em entrada/processamento/saída como passo pré-RED; setup de live reload/debug/testes integrados via `node --test` + `--inspect` + `launch.json`
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — importar a suite de testes de uma implementação de referência (stdlib de Go) como oráculo de corretude
 - [[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] — expectativa que quebra expõe bug de autorização real; teste como rede de segurança contra regressão futura não relacionada
+- [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] — liga a regra "não misturar feature e refatoração" de Fowler ao ciclo RED-GREEN-REFACTOR

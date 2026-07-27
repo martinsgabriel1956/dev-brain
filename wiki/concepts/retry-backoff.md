@@ -3,9 +3,9 @@ type: concept
 title: "Retry com Backoff Exponencial e Jitter"
 aliases: ["retry backoff", "exponential backoff", "jitter retry", "retry pattern"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
-tags: [resiliencia, retry, backoff, jitter, thundering-herd, network]
+date_updated: 2026-07-27
+source_count: 2
+tags: [resiliencia, retry, backoff, jitter, thundering-herd, network, idempotencia]
 skill: tech-mentor-system-design
 status: stable
 ---
@@ -117,6 +117,8 @@ const queueConfig = {
 
 Retry só é seguro se a operação for idempotente. Ver [[concepts/idempotencia]].
 
+Um timeout no cliente não diz *por que* a resposta não chegou — a operação pode ter falhado antes do servidor, estar em andamento, ou já ter sido concluída com a resposta perdida no caminho de volta. O cliente não consegue diferenciar esses três casos olhando só para o relógio, e é exatamente essa ambiguidade que torna o retry necessário e a idempotência obrigatória: o objetivo não é evitar o retry, é garantir que retentar não produza um efeito de negócio duplicado.
+
 ## Quando NÃO usar
 
 - Operação não idempotente sem idempotency key
@@ -126,3 +128,4 @@ Retry só é seguro se a operação for idempotente. Ver [[concepts/idempotencia
 ## Key Sources
 
 - [[sources/retry-backoff]]
+- [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] — por que o timeout sozinho não distingue falha, processamento em andamento e sucesso com resposta perdida; teste que corta a resposta depois do efeito e antes da confirmação

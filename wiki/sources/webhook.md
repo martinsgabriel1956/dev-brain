@@ -3,7 +3,7 @@ type: source
 title: "Webhooks — HMAC, Retry e Fanout"
 aliases: ["webhook", "webhooks", "hmac webhook", "webhook signing", "webhook retry", "webhook fanout"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
+date_updated: 2026-07-27
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/webhook.md
 source_url: ""
 date_published: ""
@@ -40,6 +40,7 @@ Webhook é o inverso de polling: producer empurra eventos HTTP quando algo acont
 - [[concepts/idempotency]]
 - [[concepts/fanout-pattern]]
 - [[concepts/at-least-once-delivery]]
+- [[wiki/concepts/inbox-pattern]] — `X-Webhook-Id` para deduplicação nesta fonte é a mesma ideia registrada com mais profundidade em [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] como inbox persistente por `provedor + event ID`
 
 ## Open Questions
 

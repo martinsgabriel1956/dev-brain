@@ -3,9 +3,9 @@ type: concept
 title: "Outbox Pattern"
 aliases: ["transactional outbox", "outbox + cdc", "outbox"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
-tags: [sistemas-distribuidos, mensageria, outbox, cdc, consistencia]
+date_updated: 2026-07-27
+source_count: 2
+tags: [sistemas-distribuidos, mensageria, outbox, cdc, consistencia, idempotencia, inbox]
 skill: tech-mentor-system-design
 status: stub
 ---
@@ -36,6 +36,12 @@ Latência adicional (CDC é assíncrono). Consumidor deve ser idempotente (mensa
 
 [[concepts/two-phase-commit]] garante entrega síncrona com risco de blocking. Outbox garante entrega assíncrona com risco de duplicação — trade-off de latência vs complexidade.
 
+## Cruzando a Fronteira de Serviço com Identidade Idempotente
+
+Outbox resolve a publicação confiável de um lado da fronteira. Do outro lado, quem consome precisa do complementar — [[wiki/concepts/inbox-pattern]] — para não duplicar o efeito quando o mesmo evento chega mais de uma vez (at-least-once delivery). Em pagamentos, isso é o que permite que a mesma chave de [[wiki/concepts/idempotencia]] atravesse o processo que caiu no meio do caminho: se o processador externo já aprovou a cobrança mas o backend caiu antes de salvar a resposta local, repassar a chave idempotente ao retry (ou reconciliar contra uma referência estável) evita criar uma segunda cobrança.
+
 ## Key Sources
 
 - [[sources/3pc]]
+- [[wiki/sources/outbox-pattern]]
+- [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] — Outbox/Inbox como o par que mantém a identidade da operação atravessando fronteiras de serviço sob entrega at-least-once

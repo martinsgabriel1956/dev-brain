@@ -3,7 +3,7 @@ type: source
 title: "Double Spend / Double Submit"
 aliases: ["double spend", "double submit", "request duplicado"]
 date_created: 2026-07-09
-date_updated: 2026-07-09
+date_updated: 2026-07-27
 source_count: 0
 tags: [idempotencia, double-spend, double-submit, prg-pattern, unique-constraint, backend]
 skill: tech-mentor-backend
@@ -44,8 +44,12 @@ Nenhuma entidade nomeada relevante além do patrocínio do vídeo (Abacus AI), t
 
 ## Open Questions
 
-- A fonte não detalha qual mecanismo de lock (ex.: `SET NX`) evita que dois requests concorrentes com a mesma chave de idempotência processem simultaneamente antes do primeiro terminar — o vídeo trata só do caso de replay após a chave já estar armazenada. A referência da skill (`tech-mentor-backend/references/idempotency-patterns.md`) cobre isso com um lock key separado do cache key.
-- Não fica claro na fonte como a TTL/expiração da chave de idempotência deveria variar por domínio (o vídeo menciona a necessidade de uma "expiration strategy" mas não propõe valores) — a referência da skill sugere TTLs diferenciados por tipo de operação (pagamento: 30 dias, pedido: 7 dias).
+- A fonte não detalha qual mecanismo de lock (ex.: `SET NX`) evita que dois requests concorrentes com a mesma chave de idempotência processem simultaneamente antes do primeiro terminar — o vídeo trata só do caso de replay após a chave já estar armazenada. A referência da skill (`tech-mentor-backend/references/idempotency-patterns.md`) cobre isso com um lock key separado do cache key. **Parcialmente respondida** por [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]]: um `INSERT ... ON CONFLICT DO NOTHING` contra a chave primária/unique constraint resolve a corrida de forma atômica no banco, sem depender de um lock key separado em Redis.
+- Não fica claro na fonte como a TTL/expiração da chave de idempotência deveria variar por domínio (o vídeo menciona a necessidade de uma "expiration strategy" mas não propõe valores) — a referência da skill sugere TTLs diferenciados por tipo de operação (pagamento: 30 dias, pedido: 7 dias). [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] reforça o critério (a janela precisa cobrir retry + processamento + webhook + conciliação) mas também não propõe valores numéricos.
+
+## Key Sources
+
+- [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] — resolve a corrida de concorrência via INSERT atômico, e detalha o cruzamento de fronteira de serviço que esta fonte não cobre
 
 ## Key Sources
 

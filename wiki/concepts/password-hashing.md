@@ -3,8 +3,8 @@ type: concept
 title: "Password Hashing"
 aliases: ["hashing de senhas", "armazenamento seguro de senhas", "password storage"]
 date_created: 2026-06-11
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-07-27
+source_count: 3
 tags: [segurança, criptografia, password-hashing, autenticação]
 skill: tech-mentor-security
 status: stable
@@ -25,6 +25,10 @@ Senhas precisam ser verificadas (login), mas nunca lidas. A solução é armazen
 **O risco:** se o banco vaza, o atacante tenta reverter os hashes por força bruta — testando candidatas até achar um match. A velocidade com que ele consegue testar candidatas determina o quanto tempo ele tem antes de quebrar as senhas.
 
 ---
+
+## Origem Histórica: Unix (1976)
+
+O Unix foi um dos primeiros sistemas a abandonar o armazenamento de senha em texto puro, adotando hash + salt no arquivo de senhas. O salt resolveu o problema de a função de hash ser determinística (mesma senha → mesmo hash sempre): ele não precisa ser secreto, só único por usuário, o que já inviabiliza ataques de [[concepts/rainbow-table]] pré-computados para múltiplos usuários de uma vez.
 
 ## Evolução das Técnicas
 
@@ -77,7 +81,12 @@ $hash = password_hash($password . $pepper, PASSWORD_ARGON2ID, [
 
 [[wiki/entities/fabio-akita]] cita o vazamento de dados do Ministério da Saúde (Brasil) como exemplo de amadorismo: senhas de usuário gravadas como *plaintext* no banco. Heurística prática para identificar esse tipo de falha de fora: se um site oferece "receber sua senha esquecida por e-mail" (em vez de um link de reset), ele necessariamente armazena a senha em texto plano ou reversível — sinal de que a aplicação está insegura.
 
+## Ver também
+
+- [[wiki/concepts/mfa-multifator-autenticacao]] — password hashing protege o fator "algo que você sabe", mas não substitui a necessidade de fatores adicionais
+
 ## Key Sources
 
 - [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]]
+- [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]

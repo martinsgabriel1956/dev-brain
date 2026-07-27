@@ -3,8 +3,8 @@ type: entity
 title: "Martin Fowler"
 aliases: ["Fowler", "martinfowler.com"]
 date_created: 2026-07-07
-date_updated: 2026-07-20
-source_count: 7
+date_updated: 2026-07-27
+source_count: 10
 tags: [thoughtworks, autor, testes, arquitetura, tech-debt, refactoring, agile]
 skill: tech-mentor-testing
 status: stable
@@ -22,6 +22,12 @@ Fowler é conhecido por identificar quando um termo popular carrega significados
 
 *Refactoring: Improving the Design of Existing Code* é citado em [[wiki/sources/o-que-e-refatoracao-quando-usar]] como referência para a política de tratamento de bugs encontrados durante uma refatoração: bug já conhecido e priorizado fica como está (o objetivo é reproduzir exatamente o comportamento externo pré-refatoração); bug novo pode ser corrigido na hora, mas só com certeza absoluta de que é real. O mesmo livro é citado como fonte de gráficos que argumentam que investir continuamente no design interno reduz — não aumenta — o tempo de entrega de features futuras. Ver [[wiki/concepts/refatoracao]].
 
+## A 2ª edição de Refactoring (20 anos depois)
+
+Segundo [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]], Fowler explicou numa entrevista com uma funcionária brasileira da [[wiki/entities/thoughtworks]] os motivos da 2ª edição de *Refactoring*, lançada 20 anos após a primeira: o código de exemplo tinha ficado datado (Java antigo, com uso de classes como `Vector`, hoje em desuso), e várias refatorações do livro original estavam demais atreladas ao paradigma orientado a objetos, apesar de refatoração valer para qualquer paradigma. A nova edição passou a usar JavaScript e trocou o exemplo didático central — de uma locadora de fitas de vídeo para um sistema de gestão de peças de teatro — escolhido por ser um domínio mais permanente da atividade humana (peças de teatro existem desde a Grécia Antiga), o que aumenta a durabilidade didática do livro. Ver [[wiki/concepts/essential-complexity]] e [[wiki/concepts/accidental-complexity]] — a fonte usa esse caso como prova de que tecnologia é acidental e princípios de design são essenciais.
+
+**Nota de contradição:** essa mesma fonte afirma que a Thoughtworks "foi fundada também pelo Martin Fowler". Isso contradiz o que já está registrado nesta entity (Fowler é Chief Scientist, não fundador da empresa) — tratado como possível imprecisão do autor do vídeo, não como fato verificado. Ver open questions em [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]].
+
 ## Termos e frameworks cunhados/popularizados, presentes nesta wiki
 
 - [[teste-de-integracao-estreito-vs-amplo]] — narrow vs. broad integration test, system test
@@ -30,10 +36,15 @@ Fowler é conhecido por identificar quando um termo popular carrega significados
 - [[tolerant-reader]] / [[wiki/sources/tolerant-reader]] — robustez de consumers em schema evolution
 - Repository e Active Record (via *PoEAA*) — ver [[design-patterns]]
 - Feature Toggles — ver [[wiki/sources/feature-flags]]
-- [[contract-testing]] — terminologia (`ContractTest`) usada de forma consistente entre suas fontes
+- [[contract-testing]] — terminologia (`ContractTest`) usada de forma consistente entre suas fontes; artigo próprio original chamava-se "Integration Contract Test", renomeado depois para "Contract Test" quando o termo mais curto ganhou adoção na indústria — ver [[wiki/sources/contract-test-martin-fowler]]
+- [[wiki/concepts/self-initializing-fake]] — recomenda esse padrão de Fake auto-validável como técnica para construir doubles usados em contract tests
 - [[test-doubles]] — divulgou o termo guarda-chuva "TestDouble" no bliki em 2006, mas a taxonomia dos cinco tipos (Dummy/Fake/Stub/Spy/Mock) é de autoria de [[wiki/entities/gerard-meszaros]], não dele — ver [[wiki/sources/test-double-martin-fowler]]
 - [[wiki/concepts/seedwork]] — termo cunhado por ele para descrever frameworks mínimos reconstruídos por cada time, a partir de discussão originada num post de Michael Feathers
 - [[wiki/concepts/application-boundary]] — tese de 2003 de que "aplicações são construções sociais", argumentando contra a previsão da época de que SOA tornaria aplicações obsoletas — ver [[wiki/sources/application-boundary-martin-fowler]]
+
+## Hospeda, mas não escreve: Consumer-Driven Contracts
+
+[[wiki/sources/consumer-driven-contracts-martin-fowler]] (2006) é um artigo publicado no site de Fowler mas escrito por [[wiki/entities/ian-robinson]], da Thoughtworks — cunha o padrão Consumer-Driven Contracts, hoje frequentemente associado ao nome de Fowler por estar no seu domínio. A distinção autor vs. host é registrada explicitamente na fonte, na mesma linha da precisão terminológica que caracteriza este entity (ver seção acima).
 
 ## Testemunha e participante da origem do JUnit
 
@@ -56,9 +67,12 @@ Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter us
 ## Key Sources
 
 - [[wiki/sources/integration-test-martin-fowler]]
+- [[wiki/sources/contract-test-martin-fowler]]
 - [[wiki/sources/test-double-martin-fowler]]
 - [[wiki/sources/xunit-martin-fowler]]
 - [[wiki/sources/como-evitar-over-engineering-david-farley]]
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]]
 - [[wiki/sources/cognitive-debt-margaret-storey]] — Future of Software Engineering Retreat
 - [[wiki/sources/application-boundary-martin-fowler]] — aplicações como construções sociais
+- [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] — motivos da 2ª edição de Refactoring, 20 anos depois
+- [[wiki/sources/consumer-driven-contracts-martin-fowler]] — artigo de Ian Robinson hospedado no site de Fowler, não escrito por ele

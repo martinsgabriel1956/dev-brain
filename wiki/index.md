@@ -1,7 +1,9 @@
 ---
 type: index
-date_updated: 2026-07-24
+date_updated: 2026-07-27
 ---
+
+
 
 
 
@@ -14,6 +16,7 @@ date_updated: 2026-07-24
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]] | Percurso de 70 anos da autenticação: user ID sem senha (time-sharing anos 60) → senha com hash+salt (Unix, 1976) → MFA (sei/tenho/sou) → segundo fator (RSA SecurID → HOTP/TOTP → U2F/WebAuthn) → biometria (3 gerações) → identidade federada (SSO → OAuth 2.0 → OpenID Connect) → JWT com Access/Refresh Token |
 | [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] | Jogos e redes sociais treinam o cérebro para problemas de escopo fechado (objetivo + caminho previsível); vida real exige operacionalizar problemas de escopo aberto e trocar foco de resultado por ação; "burrice" costuma ser inexperiência, cuja cura é experimentar (base: playlist do Dr. Alok Kanojia) |
 | [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]] | Código Fonte TV: Mitos e Fable 5 (Anthropic) e GPT 5.6 (OpenAI) — modelos de IA capazes de achar vulnerabilidades de software em escala inédita (falhas de décadas em OpenBSD, FFmpeg, kernel Linux), restritos ao consórcio Glasswing e depois bloqueados pelo governo dos EUA após a NSA relatar sistemas confidenciais comprometidos em horas; jailbreak do Fable 5 documentado (702/7.828 tentativas); Japão (Sakana AI/Fugo) e China (360/Tulong Fang, Zhipu AI/GLM 5.2) já reivindicam capacidade equivalente |
 | [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] | Bernardo Lobato: estudar microsserviços vale a pena mesmo sem usar em produção, porque funciona como eixo unificado de aprendizado (bounded context, circuit breaker, saga, observabilidade, mensageria, times autônomos); relato pessoal de retorno ao mercado após anos em monólitos legados; fundamentos como o que permite curar sugestões de IA |
@@ -143,9 +146,11 @@ date_updated: 2026-07-24
 | [[wiki/sources/5-ou-6-dicas-para-projetos-novos]] | Checklist do primeiro dia de um projeto novo: escolha de stack (aprender vs. monetizar), estrutura documentada antes de codar, deploy imediato do boilerplate com CD automático, ORM mínima com migrations desde o dia 1, testes na pipeline antes de features, README + AGENTS.md |
 | [[wiki/sources/akita-discurso-howard-roark-a-nascente-ayn-rand]] | Akita lê o discurso de Howard Roark (*A Nascente*, Ayn Rand): criador vs. parasita, independência como necessidade básica de quem cria, crítica ao altruísmo como doutrina coercitiva |
 | [[wiki/sources/useeffect-problemas-e-solucoes]] | Três anti-padrões de `useEffect`: estado derivado sincronizado via effects encadeados, stale closure em contadores, fetch sem AbortController — "o melhor effect é o que você deleta" |
+| [[wiki/sources/contract-test-martin-fowler]] | Bliki de Fowler (2011): mantém testes contra um double + um segundo conjunto de contract tests que confere periodicamente se o double reflete o serviço real; recomenda SelfInitializingFake |
 | [[wiki/sources/integration-test-martin-fowler]] | Martin Fowler desambigua "integration test": estreito (double + contract test, rápido) vs. amplo (serviços reais, lento); confusão irmã com unit test solitário/sociável |
 | [[wiki/sources/test-double-martin-fowler]] | Fonte primária do termo "Test Double" (bliki, 2006): Dummy/Fake/Stub/Spy/Mock — taxonomia de Gerard Meszaros, relatada e divulgada por Fowler, não inventada por ele |
 | [[wiki/sources/xunit-martin-fowler]] | Fonte primária da história do JUnit (bliki, 2006): do framework caseiro de Kent Beck em Smalltalk ao voo com Erich Gamma na OOPSLA 1997 até a proliferação de ports que virou a família "Xunit" |
+| [[wiki/sources/consumer-driven-contracts-martin-fowler]] | Ian Robinson (2006), publicado no site de Fowler mas não escrito por ele: cunha Consumer-Driven Contracts — modelo de três camadas (Provider/Consumer/Consumer-Driven Contract) e o Must Ignore pattern de extensibilidade de schema |
 | [[wiki/sources/gate-de-qualidade-definicoes-formais]] | Três definições formais de Quality Gate da literatura (checklist/aprovação por gate, milestone com critérios pré-definidos, ponto de verificação de Schneider) e suas características estruturais: critérios de entrada/saída, disparo por critério (não data), resultado binário, gates em paralelo |
 | [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] | Quality gate com padrão ratchet (baseline congelada só pode melhorar/empatar) no projeto Strawberry; babysitting de PR pelo próprio agente de IA; pipeline de CI real (npm audit em dois níveis, jscpd para duplicação); comentários no código como contexto recuperável por agentes via grep |
 | [[wiki/sources/iso-27001-dicionario-programador]] | SGSI organizado em torno da tríade CIA; Anexo A 2022 com 93 controles em 4 temas; controles A.8.28/A.5.15/A.5.8/A.8.25/A.5.3 relevantes para devs; Policy as Code (OPA/Gatekeeper) como implementação; ISO 42001 para governança de IA |
@@ -176,6 +181,7 @@ date_updated: 2026-07-24
 | [[wiki/sources/design-pattern-adapter]] | Renato Augusto: classe de negócio acoplada via `new` a uma lib externa de PDF (DomPDF) fere SRP e é intestável — Adapter extrai uma interface própria do domínio, e trocar de lib (DomPDF → TCPDF) passa a exigir só um novo adaptador |
 | [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] | Palestra em Amsterdã: OpenTelemetry como padrão vendor-neutral roteado por um Collector central; agente de IA via Grafana MCP correlaciona métricas/logs/traces sozinho e acha causa raiz em código — "o ouro está nos dados, não na IA" |
 | [[wiki/sources/o-que-e-refatoracao-quando-usar]] | Bernardo Lobato: refatoração é mudar estrutura interna sem alterar comportamento externo — dois chapéus de Kent Beck, God Class nascendo sprint a sprint sob prazo, testes na base da pirâmide como rede de segurança, passos pequenos, refatoração oportunista vs. planejada |
+| [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] | Motivos da 2ª edição de Refactoring 20 anos depois (Java datado → JS, locadora de vídeos → peças de teatro); analogia de jardinagem vs. construção civil; duas motivações de Fowler e seis situações do Pragmatic Programmer para refatorar |
 | [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] | Ownership (um dono por valor), borrowing (`&`/`&mut` — N leitores OU 1 escritor) e lifetimes (referência nunca outlive o valor) eliminam use-after-free, double-free e data races em compile-time, sem GC — trade-off: aprendizado e compilação mais lentos |
 | [[wiki/sources/cognitive-debt-margaret-storey]] | Fonte primária de "cognitive debt": dívida técnica mora no código, dívida cognitiva mora na cabeça do time — fundamentada na teoria de Peter Naur (1985) de que um programa é uma teoria, não o código-fonte |
 | [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] | Episódio CDF Café: produtividade com IA é real mas custo sobe (caso Uber), Gartner projeta custo de codificação superando salário médio até 2028, 59% das empresas usam IA como bode expiatório para demissões, Meta admite erro de reestruturação, capital de tokens (Nadella) |
@@ -186,8 +192,22 @@ date_updated: 2026-07-24
 | [[wiki/sources/application-boundary-martin-fowler]] | Martin Fowler (bliki, 2003): aplicações são construções sociais — devs, negócio e financiadores enxergam "unidade única" de formas diferentes; fronteiras são traçadas por política, não por critério técnico; contra a previsão de que SOA extinguiria aplicações
 | [[wiki/sources/papinho-tech-solo-adaptabilidade]] | Vestimenta e comunicação são adaptação estratégica ao contexto, não perda de essência; recusa em se adaptar fecha portas; comunicação muda por nível hierárquico e por canal de conteúdo |
 | [[wiki/sources/hermes-agent-open-claw-learning-loop]] | Hermes Agent (open source, MIT): closed-loop skill learning system de 5 etapas sobre memória em três camadas (sessão/persistente/skill) indexada via FTS5; gancho é o bug real de billing no Claude Max 20 disparado pela string "hermes" no Git history |
+| [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] | Timeout não distingue falha, processamento em andamento ou sucesso com resposta perdida; chave de idempotência nasce no cliente por intenção (não por conteúdo); corrida entre tentativas resolvida por INSERT atômico; idempotência ≠ transação (problemas complementares); Outbox/Inbox propaga a identidade entre fronteiras de serviço; identidades de negócio por produto (saque ID, emissão ID, crédito ID, client order ID) |
 
 ## Concepts
+
+### Autenticação & Identidade
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/mfa-multifator-autenticacao]] | Três categorias de fator (sabe/tem/é) — dois fatores da mesma categoria não valem como MFA de verdade |
+| [[wiki/concepts/otp-hotp-totp]] | Código de 6 dígitos a partir de seed + relógio ou contador — RSA SecurID proprietário até HOTP/TOTP padronizado pela IETF |
+| [[wiki/concepts/webauthn-fido2-u2f]] | Criptografia assimétrica em vez de segredo compartilhado — chave privada nunca sai do dispositivo, phishing-resistant por design |
+| [[wiki/concepts/jwt]] | Token stateless com header.payload.signature — Access Token curto + Refresh Token revogável resolve o dilema revogação vs. escala |
+| [[wiki/concepts/oauth2]] | Framework de autorização (não autenticação) — delegação de acesso com escopo limitado sem compartilhar senha |
+| [[wiki/concepts/openid-connect]] | Camada de autenticação sobre OAuth 2.0 — ID Token (JWT) verificável via JWKS, base do "Entrar com Google" |
+| [[wiki/concepts/sso-single-sign-on]] | Autenticar uma vez num Identity Provider, todos os sistemas confiam — SAML legado vs. OIDC moderno |
+| [[wiki/concepts/sessoes-http-cookies]] | Sessão stateful com armazenamento central (Redis) — dependência única que o JWT stateless elimina |
 
 ### Onboarding & Aprendizado de Codebase
 
@@ -660,8 +680,9 @@ date_updated: 2026-07-24
 
 | Página | Hook |
 |---|---|
-| [[wiki/concepts/idempotencia]] | Mesmo resultado não importa quantas vezes a operação executa — pré-requisito para retry seguro; chave gerada pelo servidor (hash dos campos) é mais robusta contra abuso que chave enviada pelo cliente |
+| [[wiki/concepts/idempotencia]] | Mesmo resultado não importa quantas vezes a operação executa — pré-requisito para retry seguro; chave gerada pelo servidor (hash dos campos) é mais robusta contra abuso que chave enviada pelo cliente; corrida entre tentativas concorrentes resolvida por INSERT atômico, não SELECT+INSERT |
 | [[wiki/concepts/post-redirect-get]] | Redirect 303 após POST evita reenvio acidental de formulário — não protege contra reenvio via script, só via navegador |
+| [[wiki/concepts/inbox-pattern]] | Complementar ao Outbox do lado de quem consome — tabela `inbox_events` com unique constraint por `provedor + event_id` impede reaplicar o efeito de um webhook ou evento reentregue |
 
 ### Estratégias de Deploy
 
@@ -846,6 +867,8 @@ date_updated: 2026-07-24
 | [[wiki/concepts/test-doubles]] | Dummy/Stub/Fake/Spy/Mock (Meszaros) — Fake robusto testa o contrato, Mock frágil testa o nome do método |
 | [[wiki/concepts/seedwork]] | Framework mínimo que cada time reconstrói por conta própria em vez de compartilhar um só — origem do framework de testes de Kent Beck antes do JUnit |
 | [[wiki/concepts/contract-testing]] | Consumer-Driven Contracts + Pact — valida que dois serviços concordam com o formato da comunicação sem rodar juntos |
+| [[wiki/concepts/self-initializing-fake]] | Fake que se autovalida contra o serviço real e vira snapshot local — técnica de Fowler para doubles usados em contract testing |
+| [[wiki/concepts/must-ignore-pattern]] | Ponto de extensão de schema que um consumidor pode ignorar com segurança — origem do padrão Consumer-Driven Contracts (Ian Robinson, 2006) |
 | [[wiki/concepts/piramide-de-testes]] | Unitário → Integração → E2E; quanto mais alto, mais lento, caro e frágil |
 | [[wiki/concepts/testes-integracao-banco-real]] | Nunca mockar o banco em testes de integração — o valor do teste está em validar a query real |
 | [[wiki/concepts/teste-de-integracao-estreito-vs-amplo]] | Fowler separa "integration test" em estreito (double + contract test, rápido) e amplo (serviços reais, lento) |
@@ -880,13 +903,16 @@ date_updated: 2026-07-24
 | [[wiki/concepts/sql-alem-do-basico]] | JOINs, agregações e subqueries — sinal de que o dev saiu do CRUD básico e entende como o banco funciona de verdade |
 | [[wiki/concepts/curriculo-vs-portfolio]] | Currículo é promessa de onde você esteve; portfólio é prova do que você produziu |
 | [[wiki/concepts/otimizacao-ats-curriculo]] | Repetir a stack-alvo 2-3x no currículo para passar no filtro automático (ATS) antes de qualquer avaliação humana |
-| [[wiki/concepts/refatoracao]] | Mudar estrutura interna sem alterar comportamento externo — dois chapéus de Kent Beck, passos pequenos, testes na base da pirâmide como rede de segurança, refatoração oportunista vs. planejada |
+| [[wiki/concepts/refatoracao]] | Mudar estrutura interna sem alterar comportamento externo — dois chapéus de Kent Beck, passos pequenos, testes na base da pirâmide como rede de segurança, refatoração oportunista vs. planejada, analogia de jardinagem, seis situações do Pragmatic Programmer |
 | [[wiki/concepts/dois-chapeus-kent-beck]] | Adicionar funcionalidade e refatorar são atividades mutuamente exclusivas no tempo — cada uma com sua própria disciplina de validação |
+| [[wiki/concepts/entropia-de-software]] | Tendência natural de um sistema degradar com o tempo mesmo sem erro deliberado — refatoração como poda contínua de um jardim, não construção pontual de um prédio |
 
 ## Entities
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/rsa-security]] | Criadora do SecurID — token de hardware que popularizou o segundo fator de autenticação nos anos 90 |
+| [[wiki/entities/ietf]] | Padronizou HOTP (RFC 4226) e TOTP (RFC 6238), tirando a autenticação por OTP das mãos de fornecedores proprietários |
 | [[wiki/entities/sakana-ai]] | Empresa japonesa de IA — Fugo, pool de modelos que superou Fable 5 e alguns benchmarks do Mitos preview em cybersegurança |
 | [[wiki/entities/alok-kanojia]] | Psiquiatra formado em Harvard (canal HealthyGamer/"Dr. K") — fonte primária citada sobre o impacto de jogos no cérebro e problemas de escopo aberto vs. fechado |
 | [[wiki/entities/erick-wendel]] | Criador de conteúdo brasileiro sobre Node.js e testes automatizados — método de 3 pilares para produtividade com testes |
@@ -966,6 +992,8 @@ date_updated: 2026-07-24
 | [[wiki/entities/ayn-rand]] | Escritora e filósofa russo-americana — criadora do Objetivismo; autora de *A Nascente* |
 | [[wiki/entities/martin-fowler]] | Chief Scientist Thoughtworks, autor de *Refactoring* e *PoEAA* — mantém o bliki, referência em terminologia de testes e arquitetura |
 | [[wiki/entities/gerard-meszaros]] | Autor de *xUnit Test Patterns* (2007) — criou a taxonomia de Test Doubles (Dummy/Fake/Stub/Spy/Mock) divulgada por Martin Fowler |
+| [[wiki/entities/thoughtworks]] | Consultoria de software onde Martin Fowler é Chief Scientist — fundada por Roy Singham, não por Fowler (contradição sinalizada contra fonte que afirma o contrário) |
+| [[wiki/entities/ian-robinson]] | Principal Consultant na Thoughtworks — autor do artigo de 2006 que cunha o padrão Consumer-Driven Contracts, hospedado no site de Martin Fowler mas não escrito por ele |
 | [[wiki/entities/david-farley]] | Coautor de *Continuous Delivery* com Jez Humble; envolvido no LMAX; refuta o "triângulo de ferro" com dados DORA |
 | [[wiki/entities/mercado-livre]] | Maior e-commerce/fintech da América Latina — combina ISO 27001 + PCI-DSS + Zero Trust; adotante consolidado de Go em produção |
 | [[wiki/entities/andre-casciotti]] | Criador de conteúdo brasileiro, canal Próximo Nível — carreira dev, granularidade de mudança, síndrome do impostor em todo nível de carreira, decomposição de tarefas |

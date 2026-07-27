@@ -3,8 +3,8 @@ type: concept
 title: "Livros Recomendados Para Programador"
 aliases: ["livros de programação", "biblioteca do dev", "clean code vs refactoring"]
 date_created: 2026-07-10
-date_updated: 2026-07-10
-source_count: 1
+date_updated: 2026-07-27
+source_count: 2
 tags: [carreira, aprendizado, recursos, livros]
 skill: tech-mentor-leadership
 status: stub
@@ -26,6 +26,11 @@ Seleção de livros técnicos avaliados não só pela qualidade do conteúdo, ma
 
 O contraste deliberado entre Clean Code (ressalva) e Refactoring (endosso pleno) é o ponto mais opinativo da fonte — vale contrastar com outras fontes deste wiki que citem esses livros, se surgirem.
 
+## Por que continuam relevantes 20 anos depois
+
+[[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] complementa o endosso a *Refactoring* e ao *Pragmatic Programmer* com uma explicação de fundo: ambos tratam de [[wiki/concepts/essential-complexity|princípios essenciais]], não de tecnologia específica — daí continuarem valendo a pena 20 anos após a primeira edição de cada um. A 2ª edição de *Refactoring* trocou o código de exemplo (Java datado → JavaScript) e o domínio didático (locadora de vídeos → peças de teatro) exatamente para renovar o "acidente" (tecnologia) mantendo a "essência" (princípios) intacta. Ver [[wiki/concepts/accidental-complexity]].
+
 ## Key sources
 
 - [[wiki/sources/5-recursos-para-ser-um-desenvolvedor-melhor]]
+- [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]]

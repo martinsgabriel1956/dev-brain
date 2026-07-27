@@ -3,8 +3,8 @@ type: concept
 title: "Test Doubles"
 aliases: ["dublê de teste", "mock stub fake spy", "xunit test patterns"]
 date_created: 2026-04-22
-date_updated: 2026-07-19
-source_count: 5
+date_updated: 2026-07-27
+source_count: 6
 tags: [testes, test-doubles, mock, stub, fake, spy, dummy]
 skill: tech-mentor-testing
 status: stable
@@ -65,6 +65,7 @@ O termo guarda-chuva "Test Double" (analogia a dublê de cinema) foi divulgado p
 - [[race-condition]] — MSW ajuda a testar race conditions de rede
 - [[teste-de-integracao-estreito-vs-amplo]] — uso de doubles fora do unitário, em testes de integração estreitos
 - [[unit-test-solitario-vs-sociavel]] — doubles definem se um unit test é solitário ou sociável
+- [[wiki/concepts/self-initializing-fake]] — Fake que se autovalida contra o serviço real, técnica recomendada por Fowler para doubles usados em [[contract-testing]]
 
 ## Limite do mock: verifica a chamada, não o resultado
 
@@ -76,4 +77,5 @@ Mockar um banco de dados permite verificar que `db.save` foi chamado, mas não c
 - [[wiki/sources/test-double-martin-fowler]] — fonte primária do termo, com atribuição correta da taxonomia a Gerard Meszaros
 - [[wiki/sources/xunit-martin-fowler]] — origem histórica da família de frameworks Xunit que dá nome ao livro de Meszaros
 - [[wiki/sources/integration-test-martin-fowler]]
+- [[wiki/sources/contract-test-martin-fowler]] — SelfInitializingFake como técnica para doubles usados em contract testing
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — limite do mock de banco: assertion de chamada não prova persistência

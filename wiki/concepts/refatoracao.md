@@ -3,8 +3,8 @@ type: concept
 title: "Refatoração"
 aliases: ["refactoring", "refatorar"]
 date_created: 2026-07-15
-date_updated: 2026-07-15
-source_count: 1
+date_updated: 2026-07-27
+source_count: 2
 tags: [refactoring, clean-code, craftsmanship, design-de-software, tech-debt]
 skill: tech-mentor-backend
 status: draft
@@ -21,7 +21,15 @@ Processo de modificar a estrutura interna de um sistema de software **sem altera
 
 ## Por que o design degrada com o tempo
 
-Todo sistema tende a começar organizado. A cada nova feature, cada hotfix sob pressão de prazo, o design bem pensado vai sendo "atropelado" — um `if` aqui, uma regra ali, até uma classe que começou coesa virar um [[wiki/concepts/god-object]] que ninguém tem coragem de tocar. Um compilador não se importa se o código está feio; o humano sim — código com design ruim é difícil de entender, difícil de saber tudo que precisa mudar, e por isso mais propenso a bugs.
+Todo sistema tende a começar organizado. A cada nova feature, cada hotfix sob pressão de prazo, o design bem pensado vai sendo "atropelado" — um `if` aqui, uma regra ali, até uma classe que começou coesa virar um [[wiki/concepts/god-object]] que ninguém tem coragem de tocar. Um compilador não se importa se o código está feio; o humano sim — código com design ruim é difícil de entender, difícil de saber tudo que precisa mudar, e por isso mais propenso a bugs. Ver [[wiki/concepts/entropia-de-software]].
+
+### A analogia da jardinagem (Pragmatic Programmer)
+
+[[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] registra uma analogia do *Pragmatic Programmer*: desenvolvimento de software é comparado com mais frequência a construção civil, mas essa analogia é enganosa — um prédio pronto não continua "vivo". Uma analogia mais adequada é a de jardinagem: plantas daninhas crescem, galhos saem em excesso, e é preciso podar continuamente para manter o jardim saudável. Refatoração é essa poda — uma atividade de rotina (como cortar grama), não um projeto esporádico.
+
+### Refatoração como mudança mínima, isolada
+
+A mesma fonte reforça a definição de Fowler com um exemplo concreto: renomear uma variável já é uma refatoração completa — muda a estrutura, não o comportamento. Isoladamente, uma única refatoração desse tipo pode parecer pequena demais para valer o esforço; o valor aparece na soma de muitas pequenas alterações feitas com frequência, não numa refatoração isolada e grande.
 
 ## Como não piorar o código refatorando
 
@@ -41,6 +49,21 @@ Segundo [[wiki/entities/martin-fowler]] (*Refactoring: Improving the Design of E
 
 Existem também **refatorações planejadas** (revisões de código dedicadas), mais raras que as oportunistas.
 
+### As duas motivações de Fowler
+
+Segundo [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]], Fowler resume as motivações para refatorar em duas: (1) você entendeu melhor o código e quer refletir esse entendimento na estrutura; (2) uma alteração planejada seria difícil de fazer no estado atual do código, e refatorar facilita essa mudança. A recomendação é alternar continuamente entre adicionar funcionalidade e refatorar, nunca parar de fazer as duas ao longo da vida do sistema.
+
+### Seis situações do Pragmatic Programmer
+
+A mesma fonte lista seis gatilhos concretos do *Pragmatic Programmer* para decidir refatorar:
+
+1. **Duplicação** — viola DRY (*don't repeat yourself*).
+2. **Falta de ortogonalidade** — código muito acoplado, que pede desacoplamento.
+3. **Conhecimento desatualizado** — você aprendeu algo novo sobre requisitos ou domínio que o código ainda não reflete.
+4. **Mudança de prioridades no uso real** — usuários reais revelam que partes tidas como importantes não são, e vice-versa.
+5. **Oportunidade de melhoria de performance** — refatorar mantendo o comportamento, mas com melhor desempenho.
+6. **Quando um teste está passando** — contraintuitivo, mas é o momento de maior segurança para alterar: o teste de regressão avisa se o comportamento quebrou.
+
 ## Quando NÃO refatorar
 
 - Algoritmo complicado (às vezes proprietário) que funciona desde a primeira versão e não precisa ser entendido/alterado agora — refatorar só compensa se for necessário mexer internamente naquele código.
@@ -59,8 +82,9 @@ Refatoração idealmente não é um "projeto" à parte que precisa de aprovaçã
 
 ## Relacionado
 
-[[wiki/concepts/dois-chapeus-kent-beck]] · [[wiki/concepts/tech-debt-como-ferramenta]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/piramide-de-testes]] · [[wiki/concepts/god-object]] · [[wiki/entities/martin-fowler]] · [[wiki/entities/kent-beck]]
+[[wiki/concepts/dois-chapeus-kent-beck]] · [[wiki/concepts/tech-debt-como-ferramenta]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/piramide-de-testes]] · [[wiki/concepts/god-object]] · [[wiki/concepts/entropia-de-software]] · [[wiki/concepts/essential-complexity]] · [[wiki/concepts/accidental-complexity]] · [[wiki/entities/martin-fowler]] · [[wiki/entities/kent-beck]]
 
 ## Key Sources
 
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]]
+- [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]]

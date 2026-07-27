@@ -3,9 +3,9 @@ type: concept
 title: "Validação de Assinatura de Webhook"
 aliases: ["webhook signature", "stripe-signature", "x-signature", "hmac webhook", "webhook validation"]
 date_created: 2026-07-04
-date_updated: 2026-07-10
-source_count: 2
-tags: [webhook, hmac, timing-attack, appsec, api-security]
+date_updated: 2026-07-27
+source_count: 3
+tags: [webhook, hmac, timing-attack, appsec, api-security, idempotencia, inbox]
 skill: tech-mentor-security
 status: stable
 ---
@@ -60,8 +60,10 @@ Esta página trata `createHmac` como caixa-preta — o suficiente para validar w
 - [[wiki/concepts/timing-attack]] — por que `===` em segredos é uma vulnerabilidade, não só um detalhe de implementação
 - [[wiki/concepts/idempotencia]] — o mesmo endpoint de webhook deve tratar reentrega do provedor sem duplicar efeito
 - [[wiki/concepts/hmac]] — mecânica interna do HMAC (ipad/opad, duas etapas de hash) e outro caso de uso: validar payload do próprio servidor em padrão [[wiki/concepts/local-first]]
+- [[wiki/concepts/inbox-pattern]] — o mecanismo persistente (`provedor + event ID`) por trás da deduplicação: a reentrega acontece mesmo quando o evento já foi processado com sucesso, porque é a *confirmação* que se perde, não o processamento em si
 
 ## Key Sources
 
 - [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]]
 - [[wiki/sources/hmac-integridade-mensagem-local-first-entrevista]]
+- [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] — por que o provedor reentrega mesmo após processamento bem-sucedido, e como o inbox persistente resolve isso sem depender só de deduplicação por header

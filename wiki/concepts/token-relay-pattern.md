@@ -3,8 +3,8 @@ type: concept
 title: "Token Relay Pattern"
 aliases: ["token relay", "identity propagation", "propagação de identidade", "user context propagation"]
 date_created: 2026-06-05
-date_updated: 2026-06-05
-source_count: 1
+date_updated: 2026-07-27
+source_count: 2
 tags: [token-relay, identity, autorizacao, jwt, oauth, microsservicos, arquitetura-seguranca]
 skill: tech-mentor-security
 status: stable
@@ -58,6 +58,11 @@ Token Relay é a implementação de [[concepts/defense-in-depth]] para identidad
 - Em Token Exchange (RFC 8693), validar que o escopo do token interno é menor ou igual ao do token original
 - Serviços internos não devem aceitar tokens de usuário direto da internet — só via gateway confiável
 
+## Relação com JWT e Ciclo de Vida de Tokens
+
+O token repassado costuma ser um [[wiki/concepts/jwt]] — Access Token de curta duração, obtido originalmente via [[wiki/concepts/oauth2]] ou [[wiki/concepts/openid-connect]]. A curta duração limita a janela de comprometimento mesmo quando o token viaja por múltiplos saltos internos; o Refresh Token correspondente nunca deveria ser repassado da mesma forma, já que sua exposição widening derrotaria o controle de revogação centralizado.
+
 ## Key Sources
 
 - [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
+- [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]

@@ -3,9 +3,9 @@ type: concept
 title: "Idempotência"
 aliases: ["idempotência", "idempotency", "idempotency key"]
 date_created: 2026-04-22
-date_updated: 2026-07-19
-source_count: 4
-tags: [distribuidos, resiliencia, api, retry, mensageria, double-spend, double-submit]
+date_updated: 2026-07-27
+source_count: 5
+tags: [distribuidos, resiliencia, api, retry, mensageria, double-spend, double-submit, webhook, fintech]
 skill: tech-mentor-system-design
 status: stable
 ---
@@ -81,6 +81,71 @@ Camadas complementares, cada uma cobrindo um ângulo diferente do problema:
 | Idempotency Key (hash gerado no servidor + storage compartilhado) | Sim | Sim |
 | Unique Constraint no banco (quando existe campo genuinamente único) | Sim | Sim — mas só se há campo único aplicável |
 
+## Por que o Timeout Sozinho Não Basta
+
+Um timeout só diz que o cliente não recebeu resposta a tempo — não diz se a operação falhou antes de chegar ao servidor, está em andamento, ou foi concluída e apenas a resposta se perdeu. O cliente não consegue diferenciar esses três casos olhando só para o relógio, e é exatamente por isso que ele retenta. A idempotência não existe para evitar o retry — existe para tornar o retry seguro diante dessa ambiguidade.
+
+## Resolvendo a Corrida: `INSERT` Atômico, Não `SELECT` + `INSERT`
+
+Comparar e depois inserir em duas etapas soltas deixa uma brecha: duas tentativas concorrentes podem consultar ao mesmo tempo, descobrir que a chave ainda não existe, e as duas começarem a processar. A chave primária (ou uma unique constraint) resolve isso deixando o **banco** decidir a vencedora de forma atômica:
+
+```sql
+-- Corrida resolvida pelo banco, não pela aplicação
+INSERT INTO idempotency_keys (key, request_hash, status)
+VALUES ($1, $2, 'processing')
+ON CONFLICT (key) DO NOTHING
+RETURNING key;
+-- linha retornada → esta requisição ganhou o direito de processar
+-- nenhuma linha retornada → outra tentativa já registrou a intenção; consultar o estado existente
+```
+
+Isso responde a pergunta que ficava em aberto em [[wiki/sources/double-spend-double-submit]] sobre qual mecanismo evita que dois requests concorrentes com a mesma chave processem simultaneamente antes do primeiro terminar.
+
+## Idempotência ≠ Transação — Dois Problemas Complementares
+
+[[wiki/concepts/distributed-transactions]] e idempotência resolvem problemas diferentes e não são substituíveis uma pela outra:
+
+| Proteção | O que evita |
+|---|---|
+| Transação | A operação ficar **pela metade** (débito sem crédito, status inconsistente) |
+| Idempotência | A operação **inteira** acontecer duas vezes |
+
+Quando o efeito financeiro mora no mesmo banco, o lançamento contábil (ver [[wiki/concepts/ledger-dupla-entrada]]) e a mudança do status da chave para `completed` devem confirmar na **mesma transação** — o banco nunca deve permitir uma chave concluída sem lançamento correspondente, nem um lançamento confirmado com a chave ainda aberta.
+
+## Cruzando Fronteiras de Serviço
+
+A janela mais difícil de proteger é quando a operação atravessa mais de um sistema e o processo cai no meio: o processador de pagamento externo pode ter aprovado a cobrança, mas o backend caiu antes de salvar a resposta local. Um registro `processing` isolado não prova, por si só, se o efeito externo já aconteceu.
+
+A solução é fazer a mesma identidade atravessar a fronteira: repassar a chave idempotente ao serviço seguinte (se ele aceitar esse contrato), ou manter uma referência estável para consultar e reconciliar o resultado antes de tentar criar outro efeito. Isso é o mesmo par de padrões usado para publicar e consumir eventos com segurança:
+
+- [[wiki/concepts/outbox-pattern]] no lado de quem publica o trabalho nascido numa transação local.
+- [[wiki/concepts/inbox-pattern]] no lado de quem consome — inclusive **webhooks**, onde o provedor pode reentregar o mesmo evento porque a confirmação de recebimento se perdeu, mesmo que o evento já tenha sido processado.
+
+Cada fronteira de serviço precisa manter a identidade da operação mesmo com entrega **at-least-once** (pelo menos uma vez) — o objetivo é produzir um efeito financeiro único, não impedir a reentrega em si.
+
+## Identidades de Negócio por Produto
+
+A mesma arquitetura de chave de idempotência se repete em diferentes produtos financeiros, cada um escolhendo sua própria identidade de negócio em vez de um UUID genérico:
+
+| Produto | Identidade | Papel |
+|---|---|---|
+| Carteira digital | Saque ID | Impede que o mesmo pedido de saque debite o saldo duas vezes |
+| Emissão de boleto | Emissão ID | Devolve o título já criado em vez de gerar outro documento para o mesmo faturamento |
+| Empréstimo | Crédito ID | Liga o contrato ao único crédito que deve entrar na conta |
+| Corretora | Client order ID | Recupera a ordem que já chegou à mesa de execução |
+
+Cancelar ou substituir uma ordem numa corretora cria uma **nova** intenção com outra identidade — não reaproveita a chave da ordem original.
+
+## Retenção da Chave (TTL)
+
+O tempo de retenção depende do produto: apagar cedo demais deixa um retry tardio repetir o efeito; guardar para sempre aumenta custo e complica a operação. A janela precisa cobrir o tempo real de retry e processamento, além de incluir webhooks e a conciliação daquele fluxo — não só a chamada síncrona original.
+
+## Testando a Garantia
+
+Desabilitar o botão após o clique melhora a UX, mas não protege o backend — duas abas abertas, retry automático da biblioteca HTTP, e um worker que reinicia depois de já ter concluído o efeito continuam possíveis. A garantia precisa morar perto da regra de negócio e do armazenamento que registra o efeito, não na UI.
+
+O teste mais revelador corta a resposta **depois** que o efeito acontece e **antes** que o cliente receba a confirmação — reproduzindo a mesma janela de incerteza que motiva o retry. Complementares: disparar duas requisições simultâneas com a mesma chave, duplicar a entrega de um webhook, e reiniciar um worker no ponto mais crítico. Em produção, a taxa de chaves repetidas e de conflitos de payload mostra se o cliente usa o contrato corretamente; operações presas em `processing` mostram onde o fluxo não fechou o resultado.
+
 ## Key Sources
 
 - [[sources/retry-backoff]]
@@ -88,3 +153,4 @@ Camadas complementares, cada uma cobrindo um ângulo diferente do problema:
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — idempotência como resposta ao webhook duplicado; errar at-least-once vs. exactly-once cobra o cliente em dobro ou perde o pedido
 - [[wiki/sources/double-spend-double-submit]] — double spend/double submit como o mesmo problema; chave de idempotência gerada no servidor via hash dos campos (mais robusta que chave enviada pelo cliente); janela de tempo de duplicidade como decisão de negócio
 - [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] — exemplo de [[wiki/concepts/kiss]] aplicado a uma checagem de status habilitados para reprocessamento (adjacente ao padrão de Idempotency Key, não idêntico)
+- [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] — por que o timeout sozinho não decide a causa; corrida resolvida por `INSERT` atômico em vez de `SELECT`+`INSERT`; idempotência vs. transação como proteções complementares; identidade cruzando fronteira de serviço via Outbox/Inbox; identidades de negócio por produto; TTL e testes de garantia

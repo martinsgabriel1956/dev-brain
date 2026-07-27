@@ -3,8 +3,8 @@ type: concept
 title: "Complexidade Acidental"
 aliases: ["complexidade acidental", "accidental complexity", "tech debt estrutural"]
 date_created: 2026-04-23
-date_updated: 2026-07-10
-source_count: 3
+date_updated: 2026-07-27
+source_count: 4
 tags: [accidental-complexity, tech-debt, fred-brooks, arquitetura, refactoring]
 skill: tech-mentor-system-design
 status: stable
@@ -51,6 +51,10 @@ A maioria do que times chamam de "tech debt" é complexidade acidental acumulada
 3. **Refatorar com cobertura** — complexidade acidental em código sem testes é a mais perigosa de mexer. Adicionar testes antes de refatorar.
 4. **Priorizar pelo custo** — complexidade no caminho crítico (deploy, onboarding, debugging) tem prioridade sobre complexidade em código estável.
 
+## Uso análogo: tecnologia como o lado que muda (não é o mesmo framing de Brooks)
+
+[[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] aplica "acidente" de forma mais solta que Brooks: não à complexidade dentro de um sistema, mas às tecnologias específicas usadas para ensinar princípios de refatoração — Java datado, uma classe (`Vector`) em desuso, um domínio didático obsoleto (locadora de vídeos) — tudo isso trocado na 2ª edição de *Refactoring* sem alterar os princípios essenciais do livro. É extensão popular da dicotomia, útil para justificar por que conhecimento específico de tecnologia tem prazo de validade curto e princípios de design não têm.
+
 ## Modelo cascata como gerador estrutural de complexidade acidental
 
 [[wiki/sources/filosofia-do-design-de-software-introducao]] (John Ousterhout) descreve um mecanismo causal distinto de Fred Brooks para gerar complexidade acidental: no modelo cascata, os problemas do design inicial só ficam aparentes depois que a implementação já está avançada, e o processo não tem mecanismo para revisar o design nesse ponto — então desenvolvedores remendam os problemas sem mudar o design geral, causando "explosão de complexidade". Ver [[wiki/concepts/modelo-cascata-vs-desenvolvimento-incremental]]. Isso complementa o diagnóstico de Brooks (abstração errada, decisões não reconciliadas, funções god) com uma causa de processo: não é só decisão individual malfeita, é a ausência estrutural de um ponto de retorno ao design.
@@ -69,3 +73,4 @@ A maioria do que times chamam de "tech debt" é complexidade acidental acumulada
 - [[sources/conceitos-que-ninguem-ensina]]
 - [[sources/overengineering-carol-ate-quinta]]
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]
+- [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] — uso análogo (não-Brooks) aplicado a tecnologia de exemplo didático vs. princípios de refatoração

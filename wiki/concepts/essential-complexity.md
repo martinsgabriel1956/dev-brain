@@ -3,8 +3,8 @@ type: concept
 title: "Complexidade Essencial"
 aliases: ["complexidade essencial", "essential complexity", "complexidade inerente"]
 date_created: 2026-04-23
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-07-27
+source_count: 3
 tags: [essential-complexity, fred-brooks, arquitetura, domain-complexity]
 skill: tech-mentor-system-design
 status: stable
@@ -51,6 +51,10 @@ Domain-Driven Design é, em essência, uma metodologia para lidar bem com comple
 - [[concepts/ddd-strategic]] — estratégia para gerenciar complexidade essencial de domínio
 - [[entities/fred-brooks]] — autor do conceito
 
+## Uso análogo: durabilidade de conhecimento técnico (não é o mesmo framing de Brooks)
+
+[[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] usa "essência vs. acidente" numa aplicação mais solta que a de Brooks: não fala de complexidade dentro de um sistema, e sim de por que certos livros técnicos (*Refactoring*, *Pragmatic Programmer*) continuam relevantes 20 anos depois — porque tratam de princípios essenciais e duradouros de desenvolvimento de software (refatoração, testes, design), enquanto o "acidente" nessa leitura é a tecnologia específica usada nos exemplos (linguagem de programação, domínio didático), que muda e some. É uma extensão popular da dicotomia, não uma citação direta de Brooks — vale manter a distinção clara entre os dois usos.
+
 ## Gatilhos concretos que expõem a complexidade essencial
 
 [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] lista gatilhos bem concretos e cotidianos que forçam a complexidade essencial a aparecer para quem só opera CRUD: o sistema crescer, o usuário dobrar, a rede cair no meio de uma transação, duas requisições chegarem ao mesmo tempo. Cada um desses gatilhos corresponde a um domínio específico do "mundo debaixo do CRUD" — [[wiki/concepts/protocolo-de-rede|redes]], [[wiki/concepts/back-pressure|streams]], [[wiki/concepts/idempotencia|mensageria]] — que a fonte percorre em detalhe.
@@ -59,3 +63,4 @@ Domain-Driven Design é, em essência, uma metodologia para lidar bem com comple
 
 - [[sources/conceitos-que-ninguem-ensina]]
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — gatilhos concretos (escala, rede, concorrência) que forçam a complexidade essencial a emergir para o operador de CRUD
+- [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] — uso análogo (não-Brooks) aplicado à durabilidade de princípios técnicos vs. tecnologias específicas

@@ -2,6 +2,56 @@
 
 ---
 
+## [2026-07-27] ingest | Contract Test (Martin Fowler)
+
+**Fonte:** [[wiki/sources/contract-test-martin-fowler]] — bliki de Martin Fowler, publicado em 12/01/2011, originalmente chamado "Integration Contract Test" e renomeado depois para "Contract Test". Conteúdo salvo como paráfrase/resumo em PT-BR (não tradução literal) em `raw/contract-test-martin-fowler.md`, seguindo o mesmo padrão de `raw/integration-test-martin-fowler.md` e `raw/test-double-martin-fowler.md`.
+
+**Skill carregada:** `tech-mentor-testing`, lida de `/home/nemomartins/Documentos/new/skills/tech-mentor-testing/SKILL.md` e a referência `references/test-patterns.md` (seção de Contract Testing/Test Doubles no índice da skill).
+
+**Páginas criadas:**
+- `raw/contract-test-martin-fowler.md`
+- `wiki/sources/contract-test-martin-fowler.md`
+- `wiki/concepts/self-initializing-fake.md` — conceito novo (stub): Fake que se autovalida contra o serviço real, técnica recomendada por Fowler para doubles usados em contract tests
+
+**Páginas atualizadas:**
+- `wiki/concepts/contract-testing.md` — nova seção sobre cadência de execução, tratamento de falha e o que o contract test de fato valida (formato, não dado)
+- `wiki/concepts/test-doubles.md` — backlink para `self-initializing-fake`
+- `wiki/concepts/teste-de-integracao-estreito-vs-amplo.md` — novo Key Source
+- `wiki/entities/martin-fowler.md` — nota sobre o rename do artigo ("Integration Contract Test" → "Contract Test") e novo Key Source
+- `wiki/index.md` — novas linhas em Sources e Concepts
+
+**Notas:** nenhuma contradição encontrada — o conteúdo do artigo é consistente com o que já estava registrado em [[wiki/concepts/contract-testing]] via [[wiki/sources/integration-test-martin-fowler]]; esta ingestão adiciona detalhe operacional (cadência, tratamento de falha, SelfInitializingFake) que não estava coberto antes. Questão em aberto: o padrão `SelfInitializingFake` em si (implementação completa) está descrito em outro bliki entry de Fowler ainda não ingerido — candidato a próxima ingestão.
+
+## [2026-07-27] ingest | História da Autenticação: de Senha a Tokens, Criptografia Assimétrica e Identidade Federada
+
+**Fonte:** [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]] — transcrição de vídeo em português colada pelo usuário no chat (fala transcrita automaticamente, sem pontuação/parágrafos), já em português (sem necessidade de tradução), reorganizada em seções com headers, pontuação corrigida e repetições de fala limpas. Salva em `raw/historia-autenticacao-senha-mfa-oauth-jwt.md`. Autor do vídeo não identificado explicitamente no texto.
+
+**Skill carregada:** `tech-mentor-security`, lida de `/home/nemomartins/Documentos/new/skills/tech-mentor-security/SKILL.md` e a referência específica `references/appsec-authn-authz.md` (JWT, OAuth 2.0/OIDC, sessão segura, Passkeys/WebAuthn/FIDO2), conforme a linha do índice da skill sobre Autenticação/Autorização.
+
+**Páginas criadas:**
+- `raw/historia-autenticacao-senha-mfa-oauth-jwt.md`
+- `wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt.md`
+- `wiki/concepts/mfa-multifator-autenticacao.md` — conceito novo (3 categorias de fator: sabe/tem/é)
+- `wiki/concepts/otp-hotp-totp.md` — conceito novo (RSA SecurID → HOTP → TOTP)
+- `wiki/concepts/webauthn-fido2-u2f.md` — conceito novo (U2F, FIDO2, WebAuthn, Passkeys)
+- `wiki/concepts/jwt.md` — conceito novo (estrutura, Access/Refresh Token)
+- `wiki/concepts/oauth2.md` — conceito novo (Authorization Code Flow, Device Flow)
+- `wiki/concepts/openid-connect.md` — conceito novo (ID Token, JWKS, identidade federada)
+- `wiki/concepts/sso-single-sign-on.md` — conceito novo (Identity Provider, SAML vs. OIDC)
+- `wiki/concepts/sessoes-http-cookies.md` — conceito novo (sessão stateful vs. JWT stateless)
+- `wiki/entities/rsa-security.md` — stub, criadora do SecurID
+- `wiki/entities/ietf.md` — stub, padronizadora de HOTP/TOTP
+
+**Páginas atualizadas:**
+- `wiki/concepts/password-hashing.md` — nova seção "Origem Histórica: Unix (1976)"; `source_count` 2 → 3
+- `wiki/concepts/mobile-biometria.md` — nova seção "Três Gerações de Biometria por Impressão Digital"; `source_count` 1 → 2
+- `wiki/concepts/token-relay-pattern.md` — nova seção relacionando o token repassado a JWT/OAuth/OIDC; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; nova subseção "Autenticação & Identidade" em Concepts com 8 linhas; duas novas linhas em Entities (`rsa-security`, `ietf`)
+
+**Notas:** Fonte se conecta ao cluster de criptografia já existente — [[wiki/concepts/criptografia]] (assinatura digital com par de chaves) e [[wiki/concepts/ssh]] (mesmo princípio de challenge-response sem transmitir a chave privada) já documentavam o fundamento matemático que o vídeo aplica a U2F/WebAuthn. Nenhuma contradição encontrada com conceitos existentes de hashing/senha. Duas questões em aberto ficaram registradas na fonte: a atribuição de "criação do OAuth" só ao Twitter é uma simplificação (foi um grupo de empresas web), e nenhuma fonte primária (RFC, spec oficial, paper de biometria) foi lida diretamente — todas as claims vêm de uma transcrição de vídeo sem citação de fontes primárias, tratadas como confiança média-alta no máximo.
+
+---
+
 ## [2026-07-24] ingest | Problemas de Escopo Aberto vs. Escopo Fechado (e Por Que Isso Explica a "Preguiça")
 
 **Fonte:** [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] — transcrição de vídeo em português colada pelo usuário no chat (fala transcrita automaticamente, sem pontuação/parágrafos), já em português (sem necessidade de tradução), reorganizada em seções, limpa de repetições e hesitações de fala. Salva em `raw/problemas-de-escopo-aberto-vs-fechado.md`. Autor do vídeo não identificado explicitamente no texto; conteúdo atribuído pelo próprio autor a uma playlist de 15 vídeos do Dr. Alok Kanojia (Harvard, canal HealthyGamer).
@@ -3518,5 +3568,81 @@ Entities:
 - `wiki/index.md` — nova linha em Sources; nova linha em Entities (Sakana AI)
 
 **Notas:** Fonte é transcrição de vídeo (áudio-para-texto automático) sobre uma nova subclasse de modelos frontier especializados em cybersegurança ofensiva/defensiva (Mitos, Fable 5 da Anthropic; GPT 5.6 da OpenAI) que motivou bloqueio de acesso pelo governo dos EUA após a NSA relatar sistemas confidenciais comprometidos em horas. Reforça diretamente [[wiki/sources/ai-safety-guardrails]] (guardrails não são impenetráveis — dado quantitativo novo: 702/7.828 jailbreaks bem-sucedidos no Fable 5) e converge com a tese de [[wiki/sources/kimi-k3-china-mercado-ia-open-source]] de que a vantagem americana em IA não é permanente, agora estendida especificamente ao domínio de cybersegurança (Japão via Sakana AI/Fugo, China via 360/Tulong Fang e Zhipu AI/GLM 5.2). Abre um ângulo novo não coberto antes na wiki: bloqueio governamental de acesso a modelos de IA por risco de segurança nacional, distinto de export controls de hardware. Nomes "Mitos" e "Fable 5" não confirmados externamente — tratados como possivelmente sujeitos a erro de transcrição automática e registrados como open question na fonte. Números citados (10.000+ falhas, 7.828 tentativas de jailbreak, 150 organizações em 15 países) vêm de fala no vídeo sem link para fonte primária — não verificados de forma independente.
+
+---
+
+## [2026-07-27] ingest | Refatoração: Pragmatic Programmer, Martin Fowler e a 2ª Edição de Refactoring
+
+**Fonte:** [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] — transcrição de fala corrida em português colada pelo usuário no chat, sem necessidade de tradução (já em PT-BR), limpa e organizada em seções, salva em `raw/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao.md`. Autor do vídeo não identificado pelo nome na transcrição; a fonte relata, de segunda mão, um capítulo do *Pragmatic Programmer*, uma palestra de Martin Fowler sobre a 2ª edição de *Refactoring* e uma entrevista de Fowler com uma funcionária brasileira da Thoughtworks (também não nomeada).
+
+**Skill carregada:** `tech-mentor-backend`, seção "Technical Debt — Quadrantes e Estratégia de Pagamento" de `references/software-craftsmanship.md` — mesma skill e mesma área já usada em [[wiki/sources/o-que-e-refatoracao-quando-usar]], que cobre o conceito central de refatoração nesta wiki.
+
+**Páginas criadas:**
+- `raw/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao.md`
+- `wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao.md`
+- `wiki/entities/thoughtworks.md` — novo stub: empresa onde Fowler é Chief Scientist, com nota de contradição contra a afirmação da fonte de que ele a teria fundado
+- `wiki/concepts/entropia-de-software.md` — novo stub: degradação natural de um sistema com o tempo, ligado à analogia de jardinagem do Pragmatic Programmer
+
+**Páginas atualizadas:**
+- `wiki/concepts/refatoracao.md` — novas seções: analogia da jardinagem, refatoração como mudança mínima isolada (exemplo de renomear variável), as duas motivações de Fowler, as seis situações do Pragmatic Programmer para refatorar; `source_count` 1 → 2
+- `wiki/entities/martin-fowler.md` — nova seção "A 2ª edição de Refactoring (20 anos depois)" com o motivo da reescrita (Java datado, classe `Vector`, exemplo de locadora de vídeos → peças de teatro) e nota de contradição sobre a fundação da Thoughtworks; `source_count` 7 → 8
+- `wiki/concepts/essential-complexity.md` — nova seção distinguindo o uso solto de "essência" na fonte (durabilidade de livros técnicos) do framing original de Fred Brooks; `source_count` 2 → 3
+- `wiki/concepts/accidental-complexity.md` — nova seção equivalente para "acidente" (tecnologia de exemplo didático); `source_count` 3 → 4
+- `wiki/concepts/dois-chapeus-kent-beck.md` — nova seção ligando a primeira dica de Fowler (não misturar feature com refatoração) à mesma metáfora dos dois chapéus; `source_count` 1 → 2
+- `wiki/concepts/livros-recomendados-programador.md` — nova seção "Por que continuam relevantes 20 anos depois"; `source_count` 1 → 2
+- `wiki/concepts/tdd.md` — nota ligando a regra de Fowler ao ciclo RED-GREEN-REFACTOR; `source_count` 9 → 10
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (seção "Padrões e Design"); nova linha em Entities
+
+**Notas:** Fonte de alta convergência com o material já existente sobre refatoração — não introduz nenhuma técnica nova, mas aprofunda o "porquê" (analogia de jardinagem, entropia, durabilidade de princípios vs. tecnologia) e adiciona uma lista concreta de gatilhos (as seis situações do Pragmatic Programmer) que a wiki ainda não tinha. Uma contradição real foi detectada e registrada em três lugares ([[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]], [[wiki/entities/martin-fowler]], [[wiki/entities/thoughtworks]]): a fonte afirma que Fowler fundou a Thoughtworks, o que diverge do que já estava registrado na wiki (ele é Chief Scientist; a empresa foi fundada por Roy Singham em 1993) — tratado como imprecisão do autor do vídeo, não corrigido silenciosamente. O uso de "essência vs. acidente" na fonte foi deliberadamente marcado como análogo, não idêntico, ao framing de Fred Brooks já presente em [[wiki/concepts/essential-complexity]] e [[wiki/concepts/accidental-complexity]], para não misturar dois conceitos de origens diferentes sob o mesmo rótulo. Todas as citações a Fowler nesta fonte são paráfrases de fala relatada (o autor do vídeo comentando uma palestra e uma entrevista que assistiu), não transcrição direta — registrado como open question, útil para uma ingestão futura da palestra/entrevista originais ou do texto da 2ª edição do livro.
+
+---
+
+## [2026-07-27] ingest | Idempotência em Pagamentos: Retry, Sistemas Distribuídos e Chaves de Idempotência
+
+**Fonte:** [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] — transcrição de fala corrida em português colada pelo usuário no chat (ASR sem pontuação, com CTA de aula grátis embutido no meio da fala), já em PT-BR sem necessidade de tradução, limpa e organizada por tópico, salva em `raw/idempotencia-pagamentos-retry-sistemas-distribuidos.md`. Autor/canal do vídeo não identificado na transcrição.
+
+**Skill carregada:** `tech-mentor-backend`, seção `references/idempotency-patterns.md` (Idempotency, Idempotency Key, Dedup, CAS, Idempotência Financeira, TTL) — mesma skill já usada em [[wiki/sources/idempotencia]] e [[wiki/sources/double-spend-double-submit]], que cobrem o conceito central desta fonte.
+
+**Páginas criadas:**
+- `raw/idempotencia-pagamentos-retry-sistemas-distribuidos.md`
+- `wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos.md`
+- `wiki/concepts/inbox-pattern.md` — novo stub: complementar ao Outbox do lado do consumidor, tabela `inbox_events` com unique constraint por `provedor + event_id`
+
+**Páginas atualizadas:**
+- `wiki/concepts/idempotencia.md` — novas seções: "Por que o Timeout Sozinho Não Basta", "Resolvendo a Corrida: INSERT Atômico, Não SELECT+INSERT" (responde open question de [[wiki/sources/double-spend-double-submit]]), "Idempotência ≠ Transação", "Cruzando Fronteiras de Serviço" (Outbox/Inbox, webhooks), "Identidades de Negócio por Produto" (saque ID, emissão ID, crédito ID, client order ID), "Retenção da Chave (TTL)", "Testando a Garantia"; `source_count` 4 → 5
+- `wiki/concepts/retry-backoff.md` — novo parágrafo sob "Pré-requisito: Idempotência" explicando por que o timeout sozinho não decide a causa da falha; `source_count` 1 → 2
+- `wiki/concepts/outbox-pattern.md` — nova seção "Cruzando a Fronteira de Serviço com Identidade Idempotente", link para o novo stub `inbox-pattern`; `source_count` 1 → 2
+- `wiki/concepts/distributed-transactions.md` — nova seção "Transação Não É Idempotência"; `source_count` 1 → 2
+- `wiki/sources/double-spend-double-submit.md` — open question sobre mecanismo de lock marcada como parcialmente respondida (INSERT atômico via unique constraint em vez de lock key separado); nova entrada em Key Sources
+- `wiki/concepts/webhook-signature-validation.md` — novo link "Ver também" para `inbox-pattern`; nova entrada em Key Sources; `source_count` 2 → 3
+- `wiki/sources/webhook.md` — nota ligando `X-Webhook-Id` (dedup nesta fonte) ao inbox persistente detalhado na nova fonte
+- `wiki/sources/fintech-system-design.md` — nova entrada em Conceitos detalhando o mecanismo que esta fonte assumia como dado ("idempotency key + Redis lock")
+- `wiki/concepts/ledger-dupla-entrada.md` — nova seção "Lançamento e Chave de Idempotência na Mesma Transação"; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (seção "Idempotência & Deduplicação de Requests": nota expandida em `idempotencia`, nova linha `inbox-pattern`)
+
+**Notas:** Fonte de alta convergência com o núcleo de idempotência já denso na wiki ([[wiki/sources/idempotencia]], [[wiki/sources/double-spend-double-submit]], [[wiki/sources/fintech-system-design]]), mas contribui material genuinamente novo em três frentes que nenhuma fonte anterior cobria com este nível de detalhe: (1) a resolução da corrida de concorrência via `INSERT ... ON CONFLICT DO NOTHING` atômico contra chave primária, em vez de `SELECT` seguido de `INSERT` — responde diretamente a uma open question deixada em aberto por [[wiki/sources/double-spend-double-submit]]; (2) a distinção explícita e nomeada entre o que transação resolve (atomicidade) e o que idempotência resolve (efeito duplicado), formalizada agora em [[wiki/concepts/distributed-transactions]]; (3) o vocabulário de identidades de negócio por produto financeiro (saque ID, emissão ID, crédito ID, client order ID), que generaliza o padrão além do caso de pagamento único já coberto. Nenhuma contradição encontrada com o conteúdo existente — a fonte reforça e aprofunda claims já registrados (chave nasce no cliente antes do retry, armazenamento compartilhado entre instâncias, janela de tempo como decisão de negócio) sem introduzir nenhuma alegação incompatível. Duas open questions ficaram registradas na fonte: o schema exato da tabela de chave de idempotência (a fonte cita os campos em prosa, não em DDL) e o caso em que o serviço externo não aceita o contrato de chave idempotente repassada (mencionado só como alternativa, sem detalhamento).
+
+---
+
+## [2026-07-27] ingest | Consumer-Driven Contracts: A Service Evolution Pattern (Ian Robinson)
+
+**Fonte:** [[wiki/sources/consumer-driven-contracts-martin-fowler]] — artigo de Ian Robinson (Thoughtworks), publicado em 12/06/2006 no site de Martin Fowler mas não escrito por ele. Conteúdo salvo como paráfrase/resumo em PT-BR (não tradução literal) em `raw/consumer-driven-contracts-martin-fowler.md`, seguindo o mesmo padrão de `raw/contract-test-martin-fowler.md`.
+
+**Skill carregada:** `tech-mentor-testing`, lida de `/home/nemomartins/Documentos/new/skills/tech-mentor-testing/SKILL.md` e a referência `references/contract-testing-advanced.md` (Consumer-Driven vs. Provider-Driven Contracts no índice da skill).
+
+**Páginas criadas:**
+- `raw/consumer-driven-contracts-martin-fowler.md`
+- `wiki/sources/consumer-driven-contracts-martin-fowler.md`
+- `wiki/concepts/must-ignore-pattern.md` — novo stub: ponto de extensão de schema que um consumidor pode ignorar com segurança, técnica central do artigo para evolução de contrato sem quebrar consumidores
+- `wiki/entities/ian-robinson.md` — novo stub: Principal Consultant na Thoughtworks, autor do artigo
+
+**Páginas atualizadas:**
+- `wiki/concepts/contract-testing.md` — nova seção "Origem do termo: Ian Robinson (2006)" explicando o modelo de três camadas (Provider Contract / Consumer Contract / Consumer-Driven Contract) que precede e fundamenta a implementação moderna via Pact já documentada na página; `source_count` 4 → 5
+- `wiki/entities/martin-fowler.md` — nova seção "Hospeda, mas não escreve: Consumer-Driven Contracts", registrando explicitamente que o artigo é de Ian Robinson e não de Fowler, na mesma linha da precisão terminológica já característica desta entity; `source_count` 9 → 10
+- `wiki/entities/thoughtworks.md` — nova menção a Ian Robinson como Principal Consultant; `source_count` 1 → 2
+- `wiki/concepts/contrato-de-api.md` — novos links "Ver também" para `must-ignore-pattern` e `contract-testing`; `source_count` 2 → 3
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`must-ignore-pattern`, seção "Testes & Qualidade"); nova linha em Entities (`ian-robinson`)
+
+**Notas:** Esta fonte precede e explica a origem do termo "Consumer-Driven Contracts" já usado (sem citação de origem) em [[wiki/concepts/contract-testing]] desde uma ingestão anterior — a wiki agora distingue explicitamente a formulação original de Robinson (2006, agnóstica de ferramenta, contrato pode ser planilha ou teste) da ferramentagem moderna em torno do Pact/`can-i-deploy` já documentada. Contradição/imprecisão evitada proativamente: como o artigo está hospedado em martinfowler.com, há risco de atribuí-lo a Fowler — registrado explicitamente como obra de Ian Robinson em três lugares (fonte, entity de Fowler, entity de Thoughtworks). Duas open questions ficaram na fonte: (1) o artigo cita Schematron sem que a wiki tenha uma fonte primária sobre a ferramenta; (2) foi identificada uma inconsistência estrutural pré-existente em `wiki/sources/tolerant-reader.md` (tipado como `source` mas fazendo papel de `concept`, com links quebrados para `concepts/robustness-principle`, `concepts/expand-contract`, `concepts/backward-compatibility`, `concepts/event-versioning`) — sinalizada para o próximo `lint the wiki`, não corrigida nesta ingestão por estar fora do escopo da fonte atual.
 
 ---
