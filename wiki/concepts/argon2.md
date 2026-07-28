@@ -3,8 +3,8 @@ type: concept
 title: "Argon2"
 aliases: ["argon2id", "argon2i", "argon2d"]
 date_created: 2026-06-11
-date_updated: 2026-06-11
-source_count: 1
+date_updated: 2026-07-28
+source_count: 2
 tags: [segurança, criptografia, password-hashing, argon2, memory-hard]
 skill: tech-mentor-security
 status: stable
@@ -55,6 +55,14 @@ O atacante pode ter milhões de núcleos CUDA, mas não tem RAM suficiente para 
 
 ---
 
+## As Três Fases do Cálculo (Argon2id)
+
+1. **Hash inicial** — concatena senha e salt, aplica uma função de hash inicial.
+2. **Preenchimento da matriz** — primeiro com acessos previsíveis (evita ataque *side-channel*), depois com acessos aleatórios (bloqueia otimizações de GPU baseadas em padrão de acesso).
+3. **Mistura final** — combina os últimos blocos processados e gera o hash final em uma única string de saída.
+
+---
+
 ## Configuração Recomendada
 
 ```php
@@ -83,3 +91,4 @@ Sempre usar com [[concepts/pepper]] para defesa em profundidade.
 ## Key Sources
 
 - [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
+- [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]

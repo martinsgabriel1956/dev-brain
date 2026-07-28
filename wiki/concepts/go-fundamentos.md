@@ -3,8 +3,8 @@ type: concept
 title: "Go — Fundamentos da Linguagem"
 aliases: ["golang fundamentos", "go tipos", "go slices", "go zero values"]
 date_created: 2026-04-24
-date_updated: 2026-07-22
-source_count: 5
+date_updated: 2026-07-28
+source_count: 6
 tags: [go, fundamentos, tipos, slices, maps, structs, zero-values, cloud-native, filosofia-de-linguagem, bitwise]
 skill: lang-systems
 status: stable
@@ -59,6 +59,8 @@ type User struct {
 u := &User{ID: 1, Name: "Alice"} // pointer — modifica original
 ```
 
+A sintaxe de ponteiro em Go (`&var` pega endereço, `*ptr` dereferencia) é idêntica à de C/C++ — a diferença está toda no runtime, não na sintaxe. Um caso concreto: retornar `&valor` de uma variável local dentro de uma função é *undefined behavior* em C++ (a stack daquele frame já foi liberada quando a função retorna), mas em Go o compilador detecta, via **escape analysis**, que a variável está escapando do escopo da função e a aloca na heap em vez da stack — o endereço retornado continua válido. Ver [[wiki/concepts/ponteiros-cpp-stack-heap-raii]] para a comparação completa com C++ (RAII, `unique_ptr`) e C# (reference types).
+
 ## Enumerações com iota
 
 ```go
@@ -112,3 +114,4 @@ O Go Developer Survey oficial do Google confirma esse padrão de adoção com da
 - [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]
 - [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — contraponto Rust: ownership/borrow checker em vez de GC, mais expressividade ao custo de mais decisões explícitas
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — bitmask/bitwise (`&`, `\|`, `<<`) aplicado a um caso real: decode de UTF-8 byte a byte
+- [[wiki/sources/ponteiros-cpp-go-csharp]] — sintaxe de ponteiro idêntica à de C/C++, protegida por escape analysis: variável local que escapa da função é realocada na heap automaticamente

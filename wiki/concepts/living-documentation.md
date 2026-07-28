@@ -3,8 +3,8 @@ type: concept
 title: "Living Documentation"
 aliases: ["documentação viva", "docs from tests", "cucumber report", "structurizr"]
 date_created: 2026-04-22
-date_updated: 2026-07-07
-source_count: 2
+date_updated: 2026-07-28
+source_count: 3
 tags: [testes, documentação, bdd, openapi, ci, living-docs, readme, agents-md]
 skill: tech-mentor-testing
 status: stable
@@ -62,6 +62,8 @@ describe("Order.applyDiscount", () => {
 
 Ler os `it()` descreve o comportamento completo sem precisar ler a implementação.
 
+[[wiki/sources/7-habitos-programador-altamente-eficaz]] traz um relato pessoal reforçando esse ponto por um ângulo diferente do técnico já documentado acima: para quem está aprendendo um sistema desconhecido, testes automatizados costumam ser a documentação mais confiável disponível — o autor relata ter aprendido o comportamento de funções dentro de sistemas complexos observando apenas o que os testes cobriam e como, sem precisar de nenhuma outra fonte. A fonte também descreve a progressão pessoal que leva a esse hábito: primeiro comentar linha a linha (bom só para o próprio aprendizado, ruim como prática de manutenção), depois evoluir para código legível documentando apenas o *porquê* de decisões e regras de negócio — os testes cobrindo o "o quê" e "como" que o código por si só já deveria deixar claro.
+
 ### 4 — Arquitetura como código (Structurizr DSL)
 
 Diagramas C4 gerados de código — nunca desenhados no Miro, com diff rastreável no PR.
@@ -101,3 +103,4 @@ Esse "evite" é exatamente o contexto do [[wiki/concepts/checklist-primeiro-dia-
 
 - [[wiki/sources/living-documentation]]
 - [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]
+- [[wiki/sources/7-habitos-programador-altamente-eficaz]] — relato pessoal de aprender comportamento de sistemas legados só pela leitura de testes

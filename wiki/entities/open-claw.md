@@ -4,8 +4,8 @@ title: "Open Claw"
 aliases: ["OpenClaw", "open claw"]
 date_created: 2026-07-21
 date_updated: 2026-07-21
-source_count: 1
-tags: [tech-mentor-ai, open-claw, agent-memory, messaging-gateway, open-source]
+source_count: 2
+tags: [tech-mentor-ai, open-claw, agent-memory, messaging-gateway, open-source, harness]
 skill: tech-mentor-ai
 status: stub
 ---
@@ -16,6 +16,11 @@ Agente open source (MIT), citado em [[wiki/sources/hermes-agent-open-claw-learni
 
 Citado como caso que validou a categoria: a fonte especula que a aquisição do time por trás do Open Claw pela [[wiki/entities/openai]] é evidência de que a proposta ("learning loop com skill auto-gerada + memória persistente") é vista como valiosa o suficiente para influenciar até a [[wiki/entities/anthropic]] a lançar algo semelhante ("Dreaming in Claude"). Detalhes técnicos de implementação do Open Claw em si não foram cobertos por esta fonte — página tratada como stub até uma fonte dedicada.
 
+## Claim Não Reconciliado: "Criador" Citado como Peter Steinberger
+
+[[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] cita [[wiki/entities/peter-steinberger]] como "criador do OpenClaw" ao introduzir a frase viral "you are not the model, you are the harness" — mas essa autoria não bate com o que a wiki já registrava sobre esta página (agente citado sem criador nomeado, ver seção acima). Mantido aqui como não verificado; pode se tratar de nome ouvido incorretamente na transcrição original, ou de um cofundador/mantenedor não coberto pela fonte anterior. Não editar a seção acima até uma fonte confirmar a relação de qualquer um dos dois lados.
+
 ## Key Sources
 
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]]
+- [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — claim não reconciliado de autoria (Peter Steinberger)

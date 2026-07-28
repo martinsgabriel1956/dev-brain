@@ -3,8 +3,8 @@ type: concept
 title: "Acoplamento"
 aliases: ["coupling", "baixo acoplamento", "alto acoplamento"]
 date_created: 2026-04-25
-date_updated: 2026-07-19
-source_count: 3
+date_updated: 2026-07-28
+source_count: 4
 tags: [acoplamento, software-design, clean-code, arquitetura, under-engineering]
 skill: tech-mentor-backend
 status: stable
@@ -52,6 +52,10 @@ Sistemas altamente acoplados congelam: uma mudança pequena quebra coisas inespe
 
 [[wiki/sources/underengineering-overengineering-mario-souto]] traz acoplamento (tight coupling) como um dos sintomas do lado oposto do espectro descrito em [[wiki/concepts/under-engineering]] — não é uma abstração excessiva, é a ausência de qualquer separação. O exemplo dado é concreto e reconhecidamente parcial: lógica de login e de criação de conta no mesmo arquivo de autenticação, porque o autor "colocou todos os tipos de autenticação num arquivo só" e reconhece que "poderia quebrar isso um pouco mais". O critério prático que ele usa para decidir onde cortar é funcional, não teórico: "se esse arquivo é o arquivo de login, eu evito colocar coisas de criar conta junto" — a separação de responsabilidades sendo descoberta durante o trabalho ("é um pouco filosófico... conforme você vai trabalhando nos projetos, você vai vendo que existe uma separação natural"), não definida a priori.
 
+## Analogia Médica: Limites de Órgãos Furando Uns aos Outros
+
+[[wiki/sources/7-habitos-programador-altamente-eficaz]] reaproveita a mesma analogia de órgãos usada em [[wiki/concepts/abstracao]] para explicar acoplamento pelo ângulo inverso: assim como problemas graves de saúde surgem quando o limite de um órgão começa a "furar" o limite de outro (ex.: um problema cardíaco afetando o funcionamento renal), um software sofre os mesmos sintomas quando abstrações e responsabilidades mal definidas deixam tudo acoplado e misturado. A fonte não detalha técnica de identificação de limites (bounded contexts, DDD) — fica no nível de intuição desenvolvida com experiência, reconhecendo explicitamente que no início da carreira é difícil enxergar esses limites.
+
 ## Relações
 
 - [[abstracao]] — abstração é o mecanismo que permite baixo acoplamento entre módulos
@@ -65,3 +69,4 @@ Sistemas altamente acoplados congelam: uma mudança pequena quebra coisas inespe
 - [[sources/ports-and-adapters-codebase-para-ia]] — forte acoplamento em god class quebra três módulos por uma mudança
 - [[wiki/sources/design-pattern-adapter]] — `new` de uma classe concreta de baixo nível (lib externa) dentro de uma classe de alto nível é a manifestação de acoplamento que o [[wiki/concepts/adapter-pattern]] resolve
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — exemplo real de login e criação de conta acoplados no mesmo arquivo; separação tratada como algo que se aprende na prática, não como regra fixa
+- [[wiki/sources/7-habitos-programador-altamente-eficaz]] — analogia médica dos órgãos aplicada ao acoplamento: limites mal definidos entre componentes causam os mesmos sintomas que órgãos ferindo os limites uns dos outros

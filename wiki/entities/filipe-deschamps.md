@@ -3,8 +3,8 @@ type: entity
 title: "Filipe Deschamps"
 aliases: ["filipe deschamps"]
 date_created: 2026-07-09
-date_updated: 2026-07-22
-source_count: 3
+date_updated: 2026-07-28
+source_count: 4
 tags: [criador-de-conteudo, carreira, tabnews, pagar-me]
 skill: tech-mentor-leadership
 status: stub
@@ -30,8 +30,13 @@ Aplica o [[wiki/concepts/triade-retorno-risco-liquidez]] (originalmente um conce
 
 Em [[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] (autoria também inferida, mas com evidência interna forte — cita "2014", o Pagar.me e usa o TabNews como codebase de demonstração), narra a própria progressão de maturidade ao validar código: de clicar manualmente na interface (2014, Angular), passando por usar o Postman contra a API do Pagar.me (cultura de dogfooding), até testes automatizados em modo watch com Jest — usados para expor e corrigir uma vulnerabilidade real de autorização na rota de migrations do TabNews. Ver [[wiki/concepts/tres-estagios-maturidade-testes]].
 
+## Vídeo Sobre Desemprego Dev (Citação de Segunda Mão)
+
+[[wiki/sources/aprenda-a-programar-do-jeito-dificil]] cita (sem confirmar diretamente) um vídeo de Deschamps, parecido com o de [[wiki/entities/lucas-montano]], sobre por que há tanto dev desempregado apesar da alta demanda — vídeo que, segundo a fonte, reproduz um áudio de [[wiki/entities/fabio-akita]] sobre o fim do dinheiro fácil de investimento forçando empresas a serem mais eficientes e apertando processos seletivos.
+
 ## Key Sources
 
 - [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]]
+- [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] — citação de segunda mão: vídeo sobre desemprego dev reproduzindo áudio de Fábio Akita
 - [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] — autoria inferida, não confirmada
 - [[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] — autoria inferida, não confirmada

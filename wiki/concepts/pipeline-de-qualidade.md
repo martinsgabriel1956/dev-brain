@@ -3,8 +3,8 @@ type: concept
 title: "Pipeline de Qualidade"
 aliases: ["quality pipeline", "pipeline de código", "ci quality gates"]
 date_created: 2026-05-31
-date_updated: 2026-07-27
-source_count: 6
+date_updated: 2026-07-28
+source_count: 7
 tags: [pipeline-de-qualidade, harness, qualidade, ci-cd, testes, segurança, era-agentica, ratchet, npm-audit, under-engineering]
 skill: tech-mentor-backend
 status: stable
@@ -93,9 +93,14 @@ Um quality gate não precisa se limitar a lint/tipagem/segurança de código —
 
 [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] documenta o caso oposto ao desta página: um autor tentou substituir o gate determinístico de validação de tarefas (scripts) por um LLM que julgava se o código do aluno cumpria os requisitos. O gate virou inconsistente — aprovava programas com erro estrutural, reprovava programas corretos — porque o LLM tokeniza e responde por probabilidade em vez de aplicar regra fixa. Reforça por que esta página trata "determinístico" como requisito, não como preferência estilística: um "quality gate" cujo critério de aprovação é o julgamento de um modelo deixa de ser um gate. Ver [[wiki/concepts/determinismo-vs-probabilismo-em-ia]].
 
+## Prevenção de Dívida Técnica via Quality Gates
+
+[[wiki/sources/tech-debt-guia-completo-gestao-metricas]] enquadra CI/CD com quality gates (análise estática, cobertura de testes, regras de lint automatizadas) como uma das práticas centrais de prevenção de dívida técnica — não confiar cegamente em IA para essa validação, e nunca fazer deploy direto para produção sem passar por ambiente de desenvolvimento/teste primeiro. Reforça a mesma lógica de "determinístico como requisito" já documentada acima: o gate impede que código de baixa qualidade chegue a produção independente de quem (humano ou IA) o escreveu.
+
 ## Key Sources
 
 - [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
+- [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] — CI/CD com quality gates como prática de prevenção de dívida técnica
 - [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] — caso de falha ao usar LLM como gate de validação em vez de ferramenta determinística
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
 - [[wiki/sources/html-vs-markdown-para-agentes-de-ia]] — exemplo concreto de quality gate para qualidade de transcrição (Whisper local), não apenas para qualidade de código

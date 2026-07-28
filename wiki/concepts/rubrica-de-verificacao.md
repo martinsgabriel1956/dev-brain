@@ -4,8 +4,8 @@ title: "Rúbrica de Verificação (Agentes)"
 aliases: ["rubrica", "critério de aprovação de agente", "rubric agentico"]
 date_created: 2026-07-10
 date_updated: 2026-07-27
-source_count: 2
-tags: [rubrica, verificador, planner-executor-critic, qualidade, agentes]
+source_count: 3
+tags: [rubrica, verificador, planner-executor-critic, qualidade, agentes, erros-compostos]
 skill: tech-mentor-ai
 status: draft
 ---
@@ -34,7 +34,12 @@ Sem rúbrica, "verificar o resultado" vira um julgamento vago e sujeito a reinte
 
 [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] documenta o cenário que esta página existe para evitar: um validador de tarefas via LLM sem rubrica fechada — apenas "especificação da tarefa + código do aluno + evidências de teste" em prompt livre — aprovava e reprovava o mesmo tipo de erro de forma inconsistente entre execuções e entre modelos. Sem uma lista fechada de critérios testáveis (o que a rubrica fornece), "verificar o resultado" vira exatamente o "julgamento vago e sujeito a reinterpretação" que esta página já descreve como o problema da validação ad-hoc — só que em produção, com alunos reais recebendo feedback errado por semanas antes do padrão ser percebido.
 
+## Maior Retorno Documentado entre os Componentes de Harness
+
+[[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] cita o criador do [[wiki/entities/claude-code]] atribuindo à verificação embutida (rodar testes, checar existência de arquivo, checar se o output faz sentido) um ganho de qualidade de **2 a 3 vezes** — não o modelo, o mecanismo de verificação. É apresentado como o componente de [[wiki/concepts/harness]] com maior retorno comprovado, e a resposta direta ao problema dos erros compostos descrito em [[wiki/concepts/harness]]: verificar a cada etapa impede que uma falha de 1% por passo vire uma falha significativa acumulada ao longo de dezenas de etapas.
+
 ## Key Sources
 
 - [[wiki/sources/loop-engineering-planner-critic-grafo]]
 - [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] — caso real de validação sem rubrica fechada, inconsistente entre execuções e modelos
+- [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — ganho de 2-3x em qualidade atribuído à verificação embutida (criador do Claude Code); erros compostos como motivação matemática para verificar a cada etapa

@@ -1,7 +1,9 @@
 ---
 type: index
-date_updated: 2026-07-27
+date_updated: 2026-07-28
 ---
+
+
 
 
 
@@ -17,6 +19,11 @@ date_updated: 2026-07-27
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] | Por que estudar linguagens e conceitos low level (mesmo sem retorno financeiro imediato) traz satisfação pessoal e benefício de carreira no longo prazo — caso pessoal do bot de Discord de Tibia otimizado com concorrência em Go, e da contribuição não remunerada à API TibiaData |
+| [[wiki/sources/7-habitos-programador-altamente-eficaz]] | Sete hábitos de programador eficaz: buscar solução por conta própria antes de perguntar, escapar da paralisia do planejamento sem cair em over-engineering, ler código alheio, documentar de forma inteligente (testes como documentação viva), pensar primeiro em abstrações/limites (analogia dos órgãos), perder o medo de código, e bloquear a própria agenda para "entortar o tempo" |
+| [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]] | Seis etapas entre digitar a URL e o primeiro pixel: cache → DNS → TCP handshake → TLS → request HTTP → parsing HTML/CSS em DOM/CSSOM → render tree → layout → paint → composite; JavaScript síncrono bloqueia o parser, daí async/defer; cada otimização clássica (minificar, defer, CSS raso, transform/opacity) ataca uma etapa específica |
+| [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]] | Migrar banco na mão via SSH é considerado errado (não auditável/reproduzível); migrations devem ser versionadas em git e passar por PR/review; demonstração prática de migrate up/down com SQL cru (docker-compose + Postgres local) e com Drizzle ORM (fluxo invertido: schema declarado → migration derivada); mesmo com ORM, migration em tabela grande pode travar produção |
+| [[wiki/sources/connection-pooling-pool-vs-polling-serverless]] | Desambiguação poll/pool; pool de conexões deve ser singleton instanciado fora do handler de rota; bug de `client.release()` esquecido vazando a pool aos poucos; connection pooling em serverless (Lambda sem memória compartilhada) via RDS Proxy, "attach database pool" da Vercel, suporte nativo de ORM, ou PgBouncer (com disclaimer de uso não testado pelo autor) |
 | [[wiki/sources/anatomia-entrevista-system-design-bigtech]] | Pipeline bigtech de 5 etapas (RH → técnica/LeetCode → system design → fit) e o que cada etapa da sessão de system design (requisitos, BOE, API, esquema SQL+NoSQL, HLD, tradeoffs) está de fato avaliando — compreensão do problema exposta em voz alta, não caixinhas decoradas |
 | [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] | Curso de COBOL/mainframe: validador de tarefas via LLM falhou de forma inconsistente por 3 semanas — as 3 IAs (GPT, Claude, Gemini) diagnosticaram "ferramenta de análise semântica usada para análise determinística"; sistemas corporativos (juros, impostos, folha) exigem 100% previsibilidade, não "quase certo"; cortes de projetos de IA não são bolha, são erro de enquadramento (IA substituindo software em vez de interpretar para ele) |
 | [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]] | Percurso de 70 anos da autenticação: user ID sem senha (time-sharing anos 60) → senha com hash+salt (Unix, 1976) → MFA (sei/tenho/sou) → segundo fator (RSA SecurID → HOTP/TOTP → U2F/WebAuthn) → biometria (3 gerações) → identidade federada (SSO → OAuth 2.0 → OpenID Connect) → JWT com Access/Refresh Token |
@@ -24,6 +31,8 @@ date_updated: 2026-07-27
 | [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]] | Código Fonte TV: Mitos e Fable 5 (Anthropic) e GPT 5.6 (OpenAI) — modelos de IA capazes de achar vulnerabilidades de software em escala inédita (falhas de décadas em OpenBSD, FFmpeg, kernel Linux), restritos ao consórcio Glasswing e depois bloqueados pelo governo dos EUA após a NSA relatar sistemas confidenciais comprometidos em horas; jailbreak do Fable 5 documentado (702/7.828 tentativas); Japão (Sakana AI/Fugo) e China (360/Tulong Fang, Zhipu AI/GLM 5.2) já reivindicam capacidade equivalente |
 | [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] | Bernardo Lobato: estudar microsserviços vale a pena mesmo sem usar em produção, porque funciona como eixo unificado de aprendizado (bounded context, circuit breaker, saga, observabilidade, mensageria, times autônomos); relato pessoal de retorno ao mercado após anos em monólitos legados; fundamentos como o que permite curar sugestões de IA |
 | [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] | Três níveis do dev loop (React → spec driven → humano) e loop engineering como quarta camada; distinção loop fixo (sem side effect) vs. loop criador (roadmap iterativo, risco de perpetuar bugs); caso Ban→Rust e jogo MMO completo construído em um final de semana; quatro perguntas para decidir se vale usar loop |
+| [[wiki/sources/loop-engineering-harness-e-a-frase-que-viralizou]] | Pedro Nauke (Compose): loop = 4 peças (objetivo checável, ação, feedback, condição de parada); origem no padrão ReAct (2022/2023); três fatores que destravaram loops longos em 2026 (modelo, harness, estado persistente); correção da frase viral "loop engineering matou harness engineering" — o loop contém o harness, não o substitui |
+| [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] | Frase viral de Peter Steinberger; matemática de erros compostos (0,99ⁿ) em processos de múltiplas etapas; quatro mitigações (verificação, checkpoints, ferramentas, contexto limpo); caso Vercel (remoção de 80% das ferramentas); Ralph Loop (Geoffrey Huntley, 2025); quatro níveis oficiais de loop da Anthropic (turn/goal/time/proactive); doze componentes do harness (sete documentados) |
 | [[wiki/sources/jspace-cerebro-cloud-antropic]] | Lucas Montano reage à pesquisa "J-Space" da Anthropic: espaço interno de ativações do Claude vinculável a palavras nunca ditas, lido via Jacobian Lens; não é chain-of-thought; tese pessoal do autor de que isso vira base de cobrança/auditoria de agentes |
 | [[wiki/sources/system-design-simulador-hotel-booking-replit]] | System design como a competência que a IA não substitui — construção de um simulador de system design via Replit e exercício prático de hotel booking (gargalo no banco → cache → load balancer → réplicas → fila Kafka, nota de IA 58/100) |
 | [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]] | Pedro Nauck: 5 verdades duras de 20+ anos de carreira — ego não discrimina por senioridade, side projects populares viram maldição de manutenção (caso Docz), reinventar a roda é remix com custo de manutenção, cultura brasileira do "hard worker" normalizou entrega mínima, e overthinking/over-engineering resolve problemas que ainda não existem |
@@ -186,6 +195,7 @@ date_updated: 2026-07-27
 | [[wiki/sources/o-que-e-refatoracao-quando-usar]] | Bernardo Lobato: refatoração é mudar estrutura interna sem alterar comportamento externo — dois chapéus de Kent Beck, God Class nascendo sprint a sprint sob prazo, testes na base da pirâmide como rede de segurança, passos pequenos, refatoração oportunista vs. planejada |
 | [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] | Motivos da 2ª edição de Refactoring 20 anos depois (Java datado → JS, locadora de vídeos → peças de teatro); analogia de jardinagem vs. construção civil; duas motivações de Fowler e seis situações do Pragmatic Programmer para refatorar |
 | [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] | Ownership (um dono por valor), borrowing (`&`/`&mut` — N leitores OU 1 escritor) e lifetimes (referência nunca outlive o valor) eliminam use-after-free, double-free e data races em compile-time, sem GC — trade-off: aprendizado e compilação mais lentos |
+| [[wiki/sources/ponteiros-cpp-go-csharp]] | Ponteiros em C++/Go/C#: mesma sintaxe (`&`/`*`) em C++ e Go, mas Go protege com escape analysis + GC e C# esconde tudo atrás de reference types; retornar endereço de variável local é undefined behavior em C++, resolvido automaticamente nas outras duas; RAII e `unique_ptr`/`std::move` eliminam a maior parte do `new`/`delete` manual em C++ moderno |
 | [[wiki/sources/cognitive-debt-margaret-storey]] | Fonte primária de "cognitive debt": dívida técnica mora no código, dívida cognitiva mora na cabeça do time — fundamentada na teoria de Peter Naur (1985) de que um programa é uma teoria, não o código-fonte |
 | [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] | Episódio CDF Café: produtividade com IA é real mas custo sobe (caso Uber), Gartner projeta custo de codificação superando salário médio até 2028, 59% das empresas usam IA como bode expiatório para demissões, Meta admite erro de reestruturação, capital de tokens (Nadella) |
 | [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] | Episódio CDF Café: RFC como source of truth anti-alucinação (80/20 planejamento/execução), especificações agnósticas à linguagem (Fabrício Arcanjo), skill Grill Me (Matt Pocock) invertendo quem revisa quem, quality gates forçando modularização |
@@ -201,9 +211,13 @@ date_updated: 2026-07-27
 | [[wiki/sources/a-insanidade-de-ser-um-programador-hoje]] | Reação ao artigo de Vitor Sousa Pereira: Unix/`grep` nasceram como ferramenta privada de Ken Thompson depois compartilhada de graça; front-end/back-end como especialidades separadas é invenção de 2006-2007, não histórico; fullstack como corte de custo, não escolha técnica; curva de aprendizado descontínua (caso SMTP); área ficou mais complexa e menos especializada ao mesmo tempo |
 | [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] | Augusto Galego: entrevista de system design cobra compreensão do todo em todo nível, mas no trabalho real só sênior costuma precisar dela; júnior soluciona e demonstra fundação, pleno resolve com racional prático, sênior otimiza e lidera a conversa sobre CAP/sharding/cache/monolito-vs-microsserviços |
 | [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] | TI das Antigas: história do modelo relacional (Codd, IBM 1970) até hoje; ACID e CAP como decisão de negócio, não hype; números reais de instância única (conexões, volume, latência) para MySQL, PostgreSQL, Oracle, SQL Server, SQLite, Redis e MongoDB, com guia direto por cenário |
+| [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] | Aula de concurso público: SGBD, SGBDR vs. SGBD NoSQL, visão (view), quatro modelos NoSQL (chave-valor, documento, colunas, grafos), ACID, Teorema CAP com classificação CA/CP/AP por produto, e bloco de questões reais de bancas (CESPE, NC-UFPR, KIAC, IBADE, AOCP) com gabaritos |
 | [[wiki/sources/design-pattern-facade-renato-augusto]] | Renato Augusto: Facade via exemplo de e-commerce (OrderController → OrderFacade) — Controller não deve carregar fluxo/regra de negócio; defesa de que Facade não fere o SRP porque opera num nível de abstração diferente das classes que orquestra |
 | [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] | Cinco níveis de arquitetura frontend (camadas → modular → vertical slice → microfrontend baseado em rotas → microfrontends parciais distribuídos); demo prática Shell + React/Angular/Solid.js via Custom Events expõe o custo real de microfrontends parciais (performance, CI/CD fragmentado, versionamento, governança); tese central: a maioria das decisões saudáveis fica entre monolito modular e microfrontend baseado em rotas, não nos extremos |
 | [[wiki/sources/microsservicos-martin-fowler-james-lewis]] | James Lewis e Martin Fowler (25 mar 2014): artigo original que cunhou a definição de microsserviços — nove características comuns, "smart endpoints and dumb pipes" contra ESBs, Lei de Conway como razão para decompor por capacidade de negócio, Polyglot Persistence, Design for Failure (Simian Army, Circuit Breaker); os próprios autores recusam declarar microsserviços "o futuro" sem ressalvas |
+| [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]] | Linha do tempo da criptografia — cítala espartana e cifra de César (criatividade, não matemática) → Vigenère (polialfabética, "indecifrável" por 300 anos) → Enigma (quebrada por reuso de chave) → AES/RSA modernos (key distribution problem resolvido por par público/privado) → IND-CPA como modelo formal (César falha, preserva padrão de repetição) → ameaça quântica (Shor quebra RSA, Grover só acelera busca) → password hashing (salt, pepper, BCrypt EKS-Blowfish limitado a 72 chars, Argon2id em três fases) |
+| [[wiki/sources/story-points-po-forcando-30-40-pontos-por-sprint]] | Lucas Badico: pergunta de mentorado sobre PO exigindo 30-40 story points/sprint por pessoa vira discussão sobre o papel do Scrum Master e do PO — story points medem complexidade relativa (não tempo), forçar uma meta de cima para baixo corrompe a métrica (Lei de Goodhart), reduz colaboração e reproduz Waterfall com verniz de cerimônias ágeis |
+| [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] | Guia introdutório de dívida técnica: revisita Quadrante de Fowler e analogia com dívida financeira; acrescenta debt ratio/SQALE (`remediation/development cost`, faixas <5%/5-10%/10-20%/>20%), hotspot analysis (complexidade ciclomática × code churn), framework PAID, matriz refatorar-vs-reescrever (valor×risco), regra dos 20% vs. regra dos 25% do Shopify, TDD/pair programming/CI-CD como prevenção, template de business case para stakeholders, caso Knight Capital |
 
 ## Concepts
 
@@ -269,6 +283,9 @@ date_updated: 2026-07-27
 | [[wiki/concepts/reinventar-a-roda]] | Reinventar raramente é inovação genuína — é remix, e o custo real está na manutenção extra desnecessária |
 | [[wiki/concepts/cultura-do-trabalhador-esforcado]] | "Hard worker" como padrão mínimo obrigatório em vez de diferencial — esforço aparente mascarando entrega inconsistente |
 | [[wiki/concepts/curva-de-aprendizado]] | Conhecimento não cresce linear com o que você consegue criar — cada objetivo esconde uma cadeia de pré-requisitos não óbvios (caso SMTP) |
+| [[wiki/concepts/debugar-antes-de-perguntar]] | Buscar solução por conta própria antes de perguntar — quem só pergunta vira um "proxy super conectado", sem gerar raciocínio próprio |
+| [[wiki/concepts/ler-codigo-de-terceiros]] | Ler código de outras pessoas ensina o que dificulta legibilidade e é fonte direta de aprendizado — "projeto funcionando é melhor que documentação" |
+| [[wiki/concepts/medo-de-codigo]] | A sensação de que o código "julga" está inteiramente na cabeça — reformulação: é o código quem precisa de você, não o contrário |
 
 ### Recursos de Aprendizado
 
@@ -428,6 +445,7 @@ date_updated: 2026-07-27
 | [[wiki/concepts/mixture-of-experts]] | Arquitetura MoE: por que modelos open source chineses são 10x mais baratos que frontier densos |
 | [[wiki/concepts/token-maxing]] | Consumo compulsivo de tokens como sinal de produtividade — fenômeno do Vale do Silício, 2026 |
 | [[wiki/concepts/loop-engineering]] | Degrau seguinte a harness engineering: desenhar o ciclo completo como estrutura repetível, disparável por prompt, schedule ou evento |
+| [[wiki/concepts/ralph-loop]] | Loop agêntico de uma linha de bash (Geoffrey Huntley, 2025), batizado por Ralph Wiggum — deliberadamente simples, precursor histórico do guia oficial de loop da Anthropic |
 | [[wiki/concepts/planner-executor-critic]] | Planner gera prompt+rúbrica para subagentes; Critic (modelo distinto do executor) aprova ou devolve follow-up |
 | [[wiki/concepts/rubrica-de-verificacao]] | Critérios explícitos de aceite gerados junto com o prompt — contrato entre Planner e Verificador |
 | [[wiki/concepts/langgraph]] | Framework que representa estado de agente como grafo — nodes são passos, edges são transições condicionais |
@@ -573,6 +591,7 @@ date_updated: 2026-07-27
 | [[wiki/concepts/gerenciamento-de-memoria]] | Manual, garbage collector ou ownership (Rust) — a decisão de runtime mais difícil de reverter numa linguagem |
 | [[wiki/concepts/rust-ownership-borrowing-lifetimes]] | Um dono por valor, `&`/`&mut` com regra N leitores OU 1 escritor, e lifetime garantindo que referência não outlive o valor — tudo verificado em compile-time pelo borrow checker |
 | [[wiki/concepts/rust-fundamentos]] | `Option`/`Result` sem `null` implícito, `match` exaustivo, traits com static dispatch, Cargo como toolchain unificada, e onde a adoção real de Rust compensa o custo de aprendizado |
+| [[wiki/concepts/ponteiros-cpp-stack-heap-raii]] | Ponteiro é variável que guarda um endereço — stack vs. heap muda quem libera; retornar endereço de variável local é undefined behavior em C++, mas escape analysis (Go) e reference types em heap (C#) tornam o mesmo código seguro; RAII/`unique_ptr` como solução de C++ moderno |
 | [[wiki/concepts/gramatica-formal-ebnf]] | EBNF define o que é sintaticamente válido; precedência e associatividade resolvem ambiguidade (`1 + 2 * 3`) |
 | [[wiki/concepts/language-server-protocol]] | Protocolo da Microsoft que desacopla editor de linguagem — um servidor, N editores com autocomplete e erros inline |
 | [[wiki/concepts/standard-library-e-ecossistema]] | Stdlib, package manager e tooling — o que faz uma linguagem tecnicamente boa sobreviver de fato |
@@ -739,6 +758,8 @@ date_updated: 2026-07-27
 | Página | Hook |
 |---|---|
 | [[wiki/concepts/orm]] | ORM não elimina SQL, gera SQL por baixo dos panos — abstração, não substituição |
+| [[wiki/concepts/database-migration]] | Migrate up/down versionado sequencialmente — via SQL cru ou derivado do estado final do schema por uma ORM |
+| [[wiki/concepts/drizzle-orm]] | ORM mínima TypeScript próxima de SQL puro — schema declarado gera migration automaticamente via `drizzle-kit generate` |
 | [[wiki/concepts/domain-specific-language]] | DSL para banco de dados quase sempre é wrapper em cima de SQL; Datalog do Datomic é a exceção real |
 | [[wiki/concepts/mysql]] | InnoDB, gap locking, estoque como linhas físicas vs coluna numérica, diagnóstico por tempo de conexão segurada |
 | [[wiki/concepts/skip-locked]] | `SELECT FOR UPDATE SKIP LOCKED` — fila de jobs e reserva de estoque de alta concorrência sem broker externo |
@@ -786,6 +807,10 @@ date_updated: 2026-07-27
 | [[wiki/concepts/codigo-para-o-mantenedor]] | Escreva pensando em quem vai manter, inclusive você mesmo no futuro — vale também para código gerado por IA |
 | [[wiki/concepts/fazer-a-coisa-mais-simples-que-poderia-funcionar]] | Princípio de XP: resolva com a solução mais simples válida agora, refatore depois se necessário |
 | [[wiki/concepts/quadrante-de-fowler]] | Dois eixos: Deliberado/Inadvertido × Prudente/Imprudente; só Prudente+Deliberado é aceitável |
+| [[wiki/concepts/debt-ratio-sqale]] | `remediation cost / development cost` — fórmula SQALE por trás do percentual de dívida técnica reportado por ferramentas como SonarQube |
+| [[wiki/concepts/hotspot-analysis]] | Complexidade ciclomática × code churn — hotspot real é a interseção, não cada métrica isolada; 80% da dor vem de 20% dos arquivos |
+| [[wiki/concepts/paid-framework]] | Performance/Architectural/Integration/Dependency — mnemônico rápido de priorização de dívida técnica sem ferramenta de análise |
+| [[wiki/concepts/refactor-vs-rewrite-matrix]] | Valor de negócio × risco técnico decide entre refatorar, reescrever, conviver ou depreciar um item de dívida técnica |
 | [[wiki/concepts/complexidade-como-estrategia]] | Três estágios: inconsciente → aparência → sabotagem — criar código incompreensível para se tornar insubstituível |
 | [[wiki/concepts/ciclo-da-desgraca-software]] | Espiral reescrita→mesmo problema→dois sistemas; alternativa: refatoração incremental com strangler fig |
 | [[wiki/concepts/pitfalls-de-linguagem]] | Armadilhas que existem na linguagem mas não devem ser usadas — descobertas pelo uso, não pelo estudo teórico |
@@ -831,7 +856,18 @@ date_updated: 2026-07-27
 | [[wiki/concepts/salt]] | String aleatória por usuário concatenada à senha — invalida rainbow tables pré-computadas |
 | [[wiki/concepts/pepper]] | Segredo do servidor concatenado à senha — defesa se só o banco vazar |
 | [[wiki/concepts/bcrypt]] | CPU-hard clássico (fator de trabalho configurável) — superado por rigs de GPU sem memory-hard |
-| [[wiki/concepts/argon2]] | Estado da arte: CPU-hard + memory-hard — gargalo de VRAM derrota paralelismo de GPU |
+| [[wiki/concepts/argon2]] | Estado da arte: CPU-hard + memory-hard — gargalo de VRAM derrota paralelismo de GPU; três fases (hash inicial, preenchimento de matriz, mistura final) |
+| [[wiki/concepts/caesar-cipher]] | Substituição monoalfabética fixa — não é IND-CPA segura, preserva padrão de repetição de caracteres |
+| [[wiki/concepts/scytale]] | Cítala espartana — transposição via bastão de diâmetro específico, anterior à cifra de César |
+| [[wiki/concepts/vigenere-cipher]] | Substituição polialfabética via chave repetida — "cifra indecifrável" por 300 anos, primeiro exemplo histórico de criptografia simétrica |
+| [[wiki/concepts/enigma-machine]] | Máquina de rotores da Alemanha na 2ª Guerra — quebrada por reuso operacional de chave |
+| [[wiki/concepts/aes]] | Criptografia simétrica por blocos, 128-256 bits — padrão de dados em repouso, sem vulnerabilidade conhecida quando usado corretamente |
+| [[wiki/concepts/rsa]] | Criptografia assimétrica baseada na dificuldade de fatorar primos grandes — resolve o key distribution problem |
+| [[wiki/concepts/key-distribution-problem]] | Como compartilhar chave simétrica secreta com segurança — motivou a criação da criptografia de chave pública |
+| [[wiki/concepts/ind-cpa-security]] | Modelo formal de segurança — atacante não deve distinguir qual de duas mensagens escolhidas gerou uma cifra dada |
+| [[wiki/concepts/shor-algorithm]] | Algoritmo quântico que fatora inteiros em tempo polinomial — quebra RSA por completo |
+| [[wiki/concepts/grover-algorithm]] | Aceleração quântica quadrática de busca — reduz AES-256 a ~128 bits efetivos, ainda seguro |
+| [[wiki/concepts/post-quantum-cryptography]] | Algoritmos NIST (ML-KEM, ML-DSA) resistentes a Shor/Grover — resposta ao risco "colha agora, decifre depois" |
 | [[wiki/concepts/cpu-hard]] | Algoritmo intencionalmente lento — cada tentativa de brute-force custa ciclos de CPU |
 | [[wiki/concepts/memory-hard]] | Ocupa RAM por instância — limita paralelismo de GPU pelo gargalo de VRAM |
 | [[wiki/concepts/rainbow-table]] | Tabela hash→senha pré-computada — reutilizável contra qualquer banco sem salt |
@@ -875,6 +911,23 @@ date_updated: 2026-07-27
 | [[wiki/concepts/microfrontend-baseado-em-rotas]] | Proxy reverso + builds separados por módulo via libs de monorepo — maior parte dos benefícios de desacoplamento com a menor complexidade adicionada |
 | [[wiki/concepts/microfrontends-parciais]] | Múltiplos frameworks coexistindo na mesma tela via Shadow DOM/eventos — desacoplamento alto vendido, custo real em performance/CI-CD/versionamento/governança |
 | [[wiki/concepts/monorepo-frontend]] | Apps consomem libs/packages compartilhados como dependências instaláveis — dependência flui numa via só, apps nunca são importadas por packages |
+
+### Pipeline de Renderização do Browser
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/critical-rendering-path]] | Sequência completa da URL ao pixel — cache, DNS, TCP, TLS, HTTP, DOM/CSSOM, render tree, layout, paint, composite |
+| [[wiki/concepts/dom]] | Árvore construída incrementalmente e com tolerância a erros pelo parser de HTML — nunca falha o parsing |
+| [[wiki/concepts/cssom]] | Árvore de estilos em cascata, render-blocking — nada é pintado até o CSSOM estar completo |
+| [[wiki/concepts/render-tree]] | DOM + CSSOM combinados, só nós visíveis — `display:none` fica de fora, `visibility:hidden` entra (ocupa espaço) |
+| [[wiki/concepts/reflow-layout]] | Cálculo recursivo de geometria via box model — unidades relativas viram pixels absolutos |
+| [[wiki/concepts/paint-composite]] | Pintura em camadas + composição na GPU — `transform`/`opacity` pulam layout e paint |
+| [[wiki/concepts/script-async-defer]] | Parser para em `<script>` síncrono porque não sabe se ele muta o DOM — `defer` executa após DOM pronto, na ordem do documento |
+| [[wiki/concepts/layout-thrashing]] | Ler geometria e escrever estilo alternadamente em loop força reflow síncrono repetido |
+| [[wiki/concepts/box-model]] | Content, padding, border, margin — camadas que definem o tamanho final de cada caixa |
+| [[wiki/concepts/tcp-three-way-handshake]] | SYN → SYN-ACK → ACK — abre a conexão antes do TLS e do request HTTP |
+| [[wiki/concepts/tls-handshake]] | Negociação de certificados/chaves em HTTPS — round trips extras antes do primeiro byte |
+| [[wiki/concepts/http-caching]] | Cache válido pula toda a navegação de rede — fonte não distingue cache HTTP comum de bfcache |
 
 ### React & Hooks
 
@@ -935,6 +988,9 @@ date_updated: 2026-07-27
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/the-primeagen]] | Engenheiro de software sênior na Netflix, criador de conteúdo (YouTube, em inglês) — reagiu a um vídeo de Theodor defendendo programar "do jeito difícil" |
+| [[wiki/entities/theodor]] | Dev/criador de conteúdo construindo jogo indie do zero sem engine — identidade exata não confirmada na fonte |
+| [[wiki/entities/knight-capital]] | Trading de alta frequência: código morto reativado por engano num deploy (2012) causou perda de ~$440-460 milhões em 45 minutos — caso extremo de custo de não seguir a Boy Scout Rule |
 | [[wiki/entities/edgar-codd]] | IBM, 1970: paper do modelo relacional e independência de dados — fundamento de tudo que veio depois |
 | [[wiki/entities/rsa-security]] | Criadora do SecurID — token de hardware que popularizou o segundo fator de autenticação nos anos 90 |
 | [[wiki/entities/ietf]] | Padronizou HOTP (RFC 4226) e TOTP (RFC 6238), tirando a autenticação por OTP das mãos de fornecedores proprietários |
@@ -949,6 +1005,8 @@ date_updated: 2026-07-27
 | [[wiki/entities/bubblewrap]] | Binário de sandboxing do GNOME (usado pelo Flatpak) — base técnica do AI Jail e do sandbox nativo do Claude Code |
 | [[wiki/entities/hermes-agent]] | Agente open source (MIT) com closed-loop skill learning system e memória em três camadas — liderou ranking de tokens do OpenRouter |
 | [[wiki/entities/open-claw]] | Agente open source (MIT), referência de mercado que motivou Hermes Agent e o "Dreaming in Claude" da Anthropic |
+| [[wiki/entities/geoffrey-huntley]] | Engenheiro australiano, publicou o Ralph Loop em julho de 2025 — loop agêntico de uma linha de bash batizado por Ralph Wiggum |
+| [[wiki/entities/peter-steinberger]] | Autor da frase viral "if you are not the model, you are the harness" (6,5M views); citado (não reconciliado) como criador do OpenClaw |
 | [[wiki/entities/hostinger]] | Provedora de VPS (menção patrocinada) — servidor virtual livre, físico gerenciado (DDoS, firewall IA, backups semanais) |
 | [[wiki/entities/replit]] | Plataforma de agentes de IA — workers paralelos (possível `git worktree`), taskboard multiplayer, testes end-to-end automáticos do próprio agente |
 | [[wiki/entities/augusto-galego]] | Criador de conteúdo técnico brasileiro — demo prática de deploy blue/green com Nginx numa VPS |
@@ -977,6 +1035,7 @@ date_updated: 2026-07-27
 | [[wiki/entities/c3-project]] | Chrysler Comprehensive Compensation — projeto de nascimento da Extreme Programming, onde o framework de testes de Kent Beck foi usado |
 | [[wiki/entities/gang-of-four]] | Erich Gamma, Richard Helm, Ralph Johnson e John Vlissides — autores de *Design Patterns* (1994); Gamma também coautor do JUnit |
 | [[wiki/entities/vercel-ai-sdk]] | SDK TypeScript da Vercel para chamar múltiplos provedores de LLM com API unificada |
+| [[wiki/entities/vercel]] | Plataforma de deploy — caso interno de remover 80% das ferramentas de um agente para melhorar performance |
 | [[wiki/entities/jason-wei]] | Pesquisador Google Brain — lead author do paper de chain-of-thought prompting e do paper de emergent abilities |
 | [[wiki/entities/fabio-akita]] | Programador brasileiro, autodidata desde 1991, criador do canal Akita On Rails |
 | [[wiki/entities/lucas-badico]] | Programador e professor brasileiro, criador de conteúdo sobre Golang e carreira; defende a ponte fullstack como caminho de entrada ao backend |
@@ -1053,6 +1112,15 @@ date_updated: 2026-07-27
 | [[wiki/concepts/user-stories]] | Unidade mínima de valor ágil — Como/Quero/Para + critérios Given/When/Then |
 | [[wiki/concepts/high-level-design]] | Primeira camada de documentação arquitetural — serviços, integrações, fluxo de dados |
 | [[wiki/concepts/low-level-design]] | Zoom dentro de um componente — schemas, contratos, estrutura de classes, sequência de chamadas |
+
+### Agile & Estimativa
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/story-points]] | Estimativa relativa de complexidade, não tempo — forçar uma meta de pontos de cima para baixo corrompe a métrica |
+| [[wiki/concepts/planning-poker]] | Cerimônia de estimativa em time — o valor real está na conversa sobre divergência, não na média |
+| [[wiki/concepts/scrum-master]] | Facilita o processo e protege a saúde do time — vira "Agile industrializado" quando só fiscaliza números |
+| [[wiki/concepts/goodharts-law]] | "Quando uma medida vira alvo, ela deixa de ser uma boa medida" — mecanismo por trás de métricas forçadas que perdem sentido |
 
 ### Documentação Operacional
 

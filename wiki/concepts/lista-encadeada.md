@@ -3,8 +3,8 @@ type: concept
 title: "Lista Encadeada"
 aliases: ["linked list", "lista ligada", "linked-list"]
 date_created: 2026-06-26
-date_updated: 2026-06-26
-source_count: 1
+date_updated: 2026-07-28
+source_count: 2
 tags: [cs-fundamentals, estruturas-de-dados, lista-encadeada, ponteiros]
 skill: cs-fundamentals
 status: draft
@@ -61,7 +61,9 @@ Além disso, usa mais memória por elemento (valor + ponteiro).
 - [[array]] — os dois são sequências; lista ganha em inserção, array ganha em acesso
 - [[big-o]] — entender a diferença O(1) vs O(n) em cada estrutura é o ponto central
 - [[arvore]] — árvores são extensões de listas onde cada nó tem múltiplos "próximos"
+- [[wiki/concepts/ponteiros-cpp-stack-heap-raii]] — o custo O(1) de inserção/remoção com ponteiro depende do modelo de memória: em C/C++ o nó é alocado manualmente na heap (`new`/`malloc`), em Go e C# o GC decide e libera
 
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
+- [[wiki/sources/ponteiros-cpp-go-csharp]] — ponteiro de nó como o mecanismo concreto por trás do O(1) de redirecionamento

@@ -3,8 +3,8 @@ type: concept
 title: "MongoDB"
 aliases: ["mongo", "bson"]
 date_created: 2026-07-27
-date_updated: 2026-07-27
-source_count: 1
+date_updated: 2026-07-28
+source_count: 2
 tags: [mongodb, nosql, banco-de-dados, document-database, backend]
 skill: tech-mentor-backend
 status: stub
@@ -37,3 +37,4 @@ Mercado Livre e Amazon (catálogo de produtos), plataformas de analytics de comp
 ## Key Sources
 
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]]
+- [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] — citado como exemplo canônico de SGBD NoSQL orientado a documentos em prova de concurso

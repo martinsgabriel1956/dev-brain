@@ -3,9 +3,9 @@ type: concept
 title: "Rust — Ownership, Borrowing e Lifetimes"
 aliases: ["ownership rust", "borrow checker", "lifetimes rust", "fearless concurrency", "move semantics rust", "&mut vs &"]
 date_created: 2026-07-16
-date_updated: 2026-07-24
-source_count: 2
-tags: [rust, ownership, borrowing, lifetimes, borrow-checker, memory-safety, data-race]
+date_updated: 2026-07-28
+source_count: 4
+tags: [rust, ownership, borrowing, lifetimes, borrow-checker, memory-safety, data-race, raii]
 skill: lang-systems
 status: stable
 ---
@@ -32,6 +32,8 @@ Sem essa regra, duas variáveis apontando pro mesmo endereço abrem três bugs c
 - **use-after-free** — uma libera enquanto a outra ainda usa
 
 Ownership corta o problema estruturalmente: só existe um caminho de código autorizado a liberar aquele valor.
+
+A ideia central — liberação atrelada ao fim do escopo, verificada automaticamente, sem chamada manual espalhada pelo código — não nasce em Rust: é o mesmo princípio do padrão **RAII** de C++ (um `std::unique_ptr` libera seu recurso no destrutor quando sai de escopo). A diferença é que Rust formaliza isso como regra do compilador (borrow checker), enquanto em C++ é convenção de biblioteca — nada impede alguém de voltar para `new`/`delete` cru e reintroduzir os mesmos bugs que ownership elimina estruturalmente. Ver [[wiki/concepts/ponteiros-cpp-stack-heap-raii]] para RAII e `unique_ptr`/`std::move` em detalhe.
 
 ## Borrowing
 
@@ -98,7 +100,13 @@ Ownership, borrowing e lifetimes são checados inteiramente em compile-time — 
 
 [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] cita a migração do Ban (>500.000 linhas) para Rust como motivada, em parte, por essa garantia de memory safety em tempo de compilação servir como [[wiki/concepts/harness|harness]] objetivo para um agente rodando em [[wiki/concepts/loop-engineering|loop]]: em vez de o modelo "interpretar" se um trecho é memory-safe, o compilador rejeita o código diretamente — um sensor determinístico, ao contrário da linguagem anterior citada (Zig), que compila código que só quebra em produção.
 
+## Transferência de Aprendizado para Outras Linguagens
+
+[[wiki/sources/aprenda-a-programar-do-jeito-dificil]] cita (via comentário de espectador, não estudo controlado) o relato de que estudar "só um pouco" de Rust já melhorou a escrita de código em outras linguagens de mais alto nível — usado no vídeo como argumento de que o benefício de estudar ownership/borrowing não se limita ao uso direto de Rust em produção, mas se manifesta transferido para o código escrito em qualquer linguagem depois.
+
 ## Key Sources
 
 - [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]]
 - [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — borrow checker como harness/sensor objetivo na migração do Ban para Rust via loop criador
+- [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] — relato de comentário de espectador: estudar um pouco de Rust já melhora código em outras linguagens
+- [[wiki/sources/ponteiros-cpp-go-csharp]] — RAII em C++ (`unique_ptr`, escopo, destrutor automático) como precursor conceitual do ownership em Rust

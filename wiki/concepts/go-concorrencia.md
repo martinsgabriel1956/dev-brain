@@ -3,8 +3,8 @@ type: concept
 title: "Go — Concorrência"
 aliases: ["goroutines", "go channels", "go csp", "go sync", "go context"]
 date_created: 2026-04-24
-date_updated: 2026-04-24
-source_count: 1
+date_updated: 2026-07-28
+source_count: 2
 tags: [go, concorrencia, goroutines, channels, sync, context, csp]
 skill: lang-systems
 status: stable
@@ -72,6 +72,10 @@ go run -race main.go
 
 Obrigatório em CI — detecta data races em tempo de execução.
 
+## Biblioteca `conc` (Sourcegraph)
+
+Biblioteca da Sourcegraph que encapsula padrões comuns de concorrência em Go (fan-out, error groups, panics recuperados) sobre uma API mais simples que goroutines/channels/mutexes crus. [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] cita seu próprio uso como o caminho recomendado por terceiros para resolver um problema de performance (bot de Tibia), mas relata ter escolhido implementar concorrência do zero antes de recorrer à biblioteca pronta, para entender o mecanismo subjacente — ver [[wiki/concepts/aprendizado-por-luta]].
+
 ## Ver também
 
 - [[go-fundamentos]] — tipos e structs
@@ -81,3 +85,4 @@ Obrigatório em CI — detecta data races em tempo de execução.
 ## Key Sources
 
 - [[wiki/sources/go-concorrencia]]
+- [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] — biblioteca `conc` da Sourcegraph; caso de otimização de bot de Tibia (20min → 2-3s)

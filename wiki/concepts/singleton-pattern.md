@@ -3,8 +3,8 @@ type: concept
 title: "Singleton Pattern"
 aliases: ["singleton"]
 date_created: 2026-05-05
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-07-28
+source_count: 3
 tags: [design-patterns, creational, singleton, gof]
 skill: tech-mentor-backend
 status: stable
@@ -39,7 +39,7 @@ const logger2 = Logger.getInstance();
 
 ## Quando usar
 
-- Pool de conexões com banco de dados
+- Pool de conexões com banco de dados — em Node.js, o cache de módulo (`require`/`import`) já entrega esse comportamento "de graça": instanciar a pool fora do handler de rota, no nível do módulo, garante uma única instância reutilizada por todos os requests. Ver [[wiki/concepts/connection-pooling]] e [[wiki/sources/connection-pooling-pool-vs-polling-serverless]]
 - Logger centralizado
 - Cache compartilhado em processo único
 - Conexão com [[wiki/concepts/redis]] em Pub/Sub — sem Singleton, cada requisição SSE/WebSocket que chega abriria sua própria conexão Redis, derrubando o Redis em escala. O Redis multiplexa uma única conexão entre muitos assinantes; ver [[wiki/concepts/server-sent-events]]
@@ -63,3 +63,4 @@ Use quando a unicidade é **genuinamente necessária**, não para ter estado glo
 - [[sources/sete-padroes-de-design-de-software]]
 - [[sources/design-pattern-facade]] — Facade frequentemente convertida em Singleton
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — conexão Redis compartilhada em arquitetura SSE/Pub-Sub
+- [[wiki/sources/connection-pooling-pool-vs-polling-serverless]] — pool de conexões como singleton de módulo em Node.js

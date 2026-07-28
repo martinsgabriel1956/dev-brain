@@ -3,8 +3,8 @@ type: concept
 title: "PostgreSQL"
 aliases: ["postgres", "pg"]
 date_created: 2026-04-22
-date_updated: 2026-07-27
-source_count: 4
+date_updated: 2026-07-28
+source_count: 5
 tags: [banco-de-dados, postgresql, relacional, jsonb, vetorial]
 skill: tech-mentor-system-design
 status: stable
@@ -47,9 +47,14 @@ Diferença arquitetural fundamental frente ao [[wiki/concepts/mysql|MySQL]]: o P
 
 Benchmarks independentes citados mostram Postgres até 50% mais rápido que MySQL em cargas com CTEs e agregações pesadas — uma das razões pelas quais equipes migram de MySQL para Postgres quando os relatórios/joins complexos começam a pesar. PostGIS (geoespacial) e pgvector (busca vetorial para IA) reforçam o mesmo padrão do JSONB: extensão nativa cobrindo o que levaria a adotar um banco especializado à parte.
 
+## Migrations Contra um Postgres Local
+
+Exemplo prático de fluxo de [[wiki/concepts/database-migration]] contra Postgres local: `docker-compose` sobe `postgres:16-alpine`, e um script `migrate` aplica arquivos de migration numerados (com `up`/`down` pareados) rastreando a versão atual do banco — permitindo aplicar só o que está pendente e reverter (`rollback`) de forma determinística. Ver [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]].
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — arquitetura processo-por-conexão, PgBouncer como padrão, e comparação de performance analítica com MySQL
+- [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]] — migrations cruas via docker-compose + script de versão contra Postgres local

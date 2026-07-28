@@ -3,8 +3,8 @@ type: concept
 title: "Redis"
 aliases: ["redis cache", "redis db"]
 date_created: 2026-06-26
-date_updated: 2026-07-27
-source_count: 5
+date_updated: 2026-07-28
+source_count: 6
 tags: [redis, cache, nosql, banco-in-memory, chave-valor, backend, grande-rollback]
 skill: tech-mentor-backend
 status: stable
@@ -88,3 +88,4 @@ Reforço direto do caso Shopify acima: em quase 100% dos casos reais, Redis não
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — Redis Pub/Sub como broker entre servidores WebSocket replicados, tópico por usuário/grupo
 - [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] — caso onde Redis + MySQL sincronizados foi substituído por MySQL puro com SKIP LOCKED
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — Redis como camada de velocidade sobre banco relacional, nunca fonte de verdade; números de OPS/s e riscos de persistência
+- [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] — citado como exemplo de SGBD NoSQL chave-valor e classificado didaticamente como CP no Teorema CAP em material de concurso

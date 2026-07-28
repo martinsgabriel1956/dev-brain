@@ -3,9 +3,9 @@ type: concept
 title: "Tech Debt como Ferramenta"
 aliases: ["tech debt deliberado", "dívida técnica estratégica", "ship with debt"]
 date_created: 2026-04-26
-date_updated: 2026-07-19
-source_count: 8
-tags: [tech-debt, carreira, craftsmanship, estrategia, velocidade, under-engineering]
+date_updated: 2026-07-28
+source_count: 10
+tags: [tech-debt, carreira, craftsmanship, estrategia, velocidade, under-engineering, alocacao-de-tempo, medicao]
 skill: tech-mentor-leadership
 status: draft
 ---
@@ -67,9 +67,40 @@ Todo o raciocínio acima (Quadrante de Fowler, regra do if, Boy Scout Rule) assu
 
 [[wiki/sources/underengineering-overengineering-mario-souto]] descreve, sem usar o vocabulário do Quadrante de Fowler, exatamente a célula **Imprudente + Inadvertido** (a pior, "risco" e não "débito" no sentido estrito): atalhos como hardcode, código copiado sem estrutura, ou pular CI, tomados só porque "o projeto está corrido", sem qualquer plano de pagamento. A formulação da fonte: "o mais rápido é muito relativo — ele é mais rápido no momento em que você tá fazendo, porque pode ser que daqui três dias dê um problema, e você vai pagar por esse mais rápido que você fez três dias atrás." Isso é o mesmo raciocínio já documentado no Quadrante de Fowler, mas aplicado aos sintomas concretos de [[wiki/concepts/under-engineering]] em vez de a uma decisão arquitetural maior.
 
+## Quanto Tempo Alocar: Regra dos 20% vs. Regra dos 25% do Shopify
+
+[[wiki/sources/tech-debt-guia-completo-gestao-metricas]] documenta dois modelos concretos de alocação de tempo, complementares à decisão binária de "tomar ou não tomar" debt já coberta acima:
+
+- **Regra dos 20%** — 1 dia por semana (de uma semana de 5 dias úteis) dedicado a dívida técnica e manutenção, incluindo o pagamento de dívida inadvertida acumulada.
+- **Regra dos 25% do Shopify** — mais granular: 10% para **dívida diária** (a fricção sentida ao implementar algo no dia a dia — não é caçar code smell aleatório, é refatorar o que já está causando atrito agora), 10% para **dívida semanal** (planejada, com item no board do projeto), e 5% para **dívida mensal/anual** (reuniões dedicadas a discutir se os problemas maiores viraram prioridade).
+- **Sprint dedicado** — um sprint inteiro a cada 6-8 sprints (assumindo sprints de 1 semana) só para dívida e manutenção, com os demais focados em feature.
+
+A diferença central entre os três modelos não é o percentual total — é **onde a decisão de "posso mexer nisso agora?" é tomada**: no modelo dos 20%, o dia é um bloco fixo e pode ser sabotado sob pressão de prazo; no modelo dos 25% do Shopify, 10 dos 25 pontos percentuais estão amarrados à fricção real do trabalho do dia a dia, o que torna mais difícil o time simplesmente pular essa fatia.
+
+## Medindo Dívida: Debt Ratio, Hotspots e PAID
+
+Além de decidir *se* e *quando* tomar debt (Quadrante de Fowler), há uma camada separada de **quantificar** o quanto de dívida já existe e onde ela está concentrada:
+
+- [[wiki/concepts/debt-ratio-sqale]] — fórmula `remediation cost / development cost`, com faixas de risco (o método por trás do número que ferramentas como SonarQube reportam).
+- [[wiki/concepts/hotspot-analysis]] — cruza complexidade ciclomática com frequência de mudança (code churn) para achar os 20% de arquivos responsáveis por 80% da dor (regra de Pareto aplicada a tech debt).
+- [[wiki/concepts/paid-framework]] — heurística mnemônica (Performance/Architectural/Integration/Dependency) para priorizar sem precisar de ferramenta de análise.
+- [[wiki/concepts/refactor-vs-rewrite-matrix]] — depois de priorizado, decide entre refatorar, reescrever, conviver ou depreciar, cruzando valor de negócio × risco técnico.
+
+## Prevenção: TDD, Pair Programming e CI/CD
+
+A mesma fonte lista três práticas de prevenção que atacam principalmente a célula Imprudente do Quadrante de Fowler (evitar que dívida entre no sistema sem sequer ser uma decisão consciente), em vez de gerenciar dívida já existente: [[wiki/concepts/tdd]] (difícil escrever lógica confusa quando é preciso passar um teste limpo primeiro — ver também o ciclo Red-Green-Refactor, onde a etapa de refactor é o próprio [[wiki/concepts/boy-scout-rule]] aplicado dentro do ciclo TDD), [[wiki/concepts/pair-programming]] (atrito social contra atalhos ruins) e [[wiki/concepts/pipeline-de-qualidade]] com quality gates automatizados (análise estática, cobertura, lint — nunca deploy direto para produção sem passar por ambiente de teste).
+
+## Débito Imposto por Decisão Organizacional, Não Técnica
+
+Todo o raciocínio acima trata tech debt como decisão que o próprio time/dev toma (Quadrante de Fowler, regra do if, alocação de tempo). [[wiki/sources/7-habitos-programador-altamente-eficaz]] descreve um caso onde o débito é **imposto de fora**, por uma decisão de gestão que o programador não conseguiu reverter: o autor propôs um fluxo linear e simples para um problema de clientes; o chefe insistiu num fluxo alternativo muito mais complexo, cheio de exceções para cobrir todos os casos possíveis, e essa foi a versão implementada. Ambas as abordagens resolviam o mesmo problema, mas a complexidade extra do fluxo do chefe gerou o que a fonte chama de "inflamação técnica" no sistema — dívida sem nenhuma das características do debt Prudente+Deliberado (não foi uma troca consciente de velocidade por custo futuro; foi complexidade desnecessária imposta por preferência de quem estava mais distante do código). Esse caso reforça, pelo lado oposto, por que a fonte trata a pergunta "isso precisa mesmo ser resolvido desse jeito?" como hábito central de um programador eficaz — ver [[wiki/concepts/paralisia-por-analise]] e [[wiki/concepts/over-engineering]] para os ângulos já registrados dessa mesma fonte sobre planejamento excessivo.
+
+## O Caso Knight Capital
+
+[[wiki/entities/knight-capital]] é citado como o exemplo extremo de para onde leva não seguir a Boy Scout Rule: código morto não removido, reativado por engano num deploy, gerando perda estimada em centenas de milhões de dólares em cerca de 45 minutos (2012). Ilustra que "delete código morto" não é só estética — é prevenção de incidente.
+
 ## Relacionado
 
-[[concepts/observabilidade]] · [[sources/conceitos-que-ninguem-ensina]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/avaliar-hype-tecnologico]] · [[wiki/concepts/divida-cognitiva]]
+[[concepts/observabilidade]] · [[sources/conceitos-que-ninguem-ensina]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/avaliar-hype-tecnologico]] · [[wiki/concepts/divida-cognitiva]] · [[wiki/concepts/debt-ratio-sqale]] · [[wiki/concepts/hotspot-analysis]] · [[wiki/concepts/paid-framework]] · [[wiki/concepts/refactor-vs-rewrite-matrix]]
 
 ## Key Sources
 
@@ -80,3 +111,5 @@ Todo o raciocínio acima (Quadrante de Fowler, regra do if, Boy Scout Rule) assu
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]] — critério prático: refatoração oportunista que passa de horas/dias vira débito técnico formal
 - [[wiki/sources/cognitive-debt-margaret-storey]] — contraste "onde mora o débito": código (dívida técnica) vs. cabeça do time (dívida cognitiva)
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — "o mais rápido é relativo" como formulação prática do débito Imprudente+Inadvertido aplicado a sintomas de under-engineering
+- [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] — modelos de alocação de tempo (20%/25% Shopify/sprint dedicado), mensuração formal (debt ratio/SQALE, hotspot analysis, PAID), matriz refatorar-vs-reescrever e caso Knight Capital
+- [[wiki/sources/7-habitos-programador-altamente-eficaz]] — caso de débito imposto por decisão de gestão (fluxo complexo vencendo fluxo simples), fora do modelo usual de decisão consciente do próprio time

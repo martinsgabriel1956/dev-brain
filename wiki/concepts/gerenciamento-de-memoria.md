@@ -3,9 +3,9 @@ type: concept
 title: "Gerenciamento de Memória (Linguagens de Programação)"
 aliases: ["memory management", "garbage collector", "GC", "ownership", "manual memory management"]
 date_created: 2026-07-09
-date_updated: 2026-07-16
-source_count: 2
-tags: [cs-fundamentals, linguagens-de-programacao, memoria, garbage-collector, rust, runtime]
+date_updated: 2026-07-28
+source_count: 3
+tags: [cs-fundamentals, linguagens-de-programacao, memoria, garbage-collector, rust, runtime, raii, cpp]
 skill: cs-fundamentals
 status: draft
 ---
@@ -19,6 +19,8 @@ Toda variável criada num programa ocupa memória, que precisa ser liberada quan
 ### Manual
 
 O programador aloca e libera memória explicitamente (`malloc`/`free` em C). Dá controle total, mas um erro humano causa vazamento de memória (esqueceu de liberar) ou *use-after-free* (acessou memória já liberada).
+
+Em C++ moderno, o padrão **RAII** (Resource Acquisition Is Initialization) mitiga boa parte do risco humano do modelo manual sem introduzir GC: um smart pointer como `std::unique_ptr` libera o recurso automaticamente no destrutor, quando o objeto sai de escopo — sem precisar de `delete` explícito, mesmo em caminhos de saída não previstos (early return, exceção). Detalhamento completo (stack vs. heap, o bug clássico de retornar endereço de variável local, `unique_ptr`/`std::move`) em [[wiki/concepts/ponteiros-cpp-stack-heap-raii]].
 
 ### Garbage Collector (GC)
 
@@ -37,8 +39,10 @@ O modelo de memória escolhido molda como todo o resto da linguagem — e do có
 - [[wiki/concepts/sistema-de-tipos]] — em Rust, ownership é parcialmente implementado como parte do sistema de tipos, verificado em compile-time
 - [[wiki/concepts/compilador]] — a estratégia de execução (interpretador, compilação nativa, bytecode+VM) interage com o modelo de memória: um GC, por exemplo, precisa rodar dentro do runtime, não apenas no código gerado
 - [[wiki/concepts/concorrencia]] — modelo de memória e modelo de concorrência do runtime são decisões acopladas (memória compartilhada entre threads exige sincronização; ownership em Rust é o que torna "fearless concurrency" possível sem data races)
+- [[wiki/concepts/ponteiros-cpp-stack-heap-raii]] — o mesmo bug (retornar endereço de variável local) é undefined behavior em C++ manual, mas não existe em Go (escape analysis realoca a variável para a heap) nem em C# (reference types já vivem na heap sob GC)
 
 ## Key sources
 
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]]
 - [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — aprofundamento de ownership em Rust: move semantics, regra de exclusividade do borrowing (N leitores OU 1 escritor) e lifetimes como garantia de que referência não outlive o valor
+- [[wiki/sources/ponteiros-cpp-go-csharp]] — comparação prática C++/Go/C#: stack vs. heap, escape analysis em Go, RAII e `unique_ptr` em C++ moderno

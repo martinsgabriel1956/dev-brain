@@ -4,8 +4,8 @@ title: "Spec-Driven Development"
 aliases: ["SDD", "spec driven", "desenvolvimento orientado a especificação", "planning-first"]
 date_created: 2026-06-02
 date_updated: 2026-07-24
-source_count: 11
-tags: [spec-driven, planejamento, ia-para-devs, harness, agente, qualidade]
+source_count: 12
+tags: [spec-driven, planejamento, ia-para-devs, harness, agente, qualidade, loop-engineering]
 skill: tech-mentor-ai
 status: stable
 ---
@@ -120,6 +120,10 @@ Na prática: uma feature completa com migration, schema e API repository é feit
 
 O ponto não invalida SDD como definido acima (spec como contrato de execução, revisão no nível de PR) — é um alerta específico contra a versão que trata a spec como o único artefato que importa e o código como totalmente descartável. A crítica reforça o item "Revisão" do processo (revisar o resultado prático, não pular a revisão inteiramente) e conecta com [[wiki/concepts/modulo-profundo]]: specs geram código ruim persistentemente quando a base de código não tem estrutura (módulos profundos, interfaces simples) que force a IA a produzir algo revisável.
 
+## Quem Já Faz SDD Já Está Fazendo Harness Engineering
+
+[[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] argumenta que separar spec de execução — escrever a spec antes de pedir para codificar — já é, na prática, a separação clara entre planejar e executar que caracteriza um bom [[wiki/concepts/harness]]: o agente não planeja e executa na mesma passagem. Também funciona como [[wiki/concepts/human-in-the-loop|checkpoint]] humano entre planejar e começar a execução. Quem já pratica SDD, segundo essa leitura, já tem parte da disciplina que "harness engineering" nomeia — mesmo sem ter usado o termo.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-01-abertura]]
@@ -127,6 +131,7 @@ O ponto não invalida SDD como definido acima (spec como contrato de execução,
 - [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]
 - [[wiki/sources/formacao-ia-devs-aula-06-qa]]
 - [[wiki/sources/formacao-ia-devs-aula-04-agentes-planejamento]]
+- [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — separação spec/execução como a mesma disciplina que "harness engineering" nomeia; SDD como checkpoint humano entre planejar e executar
 - [[wiki/sources/formacao-ia-devs-aula-05-qa]]
 - [[wiki/sources/product-engineer-vale-do-silicio-2026]]
 - [[wiki/sources/tdd-sdd-bdd-era-ia]] — origem não-IA do termo, contratos de API como boundary (OpenAPI, Protobuf, GraphQL)

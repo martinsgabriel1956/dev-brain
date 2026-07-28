@@ -3,8 +3,8 @@ type: concept
 title: "Code Review"
 aliases: ["revisão de código", "pull request review", "PR review"]
 date_created: 2026-07-03
-date_updated: 2026-07-21
-source_count: 7
+date_updated: 2026-07-28
+source_count: 8
 tags: [code-review, qualidade, carreira, júnior, mentoria, grill-me, babysitting-de-agentes, quality-gate, under-engineering]
 skill: tech-mentor-leadership
 status: draft
@@ -65,6 +65,10 @@ Em times que usam IA generativa/agêntica pesadamente, [[wiki/concepts/divida-co
 
 A recomendação oficial da Anthropic para o [[wiki/entities/claude-code]] é manter um arquivo separado (`review`) com instruções pertinentes só a code review — critérios do que checar, o que ignorar — mantendo informações gerais do projeto no [[wiki/concepts/claude-md|CLAUDE.md]]. Separar os dois evita que o contexto de review fique diluído entre regras de projeto e critérios de revisão, e vice-versa. O Claude Code também expõe um comando `/code-review`, recomendado com o effort "ultra" para revisões de código substancial e complexo.
 
+## Migrations de Banco Como Código Sujeito a Review
+
+O critério "regra de negócio primeiro" e a exigência de pull request/versionamento não se limitam a código de aplicação: [[wiki/concepts/database-migration|migrations de banco de dados]] deveriam passar pelo mesmo processo. Rodar DDL manualmente contra o banco (SSH direto na cloud, sem PR nem git) quebra o requisito básico de auditabilidade e reprodutibilidade que qualquer outra mudança de código já tem — mesmo quando quem executa é uma pessoa experiente administrando o banco. Ver [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]].
+
 ## Relacionado
 
 - [[wiki/concepts/definicao-de-pronto]] — code review é um dos critérios de "pronto"
@@ -82,3 +86,4 @@ A recomendação oficial da Anthropic para o [[wiki/entities/claude-code]] é ma
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — babysitting de PR pelo próprio agente (loop de CI + comentários + resolução de conversas); humano como gargalo de revisão em escala
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — tipos genéricos (`any`) e primitivos soltos em vez de enum como itens recorrentes de review, ligados a under-engineering
 - [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — arquivo dedicado `review` separado do CLAUDE.md; `/code-review --ultra` para revisões complexas
+- [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]] — migrations de banco tratadas com o mesmo processo de PR/review que código de aplicação

@@ -3,8 +3,8 @@ type: concept
 title: "Pepper"
 aliases: ["password pepper", "server-side secret"]
 date_created: 2026-06-11
-date_updated: 2026-06-11
-source_count: 1
+date_updated: 2026-07-28
+source_count: 2
 tags: [segurança, criptografia, password-hashing, pepper, defesa-em-profundidade]
 skill: tech-mentor-security
 status: stable
@@ -83,3 +83,4 @@ Rotacionar pepper requer re-hash de todas as senhas, o que exige que o usuário 
 ## Key Sources
 
 - [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
+- [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]

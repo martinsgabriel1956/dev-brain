@@ -3,8 +3,8 @@ type: concept
 title: "Entrevista Técnica de Coding"
 aliases: ["coding interview", "entrevista estilo leetcode", "live coding interview", "whiteboard interview"]
 date_created: 2026-07-20
-date_updated: 2026-07-27
-source_count: 4
+date_updated: 2026-07-28
+source_count: 5
 tags: [carreira, entrevistas, coding-interview, algoritmos, comunicacao]
 skill: tech-mentor-leadership
 status: draft
@@ -38,6 +38,10 @@ Se houver mais de uma solução possível, é válido perguntar ao entrevistador
 
 O artigo original do mesmo autor (fonte primária do vídeo já citado acima) detalha o framework prático completo por trás do conselho "pratique com outra pessoa": um roteiro de dez etapas de entrevista simulada — cronômetro real, ouvir o problema sem olhar o enunciado, perguntar e reafirmar suposições, estimar Big-O antes de codar, implementar sem pseudocódigo, testar contra uma checklist mental. Ver [[wiki/concepts/seis-passos-mock-interview]] para o detalhamento completo.
 
+## Nervosismo e Confiança: o Caso do Candidato Reprovado na Netflix
+
+[[wiki/sources/aprenda-a-programar-do-jeito-dificil]] relata (de segunda mão, sem fonte primária citada) o caso de um candidato no início de carreira reprovado numa entrevista na Netflix por nervosismo: travou numa pergunta técnica, deu branco, e — assim que a entrevistadora desligou a câmera — resolveu o mesmo problema em cerca de 5 minutos. A fonte usa esse caso para argumentar que confiança construída ao estudar coisas difíceis (não apenas conhecimento técnico em si) é o que permite manter o raciocínio funcionando sob a pressão real da entrevista — complementando, com o ângulo emocional/nervosismo, o que esta página já documenta sobre "ficar travado" como sinal esperado e avaliado.
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/seis-passos-mock-interview]] — o roteiro concreto de prática que operacionaliza os princípios acima
@@ -54,3 +58,4 @@ O artigo original do mesmo autor (fonte primária do vídeo já citado acima) de
 - [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]] — artigo original com o roteiro completo de dez etapas ("Os Seis Passos")
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]
 - [[wiki/sources/anatomia-entrevista-system-design-bigtech]] — mesma tese de "expor o raciocínio em voz alta" aplicada à entrevista de system design, dentro do pipeline completo de entrevista bigtech (RH → técnica/LeetCode → system design → fit)
+- [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] — caso (de segunda mão) de candidato reprovado na Netflix por nervosismo, resolvendo o problema minutos depois sem pressão

@@ -2,6 +2,116 @@
 
 ---
 
+## [2026-07-28] ingest | 7 Hábitos de um Programador Altamente Eficaz
+
+**Fonte:** [[wiki/sources/7-habitos-programador-altamente-eficaz]] — transcrição de vídeo PT-BR em bloco único, sem pontuação/seções, reestruturada em markdown (introdução + sete hábitos numerados + fechamento com referência a dois vídeos próprios do canal) e salva em `raw/7-habitos-programador-altamente-eficaz.md`. Autor não identificado por nome no material bruto, mas as referências finais ("4 hábitos que tornam você um programador ineficiente" e um "checklist... dez itens") apontam para o mesmo canal já coberto em [[wiki/sources/4-habitos-programador-ineficiente]] / [[wiki/sources/habitos-ruins-de-programador]] e [[wiki/sources/desenvolvedor-acima-da-media-10-itens]].
+
+**Skill:** `tech-mentor-leadership`, carregada de `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/SKILL.md`. Referência `references/software-craftsmanship.md` consultada para calibrar craftsmanship/documentação/pair programming — o conteúdo específico da fonte (hábitos individuais de produtividade e maturidade técnica) não tem contrapartida direta em nenhum arquivo de referência dedicado a "hábitos", então a skill serviu principalmente para confirmar o enquadramento geral (carreira/craftsmanship) e o vocabulário de tech debt/over-engineering já usado alhures na wiki.
+
+**Páginas criadas:**
+- `raw/7-habitos-programador-altamente-eficaz.md`
+- `wiki/sources/7-habitos-programador-altamente-eficaz.md`
+- `wiki/concepts/debugar-antes-de-perguntar.md` — novo, status stub: buscar solução por conta própria antes de perguntar; trade-off velocidade vs. raciocínio próprio; analogia da lâmpada
+- `wiki/concepts/ler-codigo-de-terceiros.md` — novo, status stub: ler código alheio como habilidade e fonte de aprendizado; caso pessoal de inspiração na lib `clipboard.js`
+- `wiki/concepts/medo-de-codigo.md` — novo, status stub: sensação de código "julgando" como fenômeno mental; reformulação "o código precisa de você"
+
+**Páginas atualizadas:**
+- `wiki/concepts/paralisia-por-analise.md` — nova seção "Como Estágio de Carreira: Júnior → Pleno → Sênior"; novo backlink; `source_count` 3 → 4
+- `wiki/concepts/over-engineering.md` — nova seção "Como Escape Malsucedido da Paralisia por Análise"; novo backlink; `source_count` 7 → 8
+- `wiki/concepts/abstracao.md` — nova seção "Analogia dos Órgãos (Maturidade em Pensar Primeiro em Abstrações)"; novo backlink; `source_count` 3 → 4
+- `wiki/concepts/acoplamento.md` — nova seção "Analogia Médica: Limites de Órgãos Furando Uns aos Outros"; novo backlink; `source_count` 3 → 4
+- `wiki/concepts/bloqueio-de-agenda.md` — nova seção "Escala de Liderança: de Bloco Individual a Resgate de Agenda Inteira"; novo backlink; `source_count` 2 → 3
+- `wiki/concepts/living-documentation.md` — nota na seção "Testes como documentação técnica" sobre aprender sistemas legados só pela leitura de testes; novo backlink; `source_count` 2 → 3
+- `wiki/concepts/tech-debt-como-ferramenta.md` — nova seção "Débito Imposto por Decisão Organizacional, Não Técnica"; novo backlink; `source_count` 9 → 10
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (Carreira & Soft Skills)
+
+**Notas:** Nenhuma contradição encontrada com fontes já existentes na wiki — os sete hábitos reforçam e cruzam temas já bem cobertos ([[wiki/concepts/paralisia-por-analise]], [[wiki/concepts/over-engineering]], [[wiki/concepts/abstracao]], [[wiki/concepts/acoplamento]], [[wiki/concepts/bloqueio-de-agenda]], [[wiki/concepts/living-documentation]], [[wiki/concepts/tech-debt-como-ferramenta]]) com ângulos genuinamente novos em cada um: a leitura de estágios júnior/pleno/sênior amarrando explicitamente paralisia por análise e over-engineering como fases sucessivas de uma mesma progressão (nenhuma fonte anterior havia nomeado o over-engineering como "escape malsucedido" da paralisia); a analogia médica dos órgãos aplicada simetricamente a abstração e acoplamento; um caso concreto de dívida técnica imposta por decisão de gestão (não uma troca consciente de velocidade por custo, mas complexidade externa imposta) que não tinha correspondência exata no modelo de Quadrante de Fowler já registrado. Três conceitos não tinham página própria e foram criados como stubs: buscar informação por conta própria antes de perguntar, ler código de terceiros como habilidade, e medo de código como fenômeno psicológico — nenhum dos três havia sido nomeado explicitamente nas fontes anteriores da wiki, embora temas adjacentes (pair programming, debugging estruturado) já existissem. Open questions registradas na própria fonte (fora do escopo deste ingest): não há critério objetivo de quanto tempo é razoável travar sozinho antes de pedir ajuda; a analogia órgão-a-órgão para abstração/acoplamento é forte pedagogicamente mas o vídeo não propõe nenhuma técnica concreta (bounded contexts, DDD) para identificar esses limites na prática.
+
+---
+
+## [2026-07-28] ingest | Pipeline de Renderização do Browser — da URL ao Pixel
+
+**Fonte:** [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]] — transcrição de vídeo já em português, sem pontuação/seções, reestruturada em markdown com 14 seções seguindo a ordem cronológica do pipeline (cache, DNS, TCP, TLS, request HTTP, HTML→DOM, CSSOM, render tree, layout, paint, composite, JavaScript e o parser, reflow/repaint disparados por JS, por que as otimizações funcionam) e salva em `raw/pipeline-de-renderizacao-do-browser-url-ate-pixel.md`.
+
+**Skill:** `tech-mentor-frontend`, carregada de `/home/gabriel-martins/Documentos/skills/tech-mentor-frontend/SKILL.md`. Referências `references/frontend-performance-deep.md` e `references/frontend-devtools.md` confirmaram os claims centrais da fonte com correspondência quase literal: a waterfall `DNS → TCP → TLS → HTTP Request → ... → DOMContentLoaded → FCP → LCP` bate com a sequência descrita na fonte; a hierarquia de custo reflow > repaint > composite é confirmada pelos exemplos de código comentados (`transform`/`opacity` como "GPU: sem reflow" vs. `left`/`top`/`width` como "provoca reflow"); `<script defer>` como prática recomendada também está documentada. A skill acrescentou um conceito não nomeado explicitamente na fonte (layout thrashing / forced synchronous layout), tratado como extensão `[skill: tech-mentor-frontend]`.
+
+**Páginas criadas:**
+- `raw/pipeline-de-renderizacao-do-browser-url-ate-pixel.md`
+- `wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel.md`
+- `wiki/concepts/critical-rendering-path.md` — novo, status draft: hub que amarra as 6 etapas do pipeline
+- `wiki/concepts/dom.md` — novo, status draft: parsing incremental e tolerante a erros
+- `wiki/concepts/cssom.md` — novo, status draft: árvore de estilos, render-blocking
+- `wiki/concepts/render-tree.md` — novo, status draft: DOM+CSSOM combinados, só nós visíveis
+- `wiki/concepts/reflow-layout.md` — novo, status draft: cálculo recursivo de geometria via box model
+- `wiki/concepts/paint-composite.md` — novo, status draft: pintura em camadas + composição GPU
+- `wiki/concepts/script-async-defer.md` — novo, status draft: parser bloqueado por `<script>`, diferença async/defer
+- `wiki/concepts/layout-thrashing.md` — novo, status draft: anti-padrão leitura/escrita alternada de geometria, extensão via skill
+- `wiki/concepts/box-model.md` — novo, status draft: content/padding/border/margin
+- `wiki/concepts/tcp-three-way-handshake.md` — novo, status draft: SYN/SYN-ACK/ACK
+- `wiki/concepts/tls-handshake.md` — novo, status draft: negociação de certificados em HTTPS
+- `wiki/concepts/http-caching.md` — novo, status stub: cache pula navegação de rede; nota em aberto sobre confusão cache HTTP vs. bfcache
+
+**Páginas atualizadas:**
+- `wiki/concepts/dns.md` — nova seção conectando DNS ao critical rendering path; nova linha em Key sources; `source_count` 2 → 3
+- `wiki/index.md` — nova linha em Sources; nova subseção "Pipeline de Renderização do Browser" com 12 linhas em Concepts (dentro de Frontend & Design Engineering)
+
+**Notas:** Primeira fonte da wiki cobrindo o critical rendering path do browser (DOM, CSSOM, render tree, layout, paint, composite) — nenhuma página preexistente tratava desse pipeline especificamente, apesar de `dns.md` já existir de uma fonte anterior sobre redes. Nenhuma contradição encontrada entre esta fonte e o restante da wiki. Duas questões em aberto ficaram registradas na fonte: (1) a fonte não distingue cache HTTP comum de bfcache, tratados sob o mesmo rótulo genérico "cache" — marcado como nota em aberto em `wiki/concepts/http-caching.md`; (2) a fonte não menciona HTTP/2/HTTP/3, preconnect/prefetch nem scheduling de main thread (INP, `scheduler.yield`) — possíveis ângulos complementares para uma fonte futura, não criadas páginas para esses tópicos por não estarem no material original.
+
+---
+
+## [2026-07-28] ingest | Dívida Técnica: Guia Completo de Gestão e Métricas
+
+**Fonte:** [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] — transcrição de vídeo em inglês, traduzida para português e reestruturada em seções (definição, quadrantes de Fowler, analogia financeira, alocação de tempo, prevenção, mensuração, priorização, refatorar-vs-reescrever, ferramentas, comunicação a stakeholders, roadmap), salva em `raw/tech-debt-guia-completo-gestao-metricas.md`. Bloco de patrocínio (Monday.com / Monday Magic) mantido por completude mas não tratado como conteúdo técnico central, mesmo critério de ingests anteriores.
+
+**Skill:** `tech-mentor-leadership`, carregada de `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/SKILL.md`. Referência específica consultada: `references/tech-debt-management.md` — confirmou que Quadrante de Fowler, Hotspot Analysis (complexidade ciclomática × frequência de mudança via `git log`), DORA como proxy de débito, Debt Register com fórmula de score, Boy Scout Rule e template de business case já documentados na skill têm contrapartida direta nesta fonte, com terminologia quase idêntica — reforça que a fonte é um material de nível introdutório/prático alinhado ao corpo de conhecimento já calibrado da skill, não um ângulo contraditório.
+
+**Páginas criadas:**
+- `raw/tech-debt-guia-completo-gestao-metricas.md`
+- `wiki/sources/tech-debt-guia-completo-gestao-metricas.md`
+- `wiki/concepts/debt-ratio-sqale.md` — novo, status stub: fórmula `remediation cost / development cost`, faixas de risco ao estilo SonarQube
+- `wiki/concepts/paid-framework.md` — novo, status stub: mnemônico Performance/Architectural/Integration/Dependency
+- `wiki/concepts/refactor-vs-rewrite-matrix.md` — novo, status stub: matriz 2×2 valor de negócio × risco técnico
+- `wiki/concepts/hotspot-analysis.md` — novo, status stub: complexidade ciclomática × code churn, lead time e DORA como sinais complementares
+- `wiki/entities/knight-capital.md` — novo, status stub: caso de incidente citado como exemplo extremo de custo de não seguir a Boy Scout Rule
+
+**Páginas atualizadas:**
+- `wiki/concepts/tech-debt-como-ferramenta.md` — novas seções "Quanto Tempo Alocar" (regra dos 20% vs. 25% do Shopify vs. sprint dedicado), "Medindo Dívida" (debt ratio/hotspot/PAID/refactor-vs-rewrite), "Prevenção" (TDD/pairing/CI-CD) e "O Caso Knight Capital"; `source_count` 8 → 9
+- `wiki/concepts/quadrante-de-fowler.md` — nova seção ligando o quadrante à camada de mensuração/priorização introduzida por esta fonte; `source_count` 1 → 2
+- `wiki/concepts/boy-scout-rule.md` — nova seção sobre Red-Green-Refactor como aplicação estruturada da regra dentro do ciclo TDD, e caso Knight Capital como custo de não segui-la; `source_count` 2 → 3
+- `wiki/concepts/tdd.md` — nova seção "TDD como Prevenção de Dívida Técnica"; `source_count` 11 → 12
+- `wiki/concepts/pair-programming.md` — nova seção "Prevenção de Dívida Técnica"; `source_count` 2 → 3
+- `wiki/concepts/dora-metrics.md` — nova seção "Lead Time como Sinal Indireto de Dívida Técnica"; `source_count` 2 → 3
+- `wiki/concepts/pipeline-de-qualidade.md` — nova seção "Prevenção de Dívida Técnica via Quality Gates"; `source_count` 6 → 7
+- `wiki/entities/martin-fowler.md` — nova linha em Key Sources; `source_count` 11 → 12
+- `wiki/index.md` — nova linha em Sources; cinco novas linhas em Concepts (`debt-ratio-sqale`, `hotspot-analysis`, `paid-framework`, `refactor-vs-rewrite-matrix`); uma nova linha em Entities (`knight-capital`)
+
+**Notas:** Fonte de tom introdutório/prático (estilo "tudo que você precisa saber sobre X"), mas com contribuição real à wiki: nenhuma fonte anterior cobria a camada de **mensuração formal** de dívida técnica (fórmula de debt ratio/SQALE, hotspot analysis com complexidade ciclomática e code churn) nem os frameworks de priorização (PAID) e de decisão refatorar-vs-reescrever. Os dois modelos concretos de alocação de tempo (regra dos 20% e regra dos 25% do Shopify) também eram uma lacuna — a wiki já tinha o "porquê" tomar debt (Quadrante de Fowler) mas não o "quanto tempo por semana/sprint dedicar a pagá-lo". Três pontos ficaram como confidence média/open question na fonte, sem contradizer nada já registrado: (1) os números "23-42% do tempo" e "20-40% de desaceleração" são citados sem fonte primária nomeada; (2) o "modelo de três fatores" (impacto/custo fixo/espalhamento) parece ser reformulação pessoal do autor de heurísticas já conhecidas, sem origem acadêmica confirmada; (3) o valor de perda do caso Knight Capital citado como "$462 milhões" está dentro da faixa amplamente documentada externamente (~$440-460M), mas sem fonte primária no vídeo — marcado como [external] com nota de precisão na página da entidade. Nenhuma contradição factual encontrada entre esta fonte e as já registradas sobre Quadrante de Fowler, refatoração ou dívida cognitiva — a nova fonte estende com uma camada quantitativa que faltava.
+
+---
+
+## [2026-07-28] ingest | Database Migrations — SQL Cru vs. ORM (Drizzle)
+
+**Fonte:** [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]] — transcrição de vídeo já em português (sem necessidade de tradução), transformada em markdown estruturado por seções e salva em `raw/database-migrations-sql-cru-vs-orm-drizzle.md`. Bloco de patrocínio (Abacus AI) removido por não ser conteúdo técnico, mesmo critério de ingests anteriores.
+
+**Skill:** `tech-mentor-backend` — carregada com sucesso a partir de `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/SKILL.md` (path real neste ambiente difere do `/home/nemomartins/...` referenciado no CLAUDE.md). Referência específica consultada: `references/database-migrations.md` (Expand-Contract, Flyway/Liquibase, zero-downtime, checklist de migration segura).
+
+**Páginas criadas:**
+- `raw/database-migrations-sql-cru-vs-orm-drizzle.md`
+- `wiki/sources/database-migrations-sql-cru-vs-orm-drizzle.md`
+- `wiki/concepts/database-migration.md` — stub novo: conceito central de migrate up/down, versionamento, e as duas formas de gerar migrations (SQL cru vs. ORM)
+- `wiki/concepts/drizzle-orm.md` — stub novo: ORM mínima TypeScript, fluxo `generate`/`migrate`
+
+**Páginas atualizadas:**
+- `wiki/concepts/orm.md` — nova seção "Fluxo Invertido: do Estado Final às Migrations"; `source_count` 2 → 3
+- `wiki/concepts/postgresql.md` — nova seção "Migrations Contra um Postgres Local"; `source_count` 4 → 5
+- `wiki/concepts/expand-contract.md` — nova frase em Relacionado citando o incidente de lock em produção como exemplo do problema que o padrão resolve; `source_count` 1 → 2
+- `wiki/concepts/checklist-primeiro-dia-projeto.md` — nova linha em Key Sources detalhando o mecanismo da etapa 4 (migrations); `source_count` 1 → 2
+- `wiki/concepts/code-review.md` — nova seção "Migrations de Banco Como Código Sujeito a Review"; `source_count` 7 → 8
+- `wiki/sources/migrations-schema-evolution.md` — nova seção "Fontes Relacionadas" apontando para esta fonte-irmã
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (Bancos de Dados & SQL)
+
+**Notas:** Fonte-irmã de [[wiki/sources/migrations-schema-evolution]] (já existente): aquela cobre zero-downtime/expand-contract/DDL lock com profundidade técnica (por que `ADD COLUMN NOT NULL` sem default trava tabela, checksum de migrations aplicadas); esta cobre um ângulo de processo/governança (por que rodar migration manual via SSH é considerado errado, migrations como código sujeito a PR/review) e demonstra ao vivo o fluxo migrate up/down tanto com SQL cru quanto com uma ORM (Drizzle), incluindo o fluxo invertido característico de ORMs (estado final declarado → migration derivada automaticamente). Nenhuma contradição entre as duas fontes — o incidente de lock relatado aqui (~5 min numa tabela de ~100k linhas) é anedótico e sem detalhe técnico da causa, então foi marcado como open question ligando à explicação mais rigorosa já presente na fonte-irmã. Conceito `database-migration` não existia como página própria antes desta ingestão — só aparecia disperso em `orm.md` e como fonte (`migrations-schema-evolution`); criado como stub central para ambas as fontes linkarem.
+
 ## [2026-07-27] ingest | O que o Entrevistador Está Pescando numa Entrevista de System Design (Padrão BigTech)
 
 **Fonte:** [[wiki/sources/anatomia-entrevista-system-design-bigtech]] — transcrição de vídeo já em português, sem necessidade de tradução. O bloco de patrocínio de terceiros no início ("UVP", escola de investimentos) foi removido por não ser conteúdo técnico — mesmo critério já aplicado a blocos patrocinados equivalentes em ingestões anteriores. Limpa, estruturada em markdown por seções (introdução, pipeline bigtech, requisitos, BOE, API, esquema de dados, o que realmente importa, HLD, tradeoffs/escala, comunicação, fechamento) e salva em `raw/anatomia-entrevista-system-design-bigtech.md`.
@@ -3895,5 +4005,212 @@ Entities:
 - `wiki/index.md` — nova linha em Sources; nova linha em Entities (James Lewis)
 
 **Notas:** Esta é a fonte primária histórica que faltava na wiki — [[wiki/concepts/microsservicos]] já citava fartamente conceitos derivados dela (bounded context, distributed monolith, resiliência obrigatória) via a skill e via fontes secundárias (ex.: [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]]), mas nunca o artigo original. Contribuição genuinamente nova: a citação direta de Conway (1968) como mecanismo explícito por trás da decomposição por capacidade de negócio, a distinção "smart endpoints, dumb pipes" vs. ESB (com a citação de Jim Webber sobre "Erroneous Spaghetti Box"), e — o ponto mais frequentemente perdido em resumos populares do artigo — a postura textual de "otimismo cauteloso" dos próprios autores, que explicitamente recusam declarar microsserviços "o futuro" da arquitetura de software, citando riscos reais de imaturidade (refatoração cara entre processos, deslocamento de complexidade para as conexões, dependência de habilidade do time). Nenhuma contradição encontrada com o conteúdo já existente na wiki; o artigo é consistente com, e é a origem histórica de, boa parte do que [[wiki/concepts/microsservicos]] já documentava. Duas lacunas identificadas e registradas como open questions na fonte (não corrigidas nesta ingestão, por estarem fora do escopo de um ingest): as páginas de conceito `wiki/concepts/distributed-monolith`, `wiki/concepts/ddd-strategic` e `wiki/concepts/conways-law` são referenciadas por múltiplas outras páginas (incluindo `wiki/sources/conways-law` e `wiki/sources/ddd-strategic`, já ingeridas) mas nunca foram criadas — links quebrados preexistentes, recomendados para o próximo "lint the wiki".
+
+---
+
+## [2026-07-28] ingest | Criptografia — de César aos Computadores Quânticos
+
+**Fonte:** [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]] — transcrição de vídeo já em português (autor não identificado no material fornecido), sem necessidade de tradução. Limpa, estruturada em markdown por seções (introdução, cifra de César, cítala espartana, canal seguro, cifra de Vigenère, máquina Enigma, simétrica/AES, assimétrica/RSA, IND-CPA, ameaça quântica Shor/Grover, hashing, salt/pepper, BCrypt, Argon2) e salva em `raw/criptografia-cesar-vigenere-rsa-aes-hashing-quantica.md`.
+
+**Skill:** `tech-mentor-security`, carregada de `/home/gabriel-martins/Documentos/skills/tech-mentor-security/SKILL.md`. Seções `references/crypto.md` (simétrica/assimétrica, AES-GCM, KDFs) e `references/post-quantum-crypto.md` (Shor, Grover, harvest-now-decrypt-later, NIST PQC) confirmaram que a fonte é consistente com o conhecimento de referência da skill, sem contradições.
+
+**Páginas criadas:**
+- `raw/criptografia-cesar-vigenere-rsa-aes-hashing-quantica.md`
+- `wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica.md`
+- `wiki/concepts/scytale.md` — novo stub: cítala espartana, transposição via bastão
+- `wiki/concepts/vigenere-cipher.md` — novo stub: substituição polialfabética, "cifra indecifrável" por 300 anos
+- `wiki/concepts/enigma-machine.md` — novo stub: máquina de rotores alemã, quebrada por reuso de chave
+- `wiki/concepts/aes.md` — novo, status stable: criptografia simétrica por blocos, 128-256 bits
+- `wiki/concepts/rsa.md` — novo, status stable: criptografia assimétrica, P/Q/N/totiente de Euler/e/d
+- `wiki/concepts/key-distribution-problem.md` — novo stub: problema que motivou a criptografia assimétrica
+- `wiki/concepts/ind-cpa-security.md` — novo stub: modelo formal de segurança, demonstração de por que César falha
+- `wiki/concepts/shor-algorithm.md` — novo, status stable: algoritmo quântico que quebra RSA
+- `wiki/concepts/grover-algorithm.md` — novo, status stable: aceleração quadrática de busca, reduz AES-256 a ~128 bits
+- `wiki/concepts/post-quantum-cryptography.md` — novo stub: NIST PQC, harvest-now-decrypt-later
+
+**Páginas atualizadas:**
+- `wiki/concepts/caesar-cipher.md` — nova seção "Não é IND-CPA Segura" e "Contexto Histórico Mais Amplo"; `source_count` 1 → 2
+- `wiki/concepts/criptografia.md` — três novas seções (IND-CPA, contexto histórico César→Vigenère→Enigma, ameaça quântica Shor/Grover/PQC); `source_count` 3 → 4
+- `wiki/concepts/hashing.md` — novo backlink; `source_count` 2 → 3
+- `wiki/concepts/password-hashing.md` — novo backlink; `source_count` 3 → 4
+- `wiki/concepts/bcrypt.md` — nova seção "Limite de 72 Caracteres" e detalhe EKS-Blowfish; `source_count` 1 → 2
+- `wiki/concepts/argon2.md` — nova seção "As Três Fases do Cálculo (Argon2id)"; `source_count` 1 → 2
+- `wiki/concepts/salt.md` — novo backlink; `source_count` 1 → 2
+- `wiki/concepts/pepper.md` — novo backlink; `source_count` 1 → 2
+- `wiki/concepts/rainbow-table.md` — novo backlink; `source_count` 1 → 2
+- `wiki/entities/rsa-security.md` — nova nota de desambiguação vs. [[wiki/concepts/rsa]]; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; 12 novas linhas em Concepts (incluindo `caesar-cipher`, que estava ausente do índice antes desta ingestão — lacuna preexistente corrigida)
+
+**Notas:** A wiki já tinha peças isoladas de criptografia moderna ([[wiki/sources/criptografia-fundamentos]], [[wiki/sources/encoding-hashing-encryption]], [[wiki/sources/seguranca-armazenamento-senhas-banco-de-dados]]) mas nenhuma cobria a linha do tempo histórica completa (César → Cítala → Vigenère → Enigma) nem o passo a passo do RSA (P, Q, N, totiente de Euler) nem o modelo formal IND-CPA — todas contribuições genuinamente novas desta fonte. A demonstração concreta de por que César falha em IND-CPA (preservação de padrão de repetição de caracteres) é o ponto mais didaticamente valioso e não estava documentado antes. Nenhuma contradição encontrada com fontes existentes; a distinção Shor (fatoração, quebra RSA) vs. Grover (busca, só acelera força bruta) reforça e detalha o que `references/post-quantum-crypto.md` da skill já cobria. Lacuna preexistente corrigida como efeito colateral: `wiki/concepts/caesar-cipher.md` existia desde a ingestão de [[wiki/sources/encoding-hashing-encryption]] mas nunca tinha sido adicionado a `wiki/index.md` — adicionado nesta ingestão. Open questions registradas na fonte (não corrigidas, fora do escopo deste ingest): método de Kasiski/Friedman que quebrou Vigenère não detalhado; criptoanálise histórica real da Enigma (Turing, Bletchley Park, bombe) simplificada pela fonte como mero "reuso de chave"; nenhuma menção a algoritmos NIST PQC específicos (coberto em profundidade só na skill, não na fonte).
+
+---
+
+## [2026-07-28] ingest | Story Points, Scrum Master e PO — Por Que Forçar 30-40 Pontos por Sprint Está Errado
+
+**Fonte:** [[wiki/sources/story-points-po-forcando-30-40-pontos-por-sprint]] — transcrição de vídeo de Lucas Badico (Akita), já em português, sem necessidade de tradução. Transcrição bruta em bloco único, sem pontuação/seções — reestruturada em markdown (contexto, respostas dos mentorados, explicação didática de Scrum/Story Points/Planning Poker, crítica ao "Agile industrializado") e salva em `raw/story-points-po-forcando-30-40-pontos-por-sprint.md`.
+
+**Skill:** `tech-mentor-leadership`, carregada de `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/SKILL.md`. Seção `references/engineering-management.md` (Story Points, Velocity, Planning Poker) confirmou que os relatos dos mentorados são consistentes com o conhecimento de referência da skill — inclusive o processo de calibração inicial "chutada" e a maturação da velocity após 3-5 sprints. `references/engineering-metrics.md` (Lei de Goodhart) forneceu o enquadramento formal para o mecanismo central do vídeo: forçar uma métrica como meta a corrompe.
+
+**Páginas criadas:**
+- `raw/story-points-po-forcando-30-40-pontos-por-sprint.md`
+- `wiki/sources/story-points-po-forcando-30-40-pontos-por-sprint.md`
+- `wiki/concepts/story-points.md` — novo, status stable: estimativa relativa de complexidade, velocity, erro de forçar meta
+- `wiki/concepts/planning-poker.md` — novo, status stable: cerimônia de estimativa, processo e regras práticas
+- `wiki/concepts/scrum-master.md` — novo, status stable: papel de facilitação vs. "Agile industrializado"
+- `wiki/concepts/goodharts-law.md` — novo, status stable: mecanismo formal de métrica-vira-alvo
+
+**Páginas atualizadas:**
+- `wiki/concepts/user-stories.md` — nova seção "Estimativa em Sprint" ligando à estimativa via story points/planning poker; `source_count` 1 → 2
+- `wiki/concepts/dora-metrics.md` — novo item em "Conexões" ligando ao mesmo princípio anti-Goodhart ("não comparar times nem avaliar indivíduos"); `source_count` 1 → 2
+- `wiki/entities/lucas-badico.md` — nova seção "Mentoria e Comunidade"; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; nova subseção "Agile & Estimativa" com 4 novos conceitos
+
+**Notas:** A wiki já cobria documentação de requisitos ágeis ([[wiki/sources/user-stories]]) mas não tinha nenhuma página sobre a mecânica de estimativa em si (story points, planning poker, velocity) nem sobre os papéis de Scrum Master/PO — todas contribuições novas desta fonte. A conexão com a Lei de Goodhart não estava explícita em nenhuma página existente, embora [[wiki/concepts/dora-metrics]] já aplicasse o mesmo princípio na prática ("não usar para comparar times nem avaliar performance individual") sem nomear a lei — a nova página `goodharts-law.md` nomeia o mecanismo compartilhado e faz a ponte entre as duas fontes. Nenhuma contradição encontrada. Nota de cautela registrada durante o ingest: o rascunho inicial desta entrada citava `wiki/sources/como-evitar-over-engineering-david-farley` como segunda fonte de `goodharts-law.md`, mas essa fonte não menciona a lei — a citação foi removida antes de finalizar a página para evitar atribuição incorreta. Open questions registradas na fonte (fora do escopo deste ingest): como negociar recalibração de meta imposta por um PO na prática; como o "technical manager" do relato de Italo comunicou a mudança de calibração de pontos para PM/stakeholders sem gerar confusão de expectativa.
+
+---
+
+## [2026-07-28] ingest | Connection Pooling — Pool vs. Polling, Vazamento de Conexão e Serverless
+
+**Fonte:** [[wiki/sources/connection-pooling-pool-vs-polling-serverless]] — transcrição de vídeo, já em português, sem necessidade de tradução. Transcrição bruta em bloco único, sem pontuação/seções — reestruturada em markdown (desambiguação poll/pool, exemplo de código de pool singleton, bug de release esquecido, tabela de soluções serverless) e salva em `raw/connection-pooling-pool-vs-polling-serverless.md`.
+
+**Skill:** `tech-mentor-backend`, carregada de `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/SKILL.md`. Referência `references/architecture/read-replicas-pooling.md` (Connection Pooling → PgBouncer, RDS Proxy, pool sizing) confirmou que os claims da fonte (custo de criar conexão, pool_mode transaction, RDS Proxy como pooler gerenciado da AWS) são consistentes com o conhecimento de referência da skill; a fonte adiciona ângulos que a referência não cobre — desambiguação de terminologia, o bug concreto de `client.release()` esquecido, e o "attach database pool" da Vercel.
+
+**Páginas criadas:**
+- `raw/connection-pooling-pool-vs-polling-serverless.md`
+- `wiki/sources/connection-pooling-pool-vs-polling-serverless.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/connection-pooling.md` — três novas seções ("Pool vs. Polling" como nota de abertura, "Instanciando a Pool como Singleton" com exemplo de código, "Vazamento por `client.release()` Esquecido", "Connection Pooling em Ambientes Serverless" com tabela RDS Proxy/Vercel/ORM/PgBouncer); `source_count` 2 → 3
+- `wiki/concepts/singleton-pattern.md` — exemplo de pool de conexões expandido com o caso concreto de cache de módulo em Node.js; novo backlink; `source_count` 2 → 3
+- `wiki/index.md` — nova linha em Sources
+
+**Notas:** A wiki já tinha uma fonte anterior sobre o mesmo tema geral ([[wiki/sources/read-replicas-connection-pooling]], status `draft`, skill `tech-mentor-data`) cobrindo PgBouncer, RDS Proxy e read replicas em nível mais arquitetural/mecânico (pool modes, sizing, read-your-writes). Esta nova fonte é complementar, não duplicada — foco em três ângulos práticos que a fonte anterior não cobre: desambiguação de terminologia poll/pool, o padrão de instanciação da pool como singleton de módulo (com o bug concreto de esquecer `client.release()`), e o problema específico de pooling em serverless com comparação entre soluções de plataforma (RDS Proxy vs. Vercel attach database pool vs. ORM nativo vs. PgBouncer, este último citado pela própria fonte com disclaimer de não ter sido testado pelo autor — registrado como confiança baixa na tabela de key claims). Nenhuma contradição encontrada entre as duas fontes. Open question levantada pela fonte (fora do escopo deste ingest, não resolvida): a fonte não detalha o mecanismo interno do RDS Proxy nem quantifica o overhead de latência que ele introduz — a skill (`references/architecture/read-replicas-pooling.md`) tem esse dado (~1ms) mas não foi trazido para a página de conceito pois não veio da fonte ingerida.
+
+---
+
+## [2026-07-28] ingest | Loop Engineering, Harness e a Frase Que Viralizou
+
+**Fonte:** [[wiki/sources/loop-engineering-harness-e-a-frase-que-viralizou]] — vídeo de Pedro Nauke (criador do Compose, já entidade na wiki), primeiro de uma série de três sobre loop engineering. Transcrição bruta em bloco único, em português, sem pontuação/seções — reestruturada em markdown (contexto, definição de loop em 4 peças, quatro ganhos sobre prompt a prompt, origem no padrão ReAct, três fatores que destravaram loops longos em 2026, correção da frase viral) e salva em `raw/loop-engineering-harness-e-a-frase-que-viralizou.md`.
+
+**Skill:** `tech-mentor-ai`, carregada de `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/SKILL.md`. Referências `references/ai/agentic-patterns-2025.md` (Padrão 6 — Agent Scaffolding, loop mínimo de mensagens/tool_use) e `references/ai/agents-runtime.md` (Checkpointing de Estado) confirmaram que os claims da fonte sobre origem no padrão ReAct e sobre estado persistente são consistentes com o conhecimento de referência da skill.
+
+**Páginas criadas:**
+- `raw/loop-engineering-harness-e-a-frase-que-viralizou.md`
+- `wiki/sources/loop-engineering-harness-e-a-frase-que-viralizou.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/loop-engineering.md` — três novas seções ("Origem: o Padrão ReAct", "O Que Destravou Loops Longos em 2026", "Correção: 'Loop Engineering Matou Harness Engineering' é uma Leitura Invertida"); `source_count` 2 → 3
+- `wiki/concepts/harness.md` — nota na seção "Próximo Degrau: Loop Engineering" formalizando que o loop contém o harness, não o substitui; novo backlink; `source_count` 11 → 12
+- `wiki/concepts/ciclo-agente.md` — nota de abertura nomeando o ciclo como implementação do padrão ReAct; novo backlink; `source_count` 5 → 6
+- `wiki/entities/pedro-nauke.md` — nova seção "Posições e Opiniões Conhecidas (Loop Engineering)"; novo backlink; `source_count` 7 → 8
+- `wiki/index.md` — nova linha em Sources
+
+**Notas:** A wiki já cobria loop engineering em profundidade via [[wiki/sources/loop-engineering-planner-critic-grafo]] (proposta de loop engineering como degrau seguinte a harness engineering) e [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] (taxonomia de três níveis do dev loop, citando "Loop React" como primeiro nível). Esta nova fonte é complementar e não duplicada — contribuições genuinamente novas: nomear explicitamente a origem histórica no padrão ReAct (2022/2023) como pré-requisito conceitual do loop engineering atual; detalhar os três fatores técnicos (capacidade de long tasks do modelo, evolução do harness em compactação de contexto via ciclo de retroalimentação com dados de treinamento, estado persistente em arquivo) que tornaram loops longos viáveis especificamente em 2026; e a correção direta e nomeada da leitura popular "loop engineering matou harness engineering", que nenhuma fonte anterior da wiki havia formulado como uma frase viral a ser corrigida (embora o princípio subjacente — loop como degrau sobre harness, não substituto — já estivesse implícito em [[wiki/concepts/harness]] e [[wiki/concepts/loop-engineering]]). Nenhuma contradição encontrada com as fontes existentes; esta fonte reforça e nomeia relações que já estavam registradas de forma menos explícita. Open questions registradas na fonte (fora do escopo deste ingest): os dois vídeos seguintes da série (não publicados/ingeridos ainda) prometem aprofundar quando vale a pena usar loop na prática — a serem verificados contra [[wiki/concepts/loop-engineering]] quando disponíveis; o "ciclo de retroalimentação" entre logs de execução e treinamento de modelos futuros é citado sem dado quantitativo, registrado como afirmação qualitativa do autor.
+
+---
+
+## [2026-07-28] ingest | Harness Engineering — "Você Não É Mais o Modelo, Você É o Harness"
+
+**Fonte:** [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — vídeo de autor não identificado por nome (autor se dirige ao público como "mava dev"). Transcrição bruta em bloco único, em português, sem pontuação/seções — reestruturada em markdown (frase viral de Peter Steinberger, definição de harness, matemática de erros compostos, quatro mecanismos de mitigação, casos Vercel e Claude Code, origem do Ralph Loop, quatro níveis oficiais de loop da Anthropic, doze componentes do harness, as quatro perguntas de diagnóstico) e salva em `raw/harness-engineering-voce-e-o-harness-nao-o-modelo.md`. Nomes próprios citados de ouvido pelo autor original e possivelmente distorcidos pela transcrição — mantidos como ouvidos, com identificação mais provável indicada entre colchetes quando razoavelmente inferível (ex.: "Bshine" → provável Boris Cherny; "dan tropic"/"antropic" → Anthropic).
+
+**Skill:** `tech-mentor-ai`, carregada de `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/SKILL.md`. Referências `references/ai/agentic-patterns-2025.md` (anti-padrão "God Agent/Tool Overload", Padrão 5 — Tool Selection via Embedding) e `references/ai/agents-runtime.md` (Checkpointing de Estado, HITL — `HITLManager`, critérios de quando exigir aprovação humana) confirmaram que os claims da fonte sobre o caso Vercel (redução de ferramentas) e sobre checkpoints como mitigação de erro têm contrapartida direta e nomeada na literatura de referência da skill, mesmo com terminologia diferente da fonte.
+
+**Páginas criadas:**
+- `raw/harness-engineering-voce-e-o-harness-nao-o-modelo.md`
+- `wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo.md`
+- `wiki/concepts/ralph-loop.md` — novo, status stub: origem do Ralph Loop (Geoffrey Huntley, julho 2025), relação com loop engineering
+- `wiki/entities/geoffrey-huntley.md` — novo, status stub: autor do Ralph Loop
+- `wiki/entities/peter-steinberger.md` — novo, status stub: autor da frase viral "if you are not the model, you are the harness"
+- `wiki/entities/vercel.md` — novo, status stub: caso de remoção de 80% das ferramentas de um agente
+
+**Páginas atualizadas:**
+- `wiki/concepts/harness.md` — duas novas seções ("Por Que o Harness Importa Mais que Parece: Erros Compostos", com subseções dos quatro mecanismos de mitigação e do caso Vercel, e "Doze Componentes do Harness — Sete Documentados"); `source_count` 12 → 13
+- `wiki/concepts/loop-engineering.md` — duas novas seções ("Origem Recente: o Ralph Loop" e "Os Quatro Níveis Oficiais de Loop — Guia da Anthropic"); `source_count` 3 → 4
+- `wiki/concepts/tdd.md` — nova seção "Testes Como Condição de Parada de um Loop Agêntico"; `source_count` 10 → 11
+- `wiki/concepts/tool-call.md` — nova seção "Menos Ferramentas Pode Ser Melhor que Mais (Caso Vercel)"; `source_count` 3 → 4
+- `wiki/concepts/rubrica-de-verificacao.md` — nova seção "Maior Retorno Documentado entre os Componentes de Harness" (ganho de 2-3x atribuído ao criador do Claude Code); `source_count` 2 → 3
+- `wiki/concepts/hooks-agente.md` — nova seção "Hooks como um dos Componentes Nomeados do Harness"; `source_count` 2 → 3
+- `wiki/concepts/human-in-the-loop.md` — nova seção "Checkpoints como HITL contra Erros Compostos"; `source_count` 3 → 4
+- `wiki/concepts/spec-driven-development.md` — nova seção "Quem Já Faz SDD Já Está Fazendo Harness Engineering"; `source_count` 11 → 12
+- `wiki/concepts/ciclo-agente.md` — nova seção "Erros se Compõem ao Longo do Brute-Force"; `source_count` 6 → 7
+- `wiki/entities/anthropic.md` — nova seção "Guia Oficial 'Getting Started with Loops'"; `source_count` 13 → 14
+- `wiki/entities/open-claw.md` — nova seção "Claim Não Reconciliado: 'Criador' Citado como Peter Steinberger"; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (`ralph-loop`); três novas linhas em Entities (`geoffrey-huntley`, `peter-steinberger`, `vercel`)
+
+**Notas:** Esta fonte é a terceira da wiki cobrindo harness/loop engineering, mas com ângulo genuinamente novo em relação às duas anteriores ([[wiki/sources/loop-engineering-planner-critic-grafo]] e [[wiki/sources/loop-engineering-harness-e-a-frase-que-viralizou]]): traz a matemática explícita de erros compostos (0,99ⁿ) como justificativa quantitativa para investir em harness, dois estudos de caso concretos e nomeados (Vercel, criador do Claude Code) em vez de só princípios abstratos, a origem histórica do Ralph Loop como elo entre o padrão ReAct (2022/2023) e o guia oficial da Anthropic, e o framework paralelo dos quatro níveis oficiais de loop (turn/goal/time/proactive), que complementa sem contradizer a taxonomia de três níveis já registrada em [[wiki/concepts/loop-engineering]]. Duas identificações de nomes próprios ficaram não resolvidas e foram registradas como open questions na fonte e como nota explícita em [[wiki/entities/open-claw]]: (1) o claim de que Peter Steinberger é "criador do OpenClaw" não bate com o que a wiki já sabia sobre essa entidade (agente sem criador nomeado nas fontes anteriores) — mantido como claim não reconciliado, sem sobrescrever a informação já existente; (2) o "caso Lang Shen" citado no início do vídeo (mesmo modelo, infraestrutura diferente, saiu do top 30 para o ranking 5 em benchmark) não foi possível identificar com confiança e não gerou página própria. Nenhuma contradição factual encontrada entre esta fonte e as duas fontes anteriores de loop/harness engineering — as três se reforçam mutuamente com ângulos complementares.
+
+---
+
+## [2026-07-28] ingest | Por Que Você Tem Que Aprender a Programar do Jeito Difícil
+
+**Fonte:** [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] — transcrição de vídeo em português (autor não identificado por nome), sem pontuação/seções no áudio bruto, reestruturada em markdown e salva em `raw/aprender-a-programar-do-jeito-dificil.md`. Sem tradução necessária (fonte já em português).
+
+**Skill:** `tech-mentor-leadership`, domínio de carreira/mentalidade — confirmado pelo conteúdo (satisfação pessoal, mercado de trabalho, entrevistas, contribuição open source).
+
+**Páginas criadas:**
+- `raw/aprender-a-programar-do-jeito-dificil.md`
+- `wiki/sources/aprenda-a-programar-do-jeito-dificil.md`
+- `wiki/entities/the-primeagen.md` — novo, status stub: engenheiro Netflix, criador de conteúdo
+- `wiki/entities/theodor.md` — novo, status stub: dev de jogo indie sem engine, identidade não confirmada (nota de incerteza)
+
+**Páginas atualizadas:**
+- `wiki/concepts/aprendizado-por-luta.md` — nova seção "Caso Prático: O Bot de Discord de Tibia e a Concorrência em Go"; `source_count` 3 → 4
+- `wiki/concepts/autodidata.md` — nova seção "Recusar a Explicação de Superfície: 'É Tudo Mágico'" (professor que trata bits/memória como irrelevantes); `source_count` 6 → 7
+- `wiki/concepts/contribuir-open-source.md` — nova seção "Caso: API TibiaData e o Custo Não Remunerado do Open Source"; `source_count` 1 → 2
+- `wiki/concepts/entrevista-tecnica-coding.md` — nova seção "Nervosismo e Confiança: o Caso do Candidato Reprovado na Netflix"; `source_count` 4 → 5
+- `wiki/concepts/concorrencia.md` — nova seção "Caso de Motivação Pessoal: Bot de Tibia Sem Conhecimento Prévio"; `source_count` 3 → 4
+- `wiki/concepts/go-concorrencia.md` — nova seção sobre a biblioteca `conc` (Sourcegraph); `source_count` 1 → 2
+- `wiki/concepts/rust-ownership-borrowing-lifetimes.md` — nova seção "Transferência de Aprendizado para Outras Linguagens"; `source_count` 2 → 3
+- `wiki/entities/lucas-montano.md` — nota sobre vídeo (citado de segunda mão) sobre desemprego dev; `source_count` 4 → 5
+- `wiki/entities/filipe-deschamps.md` — nova seção "Vídeo Sobre Desemprego Dev (Citação de Segunda Mão)"; `source_count` 3 → 4
+- `wiki/entities/fabio-akita.md` — nova seção "Áudio Reproduzido Sobre Fim do Dinheiro Fácil e Layoffs"; `source_count` 4 → 5
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Entities (`the-primeagen`, `theodor`)
+
+**Notas:** Fonte majoritariamente anedótica/opinativa (o próprio autor reconhece isso implicitamente ao citar comentários de espectadores como evidência) — todos os claims de mercado (demanda alta + mão de obra desqualificada, layoffs por corte de investimento) vêm em cadeia de citação de terceira mão (esta fonte → vídeo de Deschamps → áudio de Akita), sinalizado explicitamente como confiança "Média" na tabela de claims da fonte. Duas identidades não confirmadas geraram entidades stub com nota de incerteza explícita: "ThePrimeagen" (identificação razoavelmente confiável — perfil público conhecido) e "Theodor" (sem sobrenome/canal citado, marcado como não confirmado). Nenhuma contradição encontrada com as páginas já existentes de [[wiki/concepts/aprendizado-por-luta]], [[wiki/concepts/autodidata]] ou [[wiki/concepts/entrevista-tecnica-coding]] — esta fonte reforça esses conceitos com novos casos concretos (bot de Tibia, API TibiaData, candidato reprovado na Netflix) sem alterar as teses centrais já registradas.
+
+---
+
+## [2026-07-28] ingest | Ponteiros em C++, Go e C# — Stack, Heap e Smart Pointers
+
+**Fonte:** [[wiki/sources/ponteiros-cpp-go-csharp]] — transcrição de vídeo já em português, sem tradução necessária; reestruturada em markdown com seções e blocos de código, salva em `raw/ponteiros-cpp-go-csharp.md`.
+
+**Skill:** `lang-systems`, seção C/C++ (`references/c-cpp.md`) — confirmado pelo conteúdo técnico central (ponteiros, stack/heap, RAII, `unique_ptr`, `std::move`), com comparativo cross-language a Go e C#.
+
+**Páginas criadas:**
+- `raw/ponteiros-cpp-go-csharp.md`
+- `wiki/sources/ponteiros-cpp-go-csharp.md`
+- `wiki/concepts/ponteiros-cpp-stack-heap-raii.md` — novo, status draft: ponteiros, stack vs. heap, escape analysis (Go), reference types (C#), RAII e smart pointers (`unique_ptr`/`std::move`) em C++ moderno
+
+**Páginas atualizadas:**
+- `wiki/concepts/gerenciamento-de-memoria.md` — nova seção sobre RAII como mitigação do risco humano do modelo manual sem introduzir GC; novo link na seção de relações; `source_count` 2 → 3
+- `wiki/concepts/go-fundamentos.md` — seção "Structs e Pointers" ganhou nota sobre escape analysis (sintaxe de ponteiro idêntica a C, mas variável que escapa da função é realocada na heap); `source_count` 5 → 6
+- `wiki/concepts/rust-ownership-borrowing-lifetimes.md` — nova nota conectando RAII de C++ como precursor conceitual do ownership de Rust (mesma ideia, formalizada como regra de compilador em vez de convenção de biblioteca); `source_count` 3 → 4
+- `wiki/concepts/lista-encadeada.md` — novo link explicando que o custo O(1) de inserção/remoção com ponteiro depende do modelo de memória da linguagem (alocação manual em C/C++ vs. GC em Go/C#); `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção "Fundamentos de CS")
+
+**Notas:** Fonte primariamente técnica e demonstrativa (código com saída esperada), sem claims de mercado ou opinião — confiança alta em todos os claims, cross-checados contra `lang-systems/references/c-cpp.md` (RAII, `unique_ptr`, `make_unique`) e `references/go-production-patterns.md` (escape analysis). Nenhuma contradição com o que já estava registrado em [[wiki/concepts/gerenciamento-de-memoria]] ou [[wiki/concepts/rust-ownership-borrowing-lifetimes]] — esta fonte preenche uma lacuna que existia no grafo: até então C++/ponteiros/stack-heap/RAII não tinham página própria, só eram mencionados de passagem dentro de páginas sobre Rust e gerenciamento de memória em geral.
+
+---
+
+## [2026-07-28] ingest | SGBD: Conceitos Fundamentais e Questões de Concurso
+
+**Fonte:** [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] — transcrição de aula já em português, transformada em markdown estruturado (definição, funções, SGBDR vs. NoSQL, ACID, CAP, bloco de questões de banca), salva em `raw/sgbd-conceitos-fundamentais-questoes-concurso.md`.
+
+**Skill:** `tech-mentor-backend` — confirmado pelo conteúdo central (SGBD, modelo relacional vs. NoSQL, ACID, CAP), com viés de preparação para concurso público.
+
+**Páginas criadas:**
+- `raw/sgbd-conceitos-fundamentais-questoes-concurso.md`
+- `wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/acid.md` — nova seção sobre o termo de concurso SGBDR; `source_count` 4 → 5
+- `wiki/concepts/cap-theorem.md` — nova seção sobre a classificação didática fixa CA/CP/AP por produto usada em concurso, com nota crítica sobre a inclusão de Neo4j como CA; `source_count` 5 → 6
+- `wiki/concepts/nosql.md` — nova seção com lista estendida de exemplos por modelo (chave-valor, documento, colunas, grafos); `source_count` 4 → 5
+- `wiki/concepts/relational-vs-nosql.md` — nova seção sobre a terminologia formal SGBDR vs. SGBD NoSQL cobrada em concurso; `source_count` 5 → 6
+- `wiki/concepts/mongodb.md` — novo link (exemplo canônico de NoSQL documento em prova); `source_count` 1 → 2
+- `wiki/concepts/redis.md` — novo link (exemplo de chave-valor, classificação didática CP); `source_count` 5 → 6
+- `wiki/index.md` — nova linha em Sources
+
+**Notas:** Fonte é a primeira da wiki com foco explícito em preparação para concurso público brasileiro — traz terminologia formal (SGBDR, SGBD NoSQL) e um bloco de questões reais de banca com gabarito, gênero de conteúdo novo em relação às fontes técnicas/de mercado já ingeridas. Os claims centrais (definição de SGBD, ACID, CAP, exemplos de bancos por modelo NoSQL) são consistentes com o que já estava documentado via [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]]. Uma divergência registrada como questão aberta: a fonte classifica Neo4j como CA no Teorema CAP, o que é uma simplificação didática questionável para um banco que não opera necessariamente como cluster distribuído da mesma forma que os demais exemplos do teorema. Nenhuma página nova de conceito foi criada porque todos os temas centrais (SGBD, ACID, CAP, NoSQL, relacional vs. NoSQL) já tinham página própria e estável na wiki — o valor desta fonte é reforçar esses conceitos com terminologia formal de concurso e uma nova categoria de evidência (questões de banca com gabarito).
 
 ---

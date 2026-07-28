@@ -3,8 +3,8 @@ type: concept
 title: "Relacional vs NoSQL"
 aliases: ["sql vs nosql", "relational vs document", "escolha de banco"]
 date_created: 2026-04-22
-date_updated: 2026-07-27
-source_count: 5
+date_updated: 2026-07-28
+source_count: 6
 tags: [banco-de-dados, nosql, postgresql, system-design, trade-offs]
 skill: tech-mentor-system-design
 status: stable
@@ -70,6 +70,10 @@ Se o sistema precisa alcançar um mesmo dado por vários caminhos diferentes via
 
 A mesma fonte reforça que todo número de conexão/volume/latência citado assume instância única, sem réplicas, shards ou clusters — é o piso de capacidade, não o teto.
 
+## Termo de Concurso: SGBDR vs. SGBD NoSQL
+
+Provas de concurso usam a sigla **SGBDR** (com o "R" de relacional) para diferenciar explicitamente de **SGBD NoSQL** — reforçando que a distinção relacional/não-relacional é tratada como taxonomia formal, não apenas prática de mercado. Exemplos típicos de gabarito: MySQL/Oracle/SQL Server/Firebird = SGBDR; MongoDB/Neo4j = NoSQL. Ver [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]].
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
@@ -77,3 +81,4 @@ A mesma fonte reforça que todo número de conexão/volume/latência citado assu
 - [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] — quadro de decisão ACID vs. BASE por domínio de negócio
 - [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — guia direto por cenário cobrindo também Oracle, SQL Server e SQLite
+- [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] — terminologia formal SGBDR vs. SGBD NoSQL cobrada em concurso

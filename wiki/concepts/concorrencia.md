@@ -3,8 +3,8 @@ type: concept
 title: "Concorrência"
 aliases: ["concurrency", "execução concorrente", "multitarefa"]
 date_created: 2026-06-26
-date_updated: 2026-07-16
-source_count: 3
+date_updated: 2026-07-28
+source_count: 4
 tags: [cs-fundamentals, concorrencia, paralelismo, race-condition, threads]
 skill: cs-fundamentals
 status: draft
@@ -67,6 +67,10 @@ Em vez de detectar data races em runtime (sanitizers) ou evitá-las por convenç
 
 Ao projetar uma linguagem do zero, o modelo de concorrência do runtime (threads, event loop, goroutines/CSP) é uma das decisões mais difíceis de reverter depois: todo código escrito pelos usuários passa a se apoiar nela desde o primeiro programa. Está diretamente acoplada à decisão de [[wiki/concepts/gerenciamento-de-memoria]] — memória compartilhada entre threads exige sincronização (mutex, locks), enquanto o modelo de ownership do Rust é o que viabiliza concorrência segura sem data races em tempo de compilação.
 
+## Caso de Motivação Pessoal: Bot de Tibia Sem Conhecimento Prévio
+
+[[wiki/sources/aprenda-a-programar-do-jeito-dificil]] descreve alguém sem nenhum conhecimento prévio de concorrência (não sabia o que era goroutine, channel, mutex) enfrentando um problema real — um bot que levava ~20 minutos rodando requests em série contra a API do Tibia — e sendo forçado a aprender o conceito do zero para resolvê-lo, em vez de só importar uma biblioteca pronta (`conc`, da Sourcegraph) sem entender o mecanismo por trás. Ver [[wiki/concepts/aprendizado-por-luta]] para o padrão geral desse tipo de motivação.
+
 ## Relação com outros conceitos
 
 - [[paralelismo]] — a distinção é fundamental; confundir os dois leva a soluções erradas
@@ -81,3 +85,4 @@ Ao projetar uma linguagem do zero, o modelo de concorrência do runtime (threads
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]] — concorrência como decisão de runtime ao projetar uma linguagem, difícil de reverter depois
 - [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — borrow checker eliminando data races em compile-time via regra N leitores OU 1 escritor
+- [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] — bot de Discord de Tibia como motivação prática para aprender concorrência do zero

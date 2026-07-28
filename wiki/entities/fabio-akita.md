@@ -3,8 +3,8 @@ type: entity
 title: "Fábio Akita"
 aliases: ["Akita", "Akita On Rails"]
 date_created: 2026-05-16
-date_updated: 2026-07-20
-source_count: 4
+date_updated: 2026-07-28
+source_count: 5
 tags: [pessoa, programador, youtuber, brasil]
 skill: tech-mentor-leadership
 status: stable
@@ -42,6 +42,10 @@ Em [[wiki/sources/akita-discurso-howard-roark-a-nascente-ayn-rand]], Akita lê o
 
 Rejeita explicitamente o papel de conselheiro de carreira: recusa-se a dizer o que alguém deve estudar ou decidir, argumentando que ninguém tem [[wiki/concepts/skin-in-the-game|skin in the game]] suficiente na vida alheia para opinar com propriedade sobre [[wiki/concepts/decisao-terceirizada|decisões terceirizadas]]. Defende [[wiki/concepts/antifragilidade|apostas antifrágeis]] de ~10 anos em tecnologia (ex.: aposta pessoal em Ruby on Rails em 2005) em vez de tentar prever com certeza a próxima tecnologia vencedora. Critica o [[wiki/concepts/cargo-cult-tecnologico|cargo cult tecnológico]] de copiar arquitetura de Netflix/Google/Facebook sem considerar o próprio contexto de escala — "compare-se com o dia um deles, não com a versão madura de hoje". Também nomeia a [[wiki/concepts/falacia-do-custo-afundado|falácia do custo afundado]] como o principal motivo de as pessoas persistirem em cursos e livros ruins.
 
+## Áudio Reproduzido Sobre Fim do Dinheiro Fácil e Layoffs
+
+[[wiki/sources/aprenda-a-programar-do-jeito-dificil]] cita, de segunda mão (via vídeo de [[wiki/entities/filipe-deschamps]]), um áudio de Akita argumentando que o fim do dinheiro fácil de investimento forçou as empresas a priorizar lucro e eficiência (menos gasto com servidor, código mais otimizado), o que aperta processos seletivos e leva a layoffs — coerente com sua tese já documentada de [[wiki/concepts/ciclo-de-mercado-tech|ciclos de mercado]] de abundância e depressão.
+
 ## Segurança: AI Jail
 
 Em janeiro de 2026, publicou um artigo propondo o **AI Jail** — ferramenta de linha de comando (~170 linhas de shell script, sobre o [[wiki/entities/bubblewrap]]) para isolar agentes de codificação de IA do restante do sistema do usuário, endereçando o risco de [[wiki/concepts/supply-chain-security|ataques de supply chain]] via dependências comprometidas. O tema também foi abordado por ele no Flow Podcast. Ver [[wiki/concepts/agent-containment]] e [[wiki/concepts/defense-in-depth]] para o modelo de três camadas que o artigo propõe (sessão/AI Jail, código/Git, sistema operacional imutável). Coerente com sua defesa geral de [[wiki/concepts/principio-do-menor-privilegio|privilégio mínimo]] e ceticismo em relação a confiar cegamente em ferramentas/pacotes só por serem populares.
@@ -53,3 +57,4 @@ Em janeiro de 2026, publicou um artigo propondo o **AI Jail** — ferramenta de 
 - [[wiki/sources/akita-discurso-howard-roark-a-nascente-ayn-rand]]
 - [[wiki/sources/pare-de-terceirizar-suas-decisoes]]
 - [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — artigo/projeto AI Jail, comentado por terceiros (fonte não é o próprio canal de Akita)
+- [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] — áudio de segunda mão sobre fim do dinheiro fácil e aperto de processos seletivos

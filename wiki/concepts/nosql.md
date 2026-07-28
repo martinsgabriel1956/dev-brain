@@ -3,8 +3,8 @@ type: concept
 title: "NoSQL"
 aliases: ["not only sql", "bancos não relacionais"]
 date_created: 2026-04-22
-date_updated: 2026-07-27
-source_count: 4
+date_updated: 2026-07-28
+source_count: 5
 tags: [banco-de-dados, nosql, mongodb, redis, cassandra, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -44,9 +44,14 @@ Uma thread analisada em [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] gero
 
 Caso didático de [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]]: um e-commerce que vende notebook (processador, RAM, polegadas), camiseta (tamanho, cor, material) e livro (ISBN, autor, edição) no mesmo catálogo. Em SQL, as duas opções são ruins — tabela com 200 colunas majoritariamente nulas, ou arquitetura EAV (entity-attribute-value) tecnicamente correta mas com péssima performance de query. No MongoDB, cada produto é um documento só com os campos que fazem sentido para ele; um novo tipo de produto começa a ser inserido sem migration, sem `ALTER TABLE`, sem downtime. Ver [[wiki/concepts/mongodb]].
 
+## Termo de Concurso: SGBD NoSQL e Seus Quatro Modelos
+
+Provas de concurso brasileiras tratam "SGBD NoSQL" como termo formal (em oposição a SGBDR) e cobram os quatro modelos com listas de exemplos mais extensas que o uso corrente: **chave-valor** (DynamoDB, Redis, Riak, Memcached, Berkeley DB, LevelDB), **documento** (MongoDB, CouchBase, CouchDB, MarkLogic, RavenDB), **colunas** (Cassandra, HBase, Hypertable) e **grafos** (Neo4j, ArangoDB, AllegroGraph, InfoGrid, OrientDB/FlockDB, HyperGraphDB). Ver [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]].
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — exemplo concreto de catálogo com schema variável (notebook/camiseta/livro) e limite de conexões do MongoDB em instância única
+- [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] — lista estendida de exemplos por modelo (chave-valor, documento, colunas, grafos), como cobrada em concurso

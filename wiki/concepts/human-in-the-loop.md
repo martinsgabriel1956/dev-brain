@@ -4,8 +4,8 @@ title: "Human-in-the-Loop (HITL)"
 aliases: ["HITL", "human in the loop", "aprovação humana agente"]
 date_created: 2026-06-02
 date_updated: 2026-07-24
-source_count: 3
-tags: [hitl, human-in-the-loop, agente, spec-driven, aprovacao, controle]
+source_count: 4
+tags: [hitl, human-in-the-loop, agente, spec-driven, aprovacao, controle, checkpoint, erros-compostos]
 skill: tech-mentor-ai
 status: stable
 ---
@@ -47,8 +47,13 @@ O [[wiki/concepts/plan-mode|Plan Mode]] é uma forma leve de HITL: o humano revi
 
 [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] posiciona o humano-no-loop como o terceiro de três níveis do dev loop (loop React → spec driven → humano decide o próximo passo entre specs — abre PR, triagem de bug, consulta métricas). [[wiki/concepts/loop-engineering|Loop engineering]] é proposto como uma quarta camada que automatiza justamente essa decisão que hoje cabe ao humano nesse nível — mas a fonte é explícita que o loop não decide sozinho *qual* o próximo roadmap: essa continua sendo uma decisão humana mesmo em loops avançados ("loop criador").
 
+## Checkpoints como HITL contra Erros Compostos
+
+[[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] enquadra checkpoints (pontos onde um humano ou sistema automatizado verifica antes do agente continuar) como uma das quatro formas de mitigar erros compostos ao longo de um processo de múltiplas etapas — ver [[wiki/concepts/harness]]. O ponto central é o mesmo já registrado nesta página para o Spec Driven Development: **o agente não decide sozinho quando escalar**; o harness/HITL define isso explicitamente, reduzindo a propagação de um erro cometido cedo para as etapas seguintes.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-04-agentes-planejamento]]
 - [[wiki/sources/formacao-ia-devs-aula-05-qa]]
 - [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — HITL como nível 3 do dev loop; loop engineering automatiza a execução entre specs mas não a decisão de intenção/roadmap
+- [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — checkpoints como uma das quatro formas de mitigar erros compostos num processo agêntico de múltiplas etapas

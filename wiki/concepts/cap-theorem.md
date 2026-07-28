@@ -3,8 +3,8 @@ type: concept
 title: "Teorema CAP"
 aliases: ["CAP theorem", "CAP", "consistência disponibilidade partição", "PACELC"]
 date_created: 2026-06-26
-date_updated: 2026-07-27
-source_count: 5
+date_updated: 2026-07-28
+source_count: 6
 tags: [system-design, sistemas-distribuidos, cap-theorem, consistencia, disponibilidade]
 skill: tech-mentor-system-design
 status: stub
@@ -63,6 +63,10 @@ A escolha AP do teorema CAP é essencialmente o que [[wiki/concepts/base-basical
 
 [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] resume a implicação prática do CAP para escolha de stack: bancos relacionais (MySQL, PostgreSQL, Oracle) escolhem CP — preferem indisponibilidade temporária a dado errado; bancos NoSQL em geral escolhem AP via consistência eventual. Quando alguém recomenda "usa MongoDB que é mais rápido", o que está sendo dito de fato é que aquele banco abre mão de consistência forte em troca de disponibilidade/escala — uma troca que pode ser excelente ou desastrosa dependendo do domínio.
 
+## Classificação Didática de Concurso (CA / CP / AP)
+
+Material de prova de concurso costuma ensinar o CAP com categorização fixa por produto, útil para memorização mas simplificada: **CA** (consistência + disponibilidade, sem tolerância a partição) — SGBDR em geral e Neo4j; **CP** — MongoDB, BigTable, HBase, Redis, Memcached; **AP** — CouchDB, DynamoDB, SimpleDB, Cassandra. Vale notar que essa fonte inclui Neo4j como exemplo de CA, o que é uma simplificação: um Neo4j single-instance não enfrenta partição de rede da mesma forma que um cluster distribuído, então classificá-lo no eixo CAP tradicional (pensado para sistemas distribuídos) é didaticamente conveniente mas tecnicamente questionável. Ver [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]].
+
 ## Key sources
 
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]] (menção superficial — necessita fonte dedicada)
@@ -70,3 +74,4 @@ A escolha AP do teorema CAP é essencialmente o que [[wiki/concepts/base-basical
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]]
 - [[wiki/sources/anatomia-entrevista-system-design-bigtech]]
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — CP vs AP aplicado à escolha de MySQL/PostgreSQL/Oracle (CP) vs. MongoDB/Redis-eventual (AP tendencial)
+- [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] — categorização CA/CP/AP fixa por produto, como cobrada em prova de concurso

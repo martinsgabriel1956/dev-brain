@@ -3,8 +3,8 @@ type: concept
 title: "Boy Scout Rule"
 aliases: ["regra do escoteiro", "leave the campground cleaner", "deixe o código mais limpo do que encontrou"]
 date_created: 2026-07-09
-date_updated: 2026-07-15
-source_count: 2
+date_updated: 2026-07-28
+source_count: 3
 tags: [craftsmanship, tech-debt, refactoring, clean-code, principios]
 skill: tech-mentor-leadership
 status: stable
@@ -39,8 +39,14 @@ Não se limita a nomes — qualquer melhoria pequena e segura (extrair uma funç
 
 - [[wiki/concepts/tech-debt-como-ferramenta]] — a Boy Scout Rule é uma das estratégias de pagamento contínuo citadas no Quadrante de Fowler (dívida inadvertida-prudente sendo corrigida aos poucos).
 - [[wiki/concepts/code-review]] — revisores podem usar a regra como critério: "o PR deixou o código pior, igual ou melhor do que estava?"
+- [[wiki/concepts/tdd]] — no ciclo Red-Green-Refactor, a etapa final de *refactor* (limpar nomes, remover duplicação, dividir métodos depois de já ter passado no teste) é, em essência, a Boy Scout Rule aplicada dentro do próprio ciclo de escrita de código, não só em revisão posterior.
+
+## O Custo de Não Aplicar a Regra: Caso Knight Capital
+
+[[wiki/sources/tech-debt-guia-completo-gestao-metricas]] cita [[wiki/entities/knight-capital]] como o exemplo extremo do risco oposto: código morto que deveria ter sido deletado (a própria regra — "viu código morto, delete") permaneceu no sistema e foi reativado por engano num deploy em 2012, causando perda estimada em centenas de milhões de dólares em cerca de 45 minutos. Reforça que a regra não é só estética de código — pequenas limpezas não feitas se compõem, para o lado ruim, do mesmo jeito que se compõem para o lado bom quando aplicadas.
 
 ## Key Sources
 
 - [[wiki/sources/5-principios-que-mudaram-como-programador]]
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]] — distingue Boy Scout Rule (micro-limpeza acoplada a qualquer mudança) de [[wiki/concepts/refatoracao|refatoração oportunista]] (reestruturação maior, mas ainda aproveitando trabalho que já seria feito)
+- [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] — caso Knight Capital como custo extremo de não seguir a regra; Red-Green-Refactor como o ciclo TDD onde a etapa de refactor já é a própria Boy Scout Rule

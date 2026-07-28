@@ -3,9 +3,9 @@ type: concept
 title: "Harness"
 aliases: ["AI harness", "harness de IA", "coding harness"]
 date_created: 2026-06-02
-date_updated: 2026-07-24
-source_count: 11
-tags: [harness, llm, tool-call, agente, context-engineering]
+date_updated: 2026-07-28
+source_count: 13
+tags: [harness, llm, tool-call, agente, context-engineering, erros-compostos, verificacao]
 skill: tech-mentor-ai
 status: stable
 ---
@@ -78,7 +78,36 @@ Dados de campo do Cursor (2026) mostram o harness em maturidade: code review aut
 
 ## Próximo Degrau: Loop Engineering
 
-Depois de harness engineering (melhorar o ambiente ao redor do modelo), o degrau seguinte é [[wiki/concepts/loop-engineering|loop engineering]] — melhorar o ciclo completo de execução como estrutura repetível e disparável automaticamente (por prompt, schedule ou evento), não apenas uma execução isolada.
+Depois de harness engineering (melhorar o ambiente ao redor do modelo), o degrau seguinte é [[wiki/concepts/loop-engineering|loop engineering]] — melhorar o ciclo completo de execução como estrutura repetível e disparável automaticamente (por prompt, schedule ou evento), não apenas uma execução isolada. A relação não é de substituição: o loop **contém** o harness — é o harness (compactação de contexto, estado persistente, execução de tool calls) que sustenta um loop rodando por horas sem quebrar. A leitura popular "loop engineering matou harness engineering" inverte essa relação ([[wiki/sources/loop-engineering-harness-e-a-frase-que-viralizou]]).
+
+## Por Que o Harness Importa Mais que Parece: Erros Compostos
+
+Agentes são processos de múltiplas etapas, e erros se compõem multiplicativamente — uma pequena chance de falha por etapa vira uma chance significativa de falha no resultado final. Exemplo: um processo de 10 etapas, cada uma com 99% de sucesso individual (excelente isoladamente), tem só ~90,4% de chance de todas darem certo (0,99¹⁰). Com 20 etapas, ~81,8%; com 50 etapas, ~60% ([[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]]). Entender que a falha é composta, não binária, é o que justifica investir em harness em vez de só trocar de modelo quando algo dá errado.
+
+### Quatro Formas de Atacar Erros Compostos
+
+1. **Mecanismos de verificação** — dar ao agente uma forma de checar o próprio trabalho antes de avançar para o próximo passo. O criador do Claude Code é citado como tendo documentado ganho de qualidade de **2 a 3 vezes** só com isso — não trocando de modelo. Componente com o maior retorno comprovado.
+2. **Checkpoints** — pontos definidos onde um humano ou sistema automatizado verifica antes do agente continuar; reduz a propagação do erro. Equivalente ao padrão HITL — ver [[wiki/concepts/human-in-the-loop]].
+3. **Ferramentas corretas** — menos ambiguidade por etapa, menos chance de erro. Contraintuitivo: mais ferramentas **não** significa menos erro (ver caso Vercel abaixo).
+4. **Contexto limpo** — quanto menos ruído no contexto, menor a chance do agente interpretar mal o estado atual. Ver [[wiki/concepts/context-engineering-harness]].
+
+### Caso Vercel: Menos Ferramentas, Mais Performance
+
+A Vercel testou internamente um agente com muitas ferramentas disponíveis e performance ruim. Em vez de adicionar mais ferramentas (a decisão intuitiva), **removeu 80% das ferramentas disponíveis** — a performance melhorou, porque cada etapa passou a exigir escolher entre menos opções, reduzindo o espaço de decisão e a chance de escolha errada ([[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]]). O caso é consistente com o anti-padrão "Tool Overload/God Agent" — agentes com 50+ ferramentas ficam confusos ou lentos, e a solução documentada é reduzir ou selecionar por embedding, não acumular. **Conclusão:** harness não é sobre maximizar capacidade, é sobre otimizar o caminho até o resultado certo.
+
+## Doze Componentes do Harness (Sete Documentados)
+
+Enumeração parcial de componentes de harness, sete cobertos numa fonte que cita a existência de doze no total (os outros cinco não foram nomeados — ver open question na fonte):
+
+1. **System prompt** — não é o "você é um assistente útil" genérico; é o caráter, os limites e as convenções do agente, o que nunca fazer. A "constituição" do agente.
+2. **Ferramentas** — o que o agente pode fazer; menos ferramentas bem escolhidas supera todas as ferramentas possíveis (ver caso Vercel acima).
+3. **Gestão de contexto** — o que o agente tem acesso, limite da janela, o que incluir/descartar. Decisão de engenharia, não do modelo — ver [[wiki/concepts/context-engineering-harness]].
+4. **Mecanismos de verificação** — como o agente checa se o que fez está correto antes de avançar. Ver [[wiki/concepts/rubrica-de-verificacao]].
+5. **Memória** — o que persiste entre sessões; sem memória o agente recomeça do zero a cada rodada.
+6. **Sandboxes** — ambiente isolado para executar código/testar outputs/chamar APIs sem afetar produção. Ver [[wiki/concepts/agent-containment]].
+7. **Hooks** — pontos definidos em que um humano ou sistema automatizado intervém; não é o agente decidindo quando escalar, é o harness definindo isso explicitamente. Ver [[wiki/concepts/hooks-agente]].
+
+Dado de benchmark citado (sem número específico): o mesmo Claude Opus performa significativamente melhor dentro do harness do Claude Code do que em benchmark padrão sem harness — mesmo modelo, harness diferente, resultado diferente ([[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]]).
 
 ## Harnesses com Learning Loop Embutido (Hermes Agent, Open Claw)
 
@@ -97,3 +126,5 @@ Depois de harness engineering (melhorar o ambiente ao redor do modelo), o degrau
 - [[wiki/sources/impacto-ia-mercado-frontend]] — harness próprio (skills, agente de code review a partir de causas de incidente) como requisito de contratação em frontend, não só prática de produtividade
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]] — harness com closed-loop skill learning embutido (Hermes Agent, Open Claw)
 - [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — a própria linguagem como harness (Rust vs. Zig na migração do Ban: compilador memory-safe como sensor objetivo); harness fraco em testes e2e removidos fez erros se acumularem num loop criador
+- [[wiki/sources/loop-engineering-harness-e-a-frase-que-viralizou]] — corrige a leitura "loop engineering matou harness engineering": o loop contém o harness, não o substitui; três fatores que tornaram loops longos viáveis em 2026 (modelo, harness, estado persistente)
+- [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — matemática de erros compostos (99%ⁿ), quatro mecanismos de mitigação (verificação, checkpoints, ferramentas, contexto limpo), caso Vercel (remoção de 80% das ferramentas), doze componentes do harness (sete documentados)

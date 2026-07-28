@@ -3,8 +3,8 @@ type: concept
 title: "Over-Engineering"
 aliases: ["overengineering", "verde neném", "engenharia excessiva", "gold plating"]
 date_created: 2026-06-09
-date_updated: 2026-07-24
-source_count: 7
+date_updated: 2026-07-28
+source_count: 8
 tags: [design, qualidade, anti-pattern, aprendizado, design-patterns, dora, under-engineering]
 skill: tech-mentor-leadership
 status: stable
@@ -71,6 +71,10 @@ A progressão que evita isso:
 
 ---
 
+## Como Escape Malsucedido da Paralisia por Análise
+
+[[wiki/sources/7-habitos-programador-altamente-eficaz]] amarra o over-engineering a um estágio específico de progressão de carreira, complementando a "causa raiz no aprendizado" já registrada acima: o pleno, ao ganhar uma altura de abstração maior, passa a enxergar mais variáveis do problema e tenta controlar todas — cai em [[wiki/concepts/paralisia-por-analise]]. Quem consegue sair da paralisia sem resolver a causa (julgamento de escopo ainda imaturo) tende a cair "na margem" do over-engineering: em vez de travar, produz uma solução desnecessariamente complexa só para ter "feito alguma coisa". A fonte nomeia o sênior como quem escapa dos dois extremos, produzindo um plano técnico *suficiente* — nem a paralisia do pleno, nem o excesso do over-engineering.
+
 ## Relação com Otimização Prematura
 
 [[otimizacao-prematura]] é o análogo de over-engineering no nível de performance: aplicar esforço excessivo onde não há necessidade comprovada. Ambos são sintomas de afoiteza.
@@ -88,6 +92,7 @@ A progressão que evita isso:
 - [[dora-metrics]] — evidência empírica de que a disciplina que evita over-engineering também melhora velocidade de entrega
 - [[kiss]] — princípio irmão, mesma disciplina de suprimir complexidade desnecessária
 - [[wiki/concepts/under-engineering]] — extremo oposto; ambos derivados do mesmo card de sintomas em [[wiki/sources/underengineering-overengineering-mario-souto]]
+- [[wiki/concepts/paralisia-por-analise]] — over-engineering como escape malsucedido da paralisia por análise, na leitura de estágios júnior/pleno/sênior
 
 ---
 
@@ -100,3 +105,4 @@ A progressão que evita isso:
 - [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — descreve o "efeito manada" histórico de microsserviços (startups adotando o estilo desde o início sem necessidade real, só para parecer em dia com o mercado) como caso concreto de over-engineering em nível arquitetural, hoje corrigido por decisões mais "com pé no chão"
 - [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]] — terceira fonte independente reforçando a refutação do "triângulo de ferro": entregar algo funcional e imperfeito vale mais que algo inacabado e "perfeito", e overthinking sobre escalabilidade sem usuários é citado como erro pessoal do próprio autor mesmo após 20+ anos de carreira
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — dois exemplos concretos no mesmo material: (1) Kafka citado como possível over-engineering para um sistema de reserva de hotel, usado mesmo assim como exercício didático com ressalva explícita; (2) o próprio autor admite ter incluído um "simulador de caos" no MVP de um produto novo antes de validar a funcionalidade central (o simulador), classificando isso como erro de escopo em retrospecto
+- [[wiki/sources/7-habitos-programador-altamente-eficaz]] — amarra over-engineering a um estágio de carreira (pleno escapando da paralisia por análise sem julgamento maduro de escopo), complementar à causa raiz de aprendizado já registrada

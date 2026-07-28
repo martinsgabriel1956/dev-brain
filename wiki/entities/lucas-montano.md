@@ -3,8 +3,8 @@ type: entity
 title: "Lucas Montano"
 aliases: ["Lucas Montano"]
 date_created: 2026-07-03
-date_updated: 2026-07-24
-source_count: 4
+date_updated: 2026-07-28
+source_count: 5
 tags: [criador-de-conteudo, ia, carreira, financas-pessoais, saas, growth]
 skill: tech-mentor-ai
 status: stub
@@ -22,9 +22,12 @@ Também tem um produto SaaS próprio, "Persoa" (também citado como "Pessoa"), i
 
 Também produz conteúdo reagindo a pesquisa técnica de IA — [[wiki/sources/jspace-cerebro-cloud-antropic]] reage ao vídeo da Anthropic sobre J-Space/Jacobian Lens, contrapondo a leitura "filosófica" viral do Twitter (consciência em LLMs) com uma explicação técnica própria de arquitetura de transformers, e arriscando a tese de que a Anthropic vai monetizar a observabilidade desse espaço interno como fez com "thinking tokens" nos reasoning models.
 
+Também fez um vídeo, citado (de segunda mão) em [[wiki/sources/aprenda-a-programar-do-jeito-dificil]], sobre por que há tanto desenvolvedor desempregado apesar da alta demanda do mercado — reagindo a um estudo do Google — argumentando que a oferta de mão de obra está desqualificada mesmo com muitas vagas abertas.
+
 ## Key Sources
 
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]]
+- [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] — citação de segunda mão: vídeo sobre desemprego dev apesar de alta demanda
 - [[wiki/sources/como-eu-investiria-como-programador-ate-50000]]
 - [[wiki/sources/como-vender-um-saas-sem-audiencia]]
 - [[wiki/sources/jspace-cerebro-cloud-antropic]]

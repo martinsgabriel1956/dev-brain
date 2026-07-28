@@ -3,8 +3,8 @@ type: concept
 title: "Caesar Cipher (Cifra de César)"
 aliases: ["caesar cipher", "cifra de cesar", "shift cipher", "cifra de deslocamento"]
 date_created: 2026-04-29
-date_updated: 2026-04-29
-source_count: 1
+date_updated: 2026-07-28
+source_count: 2
 tags: [criptografia, historia, cifra, caesar-cipher, encryption]
 skill: tech-mentor-security
 status: stub
@@ -30,10 +30,22 @@ K H O O R  →  H E L L O  (revertendo)
 
 Ilustra o princípio central de toda encryption: **a mensagem só é legível para quem possui a chave**. É o ponto de partida conceitual antes de avançar para AES, RSA e algoritmos modernos.
 
+## Não é IND-CPA Segura
+
+A cifra de César falha no modelo formal [[wiki/concepts/ind-cpa-security]]: como cada letra é sempre substituída pela mesma letra, o padrão de repetição de caracteres da mensagem original é preservado na cifra. Um atacante que recebe a cifra de uma de duas mensagens candidatas de mesmo tamanho consegue identificar qual foi cifrada apenas observando onde os caracteres se repetem — sem precisar quebrar a chave. Isso demonstra formalmente por que "parecer embaralhado" não é sinônimo de seguro.
+
+## Contexto Histórico Mais Amplo
+
+Não foi a primeira criptografia da história — a [[wiki/concepts/scytale]] espartana é anterior e usa transposição em vez de substituição. A limitação de "uma letra sempre vira a mesma letra" foi resolvida séculos depois pela [[wiki/concepts/vigenere-cipher]], que introduziu substituição polialfabética.
+
 ## Relação com outros conceitos
 
 - [[concepts/encryption]] — Caesar Cipher é o exemplo histórico mais simples do conceito.
+- [[wiki/concepts/scytale]] — outra cifra pré-moderna, por transposição em vez de substituição
+- [[wiki/concepts/vigenere-cipher]] — evolução que resolve a fraqueza de substituição fixa do César
+- [[wiki/concepts/ind-cpa-security]] — modelo formal que demonstra por que César é insegura
 
 ## Key Sources
 
 - [[sources/encoding-hashing-encryption]]
+- [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]

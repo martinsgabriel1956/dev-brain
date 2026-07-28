@@ -3,8 +3,8 @@ type: concept
 title: "Password Hashing"
 aliases: ["hashing de senhas", "armazenamento seguro de senhas", "password storage"]
 date_created: 2026-06-11
-date_updated: 2026-07-27
-source_count: 3
+date_updated: 2026-07-28
+source_count: 4
 tags: [segurança, criptografia, password-hashing, autenticação]
 skill: tech-mentor-security
 status: stable
@@ -90,3 +90,4 @@ $hash = password_hash($password . $pepper, PASSWORD_ARGON2ID, [
 - [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]]
 - [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]
+- [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]

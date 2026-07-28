@@ -3,8 +3,8 @@ type: concept
 title: "Autodidata"
 aliases: ["autodidatismo", "self-teaching", "aprendizado autônomo"]
 date_created: 2026-05-16
-date_updated: 2026-07-07
-source_count: 6
+date_updated: 2026-07-28
+source_count: 7
 tags: [aprendizado, mentalidade, carreira, dependencia-ia, autonomia-tecnica]
 skill: tech-mentor-leadership
 status: stable
@@ -51,6 +51,10 @@ Em [[wiki/sources/akita-oferta-procura-matematica-carreira]], Akita aprofunda a 
 
 No discurso de Howard Roark que Akita lê em [[wiki/sources/akita-discurso-howard-roark-a-nascente-ayn-rand]], a independência é tratada como a necessidade básica de quem cria — "a mente que raciocina não pode trabalhar sob nenhuma forma de coerção". É a mesma postura descrita aqui em termos práticos: o autodidata não delega ao procedimento a decisão de avançar. Ver [[wiki/concepts/independencia-como-motor-criativo]] para a versão filosófica (Objetivismo) dessa mesma ideia.
 
+## Recusar a Explicação de Superfície: "É Tudo Mágico"
+
+[[wiki/sources/aprenda-a-programar-do-jeito-dificil]] descreve um professor de arquitetura de computadores que dizia que estudar bits e memória "não serve pra nada na prática", que hoje há memória disponível de sobra. O autor da fonte reage a isso como sintoma de uma postura passiva mais ampla: aceitar que "é tudo mágico" e que não é preciso entender como as coisas funcionam por debaixo dos panos (compilador, alocação de memória, concorrência) — o oposto exato da postura autodidata descrita nesta página, que investiga o porquê em vez de aceitar a resposta pronta.
+
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]] — distinção central entre autodidatas e pessoas passivas; argumento da infância
@@ -60,3 +64,4 @@ No discurso de Howard Roark que Akita lê em [[wiki/sources/akita-discurso-howar
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]] — sistema educacional formal treina passividade; mercado real exige o oposto
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]] — precedente pré-IA: "saber pesquisar no Google" já era a habilidade central antes de "saber prompar uma IA"
 - [[wiki/sources/akita-discurso-howard-roark-a-nascente-ayn-rand]] — raiz filosófica (Objetivismo): independência como necessidade básica do criador
+- [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] — professor que trata bits/memória como irrelevantes; postura de aceitar "é tudo mágico" como oposto do autodidata

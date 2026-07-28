@@ -3,8 +3,8 @@ type: concept
 title: "TDD — Test-Driven Development"
 aliases: ["test driven development", "red green refactor", "desenvolvimento guiado por testes"]
 date_created: 2026-04-22
-date_updated: 2026-07-27
-source_count: 10
+date_updated: 2026-07-28
+source_count: 12
 tags: [testes, tdd, design, red-green-refactor, qualidade, dora]
 skill: tech-mentor-testing
 status: stable
@@ -98,6 +98,10 @@ A mesma fonte argumenta que testar é intrinsecamente difícil (decidir tamanho 
 
 Contraintuitivamente, aplicar TDD não torna a entrega mais lenta — a pesquisa [[dora-metrics|DORA]] (*Accelerate*) mostra que equipes com melhores práticas de engenharia (incluindo testes automatizados como pré-condição para deploy contínuo) entregam com mais frequência e menor lead time, não menos. TDD é parte do que torna um sistema seguro de mudar rapidamente — sem ele, cada mudança exige validação manual, que é o gargalo real. Ver [[over-engineering]] para a discussão mais ampla dessa correlação.
 
+## Testes Como Condição de Parada de um Loop Agêntico
+
+[[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] observa que testes escritos antes do código não são só verificação — são a **condição de parada objetiva** que um [[wiki/concepts/loop-engineering|loop agêntico]] precisa para rodar sem supervisão ("roda até os testes passarem" só funciona se os testes já existirem antes do código). Quem já pratica TDD já satisfaz o pré-requisito do nível "goal-based" na escada de autonomia de loop do guia da Anthropic — falta só disparar o loop.
+
 ## Mapear entrada/processamento/saída antes do primeiro teste
 
 O ciclo RED-GREEN-REFACTOR pressupõe saber o que testar primeiro — na prática, o passo que precede o RED é decompor a tarefa em casos discretos. [[wiki/concepts/mapear-entrada-processamento-saida]] descreve essa técnica: três campos-guia (entrada, processamento, saída) preenchidos progressivamente conforme a especificação e as regras de negócio ficam claras, combinados com sentenças dado/quando/então, cada uma virando diretamente um teste anotado antes de qualquer implementação. Complementado por [[wiki/concepts/setup-live-reload-debug-testes]] — live reload, `--inspect` e `node --test` integrados via `launch.json`, fazendo cada `Ctrl+S` rodar os testes com o debugger já conectado, sem sair do editor.
@@ -112,6 +116,10 @@ Quando a interface, o input e o output já são conhecidos por uma especificaç�
 ## Expectativa que quebra é sinal de bug, não de teste errado
 
 [[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] ilustra o princípio central do RED com um caso concreto de segurança: um teste espera `403` para uma rota sensível de migrations acessada por usuário anônimo, mas o código retorna `200`. A expectativa está certa — o código é que está exposto, sem nenhum middleware de autorização no handler. A fonte estende o mesmo raciocínio à fase de manutenção: meses depois, uma alteração não relacionada (permissão liberada por engano em outro arquivo) faz o mesmo teste voltar a falhar sozinho, em modo watch, pegando a regressão sem qualquer verificação manual — o mesmo teste escrito uma vez continua funcionando como especificação executável indefinidamente. Ver [[wiki/concepts/tres-estagios-maturidade-testes]] para o enquadramento de "teste automatizado com watch mode" como estágio mais maduro de validação de código, depois de clicar manualmente na UI e de usar um cliente HTTP dedicado (Postman).
+
+## TDD como Prevenção de Dívida Técnica
+
+[[wiki/sources/tech-debt-guia-completo-gestao-metricas]] enquadra TDD não como técnica de gestão de dívida técnica já existente, mas como **prevenção** — é difícil escrever lógica confusa e mal desenhada quando é preciso primeiro passar num teste limpo e simples (fase GREEN). Nesse enquadramento, a fase de REFACTOR do ciclo é onde a [[wiki/concepts/boy-scout-rule]] acontece de forma estruturada e obrigatória, em vez de depender da disciplina individual do dev de limpar o código depois. Ver [[wiki/concepts/tech-debt-como-ferramenta]] para as outras práticas de prevenção citadas na mesma fonte (pair programming, CI/CD com quality gates).
 
 ## Key Sources
 
@@ -128,3 +136,5 @@ Quando a interface, o input e o output já são conhecidos por uma especificaç�
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — importar a suite de testes de uma implementação de referência (stdlib de Go) como oráculo de corretude
 - [[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] — expectativa que quebra expõe bug de autorização real; teste como rede de segurança contra regressão futura não relacionada
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] — liga a regra "não misturar feature e refatoração" de Fowler ao ciclo RED-GREEN-REFACTOR
+- [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — testes escritos antes do código como condição de parada objetiva de um loop agêntico goal-based
+- [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] — TDD como prática de prevenção de dívida técnica, não gestão; fase REFACTOR do ciclo como Boy Scout Rule estruturada

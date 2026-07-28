@@ -3,8 +3,8 @@ type: concept
 title: "Quadrante de Fowler (Tech Debt)"
 aliases: ["quadrante fowler", "fowler tech debt quadrant", "tech debt quadrant"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 1
+date_updated: 2026-07-28
+source_count: 2
 tags: [tech-debt, fowler, planejamento, engenharia, decisao]
 skill: tech-mentor-leadership
 status: stable
@@ -48,6 +48,11 @@ Se a feature sobreviver à validação e entrar em manutenção ativa, o debt de
 - A complexidade impeça novas features
 - O debt inadvertido se acumule em cima do deliberado
 
+## Depois de Categorizar: Medir e Priorizar
+
+O quadrante decide *se* tomar dívida conscientemente, mas não diz quanto tempo alocar para pagá-la nem por onde começar. [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] cobre essa camada seguinte, hoje ausente desta página: modelos concretos de alocação de tempo (regra dos 20%, regra dos 25% do Shopify), mensuração formal via [[wiki/concepts/debt-ratio-sqale]] e priorização via [[wiki/concepts/hotspot-analysis]] e [[wiki/concepts/paid-framework]] — ver detalhamento em [[wiki/concepts/tech-debt-como-ferramenta]].
+
 ## Key Sources
 
 - [[wiki/sources/5-principles-that-changed-me-as-a-programmer]]
+- [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] — modelos de alocação de tempo e mensuração formal, camada complementar ao quadrante

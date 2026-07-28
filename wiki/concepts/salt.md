@@ -3,8 +3,8 @@ type: concept
 title: "Salt"
 aliases: ["salting", "salt criptográfico", "password salt"]
 date_created: 2026-06-11
-date_updated: 2026-06-11
-source_count: 1
+date_updated: 2026-07-28
+source_count: 2
 tags: [segurança, criptografia, password-hashing, salt]
 skill: tech-mentor-security
 status: stable
@@ -64,3 +64,4 @@ Ver [[concepts/pepper]] para a combinação ideal.
 ## Key Sources
 
 - [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
+- [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]

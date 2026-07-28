@@ -3,8 +3,8 @@ type: concept
 title: "ACID"
 aliases: ["atomicity", "consistency isolation durability", "acid properties"]
 date_created: 2026-04-22
-date_updated: 2026-07-27
-source_count: 4
+date_updated: 2026-07-28
+source_count: 5
 tags: [banco-de-dados, acid, transactions, postgresql, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -37,9 +37,14 @@ Garantir uma constraint como "e-mail único" (Consistency) não é gratuito: o b
 
 ACID não nasceu como especificação abstrata — nasceu como resposta a um problema concreto dos anos 70/80: sistemas em COBOL/Clipper/Assembly manipulavam arquivos ISAM/CSV diretamente, sem SGBD, com o programa acoplado à estrutura física do arquivo e sem qualquer garantia transacional. Edgar F. Codd (IBM, 1970) propôs o modelo relacional com **independência de dados** — o programa declara o que quer, o sistema decide como buscar e garante consistência. ACID é a formalização das garantias que esse modelo passou a oferecer. Ver [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]].
 
+## Termo de Concurso: SGBDR
+
+Provas de concurso brasileiras chamam o banco relacional de **SGBDR** (Sistema Gerenciador de Banco de Dados Relacional) — o "R" distingue de SGBD NoSQL. ACID é citado nesse contexto como propriedade típica do SGBDR, com "atomicidade" formalmente definida como: se ocorrer erro em uma transação, todo o conjunto de ações relacionado é desfeito até o retorno ao estado inicial. Ver [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]].
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] — contraponto com BASE e custo de performance da consistência forte
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — origem histórica do modelo relacional (Codd, 1970) e por que sistemas financeiros/saúde dependem de ACID
+- [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] — definição formal cobrada em prova de concurso, termo SGBDR

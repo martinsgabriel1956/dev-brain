@@ -4,8 +4,8 @@ title: "Tool Call"
 aliases: ["function calling", "tool use", "chamada de ferramenta"]
 date_created: 2026-06-02
 date_updated: 2026-07-03
-source_count: 3
-tags: [tool-call, harness, agente, llm, function-calling]
+source_count: 4
+tags: [tool-call, harness, agente, llm, function-calling, tool-overload]
 skill: tech-mentor-ai
 status: stable
 ---
@@ -54,6 +54,10 @@ Mecanismo introduzido pela OpenAI em 2023 que permite a um LLM requisitar a exec
 
 Restringir as tools disponíveis a um [[wiki/concepts/subagentes|subagente]] (ex.: um "code reviewer" só com `Read`/`Grep`/`Glob`/`Bash`, sem `Write`/`Edit`) reduz o system prompt desse subagente e, com isso, o consumo de tokens — a mesma lógica de "escolher a tool certa para a tarefa certa" descrita acima.
 
+## Menos Ferramentas Pode Ser Melhor que Mais (Caso Vercel)
+
+Contraintuitivo: mais ferramentas disponíveis não significa menos erro. A [[wiki/entities/vercel]] testou um agente interno com muitas ferramentas e performance ruim; em vez de adicionar mais, **removeu 80% das ferramentas disponíveis**, e a performance melhorou — cada etapa passou a exigir escolher entre menos opções, reduzindo o espaço de decisão e a chance de escolha errada ([[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]]). Reforça a mesma lógica já descrita acima para subagentes restritos: harness não é sobre maximizar capacidade, é sobre otimizar o caminho até o resultado certo.
+
 ## Analogia
 
 Assim como um programa em JavaScript não sabe que horas são e faz uma syscall ao OS para obter o timestamp, o LLM não sabe o que tem no seu filesystem e faz uma "syscall" ao harness para descobrir.
@@ -63,3 +67,4 @@ Assim como um programa em JavaScript não sabe que horas são e faz uma syscall 
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
+- [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — caso Vercel: remover 80% das ferramentas disponíveis melhorou performance do agente

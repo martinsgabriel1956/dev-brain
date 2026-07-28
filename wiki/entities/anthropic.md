@@ -4,8 +4,8 @@ title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
 date_updated: 2026-07-24
-source_count: 13
-tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia]
+source_count: 14
+tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering]
 skill: tech-mentor-ai
 status: stable
 ---
@@ -71,6 +71,10 @@ Pesquisa publicada pela própria Anthropic identificando um espaço interno no C
 
 Segundo [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]], a Anthropic desenvolveu uma classe de modelos especializados em cybersegurança ofensiva/defensiva — o **Mitos** (anunciado abril de 2026) e depois **Fable 5** e **Mitos 5** — capazes de encontrar vulnerabilidades de software em escala inédita (falha de 27 anos no OpenBSD, 16 anos no FFmpeg, brechas no núcleo do Linux, 10.000+ falhas de gravidade alta/crítica via o consórcio fechado **Glasswing**, que cresceu de ~50 para ~150 organizações em 15 países entre abril e junho de 2026). A capacidade foi julgada perigosa o suficiente para que a Anthropic nunca liberasse o Mitos ao público, e para que o governo dos EUA bloqueasse formalmente o acesso ao Fable 5 e ao Mitos 5 — inclusive para funcionários não-americanos da própria Anthropic — depois que a NSA relatou sistemas confidenciais comprometidos "em questão de horas". Mesmo com salvaguardas reforçadas, um laboratório italiano conseguiu contornar o Fable 5 em 702 de 7.828 tentativas de jailbreak — nuance que qualifica a robustez real dos guardrails da empresa (ver [[wiki/sources/ai-safety-guardrails]]).
 
+## Guia Oficial "Getting Started with Loops"
+
+Guia oficial publicado pela Anthropic definindo quatro níveis de autonomia para loops agênticos — turn-based, goal-based, time-based e proactive — cada um entregando progressivamente mais responsabilidade de decisão ao agente (ver [[wiki/concepts/loop-engineering]] para a lista completa). Publicado cerca de um ano depois do [[wiki/concepts/ralph-loop|Ralph Loop]] de [[wiki/entities/geoffrey-huntley]] (julho de 2025) ter demonstrado, de forma deliberadamente simples, que o próprio conceito de "loop até terminar" era viável — segundo [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]], a Anthropic institucionalizou um ano depois algo que começou como uma técnica quase de piada.
+
 ## Key Sources
 
 - [[wiki/sources/html-vs-markdown-para-agentes-de-ia]]
@@ -87,3 +91,4 @@ Segundo [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]], a An
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]] — bug de billing no Claude Max 20 disparado pela string "hermes" no Git history; anúncio do Dreaming in Claude
 - [[wiki/sources/jspace-cerebro-cloud-antropic]] — pesquisa de interpretabilidade (J-Space, Jacobian Lens): espaço interno de ativações vinculáveis a palavras nunca verbalizadas no output
 - [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]] — Mitos e Fable 5, modelos de cybersegurança bloqueados pelo governo dos EUA; consórcio Glasswing; jailbreak documentado do Fable 5
+- [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — guia oficial "Getting Started with Loops" (quatro níveis de autonomia de loop)

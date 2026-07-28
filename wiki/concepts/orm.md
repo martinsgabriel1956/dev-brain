@@ -3,8 +3,8 @@ type: concept
 title: "ORM (Object-Relational Mapping)"
 aliases: ["orm", "object relational mapping", "mapeamento objeto-relacional"]
 date_created: 2026-07-03
-date_updated: 2026-07-07
-source_count: 2
+date_updated: 2026-07-28
+source_count: 3
 tags: [orm, sql, banco-de-dados, prisma, hibernate, doctrine, abstracao, drizzle, migrations]
 skill: tech-mentor-backend
 status: stub
@@ -43,6 +43,10 @@ Para projetos novos, uma heurística prática: prefira ORMs **mínimas**, que fi
 Na prática do [[wiki/concepts/checklist-primeiro-dia-projeto]], isso significa iniciar o banco de dev e configurar o deploy para já **triggar as migrations automaticamente** desde o primeiro commit — mesmo que o projeto ainda não tenha nenhuma funcionalidade real (ex.: só uma migração inicial para tabela de usuários). Adiar essa configuração costuma virar problema mais caro de resolver depois.
 Em sistemas com relacionamentos muito profundos e muitas chaves compostas, algumas lógicas ficam quase impossíveis de expressar via ORM — nesse ponto, SQL direto deixa de ser opcional. Escrever a query diretamente também dá mais controle sobre otimização: você sabe exatamente quais tabelas relaciona, quais colunas retorna e se está batendo o [[wiki/concepts/database-index|índice]], algo que queries geradas por ORM tendem a não garantir. Ver [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]].
 
+## Fluxo Invertido: do Estado Final às Migrations
+
+Com SQL cru, a migration é escrita diretamente. Com ORM, o fluxo é o inverso: declara-se o **estado final** desejado do schema em código, e a ORM deriva os arquivos de [[wiki/concepts/database-migration|migration]] a partir do diff entre o estado atual (rastreado internamente via journal/snapshots) e o estado descrito. Na maioria dos casos não é preciso escrever migrations manualmente — só quando o gerado não sai como esperado. [[wiki/concepts/drizzle-orm]] é o exemplo usado para demonstrar esse fluxo (`drizzle-kit generate` deriva a migration do schema declarado; `drizzle-kit migrate` aplica). Ver [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]].
+
 ## Alternativas
 
 - **DSL customizada** — ver [[wiki/concepts/domain-specific-language]]
@@ -54,3 +58,4 @@ Em sistemas com relacionamentos muito profundos e muitas chaves compostas, algum
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]
 - [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]
+- [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]] — fluxo invertido (estado final → migration derivada) demonstrado com Drizzle

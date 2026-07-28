@@ -3,8 +3,8 @@ type: concept
 title: "Paralisia por Análise"
 aliases: ["analysis paralysis", "paralisia de decisão", "overthinking"]
 date_created: 2026-04-29
-date_updated: 2026-07-20
-source_count: 3
+date_updated: 2026-07-28
+source_count: 4
 tags: [psicologia, produtividade, decisao, carreira, projetos]
 skill: tech-mentor-leadership
 status: stable
@@ -49,6 +49,12 @@ Lei de Hick: o tempo de decisão aumenta logaritmicamente com o número de opç�
 
 O timeboxing citado acima como mitigação pontual da paralisia por análise ganhou uma página dedicada, [[wiki/concepts/time-boxing]], a partir de [[wiki/sources/indistraivel-nir-eyal-mano-deivin]] — lá o mecanismo é generalizado para além da tomada de decisão: não é só "decida em X minutos", é blindar blocos inteiros da agenda por tipo de tarefa, reduzindo tanto a paralisia de decisão quanto a fragmentação de foco durante a execução.
 
+## Como Estágio de Carreira: Júnior → Pleno → Sênior
+
+[[wiki/sources/7-habitos-programador-altamente-eficaz]] propõe uma leitura da paralisia por análise amarrada a estágios de senioridade, não só a um traço de personalidade: júnior não planeja nada, ataca o problema direto pensando em qual código já conhece; pleno, ao alcançar uma altura de abstração maior, passa a enxergar mais variáveis e tenta dominar todas — é aí que a paralisia por análise aparece. Quem escapa dela sem processar a causa raiz cai facilmente na margem do [[wiki/concepts/over-engineering]] — a maioria do que essa pessoa constrói acaba desnecessariamente complexo. O sênior, na leitura da fonte, é quem consegue produzir um plano técnico *suficiente* para o problema de hoje e para a evolução esperada do projeto — nem menos (júnior) nem mais (pleno/over-engineering).
+
+Isso reforça o mecanismo de mitigação já registrado acima ("aceita bom o suficiente" vs. "busca opção perfeita"): a fonte nomeia o "bom o suficiente" tecnicamente como a diferença entre pleno e sênior, e nomeia a fuga malsucedida da paralisia (que aqui não é terceirizar a decisão, mas superdimensionar a solução) como over-engineering.
+
 ## Ver Também
 
 - [[concepts/perfeccionismo-em-devs]] — perfeccionismo alimenta paralisia
@@ -61,3 +67,4 @@ O timeboxing citado acima como mitigação pontual da paralisia por análise gan
 - [[sources/por-que-devs-nao-terminam-projetos]]
 - [[wiki/sources/pare-de-terceirizar-suas-decisoes]]
 - [[wiki/sources/indistraivel-nir-eyal-mano-deivin]]
+- [[wiki/sources/7-habitos-programador-altamente-eficaz]]

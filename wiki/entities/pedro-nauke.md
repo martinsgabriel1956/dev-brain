@@ -3,8 +3,8 @@ type: entity
 title: "Pedro Nauke"
 aliases: ["Nauke", "Nauck", "Pedro Nauke", "Pedro Nauck", "pernop"]
 date_created: 2026-06-02
-date_updated: 2026-07-23
-source_count: 7
+date_updated: 2026-07-28
+source_count: 8
 tags: [instrutor, ia-para-devs, compose, tooling, brasil, open-source, carreira]
 skill: tech-mentor-ai
 status: stable
@@ -45,6 +45,12 @@ Ferramenta de orquestração spec-driven que:
 - Overthinking/over-engineering (ex.: resolver escalabilidade antes de ter um usuário) é um erro que ele mesmo cometeu; código é ferramenta a serviço de pessoas, não o objetivo final
 - Entregar algo funcional e imperfeito vale mais que algo inacabado e "perfeito"
 
+## Posições e Opiniões Conhecidas (Loop Engineering)
+
+- Constrói o Compose sobre o conceito de loop engineering desde julho de 2025 — antes do termo virar hype em 2026
+- Argumenta que "loop engineering matou harness engineering" é uma leitura invertida: o loop contém o harness, não o substitui
+- Gerencia no máximo 4-5 loops/worktrees paralelos antes de perder controle
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-01-abertura]]
@@ -54,3 +60,4 @@ Ferramenta de orquestração spec-driven que:
 - [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]
 - [[wiki/sources/formacao-ia-devs-aula-06-qa]]
 - [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]]
+- [[wiki/sources/loop-engineering-harness-e-a-frase-que-viralizou]]

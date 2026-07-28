@@ -3,8 +3,8 @@ type: concept
 title: "User Stories"
 aliases: ["User Story", "Histórias de Usuário", "US"]
 date_created: 2026-05-17
-date_updated: 2026-05-17
-source_count: 1
+date_updated: 2026-07-28
+source_count: 2
 tags: [produto, requisitos, agile, bdd]
 skill: tech-mentor-leadership
 status: stable
@@ -27,6 +27,10 @@ Dado que [contexto/pré-condição],
 Quando [ação do usuário ou evento],
 Então [resultado esperado e verificável].
 ```
+
+## Estimativa em Sprint
+
+Uma vez pronta (ver Definition of Ready), uma user story é estimada pelo time — tipicamente em [[wiki/concepts/story-points]] via [[wiki/concepts/planning-poker]] — antes de entrar no sprint. O [[wiki/concepts/scrum-master]] facilita esse processo, mas não deveria decidir a meta de pontos por conta própria: a estimativa precisa emergir da conversa do time sobre complexidade, não ser imposta de cima para baixo.
 
 ## Definition of Ready (antes do sprint)
 
@@ -52,6 +56,7 @@ Então [resultado esperado e verificável].
 ## Key Sources
 
 - [[wiki/sources/user-stories]]
+- [[wiki/sources/story-points-po-forcando-30-40-pontos-por-sprint]]
 
 ## Conceitos Relacionados
 

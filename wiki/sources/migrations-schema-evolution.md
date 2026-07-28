@@ -46,3 +46,7 @@ Migrations são código — versionadas, revisadas, testadas. Ferramentas: Flywa
 
 - Migrations em multi-tenant com schema-per-tenant — como aplicar migrations para 1000 schemas em paralelo sem impacto?
 - Rollback de migration que apagou dados — como lidar com rollback impossível sem backup point-in-time?
+
+## Fontes Relacionadas
+
+- [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]] — ângulo complementar: por que migrations manuais via SSH são consideradas errado (auditabilidade/reprodutibilidade), demonstração prática de migrate up/down com SQL cru e com Drizzle ORM. Não contradiz as claims desta página, mas foca em processo/versionamento em vez de mecânica de lock de DDL.

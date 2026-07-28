@@ -3,8 +3,8 @@ type: entity
 title: "RSA Security"
 aliases: ["RSA SecurID", "SecurID"]
 date_created: 2026-07-27
-date_updated: 2026-07-27
-source_count: 1
+date_updated: 2026-07-28
+source_count: 2
 tags: [rsa-security, mfa, token-de-hardware, seguranca]
 skill: tech-mentor-security
 status: stub
@@ -16,6 +16,9 @@ Empresa responsável pelo SecurID, o token de hardware que popularizou comercial
 
 Duas fragilidades motivaram a padronização posterior pela [[wiki/entities/ietf]]: (1) se a seed vazasse, o token era clonável; (2) dependia de relógio sincronizado entre dispositivo e servidor, algo operacionalmente difícil em escala.
 
+Não confundir com [[wiki/concepts/rsa]], o algoritmo de criptografia assimétrica (Rivest-Shamir-Adleman) que dá nome à empresa — são entidades distintas, ainda que relacionadas historicamente.
+
 ## Key sources
 
 - [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]
+- [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]

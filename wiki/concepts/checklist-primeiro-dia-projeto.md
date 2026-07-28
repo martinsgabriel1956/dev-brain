@@ -3,8 +3,8 @@ type: concept
 title: "Checklist do Primeiro Dia de um Projeto Novo"
 aliases: ["primeiro dia de projeto", "setup inicial de codebase", "day one checklist", "deploy desde o dia um"]
 date_created: 2026-07-07
-date_updated: 2026-07-07
-source_count: 1
+date_updated: 2026-07-28
+source_count: 2
 tags: [projetos, deploy, mvp, ci-cd, boas-praticas, setup]
 skill: tech-mentor-leadership
 status: stable
@@ -46,3 +46,4 @@ A etapa de documentação (passo 6) não é cerimonial — é o que torna produt
 ## Key Sources
 
 - [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]
+- [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]] — detalha o mecanismo da etapa 4: [[wiki/concepts/database-migration|migrations]] versionadas e reproduzíveis, com ou sem ORM

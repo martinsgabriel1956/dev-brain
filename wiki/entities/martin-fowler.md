@@ -3,8 +3,8 @@ type: entity
 title: "Martin Fowler"
 aliases: ["Fowler", "martinfowler.com"]
 date_created: 2026-07-07
-date_updated: 2026-07-27
-source_count: 11
+date_updated: 2026-07-28
+source_count: 12
 tags: [thoughtworks, autor, testes, arquitetura, tech-debt, refactoring, agile]
 skill: tech-mentor-testing
 status: stable
@@ -77,4 +77,5 @@ Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter us
 - [[wiki/sources/application-boundary-martin-fowler]] — aplicações como construções sociais
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] — motivos da 2ª edição de Refactoring, 20 anos depois
 - [[wiki/sources/consumer-driven-contracts-martin-fowler]] — artigo de Ian Robinson hospedado no site de Fowler, não escrito por ele
+- [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] — revisita o Quadrante de Fowler e acrescenta camada de mensuração formal (debt ratio/SQALE) e alocação de tempo (regra dos 20%/25%)
 - [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — artigo de 2014 que cunhou a definição de microsserviços, coautoria com [[wiki/entities/james-lewis]]

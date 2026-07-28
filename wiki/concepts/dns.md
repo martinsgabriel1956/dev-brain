@@ -3,8 +3,8 @@ type: concept
 title: "DNS — Domain Name System"
 aliases: [Domain Name System]
 date_created: 2026-04-22
-date_updated: 2026-07-15
-source_count: 2
+date_updated: 2026-07-28
+source_count: 3
 tags: [dns, rede, infraestrutura]
 skill: tech-mentor-system-design
 status: stub
@@ -15,6 +15,9 @@ Sistema que traduz nomes de domínio legíveis (ex: `api.empresa.com`) em endere
 
 DNS e [[wiki/concepts/porta-de-rede|porta]] resolvem endereçamento em camadas diferentes e complementares: DNS resolve nome → IP (qual host); a porta resolve IP → serviço (qual processo dentro daquele host). Uma requisição só chega ao destino final depois das duas resoluções.
 
+DNS é a primeira etapa de rede do [[wiki/concepts/critical-rendering-path]] do browser: o browser resolve o domínio para IP antes de abrir a conexão via [[wiki/concepts/tcp-three-way-handshake]].
+
 ## Key sources
 - [[sources/dns]]
 - [[wiki/sources/portas-de-rede-como-funcionam]] — DNS como resolução de nome, complementar à porta como resolução de serviço
+- [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]] — DNS como primeira etapa de rede do critical rendering path, analogia com lista de contatos do celular

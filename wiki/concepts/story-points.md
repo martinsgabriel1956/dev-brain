@@ -1,0 +1,57 @@
+---
+type: concept
+title: "Story Points"
+aliases: ["Pontos de História", "Estimativa Relativa", "Story Point Estimation"]
+date_created: 2026-07-28
+date_updated: 2026-07-28
+source_count: 1
+tags: [agile, scrum, estimativa, engineering-management]
+skill: tech-mentor-leadership
+status: stable
+---
+
+# Story Points
+
+**TL;DR:** Unidade de estimativa **relativa de complexidade**, não de tempo absoluto. Uma história de 5 pontos é ~2,5x mais complexa que uma de 2 pontos, não "5 horas" de trabalho. O valor numérico em si não importa — o que importa é a constância da escala e a tendência do time ao longo do sprint a sprint.
+
+## Como Calibrar
+
+1. Escolha uma história de referência que o time conhece bem.
+2. Defina-a como um valor base (ex.: "3 pontos").
+3. Todas as novas histórias são comparadas a ela, não estimadas em isolamento.
+
+Escalas comuns usam Fibonacci (1, 2, 3, 5, 8, 13, 21) para forçar o time a admitir incerteza crescente — a distância entre 13 e 21 é grande de propósito, porque histórias "muito grandes" deveriam ser subdivididas, não estimadas com precisão falsa.
+
+Times novos vão essencialmente **chutar** o valor inicial. Isso é esperado e correto — leva de 3 a 5 sprints para a métrica de [[wiki/concepts/story-points#velocity|velocity]] se estabilizar e virar ferramenta de previsão confiável. A escala em si é arbitrária (pode ser Fibonacci, números primos, "bananas e maçãs" — o time escolhe) — o que precisa se manter é o critério de comparação relativa.
+
+## Velocity
+
+**Velocity** é a média de pontos entregues por sprint. Depois que o time roda alguns sprints com a mesma composição, a velocity se estabiliza e permite previsão de prazo: "temos 120 pontos no backlog, velocity ~40/sprint → ~3 sprints".
+
+Uma equipe saudável tende a aumentar sua velocity organicamente ao longo do tempo — desde que a composição do time não mude constantemente. Isso é a métrica revelando aprendizado real, não pressão externa.
+
+## O Erro de Forçar um Número-Alvo
+
+Quando um Scrum Master ou PO decide, sem consultar o time, que "o time precisa fazer 30 ou 40 pontos por sprint por pessoa" — o processo já está corrompido. Isso inverte a lógica da métrica:
+
+- Story points deveriam **emergir** do processo de estimativa do time (via [[wiki/concepts/planning-poker]]) e refletir a complexidade real observada.
+- Quando um número é imposto de cima para baixo, o time passa a inflar estimativas para "bater a meta" (ex.: dar 20 pontos a um CRUD de três horas) em vez de estimar com honestidade.
+- Nesse ponto os pontos deixam de ser uma ferramenta de planejamento e viram uma métrica de exibição — o equivalente, em complexidade forçada, a manter o GitHub "verdinho" com commits vazios. Ver [[wiki/concepts/goodharts-law]].
+
+Consequências observadas quando isso acontece:
+- **Colaboração cai** — se o incentivo é "fechar meus pontos", ninguém quer gastar tempo ajudando colegas durante o sprint.
+- **Jornadas de trabalho se estendem** (10h/dia, fins de semana) sem remuneração extra, para "bater" um número que nunca foi calibrado pelo time — sintoma de erro de planejamento, não de falta de esforço individual.
+
+## Quando Usar / Evitar
+
+**Usar:** planejamento de sprint, previsão de entrega baseada em velocity histórica, conversa estruturada sobre complexidade via [[wiki/concepts/planning-poker]].
+
+**Evitar:** comparar velocity entre times diferentes (contextos e calibrações distintas tornam a comparação sem sentido); tratar pontos como horas; impor uma meta numérica de pontos por pessoa sem que ela tenha emergido do próprio time.
+
+## Conceitos Relacionados
+
+[[wiki/concepts/planning-poker]] · [[wiki/concepts/scrum-master]] · [[wiki/concepts/goodharts-law]] · [[wiki/concepts/user-stories]] · [[wiki/concepts/dora-metrics]]
+
+## Key Sources
+
+- [[wiki/sources/story-points-po-forcando-30-40-pontos-por-sprint]]

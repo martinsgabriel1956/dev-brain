@@ -3,8 +3,8 @@ type: concept
 title: "BCrypt"
 aliases: ["bcrypt", "blowfish crypt"]
 date_created: 2026-06-11
-date_updated: 2026-06-11
-source_count: 1
+date_updated: 2026-07-28
+source_count: 2
 tags: [segurança, criptografia, password-hashing, bcrypt, cpu-hard]
 skill: tech-mentor-security
 status: stable
@@ -12,7 +12,11 @@ status: stable
 
 # BCrypt
 
-Algoritmo de [[concepts/password-hashing]] baseado no cifrador Blowfish, introduzido em 1999. Foi o padrão da indústria por mais de uma década por ser [[concepts/cpu-hard]] — intencionalmente lento. Ainda aceitável em sistemas legados com fator de trabalho alto, mas **superado pelo [[concepts/argon2]]** para novos projetos.
+Algoritmo de [[concepts/password-hashing]] baseado no cifrador Blowfish, introduzido em 1999. Mais especificamente, usa uma variante chamada **EKS-Blowfish** (Expensive Key Schedule Blowfish), que mistura salt e senha repetidamente para forçar lentidão de propósito. Foi o padrão da indústria por mais de uma década por ser [[concepts/cpu-hard]] — intencionalmente lento. Ainda aceitável em sistemas legados com fator de trabalho alto, mas **superado pelo [[concepts/argon2]]** para novos projetos.
+
+## Limite de 72 Caracteres
+
+BCrypt só processa os **72 primeiros caracteres** da senha de entrada — qualquer excesso além disso é silenciosamente ignorado no hash gerado. Senhas muito longas (ex.: passphrases geradas por gerenciador de senha) podem colidir em prefixo sem que o sistema perceba.
 
 ---
 
@@ -80,3 +84,4 @@ Se o sistema é legado e não suporta Argon2:
 ## Key Sources
 
 - [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
+- [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]

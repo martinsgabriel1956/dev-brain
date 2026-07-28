@@ -4,8 +4,8 @@ title: "Hooks de Agente"
 aliases: ["hooks claude code", "agent hooks", "hooks automação"]
 date_created: 2026-05-31
 date_updated: 2026-07-21
-source_count: 2
-tags: [claude-code, hooks, automacao, agente-ia, llmops, context-engineering]
+source_count: 3
+tags: [claude-code, hooks, automacao, agente-ia, llmops, context-engineering, harness]
 skill: tech-mentor-ai
 status: stable
 ---
@@ -120,7 +120,12 @@ Use os dois em conjunto: CLAUDE.md para contexto e diretrizes gerais, hooks para
 
 [[wiki/sources/hermes-agent-open-claw-learning-loop]] descreve um uso manual comum, precursor da automação do [[wiki/concepts/closed-loop-skill-learning|closed-loop skill learning system]] do Hermes Agent: um hook disparado ao fim da sessão (`Stop`) que coleta tudo que se repetiu na tarefa e alimenta uma chamada de LLM geradora de padrões, cujo output realimenta o arquivo de regras/skill do projeto — ou seja, `Stop` usado não só para notificação, mas como gatilho de curadoria de memória entre sessões.
 
+## Hooks como um dos Componentes Nomeados do Harness
+
+[[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] cita hooks como um dos sete componentes documentados de um harness completo (ver [[wiki/concepts/harness]]): pontos onde um humano ou sistema automatizado intervém, definidos explicitamente por quem constrói o harness — não é o agente decidindo por conta própria quando escalar ou parar.
+
 ## Key Sources
 
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]] — hook de `Stop` como pattern extraction manual, precursor do closed-loop skill learning
+- [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — hooks como componente nomeado do harness: pontos de intervenção definidos explicitamente, não decididos pelo agente
