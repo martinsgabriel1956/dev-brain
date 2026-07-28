@@ -3,9 +3,9 @@ type: concept
 title: "BFF (Backend for Frontend)"
 aliases: ["bff", "backend for frontend", "best friends forever"]
 date_created: 2026-07-23
-date_updated: 2026-07-23
-source_count: 2
-tags: [bff, api-gateway, over-fetching, under-fetching, aggregation, frontend]
+date_updated: 2026-07-28
+source_count: 3
+tags: [bff, api-gateway, over-fetching, under-fetching, aggregation, frontend, graphql, n-plus-one]
 skill: tech-mentor-backend
 status: stable
 ---
@@ -54,6 +54,10 @@ Um BFF exagerado ou mal escopado vira mais um projeto para manter, negando o gan
 
 Nem todo sistema precisa de múltiplos BFFs — para poucos clientes com necessidades parecidas, um único Gateway genérico com composição pode bastar. Avaliar caso a caso; multiplicar BFFs sem necessidade real infla a arquitetura. Ver [[wiki/concepts/over-engineering]].
 
+## BFF vs. GraphQL — Mesmo Problema, Duas Respostas
+
+Um BFF por tipo de cliente e o [[wiki/concepts/graphql]] atacam o mesmo problema (over-fetching/under-fetching entre múltiplos frontends), com trade-offs opostos: BFF é um endpoint especializado e fixo por tela/cliente — simples de cachear via HTTP, mas multiplica endpoints conforme surgem telas novas. GraphQL é genérico — o cliente pede a estrutura que quer numa query só, sem esperar um novo endpoint no backend, ao custo de perder cache HTTP nativo (tudo é POST) e de introduzir [[wiki/concepts/n-plus-one|N+1]] dentro dos próprios resolvers se não houver DataLoader. Ver [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]].
+
 ## Relação com Gatekeeper Pattern
 
 Um BFF é, ao mesmo tempo, um Gatekeeper especializado por tipo de cliente — herda os mesmos ganhos de segurança de borda (auth, rate limit, redução de attack surface). Ver [[wiki/concepts/gatekeeper-pattern]].
@@ -62,3 +66,4 @@ Um BFF é, ao mesmo tempo, um Gatekeeper especializado por tipo de cliente — h
 
 - [[wiki/sources/api-gateway-bff]]
 - [[wiki/sources/api-gateway-padrao-essencial-arquiteturas-distribuidas]]
+- [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]] — comparação BFF vs. GraphQL como respostas ao mesmo problema de N+1/over-under-fetching

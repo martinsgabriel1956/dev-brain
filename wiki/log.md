@@ -4214,3 +4214,27 @@ Entities:
 **Notas:** Fonte é a primeira da wiki com foco explícito em preparação para concurso público brasileiro — traz terminologia formal (SGBDR, SGBD NoSQL) e um bloco de questões reais de banca com gabarito, gênero de conteúdo novo em relação às fontes técnicas/de mercado já ingeridas. Os claims centrais (definição de SGBD, ACID, CAP, exemplos de bancos por modelo NoSQL) são consistentes com o que já estava documentado via [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]]. Uma divergência registrada como questão aberta: a fonte classifica Neo4j como CA no Teorema CAP, o que é uma simplificação didática questionável para um banco que não opera necessariamente como cluster distribuído da mesma forma que os demais exemplos do teorema. Nenhuma página nova de conceito foi criada porque todos os temas centrais (SGBD, ACID, CAP, NoSQL, relacional vs. NoSQL) já tinham página própria e estável na wiki — o valor desta fonte é reforçar esses conceitos com terminologia formal de concurso e uma nova categoria de evidência (questões de banca com gabarito).
 
 ---
+
+## [2026-07-28] ingest | O Problema de N+1: Como Ele Moldou a Computação (e Como Resolver)
+
+**Fonte:** [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]] — transcrição de vídeo já em português, sem tradução necessária; reestruturada em markdown com seções (frontend/backend, tentativas com REST, origem do GraphQL na Meta, backend/banco com ORM/Django/Drizzle), salva em `raw/problema-n-mais-1-graphql-orm-solucoes.md`.
+
+**Skill:** `tech-mentor-backend`, seção GraphQL (`references/graphql.md`) — confirmado pelo conteúdo central (N+1, DataLoader, GraphQL vs. REST, Federation superficialmente mencionada). A referência já documentava DataLoader/N+1 dentro do GraphQL com mais profundidade técnica do que a fonte; usada para verificar consistência do que a fonte afirma (batching, cache por request) sem contradição.
+
+**Páginas criadas:**
+- `raw/problema-n-mais-1-graphql-orm-solucoes.md`
+- `wiki/sources/problema-n-mais-1-graphql-orm-solucoes.md`
+- `wiki/concepts/graphql.md` — novo, status draft: fundamentos, problema que resolve (over/under-fetching), origem histórica ligada ao N+1 frontend↔backend e à Meta, por que sempre POST, comparação com REST, DataLoader, e nota sobre syntax sugar inspirado em GraphQL fora do GraphQL (Drizzle)
+
+**Páginas atualizadas:**
+- `wiki/concepts/n-plus-one.md` — nova seção "N+1 Também Existe entre Frontend e Backend" explicando a origem histórica ligada a SSR vs. SPA; `source_count` 1 → 2
+- `wiki/concepts/orm.md` — nova seção "Lazy Loading e o Risco de N+1" com exemplo Django (`prefetch_related`); `source_count` 3 → 4
+- `wiki/concepts/drizzle-orm.md` — nova seção "Ergonomia Próxima de SQL — e de GraphQL" cobrindo `leftJoin` e relational queries (`with:`); `source_count` 1 → 2
+- `wiki/concepts/bff-pattern.md` — nova seção "BFF vs. GraphQL — Mesmo Problema, Duas Respostas"; `source_count` 2 → 3
+- `wiki/concepts/api-composition.md` — novo link conectando "endpoint que recebe lista de IDs" ao request collapsing/DataLoader; `source_count` 1 → 2
+- `wiki/entities/meta.md` — nova seção "Criadora do GraphQL"; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts para `graphql.md`; nova linha em Concepts para `n-plus-one.md` (ausente do índice até agora — corrigido como drift trivial) e nota em `drizzle-orm.md`
+
+**Notas:** Fonte didática de criador de conteúdo, sem citação de fonte primária para a afirmação histórica de que a Meta criou o GraphQL especificamente para resolver N+1/over-under-fetching — plausível e consistente com o conhecimento público (Facebook abriu o GraphQL como open source em 2015), mas registrado como confiança média na fonte por falta de citação direta ao engineering blog original. Nenhuma contradição encontrada com [[wiki/concepts/n-plus-one]], [[wiki/concepts/orm]] ou [[wiki/concepts/bff-pattern]] já existentes — esta fonte unifica conceitualmente páginas que já existiam de forma isolada (N+1, ORM, Drizzle, BFF, API Composition) sob o mesmo problema estrutural, e preenche uma lacuna real: a wiki não tinha página própria de GraphQL até esta ingestão, apesar de já citar DataLoader/N+1 de passagem em `api-composition.md`. Drift de índice pré-existente corrigido: `wiki/concepts/n-plus-one.md` existia desde 2026-04-22 mas nunca tinha sido adicionado a `wiki/index.md`.
+
+---

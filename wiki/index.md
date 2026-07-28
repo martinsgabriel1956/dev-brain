@@ -19,6 +19,7 @@ date_updated: 2026-07-28
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]] | N+1 em duas camadas — frontend↔backend (via API) e backend↔banco (via ORM lazy loading) — mesmas soluções estruturais (endpoint/query especializada, lista de IDs conhecida, ou JOIN/prefetch); origem do GraphQL na Meta como resposta genérica ao N+1/over-under-fetching entre múltiplos frontends; fecha com relational queries do Drizzle como syntax sugar inspirado no GraphQL |
 | [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] | Por que estudar linguagens e conceitos low level (mesmo sem retorno financeiro imediato) traz satisfação pessoal e benefício de carreira no longo prazo — caso pessoal do bot de Discord de Tibia otimizado com concorrência em Go, e da contribuição não remunerada à API TibiaData |
 | [[wiki/sources/7-habitos-programador-altamente-eficaz]] | Sete hábitos de programador eficaz: buscar solução por conta própria antes de perguntar, escapar da paralisia do planejamento sem cair em over-engineering, ler código alheio, documentar de forma inteligente (testes como documentação viva), pensar primeiro em abstrações/limites (analogia dos órgãos), perder o medo de código, e bloquear a própria agenda para "entortar o tempo" |
 | [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]] | Seis etapas entre digitar a URL e o primeiro pixel: cache → DNS → TCP handshake → TLS → request HTTP → parsing HTML/CSS em DOM/CSSOM → render tree → layout → paint → composite; JavaScript síncrono bloqueia o parser, daí async/defer; cada otimização clássica (minificar, defer, CSS raso, transform/opacity) ataca uma etapa específica |
@@ -759,7 +760,8 @@ date_updated: 2026-07-28
 |---|---|
 | [[wiki/concepts/orm]] | ORM não elimina SQL, gera SQL por baixo dos panos — abstração, não substituição |
 | [[wiki/concepts/database-migration]] | Migrate up/down versionado sequencialmente — via SQL cru ou derivado do estado final do schema por uma ORM |
-| [[wiki/concepts/drizzle-orm]] | ORM mínima TypeScript próxima de SQL puro — schema declarado gera migration automaticamente via `drizzle-kit generate` |
+| [[wiki/concepts/drizzle-orm]] | ORM mínima TypeScript próxima de SQL puro — schema declarado gera migration automaticamente via `drizzle-kit generate`; relational queries (`with:`) inspiradas em GraphQL |
+| [[wiki/concepts/n-plus-one]] | 1 query para uma lista + N queries adicionais, uma por item — entre backend↔banco (lazy loading de ORM) e entre frontend↔backend (via API); mesma solução: JOIN/prefetch ou pedir a estrutura de uma vez |
 | [[wiki/concepts/domain-specific-language]] | DSL para banco de dados quase sempre é wrapper em cima de SQL; Datalog do Datomic é a exceção real |
 | [[wiki/concepts/mysql]] | InnoDB, gap locking, estoque como linhas físicas vs coluna numérica, diagnóstico por tempo de conexão segurada |
 | [[wiki/concepts/skip-locked]] | `SELECT FOR UPDATE SKIP LOCKED` — fila de jobs e reserva de estoque de alta concorrência sem broker externo |
@@ -796,6 +798,7 @@ date_updated: 2026-07-28
 | [[wiki/concepts/api-gateway]] | Ponto único de entrada externo — roteamento, auth de borda, mapeamento de payload entre protocolos; single point of failure por natureza, mitigado com escala horizontal e observabilidade |
 | [[wiki/concepts/bff-pattern]] | API Gateway especializado por tipo de cliente — resolve over-fetching/under-fetching agregando dados exatamente no formato que aquele frontend precisa |
 | [[wiki/concepts/api-composition]] | API Composer orquestra múltiplas chamadas em paralelo (fan-out) e devolve um único resultado lapidado — técnica central por trás de BFFs e agregação de endpoints |
+| [[wiki/concepts/graphql]] | Cliente pede a estrutura de dados exata que quer numa única query — criado pela Meta para resolver N+1/over-under-fetching entre múltiplos frontends; sempre POST por limite de tamanho de URL |
 | [[wiki/concepts/microsservicos]] | Decomposição por bounded context, não por camada técnica; monolito modular é o ponto de partida correto para ~90% dos casos; estudar o estilo funciona como eixo de aprendizado que amarra circuit breaker, saga, observabilidade e mensageria |
 
 ### Boas Práticas de Engenharia

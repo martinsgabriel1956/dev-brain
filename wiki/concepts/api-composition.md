@@ -3,9 +3,9 @@ type: concept
 title: "API Composition"
 aliases: ["api composer", "composição de apis", "agregação de endpoints"]
 date_created: 2026-07-23
-date_updated: 2026-07-23
-source_count: 1
-tags: [api-composition, fan-out, aggregation-layer, api-gateway, bff]
+date_updated: 2026-07-28
+source_count: 2
+tags: [api-composition, fan-out, aggregation-layer, api-gateway, bff, n-plus-one, dataloader, graphql]
 skill: tech-mentor-backend
 status: draft
 ---
@@ -49,3 +49,4 @@ O API Composer pode ser um componente dedicado ou, mais comumente na prática, a
 ## Key Sources
 
 - [[wiki/sources/api-gateway-padrao-essencial-arquiteturas-distribuidas]]
+- [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]] — o endpoint "recebe lista de IDs já conhecida" é a mesma técnica de request collapsing, versão REST/manual do que DataLoader faz automaticamente

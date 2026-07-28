@@ -4,8 +4,8 @@ title: "ORM (Object-Relational Mapping)"
 aliases: ["orm", "object relational mapping", "mapeamento objeto-relacional"]
 date_created: 2026-07-03
 date_updated: 2026-07-28
-source_count: 3
-tags: [orm, sql, banco-de-dados, prisma, hibernate, doctrine, abstracao, drizzle, migrations]
+source_count: 4
+tags: [orm, sql, banco-de-dados, prisma, hibernate, doctrine, abstracao, drizzle, migrations, n-plus-one, lazy-loading, django]
 skill: tech-mentor-backend
 status: stub
 ---
@@ -31,6 +31,27 @@ SELECT * FROM users WHERE active = true;
 - Abstrai o banco da camada de domínio ([[wiki/concepts/postgresql]] pode ser trocado sem reescrever regra de negócio)
 - Parametrização automática — mitiga [[wiki/concepts/sql-injection]] por padrão, desde que não se use raw query com interpolação
 - Produtividade em CRUD — menos boilerplate que SQL manual
+
+## Lazy Loading e o Risco de N+1
+
+ORMs adiam ao máximo o acesso ao banco (**lazy loading**) — uma query só é disparada quando o dado é de fato acessado, e traz só o mínimo necessário naquele momento:
+
+```python
+users = User.objects.all()  # nada é executado ainda
+
+for user in users:
+    print(user.name)       # dispara o SELECT de users aqui
+    for post in user.posts:
+        print(post.title)  # dispara UM SELECT de posts POR usuário — N+1
+```
+
+A solução é declarar antecipadamente o que será usado (**eager loading**/prefetch), forçando a ORM a buscar tudo numa query otimizada em vez de uma por item:
+
+```python
+users = User.objects.prefetch_related('posts')
+```
+
+Ver [[wiki/concepts/n-plus-one]] para o problema completo, incluindo a versão do mesmo padrão entre frontend e backend. Fonte: [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]].
 
 ## Limitações (Leaky Abstraction)
 
@@ -59,3 +80,4 @@ Com SQL cru, a migration é escrita diretamente. Com ORM, o fluxo é o inverso: 
 - [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]
 - [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]
 - [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]] — fluxo invertido (estado final → migration derivada) demonstrado com Drizzle
+- [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]] — lazy loading e N+1, prefetch em Django, LEFT JOIN equivalente

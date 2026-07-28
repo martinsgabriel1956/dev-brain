@@ -3,9 +3,9 @@ type: concept
 title: "N+1 Query Problem"
 aliases: ["n+1", "n mais um", "n plus one"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
-tags: [banco-de-dados, performance, orm, prisma, n-plus-one]
+date_updated: 2026-07-28
+source_count: 2
+tags: [banco-de-dados, performance, orm, prisma, n-plus-one, graphql, api-design]
 skill: tech-mentor-system-design
 status: stable
 ---
@@ -42,6 +42,14 @@ Habilite query logging no Prisma ou use `EXPLAIN ANALYZE`. Se ver dezenas de que
 
 Use `include`/`join` para carregar relacionamentos em uma única query com JOIN no banco.
 
+## N+1 Também Existe entre Frontend e Backend
+
+O exemplo acima é o N+1 "tradicional", entre backend e banco de dados. A mesma estrutura de problema aparece também entre **frontend e backend**, via API: 1 request para `GET /users` + N requests, um para `GET /users/{id}/posts` de cada usuário retornado.
+
+Esse N+1 de API só passou a existir porque o modelo de renderização mudou. Quando o frontend recebia uma página inteira pronta do backend (server-side rendering — Rails, Django templates, Laravel), não havia N+1 nessa camada, porque não existiam endpoints adicionais para "buscar mais dados". Com UIs mais interativas (React e afins) buscando dados via chamadas a endpoints, o mesmo problema estrutural do banco foi replicado aqui.
+
+As soluções se repetem: endpoint especializado que já retorna os dados relacionados embutidos, endpoint que recebe uma lista de IDs já conhecida, ou — a resposta genérica da Meta/Facebook para esse problema — [[wiki/concepts/graphql]], que deixa o cliente pedir a estrutura aninhada que precisa numa única query. Ver [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]].
+
 ## N+1 na Era da IA
 
 O problema N+1 é um dos erros estruturais mais frequentes da IA gerando código. A IA foca em entregar a feature pedida — não em como ela se enquadra no sistema como um todo. Ela faz a query para buscar uma lista, depois outra query para cada item, e não percebe que está criando um loop de chamadas ao banco.
@@ -55,3 +63,4 @@ Mitigação via [[harness-de-qualidade]]: ferramentas de análise de query (APM,
 - [[sources/banco-de-dados]]
 - [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
+- [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]] — N+1 entre frontend e backend, origem do GraphQL, prefetch em Django, LEFT JOIN
