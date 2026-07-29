@@ -3,8 +3,8 @@ type: entity
 title: "John Ousterhout"
 aliases: ["ousterhout", "philosophy of software design"]
 date_created: 2026-07-09
-date_updated: 2026-07-10
-source_count: 2
+date_updated: 2026-07-29
+source_count: 3
 tags: [autor, complexidade, arquitetura, deep-modules, professor]
 skill: tech-mentor-backend
 status: draft
@@ -28,7 +28,12 @@ Citado em [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-
 
 [[wiki/sources/filosofia-do-design-de-software-introducao]] é a primeira citação de primeira mão do próprio livro no wiki (as anteriores vinham de uma palestra de Matt Pocock citando o autor). Nela, Ousterhout enquadra as duas estratégias gerais contra complexidade — eliminar (código mais simples e óbvio) e encapsular ([[wiki/concepts/modulo-profundo|design modular]]) — e argumenta que design de software é processo contínuo, nunca uma fase única: ver [[wiki/concepts/modelo-cascata-vs-desenvolvimento-incremental]]. Também introduz o método de trabalho do livro inteiro: reconhecer [[wiki/concepts/red-flags-de-design]] via [[wiki/concepts/code-review]], já que é mais fácil ver problemas de design no código de outra pessoa do que no próprio.
 
+## Livro completo (2026-07-29)
+
+[[wiki/sources/filosofia-do-design-de-software-livro-completo]] cobre os 22 capítulos do livro. Além dos temas já registrados acima, o autor discorda explicitamente de Robert Martin (*Clean Code*) em três pontos nomeados — tamanho de método vs. profundidade ([[wiki/concepts/red-flags-de-design]]), motivo dos comentários existirem ([[wiki/concepts/comentarios-como-ferramenta-de-design]]) — e do guia de estilo de nomenclatura do Go ([[wiki/concepts/naming]]). Também formula, com vocabulário próprio, a distinção entre [[wiki/concepts/tech-debt-como-ferramenta|programação tática e estratégica]] (Cap. 3) e o conceito de [[wiki/concepts/ocultamento-de-informacao|ocultamento de informação]] de David Parnas (Cap. 5), central para módulos profundos.
+
 ## Key Sources
 
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]
+- [[wiki/sources/filosofia-do-design-de-software-livro-completo]]

@@ -3,7 +3,7 @@ type: source
 title: "A Filosofia do Design de Software — Introdução (Cap. 1)"
 aliases: ["a philosophy of software design intro", "ousterhout capítulo 1", "philosophy of software design chapter 1"]
 date_created: 2026-07-10
-date_updated: 2026-07-10
+date_updated: 2026-07-29
 source_file: /home/gabriel-martins/Documentos/dev-brain/raw/filosofia-do-design-de-software-introducao.md
 source_url: ""
 author: "John Ousterhout"
@@ -61,8 +61,7 @@ Texto de primeira mão (não mais citação de segunda mão via palestra) do cap
 
 ## Open Questions
 
-- O texto cita "define errors out of existence" como exemplo de conceito filosófico do livro (paralelo a "classes devem ser profundas"), mas não desenvolve o conceito nesta introdução — provável capítulo dedicado mais adiante no livro, ainda não ingerido.
-- A fonte não define formalmente o que conta como um "case especial" a ser eliminado nem dá exemplos concretos de eliminação de complexidade (só de encapsulamento, via módulos profundos, já coberto por outra fonte) — fica como lacuna a fechar se o restante do livro for ingerido.
+- ~~O texto cita "define errors out of existence"... ainda não ingerido~~ — **Resolvido em 2026-07-29**: o livro completo foi ingerido em [[wiki/sources/filosofia-do-design-de-software-livro-completo]], que cobre "define errors out of existence" (Cap. 10) e todos os demais capítulos até a conclusão.
 
 ## Raw Quotes
 

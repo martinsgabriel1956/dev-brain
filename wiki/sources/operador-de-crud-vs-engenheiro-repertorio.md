@@ -58,6 +58,7 @@ Nenhuma entidade nomeada (autor/canal não identificado na transcrição recebid
 - [[wiki/concepts/back-pressure]] — produtor mais rápido que consumidor em streams
 - [[wiki/concepts/idempotencia]] — webhook retried não pode cobrar em dobro
 - [[wiki/concepts/database-index]] — índice acelera leitura, custa na escrita; operador usa, engenheiro sabe por quê
+- [[wiki/concepts/full-text-search]] — exemplo concreto e demonstrado do mesmo padrão: o operador de CRUD monta `LIKE '%termo%'` porque parece óbvio; o engenheiro sabe que isso é table scan e usa índice invertido — ver [[wiki/sources/full-text-search-mysql-postgresql]]
 - [[wiki/concepts/mobile-navegacao]] — navigation stack e ciclo de vida de tela; gestão incorreta gera vazamento de memória e OOM kill
 - [[wiki/concepts/mobile-design-system]] — consistência e acessibilidade que escalam para um time, não empilhar componente
 - [[wiki/concepts/algoritmos-e-estruturas-de-dados]] — complexidade (laço dentro de laço) como fundamento matemático mínimo do engenheiro

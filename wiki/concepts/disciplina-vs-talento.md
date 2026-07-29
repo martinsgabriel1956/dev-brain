@@ -3,8 +3,8 @@ type: concept
 title: "Disciplina vs Talento"
 aliases: ["talento não é determinante", "disciplina supera talento", "dom para programação"]
 date_created: 2026-06-26
-date_updated: 2026-07-24
-source_count: 4
+date_updated: 2026-07-29
+source_count: 5
 tags: [carreira, mentalidade, aprendizado, disciplina, talento, iniciante]
 skill: tech-mentor-leadership
 status: stable
@@ -48,6 +48,10 @@ A única variável que o iniciante controla é a constância da prática. Talent
 
 [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] chega à mesma conclusão pelo caminho de um exemplo concreto fora de programação: o desafio "One Punch Man" (correr 10km, 100 flexões/abdominais/agachamentos por dia) não foi resolvido de uma vez por talento atlético, mas operacionalizado em passos mínimos e crescentes (andar 2km → correr 200m → 500m → 1km → 1,6km), cada etapa reforçando a próxima. O ponto central é o mesmo desta página: o remédio para não ter uma habilidade ainda é praticar a ação repetidamente, não esperar aptidão inata. Ver [[wiki/concepts/problema-de-escopo-aberto]] para o mecanismo completo de foco em ação vs. resultado.
 
+## Quinta Fonte: Consistência é o que Sustenta o Jogo Infinito da Carreira
+
+[[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] chega a uma tese complementar por um ângulo distinto dos anteriores: em vez de disciplina vs. talento *inato*, o Hábito 4 ("Seja sem graça") contrasta disciplina/consistência contra **intensidade** — a cultura de "passei a noite toda programando", socialmente elogiada, mas que é o comportamento de quem trata a programação como [[wiki/concepts/jogo-finito-vs-infinito|jogo finito]] (foco em vencer um pico pontual) quando na verdade é um jogo infinito (não há "vencer", só continuar evoluindo). A fonte também reforça, no Hábito 6 ("Seu 9 às 5 não é suficiente"), que boa parte do que separa uma carreira notável do trabalho tradicional é tempo investido fora do expediente — sem exigir sacrificar sono ou relações pessoais, mas também sem contar apenas com as 40h contratuais. Ambos os pontos reforçam a mesma tese central desta página por um caminho novo: o que diferencia trajetórias não é um pico de esforço isolado (intensidade, "dom"), é a consistência sustentada ao longo do tempo.
+
 ## Ver Também
 
 - [[familiaridade-vs-capacidade]] — mecanismo que explica por que o "talento" parece real
@@ -61,3 +65,4 @@ A única variável que o iniciante controla é a constância da prática. Talent
 - [[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]] — segunda fonte independente com a mesma conclusão, aplicada ao contexto de tarefas difíceis
 - [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]] — terceira fonte, tensão de enquadramento (ver seção acima)
 - [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] — quarta fonte; desafio "One Punch Man" como caso concreto de progresso via ação consistente operacionalizada em passos mínimos
+- [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — quinta fonte; Hábitos 4 e 6, consistência vs. intensidade e investimento fora do 9-às-5

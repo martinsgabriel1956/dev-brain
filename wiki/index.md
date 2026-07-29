@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-07-28
+date_updated: 2026-07-29
 ---
 
 
@@ -19,6 +19,8 @@ date_updated: 2026-07-28
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] | Zeno Rocha: 14 hábitos de dev produtivo em 5 categorias — JOMO contra FOMO tecnológico, ensinar como forma de aprender, consistência (jogo infinito) > intensidade, código para o "eu futuro", visão de negócio (problema XY), triagem de side project em 6 perguntas, Mario vs. Sonic (tempo de casa), ouvir para entender, 5 razões para subestimar tarefas, especialista vs. generalista, e a dicotomia estoica do controle |
+| [[wiki/sources/full-text-search-mysql-postgresql]] | `LIKE '%termo%'` é a intuição errada de busca — falha em relevância (substring de caracteres, não palavras) e em performance (full table scan); Full-Text Search resolve os dois via índice invertido — `FULLTEXT INDEX`/`MATCH AGAINST` no MySQL, `tsvector`/`tsquery`/`GIN` no PostgreSQL (que ainda entende plural/singular e sinônimos via lexema/tesauro) |
 | [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]] | N+1 em duas camadas — frontend↔backend (via API) e backend↔banco (via ORM lazy loading) — mesmas soluções estruturais (endpoint/query especializada, lista de IDs conhecida, ou JOIN/prefetch); origem do GraphQL na Meta como resposta genérica ao N+1/over-under-fetching entre múltiplos frontends; fecha com relational queries do Drizzle como syntax sugar inspirado no GraphQL |
 | [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] | Por que estudar linguagens e conceitos low level (mesmo sem retorno financeiro imediato) traz satisfação pessoal e benefício de carreira no longo prazo — caso pessoal do bot de Discord de Tibia otimizado com concorrência em Go, e da contribuição não remunerada à API TibiaData |
 | [[wiki/sources/7-habitos-programador-altamente-eficaz]] | Sete hábitos de programador eficaz: buscar solução por conta própria antes de perguntar, escapar da paralisia do planejamento sem cair em over-engineering, ler código alheio, documentar de forma inteligente (testes como documentação viva), pensar primeiro em abstrações/limites (analogia dos órgãos), perder o medo de código, e bloquear a própria agenda para "entortar o tempo" |
@@ -54,6 +56,8 @@ date_updated: 2026-07-28
 | [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]] | Reação a currículos reais de candidatos júnior: repetição da stack-alvo para passar no ATS, ausência de GitHub como motivo de descarte explícito, formatação/legibilidade e discurso de "pensar produto" como diferenciais |
 | [[wiki/sources/8-tipos-de-javascript]] | Os 8 tipos de JS (`null`, `undefined`, `boolean`, `number`, `bigint`, `string`, `symbol`, `object`); `typeof` vs. `Object.prototype.toString.call()`; `==` vs `===`; default de parâmetro (`undefined`) vs. fallback `\|\|` (qualquer falsy) |
 | [[wiki/sources/filosofia-do-design-de-software-introducao]] | Tradução do cap. 1 de *A Philosophy of Software Design*: complexidade como maior limitação real ao escrever software; eliminar vs. encapsular; por que waterfall falha e design incremental funciona; red flags via code review |
+| [[wiki/sources/filosofia-do-design-de-software-livro-completo]] | Livro completo (22 caps.) de *A Philosophy of Software Design*: information hiding, módulos de propósito geral, camadas/pass-through, definir erros para fora da existência, projetar duas vezes, comentários como ferramenta de design, naming, consistência, tático vs. estratégico — com 3 discordâncias explícitas nomeadas contra Clean Code e o guia de estilo do Go |
+| [[wiki/sources/git-rebase-na-pratica]] | Tutorial prático de `git rebase`: reposiciona a base de uma branch de feature na ponta atual da `main`, demonstração ponta a ponta com conflito real (mesmo arquivo alterado nos dois lados) resolvido no editor do VS Code; regra de ouro — rebase só em repositório local, nunca em branch pública/compartilhada |
 | [[wiki/sources/ssh-chaves-como-funcionam]] | Chave SSH é par assimétrico (privada nunca sai da origem, pública vai pro `authorized_keys` do destino) e é unidirecional por par — `sshd_config.d` com `PubkeyAuthentication yes` + senha desativada é o padrão de indústria; `~/.ssh/config` cria aliases com `IdentitiesOnly` |
 | [[wiki/sources/loop-engineering-planner-critic-grafo]] | "Você não faz o prompt, você desenha o sistema que faz o prompt" — Planner gera prompt+rúbrica dinamicamente para subagentes, Verificador (outro modelo) aprova/rejeita, grafo (nós=LLM, arestas=determinístico) é o nível de abstração |
 | [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] | Vídeo opinativo: teste nunca previne bug 100%, só regressão; pirâmide de testes é problema de alocação de recursos; sweet spot é teste de integração validando regra de negócio ponta a ponta |
@@ -287,6 +291,12 @@ date_updated: 2026-07-28
 | [[wiki/concepts/debugar-antes-de-perguntar]] | Buscar solução por conta própria antes de perguntar — quem só pergunta vira um "proxy super conectado", sem gerar raciocínio próprio |
 | [[wiki/concepts/ler-codigo-de-terceiros]] | Ler código de outras pessoas ensina o que dificulta legibilidade e é fonte direta de aprendizado — "projeto funcionando é melhor que documentação" |
 | [[wiki/concepts/medo-de-codigo]] | A sensação de que o código "julga" está inteiramente na cabeça — reformulação: é o código quem precisa de você, não o contrário |
+| [[wiki/concepts/jogo-finito-vs-infinito]] | Carse/Sinek aplicado à carreira: intensidade é jogo finito (vencer um pico), disciplina é jogo infinito (continuar jogando) — programação é jogo infinito mesmo quando age como finito |
+| [[wiki/concepts/codigo-para-o-futuro-eu]] | Código é escrito para o "eu atual" com todo contexto na cabeça, mas deveria ser escrito para o "eu futuro" que não vai lembrar de nada |
+| [[wiki/concepts/estimativas-de-software]] | 5 razões comportamentais para subestimar tarefas (impressionar, esquecer que não é só código, falta de foco, achar todos iguais, pressão) — não é falta de técnica |
+| [[wiki/concepts/visao-de-negocio-do-desenvolvedor]] | O "problema XY": perguntar como implementar X quando o problema real era Y — visão de negócio economiza tempo, evita complexidade e prioriza melhor |
+| [[wiki/concepts/permanencia-vs-troca-de-emprego]] | Mario (troca a cada 6 meses, evita desconforto) vs. Sonic (busca desafio, aprofunda) — impacto de carreira de longo prazo exige tempo investido no mesmo lugar |
+| [[wiki/concepts/controle-do-que-e-controlavel]] | Dicotomia estoica aplicada à carreira: pare de gastar energia em variáveis incontroláveis (economia, opinião alheia), foque nas controláveis (hábitos, tempo, dinheiro) |
 
 ### Recursos de Aprendizado
 
@@ -780,6 +790,9 @@ date_updated: 2026-07-28
 | [[wiki/concepts/sql-server]] | Escolha operacional (não técnica) quando a empresa já vive no ecossistema Windows/.NET/Power BI |
 | [[wiki/concepts/sqlite]] | Biblioteca embarcada, arquivo único, lock global de escrita — não substituto de banco cliente-servidor |
 | [[wiki/concepts/mongodb]] | Documento BSON sem esquema fixo; sem JOIN nativo; complementa o relacional, não substitui |
+| [[wiki/concepts/full-text-search]] | Índice invertido dedicado (`FULLTEXT`/`MATCH AGAINST` no MySQL, `tsvector`/`GIN` no Postgres) — resolve relevância e performance onde `LIKE '%termo%'` falha nos dois eixos |
+| [[wiki/concepts/indice-invertido]] | Palavra → lista de IDs onde ela ocorre; estrutura por baixo de todo Full-Text Search, de `FULLTEXT INDEX` a Lucene |
+| [[wiki/concepts/like-wildcard]] | `LIKE '%termo%'` — antipattern de busca: substring de caracteres em vez de palavra, e full table scan em vez de índice |
 
 ### Arquitetura Backend & Event-Driven
 
@@ -821,13 +834,19 @@ date_updated: 2026-07-28
 | [[wiki/concepts/definicao-de-pronto]] | Código que só funciona não está pronto — legível + testado + documentado + revisado por regra de negócio |
 | [[wiki/concepts/testar-proprio-codigo]] | Testar só o caminho feliz é concordar com a própria opinião — testes automatizados cobrem erro e happy path |
 | [[wiki/concepts/atomic-commits]] | Commit atômico = alteração + teste que a valida juntos — unidade funcional, não diário de mudanças |
+| [[wiki/concepts/rebase-vs-merge]] | Rebase reescreve SHAs para um histórico linear (ótimo para bisect/blame, perigoso em branch compartilhada); merge preserva o histórico real com um commit de dois pais — regra prática: rebase local antes do PR, merge para integrar |
 | [[wiki/concepts/checklist-primeiro-dia-projeto]] | Seis etapas do dia 1 de uma codebase nova — deploy, ORM/migrations e testes resolvidos antes de qualquer feature, quando o custo de errar ainda é baixo |
 | [[wiki/concepts/escolha-de-stack]] | Aprender vs. monetizar como eixo central da escolha de stack; framework batteries-included acelera SaaS solo |
 | [[wiki/concepts/triade-retorno-risco-liquidez]] | Retorno, risco e liquidez nunca são bons ao mesmo tempo — modelo de investimentos generalizado para qualquer decisão da vida |
 | [[wiki/concepts/avaliar-hype-tecnologico]] | Adotar tecnologia hype é risco alto + liquidez baixa; só compensa se o retorno for proporcionalmente alto — caso Node.js no Pagar.me vs. C# na Stone |
 | [[wiki/concepts/modulo-profundo]] | Deep module (Ousterhout): poucos módulos grandes com interface simples escondendo complexidade — o oposto de muitos módulos rasos que a IA produz por padrão |
 | [[wiki/concepts/modelo-cascata-vs-desenvolvimento-incremental]] | Waterfall falha para software porque é impossível visualizar o design inteiro antes de construir — design incremental corrige o design cedo, enquanto o sistema ainda é pequeno |
-| [[wiki/concepts/red-flags-de-design]] | Sinal de que um trecho de código é mais complicado do que precisa — melhor exercitado no código de outra pessoa via code review, não no próprio |
+| [[wiki/concepts/red-flags-de-design]] | Sinal de que um trecho de código é mais complicado do que precisa — melhor exercitado no código de outra pessoa via code review, não no próprio; catálogo completo dos 14 red flags do livro |
+| [[wiki/concepts/ocultamento-de-informacao]] | Information hiding (Parnas): esconder decisões de design dentro de um módulo; vazamento via decomposição temporal é a causa mais comum quando o código segue a ordem de execução em vez do conhecimento necessário |
+| [[wiki/concepts/definir-erros-para-fora-da-existencia]] | Redesenhar a semântica de uma operação para que a condição de erro deixe de existir — Tcl `unset`, deleção de arquivo Unix vs. Windows, `substring` do Java; +mascarar, agregar, travar |
+| [[wiki/concepts/comentarios-como-ferramenta-de-design]] | Escrever o comentário de interface antes do código expõe cedo se a abstração é boa; discordância explícita de Ousterhout com Clean Code ("comments are always failures") |
+| [[wiki/concepts/projetar-duas-vezes]] | Comparar ao menos duas alternativas radicalmente diferentes antes de escolher — mesmo quando a primeira parece óbvia; hábito difícil para quem sempre acertou de primeira |
+| [[wiki/concepts/decidir-o-que-importa]] | Separar o que importa do que não importa e estruturar o sistema em torno disso — alavancagem, prominência, repetição, centralidade; "bom gosto" como habilidade central de design |
 | [[wiki/concepts/lentes-de-codigo]] | Acoplamento, abstração e estado não são termos para decorar — são lentes que revelam se o código é bom ou só funciona; central para avaliar código gerado por IA |
 | [[wiki/concepts/acoplamento]] | Grau de dependência entre partes — quanto uma mudança em A força mudança em B; god function vs. funções separadas por responsabilidade |
 | [[wiki/concepts/abstracao]] | Esconder o que não precisa ser visto atrás de um contrato — troca de implementação (banco → API) sem tocar no código consumidor |

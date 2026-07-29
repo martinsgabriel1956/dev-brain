@@ -3,8 +3,8 @@ type: concept
 title: "Atomic Commits"
 aliases: ["commit atômico", "commits pequenos", "PR pequeno", "unidade funcional de commit"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 2
+date_updated: 2026-07-29
+source_count: 3
 tags: [git, commits, hábitos, craftsmanship, code-review, qualidade]
 skill: tech-mentor-leadership
 status: stable
@@ -59,12 +59,18 @@ Se alguém fizer `git bisect` e cair no seu commit, o código deve fazer sentido
 
 Não existe número mágico de linhas, mas o princípio é: **um PR deve ser revisável em uma sessão de foco**. Se você não consegue revisar em 20-30 minutos, está grande demais.
 
+## Rebase interativo como ferramenta prática
+
+[[wiki/concepts/rebase-vs-merge]] documenta o comando que efetivamente produz commits atômicos a partir de um histórico bagunçado: `git rebase -i` com `squash`/`fixup`/`reword` local, antes de abrir o PR — sem afetar branches compartilhadas, já que ainda é reescrita de histórico local.
+
 ## Ver também
 
 - [[definicao-de-pronto]] — commit atômico é parte da definição de pronto
 - [[testar-proprio-codigo]] — teste vai junto no mesmo commit
+- [[wiki/concepts/rebase-vs-merge]] — mecânica de rebase e squash usada para chegar a commits atômicos
 
 ## Key Sources
 
 - [[wiki/sources/habitos-ruins-de-programador]]
 - [[wiki/sources/4-habitos-programador-ineficiente]]
+- [[wiki/sources/git-rebase-na-pratica]] — demonstração prática de rebase e histórico linear

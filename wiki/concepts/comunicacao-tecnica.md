@@ -3,8 +3,8 @@ type: concept
 title: "Comunicação Técnica"
 aliases: ["comunicação", "comunicação efetiva", "tradução técnica", "emissor receptor"]
 date_created: 2026-04-23
-date_updated: 2026-07-21
-source_count: 4
+date_updated: 2026-07-29
+source_count: 5
 tags: [carreira, comunicação, liderança, soft-skills]
 skill: tech-mentor-leadership
 status: stable
@@ -50,6 +50,10 @@ A combinação das três características (profundidade + abrangência + comunic
 
 O princípio "tradução é responsabilidade de quem emite" tem uma aplicação prática do lado de quem **recebe** uma tarefa: [[wiki/concepts/loop-de-confirmacao-de-entendimento]] descreve a técnica de ouvir a explicação completa sem interromper e depois dizer de volta "o que eu entendi foi X" — deixando quem passou a tarefa corrigir só depois de ouvir o entendimento inteiro. Isso transfere parte do ônus da tradução de volta para quem recebe, sem contradizer o princípio: você ainda está verificando ativamente se a comunicação foi recebida, em vez de assumir passivamente que entendeu.
 
+## Ouvir para Entender, Não para Responder
+
+[[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] (Hábito 10, "Ouvir ativamente") nomeia um equívoco comum: acreditar que se deve **ouvir para responder**, quando na verdade o objetivo é **ouvir para entender**. "Qualquer um consegue responder, poucos conseguem entender." A fonte aplica isso especificamente a conflitos de hierarquia assimétrica no trabalho — é fácil, tendo mais autoridade numa conversa difícil, mostrar impaciência e querer demonstrar poder; e é fácil, tendo menos autoridade, parar de prestar atenção ou colocar a culpa no outro lado. A recomendação prática: em reuniões, praticar deliberadamente ser o último a falar, deixando todos os outros compartilharem suas ideias primeiro — isso dá a sensação de serem ouvidos e garante que você ouviu todas as ideias antes de formar a sua opinião. Isso reforça, de um ângulo diferente, o mesmo princípio central desta página: comunicação efetiva não é sobre transmitir bem — é sobre garantir que a mensagem foi recebida (aqui, na direção inversa: garantir que você recebeu a mensagem do outro antes de emitir a sua).
+
 ## Ver também
 
 - [[concepts/abrangencia-profissional]] — pré-requisito para comunicação cross-domain
@@ -64,3 +68,4 @@ O princípio "tradução é responsabilidade de quem emite" tem uma aplicação 
 - [[wiki/sources/3-soft-skills-que-poucos-programadores-dominam]] — vender refatoração/decisão técnica em termos de negócio (urgência/ganância), não em jargão
 - [[wiki/sources/papinho-tech-solo-adaptabilidade]] — comunicação muda por nível hierárquico e por formato/canal, sem mudar a essência de quem comunica
 - [[wiki/sources/3-pilares-testes-automatizados-produtividade]] — técnica de repetir de volta o entendimento da tarefa antes de implementar, para evitar retrabalho
+- [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — Hábito 10, "ouvir para entender vs. ouvir para responder" em conversas de hierarquia assimétrica

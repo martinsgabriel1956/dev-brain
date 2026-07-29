@@ -3,8 +3,8 @@ type: entity
 title: "Mercado Livre"
 aliases: ["MELI", "Mercado Pago", "Mercado Livre/Mercado Pago"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-07-29
+source_count: 3
 tags: [mercado-livre, mercado-pago, fintech, e-commerce, iso-27001, pci-dss, zero-trust, golang]
 skill: tech-mentor-security
 status: draft
@@ -35,3 +35,4 @@ Maior plataforma de e-commerce e pagamentos da América Latina (via Mercado Pago
 
 - [[wiki/sources/iso-27001-dicionario-programador]] — postura de segurança: ISO 27001 + PCI-DSS + Zero Trust
 - [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]] — adoção consolidada de Go em produção
+- [[wiki/sources/full-text-search-mysql-postgresql]] — usado como exemplo de motor de busca com relevância bem ranqueada em produção, contrastando com o resultado de uma busca `LIKE` sem Full-Text Search

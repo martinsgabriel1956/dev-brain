@@ -3,8 +3,8 @@ type: concept
 title: "Tech Debt como Ferramenta"
 aliases: ["tech debt deliberado", "dívida técnica estratégica", "ship with debt"]
 date_created: 2026-04-26
-date_updated: 2026-07-28
-source_count: 10
+date_updated: 2026-07-29
+source_count: 11
 tags: [tech-debt, carreira, craftsmanship, estrategia, velocidade, under-engineering, alocacao-de-tempo, medicao]
 skill: tech-mentor-leadership
 status: draft
@@ -98,6 +98,18 @@ Todo o raciocínio acima trata tech debt como decisão que o próprio time/dev t
 
 [[wiki/entities/knight-capital]] é citado como o exemplo extremo de para onde leva não seguir a Boy Scout Rule: código morto não removido, reativado por engano num deploy, gerando perda estimada em centenas de milhões de dólares em cerca de 45 minutos (2012). Ilustra que "delete código morto" não é só estética — é prevenção de incidente.
 
+## Programação Tática vs. Estratégica (Ousterhout) — mesma ideia, vocabulário independente
+
+[[wiki/sources/filosofia-do-design-de-software-livro-completo]] (Cap. 3) chega à mesma distinção central do Quadrante de Fowler por um caminho totalmente independente, sem citar Fowler: **programação tática** é o mindset de "fazer funcionar o mais rápido possível", aceitando pequenas complexidades porque cada uma parece um compromisso razoável isoladamente — até que, somadas, tornam o sistema difícil de mudar. **Programação estratégica** trata "código funcionando" como necessário mas não suficiente; o objetivo real é a estrutura de longo prazo, o que exige investir tempo (a régua do autor: **10–20% do tempo total de desenvolvimento**) tanto proativamente (explorar 2-3 designs antes de escolher — ver [[wiki/concepts/projetar-duas-vezes]]) quanto reativamente (corrigir problemas de design assim que ficam visíveis, não só remendar).
+
+O autor nomeia o extremo da tática como **"tactical tornado"**: o programador que entrega recursos muito mais rápido que os colegas, é tratado como herói pela gestão, mas deixa um rastro de complexidade que outros engenheiros (os heróis reais, segundo o autor) precisam limpar depois — o que paradoxalmente faz esses últimos parecerem mais lentos.
+
+**Exemplo real citado — Facebook:** o motto "Move fast and break things" é descrito como cultura tática institucionalizada; o código resultante ficou instável, mal comentado e difícil de mexer, até a empresa trocar o motto para "Move fast with solid infrastructure". Em contraste, Google e VMware são citados como exemplos de sucesso com cultura estratégica desde o início — ambos com reputação forte o bastante para competir por talento técnico de ponta.
+
+**Estimativa de payback (opinião do autor, sem dado controlado):** a curva tática entrega mais rápido nos primeiros meses, mas cruza a curva estratégica em algum ponto entre **6 e 18 meses** — depois disso, a base tática é permanentemente mais lenta. O próprio autor marca essa cifra como opinião pessoal, não medição.
+
+Ver também: o mesmo capítulo cunha explicitamente o termo **"technical debt"**, com a ressalva de que, ao contrário de dívida financeira, a dívida técnica raramente é paga por completo — "you'll keep paying and paying forever" se a decisão foi tática pura (equivalente ao quadrante Imprudente de Fowler), não uma troca consciente.
+
 ## Relacionado
 
 [[concepts/observabilidade]] · [[sources/conceitos-que-ninguem-ensina]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/avaliar-hype-tecnologico]] · [[wiki/concepts/divida-cognitiva]] · [[wiki/concepts/debt-ratio-sqale]] · [[wiki/concepts/hotspot-analysis]] · [[wiki/concepts/paid-framework]] · [[wiki/concepts/refactor-vs-rewrite-matrix]]
@@ -113,3 +125,4 @@ Todo o raciocínio acima trata tech debt como decisão que o próprio time/dev t
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — "o mais rápido é relativo" como formulação prática do débito Imprudente+Inadvertido aplicado a sintomas de under-engineering
 - [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] — modelos de alocação de tempo (20%/25% Shopify/sprint dedicado), mensuração formal (debt ratio/SQALE, hotspot analysis, PAID), matriz refatorar-vs-reescrever e caso Knight Capital
 - [[wiki/sources/7-habitos-programador-altamente-eficaz]] — caso de débito imposto por decisão de gestão (fluxo complexo vencendo fluxo simples), fora do modelo usual de decisão consciente do próprio time
+- [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — distinção tática/estratégica (Ousterhout, Cap. 3), independente do Quadrante de Fowler; "tactical tornado"; regra dos 10-20% de investimento; caso Facebook "move fast and break things"

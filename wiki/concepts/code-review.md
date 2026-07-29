@@ -3,8 +3,8 @@ type: concept
 title: "Code Review"
 aliases: ["revisão de código", "pull request review", "PR review"]
 date_created: 2026-07-03
-date_updated: 2026-07-28
-source_count: 8
+date_updated: 2026-07-29
+source_count: 10
 tags: [code-review, qualidade, carreira, júnior, mentoria, grill-me, babysitting-de-agentes, quality-gate, under-engineering]
 skill: tech-mentor-leadership
 status: draft
@@ -32,6 +32,7 @@ Quem revisa também costuma ter pouco tempo e pouca prática em dar feedback com
 - Confirmar com o PO/time que não há outra prioridade na fila.
 - Testar em [[wiki/concepts/paridade-local-producao|ambiente externo]] (dev/homologação), não só localmente.
 - Revisar o próprio código (com IA ou colega mais experiente) pedindo explicação do "porquê" de cada sugestão — ver [[wiki/concepts/dependencia-ia]] para o risco de fazer isso sem entender.
+- Limpar o próprio histórico com [[wiki/concepts/rebase-vs-merge|rebase local]] antes de abrir o PR — commits atômicos e mensagens claras reduzem o esforço de quem revisa; merge fica reservado para a integração final na branch compartilhada.
 
 ## Depois de receber comentários
 
@@ -43,7 +44,7 @@ O trabalho não termina no merge: validar manualmente em produção após o depl
 
 ## Code review como método de treino de design, não só de correção
 
-[[wiki/sources/filosofia-do-design-de-software-introducao]] (John Ousterhout) argumenta que code review é o veículo prático recomendado para aplicar princípios de design abstratos: é mais fácil ver problemas de design no código de outra pessoa do que no próprio. A ferramenta concreta são os [[wiki/concepts/red-flags-de-design|red flags de design]] — sinais de que um trecho está mais complicado do que precisa. Isso é um ângulo diferente do já documentado nesta página (que foca em regra de negócio e comunicação): aqui code review é também prática deliberada de reconhecimento de complexidade desnecessária, que compõe ao longo do tempo com a experiência de quem revisa.
+[[wiki/sources/filosofia-do-design-de-software-introducao]] (John Ousterhout) argumenta que code review é o veículo prático recomendado para aplicar princípios de design abstratos: é mais fácil ver problemas de design no código de outra pessoa do que no próprio. A ferramenta concreta são os [[wiki/concepts/red-flags-de-design|red flags de design]] — sinais de que um trecho está mais complicado do que precisa. Isso é um ângulo diferente do já documentado nesta página (que foca em regra de negócio e comunicação): aqui code review é também prática deliberada de reconhecimento de complexidade desnecessária, que compõe ao longo do tempo com a experiência de quem revisa. O livro completo, ingerido em [[wiki/sources/filosofia-do-design-de-software-livro-completo]], fecha o catálogo com 14 red flags nomeados (ver tabela em [[wiki/concepts/red-flags-de-design]]) — checklist prático concreto para usar durante revisão, além da regra "regra de negócio primeiro" já documentada nesta página.
 
 ## Code review como antídoto a dívida cognitiva em times com IA
 
@@ -76,6 +77,7 @@ O critério "regra de negócio primeiro" e a exigência de pull request/versiona
 - [[wiki/concepts/sindrome-do-impostor]] — reação emocional comum a comentários de review
 - [[wiki/concepts/red-flags-de-design]] — heurística concreta para o que procurar durante a revisão
 - [[wiki/concepts/divida-cognitiva]] — code review como checkpoint contra fragmentação de entendimento compartilhado em times com IA
+- [[wiki/concepts/rebase-vs-merge]] — rebase local antes do PR, merge para integrar
 
 ## Key Sources
 
@@ -87,3 +89,5 @@ O critério "regra de negócio primeiro" e a exigência de pull request/versiona
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — tipos genéricos (`any`) e primitivos soltos em vez de enum como itens recorrentes de review, ligados a under-engineering
 - [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — arquivo dedicado `review` separado do CLAUDE.md; `/code-review --ultra` para revisões complexas
 - [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]] — migrations de banco tratadas com o mesmo processo de PR/review que código de aplicação
+- [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — catálogo completo dos 14 red flags do livro, checklist prático para revisão
+- [[wiki/sources/git-rebase-na-pratica]] — mecânica de rebase local usada para chegar a um histórico limpo antes do PR

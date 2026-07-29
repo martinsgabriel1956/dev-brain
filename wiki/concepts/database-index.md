@@ -3,8 +3,8 @@ type: concept
 title: "Database Index"
 aliases: ["índice de banco de dados", "índice composto", "índice parcial"]
 date_created: 2026-04-22
-date_updated: 2026-07-03
-source_count: 5
+date_updated: 2026-07-29
+source_count: 6
 tags: [banco-de-dados, performance, postgresql, index, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -57,6 +57,10 @@ Uma vantagem prática de escrever SQL diretamente em vez de depender de um ORM: 
 
 [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] resume a diferença de forma direta: "o operador de CRUD usa o índice, o engenheiro sabe por que ele existe" — citado como exemplo do tipo de conhecimento que fica invisível atrás de um ORM ou ferramenta que "só funciona".
 
+## GIN — Índice Invertido para Texto e Dados Semi-Estruturados
+
+Nem todo índice é B-tree. `GIN` (Generalized Inverted Index) é o tipo de índice que o PostgreSQL usa para estruturar um [[wiki/concepts/indice-invertido|índice invertido]] — necessário para [[wiki/concepts/full-text-search|Full-Text Search]] (`GIN` sobre `to_tsvector(...)`) e também usado para `JSONB`/arrays. Sem esse índice, uma query com `to_tsvector(...) @@ to_tsquery(...)` recalcula o vetor de busca em tempo de execução a cada chamada — no exemplo registrado em [[wiki/sources/full-text-search-mysql-postgresql]], isso rodou **mais lento que o próprio `LIKE`** (139ms vs. 4,9ms) até o índice `GIN` ser criado, caindo então para ~0,3–0,8ms. O equivalente no MySQL é o `FULLTEXT INDEX`, consultado via `MATCH ... AGAINST`.
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
@@ -64,3 +68,4 @@ Uma vantagem prática de escrever SQL diretamente em vez de depender de um ORM: 
 - [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] — índice hash como mecanismo de garantia de unicidade (e-mail único)
 - [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — "operador usa o índice, engenheiro sabe por que ele existe"
+- [[wiki/sources/full-text-search-mysql-postgresql]] — GIN como índice invertido para Full-Text Search; custo de rodar sem índice vs. com índice

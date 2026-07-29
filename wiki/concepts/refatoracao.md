@@ -3,8 +3,8 @@ type: concept
 title: "Refatoração"
 aliases: ["refactoring", "refatorar"]
 date_created: 2026-07-15
-date_updated: 2026-07-27
-source_count: 2
+date_updated: 2026-07-29
+source_count: 3
 tags: [refactoring, clean-code, craftsmanship, design-de-software, tech-debt]
 skill: tech-mentor-backend
 status: draft
@@ -80,11 +80,21 @@ A mesma fonte lista seis gatilhos concretos do *Pragmatic Programmer* para decid
 
 Refatoração idealmente não é um "projeto" à parte que precisa de aprovação — é incorporada no tempo normal de desenvolvimento de uma feature, do mesmo jeito que se reserva tempo para escrever testes. Com gestão pouco técnica, a recomendação prática é simplesmente não pedir permissão para esse tempo embutido. Com gestão técnica, vale abrir a discussão sobre quando uma refatoração deixa de ser oportunista e deve virar item priorizado de débito técnico.
 
+## "Ficar estratégico" ao modificar código existente (Ousterhout)
+
+[[wiki/sources/filosofia-do-design-de-software-livro-completo]] (Cap. 16) discute manutenção contínua sob a mesma régua tática/estratégica do Cap. 3 (ver [[wiki/concepts/tech-debt-como-ferramenta]]): ao corrigir bug ou adicionar feature em código existente, o objetivo estratégico não é "a menor mudança possível que funcione" — é deixar o sistema com a estrutura que teria se tivesse sido projetado desde o início considerando aquela mudança. Regras práticas complementares para manter a refatoração e a documentação sustentáveis ao longo do tempo:
+
+- **Comentários perto do código, não em arquivo de cabeçalho distante** — a chance de um comentário ser atualizado cai com a distância até o código que ele descreve.
+- **Documentação no código, não na mensagem de commit** — um desenvolvedor futuro raramente vai vasculhar o log do git para entender uma decisão; se a informação importa depois, ela precisa estar no código.
+- **Evitar duplicação de documentação** — se não há um lugar óbvio único para uma decisão cross-module, o autor recomenda um arquivo central `designNotes` com referências curtas a partir de cada ponto do código afetado (exemplo real: o tratamento de "zombie servers" no sistema RAMCloud).
+- **Revisar o diff antes de commitar** — checagem manual de que cada mudança de código tem a documentação correspondente atualizada.
+
 ## Relacionado
 
-[[wiki/concepts/dois-chapeus-kent-beck]] · [[wiki/concepts/tech-debt-como-ferramenta]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/piramide-de-testes]] · [[wiki/concepts/god-object]] · [[wiki/concepts/entropia-de-software]] · [[wiki/concepts/essential-complexity]] · [[wiki/concepts/accidental-complexity]] · [[wiki/entities/martin-fowler]] · [[wiki/entities/kent-beck]]
+[[wiki/concepts/dois-chapeus-kent-beck]] · [[wiki/concepts/tech-debt-como-ferramenta]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/piramide-de-testes]] · [[wiki/concepts/god-object]] · [[wiki/concepts/entropia-de-software]] · [[wiki/concepts/essential-complexity]] · [[wiki/concepts/accidental-complexity]] · [[wiki/entities/martin-fowler]] · [[wiki/entities/kent-beck]] · [[wiki/concepts/comentarios-como-ferramenta-de-design]]
 
 ## Key Sources
 
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]]
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]]
+- [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — "ficar estratégico" ao modificar código existente; regras de manutenção de comentários (Cap. 16)

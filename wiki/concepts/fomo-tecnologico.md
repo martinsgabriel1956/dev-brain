@@ -3,9 +3,9 @@ type: concept
 title: "FOMO Tecnológico"
 aliases: ["fomo", "fear of missing out", "ansiedade de adoção"]
 date_created: 2026-05-18
-date_updated: 2026-05-31
-source_count: 2
-tags: [comportamento, produtividade, agentes-ia, burnout, hype-de-ia]
+date_updated: 2026-07-29
+source_count: 3
+tags: [comportamento, produtividade, agentes-ia, burnout, hype-de-ia, carreira]
 skill: tech-mentor-ai
 status: stable
 ---
@@ -17,6 +17,15 @@ Adaptação do *Fear of Missing Out* (FOMO) para o contexto tecnológico: a sens
 No contexto de IA generativa e agentes, o FOMO tecnológico é amplificado pelo ritmo acelerado de releases e pela percepção de que cada novo modelo representa uma capacidade que alguém pode estar explorando antes de você.
 
 ---
+
+## Origem Pré-IA: Sinal vs. Ruído e JOMO
+
+O fenômeno não é exclusivo da era de IA generativa. [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] (Hábito 1, "Procure os sinais", 2020) descreve o mesmo mecanismo aplicado à escolha de sistema operacional, linguagem de programação e framework — anos antes do ciclo de releases de LLMs. A fonte propõe duas ideias complementares:
+
+- **Sinal vs. ruído**: como uma estação de rádio sendo sintonizada em meio a ruído estático, o "sinal" é a informação que de fato importa para você agora; o "ruído" é toda a variação aleatória (tweets, novos frameworks, novidades) que compete por atenção sem necessariamente ser relevante. O ruído nunca desaparece — a autoconsciência para diferenciá-lo do sinal é a habilidade central, não a fuga total das redes/conteúdo.
+- **JOMO** (*the joy of missing out*, "a alegria de estar perdendo algo"): antídoto proposto ao FOMO — contentar-se com o que já se sabe, sem parar de aprender, buscando equilíbrio entre praticar habilidades existentes e absorver novidades. Resumido na fonte como: "desejos são infinitos, necessidades são limitadas".
+
+Isso sugere que o FOMO tecnológico documentado nas fontes de IA generativa é uma instância mais recente e mais intensa (por ritmo de releases e incentivo financeiro, ver seção abaixo) de um padrão comportamental que já existia na escolha de qualquer tecnologia.
 
 ## Paradoxo dos Modelos Melhores
 
@@ -51,3 +60,4 @@ Isso não torna o FOMO falso — torna o ecossistema de informação sobre IA di
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
+- [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — origem pré-IA do padrão, com o conceito complementar de JOMO

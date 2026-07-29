@@ -3,8 +3,8 @@ type: entity
 title: "Renato Augusto"
 aliases: ["Renato Augusto"]
 date_created: 2026-06-05
-date_updated: 2026-07-27
-source_count: 6
+date_updated: 2026-07-29
+source_count: 7
 tags: [design-patterns, oop, arquitetura, criador-de-conteudo, youtube, carreira, soft-skills, system-design, pos-graduacao]
 skill: tech-mentor-backend
 status: stub
@@ -22,3 +22,4 @@ Desenvolvedor e criador de conteúdo brasileiro. Publica vídeos sobre padrões 
 - [[wiki/sources/design-pattern-adapter]] — Adapter Pattern com exemplo de troca de biblioteca de PDF (DomPDF → TCPDF), acoplamento, SRP e testabilidade
 - [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]] — se vale a pena fazer pós-graduação em arquitetura de software; primeira menção explícita do "Mapa do Arquiteto" como produto próprio dentro de uma fonte
 - [[wiki/sources/design-pattern-facade-renato-augusto]] — Facade Pattern com exemplo de OrderController/OrderFacade num e-commerce; defende que a Facade não fere o SRP por operar num nível de abstração diferente das classes de serviço que orquestra
+- [[wiki/sources/full-text-search-mysql-postgresql]] — Full-Text Search em MySQL e PostgreSQL, demonstração prática de `LIKE` vs. índice invertido com DBeaver

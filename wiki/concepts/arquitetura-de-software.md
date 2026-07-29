@@ -3,8 +3,8 @@ type: concept
 title: "Arquitetura de Software"
 aliases: ["software architecture", "decisao arquitetural"]
 date_created: 2026-07-03
-date_updated: 2026-07-27
-source_count: 9
+date_updated: 2026-07-29
+source_count: 10
 tags: [arquitetura, carreira, fundamentos, ia, pos-graduacao]
 skill: tech-mentor-leadership
 status: draft
@@ -40,7 +40,11 @@ Perguntar para uma IA "que arquitetura eu uso?" com um prompt enxuto não substi
 - *Designing Data-Intensive Applications* (Martin Kleppmann) — sistemas distribuídos, o livro que "separa júnior de sênior" nesse tema
 - *Domain-Driven Design* (Eric Evans) e *A Philosophy of Software Design* (John Ousterhout) — tradução de domínio de negócio em modelo de código, ver [[wiki/concepts/entendimento-de-dominio]]
 
-Nenhum desses livros foi lido/ingerido diretamente ainda no wiki — são citações de segunda mão a partir da fonte abaixo. **Atualização:** *A Philosophy of Software Design* passou a ter citação de primeira mão em [[wiki/sources/filosofia-do-design-de-software-introducao]] (capítulo 1, traduzido diretamente do livro) — ver [[wiki/entities/john-ousterhout]] e [[wiki/concepts/modulo-profundo]].
+Nenhum desses livros foi lido/ingerido diretamente ainda no wiki — são citações de segunda mão a partir da fonte abaixo. **Atualização (2026-07-29):** *A Philosophy of Software Design* foi ingerido por completo (22 capítulos) em [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — ver [[wiki/entities/john-ousterhout]] e [[wiki/concepts/modulo-profundo]].
+
+## Camadas Adjacentes Devem Ter Abstrações Diferentes
+
+[[wiki/sources/filosofia-do-design-de-software-livro-completo]] (Cap. 7) formula um princípio de arquitetura em camadas aplicável tanto a nível de classe quanto de sistema: se duas camadas adjacentes têm abstrações parecidas, isso é um red flag — sinal de que a divisão de responsabilidade entre elas não está clara. Manifesta-se como métodos pass-through (uma camada só repassa chamadas para a de baixo, sem agregar valor), decorators superusados (wrapper que introduz boilerplate por pouca funcionalidade nova), ou variáveis pass-through (um dado atravessa várias camadas que não o usam, só para chegar onde é necessário — a solução recorrente do autor é um objeto de contexto único por instância do sistema). Exemplo citado no nível de sistema: um filesystem tem três camadas com abstrações genuinamente diferentes — arquivo (bytes variáveis) → cache de blocos de tamanho fixo → device driver; um protocolo de transporte como TCP tem stream confiável de bytes → pacotes de tamanho limitado, entrega best-effort.
 
 ## Design de arquitetura como processo contínuo, não fase única
 
@@ -77,3 +81,4 @@ Nenhum desses livros foi lido/ingerido diretamente ainda no wiki — são citaç
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]] — como o repertório de arquitetura é avaliado em entrevista de system design
 - [[wiki/sources/application-boundary-martin-fowler]] — aplicações são construções sociais, não unidades tecnicamente objetivas
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — fluxo detalhado de Clean Architecture numa aplicação web e a distinção objeto vs. estrutura de dados que o sustenta
+- [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — camadas adjacentes devem ter abstrações diferentes (Cap. 7); pass-through methods, decorators e variáveis de contexto

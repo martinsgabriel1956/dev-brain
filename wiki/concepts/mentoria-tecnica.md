@@ -3,8 +3,8 @@ type: concept
 title: "Mentoria Técnica"
 aliases: ["mentoring", "mentorar júniors", "replicar conhecimento"]
 date_created: 2026-04-22
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-07-29
+source_count: 3
 tags: [carreira, mentoria, liderança, júnior, cultura, crescimento]
 skill: tech-mentor-leadership
 status: stable
@@ -37,6 +37,12 @@ Prática de um desenvolvedor sênior **transferir conhecimento e atenção siste
 
 Mentorar força clareza. Se você não consegue explicar uma decisão técnica para um júnior, provavelmente você não entende ela tão bem quanto pensa.
 
+## Ensinar em Público como Extensão da Mentoria
+
+[[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] (Hábito 3, "Ensinar é igual aprender") generaliza o mesmo mecanismo além da relação 1:1 sênior→júnior: palestras, posts de blog, vídeos e transmissões de tela também forçam o mesmo processo de digerir conteúdo para outra pessoa — e é esse processo de digerir/simplificar/estruturar que produz o entendimento real, não a exposição passiva ao conteúdo. [[wiki/entities/zeno-rocha]] cita o próprio pai como origem da ideia ("se você realmente quer aprender algo, precisa ensiná-lo") e descreve um padrão recorrente de 5 atos emocionais em toda palestra que já deu (convite → pânico ao perceber o prazo chegando → arrependimento na semana do evento → ansiedade no palco → alívio e vontade de repetir) — mesmo depois de mais de 100 apresentações, o medo não desaparece, só a disposição de enfrentá-lo se mantém. Ponto central citado por Addy Osmani (Google) na mesma fonte: ensinar obriga a perguntar "eu realmente entendo isso tão bem quanto acho que entendo? Eu poderia explicar isso a um iniciante em um minuto?" — o mesmo teste de clareza já descrito acima para mentoria 1:1, aplicado a qualquer audiência.
+
+Isso sugere que blog pessoal, palestra ou vídeo são formas válidas (e escaláveis) de mentoria técnica quando não há estrutura formal de 1:1 disponível — o benefício para quem ensina é o mesmo.
+
 ## Conexão com contratação
 
 De nada adianta contratar bons júniors e abandoná-los — ver [[contratacao-barra-alta]].
@@ -57,3 +63,4 @@ Falta de tempo, não má vontade, costuma ser a causa de comentários secos ou p
 - [[wiki/sources/desenvolvedor-acima-da-media-10-itens]]
 - [[wiki/sources/habitos-ruins-de-programador]]
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] — comentários secos no review costumam vir de falta de tempo, não de má intenção
+- [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — Hábito 3, ensinar em público (palestra/blog/vídeo) como forma escalável do mesmo mecanismo

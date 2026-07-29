@@ -37,7 +37,7 @@ Elasticsearch/OpenSearch: motor de busca distribuído baseado em Lucene. BM25 co
 - [[entities/elasticsearch]]
 - [[entities/opensearch]]
 - [[concepts/bm25]]
-- [[concepts/full-text-search]]
+- [[wiki/concepts/full-text-search]]
 - [[concepts/faceted-search]]
 - [[concepts/cdc]]
 - [[entities/lucene]]
@@ -46,3 +46,7 @@ Elasticsearch/OpenSearch: motor de busca distribuído baseado em Lucene. BM25 co
 
 - OpenSearch vs Elasticsearch — diferenças técnicas relevantes em 2026 após anos de fork independente?
 - Elasticsearch com kNN (vector search) para hybrid search — como balancear relevância BM25 + similaridade semântica?
+
+## Ver também
+
+- [[wiki/sources/full-text-search-mysql-postgresql]] — o degrau anterior: Full-Text Search nativo em MySQL (`FULLTEXT`/`MATCH AGAINST`) e PostgreSQL (`tsvector`/`GIN`), com o mesmo mecanismo de índice invertido descrito aqui de forma mais elementar; a claim "PostgreSQL FTS: sem facets nativas" registrada acima é consistente com o que essa fonte demonstra (stemming e sinônimo via tesauro, mas nenhuma agregação/facet)

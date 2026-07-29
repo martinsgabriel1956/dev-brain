@@ -3,8 +3,8 @@ type: concept
 title: "Abrangência Profissional"
 aliases: ["abrangência", "T-shaped", "generalista", "interessado vs interessante", "breadth"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
-source_count: 1
+date_updated: 2026-07-29
+source_count: 2
 tags: [carreira, contratação, liderança, comunicação, aprendizado]
 skill: tech-mentor-leadership
 status: stable
@@ -41,6 +41,18 @@ Um programador com contato com arte consegue se comunicar melhor com designers. 
 
 Pessoa que chega numa conversa já sabendo o que precisa ser feito, sem ouvir o problema, **expulsa as pessoas boas** ao redor — que percebem que sua contribuição não é bem-vinda.
 
+## Especialista vs. Generalista: prós e contras (Hábito 12)
+
+[[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] (Hábito 12, "Especialista vs. Generalista") propõe o dilema clássico como uma autoanálise, não uma escolha permanente:
+
+| | Especialista | Generalista |
+|---|---|---|
+| Prós | Salário alto num campo específico; reconhecido como autoridade; só precisa acompanhar uma plataforma/linguagem | Aprende tecnologias novas rápido; mais oportunidades em setores variados; transição de emprego mais fácil |
+| Contras | Difícil achar vaga se a especialização for muito nichada; risco de obsolescência tecnológica; conhecimento às vezes preso à empresa | Difícil se manter atualizado em várias frentes; mais lento em problemas complexos e específicos; mais difícil alcançar cargo de liderança técnica profunda |
+| Onde prospera | Cargos sênior em empresas grandes; pesquisa acadêmica; freelance de nicho | Startups/estágio inicial; consultoria; empreender o próprio negócio |
+
+A fonte nota que **líderes tendem a ser generalistas** (cita Elon Musk como exemplo de quem construiu empresas em quatro áreas distintas), mas ressalva que isso não invalida a especialização prévia — o generalista de sucesso normalmente já foi especialista em algo primeiro, e depois aprendeu a adaptar esse conhecimento amplamente. A recomendação prática de Daniel Buchner (Microsoft) na mesma fonte: em vez de escolher um lado de forma permanente, "aprenda a aprender" de um jeito que permita se aprofundar rápido em qualquer assunto até ficar funcionalmente capaz — isso preserva as vantagens dos dois perfis ao mesmo tempo.
+
 ## Ver também
 
 - [[concepts/profundidade-e-maestria]] — o par necessário: profundidade sem abrangência trava
@@ -51,3 +63,4 @@ Pessoa que chega numa conversa já sabendo o que precisa ser feito, sem ouvir o 
 ## Key Sources
 
 - [[sources/tres-caracteristicas-melhor-candidato]]
+- [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — Hábito 12, prós/contras de especialista vs. generalista

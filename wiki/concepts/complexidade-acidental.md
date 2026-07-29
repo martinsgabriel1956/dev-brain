@@ -3,8 +3,8 @@ type: concept
 title: "Complexidade Acidental"
 aliases: ["accidental complexity", "essential complexity"]
 date_created: 2026-05-31
-date_updated: 2026-07-09
-source_count: 4
+date_updated: 2026-07-29
+source_count: 5
 tags: [complexidade-acidental, programacao-funcional, out-of-the-tar-pit, arquitetura]
 skill: tech-mentor-backend
 status: stable
@@ -55,9 +55,14 @@ Distinção do paper *"Out of the Tar Pit"* (Moseley & Marks): **complexidade es
 
 [[wiki/entities/john-ousterhout]] (*A Philosophy of Software Design*) formula a mesma ideia com outro vocabulário: complexidade é "qualquer coisa relacionada à **estrutura** de um sistema que dificulta entender e modificar o sistema" — uma base de código ruim é a que é difícil de mudar sem causar bugs. [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] usa essa definição para argumentar que módulos rasos ([[wiki/concepts/modulo-profundo]]) são uma fonte estrutural de complexidade acidental — o problema não está no domínio, está em como o código foi organizado, e piora ciclicamente quando um agente de IA gera código sobre uma estrutura já ruim sem nunca reestruturar.
 
+## Quinta fonte: tratamento de exceção como maior gerador de complexidade acidental evitável
+
+[[wiki/sources/filosofia-do-design-de-software-livro-completo]] (Cap. 10) dá o exemplo mais concreto do wiki de complexidade acidental gerada por decisão de API, não pelo domínio: exceções mal desenhadas (ex.: `substring` do Java lançando erro para índice fora do intervalo, em vez de truncar como Python faz) obrigam todo chamador a escrever código de tratamento que não tem relação com o problema real sendo resolvido. Um estudo citado (Yuan et al., USENIX OSDI 2014) encontrou que mais de 90% das falhas catastróficas em sistemas distribuídos vieram de tratamento de erro incorreto — evidência empírica externa de que essa categoria de complexidade acidental é responsável por uma fração desproporcional dos bugs mais graves. Ver [[wiki/concepts/definir-erros-para-fora-da-existencia]] para a técnica central de mitigação.
+
 ## Key Sources
 
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
+- [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — exceções mal desenhadas como fonte concreta de complexidade acidental; estudo Yuan et al. 2014 (>90% das falhas catastróficas vêm de erro de tratamento de exceção)
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]] — mesma distinção essencial/acidental via Frederick Brooks (Mythical Man-Month), não Out of the Tar Pit
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — por que "aprenda o framework" foi vendido como suficiente até o sistema escalar
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] — definição de Ousterhout (estrutura, não implementação) e módulos rasos como fonte de complexidade

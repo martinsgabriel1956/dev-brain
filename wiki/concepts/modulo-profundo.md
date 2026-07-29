@@ -3,8 +3,8 @@ type: concept
 title: "Módulo Profundo (Deep Module)"
 aliases: ["deep module", "shallow module", "módulo raso", "caixa cinza"]
 date_created: 2026-07-09
-date_updated: 2026-07-10
-source_count: 2
+date_updated: 2026-07-29
+source_count: 3
 tags: [arquitetura, complexidade, design, ousterhout, interface, encapsulamento]
 skill: tech-mentor-backend
 status: draft
@@ -47,7 +47,16 @@ Existe uma skill de refatoração citada na fonte ("improve codebase architectur
 - [[wiki/concepts/modelo-cascata-vs-desenvolvimento-incremental]] — módulos profundos como estratégia de encapsulamento se aplicam melhor sob design incremental, onde a interface pode ser revisada e ajustada a cada iteração.
 - [[wiki/concepts/red-flags-de-design]] — módulo raso é o red flag concreto correspondente a este conceito.
 
+## Generalidade moderada torna módulos mais profundos
+
+[[wiki/sources/filosofia-do-design-de-software-livro-completo]] (Cap. 6) mostra que módulos de propósito **ligeiramente** geral ("somewhat general-purpose" — funcionalidade reflete a necessidade atual, mas a interface não) tendem a ser mais profundos que módulos especializados, mesmo quando o único uso real é especializado. Exemplo canônico: uma classe de texto de editor com métodos `backspace(cursor)` e `deleteSelection(selection)` (espelhando a UI) vaza conhecimento da interface entre UI e classe de texto; a versão com apenas `insert(position, text)` e `delete(start, end)` elimina o vazamento, tem menos código no total, e ainda serve sem alteração para um caso de uso totalmente diferente (busca-e-substituição em arquivo). A regra prática: empurrar especialização para cima (código de UI) ou para baixo (device drivers), nunca deixá-la contaminar o módulo genérico central. Ver também [[wiki/concepts/ocultamento-de-informacao]] — generalidade e ocultamento de informação se reforçam mutuamente.
+
+## Deep module como exemplo de interface deep vs. shallow no mundo real
+
+A mesma fonte cita a interface de I/O do Unix (cinco chamadas de sistema — `open`, `read`, `write`, `lseek`, `close` — escondendo centenas de milhares de linhas de implementação) e o coletor de lixo de linguagens como Go/Java (que não tem interface nenhuma — na verdade encolhe a interface do sistema, já que elimina a necessidade de liberar objetos manualmente) como os dois exemplos mais extremos de módulo profundo do livro. Em contraste, a família de classes do Java I/O (`FileInputStream` → `BufferedInputStream` → `ObjectInputStream`, precisando de três construtores encadeados só para abrir um arquivo com buffer) é o contra-exemplo citado repetidamente no livro como **classitis**: a crença de que "classes são boas, logo mais classes são melhores".
+
 ## Key Sources
 
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]
+- [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — generalidade moderada (Cap. 6), Unix I/O e classitis do Java I/O (Cap. 4)

@@ -3,8 +3,8 @@ type: concept
 title: "MySQL"
 aliases: ["mysql", "innodb"]
 date_created: 2026-07-07
-date_updated: 2026-07-27
-source_count: 3
+date_updated: 2026-07-29
+source_count: 4
 tags: [mysql, banco-de-dados, sql, innodb, gap-locking, skip-locked, backend]
 skill: tech-mentor-backend
 status: draft
@@ -37,6 +37,10 @@ Uma armadilha de diagnóstico: otimizar queries individuais (menor tempo de exec
 ## Conexão Simultânea ≠ Usuário Online
 
 Distinção crítica de capacity planning: a maioria dos usuários navegando numa aplicação web está lendo/pensando, sem conexão ativa no banco — a conexão é aberta, usada em milissegundos e fechada só no momento do write. Na prática, ~600 usuários simultâneos geram tipicamente 20–50 conexões reais no MySQL, não 600. O que de fato ocupa uma conexão por tempo desproporcional é query longa, transação aberta não comitada, ou vazamento de conexão por bug — o mesmo padrão de diagnóstico já descrito acima em "Diagnóstico de Gargalo".
+
+## FULLTEXT INDEX e Busca por Relevância
+
+MySQL suporta [[wiki/concepts/full-text-search|Full-Text Search]] nativo via `CREATE FULLTEXT INDEX idx ON tabela (col1, col2)`, consultado com `WHERE MATCH(col1, col2) AGAINST('termo')`. Por baixo, constrói um [[wiki/concepts/indice-invertido|índice invertido]] (tokenização + remoção de stop words), o que evita o full table scan que o operador `LIKE '%termo%'` força — no benchmark registrado em [[wiki/sources/full-text-search-mysql-postgresql]], o custo interno caiu de 1028 para 0,35 e o número de linhas examinadas de 10.000 para 419. Suporte a idioma/vocabulário e stemming é mais limitado que o do [[wiki/concepts/postgresql|PostgreSQL]] — sem tesauros configuráveis.
 
 ## Limites Documentados de Conexão (Instância Única)
 

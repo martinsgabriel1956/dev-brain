@@ -3,8 +3,8 @@ type: concept
 title: "PostgreSQL"
 aliases: ["postgres", "pg"]
 date_created: 2026-04-22
-date_updated: 2026-07-28
-source_count: 5
+date_updated: 2026-07-29
+source_count: 6
 tags: [banco-de-dados, postgresql, relacional, jsonb, vetorial]
 skill: tech-mentor-system-design
 status: stable
@@ -51,6 +51,12 @@ Benchmarks independentes citados mostram Postgres até 50% mais rápido que MySQ
 
 Exemplo prático de fluxo de [[wiki/concepts/database-migration]] contra Postgres local: `docker-compose` sobe `postgres:16-alpine`, e um script `migrate` aplica arquivos de migration numerados (com `up`/`down` pareados) rastreando a versão atual do banco — permitindo aplicar só o que está pendente e reverter (`rollback`) de forma determinística. Ver [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]].
 
+## Full-Text Search em Profundidade — tsvector, tsquery e GIN
+
+O "Full-text search nativo" citado acima significa, na prática: `to_tsvector(idioma, texto)` converte o conteúdo em lexemas indexáveis, `to_tsquery`/`plainto_tsquery` converte o termo pesquisado, e o operador `@@` faz o match entre os dois. Um índice `GIN` sobre a expressão `to_tsvector(...)` é o que transforma isso de "mais lento que `LIKE`" (recalculando o vetor a cada chamada) em ordens de grandeza mais rápido — ver [[wiki/concepts/full-text-search]] para a demonstração completa.
+
+O diferencial real frente ao [[wiki/concepts/mysql|MySQL]] (que também tem Full-Text Search via `FULLTEXT INDEX`) é o **stemming avançado com suporte a idioma**: o Postgres reduz variações morfológicas ("programador", "programando", "programação") ao mesmo lexema automaticamente, entende plural/singular sem precisar da forma exata no texto, e permite configurar tesauros (sinônimos) — nenhum dos dois recursos existe no MySQL. Ver [[wiki/sources/full-text-search-mysql-postgresql]].
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
@@ -58,3 +64,4 @@ Exemplo prático de fluxo de [[wiki/concepts/database-migration]] contra Postgre
 - [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — arquitetura processo-por-conexão, PgBouncer como padrão, e comparação de performance analítica com MySQL
 - [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]] — migrations cruas via docker-compose + script de versão contra Postgres local
+- [[wiki/sources/full-text-search-mysql-postgresql]] — tsvector/tsquery/GIN, stemming por lexema, e comparação de performance com/sem índice

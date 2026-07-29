@@ -2,6 +2,97 @@
 
 ---
 
+## [2026-07-29] ingest | 14 Hábitos de Desenvolvedores Altamente Produtivos (Zeno Rocha)
+
+**Fonte:** [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — livro (epub, 2020) fornecido pelo usuário a partir de `/home/nemomartins/Documentos/Minhas Coisas/Livros/14 Hábitos de Desenvolvedores Altamente Produtivos.epub`. Já escrito originalmente em português (pt-BR), sem necessidade de tradução. Convertido via unzip + `html2text` (instalado via pip nesta sessão) a partir do XHTML interno do epub, com pequenos ajustes manuais de formatação (hífens escapados, espaçamento de links). Por instrução explícita do usuário ("Transforme o livro abaixo em MD dentro de /raw"), o texto completo foi salvo em `raw/14-habitos-de-desenvolvedores-altamente-produtivos.md` — diferente do tratamento dado a [[wiki/sources/filosofia-do-design-de-software-livro-completo]], onde o `raw/` ficou como stub bibliográfico por não haver pedido explícito de conversão completa. A página de resumo em `wiki/sources/` segue, ainda assim, o mesmo padrão de resumo/paráfrase com citações curtas (o epub tem copyright explícito de 2020).
+
+**Skill:** `tech-mentor-leadership` — confirmado pelo conteúdo central do livro (carreira, mentoria, comunicação, estimativa, especialista vs. generalista, side projects), com os 14 hábitos organizados em 5 categorias (aprendizagem, dia-a-dia, carreira, equipe, vida).
+
+**Páginas criadas:**
+- `raw/14-habitos-de-desenvolvedores-altamente-produtivos.md`
+- `wiki/sources/14-habitos-desenvolvedores-altamente-produtivos.md` — 14 key claims (um por hábito), com evidência e confiança
+- `wiki/entities/zeno-rocha.md` — novo, status stub: autor, CPO da Liferay Cloud à época, metodologia do livro (entrevistas com seniores de big techs)
+- `wiki/concepts/jogo-finito-vs-infinito.md` — novo, status draft: framework de Carse/Sinek (citado de segunda mão) aplicado a consistência vs. intensidade (Hábito 4)
+- `wiki/concepts/codigo-para-o-futuro-eu.md` — novo, status draft: escrever código para o "eu futuro", não o "eu atual" (Hábito 5)
+- `wiki/concepts/estimativas-de-software.md` — novo, status draft: 5 razões comportamentais para subestimar + técnicas de McConnell (Hábito 11)
+- `wiki/concepts/visao-de-negocio-do-desenvolvedor.md` — novo, status draft: "problema XY" e os 3 benefícios de entender negócio (Hábito 7)
+- `wiki/concepts/permanencia-vs-troca-de-emprego.md` — novo, status draft: Mario vs. Sonic, tempo de casa como variável de impacto de carreira (Hábito 9)
+- `wiki/concepts/controle-do-que-e-controlavel.md` — novo, status draft: dicotomia estoica aplicada à carreira, com o paralelo histórico de Newton na Grande Praga (Hábito 13)
+
+**Páginas atualizadas:**
+- `wiki/concepts/fomo-tecnologico.md` — nova seção "Origem Pré-IA: Sinal vs. Ruído e JOMO", mostrando que o padrão já existia em 2020 (escolha de SO/linguagem) antes do ciclo de releases de LLMs; `source_count` 2 → 3
+- `wiki/concepts/abrangencia-profissional.md` — nova seção com tabela de prós/contras especialista vs. generalista (Hábito 12) e a recomendação "aprenda a aprender" de Daniel Buchner; `source_count` 1 → 2
+- `wiki/concepts/comunicacao-tecnica.md` — nova seção "Ouvir para Entender, Não para Responder" (Hábito 10), aplicada a conversas de hierarquia assimétrica; `source_count` 4 → 5
+- `wiki/concepts/mentoria-tecnica.md` — nova seção "Ensinar em Público como Extensão da Mentoria" (Hábito 3), generalizando mentoria 1:1 para palestra/blog/vídeo; `source_count` 2 → 3
+- `wiki/concepts/side-project-como-armadilha.md` — nova seção de contraponto com o framework de 6 perguntas de triagem antes de começar um side project (Hábito 8), documentado como complementar (estágios diferentes da mesma conversa), não contraditório; `source_count` 1 → 2
+- `wiki/concepts/disciplina-vs-talento.md` — nova seção "Quinta Fonte", conectando consistência vs. intensidade (Hábito 4) e investimento fora do 9-às-5 (Hábito 6) à mesma tese central da página; `source_count` 4 → 5
+- `wiki/index.md` — nova linha em Sources; 7 novas linhas em Concepts (seção "Carreira & Soft Skills")
+
+**Notas:** Livro de opinião/experiência pessoal do autor entrelaçado com testemunhos reais de dezenas de engenheiros seniores/tech leads de big techs (Google, Amazon, Microsoft, Adobe, GitHub, Spotify, Elastic, Segment, GoDaddy, Shopify, Citibank, BlackBerry, NYT) — não é estudo controlado, e a maioria dos claims foi marcada como confiança média (consenso qualitativo), não alta. Viés de sobrevivência é especialmente visível nos Hábitos 8 (projetos paralelos) e 9 (tempo de casa): só profissionais que tiveram resultado positivo com essas escolhas foram entrevistados. Tensão produtiva identificada e documentada (não é contradição factual): o Hábito 8 é otimista sobre side projects (Twitter/Craigslist/Slack nasceram assim) enquanto [[wiki/concepts/side-project-como-armadilha]] (fonte anterior, Pedro Nauke/Docz) documenta o lado sombrio depois que o projeto decola — resolvido como dois estágios complementares da mesma conversa (escopar bem antes vs. gerir depois do sucesso), não como fontes que se contradizem. Nenhuma contradição factual encontrada contra o resto da wiki; o livro reforça e generaliza vários temas já documentados (naming/comentários de [[wiki/sources/filosofia-do-design-de-software-livro-completo]], visão de negócio de [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]], comunicação de [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]).
+
+---
+
+## [2026-07-29] ingest | A Philosophy of Software Design (livro completo, John Ousterhout)
+
+**Fonte:** [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — livro completo (epub, 2ª ed. 2021, 22 capítulos) lido diretamente de `/home/nemomartins/Documentos/Minhas Coisas/Livros/A Philosophy of Software Design.epub` (fornecido pelo usuário, fora de `raw/`). Extraído via unzip + parser Python (stdlib, sem dependências externas) para texto corrido, depois lido na íntegra capítulo a capítulo. **Por instrução explícita do usuário e por a página de copyright do próprio epub proibir reprodução** ("All rights reserved. No part of this book may be reproduced..."), o texto integral **não** foi copiado para `raw/` nem para `wiki/` — em vez disso, `raw/a-philosophy-of-software-design.md` é um stub de referência bibliográfica (metadata + sumário de capítulos) e o ingest no wiki é resumo/paráfrase com citações curtas pontuais, no mesmo padrão já usado em [[wiki/sources/filosofia-do-design-de-software-introducao]] (que cobria só o capítulo 1).
+
+**Skill:** `tech-mentor-backend` (mantendo consistência com a fonte-irmã já ingerida), com calibração secundária em `tech-mentor-leadership/references/software-craftsmanship.md` e `tech-debt-management.md` (Quadrante de Fowler, terminologia de dívida técnica) para comparar com a formulação independente de "programação tática vs. estratégica" do próprio Ousterhout.
+
+**Páginas criadas:**
+- `raw/a-philosophy-of-software-design.md` — stub de referência bibliográfica (metadata, sumário, aviso de copyright)
+- `wiki/sources/filosofia-do-design-de-software-livro-completo.md` — 18 key claims cobrindo os 22 capítulos, com evidência e confiança
+- `wiki/concepts/ocultamento-de-informacao.md` — information hiding/leakage (Parnas), decomposição temporal (Cap. 5)
+- `wiki/concepts/definir-erros-para-fora-da-existencia.md` — define errors out of existence + mascarar/agregar/travar (Cap. 10)
+- `wiki/concepts/comentarios-como-ferramenta-de-design.md` — comentários de interface vs. implementação, escrever antes do código (Caps. 12, 13, 15)
+- `wiki/concepts/projetar-duas-vezes.md` — design it twice (Cap. 11)
+- `wiki/concepts/decidir-o-que-importa.md` — decide what matters (Cap. 21) + performance/caminho crítico (Cap. 20)
+
+**Páginas atualizadas:**
+- `wiki/sources/filosofia-do-design-de-software-introducao.md` — Open Questions marcada como resolvida, com backlink para a nova fonte; `date_updated`
+- `wiki/entities/john-ousterhout.md` — nova seção "Livro completo"; `source_count` 2 → 3
+- `wiki/concepts/modulo-profundo.md` — generalidade moderada (Cap. 6), Unix I/O e classitis do Java I/O (Cap. 4); `source_count` 2 → 3
+- `wiki/concepts/red-flags-de-design.md` — catálogo completo dos 14 red flags do apêndice do livro, em tabela; `source_count` 1 → 2
+- `wiki/concepts/naming.md` — bug do `block` no Sprite, discordância com o guia de estilo de nomes do Go; `source_count` 3 → 4
+- `wiki/concepts/tech-debt-como-ferramenta.md` — programação tática vs. estratégica (Ousterhout), "tactical tornado", regra dos 10-20%, caso Facebook; `source_count` 10 → 11
+- `wiki/concepts/refatoracao.md` — "ficar estratégico" ao modificar código existente, regras de manutenção de comentários (Cap. 16); `source_count` 2 → 3
+- `wiki/concepts/arquitetura-de-software.md` — camadas adjacentes devem ter abstrações diferentes (Cap. 7); `source_count` 9 → 10
+- `wiki/concepts/modelo-cascata-vs-desenvolvimento-incremental.md` — agile/TDD como risco de deslizar para o tático (Cap. 19); `source_count` 1 → 2
+- `wiki/concepts/code-review.md` — referência ao catálogo completo de red flags como checklist prático; `source_count` 8 → 9
+- `wiki/concepts/complexidade-acidental.md` — exceções mal desenhadas como fonte concreta de complexidade acidental, estudo Yuan et al. 2014; `source_count` 4 → 5
+- `wiki/index.md` — nova linha em Sources; seis novas linhas em Concepts
+
+**Notas:** Nenhuma contradição encontrada — o livro completo reforça e aprofunda tudo já registrado a partir do capítulo 1. Achado estrutural: o autor discorda explicitamente e por nome de Robert Martin (*Clean Code*) em dois pontos (tamanho de método vs. profundidade, Cap. 9; motivo de comentários existirem, Cap. 12) e do guia de estilo de nomenclatura do Go (Cap. 14) — as três discordâncias foram registradas com citação direta nas páginas relevantes. Pergunta em aberto registrada na fonte: o wiki tem hoje duas páginas de conceito não fundidas para o mesmo conceito — [[wiki/concepts/complexidade-acidental]] (estável, em português) e uma página órfã em inglês `accidental-complexity.md`, não tocada neste ingest — fica como achado de lint para uma sessão futura de sweep. Todas as cifras quantitativas do autor (10–20% de investimento, payback em 6–18 meses) foram marcadas explicitamente como opinião pessoal do autor, não medição controlada, seguindo a própria ressalva dele no texto.
+
+---
+
+## [2026-07-29] ingest | Full-Text Search: Por Que o LIKE Está Errado (e Como Fazer Busca Inteligente em MySQL e PostgreSQL)
+
+**Fonte:** [[wiki/sources/full-text-search-mysql-postgresql]] — transcrição de vídeo já em português, sem tradução necessária; reestruturada em markdown com seções (problemas do LIKE, MySQL FULLTEXT/MATCH AGAINST, PostgreSQL tsvector/tsquery/GIN, lexemas/tesauros, tabela comparativa), salva em `raw/full-text-search-mysql-postgresql.md`. Autor identificado como Renato Augusto pela menção explícita ao "Mapa do Arquiteto" no encerramento, mesma entidade já registrada na wiki.
+
+**Skill:** `tech-mentor-data`, `references/databases/postgresql.md` (seção "Full-Text Search no PostgreSQL em Profundidade") e `references/databases/relational.md` (B-tree vs. GIN, `Seq Scan`). Usada para confirmar a terminologia correta (`tsvector`, `tsquery`, `GIN`, `to_tsvector`) e para identificar o que a fonte **não** demonstra ao vivo mas existe no Postgres real: `pg_trgm`/similarity (fuzzy search com tolerância a erro de digitação) e `ts_rank`/`setweight` (peso configurável por campo) — registrado como seção própria em [[wiki/concepts/full-text-search]] e como pergunta aberta na fonte.
+
+**Páginas criadas:**
+- `raw/full-text-search-mysql-postgresql.md`
+- `wiki/sources/full-text-search-mysql-postgresql.md`
+- `wiki/concepts/full-text-search.md` — novo, status stable: preenche um link quebrado que já existia desde `wiki/sources/elasticsearch-opensearch.md` (`[[concepts/full-text-search]]` apontava para uma página inexistente); cobre MySQL `FULLTEXT`/`MATCH AGAINST`, PostgreSQL `tsvector`/`tsquery`/`GIN`, stemming por lexema, tesauros, e uma seção "Além da Fonte" com `pg_trgm`/`ts_rank` vindos da skill
+- `wiki/concepts/indice-invertido.md` — novo, status draft: mecanismo de tokenização + mapeamento palavra→IDs comum a `FULLTEXT INDEX`, `GIN`/`tsvector` e Lucene
+- `wiki/concepts/like-wildcard.md` — novo, status stub: antipattern de busca via `LIKE '%termo%'`, os dois eixos de falha (relevância e performance) e por que remover o wildcard inicial não é correção estrutural
+
+**Páginas atualizadas:**
+- `wiki/concepts/database-index.md` — nova seção "GIN — Índice Invertido para Texto e Dados Semi-Estruturados"; `source_count` 5 → 6
+- `wiki/concepts/mysql.md` — nova seção "FULLTEXT INDEX e Busca por Relevância"; `source_count` 3 → 4
+- `wiki/concepts/postgresql.md` — nova seção "Full-Text Search em Profundidade — tsvector, tsquery e GIN"; `source_count` 5 → 6
+- `wiki/concepts/sql-alem-do-basico.md` — novo link no corpo e em Key Sources; `source_count` 3 → 4
+- `wiki/sources/elasticsearch-opensearch.md` — corrigido o link `[[concepts/full-text-search]]` (agora resolve) e adicionada seção "Ver também" apontando para a fonte nova
+- `wiki/sources/operador-de-crud-vs-engenheiro-repertorio.md` — novo item em "Conceitos Tocados" ligando o antipattern `LIKE` ao padrão geral "operador usa, engenheiro sabe por quê"
+- `wiki/entities/renato-augusto.md` — nova entrada em Key Sources; `source_count` 6 → 7
+- `wiki/entities/mercado-livre.md` — nova entrada em Key Sources (usado como exemplo de busca relevante em produção); `source_count` 2 → 3
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (seção "Bancos de Dados & SQL")
+
+**Notas:** Nenhuma contradição encontrada com o que já estava documentado — a fonte reforça e aprofunda [[wiki/concepts/database-index]], [[wiki/concepts/mysql]] e [[wiki/concepts/postgresql]] com um caso concreto e bem instrumentado (`EXPLAIN ANALYZE` antes/depois, números reais de custo/tempo). O achado mais valioso desta ingestão foi encontrar e corrigir um link quebrado pré-existente: `wiki/sources/elasticsearch-opensearch.md` já referenciava `[[concepts/full-text-search]]`, `[[concepts/bm25]]` e `[[entities/lucene]]` desde 2026-04-23 sem essas páginas existirem — `full-text-search.md` foi criada como parte natural desta ingestão; `bm25.md` e `lucene.md` continuam como links quebrados, fora do escopo desta fonte (que não cobre BM25/Lucene), e ficam registrados aqui para um lint futuro. Divergência de confiança registrada como pergunta aberta na própria fonte: a alegação de que o MySQL tem suporte a idioma/vocabulário "básico" comparado ao Postgres foi apresentada só como comparação em tabela, sem demonstração ao vivo equivalente à do stemming/tesauro do Postgres — vale verificação futura contra a documentação oficial do MySQL.
+
+---
+
 ## [2026-07-28] ingest | 7 Hábitos de um Programador Altamente Eficaz
 
 **Fonte:** [[wiki/sources/7-habitos-programador-altamente-eficaz]] — transcrição de vídeo PT-BR em bloco único, sem pontuação/seções, reestruturada em markdown (introdução + sete hábitos numerados + fechamento com referência a dois vídeos próprios do canal) e salva em `raw/7-habitos-programador-altamente-eficaz.md`. Autor não identificado por nome no material bruto, mas as referências finais ("4 hábitos que tornam você um programador ineficiente" e um "checklist... dez itens") apontam para o mesmo canal já coberto em [[wiki/sources/4-habitos-programador-ineficiente]] / [[wiki/sources/habitos-ruins-de-programador]] e [[wiki/sources/desenvolvedor-acima-da-media-10-itens]].
@@ -4236,5 +4327,25 @@ Entities:
 - `wiki/index.md` — nova linha em Sources; nova linha em Concepts para `graphql.md`; nova linha em Concepts para `n-plus-one.md` (ausente do índice até agora — corrigido como drift trivial) e nota em `drizzle-orm.md`
 
 **Notas:** Fonte didática de criador de conteúdo, sem citação de fonte primária para a afirmação histórica de que a Meta criou o GraphQL especificamente para resolver N+1/over-under-fetching — plausível e consistente com o conhecimento público (Facebook abriu o GraphQL como open source em 2015), mas registrado como confiança média na fonte por falta de citação direta ao engineering blog original. Nenhuma contradição encontrada com [[wiki/concepts/n-plus-one]], [[wiki/concepts/orm]] ou [[wiki/concepts/bff-pattern]] já existentes — esta fonte unifica conceitualmente páginas que já existiam de forma isolada (N+1, ORM, Drizzle, BFF, API Composition) sob o mesmo problema estrutural, e preenche uma lacuna real: a wiki não tinha página própria de GraphQL até esta ingestão, apesar de já citar DataLoader/N+1 de passagem em `api-composition.md`. Drift de índice pré-existente corrigido: `wiki/concepts/n-plus-one.md` existia desde 2026-04-22 mas nunca tinha sido adicionado a `wiki/index.md`.
+
+---
+
+## [2026-07-29] ingest | Git Rebase na Prática
+
+**Fonte:** [[wiki/sources/git-rebase-na-pratica]] — transcrição de vídeo em português sobre `git rebase`, fornecida diretamente pelo usuário no prompt (não como arquivo já existente em `raw/`). Conteúdo já em português (sem necessidade de tradução), mas em fala corrida/coloquial e sem pontuação de transcrição automática — reestruturado em markdown com seções antes de salvar em `raw/git-rebase-na-pratica.md`, seguindo o mesmo padrão de limpeza (não sumarização) já usado em outras transcrições de vídeo da wiki (ex.: [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]]). Autor/canal não se identifica na fala; só há menção ao patrocínio da Alura.
+
+**Skill:** `tech-mentor-leadership`, `references/git-advanced.md` — a referência já cobria rebase vs. merge, interactive rebase e a regra "nunca rebase em branch pública" em nível conceitual/architect; esta fonte contribuiu a camada que faltava: uma demonstração ponta a ponta com conflito real e resolução manual via editor de merge do VS Code.
+
+**Páginas criadas:**
+- `raw/git-rebase-na-pratica.md`
+- `wiki/sources/git-rebase-na-pratica.md` — 5 key claims com evidência e confiança, comandos demonstrados, citações
+- `wiki/concepts/rebase-vs-merge.md` — novo, status draft: mecânica de rebase vs. merge, por que rebase é perigoso em branch compartilhada, resolução de conflito, interactive rebase/squash, tabela comparativa
+
+**Páginas atualizadas:**
+- `wiki/concepts/atomic-commits.md` — nova seção "Rebase Interativo como Ferramenta Prática" conectando squash/fixup ao objetivo de commits atômicos; `source_count` 2 → 3
+- `wiki/concepts/code-review.md` — novo item em "Antes de Abrir o PR" (rebase local antes do PR, merge para integrar); `source_count` 9 → 10
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts para `rebase-vs-merge.md`
+
+**Notas:** Fonte estreita em escopo (um único comando, uma única demonstração) — por isso o número de páginas tocadas ficou abaixo da faixa usual de 10–15, priorizando conexões genuínas (`atomic-commits`, `code-review`) em vez de forçar links tênues. Cogitado e descartado um link para [[wiki/concepts/worktree-paralelismo]] (mesma família "ferramentas avançadas de Git"), mas essa página é especificamente sobre paralelismo de agentes de IA, tema que a fonte não toca — mantido de fora para não inflar `source_count`/backlinks com conexão artificial. Nenhuma contradição encontrada: os claims desta fonte (mecânica do rebase, perigo em branch pública, uso de rebase local antes do PR) reforçam ponto a ponto o que já estava documentado em `references/git-advanced.md` da skill `tech-mentor-leadership`, sem nenhuma divergência técnica. Não foi possível identificar ou criar uma entidade de autor — diferente da maioria das fontes em vídeo da wiki, esta transcrição não se identifica.
 
 ---
