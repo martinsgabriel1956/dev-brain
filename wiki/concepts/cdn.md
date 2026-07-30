@@ -3,9 +3,9 @@ type: concept
 title: "CDN"
 aliases: ["Content Delivery Network", "rede de distribuição de conteúdo", "edge cache"]
 date_created: 2026-06-26
-date_updated: 2026-07-27
-source_count: 2
-tags: [system-design, cdn, cache, performance, escalabilidade, rede]
+date_updated: 2026-07-30
+source_count: 3
+tags: [system-design, cdn, cache, performance, escalabilidade, rede, live-streaming]
 skill: tech-mentor-system-design
 status: draft
 ---
@@ -68,7 +68,12 @@ Em um sistema com três camadas (web, aplicação, dados), CDN é a solução ca
 
 [[wiki/concepts/niveis-de-senioridade-system-design]] usa o exemplo de um usuário poder assistir um filme no Brasil mas não na Alemanha (caso Netflix) como pergunta típica de entrevista sênior: a resposta esperada combina CDN regional (Brasil e Alemanha) com identificação global de onde pertence a assinatura do usuário, localizando o conteúdo por região.
 
+## Limite da CDN em Live Streaming
+
+CDN reduz distância física até o espectador, mas não elimina o que é inerente a streaming via internet: cada player mantém sua própria sessão, consulta seu próprio manifesto e mantém seu próprio buffer. [[wiki/sources/delay-tv-aberta-vs-youtube-live-latencia-streaming]] contrasta isso com a TV digital aberta (radiodifusão), que transmite um único sinal de rádio para toda a área de cobertura sem sessão individual — por isso a TV aberta chega com bem menos atraso que uma live equivalente no YouTube, mesmo com CDN otimizando a distribuição pela internet. Ver [[wiki/concepts/latencia-streaming-ao-vivo]] e [[wiki/concepts/cdn-strategy]] para o detalhamento das etapas.
+
 ## Key sources
 
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]]
+- [[wiki/sources/delay-tv-aberta-vs-youtube-live-latencia-streaming]] — limite de CDN em live streaming vs. radiodifusão de TV aberta

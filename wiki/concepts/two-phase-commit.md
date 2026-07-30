@@ -3,8 +3,8 @@ type: concept
 title: "Two-Phase Commit (2PC)"
 aliases: ["2pc", "two phase commit", "protocolo de duas fases", "xa transactions"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 2
+date_updated: 2026-07-30
+source_count: 3
 tags: [sistemas-distribuidos, consistencia, transacoes, 2pc, xa]
 skill: tech-mentor-system-design
 status: stable
@@ -64,6 +64,10 @@ SELECT * FROM pg_prepared_xacts;
 - Viola autonomia de deploy — todos os serviços precisam ser compatíveis simultaneamente
 - Um participante lento ou falho bloqueia a transação inteira
 
+## Exemplo Didático: Orders Coordenando Payments e Shipping
+
+Uma explicação didática do 2PC usa orders/payments/shipping: o serviço de orders recebe o pedido e inicia a fase 1 (o pagamento é processado e precisa ser aprovado); só depois de payments confirmar sucesso é que a fase 2 é liberada (shipping é autorizado a agir). Enquanto a fase 1 não termina, shipping fica suspenso — daí o nome "duas fases". O ponto central levantado é que isso funciona bem com poucos serviços, mas todo serviço adicional na cadeia de aprovação aumenta o tempo de espera e a fragilidade da coordenação — motivando a migração para [[wiki/concepts/saga-pattern]] quando o número de serviços cresce. Ver [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]].
+
 ## Alternativas
 
 - [[concepts/saga-pattern]] — consistência eventual com compensação explícita, sem coordinator
@@ -74,3 +78,4 @@ SELECT * FROM pg_prepared_xacts;
 
 - [[sources/3pc]]
 - [[sources/two-phase-commit]]
+- [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — exemplo didático orders/payments/shipping e o gargalo de coordenação que motiva a migração para Saga Pattern

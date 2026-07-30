@@ -3,8 +3,8 @@ type: concept
 title: "Compliance"
 aliases: ["conformidade", "regulatory compliance", "compliance técnico"]
 date_created: 2026-05-05
-date_updated: 2026-07-03
-source_count: 3
+date_updated: 2026-07-30
+source_count: 4
 tags: [compliance, lgpd, gdpr, pci-dss, soc2, hipaa, iso-27001, security, audit]
 skill: tech-mentor-security
 status: stable
@@ -67,6 +67,7 @@ Ver [[concepts/iso-27001]] para a estrutura completa da norma. Resumo: framework
 - [[sources/lgpd-gdpr]] — data mapping, lawful basis, 72h breach notification
 - [[sources/hipaa-sox]] — PHI/BAA, Segregation of Duties, S3 Object Lock
 - [[wiki/sources/iso-27001-dicionario-programador]] — estrutura da norma (cláusulas + Anexo A), SoA, controles relevantes para devs, Policy as Code, ISO 42001
+- [[wiki/sources/devsecops-origem-cultura-manifesto]] — frameworks (ITIL, COBIT, ISO 27001) e compliance como referência de reação a brechas de segurança, contraposto à resposta ágil integrada ao fluxo de desenvolvimento que [[wiki/concepts/devsecops]] defende
 
 ## Conceitos Relacionados
 

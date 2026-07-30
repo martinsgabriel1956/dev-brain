@@ -3,8 +3,8 @@ type: concept
 title: "Clean Architecture"
 aliases: ["arquitetura limpa", "clean arch"]
 date_created: 2026-07-24
-date_updated: 2026-07-24
-source_count: 2
+date_updated: 2026-07-30
+source_count: 3
 tags: [clean-architecture, uncle-bob, dependency-inversion, use-case, presenter, view-model, arquitetura]
 skill: tech-mentor-backend
 status: draft
@@ -49,6 +49,12 @@ O livro *Clean Architecture* descreve um fluxo concreto de requisição numa apl
 
 Nomear essas interfaces de fronteira como "protocolo" é o mesmo mecanismo de [[wiki/concepts/adapter-pattern|inversão de dependência via polimorfismo]] usado no vocabulário de Ports & Adapters em [[wiki/concepts/hexagonal-architecture]].
 
+## Por que "domain-centric" — contraste com 3-tier
+
+Comparando com a [[wiki/concepts/arquitetura-em-3-camadas]] tradicional, fica claro o porquê do nome: na 3-tier, a presentation layer depende da business layer, que depende diretamente da data access layer — toda a cadeia de dependência aponta "para baixo", em direção ao banco. Com o tempo, isso tende a misturar lógica de negócio com lógica de acesso a dados, e o acoplamento acaba vazando até a presentation layer.
+
+Na Clean Architecture, a lógica de negócio que ficava numa única business layer se divide em duas: **Application** (use cases, ex.: `SetReminder`, `DismissReminder`) e **Domain** (entidades como `User`/`Reminder` e as regras de negócio, ex.: checar o plano do usuário antes de criar um lembrete). O banco de dados deixa de estar "embaixo" recebendo dependências e passa a viver na **infrastructure layer**, uma camada externa — todas as dependências apontam para dentro, em direção ao domínio.
+
 ## Quando vale o investimento
 
 Sistemas com lógica de negócio complexa que vai mudar ao longo do tempo. Para CRUDs simples, a quantidade de camadas e interfaces é over-engineering — ver [[wiki/concepts/over-engineering]].
@@ -57,3 +63,4 @@ Sistemas com lógica de negócio complexa que vai mudar ao longo do tempo. Para 
 
 - [[wiki/sources/presenters]] — papel do Presenter e ViewModel especificamente na camada HTTP/apresentação (REST, GraphQL, CLI)
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — fluxo completo do diagrama de cenário web, e a justificativa teórica (objeto vs. estrutura de dados) por trás de cada camada
+- [[wiki/sources/clean-architecture-arquitetura-centrada-no-dominio]] — comparação direta com a arquitetura em 3 camadas, explicando a origem do nome "domain-centric"

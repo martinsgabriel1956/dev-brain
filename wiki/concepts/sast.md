@@ -3,8 +3,8 @@ type: concept
 title: "SAST (Static Application Security Testing)"
 aliases: ["sast", "static application security testing", "análise estática de segurança", "sonarqube"]
 date_created: 2026-06-10
-date_updated: 2026-06-10
-source_count: 1
+date_updated: 2026-07-30
+source_count: 2
 tags: [security, sast, devsecops, sonarqube, appsec, static-analysis]
 skill: tech-mentor-security
 status: stable
@@ -65,3 +65,4 @@ SAST no CI transforma segurança em gate de qualidade — nenhum código com vul
 ## Key Sources
 
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — SAST + WAF como camadas complementares; SonarQube como exemplo de ferramenta
+- [[wiki/sources/devsecops-origem-cultura-manifesto]] — SAST como parte do mapeamento de ferramentas por fase do ciclo DevSecOps (build/código), dentro da abordagem [[wiki/concepts/shift-left-testing]]

@@ -3,8 +3,8 @@ type: concept
 title: "High Level Design (HLD)"
 aliases: ["HLD", "High-Level Design"]
 date_created: 2026-05-17
-date_updated: 2026-07-27
-source_count: 4
+date_updated: 2026-07-30
+source_count: 5
 tags: [system-design, arquitetura, hld, documentacao]
 skill: tech-mentor-system-design
 status: stable
@@ -46,6 +46,7 @@ Em uma [[wiki/concepts/entrevista-system-design|entrevista de system design]], o
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — desenhar o HLD completo de um sistema do zero é atribuído majoritariamente a sênior/sênior-plus; júnior e pleno tipicamente desenham HLD só em contexto de entrevista, não no trabalho real
 - [[wiki/sources/anatomia-entrevista-system-design-bigtech]] — HLD é o "vocabulário" da sessão (load balancer, CDN, API gateway, cache, filas, workers, blob store), mas também onde o entrevistador tenta distinguir decoreba de domínio real; citar experiência concreta com uma peça específica é sinal mais forte do que só nomeá-la
+- [[wiki/sources/system-design-entrevista-cinema-draw-io]] — exemplo concreto de HLD desenhado ao vivo no draw.io (client → load balancer → web server → MySQL/API seatmap/API pagamentos/Redis), com a lógica não óbvia (consulta ao Redis) explicitada em fala, não só no diagrama
 
 ## Conceitos Relacionados
 

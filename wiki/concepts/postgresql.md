@@ -4,7 +4,7 @@ title: "PostgreSQL"
 aliases: ["postgres", "pg"]
 date_created: 2026-04-22
 date_updated: 2026-07-29
-source_count: 6
+source_count: 7
 tags: [banco-de-dados, postgresql, relacional, jsonb, vetorial]
 skill: tech-mentor-system-design
 status: stable
@@ -57,9 +57,14 @@ O "Full-text search nativo" citado acima significa, na prática: `to_tsvector(id
 
 O diferencial real frente ao [[wiki/concepts/mysql|MySQL]] (que também tem Full-Text Search via `FULLTEXT INDEX`) é o **stemming avançado com suporte a idioma**: o Postgres reduz variações morfológicas ("programador", "programando", "programação") ao mesmo lexema automaticamente, entende plural/singular sem precisar da forma exata no texto, e permite configurar tesauros (sinônimos) — nenhum dos dois recursos existe no MySQL. Ver [[wiki/sources/full-text-search-mysql-postgresql]].
 
+## Por Baixo do Motor: Buffer Pool, WAL, MVCC
+
+O comportamento descrito acima (processo por conexão, PgBouncer obrigatório) é a camada de acesso; por baixo dela, o motor relacional segue o fluxo genérico documentado em [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]]: páginas em [[wiki/concepts/buffer-pool]], durabilidade via [[wiki/concepts/write-ahead-log]], concorrência via [[wiki/concepts/mvcc]] e [[wiki/concepts/isolation-levels]] (Read Committed é o default do Postgres), e recuperação via checkpoints ([[wiki/concepts/database-recovery]]). O `autovacuum` citado na skill `tech-mentor-data` é a implementação concreta de Postgres para limpar as versões antigas que o MVCC acumula.
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
+- [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]] — mecânica interna genérica (buffer pool, WAL, MVCC, isolation levels, checkpoint/recovery) que fundamenta o comportamento específico do Postgres já documentado acima
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — arquitetura processo-por-conexão, PgBouncer como padrão, e comparação de performance analítica com MySQL

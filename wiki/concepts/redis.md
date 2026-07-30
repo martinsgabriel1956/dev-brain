@@ -3,8 +3,8 @@ type: concept
 title: "Redis"
 aliases: ["redis cache", "redis db"]
 date_created: 2026-06-26
-date_updated: 2026-07-28
-source_count: 6
+date_updated: 2026-07-30
+source_count: 7
 tags: [redis, cache, nosql, banco-in-memory, chave-valor, backend, grande-rollback]
 skill: tech-mentor-backend
 status: stable
@@ -55,6 +55,7 @@ A chave pode ser longa e semântica. Busca por prefixo (`GET cod_cliente:*`) per
 - **[[cqrs]] read layer** — Redis como projeção otimizada de leitura; SQL como fonte de verdade
 - **[[feature-flag]]** — interruptores de código com latência mínima
 - **Session store** — tokens de sessão, permissões de menu, extrato do cliente
+- **Reserva temporizada (TTL como regra de negócio)** — guardar uma chave com expiração automática para implementar diretamente uma regra do tipo "reserva por N minutos", sem job/cron externo para liberar o recurso. Ver [[wiki/sources/system-design-entrevista-cinema-draw-io]] abaixo — mas note a ressalva de consistência descrita ali.
 - **Pub/Sub** — broadcast efêmero em tempo real (sem persistência); `PUBLISH`/`SUBSCRIBE` num canal não exige criação prévia — publicar cria o canal implicitamente. Usado como notificador entre microsserviços em [[wiki/concepts/server-sent-events]]
 - **Streams** — fila robusta com consumer groups e ACK
 
@@ -89,3 +90,4 @@ Reforço direto do caso Shopify acima: em quase 100% dos casos reais, Redis não
 - [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] — caso onde Redis + MySQL sincronizados foi substituído por MySQL puro com SKIP LOCKED
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — Redis como camada de velocidade sobre banco relacional, nunca fonte de verdade; números de OPS/s e riscos de persistência
 - [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] — citado como exemplo de SGBD NoSQL chave-valor e classificado didaticamente como CP no Teorema CAP em material de concurso
+- [[wiki/sources/system-design-entrevista-cinema-draw-io]] — reserva de assento de cinema por 15 minutos guardando `seatmapId`+`seatId` com TTL; a chave expira sozinha e libera o assento, mas o desenho não consulta o Redis antes de responder disponibilidade a partir da API externa de seatmap, gerando um bug de consistência assumido pelo próprio autor (ver [[wiki/concepts/distributed-lock]])

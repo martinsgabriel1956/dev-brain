@@ -3,8 +3,8 @@ type: concept
 title: "Compactação de Texto (Huffman Coding, Deflate, LZSS/LZ77)"
 aliases: ["huffman coding", "deflate", "lzss", "lz77", "compressão de texto", "text compression"]
 date_created: 2026-07-27
-date_updated: 2026-07-27
-source_count: 1
+date_updated: 2026-07-29
+source_count: 2
 tags: [cs-fundamentals, compressao, huffman-coding, deflate, lzss, encoding]
 skill: cs-fundamentals
 status: stub
@@ -39,6 +39,10 @@ Ver [[wiki/sources/por-que-letras-minusculas-economizam-dados]] para a demonstra
 ## Relação com HTTP/2 HPACK
 
 [[wiki/sources/http-tcp-quic]] documenta que o HTTP/2 usa **HPACK** para compactar headers — HPACK também usa uma tabela de Huffman estática (baseada em frequências típicas de headers HTTP) como parte da sua compactação, o mesmo princípio de "caracteres mais frequentes, códigos mais curtos" aplicado a um domínio diferente (headers HTTP em vez de texto livre).
+
+## Huffman coding em imagens
+
+O mesmo Huffman coding descrito acima não é exclusivo de texto/HTTP: [[wiki/sources/historia-dos-formatos-de-imagem]] documenta que tanto JPEG quanto PNG usam Huffman coding como passo final de compressão — no JPEG, sobre os coeficientes já quantizados pela DCT (compressão com perdas); no PNG, sobre a saída do deflate (compressão sem perdas), o mesmo par Huffman + LZSS documentado aqui. Ver [[wiki/concepts/compressao-com-perdas-vs-sem-perdas]] e [[wiki/concepts/formato-jpeg]].
 
 ## Ver também
 

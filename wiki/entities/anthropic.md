@@ -3,9 +3,9 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-07-24
-source_count: 14
-tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering]
+date_updated: 2026-07-30
+source_count: 15
+tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack]
 skill: tech-mentor-ai
 status: stable
 ---
@@ -71,6 +71,14 @@ Pesquisa publicada pela própria Anthropic identificando um espaço interno no C
 
 Segundo [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]], a Anthropic desenvolveu uma classe de modelos especializados em cybersegurança ofensiva/defensiva — o **Mitos** (anunciado abril de 2026) e depois **Fable 5** e **Mitos 5** — capazes de encontrar vulnerabilidades de software em escala inédita (falha de 27 anos no OpenBSD, 16 anos no FFmpeg, brechas no núcleo do Linux, 10.000+ falhas de gravidade alta/crítica via o consórcio fechado **Glasswing**, que cresceu de ~50 para ~150 organizações em 15 países entre abril e junho de 2026). A capacidade foi julgada perigosa o suficiente para que a Anthropic nunca liberasse o Mitos ao público, e para que o governo dos EUA bloqueasse formalmente o acesso ao Fable 5 e ao Mitos 5 — inclusive para funcionários não-americanos da própria Anthropic — depois que a NSA relatou sistemas confidenciais comprometidos "em questão de horas". Mesmo com salvaguardas reforçadas, um laboratório italiano conseguiu contornar o Fable 5 em 702 de 7.828 tentativas de jailbreak — nuance que qualifica a robustez real dos guardrails da empresa (ver [[wiki/sources/ai-safety-guardrails]]).
 
+## Claude Tag: Claude Integrado ao Slack
+
+Produto que integra o Claude ao Slack via @menção ("Claude Tag"), lançado com anúncio oficial destacando que **65% do código do time de produto da Anthropic é criado pela nova versão do Claude Tag** (número não totalmente esclarecido quanto a escopo — ver open questions em [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]]). Diferente de um bot simples de resposta a @menção (já commodity há anos), o produto introduz: (1) memória multiplayer por canal, compartilhada entre todos os membros do time, não por usuário individual — ver [[wiki/concepts/agent-memory-tres-camadas]]; (2) modo "ambient", proativo, sem exigir @menção explícita; (3) execução assíncrona de tarefas longas (horas/dias). Gerou tese de Andrej Karpathy de que seria a "terceira reformulação da interface de LLM" — ver [[wiki/concepts/paradigmas-interface-llm]] para o framework completo e o contraponto de Gergely Orosz.
+
+## Anthropic Ultrapassa a OpenAI em Gasto no Cartão Corporativo (Abril 2026)
+
+Segundo [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]], em abril a Anthropic passou a OpenAI pela primeira vez em % de empresas americanas usando cartão corporativo para seus serviços: Anthropic subiu para 34,4%, OpenAI caiu para 32,3% (fonte primária do dado não identificada na transcrição — provavelmente um relatório agregado de gasto corporativo tipo Ramp; tratar como não confirmado externamente). Lido pelo apresentador como evidência de que a Anthropic está ganhando fatia do mercado B2B/enterprise, historicamente dominado por Google e depois pela OpenAI.
+
 ## Guia Oficial "Getting Started with Loops"
 
 Guia oficial publicado pela Anthropic definindo quatro níveis de autonomia para loops agênticos — turn-based, goal-based, time-based e proactive — cada um entregando progressivamente mais responsabilidade de decisão ao agente (ver [[wiki/concepts/loop-engineering]] para a lista completa). Publicado cerca de um ano depois do [[wiki/concepts/ralph-loop|Ralph Loop]] de [[wiki/entities/geoffrey-huntley]] (julho de 2025) ter demonstrado, de forma deliberadamente simples, que o próprio conceito de "loop até terminar" era viável — segundo [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]], a Anthropic institucionalizou um ano depois algo que começou como uma técnica quase de piada.
@@ -92,3 +100,4 @@ Guia oficial publicado pela Anthropic definindo quatro níveis de autonomia para
 - [[wiki/sources/jspace-cerebro-cloud-antropic]] — pesquisa de interpretabilidade (J-Space, Jacobian Lens): espaço interno de ativações vinculáveis a palavras nunca verbalizadas no output
 - [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]] — Mitos e Fable 5, modelos de cybersegurança bloqueados pelo governo dos EUA; consórcio Glasswing; jailbreak documentado do Fable 5
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — guia oficial "Getting Started with Loops" (quatro níveis de autonomia de loop)
+- [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] — lançamento do Claude Tag (Claude integrado ao Slack); dado de gasto em cartão corporativo ultrapassando a OpenAI em abril de 2026

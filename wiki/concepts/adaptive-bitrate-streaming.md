@@ -3,9 +3,9 @@ type: concept
 title: "Adaptive Bitrate Streaming (ABR)"
 aliases: ["abr", "hls", "dash", "adaptive streaming", "http live streaming"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
-tags: [system-design, video, streaming, hls, dash, abr, cdn]
+date_updated: 2026-07-30
+source_count: 2
+tags: [system-design, video, streaming, hls, dash, abr, cdn, live-streaming, buffer]
 skill: tech-mentor-system-design
 status: stable
 ---
@@ -55,6 +55,11 @@ Padrão aberto usado no YouTube. Manifesto em XML (MPD). Mais flexível, suporte
 - Troca de qualidade sem interrupção — segmentos futuros em qualidade diferente
 - Cache eficiente — segmentos são imutáveis, CDN TTL 365 dias → [[concepts/cdn-strategy]]
 
+## Buffer de Leitura Antecipada como Custo de Latência
+
+O buffer de 30s citado acima existe para absorver oscilação de rede sem rebuffering — mas em **live streaming**, esse mesmo buffer é, segundo a documentação do YouTube (citada em [[wiki/sources/delay-tv-aberta-vs-youtube-live-latencia-streaming]]), o principal causador de latência em relação ao instante real do evento. É o mesmo mecanismo, dois efeitos: em VOD, buffer maior só significa mais resiliência sem custo perceptível (o conteúdo já existe todo); em live, todo segundo de buffer é um segundo de atraso em relação ao "ao vivo" real. O YouTube expõe esse trade-off diretamente ao produtor via modos de latência (normal, baixa, ultra baixa) — ver [[wiki/concepts/latencia-streaming-ao-vivo]] para os números e o comportamento sob rede instável.
+
 ## Key Sources
 
 - [[sources/case-youtube-streaming]]
+- [[wiki/sources/delay-tv-aberta-vs-youtube-live-latencia-streaming]] — buffer de leitura antecipada em live streaming e modos de latência do YouTube

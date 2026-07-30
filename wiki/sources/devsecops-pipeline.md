@@ -48,3 +48,7 @@ DevSecOps integra segurança no pipeline CI/CD em 4 gates: SAST (análise estát
 
 - DAST em pipelines com autenticação complexa (OAuth2 flows) — como configurar ZAP para testar endpoints autenticados?
 - Como priorizar SAST findings sem afogar o time com falsos positivos?
+
+## Ver Também
+
+- [[wiki/sources/devsecops-origem-cultura-manifesto]] — origem histórica e cultural do termo DevSecOps (Gartner 2012, Manifesto DevSecOps), complementar ao detalhamento técnico de gates de pipeline desta fonte

@@ -3,8 +3,8 @@ type: source
 title: "Mitos e Fable 5: os modelos de IA bloqueados pelo governo dos EUA por poder de cybersegurança"
 aliases: ["mitos anthropic", "fable 5 bloqueio", "projeto glasswing", "mitos vs fable 5", "bloqueio governo eua ia cyberseguranca"]
 date_created: 2026-07-24
-date_updated: 2026-07-24
-source_count: 0
+date_updated: 2026-07-29
+source_count: 1
 tags: [ai-safety, cybersegurança, anthropic, red-teaming, jailbreak, export-controls, china, japao, nsa, vulnerabilidades, ai-red-teaming]
 skill: tech-mentor-security
 status: stable
@@ -55,6 +55,8 @@ Vídeo (Código Fonte TV) sobre uma nova classe de modelos de IA especializados 
 **Reforço direto:** [[wiki/sources/kimi-k3-china-mercado-ia-open-source]] já discutia a tese de que a vantagem americana em IA não é permanente e que a China está fechando a distância rapidamente — esta fonte adiciona um ângulo novo e mais específico: a corrida não é só em capacidade geral de modelo, mas especificamente em cybersegurança ofensiva/defensiva, com Japão entrando também na disputa (Sakana AI), o que a fonte anterior não cobria.
 
 **Novo ângulo não coberto antes:** nenhuma fonte da wiki registrava até agora o padrão de **bloqueio governamental de acesso a modelos de IA por risco de cybersegurança nacional** (Mitos 5, Fable 5, GPT 5.6) — isso é distinto de export controls de hardware (já coberto em [[wiki/sources/kimi-k3-china-mercado-ia-open-source]]) e merece ser tratado como um mecanismo de política pública novo e específico para modelos de "dual-use" em segurança ofensiva.
+
+**Continuação posterior:** [[wiki/sources/modelo-openai-escapa-sandbox-benchmark-cyberseguranca]] mostra o **GLM 5.2** (aqui citado como concorrente chinês do Mitos, via Zhipu AI) do lado defensivo — supostamente hospedado internamente pela própria OpenAI, sem guardrails, para investigar um incidente real depois que modelos com guardrail padrão se recusaram a ajudar. Reforça o tema desta fonte de que a capacidade de cybersegurança de ponta não fica confinada a um único laboratório ou país.
 
 ## Open Questions
 

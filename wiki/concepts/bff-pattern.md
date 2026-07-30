@@ -3,8 +3,8 @@ type: concept
 title: "BFF (Backend for Frontend)"
 aliases: ["bff", "backend for frontend", "best friends forever"]
 date_created: 2026-07-23
-date_updated: 2026-07-28
-source_count: 3
+date_updated: 2026-07-30
+source_count: 5
 tags: [bff, api-gateway, over-fetching, under-fetching, aggregation, frontend, graphql, n-plus-one]
 skill: tech-mentor-backend
 status: stable
@@ -62,8 +62,18 @@ Um BFF por tipo de cliente e o [[wiki/concepts/graphql]] atacam o mesmo problema
 
 Um BFF é, ao mesmo tempo, um Gatekeeper especializado por tipo de cliente — herda os mesmos ganhos de segurança de borda (auth, rate limit, redução de attack surface). Ver [[wiki/concepts/gatekeeper-pattern]].
 
+## BFF de Leitura como Alternativa Enxuta a Unificar Sistemas
+
+[[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] descreve um uso específico do padrão: quando o problema real é falta de visibilidade entre N sistemas heterogêneos de terceiros (ex.: 4 sistemas de gestão de fornecedores diferentes), um BFF somente leitura que agrega status/métricas desses sistemas resolve a causa raiz sem exigir unificação de produto nem alteração nos sistemas legados — alternativa muito mais barata do que tentar fundir as experiências num único frontend via [[wiki/concepts/microfrontends-parciais|microfrontends]]. Ver [[wiki/concepts/causa-raiz]] e [[wiki/concepts/over-engineering]].
+
+## BFF como Alternativa a PKCE para Posse de Token
+
+Em SPAs e apps mobile, o problema de onde guardar tokens de autenticação com segurança (ver [[wiki/concepts/pkce]]) tem uma segunda solução arquitetural, além da criptográfica: em vez de o cliente público lidar diretamente com o Authorization Server e provar posse via `code_verifier`, um BFF atua como intermediário que troca o `authorization_code` por token do lado do servidor e nunca expõe o access token ao browser — o cliente só enxerga um cookie de sessão do próprio BFF. É citado como modelo híbrido stateless/stateful em [[wiki/sources/pkce-proof-key-code-exchange-spa-mobile]], que aponta para um vídeo futuro dedicado a esse desenho.
+
 ## Key Sources
 
 - [[wiki/sources/api-gateway-bff]]
 - [[wiki/sources/api-gateway-padrao-essencial-arquiteturas-distribuidas]]
 - [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]] — comparação BFF vs. GraphQL como respostas ao mesmo problema de N+1/over-under-fetching
+- [[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] — BFF de leitura agregando 4 sistemas de fornecedores como alternativa enxuta a unificar produtos via microfrontends
+- [[wiki/sources/pkce-proof-key-code-exchange-spa-mobile]] — BFF citado (sem detalhamento) como alternativa arquitetural ao PKCE para posse segura de token

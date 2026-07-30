@@ -3,8 +3,8 @@ type: concept
 title: "Microsserviços"
 aliases: ["microsservicos", "microservices", "arquitetura de microsserviços", "decomposição por domínio"]
 date_created: 2026-07-24
-date_updated: 2026-07-27
-source_count: 6
+date_updated: 2026-07-30
+source_count: 7
 tags: [microsservicos, arquitetura, bounded-context, distributed-monolith, circuit-breaker, resiliencia]
 skill: tech-mentor-backend
 status: draft
@@ -31,6 +31,10 @@ Quanto a SOA: o artigo reconhece mérito na comparação (microsserviços é pr�
 ## Decomposição Correta
 
 O critério correto é decompor por **[[wiki/concepts/ddd-strategic|bounded context]]** (domínio de negócio), não por camada técnica. "Serviço de dados" + "Serviço de API" é um [[wiki/concepts/distributed-monolith|distributed monolith]] técnico disfarçado de microsserviços; "Orders Service" + "Payments Service" é decomposição real por domínio, com dados isolados e deploy independente.
+
+## O Percurso Didático de Problemas: Deadlock → 2PC → Saga → CQRS
+
+Uma aula constrói, problema por problema, o percurso que leva um microsserviço de banco compartilhado a uma arquitetura madura: banco compartilhado entre serviços causa [[wiki/concepts/deadlock]] → isolar banco por serviço ([[wiki/concepts/database-per-service]]) resolve o deadlock mas quebra atomicidade entre serviços (o "A" do [[wiki/concepts/acid]]) → [[wiki/concepts/two-phase-commit]] resolve a atomicidade mas não escala além de poucos serviços → [[wiki/concepts/saga-pattern]] via fila ([[wiki/entities/rabbitmq]]) e [[wiki/concepts/event-driven-architecture]] resolve o gargalo ao custo de compensação manual → escalar o banco separando leitura e escrita ([[wiki/concepts/cqrs]] com [[wiki/concepts/read-replicas]]) introduz replication lag. Reforça o argumento central desta página de que microsserviços trazem complexidade operacional real (consistência distribuída, latência de rede) que precisa ser resolvida com padrões específicos, não é "só separar em serviços menores". Ver [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]].
 
 ## Custo-Benefício
 
@@ -68,3 +72,4 @@ Mesmo fora de uma arquitetura de microsserviços completa, dá para reaproveitar
 - [[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]] — "microsserviços exigem justificativa" como opinião estável (não mudou em 6 anos), reforçando a mesma tese por um ângulo independente
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — monolito vs. microsserviços como decisão de sênior-plus, e como tópico de tradeoff cobrado em entrevista sênior
 - [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] — mesmo princípio de extração tardia (monolito modular → vertical slice → builds separados) aplicado à arquitetura frontend
+- [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — percurso didático incremental deadlock → database-per-service → 2PC → Saga Pattern → CQRS, construindo problema por problema

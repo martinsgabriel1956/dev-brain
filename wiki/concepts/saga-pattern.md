@@ -3,8 +3,8 @@ type: concept
 title: "Saga Pattern"
 aliases: ["saga", "saga distribuída", "compensating transactions"]
 date_created: 2026-04-22
-date_updated: 2026-07-24
-source_count: 2
+date_updated: 2026-07-30
+source_count: 3
 tags: [sistemas-distribuidos, consistencia, saga, microsservicos, compensação]
 skill: tech-mentor-system-design
 status: stub
@@ -33,6 +33,10 @@ C2 (Cancela Reserva) → C1 (Estorna Pagamento)
 - **Coreografado** — cada serviço publica evento e reage a eventos de outros. Sem orquestrador central.
 - **Orquestrado** — orquestrador central comanda cada passo. Mais visível, mais acoplado.
 
+## Implementação com Fila (RabbitMQ) — Versão Didática
+
+Uma explicação simplificada apresenta o Saga coreografado como: cada serviço (order, payments, shipping, inventory...) publica na fila (ex.: [[wiki/entities/rabbitmq]]), que garante ordem e evita gargalo de coordenação síncrona — em contraste direto com o [[wiki/concepts/two-phase-commit|two-phase commit]], que trava esperando aprovação sequencial. O trade-off citado: a fila resolve o problema de gargalo, mas cada serviço precisa implementar manualmente sua própria compensação/rollback caso uma etapa falhe — isso é descrito como a parte "muito difícil" de implementar Saga na prática. Essa arquitetura de fila é chamada de [[wiki/concepts/event-driven-architecture]]. Ver [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]].
+
 ## Trade-off
 
 Consistência eventual — não ACID. Compensações podem falhar também (saga idempotente é obrigatória). Mais complexo que uma transação local, mas escala horizontalmente.
@@ -41,3 +45,4 @@ Consistência eventual — não ACID. Compensações podem falhar também (saga 
 
 - [[sources/3pc]]
 - [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — saga pattern/consistência eventual citado como conceito que ajuda a lidar com cenários de concorrência e integração mesmo num único banco de dados, fora de arquitetura distribuída
+- [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — versão didática coreografada via RabbitMQ, contrastada com o gargalo de coordenação do 2PC

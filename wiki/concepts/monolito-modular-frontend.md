@@ -3,8 +3,8 @@ type: concept
 title: "Monolito Modular (Frontend)"
 aliases: ["arquitetura modular frontend", "modular monolith frontend", "fronteiras entre módulos"]
 date_created: 2026-07-27
-date_updated: 2026-07-27
-source_count: 1
+date_updated: 2026-07-30
+source_count: 2
 tags: [frontend, arquitetura, modularidade, monolito, module-boundaries]
 skill: tech-mentor-frontend
 status: stub
@@ -30,6 +30,11 @@ Monolito modular é descrito como a base sólida a partir da qual se decide, com
 
 Quando uma funcionalidade dentro de um módulo já nasce complexa, a recomendação é isolá-la via [[wiki/concepts/vertical-slice-architecture|vertical slice]] dentro do próprio módulo antes de cogitar extração para projeto/serviço separado — extração só quando a necessidade real aparecer.
 
+## Contraponto: Nem Sempre Vale Estender o Monolito Existente
+
+[[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] traz um caso onde a solução enxuta não é adicionar um módulo ao monolito existente nem migrar para microfrontends — é criar um frontend novo, pequeno e somente leitura (dashboard + [[wiki/concepts/bff-pattern|BFF]]), isolado do resto do produto. Reforça, por outro caminho, o mesmo princípio central desta página (extrair/criar só com necessidade real): às vezes a unidade certa de decisão não é "que módulo/arquitetura usar dentro do produto existente", mas "isso nem precisa fazer parte do produto existente".
+
 ## Key Sources
 
 - [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] — contraste camadas vs. módulos, fronteiras como mecanismo de escala de time, e monolito modular como base da transição para microfrontend baseado em rotas
+- [[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] — contraponto: um dashboard read-only isolado do produto principal, não um novo módulo do monolito

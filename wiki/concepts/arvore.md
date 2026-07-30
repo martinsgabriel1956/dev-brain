@@ -3,8 +3,8 @@ type: concept
 title: "Árvore (Tree)"
 aliases: ["tree", "árvore binária", "binary tree", "BST", "B-tree"]
 date_created: 2026-06-01
-date_updated: 2026-07-09
-source_count: 4
+date_updated: 2026-07-29
+source_count: 6
 tags: [cs-fundamentals, estruturas-de-dados, arvore, tree, hierarquia, big-o]
 skill: cs-fundamentals
 status: draft
@@ -67,7 +67,9 @@ Entender árvores te ajuda a entender por que `SELECT` em coluna sem índice var
 
 ## Key sources
 
+- [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]] — B-tree como estrutura por trás do índice, dentro do fluxo completo de escrita de um banco (páginas → buffer pool → WAL → commit)
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
 - [[wiki/sources/9-algoritmos-que-todo-programador-deveria-saber]]
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] — B-tree como uma das duas coisas que uma base de dados "deve fazer" (armazenamento), junto com WAL/páginas
+- [[wiki/sources/indice-de-banco-de-dados]] — demonstração visual passo a passo: inserção sequencial de IDs reordenando a B-tree, e busca do ID 7 resolvida em 3 comparações via percurso binário (>4? >6?) em vez de 7 comparações lineares

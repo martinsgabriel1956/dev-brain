@@ -3,8 +3,8 @@ type: concept
 title: "Era Agêntica"
 aliases: ["agentic era", "era dos agentes", "agentes de ia em producao"]
 date_created: 2026-05-31
-date_updated: 2026-07-16
-source_count: 2
+date_updated: 2026-07-30
+source_count: 3
 tags: [era-agentica, agente-ia, token-economics, paradoxo-de-jevons, llmops]
 skill: tech-mentor-ai
 status: stable
@@ -72,6 +72,10 @@ Os níveis 5–7 da [[escala-maturidade-ia-dev]] são a materialização individ
 
 A maioria dos devs ainda opera nos níveis 1–2 — o que explica por que estudos medem apenas 20–30% de ganho enquanto a diferença real entre nível 2 e nível 4 é de ~5x.
 
+## Relação com Paradigmas de Interface (Claude Tag)
+
+[[wiki/concepts/paradigmas-interface-llm]] descreve uma transição relacionada, mas distinta: enquanto a era agêntica aqui documentada foca no *modelo de custo* (autocomplete → tarefa completa → conta explode), o "terceiro paradigma" de Andrej Karpathy foca em *quem é o usuário do agente* — de indivíduo para organização inteira, via produtos como o Claude Tag (ver [[wiki/entities/anthropic]]). As duas mudanças reforçam-se mutuamente: quanto mais o agente atua como membro assíncrono do time (não ferramenta de um dev), maior a superfície de consumo de tokens.
+
 ## De Capital Humano para Capital Computacional
 
 Satya Nadella (CEO da [[wiki/entities/microsoft]]) descreve essa migração de custo com o termo **[[wiki/concepts/capital-de-tokens|capital de tokens]]**: assim como o capital humano historicamente gerou conhecimento e valor, o volume de tokens consumidos por agentes passa a ser tratado como um ativo equivalente — reforçando, em outras palavras, o mesmo fenômeno que a tabela de custo por dev acima já descreve.
@@ -83,3 +87,4 @@ Satya Nadella (CEO da [[wiki/entities/microsoft]]) descreve essa migração de c
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
 - [[wiki/sources/escala-niveis-uso-ia-engenheiros]] — níveis 5–7 como materialização individual da era agêntica
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] — capital de tokens (Nadella) e previsão Gartner 2028
+- [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] — paradigma de agente como membro assíncrono do time organizacional (Claude Tag), complementar à mudança de modelo de custo

@@ -3,16 +3,16 @@ type: entity
 title: "Gartner"
 aliases: ["Gartner Inc"]
 date_created: 2026-07-16
-date_updated: 2026-07-16
-source_count: 2
-tags: [consultoria, pesquisa-de-mercado, custo-ia, token-economics, roi-de-ia]
+date_updated: 2026-07-30
+source_count: 3
+tags: [consultoria, pesquisa-de-mercado, custo-ia, token-economics, roi-de-ia, devsecops]
 skill: tech-mentor-ai
 status: draft
 ---
 
 # Gartner
 
-Consultoria e empresa de pesquisa de mercado global, citada recorrentemente na wiki como fonte de projeções sobre custo e adoção de IA em empresas — desde estimativas de gasto por desenvolvedor até previsões de longo prazo sobre a economia de tokens.
+Consultoria e empresa de pesquisa de mercado global, citada recorrentemente na wiki como fonte de projeções sobre custo e adoção de IA em empresas — desde estimativas de gasto por desenvolvedor até previsões de longo prazo sobre a economia de tokens. Também creditada como quem cunhou o termo [[wiki/concepts/devsecops]] em 2012, três anos após o próprio DevOps ter sido formalizado.
 
 ## Projeções Citadas na Wiki
 
@@ -26,3 +26,4 @@ Consultoria e empresa de pesquisa de mercado global, citada recorrentemente na w
 
 - [[wiki/sources/ia-custo-roi-bolha-ou-realidade]]
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]]
+- [[wiki/sources/devsecops-origem-cultura-manifesto]] — creditada como quem cunhou "DevSecOps" em 2012 (sem citação direta ao relatório original na fonte)

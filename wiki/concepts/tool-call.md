@@ -3,8 +3,8 @@ type: concept
 title: "Tool Call"
 aliases: ["function calling", "tool use", "chamada de ferramenta"]
 date_created: 2026-06-02
-date_updated: 2026-07-03
-source_count: 4
+date_updated: 2026-07-30
+source_count: 5
 tags: [tool-call, harness, agente, llm, function-calling, tool-overload]
 skill: tech-mentor-ai
 status: stable
@@ -58,6 +58,10 @@ Restringir as tools disponíveis a um [[wiki/concepts/subagentes|subagente]] (ex
 
 Contraintuitivo: mais ferramentas disponíveis não significa menos erro. A [[wiki/entities/vercel]] testou um agente interno com muitas ferramentas e performance ruim; em vez de adicionar mais, **removeu 80% das ferramentas disponíveis**, e a performance melhorou — cada etapa passou a exigir escolher entre menos opções, reduzindo o espaço de decisão e a chance de escolha errada ([[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]]). Reforça a mesma lógica já descrita acima para subagentes restritos: harness não é sobre maximizar capacidade, é sobre otimizar o caminho até o resultado certo.
 
+## Tool Call Como Mitigação de Alucinação
+
+Forçar o modelo a usar `web_search` antes de responder (em vez de confiar na resposta crua do treinamento) ancora a resposta numa fonte verificável em tempo real, reduzindo [[wiki/concepts/alucinacao-llm]] na prática — mesmo princípio ao pedir para o modelo rodar testes (`execute_bash`) antes de declarar código como correto, em vez de aceitar a alegação do próprio modelo. Ver [[wiki/sources/porque-nunca-confiar-em-llm-alucinacao]].
+
 ## Analogia
 
 Assim como um programa em JavaScript não sabe que horas são e faz uma syscall ao OS para obter o timestamp, o LLM não sabe o que tem no seu filesystem e faz uma "syscall" ao harness para descobrir.
@@ -68,3 +72,4 @@ Assim como um programa em JavaScript não sabe que horas são e faz uma syscall 
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — caso Vercel: remover 80% das ferramentas disponíveis melhorou performance do agente
+- [[wiki/sources/porque-nunca-confiar-em-llm-alucinacao]] — `web_search` e execução de testes como mitigação prática de alucinação em uso pessoal

@@ -3,8 +3,8 @@ type: concept
 title: "OAuth 2.0"
 aliases: ["OAuth", "OAuth 2.0", "delegação de acesso", "authorization code flow"]
 date_created: 2026-07-27
-date_updated: 2026-07-27
-source_count: 1
+date_updated: 2026-07-30
+source_count: 3
 tags: [oauth2, autorizacao, autenticacao, seguranca, delegacao-de-acesso]
 skill: tech-mentor-security
 status: draft
@@ -36,7 +36,7 @@ OAuth introduz **delegação de acesso com escopo limitado**: o app recebe um to
 5. App usa o access_token para acessar o recurso (ex.: a agenda)
 ```
 
-**PKCE** (Proof Key for Code Exchange): obrigatório para SPAs e apps mobile, previne interceptação do `authorization_code`. **Implicit Flow** está deprecated — expunha tokens diretamente na URL.
+**PKCE** (Proof Key for Code Exchange): obrigatório para SPAs e apps mobile, previne interceptação do `authorization_code`. **Implicit Flow** está deprecated — expunha tokens diretamente na URL. Ver [[wiki/concepts/pkce]] para o mecanismo completo (`code_verifier`/`code_challenge`) e por que o Implicit Flow foi abandonado.
 
 ## Device Flow
 
@@ -56,3 +56,5 @@ OAuth responde "o que este app pode fazer" (autorização), mas não foi desenha
 ## Key Sources
 
 - [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]
+- [[wiki/sources/pkce-proof-key-code-exchange-spa-mobile]] — detalha por que o Implicit Flow falhou e como o PKCE resolve, com foco em SPA/mobile
+- [[wiki/sources/rfc-7636-pkce-oauth-public-clients]] — texto normativo do RFC que estende o Authorization Code Grant do OAuth 2.0 com PKCE

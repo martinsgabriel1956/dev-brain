@@ -3,8 +3,8 @@ type: entity
 title: "Bernardo Lobato"
 aliases: ["Bernardo Lobato"]
 date_created: 2026-06-05
-date_updated: 2026-07-24
-source_count: 4
+date_updated: 2026-07-30
+source_count: 5
 tags: [arquitetura-software, segurança, criador-de-conteudo, youtube, backend]
 skill: tech-mentor-security
 status: stub
@@ -20,3 +20,4 @@ Desenvolvedor e criador de conteúdo brasileiro. Publica vídeos toda sexta-feir
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]] — vídeo introdutório de uma série planejada sobre refatoração
 - [[wiki/sources/api-gateway-padrao-essencial-arquiteturas-distribuidas]] — primeiro vídeo de uma série planejada sobre padrões de integração de aplicações
 - [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — vídeo de carreira/reflexão, fora da série técnica hands-on; defende estudar microsserviços como eixo de aprendizado de arquitetura, relato pessoal de retorno ao mercado
+- [[wiki/sources/pkce-proof-key-code-exchange-spa-mobile]] — vídeo sobre PKCE como solução para autenticação em SPAs/mobile sem client secret estático, continuação de uma série sobre OAuth/OIDC; menciona vídeo futuro planejado sobre BFF stateless/stateful híbrido

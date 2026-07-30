@@ -3,8 +3,8 @@ type: concept
 title: "SQL Injection"
 aliases: ["sql injection", "sqli", "injeção sql", "bobby tables"]
 date_created: 2026-06-10
-date_updated: 2026-07-03
-source_count: 3
+date_updated: 2026-07-30
+source_count: 4
 tags: [security, sql-injection, owasp, input-sanitization, appsec, attack-surface]
 skill: tech-mentor-security
 status: stable
@@ -51,7 +51,7 @@ O banco recebe a query e os dados separadamente — o input nunca é interpretad
 Prisma, TypeORM, Sequelize parametrizam por padrão. Ainda assim, evite raw queries com interpolação.
 
 **3. Sanitização e validação de input**
-Validar tipo, comprimento e formato antes de usar — não como substituto para parametrização, mas como camada adicional.
+Validar tipo, comprimento e formato antes de usar — não como substituto para parametrização, mas como camada adicional. Exemplo prático em Node/Express: middleware **Celebrate** com schemas **Joi** valida o tipo do parâmetro (ex.: `Joi.number()` numa rota `/users/:id`) e rejeita a requisição *antes* de qualquer query rodar — ver [[wiki/sources/injecao-sql-aula-modulo-seguranca]].
 
 **4. Princípio do menor privilégio no banco**
 Se o usuário da aplicação só tem SELECT, mesmo uma injeção bem-sucedida não consegue DROP ou DELETE. Ver [[principio-do-menor-privilegio]].
@@ -85,3 +85,4 @@ Uma thread analisada em [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] prop
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — Bobby Tables como exemplo central de sanitização de input
 - [[sources/seguranca-armazenamento-senhas-banco-de-dados]] — contexto histórico: SQLi nos anos 90 como vetor que expôs o plaintext
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] — contradiz a simplificação "eliminar SQL elimina SQL attacks"
+- [[wiki/sources/injecao-sql-aula-modulo-seguranca]] — demonstração ao vivo (Express + `pg`) do ataque via query string e via parâmetro de rota, correção via placeholders `$1`/`$2`, e camada extra de validação de schema com Celebrate/Joi

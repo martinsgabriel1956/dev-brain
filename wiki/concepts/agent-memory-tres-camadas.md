@@ -3,8 +3,8 @@ type: concept
 title: "Memória de Agente em Três Camadas (Sessão / Persistente / Skill)"
 aliases: ["three-layer agent memory", "memória de três camadas", "session/persistent/skill memory"]
 date_created: 2026-07-21
-date_updated: 2026-07-21
-source_count: 1
+date_updated: 2026-07-30
+source_count: 2
 tags: [tech-mentor-ai, agent-memory, learning-loop, sqlite, fts5, hermes-agent]
 skill: tech-mentor-ai
 status: draft
@@ -35,6 +35,11 @@ O efeito observado, segundo a fonte: o agente passa a lembrar preferências impl
 - [[wiki/concepts/skills-agente]] — skill memory é, na prática, um caso de skills geradas automaticamente em vez de escritas à mão
 - [[wiki/concepts/hooks-agente]] — hooks são o mecanismo citado para popular a persistent/skill memory ao fim de uma sessão
 
+## Variante: Memória Multiplayer por Canal (Claude Tag)
+
+[[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] descreve uma variante ainda sem página própria na wiki: memória compartilhada não por usuário/sessão, mas por **canal/equipe inteira** — um agente por canal do Slack (Claude Tag, da [[wiki/entities/anthropic]]) que aprende com as mensagens de todos os membros e une pedidos feitos por pessoas diferentes num mesmo contexto contínuo. As três camadas acima (sessão/persistente/skill) seguem se aplicando, mas a "sessão" deixa de ser de um usuário e passa a ser do canal como um todo — candidata a virar concept própria (`memoria-multiplayer-agente.md`) se surgir mais de uma fonte técnica detalhando o mecanismo.
+
 ## Key sources
 
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]]
+- [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] — variante de memória multiplayer por canal (não por usuário individual)

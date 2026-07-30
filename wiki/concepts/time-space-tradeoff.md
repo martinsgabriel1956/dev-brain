@@ -3,8 +3,8 @@ type: concept
 title: "Trade-off Tempo vs. Memória"
 aliases: ["time-space tradeoff", "time complexity vs space complexity", "trade-off tempo x espaço"]
 date_created: 2026-07-10
-date_updated: 2026-07-10
-source_count: 2
+date_updated: 2026-07-29
+source_count: 3
 tags: [cs-fundamentals, big-o, complexidade, algoritmos, memoria]
 skill: cs-fundamentals
 status: draft
@@ -29,13 +29,19 @@ Você paga memória adiantada para não pagar a busca inteira toda vez que preci
 
 O trade-off deixa claro por que a notação assintoticamente menor nem sempre vence: se o espaço disponível é limitado, uma solução O(n²) em tempo mas O(1) em espaço pode ser a única viável. A escolha depende do limite real do problema — latência aceitável vs. memória disponível — não só da curva de crescimento. Ver [[wiki/concepts/big-o]].
 
+## Índice de Banco de Dados como Exemplo Canônico
+
+[[wiki/concepts/database-index]] é o mesmo trade-off aplicado a bancos de dados: a estrutura adicional (B-tree, hash, etc.) ocupa espaço em disco e torna cada `INSERT`/`UPDATE` mais lento (a árvore precisa se reordenar), em troca de busca em O(log n) ou O(1) em vez de O(n)/table scan. Por isso a regra de "só crie índice se o padrão de acesso justificar" — o trade-off só compensa quando há buscas suficientes sobre a coluna. Ver [[wiki/sources/indice-de-banco-de-dados]].
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/big-o]] — a notação usada para expressar os dois lados do trade-off (complexidade de tempo e de espaço)
 - [[wiki/concepts/hashmap]] — estrutura auxiliar clássica para trocar memória por velocidade de busca
 - [[wiki/concepts/algoritmos-e-estruturas-de-dados]] — a escolha de estrutura já embute esse trade-off
+- [[wiki/concepts/database-index]] — mesmo trade-off aplicado a índices de banco de dados
 
 ## Key sources
 
 - [[wiki/sources/two-sum-explicacao]]
 - [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]]
+- [[wiki/sources/indice-de-banco-de-dados]] — índice de banco de dados como exemplo concreto de espaço/escrita trocado por velocidade de leitura

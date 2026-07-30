@@ -3,8 +3,8 @@ type: concept
 title: "System Design por Nível de Senioridade"
 aliases: ["system design junior pleno senior", "expectativas de system design por nível", "o que esperar de cada senioridade em arquitetura"]
 date_created: 2026-07-27
-date_updated: 2026-07-27
-source_count: 1
+date_updated: 2026-07-30
+source_count: 3
 tags: [system-design, carreira, senioridade, junior, pleno, senior, entrevistas]
 skill: tech-mentor-system-design
 status: draft
@@ -41,13 +41,19 @@ Não se avalia mais se a peça básica é conhecida (isso já é dado) — se av
 
 Desenvolver um sistema inteiro do zero para uma equipe trabalhar em cima — decidir SQL vs. NoSQL, serverless vs. servidor dedicado, [[wiki/concepts/microsservicos|monolito vs. microsserviços]] — e justificar cada decisão é tipicamente atribuição desse nível acima de sênior "puro".
 
+[[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] descreve um eixo complementar (não de profundidade técnica, mas de escopo de responsabilidade) para diferenciar sênior de staff: sênior tende a olhar para o escopo do próprio produto, staff tende a olhar para a vertical inteira (múltiplos produtos/times) e como extrair valor máximo dali. A fonte usa isso para explicar por que a armadilha de escolher a solução mais complexa em vez da que resolve a causa raiz é especialmente comum nesse ponto da progressão — ver [[wiki/concepts/senior-vs-staff-visao-arquitetural]] para o detalhamento.
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/entrevista-system-design]] — a estrutura de sessão (requisitos → capacidade → modelagem → desenho) que esta progressão por nível se aplica em cima
 - [[wiki/concepts/estimativas-back-of-envelope]] — mais central e mais precisa quanto mais sênior
 - [[wiki/concepts/cap-theorem]] — vocabulário esperado especificamente em nível sênior
 - [[wiki/concepts/comparacao-na-carreira]] — falta de consenso sobre definições de nível é um tema recorrente na carreira dev, não exclusivo de system design
+- [[wiki/concepts/senior-vs-staff-visao-arquitetural]] — eixo complementar (escopo de produto vs. escopo de vertical) para o nível sênior plus/staff
+- [[wiki/concepts/causa-raiz]] e [[wiki/concepts/over-engineering]] — a armadilha de complexidade desnecessária associada ao nível sênior plus/staff nesta fonte
 
 ## Key Sources
 
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]]
+- [[wiki/sources/system-design-entrevista-cinema-draw-io]] — confirmação prática independente: o apresentador, ao desenhar um rascunho de entrevista, decide não aprofundar escalabilidade/RPS por considerar isso pergunta de senioridade mais alta — mesma gradação descrita nesta página, vinda de outra fonte/canal
+- [[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] — eixo complementar de sênior vs. staff baseado em escopo (produto vs. vertical), não profundidade técnica

@@ -3,8 +3,8 @@ type: concept
 title: "Hexagonal Architecture (Ports & Adapters)"
 aliases: ["arquitetura hexagonal", "ports and adapters", "ports adapters", "hexagonal"]
 date_created: 2026-05-04
-date_updated: 2026-07-24
-source_count: 4
+date_updated: 2026-07-30
+source_count: 5
 tags: [arquitetura, hexagonal, ports-adapters, acoplamento, testabilidade]
 skill: tech-mentor-backend
 status: stable
@@ -130,3 +130,4 @@ it("should throw when email already exists", async () => {
 - [[sources/ports-and-adapters-codebase-para-ia]] — antes/depois com exemplo de blog + ângulo de IA
 - [[wiki/sources/mappers-conversao-entre-camadas]] — mapper como peça dentro do adapter de persistência
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — equivalência Input/Output Boundary ↔ Driving/Driven Port
+- [[wiki/sources/clean-architecture-arquitetura-centrada-no-dominio]] — mesmo mecanismo (camada interna define interface, camada externa implementa) explicado via contraste com a arquitetura em 3 camadas

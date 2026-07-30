@@ -3,8 +3,8 @@ type: concept
 title: "Mentoria Técnica"
 aliases: ["mentoring", "mentorar júniors", "replicar conhecimento"]
 date_created: 2026-04-22
-date_updated: 2026-07-29
-source_count: 3
+date_updated: 2026-07-30
+source_count: 4
 tags: [carreira, mentoria, liderança, júnior, cultura, crescimento]
 skill: tech-mentor-leadership
 status: stable
@@ -51,12 +51,17 @@ De nada adianta contratar bons júniors e abandoná-los — ver [[contratacao-ba
 
 Falta de tempo, não má vontade, costuma ser a causa de comentários secos ou pouco explicados num [[wiki/concepts/code-review]] — sêniors sobrecarregados revisam entre outras entregas, sem espaço para explicar o "porquê". Isso reforça a importância de sessões dedicadas de mentoria, separadas do review em si, para o júnior não interpretar falta de tato como julgamento.
 
+## Mentoria em Escala de Comunidade, Não Só 1:1
+
+[[wiki/sources/papinho-tech-solo-comunidade]] estende o mesmo mecanismo de "ensinar força entendimento" para fora da relação sênior→júnior dentro de uma empresa: em meetups e eventos de comunidade, quem ensina não precisa ser expert nem sênior — basta saber algo (mesmo básico, como HTML/CSS estático) que outra pessoa ainda não sabe. O argumento central dessa fonte é que mentoria/ensino em comunidade segue um ciclo de retribuição: quem foi ajudado deve retribuir ajudando outra pessoa, sob risco de o ciclo se fechar quando alguém "vira celebridade" e some dos eventos pequenos que a formaram. Ver [[wiki/concepts/comunidade-tecnica]] para o conceito central.
+
 ## Ver também
 
 - [[one-on-one]] — formato estruturado de acompanhamento individual
 - [[contratacao-barra-alta]] — contratar bem é o primeiro passo, mentorar é o segundo
 - [[wiki/concepts/code-review]] — o momento onde a falta de mentoria estruturada mais dói
 - [[wiki/concepts/sindrome-do-impostor]] — o que a ausência de mentoria alimenta no júnior
+- [[wiki/concepts/comunidade-tecnica]] — mentoria/ensino generalizado para a escala de comunidade, com o ciclo de retribuição como mecanismo central
 
 ## Key Sources
 
@@ -64,3 +69,4 @@ Falta de tempo, não má vontade, costuma ser a causa de comentários secos ou p
 - [[wiki/sources/habitos-ruins-de-programador]]
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] — comentários secos no review costumam vir de falta de tempo, não de má intenção
 - [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — Hábito 3, ensinar em público (palestra/blog/vídeo) como forma escalável do mesmo mecanismo
+- [[wiki/sources/papinho-tech-solo-comunidade]] — mentoria/ensino em escala de comunidade (meetups), com retribuição como mecanismo central em vez de estrutura formal de 1:1

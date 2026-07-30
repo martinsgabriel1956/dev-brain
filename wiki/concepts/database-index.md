@@ -4,7 +4,7 @@ title: "Database Index"
 aliases: ["índice de banco de dados", "índice composto", "índice parcial"]
 date_created: 2026-04-22
 date_updated: 2026-07-29
-source_count: 6
+source_count: 8
 tags: [banco-de-dados, performance, postgresql, index, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -57,15 +57,29 @@ Uma vantagem prática de escrever SQL diretamente em vez de depender de um ORM: 
 
 [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] resume a diferença de forma direta: "o operador de CRUD usa o índice, o engenheiro sabe por que ele existe" — citado como exemplo do tipo de conhecimento que fica invisível atrás de um ORM ou ferramenta que "só funciona".
 
+## Índice Hash
+
+Além de B-tree, existe o índice **hash** — mesma ideia de um [[wiki/concepts/hashmap]]: chave (hash do valor) aponta direto para o valor, complexidade média O(1). A limitação é rígida: só serve para igualdade exata (`=`). Não funciona para range, ordenação nem prefixo (`LIKE 'Augus%'` não bate num índice hash) — para esses casos, a B-tree continua sendo a escolha certa, mesmo sendo mais lenta que hash no caso de match exato puro. Ver [[wiki/sources/indice-de-banco-de-dados]].
+
+## Índice Espacial
+
+Fora do escopo de B-tree/hash/GIN, existe o índice **espacial**, para geolocalização e coordenadas (ex.: "restaurantes a 2km desta posição") — inútil fora desse caso de uso. Ver [[wiki/concepts/geohash]] e [[wiki/concepts/redis-geo]] para a técnica usada na prática (geohash + sorted set).
+
 ## GIN — Índice Invertido para Texto e Dados Semi-Estruturados
 
 Nem todo índice é B-tree. `GIN` (Generalized Inverted Index) é o tipo de índice que o PostgreSQL usa para estruturar um [[wiki/concepts/indice-invertido|índice invertido]] — necessário para [[wiki/concepts/full-text-search|Full-Text Search]] (`GIN` sobre `to_tsvector(...)`) e também usado para `JSONB`/arrays. Sem esse índice, uma query com `to_tsvector(...) @@ to_tsquery(...)` recalcula o vetor de busca em tempo de execução a cada chamada — no exemplo registrado em [[wiki/sources/full-text-search-mysql-postgresql]], isso rodou **mais lento que o próprio `LIKE`** (139ms vs. 4,9ms) até o índice `GIN` ser criado, caindo então para ~0,3–0,8ms. O equivalente no MySQL é o `FULLTEXT INDEX`, consultado via `MATCH ... AGAINST`.
 
+## Índice Também é Dado — Custo de Manutenção a Cada Escrita
+
+Um índice composto (ex.: `account_id` + `created_at` para acelerar a tela de extrato) não é uma estrutura estática: qualquer `INSERT`/estorno que muda esses campos obriga o índice a se atualizar junto com a tabela. Isso reforça o "índice tem custo" já registrado acima — a pergunta de qual índice criar vem do padrão de acesso real (qual tela precisa responder rápido), não de indexar toda coluna por padrão. Ver [[wiki/concepts/buffer-pool]] para o porquê de o banco buscar páginas, não linhas isoladas — a mesma razão pela qual índices reduzem custo de leitura ao reduzir páginas tocadas. Ver [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]].
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
+- [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]] — índice como dado que precisa de manutenção a cada escrita; ligação entre índice e páginas/buffer pool
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] — índice hash como mecanismo de garantia de unicidade (e-mail único)
 - [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — "operador usa o índice, engenheiro sabe por que ele existe"
 - [[wiki/sources/full-text-search-mysql-postgresql]] — GIN como índice invertido para Full-Text Search; custo de rodar sem índice vs. com índice
+- [[wiki/sources/indice-de-banco-de-dados]] — demonstração visual de B-tree se reordenando a cada inserção e busca resolvida em O(log n); índice hash (match exato, O(1), sem range) e índice espacial como tipos adicionais

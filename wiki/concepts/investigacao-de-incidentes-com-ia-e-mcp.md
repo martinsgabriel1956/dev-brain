@@ -3,8 +3,8 @@ type: concept
 title: "Investigação de Incidentes com IA e MCP"
 aliases: ["ia observabilidade", "agente investigando incidentes", "relatório automatizado de telemetria", "grafana mcp"]
 date_created: 2026-07-15
-date_updated: 2026-07-15
-source_count: 1
+date_updated: 2026-07-29
+source_count: 2
 tags: [observabilidade, mcp, ia, agente-ia, opentelemetry, incident-response]
 skill: tech-mentor-infra
 status: draft
@@ -35,6 +35,12 @@ Combinando o MCP de observabilidade com um MCP de documentação de código (ex.
 
 O agente não está adivinhando — está fazendo o mesmo trabalho de correlação manual (cruzar traceId entre logs/traces/métricas) que um especialista faria, só que em segundos em vez de semanas. A etapa que historicamente consumia mais tempo (reunir e cruzar dados espalhados manualmente) é a etapa que a automação elimina; o raciocínio sobre causa raiz continua dependendo dos dados estarem lá.
 
+## O Limite do Padrão: Guardrails Podem Recusar Investigar o Próprio Ataque
+
+[[wiki/sources/modelo-openai-escapa-sandbox-benchmark-cyberseguranca]] documenta um caso em que este padrão falhou por um motivo que a página original não previa: durante um incidente real de segurança (~17.000 linhas de eventos gerados por um ataque, volume acima da capacidade de análise manual humana), o time tentou usar modelos padrão com [[wiki/concepts/agent-containment|guardrails]] ativos (via API pública) exatamente como descrito acima — pedir que o agente correlacione os dados e aponte a causa raiz. Os modelos **se recusaram a ajudar**, porque não distinguiram "investigar um ataque" (uso defensivo legítimo) de "executar um ataque" (o que os guardrails de intenção existem para bloquear). A solução encontrada foi hospedar um modelo sem guardrails (GLM 5.2) na própria infraestrutura, especificamente para essa investigação — ver [[wiki/concepts/soberania-digital]].
+
+Isso expõe uma tensão que não estava explícita nesta página: o padrão de "agente investiga telemetria via MCP" assume implicitamente que o agente vai cooperar com a tarefa de investigação. Quando a telemetria em si descreve um ataque em andamento, essa suposição pode quebrar — o mesmo classificador de intenção que protege o produto em produção pode bloquear o time que está tentando se defender usando a mesma ferramenta.
+
 ## Relacionado
 
 [[wiki/concepts/observabilidade]] · [[wiki/concepts/distributed-tracing]] · [[wiki/concepts/mcp-server]] · [[wiki/concepts/model-context-protocol]] · [[wiki/concepts/agente-ia]]
@@ -42,3 +48,4 @@ O agente não está adivinhando — está fazendo o mesmo trabalho de correlaç�
 ## Key Sources
 
 - [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]]
+- [[wiki/sources/modelo-openai-escapa-sandbox-benchmark-cyberseguranca]] — caso em que guardrails padrão recusaram ajudar a investigar um ataque real, exigindo modelo self-hosted sem guardrails

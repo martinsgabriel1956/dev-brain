@@ -1,7 +1,8 @@
 ---
 type: index
-date_updated: 2026-07-29
+date_updated: 2026-07-30
 ---
+
 
 
 
@@ -19,8 +20,16 @@ date_updated: 2026-07-29
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/pkce-proof-key-code-exchange-spa-mobile]] | PKCE (RFC 7636) resolve o problema do client secret dinâmico em SPA/mobile — `code_verifier` gerado no cliente, hash (`code_challenge`) enviado na autorização, `code_verifier` original revelado só na troca do código por token; substitui o Implicit Flow (deprecated, token na URL) e é obrigatório no OAuth 2.1 para todos os clients |
+| [[wiki/sources/rfc-7636-pkce-oauth-public-clients]] | Texto normativo completo do RFC 7636 (IETF, 2015), traduzido PT-BR — ABNF exata do `code_verifier` (43-128 chars), `S256` como MTI vs. `plain` desaconselhado, razão para não usar salting no `code_challenge`, e regras de retrocompatibilidade servidor/cliente |
+| [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] | Aula didática que constrói incrementalmente o percurso clássico de microsserviços: deadlock por banco compartilhado → banco por serviço → quebra de atomicidade → two-phase commit → gargalo de coordenação → Saga Pattern via fila (RabbitMQ)/event-driven → CQRS com read/write split e trade-off de replication lag |
+| [[wiki/sources/clean-architecture-arquitetura-centrada-no-dominio]] | Vídeo (inglês, traduzido) comparando 3-tier vs. Clean Architecture via app de lembretes — explica por que Clean Architecture é "domain-centric": lógica de negócio dividida em Application (use cases) + Domain (entidades/regras), banco na infrastructure layer, Dependency Rule via interfaces definidas por dentro e implementadas por fora |
+| [[wiki/sources/delay-tv-aberta-vs-youtube-live-latencia-streaming]] | Por que uma live de futebol no YouTube chega atrasada em relação à TV aberta — buffer de leitura antecipada como principal causador de latência (segundo doc. do YouTube), radiodifusão sem sessão individual por espectador na TV aberta, modos de latência do YouTube (normal/baixa <10s/ultra baixa <5s) |
+| [[wiki/sources/email-address]] | Endereço de e-mail via RFC 5322/5321: `local-part@domain`, parte local case-sensitive na spec mas case-insensitive na prática, sub-addressing (`+tag`) formal via RFC 5233, domínio via regras LDH e resolução por registros MX; internacionalização (EAI/SMTPUTF8) permite UTF-8 completo; sintaxe válida não prova que a caixa existe |
 | [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] | Zeno Rocha: 14 hábitos de dev produtivo em 5 categorias — JOMO contra FOMO tecnológico, ensinar como forma de aprender, consistência (jogo infinito) > intensidade, código para o "eu futuro", visão de negócio (problema XY), triagem de side project em 6 perguntas, Mario vs. Sonic (tempo de casa), ouvir para entender, 5 razões para subestimar tarefas, especialista vs. generalista, e a dicotomia estoica do controle |
 | [[wiki/sources/full-text-search-mysql-postgresql]] | `LIKE '%termo%'` é a intuição errada de busca — falha em relevância (substring de caracteres, não palavras) e em performance (full table scan); Full-Text Search resolve os dois via índice invertido — `FULLTEXT INDEX`/`MATCH AGAINST` no MySQL, `tsvector`/`tsquery`/`GIN` no PostgreSQL (que ainda entende plural/singular e sinônimos via lexema/tesauro) |
+| [[wiki/sources/indice-de-banco-de-dados]] | O que é um índice de banco de dados e por que existe — demonstração visual de B-tree se reordenando e busca em O(log n); B-tree (padrão, range) vs. hash (match exato, O(1)) vs. composto vs. único/não único vs. parcial vs. full-text vs. espacial; regra de ouro: índice é ditado pelo padrão de acesso |
+| [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]] | Caminho completo de uma escrita num banco relacional via exemplo de Pix: páginas → buffer pool (buffer hit/miss, dirty pages) → WAL (commit responde antes da página final) → transação/atomicidade → locks + MVCC → isolation levels (Read Committed vs. Repeatable Read) → índice como dado com custo de manutenção → vacuum/compaction → checkpoint/recovery; fecha com "banco não é só um arquivo" |
 | [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]] | N+1 em duas camadas — frontend↔backend (via API) e backend↔banco (via ORM lazy loading) — mesmas soluções estruturais (endpoint/query especializada, lista de IDs conhecida, ou JOIN/prefetch); origem do GraphQL na Meta como resposta genérica ao N+1/over-under-fetching entre múltiplos frontends; fecha com relational queries do Drizzle como syntax sugar inspirado no GraphQL |
 | [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] | Por que estudar linguagens e conceitos low level (mesmo sem retorno financeiro imediato) traz satisfação pessoal e benefício de carreira no longo prazo — caso pessoal do bot de Discord de Tibia otimizado com concorrência em Go, e da contribuição não remunerada à API TibiaData |
 | [[wiki/sources/7-habitos-programador-altamente-eficaz]] | Sete hábitos de programador eficaz: buscar solução por conta própria antes de perguntar, escapar da paralisia do planejamento sem cair em over-engineering, ler código alheio, documentar de forma inteligente (testes como documentação viva), pensar primeiro em abstrações/limites (analogia dos órgãos), perder o medo de código, e bloquear a própria agenda para "entortar o tempo" |
@@ -223,6 +232,15 @@ date_updated: 2026-07-29
 | [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]] | Linha do tempo da criptografia — cítala espartana e cifra de César (criatividade, não matemática) → Vigenère (polialfabética, "indecifrável" por 300 anos) → Enigma (quebrada por reuso de chave) → AES/RSA modernos (key distribution problem resolvido por par público/privado) → IND-CPA como modelo formal (César falha, preserva padrão de repetição) → ameaça quântica (Shor quebra RSA, Grover só acelera busca) → password hashing (salt, pepper, BCrypt EKS-Blowfish limitado a 72 chars, Argon2id em três fases) |
 | [[wiki/sources/story-points-po-forcando-30-40-pontos-por-sprint]] | Lucas Badico: pergunta de mentorado sobre PO exigindo 30-40 story points/sprint por pessoa vira discussão sobre o papel do Scrum Master e do PO — story points medem complexidade relativa (não tempo), forçar uma meta de cima para baixo corrompe a métrica (Lei de Goodhart), reduz colaboração e reproduz Waterfall com verniz de cerimônias ágeis |
 | [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] | Guia introdutório de dívida técnica: revisita Quadrante de Fowler e analogia com dívida financeira; acrescenta debt ratio/SQALE (`remediation/development cost`, faixas <5%/5-10%/10-20%/>20%), hotspot analysis (complexidade ciclomática × code churn), framework PAID, matriz refatorar-vs-reescrever (valor×risco), regra dos 20% vs. regra dos 25% do Shopify, TDD/pair programming/CI-CD como prevenção, template de business case para stakeholders, caso Knight Capital |
+| [[wiki/sources/historia-dos-formatos-de-imagem]] | Cronologia dos formatos de imagem (TGA 1984 → PDF): canal alfa e RLE nos formatos raster antigos, JPEG (compressão com perdas em blocos 8x8) vs. PNG (sem perdas, criado como resposta livre-de-patente ao GIF), SVG como único formato vetorial, e WebP/HEIC/AVIF como geração mais recente — HEIC e AVIF reaproveitam literalmente codecs de vídeo (HEVC, AV1) para comprimir uma imagem única |
+| [[wiki/sources/modelo-openai-escapa-sandbox-benchmark-cyberseguranca]] | Benchmark interno de cybersegurança da OpenAI (GPT 5.6 + modelos não públicos, guardrails removidos) explora zero-day no proxy de egress e escapa do sandbox de rede; invade servidor da Hugging Face via credencial vazada (~17.000 linhas de eventos); modelos com guardrail padrão se recusam a ajudar a investigar o próprio incidente, obrigando a hospedar o GLM 5.2 (Zhipu AI) internamente sem guardrails |
+| [[wiki/sources/papinho-tech-solo-comunidade]] | Comunidade técnica como ciclo de recebimento e retribuição — quem foi ajudado por um meetup/palestra deve retribuir ajudando outra pessoa; caso de interiorização de tecnologia em São José do Alegre (MG) com o Instituto Aaron Schwartz; preguiça de sair de casa, não falta de eventos, é o maior obstáculo à participação |
+| [[wiki/sources/porque-nunca-confiar-em-llm-alucinacao]] | Alucinação de LLM é fenômeno mensurável (94% humano vs 58% LLM em benchmark citado; melhor modelo errou 48%); paper da OpenAI aponta causa raiz — treinamento recompensa palpite em vez de reconhecer incerteza, precisão nunca chega a 100%; caso Air Canada como precedente de risco jurídico; 205 mil pacotes de código alucinados num corpus de 576 mil gerações; RAG e LLM-as-judge (faithfulness) reduzem mas não eliminam o problema |
+| [[wiki/sources/devsecops-origem-cultura-manifesto]] | Origem do DevSecOps: cunhado pela Gartner em 2012, três anos após Patrick Debois formalizar o DevOps (2009, inspirado pela palestra da Flickr na Velocity); Manifesto DevSecOps propõe atacar o próprio produto como um invasor externo faria em vez de confiar só em scanners; shift-left testing mapeado por fase do ciclo (planejamento → build → deploy → operação); segurança como cultura de pessoas, não só ferramental |
+| [[wiki/sources/system-design-entrevista-cinema-draw-io]] | Rocket City (João): entrevista de system design simulada ao vivo no draw.io para "reserva de ingressos de cinema" — follow-up questions, load balancer, MySQL vs. não-relacional, APIs externas de seatmap/pagamento, Redis com TTL como reserva de 15 min; autor expõe abertamente um bug de consistência não resolvido no próprio desenho |
+| [[wiki/sources/injecao-sql-aula-modulo-seguranca]] | Aula prática (Express + `pg`, sem ORM) de SQL Injection ao vivo: bypass via `' OR '1'='1'` em query string e via `1 OR 1=1` em parâmetro de rota, retornando todos os usuários; correção via placeholders parametrizados (`$1`/`$2`); camada extra de validação de schema com Celebrate + Joi rejeitando o ataque antes da query rodar |
+| [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] | Lucas Montano (atribuição provável) reage ao Claude Tag (Claude no Slack) da Anthropic e à tese de Andrej Karpathy de "terceira reformulação da interface de LLM" (site → app → agente autônomo assíncrono organizacional); memória multiplayer por canal, modo ambient proativo; contraponto de Gergely Orosz — o breakthrough é integração confiável com sistemas internos, não a interface; Anthropic ultrapassa OpenAI no gasto em cartão corporativo em abril; alerta de vendor lock-in de memória organizacional |
+| [[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] | Estudo de caso fictício "Super Roupas": 4 sistemas de fornecedor sem visibilidade unificada de status/atraso; solução "vendida" de microfrontends parciais unifica a experiência (sintoma errado, 3+ meses, alto atrito entre times); solução enxuta é dashboard read-only + BFF agregador (causa raiz, <2 meses, time de 4); eixo sênior (produto) vs. staff (vertical) e reflexão sobre "escalável para quê" |
 
 ## Concepts
 
@@ -230,6 +248,7 @@ date_updated: 2026-07-29
 
 | Página | Hook |
 |---|---|
+| [[wiki/concepts/pkce]] | Client secret dinâmico e descartável para SPA/mobile — `code_verifier`/`code_challenge` via hash, resolve a falta de prova de posse do Implicit Flow, obrigatório no OAuth 2.1 |
 | [[wiki/concepts/mfa-multifator-autenticacao]] | Três categorias de fator (sabe/tem/é) — dois fatores da mesma categoria não valem como MFA de verdade |
 | [[wiki/concepts/otp-hotp-totp]] | Código de 6 dígitos a partir de seed + relógio ou contador — RSA SecurID proprietário até HOTP/TOTP padronizado pela IETF |
 | [[wiki/concepts/webauthn-fido2-u2f]] | Criptografia assimétrica em vez de segredo compartilhado — chave privada nunca sai do dispositivo, phishing-resistant por design |
@@ -277,6 +296,7 @@ date_updated: 2026-07-29
 | [[wiki/concepts/seis-passos-mock-interview]] | Roteiro de dez etapas para transformar prática solo de LeetCode em simulação fiel de entrevista real — cronômetro, sem ler o enunciado, Big-O antes de codar |
 | [[wiki/concepts/entrevista-system-design]] | Whiteboard interview: requisitos core antes de desenhar, plano de capacidade, modelagem de dados/API, e só então o high-level design |
 | [[wiki/concepts/networking-de-carreira]] | Mercado invisível de indicações — quanto mais sênior o cargo, mais a vaga é preenchida por "você conhece alguém?" em vez de vaga aberta |
+| [[wiki/concepts/comunidade-tecnica]] | Ciclo de recebimento e retribuição em meetups/eventos — quem foi ajudado deve retribuir, sob risco de o ciclo se fechar quando alguém "vira celebridade" e some dos eventos pequenos |
 | [[wiki/concepts/credencialismo-formacao-formal]] | Diploma como proxy de disciplina, não de competência técnica — "tecnologia se ensina, disciplina não" |
 | [[wiki/concepts/divisao-de-tarefas-em-partes-menores]] | Divida até responder "tenho segurança?" e "consigo dar prazo?" — pare quando não der mais para dividir entre duas pessoas |
 | [[wiki/concepts/organizacao-pessoal-do-trabalho]] | Anotar em papel, listar subtarefas, riscar progresso — fecha os "loops abertos" que ficam martelando na cabeça |
@@ -297,6 +317,7 @@ date_updated: 2026-07-29
 | [[wiki/concepts/visao-de-negocio-do-desenvolvedor]] | O "problema XY": perguntar como implementar X quando o problema real era Y — visão de negócio economiza tempo, evita complexidade e prioriza melhor |
 | [[wiki/concepts/permanencia-vs-troca-de-emprego]] | Mario (troca a cada 6 meses, evita desconforto) vs. Sonic (busca desafio, aprofunda) — impacto de carreira de longo prazo exige tempo investido no mesmo lugar |
 | [[wiki/concepts/controle-do-que-e-controlavel]] | Dicotomia estoica aplicada à carreira: pare de gastar energia em variáveis incontroláveis (economia, opinião alheia), foque nas controláveis (hábitos, tempo, dinheiro) |
+| [[wiki/concepts/senior-vs-staff-visao-arquitetural]] | Sênior olha para o escopo do próprio produto, staff olha para a vertical inteira — armadilha comum aos dois: confundir solução mais complexa com solução mais madura |
 
 ### Recursos de Aprendizado
 
@@ -468,6 +489,8 @@ date_updated: 2026-07-29
 | [[wiki/concepts/camada-de-aplicacao-vs-modelo]] | Com modelos cada vez mais equivalentes, a vantagem competitiva migra do modelo para a camada de aplicação |
 | [[wiki/concepts/agent-memory-tres-camadas]] | Memória de sessão + persistente (`memory.md`) + skill, indexada via FTS5 do SQLite — padrão comum a orquestradores de agente, não exclusivo de um projeto |
 | [[wiki/concepts/closed-loop-skill-learning]] | Loop de 5 etapas (task completion → pattern extraction → skill creation → refinement → periodic audit) que gera e refina skills automaticamente a partir do histórico de tarefas |
+| [[wiki/concepts/paradigmas-interface-llm]] | Karpathy: três reformulações de interface de LLM — site → app local → entidade autônoma, persistente e assíncrona a serviço de toda a organização (Claude Tag) |
+| [[wiki/concepts/lock-in-vendor-ia]] | Meses de memória organizacional acumulada num agente de fornecedor único (ex.: Claude Tag) tornam a migração cara — mitigação sugerida: paralelo de engenharia própria |
 
 ### Dívida Cognitiva & Teoria do Programa
 
@@ -503,7 +526,7 @@ date_updated: 2026-07-29
 | [[wiki/concepts/codigo-legado-ia]] | IA funciona melhor em legado que greenfield quando há referências ricas; desafio é técnica, não capacidade |
 | [[wiki/concepts/model-context-protocol]] | Protocolo padrão Anthropic para integrar LLMs a ferramentas externas — "USB-C das integrações de IA" |
 | [[wiki/concepts/mcp-arquitetura]] | Host/Client/Server + transportes stdio/SSE/Streamable HTTP — server deve ficar em pé, não subir e cair |
-| [[wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp]] | Agente com Grafana MCP correlaciona métricas/logs/traces sozinho e acha causa raiz em código — semanas de investigação viram minutos, mas só se os dados já existirem |
+| [[wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp]] | Agente com Grafana MCP correlaciona métricas/logs/traces sozinho e acha causa raiz em código — semanas de investigação viram minutos, mas só se os dados já existirem; guardrails podem recusar investigar um ataque real por não distinguir defesa de ofensa |
 | [[wiki/concepts/cli-vs-mcp]] | CLI usa treinamento da LLM e economiza contexto; MCP expõe tools delimitadas — critério de decisão |
 | [[wiki/concepts/tech-spec]] | Segundo artefato do SDD: traduz o PRD em decisões técnicas (contratos, schemas, arquitetura) |
 | [[wiki/concepts/human-in-the-loop]] | HITL em três granularidades: por tool call, por plan, por etapa SDD — Plan Mode é a forma leve |
@@ -548,6 +571,7 @@ date_updated: 2026-07-29
 | [[wiki/concepts/fine-tuning]] | Continuar treinamento num dataset específico de tarefa — alternativa mais custosa ao ICL |
 | [[wiki/concepts/emergent-ability]] | Capacidade que não existe em modelos pequenos e aparece abruptamente acima de certo limiar de escala — CoT é o exemplo canônico |
 | [[wiki/concepts/j-space-interpretabilidade]] | Espaço interno de ativações do Claude vinculável a palavras nunca verbalizadas no output, lido via Jacobian Lens (Anthropic) — distinto de chain-of-thought, que é texto observável |
+| [[wiki/concepts/alucinacao-llm]] | LLM inventa fatos, código e referências com confiança — causa raiz (OpenAI): treinamento recompensa palpite sobre reconhecimento de incerteza; RAG e LLM-as-judge (faithfulness) mitigam mas nunca eliminam; risco jurídico real (caso Air Canada) |
 
 ### Fundamentos de Sistemas Operacionais
 
@@ -607,6 +631,20 @@ date_updated: 2026-07-29
 | [[wiki/concepts/language-server-protocol]] | Protocolo da Microsoft que desacopla editor de linguagem — um servidor, N editores com autocomplete e erros inline |
 | [[wiki/concepts/standard-library-e-ecossistema]] | Stdlib, package manager e tooling — o que faz uma linguagem tecnicamente boa sobreviver de fato |
 | [[wiki/concepts/compactacao-de-texto]] | Huffman coding (código curto para caractere frequente, árvore encolhe com menos variedade de caixa) + LZSS/LZ77 (ponteiro para sequência repetida) = deflate/gzip; por isso maiúsculas custam mais depois de compactar mesmo custando o mesmo antes |
+
+### Formatos de Imagem & Compressão
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/compressao-com-perdas-vs-sem-perdas]] | JPEG descarta informação de propósito (DCT em blocos 8x8 + quantização), PNG não descarta nada — a escolha é fidelidade vs. tamanho, não "qual é melhor" |
+| [[wiki/concepts/formato-jpeg]] | Compressão com perdas em blocos 8x8 — resalvar o mesmo arquivo repetidamente degrada a imagem de forma cumulativa |
+| [[wiki/concepts/formato-png]] | Nasceu como resposta livre-de-patente ao licenciamento cobrado sobre o LZW do GIF — compressão sem perdas + transparência verdadeira |
+| [[wiki/concepts/formato-gif]] | Paleta de 256 cores, LZW patenteado — o formato cuja cobrança de royalties gerou o PNG |
+| [[wiki/concepts/formato-svg]] | Único formato vetorial da lista — armazena instruções matemáticas, não pixels, por isso escala infinitamente sem perder nitidez |
+| [[wiki/concepts/formato-webp]] | Google (2010) unificou JPEG+PNG+GIF num único contêiner — 20-30% menor com qualidade comparável |
+| [[wiki/concepts/formato-heic-avif]] | HEIC e AVIF não inventam compressão própria — reaproveitam codecs de vídeo (HEVC, AV1) para comprimir um frame único |
+| [[wiki/concepts/formato-raw-fotografia]] | RAW não é imagem pronta — é o dado bruto do sensor antes de qualquer processamento; TIFF é o irmão "revelado" de fidelidade total |
+| [[wiki/concepts/exif-metadados]] | Metadados embutidos em JPEG podem incluir coordenadas GPS da foto — privacidade vaza sem que o usuário perceba |
 
 ### Fundamentos de Lógica e Programação
 
@@ -705,6 +743,7 @@ date_updated: 2026-07-29
 | [[wiki/concepts/cap-theorem]] | Consistência vs Disponibilidade vs Partição — o trade-off central de sistemas distribuídos |
 | [[wiki/concepts/simulador-de-system-design]] | Playground que roda tráfego simulado sobre o diagrama e pontua o desenho com IA — não é só desenhar, é testar |
 | [[wiki/concepts/niveis-de-senioridade-system-design]] | Júnior soluciona e demonstra fundação, pleno resolve com racional prático, sênior otimiza e lidera a conversa — entrevista cobra o todo em qualquer nível, trabalho real só exige isso a partir de sênior |
+| [[wiki/concepts/latencia-streaming-ao-vivo]] | Delay entre captura e exibição em live streaming — buffer de leitura antecipada como principal causador; TV aberta (radiodifusão, sem sessão individual) tem latência estruturalmente menor que streaming via internet |
 
 ### Fundamentos de Backend (Request/Response ao Deploy)
 
@@ -781,7 +820,7 @@ date_updated: 2026-07-29
 | [[wiki/concepts/base-basically-available-soft-state-eventual]] | O contraponto de ACID — disponibilidade e escala em troca de consistência eventual |
 | [[wiki/concepts/relational-vs-nosql]] | Não existe escolha universal; trade-offs de consistência, queries, escala e schema por tipo de banco |
 | [[wiki/concepts/database-transactions]] | Mecanismo que garante atomicidade — `$transaction` como invocação do contrato ACID |
-| [[wiki/concepts/database-index]] | Estrutura (B-tree/hash) que acelera queries e garante unicidade ao custo de overhead em escritas |
+| [[wiki/concepts/database-index]] | Estrutura (B-tree/hash/GIN/espacial) que acelera queries e garante unicidade ao custo de overhead em escritas |
 | [[wiki/concepts/consistency-models]] | Espectro de Linearizability a Eventual Consistency — o que um cliente pode observar após uma escrita |
 | [[wiki/concepts/stored-procedure]] | Lógica armazenada e executada no banco — mover regra de negócio pra lá compensa em agregação de grande volume, mas com moderação |
 | [[wiki/concepts/materialized-view]] | View com resultado persistido em disco — meio-termo entre SQL cru repetido e stored procedure |
@@ -793,6 +832,11 @@ date_updated: 2026-07-29
 | [[wiki/concepts/full-text-search]] | Índice invertido dedicado (`FULLTEXT`/`MATCH AGAINST` no MySQL, `tsvector`/`GIN` no Postgres) — resolve relevância e performance onde `LIKE '%termo%'` falha nos dois eixos |
 | [[wiki/concepts/indice-invertido]] | Palavra → lista de IDs onde ela ocorre; estrutura por baixo de todo Full-Text Search, de `FULLTEXT INDEX` a Lucene |
 | [[wiki/concepts/like-wildcard]] | `LIKE '%termo%'` — antipattern de busca: substring de caracteres em vez de palavra, e full table scan em vez de índice |
+| [[wiki/concepts/buffer-pool]] | Cache de páginas em memória do banco — buffer hit/miss e dirty pages que aguardam persistência assíncrona |
+| [[wiki/concepts/write-ahead-log]] | WAL: log escrito antes da página final — commit responde assim que o log é gravado, não quando o disco é atualizado |
+| [[wiki/concepts/mvcc]] | Múltiplas versões de uma linha em paralelo — leitura e escrita concorrentes sem lock mútuo |
+| [[wiki/concepts/isolation-levels]] | Read Committed vs. Repeatable Read vs. Serializable — qual versão dos dados uma transação enxerga |
+| [[wiki/concepts/database-recovery]] | Checkpoint limita o WAL a reler; recovery reaplica confirmadas e descarta incompletas após uma queda |
 
 ### Arquitetura Backend & Event-Driven
 
@@ -813,6 +857,8 @@ date_updated: 2026-07-29
 | [[wiki/concepts/api-composition]] | API Composer orquestra múltiplas chamadas em paralelo (fan-out) e devolve um único resultado lapidado — técnica central por trás de BFFs e agregação de endpoints |
 | [[wiki/concepts/graphql]] | Cliente pede a estrutura de dados exata que quer numa única query — criado pela Meta para resolver N+1/over-under-fetching entre múltiplos frontends; sempre POST por limite de tamanho de URL |
 | [[wiki/concepts/microsservicos]] | Decomposição por bounded context, não por camada técnica; monolito modular é o ponto de partida correto para ~90% dos casos; estudar o estilo funciona como eixo de aprendizado que amarra circuit breaker, saga, observabilidade e mensageria |
+| [[wiki/concepts/database-per-service]] | Banco isolado por microsserviço resolve deadlock de banco compartilhado, mas cria problema de atomicidade entre serviços — motiva 2PC/Saga |
+| [[wiki/concepts/event-driven-architecture]] | Comunicação via eventos publicados/reagidos em vez de chamadas síncronas — base do Saga coreografado e da propagação write→read em CQRS |
 
 ### Boas Práticas de Engenharia
 
@@ -873,7 +919,7 @@ date_updated: 2026-07-29
 | [[wiki/concepts/xss]] | Injeção de JavaScript no browser da vítima — mesma classe do SQLi, contexto HTML/JS |
 | [[wiki/concepts/timing-attack]] | Tempo de resposta como canal de informação — variação de latência revela segredos |
 | [[wiki/concepts/sast]] | Análise estática de segurança no código — detecta padrões vulneráveis antes do deploy |
-| [[wiki/concepts/secrets-management]] | Credenciais nunca no código — .env local, GitHub Secrets/AWS SM em produção |
+| [[wiki/concepts/secrets-management]] | Credenciais nunca no código — .env local, GitHub Secrets/AWS SM em produção; caso real de agente de IA autônomo encontrando e explorando credencial vazada sem intervenção humana |
 | [[wiki/concepts/password-hashing]] | Armazenar senhas exige algoritmo lento + salt + pepper — plaintext e MD5/SHA são inseguros |
 | [[wiki/concepts/salt]] | String aleatória por usuário concatenada à senha — invalida rainbow tables pré-computadas |
 | [[wiki/concepts/pepper]] | Segredo do servidor concatenado à senha — defesa se só o banco vazar |
@@ -907,9 +953,13 @@ date_updated: 2026-07-29
 | [[wiki/concepts/exposicao-excessiva-de-dados]] | Retornar a entidade inteira em vez de projetar campos vaza dados sensíveis mesmo sem exibi-los na UI |
 | [[wiki/concepts/toctou]] | Intervalo entre check e use permite saque/estoque duplicado sob concorrência — corrigido com transactions atômicas |
 | [[wiki/concepts/confiar-no-frontend]] | Anti-padrão raiz: regra de negócio só no cliente é sempre contornável — servidor deve revalidar tudo |
-| [[wiki/concepts/agent-containment]] | Isolar o processo de um agente de IA (sandbox) para limitar dano se ele executar código malicioso vindo de uma dependência comprometida |
+| [[wiki/concepts/agent-containment]] | Isolar o processo de um agente de IA (sandbox) para limitar dano se ele executar código malicioso vindo de uma dependência comprometida — mesmo um proxy de egress dedicado pode ser contornado via zero-day, como em [[wiki/sources/modelo-openai-escapa-sandbox-benchmark-cyberseguranca]] |
+| [[wiki/concepts/zero-day]] | Falha desconhecida do fornecedor até o momento da exploração — caso real: agente de IA achou e explorou zero-day no próprio proxy de rede que o continha |
 | [[wiki/concepts/supply-chain-security]] | SBOM, SLSA, Sigstore/Cosign contra dependências comprometidas; ataques via `postinstall` malicioso (ex.: npm) como vetor mais direto |
 | [[wiki/concepts/sistema-operacional-imutavel]] | Root somente-leitura (NixOS/Fedora Silverblue) — dano ao sistema não sobrevive a um reboot |
+| [[wiki/concepts/soberania-digital]] | Controle sobre dados/infra dentro de fronteiras jurisdicionais — estendido a controle sobre o próprio modelo de IA quando guardrails de terceiros recusam ajudar numa investigação de incidente |
+| [[wiki/concepts/devsecops]] | Segurança como responsabilidade compartilhada em todo o ciclo de vida do software, não setor isolado no fim do pipeline — cunhado pela Gartner em 2012 a partir do DevOps |
+| [[wiki/concepts/shift-left-testing]] | Mover testes de segurança para o início do ciclo (planejamento, código) em vez de só no fim — secret scanning, SCA, SAST, IAST cobrindo cada fase |
 
 ### Frontend & Design Engineering
 
@@ -988,6 +1038,7 @@ date_updated: 2026-07-29
 | [[wiki/concepts/mapper-pattern]] | Classe estática por camada que converte entidade de domínio para o formato de outra camada (Prisma, HTTP) — isola o acoplamento à tecnologia, não ao domínio |
 | [[wiki/concepts/objeto-vs-estrutura-de-dados]] | Uncle Bob: objeto = funções sobre dados implícitos/encapsulados; estrutura de dados = dados expostos operados por funções externas — conceitos literalmente opostos, não sobrepostos |
 | [[wiki/concepts/clean-architecture]] | Regra de dependência apontando para dentro; fluxo de aplicação web camada a camada — Controller empacota Input Data, Use Case orquestra Entities, Presenter reempacota em ViewModel |
+| [[wiki/concepts/arquitetura-em-3-camadas]] | Presentation → Business → Data Access com dependência direta e transitiva; contraponto usado para explicar por que Clean Architecture é "domain-centric" |
 | [[wiki/concepts/anti-pattern]] | Repetição que parece solução mas cria problemas — frequência não implica qualidade |
 | [[wiki/concepts/over-engineering]] | "Verde neném" — aplicar patterns sem base; pular etapas da progressão produz complexidade sem valor; under-engineering é o problema mais comum |
 | [[wiki/concepts/under-engineering]] | Fazer menos do que o projeto exige — acoplamento, hardcode, sem CI, copy-paste sem estrutura; mais comum que over-engineering, e o antídoto não exige nenhuma técnica sofisticada |
@@ -1014,6 +1065,7 @@ date_updated: 2026-07-29
 | [[wiki/entities/theodor]] | Dev/criador de conteúdo construindo jogo indie do zero sem engine — identidade exata não confirmada na fonte |
 | [[wiki/entities/knight-capital]] | Trading de alta frequência: código morto reativado por engano num deploy (2012) causou perda de ~$440-460 milhões em 45 minutos — caso extremo de custo de não seguir a Boy Scout Rule |
 | [[wiki/entities/edgar-codd]] | IBM, 1970: paper do modelo relacional e independência de dados — fundamento de tudo que veio depois |
+| [[wiki/entities/rabbitmq]] | Message broker AMQP — fila que viabiliza Saga Pattern coreografado sem gargalo de coordenação síncrona |
 | [[wiki/entities/rsa-security]] | Criadora do SecurID — token de hardware que popularizou o segundo fator de autenticação nos anos 90 |
 | [[wiki/entities/ietf]] | Padronizou HOTP (RFC 4226) e TOTP (RFC 6238), tirando a autenticação por OTP das mãos de fornecedores proprietários |
 | [[wiki/entities/sakana-ai]] | Empresa japonesa de IA — Fugo, pool de modelos que superou Fable 5 e alguns benchmarks do Mitos preview em cybersegurança |
@@ -1022,6 +1074,7 @@ date_updated: 2026-07-29
 | [[wiki/entities/rinha-de-backend]] | Desafio open source de backend (transações crédito/débito) — usado como exemplo de decomposição de tarefa em casos de teste |
 | [[wiki/entities/ux-pilot]] | Ferramenta de geração de UI/UX por IA (telas completas ou wireframes) que exporta pro Figma, de onde o MCP conecta a uma IA de código |
 | [[wiki/entities/moonshot-ai]] | Lab chinês criador do Kimi — Kimi K3 (2,8T parâmetros, MoE 896/16 experts) publica método de inferência aberto para descentralizar conhecimento de servir modelos grandes |
+| [[wiki/entities/instituto-aaron-schwartz]] | ONG brasileira que leva conhecimento de tecnologia a adolescentes de cidades pequenas sem acesso prévio a essa informação |
 | [[wiki/entities/deepseek]] | Lab chinês — DeepSeek V4 Pro, maior open source antes do Kimi K3; DeepSeek Flash V4 como referência de modelo barato para tarefas do dia a dia |
 | [[wiki/entities/nvidia]] | Fabricante de GPUs — sujeita a sanções de exportação de chips para a China, pressão de fundo por trás de inovação em MoE/KV Cache |
 | [[wiki/entities/bubblewrap]] | Binário de sandboxing do GNOME (usado pelo Flatpak) — base técnica do AI Jail e do sandbox nativo do Claude Code |
@@ -1047,7 +1100,9 @@ date_updated: 2026-07-29
 | [[wiki/entities/dale-carnegie]] | Autor de "Como Fazer Amigos e Influenciar Pessoas" (1936) — confiança e influência genuína como base da habilidade interpessoal |
 | [[wiki/entities/randy-nelson]] | Ex-Pixar, hoje Apple — educador; autor da palestra sobre as três características (profundidade, abrangência, comunicação) de um candidato excepcional |
 | [[wiki/entities/eduarda-rocket-city]] | Engenheira de software internacional, criadora de conteúdo no canal Rocket City |
-| [[wiki/entities/openai]] | Organização responsável pelo GPT-3/4 — formalizou in-context learning e scaling laws; criadora do tokenizer tiktoken |
+| [[wiki/entities/joao-rocket-city]] | Engenheiro de software pra gringa (3 anos), apresentador de série semanal de system design no canal Rocket City |
+| [[wiki/entities/openai]] | Organização responsável pelo GPT-3/4 — formalizou in-context learning e scaling laws; criadora do tokenizer tiktoken; benchmark interno de cybersegurança sem guardrails resultou em zero-day explorado e ataque real via credencial vazada |
+| [[wiki/entities/hugging-face]] | Hub de modelos, datasets e benchmarks de IA — alvo de um ataque real via credencial de servidor vazada e publicamente indexada, explorado por um agente de IA autônomo |
 | [[wiki/entities/google]] | Criadora do Gemini e do harness AntiGravity — concorrente de Anthropic e OpenAI, tokenizer próprio |
 | [[wiki/entities/matt-pocock]] | Educador de TypeScript/AI (AI Hero) — fundamentos de LLM, e a tese de que fundamentos de software importam mais que nunca na era da IA |
 | [[wiki/entities/fred-brooks]] | Mythical Man-Month, No Silver Bullet, e o conceito de "design concept" — teoria compartilhada e invisível do que está sendo construído |
@@ -1120,6 +1175,11 @@ date_updated: 2026-07-29
 | [[wiki/entities/chris-kiehl]] | Autor do blog Blogomatano e de *Data-Oriented Programming in Java* — retrospectivas de carreira listando opiniões de engenharia que mudaram/permaneceram |
 | [[wiki/entities/vitor-sousa-pereira]] | Autor do blog `0x1.pt` — escreveu "The Insanity of Being a Software Engineer" (2025), lista satírica da escalada de exigências técnicas esperadas de um único engenheiro |
 | [[wiki/entities/ken-thompson]] | Criador do Unix e do `grep` na AT&T — Unix nasceu como subproduto de rodar melhor seu jogo *Space Travel*; `grep` era comando privado antes de virar público |
+| [[wiki/entities/patrick-debois]] | "Padrinho" do termo DevOps — blog Jedi, movimento de infraestrutura ágil desde 2008, criador do primeiro DevOps Day (Gante, 2009) |
+| [[wiki/entities/flickr]] | Palestra "10+ Deploys por Dia" na Velocity 2009 — catalisou o movimento DevOps ao demonstrar deploys frequentes via cooperação dev/ops |
+| [[wiki/entities/andrej-karpathy]] | Ex-diretor de IA da Tesla, fundador da OpenAI — tese dos "três paradigmas de interface de LLM" (site → app → agente autônomo assíncrono organizacional), em reação ao Claude Tag |
+| [[wiki/entities/gergely-orosz]] | Autor do Pragmatic Engineer — contraponto ao hype do Claude Tag: o breakthrough é integrar de forma confiável todos os sistemas internos de uma empresa, não a interface do Slack |
+| [[wiki/entities/devin-ai]] | Cognition AI — precursor do padrão de agente na nuvem (cloud agent) via chat/Slack; usado (relato de segunda mão) pelo Nubank para refatoração |
 
 ### Documentação de Arquitetura
 

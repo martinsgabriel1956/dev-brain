@@ -3,9 +3,9 @@ type: concept
 title: "CDN Strategy"
 aliases: ["cdn", "content delivery network", "edge cache", "cloudfront"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
-tags: [system-design, cdn, cache, infra, performance, video]
+date_updated: 2026-07-30
+source_count: 2
+tags: [system-design, cdn, cache, infra, performance, video, live-streaming]
 skill: tech-mentor-system-design
 status: stable
 ---
@@ -43,6 +43,10 @@ Ao detectar crescimento anômalo de views → push proativo do vídeo para edges
 
 28 Tbps de saída distribuído entre centenas de PoPs globais — nenhum edge sozinho processa isso.
 
+## CDN em Live Streaming — TTL de Manifesto Muito Mais Curto
+
+Em VOD, o manifesto tem TTL de ~60s porque só muda quando o vídeo recebe capítulos. Em **live streaming**, o manifesto muda constantemente — novos segmentos são publicados a cada poucos segundos enquanto a transmissão está no ar — então o TTL do manifesto precisa ser da ordem de segundos, não de dezenas de segundos. [[wiki/sources/delay-tv-aberta-vs-youtube-live-latencia-streaming]] mostra o outro lado dessa moeda: a CDN reduz a distância física até o espectador, mas não elimina a necessidade de cada player consultar o manifesto e pedir seu próprio próximo segmento — essa consulta repetida, somada ao buffer de leitura antecipada, é o que compõe a maior parte da [[wiki/concepts/latencia-streaming-ao-vivo]] em relação a uma transmissão por radiodifusão (TV aberta), que não depende de CDN nem de sessão individual por espectador.
+
 ## Relacionado
 
 [[concepts/cache-hot-path]] — mesmo princípio de servir do mais próximo/rápido. CDN é a camada de cache mais extrema.
@@ -50,3 +54,4 @@ Ao detectar crescimento anômalo de views → push proativo do vídeo para edges
 ## Key Sources
 
 - [[sources/case-youtube-streaming]]
+- [[wiki/sources/delay-tv-aberta-vs-youtube-live-latencia-streaming]] — CDN em live streaming e o contraste com radiodifusão (TV aberta)

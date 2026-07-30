@@ -3,8 +3,8 @@ type: concept
 title: "Modelagem de Dados"
 aliases: ["data modeling", "modelagem relacional", "normalização"]
 date_created: 2026-07-09
-date_updated: 2026-07-27
-source_count: 3
+date_updated: 2026-07-30
+source_count: 4
 tags: [banco-de-dados, modelagem, normalizacao, indice, backend]
 skill: tech-mentor-backend
 status: stub
@@ -40,8 +40,13 @@ Em uma [[wiki/concepts/entrevista-system-design|entrevista de system design]], a
 
 [[wiki/sources/anatomia-entrevista-system-design-bigtech]] descreve o padrão esperado em sistemas grandes: parte transacional (consistência forte) num banco SQL, parte de alto throughput/dados menos estruturados num NoSQL — com colunas SQL apontando para chaves em key-value stores (ex.: DynamoDB) ou para objetos em blob store (ex.: S3). Misturar bancos de propósitos diferentes no mesmo esquema é apresentado como sinal de domínio real, não de "escolher um banco só".
 
+## Critério Prático para Escolher SQL vs. NoSQL: Existe Relação?
+
+[[wiki/sources/system-design-entrevista-cinema-draw-io]] oferece um critério simples e verbalizável em entrevista: usar MySQL para a tabela de filmes (id, nome, categoria) "por motivos didáticos", mas reconhecer que, se filmes "não têm relação com outra coisa" no domínio real, um banco não relacional (MongoDB) seria uma escolha igualmente válida. Não substitui o esquema híbrido SQL+NoSQL de [[wiki/sources/anatomia-entrevista-system-design-bigtech]] acima — é um caso mais simples, de entidade isolada, sem relacionamento a modelar.
+
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-backend]]
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]
 - [[wiki/sources/anatomia-entrevista-system-design-bigtech]]
+- [[wiki/sources/system-design-entrevista-cinema-draw-io]] — critério prático de escolha SQL vs. NoSQL baseado em existência de relação entre entidades

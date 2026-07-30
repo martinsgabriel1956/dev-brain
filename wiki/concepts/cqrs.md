@@ -3,8 +3,8 @@ type: concept
 title: "CQRS — Command Query Responsibility Segregation"
 aliases: ["command query responsibility segregation", "cqrs pattern"]
 date_created: 2026-05-31
-date_updated: 2026-06-26
-source_count: 2
+date_updated: 2026-07-30
+source_count: 3
 tags: [cqrs, arquitetura, event-sourcing, ddd, sistemas-distribuidos]
 skill: tech-mentor-backend
 status: draft
@@ -61,7 +61,12 @@ O [[nubank]] utiliza CQRS em conjunto com [[event-sourcing]] e [[datomic]]. A se
 
 Esse padrão resolve o trade-off leitura/escrita sem abrir mão de consistência nas escritas.
 
+## Versão Didática: Duplicar o Banco em Write/Read
+
+Uma explicação mais simples de CQRS parte de duplicar o banco de um microsserviço em uma instância de escrita (write) e uma (ou mais) de leitura (read/[[wiki/concepts/read-replicas]]), escalando cada lado independentemente — o serviço permanece conectado a ambos. O trade-off central é o **replication lag**: toda escrita no banco de escrita leva um tempo (a fonte estima 1-3 segundos) até ser refletida no banco de leitura, tipicamente via [[wiki/concepts/event-driven-architecture|trigger/evento]]. Sistemas que exigem resposta imediata de baixíssima latência não toleram esse delay — por isso nem toda arquitetura adota CQRS dessa forma. Ver [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]].
+
 ## Key Sources
 
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
+- [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — versão didática write/read split com read replicas e trade-off de replication lag

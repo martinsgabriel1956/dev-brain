@@ -3,8 +3,8 @@ type: concept
 title: "Over-Engineering"
 aliases: ["overengineering", "verde neném", "engenharia excessiva", "gold plating"]
 date_created: 2026-06-09
-date_updated: 2026-07-28
-source_count: 8
+date_updated: 2026-07-30
+source_count: 9
 tags: [design, qualidade, anti-pattern, aprendizado, design-patterns, dora, under-engineering]
 skill: tech-mentor-leadership
 status: stable
@@ -75,6 +75,10 @@ A progressão que evita isso:
 
 [[wiki/sources/7-habitos-programador-altamente-eficaz]] amarra o over-engineering a um estágio específico de progressão de carreira, complementando a "causa raiz no aprendizado" já registrada acima: o pleno, ao ganhar uma altura de abstração maior, passa a enxergar mais variáveis do problema e tenta controlar todas — cai em [[wiki/concepts/paralisia-por-analise]]. Quem consegue sair da paralisia sem resolver a causa (julgamento de escopo ainda imaturo) tende a cair "na margem" do over-engineering: em vez de travar, produz uma solução desnecessariamente complexa só para ter "feito alguma coisa". A fonte nomeia o sênior como quem escapa dos dois extremos, produzindo um plano técnico *suficiente* — nem a paralisia do pleno, nem o excesso do over-engineering.
 
+## "Escalável Para Quê?" — Complexidade Confundida com Maturidade
+
+[[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] traz um caso de over-engineering em nível arquitetural que não é sobre um pattern isolado, mas sobre a escolha do desenho inteiro: diante de 4 sistemas de fornecedores heterogêneos, a solução "vendida" (unificar tudo via [[wiki/concepts/microfrontends-parciais|microfrontends parciais]] com container/shell e comunicação por eventos) resolve fragmentação de experiência — um problema que ninguém tinha reportado — em vez da causa raiz real (falta de visibilidade de status/atraso entre fornecedores), que uma solução muito mais enxuta (dashboard read-only + [[wiki/concepts/bff-pattern|BFF]] agregador) resolveria em uma fração do tempo. A fonte generaliza isso como pergunta de reflexão: "escalável" é relativo — escalável para produto, para usuário ou para times? — e a arquitetura deveria ser julgada por resolver o problema na causa raiz com o menor atrito, não por parecer madura ou "à prova de futuro". Ver [[wiki/concepts/causa-raiz]] e [[wiki/concepts/senior-vs-staff-visao-arquitetural]].
+
 ## Relação com Otimização Prematura
 
 [[otimizacao-prematura]] é o análogo de over-engineering no nível de performance: aplicar esforço excessivo onde não há necessidade comprovada. Ambos são sintomas de afoiteza.
@@ -106,3 +110,4 @@ A progressão que evita isso:
 - [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]] — terceira fonte independente reforçando a refutação do "triângulo de ferro": entregar algo funcional e imperfeito vale mais que algo inacabado e "perfeito", e overthinking sobre escalabilidade sem usuários é citado como erro pessoal do próprio autor mesmo após 20+ anos de carreira
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — dois exemplos concretos no mesmo material: (1) Kafka citado como possível over-engineering para um sistema de reserva de hotel, usado mesmo assim como exercício didático com ressalva explícita; (2) o próprio autor admite ter incluído um "simulador de caos" no MVP de um produto novo antes de validar a funcionalidade central (o simulador), classificando isso como erro de escopo em retrospecto
 - [[wiki/sources/7-habitos-programador-altamente-eficaz]] — amarra over-engineering a um estágio de carreira (pleno escapando da paralisia por análise sem julgamento maduro de escopo), complementar à causa raiz de aprendizado já registrada
+- [[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] — estudo de caso de over-engineering arquitetural completo (microfrontends parciais para unificar 4 sistemas de fornecedores) resolvendo o sintoma errado, contrastado com a solução enxuta (dashboard read-only + BFF) que resolve a causa raiz

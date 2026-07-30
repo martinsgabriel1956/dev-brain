@@ -3,8 +3,8 @@ type: concept
 title: "Entrevista de System Design (Whiteboard Interview)"
 aliases: ["system design interview", "whiteboard interview", "lousa branca", "entrevista de arquitetura"]
 date_created: 2026-07-20
-date_updated: 2026-07-27
-source_count: 4
+date_updated: 2026-07-30
+source_count: 5
 tags: [system-design, entrevistas, arquitetura, carreira]
 skill: tech-mentor-system-design
 status: draft
@@ -52,8 +52,13 @@ Assim como na [[wiki/concepts/entrevista-tecnica-coding|entrevista de coding]], 
 
 [[wiki/sources/anatomia-entrevista-system-design-bigtech]] situa a sessão de system design dentro de um pipeline maior de 5 etapas comum a empresas que seguem o padrão bigtech: entrevista de RH → entrevista técnica/questionário → LeetCode ou take-home → **entrevista de system design** → reunião final de fit com engineering manager/equipe. Argumenta que preparar-se para o padrão mais exigente (bigtech) cobre automaticamente entrevistas menos rigorosas. Detalha também o *porquê* de cada etapa da sessão em si (requisitos funcionais/não funcionais, BOE, design de API, esquema híbrido SQL+NoSQL, HLD, tradeoffs) do ponto de vista do que o entrevistador está avaliando — não é decorar caixinhas, é compreensão do problema exposta em voz alta. Resume com "garbage in, garbage out": a solução só é tão boa quanto a compreensão do problema que a precede.
 
+## O Framework Executado ao Vivo, com Erros Preservados
+
+[[wiki/sources/system-design-entrevista-cinema-draw-io]] é a primeira fonte na wiki a mostrar a estrutura de sessão sendo **executada**, não só descrita: o apresentador levanta requisitos via follow-up questions (seatmap, busca por nome, reserva de 15 minutos, acesso web) sobre o prompt vago "sistema de reserva de ingressos de cinema", justifica cada peça do desenho (load balancer, MySQL vs. não-relacional, APIs externas de seatmap e pagamento, Redis com TTL) e — de forma incomum entre as fontes já ingeridas — expõe abertamente um bug de consistência não resolvido no próprio rascunho (assento aparece disponível numa API externa mas já está reservado no Redis interno), tratando isso como material de conversa com o entrevistador em vez de esconder. Reforça na prática a regra de ouro desta página: comunicar o raciocínio vale mais que a solução perfeita.
+
 ## Key sources
 
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]]
 - [[wiki/sources/anatomia-entrevista-system-design-bigtech]]
+- [[wiki/sources/system-design-entrevista-cinema-draw-io]] — demonstração ao vivo do framework num exemplo concreto (cinema), incluindo um bug de consistência auto-reconhecido pelo autor

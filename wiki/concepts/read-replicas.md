@@ -3,8 +3,8 @@ type: concept
 title: "Read Replicas"
 aliases: ["réplica de leitura", "read replica", "replica routing"]
 date_created: 2026-04-22
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-07-30
+source_count: 3
 tags: [banco-de-dados, escalabilidade, read-replicas, postgresql, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -39,7 +39,12 @@ Problema: após escrever no primário, leitura na réplica pode não ver o dado 
 
 Relatório deve sempre consultar uma réplica, nunca o banco primário — no primário, o relatório concorre por recursos com processos mais críticos do sistema. Essa regra se sustenta porque a maioria dos sistemas lê muito mais do que escreve (escrita costuma ser ~10% do tempo), o que torna réplicas uma forma eficiente de ganhar escala sem sobrecarregar o primário. Ver [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]].
 
+## Relação com CQRS
+
+Read replicas são o mecanismo concreto por trás do read/write split usado em [[wiki/concepts/cqrs]]: banco de escrita (write) separado do banco de leitura (read/réplicas), escalados independentemente. O mesmo trade-off de replication lag citado acima se aplica — a fonte didática estima 1-3 segundos de delay entre a escrita e a réplica refletir o dado. Ver [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]].
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
 - [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]
+- [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — read replicas como base do read/write split em CQRS, com replication lag estimado em 1-3s

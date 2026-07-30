@@ -3,13 +3,13 @@ type: source
 title: "RAG & Retrieval"
 aliases: ["rag", "retrieval augmented generation", "embeddings", "vector store", "hybrid search", "reranking"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
+date_updated: 2026-07-30
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/rag-retrieval.md
 source_url: ""
 author: ""
 date_published: ""
 date_ingested: 2026-04-23
-source_count: 0
+source_count: 1
 tags: [rag, retrieval, embeddings, vector-store, chunking, hybrid-search, reranking, hyde, contextual-retrieval, graphrag, agentic-rag, ragas, hnsw]
 skill: tech-mentor-ai
 status: stable
@@ -51,6 +51,10 @@ RAG injeta contexto relevante no prompt para reduzir alucinações e manter conh
 - [[concepts/contextual-retrieval]]
 - [[concepts/graphrag]]
 - [[concepts/hnsw]]
+
+## Key Sources
+
+- [[wiki/sources/porque-nunca-confiar-em-llm-alucinacao]] — reforça RAG como mitigação de [[wiki/concepts/alucinacao-llm]], mas explicita o limite: RAG melhora eficiência sem chegar a "hallucination zero", pois o modelo ainda pode ignorar ou distorcer o documento injetado no contexto.
 
 ## Open Questions
 

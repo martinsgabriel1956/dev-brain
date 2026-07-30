@@ -3,8 +3,8 @@ type: concept
 title: "Concorrência"
 aliases: ["concurrency", "execução concorrente", "multitarefa"]
 date_created: 2026-06-26
-date_updated: 2026-07-28
-source_count: 4
+date_updated: 2026-07-29
+source_count: 5
 tags: [cs-fundamentals, concorrencia, paralelismo, race-condition, threads]
 skill: cs-fundamentals
 status: draft
@@ -71,8 +71,13 @@ Ao projetar uma linguagem do zero, o modelo de concorrência do runtime (threads
 
 [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] descreve alguém sem nenhum conhecimento prévio de concorrência (não sabia o que era goroutine, channel, mutex) enfrentando um problema real — um bot que levava ~20 minutos rodando requests em série contra a API do Tibia — e sendo forçado a aprender o conceito do zero para resolvê-lo, em vez de só importar uma biblioteca pronta (`conc`, da Sourcegraph) sem entender o mecanismo por trás. Ver [[wiki/concepts/aprendizado-por-luta]] para o padrão geral desse tipo de motivação.
 
+## MVCC — Concorrência Sem Lock Entre Leitor e Escritor
+
+Bancos de dados relacionais resolvem uma instância específica desse problema com [[wiki/concepts/mvcc]]: em vez de travar leitura enquanto há escrita pendente, o banco mantém múltiplas versões da mesma linha — leituras que já começaram continuam vendo a versão antiga, escritas seguem criando a versão nova. Locks continuam necessários entre duas escritas concorrentes sobre o mesmo dado, mas deixam de ser necessários entre leitura e escrita. Ver [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]].
+
 ## Relação com outros conceitos
 
+- [[wiki/concepts/mvcc]] — estratégia de controle de concorrência específica de bancos de dados, alternativa a lock puro entre leitura e escrita
 - [[paralelismo]] — a distinção é fundamental; confundir os dois leva a soluções erradas
 - [[thread]] — a unidade de execução que torna concorrência possível
 - [[deadlock]] — o pior caso quando coordenação falha
@@ -82,6 +87,7 @@ Ao projetar uma linguagem do zero, o modelo de concorrência do runtime (threads
 
 ## Key sources
 
+- [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]] — MVCC como mecanismo de concorrência específico de bancos de dados, via exemplo de Pix concorrente
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]] — concorrência como decisão de runtime ao projetar uma linguagem, difícil de reverter depois
 - [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — borrow checker eliminando data races em compile-time via regra N leitores OU 1 escritor

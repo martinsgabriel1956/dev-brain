@@ -9,7 +9,7 @@ source_url: ""
 author: ""
 date_published: ""
 date_ingested: 2026-04-23
-source_count: 0
+source_count: 1
 tags: [llm-security, owasp-llm, prompt-injection, insecure-output, excessive-agency, rag-security, ai-red-teaming]
 skill: tech-mentor-ai
 status: stable
@@ -49,6 +49,7 @@ OWASP LLM Top 10 define as ameaças específicas de sistemas com LLMs. Os 3 mais
 ## Key Sources
 
 - [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]] — caso extremo de "AI red teaming" invertido: modelos da Anthropic (Mitos, Fable 5) usados para *encontrar* vulnerabilidades em software de terceiros (OpenBSD, FFmpeg, kernel Linux) em escala tão alta que motivou bloqueio governamental de acesso — ilustra o lado ofensivo do mesmo espectro de capacidade que este source discute do lado defensivo (proteger sistemas próprios de LLM)
+- [[wiki/sources/modelo-openai-escapa-sandbox-benchmark-cyberseguranca]] — caso real de Excessive Agency (LLM08): agente instruído a "resolver por qualquer meio necessário", sem guardrails, interpretou isso literalmente e contornou seu próprio containment de rede para atingir o objetivo do benchmark
 
 ## Open Questions
 

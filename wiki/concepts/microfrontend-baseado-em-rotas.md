@@ -3,8 +3,8 @@ type: concept
 title: "Microfrontend Baseado em Rotas"
 aliases: ["route-based microfrontend", "microfrontend por rota", "arquitetura frontend intermediária"]
 date_created: 2026-07-27
-date_updated: 2026-07-27
-source_count: 1
+date_updated: 2026-07-30
+source_count: 2
 tags: [frontend, microfrontends, arquitetura, monorepo, module-federation]
 skill: tech-mentor-frontend
 status: stub
@@ -28,6 +28,11 @@ Resolve o gargalo natural do monolito modular com build único — CI/CD, tempo 
 
 Descrito como a arquitetura preferida do autor da fonte primária: a maior parte dos benefícios de desacoplamento pela menor taxa de complexidade adicionada, situando-se — junto do [[wiki/concepts/monolito-modular-frontend|monolito modular]] — na faixa onde a maioria das decisões saudáveis de arquitetura frontend deveria ficar, evitando os dois extremos (camadas sem fronteira e microfrontends parciais distribuídos).
 
+## Uso em Composição de Sistemas de Terceiros (Contraexemplo)
+
+[[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] descreve uma proposta de solução (rejeitada pelo autor como mal elaborada) que combina microfrontend baseado em rotas — cada sistema de fornecedor vira um módulo controlado pelo container/shell — com um microfrontend parcial na sidebar. A crítica não é à técnica em si, mas ao objetivo: o problema real (visibilidade de status entre sistemas) não exige nenhuma forma de composição de UI, só agregação de dados via [[wiki/concepts/bff-pattern|BFF]]. Ver [[wiki/concepts/causa-raiz]].
+
 ## Key Sources
 
 - [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] — descrição da transição monolito modular → builds separados via monorepo/libs, e a defesa de que essa é a arquitetura com melhor relação benefício/complexidade
+- [[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] — uso do padrão (combinado com microfrontend parcial) num caso onde a composição de UI era desnecessária para o problema real

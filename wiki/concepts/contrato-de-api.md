@@ -3,8 +3,8 @@ type: concept
 title: "Contrato de API"
 aliases: ["API contract", "contrato de interface", "interface contract"]
 date_created: 2026-07-09
-date_updated: 2026-07-27
-source_count: 4
+date_updated: 2026-07-30
+source_count: 6
 tags: [api, contrato, backend, arquitetura, desacoplamento]
 skill: tech-mentor-backend
 status: stub
@@ -32,6 +32,7 @@ Enquanto o contrato não muda, o cliente continua funcionando. Um contrato bem f
 - [[wiki/concepts/must-ignore-pattern]] — técnica de extensibilidade de schema para evoluir um contrato sem quebrar consumidores existentes
 - [[wiki/concepts/contract-testing]] — como verificar automaticamente que um contrato continua sendo respeitado
 - Ver também tratamento mais aprofundado de versionamento e breaking changes em `references/api-versioning-lifecycle.md` (tech-mentor-backend)
+- [[wiki/sources/email-address]] — RFC 5322/5321 como exemplo de contrato de sintaxe formal entre sistemas fora do domínio de HTTP/REST: spec rígida (limites de octetos, LDH) coexistindo com desvios de implementação toleráveis (case-insensitivity de fato, apesar da RFC permitir case-sensitivity)
 
 ## Key sources
 
@@ -39,3 +40,5 @@ Enquanto o contrato não muda, o cliente continua funcionando. Um contrato bem f
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]
 - [[wiki/sources/consumer-driven-contracts-martin-fowler]] — Must Ignore pattern e o modelo Provider/Consumer/Consumer-Driven Contract
 - [[wiki/sources/anatomia-entrevista-system-design-bigtech]] — contraste entre API trivial (`POST /urls`) e API que exige multipart upload, autenticação e presigned URL (upload de vídeo) como demonstração de repertório real de design de API
+- [[wiki/sources/system-design-entrevista-cinema-draw-io]] — endpoints nomeados sem detalhamento de request/response (`/search`, `GET assentos`, `POST commit assento`) como ponto de partida aceitável num rascunho de entrevista; APIs externas de domínio específico (seatmap, pagamentos) mantidas fora do contrato do sistema principal por conta própria
+- [[wiki/sources/email-address]] — RFC 5322/5321 como contrato de sintaxe formal, análogo à ideia central deste conceito num domínio fora de HTTP/REST

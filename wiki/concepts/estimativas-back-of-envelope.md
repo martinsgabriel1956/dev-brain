@@ -3,8 +3,8 @@ type: concept
 title: "Estimativas Back-of-Envelope"
 aliases: ["back of envelope", "estimativas de escala", "capacity estimation"]
 date_created: 2026-04-22
-date_updated: 2026-07-27
-source_count: 4
+date_updated: 2026-07-30
+source_count: 5
 tags: [system-design, estimativas, entrevista, escala, capacity-planning]
 skill: tech-mentor-system-design
 status: stub
@@ -53,3 +53,4 @@ Em [[wiki/concepts/entrevista-system-design|entrevistas de system design]], esse
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]]
 - [[wiki/sources/anatomia-entrevista-system-design-bigtech]]
+- [[wiki/sources/system-design-entrevista-cinema-draw-io]] — exemplo prático de omitir a etapa de propósito: o apresentador explicitamente não aprofunda BOE no rascunho, chamando escala/RPS de pergunta "mais para senioridades mais altas" fora do escopo do exercício
