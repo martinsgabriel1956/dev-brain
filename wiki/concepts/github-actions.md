@@ -3,8 +3,8 @@ type: concept
 title: "GitHub Actions"
 aliases: ["GitHub Actions", "GHA", "actions workflow", "github workflow"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-31
+source_count: 2
 tags: [devops, cicd, github, automação]
 skill: tech-mentor-infra
 status: stable
@@ -87,12 +87,18 @@ on:
     - cron: "0 2 * * *"  # nightly
 ```
 
+## Exemplo Mínimo: Dois Jobs, VPS via SSH
+
+Caso mais simples que os exemplos acima (sem Kubernetes, sem cache avançado): um workflow com dois jobs, um de CI (lint/test/build) e um de CD (deploy), disparados por push na `main`. O job de deploy simplesmente conecta via SSH na VPS, instala o necessário e sobe a aplicação — sem estratégia de tráfego (Rolling/Blue-Green/Canary), já que é uma instância única. Secret da VPS acessado via `secrets.VPS_PASSWORD`. → [[wiki/sources/continuous-integration-delivery-deploy-vs-release]]
+
 ## Ver também
 
 - [[concepts/ci-cd]] — disciplina que o GitHub Actions implementa
 - [[concepts/pipeline-de-ci]] — estrutura de stages de referência
 - [[concepts/argo-rollouts]] — ferramenta usada no CD após o CI passar
+- [[concepts/secrets-management]] — GitHub Secrets como mecanismo write-only
 
 ## Key Sources
 
 - [[sources/cicd-pipeline]]
+- [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — exemplo mínimo de dois jobs (CI + deploy SSH para VPS)

@@ -3,8 +3,8 @@ type: concept
 title: "XSS (Cross-Site Scripting)"
 aliases: ["xss", "cross-site scripting", "injeção javascript", "script injection"]
 date_created: 2026-06-10
-date_updated: 2026-06-10
-source_count: 1
+date_updated: 2026-07-31
+source_count: 2
 tags: [security, xss, owasp, appsec, input-sanitization, attack-surface]
 skill: tech-mentor-security
 status: stub
@@ -49,3 +49,4 @@ XSS e [[sql-injection]] são instâncias do mesmo padrão: input não sanitizado
 ## Key Sources
 
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — mencionado como exemplo de vulnerabilidade detectada por SAST (SonarQube)
+- [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — teste manual de injeção de script como parte de checklist de autopentest assistido por IA

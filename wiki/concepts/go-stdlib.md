@@ -3,8 +3,8 @@ type: concept
 title: "Go — Standard Library Essencial"
 aliases: ["go net/http server", "go encoding json", "go database/sql", "go table-driven tests", "go slog"]
 date_created: 2026-04-24
-date_updated: 2026-07-22
-source_count: 2
+date_updated: 2026-07-31
+source_count: 3
 tags: [go, stdlib, net-http, json, database-sql, testing, slog, unicode-utf8]
 skill: lang-systems
 status: stable
@@ -13,6 +13,8 @@ status: stable
 # Go — Standard Library Essencial
 
 A stdlib de Go é intencionalmente abrangente. Para a maioria dos serviços, `net/http`, `encoding/json`, `database/sql` e `testing` são suficientes sem dependências externas.
+
+Segundo [[wiki/entities/lucas-badico]], essa abrangência não é acidental: em projetos Go profissionais, cerca de 80% das dependências tendem a vir da própria standard library, sobrando um pequeno percentual de pacotes externos bem estabelecidos (gRPC, drivers de banco). O caso mais concreto disso é o `net/http`: o multiplexer nativo (`http.NewServeMux()` com roteamento por método/path desde Go 1.22, ver seção abaixo) eliminou a necessidade da maioria dos pacotes de "HTTP server" de terceiros que existiam antes — o equivalente Go a "não precisar de Express" para quem vem de Node. Ver [[wiki/sources/golang-profissional-sem-grandes-frameworks]].
 
 ## net/http — Server
 
@@ -121,3 +123,4 @@ Substitui `log` padrão — structured logging nativo sem dependência externa.
 
 - [[wiki/sources/go-stdlib]]
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — `unicode/utf8` como referência e fonte de testes para uma reimplementação didática de `DecodeRune`
+- [[wiki/sources/golang-profissional-sem-grandes-frameworks]] — estimativa de ~80% das dependências vindas da stdlib em projetos Go profissionais, e o `net/http` como caso concreto de stdlib substituindo pacotes externos

@@ -3,8 +3,8 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-07-30
-source_count: 15
+date_updated: 2026-07-31
+source_count: 17
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack]
 skill: tech-mentor-ai
 status: stable
@@ -18,8 +18,9 @@ Empresa de IA fundada em 2021, criadora da família de modelos Claude e do harne
 
 | Modelo | Uso recomendado |
 |---|---|
-| Opus 4.7 | Frontend, design, review de código; o mais capaz da família |
-| Sonnet 4.6 | Uso geral — menos recomendado para tarefas exigentes por Nauke |
+| Fable | Segundo [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]], modelo mais forte da Anthropic no Artificial Analysis (pontuação 60) — recomendado para tarefas de alta complexidade/incerteza (arquitetura, quebra de feature complexa); também o mais caro e mais lento da família. Ver nota de ambiguidade com "Fable 5" em [[wiki/concepts/modelo-frontier]] |
+| Opus 4.7 / 4.8 | Frontend, design, review de código; alternativa quase tão forte quanto Fable para tarefas complexas, a menor custo |
+| Sonnet 4.6 / Sonnet 5 | Uso geral — menos recomendado para tarefas exigentes por Nauke; citado como bom fallback para tarefas simples/background |
 | Haiku | Tarefas simples, custo baixo |
 
 ## Harness: Claude Code
@@ -46,6 +47,8 @@ Opus caiu de $15.75/M (input) para ~$5/M — movimento que tornou o uso do Opus 
 O tokenizador do Claude usa [[byte-pair-encoding]] com foco em inglês, resultando no pior multiplicador de custo para idiomas não-ingleses entre os principais provedores (OpenAI, Google). Português paga ~1.62× mais tokens que inglês — ver [[token-tax-multilingual]]. Não é intenção maliciosa; é consequência do corpus de treinamento ser predominantemente em inglês.
 
 Demonstração via [[entities/vercel-ai-sdk]] com Claude 3.5 Haiku: o prompt `"Hello World"` (2 palavras) já consome 11 tokens de entrada — contra apenas 4 no Gemini 2.0 Flash Lite do Google para o mesmo prompt. Contagens de tokens de entrada/saída não são comparáveis entre provedores porque cada um usa um vocabulário de tokenizer próprio — ver [[tokenizacao]].
+
+**Claim não verificado — mudança de tokenizer no Sonnet 5:** [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] afirma que a Anthropic mudou o tokenizer no Sonnet 5, dificultando o rastreio do custo real por tarefa (o preço por token cai, mas a mesma tarefa passa a gerar mais tokens no tokenizer novo). Confiança baixa: a fonte não cita changelog oficial nem cruza com outra fonte da wiki; é um claim diferente do token tax multilíngue documentado acima (BPE com viés para inglês), e não deve ser confundido com ele.
 
 ## Custo do Ultra Review / Ultra Plan em Teste Pessoal
 
@@ -92,6 +95,7 @@ Guia oficial publicado pela Anthropic definindo quatro níveis de autonomia para
 - [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/custo-tokens-portugues-vs-ingles]]
+- [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — claim não verificado de mudança de tokenizer no Sonnet 5; contexto do Departamento de Guerra dos EUA na crítica do CEO da Palantir
 - [[wiki/sources/tokens-llm-fundamentos-typescript]]
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
 - [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — citada de passagem: erros `503` frequentes da API do Claude ("modelo ocupado, tente novamente") como exemplo do "novo normal" de sistemas caindo, exigindo estratégias de retry no lado do cliente
@@ -101,3 +105,4 @@ Guia oficial publicado pela Anthropic definindo quatro níveis de autonomia para
 - [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]] — Mitos e Fable 5, modelos de cybersegurança bloqueados pelo governo dos EUA; consórcio Glasswing; jailbreak documentado do Fable 5
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — guia oficial "Getting Started with Loops" (quatro níveis de autonomia de loop)
 - [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] — lançamento do Claude Tag (Claude integrado ao Slack); dado de gasto em cartão corporativo ultrapassando a OpenAI em abril de 2026
+- [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — Fable como modelo mais forte no Artificial Analysis, mas ~70× mais caro por tarefa que o DeepSeek V4; caso de roteamento manual/automatizado no Claude Code

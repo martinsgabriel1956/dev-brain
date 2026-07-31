@@ -3,16 +3,20 @@ type: concept
 title: "Reverse Proxy"
 aliases: ["proxy reverso", "reverse proxy", "web server como proxy"]
 date_created: 2026-07-20
-date_updated: 2026-07-20
-source_count: 1
-tags: [nginx, reverse-proxy, infra, deploy, web-server]
+date_updated: 2026-07-31
+source_count: 2
+tags: [nginx, reverse-proxy, infra, deploy, web-server, traefik, coolify, auto-update, disponibilidade]
 skill: tech-mentor-infra
 status: stub
 ---
 
 # Reverse Proxy
 
-Servidor que fica na frente de um ou mais servidores de aplicação, recebendo as requisições do usuário e repassando internamente para o processo real — o cliente nunca fala diretamente com a aplicação. Nginx e HAProxy são as implementações de software mais comuns.
+Servidor que fica na frente de um ou mais servidores de aplicação, recebendo as requisições do usuário e repassando internamente para o processo real — o cliente nunca fala diretamente com a aplicação. Nginx e HAProxy são as implementações de software mais comuns; em setups gerenciados por PaaS self-hosted como [[wiki/concepts/coolify]], o Traefik cumpre esse papel.
+
+## Risco: auto-update de proxy em produção
+
+O reverse proxy é um ponto único por onde passa todo o tráfego — uma regressão nele derruba a aplicação inteira mesmo que o código da aplicação em si esteja saudável. Em [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]], o Coolify atualizou o Traefik automaticamente para uma versão (3.6.16) com bug de CPU constante (35% mesmo sem tráfego) e memory leak (4,7 GB em 40 minutos), consumindo capacidade que deveria estar disponível pra aplicação — e agravando um ataque de [[wiki/concepts/ddos-syn-flood|SYN flood]] simultâneo. Aprendizado registrado: travar a versão do proxy reverso em produção, tratando atualização como mudança deliberada, não automática.
 
 ## Reverse Proxy vs. Load Balancer
 
@@ -34,3 +38,4 @@ Usuário → Nginx (porta 80) → app na porta 3001 (blue) ou 3002 (green)
 ## Key Sources
 
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]] — demo prática de reverse proxy com swap manual entre duas portas via script, sem load balancing real entre elas
+- [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]] — auto-update de proxy (Traefik via Coolify) como causa raiz de um bug de CPU/memory leak que agravou um SYN flood

@@ -3,8 +3,8 @@ type: concept
 title: "CI/CD"
 aliases: ["CI/CD", "continuous integration", "continuous delivery", "continuous deployment", "pipeline de entrega"]
 date_created: 2026-04-22
-date_updated: 2026-07-20
-source_count: 6
+date_updated: 2026-07-31
+source_count: 8
 tags: [devops, cicd, deploy, automação, qualidade, projetos-novos, dora]
 skill: tech-mentor-infra
 status: stable
@@ -72,6 +72,8 @@ Essa prática é uma instância concreta do padrão [[walking-skeleton]] (esquel
 
 A pesquisa [[dora-metrics|DORA]] (livro *Accelerate*) mostra que Deployment Frequency alta e Lead Time for Changes baixo se correlacionam com Change Failure Rate e MTTR *melhores*, não piores — refutando a intuição do "triângulo de ferro" (rápido/barato/bom, escolha dois). CI/CD é a prática que torna essa correlação possível: pipelines rápidos e determinísticos são o que permite manter deploys pequenos e frequentes sem acumular risco. Ver [[over-engineering]] para a discussão de como o medo de quebrar em produção leva ao efeito oposto — portões de deploy excessivos que atrasam feedback e aumentam risco por deploy.
 
+Um exemplo real anterior à formalização do livro *Accelerate* (2018): o Facebook, em 2017, migrou de ~700 cherry-picks manuais/dia para push quase-contínuo direto da master, escalando o time em 15x sem degradar produtividade por engenheiro nem aumentar incidentes críticos — a mesma correlação "mais frequência, mesma ou melhor qualidade" que a DORA formalizaria depois, observada empiricamente em escala massiva. → [[wiki/sources/rapid-release-at-massive-scale-facebook]]
+
 ## 6 Princípios de Pipeline Saudável
 
 1. **Fail fast** — testes rápidos primeiro, lentos depois
@@ -80,6 +82,10 @@ A pesquisa [[dora-metrics|DORA]] (livro *Accelerate*) mostra que Deployment Freq
 4. **Artefato único** — build uma vez, deploy em múltiplos ambientes
 5. **Secrets em vault** — nunca em código ou env vars hardcoded
 6. **Rollback testado** — não apenas planejado
+
+## Fluxo de Branch com Ambiente Intermediário: feature → dev/staging → main
+
+Padrão didático comum: `feature branch → dev/staging → main`. A feature vai primeiro para uma branch de dev/staging, onde QA (ou o próprio dev) testa antes de seguir para main — só o merge para main dispara o CD de fato. É uma forma concreta de inserir o gate humano de Continuous Delivery sem abandonar a automação: o pipeline roda igual em ambos os merges, mas só o de main termina em deploy para produção. → [[wiki/sources/continuous-integration-delivery-deploy-vs-release]]
 
 ## Ver também
 
@@ -99,3 +105,5 @@ A pesquisa [[dora-metrics|DORA]] (livro *Accelerate*) mostra que Deployment Freq
 - [[wiki/sources/tipos-de-deploy]]
 - [[wiki/sources/como-evitar-over-engineering-david-farley]]
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]] — exemplo concreto de deploy 100% manual via SSH, sem pipeline
+- [[wiki/sources/rapid-release-at-massive-scale-facebook]] — caso real (Meta/Facebook, 2017) de deploy quase-contínuo em escala massiva
+- [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — aula didática reforçando os três níveis, com demo prática em GitHub Actions + VPS e fluxo de branch feature/dev-staging/main

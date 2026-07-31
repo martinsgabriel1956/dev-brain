@@ -4,7 +4,7 @@ title: "IDOR / BOLA (Insecure Direct Object Reference)"
 aliases: ["idor", "bola", "broken object level authorization", "insecure direct object reference"]
 date_created: 2026-07-04
 date_updated: 2026-07-04
-source_count: 1
+source_count: 2
 tags: [idor, bola, owasp, api-security, broken-access-control, appsec]
 skill: tech-mentor-security
 status: stable
@@ -41,8 +41,13 @@ PATCH /profile { "userId": "456", "bio": "..." }
 - [[wiki/concepts/mass-assignment]] — falha irmã: mesmo padrão de "confiar em ID/campo vindo do cliente", mas em escrita em vez de leitura
 - [[wiki/concepts/attack-surface]] — toda rota que aceita ID por parâmetro é um ponto de entrada a proteger
 
+## Teste Prático como Pergunta de Autopentest
+
+[[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] descreve o mesmo teste em formato de pergunta guia ("você pode fazer isso?"): usuário A com `user_id = 123` tentando um `DELETE` sobre o recurso do usuário B (`user_id = 234`) deve sempre falhar. A fonte trata isso como teste obrigatório antes de publicar qualquer SaaS, conduzido com apoio de IA (Claude Code) mas com o desenvolvedor entendendo cada verificação — não apenas aceitando um relatório automático.
+
 ## Key Sources
 
 - [[wiki/sources/owasp-top10]]
 - [[wiki/sources/api-security]]
 - [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]]
+- [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]]

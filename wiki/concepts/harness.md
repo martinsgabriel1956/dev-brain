@@ -3,8 +3,8 @@ type: concept
 title: "Harness"
 aliases: ["AI harness", "harness de IA", "coding harness"]
 date_created: 2026-06-02
-date_updated: 2026-07-28
-source_count: 13
+date_updated: 2026-07-31
+source_count: 14
 tags: [harness, llm, tool-call, agente, context-engineering, erros-compostos, verificacao]
 skill: tech-mentor-ai
 status: stable
@@ -113,9 +113,14 @@ Dado de benchmark citado (sem número específico): o mesmo Claude Opus performa
 
 [[wiki/sources/hermes-agent-open-claw-learning-loop]] descreve uma nova geração de harness que embute um [[wiki/concepts/closed-loop-skill-learning|closed-loop skill learning system]] — o harness não só executa tool calls, mas extrai padrões do histórico de execuções e gera/refina skills sozinho, sobre uma [[wiki/concepts/agent-memory-tres-camadas|memória em três camadas]]. Exemplos citados: [[wiki/entities/hermes-agent]] e [[wiki/entities/open-claw]] (ambos open source/MIT), e o "Dreaming in Claude" da Anthropic como resposta proprietária ao mesmo padrão. Isso desloca parte do trabalho antes feito manualmente com [[wiki/concepts/hooks-agente]] (extrair padrões de sessões passadas) para dentro do próprio ciclo do harness.
 
+## Harness como Multiplicador Oculto de Custo
+
+[[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] oferece uma explicação concreta para um paradoxo de custo: o preço por token caiu continuamente desde 2022 e a qualidade dos modelos subiu, mas o gasto total sobe mesmo assim — porque a orquestração de agentes (o harness por trás) multiplica o consumo por tarefa "dezenas de vezes" frente ao uso direto do modelo. A fonte cita, como anedota (confiança baixa, sem link/benchmark), devs trocando de [[wiki/entities/claude-code]] para [[wiki/entities/opencode]] alegando que o primeiro entra em loops de correção supérflua (bug suspeito → sugestão de correção → reescreve testes → reescreve código → reescreve testes de novo) sem ganho de valor proporcional ao token gasto — o mesmo padrão que [[wiki/concepts/token-maxing]] descreve como "scripts descartáveis" incentivados por métricas de volume de token.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
+- [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — harness como multiplicador de custo mesmo com preço por token em queda; troca de Claude Code para OpenCode por loops de correção supérflua
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
 - [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]

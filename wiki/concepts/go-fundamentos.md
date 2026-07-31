@@ -3,8 +3,8 @@ type: concept
 title: "Go — Fundamentos da Linguagem"
 aliases: ["golang fundamentos", "go tipos", "go slices", "go zero values"]
 date_created: 2026-04-24
-date_updated: 2026-07-28
-source_count: 6
+date_updated: 2026-07-31
+source_count: 7
 tags: [go, fundamentos, tipos, slices, maps, structs, zero-values, cloud-native, filosofia-de-linguagem, bitwise]
 skill: lang-systems
 status: stable
@@ -91,6 +91,8 @@ O mesmo trio de operadores por trás do bitmask acima (`&`, `|`, `<<`) é a base
 
 Segundo [[wiki/entities/lucas-badico]], a diferença central na filosofia de design entre Go e Rust não é técnica, é de propósito: Rust é pensado para soluções *clever* — muitas features, muitas formas de resolver o mesmo problema. Go tem poucas formas de fazer cada coisa, o que força uma solução mais crua e menos "bonita", mas consistente e fácil de manter. Programar em Go pensando como Rust tende a não funcionar bem; o caminho inverso (Rust pensando como Go) funciona, mas fica aquém do ideal na linguagem mais expressiva.
 
+Essa mesma preferência por pragmatismo aparece, segundo o próprio [[wiki/entities/lucas-badico]] em [[wiki/sources/golang-profissional-sem-grandes-frameworks]], na ausência estrutural de grandes frameworks em Go: a comunidade prefere repetir código a acoplar a uma grande biblioteca, ~80% das dependências de um projeto real vêm da standard library, e mesmo generics (disponíveis desde a 1.18) são usados em pontos pequenos, não como substituto de repetição em larga escala — ver [[wiki/concepts/go-stdlib]], [[wiki/concepts/go-ecossistema]] e [[wiki/concepts/go-avancado]].
+
 Essa diferença de propósito aparece concretamente na decisão de memória: Go usa garbage collector (menos controle, mais conforto), Rust usa ownership/borrow checker (mais controle e previsibilidade, mais decisões explícitas exigidas desde o primeiro programa). Ver [[wiki/concepts/rust-ownership-borrowing-lifetimes]] e [[wiki/concepts/rust-fundamentos]] para o detalhamento do lado Rust dessa comparação.
 
 ## Design Cloud Native
@@ -115,3 +117,4 @@ O Go Developer Survey oficial do Google confirma esse padrão de adoção com da
 - [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — contraponto Rust: ownership/borrow checker em vez de GC, mais expressividade ao custo de mais decisões explícitas
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — bitmask/bitwise (`&`, `\|`, `<<`) aplicado a um caso real: decode de UTF-8 byte a byte
 - [[wiki/sources/ponteiros-cpp-go-csharp]] — sintaxe de ponteiro idêntica à de C/C++, protegida por escape analysis: variável local que escapa da função é realocada na heap automaticamente
+- [[wiki/sources/golang-profissional-sem-grandes-frameworks]] — pragmatismo aplicado a dependências (ausência de framework dominante, ~80% stdlib) e a generics (uso pontual, não abstração generalizada)

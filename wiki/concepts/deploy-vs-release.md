@@ -3,8 +3,8 @@ type: concept
 title: "Deploy vs. Release"
 aliases: ["deploy vs release", "separar deploy de release", "deploy diferente de release"]
 date_created: 2026-07-09
-date_updated: 2026-07-09
-source_count: 1
+date_updated: 2026-07-31
+source_count: 3
 tags: [devops, deploy, cicd, feature-flags, infra]
 skill: tech-mentor-infra
 status: stable
@@ -41,3 +41,5 @@ Ortogonal a essa distinção: independente de o deploy ser manual (SSH + `git pu
 ## Key Sources
 
 - [[sources/tipos-de-deploy]]
+- [[wiki/sources/rapid-release-at-massive-scale-facebook]] — Gatekeeper (Meta) como implementação real dessa separação em escala
+- [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — reforço didático da distinção com os mesmos dois mecanismos (feature flag e tráfego direcionado)

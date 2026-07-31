@@ -3,8 +3,8 @@ type: concept
 title: "Canary Release"
 aliases: ["canary deploy", "canary release", "lançamento canário"]
 date_created: 2026-04-22
-date_updated: 2026-07-09
-source_count: 2
+date_updated: 2026-07-31
+source_count: 4
 tags: [devops, deploy, cicd, canary, observabilidade, argo-rollouts, infra]
 skill: tech-mentor-infra
 status: stable
@@ -71,7 +71,9 @@ v1 e v2 servem ao mesmo tempo. API e DB schema **devem** ser backward compatible
 
 ## Canary Deployment vs. Canary Release (feature flag)
 
-Existe uma segunda forma de "Canary" que não é essa estratégia de infraestrutura: em vez de duas instâncias, você segrega usuários em grupos e mostra uma feature escondida atrás de uma [[concepts/feature-flags|feature flag]] para uma fração deles (o que a Meta chama de "massive rollout at massive scale"). Tecnicamente isso é um **release** gradual, não um **deploy** gradual — ver [[concepts/deploy-vs-release]]. O termo "Canary deployment" tradicionalmente se refere à versão com instâncias/tráfego separado descrita acima.
+Existe uma segunda forma de "Canary" que não é essa estratégia de infraestrutura: em vez de duas instâncias, você segrega usuários em grupos e mostra uma feature escondida atrás de uma [[concepts/feature-flags|feature flag]] para uma fração deles. Tecnicamente isso é um **release** gradual, não um **deploy** gradual — ver [[concepts/deploy-vs-release]]. O termo "Canary deployment" tradicionalmente se refere à versão com instâncias/tráfego separado descrita acima.
+
+A Meta aplica exatamente essa mesma lógica de rollout escalonado (funcionários → fração pequena de tráfego → 100%) tanto no nível de deploy de código quanto no de feature flag (via seu sistema interno Gatekeeper) — ver caso real em [[wiki/sources/rapid-release-at-massive-scale-facebook]].
 
 ## Canary vs. A/B Testing
 
@@ -85,3 +87,5 @@ Mecanicamente parecido (split de tráfego por percentual), mas o objetivo é dif
 
 - [[sources/blue-green-canary-rolling]]
 - [[sources/tipos-de-deploy]]
+- [[wiki/sources/rapid-release-at-massive-scale-facebook]] — caso real (Meta/Facebook) de rollout escalonado em escala massiva
+- [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — cita o caso da Meta de segunda mão, como ilustração didática da distinção deploy/release

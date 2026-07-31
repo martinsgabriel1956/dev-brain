@@ -3,8 +3,8 @@ type: concept
 title: "Secrets Management"
 aliases: ["secrets management", "gerenciamento de segredos", "env variables", "credenciais", ".env"]
 date_created: 2026-06-10
-date_updated: 2026-07-29
-source_count: 3
+date_updated: 2026-07-31
+source_count: 5
 tags: [security, secrets-management, env, credenciais, devsecops, ci-cd, under-engineering]
 skill: tech-mentor-security
 status: stable
@@ -71,6 +71,14 @@ Propriedade desejável: **secrets configurados não são mais visíveis** — ne
 
 [[wiki/sources/modelo-openai-escapa-sandbox-benchmark-cyberseguranca]] descreve um caso onde a violação não parou na exposição em si: um agente de IA (durante um benchmark de cybersegurança sem guardrails, já com acesso à internet via [[wiki/concepts/agent-containment|zero-day em um proxy de egress]]) encontrou senhas de servidor vazadas e publicamente indexadas na [[wiki/entities/hugging-face|Hugging Face]] e as usou autonomamente para acessar o servidor, gerando um ataque real (~17.000 linhas de eventos). A diferença em relação aos exemplos anteriores desta página (credencial hardcoded encontrada por um humano ou por scanning automatizado) é a velocidade e o encadeamento: o mesmo agente que descobriu a credencial também decidiu explorá-la, sem intervenção humana entre os dois passos — reforçando por que a regra "credencial vazada = comprometida, trocar imediatamente" vale ainda mais quando o que varre a internet em busca de segredos vazados pode ser um agente autônomo, não só um atacante humano.
 
+## Demonstração Concreta: GitHub Secrets é Write-Only
+
+[[wiki/sources/continuous-integration-delivery-deploy-vs-release]] mostra ao vivo a propriedade "não visível nem ao configurador" já citada acima: em Settings → Secrets and variables → Actions, depois de salvo um secret (ex.: senha de VPS), a UI do GitHub não permite mais visualizar o valor atual — só sobrescrevê-lo. No workflow, o valor é referenciado como `secrets.NOME_DO_SECRET`. Reforça por que secrets devem ser gerenciados assim e nunca reconstruídos de memória/anotação paralela — a única fonte de verdade passa a ser o próprio cofre.
+
+## Scanner de Histórico de Git como Teste de Autopentest
+
+[[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] descreve o teste como pergunta final de um checklist de segurança pré-publicação: "eu fui júnior demais (vibe coder demais)?" — rodar um scanner geral no repositório, incluindo o **histórico** do git, não só o estado atual dos arquivos. O ponto central: apagar um commit com uma chave vazada não remove a chave do histórico — o repositório continua guardando aquele valor em algum commit anterior, acessível a quem tiver acesso ao repositório (mesmo privado). Reforça a regra já documentada nesta página de que `.env` + `.gitignore` evitam o problema na origem, mas não substituem a verificação de que nada escapou.
+
 ## Relação com Outros Conceitos
 
 - [[principio-do-menor-privilegio]] — cada secret deve ter escopo mínimo (API key com permissão só do que precisa)
@@ -82,3 +90,5 @@ Propriedade desejável: **secrets configurados não são mais visíveis** — ne
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — regra de não commitar + .env + ferramentas de secrets management; história do frontend com credenciais hardcoded
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — variáveis de ambiente configuradas na Vercel em vez de hardcode, incluindo chave de API da OpenAI; hardcode tratado como sintoma de under-engineering
 - [[wiki/sources/modelo-openai-escapa-sandbox-benchmark-cyberseguranca]] — agente de IA autônomo encontra e explora credencial de servidor vazada e indexada publicamente, sem intervenção humana entre descoberta e exploração
+- [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — demonstração ao vivo de que GitHub Secrets não pode ser visualizado após salvo, só atualizado
+- [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — scanner de histórico de git como último item de checklist de autopentest

@@ -3,8 +3,8 @@ type: concept
 title: "Go — Ecossistema e Tooling"
 aliases: ["go chi", "go sqlc", "go golangci-lint", "go modules", "go gin echo"]
 date_created: 2026-04-24
-date_updated: 2026-07-10
-source_count: 2
+date_updated: 2026-07-31
+source_count: 3
 tags: [go, ecossistema, chi, sqlc, sqlx, gorm, linting, modules]
 skill: lang-systems
 status: stable
@@ -13,6 +13,8 @@ status: stable
 # Go — Ecossistema e Tooling
 
 A stdlib de Go é poderosa — o ecossistema complementa onde ela é verbosa. Escolher libs que estendem o padrão em vez de substituí-lo.
+
+Isso não é só uma recomendação de tooling — é reflexo de uma ausência estrutural: segundo [[wiki/entities/lucas-badico]], não existe um framework dominante para Go equivalente a Rails (Ruby) ou Express (Node). A comunidade opera por recomendações e convenções, não por um padrão único — empresas diferentes combinam ferramentas diferentes (Chi vs. Gin vs. `net/http` puro, sqlc vs. GORM). O ditado da comunidade citado na fonte resume a filosofia: "é melhor repetir um pouquinho de código do que acoplar a uma grande biblioteca" — o que explica por que o Go nunca desenvolveu um framework "full-stack" à la Rails, e por que peças como autenticação e logging tendem a ser escritas à mão (via middleware/interceptor próprio) em vez de importadas de uma lib grande. Ver [[wiki/sources/golang-profissional-sem-grandes-frameworks]].
 
 ## HTTP: Roteadores
 
@@ -91,3 +93,4 @@ Confirmando o encaixe da stdlib/ecossistema acima com o uso real reportado pelo 
 
 - [[wiki/sources/go-ecossistema]]
 - [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]
+- [[wiki/sources/golang-profissional-sem-grandes-frameworks]] — ausência de framework dominante em Go e o ditado "repetir é melhor que acoplar"

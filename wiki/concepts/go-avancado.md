@@ -3,8 +3,8 @@ type: concept
 title: "Go — Avançado"
 aliases: ["go generics", "go reflection", "go cgo", "go wasm", "go gc tuning"]
 date_created: 2026-04-24
-date_updated: 2026-04-24
-source_count: 1
+date_updated: 2026-07-31
+source_count: 2
 tags: [go, avancado, generics, reflection, cgo, wasm, memory-model, gc]
 skill: lang-systems
 status: stable
@@ -39,6 +39,10 @@ func Sum[T Number](nums []T) T {
 ```
 
 **Trade-off:** elimina duplicação, mas mensagens de erro em compile-time são complexas.
+
+### Filosofia de Uso: Generics Pequenos, Não Abstrações Grandes
+
+Segundo [[wiki/entities/lucas-badico]], mesmo com generics disponíveis desde a 1.18, a cultura da comunidade Go não migrou para abstração generalizada — o padrão observado em código profissional é usar generics em pontos pequenos e isolados (ex.: trocar o tipo em uma única peça de dados), não para construir um "mapper" ou pipeline genérico universal que substitua repetição em larga escala. O argumento é de estabilidade: uma abstração genérica grande e "inteligente" concentra risco — se ela quebra ou precisa mudar, quebra tudo que depende dela — enquanto handlers repetitivos, ainda que verbosos, falham de forma isolada e são triviais de entender e alterar um por um. Essa preferência por repetição estável sobre abstração frágil é a mesma lógica documentada em [[wiki/concepts/go-ecossistema]] e [[wiki/concepts/go-stdlib]] para dependências externas — "repetir é melhor que acoplar" se aplica tanto a bibliotecas quanto a abstrações internas via generics. Ver [[wiki/sources/golang-profissional-sem-grandes-frameworks]].
 
 ## Reflection
 
@@ -87,3 +91,4 @@ Pausas < 1ms com configurações padrão para a maioria dos workloads.
 ## Key Sources
 
 - [[wiki/sources/go-avancado]]
+- [[wiki/sources/golang-profissional-sem-grandes-frameworks]] — filosofia de generics pequenos vs. abstração grande, direto de um dev Go profissional (Lucas Badico)

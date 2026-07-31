@@ -2,6 +2,29 @@
 
 ---
 
+## [2026-07-31] ingest | Rapid Release at Massive Scale (Facebook Engineering, 2017)
+
+**Fonte:** [[wiki/sources/rapid-release-at-massive-scale-facebook]] — post do Facebook Engineering (31/08/2017, autor Chuck Rossi), obtido via https://engineering.fb.com/2017/08/31/web/rapid-release-at-massive-scale/, resumido/paraseado em PT-BR (não é tradução literal, por ser conteúdo sob copyright da Meta) e salvo em `raw/rapid-release-at-massive-scale-facebook.md`. Descreve a transição do deploy web de ~700 cherry-picks manuais/dia para push quase-contínuo direto da master (100% dos servidores até abril de 2017), rollout escalonado (funcionários → 2% → 100%), o feature-flag interno Gatekeeper, e a redução do ciclo de release mobile de 4 para 1 semana com o time crescendo 15x.
+
+**Skill carregada:** `tech-mentor-infra` (path local: `/home/gabriel-martins/Documentos/skills/tech-mentor-infra/`, divergente do path `/home/nemomartins/...` do CLAUDE.md, que não existe neste ambiente) — `references/devops/release-engineering.md` (DORA metrics, tabela de targets Elite/High/Medium/Low) e `references/devops/progressive-delivery.md` (Argo Rollouts/Flagger) usados para calibrar o contraste entre o rollout "manual" do Facebook em 2017 e as ferramentas de progressive delivery automatizadas hoje documentadas na wiki.
+
+**Páginas criadas:**
+- `raw/rapid-release-at-massive-scale-facebook.md`
+- `wiki/sources/rapid-release-at-massive-scale-facebook.md` — 9 key claims com evidência
+
+**Páginas atualizadas:**
+- `wiki/entities/meta.md` — nova seção "Deploy Contínuo em Escala Massiva (2017)"; `source_count` 2 → 3
+- `wiki/concepts/ci-cd.md` — novo parágrafo com o caso Facebook como precedente empírico pré-*Accelerate*; `source_count` 6 → 7
+- `wiki/concepts/canary-release.md` — a menção pré-existente ("massive rollout at massive scale" da Meta) agora tem fonte própria citada; `source_count` 2 → 3
+- `wiki/concepts/feature-flags.md` — nova seção sobre o Gatekeeper da Meta, com nota de desambiguação frente a [[wiki/concepts/gatekeeper-pattern]]; `source_count` 2 → 3
+- `wiki/concepts/gatekeeper-pattern.md` — nova seção de desambiguação (Gatekeeper de segurança vs. Gatekeeper de feature-flag da Meta, nomes iguais, conceitos não relacionados)
+- `wiki/concepts/deploy-vs-release.md` — novo Key Source; `source_count` 1 → 2
+- `wiki/concepts/dora-metrics.md` — nova seção "Precedente Empírico Pré-Accelerate (Facebook, 2017)"; `source_count` 3 → 4
+- `wiki/concepts/mobile-feature-flags.md` — nova seção sobre o ciclo de release mobile da Meta; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources
+
+**Notas:** Nenhuma contradição com conteúdo já existente. Achado principal da ingestão: a wiki já tinha uma referência solta e sem fonte ao "massive rollout at massive scale" da Meta dentro de [[wiki/concepts/canary-release]] — esta ingestão fecha esse buraco com a fonte primária. Duas perguntas abertas registradas na fonte: (1) se o Gatekeeper em 2017 já tinha análise automática por métrica (como Argo Rollouts/Flagger hoje) ou se o avanço de estágio era decisão humana; (2) o artigo não traz números de Change Failure Rate/MTTR, só afirmações qualitativas de "qualidade constante".
+
 ## [2026-07-30] ingest | RFC 7636 — Proof Key for Code Exchange by OAuth Public Clients
 
 **Fonte:** [[wiki/sources/rfc-7636-pkce-oauth-public-clients]] — texto normativo do RFC 7636 (IETF, setembro de 2015), obtido em https://datatracker.ietf.org/doc/html/rfc7636 (texto oficial via https://www.rfc-editor.org/rfc/rfc7636.txt), traduzido integralmente para PT-BR e salvo em `raw/rfc-7636-pkce-oauth-public-clients.md`. Fonte primária — complementa as duas fontes já ingeridas sobre PKCE ([[wiki/sources/pkce-proof-key-code-exchange-spa-mobile]] e [[wiki/sources/oauth2-oidc-jwt]]) com a especificação exata (ABNF, parâmetros de protocolo, IANA) e o raciocínio de threat model da Seção 7 (Security Considerations).
@@ -4754,5 +4777,197 @@ Entities:
 - `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção "Autenticação & Identidade")
 
 **Notas:** Nenhuma contradição com conteúdo existente — a fonte confirma e detalha o mecanismo do PKCE já resumido en passant em [[wiki/sources/oauth2-oidc-jwt]] e [[wiki/sources/identity-iam-avancado]]. Não foi criada página dedicada para DPoP nem mTLS como alternativas ao PKCE: a fonte apenas nomeia esses padrões (promete vídeo futuro sobre BFF stateless/stateful), sem detalhar mecanismo — registrado como open question na fonte, candidato a página própria quando surgir uma fonte técnica dedicada. `wiki/sources/oauth2-oidc-jwt.md` tem uma inconsistência de formato de link pré-existente (`[[concepts/x]]` em vez de `[[wiki/concepts/x]]` em toda a seção "Entities & Concepts Touched") — não corrigida nesta ingestão por ser um problema de formatação da página inteira, não específico ao PKCE; sinalizada aqui para um sweep de lint futuro.
+
+---
+
+## [2026-07-31] ingest | Golang Profissional: Por Que "Código Fofo" Não Existe em Go
+
+**Fonte:** [[wiki/sources/golang-profissional-sem-grandes-frameworks]] — transcrição de vídeo/áudio em português (Lucas Badico), já no idioma original, sem necessidade de tradução; transcrição bruta (fornecida sem pontuação/quebras) reorganizada em parágrafos e seções e salva em `raw/golang-profissional-sem-grandes-frameworks.md`. Três dicas sobre a realidade de codar Go profissionalmente: ausência de framework dominante equivalente a Rails/Express, ~80% das dependências vindas da standard library, e a filosofia de "escrever bastante" que persiste mesmo com generics disponíveis desde a 1.18.
+
+**Skill carregada:** `lang-systems` (path local: `/home/gabriel-martins/Documentos/skills/lang-systems/`, divergente do path `/home/nemomartins/...` do CLAUDE.md) — `references/go.md` e `references/go-production-patterns.md` (seção "Generic Data Structures") calibraram a validação técnica das claims sobre `net/http` (multiplexer nativo desde Go 1.22) e generics — nenhuma divergência entre a fonte e o material de referência do skill.
+
+**Páginas criadas:**
+- `raw/golang-profissional-sem-grandes-frameworks.md`
+- `wiki/sources/golang-profissional-sem-grandes-frameworks.md` — 6 key claims com evidência e confiança (alta para o mecanismo técnico do `net/http`, média para os números estimados de memória do autor como "80% das dependências" e para a leitura de que a preferência por repetição é consenso de comunidade e não só opinião pessoal)
+
+**Páginas atualizadas:**
+- `wiki/concepts/go-stdlib.md` — nova observação sobre ~80% das dependências vindas da stdlib e o `net/http` como caso concreto; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/go-ecossistema.md` — nova seção sobre ausência de framework dominante em Go e o ditado "repetir é melhor que acoplar"; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/go-avancado.md` — nova seção "Filosofia de Uso: Generics Pequenos, Não Abstrações Grandes"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/go-fundamentos.md` — novo parágrafo ligando a filosofia de pragmatismo (já documentada a partir do mesmo autor) à ausência de frameworks e ao uso pontual de generics; nova linha em Key Sources; `source_count` 6 → 7
+- `wiki/entities/lucas-badico.md` — novo bullet de perfil (5 anos de Go profissional, últimos 3 meses full-time sem cargo de liderança); nova seção "Filosofia Técnica: Contra o 'Código Fofo'"; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/index.md` — nova linha em Sources
+
+**Notas:** Nenhuma contradição com conteúdo existente — a fonte reforça e dá textura qualitativa a claims já documentadas em [[wiki/concepts/go-stdlib]] e [[wiki/concepts/go-ecossistema]] a partir de [[wiki/sources/go-stdlib]] e [[wiki/sources/go-ecossistema]], e converge com a filosofia de pragmatismo de [[wiki/concepts/go-fundamentos]] já atribuída ao mesmo autor. Vídeo é majoritariamente promocional (chamada recorrente para curso próprio de Go, 25–29/11) — registrado como open question na fonte, mas não compromete as claims técnicas centrais, que são verificáveis independentemente do CTA. Não foi criada página de entidade nova (Lucas Badico já existia desde [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]).
+
+---
+
+## [2026-07-31] ingest | Como um SYN Flood de 260 Milhões de Requests Derrubou meu SaaS
+
+**Fonte:** [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]] — transcrição de vídeo/áudio em português (Davin, canal Mano Davin / Find My SaaS), já no idioma original, sem necessidade de tradução; transcrição bruta (fornecida sem pontuação/quebras) reorganizada em parágrafos e seções e salva em `raw/ddos-sim-flood-servidor-find-my-saas.md`. Post-mortem em primeira pessoa de um SYN flood de 260 milhões de requests em um único dia contra um SaaS pequeno, atrás de Cloudflare com Traefik (via Coolify) como proxy reverso: modo Under Attack desativado, bug de CPU/memory leak no Traefik auto-atualizado durante o próprio incidente, e ausência de monitoramento — servidor não recuperado, reconstruído do zero com ordem de setup invertida (firewall → Docker → proxy).
+
+**Skill carregada:** `tech-mentor-security` (path local: `/home/gabriel-martins/Documentos/skills/tech-mentor-security/`, divergente do path `/home/nemomartins/...` do CLAUDE.md) — `references/appsec-ddos-waf.md` (seção "DDoS Mitigation": taxonomia volumétrico/protocol/application, SYN cookies como mitigação de camada de protocolo) calibrou a validação técnica do mecanismo de SYN flood e da mitigação central; `references/container-hardening.md` foi consultado mas não cobre `ulimit`/file descriptors nesta versão — a claim sobre limite de file descriptors do Docker ficou marcada como conhecimento geral não verificado contra o skill.
+
+**Páginas criadas:**
+- `raw/ddos-sim-flood-servidor-find-my-saas.md`
+- `wiki/sources/ddos-sim-flood-servidor-find-my-saas.md` — 6 key claims com evidência e confiança (alta para o mecanismo de SYN flood/SYN cookies e para o comportamento do modo Under Attack, ambos confirmados pelo skill; média para os números exatos de estado TCP citados de memória, para o bug específico do Traefik 3.6.16 não verificado contra changelog oficial, e para o valor de 65.000 file descriptors não cruzado com nenhuma fonte)
+- `wiki/concepts/ddos-syn-flood.md` — novo, status draft (mecanismo de SYN flood, SYN cookies, modo Under Attack do Cloudflare, checklist de mitigação pós-incidente)
+- `wiki/concepts/coolify.md` — novo, status stub (PaaS self-hosted, risco de auto-update do proxy reverso gerenciado)
+- `wiki/entities/mano-davin.md` — novo, status stub (perfil do criador de conteúdo e resumo do incidente)
+
+**Páginas atualizadas:**
+- `wiki/concepts/waf.md` — nova seção "Estar na frente não é suficiente — o caso do modo Under Attack"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/tcp-three-way-handshake.md` — nova seção "Abuso do handshake: SYN flood"; nova linha em Key sources; `source_count` 1 → 2
+- `wiki/concepts/reverse-proxy.md` — nova seção "Risco: auto-update de proxy em produção"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/entities/hostinger.md` — novo parágrafo sobre a segunda menção patrocinada (uso do instalador Coolify); nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (seções "Segurança de APIs & Arquitetura" e "Estratégias de Deploy"); nova linha em Entities
+
+**Notas:** Nenhuma contradição com conteúdo existente — a fonte confirma e dá caso real ao mecanismo de SYN cookies já resumido en passant no skill tech-mentor-security, e reforça a lição de defesa em camadas já documentada em [[wiki/concepts/waf]] e [[wiki/concepts/defense-in-depth]] (estar atrás de um WAF não substitui configurá-lo corretamente). O bug específico do Traefik 3.6.16 e o valor de 65.000 file descriptors ficaram registrados como open questions na fonte — candidatos a nota de rodapé se uma fonte técnica dedicada ao Traefik/Docker hardening for ingerida no futuro. Vídeo tem blocos promocionais (Hostinger/Coolify, cadeira ergonômica Elements) tratados como patrocínio, não avaliação técnica independente — refletido em [[wiki/entities/hostinger]] e não usado como evidência de qualidade do produto.
+
+---
+
+## [2026-07-31] ingest | 3 Projetos Que Realmente Ensinam a Programar: Snake, Simulador de Supermercado e Pathfinding
+
+**Fonte:** [[wiki/sources/tres-projetos-para-aprender-programar]] — transcrição de vídeo em português, já no idioma original (sem necessidade de tradução), reorganizada em parágrafos e seções e salva em `raw/tres-projetos-para-aprender-programar.md`. Argumenta que os melhores projetos de aprendizado não são escolhidos por estética de portfólio, mas pela habilidade fundamental que forçam: Snake ensina gerenciamento de estado, um simulador de supermercado ensina modelagem de domínio, e um Pathfinding ensina algoritmos como estratégia de resolução de problema.
+
+**Skill carregada:** `tech-mentor-leadership` (path local: `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/`, divergente do path `/home/nemomartins/...` do CLAUDE.md) — nenhum arquivo de `references/` cobre especificamente "quais projetos recomendar a iniciantes"; mesmo gap já registrado nos ingests anteriores de [[wiki/concepts/checklist-primeiro-dia-projeto]] e [[wiki/concepts/projeto-com-adrenalina]], que usaram a mesma skill pela proximidade temática de carreira/aprendizado sem cobertura de referência exata.
+
+**Páginas criadas:**
+- `raw/tres-projetos-para-aprender-programar.md`
+- `wiki/sources/tres-projetos-para-aprender-programar.md` — TL;DR, 4 key claims com evidência, sem entidades nomeadas (autor do vídeo não identificado na transcrição)
+- `wiki/concepts/projetos-fundamentais-para-aprender-a-programar.md` — novo, status draft (a analogia "software é argila, não Lego"; os três projetos com a habilidade que cada um exercita; progressão pedagógica estado → modelagem → algoritmos)
+
+**Páginas atualizadas:**
+- `wiki/concepts/estado.md` — nova seção "Exemplo didático: Snake como projeto de aprendizado de estado"; nova linha em Key sources; `source_count` 2 → 3
+- `wiki/concepts/modelagem-de-dados.md` — nova seção "Exemplo didático: simulador de supermercado como projeto de aprendizado de modelagem"; nova linha em Key sources; `source_count` 4 → 5
+- `wiki/concepts/algoritmos-de-grafo.md` — nova seção "Pathfinding como projeto de aprendizado"; nova linha em Relação com outros conceitos e em Key sources; `source_count` 1 → 2
+- `wiki/concepts/algoritmos-e-estruturas-de-dados.md` — nova linha em Key Sources; `source_count` 8 → 9
+- `wiki/concepts/projeto-com-adrenalina.md` — nova linha em Relação com outros conceitos (tensão de fase com o novo conceito) e em Key Sources; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção "Aprendizado e Mentalidade")
+
+**Notas:** Nenhuma contradição factual com conteúdo existente. Uma tensão de fase foi identificada e documentada nos dois lados do link: [[wiki/concepts/projeto-com-adrenalina]] recomenda escolher o projeto de aprendizado pelo critério de interesse genuíno ("adrenalina"), enquanto esta fonte prescreve três projetos específicos pela habilidade que ensinam, independentemente do interesse pessoal — não é contradição, são conselhos para perguntas diferentes ("o que me motiva a continuar" vs. "quais habilidades um currículo mínimo de projetos deveria cobrir"), registrada como Open Question na fonte. A fonte não especifica qual algoritmo de busca de caminho usar no Pathfinding (BFS/DFS/Dijkstra/A*), tratando o projeto genericamente — registrado como open question e refletido em [[wiki/concepts/algoritmos-de-grafo]] sem forçar uma escolha que a fonte não faz.
+
+---
+
+## [2026-07-31] ingest | Fable, Sol e a Gestão de Custo e Velocidade na Escolha de Modelos de IA
+
+**Fonte:** [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — transcrição de vídeo em português (autor não identificado), já no idioma original (sem necessidade de tradução), transcrição bruta reorganizada em parágrafos e seções e salva em `raw/gestao-de-custo-velocidade-modelos-de-ia-fable-sol.md`. Argumenta que o paradigma de "usar sempre o modelo de ponta" quebra com Fable (Anthropic) e Sol/GPT 5.6 (OpenAI) — os mais inteligentes segundo o Artificial Analysis, mas também os mais caros (~70× o custo por tarefa do DeepSeek V4) e mais lentos — propondo decisão de roteamento em três eixos (inteligência, velocidade, custo), primeiro manual e depois automatizada via skill/subagentes no Claude Code ou via roteador customizado de terceiros, demonstrado na Abacus.AI com fallback via OpenCode.
+
+**Skill carregada:** `tech-mentor-ai` (path local: `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/`, divergente do path `/home/nemomartins/...` do CLAUDE.md) — `references/ai/model-routing-selection.md` (RouteLLM, cascade pattern, intent/latency/cost-tier routing) calibrou a validação da mecânica de roteamento descrita informalmente no vídeo; `references/ai/token-economics.md` (seção "Model Routing Avançado", "60-70% de economia com routing inteligente vs. modelo único") confirma a ordem de grandeza da economia de custo defendida na fonte, ainda que sem verificação cruzada dos números específicos do Artificial Analysis citados de memória no vídeo.
+
+**Páginas criadas:**
+- `raw/gestao-de-custo-velocidade-modelos-de-ia-fable-sol.md`
+- `wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol.md` — 7 key claims com evidência e confiança (alta para a existência de "Sol" como apelido do GPT 5.6, já citado antes em [[wiki/entities/openai]]; média para os números do Artificial Analysis, lidos de gráfico narrado em vídeo sem link para os dados brutos)
+- `wiki/entities/abacus-ai.md` — novo, status stub (Custom Router: RouteLL automático vs. configuração manual por categoria)
+- `wiki/entities/artificial-analysis.md` — novo, status stub (benchmark independente citado para inteligência/velocidade/custo por tarefa)
+- `wiki/entities/opencode.md` — novo, status stub (harness agnóstico de provider, mencionado em várias fontes anteriores sem página própria até agora)
+
+**Páginas atualizadas:**
+- `wiki/concepts/roteamento-automatico-de-modelo.md` — nova seção "Caso de produto: Custom Router da Abacus.AI" distinguindo routing configurado (Abacus) de routing aprendido (Adapta ONE); nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/modelo-por-leverage-tarefa.md` — nova seção "Terceiro Eixo: Velocidade", ampliando a heurística de alavancagem para cruzar inteligência/velocidade/custo; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/corrida-preco-qualidade-llm.md` — novo dado quantitativo (~70× de diferença de custo por tarefa, Fable vs. DeepSeek V4, via Artificial Analysis); nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/modelo-frontier.md` — tabela de modelos atualizada (Fable, Sol/GPT 5.6, Gemini 3.5 Flash, DeepSeek V4); nova seção "Nota de Ambiguidade: 'Fable' de Uso Geral vs. 'Fable 5' de Cybersegurança"; nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/entities/anthropic.md` — tabela de modelos atualizada com Fable como modelo mais forte no Artificial Analysis; nova linha em Key Sources; `source_count` 15 → 16
+- `wiki/entities/openai.md` — nova seção "'Sol' como Apelido do GPT 5.6" confirmando cruzamento com fonte anterior; nova linha em Fontes; `source_count` 7 → 8
+- `wiki/entities/deepseek.md` — nova seção "Custo por Tarefa vs. Modelos Frontier"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/entities/google.md` — nova seção "Gemini Flash como Referência de Velocidade"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/entities/moonshot-ai.md` — nova seção "Kimi como Modelo de Fallback por Custo-Benefício"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/entities/claude-code.md` — nova linha em Key Sources (seleção manual de modelo na UI, automação via skill + subagentes); `source_count` 7 → 8
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Entities (Abacus.AI, Artificial Analysis, OpenCode)
+
+**Notas:** Nenhuma contradição factual nova com o conteúdo existente — a fonte reforça e dá dado quantitativo a [[wiki/concepts/corrida-preco-qualidade-llm]] e [[wiki/concepts/modelo-por-leverage-tarefa]], e confirma parcialmente (cruzamento de duas fontes independentes, nenhuma oficial) o apelido "Sol" para o GPT 5.6 já registrado em [[wiki/entities/openai]]. Uma tensão de nomenclatura foi identificada e documentada nos dois lados do link: esta fonte trata "Fable" como o modelo de uso geral mais forte da Anthropic para programação, enquanto [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]] trata "Fable 5" como um modelo de cybersegurança bloqueado pelo governo dos EUA — não fica claro se é o mesmo modelo em dois contextos ou dois modelos distintos com nome coincidente; registrado como open question em [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] e em [[wiki/concepts/modelo-frontier]] (nova seção de ambiguidade). Segmento de patrocínio explícito da Abacus.AI tratado como demonstração de padrão genérico, não avaliação independente de produto — refletido em [[wiki/entities/abacus-ai]] com nota de confiança.
+
+---
+
+## [2026-07-31] ingest | CI, CD (Delivery) e CD (Deploy) — e a Diferença entre Deploy e Release
+
+**Fonte:** [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — transcrição de aula/vídeo em português, autor não identificado no vídeo (sem necessidade de tradução), transcrição bruta reorganizada em seções/parágrafos e salva em `raw/continuous-integration-delivery-deploy-vs-release.md`. Aula didática que separa os "dois CDs" (Continuous Delivery vs. Continuous Deployment) dentro de CI/CD, reforça a distinção deploy vs. release, e demonstra na prática um pipeline GitHub Actions de dois jobs (CI + deploy via SSH para uma VPS da HostGator), GitHub Secrets como mecanismo write-only, e um fluxo de branch `feature → dev/staging → main` com clonagem anonimizada do banco de produção para staging.
+
+**Skill carregada:** `tech-mentor-infra` (path local: `/home/gabriel-martins/Documentos/skills/tech-mentor-infra/`) — `references/devops/ci-cd-strategies.md` (estratégias de deploy, feature toggles, deploy vs. release, deployment frequency) calibrou a validação de que o conteúdo do vídeo é consistente com a referência, sem introduzir nada que a contradiga; o exemplo do vídeo (deploy SSH de instância única) é um caso mais simples do que os exemplos avançados (Blue/Green, Canary, release trains) já cobertos na wiki.
+
+**Páginas criadas:**
+- `raw/continuous-integration-delivery-deploy-vs-release.md`
+- `wiki/sources/continuous-integration-delivery-deploy-vs-release.md` — TL;DR, 7 key claims com evidência, entidades, conceitos, 3 open questions (autoria não confirmada, "HostGator" vs. "Hostinger", nível de detalhe do gate de aprovação humana) e 3 raw quotes
+
+**Páginas atualizadas:**
+- `wiki/concepts/ci-cd.md` — nova seção "Fluxo de Branch com Ambiente Intermediário: feature → dev/staging → main"; nova linha em Key Sources; `source_count` 7 → 8
+- `wiki/concepts/deploy-vs-release.md` — nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/feature-flags.md` — nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/concepts/github-actions.md` — nova seção "Exemplo Mínimo: Dois Jobs, VPS via SSH"; nova linha em Ver também e em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/secrets-management.md` — nova seção "Demonstração Concreta: GitHub Secrets é Write-Only"; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/concepts/paridade-local-producao.md` — nova seção "Clonagem Anonimizada do Banco para Staging — Exemplo Concreto"; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/concepts/canary-release.md` — nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/entities/hostgator.md` — nova seção "Segunda Aparição: Deploy Contínuo via SSH e VPS com Claude Code Pré-instalado"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/entities/hostinger.md` — nova nota de desambiguação contra HostGator (mesmo nicho, empresas diferentes)
+- `wiki/entities/meta.md` — nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/entities/claude-code.md` — nova seção "VPS com Claude Code Pré-instalado (Oferta de Provedor)"; nova linha em Key Sources; `source_count` 8 → 9
+- `wiki/entities/augusto-galego.md` — nova seção "Possível Aula Irmã/Anterior sobre CI/CD e Deploy vs. Release (Autoria Inferida)"; nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/index.md` — nova linha em Sources
+
+**Notas:** Fonte majoritariamente didática/reforço — não traz caso novo equivalente ao artigo da Meta, mas demonstra ao vivo dois pontos que antes só existiam na wiki como afirmação genérica: (1) GitHub Secrets é literalmente write-only na UI, e (2) clonagem anonimizada de banco para staging, com exemplos concretos do que se anonimiza. Duas questões de desambiguação foram identificadas e registradas nos dois lados do link: "HostGator" (grafado "Host Gator" na transcrição, possível artefato de transcrição automática) vs. "Hostinger" — duas provedoras de VPS brasileiras diferentes já documentadas separadamente na wiki, risco real de confusão de nome; e autoria não identificada no vídeo, com hipótese razoável (não confirmada) de ser [[wiki/entities/augusto-galego]] dado o padrão idêntico de patrocínio HostGator e estilo de demo já visto em [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]].
+
+---
+
+## [2026-07-31] ingest | CEO da Palantir, o Token Tax e o "Scam" da IA: Reação à Entrevista com Alex Karp
+
+**Fonte:** [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — transcrição de vídeo em português (autor não identificado), já no idioma original (sem necessidade de tradução), transcrição bruta reorganizada em parágrafos e seções e salva em `raw/palantir-ceo-token-tax-nvidia-scam-ia.md`. Reação a uma entrevista de ~20 min do CEO da Palantir (Alex Karp) à CNBC, nominalmente sobre um deal com a Nvidia mas que a mídia rotulou de "breakdown de nervos televisionado" por virar crítica direta ao modelo de cobrança por token da OpenAI e Anthropic — três argumentos centrais (wealth tax, roubo de propriedade intelectual/pesos do negócio, preço deveria ser sobre valor gerado), contextualizado com o caso da xAI limitando uso interno de IA. Explica por que o custo total de IA sobe mesmo com preço por token em queda desde 2022 (harness multiplicando consumo por tarefa, troca de Claude Code para OpenCode, claim não verificado de mudança de tokenizer no Sonnet 5) e fecha com quatro recomendações de FinOps para IA.
+
+**Skill carregada:** `tech-mentor-ai` (path local: `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/`) — `references/ai/token-economics.md`, seção "FinOps para LLM" (budget por feature/tenant, anomaly detection de custo, model routing, 60-70% de economia com routing inteligente) validou as quatro recomendações práticas do vídeo como consistentes com prática de mercado documentada, ainda que com nomenclatura e exemplos de código diferentes dos usados na fonte.
+
+**Páginas criadas:**
+- `raw/palantir-ceo-token-tax-nvidia-scam-ia.md`
+- `wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia.md` — TL;DR, 12 key claims com evidência e nota de confiança (a maioria baixa/média — vídeo de reação a um corte de 8min de uma entrevista de 20min, sem citações literais linkadas), entidades, conceitos, 6 open questions e 4 raw quotes
+- `wiki/concepts/finops-para-ia.md` — novo, status stub (quatro práticas: budget/limite por dev-ferramenta, métricas de valor vs. dashboard de token, classificação de dados para self-hosted, ownership em prototipagem)
+- `wiki/entities/xai.md` — novo, status stub
+- `wiki/entities/elon-musk.md` — novo, status stub
+
+**Páginas atualizadas:**
+- `wiki/concepts/token-maxing.md` — nova seção com segunda citação da Palantir ("sequestra sua orientação de valor"); nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/concepts/harness.md` — nova seção "Harness como Multiplicador Oculto de Custo" (troca Claude Code → OpenCode por loops de correção supérflua); nova linha em Key Sources; `source_count` 13 → 14
+- `wiki/concepts/corrida-preco-qualidade-llm.md` — nova seção "Contra-argumento: Cobrar por Valor, não por Token"; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/entities/palantir-technologies.md` — nova seção sobre a entrevista à CNBC (três argumentos, produto modelo+aplicação+compute, contexto Departamento de Guerra dos EUA); nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/entities/nvidia.md` — nova seção sobre o deal com a Palantir e "a única que está certa"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/entities/anthropic.md` — claim não verificado de mudança de tokenizer no Sonnet 5, com nota explícita de que é distinto do token tax multilíngue já documentado; nova linha em Key Sources; `source_count` 16 → 17
+- `wiki/entities/openai.md` — nova seção sobre claim (não verificado) de tweet de Sam Altman; nova linha em Fontes; `source_count` 8 → 9
+- `wiki/entities/claude-code.md` — nova seção sobre o recurso "By The Way" e migração de devs para OpenCode; nova linha em Key Sources; `source_count` 9 → 10
+- `wiki/entities/opencode.md` — nova seção sobre migração de devs vindos do Claude Code; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/entities/uber.md` — nova seção usando o caso como exemplo motivador de FinOps para IA; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/entities/microsoft.md` — nova linha em Key Sources (orçamento de engenharia de IA estourando em 2026); `source_count` 2 → 3
+- `wiki/entities/meta.md` — nova linha em Key Sources (idem); `source_count` 4 → 5
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`finops-para-ia`); duas novas linhas em Entities (xAI, Elon Musk)
+
+**Notas:** Fonte de baixa confiança factual geral — o autor admite não ter assistido à entrevista completa da CNBC (só um corte de 8 de 20 minutos), várias citações são paráfrases de segunda mão sem link (tweet de Altman, post da Palantir, limite de uso da xAI), e um claim central (mudança de tokenizer no Sonnet 5) não tem confirmação cruzada nem em documentação oficial nem em outra fonte da wiki — todas essas ressalvas foram propagadas explicitamente para as páginas de entidade/conceito tocadas, não apenas para a página da fonte. Reforça fortemente duas teses já centrais na wiki — [[wiki/concepts/token-maxing]] (via [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]]) e [[wiki/concepts/corrida-preco-qualidade-llm]] — com uma citação nova da Palantir e um contra-argumento de cobrança por valor. O segmento de patrocínio (Amax, pagamentos) foi tratado como ad-read genérico fora do domínio técnico da fonte e não gerou página de entidade.
+
+---
+
+## [2026-07-31] ingest | Eu Pedi pro Claude Invadir o Meu SaaS — Testes de Segurança no Pulsar
+
+**Fonte:** [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — transcrição de vlog em português (autora não identificada nominalmente na fala), já no idioma original (sem necessidade de tradução), transcrição bruta reorganizada em seções/parágrafos e salva em `raw/testes-de-seguranca-pentest-com-claude-code-pulsar-saas.md`. Relato em primeira pessoa de uma desenvolvedora sem background em segurança conduzindo um autopentest do Pulsar (SaaS pessoal ligado a um desafio de estudos gratuito de 100 dias no Instagram) com apoio do Claude Code usado deliberadamente como "professor", não como executor autônomo. Organiza os testes em nove perguntas — autenticação/logout, autorização/IDOR, CSRF, XSS/SQL Injection, abuso de regra de negócio via API, vazamento de informação em mensagens de erro, rate limiting, dependências vulneráveis e segredos vazados no histórico de git — e fecha com um método de seis passos para montar um prompt de segurança eficaz (papel no ecossistema do teste, apontar documentação existente, definir o que o sistema não é, testar um escopo por vez, definir formato de resposta, declarar o que a IA não pode fazer sem nova autorização).
+
+**Skill carregada:** `tech-mentor-security` (path local: `/home/gabriel-martins/Documentos/skills/tech-mentor-security/`) — índice de `SKILL.md` usado para mapear cada uma das nove perguntas da fonte à categoria OWASP/AppSec correspondente (autenticação/sessão → `appsec-authn-authz.md`; IDOR → `appsec-attacks-deep.md`/`appsec-api.md`; CSRF/XSS/SQLi → `appsec-owasp.md`; rate limiting → `appsec-ddos-waf.md`; dependências → `appsec-supply-chain-dev.md`; segredos → `secret-scanning.md`); `redteam-pentest.md` consultado para calibrar terminologia de pentest/metodologia (PTES, severidade) sem introduzir na wiki conceitos que a fonte não usa (a autora não menciona CVSS, Burp Suite ou metodologia formal — o vídeo é um relato de processo, não um manual técnico).
+
+**Páginas criadas:**
+- `raw/testes-de-seguranca-pentest-com-claude-code-pulsar-saas.md`
+- `wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas.md` — TL;DR, 13 key claims com evidência, entidades, conceitos, conexão com fonte existente, 4 open questions (autoria não confirmada, prompt completo não disponibilizado na transcrição, ausência de relato de correção/reteste, algoritmo de rate limiting não especificado) e 4 raw quotes
+- `wiki/entities/pulsar-saas.md` — novo, status stub (produto/SaaS pessoal, contexto do desafio de estudos, autopentest, autoria não confirmada)
+
+**Páginas atualizadas:**
+- `wiki/concepts/idor.md` — nova seção "Teste Prático como Pergunta de Autopentest"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/autenticacao-e-autorizacao.md` — nova seção "Teste de Logout como Verificação de Autenticação"; novo link para `idor`; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/sessoes-http-cookies.md` — nova seção "Teste de CSRF em Autopentest"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/sql-injection.md` — nova seção "Teste de Injeção como Rotina de Autopentest"; nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/concepts/xss.md` — nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/rate-limiting.md` — nova seção "Teste de Rate Limiting em Autopentest"; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/concepts/secrets-management.md` — nova seção "Scanner de Histórico de Git como Teste de Autopentest"; nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/concepts/supply-chain-security.md` — nova seção "Scan de Dependências como Item de Checklist Pré-Publicação"; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/confiar-no-frontend.md` — nova seção "Variante: Burlar Regra de Negócio Diretamente na API" (distingue bypass client-side via DevTools do bypass direto na API); nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/prompt-engineering.md` — nova seção "Método de Seis Passos para Prompt de Pentest Assistido"; nova linha em Fontes; `source_count` 5 → 6
+- `wiki/concepts/vibe-coding.md` — nova seção "Autopentest Como Contraexemplo Deliberado ao Vibe Coding"; nova linha em Key Sources; `source_count` 10 → 11
+- `wiki/concepts/token-maxing.md` — nova seção "Escopo Pequeno Como Antídoto Prático (Não Só Corporativo)"; nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/entities/claude-code.md` — nova seção "Uso como 'Professor' em Autopentest, Não Como Executor Autônomo"; nova linha em Key Sources; `source_count` 10 → 11
+- `wiki/entities/eduarda-rocket-city.md` — nova seção "Possível Vlog de Construção do Pulsar (Autoria Inferida, Não Confirmada)"; nova linha em Fontes no Wiki; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; nova linha em Entities (`pulsar-saas`)
+
+**Notas:** Fonte de alta confiança para o relato de processo (é a própria autora narrando sua prática), mas com identidade da autora não confirmada — a hipótese de que seja [[wiki/entities/eduarda-rocket-city]] (mesma comunidade Rocket City, mesmo perfil de criadora de conteúdo técnico com projeto prático em vlog) foi registrada explicitamente como inferência não verificada, propagada nos dois lados do link (fonte, entidade Eduarda, entidade Pulsar), seguindo o mesmo padrão de cautela já usado para a autoria de [[wiki/sources/continuous-integration-delivery-deploy-vs-release]]. Esta fonte tem forte sobreposição temática com [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]] (mesmas vulnerabilidades: IDOR, confiar no frontend, rate limiting), mas ângulo complementar e sem contradição: aquela é uma aula técnica sobre os ataques, esta é um relato de processo sobre como usar um agente de IA para descobri-los metodicamente no próprio produto, com ênfase especial em disciplina de prompt e escopo — o achado mais reutilizável da fonte para a wiki é justamente o método de seis passos para prompt de segurança, que não tinha equivalente documentado em [[wiki/concepts/prompt-engineering]] antes desta ingestão.
 
 ---

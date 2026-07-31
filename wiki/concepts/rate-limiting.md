@@ -3,8 +3,8 @@ type: concept
 title: "Rate Limiting"
 aliases: ["throttling", "rate limit", "token bucket", "sliding window"]
 date_created: 2026-04-23
-date_updated: 2026-07-04
-source_count: 3
+date_updated: 2026-07-31
+source_count: 4
 tags: [rate-limiting, token-bucket, sliding-window, redis, throttling, protecao-api, gatekeeper, attack-surface]
 skill: tech-mentor-backend
 status: stub
@@ -34,8 +34,13 @@ Rate limiting é também responsabilidade do [[concepts/gatekeeper-pattern]] —
 
 Além do risco de segurança, não limitar rotas públicas gera custo direto: um `POST` público sem limite permite criação em massa de registros falsos (custo de armazenamento em banco), e uma API de envio de e-mail sem limite permite que um atacante esgote a cota paga do provedor. Login sem proteção habilita brute force de senha. Rate limiting em rotas sensíveis/caras é tão financeiro quanto defensivo.
 
+## Teste de Rate Limiting em Autopentest: "Resposta Sempre Tem Que Ser Sim"
+
+[[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] trata rate limiting como um teste de checklist com resultado binário obrigatório: para toda rota mapeada, a pergunta "um usuário tem limite quantitativo de acesso?" precisa responder sim, sem exceção — moldura simples para verificar, rota por rota, que a defesa contra brute force existe antes de publicar o sistema.
+
 ## Key Sources
 
 - [[sources/rate-limiting]]
 - [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
 - [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]]
+- [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]]

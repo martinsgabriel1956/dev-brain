@@ -3,8 +3,8 @@ type: concept
 title: "Feature Flags Mobile"
 aliases: ["mobile remote config", "mobile ab testing", "firebase remote config", "launchdarkly mobile"]
 date_created: 2026-04-24
-date_updated: 2026-04-24
-source_count: 1
+date_updated: 2026-07-31
+source_count: 2
 tags: [mobile, feature-flags, remote-config, ab-testing, rollout, launchdarkly, firebase]
 skill: tech-mentor-mobile
 status: stable
@@ -63,6 +63,11 @@ Sem métrica de conversão atrelada, A/B é apenas um toggle.
 - [[mobile-cicd]] — integração com pipeline de release
 - [[mobile-monitoramento]] — monitorar métricas por variant
 
+## Ciclo de Release Mobile em Escala (Meta)
+
+Diferente da web, mobile não permite deploy verdadeiramente contínuo — lojas de app e tempo de propagação para o usuário impõem um ciclo mais lento. A Meta ainda assim aplicou os princípios de entrega contínua ao mobile, reduzindo o ciclo de release de 4 semanas para 1 semana com tooling interno (Nuclide, Buck, Infer). → [[wiki/sources/rapid-release-at-massive-scale-facebook]]
+
 ## Key Sources
 
 - [[wiki/sources/mobile-feature-flags]]
+- [[wiki/sources/rapid-release-at-massive-scale-facebook]] — ciclo de release mobile da Meta (4 semanas → 1 semana)

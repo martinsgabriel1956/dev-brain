@@ -3,8 +3,8 @@ type: entity
 title: "Moonshot AI"
 aliases: ["Moonshot", "Kimi"]
 date_created: 2026-07-21
-date_updated: 2026-07-21
-source_count: 1
+date_updated: 2026-07-31
+source_count: 2
 tags: [moonshot, kimi, china, llm, open-source, organização]
 skill: tech-mentor-ai
 status: stub
@@ -22,6 +22,11 @@ Divulgado em [[wiki/sources/kimi-k3-china-mercado-ia-open-source]]: modelo de **
 
 Diferente de labs fechados (OpenAI, Anthropic), a Moonshot publica não só o modelo mas o método de servi-lo em inferência — qualquer provedor com hardware suficiente pode replicar a "receita" e servir o modelo, descentralizando o conhecimento de inferência que hoje é concentrado em poucas big techs (Microsoft, AWS). Isso é discutido como parte do contexto mais amplo de [[wiki/concepts/export-controls-chips-ia|sanções de exportação de chips]] pressionando inovação arquitetural em labs sem acesso irrestrito a hardware de ponta.
 
+## Kimi como Modelo de Fallback por Custo-Benefício
+
+[[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] recomenda o Kimi como opção de "fallback" para tarefas simples/em background, citado ao lado do Sonnet e do DeepSeek como boa relação custo-benefício, e usado como exemplo na categoria "balanceado" de um roteador customizado — ver [[wiki/concepts/roteamento-automatico-de-modelo]].
+
 ## Key Sources
 
 - [[wiki/sources/kimi-k3-china-mercado-ia-open-source]]
+- [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — Kimi como modelo de fallback recomendado por custo-benefício

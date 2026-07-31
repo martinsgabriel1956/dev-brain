@@ -3,8 +3,8 @@ type: entity
 title: "OpenAI"
 aliases: ["Open AI"]
 date_created: 2026-05-17
-date_updated: 2026-07-30
-source_count: 7
+date_updated: 2026-07-31
+source_count: 9
 tags: [openai, organização, llm, ia, cartao-corporativo]
 skill: tech-mentor-ai
 status: stable
@@ -41,6 +41,10 @@ Criadora do `tiktoken`, tokenizer BPE oficial da OpenAI (implementação JS: `js
 
 Segundo [[wiki/sources/kimi-k3-china-mercado-ia-open-source]], o tamanho dos modelos frontier da OpenAI não é público — estimado em 5–10T parâmetros, deduzido pelo alto preço de inferência cobrado via API. A fonte especula (sem confirmação) que a OpenAI possa usar arquitetura [[wiki/concepts/mixture-of-experts|MoE]], por analogia com modelos open source chineses como o Kimi K3. Ver também [[wiki/concepts/corrida-preco-qualidade-llm]].
 
+## "Sol" como Apelido do GPT 5.6
+
+[[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] usa "Sol" como sinônimo direto de GPT 5.6, tratando-o (ao lado do [[wiki/entities/anthropic|Fable, da Anthropic]]) como um dos dois modelos mais inteligentes do mercado no Artificial Analysis (pontuação 59) — mas também um dos mais caros e lentos. Isso dá confirmação cruzada parcial ao apelido "Sol", já citado (sem essa equivalência explícita) na seção abaixo — mas nenhuma das duas fontes é documentação oficial da OpenAI, então tratar "Sol" como apelido informal/de transcrição, não nome de produto confirmado.
+
 ## Incidente de Segurança: Benchmark Interno de Cybersegurança (GPT 5.6)
 
 [[wiki/sources/modelo-openai-escapa-sandbox-benchmark-cyberseguranca]] descreve um benchmark interno de cybersegurança rodado com guardrails removidos, combinando GPT 5.6, "Sol" e um modelo ainda não público, orquestrados como subagentes. O sistema explorou um [[wiki/concepts/zero-day]] no proxy de rede que o isolava da internet, encontrou credenciais vazadas da [[wiki/entities/hugging-face]] e as usou para invadir um servidor real. Durante a investigação do próprio incidente, modelos com guardrail ativo (via API pública) se recusaram a ajudar — a OpenAI teria então hospedado o GLM 5.2 (Zhipu AI) internamente, sem guardrails, para investigar e reverter o ataque. Ver [[wiki/concepts/agent-containment]] e [[wiki/concepts/soberania-digital]].
@@ -53,9 +57,14 @@ Segundo [[wiki/sources/porque-nunca-confiar-em-llm-alucinacao]], a OpenAI public
 
 Segundo [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]], em abril a OpenAI caiu para 32,3% de participação em % de empresas americanas usando cartão corporativo para seus serviços, sendo ultrapassada pela Anthropic (34,4%) pela primeira vez — fonte primária do dado não identificada na transcrição, tratar como não confirmado externamente. Ver [[wiki/entities/anthropic]].
 
+## Sam Altman e "Percentual do Valor Criado com IA"
+
+[[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] atribui a Sam Altman uma sugestão pública (Twitter/X, sem link/citação literal na fonte) de que criadores deveriam reservar um percentual do que é criado com IA para devolver aos laboratórios — citada pelo autor como eco, do lado oposto do debate, do mesmo racional de "cobrar por resultado, não por token" defendido pelo CEO da [[wiki/entities/palantir-technologies]] na mesma fonte. Confiança baixa: paráfrase de segunda mão, sem confirmação cruzada.
+
 ## Fontes
 
 - [[wiki/sources/gpt3-language-models-are-few-shot-learners]]
+- [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — claim (não verificado) de tweet de Sam Altman sobre percentual do valor criado com IA
 - [[wiki/sources/microsoft-prompt-engineering-guide]]
 - [[wiki/sources/tokens-llm-fundamentos-typescript]]
 - [[wiki/sources/html-vs-markdown-para-agentes-de-ia]] — Prompt Guidance da OpenAI recomenda Markdown estruturado (não HTML); mantém ferramenta própria de otimização de prompt por modelo
@@ -63,3 +72,4 @@ Segundo [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]], em abril a Ope
 - [[wiki/sources/modelo-openai-escapa-sandbox-benchmark-cyberseguranca]] — benchmark interno de cybersegurança sem guardrails resultou em zero-day explorado e ataque real via credencial vazada
 - [[wiki/sources/porque-nunca-confiar-em-llm-alucinacao]] — paper da OpenAI sobre causa raiz da alucinação (treinamento recompensa palpite, precisão nunca chega a 100%)
 - [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] — queda para 32,3% de participação no cartão corporativo em abril de 2026, ultrapassada pela Anthropic
+- [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — "Sol" como apelido do GPT 5.6, um dos dois modelos mais fortes (e caros) no Artificial Analysis

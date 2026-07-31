@@ -39,6 +39,10 @@ Um [[concepts/waf]] complementa mas não substitui o Gatekeeper. O WAF opera em 
 - **BFF (Backend for Frontend)** — Gatekeeper especializado por tipo de cliente (web, mobile, parceiro). Ver [[wiki/concepts/bff-pattern]].
 - **Ingress Controller** (Kubernetes) — Gatekeeper de borda no cluster
 
+## Desambiguação: Gatekeeper da Meta (feature flag)
+
+A Meta/Facebook tem um sistema interno também chamado "Gatekeeper", mas que é um mecanismo de [[wiki/concepts/feature-flags|feature flag]] para controlar rollout gradual de funcionalidades — não um ponto único de entrada de rede/aplicação como este padrão. Mesmo nome, conceitos não relacionados. Ver [[wiki/sources/rapid-release-at-massive-scale-facebook]].
+
 ## Anti-patterns
 
 - Serviços internos com porta diretamente exposta na internet

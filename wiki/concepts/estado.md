@@ -3,8 +3,8 @@ type: concept
 title: "Estado"
 aliases: ["state", "program state", "estado do sistema"]
 date_created: 2026-05-13
-date_updated: 2026-07-21
-source_count: 2
+date_updated: 2026-07-31
+source_count: 3
 tags: [estado, state, fundamentos, cs-fundamentals]
 skill: cs-fundamentals
 status: draft
@@ -33,6 +33,10 @@ while tentativas < MAX_TENTATIVAS:
 bloquear_cartao()  # decisão baseada no estado acumulado
 ```
 
+## Exemplo didático: Snake como projeto de aprendizado de estado
+
+O jogo Snake é citado como um dos melhores projetos para iniciantes exercitarem estado justamente porque a dificuldade não está em nenhuma peça isolada — está em manter posição da cobra, posição da comida e pontuação coerentes entre si a cada frame. Mudar uma delas sem atualizar as outras corretamente é a fonte típica de bugs do tipo "a cobra ficou dessincronizada da pontuação". Ver [[wiki/concepts/projetos-fundamentais-para-aprender-a-programar]] para os outros dois projetos da mesma progressão pedagógica (modelagem e algoritmos).
+
 ## Tipos de estado (expandir com novos sources)
 
 - **Local:** existe dentro de uma função (ex: `tentativas` acima)
@@ -50,3 +54,4 @@ bloquear_cartao()  # decisão baseada no estado acumulado
 
 - [[wiki/sources/logica-de-programacao-quatro-passos]]
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
+- [[wiki/sources/tres-projetos-para-aprender-programar]] — Snake como projeto de aprendizado de gerenciamento de estado

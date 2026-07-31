@@ -3,8 +3,8 @@ type: concept
 title: "Autenticação e Autorização"
 aliases: ["authn authz", "authentication vs authorization", "quem é você vs o que você pode fazer"]
 date_created: 2026-07-09
-date_updated: 2026-07-09
-source_count: 1
+date_updated: 2026-07-31
+source_count: 2
 tags: [autenticacao, autorizacao, seguranca, backend, jwt, sessao, rbac]
 skill: tech-mentor-backend
 status: stub
@@ -28,12 +28,18 @@ O backend recebe uma credencial — cookie de sessão, JWT, token de API — que
 1. Confirmar que a requisição veio de alguém conhecido (autenticação)
 2. Confirmar que essa pessoa tem permissão para o recurso pedido (autorização)
 
+## Teste de Logout como Verificação de Autenticação
+
+[[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] descreve um teste concreto e frequentemente esquecido: confirmar que, após logout, a sessão antiga de fato deixa de dar acesso a rotas autenticadas — não basta a UI parecer deslogada, o backend precisa invalidar a sessão de verdade. A fonte trata isso como a primeira das perguntas de segurança de um autopentest guiado por IA ("você é quem diz ser?"), anterior ao teste de autorização propriamente dito (a pergunta seguinte: "você pode fazer isso?", tratada em [[wiki/concepts/idor]]).
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/requisicao-resposta]] — a credencial normalmente viaja num header da requisição
 - [[wiki/concepts/validacao-de-entrada]] — autorização é um caso específico de validação, aplicado à identidade do requisitante
+- [[wiki/concepts/idor]] — falha clássica de autorização: usuário autenticado agindo sobre recurso de outro usuário
 - Ver detalhamento de OAuth2/OIDC/JWT/RBAC/ABAC em `references/auth-authz.md` (tech-mentor-backend)
 
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-backend]]
+- [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]]

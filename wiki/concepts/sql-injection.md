@@ -3,8 +3,8 @@ type: concept
 title: "SQL Injection"
 aliases: ["sql injection", "sqli", "injeção sql", "bobby tables"]
 date_created: 2026-06-10
-date_updated: 2026-07-30
-source_count: 4
+date_updated: 2026-07-31
+source_count: 5
 tags: [security, sql-injection, owasp, input-sanitization, appsec, attack-surface]
 skill: tech-mentor-security
 status: stable
@@ -80,9 +80,14 @@ Uma thread analisada em [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] prop
 - [[concepts/password-hashing]] — resposta ao problema exposto pelos vazamentos via SQLi
 - [[wiki/concepts/orm]] — parametriza por padrão, mas raw queries interpoladas continuam vulneráveis
 
+## Teste de Injeção como Rotina de Autopentest
+
+[[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] agrupa SQL Injection e XSS sob a mesma pergunta de teste — "meu sistema está confiando demais em mim?" — e descreve a prática mínima de tentar inserir queries e scripts maliciosos diretamente dentro de requisições reais contra o próprio sistema, como parte de um checklist de segurança conduzido com apoio (não substituição) de um agente de IA.
+
 ## Key Sources
 
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — Bobby Tables como exemplo central de sanitização de input
 - [[sources/seguranca-armazenamento-senhas-banco-de-dados]] — contexto histórico: SQLi nos anos 90 como vetor que expôs o plaintext
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] — contradiz a simplificação "eliminar SQL elimina SQL attacks"
 - [[wiki/sources/injecao-sql-aula-modulo-seguranca]] — demonstração ao vivo (Express + `pg`) do ataque via query string e via parâmetro de rota, correção via placeholders `$1`/`$2`, e camada extra de validação de schema com Celebrate/Joi
+- [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — teste manual de injeção como parte de checklist de autopentest

@@ -3,8 +3,8 @@ type: concept
 title: "Roteamento Automático de Modelo"
 aliases: ["model routing", "auto-seleção de modelo", "roteador de LLM"]
 date_created: 2026-07-19
-date_updated: 2026-07-19
-source_count: 1
+date_updated: 2026-07-31
+source_count: 2
 tags: [llm, model-routing, prompt-engineering, agregador-de-modelos]
 skill: tech-mentor-ai
 status: draft
@@ -29,6 +29,12 @@ Essas estratégias são infraestrutura conhecida em produtos de IA multi-modelo 
 
 **Confiança:** o mecanismo exato de decisão (qual classificador, quais critérios) não é público — é uma implementação proprietária descrita apenas em termos de resultado ("sempre a resposta do modelo mais adequado"), sem verificação independente possível a partir das fontes disponíveis.
 
+## Caso de produto: Custom Router da Abacus.AI
+
+[[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] descreve uma variante mais simples e transparente do padrão: o "Custom Router" da [[wiki/entities/abacus-ai]] não usa um classificador aprendido para decidir a rota (diferente do RouteLLM/complexity-based acima) — o usuário define manualmente categorias fixas ("Frontier", "Complexo", "Velocidade", "Balanceado", "Fallback") e associa um modelo a cada uma. É roteamento por categoria estática, não por inferência de dificuldade da query. A chave de API gerada pelo router pode então ser usada em qualquer harness que aceite endpoint customizado (ex.: [[wiki/entities/opencode]]), o que a fonte trata como padrão genérico de "AI Gateway", não exclusivo da Abacus — o mesmo conceito é dito funcionar via OpenRouter, integrações do Cursor, uma skill própria no Claude Code, ou um script local.
+
+Diferença chave em relação ao caso Adapta ONE acima: aqui a decisão de qual modelo mapear para cada categoria é feita pelo humano, uma única vez, na configuração — não pelo sistema em tempo real a cada prompt. É routing configurado, não routing aprendido.
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/skills-agente]] — no caso da Adapta, o roteamento de modelo e as skills de contexto pessoal operam juntos: a skill fornece o contexto, o roteador escolhe o modelo que processa esse contexto
@@ -37,3 +43,4 @@ Essas estratégias são infraestrutura conhecida em produtos de IA multi-modelo 
 ## Key Sources
 
 - [[wiki/sources/sistema-produtividade-ia-adapta]]
+- [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — Custom Router da Abacus.AI como caso de roteamento por categoria estática configurada pelo humano

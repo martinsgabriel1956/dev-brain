@@ -3,8 +3,8 @@ type: entity
 title: "Augusto Galego"
 aliases: ["Augusto Galego", "augustogalego.com"]
 date_created: 2026-07-20
-date_updated: 2026-07-27
-source_count: 4
+date_updated: 2026-07-31
+source_count: 5
 tags: [pessoa, programador, youtuber, brasil, devops, system-design, carreira]
 skill: tech-mentor-infra
 status: stub
@@ -28,9 +28,14 @@ Convidado como editor/colaborador num projeto de outro criador de conteúdo ([[w
 
 Além de conteúdo de infra/deploy, produz conteúdo sobre carreira e entrevistas técnicas — 12 anos de experiência, 5 deles em empresa gringa. Lançou curso pago próprio de System Design (mais de um ano de produção) cobrindo banco de dados, filas, load balancer, API Gateway, autenticação, WAF, rate limiting, Saga, CQRS, DNS, Blob Store, cache e CDN, com reembolso integral em um mês sem perguntas. Argumenta que é impossível definir com precisão universal o que é esperado de um júnior/pleno/sênior, pois nenhuma empresa concorda na própria definição desses níveis — mas ainda assim propõe uma progressão de referência específica para system design. → [[wiki/concepts/niveis-de-senioridade-system-design]]
 
+## Possível Aula Irmã/Anterior sobre CI/CD e Deploy vs. Release (Autoria Inferida)
+
+[[wiki/sources/continuous-integration-delivery-deploy-vs-release]] tem o mesmo padrão de patrocínio (HostGator, VPS, mesma faixa de preço e mesma promoção de Claude Code pré-instalado) e o mesmo estilo de demo prática de deploy — mas sem identificação de autor na transcrição. A fonte de [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]] é descrita como continuação de "uma aula anterior sobre tipos de deploy"; esta nova fonte, que cobre justamente CI/CD e deploy vs. release em nível mais introdutório, é uma candidata plausível a ser essa aula anterior (ou uma aula irmã da mesma série) — não confirmado, tratado como open question na fonte.
+
 ## Key Sources
 
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]]
+- [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — autoria inferida, não confirmada por nome no vídeo
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — convidado como colaborador/editor no projeto do simulador de system design
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — progressão de expectativas de system design por nível de senioridade (júnior/pleno/sênior), entrevista vs. trabalho real
 - [[wiki/sources/anatomia-entrevista-system-design-bigtech]] — autoria inferida (não confirmada por nome no vídeo, ver open question na fonte): mesmo curso pago, mesma política de reembolso, mesmo bloco patrocinado UVP removido no início; detalha o pipeline de entrevista bigtech e o que cada etapa da sessão de system design avalia

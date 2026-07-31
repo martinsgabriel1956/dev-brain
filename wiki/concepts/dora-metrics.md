@@ -3,8 +3,8 @@ type: concept
 title: "DORA Metrics"
 aliases: ["DORA", "DevOps Research and Assessment", "Accelerate"]
 date_created: 2026-07-09
-date_updated: 2026-07-28
-source_count: 3
+date_updated: 2026-07-31
+source_count: 4
 tags: [devops, metrics, cicd, qualidade, engineering-culture, tech-debt]
 skill: tech-mentor-leadership
 status: stub
@@ -50,7 +50,12 @@ Não usar para comparar times entre si (contextos diferentes) nem para avaliar p
 
 [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] usa o Lead Time for Changes como proxy de dívida técnica não medida diretamente: se o tempo entre commit e produção para o mesmo tipo de feature cresce ao longo do tempo, é sinal de que dívida técnica está entupindo o pipeline — e isso costuma acontecer gradualmente, sem que o time perceba, até que alguém compare "isso costumava levar 2 dias, agora leva uma semana". Ver [[wiki/concepts/hotspot-analysis]] para as métricas complementares (complexidade ciclomática, code churn) usadas para localizar *onde* no código está a causa desse alongamento.
 
+## Precedente Empírico Pré-Accelerate (Facebook, 2017)
+
+Um ano antes do livro *Accelerate* formalizar a pesquisa DORA, o Facebook já documentava a mesma correlação na prática: deploy web migrado para push quase-contínuo, com o time de mobile crescendo 15x sem queda de produtividade por engenheiro nem aumento de incidentes críticos por release. Não usa a nomenclatura DORA, mas é o mesmo fenômeno — frequência alta sem degradar qualidade. → [[wiki/sources/rapid-release-at-massive-scale-facebook]]
+
 ## Key Sources
 
 - [[wiki/sources/como-evitar-over-engineering-david-farley]]
 - [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] — lead time crescente como proxy indireto de dívida técnica acumulada
+- [[wiki/sources/rapid-release-at-massive-scale-facebook]] — caso real pré-Accelerate da mesma correlação velocidade/qualidade

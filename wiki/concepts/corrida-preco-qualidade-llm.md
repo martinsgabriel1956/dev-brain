@@ -3,8 +3,8 @@ type: concept
 title: "Corrida de Preço vs. Qualidade em LLMs"
 aliases: ["race to the bottom llm", "corrida para baixo de preço", "guerra de preços ia"]
 date_created: 2026-07-21
-date_updated: 2026-07-21
-source_count: 1
+date_updated: 2026-07-31
+source_count: 3
 tags: [mercado-de-ia, precificacao, competicao, llm, open-source]
 skill: tech-mentor-ai
 status: stub
@@ -22,10 +22,22 @@ Empresas como a [[wiki/entities/anthropic|Anthropic]] já vendem para Enterprise
 
 Executivos de labs fechados (citados no vídeo: Amodei da Anthropic, Altman da OpenAI) reclamaram publicamente de concorrentes que teriam usado seus *traces* de output para treinar modelos próprios. O argumento de [[wiki/sources/kimi-k3-china-mercado-ia-open-source]] é que esse é um movimento natural do mercado: labs fechados também podem estudar avanços arquiteturais publicados por concorrentes open source (como o [[wiki/concepts/mixture-of-experts|MoE]] do Kimi K3) e replicá-los com mais hardware e investimento — o que tende a intensificar ainda mais essa corrida, não freá-la.
 
+## Dado Quantitativo: ~70× de Diferença de Custo por Tarefa
+
+[[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] cita o Artificial Analysis para dar textura numérica a essa corrida: o [[wiki/entities/deepseek|DeepSeek V4]] pontua 44 no índice de coding do [[wiki/entities/artificial-analysis|Artificial Analysis]] (contra 59-60 de Fable/Sol) e custaria cerca de 4 centavos por tarefa — enquanto o custo por tarefa do Fable ([[wiki/entities/anthropic]]) seria cerca de 70× maior. É o dado mais concreto que a wiki tem até agora sobre a magnitude do trade-off preço/qualidade entre modelo frontier fechado e modelo open source competitivo — antes desta fonte, a tese era qualitativa ("preço caindo, qualidade subindo"), sem grandeza numérica direta de comparação de custo por tarefa entre um frontier e um concorrente mais barato.
+
+**Confiança:** média — o número vem de leitura de gráfico narrada em vídeo, sem link para os dados brutos do Artificial Analysis nesta ingestão.
+
 ## Por que isso importa para quem constrói aplicação
 
 O jogo de modelos deixou de ser dominado por uma única empresa. Combinado com [[wiki/concepts/camada-de-aplicacao-vs-modelo|a tese de que a camada de aplicação importa mais que o modelo]], a recomendação de negócio é: evitar lock-in em um único provedor, já que o custo de troca tende a cair e a qualidade dos alternativos tende a subir continuamente.
 
+## Contra-argumento: Cobrar por Valor, não por Token
+
+[[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] traz o lado da crítica ao próprio modelo de cobrança que sustenta essa corrida: o CEO da [[wiki/entities/palantir-technologies]] argumenta que, se o valor gerado pela IA é tão alto quanto anunciado, o racional de preço deveria ser sobre o valor gerado (percentual do resultado), não sobre volume de token — e chama o custo de token de "wealth tax". A mesma fonte documenta por que o gasto total sobe mesmo com o preço por token caindo: a orquestração de agentes ([[wiki/concepts/harness]]) multiplica o consumo por tarefa, neutralizando parte do ganho nominal de preço.
+
 ## Key Sources
 
 - [[wiki/sources/kimi-k3-china-mercado-ia-open-source]]
+- [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — dado de ~70× de diferença de custo por tarefa entre Fable e DeepSeek V4 (via Artificial Analysis)
+- [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — crítica ao modelo de cobrança por token (Palantir): preço deveria ser sobre valor gerado, não volume de token

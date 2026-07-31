@@ -3,8 +3,8 @@ type: concept
 title: "Sessões HTTP e Cookies"
 aliases: ["sessão HTTP", "session ID", "cookie de sessão", "sessão stateful"]
 date_created: 2026-07-27
-date_updated: 2026-07-27
-source_count: 1
+date_updated: 2026-07-31
+source_count: 2
 tags: [sessao, cookie, autenticacao, stateless, http, seguranca]
 skill: tech-mentor-security
 status: draft
@@ -35,6 +35,10 @@ Em arquitetura com múltiplos servidores, todos precisam acessar o **mesmo** arm
 - **`SameSite`**: mitiga CSRF (`Strict` bloqueia todo cross-site; `Lax` permite navegação top-level).
 - **Regenerar o ID após login**: previne *session fixation* (atacante força uma sessão conhecida antes do usuário autenticar).
 
+## Teste de CSRF em Autopentest
+
+[[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] enquadra o teste de CSRF como a pergunta "meu navegador pode me sacanear?": verificar que não é possível disparar uma ação autenticada no sistema a partir de um link ou botão malicioso hospedado fora do domínio da aplicação. É a contrapartida prática do atributo `SameSite` já documentado acima — o teste confirma que a defesa (`SameSite=Strict`/`Lax`, ou token CSRF explícito) realmente bloqueia a falsificação, em vez de assumir que está configurada corretamente.
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/jwt]] — alternativa stateless que elimina a dependência central de armazenamento de sessão
@@ -43,3 +47,4 @@ Em arquitetura com múltiplos servidores, todos precisam acessar o **mesmo** arm
 ## Key Sources
 
 - [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]
+- [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]]

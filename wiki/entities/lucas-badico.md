@@ -3,8 +3,8 @@ type: entity
 title: "Lucas Badico"
 aliases: ["Badico"]
 date_created: 2026-07-03
-date_updated: 2026-07-28
-source_count: 2
+date_updated: 2026-07-31
+source_count: 3
 tags: [pessoa, programador, youtuber, go, brasil, agile, mentoria]
 skill: tech-mentor-leadership
 status: stub
@@ -19,6 +19,11 @@ Programador e professor brasileiro, criador de conteúdo técnico focado em [[wi
 - Especialista/defensor de Go como escolha sólida de carreira, não linguagem passageira
 - Trabalha em uma empresa pequena (8 pessoas) onde a maioria dos devs frontend também atua com Go via [[wiki/concepts/ponte-fullstack-para-especializacao|caminho fullstack]]
 - Compara filosofias de linguagem — Go (pragmatismo, poucas formas de fazer cada coisa) vs. Rust (expressividade, muitas features)
+- Programa em Go profissionalmente há ~5 anos; nos últimos 3 meses (a partir de ~2026-04/05) deixou cargos de liderança/gestão para codar exclusivamente, em tempo integral
+
+## Filosofia Técnica: Contra o "Código Fofo"
+
+Defende, em [[wiki/sources/golang-profissional-sem-grandes-frameworks]], que Go é estruturalmente hostil a quem busca "código fofo" — soluções prontas via grande framework que dita como codar. Três pilares dessa visão: não existe framework dominante em Go equivalente a Rails/Express, apenas recomendações da comunidade; ~80% das dependências de um projeto profissional vêm da standard library, com o resto sendo pacotes pequenos e bem estabelecidos; e mesmo com generics disponíveis, a cultura Go prefere repetição estável a abstração genérica grande e frágil. Resume essa filosofia no ditado da comunidade "é melhor repetir um pouquinho de código do que acoplar a uma grande biblioteca".
 
 ## Visão de Carreira e Mercado
 
@@ -32,3 +37,4 @@ Mantém um grupo de mentorados (mencionado como tendo mais de 50 pessoas) usado 
 
 - [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]
 - [[wiki/sources/story-points-po-forcando-30-40-pontos-por-sprint]]
+- [[wiki/sources/golang-profissional-sem-grandes-frameworks]]

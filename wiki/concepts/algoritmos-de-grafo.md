@@ -3,8 +3,8 @@ type: concept
 title: "Algoritmos de Grafo"
 aliases: ["graph algorithms", "grafo", "DFS", "BFS", "Dijkstra", "A-star", "pathfinding"]
 date_created: 2026-07-09
-date_updated: 2026-07-09
-source_count: 1
+date_updated: 2026-07-31
+source_count: 2
 tags: [cs-fundamentals, algoritmos, graph, dfs, bfs, dijkstra, a-star, pathfinding]
 skill: cs-fundamentals
 status: draft
@@ -52,13 +52,19 @@ DFS/BFS (ignoram peso) → Dijkstra (usa peso, sem heurística) → A* (usa peso
 
 Cada passo resolve uma limitação do anterior: DFS/BFS não sabem qual caminho é mais "barato" de verdade; Dijkstra sabe, mas explora sem direção; A* explora com direção.
 
+## Pathfinding como projeto de aprendizado
+
+Um projeto de labirinto onde o computador precisa descobrir sozinho o melhor caminho até a saída é citado como forma de exercitar essa família de algoritmos na prática, sem prescrever qual dos quatro (DFS, BFS, Dijkstra, A*) usar. O ganho pedagógico apontado não é a implementação em si, mas a mudança de raciocínio: sair de "como escrever a linha de código" para "como resolver o problema" — o que evitar caminhos bloqueados e não revisitar o mesmo nó duas vezes já é, na prática, reinventar a lógica de BFS/DFS. Ver [[wiki/concepts/projetos-fundamentais-para-aprender-a-programar]] para os outros dois projetos da mesma progressão (estado e modelagem).
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/arvore]] — árvores são grafos acíclicos conectados; BFS/DFS se aplicam igualmente
 - [[wiki/concepts/big-o]] — O(V+E) como notação padrão de complexidade em grafos
 - [[wiki/concepts/recursao]] — DFS é tipicamente implementado recursivamente
 - [[wiki/concepts/algoritmos-e-estruturas-de-dados]] — hub que lista BFS/DFS e grafos como passos 3 e 5 da sequência de aprendizado de DSA
+- [[wiki/concepts/projetos-fundamentais-para-aprender-a-programar]] — Pathfinding como projeto de aprendizado que introduz esta família de algoritmos
 
 ## Key sources
 
 - [[wiki/sources/9-algoritmos-que-todo-programador-deveria-saber]]
+- [[wiki/sources/tres-projetos-para-aprender-programar]] — Pathfinding/labirinto como projeto de aprendizado de algoritmos de busca de caminho

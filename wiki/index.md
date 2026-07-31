@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-07-30
+date_updated: 2026-07-31
 ---
 
 
@@ -20,6 +20,8 @@ date_updated: 2026-07-30
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] | Vlog em primeira pessoa: dev sem background em segurança usa o Claude Code como "professor" para autopentest do Pulsar (SaaS pessoal) — nove perguntas cobrindo autenticação/logout, IDOR, CSRF, XSS/SQLi, abuso de regra de negócio via API, vazamento em mensagens de erro, rate limiting, dependências vulneráveis e segredos no histórico de git; método de seis passos para prompt de segurança eficaz |
+| [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]] | Post-mortem em primeira pessoa: SYN flood de 260 milhões de requests em um dia contra um SaaS pequeno atrás de Cloudflare — modo Under Attack desativado, proxy reverso (Traefik via Coolify) com bug de CPU/memory leak auto-atualizado durante o próprio incidente; servidor não recuperado, reconstruído do zero com firewall → Docker → proxy nessa ordem |
 | [[wiki/sources/pkce-proof-key-code-exchange-spa-mobile]] | PKCE (RFC 7636) resolve o problema do client secret dinâmico em SPA/mobile — `code_verifier` gerado no cliente, hash (`code_challenge`) enviado na autorização, `code_verifier` original revelado só na troca do código por token; substitui o Implicit Flow (deprecated, token na URL) e é obrigatório no OAuth 2.1 para todos os clients |
 | [[wiki/sources/rfc-7636-pkce-oauth-public-clients]] | Texto normativo completo do RFC 7636 (IETF, 2015), traduzido PT-BR — ABNF exata do `code_verifier` (43-128 chars), `S256` como MTI vs. `plain` desaconselhado, razão para não usar salting no `code_challenge`, e regras de retrocompatibilidade servidor/cliente |
 | [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] | Aula didática que constrói incrementalmente o percurso clássico de microsserviços: deadlock por banco compartilhado → banco por serviço → quebra de atomicidade → two-phase commit → gargalo de coordenação → Saga Pattern via fila (RabbitMQ)/event-driven → CQRS com read/write split e trade-off de replication lag |
@@ -30,6 +32,7 @@ date_updated: 2026-07-30
 | [[wiki/sources/full-text-search-mysql-postgresql]] | `LIKE '%termo%'` é a intuição errada de busca — falha em relevância (substring de caracteres, não palavras) e em performance (full table scan); Full-Text Search resolve os dois via índice invertido — `FULLTEXT INDEX`/`MATCH AGAINST` no MySQL, `tsvector`/`tsquery`/`GIN` no PostgreSQL (que ainda entende plural/singular e sinônimos via lexema/tesauro) |
 | [[wiki/sources/indice-de-banco-de-dados]] | O que é um índice de banco de dados e por que existe — demonstração visual de B-tree se reordenando e busca em O(log n); B-tree (padrão, range) vs. hash (match exato, O(1)) vs. composto vs. único/não único vs. parcial vs. full-text vs. espacial; regra de ouro: índice é ditado pelo padrão de acesso |
 | [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]] | Caminho completo de uma escrita num banco relacional via exemplo de Pix: páginas → buffer pool (buffer hit/miss, dirty pages) → WAL (commit responde antes da página final) → transação/atomicidade → locks + MVCC → isolation levels (Read Committed vs. Repeatable Read) → índice como dado com custo de manutenção → vacuum/compaction → checkpoint/recovery; fecha com "banco não é só um arquivo" |
+| [[wiki/sources/rapid-release-at-massive-scale-facebook]] | Post do Facebook Engineering (2017): migração de ~700 cherry-picks manuais/dia para push quase-contínuo direto da master, com rollout escalonado (funcionários → 2% → 100%) e o feature-flag interno Gatekeeper desacoplando deploy de release; mobile reduziu ciclo de release de 4 para 1 semana escalando o time 15x sem perder qualidade |
 | [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]] | N+1 em duas camadas — frontend↔backend (via API) e backend↔banco (via ORM lazy loading) — mesmas soluções estruturais (endpoint/query especializada, lista de IDs conhecida, ou JOIN/prefetch); origem do GraphQL na Meta como resposta genérica ao N+1/over-under-fetching entre múltiplos frontends; fecha com relational queries do Drizzle como syntax sugar inspirado no GraphQL |
 | [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] | Por que estudar linguagens e conceitos low level (mesmo sem retorno financeiro imediato) traz satisfação pessoal e benefício de carreira no longo prazo — caso pessoal do bot de Discord de Tibia otimizado com concorrência em Go, e da contribuição não remunerada à API TibiaData |
 | [[wiki/sources/7-habitos-programador-altamente-eficaz]] | Sete hábitos de programador eficaz: buscar solução por conta própria antes de perguntar, escapar da paralisia do planejamento sem cair em over-engineering, ler código alheio, documentar de forma inteligente (testes como documentação viva), pensar primeiro em abstrações/limites (analogia dos órgãos), perder o medo de código, e bloquear a própria agenda para "entortar o tempo" |
@@ -201,6 +204,7 @@ date_updated: 2026-07-30
 | [[wiki/sources/acoplamento-abstracao-estado]] | Acoplamento, abstração e estado como lentes para ler código, não termos para decorar — função god acoplada vs. separação por responsabilidade, interface como abstração, estado isolado (recebe/retorna) vs. estado global mutado |
 | [[wiki/sources/5-recursos-para-ser-um-desenvolvedor-melhor]] | Augusto Galego: documentação oficial, roadmap.sh, CS50, livros com custo-benefício (Refactoring sim, Clean Code com reserva), cursos até R$30 e contribuir com open source — nada substitui escrever muito código |
 | [[wiki/sources/golang-mercado-salarios-pesquisa-2024]] | Go paga acima de Java em todos os níveis (maior gap no Sênior, ~R$6.000/mês); Go Developer Survey confirma 93% de satisfação; 27,7% dos devs Go no Brasil atuam remoto para o exterior contra 12% em Java |
+| [[wiki/sources/golang-profissional-sem-grandes-frameworks]] | Lucas Badico: Go não é pra "código fofo" — sem framework dominante equivalente a Rails/Express, ~80% das dependências vêm da stdlib, e mesmo com generics a cultura prefere repetição estável a abstração grande e frágil |
 | [[wiki/sources/hmac-integridade-mensagem-local-first-entrevista]] | Pergunta de entrevista de system design sobre integridade de mensagem: carrinho local-first sem storage no servidor — por que criptografar quebra a exibição, chave assimétrica é cara demais, e HMAC (ipad/opad derivados do mesmo segredo, duas etapas de hash) é a resposta certa contra ataque de extensão de mensagem |
 | [[wiki/sources/mappers-conversao-entre-camadas]] | A mesma entidade (`Notification`) é representada de forma diferente em cada camada de uma arquitetura em camadas — mapper estático por camada (`PrismaNotificationMapper.toPrisma()`) converte entre formatos e isola o acoplamento à tecnologia, não ao domínio |
 | [[wiki/sources/portas-de-rede-como-funcionam]] | Porta é um número virtual (0–65.535) que, com o IP, roteia dados ao serviço certo — faixas IANA (well-known, registered, dynamic), portas dinâmicas por conexão de saída, estados listening/established/closed, netstat na prática |
@@ -224,6 +228,7 @@ date_updated: 2026-07-30
 | [[wiki/sources/por-que-letras-minusculas-economizam-dados]] | Lucas Montano: por que letras minúsculas comprimem melhor que maiúsculas — Huffman coding (árvore menor com menos variedade de caracteres) + LZSS/LZ77 (ponteiros para sequências repetidas) explicam o deflate/gzip; caso Hacker News (title case → sentence case) economiza 31 bytes/página; escovação de bits comparada a otimizar imagens/JS/cache, que economiza ordens de magnitude mais |
 | [[wiki/sources/a-insanidade-de-ser-um-programador-hoje]] | Reação ao artigo de Vitor Sousa Pereira: Unix/`grep` nasceram como ferramenta privada de Ken Thompson depois compartilhada de graça; front-end/back-end como especialidades separadas é invenção de 2006-2007, não histórico; fullstack como corte de custo, não escolha técnica; curva de aprendizado descontínua (caso SMTP); área ficou mais complexa e menos especializada ao mesmo tempo |
 | [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] | Augusto Galego: entrevista de system design cobra compreensão do todo em todo nível, mas no trabalho real só sênior costuma precisar dela; júnior soluciona e demonstra fundação, pleno resolve com racional prático, sênior otimiza e lidera a conversa sobre CAP/sharding/cache/monolito-vs-microsserviços |
+| [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] | Os "dois CDs" (delivery vs. deployment) e deploy vs. release, com demo prática: GitHub Actions de 2 jobs (CI + deploy SSH para VPS), GitHub Secrets write-only, fluxo feature→dev/staging→main com clonagem anonimizada do banco para staging |
 | [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] | TI das Antigas: história do modelo relacional (Codd, IBM 1970) até hoje; ACID e CAP como decisão de negócio, não hype; números reais de instância única (conexões, volume, latência) para MySQL, PostgreSQL, Oracle, SQL Server, SQLite, Redis e MongoDB, com guia direto por cenário |
 | [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] | Aula de concurso público: SGBD, SGBDR vs. SGBD NoSQL, visão (view), quatro modelos NoSQL (chave-valor, documento, colunas, grafos), ACID, Teorema CAP com classificação CA/CP/AP por produto, e bloco de questões reais de bancas (CESPE, NC-UFPR, KIAC, IBADE, AOCP) com gabaritos |
 | [[wiki/sources/design-pattern-facade-renato-augusto]] | Renato Augusto: Facade via exemplo de e-commerce (OrderController → OrderFacade) — Controller não deve carregar fluxo/regra de negócio; defesa de que Facade não fere o SRP porque opera num nível de abstração diferente das classes que orquestra |
@@ -241,6 +246,9 @@ date_updated: 2026-07-30
 | [[wiki/sources/injecao-sql-aula-modulo-seguranca]] | Aula prática (Express + `pg`, sem ORM) de SQL Injection ao vivo: bypass via `' OR '1'='1'` em query string e via `1 OR 1=1` em parâmetro de rota, retornando todos os usuários; correção via placeholders parametrizados (`$1`/`$2`); camada extra de validação de schema com Celebrate + Joi rejeitando o ataque antes da query rodar |
 | [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] | Lucas Montano (atribuição provável) reage ao Claude Tag (Claude no Slack) da Anthropic e à tese de Andrej Karpathy de "terceira reformulação da interface de LLM" (site → app → agente autônomo assíncrono organizacional); memória multiplayer por canal, modo ambient proativo; contraponto de Gergely Orosz — o breakthrough é integração confiável com sistemas internos, não a interface; Anthropic ultrapassa OpenAI no gasto em cartão corporativo em abril; alerta de vendor lock-in de memória organizacional |
 | [[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] | Estudo de caso fictício "Super Roupas": 4 sistemas de fornecedor sem visibilidade unificada de status/atraso; solução "vendida" de microfrontends parciais unifica a experiência (sintoma errado, 3+ meses, alto atrito entre times); solução enxuta é dashboard read-only + BFF agregador (causa raiz, <2 meses, time de 4); eixo sênior (produto) vs. staff (vertical) e reflexão sobre "escalável para quê" |
+| [[wiki/sources/tres-projetos-para-aprender-programar]] | Três projetos escolhidos pela habilidade que ensinam, não pelo portfólio: Snake (gerenciamento de estado), simulador de supermercado (modelagem de domínio) e Pathfinding (algoritmos como estratégia) — "software é argila, não Lego" |
+| [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] | Fable (Anthropic) e Sol/GPT 5.6 (OpenAI) são os mais inteligentes no Artificial Analysis mas ~70× mais caros por tarefa que o DeepSeek V4; roteamento manual → skill/subagentes no Claude Code → Custom Router (Abacus.AI) como as três camadas de automação da escolha de modelo por inteligência/velocidade/custo |
+| [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] | Reação à entrevista de Alex Karp (CEO da Palantir) à CNBC sobre deal com a Nvidia que virou crítica ao modelo de cobrança por token da OpenAI/Anthropic — três argumentos (wealth tax, roubo de propriedade intelectual, preço deveria ser sobre valor); harness como multiplicador oculto de custo; quatro dicas de FinOps para IA |
 
 ## Concepts
 
@@ -717,6 +725,7 @@ date_updated: 2026-07-30
 | [[wiki/concepts/relacao-criador-criatura]] | Colocar programador admirado num pedestal e se tratar como inferior — bloqueia o próprio potencial |
 | [[wiki/concepts/maximizar-pontos-fortes]] | Objetivo de programar não é ser bom em programar, é aumentar área de impacto — aproxime a técnica do seu forte real |
 | [[wiki/concepts/projeto-com-adrenalina]] | Escolher o projeto real (pelo interesse genuíno) antes da tecnologia — a stack vem depois, em função do projeto |
+| [[wiki/concepts/projetos-fundamentais-para-aprender-a-programar]] | Snake ensina estado, supermercado ensina modelagem, Pathfinding ensina algoritmos — três projetos, três habilidades ortogonais |
 
 ### Filosofia do Criador (Objetivismo)
 
@@ -783,6 +792,7 @@ date_updated: 2026-07-30
 | [[wiki/concepts/zero-downtime-deploy]] | Estratégia de tráfego + migrations backward compatible via Expand-Contract — nunca migrar schema e código no mesmo deploy |
 | [[wiki/concepts/feature-flags]] | Ativa/desativa funcionalidades em produção sem novo deploy — o mecanismo mais comum para separar deploy de release |
 | [[wiki/concepts/systemd]] | Init system do Linux (PID 1) — mantém o processo da aplicação vivo entre trocas de tráfego, independente do roteamento |
+| [[wiki/concepts/coolify]] | PaaS self-hosted sobre Docker/Traefik — auto-update semanal do proxy é conveniente até uma versão bugada derrubar tudo sozinha |
 
 ### Realtime & Comunicação
 
@@ -913,6 +923,7 @@ date_updated: 2026-07-30
 | [[wiki/concepts/attack-surface]] | Conjunto de pontos de entrada exploráveis — quanto menor, mais fácil de defender |
 | [[wiki/concepts/defense-in-depth]] | Múltiplas camadas independentes — se uma falha, as outras contêm o dano |
 | [[wiki/concepts/waf]] | Filtro de borda HTTP — bloqueia OWASP Top 10 e DDoS antes de chegar na aplicação |
+| [[wiki/concepts/ddos-syn-flood]] | Handshake TCP nunca completado em massa esgota recursos do servidor — SYN cookies adiam alocação de memória, Under Attack Mode é a camada que falta mesmo com CDN configurado |
 | [[wiki/concepts/principio-do-menor-privilegio]] | Permissão exata e nada mais — limita o raio de explosão quando um componente é comprometido |
 | [[wiki/concepts/secure-by-default]] | Estado padrão é o mais seguro — fail-secure, confirmação explícita para ações destrutivas |
 | [[wiki/concepts/sql-injection]] | Input não sanitizado executado como SQL — Bobby Tables; prevenção: queries parametrizadas |
@@ -1056,11 +1067,13 @@ date_updated: 2026-07-30
 | [[wiki/concepts/refatoracao]] | Mudar estrutura interna sem alterar comportamento externo — dois chapéus de Kent Beck, passos pequenos, testes na base da pirâmide como rede de segurança, refatoração oportunista vs. planejada, analogia de jardinagem, seis situações do Pragmatic Programmer |
 | [[wiki/concepts/dois-chapeus-kent-beck]] | Adicionar funcionalidade e refatorar são atividades mutuamente exclusivas no tempo — cada uma com sua própria disciplina de validação |
 | [[wiki/concepts/entropia-de-software]] | Tendência natural de um sistema degradar com o tempo mesmo sem erro deliberado — refatoração como poda contínua de um jardim, não construção pontual de um prédio |
+| [[wiki/concepts/finops-para-ia]] | Quatro práticas de governança de custo de token: budget/limite por dev-ferramenta, métricas de valor em vez de dashboard de volume, classificação de dados para self-hosted, ownership evitando lock-in de provedor |
 
 ## Entities
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/pulsar-saas]] | SaaS pessoal ligado a um desafio de estudos gratuito de 100 dias no Instagram — caso real de autopentest guiado por IA |
 | [[wiki/entities/the-primeagen]] | Engenheiro de software sênior na Netflix, criador de conteúdo (YouTube, em inglês) — reagiu a um vídeo de Theodor defendendo programar "do jeito difícil" |
 | [[wiki/entities/theodor]] | Dev/criador de conteúdo construindo jogo indie do zero sem engine — identidade exata não confirmada na fonte |
 | [[wiki/entities/knight-capital]] | Trading de alta frequência: código morto reativado por engano num deploy (2012) causou perda de ~$440-460 milhões em 45 minutos — caso extremo de custo de não seguir a Boy Scout Rule |
@@ -1083,6 +1096,7 @@ date_updated: 2026-07-30
 | [[wiki/entities/geoffrey-huntley]] | Engenheiro australiano, publicou o Ralph Loop em julho de 2025 — loop agêntico de uma linha de bash batizado por Ralph Wiggum |
 | [[wiki/entities/peter-steinberger]] | Autor da frase viral "if you are not the model, you are the harness" (6,5M views); citado (não reconciliado) como criador do OpenClaw |
 | [[wiki/entities/hostinger]] | Provedora de VPS (menção patrocinada) — servidor virtual livre, físico gerenciado (DDoS, firewall IA, backups semanais) |
+| [[wiki/entities/mano-davin]] | Criador do Find My SaaS — relato em primeira pessoa de SYN flood de 260M requests/dia, servidor reconstruído do zero após 6h fora do ar |
 | [[wiki/entities/replit]] | Plataforma de agentes de IA — workers paralelos (possível `git worktree`), taskboard multiplayer, testes end-to-end automáticos do próprio agente |
 | [[wiki/entities/augusto-galego]] | Criador de conteúdo técnico brasileiro — demo prática de deploy blue/green com Nginx numa VPS |
 | [[wiki/entities/hostgator]] | Provedora de hospedagem/VPS — patrocinadora da demo de deploy blue/green de Augusto Galego |
@@ -1180,6 +1194,11 @@ date_updated: 2026-07-30
 | [[wiki/entities/andrej-karpathy]] | Ex-diretor de IA da Tesla, fundador da OpenAI — tese dos "três paradigmas de interface de LLM" (site → app → agente autônomo assíncrono organizacional), em reação ao Claude Tag |
 | [[wiki/entities/gergely-orosz]] | Autor do Pragmatic Engineer — contraponto ao hype do Claude Tag: o breakthrough é integrar de forma confiável todos os sistemas internos de uma empresa, não a interface do Slack |
 | [[wiki/entities/devin-ai]] | Cognition AI — precursor do padrão de agente na nuvem (cloud agent) via chat/Slack; usado (relato de segunda mão) pelo Nubank para refatoração |
+| [[wiki/entities/abacus-ai]] | Plataforma de IA por assinatura — Custom Router configurável por categoria de tarefa (Frontier/Complexo/Velocidade/Balanceado/Fallback), chave de API conectável a outros harnesses |
+| [[wiki/entities/artificial-analysis]] | Site de benchmarks independentes de LLM — índice de inteligência/coding, velocidade e custo por tarefa entre modelos frontier e alternativas mais baratas |
+| [[wiki/entities/opencode]] | Harness de codificação agêntica em CLI, parecido com o Claude Code mas agnóstico de provider — conecta a qualquer endpoint via chave de API |
+| [[wiki/entities/xai]] | Empresa de IA de Elon Musk (data centers e modelos próprios, família Grok) — teto mensal de uso de IA para engenheiros internos citado como sinal de escrutínio de custo mesmo com infra própria |
+| [[wiki/entities/elon-musk]] | Fundador da xAI — citado por relato de segunda mão sobre limite de uso de IA imposto a engenheiros internos |
 
 ### Documentação de Arquitetura
 

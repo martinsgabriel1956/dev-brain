@@ -3,8 +3,8 @@ type: concept
 title: "Vibe Coding"
 aliases: ["vibe coding", "vibe-coding", "coding por vibração", "agentic coding", "orquestração de agentes"]
 date_created: 2026-04-23
-date_updated: 2026-07-24
-source_count: 10
+date_updated: 2026-07-31
+source_count: 11
 tags: [vibe-coding, agentes-ia, produtividade, divida-cognitiva, ai-brainfry, paralelismo-cognitivo]
 skill: tech-mentor-ai
 status: stable
@@ -121,6 +121,10 @@ Citado como exemplo de hype tecnológico em formação (junto com MCP) no moment
 
 [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] descreve o criador do OpenCode (Peter) como "mais vibe coder" — o próprio OpenCode foi construído com vibe coding — e nota que por isso nem tudo que ele defende sobre trabalhar "só em loops" encaixa diretamente em desenvolvimento enterprise mais complexo, ao contrário do criador do Claude Code (Boris), citado como referência mais aplicável a esse contexto.
 
+## Autopentest Como Contraexemplo Deliberado ao Vibe Coding
+
+[[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] é um relato de primeira pessoa onde a própria autora enquadra explicitamente sua escolha metodológica como o oposto de vibe coding: em vez de pedir para o Claude Code "invadir o sistema" e aceitar o relatório, ela documenta e busca entender cada verificação de segurança encontrada, tratando o agente como professor/guia. Reforça o ponto já central nesta página — [[wiki/sources/vibe-coding-limites-maturidade-profissional|segurança é justamente uma das áreas onde vibe coding puro falha]] — mas do lado de quem *evitou* a falha ativamente, não do lado de um incidente já ocorrido: a defesa prática usada foi contexto extenso (documentação do sistema), escopo pequeno por sessão, e restrições explícitas sobre o que a IA podia decidir sozinha.
+
 ## Key Sources
 
 - [[sources/divida-cognitiva-ai-brainfry]]
@@ -136,3 +140,4 @@ Citado como exemplo de hype tecnológico em formação (junto com MCP) no moment
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — ratchet de baseline como mitigação mecânica via CI, alternativa/complemento à disciplina de RFC e Grill Me
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — argumenta que [[wiki/concepts/entrevista-system-design|system design]] é justamente o conhecimento que quem vibe coda (mesmo sem saber programar) não pode delegar para a IA, já que é o que determina se a arquitetura do produto escala; demonstra o fluxo de criação de um SaaS com [[wiki/entities/replit|Replit]] e um colaborador convidado ([[wiki/entities/augusto-galego]])
 - [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — argumenta que fundamentos de arquitetura (ex.: microsserviços) são o que permite ao dev distinguir uma boa sugestão de IA de "salada de letrinhas bonitas"; a IA acelera decisão mas não substitui a curadoria de quem entende o contexto do sistema — mesma fronteira já documentada acima em "O Limite Não É Técnico, É de Julgamento", agora reforçada por uma terceira fonte independente
+- [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — autopentest guiado como contraexemplo deliberado ao vibe coding em segurança

@@ -3,8 +3,8 @@ type: concept
 title: "Confiar no Frontend (Client-Side Trust Anti-Pattern)"
 aliases: ["confiar no frontend", "nunca confie no cliente", "client-side validation bypass", "trust boundary violation"]
 date_created: 2026-07-04
-date_updated: 2026-07-04
-source_count: 1
+date_updated: 2026-07-31
+source_count: 2
 tags: [appsec, trust-boundary, business-logic, client-side-security, owasp]
 skill: tech-mentor-security
 status: stable
@@ -37,6 +37,11 @@ Este é o princípio subjacente que também explica por que [[wiki/concepts/idor
 
 - [[wiki/concepts/attack-surface]] — toda superfície onde o cliente influencia uma decisão de negócio é um ponto a proteger no servidor
 
+## Variante: Burlar Regra de Negócio Diretamente na API
+
+[[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] descreve um teste correlato, mas distinto do bypass client-side clássico desta página: em vez de manipular variáveis no DevTools do frontend, o teste consiste em atacar diretamente a API tentando burlar uma regra de negócio que deveria ser reforçada no servidor — exemplo dado: registrar check-in em datas passadas ou futuras que a regra do produto não deveria permitir. A pergunta-guia da fonte é "eu consigo ser malandra no sistema?". O princípio de correção é o mesmo desta página — toda regra de negócio precisa ser revalidada no servidor —, mas o vetor de ataque já pula a camada de UI e vai direto à API, então "nunca confiar no frontend" não é suficiente sozinho: é preciso também não confiar em nenhum parâmetro de requisição que o cliente controla, mesmo vindo de um client legítimo.
+
 ## Key Sources
 
 - [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]]
+- [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — variante de bypass de regra de negócio direto na API (não via DevTools)

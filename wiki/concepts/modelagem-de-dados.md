@@ -3,8 +3,8 @@ type: concept
 title: "Modelagem de Dados"
 aliases: ["data modeling", "modelagem relacional", "normalização"]
 date_created: 2026-07-09
-date_updated: 2026-07-30
-source_count: 4
+date_updated: 2026-07-31
+source_count: 5
 tags: [banco-de-dados, modelagem, normalizacao, indice, backend]
 skill: tech-mentor-backend
 status: stub
@@ -29,6 +29,10 @@ Uma query mal servida por índice pode virar um full scan gigante; a mesma query
 
 Em uma [[wiki/concepts/entrevista-system-design|entrevista de system design]], a expectativa não é modelagem profunda — é mostrar repertório: reconhecer que partes diferentes de um mesmo sistema podem pedir um RDBMS, um banco chave-valor ou um banco de busca (search), conforme o caso de uso de cada parte.
 
+## Exemplo didático: simulador de supermercado como projeto de aprendizado de modelagem
+
+Um simulador de supermercado é citado como projeto ideal para exercitar modelagem porque ações triviais para um humano (pegar um produto, passar no caixa) escondem perguntas nada óbvias para o computador: como saber que o produto ainda tem estoque, como impedir que dois clientes comprem o último item ao mesmo tempo, como calcular o total, como validar que um preço não é um erro. Construir o projeto não é "fazer um supermercado" — é ensinar o computador como um supermercado funciona. Ver [[wiki/concepts/projetos-fundamentais-para-aprender-a-programar]] para os outros dois projetos da mesma progressão (estado e algoritmos).
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/database-transactions]] — depois de modelado, o dado precisa se manter correto sob concorrência
@@ -50,3 +54,4 @@ Em uma [[wiki/concepts/entrevista-system-design|entrevista de system design]], a
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]
 - [[wiki/sources/anatomia-entrevista-system-design-bigtech]]
 - [[wiki/sources/system-design-entrevista-cinema-draw-io]] — critério prático de escolha SQL vs. NoSQL baseado em existência de relação entre entidades
+- [[wiki/sources/tres-projetos-para-aprender-programar]] — simulador de supermercado como projeto de aprendizado de modelagem de domínio

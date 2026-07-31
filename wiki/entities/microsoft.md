@@ -3,8 +3,8 @@ type: entity
 title: "Microsoft"
 aliases: []
 date_created: 2026-07-16
-date_updated: 2026-07-16
-source_count: 2
+date_updated: 2026-07-31
+source_count: 3
 tags: [empresa, custo-ia, token-economics, demissao, capital-de-tokens]
 skill: tech-mentor-ai
 status: stub
@@ -26,3 +26,4 @@ Em outro artigo, Nadella descreveu o **"paradoxo da informação invertida"** (r
 
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]]
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — "paradoxo da informação invertida"
+- [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — citada (sem detalhamento numérico) como uma das big techs estourando orçamento de engenharia de IA em 2026

@@ -3,8 +3,8 @@ type: concept
 title: "Prompt Engineering"
 aliases: ["engenharia de prompt", "prompt design"]
 date_created: 2026-05-17
-date_updated: 2026-07-21
-source_count: 5
+date_updated: 2026-07-31
+source_count: 6
 tags: [prompt-engineering, llm, few-shot, codex, software-3]
 skill: tech-mentor-ai
 status: stable
@@ -86,9 +86,14 @@ Em modelos mais fortes (ex.: Fable), o mesmo princípio de "descreva o estado de
 
 [[wiki/sources/sistema-produtividade-ia-adapta]] aplica o padrão Tell It a um domínio não técnico: prompts de planejamento pessoal que declaram explicitamente formato de saída esperado (divisão por dia, foco do dia, ordem de execução, período sugerido) e critérios de organização (energia, prioridade, carga mental) — mesma lógica de "declarar restrições e formato antes da instrução" usada em prompts de codificação, mostrando que o padrão não é específico de tarefas técnicas.
 
+## Método de Seis Passos para Prompt de Pentest Assistido
+
+[[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] descreve um método específico de domínio (segurança/autopentest), mas que reafirma vários princípios já documentados nesta página em outro contexto: (1) declarar o papel de quem pede o teste (dono do sistema, não atacante externo); (2) apontar para documentação já existente do sistema em vez de deixar o modelo inferir arquitetura — instância direta de "Describe It"; (3) definir explicitamente o que o sistema **não é** (ex.: "não uso Kubernetes"), tão importante quanto dizer o que é, para restringir o espaço de hipóteses do modelo; (4) testar um escopo por vez em sessões separadas — a fonte relata que testar tudo de uma vez faz o modelo "delirar" e gasta mais tokens sem necessidade; (5) definir o formato de resposta esperado; (6) declarar explicitamente o que a IA **não pode fazer** sem nova autorização — contra-exemplo de "Tell It" mal calibrado: uma autorização ampla ("pode mexer, não pergunte mais") interpretada literalmente pode levar o agente a refatorar código sem solicitar confirmação em uma pergunta não relacionada.
+
 ## Fontes
 
 - [[wiki/sources/microsoft-prompt-engineering-guide]]
+- [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — método de seis passos para prompt de autopentest de segurança
 - [[wiki/sources/gpt3-language-models-are-few-shot-learners]]
 - [[wiki/sources/chain-of-thought-prompting]] — evidência empírica de que CoT (few-shot com passos intermediários) é a técnica mais eficaz para raciocínio multi-etapas
 - [[wiki/sources/html-vs-markdown-para-agentes-de-ia]] — contraste entre a recomendação de Markdown da OpenAI e o uso de tags/HTML em fluxos de produção reais

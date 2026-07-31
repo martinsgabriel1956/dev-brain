@@ -3,9 +3,9 @@ type: entity
 title: "Meta"
 aliases: ["Facebook", "Meta Platforms"]
 date_created: 2026-07-16
-date_updated: 2026-07-28
-source_count: 2
-tags: [empresa, demissao, ai-washing, era-agentica, graphql, api-design]
+date_updated: 2026-07-31
+source_count: 5
+tags: [empresa, demissao, ai-washing, era-agentica, graphql, api-design, ci-cd, deploy]
 skill: tech-mentor-ai
 status: stub
 ---
@@ -24,7 +24,14 @@ Um exemplo concreto de erro citado: o assistente de recuperação de senha do In
 
 A Meta (então Facebook) criou o [[wiki/concepts/graphql]], motivada pela necessidade de múltiplos frontends (mobile, web, iPad), evoluindo rapidamente, buscarem dados profundamente aninhados (usuário → post → comentário) sem multiplicar endpoints REST especializados por tela — e sem sofrer do problema de [[wiki/concepts/n-plus-one]] entre frontend e backend. Ver [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]].
 
+## Deploy Contínuo em Escala Massiva (2017)
+
+Antes de ser conhecida por IA, a Meta (então Facebook) já era referência em [[wiki/concepts/ci-cd]]: em 2017, migrou o deploy web de ~700 cherry-picks manuais/dia para push quase-contínuo direto da master, escalando via [[wiki/concepts/canary-release|rollout gradual]] (funcionários → 2% → 100%) e usando seu sistema interno de feature flag, o Gatekeeper, para desacoplar deploy de release (→ [[wiki/concepts/deploy-vs-release]]). Ver [[wiki/sources/rapid-release-at-massive-scale-facebook]].
+
 ## Key Sources
 
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]]
 - [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]] — origem do GraphQL como resposta ao N+1/over-under-fetching
+- [[wiki/sources/rapid-release-at-massive-scale-facebook]] — transição para deploy contínuo em escala (2017)
+- [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — caso citado de segunda mão como ilustração didática de deploy vs. release
+- [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — citada (sem detalhamento numérico) como uma das big techs estourando orçamento de engenharia de IA em 2026

@@ -3,8 +3,8 @@ type: concept
 title: "Escolher o Projeto Antes da Tecnologia"
 aliases: ["projeto com adrenalina", "projeto real antes do stack", "adrenalina como critério de projeto"]
 date_created: 2026-07-21
-date_updated: 2026-07-21
-source_count: 1
+date_updated: 2026-07-31
+source_count: 2
 tags: [carreira, aprendizado, projetos, iniciantes, portfolio]
 skill: tech-mentor-leadership
 status: draft
@@ -33,7 +33,9 @@ O peso de uma única pessoa implementar sozinha algo que normalmente é trabalho
 - [[wiki/concepts/dopamina-e-projetos]] — tensão a observar: escolher pelo critério de "adrenalina"/interesse genuíno pode ser o mesmo mecanismo de dopamina de antecipação que leva a abandonar projetos na fase de construção; a diferença proposta aqui é que a adrenalina serve para *escolher* o projeto, não para sustentar sozinha a execução dele
 - [[wiki/concepts/maximizar-pontos-fortes]] — princípio irmão: impacto e propósito real antes de habilidade técnica isolada
 - [[wiki/concepts/checklist-primeiro-dia-projeto]] — depois de escolhido o projeto, esse checklist cobre a ordem tática de setup
+- [[wiki/concepts/projetos-fundamentais-para-aprender-a-programar]] — tensão de fase: aquele conceito prescreve três projetos específicos por habilidade (estado, modelagem, algoritmos), enquanto este recomenda escolher pelo interesse genuíno do aprendiz; não são contraditórios, respondem perguntas diferentes
 
 ## Key Sources
 
 - [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]]
+- [[wiki/sources/tres-projetos-para-aprender-programar]] — contraponto: três projetos prescritos pela habilidade que ensinam, não pelo critério de interesse pessoal

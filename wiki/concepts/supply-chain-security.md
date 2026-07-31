@@ -4,7 +4,7 @@ title: "Supply Chain Security"
 aliases: ["supply chain security", "seguranca de cadeia de suprimentos de software", "ataque de supply chain"]
 date_created: 2026-07-20
 date_updated: 2026-07-20
-source_count: 2
+source_count: 3
 tags: [supply-chain-security, sbom, slsa, sigstore, cosign, dependency-pinning, sca, npm, security]
 skill: tech-mentor-security
 status: stable
@@ -36,7 +36,12 @@ Uma camada de defesa adicional, tratada em detalhe em [[wiki/concepts/agent-cont
 - [[wiki/concepts/defense-in-depth]] — supply chain security bem-feita é, ela mesma, múltiplas camadas (SBOM, assinatura, sandboxing), não uma ferramenta única.
 - [[wiki/concepts/principio-do-menor-privilegio]] — um script `postinstall` idealmente não deveria ter os mesmos privilégios do usuário que roda `npm install`; contenção de agente é uma forma de aproximar esse ideal na prática.
 
+## Scan de Dependências como Item de Checklist Pré-Publicação
+
+[[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] cita, em linguagem simples, a mesma defesa de primeira linha desta página (SCA): "fazer um scan das dependências pra procurar problema com dependência que tem alguma vulnerabilidade" — tratado como algo que precisa estar **sempre** rodando na pipeline, não como verificação pontual antes do lançamento.
+
 ## Key Sources
 
 - [[wiki/sources/supply-chain-security]] — SBOM, SLSA, Sigstore/Cosign como pilares de dependências e artefatos de build
 - [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — vetor de ataque via `postinstall` malicioso e defesa via contenção de processo/agente
+- [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — scan de dependências como item de checklist de autopentest, integrado à pipeline
