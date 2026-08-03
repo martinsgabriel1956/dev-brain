@@ -3,8 +3,8 @@ type: concept
 title: "Código Legado e IA"
 aliases: ["legacy code ia", "migracao legado ia", "modernizacao ia"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 2
+date_updated: 2026-08-03
+source_count: 3
 tags: [legado, migracao, ia-para-devs, spec-driven, modernizacao]
 skill: tech-mentor-ai
 status: draft
@@ -58,7 +58,12 @@ Sistemas em Natural/ADABAS (bancos, governo, aviação) têm particularidades s�
 
 Para esses casos, a abordagem de **reconstruir a partir da documentação oficial** (leis, specs regulatórias) pode ser mais eficaz do que tentar extrair lógica do código.
 
+## Por Que o Legado Fica Complexo em Primeiro Lugar
+
+[[wiki/sources/large-scale-vs-complex-architecture]] (não é sobre IA, mas descreve a origem do problema que esta página ataca) explica por que sistemas enterprise antigos acumulam a complexidade poliglota que torna a migração assistida por IA necessária: décadas de "refatorar gradualmente" sem nunca desligar completamente a plataforma anterior (mainframe → AS/400 → Linux → Windows), gerando múltiplos protocolos de comunicação convivendo (SOAP, REST, batch). Ver [[wiki/concepts/arquitetura-complexa]].
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-02-mercado-perfil-profissional]]
 - [[wiki/sources/formacao-ia-devs-aula-06-qa]]
+- [[wiki/sources/large-scale-vs-complex-architecture]] — descreve a origem histórica (migração multi-plataforma sem desligamento completo) do tipo de legado enterprise que este conceito endereça

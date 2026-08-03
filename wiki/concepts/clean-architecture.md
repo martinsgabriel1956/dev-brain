@@ -3,9 +3,9 @@ type: concept
 title: "Clean Architecture"
 aliases: ["arquitetura limpa", "clean arch"]
 date_created: 2026-07-24
-date_updated: 2026-07-30
-source_count: 3
-tags: [clean-architecture, uncle-bob, dependency-inversion, use-case, presenter, view-model, arquitetura]
+date_updated: 2026-08-03
+source_count: 4
+tags: [clean-architecture, uncle-bob, dependency-inversion, use-case, presenter, view-model, arquitetura, dci, bce]
 skill: tech-mentor-backend
 status: draft
 ---
@@ -59,8 +59,21 @@ Na Clean Architecture, a lógica de negócio que ficava numa única business lay
 
 Sistemas com lógica de negócio complexa que vai mudar ao longo do tempo. Para CRUDs simples, a quantidade de camadas e interfaces é over-engineering — ver [[wiki/concepts/over-engineering]].
 
+## Genealogia: síntese de três arquiteturas anteriores
+
+Segundo o próprio Robert Martin (citado em [[wiki/sources/arquitetura-limpa-na-pratica]]), a Clean Architecture é "uma tentativa de integrar várias arquiteturas desenvolvidas nas últimas décadas em uma ideia prática" — ver [[wiki/concepts/dci-e-bce]] para o detalhamento das três: [[wiki/concepts/hexagonal-architecture]] (Cockburn), DCI/Data-Context-Interaction (Reenskaug e Coplien) e BCE/Boundary-Control-Entity (Jacobson). As cinco camadas do estudo de caso do livro (Entidades, Casos de Uso, Adaptadores de Interface, Frameworks & Drivers, e uma quinta camada — Principal & Configuração — que o autor adiciona por conta própria para módulos de composição/injeção de dependência) mapeiam diretamente para o diagrama de círculos concêntricos e a Regra de Dependência descritos acima.
+
+## Uso em produção: Netflix, Uber, iFood
+
+[[wiki/sources/arquitetura-limpa-na-pratica]] documenta casos de adoção real: a Netflix trocou a fonte de dados de uma API de JSON para GraphQL em ~2 horas graças a repositórios abstraídos por interface (Arquitetura Hexagonal); a Uber descreve sua "Domain-Oriented Microservices Architecture" (DOMA) como baseada em DDD e Clean Architecture — ambos com posts de engenharia públicos como fonte. Relatos sobre iFood, Amazon, Mercado Livre e Nubank são anedóticos (conversas pessoais do autor do livro), com confiança mais baixa.
+
+## Either monad para tratamento de erros
+
+No estudo de caso do livro, erros esperados (email inválido, usuário já existente) são tratados retornando um tipo `Either<Erro, Sucesso>` (implementado com classes `Left`/`Right`) em vez de lançar exceções — reservando `try-catch` só para o nível mais externo (`WebController`, middleware). A justificativa citada é a mesma usada em *Object Design* (Wirfs-Brock et al.): preferir retornar o erro a lançá-lo, quando o erro é uma condição prevista do domínio.
+
 ## Key Sources
 
 - [[wiki/sources/presenters]] — papel do Presenter e ViewModel especificamente na camada HTTP/apresentação (REST, GraphQL, CLI)
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — fluxo completo do diagrama de cenário web, e a justificativa teórica (objeto vs. estrutura de dados) por trás de cada camada
 - [[wiki/sources/clean-architecture-arquitetura-centrada-no-dominio]] — comparação direta com a arquitetura em 3 camadas, explicando a origem do nome "domain-centric"
+- [[wiki/sources/arquitetura-limpa-na-pratica]] — estudo de caso completo em TypeScript (theWisePad), genealogia DCI/BCE/Hexagonal, casos reais de adoção (Netflix, Uber, iFood), e o padrão Either para tratamento de erros

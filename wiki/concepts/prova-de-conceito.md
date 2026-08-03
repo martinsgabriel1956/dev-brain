@@ -3,8 +3,8 @@ type: concept
 title: "Prova de Conceito (PoC)"
 aliases: ["proof of concept", "PoC", "protótipo técnico", "spike"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-08-03
+source_count: 2
 tags: [processo, tecnologia, inovação, risco, protótipo]
 skill: tech-mentor-leadership
 status: stable
@@ -45,6 +45,11 @@ Devs tendem a querer usar tecnologias novas por ansiedade, não por necessidade 
 
 Fazer PoCs regularmente evita virar o dev que "sempre usa X" porque nunca experimentou alternativas — ver [[flexibilidade-tecnica]].
 
+## Escala Realista Também é Escopo Mínimo — POC de Migração de Arquitetura
+
+[[wiki/sources/ciclo-de-mudanca-de-arquitetura]] adiciona uma restrição específica para PoCs que validam mudança de arquitetura (troca de banco, novo padrão de mensageria, etc.): "escopo mínimo" não pode significar "escala irrealista". Se o sistema precisa suportar 10.000 transações por segundo, testar a PoC com 500 TPS e considerar validado é um teste inválido — o comportamento sob carga real (principalmente na camada de dados) é frequentemente o próprio objeto do teste. A fonte recomenda me aproximar do volume real esperado (1.000, 5.000, 10.000, e se possível acima) para revelar como o comportamento muda, sem exigir cobertura de 100% dos cenários. Essa mesma fonte também reforça a ordem já implícita nesta página: PoC vem antes do MVP, não o contrário — MVP é a entrega incremental que só começa depois que a PoC validou a abordagem.
+
 ## Key Sources
 
 - [[wiki/sources/desenvolvedor-acima-da-media-10-itens]]
+- [[wiki/sources/ciclo-de-mudanca-de-arquitetura]] — PoC de migração de arquitetura precisa ser testada na escala real esperada, não numa fração dela

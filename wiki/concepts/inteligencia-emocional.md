@@ -3,8 +3,8 @@ type: concept
 title: "Inteligência Emocional"
 aliases: ["IE", "EQ", "emotional intelligence", "maturidade emocional"]
 date_created: 2026-05-19
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-07-31
+source_count: 3
 tags: [soft-skills, inteligencia-emocional, carreira, resiliência, liderança]
 skill: tech-mentor-leadership
 status: stable
@@ -39,6 +39,10 @@ Baixa inteligência emocional combinada com alta pressão é um dos caminhos mai
 
 Um caso concreto de IE em ação: separar "meu código foi reprovado" de "eu fui reprovado". A crítica recai sobre o código, não sobre quem escreveu — reagir defensivamente ("não faz sentido") atrapalha mais do que ouvir primeiro e questionar depois. Ver [[wiki/concepts/code-review]] e [[wiki/concepts/sindrome-do-impostor]].
 
+## Não Se Defender Nem Prometer Melhoria na Hora (Entrevista de Emprego)
+
+[[wiki/sources/marco-bruno-3-dicas-vaga-junior]] aplica o mesmo mecanismo de "não tornar pessoal a crítica" a um momento específico ainda não coberto na wiki: o feedback recebido ao final de uma entrevista de emprego. A recomendação concreta é não se defender e não prometer "vou melhorar isso" na hora — porque isso cria um gatilho mental de assumir automaticamente que o entrevistador estava certo, mesmo sem ter refletido de fato sobre o ponto levantado. A prática sugerida: absorver o feedback, e só avaliar com senso crítico depois, com a cabeça fria, se você de fato concorda com o que foi dito.
+
 ## Conexões
 
 - [[wiki/concepts/soft-skills]]
@@ -47,8 +51,10 @@ Um caso concreto de IE em ação: separar "meu código foi reprovado" de "eu fui
 - [[wiki/concepts/colaboracao-times]] — conflitos de time exigem IE para não escalarem
 - [[wiki/concepts/code-review]] — receber crítica ao código sem torná-la pessoal
 - [[wiki/concepts/sindrome-do-impostor]] — o risco emocional quando a IE falha nesse momento
+- [[wiki/concepts/persistencia-em-processo-seletivo]] — o que fazer depois de absorver o feedback e ser reprovado
 
 ## Key Sources
 
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] — não tornar pessoal os comentários de code review
+- [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — não se defender nem prometer melhoria na hora ao receber feedback de entrevista

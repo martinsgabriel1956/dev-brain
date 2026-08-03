@@ -3,8 +3,8 @@ type: concept
 title: "IDOR / BOLA (Insecure Direct Object Reference)"
 aliases: ["idor", "bola", "broken object level authorization", "insecure direct object reference"]
 date_created: 2026-07-04
-date_updated: 2026-07-04
-source_count: 2
+date_updated: 2026-07-31
+source_count: 3
 tags: [idor, bola, owasp, api-security, broken-access-control, appsec]
 skill: tech-mentor-security
 status: stable
@@ -35,9 +35,24 @@ PATCH /profile { "userId": "456", "bio": "..." }
 - O ID do **usuário que faz a requisição** nunca deve vir do body — sempre da sessão/JWT.
 - UUIDs aleatórios dificultam enumeração mas não substituem a checagem de autorização — são defesa complementar, não a solução.
 
+## Encadeando IDOR em Account Takeover e Escalonamento de Privilégio
+
+[[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] demonstra que o impacto de um IDOR depende do que o endpoint vazado expõe. Nesta fonte, dois IDORs no mesmo padrão (ID sequencial no perfil de usuário) têm impactos muito diferentes:
+
+- Vazar nome/e-mail/endereço de outro pedido é exposição de dados.
+- Vazar a **chave de integração** do perfil de outro usuário é [[wiki/concepts/account-takeover|account takeover]] — a chave sozinha autentica no endpoint de login e gera um cookie de sessão válido, sem senha e sem MFA.
+
+A partir daí, o mesmo IDOR foi escalado de manual para automatizado: a requisição de perfil foi enviada ao Burp Intruder com o ID como payload numérico (1 a 15), usando "Grep - Extract" para capturar o campo `role` de cada resposta. O único ID sem `role: user` revelou o perfil do administrador do sistema — cuja chave de integração, usada da mesma forma, gerou um cookie de sessão administrativa. Uma falha de autorização simples, sem nenhuma defesa de rate limiting observada, foi suficiente para ir de usuário anônimo a administrador em poucos minutos.
+
 ## Ver também
 
-- [[wiki/concepts/rate-limiting]] — outra defesa de borda para APIs (BOPLA/API4 é frequentemente citado junto com BOLA)
+- [[wiki/concepts/rate-limiting]] — outra defesa de borda para APIs (BOPLA/API4 é frequentemente citado junto com BOLA); ausência de rate limiting é o que permite a enumeração automatizada acima
+- [[wiki/concepts/account-takeover]] — quando o dado exposto pelo IDOR é uma credencial, não apenas informação
+- [[wiki/concepts/attack-surface]] — IDs sequenciais como superfície de ataque
+
+## Key Sources
+
+- [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]]
 - [[wiki/concepts/mass-assignment]] — falha irmã: mesmo padrão de "confiar em ID/campo vindo do cliente", mas em escrita em vez de leitura
 - [[wiki/concepts/attack-surface]] — toda rota que aceita ID por parâmetro é um ponto de entrada a proteger
 

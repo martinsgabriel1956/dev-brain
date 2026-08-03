@@ -16,6 +16,8 @@ Empresa por trás do **Basecamp** (ferramenta de gestão de projetos) e do frame
 
 Mantém o **[[wiki/concepts/solid-queue]]** — biblioteca de fila de processamento (background jobs) que roda inteiramente sobre banco relacional, sem broker externo — citada como precedente para o redesenho de estoque da [[wiki/entities/shopify]].
 
+Cofundada por **[[wiki/entities/dhh]]**, criador do Ruby on Rails — ver a página dele para a virada de posição pública sobre agentes de codificação de IA em 2025-2026, documentada em [[wiki/sources/cinco-escolas-programacao-com-ia]].
+
 ## Ver Também
 
 - [[wiki/concepts/grande-rollback]] — 37signals como um dos casos-origem dessa tendência

@@ -3,8 +3,8 @@ type: concept
 title: "Spec-Driven Development"
 aliases: ["SDD", "spec driven", "desenvolvimento orientado a especificação", "planning-first"]
 date_created: 2026-06-02
-date_updated: 2026-07-24
-source_count: 12
+date_updated: 2026-08-03
+source_count: 13
 tags: [spec-driven, planejamento, ia-para-devs, harness, agente, qualidade, loop-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -124,6 +124,10 @@ O ponto não invalida SDD como definido acima (spec como contrato de execução,
 
 [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] argumenta que separar spec de execução — escrever a spec antes de pedir para codificar — já é, na prática, a separação clara entre planejar e executar que caracteriza um bom [[wiki/concepts/harness]]: o agente não planeja e executa na mesma passagem. Também funciona como [[wiki/concepts/human-in-the-loop|checkpoint]] humano entre planejar e começar a execução. Quem já pratica SDD, segundo essa leitura, já tem parte da disciplina que "harness engineering" nomeia — mesmo sem ter usado o termo.
 
+## Segunda Fonte Independente Para "Spec É o Artefato Valioso"
+
+[[wiki/sources/cinco-escolas-programacao-com-ia]] cita [[wiki/entities/sean-grove]] (OpenAI) com a mesma inversão de prioridade já documentada acima via [[wiki/entities/pedro-nauke]]: "a especificação é o artefato valioso; o código é só uma projeção dela." Duas fontes/pessoas independentes chegando à mesma tese central do SDD — o código como derivado descartável, a spec como o que de fato precisa ser mantido e revisado com cuidado.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-01-abertura]]
@@ -138,3 +142,4 @@ O ponto não invalida SDD como definido acima (spec como contrato de execução,
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] — crítica ao "specs to code" sem inspeção de código
 - [[wiki/sources/impacto-ia-mercado-frontend]] — SDD como filtro de entrevista no mercado de frontend: "não tem para onde correr"
 - [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — SDD como "nível 2" do dev loop (receita humana que dispara vários loops React); base do "loop criador" quando encadeado automaticamente fase a fase via roadmap
+- [[wiki/sources/cinco-escolas-programacao-com-ia]] — Sean Grove (OpenAI): "a especificação é o artefato valioso; o código é só uma projeção dela" — segunda fonte independente para a mesma inversão de prioridade já central nesta página

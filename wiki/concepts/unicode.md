@@ -3,9 +3,9 @@ type: concept
 title: "Unicode"
 aliases: ["unicode", "codepoint", "unicode charset", "universal character set"]
 date_created: 2026-06-10
-date_updated: 2026-07-22
-source_count: 2
-tags: [unicode, charset, utf-8, strings, cs-fundamentals, internacionalização, surrogate-pair, codepoint-maximo]
+date_updated: 2026-07-31
+source_count: 3
+tags: [unicode, charset, utf-8, strings, cs-fundamentals, internacionalização, surrogate-pair, codepoint-maximo, iso-8859-1]
 skill: cs-fundamentals
 status: stable
 ---
@@ -35,7 +35,11 @@ Os primeiros 128 codepoints do Unicode (U+0000–U+007F) são idênticos ao [[as
 
 ## Por Que Veio Depois do ASCII
 
-O [[ascii]] suporta apenas 128 caracteres — suficiente para inglês, insuficiente para o resto do mundo. Unicode foi criado para ser o mapeamento único e definitivo de todos os caracteres de todos os idiomas, eliminando a proliferação de charsets regionais incompatíveis (ISO-8859-x, Shift-JIS, GB2312…).
+O [[ascii]] suporta apenas 128 caracteres — suficiente para inglês, insuficiente para o resto do mundo. Antes do Unicode, a solução paliativa foram charsets regionais de 8 bits como [[iso-8859-1-latin-1]] (Brasil e Europa Ocidental), cada um cobrindo só um grupo de idiomas e incompatível com os demais (Shift-JIS, GB2312…). Unicode foi criado para ser o mapeamento único e definitivo de todos os caracteres de todos os idiomas, eliminando essa proliferação.
+
+## Imprecisão Terminológica Comum: Chamar Unicode de "Codificação"
+
+[[wiki/sources/codificacao-de-caracteres-ascii-iso-8859-1-unicode]] descreve Unicode como uma "codificação" que "usa de 8 a 32 bits", tratando-o no mesmo nível que UTF-8. Didaticamente razoável, mas tecnicamente impreciso: Unicode é o *charset* (o espaço de codepoints); quem varia de 1 a 4 bytes é o *encoding* (UTF-8, UTF-16, UTF-32) que o serializa. Ver distinção completa em [[charset]].
 
 ## Limites: Codepoint Máximo e Faixa Reservada para Surrogates
 
@@ -54,6 +58,7 @@ O encoding dominante para Unicode é o [[utf-8]], criado por Ken Thompson e Rob 
 
 - [[charset]] — Unicode é o maior e mais abrangente charset existente
 - [[ascii]] — subconjunto de Unicode (U+0000–U+007F)
+- [[iso-8859-1-latin-1]] — charset regional predecessor, substituído pelo Unicode como solução universal
 - [[utf-8]] — o encoding mais usado para Unicode
 - [[string]] — toda string moderna é Unicode + UTF-8 por padrão
 
@@ -61,3 +66,4 @@ O encoding dominante para Unicode é o [[utf-8]], criado por Ken Thompson e Rob 
 
 - [[sources/como-strings-realmente-funcionam]]
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — validação de codepoint máximo (`U+10FFFF`) e rejeição de surrogate pairs num decoder real
+- [[wiki/sources/codificacao-de-caracteres-ascii-iso-8859-1-unicode]] — framing didático de Unicode como "codificação" de 8–32 bits (imprecisão frente à distinção charset/encoding)

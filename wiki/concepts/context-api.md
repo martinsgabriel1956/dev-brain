@@ -3,8 +3,8 @@ type: concept
 title: "Context API"
 aliases: ["React Context", "useContext", "createContext"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-08-03
+source_count: 2
 tags: [react, context, estado-global, prop-drilling]
 skill: tech-mentor-frontend
 status: stable
@@ -63,6 +63,11 @@ const AppProviders = composeProviders(ThemeProvider, AuthProvider, CartProvider)
 <AppProviders><App /></AppProviders>
 ```
 
+## O problema que motiva isso, fora do React
+
+Prop drilling — passar uma prop por componentes intermediários que não a usam, só para alcançar um componente profundo na árvore — é um problema que todo framework de UI precisa resolver de algum jeito, não só o React. A solução muda de nome (Context API no React, `provide`/`inject` no Vue, dependency injection no Angular), mas a ideia é sempre a mesma: um canal direto entre quem produz o dado e quem consome, sem passar por ninguém no meio.
+
 ## Key Sources
 
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
+- [[wiki/sources/10-conceitos-internos-frameworks-frontend]]

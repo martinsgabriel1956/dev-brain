@@ -3,8 +3,8 @@ type: concept
 title: "Mentoria Técnica"
 aliases: ["mentoring", "mentorar júniors", "replicar conhecimento"]
 date_created: 2026-04-22
-date_updated: 2026-07-30
-source_count: 4
+date_updated: 2026-07-31
+source_count: 5
 tags: [carreira, mentoria, liderança, júnior, cultura, crescimento]
 skill: tech-mentor-leadership
 status: stable
@@ -55,6 +55,10 @@ Falta de tempo, não má vontade, costuma ser a causa de comentários secos ou p
 
 [[wiki/sources/papinho-tech-solo-comunidade]] estende o mesmo mecanismo de "ensinar força entendimento" para fora da relação sênior→júnior dentro de uma empresa: em meetups e eventos de comunidade, quem ensina não precisa ser expert nem sênior — basta saber algo (mesmo básico, como HTML/CSS estático) que outra pessoa ainda não sabe. O argumento central dessa fonte é que mentoria/ensino em comunidade segue um ciclo de retribuição: quem foi ajudado deve retribuir ajudando outra pessoa, sob risco de o ciclo se fechar quando alguém "vira celebridade" e some dos eventos pequenos que a formaram. Ver [[wiki/concepts/comunidade-tecnica]] para o conceito central.
 
+## Formação Interna Como Alternativa à Contratação de Sênior Pronto
+
+[[wiki/sources/marco-bruno-3-dicas-vaga-junior]] traz uma terceira fonte independente convergindo para o "efeito multiplicador do ensino" já documentado acima — o convidado define sua própria mudança de "desenvolvedor" para "educador" justamente por esse motivo. A fonte também cita, de segunda mão e sem confirmação (`[transcrição incerta]`), a prática de montar times reunindo pessoas com ambição de crescer, incluindo "pessoas-chave" que influenciam a cultura de evolução do time, como alternativa quando a contratação de profissionais sênior já prontos no mercado é difícil — ou seja, formar/educar internamente em vez de só competir por talento pronto. Ver [[wiki/concepts/contratacao-barra-alta]] para a tensão entre manter barra alta e formar potencial.
+
 ## Ver também
 
 - [[one-on-one]] — formato estruturado de acompanhamento individual
@@ -70,3 +74,4 @@ Falta de tempo, não má vontade, costuma ser a causa de comentários secos ou p
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] — comentários secos no review costumam vir de falta de tempo, não de má intenção
 - [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — Hábito 3, ensinar em público (palestra/blog/vídeo) como forma escalável do mesmo mecanismo
 - [[wiki/sources/papinho-tech-solo-comunidade]] — mentoria/ensino em escala de comunidade (meetups), com retribuição como mecanismo central em vez de estrutura formal de 1:1
+- [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — terceira fonte independente sobre o efeito multiplicador do ensino; formação interna de time como alternativa à contratação de sênior pronto

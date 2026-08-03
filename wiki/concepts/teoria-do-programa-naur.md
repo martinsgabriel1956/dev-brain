@@ -3,8 +3,8 @@ type: concept
 title: "Teoria do Programa (Peter Naur)"
 aliases: ["programming as theory building", "theory of programs", "programa como teoria", "teoria na cabeça do dev"]
 date_created: 2026-07-16
-date_updated: 2026-07-16
-source_count: 1
+date_updated: 2026-08-03
+source_count: 2
 tags: [peter-naur, teoria-do-programa, divida-cognitiva, entendimento-compartilhado, engenharia-de-software]
 skill: tech-mentor-leadership
 status: stable
@@ -35,6 +35,11 @@ Um time pode travar sem conseguir fazer mudanças simples e atribuir isso a "dí
 - [[wiki/concepts/code-review]] — code review é o mecanismo prático mais citado para reconstruir e propagar a teoria entre membros do time
 - [[wiki/entities/peter-naur]] — autor da teoria
 
+## Segunda Fonte Independente: Base Filosófica da Escola "Na Unha"
+
+[[wiki/sources/cinco-escolas-programacao-com-ia]] chega à mesma tese de Naur de forma independente, fora do contexto de dívida cognitiva de time: usa "programa é resíduo, teoria é o que importa" como fundamento filosófico da Escola 3 ("na unha", sem IA) dentro de uma taxonomia de cinco posições sobre programação com IA — ver [[wiki/concepts/escolas-de-programacao-com-ia]]. Observação adicional dessa fonte: Naur morreu em 2016, antes do boom de LLMs agênticos, e nunca teve a chance de se posicionar sobre agentes — ao contrário de [[wiki/entities/dhh]] e [[wiki/entities/antirez]], que defenderam publicamente a mesma posição ("fazer tudo na unha") e depois migraram para delegação alta a agentes, deixando a Escola 3 sem defensores contemporâneos consistentes.
+
 ## Key Sources
 
 - [[wiki/sources/cognitive-debt-margaret-storey]]
+- [[wiki/sources/cinco-escolas-programacao-com-ia]] — segunda fonte independente, aplicada ao debate de "escolas de programação com IA" em vez de dívida cognitiva de time

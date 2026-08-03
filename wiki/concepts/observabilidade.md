@@ -3,8 +3,8 @@ type: concept
 title: "Observabilidade"
 aliases: ["observabilidade", "observability", "três pilares", "metrics logs traces"]
 date_created: 2026-04-22
-date_updated: 2026-07-24
-source_count: 8
+date_updated: 2026-08-03
+source_count: 9
 tags: [observabilidade, metricas, logs, traces, prometheus, sre, infraestrutura]
 skill: tech-mentor-system-design
 status: stable
@@ -143,6 +143,10 @@ Boa prática de produção com [[wiki/concepts/distributed-tracing|OpenTelemetry
 
 A prioridade de implementação acima (logs → métricas RED → SLO → tracing) é sobre **coletar** dados. Uma vez coletados e centralizados, um agente de IA com acesso via MCP aos backends (ex. Grafana MCP → Prometheus/Loki/Tempo) consegue correlacionar os três pilares automaticamente e produzir relatórios de causa raiz que antes exigiam investigação manual de dias ou semanas. Ver [[wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp]]. O ouro continua nos dados — a IA acelera a correlação, não substitui a coleta.
 
+## Observabilidade como Resposta ao Sintoma "Tá Muito Lento"
+
+Framing didático direto: quando alguém reporta lentidão, a pergunta não é "qual métrica subiu" mas "qual é o fluxo todo, qual é a jornada, qual é a traceability daquela chamada" — ou seja, o ponto de entrada natural é o [[wiki/concepts/distributed-tracing|trace]] de ponta a ponta, não uma métrica isolada. Essa observação também alimenta diretamente o [[wiki/concepts/planejamento-de-capacidade]]: sem dados de observabilidade, a estimativa de capacidade futura vira adivinhação.
+
 ## Relacionado
 
 [[concepts/sli]] · [[concepts/slo]] · [[concepts/error-budget]] · [[concepts/blameless-post-mortem]] · [[concepts/circuit-breaker]] · [[concepts/service-mesh]] · [[wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp]]
@@ -157,3 +161,4 @@ A prioridade de implementação acima (logs → métricas RED → SLO → tracin
 - [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — arquitetura do Collector como ponto único de roteamento; correlação automática de telemetria via agente de IA + MCP
 - [[wiki/sources/impacto-ia-mercado-frontend]] — observabilidade como um dos itens que menos mudou com IA, citado como marcador de maturidade de plataforma que blinda orgs do impacto de mercado
 - [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — necessidade de rastrear erros/comportamento entre múltiplos serviços como o que ensina disciplina de log estruturado e métricas, disciplina transferível para monólitos
+- [[wiki/sources/sre-capacidade-observabilidade-confiabilidade-custo]] — observabilidade como visão fim-a-fim do fluxo/traceability em resposta a "tá muito lento"; insumo direto do planejamento de capacidade

@@ -3,8 +3,8 @@ type: concept
 title: "Ciclo da Desgraça do Software"
 aliases: ["software doom cycle", "reescrita do zero", "big rewrite", "ciclo de reescrita"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-08-03
+source_count: 2
 tags: [arquitetura, legado, gestão, reescrita, anti-pattern]
 skill: tech-mentor-leadership
 status: stable
@@ -39,7 +39,7 @@ Espiral recorrente que começa com produtividade alta, cai progressivamente e cu
 
 ## Alternativa
 
-[[concepts/strangler-fig-pattern]] — migra incrementalmente, sem reescrita big bang. Nova funcionalidade sempre na arquitetura correta; legado migra aos poucos.
+[[wiki/concepts/strangler-fig-pattern]] — migra incrementalmente, sem reescrita big bang. Nova funcionalidade sempre na arquitetura correta; legado migra aos poucos. Ver também [[wiki/concepts/ciclo-de-mudanca-de-arquitetura]], que enquadra esse ciclo de reescrita como o caso patológico de pular etapas (AS-IS mal avaliado, POC ausente) do processo saudável de mudança arquitetural.
 
 ## O "Engenheiro de Obra Pronta"
 
@@ -51,8 +51,10 @@ Quem entra numa empresa nova e imediatamente critica a codebase e propõe reescr
 
 - [[concepts/tech-debt]] — dívida técnica como causa raiz do ciclo
 - [[concepts/principio-da-inversao]] — hábito ruim nº 3: propor reescrita ao entrar numa empresa
-- [[concepts/strangler-fig-pattern]] — alternativa à reescrita big bang
+- [[wiki/concepts/strangler-fig-pattern]] — alternativa à reescrita big bang
+- [[wiki/concepts/ciclo-de-mudanca-de-arquitetura]] — o processo saudável cujo desvio produz este ciclo
 
 ## Key Sources
 
 - [[sources/principio-da-inversao-programador]]
+- [[wiki/sources/ciclo-de-mudanca-de-arquitetura]] — framing complementar: este ciclo é o resultado de pular AS-IS/POC no processo de mudança arquitetural

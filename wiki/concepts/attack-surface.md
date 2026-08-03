@@ -3,8 +3,8 @@ type: concept
 title: "Attack Surface (Superfície de Ataque)"
 aliases: ["attack surface", "superfície de ataque", "minimização de superfície", "surface minimization"]
 date_created: 2026-06-05
-date_updated: 2026-07-10
-source_count: 3
+date_updated: 2026-07-31
+source_count: 4
 tags: [attack-surface, security, arquitetura-seguranca, defense-in-depth, gatekeeper]
 skill: tech-mentor-security
 status: stable
@@ -53,9 +53,14 @@ Não só inputs: logs com dados sensíveis, tempo de resposta variável, tamanho
 
 Rotas de webhook em paths padrão (`/api/webhook`, `/api/hook`) são um exemplo de superfície ampliada por convenção: qualquer atacante pode chutar a rota e testar se ela responde. Ver [[wiki/concepts/webhook-signature-validation]] para a defesa (assinatura HMAC), que reduz o dano mesmo quando a rota é encontrada.
 
+## Recon Ativo Descobre Superfície Não Documentada
+
+Nem toda superfície é intencional. [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] demonstra brute force de diretórios/arquivos (dirsearch) como primeiro passo de reconhecimento contra uma aplicação — a ferramenta testa caminhos comuns até encontrar algo que a aplicação não estava "mostrando" intencionalmente, mas também não estava bloqueando. Nesse caso, revelou um `.env` publicamente acessível. O princípio de "por que isso precisa estar acessível?" se aplica igualmente a arquivos estáticos: se um servidor não bloqueia explicitamente dotfiles e caminhos de configuração, eles fazem parte da superfície de ataque real, mesmo que nunca linkados por nenhuma página. Ver [[wiki/concepts/secrets-management]] para a mitigação específica desse caso.
+
 ## Key Sources
 
 - [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — exemplos: inputs do usuário, S3 público, IDs sequenciais, outputs e timing como vetores
 - [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]] — rotas de webhook previsíveis como superfície de ataque
 - [[wiki/sources/ssh-chaves-como-funcionam]] — hardening de sshd_config como redução de superfície na camada de infraestrutura
+- [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] — brute force de diretórios (dirsearch) como técnica de recon que descobre superfície não intencional

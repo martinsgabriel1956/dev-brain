@@ -3,8 +3,8 @@ type: concept
 title: "Over-Engineering"
 aliases: ["overengineering", "verde neném", "engenharia excessiva", "gold plating"]
 date_created: 2026-06-09
-date_updated: 2026-07-30
-source_count: 9
+date_updated: 2026-08-03
+source_count: 10
 tags: [design, qualidade, anti-pattern, aprendizado, design-patterns, dora, under-engineering]
 skill: tech-mentor-leadership
 status: stable
@@ -79,6 +79,10 @@ A progressão que evita isso:
 
 [[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] traz um caso de over-engineering em nível arquitetural que não é sobre um pattern isolado, mas sobre a escolha do desenho inteiro: diante de 4 sistemas de fornecedores heterogêneos, a solução "vendida" (unificar tudo via [[wiki/concepts/microfrontends-parciais|microfrontends parciais]] com container/shell e comunicação por eventos) resolve fragmentação de experiência — um problema que ninguém tinha reportado — em vez da causa raiz real (falta de visibilidade de status/atraso entre fornecedores), que uma solução muito mais enxuta (dashboard read-only + [[wiki/concepts/bff-pattern|BFF]] agregador) resolveria em uma fração do tempo. A fonte generaliza isso como pergunta de reflexão: "escalável" é relativo — escalável para produto, para usuário ou para times? — e a arquitetura deveria ser julgada por resolver o problema na causa raiz com o menor atrito, não por parecer madura ou "à prova de futuro". Ver [[wiki/concepts/causa-raiz]] e [[wiki/concepts/senior-vs-staff-visao-arquitetural]].
 
+## Over-Engineering em Large Scale vs. Over-Thinking em Arquitetura Complexa
+
+[[wiki/sources/large-scale-vs-complex-architecture]] propõe uma distinção terminológica simétrica: **over-engineering** aparece mais tipicamente em contextos de [[wiki/concepts/large-scale-architecture|large scale]] — "eu preciso de tanto, tanto, tanto" leva a empilhar ferramental e tecnologia (múltiplos storage engines, camadas de cache, control planes) além do que a escala real exige. Já o **over-thinking** — excesso de pensamento que não simplifica regras de negócio — é o anti-pattern espelho, mais associado à [[wiki/concepts/arquitetura-complexa|arquitetura complexa]] de ambientes enterprise legados. A fonte não deriva essa distinção de literatura formal, mas ela é consistente com a causa raiz já documentada aqui (falta de julgamento de escopo, medo de não ter preparado o suficiente).
+
 ## Relação com Otimização Prematura
 
 [[otimizacao-prematura]] é o análogo de over-engineering no nível de performance: aplicar esforço excessivo onde não há necessidade comprovada. Ambos são sintomas de afoiteza.
@@ -97,6 +101,8 @@ A progressão que evita isso:
 - [[kiss]] — princípio irmão, mesma disciplina de suprimir complexidade desnecessária
 - [[wiki/concepts/under-engineering]] — extremo oposto; ambos derivados do mesmo card de sintomas em [[wiki/sources/underengineering-overengineering-mario-souto]]
 - [[wiki/concepts/paralisia-por-analise]] — over-engineering como escape malsucedido da paralisia por análise, na leitura de estágios júnior/pleno/sênior
+- [[wiki/concepts/large-scale-architecture]] — contexto onde over-engineering aparece com mais frequência, segundo distinção proposta em [[wiki/sources/large-scale-vs-complex-architecture]]
+- [[wiki/concepts/arquitetura-complexa]] — contexto associado ao anti-pattern espelho, over-thinking
 
 ---
 
@@ -111,3 +117,4 @@ A progressão que evita isso:
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — dois exemplos concretos no mesmo material: (1) Kafka citado como possível over-engineering para um sistema de reserva de hotel, usado mesmo assim como exercício didático com ressalva explícita; (2) o próprio autor admite ter incluído um "simulador de caos" no MVP de um produto novo antes de validar a funcionalidade central (o simulador), classificando isso como erro de escopo em retrospecto
 - [[wiki/sources/7-habitos-programador-altamente-eficaz]] — amarra over-engineering a um estágio de carreira (pleno escapando da paralisia por análise sem julgamento maduro de escopo), complementar à causa raiz de aprendizado já registrada
 - [[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] — estudo de caso de over-engineering arquitetural completo (microfrontends parciais para unificar 4 sistemas de fornecedores) resolvendo o sintoma errado, contrastado com a solução enxuta (dashboard read-only + BFF) que resolve a causa raiz
+- [[wiki/sources/large-scale-vs-complex-architecture]] — distinção terminológica entre over-engineering (excesso de ferramental, comum em large scale) e over-thinking (excesso de pensamento sobre regras, comum em arquitetura complexa)

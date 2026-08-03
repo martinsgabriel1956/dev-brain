@@ -3,8 +3,8 @@ type: entity
 title: "React"
 aliases: ["ReactJS", "React.js"]
 date_created: 2026-04-22
-date_updated: 2026-07-19
-source_count: 3
+date_updated: 2026-08-03
+source_count: 4
 tags: [react, frontend, biblioteca, facebook, meta]
 skill: tech-mentor-frontend
 status: stable
@@ -35,8 +35,13 @@ Biblioteca JavaScript para construção de interfaces de usuário. Criada pelo F
 | Metaframeworks | Next.js, Remix, Astro |
 | Testes | React Testing Library + Vitest |
 
+## Mecanismos Internos (Genéricos a Frameworks de UI)
+
+React usa [[wiki/concepts/virtual-dom]] + [[wiki/concepts/reconciliacao]] como estratégia de reatividade e [[wiki/concepts/batching]] para agrupar atualizações de estado — em contraste com frameworks baseados em [[wiki/concepts/signals]] (Solid.js, Svelte). Compartilha com Vue e Angular a necessidade de resolver os mesmos dez problemas estruturais: gerenciamento de estado (evitar prop drilling — ver [[wiki/concepts/context-api]]), [[wiki/concepts/component-lifecycle]], compilação (JSX → JS), [[wiki/concepts/client-side-routing]], [[wiki/concepts/hydration]] em SSR, e otimização de bundle via [[wiki/concepts/tree-shaking]] + [[wiki/concepts/code-splitting]].
+
 ## Key Sources
 
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
 - [[wiki/sources/react-19-memoization-sem-usememo-usecallback]]
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — React Hook Form citado como exemplo de lib madura a preferir em vez de construir gerenciamento de formulário do zero, evitando [[wiki/concepts/under-engineering]]
+- [[wiki/sources/10-conceitos-internos-frameworks-frontend]] — dez mecanismos internos genéricos a frameworks de UI, com React como exemplo citado

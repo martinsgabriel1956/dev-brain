@@ -4,7 +4,7 @@ title: "Claude Code"
 aliases: ["claude code cli"]
 date_created: 2026-05-18
 date_updated: 2026-07-31
-source_count: 11
+source_count: 13
 tags: [ferramenta, agentes-ia, anthropic, llmops, cli, mcp, hooks]
 skill: tech-mentor-ai
 status: stable
@@ -109,9 +109,18 @@ O mecanismo de [[context-compaction]] da janela de contexto do Claude Code é um
 
 [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] descreve um uso deliberadamente diferente de vibe coding: a autora usou o Claude Code para conduzir um autopentest guiado no próprio SaaS ([[wiki/entities/pulsar-saas]]), documentando e tentando entender cada decisão em vez de apenas aceitar o resultado. O padrão de prompt que ela descreve — apontar para documentação existente do sistema, testar um escopo por vez em sessões separadas, e declarar explicitamente o que a IA não pode fazer sem nova autorização — é apresentado como defesa contra dois problemas: a IA "delirar" ao lidar com escopo grande demais, e refatoração não solicitada quando uma autorização ampla é mal-interpretada como permissão permanente. → [[wiki/concepts/prompt-engineering]]
 
+## Prompt de Manter/Descartar Worktree ao Sair
+
+[[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] confirma, numa demonstração independente, o comportamento de `claude --worktree <nome>`: a worktree é criada em `.claude/worktrees/<nome>`, e ao rodar `/quit` o Claude Code pergunta explicitamente se o usuário quer mantê-la — reforçando a boa prática já documentada de encerrar a worktree deliberadamente ao final do trabalho. Comparação lado a lado com o suporte nativo do [[wiki/entities/codex-openai|Codex]] (que guarda a worktree fora do repositório, em local não confirmado) em [[wiki/concepts/worktree-paralelismo]].
+
+## Citado Como Ferramenta de Vibe Coding em Cadeia de Ataque Real
+
+[[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] cita o Claude Code, ao lado do Cursor e do Lovable, como uma das ferramentas usadas para construir do zero a loja fictícia posteriormente comprometida por um pentester (`.env` exposto → [[wiki/concepts/idor]] → [[wiki/concepts/account-takeover]] → RCE). Uso apenas mencionado como exemplo de ferramenta de vibe coding, sem detalhamento técnico de como especificamente o Claude Code gerou o código vulnerável — contraste direto com o uso documentado logo acima, onde o mesmo agente foi usado deliberadamente como guia de segurança em vez de gerador autônomo.
+
 ## Key Sources
 
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — autopentest guiado (autenticação, IDOR, CSRF, XSS/SQLi, rate limiting, secrets, dependências); método de seis passos para prompt de segurança
+- [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] — citado como uma das ferramentas de vibe coding usadas para construir a aplicação posteriormente comprometida
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — recurso "By The Way" como sintoma de custo; devs trocando para OpenCode por loops de correção supérflua
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
@@ -122,3 +131,4 @@ O mecanismo de [[context-compaction]] da janela de contexto do Claude Code é um
 - [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — citação de Boris sobre trabalhar "em loops que decidem o que fazer"
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — seleção manual de modelo por tarefa na UI, e automação da escolha via skill + subagentes (um subagente por modelo)
 - [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — oferta patrocinada de VPS (HostGator) com Claude Code pré-instalado
+- [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] — demonstração de `claude --worktree`, local de armazenamento (`.claude/worktrees/`) e prompt de manter/descartar ao sair

@@ -3,8 +3,8 @@ type: concept
 title: "Replicação de Banco de Dados"
 aliases: ["read replica", "replicação", "database replication", "replica set"]
 date_created: 2026-06-26
-date_updated: 2026-06-26
-source_count: 1
+date_updated: 2026-08-03
+source_count: 2
 tags: [system-design, banco-de-dados, replicacao, escalabilidade, leitura, alta-disponibilidade]
 skill: tech-mentor-system-design
 status: stub
@@ -57,6 +57,11 @@ Em replicação assíncrona, há um delay entre o write no primário e a atualiz
 - [[escalabilidade-horizontal]] — replicação é escala horizontal específica para a camada de dados
 - [[gargalo]] — a replicação alivia o gargalo de leitura no banco
 
+## Réplica em Standby (HA) vs. Réplica Ativa (Tolerância a Falha)
+
+O tipo mais comum de réplica descrito nesta página serve leitura enquanto fica pronta para promoção em caso de falha — é a réplica "secundária" da topologia ativo-passivo de [[wiki/concepts/alta-disponibilidade|HA]]. [[wiki/sources/ha-vs-ft-alta-disponibilidade-tolerancia-a-falha]] descreve um segundo padrão: réplica como "clone" já ativo, servindo tráfego em paralelo (ativo-ativo), característico de [[wiki/concepts/tolerancia-a-falha]] — nesse caso não há promoção porque o lado replicado já estava operando.
+
 ## Key sources
 
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
+- [[wiki/sources/ha-vs-ft-alta-disponibilidade-tolerancia-a-falha]] — réplica em standby (HA) vs. réplica ativa em paralelo (Tolerância a Falha)

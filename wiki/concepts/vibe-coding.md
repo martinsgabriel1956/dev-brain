@@ -3,8 +3,8 @@ type: concept
 title: "Vibe Coding"
 aliases: ["vibe coding", "vibe-coding", "coding por vibração", "agentic coding", "orquestração de agentes"]
 date_created: 2026-04-23
-date_updated: 2026-07-31
-source_count: 11
+date_updated: 2026-08-03
+source_count: 13
 tags: [vibe-coding, agentes-ia, produtividade, divida-cognitiva, ai-brainfry, paralelismo-cognitivo]
 skill: tech-mentor-ai
 status: stable
@@ -141,3 +141,18 @@ Citado como exemplo de hype tecnológico em formação (junto com MCP) no moment
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — argumenta que [[wiki/concepts/entrevista-system-design|system design]] é justamente o conhecimento que quem vibe coda (mesmo sem saber programar) não pode delegar para a IA, já que é o que determina se a arquitetura do produto escala; demonstra o fluxo de criação de um SaaS com [[wiki/entities/replit|Replit]] e um colaborador convidado ([[wiki/entities/augusto-galego]])
 - [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — argumenta que fundamentos de arquitetura (ex.: microsserviços) são o que permite ao dev distinguir uma boa sugestão de IA de "salada de letrinhas bonitas"; a IA acelera decisão mas não substitui a curadoria de quem entende o contexto do sistema — mesma fronteira já documentada acima em "O Limite Não É Técnico, É de Julgamento", agora reforçada por uma terceira fonte independente
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — autopentest guiado como contraexemplo deliberado ao vibe coding em segurança
+- [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] — cadeia de ataque completa (pentest ofensivo, não relato de processo) contra uma loja construída inteiramente via vibe coding (Cursor, Lovable, Claude Code); reforço estatístico externo ao ponto já central desta página ("segurança sem brechas exploráveis" como algo que a IA não supre sozinha)
+- [[wiki/sources/cinco-escolas-programacao-com-ia]] — distinção de Antirez entre "automatic programming" e vibe coding, formulada de forma independente ao migrar de posição anti-agente para uso intensivo de agentes
+
+## Distinção de Antirez: "Automatic Programming" vs. Vibe Coding
+
+[[wiki/sources/cinco-escolas-programacao-com-ia]] traz uma formulação independente da mesma fronteira já central nesta página, vinda de [[wiki/entities/antirez]] (criador do Redis) ao migrar publicamente de posição "anti-agente raiz" para uso intensivo de agentes:
+
+- **Automatic programming** — usar um agente com direção e critério de qualidade explícitos; o código gerado continua sendo *seu*, porque você entendeu a decisão e é responsável por ela, mesmo que a mão que digitou tenha sido a do agente.
+- **Vibe coding** — aceitar o que a máquina produz sem entender; o dev "vira um despachante de código" ("sabor dev").
+
+O ponto novo trazido por essa fonte, em relação ao que já estava documentado: a distinção é **ortogonal ao quanto de autonomia se delega** (ver [[wiki/concepts/autonomy-slider]]) — dá para fazer vibe coding aceitando toda sugestão de um simples autocomplete sem ler, e dá para fazer automatic programming num agente rodando em loop sem supervisão em tempo real, desde que os critérios de verificação sejam entendidos e definidos por quem delegou. Reforça, de fora da wiki e com vocabulário próprio, a mesma tese já central aqui: o limite não é técnico, é de julgamento — ver [[wiki/concepts/escolas-de-programacao-com-ia]] para o mapa completo das posições que motivaram essa virada de Antirez.
+
+## Segurança Nunca é Padrão em Código Gerado por IA — Caso Concreto
+
+[[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] é o primeiro caso na wiki de demonstração ofensiva completa (não relato nem aula teórica) contra um sistema construído do zero via vibe coding: a partir de um único `.env` publicamente acessível — que a IA que gerou a aplicação nunca pensou em proteger —, um pentester encadeia [[wiki/concepts/idor]], [[wiki/concepts/account-takeover]] e [[wiki/concepts/upload-arbitrario-rce|RCE]] em menos de 10 minutos, sem quebrar nenhuma senha. Cita também estatísticas externas (não verificadas por esta fonte isoladamente) associando código gerado por IA a um número crescente de CVEs e a alta incidência de vulnerabilidades do OWASP Top 10. Reforça de forma concreta o ponto já registrado nesta página em "O Limite Não É Técnico, É de Julgamento": a lacuna não é a IA "não saber" gerar código seguro em teoria, é que ninguém no fluxo de vibe coding pediu ou verificou isso.

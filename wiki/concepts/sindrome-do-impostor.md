@@ -3,8 +3,8 @@ type: concept
 title: "Síndrome do Impostor"
 aliases: ["impostor syndrome", "medo de ser descoberto", "sensação de fraude"]
 date_created: 2026-07-03
-date_updated: 2026-07-24
-source_count: 4
+date_updated: 2026-07-31
+source_count: 5
 tags: [carreira, saúde-mental, júnior, inteligência-emocional]
 skill: tech-mentor-leadership
 status: draft
@@ -39,6 +39,10 @@ Essa mesma fonte também reforça um antídoto adicional ao já registrado acima
 
 [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] chega a um antídoto adjacente por outro caminho: travar diante de um problema difícil é comumente interpretado como prova de "burrice" — especialmente por quem carrega a imagem social de "pessoa inteligente" (caso comum de programadores). Isso cria uma cilada específica: para proteger essa imagem, a pessoa evita qualquer situação que ameace expô-la como incompetente, fazendo só o que já domina. O reenquadramento é trocar o eixo "burrice vs. inteligência" por "experiência vs. inexperiência" — dificuldade não mede inteligência, mede exposição prévia ao tipo de problema. Ver [[wiki/concepts/problema-de-escopo-aberto]] para o mecanismo completo (foco em ação, não em resultado, como remédio prático para a inexperiência).
 
+## Estado Provisório Aplicado à Reprovação em Processo Seletivo
+
+[[wiki/sources/marco-bruno-3-dicas-vaga-junior]] aplica a mesma lógica de "estado atual é provisório, não permanente" a um contexto ainda não coberto na wiki: a reprovação num processo seletivo. A recomendação prática é [[wiki/concepts/persistencia-em-processo-seletivo|perguntar quando é possível tentar novamente]] em vez de tratar a reprovação como veredito definitivo — com um caso relatado de candidato que voltou meses depois muito mais evoluído e foi contratado.
+
 ## Relacionado
 
 - [[wiki/concepts/inteligencia-emocional]] — regular a resposta emocional a crítica é o antídoto direto
@@ -52,3 +56,4 @@ Essa mesma fonte também reforça um antídoto adicional ao já registrado acima
 - [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] — descreve a dinâmica de pedestal ("relação criador-criatura") como bloqueio de potencial
 - [[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]] — variante sênior da síndrome (medo de estar desatualizado) e o enquadramento de que o estado atual de falta de habilidade é provisório
 - [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] — reenquadramento "burrice vs. inteligência" → "experiência vs. inexperiência"; remédio para inexperiência é experimentar
+- [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — mesma lógica de "estado provisório" aplicada à reprovação em processo seletivo, com recomendação de perguntar quando tentar de novo

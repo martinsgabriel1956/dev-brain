@@ -3,8 +3,8 @@ type: entity
 title: "Peter Naur"
 aliases: ["peter naur", "backus-naur form", "programming as theory building"]
 date_created: 2026-07-16
-date_updated: 2026-07-16
-source_count: 1
+date_updated: 2026-08-03
+source_count: 2
 tags: [peter-naur, cientista-da-computacao, teoria-do-programa, gramatica-formal]
 skill: tech-mentor-leadership
 status: stub
@@ -27,6 +27,11 @@ São décadas e domínios diferentes (notação de gramática vs. epistemologia 
 - [[wiki/concepts/teoria-do-programa-naur]] — teoria do programa como base de dívida cognitiva
 - [[wiki/entities/margaret-storey]] — formalizou "cognitive debt" em cima da teoria de Naur
 
+## Citado Como Base Filosófica da Escola "Na Unha" (Sem IA)
+
+[[wiki/sources/cinco-escolas-programacao-com-ia]] usa a mesma tese de "Programming as Theory Building" como fundamento de uma das cinco "escolas" de programação com IA mapeadas na fonte — ver [[wiki/concepts/escolas-de-programacao-com-ia]]. Observação da fonte: Naur morreu em 2016, antes do boom de LLMs agênticos, deixando essa escola sem a chance de um posicionamento direto do próprio autor sobre agentes de codificação.
+
 ## Key Sources
 
 - [[wiki/sources/cognitive-debt-margaret-storey]]
+- [[wiki/sources/cinco-escolas-programacao-com-ia]] — base filosófica da Escola 3 ("na unha") na taxonomia de cinco escolas de programação com IA

@@ -3,8 +3,8 @@ type: concept
 title: "Complexidade Acidental"
 aliases: ["complexidade acidental", "accidental complexity", "tech debt estrutural"]
 date_created: 2026-04-23
-date_updated: 2026-07-27
-source_count: 4
+date_updated: 2026-08-03
+source_count: 5
 tags: [accidental-complexity, tech-debt, fred-brooks, arquitetura, refactoring]
 skill: tech-mentor-system-design
 status: stable
@@ -59,9 +59,14 @@ A maioria do que times chamam de "tech debt" é complexidade acidental acumulada
 
 [[wiki/sources/filosofia-do-design-de-software-introducao]] (John Ousterhout) descreve um mecanismo causal distinto de Fred Brooks para gerar complexidade acidental: no modelo cascata, os problemas do design inicial só ficam aparentes depois que a implementação já está avançada, e o processo não tem mecanismo para revisar o design nesse ponto — então desenvolvedores remendam os problemas sem mudar o design geral, causando "explosão de complexidade". Ver [[wiki/concepts/modelo-cascata-vs-desenvolvimento-incremental]]. Isso complementa o diagnóstico de Brooks (abstração errada, decisões não reconciliadas, funções god) com uma causa de processo: não é só decisão individual malfeita, é a ausência estrutural de um ponto de retorno ao design.
 
+## Complexidade de Legado Enterprise como Caso Concreto
+
+[[wiki/sources/large-scale-vs-complex-architecture]] descreve, sem citar Brooks, um exemplo concreto do que majoritariamente é complexidade acidental: empresas enterprise antigas que migraram de mainframe para AS/400, depois Linux, depois Windows, sem nunca desligar completamente as camadas anteriores. O resultado — workloads heterogêneos que precisam se comunicar via SOAP, REST, batch e mensageria simultaneamente — não existe porque o domínio exige, existe porque cada migração parcial foi mais fácil que uma substituição completa. Ver [[wiki/concepts/arquitetura-complexa]].
+
 ## Relação com outros conceitos
 
 - [[concepts/essential-complexity]] — o contraponto: complexidade que não pode ser removida
+- [[wiki/concepts/arquitetura-complexa]] — legado enterprise poliglota como manifestação concreta de complexidade acidental acumulada por décadas
 - [[concepts/temporal-coupling]] — temporal coupling é uma forma específica de complexidade acidental
 - [[concepts/evolutionary-architecture]] — fitness functions detectam aumento de complexidade acidental automaticamente
 - [[entities/fred-brooks]] — autor do conceito ("No Silver Bullet", 1986)
@@ -74,3 +79,4 @@ A maioria do que times chamam de "tech debt" é complexidade acidental acumulada
 - [[sources/overengineering-carol-ate-quinta]]
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] — uso análogo (não-Brooks) aplicado a tecnologia de exemplo didático vs. princípios de refatoração
+- [[wiki/sources/large-scale-vs-complex-architecture]] — legado enterprise poliglota (mainframe → AS/400 → Linux → Windows convivendo) como exemplo concreto e cotidiano de complexidade acidental acumulada

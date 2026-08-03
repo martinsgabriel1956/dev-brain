@@ -3,8 +3,8 @@ type: concept
 title: "Deploy Strategies"
 aliases: ["estratégias de deploy", "deployment strategies"]
 date_created: 2026-04-22
-date_updated: 2026-07-20
-source_count: 3
+date_updated: 2026-08-03
+source_count: 4
 tags: [devops, deploy, cicd, infra, system-design]
 skill: tech-mentor-infra
 status: stable
@@ -50,8 +50,13 @@ Quer validar sistema novo com zero risco? → Shadow
 
 Canary e Rolling têm v1 e v2 simultaneamente. DB schema e API **devem** suportar as duas versões. → [[concepts/expand-contract]]
 
+## Release Engineering — o Nome da Disciplina
+
+Termo usado em SRE para nomear a disciplina de entrega de novas versões como um todo — a escolha entre as estratégias acima (gradual ou não) é a decisão central de Release Engineering, cujo objetivo é sempre minimizar o impacto do deploy no usuário. Ver [[wiki/concepts/sre]].
+
 ## Key Sources
 
 - [[sources/blue-green-canary-rolling]]
 - [[sources/tipos-de-deploy]]
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]] — implementação prática de [[concepts/blue-green-deploy]] num host único, via [[wiki/concepts/reverse-proxy]] e scripts manuais
+- [[wiki/sources/sre-capacidade-observabilidade-confiabilidade-custo]] — nomeia e define Release Engineering como a disciplina que escolhe entre essas estratégias para minimizar impacto

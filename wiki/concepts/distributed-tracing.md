@@ -3,8 +3,8 @@ type: concept
 title: "Distributed Tracing"
 aliases: ["tracing distribuído", "opentelemetry", "spans", "trace context"]
 date_created: 2026-04-23
-date_updated: 2026-07-15
-source_count: 2
+date_updated: 2026-08-03
+source_count: 3
 tags: [distributed-tracing, observabilidade, opentelemetry, jaeger, spans, w3c-trace-context]
 skill: tech-mentor-infra
 status: draft
@@ -40,3 +40,4 @@ Traces (junto com métricas e logs) alimentam agentes de IA conectados via MCP a
 
 - [[sources/distributed-tracing]]
 - [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — arquitetura do Collector, instrumentação de libs de baixo nível, e correlação automática via IA/MCP
+- [[wiki/sources/sre-capacidade-observabilidade-confiabilidade-custo]] — framing didático de tracing como a resposta natural a "tá muito lento" (fluxo/jornada/trace da chamada)

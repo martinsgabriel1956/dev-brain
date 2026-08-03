@@ -3,8 +3,8 @@ type: concept
 title: "Matriz Refatorar vs. Reescrever"
 aliases: ["refactor vs rewrite", "matriz de decisão refatoracao reescrita"]
 date_created: 2026-07-28
-date_updated: 2026-07-28
-source_count: 1
+date_updated: 2026-08-03
+source_count: 3
 tags: [tech-debt, refactoring, rewrite, decisao, arquitetura]
 skill: tech-mentor-leadership
 status: stub
@@ -38,6 +38,12 @@ Esse risco é o mesmo documentado como anti-padrão de "rewrite fantasma" na ges
 
 [[wiki/concepts/tech-debt-como-ferramenta]] · [[wiki/concepts/refatoracao]] · [[wiki/sources/strangler-fig]] — alternativa a uma reescrita "big bang": migrar gradualmente em vez de reescrever tudo de uma vez.
 
+[[wiki/sources/large-scale-vs-complex-architecture]] descreve o caso enterprise mais extremo de "refatorar gradualmente": empresas que foram empilhando plataformas (mainframe → AS/400 → Linux → Windows) por décadas sem nunca desligar completamente o anterior. É o cenário onde a matriz refatorar/reescrever/conviver/depreciar precisa ser aplicada camada por camada, não ao sistema como um todo — ver [[wiki/concepts/arquitetura-complexa]].
+
+[[wiki/sources/ciclo-de-mudanca-de-arquitetura]] descreve o mesmo risco de "reescrever tudo" sob um ângulo de processo, não de decisão pontual: a fonte enfatiza que ser assertivo na escolha do TO-BE importa porque descobrir "no meio do caminho" que o caminho está errado consome tempo real do negócio — o mesmo raciocínio de custo de oportunidade que justifica esta matriz preferir refatoração a reescrita sempre que o risco técnico permitir. Ver [[wiki/concepts/ciclo-de-mudanca-de-arquitetura]].
+
 ## Key Sources
 
 - [[wiki/sources/tech-debt-guia-completo-gestao-metricas]]
+- [[wiki/sources/large-scale-vs-complex-architecture]] — caso enterprise de refatoração gradual multi-plataforma (mainframe/AS-400/Linux/Windows) como origem típica de arquitetura complexa
+- [[wiki/sources/ciclo-de-mudanca-de-arquitetura]] — custo de descobrir tarde que o TO-BE escolhido está errado, mesmo raciocínio de custo de oportunidade da matriz

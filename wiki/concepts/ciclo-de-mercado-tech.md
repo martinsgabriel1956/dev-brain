@@ -3,8 +3,8 @@ type: concept
 title: "Ciclo de Mercado Tech"
 aliases: ["ciclo de abundância e depressão", "lei da oferta e procura em tech", "ciclo de contratação tech"]
 date_created: 2026-07-03
-date_updated: 2026-07-21
-source_count: 5
+date_updated: 2026-07-31
+source_count: 6
 tags: [carreira, mercado-de-trabalho, oferta-e-procura, ciclo-economico]
 skill: tech-mentor-leadership
 status: draft
@@ -60,6 +60,10 @@ Cada onda de tecnologia listada acima é, individualmente, uma [[wiki/concepts/c
 - [[wiki/concepts/curva-de-adocao-tecnologica]] — o padrão em S por trás de cada onda individual
 - [[wiki/concepts/antifragilidade]] — a estratégia de aposta que lida com a incerteza sobre qual onda vai vencer
 
+## Possível Manifestação em Nível de Categoria de Vaga
+
+[[wiki/sources/marco-bruno-3-dicas-vaga-junior]] relata um padrão específico no mercado brasileiro — vagas rotuladas como "júnior" passando a exigir nível pleno na prática — sem identificar a causa. Ver [[wiki/concepts/vaga-junior-vira-pleno]] para o detalhe; a conexão com o ciclo de abundância/depressão descrito aqui é inferência, não fato verificado nas duas pontas, já que nenhuma das fontes cruza dados diretamente.
+
 ## Key Sources
 
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]]
@@ -67,3 +71,4 @@ Cada onda de tecnologia listada acima é, individualmente, uma [[wiki/concepts/c
 - [[wiki/sources/pare-de-terceirizar-suas-decisoes]]
 - [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]
 - [[wiki/sources/impacto-ia-mercado-frontend]]
+- [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — possível manifestação em nível de categoria de vaga (júnior exigindo pleno), causa não identificada

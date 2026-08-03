@@ -4,8 +4,8 @@ title: "Abacus.AI"
 aliases: ["Abacus", "Abacus AI"]
 date_created: 2026-07-31
 date_updated: 2026-07-31
-source_count: 1
-tags: [abacus, model-routing, ai-gateway, ferramenta]
+source_count: 2
+tags: [abacus, model-routing, ai-gateway, ferramenta, cli, agent-farm]
 skill: tech-mentor-ai
 status: stub
 ---
@@ -25,6 +25,13 @@ O router gerado expõe uma chave de API que pode ser conectada a outros harnesse
 
 **Confiança:** a fonte é um vídeo com bloco de patrocínio explícito da Abacus — a demonstração é tratada como exemplo de um padrão genérico (roteamento configurável por categoria), não como avaliação independente da qualidade ou dos preços da ferramenta.
 
+## Multi-Engine Agent Farm e CLI Própria
+
+Segundo [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] (também bloco patrocinado), a Abacus.AI lançou uma feature chamada **Multi-Engine Agent Farm**: ao pedir a criação de uma feature dentro do produto — principalmente via "ZP Agent" — a plataforma dispara um workflow com vários agentes trabalhando em conjunto para subir um projeto complexo do zero (exemplo demonstrado: um SaaS de RH). A mesma fonte descreve uma **CLI própria** da Abacus, comparável em uso ao [[wiki/entities/codex-openai|Codex]] ou ao [[wiki/entities/claude-code|Claude Code]] — utilizável normalmente dentro de uma [[wiki/concepts/worktree-paralelismo|worktree]], como qualquer outro harness. O chat da Abacus dá acesso, num único lugar, a múltiplos modelos de diferentes provedores (citados na demo: Nano Banana 2, "ChatGPT 5.4" `[transcrição incerta sobre a versão exata]`, Claude Opus 4.7).
+
+**Confiança:** ambas as claims vêm de bloco de patrocínio explícito, sem avaliação técnica independente — tratar como demonstração comercial do produto, não como benchmark.
+
 ## Key Sources
 
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]]
+- [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] — Multi-Engine Agent Farm (ZP Agent), CLI própria, chat multi-modelo

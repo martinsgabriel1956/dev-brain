@@ -3,8 +3,8 @@ type: entity
 title: "Martin Fowler"
 aliases: ["Fowler", "martinfowler.com"]
 date_created: 2026-07-07
-date_updated: 2026-07-28
-source_count: 12
+date_updated: 2026-08-03
+source_count: 13
 tags: [thoughtworks, autor, testes, arquitetura, tech-debt, refactoring, agile]
 skill: tech-mentor-testing
 status: stable
@@ -59,6 +59,10 @@ Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter us
 
 [[wiki/sources/como-evitar-over-engineering-david-farley]] relata, de segunda mão e sem fonte primária citada, um projeto da Thoughtworks atrasado um ano no qual Fowler teria sido chamado para ajudar — situado como parte da origem do movimento ágil/Extreme Programming (entregar pequenos incrementos com testes automatizados, antes do termo "ágil" ser associado a processos como Scrum). Não verificado nesta wiki; ver "Open Questions" na fonte.
 
+## "Quem precisa de um arquiteto?" e a definição de arquitetura de Ralph Johnson
+
+[[wiki/sources/arquitetura-limpa-na-pratica]] abre discutindo definições de arquitetura de software e cita o artigo de Fowler para a IEEE Software (2003), *Who Needs an Architect?*, no qual ele recolhe a definição de Ralph Johnson: arquitetura é o "entendimento compartilhado" que os desenvolvedores mais experientes de um projeto têm sobre a divisão do sistema em componentes e como esses componentes interagem via interfaces. O mesmo livro também usa o padrão **Unit of Work** de Fowler (*PoEAA*) como alternativa ao Repository simples para lidar com concorrência — ver [[wiki/concepts/repository-pattern]].
+
 ## Ver também
 
 - [[piramide-de-testes]]
@@ -79,3 +83,4 @@ Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter us
 - [[wiki/sources/consumer-driven-contracts-martin-fowler]] — artigo de Ian Robinson hospedado no site de Fowler, não escrito por ele
 - [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] — revisita o Quadrante de Fowler e acrescenta camada de mensuração formal (debt ratio/SQALE) e alocação de tempo (regra dos 20%/25%)
 - [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — artigo de 2014 que cunhou a definição de microsserviços, coautoria com [[wiki/entities/james-lewis]]
+- [[wiki/sources/arquitetura-limpa-na-pratica]] — definição de arquitetura de Ralph Johnson (via artigo de Fowler "Who Needs an Architect?"); Unit of Work como alternativa ao Repository simples

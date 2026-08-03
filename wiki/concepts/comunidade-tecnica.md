@@ -3,8 +3,8 @@ type: concept
 title: "Comunidade Técnica"
 aliases: ["comunidade de tecnologia", "meetup", "comunidade open source", "ciclo de retribuição"]
 date_created: 2026-07-30
-date_updated: 2026-07-30
-source_count: 1
+date_updated: 2026-07-31
+source_count: 2
 tags: [comunidade, mentoria, retribuicao, meetup, networking, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -32,6 +32,11 @@ O obstáculo mais comum não é ausência de comunidade, é preguiça de procura
 
 O mecanismo de indicação de vaga (o "mercado invisível") descrito em [[wiki/concepts/networking-de-carreira]] se manifesta em comunidades técnicas através de presença repetida: frequentar os mesmos meetups cria os laços de confiança que depois geram indicação direta para vaga — o mesmo fenômeno já registrado para pós-graduação, aqui aplicado a meetups gratuitos e eventos locais.
 
+## Comunidade Como Porta de Entrada Para a Primeira Vaga
+
+[[wiki/sources/marco-bruno-3-dicas-vaga-junior]] recomenda comunidades técnicas (canal de YouTube, curso, Discord) especificamente como ponto de entrada para quem busca a primeira vaga júnior — não só como espaço de troca de conhecimento, mas como onde se concentra a maior parcela de candidatos e onde o contato direto com quem já passou pelo processo de contratação está mais acessível. Isso é uma aplicação prática, em nível individual de carreira, do mesmo mecanismo de reciprocidade já documentado acima: quem já recebeu orientação da comunidade tende, mais tarde, a retribuir orientando o próximo.
+
 ## Key Sources
 
 - [[wiki/sources/papinho-tech-solo-comunidade]]
+- [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — comunidade recomendada como ponto de entrada para quem busca a primeira vaga júnior

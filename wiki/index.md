@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-07-31
+date_updated: 2026-08-03
 ---
 
 
@@ -20,12 +20,19 @@ date_updated: 2026-07-31
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/ha-vs-ft-alta-disponibilidade-tolerancia-a-falha]] | Aula curta: distinção entre HA (topologia ativo-passivo — banco primário/secundário com failover e janela de indisponibilidade durante o switch) e Tolerância a Falha (topologia ativo-ativo — nós idênticos já servindo tráfego em paralelo, sem janela perceptível); FT não é 100% de disponibilidade (retry após erro pontual já cai no lado saudável) e custa estruturalmente mais que HA |
+| [[wiki/sources/rto-rpo-recovery-time-point-objective]] | Aula curta: RTO (tempo de recuperação) e RPO (dado tolerável de perda) como indicadores focados em desastre que devem ser definidos a partir do negócio antes da arquitetura — exemplo de custo de downtime ($1.000/minuto) e tolerância a RPO radicalmente diferente entre sistema financeiro, e-commerce e microsserviço de catálogo |
+| [[wiki/sources/sre-capacidade-observabilidade-confiabilidade-custo]] | Aula introdutória: cinco pilares de "sucesso" na visão de um SRE — planejamento de capacidade (alimentado por observabilidade), observabilidade (traceability fim-a-fim), otimização de custo (às vezes gastar mais para perder menos), Release Engineering (estratégias de deploy) e segurança; fecha com confiabilidade como guarda-chuva (consistência, durabilidade, tolerância a falhas, previsibilidade, disponibilidade de recursos) |
+| [[wiki/sources/cinco-escolas-programacao-com-ia]] | Mano Deivin: cinco "escolas" de programação com IA organizadas no "autonomy slider" de Karpathy — copiloto, delegação total/spec-driven, "na unha" (Peter Naur), loop sem supervisão (Ralph Loop); DHH e Antirez trocaram de "anti-agente raiz" para agent-first em ~6 meses; distinção de Antirez entre automatic programming e vibe coding |
+| [[wiki/sources/codificacao-de-caracteres-ascii-iso-8859-1-unicode]] | Aula curta do professor Olibário: por que ASCII usa só 7 dos 8 bits (0–127), limitações sem acentos/alfabetos não latinos, ISO-8859-1/Latin-1 como extensão de 8 bits (0–255) idêntica a ASCII até 127, Unicode/UTF-8 como solução universal; fecha com exercício de decode ASCII (`66 69 67 65` → "BECA") |
 | [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] | Vlog em primeira pessoa: dev sem background em segurança usa o Claude Code como "professor" para autopentest do Pulsar (SaaS pessoal) — nove perguntas cobrindo autenticação/logout, IDOR, CSRF, XSS/SQLi, abuso de regra de negócio via API, vazamento em mensagens de erro, rate limiting, dependências vulneráveis e segredos no histórico de git; método de seis passos para prompt de segurança eficaz |
+| [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] | Pentester demonstra cadeia de ataque completa (lab controlado) contra loja fictícia construída via vibe coding (Cursor/Lovable/Claude Code): `.env` exposto (achado via dirsearch) → IDOR em pedidos → IDOR em perfil vazando chave de integração → account takeover sem senha → escalonamento a admin por enumeração de IDs no Burp Intruder → RCE via upload de plugin sem validação; menos de 10 minutos ponta a ponta |
 | [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]] | Post-mortem em primeira pessoa: SYN flood de 260 milhões de requests em um dia contra um SaaS pequeno atrás de Cloudflare — modo Under Attack desativado, proxy reverso (Traefik via Coolify) com bug de CPU/memory leak auto-atualizado durante o próprio incidente; servidor não recuperado, reconstruído do zero com firewall → Docker → proxy nessa ordem |
 | [[wiki/sources/pkce-proof-key-code-exchange-spa-mobile]] | PKCE (RFC 7636) resolve o problema do client secret dinâmico em SPA/mobile — `code_verifier` gerado no cliente, hash (`code_challenge`) enviado na autorização, `code_verifier` original revelado só na troca do código por token; substitui o Implicit Flow (deprecated, token na URL) e é obrigatório no OAuth 2.1 para todos os clients |
 | [[wiki/sources/rfc-7636-pkce-oauth-public-clients]] | Texto normativo completo do RFC 7636 (IETF, 2015), traduzido PT-BR — ABNF exata do `code_verifier` (43-128 chars), `S256` como MTI vs. `plain` desaconselhado, razão para não usar salting no `code_challenge`, e regras de retrocompatibilidade servidor/cliente |
 | [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] | Aula didática que constrói incrementalmente o percurso clássico de microsserviços: deadlock por banco compartilhado → banco por serviço → quebra de atomicidade → two-phase commit → gargalo de coordenação → Saga Pattern via fila (RabbitMQ)/event-driven → CQRS com read/write split e trade-off de replication lag |
 | [[wiki/sources/clean-architecture-arquitetura-centrada-no-dominio]] | Vídeo (inglês, traduzido) comparando 3-tier vs. Clean Architecture via app de lembretes — explica por que Clean Architecture é "domain-centric": lógica de negócio dividida em Application (use cases) + Domain (entidades/regras), banco na infrastructure layer, Dependency Rule via interfaces definidas por dentro e implementadas por fora |
+| [[wiki/sources/arquitetura-limpa-na-pratica]] | Livro completo (Otávio Lemos, 2022) ensinando Clean Architecture via estudo de caso TypeScript (theWisePad): genealogia DCI/BCE/Hexagonal, Regra de Dependência, Either monad para erros, Value Objects auto-validados, crítica a ORM/Active Record, e casos reais de adoção (Netflix, Uber, iFood) |
 | [[wiki/sources/delay-tv-aberta-vs-youtube-live-latencia-streaming]] | Por que uma live de futebol no YouTube chega atrasada em relação à TV aberta — buffer de leitura antecipada como principal causador de latência (segundo doc. do YouTube), radiodifusão sem sessão individual por espectador na TV aberta, modos de latência do YouTube (normal/baixa <10s/ultra baixa <5s) |
 | [[wiki/sources/email-address]] | Endereço de e-mail via RFC 5322/5321: `local-part@domain`, parte local case-sensitive na spec mas case-insensitive na prática, sub-addressing (`+tag`) formal via RFC 5233, domínio via regras LDH e resolução por registros MX; internacionalização (EAI/SMTPUTF8) permite UTF-8 completo; sintaxe válida não prova que a caixa existe |
 | [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] | Zeno Rocha: 14 hábitos de dev produtivo em 5 categorias — JOMO contra FOMO tecnológico, ensinar como forma de aprender, consistência (jogo infinito) > intensidade, código para o "eu futuro", visão de negócio (problema XY), triagem de side project em 6 perguntas, Mario vs. Sonic (tempo de casa), ouvir para entender, 5 razões para subestimar tarefas, especialista vs. generalista, e a dicotomia estoica do controle |
@@ -163,6 +170,7 @@ date_updated: 2026-07-31
 | [[wiki/sources/engenheiro-vs-programador-mercado-ia]] | Programador executa, engenheiro governa — o paradoxo da IA (mais código gerado = mais demanda por quem governa) e o roadmap de fundamentos em dois eixos, técnico e humano |
 | [[wiki/sources/server-sent-events-sse-tempo-real]] | SSE na prática: formato `data`/`event`, polling disfarçado como erro comum, Redis Pub/Sub entre microsserviços, Singleton na conexão, auth via JWT em query string |
 | [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]] | Worktrees (paralelismo de file system, `claude --worktree`) vs. subagentes (paralelismo de contexto, `.claude/agents/`) — quando usar cada um e o risco de excesso de skills/agentes sobrepostos |
+| [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] | Demonstração ao vivo de `git worktree add`/`list`/`remove -f`; suporte nativo comparado entre o app do Codex e `claude --worktree`; bloco patrocinado da Abacus.AI sobre Multi-Engine Agent Farm e CLI própria |
 | [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]] | Go não é passageiro — cloud native por design, já consolidado em Mercado Livre/Mercado Pago/Stone; estratégia para frontend migrar: mirar pleno e usar fullstack como ponte |
 | [[wiki/sources/impacto-ia-mercado-frontend]] | IA comoditizou nichos de CRUD (agência, freelancer de landing page, consultoria pequena/média) e comprimiu salário de sênior remoto (14–18k → 11–14k); requisitos viraram spec-driven + harness próprio; monorepo favorece contexto de IA mais que microfrontends |
 | [[wiki/sources/5-boas-praticas-uiux-ux-pilot]] | Comparação Cursor vs. UX Pilot na mesma landing page: hierarquia visual, lei da proximidade (Gestalt), affordance e interface como máquina de estados — os quatro conceitos de design que fazem prompts de geração de UI saírem de resultado genérico para profissional |
@@ -249,6 +257,13 @@ date_updated: 2026-07-31
 | [[wiki/sources/tres-projetos-para-aprender-programar]] | Três projetos escolhidos pela habilidade que ensinam, não pelo portfólio: Snake (gerenciamento de estado), simulador de supermercado (modelagem de domínio) e Pathfinding (algoritmos como estratégia) — "software é argila, não Lego" |
 | [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] | Fable (Anthropic) e Sol/GPT 5.6 (OpenAI) são os mais inteligentes no Artificial Analysis mas ~70× mais caros por tarefa que o DeepSeek V4; roteamento manual → skill/subagentes no Claude Code → Custom Router (Abacus.AI) como as três camadas de automação da escolha de modelo por inteligência/velocidade/custo |
 | [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] | Reação à entrevista de Alex Karp (CEO da Palantir) à CNBC sobre deal com a Nvidia que virou crítica ao modelo de cobrança por token da OpenAI/Anthropic — três argumentos (wealth tax, roubo de propriedade intelectual, preço deveria ser sobre valor); harness como multiplicador oculto de custo; quatro dicas de FinOps para IA |
+| [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] | Marco Bruno (Cohab Code): 3 dicas para conseguir a primeira vaga júnior — aplicar amplamente e investir em comunidade em vez de se autofiltrar, tratar toda entrevista como ensaio ("nunca aposte o que não pode perder"), e preparo mental para receber feedback sem se defender + persistência (perguntar quando tentar de novo) + transparência sobre prazos; observa vagas júnior exigindo pleno no mercado brasileiro |
+| [[wiki/sources/large-scale-vs-complex-architecture]] | Large scale (capacidade/escala, dividir-para-conquistar, control plane) e complexidade (interdependência, legado poliglota tipo mainframe→AS/400→Linux→Windows) são eixos independentes; over-engineering vs. over-thinking como anti-patterns espelho; autor admite não ter métrica objetiva para "complexidade" |
+| [[wiki/sources/10-conceitos-internos-frameworks-frontend]] | Short em português listando 10 mecanismos internos que React/Vue/Angular resolvem por baixo dos panos, em ordem decrescente: estado (prop drilling, derived state) → batching → tree shaking/code splitting → ciclo de vida → compilação → roteamento client-side (History API) → hydration/ilhas → reatividade (Virtual DOM vs. signals) → reconciliação (keys) → DOM; fecha com a tese de que frameworks existem para minimizar toques no DOM e aumentar produtividade |
+| [[wiki/sources/ciclo-de-mudanca-de-arquitetura]] | Aula curta: ciclo operacional de uma mudança de arquitetura — avaliar 100% o AS-IS (tecnologia + regras de negócio) → desenhar o TO-BE → validar com POC testada na escala real esperada (não numa fração dela) → migrar em coexistência com o legado via padrões de transição → migração concluída vira o novo AS-IS, reiniciando o ciclo; tese central é que assertividade importa porque descobrir tarde que o caminho está errado é retrabalho caro |
+| [[wiki/sources/escalabilidade-horizontal-vertical-custo-grafico]] | Aula curta e introdutória: diferença horizontal/vertical via analogias visuais (horizonte vs. imagem esticada) e exemplo gráfico de custo — horizontal permite adicionar exatamente a capacidade necessária (um servidor a mais), vertical em cloud providers costuma forçar dobrar o tier da instância, gerando capacidade ociosa; mais réplicas menores aumentam resiliência |
+| [[wiki/sources/sre-sli-slo-sla]] | SRE trata confiabilidade como problema de engenharia: SLI mede, SLO define meta interna, SLA é contrato externo com margem de segurança, Error Budget governa velocidade vs. estabilidade; inclui alerting por burn rate e template de blameless post-mortem |
+| [[wiki/sources/slo-sli-sla-exemplo-ecommerce]] | Aula curta e didática: a diferença entre SLO e SLA não está no número prometido, mas em quem são as partes do acordo — mesma promessa de disponibilidade é SLO entre times da mesma empresa e vira SLA quando o acordo cruza a fronteira entre empresas distintas, com consequência contratual |
 
 ## Concepts
 
@@ -311,6 +326,10 @@ date_updated: 2026-07-31
 | [[wiki/concepts/estimativa-como-habilidade-treinavel]] | Dar prazo mesmo sem pressão e comparar depois — treina o orçamento antes de precisar sob cobrança real |
 | [[wiki/concepts/definicao-de-objetivo-antes-de-decisao]] | "Vale a pena" sem objetivo definido é como perguntar se um avião vale a pena sem saber o destino |
 | [[wiki/concepts/nichos-frontend-automatizados-ia]] | Agência, freelancer de landing page e consultoria de CRUD foram os nichos de frontend mais comoditizados pela IA — arquitetura e observabilidade blindaram quem já operava nessa maturidade |
+| [[wiki/concepts/nunca-aposte-o-que-nao-pode-perder]] | Ensaie entrevistas mesmo sem urgência real — sem medo de perder, só existe lado positivo: aprender ou conseguir a vaga |
+| [[wiki/concepts/persistencia-em-processo-seletivo]] | Pergunte quando pode tentar de novo após reprovação — quem não persiste na entrevista dificilmente persiste nos problemas maiores do dia a dia |
+| [[wiki/concepts/transparencia-sobre-prazos]] | Avisar e negociar atraso de teste técnico pesa mais na avaliação do que simplesmente atrasar sem avisar |
+| [[wiki/concepts/vaga-junior-vira-pleno]] | Padrão observado no Brasil: vaga rotulada "júnior" exigindo nível pleno na prática — sem fronteira clara entre as duas categorias |
 | [[wiki/concepts/monorepo-vs-microfrontends-ia]] | Monorepo junta contexto para o agente numa alteração vertical; microfrontends fragmentam a mesma mudança em várias tarefas cross-repo, exigindo linkar worktree/PR manualmente |
 | [[wiki/concepts/side-project-como-armadilha]] | Side project popular vira manutenção obrigatória — pode ser mais maldição do que bênção sem cronograma dedicado |
 | [[wiki/concepts/reinventar-a-roda]] | Reinventar raramente é inovação genuína — é remix, e o custo real está na manutenção extra desnecessária |
@@ -499,6 +518,8 @@ date_updated: 2026-07-31
 | [[wiki/concepts/closed-loop-skill-learning]] | Loop de 5 etapas (task completion → pattern extraction → skill creation → refinement → periodic audit) que gera e refina skills automaticamente a partir do histórico de tarefas |
 | [[wiki/concepts/paradigmas-interface-llm]] | Karpathy: três reformulações de interface de LLM — site → app local → entidade autônoma, persistente e assíncrona a serviço de toda a organização (Claude Tag) |
 | [[wiki/concepts/lock-in-vendor-ia]] | Meses de memória organizacional acumulada num agente de fornecedor único (ex.: Claude Tag) tornam a migração cara — mitigação sugerida: paralelo de engenharia própria |
+| [[wiki/concepts/autonomy-slider]] | Karpathy: controle deslizante contínuo (volume de rádio) do quanto de autonomia se delega a um agente — do "só sugestão" ao "faz o que você quiser" |
+| [[wiki/concepts/escolas-de-programacao-com-ia]] | Taxonomia de 5 posições sobre programar com IA (copiloto, delegação total/spec-driven, "na unha", loop); DHH e Antirez migraram de "na unha" para delegação em <12 meses |
 
 ### Dívida Cognitiva & Teoria do Programa
 
@@ -676,6 +697,7 @@ date_updated: 2026-07-31
 | [[wiki/concepts/charset]] | Mapeamento valor numérico → caractere; distinto de encoding (que é o algoritmo de serialização) |
 | [[wiki/concepts/ascii]] | 128 caracteres em 7 bits; charset e encoding ao mesmo tempo; subconjunto de UTF-8 |
 | [[wiki/concepts/unicode]] | Charset universal com >1M codepoints; não é encoding — precisa de UTF-8 para ser serializado |
+| [[wiki/concepts/iso-8859-1-latin-1]] | Charset regional de 8 bits (0–255), idêntico a ASCII até 127, acrescenta acentos — usado no Brasil antes do Unicode dominar |
 | [[wiki/concepts/utf-8]] | Encoding de largura variável para Unicode; criado por Ken Thompson e Rob Pike; padrão da web |
 | [[wiki/concepts/bitwise-operations]] | AND extrai/zera bits, OR mescla, left shift abre espaço — o trio por trás de todo parsing binário |
 | [[wiki/concepts/overlong-encoding]] | Codificar UTF-8 com mais bytes do que o mínimo necessário — sintaticamente válido, mas proibido pelo padrão |
@@ -753,6 +775,9 @@ date_updated: 2026-07-31
 | [[wiki/concepts/simulador-de-system-design]] | Playground que roda tráfego simulado sobre o diagrama e pontua o desenho com IA — não é só desenhar, é testar |
 | [[wiki/concepts/niveis-de-senioridade-system-design]] | Júnior soluciona e demonstra fundação, pleno resolve com racional prático, sênior otimiza e lidera a conversa — entrevista cobra o todo em qualquer nível, trabalho real só exige isso a partir de sênior |
 | [[wiki/concepts/latencia-streaming-ao-vivo]] | Delay entre captura e exibição em live streaming — buffer de leitura antecipada como principal causador; TV aberta (radiodifusão, sem sessão individual) tem latência estruturalmente menor que streaming via internet |
+| [[wiki/concepts/large-scale-architecture]] | Escala e complexidade são eixos independentes de uma arquitetura — large scale foca em capacidade/dividir-para-conquistar, não necessariamente em interdependência |
+| [[wiki/concepts/arquitetura-complexa]] | Interdependência e poliglotismo, típico de legado enterprise que convive com o passado (mainframe → AS/400 → Linux → Windows) — sem métrica objetiva de classificação |
+| [[wiki/concepts/planejamento-de-capacidade]] | Estimar recursos futuros a partir dos dados da observabilidade — inclui o contra-intuitivo "gastar mais para perder menos" e disponibilidade como capacidade de recurso, não só uptime |
 
 ### Fundamentos de Backend (Request/Response ao Deploy)
 
@@ -767,7 +792,13 @@ date_updated: 2026-07-31
 | [[wiki/concepts/load-balancer]] | Distribui tráfego entre instâncias — L4 (cego, rápido) vs L7 (inspeciona HTTP, roteia por path/header) |
 | [[wiki/concepts/reverse-proxy]] | Fica na frente da aplicação e repassa a requisição — só vira load balancer quando escolhe entre múltiplos destinos equivalentes |
 | [[wiki/concepts/alta-disponibilidade]] | Sistema continua operacional mesmo com falhas de componente — redundância, health check, deploy gradual |
+| [[wiki/concepts/tolerancia-a-falha]] | Topologia ativo-ativo — nós idênticos já servindo tráfego em paralelo, sem janela de failover perceptível; mais forte e mais cara que HA (ativo-passivo) |
 | [[wiki/concepts/observabilidade]] | Entender o que acontece por dentro via logs (o quê), métricas (crescendo?) e traces (onde o tempo foi gasto) |
+| [[wiki/concepts/sli]] | A métrica concreta (0–1 ou %) que mede qualidade do serviço — entrada do SLO |
+| [[wiki/concepts/slo]] | Meta interna de confiabilidade sobre o SLI — fonte da verdade para decisões operacionais, não o SLA |
+| [[wiki/concepts/sla]] | Contrato externo com penalidade — mesma promessa do SLO, mas entre empresas distintas, com consequência contratual |
+| [[wiki/concepts/rto]] | Tempo de recuperação após desastre — imposto pela arquitetura escolhida, deve ser confrontado com custo de downtime do negócio |
+| [[wiki/concepts/rpo]] | Dado tolerável de perda, medido pela distância até o último backup válido — tolerância varia radicalmente por domínio (financeiro vs. e-commerce vs. catálogo) |
 
 ### Idempotência & Deduplicação de Requests
 
@@ -883,6 +914,8 @@ date_updated: 2026-07-31
 | [[wiki/concepts/hotspot-analysis]] | Complexidade ciclomática × code churn — hotspot real é a interseção, não cada métrica isolada; 80% da dor vem de 20% dos arquivos |
 | [[wiki/concepts/paid-framework]] | Performance/Architectural/Integration/Dependency — mnemônico rápido de priorização de dívida técnica sem ferramenta de análise |
 | [[wiki/concepts/refactor-vs-rewrite-matrix]] | Valor de negócio × risco técnico decide entre refatorar, reescrever, conviver ou depreciar um item de dívida técnica |
+| [[wiki/concepts/ciclo-de-mudanca-de-arquitetura]] | AS-IS → TO-BE → POC (testada na escala real) → coexistência com o legado → novo AS-IS — pular etapa é a causa mais comum de retrabalho caro numa mudança de arquitetura |
+| [[wiki/concepts/strangler-fig-pattern]] | Transform/Coexist/Eliminate: substitui sistema legado incrementalmente via proxy de roteamento, sem reescrita big bang; CDC para dados compartilhados durante a transição |
 | [[wiki/concepts/complexidade-como-estrategia]] | Três estágios: inconsciente → aparência → sabotagem — criar código incompreensível para se tornar insubstituível |
 | [[wiki/concepts/ciclo-da-desgraca-software]] | Espiral reescrita→mesmo problema→dois sistemas; alternativa: refatoração incremental com strangler fig |
 | [[wiki/concepts/pitfalls-de-linguagem]] | Armadilhas que existem na linguagem mas não devem ser usadas — descobertas pelo uso, não pelo estudo teórico |
@@ -930,7 +963,11 @@ date_updated: 2026-07-31
 | [[wiki/concepts/xss]] | Injeção de JavaScript no browser da vítima — mesma classe do SQLi, contexto HTML/JS |
 | [[wiki/concepts/timing-attack]] | Tempo de resposta como canal de informação — variação de latência revela segredos |
 | [[wiki/concepts/sast]] | Análise estática de segurança no código — detecta padrões vulneráveis antes do deploy |
-| [[wiki/concepts/secrets-management]] | Credenciais nunca no código — .env local, GitHub Secrets/AWS SM em produção; caso real de agente de IA autônomo encontrando e explorando credencial vazada sem intervenção humana |
+| [[wiki/concepts/secrets-management]] | Credenciais nunca no código — .env local, GitHub Secrets/AWS SM em produção; caso real de agente de IA autônomo encontrando e explorando credencial vazada sem intervenção humana; `.env` publicamente servido como ponto de entrada de um pentest real |
+| [[wiki/concepts/idor]] | Recurso acessado por ID sem checar ownership — #1 do OWASP API Top 10 (BOLA); pode escalar até account takeover quando o dado vazado é uma credencial |
+| [[wiki/concepts/account-takeover]] | Autenticar-se como outro usuário sem senha/MFA — nesta wiki, via chave de API vazada por IDOR e aceita sozinha como credencial de login |
+| [[wiki/concepts/upload-arbitrario-rce]] | Upload de arquivo sem validar MIME/extensão/execução — vira RCE quando o servidor trata o arquivo enviado como código |
+| [[wiki/concepts/autenticacao-e-autorizacao]] | "Quem é você" vs. "o que você pode fazer" — teste de logout, e caso de credencial de fator único aceita sem segundo fator |
 | [[wiki/concepts/password-hashing]] | Armazenar senhas exige algoritmo lento + salt + pepper — plaintext e MD5/SHA são inseguros |
 | [[wiki/concepts/salt]] | String aleatória por usuário concatenada à senha — invalida rainbow tables pré-computadas |
 | [[wiki/concepts/pepper]] | Segredo do servidor concatenado à senha — defesa se só o banco vazar |
@@ -1019,6 +1056,20 @@ date_updated: 2026-07-31
 | [[wiki/concepts/derived-state]] | Se dá para calcular a partir de estado/props existentes, não é estado — calcula na renderização em vez de sincronizar via `useEffect` |
 | [[wiki/concepts/stale-closure]] | `useEffect` com array de dependências vazio congela variáveis da primeira renderização — closure captura variáveis, não valores |
 
+### Internals de Frameworks Frontend (React/Vue/Angular)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/virtual-dom]] | Cópia da árvore de componentes em memória — diff contra a anterior decide o que tocar no DOM real |
+| [[wiki/concepts/reconciliacao]] | Algoritmo de diffing — trocar tipo de elemento recria do zero; `key` errada (índice em lista dinâmica) faz inputs perderem texto e estado vazar entre itens |
+| [[wiki/concepts/signals]] | Reatividade fine-grained — liga variável direto ao nó de DOM, sem diff nem árvore; vence Virtual DOM em listas gigantes/animações pesadas |
+| [[wiki/concepts/batching]] | Agrupa múltiplas mudanças de estado numa única atualização de DOM — ler o DOM logo após mudar estado ainda mostra o valor antigo |
+| [[wiki/concepts/hydration]] | HTML do SSR chega estático e inerte — JS conecta listeners/estado; arquitetura de ilhas hidrata só o que é interativo |
+| [[wiki/concepts/client-side-routing]] | `pushState`/`popstate` trocam URL e conteúdo sem requisição — acesso direto a rota profunda quebra sem fallback de servidor para `index.html` |
+| [[wiki/concepts/tree-shaking]] | Bundler remove código nunca importado — importar função específica em vez de biblioteca inteira reduz drasticamente o bundle |
+| [[wiki/concepts/code-splitting]] | Bundle dividido em chunks carregados sob demanda (`lazy`) — cada página baixa só o JS que precisa |
+| [[wiki/concepts/component-lifecycle]] | Montar/atualizar/desmontar universal a todo framework — esquecer cleanup no desmonte (WebSocket, timers, listeners) vaza memória |
+
 ### Testes & Qualidade
 
 | Página | Hook |
@@ -1049,6 +1100,8 @@ date_updated: 2026-07-31
 | [[wiki/concepts/mapper-pattern]] | Classe estática por camada que converte entidade de domínio para o formato de outra camada (Prisma, HTTP) — isola o acoplamento à tecnologia, não ao domínio |
 | [[wiki/concepts/objeto-vs-estrutura-de-dados]] | Uncle Bob: objeto = funções sobre dados implícitos/encapsulados; estrutura de dados = dados expostos operados por funções externas — conceitos literalmente opostos, não sobrepostos |
 | [[wiki/concepts/clean-architecture]] | Regra de dependência apontando para dentro; fluxo de aplicação web camada a camada — Controller empacota Input Data, Use Case orquestra Entities, Presenter reempacota em ViewModel |
+| [[wiki/concepts/dci-e-bce]] | Data-Context-Interaction (Reenskaug/Coplien) e Boundary-Control-Entity (Jacobson) — as duas arquiteturas, junto com Hexagonal, que Robert Martin sintetizou na Clean Architecture |
+| [[wiki/concepts/template-method-pattern]] | Esqueleto de algoritmo com etapas variáveis — variação via composição (não herança) usada num WebController de API REST |
 | [[wiki/concepts/arquitetura-em-3-camadas]] | Presentation → Business → Data Access com dependência direta e transitiva; contraponto usado para explicar por que Clean Architecture é "domain-centric" |
 | [[wiki/concepts/anti-pattern]] | Repetição que parece solução mas cria problemas — frequência não implica qualidade |
 | [[wiki/concepts/over-engineering]] | "Verde neném" — aplicar patterns sem base; pular etapas da progressão produz complexidade sem valor; under-engineering é o problema mais comum |
@@ -1074,8 +1127,10 @@ date_updated: 2026-07-31
 | Página | Hook |
 |---|---|
 | [[wiki/entities/pulsar-saas]] | SaaS pessoal ligado a um desafio de estudos gratuito de 100 dias no Instagram — caso real de autopentest guiado por IA |
+| [[wiki/entities/geraldo-alcantara]] | Pentester e criador de conteúdo — demonstrações de exploração em ambiente controlado, incluindo cadeia completa contra loja construída via vibe coding |
 | [[wiki/entities/the-primeagen]] | Engenheiro de software sênior na Netflix, criador de conteúdo (YouTube, em inglês) — reagiu a um vídeo de Theodor defendendo programar "do jeito difícil" |
 | [[wiki/entities/theodor]] | Dev/criador de conteúdo construindo jogo indie do zero sem engine — identidade exata não confirmada na fonte |
+| [[wiki/entities/otavio-lemos]] | Professor (UNIFESP/USP/UCI) e criador de conteúdo — autor de *Arquitetura Limpa na Prática*, tutorial de Clean Architecture com estudo de caso completo em TypeScript |
 | [[wiki/entities/knight-capital]] | Trading de alta frequência: código morto reativado por engano num deploy (2012) causou perda de ~$440-460 milhões em 45 minutos — caso extremo de custo de não seguir a Boy Scout Rule |
 | [[wiki/entities/edgar-codd]] | IBM, 1970: paper do modelo relacional e independência de dados — fundamento de tudo que veio depois |
 | [[wiki/entities/rabbitmq]] | Message broker AMQP — fila que viabiliza Saga Pattern coreografado sem gargalo de coordenação síncrona |
@@ -1173,6 +1228,7 @@ date_updated: 2026-07-31
 | [[wiki/entities/david-farley]] | Coautor de *Continuous Delivery* com Jez Humble; envolvido no LMAX; refuta o "triângulo de ferro" com dados DORA |
 | [[wiki/entities/mercado-livre]] | Maior e-commerce/fintech da América Latina — combina ISO 27001 + PCI-DSS + Zero Trust; adotante consolidado de Go em produção |
 | [[wiki/entities/andre-casciotti]] | Criador de conteúdo brasileiro, canal Próximo Nível — carreira dev, granularidade de mudança, síndrome do impostor em todo nível de carreira, decomposição de tarefas |
+| [[wiki/entities/marco-bruno]] | Educador, comunidade Cohab Code — 3 dicas para vaga júnior (networking, ensaiar entrevistas, transparência); ensinar como multiplicador de impacto |
 | [[wiki/entities/robert-nystrom]] | Autor de *Crafting Interpreters* — implementação passo a passo da linguagem Lox (interpretador Java + VM bytecode em C) |
 | [[wiki/entities/llvm]] | Infraestrutura de compilador reutilizável — backend de otimização/codegen multi-arquitetura usado por Rust e Swift |
 | [[wiki/entities/filipe-deschamps]] | Programador brasileiro, fundador do TabNews — quadro Request/Response; aplica a tríade retorno-risco-liquidez a decisões de carreira e adoção de hype |
@@ -1199,6 +1255,11 @@ date_updated: 2026-07-31
 | [[wiki/entities/opencode]] | Harness de codificação agêntica em CLI, parecido com o Claude Code mas agnóstico de provider — conecta a qualquer endpoint via chave de API |
 | [[wiki/entities/xai]] | Empresa de IA de Elon Musk (data centers e modelos próprios, família Grok) — teto mensal de uso de IA para engenheiros internos citado como sinal de escrutínio de custo mesmo com infra própria |
 | [[wiki/entities/elon-musk]] | Fundador da xAI — citado por relato de segunda mão sobre limite de uso de IA imposto a engenheiros internos |
+| [[wiki/entities/dhh]] | Criador do Ruby on Rails, cofundador da 37signals — trocou de "anti-agente raiz" (2025) para "agent first" (2026) em ~6 meses |
+| [[wiki/entities/antirez]] | Criador do Redis — publicou "não use agente", reverteu e cunhou "automatic programming" vs. vibe coding |
+| [[wiki/entities/thorsten-ball]] | Criador do agente AMP — "o agente escreve 70-80% do código, eu só faço commit" |
+| [[wiki/entities/steve-yegge]] | Citado sobre o dev virar majoritariamente "babá de agente" na Escola 2 de programação com IA |
+| [[wiki/entities/sean-grove]] | OpenAI — "a especificação é o artefato valioso, o código é só uma projeção dela" |
 
 ### Documentação de Arquitetura
 

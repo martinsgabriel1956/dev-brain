@@ -3,8 +3,8 @@ type: concept
 title: "Hardening de Servidor"
 aliases: ["server hardening", "hardening", "endurecimento de servidor"]
 date_created: 2026-07-10
-date_updated: 2026-07-10
-source_count: 1
+date_updated: 2026-07-31
+source_count: 2
 tags: [hardening, ssh, sshd, seguranca, defense-in-depth, presets]
 skill: tech-mentor-security
 status: stub
@@ -23,6 +23,10 @@ No contexto de [[wiki/concepts/ssh]], hardening tipicamente significa, no `sshd_
 
 Uma fonte da wiki descreve uma ferramenta com **presets escalonados** — "paranoico" (fecha praticamente tudo, mantém só autenticação por chave), "equilibrado" (libera redirecionamento TCP e outras conveniências) e "básico" — ilustrando hardening como um espectro configurável, não um estado binário.
 
+## Bloquear Acesso a Dotfiles (`.env`, `.git`)
+
+[[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] trata isso como a regra número um de proteção contra o vetor de ataque mais barato encontrado no vídeo: configurar o servidor web para recusar qualquer requisição a arquivos que comecem com ponto. Sem essa regra, um `.env` (ou `.git`) fica implicitamente servido como qualquer outro arquivo estático, acessível a qualquer pessoa que adivinhe ou faça brute force do caminho — ver [[wiki/concepts/attack-surface]] para a técnica de descoberta (dirsearch) e [[wiki/concepts/secrets-management]] para o impacto de um `.env` exposto.
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/ssh]] — exemplo concreto de superfície a ser endurecida.
@@ -33,3 +37,4 @@ Uma fonte da wiki descreve uma ferramenta com **presets escalonados** — "paran
 ## Key Sources
 
 - [[wiki/sources/ssh-chaves-como-funcionam]]
+- [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] — bloqueio de dotfiles (`.env`) como regra de hardening número um contra o vetor de ataque mais simples da fonte

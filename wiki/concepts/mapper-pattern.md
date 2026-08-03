@@ -3,8 +3,8 @@ type: concept
 title: "Mapper Pattern"
 aliases: ["mapper", "data mapper por camada", "toPrisma", "toDomain"]
 date_created: 2026-07-10
-date_updated: 2026-07-24
-source_count: 2
+date_updated: 2026-08-03
+source_count: 3
 tags: [design-patterns, mapper, clean-architecture, hexagonal, prisma, camadas, acoplamento]
 skill: tech-mentor-backend
 status: stable
@@ -58,7 +58,12 @@ Ao mapear para persistência, campos que são [[wiki/concepts/ddd|Value Objects]
 
 [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] dá a justificativa teórica para o que esta página já descreve na prática: um banco relacional contém apenas **estruturas de dados** (linhas/campos sem comportamento — ver [[wiki/concepts/objeto-vs-estrutura-de-dados]]), enquanto uma entidade de domínio é um **objeto** (dados + comportamento). Como os dois lados não são equivalentes, o mapper não "mapeia" um para o outro — ele **transfere dados** de um formato para o outro. Uncle Bob (fonte do post original) sugere que o nome correto seria algo como *Relational Datastructure Mapper*, não *Object-Relational Mapper* — reforça por que o mapper "pertence à camada/tecnologia, não ao domínio", como já registrado acima.
 
+## Exemplo concreto: mapeamento de `_id` do MongoDB
+
+[[wiki/sources/arquitetura-limpa-na-pratica]] ilustra o padrão com um `MongodbUserRepository`: o MongoDB gera `_id` nos documentos, mas a aplicação usa `id`. Um método `withApplicationId` recebe a estrutura de dados no formato armazenado (`MongodbUser`, com `_id`) e retorna a estrutura no formato da aplicação (`UserData`, com `id`) — aplicado via `map` (higher-order function) sobre o array de resultados. Mesmo raciocínio de "mapper pertence à camada/tecnologia, não ao domínio" descrito acima.
+
 ## Key Sources
 
 - [[wiki/sources/mappers-conversao-entre-camadas]]
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — justificativa teórica (objeto vs. estrutura de dados) para por que ORM é um nome equivocado
+- [[wiki/sources/arquitetura-limpa-na-pratica]] — exemplo concreto de mapeamento `_id` (MongoDB) → `id` (aplicação) via `withApplicationId`

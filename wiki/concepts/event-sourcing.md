@@ -3,8 +3,8 @@ type: concept
 title: "Event Sourcing"
 aliases: ["event store", "append-only log", "eventsourcing"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 1
+date_updated: 2026-08-03
+source_count: 2
 tags: [event-sourcing, arquitetura, cqrs, ddd, imutabilidade, fintech]
 skill: tech-mentor-backend
 status: stable
@@ -86,6 +86,9 @@ Em prática financeira: events persistidos no store, projeções (read models) c
 
 O [[nubank]] usa Event Sourcing + [[datomic]] como fundação. O Datomic é essencialmente um banco de dados que implementa event sourcing nativamente — append-only, com time-travel e snapshots imutáveis.
 
+Adotar Event Sourcing como TO-BE de uma migração de arquitetura segue o mesmo ciclo de qualquer outra mudança arquitetural significativa — AS-IS entendido, POC validada na escala real, coexistência com o modelo anterior. Ver [[wiki/concepts/ciclo-de-mudanca-de-arquitetura]].
+
 ## Key Sources
 
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
+- [[wiki/sources/ciclo-de-mudanca-de-arquitetura]] — citado como exemplo de decisão de TO-BE que exige o ciclo AS-IS/POC/migração

@@ -3,8 +3,8 @@ type: concept
 title: "Design Patterns"
 aliases: ["padrões de projeto", "GoF", "Gang of Four patterns"]
 date_created: 2026-05-16
-date_updated: 2026-06-09
-source_count: 2
+date_updated: 2026-08-03
+source_count: 3
 tags: [design, arquitetura, padroes, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -58,3 +58,4 @@ Antes de estudar design patterns é obrigatório dominar [[modelagem-orientada-a
 
 - [[wiki/sources/akita-como-aprender-programacao]] — quando *não* estudar patterns; origem em Christopher Alexander; relação com GoF e Java; patterns como nomes para o que você já fazia
 - [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]] — modelagem OO como pré-requisito; verde neném como sintoma de pular estágios
+- [[wiki/sources/arquitetura-limpa-na-pratica]] — [[wiki/concepts/template-method-pattern|Template Method]] implementado via composição (não herança) num controlador web, citando a recomendação do próprio livro GoF de favorecer composição sobre herança

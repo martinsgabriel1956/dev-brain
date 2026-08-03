@@ -3,8 +3,8 @@ type: entity
 title: "Fábio Akita"
 aliases: ["Akita", "Akita On Rails"]
 date_created: 2026-05-16
-date_updated: 2026-07-28
-source_count: 5
+date_updated: 2026-08-03
+source_count: 6
 tags: [pessoa, programador, youtuber, brasil]
 skill: tech-mentor-leadership
 status: stable
@@ -50,6 +50,10 @@ Rejeita explicitamente o papel de conselheiro de carreira: recusa-se a dizer o q
 
 Em janeiro de 2026, publicou um artigo propondo o **AI Jail** — ferramenta de linha de comando (~170 linhas de shell script, sobre o [[wiki/entities/bubblewrap]]) para isolar agentes de codificação de IA do restante do sistema do usuário, endereçando o risco de [[wiki/concepts/supply-chain-security|ataques de supply chain]] via dependências comprometidas. O tema também foi abordado por ele no Flow Podcast. Ver [[wiki/concepts/agent-containment]] e [[wiki/concepts/defense-in-depth]] para o modelo de três camadas que o artigo propõe (sessão/AI Jail, código/Git, sistema operacional imutável). Coerente com sua defesa geral de [[wiki/concepts/principio-do-menor-privilegio|privilégio mínimo]] e ceticismo em relação a confiar cegamente em ferramentas/pacotes só por serem populares.
 
+## Citado Sobre a Escola 1 (Copiloto) Estar "Datada"
+
+Em [[wiki/sources/cinco-escolas-programacao-com-ia]], o autor da fonte relata (de passagem, sem contexto completo) que Akita teria dito, em conversa ou vídeo, que a abordagem "copiloto" (autocomplete revisado sugestão-a-sugestão, ex.: Cursor/GitHub Copilot) seria "coisa de 2023" — já datada. O próprio autor da fonte discorda parcialmente, observando que essa escola segue com adesão ativa em 2026. `[transcrição incerta sobre o contexto exato da fala de Akita — citação de segunda mão, sem link à fonte primária]`.
+
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]]
@@ -58,3 +62,4 @@ Em janeiro de 2026, publicou um artigo propondo o **AI Jail** — ferramenta de 
 - [[wiki/sources/pare-de-terceirizar-suas-decisoes]]
 - [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — artigo/projeto AI Jail, comentado por terceiros (fonte não é o próprio canal de Akita)
 - [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] — áudio de segunda mão sobre fim do dinheiro fácil e aperto de processos seletivos
+- [[wiki/sources/cinco-escolas-programacao-com-ia]] — citação de segunda mão sobre a Escola 1 (copiloto) estar "datada"

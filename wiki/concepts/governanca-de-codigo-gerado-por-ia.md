@@ -3,8 +3,8 @@ type: concept
 title: "Governança de Código Gerado por IA"
 aliases: ["paradoxo da ia no codigo", "governar codigo de ia"]
 date_created: 2026-07-03
-date_updated: 2026-07-27
-source_count: 4
+date_updated: 2026-07-31
+source_count: 5
 tags: [ia-no-processo-de-engenharia, arquitetura, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -43,9 +43,14 @@ A IA ameaça quem permanece só na camada de execução e não evolui para julga
 
 [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] descreve uma variante distinta dos casos limite já registrados nesta página: não é falta de revisão humana sobre código gerado, é usar a IA para substituir a própria camada de decisão/registro que um sistema determinístico deveria ter. O autor tentou trocar scripts de validação (software tradicional, regra fixa) por julgamento de LLM — e a "governança" que faltou não foi revisão de PR, foi a decisão arquitetural de manter a IA como camada de interpretação e deixar o processamento lógico com o software tradicional. Argumento central da fonte: a IA torna mais evidente, não menos, a importância de quem sabe construir sistemas previsíveis — o oposto da narrativa de que a IA substitui o engenheiro.
 
+## Paralelismo Multiplica o Risco de "Gambiarra", Não Só o Ganho de Produtividade
+
+[[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] aplica o mesmo paradoxo ao contexto específico de paralelismo via [[wiki/concepts/worktree-paralelismo|worktree]]: a mesma capacidade que permite rodar três bug fixes e uma feature em paralelo, cada um numa instância separada de agente, é capacidade de gerar mais código ruim mais rápido — "garbage in, garbage out". O antídoto apontado pela fonte é o mesmo já documentado nesta página como pré-requisito estrutural: documentação boa e regras de negócio bem definidas antes de multiplicar agentes, não depois.
+
 ## Key Sources
 
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]]
 - [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] — caso de governança arquitetural: IA substituindo a camada de decisão determinística em vez de apenas interpretar
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]] — caso limite: pessoa não técnica gerando tickets via IA conectada ao repositório, sem nenhum julgamento de engenharia no fluxo
 - [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — caso limite: vender sistema vibe-coded como pronto para produção sem revisão humana
+- [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] — paralelismo via worktree multiplica tanto o ganho de produtividade quanto o risco de código mal fundamentado

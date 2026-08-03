@@ -3,8 +3,8 @@ type: concept
 title: "SLI — Service Level Indicator"
 aliases: ["service level indicator", "sli"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-08-03
+source_count: 2
 tags: [sre, observabilidade, metricas, prometheus]
 skill: tech-mentor-infra
 status: stable
@@ -35,6 +35,11 @@ Métrica concreta que mede um aspecto da qualidade do serviço. Sempre um númer
 
 Erros 4xx excluídos do denominador — são erro do cliente, não do serviço.
 
+## A Cadeia SLI → SLO → SLA
+
+Forma simples de lembrar a cadeia: o SLI é a métrica (ex.: proporção de respostas HTTP 200), o [[concepts/slo]] é a porcentagem/meta sobre essa métrica, e o [[concepts/sla]] é a camada contratual sobre a mesma promessa quando ela cruza a fronteira entre empresas.
+
 ## Key Sources
 
 - [[sources/sre-sli-slo-sla]]
+- [[sources/slo-sli-sla-exemplo-ecommerce]]

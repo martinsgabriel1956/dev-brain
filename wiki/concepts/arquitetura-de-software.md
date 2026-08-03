@@ -3,8 +3,8 @@ type: concept
 title: "Arquitetura de Software"
 aliases: ["software architecture", "decisao arquitetural"]
 date_created: 2026-07-03
-date_updated: 2026-07-29
-source_count: 10
+date_updated: 2026-08-03
+source_count: 11
 tags: [arquitetura, carreira, fundamentos, ia, pos-graduacao]
 skill: tech-mentor-leadership
 status: draft
@@ -70,9 +70,14 @@ Nenhum desses livros foi lido/ingerido diretamente ainda no wiki — são citaç
 
 [[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]] (Chris Kiehl) formula em uma frase o mesmo argumento já registrado acima sobre custo de decisão arquitetural errada, de um ângulo comparativo: "uma implementação porca de uma boa abstração não causa dano líquido à base de código; uma abstração ruim ou uma camada faltando faz tudo apodrecer". A distinção é útil porque separa dois eixos que costumam ser confundidos — qualidade de *implementação* (local, corrigível) vs. qualidade de *abstração/arquitetura* (estrutural, se propaga).
 
+## O Ciclo Operacional de uma Mudança Arquitetural
+
+[[wiki/sources/ciclo-de-mudanca-de-arquitetura]] formaliza, num nível mais operacional que as seções acima, o processo pelo qual uma decisão arquitetural concreta (trocar padrão de mensageria, adotar Event Sourcing, migrar banco) deveria passar: avaliar 100% o AS-IS (tecnologia + regras de negócio) → desenhar o TO-BE → validar com POC na escala real → migrar em coexistência com o legado → a migração concluída vira o novo AS-IS. Ver [[wiki/concepts/ciclo-de-mudanca-de-arquitetura]]. Essa fonte reforça, de um ângulo prático de execução, o mesmo ponto já registrado acima (via [[wiki/sources/filosofia-do-design-de-software-introducao]]) de que design arquitetural é processo contínuo — aqui aplicado ao nível de ciclo de migração, não de decisão de design dentro de um projeto em andamento.
+
 ## Key Sources
 
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]]
+- [[wiki/sources/ciclo-de-mudanca-de-arquitetura]] — ciclo operacional AS-IS → TO-BE → POC → migração → novo AS-IS
 - [[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]] — abstração ruim causa dano estrutural que implementação porca não causa
 - [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — fatores de contexto de negócio e organizacional que uma decisão arquitetural precisa considerar
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] — módulos profundos como unidade estrutural concreta

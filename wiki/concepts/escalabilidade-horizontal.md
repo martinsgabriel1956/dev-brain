@@ -3,8 +3,8 @@ type: concept
 title: "Escalabilidade Horizontal"
 aliases: ["horizontal scaling", "scale out", "escalar horizontalmente"]
 date_created: 2026-06-26
-date_updated: 2026-07-24
-source_count: 6
+date_updated: 2026-08-03
+source_count: 7
 tags: [escalabilidade, arquitetura, sistemas-distribuidos, nosql, redis, backend]
 skill: tech-mentor-backend
 status: stable
@@ -50,6 +50,10 @@ Normalização e transações ACID entre tabelas exigem coordenação entre nós
 
 Quando distribuir dados entre máquinas, entra o [[cap-theorem]] — consistência vs disponibilidade vs tolerância a partições.
 
+## Granularidade Fina de Capacidade
+
+Uma vantagem de custo pouco discutida: horizontal permite adicionar exatamente a capacidade necessária para absorver um pico (ex.: um servidor a mais), enquanto vertical em cloud providers costuma forçar dobrar o tier da instância inteira (ver [[wiki/concepts/escalabilidade-vertical]]). Menos servidores maiores também concentram mais risco — mais réplicas menores reduzem o impacto de qualquer ponto único de falha, já que as demais continuam operando se uma cair.
+
 ## Caso especial: serviços de conexão persistente (WebSocket)
 
 Escalar horizontalmente um serviço de conexões longas (WebSocket) tem uma restrição que serviços HTTP request-response não têm: exige [[wiki/concepts/load-balancer|load balancer de camada 4]] em vez de camada 7, porque o LB não pode reabrir a conexão para rotear (quebraria o tunelamento TCP). Além disso, servidores replicados não se comunicam entre si automaticamente — precisam de um broker externo (ex: [[wiki/concepts/redis]] Pub/Sub) para que uma mensagem publicada num servidor alcance um usuário conectado em outro. Ver [[wiki/concepts/chat-distribuido]].
@@ -62,3 +66,4 @@ Escalar horizontalmente um serviço de conexões longas (WebSocket) tem uma rest
 - [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] — tipos de load balancer e algoritmos de balanceamento (Weighted RR, Least Connections, Least Time, Sticky RR) usados para distribuir carga entre as réplicas
 - [[wiki/sources/10-conceitos-fundamentais-backend]] — framing de entrada nível-10-conceitos: começar com um servidor só, crescer para "mais usuários, mais chamadas de API, mais consultas ao banco, mais jobs assíncronos, mais picos inesperados"
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — réplicas de SQL database removem o alerta de bottleneck do banco num exercício simulado, mas deslocam o gargalo para o app server — demonstração direta de que escalar horizontalmente uma camada sem tratar a seguinte só move o problema
+- [[wiki/sources/escalabilidade-horizontal-vertical-custo-grafico]] — exemplo gráfico de granularidade fina de capacidade (um servidor a mais vs. dobrar instância) e resiliência via mais réplicas menores

@@ -3,8 +3,8 @@ type: entity
 title: "Uncle Bob (Robert C. Martin)"
 aliases: ["uncle bob", "robert c. martin", "robert cecil martin"]
 date_created: 2026-07-03
-date_updated: 2026-07-24
-source_count: 4
+date_updated: 2026-08-03
+source_count: 5
 tags: [clean-code, clean-architecture, solid, autor, quality-gate]
 skill: tech-mentor-backend
 status: stub
@@ -34,9 +34,14 @@ Quarta menção, em [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architec
 
 **Nota de verificação**: assim como na menção sobre SQL, a transcrição de origem não cita o título exato nem a URL do post do blog — vale confirmar contra `blog.cleancoder.com` se a atribuição precisar ser usada como fonte primária.
 
+## Livro *Arquitetura Limpa na Prática* (Otávio Lemos)
+
+Quinta menção, em [[wiki/sources/arquitetura-limpa-na-pratica]]: o livro inteiro de Otávio Lemos é um tutorial prático em torno da Clean Architecture de Robert Martin, com um estudo de caso completo em TypeScript. Traz uma anedota pessoal do autor: um bate-papo com Robert Martin no canal do YouTube do próprio Otávio, no qual Martin defende que validação sintática de dados (formato de email, por exemplo) pode ficar em camadas mais externas — posição da qual Otávio conscientemente se desvia no livro, preferindo validar já na camada de Entidades para tornar o modelo mais autocontido.
+
 ## Key Sources
 
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/5-principios-que-mudaram-como-programador]]
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — citação sobre análise estática em PR como gatilho para o setup de quality gate do autor
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — post de blog sobre objeto vs. estrutura de dados, e diagrama de cenário web do livro *Clean Architecture*
+- [[wiki/sources/arquitetura-limpa-na-pratica]] — livro-tutorial inteiro construído em torno da Clean Architecture de Martin, incluindo anedota de bate-papo pessoal sobre onde validar dados de entrada

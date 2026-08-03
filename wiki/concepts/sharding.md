@@ -3,8 +3,8 @@ type: concept
 title: "Sharding"
 aliases: ["database sharding", "particionamento horizontal", "shard", "shard key"]
 date_created: 2026-06-26
-date_updated: 2026-06-26
-source_count: 1
+date_updated: 2026-08-03
+source_count: 2
 tags: [system-design, banco-de-dados, sharding, escalabilidade, distribuido]
 skill: tech-mentor-system-design
 status: stub
@@ -64,6 +64,10 @@ A escolha da shard key é crítica:
 - [[escalabilidade-horizontal]] — sharding é a escalabilidade horizontal aplicada ao banco de dados
 - [[gargalo]] — banco é o gargalo mais comum; sharding é o último recurso para ele
 
+- [[wiki/concepts/control-plane]] — camada de coordenação necessária para mover dados/usuários entre shards
+- [[wiki/concepts/large-scale-architecture]] — sharding como técnica central do princípio "dividir para conquistar"
+
 ## Key sources
 
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
+- [[wiki/sources/large-scale-vs-complex-architecture]] — sharding citado como exemplo de técnica que escala TPS/resiliência sem necessariamente tornar a arquitetura "complexa" em alto nível; movimentação de usuário entre shards como caso concreto que exige control plane

@@ -9,7 +9,7 @@ source_url: ""
 author: ""
 date_published: ""
 date_ingested: 2026-04-22
-source_count: 0
+source_count: 1
 tags: [strangler-fig, migração, legado, proxy, cdc, feature-flags]
 skill: tech-mentor-backend
 status: stable

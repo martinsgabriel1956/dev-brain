@@ -3,8 +3,8 @@ type: concept
 title: "Networking de Carreira"
 aliases: ["networking", "mercado invisível de vagas", "mercado de indicações"]
 date_created: 2026-07-20
-date_updated: 2026-07-30
-source_count: 2
+date_updated: 2026-07-31
+source_count: 3
 tags: [carreira, networking, contratacao, senioridade]
 skill: tech-mentor-leadership
 status: stub
@@ -22,7 +22,12 @@ Ambientes que reúnem profissionais com o mesmo objetivo por um período prolong
 
 [[wiki/sources/papinho-tech-solo-comunidade]] descreve o mesmo fenômeno de "quem conhece alguém" aplicado a meetups gratuitos e eventos de comunidade em vez de pós-graduação: presença repetida nos mesmos eventos técnicos cria os laços de confiança que depois geram indicação direta para vaga. Ver [[wiki/concepts/comunidade-tecnica]] para o conceito central de reciprocidade que sustenta esse tipo de rede.
 
+## Aplicar Amplamente Como Complemento ao Networking
+
+[[wiki/sources/marco-bruno-3-dicas-vaga-junior]] traz um ângulo complementar, voltado especificamente para quem busca a primeira vaga: dois erros recorrentes de candidatos júnior são enviar poucos currículos e se autofiltrar por distância geográfica ou por achar que a vaga "não bate 100%" com o próprio nível. A recomendação é aplicar amplamente e investir em comunidade (cursos, grupos de mentoria) como ponto de entrada, já que é ali que se concentra boa parte de quem está buscando oportunidade — reforçando que o mercado visível também tem armadilhas de autofiltragem que reduzem as chances antes mesmo de o candidato ser avaliado.
+
 ## Key Sources
 
 - [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]]
 - [[wiki/sources/papinho-tech-solo-comunidade]] — mesmo mecanismo de indicação via presença recorrente, aplicado a meetups/eventos de comunidade
+- [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — autofiltragem excessiva (distância, "encaixe perfeito") como erro recorrente de candidatos júnior no mercado visível

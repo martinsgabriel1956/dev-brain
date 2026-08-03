@@ -3,8 +3,8 @@ type: concept
 title: "Escalabilidade Vertical"
 aliases: ["vertical scaling", "scale up", "upgrade de servidor"]
 date_created: 2026-06-26
-date_updated: 2026-07-09
-source_count: 3
+date_updated: 2026-08-03
+source_count: 4
 tags: [system-design, escalabilidade, infra, performance, tradeoff]
 skill: tech-mentor-system-design
 status: draft
@@ -34,6 +34,12 @@ Tornar um único servidor **mais potente**: mais CPU, mais RAM, mais disco, mais
 - Banco de dados legacy que não foi projetado para distribuição (primeiro passo antes de replicação ou sharding)
 - Cargas que não justificam a complexidade operacional de escalabilidade horizontal
 
+## Granularidade de Cloud Provider Força Desperdício
+
+Em cloud providers, o próximo tier de instância geralmente é **o dobro** do anterior — não é possível adicionar um número "quebrado" de CPU/memória. Isso torna o custo não-linear ainda pior na prática: um monolito centralizado que precisa só de um pouco mais de capacidade é obrigado a dobrar a instância inteira, ficando com uma fração ociosa de CPU/RAM paga mas não usada. Comparar com [[wiki/concepts/finops]] — right-sizing é justamente a prática de calibrar o tier real necessário contra esse degrau forçado.
+
+Vertical online (aumentar CPU/memória sem desligar) existe via hypervisor há bastante tempo, mas a redução online é rara na prática, e o caso comum ainda envolve indisponibilidade — refresh da aplicação, reboot, stop/start, dependendo do hypervisor ou cloud provider.
+
 ## Quando Migrar para Horizontal
 
 - O servidor maior começa a custar desproporcionalmente
@@ -51,3 +57,4 @@ Tornar um único servidor **mais potente**: mais CPU, mais RAM, mais disco, mais
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
 - [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] — reforça que escalar horizontalmente só faz sentido depois de esgotar a vertical
 - [[wiki/sources/10-conceitos-fundamentais-backend]] — vertical descrita como "colocar uma máquina mais potente com mais CPU mais memória mais capacidade na mesma instância"
+- [[wiki/sources/escalabilidade-horizontal-vertical-custo-grafico]] — exemplo gráfico de desperdício quando cloud provider força dobrar o tier da instância; vertical online existe via hypervisor mas redução é rara e indisponibilidade ainda é o caso comum

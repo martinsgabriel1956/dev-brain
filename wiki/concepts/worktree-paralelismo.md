@@ -3,8 +3,8 @@ type: concept
 title: "Worktree e Paralelismo de Tarefas"
 aliases: ["worktree parallelism", "git worktree IA", "paralelismo de tarefas ia"]
 date_created: 2026-06-02
-date_updated: 2026-07-24
-source_count: 7
+date_updated: 2026-07-31
+source_count: 8
 tags: [worktree, paralelismo, git, spec-driven, produtividade]
 skill: tech-mentor-ai
 status: stable
@@ -64,6 +64,30 @@ Worktree é paralelismo a nível de **file system** (cópias físicas, PRs separ
 
 Confirmação de campo: cada feature full stack no Cursor dispara ~5 Claude agents simultâneos + 1 agente de code review + a engenheira validando. O tech lead do Databricks usa os intervalos entre reuniões para disparar 2–3 agents e revisar PRs nos blocos livres. Esses padrões confirmam que o paralelismo não é teórico — é o fluxo diário de [[product-engineer|product engineers]] em empresas de ponta.
 
+## Demonstração Manual Completa: `add` / `list` / `remove -f`
+
+[[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] demonstra ao vivo o ciclo de vida completo de uma worktree criada manualmente:
+
+```bash
+git worktree add ../feature-a -b feature-a   # cria fora do repositório, um nível acima
+git worktree list                             # lista todas as worktrees ativas
+git worktree remove <caminho>                 # recusa/avisa se há mudanças não commitadas
+git worktree remove -f <caminho>              # força remoção, descartando mudanças pendentes
+```
+
+Recomendação registrada na fonte: criar a pasta da worktree **fora** do repositório (`../feature-a`) é a abordagem mais simples; a alternativa é uma pasta ignorada pelo Git dentro do próprio repositório — que é justamente o que o [[wiki/entities/claude-code]] faz nativamente (`.claude/worktrees/`).
+
+## Codex: App Nativo vs. Claude Code — Onde Cada Um Guarda a Worktree
+
+A mesma fonte compara lado a lado o suporte nativo de duas ferramentas:
+
+| Ferramenta | Comando/UI | Onde guarda |
+|---|---|---|
+| [[wiki/entities/codex-openai]] (app) | "new worktree" / "create permanent worktree" | Fora da pasta do repositório — local exato não confirmado, o próprio autor se contradiz ao vivo sobre isso `[transcrição incerta]` |
+| [[wiki/entities/claude-code]] | `claude --worktree <nome>` | `.claude/worktrees/<nome>`, dentro do repositório |
+
+Ao encerrar a sessão (`/quit`), o Claude Code pergunta explicitamente se o usuário quer manter a worktree — confirmação direta do comportamento já registrado na seção anterior sobre encerramento explícito.
+
 ## Worktree Cross-Repo em Microfrontends
 
 [[wiki/sources/impacto-ia-mercado-frontend]] descreve uma variante do problema em arquiteturas de microfrontends/múltiplos repositórios: como o worktree isola uma cópia de working directory mas não o contexto de outro repositório, o dev precisa linkar manualmente o worktree/PR do backend ao worktree/PR do frontend para sinalizar a interface entre eles — trabalho de coordenação que um monorepo não exige, porque ali o mesmo contexto já contém os dois lados. Ver [[wiki/concepts/monorepo-vs-microfrontends-ia]].
@@ -77,3 +101,4 @@ Confirmação de campo: cada feature full stack no Cursor dispara ~5 Claude agen
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
 - [[wiki/sources/impacto-ia-mercado-frontend]]
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — [[wiki/entities/replit|Replit]] expõe esse padrão na UI como "workers": uma sessão principal roda uma tarefa maior enquanto subtarefas paralelas de colaboradores rodam isoladas, com merge automático de volta e resolução de conflitos pelo próprio harness — hipótese do autor de que é `git worktree` por baixo dos panos, mas sem confirmação técnica
+- [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] — demonstração completa de `git worktree add`/`list`/`remove -f` no terminal; comparação lado a lado de onde Codex (app) e Claude Code guardam a worktree criada nativamente

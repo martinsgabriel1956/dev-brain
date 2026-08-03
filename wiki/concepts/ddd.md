@@ -3,8 +3,8 @@ type: concept
 title: "DDD — Domain-Driven Design"
 aliases: ["domain-driven design", "ddd", "domínio"]
 date_created: 2026-05-31
-date_updated: 2026-07-20
-source_count: 5
+date_updated: 2026-08-03
+source_count: 6
 tags: [ddd, arquitetura, bounded-context, aggregate, domain-events, hexagonal]
 skill: tech-mentor-backend
 status: draft
@@ -66,6 +66,10 @@ Um Value Object (ex: `content` de uma `Notification`, validado e imutável no do
 
 [[wiki/sources/application-boundary-martin-fowler]] — bliki entry de 2003, anterior à formalização de Bounded Context em *Domain-Driven Design* — chega ao mesmo problema por outra porta: onde termina uma "aplicação" não tem resposta puramente técnica, porque devs, negócio e quem controla o orçamento enxergam "uma unidade única" de formas diferentes e nem sempre alinhadas. O próprio Fowler aponta o strategic design de DDD como o desenvolvimento mais rigoroso dessa mesma questão. Ver [[wiki/concepts/application-boundary]] para o detalhamento das três lentes (código, funcionalidade, orçamento).
 
+## Regra de Negócio do Domínio vs. da Aplicação
+
+[[wiki/sources/arquitetura-limpa-na-pratica]] formaliza uma distinção que costuma ficar implícita: **regras de negócio do domínio** são dados e políticas que existiriam mesmo sem o sistema (ex: em um empréstimo — principal, taxa, período, e as operações de pagar/aplicar juros/cobrar multa) e pertencem à camada de Entidades; **regras de negócio da aplicação** descrevem *como o sistema automatiza* essas regras — os casos de uso — e são mais voláteis, podendo mudar de aplicação para aplicação mesmo dentro do mesmo domínio. A fronteira entre as duas é frequentemente uma decisão de projeto subjetiva, não uma classificação objetiva (ex: "usuário não pode ter duas notas com o mesmo título" pode legitimamente morar em Casos de Uso ou ser promovida para Entidades, dependendo de quão "fechada" se considera a regra).
+
 ## Key Sources
 
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
@@ -73,3 +77,4 @@ Um Value Object (ex: `content` de uma `Notification`, validado e imutável no do
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — especificações agnósticas à linguagem de programação (tese de Fabrício Arcanjo), transpilação de arquitetura entre stacks
 - [[wiki/sources/mappers-conversao-entre-camadas]]
 - [[wiki/sources/application-boundary-martin-fowler]] — application boundary como precursor social do bounded context
+- [[wiki/sources/arquitetura-limpa-na-pratica]] — distinção formal entre regra de negócio do domínio (Entidades) e da aplicação (Casos de Uso), com exemplo de empréstimo de Robert Martin

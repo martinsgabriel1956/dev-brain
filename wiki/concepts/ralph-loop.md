@@ -3,8 +3,8 @@ type: concept
 title: "Ralph Loop"
 aliases: ["Ralph Loop", "Ralph Wiggum loop"]
 date_created: 2026-07-28
-date_updated: 2026-07-28
-source_count: 1
+date_updated: 2026-08-03
+source_count: 2
 tags: [ralph-loop, loop-engineering, harness, bash, agente]
 skill: tech-mentor-ai
 status: stub
@@ -22,6 +22,11 @@ Não é sofisticação técnica que faz um loop funcionar — é simplicidade e 
 
 O Ralph Loop, na prática, é a versão mínima de um loop "goal-based": não há planner, verificador ou rúbrica formal — só a repetição do prompt até a IA (ou um humano observando) considerar a tarefa concluída. É citado como precursor histórico, não como implementação recomendada para produção — os mecanismos de verificação e checkpoints descritos em [[wiki/concepts/harness]] são o que separa um Ralph Loop simples de um loop que não desperdiça tokens sem supervisão.
 
+## Citado Como "Escola 4" em Taxonomia de Programação com IA
+
+[[wiki/sources/cinco-escolas-programacao-com-ia]] descreve o mesmo padrão (agente em loop sem supervisão em tempo real, tentando de novo até passar nos testes) como a posição mais extrema — "Escola 4" — numa taxonomia de cinco escolas de programação com IA, sob o nome `[transcrição incerta]` de "Half Wigun" (provável trocadilho com "Ralph Wiggum", mesma origem de nome já documentada acima). A fonte cita um argumento comercial de custo por hora (US$ 10-42/hora, valor não confirmado com precisão) associado a repositórios construídos com esse método — tratar como retórica de venda, não benchmark verificado. Ver [[wiki/concepts/escolas-de-programacao-com-ia]] para o mapa completo.
+
 ## Key Sources
 
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]]
+- [[wiki/sources/cinco-escolas-programacao-com-ia]] — mesmo mecanismo citado como "Escola 4" (loop sem supervisão), com argumento comercial de custo por hora não verificado

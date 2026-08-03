@@ -3,8 +3,8 @@ type: concept
 title: "Objeto vs. Estrutura de Dados"
 aliases: ["object vs data structure", "objetos e estruturas de dados", "data structure antithesis"]
 date_created: 2026-07-24
-date_updated: 2026-07-24
-source_count: 1
+date_updated: 2026-08-03
+source_count: 2
 tags: [clean-architecture, uncle-bob, oop, encapsulamento, dto, orm]
 skill: tech-mentor-backend
 status: stable
@@ -46,6 +46,11 @@ No diagrama de cenário típico de uma aplicação web (ver [[wiki/concepts/clea
 - [[wiki/concepts/repository-pattern]] — abstrai exatamente essa transferência de dados de/para o banco
 - [[wiki/concepts/ddd]] — entidades anêmicas são o sintoma de tratar um objeto como estrutura de dados por engano
 
+## Active Record aplicado a entidades de domínio é incompatível com Clean Architecture
+
+[[wiki/sources/arquitetura-limpa-na-pratica]] leva a crítica ao ORM um passo além: usar o padrão **Active Record** (a entidade conhece como persistir a si mesma) diretamente numa entidade de domínio é descrito como impossível dentro da Clean Architecture, porque a própria definição do padrão mistura código de persistência com regra de negócio do domínio, violando a Regra de Dependência. O autor considera aceitável usar Active Record em estruturas de dados (DTOs) na camada externa, onde não há regra de negócio para proteger.
+
 ## Key Sources
 
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — post do blog de Uncle Bob (formato de diálogo) definindo objeto e estrutura de dados como conceitos opostos, e as duas implicações práticas (ORM, diagrama de Clean Architecture web)
+- [[wiki/sources/arquitetura-limpa-na-pratica]] — extensão da crítica ao ORM: por que Active Record aplicado a entidades de domínio viola a Regra de Dependência

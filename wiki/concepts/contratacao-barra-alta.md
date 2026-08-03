@@ -3,8 +3,8 @@ type: concept
 title: "Contratação com Barra Alta"
 aliases: ["high bar hiring", "manter barra alta", "filtro de contratação"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-07-31
+source_count: 2
 tags: [liderança, contratação, cultura, time, senioridade]
 skill: tech-mentor-leadership
 status: stable
@@ -42,6 +42,11 @@ Contratar pessoas com potencial e gap é diferente de contratar pessoas sem fit.
 - [[mentoria-tecnica]] — depois de contratar, não abandone
 - [[flexibilidade-tecnica]] — evitar que barra alta vire preconceito técnico
 
+## Alternativa Quando Não Há Sênior Pronto Disponível
+
+[[wiki/sources/marco-bruno-3-dicas-vaga-junior]] cita, de segunda mão e sem confirmação plena (`[transcrição incerta]`), uma prática de manter a barra alta mesmo sem depender só de contratação externa de sêniores prontos: reunir pessoas com ambição declarada de crescer/trocar de nível, incluindo "pessoas-chave" que influenciam a cultura de evolução do time, e formar/educar internamente quem já demonstra esse perfil. Isso não é abaixar a barra — é deslocar o filtro de "já é sênior" para "tem ambição e potencial comprovado de virar sênior", com [[wiki/concepts/mentoria-tecnica]] preenchendo o gap.
+
 ## Key Sources
 
 - [[wiki/sources/desenvolvedor-acima-da-media-10-itens]]
+- [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — formação interna por ambição/potencial como alternativa quando contratação de sênior pronto é difícil (citação de segunda mão, não confirmada)

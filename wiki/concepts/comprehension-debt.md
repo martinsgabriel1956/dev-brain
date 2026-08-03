@@ -3,8 +3,8 @@ type: concept
 title: "Comprehension Debt"
 aliases: ["comprehension debt", "dívida de compreensão", "dívida cognitiva código ia"]
 date_created: 2026-04-23
-date_updated: 2026-07-16
-source_count: 4
+date_updated: 2026-08-03
+source_count: 5
 tags: [ia, agentes, qualidade, ownership, cognição, divida-tecnica]
 skill: tech-mentor-ai
 status: stable
@@ -43,9 +43,14 @@ A promessa de estar "quase lá" é o hook psicológico. Cada iteração adiciona
 - **Explique o código em voz alta (rubber duck)** antes de aprovar
 - **Reveze código manual + código de agente** para manter a capacidade de escrever
 
+## Nota de Atribuição: "Dívida de Compreensão" em Terceira Fonte
+
+[[wiki/sources/cinco-escolas-programacao-com-ia]] cita o mesmo fenômeno sob o nome "dívida de compreensão", atribuindo-o a Addy Osmani (Google). A wiki já registra, a partir da fonte primária ([[wiki/sources/addy-osmani-80-problem-agentic-coding]]), que quem **cunhou** o termo foi Jeremy Twei — Osmani é o autor do artigo que **popularizou** o conceito. Não é uma contradição de fato (cunhar ≠ popularizar), mas a nova fonte reforça que a atribuição a Osmani, isoladamente, tende a se espalhar de forma imprecisa — vale manter a distinção cunhagem/popularização explícita em fontes futuras.
+
 ## Key Sources
 
 - [[sources/addy-osmani-80-problem-agentic-coding]]
 - [[sources/erros-workflow-research-plan-implement]] — não ler o código durante o research é o caminho direto para comprehension debt
 - [[sources/context-engineering-avancado-para-coding-agents]] — mental alignment como antídoto coletivo
 - [[wiki/sources/cognitive-debt-margaret-storey]] — fonte primária de "cognitive debt"; corrige a atribuição da estatística de +14% (é da HBR, não de Storey) e fundamenta a distinção individual/coletivo com a teoria do programa de Naur
+- [[wiki/sources/cinco-escolas-programacao-com-ia]] — terceira fonte independente para o mesmo fenômeno ("dívida de compreensão"), com nota de atribuição a corrigir (cunhagem vs. popularização)

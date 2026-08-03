@@ -4,7 +4,7 @@ title: "Secrets Management"
 aliases: ["secrets management", "gerenciamento de segredos", "env variables", "credenciais", ".env"]
 date_created: 2026-06-10
 date_updated: 2026-07-31
-source_count: 5
+source_count: 6
 tags: [security, secrets-management, env, credenciais, devsecops, ci-cd, under-engineering]
 skill: tech-mentor-security
 status: stable
@@ -79,16 +79,22 @@ Propriedade desejável: **secrets configurados não são mais visíveis** — ne
 
 [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] descreve o teste como pergunta final de um checklist de segurança pré-publicação: "eu fui júnior demais (vibe coder demais)?" — rodar um scanner geral no repositório, incluindo o **histórico** do git, não só o estado atual dos arquivos. O ponto central: apagar um commit com uma chave vazada não remove a chave do histórico — o repositório continua guardando aquele valor em algum commit anterior, acessível a quem tiver acesso ao repositório (mesmo privado). Reforça a regra já documentada nesta página de que `.env` + `.gitignore` evitam o problema na origem, mas não substituem a verificação de que nada escapou.
 
+## `.env` Publicamente Servido como Vetor de Entrada
+
+[[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] documenta o caso mais direto e evitável desta página: um `.env` acessível diretamente por URL, sem nenhuma autenticação, numa loja gerada por ferramentas de vibe coding. Encontrado com uma ferramenta trivial de brute force de diretórios (dirsearch), continha secret key, chaves do Stripe, e um usuário de teste esquecido em produção — que virou o ponto de entrada de toda uma cadeia de ataque (IDOR → [[wiki/concepts/account-takeover]] → escalonamento a admin → [[wiki/concepts/upload-arbitrario-rce|RCE]]). Diferente do cenário de "git history com segredo antigo" já documentado acima, aqui o arquivo estava servido como recurso estático comum — a mitigação não é rotação ou scanning, é configuração do servidor web para recusar qualquer requisição a arquivos iniciados por ponto (`.env`, `.git`, etc.), tratada pela fonte como regra número um.
+
 ## Relação com Outros Conceitos
 
 - [[principio-do-menor-privilegio]] — cada secret deve ter escopo mínimo (API key com permissão só do que precisa)
 - [[attack-surface]] — credenciais expostas expandem massivamente a superfície de ataque
 - [[secure-by-default]] — o default deve ser que credenciais nunca estejam no código
+- [[wiki/concepts/hardening-de-servidor]] — bloquear acesso a dotfiles é uma regra de hardening de servidor, não só de gestão de segredos
 
 ## Key Sources
 
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — regra de não commitar + .env + ferramentas de secrets management; história do frontend com credenciais hardcoded
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — variáveis de ambiente configuradas na Vercel em vez de hardcode, incluindo chave de API da OpenAI; hardcode tratado como sintoma de under-engineering
 - [[wiki/sources/modelo-openai-escapa-sandbox-benchmark-cyberseguranca]] — agente de IA autônomo encontra e explora credencial de servidor vazada e indexada publicamente, sem intervenção humana entre descoberta e exploração
+- [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] — `.env` servido publicamente e encontrado via brute force de diretórios, ponto de entrada de uma cadeia completa de comprometimento
 - [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — demonstração ao vivo de que GitHub Secrets não pode ser visualizado após salvo, só atualizado
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — scanner de histórico de git como último item de checklist de autopentest

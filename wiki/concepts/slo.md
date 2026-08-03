@@ -3,8 +3,8 @@ type: concept
 title: "SLO — Service Level Objective"
 aliases: ["service level objective", "slo"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-08-03
+source_count: 2
 tags: [sre, confiabilidade, operações]
 skill: tech-mentor-infra
 status: stable
@@ -34,6 +34,11 @@ SLO interno é sempre mais rigoroso que o [[concepts/sla]] externo — a diferen
 
 `Error Budget = 1 - SLO`. SLO de 99.9% em 30 dias = 43.2 minutos de indisponibilidade permitida. Ver [[concepts/error-budget]].
 
+## SLO É Sobre Quem Faz o Acordo, Não Sobre o Número
+
+Um exemplo didático torna essa distinção concreta: o time de banco de dados de um e-commerce promete "99,9% disponível" para o time de aplicação — isso é um SLO, porque ambos são áreas da mesma empresa, sem multa envolvida se a meta falhar (só "problema interno"). Se esse mesmo compromisso de disponibilidade fosse feito por uma empresa de banco de dados contratada externamente, o mesmo número deixaria de ser um SLO e passaria a ser um [[concepts/sla]].
+
 ## Key Sources
 
 - [[sources/sre-sli-slo-sla]]
+- [[sources/slo-sli-sla-exemplo-ecommerce]]

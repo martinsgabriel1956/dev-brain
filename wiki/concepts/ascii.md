@@ -3,9 +3,9 @@ type: concept
 title: "ASCII"
 aliases: ["ascii", "american standard code for information interchange", "tabela ascii"]
 date_created: 2026-06-10
-date_updated: 2026-07-22
-source_count: 2
-tags: [ascii, charset, encoding, strings, cs-fundamentals, representacao, decode]
+date_updated: 2026-07-31
+source_count: 3
+tags: [ascii, charset, encoding, strings, cs-fundamentals, representacao, decode, iso-8859-1]
 skill: cs-fundamentals
 status: stable
 ---
@@ -42,7 +42,11 @@ ASCII não suporta:
 - Emojis
 - Qualquer idioma não baseado no alfabeto latino inglês (árabe, chinês, japonês, grego…)
 
-Essa limitação gerou demanda pelo [[unicode]] e pelo [[utf-8]].
+Essa limitação gerou demanda por codificações mais abrangentes — primeiro extensões regionais de 8 bits como [[iso-8859-1-latin-1]] (dobra o espaço para 0–255, já com acentos), e depois pelo [[unicode]] e pelo [[utf-8]] como solução universal.
+
+## O "Bit de Verificação" do 8º Bit
+
+[[wiki/sources/codificacao-de-caracteres-ascii-iso-8859-1-unicode]] descreve o ASCII como usando 1 byte (8 bits) por símbolo, mas apenas 7 bits de dado — o 8º bit tratado como bit de verificação. Isso é reflexo da origem histórica do ASCII em transmissão serial (paridade); em contextos modernos como um decoder [[utf-8]], esse mesmo bit tem outro papel: sempre `0` num byte ASCII válido, ele é o que permite ao decoder distinguir ASCII de bytes de continuação multi-byte (ver seção abaixo). Framings complementares, não contraditórios.
 
 ## Compatibilidade com UTF-8
 
@@ -56,3 +60,4 @@ Como todo byte ASCII tem o bit mais significativo em `0` (`b0 < 0x80`), um decod
 
 - [[sources/como-strings-realmente-funcionam]]
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — ASCII como caso trivial (fast path) no decoder
+- [[wiki/sources/codificacao-de-caracteres-ascii-iso-8859-1-unicode]] — estrutura de bits (7 dados + verificação), tabela de contiguidade alfabética, exercício de decode

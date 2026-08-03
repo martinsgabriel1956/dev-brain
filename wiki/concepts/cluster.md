@@ -3,8 +3,8 @@ type: concept
 title: "Cluster"
 aliases: ["clusters", "compute cluster", "database cluster", "distributed cluster"]
 date_created: 2026-05-05
-date_updated: 2026-05-05
-source_count: 1
+date_updated: 2026-08-03
+source_count: 2
 tags: [cluster, distributed-systems, escalabilidade, alta-disponibilidade, infra]
 skill: tech-mentor-infra
 status: stable
@@ -51,6 +51,11 @@ Um **control plane** (ou coordinator) decide onde cada workload roda. Clients fa
 | Latência | Nodes geograficamente próximos | Network partition → dilema CAP |
 | Custo | Usa hardware commodity | Mais máquinas = mais surface de falha |
 
+## Cluster Ativo-Passivo vs. Ativo-Ativo
+
+Um mesmo cluster (MySQL Cluster, Suse Cluster, Redhat Cluster) pode ser configurado em duas topologias com garantias bem diferentes: **ativo-passivo**, onde um nó primário serve tráfego e o(s) secundário(s) ficam em standby até um failover ser necessário — a base de [[wiki/concepts/alta-disponibilidade|HA]] —, ou **ativo-ativo**, onde todos os nós já servem tráfego em paralelo com dados replicados continuamente — a base de [[wiki/concepts/tolerancia-a-falha]]. Ver [[wiki/sources/ha-vs-ft-alta-disponibilidade-tolerancia-a-falha]] para a distinção completa e o trade-off de custo entre as duas.
+
 ## Key Sources
 
 - [[sources/clusters]]
+- [[wiki/sources/ha-vs-ft-alta-disponibilidade-tolerancia-a-falha]] — cluster ativo-passivo (HA) vs. ativo-ativo (Tolerância a Falha)

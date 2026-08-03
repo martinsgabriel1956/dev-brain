@@ -3,9 +3,9 @@ type: concept
 title: "Derived State"
 aliases: ["estado derivado", "valores derivados React", "computed values"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
-tags: [react, estado, derived-state, performance, renderização]
+date_updated: 2026-08-03
+source_count: 2
+tags: [react, estado, derived-state, performance, renderização, frontend-frameworks]
 skill: tech-mentor-frontend
 status: stable
 ---
@@ -70,6 +70,11 @@ const filtered = useMemo(
 - [[useMemo]] — memoizar cálculos pesados na renderização
 - [[useState]] — quando estado real é necessário
 
+## O mesmo princípio, fora do React
+
+O problema é framework-agnostic: qualquer estado que possa ser calculado a partir de outro estado existente (ex. `filtrados` calculado a partir de `itens` + `filtro`) não deveria virar estado próprio, porque cria dois valores que precisam ser mantidos manualmente em sincronia — se o dev esquecer de atualizar um lado após o outro mudar, eles dessincronizam. Um valor derivado, calculado na hora, não tem como ficar fora de sincronia porque não existe estado duplicado.
+
 ## Key Sources
 
 - [[wiki/sources/useeffect-problemas-e-solucoes]]
+- [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
