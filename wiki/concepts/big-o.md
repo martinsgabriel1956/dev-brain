@@ -3,8 +3,8 @@ type: concept
 title: "Big O"
 aliases: ["complexidade de algoritmos", "Big-O notation", "O(n)", "complexidade assintótica"]
 date_created: 2026-06-26
-date_updated: 2026-07-20
-source_count: 4
+date_updated: 2026-08-04
+source_count: 6
 tags: [cs-fundamentals, algoritmos, big-o, complexidade, performance]
 skill: cs-fundamentals
 status: draft
@@ -62,6 +62,14 @@ Fora do cálculo formal, Big O tem uma utilidade direta em [[wiki/concepts/entre
 
 No framework [[wiki/concepts/seis-passos-mock-interview|"Os Seis Passos"]], estimar a complexidade da solução ideal é um passo explícito *anterior* à implementação: perguntar "existe uma solução O(1)? O(log n)?" antes de escrever qualquer código, e só então gerar 2–3 soluções candidatas prevendo o Big-O de cada uma.
 
+## Ordenar nunca é "de graça"
+
+Erro comum em entrevista: contar só o loop final e esquecer a transformação que o viabilizou. Uma solução que ordena um array e depois o percorre uma única vez *parece* O(n) — mas a ordenação prévia (`sort()`) já custa O(n log n), e é esse termo que domina a complexidade total, não o loop de uma passagem. Documentado em [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]]: uma solução de Longest Consecutive Sequence baseada em ordenar-e-percorrer é O(n log n) no total, mesmo que a parte de "contar a sequência" isolada seja O(n) — a alternativa com [[wiki/concepts/hashmap|hash set]] é que consegue ser O(n) de fato, evitando a ordenação.
+
+## Constantes somem, mas não escondem o trabalho
+
+A mesma fonte ilustra a regra de descartar constantes com um caso concreto: uma solução que percorre o array três vezes (popular hash map, inicializar buckets, popular buckets) é tecnicamente O(3n) — mas em notação Big O isso vira O(n), porque 1n, 3n, 20n ou 2 milhões de n têm a mesma classe de crescimento. Útil para não se confundir em entrevista quando a solução parece ter "múltiplos loops" mas ainda é linear.
+
 ## Big O ≠ tempo real
 
 O(1) pode ser mais lento que O(n) para entradas pequenas se a constante for grande (ex: hash table com custo fixo alto vs array de 5 elementos). Big O é relevante para entradas **grandes**.
@@ -86,3 +94,5 @@ O(1) pode ser mais lento que O(n) para entradas pequenas se a constante for gran
 - [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]] — framing das "quatro curvas essenciais" e introdução informal via "quantos passos a mais quando os dados dobram"
 - [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]] — Big O como ferramenta para saber que perguntas fazer numa entrevista, não só para calcular complexidade
 - [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]] — estimar Big-O da solução ideal antes de implementar, como passo explícito do framework "Os Seis Passos"
+- [[wiki/sources/binary-search-em-5-minutos]] — comparação lado a lado O(n) vs. O(log n) no mesmo array, contando passos concretos
+- [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — custo escondido da ordenação prévia numa solução que "parece" O(n); regra de descarte de constantes com exemplo de três loops sequenciais (O(3n) = O(n))

@@ -4,7 +4,7 @@ title: "Saga Pattern"
 aliases: ["saga", "saga distribuída", "compensating transactions"]
 date_created: 2026-04-22
 date_updated: 2026-08-03
-source_count: 4
+source_count: 5
 tags: [sistemas-distribuidos, consistencia, saga, microsservicos, compensação]
 skill: tech-mentor-system-design
 status: stub
@@ -39,6 +39,10 @@ Essa escolha (coreografia vs. orquestração) é citada em [[wiki/sources/ciclo-
 
 Uma explicação simplificada apresenta o Saga coreografado como: cada serviço (order, payments, shipping, inventory...) publica na fila (ex.: [[wiki/entities/rabbitmq]]), que garante ordem e evita gargalo de coordenação síncrona — em contraste direto com o [[wiki/concepts/two-phase-commit|two-phase commit]], que trava esperando aprovação sequencial. O trade-off citado: a fila resolve o problema de gargalo, mas cada serviço precisa implementar manualmente sua própria compensação/rollback caso uma etapa falhe — isso é descrito como a parte "muito difícil" de implementar Saga na prática. Essa arquitetura de fila é chamada de [[wiki/concepts/event-driven-architecture]]. Ver [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]].
 
+## Aplicação a Transações Cross-Shard
+
+O mesmo problema resolvido para microsserviços com bancos separados se repete em [[wiki/concepts/sharding|sharding]] de banco de dados: uma transferência que debita um shard e credita outro não pode ser atômica como uma transação local. Exemplo: transferir R$ 50 do usuário 1 (shard A) para o usuário 2 (shard B) — se o débito é concluído e o sistema falha antes do crédito, o dinheiro simplesmente desaparece (usuário 1 fica negativo, usuário 2 nunca recebe). O Saga pattern é citado como a solução recomendada também nesse contexto: débito e crédito como transações locais sequenciais, com compensação (estorno) se a segunda etapa falhar. Ver [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]].
+
 ## Trade-off
 
 Consistência eventual — não ACID. Compensações podem falhar também (saga idempotente é obrigatória). Mais complexo que uma transação local, mas escala horizontalmente.
@@ -49,3 +53,4 @@ Consistência eventual — não ACID. Compensações podem falhar também (saga 
 - [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — saga pattern/consistência eventual citado como conceito que ajuda a lidar com cenários de concorrência e integração mesmo num único banco de dados, fora de arquitetura distribuída
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — versão didática coreografada via RabbitMQ, contrastada com o gargalo de coordenação do 2PC
 - [[wiki/sources/ciclo-de-mudanca-de-arquitetura]] — coreografia vs. orquestração como exemplo de decisão de TO-BE a validar via POC
+- [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — Saga aplicado a transações que cruzam shards de banco de dados (exemplo de transferência financeira entre usuários em shards diferentes)

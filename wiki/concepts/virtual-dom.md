@@ -3,8 +3,8 @@ type: concept
 title: "Virtual DOM"
 aliases: ["VDOM", "virtual dom diffing"]
 date_created: 2026-08-03
-date_updated: 2026-08-03
-source_count: 1
+date_updated: 2026-08-04
+source_count: 2
 tags: [frontend, virtual-dom, reatividade, react, vue, performance]
 skill: tech-mentor-frontend
 status: stable
@@ -36,3 +36,4 @@ Frameworks baseados em [[wiki/concepts/signals]] (Solid.js, Svelte, Vue via `ref
 ## Key Sources
 
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
+- [[wiki/sources/react-reconciliacao-memo-usememo-usecallback]] — demonstração prática no React DevTools Profiler de que gerar uma nova versão na Virtual DOM não implica tocar o DOM real

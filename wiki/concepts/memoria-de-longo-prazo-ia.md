@@ -3,8 +3,8 @@ type: concept
 title: "Memória de Longo Prazo para Agentes"
 aliases: ["long-term memory", "memória de longo prazo", "plano persistido", "research output salvo"]
 date_created: 2026-06-01
-date_updated: 2026-07-21
-source_count: 2
+date_updated: 2026-08-03
+source_count: 3
 tags: [context-engineering, coding-agents, rpi-workflow, refatoracao, subplano]
 skill: tech-mentor-ai
 status: draft
@@ -92,7 +92,12 @@ Memória de longo prazo é a extensão natural da separação de contextos: enqu
 
 Esta página cobre memória persistida para uma única mudança grande (research → subplanos de uma refatoração). Para memória de propósito geral entre sessões distintas — preferências do usuário, padrões de tarefas recorrentes, skills geradas automaticamente — ver [[wiki/concepts/agent-memory-tres-camadas]] e [[wiki/concepts/closed-loop-skill-learning]], que descrevem um padrão irmão com escopo mais amplo.
 
+## Distinção de Momento: Memória de Research vs. "Estado" Pós-Implementação
+
+[[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] descreve um artefato complementar chamado **estado**, gerado por uma skill de Spec-Driven Development ("TLC Spec Driven"): enquanto a memória de longo prazo descrita nesta página salva o output do *research* (antes de qualquer implementação), o estado registra as decisões que o agente tomou *durante* a execução das tasks. Os dois cumprem o mesmo papel estrutural — permitir retomar o trabalho numa janela de contexto nova sem re-explorar o codebase — mas em momentos diferentes do fluxo: memória de longo prazo antecede a implementação, estado a acompanha e sucede.
+
 ## Key sources
 
 - [[wiki/sources/context-engineering-codebases-grandes-rpi]] — padrão demonstrado com refatoração de SubscriptionService para DDD tático (13+ serviços, 6 PRs)
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]] — padrão irmão de memória entre sessões, com escopo mais amplo (preferências e skills, não só refactoring plans)
+- [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — artefato de "estado" pós-implementação, complementar (não substituto) à memória de research

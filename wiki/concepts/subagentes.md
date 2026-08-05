@@ -3,8 +3,8 @@ type: concept
 title: "Subagentes"
 aliases: ["subagents", "sub-agentes", "Task tool", ".claude/agents"]
 date_created: 2026-07-03
-date_updated: 2026-07-10
-source_count: 2
+date_updated: 2026-08-03
+source_count: 3
 tags: [subagentes, claude-code, multi-agent, paralelismo, context-engineering, harness]
 skill: tech-mentor-ai
 status: draft
@@ -53,7 +53,12 @@ Reasoning effort baixo pode impedir o reconhecimento de que uma tarefa é parale
 
 Em vez de o usuário disparar cada subagente manualmente, um [[wiki/concepts/planner-executor-critic|Planner]] pode gerar dinamicamente o prompt de cada subagente (até dezenas em paralelo) junto com uma [[wiki/concepts/rubrica-de-verificacao|rúbrica]] de aceite, e um verificador (modelo distinto do executor) julga o resultado de cada subagente contra essa rúbrica antes de aceitar. Isso desloca o papel do subagente de "executor de tarefa nomeada pelo usuário" para "executor de tarefa gerada pelo sistema" — ver [[wiki/concepts/loop-engineering]].
 
+## Disparo a Partir do Breakdown de Tasks de um Spec-Driven
+
+Um caso concreto de disparo automático (não nomeado pelo usuário): ao executar um breakdown de tasks gerado por [[wiki/concepts/spec-driven-development|Spec-Driven Development]], o agente principal identifica quais tasks não têm dependência entre si e despacha um subagente por grupo paralelizável. Exemplo de campo: projeto de ~40 tasks executado com 4 subagentes rodando em paralelo, cada um cobrindo um subconjunto de tasks. Ver [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]].
+
 ## Key Sources
 
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
 - [[wiki/sources/loop-engineering-planner-critic-grafo]] — subagentes como executores num loop Planner-Executor-Critic, com prompt e rúbrica gerados dinamicamente
+- [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — 4 subagentes em paralelo despachados a partir do breakdown de tasks de uma spec

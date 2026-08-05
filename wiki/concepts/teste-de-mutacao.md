@@ -3,8 +3,8 @@ type: concept
 title: "Teste de Mutação"
 aliases: ["mutation testing", "testes de mutação", "mutation test"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 1
+date_updated: 2026-08-04
+source_count: 3
 tags: [teste-de-mutacao, qualidade, testes, harness, cobertura]
 skill: tech-mentor-backend
 status: stable
@@ -71,7 +71,17 @@ Com a IA gerando testes em grande volume, mutation testing virou ainda mais impo
 
 Mutation testing é um componente do [[harness-de-qualidade]] e da [[pipeline-de-qualidade]]. Não substitui coverage — complementa: coverage diz "essa linha foi executada", mutation testing diz "essa linha foi testada de verdade".
 
+## Mutation Testing na Lista de Uncle Bob Para "Não Precisar Ler Código"
+
+[[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] cita mutation testing como um dos itens concretos que [[wiki/entities/uncle-bob]] usa no lugar de ler código gerado por agentes. O papel específico que a fonte atribui a essa técnica na lista (junto com teste unitário, cobertura, Gherkin/BDD e métrica de qualidade): pega a variação — se o código está otimizado só para um caminho feliz (RPF — "requisito, parâmetro, formato" citado pela fonte) ou se de fato suporta mudanças de parâmetro. É o item que cobertura sozinha não pega, reforçando a distinção já registrada acima entre "linha executada" e "linha testada de verdade".
+
+## Exemplo Numérico Concreto com `mutmut` e Metas de Gate
+
+[[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] dá um exemplo numérico do ciclo descrito acima: de 400 mutações geradas pela ferramenta `mutmut` (Python, `pip install mutmut`), 50 sobrevivem — essas 50 sobreviventes são, na prática, o próximo sprint de testes a escrever, não um relatório para arquivar. A fonte cita como meta de exemplo para gate de CI 85% de cobertura combinado com 60% de mutation score — os dois números juntos, não isolados, ecoando a mesma razão pela qual [[wiki/entities/uncle-bob]] cita cobertura e mutation testing lado a lado: cobertura sozinha não distingue "linha executada" de "linha testada de verdade".
+
 ## Key Sources
 
 - [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
+- [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — mutation testing como um dos cinco pilares do harness que Uncle Bob usa em vez de ler código
+- [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — exemplo numérico com `mutmut` (400 mutações, 50 sobreviventes) e meta de gate combinando cobertura + mutation score

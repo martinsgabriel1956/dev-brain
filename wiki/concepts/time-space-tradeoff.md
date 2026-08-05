@@ -3,8 +3,8 @@ type: concept
 title: "Trade-off Tempo vs. Memória"
 aliases: ["time-space tradeoff", "time complexity vs space complexity", "trade-off tempo x espaço"]
 date_created: 2026-07-10
-date_updated: 2026-07-29
-source_count: 3
+date_updated: 2026-08-04
+source_count: 4
 tags: [cs-fundamentals, big-o, complexidade, algoritmos, memoria]
 skill: cs-fundamentals
 status: draft
@@ -24,6 +24,10 @@ Você paga memória adiantada para não pagar a busca inteira toda vez que preci
 ## Exemplo concreto: Two Sum
 
 [[wiki/sources/two-sum-explicacao]] documenta o exemplo mais direto desse trade-off: a solução ingênua de Two Sum é O(n²) no tempo e O(1) em espaço extra; usar um [[hashmap]] para guardar o complemento durante a iteração leva a O(n) no tempo, ao custo de O(n) de memória adicional.
+
+## Segundo exemplo: Longest Consecutive Sequence
+
+[[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] documenta a mesma troca com outro par de soluções: transformar o array numa estrutura auxiliar (hash set, O(n) de espaço extra) permite checar membership em O(1) e resolver o problema inteiro em O(n) de tempo; a alternativa sem espaço extra (ordenar o array in-place) evita o custo de memória, mas paga O(n log n) de tempo pela ordenação. Mesmo raciocínio de Two Sum acima, aplicado a um problema diferente: gastar espaço para comprar velocidade.
 
 ## Big O mais baixo não é sempre a melhor opção
 
@@ -45,3 +49,4 @@ O trade-off deixa claro por que a notação assintoticamente menor nem sempre ve
 - [[wiki/sources/two-sum-explicacao]]
 - [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]]
 - [[wiki/sources/indice-de-banco-de-dados]] — índice de banco de dados como exemplo concreto de espaço/escrita trocado por velocidade de leitura
+- [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — hash set (O(n) de espaço) trocado por O(n) de tempo em Longest Consecutive Sequence, contra O(n log n) de tempo sem espaço extra ao ordenar in-place

@@ -3,8 +3,8 @@ type: concept
 title: "Algoritmos e Estruturas de Dados"
 aliases: ["DSA", "data structures", "estruturas de dados", "algoritmos"]
 date_created: 2026-05-16
-date_updated: 2026-07-31
-source_count: 9
+date_updated: 2026-08-04
+source_count: 11
 tags: [fundamentos, cs-fundamentals, algoritmos, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -94,3 +94,5 @@ Cada estrutura tem sua própria página com complexidade, analogias e quando usa
 - [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]] — DSA/Big O como ferramenta para saber que perguntas fazer numa entrevista técnica, pela perspectiva de um ex-entrevistador
 - [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]] — estudo de DSA prepara o brainstorm de soluções (etapa 7 de "Os Seis Passos"), incluindo o princípio de trocar espaço por velocidade
 - [[wiki/sources/tres-projetos-para-aprender-programar]] — Pathfinding como projeto que introduz algoritmos como estratégia de resolução de problema, não como sintaxe
+- [[wiki/sources/binary-search-em-5-minutos]] — binary search (passo 3 da sequência de aprendizado acima) resolvido do zero até implementação real, com técnica de two pointers
+- [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — três problemas de entrevista resolvidos em versão ingênua e versão ótima (array+hash set, hashmap+bucket sort, two pointers), com ênfase em por que a explicação do raciocínio importa mais que a resposta

@@ -3,8 +3,8 @@ type: concept
 title: "Acoplamento"
 aliases: ["coupling", "baixo acoplamento", "alto acoplamento"]
 date_created: 2026-04-25
-date_updated: 2026-07-28
-source_count: 4
+date_updated: 2026-08-04
+source_count: 6
 tags: [acoplamento, software-design, clean-code, arquitetura, under-engineering]
 skill: tech-mentor-backend
 status: stable
@@ -56,6 +56,26 @@ Sistemas altamente acoplados congelam: uma mudança pequena quebra coisas inespe
 
 [[wiki/sources/7-habitos-programador-altamente-eficaz]] reaproveita a mesma analogia de órgãos usada em [[wiki/concepts/abstracao]] para explicar acoplamento pelo ângulo inverso: assim como problemas graves de saúde surgem quando o limite de um órgão começa a "furar" o limite de outro (ex.: um problema cardíaco afetando o funcionamento renal), um software sofre os mesmos sintomas quando abstrações e responsabilidades mal definidas deixam tudo acoplado e misturado. A fonte não detalha técnica de identificação de limites (bounded contexts, DDD) — fica no nível de intuição desenvolvida com experiência, reconhecendo explicitamente que no início da carreira é difícil enxergar esses limites.
 
+## Heurística prática: "De quem é essa linha?"
+
+[[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] propõe uma pergunta simples para treinar a percepção de acoplamento linha a linha: **de quem é essa linha de código?** Se a resposta é sempre "do mesmo componente" (a mesma camada onde a linha está fisicamente), o software é uma "ameba total" — não existem divisórias reais entre responsabilidades. Se não é possível responder com clareza a quem uma linha pertence, é sinal de que não há compreensão da própria modelagem do código, não só um problema de organização de arquivos.
+
+A fonte formaliza isso em **três estágios de acoplamento**, exemplificados via refatoração de um jogo em JavaScript, e argumenta que nenhum estágio é objetivamente superior — cada um tem seu uso:
+
+1. **Tudo misturado** — camada de input com regra de negócio do jogo dentro do mesmo handler de evento. Ruim para manutenção, mas ótimo para prototipar rápido e descobrir falhas na própria ideia.
+2. **Componentes isolados com chamada estática/explícita** — a camada de input chama `game.multiplayer(command)` de um módulo separado (via [[wiki/concepts/factory-pattern]]). Ainda é acoplamento — a camada de input conhece o método concreto — mas já tem responsabilidades separadas. A fonte nota que é assim que a maioria do software profissional é construído, mesmo com [[wiki/concepts/dependency-injection]]: DI torna a dependência flexível/testável, não a remove.
+3. **Componentes que não se conhecem nem estaticamente** — via [[wiki/concepts/observer-pattern]]: o subject notifica quem estiver inscrito, sem saber quem é ou se alguém está ouvindo. É o único estágio onde adicionar um novo consumidor (ex.: uma camada de rede escutando os mesmos comandos) tem impacto quase zero no código já existente.
+
+## Dependency Structure Analysis: Detectando Acoplamento Indevido Entre Módulos Automaticamente
+
+[[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] descreve uma técnica de gate de CI voltada especificamente a detectar acoplamento indevido *entre módulos* (não dentro de uma função, como complexidade ciclomática, nem dentro de um arquivo, como tamanho de módulo) — três padrões citados como alvo dessa análise:
+
+- **Import circular**: arquivo A importa arquivo B que importa arquivo A de volta.
+- **Camadas invertidas**: um controller chamando um model diretamente, pulando a camada de serviço que deveria mediar essa chamada.
+- **Módulo de implementação acessando a implementação interna de outro módulo diretamente**, em vez de passar por um **módulo de API** que aquele módulo expõe propositalmente para consumo externo.
+
+Esse terceiro padrão generaliza o próprio problema já descrito nesta página em "Alto acoplamento (problema)" e nos "três estágios de acoplamento" — a diferença é que aqui a fronteira é entre módulos/pacotes inteiros, não entre funções dentro do mesmo arquivo, e a fonte propõe capturar a violação automaticamente no CI (ferramenta de análise de estrutura de dependências), não só via revisão humana ou heurística de design.
+
 ## Relações
 
 - [[abstracao]] — abstração é o mecanismo que permite baixo acoplamento entre módulos
@@ -70,3 +90,5 @@ Sistemas altamente acoplados congelam: uma mudança pequena quebra coisas inespe
 - [[wiki/sources/design-pattern-adapter]] — `new` de uma classe concreta de baixo nível (lib externa) dentro de uma classe de alto nível é a manifestação de acoplamento que o [[wiki/concepts/adapter-pattern]] resolve
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — exemplo real de login e criação de conta acoplados no mesmo arquivo; separação tratada como algo que se aprende na prática, não como regra fixa
 - [[wiki/sources/7-habitos-programador-altamente-eficaz]] — analogia médica dos órgãos aplicada ao acoplamento: limites mal definidos entre componentes causam os mesmos sintomas que órgãos ferindo os limites uns dos outros
+- [[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] — heurística "de quem é essa linha?"; três estágios de acoplamento exemplificados via refatoração de um jogo em JavaScript (misturado → Factory com chamada estática → Observer sem conhecimento estático)
+- [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — dependency structure analysis como gate de CI: import circular, camadas invertidas, módulo de implementação acessando outro sem passar por módulo de API

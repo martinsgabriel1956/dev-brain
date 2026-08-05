@@ -3,8 +3,8 @@ type: concept
 title: "WebAuthn, FIDO2 e U2F"
 aliases: ["U2F", "Universal Second Factor", "WebAuthn", "FIDO2", "passkeys", "YubiKey"]
 date_created: 2026-07-27
-date_updated: 2026-07-27
-source_count: 1
+date_updated: 2026-08-03
+source_count: 2
 tags: [webauthn, fido2, u2f, passkeys, criptografia-assimetrica, mfa, autenticacao]
 skill: tech-mentor-security
 status: draft
@@ -37,6 +37,10 @@ Mesmo princípio de prova-de-posse sem transmissão de segredo usado em [[wiki/c
 
 Evolução do U2F para um padrão W3C usável diretamente no browser, sem hardware dedicado — a chave privada pode ficar protegida por biometria ou PIN local no próprio dispositivo (ver [[wiki/concepts/mobile-biometria]]), não só em um token físico. "Passkey" é o nome comercial dado a essa credencial WebAuthn quando sincronizável entre dispositivos (iCloud Keychain, Google Password Manager).
 
+## Sincronização vs. Hardware Dedicado
+
+Passkeys podem ser **sincronizadas** entre dispositivos via nuvem (iCloud Keychain, Google Password Manager) — resolve o problema de perder o aparelho, mas adiciona uma camada de confiança no provedor de sincronização. Para cenários de alta segurança, existem passkeys **não sincronizadas**, vinculadas a um hardware físico específico (ex.: YubiKey), que nunca saem daquele dispositivo — troca conveniência por uma superfície de confiança estritamente menor.
+
 ## Por que supera senha e OTP
 
 - Chave privada nunca sai do dispositivo — não vaza em breach de servidor
@@ -54,3 +58,4 @@ Evolução do U2F para um padrão W3C usável diretamente no browser, sem hardwa
 ## Key Sources
 
 - [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]
+- [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — passkeys sincronizadas vs. hardware dedicado; vínculo de domínio como defesa contra phishing

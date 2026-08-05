@@ -3,8 +3,8 @@ type: concept
 title: "Cargo Cult Tecnológico"
 aliases: ["copiar stack de big tech", "solução Netflix Google Facebook sem contexto", "cargo cult de arquitetura"]
 date_created: 2026-07-03
-date_updated: 2026-07-27
-source_count: 3
+date_updated: 2026-08-04
+source_count: 4
 tags: [arquitetura, tomada-de-decisao, carreira, escala, contexto]
 skill: tech-mentor-leadership
 status: draft
@@ -44,6 +44,10 @@ Assistir a uma palestra de um ciclista profissional sobre a bicicleta de 8 mil d
 
 [[wiki/sources/a-insanidade-de-ser-um-programador-hoje]] descreve uma terceira variante, distinta tanto da autoridade de big tech quanto da vaidade pessoal: adoção por **consenso coletivo do mercado**, sem gatilho identificável de uma empresa específica. A fonte descreve React (e, por extensão, TypeScript/Redux/Webpack em volta dele) como algo que "a mente coletiva de programação decidiu" ser "a maneira certa" de desenvolver — convenção que vira padrão de contratação e de vaga sem que cada empresa individualmente tenha avaliado se o próprio contexto (tamanho de time, complexidade real de UI) justifica essa pilha específica. O mecanismo de fundo é o mesmo (decisão técnica desconectada de contexto), mas a fonte da autoridade percebida aqui não é "porque a Netflix faz assim", é "porque é isso que todo mundo espera que se saiba".
 
+## A Variante por Ansiedade de Ficar Para Trás ("FOMO de Framework")
+
+[[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] descreve o mecanismo inverso ao cargo cult clássico: não é copiar o que a big tech faz, é a ansiedade de que **não** acompanhar toda nova tecnologia é ficar irrelevante — "vontade de jogar todo o conhecimento fora para aprender o framework da moda". A fonte argumenta que essa ansiedade ignora um dado empírico simples: [[wiki/concepts/soap]], [[wiki/concepts/xml-extensible-markup-language|XML]], [[wiki/concepts/esb-enterprise-service-bus|ESB]], [[wiki/concepts/jquery]] e [[wiki/concepts/cobol]] saíram do mainstream de conferências e redes sociais há anos, mas continuam sustentando sistemas críticos — o ciclo de hype da comunidade não é o mesmo ritmo em que uma tecnologia deixa de ser útil em produção. É o cargo cult visto pelo avesso: em vez de "copiar porque todo mundo grande usa", é "abandonar porque ninguém mais fala disso" — mesmo mecanismo de decisão desconectada de contexto real, motivação inversa.
+
 ## Ver também
 
 - [[wiki/concepts/decisao-terceirizada]] — o hábito geral de decisão por procuração
@@ -56,3 +60,4 @@ Assistir a uma palestra de um ciclista profissional sobre a bicicleta de 8 mil d
 - [[wiki/sources/pare-de-terceirizar-suas-decisoes]]
 - [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] — a variante por vaidade tecnológica pessoal, não por autoridade de big tech
 - [[wiki/sources/a-insanidade-de-ser-um-programador-hoje]] — a variante por consenso coletivo de mercado ("React é a forma certa"), sem autoridade de empresa específica
+- [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — a variante por ansiedade de ficar para trás (FOMO de framework), mecanismo invertido do cargo cult clássico

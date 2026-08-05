@@ -3,8 +3,8 @@ type: entity
 title: "Microsoft"
 aliases: []
 date_created: 2026-07-16
-date_updated: 2026-07-31
-source_count: 3
+date_updated: 2026-08-04
+source_count: 4
 tags: [empresa, custo-ia, token-economics, demissao, capital-de-tokens]
 skill: tech-mentor-ai
 status: stub
@@ -22,8 +22,13 @@ O CEO Satya Nadella cunhou a expressão **"capital de tokens"** como paralelo ao
 
 Em outro artigo, Nadella descreveu o **"paradoxo da informação invertida"** (reverse information paradox): entre os pontos que lista como importantes para uma organização estão manter traces de como informação e problemas são encontrados, evals sistemáticas, "adapted weights" e "memory accumulates" — o lugar onde a organização constrói confiança entre capital humano e capital de tokens. Ver [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]].
 
+## Participação na Criação do SOAP e no Ecossistema XML Corporativo
+
+Décadas antes da economia de IA, a Microsoft teve participação forte na criação do [[wiki/concepts/soap]] em 1998 (junto com outros pesquisadores, protocolo depois padronizado pelo [[wiki/entities/w3c]]), e consolidou sua adoção corporativa com o Windows Communication Foundation (WCF), framework .NET para serviços SOAP. Ver [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]].
+
 ## Key Sources
 
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]]
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — "paradoxo da informação invertida"
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — citada (sem detalhamento numérico) como uma das big techs estourando orçamento de engenharia de IA em 2026
+- [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — participação na criação original do SOAP (1998) e no WCF

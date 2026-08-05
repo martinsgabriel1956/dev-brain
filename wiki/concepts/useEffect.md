@@ -4,7 +4,7 @@ title: "useEffect"
 aliases: ["use effect", "efeitos React", "side effects React"]
 date_created: 2026-04-22
 date_updated: 2026-08-03
-source_count: 2
+source_count: 3
 tags: [react, hooks, efeitos, side-effects, useEffect]
 skill: tech-mentor-frontend
 status: stable
@@ -87,8 +87,13 @@ Se é efeito externo ao React → aí sim use useEffect
 
 `useEffect` é a forma específica do React de expor as três fases universais de [[wiki/concepts/component-lifecycle]] (montar/atualizar/desmontar) — outros frameworks usam sintaxe própria para o mesmo conceito (`onMounted`/`onUnmounted` no Vue, `ngOnInit`/`ngOnDestroy` no Angular). O exemplo canônico de por que o cleanup (função de retorno do effect) importa: um componente que abre uma conexão WebSocket ao montar precisa fechá-la ao desmontar, ou conexões vão se acumulando a cada nova montagem.
 
+## Sincronizar com um estado externo à árvore
+
+`useEffect` também serve para inscrever um componente num "sistema externo" que é, na verdade, estado próprio da aplicação — não uma API ou um DOM. É assim que hooks estilo `useDataSet`/`useStore` (base de [[wiki/concepts/zustand]]) funcionam: o `useEffect` chama `subscribe` num [[wiki/concepts/observer-pattern|observer]] externo e retorna o `unsubscribe` como cleanup, mantendo o `useState` local sincronizado com o valor externo. Ver [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]]. A ressalva: React 18+ tem `useSyncExternalStore`, desenhado especificamente para esse caso com garantias de Concurrent Mode que uma combinação manual de `useState`/`useEffect` não oferece.
+
 ## Key Sources
 
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
 - [[wiki/sources/useeffect-problemas-e-solucoes]]
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
+- [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]] — `useEffect` sincronizando estado externo (Observer) com estado local

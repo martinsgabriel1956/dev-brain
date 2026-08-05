@@ -3,8 +3,8 @@ type: concept
 title: "MFA — Autenticação Multifator"
 aliases: ["MFA", "2FA", "multi-factor authentication", "two-factor authentication", "fatores de autenticação"]
 date_created: 2026-07-27
-date_updated: 2026-07-27
-source_count: 1
+date_updated: 2026-08-03
+source_count: 2
 tags: [mfa, 2fa, autenticacao, seguranca, fatores-de-autenticacao]
 skill: tech-mentor-security
 status: draft
@@ -39,6 +39,18 @@ depois   → TOTP (IETF, RFC 6238) — relógio, mas padronizado e público
 
 Ver [[wiki/concepts/otp-hotp-totp]] para os detalhes de HOTP/TOTP e [[wiki/concepts/webauthn-fido2-u2f]] para U2F/FIDO2/WebAuthn.
 
+## Resistência a Phishing por Método
+
+| Método | Vulnerabilidade principal |
+|---|---|
+| SMS | Clonagem de número via SIM swap |
+| TOTP | Código pode ser digitado num site de phishing e repassado em tempo real |
+| Chave física (ex.: YubiKey) / WebAuthn | Não vulnerável a phishing — prova vinculada ao domínio, ver [[wiki/concepts/webauthn-fido2-u2f]] |
+
+## MFA Só no Login Não Basta: Step-Up Authentication
+
+Aplicar MFA apenas no momento do login protege a entrada, mas não as ações depois dela. Se um atacante já tem uma sessão ativa (ex.: sessão sequestrada), pode trocar e-mail, resetar senha ou desativar o próprio MFA sem nunca precisar do segundo fator de novo. Operações sensíveis exigem reautenticação do segundo fator no momento da ação — ver [[wiki/concepts/step-up-authentication]].
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/password-hashing]] — o fator "algo que você sabe" continua vulnerável a vazamento mesmo com hash+salt
@@ -46,7 +58,9 @@ Ver [[wiki/concepts/otp-hotp-totp]] para os detalhes de HOTP/TOTP e [[wiki/conce
 - [[wiki/concepts/webauthn-fido2-u2f]] — implementação do fator "algo que você tem" via criptografia assimétrica
 - [[wiki/concepts/mobile-biometria]] — implementação do fator "algo que você é"
 - [[wiki/concepts/sso-single-sign-on]] — MFA costuma ser aplicado uma vez no IdP central, não em cada serviço
+- [[wiki/concepts/step-up-authentication]] — MFA reaplicado fora do login, em ações sensíveis
 
 ## Key Sources
 
 - [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]
+- [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — comparação de resistência a phishing por método; step-up authentication

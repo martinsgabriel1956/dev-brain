@@ -3,8 +3,8 @@ type: concept
 title: "Entrevista Técnica de Coding"
 aliases: ["coding interview", "entrevista estilo leetcode", "live coding interview", "whiteboard interview"]
 date_created: 2026-07-20
-date_updated: 2026-07-28
-source_count: 5
+date_updated: 2026-08-04
+source_count: 7
 tags: [carreira, entrevistas, coding-interview, algoritmos, comunicacao]
 skill: tech-mentor-leadership
 status: draft
@@ -42,6 +42,14 @@ O artigo original do mesmo autor (fonte primária do vídeo já citado acima) de
 
 [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] relata (de segunda mão, sem fonte primária citada) o caso de um candidato no início de carreira reprovado numa entrevista na Netflix por nervosismo: travou numa pergunta técnica, deu branco, e — assim que a entrevistadora desligou a câmera — resolveu o mesmo problema em cerca de 5 minutos. A fonte usa esse caso para argumentar que confiança construída ao estudar coisas difíceis (não apenas conhecimento técnico em si) é o que permite manter o raciocínio funcionando sob a pressão real da entrevista — complementando, com o ângulo emocional/nervosismo, o que esta página já documenta sobre "ficar travado" como sinal esperado e avaliado.
 
+## Exemplo curto de resolução ao vivo: binary search em 5 minutos
+
+[[wiki/sources/binary-search-em-5-minutos]] documenta uma resolução completa de um problema clássico de [[wiki/concepts/algoritmos-de-busca|busca binária]] no LeetCode em menos de cinco minutos — do raciocínio ("por que o array precisa estar ordenado") até a implementação com [[wiki/concepts/two-pointer]] e a submissão aceita. É um contraponto de escala reduzida ao roteiro completo dos "Seis Passos": mesmo sem o processo formal de esclarecimento de requisitos (o problema já era conhecido do autor), o vídeo ilustra o nível de fluência esperado quando um padrão já foi internalizado — reforçando a distinção entre memorizar o **padrão** (ver [[wiki/concepts/reconhecimento-de-padroes]]) e resolver de forma mecânica sem entender o "porquê" do array ordenado.
+
+## Três problemas resolvidos em versão ingênua e versão ótima
+
+[[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] resolve Longest Consecutive Sequence, Top K Frequent Elements e Reverse Only Letters, cada um partindo de uma solução força bruta (ruim), passando por uma solução boa, até chegar na solução ótima — com justificativa explícita de complexidade em cada etapa. A tese central reforça o que já está documentado acima: o valor de entrevista não está em "chegar na resposta certa", está em demonstrar domínio de array, hash map/set, algoritmos de ordenação e Big O ao explicar por que uma solução vence outra. Contraste com [[wiki/sources/binary-search-em-5-minutos]]: lá, um único problema já conhecido é resolvido rapidamente para ilustrar fluência; aqui, três problemas diferentes são construídos passo a passo desde a primeira ideia ingênua, ilustrando o processo completo de chegar à solução ótima, não só o resultado final.
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/seis-passos-mock-interview]] — o roteiro concreto de prática que operacionaliza os princípios acima
@@ -59,3 +67,5 @@ O artigo original do mesmo autor (fonte primária do vídeo já citado acima) de
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]
 - [[wiki/sources/anatomia-entrevista-system-design-bigtech]] — mesma tese de "expor o raciocínio em voz alta" aplicada à entrevista de system design, dentro do pipeline completo de entrevista bigtech (RH → técnica/LeetCode → system design → fit)
 - [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] — caso (de segunda mão) de candidato reprovado na Netflix por nervosismo, resolvendo o problema minutos depois sem pressão
+- [[wiki/sources/binary-search-em-5-minutos]] — resolução completa e rápida de um problema clássico de busca binária, ilustrando fluência de padrão já internalizado
+- [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — três problemas resolvidos em versão ingênua e versão ótima, com justificativa de complexidade em cada etapa

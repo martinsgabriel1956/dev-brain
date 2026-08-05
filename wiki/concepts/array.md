@@ -3,8 +3,8 @@ type: concept
 title: "Array"
 aliases: ["vetor", "lista indexada", "indexed array"]
 date_created: 2026-06-01
-date_updated: 2026-07-10
-source_count: 3
+date_updated: 2026-08-04
+source_count: 5
 tags: [cs-fundamentals, estruturas-de-dados, array, performance, big-o]
 skill: cs-fundamentals
 status: draft
@@ -57,9 +57,13 @@ Uma fila de pessoas num show. Você sabe que a 10ª pessoa está na posição 9.
 
 - [[hashmap]] — alternativa quando a busca é por atributo, não por posição
 - [[algoritmos-e-estruturas-de-dados]] — array é a estrutura mais básica da sequência de aprendizado
+- [[wiki/concepts/algoritmos-de-busca]] — array ordenado é pré-requisito obrigatório de binary search; array não ordenado permite só busca linear
+- [[wiki/concepts/two-pointer]] — técnica que navega dois índices do mesmo array sem recriá-lo
 
 ## Key sources
 
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]] — array citado como estrutura de partida para sentir a diferença entre acesso direto, varredura e deslocamento
+- [[wiki/sources/binary-search-em-5-minutos]] — array ordenado como pré-condição para trocar O(n) por O(log n)
+- [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — Longest Consecutive Sequence: transformar array em hash set para checar membership em O(1) em vez de O(n)

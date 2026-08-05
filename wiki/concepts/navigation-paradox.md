@@ -3,8 +3,8 @@ type: concept
 title: "Navigation Paradox"
 aliases: ["navigation paradox", "paradoxo de navegação", "dependência escondida agente"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
-source_count: 1
+date_updated: 2026-08-04
+source_count: 2
 tags: [ia, agentes, arquitetura, dependencias, tokens, benchmark, pesquisa]
 skill: tech-mentor-ai
 status: stable
@@ -61,7 +61,12 @@ Mesmo com uma ferramenta de navegação de grafos disponível e prompt explícit
 - [[concepts/dependency-injection]] — o mecanismo que cria G3 dependencies
 - [[sources/navigation-paradox-2026]] — o paper completo
 
+## Confirmação Independente: Estrutura em Camadas vs. Vertical Slice
+
+[[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] chega à mesma conclusão central por um ângulo diferente, citando o Navigation Paradox como "segundo paper" que mediu o custo de estrutura em camadas do jeito mais direto possível: uma estrutura horizontal em camadas (domain/application/infrastructure) obriga o agente a atravessar várias camadas e vários arquivos (mappers, DTOs) para implementar uma única funcionalidade, e o agente provavelmente deixa arquivos para trás nesse processo. A fonte reforça [[wiki/concepts/vertical-slice-architecture]] como a estrutura mais óbvia — tanto para agente quanto para humano — citando o padrão *package by feature* do Go como exemplo concreto de adoção crescente.
+
 ## Key Sources
 
 - [[sources/navigation-paradox-2026]]
 - [[sources/clean-architecture-ia-custo-real]]
+- [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — confirmação independente do custo de estrutura em camadas, com vertical slice/package-by-feature como alternativa recomendada

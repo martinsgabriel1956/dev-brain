@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-08-03
+date_updated: 2026-08-04
 ---
 
 
@@ -20,6 +20,12 @@ date_updated: 2026-08-03
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]] | Tour do "80/20" da AWS sem abrir o console: EC2 (paga por tempo, não por uso) vs. Lambda (paga por execução, incluindo I/O ocioso) vs. Fargate; ECS e Elastic Beanstalk como camadas de orquestração/PaaS; ALB (L7) e API Gateway como roteamento; Step Functions como o caso mais extremo de vendor lock-in; RDS e DynamoDB; passagem rápida por SQS, SNS, CloudWatch, Secrets Manager, CloudFront e Amplify |
+| [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] | Três problemas clássicos de entrevista resolvidos do zero: Longest Consecutive Sequence (array + hash set, O(n) contra O(n log n) por ordenação), Top K Frequent Elements (hash map + bucket sort por frequência, O(n) contra O(n log n)), Reverse Only Letters (two pointers, O(n)) — ênfase em por que a explicação do raciocínio vale mais que a resposta |
+| [[wiki/sources/binary-search-em-5-minutos]] | Vídeo curto: por que binary search exige array ordenado e chega em O(log n) contra O(n) da busca linear; implementação com two pointers em vez de recursão com recriação de array; resolvido ao vivo no LeetCode em menos de 5 minutos |
+| [[wiki/sources/react-reconciliacao-memo-usememo-usecallback]] | Algoritmo de reconciliação demonstrado no React DevTools Profiler (renderizar ≠ tocar o DOM real); `React.memo` e as 4 situações onde compensa; igualdade referencial/shallow compare quebrando `memo` com funções e objetos recriados; `useCallback` com forma funcional de setState para remover dependências; `useMemo` para cálculo caro e para estabilizar referência de objetos |
+| [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] | Renato Augusto, continuação da playlist de System Design: sharding de banco de dados de ponta a ponta — escolha de shard key (com dois exemplos de má distribuição: `created_at` e faixas fixas de `user_id`), hash-based sharding com módulo passo a passo, consistent hashing, problema da celebridade, cross-shard operations resolvido com cache, transações distribuídas resolvidas com Saga, e a tese de que sharding pressupõe decomposição por DDD/microsserviços |
+| [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] | Vídeo de ponta a ponta sobre autenticação moderna: authn vs. authz, password hashing (work factor, salt), erros de login (mensagens genéricas, rate limiting, SQLi), sessões (session fixation, invalidação ao trocar senha, Redis), JWT (HMAC vs. RSA/ECDSA, rotação de refresh token), OAuth/PKCE (open redirect, state), OIDC (nonce, escopos), MFA (step-up authentication), passkeys e CORS mal configurado |
 | [[wiki/sources/ha-vs-ft-alta-disponibilidade-tolerancia-a-falha]] | Aula curta: distinção entre HA (topologia ativo-passivo — banco primário/secundário com failover e janela de indisponibilidade durante o switch) e Tolerância a Falha (topologia ativo-ativo — nós idênticos já servindo tráfego em paralelo, sem janela perceptível); FT não é 100% de disponibilidade (retry após erro pontual já cai no lado saudável) e custa estruturalmente mais que HA |
 | [[wiki/sources/rto-rpo-recovery-time-point-objective]] | Aula curta: RTO (tempo de recuperação) e RPO (dado tolerável de perda) como indicadores focados em desastre que devem ser definidos a partir do negócio antes da arquitetura — exemplo de custo de downtime ($1.000/minuto) e tolerância a RPO radicalmente diferente entre sistema financeiro, e-commerce e microsserviço de catálogo |
 | [[wiki/sources/sre-capacidade-observabilidade-confiabilidade-custo]] | Aula introdutória: cinco pilares de "sucesso" na visão de um SRE — planejamento de capacidade (alimentado por observabilidade), observabilidade (traceability fim-a-fim), otimização de custo (às vezes gastar mais para perder menos), Release Engineering (estratégias de deploy) e segurança; fecha com confiabilidade como guarda-chuva (consistência, durabilidade, tolerância a falhas, previsibilidade, disponibilidade de recursos) |
@@ -152,6 +158,7 @@ date_updated: 2026-08-03
 | [[wiki/sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]] | Gatekeeper centraliza entrada, Valet Key emite credenciais temporárias, Token Relay propaga identidade — segurança nasce no design da arquitetura |
 | [[wiki/sources/papinho-tech-solo-aprender-a-aprender]] | Entender ≠ aprender — EAD cria ilusão de fluência; autoconsciência de como você aprende é a variável que o professor não controla |
 | [[wiki/sources/design-pattern-proxy]] | Proxy intercepta comunicação entre cliente e objeto real — cache, auth, log sem tocar na classe original nem no Controller |
+| [[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] | Três estágios de acoplamento via refatoração de um jogo em JS — tudo misturado → Factory com chamada estática → Observer sem conhecimento estático; heurística "de quem é essa linha?" |
 | [[wiki/sources/custo-tokens-portugues-vs-ingles]] | Português custa 62% mais tokens que inglês no Anthropic — BPE treinado em corpus inglês é a causa; impacto direto no CLAUDE.md e specs |
 | [[wiki/sources/product-engineer-vale-do-silicio-2026]] | Relato do Vale do Silício: o Product Engineer constrói a coisa que constrói a coisa — duas faces (senso de produto + harness), 40-50% dos usuários do Cursor não são devs |
 | [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]] | Progressão incremental de aprendizado em 3 estágios; over-engineering ("verde neném"); otimização prematura é a raiz de todo mal (Knuth) |
@@ -190,6 +197,8 @@ date_updated: 2026-08-03
 | [[wiki/sources/consumer-driven-contracts-martin-fowler]] | Ian Robinson (2006), publicado no site de Fowler mas não escrito por ele: cunha Consumer-Driven Contracts — modelo de três camadas (Provider/Consumer/Consumer-Driven Contract) e o Must Ignore pattern de extensibilidade de schema |
 | [[wiki/sources/gate-de-qualidade-definicoes-formais]] | Três definições formais de Quality Gate da literatura (checklist/aprovação por gate, milestone com critérios pré-definidos, ponto de verificação de Schneider) e suas características estruturais: critérios de entrada/saída, disparo por critério (não data), resultado binário, gates em paralelo |
 | [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] | Quality gate com padrão ratchet (baseline congelada só pode melhorar/empatar) no projeto Strawberry; babysitting de PR pelo próprio agente de IA; pipeline de CI real (npm audit em dois níveis, jscpd para duplicação); comentários no código como contexto recuperável por agentes via grep |
+| [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] | Uncle Bob não lê mais código de agentes: debate função-pequena vs. módulo-profundo com Ousterhout ganha dado empírico; grepability como razão real para quebrar funções; teto de ~1000 linhas por arquivo ligado ao tool call; harness (unit test, cobertura, mutation test, Gherkin, métrica) como o que sustenta não ler código |
+| [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] | Segundo vídeo de reação a Uncle Bob sobre não revisar código de agentes: quatro gates concretos de CI — complexidade ciclomática (CCN 1–20), cobertura + mutation testing com `mutmut` (400 mutações, 50 sobreviventes), limite de 300 linhas por arquivo, dependency structure analysis (import circular, camadas invertidas, módulo de API vs. implementação) |
 | [[wiki/sources/iso-27001-dicionario-programador]] | SGSI organizado em torno da tríade CIA; Anexo A 2022 com 93 controles em 4 temas; controles A.8.28/A.5.15/A.5.8/A.8.25/A.5.3 relevantes para devs; Policy as Code (OPA/Gatekeeper) como implementação; ISO 42001 para governança de IA |
 | [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] | Tipos de load balancer (hardware/software/cloud), por que AWS/Azure separam LB de camada 4 e 7, e algoritmos de balanceamento (Round Robin, Weighted, Least Connections, Least Time, Sticky) com demo prática em Nginx |
 | [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] | "Operador de CRUD" vs. engenheiro — o mundo debaixo do CRUD (redes, Bluetooth, streams, mobile, banco de dados); IA entrega o fácil, não o simples; repertório é a cola que a IA não substitui |
@@ -264,6 +273,9 @@ date_updated: 2026-08-03
 | [[wiki/sources/escalabilidade-horizontal-vertical-custo-grafico]] | Aula curta e introdutória: diferença horizontal/vertical via analogias visuais (horizonte vs. imagem esticada) e exemplo gráfico de custo — horizontal permite adicionar exatamente a capacidade necessária (um servidor a mais), vertical em cloud providers costuma forçar dobrar o tier da instância, gerando capacidade ociosa; mais réplicas menores aumentam resiliência |
 | [[wiki/sources/sre-sli-slo-sla]] | SRE trata confiabilidade como problema de engenharia: SLI mede, SLO define meta interna, SLA é contrato externo com margem de segurança, Error Budget governa velocidade vs. estabilidade; inclui alerting por burn rate e template de blameless post-mortem |
 | [[wiki/sources/slo-sli-sla-exemplo-ecommerce]] | Aula curta e didática: a diferença entre SLO e SLA não está no número prometido, mas em quem são as partes do acordo — mesma promessa de disponibilidade é SLO entre times da mesma empresa e vira SLA quando o acordo cruza a fronteira entre empresas distintas, com consequência contratual |
+| [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]] | Transcrição de vídeo: recria o mecanismo central do Zustand (Observer + Map + useState/useEffect) em ~43 linhas de JS puro, sem Provider, demonstrado com color picker sincronizado em 3 pontos da árvore |
+| [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] | RPI + Spec-Driven amarrados como resposta ao mesmo problema (janela ocupada = mais alucinação); breakdown de tasks executado com 4 subagentes em paralelo; artefato de "estado" pós-implementação para continuidade entre janelas |
+| [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] | Bernardo Lobato: cinco tecnologias fora do mainstream de hype que ainda sustentam sistemas críticos — SOAP (WSDL, contratos rígidos, NF-e), XML (auge corporativo pré-JSON), ESB (barramento central pré-microsserviços, "Erroneous Spaghetti Box"), jQuery ("write less, do more", ainda mantido em 2026) e COBOL (1959, sistema financeiro mundial, Pix, padrão atualizado em 2023); tese central: o ciclo de hype da comunidade não acompanha o ritmo real de obsolescência |
 
 ## Concepts
 
@@ -280,6 +292,9 @@ date_updated: 2026-08-03
 | [[wiki/concepts/openid-connect]] | Camada de autenticação sobre OAuth 2.0 — ID Token (JWT) verificável via JWKS, base do "Entrar com Google" |
 | [[wiki/concepts/sso-single-sign-on]] | Autenticar uma vez num Identity Provider, todos os sistemas confiam — SAML legado vs. OIDC moderno |
 | [[wiki/concepts/sessoes-http-cookies]] | Sessão stateful com armazenamento central (Redis) — dependência única que o JWT stateless elimina |
+| [[wiki/concepts/session-fixation]] | Atacante planta um session ID conhecido antes do login; regenerar o ID pós-login é a defesa |
+| [[wiki/concepts/open-redirect]] | Validação frouxa da `redirect_uri` no OAuth permite ao atacante desviar o `authorization_code` para domínio próprio |
+| [[wiki/concepts/step-up-authentication]] | MFA só no login não protege ações sensíveis pós-sessão — reautenticar o segundo fator antes de ações de alto risco |
 
 ### Onboarding & Aprendizado de Codebase
 
@@ -455,6 +470,10 @@ date_updated: 2026-08-03
 | [[wiki/concepts/property-based-testing]] | Bombardeia função com inputs aleatórios/concorrentes e verifica invariante — eficaz contra race conditions geradas por IA |
 | [[wiki/concepts/adaptive-thinking]] | Modelo decide sozinho quanto "pensar"; hipótese de que remove controle do usuário para gerenciar custo de inferência |
 | [[wiki/concepts/determinismo-vs-probabilismo-em-ia]] | LLM tokeniza e responde por probabilidade, não lê linha a linha; tarefas que exigem mesmo output sempre (juros, impostos, folha) precisam de software determinístico, não julgamento de modelo |
+| [[wiki/concepts/codigo-grepavel]] | Nomear funções para serem achadas por busca textual, não só lidas em sequência — a razão real por trás de -35% tokens ao quebrar código denso |
+| [[wiki/concepts/complexidade-ciclomatica]] | CCN: conta caminhos de execução dentro de uma função; LLMs geram funções com muitos `if`s aninhados; gate de CI com limite bloqueante (ex.: 1–20), medido via SonarQube |
+| [[wiki/concepts/codebase-legibilidade-ia]] | Código bom para humano é bom para IA; navigation paradox, teto prático de linhas por arquivo ligado ao tool call |
+| [[wiki/concepts/navigation-paradox]] | Contexto maior não elimina navegação estrutural — desloca a falha de "não cabe" para "não foi notado"; DI containers como pior caso |
 
 ### Perfil Profissional & Product Engineering
 
@@ -691,6 +710,8 @@ date_updated: 2026-08-03
 | [[wiki/concepts/algoritmos-e-estruturas-de-dados]] | A fundação que separa amadores de profissionais — DSA antes de qualquer framework |
 | [[wiki/concepts/algoritmos-de-ordenacao]] | Bubble Sort O(n²), Insertion Sort O(n²)/O(n) melhor caso, Merge Sort O(n log n) estável — não há um melhor universal |
 | [[wiki/concepts/algoritmos-de-busca]] | Linear Search O(n) vs Binary Search O(log n) — a busca binária exige dados já ordenados |
+| [[wiki/concepts/bucket-sort]] | Ordenar sem comparar: distribuir elementos em "baldes" indexados por um valor com teto conhecido (ex.: frequência ≤ n) — O(n) em vez de O(n log n) |
+| [[wiki/concepts/two-pointer]] | Dois índices móveis sobre a mesma estrutura em vez de recriar sub-arrays a cada chamada recursiva — implementação real de binary search |
 | [[wiki/concepts/algoritmos-de-grafo]] | DFS, BFS, Dijkstra e A* — do backtrack ingênuo ao roteamento com heurística do Google Maps |
 | [[wiki/concepts/repertorio]] | Acúmulo de experiência prática que gera reconhecimento de padrões e intuição — o terceiro pilar da competência |
 | [[wiki/concepts/string]] | Slice de bytes + charset + encoding — imutável porque alterar bytes quebra UTF-8 silenciosamente |
@@ -769,6 +790,7 @@ date_updated: 2026-08-03
 | [[wiki/concepts/cdn]] | Rede de edge servers geográficos — cache global da camada web |
 | [[wiki/concepts/auto-scaling]] | Adição/remoção automática de instâncias por regras de métricas |
 | [[wiki/concepts/sharding]] | Divisão de banco em múltiplos shards — escala writes e armazenamento |
+| [[wiki/concepts/consistent-hashing]] | Anel virtual de shards — minimiza dados movidos ao adicionar/remover nós, evitando o rebalanceamento total do hash-based sharding simples |
 | [[wiki/concepts/replicacao-de-banco]] | Cópias do banco para leitura — escala reads e aumenta disponibilidade |
 | [[wiki/concepts/gargalo]] | Ponto mais lento da cadeia — identificar antes de escalar qualquer coisa |
 | [[wiki/concepts/cap-theorem]] | Consistência vs Disponibilidade vs Partição — o trade-off central de sistemas distribuídos |
@@ -778,6 +800,21 @@ date_updated: 2026-08-03
 | [[wiki/concepts/large-scale-architecture]] | Escala e complexidade são eixos independentes de uma arquitetura — large scale foca em capacidade/dividir-para-conquistar, não necessariamente em interdependência |
 | [[wiki/concepts/arquitetura-complexa]] | Interdependência e poliglotismo, típico de legado enterprise que convive com o passado (mainframe → AS/400 → Linux → Windows) — sem métrica objetiva de classificação |
 | [[wiki/concepts/planejamento-de-capacidade]] | Estimar recursos futuros a partir dos dados da observabilidade — inclui o contra-intuitivo "gastar mais para perder menos" e disponibilidade como capacidade de recurso, não só uptime |
+
+### AWS & Cloud
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/ec2]] | Building block básico de compute da AWS — paga por tempo de máquina alocada, não por computação realizada |
+| [[wiki/concepts/amazon-s3]] | Object storage barato e quase ilimitado em volume, mas caro se acessado com muita frequência — não é banco de dados |
+| [[wiki/concepts/ecs]] | Orquestração de containers/EC2 em cluster — simplifica escalar por demanda, mas escala custo junto |
+| [[wiki/concepts/aws-fargate]] | Containers serverless — sem gerenciar EC2 diretamente, custo escala com uso mas pode ficar caro por workload |
+| [[wiki/concepts/elastic-beanstalk]] | PaaS da AWS — configuração mais simples e custo mais atrativo que ECS manual para apps web simples, lock-in forte |
+| [[wiki/concepts/aws-lambda]] | Menor unidade serverless — paga pelo tempo total de execução, incluindo espera ociosa por I/O, não só CPU |
+| [[wiki/concepts/step-functions]] | Coordenação de workflow como máquina de estados — maior vendor lock-in entre os serviços do toolkit essencial |
+| [[wiki/concepts/rds]] | Banco relacional gerenciado da AWS — só SQL, não cobre NoSQL |
+| [[wiki/concepts/dynamodb]] | NoSQL key-value da AWS — hash key + sort key, latência muito baixa, Global Tables para escala mundial |
+| [[wiki/concepts/vendor-lock-in-cloud]] | Quanto mais serviços proprietários de um provedor um sistema usa, mais caro migrar depois — gradiente de EC2 (baixo) a Step Functions (extremo) |
 
 ### Fundamentos de Backend (Request/Response ao Deploy)
 
@@ -900,6 +937,11 @@ date_updated: 2026-08-03
 | [[wiki/concepts/microsservicos]] | Decomposição por bounded context, não por camada técnica; monolito modular é o ponto de partida correto para ~90% dos casos; estudar o estilo funciona como eixo de aprendizado que amarra circuit breaker, saga, observabilidade e mensageria |
 | [[wiki/concepts/database-per-service]] | Banco isolado por microsserviço resolve deadlock de banco compartilhado, mas cria problema de atomicidade entre serviços — motiva 2PC/Saga |
 | [[wiki/concepts/event-driven-architecture]] | Comunicação via eventos publicados/reagidos em vez de chamadas síncronas — base do Saga coreografado e da propagação write→read em CQRS |
+| [[wiki/concepts/soap]] | Protocolo XML de 1998 com contrato rígido via WSDL; sobrevive em bancos, seguradoras e NF-e mesmo após REST+JSON dominar APIs novas |
+| [[wiki/concepts/xml-extensible-markup-language]] | Formato de dados estruturado de 1998, espinha dorsal da tecnologia corporativa pré-JSON; ainda essencial em Office, Java, config e NF-e |
+| [[wiki/concepts/esb-enterprise-service-bus]] | Barramento central de integração pré-microsserviços — "smart endpoints, dumb pipes" nasceu como reação a ele; ainda essencial em empresas com grande legado |
+| [[wiki/concepts/jquery]] | Biblioteca JS de 2006 que unificou DOM/eventos entre navegadores; raramente escolhida hoje mas ainda mantida ativamente em 2026 |
+| [[wiki/concepts/cobol]] | Linguagem de 1959 que sustenta o sistema financeiro mundial (Pix incluso); modernização se dá pela borda (API/filas), não por reescrita |
 
 ### Boas Práticas de Engenharia
 
@@ -961,6 +1003,7 @@ date_updated: 2026-08-03
 | [[wiki/concepts/secure-by-default]] | Estado padrão é o mais seguro — fail-secure, confirmação explícita para ações destrutivas |
 | [[wiki/concepts/sql-injection]] | Input não sanitizado executado como SQL — Bobby Tables; prevenção: queries parametrizadas |
 | [[wiki/concepts/xss]] | Injeção de JavaScript no browser da vítima — mesma classe do SQLi, contexto HTML/JS |
+| [[wiki/concepts/cors-misconfiguration]] | `Access-Control-Allow-Origin: *` + `Allow-Credentials: true` permite requisições autenticadas de qualquer site na internet |
 | [[wiki/concepts/timing-attack]] | Tempo de resposta como canal de informação — variação de latência revela segredos |
 | [[wiki/concepts/sast]] | Análise estática de segurança no código — detecta padrões vulneráveis antes do deploy |
 | [[wiki/concepts/secrets-management]] | Credenciais nunca no código — .env local, GitHub Secrets/AWS SM em produção; caso real de agente de IA autônomo encontrando e explorando credencial vazada sem intervenção humana; `.env` publicamente servido como ponto de entrada de um pentest real |
@@ -1031,6 +1074,7 @@ date_updated: 2026-08-03
 | [[wiki/concepts/microfrontend-baseado-em-rotas]] | Proxy reverso + builds separados por módulo via libs de monorepo — maior parte dos benefícios de desacoplamento com a menor complexidade adicionada |
 | [[wiki/concepts/microfrontends-parciais]] | Múltiplos frameworks coexistindo na mesma tela via Shadow DOM/eventos — desacoplamento alto vendido, custo real em performance/CI-CD/versionamento/governança |
 | [[wiki/concepts/monorepo-frontend]] | Apps consomem libs/packages compartilhados como dependências instaláveis — dependência flui numa via só, apps nunca são importadas por packages |
+| [[wiki/concepts/zustand]] | Estado global sem Provider — módulo fora da árvore + Hook de sincronização; o mecanismo central é um Observer recriável em ~40 linhas de JS puro |
 
 ### Pipeline de Renderização do Browser
 
@@ -1055,6 +1099,8 @@ date_updated: 2026-08-03
 |---|---|
 | [[wiki/concepts/derived-state]] | Se dá para calcular a partir de estado/props existentes, não é estado — calcula na renderização em vez de sincronizar via `useEffect` |
 | [[wiki/concepts/stale-closure]] | `useEffect` com array de dependências vazio congela variáveis da primeira renderização — closure captura variáveis, não valores |
+| [[wiki/concepts/react-memo]] | Bloqueia a entrada no fluxo de renderização antes mesmo de gerar Virtual DOM — só compensa em componente puro, que renderiza muito, com props estáveis, e de porte médio/grande |
+| [[wiki/concepts/shallow-compare]] | `{} === {}` é `false` — objeto/array/função recriados no corpo do componente quebram `memo` mesmo com conteúdo idêntico, porque a comparação é por referência, não por valor |
 
 ### Internals de Frameworks Frontend (React/Vue/Angular)
 
@@ -1097,6 +1143,10 @@ date_updated: 2026-08-03
 |---|---|
 | [[wiki/concepts/pattern-recognition]] | Capacidade humana de detectar repetições — base do aprendizado por exposição |
 | [[wiki/concepts/design-patterns]] | Catálogo de soluções nomeadas — útil só depois de já ter visto os padrões na prática |
+| [[wiki/concepts/observer-pattern]] | Dependência um-para-muitos com notificação automática — terceiro estágio de desacoplamento, componentes que não se conhecem nem estaticamente |
+| [[wiki/concepts/factory-pattern]] | Centraliza a criação de objetos — segundo estágio de desacoplamento, isola implementação mas mantém chamada estática explícita |
+| [[wiki/concepts/abstract-factory]] | Cria famílias de objetos relacionados, não só um tipo — variante do Factory Method |
+| [[wiki/concepts/dependency-injection]] | Dependência recebida de fora em vez de criada internamente — torna acoplamento flexível/testável sem eliminá-lo |
 | [[wiki/concepts/mapper-pattern]] | Classe estática por camada que converte entidade de domínio para o formato de outra camada (Prisma, HTTP) — isola o acoplamento à tecnologia, não ao domínio |
 | [[wiki/concepts/objeto-vs-estrutura-de-dados]] | Uncle Bob: objeto = funções sobre dados implícitos/encapsulados; estrutura de dados = dados expostos operados por funções externas — conceitos literalmente opostos, não sobrepostos |
 | [[wiki/concepts/clean-architecture]] | Regra de dependência apontando para dentro; fluxo de aplicação web camada a camada — Controller empacota Input Data, Use Case orquestra Entities, Presenter reempacota em ViewModel |
@@ -1126,6 +1176,9 @@ date_updated: 2026-08-03
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/amazon-web-services]] | Maior provedor de cloud do mundo — infraestrutura global, toolkit essencial de compute/deploy/dados (EC2, Lambda, ECS, RDS, DynamoDB...) e tema recorrente de vendor lock-in quanto mais serviços proprietários um sistema adota |
+| [[wiki/entities/w3c]] | Padronizou SOAP e tornou XML recomendação oficial em 1998 |
+| [[wiki/entities/john-resig]] | Criador do jQuery (2006) — resolveu a fragmentação de DOM/JavaScript entre navegadores |
 | [[wiki/entities/pulsar-saas]] | SaaS pessoal ligado a um desafio de estudos gratuito de 100 dias no Instagram — caso real de autopentest guiado por IA |
 | [[wiki/entities/geraldo-alcantara]] | Pentester e criador de conteúdo — demonstrações de exploração em ambiente controlado, incluindo cadeia completa contra loja construída via vibe coding |
 | [[wiki/entities/the-primeagen]] | Engenheiro de software sênior na Netflix, criador de conteúdo (YouTube, em inglês) — reagiu a um vídeo de Theodor defendendo programar "do jeito difícil" |
@@ -1135,6 +1188,7 @@ date_updated: 2026-08-03
 | [[wiki/entities/edgar-codd]] | IBM, 1970: paper do modelo relacional e independência de dados — fundamento de tudo que veio depois |
 | [[wiki/entities/rabbitmq]] | Message broker AMQP — fila que viabiliza Saga Pattern coreografado sem gargalo de coordenação síncrona |
 | [[wiki/entities/rsa-security]] | Criadora do SecurID — token de hardware que popularizou o segundo fator de autenticação nos anos 90 |
+| [[wiki/entities/leetcode]] | Plataforma de prática de algoritmos e formato de referência para entrevistas técnicas de coding |
 | [[wiki/entities/ietf]] | Padronizou HOTP (RFC 4226) e TOTP (RFC 6238), tirando a autenticação por OTP das mãos de fornecedores proprietários |
 | [[wiki/entities/sakana-ai]] | Empresa japonesa de IA — Fugo, pool de modelos que superou Fable 5 e alguns benchmarks do Mitos preview em cybersegurança |
 | [[wiki/entities/alok-kanojia]] | Psiquiatra formado em Harvard (canal HealthyGamer/"Dr. K") — fonte primária citada sobre o impacto de jogos no cérebro e problemas de escopo aberto vs. fechado |

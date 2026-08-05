@@ -4,7 +4,7 @@ title: "Escalabilidade Vertical"
 aliases: ["vertical scaling", "scale up", "upgrade de servidor"]
 date_created: 2026-06-26
 date_updated: 2026-08-03
-source_count: 4
+source_count: 5
 tags: [system-design, escalabilidade, infra, performance, tradeoff]
 skill: tech-mentor-system-design
 status: draft
@@ -58,3 +58,4 @@ Vertical online (aumentar CPU/memória sem desligar) existe via hypervisor há b
 - [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] — reforça que escalar horizontalmente só faz sentido depois de esgotar a vertical
 - [[wiki/sources/10-conceitos-fundamentais-backend]] — vertical descrita como "colocar uma máquina mais potente com mais CPU mais memória mais capacidade na mesma instância"
 - [[wiki/sources/escalabilidade-horizontal-vertical-custo-grafico]] — exemplo gráfico de desperdício quando cloud provider força dobrar o tier da instância; vertical online existe via hypervisor mas redução é rara e indisponibilidade ainda é o caso comum
+- [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — escalar o banco verticalmente (+ índices, cache, read replicas) como a tática recomendada antes de sharding, até o teto físico de hardware

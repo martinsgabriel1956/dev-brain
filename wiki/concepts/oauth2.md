@@ -3,8 +3,8 @@ type: concept
 title: "OAuth 2.0"
 aliases: ["OAuth", "OAuth 2.0", "delegação de acesso", "authorization code flow"]
 date_created: 2026-07-27
-date_updated: 2026-07-30
-source_count: 3
+date_updated: 2026-08-03
+source_count: 4
 tags: [oauth2, autorizacao, autenticacao, seguranca, delegacao-de-acesso]
 skill: tech-mentor-security
 status: draft
@@ -38,6 +38,14 @@ OAuth introduz **delegação de acesso com escopo limitado**: o app recebe um to
 
 **PKCE** (Proof Key for Code Exchange): obrigatório para SPAs e apps mobile, previne interceptação do `authorization_code`. **Implicit Flow** está deprecated — expunha tokens diretamente na URL. Ver [[wiki/concepts/pkce]] para o mecanismo completo (`code_verifier`/`code_challenge`) e por que o Implicit Flow foi abandonado.
 
+## Open Redirect: Validar a `redirect_uri` Caractere por Caractere
+
+Se o Authorization Server não valida a `redirect_uri` de forma exata — aceitando wildcard ou comparação parcial —, um atacante consegue trocar o domínio de retorno e receber o `authorization_code` no próprio servidor. Ver [[wiki/concepts/open-redirect]] para o mecanismo completo do ataque e a mitigação.
+
+## O Parâmetro `state` Contra CSRF
+
+Sem um `state` aleatório vinculado à sessão do usuário e verificado no retorno, o fluxo OAuth fica vulnerável a CSRF: o atacante inicia um login com a própria conta e induz a vítima a completar o callback — se a vítima não perceber, a conta do atacante fica vinculada ao perfil dela. `state` é o que garante que o callback recebido corresponde a um fluxo que o próprio usuário iniciou.
+
 ## Device Flow
 
 Variante para dispositivos sem browser (CLIs, Smart TVs): o dispositivo mostra um código curto, o usuário abre o browser em outro aparelho para autorizar, e o dispositivo faz polling até receber o token.
@@ -52,9 +60,11 @@ OAuth responde "o que este app pode fazer" (autorização), mas não foi desenha
 - [[wiki/concepts/jwt]] — formato comum do access token emitido no fluxo OAuth
 - [[wiki/concepts/sso-single-sign-on]] — OAuth/OIDC é a base técnica do SSO moderno via login social
 - [[wiki/concepts/token-relay-pattern]] — propagação do access token por serviços internos após obtido via OAuth
+- [[wiki/concepts/open-redirect]] — ataque específico contra validação frouxa da redirect_uri
 
 ## Key Sources
 
 - [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]
 - [[wiki/sources/pkce-proof-key-code-exchange-spa-mobile]] — detalha por que o Implicit Flow falhou e como o PKCE resolve, com foco em SPA/mobile
 - [[wiki/sources/rfc-7636-pkce-oauth-public-clients]] — texto normativo do RFC que estende o Authorization Code Grant do OAuth 2.0 com PKCE
+- [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — open redirect por validação frouxa de redirect_uri; state contra CSRF no fluxo de login social

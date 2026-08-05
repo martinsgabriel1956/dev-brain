@@ -3,8 +3,8 @@ type: concept
 title: "Autenticação e Autorização"
 aliases: ["authn authz", "authentication vs authorization", "quem é você vs o que você pode fazer"]
 date_created: 2026-07-09
-date_updated: 2026-07-31
-source_count: 3
+date_updated: 2026-08-03
+source_count: 4
 tags: [autenticacao, autorizacao, seguranca, backend, jwt, sessao, rbac]
 skill: tech-mentor-backend
 status: stub
@@ -20,6 +20,14 @@ Duas perguntas diferentes que todo backend precisa responder antes de executar q
 | **Autorização** | O que você pode fazer? | Usuário autenticado aprova o próprio pagamento |
 
 Estar logado (autenticado) não implica ter permissão (autorizado) para uma ação específica — por exemplo, aprovar um pagamento. Tratar as duas coisas como sinônimos é uma fonte comum de falha de segurança.
+
+## A Analogia da Portaria
+
+Você mostra o documento na portaria de um prédio comercial — a portaria confirma que você é você: autenticação. Depois, ela te dá um crachá dizendo qual andar você pode acessar: autorização. Primeiro se prova a identidade, depois o sistema decide o que vai liberar — são etapas sequenciais, não sinônimos.
+
+## Enumeração de Contas Via Mensagem de Erro
+
+Retornar mensagens de erro diferentes para e-mail e senha no login é uma falha de autenticação sutil: se o servidor responde "usuário não encontrado", o atacante aprende que o e-mail não está cadastrado; se responde "senha incorreta", aprende que o e-mail existe e só falta adivinhar a senha. A mensagem correta é sempre genérica ("e-mail ou senha incorretos"), sem vazar qual dos dois campos estava errado.
 
 ## Na prática
 
@@ -48,6 +56,7 @@ O backend recebe uma credencial — cookie de sessão, JWT, token de API — que
 
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]]
 - [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] — chave de integração de fator único aceita como credencial completa de login
+- [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — metáfora da portaria e enumeração de contas via mensagem de erro genérica
 
 ## Key sources
 

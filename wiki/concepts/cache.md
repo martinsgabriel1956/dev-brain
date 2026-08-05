@@ -3,8 +3,8 @@ type: concept
 title: "Cache"
 aliases: ["caching", "cache de aplicação"]
 date_created: 2026-06-26
-date_updated: 2026-07-27
-source_count: 6
+date_updated: 2026-08-03
+source_count: 7
 tags: [cache, performance, redis, arquitetura, backend, grande-rollback]
 skill: tech-mentor-backend
 status: stable
@@ -64,6 +64,10 @@ Adicionar cache aumenta a complexidade: [[tradeoff-de-cache]]. É necessário pe
 - Memcached — alternativa mais simples ao Redis (sem persistência, sem tipos ricos)
 - In-process LRU — L1 local ao processo (node-lru-cache, Guava Cache)
 
+## Cache Como Solução para Cross-Shard Fan-Out
+
+Em bancos [[wiki/concepts/sharding|shardeados]], queries agregadas simples (ex.: "10 posts mais populares") viram *fan-out*: consultar todos os shards, trazer resultados à memória e agregar — latência alta mesmo para query conceitualmente trivial. A solução recomendada é armazenar o resultado agregado em cache com TTL (minutos a horas, dependendo da regra de negócio), evitando repetir o fan-out a cada requisição. Ver [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]].
+
 ## Key Sources
 
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
@@ -72,3 +76,4 @@ Adicionar cache aumenta a complexidade: [[tradeoff-de-cache]]. É necessário pe
 - [[wiki/sources/10-conceitos-fundamentais-backend]] — framing didático de cache hit/miss; a pergunta central não é "usar cache ou não" mas "quando essa resposta deixa de ser verdade"
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — demonstração num simulador interativo: mesmo tráfego, banco de dados saturado a 115% cai drasticamente ao conectar cache, porque a maioria das leituras de um sistema de reserva de hotel repete os mesmos quartos populares (read-heavy); IA avaliadora do exercício aponta cache invalidation como lacuna não tratada
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — em entrevista sênior, "adicionar cache" como escolha de escala é seguido de aprofundamento esperado sobre o tipo (ex.: cache-aside) — não basta citar a peça, é preciso justificar a estratégia
+- [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — cache como solução recomendada para cross-shard operations (fan-out) em bancos shardeados

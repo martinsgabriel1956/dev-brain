@@ -3,8 +3,8 @@ type: concept
 title: "Strangler Fig Pattern"
 aliases: ["strangler pattern", "figueira mata-pau", "migração incremental"]
 date_created: 2026-08-03
-date_updated: 2026-08-03
-source_count: 1
+date_updated: 2026-08-04
+source_count: 2
 tags: [strangler-fig, migração, legado, proxy, cdc, feature-flags, arquitetura]
 skill: tech-mentor-system-design
 status: stub
@@ -41,9 +41,14 @@ Esse mesmo padrão de coexistência é o mecanismo concreto por trás da etapa "
 
 ## Relacionado
 
-[[wiki/concepts/ciclo-de-mudanca-de-arquitetura]] · [[wiki/concepts/ciclo-da-desgraca-software]] · [[wiki/concepts/refactor-vs-rewrite-matrix]] · [[wiki/concepts/outbox-pattern]]
+[[wiki/concepts/ciclo-de-mudanca-de-arquitetura]] · [[wiki/concepts/ciclo-da-desgraca-software]] · [[wiki/concepts/refactor-vs-rewrite-matrix]] · [[wiki/concepts/outbox-pattern]] · [[wiki/concepts/esb-enterprise-service-bus]] · [[wiki/concepts/cobol]]
+
+## Por que sistemas em COBOL raramente são reescritos por inteiro
+
+O caso mais extremo de "legado que não se reescreve" é justamente sistemas [[wiki/concepts/cobol|COBOL]] em bancos e no sistema financeiro: em vez de reescrita, a estratégia dominante é expor funcionalidades por API/filas de mensagens enquanto o núcleo de regra de negócio permanece intacto — o mesmo espírito do Strangler Fig, mesmo quando o time não usa esse nome para o processo.
 
 ## Key Sources
 
 - [[wiki/sources/strangler-fig]]
 - [[wiki/sources/ciclo-de-mudanca-de-arquitetura]]
+- [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — COBOL e SOAP como exemplos reais de "modernizar a borda, manter o núcleo legado" em vez de reescrita total

@@ -3,8 +3,8 @@ type: concept
 title: "Code Review"
 aliases: ["revisão de código", "pull request review", "PR review"]
 date_created: 2026-07-03
-date_updated: 2026-07-29
-source_count: 10
+date_updated: 2026-08-04
+source_count: 12
 tags: [code-review, qualidade, carreira, júnior, mentoria, grill-me, babysitting-de-agentes, quality-gate, under-engineering]
 skill: tech-mentor-leadership
 status: draft
@@ -70,6 +70,10 @@ A recomendação oficial da Anthropic para o [[wiki/entities/claude-code]] é ma
 
 O critério "regra de negócio primeiro" e a exigência de pull request/versionamento não se limitam a código de aplicação: [[wiki/concepts/database-migration|migrations de banco de dados]] deveriam passar pelo mesmo processo. Rodar DDL manualmente contra o banco (SSH direto na cloud, sem PR nem git) quebra o requisito básico de auditabilidade e reprodutibilidade que qualquer outra mudança de código já tem — mesmo quando quem executa é uma pessoa experiente administrando o banco. Ver [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]].
 
+## De "Estilo Bonito" Para "Prova Objetiva": o Argumento Numérico por Trás da Mudança
+
+[[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] dá o argumento quantitativo por trás da mesma mudança já descrita acima (babysitting, humano como gargalo): se metade do diff médio de um PR já não é mais digitado por humano — a fonte cita um survey do Pragmatic Engineer com taxa de aceitação de código de IA entre 30% e 55%, crescente —, a pergunta que orienta a revisão deixa de ser sobre estilo ("esse for loop está bonito?") e passa a ser sobre prova objetiva: o código passa em critérios que rodam no CI em segundos, sem exigir leitura humana? Isso não substitui os critérios já documentados nesta página (regra de negócio primeiro, entendimento compartilhado) — desloca o *primeiro* filtro, antes da revisão humana começar, para os quatro gates concretos descritos em [[wiki/concepts/quality-gate]] ([[wiki/concepts/complexidade-ciclomatica|complexidade ciclomática]], cobertura+[[wiki/concepts/teste-de-mutacao|mutation testing]], tamanho de módulo, [[wiki/concepts/acoplamento|estrutura de dependências]]).
+
 ## Relacionado
 
 - [[wiki/concepts/definicao-de-pronto]] — code review é um dos critérios de "pronto"
@@ -78,6 +82,10 @@ O critério "regra de negócio primeiro" e a exigência de pull request/versiona
 - [[wiki/concepts/red-flags-de-design]] — heurística concreta para o que procurar durante a revisão
 - [[wiki/concepts/divida-cognitiva]] — code review como checkpoint contra fragmentação de entendimento compartilhado em times com IA
 - [[wiki/concepts/rebase-vs-merge]] — rebase local antes do PR, merge para integrar
+
+## Ler por Categoria de Mudança, Não Tudo de Uma Vez
+
+[[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] propõe uma regra operacional para revisar código gerado por agentes em volume, como alternativa a ler cada PR por completo ou parar de ler completamente: escolher uma categoria de mudança (ex.: um CRUD de admin), ler todo PR daquela categoria, e quando o volume acumulado (a fonte estima ~30 PRs) gerar pouco ou nenhum feedback a dar — com o [[wiki/concepts/harness-de-qualidade|harness]] daquela área já confiável — marcar a categoria como pronta e avançar para a próxima. O objetivo não é parar de revisar, é reduzir a superfície de revisão manual conforme a confiança em cada fatia do sistema é conquistada, com um agente de code review ajudando durante todo o processo. Ver [[wiki/entities/uncle-bob]] para a citação original e [[wiki/concepts/harness-de-qualidade]] para o que precisa estar em pé antes de uma categoria poder ser considerada confiável.
 
 ## Key Sources
 
@@ -91,3 +99,5 @@ O critério "regra de negócio primeiro" e a exigência de pull request/versiona
 - [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]] — migrations de banco tratadas com o mesmo processo de PR/review que código de aplicação
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — catálogo completo dos 14 red flags do livro, checklist prático para revisão
 - [[wiki/sources/git-rebase-na-pratica]] — mecânica de rebase local usada para chegar a um histórico limpo antes do PR
+- [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — regra operacional de ler por categoria de mudança até acumular confiança, em vez de revisar tudo ou nada
+- [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — argumento quantitativo (taxa de aceitação de código de IA, dados de benchmark) para deslocar o primeiro filtro de revisão de estilo para prova objetiva em CI

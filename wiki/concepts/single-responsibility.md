@@ -3,8 +3,8 @@ type: concept
 title: "Single Responsibility Principle"
 aliases: ["SRP", "princípio da responsabilidade única", "single responsibility"]
 date_created: 2026-04-25
-date_updated: 2026-07-15
-source_count: 2
+date_updated: 2026-08-04
+source_count: 3
 tags: [single-responsibility, solid, software-design, clean-code]
 skill: tech-mentor-backend
 status: stub
@@ -41,7 +41,12 @@ Uma função pode orquestrar múltiplas operações e ainda ter responsabilidade
 - [[coesao]] — SRP é a diretriz que leva a alta coesão dentro de uma unidade
 - [[abstracao]] — separar responsabilidades cria as fronteiras naturais para abstrações
 
+## SRP em Nível de Arquivo, para um Agente
+
+[[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] aplica o mesmo critério ("uma razão para mudar") um nível acima da função — ao arquivo inteiro — sob a ótica de quem lê por tool call em vez de sequencialmente: um arquivo de 1000 linhas com um assunto só é uma leitura completa e aproveitável; o mesmo assunto picado em vários arquivos multiplica saltos (cada um uma chance de o agente perder o fio); e um arquivo de 1000 linhas com múltiplos assuntos desperdiça a maior parte da leitura em conteúdo irrelevante à tarefa. Ver [[wiki/concepts/codebase-legibilidade-ia]] para o teto prático de linhas por arquivo ligado ao limite de leitura por tool call.
+
 ## Key sources
 
 - [[wiki/sources/acoplamento-abstracao-estado]]
 - [[wiki/sources/design-pattern-adapter]] — classe que gera PDF via `new DomPdf()` direto tem duas razões para mudar (regra de negócio e API da lib externa); resolvido extraindo o [[wiki/concepts/adapter-pattern|Adapter]]
+- [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — SRP aplicado a nível de arquivo, sob a ótica de leitura por tool call em vez de leitura sequencial humana

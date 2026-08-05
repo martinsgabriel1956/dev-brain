@@ -3,8 +3,8 @@ type: entity
 title: "Uncle Bob (Robert C. Martin)"
 aliases: ["uncle bob", "robert c. martin", "robert cecil martin"]
 date_created: 2026-07-03
-date_updated: 2026-08-03
-source_count: 5
+date_updated: 2026-08-04
+source_count: 7
 tags: [clean-code, clean-architecture, solid, autor, quality-gate]
 skill: tech-mentor-backend
 status: stub
@@ -38,6 +38,20 @@ Quarta menção, em [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architec
 
 Quinta menção, em [[wiki/sources/arquitetura-limpa-na-pratica]]: o livro inteiro de Otávio Lemos é um tutorial prático em torno da Clean Architecture de Robert Martin, com um estudo de caso completo em TypeScript. Traz uma anedota pessoal do autor: um bate-papo com Robert Martin no canal do YouTube do próprio Otávio, no qual Martin defende que validação sintática de dados (formato de email, por exemplo) pode ficar em camadas mais externas — posição da qual Otávio conscientemente se desvia no livro, preferindo validar já na camada de Entidades para tornar o modelo mais autocontido.
 
+## Post no Twitter/X: "Não Leio Mais Nenhuma Linha de Código dos Meus Agentes"
+
+Sexta menção, em [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]]: post recente (segundo a fonte, "semana passada") em que Uncle Bob afirma não ler mais nenhuma linha de código escrita pelos seus agentes de IA — aparente contradição com o argumento central de *Clean Code* de que se lê muito mais código do que se escreve, logo ele deve ser extremamente legível. O vídeo resolve a aparente contradição argumentando que o leitor mudou (é o próprio agente que lê cada linha, toda vez), mas as mesmas regras de legibilidade seguem se aplicando a esse novo leitor.
+
+A parte central do post, segundo o autor da fonte, não é a frase de abertura e sim a segunda metade — a lista do que Uncle Bob faz **no lugar** de ler código: teste unitário, teste Gherkin, procedimento de QA, métrica de qualidade e mutation test ("vários outros"). Cada item citado pega um tipo de erro que os demais deixam passar — ver [[wiki/concepts/teste-de-mutacao]] e [[wiki/concepts/bdd]]. A fonte também traz uma nota de contexto pessoal citada pelo próprio Uncle Bob no Twitch: ele programa desde os anos 60, o que segundo o autor do vídeo explica a velocidade com que consegue confiar no próprio harness — resumida na frase "o direito de não ler código é conquistado, não copiado."
+
+**Nota de verificação**: assim como nas menções anteriores, a fonte não cita URL nem data exata do post — tratar a atribuição e a citação textual com a mesma cautela já registrada acima.
+
+## Segundo Post/Vídeo Sobre o Mesmo Tema: Quatro Técnicas de Gate de CI
+
+Sétima menção, em [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]]: um vídeo de reação diferente, mas ao mesmo tipo de post de Uncle Bob sobre não revisar código de agentes e confiar em métricas (cobertura, dependency structure, complexidade ciclomática, tamanho de módulo, mutation tests) — não fica claro se é o mesmo tweet da sexta menção ou um post distinto na mesma janela de tempo. Essa fonte foca menos no debate teórico (função pequena vs. módulo profundo) e mais em detalhar quatro gates de CI concretos e bloqueáveis a partir da mesma lista: [[wiki/concepts/complexidade-ciclomatica|complexidade ciclomática]] com limite (CCN 1–20), cobertura + [[wiki/concepts/teste-de-mutacao|mutation testing]] com `mutmut`, limite de tamanho de arquivo (300 linhas), e análise de [[wiki/concepts/acoplamento|estrutura de dependências]] (import circular, camadas invertidas, módulo de API vs. implementação). O autor fecha admitindo que sua concordância com Uncle Bob é motivada por uma limitação prática: gera ~10.000 linhas de código por dia e não consegue revisar esse volume manualmente.
+
+**Nota de verificação**: mesma cautela de atribuição das menções anteriores — sem URL nem data exata do post na fonte.
+
 ## Key Sources
 
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
@@ -45,3 +59,5 @@ Quinta menção, em [[wiki/sources/arquitetura-limpa-na-pratica]]: o livro intei
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — citação sobre análise estática em PR como gatilho para o setup de quality gate do autor
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — post de blog sobre objeto vs. estrutura de dados, e diagrama de cenário web do livro *Clean Architecture*
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — livro-tutorial inteiro construído em torno da Clean Architecture de Martin, incluindo anedota de bate-papo pessoal sobre onde validar dados de entrada
+- [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — post recente sobre não ler mais código de agentes, e o harness (testes, Gherkin, QA, métricas, mutation testing) que sustenta essa afirmação
+- [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — segundo vídeo sobre o mesmo tema, detalhando quatro gates de CI concretos (CCN, cobertura+mutation, tamanho de módulo, dependency structure)

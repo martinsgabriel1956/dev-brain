@@ -4,7 +4,7 @@ title: "DDD — Domain-Driven Design"
 aliases: ["domain-driven design", "ddd", "domínio"]
 date_created: 2026-05-31
 date_updated: 2026-08-03
-source_count: 6
+source_count: 7
 tags: [ddd, arquitetura, bounded-context, aggregate, domain-events, hexagonal]
 skill: tech-mentor-backend
 status: draft
@@ -70,6 +70,10 @@ Um Value Object (ex: `content` de uma `Notification`, validado e imutável no do
 
 [[wiki/sources/arquitetura-limpa-na-pratica]] formaliza uma distinção que costuma ficar implícita: **regras de negócio do domínio** são dados e políticas que existiriam mesmo sem o sistema (ex: em um empréstimo — principal, taxa, período, e as operações de pagar/aplicar juros/cobrar multa) e pertencem à camada de Entidades; **regras de negócio da aplicação** descrevem *como o sistema automatiza* essas regras — os casos de uso — e são mais voláteis, podendo mudar de aplicação para aplicação mesmo dentro do mesmo domínio. A fronteira entre as duas é frequentemente uma decisão de projeto subjetiva, não uma classificação objetiva (ex: "usuário não pode ter duas notas com o mesmo título" pode legitimamente morar em Casos de Uso ou ser promovida para Entidades, dependendo de quão "fechada" se considera a regra).
 
+## Pré-Requisito para Sharding de Sistemas Grandes
+
+[[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] argumenta que tentar aplicar [[wiki/concepts/sharding]] diretamente a um monolito com centenas de tabelas não funciona — resulta em fragmentar poucas tabelas centrais e replicar dezenas de outras em todo shard. A ordem correta é primeiro usar DDD para decompor o sistema em bounded contexts/[[wiki/concepts/microsservicos]], e só então aplicar sharding no banco de um microsserviço específico, onde uma única entidade central (e portanto uma única shard key) faz sentido.
+
 ## Key Sources
 
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
@@ -78,3 +82,4 @@ Um Value Object (ex: `content` de uma `Notification`, validado e imutável no do
 - [[wiki/sources/mappers-conversao-entre-camadas]]
 - [[wiki/sources/application-boundary-martin-fowler]] — application boundary como precursor social do bounded context
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — distinção formal entre regra de negócio do domínio (Entidades) e da aplicação (Casos de Uso), com exemplo de empréstimo de Robert Martin
+- [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — DDD como pré-requisito para sharding de sistemas grandes; sem decomposição em bounded contexts não há uma única entidade/shard key candidata

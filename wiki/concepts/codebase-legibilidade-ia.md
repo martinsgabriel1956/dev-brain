@@ -3,8 +3,8 @@ type: concept
 title: "Codebase Legibilidade para IA"
 aliases: ["codebase para ia", "código legível ia", "qualidade código ia"]
 date_created: 2026-05-04
-date_updated: 2026-07-19
-source_count: 4
+date_updated: 2026-08-04
+source_count: 5
 tags: [ia-engineering, codebase-quality, acoplamento, context-engineering, coding-agents, comentarios]
 skill: tech-mentor-backend
 status: stable
@@ -74,9 +74,16 @@ Combinado com [[progressive-disclosure-ia]] — guidelines por diretório — o 
 
 [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] traz um ângulo que qualifica a tabela acima: comentários próximos ao código voltam a ter valor prático explicitamente por causa de como AI harnesses recuperam contexto. Como agentes buscam (via grep ou ferramenta equivalente) o arquivo específico que precisam alterar e então leem seu conteúdo sob demanda, um comentário explicando o quê e o porquê de um trecho é informação que o agente **efetivamente vai ler** no momento da tarefa — diferente de documentação externa (um README grande, por exemplo), que pode nunca ser recuperada na busca porque não está fisicamente perto do código sendo editado. O autor da fonte é explícito que isso o fez reconsiderar a posição clássica ("código autoexplicativo dispensa comentário") especificamente no contexto de agentes — ver [[wiki/concepts/comentarios-o-que-nao-o-como]] para a regra geral que essa observação qualifica, não substitui.
 
+## Teto Prático de Tamanho de Arquivo: Ligado à Ferramenta, Não a Estilo
+
+[[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] traz um número concreto que qualifica a linha "com 200 linhas, a IA entende qualquer estrutura" acima: o `Read` do Claude Code lê no máximo ~2000 linhas por tool call. Na prática, ~1000 linhas é considerado seguro, 2000 já é risco de leitura incompleta — independente de estilo ou de quantas funções cabem ali. A fonte é explícita que isso não é motivo para otimizar por arquivos de 50 linhas: se há uma responsabilidade só e o conteúdo pertence ali, um arquivo de 1000 linhas está OK. O problema oposto também é real e simétrico: um arquivo de 1000 linhas com **múltiplos assuntos** desperdiça a maior parte da leitura (~80%, na estimativa da fonte) em conteúdo irrelevante à tarefa — o mesmo custo por tool call, só que causado por falta de [[wiki/concepts/single-responsibility|responsabilidade única]] em vez de fragmentação excessiva.
+
+Ver também [[wiki/concepts/codigo-grepavel]] — a mesma fonte separa dois motivos distintos para quebrar código: profundidade (estrutura interna, debate com [[wiki/entities/john-ousterhout]]) e buscabilidade (achar o arquivo/função certo de fora).
+
 ## Key Sources
 
 - [[sources/ports-and-adapters-codebase-para-ia]]
 - [[sources/navigation-paradox-2026]]
 - [[wiki/sources/context-engineering-codebases-grandes-rpi]] — MVC god class vs. codebase modular; guidelines por diretório como mitigação
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — comentários próximos ao código como informação que agentes efetivamente recuperam via grep, ao contrário de documentação externa
+- [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — teto prático de ~1000-2000 linhas por arquivo ligado ao limite de leitura por tool call, e custo simétrico de arquivo com múltiplos assuntos

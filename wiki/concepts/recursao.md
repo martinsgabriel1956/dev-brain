@@ -3,8 +3,8 @@ type: concept
 title: "Recursão"
 aliases: ["recursion", "função recursiva", "chamada recursiva"]
 date_created: 2026-06-26
-date_updated: 2026-07-09
-source_count: 2
+date_updated: 2026-08-04
+source_count: 3
 tags: [cs-fundamentals, algoritmos, recursao, pilha-de-execucao, dividir-e-conquistar]
 skill: cs-fundamentals
 status: draft
@@ -57,6 +57,11 @@ retorna 5×24 = 120
 - **Stack overflow**: profundidade muito grande sem tail call optimization → pilha estoura
 - **Complexidade oculta**: recursão em árvore pode ser O(2ⁿ) sem memoização
 - **Memoização**: salvar resultados já calculados transforma exponencial em linear ([[big-o]])
+- **Custo de recriação de estrutura a cada chamada**: uma recursão "óbvia" para percorrer um array (ex: binary search) que fatia/recria um novo sub-array a cada nível é mais cara do que precisa ser — [[wiki/sources/binary-search-em-5-minutos]] usa isso como motivação explícita para preferir [[wiki/concepts/two-pointer|two pointer]] iterativo, que navega os mesmos índices sem nunca copiar o array original
+
+## Recursão vs. iteração com ponteiros
+
+Nem todo problema "naturalmente recursivo" precisa de recursão de fato — binary search é recursivo na estrutura do raciocínio ("resolva no sub-array menor"), mas a implementação mais barata dispensa a chamada recursiva e a cópia de array, substituindo por dois índices que se movem sobre a mesma estrutura ([[wiki/concepts/two-pointer]]).
 
 ## Onde aparece
 
@@ -72,8 +77,10 @@ retorna 5×24 = 120
 - [[big-o]] — análise de complexidade recursiva usa relação de recorrência (ex: T(n) = 2T(n/2) + O(n) → O(n log n) para mergesort)
 - [[arvore]] — árvore é a estrutura recursiva por excelência; percorrer uma árvore sem recursão é mais difícil
 - [[abstracao]] — recursão é uma abstração: o problema de tamanho n é expresso em termos do mesmo problema de tamanho n-1
+- [[wiki/concepts/two-pointer]] — alternativa iterativa que dispensa recursão e cópia de estrutura em problemas de array
 
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/9-algoritmos-que-todo-programador-deveria-saber]]
+- [[wiki/sources/binary-search-em-5-minutos]] — motivação explícita para trocar recursão com recriação de array por two pointer iterativo

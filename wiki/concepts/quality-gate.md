@@ -3,8 +3,8 @@ type: concept
 title: "Quality Gate"
 aliases: ["quality gates", "portão de qualidade", "gate de qualidade", "análise estática em pull request"]
 date_created: 2026-07-16
-date_updated: 2026-07-19
-source_count: 4
+date_updated: 2026-08-04
+source_count: 5
 tags: [quality-gate, linter, analise-estatica, clean-code, modularizacao, ia, milestone, criterios-de-qualidade, ratchet, babysitting-de-agentes, branch-protection]
 skill: tech-mentor-testing
 status: draft
@@ -58,9 +58,21 @@ A mesma fonte é explícita sobre o limite dessa prática: **"tu não pode só t
 
 Todos os exemplos acima descrevem *o que* um gate verifica; [[wiki/sources/underengineering-overengineering-mario-souto]] descreve o mecanismo mínimo que transforma um check de CI em gate de fato — sem ele, lint e teste podem rodar e falhar sem impedir o merge. No GitHub, isso é feito via regra de proteção de branch (Settings → Branches): exigir pull request antes de merge, e marcar os nomes dos jobs do GitHub Actions (ex.: `lint`, `test`) como *required status checks*. Só a partir dessa configuração o "passou/não passou" descrito na definição formal de quality gate (resultado binário, critério de entrada/saída) vira, de fato, bloqueante — antes disso é só um relatório que qualquer um pode ignorar.
 
+## Quatro Técnicas Concretas Para Transformar a Lista de Uncle Bob em Gate de CI
+
+[[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] parte da mesma lista de métricas citada por [[wiki/entities/uncle-bob]] (cobertura, dependency structure, complexidade ciclomática, tamanho de módulo, mutation tests) e detalha quatro gates bloqueantes concretos, cada um capturando um tipo de degradação típica de código gerado por LLM:
+
+1. **[[wiki/concepts/complexidade-ciclomatica|Complexidade ciclomática (CCN)]]** — limite de exemplo entre 1 e 20; captura a tendência de LLMs de escrever funções longas com muitos `if`s aninhados.
+2. **Cobertura + [[wiki/concepts/teste-de-mutacao|mutation testing]]** — metas de exemplo citadas: 85% de cobertura + 60% de mutation score; captura testes que executam código sem validar comportamento.
+3. **Tamanho de módulo/arquivo** — limite de exemplo de 300 linhas por arquivo; captura "god files" de 3.000 a 5.000 linhas.
+4. **Estrutura de dependências (dependency structure)** — detecta import circular, camadas invertidas (controller chamando model direto) e módulo de implementação acessando outro módulo de implementação sem passar por um módulo de API exposto propositalmente; ver [[wiki/concepts/acoplamento]].
+
+A fonte enquadra essas quatro técnicas como a resposta prática ao mesmo problema descrito em "Babysitting" e no exemplo de pipeline de CI acima: o volume de código gerado (a fonte cita ~10.000 linhas/dia) torna revisão manual linha a linha inviável, e a resposta não é abandonar qualidade, é mover o critério de aprovação para provas objetivas que rodam em segundos no CI, sem exigir leitura humana.
+
 ## Key Sources
 
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]]
 - [[wiki/sources/gate-de-qualidade-definicoes-formais]] — definições formais da literatura (checklist/aprovação por gate, milestone com critérios pré-definidos, ponto de verificação de Schneider) e características estruturais (critérios de entrada/saída, disparo por critério não por data, resultado binário, gates em paralelo)
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — padrão ratchet/baseline, babysitting de PR por agentes, pipeline de CI concreto (npm audit em dois níveis, jscpd para duplicação)
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — branch protection com required status checks como mecanismo mínimo de enforcement, sobre um pipeline de apenas lint + teste
+- [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — quatro gates concretos (CCN, cobertura+mutation, tamanho de módulo, dependency structure) para transformar a lista de métricas de Uncle Bob num pipeline de CI real

@@ -4,7 +4,7 @@ title: "Janela de Contexto"
 aliases: ["context window", "context length", "janela de tokens"]
 date_created: 2026-05-18
 date_updated: 2026-07-03
-source_count: 3
+source_count: 4
 tags: [llm, tokens, agentes-ia, llmops]
 skill: tech-mentor-ai
 status: draft
@@ -48,8 +48,13 @@ Na prática: um `CLAUDE.md` de 500 linhas em português esgota 62% mais contexto
 
 ---
 
+## Heurística de Campo: ~200k Tokens Mesmo com Janelas de 1M
+
+Mesmo com janelas de contexto de até 1M de tokens disponíveis, a recomendação prática registrada em [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] é manter o uso em torno de ~200k tokens — quanto maior a proporção da janela ocupada, maior a chance de alucinação. É a mesma lógica por trás de [[wiki/concepts/rpi-workflow]] e [[wiki/concepts/spec-driven-development]]: salvar research e planejamento em Markdown fora da janela, para que a implementação comece com contexto baixo mesmo em mudanças que tocam dezenas de arquivos.
+
 ## Key Sources
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
 - [[wiki/sources/custo-tokens-portugues-vs-ingles]]
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
+- [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — heurística de ~200k tokens mesmo com janelas de 1M disponíveis

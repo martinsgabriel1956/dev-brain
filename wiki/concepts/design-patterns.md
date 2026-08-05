@@ -3,8 +3,8 @@ type: concept
 title: "Design Patterns"
 aliases: ["padrões de projeto", "GoF", "Gang of Four patterns"]
 date_created: 2026-05-16
-date_updated: 2026-08-03
-source_count: 3
+date_updated: 2026-08-04
+source_count: 5
 tags: [design, arquitetura, padroes, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -59,3 +59,5 @@ Antes de estudar design patterns é obrigatório dominar [[modelagem-orientada-a
 - [[wiki/sources/akita-como-aprender-programacao]] — quando *não* estudar patterns; origem em Christopher Alexander; relação com GoF e Java; patterns como nomes para o que você já fazia
 - [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]] — modelagem OO como pré-requisito; verde neném como sintoma de pular estágios
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — [[wiki/concepts/template-method-pattern|Template Method]] implementado via composição (não herança) num controlador web, citando a recomendação do próprio livro GoF de favorecer composição sobre herança
+- [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]] — [[wiki/concepts/observer-pattern|Observer]] e [[wiki/concepts/singleton-pattern|Singleton]] combinados para recriar o mecanismo central do [[wiki/concepts/zustand|Zustand]] com JavaScript puro
+- [[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] — [[wiki/concepts/factory-pattern|Factory]] e [[wiki/concepts/observer-pattern|Observer]] usados lado a lado como dois estágios progressivos de desacoplamento (não como escolhas concorrentes), numa refatoração incremental de um jogo em JavaScript

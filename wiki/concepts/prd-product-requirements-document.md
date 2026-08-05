@@ -4,7 +4,7 @@ title: "PRD — Product Requirements Document"
 aliases: ["PRD", "Product Requirements Document"]
 date_created: 2026-05-17
 date_updated: 2026-07-09
-source_count: 4
+source_count: 5
 tags: [prd, documentação, produto, requisitos, spec-driven, ia]
 skill: tech-mentor-system-design
 status: stable
@@ -31,9 +31,14 @@ No [[wiki/concepts/spec-driven-development|Spec Driven Development]], o PRD tem 
 
 [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] propõe uma etapa anterior à escrita do PRD: uma sessão de entrevista adversarial onde a IA interroga o dev sobre cada aspecto do plano (podendo chegar a 40–100 perguntas) até alcançar um [[wiki/entities/fred-brooks|design concept]] compartilhado. Só depois disso a conversa vira PRD (ou, para mudanças pequenas, issues diretamente). O autor argumenta que isso evita a falha "a IA não fez o que eu queria" — sintoma de um PRD escrito sem que dev e IA tivessem, de fato, a mesma teoria do que estava sendo construído.
 
+## PRD Como Ponto de Partida de uma Skill Spec-Driven
+
+[[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] mostra um caso concreto: ao dar um PRD já existente como input inicial para a skill "TLC Spec Driven", ela usa o documento como base e cria automaticamente tudo que der para derivar dali (spec, design, tasks), só fazendo perguntas iterativas para o que não estiver claro. Sem PRD, a skill começa do zero via perguntas — mesmo mecanismo de refinamento do [[wiki/concepts/agente-prd|Agente de PRD]], aplicado aqui a um fluxo maior que também gera design e breakdown de tasks.
+
 ## Key Sources
 
 - [[wiki/sources/trd-technical-requirements-document]]
 - [[wiki/sources/formacao-ia-devs-aula-04-agentes-planejamento]]
 - [[wiki/sources/formacao-ia-devs-aula-05-qa]]
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
+- [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — PRD existente usado como input direto de uma skill spec-driven, que deriva spec/design/tasks automaticamente

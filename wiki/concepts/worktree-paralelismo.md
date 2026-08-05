@@ -4,7 +4,7 @@ title: "Worktree e Paralelismo de Tarefas"
 aliases: ["worktree parallelism", "git worktree IA", "paralelismo de tarefas ia"]
 date_created: 2026-06-02
 date_updated: 2026-07-31
-source_count: 8
+source_count: 9
 tags: [worktree, paralelismo, git, spec-driven, produtividade]
 skill: tech-mentor-ai
 status: stable
@@ -102,3 +102,4 @@ Ao encerrar a sessão (`/quit`), o Claude Code pergunta explicitamente se o usu�
 - [[wiki/sources/impacto-ia-mercado-frontend]]
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — [[wiki/entities/replit|Replit]] expõe esse padrão na UI como "workers": uma sessão principal roda uma tarefa maior enquanto subtarefas paralelas de colaboradores rodam isoladas, com merge automático de volta e resolução de conflitos pelo próprio harness — hipótese do autor de que é `git worktree` por baixo dos panos, mas sem confirmação técnica
 - [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] — demonstração completa de `git worktree add`/`list`/`remove -f` no terminal; comparação lado a lado de onde Codex (app) e Claude Code guardam a worktree criada nativamente
+- [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — o artefato de "estado" de um projeto spec-driven permite fatiar o trabalho em múltiplos pull requests sem perder rastreabilidade das decisões já tomadas

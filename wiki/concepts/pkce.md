@@ -3,8 +3,8 @@ type: concept
 title: "PKCE — Proof Key for Code Exchange"
 aliases: ["pkce", "pixi", "proof key for code exchange", "code_verifier", "code_challenge", "rfc 7636"]
 date_created: 2026-07-30
-date_updated: 2026-07-30
-source_count: 3
+date_updated: 2026-08-03
+source_count: 4
 tags: [pkce, oauth2, oidc, seguranca, authorization-code, implicit-flow, rfc-7636, oauth2-1]
 skill: tech-mentor-security
 status: draft
@@ -94,3 +94,4 @@ Grandes provedores de identidade (Keycloak, Auth0) e frameworks (Spring Security
 - [[wiki/sources/pkce-proof-key-code-exchange-spa-mobile]]
 - [[wiki/sources/oauth2-oidc-jwt]]
 - [[wiki/sources/rfc-7636-pkce-oauth-public-clients]] — texto normativo original (IETF, 2015), traduzido; fonte da especificação exata (ABNF, MTI de S256, security considerations)
+- [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — reforço da motivação (apps mobile não guardam client_secret com segurança) no fluxo de ponta a ponta de autenticação

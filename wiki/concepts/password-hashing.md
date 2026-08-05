@@ -3,8 +3,8 @@ type: concept
 title: "Password Hashing"
 aliases: ["hashing de senhas", "armazenamento seguro de senhas", "password storage"]
 date_created: 2026-06-11
-date_updated: 2026-07-28
-source_count: 4
+date_updated: 2026-08-03
+source_count: 5
 tags: [segurança, criptografia, password-hashing, autenticação]
 skill: tech-mentor-security
 status: stable
@@ -40,6 +40,12 @@ O Unix foi um dos primeiros sistemas a abandonar o armazenamento de senha em tex
 | [[concepts/bcrypt]] | [[concepts/cpu-hard]], mas GPU paralela ainda viável |
 | [[concepts/argon2]] | [[concepts/cpu-hard]] + [[concepts/memory-hard]] — derrota GPU |
 | Argon2 + [[concepts/pepper]] | Defesa em profundidade — ~99.9% seguro |
+
+---
+
+## Por Que Hash Genérico (SHA-256) Não Serve
+
+Uma GPU moderna calcula cerca de **1 bilhão de hashes SHA-256 por segundo** — rápido o suficiente para um atacante testar bilhões de senhas candidatas em segundos após um vazamento. O *work factor* de bcrypt/Argon2 (número de rodadas de processamento configurável) força cada hash a levar centenas de milissegundos, o que transforma um ataque de força bruta de segundos em anos, mesmo com hardware dedicado.
 
 ---
 
@@ -91,3 +97,4 @@ $hash = password_hash($password . $pepper, PASSWORD_ARGON2ID, [
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]]
 - [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]
 - [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]
+- [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — comparação numérica SHA-256 (1 bilhão hashes/s em GPU) vs. work factor de bcrypt/Argon2

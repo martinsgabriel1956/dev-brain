@@ -3,8 +3,8 @@ type: concept
 title: "Custom Hooks"
 aliases: ["hooks customizados", "hooks reutilizáveis React"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-08-03
+source_count: 2
 tags: [react, hooks, reuso, composição]
 skill: tech-mentor-frontend
 status: stable
@@ -63,6 +63,34 @@ function useEventListener<K extends keyof WindowEventMap>(
 }
 ```
 
+### useDataSet — sincronizar um estado externo à árvore
+
+Um custom hook pode conectar o React a um estado que vive **fora** de qualquer componente — a base de bibliotecas como [[wiki/concepts/zustand]]:
+
+```typescript
+function useDataSet(dataSet) {
+  const { map, subscriber } = dataSet;
+  const [state, setState] = useState(map.get("value"));
+
+  useEffect(() => {
+    return subscriber.subscribe((event) => {
+      const currentValue = map.get("value");
+      const nextValue = typeof event === "function" ? event(currentValue) : event;
+      map.set("value", nextValue);
+      setState(nextValue);
+    });
+  }, [map, subscriber]);
+
+  function setValue(value) {
+    subscriber.emit(value);
+  }
+
+  return [state, setValue];
+}
+```
+
+`useEffect` faz o `subscribe` no [[wiki/concepts/observer-pattern|observer]] externo e retorna o `unsubscribe` como cleanup; `useState` guarda a cópia local que dispara o re-render. Ver [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]] para a implementação completa, incluindo a store (`createDataSet`) que esse hook consome.
+
 ## Custom Hooks vs Render Props vs HOC
 
 - **Custom Hook**: compartilhar lógica/estado — preferível na maioria dos casos
@@ -72,3 +100,4 @@ function useEventListener<K extends keyof WindowEventMap>(
 ## Key Sources
 
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
+- [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]] — `useDataSet`, hook que sincroniza estado externo com `useState`/`useEffect`

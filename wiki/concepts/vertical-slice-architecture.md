@@ -3,8 +3,8 @@ type: concept
 title: "Vertical Slice Architecture"
 aliases: ["vertical slice", "feature-first architecture", "slice por feature"]
 date_created: 2026-04-23
-date_updated: 2026-07-27
-source_count: 4
+date_updated: 2026-08-04
+source_count: 5
 tags: [arquitetura, modularidade, feature-first, agentes, tokens, frontend]
 skill: tech-mentor-backend
 status: stub
@@ -61,9 +61,14 @@ Sem discipline, Vertical Slice pode levar a duplicação de lógica entre featur
 
 **Risco registrado pelo autor:** tratar vertical slice como regra filosófica rígida ("isso deveria ficar dentro do módulo/feature") em vez de ferramenta prática já gerou conflito de time — o critério deve ser "isso facilita", não "isso está no lugar certo segundo a teoria".
 
+## "Package by Feature" do Go Como Exemplo de Adoção Crescente
+
+[[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] cita o padrão *package by feature* do Go como exemplo concreto de vertical slice ganhando tração fora do contexto original de VSA em .NET, e liga isso diretamente ao [[wiki/concepts/navigation-paradox]]: estrutura horizontal em camadas obriga o agente a atravessar múltiplos arquivos (mappers, DTOs) para uma única funcionalidade, com risco real de deixar arquivos para trás; vertical slice reduz esse custo por ser mais óbvia tanto para agente quanto para humano — mesma conclusão já registrada acima via [[wiki/concepts/monolito-modular-frontend]] e a comparação horizontal-vs-vertical no topo desta página.
+
 ## Key Sources
 
 - [[sources/clean-architecture-ia-custo-real]]
 - [[sources/erros-workflow-research-plan-implement]] — plano vertical como aplicação do VSA a workflow de agente
 - [[sources/context-engineering-avancado-para-coding-agents]] — implementação incremental para manter context window baixa
 - [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] — vertical slice dentro de um módulo frontend como isolamento pré-extração, e o risco de virar regra filosófica rígida em vez de ferramenta prática
+- [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — package by feature do Go como exemplo de adoção crescente, ligado ao custo medido pelo Navigation Paradox

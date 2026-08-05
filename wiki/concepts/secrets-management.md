@@ -3,8 +3,8 @@ type: concept
 title: "Secrets Management"
 aliases: ["secrets management", "gerenciamento de segredos", "env variables", "credenciais", ".env"]
 date_created: 2026-06-10
-date_updated: 2026-07-31
-source_count: 6
+date_updated: 2026-08-04
+source_count: 7
 tags: [security, secrets-management, env, credenciais, devsecops, ci-cd, under-engineering]
 skill: tech-mentor-security
 status: stable
@@ -98,3 +98,4 @@ Propriedade desejável: **secrets configurados não são mais visíveis** — ne
 - [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] — `.env` servido publicamente e encontrado via brute force de diretórios, ponto de entrada de uma cadeia completa de comprometimento
 - [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — demonstração ao vivo de que GitHub Secrets não pode ser visualizado após salvo, só atualizado
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — scanner de histórico de git como último item de checklist de autopentest
+- [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]] — menção rápida do AWS Secrets Manager dentro de um tour geral do toolkit da AWS, sem detalhamento além do escopo já documentado nesta página (chaves de API, credenciais de banco de dados)

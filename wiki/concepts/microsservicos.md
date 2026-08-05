@@ -3,8 +3,8 @@ type: concept
 title: "Microsserviços"
 aliases: ["microsservicos", "microservices", "arquitetura de microsserviços", "decomposição por domínio"]
 date_created: 2026-07-24
-date_updated: 2026-07-30
-source_count: 7
+date_updated: 2026-08-04
+source_count: 9
 tags: [microsservicos, arquitetura, bounded-context, distributed-monolith, circuit-breaker, resiliencia]
 skill: tech-mentor-backend
 status: draft
@@ -64,8 +64,17 @@ Mesmo fora de uma arquitetura de microsserviços completa, dá para reaproveitar
 
 [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] reforça, do lado frontend, a mesma tese de ponto de partida: [[wiki/concepts/monolito-modular-frontend|monolito modular]] com fronteiras por domínio é a base, [[wiki/concepts/vertical-slice-architecture|vertical slice]] isola funcionalidades complexas dentro do módulo, e só se migra para [[wiki/concepts/microfrontend-baseado-em-rotas|builds separados]] ou [[wiki/concepts/microfrontends-parciais|microfrontends distribuídos]] com necessidade real — nunca por hype ou pela imagem "arquitetura distribuída = madura" vendida em posts de LinkedIn.
 
+## Sharding de Banco Como Consequência, Não Ponto de Partida
+
+[[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] fecha o argumento pelo lado da persistência: não faz sentido tentar fazer [[wiki/concepts/sharding]] de um monolito inteiro com centenas de tabelas, porque não existe uma única entidade central óbvia para servir de shard key. A ordem correta é decompor primeiro por [[wiki/concepts/ddd|DDD]]/bounded context, e só então shardear o banco de dados de um microsserviço específico (onde a entidade principal — usuário, pedido, paciente — já está isolada). Reforça, de um ângulo de banco de dados, a mesma tese já central desta página: decomposição primeiro, escala de infraestrutura depois.
+
+## O ESB Como o "Antigo Barramento Central" Que "Smart Endpoints, Dumb Pipes" Rejeita
+
+[[wiki/concepts/esb-enterprise-service-bus|ESB]] não é só uma referência histórica dentro do artigo de Fowler/Lewis — é a peça concreta que a filosofia de microsserviços rejeitava na prática: em vez de concentrar transformação de mensagens e orquestração num barramento central, cada serviço vira responsável pela própria lógica, comunicando-se por mecanismos leves. Isso não significa que o ESB tenha desaparecido: em empresas com grande legado tecnológico, ele continua sendo a peça que integra sistemas de épocas diferentes enquanto a migração para uma arquitetura mais distribuída acontece de forma incremental.
+
 ## Key Sources
 
+- [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — ESB como contraponto histórico direto ao "smart endpoints, dumb pipes"; por que ESBs continuam essenciais em empresas com grande legado mesmo perdendo espaço em projetos novos
 - [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — artigo original de 2014 (James Lewis e Martin Fowler) que cunhou a definição do termo; nove características comuns, "smart endpoints and dumb pipes", Lei de Conway, Design for Failure, e a postura de "otimismo cauteloso" dos próprios autores
 - [[wiki/sources/microsservicos]] — decomposição por bounded context, distributed monolith como anti-pattern, padrões de resiliência obrigatórios
 - [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — microsserviços como guia/eixo de aprendizado de arquitetura, hype de 2014 em perspectiva histórica, relato pessoal de carreira, Keycloak como peça pronta reaproveitável
@@ -73,3 +82,4 @@ Mesmo fora de uma arquitetura de microsserviços completa, dá para reaproveitar
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — monolito vs. microsserviços como decisão de sênior-plus, e como tópico de tradeoff cobrado em entrevista sênior
 - [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] — mesmo princípio de extração tardia (monolito modular → vertical slice → builds separados) aplicado à arquitetura frontend
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — percurso didático incremental deadlock → database-per-service → 2PC → Saga Pattern → CQRS, construindo problema por problema
+- [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — sharding de banco como consequência da decomposição por DDD, não como técnica aplicável a um monolito inteiro

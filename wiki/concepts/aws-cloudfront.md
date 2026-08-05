@@ -3,8 +3,8 @@ type: concept
 title: "AWS CloudFront"
 aliases: ["CloudFront", "CDN AWS", "AWS CDN"]
 date_created: 2026-05-06
-date_updated: 2026-05-06
-source_count: 1
+date_updated: 2026-08-04
+source_count: 2
 tags: ["aws", "cdn", "edge", "performance", "cache"]
 skill: tech-mentor-infra
 status: stub
@@ -57,3 +57,4 @@ Usuário
 ## Key Sources
 
 - [[wiki/sources/aws-infraestrutura-global]]
+- [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]] — combinação CloudFront + [[wiki/concepts/amazon-s3|S3]] citada como forma comum de hospedar um site inteiro só a partir de um arquivo estático (`index.html`) no bucket

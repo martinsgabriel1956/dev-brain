@@ -3,8 +3,8 @@ type: concept
 title: "OTP — HOTP e TOTP"
 aliases: ["one-time password", "HOTP", "TOTP", "código de seis dígitos", "app autenticador"]
 date_created: 2026-07-27
-date_updated: 2026-07-27
-source_count: 1
+date_updated: 2026-08-03
+source_count: 2
 tags: [otp, hotp, totp, mfa, autenticacao, seguranca]
 skill: tech-mentor-security
 status: draft
@@ -32,6 +32,10 @@ código = TOTP(seed, tempo_atual)
 
 Calculado independentemente no app e no servidor — eles não trocam mensagens, só precisam concordar sobre a hora atual e a seed.
 
+## TOTP É Vulnerável a Phishing
+
+Diferente de [[wiki/concepts/webauthn-fido2-u2f|WebAuthn]], o código TOTP não é vinculado ao domínio do site. Um site falso pode simplesmente pedir o código de 6 dígitos e repassá-lo em tempo real ao site real (phishing man-in-the-middle) — a vítima digita o código válido no lugar errado, e o atacante o usa antes que expire. É a principal limitação do TOTP frente a métodos baseados em criptografia de chave pública.
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/mfa-multifator-autenticacao]] — OTP é uma implementação do fator "algo que você tem"
@@ -42,3 +46,4 @@ Calculado independentemente no app e no servidor — eles não trocam mensagens,
 ## Key Sources
 
 - [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]
+- [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — vulnerabilidade do TOTP a phishing, em contraste com WebAuthn

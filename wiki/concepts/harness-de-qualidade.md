@@ -3,8 +3,8 @@ type: concept
 title: "Harness de Qualidade"
 aliases: ["quality harness", "harness ia", "ferramental de qualidade"]
 date_created: 2026-05-31
-date_updated: 2026-07-27
-source_count: 3
+date_updated: 2026-08-04
+source_count: 5
 tags: [harness, qualidade, pipeline-de-qualidade, tdd, testes, era-agentica, robustez]
 skill: tech-mentor-backend
 status: stable
@@ -35,7 +35,7 @@ Da mesma forma que TDD, [[spec-driven-development]] pode ser imposto: contrato d
 ### Linters com regras de código
 Configurar linters (ESLint, Biome, etc.) com regras específicas do projeto. A IA vai seguir o que o linter rejeitar — não o que você pediu no prompt.
 
-### Complexidade ciclomática
+### [[wiki/concepts/complexidade-ciclomatica|Complexidade ciclomática]]
 Ferramentas que medem complexidade ciclomática na pipeline. Feedback objetivo: se a função está complexa demais, não commita.
 
 ### Análise estática de segurança
@@ -79,9 +79,15 @@ Harness de qualidade é o mecanismo que constrói [[robustez-de-sistemas]] quand
 
 [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] é o exemplo negativo desta página: em vez de usar a IA *dentro* de um harness determinístico, o autor tentou usar a IA *como* o próprio mecanismo de validação — sem pipeline, sem regra fixa, só o julgamento do modelo sobre o código do aluno. O resultado foi exatamente o previsto por esta página: sem ferramenta determinística ao redor, o comportamento da IA ficou inconsistente entre execuções e entre modelos. Ver [[wiki/concepts/determinismo-vs-probabilismo-em-ia]].
 
+## O Harness de Uncle Bob Como "Harness Puro": Cinco Peças, Cinco Erros Diferentes
+
+[[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] descreve o post de [[wiki/entities/uncle-bob]] sobre não ler mais código de agentes como um exemplo direto desta página: a lista que ele cita (teste unitário, cobertura, [[wiki/concepts/teste-de-mutacao|mutation testing]], teste [[wiki/concepts/bdd|Gherkin/BDD]], métrica de qualidade) não é uma lista jogada — cada item pega um tipo de erro que os outros deixam passar. Teste unitário pega erro de lógica de negócio; cobertura pega o que nenhum teste tocou; mutation testing pega se o teste só valida o caminho feliz; Gherkin/BDD pega o pior erro de todos (construir a coisa errada, mesmo que construída certo); métrica de qualidade mostra a tendência do sistema (piorando/melhorando) ao longo do tempo. A fonte fecha com uma regra operacional que complementa esta página: não abandonar a leitura de código de uma vez, e sim por categoria de mudança, marcando cada categoria como confiável só depois de acumular um volume de PRs (~30, na estimativa da fonte) com pouco ou nenhum feedback a dar.
+
 ## Key Sources
 
 - [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
 - [[wiki/sources/tdd-sdd-bdd-era-ia]]
 - [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] — caso negativo: IA usada como o próprio gate, sem harness ao redor, resultado inconsistente
+- [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — os cinco pilares do harness de Uncle Bob, cada um pegando um tipo de erro diferente; regra operacional de ler por categoria de mudança
+- [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — quatro gates bloqueantes concretos (CCN, cobertura+mutation, tamanho de módulo, dependency structure) para os mesmos componentes já listados nesta página

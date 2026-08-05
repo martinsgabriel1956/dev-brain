@@ -3,8 +3,8 @@ type: concept
 title: "Rainbow Table"
 aliases: ["tabela arco-íris", "lookup table de hashes"]
 date_created: 2026-06-11
-date_updated: 2026-07-28
-source_count: 2
+date_updated: 2026-08-03
+source_count: 3
 tags: [segurança, criptografia, ataque, rainbow-table, password-hashing]
 skill: tech-mentor-security
 status: stable
@@ -59,3 +59,4 @@ Sites como "MD5 Decrypt" não revertem hashes criptograficamente. Eles consultam
 
 - [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
 - [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]
+- [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]]

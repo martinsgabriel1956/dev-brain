@@ -3,8 +3,8 @@ type: concept
 title: "Módulo Profundo (Deep Module)"
 aliases: ["deep module", "shallow module", "módulo raso", "caixa cinza"]
 date_created: 2026-07-09
-date_updated: 2026-07-29
-source_count: 3
+date_updated: 2026-08-04
+source_count: 4
 tags: [arquitetura, complexidade, design, ousterhout, interface, encapsulamento]
 skill: tech-mentor-backend
 status: draft
@@ -55,8 +55,15 @@ Existe uma skill de refatoração citada na fonte ("improve codebase architectur
 
 A mesma fonte cita a interface de I/O do Unix (cinco chamadas de sistema — `open`, `read`, `write`, `lseek`, `close` — escondendo centenas de milhares de linhas de implementação) e o coletor de lixo de linguagens como Go/Java (que não tem interface nenhuma — na verdade encolhe a interface do sistema, já que elimina a necessidade de liberar objetos manualmente) como os dois exemplos mais extremos de módulo profundo do livro. Em contraste, a família de classes do Java I/O (`FileInputStream` → `BufferedInputStream` → `ObjectInputStream`, precisando de três construtores encadeados só para abrir um arquivo com buffer) é o contra-exemplo citado repetidamente no livro como **classitis**: a crença de que "classes são boas, logo mais classes são melhores".
 
+## Primeiro Dado Empírico no Debate com Uncle Bob
+
+[[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] traz o primeiro dado empírico (ainda que direcional, sem nome ou link do estudo) para o debate histórico entre Ousterhout e [[wiki/entities/uncle-bob]] sobre função pequena vs. módulo profundo. Num estudo controlado com agentes de IA como "leitor" mensurável: quebrar métodos e classes densos em helpers pequenos deu **empate** de resultado — a explicação apontada foi que a extração redistribui a complexidade em vez de eliminá-la, e o agente, que lê o arquivo inteiro de qualquer forma, não se beneficia da quebra em si. Isso reforça diretamente o argumento de Ousterhout: o que importa não é o tamanho da função, é se a complexidade foi genuinamente encapsulada atrás de uma interface, ou só redistribuída em mais lugares.
+
+A exceção notável do mesmo estudo (-35% tokens num caso) não veio de profundidade — veio de [[wiki/concepts/codigo-grepavel|grepability]]: funções menores e nomeadas ficaram mais fáceis de localizar por busca textual em tarefas futuras. Isso é ortogonal ao debate módulo-profundo-vs-função-pequena — uma vantagem específica de agentes que navegam por busca, não de leitores sequenciais.
+
 ## Key Sources
 
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — generalidade moderada (Cap. 6), Unix I/O e classitis do Java I/O (Cap. 4)
+- [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — primeiro estudo controlado medindo o debate com Uncle Bob, e a distinção entre profundidade e grepability

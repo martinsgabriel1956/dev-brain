@@ -3,8 +3,8 @@ type: concept
 title: "Sessões HTTP e Cookies"
 aliases: ["sessão HTTP", "session ID", "cookie de sessão", "sessão stateful"]
 date_created: 2026-07-27
-date_updated: 2026-07-31
-source_count: 2
+date_updated: 2026-08-03
+source_count: 3
 tags: [sessao, cookie, autenticacao, stateless, http, seguranca]
 skill: tech-mentor-security
 status: draft
@@ -33,7 +33,21 @@ Em arquitetura com múltiplos servidores, todos precisam acessar o **mesmo** arm
 - **`HttpOnly`**: inacessível via JavaScript — protege contra roubo de sessão por XSS.
 - **`Secure`**: só trafega em HTTPS.
 - **`SameSite`**: mitiga CSRF (`Strict` bloqueia todo cross-site; `Lax` permite navegação top-level).
-- **Regenerar o ID após login**: previne *session fixation* (atacante força uma sessão conhecida antes do usuário autenticar).
+- **Regenerar o ID após login**: previne [[wiki/concepts/session-fixation|session fixation]] (atacante força uma sessão conhecida antes do usuário autenticar).
+
+## Invalidar Sessões Antigas ao Trocar a Senha
+
+Trocar a senha não revoga automaticamente sessões já ativas. Se um atacante já tinha roubado uma sessão antes da troca, ela continua válida normalmente — a senha nova não afeta um session ID já emitido. Por isso, toda troca de senha precisa invalidar explicitamente **todas** as sessões existentes do usuário, forçando um novo login em qualquer dispositivo.
+
+## Onde Armazenar a Sessão no Servidor
+
+| Onde | Vantagem | Limite |
+|---|---|---|
+| Memória do processo | Mais rápido | Perdida se o servidor reiniciar; não funciona com múltiplas instâncias |
+| Banco de dados | Persistente | Cada requisição vira uma consulta extra |
+| Redis | Rápido e compartilhado entre servidores | Dependência central adicional (ver seção abaixo) |
+
+Redis é o padrão de produção justamente por resolver o caso de múltiplos servidores atrás de um load balancer: sem um armazenamento compartilhado, a sessão só existe no servidor que a criou, e a próxima requisição — que pode cair em outro servidor do pool — não reconhece o usuário.
 
 ## Teste de CSRF em Autopentest
 
@@ -44,7 +58,13 @@ Em arquitetura com múltiplos servidores, todos precisam acessar o **mesmo** arm
 - [[wiki/concepts/jwt]] — alternativa stateless que elimina a dependência central de armazenamento de sessão
 - [[wiki/concepts/criptografia]] — cookie de sessão em si não é criptografado, apenas um identificador opaco; a segurança vem de HttpOnly/Secure/SameSite, não de criptografia do valor
 
+## Relação com outros conceitos (cont.)
+
+- [[wiki/concepts/session-fixation]] — ataque específico contra a regeneração de session ID
+- [[wiki/concepts/step-up-authentication]] — uma sessão válida não deve ser suficiente para ações sensíveis, mesmo sem session fixation
+
 ## Key Sources
 
 - [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]]
+- [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — invalidação ao trocar senha; comparação memória vs. banco vs. Redis para armazenamento de sessão

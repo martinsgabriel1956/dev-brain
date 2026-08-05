@@ -3,8 +3,8 @@ type: concept
 title: "API Gateway"
 aliases: ["api gateway", "gateway de api", "ponto único de entrada de api"]
 date_created: 2026-07-23
-date_updated: 2026-07-27
-source_count: 3
+date_updated: 2026-08-04
+source_count: 4
 tags: [api-gateway, arquitetura-distribuida, gatekeeper, roteamento, edge-functions, single-point-of-failure]
 skill: tech-mentor-backend
 status: stable
@@ -40,7 +40,7 @@ Cliente → [TLS Termination]
 | Ferramenta | Tipo | Caso de uso ideal |
 |---|---|---|
 | Kong | Open source, leve, extensível | Microsserviços, multicloud |
-| AWS API Gateway | Managed | Stack AWS |
+| AWS API Gateway | Managed | Stack AWS — roteia por rota até [[wiki/concepts/aws-lambda|Lambdas]] específicos (ex.: `/user` → Lambda de usuário), timeout e custo por request próprios, além da latência adicional inerente a passar por mais uma camada |
 | NGINX | Proxy adaptado a Gateway | Alta performance |
 | Traefik | Cloud-native | Kubernetes, Docker |
 | Spring Cloud Gateway | Ecossistema Spring | Evolução do Zuul (Netflix) |
@@ -83,3 +83,4 @@ Complementares, não substitutos — ver [[wiki/concepts/service-mesh]].
 - [[wiki/sources/api-gateway-bff]]
 - [[wiki/sources/api-gateway-padrao-essencial-arquiteturas-distribuidas]]
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — API Gateway aparece como conhecimento esperado a partir do nível pleno, junto de workers e load balancer
+- [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]] — no ecossistema AWS, é a forma mais comum de encaminhar requests até [[wiki/concepts/aws-lambda]]; comparado explicitamente ao [[wiki/concepts/load-balancer]] (mecanismo parecido, intuito diferente — não é balancear carga, é rotear por endpoint)

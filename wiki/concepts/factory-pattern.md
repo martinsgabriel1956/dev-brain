@@ -3,8 +3,8 @@ type: concept
 title: "Factory Pattern"
 aliases: ["factory", "factory method", "simple factory"]
 date_created: 2026-05-05
-date_updated: 2026-05-05
-source_count: 1
+date_updated: 2026-08-04
+source_count: 2
 tags: [design-patterns, creational, factory, gof]
 skill: tech-mentor-backend
 status: stable
@@ -51,6 +51,11 @@ const user = UserFactory.create("admin", "1", "John");
 - **Abstract Factory**: cria famílias de objetos relacionados
 - **Simple Factory**: switch/if centralizado (não é GoF oficial, mas muito comum)
 
+## Factory como segundo estágio de desacoplamento
+
+[[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] usa Factory para isolar uma camada de jogo (`createGame()`) misturada com a camada de input. A função factory retorna um objeto com estado privado (`players`, `frutas`) e um método público (`multiplayer(command)`) — o código cliente (camada de input) passa a chamar só esse método, sem conhecer a implementação interna. Isso resolve o **estágio 1** de acoplamento (tudo misturado), mas não elimina o acoplamento por completo: a camada de input ainda conhece explicitamente o método `game.multiplayer` — é uma chamada estática (**estágio 2**). O próprio autor nota que [[wiki/concepts/dependency-injection]] tornaria essa dependência mais flexível (fácil de trocar/mockar), mas não a removeria — só o [[wiki/concepts/observer-pattern|Observer]] chega ao terceiro estágio, onde nenhum componente conhece o outro nem estaticamente.
+
 ## Key Sources
 
 - [[sources/sete-padroes-de-design-de-software]]
+- [[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] — Factory como segundo estágio de desacoplamento (isolamento com chamada estática explícita), intermediário entre código "ameba" e Observer

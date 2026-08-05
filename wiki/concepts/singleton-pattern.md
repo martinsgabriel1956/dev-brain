@@ -3,8 +3,8 @@ type: concept
 title: "Singleton Pattern"
 aliases: ["singleton"]
 date_created: 2026-05-05
-date_updated: 2026-07-28
-source_count: 3
+date_updated: 2026-08-03
+source_count: 4
 tags: [design-patterns, creational, singleton, gof]
 skill: tech-mentor-backend
 status: stable
@@ -43,6 +43,7 @@ const logger2 = Logger.getInstance();
 - Logger centralizado
 - Cache compartilhado em processo único
 - Conexão com [[wiki/concepts/redis]] em Pub/Sub — sem Singleton, cada requisição SSE/WebSocket que chega abriria sua própria conexão Redis, derrubando o Redis em escala. O Redis multiplexa uma única conexão entre muitos assinantes; ver [[wiki/concepts/server-sent-events]]
+- Estado global no front end — uma store [[wiki/concepts/zustand|estilo Zustand]] é, na prática, um singleton de módulo: criada uma vez fora da árvore do React, importada e compartilhada por todos os componentes que a usam, sem precisar de `Provider`. Ver [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]]
 
 ## Trade-offs
 
@@ -64,3 +65,4 @@ Use quando a unicidade é **genuinamente necessária**, não para ter estado glo
 - [[sources/design-pattern-facade]] — Facade frequentemente convertida em Singleton
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — conexão Redis compartilhada em arquitetura SSE/Pub-Sub
 - [[wiki/sources/connection-pooling-pool-vs-polling-serverless]] — pool de conexões como singleton de módulo em Node.js
+- [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]] — store de estado global (estilo Zustand) como singleton de módulo no front end

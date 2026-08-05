@@ -3,8 +3,8 @@ type: entity
 title: "Valdemar Neto"
 aliases: ["Valdemar"]
 date_created: 2026-06-01
-date_updated: 2026-06-09
-source_count: 4
+date_updated: 2026-08-03
+source_count: 5
 tags: [nodejs, javascript, backend, arquitetura, youtuber, tech-leads-club]
 skill: tech-mentor-ai
 status: stub
@@ -20,3 +20,4 @@ Engenheiro de software brasileiro, criador de conteúdo sobre desenvolvimento av
 - [[wiki/sources/context-engineering-codebases-grandes-rpi]] — progressive disclosure, on-demand loading e workflow RPI para codebases grandes
 - [[wiki/sources/escala-niveis-uso-ia-engenheiros]] — análise da escala de 7 níveis de uso de IA; relato pessoal de estar no nível 6
 - [[wiki/sources/product-engineer-vale-do-silicio-2026]] — relato de viagem ao Vale do Silício; conversas com Cursor, Tray, Stripe, Databricks; conceito de Product Engineer
+- [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — autoria não confirmada por nome na fala, inferida por menção ao workshop "Desenvolvimento Assistido por IA Avançado" e à skill "TLC Spec Driven" (Tech Leads Club); demonstra breakdown de tasks com execução via 4 subagentes em paralelo

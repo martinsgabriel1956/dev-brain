@@ -3,8 +3,8 @@ type: concept
 title: "Hashmap"
 aliases: ["hash map", "hash table", "dicionário", "mapa", "dictionary"]
 date_created: 2026-06-01
-date_updated: 2026-07-29
-source_count: 4
+date_updated: 2026-08-04
+source_count: 5
 tags: [cs-fundamentals, estruturas-de-dados, hashmap, performance, big-o]
 skill: cs-fundamentals
 status: draft
@@ -56,6 +56,10 @@ Um dicionário físico. Você não lê página por página — vai direto à let
 - Você precisa de intervalos de valores (ex.: todos os IDs entre 100 e 200) — use [[arvore]] ou array ordenado
 - Você precisa iterar em ordem de inserção (use linked hashmap ou array)
 
+## Hash Set: membership check sem valor associado
+
+Um **set** é a mesma estrutura por baixo (hash table), mas guarda só a chave, sem valor associado — usado para checar rapidamente "esse elemento já existe?" (`x in set`) em O(1), em vez de armazenar dados por chave. Documentado em [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]]: transformar um array num set custa O(n) (percorrer uma vez, inserir cada elemento em O(1)) e permite checar existência de qualquer elemento em O(1) — mais barato que ordenar (O(n log n)) quando o objetivo é só saber "esse valor está presente?", sem precisar de ordem.
+
 ## Relação com Sistemas Reais
 
 - **Caches** (Redis): chave → valor, O(1)
@@ -75,3 +79,4 @@ Um dicionário físico. Você não lê página por página — vai direto à let
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]] — exemplo do trade-off tempo/memória: índice por e-mail (hashmap) troca espaço extra por busca O(1) em vez de O(n) numa lista
 - [[wiki/sources/indice-de-banco-de-dados]] — índice hash de banco de dados como aplicação direta de hashmap: match exato O(1), sem suporte a range/ordenação/prefixo
+- [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — hash set para membership check O(1) (Longest Consecutive Sequence) e hash map de frequências como pré-passo de [[wiki/concepts/bucket-sort]] (Top K Frequent Elements); citação de dictionary/hashmap como a estrutura mais usada no dia a dia de programação, mais que árvore binária

@@ -3,8 +3,8 @@ type: entity
 title: "Augusto Galego"
 aliases: ["Augusto Galego", "augustogalego.com"]
 date_created: 2026-07-20
-date_updated: 2026-07-31
-source_count: 5
+date_updated: 2026-08-04
+source_count: 6
 tags: [pessoa, programador, youtuber, brasil, devops, system-design, carreira]
 skill: tech-mentor-infra
 status: stub
@@ -32,6 +32,10 @@ Além de conteúdo de infra/deploy, produz conteúdo sobre carreira e entrevista
 
 [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] tem o mesmo padrão de patrocínio (HostGator, VPS, mesma faixa de preço e mesma promoção de Claude Code pré-instalado) e o mesmo estilo de demo prática de deploy — mas sem identificação de autor na transcrição. A fonte de [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]] é descrita como continuação de "uma aula anterior sobre tipos de deploy"; esta nova fonte, que cobre justamente CI/CD e deploy vs. release em nível mais introdutório, é uma candidata plausível a ser essa aula anterior (ou uma aula irmã da mesma série) — não confirmado, tratado como open question na fonte.
 
+## Possível Conteúdo de Algoritmos/DSA (Autoria Inferida, Evidência Fraca)
+
+[[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — vídeo resolvendo três problemas clássicos de entrevista de coding, sem identificação de autor/canal na transcrição. O único indício de autoria é o cupom de patrocínio "Augusto 20" oferecido por um serviço de câmbio/remessas internacionais, repetido várias vezes no bloco publicitário — nome coincidente com esta entidade, mas evidência mais fraca que as inferências anteriores registradas nesta página (que se apoiavam em padrões de patrocínio idênticos, como HostGator, e citações diretas de produtos próprios, como "Mapa do Arquiteto" — aqui não há nenhum desses sinais, apenas o nome no cupom). Se confirmada, seria o primeiro conteúdo de algoritmos/estruturas de dados puro atribuído a este autor, distinto do conteúdo prévio de infraestrutura/deploy e carreira/system design. Tratado como open question na própria fonte.
+
 ## Key Sources
 
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]]
@@ -39,3 +43,4 @@ Além de conteúdo de infra/deploy, produz conteúdo sobre carreira e entrevista
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — convidado como colaborador/editor no projeto do simulador de system design
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — progressão de expectativas de system design por nível de senioridade (júnior/pleno/sênior), entrevista vs. trabalho real
 - [[wiki/sources/anatomia-entrevista-system-design-bigtech]] — autoria inferida (não confirmada por nome no vídeo, ver open question na fonte): mesmo curso pago, mesma política de reembolso, mesmo bloco patrocinado UVP removido no início; detalha o pipeline de entrevista bigtech e o que cada etapa da sessão de system design avalia
+- [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — autoria inferida com evidência fraca (nome no cupom de patrocínio "Augusto 20"), não confirmada; três problemas de algoritmos/estruturas de dados resolvidos ao vivo

@@ -3,8 +3,8 @@ type: concept
 title: "JWT — JSON Web Token"
 aliases: ["JWT", "JSON Web Token", "access token", "refresh token"]
 date_created: 2026-07-27
-date_updated: 2026-07-27
-source_count: 1
+date_updated: 2026-08-03
+source_count: 2
 tags: [jwt, autenticacao, stateless, token, seguranca]
 skill: tech-mentor-security
 status: draft
@@ -41,6 +41,29 @@ const payload = verify(token, process.env.JWT_SECRET, {
 2. Nas próximas requisições, o cliente envia o token no header.
 3. O servidor só verifica a assinatura — sem consultar banco de dados. Qualquer servidor com a chave de verificação valida o token, o que escala melhor que sessão centralizada.
 
+## HMAC vs. RSA/ECDSA: Qual Algoritmo de Assinatura Usar
+
+- **HMAC** (`HS256`): chave **simétrica** — a mesma chave assina e verifica. Adequado quando um único servidor faz tudo, já que qualquer parte que verifica precisa ter acesso à mesma chave que assina (o que a torna sensível: quem consegue verificar também consegue forjar).
+- **RSA/ECDSA** (`RS256`/`ES256`): par **assimétrico** — a chave privada assina, a chave pública verifica. Essencial em microsserviços: cada serviço só precisa da chave pública para validar tokens, e a chave privada nunca sai do servidor de autenticação, eliminando o risco de qualquer serviço consumidor conseguir forjar tokens.
+
+## Chave Fraca e Falta de Validação de Issuer/Audience
+
+Duas falhas comuns de implementação:
+
+- **Chave secreta HMAC fraca** (`secret`, `password123`): um atacante testa um dicionário de chaves comuns e, se acertar, forja qualquer token. A chave precisa ter pelo menos 256 bits de entropia, gerada aleatoriamente, nunca hardcoded — sempre em variável de ambiente.
+- **Verificar só a assinatura, ignorando `issuer`/`audience`**: sem checar essas claims, um token emitido para o serviço A pode ser reutilizado no serviço B. Cada API deve validar que o token veio da fonte esperada (`issuer`) e foi emitido para ela especificamente (`audience`) — não basta a assinatura bater.
+
+## Onde Armazenar o Token no Cliente
+
+- **`localStorage`**: simples de acessar via JavaScript, mas por isso mesmo qualquer script malicioso injetado via [[wiki/concepts/xss|XSS]] também consegue ler e exfiltrar o token.
+- **Cookie `HttpOnly`**: JavaScript não consegue acessar, e o browser envia automaticamente em toda requisição — a opção recomendada para aplicações web.
+
+Regra prática: em aplicação web, prefira cookie `HttpOnly` sobre `localStorage` para guardar o token.
+
+## Rotação do Refresh Token
+
+Boa prática de revogação: a cada uso do refresh token, o servidor invalida aquele token e emite um novo no lugar (rotação). Se um atacante roubou um refresh token antigo mas o dono legítimo já o usou (disparando a rotação), o token roubado deixa de funcionar — reduz a janela de exploração de um refresh token vazado sem exigir denylist ativa.
+
 ## O problema da revogação
 
 Como o JWT é stateless, não dá para invalidar um token antes de expirar sem reintroduzir estado (ex.: uma denylist), o que anula parte do ganho. A solução prática é combinar dois tokens de durações diferentes:
@@ -65,3 +88,4 @@ No contexto de [[wiki/concepts/openid-connect]], o ID Token é especificamente u
 ## Key Sources
 
 - [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]
+- [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — HMAC vs. RSA/ECDSA, chave fraca, validação de issuer/audience, localStorage vs. cookie httpOnly, rotação de refresh token

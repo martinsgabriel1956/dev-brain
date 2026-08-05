@@ -3,8 +3,8 @@ type: concept
 title: "Observer Pattern"
 aliases: ["observer", "pub/sub pattern", "event listener pattern"]
 date_created: 2026-05-05
-date_updated: 2026-05-05
-source_count: 1
+date_updated: 2026-08-04
+source_count: 3
 tags: [design-patterns, behavioral, observer, gof, event-driven, pub-sub]
 skill: tech-mentor-backend
 status: stable
@@ -65,6 +65,50 @@ class VideoChannel {
 | Notificação automática sem polling | Ordem de notificação não garantida |
 | Extensível — adicionar observers sem mudar o Subject | Debug difícil em cadeias longas de eventos |
 
+## Implementação minimalista com `Set` (JavaScript)
+
+```javascript
+function createSubscriber() {
+  const listeners = new Set(); // Set em vez de Array: add/delete diretos, sem indexOf/filter
+
+  function subscribe(listener) {
+    listeners.add(listener);
+    return () => listeners.delete(listener); // padrão de unsubscribe via cleanup
+  }
+
+  function emit(event) {
+    listeners.forEach((listener) => listener(event));
+  }
+
+  return { subscribe, emit };
+}
+```
+
+Essa é exatamente a peça central por trás de bibliotecas de estado global como [[wiki/concepts/zustand]]: uma store observável que componentes React se inscrevem via [[wiki/concepts/useEffect]], sincronizando o valor externo com [[wiki/concepts/useState]] local. Ver [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]] para a implementação completa (Observer + `Map` para o valor + Hook de sincronização).
+
+## Como terceiro estágio de desacoplamento (não a única opção correta)
+
+[[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] enquadra o Observer como o terceiro de três estágios de acoplamento — não superior por natureza, mas o único que elimina até a dependência estática/explícita entre componentes:
+
+1. **Estágio 1** — tudo misturado num mesmo lugar (ótimo só para prototipagem rápida).
+2. **Estágio 2** — componentes isolados, mas um chama o outro de forma estática/explícita (ex.: via [[wiki/concepts/factory-pattern]]). É como a maioria do software profissional é construído, inclusive com [[wiki/concepts/dependency-injection]] — a DI torna a dependência flexível, mas não a remove.
+3. **Estágio 3** — nenhum componente conhece o outro nem estaticamente. É aqui que entra o Observer: o subject (`createGame`) expõe `subscribe(observerFunction)` e `notifySubscribers(command)`; observers entram e saem em runtime sem que o subject precise saber quem são.
+
+Implementação minimalista feita do zero (sem função `update()` padronizada — o autor passa a função observadora diretamente, argumentando que isso é mais flexível que exigir uma interface comum):
+
+```javascript
+function createGame() {
+  const state = { observers: [] };
+  function subscribe(observerFunction) { state.observers.push(observerFunction); }
+  function notifySubscribers(command) {
+    state.observers.forEach((observerFunction) => observerFunction(command));
+  }
+  return { subscribe, notifySubscribers };
+}
+```
+
+**Trade-off explícito da fonte**: o custo de complexidade do Observer só se paga quando há múltiplos observers anexados ao mesmo subject — com um único observer, "talvez não valha a pena". O ganho concreto: anexar um novo observer (ex.: uma camada de rede escutando os mesmos comandos de teclado para sincronizar cliente e servidor) tem impacto quase zero no código já existente, porque nem o subject nem os observers anteriores precisam mudar.
+
 ## Relação com outros conceitos
 
 - Base conceptual do [[mensageria]] e sistemas event-driven
@@ -75,3 +119,5 @@ class VideoChannel {
 
 - [[sources/sete-padroes-de-design-de-software]]
 - [[sources/design-pattern-observer]]
+- [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]] — implementação minimalista com `Set`, usada como base de uma store estilo Zustand
+- [[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] — Observer como terceiro estágio de desacoplamento (vs. acoplamento estático via Factory); implementação `subscribe`/`notifySubscribers` sem `update()` padronizado; trade-off complexidade vs. número de observers

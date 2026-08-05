@@ -3,8 +3,8 @@ type: entity
 title: "React"
 aliases: ["ReactJS", "React.js"]
 date_created: 2026-04-22
-date_updated: 2026-08-03
-source_count: 4
+date_updated: 2026-08-04
+source_count: 6
 tags: [react, frontend, biblioteca, facebook, meta]
 skill: tech-mentor-frontend
 status: stable
@@ -29,7 +29,7 @@ Biblioteca JavaScript para construção de interfaces de usuário. Criada pelo F
 | Necessidade | Solução |
 |---|---|
 | Roteamento web | React Router / Next.js App Router |
-| Estado global | Zustand, Jotai, Redux Toolkit |
+| Estado global | [[wiki/concepts/zustand|Zustand]], Jotai, Redux Toolkit |
 | Server state | [[tanstack-query]], SWR |
 | Formulários | React Hook Form + Zod |
 | Metaframeworks | Next.js, Remix, Astro |
@@ -45,3 +45,5 @@ React usa [[wiki/concepts/virtual-dom]] + [[wiki/concepts/reconciliacao]] como e
 - [[wiki/sources/react-19-memoization-sem-usememo-usecallback]]
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — React Hook Form citado como exemplo de lib madura a preferir em vez de construir gerenciamento de formulário do zero, evitando [[wiki/concepts/under-engineering]]
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]] — dez mecanismos internos genéricos a frameworks de UI, com React como exemplo citado
+- [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]] — recriação didática do mecanismo central do [[wiki/concepts/zustand|Zustand]] (Observer + `useState`/`useEffect`) sem `Provider`
+- [[wiki/sources/react-reconciliacao-memo-usememo-usecallback]] — demonstração prática no React DevTools Profiler de `React.memo`, `useMemo`, `useCallback` e do fluxo de reconciliação
