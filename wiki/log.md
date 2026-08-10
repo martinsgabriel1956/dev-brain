@@ -2,6 +2,218 @@
 
 ---
 
+## [2026-08-10] ingest | Como Escalar Leituras de Banco de Dados (System Design para Entrevistas Tier S)
+
+Fonte: [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — transcrição de vídeo (pt-BR) de Pedro Camaforte, primeiro da série de System Design para entrevistas Tier S; sem URL na fonte. Já em pt-BR, sem tradução necessária.
+Skill carregada: `tech-mentor-system-design`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-system-design/SKILL.md` e do arquivo de referência `references/read-replicas-pooling.md` (read replicas, replication lag, read-your-writes, connection pooling, PgBouncer) — domínio primário system design; secundários cobertos por `system-design-cache-lock-queue.md` e `system-design.md`.
+
+**Páginas criadas:**
+- `raw/escalar-leituras-banco-de-dados-entrevista-tier-s.md` — transcrição limpa e estruturada em Markdown (auto-transcrição em pt-BR reescrita com pontuação, cabeçalhos e seções por conceito; sem tradução)
+- `wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s.md` — TL;DR, 10 claims com evidência/confiança, exemplo prático (encurtador de URL), entidades, conceitos, perguntas em aberto, quotes preservadas
+- `wiki/entities/lucas-faria.md` — nova entidade (stub) para o autor do artigo-base da série; identidade/URL não confirmadas na fonte
+
+**Páginas atualizadas:**
+- `wiki/concepts/database-index.md` — nova linha em Key Sources (índice como 1º degrau, 500ms→2ms); `source_count` 8 → 9
+- `wiki/concepts/connection-pooling.md` — nova linha (pooling + índice = ~80% dos gargalos, custo de setup 5-10ms); `source_count` 4 → 5
+- `wiki/concepts/read-replicas.md` — nova linha (read replica como "load balancer de banco", tradeoff de lag); `source_count` 4 → 5
+- `wiki/concepts/replicacao-de-banco.md` — nova linha (escalonamento de leitura quase infinito); `source_count` 2 → 3
+- `wiki/concepts/cache.md` — nova linha (cache como último degrau: hotspots e queries caras); `source_count` 7 → 8
+- `wiki/concepts/cache-aside.md` — nova linha (fluxo cache-aside como padrão mais comum); `source_count` 1 → 2
+- `wiki/concepts/tradeoff-de-cache.md` — nova linha (invalidação: TTL, deletar, atualizar); `source_count` 1 → 2
+- `wiki/concepts/cache-hot-path.md` — nova linha (hotspot de celebridade 200k req/s, URLs virais); `source_count` 1 → 2
+- `wiki/concepts/cdn.md` — nova linha (CDN para arquivos estáticos, 400-500ms→20-50ms); `source_count` 3 → 4
+- `wiki/concepts/redis.md` — nova linha (Redis como cache de hotspot no encurtador); `source_count` 7 → 8
+- `wiki/concepts/entrevista-system-design.md` — nova linha (o erro que elimina 90%: solução sem contexto); `source_count` 5 → 6
+- `wiki/concepts/escalabilidade-horizontal.md` — nova linha (read replicas como scale-out da leitura); `source_count` 9 → 10
+- `wiki/concepts/niveis-de-senioridade-system-design.md` — nova linha (gradação pleno vs. sênior num problema de banco); `source_count` 3 → 4
+- `wiki/entities/pedro-camaforte.md` — nova linha em Key Sources + nota da série/artigo-base; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources (topo) e em Entities (Lucas Faria)
+
+**Notas:** Segunda fonte de Pedro Camaforte na wiki — a primeira ([[wiki/sources/updates-tempo-real-polling-sse-websocket]]) é outro vídeo da mesma série de sete. Nenhuma contradição com a wiki existente: os números de replication lag do vídeo ("até segundos") são coerentes com a referência do skill (<100ms típico em LAN, até segundos sob carga), e o custo de conexão que o vídeo dá (5-10ms de setup) complementa — não conflita com — a dimensão de RAM/teto de conexões do skill; ambas as nuances foram marcadas como confiança média/alta nos claims. Perguntas em aberto: identidade/URL do artigo de Lucas Faria não confirmadas; próximo vídeo da série (escalar **escritas**) é candidato a ingestão futura para fechar o par leitura/escrita. Nenhum link quebrado identificado nas páginas tocadas.
+
+---
+
+## [2026-08-10] ingest | Por que sua code base degrada — e como conter a entropia
+
+Fonte: [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — transcrição de vídeo (pt-BR), sem URL/autor identificados na transcrição (canal BR de curso de DSA/LeetCode).
+Skill carregada: `tech-mentor-leadership`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/SKILL.md` e do arquivo de referência `references/tech-debt-management.md` (Quadrante de Fowler, categorias de débito, hotspot analysis, estratégias de pagamento, Boy Scout Rule, debt sprint, comunicação ao negócio) — domínio primário liderança/gestão técnica.
+
+**Páginas criadas:**
+- `raw/por-que-code-bases-degradam-estrategias-code-rot.md` — transcrição limpa e estruturada em Markdown (já estava em pt-BR, sem tradução necessária; pontuação/cabeçalhos adicionados, dois blocos publicitários preservados e marcados como tal no fim)
+- `wiki/sources/por-que-code-bases-degradam-estrategias-code-rot.md` — TL;DR, 9 claims com evidência/confiança, entidades, conceitos, perguntas em aberto, quotes preservadas
+- `wiki/concepts/folga-de-capacidade-slack.md` — **novo** conceito: nunca alocar 100% da capacidade (~20% de folga), com a lógica de teoria de filas
+- `wiki/concepts/feature-freeze.md` — **novo** conceito: parada pontual para pagar dívida; contraste com code freeze
+- `wiki/concepts/bus-factor.md` — **novo** conceito: o "Dev Gandalf" como sintoma de bus factor = 1
+- `wiki/entities/principles-of-product-development-flow.md` — **nova** entidade (livro; autoria Reinertsen atribuída via `[external]`, com nota de verificação)
+
+**Páginas atualizadas (backlink em Key Sources + `date_updated`/`source_count`):**
+- `wiki/concepts/entropia-de-software.md` — as quatro forças da degradação; `source_count` 1 → 2; status stub → draft
+- `wiki/concepts/boy-scout-rule.md` — regra enforçada no PR, hotfix como única exceção; `source_count` 3 → 4
+- `wiki/concepts/god-object.md` — "classe super-homem" como sintoma de code rot; `source_count` 4 → 5
+- `wiki/concepts/planning-fallacy.md` — mensurar o *erro* de estimativa; `source_count` 1 → 2
+- `wiki/concepts/goodharts-law.md` — meta de 100% de cobertura gera testes inúteis; `source_count` 2 → 3
+- `wiki/concepts/living-documentation.md` — teste como enforcement + documentação de regra de negócio; `source_count` 3 → 4
+- `wiki/concepts/adr-architecture-decision-record.md` — ADRs/comentários reduzindo dependência do Dev Gandalf; `source_count` 1 → 2
+- `wiki/concepts/refactor-vs-rewrite-matrix.md` — o padrão "V2 do zero" e por que reescrever não basta; `source_count` 3 → 4
+- `wiki/concepts/estimativas-de-software.md` — foco no erro da estimativa; `source_count` 1 → 2
+- `wiki/concepts/complexidade-ciclomatica.md` — ferramenta de apoio com ressalva de Goodhart; `source_count` 1 → 2
+- `wiki/concepts/tech-debt-como-ferramenta.md` — hotfix como fonte de dívida imprudente + folga de capacidade; `source_count` 11 → 12
+- `wiki/concepts/teste-de-integracao-estreito-vs-amplo.md` — testes de integração como melhor custo-benefício segundo CTOs; `source_count` 3 → 4
+- `wiki/index.md` — nova linha em Sources (topo), 3 novas em Concepts (Boas Práticas de Engenharia), 1 nova em Entities; `date_updated` → 2026-08-10
+
+**Notas:** Fonte fortemente organizacional — a própria transcrição afirma que "a maior parte disso é organizacional e não de código", o que se reflete em 3 dos conceitos novos serem de gestão (folga de capacidade, feature freeze, bus factor). Nenhuma contradição com a wiki existente: a fonte reforça e reancora conceitos já bem cobertos (entropia, boy scout rule, quadrante de Fowler, Goodhart). Duas incertezas registradas como perguntas em aberto na source: (1) autoria/URL do vídeo não declaradas — `author` ficou "não identificado" e `source_url` vazio; (2) a atribuição de *Principles of Product Development Flow* a Donald Reinertsen veio de conhecimento `[external]`, não da transcrição, e está marcada com nota de verificação na entidade. O conceito pré-existente `ciclo-da-desgraca-software` já cobre a espiral da "V2 do zero" mencionada no vídeo, então essa parte foi ligada a ele e a `refactor-vs-rewrite-matrix` em vez de virar página nova. Nenhum link quebrado nas páginas criadas ou tocadas.
+
+## [2026-08-10] ingest | O Paradoxo da Aceleração — 93% dos devs usam IA, produtividade sobe 10%
+
+Fonte: [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]] — transcrição de vídeo (pt-BR), sem URL/autor identificados na transcrição.
+Skill carregada: `tech-mentor-leadership`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/SKILL.md` e do arquivo de referência `references/engineering-metrics.md` (DORA, SPACE, Output vs. Outcome, Lei de Goodhart) — domínio primário é métricas de engenharia; IA é domínio secundário.
+
+**Páginas criadas:**
+- `raw/paradoxo-da-aceleracao-ia-produtividade-metricas.md` — transcrição limpa em Markdown (já estava em pt-BR, sem tradução necessária; nomes/números corrigidos para leitura mantendo o conteúdo fiel)
+- `wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas.md` — TL;DR, 8 claims com evidência/confiança, conceitos e entidades, perguntas em aberto, quotes
+- `wiki/concepts/paradoxo-da-aceleracao.md` — velocidade individual sobe, throughput do sistema não; gargalo migra da escrita para a revisão
+- `wiki/concepts/ia-como-amplificador.md` — IA amplifica contexto/critério existentes sem julgamento; ganho desigual júnior vs. sênior em legado
+- `wiki/concepts/output-vs-outcome.md` — métricas de output infladas pela IA vs. outcome (bug rate, ciclo de review, facilidade de mudar o sistema)
+- `wiki/entities/faros-ai.md` — plataforma de engineering intelligence, fonte dos números
+
+**Páginas atualizadas:**
+- `wiki/concepts/code-review.md` — nova seção "O Gargalo Migra da Escrita para a Revisão (dados Faros AI)" (+91%); nova linha em Key Sources; `source_count` 12 → 13
+- `wiki/concepts/dora-metrics.md` — nova seção "Output vs. Outcome"; nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/concepts/novo-perfil-dev-ia.md` — nova seção "Convergência Engenheiro ↔ Manager"; nova linha em Key Sources; `source_count` 5 → 6
+- `wiki/concepts/roi-de-ia.md` — nova seção "Quantificação do Vazamento: 93% adoção, 10% ganho"; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/goodharts-law.md` — nova seção "Caso IA: métricas de output viram alvo"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/burnout-dev.md` — nova seção "30% Já Bateram nos Limites de Uso"; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/ia-como-chicote-de-produtividade.md` — nova seção "Confirmação quantitativa"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/entities/gergely-orosz.md` — nova seção "Survey sobre Ganho Desigual de IA por Seniority (2026)"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources; 3 novas linhas em "IA em Organizações — Custo, ROI e Adoção"; 1 nova linha em Entities (Faros AI)
+
+**Notas:** Fonte já em português — nenhuma tradução necessária, só limpeza da transcrição (garbles de áudio corrigidos: "Fels/Farzoi AI" → Faros AI, "sior/deves" → sênior/devs). O material se encaixa quase perfeitamente na cobertura existente da wiki sobre produtividade com IA: [[wiki/concepts/roi-de-ia]] já descrevia o "ganho individual que não sobe para a empresa" e [[wiki/concepts/ia-como-chicote-de-produtividade]] já tinha o "tempo economizado realocado para mais trabalho" — o novo material adiciona o número que faltava (93%/10%) e nomeia o mecanismo (paradoxo da aceleração). O ângulo genuinamente novo é o gargalo de code review (+91%) como ponto exato de vazamento, e o dado de ganho desigual por seniority (survey Pragmatic Engineer / [[wiki/entities/gergely-orosz]]). **Ressalva de confiança:** todos os números (Faros AI e Pragmatic Engineer) vêm da transcrição de áudio e não foram cross-checados contra os relatórios primários — registrado como pergunta em aberto na source e como nota de ressalva nas páginas `faros-ai` e `paradoxo-da-aceleracao`. Nenhum link quebrado identificado nas páginas criadas ou tocadas.
+
+## [2026-08-07] ingest | Os Conceitos que Regem a Computação: Bits, Máquina de Turing e Complexidade
+
+Fonte: [[wiki/sources/conceitos-que-regem-a-computacao-bits-turing-complexidade]] — transcrição de vídeo (português, sem tradução necessária), autor/canal não identificado.
+Skill carregada: `cs-fundamentals`, lida de `/home/gabriel-martins/Documentos/skills/cs-fundamentals/SKILL.md` e do arquivo de referência `references/computation-theory.md` (Máquina de Turing, autômatos, P vs NP, decidibilidade).
+
+**Páginas criadas:**
+- `raw/conceitos-que-regem-a-computacao-bits-turing-complexidade.md` — transcrição limpa e estruturada (correção de erros de ASR; segmento patrocinado omitido)
+- `wiki/sources/conceitos-que-regem-a-computacao-bits-turing-complexidade.md` — TL;DR, 9 claims com evidência, entidades, conceitos, 4 perguntas em aberto, raw quotes
+- `wiki/concepts/sistema-binario-bit-byte.md` — bit (binary digit) / byte (8 bits) / hierarquia de composição / processamento via lógica
+- `wiki/concepts/maquina-de-turing.md` — fita, cabeça, tabela de transição; poder = qualquer algoritmo computável; lugar na hierarquia de Chomsky
+- `wiki/concepts/determinismo-vs-nao-determinismo.md` — uma ação vs. várias por (estado, símbolo); nota de precisão separando não-determinismo (NP) de computação quântica (BQP)
+- `wiki/concepts/complexidade-computacional.md` — tempo/espaço, Big O assintótico, tabela O(n)/O(n²)/O(2ⁿ), ligação com determinismo e com criptografia
+- `wiki/entities/alan-turing.md` — nova entidade para o autor do modelo (1936)
+
+**Páginas atualizadas:**
+- `wiki/concepts/big-o.md` — 2 novas relações (complexidade-computacional, determinismo) + linha em Key sources; `source_count` 6 → 7; `date_updated`
+- `wiki/concepts/bitwise-operations.md` — nova relação (sistema-binario) + linha em Key Sources; `source_count` 1 → 2; `date_updated`
+- `wiki/concepts/criptografia.md` — nova seção "Por que a criptografia é (praticamente) inquebrável — o argumento da complexidade" + relação + linha em Key sources; `source_count` 4 → 5; `date_updated`
+- `wiki/concepts/logica-booleana.md` — 2 novas relações (sistema-binario, bitwise) + linha em Key sources; `source_count` 1 → 2; `date_updated`
+- `wiki/index.md` — nova linha em Sources; 4 novas linhas em "Fundamentos de CS"; nova linha em Entities
+
+**Notas:** Fonte é um segundo vídeo de "conceitos fundamentais", distinto de [[wiki/sources/10-conceitos-fundamentais-computacao]] (que cobre 10 conceitos amplos) — este é mais focado e mais profundo em teoria da computação (Turing, determinismo, complexidade), então tratado como fonte nova, não duplicata. Três imprecisões didáticas da fonte foram registradas explicitamente em vez de reproduzidas como fato: (1) associar não-determinismo a computadores quânticos — sinalizado como não-equivalência (NP ≠ BQP) na página de determinismo e na source, apoiado em `references/computation-theory.md`; (2) "quebrar criptografia é O(2ⁿ)" tratado como generalização (a dureza real depende do algoritmo) tanto em `complexidade-computacional` quanto em `criptografia`; (3) a fonte não nomeia P/NP nem o Problema da Parada, embora o não-determinismo aponte para eles — deixado como pergunta em aberto para fonte futura. A distinção entre `determinismo-vs-nao-determinismo` (CS) e a já existente `determinismo-vs-probabilismo-em-ia` (IA) foi linkada nos dois sentidos para evitar confusão de homônimos. Nenhum link quebrado identificado nas páginas criadas ou tocadas.
+
+## [2026-08-06] ingest | Seis Design Patterns Mais Usados na Prática
+
+**Fonte:** [[wiki/sources/seis-design-patterns-mais-usados-na-pratica]] — transcrição de áudio (ASR corrido, sem pontuação) colada pelo usuário, já em português (sem necessidade de tradução). Limpa, pontuada e reestruturada em markdown por seções, salva em `raw/seis-design-patterns-mais-usados-na-pratica.md`. Vídeo de autoria não identificada (título e canal ausentes na transcrição) percorrendo os seis design patterns mais usados no mundo real, cada um introduzido por analogia do cotidiano: Observer (sino de inscrição do YouTube), Factory (pedido numa pizzaria), Singleton (elevador único de prédio), Decorator (filtros empilhados do Instagram), Strategy (opções de rota do GPS) e Adapter (adaptador de tomada de viagem). Fecha com nota sobre composição entre patterns (factory criando singleton; observer usando strategy; adapter envolvendo objeto de factory) e alerta contra aplicar pattern sem problema real por trás.
+
+**Skill carregada:** `tech-mentor-backend`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/SKILL.md` e do arquivo de referência `references/design-patterns.md` (seção "Design Patterns GoF — Os 10 Mais Relevantes") — mesma nota de path drift já registrada em ingestões anteriores (`CLAUDE.md` aponta para `/home/nemomartins/Documentos/new/skills/`, inexistente neste ambiente; skill real em `/home/gabriel-martins/Documentos/skills/`).
+
+**Páginas criadas:**
+- `raw/seis-design-patterns-mais-usados-na-pratica.md` — transcrição reorganizada em seções por padrão, com limpeza de ruído de fala
+- `wiki/sources/seis-design-patterns-mais-usados-na-pratica.md` — TL;DR, 6 claims com evidência e confiança, tabela-resumo dos 6 padrões, seção de interação entre patterns, conexões com fontes já existentes, 2 perguntas em aberto
+
+**Páginas atualizadas** (todas as 6 já existiam na wiki — nenhum stub novo necessário):
+- `wiki/concepts/observer-pattern.md` — nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/concepts/factory-pattern.md` — nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/singleton-pattern.md` — nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/concepts/decorator-pattern.md` — nova seção "Exemplo: encadeamento de canais de notificação" com nota de precisão técnica sobre decorators de linguagem (TypeScript/Angular/NestJS) vs. Decorator Pattern estrutural GoF; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/strategy-pattern.md` — novo bullet em "Exemplos reais" (validação de formulário por campo); nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/adapter-pattern.md` — nova linha em Key Sources; `source_count` 5 → 6
+- `wiki/index.md` — nova linha em Sources (no topo)
+
+**Notas:** Diferente de [[wiki/sources/sete-padroes-de-design-de-software]] (atribuído ao canal Forest), esta transcrição não trouxe título, canal ou apresentador — a fonte foi registrada com `author: ""` e `source_url: ""`, e a lacuna ficou marcada como pergunta em aberto na source page, em vez de inferir uma atribuição sem confiança. Todas as 6 páginas de conceito tocadas já existiam e estavam maduras (`status: stable` em 5 delas; `decorator-pattern.md` seguia como `status: stub` e permanece assim — o conteúdo novo a densificou, mas não achei justificativa para promover o status sem uma seção "Como funciona" e "Trade-offs" nos moldes das demais, que ficam como candidata a melhoria futura). A única divergência técnica identificada entre a fonte e o skill consultado foi a equiparação, feita pelo autor do vídeo, entre decorators de linguagem do TypeScript (`@Injectable`, `@Component`) e o Decorator Pattern estrutural do GoF — mecanicamente distintos (metadata/reflection em tempo de definição vs. wrapping de objeto em runtime), ainda que a analogia funcional (adicionar comportamento sem alterar a classe original) procede; registrada como nota de precisão em `decorator-pattern.md` e como claim de confiança média na source page, seguindo o mesmo padrão cauteloso usado em ingestões anteriores para claims tecnicamente aproximadas. Nenhum link quebrado identificado nas páginas criadas ou tocadas por esta ingestão.
+
+## [2026-08-06] ingest | Oracle Demitiu Milhares de Pessoas com um E-mail Automático — E Como Construir o Agente que Fez Isso
+
+**Fonte:** [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] — transcrição bruta de vídeo fornecida pelo usuário como texto ASR corrido, sem pontuação, já em português (sem necessidade de tradução). Limpa, pontuada e reestruturada em markdown por seções, salva em `raw/oracle-demite-milhares-anatomia-agente-dba-autonomo.md`. Abertura de nova temporada do canal (autoria inferida: Lucas Montano) reagindo ao layoff de 20-30 mil pessoas na Oracle — motivo alegado/vazado é substituição de DBAs por agentes de IA em piloto há 8+ meses, mas o vídeo trata a causalidade direta com ceticismo. Usa o evento como gancho para ensinar um blueprint prático de agente autônomo de produção (5 peças de arquitetura: LLM Planner com playbook → tool call loop → observação → decisão → write-back; 4 componentes essenciais: trigger orientado a evento, whitelist de ferramentas, loop de observação, escape hatch por limiar de confiança), com exemplos concretos (agente de DBA, agente de bug-fix a partir de alerta do Sentry, agente de halt de release em rollout canário). Fecha com a tese de que automação só demite quando a empresa não converte o tempo liberado em mais valor — quem mantém o time e multiplica a produção supera quem demite para manter o mesmo output.
+
+**Skill carregada:** `tech-mentor-ai`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/SKILL.md`; calibração cruzada com `references/ai/agents-core.md` (fundamentos de tool use, ReAct loop, idempotência, agent security) — confirma que o blueprint de 5 peças/4 componentes descrito na fonte é consistente com os padrões já documentados no wiki (ciclo ReAct, least privilege em tool calling, HITL), sem introduzir claim técnica nova de alto risco — as afirmações mais especulativas (causa do layoff, limiar de 70% de confiança) já vieram marcadas como confiança baixa/média na source page.
+
+**Páginas criadas:**
+- `raw/oracle-demite-milhares-anatomia-agente-dba-autonomo.md` — transcrição limpa, estruturada por seção
+- `wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo.md` — TL;DR, 6 claims com evidência/confiança, detalhe da anatomia do agente, conceitos/entidades relacionadas, 2 perguntas abertas
+- `wiki/entities/oracle.md` — página nova (stub): empresa, layoff, contexto de market cap/Larry Ellison
+
+**Páginas atualizadas:**
+- `wiki/concepts/agente-ia.md` — nova seção "Blueprint de Produção: as 5 Peças e os 4 Componentes"; `source_count` 3 → 4
+- `wiki/concepts/ciclo-agente.md` — nova seção "Variante Orientada a Trigger (Não a Chat)"; `source_count` 7 → 8
+- `wiki/concepts/human-in-the-loop.md` — nova seção "Escape Hatch por Limiar de Confiança"; `source_count` 4 → 5
+- `wiki/concepts/principio-do-menor-privilegio.md` — nova subseção sobre whitelist de tool calling em agentes autônomos; `source_count` 3 → 4
+- `wiki/concepts/playbook.md` — nova seção "Playbook como System Prompt de Agente"; `source_count` 1 → 2
+- `wiki/concepts/era-agentica.md` — novo Key Source; `source_count` 3 → 4
+- `wiki/concepts/paradoxo-de-jevons.md` — nova seção "Aplicação a Emprego (Não Só a Custo de Token)"; `source_count` 2 → 3
+- `wiki/concepts/oracle-database.md` — nova frase ligando o custo de DBA dedicado ao agente autônomo citado; `source_count` 1 → 2
+- `wiki/entities/lucas-montano.md` — novo parágrafo sobre o vídeo; `source_count` 6 → 7
+
+**Notas e contradições em aberto:**
+- A causalidade "agentes de DBA → layoff de 20-30 mil" não tem fonte primária citada na transcrição — registrada como confiança baixa/média na source page, não deve ser tratada como fato consolidado se reaparecer em outras fontes.
+- O limiar de "confiança < 70%" do escape hatch é ilustrativo, sem metodologia de calibração citada.
+- `wiki/concepts/paradoxo-de-jevons.md` ganhou uma aplicação a headcount/emprego que é estruturalmente análoga à aplicação original a custo de token, mas trata-se de um domínio diferente (mercado de trabalho vs. inferência) — mantido como seção separada para não confundir as duas aplicações.
+
+---
+
+## [2026-08-06] ingest | UUID: qual o melhor caminho? (pergunta do Diogo)
+
+**Fonte:** [[wiki/sources/uuid-quando-usar-pergunta-diogo]] — transcrição bruta de áudio fornecida pelo usuário como texto ASR corrido, sem pontuação, já em português (sem necessidade de tradução). Limpa, pontuada e reestruturada em markdown por seções, salva em `raw/uuid-quando-usar-pergunta-diogo.md`. Resposta a uma pergunta de espectador (Diogo) sobre quando vale a pena usar UUID/GUID: dois argumentos de negócio a favor (evitar colisão de chave ao consolidar bases separadas por shard/cliente/região; dificultar ataques de enumeração de recursos/IDOR em APIs REST) contra três desvantagens (espaço, comparação manual difícil, performance de índice); recomendação prática de estratégia híbrida (sequência interna + UUID/hash só nas tabelas expostas por rota); fecha com pergunta de outro espectador (Marco Vinícius) sobre UUID ser mais comum em bancos NoSQL/orientados a documentos e de grafos.
+
+**Skill carregada:** `tech-mentor-data`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-data/SKILL.md`; calibração cruzada com `references/databases/distributed.md` (seção de escolha de shard key, que já lista UUID como opção para evitar hotspots) e `references/databases/relational.md` (uso de UUID como PK em exemplos de schema) — ambos confirmam que a discussão da fonte é consistente com o material de referência, sem introduzir claims técnicas novas sobre versões de UUID (a fonte não diferencia v4 de v7).
+
+**Páginas criadas:**
+- `raw/uuid-quando-usar-pergunta-diogo.md` — transcrição limpa, estruturada por seção
+- `wiki/sources/uuid-quando-usar-pergunta-diogo.md` — TL;DR, 8 claims com evidência, conceitos relacionados, 2 perguntas abertas
+- `wiki/concepts/multitenancy.md` — página nova (stub): compartilhamento de tabelas entre tenants e o risco de IDOR associado, citado pela fonte como motivador do uso de UUID
+
+**Páginas atualizadas:**
+- `wiki/concepts/uuid.md` — nova seção "Quando vale a pena usar (além de performance)" com os dois argumentos de negócio e a estratégia híbrida; `source_count` 1 → 2
+- `wiki/concepts/idor.md` — nova seção sobre UUID como mitigação parcial de enumeração (não substitui autorização) e o caso de uso de UUID como "senha implícita" de recurso não autenticado; `source_count` 3 → 4
+- `wiki/concepts/db-sharding.md` — nova seção "Merge de Bases Shardeadas e Colisão de Chave" com o caso real de reescrita manual de chaves; `source_count` 6 → 7
+
+**Notas e contradições em aberto:**
+- A fonte trata UUID de forma genérica, sem diferenciar v4 (aleatório) de v7 (ordenável por timestamp) — [[wiki/sources/uuid-primary-key-mysql]] já cobre essa diferença e o problema de page splitting no B+ Tree que a fonte atual não menciona. Nenhuma contradição, apenas granularidade menor nesta fonte.
+- A estratégia híbrida descrita (sequência interna + UUID público) não detalha se o UUID exposto é gerado independentemente ou derivado do ID interno via hash — ponto em aberto registrado na fonte.
+
+---
+
+## [2026-08-05] ingest | Graph Engineering: Do Loop ao Grafo
+
+**Fonte:** [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — transcrição bruta de vídeo fornecida pelo usuário como texto ASR, sem pontuação, já em português (sem necessidade de tradução). Limpa, pontuada e reestruturada em markdown por seções, salva em `raw/graph-engineering-do-loop-ao-grafo.md`. Vídeo patrocinado pela Hotmart, ensinando "graph engineering" do zero: nós/arestas/pesos com exemplos cotidianos (rotina matinal, rede social, funil de negócio tráfego→ativação→churn→LTV), a tese de que "uma métrica nunca é suficiente" para um loop de otimização de IA (CAC isolado pode subir churn e derrubar LTV), gestão de projeto (épico→história→tarefa→subtarefa) como grafo de dependências e não árvore, especulação sobre a origem do termo em Peter Steinberger rodando múltiplos loops em paralelo (~US$1M/mês em tokens) até conflitarem entre si, e fechamento sobre fundamentos de estrutura de dados como alavanca contra o FOMO de hype semanal.
+
+**Skill carregada:** `tech-mentor-ai`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/SKILL.md`, e o arquivo de referência `references/ai/agents-orchestration.md` (seção LangGraph/`StateGraph`) para calibrar o Key Claim sobre grafo como abstração de orquestração — a fonte descreve o mesmo padrão de forma coloquial, sem nomear framework, e a referência confirma que "grafo de estado" é justamente como a indústria já nomeia isso via LangGraph.
+
+**Páginas criadas:**
+- `raw/graph-engineering-do-loop-ao-grafo.md` — transcrição limpa, estruturada por seção
+- `wiki/sources/graph-engineering-do-loop-ao-grafo.md` — TL;DR, 6 claims com evidência, 11 entidades/conceitos abordados, 3 perguntas abertas
+- `wiki/entities/hotmart.md` — página nova (stub): plataforma de produtos digitais, citada como exemplo de afiliado-como-aresta no grafo produto→consumidor
+
+**Páginas atualizadas:**
+- `wiki/concepts/grafo-como-abstracao-de-agentes.md` — nova seção sobre "graph engineering" aplicado a métricas de negócio interdependentes (não só subtarefas de código) e sobre estruturas não-técnicas (gestão de projeto) que já são grafos; `source_count` 1 → 2
+- `wiki/concepts/loop-engineering.md` — nova seção "Limite do Loop: Uma Métrica Nunca é Suficiente"; `source_count` 4 → 5
+- `wiki/concepts/algoritmos-de-grafo.md` — nova seção pedagógica sobre nó/aresta/peso com exemplos fora de código; `source_count` 2 → 3
+- `wiki/concepts/ltv-cac.md` — nova seção sobre por que um agente não deve otimizar CAC isoladamente; `source_count` 2 → 3
+- `wiki/concepts/fomo-tecnologico.md` — nova seção sobre fundamentos como alavanca contra o ciclo semanal de hype; `source_count` 3 → 4
+- `wiki/concepts/worktree-paralelismo.md` — nova linha em Key Sources (caso-limite especulativo de paralelismo sem coordenação); `source_count` 9 → 10
+- `wiki/concepts/subagentes.md` — nova linha em Key Sources (gestão de projeto como grafo de dependências); `source_count` 3 → 4
+- `wiki/concepts/planner-executor-critic.md` — nova linha em Key Sources (rúbrica/checklist como peso da aresta); `source_count` 2 → 3
+- `wiki/entities/peter-steinberger.md` — nova seção documentando a segunda atribuição independente (tweet loop→grafo); `source_count` 1 → 2
+- `wiki/entities/open-claw.md` — nota de atualização registrando a segunda fonte independente convergindo na mesma atribuição de autoria a Peter Steinberger; `source_count` 2 → 3
+
+**Notas e contradições em aberto:**
+- Nenhuma das duas fontes que citam "Peter, criador do Open Claw" (esta e [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]]) cita uma fonte primária confirmando essa autoria — tratado como convergência que aumenta a probabilidade, não como confirmação.
+- A ligação entre "graph engineering" e o gasto de US$1M/mês de Peter Steinberger é especulação do autor do vídeo, marcada como baixa confiança na fonte.
+- Assim como em ingestões anteriores, o `CLAUDE.md` do repositório aponta para `/home/nemomartins/Documentos/new/skills/`, caminho que não existe neste ambiente — a skill real foi localizada em `/home/gabriel-martins/Documentos/skills/`.
+
+---
+
 ## [2026-08-04] ingest | Toolkit da AWS — Serviços Essenciais para Aplicações Escaláveis
 
 **Fonte:** [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]] — transcrição de vídeo fornecida pelo usuário como texto bruto de ASR, sem pontuação, já em português (sem necessidade de tradução). Limpa de erros de reconhecimento de fala, pontuada e estruturada em seções por serviço, salva em `raw/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis.md`. Vídeo tour do "80/20" da AWS (os serviços mais usados na prática) sem abrir o console: S3, EC2, ECS, ALB, Fargate, Elastic Beanstalk, Lambda, API Gateway, Step Functions, RDS, DynamoDB, e uma passagem rápida por SQS, SNS, CloudWatch, Secrets Manager, CloudFront e Amplify. Fio condutor em prós/contras de cada serviço, com dois eixos recorrentes: custo por tempo alocado (EC2) vs. custo por uso real (Lambda) — incluindo o argumento pouco discutido de que Lambda cobra pelo tempo ocioso de espera por I/O, não só CPU — e vendor lock-in crescente conforme mais serviços proprietários da AWS são adotados (Step Functions como caso mais extremo). Bloco publicitário de patrocinador (contabilidade online) omitido por não ser conteúdo técnico. Autor do vídeo não identificado na fonte (sem nome citado, sem correspondência com entidades já registradas na wiki).
@@ -5659,3 +5871,232 @@ Skill carregada: `cs-fundamentals`, lida de `/home/gabriel-martins/Documentos/sk
 - `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`bucket-sort`)
 
 **Notas:** Sem contradições técnicas com a wiki existente — a fonte reforça e aprofunda com exemplos concretos claims já documentadas (custo de ordenação, O(1) de hash map, técnica de two pointers), sem introduzir nada que contradiga o que já estava registrado. Achado de lint incidental: `wiki/sources/two-sum-explicacao.md` tinha dois links quebrados no formato de path antigo (`[[concepts/hash-map]]` e `[[concepts/time-space-tradeoff]]`, sem prefixo `wiki/`) — ambos corrigidos por resolverem para páginas já existentes; o terceiro link da mesma lista, `[[concepts/complement-pattern]]`, continua quebrado (página nunca existiu) e não foi criado por não ser central a esta ingestão — fica registrado aqui para varredura de lint futura. Autoria da fonte não identificada no vídeo; único indício é o cupom de patrocínio "Augusto 20" (serviço de câmbio/remessas), tratado como evidência fraca de que o autor seria [[wiki/entities/augusto-galego]] — mais fraca que as inferências anteriores desse mesmo autor (que se apoiavam em padrões de patrocínio idênticos ou citação de produtos próprios), registrada como open question em ambos os lados do link. Página nova `bucket-sort.md` preenche uma lacuna que a wiki não tinha: nenhuma fonte anterior documentava um algoritmo de ordenação não-comparativo (a tabela de `algoritmos-de-ordenacao.md` só cobria bubble/insertion/merge sort, todos comparativos).
+
+---
+
+## [2026-08-05] ingest | Achei um Esquema pra Rodar Cloud Code de Graça (Rotação de Contas Free Tier via LLM Router)
+
+Fonte: [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] (transcrição de vídeo fornecida pelo usuário como texto bruto de reconhecimento de fala, sem pontuação, já em português — sem necessidade de tradução; limpa de erros de ASR, pontuada e organizada em seções em `raw/` antes da ingestão; nome do produto demonstrado ouvido foneticamente como "Nine Router", grafia não confirmada, registrado como nota de rodapé na transcrição e como open question na página de source)
+
+Skill carregada: `tech-mentor-ai`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/SKILL.md` e dos arquivos de referência `references/ai/ai-gateway.md` (LiteLLM/Portkey, drop-in `base_url`, fallback declarativo — usado para calibrar o conceito novo de AI Gateway) e `references/ai/model-routing-selection.md` (RouteLLM, cascade, intent-based routing — usado para confirmar a distinção entre model routing e rotação de contas). Mesma nota já registrada em ingestões anteriores: o `CLAUDE.md` do repositório aponta para `/home/nemomartins/Documentos/new/skills/` e `/home/nemomartins/Documentos/new/dev-study/`, caminhos que não existem neste ambiente — a skill real foi localizada em `/home/gabriel-martins/Documentos/skills/` e o repo real é `/home/gabriel-martins/Documentos/dev-brain/`. Da mesma forma, não existem templates em `.obsidian/templates/` — seguida a convenção já estabelecida de usar uma página de source existente (`10-conceitos-fundamentais-backend.md`) como modelo estrutural.
+
+**Páginas criadas:**
+- `raw/rotacao-de-contas-free-tier-llm-router-hostinger.md` — transcrição limpa, organizada em seções (o que é o Nine Router, instalação via Hostinger, providers e rotação de contas free tier, configuração do Claude Code, mapeamento de modelo, Token Saver, sessão longa e fallback silencioso, contraponto de risco, fechamento)
+- `wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger.md` — TL;DR, 8 claims com evidência, 6 entidades, 7 conceitos abordados, 4 perguntas abertas, 4 quotes
+- `wiki/concepts/ai-gateway-llm-router.md` — página nova (stub): AI Gateway/proxy self-hosted compatível com API Anthropic/OpenAI, drop-in replacement via `base_url`, com dois usos distintos (mapeamento de modelo vs. rotação de contas)
+- `wiki/concepts/rotacao-de-contas-free-tier.md` — página nova (stub): rotação de múltiplas contas free tier do mesmo provider como eixo de decisão ortogonal ao model routing, com tabela comparativa e risco de banimento por ToS
+- `wiki/entities/openrouter.md` — página nova (stub): agregador de acesso a múltiplos modelos por trás de uma API única
+
+**Páginas atualizadas:**
+- `wiki/concepts/roteamento-automatico-de-modelo.md` — nova seção "Caso adjacente, eixo diferente: Rotação de Contas Free Tier"; duas novas linhas em Relação com outros conceitos; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/proxy-pattern.md` — nova seção "Exemplo Concreto — Remote Proxy em Produto Real (AI Gateway)"; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/rate-limiting.md` — nova seção "Contornando Rate Limit por Conta: Rotação de Free Tier"; nova linha em Key Sources; `source_count` 5 → 6
+- `wiki/concepts/vendor-lock-in-cloud.md` — nova seção "Variante: Lock-in de Ferramenta de IA a um Único Vendor de Modelo"; nova linha em Relação com outros conceitos; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/context-window.md` — nova seção "Contexto Compartilhado Entre Modelos num Gateway com Fallback"; nova linha em Fontes; `source_count` 2 → 3
+- `wiki/concepts/lock-in-vendor-ia.md` — nova linha em Relação com Outros Conceitos, cruzando com a variante mais tática registrada em `vendor-lock-in-cloud.md`
+- `wiki/entities/claude-code.md` — nova seção "Lockin de Modelo Contornável via Base URL Customizada"; nova linha em Key Sources; `source_count` 13 → 14
+- `wiki/entities/hostinger.md` — novo parágrafo sobre o terceiro bloco patrocinado (deploy de um clique do AI Gateway); nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/entities/anthropic.md` — nova linha em Fontes/Key Sources; `source_count` 17 → 18
+- `wiki/entities/openai.md` — nova linha em Fontes; `source_count` 9 → 10
+- `wiki/entities/google.md` — nova seção "Gemini CLI e Detecção de Uso Não-Oficial de Ferramenta"; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts → Agentes & LLMOps (`ai-gateway-llm-router`, `rotacao-de-contas-free-tier`); nova linha em Entities (`openrouter`)
+
+**Notas:** Sem contradições com a wiki existente. O achado mais interessante desta ingestão foi a distinção que a própria fonte torna explícita e que a wiki não tinha antes: [[wiki/concepts/roteamento-automatico-de-modelo]] já documentava bem o padrão de escolher o *melhor modelo* para uma tarefa (RouteLLM, cascade, intent-based, Custom Router da Abacus.AI), mas nenhuma fonte anterior cobria o padrão ortogonal de rotacionar *credenciais equivalentes* do mesmo provider quando uma esgota a cota — daí a criação de [[wiki/concepts/rotacao-de-contas-free-tier]] como conceito irmão, não substituto, ligado ao mesmo mecanismo de infraestrutura ([[wiki/concepts/ai-gateway-llm-router]]) mas com objetivo diferente (contornar limite de conta, não otimizar qualidade/custo). Segundo achado relevante: a wiki já tinha [[wiki/concepts/lock-in-vendor-ia]] (lock-in de memória organizacional, via Claude Tag) documentando uma variante mais estratégica/estrutural do mesmo tema — esta fonte deu o caso tático oposto (lock-in de modelo numa ferramenta cliente, contornável trocando uma `base_url`), adicionado como nova seção em [[wiki/concepts/vendor-lock-in-cloud]] com cross-link explícito entre as duas variantes. Terceiro achado: o teste ao vivo do "Token Saver" é uma anedota única, sem controle, que contraria a expectativa geral de que compressão de contexto/output reduz consumo de tokens (documentado em `references/ai/token-economics.md` da skill) — registrado como open question na página de source em vez de tratado como fato generalizável, já que o próprio autor da fonte admite a mesma limitação metodológica. A fonte tem um componente de risco/legalidade explicitamente discutido pelo próprio autor (rotação de contas free tier pode violar ToS de provedores e levar a banimento) — tratado nesta ingestão como fato relatado e contextualizado (ver [[wiki/concepts/rotacao-de-contas-free-tier]] e as novas seções em `google.md`/`claude-code.md`), sem endosso nem instrução de como implementar o esquema, consistente com o papel desta wiki de registrar conteúdo de fontes de terceiros com análise crítica. Nenhum broken link identificado nas páginas tocadas.
+
+---
+
+## [2026-08-05] ingest | Infrastructure as Code — Por Que Parar de Clicar no Console da AWS (com Demo em AWS CDK)
+
+Fonte: [[wiki/sources/infraestrutura-como-codigo-cdk-aws]] (transcrição de vídeo fornecida pelo usuário como texto bruto de reconhecimento de fala, sem pontuação, já em português — sem necessidade de tradução; limpa de erros de ASR — incluindo a normalização fonética recorrente "WS" → "AWS" ao longo de toda a transcrição —, pontuada e organizada em seções em `raw/` antes da ingestão; bloco patrocinado inicial da AmaX mantido de forma resumida por ser curto e tangencialmente técnico, seguindo o mesmo critério de fontes anteriores que preservam blocos patrocinados relevantes ao tema)
+
+Skill carregada: `tech-mentor-infra`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-infra/SKILL.md` e do arquivo de referência `references/terraform.md` (seção "Trade-offs", usada para confirmar a árvore de decisão "só AWS → CDK/CloudFormation mais natural" vs. "multi-cloud → Terraform/OpenTofu" citada no vídeo, e a nota sobre o fork OpenTofu após a mudança de licença do Terraform para BSL em 2023) e `references/cloud/aws.md` (tabela de compute, para confirmar o posicionamento de Lambda como serviço event-driven). Mesma nota já registrada em ingestões anteriores: o `CLAUDE.md` do repositório aponta para `/home/nemomartins/Documentos/new/skills/` e `/home/nemomartins/Documentos/new/dev-study/`, caminhos que não existem neste ambiente — a skill real foi localizada em `/home/gabriel-martins/Documentos/skills/` e o repo real é `/home/gabriel-martins/Documentos/dev-brain/`. Não existem templates em `.obsidian/templates/` — seguida a convenção já estabelecida de usar uma página de source existente (`rotacao-de-contas-free-tier-llm-router-hostinger.md`) como modelo estrutural.
+
+**Páginas criadas:**
+- `raw/infraestrutura-como-codigo-cdk-aws.md` — transcrição limpa, organizada em seções (bloco patrocinado AmaX, problema da configuração manual, o que é IaC, por que IaC existe, ferramentas de IaC, arquitetura de exemplo em stack, demo prática com AWS CDK — bucket S3 + Lambda —, deploy/destroy, verificação no console, fechamento)
+- `wiki/sources/infraestrutura-como-codigo-cdk-aws.md` — TL;DR, 8 claims com evidência e confiança, 2 entidades, 7 conceitos abordados, 3 perguntas abertas, 4 quotes
+- `wiki/concepts/infraestrutura-como-codigo.md` — página nova (stub): IaC como categoria central, problema que resolve (config manual não versionada/documentada), benefícios (versionamento, revisão, replicabilidade, automação), panorama de ferramentas
+- `wiki/concepts/aws-cdk.md` — página nova (stub): CDK como código de propósito geral (TypeScript) que sintetiza para CloudFormation, modelo mental (App/Stack/construtos), fluxo `cdk deploy`/`cdk destroy`, risco de lógica não-determinística e de região mal configurada
+- `wiki/concepts/aws-cloudformation.md` — página nova (stub): formato declarativo nativo AWS, papel como artefato de fato aplicado por trás do CDK
+
+**Páginas atualizadas:**
+- `wiki/entities/amazon-web-services.md` — nova seção "Console Manual vs. Infrastructure as Code"; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/aws-lambda.md` — nova seção "Provisionamento via Infrastructure as Code"; nova linha em Relação com outros conceitos (`aws-cdk`); nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/api-gateway.md` — nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/concepts/postgresql.md` — nova linha em Key Sources (menção arquitetural breve, sem claim técnico novo); `source_count` 7 → 8
+- `wiki/entities/augusto-galego.md` — nova seção "Possível Conteúdo de Infraestrutura como Código / AWS CDK (Autoria Inferida, Evidência de Conteúdo)"; nova linha em Key Sources; `source_count` 6 → 7
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts → AWS & Cloud (`infraestrutura-como-codigo`, `aws-cdk`, `aws-cloudformation`)
+
+**Notas:** Sem contradições técnicas com a wiki existente — nenhuma fonte anterior cobria IaC como categoria central, apesar de [[wiki/sources/terraform]] já existir isoladamente como source page sobre Terraform especificamente; esta ingestão preenche a lacuna do conceito guarda-chuva (`infraestrutura-como-codigo.md`) que várias fontes técnicas da wiki pressupunham sem nomear explicitamente. Achado de lint incidental (não corrigido nesta ingestão, por não ser central a ela): `wiki/sources/terraform.md` já linkava desde sua criação para `[[concepts/terraform]]`, `[[concepts/iac]]`, `[[concepts/terraform-state]]`, `[[concepts/terraform-modules]]`, `[[concepts/terragrunt]]` e `[[concepts/drift-detection]]` — nenhuma dessas seis páginas existe (nem no formato de path antigo sem `wiki/`, nem no formato correto) — seis links quebrados que ficam registrados aqui para uma sessão de lint dedicada, já que corrigi-los criando seis páginas novas extrapolaria o escopo desta ingestão (o vídeo de hoje não é sobre Terraform especificamente, só o cita como uma entre várias ferramentas). Achado de autoria: a inferência de que esta fonte pertence a [[wiki/entities/augusto-galego]] é apoiada por sobreposição de conteúdo do curso pago (mesmos tópicos exatos: API Gateway, Lambda, banco de dados; mesma política de reembolso integral em um mês sem questionamento) mas enfraquecida pelo sponsor diferente (AmaX, não HostGator/Hostinger como nas fontes já confirmadas/inferidas dessa entidade) — tratada como open question tanto na fonte quanto na entidade, consistente com o padrão de inferências de autoria mais fracas já registrado nesta wiki (ver casos análogos em `resolvendo-3-problemas-classicos-entrevista-coding-dsa.md`). Nenhum broken link novo introduzido nas páginas criadas ou tocadas por esta ingestão.
+
+---
+
+## [2026-08-06] ingest | Código Gerado por IA Tem 2,77x Mais Falhas de Segurança — e Piora a Cada Refinamento
+
+Fonte: [[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] (transcrição de vídeo em português, texto bruto de reconhecimento de fala sem pontuação, fornecida pelo usuário — sem necessidade de tradução; limpa de erros de ASR, pontuada e organizada em seções em `raw/` antes da ingestão, preservando a estrutura argumentativa original: dados → mecanismo → paper → processo)
+
+Skill carregada: `tech-mentor-ai`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/SKILL.md` e do arquivo de referência `references/ai-assisted-engineering.md` (seção "Guardrails — O Que Não Delegar para IA", usada para confirmar que segurança/autenticação/sanitização já é listada como categoria que nunca deve ir para produção sem revisão humana, e a recomendação de fluxo "spec + testes primeiro, AI implementa, humano revisa" — ambas alinhadas e reforçadas pelos dados quantitativos desta fonte). Skill secundária relevante mas não carregada como principal (uma skill por sessão de ingest, conforme `CLAUDE.md`): `tech-mentor-security`, cujo índice mapeia SAST/DAST/SCA/Shift-Left em `references/appsec-sdlc.md` — usado apenas para confirmar terminologia (SAST, delta de análise estática) já presente na wiki via `wiki/concepts/sast.md`, sem leitura completa do arquivo. Mesma nota já registrada em ingestões anteriores: o `CLAUDE.md` do repositório aponta para `/home/nemomartins/Documentos/new/skills/` e `/home/nemomartins/Documentos/new/dev-study/`, caminhos que não existem neste ambiente — a skill real foi localizada em `/home/gabriel-martins/Documentos/skills/` e o repo real é `/home/gabriel-martins/Documentos/dev-brain/`. Não existem templates em `.obsidian/templates/` — seguida a convenção já estabelecida de usar uma página de source existente como modelo estrutural.
+
+**Páginas criadas:**
+- `raw/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa.md` — transcrição limpa, organizada em seções (números/CodeRabbit/Veracode/Black Duck, mecanismo causal, o paper de degradação iterativa, os três porquês sistêmicos, cinco mudanças de processo, recomendação em nível de time, anedota de PII, fechamento)
+- `wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa.md` — TL;DR, 8 claims com evidência e confiança, 3 entidades novas, 10 conceitos abordados, 3 perguntas abertas, 5 quotes
+- `wiki/concepts/degradacao-de-seguranca-iterativa-ia.md` — página nova (draft): o achado central do paper citado (refinamento iterativo piora segurança, não melhora), os três mecanismos causais, relação com `degradacao-de-contexto` e `sast`, mitigação de processo em 5 pontos
+- `wiki/entities/coderabbit.md` — página nova (stub): fonte do múltiplo 2,77x via análise de PRs reais
+- `wiki/entities/veracode.md` — página nova (stub): relatório 2025 corroborando o mesmo múltiplo com 100+ modelos testados
+- `wiki/entities/black-duck.md` — página nova (stub): relatório sobre 947 codebases, crescimento de vulnerabilidades, gap de avaliação completa de código de IA pelas empresas
+
+**Páginas atualizadas:**
+- `wiki/concepts/governanca-de-codigo-gerado-por-ia.md` — nova seção "Dados Concretos: Segurança Degrada com Iteração, Não Só com Falta de Revisão"; nova linha em Key Sources; `source_count` 5 → 6
+- `wiki/concepts/sast.md` — nova seção "SAST no Delta, a Cada Rodada de Refinamento com IA"; nova linha em Relação com Outros Conceitos; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/devsecops.md` — nova seção "Cadência de Review Precisa Acompanhar a Velocidade de Produção com IA"; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/sql-injection.md` — nova linha em Key Sources (SQLi como padrão inseguro nos dados de treinamento de LLMs)
+- `wiki/concepts/xss.md` — nova linha em Key Sources (mesma lógica, XSS como padrão inseguro em dados de treinamento)
+- `wiki/concepts/exposicao-excessiva-de-dados.md` — nova seção "Anedota: PII em Log de Response Após Iteração com IA"; nova linha em Ver também; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/degradacao-de-contexto.md` — nova seção "Possível Variante de Domínio: Degradação de Segurança em Refinamento Iterativo"; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/vibe-coding.md` — nova linha em Key Sources (reforço quantitativo independente do ponto já central "segurança nunca é padrão"); `source_count` 13 → 14
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts → Processo de Desenvolvimento com IA (`degradacao-de-seguranca-iterativa-ia`); três novas linhas em Entities (`coderabbit`, `veracode`, `black-duck`)
+
+**Notas:** Sem contradições com a wiki existente — esta fonte reforça e quantifica um argumento que já era central em `wiki/concepts/governanca-de-codigo-gerado-por-ia.md` e `wiki/concepts/vibe-coding.md` ("segurança nunca é padrão em código gerado por IA"), mas adiciona um achado genuinamente novo que nenhuma fonte anterior cobria: o efeito de **degradação por iteração** especificamente (refinar piora, não só "gerar já nasce pior") — daí a criação de `degradacao-de-seguranca-iterativa-ia.md` como conceito próprio em vez de só uma seção dentro de uma página existente, dado que tem mecanismo causal, metodologia de paper e mitigação de processo específicos o suficiente para justificar página dedicada. Ponto de atenção epistemológico registrado como open question tanto na fonte quanto na nova página de conceito: os nomes dos autores do paper citado foram ouvidos foneticamente pela fonte original (transcrição de fala) e não puderam ser verificados nesta ingestão — o paper em si não foi localizado/lido diretamente, apenas citado através da transcrição; os números (37,6%, 400 amostras, 40 rodadas, 4 estratégias de prompt) são tratados como claims relatados pela fonte, não verificados de forma independente. Mesmo tratamento de cautela aplicado aos três relatórios de mercado (CodeRabbit, Veracode, Black Duck): páginas de entidade criadas como stubs com open question explícita sobre metodologia não verificada, seguindo o padrão já estabelecido nesta wiki para números citados sem link direto ao relatório original. Cross-link interessante identificado durante a ingestão: o mecanismo de "falta de memória de contexto de segurança entre rodadas" descrito pela fonte é possivelmente uma variante de domínio (segurança) do mesmo fenômeno já documentado em `wiki/concepts/degradacao-de-contexto.md` (perda de atenção/qualidade com janela de contexto preenchida) — mas a fonte não esclarece se as rodadas de refinamento do paper ocorreram numa única sessão longa ou em chamadas independentes, então o cruzamento foi registrado como hipótese aberta em ambas as páginas, não como fato estabelecido. Nenhum link quebrado identificado nas páginas criadas ou tocadas por esta ingestão.
+
+---
+
+## [2026-08-06] ingest | Reação a Artigo Visual sobre Algoritmos de Load Balancing
+
+Fonte: [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] (transcrição de vídeo em português — reação e tradução simultânea, ao vivo, de um artigo interativo em inglês; limpa de repetições/cacoetes de fala e organizada em seções em `raw/` antes da ingestão; sem necessidade de tradução do português falado, só dos termos técnicos em inglês que já vinham sendo traduzidos pelo próprio apresentador)
+
+Skill carregada: `tech-mentor-infra`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-infra/SKILL.md` e do arquivo de referência `references/networking-infra.md` (seção "Load Balancing Algorithms") — usada para confirmar terminologia de Round Robin/Weighted RR/Least Connections/IP Hash/Least Response Time já presente na wiki, e para adicionar uma referência cruzada não coberta pela fonte: Power of Two Choices (P2C), técnica usada internamente por Envoy/Nginx, próxima da família do PEWMA descrito no vídeo, além de uma limitação do Least Connections (estado compartilhado exigido entre múltiplos load balancers) que a fonte não menciona por descrever sempre um único LB. Mesma nota já registrada em ingestões anteriores: o `CLAUDE.md` do repositório aponta para `/home/nemomartins/Documentos/new/skills/` e `/home/nemomartins/Documentos/new/dev-study/`, caminhos que não existem neste ambiente — a skill real foi localizada em `/home/gabriel-martins/Documentos/skills/` e o repo real é `/home/gabriel-martins/Documentos/dev-brain/`. Não existem templates em `.obsidian/templates/` — seguida a convenção já estabelecida de usar uma página de source existente ([[wiki/sources/rate-limiting]]) como modelo estrutural.
+
+**Páginas criadas:**
+- `raw/reacao-artigo-visual-algoritmos-load-balancing.md` — transcrição limpa, organizada em seções (contexto, problema visualizado com 4 simulações, Round Robin, fila como mitigação, Weighted Round Robin, Dynamic Weighted Round Robin, Least Connections, PEWMA, conclusão, observações fora do artigo)
+- `wiki/sources/reacao-artigo-visual-algoritmos-load-balancing.md` — TL;DR, 7 claims com evidência, 8 conceitos tocados, 3 perguntas abertas
+
+**Páginas atualizadas:**
+- `wiki/concepts/load-balancer.md` — duas novas seções ("Dynamic Weighted Round Robin"/"PEWMA" nos algoritmos, e "Fila de requisições como mitigação" + "Por que Least Connections é mais resiliente"); nova linha em Key Sources; cross-referência com a skill (Power of Two Choices, limitação de estado compartilhado do Least Connections) marcada `[skill: tech-mentor-infra]`; `source_count` 13 → 14
+- `wiki/concepts/escalabilidade-horizontal.md` — nova linha em Key Sources; `source_count` 8 → 9
+- `wiki/concepts/alta-disponibilidade.md` — nova linha em Key Sources; `source_count` 6 → 7
+- `wiki/concepts/pub-sub.md` — nova linha em Key Sources (fila de requisições como mitigação de drops, análoga a message queue); `source_count` 4 → 5
+- `wiki/concepts/rate-limiting.md` — nova linha em Key Sources (mesmo dilema estrutural dropar-vs-enfileirar); `source_count` 6 → 7
+- `wiki/concepts/reverse-proxy.md` — nova linha em Key Sources (Nginx/Round Robin padrão, afirmação ainda não verificada); `source_count` 2 → 3
+- `wiki/concepts/cluster.md` — nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/service-discovery.md` — nova linha em Key Sources (pré-requisito implícito de todo algoritmo de balanceamento); `source_count` 2 → 3
+- `wiki/concepts/sticky-session.md` — nova linha em Key sources (contraste: algoritmos da fonte pressupõem servidores intercambiáveis); `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources
+
+**Notas:** Sem contradições técnicas com a wiki existente — esta fonte é complementar a [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] (que já cobria Round Robin, Weighted RR, Least Connections, Least Time, Sticky RR via demo prática em Nginx): o ganho genuíno desta ingestão é a progressão didática *causal* — por que cada algoritmo existe como resposta à falha do anterior sob variância de custo/potência — e dois algoritmos ainda não documentados na wiki (Dynamic Weighted Round Robin baseado em latência observada, e PEWMA). Duas afirmações da fonte permanecem como open question, já sinalizadas na página de conceito e na página de source: (1) a afirmação repetida de que Nginx usa Round Robin como padrão HTTP não foi verificada contra documentação oficial atual do Nginx — mesma lacuna herdada de [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]]; (2) a mecânica exata do cálculo de média móvel exponencial do PEWMA não foi detalhada pela fonte (o apresentador pulou essa parte por perda de voz durante a gravação) — mitigado parcialmente pela skill, que aponta a técnica-irmã Power of Two Choices com mecânica mais simples e documentada. Não foi possível identificar a URL/autoria do artigo original comentado no vídeo — a fonte ingerida é a transcrição da reação, não o artigo em si; se o artigo original for localizado depois, vale revisitar para preencher essa lacuna com uma fonte primária. Nenhum link quebrado identificado nas páginas criadas ou tocadas por esta ingestão.
+
+---
+
+## [2026-08-06] ingest | Monitoramento de Aplicações na Era da IA com Grafana Cloud e OpenTelemetry
+
+Fonte: [[wiki/sources/monitoramento-aplicacoes-ia-grafana-cloud-opentelemetry]] (transcrição de vídeo em português, texto bruto de reconhecimento de fala sem pontuação, fornecida pelo usuário — sem necessidade de tradução; limpa de erros de ASR, pontuada e organizada em seções em `raw/` antes da ingestão, preservando a estrutura da demo original: contexto → onboarding do Grafana Cloud → instrumentação da app de exemplo → exploração manual dos dados → assistente de IA correlacionando telemetria → MCP como alternativa via editor → skills do assistente → fechamento)
+
+Skill carregada: `tech-mentor-infra`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-infra/SKILL.md` e do arquivo de referência `references/observability-platform.md` (seções "Grafana Avançado", "Grafana LGTM Stack", "PromQL em Profundidade") — usada para confirmar terminologia (Collector, Loki/Tempo/Mimir, PromQL) já presente na wiki e para embasar a seção de arquitetura provisioning/datasources do Grafana. Mesma nota já registrada em ingestões anteriores: o `CLAUDE.md` do repositório aponta para `/home/nemomartins/Documentos/new/skills/` e `/home/nemomartins/Documentos/new/dev-study/`, caminhos que não existem neste ambiente — a skill real foi localizada em `/home/gabriel-martins/Documentos/skills/` e o repo real é `/home/gabriel-martins/Documentos/dev-brain/`. Não existem templates em `.obsidian/templates/` — seguida a convenção já estabelecida de usar uma página de source existente ([[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]]) como modelo estrutural, por tratar do mesmo tema e ter a mesma atribuição de autoria nesta ingestão.
+
+**Páginas criadas:**
+- `raw/monitoramento-aplicacoes-ia-grafana-cloud-opentelemetry.md` — transcrição limpa, organizada em seções
+- `wiki/sources/monitoramento-aplicacoes-ia-grafana-cloud-opentelemetry.md` — TL;DR, 6 claims com evidência e confiança, 8 conceitos/entidades tocados, 4 perguntas abertas (incluindo a colisão de identidade de autoria), 3 quotes
+- `wiki/entities/grafana-labs.md` — página nova (stub): empresa por trás do Grafana/Grafana Cloud/stack LGTM, assistente de IA embutido no chat web
+
+**Páginas atualizadas:**
+- `wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp.md` — nova seção "Duas Superfícies para o Mesmo Padrão: Chat Web vs. MCP no Editor"; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/observabilidade.md` — duas novas seções ("Tensão Não Resolvida: Onboarding Direto vs. Collector" e "Boa Prática Confirmada: Batch em Vez de Envio Imediato"); nova linha em Key Sources; `source_count` 9 → 10
+- `wiki/concepts/distributed-tracing.md` — nova seção "Query languages fragmentadas por ferramenta"; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/concepts/mcp-server.md` — nova seção "Custo: Grafana MCP no editor consome créditos do editor, chat web do Grafana Cloud não"; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/model-context-protocol.md` — exemplo concreto adicionado à seção "MCP vs Skills" (skills do assistente do Grafana Cloud); nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/concepts/connection-pooling.md` — nova seção "Diagnóstico Automatizado via Correlação de Telemetria com IA"; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/entities/eric-lenda.md` — novos aliases ("Eric Wend", "Eric Winda"); novo parágrafo de nota de identificação + open question sobre possível duplicata com `erick-wendel`; nova linha em Key sources; `source_count` 2 → 3
+- `wiki/entities/erick-wendel.md` — nova open question espelhando a possível duplicata com `eric-lenda`
+- `wiki/index.md` — nova linha em Sources; nova linha em Entities (`grafana-labs`); linha existente de `erick-wendel` anotada com a possível duplicata
+
+**Notas:** Achado principal desta ingestão, fora do conteúdo técnico em si: uma provável colisão de identidade de autoria não resolvida. A fonte foi atribuída a [[wiki/entities/eric-lenda]] por sobreposição total de tema/formato/estilo com [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] (mesma entidade já catalogada sob esse nome). Só depois de escrever essa atribuição notei que a wiki já tem uma entidade separada, [[wiki/entities/erick-wendel]] ("criador de conteúdo brasileiro sobre Node.js e testes automatizados"), e que o nome distorcido nesta transcrição via ASR ("Eric Wend"/"Eric Winda") é foneticamente muito mais próximo de "Erick Wendel" do que de "Lenda" — abrindo a hipótese de que "Eric Lenda" tenha sido, ele mesmo, uma resolução equivocada de nome mal transcrito numa ingestão anterior, e que as duas páginas sejam a mesma pessoa real. Deliberadamente **não mesclei** as duas entidades nesta ingestão: mudar a identidade atribuída de uma pessoa real é uma ação substantiva que os invariantes deste repositório pedem para confirmar com o humano antes de agir, não só sinalizar. A hipótese foi registrada como open question espelhada em três lugares (a nova fonte, `eric-lenda.md`, `erick-wendel.md`) para que uma sessão de lint ou o usuário decida se faz o merge. Sem outras contradições técnicas com a wiki existente — esta fonte é fortemente complementar a [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] (mesmo padrão de correlação de telemetria via IA, mesma origem provável de autor), mas adiciona um ângulo genuinamente novo não coberto antes: a superfície de **chat web do Grafana Cloud** como alternativa ao Grafana MCP no editor, com implicação prática de custo (créditos do editor vs. plano da plataforma) que nenhuma fonte anterior detalhava. Uma tensão arquitetural não resolvida pela própria fonte foi registrada como open question em vez de silenciada: o onboarding do Grafana Cloud oferece o modo "Direct" (sem Collector) como caminho padrão para quem está começando, em aparente contradição com a boa prática de "nunca pular o Collector" já documentada em `wiki/concepts/observabilidade.md` a partir da fonte anterior. Nenhum link quebrado identificado nas páginas criadas ou tocadas por esta ingestão.
+
+---
+
+## [2026-08-06] ingest | Observer: Padrão de Projeto na Prática, com TypeScript e Deno (Código Fonte TV)
+
+Fonte: [[wiki/sources/design-pattern-observer-codigo-fonte-tv]] (transcrição de vídeo em português, texto bruto de reconhecimento de fala sem pontuação e com nomes deformados pelo ASR — "gang of War" por "Gang of Four", "PTS" por ".ts" — fornecida pelo usuário; sem necessidade de tradução; limpa de erros de ASR, pontuada e organizada em `raw/` antes da ingestão, preservando a estrutura original: introdução conceitual → diagrama → exemplo 1 genérico com Deno → exemplo 2 de notificação de vídeo do YouTube → encerramento; comentários de produção sobre sugestões do GitHub Copilot durante a gravação foram resumidos em uma nota em vez de transcritos literalmente, por não fazerem parte do design do pattern em si)
+
+Skill carregada: `tech-mentor-backend`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/SKILL.md` e do arquivo de referência `references/design-patterns.md` (seção "Design Patterns GoF — Os 10 Mais Relevantes", subseção Behavioral/Observer) — usada para confirmar a formulação canônica do padrão e o exemplo de Domain Events como aplicação real, e para decidir que o tópico pertence a `tech-mentor-backend` (não a um domínio próprio) conforme a tabela de mapeamento do `CLAUDE.md`.
+
+**Páginas criadas:**
+- `raw/design-pattern-observer-codigo-fonte-tv.md` — transcrição limpa, pontuada e organizada em seções
+- `wiki/sources/design-pattern-observer-codigo-fonte-tv.md` — TL;DR, 6 claims com evidência e confiança, estrutura dos dois exemplos de código, 2 entidades mencionadas, 3 questões em aberto (incluindo uma tensão de nomenclatura), 3 quotes
+
+**Páginas atualizadas:**
+- `wiki/concepts/observer-pattern.md` — nova seção "Mais de um tipo de observer para o mesmo evento" (exemplo `Subscriber` vs. `Feed` reagindo ao mesmo `notifyAll`); nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/concepts/pub-sub.md` — nova seção "Nomenclatura solta vs. distinção estrutural" (a fonte trata Observer e Pub/Sub como sinônimos, em tensão com a distinção já documentada); nova linha em Key Sources; `source_count` 5 → 6
+- `wiki/entities/gang-of-four.md` — nova linha em Key Sources (citação da definição formal do padrão); `source_count` 2 → 3
+- `wiki/entities/codigo-fonte-tv.md` — novo bullet de perfil sobre a série de design patterns em TypeScript/Deno (Strategy, Facade, Singleton já cobertos antes do Observer); nova seção "Nota de identificação" explicando a atribuição desta fonte à entidade; nova linha em Key Sources; novas tags (`design-patterns`, `typescript`); `source_count` 3 → 4
+- `wiki/index.md` — nova linha em Sources; hook da entidade `codigo-fonte-tv` atualizado para mencionar a série de design patterns
+
+**Notas:** Esta fonte é uma implementação didática do [[wiki/concepts/observer-pattern]], já bem documentado na wiki a partir de três ângulos anteriores (Refactoring Guru, uma implementação minimalista estilo Zustand, e um enquadramento como "terceiro estágio de desacoplamento"). O ganho genuíno desta ingestão é concreto mas modesto: um exemplo de múltiplos tipos de observer reagindo de formas diferentes ao mesmo evento (`Subscriber` vs. `Feed` no cenário de notificação de vídeo do YouTube), reforçando um ponto que as fontes anteriores não tornavam explícito. Uma tensão de nomenclatura foi registrada como open question em `observer-pattern.md` e `pub-sub.md` em vez de silenciada: o vídeo trata Observer, Event Subscriber, Listener, Publish-Subscribe e Pub/Sub como sinônimos, o que colide com a distinção estrutural (comunicação direta vs. via broker) já documentada em [[wiki/concepts/pub-sub]] a partir de [[wiki/sources/design-pattern-observer]] — não há contradição técnica de fato (o próprio exemplo do vídeo é Observer direto, sem broker), mas a nomenclatura solta merece ficar sinalizada. A atribuição da fonte à entidade [[wiki/entities/codigo-fonte-tv]] se apoia em uma autorreferência direta no próprio texto do vídeo ("se você nos segue lá no Código Fonte TV, no Instagram"), diferente do caso de nome deformado por ASR já registrado em outras ingestões (ex.: `eric-lenda`/`erick-wendel`) — por isso não foi registrada como open question de identidade, apenas como nota informativa. Optei por **não** forçar backlinks de conteúdo em `strategy-pattern.md`, `facade-pattern.md` e `singleton-pattern.md`: o vídeo apenas cita esses três padrões de passagem, como episódios anteriores da mesma série, sem discutir claims sobre eles — um backlink sem claim novo seria referência por referência, não uma conexão real; a menção à série ficou registrada só na página da entidade. Nenhum link quebrado identificado nas páginas criadas ou tocadas por esta ingestão.
+
+## [2026-08-06] ingest | 15 Dias Depois de Lançar Meu SaaS: Números, Ataques e Vulnerabilidades
+
+Fonte: [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]]
+Skill carregada: `tech-mentor-security`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-security/SKILL.md` e dos arquivos de referência `references/appsec-authn-authz.md` (seção OAuth 2.0/OIDC, Authorization Code Flow, validação de `redirect_uri`/`scope`) e `references/appsec-ddos-waf.md` (indiretamente, via conceitos já documentados em [[wiki/concepts/ddos-syn-flood]] e [[wiki/concepts/waf]]) — nota: o `CLAUDE.md` do repositório aponta para `/home/nemomartins/Documentos/new/skills/`, caminho que não existe neste ambiente; a skill real foi localizada em `/home/gabriel-martins/Documentos/skills/`, mesmo diretório base já usado em ingestões anteriores desta wiki. Conteúdo do vídeo cruza domínios (segurança, infra, produto/carreira); optei por `tech-mentor-security` como skill primária por ser o eixo com achado técnico mais substantivo (vulnerabilidade crítica de OAuth via pentest voluntário), com domínios secundários (produto, MVP, marketing) registrados via tags e conexões, não via skill.
+
+**Páginas criadas:**
+- `raw/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades.md` — transcrição reorganizada em parágrafos e seções temáticas, sem alteração de conteúdo (já em português, sem necessidade de tradução)
+- `wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades.md` — TL;DR, 7 claims com evidência e confiança, 2 entidades, 12 conceitos, 4 questões em aberto, 4 quotes
+- `wiki/concepts/especialista-de-powerpoint.md` — novo stub para o padrão de feedback não solicitado de quem nunca lançou produto (sugestões de feature/troca de stack sem experiência real por trás)
+
+**Páginas atualizadas:**
+- `wiki/entities/mano-davin.md` — nova seção "15 dias após o lançamento" (cronologicamente anterior à seção de incidente já existente); nova linha em Key Sources; `source_count` 1 → 2; `status` stub → draft
+- `wiki/concepts/oauth2.md` — nova seção "Caso real: escopo aceito sem validação via URL"; nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/concepts/open-redirect.md` — nova seção "Variante: escopo/permissão aceito via URL sem validação"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/ddos-syn-flood.md` — nova seção "Precursor: tentativas bloqueadas antes do incidente"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/waf.md` — novo parágrafo sobre 157 tentativas bloqueadas antes do incidente de SYN flood; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/lean-startup.md` — nova seção "Caso real: Find My SaaS"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/mvp.md` — nova seção "Caso real: infraestrutura mínima como teste do MVP"; nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/concepts/over-engineering.md` — nova seção "Recusa explícita como estratégia: Find My SaaS"; nova linha em Key Sources; `source_count` 10 → 11
+- `wiki/concepts/escolha-de-stack.md` — nova seção "Resistir a Pressão Externa de Troca de Stack"; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/entities/hostinger.md` — novo parágrafo sobre a VPS mínima (1 vCPU/4GB/50GB) do Find My SaaS; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/concepts/marketing-organico-viral.md` — nova seção "Contraste: audiência própria como canal, sem sketch"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/produto-vendivel-desde-o-dia-zero.md` — nova seção "Caso adjacente: monetização via boost, sem gate de feature"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/attack-surface.md` — nova seção "Visibilidade Como Multiplicador de Ataque"; nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`especialista-de-powerpoint`); hook da entidade `mano-davin` atualizado para cobrir as duas fontes em ordem cronológica
+
+**Notas:** Esta fonte documenta o mesmo projeto e autor de [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]] (já na wiki desde 2026-07-31), mas num momento cronologicamente **anterior** — 15 dias após o lançamento, antes do incidente de SYN flood que derrubou o servidor. Não há contradição factual entre as duas fontes, mas há uma progressão narrativa que vale registrar: nesta fonte, o Cloudflare bloqueia 157 tentativas maliciosas sem incidente grave (Under Attack Mode aparentemente funcionando); na fonte já existente, o mesmo mecanismo de proteção está desativado durante um ataque real de escala muito maior. A ordem exata dos eventos foi inferida por contexto interno das transcrições (não há data de publicação confirmada em nenhuma das duas), e ficou sinalizada como open question tanto na nova fonte quanto na página da entidade [[wiki/entities/mano-davin]] — não resolvida nesta ingestão. A vulnerabilidade crítica de OAuth relatada (parâmetros de escopo aceitos via URL sem validação) foi tratada com cautela: a explicação do autor original ("o erro era confiar no input do usuário") foi identificada como tecnicamente imprecisa e corrigida nas páginas de conceito ([[wiki/concepts/oauth2]], [[wiki/concepts/open-redirect]]) — falta de validação server-side de parâmetros de autorização é uma falha da aplicação, não do usuário; a correção foi registrada como parte do claim, não como nota separada, já que decorre diretamente do skill consultado. Optei por não tocar [[wiki/concepts/hacker-mindset]] apesar do uso do termo "hacker" no vídeo: a página existente documenta especificamente o sentido original/não-distorcido do termo (curiosidade ativa, autodidatismo), e o uso no vídeo é o sentido distorcido (invasor) que a própria página trata como não-central — forçar a conexão seria uma referência por referência, não uma conexão de conteúdo real; usei [[wiki/concepts/attack-surface]] em seu lugar, que capturou melhor o argumento real (visibilidade como multiplicador de ataques). Nenhum link quebrado identificado nas páginas criadas ou tocadas por esta ingestão.
+
+## [2026-08-06] ingest | Princípios SOLID Ilustrados
+
+Fonte: [[wiki/sources/principios-solid-ilustrados]]
+Skill carregada: `tech-mentor-backend`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/SKILL.md` e do arquivo de referência `references/architecture-evolutionary.md` (seção "SOLID na Prática para Arquitetos") — mesma nota de path drift já registrada em ingestões anteriores (`CLAUDE.md` aponta para `/home/nemomartins/Documentos/new/skills/`, inexistente neste ambiente; skill real em `/home/gabriel-martins/Documentos/skills/`).
+
+**Páginas criadas:**
+- `raw/principios-solid-ilustrados.md` — transcrição de vídeo (PT-BR, já no idioma de destino, sem tradução necessária) reorganizada em seções por princípio, com limpeza de ruído de fala
+- `wiki/sources/principios-solid-ilustrados.md` — TL;DR, 5 claims com evidência e confiança, tabela-resumo dos 5 princípios, conceitos, entidade, conexões com outras sources, 2 perguntas em aberto
+- `wiki/concepts/interface-segregation-principle.md` — novo stub para o "I" do SOLID, ausente até agora na wiki
+- `wiki/concepts/dependency-inversion-principle.md` — novo stub para o "D" do SOLID, ausente até agora na wiki
+
+**Páginas atualizadas:**
+- `wiki/concepts/single-responsibility-principle.md` — nova seção "Analogia da Máquina de Lavar"; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/single-responsibility.md` — nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/concepts/open-closed-principle.md` — nova seção "Exemplo — Processador de Pagamentos"; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/liskov-substitution-principle.md` — nova seção "Exemplo — Ave, Pica-pau e Pinguim"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/strategy-pattern.md` — nova linha em Key Sources conectando ao exemplo do processador de pagamentos; `source_count` 1 → 2
+- `wiki/entities/uncle-bob.md` — nova seção "Generalização de OCP + LSP em Dependency Inversion (1996)", com nota de verificação; nova linha em Key Sources; `source_count` 7 → 8
+- `wiki/index.md` — nova linha em Sources; 6 novas linhas em Concepts (as 5 páginas de princípio SOLID, incluindo as 2 novas)
+
+**Notas:** A wiki já tinha cobertura fragmentada de SOLID via [[wiki/sources/design-pattern-proxy]] e [[wiki/sources/design-pattern-strategy]] (SRP, OCP, LSP mencionados de passagem dentro de padrões estruturais/comportamentais), mas nunca uma fonte dedicada aos cinco princípios como tema central — e faltavam páginas próprias para ISP e DIP, criadas nesta ingestão. Encontrada uma duplicação pré-existente não resolvida por esta ingestão: `single-responsibility.md` e `single-responsibility-principle.md` cobrem o mesmo princípio como páginas separadas (uma nasceu do ângulo "acoplamento/coesão", outra do ângulo "proxy pattern") — ambas foram atualizadas em paralelo para não aprofundar a divergência, mas a consolidação das duas fica como candidata a lint futuro, não decidida aqui. A atribuição da generalização de OCP+LSP em Dependency Inversion ao documento de 1996 de Robert C. Martin veio direto da transcrição do vídeo e não foi cross-checada contra a fonte primária ("The Dependency Inversion Principle", C++ Report, 1996) — registrada como pergunta aberta na source e nota de verificação na página da entidade [[wiki/entities/uncle-bob]], seguindo o mesmo padrão cauteloso já usado nas demais menções a Uncle Bob nesta wiki. O nome da autora do post original "The SOLID Principles in Pictures" ficou incompreensível na transcrição de áudio ("gol na Telma") — não foi possível confirmar autoria nem URL, então a fonte não cita nome nem link do artigo original, apenas descreve o formato das ilustrações. Enriqueci ISP e DIP com uma seção "Implicação Arquitetural [skill: tech-mentor-backend]" a partir da referência consultada, distinguindo explicitamente o que veio do vídeo do que veio do skill (BFF/GraphQL para ISP; Clean Architecture e intercambialidade de repositórios para DIP). Nenhum link quebrado identificado nas páginas criadas ou tocadas por esta ingestão.
+
+## [2026-08-06] ingest | The S.O.L.I.D Principles in Pictures (Ugonna Thelma)
+
+Fonte: [[wiki/sources/solid-principles-in-pictures-ugonna-thelma]] — https://medium.com/backticks-tildes/the-s-o-l-i-d-principles-in-pictures-b34ce2f1e898
+Skill carregada: `tech-mentor-backend`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/SKILL.md` e do arquivo de referência `references/architecture-evolutionary.md` (seção "SOLID na Prática para Arquitetos") — mesmo skill já usado na ingestão do vídeo relacionado.
+
+**Páginas criadas:**
+- `raw/solid-principles-in-pictures-ugonna-thelma.md` — artigo original (inglês) traduzido integralmente para português, mantendo estrutura e ordem de seções por princípio
+- `wiki/sources/solid-principles-in-pictures-ugonna-thelma.md` — TL;DR, 5 claims com evidência e confiança, tabela de definições formais, conceitos, entidade, conexão com a fonte relacionada
+- `wiki/entities/ugonna-thelma.md` — nova entidade para a autora, com nota de resolução de identidade
+
+**Páginas atualizadas:**
+- `wiki/sources/principios-solid-ilustrados.md` — pergunta em aberto sobre autoria resolvida (riscada, com nota de resolução); campo `author` do frontmatter atualizado; nova entidade e conexão de source adicionadas; `source_count` 0 → 1
+- `wiki/concepts/single-responsibility-principle.md` — nova seção "Definição Formal (Fonte Primária)"; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/concepts/open-closed-principle.md` — nova seção "Definição Formal (Fonte Primária)"; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/concepts/liskov-substitution-principle.md` — nova seção "Definição Formal (Fonte Primária) e Exemplo Coffee/Cappuccino/Water"; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/interface-segregation-principle.md` — nova seção "Definição Formal (Fonte Primária)"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/dependency-inversion-principle.md` — nova seção "Definição Formal e Vocabulário (Fonte Primária)"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources (no topo, antes da fonte relacionada); nova linha em Entities
+
+**Notas:** Esta ingestão é a fonte primária por trás de [[wiki/sources/principios-solid-ilustrados]] (vídeo ingerido antes deste artigo), fechando o loop de uma pergunta em aberto deixada naquela ingestão: a transcrição automática do áudio do vídeo deformou o nome da autora para "gol na Telma", impedindo confirmar autoria/URL na época. Com o artigo original em mãos, a identidade foi confirmada como **Ugonna Thelma**, publicado em 18/05/2020 na Backticks & Tildes (Medium) — resolvido tanto na nova entidade quanto riscando a pergunta em aberto na fonte antiga, sem apagar o histórico da incerteza original. O ganho de conteúdo novo é modesto mas real: o artigo formaliza os cinco princípios numa frase cada, e o exemplo textual de LSP (`Coffee`/`Cappuccino`/`Water` como retorno de método) é mais preciso e verificável do que a ilustração do café descrita de segunda mão no vídeo, então foi promovido a seção própria em `liskov-substitution-principle.md`. A atribuição a Robert C. Martin (1996) da generalização de OCP+LSP em Dependency Inversion, já registrada como não confirmada na ingestão anterior, não aparece neste artigo — continua como pergunta em aberto exclusiva da fonte em vídeo, não resolvida por esta ingestão. Nenhum link quebrado identificado nas páginas criadas ou tocadas por esta ingestão.

@@ -3,8 +3,8 @@ type: concept
 title: "Reverse Proxy"
 aliases: ["proxy reverso", "reverse proxy", "web server como proxy"]
 date_created: 2026-07-20
-date_updated: 2026-07-31
-source_count: 2
+date_updated: 2026-08-06
+source_count: 3
 tags: [nginx, reverse-proxy, infra, deploy, web-server, traefik, coolify, auto-update, disponibilidade]
 skill: tech-mentor-infra
 status: stub
@@ -39,3 +39,4 @@ Usuário → Nginx (porta 80) → app na porta 3001 (blue) ou 3002 (green)
 
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]] — demo prática de reverse proxy com swap manual entre duas portas via script, sem load balancing real entre elas
 - [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]] — auto-update de proxy (Traefik via Coolify) como causa raiz de um bug de CPU/memory leak que agravou um SYN flood
+- [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] — Nginx citado como exemplo de reverse proxy/LB HTTP com Round Robin como algoritmo padrão (afirmação repetida na fonte, ainda não verificada contra a documentação oficial)

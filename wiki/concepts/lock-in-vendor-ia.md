@@ -31,6 +31,7 @@ A tese subjacente é que a *camada de agente organizacional* (orquestração, me
 
 - [[wiki/concepts/camada-de-aplicacao-vs-modelo]] — mesma lógica de "a camada de aplicação é onde está o valor defensável, o modelo por baixo é trocável" aplicada aqui à camada de memória/integração organizacional.
 - [[wiki/concepts/corrida-preco-qualidade-llm]] — concorrência de preço entre modelos reforça o incentivo a não se prender a um único fornecedor no nível de modelo.
+- [[wiki/concepts/vendor-lock-in-cloud]] — variante mais concreta e tática do mesmo problema: lá o lock-in é de uma ferramenta cliente (ex.: Claude Code) só aceitar nativamente modelos de um único provider, contornável via [[wiki/concepts/ai-gateway-llm-router]]; aqui o lock-in é de memória/contexto organizacional acumulado, sem solução tão simples quanto trocar uma `base_url`.
 
 ## Key Sources
 

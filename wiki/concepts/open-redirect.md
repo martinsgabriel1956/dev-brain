@@ -3,8 +3,8 @@ type: concept
 title: "Open Redirect (em Fluxos OAuth)"
 aliases: ["open redirect", "redirect_uri malicioso", "validação de redirect URI"]
 date_created: 2026-08-03
-date_updated: 2026-08-03
-source_count: 1
+date_updated: 2026-08-06
+source_count: 2
 tags: [open-redirect, oauth2, seguranca, autorizacao]
 skill: tech-mentor-security
 status: stub
@@ -31,6 +31,10 @@ Falha em que o Authorization Server de um fluxo [[wiki/concepts/oauth2|OAuth]] a
 
 A validação da `redirect_uri` deve ser uma **comparação exata, caractere por caractere**, contra uma lista de URIs pré-registradas — nunca por prefixo, substring ou wildcard. É a mesma classe de erro de outras validações de URL mal feitas (ex.: checar `.includes("app.com")` em vez de igualdade estrita).
 
+## Variante: escopo/permissão aceito via URL sem validação
+
+Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], um pentest encontrou uma variante desse tipo de falha no SaaS "Find My SaaS": não era estritamente a `redirect_uri` que faltava validação, e sim parâmetros de escopo/permissão do Authorization Request aceitos pela URL sem checagem — permitindo um link malicioso que solicitava permissões além do padrão do app. O relato original não detalha se `redirect_uri` também estava envolvido; tratado como caso adjacente à mesma família de erro (confiar em parâmetros de URL de um fluxo OAuth sem validação server-side estrita). Ver [[wiki/concepts/oauth2]] para o caso completo.
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/oauth2]] — o `redirect_uri` é parâmetro central do Authorization Code Flow; open redirect explora sua validação frouxa
@@ -39,3 +43,4 @@ A validação da `redirect_uri` deve ser uma **comparação exata, caractere por
 ## Key Sources
 
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]]
+- [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — variante com parâmetros de escopo/permissão aceitos sem validação

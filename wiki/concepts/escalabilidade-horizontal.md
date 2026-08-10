@@ -3,8 +3,8 @@ type: concept
 title: "Escalabilidade Horizontal"
 aliases: ["horizontal scaling", "scale out", "escalar horizontalmente"]
 date_created: 2026-06-26
-date_updated: 2026-08-03
-source_count: 8
+date_updated: 2026-08-10
+source_count: 10
 tags: [escalabilidade, arquitetura, sistemas-distribuidos, nosql, redis, backend]
 skill: tech-mentor-backend
 status: stable
@@ -65,6 +65,8 @@ Escalar horizontalmente um serviço de conexões longas (WebSocket) tem uma rest
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — escalabilidade horizontal de servidores WebSocket, LB L4 obrigatório, comunicação entre servidores via Redis Pub/Sub
 - [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] — tipos de load balancer e algoritmos de balanceamento (Weighted RR, Least Connections, Least Time, Sticky RR) usados para distribuir carga entre as réplicas
 - [[wiki/sources/10-conceitos-fundamentais-backend]] — framing de entrada nível-10-conceitos: começar com um servidor só, crescer para "mais usuários, mais chamadas de API, mais consultas ao banco, mais jobs assíncronos, mais picos inesperados"
+- [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — read replicas como escalonamento horizontal da camada de leitura do banco ("adicionar réplicas quase infinitamente"), distinto do scale-out de servidores de aplicação
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — réplicas de SQL database removem o alerta de bottleneck do banco num exercício simulado, mas deslocam o gargalo para o app server — demonstração direta de que escalar horizontalmente uma camada sem tratar a seguinte só move o problema
 - [[wiki/sources/escalabilidade-horizontal-vertical-custo-grafico]] — exemplo gráfico de granularidade fina de capacidade (um servidor a mais vs. dobrar instância) e resiliência via mais réplicas menores
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — recapitula escalar horizontalmente a aplicação (réplicas + load balancer) como resposta ao gargalo de volumetria, antes de mostrar que isso apenas desloca o gargalo para o banco de dados, motivando [[wiki/concepts/sharding]]
+- [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] — visualização passo a passo de por que um servidor único satura sob carga e como adicionar réplicas atrás de um load balancer elimina drops, antes de detalhar os algoritmos de distribuição

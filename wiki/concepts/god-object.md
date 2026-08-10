@@ -3,8 +3,8 @@ type: concept
 title: "God Object"
 aliases: ["god class", "objeto deus", "god object anti-pattern"]
 date_created: 2026-05-05
-date_updated: 2026-08-04
-source_count: 4
+date_updated: 2026-08-10
+source_count: 5
 tags: [anti-patterns, god-object, design-patterns, solid, coesao]
 skill: tech-mentor-backend
 status: stable
@@ -49,3 +49,4 @@ A diferença: uma Facade *bem feita* delega para o subsistema e não contém ló
 - [[sources/sete-padroes-de-design-de-software]]
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]] — exemplo narrativo de God Class nascendo por degradação incremental sob prazo, sprint a sprint
 - [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — limite de tamanho de arquivo (exemplo: 300 linhas) como gate automático de CI contra god files
+- [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — "classe super-homem" que orquestra tudo como sintoma clássico de code base degradando; nasce de empilhar código na parte que "a gente sabia rodar"

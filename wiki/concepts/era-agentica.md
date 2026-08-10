@@ -3,8 +3,8 @@ type: concept
 title: "Era Agêntica"
 aliases: ["agentic era", "era dos agentes", "agentes de ia em producao"]
 date_created: 2026-05-31
-date_updated: 2026-07-30
-source_count: 3
+date_updated: 2026-08-06
+source_count: 4
 tags: [era-agentica, agente-ia, token-economics, paradoxo-de-jevons, llmops]
 skill: tech-mentor-ai
 status: stable
@@ -88,3 +88,4 @@ Satya Nadella (CEO da [[wiki/entities/microsoft]]) descreve essa migração de c
 - [[wiki/sources/escala-niveis-uso-ia-engenheiros]] — níveis 5–7 como materialização individual da era agêntica
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] — capital de tokens (Nadella) e previsão Gartner 2028
 - [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] — paradigma de agente como membro assíncrono do time organizacional (Claude Tag), complementar à mudança de modelo de custo
+- [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] — caso concreto de agente orientado a evento (trigger) em produção substituindo tarefa de DBA, usado como estudo de caso do layoff da Oracle

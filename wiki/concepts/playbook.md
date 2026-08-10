@@ -3,8 +3,8 @@ type: concept
 title: "Playbook"
 aliases: ["Incident Playbook", "Playbook de Incidente"]
 date_created: 2026-05-17
-date_updated: 2026-05-17
-source_count: 1
+date_updated: 2026-08-06
+source_count: 2
 tags: [infra, ops, incident-response, sre]
 skill: tech-mentor-infra
 status: stable
@@ -40,9 +40,14 @@ Documento estratégico e situacional consultado **durante o incidente** quando u
 
 **Evitar:** operação bem definida sem decisões → use [[runbook]].
 
+## Playbook como System Prompt de Agente
+
+[[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] usa "playbook" num sentido próximo mas distinto do incident playbook acima: o system prompt de um [[wiki/concepts/agente-ia|agente autônomo]] (ex.: um "playbook de DBA") — o conhecimento operacional e as regras de decisão de um domínio, compactado para orientar o **LLM Planner** do agente, em vez de um humano seguindo uma árvore de decisão durante um incidente.
+
 ## Key Sources
 
 - [[wiki/sources/playbook]]
+- [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] — playbook como conteúdo do system prompt de um agente autônomo
 
 ## Conceitos Relacionados
 

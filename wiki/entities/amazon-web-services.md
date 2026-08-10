@@ -3,8 +3,8 @@ type: entity
 title: "Amazon Web Services"
 aliases: ["AWS", "Amazon Cloud"]
 date_created: 2026-05-06
-date_updated: 2026-08-04
-source_count: 2
+date_updated: 2026-08-05
+source_count: 3
 tags: ["aws", "cloud-provider", "amazon", "infraestrutura"]
 skill: tech-mentor-infra
 status: stable
@@ -61,8 +61,13 @@ Cobertura de "80/20" dos serviços mais usados na prática para aplicações web
 
 Tema recorrente: [[wiki/concepts/vendor-lock-in-cloud]] — quanto mais desses serviços proprietários um sistema adota, mais caro fica migrar depois. Ver [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]].
 
+## Console Manual vs. Infrastructure as Code
+
+O console web da AWS (criar recursos clicando em botões — ex.: "create function" no Lambda) é citado como ponto de partida legítimo para aprender o provedor, mas como anti-padrão para produção madura: mudanças feitas ali não ficam versionadas, revisadas nem documentadas, e é fácil aplicar uma alteração em um ambiente (ex.: staging) e esquecer de replicá-la em outro (ex.: produção). A alternativa recomendada é [[wiki/concepts/infraestrutura-como-codigo|Infrastructure as Code]], via [[wiki/concepts/aws-cdk|AWS CDK]] (código de propósito geral, ex. TypeScript, que sintetiza para [[wiki/concepts/aws-cloudformation|CloudFormation]]) ou CloudFormation direto. Ver [[wiki/sources/infraestrutura-como-codigo-cdk-aws]].
+
 ## Key Sources
 
 - [[wiki/sources/aws-infraestrutura-global]]
 - [[wiki/sources/iam-introduction-users-groups-policies]]
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]
+- [[wiki/sources/infraestrutura-como-codigo-cdk-aws]] — demo de deploy de bucket S3 + Lambda via AWS CDK, contrastado com configuração manual pelo console

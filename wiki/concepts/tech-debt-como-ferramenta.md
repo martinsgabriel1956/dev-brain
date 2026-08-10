@@ -3,8 +3,8 @@ type: concept
 title: "Tech Debt como Ferramenta"
 aliases: ["tech debt deliberado", "dívida técnica estratégica", "ship with debt"]
 date_created: 2026-04-26
-date_updated: 2026-07-29
-source_count: 11
+date_updated: 2026-08-10
+source_count: 12
 tags: [tech-debt, carreira, craftsmanship, estrategia, velocidade, under-engineering, alocacao-de-tempo, medicao]
 skill: tech-mentor-leadership
 status: draft
@@ -126,3 +126,4 @@ Ver também: o mesmo capítulo cunha explicitamente o termo **"technical debt"**
 - [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] — modelos de alocação de tempo (20%/25% Shopify/sprint dedicado), mensuração formal (debt ratio/SQALE, hotspot analysis, PAID), matriz refatorar-vs-reescrever e caso Knight Capital
 - [[wiki/sources/7-habitos-programador-altamente-eficaz]] — caso de débito imposto por decisão de gestão (fluxo complexo vencendo fluxo simples), fora do modelo usual de decisão consciente do próprio time
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — distinção tática/estratégica (Ousterhout, Cap. 3), independente do Quadrante de Fowler; "tactical tornado"; regra dos 10-20% de investimento; caso Facebook "move fast and break things"
+- [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — hotfix sob pressão como fonte típica de dívida imprudente; a [[wiki/concepts/folga-de-capacidade-slack|folga de ~20%]] como forma de não *ter* que emitir dívida ao responder a imprevistos

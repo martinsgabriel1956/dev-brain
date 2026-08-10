@@ -3,8 +3,8 @@ type: concept
 title: "Criptografia"
 aliases: ["cryptography", "encryption", "hashing", "criptografia assimétrica", "criptografia simétrica"]
 date_created: 2026-06-26
-date_updated: 2026-07-28
-source_count: 4
+date_updated: 2026-08-07
+source_count: 5
 tags: [cs-fundamentals, criptografia, seguranca, hashing, tls, https, hmac]
 skill: cs-fundamentals
 status: draft
@@ -101,6 +101,11 @@ Computadores quânticos ameaçam parte da criptografia atual de formas distintas
 - [[wiki/concepts/ssh]] — autenticação por par de chaves (Ed25519) como aplicação prática de criptografia assimétrica
 - [[wiki/concepts/hmac]] — integridade/autenticidade via chave simétrica derivada, sem o custo de assinatura assimétrica
 - [[wiki/concepts/local-first]] — caso de uso que motiva HMAC: validar dado do cliente sem persistir no servidor
+- [[wiki/concepts/complexidade-computacional]] — a segurança se apoia na inviabilidade da complexidade exponencial de quebrar a chave por força bruta
+
+## Por que a criptografia é (praticamente) inquebrável — o argumento da complexidade
+
+A garantia de segurança não é mágica: é [[wiki/concepts/complexidade-computacional|complexidade computacional]]. Quebrar um hash por força bruta significa percorrer o espaço de chaves, cujo tamanho cresce com o número de caracteres e o alfabeto usado (letras, números, especiais, maiúsculas e minúsculas). Como o custo desse ataque é exponencial no tamanho da chave, o tempo para descriptografar sem a chave dispara e se torna inviável mesmo com hardware avançado. (Simplificação didática: a dureza real depende do algoritmo — fatoração/log discreto na assimétrica, busca de chave na simétrica — e não é *provada* exponencial em todos os casos.)
 
 ## Key sources
 
@@ -108,3 +113,4 @@ Computadores quânticos ameaçam parte da criptografia atual de formas distintas
 - [[wiki/sources/ssh-chaves-como-funcionam]]
 - [[wiki/sources/hmac-integridade-mensagem-local-first-entrevista]]
 - [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]
+- [[wiki/sources/conceitos-que-regem-a-computacao-bits-turing-complexidade]] — segurança criptográfica como aplicação da inviabilidade da complexidade exponencial conforme a chave cresce

@@ -3,8 +3,8 @@ type: concept
 title: "PostgreSQL"
 aliases: ["postgres", "pg"]
 date_created: 2026-04-22
-date_updated: 2026-07-29
-source_count: 7
+date_updated: 2026-08-05
+source_count: 8
 tags: [banco-de-dados, postgresql, relacional, jsonb, vetorial]
 skill: tech-mentor-system-design
 status: stable
@@ -70,3 +70,4 @@ O comportamento descrito acima (processo por conexão, PgBouncer obrigatório) �
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — arquitetura processo-por-conexão, PgBouncer como padrão, e comparação de performance analítica com MySQL
 - [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]] — migrations cruas via docker-compose + script de versão contra Postgres local
 - [[wiki/sources/full-text-search-mysql-postgresql]] — tsvector/tsquery/GIN, stemming por lexema, e comparação de performance com/sem índice
+- [[wiki/sources/infraestrutura-como-codigo-cdk-aws]] — citado como o banco de dados de exemplo numa stack ilustrativa de [[wiki/concepts/infraestrutura-como-codigo|IaC]] (dois Lambdas atrás de um API Gateway, ambos conectados ao mesmo Postgres, sem acesso direto à internet); menção arquitetural breve, sem claim técnico novo sobre o motor

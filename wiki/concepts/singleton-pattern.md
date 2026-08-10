@@ -3,8 +3,8 @@ type: concept
 title: "Singleton Pattern"
 aliases: ["singleton"]
 date_created: 2026-05-05
-date_updated: 2026-08-03
-source_count: 4
+date_updated: 2026-08-06
+source_count: 5
 tags: [design-patterns, creational, singleton, gof]
 skill: tech-mentor-backend
 status: stable
@@ -63,6 +63,7 @@ Use quando a unicidade é **genuinamente necessária**, não para ter estado glo
 
 - [[sources/sete-padroes-de-design-de-software]]
 - [[sources/design-pattern-facade]] — Facade frequentemente convertida em Singleton
+- [[wiki/sources/seis-design-patterns-mais-usados-na-pratica]] — analogia do elevador único do prédio; nota que frameworks atuais implementam Singleton via container de DI em vez de "na mão", evitando o acoplamento do `getInstance()` manual
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — conexão Redis compartilhada em arquitetura SSE/Pub-Sub
 - [[wiki/sources/connection-pooling-pool-vs-polling-serverless]] — pool de conexões como singleton de módulo em Node.js
 - [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]] — store de estado global (estilo Zustand) como singleton de módulo no front end

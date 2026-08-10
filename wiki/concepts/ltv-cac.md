@@ -3,9 +3,9 @@ type: concept
 title: "LTV e CAC"
 aliases: ["lifetime value", "custo de aquisição de cliente", "unit economics", "LTV/CAC"]
 date_created: 2026-07-09
-date_updated: 2026-07-20
-source_count: 2
-tags: [ltv, cac, growth, unit-economics, saas, retencao]
+date_updated: 2026-08-05
+source_count: 3
+tags: [ltv, cac, growth, unit-economics, saas, retencao, graph-engineering, loop-engineering]
 skill: tech-mentor-leadership
 status: draft
 ---
@@ -30,6 +30,10 @@ Custo de aquisição não se resume a tráfego pago rastreável. Microinfluencia
 
 LTV está diretamente ligado a por que o usuário continua pagando. Um produto cuja funcionalidade-core tem uso recorrente (ex.: reuniões de trabalho contínuas) tende a ter LTV mais alto que um produto de uso pontual (ex.: uma ferramenta usada só durante a busca de um emprego) — ver [[wiki/concepts/produto-vendivel-desde-o-dia-zero]] para a discussão de como escolher essa funcionalidade-core.
 
+## Por Que Um Agente Não Deve Otimizar CAC Isoladamente
+
+[[wiki/sources/graph-engineering-do-loop-ao-grafo]] usa exatamente essa relação para argumentar contra loops de IA com uma única métrica-alvo: um agente rodando em loop para reduzir o custo de aquisição de uma campanha (CAC/CPI) pode conseguir baixar esse custo enquanto aumenta o churn — porque o tráfego mais barato trouxe leads mais frios ou fora do público-alvo. O churn maior derruba o LTV, o que por sua vez invalida o próprio ganho de CAC (não compensa adquirir barato um cliente que sai rápido demais). A fonte usa esse exemplo para defender que otimização de métricas de negócio via IA precisa considerar CAC, churn e LTV como nós/relações de um mesmo [[wiki/concepts/grafo-como-abstracao-de-agentes|grafo]], não como alvos isolados de loops independentes.
+
 ## Relevância para Arquitetura de Software
 
 [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]] cita CAC e LTV (junto com churn e ROI) como conhecimento de negócio que um arquiteto de software precisa ter — não para calcular esses números, mas para entender o vocabulário e a motivação por trás de decisões técnicas que vêm do negócio (ex.: um aumento reportado de churn pode exigir investigação de performance/disponibilidade da arquitetura).
@@ -38,3 +42,4 @@ LTV está diretamente ligado a por que o usuário continua pagando. Um produto c
 
 - [[wiki/sources/como-vender-um-saas-sem-audiencia]]
 - [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]]
+- [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — CAC/churn/LTV como exemplo de por que um loop de IA de métrica única é insuficiente

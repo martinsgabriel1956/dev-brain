@@ -3,8 +3,8 @@ type: concept
 title: "Lei de Goodhart"
 aliases: ["Goodhart's Law", "Goodhart's Law Metrics"]
 date_created: 2026-07-28
-date_updated: 2026-07-28
-source_count: 1
+date_updated: 2026-08-10
+source_count: 3
 tags: [metrics, engineering-management, tomada-de-decisao]
 skill: tech-mentor-leadership
 status: stable
@@ -34,6 +34,12 @@ Isso é análogo a manter o gráfico de contribuições do GitHub "verdinho" com
 
 [[wiki/concepts/story-points]] · [[wiki/concepts/scrum-master]] · [[wiki/concepts/dora-metrics]] · [[wiki/concepts/planning-poker]]
 
+## Caso IA: métricas de output viram alvo e param de medir qualidade
+
+O mesmo mecanismo aparece ao medir produtividade com IA: contagem de PRs e volume de código são métricas de atividade que a IA infla independente de qualidade. Ao tratá-las como alvo de produtividade, 95% dos devs se *sentem* mais produtivos enquanto a qualidade do código cai — a métrica deixou de medir o que deveria. A defesa é a mesma do resto desta página: medir **outcome**, não output (ver [[wiki/concepts/output-vs-outcome]] e [[wiki/concepts/paradoxo-da-aceleracao]]).
+
 ## Key Sources
 
 - [[wiki/sources/story-points-po-forcando-30-40-pontos-por-sprint]]
+- [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]] — métricas de output infladas por IA como caso de Goodhart na era da IA
+- [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — aplica a lei a métricas de qualidade: meta de "100% de cobertura" gera testes inúteis, mas 5% de cobertura ainda é sinal legítimo de subteste (a métrica serve como sinal, não como alvo)

@@ -3,8 +3,8 @@ type: concept
 title: "Estimativas de Software"
 aliases: ["software estimation", "por que subestimamos tarefas", "estimativa de tarefas"]
 date_created: 2026-07-29
-date_updated: 2026-07-29
-source_count: 1
+date_updated: 2026-08-10
+source_count: 2
 tags: [carreira, gestao-de-projetos, planejamento, produtividade]
 skill: tech-mentor-leadership
 status: draft
@@ -44,4 +44,5 @@ A fonte destaca um ponto frequentemente ignorado: sem medir o tempo real gasto e
 
 ## Key Sources
 
-- [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — Hábito 11, único source até o momento
+- [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — Hábito 11
+- [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — foco complementar: mensurar o *erro* da estimativa (gap planejado × entregue por sprint) importa mais do que acertar a estimativa; sem isso a empresa não sabe sua capacidade real

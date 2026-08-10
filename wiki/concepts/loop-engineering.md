@@ -3,9 +3,9 @@ type: concept
 title: "Loop Engineering"
 aliases: ["loop engineering", "engenharia de loop", "loop de harness", "loop fixo", "loop criador"]
 date_created: 2026-07-10
-date_updated: 2026-07-28
-source_count: 4
-tags: [loop-engineering, harness, agente, automacao, planner-executor-critic, loop-fixo, loop-criador, spec-driven, ralph-loop, anthropic]
+date_updated: 2026-08-05
+source_count: 5
+tags: [loop-engineering, harness, agente, automacao, planner-executor-critic, loop-fixo, loop-criador, spec-driven, ralph-loop, anthropic, graph-engineering]
 skill: tech-mentor-ai
 status: stable
 ---
@@ -97,6 +97,10 @@ Framework paralelo ao dos "três níveis do dev loop" acima (autor e nomenclatur
 ## Diferença para Harness Engineering
 
 Harness engineering melhora o ambiente de uma única execução (tools disponíveis, contexto, memória — ver [[wiki/concepts/harness]]). Loop engineering trata a execução inteira como uma unidade repetível: o mesmo loop pode ser disparado por um prompt do usuário, por um schedule (ex.: rodar toda meia-noite verificando queda de vendas) ou por um evento externo, sem alterar a estrutura.
+
+## Limite do Loop: Uma Métrica Nunca é Suficiente
+
+[[wiki/sources/graph-engineering-do-loop-ao-grafo]] propõe [[wiki/concepts/grafo-como-abstracao-de-agentes|grafo]] como o degrau seguinte ao loop, motivado por um limite específico: um loop otimizando uma condição de parada baseada numa única métrica (ex.: reduzir CAC numa campanha) pode estar cego para outra métrica que piora em consequência (churn), derrubando o LTV e invalidando o próprio ganho (ver [[wiki/concepts/ltv-cac]]). A fonte atribui a ideia a um tweet de [[wiki/entities/peter-steinberger]] e especula que a origem prática do termo "graph engineering" foi ele rodando múltiplos loops em paralelo (~US$ 1 milhão/mês em tokens, segundo a fonte) até que esses loops começassem a conflitar entre si ou operar sobre informação desatualizada — motivando substituir "prompt + ticket" por um grafo passado a um orquestrador.
 
 ## Mudança de Nível de Abstração
 

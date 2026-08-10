@@ -3,8 +3,8 @@ type: concept
 title: "Single Responsibility Principle"
 aliases: ["SRP", "princípio da responsabilidade única", "single responsibility"]
 date_created: 2026-04-25
-date_updated: 2026-08-04
-source_count: 3
+date_updated: 2026-08-06
+source_count: 4
 tags: [single-responsibility, solid, software-design, clean-code]
 skill: tech-mentor-backend
 status: stub
@@ -50,3 +50,4 @@ Uma função pode orquestrar múltiplas operações e ainda ter responsabilidade
 - [[wiki/sources/acoplamento-abstracao-estado]]
 - [[wiki/sources/design-pattern-adapter]] — classe que gera PDF via `new DomPdf()` direto tem duas razões para mudar (regra de negócio e API da lib externa); resolvido extraindo o [[wiki/concepts/adapter-pattern|Adapter]]
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — SRP aplicado a nível de arquivo, sob a ótica de leitura por tool call em vez de leitura sequencial humana
+- [[wiki/sources/principios-solid-ilustrados]] — analogia da máquina de lavar e dica de nomear a função com tudo que ela faz para achar o limite da responsabilidade

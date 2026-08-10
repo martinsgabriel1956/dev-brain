@@ -3,8 +3,8 @@ type: concept
 title: "Big O"
 aliases: ["complexidade de algoritmos", "Big-O notation", "O(n)", "complexidade assintótica"]
 date_created: 2026-06-26
-date_updated: 2026-08-04
-source_count: 6
+date_updated: 2026-08-07
+source_count: 7
 tags: [cs-fundamentals, algoritmos, big-o, complexidade, performance]
 skill: cs-fundamentals
 status: draft
@@ -86,6 +86,8 @@ O(1) pode ser mais lento que O(n) para entradas pequenas se a constante for gran
 - [[wiki/concepts/algoritmos-de-grafo]] — DFS/BFS O(V+E), Dijkstra O((V+E) log V)
 - [[wiki/concepts/melhor-caso-pior-caso-caso-medio]] — a mesma operação tem complexidade diferente dependendo do cenário medido
 - [[wiki/concepts/time-space-tradeoff]] — Big O também mede espaço, não só tempo; menor notação nem sempre é a melhor escolha
+- [[wiki/concepts/complexidade-computacional]] — Big O é a notação; complexidade computacional é a área que a usa para medir tempo e espaço e classificar problemas
+- [[wiki/concepts/determinismo-vs-nao-determinismo]] — "tempo razoável" tem significado diferente em máquinas determinísticas e não-determinísticas (P vs NP)
 
 ## Key sources
 
@@ -96,3 +98,4 @@ O(1) pode ser mais lento que O(n) para entradas pequenas se a constante for gran
 - [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]] — estimar Big-O da solução ideal antes de implementar, como passo explícito do framework "Os Seis Passos"
 - [[wiki/sources/binary-search-em-5-minutos]] — comparação lado a lado O(n) vs. O(log n) no mesmo array, contando passos concretos
 - [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — custo escondido da ordenação prévia numa solução que "parece" O(n); regra de descarte de constantes com exemplo de três loops sequenciais (O(3n) = O(n))
+- [[wiki/sources/conceitos-que-regem-a-computacao-bits-turing-complexidade]] — Big O como comportamento assintótico; contraste O(n) × O(n²) × O(2ⁿ) com números concretos e a exponencial como base da segurança criptográfica

@@ -3,9 +3,9 @@ type: concept
 title: "Algoritmos de Grafo"
 aliases: ["graph algorithms", "grafo", "DFS", "BFS", "Dijkstra", "A-star", "pathfinding"]
 date_created: 2026-07-09
-date_updated: 2026-07-31
-source_count: 2
-tags: [cs-fundamentals, algoritmos, graph, dfs, bfs, dijkstra, a-star, pathfinding]
+date_updated: 2026-08-05
+source_count: 3
+tags: [cs-fundamentals, algoritmos, graph, dfs, bfs, dijkstra, a-star, pathfinding, graph-engineering, edge-weight]
 skill: cs-fundamentals
 status: draft
 ---
@@ -56,6 +56,10 @@ Cada passo resolve uma limitação do anterior: DFS/BFS não sabem qual caminho 
 
 Um projeto de labirinto onde o computador precisa descobrir sozinho o melhor caminho até a saída é citado como forma de exercitar essa família de algoritmos na prática, sem prescrever qual dos quatro (DFS, BFS, Dijkstra, A*) usar. O ganho pedagógico apontado não é a implementação em si, mas a mudança de raciocínio: sair de "como escrever a linha de código" para "como resolver o problema" — o que evitar caminhos bloqueados e não revisitar o mesmo nó duas vezes já é, na prática, reinventar a lógica de BFS/DFS. Ver [[wiki/concepts/projetos-fundamentais-para-aprender-a-programar]] para os outros dois projetos da mesma progressão (estado e modelagem).
 
+## Pedagogia: Nó, Aresta e Peso em Exemplos Cotidianos
+
+[[wiki/sources/graph-engineering-do-loop-ao-grafo]] introduz a mesma definição (nó = N, aresta = E) sem nenhum algoritmo de busca — só a estrutura crua — usando exemplos fora de código para fixar o conceito antes de aplicá-lo a agentes: uma rotina matinal (dormir → acordar → levantar → escovar os dentes → café, cada transição com um peso em minutos), uma rede social (pessoas como nós, relações com peso de amizade/trabalho/tópico em comum) e um funil de negócio (tráfego → signup → ativação → churn → LTV, ver [[wiki/concepts/ltv-cac]]). O ponto pedagógico: uma vez que o grafo tem pesos nas arestas, dá para aplicar buscas e otimizações sobre o processo — a mesma ideia central por trás de Dijkstra/A* acima, só que motivando **por que** alguém desenharia um grafo de informação (para um agente de IA navegar) antes mesmo de escolher qual algoritmo de busca rodar sobre ele.
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/arvore]] — árvores são grafos acíclicos conectados; BFS/DFS se aplicam igualmente
@@ -68,3 +72,4 @@ Um projeto de labirinto onde o computador precisa descobrir sozinho o melhor cam
 
 - [[wiki/sources/9-algoritmos-que-todo-programador-deveria-saber]]
 - [[wiki/sources/tres-projetos-para-aprender-programar]] — Pathfinding/labirinto como projeto de aprendizado de algoritmos de busca de caminho
+- [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — definição pedagógica de nó/aresta/peso com exemplos fora de código, motivando o uso de grafos para orquestração de agentes

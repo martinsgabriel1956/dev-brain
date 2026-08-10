@@ -3,8 +3,8 @@ type: concept
 title: "Attack Surface (Superfície de Ataque)"
 aliases: ["attack surface", "superfície de ataque", "minimização de superfície", "surface minimization"]
 date_created: 2026-06-05
-date_updated: 2026-07-31
-source_count: 4
+date_updated: 2026-08-06
+source_count: 5
 tags: [attack-surface, security, arquitetura-seguranca, defense-in-depth, gatekeeper]
 skill: tech-mentor-security
 status: stable
@@ -57,10 +57,15 @@ Rotas de webhook em paths padrão (`/api/webhook`, `/api/hook`) são um exemplo 
 
 Nem toda superfície é intencional. [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] demonstra brute force de diretórios/arquivos (dirsearch) como primeiro passo de reconhecimento contra uma aplicação — a ferramenta testa caminhos comuns até encontrar algo que a aplicação não estava "mostrando" intencionalmente, mas também não estava bloqueando. Nesse caso, revelou um `.env` publicamente acessível. O princípio de "por que isso precisa estar acessível?" se aplica igualmente a arquivos estáticos: se um servidor não bloqueia explicitamente dotfiles e caminhos de configuração, eles fazem parte da superfície de ataque real, mesmo que nunca linkados por nenhuma página. Ver [[wiki/concepts/secrets-management]] para a mitigação específica desse caso.
 
+## Visibilidade Como Multiplicador de Ataque
+
+Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], o autor generaliza um princípio observacional: quanto mais visibilidade um projeto tem (canal com audiência, presença ativa em rede social), mais ataques ele atrai — não porque a superfície técnica mudou, mas porque mais gente sabe que ela existe e tem motivo para testá-la (script kiddies, estudantes de segurança praticando). Cita como exemplo negativo o caso do "Cinema Hub" de Abraham, que deixou um arquivo `.env` publicamente acessível e teve a base de dados inteira exportada — mesma classe de falha (dotfile de configuração exposto) documentada acima via [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]], em um caso independente e não relacionado.
+
 ## Key Sources
 
 - [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — exemplos: inputs do usuário, S3 público, IDs sequenciais, outputs e timing como vetores
 - [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]] — rotas de webhook previsíveis como superfície de ataque
 - [[wiki/sources/ssh-chaves-como-funcionam]] — hardening de sshd_config como redução de superfície na camada de infraestrutura
+- [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — visibilidade/audiência como multiplicador do volume de ataques recebidos, independente de mudança técnica na superfície
 - [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] — brute force de diretórios (dirsearch) como técnica de recon que descobre superfície não intencional

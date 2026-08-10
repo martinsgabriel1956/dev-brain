@@ -3,11 +3,11 @@ type: concept
 title: "Entropia de Software"
 aliases: ["software entropy", "software decay", "degradação de código"]
 date_created: 2026-07-27
-date_updated: 2026-07-27
-source_count: 1
-tags: [refactoring, tech-debt, craftsmanship, design-de-software]
+date_updated: 2026-08-10
+source_count: 2
+tags: [refactoring, tech-debt, craftsmanship, design-de-software, code-rot]
 skill: tech-mentor-backend
-status: stub
+status: draft
 ---
 
 # Entropia de Software
@@ -27,3 +27,4 @@ Essa é a mesma dinâmica descrita, com outro vocabulário, em [[wiki/concepts/g
 ## Key Sources
 
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]]
+- [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — enumera as quatro forças da degradação (requisitos sobre arquitetura estática, perda de contexto entre equipes, hotfix sob pressão, casos não previstos) e propõe contramedidas majoritariamente organizacionais contra o code rot

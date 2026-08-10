@@ -3,8 +3,8 @@ type: concept
 title: "Planning Fallacy"
 aliases: ["viés de planejamento", "planning fallacy", "subestimação de esforço"]
 date_created: 2026-04-29
-date_updated: 2026-04-29
-source_count: 1
+date_updated: 2026-08-10
+source_count: 2
 tags: [psicologia, estimativa, projetos, produtividade, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -42,3 +42,4 @@ Realidade: auth sozinho leva 1 semana
 ## Key Sources
 
 - [[sources/por-que-devs-nao-terminam-projetos]]
+- [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — o problema grave não é errar a estimativa, é não *mensurar* o erro dela (planejar 40 pontos e entregar 30 repetidamente sem medir o gap); liga a subestimação sistemática à necessidade de [[wiki/concepts/folga-de-capacidade-slack|folga de capacidade]]

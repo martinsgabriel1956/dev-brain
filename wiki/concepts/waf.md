@@ -3,8 +3,8 @@ type: concept
 title: "WAF (Web Application Firewall)"
 aliases: ["waf", "web application firewall", "firewall de aplicação"]
 date_created: 2026-06-05
-date_updated: 2026-07-31
-source_count: 2
+date_updated: 2026-08-06
+source_count: 3
 tags: [waf, ddos, owasp, borda, attack-surface, cloud-security, aws-waf, cloudflare, under-attack-mode, syn-flood]
 skill: tech-mentor-security
 status: stable
@@ -39,6 +39,8 @@ Ter um WAF/CDN configurado na frente do domínio não bloqueia automaticamente u
 
 Em [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]], um SaaS recebeu 260 milhões de requests em um único dia via [[wiki/concepts/ddos-syn-flood|SYN flood]] mesmo com Cloudflare na frente do domínio — porque o Under Attack Mode estava desativado. O autor só descobriu isso ao confirmar, no dashboard do próprio Cloudflare, que o tráfego malicioso tinha passado *pelo* WAF, não contornado ele indo direto ao IP de origem.
 
+Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — fonte cronologicamente anterior ao incidente de SYN flood acima, mesmo projeto — o Cloudflare aparece bloqueando 157 tentativas maliciosas dentro de 230-234 mil requisições nos primeiros 15 dias, sem incidente grave: evidência de que o Under Attack Mode (ou mitigação equivalente) estava funcionando nesse momento, antes de aparentemente ter sido desativado ou reconfigurado no período entre as duas fontes.
+
 ## Provedores Comuns
 
 - **AWS WAF** — integra com CloudFront, ALB, API Gateway
@@ -50,3 +52,4 @@ Em [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]], um SaaS recebeu 260 mi
 - [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — WAF como complemento ao SAST: SAST age no dev, WAF age em produção
 - [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]] — Under Attack Mode desativado como falha real de configuração, não do produto
+- [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — 157 tentativas maliciosas bloqueadas, mesma origem, momento anterior ao incidente

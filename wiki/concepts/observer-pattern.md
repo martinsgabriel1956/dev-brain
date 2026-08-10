@@ -3,8 +3,8 @@ type: concept
 title: "Observer Pattern"
 aliases: ["observer", "pub/sub pattern", "event listener pattern"]
 date_created: 2026-05-05
-date_updated: 2026-08-04
-source_count: 3
+date_updated: 2026-08-06
+source_count: 5
 tags: [design-patterns, behavioral, observer, gof, event-driven, pub-sub]
 skill: tech-mentor-backend
 status: stable
@@ -109,6 +109,10 @@ function createGame() {
 
 **Trade-off explícito da fonte**: o custo de complexidade do Observer só se paga quando há múltiplos observers anexados ao mesmo subject — com um único observer, "talvez não valha a pena". O ganho concreto: anexar um novo observer (ex.: uma camada de rede escutando os mesmos comandos de teclado para sincronizar cliente e servidor) tem impacto quase zero no código já existente, porque nem o subject nem os observers anteriores precisam mudar.
 
+## Mais de um tipo de observer para o mesmo evento
+
+[[wiki/sources/design-pattern-observer-codigo-fonte-tv]] implementa o padrão duas vezes: um exemplo genérico de aquecimento e um exemplo de notificação de vídeo novo do YouTube, onde **dois tipos diferentes de observer** implementam a mesma interface `IObserver` mas reagem de formas estruturalmente distintas ao mesmo evento — `Subscriber` (notificação pessoal ao inscrito) e `Feed` (atualização da URL do feed do canal). Reforça que "não existe só um tipo de observer" ao lidar com esse padrão: o mesmo `notifyAll` pode disparar reações completamente diferentes dependendo do tipo concreto do assinante.
+
 ## Relação com outros conceitos
 
 - Base conceptual do [[mensageria]] e sistemas event-driven
@@ -119,5 +123,7 @@ function createGame() {
 
 - [[sources/sete-padroes-de-design-de-software]]
 - [[sources/design-pattern-observer]]
+- [[wiki/sources/seis-design-patterns-mais-usados-na-pratica]] — analogia do sino de inscrição do YouTube; nota o `useEffect` do React e o `EventEmitter` do Node.js como Observer do dia a dia
 - [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]] — implementação minimalista com `Set`, usada como base de uma store estilo Zustand
 - [[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] — Observer como terceiro estágio de desacoplamento (vs. acoplamento estático via Factory); implementação `subscribe`/`notifySubscribers` sem `update()` padronizado; trade-off complexidade vs. número de observers
+- [[wiki/sources/design-pattern-observer-codigo-fonte-tv]] — implementação em TypeScript/Deno com `Subject`/`Observer` genéricos e exemplo de notificação de vídeo do YouTube com dois tipos de observer (`Subscriber` e `Feed`)

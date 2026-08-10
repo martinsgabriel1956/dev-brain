@@ -3,8 +3,8 @@ type: concept
 title: "Matriz Refatorar vs. Reescrever"
 aliases: ["refactor vs rewrite", "matriz de decisão refatoracao reescrita"]
 date_created: 2026-07-28
-date_updated: 2026-08-03
-source_count: 3
+date_updated: 2026-08-10
+source_count: 4
 tags: [tech-debt, refactoring, rewrite, decisao, arquitetura]
 skill: tech-mentor-leadership
 status: stub
@@ -47,3 +47,4 @@ Esse risco é o mesmo documentado como anti-padrão de "rewrite fantasma" na ges
 - [[wiki/sources/tech-debt-guia-completo-gestao-metricas]]
 - [[wiki/sources/large-scale-vs-complex-architecture]] — caso enterprise de refatoração gradual multi-plataforma (mainframe/AS-400/Linux/Windows) como origem típica de arquitetura complexa
 - [[wiki/sources/ciclo-de-mudanca-de-arquitetura]] — custo de descobrir tarde que o TO-BE escolhido está errado, mesmo raciocínio de custo de oportunidade da matriz
+- [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — descreve o padrão da "V2 do zero" como resposta tentadora à degradação, alertando que a reescrita envelhece e reapresenta os mesmos problemas se as práticas contínuas não mudarem

@@ -3,8 +3,8 @@ type: concept
 title: "Lean Startup"
 aliases: ["startup enxuta", "the lean startup", "metodologia lean startup"]
 date_created: 2026-07-07
-date_updated: 2026-07-07
-source_count: 1
+date_updated: 2026-08-06
+source_count: 2
 tags: [carreira, produto, mvp, startup, validacao, empreendedorismo]
 skill: tech-mentor-leadership
 status: stable
@@ -40,6 +40,10 @@ Lean Startup resolve isso invertendo a ordem: validar barato antes de construir 
 
 O MVP é a ferramenta tática da fase "Construir" — o menor artefato capaz de gerar aprendizado real sobre o mercado. → [[concepts/mvp]]
 
+## Caso real: Find My SaaS
+
+Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], o autor cita explicitamente o ciclo construir-medir-aprender ao justificar por que lançou o Find My SaaS numa VPS mínima, sem arquitetura elaborada: "sem esperar nada perfeito e sem querer prever todas as cascas possíveis" — mas ressalva que isso exige conhecimento suficiente para entregar algo "minimamente seguro", não ausência de cuidado. Ver [[wiki/concepts/mvp]] para a implementação técnica dessa entrega mínima e [[wiki/concepts/over-engineering]] para a recusa explícita de complexidade de infraestrutura antecipada.
+
 ## Ver Também
 
 - [[concepts/build-measure-learn]] — o ciclo operacional da metodologia
@@ -49,3 +53,4 @@ O MVP é a ferramenta tática da fase "Construir" — o menor artefato capaz de 
 ## Key Sources
 
 - [[sources/lean-startup-para-devs-mano-deivin]]
+- [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — build-measure-learn aplicado ao lançamento real do Find My SaaS

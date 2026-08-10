@@ -3,8 +3,8 @@ type: entity
 title: "Claude Code"
 aliases: ["claude code cli"]
 date_created: 2026-05-18
-date_updated: 2026-07-31
-source_count: 13
+date_updated: 2026-08-05
+source_count: 14
 tags: [ferramenta, agentes-ia, anthropic, llmops, cli, mcp, hooks]
 skill: tech-mentor-ai
 status: stable
@@ -132,3 +132,8 @@ O mecanismo de [[context-compaction]] da janela de contexto do Claude Code é um
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — seleção manual de modelo por tarefa na UI, e automação da escolha via skill + subagentes (um subagente por modelo)
 - [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — oferta patrocinada de VPS (HostGator) com Claude Code pré-instalado
 - [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] — demonstração de `claude --worktree`, local de armazenamento (`.claude/worktrees/`) e prompt de manter/descartar ao sair
+- [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — apontar `ANTHROPIC_BASE_URL` para um [[wiki/concepts/ai-gateway-llm-router|AI Gateway]] self-hosted permite usar o Claude Code sem login real e com modelos não-Anthropic por trás (GLM, MiMo), contornando o lockin de modelo descrito em [[wiki/concepts/vendor-lock-in-cloud]]
+
+## Lockin de Modelo Contornável via Base URL Customizada
+
+[[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] demonstra que o Claude Code aceita qualquer endpoint compatível com o formato da API da Anthropic via `ANTHROPIC_BASE_URL` em `.claude/settings.json` — inclusive um [[wiki/concepts/ai-gateway-llm-router|AI Gateway]] self-hosted que redireciona as chamadas para modelos de outros providers (ex.: GLM 5.2 via OpenRouter, MiMo da Xiaomi via Kiro) sem exigir login com uma conta Anthropic real. O autor da fonte descreve isso como "quebrar o lockin" do Claude Code — a ferramenta continua funcionando normalmente, mas o modelo real por trás pode ser qualquer um compatível com o gateway. Ver [[wiki/concepts/rotacao-de-contas-free-tier]] para o mecanismo relacionado de rotação entre múltiplas contas free tier do mesmo provider.

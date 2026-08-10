@@ -3,8 +3,8 @@ type: concept
 title: "IA como Chicote de Produtividade"
 aliases: ["chicote de produtividade", "ia obrigada", "adocao forcada ia", "ia sem autonomia"]
 date_created: 2026-04-26
-date_updated: 2026-04-26
-source_count: 1
+date_updated: 2026-08-10
+source_count: 2
 tags: [carreira, burnout, ia-produtividade, autonomia, gestao, transferencia-responsabilidade]
 skill: tech-mentor-leadership
 status: draft
@@ -66,6 +66,11 @@ Isso não é adoção de IA — é **transferência de responsabilidade**.
 
 [[concepts/compute-como-compensacao]] · [[concepts/divida-cognitiva]] · [[concepts/vibe-coding]]
 
+## Confirmação quantitativa: o tempo economizado vira mais trabalho a revisar
+
+O mesmo padrão de "ganho capturado pela empresa, carga transferida ao dev" aparece nos dados da Faros AI ([[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]]): o tempo economizado na escrita é imediatamente realocado para mais tarefas (+21%) e mais PRs, empilhando trabalho no gargalo de revisão (+91% no tempo de code review) — e 30% dos devs já batem nos limites de uso das ferramentas. É o [[wiki/concepts/paradoxo-da-aceleracao]] visto pelo ângulo da carga de trabalho: intensificação, não produtividade líquida.
+
 ## Key Sources
 
 - [[sources/ia-salario-ou-carga-de-trabalho]]
+- [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]] — tempo economizado realocado para mais tarefas; gargalo de revisão e limites de uso como carga transferida ao dev

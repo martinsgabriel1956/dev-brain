@@ -3,8 +3,8 @@ type: concept
 title: "Service Discovery"
 aliases: ["service discovery", "descoberta de serviços", "service registry"]
 date_created: 2026-04-22
-date_updated: 2026-07-23
-source_count: 2
+date_updated: 2026-08-06
+source_count: 3
 tags: [sistemas-distribuidos, networking, microsservicos, kubernetes, consul]
 skill: tech-mentor-system-design
 status: stable
@@ -100,3 +100,4 @@ const services = await consul.health.service({ service: "order-service", passing
 
 - [[sources/service-discovery]]
 - [[wiki/sources/api-gateway-padrao-essencial-arquiteturas-distribuidas]]
+- [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] — pré-requisito implícito de todo algoritmo de balanceamento simulado: o load balancer precisa conhecer o conjunto de servidores disponíveis antes de poder escolher entre eles

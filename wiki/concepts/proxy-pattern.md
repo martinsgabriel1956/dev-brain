@@ -3,8 +3,8 @@ type: concept
 title: "Proxy Pattern"
 aliases: ["padrão proxy", "design pattern proxy"]
 date_created: 2026-05-01
-date_updated: 2026-06-05
-source_count: 2
+date_updated: 2026-08-05
+source_count: 3
 tags: [design-patterns, structural, proxy, oop]
 skill: tech-mentor-backend
 status: stable
@@ -68,7 +68,12 @@ const generator = new ReportGeneratorProxy(new ReportGenerator(), cache);
 
 O Controller não sabe que está lidando com um Proxy — depende apenas da interface `IReportGenerator`.
 
+## Exemplo Concreto — Remote Proxy em Produto Real (AI Gateway)
+
+[[wiki/concepts/ai-gateway-llm-router]] é uma instância de mercado do Remote Proxy combinado com Protection/Logging Proxy: o cliente (ex.: [[wiki/entities/claude-code]]) fala apenas com a interface HTTP compatível com a API da Anthropic, sem saber que o "objeto real" por trás pode ser um modelo completamente diferente (GLM, MiMo) numa conta/provider distinto — o mesmo princípio de substituição transparente ilustrado na Estrutura Mínima acima, aplicado a chamadas de LLM em vez de objetos em memória.
+
 ## Key Sources
 
 - [[wiki/sources/design-pattern-proxy]]
 - [[sources/design-pattern-facade]] — relações com Facade e distinção entre os dois
+- [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — Remote Proxy aplicado a AI Gateway/roteamento de LLM

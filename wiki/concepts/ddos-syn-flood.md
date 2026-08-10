@@ -3,8 +3,8 @@ type: concept
 title: "DDoS e SYN Flood"
 aliases: ["syn flood", "ddos", "denial of service distribuído", "under attack mode"]
 date_created: 2026-07-31
-date_updated: 2026-07-31
-source_count: 1
+date_updated: 2026-08-06
+source_count: 2
 tags: [ddos, syn-flood, tcp, cloudflare, under-attack-mode, syn-cookies, seguranca, rede]
 skill: tech-mentor-security
 status: draft
@@ -38,6 +38,10 @@ Estar atrás de um [[wiki/concepts/waf]]/CDN como Cloudflare não é suficiente 
 
 Em [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]], um SaaS pequeno recebeu 260 milhões de requests em um único dia (vs. 200–400 mil num dia normal) via SYN flood, mesmo com Cloudflare configurado na frente do domínio — porque o Under Attack Mode estava desativado. O incidente foi agravado por um bug de terceiros no proxy reverso ([[wiki/concepts/coolify]]/Traefik) que já consumia CPU e memória antes do pico, e resolvido não recuperando o servidor original, mas provisionando uma instância nova com a ordem de setup invertida: firewall no boot → Docker → proxy por último.
 
+## Precursor: tentativas bloqueadas antes do incidente
+
+Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — cronologicamente anterior ao incidente de 260 milhões de requests acima — o mesmo autor relata 157 tentativas maliciosas bloqueadas pelo Cloudflare num total de 230-234 mil requisições nos primeiros 15 dias do Find My SaaS, sem incidente grave: o Under Attack Mode parece ter funcionado nesse momento. Isso sugere que a configuração de proteção foi desativada ou alterada em algum ponto entre essa fonte e o incidente do SYN flood — não esclarecido em nenhuma das duas transcrições, sinalizado como questão aberta em [[wiki/entities/mano-davin]].
+
 ## Checklist de mitigação (pós-incidente)
 
 1. Travar a versão do proxy reverso em produção — auto-update pode subir uma versão com regressão.
@@ -50,3 +54,4 @@ Em [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]], um SaaS pequeno recebe
 ## Key sources
 
 - [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]]
+- [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — 157 tentativas maliciosas bloqueadas, precursor ao incidente acima

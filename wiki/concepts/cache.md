@@ -3,8 +3,8 @@ type: concept
 title: "Cache"
 aliases: ["caching", "cache de aplicação"]
 date_created: 2026-06-26
-date_updated: 2026-08-03
-source_count: 7
+date_updated: 2026-08-10
+source_count: 8
 tags: [cache, performance, redis, arquitetura, backend, grande-rollback]
 skill: tech-mentor-backend
 status: stable
@@ -75,5 +75,6 @@ Em bancos [[wiki/concepts/sharding|shardeados]], queries agregadas simples (ex.:
 - [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] — contraponto: cache como camada de reserva foi removido em favor do banco relacional puro, ver [[wiki/concepts/grande-rollback]]
 - [[wiki/sources/10-conceitos-fundamentais-backend]] — framing didático de cache hit/miss; a pergunta central não é "usar cache ou não" mas "quando essa resposta deixa de ser verdade"
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — demonstração num simulador interativo: mesmo tráfego, banco de dados saturado a 115% cai drasticamente ao conectar cache, porque a maioria das leituras de um sistema de reserva de hotel repete os mesmos quartos populares (read-heavy); IA avaliadora do exercício aponta cache invalidation como lacuna não tratada
+- [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — cache posicionado como o **último** degrau (não o primeiro): especialista em dois problemas — hotspots (perfil de celebridade a 200k req/s) e queries caras (joins/agregações de leaderboard/dashboard) — ambos respondidos em <1ms; cilada de entrevista é adicionar cache antes de otimizar índices/pooling
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — em entrevista sênior, "adicionar cache" como escolha de escala é seguido de aprofundamento esperado sobre o tipo (ex.: cache-aside) — não basta citar a peça, é preciso justificar a estratégia
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — cache como solução recomendada para cross-shard operations (fan-out) em bancos shardeados

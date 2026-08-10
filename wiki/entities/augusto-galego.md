@@ -3,8 +3,8 @@ type: entity
 title: "Augusto Galego"
 aliases: ["Augusto Galego", "augustogalego.com"]
 date_created: 2026-07-20
-date_updated: 2026-08-04
-source_count: 6
+date_updated: 2026-08-05
+source_count: 7
 tags: [pessoa, programador, youtuber, brasil, devops, system-design, carreira]
 skill: tech-mentor-infra
 status: stub
@@ -36,9 +36,14 @@ Além de conteúdo de infra/deploy, produz conteúdo sobre carreira e entrevista
 
 [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — vídeo resolvendo três problemas clássicos de entrevista de coding, sem identificação de autor/canal na transcrição. O único indício de autoria é o cupom de patrocínio "Augusto 20" oferecido por um serviço de câmbio/remessas internacionais, repetido várias vezes no bloco publicitário — nome coincidente com esta entidade, mas evidência mais fraca que as inferências anteriores registradas nesta página (que se apoiavam em padrões de patrocínio idênticos, como HostGator, e citações diretas de produtos próprios, como "Mapa do Arquiteto" — aqui não há nenhum desses sinais, apenas o nome no cupom). Se confirmada, seria o primeiro conteúdo de algoritmos/estruturas de dados puro atribuído a este autor, distinto do conteúdo prévio de infraestrutura/deploy e carreira/system design. Tratado como open question na própria fonte.
 
+## Possível Conteúdo de Infraestrutura como Código / AWS CDK (Autoria Inferida, Evidência de Conteúdo)
+
+[[wiki/sources/infraestrutura-como-codigo-cdk-aws]] — vídeo sobre Infrastructure as Code com demo em AWS CDK, sem identificação de autor/canal no áudio. O indício de autoria aqui não é padrão de patrocínio (o sponsor deste vídeo, AmaX/infraestrutura de pagamentos, é diferente dos já associados a esta entidade), mas sim conteúdo: o fechamento do vídeo cita um curso pago próprio de System Design "o mais extenso já produzido" cobrindo exatamente API Gateway, Lambda, network e banco de dados — sobreposição quase total com a descrição do curso já documentada nesta entidade ("banco de dados, filas, load balancer, API Gateway, autenticação, WAF..."), com a mesma política de reembolso integral em um mês sem nenhum tipo de questionamento. Evidência de conteúdo mais forte que a inferência de [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] (que se apoiava só num nome de cupom), mas mais fraca que as inferências apoiadas em padrão de patrocínio idêntico — tratada como open question na própria fonte.
+
 ## Key Sources
 
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]]
+- [[wiki/sources/infraestrutura-como-codigo-cdk-aws]] — autoria inferida por sobreposição de conteúdo do curso pago de System Design (API Gateway, Lambda, banco de dados) e política de reembolso idêntica, não confirmada por nome nem padrão de patrocínio
 - [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — autoria inferida, não confirmada por nome no vídeo
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — convidado como colaborador/editor no projeto do simulador de system design
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — progressão de expectativas de system design por nível de senioridade (júnior/pleno/sênior), entrevista vs. trabalho real

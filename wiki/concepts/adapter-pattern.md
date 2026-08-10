@@ -3,8 +3,8 @@ type: concept
 title: "Adapter Pattern"
 aliases: ["padrão adapter", "design pattern adapter", "adaptador"]
 date_created: 2026-05-01
-date_updated: 2026-07-24
-source_count: 5
+date_updated: 2026-08-06
+source_count: 6
 tags: [design-patterns, structural, adapter, oop, integracao]
 skill: tech-mentor-backend
 status: stable
@@ -77,3 +77,4 @@ As interfaces `Input Boundary`, `Output Boundary` e `Data Access` descritas em [
 - [[wiki/sources/mappers-conversao-entre-camadas]] — distinção Adapter vs Mapper
 - [[wiki/sources/design-pattern-adapter]] — caso DomPDF/TCPDF: extração de interface + adaptador concreto elimina acoplamento a lib externa e viabiliza testabilidade
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — Input/Output Boundary e Data Access interface como aplicação do mesmo princípio nas fronteiras da Clean Architecture
+- [[wiki/sources/seis-design-patterns-mais-usados-na-pratica]] — analogia do adaptador de tomada de viagem; exemplo de tradução de campos de API externa (`first_name`/`last_name` → `nome`/`sobrenome`) e de troca de biblioteca HTTP (Axios → `fetch`) sem alterar o resto do código; ORMs (Prisma, TypeORM) e drivers de banco como adapters

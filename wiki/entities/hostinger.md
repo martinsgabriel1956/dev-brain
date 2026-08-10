@@ -3,8 +3,8 @@ type: entity
 title: "Hostinger"
 aliases: ["Hostinger VPS"]
 date_created: 2026-07-21
-date_updated: 2026-07-31
-source_count: 2
+date_updated: 2026-08-06
+source_count: 4
 tags: [tech-mentor-infra, vps, hosting, patrocinio, coolify]
 skill: tech-mentor-ai
 status: stub
@@ -18,7 +18,13 @@ Também citada (novamente em bloco patrocinado) em [[wiki/sources/ddos-sim-flood
 
 *Nota de desambiguação:* não confundir com [[wiki/entities/hostgator]], outra provedora de VPS brasileira patrocinadora de conteúdo técnico na wiki (ver [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] e [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]]) — nomes parecidos, empresas diferentes.
 
+Também citada (terceiro bloco patrocinado) em [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]]: usada para o deploy "com um clique" de um [[wiki/concepts/ai-gateway-llm-router|AI Gateway]] self-hosted (o "Nine Router", nome não confirmado) — mesmo padrão de "implantação com um clique" já citado como diferencial da Hostinger nas fontes anteriores, aplicado a uma ferramenta de proxy multi-provider de LLM em vez de a um app genérico.
+
+Também citada (quarto bloco patrocinado, cronologicamente anterior ao incidente de SYN flood) em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]]: nos primeiros 15 dias do Find My SaaS, a VPS Hostinger usada tinha apenas 1 vCPU, 4GB de RAM e 50GB de armazenamento — suficiente para sustentar 230 mil+ requisições, incluindo tentativas de ataque bloqueadas pelo Cloudflare, sem downtime nesse período.
+
 ## Key Sources
 
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]]
 - [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]]
+- [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — deploy de um clique de AI Gateway self-hosted (proxy multi-provider de LLM)
+- [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — VPS mínima (1 vCPU/4GB/50GB) sustentando 230 mil+ requisições nos primeiros 15 dias do Find My SaaS

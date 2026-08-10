@@ -3,8 +3,8 @@ type: concept
 title: "System Design por Nível de Senioridade"
 aliases: ["system design junior pleno senior", "expectativas de system design por nível", "o que esperar de cada senioridade em arquitetura"]
 date_created: 2026-07-27
-date_updated: 2026-07-30
-source_count: 3
+date_updated: 2026-08-10
+source_count: 4
 tags: [system-design, carreira, senioridade, junior, pleno, senior, entrevistas]
 skill: tech-mentor-system-design
 status: draft
@@ -57,3 +57,4 @@ Desenvolver um sistema inteiro do zero para uma equipe trabalhar em cima — dec
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]]
 - [[wiki/sources/system-design-entrevista-cinema-draw-io]] — confirmação prática independente: o apresentador, ao desenhar um rascunho de entrevista, decide não aprofundar escalabilidade/RPS por considerar isso pergunta de senioridade mais alta — mesma gradação descrita nesta página, vinda de outra fonte/canal
 - [[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] — eixo complementar de sênior vs. staff baseado em escopo (produto vs. vertical), não profundidade técnica
+- [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — gradação prática num problema de banco de dados: pleno dá a solução pronta ("cache + réplicas"), sênior investiga contexto (RPS, hotspots, criticidade) antes de responder e sabe que 10k req/s se resolve só com índice + pooling

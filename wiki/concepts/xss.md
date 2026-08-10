@@ -57,3 +57,4 @@ Se um token de autenticação (sessão ou [[wiki/concepts/jwt|JWT]]) está guard
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — mencionado como exemplo de vulnerabilidade detectada por SAST (SonarQube)
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — teste manual de injeção de script como parte de checklist de autopentest assistido por IA
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — roubo de token via localStorage vs. proteção de cookie HttpOnly; CSP como camada de defesa
+- [[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] — citado, junto de [[sql-injection]], como padrão inseguro comum em projetos públicos usados como dado de treinamento de LLMs de código

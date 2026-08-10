@@ -3,8 +3,8 @@ type: concept
 title: "Cache Hot Path"
 aliases: ["hot cache", "cache em camadas", "local cache", "power law cache"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-08-10
+source_count: 2
 tags: [cache, performance, redis, power-law, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -68,3 +68,4 @@ Hot cache local: TTL 5min (consistência eventual aceitável)
 ## Key Sources
 
 - [[sources/case-url-shortener]]
+- [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — hotspot como caso canônico do cache: perfil de celebridade a 200k req/s enquanto o resto da app recebe carga normal; no encurtador de URL, URLs virais recebem cache em Redis

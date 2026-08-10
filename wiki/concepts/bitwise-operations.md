@@ -3,8 +3,8 @@ type: concept
 title: "Bitwise Operations (AND, OR, Left Shift)"
 aliases: ["bit manipulation", "operações bitwise", "AND OR shift", "manipulação de bits", "bitmask"]
 date_created: 2026-07-22
-date_updated: 2026-07-22
-source_count: 1
+date_updated: 2026-08-07
+source_count: 2
 tags: [bitwise, bit-manipulation, mascara, cs-fundamentals, numero-binario]
 skill: cs-fundamentals
 status: draft
@@ -66,7 +66,9 @@ Repetido byte a byte, esse padrão constrói um valor maior a partir de fragment
 
 - [[utf-8]] — decode/encode usa AND+shift+OR para montar/desmontar runas
 - [[go-fundamentos]] — `iota` com left shift para bitmask em Go
+- [[wiki/concepts/sistema-binario-bit-byte]] — o que os operadores bitwise manipulam: os bits que formam bytes; AND/OR/XOR como base do processamento binário
 
 ## Key Sources
 
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]]
+- [[wiki/sources/conceitos-que-regem-a-computacao-bits-turing-complexidade]] — AND, OR e XOR sobre bytes como base do processamento binário (ex: construir uma soma só com lógica)

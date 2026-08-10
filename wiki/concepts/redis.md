@@ -3,8 +3,8 @@ type: concept
 title: "Redis"
 aliases: ["redis cache", "redis db"]
 date_created: 2026-06-26
-date_updated: 2026-07-30
-source_count: 7
+date_updated: 2026-08-10
+source_count: 8
 tags: [redis, cache, nosql, banco-in-memory, chave-valor, backend, grande-rollback]
 skill: tech-mentor-backend
 status: stable
@@ -89,5 +89,6 @@ Reforço direto do caso Shopify acima: em quase 100% dos casos reais, Redis não
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — Redis Pub/Sub como broker entre servidores WebSocket replicados, tópico por usuário/grupo
 - [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] — caso onde Redis + MySQL sincronizados foi substituído por MySQL puro com SKIP LOCKED
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — Redis como camada de velocidade sobre banco relacional, nunca fonte de verdade; números de OPS/s e riscos de persistência
+- [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — Redis como cache para hotspots num encurtador de URL (URLs virais), tirando a carga dessas queries do banco principal
 - [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] — citado como exemplo de SGBD NoSQL chave-valor e classificado didaticamente como CP no Teorema CAP em material de concurso
 - [[wiki/sources/system-design-entrevista-cinema-draw-io]] — reserva de assento de cinema por 15 minutos guardando `seatmapId`+`seatId` com TTL; a chave expira sozinha e libera o assento, mas o desenho não consulta o Redis antes de responder disponibilidade a partir da API externa de seatmap, gerando um bug de consistência assumido pelo próprio autor (ver [[wiki/concepts/distributed-lock]])

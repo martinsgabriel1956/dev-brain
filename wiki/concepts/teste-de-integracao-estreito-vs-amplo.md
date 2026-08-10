@@ -59,3 +59,4 @@ Para evitar a ambiguidade, Fowler prefere renomear em vez de qualificar todo mun
 - [[wiki/sources/integration-test-martin-fowler]]
 - [[wiki/sources/contract-test-martin-fowler]] — mecânica do contract test que mitiga o double não-fiel
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — caso prático de "amplo" ambíguo em sistema com PSP e fornecedor externos
+- [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — testes de integração como o tipo de melhor custo-benefício segundo o consenso de CTOs relatado, usável como critério de aceitação por task para conter code rot

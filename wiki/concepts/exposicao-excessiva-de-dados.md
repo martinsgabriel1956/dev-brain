@@ -3,8 +3,8 @@ type: concept
 title: "Exposição Excessiva de Dados (Excessive Data Exposure)"
 aliases: ["excessive data exposure", "over-exposure", "data exposure", "vazamento de dados por api"]
 date_created: 2026-07-04
-date_updated: 2026-07-04
-source_count: 1
+date_updated: 2026-08-06
+source_count: 2
 tags: [data-exposure, api-security, appsec, data-privacy, owasp]
 skill: tech-mentor-security
 status: stable
@@ -44,11 +44,17 @@ const product = await db.product.findUnique({
 })
 ```
 
+## Anedota: PII em Log de Response Após Iteração com IA
+
+[[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] relata (de segunda mão) um caso concreto e de baixo impacto real, mas ilustrativo: um time iterou um endpoint com IA e o resultado passou a logar, na response, nome e telefone do usuário — PII sem necessidade. Não foi dado de cartão ou pagamento, mas poderia ter sido; o autor usa o caso como lembrete de que exposição excessiva de dados é exatamente o tipo de regressão que passa despercebida por testes funcionais (que verificam se a resposta "funciona", não se ela vaza campos demais) — ver [[wiki/concepts/degradacao-de-seguranca-iterativa-ia]].
+
 ## Ver também
 
 - [[wiki/concepts/data-privacy]] — princípio geral de minimização de dados (PII, DLP)
 - [[wiki/concepts/idor]] — falha relacionada de exposição, mas por falta de checagem de ownership em vez de falta de projeção de campos
+- [[wiki/concepts/degradacao-de-seguranca-iterativa-ia]] — mecanismo pelo qual esse tipo de regressão de exposição de dados pode ser introduzido silenciosamente durante refinamento iterativo com IA
 
 ## Key Sources
 
 - [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]]
+- [[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] — anedota de PII logada em response após iteração com IA

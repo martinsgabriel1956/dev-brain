@@ -3,8 +3,8 @@ type: concept
 title: "Worktree e Paralelismo de Tarefas"
 aliases: ["worktree parallelism", "git worktree IA", "paralelismo de tarefas ia"]
 date_created: 2026-06-02
-date_updated: 2026-07-31
-source_count: 9
+date_updated: 2026-08-05
+source_count: 10
 tags: [worktree, paralelismo, git, spec-driven, produtividade]
 skill: tech-mentor-ai
 status: stable
@@ -103,3 +103,4 @@ Ao encerrar a sessão (`/quit`), o Claude Code pergunta explicitamente se o usu�
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — [[wiki/entities/replit|Replit]] expõe esse padrão na UI como "workers": uma sessão principal roda uma tarefa maior enquanto subtarefas paralelas de colaboradores rodam isoladas, com merge automático de volta e resolução de conflitos pelo próprio harness — hipótese do autor de que é `git worktree` por baixo dos panos, mas sem confirmação técnica
 - [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] — demonstração completa de `git worktree add`/`list`/`remove -f` no terminal; comparação lado a lado de onde Codex (app) e Claude Code guardam a worktree criada nativamente
 - [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — o artefato de "estado" de um projeto spec-driven permite fatiar o trabalho em múltiplos pull requests sem perder rastreabilidade das decisões já tomadas
+- [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — caso-limite especulativo de paralelismo sem controle: [[wiki/entities/peter-steinberger]] citado rodando múltiplos loops em paralelo (~US$ 1 milhão/mês em tokens) até eles conflitarem entre si ou operarem sobre informação desatualizada, motivando a busca por um [[wiki/concepts/grafo-como-abstracao-de-agentes|grafo]] de orquestração em vez de loops paralelos sem coordenação explícita

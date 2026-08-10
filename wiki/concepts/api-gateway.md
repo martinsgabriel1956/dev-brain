@@ -3,8 +3,8 @@ type: concept
 title: "API Gateway"
 aliases: ["api gateway", "gateway de api", "ponto único de entrada de api"]
 date_created: 2026-07-23
-date_updated: 2026-08-04
-source_count: 4
+date_updated: 2026-08-05
+source_count: 5
 tags: [api-gateway, arquitetura-distribuida, gatekeeper, roteamento, edge-functions, single-point-of-failure]
 skill: tech-mentor-backend
 status: stable
@@ -84,3 +84,4 @@ Complementares, não substitutos — ver [[wiki/concepts/service-mesh]].
 - [[wiki/sources/api-gateway-padrao-essencial-arquiteturas-distribuidas]]
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — API Gateway aparece como conhecimento esperado a partir do nível pleno, junto de workers e load balancer
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]] — no ecossistema AWS, é a forma mais comum de encaminhar requests até [[wiki/concepts/aws-lambda]]; comparado explicitamente ao [[wiki/concepts/load-balancer]] (mecanismo parecido, intuito diferente — não é balancear carga, é rotear por endpoint)
+- [[wiki/sources/infraestrutura-como-codigo-cdk-aws]] — usado como componente central de uma stack de exemplo descrita em [[wiki/concepts/infraestrutura-como-codigo|IaC]] (`/user`, `/products` roteando para Lambdas distintos, sem que o backend tenha acesso direto à internet)

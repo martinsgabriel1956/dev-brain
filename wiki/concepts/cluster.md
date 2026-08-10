@@ -3,8 +3,8 @@ type: concept
 title: "Cluster"
 aliases: ["clusters", "compute cluster", "database cluster", "distributed cluster"]
 date_created: 2026-05-05
-date_updated: 2026-08-03
-source_count: 2
+date_updated: 2026-08-06
+source_count: 3
 tags: [cluster, distributed-systems, escalabilidade, alta-disponibilidade, infra]
 skill: tech-mentor-infra
 status: stable
@@ -59,3 +59,4 @@ Um mesmo cluster (MySQL Cluster, Suse Cluster, Redhat Cluster) pode ser configur
 
 - [[sources/clusters]]
 - [[wiki/sources/ha-vs-ft-alta-disponibilidade-tolerancia-a-falha]] — cluster ativo-passivo (HA) vs. ativo-ativo (Tolerância a Falha)
+- [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] — arquitetura mínima de cluster (load balancer + N nodes intercambiáveis) usada como base para simular visualmente cada algoritmo de distribuição de carga

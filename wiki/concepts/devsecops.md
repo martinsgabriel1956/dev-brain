@@ -3,8 +3,8 @@ type: concept
 title: "DevSecOps"
 aliases: ["devsecops", "devopssec", "development security and operations"]
 date_created: 2026-07-30
-date_updated: 2026-07-30
-source_count: 2
+date_updated: 2026-08-06
+source_count: 3
 tags: [devsecops, devops, security-culture, shift-left, sast, sca, ci-cd-security]
 skill: tech-mentor-security
 status: stable
@@ -47,10 +47,15 @@ DevSecOps não se resolve automatizando sozinho — pessoas e times são parte d
 
 Diante de brechas de segurança, frameworks como ITIL, COBIT e [[wiki/concepts/iso-27001]] — e [[wiki/concepts/compliance]] de forma geral — fornecem o conjunto de regras que orienta a reação, mas a fonte enfatiza que a resposta precisa vir de processos ágeis integrados ao fluxo de desenvolvimento, não de auditorias isoladas pós-deploy.
 
+## Cadência de Review Precisa Acompanhar a Velocidade de Produção com IA
+
+[[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] argumenta que times que adotaram IA para gerar código sem atualizar a cadência de security review estão acumulando dívida de segurança na mesma velocidade da produtividade ganha — o ritmo típico de "uma vez por sprint ou por mês" deixou de ser suficiente e precisa passar a ser **por feature ou por iteração significativa**, dado que refinamento iterativo com IA pode degradar segurança rapidamente (ver [[wiki/concepts/degradacao-de-seguranca-iterativa-ia]]). É uma aplicação concreta e específica do princípio geral desta página de que segurança precisa acompanhar o ritmo real do ciclo de desenvolvimento, não ser um checkpoint isolado no fim.
+
 ## Key Sources
 
 - [[wiki/sources/devsecops-origem-cultura-manifesto]] — origem histórica, Manifesto DevSecOps, mapeamento de ferramentas por fase do ciclo, cultura de pessoas
 - [[wiki/sources/devsecops-pipeline]] — implementação técnica em CI/CD: SAST, SCA, container scanning, DAST, Policy as Code
+- [[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] — cadência de security review precisa escalar com a velocidade de geração de código por IA
 
 ## Conceitos Relacionados
 

@@ -3,8 +3,8 @@ type: concept
 title: "Context Window"
 aliases: ["janela de contexto", "context length", "token limit"]
 date_created: 2026-05-17
-date_updated: 2026-05-31
-source_count: 2
+date_updated: 2026-08-05
+source_count: 3
 tags: [llm, context-window, tokens, prompt-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -53,7 +53,12 @@ No [[claude-code]], a janela de contexto (~200k tokens) acumula ao longo da sess
 
 Isso é uma das causas do fenômeno [[token-anxiety]]: a consciência de que o contexto "expira" cria urgência nos desenvolvedores.
 
+## Contexto Compartilhado Entre Modelos num Gateway com Fallback
+
+[[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] descreve uma variante do enchimento de contexto discutido acima: em vez de compactar (`/compact`) quando a janela enche, um [[wiki/concepts/ai-gateway-llm-router|AI Gateway]] com fallback silencioso troca de modelo/conta ao longo da mesma sessão, preservando o histórico entre as trocas — dando a sensação prática de uma sessão "muito mais longa" do que a janela nativa de qualquer modelo individual, às custas de perder a garantia de que todos os modelos da rotação lidam com contexto longo da mesma forma (viés de "lost-in-the-middle" pode variar entre eles).
+
 ## Fontes
 
 - [[wiki/sources/microsoft-prompt-engineering-guide]]
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
+- [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — sessão longa via troca de modelo/conta com contexto compartilhado, em vez de compactação

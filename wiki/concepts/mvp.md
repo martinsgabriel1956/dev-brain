@@ -3,8 +3,8 @@ type: concept
 title: "MVP (Minimum Viable Product)"
 aliases: ["mvp", "produto mínimo viável", "minimum viable product"]
 date_created: 2026-04-29
-date_updated: 2026-07-24
-source_count: 4
+date_updated: 2026-08-06
+source_count: 5
 tags: [projetos, produtividade, entrega, planejamento, carreira, startup]
 skill: tech-mentor-leadership
 status: stable
@@ -50,6 +50,10 @@ O [[wiki/concepts/checklist-primeiro-dia-projeto]] propõe documentar a estrutur
 
 MVPs e protótipos são o contexto onde [[wiki/concepts/vibe-coding]] entrega valor real: validar uma hipótese de negócio rapidamente, sem o custo de implementação manual completa. O risco não é usar vibe coding para validar — é confundir o MVP validado com um sistema pronto para produção sem revisão arquitetural, de segurança e de contexto de negócio. Ver [[wiki/sources/vibe-coding-limites-maturidade-profissional]].
 
+## Caso real: infraestrutura mínima como teste do MVP
+
+Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], o autor leva a lógica do MVP até a infraestrutura: hospeda o Find My SaaS numa única VPS de 1 vCPU/4GB, monolito sem [[wiki/concepts/over-engineering|Kubernetes ou microsserviços]], de propósito, para descobrir se o MVP "aguenta porrada" (230 mil+ requisições em 15 dias, incluindo ataques). A escolha reforça que "mínimo" no MVP não se limita a features — também se aplica ao dimensionamento de infraestrutura, evitando gastar tempo/dinheiro em capacidade que ainda não tem uso comprovado.
+
 ## Ver Também
 
 - [[concepts/scope-creep]] — inimigo principal do MVP
@@ -66,3 +70,4 @@ MVPs e protótipos são o contexto onde [[wiki/concepts/vibe-coding]] entrega va
 - [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]
 - [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — MVP como um dos contextos onde vibe coding brilha
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — reforça a tese de lançar com monetização desde o dia um e escopo mínimo sendo exatamente a única funcionalidade pela qual alguém pagaria (o simulador em si, não uma tela de diagramação gratuita); o próprio autor admite em retrospecto ter violado essa regra ao incluir um "simulador de caos" no MVP inicial
+- [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — MVP mínimo estendido à infraestrutura (VPS 1 vCPU/4GB), testado sob carga real e ataque

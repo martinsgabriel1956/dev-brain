@@ -3,8 +3,8 @@ type: concept
 title: "Over-Engineering"
 aliases: ["overengineering", "verde neném", "engenharia excessiva", "gold plating"]
 date_created: 2026-06-09
-date_updated: 2026-08-03
-source_count: 10
+date_updated: 2026-08-06
+source_count: 11
 tags: [design, qualidade, anti-pattern, aprendizado, design-patterns, dora, under-engineering]
 skill: tech-mentor-leadership
 status: stable
@@ -83,6 +83,10 @@ A progressão que evita isso:
 
 [[wiki/sources/large-scale-vs-complex-architecture]] propõe uma distinção terminológica simétrica: **over-engineering** aparece mais tipicamente em contextos de [[wiki/concepts/large-scale-architecture|large scale]] — "eu preciso de tanto, tanto, tanto" leva a empilhar ferramental e tecnologia (múltiplos storage engines, camadas de cache, control planes) além do que a escala real exige. Já o **over-thinking** — excesso de pensamento que não simplifica regras de negócio — é o anti-pattern espelho, mais associado à [[wiki/concepts/arquitetura-complexa|arquitetura complexa]] de ambientes enterprise legados. A fonte não deriva essa distinção de literatura formal, mas ela é consistente com a causa raiz já documentada aqui (falta de julgamento de escopo, medo de não ter preparado o suficiente).
 
+## Recusa explícita como estratégia: Find My SaaS
+
+Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], o autor lista a recusa deliberada de Kubernetes, arquitetura de microsserviço, multicloud e arquitetura event-driven para um marketplace de SaaS que aguentou 230 mil+ requisições numa VPS única de 1 vCPU/4GB — um caso de MVP levando a recusa de over-engineering até a camada de infraestrutura, não só de código. Reforça o mesmo padrão já registrado em [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]]: adotar arquitetura pesada "para parecer em dia com o mercado" antes de qualquer necessidade real comprovada. Ver [[wiki/concepts/mvp]].
+
 ## Relação com Otimização Prematura
 
 [[otimizacao-prematura]] é o análogo de over-engineering no nível de performance: aplicar esforço excessivo onde não há necessidade comprovada. Ambos são sintomas de afoiteza.
@@ -116,5 +120,6 @@ A progressão que evita isso:
 - [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]] — terceira fonte independente reforçando a refutação do "triângulo de ferro": entregar algo funcional e imperfeito vale mais que algo inacabado e "perfeito", e overthinking sobre escalabilidade sem usuários é citado como erro pessoal do próprio autor mesmo após 20+ anos de carreira
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — dois exemplos concretos no mesmo material: (1) Kafka citado como possível over-engineering para um sistema de reserva de hotel, usado mesmo assim como exercício didático com ressalva explícita; (2) o próprio autor admite ter incluído um "simulador de caos" no MVP de um produto novo antes de validar a funcionalidade central (o simulador), classificando isso como erro de escopo em retrospecto
 - [[wiki/sources/7-habitos-programador-altamente-eficaz]] — amarra over-engineering a um estágio de carreira (pleno escapando da paralisia por análise sem julgamento maduro de escopo), complementar à causa raiz de aprendizado já registrada
+- [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — recusa deliberada de Kubernetes/microsserviços/event-driven num SaaS real, rodando numa VPS de 1 vCPU/4GB sob carga e ataque
 - [[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] — estudo de caso de over-engineering arquitetural completo (microfrontends parciais para unificar 4 sistemas de fornecedores) resolvendo o sintoma errado, contrastado com a solução enxuta (dashboard read-only + BFF) que resolve a causa raiz
 - [[wiki/sources/large-scale-vs-complex-architecture]] — distinção terminológica entre over-engineering (excesso de ferramental, comum em large scale) e over-thinking (excesso de pensamento sobre regras, comum em arquitetura complexa)

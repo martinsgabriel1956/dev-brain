@@ -3,8 +3,8 @@ type: concept
 title: "Lógica Booleana"
 aliases: ["lógica binária", "portas lógicas", "boolean logic", "AND OR NOT"]
 date_created: 2026-06-26
-date_updated: 2026-06-26
-source_count: 1
+date_updated: 2026-08-07
+source_count: 2
 tags: [cs-fundamentals, binario, logica-booleana, hardware, circuitos]
 skill: cs-fundamentals
 status: draft
@@ -44,7 +44,10 @@ Cada uma dessas operações corresponde a uma **porta lógica** física — um c
 - [[abstracao]] — toda a pilha de hardware→software é construída sobre essa fundação oculta
 - [[big-o]] — operações binárias são O(1); algoritmos de busca e ordenação trabalham sobre representações binárias
 - [[compilador]] — o código que você escreve é traduzido eventualmente para instruções que manipulam bits
+- [[wiki/concepts/sistema-binario-bit-byte]] — os bits e bytes sobre os quais AND/OR/XOR operam; a fonte usa a soma como exemplo de operação construída só com lógica
+- [[wiki/concepts/bitwise-operations]] — as mesmas operações aplicadas diretamente a bits em código (parsing, encoding, bitmask)
 
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
+- [[wiki/sources/conceitos-que-regem-a-computacao-bits-turing-complexidade]] — AND, OR e XOR sobre bytes como base do processamento binário (ex: representar uma soma só com operações lógicas)

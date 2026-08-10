@@ -3,8 +3,8 @@ type: concept
 title: "DORA Metrics"
 aliases: ["DORA", "DevOps Research and Assessment", "Accelerate"]
 date_created: 2026-07-09
-date_updated: 2026-07-31
-source_count: 4
+date_updated: 2026-08-10
+source_count: 5
 tags: [devops, metrics, cicd, qualidade, engineering-culture, tech-debt]
 skill: tech-mentor-leadership
 status: stub
@@ -54,8 +54,13 @@ Não usar para comparar times entre si (contextos diferentes) nem para avaliar p
 
 Um ano antes do livro *Accelerate* formalizar a pesquisa DORA, o Facebook já documentava a mesma correlação na prática: deploy web migrado para push quase-contínuo, com o time de mobile crescendo 15x sem queda de produtividade por engenheiro nem aumento de incidentes críticos por release. Não usa a nomenclatura DORA, mas é o mesmo fenômeno — frequência alta sem degradar qualidade. → [[wiki/sources/rapid-release-at-massive-scale-facebook]]
 
+## Output vs. Outcome: por que medir com IA exige DORA e não contagem de PRs
+
+[[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]] é uma aplicação direta do princípio DORA de não confundir atividade com resultado. Times que medem produtividade com IA por **output** (PRs mergeados, tarefas, volume) veem os números explodirem — a IA infla exatamente essas métricas independente de qualidade — enquanto Change Failure Rate e Lead Time contam a história oposta. As métricas de outcome que revelam a verdade são as mesmas do DORA: bug rate pós-deploy (≈ Change Failure Rate) e ciclo de review/mergeio (≈ Lead Time). Ver [[wiki/concepts/output-vs-outcome]] e o [[wiki/concepts/paradoxo-da-aceleracao]].
+
 ## Key Sources
 
 - [[wiki/sources/como-evitar-over-engineering-david-farley]]
+- [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]] — output (PRs, volume) inflado pela IA vs. outcome (bug rate, lead time) como métrica que realmente importa
 - [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] — lead time crescente como proxy indireto de dívida técnica acumulada
 - [[wiki/sources/rapid-release-at-massive-scale-facebook]] — caso real pré-Accelerate da mesma correlação velocidade/qualidade

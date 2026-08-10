@@ -3,8 +3,8 @@ type: concept
 title: "Vibe Coding"
 aliases: ["vibe coding", "vibe-coding", "coding por vibração", "agentic coding", "orquestração de agentes"]
 date_created: 2026-04-23
-date_updated: 2026-08-03
-source_count: 13
+date_updated: 2026-08-06
+source_count: 14
 tags: [vibe-coding, agentes-ia, produtividade, divida-cognitiva, ai-brainfry, paralelismo-cognitivo]
 skill: tech-mentor-ai
 status: stable
@@ -135,6 +135,7 @@ Citado como exemplo de hype tecnológico em formação (junto com MCP) no moment
 - [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — onde vibe coding brilha (MVP, docs, testes) vs. onde exige julgamento humano (arquitetura, segurança, contexto de negócio)
 - [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]] — citado como exemplo de hype em formação, no momento do vídeo
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] — "specs to code" como vibe coding disfarçado
+- [[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] — reforço quantitativo independente do ponto "segurança nunca é padrão": ~2,77x mais falhas de segurança que código humano, e piora ainda mais a cada rodada de refinamento (ver [[wiki/concepts/degradacao-de-seguranca-iterativa-ia]])
 - [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — criador do OpenCode citado como "mais vibe coder" (fez o próprio OpenCode via vibe coding)
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — RFC + skill Grill Me como mitigação prática à perda de janela de revisão incremental
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — ratchet de baseline como mitigação mecânica via CI, alternativa/complemento à disciplina de RFC e Grill Me

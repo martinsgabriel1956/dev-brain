@@ -3,9 +3,9 @@ type: entity
 title: "Código Fonte TV"
 aliases: ["Codigo Fonte TV", "CDF"]
 date_created: 2026-07-10
-date_updated: 2026-07-16
-source_count: 3
-tags: [canal, youtube, mercado-de-trabalho, pesquisa-salarial, brasil]
+date_updated: 2026-08-06
+source_count: 4
+tags: [canal, youtube, mercado-de-trabalho, pesquisa-salarial, brasil, design-patterns, typescript]
 skill: tech-mentor-leadership
 status: stub
 ---
@@ -19,9 +19,15 @@ Canal brasileiro de YouTube com quase 9 anos de produção de conteúdo sobre pr
 - Produz a série "Dicionário do Programador", cobrindo linguagens e tecnologias em formato de referência
 - Cruza dados da própria pesquisa salarial com pesquisas oficiais de fabricantes de linguagem (ex.: Go Developer Survey do Google) para dar mais robustez às conclusões sobre mercado
 - Mantém o segmento **CDF Café**, formato de conversa mais livre sobre temas diversos da indústria (carreira, mercado, IA) regado a café
+- Também produz uma série de "mão no código" sobre design patterns GoF em TypeScript/Deno — já cobriu [[wiki/concepts/strategy-pattern]], [[wiki/concepts/facade-pattern]] e [[wiki/concepts/singleton-pattern]] antes do episódio sobre [[wiki/concepts/observer-pattern]]
+
+## Nota de identificação
+
+O texto do vídeo sobre Observer se autorreferencia como "Código Fonte TV" ao convidar para seguir o canal no Instagram, o que motivou atribuir esta fonte a esta entidade. Diferente das fontes anteriores (pesquisa salarial, CDF Café), este episódio é conteúdo hands-on de programação — mostra que o canal cobre tanto mercado/carreira quanto design patterns com código. Sem evidência de conflito com outra entidade (diferente do caso [[wiki/entities/eric-lenda]]/[[wiki/entities/erick-wendel]]).
 
 ## Key Sources
 
 - [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] — episódio do CDF Café sobre custo real de IA, token economics e demissões
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — episódio do CDF Café sobre RFCs, skill Grill Me e quality gates contra a perda de entendimento no vibe coding
+- [[wiki/sources/design-pattern-observer-codigo-fonte-tv]] — episódio "mão no código" sobre o padrão Observer em TypeScript/Deno, com exemplo genérico e exemplo de notificação de vídeo do YouTube

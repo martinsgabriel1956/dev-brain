@@ -3,8 +3,8 @@ type: concept
 title: "Boy Scout Rule"
 aliases: ["regra do escoteiro", "leave the campground cleaner", "deixe o código mais limpo do que encontrou"]
 date_created: 2026-07-09
-date_updated: 2026-07-28
-source_count: 3
+date_updated: 2026-08-10
+source_count: 4
 tags: [craftsmanship, tech-debt, refactoring, clean-code, principios]
 skill: tech-mentor-leadership
 status: stable
@@ -50,3 +50,4 @@ Não se limita a nomes — qualquer melhoria pequena e segura (extrair uma funç
 - [[wiki/sources/5-principios-que-mudaram-como-programador]]
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]] — distingue Boy Scout Rule (micro-limpeza acoplada a qualquer mudança) de [[wiki/concepts/refatoracao|refatoração oportunista]] (reestruturação maior, mas ainda aproveitando trabalho que já seria feito)
 - [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] — caso Knight Capital como custo extremo de não seguir a regra; Red-Green-Refactor como o ciclo TDD onde a etapa de refactor já é a própria Boy Scout Rule
+- [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — defende enforçar a regra no code review ("nenhum PR deixa o código pior") com hotfix como única exceção; prazo apertado não é justificativa para gambiarra

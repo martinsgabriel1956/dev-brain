@@ -3,8 +3,8 @@ type: entity
 title: "Uncle Bob (Robert C. Martin)"
 aliases: ["uncle bob", "robert c. martin", "robert cecil martin"]
 date_created: 2026-07-03
-date_updated: 2026-08-04
-source_count: 7
+date_updated: 2026-08-06
+source_count: 8
 tags: [clean-code, clean-architecture, solid, autor, quality-gate]
 skill: tech-mentor-backend
 status: stub
@@ -52,9 +52,16 @@ Sétima menção, em [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-
 
 **Nota de verificação**: mesma cautela de atribuição das menções anteriores — sem URL nem data exata do post na fonte.
 
+## Generalização de OCP + LSP em Dependency Inversion (1996)
+
+Oitava menção, em [[wiki/sources/principios-solid-ilustrados]]: segundo a fonte, Robert C. Martin descreveu em 1996 que o uso rigoroso conjunto do [[wiki/concepts/open-closed-principle|Open/Closed]] e do [[wiki/concepts/liskov-substitution-principle|Liskov Substitution]] pode ser generalizado num princípio à parte, o [[wiki/concepts/dependency-inversion-principle|Dependency Inversion Principle]].
+
+**Nota de verificação**: atribuição não cross-checada contra a fonte primária (o paper original "The Dependency Inversion Principle", C++ Report, 1996) — tratar como não confirmado até verificação.
+
 ## Key Sources
 
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
+- [[wiki/sources/principios-solid-ilustrados]] — atribuição da generalização de OCP+LSP em Dependency Inversion (1996), não confirmada contra fonte primária
 - [[wiki/sources/5-principios-que-mudaram-como-programador]]
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — citação sobre análise estática em PR como gatilho para o setup de quality gate do autor
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — post de blog sobre objeto vs. estrutura de dados, e diagrama de cenário web do livro *Clean Architecture*

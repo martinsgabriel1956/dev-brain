@@ -3,8 +3,8 @@ type: concept
 title: "Governança de Código Gerado por IA"
 aliases: ["paradoxo da ia no codigo", "governar codigo de ia"]
 date_created: 2026-07-03
-date_updated: 2026-07-31
-source_count: 5
+date_updated: 2026-08-06
+source_count: 6
 tags: [ia-no-processo-de-engenharia, arquitetura, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -47,9 +47,14 @@ A IA ameaça quem permanece só na camada de execução e não evolui para julga
 
 [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] aplica o mesmo paradoxo ao contexto específico de paralelismo via [[wiki/concepts/worktree-paralelismo|worktree]]: a mesma capacidade que permite rodar três bug fixes e uma feature em paralelo, cada um numa instância separada de agente, é capacidade de gerar mais código ruim mais rápido — "garbage in, garbage out". O antídoto apontado pela fonte é o mesmo já documentado nesta página como pré-requisito estrutural: documentação boa e regras de negócio bem definidas antes de multiplicar agentes, não depois.
 
+## Dados Concretos: Segurança Degrada com Iteração, Não Só com Falta de Revisão
+
+[[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] traz o contraponto quantitativo mais forte já registrado nesta página: não é só que código gerado por IA nasce mais vulnerável (~2,77x mais falhas de segurança que código humano, segundo CodeRabbit e Veracode) — pedir para a IA **refinar** o próprio código repetidamente piora a segurança, não melhora. Um paper testando 400 amostras ao longo de 40 rodadas de refinamento mediu 37,6% de aumento em vulnerabilidades críticas depois de apenas 5 iterações, mesmo com um prompt pedindo explicitamente foco em segurança a cada rodada. Isso reforça o argumento central desta página de outro ângulo: a ausência de governança não é só "ninguém revisou o código gerado" — é que o próprio ato de iterar sem checkpoints de revisão introduz risco continuamente, mesmo quando alguém está "melhorando" o código de boa fé. Ver [[wiki/concepts/degradacao-de-seguranca-iterativa-ia]] para o mecanismo detalhado e a mitigação de processo proposta (SAST no delta, limite de iterações, testes de segurança como contrato prévio).
+
 ## Key Sources
 
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]]
+- [[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] — dados quantitativos de degradação de segurança em refinamento iterativo com IA
 - [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] — caso de governança arquitetural: IA substituindo a camada de decisão determinística em vez de apenas interpretar
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]] — caso limite: pessoa não técnica gerando tickets via IA conectada ao repositório, sem nenhum julgamento de engenharia no fluxo
 - [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — caso limite: vender sistema vibe-coded como pronto para produção sem revisão humana

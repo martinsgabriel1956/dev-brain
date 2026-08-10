@@ -3,8 +3,8 @@ type: concept
 title: "Factory Pattern"
 aliases: ["factory", "factory method", "simple factory"]
 date_created: 2026-05-05
-date_updated: 2026-08-04
-source_count: 2
+date_updated: 2026-08-06
+source_count: 3
 tags: [design-patterns, creational, factory, gof]
 skill: tech-mentor-backend
 status: stable
@@ -59,3 +59,4 @@ const user = UserFactory.create("admin", "1", "John");
 
 - [[sources/sete-padroes-de-design-de-software]]
 - [[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] — Factory como segundo estágio de desacoplamento (isolamento com chamada estática explícita), intermediário entre código "ameba" e Observer
+- [[wiki/sources/seis-design-patterns-mais-usados-na-pratica]] — analogia do pedido numa pizzaria; exemplo de sistema de pagamentos (Pix/cartão/boleto) e `document.createElement` como factory nativa do browser

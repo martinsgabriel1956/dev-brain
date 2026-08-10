@@ -3,8 +3,8 @@ type: concept
 title: "Subagentes"
 aliases: ["subagents", "sub-agentes", "Task tool", ".claude/agents"]
 date_created: 2026-07-03
-date_updated: 2026-08-03
-source_count: 3
+date_updated: 2026-08-05
+source_count: 4
 tags: [subagentes, claude-code, multi-agent, paralelismo, context-engineering, harness]
 skill: tech-mentor-ai
 status: draft
@@ -62,3 +62,4 @@ Um caso concreto de disparo automático (não nomeado pelo usuário): ao executa
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
 - [[wiki/sources/loop-engineering-planner-critic-grafo]] — subagentes como executores num loop Planner-Executor-Critic, com prompt e rúbrica gerados dinamicamente
 - [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — 4 subagentes em paralelo despachados a partir do breakdown de tasks de uma spec
+- [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — gestão de projeto (épico → história → tarefa → subtarefa com dependências cruzadas) como exemplo de como decidir quantos subagentes podem rodar em paralelo sem se bloquear, mesmo antes de qualquer agente de IA entrar no processo

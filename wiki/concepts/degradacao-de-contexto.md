@@ -3,8 +3,8 @@ type: concept
 title: "Degradação de Contexto"
 aliases: ["context degradation", "lost in the middle", "degradação janela contexto"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 2
+date_updated: 2026-08-06
+source_count: 3
 tags: [contexto, degradacao, janela-de-contexto, llm, qualidade]
 skill: tech-mentor-ai
 status: stable
@@ -55,7 +55,12 @@ Não carregar todo o código-fonte. Carregar só os arquivos relevantes para a t
 
 Ter uma janela grande não significa que devo preenchê-la. Quanto mais informação irrelevante, menor a qualidade. A janela grande é uma rede de segurança para tarefas longas, não uma licença para acumular lixo.
 
+## Possível Variante de Domínio: Degradação de Segurança em Refinamento Iterativo
+
+[[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] descreve um efeito próximo, mas registrado como conceito distinto por precaução: [[wiki/concepts/degradacao-de-seguranca-iterativa-ia]] — código gerado por IA acumula mais vulnerabilidades críticas a cada rodada de refinamento (37,6% a mais depois de 5 iterações, segundo um paper citado). A fonte não deixa claro se essas rodadas ocorreram numa única sessão longa (o que aproximaria o mecanismo desta página — perda de atenção com janela de contexto muito preenchida) ou em chamadas independentes sem contexto compartilhado (o que apontaria para simples ausência de memória persistente entre chamadas, um mecanismo diferente). Fica como open question até uma fonte futura esclarecer.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
+- [[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] — possível variante de domínio (segurança) do mesmo tipo de degradação por perda de memória/atenção entre rodadas

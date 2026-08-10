@@ -3,8 +3,8 @@ type: concept
 title: "Produto Vendível Desde o Dia Zero"
 aliases: ["feature vendível", "PMF de uma única feature", "não dar tempo grátis esperando apego"]
 date_created: 2026-07-09
-date_updated: 2026-07-09
-source_count: 1
+date_updated: 2026-08-06
+source_count: 2
 tags: [product-market-fit, saas, mvp, growth, pricing]
 skill: tech-mentor-leadership
 status: draft
@@ -28,6 +28,11 @@ A funcionalidade que substituiu esse posicionamento como core do produto — tra
 
 Complementar a esse princípio: o autor recomenda que quem empreende pela primeira vez construa um produto do qual é o próprio usuário. Cita o caso da versão Windows do "Persoa", que ficou ruim porque o autor não tinha máquina Windows para testar — ao adquirir uma e corrigir ~8 bugs num fim de semana, a experiência do usuário Windows mudou completamente. A lógica: resolver o próprio problema primeiro, tornar-se o primeiro cliente dessa solução, depois vender para quem pensa de forma parecida.
 
+## Caso adjacente: monetização via boost, sem gate de feature
+
+Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], o Find My SaaS monetiza desde o lançamento via um único mecanismo pago (boost/destaque temporário de um SaaS cadastrado na home) — o produto central (listar e receber upvote) continua gratuito, mas a via de receita já existe desde o dia zero, gerando R$ 4.819 em 15 dias sem tráfego pago. Reforça o princípio central desta página com uma variante: em vez de uma feature core paga, é uma camada de visibilidade paga sobre um produto gratuito — mesma lógica de "algo vendível desde o início", aplicada a marketplace em vez de SaaS de uso direto.
+
 ## Key Sources
 
 - [[wiki/sources/como-vender-um-saas-sem-audiencia]]
+- [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — monetização via boost pago desde o lançamento, sobre produto core gratuito

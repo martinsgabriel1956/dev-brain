@@ -3,8 +3,8 @@ type: concept
 title: "Alta Disponibilidade"
 aliases: ["HA", "High Availability", "Alta Disponibilidade Cloud"]
 date_created: 2026-05-06
-date_updated: 2026-08-03
-source_count: 6
+date_updated: 2026-08-06
+source_count: 7
 tags: ["alta-disponibilidade", "resiliência", "aws", "arquitetura", "sre"]
 skill: tech-mentor-infra
 status: stub
@@ -68,3 +68,4 @@ Framing complementar (mais amplo que redundância multi-AZ acima): disponibilida
 - [[wiki/sources/sre-capacidade-observabilidade-confiabilidade-custo]] — disponibilidade redefinida como ter recurso (CPU/memória) suficiente para o usuário, não só uptime
 - [[wiki/sources/ha-vs-ft-alta-disponibilidade-tolerancia-a-falha]] — distinção HA (ativo-passivo, com janela de failover) vs. Tolerância a Falha (ativo-ativo, sem janela perceptível)
 - [[wiki/sources/rto-rpo-recovery-time-point-objective]] — RTO/RPO como indicadores formais de cenário de desastre que devem ser definidos a partir do negócio antes de escolher entre HA e DR
+- [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] — indisponibilidade visualizada no nível mais granular: uma requisição dropada por um servidor saturado é o sintoma direto e imediato de falta de disponibilidade, antes de qualquer discussão de AZ/região

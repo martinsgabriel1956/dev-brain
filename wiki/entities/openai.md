@@ -3,8 +3,8 @@ type: entity
 title: "OpenAI"
 aliases: ["Open AI"]
 date_created: 2026-05-17
-date_updated: 2026-07-31
-source_count: 9
+date_updated: 2026-08-05
+source_count: 10
 tags: [openai, organização, llm, ia, cartao-corporativo]
 skill: tech-mentor-ai
 status: stable
@@ -73,3 +73,4 @@ Segundo [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]], em abril a Ope
 - [[wiki/sources/porque-nunca-confiar-em-llm-alucinacao]] — paper da OpenAI sobre causa raiz da alucinação (treinamento recompensa palpite, precisão nunca chega a 100%)
 - [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] — queda para 32,3% de participação no cartão corporativo em abril de 2026, ultrapassada pela Anthropic
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — "Sol" como apelido do GPT 5.6, um dos dois modelos mais fortes (e caros) no Artificial Analysis
+- [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — formato de API da OpenAI citado como o outro padrão de compatibilidade que um AI Gateway multi-provider costuma imitar, ao lado do formato Anthropic

@@ -3,8 +3,8 @@ type: concept
 title: "ROI de IA"
 aliases: ["retorno de ia", "ai roi", "valor da ia", "ia roi organizacional"]
 date_created: 2026-05-31
-date_updated: 2026-07-16
-source_count: 2
+date_updated: 2026-08-10
+source_count: 3
 tags: [roi-de-ia, ia-organizacional, llmops, token-economics, learning-gap-organizacional]
 skill: tech-mentor-ai
 status: stable
@@ -83,7 +83,12 @@ Na era agêntica, o custo por dev explodiu ($200–2.000+/mês). ROI positivo ex
 
 A [[wiki/entities/gartner]] projeta que o custo de codificação com IA vai superar o salário médio de um desenvolvedor até **2028**. O motivo apontado não é a tecnologia em si, mas a falta de disciplina de consumo de tokens — que não surge da escolha do desenvolvedor, já que devs tendem a otimizar velocidade e conveniência em vez de eficiência de custo. Sem visibilidade institucional clara do uso de tokens, a organização arrisca estourar orçamento e perder a capacidade de rastrear resultado de custo versus valor — o oposto exato do que o [[wiki/concepts/capital-de-tokens|capital de tokens]] exigiria se fosse tratado com o mesmo rigor de medição do capital humano.
 
+## Quantificação do Vazamento: 93% de adoção, 10% de ganho (Faros AI)
+
+[[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]] dá um número concreto para o "valor que vaza no caminho" descrito acima: 93% de adoção de IA entre devs, mas só **10% de ganho de produtividade organizacional** — mesmo com devs individualmente fazendo +21% de tarefas e ~2x de PRs. O ponto de vazamento identificado é específico: o processo de entrega (a revisão) não mudou, então o ganho individual esbarra no gargalo de code review (+91% no tempo de review). É a versão de engenharia interna do mesmo "ganho individual que não sobe para a empresa" — ver [[wiki/concepts/paradoxo-da-aceleracao]].
+
 ## Key Sources
 
 - [[wiki/sources/ia-custo-roi-bolha-ou-realidade]]
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] — previsão Gartner 2028 e o conceito de capital de tokens
+- [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]] — 93% adoção vs. 10% de ganho organizacional; o vazamento localizado no gargalo de code review

@@ -3,8 +3,8 @@ type: concept
 title: "Paradoxo de Jevons"
 aliases: ["jevons paradox", "efeito rebote", "rebound effect", "paradoxo jevons ia"]
 date_created: 2026-05-31
-date_updated: 2026-07-16
-source_count: 2
+date_updated: 2026-08-06
+source_count: 3
 tags: [paradoxo-de-jevons, token-economics, era-agentica, custo-ia, economia]
 skill: tech-mentor-ai
 status: stable
@@ -54,7 +54,12 @@ O Paradoxo de Jevons opera no nível organizacional (conta total). [[token-anxie
 
 O caso Uber (orçamento de IA de 2026 estourado em 4 meses) já estava registrado aqui de fonte anterior; uma segunda fonte ([[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]]) confirma o mesmo episódio com o detalhe de que o estouro veio especificamente de token maxing sem limite de consumo — ver [[wiki/concepts/token-maxing]]. A mesma fonte traz a formulação do CEO da [[wiki/entities/palantir-technologies]] sobre o "timing" entre token maxing e ROI: o paradoxo só se resolve se a queda de custo de inferência dos hyperscalers acompanhar a velocidade com que o consumo cresce — e, pela lógica de Jevons, ela estruturalmente não acompanha.
 
+## Aplicação a Emprego (Não Só a Custo de Token)
+
+[[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] aplica a mesma estrutura de raciocínio a um domínio diferente do custo de inferência: capacidade de trabalho, não tokens. O argumento — automação não implica demissão automaticamente, desde que o tempo liberado seja canalizado para gerar mais valor — é a versão "efeito rebote" aplicada a headcount: uma empresa que mantém 3 programadores agora produzindo 3x cada (9x de output total) supera uma concorrente que demite 2 para "ficar só com quem produz por 3". É uma tese normativa do autor, não um resultado observado, mas estruturalmente é o mesmo mecanismo de Jevons — eficiência maior expande o total consumido/produzido, em vez de reduzir proporcionalmente o insumo (tokens no caso original, headcount aqui).
+
 ## Key Sources
 
 - [[wiki/sources/ia-custo-roi-bolha-ou-realidade]]
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] — segunda confirmação do caso Uber, com crítica do CEO da Palantir ao timing token maxing vs. ROI
+- [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] — aplicação do mesmo mecanismo a headcount/emprego em vez de custo de token

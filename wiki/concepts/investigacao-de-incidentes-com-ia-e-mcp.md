@@ -3,8 +3,8 @@ type: concept
 title: "Investigação de Incidentes com IA e MCP"
 aliases: ["ia observabilidade", "agente investigando incidentes", "relatório automatizado de telemetria", "grafana mcp"]
 date_created: 2026-07-15
-date_updated: 2026-07-29
-source_count: 2
+date_updated: 2026-08-06
+source_count: 3
 tags: [observabilidade, mcp, ia, agente-ia, opentelemetry, incident-response]
 skill: tech-mentor-infra
 status: draft
@@ -35,6 +35,15 @@ Combinando o MCP de observabilidade com um MCP de documentação de código (ex.
 
 O agente não está adivinhando — está fazendo o mesmo trabalho de correlação manual (cruzar traceId entre logs/traces/métricas) que um especialista faria, só que em segundos em vez de semanas. A etapa que historicamente consumia mais tempo (reunir e cruzar dados espalhados manualmente) é a etapa que a automação elimina; o raciocínio sobre causa raiz continua dependendo dos dados estarem lá.
 
+## Duas Superfícies para o Mesmo Padrão: Chat Web vs. MCP no Editor
+
+O mesmo padrão de correlação automática aparece em pelo menos duas superfícies distintas no ecossistema Grafana, com implicação de custo diferente:
+
+- **Grafana MCP no editor de código** (ex. Claude Code): o agente do editor chama o MCP como tool. Consome créditos de IA do próprio editor/plano de IA do usuário.
+- **Assistente de IA embutido na interface web do Grafana Cloud**: chat próprio da plataforma, sem sair do navegador. Não consome créditos de IA do editor do usuário — o custo (se houver) é do plano do Grafana Cloud, não do assistente de código.
+
+Em ambos os casos, o mesmo prompt genérico ("investigue os erros dessa aplicação, correlacionando logs/métricas/traces, e aponte a linha de código") produziu resultado equivalente: relatório com causa raiz e linha de código específica, sem contexto adicional fornecido e sem acesso ao repositório — nesse caso um vazamento de conexões PostgreSQL nunca liberadas ao pool, esgotando o limite de conexões e causando timeouts (ver [[wiki/concepts/connection-pooling]]). O chat web ainda oferece, direto da mesma conversa, criar alerta, criar dashboard, e abrir Pull Request de correção via integração com GitHub — estendendo na prática o fluxo "relatório vira PR automaticamente" descrito abaixo sem precisar de um segundo MCP de documentação de código.
+
 ## O Limite do Padrão: Guardrails Podem Recusar Investigar o Próprio Ataque
 
 [[wiki/sources/modelo-openai-escapa-sandbox-benchmark-cyberseguranca]] documenta um caso em que este padrão falhou por um motivo que a página original não previa: durante um incidente real de segurança (~17.000 linhas de eventos gerados por um ataque, volume acima da capacidade de análise manual humana), o time tentou usar modelos padrão com [[wiki/concepts/agent-containment|guardrails]] ativos (via API pública) exatamente como descrito acima — pedir que o agente correlacione os dados e aponte a causa raiz. Os modelos **se recusaram a ajudar**, porque não distinguiram "investigar um ataque" (uso defensivo legítimo) de "executar um ataque" (o que os guardrails de intenção existem para bloquear). A solução encontrada foi hospedar um modelo sem guardrails (GLM 5.2) na própria infraestrutura, especificamente para essa investigação — ver [[wiki/concepts/soberania-digital]].
@@ -49,3 +58,4 @@ Isso expõe uma tensão que não estava explícita nesta página: o padrão de "
 
 - [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]]
 - [[wiki/sources/modelo-openai-escapa-sandbox-benchmark-cyberseguranca]] — caso em que guardrails padrão recusaram ajudar a investigar um ataque real, exigindo modelo self-hosted sem guardrails
+- [[wiki/sources/monitoramento-aplicacoes-ia-grafana-cloud-opentelemetry]] — mesmo padrão via chat web do Grafana Cloud (não MCP), sem consumo de créditos do editor; identificou vazamento de connection pool e ofereceu abrir PR de correção direto do chat

@@ -3,8 +3,8 @@ type: concept
 title: "Code Review"
 aliases: ["revisão de código", "pull request review", "PR review"]
 date_created: 2026-07-03
-date_updated: 2026-08-04
-source_count: 12
+date_updated: 2026-08-10
+source_count: 13
 tags: [code-review, qualidade, carreira, júnior, mentoria, grill-me, babysitting-de-agentes, quality-gate, under-engineering]
 skill: tech-mentor-leadership
 status: draft
@@ -74,6 +74,10 @@ O critério "regra de negócio primeiro" e a exigência de pull request/versiona
 
 [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] dá o argumento quantitativo por trás da mesma mudança já descrita acima (babysitting, humano como gargalo): se metade do diff médio de um PR já não é mais digitado por humano — a fonte cita um survey do Pragmatic Engineer com taxa de aceitação de código de IA entre 30% e 55%, crescente —, a pergunta que orienta a revisão deixa de ser sobre estilo ("esse for loop está bonito?") e passa a ser sobre prova objetiva: o código passa em critérios que rodam no CI em segundos, sem exigir leitura humana? Isso não substitui os critérios já documentados nesta página (regra de negócio primeiro, entendimento compartilhado) — desloca o *primeiro* filtro, antes da revisão humana começar, para os quatro gates concretos descritos em [[wiki/concepts/quality-gate]] ([[wiki/concepts/complexidade-ciclomatica|complexidade ciclomática]], cobertura+[[wiki/concepts/teste-de-mutacao|mutation testing]], tamanho de módulo, [[wiki/concepts/acoplamento|estrutura de dependências]]).
 
+## O Gargalo Migra da Escrita para a Revisão (dados Faros AI)
+
+[[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]] dá o número que fecha o argumento de "humano como gargalo" já descrito acima em *babysitting*: enquanto a produção individual dobra com IA (~2x PRs mergeados por dev), o **tempo de code review sobe 91%** e não escala junto — a revisão exige julgamento e contexto que a IA não substitui. É o núcleo do [[wiki/concepts/paradoxo-da-aceleracao]]: acelerou-se a etapa errada. Detalhe importante para quem revisa: **código gerado por IA não é mais fácil de revisar — às vezes é mais difícil**, porque é tecnicamente válido (passa nos testes) mas pode ser arquiteturalmente errado (ver [[wiki/concepts/ia-como-amplificador]] e [[wiki/concepts/gaming-de-testes-por-ia]]). Métrica de outcome para vigiar o gargalo: se o último PR levou **mais de uma semana** para mergear, o problema é o processo, não a pessoa — adicionar mais PRs piora (ver [[wiki/concepts/output-vs-outcome]]).
+
 ## Relacionado
 
 - [[wiki/concepts/definicao-de-pronto]] — code review é um dos critérios de "pronto"
@@ -101,3 +105,4 @@ O critério "regra de negócio primeiro" e a exigência de pull request/versiona
 - [[wiki/sources/git-rebase-na-pratica]] — mecânica de rebase local usada para chegar a um histórico limpo antes do PR
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — regra operacional de ler por categoria de mudança até acumular confiança, em vez de revisar tudo ou nada
 - [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — argumento quantitativo (taxa de aceitação de código de IA, dados de benchmark) para deslocar o primeiro filtro de revisão de estilo para prova objetiva em CI
+- [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]] — +91% no tempo de code review (Faros AI); a revisão como gargalo que não escala junto com a produção

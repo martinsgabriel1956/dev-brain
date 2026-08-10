@@ -3,8 +3,8 @@ type: concept
 title: "Entrevista de System Design (Whiteboard Interview)"
 aliases: ["system design interview", "whiteboard interview", "lousa branca", "entrevista de arquitetura"]
 date_created: 2026-07-20
-date_updated: 2026-07-30
-source_count: 5
+date_updated: 2026-08-10
+source_count: 6
 tags: [system-design, entrevistas, arquitetura, carreira]
 skill: tech-mentor-system-design
 status: draft
@@ -62,3 +62,4 @@ Assim como na [[wiki/concepts/entrevista-tecnica-coding|entrevista de coding]], 
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]]
 - [[wiki/sources/anatomia-entrevista-system-design-bigtech]]
 - [[wiki/sources/system-design-entrevista-cinema-draw-io]] — demonstração ao vivo do framework num exemplo concreto (cinema), incluindo um bug de consistência auto-reconhecido pelo autor
+- [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — o erro que "elimina 90% dos candidatos" é pular para a solução sem investigar o contexto (volumetria, hotspots, criticidade de dados); o sênior faz perguntas primeiro, o pleno já dá a receita ("é só cache e réplicas")

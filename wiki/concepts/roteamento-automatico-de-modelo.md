@@ -3,8 +3,8 @@ type: concept
 title: "Roteamento Automático de Modelo"
 aliases: ["model routing", "auto-seleção de modelo", "roteador de LLM"]
 date_created: 2026-07-19
-date_updated: 2026-07-31
-source_count: 2
+date_updated: 2026-08-05
+source_count: 3
 tags: [llm, model-routing, prompt-engineering, agregador-de-modelos]
 skill: tech-mentor-ai
 status: draft
@@ -35,12 +35,19 @@ Essas estratégias são infraestrutura conhecida em produtos de IA multi-modelo 
 
 Diferença chave em relação ao caso Adapta ONE acima: aqui a decisão de qual modelo mapear para cada categoria é feita pelo humano, uma única vez, na configuração — não pelo sistema em tempo real a cada prompt. É routing configurado, não routing aprendido.
 
+## Caso adjacente, eixo diferente: Rotação de Contas Free Tier
+
+[[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] descreve um mecanismo de "rotação" que **não é** roteamento por qualidade/custo de modelo como os casos acima — é [[wiki/concepts/rotacao-de-contas-free-tier]], que troca entre **contas/credenciais** do mesmo tipo quando uma esgota a cota, não entre modelos de capacidade diferente. Os dois padrões compartilham a mesma infraestrutura de fallback ([[wiki/concepts/ai-gateway-llm-router]]), mas resolvem problemas distintos: um otimiza qual modelo responde melhor, o outro contorna limite de free tier por conta.
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/skills-agente]] — no caso da Adapta, o roteamento de modelo e as skills de contexto pessoal operam juntos: a skill fornece o contexto, o roteador escolhe o modelo que processa esse contexto
 - [[wiki/concepts/prompt-engineering]] — roteamento reduz a necessidade de o usuário aplicar conhecimento de prompt engineering específico por modelo
+- [[wiki/concepts/ai-gateway-llm-router]] — infraestrutura de proxy compartilhada entre model routing e rotação de contas free tier
+- [[wiki/concepts/rotacao-de-contas-free-tier]] — mesmo mecanismo de fallback, eixo de decisão diferente (credencial, não modelo)
 
 ## Key Sources
 
 - [[wiki/sources/sistema-produtividade-ia-adapta]]
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — Custom Router da Abacus.AI como caso de roteamento por categoria estática configurada pelo humano
+- [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — contraste com rotação de contas free tier (eixo de credencial, não de modelo)

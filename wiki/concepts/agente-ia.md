@@ -3,8 +3,8 @@ type: concept
 title: "Agente de IA"
 aliases: ["agente", "AI agent", "agentes de ia"]
 date_created: 2026-05-18
-date_updated: 2026-07-03
-source_count: 3
+date_updated: 2026-08-06
+source_count: 4
 tags: [agentes-ia, llm, llmops, automacao]
 skill: tech-mentor-ai
 status: draft
@@ -50,8 +50,17 @@ Reflete que ainda não existe vocabulário maduro para descrever as relações d
 - **Worktrees:** paralelismo a nível de file system, alternativa aos subagentes quando as tarefas devem virar entregas/PRs separadas — ver [[wiki/concepts/worktree-paralelismo]]
 - **Memória:** [[claude-md]] persiste contexto entre sessões; [[context-compaction]] gerencia janela
 
+## Blueprint de Produção: as 5 Peças e os 4 Componentes
+
+[[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] descreve um blueprint replicável para agentes de produção orientados a evento (não a chat), usando um agente de DBA como exemplo:
+
+**5 peças de arquitetura**: LLM Planner (system prompt com [[wiki/concepts/playbook|playbook]] do domínio) → tool call loop → módulo de observação → camada de decisão (tentar de novo / pedir humano / pedir confirmação) → write-back (log, ticket, notificação).
+
+**4 componentes essenciais**: trigger (evento externo aciona o agente — não é a LLM decidindo sozinha quando agir), whitelist de ferramentas ([[wiki/concepts/principio-do-menor-privilegio|menor privilégio]] aplicado a tool calling — nunca inclui operações destrutivas), loop de observação, e [[wiki/concepts/human-in-the-loop|escape hatch]] (pausa e chama humano quando a confiança auto-reportada do modelo cai abaixo de um limiar).
+
 ## Key Sources
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
+- [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] — blueprint de 5 peças + 4 componentes para agentes orientados a evento em produção

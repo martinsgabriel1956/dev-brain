@@ -3,8 +3,8 @@ type: concept
 title: "OAuth 2.0"
 aliases: ["OAuth", "OAuth 2.0", "delegação de acesso", "authorization code flow"]
 date_created: 2026-07-27
-date_updated: 2026-08-03
-source_count: 4
+date_updated: 2026-08-06
+source_count: 5
 tags: [oauth2, autorizacao, autenticacao, seguranca, delegacao-de-acesso]
 skill: tech-mentor-security
 status: draft
@@ -50,6 +50,10 @@ Sem um `state` aleatório vinculado à sessão do usuário e verificado no retor
 
 Variante para dispositivos sem browser (CLIs, Smart TVs): o dispositivo mostra um código curto, o usuário abre o browser em outro aparelho para autorizar, e o dispositivo faz polling até receber o token.
 
+## Caso real: escopo aceito sem validação via URL
+
+Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], um pentest voluntário no SaaS "Find My SaaS" encontrou um fluxo de login via Google OAuth que aceitava parâmetros extras de escopo/permissão passados pela URL sem validação server-side — permitindo montar um link malicioso que solicitava permissões além do escopo padrão do app (e-mail, nome, foto) e, se aceito pela vítima, expunha o token de autenticação na URL de retorno. O autor original atribuiu o erro a "confiar demais no input do usuário"; tecnicamente é uma falha de validação de parâmetros do Authorization Request no próprio Authorization Server/app — a mesma classe de problema de não tratar `scope`/`redirect_uri` como entrada não confiável, adjacente ao mecanismo descrito em [[wiki/concepts/open-redirect]].
+
 ## O limite do OAuth
 
 OAuth responde "o que este app pode fazer" (autorização), mas não foi desenhado para responder "quem é este usuário" (autenticação) de forma padronizada — essa lacuna é o motivo de existir o [[wiki/concepts/openid-connect]], construído como uma camada de identidade em cima do OAuth.
@@ -68,3 +72,4 @@ OAuth responde "o que este app pode fazer" (autorização), mas não foi desenha
 - [[wiki/sources/pkce-proof-key-code-exchange-spa-mobile]] — detalha por que o Implicit Flow falhou e como o PKCE resolve, com foco em SPA/mobile
 - [[wiki/sources/rfc-7636-pkce-oauth-public-clients]] — texto normativo do RFC que estende o Authorization Code Grant do OAuth 2.0 com PKCE
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — open redirect por validação frouxa de redirect_uri; state contra CSRF no fluxo de login social
+- [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — caso real de escopo/permissão aceito sem validação via URL, achado por pentest voluntário

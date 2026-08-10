@@ -3,8 +3,8 @@ type: concept
 title: "Observabilidade"
 aliases: ["observabilidade", "observability", "três pilares", "metrics logs traces"]
 date_created: 2026-04-22
-date_updated: 2026-08-03
-source_count: 9
+date_updated: 2026-08-06
+source_count: 10
 tags: [observabilidade, metricas, logs, traces, prometheus, sre, infraestrutura]
 skill: tech-mentor-system-design
 status: stable
@@ -143,6 +143,14 @@ Boa prática de produção com [[wiki/concepts/distributed-tracing|OpenTelemetry
 
 A prioridade de implementação acima (logs → métricas RED → SLO → tracing) é sobre **coletar** dados. Uma vez coletados e centralizados, um agente de IA com acesso via MCP aos backends (ex. Grafana MCP → Prometheus/Loki/Tempo) consegue correlacionar os três pilares automaticamente e produzir relatórios de causa raiz que antes exigiam investigação manual de dias ou semanas. Ver [[wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp]]. O ouro continua nos dados — a IA acelera a correlação, não substitui a coleta.
 
+## Tensão Não Resolvida: Onboarding "Direto" vs. Sempre Passar pelo Collector
+
+A boa prática documentada acima (nunca enviar telemetria direto da aplicação para o backend final) entra em tensão com um fluxo de onboarding real observado no Grafana Cloud: o modo **"Direct"**, oferecido como caminho padrão para quem "está começando do zero" — aplicação envia direto para o endpoint do Grafana Cloud, sem Collector intermediário. A fonte que reporta isso não resolve a tensão explicitamente; hipótese não confirmada é que "Direct" seja aceitável para prototipagem/demo, com Collector recomendado só quando o volume de produção justifica. Registrado como open question em [[wiki/sources/monitoramento-aplicacoes-ia-grafana-cloud-opentelemetry]].
+
+## Boa Prática Confirmada: Batch em Vez de Envio Imediato
+
+Reforço de uma prática já implícita na priorização acima: acumular eventos de telemetria em memória e enviá-los em lote (batch) para o backend, em vez de emitir cada evento individualmente, reduz custo de rede e é citado como boa prática explícita numa aplicação de exemplo instrumentada com OpenTelemetry.
+
 ## Observabilidade como Resposta ao Sintoma "Tá Muito Lento"
 
 Framing didático direto: quando alguém reporta lentidão, a pergunta não é "qual métrica subiu" mas "qual é o fluxo todo, qual é a jornada, qual é a traceability daquela chamada" — ou seja, o ponto de entrada natural é o [[wiki/concepts/distributed-tracing|trace]] de ponta a ponta, não uma métrica isolada. Essa observação também alimenta diretamente o [[wiki/concepts/planejamento-de-capacidade]]: sem dados de observabilidade, a estimativa de capacidade futura vira adivinhação.
@@ -162,3 +170,4 @@ Framing didático direto: quando alguém reporta lentidão, a pergunta não é "
 - [[wiki/sources/impacto-ia-mercado-frontend]] — observabilidade como um dos itens que menos mudou com IA, citado como marcador de maturidade de plataforma que blinda orgs do impacto de mercado
 - [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — necessidade de rastrear erros/comportamento entre múltiplos serviços como o que ensina disciplina de log estruturado e métricas, disciplina transferível para monólitos
 - [[wiki/sources/sre-capacidade-observabilidade-confiabilidade-custo]] — observabilidade como visão fim-a-fim do fluxo/traceability em resposta a "tá muito lento"; insumo direto do planejamento de capacidade
+- [[wiki/sources/monitoramento-aplicacoes-ia-grafana-cloud-opentelemetry]] — onboarding prático do Grafana Cloud (plano gratuito permanente, data sources automáticos), boa prática de batch de telemetria, e tensão não resolvida entre modo "Direct" e a regra de sempre passar pelo Collector

@@ -3,8 +3,8 @@ type: entity
 title: "Gang of Four (GoF)"
 aliases: ["GoF", "gang of four"]
 date_created: 2026-05-01
-date_updated: 2026-07-19
-source_count: 2
+date_updated: 2026-08-06
+source_count: 3
 tags: [design-patterns, books, oop, junit, testes]
 skill: tech-mentor-backend
 status: stable
@@ -28,3 +28,4 @@ Além do *Design Patterns*, Erich Gamma programou em par com [[wiki/entities/ken
 
 - [[wiki/sources/design-pattern-proxy]]
 - [[wiki/sources/xunit-martin-fowler]] — Erich Gamma, coautor do JUnit
+- [[wiki/sources/design-pattern-observer-codigo-fonte-tv]] — vídeo cita a definição formal do GoF para o Observer ("dependência um-para-muitos... notificados e atualizados automaticamente")

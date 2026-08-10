@@ -3,8 +3,8 @@ type: concept
 title: "Database Index"
 aliases: ["índice de banco de dados", "índice composto", "índice parcial"]
 date_created: 2026-04-22
-date_updated: 2026-07-29
-source_count: 8
+date_updated: 2026-08-10
+source_count: 9
 tags: [banco-de-dados, performance, postgresql, index, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -80,6 +80,7 @@ Um índice composto (ex.: `account_id` + `created_at` para acelerar a tela de ex
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] — índice hash como mecanismo de garantia de unicidade (e-mail único)
 - [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]
+- [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — índice como o **primeiro** degrau a checar antes de escalar leituras: tabela sem índice com milhões de linhas ~500ms → ~2ms com índice; junto com connection pooling resolve ~80% dos gargalos de entrevista. Exemplo do encurtador de URL: índice no `public_code` da query de redirecionamento
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — "operador usa o índice, engenheiro sabe por que ele existe"
 - [[wiki/sources/full-text-search-mysql-postgresql]] — GIN como índice invertido para Full-Text Search; custo de rodar sem índice vs. com índice
 - [[wiki/sources/indice-de-banco-de-dados]] — demonstração visual de B-tree se reordenando a cada inserção e busca resolvida em O(log n); índice hash (match exato, O(1), sem range) e índice espacial como tipos adicionais

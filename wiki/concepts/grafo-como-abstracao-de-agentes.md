@@ -3,9 +3,9 @@ type: concept
 title: "Grafo Como Abstração de Agentes"
 aliases: ["grafo de agentes", "G = (V, E) agentes", "nós e arestas de harness"]
 date_created: 2026-07-10
-date_updated: 2026-07-10
-source_count: 1
-tags: [grafo, abstracao, agentes, langgraph, controle-de-fluxo, determinismo]
+date_updated: 2026-08-05
+source_count: 2
+tags: [grafo, abstracao, agentes, langgraph, controle-de-fluxo, determinismo, graph-engineering, ltv-cac]
 skill: tech-mentor-ai
 status: draft
 ---
@@ -31,6 +31,17 @@ O grafo é uma ideia, não uma biblioteca. [[wiki/concepts/langgraph|LangGraph]]
 
 Pensar em grafo desloca o trabalho de "escrever prompt para resolver este caso" para "desenhar a estrutura — nós e arestas — que resolve qualquer caso desta categoria". Essa é a mesma mudança de abstração central em [[wiki/concepts/loop-engineering]]: o engenheiro para de escrever instruções ad-hoc e passa a desenhar o sistema que gera e valida instruções.
 
+## "Graph Engineering": o Mesmo Argumento a Partir de Métricas de Negócio
+
+[[wiki/sources/graph-engineering-do-loop-ao-grafo]] chega à mesma tese por um caminho diferente — não subtarefas de código, mas **métricas de negócio interdependentes**. O argumento (atribuído a um tweet de [[wiki/entities/peter-steinberger]]): um loop de IA otimizando uma única métrica (ex.: CAC de uma campanha de marketing) pode melhorar essa métrica enquanto piora outra não observada (churn), derrubando o LTV e invalidando o próprio ganho — "uma métrica nunca é suficiente" (ver [[wiki/concepts/ltv-cac]]). Quando é preciso rodar múltiplos agentes otimizando múltiplas métricas que se afetam entre si, a estrutura necessária para representar essas relações para a IA é o grafo — os nós continuam sendo onde a computação (LLM) acontece, e as arestas passam a representar não só condição de fluxo determinística, mas a **relação causal entre métricas** (ex.: aresta entre "campanha" e "churn" com peso variável conforme a qualidade do lead).
+
+Essa fonte também documenta o **peso da aresta como checklist de conclusão**, que "em algum momento envolve a aprovação de um ser humano" — reforçando, de outro ângulo, a mesma separação entre computação (nó/LLM) e controle determinístico (aresta) já defendida acima.
+
+## Estruturas Não-Técnicas Que Já São Grafos
+
+Gestão de projeto (épico → história → tarefa → subtarefa) é citada em [[wiki/sources/graph-engineering-do-loop-ao-grafo]] como exemplo de que uma estrutura pode parecer árvore e não ser: dependências cruzadas entre itens (uma história depende de outra, uma subtarefa bloqueia outra) quebram a propriedade de árvore e determinam quantos devs/agentes podem trabalhar em paralelo sem se bloquear — o mesmo raciocínio de nós e arestas aplicado antes mesmo de existir um agente de IA no processo.
+
 ## Key Sources
 
 - [[wiki/sources/loop-engineering-planner-critic-grafo]]
+- [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — mesma tese (grafo como abstração correta para agentes) aplicada a métricas de negócio interdependentes em vez de subtarefas de código

@@ -3,8 +3,8 @@ type: concept
 title: "Pub/Sub (Publish-Subscribe)"
 aliases: ["publish-subscribe", "pub sub", "publicador-assinante"]
 date_created: 2026-05-05
-date_updated: 2026-07-09
-source_count: 4
+date_updated: 2026-08-06
+source_count: 6
 tags: [design-patterns, event-driven, pub-sub, mensageria, broker, observer]
 skill: tech-mentor-backend
 status: stable
@@ -29,6 +29,10 @@ Frequentemente confundido com o [[observer-pattern]], mas são mecanismos difere
 ## Distinção de Message Queue: quem depende de quem
 
 Pub/Sub publica um **fato**; message queue publica um **trabalho a ser feito**. A diferença mais útil na prática não é técnica, é de dependência: numa [[wiki/concepts/filas-e-workers|message queue]], quem depende é o publisher — o serviço precisa que o job seja executado (ex.: comprimir uma imagem), e não faz sentido dois workers processarem o mesmo job. Em Pub/Sub, quem depende é o subscriber — o publicador ("pagamento feito com sucesso") não liga se alguém está ouvindo, e cada assinante recebe sua própria cópia via fan-out. Os dois modelos são comumente combinados: um evento Pub/Sub ("pagamento aprovado") dispara um serviço que, por sua vez, enfileira um job numa message queue (ex.: enviar e-mail) para garantir entrega e retry. Ver [[wiki/concepts/bullmq]] para uma implementação concreta do lado message queue. Ver [[wiki/sources/pub-sub-message-queue-bullmq-na-pratica]].
+
+## Nomenclatura solta vs. distinção estrutural
+
+[[wiki/sources/design-pattern-observer-codigo-fonte-tv]] trata Observer, Event Subscriber, Listener, Publish-Subscribe e Pub/Sub como nomes intercambiáveis do mesmo padrão. Isso simplifica demais frente à distinção estrutural já documentada acima (comunicação direta vs. via broker) — o próprio exemplo do vídeo é Observer direto (sem broker), então não há contradição técnica, mas há uma colisão de nomenclatura que vale ter em mente ao ler fontes menos rigorosas sobre o tema.
 
 ## Quando usar Pub/Sub em vez de Observer
 
@@ -61,3 +65,5 @@ Quando servidores WebSocket são replicados atrás de um [[wiki/concepts/load-ba
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — Redis Pub/Sub notificando um endpoint SSE em arquitetura de microsserviços
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — padrão de tópico por usuário/grupo para chat distribuído via WebSocket
 - [[wiki/sources/pub-sub-message-queue-bullmq-na-pratica]] — distinção Pub/Sub vs message queue pelo modelo de dependência (quem depende de quem)
+- [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] — fila de requisições na frente de cada servidor (implementável com brokers como Redis/RabbitMQ) como mitigação de drops em load balancing; trade-off explícito entre menos drops e mais latência
+- [[wiki/sources/design-pattern-observer-codigo-fonte-tv]] — trata Observer e Pub/Sub como sinônimos de nomenclatura, em tensão com a distinção estrutural já documentada nesta página

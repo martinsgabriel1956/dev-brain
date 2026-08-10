@@ -3,8 +3,8 @@ type: concept
 title: "Connection Pooling"
 aliases: ["pgbouncer", "pool de conexões", "database pool", "poll vs pool"]
 date_created: 2026-04-22
-date_updated: 2026-07-28
-source_count: 3
+date_updated: 2026-08-10
+source_count: 5
 tags: [banco-de-dados, performance, pgbouncer, postgresql, mysql, escalabilidade, serverless]
 skill: tech-mentor-system-design
 status: stable
@@ -85,6 +85,10 @@ A solução depende do ambiente:
 
 Ver [[wiki/sources/connection-pooling-pool-vs-polling-serverless]].
 
+## Diagnóstico Automatizado via Correlação de Telemetria com IA
+
+Variante do vazamento por release esquecido: uma conexão PostgreSQL aberta e nunca encerrada em um endpoint específico (não um `pool.connect()` sem `release()` genérico, mas uma conexão manual mantida aberta) esgota o pool e vira timeout nos requests seguintes. Num caso demonstrado, um agente de IA conectado apenas às bases de observabilidade (logs, métricas e traces via [[wiki/concepts/model-context-protocol|MCP]] ou assistente equivalente) — sem acesso ao código-fonte — apontou a linha exata do vazamento a partir da correlação entre o padrão de timeouts nos logs e o crescimento do tempo de conexão segurada nas métricas. Ver [[wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp]]. Reforça o ponto acima ("Diagnóstico: Tempo de Conexão Segurada, Não Latência de Query") — a assinatura desse tipo de bug é visível na telemetria antes mesmo de se olhar o código.
+
 ## Diagnóstico: Tempo de Conexão Segurada, Não Latência de Query
 
 Um sistema pode ter CPU baixa e queries individuais rápidas e ainda assim bater um teto de escalabilidade — porque o gargalo real é uma parte do código segurando conexões do pool por mais tempo do que deveria, esgotando o pool para todo o resto. Otimizar a query em si não resolve, porque a query não é o problema. A técnica de diagnóstico é etiquetar cada operação SQL por origem (ex: "checkout", "reserva") e medir **quanto tempo cada uma segura uma conexão aberta**, não sua latência de execução. Foi assim que a [[wiki/entities/shopify]] descobriu que o gargalo de escalabilidade estava em código legado do checkout, não nas queries de reserva de estoque que pareciam ser o problema. Ver [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]].
@@ -94,3 +98,5 @@ Um sistema pode ter CPU baixa e queries individuais rápidas e ainda assim bater
 - [[sources/banco-de-dados]]
 - [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] — instrumentação por tempo de conexão segurada, não latência de query
 - [[wiki/sources/connection-pooling-pool-vs-polling-serverless]] — pool como singleton, vazamento por release esquecido, pooling em serverless (RDS Proxy, Vercel, PgBouncer)
+- [[wiki/sources/monitoramento-aplicacoes-ia-grafana-cloud-opentelemetry]] — vazamento de conexão PostgreSQL nunca encerrada, diagnosticado por um assistente de IA apenas com acesso à telemetria (sem código-fonte), correlacionando timeouts em logs com tempo de conexão segurada em métricas
+- [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — pooling como dupla inseparável do índice para resolver ~80% dos gargalos de leitura: abrir conexão custa ~5-10ms de setup e o banco tem teto de conexões; sob alta carga esse custo vira erro para o usuário

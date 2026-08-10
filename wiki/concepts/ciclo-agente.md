@@ -3,8 +3,8 @@ type: concept
 title: "Ciclo do Agente (Agent Loop)"
 aliases: ["agent loop", "ciclo agentico", "prompt tool call loop"]
 date_created: 2026-06-02
-date_updated: 2026-07-28
-source_count: 7
+date_updated: 2026-08-06
+source_count: 8
 tags: [agente, tool-call, harness, ciclo, loop, ralph-loop]
 skill: tech-mentor-ai
 status: stable
@@ -86,6 +86,10 @@ O loop agêntico não é elegante — é iterativo e incremental. A qualidade do
 
 O "brute-force até funcionar" tem um custo matemático explícito: um processo de N etapas, cada uma com 99% de sucesso individual, não tem 99% de chance de sucesso completo — tem 0,99ᴺ (≈90,4% em 10 etapas, ≈60% em 50). Ver [[wiki/concepts/harness]] para os quatro mecanismos que atacam essa composição de erros ([[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]]).
 
+## Variante Orientada a Trigger (Não a Chat)
+
+[[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] descreve o mesmo ciclo (planner → tool call → observação → decisão) numa variante que não é iniciada por uma mensagem de usuário, mas por um **trigger de evento** (alerta de observabilidade, cron job, webhook) — o exemplo dado é um agente de DBA acionado por sinais operacionais, e não por um chat interativo. A saída também difere: em vez de responder ao usuário, o ciclo termina num **write-back** (log, ticket, notificação), fechando o loop sem necessariamente haver uma "resposta final" no sentido conversacional.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
@@ -95,3 +99,4 @@ O "brute-force até funcionar" tem um custo matemático explícito: um processo 
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
 - [[wiki/sources/loop-engineering-planner-critic-grafo]] — critério de parada explícito (rúbrica + verificador) para o ciclo agêntico
 - [[wiki/sources/loop-engineering-harness-e-a-frase-que-viralizou]] — nomeia o ciclo como implementação do padrão ReAct (2022/2023), origem histórica anterior ao termo "loop engineering"
+- [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] — variante orientada a trigger de evento, com write-back em vez de resposta conversacional

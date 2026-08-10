@@ -3,8 +3,8 @@ type: entity
 title: "Lucas Montano"
 aliases: ["Lucas Montano"]
 date_created: 2026-07-03
-date_updated: 2026-07-30
-source_count: 6
+date_updated: 2026-08-06
+source_count: 7
 tags: [criador-de-conteudo, ia, carreira, financas-pessoais, saas, growth]
 skill: tech-mentor-ai
 status: stub
@@ -26,9 +26,12 @@ Também fez um vídeo, citado (de segunda mão) em [[wiki/sources/aprenda-a-prog
 
 Também reage ao lançamento do Claude Tag (Claude integrado ao Slack) pela Anthropic e à tese de Andrej Karpathy de que isso seria a "terceira reformulação da interface de LLM" — ver [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]]. Autoria não confirmada com certeza na transcrição (sem menção nominal do canal), mas atribuição plausível pelo padrão recorrente de reagir a anúncios técnicos da Anthropic com defesa de posição inicialmente cética (mesmo padrão de [[wiki/sources/jspace-cerebro-cloud-antropic]]). Nesse vídeo, defende que os céticos do Claude Tag estão "tecnicamente certos, mas estrategicamente errados" — o breakthrough não está na tecnologia (bot com memória já existe há anos), mas em integrar de forma confiável todos os sistemas internos de uma empresa comum. Alerta sobre risco de vendor lock-in organizacional ao depositar meses de memória de time num único fornecedor — ver [[wiki/concepts/lock-in-vendor-ia]].
 
+Abre uma "nova temporada" do canal reagindo ao layoff de 20-30 mil pessoas na Oracle — ver [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]]. Usa o evento como gancho para ensinar um blueprint prático de agente autônomo de produção (5 peças de arquitetura + 4 componentes: trigger, whitelist, loop de observação, escape hatch), e argumenta que a resposta correta para "você usa IA?" em entrevista de emprego, em 2026, não é citar a ferramenta (Claude Code, Copilot etc. — isso já é padrão de mercado), mas mostrar automação real construída para resolver um problema de negócio, como um bot de Slack/Teams com acesso ao repositório respondendo perguntas de stakeholders sem acesso ao código. Autoria inferida pelo mesmo padrão recorrente de outras sources (referências ao Stupid Button Club, ao patrocinador AUVP, e ao estilo de abrir com notícia técnica para depois ensinar).
+
 ## Key Sources
 
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]]
+- [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] — layoff da Oracle como gancho para ensinar blueprint de agente autônomo de produção
 - [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] — reação ao Claude Tag da Anthropic e à tese dos "três paradigmas de interface de LLM" de Andrej Karpathy
 - [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] — citação de segunda mão: vídeo sobre desemprego dev apesar de alta demanda
 - [[wiki/sources/como-eu-investiria-como-programador-ate-50000]]

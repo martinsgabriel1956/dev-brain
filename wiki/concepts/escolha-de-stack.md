@@ -3,8 +3,8 @@ type: concept
 title: "Escolha de Stack"
 aliases: ["escolher stack", "stack choice", "framework batteries included", "escolha de framework"]
 date_created: 2026-07-07
-date_updated: 2026-07-09
-source_count: 2
+date_updated: 2026-08-06
+source_count: 3
 tags: [stack, framework, projetos, mvp, saas, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -42,6 +42,10 @@ Comparados a um setup mais nu como **Node + Express**, que entrega menos coisas 
 
 O [[wiki/concepts/avaliar-hype-tecnologico]] explica *por que* essa dicotomia aprender-vs-monetizar existe: aprender tecnologia nova é uma aposta de retorno-conhecimento, viável com risco controlado (ex.: projeto pessoal sem expectativa financeira); monetizar exige retorno financeiro real, o que empurra a escolha para tecnologia já dominada, de risco/liquidez conhecidos.
 
+## Resistir a Pressão Externa de Troca de Stack
+
+Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], o autor do Find My SaaS (feito em Ruby) recebe, sem solicitar, um e-mail sugerindo reescrever o projeto em TypeScript com a justificativa de que Ruby é "fracamente tipado". Rejeita a sugestão: se a troca fosse mesmo por tipagem forte, a escolha não seria TypeScript, e trocar de stack só por preferência alheia — sem avaliação real de custo/benefício para o projeto em questão — coloca em risco a execução. Ver [[wiki/concepts/especialista-de-powerpoint]] para o padrão mais amplo de feedback não solicitado de quem nunca lançou um produto.
+
 ## Ver Também
 
 - [[wiki/concepts/checklist-primeiro-dia-projeto]] — a escolha de stack é o primeiro passo do checklist
@@ -52,3 +56,4 @@ O [[wiki/concepts/avaliar-hype-tecnologico]] explica *por que* essa dicotomia ap
 
 - [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]
 - [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]]
+- [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — rejeição de pressão externa para trocar de stack (Ruby → TypeScript) sem justificativa técnica real

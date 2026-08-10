@@ -3,8 +3,8 @@ type: concept
 title: "Rate Limiting"
 aliases: ["throttling", "rate limit", "token bucket", "sliding window"]
 date_created: 2026-04-23
-date_updated: 2026-08-03
-source_count: 5
+date_updated: 2026-08-06
+source_count: 7
 tags: [rate-limiting, token-bucket, sliding-window, redis, throttling, protecao-api, gatekeeper, attack-surface]
 skill: tech-mentor-backend
 status: stub
@@ -38,10 +38,16 @@ Além do risco de segurança, não limitar rotas públicas gera custo direto: um
 
 [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] trata rate limiting como um teste de checklist com resultado binário obrigatório: para toda rota mapeada, a pergunta "um usuário tem limite quantitativo de acesso?" precisa responder sim, sem exceção — moldura simples para verificar, rota por rota, que a defesa contra brute force existe antes de publicar o sistema.
 
+## Contornando Rate Limit por Conta: Rotação de Free Tier
+
+[[wiki/concepts/rotacao-de-contas-free-tier]] descreve o lado inverso desta página, visto do ponto de vista de quem sofre o rate limit em vez de quem o implementa: em vez de escalar uma única conta contra o limite do provider, cadastra-se múltiplas contas free tier e um [[wiki/concepts/ai-gateway-llm-router|gateway]] rotaciona entre elas quando a corrente esgota — efetivamente multiplicando a cota disponível ao custo de risco de detecção/banimento pelo provider.
+
 ## Key Sources
 
 - [[sources/rate-limiting]]
+- [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — rotação de contas free tier como forma de contornar rate limit por conta individual
 - [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
 - [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]]
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]]
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — brute force e credential stuffing no login sem rate limiting
+- [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] — o mesmo dilema estrutural (dropar a requisição vs. enfileirar e aceitar latência maior) aparece em load balancing sob carga, espelhando a escolha entre rejeitar (429) e enfileirar em rate limiting

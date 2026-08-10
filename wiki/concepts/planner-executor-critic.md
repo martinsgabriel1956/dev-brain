@@ -3,8 +3,8 @@ type: concept
 title: "Planner-Executor-Critic (PEC)"
 aliases: ["PEC", "planner executor critic", "loop reflexivo", "planner critic"]
 date_created: 2026-07-10
-date_updated: 2026-07-10
-source_count: 2
+date_updated: 2026-08-05
+source_count: 3
 tags: [planner-executor-critic, agentes, multi-agente, orquestracao, rubrica, verificador]
 skill: tech-mentor-ai
 status: stable
@@ -57,3 +57,4 @@ Sem rúbrica explícita e sem limite de tentativas definido deterministicamente,
 
 - [[wiki/sources/agentes-orquestracao]] — definição original do padrão como "loop reflexivo", citado junto com Supervisor, Handoff e Swarm como um dos 4 padrões principais de multi-agente
 - [[wiki/sources/loop-engineering-planner-critic-grafo]] — demonstração em vídeo do padrão em produção: planner gerando 4 prompts+rúbricas simultâneos, verificador com 3 tentativas de follow-up
+- [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — reforça o papel da rúbrica/checklist como o "peso" da aresta num [[wiki/concepts/grafo-como-abstracao-de-agentes|grafo]], notando que esse checklist em algum momento envolve aprovação humana

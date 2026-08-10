@@ -3,8 +3,8 @@ type: concept
 title: "Living Documentation"
 aliases: ["documentação viva", "docs from tests", "cucumber report", "structurizr"]
 date_created: 2026-04-22
-date_updated: 2026-07-28
-source_count: 3
+date_updated: 2026-08-10
+source_count: 4
 tags: [testes, documentação, bdd, openapi, ci, living-docs, readme, agents-md]
 skill: tech-mentor-testing
 status: stable
@@ -104,3 +104,4 @@ Esse "evite" é exatamente o contexto do [[wiki/concepts/checklist-primeiro-dia-
 - [[wiki/sources/living-documentation]]
 - [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]
 - [[wiki/sources/7-habitos-programador-altamente-eficaz]] — relato pessoal de aprender comportamento de sistemas legados só pela leitura de testes
+- [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — teste cujo título enforça uma regra de negócio ("um usuário não pode criar mais que quatro produtos") documenta *e* garante a regra; parte do arsenal para reduzir a dependência do [[wiki/concepts/bus-factor|Dev Gandalf]]

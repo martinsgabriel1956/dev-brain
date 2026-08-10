@@ -3,8 +3,8 @@ type: concept
 title: "Distributed Tracing"
 aliases: ["tracing distribuído", "opentelemetry", "spans", "trace context"]
 date_created: 2026-04-23
-date_updated: 2026-08-03
-source_count: 3
+date_updated: 2026-08-06
+source_count: 4
 tags: [distributed-tracing, observabilidade, opentelemetry, jaeger, spans, w3c-trace-context]
 skill: tech-mentor-infra
 status: draft
@@ -36,8 +36,13 @@ Instrumentação não se limita a endpoints HTTP: pacotes de instrumentação ex
 
 Traces (junto com métricas e logs) alimentam agentes de IA conectados via MCP a backends de observabilidade (ex. Grafana MCP), que correlacionam os três sinais automaticamente para achar causa raiz — inclusive apontando a linha de código exata — sem que um humano precise cruzar `traceId` manualmente entre bases. Ver [[wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp]].
 
+## Query languages fragmentadas por ferramenta
+
+Diferente do formato de dado (padronizado pelo OpenTelemetry), a linguagem de consulta sobre traces e métricas não é: cada plataforma tem a sua (PromQL no ecossistema Prometheus/Grafana, LogQL para Loki, etc.). Isso é citado como uma barreira de aprendizado real ao trocar de ferramenta de observabilidade, mesmo com dados portáveis.
+
 ## Key Sources
 
 - [[sources/distributed-tracing]]
 - [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — arquitetura do Collector, instrumentação de libs de baixo nível, e correlação automática via IA/MCP
 - [[wiki/sources/sre-capacidade-observabilidade-confiabilidade-custo]] — framing didático de tracing como a resposta natural a "tá muito lento" (fluxo/jornada/trace da chamada)
+- [[wiki/sources/monitoramento-aplicacoes-ia-grafana-cloud-opentelemetry]] — PromQL como barreira de aprendizado ao explorar traces manualmente antes de recorrer ao assistente de IA
