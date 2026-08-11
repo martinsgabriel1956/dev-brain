@@ -3,8 +3,8 @@ type: concept
 title: "Refatoração"
 aliases: ["refactoring", "refatorar"]
 date_created: 2026-07-15
-date_updated: 2026-07-29
-source_count: 3
+date_updated: 2026-08-10
+source_count: 4
 tags: [refactoring, clean-code, craftsmanship, design-de-software, tech-debt]
 skill: tech-mentor-backend
 status: draft
@@ -95,6 +95,7 @@ Refatoração idealmente não é um "projeto" à parte que precisa de aprovaçã
 
 ## Key Sources
 
+- [[wiki/sources/arquitetura-de-sacrificio]] — substituir *módulos individuais* (com boas fronteiras) é a alternativa incremental ao descarte total do sistema
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]]
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]]
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — "ficar estratégico" ao modificar código existente; regras de manutenção de comentários (Cap. 16)

@@ -3,8 +3,8 @@ type: concept
 title: "Zona de Desconforto da Aprendizagem"
 aliases: ["ZDA", "zona de desconforto", "productive discomfort", "learning discomfort zone"]
 date_created: 2026-05-31
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-08-10
+source_count: 3
 tags: [zona-de-desconforto, aprendizado, carreira, metacognicao, crenca-de-alta-eficacia, adaptabilidade]
 skill: tech-mentor-leadership
 status: stable
@@ -74,3 +74,4 @@ Dominar "aprender a aprender" inclui aprender a *identificar e habitar* a ZDA in
 
 - [[wiki/sources/profissional-do-futuro-ia-identidade-aprendizado]]
 - [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] — ambiente real de trabalho como fonte estrutural de desconforto produtivo, em contraste com o ambiente controlado de cursos
+- [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] — a ZDA sob o nome pedagógico de [[wiki/concepts/dificuldade-desejavel]]; IA deve gerar esse desconforto, não removê-lo

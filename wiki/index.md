@@ -20,6 +20,12 @@ date_updated: 2026-08-10
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/potencial-programador-atitude-mindset]] | Lucas Montano "valida em código" o artigo de Gregor Ojstersek sobre potencial de engenheiros: atitude/mindset acima da tech skill, 3 traços (ownership, drive, team player), efeito multiplicador — mas conclui que na sua ponderação a tech skill segue dominante |
+| [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] | Bernardo Lobato: cache e buffer só têm em comum armazenar dados temporariamente — cache guarda cópias pela expectativa de **reutilização** (olha pro passado), buffer absorve **diferença de velocidade** produtor/consumidor e descarta após consumo (olha pro presente); mesma ideia do hardware (cache L1/L2/L3, buffer de I/O) à arquitetura distribuída (Redis, filas Kafka/SQS, streaming); buffer pool é cache apesar do nome |
+| [[wiki/sources/escalar-para-um-milhao-de-usuarios]] | Augusto Galego (inferido): aula gratuita reconstruindo o capítulo "de zero a milhões de usuários" de Alex Xu — desenho incremental guiado por SPOF/gargalo (1 servidor → banco → cluster+LB → réplicas write/read → cache → CDN → stateless+NoSQL de sessões → filas/workers → tooling → multi-região) |
+| [[wiki/sources/arquitetura-de-sacrificio]] | **Sacrificial Architecture** (Martin Fowler, 2014): jogar fora uma base de código **não é fracasso** — "o melhor código que você escreve hoje é o que vai descartar em alguns anos". Escolha *deliberadamente* uma arquitetura que será substituída (crescimento exponencial invalida decisões: eBay Perl→C++→Java; regra do "10×" do Google). Cedo priorize flexibilidade sobre performance; **não** abandone a qualidade interna (modularidade permite sacrificar módulos, não o sistema todo); cuidado com amortização contábil; **monolito** é melhor arquitetura de sacrifício que microsserviços (distribuição+assincronia = complexidade cedo demais), desmontado depois via strangler fig; quem escreveu o código é quem decide sacrificá-lo |
+| [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] | Como usar IA no estudo de programação sem prejudicar o aprendizado: a **dificuldade desejável** (atrito/esforço) é o que cria conhecimento durável, então IA como *muleta* gera **atrofia cognitiva**, mas IA que *gera* dificuldade calibrada potencializa. Prós (personalização, democratização, multimodalidade) e contras (informações falsas, atrofia) do estudo com IA, e 4+1 dicas que preservam o esforço: questionários que acham gaps, apostilas de exercícios, questionar o *porquê* do código, desafios sem resposta e testes de borda sem apontar o erro |
+| [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]] | Monolito modular como etapa entre o MVP simples e a empresa madura: microsserviços eliminam o código espaguete por impossibilidade estrutural (serviço não chama função de outro, só via rede/API), mas essa troca só compensa com razão real de hardware/escala; o monolito modular captura o isolamento sem o custo — um artefato, um banco, módulos que se comunicam por contratos/Ports & Adapters — e deixa a extração futura para microsserviço reduzida a trocar o transporte (função → gRPC) |
 | [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] | Vídeo 1 da série de System Design de Pedro Camaforte (base num artigo de Lucas Faria): como **escalar leituras** de banco em entrevistas Tier S, como uma escada de custo crescente que só se sobe quando o degrau anterior não basta — índices + connection pooling (~80% dos casos) → read replicas (200-300k+ req/s, tradeoff de replication lag) → cache (hotspots e queries caras, tradeoff de invalidação) → CDN (arquivos estáticos). O erro que elimina 90% dos candidatos: atacar arquitetura sem entender o contexto (volumetria, hotspots, criticidade). Caso canônico: encurtador de URL |
 | [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] | Por que toda code base se degrada (code rot / entropia) e como conter: a degradação é o estado natural (requisitos sobre arquitetura estática, perda de contexto entre equipes, hotfix sob pressão, casos não previstos). Sinais: atraso crônico, testes flaky, "classes super-homem" (God Object) e "Devs Gandalf" (bus factor = 1). Contramedidas majoritariamente organizacionais: nunca alocar 100% da capacidade (~20% de folga — Reinertsen), regra do escoteiro no PR, medir o *erro* de estimativa, code owners, testes de integração como critério de aceitação; secundárias: feature freeze, análise estática com ressalva da Lei de Goodhart, ADRs. "Qualidade é uma prática, não uma feature" |
 | [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]] | 93% dos devs usam IA mas a produtividade da empresa sobe só 10% (Faros AI): individualmente +21% de tarefas e ~2x PRs, mas o code review sobe 91% e vira o gargalo — o "paradoxo da aceleração". 95% se sentem mais produtivos produzindo código de qualidade menor; a IA amplifica sem julgamento (júnior +26–56%, sênior em legado zero/negativo — survey Pragmatic Engineer). Cura: medir outcome (bug rate, ciclo de review), não output |
@@ -212,6 +218,7 @@ date_updated: 2026-08-10
 | [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] | Quality gate com padrão ratchet (baseline congelada só pode melhorar/empatar) no projeto Strawberry; babysitting de PR pelo próprio agente de IA; pipeline de CI real (npm audit em dois níveis, jscpd para duplicação); comentários no código como contexto recuperável por agentes via grep |
 | [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] | Uncle Bob não lê mais código de agentes: debate função-pequena vs. módulo-profundo com Ousterhout ganha dado empírico; grepability como razão real para quebrar funções; teto de ~1000 linhas por arquivo ligado ao tool call; harness (unit test, cobertura, mutation test, Gherkin, métrica) como o que sustenta não ler código |
 | [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] | Segundo vídeo de reação a Uncle Bob sobre não revisar código de agentes: quatro gates concretos de CI — complexidade ciclomática (CCN 1–20), cobertura + mutation testing com `mutmut` (400 mutações, 50 sobreviventes), limite de 300 linhas por arquivo, dependency structure analysis (import circular, camadas invertidas, módulo de API vs. implementação) |
+| [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] | Terceiro vídeo de reação a Uncle Bob (Augusto Galego): como *migrar* de "reviso 100%" para "não reviso" via matriz risco × dificuldade (merge automático / amostragem / revisão manual em pares); Boris (Claude Code) sobre `CLAUDE.md`/`review.md` como o novo trabalho; Quality Gate de Lucas Montano; ceticismo — nenhuma empresa multibilionária feita só com IA ainda |
 | [[wiki/sources/iso-27001-dicionario-programador]] | SGSI organizado em torno da tríade CIA; Anexo A 2022 com 93 controles em 4 temas; controles A.8.28/A.5.15/A.5.8/A.8.25/A.5.3 relevantes para devs; Policy as Code (OPA/Gatekeeper) como implementação; ISO 42001 para governança de IA |
 | [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] | Tipos de load balancer (hardware/software/cloud), por que AWS/Azure separam LB de camada 4 e 7, e algoritmos de balanceamento (Round Robin, Weighted, Least Connections, Least Time, Sticky) com demo prática em Nginx |
 | [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] | Simulação visual (bolinhas de requisição encolhendo) de Round Robin → fila → Weighted RR → Dynamic Weighted RR (peso por latência) → Least Connections → PEWMA; conclusão: sempre validar com benchmark da carga real |
@@ -333,7 +340,11 @@ date_updated: 2026-08-10
 | Página | Hook |
 |---|---|
 | [[wiki/concepts/soft-skills]] | Habilidades humanas que potencializam o técnico — o multiplicador da carreira |
+| [[wiki/concepts/atitude-mindset-vs-tech-skill]] | Potencial (aposta no futuro, onde atitude/mindset dominam) vs. performance atual (onde a tech skill pesa hoje) — e por que "20% melhor" é immensurável |
+| [[wiki/concepts/mentalidade-de-dar-primeiro]] | Give-first: oferecer ajuda antes de precisar; o "efeito magnético" de os outros gostarem de trabalhar com você |
+| [[wiki/concepts/efeito-multiplicador]] | Elevar 5 pessoas em 20% agrega 100% de valor vs. os 20% de melhorar só a si mesmo — com a ressalva do custo de tempo do lead |
 | [[wiki/concepts/code-review]] | Regra de negócio antes de estilo — e por que o primeiro review de um júnior costuma vir cheio de comentários |
+| [[wiki/concepts/matriz-risco-dificuldade-review-ia]] | Framework de transição para migrar de "reviso tudo" para "não reviso": classifica cada PR por risco × dificuldade e aplica merge automático (baixo risco, com teste), amostragem (risco médio) ou revisão manual em pares (alto risco: auth, pagamentos, migração de banco) |
 | [[wiki/concepts/sindrome-do-impostor]] | Confundir "código reprovado" com "eu fui reprovado" — o gatilho mais comum no primeiro emprego |
 | [[wiki/concepts/problema-de-escopo-aberto]] | Escopo fechado (jogo, objetivo + caminho previsível) vs. escopo aberto (vida real, sem limites definidos) — operacionalizar o problema em pedaços fechados e trocar foco de resultado por ação |
 | [[wiki/concepts/comunicacao-tecnica]] | Ser entendido, não apenas falar — acelerador de time |
@@ -781,6 +792,9 @@ date_updated: 2026-08-10
 | [[wiki/concepts/dependencia-ia]] | Ciclo preguiçoso de prompts disfarçado de produtividade — antônimo de autonomia |
 | [[wiki/concepts/autonomia-tecnica]] | Entender, explicar, modificar e sustentar código independentemente — o diferencial real |
 | [[wiki/concepts/esforco-produtivo]] | O intervalo entre o problema e a ajuda; onde o aprendizado de verdade acontece |
+| [[wiki/concepts/dificuldade-desejavel]] | Atrito e esforço calibrados criam conexões neurais duráveis (Bjork) — removê-los remove o aprendizado; a lente que separa uso bom e ruim de IA |
+| [[wiki/concepts/atrofia-cognitiva]] | Delegar toda dificuldade à IA enfraquece raciocínio e pensamento crítico — reversível se há base, ausência de base se não há |
+| [[wiki/concepts/active-recall]] | Recuperação ativa (testing effect): puxar a resposta da memória, não reconsumir — IA gerando questionários que expõem gaps |
 | [[wiki/concepts/aprender-a-aprender]] | Metacognição aplicada — o superpoder do profissional do futuro; mais duradouro que qualquer ferramenta |
 | [[wiki/concepts/crenca-de-alta-eficacia]] | Crença na própria capacidade de aprender — preditor de adaptação; quem não tem pode de fato ser substituído |
 | [[wiki/concepts/zona-de-desconforto-da-aprendizagem]] | ZDA: aprender é biologicamente desconfortável; abraçar o caos é o mecanismo do crescimento |
@@ -811,6 +825,7 @@ date_updated: 2026-08-10
 
 | Página | Hook |
 |---|---|
+| [[wiki/concepts/single-point-of-failure]] | Componente cuja falha derruba o sistema inteiro — o fio condutor por trás de toda redundância (múltiplos servidores, réplicas, LB em par) |
 | [[wiki/concepts/escalabilidade-vertical]] | Scale up — simples mas com teto físico e single point of failure |
 | [[wiki/concepts/escalabilidade-horizontal]] | Scale out — sem teto teórico, requer stateless e load balancer |
 | [[wiki/concepts/stateless]] | Servidor sem estado — pré-requisito da escalabilidade horizontal |
@@ -906,6 +921,8 @@ date_updated: 2026-08-10
 |---|---|
 | [[wiki/concepts/redis]] | Banco NoSQL in-memory chave-valor — sub-milissegundo, single CPU, escala horizontal via cluster |
 | [[wiki/concepts/cache]] | Guardar dados em memória para resposta rápida — hierarquia L1→L4, padrões e quando não usar |
+| [[wiki/concepts/cache-vs-buffer]] | Cache (reutilização, olha pro passado) vs. buffer (diferença de velocidade produtor/consumidor, olha pro presente) — mesma implementação, motivos opostos; buffer pool é cache apesar do nome |
+| [[wiki/concepts/buffer]] | Área temporária que absorve diferença de velocidade produtor/consumidor — I/O de hardware, filas de mensagem, buffer de streaming; dado é descartado após consumo, não reutilizado |
 | [[wiki/concepts/cache-aside]] | Lazy Loading: tenta cache, em miss vai ao banco com TTL — análogo ao padrão Flyweight |
 | [[wiki/concepts/feature-flag]] | Interruptores de funcionalidade em runtime — Redis é ideal pela latência mínima no fluxo de execução |
 | [[wiki/concepts/banco-in-memory]] | Armazenamento primário em RAM — Redis, persistência RDB/AOF opcional |
@@ -966,6 +983,12 @@ date_updated: 2026-08-10
 | [[wiki/concepts/api-composition]] | API Composer orquestra múltiplas chamadas em paralelo (fan-out) e devolve um único resultado lapidado — técnica central por trás de BFFs e agregação de endpoints |
 | [[wiki/concepts/graphql]] | Cliente pede a estrutura de dados exata que quer numa única query — criado pela Meta para resolver N+1/over-under-fetching entre múltiplos frontends; sempre POST por limite de tamanho de URL |
 | [[wiki/concepts/microsservicos]] | Decomposição por bounded context, não por camada técnica; monolito modular é o ponto de partida correto para ~90% dos casos; estudar o estilo funciona como eixo de aprendizado que amarra circuit breaker, saga, observabilidade e mensageria |
+| [[wiki/concepts/monolito-modular]] | Um artefato/banco/runtime dividido em módulos de fronteira explícita que se comunicam por contratos (Ports & Adapters), não por chamadas de função — captura o isolamento dos microsserviços sem o custo de rede; etapa entre MVP e empresa madura que facilita a extração tardia |
+| [[wiki/concepts/arquitetura-de-sacrificio]] | Escolher *deliberadamente* uma arquitetura que você vai descartar quando o produto crescer (Fowler): descartar código não é fracasso; priorize flexibilidade cedo, preserve qualidade interna/modularidade, prefira monolito a microsserviços como sacrifício e deixe quem escreveu decidir a hora de sacrificar |
+| [[wiki/concepts/monolito]] | Aplicação de artefato único, deploy único — simples e suficiente para MVPs (e muito além), mas degenera em código espaguete sem disciplina de fronteiras |
+| [[wiki/concepts/code-espaguete]] | Código acoplado em cadeia sem fronteiras claras; microsserviços o impedem por impossibilidade estrutural, monolito modular por contratos entre módulos |
+| [[wiki/concepts/separation-of-concerns]] | Cada parte cuida de uma responsabilidade distinta com interação explícita — o que os contratos entre módulos garantem |
+| [[wiki/concepts/encapsulamento]] | Esconder internals e expor só uma interface controlada (analogia getters/setters) — como um módulo do monolito modular se protege |
 | [[wiki/concepts/database-per-service]] | Banco isolado por microsserviço resolve deadlock de banco compartilhado, mas cria problema de atomicidade entre serviços — motiva 2PC/Saga |
 | [[wiki/concepts/event-driven-architecture]] | Comunicação via eventos publicados/reagidos em vez de chamadas síncronas — base do Saga coreografado e da propagação write→read em CQRS |
 | [[wiki/concepts/soap]] | Protocolo XML de 1998 com contrato rígido via WSDL; sobrevive em bancos, seguradoras e NF-e mesmo após REST+JSON dominar APIs novas |
@@ -1216,6 +1239,7 @@ date_updated: 2026-08-10
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/gregor-ojstersek]] | Autor da newsletter Engineering Leadership (Substack) e do livro *The Multiplier Mindset* — tese de que o potencial de engenheiros se reconhece por atitude/mindset, não tech skill atual |
 | [[wiki/entities/lucas-faria]] | Autor do artigo "sete conceitos que mais caem em entrevistas de System Design Tier S" — base da série de vídeos de System Design de Pedro Camaforte (identidade/URL não confirmadas na fonte) |
 | [[wiki/entities/principles-of-product-development-flow]] | Livro (Reinertsen, atribuição externa) que aplica teoria de filas ao desenvolvimento — origem da regra de nunca alocar 100% da capacidade |
 | [[wiki/entities/faros-ai]] | Plataforma de engineering intelligence (dados de produção, não satisfação) que cunhou o "paradoxo da aceleração" — velocidade individual sobe com IA, throughput do sistema não |
@@ -1315,6 +1339,8 @@ date_updated: 2026-08-10
 | [[wiki/entities/george-hotz]] | Geohot — hacker do iPhone/PS3, carro autônomo open source; "não há substituto para sentar e construir algo" |
 | [[wiki/entities/pedro-camaforte]] | Dev sênior, cria série de system design para entrevistas — foco no que separa resposta mediana de resposta de sênior |
 | [[wiki/entities/uncle-bob]] | Robert C. Martin — associado a Clean Code/Clean Architecture/SOLID; citado em thread sobre SQL não ser feito para ser embutido em programas |
+| [[wiki/entities/boris]] | Criador do Claude Code (Anthropic) — argumenta que escrever `CLAUDE.md`/`review.md`/skills/docs para agentes é o novo trabalho de engenharia, barateado pela automação |
+| [[wiki/entities/paulo-tarso]] | Autor brasileiro de artigo bilíngue que detalha na prática como implementar as métricas de Uncle Bob (cobertura, CCN, tamanho de módulo, mutation testing) |
 | [[wiki/entities/ugonna-thelma]] | Autora de "The S.O.L.I.D Principles in Pictures" (Medium, 2020) — identidade resolvida a partir de um nome deformado por transcrição automática de áudio num vídeo ingerido antes do artigo original |
 | [[wiki/entities/shopify]] | E-commerce que hospeda ~14% das lojas americanas — substituiu reserva de estoque Redis+MySQL por MySQL puro com SKIP LOCKED, segurando US$ 5,1M/minuto na Black Friday 2025 |
 | [[wiki/entities/37signals]] | Empresa por trás do Basecamp e Rails — saiu do cloud para hardware próprio; criadora do Solid Queue, fila 100% sobre banco relacional |

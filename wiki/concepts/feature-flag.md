@@ -3,8 +3,8 @@ type: concept
 title: "Feature Flag (Feature Toggle)"
 aliases: ["feature toggle", "feature flags", "interruptor de funcionalidade"]
 date_created: 2026-06-26
-date_updated: 2026-06-26
-source_count: 1
+date_updated: 2026-08-10
+source_count: 2
 tags: [feature-flag, feature-toggle, redis, cache, trunk-based-development, backend]
 skill: tech-mentor-backend
 status: stable
@@ -56,4 +56,5 @@ O batch pode ser substituído por [[cache-aside]]: ao não encontrar a flag no R
 
 ## Key Sources
 
+- [[wiki/sources/arquitetura-de-sacrificio]] — Fowler aplica o princípio de sacrifício a *features*: construir de forma descartável e liberar a um subconjunto de usuários para validar antes de investir o esforço total
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]

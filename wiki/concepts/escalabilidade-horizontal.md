@@ -4,7 +4,7 @@ title: "Escalabilidade Horizontal"
 aliases: ["horizontal scaling", "scale out", "escalar horizontalmente"]
 date_created: 2026-06-26
 date_updated: 2026-08-10
-source_count: 10
+source_count: 13
 tags: [escalabilidade, arquitetura, sistemas-distribuidos, nosql, redis, backend]
 skill: tech-mentor-backend
 status: stable
@@ -60,6 +60,7 @@ Escalar horizontalmente um serviço de conexões longas (WebSocket) tem uma rest
 
 ## Key Sources
 
+- [[wiki/sources/arquitetura-de-sacrificio]] — crescimento exponencial (ordens de grandeza) é o que invalida a arquitetura inicial e dispara o sacrifício; regra do "10×" do Google
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — escalabilidade horizontal de servidores WebSocket, LB L4 obrigatório, comunicação entre servidores via Redis Pub/Sub
@@ -69,4 +70,6 @@ Escalar horizontalmente um serviço de conexões longas (WebSocket) tem uma rest
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — réplicas de SQL database removem o alerta de bottleneck do banco num exercício simulado, mas deslocam o gargalo para o app server — demonstração direta de que escalar horizontalmente uma camada sem tratar a seguinte só move o problema
 - [[wiki/sources/escalabilidade-horizontal-vertical-custo-grafico]] — exemplo gráfico de granularidade fina de capacidade (um servidor a mais vs. dobrar instância) e resiliência via mais réplicas menores
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — recapitula escalar horizontalmente a aplicação (réplicas + load balancer) como resposta ao gargalo de volumetria, antes de mostrar que isso apenas desloca o gargalo para o banco de dados, motivando [[wiki/concepts/sharding]]
+- [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — como os dados vivem no banco (não no servidor), a aplicação vira um cluster de servidores atrás de um load balancer; também a etapa final de replicar o cluster inteiro por data center (multi-região) com roteamento por geolocalização
 - [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] — visualização passo a passo de por que um servidor único satura sob carga e como adicionar réplicas atrás de um load balancer elimina drops, antes de detalhar os algoritmos de distribuição
+- [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]] — argumento "monolito basta": rodar o monolito em 3-4 máquinas com load balancer e réplica de banco atende ~1M de usuários (exemplo Pieter Levels), sem precisar de microsserviços

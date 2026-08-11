@@ -3,8 +3,8 @@ type: concept
 title: "Arquitetura de Software"
 aliases: ["software architecture", "decisao arquitetural"]
 date_created: 2026-07-03
-date_updated: 2026-08-03
-source_count: 11
+date_updated: 2026-08-10
+source_count: 12
 tags: [arquitetura, carreira, fundamentos, ia, pos-graduacao]
 skill: tech-mentor-leadership
 status: draft
@@ -76,6 +76,7 @@ Nenhum desses livros foi lido/ingerido diretamente ainda no wiki — são citaç
 
 ## Key Sources
 
+- [[wiki/sources/arquitetura-de-sacrificio]] — a arquitetura certa é função da escala do momento; projetar para a substituição futura (não para a longevidade eterna) é uma decisão arquitetural legítima
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]]
 - [[wiki/sources/ciclo-de-mudanca-de-arquitetura]] — ciclo operacional AS-IS → TO-BE → POC → migração → novo AS-IS
 - [[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]] — abstração ruim causa dano estrutural que implementação porca não causa

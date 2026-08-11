@@ -3,8 +3,8 @@ type: concept
 title: "NoSQL"
 aliases: ["not only sql", "bancos não relacionais"]
 date_created: 2026-04-22
-date_updated: 2026-07-28
-source_count: 5
+date_updated: 2026-08-10
+source_count: 6
 tags: [banco-de-dados, nosql, mongodb, redis, cassandra, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -55,3 +55,4 @@ Provas de concurso brasileiras tratam "SGBD NoSQL" como termo formal (em oposiç
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — exemplo concreto de catálogo com schema variável (notebook/camiseta/livro) e limite de conexões do MongoDB em instância única
 - [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] — lista estendida de exemplos por modelo (chave-valor, documento, colunas, grafos), como cobrada em concurso
+- [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — regra prática de quando sair do "SQL por padrão": latência super baixa, esquema flexível (logs/JSON) ou throughput muito alto (armazenar todos os requests); também NoSQL como store externo de sessões/preferências fora dos servidores stateless

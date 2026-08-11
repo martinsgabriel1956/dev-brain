@@ -3,8 +3,8 @@ type: concept
 title: "Mensageria"
 aliases: ["message broker", "queue", "stream", "eda", "event driven"]
 date_created: 2026-04-23
-date_updated: 2026-07-24
-source_count: 6
+date_updated: 2026-08-11
+source_count: 7
 tags: [mensageria, kafka, rabbitmq, sqs, queue, stream, eda, at-least-once, dlq]
 skill: tech-mentor-backend
 status: stub
@@ -13,6 +13,8 @@ status: stub
 # Mensageria
 
 Comunicação assíncrona entre serviços via broker de mensagens. Resolve acoplamento síncrono, absorve picos de tráfego e isola falhas.
+
+**A fila como [[wiki/concepts/buffer]]:** absorver picos é exatamente o papel de buffer — a fila desacopla a velocidade de produção da de consumo, permitindo que consumidores trabalhem em ritmo constante sem perder mensagens num pico (ex.: Black Friday). Ver [[wiki/concepts/cache-vs-buffer]] para por que isso é buffer (fluxo), não cache (reutilização).
 
 **Queue vs Stream:**
 - **Queue (fila):** cada mensagem consumida uma vez — workers competem. Para jobs únicos (email, pagamento). Ex: RabbitMQ, SQS.
@@ -40,3 +42,4 @@ Comunicação assíncrona entre serviços via broker de mensagens. Resolve acopl
 - [[wiki/sources/pub-sub-message-queue-bullmq-na-pratica]] — distinção prática Pub/Sub vs queue e quickstart de BullMQ sobre Redis
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — Kafka escolhido num exercício de hotel booking pelo critério "capacidade de lidar com grandes volumes de dados", com ressalva explícita de possível [[wiki/concepts/over-engineering]] para o caso de uso; a IA avaliadora do exercício aponta corretamente que Kafka foi introduzido no desenho sem nenhum consumidor definido — reforça que escolher a tecnologia certa não substitui desenhar quem consome a fila
 - [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — comunicação assíncrona (filas/eventos) citada como conceito que ensina quando desacoplar processos (e-mail, geração de relatório) do fluxo principal, mesmo fora de arquitetura distribuída
+- [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] — fila (Kafka/SQS/RabbitMQ/Redis Streams) apresentada como "grande buffer" que absorve picos e desacopla produtor de consumidor

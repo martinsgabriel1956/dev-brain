@@ -3,8 +3,8 @@ type: concept
 title: "Colaboração em Times"
 aliases: ["trabalho em equipe", "team work", "colaboração técnica"]
 date_created: 2026-05-19
-date_updated: 2026-05-19
-source_count: 1
+date_updated: 2026-08-11
+source_count: 2
 tags: [soft-skills, colaboração, times, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -40,3 +40,4 @@ A colaboração efetiva neutraliza o ego técnico e converte divergência em apr
 ## Key Sources
 
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]
+- [[wiki/sources/potencial-programador-atitude-mindset]] — ser "team player" como 3º traço de potencial; construir software é atividade social e silos trazem mais problema que benefício (ver [[wiki/concepts/mentalidade-de-dar-primeiro]] e [[wiki/concepts/efeito-multiplicador]])

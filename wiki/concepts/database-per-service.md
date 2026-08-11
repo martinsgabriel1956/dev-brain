@@ -3,8 +3,8 @@ type: concept
 title: "Database per Service"
 aliases: ["banco por serviço", "database-per-service pattern", "polyglot persistence"]
 date_created: 2026-07-30
-date_updated: 2026-07-30
-source_count: 1
+date_updated: 2026-08-10
+source_count: 2
 tags: [microsservicos, banco-de-dados, deadlock, arquitetura]
 skill: tech-mentor-backend
 status: stub
@@ -25,3 +25,4 @@ Isolar os bancos resolve o deadlock mas cria um problema de consistência distri
 ## Key Sources
 
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — banco por serviço como solução ao deadlock de banco compartilhado, e como origem do problema de atomicidade que motiva 2PC/Saga
+- [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]] — "cada serviço com seu próprio banco" citado como custo dos microsserviços (um request pode consultar 4 bancos), com ressalva explícita do autor ao consenso

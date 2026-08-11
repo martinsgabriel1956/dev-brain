@@ -3,8 +3,8 @@ type: entity
 title: "Lucas Montano"
 aliases: ["Lucas Montano"]
 date_created: 2026-07-03
-date_updated: 2026-08-06
-source_count: 7
+date_updated: 2026-08-11
+source_count: 9
 tags: [criador-de-conteudo, ia, carreira, financas-pessoais, saas, growth]
 skill: tech-mentor-ai
 status: stub
@@ -28,12 +28,16 @@ Também reage ao lançamento do Claude Tag (Claude integrado ao Slack) pela Anth
 
 Abre uma "nova temporada" do canal reagindo ao layoff de 20-30 mil pessoas na Oracle — ver [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]]. Usa o evento como gancho para ensinar um blueprint prático de agente autônomo de produção (5 peças de arquitetura + 4 componentes: trigger, whitelist, loop de observação, escape hatch), e argumenta que a resposta correta para "você usa IA?" em entrevista de emprego, em 2026, não é citar a ferramenta (Claude Code, Copilot etc. — isso já é padrão de mercado), mas mostrar automação real construída para resolver um problema de negócio, como um bot de Slack/Teams com acesso ao repositório respondendo perguntas de stakeholders sem acesso ao código. Autoria inferida pelo mesmo padrão recorrente de outras sources (referências ao Stupid Button Club, ao patrocinador AUVP, e ao estilo de abrir com notícia técnica para depois ensinar).
 
+Também reage ao artigo *"How to recognize the potential in engineers"* de [[wiki/entities/gregor-ojstersek|Gregor Ojstersek]], tentando "validá-lo em código" — ver [[wiki/sources/potencial-programador-atitude-mindset]]. Concorda que atitude e mindset importam, mas discorda da ênfase: na ponderação dele a tech skill segue com o maior peso ("não preciso de um monte de coach no meu time, preciso de gente que entrega também"), embora reforce o ownership prático de se desbloquear sozinho e o anti-padrão de sugerir melhoria sem implementá-la — ver [[wiki/concepts/atitude-mindset-vs-tech-skill]].
+
 ## Key Sources
 
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]]
+- [[wiki/sources/potencial-programador-atitude-mindset]] — reação ao artigo de Gregor Ojstersek sobre potencial de engenheiros; atitude/mindset vs. peso técnico
 - [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] — layoff da Oracle como gancho para ensinar blueprint de agente autônomo de produção
 - [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] — reação ao Claude Tag da Anthropic e à tese dos "três paradigmas de interface de LLM" de Andrej Karpathy
 - [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] — citação de segunda mão: vídeo sobre desemprego dev apesar de alta demanda
 - [[wiki/sources/como-eu-investiria-como-programador-ate-50000]]
 - [[wiki/sources/como-vender-um-saas-sem-audiencia]]
 - [[wiki/sources/jspace-cerebro-cloud-antropic]]
+- [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — citação de segunda mão: seu Quality Gate com vários baselines e agente em babysitting corrigindo o PR até passar nos pré-requisitos objetivos

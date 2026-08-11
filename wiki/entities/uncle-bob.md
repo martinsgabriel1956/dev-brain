@@ -3,8 +3,8 @@ type: entity
 title: "Uncle Bob (Robert C. Martin)"
 aliases: ["uncle bob", "robert c. martin", "robert cecil martin"]
 date_created: 2026-07-03
-date_updated: 2026-08-06
-source_count: 8
+date_updated: 2026-08-11
+source_count: 9
 tags: [clean-code, clean-architecture, solid, autor, quality-gate]
 skill: tech-mentor-backend
 status: stub
@@ -68,3 +68,4 @@ Oitava menção, em [[wiki/sources/principios-solid-ilustrados]]: segundo a font
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — livro-tutorial inteiro construído em torno da Clean Architecture de Martin, incluindo anedota de bate-papo pessoal sobre onde validar dados de entrada
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — post recente sobre não ler mais código de agentes, e o harness (testes, Gherkin, QA, métricas, mutation testing) que sustenta essa afirmação
 - [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — segundo vídeo sobre o mesmo tema, detalhando quatro gates de CI concretos (CCN, cobertura+mutation, tamanho de módulo, dependency structure)
+- [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — terceiro vídeo de reação (Galego): concorda que as métricas são objetivas mas insuficientes, e propõe a matriz risco × dificuldade para migrar de "reviso tudo" para "não reviso"

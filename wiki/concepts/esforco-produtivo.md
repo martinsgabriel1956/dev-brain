@@ -3,8 +3,8 @@ type: concept
 title: "Esforço Produtivo"
 aliases: ["productive struggle", "intervalo de aprendizado", "frustração controlada"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 1
+date_updated: 2026-08-10
+source_count: 2
 tags: [esforco-produtivo, aprendizado, iniciante, autonomia-tecnica, mentalidade]
 skill: tech-mentor-leadership
 status: stable
@@ -77,3 +77,4 @@ Usar IA depois do esforço produtivo = acelerador que preserva o aprendizado.
 ## Key Sources
 
 - [[wiki/sources/ia-e-aprendizado-programacao-iniciantes]]
+- [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] — esforço produtivo formalizado como [[wiki/concepts/dificuldade-desejavel]]; IA antes do esforço = muleta, IA depois = acelerador

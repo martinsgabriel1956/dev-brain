@@ -3,8 +3,8 @@ type: concept
 title: "Complexidade Ciclomática"
 aliases: ["cyclomatic complexity", "CCN", "cyclomatic complexity number"]
 date_created: 2026-08-04
-date_updated: 2026-08-10
-source_count: 2
+date_updated: 2026-08-11
+source_count: 3
 tags: [complexidade-ciclomatica, quality-gate, analise-estatica, sonarqube, harness]
 skill: tech-mentor-ai
 status: stub
@@ -30,3 +30,4 @@ Complexidade ciclomática mede o *interior* de uma função; [[wiki/concepts/god
 
 - [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — definição operacional (contagem de caminhos), padrão de LLMs gerando funções com muitos `if`s aninhados, exemplo de limite bloqueante (CCN 1–20) e ferramenta (SonarQube)
 - [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — cita complexidade ciclomática como ferramenta de apoio contra code rot, com a ressalva da [[wiki/concepts/goodharts-law|Lei de Goodhart]]: útil como sinal, nociva quando vira meta
+- [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — CCN entre as métricas objetivas ("parece um grafo; quanto mais fluxos, pior") citadas por Galego e detalhadas no artigo de [[wiki/entities/paulo-tarso]]

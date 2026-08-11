@@ -3,8 +3,8 @@ type: concept
 title: "Latência de Streaming ao Vivo (Live Latency)"
 aliases: ["live latency", "delay de streaming", "buffer de leitura antecipada", "low latency mode", "ultra low latency"]
 date_created: 2026-07-30
-date_updated: 2026-07-30
-source_count: 1
+date_updated: 2026-08-11
+source_count: 2
 tags: [system-design, video, streaming, live, cdn, buffer, latencia, youtube, broadcast]
 skill: tech-mentor-system-design
 status: draft
@@ -95,3 +95,4 @@ Duas emissoras/plataformas transmitindo "o mesmo" evento ao vivo (ex.: um jogo) 
 ## Key Sources
 
 - [[wiki/sources/delay-tv-aberta-vs-youtube-live-latencia-streaming]]
+- [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] — o buffer de leitura antecipada do player como exemplo canônico de [[wiki/concepts/buffer]]; assistir em 2x apenas consome o buffer mais rápido, não elimina o delay estrutural

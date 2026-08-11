@@ -3,8 +3,8 @@ type: concept
 title: "Fila (Queue)"
 aliases: ["queue", "FIFO", "fila de dados"]
 date_created: 2026-06-01
-date_updated: 2026-07-10
-source_count: 3
+date_updated: 2026-08-11
+source_count: 4
 tags: [cs-fundamentals, estruturas-de-dados, fila, queue, fifo]
 skill: cs-fundamentals
 status: draft
@@ -39,7 +39,7 @@ Ou: mensagens no celular — chegam na ordem em que foram enviadas.
 ## Quando Usar
 
 - Processamento em ordem de chegada é um requisito
-- Você precisa desacoplar produtor de consumidor (buffer)
+- Você precisa desacoplar produtor de consumidor ([[wiki/concepts/buffer]])
 - Load leveling: absorver picos de trabalho sem perder requisições
 
 ## Nota: Fila como Estrutura vs. Filas de Mensageria
@@ -59,3 +59,4 @@ Esta página trata da **estrutura de dados** fila. Sistemas de mensageria como K
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
 - [[wiki/sources/pub-sub-message-queue-bullmq-na-pratica]]
 - [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]] — "pegar o próximo job" como exemplo canônico de operação onde a ordem de chegada é o critério de escolha da estrutura
+- [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] — a fila como mecanismo de [[wiki/concepts/buffer]] que absorve picos e desacopla produtor de consumidor

@@ -3,8 +3,8 @@ type: concept
 title: "Ciclo de Mudança de Arquitetura (AS-IS → TO-BE → POC → Coexistência)"
 aliases: ["ciclo de migração arquitetural", "AS-IS TO-BE", "ciclo de vida de mudança arquitetural"]
 date_created: 2026-08-03
-date_updated: 2026-08-03
-source_count: 1
+date_updated: 2026-08-10
+source_count: 2
 tags: [arquitetura, migração, as-is, to-be, poc, ciclo-de-vida]
 skill: tech-mentor-system-design
 status: stub
@@ -44,4 +44,5 @@ O risco central que a fonte aponta não é "escolher a arquitetura errada" isola
 
 ## Key Sources
 
+- [[wiki/sources/arquitetura-de-sacrificio]] — a substituição de uma arquitetura de sacrifício é justamente este ciclo (evitando a reescrita big-bang)
 - [[wiki/sources/ciclo-de-mudanca-de-arquitetura]]

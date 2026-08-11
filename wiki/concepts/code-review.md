@@ -3,8 +3,8 @@ type: concept
 title: "Code Review"
 aliases: ["revisão de código", "pull request review", "PR review"]
 date_created: 2026-07-03
-date_updated: 2026-08-10
-source_count: 13
+date_updated: 2026-08-11
+source_count: 15
 tags: [code-review, qualidade, carreira, júnior, mentoria, grill-me, babysitting-de-agentes, quality-gate, under-engineering]
 skill: tech-mentor-leadership
 status: draft
@@ -91,6 +91,10 @@ O critério "regra de negócio primeiro" e a exigência de pull request/versiona
 
 [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] propõe uma regra operacional para revisar código gerado por agentes em volume, como alternativa a ler cada PR por completo ou parar de ler completamente: escolher uma categoria de mudança (ex.: um CRUD de admin), ler todo PR daquela categoria, e quando o volume acumulado (a fonte estima ~30 PRs) gerar pouco ou nenhum feedback a dar — com o [[wiki/concepts/harness-de-qualidade|harness]] daquela área já confiável — marcar a categoria como pronta e avançar para a próxima. O objetivo não é parar de revisar, é reduzir a superfície de revisão manual conforme a confiança em cada fatia do sistema é conquistada, com um agente de code review ajudando durante todo o processo. Ver [[wiki/entities/uncle-bob]] para a citação original e [[wiki/concepts/harness-de-qualidade]] para o que precisa estar em pé antes de uma categoria poder ser considerada confiável.
 
+## Quando o Review Deixa de Ser Obrigatório por PR
+
+[[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] trata o volume de código de IA como a razão mecânica pela qual "ninguém mais revisa" — e propõe não abandonar review, mas *estratificá-lo* pela [[wiki/concepts/matriz-risco-dificuldade-review-ia|matriz risco × dificuldade]]: merge automático em baixo risco (desde que haja teste), amostragem em risco médio, revisão manual em pares em alto risco (auth, pagamentos, migração de banco). É a versão por-eixo-de-risco da mesma ideia de [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] de ganhar confiança por categoria, e o contraponto de gestão ao gargalo medido em [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]].
+
 ## Key Sources
 
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]]
@@ -106,3 +110,5 @@ O critério "regra de negócio primeiro" e a exigência de pull request/versiona
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — regra operacional de ler por categoria de mudança até acumular confiança, em vez de revisar tudo ou nada
 - [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — argumento quantitativo (taxa de aceitação de código de IA, dados de benchmark) para deslocar o primeiro filtro de revisão de estilo para prova objetiva em CI
 - [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]] — +91% no tempo de code review (Faros AI); a revisão como gargalo que não escala junto com a produção
+- [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — matriz risco × dificuldade para estratificar review (merge automático / amostragem / revisão manual em pares); erre quando o erro é pequeno
+- [[wiki/sources/potencial-programador-atitude-mindset]] — review como palco de [[wiki/concepts/ownership-proativo|ownership]] (ir atrás da própria aprovação) e o anti-padrão do revisor que sugere melhoria sem colocar a mão no código

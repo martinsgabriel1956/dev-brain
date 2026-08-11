@@ -3,8 +3,8 @@ type: concept
 title: "Sticky Session"
 aliases: ["session affinity", "afinidade de sessão", "session stickiness"]
 date_created: 2026-06-26
-date_updated: 2026-08-06
-source_count: 2
+date_updated: 2026-08-10
+source_count: 3
 tags: [system-design, load-balancer, sessao, stateful, escalabilidade]
 skill: tech-mentor-system-design
 status: draft
@@ -53,3 +53,4 @@ Sticky session trata o sintoma (sessão em memória) sem resolver a causa. A sol
 
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
 - [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] — contraste implícito: Round Robin, Weighted Round Robin, Least Connections e PEWMA pressupõem servidores intercambiáveis (sem afinidade), o cenário que sticky session existe para contornar quando essa premissa não é atendida
+- [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — sticky sessions e preferências do usuário como caso de uso do NoSQL externo; esse store é compartilhado inclusive entre data centers na etapa multi-região

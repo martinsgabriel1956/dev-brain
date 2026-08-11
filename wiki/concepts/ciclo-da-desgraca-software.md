@@ -3,8 +3,8 @@ type: concept
 title: "Ciclo da Desgraça do Software"
 aliases: ["software doom cycle", "reescrita do zero", "big rewrite", "ciclo de reescrita"]
 date_created: 2026-04-22
-date_updated: 2026-08-03
-source_count: 2
+date_updated: 2026-08-10
+source_count: 3
 tags: [arquitetura, legado, gestão, reescrita, anti-pattern]
 skill: tech-mentor-leadership
 status: stable
@@ -56,5 +56,6 @@ Quem entra numa empresa nova e imediatamente critica a codebase e propõe reescr
 
 ## Key Sources
 
+- [[wiki/sources/arquitetura-de-sacrificio]] — o antídoto de Fowler: sacrifício consciente do *próprio* código (por quem o escreveu, com modularidade) em vez da reescrita big-bang movida por ódio ao legado
 - [[sources/principio-da-inversao-programador]]
 - [[wiki/sources/ciclo-de-mudanca-de-arquitetura]] — framing complementar: este ciclo é o resultado de pular AS-IS/POC no processo de mudança arquitetural

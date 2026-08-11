@@ -3,8 +3,8 @@ type: concept
 title: "Aprender a Aprender"
 aliases: ["learning to learn", "metacognição", "metacognition", "metalearning"]
 date_created: 2026-05-31
-date_updated: 2026-07-21
-source_count: 4
+date_updated: 2026-08-10
+source_count: 5
 tags: [aprender-a-aprender, metacognicao, carreira, profissional-do-futuro, adaptabilidade, crenca-de-alta-eficacia]
 skill: tech-mentor-leadership
 status: stable
@@ -96,3 +96,4 @@ Essa mesma lógica se conecta à [[wiki/concepts/falacia-do-custo-afundado]]: in
 - [[wiki/sources/pare-de-terceirizar-suas-decisoes]]
 - [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] — convergência independente sobre leitura não-linear de livros técnicos
 - [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] — cita o curso "Learning How to Learn" como origem do princípio de spaced repetition
+- [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] — a meta-habilidade decide o uso de IA: como muleta ([[wiki/concepts/dependencia-ia]]/[[wiki/concepts/atrofia-cognitiva]]) ou como gerador de [[wiki/concepts/dificuldade-desejavel]]

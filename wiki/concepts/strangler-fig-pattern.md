@@ -3,8 +3,8 @@ type: concept
 title: "Strangler Fig Pattern"
 aliases: ["strangler pattern", "figueira mata-pau", "migração incremental"]
 date_created: 2026-08-03
-date_updated: 2026-08-04
-source_count: 2
+date_updated: 2026-08-10
+source_count: 3
 tags: [strangler-fig, migração, legado, proxy, cdc, feature-flags, arquitetura]
 skill: tech-mentor-system-design
 status: stub
@@ -49,6 +49,7 @@ O caso mais extremo de "legado que não se reescreve" é justamente sistemas [[w
 
 ## Key Sources
 
+- [[wiki/sources/arquitetura-de-sacrificio]] — o "introduzir microsserviços depois para desmontar o monolito gradualmente" de Fowler é, na prática, este padrão
 - [[wiki/sources/strangler-fig]]
 - [[wiki/sources/ciclo-de-mudanca-de-arquitetura]]
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — COBOL e SOAP como exemplos reais de "modernizar a borda, manter o núcleo legado" em vez de reescrita total

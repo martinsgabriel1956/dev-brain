@@ -3,8 +3,8 @@ type: concept
 title: "Dependência de IA"
 aliases: ["ai dependency", "dependência ferramenta", "loop de prompts"]
 date_created: 2026-05-31
-date_updated: 2026-07-03
-source_count: 3
+date_updated: 2026-08-10
+source_count: 4
 tags: [dependencia-ia, ia-e-programacao, aprendizado-passivo, autonomia-tecnica, iniciante]
 skill: tech-mentor-leadership
 status: stable
@@ -87,3 +87,4 @@ Pedir para uma IA revisar/sugerir melhorias no próprio código antes de abrir u
 - [[wiki/sources/ia-e-aprendizado-programacao-iniciantes]]
 - [[wiki/sources/escala-niveis-uso-ia-engenheiros]] — níveis 0–2 como zona de estagnação e dependência
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] — revisar código com IA antes do PR só funciona se vier com "por que" explicado
+- [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] — IA como "muleta" para fugir da dificuldade → [[wiki/concepts/atrofia-cognitiva]]; contraste com IA que *cria* dificuldade calibrada

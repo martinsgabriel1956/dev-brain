@@ -1,0 +1,36 @@
+# Arquitetura de Sacrifício (Sacrificial Architecture)
+
+> **Autor:** Martin Fowler
+> **Publicado em:** 20 de outubro de 2014
+> **Fonte:** https://martinfowler.com/bliki/SacrificialArchitecture.html
+> **Tags originais:** process theory, evolutionary design, application architecture
+>
+> Tradução para o português (fiel ao texto original) do artigo do bliki de Martin Fowler.
+
+---
+
+Você está sentado numa reunião, contemplando o código no qual seu time vem trabalhando nos últimos dois anos. Você chegou à conclusão de que a melhor coisa que pode fazer agora é jogar todo aquele código fora e reconstruir sobre uma arquitetura totalmente nova. Como isso faz você se sentir em relação àquele código condenado, ao tempo que passou trabalhando nele, às decisões que tomou lá atrás?
+
+Para muitas pessoas, jogar fora uma base de código é sinal de fracasso — talvez compreensível, dada a natureza inerentemente exploratória do desenvolvimento de software, mas ainda assim fracasso.
+
+Mas frequentemente o melhor código que você consegue escrever hoje é um código que você vai descartar daqui a alguns anos.
+
+Costumamos pensar em código excelente como software de vida longa. Estou escrevendo este artigo em um editor que remonta aos anos 1980. Boa parte do pensamento sobre arquitetura de software trata de como viabilizar esse tipo de longevidade. E, no entanto, o sucesso também pode ser construído em cima de código há muito enviado para o `/dev/null`.
+
+Considere a história do eBay, um dos grandes negócios de sucesso da web. Ele começou como um conjunto de scripts em Perl, construídos ao longo de um fim de semana em 1995. Em 1997 foi tudo derrubado e substituído por um sistema escrito em C++ sobre as ferramentas Windows da época. Depois, em 2002, a aplicação foi reescrita novamente, em Java. Essas versões iniciais foram um erro por terem sido substituídas? Dificilmente. O eBay é um dos grandes sucessos da web até hoje, mas boa parte desse sucesso foi construída sobre o software descartado dos anos 90. Como muitos sites de sucesso, o eBay viu crescimento exponencial — e crescimento exponencial não é gentil com decisões arquiteturais. A arquitetura certa para o eBay de 1996 não vai ser a arquitetura certa para o eBay de 2006. A de 1996 não aguentaria a carga de 2006, mas a versão de 2006 é complexa demais para construir, manter e evoluir frente às necessidades de 1996.
+
+De fato, essa diretriz pode ser incorporada ao jeito de trabalhar de uma organização. No Google, a regra explícita é projetar um sistema para dez vezes as suas necessidades atuais, com a implicação de que, se as necessidades ultrapassarem uma ordem de grandeza, muitas vezes é melhor jogar fora e substituir do zero. É comum ver subsistemas serem redesenhados e descartados a cada poucos anos.
+
+De fato, é um padrão comum ver pessoas chegando a uma base de código em amadurecimento e denegrindo sua falta de performance ou escalabilidade. Mas frequentemente, no período inicial de um sistema de software, você tem menos certeza do que ele realmente precisa fazer, então é importante colocar mais foco em flexibilidade para mudança de funcionalidades do que em performance ou disponibilidade. Mais adiante você precisa inverter as prioridades conforme ganha mais usuários, mas conseguir usuários demais em uma base de código pouco performática costuma ser um problema melhor do que o inverso. Jeff Atwood cunhou a frase "performance é uma feature", que algumas pessoas leem como se performance fosse sempre a prioridade número 1. Mas qualquer feature é algo que você tem de escolher em detrimento de outras features. Isso não quer dizer que você deva ignorar coisas como performance — software pode ficar lento e não confiável a ponto de matar um negócio —, mas o time tem de fazer os difíceis trade-offs com as demais necessidades. Muitas vezes essas são decisões mais de negócio do que de tecnologia.
+
+Então o que significa escolher deliberadamente uma arquitetura de sacrifício? Essencialmente, significa aceitar agora que daqui a alguns anos você (com sorte) vai precisar jogar fora o que está construindo atualmente. Isso pode significar aceitar limites nas necessidades transversais (cross-functional) daquilo que você está montando. Pode significar pensar desde já em coisas que facilitem a substituição quando a hora chegar — projetistas de software raramente pensam em como projetar sua criação para dar suporte à sua própria substituição graciosa. Também significa reconhecer que um software descartado em um tempo relativamente curto ainda pode entregar bastante valor.
+
+Saber que sua arquitetura é sacrificial não significa abandonar a qualidade interna do software. Normalmente, sacrificar qualidade interna vai te morder mais rápido do que o momento da substituição — a menos que você já esteja trabalhando em aposentar a base de código. Boa modularidade é parte vital de uma base de código saudável, e modularidade costuma ser uma grande ajuda ao substituir um sistema. Na verdade, uma das melhores coisas a fazer com uma versão inicial de um sistema é explorar qual deveria ser a melhor estrutura modular, para que você possa construir sobre esse conhecimento na substituição. Embora possa ser razoável sacrificar um sistema inteiro em seus primeiros dias, à medida que o sistema cresce é mais eficaz sacrificar módulos individuais — o que só dá para fazer se você tiver boas fronteiras de módulo.
+
+Uma coisa que passa facilmente despercebida quando se trata desse problema é a contabilidade. Sim, sério — já esbarramos em situações em que as pessoas ficaram relutantes em substituir um sistema claramente inviável por causa da forma como estavam amortizando a base de código. Isso tende a ser um problema maior para grandes empresas, mas não esqueça de checar se você vive nesse mundo.
+
+Você também pode aplicar esse princípio a features dentro de um sistema existente. Se você está construindo uma nova feature, muitas vezes é sábio disponibilizá-la apenas para um subconjunto dos seus usuários, para que você possa obter feedback sobre se é uma boa ideia. Para fazer isso, você pode inicialmente construí-la de forma sacrificial, de modo a não investir o esforço total em uma feature que você descobre não valer a implantação completa.
+
+Substituibilidade modular é um argumento central a favor de uma arquitetura de microsserviços, mas eu tenho receio de recomendá-la para uma arquitetura de sacrifício. Microsserviços implicam distribuição e assincronia, que são ambos amplificadores de complexidade. Já esbarrei em alguns projetos que tomaram o caminho dos microsserviços sem realmente precisarem — desacelerando seriamente seu pipeline de funcionalidades como resultado. Então um monolito é frequentemente uma boa arquitetura de sacrifício, com microsserviços introduzidos depois para ir desmontando-o gradualmente.
+
+O time que escreve a arquitetura de sacrifício é o time que decide que chegou a hora de sacrificá-la. Esse é um caso diferente de um novo time chegando, odiando o código existente e querendo reescrevê-lo. É fácil odiar um código que você não escreveu, sem entender o contexto em que ele foi escrito. Sacrificar conscientemente o seu próprio código é uma dinâmica muito diferente, e saber que você vai sacrificar o código que está prestes a escrever é uma variação útil disso.

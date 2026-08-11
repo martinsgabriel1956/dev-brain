@@ -3,8 +3,8 @@ type: concept
 title: "Ratchet (Catraca de Baseline)"
 aliases: ["ratchet pattern", "catraca de qualidade", "baseline congelada", "regra de ouro do quality gate"]
 date_created: 2026-07-19
-date_updated: 2026-07-19
-source_count: 1
+date_updated: 2026-08-11
+source_count: 2
 tags: [ratchet, quality-gate, baseline, ci-cd, debito-tecnico, era-agentica]
 skill: tech-mentor-testing
 status: draft
@@ -48,3 +48,4 @@ O ratchet de baseline generaliza a ideia de *architecture fitness function* (tes
 ## Key Sources
 
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — caso prático completo (projeto Strawberry): baseline real (483 violações ESLint, 2,2% duplicação, 7% cobertura, 19 arquivos acima do limite), regra de ouro, e plano de evolução via PRs de refatoração dedicados
+- [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — Quality Gate de [[wiki/entities/lucas-montano]] descrito com "vários baselines" como referência de melhoria ao colocar controle de qualidade num projeto que nunca teve

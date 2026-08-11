@@ -3,8 +3,8 @@ type: concept
 title: "Alucinação de LLM"
 aliases: ["hallucination", "llm hallucination", "alucinacao", "llm mente"]
 date_created: 2026-07-30
-date_updated: 2026-07-30
-source_count: 1
+date_updated: 2026-08-10
+source_count: 2
 tags: [alucinacao, hallucination, ai-safety, rag, guardrails, llm-as-judge, faithfulness]
 skill: tech-mentor-ai
 status: draft
@@ -57,3 +57,4 @@ Esse fluxo é a aplicação concreta do modelo de guardrails de entrada/saída j
 ## Key Sources
 
 - [[wiki/sources/porque-nunca-confiar-em-llm-alucinacao]] — origem desta página: estatísticas de taxa de erro factual, paper da OpenAI sobre causa raiz, caso Air Canada, alucinação de pacotes de código, pipeline de produção com RAG + LLM-as-judge
+- [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] — "informações falsas" como o principal risco factual do estudo com IA; exige [[wiki/concepts/pensamento-critico]], sobretudo em conteúdo complexo

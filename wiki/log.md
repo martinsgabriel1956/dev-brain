@@ -2,6 +2,113 @@
 
 ---
 
+## [2026-08-11] ingest | Potencial do Programador: Atitude e Mindset Acima da Tech Skill
+
+**Fonte:** [[wiki/sources/potencial-programador-atitude-mindset]]
+**Skill carregada:** `tech-mentor-leadership` (referências `technical-mentoring.md` e `code-review-culture.md`) — a fonte é sobre avaliação de potencial/carreira e traços de senioridade, não sobre técnica de domínio.
+
+**Páginas criadas:**
+- `wiki/sources/potencial-programador-atitude-mindset.md` — Lucas Montano "valida em código" o artigo de Gregor Ojstersek
+- `wiki/entities/gregor-ojstersek.md` — autor do artigo e do livro *The Multiplier Mindset*
+- `wiki/concepts/atitude-mindset-vs-tech-skill.md` — o debate central; distinção potencial vs. performance atual
+- `wiki/concepts/mentalidade-de-dar-primeiro.md` — give-first e o "efeito magnético"
+- `wiki/concepts/efeito-multiplicador.md` — elevar 5 pessoas = +100%, com ressalva de custo de tempo
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/ownership-proativo.md` — `source_count` 1 → 2; ownership como 1º traço; "se está bloqueado, é sua responsabilidade se desbloquear"
+- `wiki/concepts/extreme-ownership.md` — `source_count` 1 → 2; versão cotidiana do princípio
+- `wiki/concepts/colaboracao-times.md` — `source_count` 1 → 2; "team player" como 3º traço; software é atividade social
+- `wiki/concepts/mentoria-tecnica.md` — `source_count` 5 → 6; aritmética do efeito multiplicador e a ressalva do lead que para de codar
+- `wiki/concepts/soft-skills.md` — `source_count` 3 → 4; atitude/mindset acima da tech skill; "para de ser idiota, seja proativo"
+- `wiki/concepts/code-review.md` — `source_count` 14 → 15; review como palco de ownership; anti-padrão do revisor que não coda
+- `wiki/entities/lucas-montano.md` — `source_count` 8 → 9; nona fonte, reação ao artigo de Ojstersek
+- `wiki/index.md` — nova linha em Sources; nova entidade Gregor Ojstersek; 3 novos conceitos em "Carreira & Soft Skills"
+
+**Notas:** Divergência explícita registrada entre fonte e reagente — Ojstersek põe atitude/mindset **acima** da tech skill ao avaliar *potencial*; Montano pondera tech skill com o dobro do peso ao modelar *performance*, a ponto de um "gênio idiota" (tech 100, atitude 20, mindset 30) ainda passar como *great engineer*. A distinção **potencial ≠ performance atual** (documentada em [[wiki/concepts/atitude-mindset-vs-tech-skill]]) explica boa parte da tensão. A crítica de que "20% melhor" / "sei 30% de Angular" é immensurável é metodologicamente válida e vale como open question sobre qualquer fórmula fechada de proficiência. Nenhum link quebrado introduzido; a criação dos 3 conceitos resolve wikilinks recém-apontados entre si.
+
+---
+
+## [2026-08-11] ingest | Ninguém Mais Revisa o Código da IA — Como Migrar de "Eu Reviso" para "Eu Não Reviso" (Galego)
+
+**Fonte:** [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]]
+**Skill carregada:** `tech-mentor-leadership` (referência `code-review-culture.md`) — a fonte é sobre *cultura/processo de review* e gestão da transição, não sobre os detalhes técnicos de CCN/mutmut (já cobertos pelas duas fontes irmãs de Uncle Bob).
+
+**Páginas criadas:**
+- `wiki/concepts/matriz-risco-dificuldade-review-ia.md` — contribuição central da fonte: matriz risco × dificuldade com três regimes (merge automático / amostragem / revisão manual em pares)
+- `wiki/entities/boris.md` — criador do Claude Code; docs/`CLAUDE.md`/`review.md` como o novo trabalho de engenharia
+- `wiki/entities/paulo-tarso.md` — autor de artigo bilíngue detalhando implementação das métricas
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/quality-gate.md` — `source_count` 5 → 6; matriz como camada de decisão acima do gate; Quality Gate de Lucas Montano
+- `wiki/concepts/harness-de-qualidade.md` — `source_count` 5 → 6; metáfora fazenda vs. jardim; confiança migrada por quadrante de risco
+- `wiki/concepts/claude-md.md` — `source_count` 4 → 5; `review.md` como CLAUDE.md do revisor automático; CLAUDE.md como destino do aprendizado de sampling
+- `wiki/concepts/code-review.md` — `source_count` 13 → 14; quando review deixa de ser obrigatório por PR
+- `wiki/concepts/ratchet-baseline.md` — `source_count` 1 → 2; Quality Gate de Lucas Montano com "vários baselines"
+- `wiki/concepts/teste-de-mutacao.md` — `source_count` 3 → 4; entre as métricas objetivas, com ressalva "verde = probabilidade, não garantia"
+- `wiki/concepts/complexidade-ciclomatica.md` — `source_count` 2 → 3; CCN citada por Galego e detalhada por Paulo Tarso
+- `wiki/entities/uncle-bob.md` — `source_count` 8 → 9; terceiro vídeo de reação
+- `wiki/entities/lucas-montano.md` — `source_count` 7 → 8; Quality Gate (citação de segunda mão)
+- `wiki/entities/abacus-ai.md` — `source_count` 2 → 3; patrocínio Custom Router
+- `wiki/entities/anthropic.md` — `source_count` 18 → 19; Boris; `AGENTS.md` de passagem
+- `wiki/entities/augusto-galego.md` — `source_count` 8 → 9; nova seção de conteúdo sobre agentes de IA + relato da empresa de pagamentos
+- `wiki/index.md` — nova linha em Sources; novo conceito `matriz-risco-dificuldade-review-ia`; novas entidades `boris` e `paulo-tarso`
+
+**Notas:** Terceira fonte da série de reação ao mesmo tweet de Uncle Bob — grande parte dos claims técnicos (CCN, mutation testing, tamanho de módulo, dependency structure) já existia via [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] e [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]]. O ganho novo concentra-se em (1) nomear a **matriz risco × dificuldade** como framework de *transição* (não de estado final) — a peça de gestão de mudança que faltava acima do quality gate/harness, e (2) criar as entidades **Boris** e **Paulo Tarso**. Contradição/tensão registrada como open question: a afirmação de Galego de que "Fable/Sol/Química já são melhores que a maioria dos engenheiros" é opinião sem benchmark nesta fonte, contrastando com os dados de SWE-bench citados na fonte irmã. Dois links corrigidos durante a redação (`entities/fable` → `entities/anthropic|Fable`; concept inexistente → source `gestao-de-custo-velocidade-modelos-de-ia-fable-sol`). Nenhum link quebrado introduzido.
+
+## [2026-08-11] ingest | Cache vs. Buffer: a Diferença Definitiva Entre os Dois Conceitos
+
+Fonte: [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] — transcrição de vídeo em português de [[wiki/entities/bernardo-lobato]]. Transcrição bruta limpa e formatada em markdown (sem tradução — já em pt-BR) em `raw/cache-vs-buffer-diferenca-conceitual.md`.
+Skill carregada: `tech-mentor-backend`, de `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/SKILL.md` + índice das seções **Cache & Performance** (`references/redis-advanced.md`), **Mensageria** e **Backpressure/Scaling** (`references/backend-scaling-patterns.md`) — domínio primário backend/system-design.
+
+**Páginas criadas:**
+- `raw/cache-vs-buffer-diferenca-conceitual.md` — transcrição limpa em pt-BR com cabeçalho e seções
+- `wiki/sources/cache-vs-buffer-diferenca-conceitual.md` — TL;DR, 8 claims com evidência/confiança, conceitos tocados, 3 perguntas em aberto, quotes
+- `wiki/concepts/buffer.md` — conceito autônomo de buffer (fluxo/absorção de velocidade), antes inexistente (só havia `buffer-pool`)
+- `wiki/concepts/cache-vs-buffer.md` — a distinção conceitual como página própria, com tabela comparativa e a armadilha do nome (buffer pool = cache)
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/cache.md` — `source_count` 8 → 9; tag `buffer`; nota de contraste com buffer no bloco de tradeoffs
+- `wiki/concepts/buffer-pool.md` — `source_count` 1 → 2; nota "nome enganoso" classificando-o como cache
+- `wiki/concepts/mensageria.md` — `source_count` 6 → 7; fila como buffer que absorve picos
+- `wiki/concepts/fila.md` — `source_count` 3 → 4; wikilink no "desacoplar produtor de consumidor (buffer)"
+- `wiki/concepts/filas-e-workers.md` — `source_count` 4 → 5; fila como buffer de pico (Black Friday)
+- `wiki/concepts/latencia-streaming-ao-vivo.md` — `source_count` 1 → 2; buffer de leitura antecipada como exemplo canônico; 2x consome buffer, não elimina delay
+- `wiki/concepts/cdn.md` — `source_count` 5 → 6; CDN como cache + YouTube usando cache e buffer juntos
+- `wiki/entities/bernardo-lobato.md` — `source_count` 6 → 7; sétima fonte
+- `wiki/index.md` — nova linha no topo de Sources; dois novos conceitos (`cache-vs-buffer`, `buffer`) em "Cache & Redis"
+
+**Notas:** Fonte didática, não original — quase todos os claims já tinham ancoragem no wiki (cache, mensageria, buffer-pool, latência de streaming). O ganho concentra-se em (1) criar `buffer.md` como conceito autônomo de fluxo (distinto do `buffer-pool`, que apesar do nome é cache) e (2) nomear explicitamente a distinção **cache vs. buffer** — reutilização (passado) vs. diferença de velocidade (presente) — que amarra vários conceitos já existentes. Pergunta em aberto registrada: a fonte trata fila (Kafka) como buffer canônico sem distinguir o caso de replay/offset, onde há um componente de reutilização que aproxima a fronteira com log de eventos. Detalhes históricos (IBM System/360, 1968, ~16 KB *high speed buffer*) citados de segunda mão, marcados para verificação. Nenhum link quebrado introduzido.
+
+---
+
+## [2026-08-10] ingest | Arquitetura de Sacrifício (Sacrificial Architecture) — Martin Fowler
+
+Fonte: [[wiki/sources/arquitetura-de-sacrificio]] — artigo do bliki de Martin Fowler (https://martinfowler.com/bliki/SacrificialArchitecture.html), publicado em 2014-10-20. Post em inglês; **traduzido para o português** (fiel ao original) no arquivo raw.
+Skill carregada: `tech-mentor-backend`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/SKILL.md` e do arquivo de referência `references/architecture-evolutionary.md` (Evolutionary Architecture, Fitness Functions, Technical Debt Quadrant, SOLID/modularidade) — domínio primário arquitetura/evolutionary design.
+
+**Páginas criadas:**
+- `raw/arquitetura-de-sacrificio.md` — tradução fiel do artigo completo em pt-BR, com cabeçalho de metadados (autor, data, URL) e nota de tradução
+- `wiki/sources/arquitetura-de-sacrificio.md` — TL;DR, 8 claims com evidência/confiança, entidades (Fowler, eBay, Google, Jeff Atwood), conceitos, contradições/perguntas em aberto, quotes originais em inglês preservadas
+- `wiki/concepts/arquitetura-de-sacrificio.md` — conceito central (draft): sacrifício deliberado, regra do "10×", flexibilidade vs. performance, modularidade como habilitador, monolito > microsserviços como sacrifício, direito de sacrificar
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/monolito.md` — `source_count` 1 → 2; monolito como melhor arquitetura de sacrifício por padrão
+- `wiki/concepts/monolito-modular.md` — `source_count` 1 → 2; modularidade permite sacrificar módulos individuais
+- `wiki/concepts/microsservicos.md` — `source_count` 10 → 11; Fowler desaconselha microsserviços como sacrifício (amplificadores de complexidade)
+- `wiki/concepts/strangler-fig-pattern.md` — `source_count` 2 → 3; "desmontar o monolito gradualmente" = strangler fig
+- `wiki/concepts/ciclo-da-desgraca-software.md` — `source_count` 2 → 3; sacrifício consciente do próprio código vs. reescrita big-bang por ódio ao legado
+- `wiki/concepts/ciclo-de-mudanca-de-arquitetura.md` — `source_count` 1 → 2; o ciclo é como a substituição acontece sem virar big-bang
+- `wiki/concepts/over-engineering.md` — `source_count` 11 → 12; priorizar flexibilidade cedo como antídoto à otimização prematura
+- `wiki/concepts/tech-debt-como-ferramenta.md` — `source_count` 12 → 13; sacrifício = dívida deliberada com plano de substituição
+- `wiki/concepts/refatoracao.md` — `source_count` 3 → 4; substituir módulos como alternativa incremental ao descarte total
+- `wiki/concepts/escalabilidade-horizontal.md` — `source_count` 11 → 12; crescimento exponencial invalida a arquitetura inicial (regra do "10×")
+- `wiki/concepts/application-boundary.md` — `source_count` 2 → 3; quem está dentro da fronteira tem o contexto para decidir sacrificar
+- `wiki/concepts/feature-flag.md` — `source_count` 1 → 2; features sacrificiais liberadas a um subconjunto de usuários
+- `wiki/concepts/arquitetura-de-software.md` — `source_count` 11 → 12; projetar para a substituição futura é decisão arquitetural legítima
+- `wiki/index.md` — nova linha no topo de Sources; conceito `arquitetura-de-sacrificio` em "Arquitetura Backend & Event-Driven"
+
+**Notas:** A tese conecta-se fortemente ao wiki existente sobre monolito↔microsserviços e ciclo de reescrita. Contradição/tensão registrada na fonte: o "monolito primeiro, microsserviços depois" é essencialmente `strangler-fig-pattern`, mas a reescrita big-bang (`ciclo-da-desgraca-software`) reproduz o problema — Fowler mitiga insistindo em modularidade e no sacrifício de *módulos*, não do sistema todo. Segunda tensão: "quem escreveu decide sacrificar" pressupõe que o time original ainda está presente (contraexemplo: perda de contexto / bus factor em `por-que-code-bases-degradam-estrategias-code-rot`). Regra do "10×" do Google apresentada sem citação primária (alta confiança como heurística, média como fato). Não criei páginas de entidade para eBay/Google/Jeff Atwood (menções pontuais/ilustrativas); ficam como candidatas a stub futuro. Nenhum link quebrado introduzido.
+
 ## [2026-08-10] ingest | Como Escalar Leituras de Banco de Dados (System Design para Entrevistas Tier S)
 
 Fonte: [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — transcrição de vídeo (pt-BR) de Pedro Camaforte, primeiro da série de System Design para entrevistas Tier S; sem URL na fonte. Já em pt-BR, sem tradução necessária.
@@ -6100,3 +6207,84 @@ Skill carregada: `tech-mentor-backend`, lida de `/home/gabriel-martins/Documento
 - `wiki/index.md` — nova linha em Sources (no topo, antes da fonte relacionada); nova linha em Entities
 
 **Notas:** Esta ingestão é a fonte primária por trás de [[wiki/sources/principios-solid-ilustrados]] (vídeo ingerido antes deste artigo), fechando o loop de uma pergunta em aberto deixada naquela ingestão: a transcrição automática do áudio do vídeo deformou o nome da autora para "gol na Telma", impedindo confirmar autoria/URL na época. Com o artigo original em mãos, a identidade foi confirmada como **Ugonna Thelma**, publicado em 18/05/2020 na Backticks & Tildes (Medium) — resolvido tanto na nova entidade quanto riscando a pergunta em aberto na fonte antiga, sem apagar o histórico da incerteza original. O ganho de conteúdo novo é modesto mas real: o artigo formaliza os cinco princípios numa frase cada, e o exemplo textual de LSP (`Coffee`/`Cappuccino`/`Water` como retorno de método) é mais preciso e verificável do que a ilustração do café descrita de segunda mão no vídeo, então foi promovido a seção própria em `liskov-substitution-principle.md`. A atribuição a Robert C. Martin (1996) da generalização de OCP+LSP em Dependency Inversion, já registrada como não confirmada na ingestão anterior, não aparece neste artigo — continua como pergunta em aberto exclusiva da fonte em vídeo, não resolvida por esta ingestão. Nenhum link quebrado identificado nas páginas criadas ou tocadas por esta ingestão.
+
+## [2026-08-10] ingest | Monolito Modular: a etapa entre o MVP simples e a empresa madura
+
+Fonte: [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]] — transcrição de vídeo (português, sem tradução necessária), bloco de patrocínio omitido.
+Skill carregada: `tech-mentor-backend`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/SKILL.md` e do arquivo de referência `references/architecture-foundations.md` (seções "Microsserviços vs Monolito Modular", "Hexagonal Architecture (Ports & Adapters)" e "Modular Monolith — Design, Estrutura e Migração").
+
+**Páginas criadas:**
+- `raw/monolito-modular-transicao-mvp-empresa-madura.md` — transcrição limpa e organizada em MD
+- `wiki/sources/monolito-modular-transicao-mvp-empresa-madura.md` — TL;DR, 6 claims com evidência/confiança, entidades, conceitos, perguntas em aberto, quotes
+- `wiki/concepts/monolito-modular.md` — conceito central (draft)
+- `wiki/concepts/monolito.md` — stub
+- `wiki/concepts/code-espaguete.md` — stub
+- `wiki/concepts/separation-of-concerns.md` — stub
+- `wiki/concepts/encapsulamento.md` — stub
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/microsservicos.md` — `source_count` 9 → 10; nova linha em Key Sources (eliminação do espaguete por impossibilidade estrutural; trade-off rede vs. função)
+- `wiki/concepts/hexagonal-architecture.md` — `source_count` 6 → 7; Ports & Adapters como comunicação entre módulos e extração via troca de transporte
+- `wiki/concepts/contrato-de-api.md` — `source_count` 7 → 8; "contrato" in-process (analogia getters/setters)
+- `wiki/concepts/database-per-service.md` — `source_count` 1 → 2; banco por serviço como custo (4 bancos por request), com ressalva do autor
+- `wiki/concepts/escalabilidade-horizontal.md` — `source_count` 10 → 11; argumento "monolito basta" (3-4 máquinas + LB + réplica, exemplo Pieter Levels)
+- `wiki/concepts/monolito-modular-frontend.md` — `source_count` 2 → 3; ligação com a versão backend do mesmo princípio
+- `wiki/index.md` — nova linha no topo de Sources; 5 novos conceitos em "Arquitetura Backend & Event-Driven"
+
+**Notas:** Contradição registrada na fonte: o autor diz que microsserviços "impossibilitam" o espaguete; o skill e `microsservicos.md` apontam o **distributed monolith** como contraexemplo — a impossibilidade é estrutural apenas para chamadas de função, não elimina acoplamento de outra natureza (deploys coordenados, banco compartilhado, chamadas síncronas em cadeia). Não criei página de entidade para Pieter Levels/Elixir/gRPC (menções pontuais); ficam como candidatas a stub futuro. Observação de lint out-of-scope: `microsservicos.md` referencia `[[wiki/concepts/distributed-monolith]]`, que não existe em disco (link quebrado pré-existente, não introduzido por esta ingestão).
+
+## [2026-08-10] ingest | Como usar IA para aprender programação sem atrofiar o aprendizado
+
+Fonte: [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] — transcrição de vídeo (português, sem tradução necessária). Bloco de patrocínio (ferramenta de IA "JennySpark/James Park" + app de voz "Speakle") omitido do raw por ser publicidade, não conteúdo educacional.
+Skill carregada: `tech-mentor-leadership`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/SKILL.md` e do arquivo de referência `references/technical-mentoring.md` ("crescimento acontece na zona de desconforto controlada" — alinhado com dificuldade desejável). Domínio secundário: `tech-mentor-ai` (alucinação/informações falsas).
+
+**Páginas criadas:**
+- `raw/como-usar-ia-para-aprender-programacao-sem-atrofiar.md` — transcrição limpa e organizada em MD, bloco de patrocínio sinalizado como omitido
+- `wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar.md` — TL;DR, 7 claims com evidência/confiança, entidades, conceitos, perguntas em aberto, quotes
+- `wiki/concepts/dificuldade-desejavel.md` — conceito central (draft); resolve links pré-existentes que apontavam para esta página
+- `wiki/concepts/atrofia-cognitiva.md` — o risco de delegar demais à IA (draft); cita também a fonte pré-existente `atrofia-cognitiva-ia-programacao` (reversível vs. irreversível)
+- `wiki/concepts/active-recall.md` — recuperação ativa / testing effect (stub)
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/dependencia-ia.md` — `source_count` 3 → 4; IA como muleta → atrofia
+- `wiki/concepts/zona-de-desconforto-da-aprendizagem.md` — `source_count` 2 → 3; ZDA sob o nome pedagógico "dificuldade desejável"
+- `wiki/concepts/aprendizado-passivo.md` — `source_count` 6 → 7; modo a evitar, contraposto por active recall
+- `wiki/concepts/esforco-produtivo.md` — `source_count` 1 → 2; productive struggle = dificuldade desejável
+- `wiki/concepts/pensamento-critico.md` — `source_count` 2 → 3; necessário para filtrar informações falsas
+- `wiki/concepts/entender-vs-aprender.md` — `source_count` 1 → 2; ilusão de fluência exposta por autoteste/desafios sem resposta
+- `wiki/concepts/alucinacao-llm.md` — `source_count` 1 → 2; "informações falsas" como risco factual do estudo com IA
+- `wiki/concepts/aprendizado-multimodal.md` — `source_count` 1 → 2; multimodalidade gerada sob demanda pela IA
+- `wiki/concepts/aprender-a-aprender.md` — `source_count` 4 → 5; a meta-habilidade decide muleta vs. gerador de dificuldade
+- `wiki/index.md` — nova linha no topo de Sources; 3 novos conceitos em "Aprendizado e Mentalidade"
+
+---
+
+## [2026-08-10] ingest | Desenho para Escalar até 1 Milhão de Usuários
+
+Fonte: [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — transcrição de aula gratuita do YouTube (português, sem tradução necessária), autoria inferida Augusto Galego (mesmo curso pago de 90+ aulas, mesma política de reembolso). Releitura fiel do capítulo "scale from zero to millions of users" de *System Design Interview* (Alex Xu / ByteByteGo). Blocos de venda/pitch do curso (início e fim) omitidos do raw por não serem conteúdo técnico.
+Skill carregada: `tech-mentor-system-design`, lida de `/home/gabriel-martins/Documentos/skills/tech-mentor-system-design/SKILL.md` e do arquivo de referência `references/system-design.md` (framework de 4 etapas, números de latência/capacidade, HLD `Client → CDN → API Gateway → LB → App Servers → Cache → DB`).
+
+**Páginas criadas:**
+- `raw/escalar-para-um-milhao-de-usuarios.md` — transcrição limpa e estruturada em MD, pitch de venda sinalizado como omitido
+- `wiki/sources/escalar-para-um-milhao-de-usuarios.md` — TL;DR, 14 claims com backlink, entidades, conceitos, conexão com fontes irmãs, perguntas em aberto, quotes
+- `wiki/concepts/single-point-of-failure.md` — conceito central (stub); antes referenciado por várias páginas (api-gateway, ec2, gatekeeper-pattern, escalabilidade-vertical) sem página própria
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/escalabilidade-vertical.md` — `source_count` 5 → 6; teto físico + SPOF motivam a virada horizontal
+- `wiki/concepts/escalabilidade-horizontal.md` — `source_count` 12 → 13; cluster atrás de LB + etapa multi-região
+- `wiki/concepts/load-balancer.md` — `source_count` 14 → 15; LB entra com o segundo servidor; roteamento por geolocalização
+- `wiki/concepts/replicacao-de-banco.md` — `source_count` 3 → 4; write/read split e promoção de réplica
+- `wiki/concepts/read-replicas.md` — `source_count` 5 → 6; "lê mais do que escreve" como justificativa do split
+- `wiki/concepts/cache-layer.md` — `source_count` 2 → 3; cache como SPOF, invalidação e tolerância a indisponibilidade
+- `wiki/concepts/cdn.md` — `source_count` 4 → 5; arquivos estáticos grandes como gargalo de rede
+- `wiki/concepts/nosql.md` — `source_count` 5 → 6; regra prática de quando sair do "SQL por padrão"
+- `wiki/concepts/stateless.md` — `source_count` 2 → 3; login preso a um servidor = usuário deslogado
+- `wiki/concepts/sticky-session.md` — `source_count` 2 → 3; sessões/preferências no NoSQL externo, compartilhado entre regiões
+- `wiki/concepts/filas-e-workers.md` — `source_count` 3 → 4; jobs pesados via fila; nota sobre pub/sub vs. job queue
+- `wiki/concepts/high-level-design.md` — `source_count` 5 → 6; HLD construído incrementalmente por SPOF
+- `wiki/entities/augusto-galego.md` — `source_count` 7 → 8; oitava fonte atribuída (autoria inferida)
+- `wiki/index.md` — nova linha no topo de Sources; novo conceito `single-point-of-failure` em "Escalabilidade & System Design"
+
+**Notas:** Fonte canônica e didática, não original — quase todos os claims já existiam na wiki via [[wiki/sources/escalabilidade-vertical-horizontal-system-design]] e fontes irmãs. O ganho concentra-se em (1) criar a página autônoma de **single point of failure**, o conceito organizador que já era referenciado mas não existia, e (2) registrar a **narrativa incremental guiada por SPOF/gargalo** como o esqueleto do capítulo de Alex Xu. Contradição menor registrada como open question: a fonte chama a fila de jobs de "publisher/subscriber", quando tecnicamente é mais próxima de job queue / competing consumers — distinção já documentada em [[wiki/concepts/filas-e-workers]] e [[wiki/concepts/pub-sub]]. Nenhum link quebrado introduzido; a criação de `single-point-of-failure.md` resolve wikilinks que já apontavam para ela.
+
+**Notas:** A tese da fonte mapeia quase 1:1 sobre conceitos já existentes no wiki (esforço produtivo, ZDA, aprendizado passivo, dependência de IA), então o ganho novo concentra-se em nomear explicitamente a **dificuldade desejável** (termo acadêmico de Robert Bjork) como o mecanismo por trás de todos eles, e em criar a página de **atrofia cognitiva** como conceito autônomo (antes só existia a fonte `atrofia-cognitiva-ia-programacao`, que agora vira segunda fonte da página). Pergunta em aberto registrada: a afirmação de que delegar à IA causa atrofia é mecanística e plausível, mas a fonte não cita estudo empírico sobre magnitude/reversibilidade — candidata a triangulação com literatura de *cognitive offloading*. Nenhum link quebrado introduzido; a criação de `dificuldade-desejavel.md` e `atrofia-cognitiva.md` na verdade resolve wikilinks que já apontavam para elas.

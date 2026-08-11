@@ -3,8 +3,8 @@ type: concept
 title: "Harness de Qualidade"
 aliases: ["quality harness", "harness ia", "ferramental de qualidade"]
 date_created: 2026-05-31
-date_updated: 2026-08-04
-source_count: 5
+date_updated: 2026-08-11
+source_count: 6
 tags: [harness, qualidade, pipeline-de-qualidade, tdd, testes, era-agentica, robustez]
 skill: tech-mentor-backend
 status: stable
@@ -83,9 +83,14 @@ Harness de qualidade é o mecanismo que constrói [[robustez-de-sistemas]] quand
 
 [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] descreve o post de [[wiki/entities/uncle-bob]] sobre não ler mais código de agentes como um exemplo direto desta página: a lista que ele cita (teste unitário, cobertura, [[wiki/concepts/teste-de-mutacao|mutation testing]], teste [[wiki/concepts/bdd|Gherkin/BDD]], métrica de qualidade) não é uma lista jogada — cada item pega um tipo de erro que os outros deixam passar. Teste unitário pega erro de lógica de negócio; cobertura pega o que nenhum teste tocou; mutation testing pega se o teste só valida o caminho feliz; Gherkin/BDD pega o pior erro de todos (construir a coisa errada, mesmo que construída certo); métrica de qualidade mostra a tendência do sistema (piorando/melhorando) ao longo do tempo. A fonte fecha com uma regra operacional que complementa esta página: não abandonar a leitura de código de uma vez, e sim por categoria de mudança, marcando cada categoria como confiável só depois de acumular um volume de PRs (~30, na estimativa da fonte) com pouco ou nenhum feedback a dar.
 
+## Confiar no Harness é Gradual, Não Binário
+
+[[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] enquadra o harness com a metáfora de **fazenda industrial vs. jardim**: em vez de cuidar planta por planta (ler cada linha), você mede solo/ar/adubo (as provas objetivas desta página) e cultiva "um ambiente em que código bom é a única possibilidade". Mas a fonte é explícita — como a seção "métrica boa não garante código bom" — que métrica verde dá probabilidade, não garantia. Por isso propõe migrar a confiança no harness **por quadrante de risco** (ver [[wiki/concepts/matriz-risco-dificuldade-review-ia]]), começando onde o erro é pequeno. [[wiki/entities/boris]] complementa: escrever `CLAUDE.md`/`review.md`/skills/docs é o novo trabalho de engenharia que torna o harness legível para os agentes, e automatizar isso ficou barato.
+
 ## Key Sources
 
 - [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
+- [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — metáfora fazenda vs. jardim; confiança no harness migrada por quadrante de risco; docs como o novo trabalho de engenharia (Boris)
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
 - [[wiki/sources/tdd-sdd-bdd-era-ia]]
 - [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] — caso negativo: IA usada como o próprio gate, sem harness ao redor, resultado inconsistente

@@ -3,8 +3,8 @@ type: concept
 title: "Monolito Modular (Frontend)"
 aliases: ["arquitetura modular frontend", "modular monolith frontend", "fronteiras entre módulos"]
 date_created: 2026-07-27
-date_updated: 2026-07-30
-source_count: 2
+date_updated: 2026-08-10
+source_count: 3
 tags: [frontend, arquitetura, modularidade, monolito, module-boundaries]
 skill: tech-mentor-frontend
 status: stub
@@ -38,3 +38,4 @@ Quando uma funcionalidade dentro de um módulo já nasce complexa, a recomendaç
 
 - [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] — contraste camadas vs. módulos, fronteiras como mecanismo de escala de time, e monolito modular como base da transição para microfrontend baseado em rotas
 - [[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] — contraponto: um dashboard read-only isolado do produto principal, não um novo módulo do monolito
+- [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]] — a versão backend do mesmo princípio: [[wiki/concepts/monolito-modular]] como etapa entre MVP e empresa madura, módulos comunicando por contratos/[[wiki/concepts/hexagonal-architecture|Ports & Adapters]] e extração tardia para microsserviço

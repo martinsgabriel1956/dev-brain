@@ -3,8 +3,8 @@ type: concept
 title: "Pensamento Crítico"
 aliases: ["critical thinking", "resolução de problemas", "raciocínio analítico"]
 date_created: 2026-05-19
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-08-10
+source_count: 3
 tags: [soft-skills, pensamento-critico, resolução-de-problemas, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -47,3 +47,4 @@ No uso de IA para gerar software ou arquitetura, pensamento crítico é exatamen
 
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]
 - [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — pensamento crítico como o que separa uso saudável de IA de vibe coding irresponsável
+- [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] — pensamento crítico necessário para filtrar [[wiki/concepts/alucinacao-llm|informações falsas]] da IA; delegar demais o atrofia

@@ -4,7 +4,7 @@ title: "Read Replicas"
 aliases: ["réplica de leitura", "read replica", "replica routing"]
 date_created: 2026-04-22
 date_updated: 2026-08-10
-source_count: 5
+source_count: 6
 tags: [banco-de-dados, escalabilidade, read-replicas, postgresql, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -54,3 +54,4 @@ Read replicas são o mecanismo concreto por trás do read/write split usado em [
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — read replicas como base do read/write split em CQRS, com replication lag estimado em 1-3s
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — distinção explícita entre read replica (escala leitura) e sharding (escala leitura e escrita)
 - [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — read replica como "load balancer de banco de dados" (primário só escreve, réplicas só leem), terceiro degrau da escada de leitura (200-300k+ req/s); tradeoff de replication lag "de até segundos" é o ponto que corta candidatos que não o citam — crítico para fintech, tolerável para feed social
+- [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — justificativa didática do read/write split: "a maioria das aplicações lê mais do que escreve", então um banco de escrita alimenta réplicas de leitura

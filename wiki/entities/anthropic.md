@@ -3,8 +3,8 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-08-05
-source_count: 18
+date_updated: 2026-08-11
+source_count: 19
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack]
 skill: tech-mentor-ai
 status: stable
@@ -107,3 +107,4 @@ Guia oficial publicado pela Anthropic definindo quatro níveis de autonomia para
 - [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] — lançamento do Claude Tag (Claude integrado ao Slack); dado de gasto em cartão corporativo ultrapassando a OpenAI em abril de 2026
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — Fable como modelo mais forte no Artificial Analysis, mas ~70× mais caro por tarefa que o DeepSeek V4; caso de roteamento manual/automatizado no Claude Code
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — formato da API Anthropic usado como "contrato" imitado por um AI Gateway de terceiros para redirecionar o Claude Code a modelos não-Anthropic sem login real
+- [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — [[wiki/entities/boris]] (criador do Claude Code) sobre docs/`CLAUDE.md`/`review.md` como o novo trabalho de engenharia; preferência da Anthropic por `AGENTS.md` mencionada de passagem

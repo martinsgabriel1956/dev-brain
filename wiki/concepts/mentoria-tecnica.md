@@ -3,8 +3,8 @@ type: concept
 title: "Mentoria Técnica"
 aliases: ["mentoring", "mentorar júniors", "replicar conhecimento"]
 date_created: 2026-04-22
-date_updated: 2026-07-31
-source_count: 5
+date_updated: 2026-08-11
+source_count: 6
 tags: [carreira, mentoria, liderança, júnior, cultura, crescimento]
 skill: tech-mentor-leadership
 status: stable
@@ -75,3 +75,4 @@ Falta de tempo, não má vontade, costuma ser a causa de comentários secos ou p
 - [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — Hábito 3, ensinar em público (palestra/blog/vídeo) como forma escalável do mesmo mecanismo
 - [[wiki/sources/papinho-tech-solo-comunidade]] — mentoria/ensino em escala de comunidade (meetups), com retribuição como mecanismo central em vez de estrutura formal de 1:1
 - [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — terceira fonte independente sobre o efeito multiplicador do ensino; formação interna de time como alternativa à contratação de sênior pronto
+- [[wiki/sources/potencial-programador-atitude-mindset]] — a aritmética do [[wiki/concepts/efeito-multiplicador]] (ajudar 5 pessoas a melhorar 20% = +100%) e a ressalva de custo de tempo do lead que para de codar

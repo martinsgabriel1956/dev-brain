@@ -3,8 +3,8 @@ type: concept
 title: "Teste de Mutação"
 aliases: ["mutation testing", "testes de mutação", "mutation test"]
 date_created: 2026-05-31
-date_updated: 2026-08-04
-source_count: 3
+date_updated: 2026-08-11
+source_count: 4
 tags: [teste-de-mutacao, qualidade, testes, harness, cobertura]
 skill: tech-mentor-backend
 status: stable
@@ -85,3 +85,4 @@ Mutation testing é um componente do [[harness-de-qualidade]] e da [[pipeline-de
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — mutation testing como um dos cinco pilares do harness que Uncle Bob usa em vez de ler código
 - [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — exemplo numérico com `mutmut` (400 mutações, 50 sobreviventes) e meta de gate combinando cobertura + mutation score
+- [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — mutation testing entre as métricas objetivas que sustentam não ler o código, com a ressalva de que métrica verde dá probabilidade, não garantia

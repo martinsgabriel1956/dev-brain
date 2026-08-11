@@ -3,8 +3,8 @@ type: concept
 title: "Buffer Pool"
 aliases: ["buffer pool", "cache de páginas", "page cache do banco"]
 date_created: 2026-07-29
-date_updated: 2026-07-29
-source_count: 1
+date_updated: 2026-08-11
+source_count: 2
 tags: [banco-de-dados, buffer-pool, cache, postgresql, database-internals]
 skill: tech-mentor-data
 status: stub
@@ -13,6 +13,8 @@ status: stub
 # Buffer Pool
 
 Memória interna do banco de dados reservada para páginas de dados. É o cache entre a query e o disco: antes de buscar uma página no armazenamento, o banco procura primeiro no buffer pool.
+
+> **Nome enganoso:** apesar de "buffer" no nome, o buffer pool funciona conceitualmente como [[wiki/concepts/cache]] — retém páginas na expectativa de reutilização (buffer hit) —, não como [[wiki/concepts/buffer]] de fluxo (que absorve diferença de velocidade produtor/consumidor). É o exemplo canônico de que o nome não define o conceito. Ver [[wiki/concepts/cache-vs-buffer]].
 
 ## Buffer hit vs. miss
 
@@ -39,3 +41,4 @@ O banco não busca uma linha isolada — ele busca a página que a contém, um b
 ## Key Sources
 
 - [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]] — buffer hit/miss, dirty page, e por que ler linhas próximas fisicamente é mais barato
+- [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] — base da distinção cache vs. buffer que classifica o buffer pool como cache apesar do nome

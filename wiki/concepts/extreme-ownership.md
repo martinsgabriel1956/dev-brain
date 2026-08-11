@@ -3,8 +3,8 @@ type: concept
 title: "Extreme Ownership"
 aliases: ["ownership extremo", "Jocko Willink", "responsabilidade total"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-08-11
+source_count: 2
 tags: [liderança, carreira, responsabilidade, ego, ownership]
 skill: tech-mentor-leadership
 status: stable
@@ -58,3 +58,4 @@ Sêniors e tech leads que praticam extreme ownership constroem confiança mais r
 ## Key Sources
 
 - [[wiki/sources/desenvolvedor-acima-da-media-10-itens]]
+- [[wiki/sources/potencial-programador-atitude-mindset]] — versão cotidiana do princípio: assumir a responsabilidade pela própria entrega e se desbloquear sozinho, ligada a [[wiki/concepts/ownership-proativo]]

@@ -3,8 +3,8 @@ type: concept
 title: "Contrato de API"
 aliases: ["API contract", "contrato de interface", "interface contract"]
 date_created: 2026-07-09
-date_updated: 2026-08-04
-source_count: 7
+date_updated: 2026-08-10
+source_count: 8
 tags: [api, contrato, backend, arquitetura, desacoplamento]
 skill: tech-mentor-backend
 status: stub
@@ -47,3 +47,4 @@ Enquanto o contrato não muda, o cliente continua funcionando. Um contrato bem f
 - [[wiki/sources/system-design-entrevista-cinema-draw-io]] — endpoints nomeados sem detalhamento de request/response (`/search`, `GET assentos`, `POST commit assento`) como ponto de partida aceitável num rascunho de entrevista; APIs externas de domínio específico (seatmap, pagamentos) mantidas fora do contrato do sistema principal por conta própria
 - [[wiki/sources/email-address]] — RFC 5322/5321 como contrato de sintaxe formal, análogo à ideia central deste conceito num domínio fora de HTTP/REST
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — WSDL/SOAP como o extremo de formalidade e rigidez de contrato, em contraste com o contrato mais leve típico de REST
+- [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]] — "contrato" como interface in-process entre módulos de um [[wiki/concepts/monolito-modular]] (analogia getters/setters), não HTTP — mesma ideia de expor input/output e esconder internals

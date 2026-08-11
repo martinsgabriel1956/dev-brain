@@ -3,8 +3,8 @@ type: concept
 title: "Microsserviços"
 aliases: ["microsservicos", "microservices", "arquitetura de microsserviços", "decomposição por domínio"]
 date_created: 2026-07-24
-date_updated: 2026-08-04
-source_count: 9
+date_updated: 2026-08-10
+source_count: 11
 tags: [microsservicos, arquitetura, bounded-context, distributed-monolith, circuit-breaker, resiliencia]
 skill: tech-mentor-backend
 status: draft
@@ -74,6 +74,7 @@ Mesmo fora de uma arquitetura de microsserviços completa, dá para reaproveitar
 
 ## Key Sources
 
+- [[wiki/sources/arquitetura-de-sacrificio]] — Fowler **desaconselha** microsserviços como arquitetura de sacrifício (distribuição + assincronia = amplificadores de complexidade); melhor monolito primeiro, desmontado gradualmente depois
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — ESB como contraponto histórico direto ao "smart endpoints, dumb pipes"; por que ESBs continuam essenciais em empresas com grande legado mesmo perdendo espaço em projetos novos
 - [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — artigo original de 2014 (James Lewis e Martin Fowler) que cunhou a definição do termo; nove características comuns, "smart endpoints and dumb pipes", Lei de Conway, Design for Failure, e a postura de "otimismo cauteloso" dos próprios autores
 - [[wiki/sources/microsservicos]] — decomposição por bounded context, distributed monolith como anti-pattern, padrões de resiliência obrigatórios
@@ -83,3 +84,4 @@ Mesmo fora de uma arquitetura de microsserviços completa, dá para reaproveitar
 - [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] — mesmo princípio de extração tardia (monolito modular → vertical slice → builds separados) aplicado à arquitetura frontend
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — percurso didático incremental deadlock → database-per-service → 2PC → Saga Pattern → CQRS, construindo problema por problema
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — sharding de banco como consequência da decomposição por DDD, não como técnica aplicável a um monolito inteiro
+- [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]] — microsserviços eliminam o [[wiki/concepts/code-espaguete]] por impossibilidade estrutural (serviço não chama função de outro), mas a troca chamada-de-função→chamada-de-rede traz latência e overhead que só compensam com razão real de hardware/escala; o [[wiki/concepts/monolito-modular]] como etapa anterior que facilita a extração futura

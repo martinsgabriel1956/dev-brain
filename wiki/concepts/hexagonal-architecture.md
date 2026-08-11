@@ -3,8 +3,8 @@ type: concept
 title: "Hexagonal Architecture (Ports & Adapters)"
 aliases: ["arquitetura hexagonal", "ports and adapters", "ports adapters", "hexagonal"]
 date_created: 2026-05-04
-date_updated: 2026-08-03
-source_count: 6
+date_updated: 2026-08-10
+source_count: 7
 tags: [arquitetura, hexagonal, ports-adapters, acoplamento, testabilidade]
 skill: tech-mentor-backend
 status: stable
@@ -132,3 +132,4 @@ it("should throw when email already exists", async () => {
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — equivalência Input/Output Boundary ↔ Driving/Driven Port
 - [[wiki/sources/clean-architecture-arquitetura-centrada-no-dominio]] — mesmo mecanismo (camada interna define interface, camada externa implementa) explicado via contraste com a arquitetura em 3 camadas
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — motivação original de Cockburn (regras de negócio "vazando" para UI e banco); caso real da Netflix trocando fonte de dados via troca de adapter em uma linha
+- [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]] — Ports & Adapters como a forma de comunicação entre módulos de um [[wiki/concepts/monolito-modular]]; e como "interface já exposta" reduz a extração de um módulo para microsserviço a trocar o transporte (função → gRPC)

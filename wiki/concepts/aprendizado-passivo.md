@@ -3,8 +3,8 @@ type: concept
 title: "Aprendizado Passivo"
 aliases: ["passive learning", "copia sem entender", "ilusão de aprendizado"]
 date_created: 2026-05-31
-date_updated: 2026-07-03
-source_count: 6
+date_updated: 2026-08-10
+source_count: 7
 tags: [aprendizado-passivo, aprendizado, iniciante, dependencia-ia, autonomia-tecnica]
 skill: tech-mentor-leadership
 status: stable
@@ -99,3 +99,4 @@ Quem tem baixa crença de eficácia tende ao aprendizado passivo porque não acr
 - [[wiki/sources/papinho-tech-solo-aprender-a-aprender]] — ângulo EAD: vídeo de alta qualidade técnica (câmera, áudio, didática) cria ilusão de aprendizado; metodologia de aula expositiva sozinha não produz aprendizado
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]] — tutorial passo-a-passo pré-IA já produzia o mesmo padrão de cópia sem entendimento
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]] — dev que aprendeu a programar já com IA do lado (últimos ~18 meses) nunca construiu a base que tornaria o esquecimento reversível
+- [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] — consumo passivo como o modo a evitar; contraposto por [[wiki/concepts/active-recall]] (IA gerando questionários que forçam recuperação)

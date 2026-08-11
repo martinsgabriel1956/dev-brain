@@ -3,8 +3,8 @@ type: concept
 title: "Entender vs. Aprender"
 aliases: ["entender vs aprender", "compreensão vs habilidade", "ilusão de fluência", "illusion of knowing"]
 date_created: 2026-06-05
-date_updated: 2026-06-05
-source_count: 1
+date_updated: 2026-08-10
+source_count: 2
 tags: [aprendizado, pratica, metacognicao, ead, aprendizado-passivo]
 skill: tech-mentor-leadership
 status: stable
@@ -50,3 +50,4 @@ O EAD amplifica a ilusão porque vídeos de qualidade técnica alta (câmera, á
 - [[sources/papinho-tech-solo-aprender-a-aprender]]
 - [[sources/akita-como-aprender-programacao]]
 - [[sources/quanto-tempo-aprender-programacao]] — o vale do desespero como momento em que a diferença entre entender e aprender se torna inescapável: entende cada linha, mas não consegue arquitetar
+- [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] — entender a explicação da IA ≠ saber fazer; [[wiki/concepts/active-recall]] e desafios sem resposta expõem a ilusão de fluência

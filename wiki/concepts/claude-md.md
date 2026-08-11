@@ -3,8 +3,8 @@ type: concept
 title: "CLAUDE.md"
 aliases: ["claude md", "project memory", "user memory", "memory claude code"]
 date_created: 2026-05-31
-date_updated: 2026-07-21
-source_count: 4
+date_updated: 2026-08-11
+source_count: 5
 tags: [claude-code, claude-md, memory, context-engineering, agente-ia]
 skill: tech-mentor-ai
 status: stable
@@ -117,9 +117,14 @@ Isso reduz o custo por sessão sem perder as garantias de qualidade. Adicionar c
 
 Devido à [[token-tax-multilingual]], um `CLAUDE.md` escrito em português consome **62% mais context budget** por sessão do que o equivalente em inglês. O efeito se repete em toda sessão — não é custo único. Combinado com a recomendação de manter o arquivo enxuto (ver [[instruction-budget]] e paper de Zurique), escrever em inglês é a escolha de melhor custo-benefício quando possível.
 
+## `review.md`: o CLAUDE.md do Revisor Automático
+
+[[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] estende o uso do `CLAUDE.md` para um arquivo irmão, `review.md`, que codifica o que um revisor deve procurar. A cadeia lógica atribuída a [[wiki/entities/boris]]: se você sabe explicar por que um código está ruim, sabe escrever essa explicação — então escreva-a num `CLAUDE.md`/`review.md` que um **agente revisor** lê como input, em vez de re-explicar a cada PR. Boris argumenta que escrever esses arquivos (mais skills e docs) que deixam agentes trabalharem com *zero contexto adicional* é o novo trabalho de engenharia, barateado pela automação. No fluxo de [[wiki/concepts/matriz-risco-dificuldade-review-ia|amostragem]], cada defeito encontrado por sampling vira uma regra nova nesses arquivos — o `CLAUDE.md` é o destino do aprendizado, não uma correção pontual. (A fonte nota de passagem a preferência da [[wiki/entities/anthropic|Anthropic]] por `AGENTS.md` sobre `CLAUDE.md`.)
+
 ## Key Sources
 
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
+- [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — `review.md` como CLAUDE.md do revisor automático; docs como o novo trabalho de engenharia (Boris); CLAUDE.md como destino do aprendizado de sampling
 - [[wiki/sources/agents-md-vale-a-pena-paper-zurique]] — paper de Zurique; evidência empírica de custo e efetividade; estratégia enxuto + links
 - [[wiki/sources/custo-tokens-portugues-vs-ingles]] — token tax de 62% para português; impacto direto no context budget por sessão
 - [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — recomendação de comitar `.claude/` de projeto (não o pessoal) para alinhamento de equipe

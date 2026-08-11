@@ -4,7 +4,7 @@ title: "Tech Debt como Ferramenta"
 aliases: ["tech debt deliberado", "dívida técnica estratégica", "ship with debt"]
 date_created: 2026-04-26
 date_updated: 2026-08-10
-source_count: 12
+source_count: 13
 tags: [tech-debt, carreira, craftsmanship, estrategia, velocidade, under-engineering, alocacao-de-tempo, medicao]
 skill: tech-mentor-leadership
 status: draft
@@ -116,6 +116,7 @@ Ver também: o mesmo capítulo cunha explicitamente o termo **"technical debt"**
 
 ## Key Sources
 
+- [[wiki/sources/arquitetura-de-sacrificio]] — arquitetura de sacrifício = dívida assumida *deliberadamente*, com plano de substituição, sem abrir mão da qualidade interna
 - [[sources/5-principios-programador]]
 - [[wiki/sources/5-principles-that-changed-me-as-a-programmer]]
 - [[wiki/sources/5-principios-que-mudaram-como-programador]]

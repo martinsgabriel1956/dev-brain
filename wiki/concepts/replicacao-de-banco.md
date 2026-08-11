@@ -4,7 +4,7 @@ title: "Replicação de Banco de Dados"
 aliases: ["read replica", "replicação", "database replication", "replica set"]
 date_created: 2026-06-26
 date_updated: 2026-08-10
-source_count: 3
+source_count: 4
 tags: [system-design, banco-de-dados, replicacao, escalabilidade, leitura, alta-disponibilidade]
 skill: tech-mentor-system-design
 status: stub
@@ -66,3 +66,4 @@ O tipo mais comum de réplica descrito nesta página serve leitura enquanto fica
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
 - [[wiki/sources/ha-vs-ft-alta-disponibilidade-tolerancia-a-falha]] — réplica em standby (HA) vs. réplica ativa em paralelo (Tolerância a Falha)
 - [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — replicação como escalonamento de leitura "quase infinito" (adicionar réplicas), com replication lag de até segundos como tradeoff central
+- [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — write/read split motivado por evitar inconsistência/race condition ao escrever em dois bancos, e a **promoção** de uma réplica de leitura a banco de escrita como resposta ao SPOF do primário

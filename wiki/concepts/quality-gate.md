@@ -3,8 +3,8 @@ type: concept
 title: "Quality Gate"
 aliases: ["quality gates", "portão de qualidade", "gate de qualidade", "análise estática em pull request"]
 date_created: 2026-07-16
-date_updated: 2026-08-04
-source_count: 5
+date_updated: 2026-08-11
+source_count: 6
 tags: [quality-gate, linter, analise-estatica, clean-code, modularizacao, ia, milestone, criterios-de-qualidade, ratchet, babysitting-de-agentes, branch-protection]
 skill: tech-mentor-testing
 status: draft
@@ -69,9 +69,14 @@ Todos os exemplos acima descrevem *o que* um gate verifica; [[wiki/sources/under
 
 A fonte enquadra essas quatro técnicas como a resposta prática ao mesmo problema descrito em "Babysitting" e no exemplo de pipeline de CI acima: o volume de código gerado (a fonte cita ~10.000 linhas/dia) torna revisão manual linha a linha inviável, e a resposta não é abandonar qualidade, é mover o critério de aprovação para provas objetivas que rodam em segundos no CI, sem exigir leitura humana.
 
+## O Gate Não Decide Sozinho *Quando* Confiar Nele
+
+[[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] adiciona a camada de decisão humana *acima* do gate: um gate verde é condição necessária mas não suficiente para dispensar leitura. A fonte propõe a [[wiki/concepts/matriz-risco-dificuldade-review-ia|matriz risco × dificuldade]] para decidir, PR a PR, se o resultado binário do gate basta (baixo risco → merge automático desde que haja teste), se exige amostragem (risco médio), ou se ainda precisa de revisão humana em pares (alto risco: auth, pagamentos, migração de banco). A mesma fonte relata o Quality Gate de [[wiki/entities/lucas-montano]] — [[wiki/concepts/ratchet-baseline|baseline]] congelada + agente em babysitting + revisor de IA lendo o `CLAUDE.md`/`review.md` do projeto — como instância prática desta página, ecoando [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]].
+
 ## Key Sources
 
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]]
+- [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — matriz risco × dificuldade como camada de decisão acima do gate; Quality Gate de Lucas Montano com baseline e babysitting
 - [[wiki/sources/gate-de-qualidade-definicoes-formais]] — definições formais da literatura (checklist/aprovação por gate, milestone com critérios pré-definidos, ponto de verificação de Schneider) e características estruturais (critérios de entrada/saída, disparo por critério não por data, resultado binário, gates em paralelo)
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — padrão ratchet/baseline, babysitting de PR por agentes, pipeline de CI concreto (npm audit em dois níveis, jscpd para duplicação)
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — branch protection com required status checks como mecanismo mínimo de enforcement, sobre um pipeline de apenas lint + teste

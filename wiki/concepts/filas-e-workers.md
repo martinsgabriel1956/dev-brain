@@ -3,8 +3,8 @@ type: concept
 title: "Filas e Workers"
 aliases: ["job queue", "background processing", "async workers", "processamento assíncrono"]
 date_created: 2026-07-09
-date_updated: 2026-07-27
-source_count: 3
+date_updated: 2026-08-10
+source_count: 5
 tags: [filas, workers, background-jobs, mensageria, backend, retry, idempotencia]
 skill: tech-mentor-backend
 status: stub
@@ -49,3 +49,5 @@ Producer e worker como dois processos independentes (ex.: Bun), comunicando-se a
 - [[wiki/sources/10-conceitos-fundamentais-backend]]
 - [[wiki/sources/pub-sub-message-queue-bullmq-na-pratica]]
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — workers aparecem como conhecimento esperado a partir de pleno; em nível sênior, o uso de background jobs/workers para aliviar carga do sistema é tratado como ferramenta central de escala
+- [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — computações pesadas (processar vídeo/imagem, gerar PDF) publicadas como jobs numa fila; worker (thread em outra máquina, lambda) puxa e processa, aliviando os servidores web para responderem rápido. A fonte chama isso de "publisher/subscriber" — na prática, uma job queue / competing consumers
+- [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] — a fila entre produtor e consumidor como [[wiki/concepts/buffer]] que absorve picos (ex.: Black Friday) e permite processamento em ritmo constante

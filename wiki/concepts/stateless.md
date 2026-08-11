@@ -3,8 +3,8 @@ type: concept
 title: "Stateless"
 aliases: ["servidor stateless", "sem estado", "stateless server", "stateless architecture"]
 date_created: 2026-06-26
-date_updated: 2026-07-09
-source_count: 2
+date_updated: 2026-08-10
+source_count: 3
 tags: [system-design, stateless, escalabilidade, load-balancer, sessao]
 skill: tech-mentor-system-design
 status: draft
@@ -61,3 +61,4 @@ Fazer a aplicação stateless desde o início é muito mais fácil do que migrar
 
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
 - [[wiki/sources/10-conceitos-fundamentais-backend]] — mesmo argumento com exemplo de sessão e job em andamento: "uma sessão que existia na máquina A não vai existir na máquina B"
+- [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — se o login fica num servidor e o próximo request cai em outro, o usuário aparece deslogado; sessões e preferências vão para um NoSQL externo, que não pode viver dentro de nenhum servidor web
