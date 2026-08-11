@@ -3,8 +3,8 @@ type: concept
 title: "Unix"
 aliases: ["UNIX"]
 date_created: 2026-07-20
-date_updated: 2026-07-27
-source_count: 2
+date_updated: 2026-08-11
+source_count: 3
 tags: [sistema-operacional, unix, servidor, cs-fundamentals, comunidade, open-source]
 skill: cs-fundamentals
 status: stub
@@ -30,3 +30,4 @@ Segundo [[wiki/sources/a-insanidade-de-ser-um-programador-hoje]], o Unix nasceu 
 
 - [[wiki/sources/8-sistemas-operacionais-explicados]] — panorama comparativo de propósito e mercado
 - [[wiki/sources/a-insanidade-de-ser-um-programador-hoje]] — origem do Unix como subproduto do jogo *Space Travel* de Ken Thompson; `grep` como exemplo de ferramenta privada que virou pública; senso de comunidade da área
+- [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — o `grep` criado por Thompson em uso cotidiano; conjunto de comandos Unix que devs e harnesses de IA rodam

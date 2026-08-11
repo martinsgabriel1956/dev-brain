@@ -3,8 +3,8 @@ type: concept
 title: "Loop Engineering"
 aliases: ["loop engineering", "engenharia de loop", "loop de harness", "loop fixo", "loop criador"]
 date_created: 2026-07-10
-date_updated: 2026-08-05
-source_count: 5
+date_updated: 2026-08-11
+source_count: 6
 tags: [loop-engineering, harness, agente, automacao, planner-executor-critic, loop-fixo, loop-criador, spec-driven, ralph-loop, anthropic, graph-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -120,3 +120,4 @@ Para trabalho corporativo, pesquisa interna e entendimento de cliente (knowledge
 - [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — taxonomia dos três níveis do dev loop, distinção loop fixo/loop criador, caso Ban→Rust, quatro perguntas de decisão
 - [[wiki/sources/loop-engineering-harness-e-a-frase-que-viralizou]] — origem no padrão ReAct (2022/2023), três fatores que destravaram loops longos em 2026, correção da frase viral "loop engineering matou harness engineering"
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — origem do Ralph Loop (Geoffrey Huntley, julho de 2025); os quatro níveis oficiais de loop do guia da Anthropic (turn-based, goal-based, time-based, proactive)
+- [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — "o teu único prompt na verdade vira 20-30 prompts": o agente faz teste end-to-end, verifica se o jogo funciona e itera até o resultado; loop goal-based aplicado a construção de jogo

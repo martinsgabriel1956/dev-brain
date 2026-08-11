@@ -3,8 +3,8 @@ type: concept
 title: "MVP (Minimum Viable Product)"
 aliases: ["mvp", "produto mínimo viável", "minimum viable product"]
 date_created: 2026-04-29
-date_updated: 2026-08-06
-source_count: 5
+date_updated: 2026-08-11
+source_count: 6
 tags: [projetos, produtividade, entrega, planejamento, carreira, startup]
 skill: tech-mentor-leadership
 status: stable
@@ -71,3 +71,4 @@ Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], 
 - [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — MVP como um dos contextos onde vibe coding brilha
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — reforça a tese de lançar com monetização desde o dia um e escopo mínimo sendo exatamente a única funcionalidade pela qual alguém pagaria (o simulador em si, não uma tela de diagramação gratuita); o próprio autor admite em retrospecto ter violado essa regra ao incluir um "simulador de caos" no MVP inicial
 - [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — MVP mínimo estendido à infraestrutura (VPS 1 vCPU/4GB), testado sob carga real e ataque
+- [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — MVP jogável (jogo de golfe na Unreal) construído por vibe coding em 3 prompts; [[wiki/concepts/estagios-de-maturidade-de-produto|estágio 1]] é "um estranho consegue usar"

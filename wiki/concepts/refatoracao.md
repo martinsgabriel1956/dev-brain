@@ -3,8 +3,8 @@ type: concept
 title: "Refatoração"
 aliases: ["refactoring", "refatorar"]
 date_created: 2026-07-15
-date_updated: 2026-08-10
-source_count: 4
+date_updated: 2026-08-11
+source_count: 5
 tags: [refactoring, clean-code, craftsmanship, design-de-software, tech-debt]
 skill: tech-mentor-backend
 status: draft
@@ -99,3 +99,4 @@ Refatoração idealmente não é um "projeto" à parte que precisa de aprovaçã
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]]
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]]
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — "ficar estratégico" ao modificar código existente; regras de manutenção de comentários (Cap. 16)
+- [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — refatoração conduzida por IA com [[wiki/concepts/plan-mode|plan mode]] e [[wiki/concepts/strategy-pattern|Strategy]]; comportamento externo (interface do front end) preservado — mas a validação do resultado é visual/estrutural, sem os testes automatizados que esta página exige como garantia

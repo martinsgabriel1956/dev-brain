@@ -3,8 +3,8 @@ type: concept
 title: "Prompt Engineering"
 aliases: ["engenharia de prompt", "prompt design"]
 date_created: 2026-05-17
-date_updated: 2026-07-31
-source_count: 6
+date_updated: 2026-08-11
+source_count: 8
 tags: [prompt-engineering, llm, few-shot, codex, software-3]
 skill: tech-mentor-ai
 status: stable
@@ -99,3 +99,5 @@ Em modelos mais fortes (ex.: Fable), o mesmo princípio de "descreva o estado de
 - [[wiki/sources/html-vs-markdown-para-agentes-de-ia]] — contraste entre a recomendação de Markdown da OpenAI e o uso de tags/HTML em fluxos de produção reais
 - [[wiki/sources/sistema-produtividade-ia-adapta]] — padrão Tell It aplicado a prompts de planejamento pessoal, fora de contexto de codificação
 - [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — verificação embutida no prompt e "descreva o resultado, não os passos" como práticas oficiais do Claude Code
+- [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — a diferença entre entregar um jogo em 1 vs. 8 prompts é atribuída ao prompt (bom senso + fornecer assets/referências), não ao modelo; o "único prompt" na prática vira 20-30 iterações via [[wiki/concepts/loop-engineering|loop]]
+- [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — prompt específico + contexto (mencionar arquivos, URL de referência, o design pattern desejado) vs. prompt genérico que transfere decisões subjetivas para a IA

@@ -4,7 +4,7 @@ title: "Augusto Galego"
 aliases: ["Augusto Galego", "augustogalego.com"]
 date_created: 2026-07-20
 date_updated: 2026-08-11
-source_count: 9
+source_count: 10
 tags: [pessoa, programador, youtuber, brasil, devops, system-design, carreira, agentes-ia, code-review]
 skill: tech-mentor-infra
 status: stub
@@ -55,3 +55,4 @@ Além de infra/deploy, carreira e system design, produz conteúdo de reação/an
 - [[wiki/sources/anatomia-entrevista-system-design-bigtech]] — autoria inferida (não confirmada por nome no vídeo, ver open question na fonte): mesmo curso pago, mesma política de reembolso, mesmo bloco patrocinado UVP removido no início; detalha o pipeline de entrevista bigtech e o que cada etapa da sessão de system design avalia
 - [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — autoria inferida com evidência fraca (nome no cupom de patrocínio "Augusto 20"), não confirmada; três problemas de algoritmos/estruturas de dados resolvidos ao vivo
 - [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — autoria inferida (mesmo curso pago de 90+ aulas, mesma política de reembolso de um mês): aula gratuita do curso reconstruindo o capítulo "de zero a milhões de usuários" de Alex Xu, desenho incremental guiado por SPOF
+- [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — autoria confirmada (PWD do vídeo identifica o user "Augusto Galego"): comandos básicos de Linux e por que devs precisam reconhecê-los na era dos agentes; patrocínio Abacus

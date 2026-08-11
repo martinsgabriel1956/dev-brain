@@ -3,8 +3,8 @@ type: concept
 title: "LTV e CAC"
 aliases: ["lifetime value", "custo de aquisição de cliente", "unit economics", "LTV/CAC"]
 date_created: 2026-07-09
-date_updated: 2026-08-05
-source_count: 3
+date_updated: 2026-08-11
+source_count: 4
 tags: [ltv, cac, growth, unit-economics, saas, retencao, graph-engineering, loop-engineering]
 skill: tech-mentor-leadership
 status: draft
@@ -43,3 +43,4 @@ LTV está diretamente ligado a por que o usuário continua pagando. Um produto c
 - [[wiki/sources/como-vender-um-saas-sem-audiencia]]
 - [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]]
 - [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — CAC/churn/LTV como exemplo de por que um loop de IA de métrica única é insuficiente
+- [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — o gap entre R$5k e R$50k/mês é unit economics: manter o CAC baixo enquanto se aumenta o volume de leads frios; leads quentes (audiência própria) como ponto de partida de CAC menor (ver [[wiki/concepts/estagios-de-maturidade-de-produto]])

@@ -3,8 +3,8 @@ type: entity
 title: "Renato Augusto"
 aliases: ["Renato Augusto"]
 date_created: 2026-06-05
-date_updated: 2026-08-03
-source_count: 8
+date_updated: 2026-08-11
+source_count: 9
 tags: [design-patterns, oop, arquitetura, criador-de-conteudo, youtube, carreira, soft-skills, system-design, pos-graduacao]
 skill: tech-mentor-backend
 status: stub
@@ -24,3 +24,4 @@ Desenvolvedor e criador de conteúdo brasileiro. Publica vídeos sobre padrões 
 - [[wiki/sources/design-pattern-facade-renato-augusto]] — Facade Pattern com exemplo de OrderController/OrderFacade num e-commerce; defende que a Facade não fere o SRP por operar num nível de abstração diferente das classes de serviço que orquestra
 - [[wiki/sources/full-text-search-mysql-postgresql]] — Full-Text Search em MySQL e PostgreSQL, demonstração prática de `LIKE` vs. índice invertido com DBeaver
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — continuação da playlist de System Design: sharding/fragmentação de bancos de dados, shard key, hash-based vs. range-based, consistent hashing, problema da celebridade, Saga pattern e relação com DDD/microsserviços
+- [[wiki/sources/design-pattern-decorator-renato-augusto]] — Decorator Pattern com pipeline de `ImageProcessor` (básico → marca d'água → resize); ensina composição recursiva, ancora no Open/Closed Principle e contrasta com Chain of Responsibility

@@ -3,8 +3,8 @@ type: concept
 title: "Design Patterns"
 aliases: ["padrões de projeto", "GoF", "Gang of Four patterns"]
 date_created: 2026-05-16
-date_updated: 2026-08-04
-source_count: 5
+date_updated: 2026-08-11
+source_count: 6
 tags: [design, arquitetura, padroes, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -61,3 +61,5 @@ Antes de estudar design patterns é obrigatório dominar [[modelagem-orientada-a
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — [[wiki/concepts/template-method-pattern|Template Method]] implementado via composição (não herança) num controlador web, citando a recomendação do próprio livro GoF de favorecer composição sobre herança
 - [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]] — [[wiki/concepts/observer-pattern|Observer]] e [[wiki/concepts/singleton-pattern|Singleton]] combinados para recriar o mecanismo central do [[wiki/concepts/zustand|Zustand]] com JavaScript puro
 - [[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] — [[wiki/concepts/factory-pattern|Factory]] e [[wiki/concepts/observer-pattern|Observer]] usados lado a lado como dois estágios progressivos de desacoplamento (não como escolhas concorrentes), numa refatoração incremental de um jogo em JavaScript
+- [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — catálogo do [[wiki/entities/refactoring-guru|Refactoring Guru]] empacotado como `references/design-patterns.md` de uma skill, para a IA escolher e aplicar o pattern certo em refatorações
+- [[wiki/sources/design-pattern-decorator-renato-augusto]] — [[wiki/concepts/decorator-pattern|Decorator]] (estrutural) ensinado via pipeline de `ImageProcessor`, com foco em composição recursiva e Open/Closed

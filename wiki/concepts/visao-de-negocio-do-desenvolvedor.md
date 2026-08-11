@@ -3,9 +3,9 @@ type: concept
 title: "Visão de Negócio do Desenvolvedor"
 aliases: ["lado sombrio da força", "dev entende de negócio", "business acumen para devs"]
 date_created: 2026-07-29
-date_updated: 2026-07-29
-source_count: 1
-tags: [carreira, negocio, comunicacao, priorizacao]
+date_updated: 2026-08-11
+source_count: 3
+tags: [carreira, negocio, comunicacao, priorizacao, precificacao]
 skill: tech-mentor-leadership
 status: draft
 ---
@@ -35,6 +35,12 @@ Não existe fórmula única por indústria, mas o ponto de entrada recomendado �
 - [[wiki/concepts/comunicacao-tecnica]] — visão de negócio depende da mesma responsabilidade de "traduzir na ponta de saída" — aqui, traduzir jargão técnico para o vocabulário de negócio e vice-versa.
 - [[wiki/entities/renato-augusto]] — cita "visão de negócio (churn, CAC, LTV)" como vantagem real de pós-graduação em arquitetura em [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]], reforçando o mesmo tema por uma fonte independente.
 
+## Precificação como Aplicação Direta de Visão de Negócio
+
+[[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] leva o tema ao terreno de **vendas/precificação**: o dev bom tecnicamente que ignora negócio consegue o emprego ou os primeiros clientes, mas falha em fechar **grandes contratos**. A fonte ensina [[wiki/concepts/ancoragem-de-preco|ancoragem de preço]] usando o lançamento do Opus 5 da [[wiki/entities/anthropic]] como estudo de caso — e insiste que a jogada só funciona porque há competência técnica real por trás: "a época de fazer dinheiro só com lábia passou; agora o mercado cobra resultado". Reforça a tese central desta página (negócio e técnica são inseparáveis) pelo ângulo de quanto se cobra, não só do que se constrói.
+
 ## Key Sources
 
 - [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — Hábito 7, único source até o momento
+- [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — demanda por software crescendo apesar da IA (não-devs vibe codam scripts); serviço virando produto via orquestração de agentes; framework de [[wiki/concepts/estagios-de-maturidade-de-produto]] e [[wiki/concepts/canais-de-distribuicao]]
+- [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — visão de negócio aplicada a precificação (ancoragem); técnica + negócio inseparáveis para fechar grandes contratos

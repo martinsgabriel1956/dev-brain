@@ -3,8 +3,8 @@ type: concept
 title: "Plan Mode"
 aliases: ["modo planejamento", "auto-accept", "shift tab claude code"]
 date_created: 2026-05-31
-date_updated: 2026-06-02
-source_count: 2
+date_updated: 2026-08-11
+source_count: 3
 tags: [claude-code, plan-mode, agente-ia, workflow, context-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -91,3 +91,4 @@ O Codex não salva o plano automaticamente — configure o harness para fazê-lo
 
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/formacao-ia-devs-aula-03-plan-mode]]
+- [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — modo plan na IDE [[wiki/entities/verdent-ai|Verdent]]: mapeia dependências, gera especificação técnica com diagrama Mermaid, pergunta em pontos ambíguos e só codifica ("build") após o plano ser revisado e comentado

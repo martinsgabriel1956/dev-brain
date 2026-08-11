@@ -3,9 +3,9 @@ type: concept
 title: "Rebase vs. Merge"
 aliases: ["git rebase", "rebase de branch", "histórico linear git", "reescrita de histórico"]
 date_created: 2026-07-29
-date_updated: 2026-07-29
-source_count: 1
-tags: [git, rebase, merge, versionamento, branching, historico-git, conflito-de-merge]
+date_updated: 2026-08-11
+source_count: 2
+tags: [git, rebase, merge, versionamento, branching, historico-git, conflito-de-merge, trunk-based-development]
 skill: tech-mentor-leadership
 status: draft
 ---
@@ -81,11 +81,23 @@ Ferramenta para transformar um histórico de trabalho bagunçado ("wip", "fix ty
 | Conflitos | Podem se repetir por commit | Resolvidos uma vez, no merge commit |
 | Uso recomendado | Local, antes do PR | Integração final na branch principal |
 
+## Rebase como estratégia de integração (rebase-flow)
+
+Além do uso local pré-PR, o rebase pode ser a **estratégia de integração** de um time — em [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]], [[wiki/entities/lucas-montano]] descreve um fluxo [[wiki/concepts/trunk-based-development|só-`main`]] em que toda feature é rebaseada sobre a `main` antes de entrar, produzindo apenas **fast-forward merges** ("bloquinhos bem definidos"). A justificativa: o merge cria o *"subway train from hell"* — linhas de branching ilegíveis — enquanto o rebase deixa a **ordem das entregas explícita** (útil, por exemplo, para prestar contas a cliente).
+
+Trade-offs observados em 4 anos de uso (2020–2024):
+
+- **Exige disciplina**: rebase recorrente (1–2×/semana), não só na hora do merge, para manter os conflitos pequenos.
+- **Um-arquivo-um-commit** ([[wiki/concepts/atomic-commits]]): assim cada conflito é num único arquivo e resolvido intencionalmente — o que, na experiência da fonte, eliminou as regressões clássicas de "consertei e voltou a quebrar".
+- **Ownership centralizado**: por reescrever a branch da feature (perda da versão original se der errado) e resolver conflitos commit a commit, precisa de uma pessoa atenta cuidando do merge. É exatamente isso que **não escala** para times grandes (colide com o [[wiki/concepts/bus-factor|bus factor]]). IA reduz hoje o custo operacional, não o trade-off.
+
 ## Ver também
 
 - [[wiki/concepts/atomic-commits]] — squash via rebase interativo é a ferramenta prática para chegar a commits atômicos
+- [[wiki/concepts/trunk-based-development]] — o rebase-flow só-`main` como estratégia de integração de time
 - [[wiki/concepts/code-review]] — histórico limpo (pós-rebase local) facilita a revisão
 
 ## Key Sources
 
 - [[wiki/sources/git-rebase-na-pratica]] — demonstração prática ponta a ponta: criação de branch, commit concorrente na main, rebase com conflito real, resolução via editor do VS Code, e reintegração na main
+- [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] — rebase como estratégia de integração de time (rebase-flow só-`main`), sua disciplina e por que não escala

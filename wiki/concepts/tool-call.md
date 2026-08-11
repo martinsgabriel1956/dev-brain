@@ -3,8 +3,8 @@ type: concept
 title: "Tool Call"
 aliases: ["function calling", "tool use", "chamada de ferramenta"]
 date_created: 2026-06-02
-date_updated: 2026-07-30
-source_count: 5
+date_updated: 2026-08-11
+source_count: 6
 tags: [tool-call, harness, agente, llm, function-calling, tool-overload]
 skill: tech-mentor-ai
 status: stable
@@ -73,3 +73,4 @@ Assim como um programa em JavaScript não sabe que horas são e faz uma syscall 
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — caso Vercel: remover 80% das ferramentas disponíveis melhorou performance do agente
 - [[wiki/sources/porque-nunca-confiar-em-llm-alucinacao]] — `web_search` e execução de testes como mitigação prática de alucinação em uso pessoal
+- [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — as tool calls de manipulação de arquivo são, na prática, comandos de shell (`cat`/`echo`/`grep`/`sed`) executados pela harness na máquina

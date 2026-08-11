@@ -3,8 +3,8 @@ type: concept
 title: "Skills (Padrão de Harness)"
 aliases: ["skills harness", "agents skills", "skill pattern ia", "skills.sh"]
 date_created: 2026-06-02
-date_updated: 2026-07-21
-source_count: 7
+date_updated: 2026-08-11
+source_count: 8
 tags: [skills, harness, context-engineering, lazy-loading, system-prompt, grill-me, rfc, babysitting-de-agentes, produto-de-consumo]
 skill: tech-mentor-ai
 status: stable
@@ -123,3 +123,4 @@ Skills podem conter scripts executáveis. **Skills de terceiros não verificadas
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — skill de babysit para o agente monitorar e endereçar comentários no próprio PR até poder mergear
 - [[wiki/sources/sistema-produtividade-ia-adapta]] — skill como contexto pessoal persistente (rotina, prioridades) em produto de consumo, fora de contexto de codificação
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]] — skill auto-gerada e auto-refinada por closed-loop skill learning system, limite de generalização por domínio
+- [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — skill como camada de injeção de contexto acionada por título/descrição/keywords para combater alucinação de pacotes e forçar padrões internos da empresa; *Skill Creator* (skill que cria skills) e importação de skills da comunidade na [[wiki/entities/verdent-ai|Verdent]]

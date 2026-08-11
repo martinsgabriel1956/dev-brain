@@ -4,7 +4,7 @@ title: "Quality Gate"
 aliases: ["quality gates", "portão de qualidade", "gate de qualidade", "análise estática em pull request"]
 date_created: 2026-07-16
 date_updated: 2026-08-11
-source_count: 6
+source_count: 7
 tags: [quality-gate, linter, analise-estatica, clean-code, modularizacao, ia, milestone, criterios-de-qualidade, ratchet, babysitting-de-agentes, branch-protection]
 skill: tech-mentor-testing
 status: draft
@@ -81,3 +81,4 @@ A fonte enquadra essas quatro técnicas como a resposta prática ao mesmo proble
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — padrão ratchet/baseline, babysitting de PR por agentes, pipeline de CI concreto (npm audit em dois níveis, jscpd para duplicação)
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — branch protection com required status checks como mecanismo mínimo de enforcement, sobre um pipeline de apenas lint + teste
 - [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — quatro gates concretos (CCN, cobertura+mutation, tamanho de módulo, dependency structure) para transformar a lista de métricas de Uncle Bob num pipeline de CI real
+- [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — "qualidade de código é mensurável, não subjetiva"; o quality gate no CD como o substituto que "já surgiu" para a revisão linha a linha (contra o "algo precisa surgir no lugar" de Gergely Orosz)

@@ -3,8 +3,8 @@ type: concept
 title: "Código Grepável"
 aliases: ["grepability", "código buscável", "greppable code"]
 date_created: 2026-08-04
-date_updated: 2026-08-04
-source_count: 1
+date_updated: 2026-08-11
+source_count: 2
 tags: [ia-engineering, codebase-quality, agentes, tool-call, refatoracao]
 skill: tech-mentor-ai
 status: stub
@@ -28,6 +28,11 @@ Legibilidade tradicional avalia se um humano, lendo sequencialmente, entende o c
 
 A justificativa para quebrar um bloco grande em funções menores nomeadas, na era dos agentes, não é mais só "cada função faz uma coisa" (regra clássica de [[wiki/entities/uncle-bob|Uncle Bob]]) — é tornar aquele bloco **achável de fora**, algo que um leitor humano sequencial não precisava tanto porque já estava com o arquivo inteiro aberto.
 
+## Flags de grep que a LLM usa
+
+Segundo [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]], é literalmente com `grep` que o agente acha onde uma função é usada num arquivo grande: `grep -i` (case insensitive), `grep -n` (número da linha) e `grep -r` (recursivo pelas pastas). Reconhecer código *grepável* é o lado da codebase; essas flags são o lado da ferramenta. Ver [[wiki/concepts/comandos-basicos-linux]].
+
 ## Key Sources
 
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]]
+- [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — `grep -i`/`-n`/`-r` como o mecanismo concreto de busca da harness

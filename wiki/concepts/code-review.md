@@ -4,7 +4,7 @@ title: "Code Review"
 aliases: ["revisão de código", "pull request review", "PR review"]
 date_created: 2026-07-03
 date_updated: 2026-08-11
-source_count: 15
+source_count: 16
 tags: [code-review, qualidade, carreira, júnior, mentoria, grill-me, babysitting-de-agentes, quality-gate, under-engineering]
 skill: tech-mentor-leadership
 status: draft
@@ -95,9 +95,19 @@ O critério "regra de negócio primeiro" e a exigência de pull request/versiona
 
 [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] trata o volume de código de IA como a razão mecânica pela qual "ninguém mais revisa" — e propõe não abandonar review, mas *estratificá-lo* pela [[wiki/concepts/matriz-risco-dificuldade-review-ia|matriz risco × dificuldade]]: merge automático em baixo risco (desde que haja teste), amostragem em risco médio, revisão manual em pares em alto risco (auth, pagamentos, migração de banco). É a versão por-eixo-de-risco da mesma ideia de [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] de ganhar confiança por categoria, e o contraponto de gestão ao gargalo medido em [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]].
 
+## Estratificar por Porte da Empresa (Accountability × Substituibilidade)
+
+[[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] adiciona um eixo *organizacional* às estratificações já documentadas (por [[wiki/concepts/matriz-risco-dificuldade-review-ia|risco × dificuldade]] e por categoria de mudança): o porte da empresa muda o *porquê* de revisar.
+
+- **Projeto de um homem só:** revisar cada linha da IA é uma **red flag** — sinal de que não há [[wiki/concepts/quality-gate|quality gate]] no pipeline; o *accountability* já é 100% do dev, então o certo é [[wiki/concepts/harness-de-qualidade|harness]] (testes E2E, orquestração de testes, agente revisor) em vez de leitura linha a linha.
+- **Time grande:** o review sobrevive **não por desconfiança do código** (que já é escrito por IA), mas por **contexto** — o revisor lê arquitetura, aderência a padrões do projeto e cobertura de requisitos, e testa localmente o PR. O review vira "o QA dos próprios devs".
+
+A tensão que explica a diferença: responsabilizar cada dev pelo que coloca em prod funciona em empresa média, mas empresa grande recusa isso porque aumenta o [[wiki/concepts/bus-factor|bus factor]] e reduz substituibilidade — grande empresa quer processos, não heróis. Daí a fonte falar em "várias verdades": review forte em time grande, opcional em time médio, dispensável em projeto solo. O autor ([[wiki/entities/lucas-montano]]) leva a ponta solo ao extremo, fazendo *push force* direto em produção via SSH+Claude Code quando o custo de downtime é baixo.
+
 ## Key Sources
 
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]]
+- [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — estratificação do review por porte da empresa; accountability individual × substituibilidade; review em time grande como QA de contexto (arquitetura/padrões/requisitos)
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]
 - [[wiki/sources/cognitive-debt-margaret-storey]] — code review como checkpoint de entendimento compartilhado, requisito mínimo de "uma pessoa entende totalmente" antes do deploy
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — "looking good to me" como sintoma de agentes autônomos de longa duração; skill Grill Me como mitigação

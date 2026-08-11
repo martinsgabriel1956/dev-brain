@@ -3,8 +3,8 @@ type: entity
 title: "Hostinger"
 aliases: ["Hostinger VPS"]
 date_created: 2026-07-21
-date_updated: 2026-08-06
-source_count: 4
+date_updated: 2026-08-11
+source_count: 5
 tags: [tech-mentor-infra, vps, hosting, patrocinio, coolify]
 skill: tech-mentor-ai
 status: stub
@@ -22,9 +22,12 @@ Também citada (terceiro bloco patrocinado) em [[wiki/sources/rotacao-de-contas-
 
 Também citada (quarto bloco patrocinado, cronologicamente anterior ao incidente de SYN flood) em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]]: nos primeiros 15 dias do Find My SaaS, a VPS Hostinger usada tinha apenas 1 vCPU, 4GB de RAM e 50GB de armazenamento — suficiente para sustentar 230 mil+ requisições, incluindo tentativas de ataque bloqueadas pelo Cloudflare, sem downtime nesse período.
 
+Também citada (quinto bloco patrocinado) em [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]], por [[wiki/entities/lucas-montano]]: plano **KVM2** (2 vCPU, 8 GB RAM, SSD, backups semanais grátis, firewall gerenciado), com o mesmo diferencial de "implantação com um clique" já citado nas fontes anteriores — aqui aplicado a [[wiki/entities/claude-code]], Codex CLI, N8N e Docker — além de instalar só o SO (Debian, Ubuntu, Alma/Arch Linux) e testar Odysseus/Hermes com um clique. Cupom "Lucas Montano". Conteúdo patrocinado, não avaliação técnica independente.
+
 ## Key Sources
 
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]]
+- [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — plano KVM2, deploy de um clique de Claude Code/Codex CLI/N8N/Docker, cupom "Lucas Montano"
 - [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]]
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — deploy de um clique de AI Gateway self-hosted (proxy multi-provider de LLM)
 - [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — VPS mínima (1 vCPU/4GB/50GB) sustentando 230 mil+ requisições nos primeiros 15 dias do Find My SaaS

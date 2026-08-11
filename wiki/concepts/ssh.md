@@ -3,8 +3,8 @@ type: concept
 title: "SSH e Chaves SSH"
 aliases: ["ssh", "secure shell", "chave ssh", "ssh-keygen", "authorized_keys", "openssh"]
 date_created: 2026-07-10
-date_updated: 2026-07-15
-source_count: 2
+date_updated: 2026-08-11
+source_count: 3
 tags: [ssh, openssh, ed25519, autenticacao, criptografia-assimetrica, iam, hardening, bastion]
 skill: tech-mentor-security
 status: stable
@@ -78,3 +78,4 @@ Host two
 
 - [[wiki/sources/ssh-chaves-como-funcionam]]
 - [[wiki/sources/portas-de-rede-como-funcionam]] — porta 22 como well-known port do SSH
+- [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — via SSH em produção você opera por comandos de shell; interface gráfica costuma inexistir ou ser travada

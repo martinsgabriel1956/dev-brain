@@ -3,9 +3,9 @@ type: concept
 title: "Cargo Cult Tecnológico"
 aliases: ["copiar stack de big tech", "solução Netflix Google Facebook sem contexto", "cargo cult de arquitetura"]
 date_created: 2026-07-03
-date_updated: 2026-08-04
-source_count: 4
-tags: [arquitetura, tomada-de-decisao, carreira, escala, contexto]
+date_updated: 2026-08-11
+source_count: 5
+tags: [arquitetura, tomada-de-decisao, carreira, escala, contexto, processo, git]
 skill: tech-mentor-leadership
 status: draft
 ---
@@ -48,8 +48,13 @@ Assistir a uma palestra de um ciclista profissional sobre a bicicleta de 8 mil d
 
 [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] descreve o mecanismo inverso ao cargo cult clássico: não é copiar o que a big tech faz, é a ansiedade de que **não** acompanhar toda nova tecnologia é ficar irrelevante — "vontade de jogar todo o conhecimento fora para aprender o framework da moda". A fonte argumenta que essa ansiedade ignora um dado empírico simples: [[wiki/concepts/soap]], [[wiki/concepts/xml-extensible-markup-language|XML]], [[wiki/concepts/esb-enterprise-service-bus|ESB]], [[wiki/concepts/jquery]] e [[wiki/concepts/cobol]] saíram do mainstream de conferências e redes sociais há anos, mas continuam sustentando sistemas críticos — o ciclo de hype da comunidade não é o mesmo ritmo em que uma tecnologia deixa de ser útil em produção. É o cargo cult visto pelo avesso: em vez de "copiar porque todo mundo grande usa", é "abandonar porque ninguém mais fala disso" — mesmo mecanismo de decisão desconectada de contexto real, motivação inversa.
 
+## A Variante de Processo ("Git Flow é padrão da indústria")
+
+[[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] aplica o mesmo mecanismo a **processo de desenvolvimento**, não a arquitetura ou stack. [[wiki/entities/lucas-montano]] chama [[wiki/concepts/git-flow|Git Flow]] de "uma das maiores falácias da bolha dev" e provoca: *"me diga uma grande empresa que está usando Git Flow"*. A tese é que **influenciadores são "modificadores de cultura"** — pegam um post/palestra e a comunidade o abraça "como um gospel", elevando-o a "padrão industrial" sem que a indústria de fato o adote. O exemplo mais forte que ele dá é o mesmo já citado acima — os **squads do Spotify** (post/palestra reproduzidos à exaustão até o time original desmentir que o Spotify usasse aquilo) — ao lado do movimento ágil e da orientação a objetos. O antídoto é o mesmo do cargo cult clássico: buscar **princípios** e avaliar o próprio contexto (porte do time, natureza da empresa), em vez de importar a receita — ver [[wiki/concepts/maturidade-tecnica]].
+
 ## Ver também
 
+- [[wiki/concepts/git-flow]] — instância de processo elevada a "padrão industrial" por influenciadores
 - [[wiki/concepts/decisao-terceirizada]] — o hábito geral de decisão por procuração
 - [[wiki/concepts/antifragilidade]] — apostar com risco calibrado ao próprio contexto, não ao da empresa copiada
 - [[wiki/concepts/ciclo-de-mercado-tech]] — por que a tecnologia "quente" muda por década e não é garantia de acerto
@@ -61,3 +66,4 @@ Assistir a uma palestra de um ciclista profissional sobre a bicicleta de 8 mil d
 - [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] — a variante por vaidade tecnológica pessoal, não por autoridade de big tech
 - [[wiki/sources/a-insanidade-de-ser-um-programador-hoje]] — a variante por consenso coletivo de mercado ("React é a forma certa"), sem autoridade de empresa específica
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — a variante por ansiedade de ficar para trás (FOMO de framework), mecanismo invertido do cargo cult clássico
+- [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] — a variante de processo (Git Flow como "padrão industrial" de influenciador); influenciadores como "modificadores de cultura"

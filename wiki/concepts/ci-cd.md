@@ -3,9 +3,9 @@ type: concept
 title: "CI/CD"
 aliases: ["CI/CD", "continuous integration", "continuous delivery", "continuous deployment", "pipeline de entrega"]
 date_created: 2026-04-22
-date_updated: 2026-07-31
-source_count: 8
-tags: [devops, cicd, deploy, automação, qualidade, projetos-novos, dora]
+date_updated: 2026-08-11
+source_count: 9
+tags: [devops, cicd, deploy, automação, qualidade, projetos-novos, dora, trunk-based-development]
 skill: tech-mentor-infra
 status: stable
 ---
@@ -87,8 +87,15 @@ Um exemplo real anterior à formalização do livro *Accelerate* (2018): o Faceb
 
 Padrão didático comum: `feature branch → dev/staging → main`. A feature vai primeiro para uma branch de dev/staging, onde QA (ou o próprio dev) testa antes de seguir para main — só o merge para main dispara o CD de fato. É uma forma concreta de inserir o gate humano de Continuous Delivery sem abandonar a automação: o pipeline roda igual em ambos os merges, mas só o de main termina em deploy para produção. → [[wiki/sources/continuous-integration-delivery-deploy-vs-release]]
 
+## "CI" como *Single Command Deploy* em Times Pequenos
+
+[[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] oferece uma leitura pragmática de CI para **times pequenos** que não têm capacidade de manter um servidor de CI dedicado: o essencial não é o GitHub/GitLab Actions, é que **a entrega seja um único comando** — *single command deploy*, rodado até da máquina do dev. O objetivo é ser **frictionless** e eliminar o estado "código pronto mas não em produção". É a mesma ideia do "deploy manual vs. automático" acima (o que muda é o gatilho, não os comandos), aplicada como piso mínimo antes de haver pipeline.
+
+Essa fonte também **contrasta** com o fluxo `feature → dev/staging → main` documentado acima: ela argumenta contra manter uma branch `dev` de **vida longa**, defendendo só a `main` como fonte de verdade ([[wiki/concepts/trunk-based-development]]) — com *staging* sendo um **ambiente** idêntico ao de produção (só muda URL/capacidade), não uma branch. Não é contradição de mérito: são trade-offs distintos (evitar manter conflitos entre uma `dev` atrasada e uma `prod` com hotfix, vs. ter um gate humano explícito por branch).
+
 ## Ver também
 
+- [[wiki/concepts/trunk-based-development]] — o fluxo só-`main` com single command deploy
 - [[concepts/pipeline-de-ci]] — estrutura detalhada dos stages
 - [[concepts/github-actions]] — implementação com GitHub Actions
 - [[concepts/argo-rollouts]] — progressive delivery no CD
@@ -107,3 +114,4 @@ Padrão didático comum: `feature branch → dev/staging → main`. A feature va
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]] — exemplo concreto de deploy 100% manual via SSH, sem pipeline
 - [[wiki/sources/rapid-release-at-massive-scale-facebook]] — caso real (Meta/Facebook, 2017) de deploy quase-contínuo em escala massiva
 - [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — aula didática reforçando os três níveis, com demo prática em GitHub Actions + VPS e fluxo de branch feature/dev-staging/main
+- [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] — CI como single command deploy frictionless para times pequenos; contra a branch `dev` de vida longa

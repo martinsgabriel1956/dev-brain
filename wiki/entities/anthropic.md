@@ -4,7 +4,7 @@ title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
 date_updated: 2026-08-11
-source_count: 19
+source_count: 22
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack]
 skill: tech-mentor-ai
 status: stable
@@ -82,6 +82,10 @@ Produto que integra o Claude ao Slack via @menção ("Claude Tag"), lançado com
 
 Segundo [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]], em abril a Anthropic passou a OpenAI pela primeira vez em % de empresas americanas usando cartão corporativo para seus serviços: Anthropic subiu para 34,4%, OpenAI caiu para 32,3% (fonte primária do dado não identificada na transcrição — provavelmente um relatório agregado de gasto corporativo tipo Ramp; tratar como não confirmado externamente). Lido pelo apresentador como evidência de que a Anthropic está ganhando fatia do mercado B2B/enterprise, historicamente dominado por Google e depois pela OpenAI.
 
+## Ancoragem de Preço no Lançamento do Opus 5
+
+[[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] analisa a Anthropic como "mestre em vendas": no lançamento do **Opus 5**, teria usado [[wiki/concepts/ancoragem-de-preco|ancoragem de preço]] — ancorar o Opus ao **Fable** (premium caro) para fazê-lo parecer barato, apesar de custar mais que o dobro do Sonnet. Efeito de reposicionamento da linha: o Fable vira a nova âncora premium, o **Opus vira o "novo Sonnet"** (modelo do dia a dia) e o tier barato (Haiku) estaria sendo abandonado para modelos chineses/open source a ~1/10 do preço. Preços de saída narrados (sem link oficial): Fable ~10,50 e Opus ~5,25 por milhão de tokens. Reforça o padrão já documentado de [[wiki/concepts/corrida-preco-qualidade-llm|competição de preço/qualidade]] e de subsídio de produto (ver seção "Venda Enterprise no Brasil e Subsídio de Produto" acima).
+
 ## Guia Oficial "Getting Started with Loops"
 
 Guia oficial publicado pela Anthropic definindo quatro níveis de autonomia para loops agênticos — turn-based, goal-based, time-based e proactive — cada um entregando progressivamente mais responsabilidade de decisão ao agente (ver [[wiki/concepts/loop-engineering]] para a lista completa). Publicado cerca de um ano depois do [[wiki/concepts/ralph-loop|Ralph Loop]] de [[wiki/entities/geoffrey-huntley]] (julho de 2025) ter demonstrado, de forma deliberadamente simples, que o próprio conceito de "loop até terminar" era viável — segundo [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]], a Anthropic institucionalizou um ano depois algo que começou como uma técnica quase de piada.
@@ -98,6 +102,7 @@ Guia oficial publicado pela Anthropic definindo quatro níveis de autonomia para
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — claim não verificado de mudança de tokenizer no Sonnet 5; contexto do Departamento de Guerra dos EUA na crítica do CEO da Palantir
 - [[wiki/sources/tokens-llm-fundamentos-typescript]]
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
+- [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — Opus 5 e Fable 5 citados nos casos virais de one-shot (snowboarder test com física de deslizamento; jogo jogável em um passe)
 - [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — citada de passagem: erros `503` frequentes da API do Claude ("modelo ocupado, tente novamente") como exemplo do "novo normal" de sistemas caindo, exigindo estratégias de retry no lado do cliente
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — custo elevado do Ultra Review/Ultra Plan em teste pessoal, incluindo bug de crash que consumiu saldo sem entregar resultado
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]] — bug de billing no Claude Max 20 disparado pela string "hermes" no Git history; anúncio do Dreaming in Claude
@@ -108,3 +113,5 @@ Guia oficial publicado pela Anthropic definindo quatro níveis de autonomia para
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — Fable como modelo mais forte no Artificial Analysis, mas ~70× mais caro por tarefa que o DeepSeek V4; caso de roteamento manual/automatizado no Claude Code
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — formato da API Anthropic usado como "contrato" imitado por um AI Gateway de terceiros para redirecionar o Claude Code a modelos não-Anthropic sem login real
 - [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — [[wiki/entities/boris]] (criador do Claude Code) sobre docs/`CLAUDE.md`/`review.md` como o novo trabalho de engenharia; preferência da Anthropic por `AGENTS.md` mencionada de passagem
+- [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — servidor da Anthropic como destino do conteúdo lido por `cat` pela harness do Claude Code (a harness lê o arquivo localmente e envia como parte do prompt)
+- [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — ancoragem de preço no lançamento do Opus 5 (Fable como âncora, Opus como "novo Sonnet")

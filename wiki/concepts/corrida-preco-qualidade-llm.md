@@ -3,9 +3,9 @@ type: concept
 title: "Corrida de Preço vs. Qualidade em LLMs"
 aliases: ["race to the bottom llm", "corrida para baixo de preço", "guerra de preços ia"]
 date_created: 2026-07-21
-date_updated: 2026-07-31
-source_count: 3
-tags: [mercado-de-ia, precificacao, competicao, llm, open-source]
+date_updated: 2026-08-11
+source_count: 4
+tags: [mercado-de-ia, precificacao, competicao, llm, open-source, ancoragem]
 skill: tech-mentor-ai
 status: stub
 ---
@@ -36,8 +36,13 @@ O jogo de modelos deixou de ser dominado por uma única empresa. Combinado com [
 
 [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] traz o lado da crítica ao próprio modelo de cobrança que sustenta essa corrida: o CEO da [[wiki/entities/palantir-technologies]] argumenta que, se o valor gerado pela IA é tão alto quanto anunciado, o racional de preço deveria ser sobre o valor gerado (percentual do resultado), não sobre volume de token — e chama o custo de token de "wealth tax". A mesma fonte documenta por que o gasto total sobe mesmo com o preço por token caindo: a orquestração de agentes ([[wiki/concepts/harness]]) multiplica o consumo por tarefa, neutralizando parte do ganho nominal de preço.
 
+## Resposta do Frontier: Ancoragem em vez de Guerra de Preço
+
+Uma empresa frontier não precisa cortar preço para responder à corrida — pode **reprecificar por percepção**. [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] argumenta que a [[wiki/entities/anthropic]] usou [[wiki/concepts/ancoragem-de-preco|ancoragem de preço]] no lançamento do Opus 5: com o mid-tier pressionado por baixo pelo [[wiki/entities/moonshot-ai|Kimi K3]] (US$ 0,92 vs US$ 2,13 do Fable numa task do Cline) e pelo [[wiki/entities/xai|Grok 4.5]], ancorar o Opus ao Fable (premium) faz o Opus parecer barato sem entrar numa guerra direta de preço — defendendo margem no meio da corrida.
+
 ## Key Sources
 
 - [[wiki/sources/kimi-k3-china-mercado-ia-open-source]]
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — dado de ~70× de diferença de custo por tarefa entre Fable e DeepSeek V4 (via Artificial Analysis)
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — crítica ao modelo de cobrança por token (Palantir): preço deveria ser sobre valor gerado, não volume de token
+- [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — ancoragem de preço como resposta do frontier à corrida (Opus como "novo Sonnet")

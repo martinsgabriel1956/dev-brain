@@ -3,8 +3,8 @@ type: concept
 title: "Strategy Pattern"
 aliases: ["strategy", "padrão estratégia"]
 date_created: 2026-05-05
-date_updated: 2026-08-06
-source_count: 3
+date_updated: 2026-08-11
+source_count: 4
 tags: [design-patterns, behavioral, strategy, gof, open-closed, polimorfismo]
 skill: tech-mentor-backend
 status: stable
@@ -86,3 +86,4 @@ Implementação direta do [[open-closed-principle]]: a classe `Commuter` está f
 - [[sources/design-pattern-strategy]]
 - [[wiki/sources/principios-solid-ilustrados]] — mesma solução (objeto injetado que se auto-valida/processa) aplicada ao exemplo de processador de pagamentos
 - [[wiki/sources/seis-design-patterns-mais-usados-na-pratica]] — analogia das opções de rota do GPS; exemplo de validação de formulário por campo (CPF, telefone, senha); regra prática de quando usar classe (estado/múltiplos métodos) vs. função isolada (operação simples)
+- [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — Strategy aplicado a múltiplos gateways de pagamento (Stripe, Abacate Pay) por uma IA em modo plan: interface `PaymentStrategy` com tipos agnósticos (sem importar SDK direto), payment context que carrega a strategy correspondente por rota — inclui a motivação de tolerância a falhas (trocar de provedor se um cair)

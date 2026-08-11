@@ -4,8 +4,8 @@ title: "Lucas Montano"
 aliases: ["Lucas Montano"]
 date_created: 2026-07-03
 date_updated: 2026-08-11
-source_count: 9
-tags: [criador-de-conteudo, ia, carreira, financas-pessoais, saas, growth]
+source_count: 11
+tags: [criador-de-conteudo, ia, carreira, financas-pessoais, saas, growth, git]
 skill: tech-mentor-ai
 status: stub
 ---
@@ -30,9 +30,15 @@ Abre uma "nova temporada" do canal reagindo ao layoff de 20-30 mil pessoas na Or
 
 Também reage ao artigo *"How to recognize the potential in engineers"* de [[wiki/entities/gregor-ojstersek|Gregor Ojstersek]], tentando "validá-lo em código" — ver [[wiki/sources/potencial-programador-atitude-mindset]]. Concorda que atitude e mindset importam, mas discorda da ênfase: na ponderação dele a tech skill segue com o maior peso ("não preciso de um monte de coach no meu time, preciso de gente que entrega também"), embora reforce o ownership prático de se desbloquear sozinho e o anti-padrão de sugerir melhoria sem implementá-la — ver [[wiki/concepts/atitude-mindset-vs-tech-skill]].
 
+Também reage à repercussão do post de [[wiki/entities/uncle-bob]] sobre não ler mais código de agentes — ver [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]]. Declara-se alinhado com Uncle Bob ("a revisão de código morreu quando começamos a produzir 10.000 linhas/dia") e revela sua própria prática de *push force* direto em produção (SSH na VPS + Claude Code, caso do Persoa), aceitando downtime quando o custo é baixo. Propõe uma estratificação do [[wiki/concepts/code-review|code review]] por porte de empresa: em projeto solo, revisar linha a linha é red flag (falta [[wiki/concepts/quality-gate|quality gate]] no pipeline); em time grande, ele ainda revisa PR — não por desconfiança, mas por contexto (arquitetura, padrões, requisitos), testando localmente cada PR. Ancora a diferença no [[wiki/concepts/bus-factor|bus factor]]: empresa grande prefere processos/substituibilidade a accountability individual. Mesmo vídeo traz bloco patrocinado da [[wiki/entities/hostinger]] (plano KVM2, cupom "Lucas Montano").
+
+Também mantém uma série sobre **Git** no canal, continuação do vídeo "Git Flow é uma farsa" — ver [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]]. Nele entrega a "solução" prometida mas defende que **não existe processo universal**: enquadra o hype de [[wiki/concepts/git-flow|Git Flow]] como [[wiki/concepts/cargo-cult-tecnologico|cargo cult]] elevado a "padrão industrial" por influenciadores ("modificadores de cultura"), e o núcleo do vídeo é [[wiki/concepts/maturidade-tecnica|maturidade]] — buscar princípios e adaptar-se ao processo da empresa. Sua solução para **times pequenos** (usada por 4 anos na consultoria, admitidamente não-escalável) é um fluxo [[wiki/concepts/trunk-based-development|só-`main`]] com [[wiki/concepts/ci-cd|single command deploy]], um dono por entrega, e integração por [[wiki/concepts/rebase-vs-merge|rebase]] (evitando o "subway train from hell" e gerando fast-forward merges). Nesse vídeo se identifica na fala como "Lucas Badico TV" (provável garble da transcrição auto-gerada; atribuição a Lucas Montano por convergência de sinais — vídeo anterior de Git Flow, ensino de Golang, membership, fechamento da própria empresa ~2023).
+
 ## Key Sources
 
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]]
+- [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] — continuação de "Git Flow é uma farsa"; maturidade sobre processo e o rebase-flow só-`main` para times pequenos
+- [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — reação ao post de Uncle Bob; push force em prod; estratificação do code review por porte de empresa (accountability × substituibilidade)
 - [[wiki/sources/potencial-programador-atitude-mindset]] — reação ao artigo de Gregor Ojstersek sobre potencial de engenheiros; atitude/mindset vs. peso técnico
 - [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] — layoff da Oracle como gancho para ensinar blueprint de agente autônomo de produção
 - [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] — reação ao Claude Tag da Anthropic e à tese dos "três paradigmas de interface de LLM" de Andrej Karpathy

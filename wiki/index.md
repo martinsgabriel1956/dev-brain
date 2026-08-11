@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-08-10
+date_updated: 2026-08-11
 ---
 
 
@@ -20,6 +20,11 @@ date_updated: 2026-08-10
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] | Canal de negócios (autor não identificado) usa o lançamento do **Opus 5** da Anthropic como aula de **ancoragem de preço**: o Opus "parece barato" porque é ancorado ao **Fable** (premium caro), não ao Sonnet — a mesma jogada do iPhone Pro Max. Motivada por pressão do mid-tier (Kimi K3 US$ 0,92 vs Fable US$ 2,13 no Cline; Grok 4.5). Conclusão de posicionamento: o **Opus virou o "novo Sonnet"**, o Fable é a nova âncora, e o tier barato (Haiku) está sendo abandonado para open source a ~1/10 do preço. Moral: só se "brinca com percepção de valor" em vendas quem também é bom tecnicamente — a época de "só lábia" acabou |
+| [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] | Augusto Galego: comandos básicos de shell que todo dev deve **reconhecer** (não decorar). Tese central — você precisa conhecê-los porque **é assim que as IAs manipulam seu computador**: a harness do Claude Code roda `cat`/`echo`/`grep`/`sed` nativos e envia o output ao servidor da Anthropic ("puro suco da harness"); e ~90% dos servidores rodam Linux/Unix (SSH, CI/CD). Cobre terminal, navegação (`pwd`/`ls`/`cd`/`mkdir -p`), leitura/escrita sem editor (`touch`/`echo >`/`>>`/`cat`), `cp`/`mv`/`rm -rf` (com aviso), variáveis de ambiente (`.env`/`export`/`.zshrc`), permissões (`chmod +x`/`sudo`), `grep -inr`, pipe operator (`\|`) e `sed`. Patrocínio Abacus |
+| [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] | Continuação de "Git Flow é uma farsa" (Lucas Montano): entrega a "solução" prometida mas defende que **não existe processo universal**. Enquadra o hype de Git Flow como **cargo cult** elevado a "padrão industrial" por influenciadores ("modificadores de cultura" — mesmo caso de squads-do-Spotify); núcleo do vídeo é **maturidade** (buscar princípios, adaptar-se ao processo da empresa). Sua solução para **times pequenos** (4 anos de uso, admitidamente não-escalável): fluxo **só-`main`** (trunk-based) com CI como **single command deploy** frictionless, um dono por entrega, e integração por **rebase** (evita o "subway train from hell", gera fast-forward merges). O rebase-flow depende de ownership centralizado → não escala (bus factor) |
+| [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] | Lucas Montano sobre a repercussão do post de Uncle Bob ("não leio mais o código dos meus agentes"): declara-se alinhado ("code review morreu quando começamos a produzir 10.000 linhas/dia") e revela sua prática de *push force* direto em prod (SSH+Claude Code na VPS). Tese central: estratificar o code review por **porte de empresa** — em projeto solo, revisar cada linha da IA é red flag (falta quality gate); em time grande, review sobrevive por **contexto** (arquitetura/padrões/requisitos) e pelo conflito accountability individual × substituibilidade (bus factor). Fecha com o comercial que vibe coda e "vira TI" e o Jira interno vibe-codado por um QA, revertido porque a manutenção consumia a capacidade do time. Cita Gergely Orosz (code review "desaparecendo") e Felipe Regazio ("business manda em TI") |
+| [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] | Vídeo (Verdent AI): o "erro nº 1" ao usar IA é deixá-la codar sem planejar — três correções demonstradas refatorando gateways de pagamento (Stripe/Abacate) com Strategy: prompt específico + contexto, modo plan (especificação revisável antes de codar) e skills (injeção de contexto contra alucinação e repetição) |
 | [[wiki/sources/potencial-programador-atitude-mindset]] | Lucas Montano "valida em código" o artigo de Gregor Ojstersek sobre potencial de engenheiros: atitude/mindset acima da tech skill, 3 traços (ownership, drive, team player), efeito multiplicador — mas conclui que na sua ponderação a tech skill segue dominante |
 | [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] | Bernardo Lobato: cache e buffer só têm em comum armazenar dados temporariamente — cache guarda cópias pela expectativa de **reutilização** (olha pro passado), buffer absorve **diferença de velocidade** produtor/consumidor e descarta após consumo (olha pro presente); mesma ideia do hardware (cache L1/L2/L3, buffer de I/O) à arquitetura distribuída (Redis, filas Kafka/SQS, streaming); buffer pool é cache apesar do nome |
 | [[wiki/sources/escalar-para-um-milhao-de-usuarios]] | Augusto Galego (inferido): aula gratuita reconstruindo o capítulo "de zero a milhões de usuários" de Alex Xu — desenho incremental guiado por SPOF/gargalo (1 servidor → banco → cluster+LB → réplicas write/read → cache → CDN → stateless+NoSQL de sessões → filas/workers → tooling → multi-região) |
@@ -271,6 +276,7 @@ date_updated: 2026-08-10
 | [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] | TI das Antigas: história do modelo relacional (Codd, IBM 1970) até hoje; ACID e CAP como decisão de negócio, não hype; números reais de instância única (conexões, volume, latência) para MySQL, PostgreSQL, Oracle, SQL Server, SQLite, Redis e MongoDB, com guia direto por cenário |
 | [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] | Aula de concurso público: SGBD, SGBDR vs. SGBD NoSQL, visão (view), quatro modelos NoSQL (chave-valor, documento, colunas, grafos), ACID, Teorema CAP com classificação CA/CP/AP por produto, e bloco de questões reais de bancas (CESPE, NC-UFPR, KIAC, IBADE, AOCP) com gabaritos |
 | [[wiki/sources/design-pattern-facade-renato-augusto]] | Renato Augusto: Facade via exemplo de e-commerce (OrderController → OrderFacade) — Controller não deve carregar fluxo/regra de negócio; defesa de que Facade não fere o SRP porque opera num nível de abstração diferente das classes que orquestra |
+| [[wiki/sources/design-pattern-decorator-renato-augusto]] | Renato Augusto: Decorator via pipeline de `ImageProcessor` (básico → marca d'água → resize) — adiciona comportamento por wrapping sem tocar na classe; ensina composição recursiva, ancora no Open/Closed Principle e contrasta com Chain of Responsibility (ordem não obrigatória) |
 | [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] | Cinco níveis de arquitetura frontend (camadas → modular → vertical slice → microfrontend baseado em rotas → microfrontends parciais distribuídos); demo prática Shell + React/Angular/Solid.js via Custom Events expõe o custo real de microfrontends parciais (performance, CI/CD fragmentado, versionamento, governança); tese central: a maioria das decisões saudáveis fica entre monolito modular e microfrontend baseado em rotas, não nos extremos |
 | [[wiki/sources/microsservicos-martin-fowler-james-lewis]] | James Lewis e Martin Fowler (25 mar 2014): artigo original que cunhou a definição de microsserviços — nove características comuns, "smart endpoints and dumb pipes" contra ESBs, Lei de Conway como razão para decompor por capacidade de negócio, Polyglot Persistence, Design for Failure (Simian Army, Circuit Breaker); os próprios autores recusam declarar microsserviços "o futuro" sem ressalvas |
 | [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]] | Linha do tempo da criptografia — cítala espartana e cifra de César (criatividade, não matemática) → Vigenère (polialfabética, "indecifrável" por 300 anos) → Enigma (quebrada por reuso de chave) → AES/RSA modernos (key distribution problem resolvido por par público/privado) → IND-CPA como modelo formal (César falha, preserva padrão de repetição) → ameaça quântica (Shor quebra RSA, Grover só acelera busca) → password hashing (salt, pepper, BCrypt EKS-Blowfish limitado a 72 chars, Argon2id em três fases) |
@@ -300,6 +306,7 @@ date_updated: 2026-08-10
 | [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] | Bernardo Lobato: cinco tecnologias fora do mainstream de hype que ainda sustentam sistemas críticos — SOAP (WSDL, contratos rígidos, NF-e), XML (auge corporativo pré-JSON), ESB (barramento central pré-microsserviços, "Erroneous Spaghetti Box"), jQuery ("write less, do more", ainda mantido em 2026) e COBOL (1959, sistema financeiro mundial, Pix, padrão atualizado em 2023); tese central: o ciclo de hype da comunidade não acompanha o ritmo real de obsolescência |
 | [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] | Vídeo "boteco de tecnologia": AI Gateway self-hosted ("Nine Router", nome não confirmado) via deploy de um clique na Hostinger — mapeia o modelo que o Claude Code "acha" que usa para qualquer outro provider (GLM, MiMo) e rotaciona múltiplas contas free tier quando uma esgota; teste ao vivo mostra "Token Saver" piorando consumo (705k → 2,2M tokens de input) num caso Ruby on Rails; autor reconhece risco de banimento por detecção de abuso em contas free tier |
 | [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] | Mano Davin, 15 dias após lançar o Find My SaaS: 12 mil usuários e 646 SaaS cadastrados via Google Analytics, R$ 4.819 de faturamento orgânico (boost pago, sem tráfego pago), 230 mil+ requisições numa VPS de 1 vCPU/4GB sem Kubernetes nem microsserviços, 157 tentativas maliciosas bloqueadas pelo Cloudflare, pentest voluntário encontra 12 vulnerabilidades incl. escopo OAuth aceito sem validação via URL; cronologicamente anterior ao incidente de SYN flood em [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]] |
+| [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] | Por que uns vibe codam um jogo em 1 prompt e outros em 8? Testando os casos virais (snowboarder test one-shot com Opus 5/Fable 5 vs. golfe do ThePrimeagen em 8 prompts/~72M tokens), o autor replica um MVP de golfe na Unreal com o modo agente do ChatGPT em 3 prompts: a diferença é conhecimento de domínio + bom senso no prompt + colocar o agente em loop, não o modelo. Segunda metade: framework de estágios de maturidade de produto (0-5) e o gap 4→5 como unit economics (CAC/leads frios), não técnica |
 
 ## Concepts
 
@@ -468,6 +475,8 @@ date_updated: 2026-08-10
 | [[wiki/concepts/ltv-cac]] | Não investir em aquisição sem saber o LTV — tráfego "orgânico sintético" também tem custo |
 | [[wiki/concepts/marketing-organico-viral]] | Sketch de produto que viraliza sem parecer propaganda — build in public deixou de ser pré-requisito |
 | [[wiki/concepts/especialista-de-powerpoint]] | Quem nunca lançou nada dando conselho de escala e feature — filtrar feedback de quem não tem execução real por trás |
+| [[wiki/concepts/estagios-de-maturidade-de-produto]] | Framework 0-5 (ideia validada → estranho usa → R$1k → recorrência → R$5k/mês → US$100k); gargalo da maioria não é técnica, é definição de produto; gap 4→5 é unit economics |
+| [[wiki/concepts/canais-de-distribuicao]] | Meios recorrentes pelos quais estranhos chegam ao produto (YouTube, Instagram, SEO, afiliados); pré-requisito da recorrência; tipo de lead (quente/frio) afeta o CAC |
 
 ### Qualidade de Software com IA
 
@@ -524,6 +533,7 @@ date_updated: 2026-08-10
 | [[wiki/concepts/paradoxo-da-aceleracao]] | Faros AI: velocidade individual sobe muito com IA, throughput do sistema quase não muda — o gargalo migra da escrita para a revisão (+91% no code review) |
 | [[wiki/concepts/ia-como-amplificador]] | A IA amplifica o contexto e o critério existentes, sem julgamento próprio: júnior em tarefa simples +26–56%, sênior em legado zero/negativo |
 | [[wiki/concepts/output-vs-outcome]] | Métricas de output (volume, PRs) são infladas pela IA independente de qualidade; só outcome (bug rate, ciclo de review) revela a verdade |
+| [[wiki/concepts/ancoragem-de-preco]] | Apresentar uma oferta premium cara (âncora) para fazer o produto-alvo parecer barato — como a Anthropic ancorou o Opus 5 ao Fable; técnica de precificação para serviços/produtos |
 
 ### Token Economics & Custo
 
@@ -687,6 +697,12 @@ date_updated: 2026-08-10
 | [[wiki/concepts/ios]] | Mobile exclusivo Apple — estável e curado, mas altamente restritivo a customização e sideload |
 | [[wiki/concepts/unix]] | Ancestral multiusuário/multitarefa dos anos 60 — domínio de bancos e centros de pesquisa, licenciamento caro |
 | [[wiki/concepts/bsd]] | Família derivada do Unix de Berkeley — infra/embarcados, citado em PS4/PS5 e na CDN da Netflix |
+| [[wiki/concepts/comandos-basicos-linux]] | Conjunto mínimo de comandos de shell a **reconhecer** (não decorar) — o mesmo que a harness de IA roda por baixo dos panos; tabela de referência rápida |
+| [[wiki/concepts/shell-terminal]] | Interface de texto para operar a máquina sem GUI — canônica em SSH, CI/CD e harnesses de IA; `.zshrc`/`.bashrc` para config persistente |
+| [[wiki/concepts/permissoes-unix]] | `rwx` para dono/grupo/outros; `chmod +x` resolve "permissão negada" ao executar script; `sudo` roda como super user |
+| [[wiki/concepts/variaveis-de-ambiente]] | `.env` (arquivo oculto), `export VAR=v` na sessão, `.zshrc`/`.bashrc` para persistir; `$VAR` lê o valor |
+| [[wiki/concepts/pipe-operator]] | `\|` conecta comandos: stdout de um vira stdin do próximo (`cat f \| grep x`); base da composição no shell |
+| [[wiki/concepts/git]] | Guarda-chuva de controle de versão; `git init` cria a pasta oculta `.git` com o estado do repositório |
 
 ### Fundamentos de CS
 
@@ -1023,6 +1039,8 @@ date_updated: 2026-08-10
 | [[wiki/concepts/testar-proprio-codigo]] | Testar só o caminho feliz é concordar com a própria opinião — testes automatizados cobrem erro e happy path |
 | [[wiki/concepts/atomic-commits]] | Commit atômico = alteração + teste que a valida juntos — unidade funcional, não diário de mudanças |
 | [[wiki/concepts/rebase-vs-merge]] | Rebase reescreve SHAs para um histórico linear (ótimo para bisect/blame, perigoso em branch compartilhada); merge preserva o histórico real com um commit de dois pais — regra prática: rebase local antes do PR, merge para integrar |
+| [[wiki/concepts/git-flow]] | Modelo de branching de Driessen (2010) com `develop`/`release`/`hotfix` de vida longa — criticado por Lucas Montano como "farsa"/cargo cult elevado a "padrão industrial" por influenciadores; muito mais contras que prós para times pequenos, inadequado para deploy contínuo |
+| [[wiki/concepts/trunk-based-development]] | Uma única branch de vida longa (`main`) como fonte de verdade, contraposta ao Git Flow; variante rebase-flow de Lucas Montano (só-`main` + single command deploy + dono por entrega + rebase → fast-forward) funciona em times pequenos mas não escala (ownership centralizado = bus factor) |
 | [[wiki/concepts/checklist-primeiro-dia-projeto]] | Seis etapas do dia 1 de uma codebase nova — deploy, ORM/migrations e testes resolvidos antes de qualquer feature, quando o custo de errar ainda é baixo |
 | [[wiki/concepts/escolha-de-stack]] | Aprender vs. monetizar como eixo central da escolha de stack; framework batteries-included acelera SaaS solo |
 | [[wiki/concepts/triade-retorno-risco-liquidez]] | Retorno, risco e liquidez nunca são bons ao mesmo tempo — modelo de investimentos generalizado para qualquer decisão da vida |
@@ -1239,6 +1257,7 @@ date_updated: 2026-08-10
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/verdent-ai]] | IDE com IA nativa (beta) — múltiplos agentes paralelos, modo plan com diagrama Mermaid e skills (inclui Skill Creator); usada para demonstrar boas práticas de uso de agentes |
 | [[wiki/entities/gregor-ojstersek]] | Autor da newsletter Engineering Leadership (Substack) e do livro *The Multiplier Mindset* — tese de que o potencial de engenheiros se reconhece por atitude/mindset, não tech skill atual |
 | [[wiki/entities/lucas-faria]] | Autor do artigo "sete conceitos que mais caem em entrevistas de System Design Tier S" — base da série de vídeos de System Design de Pedro Camaforte (identidade/URL não confirmadas na fonte) |
 | [[wiki/entities/principles-of-product-development-flow]] | Livro (Reinertsen, atribuição externa) que aplica teoria de filas ao desenvolvimento — origem da regra de nunca alocar 100% da capacidade |
@@ -1248,7 +1267,8 @@ date_updated: 2026-08-10
 | [[wiki/entities/john-resig]] | Criador do jQuery (2006) — resolveu a fragmentação de DOM/JavaScript entre navegadores |
 | [[wiki/entities/pulsar-saas]] | SaaS pessoal ligado a um desafio de estudos gratuito de 100 dias no Instagram — caso real de autopentest guiado por IA |
 | [[wiki/entities/geraldo-alcantara]] | Pentester e criador de conteúdo — demonstrações de exploração em ambiente controlado, incluindo cadeia completa contra loja construída via vibe coding |
-| [[wiki/entities/the-primeagen]] | Engenheiro de software sênior na Netflix, criador de conteúdo (YouTube, em inglês) — reagiu a um vídeo de Theodor defendendo programar "do jeito difícil" |
+| [[wiki/entities/the-primeagen]] | Engenheiro de software sênior na Netflix, criador de conteúdo (YouTube, em inglês) — reagiu a um vídeo de Theodor defendendo programar "do jeito difícil"; criou um jogo com Opus 5 em 8 prompts/~72M tokens |
+| [[wiki/entities/unreal-engine]] | Game engine da Epic Games — usada para vibe codar um MVP de jogo de golfe com câmera híbrida 2D/3D via agente do ChatGPT |
 | [[wiki/entities/theodor]] | Dev/criador de conteúdo construindo jogo indie do zero sem engine — identidade exata não confirmada na fonte |
 | [[wiki/entities/oracle]] | Empresa de software corporativo (~400bi de market cap) — demitiu 20-30 mil pessoas via e-mail automático, motivo alegado é substituição de DBAs por agente de IA piloto há 8+ meses |
 | [[wiki/entities/otavio-lemos]] | Professor (UNIFESP/USP/UCI) e criador de conteúdo — autor de *Arquitetura Limpa na Prática*, tutorial de Clean Architecture com estudo de caso completo em TypeScript |

@@ -3,8 +3,8 @@ type: concept
 title: "Código Legado e IA"
 aliases: ["legacy code ia", "migracao legado ia", "modernizacao ia"]
 date_created: 2026-06-02
-date_updated: 2026-08-03
-source_count: 3
+date_updated: 2026-08-11
+source_count: 4
 tags: [legado, migracao, ia-para-devs, spec-driven, modernizacao]
 skill: tech-mentor-ai
 status: draft
@@ -67,3 +67,4 @@ Para esses casos, a abordagem de **reconstruir a partir da documentação oficia
 - [[wiki/sources/formacao-ia-devs-aula-02-mercado-perfil-profissional]]
 - [[wiki/sources/formacao-ia-devs-aula-06-qa]]
 - [[wiki/sources/large-scale-vs-complex-architecture]] — descreve a origem histórica (migração multi-plataforma sem desligamento completo) do tipo de legado enterprise que este conceito endereça
+- [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — cenário de abertura: refatorar código legado desorganizado com IA; falha comum é pedir sem planejar e sem contexto, levando a quebra de testes por dependências mal entendidas

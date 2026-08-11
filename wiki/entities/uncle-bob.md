@@ -4,7 +4,7 @@ title: "Uncle Bob (Robert C. Martin)"
 aliases: ["uncle bob", "robert c. martin", "robert cecil martin"]
 date_created: 2026-07-03
 date_updated: 2026-08-11
-source_count: 9
+source_count: 10
 tags: [clean-code, clean-architecture, solid, autor, quality-gate]
 skill: tech-mentor-backend
 status: stub
@@ -58,6 +58,12 @@ Oitava menção, em [[wiki/sources/principios-solid-ilustrados]]: segundo a font
 
 **Nota de verificação**: atribuição não cross-checada contra a fonte primária (o paper original "The Dependency Inversion Principle", C++ Report, 1996) — tratar como não confirmado até verificação.
 
+## Terceiro Vídeo de Reação (Lucas Montano): Treta com "Fernando" e a Origem nos Anos 60
+
+Nona menção, em [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]]: [[wiki/entities/lucas-montano]] reage a mais um post de Uncle Bob sobre não ler código de agentes — desta vez com o elemento novo de uma treta pública no X com um "Fernando" que o cutucou ("tu sabe o que é estar *on call* ou só sabe escrever livros?"). Uncle Bob respondeu que foi líder técnico e passou muitos anos de plantão, e reforçou que começou a programar no final dos anos 60 — dado que Montano usa para reforçar a mesma tese de [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] ("o direito de não ler código é conquistado"). Novos elementos desta fonte: (1) a citação *"Code quality still matters. It matters a lot. I verify it by using tools that measure."*; (2) a observação de que os projetos no GitHub de Uncle Bob parecem *play projects* (ex.: "Missile Command dual platform"), o que reduz o risco de não ler código porque nada crítico vai pra produção; (3) o argumento "ele nunca falou sobre código, falou sobre **regras** mensuráveis". Não fica claro se é o mesmo post das menções anteriores ou um distinto na mesma janela — provavelmente posterior.
+
+**Nota de verificação**: mesma cautela de sempre — a fonte não cita URL nem data, e as citações textuais são reportadas de segunda mão.
+
 ## Key Sources
 
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
@@ -69,3 +75,4 @@ Oitava menção, em [[wiki/sources/principios-solid-ilustrados]]: segundo a font
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — post recente sobre não ler mais código de agentes, e o harness (testes, Gherkin, QA, métricas, mutation testing) que sustenta essa afirmação
 - [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — segundo vídeo sobre o mesmo tema, detalhando quatro gates de CI concretos (CCN, cobertura+mutation, tamanho de módulo, dependency structure)
 - [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — terceiro vídeo de reação (Galego): concorda que as métricas são objetivas mas insuficientes, e propõe a matriz risco × dificuldade para migrar de "reviso tudo" para "não reviso"
+- [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — vídeo de Lucas Montano: treta com "Fernando" sobre estar on call, origem nos anos 60, citação "code quality still matters... tools that measure", projetos GitHub como play projects

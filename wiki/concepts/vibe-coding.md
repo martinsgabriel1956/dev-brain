@@ -3,8 +3,8 @@ type: concept
 title: "Vibe Coding"
 aliases: ["vibe coding", "vibe-coding", "coding por vibração", "agentic coding", "orquestração de agentes"]
 date_created: 2026-04-23
-date_updated: 2026-08-06
-source_count: 14
+date_updated: 2026-08-11
+source_count: 16
 tags: [vibe-coding, agentes-ia, produtividade, divida-cognitiva, ai-brainfry, paralelismo-cognitivo]
 skill: tech-mentor-ai
 status: stable
@@ -125,9 +125,14 @@ Citado como exemplo de hype tecnológico em formação (junto com MCP) no moment
 
 [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] é um relato de primeira pessoa onde a própria autora enquadra explicitamente sua escolha metodológica como o oposto de vibe coding: em vez de pedir para o Claude Code "invadir o sistema" e aceitar o relatório, ela documenta e busca entender cada verificação de segurança encontrada, tratando o agente como professor/guia. Reforça o ponto já central nesta página — [[wiki/sources/vibe-coding-limites-maturidade-profissional|segurança é justamente uma das áreas onde vibe coding puro falha]] — mas do lado de quem *evitou* a falha ativamente, não do lado de um incidente já ocorrido: a defesa prática usada foi contexto extenso (documentação do sistema), escopo pequeno por sessão, e restrições explícitas sobre o que a IA podia decidir sozinha.
 
+## A Armadilha de Manutenção do Vibe Code por Não-Devs
+
+[[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] traz duas anedotas-tese sobre o que acontece quando quem não é da área vibe coda algo que "fica bom": ele passa a mantê-lo. No caso relatado, um responsável por QA (não-dev) vibe-codou um Jira interno melhor que Jira/Linear/Trello (março/2026); ~4 meses depois o time voltou às ferramentas de mercado porque a manutenção da ferramenta interna estava consumindo a capacidade de trabalho deles. É a manifestação concreta, no eixo *manutenção*, do limite já central nesta página ("O Limite Não É Técnico, É de Julgamento"): software vibe-codado que sai do estágio de MVP/protótipo sempre passa a exigir melhorias e manutenção contínuas — e especializar um não-dev em manter software é, na prática, reinventar um time de TI. A mesma fonte usa isso para argumentar que "o dev ainda vai ser o cara que vai vibe codar", e que só faz sentido substituir dev por IA quando o *supply* já está suprido (o gargalo virou vender, não produzir).
+
 ## Key Sources
 
 - [[sources/divida-cognitiva-ai-brainfry]]
+- [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — armadilha de manutenção do vibe code por não-devs (Jira interno revertido); "quem não é da área vira TI"
 - [[sources/ia-salario-ou-carga-de-trabalho]]
 - [[sources/apagao-de-seniors-vibe-coding]]
 - [[sources/roadmap-dev-senior-2026]] — pilar 5: ciclo de degradação via IA → ver [[concepts/ia-ciclo-dependencia]]
@@ -144,6 +149,7 @@ Citado como exemplo de hype tecnológico em formação (junto com MCP) no moment
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — autopentest guiado como contraexemplo deliberado ao vibe coding em segurança
 - [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] — cadeia de ataque completa (pentest ofensivo, não relato de processo) contra uma loja construída inteiramente via vibe coding (Cursor, Lovable, Claude Code); reforço estatístico externo ao ponto já central desta página ("segurança sem brechas exploráveis" como algo que a IA não supre sozinha)
 - [[wiki/sources/cinco-escolas-programacao-com-ia]] — distinção de Antirez entre "automatic programming" e vibe coding, formulada de forma independente ao migrar de posição anti-agente para uso intensivo de agentes
+- [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — caso concreto de vibe coding de jogo (golfe na Unreal) com agente em full access; a diferença entre "1 prompt" e "8 prompts" é conhecimento de domínio + bom senso no prompt + colocar o agente em loop, não o modelo. Traz também um contraexemplo pontual ao "segurança nunca é padrão": o agente projetou a integração jogo↔celular com superfície de rede minimizada sem ser pedido (ver [[wiki/concepts/agent-containment]])
 
 ## Distinção de Antirez: "Automatic Programming" vs. Vibe Coding
 

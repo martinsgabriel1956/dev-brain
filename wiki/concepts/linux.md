@@ -3,8 +3,8 @@ type: concept
 title: "Linux"
 aliases: ["distro Linux", "GNU/Linux", "Linux kernel"]
 date_created: 2026-07-20
-date_updated: 2026-07-20
-source_count: 1
+date_updated: 2026-08-11
+source_count: 2
 tags: [sistema-operacional, linux, servidor, open-source, cs-fundamentals]
 skill: cs-fundamentals
 status: stub
@@ -33,6 +33,11 @@ O Linux é um exemplo canônico de kernel monolítico que suporta módulos carre
 
 Linux é um clone de [[wiki/concepts/unix]] construído do zero (não deriva de código Unix original), diferente do [[wiki/concepts/bsd]], que é um descendente direto do código-fonte Unix de Berkeley.
 
+## Comandos como Interface de Trabalho (e de Agentes)
+
+Segundo [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]], conhecer os comandos básicos de Linux importa por dois motivos práticos: ~90% dos servidores rodam Linux/Unix (operados por [[wiki/concepts/ssh|SSH]] e pipelines de [[wiki/concepts/ci-cd|CI/CD]]), e as [[wiki/concepts/harness|harnesses]] de IA manipulam a máquina rodando esses mesmos comandos nativos. Ver [[wiki/concepts/comandos-basicos-linux]] e [[wiki/concepts/shell-terminal]].
+
 ## Key Sources
 
 - [[wiki/sources/8-sistemas-operacionais-explicados]] — panorama comparativo de propósito e mercado
+- [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — comandos básicos de shell e por que devs precisam reconhecê-los na era dos agentes

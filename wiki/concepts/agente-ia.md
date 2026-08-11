@@ -3,8 +3,8 @@ type: concept
 title: "Agente de IA"
 aliases: ["agente", "AI agent", "agentes de ia"]
 date_created: 2026-05-18
-date_updated: 2026-08-06
-source_count: 4
+date_updated: 2026-08-11
+source_count: 5
 tags: [agentes-ia, llm, llmops, automacao]
 skill: tech-mentor-ai
 status: draft
@@ -64,3 +64,4 @@ Reflete que ainda não existe vocabulário maduro para descrever as relações d
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
 - [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] — blueprint de 5 peças + 4 componentes para agentes orientados a evento em produção
+- [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — modo agente do ChatGPT (com full access ao computador) fazendo setup, instalação de engine, escrevendo o próprio script de execução e testando o jogo sozinho; atritos triviais (falta de Git, login manual na Epic Games) ainda exigem humano

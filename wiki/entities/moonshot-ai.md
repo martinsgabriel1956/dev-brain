@@ -3,8 +3,8 @@ type: entity
 title: "Moonshot AI"
 aliases: ["Moonshot", "Kimi"]
 date_created: 2026-07-21
-date_updated: 2026-07-31
-source_count: 2
+date_updated: 2026-08-11
+source_count: 3
 tags: [moonshot, kimi, china, llm, open-source, organização]
 skill: tech-mentor-ai
 status: stub
@@ -26,7 +26,12 @@ Diferente de labs fechados (OpenAI, Anthropic), a Moonshot publica não só o mo
 
 [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] recomenda o Kimi como opção de "fallback" para tarefas simples/em background, citado ao lado do Sonnet e do DeepSeek como boa relação custo-benefício, e usado como exemplo na categoria "balanceado" de um roteador customizado — ver [[wiki/concepts/roteamento-automatico-de-modelo]].
 
+## Kimi K3 como Pressão de Preço no Mid-Tier
+
+[[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] cita um benchmark de custo do Cline (antes do lançamento do Opus 5): na mesma task, o **Kimi K3 custou US$ 0,92** contra **US$ 2,13 do Fable** ([[wiki/entities/anthropic]]) — com a ressalva de que o Fable foi mais rápido e gastou menos token. Essa pressão por baixo no *mid-tier* (junto ao [[wiki/entities/xai|Grok 4.5]]) é apresentada como o motivo pelo qual a Anthropic recorreu à [[wiki/concepts/ancoragem-de-preco|ancoragem de preço]].
+
 ## Key Sources
 
 - [[wiki/sources/kimi-k3-china-mercado-ia-open-source]]
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — Kimi como modelo de fallback recomendado por custo-benefício
+- [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — Kimi K3 mais barato que o Fable em benchmark de custo (Cline)

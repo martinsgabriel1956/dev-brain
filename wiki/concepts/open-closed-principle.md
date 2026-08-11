@@ -61,3 +61,4 @@ Via [[wiki/sources/solid-principles-in-pictures-ugonna-thelma]]: "classes devem 
 - [[sources/design-pattern-strategy]]
 - [[wiki/sources/principios-solid-ilustrados]]
 - [[wiki/sources/solid-principles-in-pictures-ugonna-thelma]]
+- [[wiki/sources/design-pattern-decorator-renato-augusto]] — OCP como justificativa direta do [[wiki/concepts/decorator-pattern|Decorator]]: estender por wrapping em vez de modificar a classe em produção

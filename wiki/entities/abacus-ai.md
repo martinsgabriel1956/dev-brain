@@ -4,7 +4,7 @@ title: "Abacus.AI"
 aliases: ["Abacus", "Abacus AI"]
 date_created: 2026-07-31
 date_updated: 2026-08-11
-source_count: 3
+source_count: 4
 tags: [abacus, model-routing, ai-gateway, ferramenta, cli, agent-farm]
 skill: tech-mentor-ai
 status: stub
@@ -36,3 +36,4 @@ Segundo [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] (també
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]]
 - [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] — Multi-Engine Agent Farm (ZP Agent), CLI própria, chat multi-modelo
 - [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — patrocínio: Custom Router roteando entre Fable/GPT 5.6 Sol/Gemini 3.5/Química por dificuldade/velocidade, plugável no Claude Code/OpenCode
+- [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — patrocínio: agregador de múltiplas IAs (GPT 5.5, Claude Opus 4.8, Fable 5) em subscription única "ZI" por $10/mês, com IDE, Agent Sessions e hospedagem

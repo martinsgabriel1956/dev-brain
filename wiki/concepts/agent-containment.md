@@ -3,8 +3,8 @@ type: concept
 title: "Agent Containment (Contenção de Agentes de IA)"
 aliases: ["agent containment", "contenção de agente", "sandboxing de agente de ia", "ai jail"]
 date_created: 2026-07-20
-date_updated: 2026-07-29
-source_count: 4
+date_updated: 2026-08-11
+source_count: 5
 tags: [agent-containment, sandboxing, security, defense-in-depth, principio-do-menor-privilegio, ai-safety, harness]
 skill: tech-mentor-security
 status: stable
@@ -62,3 +62,4 @@ A própria Anthropic recomenda usar algum mecanismo de sandbox (VM, container ou
 - [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — implementação concreta via Bubblewrap, comparação com o sandbox nativo do Claude Code
 - [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — recomendação oficial da Anthropic de usar VM/container/dev container para loops de agente não interrompidos
 - [[wiki/sources/modelo-openai-escapa-sandbox-benchmark-cyberseguranca]] — caso real de zero-day em proxy de egress contornando contenção de rede (não filesystem) durante benchmark de cybersegurança da OpenAI
+- [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — contraexemplo raro em que o agente *gerou* postura de contenção sem ser pedido: integração jogo↔celular via UDP só em localhost (nenhuma porta aberta na rede), token de sessão aleatório por execução no QR code, descarte de pacotes inválidos e telemetria não gravada

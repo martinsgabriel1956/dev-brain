@@ -3,8 +3,8 @@ type: concept
 title: "Separação de Contextos"
 aliases: ["context separation", "context isolation", "sessões separadas"]
 date_created: 2026-05-04
-date_updated: 2026-06-01
-source_count: 3
+date_updated: 2026-08-11
+source_count: 4
 tags: [context-engineering, coding-agents, workflow]
 skill: tech-mentor-ai
 status: stable
@@ -58,3 +58,4 @@ Separação de contextos garante que sessões não se contaminem. [[memoria-de-l
 - [[sources/erros-workflow-research-plan-implement]]
 - [[sources/context-engineering-avancado-para-coding-agents]]
 - [[wiki/sources/context-engineering-codebases-grandes-rpi]] — memória de longo prazo como extensão natural da separação de contextos; sub-agentes como implementação técnica confirmada
+- [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — prática de iniciar um chat do zero (contexto zerado) para uma nova tarefa, evitando que a conversa anterior contamine a próxima

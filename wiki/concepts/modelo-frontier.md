@@ -3,8 +3,8 @@ type: concept
 title: "Modelos Frontier"
 aliases: ["frontier models", "modelos de ponta", "modelos comerciais avancados"]
 date_created: 2026-06-02
-date_updated: 2026-07-31
-source_count: 5
+date_updated: 2026-08-11
+source_count: 6
 tags: [modelos, frontier, llm, openai, anthropic, google]
 skill: tech-mentor-ai
 status: draft
@@ -62,3 +62,4 @@ Além dos modelos frontier de uso geral acima, surgiu em 2026 uma subclasse de m
 - [[wiki/sources/kimi-k3-china-mercado-ia-open-source]] — Kimi K3, 2,8T parâmetros, lançamento parcial
 - [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]] — subclasse de modelos frontier de cybersegurança bloqueados por risco de segurança nacional (Mitos, Fable 5, GPT 5.6)
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — Fable e Sol/GPT 5.6 como os dois modelos mais fortes no Artificial Analysis; dados de custo/velocidade comparativos entre modelos de fronteira e alternativas mais baratas
+- [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — reposicionamento da linha Anthropic: Fable como âncora premium, **Opus como "novo Sonnet"**, Grok 4.5 e Kimi K3 no mid-tier abaixo do Opus, tier barato (Haiku) sendo abandonado

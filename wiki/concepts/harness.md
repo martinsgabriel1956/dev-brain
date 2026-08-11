@@ -3,8 +3,8 @@ type: concept
 title: "Harness"
 aliases: ["AI harness", "harness de IA", "coding harness"]
 date_created: 2026-06-02
-date_updated: 2026-07-31
-source_count: 14
+date_updated: 2026-08-11
+source_count: 15
 tags: [harness, llm, tool-call, agente, context-engineering, erros-compostos, verificacao]
 skill: tech-mentor-ai
 status: stable
@@ -133,3 +133,4 @@ Dado de benchmark citado (sem número específico): o mesmo Claude Opus performa
 - [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — a própria linguagem como harness (Rust vs. Zig na migração do Ban: compilador memory-safe como sensor objetivo); harness fraco em testes e2e removidos fez erros se acumularem num loop criador
 - [[wiki/sources/loop-engineering-harness-e-a-frase-que-viralizou]] — corrige a leitura "loop engineering matou harness engineering": o loop contém o harness, não o substitui; três fatores que tornaram loops longos viáveis em 2026 (modelo, harness, estado persistente)
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — matemática de erros compostos (99%ⁿ), quatro mecanismos de mitigação (verificação, checkpoints, ferramentas, contexto limpo), caso Vercel (remoção de 80% das ferramentas), doze componentes do harness (sete documentados)
+- [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — a harness executa comandos de shell nativos (`cat`, `echo`, `grep`, `sed`) na máquina do usuário e envia o output ao servidor da Anthropic; "puro suco da harness"

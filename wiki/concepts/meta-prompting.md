@@ -3,8 +3,8 @@ type: concept
 title: "Meta-Prompting"
 aliases: ["meta prompting", "prompt template", "placeholder prompting"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 2
+date_updated: 2026-08-11
+source_count: 3
 tags: [prompt-engineering, meta-prompting, template, xml-markdown]
 skill: tech-mentor-ai
 status: draft
@@ -59,3 +59,4 @@ No [[wiki/concepts/plan-mode|plan mode]], o meta-prompting é usado para constru
 
 - [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
+- [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — o *Skill Creator*: uma [[wiki/concepts/skills-agente|skill]] que cria skills (lê seu próprio `SKILL.md` e roda scripts para gerar novas), exemplo direto de meta-prompting aplicado a harness

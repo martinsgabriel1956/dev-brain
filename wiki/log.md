@@ -2,6 +2,112 @@
 
 ---
 
+## [2026-08-11] ingest | Padrão de Projeto Decorator (Renato Augusto)
+
+**Fonte:** [[wiki/sources/design-pattern-decorator-renato-augusto]]
+**Skill carregada:** `tech-mentor-backend` (domínio: design patterns / arquitetura; referência `references/design-patterns.md`)
+
+**Arquivos criados:**
+- `raw/design-pattern-decorator-renato-augusto.md` — transcrição limpa e estruturada em MD (já em PT-BR, sem tradução necessária)
+- `wiki/sources/design-pattern-decorator-renato-augusto.md` — TL;DR, 7 claims, estrutura do exemplo, entidades, conceitos, perguntas em aberto, quotes
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/decorator-pattern.md` — `source_count` 3 → 4; nova seção "pipeline de processamento de imagem" com vínculo ao Open/Closed e contraste com Chain of Responsibility
+- `wiki/concepts/open-closed-principle.md` — Decorator como aplicação direta do OCP (estender por wrapping)
+- `wiki/concepts/proxy-pattern.md` — contraste Decorator vs. Proxy (mesmo wrapping, intenção diferente)
+- `wiki/concepts/design-patterns.md` — Decorator via pipeline de `ImageProcessor` adicionado às Key Sources
+- `wiki/entities/renato-augusto.md` — `source_count` 8 → 9; parágrafo sobre o vídeo de Decorator
+- `wiki/index.md` — nova linha em Sources
+
+**Notas:** (1) Já existiam `wiki/concepts/decorator-pattern.md` e `wiki/entities/renato-augusto.md` — a fonte foi tecida neles, sem criar duplicatas. (2) Equiparação Decorator ≈ Middleware registrada como aproximação didática, sem fonte primária. (3) Vídeo sem URL nem data de publicação.
+
+---
+
+## [2026-08-11] ingest | Comandos Básicos de Linux que Todo Dev Precisa Conhecer (Augusto Galego)
+
+**Fonte:** [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — vídeo introdutório de Augusto Galego sobre comandos básicos de shell. Tese pedagógica diferenciada: conhecê-los importa porque **é assim que as IAs manipulam o computador** (a harness roda `cat`/`echo`/`grep`/`sed` nativos e envia o output ao servidor da Anthropic) e porque ~90% dos servidores rodam Linux/Unix (SSH, CI/CD). Patrocínio Abacus.
+**Skill carregada:** `tech-mentor-infra`, de `/home/gabriel-martins/Documentos/skills/tech-mentor-infra/SKILL.md` (referência `references/linux-essentials.md`; domínio Linux/shell/CI-CD; secundário AI/harness em tags).
+
+**Páginas criadas:**
+- `raw/comandos-basicos-linux-todo-dev-precisa-conhecer-galego.md` — transcrição limpa e organizada em MD (PT-BR, sem tradução), bloco patrocinado Abacus sinalizado
+- `wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego.md` — TL;DR, 18 claims, entidades, conceitos, perguntas em aberto, quotes
+- `wiki/concepts/comandos-basicos-linux.md` — tabela de referência dos comandos + por que importa na era dos agentes
+- `wiki/concepts/shell-terminal.md` — terminal/shell como interface de trabalho (stub)
+- `wiki/concepts/permissoes-unix.md` — `rwx`, `chmod +x`, `sudo`, o erro "permissão negada" (stub)
+- `wiki/concepts/variaveis-de-ambiente.md` — `.env`, `export`, `.zshrc`/`.bashrc` (stub)
+- `wiki/concepts/pipe-operator.md` — `|` como composição stdout→stdin (stub)
+- `wiki/concepts/git.md` — guarda-chuva de controle de versão; `git init`/`.git` (stub)
+
+**Páginas atualizadas:**
+- `wiki/concepts/harness.md` — a harness executa comandos de shell nativos na máquina do usuário (source_count 14→15)
+- `wiki/concepts/tool-call.md` — tool calls de arquivo = comandos de shell executados pela harness (5→6)
+- `wiki/concepts/codigo-grepavel.md` — `grep -i`/`-n`/`-r` como mecanismo concreto de busca (1→2)
+- `wiki/concepts/ssh.md` — operar produção por comandos, não GUI (2→3)
+- `wiki/concepts/linux.md` — seção "comandos como interface de trabalho e de agentes" (1→2)
+- `wiki/concepts/unix.md` — `grep` de Thompson em uso cotidiano (2→3)
+- `wiki/entities/augusto-galego.md` — autoria confirmada (PWD "Augusto Galego") (9→10)
+- `wiki/entities/anthropic.md` — servidor destino do `cat` da harness (20→21)
+- `wiki/entities/abacus-ai.md` — patrocínio: agregador multi-IA (4)
+
+**Índice/Log:** adicionadas linha da fonte e 6 conceitos novos (seção Fundamentos de SO) ao `index.md`.
+
+**Notas/contradições:** número dos ~90% de servidores Linux citado de improviso, sem fonte — tratado como `[external]`. Nomes de modelo do bloco de patrocínio (GPT 5.5, Opus 4.8, Fable 5, $10/mês) tratados como material comercial, não benchmark.
+
+---
+
+## [2026-08-11] ingest | Code Review Morreu? Uncle Bob, Push Force pra Prod e Business × TI (Lucas Montano)
+
+**Fonte:** [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — vídeo de Lucas Montano reagindo à repercussão no X do post de Uncle Bob ("não leio mais nenhuma linha do código dos meus agentes"). Declara-se alinhado, revela prática de *push force* direto em prod (SSH+Claude Code na VPS), e propõe estratificar o code review por porte de empresa. Cita Gergely Orosz (code review "desaparecendo"), Felipe Regazio ("business manda em TI"), e duas anedotas-tese sobre vibe coding por não-devs.
+**Skill carregada:** `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/SKILL.md` (domínio LLM/agentes/code review na era da IA; secundário leadership/quality em tags).
+
+**Páginas criadas:**
+- `raw/code-review-morreu-uncle-bob-push-force-prod-lucas-montano.md` — transcrição limpa e estruturada em MD (PT-BR, sem tradução), bloco patrocinado Hostinger sinalizado
+- `wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano.md` — TL;DR, 13 claims, entidades, conceitos, perguntas em aberto, quotes
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/code-review.md` — `source_count` 15 → 16; nova seção "Estratificar por Porte da Empresa (Accountability × Substituibilidade)"
+- `wiki/concepts/quality-gate.md` — `source_count` 6 → 7; qualidade mensurável como substituto que "já surgiu" da revisão linha a linha
+- `wiki/concepts/bus-factor.md` — `source_count` 1 → 2; bus factor explica por que empresa grande rejeita accountability individual
+- `wiki/concepts/vibe-coding.md` — `source_count` 15 → 16; nova seção sobre a armadilha de manutenção do vibe code por não-devs (Jira interno revertido)
+- `wiki/entities/uncle-bob.md` — `source_count` 9 → 10; nona menção (treta com "Fernando", origem anos 60, citação "tools that measure", play projects)
+- `wiki/entities/lucas-montano.md` — `source_count` 9 → 10; autor do vídeo; push force em prod; estratificação por porte de empresa
+- `wiki/entities/gergely-orosz.md` — `source_count` 2 → 3; post sobre code review "desaparecendo"
+- `wiki/entities/hostinger.md` — `source_count` 4 → 5; quinto bloco patrocinado (plano KVM2, cupom Lucas Montano)
+- `wiki/index.md` — nova linha no topo de Sources
+
+**Notas:** Fonte de **altíssimo overlap** com o cluster já maduro sobre o mesmo post de Uncle Bob ([[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]], [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]], [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]]), então **nenhum conceito novo** foi criado — o valor foi conectar a fonte a esse cluster e registrar dois ângulos genuinamente novos: (1) a estratificação do code review por **porte de empresa** (accountability × substituibilidade via bus factor), complementando a estratificação por risco × dificuldade já documentada; (2) a **armadilha de manutenção** do vibe code por não-devs. Todas as citações textuais (Uncle Bob, Gergely, Regazio) são reportadas de segunda mão sem URL/data — mesma cautela de atribuição já registrada em `entities/uncle-bob`. Prática de push force em prod registrada como escolha consciente de baixo risco, em tensão explícita com a disciplina de migrations versionadas de [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]]. Nenhum link quebrado introduzido.
+
+---
+
+## [2026-08-11] ingest | Vibe Coding de Jogos: 1 Prompt vs. 8, e os Estágios de um Produto
+
+**Fonte:** [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]]
+**Skill carregada:** `tech-mentor-ai` (referência `references/ai/prompt-engineering.md`) — o eixo central é prompt engineering / vibe coding / loop agêntico; domínio secundário de produto/liderança (unit economics, canais) anotado nas tags.
+
+**Páginas criadas:**
+- `wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto.md` — replicação de MVP de golfe na Unreal com agente do ChatGPT; tese "1 vs. 8 prompts"; framework de estágios de produto
+- `wiki/concepts/canais-de-distribuicao.md` — meios recorrentes de aquisição (YouTube, Instagram, SEO, afiliados); pré-requisito da recorrência
+- `wiki/concepts/estagios-de-maturidade-de-produto.md` — framework 0-5 e o gap 4→5 como unit economics
+- `wiki/entities/unreal-engine.md` — game engine da Epic usada no experimento
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/vibe-coding.md` — `source_count` 14 → 15; caso de jogo + contraexemplo de segurança por padrão
+- `wiki/concepts/prompt-engineering.md` — `source_count` 6 → 7; "a diferença é o prompt, não o modelo"
+- `wiki/concepts/loop-engineering.md` — `source_count` 5 → 6; "1 prompt vira 20-30" via teste end-to-end
+- `wiki/concepts/agente-ia.md` — `source_count` 4 → 5; agente em full access; atritos triviais ainda exigem humano
+- `wiki/concepts/mvp.md` — `source_count` 5 → 6; MVP jogável por vibe coding
+- `wiki/concepts/agent-containment.md` — `source_count` 4 → 5; contenção *gerada* pelo agente (UDP localhost, token QR)
+- `wiki/concepts/ltv-cac.md` — `source_count` 3 → 4; gap 4→5 = manter CAC baixo com leads frios
+- `wiki/concepts/visao-de-negocio-do-desenvolvedor.md` — `source_count` 1 → 2; serviço virando produto; demanda por software crescendo
+- `wiki/entities/openai.md` — `source_count` 10 → 11; ChatGPT modo agente + voice mode "Mega Brain"
+- `wiki/entities/anthropic.md` — `source_count` 19 → 20; Opus 5 / Fable 5 nos casos virais de one-shot
+- `wiki/entities/the-primeagen.md` — `source_count` 1 → 2; jogo com Opus 5 em 8 prompts / ~72M tokens
+- `wiki/index.md` — nova linha em Sources; 2 conceitos em "Produto & Lean Startup"; entidade Unreal Engine
+
+**Notas:** Contradição pontual registrada como open question — o agente gerou postura de contenção de rede razoável sem ser pedido, o que contrasta (não refuta) o padrão "segurança nunca é padrão" documentado em [[wiki/concepts/vibe-coding]]. Transcrição já em português, sem necessidade de tradução. Reaproveitou conceitos existentes (`ltv-cac`, `loop-engineering`, `visao-de-negocio-do-desenvolvedor`) em vez de duplicar. Nenhum link quebrado introduzido.
+
+---
+
 ## [2026-08-11] ingest | Potencial do Programador: Atitude e Mindset Acima da Tech Skill
 
 **Fonte:** [[wiki/sources/potencial-programador-atitude-mindset]]
@@ -6288,3 +6394,79 @@ Skill carregada: `tech-mentor-system-design`, lida de `/home/gabriel-martins/Doc
 **Notas:** Fonte canônica e didática, não original — quase todos os claims já existiam na wiki via [[wiki/sources/escalabilidade-vertical-horizontal-system-design]] e fontes irmãs. O ganho concentra-se em (1) criar a página autônoma de **single point of failure**, o conceito organizador que já era referenciado mas não existia, e (2) registrar a **narrativa incremental guiada por SPOF/gargalo** como o esqueleto do capítulo de Alex Xu. Contradição menor registrada como open question: a fonte chama a fila de jobs de "publisher/subscriber", quando tecnicamente é mais próxima de job queue / competing consumers — distinção já documentada em [[wiki/concepts/filas-e-workers]] e [[wiki/concepts/pub-sub]]. Nenhum link quebrado introduzido; a criação de `single-point-of-failure.md` resolve wikilinks que já apontavam para ela.
 
 **Notas:** A tese da fonte mapeia quase 1:1 sobre conceitos já existentes no wiki (esforço produtivo, ZDA, aprendizado passivo, dependência de IA), então o ganho novo concentra-se em nomear explicitamente a **dificuldade desejável** (termo acadêmico de Robert Bjork) como o mecanismo por trás de todos eles, e em criar a página de **atrofia cognitiva** como conceito autônomo (antes só existia a fonte `atrofia-cognitiva-ia-programacao`, que agora vira segunda fonte da página). Pergunta em aberto registrada: a afirmação de que delegar à IA causa atrofia é mecanística e plausível, mas a fonte não cita estudo empírico sobre magnitude/reversibilidade — candidata a triangulação com literatura de *cognitive offloading*. Nenhum link quebrado introduzido; a criação de `dificuldade-desejavel.md` e `atrofia-cognitiva.md` na verdade resolve wikilinks que já apontavam para elas.
+
+---
+
+## [2026-08-11] ingest | Extrair um Código Melhor dos Agentes de IA: Planejamento, Plan Mode e Skills
+
+Fonte: [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — transcrição de vídeo (português, sem tradução necessária) demonstrando na IDE **Verdent AI** três correções para extrair melhor código de agentes: prompt específico + contexto, modo plan e skills. Exemplo prático: refatorar dois gateways de pagamento (Stripe, Abacate Pay) num app Next.js com Strategy Pattern. Blocos de call-to-action/patrocínio da ferramenta condensados no raw.
+Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/SKILL.md` (domínio LLM/agentes/context engineering/prompt engineering).
+
+**Páginas criadas:**
+- `raw/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills.md` — transcrição limpa e estruturada em MD, blocos de divulgação sinalizados como condensados
+- `wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills.md` — TL;DR, 12 claims com confiança, entidades, conceitos, perguntas em aberto, quotes
+- `wiki/entities/verdent-ai.md` — nova entidade (stub); IDE com IA nativa usada na demonstração
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/plan-mode.md` — `source_count` 2 → 3; modo plan com diagrama Mermaid e "build" após revisão
+- `wiki/concepts/skills-agente.md` — `source_count` 7 → 8; skill como injeção de contexto anti-alucinação; Skill Creator
+- `wiki/concepts/strategy-pattern.md` — `source_count` 3 → 4; gateways de pagamento com tipos agnósticos e tolerância a falhas
+- `wiki/concepts/refatoracao.md` — `source_count` 4 → 5; refatoração conduzida por IA (ver ressalva de testes)
+- `wiki/concepts/alucinacao-llm.md` — `source_count` 2 → 3; alucinação de pacotes por treino em código público
+- `wiki/concepts/prompt-engineering.md` — `source_count` 7 → 8; especificidade + contexto vs. prompt genérico
+- `wiki/concepts/meta-prompting.md` — `source_count` 2 → 3; Skill Creator como meta-prompting
+- `wiki/concepts/separacao-de-contextos.md` — `source_count` 3 → 4; chat do zero para não contaminar tarefa
+- `wiki/concepts/degradacao-de-contexto.md` — `source_count` 3 → 4; "mais contexto nem sempre é melhor"
+- `wiki/concepts/codigo-legado-ia.md` — `source_count` 3 → 4; cenário de abertura (refatorar legado)
+- `wiki/concepts/design-patterns.md` — `source_count` 5 → 6; catálogo Refactoring Guru empacotado em skill
+- `wiki/entities/refactoring-guru.md` — `source_count` 1 → 2; URL de referência e `references/` da skill
+- `wiki/index.md` — nova linha no topo de Sources; nova entidade `verdent-ai` em Entities
+
+**Notas:** Fonte de alto overlap — quase todos os conceitos já eram páginas maduras (`plan-mode`, `skills-agente`, `strategy-pattern`, `prompt-engineering`, `separacao-de-contextos`, `degradacao-de-contexto`), então **nenhum conceito novo** foi criado; o único artefato novo é a entidade `verdent-ai`. O valor está em conectar a fonte a esse cluster de context engineering/uso de agentes e em registrar duas ressalvas: (1) o comportamento de "a IA pergunta em pontos ambíguos no modo plan" é atribuído à ferramenta e não é intrínseco ao plan-mode como documentado; (2) a validação da refatoração é visual/estrutural, sem testes automatizados verdes — em tensão com a exigência de cobertura de testes de [[wiki/concepts/refatoracao]]. Fonte de caráter demonstrativo/patrocinado (Verdent em beta); os recursos mostrados são padrões gerais de harnesses, não exclusivos da ferramenta. Nenhum link quebrado introduzido.
+
+## [2026-08-11] ingest | Git Flow é uma Farsa? A Solução, Maturidade e o Processo com Rebase (Lucas Montano)
+
+**Fonte:** [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]]
+**Skill carregada:** `tech-mentor-leadership` (domínio: processo de engenharia / Git / maturidade; secundário: `tech-mentor-infra` para CI/CD)
+
+**Arquivos criados:**
+- `raw/git-flow-farsa-solucao-maturidade-rebase-lucas-montano.md` — transcrição auto-gerada limpa e estruturada em MD (já em PT-BR, sem tradução necessária); jabá sinalizado como bloco condensado
+- `wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano.md` — TL;DR, 14 claims, entidades, conceitos, perguntas em aberto, quotes
+- `wiki/concepts/git-flow.md` — conceito novo (stub): o modelo e a crítica "farsa"/cargo cult
+- `wiki/concepts/trunk-based-development.md` — conceito novo (stub): branch única de vida longa e a variante rebase-flow de Montano
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/entities/lucas-montano.md` — `source_count` 10 → 11; parágrafo sobre a série de Git e o rebase-flow só-`main`
+- `wiki/concepts/rebase-vs-merge.md` — `source_count` 1 → 2; rebase como estratégia de integração de time (rebase-flow), disciplina e por que não escala
+- `wiki/concepts/cargo-cult-tecnologico.md` — `source_count` 4 → 5; variante de processo (Git Flow como "padrão industrial" de influenciador)
+- `wiki/concepts/maturidade-tecnica.md` — `source_count` 2 → 3; maturidade aplicada a decisões de processo (não existe resposta universal; adaptar-se à empresa)
+- `wiki/concepts/ci-cd.md` — `source_count` 8 → 9; CI como single command deploy frictionless para times pequenos; contraste com branch `dev` de vida longa
+- `wiki/concepts/atomic-commits.md` — `source_count` 3 → 4; um-arquivo-um-commit como facilitador de conflitos de rebase
+- `wiki/concepts/bus-factor.md` — `source_count` 2 → 3; ownership centralizado do rebase-flow como bus factor = 1 que impede escalar
+- `wiki/index.md` — nova linha no topo de Sources; dois conceitos novos (`git-flow`, `trunk-based-development`) em Concepts; `date_updated` 2026-08-10 → 2026-08-11
+
+**Notas / contradições:** (1) Autoria — a transcrição registra "Lucas Badico TV"; atribuído a Lucas Montano por forte convergência de sinais (vídeo anterior "Git Flow é uma farsa", Golang, membership, fechamento da empresa ~2023), mas o nome literal difere — tratada como provável, não confirmada nominalmente. (2) Contradição parcial (consciente) com `wiki/concepts/ci-cd.md`: a wiki documentava o fluxo didático `feature → dev/staging → main` de [[wiki/sources/continuous-integration-delivery-deploy-vs-release]]; esta fonte argumenta contra a branch `dev` de vida longa — registrado como trade-offs distintos, não erro (staging aqui é ambiente, não branch). (3) Exemplo dos squads-do-Spotify e do desmentido do time original: relato do autor, sem link primário. (4) Vídeo sem data de publicação (datado de forma vaga por "acabou a Copa").
+
+## [2026-08-11] ingest | Precificação com a Anthropic: a ancoragem de valor no lançamento do Opus 5
+
+**Fonte:** [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]]
+**Skill carregada:** `tech-mentor-ai` (domínio primário: economia/precificação de modelos LLM — `references/ai/token-economics.md`, `references/ai/llm-providers-2026.md`; ângulo secundário de negócio/carreira em `tech-mentor-leadership`)
+
+**Arquivos criados:**
+- `raw/precificacao-ancoragem-anthropic-opus-5-lancamento.md` — transcrição auto-gerada limpa e estruturada em MD (já em PT-BR, sem tradução necessária); erros de ASR corrigidos e sinalizados (Opos→Opus, sonetê→Sonnet, Grock→Grok, Kim/química 3→Kimi K3, Haiko→Haiku); jabá de canal condensado
+- `wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento.md` — TL;DR, 7 claims, entidades, conceitos, perguntas em aberto, quotes
+- `wiki/concepts/ancoragem-de-preco.md` — **conceito novo** (stub): price anchoring, o caso Opus 5/Fable, analogia do iPhone Pro Max, como aplicar em serviços
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/corrida-preco-qualidade-llm.md` — `source_count` 3 → 4; seção "Resposta do Frontier: Ancoragem em vez de Guerra de Preço"
+- `wiki/concepts/modelo-frontier.md` — `source_count` 5 → 6; reposicionamento da linha (Opus como "novo Sonnet")
+- `wiki/entities/anthropic.md` — `source_count` 21 → 22; seção "Ancoragem de Preço no Lançamento do Opus 5"
+- `wiki/entities/xai.md` — `source_count` 1 → 2; Grok 4.5 no mid-tier
+- `wiki/entities/moonshot-ai.md` — `source_count` 2 → 3; Kimi K3 US$ 0,92 vs Fable US$ 2,13 (Cline)
+- `wiki/entities/openai.md` — `source_count` 11 → 12; menção contextual (concorrência frontier)
+- `wiki/concepts/visao-de-negocio-do-desenvolvedor.md` — `source_count` 2 → 3; precificação como aplicação direta de visão de negócio
+- `wiki/concepts/dev-e-negocio.md` — `source_count` 2 → 3; precificação e percepção de valor
+- `wiki/concepts/freelance-como-alavanca-de-renda.md` — `source_count` 1 → 2; do freela pequeno ao grande contrato via precificação
+- `wiki/index.md` — nova linha no topo de Sources; novo conceito `ancoragem-de-preco` em "IA em Organizações"
+
+**Notas / contradições:** (1) **Autoria** não identificada — mesmo perfil estilístico de "canal de negócios técnico" da fonte-irmã [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]]; mantido como "desconhecido". (2) **Preços narrados sem fonte primária** (Fable ~10,50 / Opus ~5,25 saída por M tokens; Kimi K3 US$ 0,92 vs Fable US$ 2,13 no Cline) — tratados como aproximações de tela, confiança média. (3) **"Rikel"** citado como o tier barato abandonado = provável erro de ASR (referência ao Haiku / categoria barata), registrado como open question. (4) Nenhuma contradição direta com a wiki: a fonte **reforça e complementa** [[wiki/concepts/corrida-preco-qualidade-llm]] e [[wiki/concepts/modelo-frontier]] pelo ângulo de estratégia de vendas (anchoring), não de dado técnico.

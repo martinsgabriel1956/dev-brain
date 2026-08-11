@@ -3,9 +3,9 @@ type: concept
 title: "Dev e Negócio"
 aliases: ["desenvolvedor e negócio", "business awareness dev", "entender o negócio"]
 date_created: 2026-04-22
-date_updated: 2026-07-20
-source_count: 2
-tags: [carreira, senioridade, negócio, receita, impacto, liderança]
+date_updated: 2026-08-11
+source_count: 3
+tags: [carreira, senioridade, negócio, receita, impacto, liderança, precificacao]
 skill: tech-mentor-leadership
 status: stable
 ---
@@ -48,7 +48,12 @@ Ser sênior não é escala de profundidade técnica. É escala de **escopo de in
 
 [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]] aplica esse conceito especificamente a arquitetos: as matérias de negócio/administração de uma pós-graduação (churn, [[wiki/concepts/ltv-cac|CAC/LTV]], ROI, margem) são citadas como o maior diferencial competitivo da grade, porque decisão arquitetural sem entendimento do motivo de negócio por trás dela é decisão no vácuo — exemplo dado: reagir a um aumento de churn reportado pelo CEO exige primeiro entender o que é churn antes de propor qualquer solução técnica (performance, disponibilidade, etc.).
 
+## Precificação e Percepção de Valor
+
+Entender o negócio inclui saber **cobrar**. [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] usa a [[wiki/entities/anthropic]] como exemplo de empresa que domina a camada de negócio (venda, [[wiki/concepts/ancoragem-de-preco|ancoragem de preço]], posicionamento) além da técnica — e argumenta que o dev que quer fechar grandes contratos precisa operar nas duas camadas, não em uma só.
+
 ## Key Sources
 
 - [[wiki/sources/desenvolvedor-acima-da-media-10-itens]]
 - [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]] — aplicação do conceito à decisão arquitetural especificamente
+- [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — a camada de negócio inclui precificação/percepção de valor (ancoragem)
