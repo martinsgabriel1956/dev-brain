@@ -3,8 +3,8 @@ type: concept
 title: "Autonomia e Responsabilidade"
 aliases: ["autonomia técnica", "ownership", "responsabilidade profissional"]
 date_created: 2026-05-19
-date_updated: 2026-07-03
-source_count: 3
+date_updated: 2026-08-12
+source_count: 4
 tags: [soft-skills, autonomia, responsabilidade, carreira, ownership]
 skill: tech-mentor-leadership
 status: stable
@@ -44,8 +44,13 @@ Nos primeiros meses numa empresa, autonomia saudável significa alinhar priorida
 
 [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] recomenda o oposto do escopo acima: não esperar aprovação do chefe ou da empresa para praticar o que se estuda, assumindo que ninguém vai autorizar iniciativa sem retorno financeiro óbvio. A reconciliação está no contexto: a fonte fala majoritariamente de [[wiki/concepts/automacao-pessoal-para-aprender]] — programas pessoais, fora do pipeline formal de entrega, rodando na própria máquina do dev — não de tarefas dentro do sprint ou PRs no sistema da empresa. Quando a fonte fala em aplicar algo com risco real dentro do produto ("mudar uma tecnologia", "uma mudança agressiva pro contexto do negócio"), ela mesma condiciona a iniciativa à aceitação total da responsabilidade se der errado — o que converge, não contradiz, com a exigência de maturidade e alinhamento documentada aqui. A fronteira exata entre "automação pessoal de baixo risco" e "mudança real assumida sem permissão" não é bem definida na fonte — ver questão em aberto em [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]].
 
+## Autonomia + responsabilidade em nível de time (plataformas)
+
+O mesmo par vale no nível organizacional: [[wiki/sources/talk-about-platforms-evan-bottcher]] mostra que dar **autonomia** de infra a um time só funciona quando acompanhada de **responsabilidade operacional** — o mantra [[wiki/concepts/you-build-it-you-run-it|you build it, you run it]] (quem constrói também opera e fica on-call). Autonomia sem responsabilização vira caos; responsabilização sem autonomia vira o [[wiki/concepts/backlog-coupling|acoplamento de backlog]] que trava a entrega.
+
 ## Conexões
 
+- [[wiki/concepts/you-build-it-you-run-it]] — ownership operacional como forma de responsabilidade em nível de time
 - [[wiki/concepts/foco-profundo]] — autonomia exige capacidade de trabalhar sem interrupção constante
 - [[wiki/concepts/colaboracao-times]] — autonomia saudável não exclui colaboração
 - [[wiki/concepts/comunicacao-tecnica]] — alinhar expectativas é um ato de comunicação
@@ -57,3 +62,4 @@ Nos primeiros meses numa empresa, autonomia saudável significa alinhar priorida
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] — alinhar prioridade antes do PR; não criar tarefas fora do escopo pedido
 - [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] — tensão entre "não peça permissão" para prática pessoal e "alinhe antes de executar" para escopo formal de entrega
+- [[wiki/sources/talk-about-platforms-evan-bottcher]] — autonomia + responsabilidade operacional em nível de time (you build it, you run it)

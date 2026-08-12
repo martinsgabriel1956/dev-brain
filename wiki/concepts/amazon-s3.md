@@ -3,8 +3,8 @@ type: concept
 title: "Amazon S3"
 aliases: ["S3", "Simple Storage Service"]
 date_created: 2026-08-04
-date_updated: 2026-08-04
-source_count: 1
+date_updated: 2026-08-12
+source_count: 2
 tags: ["aws", "s3", "storage", "cdn", "infra", "cloud"]
 skill: tech-mentor-infra
 status: stub
@@ -33,3 +33,4 @@ Serviço de object storage da AWS — um "bucket" para armazenar dados de forma 
 ## Key Sources
 
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]
+- [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — bucket S3 público hospedando site estático; o **endpoint de site estático é HTTP puro** (sem SSL → navegador marca "not secure"), motivando a camada [[wiki/concepts/aws-cloudfront|CloudFront]] + [[wiki/concepts/certificado-ssl-acm|ACM]] para obter HTTPS

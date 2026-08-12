@@ -3,8 +3,8 @@ type: entity
 title: "Uncle Bob (Robert C. Martin)"
 aliases: ["uncle bob", "robert c. martin", "robert cecil martin"]
 date_created: 2026-07-03
-date_updated: 2026-08-11
-source_count: 10
+date_updated: 2026-08-12
+source_count: 12
 tags: [clean-code, clean-architecture, solid, autor, quality-gate]
 skill: tech-mentor-backend
 status: stub
@@ -64,8 +64,15 @@ Nona menção, em [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lu
 
 **Nota de verificação**: mesma cautela de sempre — a fonte não cita URL nem data, e as citações textuais são reportadas de segunda mão.
 
+## Métricas de Acoplamento (Abstração, Instabilidade, Sequência Principal)
+
+Décima menção, em [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]]: o post de [[wiki/entities/matheus-castiglioni]] apresenta (sem citar a fonte explicitamente, mas de forma inequívoca) o conjunto de métricas de pacote que Robert C. Martin definiu em *Agile Software Development* / *Clean Architecture* — acoplamento **aferente** (Ca) e **eferente** (Ce), **abstração** `A = ma/(ma+mc)`, **instabilidade** `I = Ce/(Ca+Ce)`, **distância da sequência principal** `D = |A + I − 1|`, e as duas regiões-armadilha do gráfico A×I: **zona de dor** e **zona de inutilidade**. Consolidadas em [[wiki/concepts/metricas-de-acoplamento]]. É a base quantitativa da mesma "análise de estrutura de dependências" que aparece como gate de CI na sétima menção ([[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]]).
+
+**Nota de verificação**: atribuição a Uncle Bob é inferência de alta confiança (as fórmulas são exatamente as dele), mas o post-fonte não o nomeia explicitamente.
+
 ## Key Sources
 
+- [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]] — métricas de acoplamento de pacote (A, I, D, aferente/eferente, zonas de dor/inutilidade), atribuição inferida
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/principios-solid-ilustrados]] — atribuição da generalização de OCP+LSP em Dependency Inversion (1996), não confirmada contra fonte primária
 - [[wiki/sources/5-principios-que-mudaram-como-programador]]
@@ -76,3 +83,4 @@ Nona menção, em [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lu
 - [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — segundo vídeo sobre o mesmo tema, detalhando quatro gates de CI concretos (CCN, cobertura+mutation, tamanho de módulo, dependency structure)
 - [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — terceiro vídeo de reação (Galego): concorda que as métricas são objetivas mas insuficientes, e propõe a matriz risco × dificuldade para migrar de "reviso tudo" para "não reviso"
 - [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — vídeo de Lucas Montano: treta com "Fernando" sobre estar on call, origem nos anos 60, citação "code quality still matters... tools that measure", projetos GitHub como play projects
+- [[wiki/sources/busca-linear-e-binaria-giovana]] — menção contextual: seu livro *Código Limpo* (*Clean Code*) usado como objeto físico na analogia da busca (procurar a página 310)

@@ -3,8 +3,8 @@ type: entity
 title: "Amazon Web Services"
 aliases: ["AWS", "Amazon Cloud"]
 date_created: 2026-05-06
-date_updated: 2026-08-05
-source_count: 3
+date_updated: 2026-08-12
+source_count: 5
 tags: ["aws", "cloud-provider", "amazon", "infraestrutura"]
 skill: tech-mentor-infra
 status: stable
@@ -71,3 +71,5 @@ O console web da AWS (criar recursos clicando em botões — ex.: "create functi
 - [[wiki/sources/iam-introduction-users-groups-policies]]
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]
 - [[wiki/sources/infraestrutura-como-codigo-cdk-aws]] — demo de deploy de bucket S3 + Lambda via AWS CDK, contrastado com configuração manual pelo console
+- [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — quatro serviços AWS combinados na demo de domínio + HTTPS: [[wiki/concepts/aws-route-53|Route 53]] (DNS), [[wiki/concepts/certificado-ssl-acm|Certificate Manager]] (SSL), [[wiki/concepts/aws-cloudfront|CloudFront]] (CDN/HTTPS) e [[wiki/concepts/amazon-s3|S3]] (site estático)
+- [[wiki/sources/talk-about-platforms-evan-bottcher]] — AWS como o "self-service real" para onde os times fugiram da infra centralizada travada (casos BigCo e WebBiz), trazendo o mantra [[wiki/concepts/you-build-it-you-run-it|you build it, you run it]]

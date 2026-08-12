@@ -3,8 +3,8 @@ type: concept
 title: "TLS Handshake"
 aliases: ["negociação TLS", "SSL handshake"]
 date_created: 2026-07-28
-date_updated: 2026-07-28
-source_count: 1
+date_updated: 2026-08-12
+source_count: 2
 tags: [rede, tls, https, handshake, browser, critical-rendering-path]
 skill: tech-mentor-frontend
 status: draft
@@ -17,3 +17,4 @@ Faz parte da fase de rede do [[wiki/concepts/critical-rendering-path]] — é um
 
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
+- [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — a "troca de chaves entre navegador e servidor" do [[wiki/concepts/http-vs-https|HTTPS]], apresentando o [[wiki/concepts/certificado-ssl-acm|certificado SSL]] como prova de que quem responde é dono do domínio (mitigando Man-in-the-Middle)

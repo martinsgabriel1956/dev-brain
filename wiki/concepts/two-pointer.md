@@ -3,8 +3,8 @@ type: concept
 title: "Two Pointer"
 aliases: ["two pointers", "dois ponteiros", "técnica de dois ponteiros"]
 date_created: 2026-08-04
-date_updated: 2026-08-04
-source_count: 3
+date_updated: 2026-08-12
+source_count: 5
 tags: [cs-fundamentals, algoritmos, two-pointer, array, binary-search]
 skill: cs-fundamentals
 status: draft
@@ -68,3 +68,5 @@ while left < right:
 - [[wiki/sources/binary-search-em-5-minutos]] — implementação completa de binary search com two pointers, contrastada explicitamente com a alternativa recursiva de recriar arrays
 - [[wiki/sources/two-sum-explicacao]] — menção de two pointers como variante O(n) sem espaço extra para Two Sum em array ordenado
 - [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — Reverse Only Letters: dois ponteiros com movimento independente por condição local, não por regra geométrica fixa
+- [[wiki/sources/busca-linear-e-binaria-giovana]] — busca binária iterativa com `first`/`last` como par de ponteiros que delimitam o intervalo sem recriar o array (mesma estrutura, nomes diferentes de `left`/`right`)
+- [[wiki/sources/como-ficar-bom-em-leetcode]] — "two pointer sempre cai; provavelmente o primeiro padrão em que focar"; base do [[wiki/concepts/sliding-window|sliding window]]

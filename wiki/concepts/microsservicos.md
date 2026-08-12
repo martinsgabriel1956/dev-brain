@@ -3,8 +3,8 @@ type: concept
 title: "Microsserviços"
 aliases: ["microsservicos", "microservices", "arquitetura de microsserviços", "decomposição por domínio"]
 date_created: 2026-07-24
-date_updated: 2026-08-10
-source_count: 11
+date_updated: 2026-08-12
+source_count: 12
 tags: [microsservicos, arquitetura, bounded-context, distributed-monolith, circuit-breaker, resiliencia]
 skill: tech-mentor-backend
 status: draft
@@ -72,12 +72,17 @@ Mesmo fora de uma arquitetura de microsserviços completa, dá para reaproveitar
 
 [[wiki/concepts/esb-enterprise-service-bus|ESB]] não é só uma referência histórica dentro do artigo de Fowler/Lewis — é a peça concreta que a filosofia de microsserviços rejeitava na prática: em vez de concentrar transformação de mensagens e orquestração num barramento central, cada serviço vira responsável pela própria lógica, comunicando-se por mecanismos leves. Isso não significa que o ESB tenha desaparecido: em empresas com grande legado tecnológico, ele continua sendo a peça que integra sistemas de épocas diferentes enquanto a migração para uma arquitetura mais distribuída acontece de forma incremental.
 
+## O Pré-requisito Organizacional: Plataforma e Fim do Acoplamento de Backlog
+
+Times pequenos e autônomos — um dos benefícios centrais de microsserviços — só se sustentam se a infraestrutura for self-service. [[wiki/sources/talk-about-platforms-evan-bottcher]] mostra o lado organizacional: sem uma [[wiki/concepts/plataforma-digital|plataforma digital]] com [[wiki/concepts/sensible-defaults-paved-road|sensible defaults]], a autonomia dos times de serviço vira ou [[wiki/concepts/backlog-coupling|acoplamento de backlog]] (dependência de times de infra por silo técnico) ou arrasto por diversificação tecnológica (cada time reinventa sua stack). É a mesma Lei de Conway do artigo original de 2014, agora aplicada à camada de entrega/infra.
+
 ## Key Sources
 
 - [[wiki/sources/arquitetura-de-sacrificio]] — Fowler **desaconselha** microsserviços como arquitetura de sacrifício (distribuição + assincronia = amplificadores de complexidade); melhor monolito primeiro, desmontado gradualmente depois
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — ESB como contraponto histórico direto ao "smart endpoints, dumb pipes"; por que ESBs continuam essenciais em empresas com grande legado mesmo perdendo espaço em projetos novos
 - [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — artigo original de 2014 (James Lewis e Martin Fowler) que cunhou a definição do termo; nove características comuns, "smart endpoints and dumb pipes", Lei de Conway, Design for Failure, e a postura de "otimismo cauteloso" dos próprios autores
 - [[wiki/sources/microsservicos]] — decomposição por bounded context, distributed monolith como anti-pattern, padrões de resiliência obrigatórios
+- [[wiki/sources/talk-about-platforms-evan-bottcher]] — o pré-requisito organizacional: plataforma self-service para sustentar times autônomos sem acoplamento de backlog
 - [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — microsserviços como guia/eixo de aprendizado de arquitetura, hype de 2014 em perspectiva histórica, relato pessoal de carreira, Keycloak como peça pronta reaproveitável
 - [[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]] — "microsserviços exigem justificativa" como opinião estável (não mudou em 6 anos), reforçando a mesma tese por um ângulo independente
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — monolito vs. microsserviços como decisão de sênior-plus, e como tópico de tradeoff cobrado em entrevista sênior

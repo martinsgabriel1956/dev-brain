@@ -3,8 +3,8 @@ type: concept
 title: "Test Doubles"
 aliases: ["dublê de teste", "mock stub fake spy", "xunit test patterns"]
 date_created: 2026-04-22
-date_updated: 2026-07-27
-source_count: 6
+date_updated: 2026-08-12
+source_count: 7
 tags: [testes, test-doubles, mock, stub, fake, spy, dummy]
 skill: tech-mentor-testing
 status: stable
@@ -12,7 +12,18 @@ status: stable
 
 # Test Doubles
 
-Termo genérico para qualquer objeto que **substitui uma dependência real nos testes**. Taxonomia de Gerard Meszaros (*xUnit Test Patterns*, 2007).
+Termo genérico para qualquer objeto que **substitui uma dependência real nos testes**. Taxonomia de Gerard Meszaros (*xUnit Test Patterns*, 2007). Fonte primária: [[wiki/sources/test-double-xunitpatterns-meszaros]] (a própria página canônica de Meszaros no xUnitPatterns.com).
+
+## Vocabulário formal (SUT / DOC / entrada-saída indireta)
+
+A fonte primária ([[wiki/sources/test-double-xunitpatterns-meszaros]]) sustenta a taxonomia num vocabulário preciso que vale internalizar — é o que falta na descrição informal "mock é fake com asserção":
+
+- **SUT** (*System Under Test*) — o código sendo testado. **Nunca** é o que se substitui.
+- **DOC** (*Depended-On Component*) — a dependência real. **É o que o double substitui.**
+- **Entrada indireta** (*indirect input*) — valor que o SUT **recebe** de um DOC → precisa de **ponto de controle** → Stub/Mock.
+- **Saída indireta** (*indirect output*) — chamada/efeito que o SUT **dispara** sobre um DOC → precisa de **ponto de observação** → Spy/Mock.
+
+Esse eixo **controle × observação** é o que organiza os cinco tipos. Meszaros ainda separa duas perguntas ortogonais: **por que** usar o double (define Dummy/Stub/Spy/Mock/Fake) vs. **como** construí-lo (Hard-Coded vs. Configurable Test Double — a técnica de construção não muda o papel). Detalhe importante: o **double só precisa expor a mesma API** que aquele teste exercita — não a interface inteira do DOC ("fiel o suficiente para a cena", na analogia do dublê de cinema).
 
 ## Os cinco tipos
 
@@ -73,8 +84,9 @@ Mockar um banco de dados permite verificar que `db.save` foi chamado, mas não c
 
 ## Key Sources
 
+- [[wiki/sources/test-double-xunitpatterns-meszaros]] — **fonte primária** da taxonomia (página canônica de Meszaros no xUnitPatterns.com); vocabulário SUT/DOC, entrada/saída indireta, pontos de controle/observação; Mock ≠ "Stub + asserção"
 - [[wiki/sources/test-doubles]]
-- [[wiki/sources/test-double-martin-fowler]] — fonte primária do termo, com atribuição correta da taxonomia a Gerard Meszaros
+- [[wiki/sources/test-double-martin-fowler]] — fonte secundária que popularizou o termo, com atribuição correta da taxonomia a Gerard Meszaros
 - [[wiki/sources/xunit-martin-fowler]] — origem histórica da família de frameworks Xunit que dá nome ao livro de Meszaros
 - [[wiki/sources/integration-test-martin-fowler]]
 - [[wiki/sources/contract-test-martin-fowler]] — SelfInitializingFake como técnica para doubles usados em contract testing

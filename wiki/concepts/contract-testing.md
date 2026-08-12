@@ -3,8 +3,8 @@ type: concept
 title: "Contract Testing"
 aliases: ["teste de contrato", "pact", "consumer-driven contracts", "can-i-deploy"]
 date_created: 2026-04-22
-date_updated: 2026-07-27
-source_count: 6
+date_updated: 2026-08-12
+source_count: 7
 tags: [testes, contract-testing, pact, microservices, ci, distribuídos]
 skill: tech-mentor-testing
 status: stable
@@ -73,7 +73,7 @@ Contract testing não substitui E2E — são camadas diferentes da [[piramide-de
 
 ## Papel no teste de integração estreito (Fowler)
 
-[[teste-de-integracao-estreito-vs-amplo|Martin Fowler]] descreve o combo narrow integration test + contract test como substituto do teste de integração amplo: o narrow test roda contra um double do serviço externo, e o contract test garante que esse double é fiel ao provider real. Sem o contract test, o ponto fraco do teste estreito é justamente não saber se o double mentiu.
+[[teste-de-integracao-estreito-vs-amplo|Martin Fowler]] descreve o combo narrow integration test + contract test como substituto do teste de integração amplo: o narrow test roda contra um double do serviço externo, e o contract test garante que esse double é fiel ao provider real. Sem o contract test, o ponto fraco do teste estreito é justamente não saber se o double mentiu — o risco central que Meszaros já sinalizava ao dizer que o double só precisa expor a "mesma API, fiel o suficiente" (ver [[wiki/sources/test-double-xunitpatterns-meszaros|fonte primária dos Test Doubles]]). O contract test é o que fecha esse "fiel o suficiente".
 
 ## Cadência, falha e o que de fato é validado (Fowler)
 
@@ -103,4 +103,5 @@ Quando ativar o serviço externo real (ex.: staging de um provedor de pagamentos
 - [[wiki/sources/contract-test-martin-fowler]] — cadência de execução, tratamento de falha e SelfInitializingFake
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — exemplo de PSP/fornecedor mockados nas pontas de um fluxo de pagamento
 - [[wiki/sources/consumer-driven-contracts-martin-fowler]] — origem do termo (Ian Robinson, 2006), modelo de três camadas, Must Ignore pattern
+- [[wiki/sources/test-double-xunitpatterns-meszaros]] — o "fiel o suficiente" do double que o contract test existe para garantir
 - [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — Tolerant Reader e Consumer-Driven Contracts citados como técnicas que permitem contratos de serviço evoluírem de forma independente sem gerenciamento central; menciona um time na Austrália que orienta a construção de novos serviços pelo contrato (definido antes do código), evitando over-building via YAGNI

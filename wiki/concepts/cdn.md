@@ -3,8 +3,8 @@ type: concept
 title: "CDN"
 aliases: ["Content Delivery Network", "rede de distribuição de conteúdo", "edge cache"]
 date_created: 2026-06-26
-date_updated: 2026-08-10
-source_count: 6
+date_updated: 2026-08-12
+source_count: 7
 tags: [system-design, cdn, cache, performance, escalabilidade, rede, live-streaming]
 skill: tech-mentor-system-design
 status: draft
@@ -80,3 +80,4 @@ CDN reduz distância física até o espectador, mas não elimina o que é ineren
 - [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — CDN como resposta específica para **arquivos estáticos** (não intercambiável com cache/réplica): reduz latência de ~400-500ms para ~20-50ms para usuários distantes do data center, com impacto em SEO e bounce
 - [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — arquivos estáticos grandes (filme, foto, logo, HTML) como gargalo de rede; servir a página inicial da CDN faz o usuário receber a primeira página muito mais rápido do que se ela viesse do servidor
 - [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] — CDN citada como camada de [[wiki/concepts/cache]] geográfico e exemplo de que um mesmo sistema (YouTube) usa cache (CDN) e [[wiki/concepts/buffer]] (player) ao mesmo tempo
+- [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — [[wiki/concepts/aws-cloudfront|CloudFront]] (CDN da AWS) usado não só por latência mas como camada para servir um site estático do S3 via HTTPS com redirect e certificado SSL

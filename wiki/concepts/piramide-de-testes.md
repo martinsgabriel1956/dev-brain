@@ -3,8 +3,8 @@ type: concept
 title: "Pirâmide de Testes"
 aliases: ["test pyramid", "ice cream cone", "testing trophy", "estratégia de testes"]
 date_created: 2026-04-22
-date_updated: 2026-07-24
-source_count: 6
+date_updated: 2026-08-12
+source_count: 7
 tags: [testes, pirâmide, estratégia, unitário, integração, e2e, projetos-novos]
 skill: tech-mentor-testing
 status: stable
@@ -132,7 +132,7 @@ Nessa leitura, o teste de maior valor por unidade de custo tende a ser um teste 
 
 - [[tdd]] — prática que preenche a base da pirâmide
 - [[contract-testing]] — camada entre integração e E2E em microsserviços
-- [[test-doubles]] — como isolar dependências nos unitários
+- [[test-doubles]] — como isolar dependências nos unitários (fonte primária: [[wiki/sources/test-double-xunitpatterns-meszaros]])
 - [[testar-proprio-codigo]] — hábito de cobrir além do happy path
 - [[teste-de-integracao-estreito-vs-amplo]] — a camada "Integração" desta pirâmide se divide em estreita e ampla
 - [[criterios-de-bom-teste]] — determinístico, conciso, relevante, compreensível, durável
@@ -150,3 +150,4 @@ Nessa leitura, o teste de maior valor por unidade de custo tende a ser um teste 
 - [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]
 - [[wiki/sources/integration-test-martin-fowler]]
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — releitura da pirâmide como problema de alocação de recursos; valor assimétrico de E2E entre legado e startup em pivot
+- [[wiki/sources/test-double-xunitpatterns-meszaros]] — doubles como ferramenta da base (unitários) da pirâmide

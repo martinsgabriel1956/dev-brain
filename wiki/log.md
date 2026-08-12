@@ -2,6 +2,59 @@
 
 ---
 
+## [2026-08-12] ingest | Como ficar bom em LeetCode
+
+**Fonte:** [[wiki/sources/como-ficar-bom-em-leetcode]] — transcrição de vídeo pt-BR (canal com foco em Python), sem URL
+**Skill carregada:** `cs-fundamentals` (domínio: algoritmos / estruturas de dados / LeetCode; índice → `references/data-structures.md` e `references/algorithms-complexity.md`)
+
+**Arquivos criados:**
+- `raw/como-ficar-bom-em-leetcode.md` — transcrição limpa e organizada em MD (já em PT-BR, sem tradução necessária)
+- `wiki/sources/como-ficar-bom-em-leetcode.md` — TL;DR, 9 claims, exemplo BST trabalhado, entities, concepts, open questions, quotes
+- `wiki/concepts/binary-search-tree.md` (stub) — invariante da BST + problema de soma no intervalo
+- `wiki/concepts/busca-em-profundidade.md` (stub) — DFS como padrão de árvore
+- `wiki/concepts/busca-em-largura.md` (stub) — BFS, par complementar da DFS
+- `wiki/concepts/sliding-window.md` (stub) — janela contígua, especialização de two pointer
+- `wiki/concepts/backtracking.md` (stub) — DFS com desfazer de escolha
+- `wiki/concepts/programacao-dinamica.md` (stub) — subproblemas sobrepostos, Fibonacci como entrada
+- `wiki/concepts/escolha-de-linguagem-para-leetcode.md` (stub) — Python/Go vs. Rust/Haskell, um skill set de cada vez
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/reconhecimento-de-padroes.md` — `source_count` 3 → 4; método operacionaliza "memorize o padrão, não o problema"
+- `wiki/concepts/algoritmos-e-estruturas-de-dados.md` — `source_count` 12 → 13; lista de estruturas essenciais + loop estrutura→padrão→repetição
+- `wiki/concepts/big-o.md` — `source_count` 8 → 9; Big O como pré-requisito não negociável
+- `wiki/concepts/two-pointer.md` — `source_count` 4 → 5; "sempre cai, o primeiro padrão em que focar"
+- `wiki/concepts/hashmap.md` — `source_count` 5 → 6; hash map "resolve quase tudo"
+- `wiki/concepts/array.md` — `source_count` 6 → 7; base de two pointer e sliding window
+- `wiki/entities/leetcode.md` — `source_count` 4 → 5; mecânica de estudo na plataforma (filtro, acceptance rate, Solutions)
+- `wiki/entities/the-primeagen.md` — `source_count` 2 → 3; curso gratuito de DSA no Frontend Masters
+- `wiki/index.md` — nova linha no topo de Sources; 7 conceitos novos em "Fundamentos de Lógica e Programação"
+
+**Notas / contradições:** (1) **Sem contradição** — a fonte é o lado prático/mecânico ("como treinar") da mesma tese de [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]] e [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]] (Anthony Mays), que enquadram pela perspectiva da entrevista. Ambas convergem em [[wiki/concepts/reconhecimento-de-padroes]]. (2) **Tensão registrada como open question:** o conselho "não fique quebrando a cabeça" tem limite não explicitado — alguma luta produtiva antes de olhar a solução é o que consolida o padrão (ver [[wiki/concepts/pratica-deliberada]]); o timebox de 5-10 min é heurística do autor, não número validado. (3) Recomendação anti-Rust/Haskell é sobre velocidade de aprendizado de LeetCode, não qualidade da linguagem — inverte-se para quem já é fluente.
+
+---
+
+## [2026-08-12] ingest | Medindo e Entendendo Acoplamento (Matheus Castiglioni)
+
+**Fonte:** [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]] — https://blog.matheuscastiglioni.com.br/medindo-e-entendendo-acoplamento/
+**Skill carregada:** `tech-mentor-backend` (domínio: arquitetura / software design; índice → `references/architecture-evolutionary.md` / `architecture-foundations.md`)
+
+**Arquivos criados:**
+- `raw/medindo-e-entendendo-acoplamento-matheus-castiglioni.md` — post reproduzido em MD (já em PT-BR, sem tradução necessária)
+- `wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni.md` — TL;DR, 8 claims, tipos, fórmulas, open questions, quotes
+- `wiki/concepts/metricas-de-acoplamento.md` — nova página consolidando aferente/eferente, abstração `A`, instabilidade `I`, distância `D`, zonas de dor/inutilidade
+- `wiki/entities/matheus-castiglioni.md` — nova entidade (autor do blog)
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/acoplamento.md` — `source_count` 6 → 7; nova seção "Tipos, Categorias e Métricas"; relações e Key sources
+- `wiki/entities/uncle-bob.md` — `source_count` 11 → 12; décima menção (as métricas A/I/D são dele, atribuição inferida)
+- `wiki/concepts/clean-architecture.md` — `source_count` 4 → 5; seção "Métricas por trás da Regra de Dependência"
+- `wiki/concepts/coesao.md` — `source_count` 2 → 3; relação com metricas-de-acoplamento
+- `wiki/index.md` — nova linha em Sources, nova concept em Boas Práticas de Engenharia, nova entity
+
+**Notas:** post é introdutório e não nomeia Robert C. Martin explicitamente, mas as fórmulas (abstração, instabilidade, sequência principal, zonas de dor/inutilidade) são exatamente as dele em *Clean Architecture* — atribuição marcada como inferência de alta confiança. Complementa [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] (automação dessas métricas como gate de CI) e a heurística "de quem é essa linha?" de [[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]].
+
+---
+
 ## [2026-08-11] ingest | Padrão de Projeto Decorator (Renato Augusto)
 
 **Fonte:** [[wiki/sources/design-pattern-decorator-renato-augusto]]
@@ -6470,3 +6523,109 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha no topo de Sources; novo conceito `ancoragem-de-preco` em "IA em Organizações"
 
 **Notas / contradições:** (1) **Autoria** não identificada — mesmo perfil estilístico de "canal de negócios técnico" da fonte-irmã [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]]; mantido como "desconhecido". (2) **Preços narrados sem fonte primária** (Fable ~10,50 / Opus ~5,25 saída por M tokens; Kimi K3 US$ 0,92 vs Fable US$ 2,13 no Cline) — tratados como aproximações de tela, confiança média. (3) **"Rikel"** citado como o tier barato abandonado = provável erro de ASR (referência ao Haiku / categoria barata), registrado como open question. (4) Nenhuma contradição direta com a wiki: a fonte **reforça e complementa** [[wiki/concepts/corrida-preco-qualidade-llm]] e [[wiki/concepts/modelo-frontier]] pelo ângulo de estratégia de vendas (anchoring), não de dado técnico.
+
+## [2026-08-12] ingest | Algoritmos de Busca: Busca Linear e Busca Binária (Giovana / Alura)
+
+**Fonte:** [[wiki/sources/busca-linear-e-binaria-giovana]]
+**Skill carregada:** `cs-fundamentals` (domínio: algoritmos & complexidade — `references/algorithms-complexity.md`; binary search, Big-O, logaritmo binário)
+
+**Arquivos criados:**
+- `raw/busca-linear-e-binaria-giovana.md` — transcrição limpa e estruturada em MD (já em PT-BR, sem tradução necessária); erros de ASR corrigidos e marcados (Rei/Way/Away→array, Windows/index→índice, PicsArt→Quicksort, map.flor→Math.floor, map.c→Math.ceil, já-fez-script→JavaScript, Country/conte→count, loira/lura→Alura); jabá de patrocínio condensado
+- `wiki/sources/busca-linear-e-binaria-giovana.md` — TL;DR, 9 claims, derivação da complexidade logarítmica, pseudocódigo, entidades, conceitos, perguntas em aberto, quotes
+- `wiki/concepts/logaritmo.md` — **conceito novo** (stub): `log_a(B)=x ⇔ a^x=B`, base 2 binária omitida em Big O, por que descartar metade do problema por passo dá O(log n)
+- `wiki/entities/alura.md` — **entidade nova** (stub): escola de tecnologia / canal que publica o vídeo
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/algoritmos-de-busca.md` — `source_count` 3 → 4; tag `logaritmo`; backlink para novo conceito `logaritmo`
+- `wiki/concepts/big-o.md` — `source_count` 7 → 8; derivação `2^x=n`, descarte do `+1`, tabela de crescimento
+- `wiki/concepts/algoritmos-de-ordenacao.md` — `source_count` 2 → 3; Quicksort como pré-requisito da busca binária
+- `wiki/concepts/melhor-caso-pior-caso-caso-medio.md` — `source_count` 1 → 2; busca linear como exemplo dos três cenários
+- `wiki/concepts/two-pointer.md` — `source_count` 3 → 4; `first`/`last` como par de ponteiros (mesma estrutura, nomes diferentes de `left`/`right`)
+- `wiki/concepts/array.md` — `source_count` 5 → 6; indexação 0..length-1 e array ordenado como pré-condição
+- `wiki/concepts/algoritmos-e-estruturas-de-dados.md` — `source_count` 11 → 12; busca como passo 3 da sequência via analogia física + código
+- `wiki/entities/uncle-bob.md` — `source_count` 10 → 11; *Código Limpo* usado como objeto físico na analogia da busca
+- `wiki/index.md` — nova linha no topo de Sources; novo conceito `logaritmo` em "Fundamentos de CS"; nova entidade `alura` no topo de Entities; `date_updated` 2026-08-11 → 2026-08-12
+
+**Notas / contradições:** (1) **Reforça** (não contradiz) a fonte-irmã [[wiki/sources/binary-search-em-5-minutos]]: mesma tese (array ordenado, O(log n) vs O(n), two pointers), com a contribuição própria da analogia física do livro e da derivação matemática do logaritmo. (2) A fonte usa `Math.floor((first+last)/2)` sem alertar para overflow de inteiros em linguagens de tamanho fixo — lacuna coberta por `references/algorithms-complexity.md` da skill, registrada como open question. (3) "PicsArt" no ASR = Quicksort (algoritmo de ordenação eficiente citado como pré-requisito). (4) Autoria: Giovana, apresentadora no canal da Alura (patrocinadora/escola).
+
+## [2026-08-12] ingest | Endereço IP, Domínio, DNS, HTTP/HTTPS e Configuração de Domínio na AWS (Fernanda Kipper)
+
+**Fonte:** [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]]
+**Skill carregada:** `tech-mentor-networking` (domínio: rede/infra — `references/dns-advanced.md`, `references/ipv6-network-observability.md`, `references/networking-infra-cdn.md`, `references/protocols-transport.md`; DNS, IPv4/IPv6, TLS/SSL, CDN)
+
+**Arquivos criados:**
+- `raw/enderecos-ip-dns-dominios-https-aws-fernanda-kipper.md` — transcrição limpa e estruturada em MD (já em PT-BR, sem tradução necessária); erros de ASR corrigidos e normalizados (WS→AWS, Golder/goldery→GoDaddy, versel→Vercel, Rot 53/route 63→Route 53, Fernand ker/keeper→Fernanda Kipper, kerd pon xyz→`kdev.xyz`, aaro→Claro, US East One→us-east-1, Middle Man→Man-in-the-Middle, Fluence→Fluencypass, cname/siname/C→CNAME); jabá de patrocínio condensado
+- `wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper.md` — TL;DR, 17 claims, fluxo de configuração (ASCII), anatomia do domínio, entidades, conceitos, perguntas em aberto, quotes
+- `wiki/concepts/endereco-ip.md` — **conceito novo** (stub): IP como sequência que identifica dispositivo; IPv4 (4 octetos 0–255, ~4,3 bi) vs IPv6 (128 bits); coexistência dual-stack
+- `wiki/concepts/dominio.md` — **conceito novo** (stub): nome personalizado + TLD; TLD diferente = domínio diferente; registradores
+- `wiki/concepts/http-vs-https.md` — **conceito novo** (stub): HTTP sem criptografia vs HTTPS seguro; Man-in-the-Middle; o que o SSL prova (e o que não prova)
+- `wiki/concepts/aws-route-53.md` — **conceito novo** (stub): hosted zone pública/privada, name servers, registros Alias/CNAME/A
+- `wiki/concepts/certificado-ssl-acm.md` — **conceito novo** (stub): certificado SSL + ACM com validação por CNAME
+- `wiki/entities/fernanda-kipper.md` — **entidade nova** (stub): autora do vídeo; dev e criadora de conteúdo
+- `wiki/entities/godaddy.md` — **entidade nova** (stub): registrador de domínios; painel de DNS/name servers
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/dns.md` — `source_count` 4 → 5; analogia da agenda telefônica, resolução via provedor, propagação de name servers
+- `wiki/concepts/aws-cloudfront.md` — `source_count` 2 → 3; CloudFront como camada de HTTPS na frente do S3 (origem website endpoint, redirect, Custom SSL); nota Load Balancer p/ backend
+- `wiki/concepts/amazon-s3.md` — `source_count` 1 → 2; endpoint de site estático é HTTP puro → motiva CloudFront + ACM
+- `wiki/concepts/tls-handshake.md` — `source_count` 1 → 2; troca de chaves do HTTPS, certificado SSL como prova de posse do domínio
+- `wiki/concepts/cdn.md` — `source_count` 6 → 7; CloudFront usado como camada de HTTPS além de latência
+- `wiki/entities/amazon-web-services.md` — `source_count` 3 → 4; Route 53 + ACM + CloudFront + S3 combinados na demo
+- `wiki/entities/vercel.md` — `source_count` 1 → 2; host do site pessoal da autora; name servers (GoDaddy) apontando para lá
+- `wiki/entities/hostinger.md` — `source_count` 5 → 6; citada como registrador de domínios (domínios mais novos da autora)
+- `wiki/index.md` — nova linha no topo de Sources; 3 conceitos novos em "Fundamentos de CS" (endereco-ip, dominio, http-vs-https); 3 conceitos em "AWS & Cloud" (aws-route-53, certificado-ssl-acm, e aws-cloudfront que existia mas não estava indexado); 2 entidades novas no topo de Entities (fernanda-kipper, godaddy)
+
+**Notas / contradições:** (1) **Imprecisão didática**: a fonte diz octeto IPv4 "0 a 256" — correto é 0 a 255; o teto de ~4,3 bi (2³²) está certo. Registrado como open question. (2) **"Criptografia de ponta a ponta"** para HTTPS: rigorosamente é criptografia em trânsito (cliente↔servidor), não end-to-end no sentido estrito — flag da skill `[skill: tech-mentor-networking]`. (3) Nenhuma contradição com a wiki existente: a fonte **complementa** `dns`, `aws-cloudfront`, `amazon-s3`, `tls-handshake` e `cdn` pelo ângulo prático de configuração de domínio + HTTPS na AWS. (4) O registro **Alias** do Route 53 (usado na demo) existe justamente porque CNAME não pode no apex do domínio — contexto adicionado via `references/dns-advanced.md`.
+
+## [2026-08-12] ingest | Test Double (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/test-double-xunitpatterns-meszaros]] — http://xunitpatterns.com/Test%20Double.html
+**Skill carregada:** `tech-mentor-testing` (domínio: testes/qualidade — `references/test-patterns.md`; Test Doubles, mock/stub/fake/spy, escolas London/Detroit)
+
+**Arquivos criados:**
+- `raw/test-double-xunitpatterns-meszaros.md` — tradução livre PT-BR completa da página canônica (contexto/motivação, "Como Funciona", "Quando Usar", as 5 variações + Procedural Stub, notas de implementação Hard-Coded/Configurable, instalação, vocabulário SUT/DOC/entrada-saída indireta, padrões relacionados, quotes originais preservadas)
+- `wiki/sources/test-double-xunitpatterns-meszaros.md` — TL;DR, 8 claims, 5 key claims, entidades, conceitos, questões abertas, quotes
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/test-doubles.md` — `source_count` 6 → 7; **nova seção "Vocabulário formal (SUT/DOC/entrada-saída indireta)"**; fonte primária adicionada no topo das Key Sources (antes só havia a secundária de Fowler)
+- `wiki/entities/gerard-meszaros.md` — `source_count` 1 → 2; `status` stub → draft; parágrafo sobre a fonte primária + definições normativas (Mock ≠ "Stub + asserção"; Spy = Stub com gravação)
+- `wiki/entities/martin-fowler.md` — `source_count` 13 → 14; nota de que agora existe a fonte primária de Meszaros além do relato dele
+- `wiki/concepts/teste-de-integracao-estreito-vs-amplo.md` — `source_count` 3 → 4; DOC / "mesma API, fiel o suficiente" como base do narrow integration test
+- `wiki/concepts/unit-test-solitario-vs-sociavel.md` — `source_count` 2 → 3; eixo entrada/saída indireta mapeado às escolas London/Detroit
+- `wiki/concepts/contract-testing.md` — `source_count` 6 → 7; contract test como o que "fecha" o "fiel o suficiente" do double
+- `wiki/concepts/self-initializing-fake.md` — `source_count` 1 → 2; definição primária de Fake (implementação simplificada do DOC, nem controle nem observação)
+- `wiki/concepts/testes-integracao-banco-real.md` — `source_count` 3 → 4; Fake em memória (~50× mais rápido) vs. a regra "ao menos um teste sem double"
+- `wiki/concepts/tdd.md` — `source_count` 12 → 13; fonte primária dos doubles usados para isolar dependências no ciclo
+- `wiki/concepts/piramide-de-testes.md` — `source_count` 6 → 7; doubles como ferramenta da base (unitários) da pirâmide
+- `wiki/index.md` — nova linha no topo de Sources (`date_updated` já era 2026-08-12)
+
+**Notas / contradições:** (1) **Sem tradução prévia disponível** — a fonte é em inglês; o `raw/` foi criado como tradução livre PT-BR (o site avisa ser versão preliminar do capítulo, p. 522 do livro). (2) **Reforça, não contradiz** o que a wiki já registrava via [[wiki/sources/test-double-martin-fowler]]: mesma taxonomia, mesma atribuição a Meszaros — agora com a **fonte primária** direta + vocabulário formal (SUT/DOC, entrada/saída indireta, controle/observação) que faltava. (3) **Deriva de vocabulário registrada como open question:** "Mock" na taxonomia (2007) ≠ "mock" das bibliotecas modernas (Jest/Vitest/Mockito chamam de "mock" qualquer double gerado). (4) O número "~50× mais rápido" (Fake em memória) é relato de caso único do livro, não benchmark — usar como ilustração.
+
+## [2026-08-12] ingest | What I Talk About When I Talk About Platforms (Evan Bottcher)
+
+**Fonte:** [[wiki/sources/talk-about-platforms-evan-bottcher]] — https://martinfowler.com/articles/talk-about-platforms.html (Evan Bottcher, 05 mar 2018)
+**Skill carregada:** `tech-mentor-infra` (domínio: platform engineering / DevOps — `references/platform-engineering.md`; IDP, golden paths, self-service, DevEx)
+
+**Arquivos criados:**
+- `raw/talk-about-platforms-evan-bottcher.md` — tradução/adaptação livre PT-BR completa (fonte em inglês, sem tradução prévia): definição de plataforma digital, caso BigCo, acoplamento de backlog, private cloud "half-arsed", caso WebBiz/autonomia, arrasto por diversificação, sensible defaults, plataforma como produto, "isso não é um time de DevOps?", "por onde começar" + armadilhas. Citações curtas preservadas em inglês
+- `wiki/sources/talk-about-platforms-evan-bottcher.md` — TL;DR, 8 claims (com evidência/confiança), entidades, conceitos, questões abertas, quotes
+- `wiki/concepts/plataforma-digital.md` — definição "compelling internal product"
+- `wiki/concepts/backlog-coupling.md` — acoplamento de backlog, "10-12x mais lento", antídoto self-service
+- `wiki/concepts/sensible-defaults-paved-road.md` — padrões sensatos + paved road (Netflix) como adoção sem mandato
+- `wiki/concepts/plataforma-como-produto.md` — postura de produto interno, teste "consumir vs. construir", product-over-project
+- `wiki/concepts/you-build-it-you-run-it.md` — ownership operacional em times de app e de plataforma
+- `wiki/entities/evan-bottcher.md` (stub) — autor, Thoughtworks
+- `wiki/entities/netflix.md` (stub) — paved road
+- `wiki/entities/phil-calcado.md` (stub) — "DevOps não é cargo/time/ferramentas"
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/entities/thoughtworks.md` — `source_count` 3 → 4; Bottcher como terceiro autor da casa (Fowler/Robinson/Lewis/Bottcher)
+- `wiki/entities/martin-fowler.md` — `source_count` 14 → 15; artigo **hospedado** (host≠autor, mesmo padrão de Consumer-Driven Contracts)
+- `wiki/entities/amazon-web-services.md` — `source_count` 4 → 5; AWS como o self-service real para onde os times fugiram (BigCo/WebBiz)
+- `wiki/concepts/contexto-organizacional-para-arquitetura.md` — `source_count` 3 → 4; plataforma como problema organizacional; silo técnico → backlog coupling
+- `wiki/concepts/autonomia-responsabilidade.md` — `source_count` 3 → 4; par autonomia+responsabilidade em nível de time (you build it, you run it)
+- `wiki/concepts/microsservicos.md` — `source_count` 11 → 12; plataforma self-service como pré-requisito organizacional dos times autônomos
+- `wiki/concepts/application-boundary.md` — `source_count` 3 → 4; mesma tese na fronteira de plataforma/time (decisão organizacional, não só técnica)
+- `wiki/index.md` — nova linha no topo de Sources; 5 conceitos novos em "Arquitetura Backend & Event-Driven"; 3 entidades novas no topo de Entities
+
+**Notas / contradições:** (1) **Sem contradição** com a wiki — a fonte estende, pela camada de entrega/infra, a mesma Lei de Conway já registrada em [[wiki/concepts/contexto-organizacional-para-arquitetura]] e [[wiki/concepts/microsservicos]]. (2) **Continuidade histórica, não conflito:** "sensible defaults" (2018) evoluiu para "golden paths"/IDP/Backstage `[skill: tech-mentor-infra]` — mesma ideia, vocabulário mais maduro. (3) O número **"10-12x mais lento"** vem de um único estudo interno de telecom não publicado — ordem de grandeza ilustrativa, não benchmark. (4) **Copyright:** o texto integral não pôde ser reproduzido verbatim; o `raw/` é adaptação/tradução livre com citações curtas preservadas em inglês.

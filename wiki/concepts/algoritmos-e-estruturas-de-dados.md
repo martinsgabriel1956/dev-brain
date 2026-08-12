@@ -3,8 +3,8 @@ type: concept
 title: "Algoritmos e Estruturas de Dados"
 aliases: ["DSA", "data structures", "estruturas de dados", "algoritmos"]
 date_created: 2026-05-16
-date_updated: 2026-08-04
-source_count: 11
+date_updated: 2026-08-12
+source_count: 13
 tags: [fundamentos, cs-fundamentals, algoritmos, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -96,3 +96,5 @@ Cada estrutura tem sua própria página com complexidade, analogias e quando usa
 - [[wiki/sources/tres-projetos-para-aprender-programar]] — Pathfinding como projeto que introduz algoritmos como estratégia de resolução de problema, não como sintaxe
 - [[wiki/sources/binary-search-em-5-minutos]] — binary search (passo 3 da sequência de aprendizado acima) resolvido do zero até implementação real, com técnica de two pointers
 - [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — três problemas de entrevista resolvidos em versão ingênua e versão ótima (array+hash set, hashmap+bucket sort, two pointers), com ênfase em por que a explicação do raciocínio importa mais que a resposta
+- [[wiki/sources/busca-linear-e-binaria-giovana]] — busca (passo 3 da sequência) via analogia física + código JS, defendendo o método "teoria no papel antes do código"
+- [[wiki/sources/como-ficar-bom-em-leetcode]] — lista das estruturas que "cobrem quase tudo" (array, linked list, queue, stack, binary tree, hash map, graph) e o loop estrutura→padrão→repetição para dominá-las; ênfase em implementar cada uma por conta própria

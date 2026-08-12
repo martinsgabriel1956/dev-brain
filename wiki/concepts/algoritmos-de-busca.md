@@ -3,9 +3,9 @@ type: concept
 title: "Algoritmos de Busca"
 aliases: ["searching algorithms", "search", "busca", "linear search", "binary search"]
 date_created: 2026-07-09
-date_updated: 2026-08-04
-source_count: 3
-tags: [cs-fundamentals, algoritmos, searching, big-o, linear-search, binary-search, two-pointer]
+date_updated: 2026-08-12
+source_count: 4
+tags: [cs-fundamentals, algoritmos, searching, big-o, linear-search, binary-search, two-pointer, logaritmo]
 skill: cs-fundamentals
 status: draft
 ---
@@ -66,9 +66,11 @@ Binary Search só é possível porque alguém pagou o custo de ordenar os dados 
 - [[wiki/concepts/hashmap]] — busca por chave O(1) amortizado como alternativa a busca em array
 - [[wiki/concepts/melhor-caso-pior-caso-caso-medio]] — busca linear como exemplo didático dos três cenários de complexidade
 - [[wiki/concepts/two-pointer]] — técnica usada na implementação real de binary search (evita recriação recursiva de sub-arrays)
+- [[wiki/concepts/logaritmo]] — por que binary search é O(log n): cada passo descarta metade do problema (`2^x = n`)
 
 ## Key sources
 
 - [[wiki/sources/9-algoritmos-que-todo-programador-deveria-saber]]
 - [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]] — busca binária como exemplo canônico de O(log n) (cada passo descarta metade do problema); distinção melhor/pior/caso médio
 - [[wiki/sources/binary-search-em-5-minutos]] — implementação two pointers completa, resolvida ao vivo no LeetCode em menos de 5 minutos
+- [[wiki/sources/busca-linear-e-binaria-giovana]] — analogia física (achar página 310 num livro de 423 páginas), contador de etapas (7 vs. 3) e derivação da complexidade logarítmica (`2^x = n`, base 2)

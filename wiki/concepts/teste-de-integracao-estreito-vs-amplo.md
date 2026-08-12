@@ -3,8 +3,8 @@ type: concept
 title: "Teste de Integração: Estreito vs. Amplo"
 aliases: ["narrow integration test", "broad integration test", "teste de integração narrow", "teste de integração broad", "system test", "end-to-end test (Fowler)"]
 date_created: 2026-07-07
-date_updated: 2026-07-27
-source_count: 3
+date_updated: 2026-08-12
+source_count: 4
 tags: [testes, integracao, martin-fowler, contract-testing, microservices, terminologia]
 skill: tech-mentor-testing
 status: stable
@@ -29,7 +29,7 @@ status: stable
 
 A definição "ampla" vem do waterfall dos anos 80: módulos eram construídos isoladamente por meses e só se juntavam numa fase de QA que ativava tudo junto para validar a composição. Não havia alternativa prática — testar carrinho + catálogo exigia rodar os dois.
 
-A definição "estreita" só se tornou viável quando a prática de dublês de teste fiéis amadureceu: hoje dá para testar a integração do carrinho com o catálogo exercitando apenas o código do carrinho que fala com o catálogo, contra um double do catálogo.
+A definição "estreita" só se tornou viável quando a prática de dublês de teste fiéis amadureceu: hoje dá para testar a integração do carrinho com o catálogo exercitando apenas o código do carrinho que fala com o catálogo, contra um double do catálogo. A fonte primária de [[test-doubles]] ([[wiki/sources/test-double-xunitpatterns-meszaros]]) formaliza por que isso funciona: substitui-se o **DOC** (o catálogo) por um double que só precisa expor a **mesma API** que o SUT (o carrinho) exercita — "fiel o suficiente", não idêntico.
 
 ## O combo que substitui o teste amplo
 
@@ -57,6 +57,7 @@ Para evitar a ambiguidade, Fowler prefere renomear em vez de qualificar todo mun
 ## Key Sources
 
 - [[wiki/sources/integration-test-martin-fowler]]
+- [[wiki/sources/test-double-xunitpatterns-meszaros]] — fonte primária do double (DOC / "mesma API, fiel o suficiente") que viabiliza o teste estreito
 - [[wiki/sources/contract-test-martin-fowler]] — mecânica do contract test que mitiga o double não-fiel
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — caso prático de "amplo" ambíguo em sistema com PSP e fornecedor externos
 - [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — testes de integração como o tipo de melhor custo-benefício segundo o consenso de CTOs relatado, usável como critério de aceitação por task para conter code rot

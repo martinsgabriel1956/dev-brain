@@ -3,8 +3,8 @@ type: concept
 title: "Big O"
 aliases: ["complexidade de algoritmos", "Big-O notation", "O(n)", "complexidade assintótica"]
 date_created: 2026-06-26
-date_updated: 2026-08-07
-source_count: 7
+date_updated: 2026-08-12
+source_count: 9
 tags: [cs-fundamentals, algoritmos, big-o, complexidade, performance]
 skill: cs-fundamentals
 status: draft
@@ -99,3 +99,5 @@ O(1) pode ser mais lento que O(n) para entradas pequenas se a constante for gran
 - [[wiki/sources/binary-search-em-5-minutos]] — comparação lado a lado O(n) vs. O(log n) no mesmo array, contando passos concretos
 - [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — custo escondido da ordenação prévia numa solução que "parece" O(n); regra de descarte de constantes com exemplo de três loops sequenciais (O(3n) = O(n))
 - [[wiki/sources/conceitos-que-regem-a-computacao-bits-turing-complexidade]] — Big O como comportamento assintótico; contraste O(n) × O(n²) × O(2ⁿ) com números concretos e a exponencial como base da segurança criptográfica
+- [[wiki/sources/busca-linear-e-binaria-giovana]] — derivação da complexidade logarítmica (`2^x = n`), por que o `+1` de O(log n + 1) é descartado, e tabela de crescimento O(n) vs. O(log n) (8/64/128 elementos)
+- [[wiki/sources/como-ficar-bom-em-leetcode]] — "tem que saber Big O para ficar bom em LeetCode, ponto" — pré-requisito não negociável antes de treinar padrões

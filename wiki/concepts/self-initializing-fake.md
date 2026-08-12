@@ -3,8 +3,8 @@ type: concept
 title: "SelfInitializingFake"
 aliases: ["self-initializing fake", "fake auto-inicializável"]
 date_created: 2026-07-27
-date_updated: 2026-07-27
-source_count: 1
+date_updated: 2026-08-12
+source_count: 2
 tags: [testes, test-doubles, contract-testing, martin-fowler]
 skill: tech-mentor-testing
 status: stub
@@ -18,7 +18,7 @@ Isso combina os dois lados do problema num só objeto: o mesmo double usado nos 
 
 ## Ver também
 
-- [[wiki/concepts/test-doubles]] — categoria geral (Fake é um dos cinco tipos de Meszaros)
+- [[wiki/concepts/test-doubles]] — categoria geral (Fake é um dos cinco tipos de Meszaros); na definição primária ([[wiki/sources/test-double-xunitpatterns-meszaros]]), um **Fake** é uma implementação funcional simplificada do DOC, usada por razões que **não** são controle nem observação — exatamente o caso deste padrão, cuja autovalidação é uma camada extra sobre esse Fake
 - [[wiki/concepts/contract-testing]] — o problema que o SelfInitializingFake ajuda a resolver
 - [[wiki/concepts/teste-de-integracao-estreito-vs-amplo]] — onde esse double é usado (narrow integration test)
 
@@ -29,3 +29,4 @@ Isso combina os dois lados do problema num só objeto: o mesmo double usado nos 
 ## Key Sources
 
 - [[wiki/sources/contract-test-martin-fowler]]
+- [[wiki/sources/test-double-xunitpatterns-meszaros]] — definição primária de Fake (implementação simplificada do DOC, nem controle nem observação)

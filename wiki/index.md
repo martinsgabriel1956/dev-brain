@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-08-11
+date_updated: 2026-08-12
 ---
 
 
@@ -20,6 +20,12 @@ date_updated: 2026-08-11
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/como-ficar-bom-em-leetcode]] | Método iterativo para ficar bom em **LeetCode** (vídeo pt-BR, foco em Python): escolher uma linguagem de baixo boilerplate → estudar e **implementar** uma estrutura de dados → aprender os padrões dela (DFS/BFS em árvore, two pointer, hash map, sliding window, backtracking, DP) → resolver vários problemas do mesmo padrão até **reconhecê-lo** no enunciado → próxima estrutura. Tese = [[wiki/concepts/reconhecimento-de-padroes|reconhecimento de padrões]] ("memorize o padrão, não o problema"). Corolário: com ~5-10 min sem enxergar o início da solução, não trave — leia a solução e reescreva linha a linha. Big O é pré-requisito não negociável. É o lado prático/mecânico da mesma tese que Anthony Mays defende pelo lado da entrevista |
+| [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]] | Matheus Castiglioni taxonomiza **acoplamento** (6 tipos: data → stamp → control → external → common → content, do mais fraco ao mais forte; 2 categorias: apropriado vs. não apropriado) e apresenta as **métricas de acoplamento** de Robert C. Martin: aferente (Ca) / eferente (Ce), abstração `A = ma/(ma+mc)`, instabilidade `I = Ce/(Ca+Ce)`, distância da sequência principal `D = |A + I − 1|`, e as duas armadilhas do gráfico A×I — **zona de dor** (concreto/rígido demais → frágil) e **zona de inutilidade** (abstrato demais → ninguém usa). Dá fórmulas concretas ao que a wiki tratava só qualitativamente |
+| [[wiki/sources/talk-about-platforms-evan-bottcher]] | Evan Bottcher (Thoughtworks, 2018, no site de Fowler) define **plataforma digital**: "uma fundação de APIs, ferramentas, serviços, conhecimento e suporte self-service, organizados como um **produto interno atraente**". Tese: plataforma é problema **organizacional**, não técnico. Uma "não-plataforma" (infra por silo técnico — caso BigCo) gera **acoplamento de backlog** (tarefas dependentes de outro time "10-12x mais lentas") e degrada qualidade. Self-service resolve, mas autonomia total cria o custo oposto (arrasto por diversificação — caso WebBiz/Cloud Native Landscape). Síntese: plataforma como produto com **sensible defaults**, adotada por atração e não mandato (Netflix: *paved road*). Pré-requisitos: funding de produto (não projeto), *you build it, you run it*, trocar consistência estrita por autonomia |
+| [[wiki/sources/test-double-xunitpatterns-meszaros]] | **Fonte primária** da taxonomia de Test Doubles — a página canônica `Test Double` de **Gerard Meszaros** no xUnitPatterns.com (versão preliminar do capítulo do livro *xUnit Test Patterns*, 2007). Até agora a wiki só tinha o relato secundário de Fowler. Define o termo guarda-chuva ("Impostor"): substituir um **DOC** (componente-dependência real) por um "equivalente específico para teste" que só precisa expor a **mesma API** — analogia do **dublê de cinema** ("fiel o suficiente para a cena"). Fixa o vocabulário formal — **SUT**, **DOC**, **entrada/saída indireta**, **ponto de controle/observação** — e classifica os cinco tipos por *como/por que* se usa: **Dummy** (só preenche assinatura), **Stub** (controla entradas indiretas), **Spy** (Stub que grava saídas indiretas), **Mock** (verifica saídas indiretas — "não é Stub + asserção"), **Fake** (implementação simplificada, nem controle nem observação). Alertas: sempre ter ao menos um teste sem double; não substituir o que se quer verificar; excesso de doubles → Fragile Tests |
+| [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] | Fernanda Kipper amarra os fundamentos de endereçamento da internet a uma configuração prática de deploy na AWS. Teoria com analogias: **endereço IP** (sequência que identifica o dispositivo — "rua + número"; IPv4 com 4 octetos 0–255 e teto de ~4,3 bi, esgotando → IPv6), **domínio** (nome personalizado + TLD; TLD diferente = domínio diferente), **DNS** ("agenda telefônica" que resolve domínio → IP) e **HTTP vs HTTPS** (o *Secure* adiciona criptografia e certificado SSL, que só prova ser dono *daquele* domínio — não a marca esperada; mitiga Man-in-the-Middle). Hands-on: configura `kdev.xyz` no **Route 53** (hosted zone → troca de name servers na GoDaddy → propagação DNS), aponta para site estático no **S3** (só HTTP) e adiciona HTTPS via certificado no **ACM** (validação por CNAME) + distribuição **CloudFront** com redirect HTTP→HTTPS. Site real da autora hospedado na Vercel |
+| [[wiki/sources/busca-linear-e-binaria-giovana]] | Aula introdutória (Giovana / Alura) sobre algoritmos de busca: **busca linear** (elemento por elemento, O(n)) vs. **busca binária** (divide o intervalo pela metade, O(log n), exige array ordenado). Ancora a teoria em analogias físicas antes do código — achar a página 310 num livro de 423 páginas (linear ~310 etapas, binária 4) e um array de 8 elementos — e implementa ambos em JavaScript com **contador de etapas** (7 vs. 3). Fecha com a derivação da complexidade logarítmica (`2^x = n`, base 2 do logaritmo binário) e tabela de crescimento (8/64/128 elementos). Método explícito: teoria no papel antes do código; a linguagem é a "última coisa com que se preocupar" |
 | [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] | Canal de negócios (autor não identificado) usa o lançamento do **Opus 5** da Anthropic como aula de **ancoragem de preço**: o Opus "parece barato" porque é ancorado ao **Fable** (premium caro), não ao Sonnet — a mesma jogada do iPhone Pro Max. Motivada por pressão do mid-tier (Kimi K3 US$ 0,92 vs Fable US$ 2,13 no Cline; Grok 4.5). Conclusão de posicionamento: o **Opus virou o "novo Sonnet"**, o Fable é a nova âncora, e o tier barato (Haiku) está sendo abandonado para open source a ~1/10 do preço. Moral: só se "brinca com percepção de valor" em vendas quem também é bom tecnicamente — a época de "só lábia" acabou |
 | [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] | Augusto Galego: comandos básicos de shell que todo dev deve **reconhecer** (não decorar). Tese central — você precisa conhecê-los porque **é assim que as IAs manipulam seu computador**: a harness do Claude Code roda `cat`/`echo`/`grep`/`sed` nativos e envia o output ao servidor da Anthropic ("puro suco da harness"); e ~90% dos servidores rodam Linux/Unix (SSH, CI/CD). Cobre terminal, navegação (`pwd`/`ls`/`cd`/`mkdir -p`), leitura/escrita sem editor (`touch`/`echo >`/`>>`/`cat`), `cp`/`mv`/`rm -rf` (com aviso), variáveis de ambiente (`.env`/`export`/`.zshrc`), permissões (`chmod +x`/`sudo`), `grep -inr`, pipe operator (`\|`) e `sed`. Patrocínio Abacus |
 | [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] | Continuação de "Git Flow é uma farsa" (Lucas Montano): entrega a "solução" prometida mas defende que **não existe processo universal**. Enquadra o hype de Git Flow como **cargo cult** elevado a "padrão industrial" por influenciadores ("modificadores de cultura" — mesmo caso de squads-do-Spotify); núcleo do vídeo é **maturidade** (buscar princípios, adaptar-se ao processo da empresa). Sua solução para **times pequenos** (4 anos de uso, admitidamente não-escalável): fluxo **só-`main`** (trunk-based) com CI como **single command deploy** frictionless, um dono por entrega, e integração por **rebase** (evita o "subway train from hell", gera fast-forward merges). O rebase-flow depende de ownership centralizado → não escala (bus factor) |
@@ -715,6 +721,7 @@ date_updated: 2026-08-11
 | [[wiki/concepts/complexidade-computacional]] | Eficiência de algoritmos em tempo e espaço (finitos) — Big O como comportamento assintótico; base da segurança criptográfica |
 | [[wiki/concepts/big-o]] | Notação que descreve como o tempo cresce com os dados — O(log n) com 1B elementos = 30 comparações |
 | [[wiki/concepts/melhor-caso-pior-caso-caso-medio]] | A mesma busca pode ser O(1), O(n) ou "o que costuma acontecer" — "complexidade" sem qualificação numa entrevista é o pior caso |
+| [[wiki/concepts/logaritmo]] | `log_a(B)=x` ⇔ `a^x=B`; base 2 (binário) é omitida em Big O — descartar metade do problema por passo dá O(log n) na busca binária |
 | [[wiki/concepts/time-space-tradeoff]] | Gastar mais memória (índice) para economizar passos — Big O mais baixo nem sempre é a melhor escolha |
 | [[wiki/concepts/recursao]] | Função que chama ela mesma — caso base (para) + caso recursivo (divide) |
 | [[wiki/concepts/lista-encadeada]] | Nós encadeados por ponteiros — inserção O(1) no meio, acesso O(n) por posição |
@@ -723,6 +730,9 @@ date_updated: 2026-08-11
 | [[wiki/concepts/compilador]] | Traduz código-fonte em código de máquina via lexer → parser → AST → otimizador |
 | [[wiki/concepts/protocolo-de-rede]] | Regras de comunicação em camadas — HTTP diz o quê, TCP garante entrega, IP define rota |
 | [[wiki/concepts/porta-de-rede]] | Número virtual (0–65.535) que identifica serviço/processo num host — IANA organiza em well-known, registered e dynamic; SO atribui porta dinâmica por conexão de saída para demultiplexar respostas |
+| [[wiki/concepts/endereco-ip]] | Sequência numérica que identifica um dispositivo na rede ("rua + número") — IPv4 (4 octetos 0–255, ~4,3 bi, esgotando) vs IPv6 (128 bits); complementa a porta (IP = qual host, porta = qual serviço) |
+| [[wiki/concepts/dominio]] | Nome legível que traduz um IP — nome personalizado + TLD; mesmo nome com TLD diferente é outro domínio (dono diferente) |
+| [[wiki/concepts/http-vs-https]] | Mesmo protocolo; o *Secure* adiciona criptografia (troca de chaves/SSL) contra Man-in-the-Middle — o certificado só prova ser dono do domínio, não que é a marca esperada |
 | [[wiki/concepts/criptografia]] | Hashing irreversível, simétrica (mesma chave) e assimétrica (par público/privado) — base do HTTPS |
 | [[wiki/concepts/bluetooth-le]] | Advertising → scan → pair → GATT — o "handshake" do Bluetooth Low Energy; gerenciar mal o ciclo gera conexão fantasma e dreno de bateria |
 | [[wiki/concepts/sistema-de-tipos]] | Estática vs. dinâmica vs. inferência — quando os erros de tipo são pegos: compilação ou runtime |
@@ -768,6 +778,13 @@ date_updated: 2026-08-11
 | [[wiki/concepts/bucket-sort]] | Ordenar sem comparar: distribuir elementos em "baldes" indexados por um valor com teto conhecido (ex.: frequência ≤ n) — O(n) em vez de O(n log n) |
 | [[wiki/concepts/two-pointer]] | Dois índices móveis sobre a mesma estrutura em vez de recriar sub-arrays a cada chamada recursiva — implementação real de binary search |
 | [[wiki/concepts/algoritmos-de-grafo]] | DFS, BFS, Dijkstra e A* — do backtrack ingênuo ao roteamento com heurística do Google Maps |
+| [[wiki/concepts/binary-search-tree]] | Árvore ordenada para busca (esquerda menor, direita maior) — O(log n) balanceada; a maioria dos problemas de árvore no LeetCode cai em DFS ou BFS |
+| [[wiki/concepts/busca-em-profundidade]] | DFS — mergulha por um ramo até o fim antes de retroceder (pilha/recursão); um dos dois padrões que resolvem quase todo problema de árvore |
+| [[wiki/concepts/busca-em-largura]] | BFS — varre nível a nível com fila; par complementar da DFS para árvores e menor caminho em grafo não ponderado |
+| [[wiki/concepts/sliding-window]] | Janela contígua sobre array/string movida por dois índices — transforma O(n²) de "testar todo subarranjo" em O(n) reaproveitando a janela anterior |
+| [[wiki/concepts/backtracking]] | DFS na árvore de decisões que desfaz a última escolha ao detectar beco sem saída — combinações, permutações, N-Queens |
+| [[wiki/concepts/programacao-dinamica]] | Subproblemas sobrepostos + subestrutura ótima; memoização derruba Fibonacci de O(2ⁿ) para O(n) — comece por Fibonacci |
+| [[wiki/concepts/escolha-de-linguagem-para-leetcode]] | Use uma linguagem de baixo boilerplate (Python de preferência); evite Rust/Haskell salvo fluência — para não brigar com a linguagem em vez do problema |
 | [[wiki/concepts/repertorio]] | Acúmulo de experiência prática que gera reconhecimento de padrões e intuição — o terceiro pilar da competência |
 | [[wiki/concepts/string]] | Slice de bytes + charset + encoding — imutável porque alterar bytes quebra UTF-8 silenciosamente |
 | [[wiki/concepts/charset]] | Mapeamento valor numérico → caractere; distinto de encoding (que é o algoritmo de serialização) |
@@ -877,6 +894,9 @@ date_updated: 2026-08-11
 | [[wiki/concepts/infraestrutura-como-codigo]] | Tratar infra como código versionado/revisável em vez de clicar no console — versionamento, revisão, replicabilidade, automação |
 | [[wiki/concepts/aws-cdk]] | TypeScript (ou outra linguagem geral) que sintetiza para CloudFormation — permite lógica condicional real na definição de infra |
 | [[wiki/concepts/aws-cloudformation]] | Formato declarativo nativo AWS (YAML/JSON) agrupado em "stack" — artefato de fato aplicado por trás do CDK |
+| [[wiki/concepts/aws-cloudfront]] | CDN global da AWS — serve conteúdo do POP mais próximo; também usada como camada de HTTPS na frente de um site estático no S3 |
+| [[wiki/concepts/aws-route-53]] | DNS gerenciado da AWS — hosted zone (pública/privada), name servers, registros Alias/CNAME/A para apontar domínio a S3/CloudFront |
+| [[wiki/concepts/certificado-ssl-acm]] | Certificado SSL emitido pelo ACM com validação por CNAME no DNS — prova de posse do domínio; anexado ao CloudFront para habilitar HTTPS |
 
 ### Fundamentos de Backend (Request/Response ao Deploy)
 
@@ -988,6 +1008,11 @@ date_updated: 2026-08-11
 | [[wiki/concepts/cqrs]] | Separar modelos de escrita e leitura — write emite eventos, read mantém projeções otimizadas |
 | [[wiki/concepts/ddd]] | Domínio no centro, adapters na borda — aggregates, domain events, bounded context |
 | [[wiki/concepts/application-boundary]] | Aplicações são construções sociais — devs, negócio e orçamento enxergam "uma unidade única" de formas diferentes; fronteira real é política, não técnica |
+| [[wiki/concepts/plataforma-digital]] | Definição de Bottcher: fundação self-service de APIs/ferramentas/serviços organizada como **produto interno atraente**; escolhida, não imposta |
+| [[wiki/concepts/backlog-coupling]] | Quando um item de um time depende do backlog de outro — tarefas "10-12x mais lentas"; o problema que a plataforma resolve via self-service |
+| [[wiki/concepts/sensible-defaults-paved-road]] | Padrões sensatos (sobrescrevíveis) que reconciliam autonomia e consolidação sem mandato; Netflix chama de *paved road* (quem sai paga o custo) |
+| [[wiki/concepts/plataforma-como-produto]] | Tratar a plataforma como produto interno com usuários; só mandato falha (monopólio) — teste: mais fácil consumir do que construir a própria |
+| [[wiki/concepts/you-build-it-you-run-it]] | Quem constrói também opera e fica on-call; aplica-se a times de aplicação e de plataforma — DevOps não é um cargo/silo |
 | [[wiki/concepts/datomic]] | Banco de dados imutável com time-travel — append-only, datoms, snapshots; fundação do Nubank |
 | [[wiki/concepts/ledger-imutavel]] | Saldo = soma de transações; nunca UPDATE em entradas financeiras — padrão fintech obrigatório |
 | [[wiki/concepts/programacao-funcional]] | Imutabilidade + funções puras + efeitos explícitos — paradigma que elimina complexidade acidental |
@@ -1055,6 +1080,7 @@ date_updated: 2026-08-11
 | [[wiki/concepts/decidir-o-que-importa]] | Separar o que importa do que não importa e estruturar o sistema em torno disso — alavancagem, prominência, repetição, centralidade; "bom gosto" como habilidade central de design |
 | [[wiki/concepts/lentes-de-codigo]] | Acoplamento, abstração e estado não são termos para decorar — são lentes que revelam se o código é bom ou só funciona; central para avaliar código gerado por IA |
 | [[wiki/concepts/acoplamento]] | Grau de dependência entre partes — quanto uma mudança em A força mudança em B; god function vs. funções separadas por responsabilidade |
+| [[wiki/concepts/metricas-de-acoplamento]] | Torna o acoplamento mensurável (Uncle Bob): aferente Ca / eferente Ce, abstração `A`, instabilidade `I = Ce/(Ca+Ce)`, distância da sequência principal `D = |A+I−1|`; zona de dor (concreto+rígido) vs. zona de inutilidade (abstrato+instável) |
 | [[wiki/concepts/abstracao]] | Esconder o que não precisa ser visto atrás de um contrato — troca de implementação (banco → API) sem tocar no código consumidor |
 | [[wiki/concepts/coesao]] | Quanto as responsabilidades dentro de uma unidade estão relacionadas entre si — alta coesão interna + baixo acoplamento externo é o alvo |
 | [[wiki/concepts/single-responsibility]] | Uma unidade deve ter uma única razão para mudar — o critério é o ator que causa a mudança, não o número de linhas |
@@ -1257,6 +1283,12 @@ date_updated: 2026-08-11
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/evan-bottcher]] | Líder técnico da Thoughtworks — cunhou a definição de referência de plataforma digital ("compelling internal product") e o termo *backlog coupling* (2018) |
+| [[wiki/entities/netflix]] | Referência em engenharia de plataforma — modelo *paved road* (estrada pavimentada): ferramental central opcional, mas quem sai paga o custo da alternativa |
+| [[wiki/entities/phil-calcado]] | Engenheiro (microsserviços/DevOps) citado por Bottcher: "perdemos a batalha do 'DevOps não é cargo/time/ferramentas'" |
+| [[wiki/entities/fernanda-kipper]] | Desenvolvedora e criadora de conteúdo (YouTube) — aula de fundamentos de rede + configuração de domínio na AWS; site pessoal hospedado na Vercel |
+| [[wiki/entities/godaddy]] | Registrador de domínios (domain registrar) — painel de DNS onde se configuram os name servers que decidem para qual servidor o domínio aponta |
+| [[wiki/entities/alura]] | Escola de tecnologia brasileira e canal educativo — publica a aula de algoritmos de busca (busca linear vs. binária) apresentada por Giovana |
 | [[wiki/entities/verdent-ai]] | IDE com IA nativa (beta) — múltiplos agentes paralelos, modo plan com diagrama Mermaid e skills (inclui Skill Creator); usada para demonstrar boas práticas de uso de agentes |
 | [[wiki/entities/gregor-ojstersek]] | Autor da newsletter Engineering Leadership (Substack) e do livro *The Multiplier Mindset* — tese de que o potencial de engenheiros se reconhece por atitude/mindset, não tech skill atual |
 | [[wiki/entities/lucas-faria]] | Autor do artigo "sete conceitos que mais caem em entrevistas de System Design Tier S" — base da série de vídeos de System Design de Pedro Camaforte (identidade/URL não confirmadas na fonte) |
@@ -1272,6 +1304,7 @@ date_updated: 2026-08-11
 | [[wiki/entities/theodor]] | Dev/criador de conteúdo construindo jogo indie do zero sem engine — identidade exata não confirmada na fonte |
 | [[wiki/entities/oracle]] | Empresa de software corporativo (~400bi de market cap) — demitiu 20-30 mil pessoas via e-mail automático, motivo alegado é substituição de DBAs por agente de IA piloto há 8+ meses |
 | [[wiki/entities/otavio-lemos]] | Professor (UNIFESP/USP/UCI) e criador de conteúdo — autor de *Arquitetura Limpa na Prática*, tutorial de Clean Architecture com estudo de caso completo em TypeScript |
+| [[wiki/entities/matheus-castiglioni]] | Software Engineer e autor de blog técnico em português — post que taxonomiza tipos/categorias de acoplamento e apresenta as métricas de Uncle Bob (abstração, instabilidade, distância da sequência principal) de forma acessível |
 | [[wiki/entities/knight-capital]] | Trading de alta frequência: código morto reativado por engano num deploy (2012) causou perda de ~$440-460 milhões em 45 minutos — caso extremo de custo de não seguir a Boy Scout Rule |
 | [[wiki/entities/edgar-codd]] | IBM, 1970: paper do modelo relacional e independência de dados — fundamento de tudo que veio depois |
 | [[wiki/entities/rabbitmq]] | Message broker AMQP — fila que viabiliza Saga Pattern coreografado sem gargalo de coordenação síncrona |

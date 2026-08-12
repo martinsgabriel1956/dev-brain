@@ -3,8 +3,8 @@ type: concept
 title: "Reconhecimento de Padrões"
 aliases: ["pattern recognition", "padrões de solução", "padrões de problema", "repertório de padrões"]
 date_created: 2026-06-10
-date_updated: 2026-08-04
-source_count: 3
+date_updated: 2026-08-12
+source_count: 4
 tags: [aprendizado, maestria, pratica-deliberada, cognicao, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -70,3 +70,4 @@ Daí a afirmação: "tu não leva tempo para decorar uma sintaxe — tu leva mui
 - [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]] — aplicação prática em entrevistas de coding: "memorize o padrão, não o problema"
 - [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]] — o repertório de padrões sustenta o brainstorm de soluções na etapa 7 do framework "Os Seis Passos"
 - [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — três padrões concretos e reaplicáveis (hash set para início de sequência, bucket sort por índice conhecido, two pointers com movimento independente) demonstrados em problemas diferentes
+- [[wiki/sources/como-ficar-bom-em-leetcode]] — o método de estudo operacionaliza o conceito: repetir 2-4 problemas do mesmo padrão até reconhecê-lo no enunciado; "memorize o padrão, não o problema"

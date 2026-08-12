@@ -3,8 +3,8 @@ type: concept
 title: "Algoritmos de Ordenação"
 aliases: ["sorting algorithms", "sorting", "ordenação"]
 date_created: 2026-07-09
-date_updated: 2026-08-04
-source_count: 2
+date_updated: 2026-08-12
+source_count: 3
 tags: [cs-fundamentals, algoritmos, sorting, big-o, bubble-sort, insertion-sort, merge-sort]
 skill: cs-fundamentals
 status: draft
@@ -71,3 +71,4 @@ Quando o valor de ordenação tem teto conhecido (ex.: frequência de um element
 
 - [[wiki/sources/9-algoritmos-que-todo-programador-deveria-saber]]
 - [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — custo escondido de `sort()` numa solução que parece O(n); bucket sort por frequência como alternativa O(n) sem comparação
+- [[wiki/sources/busca-linear-e-binaria-giovana]] — ordenação prévia (ex.: Quicksort) como pré-requisito da busca binária

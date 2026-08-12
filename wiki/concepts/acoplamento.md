@@ -3,8 +3,8 @@ type: concept
 title: "Acoplamento"
 aliases: ["coupling", "baixo acoplamento", "alto acoplamento"]
 date_created: 2026-04-25
-date_updated: 2026-08-04
-source_count: 6
+date_updated: 2026-08-12
+source_count: 7
 tags: [acoplamento, software-design, clean-code, arquitetura, under-engineering]
 skill: tech-mentor-backend
 status: stable
@@ -76,8 +76,15 @@ A fonte formaliza isso em **três estágios de acoplamento**, exemplificados via
 
 Esse terceiro padrão generaliza o próprio problema já descrito nesta página em "Alto acoplamento (problema)" e nos "três estágios de acoplamento" — a diferença é que aqui a fronteira é entre módulos/pacotes inteiros, não entre funções dentro do mesmo arquivo, e a fonte propõe capturar a violação automaticamente no CI (ferramenta de análise de estrutura de dependências), não só via revisão humana ou heurística de design.
 
+## Tipos, Categorias e Métricas: Tornando o Acoplamento Mensurável
+
+[[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]] complementa toda a discussão qualitativa acima com uma **taxonomia formal e fórmulas**. Distingue seis *tipos* de acoplamento em ordem crescente de força/indesejabilidade — **data** (só informação passa, mais fraco), **stamp** (estruturas inteiras), **control** (parâmetros que ativam comportamentos), **external** (dependência de partes externas), **common** (dependência de estado global) e **content** (uma parte modifica dados/fluxo interno de outra, mais forte) — e duas *categorias* qualitativas: acoplamento **apropriado** (você sabe que existe e deveria existir) vs. **não apropriado** (não sabe que existe, ou sabe e não deveria).
+
+Sobre medição, apresenta as métricas de [[wiki/entities/uncle-bob|Robert C. Martin]]: acoplamento **aferente** (Ca, conexões que entram) e **eferente** (Ce, conexões que saem), abstração `A = ma/(ma+mc)`, instabilidade `I = Ce/(Ca+Ce)` e distância da sequência principal `D = |A + I − 1|`, além das duas regiões-armadilha do gráfico A×I — a **zona de dor** (concreto e rígido demais → frágil) e a **zona de inutilidade** (abstrato demais → ninguém usa). A página [[wiki/concepts/metricas-de-acoplamento]] consolida essas fórmulas e sua interpretação.
+
 ## Relações
 
+- [[metricas-de-acoplamento]] — como medir acoplamento por componente: aferente/eferente, abstração, instabilidade, distância da sequência principal
 - [[abstracao]] — abstração é o mecanismo que permite baixo acoplamento entre módulos
 - [[single-responsibility]] — SRP é a diretriz que orienta como separar responsabilidades
 - [[coesao]] — conceito complementar: coesão alta dentro de um módulo + acoplamento baixo entre módulos é o alvo
@@ -85,6 +92,7 @@ Esse terceiro padrão generaliza o próprio problema já descrito nesta página 
 
 ## Key sources
 
+- [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]] — taxonomia (6 tipos + 2 categorias) e as métricas de Uncle Bob (aferente/eferente, abstração A, instabilidade I, distância D, zonas de dor/inutilidade)
 - [[wiki/sources/acoplamento-abstracao-estado]]
 - [[sources/ports-and-adapters-codebase-para-ia]] — forte acoplamento em god class quebra três módulos por uma mudança
 - [[wiki/sources/design-pattern-adapter]] — `new` de uma classe concreta de baixo nível (lib externa) dentro de uma classe de alto nível é a manifestação de acoplamento que o [[wiki/concepts/adapter-pattern]] resolve

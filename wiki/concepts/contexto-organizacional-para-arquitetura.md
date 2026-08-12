@@ -3,8 +3,8 @@ type: concept
 title: "Contexto Organizacional para Arquitetura"
 aliases: ["maturidade organizacional", "restricoes organizacionais de arquitetura", "arquitetura e processo da empresa"]
 date_created: 2026-07-03
-date_updated: 2026-07-27
-source_count: 3
+date_updated: 2026-08-12
+source_count: 4
 tags: [arquitetura, processo, carreira, ia]
 skill: tech-mentor-leadership
 status: stub
@@ -41,8 +41,13 @@ A IA consegue gerar um desenho de arquitetura "ideal" em segundos, mas não sabe
 
 [[wiki/sources/microsservicos-martin-fowler-james-lewis]] cita Melvin Conway (1968) diretamente: "qualquer organização que projeta um sistema (definido de forma ampla) produzirá um design cuja estrutura é uma cópia da estrutura de comunicação da organização". O artigo usa isso para explicar por que decompor um sistema por camada técnica (time de UI, time de lógica, time de banco) é um anti-padrão: qualquer mudança simples vira um projeto interequipes com aprovação orçamentária, e a lógica de negócio acaba forçada para dentro de qualquer camada com acesso mais fácil — "lógica em todo lugar". A saída proposta é decompor por [[wiki/concepts/microsservicos|capacidade de negócio]], com times multifuncionais cross-funcionais (UX, banco, gestão de projeto) dentro do mesmo time, reforçando fronteiras de serviço com fronteiras de time — o mesmo raciocínio depois formalizado como *Inverse Conway Maneuver* em Team Topologies (ver [[wiki/sources/conways-law]]).
 
+## Plataforma como problema organizacional (Bottcher)
+
+[[wiki/sources/talk-about-platforms-evan-bottcher]] é outra aplicação direta desta ideia: infra organizada por **silo técnico** (DBA, redes, middleware) faz a Lei de Conway operar contra a entrega, gerando [[wiki/concepts/backlog-coupling|acoplamento de backlog]] (tarefas dependentes de outro time "10-12x mais lentas"). Bottcher enquadra plataforma como **problema organizacional antes de técnico** — a solução técnica (self-service) só funciona se acompanhada de mudança de estrutura e funding (ver [[wiki/concepts/plataforma-como-produto]]).
+
 ## Key Sources
 
 - [[wiki/sources/vibe-coding-limites-maturidade-profissional]]
 - [[wiki/sources/application-boundary-martin-fowler]] — fronteiras de aplicação como construção social, precursor de 2003 do mesmo argumento
 - [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — Lei de Conway como justificativa central para decompor por capacidade de negócio, não por camada técnica
+- [[wiki/sources/talk-about-platforms-evan-bottcher]] — plataforma como problema organizacional; silos técnicos → acoplamento de backlog

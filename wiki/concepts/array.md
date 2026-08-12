@@ -3,8 +3,8 @@ type: concept
 title: "Array"
 aliases: ["vetor", "lista indexada", "indexed array"]
 date_created: 2026-06-01
-date_updated: 2026-08-04
-source_count: 5
+date_updated: 2026-08-12
+source_count: 7
 tags: [cs-fundamentals, estruturas-de-dados, array, performance, big-o]
 skill: cs-fundamentals
 status: draft
@@ -67,3 +67,5 @@ Uma fila de pessoas num show. Você sabe que a 10ª pessoa está na posição 9.
 - [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]] — array citado como estrutura de partida para sentir a diferença entre acesso direto, varredura e deslocamento
 - [[wiki/sources/binary-search-em-5-minutos]] — array ordenado como pré-condição para trocar O(n) por O(log n)
 - [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — Longest Consecutive Sequence: transformar array em hash set para checar membership em O(1) em vez de O(n)
+- [[wiki/sources/busca-linear-e-binaria-giovana]] — indexação começa em 0 e vai até `length - 1`; array ordenado como pré-condição da busca binária
+- [[wiki/sources/como-ficar-bom-em-leetcode]] — array como primeira estrutura da lista essencial; base de [[wiki/concepts/two-pointer|two pointer]] e [[wiki/concepts/sliding-window|sliding window]]

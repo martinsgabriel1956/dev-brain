@@ -3,8 +3,8 @@ type: concept
 title: "TDD — Test-Driven Development"
 aliases: ["test driven development", "red green refactor", "desenvolvimento guiado por testes"]
 date_created: 2026-04-22
-date_updated: 2026-07-28
-source_count: 12
+date_updated: 2026-08-12
+source_count: 13
 tags: [testes, tdd, design, red-green-refactor, qualidade, dora]
 skill: tech-mentor-testing
 status: stable
@@ -67,7 +67,7 @@ Antes do TDD ser formalizado, [[wiki/entities/kent-beck]] já construía framewo
 ## Ver também
 
 - [[bdd]] — extensão do TDD para linguagem de negócio
-- [[test-doubles]] — como isolar dependências no ciclo TDD
+- [[test-doubles]] — como isolar dependências no ciclo TDD (taxonomia e vocabulário SUT/DOC na fonte primária [[wiki/sources/test-double-xunitpatterns-meszaros]])
 - [[piramide-de-testes]] — onde TDD vive na estratégia de testes
 - [[testar-proprio-codigo]] — hábito relacionado
 
@@ -138,3 +138,4 @@ Quando a interface, o input e o output já são conhecidos por uma especificaç�
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] — liga a regra "não misturar feature e refatoração" de Fowler ao ciclo RED-GREEN-REFACTOR
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — testes escritos antes do código como condição de parada objetiva de um loop agêntico goal-based
 - [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] — TDD como prática de prevenção de dívida técnica, não gestão; fase REFACTOR do ciclo como Boy Scout Rule estruturada
+- [[wiki/sources/test-double-xunitpatterns-meszaros]] — fonte primária dos doubles usados para isolar dependências no ciclo

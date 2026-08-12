@@ -3,8 +3,8 @@ type: concept
 title: "AWS CloudFront"
 aliases: ["CloudFront", "CDN AWS", "AWS CDN"]
 date_created: 2026-05-06
-date_updated: 2026-08-04
-source_count: 2
+date_updated: 2026-08-12
+source_count: 3
 tags: ["aws", "cdn", "edge", "performance", "cache"]
 skill: tech-mentor-infra
 status: stub
@@ -58,3 +58,4 @@ Usuário
 
 - [[wiki/sources/aws-infraestrutura-global]]
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]] — combinação CloudFront + [[wiki/concepts/amazon-s3|S3]] citada como forma comum de hospedar um site inteiro só a partir de um arquivo estático (`index.html`) no bucket
+- [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — CloudFront como caminho para servir um site estático do S3 via **HTTPS**: distribuição com origem no bucket (website endpoint), viewer "Redirect HTTP→HTTPS", Custom SSL do [[wiki/concepts/certificado-ssl-acm|ACM]] e alternate name = domínio; apontado pelo [[wiki/concepts/aws-route-53|Route 53]] via registro A/Alias. (Backend em Lambda/EC2 usaria [[wiki/concepts/load-balancer|Load Balancer]] no lugar.)

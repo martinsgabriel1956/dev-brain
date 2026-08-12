@@ -3,8 +3,8 @@ type: concept
 title: "Application Boundary — Aplicações como Construções Sociais"
 aliases: ["fronteira de aplicação", "limite de aplicação", "applications are social constructions"]
 date_created: 2026-07-20
-date_updated: 2026-08-10
-source_count: 3
+date_updated: 2026-08-12
+source_count: 4
 tags: [arquitetura, ddd, bounded-context, contexto-organizacional, martin-fowler]
 skill: tech-mentor-backend
 status: stub
@@ -47,3 +47,4 @@ Mesma tese central de [[wiki/sources/conways-law]] ("organizações produzem sis
 - [[wiki/sources/arquitetura-de-sacrificio]] — outra peça de Fowler: quem escreveu o código (dentro da fronteira) é quem tem o contexto para decidir sacrificá-lo
 - [[wiki/sources/application-boundary-martin-fowler]]
 - [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — mesma tese aplicada à fronteira de serviço, via Lei de Conway
+- [[wiki/sources/talk-about-platforms-evan-bottcher]] — mesma tese na fronteira de time/plataforma: onde uma plataforma "termina" é decisão organizacional (funding de produto, ownership), não só técnica

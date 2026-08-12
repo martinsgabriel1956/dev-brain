@@ -3,8 +3,8 @@ type: concept
 title: "Clean Architecture"
 aliases: ["arquitetura limpa", "clean arch"]
 date_created: 2026-07-24
-date_updated: 2026-08-03
-source_count: 4
+date_updated: 2026-08-12
+source_count: 5
 tags: [clean-architecture, uncle-bob, dependency-inversion, use-case, presenter, view-model, arquitetura, dci, bce]
 skill: tech-mentor-backend
 status: draft
@@ -71,8 +71,13 @@ Segundo o próprio Robert Martin (citado em [[wiki/sources/arquitetura-limpa-na-
 
 No estudo de caso do livro, erros esperados (email inválido, usuário já existente) são tratados retornando um tipo `Either<Erro, Sucesso>` (implementado com classes `Left`/`Right`) em vez de lançar exceções — reservando `try-catch` só para o nível mais externo (`WebController`, middleware). A justificativa citada é a mesma usada em *Object Design* (Wirfs-Brock et al.): preferir retornar o erro a lançá-lo, quando o erro é uma condição prevista do domínio.
 
+## Métricas por trás da Regra de Dependência
+
+As métricas de pacote de Robert Martin — abstração `A`, instabilidade `I = Ce/(Ca+Ce)` e distância da sequência principal `D = |A + I − 1|` — são a formalização quantitativa da própria Regra de Dependência: componentes estáveis (I baixo) devem ser abstratos (A alto) para poderem ser dependidos sem impedir a evolução; componentes voláteis (I alto) devem ser concretos. Ver [[wiki/concepts/metricas-de-acoplamento]] e [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]].
+
 ## Key Sources
 
+- [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]] — métricas de acoplamento (A, I, D) como formalização da Regra de Dependência
 - [[wiki/sources/presenters]] — papel do Presenter e ViewModel especificamente na camada HTTP/apresentação (REST, GraphQL, CLI)
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — fluxo completo do diagrama de cenário web, e a justificativa teórica (objeto vs. estrutura de dados) por trás de cada camada
 - [[wiki/sources/clean-architecture-arquitetura-centrada-no-dominio]] — comparação direta com a arquitetura em 3 camadas, explicando a origem do nome "domain-centric"

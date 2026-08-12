@@ -3,8 +3,8 @@ type: concept
 title: "Coesão"
 aliases: ["cohesion", "alta coesão", "baixa coesão"]
 date_created: 2026-04-25
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-08-12
+source_count: 3
 tags: [coesao, software-design, clean-code, arquitetura]
 skill: tech-mentor-backend
 status: stub
@@ -43,6 +43,7 @@ O alvo de design é **alta coesão dentro de módulos + baixo [[acoplamento]] en
 ## Relações
 
 - [[acoplamento]] — complemento direto: coesão (interno) + acoplamento (externo)
+- [[metricas-de-acoplamento]] — como o lado "acoplamento" desse par é quantificado (instabilidade I = Ce/(Ca+Ce), abstração, distância da sequência principal)
 - [[single-responsibility]] — SRP é a diretriz que leva a alta coesão
 - [[efeito-colateral]] — unidades com baixa coesão tendem a ter efeitos colaterais espalhados
 - [[wiki/concepts/granularidade-de-mudanca]] — o mesmo critério de coesão aplicado a mudanças organizacionais e de processo, não só a código

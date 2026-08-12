@@ -3,8 +3,8 @@ type: concept
 title: "DNS — Domain Name System"
 aliases: [Domain Name System]
 date_created: 2026-04-22
-date_updated: 2026-07-30
-source_count: 4
+date_updated: 2026-08-12
+source_count: 5
 tags: [dns, rede, infraestrutura]
 skill: tech-mentor-system-design
 status: stub
@@ -21,8 +21,13 @@ DNS é a primeira etapa de rede do [[wiki/concepts/critical-rendering-path]] do 
 
 [[wiki/sources/email-address]] mostra um uso de DNS específico para SMTP: agentes de e-mail (MUA/MTA) consultam registros **MX** (Mail Exchange) para descobrir o servidor de e-mail responsável por um domínio, antes de entregar a mensagem via SMTP. Na ausência de registro MX, a resolução cai para os registros A/AAAA do próprio domínio. É o mesmo padrão de "nome → recurso" do DNS geral, só que aplicado à pergunta "qual servidor recebe e-mail para este domínio", não "qual IP responde por este host".
 
+## DNS como "agenda telefônica" e propagação de name servers
+
+[[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] usa a analogia da **agenda telefônica**: servidores DNS espalhados pelo mundo recebem o [[wiki/concepts/dominio|domínio]] e devolvem o [[wiki/concepts/endereco-ip|endereço IP]] correspondente. A resolução costuma partir do provedor de internet (ex.: Claro), que consulta um DNS quando o navegador pede um domínio. A fonte também torna concreta a **propagação DNS**: ao trocar os *name servers* de um domínio no registrador (ex.: [[wiki/entities/godaddy]] → [[wiki/concepts/aws-route-53|Route 53]]), a mudança leva minutos porque precisa ser replicada para todos os servidores DNS do mundo — verificável em ferramentas "DNS propagation checker".
+
 ## Key sources
 - [[sources/dns]]
+- [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — DNS como agenda telefônica (domínio → IP); resolução via provedor; propagação de name servers
 - [[wiki/sources/portas-de-rede-como-funcionam]] — DNS como resolução de nome, complementar à porta como resolução de serviço
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]] — DNS como primeira etapa de rede do critical rendering path, analogia com lista de contatos do celular
 - [[wiki/sources/email-address]] — registros MX como aplicação de DNS ao roteamento de e-mail (SMTP)
