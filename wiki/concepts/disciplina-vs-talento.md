@@ -3,8 +3,8 @@ type: concept
 title: "Disciplina vs Talento"
 aliases: ["talento não é determinante", "disciplina supera talento", "dom para programação"]
 date_created: 2026-06-26
-date_updated: 2026-07-29
-source_count: 5
+date_updated: 2026-08-13
+source_count: 6
 tags: [carreira, mentalidade, aprendizado, disciplina, talento, iniciante]
 skill: tech-mentor-leadership
 status: stable
@@ -52,6 +52,10 @@ A única variável que o iniciante controla é a constância da prática. Talent
 
 [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] chega a uma tese complementar por um ângulo distinto dos anteriores: em vez de disciplina vs. talento *inato*, o Hábito 4 ("Seja sem graça") contrasta disciplina/consistência contra **intensidade** — a cultura de "passei a noite toda programando", socialmente elogiada, mas que é o comportamento de quem trata a programação como [[wiki/concepts/jogo-finito-vs-infinito|jogo finito]] (foco em vencer um pico pontual) quando na verdade é um jogo infinito (não há "vencer", só continuar evoluindo). A fonte também reforça, no Hábito 6 ("Seu 9 às 5 não é suficiente"), que boa parte do que separa uma carreira notável do trabalho tradicional é tempo investido fora do expediente — sem exigir sacrificar sono ou relações pessoais, mas também sem contar apenas com as 40h contratuais. Ambos os pontos reforçam a mesma tese central desta página por um caminho novo: o que diferencia trajetórias não é um pico de esforço isolado (intensidade, "dom"), é a consistência sustentada ao longo do tempo.
 
+## Sexta Fonte: A Autodisciplina Como Fator Decisivo no EAD
+
+[[wiki/sources/papinho-tech-solo-q-and-a-carreira]] aplica a mesma tese a um contexto específico — a educação a distância (ver [[wiki/concepts/ead-educacao-a-distancia]]). Quando a instituição não aplica cobrança/avaliação adequada, o resultado passa a depender quase inteiramente da constância do próprio aluno: sem cobrança externa, "99% das vezes" o aluno desanima e não aprende o conteúdo importante. É o corolário direto desta página — a única variável que o estudante controla é a constância — levada ao ambiente onde essa variável tem o maior peso.
+
 ## Ver Também
 
 - [[familiaridade-vs-capacidade]] — mecanismo que explica por que o "talento" parece real
@@ -66,3 +70,4 @@ A única variável que o iniciante controla é a constância da prática. Talent
 - [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]] — terceira fonte, tensão de enquadramento (ver seção acima)
 - [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] — quarta fonte; desafio "One Punch Man" como caso concreto de progresso via ação consistente operacionalizada em passos mínimos
 - [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — quinta fonte; Hábitos 4 e 6, consistência vs. intensidade e investimento fora do 9-às-5
+- [[wiki/sources/papinho-tech-solo-q-and-a-carreira]] — sexta fonte; autodisciplina como fator decisivo no EAD sem cobrança externa

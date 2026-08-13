@@ -3,9 +3,9 @@ type: concept
 title: "Loop Engineering"
 aliases: ["loop engineering", "engenharia de loop", "loop de harness", "loop fixo", "loop criador"]
 date_created: 2026-07-10
-date_updated: 2026-08-11
-source_count: 6
-tags: [loop-engineering, harness, agente, automacao, planner-executor-critic, loop-fixo, loop-criador, spec-driven, ralph-loop, anthropic, graph-engineering]
+date_updated: 2026-08-12
+source_count: 7
+tags: [loop-engineering, harness, agente, automacao, planner-executor-critic, loop-fixo, loop-criador, spec-driven, ralph-loop, anthropic, graph-engineering, loop-deterministico, loop-agentico, judge-pattern, orquestracao-de-modelos]
 skill: tech-mentor-ai
 status: stable
 ---
@@ -53,6 +53,39 @@ Três artefatos usados para dar contexto a cada nova iteração do loop: `lesson
 2. O feedback (testes, lint, compilador) é rápido?
 3. Existe uma *stop condition* confiável que aciona o humano?
 4. Há backlog suficiente para compensar o custo de montar a estrutura de loop, versus simplesmente planejar e fazer manualmente?
+
+## Loop Determinístico vs. Loop Agêntico
+
+Divisão prática proposta em [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] (vídeo 2 da série de [[wiki/entities/pedro-nauke]]) como "a mais importante de todas" na hora de decidir modelo e custo:
+
+- **Loop determinístico** — um script que, a cada novo round, abre uma sessão nova: todo o contexto anterior é descartado e um novo contexto é iniciado do zero. Exemplo: o [[wiki/concepts/spec-driven-development|Compose]]. Como cada round não lembra do anterior, precisa de um arquivo de **memória transitória** gravado em disco (via system prompt: ao fechar a run ou antes de compactar, grava o que aconteceu) para a próxima run recuperar contexto.
+- **Loop agêntico** — via comando `/go` (implementado, com variações, pela maioria dos harnesses atuais — Claude Code, Codex, Hermes), nunca abre uma run nova: fica iterando na mesma run, compactando o contexto conforme enche. Depende não só do modelo, mas também da qualidade de compactação do harness. Quem julga se a run terminou é o próprio modelo — daí a importância de bons gates de verificação.
+
+### Custo do Contexto Inicial em Modelos de Reasoning Alto
+
+Em modelos de reasoning muito alto (GPT 5.6/Sol, Fable), o trecho mais custoso é a **formulação inicial do contexto**. No loop determinístico, quanto maior o reasoning do modelo, pior o resultado de custo — esse gasto de formulação de contexto é pago run atrás de run e descartado a cada novo round. Regra prática: se o loop já tem bom aparato de artefatos de estado salvos, um modelo com reasoning mais baixo evita pagar caro por raciocínio que será jogado fora. O mesmo raciocínio se aplica a tasks de spec driven já bem definidas — reasoning muito alto faz cada task demorar mais do que precisaria, porque o modelo sempre raciocina bastante mesmo quando a tarefa já está clara. Ver [[wiki/concepts/reasoning-level]].
+
+### Teste do Autor: Breakdown de Tasks Melhora Resultado Mesmo em Loop Agêntico
+
+Comparação reportada em [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]]: spec driven quebrado em tasks (determinístico), spec driven quebrado em tasks (agêntico), e execução sem quebra de tasks (spec inteira direto pro loop). Resultado: sem breakdown prévio de tasks, o resultado piora tanto na definição de tarefas em runtime quanto na execução. Com artefatos de estado e breakdown definidos previamente (critérios de sucesso, lista de testes por task), o resultado melhora — inclusive em loop agêntico. Isso contraria a leitura popular de que "spec driven morre" em loops agênticos de long-running tasks.
+
+## Padrão Judge
+
+Um segundo agente sobe **em background** ao final de cada run e julga se a tarefa proposta foi de fato concluída — ele é "o dono da verdade", não o modelo que executou a run ([[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]]). Implementação típica via **stop hook** (a maioria dos harnesses já oferece): ao modelo sinalizar stop, o hook dispara o agente juiz (via comando ou integração no harness); se o juiz decide que a tarefa não terminou, ele mesmo gera um novo prompt contendo o que falta, fechando o ciclo de forma determinística por fora do modelo executor.
+
+Mais útil em modelos menos densos em long-running tasks (cita Opus, Grok, Sonnet como exemplos que encerram o loop cedo demais em tarefas de horas). Em modelos frontier de reasoning muito alto (Fable, GPT 5.6) — capazes de sustentar um loop sozinhos por dias — o autor da fonte considera o judge um gasto desnecessário. É uma variante especializada do papel de Critic em [[wiki/concepts/planner-executor-critic]]: em vez de atuar dentro do ciclo planner→executor→critic, o judge atua **depois** que o modelo já declarou a run concluída, disparado por infraestrutura de hook do harness.
+
+## Padrão Orquestrador de Modelos
+
+Em vez de o modelo mais caro/denso implementar a tarefa, ele **orquestra** outros modelos mais baratos para implementação (e até review) por tipo de tarefa ([[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]]). No Compose (loop determinístico), isso é configuração direta por task. Em loop agêntico, precisa ser passado via prompt para um agente orquestrador, que decide dinamicamente qual modelo usar por tarefa — exemplo do autor: GPT 5.6 (reasoning medium) para back-end mais barato, Opus 4.8 ou Grok 4.5 para front-end mais rápido e barato. Resultado relatado: ganho tanto em custo de token quanto em velocidade de execução.
+
+## Gerenciamento de Estado via Arquivo (Sem Precisar Ser Determinístico)
+
+Pode ser feito via prompt ou skill, sem exigir código: pedir ao agente para manter um arquivo de estado (tipicamente `.md`, ex.: `state.md`) que trackeia tarefa concluída, próxima tarefa, lista de tarefas, decisões tomadas, erros e arquivos modificados. Numa spec de 10 tasks, o próprio agente cria esse arquivo com todas as informações para executar as 10 tasks uma por uma, seguindo um padrão formalizado ([[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]]). Ver implementação equivalente (roadmap + `lessons.md` + state + handoff) em [[wiki/concepts/task-looper]].
+
+## Skills como Encapsulamento de Loop Não Determinístico
+
+Uma skill pode dar toda a estrutura organizacional a um loop de spec driven: gerenciamento de estado, o que olhar na spec, gates de verificação, verificações finais, o que fazer após cada task, o que escrever de memória no output final — e pode habilitar outras skills durante a leitura, encadeando um processo. Fluxo relatado: task a task → skills de report e execution ao terminar a spec → skill de deep review, que gera issues resolvidas na mesma run → opcionalmente abre PR com description e squash merge, tudo autonomamente ([[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]]).
 
 ## Componentes de um Loop
 
@@ -119,5 +152,6 @@ Para trabalho corporativo, pesquisa interna e entendimento de cliente (knowledge
 - [[wiki/sources/loop-engineering-planner-critic-grafo]]
 - [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — taxonomia dos três níveis do dev loop, distinção loop fixo/loop criador, caso Ban→Rust, quatro perguntas de decisão
 - [[wiki/sources/loop-engineering-harness-e-a-frase-que-viralizou]] — origem no padrão ReAct (2022/2023), três fatores que destravaram loops longos em 2026, correção da frase viral "loop engineering matou harness engineering"
+- [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — vídeo 2 da série de Pedro Nauke: divisão loop determinístico/agêntico, custo de contexto inicial em modelos de reasoning alto, padrão judge (stop hook), padrão orquestrador de modelos, gerenciamento de estado via `state.md`, skills como encapsulamento de loop
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — origem do Ralph Loop (Geoffrey Huntley, julho de 2025); os quatro níveis oficiais de loop do guia da Anthropic (turn-based, goal-based, time-based, proactive)
 - [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — "o teu único prompt na verdade vira 20-30 prompts": o agente faz teste end-to-end, verifica se o jogo funciona e itera até o resultado; loop goal-based aplicado a construção de jogo

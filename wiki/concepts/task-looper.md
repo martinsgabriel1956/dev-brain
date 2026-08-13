@@ -3,8 +3,8 @@ type: concept
 title: "Task Looper"
 aliases: ["task looper", "loop de tarefas", "executor automático de tarefas"]
 date_created: 2026-06-02
-date_updated: 2026-07-24
-source_count: 2
+date_updated: 2026-08-12
+source_count: 3
 tags: [task-looper, spec-driven, automacao, agente, execucao]
 skill: tech-mentor-ai
 status: stub
@@ -43,7 +43,12 @@ Indicado para projetos grandes onde as tarefas são independentes e os critério
 
 [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] descreve uma implementação concreta do task looper aplicado a [[wiki/concepts/loop-engineering|loop criador]]: um roadmap de fases (épicos), onde cada fase passa por planejar → implementar → verificar (subagente evaluator, com até 3 tentativas de correção) → atualizar o roadmap → próxima fase. Três artefatos dão contexto entre fases: `lessons.md` (lições aprendidas), *state* (o que foi feito, blockers) e *handoff* (o que a próxima fase precisa saber).
 
+## Estado via Arquivo Simples (`state.md`), Sem Precisar Ser Determinístico
+
+[[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] descreve uma versão mais leve do mesmo padrão de estado: em vez de um framework dedicado, basta instruir via prompt ou skill que o agente mantenha um arquivo `.md` (ex.: `state.md`) trackeando tarefa concluída, próxima tarefa, lista de tarefas, decisões tomadas, erros e arquivos modificados. Numa spec de 10 tasks, o próprio agente cria esse arquivo com todas as informações para executar as tasks uma por uma, seguindo um padrão formalizado — mesma função do trio `lessons.md`/state/handoff acima, com menos estrutura.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-04-agentes-planejamento]]
 - [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — task looper com roadmap de fases, lessons.md, state e handoff como memória entre iterações
+- [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — versão leve via prompt/skill, arquivo único `state.md` trackeando tarefa/decisões/erros/arquivos modificados

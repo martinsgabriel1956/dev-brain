@@ -3,8 +3,8 @@ type: concept
 title: "Reasoning Level (Nível de Raciocínio)"
 aliases: ["reasoning level", "nivel de reasoning", "extended thinking", "thinking budget"]
 date_created: 2026-06-02
-date_updated: 2026-07-03
-source_count: 3
+date_updated: 2026-08-12
+source_count: 4
 tags: [reasoning, llm, custo, qualidade, tokens]
 skill: tech-mentor-ai
 status: stable
@@ -41,6 +41,12 @@ Ao resolver "uma camisa de $40 com 25% de desconto e depois 10% de cupom", você
 
 Claude Code abre no Extra High com Opus 4.7 por padrão. Para tarefas corriqueiras, ajustar manualmente economiza tokens e tempo.
 
+## Custo do Contexto Inicial em Loops que Reiniciam Sessão
+
+Em loops determinísticos que abrem uma sessão nova a cada round (contexto anterior descartado — ver [[wiki/concepts/loop-engineering#Loop Determinístico vs. Loop Agêntico]]), o trecho mais custoso do reasoning é a formulação inicial de contexto, paga run atrás de run e descartada a cada round. [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] recomenda reasoning mais baixo nesse cenário quando já existe bom aparato de artefatos de estado salvos — situação distinta de "prompt ruim + reasoning alto" acima porque aqui o desperdício vem da repetição estrutural do loop, não da qualidade do prompt.
+
+**Tensão a resolver:** essa mesma fonte também afirma que, em tasks de spec driven já bem definidas (critérios de sucesso, testes, descrição mínima por task), reasoning muito alto (GPT 5.6, Fable) faz cada task demorar mais do que precisaria. Isso está em tensão direta com a regra já registrada acima ("tarefa bem definida: mesmo com extra-high, o modelo não desperdiça tanto quanto parece" — de [[wiki/sources/formacao-ia-devs-aula-03-llm]]/[[wiki/sources/formacao-ia-devs-aula-04-harness]]). Uma leitura possível: a regra antiga fala de desperdício de *tokens/qualidade*, e a nova fala de desperdício de *tempo/latência* — reasoning alto pode não piorar o resultado, mas ainda assim ser lento demais para tasks já bem especificadas. Tratar como não resolvido até mais fontes confirmarem.
+
 ## Reasoning Baixo Pode Esconder Oportunidades de Paralelismo
 
 Com effort/reasoning baixo, o Claude Code pode deixar de reconhecer que uma tarefa é paralelizável em [[wiki/concepts/subagentes]] — um mesmo prompt de pesquisa (comparar 3 provedores) só disparou 3 subagentes em paralelo depois de subir o effort de low para high. Reasoning insuficiente não só piora a resposta, como pode reduzir a própria capacidade de orquestração do agente.
@@ -54,3 +60,4 @@ O nível de reasoning não muda o preço do modelo (input/output price per token
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
+- [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — custo de reformulação de contexto em loops que reiniciam sessão; tensão não resolvida com a regra de "tarefa bem definida não desperdiça reasoning alto"

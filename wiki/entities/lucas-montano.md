@@ -3,8 +3,8 @@ type: entity
 title: "Lucas Montano"
 aliases: ["Lucas Montano"]
 date_created: 2026-07-03
-date_updated: 2026-08-11
-source_count: 11
+date_updated: 2026-08-13
+source_count: 12
 tags: [criador-de-conteudo, ia, carreira, financas-pessoais, saas, growth, git]
 skill: tech-mentor-ai
 status: stub
@@ -34,9 +34,12 @@ Também reage à repercussão do post de [[wiki/entities/uncle-bob]] sobre não 
 
 Também mantém uma série sobre **Git** no canal, continuação do vídeo "Git Flow é uma farsa" — ver [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]]. Nele entrega a "solução" prometida mas defende que **não existe processo universal**: enquadra o hype de [[wiki/concepts/git-flow|Git Flow]] como [[wiki/concepts/cargo-cult-tecnologico|cargo cult]] elevado a "padrão industrial" por influenciadores ("modificadores de cultura"), e o núcleo do vídeo é [[wiki/concepts/maturidade-tecnica|maturidade]] — buscar princípios e adaptar-se ao processo da empresa. Sua solução para **times pequenos** (usada por 4 anos na consultoria, admitidamente não-escalável) é um fluxo [[wiki/concepts/trunk-based-development|só-`main`]] com [[wiki/concepts/ci-cd|single command deploy]], um dono por entrega, e integração por [[wiki/concepts/rebase-vs-merge|rebase]] (evitando o "subway train from hell" e gerando fast-forward merges). Nesse vídeo se identifica na fala como "Lucas Badico TV" (provável garble da transcrição auto-gerada; atribuição a Lucas Montano por convergência de sinais — vídeo anterior de Git Flow, ensino de Golang, membership, fechamento da própria empresa ~2023).
 
+Também tem (atribuição provável, não confirmada — ver nota no frontmatter de [[wiki/sources/pull-requests-por-que-falham-alternativas-sem-pr]]) um vídeo em duas partes sobre por que [[wiki/concepts/code-review|pull requests]] falham e alternativas sem PR. Argumenta que o tempo de revisão humana não escala com o tamanho do PR (200 e 2.000 linhas recebem a mesma janela de ~20-30min), defende tamanho ótimo de ~100-300 linhas e cadência de revisão diária/2x-dia citando "inventário é custo" de [[wiki/entities/principles-of-product-development-flow|Reinertsen]] (ver [[wiki/concepts/inventario-e-custo]]). Descreve fast follow e draft PR como técnicas anti-inventário. Na segunda parte, relata (por ouvir falar, não experiência própria) o modelo sem-PR de algumas empresas: [[wiki/concepts/pair-programming|pair/mob programming]] (~1,6x velocidade, não 2x) + [[wiki/concepts/trunk-based-development|trunk-based development]] com pipeline de testes de integração como gate + [[wiki/concepts/feature-flag|feature flags]] para rollout progressivo — mas declara que pessoalmente ainda preferiria abrir PR mesmo nesse cenário. Mesma continuidade temática de [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] (processo de Git/PR) e [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] (code review).
+
 ## Key Sources
 
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]]
+- [[wiki/sources/pull-requests-por-que-falham-alternativas-sem-pr]] — por que PRs falham (tempo de revisão não escala com tamanho); inventário-é-custo aplicado a PR; alternativas sem PR (pairing + trunk-based + feature flags)
 - [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] — continuação de "Git Flow é uma farsa"; maturidade sobre processo e o rebase-flow só-`main` para times pequenos
 - [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — reação ao post de Uncle Bob; push force em prod; estratificação do code review por porte de empresa (accountability × substituibilidade)
 - [[wiki/sources/potencial-programador-atitude-mindset]] — reação ao artigo de Gregor Ojstersek sobre potencial de engenheiros; atitude/mindset vs. peso técnico

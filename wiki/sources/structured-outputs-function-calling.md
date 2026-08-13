@@ -3,13 +3,13 @@ type: source
 title: "Structured Outputs & Function Calling"
 aliases: ["structured outputs", "function calling", "tool use", "json mode", "pydantic llm"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
+date_updated: 2026-08-13
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/structured-outputs-function-calling.md
 source_url: ""
 author: ""
 date_published: ""
 date_ingested: 2026-04-23
-source_count: 0
+source_count: 1
 tags: [structured-outputs, function-calling, tool-use, pydantic, zod, json-schema, instructor, constrained-decoding, parallel-tools, idempotencia]
 skill: tech-mentor-ai
 status: stable
@@ -44,6 +44,10 @@ Structured Outputs garantem schema válido sem parsing frágil de texto livre. O
 - [[concepts/tool-use-agents]]
 - [[concepts/idempotencia]]
 - [[concepts/parallel-tool-calls]]
+
+## Key Sources
+
+- [[wiki/sources/harness-explicado-function-calling-hag-evals]] — contexto histórico do mecanismo: antes do function calling nativo existir em todo provider (inclusive Anthropic), o workaround era pedir ao modelo que sinalizasse a chamada de função via tags XML no texto de resposta, funcionando ~99% das vezes com retry cobrindo o restante; também traz uma demo mínima do ciclo function call → execução local → resultado reinjetado no contexto.
 
 ## Open Questions
 

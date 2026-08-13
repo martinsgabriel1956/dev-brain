@@ -3,8 +3,8 @@ type: entity
 title: "Codex (OpenAI)"
 aliases: ["Codex", "OpenAI Codex", "codex app"]
 date_created: 2026-06-02
-date_updated: 2026-07-31
-source_count: 4
+date_updated: 2026-08-12
+source_count: 5
 tags: [codex, openai, harness, ia-para-devs]
 skill: tech-mentor-ai
 status: stable
@@ -35,6 +35,10 @@ A OpenAI não tinha harness de codificação próprio até ~2025 (apenas partici
 | Custo | Reset 5h | Reset 5h |
 | Preferência | Backend complexo (Nauke) | Frontend/design (Nauke) |
 
+## `/go` e Compactação de Contexto no Loop Agêntico
+
+Segundo [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]], o Codex é, na visão do autor (Pedro Nauke), o harness que melhor entrega hoje o loop agêntico via comando `/go` — evoluiu muito em compactação de contexto, a ponto de a compactação "quase não fazer mais efeito perceptível" de tão eficiente. Combinado a um modelo como GPT 5.6, que é treinado sobre os próprios logs (JSON) gerados pelo Codex, existe um ciclo de retroalimentação: cada novo modelo GPT tenderia a ficar melhor em long-running tasks por causa do treinamento sobre dados de uso do próprio Codex. Ver [[wiki/concepts/loop-engineering#Loop Determinístico vs. Loop Agêntico]].
+
 ## Suporte Nativo a Worktree (App)
 
 Segundo [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]], o app do Codex (não a CLI) oferece suporte nativo a `git worktree`: opções "new worktree" e "create permanent worktree" no painel do projeto. Ao contrário do [[wiki/entities/claude-code]], que guarda a worktree em `.claude/worktrees/` dentro do repositório, o Codex guarda a sua fora da pasta do repositório — local exato não confirmado, o próprio autor da fonte se corrige ao vivo sobre onde exatamente ela fica. Ver [[wiki/concepts/worktree-paralelismo]].
@@ -45,3 +49,4 @@ Segundo [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]], o app 
 - [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
 - [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] — suporte nativo a worktree no app ("new worktree" / "create permanent worktree")
+- [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — `/go` e compactação de contexto como diferencial no loop agêntico; ciclo de retroalimentação entre logs do Codex e treinamento do próximo GPT

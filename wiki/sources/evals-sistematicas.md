@@ -3,13 +3,13 @@ type: source
 title: "Avaliação Sistemática (Evals)"
 aliases: ["evals", "avaliacao llm", "llm-as-judge", "ragas", "deepeval", "promptfoo"]
 date_created: 2026-04-23
-date_updated: 2026-07-30
+date_updated: 2026-08-13
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/evals-sistematicas.md
 source_url: ""
 author: ""
 date_published: ""
 date_ingested: 2026-04-23
-source_count: 1
+source_count: 2
 tags: [evals, llm-as-judge, golden-dataset, ragas, deepeval, g-eval, promptfoo, evalite, ci-evals, prompt-versioning]
 skill: tech-mentor-ai
 status: stable
@@ -53,6 +53,7 @@ Evals são testes para sistemas LLM: offline (golden dataset + métricas automá
 ## Key Sources
 
 - [[wiki/sources/porque-nunca-confiar-em-llm-alucinacao]] — caso de uso ponta-a-ponta de faithfulness num pipeline real de chatbot corporativo (refund): prompt engineering → RAG → geração → verificação por LLM-as-judge → loop de correção se a resposta não estiver ancorada no documento, antes de chegar ao usuário.
+- [[wiki/sources/harness-explicado-function-calling-hag-evals]] — relato pessoal de uso de LLM-as-judge para pontuar fidelidade de respostas de um RAG corporativo aos documentos-fonte, combinado com medição de custo em tokens por modelo para comparar qual modelo é melhor para qual tipo de tarefa (2024-2025, sem número específico de score citado).
 
 ## Open Questions
 

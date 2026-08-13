@@ -3,8 +3,8 @@ type: concept
 title: "Ciclo de Mercado Tech"
 aliases: ["ciclo de abundância e depressão", "lei da oferta e procura em tech", "ciclo de contratação tech"]
 date_created: 2026-07-03
-date_updated: 2026-07-31
-source_count: 6
+date_updated: 2026-08-13
+source_count: 7
 tags: [carreira, mercado-de-trabalho, oferta-e-procura, ciclo-economico]
 skill: tech-mentor-leadership
 status: draft
@@ -60,6 +60,12 @@ Cada onda de tecnologia listada acima é, individualmente, uma [[wiki/concepts/c
 - [[wiki/concepts/curva-de-adocao-tecnologica]] — o padrão em S por trás de cada onda individual
 - [[wiki/concepts/antifragilidade]] — a estratégia de aposta que lida com a incerteza sobre qual onda vai vencer
 
+## O Mecanismo Financeiro por Trás do Ciclo de Depressão Atual
+
+[[wiki/sources/crise-vagas-tech-juros-altos-nao-e-so-culpa-da-ia]] preenche uma lacuna que as fontes anteriores desta página deixavam em aberto: **por que** o mercado entra em depressão além de "oferta de profissionais cresceu rápido demais". A resposta proposta é a taxa básica de juros (Selic, no Brasil, em ~14,25%–15% desde meados de 2024): crescimento de empresa costuma depender de capital captado, não só do caixa disponível, e a esse nível de juros a maioria das empresas não gera EBITDA suficiente para justificar o empréstimo — tornando "não contratar" o cálculo financeiro racional, não uma decisão sobre qualidade de profissionais disponíveis. Ver detalhamento completo em [[wiki/concepts/custo-de-capital-e-contratacao-tech]].
+
+Essa lente é complementar, não concorrente, ao mecanismo de oferta/procura de profissionais já documentado acima — os dois operam em paralelo: o lado da demanda (quantas vagas as empresas conseguem financiar) é regido pelo custo de capital, enquanto o lado da oferta (quantos profissionais competem por essa vaga) é regido pelo ciclo de atração/formação descrito na seção "O Mecanismo". A fonte também conecta com [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] (pesquisa em que 59% dos gestores admitem usar IA como justificativa para corte de vagas, mas só 9% relatam substituição real) para argumentar que boa parte da "culpa da IA" no ciclo de depressão atual é, na prática, bode expiatório para um aperto financeiro estrutural.
+
 ## Possível Manifestação em Nível de Categoria de Vaga
 
 [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] relata um padrão específico no mercado brasileiro — vagas rotuladas como "júnior" passando a exigir nível pleno na prática — sem identificar a causa. Ver [[wiki/concepts/vaga-junior-vira-pleno]] para o detalhe; a conexão com o ciclo de abundância/depressão descrito aqui é inferência, não fato verificado nas duas pontas, já que nenhuma das fontes cruza dados diretamente.
@@ -72,3 +78,4 @@ Cada onda de tecnologia listada acima é, individualmente, uma [[wiki/concepts/c
 - [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]
 - [[wiki/sources/impacto-ia-mercado-frontend]]
 - [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — possível manifestação em nível de categoria de vaga (júnior exigindo pleno), causa não identificada
+- [[wiki/sources/crise-vagas-tech-juros-altos-nao-e-so-culpa-da-ia]] — mecanismo financeiro (custo de capital/Selic) por trás do ciclo de depressão atual

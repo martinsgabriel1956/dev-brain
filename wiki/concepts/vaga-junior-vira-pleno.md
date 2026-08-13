@@ -3,8 +3,8 @@ type: concept
 title: "Vaga Júnior Vira Pleno"
 aliases: ["sumiço de vagas júnior", "vaga júnior exigindo pleno", "requisito júnior inflado"]
 date_created: 2026-07-31
-date_updated: 2026-07-31
-source_count: 1
+date_updated: 2026-08-13
+source_count: 2
 tags: [carreira, mercado-de-trabalho, junior, contratacao]
 skill: tech-mentor-leadership
 status: stub
@@ -26,6 +26,11 @@ Consequência prática apontada: como não existe uma regra objetiva de onde ter
 
 Pode ser uma manifestação específica, em nível de categoria de vaga, do padrão mais amplo já documentado em [[wiki/concepts/ciclo-de-mercado-tech]] — ciclos de depressão de mercado aumentam a seletividade geral das empresas, e uma forma concreta dessa seletividade é elevar informalmente o nível técnico exigido sem mudar o rótulo público da vaga. Nenhuma das duas fontes cruza dados diretamente, então essa conexão é inferência, não fato verificado nas duas pontas.
 
+## Possível Causa Estrutural: Custo de Capital
+
+[[wiki/sources/crise-vagas-tech-juros-altos-nao-e-so-culpa-da-ia]] não fala diretamente sobre vagas rotuladas "júnior" exigindo pleno, mas oferece um mecanismo causal para o fenômeno adjacente — o próprio sumiço de vagas júnior: com taxa de juros alta, vaga júnior é a primeira cortada de qualquer orçamento porque é uma aposta em retorno futuro, não uma entrega imediata. Uma leitura plausível (não confirmada por nenhuma das duas fontes diretamente) é que "vaga júnior vira pleno" seja um sintoma correlato do mesmo aperto: em vez de simplesmente não abrir a vaga, a empresa mantém o rótulo "júnior" (mais barato, menos escrutínio de custo) mas exige entrega de nível pleno, terceirizando para o processo seletivo o filtro que o orçamento apertado exige. Ver [[wiki/concepts/custo-de-capital-e-contratacao-tech]] para o mecanismo completo.
+
 ## Key Sources
 
 - [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — observação de origem, sem causa identificada pelo próprio relator
+- [[wiki/sources/crise-vagas-tech-juros-altos-nao-e-so-culpa-da-ia]] — mecanismo causal plausível (custo de capital), não confirmado diretamente contra este fenômeno específico

@@ -3,8 +3,8 @@ type: concept
 title: "Algoritmos e Estruturas de Dados"
 aliases: ["DSA", "data structures", "estruturas de dados", "algoritmos"]
 date_created: 2026-05-16
-date_updated: 2026-08-12
-source_count: 13
+date_updated: 2026-08-13
+source_count: 14
 tags: [fundamentos, cs-fundamentals, algoritmos, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -98,3 +98,4 @@ Cada estrutura tem sua própria página com complexidade, analogias e quando usa
 - [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — três problemas de entrevista resolvidos em versão ingênua e versão ótima (array+hash set, hashmap+bucket sort, two pointers), com ênfase em por que a explicação do raciocínio importa mais que a resposta
 - [[wiki/sources/busca-linear-e-binaria-giovana]] — busca (passo 3 da sequência) via analogia física + código JS, defendendo o método "teoria no papel antes do código"
 - [[wiki/sources/como-ficar-bom-em-leetcode]] — lista das estruturas que "cobrem quase tudo" (array, linked list, queue, stack, binary tree, hash map, graph) e o loop estrutura→padrão→repetição para dominá-las; ênfase em implementar cada uma por conta própria
+- [[wiki/sources/por-que-comecar-com-c-em-2026-cs50-david-malan]] — David Malan (CS50): construir as próprias estruturas (hash tables, listas ligadas, tries, árvores, pilhas, filas) em [[wiki/concepts/linguagem-c|C]] porque a linguagem não as oferece prontas; valor não é reusar a implementação, mas entender design e diagnóstico por primeiros princípios

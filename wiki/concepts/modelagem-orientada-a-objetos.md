@@ -3,9 +3,9 @@ type: concept
 title: "Modelagem Orientada a Objetos"
 aliases: ["OOP modeling", "modelagem OO", "object-oriented modeling", "modelagem de domínio"]
 date_created: 2026-06-09
-date_updated: 2026-06-09
-source_count: 1
-tags: [oo, modelagem, fundamentos, design-patterns, arquitetura]
+date_updated: 2026-08-13
+source_count: 2
+tags: [oo, modelagem, fundamentos, design-patterns, arquitetura, encapsulamento, modelo-de-dominio-anemico]
 skill: tech-mentor-leadership
 status: stable
 ---
@@ -62,9 +62,12 @@ Tentar ir direto do estágio 1 para o 3 é a causa mais comum de [[over-engineer
 - [[fundacao-tecnica]] — modelagem OO é parte da fundação do desenvolvedor OO
 - [[logica-de-programacao]] — estágio anterior; precisa estar sólido antes da modelagem
 - [[ddd]] — Domain-Driven Design estende a modelagem OO para domínios complexos
+- [[wiki/concepts/encapsulamento]] — modelar bem é pôr as regras dentro do objeto que as possui; encapsulamento protege as invariantes desse modelo
+- [[wiki/concepts/modelo-de-dominio-anemico]] — o que acontece quando a modelagem para nos atributos e deixa o comportamento de fora: dados sem regras
 
 ---
 
 ## Key Sources
 
 - [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]]
+- [[wiki/sources/encapsulamento-proteger-estado-invalido]] — exemplo prático de modelagem de domínio: regras de negócio (preço > 0, estoque não negativo) viram invariantes da classe `Product`

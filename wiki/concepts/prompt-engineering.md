@@ -3,8 +3,8 @@ type: concept
 title: "Prompt Engineering"
 aliases: ["engenharia de prompt", "prompt design"]
 date_created: 2026-05-17
-date_updated: 2026-08-11
-source_count: 8
+date_updated: 2026-08-13
+source_count: 9
 tags: [prompt-engineering, llm, few-shot, codex, software-3]
 skill: tech-mentor-ai
 status: stable
@@ -86,6 +86,10 @@ Em modelos mais fortes (ex.: Fable), o mesmo princípio de "descreva o estado de
 
 [[wiki/sources/sistema-produtividade-ia-adapta]] aplica o padrão Tell It a um domínio não técnico: prompts de planejamento pessoal que declaram explicitamente formato de saída esperado (divisão por dia, foco do dia, ordem de execução, período sugerido) e critérios de organização (energia, prioridade, carga mental) — mesma lógica de "declarar restrições e formato antes da instrução" usada em prompts de codificação, mostrando que o padrão não é específico de tarefas técnicas.
 
+## Skills São Apenas Mais Texto no Prompt
+
+[[wiki/sources/harness-explicado-function-calling-hag-evals]] argumenta contra a ideia de que skills dão "superpoder" a um agente: mecanicamente, uma skill só adiciona mais texto ao prompt enviado a cada chamada — tudo que entra e sai do data center do provider é texto. Reforça (sem contradizer) a distinção já registrada em [[wiki/concepts/harness]] entre "provider harness" e "user harness": skills fazem parte da alavanca do usuário, mas continuam sendo prompt engineering, não uma capacidade nova concedida ao modelo.
+
 ## Método de Seis Passos para Prompt de Pentest Assistido
 
 [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] descreve um método específico de domínio (segurança/autopentest), mas que reafirma vários princípios já documentados nesta página em outro contexto: (1) declarar o papel de quem pede o teste (dono do sistema, não atacante externo); (2) apontar para documentação já existente do sistema em vez de deixar o modelo inferir arquitetura — instância direta de "Describe It"; (3) definir explicitamente o que o sistema **não é** (ex.: "não uso Kubernetes"), tão importante quanto dizer o que é, para restringir o espaço de hipóteses do modelo; (4) testar um escopo por vez em sessões separadas — a fonte relata que testar tudo de uma vez faz o modelo "delirar" e gasta mais tokens sem necessidade; (5) definir o formato de resposta esperado; (6) declarar explicitamente o que a IA **não pode fazer** sem nova autorização — contra-exemplo de "Tell It" mal calibrado: uma autorização ampla ("pode mexer, não pergunte mais") interpretada literalmente pode levar o agente a refatorar código sem solicitar confirmação em uma pergunta não relacionada.
@@ -101,3 +105,4 @@ Em modelos mais fortes (ex.: Fable), o mesmo princípio de "descreva o estado de
 - [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — verificação embutida no prompt e "descreva o resultado, não os passos" como práticas oficiais do Claude Code
 - [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — a diferença entre entregar um jogo em 1 vs. 8 prompts é atribuída ao prompt (bom senso + fornecer assets/referências), não ao modelo; o "único prompt" na prática vira 20-30 iterações via [[wiki/concepts/loop-engineering|loop]]
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — prompt específico + contexto (mencionar arquivos, URL de referência, o design pattern desejado) vs. prompt genérico que transfere decisões subjetivas para a IA
+- [[wiki/sources/harness-explicado-function-calling-hag-evals]] — skills não dão "superpoder", só adicionam mais texto ao prompt; distinção reforçada entre o que roda localmente (código) e o que só existe como texto no data center do provider

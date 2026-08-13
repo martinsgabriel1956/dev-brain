@@ -4,8 +4,8 @@ title: "Sistema de Arquivos"
 aliases: ["file system", "filesystem", "ext4", "NTFS", "APFS", "sistema de arquivo"]
 date_created: 2026-04-22
 date_updated: 2026-07-09
-source_count: 3
-tags: [sistema-operacional, storage, cs-fundamentals]
+source_count: 4
+tags: [sistema-operacional, storage, hardware, cs-fundamentals]
 skill: cs-fundamentals
 status: stable
 ---
@@ -69,8 +69,13 @@ Mecanismo que registra operações pendentes em um log antes de executá-las. Se
 - [[concepts/syscall]] — `open()`, `read()`, `write()` são syscalls que acessam o sistema de arquivos
 - [[concepts/swap]] — também usa o disco, mas gerenciado separadamente
 
+## A camada de baixo: a mídia física
+
+O sistema de arquivos é uma **abstração sobre uma mídia** — os "blocos do disco" moram fisicamente em um [[concepts/hd-disco-rigido]], um [[concepts/ssd]] ([[concepts/memoria-flash]]), um cartão ou um pen drive. A mídia influencia o design: o [[concepts/apfs]] é otimizado para flash (copy-on-write, sem penalidade de fragmentação), enquanto FAT/exFAT são o padrão de mídia portátil por compatibilidade. Ver o panorama de mídias em [[wiki/sources/tipos-de-armazenamento-de-dados]].
+
 ## Key Sources
 
 - [[sources/sistema-operacional-por-baixo-dos-panos]]
 - [[sources/como-sistemas-operacionais-funcionam]]
 - [[wiki/sources/sistemas-de-arquivos-explicados]]
+- [[wiki/sources/tipos-de-armazenamento-de-dados]] — as mídias físicas sob a abstração de arquivos (HD, SSD/flash, óptico, fita)

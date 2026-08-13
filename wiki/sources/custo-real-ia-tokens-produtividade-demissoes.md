@@ -3,8 +3,8 @@ type: source
 title: "Custo Real da IA: Tokens, Produtividade e Demissões"
 aliases: ["custo real da ia", "capital de tokens vs capital humano", "cdf cafe custo ia"]
 date_created: 2026-07-16
-date_updated: 2026-07-27
-source_count: 1
+date_updated: 2026-08-13
+source_count: 2
 tags: [tech-mentor-ai, token-economics, roi-de-ia, ai-washing, paradoxo-de-jevons, era-agentica, demissao, gartner, palantir, meta, capital-de-tokens]
 skill: tech-mentor-ai
 status: stable
@@ -77,3 +77,7 @@ Episódio do CDF Café ([[wiki/entities/codigo-fonte-tv]]) argumentando que a pr
 ## Explicação Complementar: Nem Todo Corte é Só Custo
 
 [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] soma uma camada técnica ao bode-expiatório documentado aqui (59% das empresas usando IA como justificativa para demissão/congelamento sem função de fato substituída): parte dos projetos de IA cortados, segundo essa fonte, falha não por custo de token, mas por tentar usar um modelo probabilístico para uma tarefa que exige determinismo — erro de enquadramento anterior ao problema de custo.
+
+## Explicação Complementar: a Causa Macro do Bode-Expiatório
+
+[[wiki/sources/crise-vagas-tech-juros-altos-nao-e-so-culpa-da-ia]] soma uma segunda camada — dessa vez macroeconômica — ao mesmo achado de bode-expiatório (59% dos gestores citando IA como justificativa, só 9% relatando substituição real). Argumenta que a pressão financeira real por trás da maioria dos cortes/congelamentos vem do custo de capital: com a Selic brasileira em ~14,25%–15%, a maioria das empresas não gera EBITDA suficiente para justificar o empréstimo necessário para financiar crescimento/contratação, tornando "não contratar" uma decisão racional de planilha, não uma substituição tecnológica. Ver [[wiki/concepts/custo-de-capital-e-contratacao-tech]] para o mecanismo completo. As duas fontes, de ângulos independentes (pesquisa de RH vs. leitura macroeconômica), convergem na mesma conclusão: IA é usada como narrativa de cobertura para um aperto cuja causa principal é financeira.

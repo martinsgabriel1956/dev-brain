@@ -3,8 +3,8 @@ type: concept
 title: "Planner-Executor-Critic (PEC)"
 aliases: ["PEC", "planner executor critic", "loop reflexivo", "planner critic"]
 date_created: 2026-07-10
-date_updated: 2026-08-05
-source_count: 3
+date_updated: 2026-08-12
+source_count: 4
 tags: [planner-executor-critic, agentes, multi-agente, orquestracao, rubrica, verificador]
 skill: tech-mentor-ai
 status: stable
@@ -49,6 +49,10 @@ Usar o mesmo modelo para gerar e validar a própria resposta preserva o viés qu
 
 PEC generaliza o padrão de Reflection Loop (gerar → criticar → regenerar, um único agente se autocorrigindo) para múltiplos subagentes especializados, cada um com seu próprio ciclo planner→executor→critic.
 
+## Variante: Padrão Judge (Verificação Pós-Hoc via Stop Hook)
+
+[[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] descreve uma variante do papel de Critic: em vez de atuar dentro do próprio ciclo planner→executor→critic, um agente "juiz" separado sobe em background **depois** que o modelo executor já sinalizou stop (fim de run), disparado por um `stop hook` de infraestrutura do harness. O juiz é "o dono da verdade" — se decide que a tarefa não terminou, ele mesmo gera o próximo prompt com o que falta. Mais útil quando o executor é um modelo menos denso em long-running tasks (tende a encerrar cedo demais); considerado gasto desnecessário com modelos frontier de reasoning muito alto, que já sustentam o loop sozinhos por mais tempo. Ver [[wiki/concepts/loop-engineering#Padrão Judge]].
+
 ## Risco: Vira "Monstrinho" sem Critério de Parada
 
 Sem rúbrica explícita e sem limite de tentativas definido deterministicamente, o padrão degenera no problema histórico de loops autônomos tipo AutoGPT — roda indefinidamente sem garantia de convergência. Ver [[wiki/concepts/loop-engineering]].
@@ -58,3 +62,4 @@ Sem rúbrica explícita e sem limite de tentativas definido deterministicamente,
 - [[wiki/sources/agentes-orquestracao]] — definição original do padrão como "loop reflexivo", citado junto com Supervisor, Handoff e Swarm como um dos 4 padrões principais de multi-agente
 - [[wiki/sources/loop-engineering-planner-critic-grafo]] — demonstração em vídeo do padrão em produção: planner gerando 4 prompts+rúbricas simultâneos, verificador com 3 tentativas de follow-up
 - [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — reforça o papel da rúbrica/checklist como o "peso" da aresta num [[wiki/concepts/grafo-como-abstracao-de-agentes|grafo]], notando que esse checklist em algum momento envolve aprovação humana
+- [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — padrão judge como variante pós-hoc do Critic, disparada por stop hook, "dono da verdade" separado do executor

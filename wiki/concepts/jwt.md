@@ -3,8 +3,8 @@ type: concept
 title: "JWT — JSON Web Token"
 aliases: ["JWT", "JSON Web Token", "access token", "refresh token"]
 date_created: 2026-07-27
-date_updated: 2026-08-03
-source_count: 2
+date_updated: 2026-08-13
+source_count: 3
 tags: [jwt, autenticacao, stateless, token, seguranca]
 skill: tech-mentor-security
 status: draft
@@ -89,3 +89,4 @@ No contexto de [[wiki/concepts/openid-connect]], o ID Token é especificamente u
 
 - [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — HMAC vs. RSA/ECDSA, chave fraca, validação de issuer/audience, localStorage vs. cookie httpOnly, rotação de refresh token
+- [[wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth]] — o ID Token do OIDC é um JWT distinto do access token, destinado à aplicação cliente (não à API)

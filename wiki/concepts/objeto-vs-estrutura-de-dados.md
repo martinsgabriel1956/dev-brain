@@ -3,9 +3,9 @@ type: concept
 title: "Objeto vs. Estrutura de Dados"
 aliases: ["object vs data structure", "objetos e estruturas de dados", "data structure antithesis"]
 date_created: 2026-07-24
-date_updated: 2026-08-03
+date_updated: 2026-08-13
 source_count: 2
-tags: [clean-architecture, uncle-bob, oop, encapsulamento, dto, orm]
+tags: [clean-architecture, uncle-bob, oop, encapsulamento, dto, orm, modelo-de-dominio-anemico]
 skill: tech-mentor-backend
 status: stable
 ---
@@ -45,6 +45,8 @@ No diagrama de cenário típico de uma aplicação web (ver [[wiki/concepts/clea
 - [[wiki/concepts/mapper-pattern]] — o padrão que implementa a "transferência de dados" entre estrutura de dados (banco) e objeto (entidade de domínio)
 - [[wiki/concepts/repository-pattern]] — abstrai exatamente essa transferência de dados de/para o banco
 - [[wiki/concepts/ddd]] — entidades anêmicas são o sintoma de tratar um objeto como estrutura de dados por engano
+- [[wiki/concepts/modelo-de-dominio-anemico]] — o anti-padrão nomeado: dados sem comportamento, um objeto que é na verdade uma estrutura de dados disfarçada
+- [[wiki/concepts/encapsulamento]] — a fronteira que transforma uma estrutura de dados (atributos públicos) num objeto de verdade (atributos privados + comportamento que protege invariantes)
 
 ## Active Record aplicado a entidades de domínio é incompatível com Clean Architecture
 

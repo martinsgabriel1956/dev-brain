@@ -3,8 +3,8 @@ type: entity
 title: "Microsoft"
 aliases: []
 date_created: 2026-07-16
-date_updated: 2026-08-04
-source_count: 4
+date_updated: 2026-08-13
+source_count: 5
 tags: [empresa, custo-ia, token-economics, demissao, capital-de-tokens]
 skill: tech-mentor-ai
 status: stub
@@ -26,9 +26,14 @@ Em outro artigo, Nadella descreveu o **"paradoxo da informação invertida"** (r
 
 Décadas antes da economia de IA, a Microsoft teve participação forte na criação do [[wiki/concepts/soap]] em 1998 (junto com outros pesquisadores, protocolo depois padronizado pelo [[wiki/entities/w3c]]), e consolidou sua adoção corporativa com o Windows Communication Foundation (WCF), framework .NET para serviços SOAP. Ver [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]].
 
+## Adoção em Massa do OpenID Connect
+
+Citada, junto com Google e Apple, como uma das big techs que adotaram em massa o [[wiki/concepts/openid-connect|OpenID Connect]], tornando-o base de praticamente todo botão de login social e de aplicações single page modernas. Ver [[wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth]].
+
 ## Key Sources
 
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]]
+- [[wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth]] — adotante em massa do OpenID Connect
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — "paradoxo da informação invertida"
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — citada (sem detalhamento numérico) como uma das big techs estourando orçamento de engenharia de IA em 2026
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — participação na criação original do SOAP (1998) e no WCF

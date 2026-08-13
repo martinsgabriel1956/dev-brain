@@ -3,8 +3,8 @@ type: concept
 title: "Code Review"
 aliases: ["revisão de código", "pull request review", "PR review"]
 date_created: 2026-07-03
-date_updated: 2026-08-11
-source_count: 16
+date_updated: 2026-08-13
+source_count: 17
 tags: [code-review, qualidade, carreira, júnior, mentoria, grill-me, babysitting-de-agentes, quality-gate, under-engineering]
 skill: tech-mentor-leadership
 status: draft
@@ -78,6 +78,23 @@ O critério "regra de negócio primeiro" e a exigência de pull request/versiona
 
 [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]] dá o número que fecha o argumento de "humano como gargalo" já descrito acima em *babysitting*: enquanto a produção individual dobra com IA (~2x PRs mergeados por dev), o **tempo de code review sobe 91%** e não escala junto — a revisão exige julgamento e contexto que a IA não substitui. É o núcleo do [[wiki/concepts/paradoxo-da-aceleracao]]: acelerou-se a etapa errada. Detalhe importante para quem revisa: **código gerado por IA não é mais fácil de revisar — às vezes é mais difícil**, porque é tecnicamente válido (passa nos testes) mas pode ser arquiteturalmente errado (ver [[wiki/concepts/ia-como-amplificador]] e [[wiki/concepts/gaming-de-testes-por-ia]]). Métrica de outcome para vigiar o gargalo: se o último PR levou **mais de uma semana** para mergear, o problema é o processo, não a pessoa — adicionar mais PRs piora (ver [[wiki/concepts/output-vs-outcome]]).
 
+## O Tempo de Revisão Não Escala Com o Tamanho do PR
+
+[[wiki/sources/pull-requests-por-que-falham-alternativas-sem-pr]] argumenta que a razão mecânica por trás de PRs grandes ficarem mal revisados não é preguiça — é que quem revisa dedica, na prática, a mesma janela de tempo (~20-30 min) tanto para um PR de 200 quanto de 2.000 linhas, porque a jornada de trabalho já está alocada em outras tarefas. O resultado é que a mesma quantidade absoluta de bugs encontrados representa uma cobertura proporcionalmente muito menor no PR grande — o review não "escala" com o tamanho do PR. Nos extremos, isso quebra de duas formas: um PR de ~20.000 linhas recebe efetivamente zero revisão real, e dedicar 5 horas contínuas a um único PR deixa de ser "rápido" (quase um dia de trabalho perdido, com o ciclo de idas e vindas empurrando o merge para semanas depois).
+
+**Tamanho ótimo sugerido:** ~100-300 linhas como heurística grosseira (podendo ser menor para código mais complexo) — reconhecendo explicitamente que contagem de linhas não captura complexidade cognitiva real. Existe uma dinâmica social nos dois extremos: PR de 10 linhas tende a gerar *bikeshedding* (revisor quer "sentir que contribuiu" e sugere trocas de nome, comentários, `for` vs. `while`); PR de 1.000 linhas tende a receber um "looks good to me" superficial sem revisão de fato — o mesmo sintoma já descrito acima em "Por Que o Looking Good to Me Aumentou com Agentes Autônomos", aqui com uma causa puramente de volume, não de agente autônomo.
+
+## Cadência de Revisão e "Inventário É Custo"
+
+A mesma fonte aplica o princípio lean/toyotista de [[wiki/concepts/inventario-e-custo|inventário é custo]] (via [[wiki/entities/principles-of-product-development-flow|Reinertsen]]) a PRs abertos: um PR parado é código que não está gerando valor, e cada dia de espera adiciona custo de troca de contexto (*context switching*) para quem abriu o PR — sem falar no risco de o trabalho ter seguido um caminho errado sem que ninguém tenha percebido ainda. Recomendação prática: revisar PRs abertos **todos os dias**, idealmente **duas vezes** (início e fim do expediente), para nunca deixar um PR passar a noite parado sem necessidade.
+
+Duas técnicas concretas para reduzir esse inventário sem sacrificar qualidade:
+
+- **Fast follow** — em vez de negar um PR funcional que só precisa de ajustes menores (reabrindo o ciclo de idas e vindas), aprovar e mergear, e abrir um segundo PR **menor**, só com as correções. Mantém o inventário principal limpo e o PR de correção é mais rápido e barato de revisar.
+- **Draft PR** — abrir um PR ainda incompleto mas encaminhado, para alguém validar a direção antes de terminar o trabalho — poda um caminho errado antes de virar retrabalho de dias/semanas.
+
+Também cita **checklists de PR** (ex.: "criei testes de integração", "testei localmente", "testei em staging") como camada adicional de qualidade usada por algumas empresas antes do merge.
+
 ## Relacionado
 
 - [[wiki/concepts/definicao-de-pronto]] — code review é um dos critérios de "pronto"
@@ -86,6 +103,7 @@ O critério "regra de negócio primeiro" e a exigência de pull request/versiona
 - [[wiki/concepts/red-flags-de-design]] — heurística concreta para o que procurar durante a revisão
 - [[wiki/concepts/divida-cognitiva]] — code review como checkpoint contra fragmentação de entendimento compartilhado em times com IA
 - [[wiki/concepts/rebase-vs-merge]] — rebase local antes do PR, merge para integrar
+- [[wiki/concepts/inventario-e-custo]] — PR aberto como inventário parado; base do argumento de cadência de revisão diária
 
 ## Ler por Categoria de Mudança, Não Tudo de Uma Vez
 
@@ -122,3 +140,4 @@ A tensão que explica a diferença: responsabilizar cada dev pelo que coloca em 
 - [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]] — +91% no tempo de code review (Faros AI); a revisão como gargalo que não escala junto com a produção
 - [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — matriz risco × dificuldade para estratificar review (merge automático / amostragem / revisão manual em pares); erre quando o erro é pequeno
 - [[wiki/sources/potencial-programador-atitude-mindset]] — review como palco de [[wiki/concepts/ownership-proativo|ownership]] (ir atrás da própria aprovação) e o anti-padrão do revisor que sugere melhoria sem colocar a mão no código
+- [[wiki/sources/pull-requests-por-que-falham-alternativas-sem-pr]] — tempo de revisão não escala com tamanho do PR; tamanho ótimo ~100-300 linhas; cadência diária/2x-dia via inventário-é-custo; fast follow e draft PR

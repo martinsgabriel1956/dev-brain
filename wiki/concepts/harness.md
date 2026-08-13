@@ -3,8 +3,8 @@ type: concept
 title: "Harness"
 aliases: ["AI harness", "harness de IA", "coding harness"]
 date_created: 2026-06-02
-date_updated: 2026-08-11
-source_count: 15
+date_updated: 2026-08-13
+source_count: 17
 tags: [harness, llm, tool-call, agente, context-engineering, erros-compostos, verificacao]
 skill: tech-mentor-ai
 status: stable
@@ -113,6 +113,12 @@ Dado de benchmark citado (sem número específico): o mesmo Claude Opus performa
 
 [[wiki/sources/hermes-agent-open-claw-learning-loop]] descreve uma nova geração de harness que embute um [[wiki/concepts/closed-loop-skill-learning|closed-loop skill learning system]] — o harness não só executa tool calls, mas extrai padrões do histórico de execuções e gera/refina skills sozinho, sobre uma [[wiki/concepts/agent-memory-tres-camadas|memória em três camadas]]. Exemplos citados: [[wiki/entities/hermes-agent]] e [[wiki/entities/open-claw]] (ambos open source/MIT), e o "Dreaming in Claude" da Anthropic como resposta proprietária ao mesmo padrão. Isso desloca parte do trabalho antes feito manualmente com [[wiki/concepts/hooks-agente]] (extrair padrões de sessões passadas) para dentro do próprio ciclo do harness.
 
+## Harness Mínima em Código: o Esqueleto por Trás de Claude Code e Codex
+
+[[wiki/sources/harness-explicado-function-calling-hag-evals]] demonstra ao vivo que uma harness funcional cabe num único arquivo Python: chave de API, system prompt, uma lista de tools (uma única tool `run`/bash é suficiente para o modelo interagir com o filesystem local) e um loop `while True` que alterna entre resposta do usuário e do modelo — enquanto houver `function_call` pendente, o script executa a tool localmente e reenvia o resultado ao contexto, até o modelo devolver um `output_text` final. É o mesmo mecanismo por trás de Claude Code e Codex, só que sem as camadas de rules/skills/MCP/worktrees que as ferramentas comerciais empilham em cima. A mesma fonte relata que, antes do function calling nativo existir em todo provider (inclusive Anthropic), o workaround usado era pedir ao modelo que sinalizasse chamadas de função via tags XML no texto — funcionava ~99% das vezes, com retry cobrindo o restante.
+
+Essa mesma fonte também traz um exemplo concreto de "user harness" anterior à popularização do próprio termo "harness": um sistema RAG corporativo (chunking → vector database → busca KNN/BM25 → prompt restrito aos documentos recuperados → avaliação de fidelidade por outra IA, no estilo Evals da OpenAI) construído numa empresa antes do vocabulário atual existir — reforça que "harness" nomeia uma prática de engenharia (código determinístico + prompts + avaliação sistemática) que já existia informalmente.
+
 ## Harness como Multiplicador Oculto de Custo
 
 [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] oferece uma explicação concreta para um paradoxo de custo: o preço por token caiu continuamente desde 2022 e a qualidade dos modelos subiu, mas o gasto total sobe mesmo assim — porque a orquestração de agentes (o harness por trás) multiplica o consumo por tarefa "dezenas de vezes" frente ao uso direto do modelo. A fonte cita, como anedota (confiança baixa, sem link/benchmark), devs trocando de [[wiki/entities/claude-code]] para [[wiki/entities/opencode]] alegando que o primeiro entra em loops de correção supérflua (bug suspeito → sugestão de correção → reescreve testes → reescreve código → reescreve testes de novo) sem ganho de valor proporcional ao token gasto — o mesmo padrão que [[wiki/concepts/token-maxing]] descreve como "scripts descartáveis" incentivados por métricas de volume de token.
@@ -134,3 +140,5 @@ Dado de benchmark citado (sem número específico): o mesmo Claude Opus performa
 - [[wiki/sources/loop-engineering-harness-e-a-frase-que-viralizou]] — corrige a leitura "loop engineering matou harness engineering": o loop contém o harness, não o substitui; três fatores que tornaram loops longos viáveis em 2026 (modelo, harness, estado persistente)
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — matemática de erros compostos (99%ⁿ), quatro mecanismos de mitigação (verificação, checkpoints, ferramentas, contexto limpo), caso Vercel (remoção de 80% das ferramentas), doze componentes do harness (sete documentados)
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — a harness executa comandos de shell nativos (`cat`, `echo`, `grep`, `sed`) na máquina do usuário e envia o output ao servidor da Anthropic; "puro suco da harness"
+- [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — qualidade de compactação de contexto do Codex como diferencial do harness no comando `/go`; stop hook como ponto de extensão determinístico para o padrão judge
+- [[wiki/sources/harness-explicado-function-calling-hag-evals]] — harness mínima em ~1 arquivo Python (system prompt + 1 tool + loop while true) como esqueleto didático do mecanismo por trás de Claude Code/Codex; workaround via tags XML antes do function calling nativo existir em todo provider; sistema RAG corporativo pré-termo "harness" como exemplo de "user harness" informal

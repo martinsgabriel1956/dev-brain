@@ -3,8 +3,8 @@ type: concept
 title: "Adaptabilidade"
 aliases: ["adaptability", "flexibilidade profissional", "resiliência a mudança"]
 date_created: 2026-05-19
-date_updated: 2026-07-21
-source_count: 3
+date_updated: 2026-08-13
+source_count: 4
 tags: [soft-skills, adaptabilidade, carreira, resiliência, profissional-do-futuro]
 skill: tech-mentor-leadership
 status: stable
@@ -38,6 +38,12 @@ A recusa em se adaptar ("eu sou assim e pronto, quem quiser que aceite") é desc
 
 O mesmo princípio se aplica ao nível de comunicação esperado conforme a progressão de carreira (júnior → pleno → sênior → tech lead → staff/principal): o registro de comunicação muda a cada nível — staff/principal interage mais com executivos e precisa adaptar a linguagem — sem que isso signifique mudança de identidade. Ver [[wiki/concepts/comunicacao-tecnica]].
 
+## A Régua Sobe: Saudosismo Como Escolha de Alto Risco
+
+[[wiki/sources/papinho-tech-solo-q-and-a-carreira]] dá um exemplo histórico concreto do custo de **não** se adaptar: em 2009, construir uma página estática (HTML+CSS puro, sem JavaScript) já era diferencial; hoje um prompt de duas linhas gera a stack completa (HTML/CSS/JS/framework/banco). A postura de saudosismo ("na minha época a gente escrevia código de verdade; hoje vibe coding é tudo vagabundo") é enquadrada como **ignorar o mercado** — legítima, mas com consequências. É o mesmo mecanismo já registrado nesta página (recusa a se adaptar = alto risco), aplicado agora à evolução das ferramentas.
+
+O conselho central: "a régua cada vez sobe mais" — é preciso saber cada vez mais sobre mais assuntos, e a IA serve para um profissional só juntar todas essas áreas e entregar algo relevante a menor custo. Isso amarra adaptabilidade a [[wiki/concepts/profissional-t-shaped]] e ao [[wiki/concepts/arquiteto-de-solucoes]].
+
 ## Conexões
 
 - [[wiki/concepts/soft-skills]]
@@ -58,3 +64,4 @@ Na era da IA, a velocidade de mudança eliminou a possibilidade de roadmaps de 3
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]
 - [[wiki/sources/profissional-do-futuro-ia-identidade-aprendizado]]
 - [[wiki/sources/papinho-tech-solo-adaptabilidade]] — vestimenta/comunicação como adaptação estratégica sem perda de essência; comunicação por nível hierárquico
+- [[wiki/sources/papinho-tech-solo-q-and-a-carreira]] — a régua que sobe; saudosismo anti-vibe-coding como escolha de alto risco

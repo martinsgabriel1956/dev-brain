@@ -3,8 +3,8 @@ type: concept
 title: "Modelos Frontier"
 aliases: ["frontier models", "modelos de ponta", "modelos comerciais avancados"]
 date_created: 2026-06-02
-date_updated: 2026-08-11
-source_count: 6
+date_updated: 2026-08-12
+source_count: 7
 tags: [modelos, frontier, llm, openai, anthropic, google]
 skill: tech-mentor-ai
 status: draft
@@ -51,6 +51,10 @@ Ver [[wiki/sources/formacao-ia-devs-aula-03-llm]] para tabela de preços por tok
 
 [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] usa "Fable" como o modelo de uso geral mais forte da Anthropic para programação/arquitetura — sem qualquer menção a restrição de acesso ou especialização em cybersegurança. Isso contrasta com a subseção abaixo, onde "Fable 5" é descrito por [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]] como um modelo bloqueado pelo governo dos EUA por capacidade ofensiva de cybersegurança. Nenhuma das duas fontes é documentação oficial da Anthropic (ambas são transcrições de vídeo), então a relação entre os dois não está confirmada: pode ser o mesmo modelo em dois contextos de uso (geral vs. cybersegurança), ou duas coisas distintas que compartilham nome por coincidência/erro de transcrição. Tratado como open question em ambas as fontes.
 
+## Tensão: GPT 5.6 Tratado como Modelo Acessível de Uso Diário
+
+[[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] trata GPT 5.6 como um modelo comercial normal, com reasoning level selecionável (medium citado explicitamente), usado para tarefas de backend do dia a dia — sem qualquer menção a bloqueio ou restrição de acesso. Isso está em tensão com a subseção abaixo, que registra GPT 5.6 como um dos modelos formalmente bloqueados pelo governo dos EUA por capacidade ofensiva de cybersegurança, segundo [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]]. Mesma leitura possível já registrada para "Fable" vs. "Fable 5" acima: pode ser colisão de nome entre um GPT 5.6 de uso geral e um GPT 5.6 restrito de cybersegurança, ou erro de transcrição/nomenclatura numa das fontes. Tratar como open question, não resolvida por esta fonte.
+
 ## Subclasse: Modelos Frontier de Cybersegurança (não-públicos)
 
 Além dos modelos frontier de uso geral acima, surgiu em 2026 uma subclasse de modelos frontier especializados em cybersegurança ofensiva/defensiva — capazes de descobrir vulnerabilidades de software em escala industrial (falhas de décadas de idade em OpenBSD, FFmpeg, kernel Linux). Diferem dos modelos da tabela acima por não serem lançados ao público: Mitos e Fable 5 (Anthropic) e Mitos 5 foram restritos a um consórcio fechado (Glasswing) e depois formalmente bloqueados pelo governo dos EUA; o GPT 5.6 (OpenAI) seguiu o mesmo padrão de bloqueio. Japão (Sakana AI/Fugo) e China (360/Tulong Fang, Zhipu AI/GLM 5.2) já reivindicam capacidade equivalente. Ver [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]].
@@ -63,3 +67,4 @@ Além dos modelos frontier de uso geral acima, surgiu em 2026 uma subclasse de m
 - [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]] — subclasse de modelos frontier de cybersegurança bloqueados por risco de segurança nacional (Mitos, Fable 5, GPT 5.6)
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — Fable e Sol/GPT 5.6 como os dois modelos mais fortes no Artificial Analysis; dados de custo/velocidade comparativos entre modelos de fronteira e alternativas mais baratas
 - [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — reposicionamento da linha Anthropic: Fable como âncora premium, **Opus como "novo Sonnet"**, Grok 4.5 e Kimi K3 no mid-tier abaixo do Opus, tier barato (Haiku) sendo abandonado
+- [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — Fable e GPT 5.6 como os modelos mais capazes para long-running tasks (relatos de runs de mais de dois dias); tensão sobre GPT 5.6 tratado como modelo acessível de uso diário vs. bloqueado por cybersegurança

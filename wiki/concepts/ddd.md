@@ -3,8 +3,8 @@ type: concept
 title: "DDD — Domain-Driven Design"
 aliases: ["domain-driven design", "ddd", "domínio"]
 date_created: 2026-05-31
-date_updated: 2026-08-03
-source_count: 7
+date_updated: 2026-08-13
+source_count: 8
 tags: [ddd, arquitetura, bounded-context, aggregate, domain-events, hexagonal]
 skill: tech-mentor-backend
 status: draft
@@ -74,9 +74,14 @@ Um Value Object (ex: `content` de uma `Notification`, validado e imutável no do
 
 [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] argumenta que tentar aplicar [[wiki/concepts/sharding]] diretamente a um monolito com centenas de tabelas não funciona — resulta em fragmentar poucas tabelas centrais e replicar dezenas de outras em todo shard. A ordem correta é primeiro usar DDD para decompor o sistema em bounded contexts/[[wiki/concepts/microsservicos]], e só então aplicar sharding no banco de um microsserviço específico, onde uma única entidade central (e portanto uma única shard key) faz sentido.
 
+## Entidade Rica vs. Anêmica
+
+No DDD, o agregado é responsável por proteger suas próprias invariantes — regras de negócio moram **dentro** da entidade, não em services externos. O oposto é o [[wiki/concepts/modelo-de-dominio-anemico]]: dados sem comportamento, um objeto que na verdade é uma estrutura de dados. [[wiki/sources/encapsulamento-proteger-estado-invalido]] demonstra a versão concreta disso em Java — pôr as validações (`price > 0`, `stock >= 0`) dentro dos métodos de comando da própria classe, via [[wiki/concepts/encapsulamento]], para que o objeto nunca entre em estado inválido.
+
 ## Key Sources
 
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
+- [[wiki/sources/encapsulamento-proteger-estado-invalido]] — entidade rica vs. anêmica na prática: invariantes protegidas dentro do objeto via encapsulamento
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — especificações agnósticas à linguagem de programação (tese de Fabrício Arcanjo), transpilação de arquitetura entre stacks
 - [[wiki/sources/mappers-conversao-entre-camadas]]

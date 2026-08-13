@@ -3,8 +3,8 @@ type: entity
 title: "OpenAI"
 aliases: ["Open AI"]
 date_created: 2026-05-17
-date_updated: 2026-08-11
-source_count: 12
+date_updated: 2026-08-13
+source_count: 13
 tags: [openai, organização, llm, ia, cartao-corporativo]
 skill: tech-mentor-ai
 status: stable
@@ -61,9 +61,14 @@ Segundo [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]], em abril a Ope
 
 [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] atribui a Sam Altman uma sugestão pública (Twitter/X, sem link/citação literal na fonte) de que criadores deveriam reservar um percentual do que é criado com IA para devolver aos laboratórios — citada pelo autor como eco, do lado oposto do debate, do mesmo racional de "cobrar por resultado, não por token" defendido pelo CEO da [[wiki/entities/palantir-technologies]] na mesma fonte. Confiança baixa: paráfrase de segunda mão, sem confirmação cruzada.
 
+## Function Calling e Demo de Harness Mínima
+
+Segundo [[wiki/sources/harness-explicado-function-calling-hag-evals]], a documentação de function calling da OpenAI é citada como referência para construir sistemas agênticos — a fonte demonstra ao vivo uma harness mínima em Python usando a API da OpenAI (Responses API, a julgar pelo formato `type: function_call` / `type: output_text` observado), com uma única tool de bash. Ver [[wiki/concepts/tool-call]].
+
 ## Fontes
 
 - [[wiki/sources/gpt3-language-models-are-few-shot-learners]]
+- [[wiki/sources/harness-explicado-function-calling-hag-evals]] — documentação de function calling como referência de engenharia; demo ao vivo de harness mínima em Python usando a API da OpenAI
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — claim (não verificado) de tweet de Sam Altman sobre percentual do valor criado com IA
 - [[wiki/sources/microsoft-prompt-engineering-guide]]
 - [[wiki/sources/tokens-llm-fundamentos-typescript]]

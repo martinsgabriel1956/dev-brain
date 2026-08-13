@@ -3,8 +3,8 @@ type: concept
 title: "Fundação Técnica"
 aliases: ["fundamentos", "base técnica", "foundations"]
 date_created: 2026-05-16
-date_updated: 2026-07-03
-source_count: 5
+date_updated: 2026-08-13
+source_count: 7
 tags: [aprendizado, carreira, fundamentos]
 skill: tech-mentor-leadership
 status: stable
@@ -62,3 +62,5 @@ Isso não se aplica a quem nunca construiu a fundação — um dev que aprendeu 
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]] — raciocínio matemático como componente da fundação que não envelhece entre ciclos de mercado
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]] — engenheiro coleciona modelos mentais, não ferramentas; divide a fundação em eixo vertical (DSA, arquitetura, domínio, SO/redes, banco de dados) e horizontal (comunicação, produto, complexidade, produção)
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]] — fundação sólida torna o esquecimento de sintaxe reversível; sem fundação, não há o que recuperar
+- [[wiki/sources/papinho-tech-solo-q-and-a-carreira]] — o mesmo eixo vertical/horizontal descrito como [[wiki/concepts/profissional-t-shaped|formação em T]]; matemática (Cálculo/Estatística) como componente da grade de computação
+- [[wiki/sources/por-que-comecar-com-c-em-2026-cs50-david-malan]] — David Malan: construir as próprias estruturas de dados em C para entender "de baixo para cima" o que acontece dentro do dispositivo; base que serve de andaime para linguagens de alto nível

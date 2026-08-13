@@ -3,8 +3,8 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-08-11
-source_count: 22
+date_updated: 2026-08-13
+source_count: 23
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack]
 skill: tech-mentor-ai
 status: stable
@@ -86,6 +86,10 @@ Segundo [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]], em abril a Ant
 
 [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] analisa a Anthropic como "mestre em vendas": no lançamento do **Opus 5**, teria usado [[wiki/concepts/ancoragem-de-preco|ancoragem de preço]] — ancorar o Opus ao **Fable** (premium caro) para fazê-lo parecer barato, apesar de custar mais que o dobro do Sonnet. Efeito de reposicionamento da linha: o Fable vira a nova âncora premium, o **Opus vira o "novo Sonnet"** (modelo do dia a dia) e o tier barato (Haiku) estaria sendo abandonado para modelos chineses/open source a ~1/10 do preço. Preços de saída narrados (sem link oficial): Fable ~10,50 e Opus ~5,25 por milhão de tokens. Reforça o padrão já documentado de [[wiki/concepts/corrida-preco-qualidade-llm|competição de preço/qualidade]] e de subsídio de produto (ver seção "Venda Enterprise no Brasil e Subsídio de Produto" acima).
 
+## Function Calling Chegou Depois da OpenAI: Workaround via Tags XML
+
+Segundo [[wiki/sources/harness-explicado-function-calling-hag-evals]], numa época em que a Anthropic ainda não oferecia function calling nativo (recurso inicialmente específico da OpenAI), o workaround de engenharia usado para obter o mesmo comportamento era pedir ao modelo que sinalizasse chamadas de função via tags XML no próprio texto de resposta — funcionava ~99% das vezes, cobrindo o restante com retry. Relato histórico sem data exata; ver [[wiki/concepts/tool-call]] para a cronologia geral do mecanismo.
+
 ## Guia Oficial "Getting Started with Loops"
 
 Guia oficial publicado pela Anthropic definindo quatro níveis de autonomia para loops agênticos — turn-based, goal-based, time-based e proactive — cada um entregando progressivamente mais responsabilidade de decisão ao agente (ver [[wiki/concepts/loop-engineering]] para a lista completa). Publicado cerca de um ano depois do [[wiki/concepts/ralph-loop|Ralph Loop]] de [[wiki/entities/geoffrey-huntley]] (julho de 2025) ter demonstrado, de forma deliberadamente simples, que o próprio conceito de "loop até terminar" era viável — segundo [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]], a Anthropic institucionalizou um ano depois algo que começou como uma técnica quase de piada.
@@ -115,3 +119,4 @@ Guia oficial publicado pela Anthropic definindo quatro níveis de autonomia para
 - [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — [[wiki/entities/boris]] (criador do Claude Code) sobre docs/`CLAUDE.md`/`review.md` como o novo trabalho de engenharia; preferência da Anthropic por `AGENTS.md` mencionada de passagem
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — servidor da Anthropic como destino do conteúdo lido por `cat` pela harness do Claude Code (a harness lê o arquivo localmente e envia como parte do prompt)
 - [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — ancoragem de preço no lançamento do Opus 5 (Fable como âncora, Opus como "novo Sonnet")
+- [[wiki/sources/harness-explicado-function-calling-hag-evals]] — relato histórico de que o function calling nativo chegou depois da OpenAI; workaround via tags XML usado antes disso

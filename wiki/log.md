@@ -6629,3 +6629,211 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha no topo de Sources; 5 conceitos novos em "Arquitetura Backend & Event-Driven"; 3 entidades novas no topo de Entities
 
 **Notas / contradições:** (1) **Sem contradição** com a wiki — a fonte estende, pela camada de entrega/infra, a mesma Lei de Conway já registrada em [[wiki/concepts/contexto-organizacional-para-arquitetura]] e [[wiki/concepts/microsservicos]]. (2) **Continuidade histórica, não conflito:** "sensible defaults" (2018) evoluiu para "golden paths"/IDP/Backstage `[skill: tech-mentor-infra]` — mesma ideia, vocabulário mais maduro. (3) O número **"10-12x mais lento"** vem de um único estudo interno de telecom não publicado — ordem de grandeza ilustrativa, não benchmark. (4) **Copyright:** o texto integral não pôde ser reproduzido verbatim; o `raw/` é adaptação/tradução livre com citações curtas preservadas em inglês.
+
+## [2026-08-12] ingest | Loop Engineering: Padrões para o Loop Trabalhar Sozinho (Determinístico vs. Agêntico, Judge, Orquestrador, Estado, Skills)
+
+**Fonte:** [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — transcrição colada pelo usuário, sem URL/canal/data confirmados
+**Skill carregada:** `tech-mentor-ai` (domínio: agentes/loop engineering — `references/ai/agentic-patterns-2025.md` e `references/ai/agents-runtime.md`; Planner-Executor-Critic, LLM-as-Judge, long-running agents)
+
+**Arquivos criados:**
+- `raw/loop-engineering-padroes-loop-deterministico-agentico.md` — transcrição em PT-BR reorganizada em seções, com nota de identificação de autoria por inferência (Pedro Nauke)
+- `wiki/sources/loop-engineering-padroes-loop-deterministico-agentico.md` — TL;DR, nota de identificação do autor, 14 key claims, entidades/conceitos, contradições, open questions
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/loop-engineering.md` — `source_count` 6 → 7; **cinco seções novas**: Loop Determinístico vs. Loop Agêntico (com subseções de custo de contexto inicial e teste do autor sobre breakdown de tasks), Padrão Judge, Padrão Orquestrador de Modelos, Gerenciamento de Estado via Arquivo, Skills como Encapsulamento de Loop Não Determinístico
+- `wiki/entities/pedro-nauke.md` — `source_count` 8 → 9; nova subseção de opiniões (loop determinístico/agêntico, Codex como melhor harness pra `/go`, padrão judge, padrão orquestrador, teste de breakdown de tasks)
+- `wiki/entities/codex-openai.md` — `source_count` 4 → 5; nova seção sobre `/go`, qualidade de compactação de contexto e ciclo de retroalimentação logs→treinamento
+- `wiki/concepts/reasoning-level.md` — `source_count` 3 → 4; nova seção sobre custo de contexto inicial em loops que reiniciam sessão; **tensão registrada** com a regra pré-existente de que reasoning alto não desperdiça tanto em tarefa bem definida
+- `wiki/concepts/planner-executor-critic.md` — `source_count` 3 → 4; nova seção "Variante: Padrão Judge" como especialização pós-hoc do Critic via stop hook
+- `wiki/concepts/task-looper.md` — `source_count` 2 → 3; nova seção sobre versão leve de estado via `state.md` (vs. o trio lessons.md/state/handoff já documentado)
+- `wiki/concepts/spec-driven-development.md` — `source_count` 15 → 16; nova seção sobre teste comparativo do autor (breakdown de tasks continua valendo em loop agêntico)
+- `wiki/concepts/harness.md` — `source_count` 15 → 16; nova linha em Key Sources sobre compactação do Codex e stop hook como ponto de extensão
+- `wiki/concepts/modelo-frontier.md` — `source_count` 6 → 7; nova seção "Tensão: GPT 5.6 Tratado como Modelo Acessível de Uso Diário"
+- `wiki/index.md` — nova linha em Sources logo após [[wiki/sources/loop-engineering-harness-e-a-frase-que-viralizou]] (mesma série)
+
+**Notas / contradições:** (1) **Correção de autoria em tempo real durante o ingest**: a transcrição não trazia nome do autor; o rascunho inicial presumiu "Hulk" (autor de uma série diferente, [[wiki/sources/loop-engineering-planner-critic-grafo]]) por semelhança temática, mas a menção "o Compose, a ferramenta que eu criei" e a recapitulação literal do vídeo 1 já ingerido confirmaram [[wiki/entities/pedro-nauke]] como autor mais provável — documentado como inferência, não certeza, na própria fonte. (2) **Tensão nova em [[wiki/concepts/reasoning-level]]**: esta fonte diz que reasoning alto atrasa tasks já bem definidas de spec driven; fonte pré-existente dizia que tarefa bem definida não desperdiça tanto com reasoning alto — não resolvida, possivelmente dois eixos diferentes (qualidade vs. latência). (3) **Tensão nova em [[wiki/concepts/modelo-frontier]]**: GPT 5.6 tratado aqui como modelo comercial acessível do dia a dia, mas outra fonte da wiki registra GPT 5.6 como modelo bloqueado por capacidade ofensiva de cybersegurança — mesma dúvida de colisão de nome já registrada para "Fable" vs. "Fable 5". (4) **Complementa, não contradiz**, a taxonomia "loop fixo vs. loop criador" de [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] (série diferente) — eixos ortogonais de classificação (side effect acumulado vs. mecanismo de execução/contexto), não devem ser fundidos. (5) Dois termos não identificados com confiança na transcrição ("C Loop Tests" e "Qwaya") ficaram registrados como open questions, sem criar páginas de entidade/ferramenta.
+
+## [2026-08-13] ingest | Por Que Pull Requests Falham (e Alternativas Sem PR)
+
+**Fonte:** [[wiki/sources/pull-requests-por-que-falham-alternativas-sem-pr]] — transcrição de vídeo colada pelo usuário, já em português (sem necessidade de tradução), bloco de patrocínio AUVP removido por não ser conteúdo técnico. Reescrita como Markdown estruturado por seções (introdução + Parte 1: por que PRs falham/funcionam + Parte 2: alternativas sem PR + fechamento) e salva em `raw/pull-requests-por-que-falham-alternativas-sem-pr.md`.
+**Skill carregada:** `tech-mentor-leadership` (domínio: code review, processo de PR — mesma skill já usada em [[wiki/concepts/code-review]] e [[wiki/concepts/trunk-based-development]])
+
+**Arquivos criados:**
+- `raw/pull-requests-por-que-falham-alternativas-sem-pr.md`
+- `wiki/sources/pull-requests-por-que-falham-alternativas-sem-pr.md` — TL;DR, 16 key claims, entidades/conceitos, open questions, raw quotes
+- `wiki/concepts/inventario-e-custo.md` — stub novo: princípio toyotista (Reinertsen) de que trabalho não concluído é custo, aplicado a PR aberto
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/code-review.md` — `source_count` 16 → 17; duas seções novas: "O Tempo de Revisão Não Escala Com o Tamanho do PR" (200 vs. 2.000 linhas recebem a mesma janela de atenção; tamanho ótimo ~100-300 linhas; meme do bikeshedding vs. looking-good-to-me) e "Cadência de Revisão e Inventário É Custo" (revisão diária/2x-dia, fast follow, draft PR, checklists de PR)
+- `wiki/concepts/trunk-based-development.md` — `source_count` 1 → 2; nova seção "Trunk-Based Como Alternativa Completa ao Pull Request" (pair/mob programming + pipeline de testes de integração como gate + feature flags)
+- `wiki/concepts/pair-programming.md` — `source_count` 3 → 4; nova seção "Mob Programming e o Multiplicador de 1,6x"
+- `wiki/concepts/feature-flag.md` — `source_count` 2 → 3; nova seção "Rollout Progressivo Como Substituto de Branch de Feature"
+- `wiki/entities/lucas-montano.md` — `source_count` 11 → 12; novo parágrafo sobre o vídeo (atribuição provável, não confirmada)
+- `wiki/entities/principles-of-product-development-flow.md` — `source_count` 1 → 2; nova seção "Segunda Fonte: Inventário É Custo Aplicado a Pull Requests"
+- `wiki/index.md` — nova linha em Sources logo após [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] (mesma série/autor); nova linha em "Boas Práticas de Engenharia" para [[wiki/concepts/inventario-e-custo]]
+
+**Notas / contradições:** (1) **Autoria não confirmada** — a transcrição não identifica o autor nominalmente; atribuição provável a [[wiki/entities/lucas-montano]] por convergência de sinais (patrocínio AUVP, "conversei com quatro empresários antes do vídeo", estilo de fala, continuidade temática direta com [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] e [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — mesma série sobre processo de Git/PR/review). Documentada como inferência, não certeza, na própria fonte e no entity page. (2) **Provável erro de transcrição no título do livro citado**: "Principles of *Software* Development Flow" — tratado como o mesmo *Principles of Product Development Flow* (Reinertsen) já registrado em [[wiki/entities/principles-of-product-development-flow]] por outra fonte, sem confirmação literal. (3) **Sem contradição com a wiki** — a fonte estende [[wiki/concepts/code-review]] (tamanho de PR, cadência) e [[wiki/concepts/trunk-based-development]] (modelo sem-PR) com dados/heurísticas complementares às já registradas, não conflitantes. (4) Nenhum estudo é citado nominalmente para as duas afirmações quantitativas centrais (corpo de evidências de que PR reduz defeitos; multiplicador de 1,6x em pair programming) — tratadas como afirmações reportadas, não verificadas nesta ingestão.
+
+## [2026-08-13] ingest | OpenID Connect (OIDC): Autenticação Além do OAuth
+
+**Fonte:** [[wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth]] — transcrição de vídeo colada pelo usuário, já em português (sem necessidade de tradução). Reescrita como Markdown estruturado por seções (introdução + Parte 1: protocolo OpenID original + Parte 2: OpenID Foundation/OAuth/nascimento do OIDC + Parte 3: o que é o OIDC + Parte 4: interceptação do code e PKCE + fechamento) e salva em `raw/openid-connect-oidc-autenticacao-alem-do-oauth.md`.
+**Skill carregada:** `tech-mentor-security` (domínio: identidade/autenticação — `references/appsec-authn-authz.md` e `references/identity-iam.md`, mesma skill já usada em [[wiki/concepts/openid-connect]], [[wiki/concepts/oauth2]] e [[wiki/concepts/pkce]]; skill localizada em `/home/gabriel-martins/Documentos/skills/tech-mentor-security/` — caminho local diverge do `/home/nemomartins/...` referenciado no `CLAUDE.md`)
+
+**Arquivos criados:**
+- `raw/openid-connect-oidc-autenticacao-alem-do-oauth.md`
+- `wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth.md` — TL;DR, 6 key claims, entidades/conceitos, open questions
+- `wiki/concepts/openid-legado.md` — stub novo: protocolo OpenID original (2005–2014), identidade via URL + descoberta HTML, por que não vingou (vs. SAML)
+- `wiki/concepts/ropc-resource-owner-password-credentials.md` — stub novo: antipadrão de API como proxy de login/senha
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/openid-connect.md` — `source_count` 2 → 3; três seções novas: "Não Confundir com o OpenID Original", "JSON vs. XML: Por Que o OIDC Suplantou o SAML Fora do Mundo Corporativo", "Autenticação Sempre via Client/Navegador — Nunca a API Como Proxy" e "Interceptação do `code` e PKCE"
+- `wiki/concepts/oauth2.md` — `source_count` 5 → 6; nova seção "'Autenticação de Gambiarra' Antes do OIDC Existir"
+- `wiki/concepts/sso-single-sign-on.md` — `source_count` 1 → 2; nova seção "Por Que o SAML Sobreviveu e o OpenID Original Não"
+- `wiki/concepts/pkce.md` — `source_count` 4 → 5; nova linha em Key Sources (motivação do problema no contexto do fluxo OIDC completo)
+- `wiki/concepts/jwt.md` — `source_count` 2 → 3; nova linha em Key Sources (ID Token como JWT distinto do access token)
+- `wiki/entities/bernardo-lobato.md` — `source_count` 7 → 8; novo item de Key Sources (vídeo anterior da série OAuth/OIDC referenciado dentro do vídeo de PKCE já ingerido)
+- `wiki/entities/google.md` — `source_count` 3 → 4; nova seção "Membro Fundador da OpenID Foundation (2007) e Adotante do OIDC"
+- `wiki/entities/microsoft.md` — `source_count` 4 → 5; nova seção "Adoção em Massa do OpenID Connect"
+- `wiki/index.md` — nova linha em Sources logo antes de [[wiki/sources/pkce-proof-key-code-exchange-spa-mobile]] (mesma série, vídeo anterior); duas linhas novas em "Autenticação & Identidade" para [[wiki/concepts/openid-legado]] e [[wiki/concepts/ropc-resource-owner-password-credentials]]
+
+**Notas / contradições:** (1) **Autoria não confirmada** — a transcrição não identifica o autor nominalmente; atribuição provável a [[wiki/entities/bernardo-lobato]] por convergência de sinais fortes: numeração de série idêntica à de [[wiki/sources/pkce-proof-key-code-exchange-spa-mobile]] ("nossa jornada no mundo das APIs, autenticação e autorização") e o próprio vídeo de PKCE já ingerido recapitula literalmente o conteúdo deste vídeo como continuação direta. Documentada como inferência, não certeza. (2) **Sem contradição com a wiki** — a fonte estende [[wiki/concepts/openid-connect]], [[wiki/concepts/oauth2]] e [[wiki/concepts/sso-single-sign-on]] com contexto histórico e comparativo (OpenID original vs. SAML vs. OIDC) complementar ao que já estava registrado, sem conflitar com nenhuma claim existente. (3) **Path do skill diverge do CLAUDE.md**: o `CLAUDE.md` deste repositório referencia skills em `/home/nemomartins/Documentos/new/skills/`, mas neste ambiente (usuário `gabriel-martins`) o caminho real é `/home/gabriel-martins/Documentos/skills/` — mesma estrutura de diretórios, prefixo de usuário diferente. Skill carregada normalmente a partir do caminho real; registrado aqui para não repetir a busca em ingestões futuras. (4) Nenhuma fonte primária (RFC, spec OpenID 1.0/2.0, documento da OpenID Foundation) foi cruzada para os detalhes do fluxo original — tratado como relato histórico do autor do vídeo, não verificado contra a especificação nesta ingestão.
+
+---
+
+## [2026-08-13] ingest | Harness Explicado: Function Calling, HAG (RAG Interno) e Evals
+
+**Fonte:** [[wiki/sources/harness-explicado-function-calling-hag-evals]] — transcrição de vídeo pt-BR colada pelo usuário no chat (canal com cursos próprios de DSA/LeetCode, roadmap de entrevistas e system design; autor não identificado nominalmente), sem URL. Vídeo de resposta/comparação a um conteúdo anterior sobre harness do autor "Téo/tio".
+**Skill carregada:** `tech-mentor-ai` (domínio: harness/agentes/function calling; índice → `references/ai/agent-harness-engineering.md`, `references/ai/structured-outputs-function-calling.md`, `references/ai/production-evals.md`, `references/ai/rag-advanced.md`). Path real neste ambiente: `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/` (mesma observação já registrada em ingest anterior sobre divergência de path do `CLAUDE.md`).
+
+**Arquivos criados:**
+- `raw/harness-explicado-function-calling-hag-evals.md` — transcrição limpa e organizada em MD (já em PT-BR, sem tradução necessária)
+- `wiki/sources/harness-explicado-function-calling-hag-evals.md` — TL;DR, 5 claims, entities/concepts, key sources, open questions
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/harness.md` — `source_count` 16 → 17; nova seção "Harness Mínima em Código: o Esqueleto por Trás de Claude Code e Codex" (demo Python + relato do sistema RAG/HAG pré-termo)
+- `wiki/concepts/tool-call.md` — `source_count` 6 → 7; nova entrada em Key Sources citando a demo ao vivo do ciclo `function_call` → execução local → `output_text`
+- `wiki/concepts/prompt-engineering.md` — `source_count` 8 → 9; nova seção "Skills São Apenas Mais Texto no Prompt"
+- `wiki/sources/rag-retrieval.md` — `source_count` 1 → 2; nova linha em Key Sources (relato informal do mesmo pipeline RAG)
+- `wiki/sources/evals-sistematicas.md` — `source_count` 1 → 2; nova linha em Key Sources (LLM-as-judge para faithfulness + custo em tokens por modelo)
+- `wiki/sources/structured-outputs-function-calling.md` — `source_count` 0 → 1; seção "Key Sources" criada (não existia) com o histórico do workaround via tags XML antes do function calling nativo
+- `wiki/entities/openai.md` — `source_count` 12 → 13; nova seção "Function Calling e Demo de Harness Mínima"
+- `wiki/entities/anthropic.md` — `source_count` 22 → 23; nova seção "Function Calling Chegou Depois da OpenAI: Workaround via Tags XML"
+- `wiki/entities/abacus-ai.md` — `source_count` 4 → 5; nova linha em Key Sources (bloco patrocinado: CLI própria, chat multi-modelo, feature "agent swarm")
+- `wiki/index.md` — nova linha em Sources logo após [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]]; nenhum concept/entity novo (harness e tool-call já indexados)
+
+**Notas / contradições:** (1) **Sem contradição** — o conteúdo técnico central (ciclo de tool call, RAG, evals) já estava bem coberto na wiki por fontes anteriores, principalmente [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] e [[wiki/sources/rag-retrieval]]; esta fonte contribui sobretudo com (a) uma demo de código mínima e concreta do mecanismo, e (b) um dado histórico novo — o workaround via tags XML usado antes do function calling nativo existir em todo provider (inclusive Anthropic) — não documentado em nenhuma fonte anterior da wiki. (2) **Não verificado**: data exata em que a Anthropic passou a oferecer function calling nativo não é citada nesta fonte; registrado como open question em [[wiki/sources/harness-explicado-function-calling-hag-evals]] para reconciliar se uma fonte futura trouxer a data. (3) Bloco de patrocínio da Abacus (CLI, chat multi-modelo, "agent swarm") tratado como demonstração comercial, mesmo padrão de confiança já aplicado às outras fontes patrocinadas por essa mesma empresa já presentes na wiki.
+
+---
+
+## [2026-08-13] ingest | Crise de Vagas em Tech: Juros Altos, Não Só Culpa da IA
+
+**Fonte:** [[wiki/sources/crise-vagas-tech-juros-altos-nao-e-so-culpa-da-ia]] — transcrição de vídeo colada pelo usuário no chat, já em pt-BR (sem necessidade de tradução). Reescrita como Markdown estruturado por seções e salva em `raw/crise-vagas-tech-juros-altos-nao-e-so-culpa-da-ia.md`. Sem sponsor block na transcrição fornecida.
+**Skill carregada:** `tech-mentor-leadership` (domínio: carreira/mercado de trabalho — `references/career-progression.md`, mesma skill já usada em [[wiki/concepts/ciclo-de-mercado-tech]], [[wiki/concepts/vaga-junior-vira-pleno]] e [[wiki/concepts/reserva-de-emergencia]]; skill localizada em `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/` — caminho local diverge do `/home/nemomartins/...` referenciado no `CLAUDE.md`, mesma observação já registrada em ingests anteriores)
+
+**Arquivos criados:**
+- `raw/crise-vagas-tech-juros-altos-nao-e-so-culpa-da-ia.md`
+- `wiki/sources/crise-vagas-tech-juros-altos-nao-e-so-culpa-da-ia.md` — TL;DR, 13 key claims, entidades/conceitos, open questions, raw quotes
+- `wiki/concepts/custo-de-capital-e-contratacao-tech.md` — stub novo (`status: draft`): mecanismo financeiro central do vídeo — taxa de juros/Selic determinando se crescimento via capital emprestado compensa (EBITDA vs. custo do dinheiro), por que vaga júnior é a primeira cortada, e distinção com a narrativa "culpa da IA"
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/ciclo-de-mercado-tech.md` — `source_count` 6 → 7; nova seção "O Mecanismo Financeiro por Trás do Ciclo de Depressão Atual" (custo de capital como lente complementar ao mecanismo de oferta/procura de profissionais já documentado)
+- `wiki/concepts/vaga-junior-vira-pleno.md` — `source_count` 1 → 2; nova seção "Possível Causa Estrutural: Custo de Capital" (leitura plausível, não confirmada diretamente entre as duas fontes)
+- `wiki/sources/custo-real-ia-tokens-produtividade-demissoes.md` — `source_count` 1 → 2; nova seção "Explicação Complementar: a Causa Macro do Bode-Expiatório" (convergência independente com o achado de 59%/9% sobre IA como justificativa de corte)
+- `wiki/index.md` — nova linha em Sources logo após [[wiki/sources/harness-explicado-function-calling-hag-evals]]; nova linha em "Carreira & Soft Skills" para [[wiki/concepts/custo-de-capital-e-contratacao-tech]]
+
+**Notas / contradições:** (1) **Autoria não identificada** — a transcrição não traz nome de canal/autor, sponsor ou estilo suficientemente distintivo para cruzar com nenhuma entidade já catalogada na wiki (ao contrário de outras fontes recentes, onde a atribuição foi possível por convergência de sinais). Documentado como open question na própria fonte — se um vídeo futuro do mesmo canal for ingerido com identificação clara, revisar e criar entity page retroativamente. (2) **Sem contradição com a wiki — reforça e complementa** [[wiki/concepts/ciclo-de-mercado-tech]] (mecanismo financeiro específico por trás do ciclo de depressão, complementar ao mecanismo de oferta/procura já registrado) e [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] (segunda fonte independente, de ângulo macroeconômico, convergindo com o achado de que "culpa da IA" funciona como bode expiatório em boa parte dos casos). (3) **Conexão inferida, não confirmada, com** [[wiki/concepts/vaga-junior-vira-pleno]] — a fonte não fala diretamente sobre vagas rotuladas júnior exigindo pleno; a ligação causal proposta (custo de capital pressionando empresas a manter o rótulo barato "júnior" mas exigir entrega de pleno) é leitura desta ingestão, sinalizada como tal na própria página do conceito. (4) Nenhuma fonte primária do Banco Central (ata do Copom) foi cruzada para a trajetória/projeção da Selic citada no vídeo — tratado como relato do autor, não verificado contra dado oficial nesta ingestão.
+
+---
+
+## [2026-08-13] ingest | Q&A de Carreira — Papinho Tech Solo
+
+**Fonte:** [[wiki/sources/papinho-tech-solo-q-and-a-carreira]] — transcrição de episódio solo do Papinho Tech (LinuxTips) em formato Q&A, colada pelo usuário no chat, já em pt-BR (sem tradução). Reescrita como Markdown estruturado por seção e salva em `raw/papinho-tech-solo-q-and-a-carreira.md`. Sem sponsor block.
+**Skill carregada:** `tech-mentor-leadership` (domínio: carreira/mentoria — mesma skill dos episódios anteriores do Papinho Tech já catalogados: [[wiki/concepts/adaptabilidade]], [[wiki/concepts/comunidade-tecnica]]; skill localizada em `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/` — caminho local diverge do `/home/nemomartins/...` do `CLAUDE.md`, mesma observação de ingests anteriores).
+
+**Arquivos criados:**
+- `raw/papinho-tech-solo-q-and-a-carreira.md`
+- `wiki/sources/papinho-tech-solo-q-and-a-carreira.md` — TL;DR, 10 key claims, entidades/conceitos, open questions, raw quotes
+- `wiki/concepts/ead-educacao-a-distancia.md` — stub novo: EAD como acesso espetacular condicionado à autodisciplina; onde recai a cobrança
+- `wiki/concepts/profissional-t-shaped.md` — stub novo: formação em T (profundidade vertical + amplitude horizontal); ponte com nexialista e arquiteto de soluções
+- `wiki/concepts/arquiteto-de-solucoes.md` — stub novo: papel para onde carreiras (QA) convergem; IA como habilitador da fusão de competências
+- `wiki/entities/julio-de-lima.md` — stub novo: referência de QA citada como melhor ponto de entrada para a área
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/raciocinio-matematico-aplicado.md` — `source_count` 2 → 3; nova seção "Matemática Como Filtro de Entrada na Graduação" (com a nuance que evita contradição com fontes de lógica de programação)
+- `wiki/concepts/comunidade-tecnica.md` — `source_count` 2 → 3; nova seção "Comunidades por Afinidade Técnica Como Motor de Networking"
+- `wiki/concepts/adaptabilidade.md` — `source_count` 3 → 4; nova seção "A Régua Sobe: Saudosismo Como Escolha de Alto Risco"
+- `wiki/concepts/nexialista.md` — `source_count` 2 → 3; nova seção "O Mesmo Conceito Pela Metáfora do 'T'"
+- `wiki/concepts/disciplina-vs-talento.md` — `source_count` 5 → 6; nova seção "Sexta Fonte: A Autodisciplina Como Fator Decisivo no EAD"
+- `wiki/concepts/fundacao-tecnica.md` — `source_count` 5 → 6; nova linha em Key Sources (eixo vertical/horizontal = formação em T)
+- `wiki/entities/linuxtips.md` — `source_count` 3 → 4; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; três novos conceitos em "Carreira & Soft Skills"; nova entity Júlio de Lima
+
+**Notas / contradições:** (1) **Contradição parcial documentada, não aberta em `questions/`**: a claim "quem odiou matemática não se dará bem em computação" tensiona com fontes que dizem que lógica de programação inicial não exige matemática pesada. Reconciliação registrada tanto na fonte quanto em [[wiki/concepts/raciocinio-matematico-aplicado]]: esta claim é sobre a **grade da graduação** (Cálculo/Estatística), não sobre programar no dia a dia — os dois podem ser verdadeiros. Só vale abrir página em `questions/` se uma terceira fonte reforçar o atrito. (2) **Autoria parcialmente identificada**: o apresentador do Papinho Tech Solo segue não nomeado (consistente com os episódios anteriores já na wiki); o episódio da comunidade sugere que o apresentador é distinto do Jefferson Fernando (citado como companhia de viagem). (3) **Ligação não forçada**: a referência "com o Brunão / Loba" no episódio de concursos não foi cruzada com [[wiki/entities/bernardo-lobato]] por falta de sinais suficientes. (4) **Reforço, não novidade conceitual**: a "formação em T" é a mesma ideia vertical/horizontal já presente em [[wiki/concepts/nexialista]] e [[wiki/concepts/fundacao-tecnica]] — a nova página `profissional-t-shaped` foi criada como âncora do vocabulário clássico do "T", com backlinks cruzados para evitar duplicação.
+
+## [2026-08-13] ingest | Por que começar com C em 2026 (CS50 — David Malan)
+
+**Fonte:** [[wiki/sources/por-que-comecar-com-c-em-2026-cs50-david-malan]] (transcrição traduzida EN→PT; autor: David Malan / CS50)
+**Skill carregada:** `cs-fundamentals` (referências: data-structures.md)
+
+**Arquivos criados:**
+- `raw/por-que-comecar-com-c-em-2026-cs50-david-malan.md` — transcrição traduzida e organizada
+- `wiki/sources/por-que-comecar-com-c-em-2026-cs50-david-malan.md` — TL;DR, 8 key claims, entidades/conceitos, open questions, citações
+- `wiki/concepts/linguagem-c.md` — stub novo: C como fundação pedagógica; ausência de estruturas prontas como feature; andaime para alto nível
+- `wiki/concepts/primeiros-principios.md` — stub novo: raciocínio por primeiros princípios; objetivo do CS50; ponte engenheiro vs coder
+- `wiki/entities/david-malan.md` — stub novo: professor de Harvard / apresentador do CS50
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/cs50.md` — `source_count` 1 → 2; skill tech-mentor-leadership → cs-fundamentals; status stub → draft; novas seções "arquitetura do currículo (C a Python)" e "engenheiros, não programadores"; David Malan como apresentador
+- `wiki/concepts/engenheiro-vs-programador.md` — `source_count` 4 → 5; nova seção "Coder vs. Engenheiro — a versão de David Malan"
+- `wiki/concepts/fundacao-tecnica.md` — `source_count` 6 → 7; nova linha em Key Sources (construir de baixo para cima)
+- `wiki/concepts/abstracao.md` — `source_count` 4 → 5; nova seção "hash table de C → dict de uma linha"
+- `wiki/concepts/algoritmos-e-estruturas-de-dados.md` — `source_count` 13 → 14; nova linha em Key Sources (construir as próprias estruturas em C)
+- `wiki/concepts/sintaxe-vs-conhecimento-perene.md` — `source_count` 1 → 2; nova seção "não vai precisar usar ≠ não precisa saber"
+- `wiki/index.md` — nova linha em Sources; dois conceitos novos em "Fundamentos de CS"; nova entity David Malan
+
+**Notas / open questions:** (1) Malan diz que full stack "por definição" deve entender todas as camadas — registrado como tensão normativo vs. descritivo do mercado, não aberto em `questions/`. (2) Ranking "C é #1 ou #2" marcado como confiança média (varia por ranking, ex. TIOBE). (3) Aberta a comparação C vs. Rust como veículo dos mesmos primeiros princípios com memória segura — ligada em open questions da fonte, sem página em `questions/`.
+
+## [2026-08-13] ingest | Encapsulamento: o verdadeiro sentido de proteger o estado do objeto
+
+**Fonte:** [[wiki/sources/encapsulamento-proteger-estado-invalido]] (transcrição pt-BR limpa e organizada; autor não identificado no áudio — vídeo respondendo à dúvida do espectador Alexandre Medeiros)
+**Skill carregada:** `tech-mentor-backend` (tese = domínio rico/invariantes); cross-check com `lang-managed` (`references/java-core.md`) por o código ser Java. Domínio secundário Java/`lang-managed` registrado nas tags.
+
+**Arquivos criados:**
+- `raw/encapsulamento-proteger-estado-invalido.md` — transcrição limpa e organizada (mantida em português)
+- `wiki/sources/encapsulamento-proteger-estado-invalido.md` — TL;DR, 7 key claims, entidades/conceitos, contradições, citações
+- `wiki/concepts/modelo-de-dominio-anemico.md` — stub novo: o anti-padrão (dados sem comportamento) nomeado; anêmico vs. rico
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/encapsulamento.md` — `source_count` 1 → 2; status stub → draft; nova seção "O objetivo real: proteger o estado, não esconder atributos" (`private` é meio, invariante é fim; encapsulamento ≠ acesso)
+- `wiki/concepts/objeto-vs-estrutura-de-dados.md` — backlinks para `modelo-de-dominio-anemico` e `encapsulamento`; tag e `date_updated`
+- `wiki/concepts/modelagem-orientada-a-objetos.md` — `source_count` 1 → 2; backlinks e nova Key Source (exemplo prático de modelagem: regras viram invariantes)
+- `wiki/concepts/ddd.md` — `source_count` 7 → 8; nova seção "Entidade Rica vs. Anêmica" + Key Source
+- `wiki/index.md` — nova linha em Sources; novo conceito `modelo-de-dominio-anemico` e hook reescrito de `encapsulamento` em "Arquitetura Backend & Event-Driven"
+
+**Notas / open questions:** (1) **Reorientação, não contradição**: a página `encapsulamento` antes definia o conceito só como "esconder internals / getters e setters"; a fonte precisa isso — getters/setters são *acesso*, o alvo é proteção de invariantes. Convergente com `objeto-vs-estrutura-de-dados` (que já citava "entidade anêmica" sem página própria — agora criada). (2) **Skill**: código Java sugeriria `lang-managed`, mas a tese é modelagem de domínio/backend; escolhido `tech-mentor-backend` para consistência com as páginas irmãs. (3) **Autoria**: canal não identificado no áudio; sem entity criada.
+
+## [2026-08-13] ingest | Todos os principais tipos de armazenamento de dados (em menos de 8 minutos)
+
+**Fonte:** [[wiki/sources/tipos-de-armazenamento-de-dados]] (transcrição pt-BR limpa e organizada; já em português, sem tradução; autor não identificado no áudio)
+**Skill carregada:** `tech-mentor-data` (`references/data-architecture.md` § Storage Tiering) — calibrou a ponte hardware→arquitetura de dados (Hot/Warm/Cold ↔ SSD/HDD/fita ↔ S3 Standard/IA/Glacier). Domínio secundário `cs-fundamentals` (hardware/mídias) registrado nas tags.
+
+**Arquivos criados:**
+- `raw/tipos-de-armazenamento-de-dados.md` — transcrição limpa e organizada (mantida em português)
+- `wiki/sources/tipos-de-armazenamento-de-dados.md` — TL;DR, 7 key claims, ponte para storage-tiering, entidades/conceitos, open questions, citações
+- `wiki/concepts/hd-disco-rigido.md` — stub: disco magnético, custo/GB, partes mecânicas, camada warm
+- `wiki/concepts/ssd.md` — stub: flash NAND, SATA vs. NVMe, form factor, camada hot
+- `wiki/concepts/memoria-flash.md` — stub: NAND como substrato comum (SSD/pen drive/cartão)
+- `wiki/concepts/fita-magnetica.md` — stub: LTO, acesso sequencial, 30+ anos, offline/air gap, cold storage
+- `wiki/concepts/nas-network-attached-storage.md` — stub: NAS vs. nuvem pública, nobreak 24/7
+- `wiki/concepts/armazenamento-optico.md` — stub: CD/DVD/Blu-ray, laser/pits, em desuso
+- `wiki/concepts/disquete.md` — stub: mídia magnética obsoleta, ícone de "salvar"
+- `wiki/entities/ibm.md` — stub: usuária de referência de fita magnética (LTO)
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/storage-tiering.md` — `source_count` 1 → 2; nova seção "A mesma hierarquia no hardware físico" (tabela Hot/Warm/Cold ↔ SSD/HDD/fita); era um conceito não indexado, agora entra no index
+- `wiki/concepts/sistema-de-arquivos.md` — `source_count` 3 → 4; nova seção "A camada de baixo: a mídia física" (FS é abstração sobre a mídia)
+- `wiki/concepts/apfs.md` — `source_count` 1 → 2; backlink para `ssd` e Key Source (transição HD→SSD de 2017)
+- `wiki/entities/google.md` — `source_count` 4 → 5; nova seção "Google Drive como exemplo de nuvem" (geo-redundância vs. NAS)
+- `wiki/index.md` — nova linha em Sources; nova subseção "Armazenamento de Dados (Mídias & Hardware)" com 8 conceitos; nova entity IBM em Entities
+
+**Notas / open questions:** (1) **Unidade de velocidade**: o áudio mistura MB/s (HD/SSD/USB 2.0) com Gb/s (USB 3.x). Padrão da indústria = USB especificado em gigabits; registrado na fonte, não corrigido no raw (invariante: nunca editar `raw/`). (2) **"NAS é nuvem"**: simplificação — NAS é rede local; só vira nuvem privada com acesso remoto. Registrado como impreciso, não errado. (3) **Skill**: tópico é hardware/CS-fundamentals, mas escolhido `tech-mentor-data` porque a única ponte profissional acionável é storage tiering (data-architecture.md); `cs-fundamentals` nas tags como secundário. (4) **Autoria**: canal não identificado no áudio; sem entity de autor criada.

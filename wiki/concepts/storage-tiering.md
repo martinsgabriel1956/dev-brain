@@ -3,9 +3,9 @@ type: concept
 title: "Storage Tiering"
 aliases: ["storage hierárquico", "hot warm cold", "s3 glacier", "tiered storage"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
-tags: [system-design, storage, s3, glacier, custo, infra]
+date_updated: 2026-08-13
+source_count: 2
+tags: [system-design, storage, s3, glacier, custo, infra, hardware]
 skill: tech-mentor-system-design
 status: stable
 ---
@@ -52,6 +52,18 @@ S3 Lifecycle Policy move objetos automaticamente entre tiers com base em idade:
 }
 ```
 
+## A mesma hierarquia no hardware físico
+
+Hot/Warm/Cold não é só nomenclatura de nuvem — mapeia direto nas mídias físicas de armazenamento. A camada é escolhida pelo mesmo trade-off velocidade × custo/GB:
+
+| Camada | Nuvem (AWS S3) | Mídia física equivalente |
+|---|---|---|
+| **Hot** | S3 Standard | [[concepts/ssd]] / NVMe ([[concepts/memoria-flash]]) |
+| **Warm** | S3 Standard-IA | [[concepts/hd-disco-rigido]] |
+| **Cold** | S3 Glacier | [[concepts/fita-magnetica]] (LTO) |
+
+A [[concepts/fita-magnetica]] é o equivalente físico do Glacier: barata, lenta (acesso sequencial), durável e offline — usada por IBM/governos para arquivamento de longo prazo. Ver [[wiki/sources/tipos-de-armazenamento-de-dados]].
+
 ## Relacionado
 
 [[concepts/cache-hot-path]] — mesmo princípio de concentrar recursos onde está o tráfego real.
@@ -59,3 +71,4 @@ S3 Lifecycle Policy move objetos automaticamente entre tiers com base em idade:
 ## Key Sources
 
 - [[sources/case-youtube-streaming]]
+- [[wiki/sources/tipos-de-armazenamento-de-dados]] — o tiering Hot/Warm/Cold mapeado nas mídias físicas (SSD/HDD/fita)

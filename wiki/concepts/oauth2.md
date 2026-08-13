@@ -3,8 +3,8 @@ type: concept
 title: "OAuth 2.0"
 aliases: ["OAuth", "OAuth 2.0", "delegação de acesso", "authorization code flow"]
 date_created: 2026-07-27
-date_updated: 2026-08-06
-source_count: 5
+date_updated: 2026-08-13
+source_count: 6
 tags: [oauth2, autorizacao, autenticacao, seguranca, delegacao-de-acesso]
 skill: tech-mentor-security
 status: draft
@@ -58,6 +58,10 @@ Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], 
 
 OAuth responde "o que este app pode fazer" (autorização), mas não foi desenhado para responder "quem é este usuário" (autenticação) de forma padronizada — essa lacuna é o motivo de existir o [[wiki/concepts/openid-connect]], construído como uma camada de identidade em cima do OAuth.
 
+### "Autenticação de Gambiarra" Antes do OIDC Existir
+
+Antes de 2014, com a explosão das APIs e a ascensão do OAuth como padrão de fato, muitas empresas — diante da complexidade do [[wiki/concepts/openid-legado|OpenID original]] — improvisaram autenticação **sobre** o OAuth, com protocolos proprietários e ad-hoc para devolver dados do usuário. Cada grande provedor de identidade tinha sua própria forma de fazer isso, forçando integrações diferentes por provedor — cenário que só foi padronizado quando a OpenID Foundation lançou o [[wiki/concepts/openid-connect|OpenID Connect]] em cima do próprio OAuth 2, reaproveitando o formato JWT já usado pelo OAuth. Ver [[wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth]].
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/openid-connect]] — camada de autenticação construída sobre o OAuth 2.0
@@ -65,6 +69,7 @@ OAuth responde "o que este app pode fazer" (autorização), mas não foi desenha
 - [[wiki/concepts/sso-single-sign-on]] — OAuth/OIDC é a base técnica do SSO moderno via login social
 - [[wiki/concepts/token-relay-pattern]] — propagação do access token por serviços internos após obtido via OAuth
 - [[wiki/concepts/open-redirect]] — ataque específico contra validação frouxa da redirect_uri
+- [[wiki/concepts/ropc-resource-owner-password-credentials]] — antipadrão de contornar o fluxo de autorização correto pedindo senha diretamente
 
 ## Key Sources
 
@@ -73,3 +78,4 @@ OAuth responde "o que este app pode fazer" (autorização), mas não foi desenha
 - [[wiki/sources/rfc-7636-pkce-oauth-public-clients]] — texto normativo do RFC que estende o Authorization Code Grant do OAuth 2.0 com PKCE
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — open redirect por validação frouxa de redirect_uri; state contra CSRF no fluxo de login social
 - [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — caso real de escopo/permissão aceito sem validação via URL, achado por pentest voluntário
+- [[wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth]] — "autenticação de gambiarra" improvisada sobre o OAuth antes do OIDC padronizar o formato

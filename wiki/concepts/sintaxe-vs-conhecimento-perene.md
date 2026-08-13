@@ -3,8 +3,8 @@ type: concept
 title: "Sintaxe vs. Conhecimento Perene"
 aliases: ["conhecimento perene", "syntax vs durable knowledge", "atrofia de sintaxe"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 1
+date_updated: 2026-08-13
+source_count: 2
 tags: [carreira, ia, aprendizado, senioridade]
 skill: tech-mentor-ai
 status: draft
@@ -46,6 +46,11 @@ Confundir os dois tipos de conhecimento leva a dois erros opostos:
 
 A distinção sintaxe/perene assume que a pessoa já construiu ambos em algum momento. Para quem aprendeu a programar nos últimos ~18 meses já com IA integrada ao fluxo de trabalho, o risco é diferente: nunca ter desenvolvido nem a sintaxe nem o conhecimento perene, porque a IA sempre esteve entre a pessoa e o problema. Ver [[wiki/concepts/fundacao-tecnica]] para a distinção entre esquecimento reversível (disuse atrophy, "como andar de bicicleta") e ausência de base construída.
 
+## "Não vai precisar usar" ≠ "não precisa saber" (David Malan)
+
+[[wiki/sources/por-que-comecar-com-c-em-2026-cs50-david-malan]] dá a esta distinção uma formulação nítida. Respondendo à crítica de que o [[wiki/concepts/cs50|CS50]] ensina coisas que um full stack "não precisa saber", [[wiki/entities/david-malan]] reformula: a mentalidade certa não é "você não precisa *saber* essas coisas", mas "você não vai precisar *usá-las*" no sentido literal. Ele mesmo usa [[wiki/concepts/linguagem-c|C]] só ~5 semanas por ano e Scratch só 1 semana — mas o conhecimento e os [[wiki/concepts/primeiros-principios|princípios]] extraídos desses detalhes de implementação são o que fica. A sintaxe de C é descartável; o modelo mental de como memória, dados e algoritmos funcionam é o conhecimento perene. É o mesmo eixo do [[wiki/concepts/engenheiro-vs-programador|engenheiro vs. coder]].
+
 ## Key Sources
 
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]]
+- [[wiki/sources/por-que-comecar-com-c-em-2026-cs50-david-malan]] — "não vai precisar usar C/Scratch, mas precisa saber": os princípios como conhecimento perene, a sintaxe como descartável

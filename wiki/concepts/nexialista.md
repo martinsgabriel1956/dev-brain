@@ -3,8 +3,8 @@ type: concept
 title: "Nexialista"
 aliases: ["nexialismo", "polimata", "polymath", "profissional multidisciplinar"]
 date_created: 2026-05-31
-date_updated: 2026-07-27
-source_count: 2
+date_updated: 2026-08-13
+source_count: 3
 tags: [nexialista, polimata, carreira, profissional-do-futuro, adaptabilidade, aprender-a-aprender]
 skill: tech-mentor-leadership
 status: stable
@@ -57,6 +57,10 @@ O nexialista usa a IA como motor para executar conexões que só ele consegue en
 
 O Observador Tercerático é o próximo nível do nexialista: não apenas conecta áreas existentes, mas **cria novos conceitos** a partir dessas conexões, operando com um segundo cérebro (IA) em paralelo ao orgânico.
 
+## O Mesmo Conceito Pela Metáfora do "T"
+
+[[wiki/sources/papinho-tech-solo-q-and-a-carreira]] chega ao mesmo profissional pelo vocabulário clássico da **[[wiki/concepts/profissional-t-shaped|formação em T]]**: profundidade numa área principal (barra vertical) + amplitude em conhecimentos complementares (barra horizontal — banco, design, front, back, arquitetura, processos, liderança). É a mesma ideia da linha "O nexialista ideal combina os dois" acima, com ênfase na **estrutura** (uma vertical, várias horizontais) em vez da ênfase nexialista na **conexão criativa**. Na fonte, esse profissional aparece com o nome de cargo [[wiki/concepts/arquiteto-de-solucoes|arquiteto/engenheiro de soluções]].
+
 ## Conexão com [[aprender-a-aprender]]
 
 O nexialista só é sustentável se [[aprender-a-aprender]] for sua habilidade central. Sem ela, o conhecimento multidisciplinar envelhece e a vantagem some.
@@ -65,3 +69,4 @@ O nexialista só é sustentável se [[aprender-a-aprender]] for sua habilidade c
 
 - [[wiki/sources/profissional-do-futuro-ia-identidade-aprendizado]]
 - [[wiki/sources/a-insanidade-de-ser-um-programador-hoje]] — precisão histórica sobre quando front-end/back-end viraram especialidades separadas (2006-2007) e o full stack atual como corte de custo, não escolha técnica
+- [[wiki/sources/papinho-tech-solo-q-and-a-carreira]] — o mesmo profissional pela metáfora do "T" e o cargo de arquiteto de soluções

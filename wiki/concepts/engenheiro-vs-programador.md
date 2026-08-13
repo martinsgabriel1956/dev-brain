@@ -3,8 +3,8 @@ type: concept
 title: "Engenheiro vs. Programador"
 aliases: ["programador vs engenheiro", "mentalidade de engenharia", "software engineer vs coder"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 4
+date_updated: 2026-08-13
+source_count: 5
 tags: [carreira, mentalidade, arquitetura, senioridade]
 skill: tech-mentor-leadership
 status: draft
@@ -50,6 +50,10 @@ Não é acumular ferramentas (ver [[wiki/concepts/apego-a-ferramentas]]), mas de
 
 [[wiki/sources/vibe-coding-limites-maturidade-profissional]] descreve a mesma distinção sob a perspectiva de uma arquiteta: a IA serve para brainstorm, alternativas e explicar trade-offs — mas quem decide, considerando contexto de negócio, dados, custo e maturidade organizacional da empresa, continua sendo o engenheiro. Vender um sistema vibe-coded como pronto para produção sem essa análise é o programador (ou não-técnico) se passando por quem tomou decisões de engenharia que na verdade nunca foram tomadas.
 
+## "Coder" vs. Engenheiro — a versão de David Malan
+
+[[wiki/sources/por-que-comecar-com-c-em-2026-cs50-david-malan]] traz a mesma dicotomia pela ótica do ensino de CS. Para [[wiki/entities/david-malan]] (CS50), o **coder** produz "algo que, francamente, uma IA hoje conseguiria cuspir"; o **engenheiro** tem domínio dos blocos de construção fundamentais e por isso consegue "entender e criar a próxima coisa, ou a solução para algum problema que a gente ainda nem resolveu". A ponte entre os dois é o raciocínio por [[wiki/concepts/primeiros-principios]] — construído entendendo a implementação de baixo para cima (ver [[wiki/concepts/linguagem-c]], [[wiki/concepts/fundacao-tecnica]]). Malan também nota que "full stack", por definição, deveria implicar entender *todas* as camadas — reforçando que a distinção é de mentalidade, não de stack.
+
 ## "Operador de CRUD" — o mesmo programador, outro nome
 
 [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] usa "operador de CRUD" como sinônimo prático de "programador" nesta dicotomia — quem domina o feijão-com-arroz (create/read/update/delete) mas nunca vai além. A fonte percorre uma dezena de domínios técnicos (redes, Bluetooth, streams, mobile, banco de dados) como prova concreta do tamanho do que fica de fora quando a carreira para no CRUD, e conecta isso à distinção "fácil vs. simples" da IA: a IA entrega o fácil (CRUD num prompt), nunca o simples — quem só tem CRUD não sabe nem o que pedir nem julgar o que a IA devolveu.
@@ -60,3 +64,4 @@ Não é acumular ferramentas (ver [[wiki/concepts/apego-a-ferramentas]]), mas de
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]] — relato de tech lead sênior que perdeu a capacidade de explicar seu próprio PR gerado por IA
 - [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — a mesma distinção pela ótica da arquitetura de software e do contexto organizacional
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — "operador de CRUD" como sinônimo de programador; percurso por redes/Bluetooth/streams/mobile como prova do mundo debaixo do CRUD
+- [[wiki/sources/por-que-comecar-com-c-em-2026-cs50-david-malan]] — David Malan: coder cospe o que a IA cospe, engenheiro cria o que ainda não existe; primeiros princípios como a ponte

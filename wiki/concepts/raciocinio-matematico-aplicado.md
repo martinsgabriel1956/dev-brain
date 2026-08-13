@@ -3,8 +3,8 @@ type: concept
 title: "Raciocínio Matemático Aplicado"
 aliases: ["pensamento matemático", "matemática básica para devs", "raciocínio quantitativo"]
 date_created: 2026-07-03
-date_updated: 2026-07-09
-source_count: 2
+date_updated: 2026-08-13
+source_count: 3
 tags: [matematica, raciocinio, fundacao-tecnica, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -30,6 +30,12 @@ Exemplo usado para ilustrar a ausência dessa habilidade na maioria dos programa
 
 Cursos de formação rápida não incluem matemática básica, cálculo, álgebra linear, estatística ou probabilidade — segundo o autor, porque "nenhum aluno tem paciência para isso, nem acha que deveria pagar para aprender coisas chatas". Isso reforça o padrão de [[aprendizado-passivo]]: seguir tutoriais ensina a copiar comandos, não a raciocinar sobre por que eles funcionam.
 
+## Matemática Como Filtro de Entrada na Graduação
+
+[[wiki/sources/papinho-tech-solo-q-and-a-carreira]] traz o mesmo argumento por um ângulo mais bruto, de entrada de carreira: "ciência da computação vem de computar, que tem a ver com calcular" — a área é **exata**, e a grade da graduação inclui Cálculo (1/2/3), Estatística e Probabilidade obrigatórios, mesmo que o trabalho do dia a dia raramente exija cálculo no quadro. A tese: quem "odiou" matemática no ensino médio provavelmente terá sérios problemas no curso — não por precisar ser gênio, mas por precisar de **facilidade** mínima.
+
+Nuance importante para não gerar contradição com fontes de lógica de programação (que argumentam que programar não exige matemática pesada): esta claim é sobre a **grade da graduação**, não sobre codar no dia a dia. Os dois podem ser verdadeiros ao mesmo tempo — a matemática pesada mora na formação acadêmica formal, não necessariamente na rotina de um dev de produto.
+
 ## Fundação que Não Envelhece
 
 Ao contrário de linguagens e frameworks — que mudam a cada [[ciclo-de-mercado-tech|ciclo de mercado]] — raciocínio matemático/lógico não perde valor. É parte do que compõe [[fundacao-tecnica|fundação técnica]] sólida.
@@ -46,3 +52,4 @@ Ao contrário de linguagens e frameworks — que mudam a cada [[ciclo-de-mercado
 
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]]
 - [[wiki/sources/como-eu-investiria-como-programador-ate-50000]] — mesma tese aplicada de forma prática: tesouro pré-fixado, IPCA+ e cautela com juros compostos mal calculados em investimentos
+- [[wiki/sources/papinho-tech-solo-q-and-a-carreira]] — matemática como filtro de entrada na graduação de computação (área exata; Cálculo/Estatística/Probabilidade na grade)

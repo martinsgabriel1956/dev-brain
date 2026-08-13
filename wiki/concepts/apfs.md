@@ -3,9 +3,9 @@ type: concept
 title: "APFS (e a linhagem HFS/HFS+)"
 aliases: ["APFS", "Apple File System", "HFS", "HFS+", "Mac OS Estendido", "Hierarchical File System"]
 date_created: 2026-07-09
-date_updated: 2026-07-09
-source_count: 1
-tags: [sistema-operacional, storage, cs-fundamentals]
+date_updated: 2026-08-13
+source_count: 2
+tags: [sistema-operacional, storage, hardware, cs-fundamentals]
 skill: cs-fundamentals
 status: stable
 ---
@@ -42,7 +42,9 @@ APFS ocupa, no macOS, o mesmo papel que [[concepts/ntfs]] ocupa no Windows e [[c
 
 - [[concepts/sistema-de-arquivos]]
 - [[concepts/journaling]]
+- [[concepts/ssd]] — a mídia flash que o APFS foi desenhado para explorar; a transição HD→SSD (2017) motivou o novo formato
 
 ## Key Sources
 
 - [[wiki/sources/sistemas-de-arquivos-explicados]]
+- [[wiki/sources/tipos-de-armazenamento-de-dados]] — a passagem de disco magnético (HD) para flash (SSD) que o APFS acompanha

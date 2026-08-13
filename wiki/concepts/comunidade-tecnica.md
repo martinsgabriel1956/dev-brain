@@ -3,8 +3,8 @@ type: concept
 title: "Comunidade Técnica"
 aliases: ["comunidade de tecnologia", "meetup", "comunidade open source", "ciclo de retribuição"]
 date_created: 2026-07-30
-date_updated: 2026-07-31
-source_count: 2
+date_updated: 2026-08-13
+source_count: 3
 tags: [comunidade, mentoria, retribuicao, meetup, networking, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -36,7 +36,12 @@ O mecanismo de indicação de vaga (o "mercado invisível") descrito em [[wiki/c
 
 [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] recomenda comunidades técnicas (canal de YouTube, curso, Discord) especificamente como ponto de entrada para quem busca a primeira vaga júnior — não só como espaço de troca de conhecimento, mas como onde se concentra a maior parcela de candidatos e onde o contato direto com quem já passou pelo processo de contratação está mais acessível. Isso é uma aplicação prática, em nível individual de carreira, do mesmo mecanismo de reciprocidade já documentado acima: quem já recebeu orientação da comunidade tende, mais tarde, a retribuir orientando o próximo.
 
+## Comunidades por Afinidade Técnica Como Motor de Networking
+
+[[wiki/sources/papinho-tech-solo-q-and-a-carreira]] reforça o mesmo ciclo por um ângulo de networking prático: dentro de TI existem comunidades organizadas por **linguagem** e por **ferramenta** (quem mexe com Kubernetes, OpenTelemetry, Node, Java...), e essas pessoas trabalham em empresas diferentes que "podem abrir portas no futuro". Conviver e trocar ideia nessas comunidades é a origem do [[wiki/concepts/networking-de-carreira|networking]]; e o dever de **retribuir** quando a comunidade foi boa com você é o que "perpetua o ciclo" — a mesma reciprocidade já documentada acima, aqui ancorada explicitamente em comunidades de nicho tecnológico.
+
 ## Key Sources
 
 - [[wiki/sources/papinho-tech-solo-comunidade]]
 - [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — comunidade recomendada como ponto de entrada para quem busca a primeira vaga júnior
+- [[wiki/sources/papinho-tech-solo-q-and-a-carreira]] — comunidades por afinidade técnica (linguagem/ferramenta) como motor de networking e o dever de retribuir

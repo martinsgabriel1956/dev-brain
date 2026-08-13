@@ -3,8 +3,8 @@ type: concept
 title: "Spec-Driven Development"
 aliases: ["SDD", "spec driven", "desenvolvimento orientado a especificação", "planning-first"]
 date_created: 2026-06-02
-date_updated: 2026-08-04
-source_count: 15
+date_updated: 2026-08-12
+source_count: 16
 tags: [spec-driven, planejamento, ia-para-devs, harness, agente, qualidade, loop-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -142,6 +142,10 @@ O ponto não invalida SDD como definido acima (spec como contrato de execução,
 
 [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] traz uma formulação direta do ponto central desta página, a partir de um ângulo diferente: para quem usa [[wiki/concepts/bdd|Gherkin/BDD]], as regras ficam na especificação em Gherkin da mesma forma que ficam na spec em SDD. O que importa não é o formato (Gherkin vs. um documento de spec) — é o momento em que é escrito: **antes** da implementação. É a única peça do sistema que o agente não derivou da própria cabeça; foi o humano, na própria pesquisa, que colocou ali algo imutável que o agente precisa seguir. Isso permite validar tanto a implementação quanto os próprios testes contra essa fonte da verdade — o mesmo papel que a spec cumpre no fluxo descrito acima.
 
+## Teste Comparativo: Breakdown de Tasks Continua Valendo em Loop Agêntico
+
+[[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] reporta um teste comparativo do próprio autor (Pedro Nauke), contrariando a leitura popular de que "spec driven morre" em loops agênticos de long-running tasks: comparou spec driven quebrado em tasks em loop determinístico, spec driven quebrado em tasks em loop agêntico, e execução sem quebra de tasks (spec inteira direto pro loop). Sem breakdown prévio, o resultado piorou tanto na definição de tarefas em runtime quanto na execução — mais demorado. Com artefatos de estado e breakdown definidos previamente (critérios de sucesso, testes, descrição mínima por task), o resultado melhorou, inclusive quando o loop era agêntico. Ver [[wiki/concepts/task-looper]] e [[wiki/concepts/loop-engineering#Loop Determinístico vs. Loop Agêntico]].
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-01-abertura]]
@@ -152,6 +156,7 @@ O ponto não invalida SDD como definido acima (spec como contrato de execução,
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — separação spec/execução como a mesma disciplina que "harness engineering" nomeia; SDD como checkpoint humano entre planejar e executar
 - [[wiki/sources/formacao-ia-devs-aula-05-qa]]
 - [[wiki/sources/product-engineer-vale-do-silicio-2026]]
+- [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — teste comparativo com/sem breakdown de tasks, determinístico/agêntico
 - [[wiki/sources/tdd-sdd-bdd-era-ia]] — origem não-IA do termo, contratos de API como boundary (OpenAPI, Protobuf, GraphQL)
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] — crítica ao "specs to code" sem inspeção de código
 - [[wiki/sources/impacto-ia-mercado-frontend]] — SDD como filtro de entrevista no mercado de frontend: "não tem para onde correr"
