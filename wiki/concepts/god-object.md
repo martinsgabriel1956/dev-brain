@@ -4,7 +4,7 @@ title: "God Object"
 aliases: ["god class", "objeto deus", "god object anti-pattern"]
 date_created: 2026-05-05
 date_updated: 2026-08-18
-source_count: 6
+source_count: 7
 tags: [anti-patterns, god-object, design-patterns, solid, coesao]
 skill: tech-mentor-backend
 status: stable
@@ -41,6 +41,10 @@ A diferença: uma Facade *bem feita* delega para o subsistema e não contém ló
 
 [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] propõe um gate de CI direto contra "god files" (a fonte cita arquivos de 3.000 a 5.000 linhas): um limite bloqueante de linhas por arquivo — o exemplo dado é 300 linhas —, reprovando o PR automaticamente se ultrapassado. É um proxy estrutural mais grosseiro do que [[wiki/concepts/complexidade-ciclomatica|complexidade ciclomática]] (que mede caminhos dentro de uma função) e do que [[wiki/concepts/single-responsibility-principle|SRP]] (que é qualitativo), mas barato de automatizar e, segundo a fonte, complementar a esses dois: um arquivo pode estar sob o limite de complexidade função a função e ainda assim ter virado um God Object pelo acúmulo de responsabilidades não relacionadas.
 
+## Composição como correção prática
+
+[[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] ilustra a correção via composição/injeção de dependência: em vez de uma classe `SystemManagement` fazendo autenticação, update de banco e envio de notificações tudo junto, compor uma classe `UserManagement` a partir de serviços especializados injetados (`AuthService`, `DatabaseService`, `NotificationService`). Cada serviço pode ser substituído sem afetar os outros — a mesma lógica do [[facade-pattern]] com disciplina, mas aplicada de dentro para fora: o mecanismo (classes, funções ou módulos separados) é secundário; o que importa é sair do estado de tudo altamente acoplado numa única unidade.
+
 ## Como resolver
 
 - Aplicar [[single-responsibility-principle]]: cada classe com uma razão para mudar
@@ -55,3 +59,4 @@ A diferença: uma Facade *bem feita* delega para o subsistema e não contém ló
 - [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — limite de tamanho de arquivo (exemplo: 300 linhas) como gate automático de CI contra god files
 - [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — "classe super-homem" que orquestra tudo como sintoma clássico de code base degradando; nasce de empilhar código na parte que "a gente sabia rodar"
 - [[wiki/sources/design-pattern-facade-codigo-fonte-tv]] — posição de que orquestração pura, sem lógica própria, já é responsabilidade demais para um único método
+- [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — composição/injeção de serviços especializados como correção prática; god object julgado mais pelo acoplamento/coesão do que pela compreensibilidade isolada

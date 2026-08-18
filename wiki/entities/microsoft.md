@@ -3,8 +3,8 @@ type: entity
 title: "Microsoft"
 aliases: []
 date_created: 2026-07-16
-date_updated: 2026-08-13
-source_count: 5
+date_updated: 2026-08-18
+source_count: 6
 tags: [empresa, custo-ia, token-economics, demissao, capital-de-tokens]
 skill: tech-mentor-ai
 status: stub
@@ -37,3 +37,4 @@ Citada, junto com Google e Apple, como uma das big techs que adotaram em massa o
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — "paradoxo da informação invertida"
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — citada (sem detalhamento numérico) como uma das big techs estourando orçamento de engenharia de IA em 2026
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — participação na criação original do SOAP (1998) e no WCF
+- [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — criadora da [[wiki/concepts/windows-api|WinAPI]] nos anos 80, marco de popularização de API fora de ambientes corporativos gigantes

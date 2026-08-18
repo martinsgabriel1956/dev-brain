@@ -3,8 +3,8 @@ type: concept
 title: "OAuth 2.0"
 aliases: ["OAuth", "OAuth 2.0", "delegação de acesso", "authorization code flow"]
 date_created: 2026-07-27
-date_updated: 2026-08-14
-source_count: 7
+date_updated: 2026-08-18
+source_count: 9
 tags: [oauth2, autorizacao, autenticacao, seguranca, delegacao-de-acesso]
 skill: tech-mentor-security
 status: draft
@@ -62,9 +62,14 @@ OAuth responde "o que este app pode fazer" (autorização), mas não foi desenha
 
 Antes de 2014, com a explosão das APIs e a ascensão do OAuth como padrão de fato, muitas empresas — diante da complexidade do [[wiki/concepts/openid-legado|OpenID original]] — improvisaram autenticação **sobre** o OAuth, com protocolos proprietários e ad-hoc para devolver dados do usuário. Cada grande provedor de identidade tinha sua própria forma de fazer isso, forçando integrações diferentes por provedor — cenário que só foi padronizado quando a OpenID Foundation lançou o [[wiki/concepts/openid-connect|OpenID Connect]] em cima do próprio OAuth 2, reaproveitando o formato JWT já usado pelo OAuth. Ver [[wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth]].
 
+## Ponte com SAML: Assertion como Credencial
+
+Em ambientes corporativos que já usam [[wiki/concepts/saml|SAML]] para federação, uma assertion SAML pode ser apresentada a um Authorization Server OAuth como credencial: o servidor valida a assinatura XML da assertion e, em troca, emite um access token — potencialmente um JWT leve. Isso permite que APIs REST/microsserviços modernos consumam identidades vindas de diretórios legados (Active Directory via SAML) sem reimplementar SAML do lado da API, unindo a robustez da federação empresarial à agilidade de tokens no ecossistema de microsserviços. Ver [[wiki/sources/autenticacao-federada-sso-saml-bernardo-lobato]].
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/openid-connect]] — camada de autenticação construída sobre o OAuth 2.0
+- [[wiki/concepts/saml]] — pode alimentar um fluxo OAuth como credencial (assertion → access token) em pontes entre identidade corporativa legada e APIs modernas
 - [[wiki/concepts/jwt]] — formato comum do access token emitido no fluxo OAuth
 - [[wiki/concepts/sso-single-sign-on]] — OAuth/OIDC é a base técnica do SSO moderno via login social
 - [[wiki/concepts/token-relay-pattern]] — propagação do access token por serviços internos após obtido via OAuth
@@ -80,3 +85,5 @@ Antes de 2014, com a explosão das APIs e a ascensão do OAuth como padrão de f
 - [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — caso real de escopo/permissão aceito sem validação via URL, achado por pentest voluntário
 - [[wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth]] — "autenticação de gambiarra" improvisada sobre o OAuth antes do OIDC padronizar o formato
 - [[wiki/sources/refresh-token-pattern-access-token-de-curta-duracao]] — authorization server como componente que valida/revoga o refresh token no padrão access+refresh token
+- [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — OAuth situado na linha do tempo geral das APIs: consolidação nos anos 2020 como resposta de governança/segurança à escala de consumo de API alcançada pelas duas ondas de [[wiki/concepts/api-economy]] das décadas anteriores
+- [[wiki/sources/autenticacao-federada-sso-saml-bernardo-lobato]] — ponte SAML→OAuth: assertion SAML validada por um Authorization Server em troca de um access token

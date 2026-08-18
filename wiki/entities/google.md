@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-08-13
-source_count: 5
+date_updated: 2026-08-18
+source_count: 6
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -39,3 +39,4 @@ Citada (ao lado de Dropbox e iCloud) como serviço de nuvem de referência em [[
 - [[wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth]] — membro fundador da OpenID Foundation (2007); adotante em massa do OpenID Connect
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — Gemini 3.5 Flash como modelo de referência para tarefas que exigem velocidade
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — Gemini CLI citado como um dos providers com detecção de uso não-oficial e risco de banimento por rotação de contas free tier
+- [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — criadora do [[wiki/concepts/grpc]] (2015), lançado na mesma década do GraphQL (Meta) como resposta de performance para comunicação interna entre microsserviços

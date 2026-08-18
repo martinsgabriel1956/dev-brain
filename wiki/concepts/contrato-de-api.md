@@ -3,8 +3,8 @@ type: concept
 title: "Contrato de API"
 aliases: ["API contract", "contrato de interface", "interface contract"]
 date_created: 2026-07-09
-date_updated: 2026-08-10
-source_count: 8
+date_updated: 2026-08-18
+source_count: 9
 tags: [api, contrato, backend, arquitetura, desacoplamento]
 skill: tech-mentor-backend
 status: stub
@@ -24,6 +24,10 @@ A API é um contrato entre quem pede e quem responde. O consumidor (frontend, ou
 
 Enquanto o contrato não muda, o cliente continua funcionando. Um contrato bem feito deixa claro **o que pode entrar**, **o que pode sair**, e **como o sistema se comporta quando algo dá errado**.
 
+## Origem: "API" nasceu sem rede
+
+O sentido de "API" como contrato entre dois sistemas via rede é o estágio mais recente de uma ideia mais antiga. Segundo [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]], nos anos 60-70 "API" significava uma coleção de rotinas e bibliotecas **locais**, expostas pelo sistema operacional de um [[wiki/concepts/mainframe]] ([[wiki/entities/ibm]] System/360) — o desenvolvedor chamava uma função do SO em vez de escrever na mão o acesso a disco. Nos anos 70, o [[wiki/concepts/unix]] consolidou a "chamada de sistema" como uma API padronizada entre programa e kernel — sem rede, sem internet, mas já com a essência do contrato: uma interface bem definida e do menor tamanho possível. Só nos anos 90-2000 (CORBA/RMI, depois [[wiki/concepts/soap]] e REST) o contrato de API passa a atravessar a rede.
+
 ## Contrato Levado ao Extremo Formal: WSDL no SOAP
 
 [[wiki/concepts/soap]] representa o ponto mais rígido do espectro de formalidade de contrato: WSDL (Web Services Description Language) descreve operações, tipos e formato de mensagem de forma máquina-legível, permitindo gerar clientes e servidores automaticamente a partir do contrato. É o oposto do contrato informal e implícito comum em APIs REST simples — a rigidez existe porque setores como bancos e seguradoras precisam de garantias formais (segurança, transação distribuída) que um contrato JSON solto não oferece por padrão.
@@ -37,6 +41,7 @@ Enquanto o contrato não muda, o cliente continua funcionando. Um contrato bem f
 - [[wiki/concepts/contract-testing]] — como verificar automaticamente que um contrato continua sendo respeitado
 - Ver também tratamento mais aprofundado de versionamento e breaking changes em `references/api-versioning-lifecycle.md` (tech-mentor-backend)
 - [[wiki/sources/email-address]] — RFC 5322/5321 como exemplo de contrato de sintaxe formal entre sistemas fora do domínio de HTTP/REST: spec rígida (limites de octetos, LDH) coexistindo com desvios de implementação toleráveis (case-insensitivity de fato, apesar da RFC permitir case-sensitivity)
+- [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — origem pré-rede do termo "API" (rotina local de sistema operacional, anos 60-70) até virar contrato de rede
 
 ## Key sources
 

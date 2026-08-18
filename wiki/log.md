@@ -2,6 +2,69 @@
 
 ---
 
+## [2026-08-18] ingest | A História e Evolução das APIs (Bernardo Lobato)
+
+**Fonte:** [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — transcrição de vídeo colada pelo usuário no chat (ASR bruto, sem pontuação, já em pt-BR — sem necessidade de tradução), limpa e organizada em seções cronológicas em `raw/historia-e-evolucao-das-apis-bernardo-lobato.md`
+**Skill carregada:** `tech-mentor-backend` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/` (o `/home/nemomartins/Documentos/new/skills/` do CLAUDE.md não existe nesta máquina). Referência consultada: `references/api-design.md` (REST maturity model, status codes, OpenAPI).
+
+**Arquivos criados:**
+- `raw/historia-e-evolucao-das-apis-bernardo-lobato.md` — transcrição limpa e organizada em seções por década (definição formal → anos 60-70 mainframes → anos 70 Unix → anos 80 PCs/WinAPI/POSIX → anos 90 CORBA/RMI → anos 2000 SOAP/REST/API economy → anos 2010 REST+JSON/GraphQL/gRPC/API-como-produto → anos 2020 infraestrutura crítica)
+- `wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato.md` — TL;DR, 10 key claims com evidência, entidades/conceitos tocados, open questions, raw quotes
+- `wiki/concepts/mainframe.md` (novo stub) — origem das primeiras APIs locais, IBM System/360
+- `wiki/concepts/windows-api.md` (novo stub) — WinAPI da Microsoft, anos 80
+- `wiki/concepts/posix.md` (novo stub) — padrão de portabilidade entre Unix, fim dos anos 80
+- `wiki/concepts/corba-rmi.md` (novo stub) — primeira geração de APIs remotas, anos 90, antecessor do SOAP
+- `wiki/concepts/api-economy.md` (novo stub) — as duas ondas de API como estratégia de negócio (abertura pública anos 2000, API-como-produto anos 2010)
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/contrato-de-api.md` — `source_count` 8 → 9; nova seção "Origem: API nasceu sem rede" explicando a linhagem pré-rede do termo; nova linha em Key Sources
+- `wiki/concepts/soap.md` — `source_count` 1 → 2; nova seção "Antecessores: CORBA e RMI"; nova linha em Key Sources
+- `wiki/concepts/unix.md` — `source_count` 3 → 4; nova seção "Chamada de Sistema como API e a Herança no REST"; nova linha em Key Sources
+- `wiki/concepts/api-gateway.md` — `source_count` 6 → 7; nova seção curta situando API Gateway/OAuth/OIDC como resposta de governança dos anos 2020 à API economy; nova linha em Key Sources
+- `wiki/concepts/grpc.md` — `source_count` 1 → 2; nova seção "Origem: 2015, Google, resposta a microsserviços"; nova linha em Key Sources
+- `wiki/concepts/graphql.md` — `source_count` 1 → 2; nova linha em Key Sources situando GraphQL/gRPC como respostas paralelas de décadas diferentes
+- `wiki/concepts/oauth2.md` — `source_count` 7 → 8; nova linha em Key Sources
+- `wiki/entities/bernardo-lobato.md` — `source_count` 9 → 10; nova linha em Key Sources
+- `wiki/entities/ibm.md` — `source_count` 1 → 2; nova frase + linha em Key Sources (IBM System/360 como origem histórica do termo "API")
+- `wiki/entities/microsoft.md` — `source_count` 5 → 6; nova linha em Key Sources (WinAPI)
+- `wiki/entities/google.md` — `source_count` 5 → 6; nova linha em Key Sources (gRPC, 2015)
+- `wiki/entities/meta.md` — `source_count` 5 → 6; nova linha em Key Sources (GraphQL na linha do tempo; Facebook como pioneira de API pública)
+- `wiki/entities/openai.md` — `source_count` 14 → 15; nova linha em Key Sources (API de IA generativa nos anos 2020)
+- `wiki/entities/amazon-web-services.md` — `source_count` 6 → 7; nova linha em Key Sources (Amazon como pioneira de API pública; AWS na API economy dos anos 2010)
+- `wiki/index.md` — nova linha em Sources (topo da tabela); cinco novas linhas em Concepts na seção "Arquitetura Backend & Event-Driven" (`mainframe`, `windows-api`, `posix`, `corba-rmi`, `api-economy`)
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte converge com [[wiki/concepts/soap]] (já draft, agora com a origem CORBA/RMI adicionada) e com [[wiki/concepts/contrato-de-api]] (já stub, agora com a linhagem pré-rede do termo). (2) **Leitura do autor sinalizada, não verificada como fato histórico**: a tese de que REST+JSON "herda a filosofia do Unix" (pequenas funções combináveis) é uma afirmação de linhagem conceitual sem citação formal — registrada como tal em `wiki/concepts/unix.md` e no Open Questions da fonte, não corrigida silenciosamente. (3) **Tese de doutorado do REST não é nomeada** na fala (é a tese de Roy Fielding, ano 2000, fato de conhecimento geral não citado explicitamente) — registrado no Open Questions da fonte em vez de completado silenciosamente no corpo do texto. (4) **eBay, Salesforce, Twitter, Stripe, Twilio e SendGrid não geraram entity própria** — citadas apenas como marcos de "API economy", não centrais o suficiente ao conteúdo da fonte para justificar stub isolado (decisão registrada na seção Entidades Mencionadas da fonte). (5) Autoria identificada com confiança alta — mesmo canal/estilo de [[wiki/entities/bernardo-lobato]], primeira parte de uma série nova sobre APIs (a fonte já anuncia partes futuras sobre cada protocolo em detalhe).
+
+---
+
+## [2026-08-18] ingest | 9 Code Smells — Como Identificar que seu Código Pode Estar Piorando
+
+**Fonte:** [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — transcrição de vídeo (autor não identificado), colada diretamente pelo usuário no chat; transformada em `raw/9-code-smells-como-identificar-codigo-ruim.md` (limpa, organizada por smell, bloco de patrocínio AUVP isolado e sinalizado como não técnico)
+**Skill carregada:** `tech-mentor-backend` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/` (o `/home/nemomartins/Documentos/new/skills/` do CLAUDE.md não existe nesta máquina). Referência consultada: `references/software-craftsmanship.md`.
+
+**Arquivos criados:**
+- `raw/9-code-smells-como-identificar-codigo-ruim.md` — transcrição limpa organizada em: o que é um bom código (régua do autor) → bloco de patrocínio isolado → 9 smells em seções próprias → fechamento sobre uso crítico dos smells
+- `wiki/sources/9-code-smells-como-identificar-codigo-ruim.md` — TL;DR, 9 key claims com evidência e confiança, entidades/conceitos tocados, open questions
+- `wiki/concepts/code-smells.md` (novo) — conceito guarda-chuva, catálogo dos 9 smells, régua de seis critérios, crosslink explícito com `red-flags-de-design` (linhagem Ousterhout paralela)
+- `wiki/concepts/feature-envy.md` (novo stub)
+- `wiki/concepts/primitive-obsession.md` (novo stub)
+- `wiki/concepts/data-clumps.md` (novo stub)
+- `wiki/concepts/dry.md` (novo stub) — posição deliberadamente não dogmática do vídeo (2 repetições ok, 3+ problemático)
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/god-object.md` — `source_count` 6 → 7; nova seção "Composição como correção prática"; nova linha em Key Sources
+- `wiki/concepts/acoplamento.md` — `source_count` 7 → 8; nova seção "Feature Envy: Acoplamento Via Acesso a Dados Internos de Outra Classe"; nova linha em Key sources
+- `wiki/concepts/coesao.md` — `source_count` 3 → 4; nova seção "God Object e Data Clumps: Baixa Coesão em Dois Formatos Opostos"; nova linha em Key sources
+- `wiki/concepts/red-flags-de-design.md` — `source_count` 2 → 3; nova seção "Linhagem paralela: Code Smells (Fowler)"; nova linha em Key Sources
+- `wiki/concepts/naming.md` — `source_count` 4 → 5; nova seção "Números Mágicos: Naming Aplicado a Constantes"; nova linha em Key Sources
+- `wiki/concepts/comentarios-como-ferramenta-de-design.md` — `source_count` 1 → 2; nova seção sobre comentário como sintoma de naming fraco; nova linha em Key Sources
+- `wiki/concepts/refatoracao.md` — `source_count` 5 → 6; nova seção "Code smells como gatilho para decidir refatorar (com cautela)"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; sete novas linhas em Concepts (`code-smells`, `god-object`, `feature-envy`, `data-clumps`, `primitive-obsession`, `dry` junto ao cluster de red-flags/acoplamento/coesão)
+
+**Notas / open questions:** (1) **Sem contradições diretas** com o wiki existente — o vídeo converge fortemente com [[wiki/concepts/red-flags-de-design]] e [[wiki/concepts/refatoracao]] já registrados; tratado como catálogo paralelo (linhagem Fowler), não como fonte primária de Fowler em si. (2) **Omissão de crédito não verificada**: o vídeo usa termos exatos da literatura de Fowler ("feature envy", "data clumps", "primitive obsession") sem citar a fonte — sinalizado no Open Questions da própria página de source para checagem futura contra uma ingestão do livro *Refactoring*. (3) **Heurística sem validação externa**: o limiar de "2 repetições ok, 3+ problemático" para DRY é opinião pessoal do autor, registrada como tal em [[wiki/concepts/dry]], não como métrica objetiva. (4) **Conteúdo comercial isolado**: o vídeo tem um bloco de patrocínio (AUVP) que usa por analogia os mesmos critérios de bom design para vender produto de investimento — mantido em `raw/` por fidelidade, explicitamente marcado como não técnico e fora do escopo da ingestão de conceitos.
+
+---
+
 ## [2026-08-17] ingest | Tokens: o Que São e Por Que Custam Tão Caro
 
 **Fonte:** [[wiki/sources/tokens-o-que-sao-e-por-que-custam-caro]] — transcrição de vídeo (autor não identificado), colada diretamente pelo usuário no chat
@@ -7159,3 +7222,75 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`priority-queue`); linha de `compactacao-de-texto` reescrita para refletir a distinção gzip (formato) vs. deflate (algoritmo)
 
 **Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte converge e adiciona profundidade a [[wiki/concepts/compactacao-de-texto]] (já stub desde 2026-07-27) e a [[wiki/sources/por-que-letras-minusculas-economizam-dados]], promovendo a página de stub para draft. (2) **Primeira menção formal de priority queue na wiki** — apesar de heaps/filas de prioridade serem estrutura de dados fundamental, não havia página dedicada; criada agora motivada pelo uso concreto na construção da árvore de Huffman, evitando um stub genérico sem contexto de uso real. (3) **Autoria não identificada** — mesmo padrão de outras transcrições brutas sem metadado de canal (ex.: `por-que-letras-minusculas-economizam-dados` antes de identificação, `tipos-de-armazenamento-de-dados`); o estilo de fala não bateu com nenhuma entity já registrada (Código Fonte TV, Lucas Montano, Augusto Galego, Fabio Akita) com confiança suficiente para atribuição. (4) **Dois vídeos exclusivos para membros mencionados na fonte** (leitura do header gzip; implementação em código da árvore de Huffman) não estão disponíveis para ingestão — candidatos naturais a expandir `compactacao-de-texto` no futuro caso se tornem acessíveis.
+
+---
+
+## [2026-08-18] ingest | Recursão em JavaScript: Fatorial e Fibonacci
+
+**Fonte:** [[wiki/sources/recursao-fatorial-fibonacci-javascript]] — transcrição de vídeo colada pelo usuário no chat (ASR bruto, sem pontuação, já em pt-BR, sem necessidade de tradução), limpa, organizada em seções e com código JS extraído do texto corrido em `raw/recursao-fatorial-fibonacci-javascript.md`
+**Skill carregada:** `cs-fundamentals` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/cs-fundamentals/` (o `/home/nemomartins/Documentos/new/skills/` do CLAUDE.md não existe nesta máquina). Referência consultada: `references/algorithms-complexity.md` (seção "Recursão e Memoização").
+
+**Arquivos criados:**
+- `raw/recursao-fatorial-fibonacci-javascript.md` — transcrição limpa e organizada em seções (iterativa vs. recursiva → fatorial → analogia do poço → caso base + chamada recursiva → Fibonacci → trade-offs), com blocos de código JS extraídos da fala
+- `wiki/sources/recursao-fatorial-fibonacci-javascript.md` — TL;DR, 4 key claims com evidência e confiança, entidades/conceitos tocados, open questions, raw quotes
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/recursao.md` — `source_count` 3 → 4; nova seção "Trace passo a passo: fatorial e Fibonacci em JavaScript" com os dois exemplos completos e nota sobre a diferença de complexidade entre recursão linear (fatorial, O(n)) e recursão em árvore (Fibonacci ingênuo, O(2ⁿ)) — a fonte trata "recursão" como categoria única mais lenta, o que é impreciso
+- `wiki/concepts/programacao-dinamica.md` — `source_count` 1 → 2; nova seção explicando por que a Fibonacci recursiva ingênua traçada na fonte é O(2ⁿ) (recomputação de subárvores), conectando o trace da fonte à correção via memoização
+- `wiki/concepts/big-o.md` — `source_count` 9 → 10; tabela de complexidades atualizada (O(2ⁿ) ganhou "Fibonacci recursivo sem memoização" como exemplo canônico ao lado de subsets de força bruta); nova linha em Key sources
+- `wiki/concepts/pilha.md` — `source_count` 1 → 2; bullet de call stack expandido com o trace concreto de `fatorial(5)` (LIFO — frames se resolvem na ordem inversa em que foram empilhados); nova linha em Key sources
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte converge com [[wiki/concepts/recursao]] (já draft, 3 fontes) e adiciona os dois traces didáticos completos (fatorial e Fibonacci) que a página ainda não tinha em detalhe. (2) **Imprecisão da fonte sinalizada, não corrigida silenciosamente** — a conclusão da fonte de que "recursão é mais lenta" generaliza um caso exponencial (Fibonacci sem memoização) para toda recursão, ignorando que fatorial recursivo é O(n), a mesma complexidade da versão iterativa. Registrado explicitamente em `wiki/concepts/recursao.md` e `wiki/concepts/programacao-dinamica.md` com link de volta à fonte, em vez de apagar a imprecisão do Open Questions da fonte. (3) **Escopo do ingest menor que a faixa de 10-15 páginas sugerida no CLAUDE.md** — o conteúdo é uma introdução didática que já converge quase inteiramente com `wiki/concepts/recursao.md` (existente, draft, 3 fontes prévias); os quatro conceitos tocados (recursão, programação dinâmica, Big O, pilha) cobrem genuinamente tudo que a fonte introduz de novo. Preferi 4 conexões reais e verificadas a esticar para conceitos sem relação direta (ex.: `divisao-de-tarefas-em-partes-menores`, que é sobre decomposição de tarefas de carreira, domínio diferente, apesar do nome parecido). (4) **Autoria não identificada** — mesmo padrão de outras transcrições brutas sem metadado de canal.
+
+
+---
+
+## [2026-08-18] ingest | Sistema de Mentoria em Golang: Monolito Modular Construído em Live (Lucas Badico)
+
+**Fonte:** [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]] — transcrição de vídeo colada pelo usuário no chat (ASR bruto, sem pontuação, já em pt-BR — sem necessidade de tradução), limpa e organizada em seções, com estrutura de pastas e código extraídos da fala corrida em `raw/sistema-mentoria-golang-monolito-modular-live-lucas-badico.md`
+**Skill carregada:** `tech-mentor-backend` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/` (o `/home/nemomartins/Documentos/new/skills/` do CLAUDE.md não existe nesta máquina). Referências consultadas: `references/architecture-foundations.md` (seção "Modular Monolith — Design, Estrutura e Migração" e "Microsserviços vs Monolito Modular") e `references/grpc.md` (cabeçalho, motivação HTTP/2+Protobuf).
+
+**Arquivos criados:**
+- `raw/sistema-mentoria-golang-monolito-modular-live-lucas-badico.md` — transcrição limpa e organizada em seções (por que construir em live → o que construir → verticais → stack → estrutura de pastas → fluxo do módulo appointment → tese de extração → desafios em aberto)
+- `wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico.md` — TL;DR, 5 key claims com evidência e confiança, entidades/conceitos tocados, open questions, raw quotes
+- `wiki/concepts/grpc.md` (novo stub) — RPC binário sobre HTTP/2+Protobuf, HTTP na borda vs. gRPC interno, relação com extração de módulo em monolito modular
+- `wiki/concepts/localstack.md` (novo stub) — emulação local de serviços AWS, caso real de setup (6h, DynamoDB+Lambdas)
+- `wiki/concepts/build-in-public.md` (novo stub) — construir em público como exposição de conteúdo e prática deliberada, distinção com "ensinar em público" já documentado em `mentoria-tecnica`
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/monolito-modular.md` — `source_count` 2 → 3; nova seção "Implementação Concreta em Go" (estrutura `app/cmd`+`internal`+`modules`, extração via remoção de injeção + clone de banco); nova linha em Key sources
+- `wiki/concepts/go-arquitetura.md` — `source_count` 1 → 2; nova seção "Wiring Multi-Módulo (Monolito Modular)" com exemplo de `main.go` injetando handler por módulo; nova linha em Ver também e Key Sources
+- `wiki/concepts/go-ecossistema.md` — `source_count` 3 → 4; Gorilla Mux adicionado à seção "HTTP: Roteadores" como caso real de produção; nova linha em Key Sources
+- `wiki/concepts/dynamodb.md` — `source_count` 2 → 3; nova seção "Desenvolvimento Local com LocalStack"; nova linha em Key Sources
+- `wiki/concepts/mentoria-tecnica.md` — `source_count` 6 → 7; nova seção "Construir a Própria Infraestrutura de Mentoria como Produto"; nova linha em Key Sources
+- `wiki/concepts/microsservicos.md` — `source_count` 12 → 13; nova linha em Key Sources com a tática de clonar banco no momento da extração
+- `wiki/concepts/database-per-service.md` — `source_count` 2 → 3; nova seção "Tática de Migração: Clonar Antes de Separar"; nova linha em Key Sources
+- `wiki/entities/lucas-badico.md` — `source_count` 3 → 4; nova seção "Projeto em Live: Sistema de Mentoria em Go"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (`grpc` em Arquitetura Backend, `localstack` em AWS & Cloud, `build-in-public` em Recursos de Aprendizado)
+
+**Notas / open questions:** (1) **Sem contradições diretas** com o wiki existente — a fonte converge fortemente com [[wiki/concepts/monolito-modular]] (já draft, agora com exemplo concreto de implementação em Go) e com a tese de "banco por serviço via clone" que complementa, sem contradizer, o [[wiki/concepts/database-per-service]] existente. (2) **Trade-off não discutido pela fonte, sinalizado no Open Questions da fonte**: a escolha de GORM no projeto contradiz parcialmente a recomendação de produção já registrada em [[wiki/concepts/go-ecossistema]] (sqlc/sqlx preferidos a GORM para queries críticas) — registrado como tensão, não como erro corrigido silenciosamente. (3) **Simplificação da fonte sobre gRPC no browser** (alega "não existe solução boa" sem mencionar grpc-web/Connect) sinalizada explicitamente no Open Questions da fonte, não corrigida no corpo do texto. (4) **Autoria identificada com confiança alta** — mesmo estilo de fala, tema (Go, carreira, mentoria) e entity já existente ([[wiki/entities/lucas-badico]]) de fontes prévias (`golang-mercado-trabalho-frontend-para-backend`, `golang-profissional-sem-grandes-frameworks`), diferente do padrão usual de autoria não identificada.
+
+---
+
+## [2026-08-18] ingest | Autenticação Federada e SSO: de LDAP e Kerberos ao SAML (Bernardo Lobato)
+
+**Fonte:** [[wiki/sources/autenticacao-federada-sso-saml-bernardo-lobato]] — transcrição de vídeo colada pelo usuário no chat (ASR bruto, pt-BR, sem necessidade de tradução), limpa e organizada em seções em `raw/autenticacao-federada-sso-saml-bernardo-lobato.md`.
+**Skill carregada:** `tech-mentor-security` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-security/` (o `/home/nemomartins/Documentos/new/skills/` do CLAUDE.md não existe nesta máquina). Referência consultada: `references/appsec-authn-authz.md`, seções "SAML 2.0 — SSO Enterprise" e "Federated Identity" — confirmou o fluxo SP-initiated e o contraste SAML vs. OIDC descritos pela fonte.
+
+**Arquivos criados:**
+- `raw/autenticacao-federada-sso-saml-bernardo-lobato.md` — transcrição limpa e organizada em seções (o problema de múltiplos logins → identity management/LDAP → Kerberos/MIT → transição pro SSO web → fatores de autenticação → autenticação federada → SAML em detalhe → ponte com OAuth)
+- `wiki/sources/autenticacao-federada-sso-saml-bernardo-lobato.md` — TL;DR, 8 key claims com evidência e confiança, entidades/conceitos tocados, open questions, raw quotes
+- `wiki/concepts/saml.md` (novo) — protocolo em detalhe: três partes (IdP/SP/browser), troca de metadados via X.509, fluxo `SAMLRequest`/`SAMLResponse`, limitação em SPA/API, ponte com OAuth
+- `wiki/concepts/kerberos.md` (novo) — origem no MIT (anos 80), modelo do ticket/KDC, adoção pela Microsoft (Kerberos V5, RFC 4120), limitação de rede local
+- `wiki/concepts/ldap.md` (novo) — "chmod corporativo", contexto histórico, relação com Active Directory e com Kerberos/SAML
+- `wiki/concepts/federated-identity.md` (novo) — modelo de terceirização de confiança; unifica a página de source homônima já existente ([[wiki/sources/federated-identity]]) que não tinha página de conceito correspondente
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/sso-single-sign-on.md` — `source_count` 2 → 3; seção "Duas gerações de protocolo" expandida com o fluxo SAML e a linhagem Kerberos→SSO web; nova seção "Relação com outros conceitos" com links para `saml`, `kerberos`, `ldap`, `federated-identity`; nova linha em Key Sources
+- `wiki/concepts/oauth2.md` — `source_count` 8 → 9; nova seção "Ponte com SAML: Assertion como Credencial"; nova linha em Relação com outros conceitos e em Key Sources
+- `wiki/entities/bernardo-lobato.md` — `source_count` 10 → 11; nova linha em Key Sources
+- `wiki/sources/federated-identity.md` — **fix trivial de backlinks quebrados**: a página antiga linkava `[[concepts/federated-identity]]`, `[[concepts/saml]]` etc. sem o prefixo `wiki/` (formato de uma versão anterior do vault) e apontava para conceitos que nunca foram criados (`concepts/oidc`, `concepts/sso`, `concepts/scim`, `concepts/home-realm-discovery`, `entities/okta`, `entities/azure-ad`); corrigido para os 4 wikilinks que agora resolvem de fato (`federated-identity`, `saml`, `openid-connect`, `sso-single-sign-on`); `date_updated` atualizado
+- `wiki/index.md` — nova linha em Sources; quatro novas linhas em Concepts (`saml`, `kerberos`, `ldap`, `federated-identity`) na seção "Autenticação & Identidade"
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte converge com [[wiki/concepts/sso-single-sign-on]] (já draft, cobria SAML só em nível de hook) e complementa [[wiki/sources/federated-identity]] (já ingerida em 2026-04-23, mas cuja página de conceito correspondente nunca tinha sido criada — lacuna fechada agora). (2) **Linhagem histórica tratada como fato pela fonte, sinalizada como interpretação do autor no Open Questions**: a ideia de que o SSO web "evoluiu" do Kerberos é uma leitura de continuidade conceitual, não uma sucessão técnica documentada — SAML e Kerberos resolvem o mesmo problema por caminhos tecnicamente independentes. Mesmo padrão de simplificação de linhagem já observado em [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] (Unix→REST). (3) **Ponte SAML→OAuth descrita de forma genérica** pela fonte, sem nomear o RFC 7522 (SAML 2.0 Bearer Assertion Profile) — registrado como lacuna técnica no Open Questions da fonte, não preenchido silenciosamente. (4) **Drift de formato corrigido incidentalmente**: a página `wiki/sources/federated-identity.md` (ingerida em uma sessão anterior, antes da convenção `[[wiki/...]]` nos wikilinks se consolidar) tinha 6 backlinks quebrados apontando para páginas nunca criadas — fix trivial aplicado diretamente por não ser uma mudança substantiva de conteúdo, apenas correção de link, conforme os invariantes de lint do `CLAUDE.md`.

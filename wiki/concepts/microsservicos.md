@@ -3,8 +3,8 @@ type: concept
 title: "Microsserviços"
 aliases: ["microsservicos", "microservices", "arquitetura de microsserviços", "decomposição por domínio"]
 date_created: 2026-07-24
-date_updated: 2026-08-12
-source_count: 12
+date_updated: 2026-08-18
+source_count: 13
 tags: [microsservicos, arquitetura, bounded-context, distributed-monolith, circuit-breaker, resiliencia]
 skill: tech-mentor-backend
 status: draft
@@ -90,3 +90,4 @@ Times pequenos e autônomos — um dos benefícios centrais de microsserviços �
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — percurso didático incremental deadlock → database-per-service → 2PC → Saga Pattern → CQRS, construindo problema por problema
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — sharding de banco como consequência da decomposição por DDD, não como técnica aplicável a um monolito inteiro
 - [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]] — microsserviços eliminam o [[wiki/concepts/code-espaguete]] por impossibilidade estrutural (serviço não chama função de outro), mas a troca chamada-de-função→chamada-de-rede traz latência e overhead que só compensam com razão real de hardware/escala; o [[wiki/concepts/monolito-modular]] como etapa anterior que facilita a extração futura
+- [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]] — tática concreta de extração: clonar o banco de dados compartilhado e rodar migração isolada a partir dele, no momento em que um módulo (ex.: payment) ganha time dedicado — ver [[wiki/concepts/database-per-service]]

@@ -3,8 +3,8 @@ type: concept
 title: "Comentários Como Ferramenta de Design"
 aliases: ["write the comments first", "escrever comentários primeiro", "comments as design tool", "interface comment", "implementation comment"]
 date_created: 2026-07-29
-date_updated: 2026-07-29
-source_count: 1
+date_updated: 2026-08-18
+source_count: 2
 tags: [comentarios, documentacao, design, ousterhout, clean-code, abstracao]
 skill: tech-mentor-backend
 status: draft
@@ -40,6 +40,10 @@ Regra de ouro para não repetir o código: depois de escrever um comentário, pe
 
 Processo descrito pelo autor: comentário de interface da classe → assinaturas e comentários dos métodos públicos mais importantes (corpo vazio) → variáveis de instância com comentário → só então os corpos dos métodos, com comentários de implementação conforme necessário. Três benefícios: (1) o contexto de design está fresco na cabeça, produzindo comentários melhores; (2) a escrita do comentário funciona como teste de design — comentário difícil de deixar curto e completo é sinal de abstração ruim (red flag **Hard to Describe**); (3) o processo fica mais agradável, porque achar a descrição mais simples e completa possível é uma fonte de satisfação, não drudge work adiado para o fim do projeto.
 
+## Comentário Como Sintoma de Naming Fraco (Visão Convergente com Clean Code, Neste Ponto)
+
+[[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] traz um exemplo pontual que, nesse caso específico, converge com a posição de Clean Code (não com Ousterhout): `if age > 16` com o comentário "idade para tomar cerveja" em cima é apresentado como sinal de que o código não está claro o suficiente — a correção sugerida é nomear a variável diretamente (`idade_para_tomar_cerveja_alemanha = 16`), eliminando o comentário. A fonte reconhece explicitamente que isso não é regra absoluta ("às vezes realmente precisa" de comentário) — o caso citado é especificamente sobre um comentário substituível por naming melhor de uma constante, não um argumento geral contra comentários de interface como os que Ousterhout defende acima.
+
 ## Manutenção — como não deixar comentários ficarem obsoletos
 
 - Manter o comentário perto do código que descreve (não em header file distante).
@@ -58,3 +62,4 @@ Processo descrito pelo autor: comentário de interface da classe → assinaturas
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — Caps. 12, 13 e 15 (as quatro desculpas, interface vs. implementação, escrever comentários primeiro, discordância com Clean Code)
+- [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — exemplo pontual de comentário substituível por naming melhor de constante (convergente com Clean Code, não com a defesa geral de Ousterhout)

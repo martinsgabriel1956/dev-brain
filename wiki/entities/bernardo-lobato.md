@@ -3,8 +3,8 @@ type: entity
 title: "Bernardo Lobato"
 aliases: ["Bernardo Lobato"]
 date_created: 2026-06-05
-date_updated: 2026-08-14
-source_count: 9
+date_updated: 2026-08-18
+source_count: 11
 tags: [arquitetura-software, segurança, criador-de-conteudo, youtube, backend]
 skill: tech-mentor-security
 status: stub
@@ -25,3 +25,5 @@ Desenvolvedor e criador de conteúdo brasileiro. Publica vídeos toda sexta-feir
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — vídeo mais leve/reflexivo, fora da série técnica hands-on; argumenta que o ciclo de hype da comunidade não acompanha o ritmo real de obsolescência, usando SOAP, XML, ESB, jQuery e COBOL como exemplos de tecnologias fora do mainstream que ainda sustentam sistemas críticos
 - [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] — distinção conceitual entre cache (reutilização) e buffer (diferença de velocidade produtor/consumidor), percorrida do hardware (cache L1/L2/L3, buffer de I/O) à arquitetura distribuída (Redis, filas de mensagem, streaming)
 - [[wiki/sources/refresh-token-pattern-access-token-de-curta-duracao]] — vídeo da série sobre OAuth/OIDC/JWT: padrão access+refresh token, rotation, fingerprinting e janela de exposição
+- [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — primeira parte de uma nova série sobre APIs: percurso histórico década a década, de rotina local de sistema operacional (anos 60) a infraestrutura crítica (anos 2020)
+- [[wiki/sources/autenticacao-federada-sso-saml-bernardo-lobato]] — continuação da série sobre OAuth/OIDC: LDAP como base de identidade corporativa, Kerberos (MIT, anos 80) como antecessor do modelo de terceiro confiável, e o protocolo SAML 2.0 em detalhe (fluxo IdP/SP, troca de metadados, ponte com OAuth)

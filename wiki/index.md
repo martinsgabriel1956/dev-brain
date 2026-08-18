@@ -20,6 +20,11 @@ date_updated: 2026-08-18
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/autenticacao-federada-sso-saml-bernardo-lobato]] | Bernardo Lobato: de [[wiki/concepts/ldap|LDAP]] ("chmod corporativo") e [[wiki/concepts/kerberos|Kerberos]] (MIT, anos 80, modelo do ticket/terceiro confiável) até o [[wiki/concepts/saml|SAML 2.0]] em detalhe — fluxo IdP/SP com troca de metadados via certificado X.509, `SAMLRequest`/`SAMLResponse`, e a ponte SAML→OAuth (assertion validada em troca de um access token) |
+| [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] | Bernardo Lobato: linha do tempo das APIs década a década — de rotina/biblioteca local de sistema operacional em mainframes ([[wiki/entities/ibm]] System/360, anos 60-70) e [[wiki/concepts/unix|chamada de sistema Unix]], passando por [[wiki/concepts/windows-api|WinAPI]]/[[wiki/concepts/posix|POSIX]] (anos 80), [[wiki/concepts/corba-rmi|CORBA/RMI]] (anos 90), [[wiki/concepts/soap|SOAP]]/REST e a primeira onda de [[wiki/concepts/api-economy|API economy]] (anos 2000), [[wiki/concepts/graphql|GraphQL]]/[[wiki/concepts/grpc|gRPC]] e API-como-produto (anos 2010), até OAuth/[[wiki/concepts/api-gateway|API Gateway]]/IA generativa como infraestrutura crítica (anos 2020) |
+| [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] | Vídeo pt-BR (autor não identificado): 9 code smells (funções longas, [[wiki/concepts/god-object]], [[wiki/concepts/dry]] com posição contrária ao dogma, condicional gigante, números mágicos, [[wiki/concepts/feature-envy]], [[wiki/concepts/data-clumps]], comentários inúteis, [[wiki/concepts/primitive-obsession]]) julgados pela régua compreensível/testável/acoplamento/coesão/modular/manutenção; smell não é prova determinística de código ruim |
+| [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]] | Lucas Badico apresenta o sistema de mentoria que constrói em live streams: monolito modular em Go (módulos appointment/payment/chatbot/journey, cada um com handler HTTP e gRPC), clone do Calendly para resolver dores reais de mentoria (visibilidade de sessão, pagamento retido), PostgreSQL+DynamoDB via LocalStack, apenas 3 libs externas (Gorilla Mux, gRPC, GORM) |
+| [[wiki/sources/recursao-fatorial-fibonacci-javascript]] | Recursão em JavaScript via fatorial e Fibonacci: iterativa vs. recursiva, caso base + chamada recursiva, trace passo a passo do desenrolar da call stack |
 | [[wiki/sources/gzip-deflate-huffman-lz77]] | Gzip não é algoritmo de compressão — é comando + formato de arquivo; o algoritmo é deflate (LZ77 com sliding window + triplet offset/length/caractere, depois Huffman coding via priority queue); demo com `xxd` no header |
 | [[wiki/sources/tokens-o-que-sao-e-por-que-custam-caro]] | Vídeo pt-BR (autor não identificado): o que são tokens e por que LLMs precisam deles (elas só operam sobre números); por que subword tokens vencem letra-por-letra e palavra-por-palavra; experimento comparando GPT-4o (22 tokens) vs. Claude Opus 5 (42 tokens) na mesma frase em português; e a explicação autorregressiva de por que o token de output custa estruturalmente mais que o de input em todos os providers |
 | [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] | Vídeo pt-BR (autor não identificado): AWS tem ~200 serviços, mas 90% das aplicações usam os mesmos ~15 — percorre IAM, VPC, EC2, Auto Scaling+ALB, S3, RDS/Aurora, Lambda, DynamoDB, API Gateway, CloudFront, CloudWatch, SQS/SNS/EventBridge e ECS/EKS/ECR em ordem de dependência lógica de pilha, fechando com uma arquitetura de referência ponta a ponta |
@@ -343,6 +348,10 @@ date_updated: 2026-08-18
 | Página | Hook |
 |---|---|
 | [[wiki/concepts/pkce]] | Client secret dinâmico e descartável para SPA/mobile — `code_verifier`/`code_challenge` via hash, resolve a falta de prova de posse do Implicit Flow, obrigatório no OAuth 2.1 |
+| [[wiki/concepts/saml]] | Protocolo XML de SSO corporativo — IdP e SP trocam metadados via certificado X.509, `SAMLRequest`/`SAMLResponse` assinada via redirecionamentos no browser |
+| [[wiki/concepts/kerberos]] | MIT, anos 80 — provar identidade uma vez a um "cão de guarda" (KDC) e receber um ticket aceito por outros servidores, sem expor a senha na rede |
+| [[wiki/concepts/ldap]] | "chmod corporativo" — base única de usuários de uma organização, tipicamente integrada ao Active Directory |
+| [[wiki/concepts/federated-identity]] | Terceirização de confiança entre organizações — uma identidade validada por um IdP é aceita por Service Providers terceiros, sem compartilhar senhas |
 | [[wiki/concepts/mfa-multifator-autenticacao]] | Três categorias de fator (sabe/tem/é) — dois fatores da mesma categoria não valem como MFA de verdade |
 | [[wiki/concepts/otp-hotp-totp]] | Código de 6 dígitos a partir de seed + relógio ou contador — RSA SecurID proprietário até HOTP/TOTP padronizado pela IETF |
 | [[wiki/concepts/webauthn-fido2-u2f]] | Criptografia assimétrica em vez de segredo compartilhado — chave privada nunca sai do dispositivo, phishing-resistant por design |
@@ -482,6 +491,7 @@ date_updated: 2026-08-18
 | [[wiki/concepts/ownership-proativo]] | Puxar responsabilidade por um projeto de alto impacto antes que caia no colo — com clareza prévia do que é sucesso |
 | [[wiki/concepts/contratacao-barra-alta]] | Envolver-se no processo de contratação e filtrar pela pessoa que mais faz bem à empresa — decide o jogo de longo prazo do time |
 | [[wiki/concepts/mentoria-tecnica]] | Sênior que replica conhecimento para júniors acelera o crescimento deles e preserva a cultura técnica ao longo do tempo |
+| [[wiki/concepts/build-in-public]] | Desenvolver um projeto real ao vivo — código, decisões e erros expostos em tempo real — como exposição de conteúdo e prática deliberada de uma tecnologia nova |
 | [[wiki/concepts/one-on-one]] | Reunião individual cara a cara em sala fechada — mecanismo principal para descobrir o que reuniões de status não revelam |
 | [[wiki/concepts/prova-de-conceito]] | Testar tecnologia emergente em protótipo pequeno antes de arriscar produto consolidado — mata a ansiedade sem colocar valor em risco |
 | [[wiki/concepts/flexibilidade-tecnica]] | Aceitar múltiplas visões e soluções válidas — inflexibilidade trava inovação e tira espaço de crescimento de outros |
@@ -956,6 +966,7 @@ date_updated: 2026-08-18
 | [[wiki/concepts/aws-sqs]] | Fila gerenciada — Standard (at-least-once) vs FIFO (exactly-once); desacoplamento simples, entrega para um consumidor por mensagem |
 | [[wiki/concepts/aws-sns]] | Pub/sub gerenciado — entrega para todos os inscritos (fan-out), tipicamente múltiplas filas SQS no mesmo tópico |
 | [[wiki/concepts/aws-cloudwatch]] | Hub de observabilidade nativo — métricas/logs/alarmes automáticos dos serviços AWS, X-Ray para tracing distribuído |
+| [[wiki/concepts/localstack]] | Emula serviços AWS (DynamoDB, Lambda, S3...) localmente via Docker — desenvolvimento sem custo de nuvem, com fidelidade imperfeita ao comportamento real |
 
 ### Fundamentos de Backend (Request/Response ao Deploy)
 
@@ -1086,6 +1097,7 @@ date_updated: 2026-08-18
 | [[wiki/concepts/graphql]] | Cliente pede a estrutura de dados exata que quer numa única query — criado pela Meta para resolver N+1/over-under-fetching entre múltiplos frontends; sempre POST por limite de tamanho de URL |
 | [[wiki/concepts/microsservicos]] | Decomposição por bounded context, não por camada técnica; monolito modular é o ponto de partida correto para ~90% dos casos; estudar o estilo funciona como eixo de aprendizado que amarra circuit breaker, saga, observabilidade e mensageria |
 | [[wiki/concepts/monolito-modular]] | Um artefato/banco/runtime dividido em módulos de fronteira explícita que se comunicam por contratos (Ports & Adapters), não por chamadas de função — captura o isolamento dos microsserviços sem o custo de rede; etapa entre MVP e empresa madura que facilita a extração tardia |
+| [[wiki/concepts/grpc]] | RPC binário do Google sobre HTTP/2 + Protobuf — 3-10x menor que JSON; padrão comum é HTTP na borda (clientes/frontend) e gRPC para comunicação serviço-a-serviço interna |
 | [[wiki/concepts/arquitetura-de-sacrificio]] | Escolher *deliberadamente* uma arquitetura que você vai descartar quando o produto crescer (Fowler): descartar código não é fracasso; priorize flexibilidade cedo, preserve qualidade interna/modularidade, prefira monolito a microsserviços como sacrifício e deixe quem escreveu decidir a hora de sacrificar |
 | [[wiki/concepts/monolito]] | Aplicação de artefato único, deploy único — simples e suficiente para MVPs (e muito além), mas degenera em código espaguete sem disciplina de fronteiras |
 | [[wiki/concepts/code-espaguete]] | Código acoplado em cadeia sem fronteiras claras; microsserviços o impedem por impossibilidade estrutural, monolito modular por contratos entre módulos |
@@ -1099,6 +1111,11 @@ date_updated: 2026-08-18
 | [[wiki/concepts/esb-enterprise-service-bus]] | Barramento central de integração pré-microsserviços — "smart endpoints, dumb pipes" nasceu como reação a ele; ainda essencial em empresas com grande legado |
 | [[wiki/concepts/jquery]] | Biblioteca JS de 2006 que unificou DOM/eventos entre navegadores; raramente escolhida hoje mas ainda mantida ativamente em 2026 |
 | [[wiki/concepts/cobol]] | Linguagem de 1959 que sustenta o sistema financeiro mundial (Pix incluso); modernização se dá pela borda (API/filas), não por reescrita |
+| [[wiki/concepts/mainframe]] | Origem das primeiras APIs (anos 60-70) — rotinas/bibliotecas locais do SO num único computador de grande porte, sem qualquer noção de rede |
+| [[wiki/concepts/windows-api]] | WinAPI da Microsoft (anos 80) — primeira base comum de janelas/botões/gráficos/entrada para todo dev de Windows, fim da reinvenção da roda por jogo |
+| [[wiki/concepts/posix]] | Padrão de portabilidade entre Unix (fim dos anos 80) — mesmo problema que a WinAPI resolvia no Windows, resolvido do lado da fragmentação entre fabricantes Unix |
+| [[wiki/concepts/corba-rmi]] | Primeira geração de APIs remotas (anos 90) — comunicação entre processos via rede, "same-platform" e complexa demais para Java/C++/.NET interoperarem de verdade; antecessor direto do SOAP |
+| [[wiki/concepts/api-economy]] | API como estratégia de negócio, não só ferramenta técnica — duas ondas: abertura pública (eBay/Amazon/Salesforce, anos 2000) e API-como-produto (Stripe/Twilio/SendGrid, anos 2010) |
 
 ### Boas Práticas de Engenharia
 
@@ -1136,6 +1153,12 @@ date_updated: 2026-08-18
 | [[wiki/concepts/modulo-profundo]] | Deep module (Ousterhout): poucos módulos grandes com interface simples escondendo complexidade — o oposto de muitos módulos rasos que a IA produz por padrão |
 | [[wiki/concepts/modelo-cascata-vs-desenvolvimento-incremental]] | Waterfall falha para software porque é impossível visualizar o design inteiro antes de construir — design incremental corrige o design cedo, enquanto o sistema ainda é pequeno |
 | [[wiki/concepts/red-flags-de-design]] | Sinal de que um trecho de código é mais complicado do que precisa — melhor exercitado no código de outra pessoa via code review, não no próprio; catálogo completo dos 14 red flags do livro |
+| [[wiki/concepts/code-smells]] | Linhagem Fowler equivalente aos red flags de Ousterhout: sinal de que o código talvez esteja deteriorando, não prova determinística; catálogo de 9 smells julgados por compreensão/testabilidade/acoplamento/coesão/modularidade/manutenção |
+| [[wiki/concepts/god-object]] | Classe que sabe e faz demais, violando SRP — nasce por degradação incremental sprint a sprint; corrigida via composição/injeção de serviços especializados, não reescrita |
+| [[wiki/concepts/feature-envy]] | Uma classe acessando dados internos de outra (ou de uma cadeia de outras) para fazer um cálculo que não é sua responsabilidade — acoplamento "content" mais severo que espaguete comum |
+| [[wiki/concepts/data-clumps]] | Variáveis que sempre viajam juntas (nome/email/idade) passadas soltas como parâmetros em vez de agrupadas num tipo — baixa coesão por falta de agrupamento |
+| [[wiki/concepts/primitive-obsession]] | Representar conceitos de domínio (e-mail, dinheiro) como string/int crus em vez de tipo dedicado — validação duplicada ou inconsistente por falta de garantia por construção |
+| [[wiki/concepts/dry]] | Don't Repeat Yourself sem dogmatismo: repetição pequena é tolerável, abstração prematura sobre duplicação instável costuma ser pior que a duplicação em si |
 | [[wiki/concepts/ocultamento-de-informacao]] | Information hiding (Parnas): esconder decisões de design dentro de um módulo; vazamento via decomposição temporal é a causa mais comum quando o código segue a ordem de execução em vez do conhecimento necessário |
 | [[wiki/concepts/definir-erros-para-fora-da-existencia]] | Redesenhar a semântica de uma operação para que a condição de erro deixe de existir — Tcl `unset`, deleção de arquivo Unix vs. Windows, `substring` do Java; +mascarar, agregar, travar |
 | [[wiki/concepts/comentarios-como-ferramenta-de-design]] | Escrever o comentário de interface antes do código expõe cedo se a abstração é boa; discordância explícita de Ousterhout com Clean Code ("comments are always failures") |

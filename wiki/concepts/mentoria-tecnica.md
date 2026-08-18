@@ -3,8 +3,8 @@ type: concept
 title: "Mentoria Técnica"
 aliases: ["mentoring", "mentorar júniors", "replicar conhecimento"]
 date_created: 2026-04-22
-date_updated: 2026-08-11
-source_count: 6
+date_updated: 2026-08-18
+source_count: 7
 tags: [carreira, mentoria, liderança, júnior, cultura, crescimento]
 skill: tech-mentor-leadership
 status: stable
@@ -59,6 +59,10 @@ Falta de tempo, não má vontade, costuma ser a causa de comentários secos ou p
 
 [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] traz uma terceira fonte independente convergindo para o "efeito multiplicador do ensino" já documentado acima — o convidado define sua própria mudança de "desenvolvedor" para "educador" justamente por esse motivo. A fonte também cita, de segunda mão e sem confirmação (`[transcrição incerta]`), a prática de montar times reunindo pessoas com ambição de crescer, incluindo "pessoas-chave" que influenciam a cultura de evolução do time, como alternativa quando a contratação de profissionais sênior já prontos no mercado é difícil — ou seja, formar/educar internamente em vez de só competir por talento pronto. Ver [[wiki/concepts/contratacao-barra-alta]] para a tensão entre manter barra alta e formar potencial.
 
+## Construir a Própria Infraestrutura de Mentoria como Produto
+
+[[wiki/entities/lucas-badico]], em [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]], trata mentoria não só como prática 1:1, mas como um sistema a ser construído: identifica duas dores concretas de escala — o mentorado sem visibilidade das sessões já tidas e do processo de agendar novas, e cerca de R$50 retidos por sessão numa plataforma de pagamento usada apenas como link (sem aproveitar o resto de suas funcionalidades) — e as ataca construindo sua própria plataforma de agendamento (clone do Calendly, sem as limitações do plano gratuito: múltiplos tipos de mentoria, múltiplos calendários sincronizados). O objetivo declarado do dashboard do mentorado é ir além da agenda: mostrar também o que foi aprendido em cada sessão e como está a evolução — reforçando a mentoria como jornada rastreável, não só encontro pontual.
+
 ## Ver também
 
 - [[one-on-one]] — formato estruturado de acompanhamento individual
@@ -76,3 +80,4 @@ Falta de tempo, não má vontade, costuma ser a causa de comentários secos ou p
 - [[wiki/sources/papinho-tech-solo-comunidade]] — mentoria/ensino em escala de comunidade (meetups), com retribuição como mecanismo central em vez de estrutura formal de 1:1
 - [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — terceira fonte independente sobre o efeito multiplicador do ensino; formação interna de time como alternativa à contratação de sênior pronto
 - [[wiki/sources/potencial-programador-atitude-mindset]] — a aritmética do [[wiki/concepts/efeito-multiplicador]] (ajudar 5 pessoas a melhorar 20% = +100%) e a ressalva de custo de tempo do lead que para de codar
+- [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]] — mentoria tratada como produto/sistema: plataforma própria de agendamento e dashboard de jornada do mentorado, construídos para resolver dores reais de visibilidade e pagamento

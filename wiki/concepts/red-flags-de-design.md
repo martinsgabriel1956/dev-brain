@@ -3,8 +3,8 @@ type: concept
 title: "Red Flags de Design"
 aliases: ["design red flags", "sinais de alerta de design", "code smell (ousterhout)"]
 date_created: 2026-07-10
-date_updated: 2026-07-29
-source_count: 2
+date_updated: 2026-08-18
+source_count: 3
 tags: [design, code-review, ousterhout, complexidade, qualidade]
 skill: tech-mentor-backend
 status: draft
@@ -52,6 +52,10 @@ Todo red flag e todo princípio de design tem exceções — levar qualquer idei
 | **Hard to Describe** | Para ser completo, o comentário de uma variável ou método precisa ser longo | 15 |
 | **Nonobvious Code** | O comportamento ou significado de um trecho de código não é fácil de entender rapidamente | 18 |
 
+## Linhagem paralela: Code Smells (Fowler)
+
+[[wiki/concepts/code-smells]] é o vocabulário equivalente da linhagem Fowler/*Refactoring*, não uma continuação direta deste catálogo de Ousterhout. Os dois compartilham o mesmo espírito central — um sinal a investigar, não uma regra determinística a aplicar cegamente — e há sobreposição parcial de conteúdo: **Repetition** (red flag, item da tabela acima) cobre o mesmo território que [[wiki/concepts/dry]]; **Information Leakage** é próximo de [[wiki/concepts/feature-envy]] (uma classe acessando dados internos de outra); **Vague Name** e **Hard to Pick Name** se sobrepõem parcialmente com o smell "números mágicos" quando o problema é falta de um nome, não falta de nome preciso. Nenhum dos dois catálogos é subconjunto do outro — cada um nomeia sinais que o outro não cobre (ex.: [[wiki/concepts/god-object]], [[wiki/concepts/data-clumps]] e [[wiki/concepts/primitive-obsession]] não aparecem nesta lista de red flags).
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/code-review]] — o veículo prático recomendado para exercitar o reconhecimento de red flags.
@@ -65,3 +69,4 @@ Todo red flag e todo princípio de design tem exceções — levar qualquer idei
 
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — catálogo completo dos 14 red flags nomeados no livro (apêndice "Summary of Red Flags")
+- [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — catálogo paralelo de 9 code smells (linhagem Fowler), com sobreposição parcial (Repetition ≈ DRY, Information Leakage ≈ feature envy) mas cobrindo sinais distintos (god object, data clumps, primitive obsession)
