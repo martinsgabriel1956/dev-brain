@@ -3,8 +3,8 @@ type: concept
 title: "Back Pressure"
 aliases: ["back pressure", "backpressure", "pressão de volta", "producer consumer imbalance"]
 date_created: 2026-04-23
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-08-14
+source_count: 3
 tags: [back-pressure, streaming, reactive, producer-consumer, flow-control]
 skill: tech-mentor-system-design
 status: stable
@@ -33,6 +33,22 @@ Sintomas de back pressure não tratado:
 **Bufferizar com limite** — aceitar até N itens em buffer, rejeitar ou bloquear acima do limite. Torna o back pressure explícito com um bound definido.
 
 **Descartar com política** — quando buffer cheio, descartar os mais antigos (tail drop) ou os de menor prioridade. Útil quando dados têm validade temporal (métricas, logs de debug).
+
+## Antes de escalar: identificar o gargalo real
+
+[[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] enfatiza que o primeiro passo diante de back pressure não é escalar hardware — é identificar onde está o [[wiki/concepts/gargalo]]. Se o consumidor só processa 10 itens/min porque o banco de dados tem essa limitação própria de velocidade, aumentar a capacidade do consumidor não resolve nada.
+
+Técnicas mais baratas que jogar mais hardware no problema:
+
+- **Podar stale jobs** — remover da fila itens antigos, com erro, ou que não fazem mais sentido.
+- **Priorizar** os itens mais importantes dentro da fila.
+- **Processar em batches** — ex.: batch insert em vez de inserts individuais, aumentando vazão sem aumentar capacidade de hardware.
+
+## Admission control e low/high watermark
+
+Além de bufferizar com limite, é possível controlar ativamente a admissão de novos itens antes que entrem na fila — ver [[wiki/concepts/admission-control]]. Uma técnica concreta demonstrada em [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]]: o produtor pausa quando a fila ultrapassa um *high watermark* e só retoma quando ela cai abaixo de um *low watermark*, evitando tanto o crescimento sem limite quanto a oscilação rápida entre pausar e retomar.
+
+Outras estratégias complementares: **rate limit no produtor** (trava a taxa de produção na capacidade do consumidor — ver [[wiki/concepts/rate-limiting]]), **mais consumidores em paralelo** via [[wiki/concepts/escalabilidade-horizontal]], e **auto scaling baseado no tamanho da fila** (ver [[wiki/concepts/auto-scaling]]) — mais difícil de configurar, mas viável. Cuidado com [[wiki/concepts/retry-backoff|retry]] agressivo entre produtor e fila: pode adicionar ainda mais pressão a um sistema já sobrecarregado.
 
 ## Implementação
 
@@ -78,3 +94,4 @@ fromEvent(eventSource, "data").pipe(
 - [[sources/conceitos-que-ninguem-ensina]]
 - [[sources/reactive-architecture]]
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — back pressure citado como exemplo do "mundo debaixo do CRUD": produtor mais rápido que consumidor exige decidir entre descartar, segurar ou derrubar
+- [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — identificar o gargalo antes de escalar, técnicas baratas (poda de stale jobs, priorização, batching), e demonstração prática de admission control com low/high watermark via BullMQ + Redis

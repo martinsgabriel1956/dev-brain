@@ -3,8 +3,8 @@ type: concept
 title: "Observabilidade"
 aliases: ["observabilidade", "observability", "três pilares", "metrics logs traces"]
 date_created: 2026-04-22
-date_updated: 2026-08-06
-source_count: 10
+date_updated: 2026-08-14
+source_count: 11
 tags: [observabilidade, metricas, logs, traces, prometheus, sre, infraestrutura]
 skill: tech-mentor-system-design
 status: stable
@@ -155,6 +155,10 @@ Reforço de uma prática já implícita na priorização acima: acumular eventos
 
 Framing didático direto: quando alguém reporta lentidão, a pergunta não é "qual métrica subiu" mas "qual é o fluxo todo, qual é a jornada, qual é a traceability daquela chamada" — ou seja, o ponto de entrada natural é o [[wiki/concepts/distributed-tracing|trace]] de ponta a ponta, não uma métrica isolada. Essa observação também alimenta diretamente o [[wiki/concepts/planejamento-de-capacidade]]: sem dados de observabilidade, a estimativa de capacidade futura vira adivinhação.
 
+## Observabilidade de Agentes de IA
+
+A entrada de agentes de IA na pipeline adiciona uma pergunta específica aos três pilares clássicos: como fazer **tracing de um LLM** — a chamada de um agente para outro, e a latência entre cada salto de uma cadeia multiagente. O Open Telemetry está incorporando instrumentação orientada a IA para cobrir esse caso, na mesma lógica de Collector centralizando formatação e roteamento já documentada acima. Ver [[wiki/concepts/llm-evals-testing]] para a contraparte de avaliação pré-deploy (evals), que complementa — sem substituir — observabilidade em produção.
+
 ## Relacionado
 
 [[concepts/sli]] · [[concepts/slo]] · [[concepts/error-budget]] · [[concepts/blameless-post-mortem]] · [[concepts/circuit-breaker]] · [[concepts/service-mesh]] · [[wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp]]
@@ -171,3 +175,4 @@ Framing didático direto: quando alguém reporta lentidão, a pergunta não é "
 - [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — necessidade de rastrear erros/comportamento entre múltiplos serviços como o que ensina disciplina de log estruturado e métricas, disciplina transferível para monólitos
 - [[wiki/sources/sre-capacidade-observabilidade-confiabilidade-custo]] — observabilidade como visão fim-a-fim do fluxo/traceability em resposta a "tá muito lento"; insumo direto do planejamento de capacidade
 - [[wiki/sources/monitoramento-aplicacoes-ia-grafana-cloud-opentelemetry]] — onboarding prático do Grafana Cloud (plano gratuito permanente, data sources automáticos), boa prática de batch de telemetria, e tensão não resolvida entre modo "Direct" e a regra de sempre passar pelo Collector
+- [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — tracing de LLM e latência entre chamadas de agentes como extensão dos três pilares clássicos; Open Telemetry incorporando instrumentação orientada a IA

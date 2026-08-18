@@ -3,8 +3,8 @@ type: concept
 title: "Retry com Backoff Exponencial e Jitter"
 aliases: ["retry backoff", "exponential backoff", "jitter retry", "retry pattern"]
 date_created: 2026-04-22
-date_updated: 2026-07-27
-source_count: 2
+date_updated: 2026-08-14
+source_count: 3
 tags: [resiliencia, retry, backoff, jitter, thundering-herd, network, idempotencia]
 skill: tech-mentor-system-design
 status: stable
@@ -129,3 +129,4 @@ Um timeout no cliente não diz *por que* a resposta não chegou — a operação
 
 - [[sources/retry-backoff]]
 - [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] — por que o timeout sozinho não distingue falha, processamento em andamento e sucesso com resposta perdida; teste que corta a resposta depois do efeito e antes da confirmação
+- [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — retry agressivo entre produtor e fila pode adicionar ainda mais pressão a um sistema já sobrecarregado, agravando [[wiki/concepts/back-pressure]] em vez de mitigá-lo

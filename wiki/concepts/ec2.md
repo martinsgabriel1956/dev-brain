@@ -3,8 +3,8 @@ type: concept
 title: "Amazon EC2"
 aliases: ["EC2", "Elastic Compute Cloud"]
 date_created: 2026-08-04
-date_updated: 2026-08-04
-source_count: 1
+date_updated: 2026-08-17
+source_count: 2
 tags: ["aws", "ec2", "compute", "servidor", "infra", "cloud"]
 skill: tech-mentor-infra
 status: stub
@@ -33,6 +33,16 @@ Uma única instância é um single point of failure — se ela cai, cai o tráfe
 - [[wiki/concepts/load-balancer]] — distribui tráfego entre múltiplas EC2
 - [[wiki/concepts/escalabilidade-horizontal]]
 
+## Famílias de Instância e Modelos de Preço
+
+Famílias mais comuns: **T** (workload variável, dev/teste), **M** (uso geral em produção), **C** (computação pesada), **R** (memória intensiva). Três modelos de preço, cada um para um perfil de carga diferente:
+- **On-Demand** — paga pelo uso, sem compromisso, mais caro.
+- **Reserved** — compromisso de 1-3 anos, desconto até 70%. Ideal para produção estável.
+- **Spot** — usa capacidade ociosa, desconto até 90%, mas pode ser interrompido a qualquer momento. Ideal para batch/workloads tolerantes a interrupção.
+
+Regra prática: produção estável em Reserved, picos em On-Demand, batch em Spot. Armazenamento em bloco (EBS): GP3 para a maioria dos casos, io2 quando IOPS garantido é necessário (bancos exigentes). Ver [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]].
+
 ## Key Sources
 
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]
+- [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — famílias de instância (T/M/C/R) e os três modelos de preço com regra de uso por perfil de carga

@@ -3,8 +3,8 @@ type: concept
 title: "Certificado SSL / AWS Certificate Manager (ACM)"
 aliases: ["certificado SSL", "SSL certificate", "ACM", "AWS Certificate Manager", "validação de domínio"]
 date_created: 2026-08-12
-date_updated: 2026-08-12
-source_count: 1
+date_updated: 2026-08-17
+source_count: 2
 tags: [aws, ssl, tls, acm, certificado, https, seguranca]
 skill: tech-mentor-networking
 status: stub
@@ -29,3 +29,4 @@ O certificado emitido é depois anexado à distribuição [[wiki/concepts/aws-cl
 
 ## Key sources
 - [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — solicitação no ACM, validação por CNAME no Route 53, uso do cert no CloudFront
+- [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — menção breve: certificado gratuito e renovado automaticamente pelo ACM ao configurar domínio customizado no [[wiki/concepts/api-gateway|API Gateway]] ou no [[wiki/concepts/aws-cloudfront|CloudFront]]

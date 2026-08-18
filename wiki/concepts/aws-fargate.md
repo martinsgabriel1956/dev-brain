@@ -3,8 +3,8 @@ type: concept
 title: "AWS Fargate"
 aliases: ["Fargate"]
 date_created: 2026-08-04
-date_updated: 2026-08-04
-source_count: 1
+date_updated: 2026-08-17
+source_count: 2
 tags: ["aws", "fargate", "serverless", "containers", "infra", "cloud"]
 skill: tech-mentor-infra
 status: stub
@@ -30,6 +30,11 @@ Serverless compute engine para containers na AWS — elimina a necessidade de pr
 - [[wiki/concepts/ec2]] — alternativa não-serverless (mais controle, potencialmente mais barato em alta utilização constante)
 - [[wiki/concepts/aws-lambda]] — outra forma serverless de compute na AWS, unidade de função em vez de container
 
+## Fargate como Launch Type do ECS
+
+Um dos dois launch types do [[wiki/concepts/ecs|ECS]] (o outro é EC2 gerenciado diretamente). Fargate é o mais simples dos dois; EC2 faz sentido quando o workload precisa de GPU ou controle mais fino sobre a instância subjacente. Ver [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]].
+
 ## Key Sources
 
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]
+- [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — Fargate como o mais simples dos dois launch types do ECS, EC2 reservado para GPU/controle fino

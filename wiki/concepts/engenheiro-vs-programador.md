@@ -3,8 +3,8 @@ type: concept
 title: "Engenheiro vs. Programador"
 aliases: ["programador vs engenheiro", "mentalidade de engenharia", "software engineer vs coder"]
 date_created: 2026-07-03
-date_updated: 2026-08-13
-source_count: 5
+date_updated: 2026-08-17
+source_count: 7
 tags: [carreira, mentalidade, arquitetura, senioridade]
 skill: tech-mentor-leadership
 status: draft
@@ -58,9 +58,19 @@ Não é acumular ferramentas (ver [[wiki/concepts/apego-a-ferramentas]]), mas de
 
 [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] usa "operador de CRUD" como sinônimo prático de "programador" nesta dicotomia — quem domina o feijão-com-arroz (create/read/update/delete) mas nunca vai além. A fonte percorre uma dezena de domínios técnicos (redes, Bluetooth, streams, mobile, banco de dados) como prova concreta do tamanho do que fica de fora quando a carreira para no CRUD, e conecta isso à distinção "fácil vs. simples" da IA: a IA entrega o fácil (CRUD num prompt), nunca o simples — quem só tem CRUD não sabe nem o que pedir nem julgar o que a IA devolveu.
 
+## "Gerar Código" vs. "Saber Construir Software" (Erick Wendel)
+
+[[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] traz a mesma distinção pela ótica do impacto sobre Dev Júnior, com um exemplo de custo concreto: "criar um CRUD com IA pode ser fácil; saber se aquele CRUD tá bem modelado, seguro, otimizado, barato de manter e adequado ao problema é outra história" — cita sistemas criados sem consultoria especializada que vazam dados por falta de segurança da informação mínima. A fonte também reformula o eixo de julgamento em termos de uso de IA: ela deve funcionar como "copiloto", não como "download do seu cérebro" — quem não sabe o que pedir recebe da IA um falso positivo, não uma resposta certa. Ver [[wiki/concepts/alto-nivel-antes-do-fundamento]] para a tese complementar sobre como a ordem de aquisição de fundamentos mudou sem tornar julgamento dispensável.
+
+## O Teto da IA como Teto de Carreira
+
+[[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] formula a mesma distinção como risco de estagnação de carreira: quem só domina a mesma capacidade que a IA já entrega tende a travar num teto — porque a empresa passa a contratar a IA em vez da pessoa quando a capacidade das duas é a mesma. O diferencial sustentável é entender *como as coisas funcionam por baixo* (System Design, banco de dados, tradução de requisitos, CI/CD, observabilidade, feature flags), não operar bem a ferramenta. Relato ilustrativo: devs júnior com acesso irrestrito a modelos de IA ainda cometiam erros típicos de júnior que um sênior com experiência identificava como não sendo a melhor forma de resolver o problema — a IA amplificou a capacidade deles, mas não supriu o julgamento que faltava.
+
 ## Key Sources
 
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]]
+- [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — quem tem o mesmo teto de capacidade da IA é substituído por ela; diferencial é entender o funcionamento, não operar a ferramenta
+- [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — "gerar código ≠ saber construir software"; IA como copiloto, não substituto de julgamento; foco no impacto sobre Dev Júnior
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]] — relato de tech lead sênior que perdeu a capacidade de explicar seu próprio PR gerado por IA
 - [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — a mesma distinção pela ótica da arquitetura de software e do contexto organizacional
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — "operador de CRUD" como sinônimo de programador; percurso por redes/Bluetooth/streams/mobile como prova do mundo debaixo do CRUD

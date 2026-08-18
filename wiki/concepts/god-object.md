@@ -3,8 +3,8 @@ type: concept
 title: "God Object"
 aliases: ["god class", "objeto deus", "god object anti-pattern"]
 date_created: 2026-05-05
-date_updated: 2026-08-10
-source_count: 5
+date_updated: 2026-08-18
+source_count: 6
 tags: [anti-patterns, god-object, design-patterns, solid, coesao]
 skill: tech-mentor-backend
 status: stable
@@ -29,6 +29,10 @@ O [[facade-pattern]] tem risco explícito de virar um God Object se não houver 
 
 A diferença: uma Facade *bem feita* delega para o subsistema e não contém lógica própria. Quando começa a acumular lógica de negócio, vira God Object.
 
+## Segunda opinião: orquestração pura já é sinal de risco
+
+[[wiki/sources/design-pattern-facade-codigo-fonte-tv]] adota um critério mais rígido que a maioria das fontes já registradas aqui: para essa fonte, um método de Facade que só orquestra chamadas a múltiplos serviços (sem lógica de negócio própria) já conta como responsabilidade excessiva — não é preciso acumular lógica própria para o autor considerar o padrão arriscado. Ver o debate completo em [[wiki/questions/facade-fere-srp-video-comparison]].
+
 ## Como uma God Class nasce sprint a sprint
 
 [[wiki/sources/o-que-e-refatoracao-quando-usar]] narra a origem mais comum: não é um design ruim desde o início, é degradação incremental sob prazo. Uma classe `OrderProcessor` limpa (recebe pedido, cobra, salva) recebe um `if` "rapidinho" de frete internacional numa sprint de prazo apertado; algumas sprints e trocas de equipe depois, virou uma classe que valida cupom, calcula imposto, checa fraude e dispara evento — sem que nenhum desenvolvedor individual tenha tomado a decisão consciente de criar uma God Class. Isso é o argumento central para tratar [[wiki/concepts/refatoracao]] como hábito contínuo (ver também [[wiki/concepts/boy-scout-rule]]), não como projeto isolado a ser aprovado depois que o dano já está feito.
@@ -50,3 +54,4 @@ A diferença: uma Facade *bem feita* delega para o subsistema e não contém ló
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]] — exemplo narrativo de God Class nascendo por degradação incremental sob prazo, sprint a sprint
 - [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — limite de tamanho de arquivo (exemplo: 300 linhas) como gate automático de CI contra god files
 - [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — "classe super-homem" que orquestra tudo como sintoma clássico de code base degradando; nasce de empilhar código na parte que "a gente sabia rodar"
+- [[wiki/sources/design-pattern-facade-codigo-fonte-tv]] — posição de que orquestração pura, sem lógica própria, já é responsabilidade demais para um único método

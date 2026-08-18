@@ -3,8 +3,8 @@ type: concept
 title: "Neuroplasticidade"
 aliases: ["plasticidade neuronal", "neuroplasticity"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-08-17
+source_count: 2
 tags: [aprendizado, neurociencia, memoria, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -31,6 +31,11 @@ prática → intercalar teoria/prática → clique
 
 A pausa é quando a neuroplasticidade acontece: o cérebro reorganiza os circuitos em background.
 
+## Nome Formal do Mecanismo: Homeostase Sináptica
+
+[[wiki/sources/como-nunca-mais-esquecer-o-que-voce-estuda-programacao]] nomeia formalmente o mesmo fenômeno descrito nesta página — poda de conexões durante o sono, mantendo só as consideradas importantes — como **hipótese da homeostase sináptica**, e detalha os critérios que fazem uma conexão sobreviver à poda (repetição, emoção, utilidade, contexto, resolução de problemas, sobrevivência). Ver [[wiki/concepts/homeostase-sinaptica]] para o desenvolvimento completo desses critérios.
+
 ## Key Sources
 
 - [[sources/como-aprender-programacao-3-dicas]]
+- [[wiki/sources/como-nunca-mais-esquecer-o-que-voce-estuda-programacao]] — nomeia o mecanismo como homeostase sináptica e lista os seis critérios de retenção

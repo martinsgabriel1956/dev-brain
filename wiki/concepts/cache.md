@@ -3,8 +3,8 @@ type: concept
 title: "Cache"
 aliases: ["caching", "cache de aplicação"]
 date_created: 2026-06-26
-date_updated: 2026-08-11
-source_count: 9
+date_updated: 2026-08-14
+source_count: 10
 tags: [cache, performance, redis, arquitetura, backend, grande-rollback, buffer]
 skill: tech-mentor-backend
 status: stable
@@ -68,6 +68,16 @@ Adicionar cache aumenta a complexidade: [[tradeoff-de-cache]]. Cache não deve s
 
 Em bancos [[wiki/concepts/sharding|shardeados]], queries agregadas simples (ex.: "10 posts mais populares") viram *fan-out*: consultar todos os shards, trazer resultados à memória e agregar — latência alta mesmo para query conceitualmente trivial. A solução recomendada é armazenar o resultado agregado em cache com TTL (minutos a horas, dependendo da regra de negócio), evitando repetir o fan-out a cada requisição. Ver [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]].
 
+## Cache em Aplicações com LLM
+
+Além dos padrões clássicos acima, IA adiciona uma camada de cache específica:
+
+- **Cache de tokens em LLMs** — cada provider implementa de forma diferente (OpenAI, Gemini, Claude), mas o objetivo é o mesmo: não reprocessar/repagar por tokens de contexto repetidos entre chamadas. Ver [[wiki/concepts/kv-cache]].
+- **Cache de contexto e embeddings** — relevante em [[wiki/concepts/rag-arquitetura-avancada|RAG]], para não recalcular embeddings de conteúdo já indexado.
+- **Cache-aware prompts e fingerprints** — usar identificadores do prompt/contexto para decidir se uma resposta pode vir do cache em vez de nova chamada ao modelo.
+
+Não entender bem essa camada de cache impacta latência, mas principalmente **custo**: cada chamada e cada token de LLM tem custo direto — ver [[wiki/concepts/ai-gateway-llm-router]].
+
 ## Key Sources
 
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
@@ -79,3 +89,4 @@ Em bancos [[wiki/concepts/sharding|shardeados]], queries agregadas simples (ex.:
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — em entrevista sênior, "adicionar cache" como escolha de escala é seguido de aprofundamento esperado sobre o tipo (ex.: cache-aside) — não basta citar a peça, é preciso justificar a estratégia
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — cache como solução recomendada para cross-shard operations (fan-out) em bancos shardeados
 - [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] — cache definido pela expectativa de reutilização e explicitamente contrastado com [[wiki/concepts/buffer]] (diferença de velocidade); origem histórica no cache de CPU (IBM System/360, chamado *high speed buffer*)
+- [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — camada específica de IA: cache de tokens por provider, cache de contexto/embeddings em RAG, cache-aware prompts e fingerprints; caching como alavanca de custo, não só de latência

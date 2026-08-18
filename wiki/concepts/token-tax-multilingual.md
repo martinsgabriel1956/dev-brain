@@ -3,8 +3,8 @@ type: concept
 title: "Token Tax Multilingual"
 aliases: ["token tax", "imposto do token", "custo idioma tokens", "multilingual token penalty"]
 date_created: 2026-06-09
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-08-17
+source_count: 3
 tags: [token-economics, tokenizacao, bpe, custo-ia, portugues, llm]
 skill: tech-mentor-ai
 status: stable
@@ -45,6 +45,8 @@ O algoritmo [[byte-pair-encoding]] cria um vocabulário de tokens baseado na fre
 Não é um bug de design intencional — é consequência direta de onde os dados de treinamento estão concentrados. Melhora à medida que os modelos treinam com mais dados multilíngues.
 
 O mesmo efeito ocorre com qualquer padrão pouco frequente no corpus, não só idiomas: a palavra inventada `"frabjous"` (poema *Jabberwocky*, Lewis Carroll) é dividida em 4 tokens separados pelo tokenizer `o200k_base` (GPT-4o) — muito mais que uma palavra comum receberia. Idiomas não-ingleses pagam essa mesma penalidade de forma sistemática porque, em bloco, seus padrões são menos frequentes no corpus de treino. O efeito também penaliza linguagens de programação menos populares (ex. Haskell) frente às mais usadas (ex. JavaScript): menos tokens por linha de código é mais uma vantagem de adoção na era da IA.
+
+Outro experimento didático com o mesmo padrão: [[wiki/sources/tokens-o-que-sao-e-por-que-custam-caro]] compara a palavra inventada "Ubazu" (5 letras, sem correspondência nos dados de treino) com "carro" (5 letras, palavra real e comum em português) — ambas testadas no mesmo tokenizer (Claude Opus). "Ubazu" consumiu 10 tokens contra 8 de "carro", confirmando que o custo em tokens depende da frequência da sequência de caracteres no corpus de treino, não do número de caracteres.
 
 ---
 
@@ -94,3 +96,4 @@ A decisão depende do contexto — não há resposta universalmente certa.
 
 - [[wiki/sources/custo-tokens-portugues-vs-ingles]]
 - [[wiki/sources/tokens-llm-fundamentos-typescript]]
+- [[wiki/sources/tokens-o-que-sao-e-por-que-custam-caro]] — experimento "Ubazu" vs. "carro" e comparação GPT-4o vs. Claude Opus em PT/EN

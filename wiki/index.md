@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-08-13
+date_updated: 2026-08-18
 ---
 
 
@@ -20,6 +20,11 @@ date_updated: 2026-08-13
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/gzip-deflate-huffman-lz77]] | Gzip não é algoritmo de compressão — é comando + formato de arquivo; o algoritmo é deflate (LZ77 com sliding window + triplet offset/length/caractere, depois Huffman coding via priority queue); demo com `xxd` no header |
+| [[wiki/sources/tokens-o-que-sao-e-por-que-custam-caro]] | Vídeo pt-BR (autor não identificado): o que são tokens e por que LLMs precisam deles (elas só operam sobre números); por que subword tokens vencem letra-por-letra e palavra-por-palavra; experimento comparando GPT-4o (22 tokens) vs. Claude Opus 5 (42 tokens) na mesma frase em português; e a explicação autorregressiva de por que o token de output custa estruturalmente mais que o de input em todos os providers |
+| [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] | Vídeo pt-BR (autor não identificado): AWS tem ~200 serviços, mas 90% das aplicações usam os mesmos ~15 — percorre IAM, VPC, EC2, Auto Scaling+ALB, S3, RDS/Aurora, Lambda, DynamoDB, API Gateway, CloudFront, CloudWatch, SQS/SNS/EventBridge e ECS/EKS/ECR em ordem de dependência lógica de pilha, fechando com uma arquitetura de referência ponta a ponta |
+| [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] | Full Cycle: roadmap de 8 frentes de arquitetura de software na era da IA — agentes e protocolos (MCP, A2A), design patterns focados em IA (12 Factor Agents), caching (tokens/embeddings), segurança (jailbreak, prompt injection, guardrails, OWASP Top 10 LLM), prompt/context engineering (com versionamento de prompt via CI/CD), system design/escala/observabilidade (RAG, bancos vetoriais, tracing de LLM), testes/evals, e controle de custos (triângulo performance/custo/qualidade) |
+| [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] | Vídeo pt-BR (autor não identificado): back pressure é o descasamento entre produtor e consumidor mais rápido que o outro consegue processar; primeiro passo é identificar o gargalo real antes de escalar hardware; demo prática de admission control com técnica low/high watermark (BullMQ + Redis) — produtor pausa acima de 100 jobs, retoma abaixo de 30 |
 | [[wiki/sources/tipos-de-armazenamento-de-dados]] | Panorama pt-BR (autor não identificado) dos principais **meios de armazenamento** — HD, SSD (SATA/NVMe), nuvem, NAS, óptico (CD/DVD/Blu-ray), pen drive, cartão de memória, disquete e **fita magnética (LTO)**. Tese: não existe "melhor" absoluto — cada mídia otimiza um eixo (velocidade, custo/GB, durabilidade, portabilidade, isolamento de rede). Por isso empresas bilionárias e a IBM ainda usam **fita** para backup de longo prazo: barata, durável (30+ anos), acesso sequencial e **offline** (segura contra invasão). É o mesmo princípio de [[wiki/concepts/storage-tiering|Hot/Warm/Cold]] no hardware: SSD=hot, HDD=warm, fita=cold (≈ S3 Glacier) |
 | [[wiki/sources/encapsulamento-proteger-estado-invalido]] | Vídeo pt-BR (autor não identificado) respondendo "encapsular protege de quê?": o objetivo real do **encapsulamento** não é esconder atributos, é **impedir que o objeto entre num estado inválido**. Demo em Java com `Product` — primeiro `public` (aceita nome vazio, preço `-500`, estoque `-20`), depois `private` com métodos de comando (`changePrice`, `decreaseStock`) que validam as invariantes e lançam exceção. Tese: `private` é a **ferramenta**, a regra de negócio dentro do objeto é o **fim**; encapsulamento ≠ acesso (getter/setter); uma classe de setters puros é [[wiki/concepts/modelo-de-dominio-anemico|anêmica]] |
 | [[wiki/sources/como-ficar-bom-em-leetcode]] | Método iterativo para ficar bom em **LeetCode** (vídeo pt-BR, foco em Python): escolher uma linguagem de baixo boilerplate → estudar e **implementar** uma estrutura de dados → aprender os padrões dela (DFS/BFS em árvore, two pointer, hash map, sliding window, backtracking, DP) → resolver vários problemas do mesmo padrão até **reconhecê-lo** no enunciado → próxima estrutura. Tese = [[wiki/concepts/reconhecimento-de-padroes|reconhecimento de padrões]] ("memorize o padrão, não o problema"). Corolário: com ~5-10 min sem enxergar o início da solução, não trave — leia a solução e reescreva linha a linha. Big O é pré-requisito não negociável. É o lado prático/mecânico da mesma tese que Anthony Mays defende pelo lado da entrevista |
@@ -67,6 +72,7 @@ date_updated: 2026-08-13
 | [[wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth]] | Percurso do **OpenID original** (2005, identidade via URL + descoberta HTML, descontinuado ~2014) ao **OpenID Connect** (2014, camada de autenticação em JSON sobre o OAuth 2, ID Token em JWT) — contrasta com **SAML** (mesma época, confiança formal corporativa vs. descentralizada sem governança do OpenID, por isso o SAML sobreviveu). Fluxo completo do OIDC; insiste que autenticação deve sempre passar pelo client/navegador, nunca pela API como proxy (antipadrão **ROPC**); fecha explicando por que interceptar o `code` em SPA exige PKCE |
 | [[wiki/sources/pkce-proof-key-code-exchange-spa-mobile]] | PKCE (RFC 7636) resolve o problema do client secret dinâmico em SPA/mobile — `code_verifier` gerado no cliente, hash (`code_challenge`) enviado na autorização, `code_verifier` original revelado só na troca do código por token; substitui o Implicit Flow (deprecated, token na URL) e é obrigatório no OAuth 2.1 para todos os clients |
 | [[wiki/sources/rfc-7636-pkce-oauth-public-clients]] | Texto normativo completo do RFC 7636 (IETF, 2015), traduzido PT-BR — ABNF exata do `code_verifier` (43-128 chars), `S256` como MTI vs. `plain` desaconselhado, razão para não usar salting no `code_challenge`, e regras de retrocompatibilidade servidor/cliente |
+| [[wiki/sources/refresh-token-pattern-access-token-de-curta-duracao]] | Bernardo Lobato: por que Access Token JWT de longa duração (ex.: 1 ano) é falha de segurança — padrão access token curto (stateless) + refresh token longo (stateful, cookie `HttpOnly`, revogável) trocados via endpoint dedicado no `401`; refresh token rotation com reuse detection, fingerprinting de dispositivo e o trade-off de "janela de exposição" |
 | [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] | Aula didática que constrói incrementalmente o percurso clássico de microsserviços: deadlock por banco compartilhado → banco por serviço → quebra de atomicidade → two-phase commit → gargalo de coordenação → Saga Pattern via fila (RabbitMQ)/event-driven → CQRS com read/write split e trade-off de replication lag |
 | [[wiki/sources/clean-architecture-arquitetura-centrada-no-dominio]] | Vídeo (inglês, traduzido) comparando 3-tier vs. Clean Architecture via app de lembretes — explica por que Clean Architecture é "domain-centric": lógica de negócio dividida em Application (use cases) + Domain (entidades/regras), banco na infrastructure layer, Dependency Rule via interfaces definidas por dentro e implementadas por fora |
 | [[wiki/sources/arquitetura-limpa-na-pratica]] | Livro completo (Otávio Lemos, 2022) ensinando Clean Architecture via estudo de caso TypeScript (theWisePad): genealogia DCI/BCE/Hexagonal, Regra de Dependência, Either monad para erros, Value Objects auto-validados, crítica a ORM/Active Record, e casos reais de adoção (Netflix, Uber, iFood) |
@@ -289,6 +295,7 @@ date_updated: 2026-08-13
 | [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] | Aula de concurso público: SGBD, SGBDR vs. SGBD NoSQL, visão (view), quatro modelos NoSQL (chave-valor, documento, colunas, grafos), ACID, Teorema CAP com classificação CA/CP/AP por produto, e bloco de questões reais de bancas (CESPE, NC-UFPR, KIAC, IBADE, AOCP) com gabaritos |
 | [[wiki/sources/design-pattern-facade-renato-augusto]] | Renato Augusto: Facade via exemplo de e-commerce (OrderController → OrderFacade) — Controller não deve carregar fluxo/regra de negócio; defesa de que Facade não fere o SRP porque opera num nível de abstração diferente das classes que orquestra |
 | [[wiki/sources/design-pattern-decorator-renato-augusto]] | Renato Augusto: Decorator via pipeline de `ImageProcessor` (básico → marca d'água → resize) — adiciona comportamento por wrapping sem tocar na classe; ensina composição recursiva, ancora no Open/Closed Principle e contrasta com Chain of Responsibility (ordem não obrigatória) |
+| [[wiki/sources/design-pattern-facade-codigo-fonte-tv]] | Código Fonte TV: Facade via exemplo de remoção de conta sob LGPD (Avatar, Documentos, Histórico de Acesso) — Facade não bloqueia acesso direto ao subsistema, variação com método estático, tensão entre acoplamento e DI completa, e posição própria de que a implementação fere o SRP (diverge de Renato Augusto) |
 | [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] | Cinco níveis de arquitetura frontend (camadas → modular → vertical slice → microfrontend baseado em rotas → microfrontends parciais distribuídos); demo prática Shell + React/Angular/Solid.js via Custom Events expõe o custo real de microfrontends parciais (performance, CI/CD fragmentado, versionamento, governança); tese central: a maioria das decisões saudáveis fica entre monolito modular e microfrontend baseado em rotas, não nos extremos |
 | [[wiki/sources/microsservicos-martin-fowler-james-lewis]] | James Lewis e Martin Fowler (25 mar 2014): artigo original que cunhou a definição de microsserviços — nove características comuns, "smart endpoints and dumb pipes" contra ESBs, Lei de Conway como razão para decompor por capacidade de negócio, Polyglot Persistence, Design for Failure (Simian Army, Circuit Breaker); os próprios autores recusam declarar microsserviços "o futuro" sem ressalvas |
 | [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]] | Linha do tempo da criptografia — cítala espartana e cifra de César (criatividade, não matemática) → Vigenère (polialfabética, "indecifrável" por 300 anos) → Enigma (quebrada por reuso de chave) → AES/RSA modernos (key distribution problem resolvido por par público/privado) → IND-CPA como modelo formal (César falha, preserva padrão de repetição) → ameaça quântica (Shor quebra RSA, Grover só acelera busca) → password hashing (salt, pepper, BCrypt EKS-Blowfish limitado a 72 chars, Argon2id em três fases) |
@@ -322,6 +329,12 @@ date_updated: 2026-08-13
 | [[wiki/sources/harness-explicado-function-calling-hag-evals]] | Resposta a um vídeo anterior sobre harness: relato pessoal de um sistema RAG/HAG corporativo (chunking → vector DB → busca KNN/BM25 → prompt restrito a documentos → avaliação de fidelidade por outra IA) construído antes do termo "harness" existir; demo ao vivo de harness mínima em ~1 arquivo Python com a API da OpenAI (system prompt + 1 tool de bash + loop while true); workaround histórico via tags XML antes do function calling nativo existir em todo provider; tríade código determinístico + prompts + avaliação sistemática (LLM-as-judge + custo em tokens) como componentes obrigatórios de um sistema de IA bem construído |
 | [[wiki/sources/crise-vagas-tech-juros-altos-nao-e-so-culpa-da-ia]] | Por que a vaga do júnior sumiu não é (só) culpa da IA: Selic em ~14,25%–15% desde 2024 torna crescimento via capital emprestado inviável para a maioria das empresas (EBITDA não bate o custo do dinheiro), tornando "não contratar" um cálculo de planilha; caso Tilibra (vender 30% da empresa é mais barato que se endividar), queda de 6,2% no crédito concedido em um mês, 8,9M CNPJs negativados; vaga júnior é "aposta no amanhã" — primeira cortada, última a voltar; recomenda não largar o emprego para estudar e acompanhar notícias de economia, não só de IA |
 | [[wiki/sources/papinho-tech-solo-q-and-a-carreira]] | Q&A de carreira respondendo comentários: matemática é pré-requisito real da graduação em computação (área exata, Cálculo/Estatística na grade); EAD é acesso espetacular mas depende de autodisciplina; comunidades por afinidade técnica geram networking e devem ser retribuídas; não deixe um professor/colega ruim derrubar sua decisão de carreira; QA converge para arquiteto de soluções; formação em T + IA como multiplicador; "a régua sobe", saudosismo anti-vibe-coding é ignorar o mercado |
+| [[wiki/sources/como-nunca-mais-esquecer-o-que-voce-estuda-programacao]] | Renato Augusto ("Mapa do Arquiteto"): esquecer o que se estuda é homeostase sináptica — o cérebro poda conexões no sono e só mantém o que tem repetição, emoção, utilidade, contexto, resolução de problema ou sobrevivência; a causa raiz é estudar tecnologia como se estuda para prova escolar; correção em três pilares — sempre definir uma necessidade antes de estudar, manter um único "projeto impossível" maior que a capacidade atual como laboratório vitalício, e investir 80% do tempo em fundamentos |
+| [[wiki/sources/cqrs-dicionario-programador-codigo-fonte-tv]] | Código Fonte TV, "Dicionário do Programador": CQRS do zero — progressão de cenários de motivação (single-user → LAN multi-atendente → SaaS multi-tenant com 100k+ usuários), diagrama write→sync→read, quatro estratégias de sincronização (automática, eventual, controlada, sob demanda) e quatro aspectos de implementação (task-based UI, command bus sem retorno de dados, consistência de sincronização, domain events); fecha citando José Carlos Macoratti sobre Event Sourcing |
+| [[wiki/sources/cqrs-e-event-sourcing-explicado-na-pratica]] | Vídeo pt-BR (autor não identificado): CQRS derivado de CQS em nível de função (`get`/`set`) até write/read model em nível de sistema; o "verdadeiro ganho" é fragmentar fisicamente o banco por natureza de carga (colunar/relacional/NoSQL); **impedance mismatch** (JSON de "criar ordem" → 4 linhas em 4 tabelas) como motivação central para Event Sourcing; conecta ao write-ahead log de bancos relacionais; ledger bancário para explicar imutabilidade (correção via transação inversa, nunca UPDATE); tese de fechamento — adotar isso é decisão de **domínio** (auditabilidade), não técnica. Patrocínio Abacus (DeepAgent vs. ChatGPT gerando MVP) |
+| [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]] | Full Cycle (Wesley Williams): CQRS motivado por exemplo de agregado DDD (ordem de serviço → pedido → cliente → indicação); atribui a criação do CQRS a Greg Young; Event Sourcing via analogia de saldo bancário e o banco imutável Datomic (Nubank); introduz **Command Sourcing** (Greg Young) — armazenar comandos, não só eventos, para simular decisões sob outro contexto de negócio; erro comum de reaproveitar models entre comando e leitura (viola SRP) |
+| [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] | Erick Wendel: a posição de Dev Júnior não foi eliminada pela IA, foi remodelada — a ordem de aquisição de fundamentos se inverteu (alto nível/produto primeiro, fundamentos sob demanda depois, em vez do bottom-up tradicional); gerar código com IA ≠ saber construir software, julgamento continua vindo de experiência; levantamento informal no LinkedIn mostra vagas júnior brasileiras ainda cobrando fundamentos clássicos, enquanto vagas americanas já esperam fluência com IA — defasagem que o autor espera ver chegar ao Brasil |
+| [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] | Augusto Galego (autoria confirmada por autorreferência na fala) reage a tweet de "Bero": vale mais parecer bom dev (LeetCode + System Design para entrevista) do que ser bom dev de fato? Concorda em parte — GitHub/SaaS pessoal perdeu poder de sinal (IA barateou o artefato), LeetCode caiu de valor prático mas continua filtrando entrevista presencial de Big Tech, System Design subiu como o novo eixo de diferenciação real no trabalho; ponto cego do argumento: quem tem o mesmo teto de capacidade da IA é substituído por ela — o diferencial sustentável é entender como as coisas funcionam (arquitetura, banco de dados, CI/CD, observabilidade, feature flags), não só operar a ferramenta |
 
 ## Concepts
 
@@ -334,6 +347,7 @@ date_updated: 2026-08-13
 | [[wiki/concepts/otp-hotp-totp]] | Código de 6 dígitos a partir de seed + relógio ou contador — RSA SecurID proprietário até HOTP/TOTP padronizado pela IETF |
 | [[wiki/concepts/webauthn-fido2-u2f]] | Criptografia assimétrica em vez de segredo compartilhado — chave privada nunca sai do dispositivo, phishing-resistant por design |
 | [[wiki/concepts/jwt]] | Token stateless com header.payload.signature — Access Token curto + Refresh Token revogável resolve o dilema revogação vs. escala |
+| [[wiki/concepts/refresh-token-rotation]] | Refresh token descartável a cada uso — reapresentar um token já rotacionado é sinal de roubo e dispara revogação de toda a família de tokens |
 | [[wiki/concepts/oauth2]] | Framework de autorização (não autenticação) — delegação de acesso com escopo limitado sem compartilhar senha |
 | [[wiki/concepts/openid-connect]] | Camada de autenticação sobre OAuth 2.0 — ID Token (JWT) verificável via JWKS, base do "Entrar com Google" |
 | [[wiki/concepts/sso-single-sign-on]] | Autenticar uma vez num Identity Provider, todos os sistemas confiam — SAML legado vs. OIDC moderno |
@@ -519,6 +533,7 @@ date_updated: 2026-08-13
 | [[wiki/concepts/bullmq]] | Lib de filas para Node.js/Bun sobre Redis — producer/worker como processos independentes, sem chamada de função direta |
 | [[wiki/concepts/pilha]] | LIFO — último a entrar, primeiro a sair; undo, call stack, DFS |
 | [[wiki/concepts/arvore]] | O(log n) por busca; hierarquia natural; base dos índices de banco de dados |
+| [[wiki/concepts/priority-queue]] | Heap; sempre entrega maior/menor prioridade primeiro, não o mais antigo; base da construção da árvore de Huffman |
 | [[wiki/concepts/crud-resolvido]] | CRUD simples automatizado pela IA; porta de entrada do júnior fechada; sênior em escassez |
 | [[wiki/concepts/harness-de-qualidade]] | Ferramental que força padrões de código bom de forma determinística ao redor da IA |
 | [[wiki/concepts/pipeline-de-qualidade]] | Lint → testes → coverage → mutation → segurança → E2E; passa ou não passa |
@@ -604,6 +619,10 @@ date_updated: 2026-08-13
 | [[wiki/concepts/escolas-de-programacao-com-ia]] | Taxonomia de 5 posições sobre programar com IA (copiloto, delegação total/spec-driven, "na unha", loop); DHH e Antirez migraram de "na unha" para delegação em <12 meses |
 | [[wiki/concepts/ai-gateway-llm-router]] | Proxy self-hosted que expõe API compatível com Anthropic/OpenAI para redirecionar chamadas a qualquer provider real por trás — drop-in replacement via troca de `base_url` |
 | [[wiki/concepts/rotacao-de-contas-free-tier]] | Cadastrar múltiplas contas free tier do mesmo provider e rotacionar entre elas via gateway quando uma esgota a cota — eixo de credencial, não de qualidade de modelo; risco de banimento por detecção de abuso |
+| [[wiki/concepts/agent-to-agent-protocol]] | A2A (Google): protocolo para comunicação entre agentes de frameworks diferentes — complementar ao MCP (agente↔ferramenta), não concorrente |
+| [[wiki/concepts/design-patterns-ia]] | Patterns de integração, de criação de agentes e de segurança específicos de IA; 12 Factor Agents como analogia ao Twelve-Factor App |
+| [[wiki/concepts/rag-arquitetura-avancada]] | RAG em escala não é só "buscar e injetar no contexto": metadado, versionamento de embeddings, invalidação e sincronização são o trabalho real |
+| [[wiki/concepts/llm-evals-testing]] | Testes de prompt/contexto contra dataset+snapshot, gate de regressão em CI/CD para versionamento de prompt — resposta ao comportamento não determinístico do LLM |
 
 ### Dívida Cognitiva & Teoria do Programa
 
@@ -771,7 +790,7 @@ date_updated: 2026-08-13
 | [[wiki/concepts/gramatica-formal-ebnf]] | EBNF define o que é sintaticamente válido; precedência e associatividade resolvem ambiguidade (`1 + 2 * 3`) |
 | [[wiki/concepts/language-server-protocol]] | Protocolo da Microsoft que desacopla editor de linguagem — um servidor, N editores com autocomplete e erros inline |
 | [[wiki/concepts/standard-library-e-ecossistema]] | Stdlib, package manager e tooling — o que faz uma linguagem tecnicamente boa sobreviver de fato |
-| [[wiki/concepts/compactacao-de-texto]] | Huffman coding (código curto para caractere frequente, árvore encolhe com menos variedade de caixa) + LZSS/LZ77 (ponteiro para sequência repetida) = deflate/gzip; por isso maiúsculas custam mais depois de compactar mesmo custando o mesmo antes |
+| [[wiki/concepts/compactacao-de-texto]] | Deflate = LZ77/LZSS (sliding window, triplet offset/length/caractere) + Huffman coding (priority queue, código curto para caractere frequente); gzip é o formato de arquivo que embrulha o deflate, não o algoritmo em si |
 | [[wiki/concepts/linguagem-c]] | C como fundação pedagógica — próxima do hardware mas legível, biblioteca padrão enxuta força construir as próprias estruturas; andaime da hash table de C ao `dict` de Python |
 | [[wiki/concepts/primeiros-principios]] | Decompor até os fatos fundamentais e reconstruir — entender *como* funciona por dentro; habilita design informado e diagnóstico, separa engenheiro de coder |
 
@@ -874,6 +893,10 @@ date_updated: 2026-08-13
 | [[wiki/concepts/maximizar-pontos-fortes]] | Objetivo de programar não é ser bom em programar, é aumentar área de impacto — aproxime a técnica do seu forte real |
 | [[wiki/concepts/projeto-com-adrenalina]] | Escolher o projeto real (pelo interesse genuíno) antes da tecnologia — a stack vem depois, em função do projeto |
 | [[wiki/concepts/projetos-fundamentais-para-aprender-a-programar]] | Snake ensina estado, supermercado ensina modelagem, Pathfinding ensina algoritmos — três projetos, três habilidades ortogonais |
+| [[wiki/concepts/homeostase-sinaptica]] | Esquecer é funcionalidade, não falha — o cérebro poda conexões no sono e só mantém o que tem repetição, emoção, utilidade, contexto, resolução de problema ou sobrevivência |
+| [[wiki/concepts/necessidade-como-gatilho-de-aprendizado]] | "Para que eu quero aprender isso?" antes de abrir qualquer curso — necessidade cria contexto, contexto direciona atenção, atenção consolida memória |
+| [[wiki/concepts/projeto-impossivel]] | Um único projeto deliberadamente maior que sua capacidade atual (recriar YouTube/Netflix/Uber) como laboratório vitalício para todo conceito avançado que você estudar |
+| [[wiki/concepts/alto-nivel-antes-do-fundamento]] | Fundamentos continuam indispensáveis, mas a ordem virou: produto funcional primeiro, aprofundamento sob demanda conforme a dor real aparece |
 
 ### Filosofia do Criador (Objetivismo)
 
@@ -899,6 +922,7 @@ date_updated: 2026-08-13
 | [[wiki/concepts/consistent-hashing]] | Anel virtual de shards — minimiza dados movidos ao adicionar/remover nós, evitando o rebalanceamento total do hash-based sharding simples |
 | [[wiki/concepts/replicacao-de-banco]] | Cópias do banco para leitura — escala reads e aumenta disponibilidade |
 | [[wiki/concepts/gargalo]] | Ponto mais lento da cadeia — identificar antes de escalar qualquer coisa |
+| [[wiki/concepts/admission-control]] | Rejeitar/pausar admissão de novos itens quando o sistema está sobrecarregado — técnica low/high watermark como resposta estrutural a back pressure |
 | [[wiki/concepts/cap-theorem]] | Consistência vs Disponibilidade vs Partição — o trade-off central de sistemas distribuídos |
 | [[wiki/concepts/simulador-de-system-design]] | Playground que roda tráfego simulado sobre o diagrama e pontua o desenho com IA — não é só desenhar, é testar |
 | [[wiki/concepts/niveis-de-senioridade-system-design]] | Júnior soluciona e demonstra fundação, pleno resolve com racional prático, sênior otimiza e lidera a conversa — entrevista cobra o todo em qualquer nível, trabalho real só exige isso a partir de sênior |
@@ -927,6 +951,11 @@ date_updated: 2026-08-13
 | [[wiki/concepts/aws-cloudfront]] | CDN global da AWS — serve conteúdo do POP mais próximo; também usada como camada de HTTPS na frente de um site estático no S3 |
 | [[wiki/concepts/aws-route-53]] | DNS gerenciado da AWS — hosted zone (pública/privada), name servers, registros Alias/CNAME/A para apontar domínio a S3/CloudFront |
 | [[wiki/concepts/certificado-ssl-acm]] | Certificado SSL emitido pelo ACM com validação por CNAME no DNS — prova de posse do domínio; anexado ao CloudFront para habilitar HTTPS |
+| [[wiki/concepts/vpc]] | Rede isolada da AWS — subnets públicas/privadas, Security Groups; fundação de rede configurada logo após o IAM, antes de qualquer computação |
+| [[wiki/concepts/aws-elasticache]] | Redis/Memcached gerenciado — cache sub-milissegundo, posicionado entre a computação e o RDS na arquitetura de referência |
+| [[wiki/concepts/aws-sqs]] | Fila gerenciada — Standard (at-least-once) vs FIFO (exactly-once); desacoplamento simples, entrega para um consumidor por mensagem |
+| [[wiki/concepts/aws-sns]] | Pub/sub gerenciado — entrega para todos os inscritos (fan-out), tipicamente múltiplas filas SQS no mesmo tópico |
+| [[wiki/concepts/aws-cloudwatch]] | Hub de observabilidade nativo — métricas/logs/alarmes automáticos dos serviços AWS, X-Ray para tracing distribuído |
 
 ### Fundamentos de Backend (Request/Response ao Deploy)
 
@@ -1036,6 +1065,8 @@ date_updated: 2026-08-13
 |---|---|
 | [[wiki/concepts/event-sourcing]] | Persistir eventos imutáveis em vez de estado — replay para calcular estado atual; auditoria nativa |
 | [[wiki/concepts/cqrs]] | Separar modelos de escrita e leitura — write emite eventos, read mantém projeções otimizadas |
+| [[wiki/concepts/task-based-ui]] | UI orientada à intenção do usuário (ex.: `CancelarPedido`), não a um CRUD genérico — dá sentido ao lado Command do CQRS |
+| [[wiki/concepts/command-bus]] | Roteia um Command até seu handler; regra central: nunca retorna dados, no máximo um ID |
 | [[wiki/concepts/ddd]] | Domínio no centro, adapters na borda — aggregates, domain events, bounded context |
 | [[wiki/concepts/application-boundary]] | Aplicações são construções sociais — devs, negócio e orçamento enxergam "uma unidade única" de formas diferentes; fronteira real é política, não técnica |
 | [[wiki/concepts/plataforma-digital]] | Definição de Bottcher: fundação self-service de APIs/ferramentas/serviços organizada como **produto interno atraente**; escolhida, não imposta |
@@ -1190,6 +1221,8 @@ date_updated: 2026-08-13
 | [[wiki/concepts/soberania-digital]] | Controle sobre dados/infra dentro de fronteiras jurisdicionais — estendido a controle sobre o próprio modelo de IA quando guardrails de terceiros recusam ajudar numa investigação de incidente |
 | [[wiki/concepts/devsecops]] | Segurança como responsabilidade compartilhada em todo o ciclo de vida do software, não setor isolado no fim do pipeline — cunhado pela Gartner em 2012 a partir do DevOps |
 | [[wiki/concepts/shift-left-testing]] | Mover testes de segurança para o início do ciclo (planejamento, código) em vez de só no fim — secret scanning, SCA, SAST, IAST cobrindo cada fase |
+| [[wiki/concepts/prompt-injection-jailbreak]] | Jailbreak muda tom/comportamento; prompt injection extrai dados sensíveis e executa operações destrutivas — mais grave e distinto do jailbreak |
+| [[wiki/concepts/ai-safety-guardrails]] | Camadas de defesa em profundidade para LLM: input filters → output filters → containment, validando antes/depois de cada chamada a agente ou tool |
 
 ### Frontend & Design Engineering
 
@@ -1283,6 +1316,7 @@ date_updated: 2026-08-13
 | [[wiki/concepts/pattern-recognition]] | Capacidade humana de detectar repetições — base do aprendizado por exposição |
 | [[wiki/concepts/design-patterns]] | Catálogo de soluções nomeadas — útil só depois de já ter visto os padrões na prática |
 | [[wiki/concepts/observer-pattern]] | Dependência um-para-muitos com notificação automática — terceiro estágio de desacoplamento, componentes que não se conhecem nem estaticamente |
+| [[wiki/concepts/facade-pattern]] | Interface simplificada sobre subsistema complexo — risco de virar God Object, debate aberto sobre se fere o SRP |
 | [[wiki/concepts/factory-pattern]] | Centraliza a criação de objetos — segundo estágio de desacoplamento, isola implementação mas mantém chamada estática explícita |
 | [[wiki/concepts/abstract-factory]] | Cria famílias de objetos relacionados, não só um tipo — variante do Factory Method |
 | [[wiki/concepts/dependency-injection]] | Dependência recebida de fora em vez de criada internamente — torna acoplamento flexível/testável sem eliminá-lo |
@@ -1347,7 +1381,7 @@ date_updated: 2026-08-13
 | [[wiki/entities/sakana-ai]] | Empresa japonesa de IA — Fugo, pool de modelos que superou Fable 5 e alguns benchmarks do Mitos preview em cybersegurança |
 | [[wiki/entities/alan-turing]] | Matemático britânico — propôs a máquina de Turing (1936), o modelo teórico que define o que é computável |
 | [[wiki/entities/alok-kanojia]] | Psiquiatra formado em Harvard (canal HealthyGamer/"Dr. K") — fonte primária citada sobre o impacto de jogos no cérebro e problemas de escopo aberto vs. fechado |
-| [[wiki/entities/erick-wendel]] | Criador de conteúdo brasileiro sobre Node.js e testes automatizados — método de 3 pilares para produtividade com testes; possível duplicata não confirmada de [[wiki/entities/eric-lenda]] |
+| [[wiki/entities/erick-wendel]] | Criador de conteúdo brasileiro sobre Node.js, testes automatizados e carreira — método de 3 pilares para produtividade com testes; reflexão sobre o futuro do Dev Júnior na era da IA; possível duplicata não confirmada de [[wiki/entities/eric-lenda]] |
 | [[wiki/entities/grafana-labs]] | Empresa por trás do Grafana/Grafana Cloud e da stack LGTM (Loki, Tempo, Mimir) — assistente de IA embutido no chat web correlaciona telemetria sem consumir créditos do editor do usuário |
 | [[wiki/entities/rinha-de-backend]] | Desafio open source de backend (transações crédito/débito) — usado como exemplo de decomposição de tarefa em casos de teste |
 | [[wiki/entities/ux-pilot]] | Ferramenta de geração de UI/UX por IA (telas completas ou wireframes) que exporta pro Figma, de onde o MCP conecta a uma IA de código |
@@ -1398,7 +1432,7 @@ date_updated: 2026-08-13
 | [[wiki/entities/jason-wei]] | Pesquisador Google Brain — lead author do paper de chain-of-thought prompting e do paper de emergent abilities |
 | [[wiki/entities/fabio-akita]] | Programador brasileiro, autodidata desde 1991, criador do canal Akita On Rails |
 | [[wiki/entities/lucas-badico]] | Programador e professor brasileiro, criador de conteúdo sobre Golang e carreira; defende a ponte fullstack como caminho de entrada ao backend |
-| [[wiki/entities/codigo-fonte-tv]] | Canal brasileiro de YouTube com pesquisa salarial própria (pesquisa.codefonte.com.br) e série de design patterns em TypeScript/Deno; cruza dados com pesquisas oficiais de fabricantes de linguagem |
+| [[wiki/entities/codigo-fonte-tv]] | Canal brasileiro de YouTube com pesquisa salarial própria (pesquisa.codefonte.com.br), série de design patterns em TypeScript/Deno e série "Dicionário do Programador" (ex.: CQRS); cruza dados com pesquisas oficiais de fabricantes de linguagem |
 | [[wiki/entities/john-romero]] | Co-criador de Doom — "programação é criatividade baseada em lógica" |
 | [[wiki/entities/edsger-dijkstra]] | Cientista da computação holandês — programação formal, crítica à linguagem natural em código |
 | [[wiki/entities/eric-lenda]] | Criador de conteúdo brasileiro — JavaScript/Node.js avançado |
@@ -1480,6 +1514,8 @@ date_updated: 2026-08-13
 | [[wiki/entities/veracode]] | Empresa de AppSec — relatório 2025 testando 100+ modelos corrobora o mesmo múltiplo (~2,77x) de falhas de segurança do CodeRabbit |
 | [[wiki/entities/black-duck]] | Empresa de segurança open source — relatório sobre 947 codebases: +107% de vulnerabilidades/codebase em um ano, só 24% das empresas avaliam código de IA por completo |
 | [[wiki/entities/julio-de-lima]] | Referência brasileira de QA/testes — recomendado no Papinho Tech como o melhor ponto de entrada para conhecer a área de qualidade de software |
+| [[wiki/entities/greg-young]] | Criador do CQRS (a partir de CQS); autor da ideia de Command Sourcing |
+| [[wiki/entities/bero]] | Autor de tweet reagido por Augusto Galego (LeetCode/System Design vs. ser bom dev de fato) — identidade não confirmada, possível confusão fonética com [[wiki/entities/boris]] |
 
 ### Documentação de Arquitetura
 
@@ -1514,4 +1550,6 @@ date_updated: 2026-08-13
 
 ## Questions
 
-_(vazio)_
+| Página | Hook |
+|---|---|
+| [[wiki/questions/facade-fere-srp-video-comparison]] | Renato Augusto defende que Facade não fere SRP (motivo único de mudança); Código Fonte TV discorda (orquestração pura já é responsabilidade demais) — sem resolução, ambas são opinião de autor sem citação de fonte primária |

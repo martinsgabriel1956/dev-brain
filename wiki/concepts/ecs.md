@@ -3,8 +3,8 @@ type: concept
 title: "Amazon ECS"
 aliases: ["ECS", "Elastic Container Service"]
 date_created: 2026-08-04
-date_updated: 2026-08-04
-source_count: 1
+date_updated: 2026-08-17
+source_count: 2
 tags: ["aws", "ecs", "containers", "orquestracao", "docker", "infra", "cloud"]
 skill: tech-mentor-infra
 status: stub
@@ -31,6 +31,11 @@ Uma única EC2 em produção é um single point of failure. O ECS resolve isso p
 - [[wiki/concepts/load-balancer]] — tipicamente distribui tráfego entre as tasks/instâncias do cluster ECS
 - [[wiki/concepts/escalabilidade-horizontal]]
 
+## Task Definitions, Services, ECR e ECS vs. EKS
+
+Você define **task definitions** (imagem, CPU, memória); **services** mantêm N tasks rodando e integram com [[wiki/concepts/load-balancer|load balancer]]. Dois launch types: **EC2** (você gerencia a instância) e **[[wiki/concepts/aws-fargate|Fargate]]** (serverless, mais simples; EC2 faz sentido quando precisa de GPU ou controle mais fino). **ECR** (Elastic Container Registry) armazena as imagens Docker — privado, integrado com IAM, com scan de vulnerabilidades. Diferença para **EKS**: ECS é mais simples e nativamente integrado à AWS; EKS é Kubernetes gerenciado, mais portátil mas muito mais complexo. Ver [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]].
+
 ## Key Sources
 
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]
+- [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — task definitions, services, ECR, e a comparação direta ECS vs. EKS (simplicidade/integração nativa vs. portabilidade/complexidade)

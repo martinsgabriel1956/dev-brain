@@ -3,8 +3,8 @@ type: concept
 title: "Gargalo"
 aliases: ["bottleneck", "gargalo de sistema", "ponto de contenção"]
 date_created: 2026-06-26
-date_updated: 2026-07-24
-source_count: 3
+date_updated: 2026-08-14
+source_count: 4
 tags: [system-design, performance, escalabilidade, debugging, monitoramento]
 skill: tech-mentor-system-design
 status: draft
@@ -70,3 +70,4 @@ Na maioria dos sistemas web, a camada de aplicação escala facilmente (é [[sta
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
 - [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — CPU profile/flame graph como técnica prática de "gargalo de código": tirar uma foto da CPU para achar a função que mais consome tempo de execução; caso real onde isso revelou um pacote compartilhado travando o event loop, corrigido com ~50% de ganho de velocidade
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — num simulador interativo, aumentar tráfego expõe o SQL database em vermelho (bottleneck flag, disponibilidade caindo a 55%); a sequência de correção segue exatamente a regra de ouro desta página — cache primeiro, réplicas depois — e mostra o gargalo se deslocando do banco para o app server assim que o banco deixa de ser o elo mais fraco
+- [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — exemplo de [[wiki/concepts/back-pressure]] em que o consumidor parece lento, mas o gargalo real está no banco de dados; escalar o consumidor sem identificar isso não resolve nada

@@ -3,8 +3,8 @@ type: concept
 title: "Open/Closed Principle (OCP)"
 aliases: ["OCP", "open closed principle", "aberto fechado", "open-closed"]
 date_created: 2026-05-01
-date_updated: 2026-08-06
-source_count: 4
+date_updated: 2026-08-18
+source_count: 5
 tags: [solid, oop, architecture, design-patterns]
 skill: tech-mentor-backend
 status: stable
@@ -50,6 +50,10 @@ OCP não é absoluto. Aplique nas **dimensões de variação real** do sistema, 
 
 Via [[wiki/sources/principios-solid-ilustrados]]: um `processarPagamento` que valida e cobra cartão de crédito também funciona para débito (campos parecidos). Ao chegar boleto (campos diferentes, sem antifraude convencional), a saída errada é abrir a classe base e adicionar um `if` — cada novo método de pagamento voltaria a exigir mexer nela. A correção é a classe base não conhecer os campos específicos de cada produto: ela só recebe um objeto de pagamento e pede para ele se validar e se cobrar, via interface comum. O mesmo raciocínio se aplica a um ORM: os métodos genéricos (salvar, atualizar, deletar) não mudam ao adicionar suporte a um novo banco.
 
+## Exemplo negativo — Facade que depende de implementações concretas
+
+[[wiki/sources/design-pattern-facade-codigo-fonte-tv]] mostra o lado inverso do OCP funcionando: um `ClientFacade` que depende de classes concretas de serviço (`AvatarService`, `DocumentService`) em vez de interfaces quebra OCP porque adicionar um novo canal (ex.: enviar SMS além de e-mail) exige abrir e modificar o método existente — cada novo requisito é mais uma linha inserida direto no fluxo, em vez de uma extensão isolada.
+
 ## Definição Formal (Fonte Primária)
 
 Via [[wiki/sources/solid-principles-in-pictures-ugonna-thelma]]: "classes devem estar abertas para extensão, mas fechadas para modificação" — modificar o comportamento de uma classe já existente impacta todo sistema que depende dela; estender com métodos novos evita quebrar quem já a usa.
@@ -62,3 +66,4 @@ Via [[wiki/sources/solid-principles-in-pictures-ugonna-thelma]]: "classes devem 
 - [[wiki/sources/principios-solid-ilustrados]]
 - [[wiki/sources/solid-principles-in-pictures-ugonna-thelma]]
 - [[wiki/sources/design-pattern-decorator-renato-augusto]] — OCP como justificativa direta do [[wiki/concepts/decorator-pattern|Decorator]]: estender por wrapping em vez de modificar a classe em produção
+- [[wiki/sources/design-pattern-facade-codigo-fonte-tv]] — exemplo negativo: Facade acoplada a implementações concretas quebra OCP ao adicionar um canal novo (SMS)

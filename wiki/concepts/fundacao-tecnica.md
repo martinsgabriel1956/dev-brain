@@ -3,8 +3,8 @@ type: concept
 title: "Fundação Técnica"
 aliases: ["fundamentos", "base técnica", "foundations"]
 date_created: 2026-05-16
-date_updated: 2026-08-13
-source_count: 7
+date_updated: 2026-08-17
+source_count: 9
 tags: [aprendizado, carreira, fundamentos]
 skill: tech-mentor-leadership
 status: stable
@@ -55,12 +55,22 @@ Pular do estágio 1 para o 3 é a causa mais comum de [[over-engineering]]: apli
 
 Isso não se aplica a quem nunca construiu a fundação — um dev que aprendeu a programar já com IA do lado nos últimos ~18 meses não tem o que "lembrar": o medo de dependência, nesse caso, é justificado e distinto do pânico de atrofia de quem já tem anos de prática.
 
+## A Ordem de Aquisição Pode Ser Invertida (Tensão em Aberto)
+
+[[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] concorda que a fundação é indispensável, mas argumenta que a *ordem* de aquisição não é fixa: currículos tradicionais vão de baixo para cima (algoritmos → produto), mas cada vez mais gente aprende de cima para baixo (produto funcional primeiro, fundamentos "puxados" pela dor conforme aparecem — performance, modelagem, arquitetura, segurança). Isso está em tensão parcial, não resolvida, com a leitura bottom-up de [[wiki/entities/david-malan]] (CS50) já registrada acima. Ver detalhamento em [[wiki/concepts/alto-nivel-antes-do-fundamento]].
+
+## System Design Subiu, LeetCode Caiu — Onde a Fundação Se Traduz Hoje
+
+[[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] contribui um dado de primeira pessoa sobre onde a fundação hoje se paga no dia a dia de trabalho (distinto de entrevista): "LeetCode caiu, System Design subiu" — inversão explícita do que o próprio autor defendia dois anos antes. A fundação se traduz concretamente em System Design, modelagem de banco de dados, tradução de requisitos nebulosos em specs cristalinas, CI/CD com testes que cobrem casos reais, observabilidade e capacidade interdisciplinar de produto — não em algoritmos de entrevista nem em sintaxe de baixo nível (ver [[wiki/concepts/sintaxe-vs-conhecimento-perene]]).
+
 ## Key Sources
 
-- [[wiki/sources/akita-como-aprender-programacao]] — metáfora do puxadinho; hype vs. fundação; Akita aprendendo Elixir e Crystal em semanas graças à experiência acumulada
+- [[wiki/sources/akita-como-aprender-programacao]]
+- [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — "LeetCode caiu, System Design subiu": onde a fundação se paga no trabalho real, distinto de onde ela se paga na entrevista — metáfora do puxadinho; hype vs. fundação; Akita aprendendo Elixir e Crystal em semanas graças à experiência acumulada
 - [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]] — progressão de 3 estágios; OOP modeling como pré-requisito; otimização prematura
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]] — raciocínio matemático como componente da fundação que não envelhece entre ciclos de mercado
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]] — engenheiro coleciona modelos mentais, não ferramentas; divide a fundação em eixo vertical (DSA, arquitetura, domínio, SO/redes, banco de dados) e horizontal (comunicação, produto, complexidade, produção)
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]] — fundação sólida torna o esquecimento de sintaxe reversível; sem fundação, não há o que recuperar
 - [[wiki/sources/papinho-tech-solo-q-and-a-carreira]] — o mesmo eixo vertical/horizontal descrito como [[wiki/concepts/profissional-t-shaped|formação em T]]; matemática (Cálculo/Estatística) como componente da grade de computação
 - [[wiki/sources/por-que-comecar-com-c-em-2026-cs50-david-malan]] — David Malan: construir as próprias estruturas de dados em C para entender "de baixo para cima" o que acontece dentro do dispositivo; base que serve de andaime para linguagens de alto nível
+- [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — tese de que a ordem de aquisição pode ser invertida (alto nível primeiro, fundamentos sob demanda) sem tornar a fundação dispensável

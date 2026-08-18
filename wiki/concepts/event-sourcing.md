@@ -3,8 +3,8 @@ type: concept
 title: "Event Sourcing"
 aliases: ["event store", "append-only log", "eventsourcing"]
 date_created: 2026-05-31
-date_updated: 2026-08-03
-source_count: 2
+date_updated: 2026-08-17
+source_count: 5
 tags: [event-sourcing, arquitetura, cqrs, ddd, imutabilidade, fintech]
 skill: tech-mentor-backend
 status: stable
@@ -88,7 +88,26 @@ O [[nubank]] usa Event Sourcing + [[datomic]] como fundação. O Datomic é esse
 
 Adotar Event Sourcing como TO-BE de uma migração de arquitetura segue o mesmo ciclo de qualquer outra mudança arquitetural significativa — AS-IS entendido, POC validada na escala real, coexistência com o modelo anterior. Ver [[wiki/concepts/ciclo-de-mudanca-de-arquitetura]].
 
+## Impedance Mismatch: a Motivação Concreta
+
+[[wiki/sources/cqrs-e-event-sourcing-explicado-na-pratica]] nomeia e detalha a motivação central para persistir eventos em vez de estado: o **impedance mismatch**. Um evento de domínio (ex.: "criar ordem", com lista de produtos, quantidades, preços e ID do consumidor) cabe naturalmente em um único objeto/JSON — mas ao ser persistido em modelo relacional normalizado, se fragmenta em múltiplas linhas de múltiplas tabelas (ex.: uma linha em `users`, duas em `product`, duas em `order_line_items`, uma em `order`). O evento, ao contrário, preserva a forma original da intenção do usuário e pode ser reconstruído em N estruturas relacionais diferentes a partir do mesmo payload.
+
+## Write-Ahead Log: Bancos Relacionais Já Fazem Event Sourcing Internamente
+
+A mesma fonte conecta Event Sourcing ao **write-ahead log (WAL)** de bancos relacionais tradicionais: ao submeter uma transação, o banco (ex.: Postgres) não persiste imediatamente no estado final — primeiro grava a sequência de ações num log (semelhante a um append-only log), e só depois reflete isso no estado presente. Ou seja, o mecanismo interno de um banco relacional convencional já é, estruturalmente, uma forma de Event Sourcing.
+
+## Definição Curta (Macoratti, via Código Fonte TV)
+
+[[wiki/sources/cqrs-dicionario-programador-codigo-fonte-tv]] cita José Carlos Macoratti para uma formulação enxuta da ideia central: garantir que toda alteração de estado de uma aplicação seja capturada em um objeto de evento, e que esses eventos sejam armazenados na sequência em que foram aplicados, pelo mesmo tempo de vida útil do estado da aplicação. Consistente com a definição já registrada acima — sem contradição, apenas outra formulação da mesma regra de append-only + replay.
+
+## Command Sourcing: Armazenar os Comandos, Não Só os Eventos
+
+[[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]] descreve uma ideia atribuída a [[wiki/entities/greg-young|Greg Young]], **Command Sourcing**, citada como raramente aplicada na prática: além de armazenar os eventos (o que aconteceu), armazenar também os comandos originais (a intenção que gerou o evento). Como o mesmo comando pode produzir resultados diferentes dependendo do contexto de negócio no momento da execução (ex.: taxa de juros alta vs. baixa), ter os comandos preservados permite reexecutá-los sob outro contexto e simular decisões de negócio alternativas — algo que eventos sozinhos (que já capturam o resultado, não a intenção) não permitem.
+
 ## Key Sources
 
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
 - [[wiki/sources/ciclo-de-mudanca-de-arquitetura]] — citado como exemplo de decisão de TO-BE que exige o ciclo AS-IS/POC/migração
+- [[wiki/sources/cqrs-dicionario-programador-codigo-fonte-tv]] — definição curta citando José Carlos Macoratti
+- [[wiki/sources/cqrs-e-event-sourcing-explicado-na-pratica]] — impedance mismatch como motivação concreta; conexão com write-ahead log de bancos relacionais; tese de que adotar Event Sourcing é decisão de domínio, não técnica
+- [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]] — exemplo do Datomic/Nubank como banco imutável; conceito de Command Sourcing (Greg Young)

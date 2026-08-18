@@ -3,8 +3,8 @@ type: concept
 title: "XSS (Cross-Site Scripting)"
 aliases: ["xss", "cross-site scripting", "injeção javascript", "script injection"]
 date_created: 2026-06-10
-date_updated: 2026-08-03
-source_count: 3
+date_updated: 2026-08-14
+source_count: 4
 tags: [security, xss, owasp, appsec, input-sanitization, attack-surface]
 skill: tech-mentor-security
 status: stub
@@ -58,3 +58,4 @@ Se um token de autenticação (sessão ou [[wiki/concepts/jwt|JWT]]) está guard
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — teste manual de injeção de script como parte de checklist de autopentest assistido por IA
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — roubo de token via localStorage vs. proteção de cookie HttpOnly; CSP como camada de defesa
 - [[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] — citado, junto de [[sql-injection]], como padrão inseguro comum em projetos públicos usados como dado de treinamento de LLMs de código
+- [[wiki/sources/refresh-token-pattern-access-token-de-curta-duracao]] — motivo central de excluir `localStorage` como opção de armazenamento do refresh token

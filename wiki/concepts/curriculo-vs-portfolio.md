@@ -3,8 +3,8 @@ type: concept
 title: "Currículo vs Portfólio"
 aliases: ["currículo vs portfólio", "promise vs proof", "promessa vs prova"]
 date_created: 2026-04-23
-date_updated: 2026-07-15
-source_count: 3
+date_updated: 2026-08-17
+source_count: 5
 tags: [carreira, contratação, portfólio, evidência]
 skill: tech-mentor-leadership
 status: stable
@@ -52,9 +52,15 @@ Em revisão real de currículos de candidatos júnior, a ausência de link para 
 - [[wiki/concepts/ponte-fullstack-para-especializacao]] — quando não há experiência formal na stack-alvo, o portfólio (e o discurso "entrego o que um pleno entrega") substitui o currículo como prova
 - [[wiki/concepts/otimizacao-ats-curriculo]] — a barreira automática que vem antes da avaliação humana da promessa vs prova
 
+## Tensão: o Portfólio Ainda É Prova, se Qualquer Um Gera um SaaS com IA?
+
+[[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] argumenta que a IA degradou o poder de sinal do artefato que este conceito trata como "prova": em 2019, um bom GitHub ou um SaaS funcional era forte evidência de competência real, porque exigia esforço substancial para existir. Hoje, gerar um SaaS funcional com 100 usuários não exige mais tanta competência técnica — e um recrutador não consegue avaliar as nuances reais do sistema por trás. **Isto não é uma contradição direta** com a tabela "promessa vs. prova" desta página: o portfólio continua sendo mais evidência que um currículo, mas o *limiar* do que conta como prova subiu — mostrar que o produto funciona já não basta; o diferencial passa a ser demonstrar competência que a IA não gera de forma trivial (arquitetura sob carga, segurança, decisões de trade-off documentadas). Tensão registrada, não resolvida: nenhuma das duas fontes propõe um critério objetivo e atualizado do que hoje conta como prova suficiente.
+
 ## Key Sources
 
 - [[sources/tres-caracteristicas-melhor-candidato]]
+- [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — tensão: poder de sinal do portfólio/GitHub caiu porque a IA barateou a produção do artefato que antes provava competência
 - [[wiki/sources/diferenciais-portfolio-backend-junior]]
 - [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]
 - [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]] — reação a currículos reais: ausência de link de GitHub como motivo de descarte explícito, independente de boa formatação
+- [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — projeto pessoal alinhado aos requisitos reais de uma vaga como forma de gerar "o que falar" em entrevista, mesmo sem experiência profissional prévia

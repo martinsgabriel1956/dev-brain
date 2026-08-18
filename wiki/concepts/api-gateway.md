@@ -3,8 +3,8 @@ type: concept
 title: "API Gateway"
 aliases: ["api gateway", "gateway de api", "ponto único de entrada de api"]
 date_created: 2026-07-23
-date_updated: 2026-08-05
-source_count: 5
+date_updated: 2026-08-17
+source_count: 6
 tags: [api-gateway, arquitetura-distribuida, gatekeeper, roteamento, edge-functions, single-point-of-failure]
 skill: tech-mentor-backend
 status: stable
@@ -72,6 +72,10 @@ Em ambientes multi-região, mitiga-se com latency-based routing e health checks 
 
 Complementares, não substitutos — ver [[wiki/concepts/service-mesh]].
 
+## AWS API Gateway — REST vs. HTTP API
+
+Duas opções na AWS: **REST API** (mais features) e **HTTP API** (mais simples, mais barato). Recomendação prática: comece com HTTP API, migre pra REST só se precisar de uma feature específica que falte. Integração mais comum é com [[wiki/concepts/aws-lambda|Lambda]], mas o gateway também pode fazer proxy direto para EC2, ECS, ou escrever direto no [[wiki/concepts/dynamodb|DynamoDB]] sem Lambda no meio. Autorização: IAM (chamada service-to-service), Cognito (validação de JWT), Lambda Authorizer (lógica customizada). Throttling protege o backend de sobrecarga; domínios customizados usam certificado via [[wiki/concepts/certificado-ssl-acm|ACM]]. Ver [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]].
+
 ## Padrões Relacionados
 
 - **API Composition** — orquestração e agregação de múltiplos endpoints em um único resultado. Ver [[wiki/concepts/api-composition]].
@@ -85,3 +89,4 @@ Complementares, não substitutos — ver [[wiki/concepts/service-mesh]].
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — API Gateway aparece como conhecimento esperado a partir do nível pleno, junto de workers e load balancer
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]] — no ecossistema AWS, é a forma mais comum de encaminhar requests até [[wiki/concepts/aws-lambda]]; comparado explicitamente ao [[wiki/concepts/load-balancer]] (mecanismo parecido, intuito diferente — não é balancear carga, é rotear por endpoint)
 - [[wiki/sources/infraestrutura-como-codigo-cdk-aws]] — usado como componente central de uma stack de exemplo descrita em [[wiki/concepts/infraestrutura-como-codigo|IaC]] (`/user`, `/products` roteando para Lambdas distintos, sem que o backend tenha acesso direto à internet)
+- [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — REST API vs. HTTP API, integração com Lambda/EC2/ECS/DynamoDB, e as três formas de autorização (IAM, Cognito, Lambda Authorizer)

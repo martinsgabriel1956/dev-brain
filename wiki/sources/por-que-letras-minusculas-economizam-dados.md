@@ -43,6 +43,7 @@ Transcrição de vídeo (Lucas Montano) reagindo a um artigo sobre por que troca
 - O vídeo não identifica o nome nem a URL do artigo original em inglês sobre o qual reage — não foi possível registrar `source_url` nem autoria original com confiança. Se uma fonte futura citar o artigo por nome, atualizar este campo.
 - A skill `cs-fundamentals` foi atribuída por analogia de domínio (compressão/algoritmos), já que o caminho de skills `/home/nemomartins/Documentos/new/skills/` não existe neste ambiente — mesmo padrão de limitação já registrado em outras fontes (ver [[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]]). Candidato a `lint the wiki` (skill drift) se a skill se tornar acessível.
 - A wiki ainda não tinha nenhuma página sobre Huffman coding, deflate ou LZ77/LZSS antes desta ingestão — [[wiki/concepts/compactacao-de-texto]] é o primeiro registro desses algoritmos na wiki. Se uma fonte futura aprofundar entropia de Shannon, aritmética coding, ou Brotli/Zstandard, considerar expandir essa página em vez de criar fragmentos novos.
+- **Atualização (2026-08-18):** [[wiki/sources/gzip-deflate-huffman-lz77]] aprofunda exatamente os dois algoritmos citados aqui — detalha a mecânica de sliding window do LZ77 (search buffer + look-ahead buffer), o triplet (offset, length, caractere), e a construção da árvore de Huffman via priority queue passo a passo. Sem contradições, apenas mais profundidade.
 
 ## Raw Quotes
 

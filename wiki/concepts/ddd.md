@@ -3,8 +3,8 @@ type: concept
 title: "DDD — Domain-Driven Design"
 aliases: ["domain-driven design", "ddd", "domínio"]
 date_created: 2026-05-31
-date_updated: 2026-08-13
-source_count: 8
+date_updated: 2026-08-17
+source_count: 10
 tags: [ddd, arquitetura, bounded-context, aggregate, domain-events, hexagonal]
 skill: tech-mentor-backend
 status: draft
@@ -45,6 +45,8 @@ O domínio fica no centro, protegido de detalhes de infraestrutura:
 ## Conexão com Event Sourcing
 
 DDD e [[event-sourcing]] são complementares: Domain Events (DDD) são exatamente os eventos persistidos em Event Sourcing. O Aggregate emite eventos que descrevem o que aconteceu; o Event Store os persiste.
+
+[[wiki/sources/cqrs-e-event-sourcing-explicado-na-pratica]] reforça essa conexão pelo ângulo de estabilidade: a ação de domínio (ex.: "criar uma ordem com tais produtos") tende a mudar pouco ao longo do tempo mesmo quando a estrutura de persistência muda — reforça a tese de que o evento deve refletir a ação do domínio, não os detalhes de como ela é armazenada.
 
 ## Uso no Nubank
 
@@ -88,3 +90,4 @@ No DDD, o agregado é responsável por proteger suas próprias invariantes — r
 - [[wiki/sources/application-boundary-martin-fowler]] — application boundary como precursor social do bounded context
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — distinção formal entre regra de negócio do domínio (Entidades) e da aplicação (Casos de Uso), com exemplo de empréstimo de Robert Martin
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — DDD como pré-requisito para sharding de sistemas grandes; sem decomposição em bounded contexts não há uma única entidade/shard key candidata
+- [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]] — exemplo de agregado (ordem de serviço → pedido → cliente → indicação) usado para motivar a separação entre modelo de comando e modelo de leitura em [[wiki/concepts/cqrs]]

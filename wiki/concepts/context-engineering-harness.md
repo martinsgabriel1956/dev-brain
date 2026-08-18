@@ -3,8 +3,8 @@ type: concept
 title: "Context Engineering (nível Harness)"
 aliases: ["context engineering harness", "engenharia de contexto", "project knowledge ia"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 6
+date_updated: 2026-08-14
+source_count: 7
 tags: [context-engineering, harness, rules, skills, project-knowledge]
 skill: tech-mentor-ai
 status: draft
@@ -74,6 +74,10 @@ O user harness divide-se em duas categorias (Branas, Aula 01 Parte 2):
 
 Ver [[wiki/concepts/rules-agente]] e [[wiki/concepts/skills-agente]] para detalhes.
 
+## Contexto Como Ativo de Longo Prazo
+
+Context engineering não é gerar documentação estática uma vez — é fazer a IA buscar, em tempo real, documentação viva de servidores e bancos de dados da empresa. Em aplicações de grande porte (diferente de uma prova de conceito), cada documento e decisão registrada ao longo do tempo vira um **ativo do projeto**, na mesma lógica de investimento de um teste automatizado: paga-se o custo uma vez, colhe-se o benefício pelo resto do projeto. Ver [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] e [[wiki/concepts/rag-arquitetura-avancada]] para o mecanismo concreto de busca em tempo real.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
@@ -82,3 +86,4 @@ Ver [[wiki/concepts/rules-agente]] e [[wiki/concepts/skills-agente]] para detalh
 - [[wiki/sources/formacao-ia-devs-aula-01-context-harness-engineering]]
 - [[wiki/sources/formacao-ia-devs-aula-02-rules]]
 - [[wiki/sources/formacao-ia-devs-aula-03-skills]]
+- [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — contexto (docs, design docs, playbooks) como ativo de longo prazo análogo a teste automatizado; busca de documentação em tempo real vs. estática

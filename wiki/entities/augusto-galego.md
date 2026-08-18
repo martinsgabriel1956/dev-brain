@@ -3,8 +3,8 @@ type: entity
 title: "Augusto Galego"
 aliases: ["Augusto Galego", "augustogalego.com"]
 date_created: 2026-07-20
-date_updated: 2026-08-11
-source_count: 10
+date_updated: 2026-08-17
+source_count: 11
 tags: [pessoa, programador, youtuber, brasil, devops, system-design, carreira, agentes-ia, code-review]
 skill: tech-mentor-infra
 status: stub
@@ -44,6 +44,10 @@ Além de conteúdo de infra/deploy, produz conteúdo sobre carreira e entrevista
 
 Além de infra/deploy, carreira e system design, produz conteúdo de reação/análise sobre a era agêntica. Em [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] reage ao tweet de [[wiki/entities/uncle-bob]] ("não reviso mais código de agentes") e propõe uma [[wiki/concepts/matriz-risco-dificuldade-review-ia|matriz risco × dificuldade]] para migrar gradualmente de revisão manual para merge automático. Relato pessoal relevante: trabalhou nos últimos meses numa **empresa de pagamentos** onde revisavam 100% do código do core business ("quem tem alguma coisa tem medo"), porque o valor entregue era robustez, não volume de features — usa esse caso como o extremo de alto risco que ainda justifica revisão manual total.
 
+## Reação a Tweet sobre LeetCode/System Design vs. Trabalho Real
+
+Em [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]], reage a um tweet de [[wiki/entities/bero]] argumentando que, na era da IA, vale mais parecer bom dev (treinar LeetCode + System Design para entrevista) do que ser bom dev de fato. Concorda em parte: LeetCode caiu de valor prático, System Design subiu — inversão explícita do que ele mesmo defendia "dois anos atrás" no canal. Autorreferência direta pelo próprio nome em terceira pessoa na fala ("você pode argumentar Galego mas...") — a evidência de autoria mais forte já registrada nesta entidade, mais forte até que o padrão de patrocínio HostGator recorrente.
+
 ## Key Sources
 
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]]
@@ -56,3 +60,4 @@ Além de infra/deploy, carreira e system design, produz conteúdo de reação/an
 - [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — autoria inferida com evidência fraca (nome no cupom de patrocínio "Augusto 20"), não confirmada; três problemas de algoritmos/estruturas de dados resolvidos ao vivo
 - [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — autoria inferida (mesmo curso pago de 90+ aulas, mesma política de reembolso de um mês): aula gratuita do curso reconstruindo o capítulo "de zero a milhões de usuários" de Alex Xu, desenho incremental guiado por SPOF
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — autoria confirmada (PWD do vídeo identifica o user "Augusto Galego"): comandos básicos de Linux e por que devs precisam reconhecê-los na era dos agentes; patrocínio Abacus
+- [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — autoria confirmada por autorreferência direta ao próprio nome na fala; reação a tweet sobre LeetCode/System Design como filtro de entrevista vs. diferencial real de trabalho

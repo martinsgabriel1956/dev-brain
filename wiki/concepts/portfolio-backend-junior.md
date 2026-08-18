@@ -3,8 +3,8 @@ type: concept
 title: "Portfólio Backend Júnior"
 aliases: ["portfólio primeira vaga", "diferenciais backend junior", "primeira vaga backend"]
 date_created: 2026-04-25
-date_updated: 2026-07-21
-source_count: 4
+date_updated: 2026-08-17
+source_count: 6
 tags: [carreira, backend, junior, portfolio]
 skill: tech-mentor-leadership
 status: stable
@@ -61,9 +61,19 @@ Em processo real de triagem de currículos júnior, dois filtros vêm antes de q
 
 [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] descreve uma variante mais radical do mesmo princípio, a partir da experiência de quem já esteve do lado de recrutamento: implementar sozinho uma única funcionalidade (ou tela, no caso de front-end) do sistema de uma empresa-alvo específica, e anexar o link na candidatura. O peso dessa demonstração é descrito como desproporcionalmente maior do que o esperado, porque uma pessoa sozinha entregando algo equivalente ao trabalho de um time evidencia domínio direto, sem a diluição de comunicação e prioridades que cresce com o tamanho do time. Ver [[wiki/concepts/projeto-com-adrenalina]] para o raciocínio mais amplo de escolher o projeto (e não a tecnologia) como primeiro passo.
 
+## Repertório via Projetos Pessoais, Mesmo Sem Experiência Profissional
+
+[[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] reforça o mesmo princípio pela ótica de quem monta o portfólio, não de quem o avalia: o autor relata ter estudado por conta própria tema por tema alinhado a requisitos reais de vaga, construindo uma aplicação completa para ter "o que falar" em entrevista, mesmo antes de qualquer experiência profissional. A dica que ele destaca: mais projetos no GitHub demonstram vontade de aprender, autonomia e capacidade de resolver problemas — o que pesa na entrevista mesmo sem vínculo empregatício formal por trás do projeto.
+
+## Tensão: o Checklist Ainda Diferencia Se a IA Barateou o SaaS Funcional?
+
+[[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] argumenta que gerar um SaaS funcional deixou de provar competência por si só, já que a IA barateou a produção do artefato — ver detalhamento em [[wiki/concepts/curriculo-vs-portfolio]]. Isso reforça, e não contradiz, o checklist desta página: os itens listados (testes, SQL além do básico, observabilidade, error handling) são justamente o que a IA não gera bem sozinha e o recrutador leigo não sabe avaliar de olhar rápido — a tensão é sobre o que basta *mostrar* (rodar bonito na tela), não sobre o que basta *ter*.
+
 ## Key sources
 
 - [[wiki/sources/diferenciais-portfolio-backend-junior]]
+- [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — SaaS funcional deixou de provar competência por si só; reforça por que os itens deste checklist (testes, SQL, observabilidade) continuam sendo o diferencial real
+- [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — projetos de portfólio como prova de autonomia e vontade de aprender, mesmo sem experiência profissional prévia
 - [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]
 - [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]] — triagem de currículos reais confirmando GitHub/portfólio como filtro eliminatório, não apenas diferencial
 - [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] — estratégia de implementar sozinho uma feature da empresa-alvo

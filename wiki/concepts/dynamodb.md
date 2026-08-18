@@ -3,8 +3,8 @@ type: concept
 title: "Amazon DynamoDB"
 aliases: ["DynamoDB", "Dynamo"]
 date_created: 2026-08-04
-date_updated: 2026-08-04
-source_count: 1
+date_updated: 2026-08-17
+source_count: 2
 tags: ["aws", "dynamodb", "nosql", "banco-de-dados", "infra", "cloud"]
 skill: tech-mentor-infra
 status: stub
@@ -32,6 +32,11 @@ Banco de dados NoSQL gerenciado da AWS, modelo mental de key-value store (como u
 - [[wiki/concepts/consistent-hashing]] — mecanismo relacionado à distribuição de partições em bancos NoSQL de larga escala
 - [[wiki/concepts/db-sharding]]
 
+## Modos de Capacidade e Casos Ideais
+
+Exemplo canônico de partition key + sort key: partition key = customer ID, sort key = order date → busca todos os pedidos de um cliente ordenados por data. Dois modos de capacidade: **Provisioned** (quando o padrão de tráfego é conhecido, mais barato) e **On-Demand** (quando não é, mais caro por request mas sem necessidade de planejamento). Casos ideais: sessões, leaderboards, IoT, carrinhos de compra, metadata — **não** ideal para analytics complexos ou dados fortemente relacionais, reforçando o contraste já registrado com [[wiki/concepts/rds]]. Ver [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]].
+
 ## Key Sources
 
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]
+- [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — exemplo de partition/sort key, modos Provisioned vs. On-Demand, e casos ideais vs. não ideais

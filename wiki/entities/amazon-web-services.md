@@ -3,8 +3,8 @@ type: entity
 title: "Amazon Web Services"
 aliases: ["AWS", "Amazon Cloud"]
 date_created: 2026-05-06
-date_updated: 2026-08-12
-source_count: 5
+date_updated: 2026-08-17
+source_count: 6
 tags: ["aws", "cloud-provider", "amazon", "infraestrutura"]
 skill: tech-mentor-infra
 status: stable
@@ -65,8 +65,13 @@ Tema recorrente: [[wiki/concepts/vendor-lock-in-cloud]] — quanto mais desses s
 
 O console web da AWS (criar recursos clicando em botões — ex.: "create function" no Lambda) é citado como ponto de partida legítimo para aprender o provedor, mas como anti-padrão para produção madura: mudanças feitas ali não ficam versionadas, revisadas nem documentadas, e é fácil aplicar uma alteração em um ambiente (ex.: staging) e esquecer de replicá-la em outro (ex.: produção). A alternativa recomendada é [[wiki/concepts/infraestrutura-como-codigo|Infrastructure as Code]], via [[wiki/concepts/aws-cdk|AWS CDK]] (código de propósito geral, ex. TypeScript, que sintetiza para [[wiki/concepts/aws-cloudformation|CloudFormation]]) ou CloudFormation direto. Ver [[wiki/sources/infraestrutura-como-codigo-cdk-aws]].
 
+## Os 15 Serviços que Cobrem 90% dos Casos
+
+Panorama didático (não exaustivo de todos os produtos) que ordena os serviços mais usados por dependência lógica de uma pilha típica, e não por categoria: [[wiki/concepts/aws-iam|IAM]] (segurança) → [[wiki/concepts/vpc|VPC]] (rede) → [[wiki/concepts/ec2|EC2]] (computação) → [[wiki/concepts/auto-scaling|Auto Scaling]] + [[wiki/concepts/load-balancer|ALB]] (elasticidade) → [[wiki/concepts/amazon-s3|S3]] (objetos) → [[wiki/concepts/rds|RDS]]/Aurora (relacional) → [[wiki/concepts/aws-lambda|Lambda]] (serverless) → [[wiki/concepts/dynamodb|DynamoDB]] (NoSQL) → [[wiki/concepts/api-gateway|API Gateway]] (exposição) → [[wiki/concepts/aws-cloudfront|CloudFront]] (CDN) → [[wiki/concepts/aws-cloudwatch|CloudWatch]] (observabilidade) → [[wiki/concepts/aws-sqs|SQS]]/[[wiki/concepts/aws-sns|SNS]]/EventBridge (mensageria) → [[wiki/concepts/ecs|ECS]]/EKS/ECR (containers), fechando com [[wiki/concepts/aws-route-53|Route 53]], Cognito, Secrets Manager, [[wiki/concepts/step-functions|Step Functions]] e [[wiki/concepts/aws-elasticache|ElastiCache]]. Ver [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]].
+
 ## Key Sources
 
+- [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — panorama dos 15 serviços mais usados, ordenados por dependência lógica de pilha, com arquitetura de referência ponta a ponta
 - [[wiki/sources/aws-infraestrutura-global]]
 - [[wiki/sources/iam-introduction-users-groups-policies]]
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]

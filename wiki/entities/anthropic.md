@@ -3,8 +3,8 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-08-13
-source_count: 23
+date_updated: 2026-08-17
+source_count: 24
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack]
 skill: tech-mentor-ai
 status: stable
@@ -120,3 +120,4 @@ Guia oficial publicado pela Anthropic definindo quatro níveis de autonomia para
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — servidor da Anthropic como destino do conteúdo lido por `cat` pela harness do Claude Code (a harness lê o arquivo localmente e envia como parte do prompt)
 - [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — ancoragem de preço no lançamento do Opus 5 (Fable como âncora, Opus como "novo Sonnet")
 - [[wiki/sources/harness-explicado-function-calling-hag-evals]] — relato histórico de que o function calling nativo chegou depois da OpenAI; workaround via tags XML usado antes disso
+- [[wiki/sources/tokens-o-que-sao-e-por-que-custam-caro]] — tokenizer do Claude Opus 5 (privado, não divulgado) gastou quase o dobro de tokens que o GPT-4o na mesma frase em português; preços citados de Opus/Sonnet/Haiku (output ~5x mais caro que input)

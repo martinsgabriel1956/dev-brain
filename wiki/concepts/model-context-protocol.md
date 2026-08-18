@@ -3,8 +3,8 @@ type: concept
 title: "Model Context Protocol (MCP)"
 aliases: ["MCP", "model context protocol", "protocol mcp"]
 date_created: 2026-06-02
-date_updated: 2026-08-06
-source_count: 5
+date_updated: 2026-08-14
+source_count: 6
 tags: [mcp, model-context-protocol, tools, harness, json-rpc, anthropic]
 skill: tech-mentor-ai
 status: stable
@@ -41,6 +41,10 @@ Com o surgimento das [[wiki/concepts/skills-agente|Skills]] como mecanismo alter
 
 Exemplo concreto dessa distinção fora do ecossistema Claude: o assistente de IA embutido no Grafana Cloud usa MCP-like access a Prometheus/Loki/Tempo para os dados em si, mas oferece separadamente uma configuração de "skills" — contexto adicional ensinando o que colunas/campos específicos de uma fonte de dados significam, quando essa fonte é pouco padronizada. Não verificado se "skills" nesse produto é tecnicamente análogo às [[wiki/concepts/skills-agente|Skills]] do harness Claude ou apenas terminologia própria do produto.
 
+## Transporte: STDIO vs. Streamable HTTP, SSE Depreciado
+
+Uso local comum de MCP roda sobre **STDIO**. Escalar MCP dentro de uma empresa — servindo múltiplos clientes e buscando dados de diversos lugares — exige migrar para **streamable HTTP** como meio de transporte. **SSE (Server-Sent Events) está depreciado** dentro do ecossistema MCP. Ver [[wiki/concepts/agent-to-agent-protocol]] para o protocolo complementar de comunicação entre agentes (não entre agente e tool/dado).
+
 ## Decisão: MCP vs CLI
 
 Ver [[wiki/concepts/cli-vs-mcp]].
@@ -60,3 +64,4 @@ MCPs de domínio (Tools que expõem um backend inteiro, não uma função isolad
 - [[wiki/sources/formacao-ia-devs-aula-02-mcp-parte2]]
 - [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — Grafana MCP como exemplo de MCP de domínio para observabilidade
 - [[wiki/sources/monitoramento-aplicacoes-ia-grafana-cloud-opentelemetry]] — configuração de "skills" no assistente do Grafana Cloud como exemplo prático da distinção MCP vs Skills fora do ecossistema Claude
+- [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — migração de STDIO para streamable HTTP como requisito de escala e SSE como transporte depreciado

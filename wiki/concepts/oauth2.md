@@ -3,8 +3,8 @@ type: concept
 title: "OAuth 2.0"
 aliases: ["OAuth", "OAuth 2.0", "delegação de acesso", "authorization code flow"]
 date_created: 2026-07-27
-date_updated: 2026-08-13
-source_count: 6
+date_updated: 2026-08-14
+source_count: 7
 tags: [oauth2, autorizacao, autenticacao, seguranca, delegacao-de-acesso]
 skill: tech-mentor-security
 status: draft
@@ -79,3 +79,4 @@ Antes de 2014, com a explosão das APIs e a ascensão do OAuth como padrão de f
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — open redirect por validação frouxa de redirect_uri; state contra CSRF no fluxo de login social
 - [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — caso real de escopo/permissão aceito sem validação via URL, achado por pentest voluntário
 - [[wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth]] — "autenticação de gambiarra" improvisada sobre o OAuth antes do OIDC padronizar o formato
+- [[wiki/sources/refresh-token-pattern-access-token-de-curta-duracao]] — authorization server como componente que valida/revoga o refresh token no padrão access+refresh token

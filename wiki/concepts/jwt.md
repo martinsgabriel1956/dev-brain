@@ -3,8 +3,8 @@ type: concept
 title: "JWT — JSON Web Token"
 aliases: ["JWT", "JSON Web Token", "access token", "refresh token"]
 date_created: 2026-07-27
-date_updated: 2026-08-13
-source_count: 3
+date_updated: 2026-08-14
+source_count: 4
 tags: [jwt, autenticacao, stateless, token, seguranca]
 skill: tech-mentor-security
 status: draft
@@ -62,7 +62,15 @@ Regra prática: em aplicação web, prefira cookie `HttpOnly` sobre `localStorag
 
 ## Rotação do Refresh Token
 
-Boa prática de revogação: a cada uso do refresh token, o servidor invalida aquele token e emite um novo no lugar (rotação). Se um atacante roubou um refresh token antigo mas o dono legítimo já o usou (disparando a rotação), o token roubado deixa de funcionar — reduz a janela de exploração de um refresh token vazado sem exigir denylist ativa.
+Boa prática de revogação: a cada uso do refresh token, o servidor invalida aquele token e emite um novo no lugar (rotação). Se um atacante roubou um refresh token antigo mas o dono legítimo já o usou (disparando a rotação), o token roubado deixa de funcionar — reduz a janela de exploração de um refresh token vazado sem exigir denylist ativa. Detalhamento completo (reuse detection, fingerprinting de dispositivo) em [[wiki/concepts/refresh-token-rotation]].
+
+## Janela de Exposição
+
+Mesmo com refresh token revogável, o Access Token já emitido continua válido até expirar — nada verifica revogação a cada requisição enquanto ele não expira. Se um usuário é banido, o pior caso é ele continuar acessando o sistema pelo tempo de vida restante do Access Token (tipicamente 5-15min). Só a *renovação* via refresh token é bloqueada a partir daí. Esse risco residual costuma ser aceitável (redes sociais, e-commerce, backoffice), mas sistemas de alta criticidade — pagamentos instantâneos, operações financeiras de alto valor, tempo real — podem não tolerar nem essa janela curta, exigindo repensar o modelo de autenticação.
+
+## Access Token de Longa Duração é uma Falha de Segurança
+
+Um JWT com validade de meses ou anos parece resolver a fricção de relogin, mas amplia o risco: por ser auto-contido e stateless, o token trafega por logs de servidor, VPNs, load balancers e serviços de nuvem intermediários — qualquer vazamento nesses pontos dá ao atacante acesso pelo prazo de validade inteiro, já que não há como revogá-lo antes de expirar. Analogia útil: o Access Token deveria funcionar como um crachá de visitante que expira no fim do dia, não como uma chave real de fechadura.
 
 ## O problema da revogação
 
@@ -84,9 +92,11 @@ No contexto de [[wiki/concepts/openid-connect]], o ID Token é especificamente u
 - [[wiki/concepts/openid-connect]] — emite o ID Token, sempre em formato JWT
 - [[wiki/concepts/token-relay-pattern]] — propagação do token (incluindo JWT) por múltiplos serviços internos
 - [[wiki/concepts/criptografia]] — assinatura do JWT usa HMAC (chave simétrica) ou par de chaves assimétrico, dependendo do algoritmo
+- [[wiki/concepts/refresh-token-rotation]] — aprofundamento da rotação: reuse detection e fingerprinting de dispositivo
 
 ## Key Sources
 
 - [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — HMAC vs. RSA/ECDSA, chave fraca, validação de issuer/audience, localStorage vs. cookie httpOnly, rotação de refresh token
 - [[wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth]] — o ID Token do OIDC é um JWT distinto do access token, destinado à aplicação cliente (não à API)
+- [[wiki/sources/refresh-token-pattern-access-token-de-curta-duracao]] — janela de exposição, por que Access Token de longa duração é falha de segurança, e por que armazenar refresh token só no backend quebra o fluxo stateless

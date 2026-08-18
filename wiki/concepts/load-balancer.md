@@ -3,8 +3,8 @@ type: concept
 title: "Load Balancer"
 aliases: ["lb", "load balancing", "l4", "l7", "round robin"]
 date_created: 2026-04-23
-date_updated: 2026-08-10
-source_count: 15
+date_updated: 2026-08-17
+source_count: 16
 tags: [load-balancer, l4, l7, round-robin, health-check, alta-disponibilidade, infra, nginx]
 skill: tech-mentor-infra
 status: stub
@@ -82,3 +82,4 @@ Nem todo [[wiki/concepts/reverse-proxy]] é um load balancer: um LB decide **ent
 - [[wiki/sources/system-design-entrevista-cinema-draw-io]] — usado como peça "de praxe" mesmo num desenho simples de entrevista (3 web servers atrás de 1 load balancer), com justificativa didática de não sobrecarregar uma instância já saturada
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]] — ALB (AWS Load Balancer) como L7 explícito: só por operar na camada de aplicação é que o roteamento por rota HTTP (`/produtos` vs. `/admin` para destinos diferentes) é possível; distribuição pode alcançar destinos heterogêneos (EC2, Lambda) na mesma regra
 - [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] — simulação visual do porquê Round Robin dropa requisição sob variância de custo/potência, fila de requisições como trade-off latência-vs-drop, Dynamic Weighted Round Robin (peso por latência observada) e PEWMA (combina latência + carga em tempo real)
+- [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — ALB acoplado ao [[wiki/concepts/auto-scaling|Auto Scaling Group]] como arquitetura clássica AWS: health checks constantes removem instâncias falhas do pool automaticamente

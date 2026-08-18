@@ -3,8 +3,8 @@ type: concept
 title: "AWS IAM"
 aliases: ["IAM", "Identity and Access Management", "AWS Identity"]
 date_created: 2026-05-06
-date_updated: 2026-05-06
-source_count: 1
+date_updated: 2026-08-17
+source_count: 2
 tags: ["aws", "iam", "segurança", "identidade", "permissões", "autorizacao"]
 skill: tech-mentor-infra
 status: draft
@@ -58,6 +58,11 @@ Tipos principais:
 
 Ver [[principio-menor-privilegio]]. Prática mandatória na AWS: conceder apenas as permissões estritamente necessárias para a tarefa.
 
+## Least Privilege — Exemplo Prático de Escopo Mínimo
+
+Ilustração concreta do princípio: se uma instância só precisa ler de um bucket S3 específico, a role dela deve conter exatamente `s3:GetObject` nesse bucket — nada mais amplo. Se a instância for comprometida, o dano do atacante fica limitado a essa única permissão. Reforça que IAM é o primeiro serviço a configurar, antes de qualquer rede ([[wiki/concepts/vpc]]) ou computação ([[wiki/concepts/ec2]]). Ver [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]].
+
 ## Key Sources
 
 - [[wiki/sources/iam-introduction-users-groups-policies]]
+- [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — reforço de least privilege com exemplo de escopo mínimo (S3 read-only) e recomendação de MFA + não usar conta root no dia a dia
