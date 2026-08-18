@@ -3,8 +3,8 @@ type: concept
 title: "Story Points"
 aliases: ["Pontos de História", "Estimativa Relativa", "Story Point Estimation"]
 date_created: 2026-07-28
-date_updated: 2026-07-28
-source_count: 1
+date_updated: 2026-08-18
+source_count: 2
 tags: [agile, scrum, estimativa, engineering-management]
 skill: tech-mentor-leadership
 status: stable
@@ -29,6 +29,10 @@ Times novos vão essencialmente **chutar** o valor inicial. Isso é esperado e c
 **Velocity** é a média de pontos entregues por sprint. Depois que o time roda alguns sprints com a mesma composição, a velocity se estabiliza e permite previsão de prazo: "temos 120 pontos no backlog, velocity ~40/sprint → ~3 sprints".
 
 Uma equipe saudável tende a aumentar sua velocity organicamente ao longo do tempo — desde que a composição do time não mude constantemente. Isso é a métrica revelando aprendizado real, não pressão externa.
+
+## A Equivalência Implícita com Horas (Crítica)
+
+[[wiki/sources/por-que-estimativas-de-software-falham-como-melhorar]] observa um padrão comum, não declarado formalmente pelo método: se uma sprint de duas semanas (80h de trabalho, considerando 40h/semana) comporta, digamos, 80 pontos no planejamento do time, existe uma equivalência implícita de **1 ponto ≈ 1 hora**, mesmo que a doutrina oficial negue que pontos meçam tempo. Isso explicaria por que, na prática, é comum duas tarefas de 1 ponto consumirem um dia inteiro (idas e vindas de revisão, bikeshedding, tempo de build/teste) — a discrepância entre "2 pontos" e "6h reais" raramente é admitida abertamente porque contraria a lógica declarada do sistema. Não é uma regra do framework Scrum, mas uma crítica empírica plausível ao *uso* comum do sistema — não contradiz a definição formal de complexidade relativa acima, mas alerta que na prática a calibração inicial do time frequentemente ancora, sim, em uma noção implícita de tempo.
 
 ## O Erro de Forçar um Número-Alvo
 
@@ -55,3 +59,4 @@ Consequências observadas quando isso acontece:
 ## Key Sources
 
 - [[wiki/sources/story-points-po-forcando-30-40-pontos-por-sprint]]
+- [[wiki/sources/por-que-estimativas-de-software-falham-como-melhorar]] — crítica à equivalência implícita entre pontos e horas dentro de uma sprint

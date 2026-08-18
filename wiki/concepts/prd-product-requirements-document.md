@@ -3,8 +3,8 @@ type: concept
 title: "PRD — Product Requirements Document"
 aliases: ["PRD", "Product Requirements Document"]
 date_created: 2026-05-17
-date_updated: 2026-07-09
-source_count: 5
+date_updated: 2026-08-18
+source_count: 6
 tags: [prd, documentação, produto, requisitos, spec-driven, ia]
 skill: tech-mentor-system-design
 status: stable
@@ -35,6 +35,10 @@ No [[wiki/concepts/spec-driven-development|Spec Driven Development]], o PRD tem 
 
 [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] mostra um caso concreto: ao dar um PRD já existente como input inicial para a skill "TLC Spec Driven", ela usa o documento como base e cria automaticamente tudo que der para derivar dali (spec, design, tasks), só fazendo perguntas iterativas para o que não estiver claro. Sem PRD, a skill começa do zero via perguntas — mesmo mecanismo de refinamento do [[wiki/concepts/agente-prd|Agente de PRD]], aplicado aqui a um fluxo maior que também gera design e breakdown de tasks.
 
+## PRD como Camada de Contexto, Independente de Codebase Legado ou Não
+
+[[wiki/sources/spec-writer-skill-criterios-de-boa-spec]] reforça a mesma tese ("PRD é documento para a IA") por outro ângulo: independentemente de o projeto ser legado ou greenfield, o primeiro ganho de escrever um PRD é puramente de **contexto** — nenhuma decisão técnica ainda foi tomada, só "estas são as features que o produto precisa". O exemplo dado é uma lista de user stories high-level (landing page, autenticação, upload, biblioteca de vídeos, tags, processamento em background) sem qualquer menção a stack, servindo depois como input para gerar a [[wiki/concepts/tech-spec|tech spec]] de cada feature isoladamente.
+
 ## Key Sources
 
 - [[wiki/sources/trd-technical-requirements-document]]
@@ -42,3 +46,4 @@ No [[wiki/concepts/spec-driven-development|Spec Driven Development]], o PRD tem 
 - [[wiki/sources/formacao-ia-devs-aula-05-qa]]
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
 - [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — PRD existente usado como input direto de uma skill spec-driven, que deriva spec/design/tasks automaticamente
+- [[wiki/sources/spec-writer-skill-criterios-de-boa-spec]] — PRD como camada de contexto pura (sem tecnologia), ponto de partida para gerar spec por feature via skill "Spec Writer"

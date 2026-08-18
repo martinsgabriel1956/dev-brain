@@ -3,8 +3,8 @@ type: concept
 title: "Divisão de Tarefas em Partes Menores"
 aliases: ["quebrar tarefa em partes menores", "duas perguntas de decomposição", "critério de parada da decomposição"]
 date_created: 2026-07-23
-date_updated: 2026-07-23
-source_count: 1
+date_updated: 2026-08-18
+source_count: 2
 tags: [carreira, decomposicao-de-tarefas, junior, planejamento, estimativa]
 skill: tech-mentor-leadership
 status: draft
@@ -48,12 +48,18 @@ Alterar um cadastro (não sei bem o que precisa mudar)
     └── Seguro + com prazo → pronto para executar
 ```
 
+## Quando a Divisão Sozinha Não Basta — Sistemas Ainda Desconhecidos
+
+[[wiki/sources/por-que-estimativas-de-software-falham-como-melhorar]] adiciona um pré-requisito a este processo, em escala de sistema (não de tarefa de board já definida): quando o próprio problema envolve algo que a equipe nunca fez, tentar aplicar diretamente as duas perguntas de teste ("tenho segurança?", "consigo dar um prazo?") tende a falhar, porque a insegurança não vem da tarefa ser mal descrita — vem de uma incerteza de fundo ainda não resolvida (viabilidade técnica desconhecida). Nesses casos, a fonte recomenda [[wiki/concepts/reducao-de-incerteza-antes-de-estimar|reduzir a incerteza primeiro]] (testar as partes menos conhecidas via PoC) e só então desenhar o sistema e aplicar esta técnica de quebra em subtarefas — a mesma fonte reforça "tarefas pequenas e bem definidas" e "priorizar o menos conhecido" como boas práticas de quebra, ecoando as duas perguntas de teste já registradas acima.
+
 ## Relação com Outros Conceitos
 
 - [[wiki/concepts/arvore-de-decomposicao]] — decompõe problemas vagos em dimensões de investigação; esta técnica decompõe tarefas já definidas em subtarefas executáveis, com critério de parada explícito
 - [[wiki/concepts/estimativa-como-habilidade-treinavel]] — a segunda pergunta de teste ("consigo dar um prazo?") é o mesmo músculo de estimativa que se treina deliberadamente
 - [[wiki/concepts/organizacao-pessoal-do-trabalho]] — a lista de subtarefas gerada por esta divisão é o material bruto da lista de tarefas priorizada
+- [[wiki/concepts/reducao-de-incerteza-antes-de-estimar]] — pré-requisito para esta técnica funcionar quando o sistema em si (não só a tarefa) envolve algo desconhecido
 
 ## Key Sources
 
 - [[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]]
+- [[wiki/sources/por-que-estimativas-de-software-falham-como-melhorar]] — "tarefas pequenas e bem definidas" e "priorizar o menos conhecido" como boas práticas complementares, em escala de desenho de sistema

@@ -3,8 +3,8 @@ type: concept
 title: "Event Sourcing"
 aliases: ["event store", "append-only log", "eventsourcing"]
 date_created: 2026-05-31
-date_updated: 2026-08-17
-source_count: 5
+date_updated: 2026-08-18
+source_count: 6
 tags: [event-sourcing, arquitetura, cqrs, ddd, imutabilidade, fintech]
 skill: tech-mentor-backend
 status: stable
@@ -106,6 +106,7 @@ A mesma fonte conecta Event Sourcing ao **write-ahead log (WAL)** de bancos rela
 
 ## Key Sources
 
+- [[wiki/sources/cqrs-martin-fowler]] — post original do bliki (2011) já lista Event Sourcing como padrão que combina naturalmente com CQRS
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
 - [[wiki/sources/ciclo-de-mudanca-de-arquitetura]] — citado como exemplo de decisão de TO-BE que exige o ciclo AS-IS/POC/migração
 - [[wiki/sources/cqrs-dicionario-programador-codigo-fonte-tv]] — definição curta citando José Carlos Macoratti

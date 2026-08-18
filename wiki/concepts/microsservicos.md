@@ -4,7 +4,7 @@ title: "Microsserviços"
 aliases: ["microsservicos", "microservices", "arquitetura de microsserviços", "decomposição por domínio"]
 date_created: 2026-07-24
 date_updated: 2026-08-18
-source_count: 13
+source_count: 14
 tags: [microsservicos, arquitetura, bounded-context, distributed-monolith, circuit-breaker, resiliencia]
 skill: tech-mentor-backend
 status: draft
@@ -76,8 +76,17 @@ Mesmo fora de uma arquitetura de microsserviços completa, dá para reaproveitar
 
 Times pequenos e autônomos — um dos benefícios centrais de microsserviços — só se sustentam se a infraestrutura for self-service. [[wiki/sources/talk-about-platforms-evan-bottcher]] mostra o lado organizacional: sem uma [[wiki/concepts/plataforma-digital|plataforma digital]] com [[wiki/concepts/sensible-defaults-paved-road|sensible defaults]], a autonomia dos times de serviço vira ou [[wiki/concepts/backlog-coupling|acoplamento de backlog]] (dependência de times de infra por silo técnico) ou arrasto por diversificação tecnológica (cada time reinventa sua stack). É a mesma Lei de Conway do artigo original de 2014, agora aplicada à camada de entrega/infra.
 
+## O Caso Amazon Prime Video: Monolito Reduzindo Custo em >90%
+
+[[wiki/sources/microsservicos-monolito-first-renato-augusto]] cita o caso (amplamente reportado, sem link primário na fonte) da equipe de monitoramento de qualidade de vídeo do Amazon Prime Video migrando de volta de microsserviços/serverless distribuído para um monolito, reduzindo custos de infraestrutura AWS em mais de 90% — com menor complexidade sistêmica e mais eficiência operacional. Funciona como contraponto concreto ("nem as gigantes de tecnologia estão imunes ao custo de microsserviços prematuros ou superdimensionados") ao argumento já central desta página; ver [[wiki/concepts/monolito]] para a claim completa e as ressalvas de verificação.
+
+## Monolith First (Martin Fowler): a Formalização da Sequência
+
+[[wiki/concepts/monolith-first]] é o princípio de Fowler que nomeia formalmente a sequência já documentada nesta página em "Custo-Benefício": quase toda história de microsserviços bem-sucedida começou como monolito que cresceu e foi quebrado depois; quase todo sistema criado do zero já como microsserviços teve sérios problemas. [[wiki/sources/microsservicos-monolito-first-renato-augusto]] conecta essa observação diretamente à falta de conhecimento de domínio no início de um projeto — o mesmo argumento central da seção "Decomposição Correta" acima.
+
 ## Key Sources
 
+- [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — caso Amazon Prime Video, princípio Monolith First de Fowler nomeado explicitamente, YAGNI como mecanismo por trás da recomendação de não começar com microsserviços
 - [[wiki/sources/arquitetura-de-sacrificio]] — Fowler **desaconselha** microsserviços como arquitetura de sacrifício (distribuição + assincronia = amplificadores de complexidade); melhor monolito primeiro, desmontado gradualmente depois
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — ESB como contraponto histórico direto ao "smart endpoints, dumb pipes"; por que ESBs continuam essenciais em empresas com grande legado mesmo perdendo espaço em projetos novos
 - [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — artigo original de 2014 (James Lewis e Martin Fowler) que cunhou a definição do termo; nove características comuns, "smart endpoints and dumb pipes", Lei de Conway, Design for Failure, e a postura de "otimismo cauteloso" dos próprios autores

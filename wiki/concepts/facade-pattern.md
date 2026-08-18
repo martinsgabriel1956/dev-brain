@@ -4,7 +4,7 @@ title: "Facade Pattern"
 aliases: ["padrão facade", "design pattern facade", "fachada"]
 date_created: 2026-05-01
 date_updated: 2026-08-18
-source_count: 4
+source_count: 5
 tags: [design-patterns, structural, facade, oop, encapsulamento]
 skill: tech-mentor-backend
 status: stable
@@ -82,6 +82,10 @@ Instanciar os serviços do subsistema direto no construtor da Facade (com `new`)
 
 O Facade simplifica acesso a **múltiplos** componentes. O [[proxy-pattern]] substitui **um único** objeto e controla o acesso a ele.
 
+## Facade como Anti-Corruption Layer entre sistema novo e legado
+
+Quando a Facade orquestra **múltiplas** chamadas a um sistema legado para produzir um único conceito do domínio (em vez de traduzir uma interface só, papel típico do Adapter), ela funciona como um [[wiki/concepts/anti-corruption-layer]]: absorve tudo que seria "incomum" para o sistema novo, permitindo substituição gradativa do legado (ver [[wiki/concepts/strangler-fig-pattern]]) sem dependência forte direta entre as duas pontas.
+
 ## Façades implícitas no dia a dia
 
 - `fetch()` — esconde TCP, retry, header parsing
@@ -95,3 +99,4 @@ O Facade simplifica acesso a **múltiplos** componentes. O [[proxy-pattern]] sub
 - [[sources/design-pattern-facade]]
 - [[wiki/sources/design-pattern-facade-renato-augusto]]
 - [[wiki/sources/design-pattern-facade-codigo-fonte-tv]]
+- [[wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado]] — Facade como mecanismo estrutural do Anti-Corruption Layer quando o isolamento exige orquestrar múltiplas chamadas ao legado

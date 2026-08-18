@@ -2,6 +2,28 @@
 
 ---
 
+## [2026-08-18] ingest | CQRS (Martin Fowler bliki)
+
+**Fonte:** [[wiki/sources/cqrs-martin-fowler]] — post original em inglês de https://martinfowler.com/bliki/CQRS.html (14/07/2011), buscado via WebFetch, traduzido para pt-BR e salvo em `raw/cqrs-martin-fowler.md`
+**Skill carregada:** `tech-mentor-backend` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/`. Consultado o índice do `SKILL.md` (entrada CQRS/Event Sourcing → `references/architecture-eda-patterns.md` e `references/event-sourcing-cqrs.md`), conteúdo do próprio post foi suficientemente autocontido e não exigiu leitura profunda da referência.
+
+**Arquivos criados:**
+- `raw/cqrs-martin-fowler.md` — tradução completa do post
+- `wiki/sources/cqrs-martin-fowler.md` — TL;DR, 6 claims com evidência, conceitos/entidades, raw quotes em inglês (originais)
+- `wiki/concepts/bounded-context.md` (novo stub) — fronteira de modelo de domínio; usado por Fowler como critério de escopo de aplicação do CQRS
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/cqrs.md` — `source_count` 6 → 7; nova seção "Origem Textual: o Post de Martin Fowler (2011)"; nova linha em Key Sources
+- `wiki/concepts/ddd.md` — `source_count` 10 → 11; nova seção curta sobre bounded context como escopo de aplicação do CQRS; nova linha em Key Sources
+- `wiki/concepts/task-based-ui.md` — `source_count` 1 → 2; nova linha em Key Sources
+- `wiki/concepts/event-sourcing.md` — `source_count` 5 → 6; nova linha em Key Sources
+- `wiki/entities/martin-fowler.md` — `source_count` 15 → 16; nova linha na seção "Termos e frameworks cunhados/popularizados"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources (topo da tabela); nova linha em Concepts na seção "Arquitetura Backend & Event-Driven" (`bounded-context`)
+
+**Notas / open questions:** (1) **Sem contradições** — esta fonte primária é consistente com tudo que já estava em [[wiki/concepts/cqrs]], incluindo a atribuição da origem a [[wiki/entities/greg-young|Greg Young]]/CQS via [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]]. (2) O post não menciona Greg Young nem CQS — é puramente descritivo do padrão e das condições de uso, sem historiar sua origem; a atribuição a Greg Young permanece sustentada apenas pela fonte Full Cycle já ingerida. (3) Valor principal do ingest: ser a **fonte textual mais antiga e mais citada** sobre o tema na wiki, com tom de cautela mais explícito ("a maioria das implementações que vi foi problemática") do que qualquer fonte derivada já registrada — permite checar fidelidade das fontes secundárias à ideia original.
+
+---
+
 ## [2026-08-18] ingest | A História e Evolução das APIs (Bernardo Lobato)
 
 **Fonte:** [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — transcrição de vídeo colada pelo usuário no chat (ASR bruto, sem pontuação, já em pt-BR — sem necessidade de tradução), limpa e organizada em seções cronológicas em `raw/historia-e-evolucao-das-apis-bernardo-lobato.md`
@@ -7273,6 +7295,30 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 
 ---
 
+## [2026-08-18] ingest | Por Que Estimativas de Software Sempre Dão Errado (e Como Melhorar a Precisão)
+
+**Fonte:** [[wiki/sources/por-que-estimativas-de-software-falham-como-melhorar]] — transcrição de vídeo colada pelo usuário no chat (ASR bruto, pt-BR, autor não identificado, patrocínio Abacus), limpa, organizada em seções e reduzida do bloco publicitário em `raw/por-que-estimativas-de-software-falham-como-melhorar.md`.
+**Skill carregada:** `tech-mentor-leadership` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/`. Referência consultada: `references/engineering-management.md`, seção "Estimativa Técnica — Como Fazer e Como Comunicar" (T-Shirt Sizing, Story Points, PERT, Planning Poker, Spike, Tracking de Estimativas) — confirmou que o fator de correção (~1.5–2x) e a técnica de range/PERT da fonte são consistentes com a referência do skill, embora a fonte não nomeie PERT explicitamente.
+
+**Arquivos criados:**
+- `raw/por-que-estimativas-de-software-falham-como-melhorar.md` — transcrição limpa e organizada em seções (abertura → Parte 1: por que a estimativa está sempre errada [requisitos, incerteza tecnológica, pressão, viés humano, exemplo 2h→6h, crítica a story points] → como corrigir cada fator → Parte 2: como estimar o desconhecido [reduzir incerteza, PoC, desenho do sistema, quebra em tarefas, boas práticas, refinamento contínuo, range, mensurar direção do erro] → fechamento)
+- `wiki/sources/por-que-estimativas-de-software-falham-como-melhorar.md` — TL;DR, 8 key claims com evidência e confiança, conceitos tocados, open questions, raw quotes
+- `wiki/concepts/reducao-de-incerteza-antes-de-estimar.md` (novo) — tese metodológica central da fonte: método passo a passo (identificar o conhecido → testar presunções desconhecidas via PoC → desenhar o sistema → quebrar em tarefas pequenas → estimar), priorização do menos conhecido primeiro
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/estimativas-de-software.md` — `source_count` 2 → 3; quatro novas seções ("Por Que a Estimativa Original Nunca é Formalmente Invalidada", "Custo Oculto: Quanto uma Tarefa 'de 2h' Vira 6h", "Redução de Incerteza Como Pré-Requisito", "Range em Vez de Número Único", "Calibrando a Direção do Erro"); novas linhas em Relação com outros conceitos e Key Sources
+- `wiki/concepts/planning-fallacy.md` — `source_count` 2 → 3; nova seção "Exemplo Numérico: Custo Oculto Multiplicando por 3x"; nova linha em Key Sources
+- `wiki/concepts/story-points.md` — `source_count` 1 → 2; nova seção "A Equivalência Implícita com Horas (Crítica)"; nova linha em Key Sources
+- `wiki/concepts/estimativa-como-habilidade-treinavel.md` — `source_count` 1 → 2; nova seção "Em Nível de Time: Mensurar a Direção do Erro"; nova linha em Key Sources
+- `wiki/concepts/divisao-de-tarefas-em-partes-menores.md` — `source_count` 1 → 2; nova seção "Quando a Divisão Sozinha Não Basta — Sistemas Ainda Desconhecidos"; nova linha em Relação com Outros Conceitos e Key Sources
+- `wiki/concepts/planning-poker.md` — `source_count` 1 → 2; nova seção "Quem Deveria Estar na Sala"; nova linha em Conceitos Relacionados e Key Sources
+- `wiki/concepts/prova-de-conceito.md` — `source_count` 2 → 3; nova seção "PoC Como Pré-Requisito de Estimativa (Não Só de Adoção de Tecnologia)"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`reducao-de-incerteza-antes-de-estimar` em "Agile & Estimativa")
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte converge fortemente com o cluster já maduro de estimativa ([[wiki/concepts/estimativas-de-software]], [[wiki/concepts/planning-fallacy]], [[wiki/concepts/story-points]], [[wiki/concepts/estimativa-como-habilidade-treinavel]], [[wiki/concepts/divisao-de-tarefas-em-partes-menores]]), adicionando o mecanismo organizacional (por que a estimativa nunca é invalidada), um exemplo numérico concreto de custo oculto, e principalmente o método prescritivo de redução de incerteza pré-estimativa que nenhuma página existente cobria em detalhe — daí a criação da nova página central `reducao-de-incerteza-antes-de-estimar`. (2) **Crítica não-consensual sinalizada como tal**: a alegação de equivalência implícita 1 ponto ≈ 1 hora em story points é uma observação empírica do autor sobre um padrão comum, não uma regra do framework Scrum — registrada em `story-points.md` como crítica ao uso comum, não como fato que contradiz a definição formal já presente na página. (3) **PERT não nomeado pela fonte**: a técnica de range (~±33%) do vídeo é funcionalmente equivalente à estimativa em três pontos/PERT já documentada em `references/engineering-management.md` do skill, mas a fonte não usa esse nome — sinalizado como open question para uma futura fonte que trate PERT nominalmente, o que justificaria uma página própria (`wiki/concepts/estimativa-pert.md`), hoje ainda inexistente. (4) **Autor não identificado** — sem canal, nome ou outros metadados no texto colado pelo usuário; nenhuma entidade nova criada, e a nota de patrocínio (Abacus) foi condensada e isolada da transcrição por ser conteúdo comercial sem valor técnico.
+
+---
+
 ## [2026-08-18] ingest | Autenticação Federada e SSO: de LDAP e Kerberos ao SAML (Bernardo Lobato)
 
 **Fonte:** [[wiki/sources/autenticacao-federada-sso-saml-bernardo-lobato]] — transcrição de vídeo colada pelo usuário no chat (ASR bruto, pt-BR, sem necessidade de tradução), limpa e organizada em seções em `raw/autenticacao-federada-sso-saml-bernardo-lobato.md`.
@@ -7294,3 +7340,71 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha em Sources; quatro novas linhas em Concepts (`saml`, `kerberos`, `ldap`, `federated-identity`) na seção "Autenticação & Identidade"
 
 **Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte converge com [[wiki/concepts/sso-single-sign-on]] (já draft, cobria SAML só em nível de hook) e complementa [[wiki/sources/federated-identity]] (já ingerida em 2026-04-23, mas cuja página de conceito correspondente nunca tinha sido criada — lacuna fechada agora). (2) **Linhagem histórica tratada como fato pela fonte, sinalizada como interpretação do autor no Open Questions**: a ideia de que o SSO web "evoluiu" do Kerberos é uma leitura de continuidade conceitual, não uma sucessão técnica documentada — SAML e Kerberos resolvem o mesmo problema por caminhos tecnicamente independentes. Mesmo padrão de simplificação de linhagem já observado em [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] (Unix→REST). (3) **Ponte SAML→OAuth descrita de forma genérica** pela fonte, sem nomear o RFC 7522 (SAML 2.0 Bearer Assertion Profile) — registrado como lacuna técnica no Open Questions da fonte, não preenchido silenciosamente. (4) **Drift de formato corrigido incidentalmente**: a página `wiki/sources/federated-identity.md` (ingerida em uma sessão anterior, antes da convenção `[[wiki/...]]` nos wikilinks se consolidar) tinha 6 backlinks quebrados apontando para páginas nunca criadas — fix trivial aplicado diretamente por não ser uma mudança substantiva de conteúdo, apenas correção de link, conforme os invariantes de lint do `CLAUDE.md`.
+
+---
+
+## [2026-08-18] ingest | Spec Writer: Skill para Gerar Specs a Partir do PRD e os 7 Critérios de uma Boa Spec
+
+**Fonte:** [[wiki/sources/spec-writer-skill-criterios-de-boa-spec]] — transcrição colada pelo usuário no chat (ASR bruto, sem pontuação, já em pt-BR — sem necessidade de tradução), limpa, pontuada e organizada em seções em `raw/spec-writer-skill-criterios-de-boa-spec.md`.
+**Skill carregada:** `tech-mentor-ai` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/` (o `/home/nemomartins/Documentos/new/skills/` do CLAUDE.md não existe nesta máquina). Referência consultada: `references/ai/spec-driven-development-ai.md` — cobre SDD do ângulo de spec-de-output para sistemas de IA (schema/YAML/evals), um sub-domínio distinto do ângulo da fonte (spec de feature para agente de código); sem sobreposição direta de claims, então nenhuma correção ou adição feita a partir da referência.
+
+**Arquivos criados:**
+- `raw/spec-writer-skill-criterios-de-boa-spec.md` — transcrição limpa e organizada em seções (PRD de exemplo → da feature à spec → exemplo de spec de autenticação → skill "Spec Writer" em 6 etapas → gates determinísticos e contexto → demonstração prática → os 7 critérios de uma boa spec → fechamento)
+- `wiki/sources/spec-writer-skill-criterios-de-boa-spec.md` — TL;DR, 7 key claims com evidência e confiança, conceitos e entidades abordados, observações, open questions, raw quotes
+- `wiki/concepts/criterios-de-uma-boa-spec.md` (novo) — os 7 critérios (falseabilidade, comportamento/não-implementação, invariantes, edge cases, fronteira/escopo, entradas/restrições, decisões de negócio) como framework de validação de spec, com posição no fluxo SDD e exemplo do login sem redirect
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/tech-spec.md` — `source_count` 4 → 5; nova seção "Critério de Validação: os 7 Critérios de uma Boa Spec"; nova linha em Key Sources
+- `wiki/concepts/spec-driven-development.md` — `source_count` 16 → 17; nova entrada em "Ferramentas de Suporte" (skill "Spec Writer", 6 etapas, sem relação confirmada com "TLC Spec Driven"); nova linha em Key Sources
+- `wiki/concepts/prd-product-requirements-document.md` — `source_count` 5 → 6; nova seção "PRD como Camada de Contexto, Independente de Codebase Legado ou Não"; nova linha em Key Sources
+- `wiki/concepts/agente-prd.md` — `source_count` 1 → 2; nova seção "Skill Análoga um Nível Abaixo: Geração de Spec por Feature"; nova linha em Key Sources
+- `wiki/concepts/context-engineering-harness.md` — `source_count` 7 → 8; nova subseção "Exemplo Didático de Guia Faltando: o Login Sem Redirect" dentro de "Sensores vs Guias"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`criterios-de-uma-boa-spec` na seção de SDD/planejamento)
+
+---
+
+## [2026-08-18] ingest | Anti-Corruption Layer: Facade/Adapter entre Sistema Novo e Sistema Legado
+
+**Fonte:** [[wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado]] — transcrição colada pelo usuário no chat (ASR bruto, pt-BR, sem necessidade de tradução), limpa, pontuada e organizada em seções em `raw/anti-corruption-layer-facade-adapter-sistema-legado.md`.
+**Skill carregada:** `tech-mentor-backend` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/` (o `/home/nemomartins/Documentos/new/skills/` do CLAUDE.md não existe nesta máquina). Referência consultada: `references/architecture/ddd-advanced.md`, seção "Anti-Corruption Layer (ACL)" — forneceu o nome formal do padrão (a fonte nunca o nomeia explicitamente, exceto na última frase, "camada de anticorrupção"), o exemplo de código (`SAPAdapter.toPedido()`) e os padrões vizinhos de Context Map (Open Host Service, Published Language, Separate Ways).
+
+**Arquivos criados:**
+- `raw/anti-corruption-layer-facade-adapter-sistema-legado.md` — transcrição limpa e organizada em seções (o objetivo do padrão → relação com Facade/Adapter → problema de dependência, incluindo dependência escondida → problema de múltiplos sistemas legados)
+- `wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado.md` — TL;DR, 5 key claims com evidência e confiança, seção "Cruzamento com o Skill" (nome formal, direção da tradução, padrões vizinhos de Context Map, quando não vale a pena), conceitos tocados, open questions, raw quotes
+- `wiki/concepts/anti-corruption-layer.md` (novo) — padrão de Context Mapping do DDD estratégico: mecanismo (Facade vs. Adapter), motivação (dependência forte bidirecional, dependência escondida), tabela de padrões vizinhos (OHS, Published Language, Separate Ways), relação com Strangler Fig
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/adapter-pattern.md` — `source_count` 6 → 7; nova seção "Anti-Corruption Layer: Adapter como Mecanismo de Isolamento de Sistema Legado"; nova linha em Key Sources
+- `wiki/concepts/facade-pattern.md` — `source_count` 4 → 5; nova seção "Facade como Anti-Corruption Layer entre sistema novo e legado"; nova linha em Key Sources
+- `wiki/concepts/strangler-fig-pattern.md` — `source_count` 3 → 4; nova seção "O componente de tradução na fase de coexistência: Anti-Corruption Layer"; nova linha em Key Sources
+- `wiki/concepts/acoplamento.md` — `source_count` 8 → 9; nova seção "Dependência Escondida: a Forma Mais Difícil de Diagnosticar"; nova linha em Key sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`anti-corruption-layer` na seção "Padrões e Design")
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte converge com o cluster já maduro de [[wiki/concepts/adapter-pattern]], [[wiki/concepts/facade-pattern]] e [[wiki/concepts/strangler-fig-pattern]], preenchendo uma lacuna real: nenhuma página da wiki nomeava formalmente o padrão Anti-Corruption Layer antes desta ingestão, apesar de `strangler-fig-pattern.md` já descrever a fase de coexistência onde ele se aplica. (2) **Ambiguidade Facade vs. Adapter não resolvida pela fonte, parcialmente resolvida pelo skill**: a fonte trata os dois patterns como intercambiáveis para esse propósito; o skill sugere Adapter para tradução de uma interface e Facade para orquestração de múltiplas chamadas, critério registrado na nova página de conceito mas ainda sem exemplo prático de código na wiki demonstrando a distinção nesse contexto específico — sinalizado como open question na fonte. (3) **Dependência escondida via reflection**: a fonte levanta o problema (config dinâmica, reflection em runtime) mas não explica como o ACL o mitiga na prática — a nova página de conceito registra essa lacuna explicitamente em vez de inventar uma solução não presente na fonte. (4) **Autor não identificado** — transcrição colada sem nome de canal/pessoa; nenhuma entidade nova criada. (5) **ESB (`wiki/concepts/esb-enterprise-service-bus`) deliberadamente não tocado**: a fonte menciona "múltiplos sistemas legados" mas não usa o termo ESB nem descreve um barramento — forçar esse backlink seria inferência além do que a fonte sustenta, então a página não foi tocada nesta ingestão.
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte converge fortemente com o cluster já maduro de [[wiki/concepts/spec-driven-development]], [[wiki/concepts/tech-spec]] e [[wiki/concepts/prd-product-requirements-document]], contribuindo dois elementos concretos que nenhuma fonte anterior detalhava: o framework operacional de 7 critérios de qualidade de spec (daí a criação de `criterios-de-uma-boa-spec.md`) e uma segunda skill nomeada ("Spec Writer", 6 etapas) ao lado da já documentada "TLC Spec Driven". (2) **Autor não identificado** — transcrição colada sem nome de canal/pessoa; vocabulário é estilisticamente próximo do curso [[wiki/sources/formacao-ia-devs-aula-04-agentes-planejamento|Formação IA para Devs]] (PRD→spec→execução, ênfase em contexto passo a passo), mas termos centrais desta fonte ("Spec Writer", "gates determinísticos", os 7 critérios) não aparecem em nenhuma fonte anterior — sem evidência suficiente para atribuir a uma entidade, registrado como open question na própria fonte em vez de forçar um link. (3) **"Gates determinísticos" referenciado sem contexto prévio**: a fonte cita "lembra da primeira coisa que eu falei" sobre gates determinísticos vs. contexto, indicando que a transcrição fornecida é um trecho de um vídeo/aula maior — não criada página própria para o termo por falta de material suficiente; sinalizado como open question na fonte para avaliar se cabe em [[wiki/concepts/quality-gate]] ou [[wiki/concepts/sensores-vs-guias]] quando mais material aparecer. (4) **Skill `tech-mentor-ai` consultada sem gerar merge de conteúdo**: a referência `spec-driven-development-ai.md` do skill cobre SDD para specs de *output* de sistemas de IA (schema Pydantic, YAML de agente, evals em CI) — um sub-domínio distinto do ângulo desta fonte (spec de *feature* de produto para orientar um agente de código), então não havia claim conflitante ou complementar direto a mesclar.
+
+---
+
+## [2026-08-18] ingest | Por Que Você Não Deve Começar Um Projeto com Microsserviços (Renato Augusto)
+
+**Fonte:** [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — transcrição colada pelo usuário no chat (ASR bruto, pt-BR, sem necessidade de tradução), limpa, pontuada e organizada em seções em `raw/microsservicos-monolito-first-renato-augusto.md`.
+**Skill carregada:** `tech-mentor-backend` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/`. Referência consultada: `references/architecture-foundations.md`, seção "Microsserviços vs Monolito Modular" — confirmou a tabela de critérios (time, escala, deploy, latência, consistência) já usada em [[wiki/concepts/microsservicos]], mas não continha o caso Amazon Prime Video nem o princípio Monolith First nomeado — ambos tratados como contribuição nova desta fonte.
+
+**Arquivos criados:**
+- `raw/microsservicos-monolito-first-renato-augusto.md` — transcrição limpa e organizada em seções (introdução/hype → armadilha da obsessão → monolito → microsserviços → três motivos para não começar com microsserviços → DDD como resposta → Monolith First de Fowler → monolito modular na prática → livros recomendados)
+- `wiki/sources/microsservicos-monolito-first-renato-augusto.md` — TL;DR, 7 key claims com evidência e confiança, entidades e conceitos abordados, open questions, raw quotes
+- `wiki/concepts/monolith-first.md` (novo) — princípio de Fowler nomeado formalmente pela primeira vez na wiki (as duas percepções, a imagem dos dois caminhos, relação com [[wiki/sources/arquitetura-de-sacrificio|Sacrificial Architecture]])
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/microsservicos.md` — `source_count` 13 → 14; novas seções "O Caso Amazon Prime Video" e "Monolith First (Martin Fowler)"; nova linha em Key Sources
+- `wiki/concepts/monolito.md` — `source_count` 2 → 3; novas seções "Caso Real: Amazon Prime Video" e "Monolith First (Martin Fowler)"; nova linha em Key sources
+- `wiki/concepts/monolito-modular.md` — `source_count` 3 → 4; novas seções "Segunda Implementação de Referência: C#" e "Monolith First: o Enquadramento Formal desta Etapa"; nova linha em Key sources
+- `wiki/concepts/ddd.md` — `source_count` 11 → 12; nova seção "DDD como Resposta ao Terceiro Motivo para Não Começar com Microsserviços"; nova linha em Key Sources
+- `wiki/concepts/yagni.md` — `source_count` 8 → 9; nova seção "Microsserviços Prematuros como Violação Direta de YAGNI"; nova linha em Key Sources
+- `wiki/concepts/bounded-context.md` — `source_count` 1 → 2; nova seção "Módulo de Monolito Modular = Bounded Context"; nova linha em Key Sources
+- `wiki/entities/martin-fowler.md` — `source_count` 16 → 17; nova entrada na lista de termos/frameworks cunhados (Monolith First); nova linha em Key Sources
+- `wiki/entities/renato-augusto.md` — `source_count` 10 → 11; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`monolith-first` na seção "Arquitetura Backend & Event-Driven")
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte converge fortemente com o cluster já maduro de [[wiki/concepts/microsservicos]], [[wiki/concepts/monolito]], [[wiki/concepts/monolito-modular]] e [[wiki/concepts/ddd]], sem introduzir nenhuma claim conflitante; a principal contribuição nova é preencher uma lacuna real (o princípio Monolith First de Fowler não tinha página própria, apesar de [[wiki/sources/arquitetura-de-sacrificio]] já cobrir uma tese adjacente do mesmo autor) e adicionar o caso Amazon Prime Video como exemplo concreto de "big tech" que reverteu de microsserviços para monolito. (2) **Caso Amazon Prime Video sem fonte primária**: citado de memória pelo autor, sem link ou dado além de "mais de 90%" de redução de custo — tratado como **[external]** não verificado diretamente nesta ingestão; registrado em [[wiki/concepts/monolito]] com essa ressalva explícita, candidato a fonte própria se o post técnico original da Amazon for ingerido depois. (3) **Artigo Monolith First sem link direto**: a transcrição parafraseia o bliki de Fowler (incluindo a imagem dos "dois caminhos" com dragões) sem citar a URL — conteúdo consistente com o artigo real e publicamente conhecido, mas fica marcado como não verificado diretamente nesta ingestão, à espera de uma ingestão futura do artigo original. (4) **Sam Newman e Eric Evans não viraram entidades**: aparecem apenas como recomendação bibliográfica de fechamento (livros sobre migração para microsserviços e o livro-fonte de DDD), sem claim técnica atribuída a eles nesta fonte — mesmo tratamento dado a Keycloak em [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]], ficam como candidatos a stub caso apareçam com profundidade técnica em outra fonte. (5) **Autor identificado por auto-apresentação na transcrição** ("Renato Augusto aqui de novo"), consistente com o estilo de conteúdo (padrões de projeto, arquitetura, system design) já indexado como [[wiki/entities/renato-augusto]] — sem necessidade de nova entidade.

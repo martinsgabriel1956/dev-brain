@@ -3,8 +3,8 @@ type: concept
 title: "CQRS — Command Query Responsibility Segregation"
 aliases: ["command query responsibility segregation", "cqrs pattern"]
 date_created: 2026-05-31
-date_updated: 2026-08-17
-source_count: 6
+date_updated: 2026-08-18
+source_count: 7
 tags: [cqrs, arquitetura, event-sourcing, ddd, sistemas-distribuidos]
 skill: tech-mentor-backend
 status: draft
@@ -106,8 +106,15 @@ Mensageria ([[fila]], [[filas-e-workers]]) não é obrigatória para implementar
 
 [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]] atribui a criação do CQRS a [[wiki/entities/greg-young|Greg Young]] (baseado em CQS) e ancora a motivação prática num exemplo concreto de agregado em [[wiki/concepts/ddd|DDD]]: um agregado de ordem de serviço (ordem → pedido → cliente → indicação) sempre carrega tudo junto ao ser buscado via repositório, garantindo invariantes de domínio, mas tornando consultas de exibição desnecessariamente pesadas quando só uma parte dos dados é necessária. Separar o sistema em um lado de comandos (que segue os agregados) e um lado de leitura (livre da estrutura do agregado, podendo usar bancos orientados a documento ou a grafo) resolve essa rigidez.
 
+## Origem Textual: o Post de Martin Fowler (2011)
+
+[[wiki/sources/cqrs-martin-fowler]] é a fonte primária mais antiga já ingerida sobre CQRS — o post do bliki de [[wiki/entities/martin-fowler|Martin Fowler]] (14/07/2011) que popularizou a definição hoje mais citada: separar o modelo conceitual de comando (escrita) do de consulta (leitura), porque usar o mesmo modelo para as duas responsabilidades, em domínios complexos, produz um modelo mais complexo que não atende bem nenhuma delas. Fowler restringe o escopo de aplicação a dois cenários — domínios complexos onde a separação simplifica genuinamente a modelagem (minoria dos casos), e aplicações de alta performance com cargas de leitura/escrita muito diferentes exigindo escalabilidade independente — e amarra a decisão de escopo ao conceito de [[wiki/concepts/bounded-context]]: CQRS nunca deve ser aplicado ao sistema inteiro, só a bounded contexts específicos.
+
+**Tom de cautela mais forte que as fontes derivadas:** Fowler afirma diretamente que a maioria das implementações de CQRS que observou se provou problemática, e sugere que um reporting database tradicional muitas vezes obtém benefícios semelhantes sem a sobrecarga de complexidade do CQRS — uma reserva mais explícita do que a lista de trade-offs já registrada acima.
+
 ## Key Sources
 
+- [[wiki/sources/cqrs-martin-fowler]] — post original do bliki de Martin Fowler (2011); origem textual da definição mais citada; tom de cautela mais forte ("a maioria das implementações que vi foi problemática"); amarra o escopo de aplicação a bounded context
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — versão didática write/read split com read replicas e trade-off de replication lag

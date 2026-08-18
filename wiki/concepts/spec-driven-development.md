@@ -3,8 +3,8 @@ type: concept
 title: "Spec-Driven Development"
 aliases: ["SDD", "spec driven", "desenvolvimento orientado a especificação", "planning-first"]
 date_created: 2026-06-02
-date_updated: 2026-08-12
-source_count: 16
+date_updated: 2026-08-18
+source_count: 17
 tags: [spec-driven, planejamento, ia-para-devs, harness, agente, qualidade, loop-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -86,6 +86,7 @@ A spec não é uma "living documentation" permanente. É produzida para guiar um
 - **Claude Code Plan Mode**: `/plan` ou Shift+Tab para entrar no modo de planejamento sem executar
 - **TLC Spec Driven** (Tech Leads Club): skill instalável globalmente que conduz as quatro fases (specify → design → tasks → execute) via perguntas iterativas; se um PRD já existir, a skill usa-o como ponto de partida e só pergunta o que não estiver claro. Fases são opcionais — projeto pequeno pode pedir só spec + tasks, pulando o design.
 - **Spec Kit** (GitHub): mesma família de princípios, considerado mais engessado/opinativo que a alternativa acima
+- **Spec Writer** (skill pessoal, autor não identificado): skill em 6 etapas (validar inputs → entrevista → sumarizar → gerar documento → validar contra os [[wiki/concepts/criterios-de-uma-boa-spec|7 critérios de qualidade de spec]] → escrever output) que converte uma feature de um PRD já existente numa tech spec granular (technical overview, componentes, decisões técnicas, contratos de API, migration, estratégia de teste). Sem relação confirmada com "TLC Spec Driven" — nomes, etapas e critério de validação são diferentes. Ver [[wiki/sources/spec-writer-skill-criterios-de-boa-spec]]
 
 ## Execução com Subagentes Paralelos a Partir do Breakdown de Tasks
 
@@ -164,3 +165,4 @@ O ponto não invalida SDD como definido acima (spec como contrato de execução,
 - [[wiki/sources/cinco-escolas-programacao-com-ia]] — Sean Grove (OpenAI): "a especificação é o artefato valioso; o código é só uma projeção dela" — segunda fonte independente para a mesma inversão de prioridade já central nesta página
 - [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — exemplo de campo com skill "TLC Spec Driven": breakdown de tasks com paralelismo executado por 4 subagentes simultâneos; artefato de "estado" para continuidade entre janelas de contexto
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — Gherkin escrito antes da implementação como equivalente funcional da spec: única peça do sistema que o agente não derivou da própria cabeça, usada para validar implementação e testes contra a mesma fonte da verdade
+- [[wiki/sources/spec-writer-skill-criterios-de-boa-spec]] — skill "Spec Writer" (6 etapas) e framework de 7 critérios de validação de spec (falseabilidade, comportamento, invariantes, edge cases, fronteira, inputs/restrições, decisões de negócio)

@@ -3,8 +3,8 @@ type: entity
 title: "Martin Fowler"
 aliases: ["Fowler", "martinfowler.com"]
 date_created: 2026-07-07
-date_updated: 2026-08-12
-source_count: 15
+date_updated: 2026-08-18
+source_count: 17
 tags: [thoughtworks, autor, testes, arquitetura, tech-debt, refactoring, agile]
 skill: tech-mentor-testing
 status: stable
@@ -38,10 +38,12 @@ Segundo [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]
 - Feature Toggles — ver [[wiki/sources/feature-flags]]
 - [[contract-testing]] — terminologia (`ContractTest`) usada de forma consistente entre suas fontes; artigo próprio original chamava-se "Integration Contract Test", renomeado depois para "Contract Test" quando o termo mais curto ganhou adoção na indústria — ver [[wiki/sources/contract-test-martin-fowler]]
 - [[wiki/concepts/self-initializing-fake]] — recomenda esse padrão de Fake auto-validável como técnica para construir doubles usados em contract tests
+- [[wiki/concepts/monolith-first]] — princípio (bliki, martinfowler.com/bliki/MonolithFirst.html) de que projetos novos não devem começar com microsserviços; formulado a partir da observação de que quase toda história de microsserviços bem-sucedida começou como monolito, e quase todo sistema que nasceu já distribuído teve sérios problemas — ver [[wiki/sources/microsservicos-monolito-first-renato-augusto]]
 - [[test-doubles]] — divulgou o termo guarda-chuva "TestDouble" no bliki em 2006, mas a taxonomia dos cinco tipos (Dummy/Fake/Stub/Spy/Mock) é de autoria de [[wiki/entities/gerard-meszaros]], não dele — ver [[wiki/sources/test-double-martin-fowler]] (relato de Fowler) e agora também a **fonte primária** de Meszaros em [[wiki/sources/test-double-xunitpatterns-meszaros]]
 - [[wiki/concepts/seedwork]] — termo cunhado por ele para descrever frameworks mínimos reconstruídos por cada time, a partir de discussão originada num post de Michael Feathers
 - [[wiki/concepts/application-boundary]] — tese de 2003 de que "aplicações são construções sociais", argumentando contra a previsão da época de que SOA tornaria aplicações obsoletas — ver [[wiki/sources/application-boundary-martin-fowler]]
 - [[wiki/concepts/microsservicos]] — coautor (com [[wiki/entities/james-lewis]]) do artigo de 2014 que cunhou a definição do termo hoje citada universalmente na indústria; mesma característica de precisão terminológica descrita acima aparece aqui como recusa a declarar microsserviços "o futuro" sem ressalvas — ver [[wiki/sources/microsservicos-martin-fowler-james-lewis]]
+- [[wiki/concepts/cqrs]] — post do bliki (2011) que popularizou a definição mais citada do termo; mesmo traço de cautela terminológica aparece aqui como reserva explícita ("a maioria das implementações que vi foi problemática") e como restrição de escopo a [[wiki/concepts/bounded-context]] — ver [[wiki/sources/cqrs-martin-fowler]]
 
 ## Hospeda, mas não escreve: Consumer-Driven Contracts
 
@@ -85,3 +87,5 @@ Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter us
 - [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] — revisita o Quadrante de Fowler e acrescenta camada de mensuração formal (debt ratio/SQALE) e alocação de tempo (regra dos 20%/25%)
 - [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — artigo de 2014 que cunhou a definição de microsserviços, coautoria com [[wiki/entities/james-lewis]]
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — definição de arquitetura de Ralph Johnson (via artigo de Fowler "Who Needs an Architect?"); Unit of Work como alternativa ao Repository simples
+- [[wiki/sources/cqrs-martin-fowler]] — post original do bliki (2011) que popularizou a definição de CQRS; tom de cautela contra aplicar o padrão ao sistema inteiro
+- [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — princípio Monolith First (bliki), atribuído via fonte secundária (transcrição de Renato Augusto, sem link direto ao artigo original)

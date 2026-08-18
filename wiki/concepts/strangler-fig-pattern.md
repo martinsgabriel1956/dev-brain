@@ -4,7 +4,7 @@ title: "Strangler Fig Pattern"
 aliases: ["strangler pattern", "figueira mata-pau", "migração incremental"]
 date_created: 2026-08-03
 date_updated: 2026-08-10
-source_count: 3
+source_count: 4
 tags: [strangler-fig, migração, legado, proxy, cdc, feature-flags, arquitetura]
 skill: tech-mentor-system-design
 status: stub
@@ -34,6 +34,10 @@ O [[wiki/concepts/ciclo-da-desgraca-software]] descreve o padrão de falha: rees
 
 Esse mesmo padrão de coexistência é o mecanismo concreto por trás da etapa "Migração" do [[wiki/concepts/ciclo-de-mudanca-de-arquitetura]]: depois que a POC valida o TO-BE na escala real, a transição do AS-IS para o TO-BE quase nunca é instantânea — é aqui que Strangler Fig entra.
 
+## O componente de tradução na fase de coexistência: Anti-Corruption Layer
+
+Durante a fase "Coexist", legado e sistema novo convivem sob o mesmo domínio de negócio, mas normalmente com modelos de dados diferentes. O componente que absorve essa diferença de vocabulário — traduzindo entre os dois subsistemas para que nenhuma das pontas fique fortemente acoplada à outra — é um [[wiki/concepts/anti-corruption-layer]], tipicamente implementado como [[wiki/concepts/facade-pattern|Facade]] ou [[wiki/concepts/adapter-pattern|Adapter]]. Sem essa camada, uma mudança de contrato em qualquer um dos dois lados (legado ou novo) quebra o outro diretamente.
+
 ## Armadilhas
 
 - **Dados compartilhados**: legado e novo sistema acessando o mesmo banco ao mesmo tempo cria acoplamento oculto. Preferir Event-carried State Transfer ou réplica via CDC.
@@ -53,3 +57,4 @@ O caso mais extremo de "legado que não se reescreve" é justamente sistemas [[w
 - [[wiki/sources/strangler-fig]]
 - [[wiki/sources/ciclo-de-mudanca-de-arquitetura]]
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — COBOL e SOAP como exemplos reais de "modernizar a borda, manter o núcleo legado" em vez de reescrita total
+- [[wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado]] — o componente de tradução (ACL) que evita dependência forte entre sistema novo e legado durante a coexistência

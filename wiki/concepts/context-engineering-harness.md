@@ -3,8 +3,8 @@ type: concept
 title: "Context Engineering (nível Harness)"
 aliases: ["context engineering harness", "engenharia de contexto", "project knowledge ia"]
 date_created: 2026-06-02
-date_updated: 2026-08-14
-source_count: 7
+date_updated: 2026-08-18
+source_count: 8
 tags: [context-engineering, harness, rules, skills, project-knowledge]
 skill: tech-mentor-ai
 status: draft
@@ -64,6 +64,10 @@ O user harness divide-se em duas categorias (Branas, Aula 01 Parte 2):
 
 > "Qualidade dos seus sensores faz a diferença no resultado." — Rodrigo Branas
 
+### Exemplo Didático de Guia Faltando: o Login Sem Redirect
+
+[[wiki/sources/spec-writer-skill-criterios-de-boa-spec]] ilustra concretamente o que acontece quando um guia (a spec, nesse caso) não cobre um comportamento: pedir "implemente um login" sem especificar o que acontece após o sucesso não dá ao agente informação suficiente para saber que deve redirecionar para o dashboard — ele decide "do jeito que achar que é bom". O framework de [[wiki/concepts/criterios-de-uma-boa-spec|7 critérios de qualidade de spec]] dessa fonte existe justamente para fechar esse tipo de lacuna antes da execução.
+
 ## Rules vs Skills
 
 | | Rules | Skills |
@@ -87,3 +91,4 @@ Context engineering não é gerar documentação estática uma vez — é fazer 
 - [[wiki/sources/formacao-ia-devs-aula-02-rules]]
 - [[wiki/sources/formacao-ia-devs-aula-03-skills]]
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — contexto (docs, design docs, playbooks) como ativo de longo prazo análogo a teste automatizado; busca de documentação em tempo real vs. estática
+- [[wiki/sources/spec-writer-skill-criterios-de-boa-spec]] — exemplo didático de guia faltando (login sem redirect especificado) e framework de 7 critérios para fechar lacunas de contexto numa spec

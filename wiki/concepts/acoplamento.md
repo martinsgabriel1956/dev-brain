@@ -4,7 +4,7 @@ title: "Acoplamento"
 aliases: ["coupling", "baixo acoplamento", "alto acoplamento"]
 date_created: 2026-04-25
 date_updated: 2026-08-18
-source_count: 8
+source_count: 9
 tags: [acoplamento, software-design, clean-code, arquitetura, under-engineering]
 skill: tech-mentor-backend
 status: stable
@@ -86,6 +86,10 @@ Esse terceiro padrão generaliza o próprio problema já descrito nesta página 
 
 Sobre medição, apresenta as métricas de [[wiki/entities/uncle-bob|Robert C. Martin]]: acoplamento **aferente** (Ca, conexões que entram) e **eferente** (Ce, conexões que saem), abstração `A = ma/(ma+mc)`, instabilidade `I = Ce/(Ca+Ce)` e distância da sequência principal `D = |A + I − 1|`, além das duas regiões-armadilha do gráfico A×I — a **zona de dor** (concreto e rígido demais → frágil) e a **zona de inutilidade** (abstrato demais → ninguém usa). A página [[wiki/concepts/metricas-de-acoplamento]] consolida essas fórmulas e sua interpretação.
 
+## Dependência Escondida: a Forma Mais Difícil de Diagnosticar
+
+[[wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado]] distingue dependência forte *explícita* (chamada direta a outro componente, fácil de rastrear no código) de dependência **escondida**: uma chamada cuja URL/alvo vem de uma configuração externa ao código — banco de dados, arquivo de config, variável de ambiente — ou, em linguagens com reflection (.NET, Java), um *linkage* entre componentes montado em tempo de execução. Esse tipo de acoplamento não aparece como `import` ou chamada estática, então nenhuma leitura do código-fonte revela a dependência — ela só se manifesta quando a configuração muda e algo quebra em produção. Entre sistema novo e sistema legado, essa dependência forte (explícita ou escondida) é o problema central que o [[wiki/concepts/anti-corruption-layer]] existe para resolver.
+
 ## Relações
 
 - [[metricas-de-acoplamento]] — como medir acoplamento por componente: aferente/eferente, abstração, instabilidade, distância da sequência principal
@@ -105,3 +109,4 @@ Sobre medição, apresenta as métricas de [[wiki/entities/uncle-bob|Robert C. M
 - [[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] — heurística "de quem é essa linha?"; três estágios de acoplamento exemplificados via refatoração de um jogo em JavaScript (misturado → Factory com chamada estática → Observer sem conhecimento estático)
 - [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — dependency structure analysis como gate de CI: import circular, camadas invertidas, módulo de implementação acessando outro sem passar por módulo de API
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — feature envy como acoplamento "content" atravessando classes; god object como acoplamento resolvido via composição
+- [[wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado]] — dependência forte entre sistema novo e legado; dependência escondida via configuração dinâmica ou reflection em runtime

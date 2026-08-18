@@ -3,8 +3,8 @@ type: concept
 title: "Adapter Pattern"
 aliases: ["padrão adapter", "design pattern adapter", "adaptador"]
 date_created: 2026-05-01
-date_updated: 2026-08-06
-source_count: 6
+date_updated: 2026-08-18
+source_count: 7
 tags: [design-patterns, structural, adapter, oop, integracao]
 skill: tech-mentor-backend
 status: stable
@@ -65,6 +65,10 @@ O Adapter adapta **comportamento** — expõe métodos de uma interface incompat
 
 Caso didático (geração de relatório em PDF): uma classe de negócio (`SalesReportGenerator`) que dá `new` direto numa lib externa (DomPDF) e chama seus métodos específicos (`loadHtml`, `setPaper`, `render`) está violando [[single-responsibility]] — muda por dois motivos (regra de negócio *e* API da lib) — e fica impossível de testar unitariamente sem gerar o PDF de verdade. Extraindo uma interface própria do domínio (`PdfAdapter.generate(fileName, content)`) e um adaptador concreto (`DomPdfAdapter`) injetado via construtor, a troca por outra lib com API totalmente diferente (TCPDF: `writeHTML`, `setFont`) exige só um novo adaptador (`TcpdfAdapter implements PdfAdapter`) — zero alteração na classe de negócio. Regra prática: sempre que uma classe de alto nível instancia diretamente uma classe concreta de baixo nível/externa, é sinal para aplicar o Adapter.
 
+## Anti-Corruption Layer: Adapter como Mecanismo de Isolamento de Sistema Legado
+
+Quando o Adapter é usado especificamente para proteger o modelo de domínio de um sistema legado ou externo problemático — não só para trocar uma lib — o padrão ganha um nome próprio no DDD estratégico: [[wiki/concepts/anti-corruption-layer]]. A motivação é a mesma (dependência forte entre alto e baixo nível), mas o contexto muda de "troca de biblioteca" para "coexistência com um sistema legado durante uma migração incremental" (ver [[wiki/concepts/strangler-fig-pattern]]).
+
 ## Inversão de Dependência nas Fronteiras da Clean Architecture
 
 As interfaces `Input Boundary`, `Output Boundary` e `Data Access` descritas em [[wiki/concepts/clean-architecture]] são o mesmo mecanismo estrutural do Adapter — uma interface própria do domínio que isola o código de alto nível de uma dependência concreta — aplicado nas fronteiras entre Controller/Use Case, Use Case/Presenter e Use Case/persistência. Ver [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]], que chama essas interfaces de "protocolo".
@@ -78,3 +82,4 @@ As interfaces `Input Boundary`, `Output Boundary` e `Data Access` descritas em [
 - [[wiki/sources/design-pattern-adapter]] — caso DomPDF/TCPDF: extração de interface + adaptador concreto elimina acoplamento a lib externa e viabiliza testabilidade
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — Input/Output Boundary e Data Access interface como aplicação do mesmo princípio nas fronteiras da Clean Architecture
 - [[wiki/sources/seis-design-patterns-mais-usados-na-pratica]] — analogia do adaptador de tomada de viagem; exemplo de tradução de campos de API externa (`first_name`/`last_name` → `nome`/`sobrenome`) e de troca de biblioteca HTTP (Axios → `fetch`) sem alterar o resto do código; ORMs (Prisma, TypeORM) e drivers de banco como adapters
+- [[wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado]] — Adapter como mecanismo estrutural do Anti-Corruption Layer, isolando dependência forte entre sistema novo e legado

@@ -3,8 +3,8 @@ type: concept
 title: "YAGNI — You Ain't Gonna Need It"
 aliases: ["yagni", "you ain't gonna need it", "não vou precisar disso"]
 date_created: 2026-04-23
-date_updated: 2026-07-27
-source_count: 8
+date_updated: 2026-08-18
+source_count: 9
 tags: [arquitetura, principios, pragmatismo, over-engineering, xp]
 skill: tech-mentor-backend
 status: stable
@@ -62,8 +62,13 @@ Ver também [[wiki/concepts/fazer-a-coisa-mais-simples-que-poderia-funcionar]] �
 
 [[wiki/sources/microsservicos-martin-fowler-james-lewis]] descreve um exemplo concreto de YAGNI aplicado a arquitetura de microsserviços: um time na Austrália orienta a construção de novos serviços por [[wiki/concepts/contract-testing|contratos orientados pelo consumidor]] definidos *antes* do código — o serviço é então construído apenas até o ponto em que satisfaz o contrato, "uma abordagem elegante para evitar o dilema do YAGNI ao construir novo software". É o mesmo princípio de "não implemente até precisar" aplicado no nível de fronteira de serviço, não só no nível de classe/função.
 
+## Microsserviços Prematuros como Violação Direta de YAGNI
+
+[[wiki/sources/microsservicos-monolito-first-renato-augusto]] nomeia explicitamente YAGNI como o princípio por trás da recomendação de não começar um projeto com [[wiki/concepts/microsservicos]]: no início, a prioridade deveria ser validar a ideia via MVP com velocidade máxima, e toda a infraestrutura extra de um projeto que nasce distribuído (mensageria, CI/CD por serviço, observabilidade distribuída, domínio obrigatório de CQRS/Event-Driven/Event Storming) é tempo tirado da construção das funcionalidades essenciais do domínio — antes mesmo de se saber se o produto tem valor para o usuário final. É a primeira fonte na wiki a nomear o princípio explicitamente nesse contexto, reforçando (sem contradizer) o que [[wiki/sources/underengineering-overengineering-mario-souto]] já registrava sobre microsserviços prematuros como sinal de over-engineering.
+
 ## Key Sources
 
+- [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — microsserviços prematuros nomeados explicitamente como violação de YAGNI; tempo de infraestrutura distribuída como custo de oportunidade contra validação de MVP
 - [[sources/clean-architecture-ia-custo-real]]
 - [[sources/super-productivity-ai-architecture-guide]]
 - [[sources/addy-osmani-80-problem-agentic-coding]]

@@ -3,8 +3,8 @@ type: concept
 title: "DDD — Domain-Driven Design"
 aliases: ["domain-driven design", "ddd", "domínio"]
 date_created: 2026-05-31
-date_updated: 2026-08-17
-source_count: 10
+date_updated: 2026-08-18
+source_count: 12
 tags: [ddd, arquitetura, bounded-context, aggregate, domain-events, hexagonal]
 skill: tech-mentor-backend
 status: draft
@@ -80,8 +80,18 @@ Um Value Object (ex: `content` de uma `Notification`, validado e imutável no do
 
 No DDD, o agregado é responsável por proteger suas próprias invariantes — regras de negócio moram **dentro** da entidade, não em services externos. O oposto é o [[wiki/concepts/modelo-de-dominio-anemico]]: dados sem comportamento, um objeto que na verdade é uma estrutura de dados. [[wiki/sources/encapsulamento-proteger-estado-invalido]] demonstra a versão concreta disso em Java — pôr as validações (`price > 0`, `stock >= 0`) dentro dos métodos de comando da própria classe, via [[wiki/concepts/encapsulamento]], para que o objeto nunca entre em estado inválido.
 
+## Bounded Context como Escopo de Aplicação do CQRS (Martin Fowler)
+
+[[wiki/sources/cqrs-martin-fowler]] usa [[wiki/concepts/bounded-context]] como o critério que decide onde aplicar [[wiki/concepts/cqrs]]: nunca ao sistema inteiro, só a bounded contexts específicos onde a separação leitura/escrita genuinamente compensa a complexidade. É um exemplo concreto de bounded context sendo usado não só como fronteira de modelagem, mas como fronteira de decisão arquitetural.
+
+## DDD como Resposta ao Terceiro Motivo para Não Começar com Microsserviços
+
+[[wiki/sources/microsservicos-monolito-first-renato-augusto]] posiciona DDD como a resposta direta ao motivo mais importante para não começar um projeto com microsserviços: no início, o domínio ainda está sendo descoberto (regras de negócio, processos e entidades em constante evolução), e decompor fisicamente o sistema antes disso gera fronteiras de serviço que não representam corretamente as responsabilidades reais — exigindo retrabalho de múltiplos microsserviços e de seus bancos de dados isolados quando o domínio verdadeiro se revela (exemplo didático: estoque e promoções cruzando as fronteiras "óbvias" entre produtos, pedidos e clientes num e-commerce). A fonte é explícita ao afirmar que DDD "não é uma arquitetura, não é uma forma de organizar as pastinhas do projeto" — é a abordagem que usa bounded contexts para entender o domínio antes de fisicamente distribuir o sistema em [[wiki/concepts/monolito-modular|monolito modular]] primeiro, e só depois em [[wiki/concepts/microsservicos]] (ver [[wiki/concepts/monolith-first]]).
+
 ## Key Sources
 
+- [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — DDD/bounded context como resposta à falta de conhecimento de domínio no início de um projeto, motivo principal para adiar microsserviços
+- [[wiki/sources/cqrs-martin-fowler]] — bounded context como escopo de aplicação do CQRS
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
 - [[wiki/sources/encapsulamento-proteger-estado-invalido]] — entidade rica vs. anêmica na prática: invariantes protegidas dentro do objeto via encapsulamento
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]

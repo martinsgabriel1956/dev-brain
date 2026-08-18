@@ -3,8 +3,8 @@ type: concept
 title: "Task-Based UI"
 aliases: ["UI baseada em tarefas", "interface orientada a intenção"]
 date_created: 2026-08-17
-date_updated: 2026-08-17
-source_count: 1
+date_updated: 2026-08-18
+source_count: 2
 tags: [cqrs, ux, ddd, arquitetura]
 skill: tech-mentor-system-design
 status: stub
@@ -25,3 +25,4 @@ Essa abordagem alinha a interface ao vocabulário do domínio — próximo da Ub
 ## Key Sources
 
 - [[wiki/sources/cqrs-dicionario-programador-codigo-fonte-tv]] — explica task-based UI como um dos quatro aspectos de implementação de CQRS
+- [[wiki/sources/cqrs-martin-fowler]] — post original do bliki (2011) já cita task-based UI como um dos padrões que combinam naturalmente com CQRS
