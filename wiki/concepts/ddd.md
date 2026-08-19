@@ -90,6 +90,7 @@ No DDD, o agregado é responsável por proteger suas próprias invariantes — r
 
 ## Key Sources
 
+- [[wiki/sources/monolith-first-martin-fowler]] — fonte primária do argumento de dificuldade de acertar bounded contexts no início de um projeto, base do princípio Monolith First que motiva adiar microsserviços até o domínio amadurecer
 - [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — DDD/bounded context como resposta à falta de conhecimento de domínio no início de um projeto, motivo principal para adiar microsserviços
 - [[wiki/sources/cqrs-martin-fowler]] — bounded context como escopo de aplicação do CQRS
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]

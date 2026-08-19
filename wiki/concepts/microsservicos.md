@@ -86,6 +86,7 @@ Times pequenos e autônomos — um dos benefícios centrais de microsserviços �
 
 ## Key Sources
 
+- [[wiki/sources/monolith-first-martin-fowler]] — fonte primária: MicroservicePremium, os quatro caminhos práticos de execução, e o contra-argumento reconhecido por Fowler a favor de começar direto com microsserviços em substituições de sistema
 - [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — caso Amazon Prime Video, princípio Monolith First de Fowler nomeado explicitamente, YAGNI como mecanismo por trás da recomendação de não começar com microsserviços
 - [[wiki/sources/arquitetura-de-sacrificio]] — Fowler **desaconselha** microsserviços como arquitetura de sacrifício (distribuição + assincronia = amplificadores de complexidade); melhor monolito primeiro, desmontado gradualmente depois
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — ESB como contraponto histórico direto ao "smart endpoints, dumb pipes"; por que ESBs continuam essenciais em empresas com grande legado mesmo perdendo espaço em projetos novos

@@ -3,8 +3,8 @@ type: concept
 title: "Dependency Injection"
 aliases: ["DI", "injeção de dependência"]
 date_created: 2026-08-04
-date_updated: 2026-08-18
-source_count: 2
+date_updated: 2026-08-19
+source_count: 3
 tags: [design-patterns, acoplamento, testabilidade, di]
 skill: tech-mentor-backend
 status: stub
@@ -22,7 +22,12 @@ Técnica em que um componente recebe suas dependências de fora (via construtor,
 
 [[wiki/sources/design-pattern-facade-codigo-fonte-tv]] expõe um trade-off concreto: um [[facade-pattern|Facade]] que instancia seus serviços internos com `new` fica acoplado a implementações concretas, mas se em vez disso recebesse esses serviços via DI no construtor, o código cliente teria que montar e passar todos eles na hora de usar a Facade — anulando parte do ganho de simplicidade que motivou criar a Facade. Nenhuma solução é apresentada; é registrado como trade-off real, não como erro a corrigir.
 
+## Custo Reverso: Implementação Real Fica Difícil de Rastrear
+
+[[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] nomeia o reverso da testabilidade: quando um componente recebe sua dependência via DI através de uma interface (ex.: um use case recebendo `UserRepository`), o ponto onde o componente é lido não revela qual implementação concreta está rodando — é preciso rastrear onde o componente foi instanciado (a composition root) e qual implementação foi passada como parâmetro naquele ponto. Ganha-se substituibilidade e testabilidade, perde-se rastreabilidade direta na leitura do código.
+
 ## Key Sources
 
 - [[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] — DI citada como técnica que afrouxa mas não remove o acoplamento do segundo estágio; base de testes unitários e de integração
 - [[wiki/sources/design-pattern-facade-codigo-fonte-tv]] — tensão entre DI completa e a simplicidade que o Facade deveria oferecer ao cliente
+- [[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] — exemplo prático (`CreateUser`/`UserRepository`/`PostgresUserRepository`) e o custo de rastreabilidade na hora de debugar

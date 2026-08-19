@@ -3,8 +3,8 @@ type: concept
 title: "Fundação Técnica"
 aliases: ["fundamentos", "base técnica", "foundations"]
 date_created: 2026-05-16
-date_updated: 2026-08-17
-source_count: 9
+date_updated: 2026-08-19
+source_count: 10
 tags: [aprendizado, carreira, fundamentos]
 skill: tech-mentor-leadership
 status: stable
@@ -63,9 +63,14 @@ Isso não se aplica a quem nunca construiu a fundação — um dev que aprendeu 
 
 [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] contribui um dado de primeira pessoa sobre onde a fundação hoje se paga no dia a dia de trabalho (distinto de entrevista): "LeetCode caiu, System Design subiu" — inversão explícita do que o próprio autor defendia dois anos antes. A fundação se traduz concretamente em System Design, modelagem de banco de dados, tradução de requisitos nebulosos em specs cristalinas, CI/CD com testes que cobrem casos reais, observabilidade e capacidade interdisciplinar de produto — não em algoritmos de entrevista nem em sintaxe de baixo nível (ver [[wiki/concepts/sintaxe-vs-conhecimento-perene]]).
 
+## Estrutura de Dados e Design Patterns Viram Piso de Júnior
+
+[[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] adiciona um dado de progressão temporal ao mapa da fundação: numa releitura de lista própria de 4 anos antes, o autor rebaixa estrutura de dados/algoritmos e design patterns/arquitetura de "requisito de pleno" para "requisito de júnior" — o conceito continua indispensável (não vira dispensável, como o resto da fundação nesta página), mas passa a ser esperado mais cedo na progressão de carreira, porque revisar o que a IA decide já exige esse repertório desde o início.
+
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]]
+- [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — estrutura de dados e design patterns rebaixados de requisito de pleno para requisito de júnior, mantendo-se indispensáveis
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — "LeetCode caiu, System Design subiu": onde a fundação se paga no trabalho real, distinto de onde ela se paga na entrevista — metáfora do puxadinho; hype vs. fundação; Akita aprendendo Elixir e Crystal em semanas graças à experiência acumulada
 - [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]] — progressão de 3 estágios; OOP modeling como pré-requisito; otimização prematura
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]] — raciocínio matemático como componente da fundação que não envelhece entre ciclos de mercado

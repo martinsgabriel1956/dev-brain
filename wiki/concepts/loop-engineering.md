@@ -3,9 +3,9 @@ type: concept
 title: "Loop Engineering"
 aliases: ["loop engineering", "engenharia de loop", "loop de harness", "loop fixo", "loop criador"]
 date_created: 2026-07-10
-date_updated: 2026-08-12
-source_count: 7
-tags: [loop-engineering, harness, agente, automacao, planner-executor-critic, loop-fixo, loop-criador, spec-driven, ralph-loop, anthropic, graph-engineering, loop-deterministico, loop-agentico, judge-pattern, orquestracao-de-modelos]
+date_updated: 2026-08-19
+source_count: 9
+tags: [loop-engineering, harness, agente, automacao, planner-executor-critic, loop-fixo, loop-criador, spec-driven, ralph-loop, anthropic, graph-engineering, loop-deterministico, loop-agentico, judge-pattern, orquestracao-de-modelos, langchain, erro-composto]
 skill: tech-mentor-ai
 status: stable
 ---
@@ -96,6 +96,10 @@ Um loop de harness combina, tipicamente:
 3. **Verificador** — um modelo diferente do executor, que julga o resultado contra a rúbrica e aprova ou gera follow-up
 4. **[[wiki/concepts/grafo-como-abstracao-de-agentes|Grafo]]** — a estrutura que controla o fluxo entre esses componentes, com condições de parada definidas por quem constrói o sistema (não pela LLM)
 
+## Terceira Fonte Confirma a Cunhagem pela LangChain
+
+[[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] confirma, de forma independente, a atribuição da cunhagem formal do termo à [[wiki/entities/langchain|LangChain]] em 2026 — mesma leitura já registrada nesta página, agora com uma terceira fonte convergindo sem contradição. Essa fonte também resume as mesmas perguntas de engenharia já centrais aqui (quando terminar o loop, quantas tentativas, quando pedir ajuda humana, o que fazer se uma ferramenta falhar, como conter consumo descontrolado de tokens), sem adicionar critério novo além do que já está documentado acima.
+
 ## Origem: o Padrão ReAct (2022/2023)
 
 A ideia central de loop engineering não é nova em 2026 — vem do padrão **ReAct** (Reason + Act), de 2022/2023: um ciclo que agrega a resposta anterior ao contexto e repete até concluir a tarefa, compondo o próximo contexto a cada volta. Esse loop mínimo (`while` que acumula tool calls e respostas) é a base de todo [[wiki/concepts/ciclo-agente|agent loop]] e de todo sistema agêntico por trás dos harnesses atuais — não é peça nova, é o padrão sobre o qual harness e loop engineering foram construídos ([[wiki/sources/loop-engineering-harness-e-a-frase-que-viralizou]]).
@@ -131,6 +135,10 @@ Framework paralelo ao dos "três níveis do dev loop" acima (autor e nomenclatur
 
 Harness engineering melhora o ambiente de uma única execução (tools disponíveis, contexto, memória — ver [[wiki/concepts/harness]]). Loop engineering trata a execução inteira como uma unidade repetível: o mesmo loop pode ser disparado por um prompt do usuário, por um schedule (ex.: rodar toda meia-noite verificando queda de vendas) ou por um evento externo, sem alterar a estrutura.
 
+## Quarta Fonte Confirma a Extensão para Graph Engineering, com Data Concreta do Tweet-Origem
+
+[[wiki/sources/graph-engineering-matematica-do-erro-composto]], continuação direta do vídeo já registrado em [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] (mesma referência ao tweet de [[wiki/entities/peter-steinberger]]), é a primeira fonte a citar uma **data concreta** para esse tweet — 18 de julho — e estende a composição de erro já documentada aqui (95%/etapa × 50 etapas ≈ 60%) para os **saltos entre agentes** num grafo: 85% de informação preservada por handoff dá 72% em 2 saltos, 61% em 3, 44% em 5. Ver detalhe completo em [[wiki/concepts/grafo-como-abstracao-de-agentes]]. A mesma fonte também nomeia explicitamente "estado" e "verificação" como dois dos quatro componentes formais de um grafo de agentes (ao lado de nós e arestas), e argumenta que — diferente de um loop, cujo gargalo é um único verificador — um grafo exige um verificador por nó.
+
 ## Limite do Loop: Uma Métrica Nunca é Suficiente
 
 [[wiki/sources/graph-engineering-do-loop-ao-grafo]] propõe [[wiki/concepts/grafo-como-abstracao-de-agentes|grafo]] como o degrau seguinte ao loop, motivado por um limite específico: um loop otimizando uma condição de parada baseada numa única métrica (ex.: reduzir CAC numa campanha) pode estar cego para outra métrica que piora em consequência (churn), derrubando o LTV e invalidando o próprio ganho (ver [[wiki/concepts/ltv-cac]]). A fonte atribui a ideia a um tweet de [[wiki/entities/peter-steinberger]] e especula que a origem prática do termo "graph engineering" foi ele rodando múltiplos loops em paralelo (~US$ 1 milhão/mês em tokens, segundo a fonte) até que esses loops começassem a conflitar entre si ou operar sobre informação desatualizada — motivando substituir "prompt + ticket" por um grafo passado a um orquestrador.
@@ -155,3 +163,5 @@ Para trabalho corporativo, pesquisa interna e entendimento de cliente (knowledge
 - [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — vídeo 2 da série de Pedro Nauke: divisão loop determinístico/agêntico, custo de contexto inicial em modelos de reasoning alto, padrão judge (stop hook), padrão orquestrador de modelos, gerenciamento de estado via `state.md`, skills como encapsulamento de loop
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — origem do Ralph Loop (Geoffrey Huntley, julho de 2025); os quatro níveis oficiais de loop do guia da Anthropic (turn-based, goal-based, time-based, proactive)
 - [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — "o teu único prompt na verdade vira 20-30 prompts": o agente faz teste end-to-end, verifica se o jogo funciona e itera até o resultado; loop goal-based aplicado a construção de jogo
+- [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — terceira fonte independente confirmando a cunhagem do termo pela LangChain (2026)
+- [[wiki/sources/graph-engineering-matematica-do-erro-composto]] — continuação direta de [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]]; data concreta do tweet-origem (18 de julho); extensão da composição de erro para handoffs entre agentes (85%→44% em 5 saltos); grafo exige verificador por nó, não um único gargalo

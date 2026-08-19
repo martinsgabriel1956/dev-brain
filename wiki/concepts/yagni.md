@@ -4,7 +4,7 @@ title: "YAGNI — You Ain't Gonna Need It"
 aliases: ["yagni", "you ain't gonna need it", "não vou precisar disso"]
 date_created: 2026-04-23
 date_updated: 2026-08-18
-source_count: 9
+source_count: 10
 tags: [arquitetura, principios, pragmatismo, over-engineering, xp]
 skill: tech-mentor-backend
 status: stable
@@ -66,8 +66,13 @@ Ver também [[wiki/concepts/fazer-a-coisa-mais-simples-que-poderia-funcionar]] �
 
 [[wiki/sources/microsservicos-monolito-first-renato-augusto]] nomeia explicitamente YAGNI como o princípio por trás da recomendação de não começar um projeto com [[wiki/concepts/microsservicos]]: no início, a prioridade deveria ser validar a ideia via MVP com velocidade máxima, e toda a infraestrutura extra de um projeto que nasce distribuído (mensageria, CI/CD por serviço, observabilidade distribuída, domínio obrigatório de CQRS/Event-Driven/Event Storming) é tempo tirado da construção das funcionalidades essenciais do domínio — antes mesmo de se saber se o produto tem valor para o usuário final. É a primeira fonte na wiki a nomear o princípio explicitamente nesse contexto, reforçando (sem contradizer) o que [[wiki/sources/underengineering-overengineering-mario-souto]] já registrava sobre microsserviços prematuros como sinal de over-engineering.
 
+## YAGNI na Fonte Primária de Monolith First
+
+[[wiki/sources/monolith-first-martin-fowler]] é a fonte primária do argumento já registrado acima via segunda mão: no início de uma aplicação nova não há certeza de que ela será útil, e a melhor forma de descobrir costuma ser construir uma versão simples e testar — nessa fase, o [[wiki/concepts/microservice-premium|MicroservicePremium]] de microsserviços é um peso que YAGNI recomenda evitar até que a necessidade seja real.
+
 ## Key Sources
 
+- [[wiki/sources/monolith-first-martin-fowler]] — fonte primária: YAGNI como um dos dois argumentos centrais contra começar com microsserviços, via o custo do MicroservicePremium
 - [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — microsserviços prematuros nomeados explicitamente como violação de YAGNI; tempo de infraestrutura distribuída como custo de oportunidade contra validação de MVP
 - [[sources/clean-architecture-ia-custo-real]]
 - [[sources/super-productivity-ai-architecture-guide]]

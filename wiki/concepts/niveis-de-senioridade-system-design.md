@@ -3,8 +3,8 @@ type: concept
 title: "System Design por Nível de Senioridade"
 aliases: ["system design junior pleno senior", "expectativas de system design por nível", "o que esperar de cada senioridade em arquitetura"]
 date_created: 2026-07-27
-date_updated: 2026-08-10
-source_count: 4
+date_updated: 2026-08-19
+source_count: 5
 tags: [system-design, carreira, senioridade, junior, pleno, senior, entrevistas]
 skill: tech-mentor-system-design
 status: draft
@@ -52,9 +52,14 @@ Desenvolver um sistema inteiro do zero para uma equipe trabalhar em cima — dec
 - [[wiki/concepts/senior-vs-staff-visao-arquitetural]] — eixo complementar (escopo de produto vs. escopo de vertical) para o nível sênior plus/staff
 - [[wiki/concepts/causa-raiz]] e [[wiki/concepts/over-engineering]] — a armadilha de complexidade desnecessária associada ao nível sênior plus/staff nesta fonte
 
+## Confirmação Independente: System Design Não Mudou Mesmo Com IA
+
+[[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] traz uma confirmação de outro ângulo: numa releitura de 13 requisitos de pleno listados 4 anos antes, em que 6 itens caíram para commodity e 3 foram rebaixados para júnior, system design é citado explicitamente como um dos apenas dois itens que "envelheceram bem" — sem alteração relevante de importância. Convergente com o fato desta página de que a expectativa de system design para pleno se mantém estável entre fontes diferentes, mesmo com ~4,5 anos de agentes de IA escrevendo código no intervalo.
+
 ## Key Sources
 
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]]
+- [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — system design citado como um dos dois únicos itens que não mudaram numa releitura de 13 requisitos de pleno de 4 anos atrás
 - [[wiki/sources/system-design-entrevista-cinema-draw-io]] — confirmação prática independente: o apresentador, ao desenhar um rascunho de entrevista, decide não aprofundar escalabilidade/RPS por considerar isso pergunta de senioridade mais alta — mesma gradação descrita nesta página, vinda de outra fonte/canal
 - [[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] — eixo complementar de sênior vs. staff baseado em escopo (produto vs. vertical), não profundidade técnica
 - [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — gradação prática num problema de banco de dados: pleno dá a solução pronta ("cache + réplicas"), sênior investiga contexto (RPS, hotspots, criticidade) antes de responder e sabe que 10k req/s se resolve só com índice + pooling

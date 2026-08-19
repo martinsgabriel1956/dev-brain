@@ -3,8 +3,8 @@ type: concept
 title: "CRUD Resolvido"
 aliases: ["crud ia", "crud automatizado", "porta de entrada fechada"]
 date_created: 2026-05-31
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-08-19
+source_count: 3
 tags: [crud-resolvido, era-agentica, dev-junior, mercado-de-trabalho, ia-e-dev]
 skill: tech-mentor-backend
 status: stable
@@ -56,8 +56,13 @@ CRUD resolvido torna o aprendizado passivo ainda mais perigoso: um júnior que u
 
 [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] nomeia diretamente essa figura: "operador de CRUD" — quem soube dominar o CRUD melhor que muita gente que vive disso, mas nunca foi além. A fonte argumenta que o problema não é saber CRUD, é *parar* nele — e que a IA comoditizou justamente essa camada, deixando quem só tem CRUD competindo com uma máquina mais rápida e barata no que faz de mais básico.
 
+## Comoditização Chega ao Tooling Básico: Git e Terminal
+
+[[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] estende o mesmo mecanismo para além do CRUD: numa releitura de uma lista própria de 4 anos atrás sobre requisitos de pleno, o autor reclassifica Git avançado (merge conflict manual, stash, patch) e comandos básicos de terminal como commodity — a IA resolve isso melhor, mais rápido e mais barato, ao ponto de o autor relatar não resolver um merge conflict manualmente há meses. Reforça que a fronteira de "o que a IA já resolveu" avança além da geração de features (CRUD) para dentro das próprias ferramentas de trabalho do dev. Ver a tabela completa de reclassificação de 13 itens na fonte.
+
 ## Key Sources
 
 - [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — cunha o termo "operador de CRUD"; liga o problema a complexidade acidental vs. essencial e a "fácil vs. simples" da IA
+- [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — estende a comoditização para Git avançado e terminal; reclassifica estrutura de dados, paradigma de linguagem e design patterns de "requisito de pleno" para "requisito de júnior"

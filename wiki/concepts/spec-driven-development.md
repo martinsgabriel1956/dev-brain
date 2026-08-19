@@ -3,8 +3,8 @@ type: concept
 title: "Spec-Driven Development"
 aliases: ["SDD", "spec driven", "desenvolvimento orientado a especificação", "planning-first"]
 date_created: 2026-06-02
-date_updated: 2026-08-18
-source_count: 17
+date_updated: 2026-08-19
+source_count: 19
 tags: [spec-driven, planejamento, ia-para-devs, harness, agente, qualidade, loop-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -147,8 +147,13 @@ O ponto não invalida SDD como definido acima (spec como contrato de execução,
 
 [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] reporta um teste comparativo do próprio autor (Pedro Nauke), contrariando a leitura popular de que "spec driven morre" em loops agênticos de long-running tasks: comparou spec driven quebrado em tasks em loop determinístico, spec driven quebrado em tasks em loop agêntico, e execução sem quebra de tasks (spec inteira direto pro loop). Sem breakdown prévio, o resultado piorou tanto na definição de tarefas em runtime quanto na execução — mais demorado. Com artefatos de estado e breakdown definidos previamente (critérios de sucesso, testes, descrição mínima por task), o resultado melhorou, inclusive quando o loop era agêntico. Ver [[wiki/concepts/task-looper]] e [[wiki/concepts/loop-engineering#Loop Determinístico vs. Loop Agêntico]].
 
+## Spec-Driven Development Como Grafo Não-Percebido
+
+[[wiki/sources/graph-engineering-matematica-do-erro-composto]] propõe um mapeamento direto entre SDD e [[wiki/concepts/grafo-como-abstracao-de-agentes|grafo de agentes]]: a spec vira várias tasks (**nós**), tasks independentes rodam em paralelo (**arestas**), cada task tem sua verificação (**verificação por nó**), o review final é o **nó de convergência**, e aprovar o plano antes de executar é o **humano** dentro do grafo. A tese: quem já pratica SDD bem já desenha grafos sem chamar assim — é o mesmo mapa mental, só sem o nome novo.
+
 ## Key Sources
 
+- [[wiki/sources/graph-engineering-matematica-do-erro-composto]] — mapeamento de SDD para os quatro componentes de um grafo de agentes (tasks=nós, paralelismo=arestas, testes=verificação por nó, review final=convergência, aprovação do plano=humano)
 - [[wiki/sources/formacao-ia-devs-aula-01-abertura]]
 - [[wiki/sources/formacao-ia-devs-aula-02-mercado-perfil-profissional]]
 - [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]
@@ -166,3 +171,4 @@ O ponto não invalida SDD como definido acima (spec como contrato de execução,
 - [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — exemplo de campo com skill "TLC Spec Driven": breakdown de tasks com paralelismo executado por 4 subagentes simultâneos; artefato de "estado" para continuidade entre janelas de contexto
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — Gherkin escrito antes da implementação como equivalente funcional da spec: única peça do sistema que o agente não derivou da própria cabeça, usada para validar implementação e testes contra a mesma fonte da verdade
 - [[wiki/sources/spec-writer-skill-criterios-de-boa-spec]] — skill "Spec Writer" (6 etapas) e framework de 7 critérios de validação de spec (falseabilidade, comportamento, invariantes, edge cases, fronteira, inputs/restrições, decisões de negócio)
+- [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — reafirma a tese central (spec como fonte de verdade) num panorama mais amplo de vocabulário técnico de 2026; menção ao Spec Kit do GitHub sem detalhe novo além do já registrado na tabela de ferramentas acima

@@ -3,8 +3,8 @@ type: concept
 title: "Confiar no Frontend (Client-Side Trust Anti-Pattern)"
 aliases: ["confiar no frontend", "nunca confie no cliente", "client-side validation bypass", "trust boundary violation"]
 date_created: 2026-07-04
-date_updated: 2026-07-31
-source_count: 2
+date_updated: 2026-08-19
+source_count: 3
 tags: [appsec, trust-boundary, business-logic, client-side-security, owasp]
 skill: tech-mentor-security
 status: stable
@@ -41,7 +41,12 @@ Este é o princípio subjacente que também explica por que [[wiki/concepts/idor
 
 [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] descreve um teste correlato, mas distinto do bypass client-side clássico desta página: em vez de manipular variáveis no DevTools do frontend, o teste consiste em atacar diretamente a API tentando burlar uma regra de negócio que deveria ser reforçada no servidor — exemplo dado: registrar check-in em datas passadas ou futuras que a regra do produto não deveria permitir. A pergunta-guia da fonte é "eu consigo ser malandra no sistema?". O princípio de correção é o mesmo desta página — toda regra de negócio precisa ser revalidada no servidor —, mas o vetor de ataque já pula a camada de UI e vai direto à API, então "nunca confiar no frontend" não é suficiente sozinho: é preciso também não confiar em nenhum parâmetro de requisição que o cliente controla, mesmo vindo de um client legítimo.
 
+## Variante: Restrição de Formulário Client-Side (`maxlength`) Não é Filtro
+
+[[wiki/sources/xss-cross-site-scripting-luiz-viana]] mostra uma aplicação mais estreita do mesmo princípio: no DVWA, um campo de nome tem `maxlength="10"` no HTML, e removê-lo via DevTools basta para digitar um payload de [[wiki/concepts/xss]] maior. Não é uma regra de negócio (preço, saldo) como nos exemplos acima, mas o mecanismo é idêntico — uma restrição imposta só no client-side é conveniência de UI, não segurança; a validação real precisa acontecer no servidor.
+
 ## Key Sources
 
 - [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]]
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — variante de bypass de regra de negócio direto na API (não via DevTools)
+- [[wiki/sources/xss-cross-site-scripting-luiz-viana]] — variante em nível de formulário: atributo `maxlength` removido via DevTools para digitar payload de XSS maior que o limite de UI

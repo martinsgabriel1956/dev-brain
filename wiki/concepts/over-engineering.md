@@ -3,8 +3,8 @@ type: concept
 title: "Over-Engineering"
 aliases: ["overengineering", "verde neném", "engenharia excessiva", "gold plating"]
 date_created: 2026-06-09
-date_updated: 2026-08-10
-source_count: 12
+date_updated: 2026-08-19
+source_count: 13
 tags: [design, qualidade, anti-pattern, aprendizado, design-patterns, dora, under-engineering]
 skill: tech-mentor-leadership
 status: stable
@@ -87,6 +87,10 @@ A progressão que evita isso:
 
 Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], o autor lista a recusa deliberada de Kubernetes, arquitetura de microsserviço, multicloud e arquitetura event-driven para um marketplace de SaaS que aguentou 230 mil+ requisições numa VPS única de 1 vCPU/4GB — um caso de MVP levando a recusa de over-engineering até a camada de infraestrutura, não só de código. Reforça o mesmo padrão já registrado em [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]]: adotar arquitetura pesada "para parecer em dia com o mercado" antes de qualquer necessidade real comprovada. Ver [[wiki/concepts/mvp]].
 
+## Clean Architecture: Trade-Off de Tempo de Vida do Projeto, Não Regra Fixa
+
+[[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] enquadra [[wiki/concepts/clean-architecture]] como um caso concreto onde a linha entre engenharia adequada e over-engineering depende do tempo de vida esperado do projeto: o boilerplate e as abstrações extras (interface + adapter para algo que poderia ser 4-5 linhas) só se pagam se o projeto durar tempo suficiente (a fonte usa "meses" como possivelmente insuficiente e "anos" como cenário onde compensa) — e só se a regra de negócio efetivamente não vazar para outras camadas. Reforça que over-engineering não é uma propriedade fixa de uma técnica, mas do descompasso entre o investimento e o horizonte real do projeto.
+
 ## Relação com Otimização Prematura
 
 [[otimizacao-prematura]] é o análogo de over-engineering no nível de performance: aplicar esforço excessivo onde não há necessidade comprovada. Ambos são sintomas de afoiteza.
@@ -124,3 +128,4 @@ Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], 
 - [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — recusa deliberada de Kubernetes/microsserviços/event-driven num SaaS real, rodando numa VPS de 1 vCPU/4GB sob carga e ataque
 - [[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] — estudo de caso de over-engineering arquitetural completo (microfrontends parciais para unificar 4 sistemas de fornecedores) resolvendo o sintoma errado, contrastado com a solução enxuta (dashboard read-only + BFF) que resolve a causa raiz
 - [[wiki/sources/large-scale-vs-complex-architecture]] — distinção terminológica entre over-engineering (excesso de ferramental, comum em large scale) e over-thinking (excesso de pensamento sobre regras, comum em arquitetura complexa)
+- [[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] — Clean Architecture como exemplo de trade-off dependente do tempo de vida do projeto: boilerplate só se paga em projetos de longa duração onde a regra de negócio não vaza para outras camadas

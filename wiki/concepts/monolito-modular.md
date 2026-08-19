@@ -4,7 +4,7 @@ title: "Monolito Modular"
 aliases: ["monolito modular", "modular monolith", "majestic monolith", "bounded modules"]
 date_created: 2026-08-10
 date_updated: 2026-08-18
-source_count: 4
+source_count: 5
 tags: [monolito-modular, monolito, arquitetura, ports-adapters, migracao, backend]
 skill: tech-mentor-backend
 status: draft
@@ -40,6 +40,7 @@ Contratos entre módulos garantem [[wiki/concepts/separation-of-concerns]] e [[w
 
 ## Key sources
 
+- [[wiki/sources/monolith-first-martin-fowler]] — fonte primária de Monolith First: MicroservicePremium, YAGNI e dificuldade de bounded contexts como os dois argumentos que justificam o monolito modular como etapa inicial
 - [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — segunda implementação de referência (C#), enquadramento formal via Monolith First de Fowler
 - [[wiki/sources/arquitetura-de-sacrificio]] — boa modularidade é o que permite *sacrificar módulos individuais* em vez do sistema inteiro conforme ele cresce (Fowler)
 - [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]]

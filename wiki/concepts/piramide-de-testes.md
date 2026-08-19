@@ -3,8 +3,8 @@ type: concept
 title: "Pirâmide de Testes"
 aliases: ["test pyramid", "ice cream cone", "testing trophy", "estratégia de testes"]
 date_created: 2026-04-22
-date_updated: 2026-08-12
-source_count: 7
+date_updated: 2026-08-19
+source_count: 8
 tags: [testes, pirâmide, estratégia, unitário, integração, e2e, projetos-novos]
 skill: tech-mentor-testing
 status: stable
@@ -141,9 +141,14 @@ Nessa leitura, o teste de maior valor por unidade de custo tende a ser um teste 
 
 [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] relata um caso onde remover testes E2E (Playwright) da suíte — em favor de só integração/unidade, por questão de velocidade — fez erros se acumularem sem detecção ao longo de um [[wiki/concepts/loop-engineering|loop criador]] rodando autonomamente (jogo com muitas variáveis de estado). A correção não foi voltar à base ampla de sempre: manter os testes E2E como critério de entrega de cada fase do loop, mas sem persisti-los/acumulá-los — cada fase precisa rodar o Playwright ao vivo e provar a jornada ponta a ponta antes de ser considerada concluída. Caso concreto de tensão entre velocidade de feedback (favorece a base da pirâmide) e detecção de regressão em sistemas com muitas variáveis (favorece o topo).
 
+## Testes Como Requisito Crescente de Pleno, Não Só de Processo
+
+[[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] traz o mesmo racional de "testes como seguro contra IA" (já registrado via [[wiki/sources/roadmap-dev-senior-2026]]) sob a ótica de progressão de carreira: revisitando uma lista própria de 4 anos atrás sobre requisitos de pleno, o autor reclassifica testes automatizados como um dos únicos itens que **ficaram mais importantes** (não apenas mantidos) — junto de tooling avançado. Relato de primeira pessoa: escreve mais testes hoje do que em qualquer momento anterior da carreira, e delega cada vez menos a escrita autônoma de testes à própria IA, preferindo planejar quais testes escrever e como rodá-los no CI.
+
 ## Key Sources
 
 - [[sources/piramide-de-testes]]
+- [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — testes automatizados reclassificados como requisito que ficou mais importante (não só mantido) na progressão de pleno, junto de tooling avançado
 - [[sources/roadmap-dev-senior-2026]] — testes como seguro contra decisões ruins da IA (pilar 5)
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]] — base da pirâmide como pré-requisito de segurança para refatorar
 - [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — E2E como critério de aceite (sem acumular testes) para não perpetuar erros em loop agêntico longo

@@ -3,8 +3,8 @@ type: concept
 title: "Engenheiro vs. Programador"
 aliases: ["programador vs engenheiro", "mentalidade de engenharia", "software engineer vs coder"]
 date_created: 2026-07-03
-date_updated: 2026-08-17
-source_count: 7
+date_updated: 2026-08-19
+source_count: 8
 tags: [carreira, mentalidade, arquitetura, senioridade]
 skill: tech-mentor-leadership
 status: draft
@@ -66,9 +66,14 @@ Não é acumular ferramentas (ver [[wiki/concepts/apego-a-ferramentas]]), mas de
 
 [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] formula a mesma distinção como risco de estagnação de carreira: quem só domina a mesma capacidade que a IA já entrega tende a travar num teto — porque a empresa passa a contratar a IA em vez da pessoa quando a capacidade das duas é a mesma. O diferencial sustentável é entender *como as coisas funcionam por baixo* (System Design, banco de dados, tradução de requisitos, CI/CD, observabilidade, feature flags), não operar bem a ferramenta. Relato ilustrativo: devs júnior com acesso irrestrito a modelos de IA ainda cometiam erros típicos de júnior que um sênior com experiência identificava como não sendo a melhor forma de resolver o problema — a IA amplificou a capacidade deles, mas não supriu o julgamento que faltava.
 
+## Soft Skills Como o Que Sobra Quando a Execução É Comoditizada
+
+[[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] chega ao mesmo eixo por um caminho de autocorreção: revisitando uma lista própria de 13 requisitos de pleno de 4 anos atrás, o autor reclassifica 6 itens como commodity e 3 como rebaixados de pleno para júnior — e conclui que o único item que sobra como diferencial real de um pleno hoje é soft skills (code review, feedback, documentação, adaptação a processo), antes tratado como item de rodapé na própria lista original. Ver [[wiki/concepts/soft-skills-como-diferencial-de-pleno]] para o detalhamento dessa tese específica.
+
 ## Key Sources
 
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]]
+- [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — autocorreção de lista própria de 4 anos atrás: soft skills reclassificado de item de rodapé para único diferencial real de pleno
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — quem tem o mesmo teto de capacidade da IA é substituído por ela; diferencial é entender o funcionamento, não operar a ferramenta
 - [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — "gerar código ≠ saber construir software"; IA como copiloto, não substituto de julgamento; foco no impacto sobre Dev Júnior
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]] — relato de tech lead sênior que perdeu a capacidade de explicar seu próprio PR gerado por IA

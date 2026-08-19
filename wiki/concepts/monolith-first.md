@@ -4,10 +4,10 @@ title: "Monolith First"
 aliases: ["monolito primeiro", "monolith first", "martinfowler.com/bliki/monolithfirst"]
 date_created: 2026-08-18
 date_updated: 2026-08-18
-source_count: 1
-tags: [monolito, monolito-modular, microsservicos, martin-fowler, arquitetura, ddd]
+source_count: 2
+tags: [monolito, monolito-modular, microsservicos, martin-fowler, arquitetura, ddd, yagni, bounded-context]
 skill: tech-mentor-backend
-status: stub
+status: stable
 ---
 
 # Monolith First
@@ -37,6 +37,11 @@ O bliki de Fowler ilustra a escolha com dois caminhos ao iniciar um sistema: o c
 
 Distinto mas complementar a [[wiki/sources/arquitetura-de-sacrificio]] (outro artigo de Fowler, 2014): Sacrificial Architecture argumenta que a primeira arquitetura de um produto deve ser tratada como descartável, otimizada para aprendizado rápido, não para durar — Monolith First é mais específico, focado diretamente na escolha monolito vs. microsserviços no dia 1. Ambos convergem na mesma recomendação prática: monolito primeiro, distribuir depois, com necessidade real como critério de extração.
 
+## Fonte Primária: o Artigo Original de Fowler
+
+[[wiki/sources/monolith-first-martin-fowler]] é o bliki original (3 jun 2015) — confirma ponto a ponto o relato secundário que já estava registrado nesta página e acrescenta: o termo formal **MicroservicePremium** (o "prêmio"/sobretaxa de gerenciar um conjunto de serviços, que só compensa em sistemas mais complexos, ver [[wiki/concepts/microservice-premium]]); os dois argumentos centrais nomeados explicitamente como [[wiki/concepts/yagni|YAGNI]] e dificuldade de acertar [[wiki/concepts/bounded-context|BoundedContexts]] logo no início; quatro caminhos práticos de execução da estratégia (monolito modular desenhado com cuidado, descascar microsserviços gradualmente das bordas, tratar o monolito como [[wiki/concepts/arquitetura-de-sacrificio|Sacrificial Architecture]], ou começar com poucos serviços de granulação grossa — um "duolith"); e um contra-argumento que Fowler reconhece explicitamente: começar direto com microsserviços pode fazer sentido em substituições de sistemas existentes, onde as fronteiras já são conhecidas, desde que o time já tenha experiência com microsserviços.
+
 ## Key Sources
 
+- [[wiki/sources/monolith-first-martin-fowler]] — fonte primária: MicroservicePremium, os dois argumentos (YAGNI e BoundedContexts), quatro caminhos práticos, contra-argumento
 - [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — nomeação explícita do princípio, as duas percepções de Fowler, e a imagem dos "dois caminhos" do bliki

@@ -3,8 +3,8 @@ type: entity
 title: "Martin Fowler"
 aliases: ["Fowler", "martinfowler.com"]
 date_created: 2026-07-07
-date_updated: 2026-08-18
-source_count: 17
+date_updated: 2026-08-19
+source_count: 19
 tags: [thoughtworks, autor, testes, arquitetura, tech-debt, refactoring, agile]
 skill: tech-mentor-testing
 status: stable
@@ -38,7 +38,7 @@ Segundo [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]
 - Feature Toggles — ver [[wiki/sources/feature-flags]]
 - [[contract-testing]] — terminologia (`ContractTest`) usada de forma consistente entre suas fontes; artigo próprio original chamava-se "Integration Contract Test", renomeado depois para "Contract Test" quando o termo mais curto ganhou adoção na indústria — ver [[wiki/sources/contract-test-martin-fowler]]
 - [[wiki/concepts/self-initializing-fake]] — recomenda esse padrão de Fake auto-validável como técnica para construir doubles usados em contract tests
-- [[wiki/concepts/monolith-first]] — princípio (bliki, martinfowler.com/bliki/MonolithFirst.html) de que projetos novos não devem começar com microsserviços; formulado a partir da observação de que quase toda história de microsserviços bem-sucedida começou como monolito, e quase todo sistema que nasceu já distribuído teve sérios problemas — ver [[wiki/sources/microsservicos-monolito-first-renato-augusto]]
+- [[wiki/concepts/monolith-first]] — princípio (bliki, 2015, martinfowler.com/bliki/MonolithFirst.html) de que projetos novos não devem começar com microsserviços; formulado a partir da observação de que quase toda história de microsserviços bem-sucedida começou como monolito, e quase todo sistema que nasceu já distribuído teve sérios problemas; sustentado por YAGNI e pela dificuldade de acertar bounded contexts no início — ver a fonte primária [[wiki/sources/monolith-first-martin-fowler]]
 - [[test-doubles]] — divulgou o termo guarda-chuva "TestDouble" no bliki em 2006, mas a taxonomia dos cinco tipos (Dummy/Fake/Stub/Spy/Mock) é de autoria de [[wiki/entities/gerard-meszaros]], não dele — ver [[wiki/sources/test-double-martin-fowler]] (relato de Fowler) e agora também a **fonte primária** de Meszaros em [[wiki/sources/test-double-xunitpatterns-meszaros]]
 - [[wiki/concepts/seedwork]] — termo cunhado por ele para descrever frameworks mínimos reconstruídos por cada time, a partir de discussão originada num post de Michael Feathers
 - [[wiki/concepts/application-boundary]] — tese de 2003 de que "aplicações são construções sociais", argumentando contra a previsão da época de que SOA tornaria aplicações obsoletas — ver [[wiki/sources/application-boundary-martin-fowler]]
@@ -63,7 +63,11 @@ Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter us
 
 ## "Quem precisa de um arquiteto?" e a definição de arquitetura de Ralph Johnson
 
-[[wiki/sources/arquitetura-limpa-na-pratica]] abre discutindo definições de arquitetura de software e cita o artigo de Fowler para a IEEE Software (2003), *Who Needs an Architect?*, no qual ele recolhe a definição de Ralph Johnson: arquitetura é o "entendimento compartilhado" que os desenvolvedores mais experientes de um projeto têm sobre a divisão do sistema em componentes e como esses componentes interagem via interfaces. O mesmo livro também usa o padrão **Unit of Work** de Fowler (*PoEAA*) como alternativa ao Repository simples para lidar com concorrência — ver [[wiki/concepts/repository-pattern]].
+[[wiki/sources/arquitetura-limpa-na-pratica]] abre discutindo definições de arquitetura de software e cita o artigo de Fowler para a IEEE Software (2003), *Who Needs an Architect?*, no qual ele recolhe a definição de Ralph Johnson: arquitetura é o "entendimento compartilhado" que os desenvolvedores mais experientes de um projeto têm sobre a divisão do sistema em componentes e como esses componentes interagem via interfaces. O mesmo livro também usa o padrão **[[wiki/concepts/unit-of-work|Unit of Work]]** de Fowler (*PoEAA*) como alternativa ao Repository simples para lidar com concorrência — ver [[wiki/concepts/repository-pattern]].
+
+## Unit of Work (PoEAA): mecanismo completo demonstrado com SQLAlchemy
+
+[[wiki/sources/unit-of-work-padrao-de-design]] detalha o padrão de Fowler independentemente da menção acima: um ponto de coleta que acumula operações (criar, atualizar, remover) e as aplica todas de uma vez num `commit`, com `rollback` desfazendo o lote inteiro se qualquer operação falhar. Demonstrado com uma implementação artesanal em Python e depois com SQLAlchemy, onde o objeto `Session` é a implementação real do padrão — ver [[wiki/concepts/unit-of-work]].
 
 ## Ver também
 
@@ -87,5 +91,7 @@ Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter us
 - [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] — revisita o Quadrante de Fowler e acrescenta camada de mensuração formal (debt ratio/SQALE) e alocação de tempo (regra dos 20%/25%)
 - [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — artigo de 2014 que cunhou a definição de microsserviços, coautoria com [[wiki/entities/james-lewis]]
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — definição de arquitetura de Ralph Johnson (via artigo de Fowler "Who Needs an Architect?"); Unit of Work como alternativa ao Repository simples
+- [[wiki/sources/unit-of-work-padrao-de-design]] — Unit of Work (PoEAA) detalhado: mecanismo de commit/rollback em lote, implementação artesanal em Python e exemplo real com SQLAlchemy
 - [[wiki/sources/cqrs-martin-fowler]] — post original do bliki (2011) que popularizou a definição de CQRS; tom de cautela contra aplicar o padrão ao sistema inteiro
+- [[wiki/sources/monolith-first-martin-fowler]] — fonte primária do bliki Monolith First (2015): MicroservicePremium, YAGNI, dificuldade de bounded contexts, quatro caminhos práticos de execução
 - [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — princípio Monolith First (bliki), atribuído via fonte secundária (transcrição de Renato Augusto, sem link direto ao artigo original)

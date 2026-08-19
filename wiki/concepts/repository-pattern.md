@@ -3,8 +3,8 @@ type: concept
 title: "Repository Pattern"
 aliases: ["padrão repositório", "repository"]
 date_created: 2026-05-01
-date_updated: 2026-08-03
-source_count: 4
+date_updated: 2026-08-19
+source_count: 5
 tags: [design-patterns, data-access, repository, infrastructure]
 skill: tech-mentor-backend
 status: stub
@@ -27,7 +27,9 @@ Na prática de um repositório Data Mapper, a conversão campo-a-campo entre ent
 
 ## Concorrência: Unit of Work como alternativa mais robusta
 
-[[wiki/sources/arquitetura-limpa-na-pratica]] reconhece uma limitação comum de repositórios simples (uma interface por agregado, sem transações): conflitos de concorrência (ex: editar a mesma nota em dois dispositivos) não são tratados. Alternativas citadas: deixar operações do repositório ou do caso de uso atômicas, ou usar o padrão **Unit of Work** (Fowler, *PoEAA*) em conjunto com o Repository — mantém uma lista de objetos afetados por uma transação, coordenando escritas e resolvendo conflitos ao final da requisição.
+[[wiki/sources/arquitetura-limpa-na-pratica]] reconhece uma limitação comum de repositórios simples (uma interface por agregado, sem transações): conflitos de concorrência (ex: editar a mesma nota em dois dispositivos) não são tratados. Alternativas citadas: deixar operações do repositório ou do caso de uso atômicas, ou usar o padrão **[[wiki/concepts/unit-of-work]]** (Fowler, *PoEAA*) em conjunto com o Repository — mantém uma lista de objetos afetados por uma transação, coordenando escritas e resolvendo conflitos ao final da requisição.
+
+[[wiki/sources/unit-of-work-padrao-de-design]] mostra esse par concretamente: SQLAlchemy combina os dois padrões na mesma ferramenta — as classes ORM implementam o Repository (abstração de acesso a dados), e o objeto `Session` implementa o Unit of Work (acumula operações e só escreve no banco em `commit`, com `rollback` desfazendo tudo se algo falhar no meio). Ver [[wiki/concepts/unit-of-work]] para o mecanismo completo.
 
 ## Key Sources
 
@@ -35,3 +37,4 @@ Na prática de um repositório Data Mapper, a conversão campo-a-campo entre ent
 - [[wiki/sources/mappers-conversao-entre-camadas]]
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — Data Access interface + Data Mapper no fluxo completo da Clean Architecture
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — exemplo de repositório MongoDB (schemaless), crítica a ORMs que anotam entidades de domínio, e Unit of Work como alternativa para concorrência
+- [[wiki/sources/unit-of-work-padrao-de-design]] — SQLAlchemy como implementação real de Repository + Unit of Work combinados (ORM classes + Session)

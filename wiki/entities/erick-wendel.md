@@ -3,8 +3,8 @@ type: entity
 title: "Erick Wendel"
 aliases: ["Erick Wendel"]
 date_created: 2026-07-21
-date_updated: 2026-08-17
-source_count: 2
+date_updated: 2026-08-19
+source_count: 3
 tags: [criador-de-conteudo, node-js, testes, brasil, carreira, junior]
 skill: tech-mentor-testing
 status: stub
@@ -16,7 +16,12 @@ Criador de conteúdo brasileiro sobre Node.js e testes automatizados, com quase 
 
 **Open question — possível duplicata:** uma transcrição de vídeo sobre Grafana Cloud/OpenTelemetry ingerida em 2026-08-06 tem o nome do canal distorcido pelo reconhecimento de fala como "Eric Wend"/"Eric Winda" — foneticamente muito mais próximo de "Erick Wendel" do que da entidade [[wiki/entities/eric-lenda]] (à qual essa fonte acabou sendo atribuída, por sobreposição de tema com uma fonte anterior já catalogada sob esse nome). Não descartada a hipótese de que [[wiki/entities/eric-lenda]] e esta página sejam a mesma pessoa. Reforço em 2026-08-17: o vídeo sobre Dev Júnior traz a mesma auto-apresentação oral, "eu sou Eric Wend", e tem tema (carreira/educação) mais próximo do perfil já descrito nesta página do que do perfil técnico de observabilidade de `eric-lenda.md` — atribuído aqui, mas a ambiguidade de identidade continua sem resolução. Não mesclado — precisa de confirmação humana antes de qualquer merge de identidade.
 
+## Gatilho de Vídeo Alheio Sobre Requisitos de Pleno
+
+[[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] registra Erick Wendel não como autor, mas como gatilho: ele tuitou marcando o apresentador de outro canal ao encontrar um vídeo antigo desse apresentador (4 anos, ~51 mil visualizações) sobre requisitos de pleno — motivando a releitura ponto a ponto que constitui essa fonte. Sinal adicional (não conclusivo) de que Erick Wendel é referência recorrente e reconhecida no nicho de conteúdo de carreira/educação em programação no Brasil.
+
 ## Key Sources
 
 - [[wiki/sources/3-pilares-testes-automatizados-produtividade]]
 - [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — reflexão sobre o futuro do Dev Júnior na era da IA; comparação de sua trajetória com a dos irmãos que estão começando agora
+- [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — citado como gatilho (tweet) de um vídeo de outro apresentador sobre requisitos de pleno, não como autor

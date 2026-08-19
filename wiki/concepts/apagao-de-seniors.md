@@ -3,8 +3,8 @@ type: concept
 title: "Apagão de Sêniors"
 aliases: ["apagão de devs sêniors", "senior dev blackout", "escassez de sêniors"]
 date_created: 2026-07-04
-date_updated: 2026-08-17
-source_count: 2
+date_updated: 2026-08-19
+source_count: 3
 tags: [vibe-coding, ia, carreira, fundamentos, senior]
 skill: tech-mentor-ai
 status: stub
@@ -29,7 +29,12 @@ Tese formulada em tweet do "Poker Dev", citada como gatilho em [[wiki/sources/ap
 
 [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] observa que empresas continuam contratando sênior mesmo com CRUD simples "resolvido" pela IA — mas agora exigindo, como pré-requisito adicional, letramento em IA (fluência em harness, Claude Code, pipelines de CI/CD, setup de testes). Pessoas de produto, ainda sem essa fluência, tendem a validar qualidade só rodando a feature localmente, não lendo o código gerado — reforçando por que a demanda por sênior que sabe revisar/corrigir o que a IA gerou continua existindo, e não desaparece com CRUD resolvido.
 
+## Testes Automatizados Como Contenção do Risco de Apagão
+
+[[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] contribui um mecanismo prático de mitigação: com a IA gerando volume de código maior do que qualquer humano consegue revisar linha a linha, o autor relata escrever mais testes automatizados do que nunca, tratando isso como validação determinística — a alternativa a depender só de revisão humana (não escalável) ou revisão de uma IA sobre outra IA (sem garantia). Não resolve o apagão de sêniors capazes de arquitetar, mas reduz um vetor de risco adjacente: bugs estruturais não detectados por volume de código gerado sem cobertura de teste correspondente.
+
 ## Key Sources
 
 - [[wiki/sources/apagao-de-seniors-vibe-coding]]
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — sênior "letrado em IA" como pré-requisito ainda presente na contratação, mesmo com CRUD resolvido
+- [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — testes automatizados como validação determinística contra volume de código gerado por IA maior do que revisão humana consegue cobrir

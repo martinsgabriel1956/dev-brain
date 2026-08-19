@@ -3,8 +3,8 @@ type: concept
 title: "Sintaxe vs. Conhecimento Perene"
 aliases: ["conhecimento perene", "syntax vs durable knowledge", "atrofia de sintaxe"]
 date_created: 2026-07-03
-date_updated: 2026-08-17
-source_count: 5
+date_updated: 2026-08-19
+source_count: 6
 tags: [carreira, ia, aprendizado, senioridade]
 skill: tech-mentor-ai
 status: draft
@@ -62,9 +62,14 @@ A distinção sintaxe/perene assume que a pessoa já construiu ambos em algum mo
 
 [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] contribui um mecanismo explícito para por que sintaxe importa cada vez menos: nuances de baixo nível de linguagem (`==` vs `===` em JavaScript, comportamento de `NaN`) perderam valor porque testes automatizados — inclusive testes de mutação — ficaram baratos o suficiente para cobrir bem os casos de uso sem exigir domínio de memória desses detalhes. Consequência prática: um bom dev consegue hoje trabalhar numa codebase de linguagem com pouca familiaridade (não nenhuma — "nenhuma familiaridade ainda é difícil, mas pouca é possível, não ideal, mas possível"), porque o custo de erro de sintaxe é capturado por teste, não por memorização.
 
+## Rebaixado de Pleno para Júnior, Não Descartado
+
+[[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] contribui um exemplo prático do mesmo eixo, mas em vocabulário de nível de carreira em vez de "sintaxe vs. perene": o autor rebaixa "dominar uma linguagem/paradigma de programação" de requisito de pleno para requisito de júnior — não porque o conhecimento perdeu valor, mas porque dominar 100% a sintaxe de uma linguagem deixou de ser diferencial, enquanto entender o paradigma por trás dela (necessário para revisar o que a IA gera) continua sendo piso mínimo, só que mais cedo na progressão de carreira do que antes.
+
 ## Key Sources
 
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]]
+- [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — dominar linguagem/paradigma rebaixado de requisito de pleno para requisito de júnior, mesmo eixo em vocabulário de progressão de carreira
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — testes baratos (inclusive de mutação) como mecanismo explícito de por que "escovar bit" caiu de valor
 - [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — relato pessoal de aprender jQuery antes de JavaScript "puro"; fundamentos aprendidos fora de ordem, não perdidos
 - [[wiki/sources/por-que-comecar-com-c-em-2026-cs50-david-malan]] — "não vai precisar usar C/Scratch, mas precisa saber": os princípios como conhecimento perene, a sintaxe como descartável

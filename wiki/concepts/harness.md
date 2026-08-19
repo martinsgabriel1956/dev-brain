@@ -4,7 +4,7 @@ title: "Harness"
 aliases: ["AI harness", "harness de IA", "coding harness"]
 date_created: 2026-06-02
 date_updated: 2026-08-13
-source_count: 17
+source_count: 18
 tags: [harness, llm, tool-call, agente, context-engineering, erros-compostos, verificacao]
 skill: tech-mentor-ai
 status: stable
@@ -123,8 +123,13 @@ Essa mesma fonte também traz um exemplo concreto de "user harness" anterior à 
 
 [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] oferece uma explicação concreta para um paradoxo de custo: o preço por token caiu continuamente desde 2022 e a qualidade dos modelos subiu, mas o gasto total sobe mesmo assim — porque a orquestração de agentes (o harness por trás) multiplica o consumo por tarefa "dezenas de vezes" frente ao uso direto do modelo. A fonte cita, como anedota (confiança baixa, sem link/benchmark), devs trocando de [[wiki/entities/claude-code]] para [[wiki/entities/opencode]] alegando que o primeiro entra em loops de correção supérflua (bug suspeito → sugestão de correção → reescreve testes → reescreve código → reescreve testes de novo) sem ganho de valor proporcional ao token gasto — o mesmo padrão que [[wiki/concepts/token-maxing]] descreve como "scripts descartáveis" incentivados por métricas de volume de token.
 
+## Resumo Reaplicado em Fonte de Graph Engineering: "O Harness é o Carro, o Looping é o Piloto Automático"
+
+[[wiki/sources/graph-engineering-matematica-do-erro-composto]] reabre esta definição ao recapitular o vídeo anterior do mesmo autor antes de introduzir grafo: harness é tudo que não é o modelo (ferramentas, contexto, verificação); o modelo é o motor; harness é o resto do carro. Sem claim novo sobre harness em si — a contribuição desta fonte é estender o argumento adiante, para [[wiki/concepts/grafo-como-abstracao-de-agentes|grafo]] e [[wiki/concepts/loop-engineering|loop]].
+
 ## Key Sources
 
+- [[wiki/sources/graph-engineering-matematica-do-erro-composto]] — recapitulação da definição (harness = carro, loop = piloto automático) como ponte para graph engineering
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — harness como multiplicador de custo mesmo com preço por token em queda; troca de Claude Code para OpenCode por loops de correção supérflua
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]

@@ -3,8 +3,8 @@ type: concept
 title: "Worktree e Paralelismo de Tarefas"
 aliases: ["worktree parallelism", "git worktree IA", "paralelismo de tarefas ia"]
 date_created: 2026-06-02
-date_updated: 2026-08-05
-source_count: 10
+date_updated: 2026-08-19
+source_count: 11
 tags: [worktree, paralelismo, git, spec-driven, produtividade]
 skill: tech-mentor-ai
 status: stable
@@ -92,9 +92,14 @@ Ao encerrar a sessão (`/quit`), o Claude Code pergunta explicitamente se o usu�
 
 [[wiki/sources/impacto-ia-mercado-frontend]] descreve uma variante do problema em arquiteturas de microfrontends/múltiplos repositórios: como o worktree isola uma cópia de working directory mas não o contexto de outro repositório, o dev precisa linkar manualmente o worktree/PR do backend ao worktree/PR do frontend para sinalizar a interface entre eles — trabalho de coordenação que um monorepo não exige, porque ali o mesmo contexto já contém os dois lados. Ver [[wiki/concepts/monorepo-vs-microfrontends-ia]].
 
+## Worktree Foi Crítico no Início, Hoje É Automático Demais Para Ser Diferencial
+
+[[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] contribui uma leitura retrospectiva sobre o próprio ciclo de vida do conceito: no início da adoção de agentes de IA, muita gente não conseguia paralelizar tarefas justamente por não conhecer worktree — item citado como crucial, mesmo não estando na lista original de 13 requisitos de pleno de 4 anos atrás. Hoje, segundo o autor, isso "também não importa tanto" explicitamente, porque as próprias interfaces de agente (Cursor, Claude Desktop, Codex, Claude Code) já criam a worktree automaticamente ou perguntam ao usuário se quer rodar local, em worktree, ou na nuvem — reduzindo o conceito de habilidade diferenciadora a decisão de configuração já embutida na ferramenta.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-02-mercado-perfil-profissional]]
+- [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — crítico no início da adoção de agentes, hoje automatizado pelas próprias interfaces a ponto de deixar de ser diferencial
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/formacao-ia-devs-aula-06-qa]]
 - [[wiki/sources/product-engineer-vale-do-silicio-2026]]

@@ -3,8 +3,8 @@ type: entity
 title: "Código Fonte TV"
 aliases: ["Codigo Fonte TV", "CDF"]
 date_created: 2026-07-10
-date_updated: 2026-08-18
-source_count: 6
+date_updated: 2026-08-19
+source_count: 7
 tags: [canal, youtube, mercado-de-trabalho, pesquisa-salarial, brasil, design-patterns, typescript]
 skill: tech-mentor-leadership
 status: stub
@@ -25,9 +25,14 @@ Canal brasileiro de YouTube com quase 9 anos de produção de conteúdo sobre pr
 
 O texto do vídeo sobre Observer se autorreferencia como "Código Fonte TV" ao convidar para seguir o canal no Instagram, o que motivou atribuir esta fonte a esta entidade. Diferente das fontes anteriores (pesquisa salarial, CDF Café), este episódio é conteúdo hands-on de programação — mostra que o canal cobre tanto mercado/carreira quanto design patterns com código. Sem evidência de conflito com outra entidade (diferente do caso [[wiki/entities/eric-lenda]]/[[wiki/entities/erick-wendel]]).
 
+## Terceira Frente de Conteúdo: Vocabulário Técnico de IA/Agentes
+
+Além de mercado/carreira (pesquisa salarial, CDF Café) e "mão no código" com design patterns, [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] mostra uma terceira frente: panoramas de vocabulário técnico de IA para devs (Loop Engineering, Graph Engineering, Memory Layers, Spec-Driven Development), cruzando com a própria pesquisa salarial do canal (adesão de devs a IA: 83% em 2024 → 98,5% em 2026) como evidência de mercado.
+
 ## Key Sources
 
 - [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]
+- [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — panorama de vocabulário técnico de IA em 2026 (loop/graph engineering, memory layers, spec-driven, list agents); pesquisa salarial mostrando adesão de 83% (2024) para 98,5% (2026)
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] — episódio do CDF Café sobre custo real de IA, token economics e demissões
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — episódio do CDF Café sobre RFCs, skill Grill Me e quality gates contra a perda de entendimento no vibe coding
 - [[wiki/sources/design-pattern-observer-codigo-fonte-tv]] — episódio "mão no código" sobre o padrão Observer em TypeScript/Deno, com exemplo genérico e exemplo de notificação de vídeo do YouTube

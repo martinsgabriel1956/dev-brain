@@ -3,8 +3,8 @@ type: concept
 title: "Níveis de Adoção de IA — L0 a L4"
 aliases: ["L0 L1 L2 L3 L4", "escada de maturidade IA dev", "niveis ia branas nauke"]
 date_created: 2026-06-02
-date_updated: 2026-06-09
-source_count: 3
+date_updated: 2026-08-19
+source_count: 4
 tags: [ia-para-devs, adocao, maturidade, produtividade, spec-driven]
 skill: tech-mentor-ai
 status: stable
@@ -61,9 +61,14 @@ Ter 100% do código gerado por IA não significa estar no L3. No L2, a autonomia
 
 Dados de campo do Vale do Silício (2026) descrevem o L3 em operação como o [[product-engineer]]. O tech lead do Databricks usa os intervalos entre reuniões para disparar 2–3 agents e revisa os PRs resultantes em blocos concentrados — não linha a linha. A engenheira do Cursor dispara ~5 agents simultâneos por feature com critério claro de granularidade: "a menor quantidade de trabalho mais a maior quantidade que um agente consegue fazer sem esbarrar em outro agente." O paralelismo real no trabalho diário é o marcador que separa L2 de L3.
 
+## Adesão Não é o Mesmo que Nível: 98,5% Usam IA, Maioria Ainda em L2
+
+Dado de mercado de [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] (pesquisa salarial do [[wiki/entities/codigo-fonte-tv]]): 83% dos devs já usavam IA para programar em 2024, saltando para 98,5% em 2026. Esse número mede **adesão** (usa ou não usa IA), não nível de maturidade — é consistente com, e não contradiz, a leitura desta página de que a maioria dos devs está em L2 mesmo gerando 100% do código via IA (ver "Armadilha do L2" acima). Quase todo mundo já usa IA; a diferença de nível está em *como*.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-02-mercado-perfil-profissional]]
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/escala-niveis-uso-ia-engenheiros]]
 - [[wiki/sources/product-engineer-vale-do-silicio-2026]]
+- [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — adesão de devs a IA para programar: 83% (2024) → 98,5% (2026), pesquisa salarial do Código Fonte TV
