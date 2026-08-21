@@ -3,8 +3,8 @@ type: concept
 title: "DNS — Domain Name System"
 aliases: [Domain Name System]
 date_created: 2026-04-22
-date_updated: 2026-08-12
-source_count: 5
+date_updated: 2026-08-19
+source_count: 6
 tags: [dns, rede, infraestrutura]
 skill: tech-mentor-system-design
 status: stub
@@ -25,8 +25,13 @@ DNS é a primeira etapa de rede do [[wiki/concepts/critical-rendering-path]] do 
 
 [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] usa a analogia da **agenda telefônica**: servidores DNS espalhados pelo mundo recebem o [[wiki/concepts/dominio|domínio]] e devolvem o [[wiki/concepts/endereco-ip|endereço IP]] correspondente. A resolução costuma partir do provedor de internet (ex.: Claro), que consulta um DNS quando o navegador pede um domínio. A fonte também torna concreta a **propagação DNS**: ao trocar os *name servers* de um domínio no registrador (ex.: [[wiki/entities/godaddy]] → [[wiki/concepts/aws-route-53|Route 53]]), a mudança leva minutos porque precisa ser replicada para todos os servidores DNS do mundo — verificável em ferramentas "DNS propagation checker".
 
+## DNS vs. Load Balancer
+
+Confusão comum: os dois "decidem para onde a requisição vai", mas em camadas diferentes. Analogia de restaurante usada em [[wiki/sources/system-design-load-balancer-nivel-macaco]]: DNS decide **em qual mesa você senta** (resolve nome → IP, escolhe a rota); o [[wiki/concepts/load-balancer]] decide **qual garçom vai te atender** (decide quem/como atende dentro daquela rota). A diferença técnica: DNS apenas traduz nome em endereço, sem saber se o destino está saudável — por isso é possível resolver um domínio corretamente e ainda cair num erro no meio do caminho. O load balancer faz health check ativo dos servidores e só roteia para instâncias saudáveis, redirecionando na hora se uma estiver sobrecarregada ou fora do ar.
+
 ## Key sources
 - [[sources/dns]]
+- [[wiki/sources/system-design-load-balancer-nivel-macaco]] — distinção didática DNS vs. Load Balancer (analogia de restaurante) e o health check como diferencial do load balancer
 - [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — DNS como agenda telefônica (domínio → IP); resolução via provedor; propagação de name servers
 - [[wiki/sources/portas-de-rede-como-funcionam]] — DNS como resolução de nome, complementar à porta como resolução de serviço
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]] — DNS como primeira etapa de rede do critical rendering path, analogia com lista de contatos do celular

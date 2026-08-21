@@ -3,8 +3,8 @@ type: concept
 title: "Janela de Contexto"
 aliases: ["context window", "context length", "janela de tokens"]
 date_created: 2026-05-18
-date_updated: 2026-07-03
-source_count: 4
+date_updated: 2026-08-20
+source_count: 5
 tags: [llm, tokens, agentes-ia, llmops]
 skill: tech-mentor-ai
 status: draft
@@ -52,9 +52,14 @@ Na prática: um `CLAUDE.md` de 500 linhas em português esgota 62% mais contexto
 
 Mesmo com janelas de contexto de até 1M de tokens disponíveis, a recomendação prática registrada em [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] é manter o uso em torno de ~200k tokens — quanto maior a proporção da janela ocupada, maior a chance de alucinação. É a mesma lógica por trás de [[wiki/concepts/rpi-workflow]] e [[wiki/concepts/spec-driven-development]]: salvar research e planejamento em Markdown fora da janela, para que a implementação comece com contexto baixo mesmo em mudanças que tocam dezenas de arquivos.
 
+## O Que Está Fora da Janela Não Existe
+
+[[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] reforça, com um caso concreto, um ponto frequentemente subestimado: o modelo não "esquece" o que não está na janela — aquilo **nunca esteve lá**. Um projeto real acumula anos de regras de negócio e decisões de arquitetura que vivem, na melhor das hipóteses, na cabeça de duas ou três pessoas; se essas regras não foram transformadas em artefato dentro do repositório (ver [[wiki/concepts/context-engineering-harness]]), o prompt mais detalhado do mundo não as coloca na janela. A fonte ilustra com um serviço de cobrança recorrente gerado com um prompt caprichado (idempotência, formato de resposta, tratamento de erro especificados) que ignorou uma regra central — cobrança deve passar por fila de auditoria — documentada em um arquivo que a IA nunca leu. A analogia usada: instruções detalhadíssimas para uma pessoa vendada numa sala que ela nunca viu, seguidas da reclamação de que ela esbarrou no móvel.
+
 ## Key Sources
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
 - [[wiki/sources/custo-tokens-portugues-vs-ingles]]
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
 - [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — heurística de ~200k tokens mesmo com janelas de 1M disponíveis
+- [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] — caso concreto de regra de negócio fora da janela (fila de auditoria de cobrança) e a analogia da pessoa vendada

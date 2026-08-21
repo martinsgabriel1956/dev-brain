@@ -4,7 +4,7 @@ title: "Over-Engineering"
 aliases: ["overengineering", "verde neném", "engenharia excessiva", "gold plating"]
 date_created: 2026-06-09
 date_updated: 2026-08-19
-source_count: 13
+source_count: 14
 tags: [design, qualidade, anti-pattern, aprendizado, design-patterns, dora, under-engineering]
 skill: tech-mentor-leadership
 status: stable
@@ -23,6 +23,10 @@ No contexto de aprendizado, a forma mais comum é o **"verde neném"**: alguém 
 Antes de tratar dos cuidados contra over-engineering, vale registrar a proporção: segundo observação de David Farley e consenso informal coletado entre desenvolvedores, o problema mais comum na indústria de software é o oposto — falta de engenharia, não excesso. Over-engineering é real e merece atenção, mas não é a causa mais frequente de sistemas ruins. Ver [[wiki/sources/como-evitar-over-engineering-david-farley]].
 
 Essa mesma tese aparece de forma independente em [[wiki/sources/underengineering-overengineering-mario-souto]] (Mário Souto), que descreve a versão detalhada do problema oposto em [[wiki/concepts/under-engineering]] — com sintomas concretos (acoplamento, hardcode, ausência de CI) e antídotos práticos que não exigem nenhuma técnica de over-engineering para serem resolvidos.
+
+## Heurística Concreta: Load Balancer Antes da Hora
+
+Exemplo didático dado em [[wiki/sources/system-design-load-balancer-nivel-macaco]]: introduzir um [[wiki/concepts/load-balancer]] e múltiplos servidores quando o sistema ainda tem baixa complexidade, poucos usuários e latência já baixa é over-engineering — o servidor único resolve CRUDs pequenos sem ganho real. O sinal correto para introduzir o load balancer é a saturação observável do servidor único sob carga real (latência subindo, taxa de falha subindo), não uma meta arbitrária de "arquitetura escalável desde o dia 1".
 
 ## Por Que Acontece
 
@@ -129,3 +133,4 @@ Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], 
 - [[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] — estudo de caso de over-engineering arquitetural completo (microfrontends parciais para unificar 4 sistemas de fornecedores) resolvendo o sintoma errado, contrastado com a solução enxuta (dashboard read-only + BFF) que resolve a causa raiz
 - [[wiki/sources/large-scale-vs-complex-architecture]] — distinção terminológica entre over-engineering (excesso de ferramental, comum em large scale) e over-thinking (excesso de pensamento sobre regras, comum em arquitetura complexa)
 - [[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] — Clean Architecture como exemplo de trade-off dependente do tempo de vida do projeto: boilerplate só se paga em projetos de longa duração onde a regra de negócio não vaza para outras camadas
+- [[wiki/sources/system-design-load-balancer-nivel-macaco]] — heurística concreta e demonstrada em simulador: introduzir load balancer/múltiplos servidores sem carga real que os justifique é over-engineering; o gatilho correto é saturação observável, não uma meta de escala antecipada

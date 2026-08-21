@@ -3,8 +3,8 @@ type: concept
 title: "Cache"
 aliases: ["caching", "cache de aplicação"]
 date_created: 2026-06-26
-date_updated: 2026-08-14
-source_count: 10
+date_updated: 2026-08-19
+source_count: 11
 tags: [cache, performance, redis, arquitetura, backend, grande-rollback, buffer]
 skill: tech-mentor-backend
 status: stable
@@ -90,3 +90,4 @@ Não entender bem essa camada de cache impacta latência, mas principalmente **c
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — cache como solução recomendada para cross-shard operations (fan-out) em bancos shardeados
 - [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] — cache definido pela expectativa de reutilização e explicitamente contrastado com [[wiki/concepts/buffer]] (diferença de velocidade); origem histórica no cache de CPU (IBM System/360, chamado *high speed buffer*)
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — camada específica de IA: cache de tokens por provider, cache de contexto/embeddings em RAG, cache-aware prompts e fingerprints; caching como alavanca de custo, não só de latência
+- [[wiki/sources/system-design-load-balancer-nivel-macaco]] — cache citado, numa pergunta frequente de aula introdutória, como técnica alternativa a "só adicionar mais servidor/load balancer" para escalar, reforçando o mesmo framing de "melhor amigo antes de escalar" já registrado acima

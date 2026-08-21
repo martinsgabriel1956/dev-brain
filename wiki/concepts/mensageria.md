@@ -3,8 +3,8 @@ type: concept
 title: "Mensageria"
 aliases: ["message broker", "queue", "stream", "eda", "event driven"]
 date_created: 2026-04-23
-date_updated: 2026-08-11
-source_count: 7
+date_updated: 2026-08-19
+source_count: 8
 tags: [mensageria, kafka, rabbitmq, sqs, queue, stream, eda, at-least-once, dlq]
 skill: tech-mentor-backend
 status: stub
@@ -33,6 +33,8 @@ Comunicação assíncrona entre serviços via broker de mensagens. Resolve acopl
 
 **BullMQ como implementação de queue em Node.js/Bun:** producer e worker são processos independentes que só se comunicam via Redis — nunca por chamada de função direta. Ver [[wiki/concepts/bullmq]] e [[wiki/concepts/filas-e-workers]].
 
+**Por que o Kafka não paraleliza sozinho ao subir mais consumers:** essa é a diferença estrutural mais confundida entre Kafka e filas tradicionais. Num consumer group Kafka, a próxima mensagem de uma partição só é entregue depois que o consumer atual comita o offset da anterior — enquanto isso, um segundo consumer do mesmo grupo fica ocioso, mesmo com trabalho disponível. RabbitMQ/SQS funcionam diferente: consumers adicionais competem livremente por mensagens da mesma fila, sem essa barreira de ordenação. Ver [[wiki/concepts/kafka]] para o mecanismo completo (partições, offset commit, rebalance).
+
 ## Key Sources
 
 - [[sources/mensageria]]
@@ -43,3 +45,4 @@ Comunicação assíncrona entre serviços via broker de mensagens. Resolve acopl
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — Kafka escolhido num exercício de hotel booking pelo critério "capacidade de lidar com grandes volumes de dados", com ressalva explícita de possível [[wiki/concepts/over-engineering]] para o caso de uso; a IA avaliadora do exercício aponta corretamente que Kafka foi introduzido no desenho sem nenhum consumidor definido — reforça que escolher a tecnologia certa não substitui desenhar quem consome a fila
 - [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — comunicação assíncrona (filas/eventos) citada como conceito que ensina quando desacoplar processos (e-mail, geração de relatório) do fluxo principal, mesmo fora de arquitetura distribuída
 - [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] — fila (Kafka/SQS/RabbitMQ/Redis Streams) apresentada como "grande buffer" que absorve picos e desacopla produtor de consumidor
+- [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — demonstração passo a passo de por que um segundo consumer Kafka fica ocioso sem partições adicionais; dois consumer groups independentes consumindo o mesmo tópico para propósitos distintos

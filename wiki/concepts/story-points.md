@@ -3,8 +3,8 @@ type: concept
 title: "Story Points"
 aliases: ["Pontos de História", "Estimativa Relativa", "Story Point Estimation"]
 date_created: 2026-07-28
-date_updated: 2026-08-18
-source_count: 2
+date_updated: 2026-08-20
+source_count: 3
 tags: [agile, scrum, estimativa, engineering-management]
 skill: tech-mentor-leadership
 status: stable
@@ -46,6 +46,12 @@ Consequências observadas quando isso acontece:
 - **Colaboração cai** — se o incentivo é "fechar meus pontos", ninguém quer gastar tempo ajudando colegas durante o sprint.
 - **Jornadas de trabalho se estendem** (10h/dia, fins de semana) sem remuneração extra, para "bater" um número que nunca foi calibrado pelo time — sintoma de erro de planejamento, não de falta de esforço individual.
 
+## O Gargalo Que Definiu a Métrica Pode Ter Mudado de Lugar
+
+[[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] levanta um ponto anterior à discussão de como calcular velocity corretamente: story points, velocity e throughput foram definidos numa época em que o gargalo do time era a capacidade de uma pessoa **escrever código**. Se a IA move esse gargalo para outra etapa do ciclo (revisão, teste, homologação, aprovação), a régua usada para medir "quanto o time acelerou" pode já não capturar onde o ganho real está acontecendo — o que reforça, por um ângulo diferente, o motivo por que comparar velocity entre contextos distintos (aqui, antes/depois de IA) tende a ser enganoso. A fonte prefere não amarrar decisões de processo a essas métricas até elas serem redefinidas, argumento coerente com o mecanismo da [[wiki/concepts/goodharts-law|Lei de Goodhart]]: uma métrica desenhada para um gargalo antigo, virada meta, otimiza o número errado quando o gargalo já mudou.
+
+A mesma fonte também questiona, por extensão, o timebox padrão de sprint (2 semanas): trata-o como meio (criar ritmo de feedback num mundo em que escrever código era caro), não como fim — e relata reduzi-lo experimentalmente (1 semana, ou até 3 dias em projetos menos complexos) sob o argumento de que manter a janela de feedback fixa enquanto a produção acelera só acumula trabalho não validado. Nenhum dado de resultado desse experimento é citado — ver [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] para o open question sobre isso.
+
 ## Quando Usar / Evitar
 
 **Usar:** planejamento de sprint, previsão de entrega baseada em velocity histórica, conversa estruturada sobre complexidade via [[wiki/concepts/planning-poker]].
@@ -60,3 +66,4 @@ Consequências observadas quando isso acontece:
 
 - [[wiki/sources/story-points-po-forcando-30-40-pontos-por-sprint]]
 - [[wiki/sources/por-que-estimativas-de-software-falham-como-melhorar]] — crítica à equivalência implícita entre pontos e horas dentro de uma sprint
+- [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] — velocity/throughput definidos para um gargalo (escrever código) que a IA pode ter deslocado; experimento de reduzir o timebox de sprint quando a produção de código acelera

@@ -3,8 +3,8 @@ type: concept
 title: "Progressive Disclosure para IA"
 aliases: ["progressive disclosure", "entrega gradual de contexto", "context by directory"]
 date_created: 2026-06-01
-date_updated: 2026-06-01
-source_count: 1
+date_updated: 2026-08-20
+source_count: 2
 tags: [context-engineering, coding-agents, on-demand-loading, claude-md, cursor-rules]
 skill: tech-mentor-ai
 status: draft
@@ -60,6 +60,10 @@ Claude Skills seguem a mesma lógica. `agents.md` padrão é menos flexível —
 
 Progressive disclosure é a implementação prática do orçamento de instruções: manter o total de instruções ativas bem abaixo do limite (~150–200) carregando apenas o que a tarefa atual requer.
 
+## Analogia: o Mapa Antes da Rua
+
+[[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] descreve a mesma lógica com uma imagem simples: "mais contexto não é melhor contexto — se você despeja tudo na janela, o essencial acaba afogando no acessório". O modelo deve receber primeiro uma visão geral sempre presente (o mapa) e só depois os detalhes específicos da tarefa (a rua onde ele vai trabalhar de fato) — reafirmando, sem contradizer, a estrutura de arquivos por diretório/responsabilidade já descrita acima.
+
 ## Relação com outros conceitos
 
 - [[claude-md]] — o arquivo principal é o ponto de entrada; progressive disclosure distribui o resto
@@ -71,3 +75,4 @@ Progressive disclosure é a implementação prática do orçamento de instruçõ
 
 - [[wiki/sources/context-engineering-codebases-grandes-rpi]] — demonstração prática com codebase de streaming; Cursor Rules com alwaysApply e gatilhos
 - [[wiki/sources/agents-md-vale-a-pena-paper-zurique]] — links para arquivos específicos como estratégia de custo
+- [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] — analogia "mapa antes da rua" para dosagem de contexto

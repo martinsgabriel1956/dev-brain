@@ -2,6 +2,51 @@
 
 ---
 
+## [2026-08-19] ingest | Unit of Work (eaaCatalog, Martin Fowler)
+
+**Fonte:** [[wiki/sources/unit-of-work-martin-fowler]] — página do catálogo online de *Patterns of Enterprise Application Architecture* em https://martinfowler.com/eaaCatalog/unitOfWork.html, buscada via WebFetch, traduzida integralmente para PT-BR e salva em `raw/unit-of-work-martin-fowler.md` (conteúdo original em inglês).
+**Skill carregada:** `tech-mentor-backend` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/` (o path do CLAUDE.md, `/home/nemomartins/Documentos/new/skills/`, não existe nesta máquina — mesmo padrão já registrado em ingests anteriores). Consultado `references/design-patterns.md` (Design Patterns GoF, Domain Modeling).
+**Nota de duplicidade evitada:** já existia em `raw/` um arquivo com nome parecido, `unit-of-work-padrao-de-design.md` — mas é uma fonte diferente (transcrição de vídeo do ArjanCodes, já ingerida anteriormente). A nova fonte é a página oficial do próprio Fowler, curta (apenas a definição formal + pointer para o Capítulo 11 do livro, não lido), então foi tratada como fonte-irmã complementar, não substituta.
+
+**Arquivos criados:**
+- `raw/unit-of-work-martin-fowler.md` — tradução integral da página do eaaCatalog
+- `wiki/sources/unit-of-work-martin-fowler.md` — TL;DR, 3 key claims com evidência, entidades/conceitos tocados, open questions (Capítulo 11 não lido)
+
+**Páginas atualizadas (backlink + frontmatter, `source_count` incrementado, `date_updated` → 2026-08-19):**
+- `wiki/concepts/unit-of-work.md` — nova seção "Definição na fonte primária" com a definição formal de Fowler e os três motivadores do padrão; nova linha em Key Sources
+- `wiki/entities/martin-fowler.md` — nova seção "Unit of Work: fonte primária (eaaCatalog)"; nova linha em Key Sources
+- `wiki/concepts/repository-pattern.md` — nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources, logo abaixo da fonte-irmã
+
+**Notas / open questions:** (1) A página é apenas o resumo do padrão no catálogo — não traz exemplo de código nem detalha a resolução de concorrência; essa mecânica completa já estava coberta por [[wiki/sources/unit-of-work-padrao-de-design]] (exemplo SQLAlchemy). (2) O Capítulo 11 do ebook, referenciado como fonte de detalhamento, não foi lido nesta ingestão — candidato a fonte futura se disponível. (3) Terceiro desafio citado na definição ("evitar leituras inconsistentes exige rastrear objetos já acessados") aparece em uma única linha, sem exemplo — registrado como open question na fonte.
+
+---
+
+## [2026-08-19] ingest | World Cup System Design (slide deck / Miro board PDF)
+
+**Fonte:** [[wiki/sources/world-cup-system-design]] — PDF de 27 páginas exportado de um board Miro, copiado pelo usuário de `~/Downloads/'WORLD CUP SYSTEM DESIGN.pdf'` para `raw/world-cup-system-design.pdf` (o usuário perguntou antes se um link direto do Miro seria ingerível — não é, por exigir autenticação e renderizar em canvas; a resposta foi exportar como PDF).
+**Skill carregada:** `tech-mentor-system-design` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-system-design/`. Consultado o índice do `SKILL.md` (entradas EDA/Event-Driven Architecture → `references/eda-overview.md`, além do conhecimento já consolidado em [[wiki/concepts/kafka]] desta wiki).
+**Nota de mapeamento de caminhos:** os caminhos do CLAUDE.md (`/home/nemomartins/Documentos/new/...`) não existem nesta máquina — usado o repo real em `/home/gabriel-martins/Documentos/dev-brain` e as skills reais em `/home/gabriel-martins/Documentos/skills/`, mesmo padrão já registrado em ingests anteriores.
+
+**Descoberta central desta ingestão:** este PDF é o material visual (slides/diagramas) da **mesma aula** já ingerida como transcrição em [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] (mesmo domínio, mesmos requisitos, mesma evolução arquitetural). Por isso a nova fonte foi escrita focada no que os slides trazem que a transcrição não capturava — schemas JSON concretos, contratos de API, taxonomia fechada de eventos, SQL de persistência — em vez de duplicar a narrativa já coberta.
+
+**Arquivos criados:**
+- `raw/world-cup-system-design.pdf` — cópia do PDF original enviado pelo usuário
+- `wiki/sources/world-cup-system-design.md` — TL;DR focado no valor incremental sobre a fonte-irmã, 8 key claims com evidência, entidades/conceitos tocados, open questions
+
+**Páginas atualizadas (backlink + frontmatter, `source_count` incrementado, `date_updated` → 2026-08-19):**
+- `wiki/concepts/kafka.md` — nova seção "Exemplo: Schema de Evento Normalizado (Placar de Futebol)" com o JSON completo do evento e a taxonomia fechada de 11 tipos; nova linha em Key Sources
+- `wiki/concepts/redis.md` — nova seção "Cache de Estado vs. Barramento Pub/Sub: Instâncias Separadas"; nova linha em Key Sources
+- `wiki/concepts/server-sent-events.md` — nova seção "Além do Stream: Superfície de API Completa em Torno de um Recurso em Tempo Real" (5 endpoints do Web Server); nova linha em Key Sources
+- `wiki/concepts/escalabilidade-horizontal.md` — nova seção "Gatilho de Escala Além da Volumetria: Decisão de Negócio de Cobertura Global" (quinto gatilho: atender todos os campeonatos do mundo); nova linha em Key Sources
+- `wiki/concepts/read-replicas.md` — nova seção "Caso: Réplicas Servindo Rotas de Histórico/Estatística, Não o Placar ao Vivo"; nova linha em Key Sources
+- `wiki/entities/renato-augusto.md` — `source_count` 12 → 13; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources, logo acima da fonte-irmã
+
+**Notas / open questions:** (1) **Sem contradições com a fonte-irmã** — os slides reforçam visualmente a mesma arquitetura já documentada, sem nenhuma claim conflitante. (2) **Novidade real e específica**: o "Problema 5" explícito nos slides — a empresa decidir atender todos os campeonatos do mundo, não só a Copa — é um gatilho de escala de **escopo de produto**, distinto dos quatro gatilhos técnicos já registrados (recalcular timeline, refresh manual, sem HA, volume de usuários); o board não detalha a resposta arquitetural específica a esse requisito (sharding por competição? mais partições no mesmo tópico?), registrado como lacuna. (3) **Redis de cache e Redis Pub/Sub como instâncias separadas** no diagrama final — só a de cache é clusterizada; inferência visual, não afirmação textual explícita nos slides, registrada como open question. (4) [[wiki/concepts/multi-tenancy]] foi considerado para touch mas não editado — a conexão com "atender todos os campeonatos" é fraca (é mais sobre volume/particionamento de dados do que isolamento de tenant no sentido SaaS B2B que aquela página documenta); mencionado apenas na seção de Conceitos da fonte, sem edição na página.
+
+---
+
 ## [2026-08-19] ingest | O Que Esperam de um Pleno na Programação — Revisão com 4 Anos de IA
 
 **Fonte:** [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — transcrição de vídeo colada pelo usuário no chat (ASR bruto, sem pontuação, já em pt-BR — sem necessidade de tradução), limpa, organizada por item e salva em `raw/o-que-esperam-de-pleno-2026-revisao.md`. Autor não identificado com confiança (ver Nota de Identificação na fonte); trecho publicitário do patrocinador removido do raw.
@@ -7575,3 +7620,69 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção "Padrões e Design")
 
 **Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte confirma e aprofunda a referência a Unit of Work que já existia de forma breve em [[wiki/concepts/repository-pattern]] (via [[wiki/sources/arquitetura-limpa-na-pratica]]), agora com mecanismo completo e exemplo de código real (SQLAlchemy). Não havia página dedicada ao conceito antes desta ingestão — criada como `status: draft` por ter apenas uma fonte. (2) **Autor/canal não identificado por nome** — única pista é a menção a "arjancodes.com" e a um workshop de diagnóstico de código, característicos do canal ArjanCodes, mas não confirmado por citação explícita; nenhuma entidade de autoria foi criada para não forçar atribuição não verificada. (3) **Três exemplos de domínios fora de banco de dados (sync de arquivos, jogos, infraestrutura como código) citados apenas como analogia, sem código** — candidatos a fonte dedicada futura se aparecer demonstração prática (ex: Terraform apply/rollback).
+
+## [2026-08-19] ingest | System Design — Load Balancer Explicado do Zero (Aula "Nível Macaco")
+
+**Fonte:** [[wiki/sources/system-design-load-balancer-nivel-macaco]] — transcrição colada pelo usuário no chat (pt-BR, sem necessidade de tradução), limpa e organizada em seções em `raw/system-design-load-balancer-nivel-macaco.md`.
+**Skill carregada:** `tech-mentor-infra` (path real neste ambiente: `/home/gabriel-martins/Documentos/skills/tech-mentor-infra/`). Consultado `references/networking-infra.md` (seções "Load Balancers — L4 vs L7" e "Load Balancing Algorithms") como calibração — round robin, least connections, L4/L7 já batem com o que a skill documenta; nenhuma divergência encontrada.
+
+**Arquivos criados:**
+- `raw/system-design-load-balancer-nivel-macaco.md` — transcrição limpa e organizada em seções (abertura/metodologia → nível 1: sem LB → nível 2: LB com round robin → nível 3: tipos (L4/L7, Global LB, Gateway LB, Ingress) → FAQ final → encerramento)
+- `wiki/sources/system-design-load-balancer-nivel-macaco.md` — TL;DR, 9 key claims com evidência, entidades/conceitos abordados, open questions
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/load-balancer.md` — `source_count` 16 → 17; duas novas seções ("Global Load Balancer, Gateway Load Balancer e Ingress" e "Quando NÃO usar um load balancer") mais uma nova seção "Load Balancer vs. DNS"; nova linha em Key Sources
+- `wiki/concepts/dns.md` — `source_count` 5 → 6; nova seção "DNS vs. Load Balancer" (analogia de restaurante); nova linha em Key sources
+- `wiki/concepts/over-engineering.md` — `source_count` 13 → 14; nova seção "Heurística Concreta: Load Balancer Antes da Hora"; nova linha em Key Sources
+- `wiki/concepts/database-per-service.md` — `source_count` 3 → 4; nova seção "Polyglot Persistence: Bancos Diferentes para Necessidades Diferentes"; nova linha em Key Sources
+- `wiki/concepts/cache.md` — `source_count` 10 → 11; nova linha em Key Sources (cache como alternativa a "só adicionar servidor")
+- `wiki/concepts/escalabilidade-horizontal.md` — `source_count` 15 → 16; nova linha em Key Sources (demonstração em simulador + heurística de quando não escalar ainda)
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte é majoritariamente confirmatória: reforça com demonstração pedagógica em simulador (progressão nível 1 → 2 → 3) o que já estava documentado com maior profundidade técnica em [[wiki/concepts/load-balancer]] (algoritmos, L4/L7, tipos cloud). As contribuições genuinamente novas foram (a) a distinção didática Load Balancer vs. DNS via analogia de restaurante, agora registrada em ambas as páginas; (b) a heurística explícita de "quando NÃO introduzir load balancer" como caso concreto de over-engineering; (c) exemplos nomeados de polyglot persistence. (2) **Autor/canal não identificado** — o instrutor se identifica só pelo apelido "Horácio Fiasco"/"Fiascão", convidado por "Mateus Leandro" para um curso de System Design; sem sobrenome, canal ou plataforma citados no texto, então nenhuma entidade de autoria foi criada, seguindo o mesmo critério já aplicado em ingestões anteriores sem autoria confirmada. (3) **Gateway Load Balancer e Cloudflare citados sem detalhamento técnico** — apenas afirmação do instrutor, sem demonstração no simulador; registrado como lacuna em [[wiki/concepts/load-balancer]] e como open question na fonte, candidato a fonte dedicada futura. (4) **Afirmação de que "múltiplos load balancers" não é usado na prática** é opinião pessoal do instrutor sem sustentação técnica — marcada com confiança baixa na fonte, não tratada como fato consolidado.
+
+## [2026-08-19] ingest | System Design — Resultados da Copa do Mundo em Tempo Real (Event Sourcing + Kafka)
+
+**Fonte:** [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — transcrição colada pelo usuário no chat (pt-BR, sem necessidade de tradução), limpa e organizada em seções em `raw/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto.md`.
+**Skill carregada:** `tech-mentor-system-design` (path real neste ambiente: `/home/gabriel-martins/Documentos/skills/tech-mentor-system-design/`). Consultado `references/eda-overview.md` (topologias, consumer groups, DLQ, schema registry) como calibração de domínio — nenhuma divergência encontrada com o conteúdo da fonte; a fonte é mais operacional/mecânica (como o Kafka decide partição, como o offset commit funciona por baixo dos panos) do que a referência, que é mais conceitual (topologias, event notification vs. state transfer).
+
+**Arquivos criados:**
+- `raw/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto.md` — transcrição limpa e organizada em seções (requisitos funcionais/não-funcionais → endpoint principal → data provider e eventos → API de ingestão → consumer/Postgres → conceito de event sourcing → problemas da v1 → escalabilidade horizontal → fundamentos de Kafka: tópicos, consumer groups, offset commit, partições, hash murmur, rebalance → score service com Redis → tempo real com SSE + Redis Pub/Sub → mapa de conexões em memória → endpoints de histórico → escalabilidade final)
+- `wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto.md` — TL;DR, 10 key claims com evidência, entidades/conceitos abordados, open questions
+- `wiki/concepts/kafka.md` — página nova (`status: draft`): tópico vs. fila (offsets), partições como unidade de paralelismo, chave de partição e hash Murmur, consumer groups, offset commit (por que mais consumers sem partições não paralelizam), rebalance, event replay, configuração segura de producer; consolida conteúdo que antes só existia disperso em [[wiki/sources/kafka]] sem página de conceito dedicada
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/sources/kafka.md` — corrigidos links quebrados da seção "Entities & Concepts Touched" (`concepts/partitions-kafka`, `concepts/consumer-groups`, `concepts/isr-kafka`, `concepts/schema-registry`, `concepts/dlq` nunca existiram como páginas) para apontar só para a nova [[wiki/concepts/kafka]]; `date_updated` atualizado
+- `wiki/concepts/event-sourcing.md` — `source_count` 6 → 7; nova seção "Exemplo: Placar de Futebol como Estado Derivado" conectando com CQRS/projeções; nova linha em Key Sources
+- `wiki/concepts/mensageria.md` — `source_count` 7 → 8; novo parágrafo sobre por que o Kafka não paraleliza sozinho ao subir consumers, com link para a nova página de conceito; nova linha em Key Sources
+- `wiki/concepts/redis.md` — `source_count` 9 → 10; nova entrada em "Casos de Uso" (cache de estado pré-computado alimentado por consumer de fila); nova linha em Key Sources
+- `wiki/concepts/pub-sub.md` — `source_count` 6 → 7; nova linha em Key Sources (exemplo ponta a ponta Kafka → Redis Pub/Sub → SSE)
+- `wiki/concepts/server-sent-events.md` — `source_count` 2 → 3; nova seção "Roteamento por mapa em memória: quem recebe qual atualização"; nova linha em Key Sources
+- `wiki/concepts/escalabilidade-horizontal.md` — `source_count` 16 → 17; nova seção "Escalar por Redundância, Não Só por Volumetria"; nova linha em Key Sources
+- `wiki/concepts/load-balancer.md` — `source_count` 17 → 18; nova linha em Key Sources
+- `wiki/concepts/consistent-hashing.md` — `source_count` 1 → 2; nova linha em "Relação com outros conceitos" conectando ao particionamento hash+módulo do Kafka; nova linha em Key Sources
+- `wiki/entities/renato-augusto.md` — `source_count` 11 → 12; nova linha em Key Sources (autoria inferida, não confirmada explicitamente na transcrição)
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção de mensageria, dentro de "Arquitetura Backend & Event-Driven" / trecho de estruturas de dados e mensageria)
+
+**Notas / open questions:** (1) **Autoria não confirmada explicitamente** — a transcrição não cita nome, canal ou identidade do apresentador; a atribuição a [[wiki/entities/renato-augusto]] é inferência por similaridade de estilo (vocabulário, ritmo) e pela menção ao "Mapa do Arquiteto", produto de mentoria já confirmado em fontes anteriores desse autor — mas marcada como inferida em toda a cadeia de backlinks, não como fato. (2) **Sem contradições** com o wiki existente — a fonte é majoritariamente uma consolidação em profundidade de mecanismos do Kafka que antes só apareciam de forma fragmentada em [[wiki/sources/kafka]] (que nunca teve uma página de conceito própria, apesar de ser citado dezenas de vezes em outras fontes). O ganho real desta ingestão foi estruturar isso numa página de conceito central. (3) **Lacunas explícitas da própria fonte**: nenhuma menção a schema registry, DLQ ou garantias de entrega (`acks`, idempotência), apesar do requisito de "consistência forte, sem perda de dados" citado no vídeo — e nenhuma menção ao risco de perda de mensagem do Redis Pub/Sub quando o assinante SSE está temporariamente desconectado, apesar de ser exatamente o mecanismo escolhido para propagar atualizações num sistema com esse mesmo requisito. Ambas registradas como open questions na fonte, sem tratamento como erro da fonte — são omissões, não afirmações incorretas.
+
+## [2026-08-20] ingest | Engenharia de Contexto vs. Prompt Engineering — o Gargalo Real dos Times com IA
+
+**Fonte:** [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] — transcrição de voz colada pelo usuário no chat (pt-BR, sem necessidade de tradução), limpa e organizada em seções em `raw/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia.md`.
+**Skill carregada:** `tech-mentor-ai` (path real neste ambiente: `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/`). Consultado `references/ai/context-engineering.md` (modelo mental de janela de contexto, sliding window, summarização, RAG de memória) como calibração de domínio — a fonte é mais estratégica/organizacional (o que colocar na janela e por quê, redesenho de processo em volta do gargalo) do que técnica/implementação (a referência cobre estratégias de código para gerenciar histórico); nenhuma divergência de fato encontrada, só nível de abstração diferente. Domínio secundário observado no conteúdo (sprint, story points, ownership de feature): `tech-mentor-leadership` — não recarregado por completo nesta sessão porque o núcleo do vídeo é context/prompt engineering; as páginas tocadas com esse recorte (`story-points`, `plano-vertical`) já tinham `skill: tech-mentor-leadership`/`tech-mentor-ai` própria e calibrada em ingestões anteriores.
+
+**Arquivos criados:**
+- `raw/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia.md` — transcrição limpa e organizada em seções (abertura → boom do Prompt Engineer e bala de prata → o que se quer de uma IA de projeto → janela de contexto como limite físico → caso do serviço de cobrança recorrente → os três movimentos de engenharia de contexto → velocidade de geração ≠ velocidade de entrega → evolução vs. revolução → sprint mais curta como experimento → por que evitar métrica de velocidade agora → questionando a tarefa pequena → as duas engenharias → inversão da lógica e consequência de carreira → perguntas finais)
+- `wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia.md` — TL;DR, 7 key claims com evidência e confiança, entidades/conceitos abordados, 3 open questions
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/context-engineering-harness.md` — `source_count` 8 → 9; nova seção "Prompt Caprichado, Resultado Medíocre: Sintoma de Contexto Faltando, Não de Prompt Ruim" com o caso do serviço de cobrança recorrente como evidência concreta dos três movimentos já documentados na página; nova linha em Key Sources
+- `wiki/concepts/prompt-engineering.md` — `source_count` 10 → 11; nova seção "Prompt Bom Não Compensa Contexto Ausente" registrando o limite estrutural do prompt engineering frente à engenharia de contexto; nova linha em Fontes
+- `wiki/concepts/janela-de-contexto.md` — `source_count` 4 → 5; nova seção "O Que Está Fora da Janela Não Existe" com a analogia da pessoa vendada; nova linha em Key Sources
+- `wiki/concepts/progressive-disclosure-ia.md` — `source_count` 1 → 2; nova seção "Analogia: o Mapa Antes da Rua"; nova linha em Key sources
+- `wiki/concepts/story-points.md` — `source_count` 2 → 3; nova seção "O Gargalo Que Definiu a Métrica Pode Ter Mudado de Lugar" conectando à Lei de Goodhart e ao experimento de reduzir o timebox de sprint; nova linha em Key Sources
+- `wiki/concepts/paradoxo-da-aceleracao.md` — `source_count` 1 → 2; nova seção "Evolução vs. Revolução: Tratar a IA Como Otimização de Etapa É a Causa" conectando o dado quantitativo da Faros AI ao raciocínio de ciclo completo da fonte atual; nova linha em Key Sources
+- `wiki/concepts/plano-vertical.md` — `source_count` 2 → 3; nova seção "Fatia Vertical Também na Divisão do Trabalho, Não Só no Plano do Agente" aplicando a lógica de fatia vertical à divisão de tarefas entre pessoas, não só ao plano de implementação de um agente; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Autoria não identificada** — a transcrição de voz automática não permitiu identificar com confiança o nome do locutor/canal; nenhuma entidade foi criada, seguindo o mesmo critério de fontes anteriores sem autoria confirmada. (2) **Sem contradições com o wiki existente** — a fonte é majoritariamente confirmatória e reorganizadora: os "três movimentos" de engenharia de contexto e a analogia mapa-antes-da-rua já estavam documentados em [[wiki/concepts/context-engineering-harness]] e [[wiki/concepts/progressive-disclosure-ia]]; a contribuição genuinamente nova foi (a) um caso concreto (serviço de cobrança recorrente) para ancorar esses conceitos já abstratos, (b) a distinção nomeada evolução-vs-revolução como enquadramento para por que a aceleração de escrita de código não vira aceleração de entrega — conectando explicitamente ao fenômeno quantitativo já registrado em [[wiki/concepts/paradoxo-da-aceleracao]], e (c) a extensão da lógica de "fatia vertical" (antes só aplicada ao plano de um agente dentro de uma tarefa) para a divisão de trabalho entre pessoas de um time. (3) **Claims de processo sem dado quantitativo** — a proposta de reduzir o timebox de sprint e a proposta de tarefa grande com IA cobrindo lacuna técnica são relatadas como experimento/opinião do locutor, sem números de resultado; marcadas com confiança baixa-média na fonte e não tratadas como prática validada. (4) **Pergunta em aberto não resolvida pela fonte**: no arranjo de "dev dono da feature ponta a ponta com IA cobrindo a ponta mais fraca", quem faz code review técnico de qualidade na ponta em que ninguém do time é forte? Registrada como open question na fonte, candidata a aprofundamento numa fonte futura sobre revisão de código assistida por IA.

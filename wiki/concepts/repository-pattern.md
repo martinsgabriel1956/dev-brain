@@ -4,7 +4,7 @@ title: "Repository Pattern"
 aliases: ["padrão repositório", "repository"]
 date_created: 2026-05-01
 date_updated: 2026-08-19
-source_count: 5
+source_count: 6
 tags: [design-patterns, data-access, repository, infrastructure]
 skill: tech-mentor-backend
 status: stub
@@ -38,3 +38,4 @@ Na prática de um repositório Data Mapper, a conversão campo-a-campo entre ent
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — Data Access interface + Data Mapper no fluxo completo da Clean Architecture
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — exemplo de repositório MongoDB (schemaless), crítica a ORMs que anotam entidades de domínio, e Unit of Work como alternativa para concorrência
 - [[wiki/sources/unit-of-work-padrao-de-design]] — SQLAlchemy como implementação real de Repository + Unit of Work combinados (ORM classes + Session)
+- [[wiki/sources/unit-of-work-martin-fowler]] — fonte primária de Unit of Work: definição formal do padrão como alternativa a repositórios simples para coordenar escritas e concorrência

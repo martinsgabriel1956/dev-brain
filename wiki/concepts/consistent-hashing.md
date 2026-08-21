@@ -3,8 +3,8 @@ type: concept
 title: "Consistent Hashing"
 aliases: ["hash consistente", "anel de hashing", "consistent hash ring"]
 date_created: 2026-08-03
-date_updated: 2026-08-03
-source_count: 1
+date_updated: 2026-08-19
+source_count: 2
 tags: [consistent-hashing, sharding, sistemas-distribuidos, escalabilidade, banco-de-dados]
 skill: tech-mentor-system-design
 status: stub
@@ -30,7 +30,9 @@ Shards são posicionados em pontos de um anel (0° a 360°, ou um espaço de has
 
 - [[wiki/concepts/db-sharding]] — consistent hashing como uma das três estratégias de sharding, ao lado de range-based e hash-based simples
 - [[wiki/concepts/sharding]] — resharding é citado como a maior dor operacional do sharding; consistent hashing é a mitigação padrão
+- [[wiki/concepts/kafka]] — o roteamento de partição do Kafka (`hash murmur(key) % num_partitions`) é uma instância concreta do hash-based sharding simples descrito nesta página: muda o número de partições, muda o resultado do módulo para praticamente todas as chaves, sem o mecanismo de anel que limitaria o remapeamento a uma fração dos dados
 
 ## Key Sources
 
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — anel virtual como solução ao custo de resharding do módulo simples, citado como mecanismo interno de bancos não relacionais com sharding nativo
+- [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — contra-exemplo prático: o particionamento do Kafka usa hash + módulo simples (não um anel), sofrendo a mesma limitação de resharding total ao mudar o número de partições

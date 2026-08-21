@@ -3,8 +3,8 @@ type: concept
 title: "Redis"
 aliases: ["redis cache", "redis db"]
 date_created: 2026-06-26
-date_updated: 2026-08-14
-source_count: 9
+date_updated: 2026-08-19
+source_count: 11
 tags: [redis, cache, nosql, banco-in-memory, chave-valor, backend, grande-rollback]
 skill: tech-mentor-backend
 status: stable
@@ -57,6 +57,7 @@ A chave pode ser longa e semântica. Busca por prefixo (`GET cod_cliente:*`) per
 - **Session store** — tokens de sessão, permissões de menu, extrato do cliente
 - **Reserva temporizada (TTL como regra de negócio)** — guardar uma chave com expiração automática para implementar diretamente uma regra do tipo "reserva por N minutos", sem job/cron externo para liberar o recurso. Ver [[wiki/sources/system-design-entrevista-cinema-draw-io]] abaixo — mas note a ressalva de consistência descrita ali.
 - **Pub/Sub** — broadcast efêmero em tempo real (sem persistência); `PUBLISH`/`SUBSCRIBE` num canal não exige criação prévia — publicar cria o canal implicitamente. Usado como notificador entre microsserviços em [[wiki/concepts/server-sent-events]]
+- **Cache de estado pré-computado alimentado por consumer de fila** — um consumer [[wiki/concepts/kafka|Kafka]] dedicado pode filtrar só os eventos relevantes de um stream (ex.: gol, cartão, substituição, ignorando o resto) e manter um payload já montado no Redis (placar, minuto, últimos eventos), evitando que o caminho de leitura precise recalcular uma projeção inteira a partir do banco relacional a cada requisição. Ver [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]]
 - **Streams** — fila robusta com consumer groups e ACK
 
 ## Conexão como Singleton
@@ -82,6 +83,10 @@ A [[wiki/entities/shopify]] tinha reserva de estoque em Redis com fonte de verda
 
 Reforço direto do caso Shopify acima: em quase 100% dos casos reais, Redis não é a fonte de verdade — ele vive como camada de velocidade em cima de um banco relacional (MySQL, PostgreSQL, Oracle), que continua sendo quem detém o dado real. Quando o cache expira, a aplicação busca no banco relacional e recarrega no Redis — uma arquitetura de duas camadas de leitura. Performance de referência: >100 mil operações/segundo em hardware comum, até ~1 milhão OPS/s com pipeline e batching, latência sub-milissegundo por tudo estar em RAM. Persistência (RDB/AOF) é opcional por design — se o servidor cair sem AOF configurado, os dados são perdidos desde o último snapshot.
 
+## Cache de Estado vs. Barramento Pub/Sub: Instâncias Separadas
+
+[[wiki/sources/world-cup-system-design]] desenha o Redis usado como cache de placar pré-computado (alimentado pelo Score Service) e o Redis usado como barramento [[wiki/concepts/pub-sub|Pub/Sub]] (que notifica o Web Server para repassar via SSE) como **dois blocos separados no diagrama de arquitetura**, não uma única instância acumulando as duas funções — e só o Redis de cache evolui para cluster multi-nó na versão final da arquitetura; o Redis Pub/Sub permanece single-node. O board não justifica essa separação explicitamente (ver open question na fonte), mas é consistente com o princípio de que cache (dado que precisa sobreviver e ser consultável) e pub/sub (broadcast efêmero, sem persistência) têm perfis de uso e de disponibilidade diferentes.
+
 ## Key Sources
 
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
@@ -93,3 +98,5 @@ Reforço direto do caso Shopify acima: em quase 100% dos casos reais, Redis não
 - [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] — citado como exemplo de SGBD NoSQL chave-valor e classificado didaticamente como CP no Teorema CAP em material de concurso
 - [[wiki/sources/system-design-entrevista-cinema-draw-io]] — reserva de assento de cinema por 15 minutos guardando `seatmapId`+`seatId` com TTL; a chave expira sozinha e libera o assento, mas o desenho não consulta o Redis antes de responder disponibilidade a partir da API externa de seatmap, gerando um bug de consistência assumido pelo próprio autor (ver [[wiki/concepts/distributed-lock]])
 - [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — Redis via Docker como broker de uma fila BullMQ na demo de admission control com low/high watermark
+- [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — cache de placar pré-computado alimentado por um consumer group Kafka dedicado, evitando recalcular a timeline completa a cada leitura; Redis Pub/Sub propagando atualizações para conexões SSE distribuídas entre instâncias
+- [[wiki/sources/world-cup-system-design]] — slide deck da mesma aula: Redis de cache e Redis Pub/Sub desenhados como duas instâncias separadas, só a de cache clusterizada na arquitetura final

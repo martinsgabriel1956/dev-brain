@@ -4,7 +4,7 @@ title: "Martin Fowler"
 aliases: ["Fowler", "martinfowler.com"]
 date_created: 2026-07-07
 date_updated: 2026-08-19
-source_count: 19
+source_count: 20
 tags: [thoughtworks, autor, testes, arquitetura, tech-debt, refactoring, agile]
 skill: tech-mentor-testing
 status: stable
@@ -69,6 +69,10 @@ Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter us
 
 [[wiki/sources/unit-of-work-padrao-de-design]] detalha o padrão de Fowler independentemente da menção acima: um ponto de coleta que acumula operações (criar, atualizar, remover) e as aplica todas de uma vez num `commit`, com `rollback` desfazendo o lote inteiro se qualquer operação falhar. Demonstrado com uma implementação artesanal em Python e depois com SQLAlchemy, onde o objeto `Session` é a implementação real do padrão — ver [[wiki/concepts/unit-of-work]].
 
+## Unit of Work: fonte primária (eaaCatalog)
+
+[[wiki/sources/unit-of-work-martin-fowler]] é a própria página do padrão no catálogo online de *PoEAA* (martinfowler.com/eaaCatalog), publicada em 05 de março de 2003 — a definição formal citada acima ("mantém uma lista de objetos afetados por uma transação de negócio e coordena a escrita das alterações e a resolução de problemas de concorrência") vem diretamente dela. É apenas o resumo do catálogo; remete ao Capítulo 11 do ebook para o detalhamento, não lido nesta ingestão.
+
 ## Ver também
 
 - [[piramide-de-testes]]
@@ -92,6 +96,7 @@ Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter us
 - [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — artigo de 2014 que cunhou a definição de microsserviços, coautoria com [[wiki/entities/james-lewis]]
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — definição de arquitetura de Ralph Johnson (via artigo de Fowler "Who Needs an Architect?"); Unit of Work como alternativa ao Repository simples
 - [[wiki/sources/unit-of-work-padrao-de-design]] — Unit of Work (PoEAA) detalhado: mecanismo de commit/rollback em lote, implementação artesanal em Python e exemplo real com SQLAlchemy
+- [[wiki/sources/unit-of-work-martin-fowler]] — fonte primária: página do padrão no eaaCatalog (05 mar 2003), definição formal do próprio Fowler
 - [[wiki/sources/cqrs-martin-fowler]] — post original do bliki (2011) que popularizou a definição de CQRS; tom de cautela contra aplicar o padrão ao sistema inteiro
 - [[wiki/sources/monolith-first-martin-fowler]] — fonte primária do bliki Monolith First (2015): MicroservicePremium, YAGNI, dificuldade de bounded contexts, quatro caminhos práticos de execução
 - [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — princípio Monolith First (bliki), atribuído via fonte secundária (transcrição de Renato Augusto, sem link direto ao artigo original)

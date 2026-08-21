@@ -3,7 +3,7 @@ type: source
 title: "Apache Kafka"
 aliases: ["kafka", "topics partitions", "consumer groups", "kafka producer", "kafka consumer"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
+date_updated: 2026-08-19
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/kafka.md
 source_url: ""
 date_published: ""
@@ -38,12 +38,7 @@ Kafka é um log distribuído de eventos — persiste e permite replay. Partiçã
 
 ## Entities & Concepts Touched
 
-- [[concepts/kafka]]
-- [[concepts/partitions-kafka]]
-- [[concepts/consumer-groups]]
-- [[concepts/isr-kafka]]
-- [[concepts/schema-registry]]
-- [[concepts/dlq]]
+- [[wiki/concepts/kafka]]
 
 ## Open Questions
 

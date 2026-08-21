@@ -3,8 +3,8 @@ type: concept
 title: "Prompt Engineering"
 aliases: ["engenharia de prompt", "prompt design"]
 date_created: 2026-05-17
-date_updated: 2026-08-14
-source_count: 10
+date_updated: 2026-08-20
+source_count: 11
 tags: [prompt-engineering, llm, few-shot, codex, software-3]
 skill: tech-mentor-ai
 status: stable
@@ -94,6 +94,10 @@ Em modelos mais fortes (ex.: Fable), o mesmo princípio de "descreva o estado de
 
 [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] descreve um método específico de domínio (segurança/autopentest), mas que reafirma vários princípios já documentados nesta página em outro contexto: (1) declarar o papel de quem pede o teste (dono do sistema, não atacante externo); (2) apontar para documentação já existente do sistema em vez de deixar o modelo inferir arquitetura — instância direta de "Describe It"; (3) definir explicitamente o que o sistema **não é** (ex.: "não uso Kubernetes"), tão importante quanto dizer o que é, para restringir o espaço de hipóteses do modelo; (4) testar um escopo por vez em sessões separadas — a fonte relata que testar tudo de uma vez faz o modelo "delirar" e gasta mais tokens sem necessidade; (5) definir o formato de resposta esperado; (6) declarar explicitamente o que a IA **não pode fazer** sem nova autorização — contra-exemplo de "Tell It" mal calibrado: uma autorização ampla ("pode mexer, não pergunte mais") interpretada literalmente pode levar o agente a refatorar código sem solicitar confirmação em uma pergunta não relacionada.
 
+## Prompt Bom Não Compensa Contexto Ausente
+
+[[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] documenta um caso onde um prompt tecnicamente bem construído (Tell It completo: idempotência, formato de resposta, tratamento de erro) ainda assim gerou código que violava uma regra de negócio central, porque essa regra vivia fora da janela de contexto do modelo. A fonte trata isso como o limite estrutural do prompt engineering: nenhuma técnica de fraseado resolve a ausência de informação que o modelo nunca recebeu — esse é o problema que [[wiki/concepts/context-engineering-harness|context engineering]] existe para resolver, um nível acima do prompt individual. Ver essa página para o caso completo (fila de auditoria de cobrança) e os três movimentos aplicados para corrigi-lo.
+
 ## Versionamento de Prompt Não É Só Git
 
 Uma nova versão de prompt pode quebrar o comportamento do sistema da mesma forma que uma nova versão de código pode quebrar um teste. Versionar num repositório Git ou banco de dados registra o histórico, mas não valida a mudança. O padrão recomendado é tratar prompt como artefato com **gate em CI/CD**: rodar o novo prompt contra um conjunto de [[wiki/concepts/llm-evals-testing|evals/snapshots]] antes de liberar, barrando automaticamente uma versão que regride o comportamento esperado — em vez de descobrir a regressão em produção.
@@ -111,3 +115,4 @@ Uma nova versão de prompt pode quebrar o comportamento do sistema da mesma form
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — prompt específico + contexto (mencionar arquivos, URL de referência, o design pattern desejado) vs. prompt genérico que transfere decisões subjetivas para a IA
 - [[wiki/sources/harness-explicado-function-calling-hag-evals]] — skills não dão "superpoder", só adicionam mais texto ao prompt; distinção reforçada entre o que roda localmente (código) e o que só existe como texto no data center do provider
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — versionamento de prompt como artefato com gate em CI/CD (não só Git); prompt engineering como pilar fundamental da arquitetura de agente, ao lado de tree of thoughts, skeleton of thoughts, ReAct e self-refining
+- [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] — limite estrutural do prompt bem escrito quando a informação necessária nunca esteve na janela de contexto; crítica ao "prompt mágico" como bala de prata (Frederick Brooks)

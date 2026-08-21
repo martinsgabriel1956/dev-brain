@@ -3,8 +3,8 @@ type: concept
 title: "Context Engineering (nível Harness)"
 aliases: ["context engineering harness", "engenharia de contexto", "project knowledge ia"]
 date_created: 2026-06-02
-date_updated: 2026-08-18
-source_count: 8
+date_updated: 2026-08-20
+source_count: 9
 tags: [context-engineering, harness, rules, skills, project-knowledge]
 skill: tech-mentor-ai
 status: draft
@@ -78,6 +78,14 @@ O user harness divide-se em duas categorias (Branas, Aula 01 Parte 2):
 
 Ver [[wiki/concepts/rules-agente]] e [[wiki/concepts/skills-agente]] para detalhes.
 
+## Prompt Caprichado, Resultado Medíocre: Sintoma de Contexto Faltando, Não de Prompt Ruim
+
+[[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] descreve um padrão observado revisando projetos de IA em empresas de portes variados (startup, banco, indústria): times escrevem prompts caprichados e ainda assim recebem resultado medíocre, e o diagnóstico mais comum ("seu prompt está ruim, aprenda a técnica nova") erra o alvo. O caso ilustrativo: um prompt detalhado (idempotência, formato de resposta, tratamento de erro) gerou um serviço de cobrança recorrente limpo e testável — mas que ignorava uma regra de negócio central (cobrança passa obrigatoriamente por fila de auditoria) documentada em um arquivo que nunca entrou na janela do modelo. Refazer custou mais caro que escrever do zero.
+
+Depois de identificar o padrão, o time da fonte parou de mexer no prompt e aplicou os mesmos três movimentos já descritos nesta página — conhecimento implícito virando artefato versionado, divulgação progressiva (mapa antes da rua) e exemplos reais do projeto em vez de descrição abstrata — e o **mesmo modelo, com prompts medianos**, passou a respeitar a regra de auditoria e as convenções do time. A conclusão da fonte reforça a tese central desta página: "nada mudou no modelo, mudou o que ele enxergava".
+
+A fonte também nomeia o efeito colateral do diagnóstico errado: citando Frederick Brooks, chama o "prompt mágico" de reencarnação da busca por bala de prata — otimizar o detalhe (fraseado do prompt) sobre uma fundação que não existe (contexto do projeto).
+
 ## Contexto Como Ativo de Longo Prazo
 
 Context engineering não é gerar documentação estática uma vez — é fazer a IA buscar, em tempo real, documentação viva de servidores e bancos de dados da empresa. Em aplicações de grande porte (diferente de uma prova de conceito), cada documento e decisão registrada ao longo do tempo vira um **ativo do projeto**, na mesma lógica de investimento de um teste automatizado: paga-se o custo uma vez, colhe-se o benefício pelo resto do projeto. Ver [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] e [[wiki/concepts/rag-arquitetura-avancada]] para o mecanismo concreto de busca em tempo real.
@@ -92,3 +100,4 @@ Context engineering não é gerar documentação estática uma vez — é fazer 
 - [[wiki/sources/formacao-ia-devs-aula-03-skills]]
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — contexto (docs, design docs, playbooks) como ativo de longo prazo análogo a teste automatizado; busca de documentação em tempo real vs. estática
 - [[wiki/sources/spec-writer-skill-criterios-de-boa-spec]] — exemplo didático de guia faltando (login sem redirect especificado) e framework de 7 critérios para fechar lacunas de contexto numa spec
+- [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] — caso do serviço de cobrança recorrente (regra de fila de auditoria fora da janela); prompt caprichado + resultado medíocre como sintoma de contexto ausente, não de técnica de prompt; crítica do "prompt mágico" como bala de prata

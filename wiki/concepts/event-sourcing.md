@@ -3,8 +3,8 @@ type: concept
 title: "Event Sourcing"
 aliases: ["event store", "append-only log", "eventsourcing"]
 date_created: 2026-05-31
-date_updated: 2026-08-18
-source_count: 6
+date_updated: 2026-08-19
+source_count: 7
 tags: [event-sourcing, arquitetura, cqrs, ddd, imutabilidade, fintech]
 skill: tech-mentor-backend
 status: stable
@@ -104,6 +104,12 @@ A mesma fonte conecta Event Sourcing ao **write-ahead log (WAL)** de bancos rela
 
 [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]] descreve uma ideia atribuída a [[wiki/entities/greg-young|Greg Young]], **Command Sourcing**, citada como raramente aplicada na prática: além de armazenar os eventos (o que aconteceu), armazenar também os comandos originais (a intenção que gerou o evento). Como o mesmo comando pode produzir resultados diferentes dependendo do contexto de negócio no momento da execução (ex.: taxa de juros alta vs. baixa), ter os comandos preservados permite reexecutá-los sob outro contexto e simular decisões de negócio alternativas — algo que eventos sozinhos (que já capturam o resultado, não a intenção) não permitem.
 
+## Exemplo: Placar de Futebol como Estado Derivado
+
+[[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] usa um domínio diferente do bancário para o mesmo princípio: um placar de futebol ("2 a 1") **não é armazenado** como linha mutável numa tabela — é *derivado* processando, em ordem, eventos como `match_started`, `goal`, `goal`, `match_ended`, cada um com um campo de sequência para desempatar eventos que caem no mesmo minuto. O evento em si passa por um tópico [[wiki/concepts/kafka|Kafka]], que retém a timeline completa — diferente de uma fila tradicional, que remove a mensagem ao entregá-la — viabilizando tanto a reconstrução do estado quanto o event replay.
+
+**Custo real de recalcular a timeline a cada leitura**: essa mesma fonte expõe o problema prático que motiva [[wiki/concepts/cqrs|projeções/read models]] — reconstruir o placar do zero a cada requisição (buscar todos os gols, ordenar, interpretar payload, somar por time, considerar VAR) não escala com um volume alto de leitores simultâneos. A solução aplicada foi um consumer dedicado, mantendo um estado pré-computado em [[wiki/concepts/redis|Redis]], em vez de recalcular a projeção a cada leitura — CQRS na prática, sem nomear o padrão explicitamente.
+
 ## Key Sources
 
 - [[wiki/sources/cqrs-martin-fowler]] — post original do bliki (2011) já lista Event Sourcing como padrão que combina naturalmente com CQRS
@@ -112,3 +118,4 @@ A mesma fonte conecta Event Sourcing ao **write-ahead log (WAL)** de bancos rela
 - [[wiki/sources/cqrs-dicionario-programador-codigo-fonte-tv]] — definição curta citando José Carlos Macoratti
 - [[wiki/sources/cqrs-e-event-sourcing-explicado-na-pratica]] — impedance mismatch como motivação concreta; conexão com write-ahead log de bancos relacionais; tese de que adotar Event Sourcing é decisão de domínio, não técnica
 - [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]] — exemplo do Datomic/Nubank como banco imutável; conceito de Command Sourcing (Greg Young)
+- [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — placar de futebol como exemplo concreto de estado derivado de uma timeline via Kafka; custo de recalcular a timeline a cada leitura como motivação prática para cache de estado pré-computado

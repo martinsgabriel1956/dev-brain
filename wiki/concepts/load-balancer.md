@@ -3,8 +3,8 @@ type: concept
 title: "Load Balancer"
 aliases: ["lb", "load balancing", "l4", "l7", "round robin"]
 date_created: 2026-04-23
-date_updated: 2026-08-17
-source_count: 16
+date_updated: 2026-08-19
+source_count: 18
 tags: [load-balancer, l4, l7, round-robin, health-check, alta-disponibilidade, infra, nginx]
 skill: tech-mentor-infra
 status: stub
@@ -61,6 +61,21 @@ Conexões WebSocket são de longa duração e stateful — um L7 comum pode ter 
 
 **Por que L7 quebra o fluxo:** um LB de camada 7 não é um simples repassador — ele termina a conexão HTTP recebida, lê os cabeçalhos, empacota uma nova requisição e a reenvia ao servidor escolhido. Para request-response isso é transparente, mas para WebSocket quebra o tunelamento TCP contínuo que a conexão precisa manter. O LB L4 evita isso porque nunca abre o conteúdo — apenas encaminha bytes ao servidor com menos conexões abertas no momento (uma forma de balanceamento por carga de conexão, não por round-robin cego).
 
+## Global Load Balancer, Gateway Load Balancer e Ingress
+
+- **Global Load Balancer** — além do conteúdo da requisição, roteia pela **geolocalização** do cliente, direcionando para o data center/servidor físico mais próximo. É o mecanismo técnico por trás de bloqueio de conteúdo por região (Netflix, YouTube — daí o uso de VPN para contornar) e da variação de ping observada em jogos online: o jogador não escolhe o servidor, o Global Load Balancer escolhe pela origem da requisição.
+- **Application Load Balancer** — o comportamento padrão de L4/L7 já descrito acima: distribui entre servidores/rotas equivalentes.
+- **Gateway Load Balancer** — aplica políticas de segurança e firewall sobre o tráfego antes de rotear, em vez de só decidir destino; a Cloudflare é citada como exemplo real desse comportamento.
+- **Ingress (Kubernetes)** — dentro de um cluster, cumpre o papel de load balancer entre as diferentes rotas expostas pelos serviços do cluster, via um Ingress Controller.
+
+## Quando NÃO usar um load balancer
+
+Com baixa complexidade, poucos usuários e latência já baixa, introduzir um load balancer é [[wiki/concepts/over-engineering]] — a arquitetura de servidor único resolve CRUDs pequenos (dezenas a poucas centenas de usuários) sem ganho real. O sinal de que é hora de introduzir um load balancer é a saturação observável do servidor único sob carga (latência subindo, taxa de falha subindo), não uma meta arbitrária de "arquitetura escalável desde o dia 1".
+
+## Load Balancer vs. DNS
+
+Não são a mesma coisa, apesar de os dois "decidirem para onde a requisição vai". Analogia usada em [[wiki/sources/system-design-load-balancer-nivel-macaco]]: num restaurante, o [[wiki/concepts/dns|DNS]] decide **em qual mesa você senta** (resolve nome → IP, escolhe a rota); o load balancer decide **qual garçom vai te atender** (decide quem/como atende dentro daquela rota). A diferença técnica que sustenta a analogia: o DNS apenas traduz nome em endereço e não sabe se o destino está saudável — por isso é possível acessar um site já resolvido por DNS e ainda assim cair num erro no meio do caminho. O load balancer, ao contrário, faz **health check** ativo dos servidores de destino e só roteia para instâncias saudáveis, redirecionando na hora se um servidor está sobrecarregado ou fora do ar.
+
 ## Load Balancer vs. Reverse Proxy
 
 Nem todo [[wiki/concepts/reverse-proxy]] é um load balancer: um LB decide **entre múltiplas instâncias equivalentes** usando algum algoritmo (Round Robin, Least Connections...); um reverse proxy pode apontar para **um único destino fixo** e ainda assim já cumprir seu papel — só interceptar, inspecionar e repassar. Num deploy [[wiki/concepts/blue-green-deploy|blue/green]] de host único, o Nginx atua como reverse proxy nesse segundo sentido: nunca distribui tráfego entre blue e green ao mesmo tempo, só redireciona 100% para um dos dois por vez.
@@ -83,3 +98,5 @@ Nem todo [[wiki/concepts/reverse-proxy]] é um load balancer: um LB decide **ent
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]] — ALB (AWS Load Balancer) como L7 explícito: só por operar na camada de aplicação é que o roteamento por rota HTTP (`/produtos` vs. `/admin` para destinos diferentes) é possível; distribuição pode alcançar destinos heterogêneos (EC2, Lambda) na mesma regra
 - [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] — simulação visual do porquê Round Robin dropa requisição sob variância de custo/potência, fila de requisições como trade-off latência-vs-drop, Dynamic Weighted Round Robin (peso por latência observada) e PEWMA (combina latência + carga em tempo real)
 - [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — ALB acoplado ao [[wiki/concepts/auto-scaling|Auto Scaling Group]] como arquitetura clássica AWS: health checks constantes removem instâncias falhas do pool automaticamente
+- [[wiki/sources/system-design-load-balancer-nivel-macaco]] — demonstração em simulador nível a nível (sem LB → LB com round robin → tipos); Global Load Balancer por geolocalização, Gateway Load Balancer (Cloudflare) e Ingress citados como taxonomia; distinção didática Load Balancer vs. DNS via analogia de restaurante e ênfase no health check
+- [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — LB na frente de múltiplas instâncias da API de ingestão, adicionado por exigência de redundância/alta disponibilidade mesmo sem alta volumetria (ver [[wiki/concepts/escalabilidade-horizontal]])

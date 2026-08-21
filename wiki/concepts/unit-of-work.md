@@ -4,7 +4,7 @@ title: "Unit of Work"
 aliases: ["unidade de trabalho", "unit of work pattern", "padrão unit of work"]
 date_created: 2026-08-19
 date_updated: 2026-08-19
-source_count: 1
+source_count: 2
 tags: [design-patterns, unit-of-work, transacoes, repository-pattern, sqlalchemy, rollback]
 skill: tech-mentor-backend
 status: draft
@@ -13,6 +13,10 @@ status: draft
 # Unit of Work
 
 Padrão de *Patterns of Enterprise Application Architecture* ([[wiki/entities/martin-fowler]], PoEAA) que **reúne múltiplas operações (criações, atualizações, remoções) num ponto de coleta e as aplica todas de uma vez** através de um `commit`, em vez de disparar cada mudança individualmente contra o armazenamento.
+
+## Definição na fonte primária
+
+[[wiki/sources/unit-of-work-martin-fowler]] — a página do eaaCatalog — dá a definição formal do próprio Fowler: "mantém uma lista de objetos afetados por uma transação de negócio e coordena a escrita das alterações e a resolução de problemas de concorrência". A motivação é dada em três pontos: (1) sem rastreamento, mudanças em objetos não são escritas de volta no banco; (2) a alternativa de persistir cada modificação individualmente gera excesso de pequenas chamadas ao banco (performance) e exigiria transações abertas por múltiplos requests (inviável); (3) evitar leituras inconsistentes exige rastrear objetos já acessados. A página não detalha a mecânica de resolução de concorrência nem traz exemplo de código — isso está apenas no Capítulo 11 do livro (não lido) e, na prática, na implementação com [[wiki/sources/unit-of-work-padrao-de-design]] abaixo.
 
 ## Mecanismo
 
@@ -54,3 +58,4 @@ Nenhum desses três exemplos tem demonstração de código na fonte — são cit
 ## Key Sources
 
 - [[wiki/sources/unit-of-work-padrao-de-design]] — implementação artesanal em Python + exemplo real com SQLAlchemy (Session como Unit of Work), incluindo demonstração de rollback ao vivo e distinção flush vs. commit
+- [[wiki/sources/unit-of-work-martin-fowler]] — fonte primária: definição formal do padrão no eaaCatalog, com a motivação (rastreamento, performance, transações longas, leituras inconsistentes)

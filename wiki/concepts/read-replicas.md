@@ -3,8 +3,8 @@ type: concept
 title: "Read Replicas"
 aliases: ["réplica de leitura", "read replica", "replica routing"]
 date_created: 2026-04-22
-date_updated: 2026-08-10
-source_count: 6
+date_updated: 2026-08-19
+source_count: 7
 tags: [banco-de-dados, escalabilidade, read-replicas, postgresql, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -47,6 +47,10 @@ Read replicas são o mecanismo concreto por trás do read/write split usado em [
 
 [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] marca essa distinção explicitamente ao apresentar sharding: read replica escala apenas **leitura/performance** — a escrita continua concentrada no primário. Escalar tanto leitura quanto escrita horizontalmente exige [[wiki/concepts/sharding]], que distribui dados diferentes (não cópias do mesmo dado) entre nós independentes.
 
+## Caso: Réplicas Servindo Rotas de Histórico/Estatística, Não o Placar ao Vivo
+
+[[wiki/sources/world-cup-system-design]] mostra um Web Server que consulta **réplicas de leitura** (`Replica 1`, `Replica 2`) diretamente para as rotas de histórico e estatística (`/matches/{id}/statistic`, `/team/{id}/history`, `/player/{id}/history`) — dados que não mudam a cada segundo e toleram alguma defasagem — enquanto o placar ao vivo (`/matches/{id}/stream`) segue um caminho totalmente separado via [[wiki/concepts/redis]]. É uma divisão de responsabilidade por volatilidade do dado: o que muda a cada evento vai para cache pré-computado; o que muda pouco (histórico consolidado) vai para réplica de banco relacional.
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
@@ -55,3 +59,4 @@ Read replicas são o mecanismo concreto por trás do read/write split usado em [
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — distinção explícita entre read replica (escala leitura) e sharding (escala leitura e escrita)
 - [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — read replica como "load balancer de banco de dados" (primário só escreve, réplicas só leem), terceiro degrau da escada de leitura (200-300k+ req/s); tradeoff de replication lag "de até segundos" é o ponto que corta candidatos que não o citam — crítico para fintech, tolerável para feed social
 - [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — justificativa didática do read/write split: "a maioria das aplicações lê mais do que escreve", então um banco de escrita alimenta réplicas de leitura
+- [[wiki/sources/world-cup-system-design]] — réplicas servindo rotas de histórico/estatística separadas do caminho de placar ao vivo (Redis), divisão por volatilidade do dado

@@ -3,8 +3,8 @@ type: concept
 title: "Plano Vertical"
 aliases: ["vertical plan", "implementação vertical", "plano incremental"]
 date_created: 2026-05-04
-date_updated: 2026-05-04
-source_count: 2
+date_updated: 2026-08-20
+source_count: 3
 tags: [coding-agents, workflow, rpi, incremental-development]
 skill: tech-mentor-ai
 status: stable
@@ -50,7 +50,12 @@ Ver [[concepts/vertical-slice-architecture]] para a versão arquitetural desse p
 
 Plano vertical também beneficia a [[concepts/dumb-zone|smart zone]]: cada entrega é completada e testada com contexto baixo. No plano horizontal, o agente acumula contexto por todas as camadas antes de qualquer validação.
 
+## Fatia Vertical Também na Divisão do Trabalho, Não Só no Plano do Agente
+
+[[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] aplica a mesma lógica de "fatia de ponta a ponta" a um nível diferente: não ao plano de implementação de um agente dentro de uma tarefa, mas à divisão do trabalho **entre pessoas** de um time. A fonte contrasta a separação tradicional por camada técnica (um dev forte em back, outro forte em front, cada um entregando sua parte horizontal) com um arranjo vertical: uma pessoa com bom domínio do negócio entrega a feature inteira de ponta a ponta, apoiada por agentes cobrindo a lacuna técnica na ponta em que ela é mais fraca. O argumento é o mesmo desta página em espírito — menos costura entre partes entregues isoladamente, contexto acumulado numa única linha de responsabilidade em vez de fragmentado entre pessoas — mas o "erro descoberto tarde" que a fonte quer evitar não é um bug de implementação, é o retrabalho de handoff entre duas pessoas que só descobrem a divergência na hora de integrar.
+
 ## Key Sources
 
 - [[sources/erros-workflow-research-plan-implement]]
 - [[sources/context-engineering-avancado-para-coding-agents]]
+- [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] — mesma lógica de fatia vertical aplicada à divisão de tarefas entre pessoas do time, não só ao plano de implementação de um agente
