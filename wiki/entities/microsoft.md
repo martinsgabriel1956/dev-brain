@@ -3,8 +3,8 @@ type: entity
 title: "Microsoft"
 aliases: []
 date_created: 2026-07-16
-date_updated: 2026-08-18
-source_count: 6
+date_updated: 2026-08-21
+source_count: 7
 tags: [empresa, custo-ia, token-economics, demissao, capital-de-tokens]
 skill: tech-mentor-ai
 status: stub
@@ -30,9 +30,14 @@ Décadas antes da economia de IA, a Microsoft teve participação forte na cria�
 
 Citada, junto com Google e Apple, como uma das big techs que adotaram em massa o [[wiki/concepts/openid-connect|OpenID Connect]], tornando-o base de praticamente todo botão de login social e de aplicações single page modernas. Ver [[wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth]].
 
+## "DLL-hell" como Exemplo Histórico de Reuso Maduro Difícil
+
+[[wiki/sources/seedwork-martin-fowler]] (2003) cita o "DLL-hell" da Microsoft — bibliotecas compartilhadas do Windows que quebravam quando versões diferentes, atualizadas em cronogramas distintos, entravam em conflito — como prova de que mesmo reuso de código maduro (não só o [[wiki/concepts/seedwork|seedwork]] improvisado) é difícil de acertar na prática. Décadas antes da economia de IA descrita nas demais fontes desta entity, é o mesmo tipo de problema estrutural de versionamento que hoje aparece em discussões de [[wiki/concepts/schema-evolution|schema evolution]] e contratos de API.
+
 ## Key Sources
 
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]]
+- [[wiki/sources/seedwork-martin-fowler]] — "DLL-hell" como exemplo histórico de dificuldade de versionamento em reuso de bibliotecas compartilhadas
 - [[wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth]] — adotante em massa do OpenID Connect
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — "paradoxo da informação invertida"
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — citada (sem detalhamento numérico) como uma das big techs estourando orçamento de engenharia de IA em 2026

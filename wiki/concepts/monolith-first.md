@@ -3,8 +3,8 @@ type: concept
 title: "Monolith First"
 aliases: ["monolito primeiro", "monolith first", "martinfowler.com/bliki/monolithfirst"]
 date_created: 2026-08-18
-date_updated: 2026-08-18
-source_count: 2
+date_updated: 2026-08-21
+source_count: 3
 tags: [monolito, monolito-modular, microsservicos, martin-fowler, arquitetura, ddd, yagni, bounded-context]
 skill: tech-mentor-backend
 status: stable
@@ -41,7 +41,12 @@ Distinto mas complementar a [[wiki/sources/arquitetura-de-sacrificio]] (outro ar
 
 [[wiki/sources/monolith-first-martin-fowler]] é o bliki original (3 jun 2015) — confirma ponto a ponto o relato secundário que já estava registrado nesta página e acrescenta: o termo formal **MicroservicePremium** (o "prêmio"/sobretaxa de gerenciar um conjunto de serviços, que só compensa em sistemas mais complexos, ver [[wiki/concepts/microservice-premium]]); os dois argumentos centrais nomeados explicitamente como [[wiki/concepts/yagni|YAGNI]] e dificuldade de acertar [[wiki/concepts/bounded-context|BoundedContexts]] logo no início; quatro caminhos práticos de execução da estratégia (monolito modular desenhado com cuidado, descascar microsserviços gradualmente das bordas, tratar o monolito como [[wiki/concepts/arquitetura-de-sacrificio|Sacrificial Architecture]], ou começar com poucos serviços de granulação grossa — um "duolith"); e um contra-argumento que Fowler reconhece explicitamente: começar direto com microsserviços pode fazer sentido em substituições de sistemas existentes, onde as fronteiras já são conhecidas, desde que o time já tenha experiência com microsserviços.
 
+## Mesmo Padrão Retórico em Seedwork
+
+[[wiki/sources/seedwork-martin-fowler]] (2003) usa a mesma estrutura de argumento, décadas antes: em vez de esperar por um framework de reuso perfeito (raro e difícil de alcançar), Fowler recomenda uma alternativa pragmática e imperfeita — o [[wiki/concepts/seedwork]]. Monolith First aplica o mesmo raciocínio à escolha arquitetural de dia 1: em vez de esperar ter certeza sobre os [[wiki/concepts/bounded-context|bounded contexts]] corretos antes de distribuir, comece pelo monolito modular e evolua a decomposição depois. Em ambos os casos, o critério de decisão de Fowler é "o que é útil agora", não "o que é ideal em teoria".
+
 ## Key Sources
 
 - [[wiki/sources/monolith-first-martin-fowler]] — fonte primária: MicroservicePremium, os dois argumentos (YAGNI e BoundedContexts), quatro caminhos práticos, contra-argumento
 - [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — nomeação explícita do princípio, as duas percepções de Fowler, e a imagem dos "dois caminhos" do bliki
+- [[wiki/sources/seedwork-martin-fowler]] — mesmo padrão retórico de Fowler (pragmatismo imperfeito sobre ideal inalcançável), aplicado a reuso de framework em vez de arquitetura de serviços

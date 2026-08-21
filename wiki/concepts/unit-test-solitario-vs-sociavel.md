@@ -3,8 +3,8 @@ type: concept
 title: "Unit Test Solitário vs. Sociável"
 aliases: ["solitary unit test", "sociable unit test", "teste unitário solitário", "teste unitário sociável"]
 date_created: 2026-07-07
-date_updated: 2026-08-12
-source_count: 3
+date_updated: 2026-08-21
+source_count: 4
 tags: [testes, unit-test, tdd, martin-fowler, terminologia]
 skill: tech-mentor-testing
 status: stable
@@ -32,7 +32,7 @@ A distinção mapeia quase diretamente para as duas escolas descritas em [[tdd]]
 | London (Outside-In / Mockist) | Solitário — mocka todo colaborador ainda não existente |
 | Detroit (Inside-Out / Classicist) | Sociável — usa objetos reais do domínio, mocka só I/O externo |
 
-Na taxonomia de Meszaros, o eixo é **entrada indireta** (Stub/Mock controlam o que o SUT recebe) vs. **saída indireta** (Spy/Mock verificam o que o SUT dispara) — a escola London tende a Mocks (verifica interação), a Detroit tende a objetos reais + Stub só para I/O. Ver [[wiki/sources/test-double-xunitpatterns-meszaros]].
+Na taxonomia de Meszaros, o eixo é **entrada indireta** (Stub/Mock controlam o que o SUT recebe) vs. **saída indireta** (Spy/Mock verificam o que o SUT dispara) — a escola London tende a Mocks (verifica interação), a Detroit tende a objetos reais + Stub só para I/O. Ver [[wiki/concepts/indirect-input-output]] e [[wiki/sources/test-double-xunitpatterns-meszaros]].
 
 ## Como Fowler resolve na própria escrita
 
@@ -49,4 +49,5 @@ Continua usando "unit test" para os dois casos, qualificando com **"solitary"** 
 
 - [[wiki/sources/integration-test-martin-fowler]]
 - [[wiki/sources/test-double-xunitpatterns-meszaros]] — vocabulário entrada/saída indireta que distingue o double que torna um teste solitário
+- [[wiki/sources/indirect-input-xunitpatterns]] — fonte primária isolada da metade "entrada" desse eixo
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — exemplo do teste de `add` que "sociabiliza" ao passar a chamar `db.save` real via SQLite, deixando de ser solitário

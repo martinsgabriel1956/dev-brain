@@ -3,8 +3,8 @@ type: entity
 title: "Martin Fowler"
 aliases: ["Fowler", "martinfowler.com"]
 date_created: 2026-07-07
-date_updated: 2026-08-19
-source_count: 19
+date_updated: 2026-08-21
+source_count: 22
 tags: [thoughtworks, autor, testes, arquitetura, tech-debt, refactoring, agile]
 skill: tech-mentor-testing
 status: stable
@@ -13,6 +13,10 @@ status: stable
 # Martin Fowler
 
 Chief Scientist da Thoughtworks, autor de *Refactoring* e *Patterns of Enterprise Application Architecture (PoEAA)*. Mantém o [bliki](https://martinfowler.com/bliki/) — cruzamento de blog e wiki — onde cunha e refina terminologia usada amplamente na indústria.
+
+## Curador de folclore de engenharia, não só de terminologia
+
+Além de cunhar e refinar termos técnicos, Fowler mantém páginas de bliki que curam **folclore** da profissão — em [[wiki/sources/two-hard-things-martin-fowler]] (2009) ele registra a citação clássica de [[wiki/entities/phil-karlton]] sobre naming e cache invalidation como os dois problemas difíceis da Ciência da Computação, junto com variações (*riffs*) coletadas de outras pessoas ao longo de mais de uma década, admitindo abertamente que nunca confirmou a atribuição original a Karlton com uma fonte primária. Ver [[wiki/concepts/two-hard-things]].
 
 ## Traço característico: precisão terminológica
 
@@ -37,10 +41,10 @@ Segundo [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]
 - Repository e Active Record (via *PoEAA*) — ver [[design-patterns]]
 - Feature Toggles — ver [[wiki/sources/feature-flags]]
 - [[contract-testing]] — terminologia (`ContractTest`) usada de forma consistente entre suas fontes; artigo próprio original chamava-se "Integration Contract Test", renomeado depois para "Contract Test" quando o termo mais curto ganhou adoção na indústria — ver [[wiki/sources/contract-test-martin-fowler]]
-- [[wiki/concepts/self-initializing-fake]] — recomenda esse padrão de Fake auto-validável como técnica para construir doubles usados em contract tests
+- [[wiki/concepts/self-initializing-fake]] — bliki próprio de 2009 ([[wiki/sources/self-initializing-fake-martin-fowler]]) detalhando o padrão: um Fake que na primeira chamada encaminha ao serviço real e grava a resposta em cache, servindo daí em diante; recomendado depois, em 2011, como técnica para construir doubles usados em contract tests
 - [[wiki/concepts/monolith-first]] — princípio (bliki, 2015, martinfowler.com/bliki/MonolithFirst.html) de que projetos novos não devem começar com microsserviços; formulado a partir da observação de que quase toda história de microsserviços bem-sucedida começou como monolito, e quase todo sistema que nasceu já distribuído teve sérios problemas; sustentado por YAGNI e pela dificuldade de acertar bounded contexts no início — ver a fonte primária [[wiki/sources/monolith-first-martin-fowler]]
 - [[test-doubles]] — divulgou o termo guarda-chuva "TestDouble" no bliki em 2006, mas a taxonomia dos cinco tipos (Dummy/Fake/Stub/Spy/Mock) é de autoria de [[wiki/entities/gerard-meszaros]], não dele — ver [[wiki/sources/test-double-martin-fowler]] (relato de Fowler) e agora também a **fonte primária** de Meszaros em [[wiki/sources/test-double-xunitpatterns-meszaros]]
-- [[wiki/concepts/seedwork]] — termo cunhado por ele para descrever frameworks mínimos reconstruídos por cada time, a partir de discussão originada num post de Michael Feathers
+- [[wiki/concepts/seedwork]] — termo cunhado por ele para descrever frameworks mínimos reconstruídos por cada time, a partir de discussão originada num post de Michael Feathers; fonte primária agora ingerida em [[wiki/sources/seedwork-martin-fowler]], publicada no mesmo dia (2003-09-11) que [[wiki/sources/application-boundary-martin-fowler]] e reutilizando a mesma tese central (ApplicationBoundary como construção social) para explicar por que reuso de código entre aplicações é difícil
 - [[wiki/concepts/application-boundary]] — tese de 2003 de que "aplicações são construções sociais", argumentando contra a previsão da época de que SOA tornaria aplicações obsoletas — ver [[wiki/sources/application-boundary-martin-fowler]]
 - [[wiki/concepts/microsservicos]] — coautor (com [[wiki/entities/james-lewis]]) do artigo de 2014 que cunhou a definição do termo hoje citada universalmente na indústria; mesma característica de precisão terminológica descrita acima aparece aqui como recusa a declarar microsserviços "o futuro" sem ressalvas — ver [[wiki/sources/microsservicos-martin-fowler-james-lewis]]
 - [[wiki/concepts/cqrs]] — post do bliki (2011) que popularizou a definição mais citada do termo; mesmo traço de cautela terminológica aparece aqui como reserva explícita ("a maioria das implementações que vi foi problemática") e como restrição de escopo a [[wiki/concepts/bounded-context]] — ver [[wiki/sources/cqrs-martin-fowler]]
@@ -95,3 +99,6 @@ Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter us
 - [[wiki/sources/cqrs-martin-fowler]] — post original do bliki (2011) que popularizou a definição de CQRS; tom de cautela contra aplicar o padrão ao sistema inteiro
 - [[wiki/sources/monolith-first-martin-fowler]] — fonte primária do bliki Monolith First (2015): MicroservicePremium, YAGNI, dificuldade de bounded contexts, quatro caminhos práticos de execução
 - [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — princípio Monolith First (bliki), atribuído via fonte secundária (transcrição de Renato Augusto, sem link direto ao artigo original)
+- [[wiki/sources/seedwork-martin-fowler]] — bliki de 2003 sobre reuso via frameworks mínimos ("seedwork"); reabilita parcialmente reuso por copiar-e-colar como alternativa pragmática quando um bom framework compartilhado não está disponível
+- [[wiki/sources/self-initializing-fake-martin-fowler]] — bliki de 2009: mecanismo do Fake que se autoinicializa contra o serviço real na primeira chamada e passa a servir do cache; publicado cerca de um ano e meio antes de recomendar o padrão em [[wiki/sources/contract-test-martin-fowler]] (2011)
+- [[wiki/sources/two-hard-things-martin-fowler]] — bliki de 2009, mantido como página viva: citação de Phil Karlton (naming + cache invalidation), atribuição nunca confirmada, quatro riffs coletados entre 2010 e 2021

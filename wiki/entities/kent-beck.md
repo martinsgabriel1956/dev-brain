@@ -3,8 +3,8 @@ type: entity
 title: "Kent Beck"
 aliases: ["kent beck"]
 date_created: 2026-07-09
-date_updated: 2026-07-20
-source_count: 5
+date_updated: 2026-08-21
+source_count: 6
 tags: [autor, tdd, extreme-programming, design-incremental, junit, xunit, yagni]
 skill: tech-mentor-testing
 status: stub
@@ -47,3 +47,4 @@ A citação "invest in the design of the system every day" foi atribuída a Beck
 - [[wiki/sources/xunit-martin-fowler]] — origem do JUnit e do framework de testes que o antecedeu
 - [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] — verificação de autoria de *Extreme Programming Explained*, origem do YAGNI
 - [[wiki/sources/cognitive-debt-margaret-storey]] — "make the hard change easy" (*Tidy First?*) como prevenção de dívida cognitiva
+- [[wiki/sources/seedwork-martin-fowler]] — fonte primária que nomeia o padrão do framework de testes caseiro de Beck (reconstruído por cada time) como exemplo de [[wiki/concepts/seedwork]]

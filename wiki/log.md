@@ -7599,3 +7599,88 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção "Padrões e Design")
 
 **Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte confirma e aprofunda a referência a Unit of Work que já existia de forma breve em [[wiki/concepts/repository-pattern]] (via [[wiki/sources/arquitetura-limpa-na-pratica]]), agora com mecanismo completo e exemplo de código real (SQLAlchemy). Não havia página dedicada ao conceito antes desta ingestão — criada como `status: draft` por ter apenas uma fonte. (2) **Autor/canal não identificado por nome** — única pista é a menção a "arjancodes.com" e a um workshop de diagnóstico de código, característicos do canal ArjanCodes, mas não confirmado por citação explícita; nenhuma entidade de autoria foi criada para não forçar atribuição não verificada. (3) **Três exemplos de domínios fora de banco de dados (sync de arquivos, jogos, infraestrutura como código) citados apenas como analogia, sem código** — candidatos a fonte dedicada futura se aparecer demonstração prática (ex: Terraform apply/rollback).
+
+## [2026-08-21] ingest | Seedwork (Martin Fowler)
+
+**Fonte:** [[wiki/sources/seedwork-martin-fowler]] — artigo original em inglês buscado via `curl` (HTML bruto, não resumo de WebFetch, para preservar fidelidade textual) e traduzido para pt-BR em `raw/seedwork-martin-fowler.md`.
+**Skill carregada:** `tech-mentor-backend`. Consultado `references/monorepo-backend.md` (seção "Shared Library — Padrões") como referência de calibração de domínio; o tema do bliki (reuso de framework via copy-paste vs. shared libs) é histórico/conceitual e não mapeia para um arquivo de referência específico de padrão técnico atual — sinalizado, não tratado como lacuna da skill.
+
+**Arquivos criados:**
+- `raw/seedwork-martin-fowler.md` — tradução completa do bliki original (martinfowler.com/bliki/Seedwork.html, 11 set 2003)
+- `wiki/sources/seedwork-martin-fowler.md` — TL;DR, 6 key claims com evidência, conexão com Application Boundary (mesmo dia de publicação), tensão com Under-Engineering, open questions, raw quotes em inglês
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/seedwork.md` — `status` stub → stable, `source_count` 1 → 2, `skill` tech-mentor-testing → tech-mentor-backend; removida a nota antiga de "não ingerido como fonte primária" (agora ingerido); novas seções "Reuso entre aplicações é mais difícil que reuso interno" e "Tensão com Under-Engineering"; nova linha em Key Sources
+- `wiki/concepts/application-boundary.md` — `source_count` 4 → 5; nova seção "Mesmo Dia, Outro Bliki: Seedwork Aplica a Mesma Tese ao Reuso de Código"; nova linha em Key Sources
+- `wiki/entities/martin-fowler.md` — `source_count` 19 → 20; entrada de Seedwork enriquecida com a conexão de mesma data com Application Boundary; nova linha em Key Sources
+- `wiki/entities/kent-beck.md` — `source_count` 5 → 6; nova linha em Key Sources
+- `wiki/entities/junit.md` — `source_count` 1 → 2; nova linha em Key Sources
+- `wiki/concepts/under-engineering.md` — `source_count` 1 → 2; nova seção "Contraponto: quando copy-paste não é under-engineering"; nova linha em Key Sources
+- `wiki/concepts/monolith-first.md` — `source_count` 2 → 3; nova seção "Mesmo Padrão Retórico em Seedwork"; nova linha em Key Sources
+- `wiki/concepts/yagni.md` — `source_count` 10 → 11; nova seção "Seedwork: Mesmo Espírito, Aplicado a Reuso de Framework"; nova linha em Key Sources
+- `wiki/entities/microsoft.md` — `source_count` 6 → 7; nova seção "'DLL-hell' como Exemplo Histórico de Reuso Maduro Difícil"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; hook de [[wiki/concepts/seedwork]] atualizado em Concepts
+
+**Notas / open questions:** (1) **Promove um stub pré-existente a fonte primária real** — [[wiki/concepts/seedwork]] já existia desde a ingestão de [[wiki/sources/xunit-martin-fowler]] (2026-07-19), mas com nota explícita de que o bliki original só tinha sido consultado para calibração, não ingerido; esta ingestão fecha essa lacuna já sinalizada no log daquela data. (2) **Sem contradições** com o wiki existente — a ingestão é puramente aditiva; a única tensão notável (copy-paste como sinal de under-engineering vs. seedwork como pragmatismo válido) foi tratada como contraste contextual, não como contradição, em ambas as páginas envolvidas. (3) **WebFetch descartado por parafrasear em vez de citar** — a primeira tentativa de buscar o artigo via WebFetch retornou um resumo reescrito por um modelo pequeno, inadequado para uma fonte que deveria preservar fidelidade textual; o HTML foi buscado diretamente via `curl` para extrair o texto original exato antes de traduzir. (4) **Weblog original de Michael Feathers (origem do termo) não ingerido** — citado apenas de segunda mão pelo próprio Fowler; candidato a ingestão futura se a URL for localizada.
+
+## [2026-08-21] ingest | Indirect Input (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/indirect-input-xunitpatterns]] — verbete de glossário buscado via `curl` (HTML bruto — WebFetch falhou com `ECONNREFUSED` no domínio) e traduzido para pt-BR em `raw/indirect-input-xunitpatterns.md`. Nota: a URL correta exigiu casing minúsculo (`indirect%20input.html`); a variante com iniciais maiúsculas retorna 404.
+**Skill carregada:** `tech-mentor-testing`. Consultada a linha "Test Doubles, TestContainers, ..." → `references/test-patterns.md` como referência de calibração; o verbete em si é vocabulário puro (glossário), sem conteúdo técnico novo de ferramenta.
+
+**Arquivos criados:**
+- `raw/indirect-input-xunitpatterns.md` — tradução do verbete original (xunitpatterns.com/Indirect%20Input.html, Gerard Meszaros)
+- `wiki/sources/indirect-input-xunitpatterns.md` — TL;DR, 4 afirmações centrais com evidência, 3 key claims, questões abertas, citações originais
+- `wiki/concepts/indirect-input-output.md` — conceito novo (status stub) formalizando o par entrada/saída indireta e ponto de controle/observação, vocabulário que antes só existia inline dentro de [[wiki/concepts/test-doubles]]
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/test-doubles.md` — `source_count` 7 → 8; link para o novo conceito na seção de vocabulário formal e em "Ver também"; nova linha em Key Sources
+- `wiki/sources/test-double-xunitpatterns-meszaros.md` — nova open question apontando o desmembramento de "indirect input" em fonte própria
+- `wiki/entities/gerard-meszaros.md` — `source_count` 2 → 3; nova linha em Key Sources
+- `wiki/concepts/unit-test-solitario-vs-sociavel.md` — `source_count` 3 → 4; link para o novo conceito; nova linha em Key Sources
+- `wiki/concepts/teste-de-integracao-estreito-vs-amplo.md` — `source_count` 4 → 5; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção "Testes & Qualidade")
+
+**Notas / open questions:** (1) **Sem contradições** — esta ingestão é puramente aditiva e formaliza vocabulário que já estava correto, mas apenas inline, dentro de [[wiki/concepts/test-doubles]] desde a ingestão de [[wiki/sources/test-double-xunitpatterns-meszaros]] (2026-08-12). (2) **Fonte é um verbete curto de glossário**, não um artigo — por isso o número de páginas tocadas ficou abaixo do range usual de 10-15: o conteúdo novo é estreito (uma definição de meia página) e a maior parte do vocabulário relacionado (SUT, DOC, Stub) já tinha cobertura extensa via a fonte-irmã. (3) **Verbetes irmãos do mesmo glossário não ingeridos**: "indirect output", "control point", "observation point", "direct input" — candidatos naturais a próximas ingestões para fechar o vocabulário completo do catálogo xUnitPatterns.com, sinalizados em [[wiki/concepts/indirect-input-output]].
+
+## [2026-08-21] ingest | Self Initializing Fake (Martin Fowler)
+
+**Fonte:** [[wiki/sources/self-initializing-fake-martin-fowler]] — artigo original em inglês buscado via WebFetch (extração de conteúdo, não HTML bruto) e traduzido para pt-BR em `raw/self-initializing-fake-martin-fowler.md`.
+**Skill carregada:** `tech-mentor-testing`. Consultada a linha "TDD, BDD, Contract Testing, Mocks, Fixtures..." → `references/test-patterns.md` como referência de calibração de domínio.
+
+**Arquivos criados:**
+- `raw/self-initializing-fake-martin-fowler.md` — tradução do bliki original (martinfowler.com/bliki/SelfInitializingFake.html, 4 ago 2009)
+- `wiki/sources/self-initializing-fake-martin-fowler.md` — TL;DR, 8 key claims com evidência, entidades/conceitos, open questions
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/self-initializing-fake.md` — `status` stub → stable, `source_count` 2 → 3; fechada a open question que pedia exatamente esta ingestão; novas seções "Por que 'Fake' e não 'Stub' ou 'cache comum'", "Dados que mudam: quando o snapshot antigo ainda serve", "Pipeline em dois estágios" e "Detalhe prático: parâmetros irrelevantes na chave de cache"; nova linha em Key Sources
+- `wiki/concepts/test-doubles.md` — `source_count` 8 → 9; frase da seção "Ver também" enriquecida com o mecanismo de cache; nova linha em Key Sources
+- `wiki/concepts/contract-testing.md` — `source_count` 7 → 8; bullet do SelfInitializingFake enriquecido com o mecanismo detalhado; nova linha em Key Sources
+- `wiki/sources/contract-test-martin-fowler.md` — open question #1 (bliki de implementação não ingerido) marcada como resolvida com link para a nova fonte; nova seção Key Sources
+- `wiki/entities/martin-fowler.md` — `source_count` 20 → 21; entrada de SelfInitializingFake enriquecida com data (2009) e mecanismo; nova linha em Key Sources
+- `wiki/entities/gerard-meszaros.md` — `source_count` 3 → 4; nova seção "Contribuidor recorrente do bliki de Fowler sobre test doubles" (creditado junto com Josh Price e Darren Cotterill); nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; hooks de [[wiki/concepts/self-initializing-fake]] e [[wiki/entities/gerard-meszaros]] atualizados
+
+**Notas / open questions:** (1) **Promove um stub pré-existente a fonte primária real** — [[wiki/concepts/self-initializing-fake]] já existia desde a ingestão de [[wiki/sources/contract-test-martin-fowler]] (2026-07-27), com open question explícita pedindo esta ingestão; fechada agora. (2) **Sem contradições** — ingestão puramente aditiva, confirma e detalha o que já estava registrado por menção indireta. (3) **Josh Price e Darren Cotterill não ganharam entity page** — citados apenas como créditos pontuais no artigo, sem conteúdo suficiente para uma página própria; candidatos a stub se aparecerem em outra fonte. (4) **WebFetch usado (não curl)** — diferente da ingestão de Seedwork, aqui a extração via WebFetch foi aceita porque o conteúdo é curto e a tradução já é paráfrase assumida (nota no frontmatter da fonte), não uma tradução literal que exigisse HTML bruto.
+
+## [2026-08-21] ingest | Two Hard Things (Martin Fowler)
+
+**Fonte:** [[wiki/sources/two-hard-things-martin-fowler]] — artigo original em inglês buscado via `curl` (HTML bruto, não resumo de WebFetch, para preservar o texto exato das citações/piadas) e traduzido para pt-BR em `raw/two-hard-things-martin-fowler.md` (narração traduzida; citações mantidas em inglês por serem trocadilhos).
+**Skill carregada:** `tech-mentor-leadership` (mesma skill já usada em [[wiki/concepts/naming]], a página mais central afetada). Consultado `references/software-craftsmanship.md` como calibração; não há seção dedicada a esse aforismo de folclore — sinalizado como conteúdo cultural/histórico sem mapeamento de skill específico, não como lacuna real.
+
+**Arquivos criados:**
+- `raw/two-hard-things-martin-fowler.md` — tradução do bliki original (martinfowler.com/bliki/TwoHardThings.html, 14 jul 2009)
+- `wiki/sources/two-hard-things-martin-fowler.md` — TL;DR, 7 key claims, entidades/conceitos, open questions
+- `wiki/concepts/two-hard-things.md` — conceito novo (`status: draft`) dedicado ao aforismo em si (origem, atribuição incerta, tabela dos 4 riffs), separado das páginas técnicas de naming e cache
+- `wiki/entities/phil-karlton.md` — entity nova (`status: stub`): conhecido nesta wiki só pela citação, sem dados biográficos localizados
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/naming.md` — `source_count` 5 → 6; citação de Karlton agora linkada a [[wiki/entities/phil-karlton]] e [[wiki/concepts/two-hard-things]] com nota de atribuição incerta; nova linha em Key Sources
+- `wiki/concepts/tradeoff-de-cache.md` — `source_count` 2 → 3; mesma correção de atribuição; nova linha em Key Sources
+- `wiki/sources/cache-stampede-invalidation.md` — TL;DR ajustado com link para a nova fonte
+- `wiki/sources/5-principios-programador.md` — key claim de naming ajustado com nota de atribuição incerta e link
+- `wiki/concepts/idempotencia.md` — `source_count` 5 → 6; nova seção curta "Riff de folclore: os 'dois problemas difíceis' de sistemas distribuídos" conectando o riff de Mathias Verraes (exactly-once delivery) ao tema da página; nova linha em Key Sources
+- `wiki/entities/martin-fowler.md` — `source_count` 21 → 22; nova seção "Curador de folclore de engenharia, não só de terminologia"; nova linha em Key Sources
+- `wiki/index.md` — novas linhas em Sources, Concepts e Entities
+
+**Notas / open questions:** (1) **Corrige uma lacuna de atribuição espalhada por 4 páginas** — a citação de Phil Karlton já era citada em [[wiki/concepts/naming]], [[wiki/concepts/tradeoff-de-cache]], [[wiki/sources/cache-stampede-invalidation]] e [[wiki/sources/5-principios-programador]] sem nenhuma delas apontar para uma origem ou mencionar que a atribuição nunca foi confirmada — mesmo Fowler, que curou a página fonte, admite nunca ter achado uma fonte primária para Karlton. Todas as quatro páginas foram atualizadas para refletir essa incerteza em vez de tratar a citação como fato estabelecido. (2) **Sem contradições** — ingestão puramente aditiva/corretiva de atribuição. (3) **Autores dos riffs (Leon Bambrick, Mathias Verraes, Phillip Scott Bowden, Nat Pryce) não ganharam entity page** — citados só pelo tweet reproduzido, sem outro conteúdo que os caracterize; diferente de Phil Karlton, que é o sujeito central do próprio artigo. (4) **Fonte é um bliki muito curto e informal (piadas/citações)**, por isso o skill mapeado (`tech-mentor-leadership`) não tem uma seção de referência dedicada ao tema — sinalizado no início desta entrada, tratado como natureza do conteúdo (folclore, não técnica formal), não como lacuna real da skill.
