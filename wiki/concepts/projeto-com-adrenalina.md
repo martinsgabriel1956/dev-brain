@@ -3,8 +3,8 @@ type: concept
 title: "Escolher o Projeto Antes da Tecnologia"
 aliases: ["projeto com adrenalina", "projeto real antes do stack", "adrenalina como critério de projeto"]
 date_created: 2026-07-21
-date_updated: 2026-07-31
-source_count: 2
+date_updated: 2026-08-17
+source_count: 3
 tags: [carreira, aprendizado, projetos, iniciantes, portfolio]
 skill: tech-mentor-leadership
 status: draft
@@ -35,7 +35,10 @@ O peso de uma única pessoa implementar sozinha algo que normalmente é trabalho
 - [[wiki/concepts/checklist-primeiro-dia-projeto]] — depois de escolhido o projeto, esse checklist cobre a ordem tática de setup
 - [[wiki/concepts/projetos-fundamentais-para-aprender-a-programar]] — tensão de fase: aquele conceito prescreve três projetos específicos por habilidade (estado, modelagem, algoritmos), enquanto este recomenda escolher pelo interesse genuíno do aprendiz; não são contraditórios, respondem perguntas diferentes
 
+Tensão de escala com [[wiki/concepts/projeto-impossivel]]: ambos recomendam um projeto único e de longo prazo em vez de vários pequenos, mas por critérios diferentes — este conceito prescreve escolher pelo interesse genuíno de quem aprende (fase inicial), enquanto o projeto impossível prescreve escala deliberadamente maior que a capacidade atual, especificamente para caber conceitos de arquitetura distribuída que não cabem num projeto pequeno mesmo que interessante.
+
 ## Key Sources
 
 - [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]]
 - [[wiki/sources/tres-projetos-para-aprender-programar]] — contraponto: três projetos prescritos pela habilidade que ensinam, não pelo critério de interesse pessoal
+- [[wiki/sources/como-nunca-mais-esquecer-o-que-voce-estuda-programacao]] — variante de escala do mesmo princípio de "um projeto central" com foco em conceitos avançados, não em interesse pessoal

@@ -3,8 +3,8 @@ type: concept
 title: "Rate Limiting"
 aliases: ["throttling", "rate limit", "token bucket", "sliding window"]
 date_created: 2026-04-23
-date_updated: 2026-08-06
-source_count: 7
+date_updated: 2026-08-14
+source_count: 8
 tags: [rate-limiting, token-bucket, sliding-window, redis, throttling, protecao-api, gatekeeper, attack-surface]
 skill: tech-mentor-backend
 status: stub
@@ -51,3 +51,4 @@ Além do risco de segurança, não limitar rotas públicas gera custo direto: um
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]]
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — brute force e credential stuffing no login sem rate limiting
 - [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] — o mesmo dilema estrutural (dropar a requisição vs. enfileirar e aceitar latência maior) aparece em load balancing sob carga, espelhando a escolha entre rejeitar (429) e enfileirar em rate limiting
+- [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — rate limit aplicado no **produtor** (não na borda de uma API pública): trava a taxa de produção na mesma capacidade que o consumidor consegue processar, como controle de [[wiki/concepts/back-pressure]]

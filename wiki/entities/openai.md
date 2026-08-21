@@ -3,8 +3,8 @@ type: entity
 title: "OpenAI"
 aliases: ["Open AI"]
 date_created: 2026-05-17
-date_updated: 2026-08-13
-source_count: 13
+date_updated: 2026-08-18
+source_count: 15
 tags: [openai, organização, llm, ia, cartao-corporativo]
 skill: tech-mentor-ai
 status: stable
@@ -81,3 +81,5 @@ Segundo [[wiki/sources/harness-explicado-function-calling-hag-evals]], a documen
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — formato de API da OpenAI citado como o outro padrão de compatibilidade que um AI Gateway multi-provider costuma imitar, ao lado do formato Anthropic
 - [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — ChatGPT no modo agente (com "full access" ao computador) e o voice mode "Mega Brain" (abandonado por lentidão) usados para vibe codar um jogo de golfe na Unreal; consumo de ~5% do limite semanal da subscription
 - [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — citada apenas como concorrência frontier (linha GPT) no pano de fundo da ancoragem de preço da Anthropic (menção contextual)
+- [[wiki/sources/tokens-o-que-sao-e-por-que-custam-caro]] — tokenizer do GPT-4o (público, vocabulário ~200k tokens) tokeniza a mesma frase em menos da metade dos tokens gastos pelo Claude Opus 5
+- [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — citada como referência de API de IA generativa (integração de LLM/visão) no capítulo dos anos 2020 de uma linha do tempo geral das APIs

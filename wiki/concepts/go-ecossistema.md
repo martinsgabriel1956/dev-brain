@@ -3,8 +3,8 @@ type: concept
 title: "Go — Ecossistema e Tooling"
 aliases: ["go chi", "go sqlc", "go golangci-lint", "go modules", "go gin echo"]
 date_created: 2026-04-24
-date_updated: 2026-07-31
-source_count: 3
+date_updated: 2026-08-18
+source_count: 4
 tags: [go, ecossistema, chi, sqlc, sqlx, gorm, linting, modules]
 skill: lang-systems
 status: stable
@@ -33,6 +33,8 @@ r.Route("/users", func(r chi.Router) {
 ```
 
 **Gin / Echo:** mais features, reflection interno, overhead vs Chi para serviços que já usam `net/http`.
+
+**Gorilla Mux:** roteador consolidado, com suporte a expressões regulares e matching por método/host/scheme nas rotas — usado em produção por [[wiki/entities/lucas-badico]] no seu sistema de mentoria em Go como uma das únicas três dependências externas do "Core" do projeto (ao lado do pacote gRPC do Google e do GORM). Ver [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]].
 
 ## SQL: Acesso a Dados
 
@@ -94,3 +96,4 @@ Confirmando o encaixe da stdlib/ecossistema acima com o uso real reportado pelo 
 - [[wiki/sources/go-ecossistema]]
 - [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]
 - [[wiki/sources/golang-profissional-sem-grandes-frameworks]] — ausência de framework dominante em Go e o ditado "repetir é melhor que acoplar"
+- [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]] — caso real de produção com apenas três libs externas (Gorilla Mux, gRPC do Google, GORM), confirmando a tese de dependência mínima na prática

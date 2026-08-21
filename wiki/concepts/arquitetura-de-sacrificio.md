@@ -4,7 +4,8 @@ title: "Arquitetura de Sacrifício"
 aliases: ["sacrificial architecture", "arquitetura sacrificial", "arquitetura de sacrificio", "código descartável deliberado"]
 date_created: 2026-08-10
 date_updated: 2026-08-10
-source_count: 1
+date_updated: 2026-08-18
+source_count: 2
 tags: [arquitetura, evolutionary-design, monolito, microsservicos, tech-debt, refatoracao, martin-fowler]
 skill: tech-mentor-backend
 status: draft
@@ -43,6 +44,11 @@ Substituibilidade modular é argumento pró-[[wiki/concepts/microsservicos|micro
 - [[wiki/concepts/escalabilidade-horizontal]] — a escala que invalida a arquitetura inicial.
 - [[wiki/concepts/application-boundary]] — fronteiras como construção social e técnica.
 
+## Citada em Monolith First como um dos Caminhos Práticos
+
+[[wiki/sources/monolith-first-martin-fowler]] cita explicitamente esta mesma ideia (`SacrificialArchitecture`) como um dos quatro caminhos práticos para executar a estratégia [[wiki/concepts/monolith-first]]: tratar o monolito inicial como descartável por inteiro, sem culpa nisso, se ele acelerar a chegada ao mercado — mesma tese central já registrada acima, aplicada especificamente à escolha monolito-vs-microsserviços do dia 1 de um projeto.
+
 ## Key Sources
 
+- [[wiki/sources/monolith-first-martin-fowler]] — SacrificialArchitecture citada como um dos caminhos práticos do princípio Monolith First
 - [[wiki/sources/arquitetura-de-sacrificio]] — artigo original de Martin Fowler (2014), com os casos eBay e Google.

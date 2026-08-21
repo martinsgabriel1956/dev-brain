@@ -3,8 +3,8 @@ type: concept
 title: "Naming"
 aliases: ["nomeação", "naming things", "nomear variáveis", "nomes ruins"]
 date_created: 2026-04-26
-date_updated: 2026-07-29
-source_count: 4
+date_updated: 2026-08-18
+source_count: 5
 tags: [naming, clean-code, craftsmanship, legibilidade, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -44,6 +44,10 @@ Se 6 meses atrás você não entende o que `data2` significa, nomeie agora. Se v
 
 **Discordância explícita com o guia de estilo do Go:** Andrew Gerrand (Go) defende nomes curtos, às vezes de uma letra, argumentando que "nomes longos obscurecem o que o código faz". Ousterhout rebate citando um exemplo do próprio Go (`i`, `n` vs. `index`, `count`) e argumenta que legibilidade deve ser julgada por quem lê, não por quem escreve — e que a cultura Go de reaproveitar nomes curtos ambíguos (`ch` para "character" ou "channel", `d` para "data", "difference" ou "distance") é o mesmo tipo de risco que causou o bug do `block`. Concorda, porém, com uma regra do próprio Gerrand: "quanto maior a distância entre a declaração de um nome e seus usos, mais longo o nome deveria ser" — o que explica por que `i`/`j` são aceitáveis em loops curtos, mas não em variáveis de escopo amplo.
 
+## Números Mágicos: Naming Aplicado a Constantes
+
+[[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] trata "número mágico" (e "coisas mágicas" em geral — URLs e chaves de API hard-coded) como um problema de naming, não um smell separado: `if user.age >= 16` sem contexto nenhum sofre do mesmo problema central desta página — falta de um nome que carregue significado. A diferença prática de uma constante nomeada (`LEGAL_BEER_BUYING_AGE_GERMANY = 16`) não é só legibilidade — é **manutenção mecânica**: buscar `16` no código inteiro retorna falsos positivos (`1600`, outros usos coincidentes do mesmo número), enquanto buscar o nome da constante é inequívoco. É o argumento de "precisão" já registrado acima (Ousterhout) aplicado especificamente a valores literais em vez de variáveis.
+
 ## Relacionado
 
 [[sources/habitos-ruins-de-programador]] · [[concepts/testar-proprio-codigo]] · [[wiki/concepts/red-flags-de-design]] (Vague Name, Hard to Pick Name)
@@ -53,3 +57,4 @@ Se 6 meses atrás você não entende o que `data2` significa, nomeie agora. Se v
 - [[sources/5-principios-programador]]
 - [[wiki/sources/5-principles-that-changed-me-as-a-programmer]]
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — bug do `block` no Sprite; discordância com o guia de estilo de nomes do Go
+- [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — números mágicos e valores hard-coded (URLs, chaves de API) como falta de naming; busca textual ambígua vs. busca por nome de constante

@@ -3,8 +3,8 @@ type: concept
 title: "SQL Injection"
 aliases: ["sql injection", "sqli", "injeção sql", "bobby tables"]
 date_created: 2026-06-10
-date_updated: 2026-08-03
-source_count: 6
+date_updated: 2026-08-19
+source_count: 7
 tags: [security, sql-injection, owasp, input-sanitization, appsec, attack-surface]
 skill: tech-mentor-security
 status: stable
@@ -93,3 +93,4 @@ Uma thread analisada em [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] prop
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — teste manual de injeção como parte de checklist de autopentest
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — SQLi no campo de e-mail do login (`' or 1=1`) como vetor clássico contra formulários de autenticação
 - [[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] — citado como exemplo canônico de padrão inseguro presente nos dados de treinamento (snippets do Stack Overflow com concatenação de string em query) que um LLM pode reproduzir com a mesma fluência de um padrão parametrizado e seguro, sem o "alerta interno" que um dev experiente tem ao ver esse padrão
+- [[wiki/sources/xss-cross-site-scripting-luiz-viana]] — citado como par de XSS na mesma frente de treino prático de exploração ([[wiki/concepts/dvwa]]/bug bounty), embora a fonte foque em XSS

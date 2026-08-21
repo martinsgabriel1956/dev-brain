@@ -3,8 +3,8 @@ type: concept
 title: "Refatoração"
 aliases: ["refactoring", "refatorar"]
 date_created: 2026-07-15
-date_updated: 2026-08-11
-source_count: 5
+date_updated: 2026-08-18
+source_count: 6
 tags: [refactoring, clean-code, craftsmanship, design-de-software, tech-debt]
 skill: tech-mentor-backend
 status: draft
@@ -64,6 +64,10 @@ A mesma fonte lista seis gatilhos concretos do *Pragmatic Programmer* para decid
 5. **Oportunidade de melhoria de performance** — refatorar mantendo o comportamento, mas com melhor desempenho.
 6. **Quando um teste está passando** — contraintuitivo, mas é o momento de maior segurança para alterar: o teste de regressão avisa se o comportamento quebrou.
 
+### Code smells como gatilho para decidir refatorar (com cautela)
+
+[[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] acrescenta um filtro prático antes de agir sobre um [[wiki/concepts/code-smells|code smell]]: um smell não é prova determinística de que o código precisa ser refatorado. A régua proposta — compreensível? testável? baixo acoplamento? alta coesão? modular? fácil manutenção? — decide se vale a pena agir. O aviso final da fonte é análogo ao já registrado acima para [[wiki/concepts/red-flags-de-design]]: não varrer a code base caçando smells para corrigir sem antes considerar se a melhoria vale o custo naquele caso concreto.
+
 ## Quando NÃO refatorar
 
 - Algoritmo complicado (às vezes proprietário) que funciona desde a primeira versão e não precisa ser entendido/alterado agora — refatorar só compensa se for necessário mexer internamente naquele código.
@@ -100,3 +104,4 @@ Refatoração idealmente não é um "projeto" à parte que precisa de aprovaçã
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]]
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — "ficar estratégico" ao modificar código existente; regras de manutenção de comentários (Cap. 16)
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — refatoração conduzida por IA com [[wiki/concepts/plan-mode|plan mode]] e [[wiki/concepts/strategy-pattern|Strategy]]; comportamento externo (interface do front end) preservado — mas a validação do resultado é visual/estrutural, sem os testes automatizados que esta página exige como garantia
+- [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — catálogo de 9 code smells com régua de seis critérios (compreensível, testável, acoplamento, coesão, modular, manutenção) para decidir se um smell concreto justifica refatoração

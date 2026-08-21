@@ -3,8 +3,8 @@ type: concept
 title: "Tech Spec (Especificação Técnica)"
 aliases: ["tech spec", "especificação técnica", "technical specification sdd"]
 date_created: 2026-06-02
-date_updated: 2026-07-09
-source_count: 4
+date_updated: 2026-08-18
+source_count: 5
 tags: [spec-driven, tech-spec, planejamento, documentacao, harness]
 skill: tech-mentor-ai
 status: stable
@@ -63,9 +63,14 @@ Cada tarefa derivada da Tech Spec deve ser pequena o suficiente para:
 
 [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] justifica manter o design num arquivo separado das tasks (em vez de repeti-lo em cada uma): num projeto com ~40 tasks, o diagrama de arquitetura, os componentes de alto nível e as decisões de projeto ficariam duplicados dezenas de vezes se vivessem dentro de cada task. O design centralizado é referenciado por qualquer task, e — segundo a skill demonstrada ("TLC Spec Driven") — pode ser gerado automaticamente a partir da spec, sem escrita manual.
 
+## Critério de Validação: os 7 Critérios de uma Boa Spec
+
+[[wiki/sources/spec-writer-skill-criterios-de-boa-spec]] preenche uma lacuna deste artigo: até agora ele documentava o que a tech spec **contém**, mas não como testar se ela está boa o suficiente antes de mandar para execução. A fonte propõe um framework de 7 critérios — falseabilidade, comportamento (não implementação), invariantes, edge cases nomeados, fronteira/escopo explícito, entradas/restrições, decisões de negócio — usado como gate de validação numa skill pessoal de geração de spec ("Spec Writer", 6 etapas: validar inputs → entrevista → sumarizar → gerar documento → **validar contra os critérios** → output). Ver página dedicada [[wiki/concepts/criterios-de-uma-boa-spec]].
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-04-agentes-planejamento]]
 - [[wiki/sources/formacao-ia-devs-aula-05-qa]]
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
 - [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — design como documento único centralizado para evitar repetição em dezenas de tasks; gerado automaticamente pela skill a partir da spec
+- [[wiki/sources/spec-writer-skill-criterios-de-boa-spec]] — framework de 7 critérios de validação de spec (falseabilidade, comportamento, invariantes, edge cases, fronteira, inputs/restrições, decisões de negócio) via skill "Spec Writer"

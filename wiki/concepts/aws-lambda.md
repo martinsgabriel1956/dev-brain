@@ -3,8 +3,8 @@ type: concept
 title: "AWS Lambda"
 aliases: ["Lambda", "AWS Lambda Function"]
 date_created: 2026-08-04
-date_updated: 2026-08-05
-source_count: 2
+date_updated: 2026-08-17
+source_count: 3
 tags: ["aws", "lambda", "serverless", "faas", "infra", "cloud"]
 skill: tech-mentor-infra
 status: stub
@@ -39,7 +39,12 @@ Numa demonstração com [[wiki/concepts/aws-cdk|AWS CDK]], um Lambda é instanci
 - [[wiki/concepts/step-functions]] — coordena múltiplos Lambdas como máquina de estados
 - [[wiki/concepts/aws-cdk]] — ferramenta de IaC usada para provisionar e atualizar Lambdas de forma reproduzível
 
+## Triggers, Provisioned Concurrency e Teto de 15min
+
+Triggers mais comuns: [[wiki/concepts/api-gateway|API Gateway]] (HTTP), [[wiki/concepts/amazon-s3|S3]] (upload), [[wiki/concepts/aws-sqs|SQS]] (filas), EventBridge (schedules). **Provisioned Concurrency** mantém contêineres já quentes, mitigando o cold start descrito acima ao custo de manter capacidade reservada. **Timeout máximo de 15 minutos** é um teto rígido — não é o mesmo número do cold start por inatividade já registrado nesta página (fenômenos distintos: um é limite de duração de execução, o outro é janela de reaproveitamento de contêiner). Regra prática: para tráfego constante e previsível, [[wiki/concepts/ec2|EC2]] costuma sair mais barato que Lambda. Ver [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]].
+
 ## Key Sources
 
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]
 - [[wiki/sources/infraestrutura-como-codigo-cdk-aws]] — deploy e atualização de um Lambda via AWS CDK, incluindo concessão de permissão de escrita num bucket S3
+- [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — triggers mais comuns, Provisioned Concurrency, timeout de 15min, e quando EC2 é mais barato que Lambda

@@ -3,9 +3,9 @@ type: concept
 title: "Memória de Agente em Três Camadas (Sessão / Persistente / Skill)"
 aliases: ["three-layer agent memory", "memória de três camadas", "session/persistent/skill memory"]
 date_created: 2026-07-21
-date_updated: 2026-07-30
-source_count: 2
-tags: [tech-mentor-ai, agent-memory, learning-loop, sqlite, fts5, hermes-agent]
+date_updated: 2026-08-19
+source_count: 3
+tags: [tech-mentor-ai, agent-memory, learning-loop, sqlite, fts5, hermes-agent, claude-md, memory-layers]
 skill: tech-mentor-ai
 status: draft
 ---
@@ -35,6 +35,12 @@ O efeito observado, segundo a fonte: o agente passa a lembrar preferências impl
 - [[wiki/concepts/skills-agente]] — skill memory é, na prática, um caso de skills geradas automaticamente em vez de escritas à mão
 - [[wiki/concepts/hooks-agente]] — hooks são o mecanismo citado para popular a persistent/skill memory ao fim de uma sessão
 
+## Variante: Distinção da Própria Anthropic (Contexto de Trabalho / Memória Futura / Artefato Revisado)
+
+[[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] atribui à [[wiki/entities/anthropic|Anthropic]] (transcrição foneticamente incerta na fonte, possível erro de ASR para "a própria Anthropic") uma distinção de três partes semelhante em espírito às três camadas acima, mas nomeada de forma diferente: **contexto de trabalho** (equivalente à memória de sessão), **memória para execuções futuras** (equivalente à persistent memory) e **artefatos revisados que servem como fonte confiável** — uma categoria adicional que não mapeia diretamente para nenhuma das três camadas originais, mais próxima da ideia de um golden dataset curado do que de skill memory. A mesma fonte trata a hierarquia do [[wiki/concepts/claude-md|`CLAUDE.md`]] (máquina → usuário → projeto → pasta) explicitamente como uma forma de memória, e não só como configuração de regras — enquadramento novo frente ao resto da wiki, que até esta ingestão tratava a hierarquia de rules separadamente de memory layers.
+
+A fonte também documenta uma prática de campo (não formalizada como spec ou loop): pedir ao agente para gerar documentação numa pasta `docs/` do próprio projeto ao final de cada tarefa, para servir de contexto consultável nas sessões seguintes — mesmo padrão funcional do artefato de "estado" já coberto em [[wiki/concepts/spec-driven-development#Estado: Registro de Decisões Pós-Planejamento]], mas descrito aqui como hábito informal, fora do fluxo formal de spec-driven.
+
 ## Variante: Memória Multiplayer por Canal (Claude Tag)
 
 [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] descreve uma variante ainda sem página própria na wiki: memória compartilhada não por usuário/sessão, mas por **canal/equipe inteira** — um agente por canal do Slack (Claude Tag, da [[wiki/entities/anthropic]]) que aprende com as mensagens de todos os membros e une pedidos feitos por pessoas diferentes num mesmo contexto contínuo. As três camadas acima (sessão/persistente/skill) seguem se aplicando, mas a "sessão" deixa de ser de um usuário e passa a ser do canal como um todo — candidata a virar concept própria (`memoria-multiplayer-agente.md`) se surgir mais de uma fonte técnica detalhando o mecanismo.
@@ -43,3 +49,4 @@ O efeito observado, segundo a fonte: o agente passa a lembrar preferências impl
 
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]]
 - [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] — variante de memória multiplayer por canal (não por usuário individual)
+- [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — distinção de três partes atribuída à Anthropic (contexto de trabalho / memória futura / artefatos revisados); hierarquia do CLAUDE.md enquadrada como memory layer; prática de campo de gerar docs em `docs/` ao fim de cada tarefa

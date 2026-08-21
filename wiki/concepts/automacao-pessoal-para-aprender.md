@@ -3,8 +3,8 @@ type: concept
 title: "Automação Pessoal para Aprender"
 aliases: ["side project de automação", "automação caseira", "pratica em prod pessoal"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 1
+date_updated: 2026-08-17
+source_count: 2
 tags: [aprendizado, pratica-deliberada, carreira, automacao, autonomia]
 skill: tech-mentor-leadership
 status: draft
@@ -45,7 +45,9 @@ Quando a automação pessoal cresce e o dev quer levá-la para dentro do trabalh
 - [[wiki/concepts/pratica-deliberada]] — a automação pessoal é uma forma concreta de estruturar prática deliberada com feedback real
 - [[wiki/concepts/autonomia-responsabilidade]] — onde termina o espaço "sem pedir permissão" e começa a exigência de alinhamento formal
 - [[wiki/concepts/aprendizado-passivo]] — o oposto: consumir curso/vídeo sem nunca construir nada com as próprias mãos
+- [[wiki/concepts/projeto-impossivel]] — variante de escala: onde a automação pessoal cobre tecnologia nova em setup pequeno, o projeto impossível cobre especificamente conceitos que só existem em escala e não cabem numa automação isolada
 
 ## Key Sources
 
 - [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]]
+- [[wiki/sources/como-nunca-mais-esquecer-o-que-voce-estuda-programacao]] — introduz o conceito irmão de maior escala, [[wiki/concepts/projeto-impossivel]]

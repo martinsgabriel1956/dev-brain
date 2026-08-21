@@ -3,8 +3,8 @@ type: concept
 title: "Clean Architecture"
 aliases: ["arquitetura limpa", "clean arch"]
 date_created: 2026-07-24
-date_updated: 2026-08-12
-source_count: 5
+date_updated: 2026-08-19
+source_count: 6
 tags: [clean-architecture, uncle-bob, dependency-inversion, use-case, presenter, view-model, arquitetura, dci, bce]
 skill: tech-mentor-backend
 status: draft
@@ -63,6 +63,22 @@ Sistemas com lógica de negócio complexa que vai mudar ao longo do tempo. Para 
 
 Segundo o próprio Robert Martin (citado em [[wiki/sources/arquitetura-limpa-na-pratica]]), a Clean Architecture é "uma tentativa de integrar várias arquiteturas desenvolvidas nas últimas décadas em uma ideia prática" — ver [[wiki/concepts/dci-e-bce]] para o detalhamento das três: [[wiki/concepts/hexagonal-architecture]] (Cockburn), DCI/Data-Context-Interaction (Reenskaug e Coplien) e BCE/Boundary-Control-Entity (Jacobson). As cinco camadas do estudo de caso do livro (Entidades, Casos de Uso, Adaptadores de Interface, Frameworks & Drivers, e uma quinta camada — Principal & Configuração — que o autor adiciona por conta própria para módulos de composição/injeção de dependência) mapeiam diretamente para o diagrama de círculos concêntricos e a Regra de Dependência descritos acima.
 
+## Dificuldade de Debugar: Implementação Concreta Fica "Escondida"
+
+[[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] nomeia um custo concreto da Regra de Dependência que costuma ficar implícito: como o use case depende só da interface (ex.: `UserRepository`), a implementação concreta que roda de fato (ex.: `PostgresUserRepository`) não fica visível no ponto onde o use case é lido — é preciso rastrear onde o use case foi instanciado (a composition root) e qual adapter concreto foi injetado ali para descobrir onde o método (`save`) está realmente implementado. É o reverso da mesma moeda que dá testabilidade: a indireção que permite trocar o Postgres por um mock também exige um salto a mais para achar o código que roda em produção.
+
+## Boilerplate e Risco de Más Abstrações
+
+A mesma fonte também nomeia o principal custo de adoção: um exemplo mínimo (`User`, `CreateUser`, `UserRepository`, `PostgresUserRepository`) já exige quatro arquivos/pastas para algo que poderia ser resolvido em quatro ou cinco linhas sem a arquitetura. Como criar boas abstrações é uma das partes mais difíceis do trabalho de um desenvolvedor, quanto mais abstrações a arquitetura exige, maior a chance de que algumas delas sejam más abstrações — o setup inicial só se paga se o projeto durar tempo suficiente (a fonte cita "meses" como possivelmente insuficiente, "anos" como cenário onde a manutenibilidade compensa) e se a regra de negócio efetivamente não vazar para outras camadas.
+
+## Atrito com Frameworks Opinativos
+
+Frameworks fortemente opinativos e orientados a MVC (Rails, Django, Laravel) podem entrar em atrito direto com a Regra de Dependência — nesses casos, aplicar Clean Architecture exige "lutar contra" as convenções que o próprio framework já prescreve, em vez de simplesmente segui-las. Ver [[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]].
+
+## Popularidade Não é Só Mérito Técnico
+
+A mesma fonte propõe uma leitura cultural, não técnica: Clean Architecture não seria necessariamente superior a Hexagonal, Onion/Layered ou DDD nos méritos — cada uma é adequada a tipos de projeto diferentes. A popularidade desproporcional de Clean Architecture é atribuída, em boa parte, à fama de Robert C. Martin (Uncle Bob) como autor e divulgador, mais do que a uma vantagem técnica exclusiva sobre as arquiteturas concorrentes. Marcado como opinião do autor da fonte, não como claim factual.
+
 ## Uso em produção: Netflix, Uber, iFood
 
 [[wiki/sources/arquitetura-limpa-na-pratica]] documenta casos de adoção real: a Netflix trocou a fonte de dados de uma API de JSON para GraphQL em ~2 horas graças a repositórios abstraídos por interface (Arquitetura Hexagonal); a Uber descreve sua "Domain-Oriented Microservices Architecture" (DOMA) como baseada em DDD e Clean Architecture — ambos com posts de engenharia públicos como fonte. Relatos sobre iFood, Amazon, Mercado Livre e Nubank são anedóticos (conversas pessoais do autor do livro), com confiança mais baixa.
@@ -82,3 +98,4 @@ As métricas de pacote de Robert Martin — abstração `A`, instabilidade `I = 
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — fluxo completo do diagrama de cenário web, e a justificativa teórica (objeto vs. estrutura de dados) por trás de cada camada
 - [[wiki/sources/clean-architecture-arquitetura-centrada-no-dominio]] — comparação direta com a arquitetura em 3 camadas, explicando a origem do nome "domain-centric"
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — estudo de caso completo em TypeScript (theWisePad), genealogia DCI/BCE/Hexagonal, casos reais de adoção (Netflix, Uber, iFood), e o padrão Either para tratamento de erros
+- [[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] — exemplo prático de DI (`CreateUser`/`UserRepository`/adapter Postgres), custo de debugar implementação "escondida" atrás da interface, boilerplate, atrito com frameworks opinativos, e leitura de que a popularidade vem mais da fama de Uncle Bob que de mérito técnico exclusivo

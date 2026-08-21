@@ -3,8 +3,8 @@ type: concept
 title: "Ciclo de Mercado Tech"
 aliases: ["ciclo de abundância e depressão", "lei da oferta e procura em tech", "ciclo de contratação tech"]
 date_created: 2026-07-03
-date_updated: 2026-08-13
-source_count: 7
+date_updated: 2026-08-17
+source_count: 9
 tags: [carreira, mercado-de-trabalho, oferta-e-procura, ciclo-economico]
 skill: tech-mentor-leadership
 status: draft
@@ -70,9 +70,19 @@ Essa lente é complementar, não concorrente, ao mecanismo de oferta/procura de 
 
 [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] relata um padrão específico no mercado brasileiro — vagas rotuladas como "júnior" passando a exigir nível pleno na prática — sem identificar a causa. Ver [[wiki/concepts/vaga-junior-vira-pleno]] para o detalhe; a conexão com o ciclo de abundância/depressão descrito aqui é inferência, não fato verificado nas duas pontas, já que nenhuma das fontes cruza dados diretamente.
 
+## Defasagem EUA → Brasil como Preditor de Onda
+
+[[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] adiciona uma heurística de defasagem geográfica ao mecanismo do ciclo: mudanças de mercado tech "geralmente acontecem fora, principalmente nos Estados Unidos, e pouco tempo depois se aplicam ao Brasil". O autor usa isso para prever que a exigência americana atual — vagas júnior já esperando fluência com ferramentas de IA como parte do perfil — deve chegar ao mercado brasileiro em breve, ainda que no momento do vídeo as vagas brasileiras de nível júnior continuassem cobrando fundamentos clássicos sem essa exigência. É observação qualitativa do autor (quem trabalha remotamente para empresas americanas), não dado de pesquisa comparativa formal.
+
+## Concentração de Cargos: Front-end Absorvido pelo Full-Stack
+
+[[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] observa uma manifestação adicional do ciclo de depressão setorial já documentado em "Frontend Pós-IA": contratações segregadas de front-end, back-end e DevOps estão dando lugar a cargos mesclados de full-stack (focado em back-end, focado em front-end, ou puro), com contratação de front-end especificamente reduzida. Ops e segurança parecem ter se mantido do mesmo tamanho relativo (segurança talvez até crescido). A causa apontada é a mesma comoditização do CRUD simples via IA já documentada na fonte de impacto no mercado de frontend — aqui vista pela ótica de reorganização de cargo, não de nicho de negócio (agência/freelancer vs. plataforma madura).
+
 ## Key Sources
 
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]]
+- [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — concentração de cargos: front-end segregado sendo absorvido por full-stack, mesma causa (CRUD comoditizado) já vista em "Frontend Pós-IA"
+- [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — heurística de defasagem EUA → Brasil; vagas júnior americanas já exigindo fluência com IA, vagas brasileiras ainda não
 - [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]
 - [[wiki/sources/pare-de-terceirizar-suas-decisoes]]
 - [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]

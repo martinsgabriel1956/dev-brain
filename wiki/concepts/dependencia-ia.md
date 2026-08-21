@@ -3,8 +3,8 @@ type: concept
 title: "Dependência de IA"
 aliases: ["ai dependency", "dependência ferramenta", "loop de prompts"]
 date_created: 2026-05-31
-date_updated: 2026-08-10
-source_count: 4
+date_updated: 2026-08-17
+source_count: 6
 tags: [dependencia-ia, ia-e-programacao, aprendizado-passivo, autonomia-tecnica, iniciante]
 skill: tech-mentor-leadership
 status: stable
@@ -82,9 +82,19 @@ Na [[escala-maturidade-ia-dev]], os níveis 0–2 são a zona onde o risco de de
 
 Pedir para uma IA revisar/sugerir melhorias no próprio código antes de abrir um [[wiki/concepts/code-review]] é uso produtivo **somente se** vier acompanhado de pedir explicação do "porquê" de cada mudança sugerida. Aceitar as sugestões sem entendê-las transforma uma prática potencialmente boa em dependência disfarçada — o risco reaparece mais tarde, num teste técnico sem acesso à ferramenta.
 
+## "Terceirizar o Raciocínio" — a mesma linha para Juniores no Mercado Pós-IA
+
+[[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] descreve o mesmo fenômeno com outro vocabulário, no contexto do que diferencia um bom júnior hoje: o risco não é usar IA, é "terceirizar completamente o raciocínio" para ela. O diferencial do júnior que se destaca não é mais decorar sintaxe ou copiar o mínimo possível — é fazer boas perguntas, validar se a solução faz sentido, testar e ajustar. A fonte nota que o júnior que só copia e cola sem entender já tinha dificuldade antes da IA existir — a diferença agora é que a ferramenta é mais poderosa e a ilusão de produtividade é maior.
+
+## Teto de Capacidade Igual ao da IA — a Versão de Carreira Sênior
+
+[[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] traz uma variante da mesma tese aplicada a profissionais sênior, não apenas iniciantes: se sua capacidade acaba sendo a mesma que a da IA entrega sozinha, a empresa passa a contratar a IA em vez de você. Não é o mesmo mecanismo de "não saber raciocinar sem a IA" (o foco aqui é o *teto* de capacidade, não a *incapacidade* de trabalhar sem a ferramenta), mas o resultado prático converge: quem não constrói julgamento além do que a IA já entrega perde a razão de ser contratado.
+
 ## Key Sources
 
 - [[wiki/sources/ia-e-aprendizado-programacao-iniciantes]]
+- [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — variante sênior: teto de capacidade igual ao da IA leva a ser substituído por ela, não a incapacidade de trabalhar sem ela
+- [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — "terceirizar o raciocínio" como risco central para juniores; diferencial passa a ser boas perguntas + validação, não sintaxe decorada
 - [[wiki/sources/escala-niveis-uso-ia-engenheiros]] — níveis 0–2 como zona de estagnação e dependência
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] — revisar código com IA antes do PR só funciona se vier com "por que" explicado
 - [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] — IA como "muleta" para fugir da dificuldade → [[wiki/concepts/atrofia-cognitiva]]; contraste com IA que *cria* dificuldade calibrada

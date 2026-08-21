@@ -2,6 +2,187 @@
 
 ---
 
+## [2026-08-19] ingest | O Que Esperam de um Pleno na Programação — Revisão com 4 Anos de IA
+
+**Fonte:** [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — transcrição de vídeo colada pelo usuário no chat (ASR bruto, sem pontuação, já em pt-BR — sem necessidade de tradução), limpa, organizada por item e salva em `raw/o-que-esperam-de-pleno-2026-revisao.md`. Autor não identificado com confiança (ver Nota de Identificação na fonte); trecho publicitário do patrocinador removido do raw.
+**Skill carregada:** `tech-mentor-leadership` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/`. Consultado o índice do `SKILL.md` (entrada Carreira/Níveis → `references/career-progression.md`).
+
+**Arquivos criados:**
+- `raw/o-que-esperam-de-pleno-2026-revisao.md` — transcrição limpa, organizada nos 13 itens revisados + tabela-resumo de reclassificação
+- `wiki/sources/o-que-esperam-de-pleno-2026-revisao.md` — TL;DR, nota de identificação do autor (não confirmada), 7 key claims com evidência, tabela de reclassificação dos 13 itens, entidades/conceitos tocados, open questions
+- `wiki/concepts/soft-skills-como-diferencial-de-pleno.md` (novo stub) — a tese central da fonte: soft skills reclassificado de item de rodapé (posição 13/13 no vídeo original) para único diferencial real de um pleno, à medida que itens técnicos viram commodity ou piso de júnior
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/crud-resolvido.md` — `source_count` 2 → 3; nova seção "Comoditização Chega ao Tooling Básico: Git e Terminal"; nova linha em Key Sources
+- `wiki/concepts/sintaxe-vs-conhecimento-perene.md` — `source_count` 5 → 6; nova seção "Rebaixado de Pleno para Júnior, Não Descartado"; nova linha em Key Sources
+- `wiki/concepts/engenheiro-vs-programador.md` — `source_count` 7 → 8; nova seção "Soft Skills Como o Que Sobra Quando a Execução É Comoditizada"; nova linha em Key Sources
+- `wiki/concepts/fundacao-tecnica.md` — `source_count` 9 → 10; nova seção "Estrutura de Dados e Design Patterns Viram Piso de Júnior"; nova linha em Key Sources
+- `wiki/concepts/apagao-de-seniors.md` — `source_count` 2 → 3; nova seção "Testes Automatizados Como Contenção do Risco de Apagão"; nova linha em Key Sources
+- `wiki/concepts/piramide-de-testes.md` — `source_count` 7 → 8; nova seção "Testes Como Requisito Crescente de Pleno, Não Só de Processo"; nova linha em Key Sources
+- `wiki/concepts/worktree-paralelismo.md` — `source_count` 10 → 11; nova seção "Worktree Foi Crítico no Início, Hoje É Automático Demais Para Ser Diferencial"; nova linha em Key Sources
+- `wiki/concepts/niveis-de-senioridade-system-design.md` — `source_count` 4 → 5; nova seção "Confirmação Independente: System Design Não Mudou Mesmo Com IA"; nova linha em Key Sources
+- `wiki/concepts/vaga-junior-vira-pleno.md` — `source_count` 4 → 5; nova seção "Hipótese Não Confirmada: Piso de Júnior Subiu do Lado do Conteúdo Técnico"; nova linha em Key Sources
+- `wiki/entities/erick-wendel.md` — `source_count` 2 → 3; nova seção "Gatilho de Vídeo Alheio Sobre Requisitos de Pleno"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources (topo da tabela); nova linha em Concepts na seção "Carreira & Soft Skills" (`soft-skills-como-diferencial-de-pleno`)
+
+**Notas / open questions:** (1) **Autor não identificado** — pistas textuais (canal irmão de vlogs "AI the Internet", pessoa "Sara" em vlogs de fim de semana, patrocinador "High Globe") não bateram com nenhuma entidade já registrada na wiki ([[wiki/entities/filipe-deschamps]], [[wiki/entities/codigo-fonte-tv]]) nem foram confirmadas por busca externa — fonte registrada sem entity de autor dedicada, sinalizada para correção futura. (2) **Sem contradição com o restante da wiki** — a fonte converge fortemente com o eixo já estabelecido de comoditização de execução por IA ([[wiki/concepts/crud-resolvido]], [[wiki/concepts/engenheiro-vs-programador]]) e estende esse eixo para dentro do próprio tooling do dev (Git, terminal) e para a progressão júnior↔pleno (3 itens rebaixados). (3) **Reclassificação é autoavaliação, não dado de mercado** — nenhum dos 13 itens foi cruzado com vaga real ou pesquisa salarial de 2026; registrado como tal no Open Questions da fonte, não apresentado como fato de mercado consolidado. (4) **Tensão inferida (não confirmada nas duas pontas)** com [[wiki/concepts/vaga-junior-vira-pleno]]: se o piso técnico de júnior subiu (3 itens rebaixados de pleno para júnior), isso reforçaria o padrão de vaga júnior exigindo nível pleno — mas a fonte não fala de texto de vaga, então a conexão é inferência desta ingestão.
+
+---
+
+## [2026-08-18] ingest | CQRS (Martin Fowler bliki)
+
+**Fonte:** [[wiki/sources/cqrs-martin-fowler]] — post original em inglês de https://martinfowler.com/bliki/CQRS.html (14/07/2011), buscado via WebFetch, traduzido para pt-BR e salvo em `raw/cqrs-martin-fowler.md`
+**Skill carregada:** `tech-mentor-backend` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/`. Consultado o índice do `SKILL.md` (entrada CQRS/Event Sourcing → `references/architecture-eda-patterns.md` e `references/event-sourcing-cqrs.md`), conteúdo do próprio post foi suficientemente autocontido e não exigiu leitura profunda da referência.
+
+**Arquivos criados:**
+- `raw/cqrs-martin-fowler.md` — tradução completa do post
+- `wiki/sources/cqrs-martin-fowler.md` — TL;DR, 6 claims com evidência, conceitos/entidades, raw quotes em inglês (originais)
+- `wiki/concepts/bounded-context.md` (novo stub) — fronteira de modelo de domínio; usado por Fowler como critério de escopo de aplicação do CQRS
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/cqrs.md` — `source_count` 6 → 7; nova seção "Origem Textual: o Post de Martin Fowler (2011)"; nova linha em Key Sources
+- `wiki/concepts/ddd.md` — `source_count` 10 → 11; nova seção curta sobre bounded context como escopo de aplicação do CQRS; nova linha em Key Sources
+- `wiki/concepts/task-based-ui.md` — `source_count` 1 → 2; nova linha em Key Sources
+- `wiki/concepts/event-sourcing.md` — `source_count` 5 → 6; nova linha em Key Sources
+- `wiki/entities/martin-fowler.md` — `source_count` 15 → 16; nova linha na seção "Termos e frameworks cunhados/popularizados"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources (topo da tabela); nova linha em Concepts na seção "Arquitetura Backend & Event-Driven" (`bounded-context`)
+
+**Notas / open questions:** (1) **Sem contradições** — esta fonte primária é consistente com tudo que já estava em [[wiki/concepts/cqrs]], incluindo a atribuição da origem a [[wiki/entities/greg-young|Greg Young]]/CQS via [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]]. (2) O post não menciona Greg Young nem CQS — é puramente descritivo do padrão e das condições de uso, sem historiar sua origem; a atribuição a Greg Young permanece sustentada apenas pela fonte Full Cycle já ingerida. (3) Valor principal do ingest: ser a **fonte textual mais antiga e mais citada** sobre o tema na wiki, com tom de cautela mais explícito ("a maioria das implementações que vi foi problemática") do que qualquer fonte derivada já registrada — permite checar fidelidade das fontes secundárias à ideia original.
+
+---
+
+## [2026-08-18] ingest | A História e Evolução das APIs (Bernardo Lobato)
+
+**Fonte:** [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — transcrição de vídeo colada pelo usuário no chat (ASR bruto, sem pontuação, já em pt-BR — sem necessidade de tradução), limpa e organizada em seções cronológicas em `raw/historia-e-evolucao-das-apis-bernardo-lobato.md`
+**Skill carregada:** `tech-mentor-backend` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/` (o `/home/nemomartins/Documentos/new/skills/` do CLAUDE.md não existe nesta máquina). Referência consultada: `references/api-design.md` (REST maturity model, status codes, OpenAPI).
+
+**Arquivos criados:**
+- `raw/historia-e-evolucao-das-apis-bernardo-lobato.md` — transcrição limpa e organizada em seções por década (definição formal → anos 60-70 mainframes → anos 70 Unix → anos 80 PCs/WinAPI/POSIX → anos 90 CORBA/RMI → anos 2000 SOAP/REST/API economy → anos 2010 REST+JSON/GraphQL/gRPC/API-como-produto → anos 2020 infraestrutura crítica)
+- `wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato.md` — TL;DR, 10 key claims com evidência, entidades/conceitos tocados, open questions, raw quotes
+- `wiki/concepts/mainframe.md` (novo stub) — origem das primeiras APIs locais, IBM System/360
+- `wiki/concepts/windows-api.md` (novo stub) — WinAPI da Microsoft, anos 80
+- `wiki/concepts/posix.md` (novo stub) — padrão de portabilidade entre Unix, fim dos anos 80
+- `wiki/concepts/corba-rmi.md` (novo stub) — primeira geração de APIs remotas, anos 90, antecessor do SOAP
+- `wiki/concepts/api-economy.md` (novo stub) — as duas ondas de API como estratégia de negócio (abertura pública anos 2000, API-como-produto anos 2010)
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/contrato-de-api.md` — `source_count` 8 → 9; nova seção "Origem: API nasceu sem rede" explicando a linhagem pré-rede do termo; nova linha em Key Sources
+- `wiki/concepts/soap.md` — `source_count` 1 → 2; nova seção "Antecessores: CORBA e RMI"; nova linha em Key Sources
+- `wiki/concepts/unix.md` — `source_count` 3 → 4; nova seção "Chamada de Sistema como API e a Herança no REST"; nova linha em Key Sources
+- `wiki/concepts/api-gateway.md` — `source_count` 6 → 7; nova seção curta situando API Gateway/OAuth/OIDC como resposta de governança dos anos 2020 à API economy; nova linha em Key Sources
+- `wiki/concepts/grpc.md` — `source_count` 1 → 2; nova seção "Origem: 2015, Google, resposta a microsserviços"; nova linha em Key Sources
+- `wiki/concepts/graphql.md` — `source_count` 1 → 2; nova linha em Key Sources situando GraphQL/gRPC como respostas paralelas de décadas diferentes
+- `wiki/concepts/oauth2.md` — `source_count` 7 → 8; nova linha em Key Sources
+- `wiki/entities/bernardo-lobato.md` — `source_count` 9 → 10; nova linha em Key Sources
+- `wiki/entities/ibm.md` — `source_count` 1 → 2; nova frase + linha em Key Sources (IBM System/360 como origem histórica do termo "API")
+- `wiki/entities/microsoft.md` — `source_count` 5 → 6; nova linha em Key Sources (WinAPI)
+- `wiki/entities/google.md` — `source_count` 5 → 6; nova linha em Key Sources (gRPC, 2015)
+- `wiki/entities/meta.md` — `source_count` 5 → 6; nova linha em Key Sources (GraphQL na linha do tempo; Facebook como pioneira de API pública)
+- `wiki/entities/openai.md` — `source_count` 14 → 15; nova linha em Key Sources (API de IA generativa nos anos 2020)
+- `wiki/entities/amazon-web-services.md` — `source_count` 6 → 7; nova linha em Key Sources (Amazon como pioneira de API pública; AWS na API economy dos anos 2010)
+- `wiki/index.md` — nova linha em Sources (topo da tabela); cinco novas linhas em Concepts na seção "Arquitetura Backend & Event-Driven" (`mainframe`, `windows-api`, `posix`, `corba-rmi`, `api-economy`)
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte converge com [[wiki/concepts/soap]] (já draft, agora com a origem CORBA/RMI adicionada) e com [[wiki/concepts/contrato-de-api]] (já stub, agora com a linhagem pré-rede do termo). (2) **Leitura do autor sinalizada, não verificada como fato histórico**: a tese de que REST+JSON "herda a filosofia do Unix" (pequenas funções combináveis) é uma afirmação de linhagem conceitual sem citação formal — registrada como tal em `wiki/concepts/unix.md` e no Open Questions da fonte, não corrigida silenciosamente. (3) **Tese de doutorado do REST não é nomeada** na fala (é a tese de Roy Fielding, ano 2000, fato de conhecimento geral não citado explicitamente) — registrado no Open Questions da fonte em vez de completado silenciosamente no corpo do texto. (4) **eBay, Salesforce, Twitter, Stripe, Twilio e SendGrid não geraram entity própria** — citadas apenas como marcos de "API economy", não centrais o suficiente ao conteúdo da fonte para justificar stub isolado (decisão registrada na seção Entidades Mencionadas da fonte). (5) Autoria identificada com confiança alta — mesmo canal/estilo de [[wiki/entities/bernardo-lobato]], primeira parte de uma série nova sobre APIs (a fonte já anuncia partes futuras sobre cada protocolo em detalhe).
+
+---
+
+## [2026-08-18] ingest | 9 Code Smells — Como Identificar que seu Código Pode Estar Piorando
+
+**Fonte:** [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — transcrição de vídeo (autor não identificado), colada diretamente pelo usuário no chat; transformada em `raw/9-code-smells-como-identificar-codigo-ruim.md` (limpa, organizada por smell, bloco de patrocínio AUVP isolado e sinalizado como não técnico)
+**Skill carregada:** `tech-mentor-backend` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/` (o `/home/nemomartins/Documentos/new/skills/` do CLAUDE.md não existe nesta máquina). Referência consultada: `references/software-craftsmanship.md`.
+
+**Arquivos criados:**
+- `raw/9-code-smells-como-identificar-codigo-ruim.md` — transcrição limpa organizada em: o que é um bom código (régua do autor) → bloco de patrocínio isolado → 9 smells em seções próprias → fechamento sobre uso crítico dos smells
+- `wiki/sources/9-code-smells-como-identificar-codigo-ruim.md` — TL;DR, 9 key claims com evidência e confiança, entidades/conceitos tocados, open questions
+- `wiki/concepts/code-smells.md` (novo) — conceito guarda-chuva, catálogo dos 9 smells, régua de seis critérios, crosslink explícito com `red-flags-de-design` (linhagem Ousterhout paralela)
+- `wiki/concepts/feature-envy.md` (novo stub)
+- `wiki/concepts/primitive-obsession.md` (novo stub)
+- `wiki/concepts/data-clumps.md` (novo stub)
+- `wiki/concepts/dry.md` (novo stub) — posição deliberadamente não dogmática do vídeo (2 repetições ok, 3+ problemático)
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/god-object.md` — `source_count` 6 → 7; nova seção "Composição como correção prática"; nova linha em Key Sources
+- `wiki/concepts/acoplamento.md` — `source_count` 7 → 8; nova seção "Feature Envy: Acoplamento Via Acesso a Dados Internos de Outra Classe"; nova linha em Key sources
+- `wiki/concepts/coesao.md` — `source_count` 3 → 4; nova seção "God Object e Data Clumps: Baixa Coesão em Dois Formatos Opostos"; nova linha em Key sources
+- `wiki/concepts/red-flags-de-design.md` — `source_count` 2 → 3; nova seção "Linhagem paralela: Code Smells (Fowler)"; nova linha em Key Sources
+- `wiki/concepts/naming.md` — `source_count` 4 → 5; nova seção "Números Mágicos: Naming Aplicado a Constantes"; nova linha em Key Sources
+- `wiki/concepts/comentarios-como-ferramenta-de-design.md` — `source_count` 1 → 2; nova seção sobre comentário como sintoma de naming fraco; nova linha em Key Sources
+- `wiki/concepts/refatoracao.md` — `source_count` 5 → 6; nova seção "Code smells como gatilho para decidir refatorar (com cautela)"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; sete novas linhas em Concepts (`code-smells`, `god-object`, `feature-envy`, `data-clumps`, `primitive-obsession`, `dry` junto ao cluster de red-flags/acoplamento/coesão)
+
+**Notas / open questions:** (1) **Sem contradições diretas** com o wiki existente — o vídeo converge fortemente com [[wiki/concepts/red-flags-de-design]] e [[wiki/concepts/refatoracao]] já registrados; tratado como catálogo paralelo (linhagem Fowler), não como fonte primária de Fowler em si. (2) **Omissão de crédito não verificada**: o vídeo usa termos exatos da literatura de Fowler ("feature envy", "data clumps", "primitive obsession") sem citar a fonte — sinalizado no Open Questions da própria página de source para checagem futura contra uma ingestão do livro *Refactoring*. (3) **Heurística sem validação externa**: o limiar de "2 repetições ok, 3+ problemático" para DRY é opinião pessoal do autor, registrada como tal em [[wiki/concepts/dry]], não como métrica objetiva. (4) **Conteúdo comercial isolado**: o vídeo tem um bloco de patrocínio (AUVP) que usa por analogia os mesmos critérios de bom design para vender produto de investimento — mantido em `raw/` por fidelidade, explicitamente marcado como não técnico e fora do escopo da ingestão de conceitos.
+
+---
+
+## [2026-08-17] ingest | Tokens: o Que São e Por Que Custam Tão Caro
+
+**Fonte:** [[wiki/sources/tokens-o-que-sao-e-por-que-custam-caro]] — transcrição de vídeo (autor não identificado), colada diretamente pelo usuário no chat
+**Skill carregada:** `tech-mentor-ai` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/` (o `/home/nemomartins/Documentos/new/skills/` do CLAUDE.md não existe nesta máquina). Referências consultadas: `references/ai/fundamentals.md` e `references/ai/token-economics.md`.
+
+**Arquivos criados:**
+- `raw/tokens-o-que-sao-e-por-que-custam-caro.md` — transcrição bruta (já em PT-BR, sem tradução necessária) limpa e reorganizada em MD com seções
+- `wiki/sources/tokens-o-que-sao-e-por-que-custam-caro.md` — TL;DR, 5 key claims com evidência e confiança, entities/concepts tocados, open questions, quotes brutas
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/tokenizacao.md` — `source_count` 2 → 3; nova seção "Por que Não Tokenizar Letra-por-Letra nem Palavra-por-Palavra"
+- `wiki/concepts/byte-pair-encoding.md` — `source_count` 2 → 3; nova seção com o experimento empírico GPT-4o (22 tokens) vs. Claude Opus 5 (42 tokens) na mesma frase em português
+- `wiki/concepts/token-tax-multilingual.md` — `source_count` 2 → 3; novo data point "Ubazu" (10 tokens) vs. "carro" (8 tokens) no mesmo tokenizer
+- `wiki/concepts/autoregressive-language-model.md` — `source_count` 2 → 3; nova seção "Por que a Autorregressão Torna o Token de Output Mais Caro que o de Input" (contribuição central desta fonte — mecanismo, não só preço)
+- `wiki/concepts/kv-cache.md` — `source_count` 1 → 2; nova seção ligando o KV Cache ao problema de reprocessamento autorregressivo descrito pela fonte
+- `wiki/entities/anthropic.md` — `source_count` 23 → 24; novo Key Source sobre o tokenizer privado do Claude Opus 5 e preços de Opus/Sonnet/Haiku
+- `wiki/entities/openai.md` — `source_count` 13 → 14; novo Key Source sobre o tokenizer público do GPT-4o (~200k vocabulário)
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Nenhuma contradição factual** com o wiki existente — a fonte converge com [[wiki/sources/tokens-llm-fundamentos-typescript]] e [[wiki/sources/custo-tokens-portugues-vs-ingles]] já ingeridas, mas contribui um ângulo novo (autorregressão como causa estrutural do output custar mais) que nenhuma fonte anterior da wiki cobria explicitamente — por isso a seção nova em `autoregressive-language-model.md` foi o toque mais substancial desta ingestão, não apenas um reforço de claim já registrado. (2) **Inferência do autor não verificada**: a comparação GPT-4o (22 tokens) vs. Claude Opus 5 (42 tokens) atribui a diferença a um vocabulário menor no tokenizer da Anthropic — mas o tokenizer da Anthropic é privado, então essa causa é suposição do autor da fonte, não fato confirmado, e foi marcada como tal tanto na fonte quanto nas páginas de conceito atualizadas. (3) **Preços citados** (Opus ~$5/$25 por milhão de tokens input/output) não foram cross-checados contra a tabela oficial vigente da Anthropic nesta ingestão — ficou registrado como open question na fonte. (4) Não criei a concept-page `token-economics` referenciada (mas ainda inexistente) por `tokenizacao.md` e `byte-pair-encoding.md` — está fora do escopo desta ingestão pontual; fica como lacuna a resolver numa varredura de lint futura.
+
+---
+
+## [2026-08-17] ingest | CQRS e Event Sourcing — Full Cycle (Wesley Williams)
+
+**Fonte:** [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]] — transcrição de vídeo do canal Full Cycle (apresentador Wesley Williams), colada diretamente pelo usuário no chat
+**Skill carregada:** Nenhuma — `/home/nemomartins/Documentos/new/skills/` não existe neste ambiente. Calibração por consistência com `tech-mentor-backend`, já usado nas páginas existentes de CQRS/Event Sourcing/DDD.
+
+**Arquivos criados:**
+- `raw/cqrs-event-sourcing-full-cycle-wesley-williams.md` — transcrição bruta (já em PT-BR) limpa e reorganizada em MD com seções, sem tradução necessária
+- `wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams.md` — TL;DR, 9 claims, entities, concepts, open questions, contradições, quotes
+- `wiki/entities/greg-young.md` — stub novo: criador do CQRS, autor da ideia de Command Sourcing
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/cqrs.md` — `source_count` 5 → 6; nova seção "Origem: Greg Young e Agregados DDD"
+- `wiki/concepts/event-sourcing.md` — `source_count` 4 → 5; nova seção "Command Sourcing: Armazenar os Comandos, Não Só os Eventos"
+- `wiki/concepts/ddd.md` — `source_count` 9 → 10; novo item em Key Sources sobre o exemplo de agregado de ordem de serviço
+- `wiki/concepts/command-bus.md` — `source_count` 2 → 3; reforço da regra "Commands retornam void"
+- `wiki/concepts/datomic.md` — `source_count` 2 → 3; novo Key Source (uso didático como banco imutável)
+- `wiki/entities/full-cycle.md` — `source_count` 3 → 4
+- `wiki/entities/wesley-willians.md` — `source_count` 1 → 2
+- `wiki/entities/nubank.md` — `source_count` 2 → 3
+- `wiki/index.md` — nova linha em Sources logo após `cqrs-e-event-sourcing-explicado-na-pratica`; nova linha em Entities para `greg-young`
+
+**Notas:** Sem contradições com a wiki existente — a fonte reforça e amarra conceitos já registrados (CQRS via Greg Young, Datomic/Nubank, regra de Command void) e adiciona duas contribuições novas: a motivação de CQRS via exemplo concreto de agregado DDD, e o conceito de **Command Sourcing** (armazenar comandos, não só eventos, para simular decisões de negócio sob outro contexto) — ideia atribuída a Greg Young mas sem outra fonte na wiki que a documente; marcado como open question para investigação futura.
+
+---
+
+## [2026-08-17] ingest | CQRS e Event Sourcing Explicado na Prática
+
+**Fonte:** [[wiki/sources/cqrs-e-event-sourcing-explicado-na-pratica]] — transcrição de vídeo pt-BR (autor não identificado), enviada diretamente pelo usuário no chat
+**Skill carregada:** Nenhuma — `/home/nemomartins/Documentos/new/skills/` não existe neste ambiente (path de skills do CLAUDE.md é de outra máquina). Calibração feita por consistência com `tech-mentor-backend`/`tech-mentor-system-design`, já usados nas páginas existentes de CQRS/Event Sourcing.
+
+**Arquivos criados:**
+- `raw/cqrs-e-event-sourcing-explicado-na-pratica.md` — transcrição bruta (já em PT-BR) reorganizada em MD com seções, sem tradução necessária
+- `wiki/sources/cqrs-e-event-sourcing-explicado-na-pratica.md` — TL;DR, 8 claims, entities, concepts, open questions, contradições, quotes
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/cqrs.md` — `source_count` 4 → 5; novas seções "CQS: a Raiz Conceitual em Nível de Função" e "O Verdadeiro Ganho: Fragmentar Fisicamente o Banco por Natureza de Carga"
+- `wiki/concepts/event-sourcing.md` — `source_count` 3 → 4; novas seções "Impedance Mismatch: a Motivação Concreta" e "Write-Ahead Log: Bancos Relacionais Já Fazem Event Sourcing Internamente"
+- `wiki/concepts/command-bus.md` — `source_count` 1 → 2; backlink descrevendo o mecanismo tipo-Kafka que consome eventos do write model
+- `wiki/concepts/ddd.md` — `source_count` 8 → 9; reforço na seção "Conexão com Event Sourcing" sobre estabilidade da ação de domínio frente a mudanças de persistência
+- `wiki/entities/abacus-ai.md` — `source_count` 5 → 6; nova seção sobre a demo patrocinada DeepAgent vs. ChatGPT
+- `wiki/index.md` — nova linha em Sources logo após `cqrs-dicionario-programador-codigo-fonte-tv`
+
+**Notas / contradições:** Sem contradição — a fonte é consistente com as três outras fontes de CQRS/Event Sourcing já na wiki ([[wiki/sources/cqrs-dicionario-programador-codigo-fonte-tv]], [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]], [[wiki/sources/nubank-clojure-datomic-event-sourcing]]) e contribui com três eixos novos: (1) derivação de CQRS a partir de CQS em nível de função; (2) o termo e exemplo concreto de **impedance mismatch**; (3) a conexão entre write-ahead log de bancos relacionais e Event Sourcing. Autor/canal do vídeo não identificado — registrado como open question na fonte, sem entidade de canal criada.
+
+---
+
 ## [2026-08-12] ingest | Como ficar bom em LeetCode
 
 **Fonte:** [[wiki/sources/como-ficar-bom-em-leetcode]] — transcrição de vídeo pt-BR (canal com foco em Python), sem URL
@@ -6862,3 +7043,559 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha em Sources; 3 conceitos novos em "Padrões e Design"; 4 entities novas em Entities
 
 **Notas / open questions:** (1) **Ravioli code é ambivalente** no próprio verbete — elogioso (código complexo bem escrito) na abertura, pejorativo (fragmentação excessiva) na seção de anti-padrões. Registrado como ambivalência, não erro. (2) **BBoM vs. arquitetura de sacrifício**: o verbete trata BBoM como puramente indesejável; Fowler defende código descartável deliberado. Fronteira "lama por negligência" vs. "lama por escolha" fica em aberto. (3) **Skill**: escolhido `tech-mentor-backend` (arquitetura); `anti-pattern.md` mantém seu `skill: tech-mentor-leadership` original (não reescrito). (4) **WebFetch** resumia o verbete; detalhes de História/Big Ball of Mud extraídos em duas passadas com prompts direcionados.
+## [2026-08-14] ingest | Refresh Token: como manter o access token curto e o usuário logado com segurança
+
+**Fonte:** [[wiki/sources/refresh-token-pattern-access-token-de-curta-duracao]] (transcrição pt-BR, já no idioma original, limpa e organizada em Markdown com títulos; autor: Bernardo Lobato)
+**Skill carregada:** `tech-mentor-security` (`references/appsec-authn-authz.md` § "JWT — O Que Ninguém Te Conta" e "Token Introspection & Revogação") — calibrou os claims sobre access/refresh token, refresh token rotation (código de exemplo do próprio arquivo de referência bate com a explicação do vídeo) e terminologia "reuse detection"/"família de tokens".
+
+**Arquivos criados:**
+- `raw/refresh-token-pattern-access-token-de-curta-duracao.md` — transcrição limpa e organizada (mantida em português, sem tradução)
+- `wiki/sources/refresh-token-pattern-access-token-de-curta-duracao.md` — TL;DR, 9 key claims, entidades/conceitos, open questions, citações
+- `wiki/concepts/refresh-token-rotation.md` — stub novo: rotation, reuse detection, fingerprinting de dispositivo, janela de exposição, com exemplo de código da skill
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/jwt.md` — `source_count` 3 → 4; novas seções "Janela de Exposição" e "Access Token de Longa Duração é uma Falha de Segurança"; nova Key Source
+- `wiki/concepts/oauth2.md` — `source_count` 6 → 7; nova Key Source (authorization server valida/revoga o refresh token)
+- `wiki/concepts/stateless.md` — `source_count` 3 → 4; nova seção "Access Token Stateless vs. Refresh Token Stateful"; nova Key Source
+- `wiki/concepts/sessoes-http-cookies.md` — `source_count` 3 → 4; nova Key Source (cookie `HttpOnly` recomendado para o refresh token)
+- `wiki/concepts/xss.md` — `source_count` 3 → 4; nova Key Source (motivo de excluir `localStorage`)
+- `wiki/entities/bernardo-lobato.md` — `source_count` 8 → 9; nova Key Source
+- `wiki/index.md` — nova linha em Sources; novo conceito `refresh-token-rotation` em "Autenticação & Identidade"
+
+**Notas / open questions:** (1) **Reforço, não contradição**: esta fonte aprofunda claims já existentes em `jwt.md` (rotação, HttpOnly) em vez de contradizê-las — optou-se por criar `refresh-token-rotation.md` como página dedicada porque o nível de detalhe (reuse detection, fingerprinting, janela de exposição) ultrapassou o que cabia bem dentro de `jwt.md`. (2) **DPoP mencionado como comparação** (RFC 9449) mas não citado no áudio — marcado `[external]` no source page, sem criar página própria (fora do escopo desta fonte). (3) **Autoria**: Bernardo Lobato já tinha entity própria na wiki (autor recorrente de conteúdo sobre arquitetura/segurança); apenas nova Key Source adicionada.
+
+## [2026-08-14] ingest | Back Pressure: Produtor, Consumidor, Filas Bounded e Admission Control
+
+**Fonte:** [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] (transcrição pt-BR, já no idioma original — sem tradução necessária; limpa e organizada em Markdown com títulos; autor não identificado no áudio)
+**Skill carregada:** `tech-mentor-system-design` — mesma skill já registrada em `wiki/concepts/back-pressure.md`. Caminho local `/home/nemomartins/Documentos/new/skills/` não existe neste ambiente (repo real vive em `/home/gabriel-martins/Documentos/dev-brain`); calibração feita com base no conteúdo já estabelecido na wiki para este domínio (back-pressure, admission control, rate limiting, retry/backoff, auto scaling).
+
+**Arquivos criados:**
+- `raw/back-pressure-producer-consumer-filas-bounded-admission-control.md` — transcrição limpa e organizada em seções (mantida em português, sem tradução; blocos de patrocínio/CTA de curso omitidos)
+- `wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control.md` — TL;DR, 9 key claims, entidades/conceitos, open questions, citações
+- `wiki/concepts/admission-control.md` — stub novo: controle de admissão como estratégia estrutural de back pressure, com a técnica low/high watermark demonstrada na fonte (BullMQ + Redis, pausa acima de 100 jobs, retoma abaixo de 30)
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/back-pressure.md` — `source_count` 2 → 3; novas seções "Antes de escalar: identificar o gargalo real" e "Admission control e low/high watermark"; nova Key Source
+- `wiki/concepts/fila.md` — `source_count` 4 → 5; nova Key Source (por que a fila precisa ser bounded)
+- `wiki/concepts/filas-e-workers.md` — `source_count` 5 → 6; nova Key Source (gargalo, stale jobs, batching, admission control)
+- `wiki/concepts/bullmq.md` — `source_count` 1 → 2; nova Key Source (demo de watermark com BullMQ + Redis)
+- `wiki/concepts/redis.md` — `source_count` 8 → 9; nova Key Source (Redis como broker na demo)
+- `wiki/concepts/rate-limiting.md` — `source_count` 7 → 8; nova Key Source (rate limit aplicado no produtor, não na borda de API pública)
+- `wiki/concepts/retry-backoff.md` — `source_count` 2 → 3; nova Key Source (retry agressivo agrava back pressure)
+- `wiki/concepts/auto-scaling.md` — `source_count` 1 → 2; nova Key Source (auto scaling por tamanho de fila)
+- `wiki/concepts/escalabilidade-horizontal.md` — `source_count` 13 → 14; nova Key Source (paralelizar consumidores e fila)
+- `wiki/concepts/buffer.md` — `source_count` 1 → 2; nova Key Source (limite físico do buffer)
+- `wiki/concepts/gargalo.md` — `source_count` 3 → 4; nova Key Source (gargalo real pode estar no banco, não no consumidor)
+- `wiki/index.md` — nova linha em Sources; novo conceito `admission-control` em "Escalabilidade & System Design"
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — esta fonte aprofunda `back-pressure.md` (que já cobria as 3 estratégias genéricas de bufferizar/desacelerar/descartar) com técnicas mais concretas e acionáveis: identificação de gargalo antes de escalar, e a técnica específica de low/high watermark, que não tinha página própria e foi promovida a stub em `admission-control.md`. (2) **Caminho de skills do CLAUDE.md não existe neste ambiente** — path `/home/nemomartins/Documentos/new/skills/` foi verificado e não encontrado; a calibração de domínio usou o conhecimento já consolidado na wiki para `tech-mentor-system-design` em vez de ler o arquivo de skill. Registrado aqui para transparência, seguindo o padrão de "skill drift" que o workflow de lint deveria sinalizar se o caminho permanecer ausente. (3) **`batching.md` não foi tocado** — já existe como conceito de *render batching* do React (domínio diferente de "processar em lote"/batch insert mencionado nesta fonte); evitado o cross-link para não confundir dois sentidos distintos da palavra "batch".
+
+## [2026-08-14] ingest | 8 Pontos de Arquitetura de Software na Era da IA
+
+**Fonte:** [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] (transcrição pt-BR do YouTube, já no idioma original — sem tradução necessária; limpa e organizada em Markdown por seção, com blocos de CTA/propaganda do MBA condensados em notas; autor identificado como o canal [[wiki/entities/full-cycle|Full Cycle]], apresentador individual não identificado no áudio)
+**Skill carregada:** `tech-mentor-system-design` (skill primária, dado o foco em arquitetura de software/solução) com calibração cruzada de `tech-mentor-ai` e `tech-mentor-security` para os tópicos de agentes/MCP e segurança de LLM. Caminho `/home/nemomartins/Documentos/new/skills/` verificado novamente e ainda não existe neste ambiente — calibração feita com base no conhecimento já consolidado na wiki para esses domínios (mesmo padrão de skill drift já registrado nos ingests anteriores).
+
+**Arquivos criados:**
+- `raw/8-pontos-arquitetura-de-software-na-era-da-ia.md` — transcrição limpa e organizada em 8 seções + introdução/fechamento (mantida em português, sem tradução; blocos de CTA/propaganda do MBA condensados em notas)
+- `wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia.md` — TL;DR, 8 key claims, conceitos por ponto, entidades, open questions, citações
+- `wiki/concepts/agent-to-agent-protocol.md` — stub novo: A2A (Google), protocolo de comunicação agente↔agente complementar ao MCP
+- `wiki/concepts/design-patterns-ia.md` — stub novo: patterns de integração/criação de agentes/segurança específicos de IA, e 12 Factor Agents como analogia ao Twelve-Factor App
+- `wiki/concepts/prompt-injection-jailbreak.md` — stub novo: distinção jailbreak vs. prompt injection, mitigações, OWASP Top 10 LLM
+- `wiki/concepts/ai-safety-guardrails.md` — stub novo: modelo de camadas input/output filters + containment (a wiki já tinha `wiki/sources/ai-safety-guardrails` mas nenhuma página de conceito dedicada até agora)
+- `wiki/concepts/rag-arquitetura-avancada.md` — stub novo: RAG em escala além de "buscar e injetar no contexto" — metadado, versionamento de embeddings, invalidação, sincronização
+- `wiki/concepts/llm-evals-testing.md` — stub novo: testes de prompt/contexto, frameworks de eval, dataset+snapshot como gate de regressão em CI/CD
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/model-context-protocol.md` — `source_count` 5 → 6; nova seção "Transporte: STDIO vs. Streamable HTTP, SSE Depreciado"; nova Key Source
+- `wiki/concepts/agente-ia.md` — `source_count` 5 → 6; nova seção "Quatro Arquiteturas de Orquestração" (paralela, sequencial, customizada, autônoma); nova Key Source
+- `wiki/concepts/cache.md` — `source_count` 9 → 10; nova seção "Cache em Aplicações com LLM" (tokens, contexto/embeddings, cache-aware prompts/fingerprints); nova Key Source
+- `wiki/concepts/prompt-engineering.md` — `source_count` 9 → 10; nova seção "Versionamento de Prompt Não É Só Git" (gate em CI/CD via evals); nova Fonte
+- `wiki/concepts/context-engineering-harness.md` — `source_count` 6 → 7; nova seção "Contexto Como Ativo de Longo Prazo"; nova Key Source
+- `wiki/concepts/ai-gateway-llm-router.md` — `source_count` 1 → 2; novas seções "Controle de Custos: o Triângulo Performance × Custo × Qualidade" e "Alavancas Concretas de Custo"; nova Key Source
+- `wiki/concepts/observabilidade.md` — `source_count` 10 → 11; nova seção "Observabilidade de Agentes de IA" (tracing de LLM, Open Telemetry orientado a IA); nova Key Source
+- `wiki/entities/full-cycle.md` — `source_count` 2 → 3; novo parágrafo sobre o MBA em Engenharia de Software com IA; nova Key Source
+- `wiki/index.md` — nova linha em Sources; 4 novos conceitos em "Agentes & LLMOps" (`agent-to-agent-protocol`, `design-patterns-ia`, `rag-arquitetura-avancada`, `llm-evals-testing`); 2 novos conceitos em "Segurança de APIs & Arquitetura" (`prompt-injection-jailbreak`, `ai-safety-guardrails`)
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — esta fonte é consistente com o que já estava documentado em `model-context-protocol.md`, `agente-ia.md`, `cache.md` e `prompt-engineering.md`, aprofundando cada um com um ponto específico do roadmap de 8 pontos. (2) **`ai-safety-guardrails` tinha lacuna de conceito**: a wiki já tinha a source page `wiki/sources/ai-safety-guardrails` (outro ingest, 2026-04-23) mas nunca uma página de conceito dedicada — promovida a stub agora, puxando as duas fontes. (3) **Fonte não cita referência primária para "SSE depreciado no MCP"** — registrado como open question na source page; vale checar a spec oficial do protocolo numa futura verificação. (4) **Autoria do vídeo**: creditado à entidade `full-cycle` já existente na wiki; não foi possível identificar o apresentador individual (não é claramente Wesley Willians, que aparece em outras fontes da Full Cycle já ingeridas) — nenhuma entidade de pessoa foi criada para evitar atribuição incorreta.
+
+## [2026-08-17] ingest | Por Que Você Esquece Tudo Que Estuda em Programação
+
+**Fonte:** [[wiki/sources/como-nunca-mais-esquecer-o-que-voce-estuda-programacao]] — transcrição de vídeo pt-BR (Renato Augusto, autoria confirmada pela menção explícita ao "Mapa do Arquiteto"), já no idioma original, sem tradução necessária
+**Skill carregada:** `tech-mentor-leadership` (domínio: aprendizado, carreira, metacognição). Nota de correção: o path `/home/nemomartins/Documentos/new/skills/` do CLAUDE.md não existe neste ambiente (usuário real é `gabriel-martins`, não `nemomartins`); o path real do skillset foi localizado em `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/SKILL.md` e lido normalmente — primeira vez que a skill é efetivamente carregada em vez de logada como drift (ver notas de skill drift em ingests anteriores, ex: 2026-08-13, 2026-08-14).
+
+**Arquivos criados:**
+- `raw/como-nunca-mais-esquecer-o-que-voce-estuda-programacao.md` — transcrição limpa e organizada em seções (já em PT-BR, sem tradução)
+- `wiki/sources/como-nunca-mais-esquecer-o-que-voce-estuda-programacao.md` — TL;DR, 7 key claims, entidades, conceitos, open questions, contradições/tensões, citações
+- `wiki/concepts/homeostase-sinaptica.md` (novo) — mecanismo neurocientífico de poda sináptica no sono e os 6 critérios de retenção (repetição, emoção, utilidade, contexto, resolução de problemas, sobrevivência)
+- `wiki/concepts/necessidade-como-gatilho-de-aprendizado.md` (novo) — perguntar "por que eu quero aprender isso" antes de estudar; necessidade → contexto → atenção → retenção; exemplo de duas pessoas estudando Docker
+- `wiki/concepts/projeto-impossivel.md` (novo) — um único projeto deliberadamente maior que a capacidade atual (recriar YouTube/Netflix/Uber) como laboratório vitalício para conceitos avançados; fabricação artificial de problemas (carga, volume de dados, falhas de instância)
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/neuroplasticidade.md` — `source_count` 1 → 2; nova seção nomeando formalmente o mecanismo como homeostase sináptica
+- `wiki/concepts/aprendizado-passivo.md` — `source_count` 7 → 8; nova seção sobre a origem do padrão no modelo escolar de memorização para prova
+- `wiki/concepts/automacao-pessoal-para-aprender.md` — `source_count` 1 → 2; novo link de distinção de escala com `projeto-impossivel`
+- `wiki/concepts/projeto-com-adrenalina.md` — `source_count` 2 → 3; nova seção de tensão de escala com `projeto-impossivel`
+- `wiki/concepts/sintaxe-vs-conhecimento-perene.md` — `source_count` 2 → 3; nova seção sobre a regra prática dos "80% do tempo em fundamentos"
+- `wiki/concepts/aprender-a-aprender.md` — `source_count` 5 → 6; nova seção formalizando "objetivo claro antes de aprender" como necessidade → contexto → atenção → retenção
+- `wiki/entities/renato-augusto.md` — `source_count` 9 → 10; nova Key Source (primeira fonte de conteúdo de carreira/aprendizado deste autor na wiki, que até aqui só tinha conteúdo técnico-específico — design patterns, system design)
+- `wiki/index.md` — nova linha em Sources; 3 novos conceitos em "Aprendizado e Mentalidade" (`homeostase-sinaptica`, `necessidade-como-gatilho-de-aprendizado`, `projeto-impossivel`)
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — esta fonte converge fortemente com o que já estava documentado em `aprendizado-deliberado.md`, `neuroplasticidade.md` e `aprendizado-passivo.md` (mesmo mecanismo neurocientífico, vocabulário e origem diferentes: "homeostase sináptica" nomeado formalmente aqui pela primeira vez, embora o fenômeno já estivesse descrito informalmente a partir de outra fonte). (2) **Tensão de escopo, não contradição**, entre `projeto-impossivel` (novo) e os já existentes `automacao-pessoal-para-aprender` e `projeto-com-adrenalina` — resolvida explicitamente nas três páginas como complementaridade por faixa de complexidade/escala do conceito estudado, não como estratégias concorrentes. (3) **Fonte atribui "homeostase sináptica" genericamente "à neurociência"** sem citar Tononi & Cirelli (autores reais da Synaptic Homeostasis Hypothesis) — registrado como open question na source page e na nota da própria página de conceito; o termo é real, a aplicação a "estudar programação" é inferência do autor do vídeo.
+
+## [2026-08-17] ingest | CQRS — Dicionário do Programador (Código Fonte TV)
+
+**Fonte:** [[wiki/sources/cqrs-dicionario-programador-codigo-fonte-tv]] — transcrição de vídeo pt-BR bruta de ASR (sem pontuação, termos deformados: "que RS"/"Seca RS"/"essa qrs" → CQRS, "Pater"/"Pátia" → padrão, "macoratti" → José Carlos Macoratti), já em português, sem tradução necessária; limpa e organizada em `raw/` antes do ingest
+**Skill carregada:** `tech-mentor-system-design` (`references/messaging-patterns.md`, seção CQRS, e `references/event-sourcing-cqrs.md` para a menção a Event Sourcing). Path real do skillset: `/home/gabriel-martins/Documentos/skills/tech-mentor-system-design/` (o path `/home/nemomartins/Documentos/new/skills/` do CLAUDE.md não existe neste ambiente — mesma nota de drift de path já registrada em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/cqrs-dicionario-programador-codigo-fonte-tv.md` — transcrição limpa e organizada em seções (introdução → cenários de motivação → Command/Query → diagrama → sincronização → quatro aspectos de implementação → Event Sourcing → encerramento)
+- `wiki/sources/cqrs-dicionario-programador-codigo-fonte-tv.md` — TL;DR, 7 key claims, entidades, conceitos, open questions, contradições, citações brutas
+- `wiki/concepts/task-based-ui.md` (novo, stub) — UI orientada à intenção do usuário, não a um CRUD genérico
+- `wiki/concepts/command-bus.md` (novo, stub) — roteamento de Command até handler; regra de nunca retornar dados
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/cqrs.md` — `source_count` 3 → 4; novas seções "Quando CQRS Passa a Fazer Sentido: Progressão de Cenários" (single-user → LAN → SaaS multi-tenant), "UI Baseada em Tarefas", "Command Bus e a Regra de Void", "Estratégias de Sincronização Write → Read" (automática, eventual, controlada, sob demanda); nova Key Source
+- `wiki/concepts/event-sourcing.md` — `source_count` 2 → 3; nova seção "Definição Curta (Macoratti, via Código Fonte TV)"; nova Key Source
+- `wiki/entities/codigo-fonte-tv.md` — `source_count` 4 → 5; nova Key Source; linha do perfil atualizada citando o episódio de CQRS na série "Dicionário do Programador"
+- `wiki/index.md` — nova linha em Sources; 2 novos conceitos em "Arquitetura Backend & Event-Driven" (`task-based-ui`, `command-bus`); hook da entidade `codigo-fonte-tv` atualizado
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte é consistente com `wiki/concepts/cqrs.md` (já cobria a separação command/query, event sourcing e a versão "duplicar o banco em write/read" de `microsservicos-do-zero-deadlock-2pc-saga-cqrs`) e com a fonte técnica mais densa `wiki/sources/cqrs.md`. Contribui principalmente com conteúdo didático inédito na wiki: a progressão de cenários de motivação (single-user → LAN → SaaS multi-tenant), e os conceitos de task-based UI e command bus, ausentes nas fontes de CQRS já ingeridas. (2) **Citação de José Carlos Macoratti** sobre Event Sourcing é pontual, sem URL/publicação específica — não foi criada entidade dedicada por não ser o foco do episódio, apenas uma citação de encerramento. (3) **Regra "Command nunca deve retornar dados"** é registrada como mais estrita do que a formulação já existente na wiki ("Commands retornam void ou ID") — não é contradição, é uma variação de rigor entre fontes; ambas as versões preservadas nas respectivas páginas.
+
+## [2026-08-17] ingest | O que sobrou pro Dev Júnior? (Erick Wendel)
+
+**Fonte:** [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — transcrição de vídeo pt-BR, ASR bruto sem pontuação, limpa e organizada em seções (introdução → contexto de apreensão → comparação de grades curriculares → tese da ordem invertida → medo recorrente contra novas ferramentas → o que a IA muda de fato → perfil do bom júnior → evidência de mercado BR/EUA → conclusão → recomendações), já em português, sem tradução necessária
+**Skill carregada:** `tech-mentor-leadership` (`references/leadership/engineering-hiring.md` — calibração de níveis; `references/career-progression.md` — progressão júnior→sênior). Path real do skillset: `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/` (o path `/home/nemomartins/Documentos/new/skills/` do CLAUDE.md não existe neste ambiente — mesma nota de drift de path já registrada em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/o-que-sobrou-pro-dev-junior-eric-wendel.md` — transcrição limpa e organizada em seções
+- `wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel.md` — TL;DR, 7 key claims com evidência e confiança, entidades/conceitos tocados, open questions, citações brutas
+- `wiki/concepts/alto-nivel-antes-do-fundamento.md` (novo) — tese central da fonte: fundamentos continuam indispensáveis, mas a ordem de aquisição se inverteu (alto nível/produto primeiro, fundamentos sob demanda depois); registra tensão em aberto com a leitura bottom-up de `fundacao-tecnica.md`/David Malan
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/entities/erick-wendel.md` — `source_count` 1 → 2; nova Key Source; reforço da open question de possível duplicata com `eric-lenda.md` (mesma auto-apresentação oral "Eric Wend" identificada nas duas fontes)
+- `wiki/concepts/engenheiro-vs-programador.md` — `source_count` 5 → 6; nova seção "Gerar Código vs. Saber Construir Software"; formulação "IA como copiloto, não download do cérebro"
+- `wiki/concepts/fundacao-tecnica.md` — `source_count` 7 → 8; nova seção sobre a ordem de aquisição poder ser invertida, com tensão em aberto registrada contra a leitura bottom-up de David Malan/CS50 já presente na página
+- `wiki/concepts/ia-como-amplificador.md` — `source_count` 1 → 2; nova seção convergente ("copiloto, não download do cérebro") com o dado quantitativo de ganho desigual por perfil já presente
+- `wiki/concepts/dependencia-ia.md` — `source_count` 4 → 5; nova seção "terceirizar o raciocínio" como formulação equivalente aplicada a juniores
+- `wiki/concepts/vaga-junior-vira-pleno.md` — `source_count` 2 → 3; novo contraponto anedótico (levantamento informal no LinkedIn ainda mostrando volume de vagas júnior com requisitos clássicos, não inflados) registrado como tensão não resolvida, não contradição
+- `wiki/concepts/ciclo-de-mercado-tech.md` — `source_count` 7 → 8; nova seção sobre heurística de defasagem EUA → Brasil na chegada de novas exigências de mercado
+- `wiki/concepts/portfolio-backend-junior.md` — `source_count` 4 → 5; nova seção sobre projetos pessoais como prova de autonomia mesmo sem experiência profissional
+- `wiki/concepts/sintaxe-vs-conhecimento-perene.md` — `source_count` 3 → 4; novo relato pessoal (jQuery antes de JavaScript) reforçando que aprender fora de ordem não é o mesmo que nunca aprender
+- `wiki/concepts/curriculo-vs-portfolio.md` — `source_count` 3 → 4; nova Key Source
+- `wiki/concepts/apagao-de-seniors.md` — novo backlink para `alto-nivel-antes-do-fundamento` como contraponto otimista (sem alteração de `source_count`, é apenas link cruzado)
+- `wiki/index.md` — nova linha em Sources; novo conceito em "Aprendizado e Mentalidade" (`alto-nivel-antes-do-fundamento`); hook da entidade `erick-wendel` atualizado
+
+**Notas / open questions:** (1) **Sem contradições factuais diretas** com o wiki existente — a fonte converge fortemente com o eixo já bem documentado "engenheiro vs. programador" / "IA como amplificador sem julgamento" / "dependência de IA", contribuindo vocabulário e exemplos pessoais novos (jQuery-antes-de-JS, irmãos do autor como comparação de gerações) em vez de claims conflitantes. (2) **Tensão em aberto, não resolvida:** a tese central da fonte (ordem de aprendizado pode ser invertida sem prejuízo) está em tensão parcial com a leitura bottom-up de David Malan/CS50 já registrada em `fundacao-tecnica.md` — registrada explicitamente como tensão nas duas pontas (`alto-nivel-antes-do-fundamento.md` e `fundacao-tecnica.md`), não como contradição, pois os dois falam de públicos e contextos parcialmente diferentes. (3) **Tensão em aberto sobre dado de mercado:** o levantamento informal do autor ("ainda há muitas vagas júnior no Brasil com requisitos clássicos") não é confirmado nem contradito pelas fontes já presentes em `vaga-junior-vira-pleno.md` e `ciclo-de-mercado-tech.md` (aperto de mercado via custo de capital) — nenhuma das fontes cruza dados diretamente, e o levantamento de Erick Wendel é anedótico, sem metodologia ou captura preservada. (4) **Open question de identidade reforçada, não resolvida:** o autor se apresenta na fala como "Eric Wend" — mesma distorção fonética já registrada como possível ligação entre `wiki/entities/erick-wendel` e `wiki/entities/eric-lenda`. Esta fonte foi atribuída a `erick-wendel.md` por proximidade temática (carreira/educação), mas a ambiguidade de identidade permanece sem confirmação humana.
+
+## [2026-08-17] ingest | LeetCode e System Design: Entrevista vs. Trabalho Real na Era da IA
+
+**Fonte:** [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — transcrição de vídeo pt-BR (reação a tweet), ASR bruto sem pontuação, limpa e organizada em seções (contexto/gancho → transcrição formatada com subtítulos temáticos: se vender vs. ser bom, mudança do trabalho de dev, CRUD resolvido, onde o argumento acerta, LeetCode caiu/System Design subiu, teste de sanidade "IA melhor que dev", IA barata para sempre, risco de estagnar no teto da IA, diferencial real, fechamento "admirável mundo novo"), já em português, sem tradução necessária. Trecho de patrocínio (HostGator) preservado só como contexto, isolado numa nota final.
+**Skill carregada:** `tech-mentor-leadership` (`references/career-progression.md` — níveis e diferenciação por portfólio; `references/ai-strategy-engineering.md` — mapa de risco/valor de IA em engenharia). Path real do skillset: `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/` (o path `/home/nemomartins/Documentos/new/skills/` do CLAUDE.md não existe neste ambiente — mesma nota de drift de path já registrada em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia.md` — transcrição limpa e organizada em seções
+- `wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia.md` — TL;DR, 8 key claims com evidência e confiança, entidades/conceitos tocados, open questions, citações brutas
+- `wiki/entities/bero.md` (novo, stub) — autor do tweet reagido; identidade não confirmada
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/entities/augusto-galego.md` — `source_count` 10 → 11; nova seção "Reação a Tweet sobre LeetCode/System Design vs. Trabalho Real"; autoria confirmada por autorreferência direta ao próprio nome na fala ("você pode argumentar Galego mas...") — evidência mais forte já registrada nesta entidade
+- `wiki/entities/hostgator.md` — `source_count` 2 → 3; nova seção "Terceira Aparição: Allstack — Agregador de Assinaturas de IA"
+- `wiki/concepts/engenheiro-vs-programador.md` — `source_count` 6 → 7; nova seção "O Teto da IA como Teto de Carreira"
+- `wiki/concepts/sintaxe-vs-conhecimento-perene.md` — `source_count` 4 → 5; nova seção sobre testes baratos (inclusive de mutação) como mecanismo explícito de por que "escovar bit" caiu de valor
+- `wiki/concepts/fundacao-tecnica.md` — `source_count` 8 → 9; nova seção "System Design Subiu, LeetCode Caiu — Onde a Fundação Se Traduz Hoje"
+- `wiki/concepts/ia-como-amplificador.md` — `source_count` 2 → 3; nova seção convergente sobre devs júnior com acesso total a IA ainda cometendo erros de júnior
+- `wiki/concepts/dependencia-ia.md` — `source_count` 5 → 6; nova seção "Teto de Capacidade Igual ao da IA — a Versão de Carreira Sênior"
+- `wiki/concepts/apagao-de-seniors.md` — `source_count` 1 → 2; nova seção sobre sênior "letrado em IA" como pré-requisito ainda presente na contratação
+- `wiki/concepts/ciclo-de-mercado-tech.md` — `source_count` 8 → 9; nova seção "Concentração de Cargos: Front-end Absorvido pelo Full-Stack"
+- `wiki/concepts/curriculo-vs-portfolio.md` — `source_count` 4 → 5; nova seção de tensão sobre poder de sinal do portfólio/GitHub tendo caído com a IA
+- `wiki/concepts/portfolio-backend-junior.md` — `source_count` 5 → 6; nova seção de tensão sobre o checklist de portfólio continuar diferenciando mesmo com SaaS funcional barateado
+- `wiki/concepts/vaga-junior-vira-pleno.md` — `source_count` 3 → 4; nova seção sobre concentração de cargos (front-end absorvido por full-stack) como mecanismo adjacente
+- `wiki/concepts/aprender-a-aprender.md` — `source_count` 6 → 7; nova seção "'Você Não Pode Querer Parar de Aprender'" com a pergunta-teste sobre o melhor dev conhecido
+- `wiki/index.md` — nova linha em Sources; nova linha em Entities (`bero`); hooks de `augusto-galego` e `hostgator` já refletidos via atualização das próprias páginas de entidade (hook do índice não alterado, apenas conteúdo interno)
+
+**Notas / open questions:** (1) **Sem contradições factuais diretas** com o wiki existente — a fonte converge fortemente com o eixo já bem documentado "engenheiro vs. programador" / "IA como amplificador sem julgamento" / "dependência de IA" / "sintaxe vs. conhecimento perene", contribuindo formulações e mecanismos novos (teste de sanidade do competidor do Figma, testes baratos como razão para sintaxe perder valor, teto de capacidade igual ao da IA como risco de substituição) em vez de claims conflitantes. (2) **Tensão registrada, não resolvida, em duas pontas** (`curriculo-vs-portfolio.md` e `portfolio-backend-junior.md`): a fonte argumenta que GitHub/SaaS pessoal perdeu poder de sinal porque a IA barateou o artefato — não contradiz a tese "promessa vs. prova" já presente na wiki, mas eleva o limiar do que conta como prova suficiente; nenhuma das fontes propõe um critério objetivo atualizado. (3) **Identidade de "Bero" não confirmada** — possível confusão fonética com [[wiki/entities/boris]] (criador do Claude Code, citado em outra fonte do mesmo autor), mas sem evidência de conteúdo que sustente a ligação; tratada como entidade stub separada. (4) **Autoria de Augusto Galego confirmada com a evidência mais forte já registrada para este autor** — autorreferência direta ao próprio nome na fala, mais forte que os padrões de patrocínio (HostGator) e conteúdo (curso de System Design) usados em inferências anteriores.
+
+## [2026-08-17] ingest | 15 Serviços Essenciais da AWS Para Dominar Qualquer Arquitetura
+
+**Fonte:** [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — transcrição de vídeo pt-BR (autor não identificado na transcrição bruta fornecida), ASR bruto sem pontuação, traduzido não foi necessário (áudio original já em português), limpo e organizado em seções por serviço na ordem de dependência lógica de uma pilha (IAM → VPC → EC2 → Auto Scaling+ALB → S3 → RDS/Aurora → Lambda → DynamoDB → API Gateway → CloudFront → CloudWatch → SQS/SNS/EventBridge → ECS/EKS/ECR → visão rápida de Route 53/Cognito/Secrets Manager/Step Functions/ElastiCache/Kinesis → arquitetura de referência → resumo por categoria).
+**Skill carregada:** `tech-mentor-infra` (`references/cloud/aws.md` — serviços essenciais por categoria, IAM em profundidade, RDS vs Aurora, ECS vs EKS, Well-Architected Framework). Path real do skillset: `/home/gabriel-martins/Documentos/skills/tech-mentor-infra/` (mesma nota de drift de path do CLAUDE.md já registrada em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura.md` — transcrição limpa e organizada por serviço
+- `wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura.md` — TL;DR, 7 key claims com evidência e confiança (cruzadas com a referência de skill carregada), entidades/conceitos tocados, open questions, citações brutas
+- `wiki/concepts/vpc.md` (novo, stub) — subnets públicas/privadas, Security Groups, arquitetura de três camadas
+- `wiki/concepts/aws-elasticache.md` (novo, stub) — Redis/Memcached gerenciado, papel de cache na arquitetura de referência
+- `wiki/concepts/aws-sqs.md` (novo, stub) — Standard vs FIFO, Dead Letter Queue, comparação com SNS/EventBridge
+- `wiki/concepts/aws-sns.md` (novo, stub) — pub/sub, fan-out para múltiplas filas SQS
+- `wiki/concepts/aws-cloudwatch.md` (novo, stub) — métricas/logs/alarmes, Log Groups+retention, Logs Insights, X-Ray
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/entities/amazon-web-services.md` — `source_count` 5 → 6; nova seção "Os 15 Serviços que Cobrem 90% dos Casos" com o mapa de dependência lógica da pilha
+- `wiki/concepts/aws-iam.md` — `source_count` 1 → 2; nova seção com exemplo de least privilege (escopo mínimo S3 read-only) e MFA/conta root
+- `wiki/concepts/ec2.md` — `source_count` 1 → 2; nova seção de famílias de instância (T/M/C/R) e os três modelos de preço (On-Demand/Reserved/Spot) com regra de uso por perfil de carga
+- `wiki/concepts/auto-scaling.md` — `source_count` 2 → 3; nova seção sobre ASG (min/desejado/máximo) sempre acoplado ao ALB na AWS
+- `wiki/concepts/amazon-s3.md` — `source_count` 2 → 3; nova seção de storage classes, lifecycle policies, versioning, Block Public Access e Event Notifications
+- `wiki/concepts/rds.md` — `source_count` 1 → 2; nova seção de Multi-AZ (failover automático, standby sem leitura) e read replicas
+- `wiki/concepts/aws-lambda.md` — `source_count` 2 → 3; nova seção de triggers, Provisioned Concurrency e o teto de 15min (distinto do cold start por inatividade já registrado)
+- `wiki/concepts/dynamodb.md` — `source_count` 1 → 2; nova seção de modos de capacidade (Provisioned/On-Demand) e casos ideais vs. não ideais
+- `wiki/concepts/api-gateway.md` — `source_count` 5 → 6; nova seção específica AWS (REST vs HTTP API, integração com Lambda/EC2/ECS/DynamoDB, autorização IAM/Cognito/Lambda Authorizer)
+- `wiki/concepts/aws-cloudfront.md` — `source_count` 3 → 4; nova seção de cache behaviors por path, Origin Access Control e WAF
+- `wiki/concepts/aws-route-53.md` — `source_count` 1 → 2; nova seção de roteamento inteligente (latência, localização, failover automático)
+- `wiki/concepts/ecs.md` — `source_count` 1 → 2; nova seção de task definitions/services/ECR e a comparação direta ECS vs. EKS
+- `wiki/concepts/aws-fargate.md` — `source_count` 1 → 2; nova seção posicionando Fargate como launch type mais simples do ECS
+- `wiki/concepts/escalabilidade-horizontal.md` — `source_count` 14 → 15; nova linha com a implementação concreta AWS (ASG atrás de ALB)
+- `wiki/concepts/load-balancer.md` — `source_count` 15 → 16; nova linha sobre ALB + ASG e health checks automáticos
+- `wiki/concepts/step-functions.md` — `source_count` 1 → 2; nova linha (menção breve na fonte, sem aprofundar)
+- `wiki/concepts/certificado-ssl-acm.md` — `source_count` 1 → 2; nova linha (menção breve de ACM em domínio customizado de API Gateway/CloudFront)
+- `wiki/index.md` — nova linha em Sources; 6 novas linhas em Concepts na seção "AWS & Cloud" (vpc, aws-elasticache, aws-sqs, aws-sns, aws-cloudwatch)
+
+**Notas / open questions:** (1) **Sem contradições factuais** com o wiki existente — a fonte converge e detalha com precisão os conceitos já documentados a partir de `toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis` e outras fontes AWS anteriores; onde a wiki já tinha um conceito (ex.: RDS vs Aurora, ECS vs EKS), esta fonte confirma a mesma heurística com os mesmos números presentes na referência de skill `tech-mentor-infra/references/cloud/aws.md`, sem divergência. (2) **Autoria não identificada** — diferente de fontes recentes com autor inferível por padrão de fala/patrocínio, esta transcrição bruta não trouxe nenhum metadado de canal ou autor; tratada como fonte anônima. (3) **EventBridge, Cognito, Secrets Manager, Step Functions (já existente) e Kinesis** foram cobertos pela fonte apenas na seção final "visão rápida" (uma frase cada) — não geraram stubs de concept-page dedicados nesta ingestão (exceto Step Functions, que já existia) por falta de profundidade suficiente na fonte; ACM e Application Load Balancer reaproveitaram concept-pages já existentes (`certificado-ssl-acm`, `load-balancer`) em vez de criar duplicatas com nomes diferentes. (4) **Escopo amplo desta ingestão** (22 páginas tocadas, acima da faixa típica de 10-15) é proporcional à amplitude panorâmica da fonte, que cobre 15+ serviços AWS em vez de aprofundar um único conceito.
+
+---
+
+## [2026-08-18] ingest | Facade: Padrão de Projeto na Prática, com TypeScript (Código Fonte TV)
+
+**Fonte:** [[wiki/sources/design-pattern-facade-codigo-fonte-tv]] — transcrição de vídeo colada pelo usuário no chat (ASR bruto, sem pontuação), limpa e traduzida/reorganizada (já estava em PT-BR) em `raw/design-pattern-facade-codigo-fonte-tv.md`
+**Skill carregada:** `tech-mentor-backend` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/` (o `/home/nemomartins/Documentos/new/skills/` do CLAUDE.md não existe nesta máquina). Referência consultada: `references/design-patterns.md` (seção Facade/Structural).
+
+**Arquivos criados:**
+- `raw/design-pattern-facade-codigo-fonte-tv.md` — transcrição limpa e organizada em seções (introdução → modelagem do exemplo → antes/depois do Facade → violações de SOLID → variações → conclusão)
+- `wiki/sources/design-pattern-facade-codigo-fonte-tv.md` — TL;DR, 8 key claims com evidência e confiança, estrutura de código, entidades/conceitos tocados, open questions
+- `wiki/questions/facade-fere-srp-video-comparison.md` (novo, primeira página em `wiki/questions/`) — registra a contradição entre esta fonte e [[wiki/sources/design-pattern-facade-renato-augusto]] sobre se Facade fere o SRP
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/facade-pattern.md` — `source_count` 3 → 4; novas seções: Facade não bloqueia acesso direto ao subsistema, motivação de compliance/LGPD, variação com método estático, tensão DI vs. acoplamento, e link para o debate sobre SRP
+- `wiki/entities/codigo-fonte-tv.md` — `source_count` 5 → 6; nova linha em Key Sources (segundo episódio "mão no código" da minissérie, depois de Strategy)
+- `wiki/concepts/single-responsibility-principle.md` — `source_count` 4 → 5; nova seção registrando a posição contrária (Facade fere SRP mesmo sem lógica própria)
+- `wiki/concepts/open-closed-principle.md` — `source_count` 4 → 5; novo exemplo negativo (Facade acoplada a implementações concretas quebra OCP ao adicionar SMS)
+- `wiki/concepts/dependency-injection.md` — `source_count` 1 → 2; nova seção sobre a tensão entre DI completa e a simplicidade que o Facade deveria oferecer
+- `wiki/concepts/god-object.md` — `source_count` 5 → 6; nova seção "segunda opinião" sobre orquestração pura já ser sinal de risco
+- `wiki/concepts/structural-patterns.md` — `source_count` 2 → 3; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`facade-pattern`, que estava ausente do índice apesar de já existir como página — corrigido drift); nova seção `## Questions` populada com a primeira entrada
+
+**Notas / open questions:** (1) **Contradição real entre duas fontes** — [[wiki/sources/design-pattern-facade-renato-augusto]] defende que Facade não fere SRP (critério: motivo único de mudança); esta fonte (Código Fonte TV) discorda explicitamente, tratando orquestração pura de múltiplos serviços como responsabilidade excessiva por si só. Nenhuma das duas cita fonte primária do GoF/Robert C. Martin para a questão específica — registrado como debate legítimo não resolvido em `wiki/questions/facade-fere-srp-video-comparison.md`, não como erro de uma das fontes. (2) **Drift de índice pré-existente corrigido de passagem** — `wiki/concepts/facade-pattern.md` e `wiki/sources/design-pattern-facade.md` (Refactoring Guru) já existiam no disco mas não apareciam em `wiki/index.md`; adicionada a entrada de `facade-pattern` nesta ingestão (a entrada do source Refactoring Guru permanece ausente — fora do escopo desta ingestão, mas fica registrado para um futuro `lint the wiki`). (3) **Primeira página em `wiki/questions/`** — o diretório não existia neste vault; criado agora com a primeira entrada de contradição entre fontes.
+
+---
+
+## [2026-08-18] ingest | O Que É Gzip de Verdade (Deflate, LZ77 e Huffman Coding)
+
+**Fonte:** [[wiki/sources/gzip-deflate-huffman-lz77]] — transcrição de vídeo colada pelo usuário no chat (ASR bruto, já em pt-BR, sem necessidade de tradução), limpa e organizada em `raw/gzip-deflate-huffman-lz77.md`
+**Skill carregada:** `cs-fundamentals` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/cs-fundamentals/` (o `/home/nemomartins/Documentos/new/skills/` do CLAUDE.md não existe nesta máquina). Referências consultadas: `references/data-structures.md` (seção Heap/Priority Queue) e `references/discrete-math.md` (seção Huffman coding / information theory).
+
+**Arquivos criados:**
+- `raw/gzip-deflate-huffman-lz77.md` — transcrição limpa e organizada em seções (introdução → bits → deflate → LZ77 → Huffman coding com exemplo numérico passo a passo → xxd → encerramento); erros de ASR corrigidos por contexto (ex.: "lit code" → "LeetCode", callback do próprio vídeo à piada de "quando você vai usar isso na vida real")
+- `wiki/sources/gzip-deflate-huffman-lz77.md` — TL;DR, 7 key claims com evidência e confiança, entidades/conceitos tocados, open questions, raw quotes
+- `wiki/concepts/priority-queue.md` (novo) — stub cobrindo heap/priority queue, complexidade, e seu uso central na construção da árvore de Huffman
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/compactacao-de-texto.md` — `source_count` 2 → 3, `status` stub → draft; nova seção "Gzip é formato de arquivo, não algoritmo"; seção LZ77/LZSS reescrita com sliding window (search + look-ahead buffer) e o triplet (offset, length, caractere); seção Huffman coding reescrita nomeando a priority queue como estrutura de construção; nova seção "Key sources"
+- `wiki/concepts/arvore.md` — `source_count` 6 → 7; nova linha em "Onde Aparece na Prática" (árvore de Huffman), novo link em "Relação com outros conceitos" (priority queue), nova linha em "Key sources"
+- `wiki/concepts/ascii.md` — `source_count` 3 → 4; nova seção "Contraste com Huffman Coding: Largura Fixa vs. Variável", nova linha em Key Sources
+- `wiki/sources/por-que-letras-minusculas-economizam-dados.md` — nova linha em Open Questions apontando para a fonte nova como aprofundamento sem contradição
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`priority-queue`); linha de `compactacao-de-texto` reescrita para refletir a distinção gzip (formato) vs. deflate (algoritmo)
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte converge e adiciona profundidade a [[wiki/concepts/compactacao-de-texto]] (já stub desde 2026-07-27) e a [[wiki/sources/por-que-letras-minusculas-economizam-dados]], promovendo a página de stub para draft. (2) **Primeira menção formal de priority queue na wiki** — apesar de heaps/filas de prioridade serem estrutura de dados fundamental, não havia página dedicada; criada agora motivada pelo uso concreto na construção da árvore de Huffman, evitando um stub genérico sem contexto de uso real. (3) **Autoria não identificada** — mesmo padrão de outras transcrições brutas sem metadado de canal (ex.: `por-que-letras-minusculas-economizam-dados` antes de identificação, `tipos-de-armazenamento-de-dados`); o estilo de fala não bateu com nenhuma entity já registrada (Código Fonte TV, Lucas Montano, Augusto Galego, Fabio Akita) com confiança suficiente para atribuição. (4) **Dois vídeos exclusivos para membros mencionados na fonte** (leitura do header gzip; implementação em código da árvore de Huffman) não estão disponíveis para ingestão — candidatos naturais a expandir `compactacao-de-texto` no futuro caso se tornem acessíveis.
+
+---
+
+## [2026-08-18] ingest | Recursão em JavaScript: Fatorial e Fibonacci
+
+**Fonte:** [[wiki/sources/recursao-fatorial-fibonacci-javascript]] — transcrição de vídeo colada pelo usuário no chat (ASR bruto, sem pontuação, já em pt-BR, sem necessidade de tradução), limpa, organizada em seções e com código JS extraído do texto corrido em `raw/recursao-fatorial-fibonacci-javascript.md`
+**Skill carregada:** `cs-fundamentals` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/cs-fundamentals/` (o `/home/nemomartins/Documentos/new/skills/` do CLAUDE.md não existe nesta máquina). Referência consultada: `references/algorithms-complexity.md` (seção "Recursão e Memoização").
+
+**Arquivos criados:**
+- `raw/recursao-fatorial-fibonacci-javascript.md` — transcrição limpa e organizada em seções (iterativa vs. recursiva → fatorial → analogia do poço → caso base + chamada recursiva → Fibonacci → trade-offs), com blocos de código JS extraídos da fala
+- `wiki/sources/recursao-fatorial-fibonacci-javascript.md` — TL;DR, 4 key claims com evidência e confiança, entidades/conceitos tocados, open questions, raw quotes
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/recursao.md` — `source_count` 3 → 4; nova seção "Trace passo a passo: fatorial e Fibonacci em JavaScript" com os dois exemplos completos e nota sobre a diferença de complexidade entre recursão linear (fatorial, O(n)) e recursão em árvore (Fibonacci ingênuo, O(2ⁿ)) — a fonte trata "recursão" como categoria única mais lenta, o que é impreciso
+- `wiki/concepts/programacao-dinamica.md` — `source_count` 1 → 2; nova seção explicando por que a Fibonacci recursiva ingênua traçada na fonte é O(2ⁿ) (recomputação de subárvores), conectando o trace da fonte à correção via memoização
+- `wiki/concepts/big-o.md` — `source_count` 9 → 10; tabela de complexidades atualizada (O(2ⁿ) ganhou "Fibonacci recursivo sem memoização" como exemplo canônico ao lado de subsets de força bruta); nova linha em Key sources
+- `wiki/concepts/pilha.md` — `source_count` 1 → 2; bullet de call stack expandido com o trace concreto de `fatorial(5)` (LIFO — frames se resolvem na ordem inversa em que foram empilhados); nova linha em Key sources
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte converge com [[wiki/concepts/recursao]] (já draft, 3 fontes) e adiciona os dois traces didáticos completos (fatorial e Fibonacci) que a página ainda não tinha em detalhe. (2) **Imprecisão da fonte sinalizada, não corrigida silenciosamente** — a conclusão da fonte de que "recursão é mais lenta" generaliza um caso exponencial (Fibonacci sem memoização) para toda recursão, ignorando que fatorial recursivo é O(n), a mesma complexidade da versão iterativa. Registrado explicitamente em `wiki/concepts/recursao.md` e `wiki/concepts/programacao-dinamica.md` com link de volta à fonte, em vez de apagar a imprecisão do Open Questions da fonte. (3) **Escopo do ingest menor que a faixa de 10-15 páginas sugerida no CLAUDE.md** — o conteúdo é uma introdução didática que já converge quase inteiramente com `wiki/concepts/recursao.md` (existente, draft, 3 fontes prévias); os quatro conceitos tocados (recursão, programação dinâmica, Big O, pilha) cobrem genuinamente tudo que a fonte introduz de novo. Preferi 4 conexões reais e verificadas a esticar para conceitos sem relação direta (ex.: `divisao-de-tarefas-em-partes-menores`, que é sobre decomposição de tarefas de carreira, domínio diferente, apesar do nome parecido). (4) **Autoria não identificada** — mesmo padrão de outras transcrições brutas sem metadado de canal.
+
+
+---
+
+## [2026-08-18] ingest | Sistema de Mentoria em Golang: Monolito Modular Construído em Live (Lucas Badico)
+
+**Fonte:** [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]] — transcrição de vídeo colada pelo usuário no chat (ASR bruto, sem pontuação, já em pt-BR — sem necessidade de tradução), limpa e organizada em seções, com estrutura de pastas e código extraídos da fala corrida em `raw/sistema-mentoria-golang-monolito-modular-live-lucas-badico.md`
+**Skill carregada:** `tech-mentor-backend` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/` (o `/home/nemomartins/Documentos/new/skills/` do CLAUDE.md não existe nesta máquina). Referências consultadas: `references/architecture-foundations.md` (seção "Modular Monolith — Design, Estrutura e Migração" e "Microsserviços vs Monolito Modular") e `references/grpc.md` (cabeçalho, motivação HTTP/2+Protobuf).
+
+**Arquivos criados:**
+- `raw/sistema-mentoria-golang-monolito-modular-live-lucas-badico.md` — transcrição limpa e organizada em seções (por que construir em live → o que construir → verticais → stack → estrutura de pastas → fluxo do módulo appointment → tese de extração → desafios em aberto)
+- `wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico.md` — TL;DR, 5 key claims com evidência e confiança, entidades/conceitos tocados, open questions, raw quotes
+- `wiki/concepts/grpc.md` (novo stub) — RPC binário sobre HTTP/2+Protobuf, HTTP na borda vs. gRPC interno, relação com extração de módulo em monolito modular
+- `wiki/concepts/localstack.md` (novo stub) — emulação local de serviços AWS, caso real de setup (6h, DynamoDB+Lambdas)
+- `wiki/concepts/build-in-public.md` (novo stub) — construir em público como exposição de conteúdo e prática deliberada, distinção com "ensinar em público" já documentado em `mentoria-tecnica`
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/monolito-modular.md` — `source_count` 2 → 3; nova seção "Implementação Concreta em Go" (estrutura `app/cmd`+`internal`+`modules`, extração via remoção de injeção + clone de banco); nova linha em Key sources
+- `wiki/concepts/go-arquitetura.md` — `source_count` 1 → 2; nova seção "Wiring Multi-Módulo (Monolito Modular)" com exemplo de `main.go` injetando handler por módulo; nova linha em Ver também e Key Sources
+- `wiki/concepts/go-ecossistema.md` — `source_count` 3 → 4; Gorilla Mux adicionado à seção "HTTP: Roteadores" como caso real de produção; nova linha em Key Sources
+- `wiki/concepts/dynamodb.md` — `source_count` 2 → 3; nova seção "Desenvolvimento Local com LocalStack"; nova linha em Key Sources
+- `wiki/concepts/mentoria-tecnica.md` — `source_count` 6 → 7; nova seção "Construir a Própria Infraestrutura de Mentoria como Produto"; nova linha em Key Sources
+- `wiki/concepts/microsservicos.md` — `source_count` 12 → 13; nova linha em Key Sources com a tática de clonar banco no momento da extração
+- `wiki/concepts/database-per-service.md` — `source_count` 2 → 3; nova seção "Tática de Migração: Clonar Antes de Separar"; nova linha em Key Sources
+- `wiki/entities/lucas-badico.md` — `source_count` 3 → 4; nova seção "Projeto em Live: Sistema de Mentoria em Go"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (`grpc` em Arquitetura Backend, `localstack` em AWS & Cloud, `build-in-public` em Recursos de Aprendizado)
+
+**Notas / open questions:** (1) **Sem contradições diretas** com o wiki existente — a fonte converge fortemente com [[wiki/concepts/monolito-modular]] (já draft, agora com exemplo concreto de implementação em Go) e com a tese de "banco por serviço via clone" que complementa, sem contradizer, o [[wiki/concepts/database-per-service]] existente. (2) **Trade-off não discutido pela fonte, sinalizado no Open Questions da fonte**: a escolha de GORM no projeto contradiz parcialmente a recomendação de produção já registrada em [[wiki/concepts/go-ecossistema]] (sqlc/sqlx preferidos a GORM para queries críticas) — registrado como tensão, não como erro corrigido silenciosamente. (3) **Simplificação da fonte sobre gRPC no browser** (alega "não existe solução boa" sem mencionar grpc-web/Connect) sinalizada explicitamente no Open Questions da fonte, não corrigida no corpo do texto. (4) **Autoria identificada com confiança alta** — mesmo estilo de fala, tema (Go, carreira, mentoria) e entity já existente ([[wiki/entities/lucas-badico]]) de fontes prévias (`golang-mercado-trabalho-frontend-para-backend`, `golang-profissional-sem-grandes-frameworks`), diferente do padrão usual de autoria não identificada.
+
+---
+
+## [2026-08-18] ingest | Por Que Estimativas de Software Sempre Dão Errado (e Como Melhorar a Precisão)
+
+**Fonte:** [[wiki/sources/por-que-estimativas-de-software-falham-como-melhorar]] — transcrição de vídeo colada pelo usuário no chat (ASR bruto, pt-BR, autor não identificado, patrocínio Abacus), limpa, organizada em seções e reduzida do bloco publicitário em `raw/por-que-estimativas-de-software-falham-como-melhorar.md`.
+**Skill carregada:** `tech-mentor-leadership` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/`. Referência consultada: `references/engineering-management.md`, seção "Estimativa Técnica — Como Fazer e Como Comunicar" (T-Shirt Sizing, Story Points, PERT, Planning Poker, Spike, Tracking de Estimativas) — confirmou que o fator de correção (~1.5–2x) e a técnica de range/PERT da fonte são consistentes com a referência do skill, embora a fonte não nomeie PERT explicitamente.
+
+**Arquivos criados:**
+- `raw/por-que-estimativas-de-software-falham-como-melhorar.md` — transcrição limpa e organizada em seções (abertura → Parte 1: por que a estimativa está sempre errada [requisitos, incerteza tecnológica, pressão, viés humano, exemplo 2h→6h, crítica a story points] → como corrigir cada fator → Parte 2: como estimar o desconhecido [reduzir incerteza, PoC, desenho do sistema, quebra em tarefas, boas práticas, refinamento contínuo, range, mensurar direção do erro] → fechamento)
+- `wiki/sources/por-que-estimativas-de-software-falham-como-melhorar.md` — TL;DR, 8 key claims com evidência e confiança, conceitos tocados, open questions, raw quotes
+- `wiki/concepts/reducao-de-incerteza-antes-de-estimar.md` (novo) — tese metodológica central da fonte: método passo a passo (identificar o conhecido → testar presunções desconhecidas via PoC → desenhar o sistema → quebrar em tarefas pequenas → estimar), priorização do menos conhecido primeiro
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/estimativas-de-software.md` — `source_count` 2 → 3; quatro novas seções ("Por Que a Estimativa Original Nunca é Formalmente Invalidada", "Custo Oculto: Quanto uma Tarefa 'de 2h' Vira 6h", "Redução de Incerteza Como Pré-Requisito", "Range em Vez de Número Único", "Calibrando a Direção do Erro"); novas linhas em Relação com outros conceitos e Key Sources
+- `wiki/concepts/planning-fallacy.md` — `source_count` 2 → 3; nova seção "Exemplo Numérico: Custo Oculto Multiplicando por 3x"; nova linha em Key Sources
+- `wiki/concepts/story-points.md` — `source_count` 1 → 2; nova seção "A Equivalência Implícita com Horas (Crítica)"; nova linha em Key Sources
+- `wiki/concepts/estimativa-como-habilidade-treinavel.md` — `source_count` 1 → 2; nova seção "Em Nível de Time: Mensurar a Direção do Erro"; nova linha em Key Sources
+- `wiki/concepts/divisao-de-tarefas-em-partes-menores.md` — `source_count` 1 → 2; nova seção "Quando a Divisão Sozinha Não Basta — Sistemas Ainda Desconhecidos"; nova linha em Relação com Outros Conceitos e Key Sources
+- `wiki/concepts/planning-poker.md` — `source_count` 1 → 2; nova seção "Quem Deveria Estar na Sala"; nova linha em Conceitos Relacionados e Key Sources
+- `wiki/concepts/prova-de-conceito.md` — `source_count` 2 → 3; nova seção "PoC Como Pré-Requisito de Estimativa (Não Só de Adoção de Tecnologia)"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`reducao-de-incerteza-antes-de-estimar` em "Agile & Estimativa")
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte converge fortemente com o cluster já maduro de estimativa ([[wiki/concepts/estimativas-de-software]], [[wiki/concepts/planning-fallacy]], [[wiki/concepts/story-points]], [[wiki/concepts/estimativa-como-habilidade-treinavel]], [[wiki/concepts/divisao-de-tarefas-em-partes-menores]]), adicionando o mecanismo organizacional (por que a estimativa nunca é invalidada), um exemplo numérico concreto de custo oculto, e principalmente o método prescritivo de redução de incerteza pré-estimativa que nenhuma página existente cobria em detalhe — daí a criação da nova página central `reducao-de-incerteza-antes-de-estimar`. (2) **Crítica não-consensual sinalizada como tal**: a alegação de equivalência implícita 1 ponto ≈ 1 hora em story points é uma observação empírica do autor sobre um padrão comum, não uma regra do framework Scrum — registrada em `story-points.md` como crítica ao uso comum, não como fato que contradiz a definição formal já presente na página. (3) **PERT não nomeado pela fonte**: a técnica de range (~±33%) do vídeo é funcionalmente equivalente à estimativa em três pontos/PERT já documentada em `references/engineering-management.md` do skill, mas a fonte não usa esse nome — sinalizado como open question para uma futura fonte que trate PERT nominalmente, o que justificaria uma página própria (`wiki/concepts/estimativa-pert.md`), hoje ainda inexistente. (4) **Autor não identificado** — sem canal, nome ou outros metadados no texto colado pelo usuário; nenhuma entidade nova criada, e a nota de patrocínio (Abacus) foi condensada e isolada da transcrição por ser conteúdo comercial sem valor técnico.
+
+---
+
+## [2026-08-18] ingest | Autenticação Federada e SSO: de LDAP e Kerberos ao SAML (Bernardo Lobato)
+
+**Fonte:** [[wiki/sources/autenticacao-federada-sso-saml-bernardo-lobato]] — transcrição de vídeo colada pelo usuário no chat (ASR bruto, pt-BR, sem necessidade de tradução), limpa e organizada em seções em `raw/autenticacao-federada-sso-saml-bernardo-lobato.md`.
+**Skill carregada:** `tech-mentor-security` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-security/` (o `/home/nemomartins/Documentos/new/skills/` do CLAUDE.md não existe nesta máquina). Referência consultada: `references/appsec-authn-authz.md`, seções "SAML 2.0 — SSO Enterprise" e "Federated Identity" — confirmou o fluxo SP-initiated e o contraste SAML vs. OIDC descritos pela fonte.
+
+**Arquivos criados:**
+- `raw/autenticacao-federada-sso-saml-bernardo-lobato.md` — transcrição limpa e organizada em seções (o problema de múltiplos logins → identity management/LDAP → Kerberos/MIT → transição pro SSO web → fatores de autenticação → autenticação federada → SAML em detalhe → ponte com OAuth)
+- `wiki/sources/autenticacao-federada-sso-saml-bernardo-lobato.md` — TL;DR, 8 key claims com evidência e confiança, entidades/conceitos tocados, open questions, raw quotes
+- `wiki/concepts/saml.md` (novo) — protocolo em detalhe: três partes (IdP/SP/browser), troca de metadados via X.509, fluxo `SAMLRequest`/`SAMLResponse`, limitação em SPA/API, ponte com OAuth
+- `wiki/concepts/kerberos.md` (novo) — origem no MIT (anos 80), modelo do ticket/KDC, adoção pela Microsoft (Kerberos V5, RFC 4120), limitação de rede local
+- `wiki/concepts/ldap.md` (novo) — "chmod corporativo", contexto histórico, relação com Active Directory e com Kerberos/SAML
+- `wiki/concepts/federated-identity.md` (novo) — modelo de terceirização de confiança; unifica a página de source homônima já existente ([[wiki/sources/federated-identity]]) que não tinha página de conceito correspondente
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/sso-single-sign-on.md` — `source_count` 2 → 3; seção "Duas gerações de protocolo" expandida com o fluxo SAML e a linhagem Kerberos→SSO web; nova seção "Relação com outros conceitos" com links para `saml`, `kerberos`, `ldap`, `federated-identity`; nova linha em Key Sources
+- `wiki/concepts/oauth2.md` — `source_count` 8 → 9; nova seção "Ponte com SAML: Assertion como Credencial"; nova linha em Relação com outros conceitos e em Key Sources
+- `wiki/entities/bernardo-lobato.md` — `source_count` 10 → 11; nova linha em Key Sources
+- `wiki/sources/federated-identity.md` — **fix trivial de backlinks quebrados**: a página antiga linkava `[[concepts/federated-identity]]`, `[[concepts/saml]]` etc. sem o prefixo `wiki/` (formato de uma versão anterior do vault) e apontava para conceitos que nunca foram criados (`concepts/oidc`, `concepts/sso`, `concepts/scim`, `concepts/home-realm-discovery`, `entities/okta`, `entities/azure-ad`); corrigido para os 4 wikilinks que agora resolvem de fato (`federated-identity`, `saml`, `openid-connect`, `sso-single-sign-on`); `date_updated` atualizado
+- `wiki/index.md` — nova linha em Sources; quatro novas linhas em Concepts (`saml`, `kerberos`, `ldap`, `federated-identity`) na seção "Autenticação & Identidade"
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte converge com [[wiki/concepts/sso-single-sign-on]] (já draft, cobria SAML só em nível de hook) e complementa [[wiki/sources/federated-identity]] (já ingerida em 2026-04-23, mas cuja página de conceito correspondente nunca tinha sido criada — lacuna fechada agora). (2) **Linhagem histórica tratada como fato pela fonte, sinalizada como interpretação do autor no Open Questions**: a ideia de que o SSO web "evoluiu" do Kerberos é uma leitura de continuidade conceitual, não uma sucessão técnica documentada — SAML e Kerberos resolvem o mesmo problema por caminhos tecnicamente independentes. Mesmo padrão de simplificação de linhagem já observado em [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] (Unix→REST). (3) **Ponte SAML→OAuth descrita de forma genérica** pela fonte, sem nomear o RFC 7522 (SAML 2.0 Bearer Assertion Profile) — registrado como lacuna técnica no Open Questions da fonte, não preenchido silenciosamente. (4) **Drift de formato corrigido incidentalmente**: a página `wiki/sources/federated-identity.md` (ingerida em uma sessão anterior, antes da convenção `[[wiki/...]]` nos wikilinks se consolidar) tinha 6 backlinks quebrados apontando para páginas nunca criadas — fix trivial aplicado diretamente por não ser uma mudança substantiva de conteúdo, apenas correção de link, conforme os invariantes de lint do `CLAUDE.md`.
+
+---
+
+## [2026-08-18] ingest | Spec Writer: Skill para Gerar Specs a Partir do PRD e os 7 Critérios de uma Boa Spec
+
+**Fonte:** [[wiki/sources/spec-writer-skill-criterios-de-boa-spec]] — transcrição colada pelo usuário no chat (ASR bruto, sem pontuação, já em pt-BR — sem necessidade de tradução), limpa, pontuada e organizada em seções em `raw/spec-writer-skill-criterios-de-boa-spec.md`.
+**Skill carregada:** `tech-mentor-ai` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/` (o `/home/nemomartins/Documentos/new/skills/` do CLAUDE.md não existe nesta máquina). Referência consultada: `references/ai/spec-driven-development-ai.md` — cobre SDD do ângulo de spec-de-output para sistemas de IA (schema/YAML/evals), um sub-domínio distinto do ângulo da fonte (spec de feature para agente de código); sem sobreposição direta de claims, então nenhuma correção ou adição feita a partir da referência.
+
+**Arquivos criados:**
+- `raw/spec-writer-skill-criterios-de-boa-spec.md` — transcrição limpa e organizada em seções (PRD de exemplo → da feature à spec → exemplo de spec de autenticação → skill "Spec Writer" em 6 etapas → gates determinísticos e contexto → demonstração prática → os 7 critérios de uma boa spec → fechamento)
+- `wiki/sources/spec-writer-skill-criterios-de-boa-spec.md` — TL;DR, 7 key claims com evidência e confiança, conceitos e entidades abordados, observações, open questions, raw quotes
+- `wiki/concepts/criterios-de-uma-boa-spec.md` (novo) — os 7 critérios (falseabilidade, comportamento/não-implementação, invariantes, edge cases, fronteira/escopo, entradas/restrições, decisões de negócio) como framework de validação de spec, com posição no fluxo SDD e exemplo do login sem redirect
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/tech-spec.md` — `source_count` 4 → 5; nova seção "Critério de Validação: os 7 Critérios de uma Boa Spec"; nova linha em Key Sources
+- `wiki/concepts/spec-driven-development.md` — `source_count` 16 → 17; nova entrada em "Ferramentas de Suporte" (skill "Spec Writer", 6 etapas, sem relação confirmada com "TLC Spec Driven"); nova linha em Key Sources
+- `wiki/concepts/prd-product-requirements-document.md` — `source_count` 5 → 6; nova seção "PRD como Camada de Contexto, Independente de Codebase Legado ou Não"; nova linha em Key Sources
+- `wiki/concepts/agente-prd.md` — `source_count` 1 → 2; nova seção "Skill Análoga um Nível Abaixo: Geração de Spec por Feature"; nova linha em Key Sources
+- `wiki/concepts/context-engineering-harness.md` — `source_count` 7 → 8; nova subseção "Exemplo Didático de Guia Faltando: o Login Sem Redirect" dentro de "Sensores vs Guias"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`criterios-de-uma-boa-spec` na seção de SDD/planejamento)
+
+---
+
+## [2026-08-18] ingest | Anti-Corruption Layer: Facade/Adapter entre Sistema Novo e Sistema Legado
+
+**Fonte:** [[wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado]] — transcrição colada pelo usuário no chat (ASR bruto, pt-BR, sem necessidade de tradução), limpa, pontuada e organizada em seções em `raw/anti-corruption-layer-facade-adapter-sistema-legado.md`.
+**Skill carregada:** `tech-mentor-backend` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/` (o `/home/nemomartins/Documentos/new/skills/` do CLAUDE.md não existe nesta máquina). Referência consultada: `references/architecture/ddd-advanced.md`, seção "Anti-Corruption Layer (ACL)" — forneceu o nome formal do padrão (a fonte nunca o nomeia explicitamente, exceto na última frase, "camada de anticorrupção"), o exemplo de código (`SAPAdapter.toPedido()`) e os padrões vizinhos de Context Map (Open Host Service, Published Language, Separate Ways).
+
+**Arquivos criados:**
+- `raw/anti-corruption-layer-facade-adapter-sistema-legado.md` — transcrição limpa e organizada em seções (o objetivo do padrão → relação com Facade/Adapter → problema de dependência, incluindo dependência escondida → problema de múltiplos sistemas legados)
+- `wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado.md` — TL;DR, 5 key claims com evidência e confiança, seção "Cruzamento com o Skill" (nome formal, direção da tradução, padrões vizinhos de Context Map, quando não vale a pena), conceitos tocados, open questions, raw quotes
+- `wiki/concepts/anti-corruption-layer.md` (novo) — padrão de Context Mapping do DDD estratégico: mecanismo (Facade vs. Adapter), motivação (dependência forte bidirecional, dependência escondida), tabela de padrões vizinhos (OHS, Published Language, Separate Ways), relação com Strangler Fig
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/adapter-pattern.md` — `source_count` 6 → 7; nova seção "Anti-Corruption Layer: Adapter como Mecanismo de Isolamento de Sistema Legado"; nova linha em Key Sources
+- `wiki/concepts/facade-pattern.md` — `source_count` 4 → 5; nova seção "Facade como Anti-Corruption Layer entre sistema novo e legado"; nova linha em Key Sources
+- `wiki/concepts/strangler-fig-pattern.md` — `source_count` 3 → 4; nova seção "O componente de tradução na fase de coexistência: Anti-Corruption Layer"; nova linha em Key Sources
+- `wiki/concepts/acoplamento.md` — `source_count` 8 → 9; nova seção "Dependência Escondida: a Forma Mais Difícil de Diagnosticar"; nova linha em Key sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`anti-corruption-layer` na seção "Padrões e Design")
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte converge com o cluster já maduro de [[wiki/concepts/adapter-pattern]], [[wiki/concepts/facade-pattern]] e [[wiki/concepts/strangler-fig-pattern]], preenchendo uma lacuna real: nenhuma página da wiki nomeava formalmente o padrão Anti-Corruption Layer antes desta ingestão, apesar de `strangler-fig-pattern.md` já descrever a fase de coexistência onde ele se aplica. (2) **Ambiguidade Facade vs. Adapter não resolvida pela fonte, parcialmente resolvida pelo skill**: a fonte trata os dois patterns como intercambiáveis para esse propósito; o skill sugere Adapter para tradução de uma interface e Facade para orquestração de múltiplas chamadas, critério registrado na nova página de conceito mas ainda sem exemplo prático de código na wiki demonstrando a distinção nesse contexto específico — sinalizado como open question na fonte. (3) **Dependência escondida via reflection**: a fonte levanta o problema (config dinâmica, reflection em runtime) mas não explica como o ACL o mitiga na prática — a nova página de conceito registra essa lacuna explicitamente em vez de inventar uma solução não presente na fonte. (4) **Autor não identificado** — transcrição colada sem nome de canal/pessoa; nenhuma entidade nova criada. (5) **ESB (`wiki/concepts/esb-enterprise-service-bus`) deliberadamente não tocado**: a fonte menciona "múltiplos sistemas legados" mas não usa o termo ESB nem descreve um barramento — forçar esse backlink seria inferência além do que a fonte sustenta, então a página não foi tocada nesta ingestão.
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte converge fortemente com o cluster já maduro de [[wiki/concepts/spec-driven-development]], [[wiki/concepts/tech-spec]] e [[wiki/concepts/prd-product-requirements-document]], contribuindo dois elementos concretos que nenhuma fonte anterior detalhava: o framework operacional de 7 critérios de qualidade de spec (daí a criação de `criterios-de-uma-boa-spec.md`) e uma segunda skill nomeada ("Spec Writer", 6 etapas) ao lado da já documentada "TLC Spec Driven". (2) **Autor não identificado** — transcrição colada sem nome de canal/pessoa; vocabulário é estilisticamente próximo do curso [[wiki/sources/formacao-ia-devs-aula-04-agentes-planejamento|Formação IA para Devs]] (PRD→spec→execução, ênfase em contexto passo a passo), mas termos centrais desta fonte ("Spec Writer", "gates determinísticos", os 7 critérios) não aparecem em nenhuma fonte anterior — sem evidência suficiente para atribuir a uma entidade, registrado como open question na própria fonte em vez de forçar um link. (3) **"Gates determinísticos" referenciado sem contexto prévio**: a fonte cita "lembra da primeira coisa que eu falei" sobre gates determinísticos vs. contexto, indicando que a transcrição fornecida é um trecho de um vídeo/aula maior — não criada página própria para o termo por falta de material suficiente; sinalizado como open question na fonte para avaliar se cabe em [[wiki/concepts/quality-gate]] ou [[wiki/concepts/sensores-vs-guias]] quando mais material aparecer. (4) **Skill `tech-mentor-ai` consultada sem gerar merge de conteúdo**: a referência `spec-driven-development-ai.md` do skill cobre SDD para specs de *output* de sistemas de IA (schema Pydantic, YAML de agente, evals em CI) — um sub-domínio distinto do ângulo desta fonte (spec de *feature* de produto para orientar um agente de código), então não havia claim conflitante ou complementar direto a mesclar.
+
+---
+
+## [2026-08-18] ingest | Por Que Você Não Deve Começar Um Projeto com Microsserviços (Renato Augusto)
+
+**Fonte:** [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — transcrição colada pelo usuário no chat (ASR bruto, pt-BR, sem necessidade de tradução), limpa, pontuada e organizada em seções em `raw/microsservicos-monolito-first-renato-augusto.md`.
+**Skill carregada:** `tech-mentor-backend` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/`. Referência consultada: `references/architecture-foundations.md`, seção "Microsserviços vs Monolito Modular" — confirmou a tabela de critérios (time, escala, deploy, latência, consistência) já usada em [[wiki/concepts/microsservicos]], mas não continha o caso Amazon Prime Video nem o princípio Monolith First nomeado — ambos tratados como contribuição nova desta fonte.
+
+**Arquivos criados:**
+- `raw/microsservicos-monolito-first-renato-augusto.md` — transcrição limpa e organizada em seções (introdução/hype → armadilha da obsessão → monolito → microsserviços → três motivos para não começar com microsserviços → DDD como resposta → Monolith First de Fowler → monolito modular na prática → livros recomendados)
+- `wiki/sources/microsservicos-monolito-first-renato-augusto.md` — TL;DR, 7 key claims com evidência e confiança, entidades e conceitos abordados, open questions, raw quotes
+- `wiki/concepts/monolith-first.md` (novo) — princípio de Fowler nomeado formalmente pela primeira vez na wiki (as duas percepções, a imagem dos dois caminhos, relação com [[wiki/sources/arquitetura-de-sacrificio|Sacrificial Architecture]])
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/microsservicos.md` — `source_count` 13 → 14; novas seções "O Caso Amazon Prime Video" e "Monolith First (Martin Fowler)"; nova linha em Key Sources
+- `wiki/concepts/monolito.md` — `source_count` 2 → 3; novas seções "Caso Real: Amazon Prime Video" e "Monolith First (Martin Fowler)"; nova linha em Key sources
+- `wiki/concepts/monolito-modular.md` — `source_count` 3 → 4; novas seções "Segunda Implementação de Referência: C#" e "Monolith First: o Enquadramento Formal desta Etapa"; nova linha em Key sources
+- `wiki/concepts/ddd.md` — `source_count` 11 → 12; nova seção "DDD como Resposta ao Terceiro Motivo para Não Começar com Microsserviços"; nova linha em Key Sources
+- `wiki/concepts/yagni.md` — `source_count` 8 → 9; nova seção "Microsserviços Prematuros como Violação Direta de YAGNI"; nova linha em Key Sources
+- `wiki/concepts/bounded-context.md` — `source_count` 1 → 2; nova seção "Módulo de Monolito Modular = Bounded Context"; nova linha em Key Sources
+- `wiki/entities/martin-fowler.md` — `source_count` 16 → 17; nova entrada na lista de termos/frameworks cunhados (Monolith First); nova linha em Key Sources
+- `wiki/entities/renato-augusto.md` — `source_count` 10 → 11; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`monolith-first` na seção "Arquitetura Backend & Event-Driven")
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte converge fortemente com o cluster já maduro de [[wiki/concepts/microsservicos]], [[wiki/concepts/monolito]], [[wiki/concepts/monolito-modular]] e [[wiki/concepts/ddd]], sem introduzir nenhuma claim conflitante; a principal contribuição nova é preencher uma lacuna real (o princípio Monolith First de Fowler não tinha página própria, apesar de [[wiki/sources/arquitetura-de-sacrificio]] já cobrir uma tese adjacente do mesmo autor) e adicionar o caso Amazon Prime Video como exemplo concreto de "big tech" que reverteu de microsserviços para monolito. (2) **Caso Amazon Prime Video sem fonte primária**: citado de memória pelo autor, sem link ou dado além de "mais de 90%" de redução de custo — tratado como **[external]** não verificado diretamente nesta ingestão; registrado em [[wiki/concepts/monolito]] com essa ressalva explícita, candidato a fonte própria se o post técnico original da Amazon for ingerido depois. (3) **Artigo Monolith First sem link direto**: a transcrição parafraseia o bliki de Fowler (incluindo a imagem dos "dois caminhos" com dragões) sem citar a URL — conteúdo consistente com o artigo real e publicamente conhecido, mas fica marcado como não verificado diretamente nesta ingestão, à espera de uma ingestão futura do artigo original. (4) **Sam Newman e Eric Evans não viraram entidades**: aparecem apenas como recomendação bibliográfica de fechamento (livros sobre migração para microsserviços e o livro-fonte de DDD), sem claim técnica atribuída a eles nesta fonte — mesmo tratamento dado a Keycloak em [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]], ficam como candidatos a stub caso apareçam com profundidade técnica em outra fonte. (5) **Autor identificado por auto-apresentação na transcrição** ("Renato Augusto aqui de novo"), consistente com o estilo de conteúdo (padrões de projeto, arquitetura, system design) já indexado como [[wiki/entities/renato-augusto]] — sem necessidade de nova entidade.
+
+---
+
+## [2026-08-18] ingest | Monolith First (Martin Fowler, fonte primária)
+
+**Fonte:** [[wiki/sources/monolith-first-martin-fowler]] — bliki original de Fowler (martinfowler.com/bliki/MonolithFirst.html, 3 jun 2015), buscado via `curl` direto no HTML para preservar o texto exato, resumido/parafraseado em PT-BR em `raw/monolith-first-martin-fowler.md` (com trechos curtos entre aspas preservados no idioma original).
+**Skill carregada:** `tech-mentor-backend` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/`. Referência consultada: `references/architecture-foundations.md`, seção "Microsserviços vs Monolito Modular" — confirmou o enquadramento já usado na wiki (monolito modular como ponto de partida correto, extração só com necessidade real).
+
+**Arquivos criados:**
+- `raw/monolith-first-martin-fowler.md` — resumo/paráfrase do artigo original em PT-BR, com três citações diretas curtas preservadas em inglês
+- `wiki/sources/monolith-first-martin-fowler.md` — TL;DR, 7 key claims com evidência, seção específica de relação com a fonte secundária já ingerida, open questions, raw quotes
+- `wiki/concepts/microservice-premium.md` (novo) — termo cunhado por Fowler neste artigo para o custo estrutural de operar microsserviços; stub com backlink para [[wiki/concepts/monolith-first]] e [[wiki/concepts/yagni]]
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/monolith-first.md` — `source_count` 1 → 2, `status` stub → stable; nova seção "Fonte Primária: o Artigo Original de Fowler"; nova linha em Key Sources
+- `wiki/concepts/yagni.md` — `source_count` 9 → 10; nova seção "YAGNI na Fonte Primária de Monolith First"; nova linha em Key Sources
+- `wiki/concepts/bounded-context.md` — `source_count` 2 → 3; nova seção "Dificuldade de Acertar Fronteiras no Início (Monolith First)"; nova linha em Key Sources
+- `wiki/concepts/arquitetura-de-sacrificio.md` — `source_count` 1 → 2; nova seção "Citada em Monolith First como um dos Caminhos Práticos"; nova linha em Key Sources
+- `wiki/concepts/monolito.md` — `source_count` 3 → 4; seção "Monolith First" expandida com os dois argumentos da fonte primária; nova linha em Key sources
+- `wiki/concepts/monolito-modular.md` — `source_count` 4 → 5; nova linha em Key sources
+- `wiki/concepts/microsservicos.md` — `source_count` mantido (nova linha em Key Sources, sem nova seção — conteúdo já coberto pela seção "Monolith First" existente)
+- `wiki/concepts/ddd.md` — nova linha em Key Sources
+- `wiki/entities/martin-fowler.md` — `source_count` 17 → 18; entrada de Monolith First atualizada com ano (2015) e os dois argumentos; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`microservice-premium` na seção "Arquitetura Backend & Event-Driven")
+
+**Notas / open questions:** (1) **Resolve a open question #3 da ingestão anterior** ([[wiki/sources/microsservicos-monolito-first-renato-augusto]]) — a fonte primária confirma a paráfrase de Renato Augusto como fiel ao original em todos os pontos centrais (as duas percepções, YAGNI, dificuldade de bounded contexts, a imagem dos dois caminhos) e acrescenta o termo formal `MicroservicePremium`, os quatro caminhos práticos de execução, o "duolith" da nota de rodapé, e o contra-argumento a favor de microsserviços em substituições de sistema — nenhum desses estava na transcrição secundária. (2) **Sem contradições** com o wiki existente. (3) **`MicroservicePrerequisites` e "duolith" não viraram stubs** — mencionados de forma breve demais no artigo original para justificar página própria; registrados como menção dentro da fonte e como open question na própria fonte. (4) **Case study de Sam Newman citado como leitura adicional não seguido** — link para `samnewman.io`, candidato a ingestão própria se relevante o suficiente.
+
+---
+
+## [2026-08-19] ingest | IA em 2026 Não É Mais Só Sobre Prompts ou Agentes (Código Fonte TV)
+
+**Fonte:** [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — vídeo do canal Código Fonte TV, transcrição bruta salva em `raw/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv.md` (português, sem tradução necessária; apenas reformatado em seções/parágrafos a partir do ASR bruto, com incertezas de transcrição sinalizadas).
+**Skill carregada:** `tech-mentor-ai` — path `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/`. Referência consultada: `references/ai/agent-memory.md` (calibração da taxonomia cognitiva→técnica de memória) e conferência cruzada com `SKILL.md` (índice de tópicos: loop/graph engineering, agent memory, MCP, spec-driven).
+
+**Arquivos criados:**
+- `raw/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv.md` — transcrição bruta reformatada, com trecho patrocinado (Hostinger) preservado e sinalizado
+- `wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv.md` — TL;DR, 10 key claims com evidência, entidades/conceitos tocados, open questions, raw quotes
+- `wiki/entities/langchain.md` (novo) — stub para a empresa/projeto atribuída à cunhagem de "loop engineering" e "graph engineering" em 2026; já era citada dentro do corpo de [[wiki/concepts/loop-engineering]] sem entidade própria
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/loop-engineering.md` — `source_count` 7 → 8; nova seção "Terceira Fonte Confirma a Cunhagem pela LangChain"; nova linha em Key Sources
+- `wiki/concepts/grafo-como-abstracao-de-agentes.md` — `source_count` 2 → 3; nova seção "Terceira Fonte: LangChain Batiza o Termo, Boris Discute Publicamente"; nova linha em Key Sources
+- `wiki/concepts/subagentes.md` — `source_count` 4 → 5; nova seção "Mensagens Cruzadas Entre Subagentes ('list agents')"; nova linha em Key Sources
+- `wiki/concepts/agent-memory-tres-camadas.md` — `source_count` 2 → 3; nova seção "Variante: Distinção da Própria Anthropic (Contexto de Trabalho / Memória Futura / Artefato Revisado)"; nova linha em Key Sources
+- `wiki/concepts/spec-driven-development.md` — `source_count` 17 → 18; nova linha em Key Sources (sem seção nova — conteúdo já coberto)
+- `wiki/concepts/niveis-adocao-ia-l0-l4.md` — `source_count` 3 → 4; nova seção "Adesão Não é o Mesmo que Nível: 98,5% Usam IA, Maioria Ainda em L2"; nova linha em Key Sources
+- `wiki/entities/codigo-fonte-tv.md` — `source_count` 6 → 7; nova seção "Terceira Frente de Conteúdo: Vocabulário Técnico de IA/Agentes"; nova linha em Key Sources
+- `wiki/entities/boris.md` — `source_count` 1 → 2; nova seção "Voz Pública Sobre Graph Engineering"; nova linha em Key Sources
+- `wiki/entities/hostinger.md` — `source_count` 6 → 7; novo parágrafo (sexto bloco patrocinado: Horizons, GPU waitlist, Hermes Agent, Dokploy); nova linha em Key Sources
+- `wiki/entities/anthropic.md` — `source_count` 24 → 25; nova seção "Distinção de Memória em Três Partes (Atribuição Incerta)"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Entities (`langchain`); linha de Boris atualizada com menção a graph engineering
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte é majoritariamente confirmatória: reforça com uma terceira fonte independente a origem já documentada de loop engineering e graph engineering na LangChain, sem introduzir nenhuma tese conflitante. (2) **Claim mais novo e mais verificável desta fonte**: mensagens cruzadas entre subagentes via um recurso de "list agents" no Claude Code — comportamento que corresponde a uma tool real de listagem/endereçamento de agentes, não documentado na wiki antes desta ingestão; candidato a expansão se uma fonte técnica oficial detalhar o mecanismo de roteamento. (3) **Atribuição "OPA" à Anthropic tratada como provável erro de ASR** para "a própria Anthropic" — sinalizado como open question tanto na fonte quanto nas páginas atualizadas; não verificável sem acesso ao áudio original. (4) **Dado de adesão (83% → 98,5%) é útil mas não é claim técnico** — vem da pesquisa salarial não-probabilística do próprio canal (mesma ressalva metodológica já registrada em [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]), tratado como sinal de mercado, não como medição rigorosa. (5) **Bloco patrocinado da Hostinger** trouxe produtos novos (Horizons, GPU waitlist, Dokploy) — não confundir com o Coolify já documentado em outras fontes patrocinadas; são PaaS self-hosted distintos.
+
+---
+
+## [2026-08-19] ingest | A Gente Ainda Tá Falando de Loop ou Já Mudou pra Graph? (Matemática do Erro Composto)
+
+**Fonte:** [[wiki/sources/graph-engineering-matematica-do-erro-composto]] — transcrição colada pelo usuário no chat (ASR bruto, pt-BR, sem necessidade de tradução), limpa e organizada em seções em `raw/graph-engineering-matematica-do-erro-composto.md`, com trechos garbled sinalizados entre colchetes `[sic?]`.
+**Skill carregada:** `tech-mentor-ai` — path real neste ambiente é `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/`. Referência consultada: `references/ai/rag-advanced.md`, seção "GraphRAG & Knowledge Graphs" — confirmou o padrão geral de tradeoff citado na fonte (custo de indexação alto, ganho concentrado em multi-hop reasoning), mas não confirma a frase específica "frequentemente perde para RAG simples" atribuída a um paper não identificado na transcrição.
+
+**Arquivos criados:**
+- `raw/graph-engineering-matematica-do-erro-composto.md` — transcrição limpa e organizada em seções (abertura/contexto do vídeo anterior → resumo de Loop Engineering → definição formal de grafo de agentes → ciclicidade → matemática do erro composto entre agentes → verificador por nó → linha do tempo → contraponto GraphRAG → regra prática de decisão → conexão com Spec-Driven Development → fechamento)
+- `wiki/sources/graph-engineering-matematica-do-erro-composto.md` — TL;DR, 7 key claims com evidência e confiança, entidades/conceitos abordados, open questions, raw quotes
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/grafo-como-abstracao-de-agentes.md` — `source_count` 3 → 4; novas seções "Formalização com Quatro Componentes", "Verificador por Nó, Não um Único Gargalo", "Erro Composto Também Entre Agentes", "Contraponto: GraphRAG Não é Upgrade Automático", "Data Concreta do Tweet-Origem"; nova linha em Key Sources
+- `wiki/concepts/loop-engineering.md` — `source_count` 8 → 9; nova seção "Quarta Fonte Confirma a Extensão para Graph Engineering, com Data Concreta do Tweet-Origem"; nova linha em Key Sources
+- `wiki/concepts/spec-driven-development.md` — `source_count` 18 → 19; nova seção "Spec-Driven Development Como Grafo Não-Percebido"; nova linha em Key Sources
+- `wiki/concepts/harness.md` — `source_count` 17 → 18; nova seção recapitulando a definição (harness=carro, loop=piloto automático) como ponte para graph engineering; nova linha em Key Sources
+- `wiki/concepts/subagentes.md` — `source_count` 5 → 6; nova seção "Padrão Organizador → Researchers → Builders → Reviewers"; nova linha em Key Sources
+- `wiki/entities/peter-steinberger.md` — `source_count` 2 → 3; nova seção "Terceira Fonte: Data Concreta do Tweet (18 de Julho)"; nova linha em Key Sources
+- `wiki/entities/langchain.md` — `source_count` 1 → 2; nova seção "Segunda Fonte, com Trecho de Áudio Impreciso"; nova linha em Key Sources
+- `wiki/entities/open-claw.md` — `source_count` 3 → 4; novo parágrafo de atualização na seção de claim não reconciliado; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte é majoritariamente confirmatória e expansiva: estende a composição de erro já documentada em [[wiki/concepts/loop-engineering]] para os handoffs entre agentes num grafo, e converge (terceira fonte independente) na atribuição do tweet-origem a Peter Steinberger/Open Claw, desta vez com data concreta (18 de julho) — nenhuma claim anterior é contradita. (2) **Autor/canal não identificado** — sem autorreferência por nome na transcrição; os indícios de fechamento (playlist de programação funcional e DDD, colaborador de edição "Marcelo") não batem com nenhuma entidade já registrada (Código Fonte TV, Augusto Galego, Pedro Nauke) — tratado como fonte sem entidade de autoria, sem forçar link. (3) **Contribuição mais nova e mais verificável**: a extensão matemática da composição de erro para saltos entre agentes (85%→44% em 5 handoffs) — mesmo sendo um número hipotético/ilustrativo, é uma lição estrutural nova que faltava na wiki (o erro composto só estava documentado etapa-a-etapa dentro de um agente, não entre agentes). (4) **Paper de GraphRAG citado sem título/link** — não verificável nesta ingestão; a skill `tech-mentor-ai` confirma o padrão geral de tradeoff mas não a frase específica citada na fonte. (5) **Trecho garbled sobre LangChain renomear o termo** ("Lang Shen renomeou 3 anos atrás...") preservado literalmente no raw como incerto — não resolvido, marcado como open question tanto na fonte quanto em [[wiki/entities/langchain]].
+
+---
+
+## [2026-08-19] ingest | XSS Cross-Site Scripting na Prática (Luiz Viana)
+
+**Fonte:** [[wiki/sources/xss-cross-site-scripting-luiz-viana]] — transcrição colada pelo usuário no chat (pt-BR, sem necessidade de tradução), limpa e organizada em seções em `raw/xss-cross-site-scripting-luiz-viana.md`.
+**Skill carregada:** `tech-mentor-security` (path real neste ambiente: `/home/gabriel-martins/Documentos/skills/tech-mentor-security/`). Referência consultada: `references/appsec-attacks-deep.md`, seção "XSS — Tipos e Impacto Real" — confirmou a taxonomia (reflected/stored/DOM), os vetores de bypass de blocklist (`<img onerror>`, `innerHTML` vs. `textContent`) e a defesa correta (output encoding, CSP, HttpOnly).
+
+**Arquivos criados:**
+- `raw/xss-cross-site-scripting-luiz-viana.md` — transcrição limpa e organizada em seções (abertura → definição de XSS → três tipos → demonstração prática no DVWA por tipo e nível de segurança → mitigação → fechamento)
+- `wiki/sources/xss-cross-site-scripting-luiz-viana.md` — TL;DR, 7 key claims com evidência e confiança, entidades/conceitos abordados, open questions, raw quotes
+- `wiki/concepts/dvwa.md` (novo) — stub do laboratório vulnerável usado na demonstração, com a tabela dos quatro níveis de segurança (low/medium/high/impossible)
+- `wiki/concepts/bug-bounty.md` (novo) — stub do conceito de programa de recompensa por falha, ligado ao DVWA como treino prévio
+- `wiki/entities/luiz-viana.md` (novo) — stub do autor do vídeo
+- `wiki/entities/solyd.md` (novo) — stub da plataforma de ensino de pentest citada (nome ouvido como "Solid One" na transcrição original, grafia não confirmada)
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/xss.md` — `source_count` 4 → 5, `status` stub → draft; três novas seções ("Blocklist de Tag é Frágil", "Restrição Client-Side Não é Defesa", "DOM-Based XSS Não Passa Pelo Servidor"); novas linhas em Relação com Outros Conceitos e Key Sources
+- `wiki/concepts/waf.md` — `source_count` 3 → 4; nova seção "Cego a DOM-Based XSS"; nova linha em Key Sources
+- `wiki/concepts/sql-injection.md` — `source_count` 6 → 7; nova linha em Key Sources
+- `wiki/concepts/sast.md` — nova linha em Key Sources
+- `wiki/concepts/sessoes-http-cookies.md` — `source_count` 4 → 5; nova linha em Key Sources
+- `wiki/concepts/confiar-no-frontend.md` — `source_count` 2 → 3; nova seção "Variante: Restrição de Formulário Client-Side (`maxlength`) Não é Filtro"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (dvwa, bug-bounty); nova subseção "Segurança Ofensiva — Pessoas & Plataformas" em Entities (luiz-viana, solyd)
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte é majoritariamente confirmatória e expansiva: reforça com demonstração prática concreta os mecanismos de XSS, output encoding e limites do WAF já descritos em termos gerais em [[wiki/concepts/xss]] e [[wiki/concepts/waf]]. (2) **CSP mencionado mas não demonstrado** — a fonte cita bypass de CSP mal configurado como possível, mas não mostra um exemplo técnico; sinalizado como open question na fonte, candidato a fonte dedicada futura. (3) **Nome da plataforma de treino ("Solyd"/"Solid One") não confirmado** — transcrição ouvida via ASR, grafia mais provável adotada como stub, sinalizada explicitamente na página da entidade. (4) **DVWA e bug bounty não tinham página própria na wiki antes desta ingestão**, apesar de citados implicitamente em fontes anteriores de pentest ([[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]]) — agora existem como conceitos centrais, com espaço para expansão se novas fontes de pentest prático forem ingeridas.
+
+## [2026-08-19] ingest | Arquitetura Limpa: Por Que Ela É Tão Popular
+
+**Fonte:** [[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] — transcrição colada pelo usuário no chat (pt-BR, sem necessidade de tradução), limpa e organizada em seções em `raw/arquitetura-limpa-por-que-e-tao-popular.md`.
+**Skill carregada:** `tech-mentor-backend` (path real neste ambiente: `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/`). Referência consultada: `references/architecture-foundations.md`, seções "Clean Architecture" e "Hexagonal Architecture (Ports & Adapters)" — confirmou a Regra de Dependência, a equivalência terminológica Hexagonal ↔ Clean Architecture, e o critério de "quando vale o investimento" (lógica de negócio complexa vs. CRUD simples).
+
+**Arquivos criados:**
+- `raw/arquitetura-limpa-por-que-e-tao-popular.md` — transcrição limpa e organizada em seções (abertura → nome tendencioso → o que a arquitetura resolve → estrutura de pastas → exemplo prático `create-user` → pontos fortes → pontos negativos → comparação com alternativas → conclusão)
+- `wiki/sources/arquitetura-limpa-por-que-e-tao-popular.md` — TL;DR, 8 key claims com evidência e confiança, entidades/conceitos abordados, open questions
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/clean-architecture.md` — `source_count` 5 → 6; três novas seções ("Dificuldade de Debugar: Implementação Concreta Fica 'Escondida'", "Boilerplate e Risco de Más Abstrações", "Atrito com Frameworks Opinativos") e uma seção de leitura cultural ("Popularidade Não é Só Mérito Técnico"); nova linha em Key Sources
+- `wiki/concepts/hexagonal-architecture.md` — `source_count` 7 → 8; nova seção "'É Basicamente Clean Architecture com Outro Nome'"; nova linha em Key Sources
+- `wiki/concepts/arquitetura-em-3-camadas.md` — `source_count` 1 → 2, `status` stub → draft; nova seção "Variante 'Layered': Mais Simples, Mais Rápida para CRUD"; nova linha em Key Sources
+- `wiki/concepts/dependency-injection.md` — `source_count` 2 → 3; nova seção "Custo Reverso: Implementação Real Fica Difícil de Rastrear"; nova linha em Key Sources
+- `wiki/concepts/over-engineering.md` — `source_count` 12 → 13; nova seção "Clean Architecture: Trade-Off de Tempo de Vida do Projeto, Não Regra Fixa"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte é majoritariamente confirmatória e sintetizadora: reforça, com um exemplo de código próprio, o mecanismo de injeção de dependência e a Regra de Dependência já documentados com mais profundidade em [[wiki/concepts/clean-architecture]] e [[wiki/concepts/hexagonal-architecture]]. A contribuição mais nova é o ângulo explícito de custo (dificuldade de debugar implementação "escondida", atrito com frameworks opinativos) e a leitura cultural da popularidade atribuída à fama de Uncle Bob, marcada como opinião do autor da fonte (confiança baixa), não como claim factual. (2) **Autor/canal não identificado** — sem autorreferência por nome na transcrição (só menção a uma ferramenta de IA patrocinadora, sem relevância técnica, omitida do raw); tratado como fonte sem entidade de autoria, sem forçar link. (3) **Sem página própria para Onion Architecture** — a fonte trata Onion como sinônimo próximo de Clean/Hexagonal sem detalhamento suficiente para justificar uma página dedicada agora; sinalizado como candidato caso uma fonte futura aprofunde especificamente essa variante. (4) **Atrito com frameworks opinativos (Rails/Django/Laravel) citado sem exemplo de código** — registrado como claim de confiança média, candidato a fonte dedicada futura.
+
+## [2026-08-19] ingest | Unit of Work — Padrão de Design
+
+**Fonte:** [[wiki/sources/unit-of-work-padrao-de-design]] — transcrição colada pelo usuário no chat (pt-BR, sem necessidade de tradução), limpa e organizada em seções em `raw/unit-of-work-padrao-de-design.md`.
+**Skill carregada:** `tech-mentor-backend` (path real neste ambiente: `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/`). Consultado `references/design-patterns.md` como referência de calibração; não há seção dedicada a Unit of Work no arquivo — sinalizado como possível lacuna de cobertura da skill, não como problema da fonte.
+
+**Arquivos criados:**
+- `raw/unit-of-work-padrao-de-design.md` — transcrição limpa e organizada em seções (abertura → o que é e por que precisamos → exemplo básico sem dependências → Unit of Work vs. Repository → exemplo real com SQLAlchemy → gerenciador de contexto commit/rollback → demonstração de rollback → outros domínios → encerramento)
+- `wiki/sources/unit-of-work-padrao-de-design.md` — TL;DR, 5 key claims com evidência e confiança, entidades/conceitos abordados, open questions
+- `wiki/concepts/unit-of-work.md` — página nova (`status: draft`): mecanismo, por que agrupar operações, Unit of Work vs. Repository, flush vs. commit, semelhança com Command Pattern, domínios além de banco de dados
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/repository-pattern.md` — `source_count` 4 → 5; nova frase conectando o par Unit of Work + Repository ao exemplo concreto do SQLAlchemy (ORM classes = Repository, Session = Unit of Work); nova linha em Key Sources
+- `wiki/entities/martin-fowler.md` — `source_count` 18 → 19; nova seção "Unit of Work (PoEAA): mecanismo completo demonstrado com SQLAlchemy"; nova linha em Key Sources
+- `wiki/concepts/command-pattern.md` — `source_count` 1 → 2; nova seção "Semelhança com Unit of Work"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção "Padrões e Design")
+
+**Notas / open questions:** (1) **Sem contradições** com o wiki existente — a fonte confirma e aprofunda a referência a Unit of Work que já existia de forma breve em [[wiki/concepts/repository-pattern]] (via [[wiki/sources/arquitetura-limpa-na-pratica]]), agora com mecanismo completo e exemplo de código real (SQLAlchemy). Não havia página dedicada ao conceito antes desta ingestão — criada como `status: draft` por ter apenas uma fonte. (2) **Autor/canal não identificado por nome** — única pista é a menção a "arjancodes.com" e a um workshop de diagnóstico de código, característicos do canal ArjanCodes, mas não confirmado por citação explícita; nenhuma entidade de autoria foi criada para não forçar atribuição não verificada. (3) **Três exemplos de domínios fora de banco de dados (sync de arquivos, jogos, infraestrutura como código) citados apenas como analogia, sem código** — candidatos a fonte dedicada futura se aparecer demonstração prática (ex: Terraform apply/rollback).

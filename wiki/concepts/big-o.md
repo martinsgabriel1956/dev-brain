@@ -3,8 +3,8 @@ type: concept
 title: "Big O"
 aliases: ["complexidade de algoritmos", "Big-O notation", "O(n)", "complexidade assintótica"]
 date_created: 2026-06-26
-date_updated: 2026-08-12
-source_count: 9
+date_updated: 2026-08-18
+source_count: 10
 tags: [cs-fundamentals, algoritmos, big-o, complexidade, performance]
 skill: cs-fundamentals
 status: draft
@@ -34,7 +34,7 @@ Antes de decorar a tabela completa, quatro curvas já cobrem a maioria dos casos
 | O(n) | Linear | Busca sequencial | 10⁶ ops |
 | O(n log n) | Log-linear | Mergesort, Timsort | ~2×10⁷ ops |
 | O(n²) | Quadrático | Bubble sort, nested loops | 10¹² ops |
-| O(2ⁿ) | Exponencial | Subsets de força bruta | impossível |
+| O(2ⁿ) | Exponencial | Subsets de força bruta, Fibonacci recursivo sem memoização | impossível |
 | O(n!) | Fatorial | Problema do Caixeiro Viajante (brute force) | impossível |
 
 ## O caso do O(log n)
@@ -94,6 +94,7 @@ O(1) pode ser mais lento que O(n) para entradas pequenas se a constante for gran
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/9-algoritmos-que-todo-programador-deveria-saber]]
 - [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]] — framing das "quatro curvas essenciais" e introdução informal via "quantos passos a mais quando os dados dobram"
+- [[wiki/sources/recursao-fatorial-fibonacci-javascript]] — trace concreto de uma recursão O(2ⁿ) (Fibonacci sem memoização) vs. uma recursão O(n) (fatorial), sem nomear a complexidade explicitamente — ver [[wiki/concepts/programacao-dinamica]] para a correção
 - [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]] — Big O como ferramenta para saber que perguntas fazer numa entrevista, não só para calcular complexidade
 - [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]] — estimar Big-O da solução ideal antes de implementar, como passo explícito do framework "Os Seis Passos"
 - [[wiki/sources/binary-search-em-5-minutos]] — comparação lado a lado O(n) vs. O(log n) no mesmo array, contando passos concretos

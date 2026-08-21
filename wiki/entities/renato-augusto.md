@@ -3,8 +3,8 @@ type: entity
 title: "Renato Augusto"
 aliases: ["Renato Augusto"]
 date_created: 2026-06-05
-date_updated: 2026-08-11
-source_count: 9
+date_updated: 2026-08-18
+source_count: 11
 tags: [design-patterns, oop, arquitetura, criador-de-conteudo, youtube, carreira, soft-skills, system-design, pos-graduacao]
 skill: tech-mentor-backend
 status: stub
@@ -25,3 +25,5 @@ Desenvolvedor e criador de conteúdo brasileiro. Publica vídeos sobre padrões 
 - [[wiki/sources/full-text-search-mysql-postgresql]] — Full-Text Search em MySQL e PostgreSQL, demonstração prática de `LIKE` vs. índice invertido com DBeaver
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — continuação da playlist de System Design: sharding/fragmentação de bancos de dados, shard key, hash-based vs. range-based, consistent hashing, problema da celebridade, Saga pattern e relação com DDD/microsserviços
 - [[wiki/sources/design-pattern-decorator-renato-augusto]] — Decorator Pattern com pipeline de `ImageProcessor` (básico → marca d'água → resize); ensina composição recursiva, ancora no Open/Closed Principle e contrasta com Chain of Responsibility
+- [[wiki/sources/como-nunca-mais-esquecer-o-que-voce-estuda-programacao]] — por que se esquece o que se estuda (homeostase sináptica), necessidade como gatilho de aprendizado, o conceito de "projeto impossível" e a regra dos 80% de tempo em fundamentos; primeira fonte de conteúdo de carreira/aprendizado (não técnico-específico) deste autor na wiki
+- [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — por que não começar um projeto com microsserviços (complexidade sistêmica, escala de times, falta de conhecimento de domínio), DDD/bounded context como resposta, princípio Monolith First de Fowler, caso Amazon Prime Video; primeira fonte deste autor cruzando DDD + monolito modular + microsserviços de forma integrada

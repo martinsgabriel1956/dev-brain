@@ -3,8 +3,8 @@ type: concept
 title: "Acoplamento"
 aliases: ["coupling", "baixo acoplamento", "alto acoplamento"]
 date_created: 2026-04-25
-date_updated: 2026-08-12
-source_count: 7
+date_updated: 2026-08-18
+source_count: 9
 tags: [acoplamento, software-design, clean-code, arquitetura, under-engineering]
 skill: tech-mentor-backend
 status: stable
@@ -76,11 +76,19 @@ A fonte formaliza isso em **três estágios de acoplamento**, exemplificados via
 
 Esse terceiro padrão generaliza o próprio problema já descrito nesta página em "Alto acoplamento (problema)" e nos "três estágios de acoplamento" — a diferença é que aqui a fronteira é entre módulos/pacotes inteiros, não entre funções dentro do mesmo arquivo, e a fonte propõe capturar a violação automaticamente no CI (ferramenta de análise de estrutura de dependências), não só via revisão humana ou heurística de design.
 
+## Feature Envy: Acoplamento Via Acesso a Dados Internos de Outra Classe
+
+[[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] descreve [[wiki/concepts/feature-envy]] como uma forma de acoplamento "content" (na taxonomia acima) especialmente severa: uma classe (`OrderPrinter`) acessando atributos internos de outra classe (`Order.items`) que por sua vez expõe atributos internos de uma terceira (`Product.price`, `Product.discount`), para fazer um cálculo que não é responsabilidade de nenhuma das duas classes acessadas. A fonte descreve o resultado como "mais acoplado que espaguete" — renomear um único campo interno de `Product` quebra uma classe a duas camadas de distância, sem nenhuma dependência declarada e visível entre elas. É o mesmo padrão do "Alto acoplamento (problema)" descrito acima, mas atravessando fronteiras de classe em vez de ficar dentro de uma única função.
+
 ## Tipos, Categorias e Métricas: Tornando o Acoplamento Mensurável
 
 [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]] complementa toda a discussão qualitativa acima com uma **taxonomia formal e fórmulas**. Distingue seis *tipos* de acoplamento em ordem crescente de força/indesejabilidade — **data** (só informação passa, mais fraco), **stamp** (estruturas inteiras), **control** (parâmetros que ativam comportamentos), **external** (dependência de partes externas), **common** (dependência de estado global) e **content** (uma parte modifica dados/fluxo interno de outra, mais forte) — e duas *categorias* qualitativas: acoplamento **apropriado** (você sabe que existe e deveria existir) vs. **não apropriado** (não sabe que existe, ou sabe e não deveria).
 
 Sobre medição, apresenta as métricas de [[wiki/entities/uncle-bob|Robert C. Martin]]: acoplamento **aferente** (Ca, conexões que entram) e **eferente** (Ce, conexões que saem), abstração `A = ma/(ma+mc)`, instabilidade `I = Ce/(Ca+Ce)` e distância da sequência principal `D = |A + I − 1|`, além das duas regiões-armadilha do gráfico A×I — a **zona de dor** (concreto e rígido demais → frágil) e a **zona de inutilidade** (abstrato demais → ninguém usa). A página [[wiki/concepts/metricas-de-acoplamento]] consolida essas fórmulas e sua interpretação.
+
+## Dependência Escondida: a Forma Mais Difícil de Diagnosticar
+
+[[wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado]] distingue dependência forte *explícita* (chamada direta a outro componente, fácil de rastrear no código) de dependência **escondida**: uma chamada cuja URL/alvo vem de uma configuração externa ao código — banco de dados, arquivo de config, variável de ambiente — ou, em linguagens com reflection (.NET, Java), um *linkage* entre componentes montado em tempo de execução. Esse tipo de acoplamento não aparece como `import` ou chamada estática, então nenhuma leitura do código-fonte revela a dependência — ela só se manifesta quando a configuração muda e algo quebra em produção. Entre sistema novo e sistema legado, essa dependência forte (explícita ou escondida) é o problema central que o [[wiki/concepts/anti-corruption-layer]] existe para resolver.
 
 ## Relações
 
@@ -100,3 +108,5 @@ Sobre medição, apresenta as métricas de [[wiki/entities/uncle-bob|Robert C. M
 - [[wiki/sources/7-habitos-programador-altamente-eficaz]] — analogia médica dos órgãos aplicada ao acoplamento: limites mal definidos entre componentes causam os mesmos sintomas que órgãos ferindo os limites uns dos outros
 - [[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] — heurística "de quem é essa linha?"; três estágios de acoplamento exemplificados via refatoração de um jogo em JavaScript (misturado → Factory com chamada estática → Observer sem conhecimento estático)
 - [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — dependency structure analysis como gate de CI: import circular, camadas invertidas, módulo de implementação acessando outro sem passar por módulo de API
+- [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — feature envy como acoplamento "content" atravessando classes; god object como acoplamento resolvido via composição
+- [[wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado]] — dependência forte entre sistema novo e legado; dependência escondida via configuração dinâmica ou reflection em runtime

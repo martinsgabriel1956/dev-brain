@@ -3,8 +3,8 @@ type: concept
 title: "Byte Pair Encoding"
 aliases: ["BPE", "tokenização BPE", "byte pair encoding"]
 date_created: 2026-06-09
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-08-17
+source_count: 3
 tags: [tokenizacao, bpe, llm, token-economics, nlp]
 skill: tech-mentor-ai
 status: stable
@@ -51,6 +51,10 @@ Isso explica a [[token-tax-multilingual]]: a mesma informação em português re
 
 ---
 
+## Experimento: Vocabulário Menor Observado Empiricamente (GPT-4o vs. Claude Opus 5)
+
+[[wiki/sources/tokens-o-que-sao-e-por-que-custam-caro]] compara a mesma frase tokenizada por dois modelos: em português, o GPT-4o (vocabulário público, ~200k tokens) gastou 22 tokens contra 42 do Claude Opus 5 (vocabulário privado, não divulgado pela Anthropic) — quase o dobro. Em inglês, a mesma frase caiu para 15 tokens (GPT-4o) e 35 (Claude Opus). O autor infere que o tokenizer da Anthropic tem vocabulário menor, mas essa é uma suposição não confirmada por fonte primária — a Anthropic não publica o tamanho do vocabulário do tokenizer do Opus. O padrão qualitativo (inglês sempre mais barato que português, no mesmo modelo) confirma a Token Tax em ambos os providers.
+
 ## Visualização
 
 O Hugging Face oferece um playground de tokenização interativo que permite visualizar como qualquer texto é dividido em tokens por diferentes modelos. Útil para comparar a eficiência de tokenização entre idiomas.
@@ -76,3 +80,4 @@ O Hugging Face oferece um playground de tokenização interativo que permite vis
 
 - [[wiki/sources/custo-tokens-portugues-vs-ingles]]
 - [[wiki/sources/tokens-llm-fundamentos-typescript]]
+- [[wiki/sources/tokens-o-que-sao-e-por-que-custam-caro]] — comparação empírica GPT-4o vs. Claude Opus 5 e palavra inventada vs. real

@@ -3,8 +3,8 @@ type: concept
 title: "Escalabilidade Horizontal"
 aliases: ["horizontal scaling", "scale out", "escalar horizontalmente"]
 date_created: 2026-06-26
-date_updated: 2026-08-10
-source_count: 13
+date_updated: 2026-08-17
+source_count: 15
 tags: [escalabilidade, arquitetura, sistemas-distribuidos, nosql, redis, backend]
 skill: tech-mentor-backend
 status: stable
@@ -73,3 +73,5 @@ Escalar horizontalmente um serviço de conexões longas (WebSocket) tem uma rest
 - [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — como os dados vivem no banco (não no servidor), a aplicação vira um cluster de servidores atrás de um load balancer; também a etapa final de replicar o cluster inteiro por data center (multi-região) com roteamento por geolocalização
 - [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] — visualização passo a passo de por que um servidor único satura sob carga e como adicionar réplicas atrás de um load balancer elimina drops, antes de detalhar os algoritmos de distribuição
 - [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]] — argumento "monolito basta": rodar o monolito em 3-4 máquinas com load balancer e réplica de banco atende ~1M de usuários (exemplo Pieter Levels), sem precisar de microsserviços
+- [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — paralelizar consumidores (cluster) e a própria fila como resposta a um produtor mais rápido que o consumidor, no contexto de [[wiki/concepts/back-pressure]]
+- [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — implementação concreta na AWS: [[wiki/concepts/auto-scaling|Auto Scaling Group]] (min/desejado/máximo) atrás de um [[wiki/concepts/load-balancer|Application Load Balancer]], escalando por métrica de CPU

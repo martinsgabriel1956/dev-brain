@@ -3,8 +3,8 @@ type: concept
 title: "Buffer"
 aliases: ["buffer", "buffering", "área de buffer", "buffer de fluxo"]
 date_created: 2026-08-11
-date_updated: 2026-08-11
-source_count: 1
+date_updated: 2026-08-14
+source_count: 2
 tags: [buffer, backend, system-design, mensageria, streaming, io, desacoplamento, backpressure]
 skill: tech-mentor-backend
 status: draft
@@ -60,3 +60,4 @@ O [[wiki/concepts/buffer-pool]] do banco de dados, apesar do nome, funciona conc
 ## Key Sources
 
 - [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] — buffer como absorvedor de diferença de velocidade, de I/O de hardware a filas de mensagem e streaming
+- [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — o buffer (fila) tem limite físico; se o descasamento de velocidade entre produtor e consumidor é sustentado, ele cresce indefinidamente até crashar o sistema — motivando controles ativos como [[wiki/concepts/admission-control]]

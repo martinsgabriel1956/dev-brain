@@ -3,8 +3,8 @@ type: concept
 title: "AWS Step Functions"
 aliases: ["Step Functions"]
 date_created: 2026-08-04
-date_updated: 2026-08-04
-source_count: 1
+date_updated: 2026-08-17
+source_count: 2
 tags: ["aws", "step-functions", "orquestracao", "maquina-de-estados", "serverless", "infra"]
 skill: tech-mentor-infra
 status: stub
@@ -33,3 +33,4 @@ Serviço para coordenar workflows complexos na AWS através de um modelo mental 
 ## Key Sources
 
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]
+- [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — mencionado brevemente na visão panorâmica: orquestra várias [[wiki/concepts/aws-lambda|Lambdas]] em sequência com retry e tratamento de erros, sem aprofundar

@@ -3,8 +3,8 @@ type: concept
 title: "Recursão"
 aliases: ["recursion", "função recursiva", "chamada recursiva"]
 date_created: 2026-06-26
-date_updated: 2026-08-04
-source_count: 3
+date_updated: 2026-08-18
+source_count: 4
 tags: [cs-fundamentals, algoritmos, recursao, pilha-de-execucao, dividir-e-conquistar]
 skill: cs-fundamentals
 status: draft
@@ -59,6 +59,27 @@ retorna 5×24 = 120
 - **Memoização**: salvar resultados já calculados transforma exponencial em linear ([[big-o]])
 - **Custo de recriação de estrutura a cada chamada**: uma recursão "óbvia" para percorrer um array (ex: binary search) que fatia/recria um novo sub-array a cada nível é mais cara do que precisa ser — [[wiki/sources/binary-search-em-5-minutos]] usa isso como motivação explícita para preferir [[wiki/concepts/two-pointer|two pointer]] iterativo, que navega os mesmos índices sem nunca copiar o array original
 
+## Trace passo a passo: fatorial e Fibonacci em JavaScript
+
+Dois exemplos canônicos de recursão simples, úteis para visualizar o desenrolar da call stack:
+
+```javascript
+function fatorial(n) {
+  if (n === 0 || n === 1) return 1;   // caso base
+  return n * fatorial(n - 1);         // chamada recursiva
+}
+
+function fibonacci(p) {
+  if (p === 1) return 0;              // caso base 1
+  if (p === 2) return 1;              // caso base 2
+  return fibonacci(p - 1) + fibonacci(p - 2); // chamada recursiva
+}
+```
+
+A Fibonacci recursiva precisa de **dois** casos base (não um) porque cada chamada depende dos **dois** termos anteriores — com um caso base só, `fibonacci(p - 2)` estouraria para índices inválidos antes de a recursão conseguir parar.
+
+**Cuidado com a categoria "recursão é mais lenta":** essa afirmação (comum em introduções ao tema) mistura duas coisas com custo bem diferente. O `fatorial` recursivo acima é O(n) — uma chamada por nível, sem repetição de trabalho. Já o `fibonacci` recursivo ingênuo é O(2ⁿ) — a árvore de chamadas recomputa os mesmos subproblemas repetidamente (`fibonacci(3)` é chamado de novo dentro de `fibonacci(5)` e de `fibonacci(4)`). A correção para esse segundo caso não é "trocar recursão por iteração", é [[wiki/concepts/programacao-dinamica|memoização]] — ver [[wiki/sources/recursao-fatorial-fibonacci-javascript]].
+
 ## Recursão vs. iteração com ponteiros
 
 Nem todo problema "naturalmente recursivo" precisa de recursão de fato — binary search é recursivo na estrutura do raciocínio ("resolva no sub-array menor"), mas a implementação mais barata dispensa a chamada recursiva e a cópia de array, substituindo por dois índices que se movem sobre a mesma estrutura ([[wiki/concepts/two-pointer]]).
@@ -84,3 +105,4 @@ Nem todo problema "naturalmente recursivo" precisa de recursão de fato — bina
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/9-algoritmos-que-todo-programador-deveria-saber]]
 - [[wiki/sources/binary-search-em-5-minutos]] — motivação explícita para trocar recursão com recriação de array por two pointer iterativo
+- [[wiki/sources/recursao-fatorial-fibonacci-javascript]] — trace passo a passo de fatorial e Fibonacci recursivos em JavaScript, caso base vs. chamada recursiva

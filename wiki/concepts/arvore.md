@@ -3,8 +3,8 @@ type: concept
 title: "Árvore (Tree)"
 aliases: ["tree", "árvore binária", "binary tree", "BST", "B-tree"]
 date_created: 2026-06-01
-date_updated: 2026-07-29
-source_count: 6
+date_updated: 2026-08-18
+source_count: 7
 tags: [cs-fundamentals, estruturas-de-dados, arvore, tree, hierarquia, big-o]
 skill: cs-fundamentals
 status: draft
@@ -44,6 +44,7 @@ O sistema de arquivos do computador. Uma pasta-raiz contém subpastas, que cont�
 - **Sistema de arquivos**: hierarquia de diretórios
 - **Parsers de código**: compiladores e linters constroem uma AST para analisar e transformar o código
 - **DNS hierarchy**: raiz → TLD (`.com`) → domínio → subdomínio
+- **Árvore de Huffman**: [[wiki/concepts/compactacao-de-texto]] (algoritmo Huffman coding, usado pelo deflate/gzip) constrói uma binary tree a partir de uma [[wiki/concepts/priority-queue]] ordenada por frequência de caractere — nós folha = caracteres, nós internos = soma de frequências; a profundidade de uma folha vira o comprimento do código binário daquele caractere (braço direito = `1`, esquerdo = `0`). Diferente da BST, essa árvore não é ordenada para busca — é ordenada para minimizar o custo médio de codificação
 
 Entender árvores te ajuda a entender por que `SELECT` em coluna sem índice varre a tabela inteira (O(n)) e `SELECT` em coluna com índice é instantâneo (O(log n)).
 
@@ -64,6 +65,7 @@ Entender árvores te ajuda a entender por que `SELECT` em coluna sem índice var
 - [[array]] — alternativa para dados planos com acesso sequencial
 - [[event-sourcing]] — árvores de Merkle são usadas para verificar integridade de logs de eventos
 - [[wiki/concepts/algoritmos-de-grafo]] — árvore é um caso particular de grafo (acíclico e conectado); DFS/BFS percorrem ambos da mesma forma
+- [[wiki/concepts/priority-queue]] — estrutura auxiliar usada para construir a árvore de Huffman (heap ordenado por frequência, não é ele mesmo a árvore final)
 
 ## Key sources
 
@@ -73,3 +75,4 @@ Entender árvores te ajuda a entender por que `SELECT` em coluna sem índice var
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] — B-tree como uma das duas coisas que uma base de dados "deve fazer" (armazenamento), junto com WAL/páginas
 - [[wiki/sources/indice-de-banco-de-dados]] — demonstração visual passo a passo: inserção sequencial de IDs reordenando a B-tree, e busca do ID 7 resolvida em 3 comparações via percurso binário (>4? >6?) em vez de 7 comparações lineares
+- [[wiki/sources/gzip-deflate-huffman-lz77]] — construção passo a passo da árvore de Huffman via priority queue, dentro do algoritmo deflate usado pelo gzip

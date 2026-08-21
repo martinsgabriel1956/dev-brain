@@ -3,8 +3,8 @@ type: concept
 title: "Aprendizado Passivo"
 aliases: ["passive learning", "copia sem entender", "ilusão de aprendizado"]
 date_created: 2026-05-31
-date_updated: 2026-08-10
-source_count: 7
+date_updated: 2026-08-17
+source_count: 8
 tags: [aprendizado-passivo, aprendizado, iniciante, dependencia-ia, autonomia-tecnica]
 skill: tech-mentor-leadership
 status: stable
@@ -91,9 +91,14 @@ Quem tem baixa crença de eficácia tende ao aprendizado passivo porque não acr
 
 [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] descreve o mesmo padrão sem mencionar IA em nenhum momento: a abundância atual de cursos, livros e vídeos tornou mais fácil consumir informação, mas isso não converte em habilidade sem prática — "é com a prática que essa informação começa a virar habilidade". A fonte reforça que o gargalo não é a IA, é a ausência de prática num contexto real (ver [[wiki/concepts/pratica-deliberada]] e [[wiki/concepts/automacao-pessoal-para-aprender]]); a IA apenas acelera um padrão que já existia.
 
+## Origem Estrutural: O Modelo Escolar de Decorar Para a Prova
+
+[[wiki/sources/como-nunca-mais-esquecer-o-que-voce-estuda-programacao]] localiza a raiz do padrão de aprendizado passivo na própria formação escolar: o sistema de ensino foi construído em torno de memorização temporária (decorar para acertar a prova, esquecer depois), um objetivo incompatível com o que programação exige — construir entendimento, não decorar informação. Programadores que continuam estudando tecnologia do mesmo jeito que estudavam na escola (consumir curso, decorar conceitos, sentir que "aprendeu", partir para a próxima tecnologia) entram no mesmo ciclo de esquecimento em semanas, mesmo sem estar consumindo tutorial nem IA. Complementa [[wiki/sources/akita-oferta-procura-matematica-carreira]] (que atribui o padrão ao formato "tutorial") com uma origem anterior e mais ampla: o próprio hábito de estudo herdado da escola.
+
 ## Key Sources
 
 - [[wiki/sources/ia-e-aprendizado-programacao-iniciantes]]
+- [[wiki/sources/como-nunca-mais-esquecer-o-que-voce-estuda-programacao]] — origem do padrão no modelo escolar de memorização para prova, independente de tutorial ou IA
 - [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] — "entupir de teoria" sem praticar como padrão anterior e independente da IA
 - [[wiki/sources/profissional-do-futuro-ia-identidade-aprendizado]]
 - [[wiki/sources/papinho-tech-solo-aprender-a-aprender]] — ângulo EAD: vídeo de alta qualidade técnica (câmera, áudio, didática) cria ilusão de aprendizado; metodologia de aula expositiva sozinha não produz aprendizado

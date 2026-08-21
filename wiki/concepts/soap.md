@@ -3,8 +3,8 @@ type: concept
 title: "SOAP"
 aliases: ["Simple Object Access Protocol", "web services SOAP", "WSDL"]
 date_created: 2026-08-04
-date_updated: 2026-08-04
-source_count: 1
+date_updated: 2026-08-18
+source_count: 2
 tags: [soap, wsdl, integracao, legado, xml, interoperabilidade, seguranca]
 skill: tech-mentor-backend
 status: stub
@@ -13,6 +13,10 @@ status: stub
 # SOAP
 
 Protocolo de troca de mensagens estruturadas em [[wiki/concepts/xml-extensible-markup-language|XML]] para comunicação entre sistemas distribuídos, criado em 1998 com forte participação da [[wiki/entities/microsoft]] e padronizado depois pelo [[wiki/entities/w3c]] (Simple Object Access Protocol). Resolvia um problema concreto do fim dos anos 1990: empresas precisavam conectar aplicações escritas em Java, C++ e .NET sem depender de soluções proprietárias de cada fornecedor — o mesmo problema que soluções same-platform como Java RMI e CORBA não resolviam entre plataformas diferentes.
+
+## Antecessores: CORBA e RMI
+
+Antes do SOAP, a comunicação remota entre sistemas nos anos 90 já existia via [[wiki/concepts/corba-rmi|CORBA e RMI]] — mas eram soluções "same-platform" (RMI só entre JVMs) ou complexas demais para interoperar de fato entre Java, C++ e .NET. Segundo [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]], CORBA e RMI abriram caminho para a integração em rede, mas foi o SOAP, já nos anos 2000, que resolveu a interoperabilidade heterogênea de forma padronizada o suficiente para bancos e seguradoras confiarem.
 
 ## Por que setores regulados adotaram em massa
 
@@ -29,3 +33,4 @@ SOAP não desapareceu — migrou para segundo plano em setores onde contratos r�
 ## Key Sources
 
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]]
+- [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — SOAP e REST como as duas apostas concorrentes de "API pela web" que emergem na mesma década (2000s); CORBA/RMI como antecessores diretos

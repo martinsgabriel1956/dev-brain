@@ -3,8 +3,8 @@ type: concept
 title: "Fila (Queue)"
 aliases: ["queue", "FIFO", "fila de dados"]
 date_created: 2026-06-01
-date_updated: 2026-08-11
-source_count: 4
+date_updated: 2026-08-14
+source_count: 5
 tags: [cs-fundamentals, estruturas-de-dados, fila, queue, fifo]
 skill: cs-fundamentals
 status: draft
@@ -60,3 +60,4 @@ Esta página trata da **estrutura de dados** fila. Sistemas de mensageria como K
 - [[wiki/sources/pub-sub-message-queue-bullmq-na-pratica]]
 - [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]] — "pegar o próximo job" como exemplo canônico de operação onde a ordem de chegada é o critério de escolha da estrutura
 - [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] — a fila como mecanismo de [[wiki/concepts/buffer]] que absorve picos e desacopla produtor de consumidor
+- [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — por que a fila precisa ser **bounded** (limitada): sem limite, itens envelhecem e o uso de memória pode crescer até crashar o sistema

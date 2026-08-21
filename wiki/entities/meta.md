@@ -3,8 +3,8 @@ type: entity
 title: "Meta"
 aliases: ["Facebook", "Meta Platforms"]
 date_created: 2026-07-16
-date_updated: 2026-07-31
-source_count: 5
+date_updated: 2026-08-18
+source_count: 6
 tags: [empresa, demissao, ai-washing, era-agentica, graphql, api-design, ci-cd, deploy]
 skill: tech-mentor-ai
 status: stub
@@ -35,3 +35,4 @@ Antes de ser conhecida por IA, a Meta (então Facebook) já era referência em [
 - [[wiki/sources/rapid-release-at-massive-scale-facebook]] — transição para deploy contínuo em escala (2017)
 - [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — caso citado de segunda mão como ilustração didática de deploy vs. release
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — citada (sem detalhamento numérico) como uma das big techs estourando orçamento de engenharia de IA em 2026
+- [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — criadora do [[wiki/concepts/graphql]], situado na linha do tempo dos anos 2010; também citada (então Facebook) como uma das pioneiras de API pública nos anos 2000

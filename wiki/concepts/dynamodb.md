@@ -3,8 +3,8 @@ type: concept
 title: "Amazon DynamoDB"
 aliases: ["DynamoDB", "Dynamo"]
 date_created: 2026-08-04
-date_updated: 2026-08-04
-source_count: 1
+date_updated: 2026-08-18
+source_count: 3
 tags: ["aws", "dynamodb", "nosql", "banco-de-dados", "infra", "cloud"]
 skill: tech-mentor-infra
 status: stub
@@ -32,6 +32,16 @@ Banco de dados NoSQL gerenciado da AWS, modelo mental de key-value store (como u
 - [[wiki/concepts/consistent-hashing]] — mecanismo relacionado à distribuição de partições em bancos NoSQL de larga escala
 - [[wiki/concepts/db-sharding]]
 
+## Modos de Capacidade e Casos Ideais
+
+Exemplo canônico de partition key + sort key: partition key = customer ID, sort key = order date → busca todos os pedidos de um cliente ordenados por data. Dois modos de capacidade: **Provisioned** (quando o padrão de tráfego é conhecido, mais barato) e **On-Demand** (quando não é, mais caro por request mas sem necessidade de planejamento). Casos ideais: sessões, leaderboards, IoT, carrinhos de compra, metadata — **não** ideal para analytics complexos ou dados fortemente relacionais, reforçando o contraste já registrado com [[wiki/concepts/rds]]. Ver [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]].
+
+## Desenvolvimento Local com LocalStack
+
+Antes de ir para produção, é possível desenvolver contra uma emulação local do DynamoDB via [[wiki/concepts/localstack]] — evita custo de nuvem e dependência de rede durante o desenvolvimento. [[wiki/entities/lucas-badico]] usa esse caminho no core do seu sistema de mentoria em Go, reservando DynamoDB para casos de uso já pensados nativamente para AWS (ex.: agendar notificação uma hora antes de uma mentoria), enquanto o banco relacional principal é PostgreSQL/PostGIS. Ver [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]].
+
 ## Key Sources
 
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]
+- [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — exemplo de partition/sort key, modos Provisioned vs. On-Demand, e casos ideais vs. não ideais
+- [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]] — uso via LocalStack para desenvolvimento local, em conjunto com PostgreSQL como banco principal

@@ -3,8 +3,8 @@ type: concept
 title: "Tokenização"
 aliases: ["token", "tokens", "encode/decode llm", "vocabulário de tokens"]
 date_created: 2026-07-03
-date_updated: 2026-07-27
-source_count: 2
+date_updated: 2026-08-17
+source_count: 3
 tags: [tokenizacao, llm-fundamentals, tokens, vocabulario, bpe]
 skill: tech-mentor-ai
 status: stable
@@ -44,6 +44,10 @@ Um tokenizer puramente por caractere (vocabulário = só caracteres únicos) sem
 
 Cada LLM treina (ou herda) seu próprio tokenizer sobre seu próprio corpus. O mesmo prompt (`"Hello World"`) gera contagens diferentes em provedores diferentes — não é um bug, é consequência direta de vocabulários distintos. Ver [[byte-pair-encoding]] para o algoritmo mais usado para treinar esses vocabulários (GPT, Claude, Gemini).
 
+## Por que Não Tokenizar Letra-por-Letra nem Palavra-por-Palavra
+
+Os dois extremos de granularidade têm problemas opostos: tokenização por caractere explode o custo computacional (mais tokens por frase, e o modelo precisa "descobrir" a cada cálculo que letras adjacentes formam uma única palavra, desperdiçando raciocínio); tokenização por palavra completa explode o vocabulário necessário, porque seria preciso mapear não só toda palavra de toda língua, mas todas as suas flexões (ex.: "corre", "corria", "corríamos" viram entradas separadas). Subword tokens (via [[byte-pair-encoding]]) resolvem os dois problemas ao quebrar palavras em pedaços reaproveitáveis entre flexões — o prefixo "corr" é comum a todas as variações de "corre", só o sufixo muda. Ver [[wiki/sources/tokens-o-que-sao-e-por-que-custam-caro]].
+
 ## Palavras Raras Custam Mais Tokens
 
 Palavras incomuns no corpus de treino (nomes inventados, jargão raro) são fragmentadas em mais tokens do que palavras frequentes, porque o vocabulário não tem um chunk único que as represente. O mesmo efeito penaliza idiomas pouco representados no corpus — ver [[token-tax-multilingual]] — e linguagens de programação menos populares.
@@ -62,3 +66,4 @@ Palavras incomuns no corpus de treino (nomes inventados, jargão raro) são frag
 
 - [[wiki/sources/tokens-llm-fundamentos-typescript]]
 - [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] — caso real de falha em checagem sintática trivial por processamento via tokens em vez de leitura linha a linha
+- [[wiki/sources/tokens-o-que-sao-e-por-que-custam-caro]] — por que subword tokens vencem letra-por-letra e palavra-por-palavra; experimento comparando GPT-4o vs. Claude Opus 5

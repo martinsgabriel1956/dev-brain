@@ -3,7 +3,7 @@ type: source
 title: "Federated Identity"
 aliases: ["federated identity", "saml", "sso", "scim", "identity federation", "home realm discovery", "ciam"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
+date_updated: 2026-08-18
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/federated-identity.md
 source_url: ""
 date_published: ""
@@ -34,14 +34,10 @@ Federated Identity: autenticação delegada a um IdP externo. SAML 2.0 para inte
 
 ## Entities & Concepts Touched
 
-- [[concepts/federated-identity]]
-- [[concepts/saml]]
-- [[concepts/oidc]]
-- [[concepts/sso]]
-- [[concepts/scim]]
-- [[concepts/home-realm-discovery]]
-- [[entities/okta]]
-- [[entities/azure-ad]]
+- [[wiki/concepts/federated-identity]]
+- [[wiki/concepts/saml]]
+- [[wiki/concepts/openid-connect]]
+- [[wiki/concepts/sso-single-sign-on]]
 
 ## Open Questions
 

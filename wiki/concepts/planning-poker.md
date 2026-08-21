@@ -3,8 +3,8 @@ type: concept
 title: "Planning Poker"
 aliases: ["Poker de Planejamento", "Scrum Poker"]
 date_created: 2026-07-28
-date_updated: 2026-07-28
-source_count: 1
+date_updated: 2026-08-18
+source_count: 2
 tags: [agile, scrum, estimativa, engineering-management]
 skill: tech-mentor-leadership
 status: stable
@@ -32,10 +32,15 @@ status: stable
 
 O valor final atribuído a uma história é quase um efeito colateral do processo. O que o Planning Poker realmente produz é a conversa: alguém que estimou baixo pode não ter visto uma dependência externa; alguém que estimou alto pode ter contexto de uma dívida técnica que os outros desconhecem. Quando essa conversa não acontece — por exemplo, porque o PO já chegou com o número decidido — a cerimônia perde a função e o valor atribuído volta a ser arbitrário. Ver [[wiki/concepts/story-points#o-erro-de-forçar-um-número-alvo|o erro de forçar um número-alvo]].
 
+## Quem Deveria Estar na Sala
+
+[[wiki/sources/por-que-estimativas-de-software-falham-como-melhorar]] reforça um critério prático de participação: quanto mais pessoas envolvidas na estimativa — especialmente quem tem a expertise específica de uma parte do sistema — maior a chance de alguém já ter enfrentado um obstáculo concreto daquela tarefa antes. Quem vai efetivamente executar uma tarefa deveria participar da estimativa dela, não apenas o tech lead estimando "de fora" com base em quem ele imagina que vai executar.
+
 ## Conceitos Relacionados
 
-[[wiki/concepts/story-points]] · [[wiki/concepts/scrum-master]] · [[wiki/concepts/user-stories]]
+[[wiki/concepts/story-points]] · [[wiki/concepts/scrum-master]] · [[wiki/concepts/user-stories]] · [[wiki/concepts/reducao-de-incerteza-antes-de-estimar]]
 
 ## Key Sources
 
 - [[wiki/sources/story-points-po-forcando-30-40-pontos-por-sprint]]
+- [[wiki/sources/por-que-estimativas-de-software-falham-como-melhorar]] — reforça a participação de quem tem expertise específica na estimativa de cada tarefa

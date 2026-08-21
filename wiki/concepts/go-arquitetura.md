@@ -3,8 +3,8 @@ type: concept
 title: "Go — Arquitetura e Patterns"
 aliases: ["go clean architecture", "go repository pattern", "go DI", "go functional options"]
 date_created: 2026-04-24
-date_updated: 2026-04-24
-source_count: 1
+date_updated: 2026-08-18
+source_count: 2
 tags: [go, arquitetura, clean-architecture, repository, dependency-injection, functional-options]
 skill: lang-systems
 status: stable
@@ -100,13 +100,34 @@ func processUser(user *User) error {
 }
 ```
 
+## Wiring Multi-Módulo (Monolito Modular)
+
+Variação do wiring explícito acima quando o projeto não é um único serviço "feature-based", mas um [[wiki/concepts/monolito-modular]] com vários módulos independentes (`modules/appointment`, `modules/payment`, ...). Cada módulo expõe uma função `Register(router)` que traduz seu próprio conjunto de rotas — o `main.go` de cada entry point só instancia dependências (DB, HTTP server) e injeta o handler de cada módulo que aquele entry point deve servir:
+
+```go
+func main() {
+    db := postgres.Connect(cfg.DatabaseURL)
+    db.Migrate()
+
+    httpServer := server.NewHTTPServer()
+    appointmentHandler := appointment.NewHTTPHandler(db)
+    appointmentHandler.Register(httpServer.Router())
+
+    httpServer.Start()
+}
+```
+
+Extrair um módulo para um serviço próprio, nesse desenho, é remover a linha de injeção (`appointmentHandler.Register(...)`) do entry point atual e criar um `main.go` novo, exclusivo, só para esse módulo — sem tocar na lógica de negócio interna. Caso real documentado por [[wiki/entities/lucas-badico]] em [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]], onde cada módulo também expõe handler HTTP e [[wiki/concepts/grpc|gRPC]] em paralelo — HTTP para clientes externos, gRPC para comunicação interna entre módulos.
+
 ## Ver também
 
 - [[clean-architecture]] — princípios gerais
 - [[hexagonal-architecture]] — ports & adapters
 - [[go-ecossistema]] — Chi, sqlc, golangci-lint
 - [[go-producao]] — graceful shutdown, health checks
+- [[wiki/concepts/monolito-modular]] — quando "feature" vira "módulo" com fronteira de extração explícita
 
 ## Key Sources
 
 - [[wiki/sources/go-arquitetura]]
+- [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]] — wiring multi-módulo com entry points HTTP e gRPC separados, injeção de handler por módulo

@@ -3,8 +3,8 @@ type: entity
 title: "Hostinger"
 aliases: ["Hostinger VPS"]
 date_created: 2026-07-21
-date_updated: 2026-08-12
-source_count: 6
+date_updated: 2026-08-19
+source_count: 7
 tags: [tech-mentor-infra, vps, hosting, patrocinio, coolify]
 skill: tech-mentor-ai
 status: stub
@@ -26,6 +26,8 @@ Também citada (quarto bloco patrocinado, cronologicamente anterior ao incidente
 
 Também citada (quinto bloco patrocinado) em [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]], por [[wiki/entities/lucas-montano]]: plano **KVM2** (2 vCPU, 8 GB RAM, SSD, backups semanais grátis, firewall gerenciado), com o mesmo diferencial de "implantação com um clique" já citado nas fontes anteriores — aqui aplicado a [[wiki/entities/claude-code]], Codex CLI, N8N e Docker — além de instalar só o SO (Debian, Ubuntu, Alma/Arch Linux) e testar Odysseus/Hermes com um clique. Cupom "Lucas Montano". Conteúdo patrocinado, não avaliação técnica independente.
 
+Também citada (sexto bloco patrocinado) em [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]]: reforça o padrão de deploy de um clique já documentado (Claude Code 24x7, Codex, n8n, Docker) e acrescenta produtos ainda não citados na wiki para a Hostinger — **Horizons** (criação de MVP com IA, com banco de dados, usado pelo canal num hackathon) e um **serviço de GPU em lista de espera** (treino/inferência de modelos). Cita também "openla" (nome provavelmente mal transcrito) e **Hermes Agent** como agentes disponíveis, e o **Dokploy** (não confundir com o Coolify já citado em fontes anteriores — são PaaS self-hosted distintos, ambos com deploy de um clique na Hostinger) como ferramenta usada pelo próprio canal para gerenciar containers.
+
 ## Key Sources
 
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]]
@@ -33,3 +35,4 @@ Também citada (quinto bloco patrocinado) em [[wiki/sources/code-review-morreu-u
 - [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]]
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — deploy de um clique de AI Gateway self-hosted (proxy multi-provider de LLM)
 - [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — VPS mínima (1 vCPU/4GB/50GB) sustentando 230 mil+ requisições nos primeiros 15 dias do Find My SaaS
+- [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — Horizons (MVP com IA), serviço de GPU em lista de espera, Hermes Agent, Dokploy

@@ -3,8 +3,8 @@ type: concept
 title: "Agente de IA"
 aliases: ["agente", "AI agent", "agentes de ia"]
 date_created: 2026-05-18
-date_updated: 2026-08-11
-source_count: 5
+date_updated: 2026-08-14
+source_count: 6
 tags: [agentes-ia, llm, llmops, automacao]
 skill: tech-mentor-ai
 status: draft
@@ -58,6 +58,17 @@ Reflete que ainda não existe vocabulário maduro para descrever as relações d
 
 **4 componentes essenciais**: trigger (evento externo aciona o agente — não é a LLM decidindo sozinha quando agir), whitelist de ferramentas ([[wiki/concepts/principio-do-menor-privilegio|menor privilégio]] aplicado a tool calling — nunca inclui operações destrutivas), loop de observação, e [[wiki/concepts/human-in-the-loop|escape hatch]] (pausa e chama humano quando a confiança auto-reportada do modelo cai abaixo de um limiar).
 
+## Quatro Arquiteturas de Orquestração
+
+Antes de sair implementando, [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] separa quatro formas de coordenar agentes numa equipe multiagente:
+
+- **Paralela** — agentes independentes rodando ao mesmo tempo, resultados convergidos depois.
+- **Sequencial** — saída de um agente vira entrada do próximo.
+- **Customizada** — um workflow é forçado explicitamente (o desenvolvedor decide a ordem/condições, não o modelo).
+- **Autônoma** — o próprio agente decide como e quando chamar outros agentes, com pouco controle externo sobre a sequência.
+
+Não pensar nessa arquitetura antes de implementar é apontado como causa recorrente de retrabalho em projetos multiagênticos. Ver também [[wiki/concepts/design-patterns-ia]] e o protocolo [[wiki/concepts/agent-to-agent-protocol|A2A]] para comunicação entre agentes de frameworks distintos.
+
 ## Key Sources
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
@@ -65,3 +76,4 @@ Reflete que ainda não existe vocabulário maduro para descrever as relações d
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
 - [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] — blueprint de 5 peças + 4 componentes para agentes orientados a evento em produção
 - [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — modo agente do ChatGPT (com full access ao computador) fazendo setup, instalação de engine, escrevendo o próprio script de execução e testando o jogo sozinho; atritos triviais (falta de Git, login manual na Epic Games) ainda exigem humano
+- [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — quatro arquiteturas de orquestração multiagente (paralela, sequencial, customizada, autônoma) e a tese de que o dev vai atuar cada vez mais como arquiteto para pilotar IA

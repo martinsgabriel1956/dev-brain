@@ -3,8 +3,8 @@ type: concept
 title: "AI Gateway / LLM Router (Proxy Multi-Provider)"
 aliases: ["ai gateway", "llm gateway", "proxy multi-provider", "litellm", "portkey"]
 date_created: 2026-08-05
-date_updated: 2026-08-05
-source_count: 1
+date_updated: 2026-08-14
+source_count: 2
 tags: [tech-mentor-ai, ai-gateway, llm-router, proxy-pattern, fallback, multi-provider]
 skill: tech-mentor-ai
 status: stub
@@ -40,6 +40,26 @@ A fonte distingue implicitamente dois comportamentos de fallback:
 - [[wiki/concepts/rate-limiting]] — a rotação de contas é, na prática, uma forma de contornar rate limiting por conta individual.
 - [[wiki/concepts/vendor-lock-in-cloud]] — o autor da fonte descreve o gateway como forma de "quebrar o lockin" de uma ferramenta que só aceita, nativamente, modelos de um único vendor.
 
+## Controle de Custos: o Triângulo Performance × Custo × Qualidade
+
+Escalar uma aplicação com IA exige balancear um trade-off entre três eixos — não existe uma meta única a maximizar:
+
+- **Performance** — menor latência de resposta
+- **Custo** — menor gasto por chamada/token
+- **Qualidade** — resultado satisfatório para o caso de uso
+
+O modelo mais barato nem sempre serve para toda parte de um sistema. Uma pipeline pode usar **dois ou três modelos diferentes** em chamadas separadas dentro de um único processo, e isso acaba sendo mais rápido e mais barato do que depender de um único modelo mais lento e caro para tudo — cada modelo é otimizado para um ponto diferente do triângulo.
+
+## Alavancas Concretas de Custo
+
+- Distinguir **input tokens** vs. **output tokens** e limites por modelo
+- [[wiki/concepts/cache]] de tokens/contexto como redutor direto de custo
+- Estimativas de custo por usuário, por chamada, por fluxo multiagente completo
+- Logging e monitoramento contínuo de gasto
+- Truncamento inteligente de prompt e sumarização para economizar tokens
+- Testes A/B de custo × qualidade antes de trocar de modelo em produção
+
 ## Key Sources
 
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]]
+- [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — triângulo performance/custo/qualidade, uso de múltiplos modelos por pipeline, e alavancas concretas de controle de custo (tokens, cache, truncamento, sumarização, teste A/B)

@@ -3,8 +3,8 @@ type: concept
 title: "Hexagonal Architecture (Ports & Adapters)"
 aliases: ["arquitetura hexagonal", "ports and adapters", "ports adapters", "hexagonal"]
 date_created: 2026-05-04
-date_updated: 2026-08-10
-source_count: 7
+date_updated: 2026-08-19
+source_count: 8
 tags: [arquitetura, hexagonal, ports-adapters, acoplamento, testabilidade]
 skill: tech-mentor-backend
 status: stable
@@ -96,6 +96,10 @@ São o mesmo princípio com terminologia diferente:
 
 O vocabulário de [[wiki/concepts/clean-architecture]] chama essas interfaces de "Input Boundary" e "Output Boundary" — mesmo mecanismo de inversão de dependência via polimorfismo, descrito em [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] como "protocolo" entre Controller/Use Case e entre Use Case/Presenter.
 
+## "É Basicamente Clean Architecture com Outro Nome"
+
+[[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] traz uma leitura simplificada e direta, coerente com a tabela de equivalência acima: na opinião do autor, Hexagonal e Clean Architecture são "muito parecidas", e a única diferença citada é de nomenclatura — Hexagonal fala em "domain" onde Clean Architecture fala em "entidades e use cases" — sem diferença prática relevante de implementação.
+
 ## In-Memory Adapters — Superpoder de Testabilidade
 
 ```typescript
@@ -133,3 +137,4 @@ it("should throw when email already exists", async () => {
 - [[wiki/sources/clean-architecture-arquitetura-centrada-no-dominio]] — mesmo mecanismo (camada interna define interface, camada externa implementa) explicado via contraste com a arquitetura em 3 camadas
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — motivação original de Cockburn (regras de negócio "vazando" para UI e banco); caso real da Netflix trocando fonte de dados via troca de adapter em uma linha
 - [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]] — Ports & Adapters como a forma de comunicação entre módulos de um [[wiki/concepts/monolito-modular]]; e como "interface já exposta" reduz a extração de um módulo para microsserviço a trocar o transporte (função → gRPC)
+- [[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] — leitura direta de que Hexagonal e Clean Architecture diferem só na nomenclatura (domain vs. entidades/use cases)

@@ -3,8 +3,8 @@ type: concept
 title: "Auto Scaling"
 aliases: ["autoscaling", "escalamento automático", "horizontal pod autoscaler", "HPA"]
 date_created: 2026-06-26
-date_updated: 2026-06-26
-source_count: 1
+date_updated: 2026-08-17
+source_count: 3
 tags: [system-design, escalabilidade, cloud, infra, automatizacao, performance]
 skill: tech-mentor-system-design
 status: draft
@@ -73,6 +73,12 @@ Auto scaling só funciona bem se novas instâncias podem atender qualquer requis
 - [[load-balancer]] — precisa detectar e registrar novas instâncias automaticamente
 - [[gargalo]] — identificar o gargalo antes de configurar auto scaling evita escalar a camada errada
 
+## AWS Auto Scaling Group (ASG) — Min/Desejado/Máximo
+
+Na AWS, o ASG define três números: mínimo, desejado e máximo de instâncias [[wiki/concepts/ec2|EC2]]. Gatilho típico: CPU acima de ~70% escala para cima, abaixo escala para baixo. Sempre acoplado a um [[wiki/concepts/load-balancer|Application Load Balancer (ALB)]] na frente — o ALB distribui tráfego e faz health checks; instâncias que falham são removidas do pool automaticamente. Arquitetura clássica: ALB na frente, ASG atrás — tráfego sobe, ASG escala, ALB distribui; tráfego cai, ASG reduz. Ver [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]].
+
 ## Key sources
 
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
+- [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — ASG com min/desejado/máximo sempre acoplado ao ALB, incluindo health checks e remoção automática de instâncias falhas
+- [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — auto scaling baseado no tamanho da fila como resposta a [[wiki/concepts/back-pressure]]; citado como viável mas mais difícil de configurar do que as alternativas mais baratas (poda de stale jobs, batching, admission control)

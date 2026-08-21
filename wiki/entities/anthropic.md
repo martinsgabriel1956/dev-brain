@@ -3,9 +3,9 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-08-13
-source_count: 23
-tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack]
+date_updated: 2026-08-19
+source_count: 25
+tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack, memory-layers]
 skill: tech-mentor-ai
 status: stable
 ---
@@ -94,6 +94,10 @@ Segundo [[wiki/sources/harness-explicado-function-calling-hag-evals]], numa épo
 
 Guia oficial publicado pela Anthropic definindo quatro níveis de autonomia para loops agênticos — turn-based, goal-based, time-based e proactive — cada um entregando progressivamente mais responsabilidade de decisão ao agente (ver [[wiki/concepts/loop-engineering]] para a lista completa). Publicado cerca de um ano depois do [[wiki/concepts/ralph-loop|Ralph Loop]] de [[wiki/entities/geoffrey-huntley]] (julho de 2025) ter demonstrado, de forma deliberadamente simples, que o próprio conceito de "loop até terminar" era viável — segundo [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]], a Anthropic institucionalizou um ano depois algo que começou como uma técnica quase de piada.
 
+## Distinção de Memória em Três Partes (Atribuição Incerta)
+
+[[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] atribui à Anthropic (transcrição foneticamente incerta, "OPA" no áudio original) uma distinção entre contexto de trabalho, memória para execuções futuras e artefatos revisados como fonte confiável — ver [[wiki/concepts/agent-memory-tres-camadas]] para o detalhamento e a nota de verificação. A mesma fonte descreve uma novidade específica do Claude Code — mensagens cruzadas entre subagentes via um recurso de "list agents" — ver [[wiki/concepts/subagentes]].
+
 ## Key Sources
 
 - [[wiki/sources/html-vs-markdown-para-agentes-de-ia]]
@@ -120,3 +124,5 @@ Guia oficial publicado pela Anthropic definindo quatro níveis de autonomia para
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — servidor da Anthropic como destino do conteúdo lido por `cat` pela harness do Claude Code (a harness lê o arquivo localmente e envia como parte do prompt)
 - [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — ancoragem de preço no lançamento do Opus 5 (Fable como âncora, Opus como "novo Sonnet")
 - [[wiki/sources/harness-explicado-function-calling-hag-evals]] — relato histórico de que o function calling nativo chegou depois da OpenAI; workaround via tags XML usado antes disso
+- [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — distinção de memória em três partes (atribuição incerta); mensagens cruzadas entre subagentes via "list agents"; linha do tempo Claude lançado em 2023, "devagarzinho"
+- [[wiki/sources/tokens-o-que-sao-e-por-que-custam-caro]] — tokenizer do Claude Opus 5 (privado, não divulgado) gastou quase o dobro de tokens que o GPT-4o na mesma frase em português; preços citados de Opus/Sonnet/Haiku (output ~5x mais caro que input)

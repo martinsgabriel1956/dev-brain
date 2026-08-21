@@ -3,8 +3,8 @@ type: entity
 title: "Open Claw"
 aliases: ["OpenClaw", "open claw"]
 date_created: 2026-07-21
-date_updated: 2026-08-05
-source_count: 3
+date_updated: 2026-08-19
+source_count: 4
 tags: [tech-mentor-ai, open-claw, agent-memory, messaging-gateway, open-source, harness, graph-engineering]
 skill: tech-mentor-ai
 status: stub
@@ -22,8 +22,11 @@ Citado como caso que validou a categoria: a fonte especula que a aquisição do 
 
 **Atualização:** [[wiki/sources/graph-engineering-do-loop-ao-grafo]], fonte independente e não relacionada às duas anteriores, também se refere a "Peter, criador do Open Claw" — desta vez como autor de um tweet sobre migrar de loop para grafo. Duas fontes distintas convergindo na mesma atribuição de autoria aumenta a probabilidade da leitura "Peter Steinberger = criador do Open Claw", mas nenhuma delas cita uma fonte primária (perfil oficial, README, anúncio) que confirme isso diretamente — mantido como não verificado, apenas com confiança reforçada. Ver detalhe em [[wiki/entities/peter-steinberger]].
 
+**Segunda atualização:** [[wiki/sources/graph-engineering-matematica-do-erro-composto]], terceira fonte independente, também se refere a "criador do Open Claw" ao citar o tweet-origem de graph engineering, desta vez com data concreta (18 de julho). Três fontes distintas convergindo na mesma atribuição, ainda sem confirmação por fonte primária — mesmo tratamento de "não verificado, confiança reforçada" já registrado acima.
+
 ## Key Sources
 
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]]
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — claim não reconciliado de autoria (Peter Steinberger)
 - [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — segunda atribuição independente de "Peter" como criador do Open Claw
+- [[wiki/sources/graph-engineering-matematica-do-erro-composto]] — terceira atribuição independente, com data concreta do tweet (18 de julho)

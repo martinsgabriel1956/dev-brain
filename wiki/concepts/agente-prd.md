@@ -3,8 +3,8 @@ type: concept
 title: "Agente de PRD"
 aliases: ["agente prd", "prd agent", "gerador de prd", "agente de requisitos"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 1
+date_updated: 2026-08-18
+source_count: 2
 tags: [agente, prd, spec-driven, planejamento, human-in-the-loop]
 skill: tech-mentor-ai
 status: stub
@@ -47,6 +47,11 @@ O PRD gerado é um documento **para a IA**, não para a empresa. Seu propósito 
 
 O [[wiki/concepts/human-in-the-loop|human-in-the-loop]] é obrigatório ao final da geração do PRD. A aprovação humana garante que o contexto capturado está correto antes de investir tempo na Tech Spec.
 
+## Skill Análoga um Nível Abaixo: Geração de Spec por Feature
+
+[[wiki/sources/spec-writer-skill-criterios-de-boa-spec]] descreve uma skill do mesmo formato interativo aplicada uma etapa depois: em vez de gerar o PRD, a skill "Spec Writer" pega uma feature *já definida* no PRD e conduz uma entrevista para gerar a tech spec dessa feature especificamente — mesmo padrão de "validar inputs → entrevistar → sumarizar → gerar documento" do agente de PRD, mas aplicado à granularidade de spec, com uma etapa extra de validação contra os [[wiki/concepts/criterios-de-uma-boa-spec|7 critérios de qualidade de spec]] antes do output.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-04-agentes-planejamento]]
+- [[wiki/sources/spec-writer-skill-criterios-de-boa-spec]] — skill análoga um nível abaixo (spec por feature, não PRD), mesmo padrão de entrevista iterativa

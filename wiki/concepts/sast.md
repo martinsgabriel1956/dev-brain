@@ -72,3 +72,4 @@ SAST no CI transforma segurança em gate de qualidade — nenhum código com vul
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — SAST + WAF como camadas complementares; SonarQube como exemplo de ferramenta
 - [[wiki/sources/devsecops-origem-cultura-manifesto]] — SAST como parte do mapeamento de ferramentas por fase do ciclo DevSecOps (build/código), dentro da abordagem [[wiki/concepts/shift-left-testing]]
 - [[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] — SAST no delta, a cada rodada de refinamento com IA, como mitigação para degradação de segurança iterativa
+- [[wiki/sources/xss-cross-site-scripting-luiz-viana]] — demonstra na prática, via bypass de blocklist no DVWA, exatamente a classe de padrão vulnerável (tag/atributo de evento não sanitizado) que SAST tenta detectar estaticamente

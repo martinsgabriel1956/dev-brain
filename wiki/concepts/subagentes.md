@@ -3,9 +3,9 @@ type: concept
 title: "Subagentes"
 aliases: ["subagents", "sub-agentes", "Task tool", ".claude/agents"]
 date_created: 2026-07-03
-date_updated: 2026-08-05
-source_count: 4
-tags: [subagentes, claude-code, multi-agent, paralelismo, context-engineering, harness]
+date_updated: 2026-08-19
+source_count: 6
+tags: [subagentes, claude-code, multi-agent, paralelismo, context-engineering, harness, list-agents, mensagens-cruzadas]
 skill: tech-mentor-ai
 status: draft
 ---
@@ -57,9 +57,21 @@ Em vez de o usuário disparar cada subagente manualmente, um [[wiki/concepts/pla
 
 Um caso concreto de disparo automático (não nomeado pelo usuário): ao executar um breakdown de tasks gerado por [[wiki/concepts/spec-driven-development|Spec-Driven Development]], o agente principal identifica quais tasks não têm dependência entre si e despacha um subagente por grupo paralelizável. Exemplo de campo: projeto de ~40 tasks executado com 4 subagentes rodando em paralelo, cada um cobrindo um subconjunto de tasks. Ver [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]].
 
+## Mensagens Cruzadas Entre Subagentes ("list agents")
+
+Novidade documentada em [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]]: no [[wiki/entities/claude-code]], um subagente já não fica limitado a devolver resultado só ao agente pai — ele pode "promptar" diretamente outro agente disponível no mesmo contexto. O mecanismo descrito é um recurso de **listagem de agentes** que enumera todos os agentes endereçáveis naquele contexto; um subagente identifica qual é o mais adequado para resolver uma subtarefa, dispara mensagem para ele, e a execução pode continuar em paralelo (retomando depois) ou de forma sequencial.
+
+Isso desloca o modelo de comunicação de "só o agente pai orquestra" para uma malha onde qualquer agente pode endereçar qualquer outro — mais próximo de comunicação peer-to-peer do que da hierarquia estrita "pai despacha, filho retorna resultado" descrita no restante desta página. A fonte não detalha o mecanismo de roteamento (como um agente decide qual outro é "o melhor" para a subtarefa) nem limites de profundidade de encadeamento (um agente B disparado por A pode disparar C?) — candidato a expansão se uma fonte técnica (changelog oficial, documentação) detalhar o comportamento exato.
+
+## Padrão Organizador → Researchers → Builders → Reviewers
+
+[[wiki/sources/graph-engineering-matematica-do-erro-composto]] descreve uma organização típica de subagentes num grafo: um **organizador** decompõe a tarefa, **researchers** rodam a pesquisa em paralelo, **builders** implementam, **reviewers** verificam o que foi feito — as arestas do grafo decidem quem espera por quem. Mesma ideia estrutural já registrada em [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] (4 subagentes em paralelo a partir do breakdown de tasks), com nomes de papel mais explícitos.
+
 ## Key Sources
 
+- [[wiki/sources/graph-engineering-matematica-do-erro-composto]] — organização típica organizador/researchers/builders/reviewers, arestas decidindo dependência entre subagentes
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
+- [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — mensagens cruzadas entre subagentes via "list agents": um subagente pode disparar outro diretamente, sem depender do agente pai como intermediário
 - [[wiki/sources/loop-engineering-planner-critic-grafo]] — subagentes como executores num loop Planner-Executor-Critic, com prompt e rúbrica gerados dinamicamente
 - [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — 4 subagentes em paralelo despachados a partir do breakdown de tasks de uma spec
 - [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — gestão de projeto (épico → história → tarefa → subtarefa com dependências cruzadas) como exemplo de como decidir quantos subagentes podem rodar em paralelo sem se bloquear, mesmo antes de qualquer agente de IA entrar no processo

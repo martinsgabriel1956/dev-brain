@@ -3,8 +3,8 @@ type: entity
 title: "Abacus.AI"
 aliases: ["Abacus", "Abacus AI"]
 date_created: 2026-07-31
-date_updated: 2026-08-13
-source_count: 5
+date_updated: 2026-08-17
+source_count: 6
 tags: [abacus, model-routing, ai-gateway, ferramenta, cli, agent-farm]
 skill: tech-mentor-ai
 status: stub
@@ -31,9 +31,16 @@ Segundo [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] (també
 
 **Confiança:** ambas as claims vêm de bloco de patrocínio explícito, sem avaliação técnica independente — tratar como demonstração comercial do produto, não como benchmark.
 
+## DeepAgent vs. ChatGPT: Demo de Geração de MVP
+
+Segundo [[wiki/sources/cqrs-e-event-sourcing-explicado-na-pratica]] (também bloco patrocinado), a ferramenta **DeepAgent** da Abacus.AI foi usada num timelapse comparativo contra o agente do ChatGPT (GPT Plus), a partir do mesmo prompt simples ("web app inspirado no Notion, permite criar documentos"). Em três iterações de prompt (~15 minutos), o DeepAgent produziu um MVP funcional e deployável, com autenticação, rotas e componentes de UI organizados em uma codebase completa. O ChatGPT, no mesmo cenário, produziu um único arquivo Python (~600 linhas) sem `requirements`, que não rodou de primeira e, mesmo após correção solicitada, permaneceu sem estrutura, autenticação ou organização em módulos. Preço citado do DeepAgent: ~US$10/mês, com limites de uso.
+
+**Confiança:** bloco de patrocínio explícito — comparação unilateral (não há evidência de que o prompt ao ChatGPT tenha sido otimizado da mesma forma), tratar como demonstração comercial, não benchmark independente.
+
 ## Key Sources
 
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]]
+- [[wiki/sources/cqrs-e-event-sourcing-explicado-na-pratica]] — patrocínio: demo comparativa DeepAgent vs. agente do ChatGPT gerando o mesmo MVP a partir do mesmo prompt
 - [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] — Multi-Engine Agent Farm (ZP Agent), CLI própria, chat multi-modelo
 - [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — patrocínio: Custom Router roteando entre Fable/GPT 5.6 Sol/Gemini 3.5/Química por dificuldade/velocidade, plugável no Claude Code/OpenCode
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — patrocínio: agregador de múltiplas IAs (GPT 5.5, Claude Opus 4.8, Fable 5) em subscription única "ZI" por $10/mês, com IDE, Agent Sessions e hospedagem

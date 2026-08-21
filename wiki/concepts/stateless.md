@@ -3,8 +3,8 @@ type: concept
 title: "Stateless"
 aliases: ["servidor stateless", "sem estado", "stateless server", "stateless architecture"]
 date_created: 2026-06-26
-date_updated: 2026-08-10
-source_count: 3
+date_updated: 2026-08-14
+source_count: 4
 tags: [system-design, stateless, escalabilidade, load-balancer, sessao]
 skill: tech-mentor-system-design
 status: draft
@@ -50,15 +50,21 @@ Cache local          → Redis / Memcached compartilhado
 
 Fazer a aplicação stateless desde o início é muito mais fácil do que migrar depois — o estado local tende a proliferar.
 
+## Access Token Stateless vs. Refresh Token Stateful
+
+O mesmo trade-off aparece na dupla access token / refresh token: manter o access token stateless evita validação central a cada requisição (essencial em alto volume — 1000 req/s significaria 1000 validações no banco por segundo se fosse stateful), enquanto o refresh token compensa isso sendo stateful (verificável e revogável no authorization server), pois é usado com frequência muito menor. Ver [[wiki/concepts/refresh-token-rotation]].
+
 ## Relação com outros conceitos
 
 - [[escalabilidade-horizontal]] — stateless é o pré-requisito arquitetural
 - [[load-balancer]] — distribui livremente quando os servidores são stateless
 - [[sticky-session]] — solução paliativa que adia o problema de estado; antônimo da solução correta
 - [[redis]] — destino natural para sessões e dados temporários
+- [[wiki/concepts/jwt]] — access token stateless vs. refresh token stateful como aplicação do mesmo trade-off em autenticação
 
 ## Key sources
 
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
 - [[wiki/sources/10-conceitos-fundamentais-backend]] — mesmo argumento com exemplo de sessão e job em andamento: "uma sessão que existia na máquina A não vai existir na máquina B"
 - [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — se o login fica num servidor e o próximo request cai em outro, o usuário aparece deslogado; sessões e preferências vão para um NoSQL externo, que não pode viver dentro de nenhum servidor web
+- [[wiki/sources/refresh-token-pattern-access-token-de-curta-duracao]] — access token stateless vs. refresh token stateful como o mesmo trade-off aplicado à autenticação
