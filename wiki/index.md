@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-08-13
+date_updated: 2026-08-14
 ---
 
 
@@ -20,6 +20,7 @@ date_updated: 2026-08-13
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/codigo-espaguete-wikipedia]] | Verbete da Wikípédia (traduzido para pt-BR em `raw/`) sobre **[[wiki/concepts/code-espaguete\|código espaguete]]** = [[wiki/concepts/fluxo-de-controle\|fluxo de controle]] convoluto. Traça a história do termo (etimologia física de [[wiki/entities/richard-hamming\|Hamming]]: a bagunça nasce de saltos `goto` empilhados na memória — daí a luta de [[wiki/entities/edsger-dijkstra\|Dijkstra]]), cataloga a família de anti-padrões por analogia de massas ([[wiki/concepts/lasagna-code\|lasagna]], [[wiki/concepts/ravioli-code\|ravioli]]) e formaliza a **[[wiki/concepts/big-ball-of-mud\|Big Ball of Mud]]** ([[wiki/entities/brian-foote\|Foote]] & [[wiki/entities/joseph-yoder\|Yoder]], 1997): sistema sem arquitetura perceptível, estado *default* sob pressão de negócio, turnover e [[wiki/concepts/entropia-de-software\|entropia]] |
 | [[wiki/sources/tipos-de-armazenamento-de-dados]] | Panorama pt-BR (autor não identificado) dos principais **meios de armazenamento** — HD, SSD (SATA/NVMe), nuvem, NAS, óptico (CD/DVD/Blu-ray), pen drive, cartão de memória, disquete e **fita magnética (LTO)**. Tese: não existe "melhor" absoluto — cada mídia otimiza um eixo (velocidade, custo/GB, durabilidade, portabilidade, isolamento de rede). Por isso empresas bilionárias e a IBM ainda usam **fita** para backup de longo prazo: barata, durável (30+ anos), acesso sequencial e **offline** (segura contra invasão). É o mesmo princípio de [[wiki/concepts/storage-tiering|Hot/Warm/Cold]] no hardware: SSD=hot, HDD=warm, fita=cold (≈ S3 Glacier) |
 | [[wiki/sources/encapsulamento-proteger-estado-invalido]] | Vídeo pt-BR (autor não identificado) respondendo "encapsular protege de quê?": o objetivo real do **encapsulamento** não é esconder atributos, é **impedir que o objeto entre num estado inválido**. Demo em Java com `Product` — primeiro `public` (aceita nome vazio, preço `-500`, estoque `-20`), depois `private` com métodos de comando (`changePrice`, `decreaseStock`) que validam as invariantes e lançam exceção. Tese: `private` é a **ferramenta**, a regra de negócio dentro do objeto é o **fim**; encapsulamento ≠ acesso (getter/setter); uma classe de setters puros é [[wiki/concepts/modelo-de-dominio-anemico|anêmica]] |
 | [[wiki/sources/como-ficar-bom-em-leetcode]] | Método iterativo para ficar bom em **LeetCode** (vídeo pt-BR, foco em Python): escolher uma linguagem de baixo boilerplate → estudar e **implementar** uma estrutura de dados → aprender os padrões dela (DFS/BFS em árvore, two pointer, hash map, sliding window, backtracking, DP) → resolver vários problemas do mesmo padrão até **reconhecê-lo** no enunciado → próxima estrutura. Tese = [[wiki/concepts/reconhecimento-de-padroes|reconhecimento de padrões]] ("memorize o padrão, não o problema"). Corolário: com ~5-10 min sem enxergar o início da solução, não trave — leia a solução e reescreva linha a linha. Big O é pré-requisito não negociável. É o lado prático/mecânico da mesma tese que Anthony Mays defende pelo lado da entrevista |
@@ -1293,6 +1294,9 @@ date_updated: 2026-08-13
 | [[wiki/concepts/template-method-pattern]] | Esqueleto de algoritmo com etapas variáveis — variação via composição (não herança) usada num WebController de API REST |
 | [[wiki/concepts/arquitetura-em-3-camadas]] | Presentation → Business → Data Access com dependência direta e transitiva; contraponto usado para explicar por que Clean Architecture é "domain-centric" |
 | [[wiki/concepts/anti-pattern]] | Repetição que parece solução mas cria problemas — frequência não implica qualidade |
+| [[wiki/concepts/big-ball-of-mud]] | Sistema sem arquitetura perceptível — escala macro do código espaguete; estado *default* sob pressão de negócio, turnover e entropia (Foote & Yoder, 1997) |
+| [[wiki/concepts/lasagna-code]] | Camadas tão entrelaçadas que mudar uma obriga a mudar as outras — estratificação aparente, acoplamento real |
+| [[wiki/concepts/ravioli-code]] | Classes boas isoladamente, design ruim no todo — o excesso de fragmentação, oposto do espaguete; termo ambivalente (elogioso vs. pejorativo) |
 | [[wiki/concepts/over-engineering]] | "Verde neném" — aplicar patterns sem base; pular etapas da progressão produz complexidade sem valor; under-engineering é o problema mais comum |
 | [[wiki/concepts/under-engineering]] | Fazer menos do que o projeto exige — acoplamento, hardcode, sem CI, copy-paste sem estrutura; mais comum que over-engineering, e o antídoto não exige nenhuma técnica sofisticada |
 | [[wiki/concepts/otimizacao-prematura]] | Raiz de todo mal (Knuth) — otimizar antes de ter projeto bom torna o código rígido e difícil |
@@ -1316,6 +1320,10 @@ date_updated: 2026-08-13
 | Página | Hook |
 |---|---|
 | [[wiki/entities/ibm]] | International Business Machines — citada como usuária de referência de **fita magnética (LTO)** para backup de longo prazo: a mídia "ultrapassada" que vence em custo/GB, durabilidade e isolamento de rede |
+| [[wiki/entities/richard-hamming]] | Matemático (Turing Award 1968) — descreveu a etimologia *física* do código espaguete: saltos `goto` empilhados na memória para corrigir bugs |
+| [[wiki/entities/brian-foote]] | Coautor do paper *Big Ball of Mud* (PLoP '97) que popularizou o anti-padrão arquitetural |
+| [[wiki/entities/joseph-yoder]] | Coautor, com Foote, do paper *Big Ball of Mud* (1997) |
+| [[wiki/entities/brian-marick]] | Signatário do Manifesto Ágil — creditado por cunhar o termo *Big Ball of Mud* |
 | [[wiki/entities/evan-bottcher]] | Líder técnico da Thoughtworks — cunhou a definição de referência de plataforma digital ("compelling internal product") e o termo *backlog coupling* (2018) |
 | [[wiki/entities/netflix]] | Referência em engenharia de plataforma — modelo *paved road* (estrada pavimentada): ferramental central opcional, mas quem sai paga o custo da alternativa |
 | [[wiki/entities/phil-calcado]] | Engenheiro (microsserviços/DevOps) citado por Bottcher: "perdemos a batalha do 'DevOps não é cargo/time/ferramentas'" |

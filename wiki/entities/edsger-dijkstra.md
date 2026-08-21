@@ -3,9 +3,9 @@ type: entity
 title: "Edsger Dijkstra"
 aliases: ["Dijkstra", "EWD"]
 date_created: 2026-06-01
-date_updated: 2026-06-01
-source_count: 1
-tags: [cs-fundamentals, linguagem, programacao, matematica]
+date_updated: 2026-08-14
+source_count: 2
+tags: [cs-fundamentals, linguagem, programacao, matematica, fluxo-de-controle]
 skill: cs-fundamentals
 status: stub
 ---
@@ -26,6 +26,11 @@ Exemplo direto: `let x = 0` é mais curto, mais preciso e menos ambíguo do que 
 
 O argumento de Dijkstra prediz exatamente o comportamento observado em LLMs: uma LLM replicará as ambiguidades presentes na descrição em linguagem natural. Se o texto não especifica mutabilidade, validação ou paralelismo, o código gerado também não especificará.
 
+## Go To Statement Considered Harmful (1968)
+
+O manifesto mais citado contra o [[wiki/concepts/code-espaguete|código espaguete]]. Dijkstra argumentou que o uso irrestrito de `goto` produzia programas cujo [[wiki/concepts/fluxo-de-controle|fluxo de controle]] era impossível de rastrear — exatamente a "lata de espaguete" que [[wiki/entities/richard-hamming|Hamming]] descrevia. A carta ajudou a fundar a programação estruturada e a substituir saltos arbitrários por `if`/`while`/`for`. Ver [[wiki/sources/codigo-espaguete-wikipedia]].
+
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — argumento sobre notação matemática vs. linguagem natural
+- [[wiki/sources/codigo-espaguete-wikipedia]] — "Go To Statement Considered Harmful" como origem da luta contra o código espaguete

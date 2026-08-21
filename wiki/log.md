@@ -6837,3 +6837,28 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha em Sources; nova subseção "Armazenamento de Dados (Mídias & Hardware)" com 8 conceitos; nova entity IBM em Entities
 
 **Notas / open questions:** (1) **Unidade de velocidade**: o áudio mistura MB/s (HD/SSD/USB 2.0) com Gb/s (USB 3.x). Padrão da indústria = USB especificado em gigabits; registrado na fonte, não corrigido no raw (invariante: nunca editar `raw/`). (2) **"NAS é nuvem"**: simplificação — NAS é rede local; só vira nuvem privada com acesso remoto. Registrado como impreciso, não errado. (3) **Skill**: tópico é hardware/CS-fundamentals, mas escolhido `tech-mentor-data` porque a única ponte profissional acionável é storage tiering (data-architecture.md); `cs-fundamentals` nas tags como secundário. (4) **Autoria**: canal não identificado no áudio; sem entity de autor criada.
+
+## [2026-08-14] ingest | Código Espaguete (Wikipédia) — incl. Big Ball of Mud
+
+**Fonte:** [[wiki/sources/codigo-espaguete-wikipedia]] (verbete da Wikípédia "Spaghetti code" traduzido para pt-BR em `raw/`; CC BY-SA; autoria colaborativa)
+**Skill carregada:** `tech-mentor-backend` (SKILL.md + índice de referência; tópico = arquitetura/anti-padrões de código). Domínios secundários `cs-fundamentals` (etimologia goto/Hamming/Dijkstra) registrados nas tags.
+
+**Arquivos criados:**
+- `raw/codigo-espaguete-wikipedia.md` — tradução pt-BR do verbete (lead, História, Big Ball of Mud, lasagna/ravioli, Prevenção, Ver também)
+- `wiki/sources/codigo-espaguete-wikipedia.md` — TL;DR, 8 key claims, entidades/conceitos, 2 open questions, citações preservadas
+- `wiki/concepts/big-ball-of-mud.md` — conceito: sistema sem arquitetura perceptível; três forças (negócio/turnover/entropia); tensão com arquitetura de sacrifício
+- `wiki/concepts/lasagna-code.md` — stub: camadas entrelaçadas, acoplamento sob aparência de estratificação
+- `wiki/concepts/ravioli-code.md` — stub: fragmentação excessiva; ambivalência do termo (elogioso vs. pejorativo)
+- `wiki/entities/richard-hamming.md` — stub: etimologia física do termo (saltos na memória)
+- `wiki/entities/brian-foote.md` — stub: coautor do paper Big Ball of Mud
+- `wiki/entities/joseph-yoder.md` — stub: coautor do paper Big Ball of Mud
+- `wiki/entities/brian-marick.md` — stub: creditado por cunhar "Big Ball of Mud"
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/code-espaguete.md` — `source_count` 1→2, status stub→draft; novas seções "Origem histórica e etimologia" (Hamming/Dijkstra) e "Família de anti-padrões e a escala macro"
+- `wiki/concepts/anti-pattern.md` — `source_count` 1→2; nova seção "Exemplos catalogados no wiki" (espaguete/lasagna/ravioli/BBoM/god-object)
+- `wiki/concepts/entropia-de-software.md` — `source_count` 2→3; nova seção "Entropia como causa da Big Ball of Mud"
+- `wiki/entities/edsger-dijkstra.md` — `source_count` 1→2; nova seção "Go To Statement Considered Harmful (1968)"
+- `wiki/index.md` — nova linha em Sources; 3 conceitos novos em "Padrões e Design"; 4 entities novas em Entities
+
+**Notas / open questions:** (1) **Ravioli code é ambivalente** no próprio verbete — elogioso (código complexo bem escrito) na abertura, pejorativo (fragmentação excessiva) na seção de anti-padrões. Registrado como ambivalência, não erro. (2) **BBoM vs. arquitetura de sacrifício**: o verbete trata BBoM como puramente indesejável; Fowler defende código descartável deliberado. Fronteira "lama por negligência" vs. "lama por escolha" fica em aberto. (3) **Skill**: escolhido `tech-mentor-backend` (arquitetura); `anti-pattern.md` mantém seu `skill: tech-mentor-leadership` original (não reescrito). (4) **WebFetch** resumia o verbete; detalhes de História/Big Ball of Mud extraídos em duas passadas com prompts direcionados.
