@@ -37,7 +37,7 @@ date_ingested: "2026-04-29"
 
 **Claim:** Naming é de fato a parte mais difícil do desenvolvimento — nomes ruins compõem dívida cognitiva indefinidamente.
 **Evidência:** Função `doStuff` — 2h para descobrir que processa payment webhooks. Nomes como `data`, `info`, `manager` criam ambiguidade crescente.
-**Confiança:** Alta — citação clássica de Phil Karlton: "There are only two hard things in Computer Science: cache invalidation and naming things."
+**Confiança:** Alta — citação clássica de Phil Karlton: "There are only two hard things in Computer Science: cache invalidation and naming things." (atribuição incerta mesmo na curadoria de Fowler; ver [[wiki/sources/two-hard-things-martin-fowler]]).
 
 **Claim:** Ambiente local é uma mentira — produção tem carga, dados, latência e sistema operacional que o laptop nunca terá.
 **Evidência:** Deploy funcionou localmente, quebrou em prod: 1 usuário vs. milhares; 10 linhas de teste vs. milhões de rows; localhost vs. latência real; OS local vs. OS diferente.

@@ -3,8 +3,8 @@ type: concept
 title: "Test Doubles"
 aliases: ["dublê de teste", "mock stub fake spy", "xunit test patterns"]
 date_created: 2026-04-22
-date_updated: 2026-08-12
-source_count: 7
+date_updated: 2026-08-21
+source_count: 9
 tags: [testes, test-doubles, mock, stub, fake, spy, dummy]
 skill: tech-mentor-testing
 status: stable
@@ -23,7 +23,7 @@ A fonte primária ([[wiki/sources/test-double-xunitpatterns-meszaros]]) sustenta
 - **Entrada indireta** (*indirect input*) — valor que o SUT **recebe** de um DOC → precisa de **ponto de controle** → Stub/Mock.
 - **Saída indireta** (*indirect output*) — chamada/efeito que o SUT **dispara** sobre um DOC → precisa de **ponto de observação** → Spy/Mock.
 
-Esse eixo **controle × observação** é o que organiza os cinco tipos. Meszaros ainda separa duas perguntas ortogonais: **por que** usar o double (define Dummy/Stub/Spy/Mock/Fake) vs. **como** construí-lo (Hard-Coded vs. Configurable Test Double — a técnica de construção não muda o papel). Detalhe importante: o **double só precisa expor a mesma API** que aquele teste exercita — não a interface inteira do DOC ("fiel o suficiente para a cena", na analogia do dublê de cinema).
+Esse eixo **controle × observação** é o que organiza os cinco tipos — formalizado com sua própria fonte primária em [[wiki/concepts/indirect-input-output]] (verbete "indirect input" isolado, ver [[wiki/sources/indirect-input-xunitpatterns]]). Meszaros ainda separa duas perguntas ortogonais: **por que** usar o double (define Dummy/Stub/Spy/Mock/Fake) vs. **como** construí-lo (Hard-Coded vs. Configurable Test Double — a técnica de construção não muda o papel). Detalhe importante: o **double só precisa expor a mesma API** que aquele teste exercita — não a interface inteira do DOC ("fiel o suficiente para a cena", na analogia do dublê de cinema).
 
 ## Os cinco tipos
 
@@ -71,12 +71,13 @@ O termo guarda-chuva "Test Double" (analogia a dublê de cinema) foi divulgado p
 
 ## Ver também
 
+- [[wiki/concepts/indirect-input-output]] — eixo entrada/saída indireta que organiza os cinco tipos
 - [[tdd]] — contexto onde test doubles são usados
 - [[piramide-de-testes]] — doubles são a ferramenta dos testes unitários
 - [[race-condition]] — MSW ajuda a testar race conditions de rede
 - [[teste-de-integracao-estreito-vs-amplo]] — uso de doubles fora do unitário, em testes de integração estreitos
 - [[unit-test-solitario-vs-sociavel]] — doubles definem se um unit test é solitário ou sociável
-- [[wiki/concepts/self-initializing-fake]] — Fake que se autovalida contra o serviço real, técnica recomendada por Fowler para doubles usados em [[contract-testing]]
+- [[wiki/concepts/self-initializing-fake]] — Fake que, na primeira chamada, encaminha ao serviço real e grava a resposta em cache, servindo daí em diante; técnica recomendada por Fowler para doubles usados em [[contract-testing]]
 
 ## Limite do mock: verifica a chamada, não o resultado
 
@@ -84,10 +85,12 @@ Mockar um banco de dados permite verificar que `db.save` foi chamado, mas não c
 
 ## Key Sources
 
+- [[wiki/sources/indirect-input-xunitpatterns]] — verbete de glossário dedicado a "indirect input", a metade do eixo entrada/saída que motiva o uso de Stub
 - [[wiki/sources/test-double-xunitpatterns-meszaros]] — **fonte primária** da taxonomia (página canônica de Meszaros no xUnitPatterns.com); vocabulário SUT/DOC, entrada/saída indireta, pontos de controle/observação; Mock ≠ "Stub + asserção"
 - [[wiki/sources/test-doubles]]
 - [[wiki/sources/test-double-martin-fowler]] — fonte secundária que popularizou o termo, com atribuição correta da taxonomia a Gerard Meszaros
 - [[wiki/sources/xunit-martin-fowler]] — origem histórica da família de frameworks Xunit que dá nome ao livro de Meszaros
 - [[wiki/sources/integration-test-martin-fowler]]
 - [[wiki/sources/contract-test-martin-fowler]] — SelfInitializingFake como técnica para doubles usados em contract testing
+- [[wiki/sources/self-initializing-fake-martin-fowler]] — fonte primária do padrão SelfInitializingFake: Fake vs. Stub, mecanismo de cache
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — limite do mock de banco: assertion de chamada não prova persistência

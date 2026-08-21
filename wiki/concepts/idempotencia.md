@@ -3,8 +3,8 @@ type: concept
 title: "Idempotência"
 aliases: ["idempotência", "idempotency", "idempotency key"]
 date_created: 2026-04-22
-date_updated: 2026-07-27
-source_count: 5
+date_updated: 2026-08-21
+source_count: 6
 tags: [distribuidos, resiliencia, api, retry, mensageria, double-spend, double-submit, webhook, fintech]
 skill: tech-mentor-system-design
 status: stable
@@ -146,8 +146,13 @@ Desabilitar o botão após o clique melhora a UX, mas não protege o backend —
 
 O teste mais revelador corta a resposta **depois** que o efeito acontece e **antes** que o cliente receba a confirmação — reproduzindo a mesma janela de incerteza que motiva o retry. Complementares: disparar duas requisições simultâneas com a mesma chave, duplicar a entrega de um webhook, e reiniciar um worker no ponto mais crítico. Em produção, a taxa de chaves repetidas e de conflitos de payload mostra se o cliente usa o contrato corretamente; operações presas em `processing` mostram onde o fluxo não fechou o resultado.
 
+## Riff de folclore: os "dois problemas difíceis" de sistemas distribuídos
+
+Um riff citado em [[wiki/sources/two-hard-things-martin-fowler]] (autoria de Mathias Verraes) substitui os dois problemas clássicos de Phil Karlton — [[wiki/concepts/naming|naming]] e [[wiki/concepts/tradeoff-de-cache|cache invalidation]] — por "guaranteed order of messages" e "exactly-once delivery" em sistemas distribuídos. É piada, não claim técnico, mas a substituição funciona porque aponta certo: entrega exactly-once é precisamente o problema que idempotência resolve (via [[concepts/retry-backoff|retry]] seguro). Ver [[wiki/concepts/two-hard-things]].
+
 ## Key Sources
 
+- [[wiki/sources/two-hard-things-martin-fowler]] — riff de folclore que cita "exactly-once delivery" como um dos dois problemas difíceis de sistemas distribuídos
 - [[sources/retry-backoff]]
 - [[wiki/sources/acoplamento-abstracao-estado]]
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — idempotência como resposta ao webhook duplicado; errar at-least-once vs. exactly-once cobra o cliente em dobro ou perde o pedido

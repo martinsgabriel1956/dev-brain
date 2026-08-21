@@ -3,8 +3,8 @@ type: entity
 title: "JUnit"
 aliases: ["junit"]
 date_created: 2026-07-19
-date_updated: 2026-07-19
-source_count: 1
+date_updated: 2026-08-21
+source_count: 2
 tags: [testes, tdd, junit, xunit, kent-beck, erich-gamma]
 skill: tech-mentor-testing
 status: stub
@@ -30,3 +30,4 @@ Michael Feathers criou o CppUnit (provavelmente o primeiro port para outra lingu
 ## Key Sources
 
 - [[wiki/sources/xunit-martin-fowler]]
+- [[wiki/sources/seedwork-martin-fowler]] — fonte primária do termo Seedwork usado para descrever o antecessor caseiro do JUnit

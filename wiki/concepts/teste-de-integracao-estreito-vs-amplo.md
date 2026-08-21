@@ -3,8 +3,8 @@ type: concept
 title: "Teste de Integração: Estreito vs. Amplo"
 aliases: ["narrow integration test", "broad integration test", "teste de integração narrow", "teste de integração broad", "system test", "end-to-end test (Fowler)"]
 date_created: 2026-07-07
-date_updated: 2026-08-12
-source_count: 4
+date_updated: 2026-08-21
+source_count: 5
 tags: [testes, integracao, martin-fowler, contract-testing, microservices, terminologia]
 skill: tech-mentor-testing
 status: stable
@@ -61,3 +61,4 @@ Para evitar a ambiguidade, Fowler prefere renomear em vez de qualificar todo mun
 - [[wiki/sources/contract-test-martin-fowler]] — mecânica do contract test que mitiga o double não-fiel
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — caso prático de "amplo" ambíguo em sistema com PSP e fornecedor externos
 - [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — testes de integração como o tipo de melhor custo-benefício segundo o consenso de CTOs relatado, usável como critério de aceitação por task para conter code rot
+- [[wiki/sources/indirect-input-xunitpatterns]] — vocabulário de entrada indireta ([[wiki/concepts/indirect-input-output]]) que sustenta o "fiel o suficiente" do double usado no teste estreito

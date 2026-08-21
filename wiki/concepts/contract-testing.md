@@ -3,8 +3,8 @@ type: concept
 title: "Contract Testing"
 aliases: ["teste de contrato", "pact", "consumer-driven contracts", "can-i-deploy"]
 date_created: 2026-04-22
-date_updated: 2026-08-12
-source_count: 7
+date_updated: 2026-08-21
+source_count: 8
 tags: [testes, contract-testing, pact, microservices, ci, distribuídos]
 skill: tech-mentor-testing
 status: stable
@@ -83,7 +83,7 @@ Em [[wiki/sources/contract-test-martin-fowler]], Fowler detalha a operação pr�
 - **Falha não deve quebrar o build automaticamente** — deve virar uma tarefa de reconciliação: atualizar o double/código do lado consumidor, ou abrir conversa com o time do serviço sobre a mudança de contrato. Para serviços críticos em produção, uma mudança não detectada pode forçar correção de emergência.
 - **Roda contra ambiente de teste, não produção** — testar direto contra produção do fornecedor exige coordenação explícita.
 - **Valida formato, não dado** — o contract test garante que o *formato* da chamada/resposta continua válido; é aceitável que os stubs sejam snapshots de uma resposta real capturada numa data específica, desde que o formato não tenha mudado.
-- **Técnica recomendada para construir o double**: [[wiki/concepts/self-initializing-fake|SelfInitializingFake]] — um Fake que se autovalida periodicamente contra o serviço real.
+- **Técnica recomendada para construir o double**: [[wiki/concepts/self-initializing-fake|SelfInitializingFake]] — um Fake que, na primeira chamada, encaminha ao serviço real e grava a resposta em cache, servindo esse cache nas chamadas seguintes; mecanismo detalhado na fonte primária do padrão, [[wiki/sources/self-initializing-fake-martin-fowler]].
 
 ## Ver também
 
@@ -101,6 +101,7 @@ Quando ativar o serviço externo real (ex.: staging de um provedor de pagamentos
 - [[wiki/sources/contract-testing]]
 - [[wiki/sources/integration-test-martin-fowler]]
 - [[wiki/sources/contract-test-martin-fowler]] — cadência de execução, tratamento de falha e SelfInitializingFake
+- [[wiki/sources/self-initializing-fake-martin-fowler]] — mecanismo detalhado do double recomendado: cache na primeira chamada, caso de dados remotos que mudam, pipeline em dois estágios
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — exemplo de PSP/fornecedor mockados nas pontas de um fluxo de pagamento
 - [[wiki/sources/consumer-driven-contracts-martin-fowler]] — origem do termo (Ian Robinson, 2006), modelo de três camadas, Must Ignore pattern
 - [[wiki/sources/test-double-xunitpatterns-meszaros]] — o "fiel o suficiente" do double que o contract test existe para garantir

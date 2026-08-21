@@ -3,8 +3,8 @@ type: concept
 title: "Application Boundary — Aplicações como Construções Sociais"
 aliases: ["fronteira de aplicação", "limite de aplicação", "applications are social constructions"]
 date_created: 2026-07-20
-date_updated: 2026-08-12
-source_count: 4
+date_updated: 2026-08-21
+source_count: 5
 tags: [arquitetura, ddd, bounded-context, contexto-organizacional, martin-fowler]
 skill: tech-mentor-backend
 status: stub
@@ -42,9 +42,14 @@ Mesma tese central de [[wiki/sources/conways-law]] ("organizações produzem sis
 
 [[wiki/sources/microsservicos-martin-fowler-james-lewis]] (2014), do mesmo Fowler, aplica implicitamente a mesma lógica: a decomposição correta em serviços segue capacidades de negócio — não camadas técnicas —, porque a fronteira "certa" de um componente reflete organização humana (a Lei de Conway, citada explicitamente no artigo) tanto quanto reflete o domínio técnico. Onde este bliki entry de 2003 pergunta "onde termina uma aplicação", o artigo de microsserviços de 2014 pergunta a mesma coisa em escala menor — "onde termina um serviço" — e chega à mesma resposta: política e comunicação organizacional, não um critério técnico isolado.
 
+## Mesmo Dia, Outro Bliki: Seedwork Aplica a Mesma Tese ao Reuso de Código
+
+Fowler publicou [[wiki/sources/seedwork-martin-fowler]] no mesmo dia (11 de setembro de 2003). Lá, ele usa esta mesma ideia — ApplicationBoundary como construção social — para explicar por que reuso de código *entre* aplicações é muito mais difícil do que reuso *dentro* de uma aplicação: mesmo com um bom framework técnico, a coordenação entre quem mantém e quem consome atravessa a mesma fronteira social discutida aqui. Ver [[wiki/concepts/seedwork]].
+
 ## Key Sources
 
 - [[wiki/sources/arquitetura-de-sacrificio]] — outra peça de Fowler: quem escreveu o código (dentro da fronteira) é quem tem o contexto para decidir sacrificá-lo
 - [[wiki/sources/application-boundary-martin-fowler]]
+- [[wiki/sources/seedwork-martin-fowler]] — mesma tese (fronteira como construção social) aplicada ao porquê de reuso de código entre aplicações ser difícil
 - [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — mesma tese aplicada à fronteira de serviço, via Lei de Conway
 - [[wiki/sources/talk-about-platforms-evan-bottcher]] — mesma tese na fronteira de time/plataforma: onde uma plataforma "termina" é decisão organizacional (funding de produto, ownership), não só técnica

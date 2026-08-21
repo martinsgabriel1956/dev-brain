@@ -3,8 +3,8 @@ type: concept
 title: "Tradeoff de Cache"
 aliases: ["custo de cache", "complexidade de cache", "cache complexity"]
 date_created: 2026-06-26
-date_updated: 2026-08-10
-source_count: 2
+date_updated: 2026-08-21
+source_count: 3
 tags: [cache, tradeoff, arquitetura, decisao, backend]
 skill: tech-mentor-backend
 status: stable
@@ -32,9 +32,9 @@ Adicionar [[cache]] sempre aumenta a complexidade do sistema. O ganho de perform
 
 ## O Problema Mais Difícil do Cache
 
-> "Existem apenas duas coisas difíceis em Ciência da Computação: invalidação de cache e nomear coisas." — Phil Karlton
+> "Existem apenas duas coisas difíceis em Ciência da Computação: invalidação de cache e nomear coisas." — [[wiki/entities/phil-karlton|Phil Karlton]]
 
-Saber **quando invalidar** é mais difícil que implementar o cache em si.
+Saber **quando invalidar** é mais difícil que implementar o cache em si. A citação em si não tem fonte primária confirmada — ver a origem incerta e as variações que ela gerou em [[wiki/concepts/two-hard-things]] (fonte: [[wiki/sources/two-hard-things-martin-fowler]]).
 
 ## Estratégias de Invalidação
 
@@ -54,5 +54,6 @@ Saber **quando invalidar** é mais difícil que implementar o cache em si.
 
 ## Key Sources
 
+- [[wiki/sources/two-hard-things-martin-fowler]] — origem (incerta) e curadoria da citação de Phil Karlton sobre invalidação de cache como um dos dois problemas difíceis
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
 - [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — invalidação como o problema central do cache, com três estratégias: TTL/expiração (simples, pode servir dado velho), deletar no write e atualizar no write (ambas exigem coordenação entre sistemas); citar o tradeoff é o que separa sênior de pleno na entrevista

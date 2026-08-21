@@ -3,7 +3,7 @@ type: source
 title: "Contract Test (Martin Fowler)"
 aliases: ["contract test bliki", "integration contract test", "teste de contrato fowler"]
 date_created: 2026-07-27
-date_updated: 2026-07-27
+date_updated: 2026-08-21
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/contract-test-martin-fowler.md
 source_url: "https://martinfowler.com/bliki/ContractTest.html"
 author: "Martin Fowler"
@@ -43,8 +43,12 @@ Bliki entry curto (originalmente "Integration Contract Test", renomeado depois p
 
 ## Open Questions
 
-- O artigo não detalha a implementação do `SelfInitializingFake` além de recomendá-lo — o padrão completo (como ele decide quando regravar contra o serviço real vs. usar o snapshot local) só está documentado em outro bliki entry de Fowler, ainda não ingerido nesta wiki. Candidato a próxima ingestão.
+- ~~O artigo não detalha a implementação do `SelfInitializingFake`...~~ **Resolvido em 2026-08-21**: o bliki entry dedicado foi ingerido em [[wiki/sources/self-initializing-fake-martin-fowler]], detalhando o mecanismo de cache na primeira chamada, a distinção Fake vs. Stub, e o caso de dados remotos que mudam.
 - "Integration Contract Test" (nome original do artigo) não aparece em nenhuma outra fonte desta wiki — vale ficar atento a fontes antigas que usem esse nome em vez de "Contract Test" para não tratar como conceito diferente.
+
+## Key Sources
+
+- [[wiki/sources/self-initializing-fake-martin-fowler]] — bliki dedicado que detalha o padrão recomendado aqui apenas por nome
 
 ## Raw Quotes
 

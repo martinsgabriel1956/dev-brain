@@ -3,8 +3,8 @@ type: concept
 title: "Under-Engineering"
 aliases: ["underengineering", "engenharia insuficiente", "fazer menos do que deveria"]
 date_created: 2026-07-19
-date_updated: 2026-07-19
-source_count: 1
+date_updated: 2026-08-21
+source_count: 2
 tags: [under-engineering, over-engineering, qualidade, anti-pattern, tech-debt, acoplamento, ci-cd]
 skill: tech-mentor-leadership
 status: draft
@@ -45,10 +45,15 @@ Nenhum desses antídotos exige over-engineering — nenhum é microsserviço, é
 
 O atalho que gera under-engineering (não configurar CI, hardcodar um valor "só dessa vez", colar código sem extrair) é, na prática, a forma mais silenciosa de tomar débito técnico — sem a decisão consciente que caracteriza débito Prudente do [[wiki/concepts/tech-debt-como-ferramenta|Quadrante de Fowler]]. Ver a citação da fonte: "o mais rápido é muito relativo... você vai pagar por esse mais rápido que você fez três dias atrás."
 
+## Contraponto: quando copy-paste não é under-engineering
+
+[[wiki/sources/seedwork-martin-fowler]] complica o sinal "copy-paste sem estrutura" listado acima: Fowler defende esse mesmo padrão (que ele chama de **seedwork**, ver [[wiki/concepts/seedwork]]) como pragmático quando a alternativa realista não é "usar uma lib madura", mas "não existe framework compartilhado maduro disponível". Os dois pontos de vista não se contradizem — copy-paste é under-engineering quando evita uma alternativa madura já disponível por atalho; é uma escolha razoável quando essa alternativa madura simplesmente não existe ainda. O critério é o mesmo em ambos os casos: qual é a alternativa real, não um ideal abstrato.
+
 ## Relacionado
 
 - [[wiki/concepts/over-engineering]] — extremo oposto, mesmo card/tweet como origem da lista de sintomas nesta fonte
 - [[wiki/concepts/yagni]] — princípio que, quando ignorado, é listado como sinal de over-engineering; under-engineering é o erro de julgamento na direção contrária
+- [[wiki/concepts/seedwork]] — contraponto pragmático ao sinal "copy-paste sem estrutura", em contexto de ausência de framework maduro disponível
 - [[wiki/concepts/acoplamento]]
 - [[wiki/concepts/secrets-management]]
 - [[wiki/concepts/quality-gate]]
@@ -57,3 +62,4 @@ O atalho que gera under-engineering (não configurar CI, hardcodar um valor "só
 ## Key Sources
 
 - [[wiki/sources/underengineering-overengineering-mario-souto]]
+- [[wiki/sources/seedwork-martin-fowler]] — contraponto contextual ao sinal "copy-paste sem estrutura"

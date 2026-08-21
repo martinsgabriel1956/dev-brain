@@ -17,7 +17,7 @@ status: stable
 
 ## TL;DR
 
-Referência focada em dois problemas avançados de cache: stampede (thundering herd) e invalidation. Apresenta três soluções para stampede — mutex lock, XFetch (Vattani et al.) e stale-while-revalidate — e três estratégias de invalidação: TTL-based, event-driven e versioned keys. A frase de Phil Karlton sobre cache invalidation ser um dos dois problemas mais difíceis em CS é contextualizada com soluções concretas.
+Referência focada em dois problemas avançados de cache: stampede (thundering herd) e invalidation. Apresenta três soluções para stampede — mutex lock, XFetch (Vattani et al.) e stale-while-revalidate — e três estratégias de invalidação: TTL-based, event-driven e versioned keys. A frase de Phil Karlton sobre cache invalidation ser um dos dois problemas mais difíceis em CS (ver origem incerta e curadoria em [[wiki/sources/two-hard-things-martin-fowler]]) é contextualizada com soluções concretas.
 
 ## Claims Principais
 
