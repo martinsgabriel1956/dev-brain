@@ -3,7 +3,7 @@ type: source
 title: "Xunit (Martin Fowler)"
 aliases: ["xunit bliki", "história do junit", "origem do junit"]
 date_created: 2026-07-19
-date_updated: 2026-07-19
+date_updated: 2026-08-23
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/xunit-martin-fowler.md
 source_url: "https://martinfowler.com/bliki/Xunit.html"
 author: "Martin Fowler"
@@ -48,7 +48,7 @@ Este artigo e [[wiki/sources/test-double-martin-fowler]] foram publicados no mes
 ## Open Questions
 
 - Fowler cita ter contribuído mudanças para o JUnit original, incluindo (por implicação) a convenção de mensagem de assert como primeiro argumento — não há confirmação independente disso nesta wiki, só o relato em primeira pessoa do próprio bliki.
-- As páginas bliki [[wiki/concepts/seedwork|Seedwork]] e [[wiki/entities/c3-project|C3]] foram consultadas diretamente (via `curl` na fonte, não via WebFetch resumido) para calibrar os stubs criados nesta ingestão, mas não foram ingeridas como fontes primárias completas — citadas aqui como `[external]` com URL. Candidatas a ingestão própria no futuro se surgirem mais claims relevantes.
+- ~~As páginas bliki [[wiki/concepts/seedwork|Seedwork]] e [[wiki/entities/c3-project|C3]] foram consultadas diretamente (via `curl` na fonte, não via WebFetch resumido) para calibrar os stubs criados nesta ingestão, mas não foram ingeridas como fontes primárias completas — citadas aqui como `[external]` com URL. Candidatas a ingestão própria no futuro se surgirem mais claims relevantes.~~ **Fechada em 2026-08-23**: ambas foram ingeridas como fontes primárias completas — [[wiki/sources/seedwork-martin-fowler]] e [[wiki/sources/c3-martin-fowler]].
 - O relato da criação do red/green bar no C3 é anterior ao JUnit formalizar isso como barra de progresso — não há uma fonte terceira citada por Fowler para essa prática do time do C3, é memória pessoal dele.
 
 ## Raw Quotes

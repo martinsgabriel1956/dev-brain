@@ -3,7 +3,7 @@ type: source
 title: "Indirect Input (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["indirect input", "entrada indireta", "xunit patterns glossary indirect input"]
 date_created: 2026-08-21
-date_updated: 2026-08-21
+date_updated: 2026-08-23
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/indirect-input-xunitpatterns.md
 source_url: "http://xunitpatterns.com/Indirect%20Input.html"
 author: "Gerard Meszaros"
@@ -59,7 +59,7 @@ Diferente do verbete de saída indireta (que aponta para Spy/Mock), este verbete
 
 ## Questões Abertas
 
-- Este verbete é parte de um glossário maior (o mesmo catálogo de onde veio [[wiki/sources/test-double-xunitpatterns-meszaros]]); os verbetes irmãos "indirect output", "direct input", "control point" e "observation point" ainda não foram ingeridos individualmente — candidatos naturais a próxima ingestão para fechar o vocabulário completo.
+- Este verbete é parte de um glossário maior (o mesmo catálogo de onde veio [[wiki/sources/test-double-xunitpatterns-meszaros]]); os verbetes irmãos "DOC", "control point" e "fixture setup" já foram ingeridos isoladamente em [[wiki/sources/depended-on-component-doc-xunitpatterns]], [[wiki/sources/control-point-xunitpatterns]] e [[wiki/sources/fixture-setup-xunitpatterns]] — o de control point revelou que a leitura de "control point" implícita aqui ("control point on the back side of the SUT") é um caso específico, não a definição completa do termo. "indirect output", "direct input", "observation point" e "fixture teardown" ainda não foram ingeridos individualmente — candidatos naturais a próxima ingestão para fechar o vocabulário completo.
 
 ---
 

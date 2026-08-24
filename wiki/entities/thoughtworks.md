@@ -3,8 +3,8 @@ type: entity
 title: "Thoughtworks"
 aliases: ["ThoughtWorks", "topworx"]
 date_created: 2026-07-27
-date_updated: 2026-08-12
-source_count: 4
+date_updated: 2026-08-23
+source_count: 6
 tags: [consultoria, software, martin-fowler, brasil]
 skill: tech-mentor-backend
 status: stub
@@ -24,9 +24,15 @@ Aparece em [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edic
 
 [[wiki/entities/evan-bottcher]], também da Thoughtworks, cunhou a definição de referência de [[wiki/concepts/plataforma-digital|plataforma digital]] em artigo de 2018 hospedado no site de Fowler — ver [[wiki/sources/talk-about-platforms-evan-bottcher]]. A distinção da Thoughtworks entre várias acepções de "plataforma" (infra de entrega, APIs de negócio, dados self-service) é citada nesse artigo.
 
+[[wiki/sources/very-low-defect-project-martin-fowler]] (2004) — Fowler nota que a empresa já via, em alguns de seus "projetos-candidato", o mesmo padrão de [[wiki/concepts/very-low-defect-project|taxa de defeito muito baixa]] observado em times de [[wiki/concepts/extreme-programming|XP]] fora dela, embora fosse cedo demais para conclusões.
+
+[[wiki/sources/continuous-delivery-martin-fowler]] (2013) — os quatro indicadores de que um time pratica [[wiki/concepts/ci-cd|Continuous Delivery]] citados por Fowler foram desenvolvidos pelo **grupo de trabalho de Continuous Delivery da própria Thoughtworks**, não por Fowler individualmente.
+
 ## Key Sources
 
+- [[wiki/sources/very-low-defect-project-martin-fowler]] — projetos-candidato a very-low-defect na própria Thoughtworks (2004)
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]]
 - [[wiki/sources/consumer-driven-contracts-martin-fowler]] — Ian Robinson, Principal Consultant
 - [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — James Lewis, Principal Consultant, coautoria com Fowler
 - [[wiki/sources/talk-about-platforms-evan-bottcher]] — Evan Bottcher, definição de plataforma digital
+- [[wiki/sources/continuous-delivery-martin-fowler]] — grupo de trabalho de CD da Thoughtworks, origem dos quatro indicadores

@@ -3,8 +3,8 @@ type: concept
 title: "Dois Chapéus (Kent Beck)"
 aliases: ["two hats", "two hats metaphor", "chapéu de refatoração", "chapéu de funcionalidade"]
 date_created: 2026-07-15
-date_updated: 2026-07-27
-source_count: 2
+date_updated: 2026-08-23
+source_count: 3
 tags: [refactoring, craftsmanship, kent-beck, extreme-programming]
 skill: tech-mentor-backend
 status: stub
@@ -31,3 +31,4 @@ A troca de chapéu pode acontecer em minutos ou durar horas — o que importa é
 
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]]
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]]
+- [[wiki/sources/c3-martin-fowler]] — origem da disciplina de [[wiki/concepts/extreme-programming|Extreme Programming]] de onde essa metáfora nasce

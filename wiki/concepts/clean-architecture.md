@@ -3,8 +3,8 @@ type: concept
 title: "Clean Architecture"
 aliases: ["arquitetura limpa", "clean arch"]
 date_created: 2026-07-24
-date_updated: 2026-08-19
-source_count: 6
+date_updated: 2026-08-23
+source_count: 7
 tags: [clean-architecture, uncle-bob, dependency-inversion, use-case, presenter, view-model, arquitetura, dci, bce]
 skill: tech-mentor-backend
 status: draft
@@ -96,6 +96,7 @@ As métricas de pacote de Robert Martin — abstração `A`, instabilidade `I = 
 - [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]] — métricas de acoplamento (A, I, D) como formalização da Regra de Dependência
 - [[wiki/sources/presenters]] — papel do Presenter e ViewModel especificamente na camada HTTP/apresentação (REST, GraphQL, CLI)
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — fluxo completo do diagrama de cenário web, e a justificativa teórica (objeto vs. estrutura de dados) por trás de cada camada
+- [[wiki/sources/classes-vs-estruturas-de-dados-uncle-bob]] — post original de Uncle Bob (fonte primária): mesma justificativa teórica, com o argumento adicional de que interfaces de fronteira (Input/Output Boundary) invertem a direção da dependência de código-fonte, isolando cada camada de recompilação em cascata
 - [[wiki/sources/clean-architecture-arquitetura-centrada-no-dominio]] — comparação direta com a arquitetura em 3 camadas, explicando a origem do nome "domain-centric"
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — estudo de caso completo em TypeScript (theWisePad), genealogia DCI/BCE/Hexagonal, casos reais de adoção (Netflix, Uber, iFood), e o padrão Either para tratamento de erros
 - [[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] — exemplo prático de DI (`CreateUser`/`UserRepository`/adapter Postgres), custo de debugar implementação "escondida" atrás da interface, boilerplate, atrito com frameworks opinativos, e leitura de que a popularidade vem mais da fama de Uncle Bob que de mérito técnico exclusivo

@@ -3,8 +3,8 @@ type: concept
 title: "Acoplamento"
 aliases: ["coupling", "baixo acoplamento", "alto acoplamento"]
 date_created: 2026-04-25
-date_updated: 2026-08-18
-source_count: 9
+date_updated: 2026-08-23
+source_count: 10
 tags: [acoplamento, software-design, clean-code, arquitetura, under-engineering]
 skill: tech-mentor-backend
 status: stable
@@ -110,3 +110,4 @@ Sobre medição, apresenta as métricas de [[wiki/entities/uncle-bob|Robert C. M
 - [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — dependency structure analysis como gate de CI: import circular, camadas invertidas, módulo de implementação acessando outro sem passar por módulo de API
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — feature envy como acoplamento "content" atravessando classes; god object como acoplamento resolvido via composição
 - [[wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado]] — dependência forte entre sistema novo e legado; dependência escondida via configuração dinâmica ou reflection em runtime
+- [[wiki/sources/classes-vs-estruturas-de-dados-uncle-bob]] — direção da dependência de arquivo-fonte como manifestação concreta de acoplamento: `switch` sobre união discriminada acopla quem chama a cada implementação (recompilação em cascata); polimorfismo com interface inverte essa direção ([[wiki/concepts/dependency-inversion-principle]])

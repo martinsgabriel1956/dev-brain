@@ -3,8 +3,8 @@ type: entity
 title: "Uncle Bob (Robert C. Martin)"
 aliases: ["uncle bob", "robert c. martin", "robert cecil martin"]
 date_created: 2026-07-03
-date_updated: 2026-08-12
-source_count: 12
+date_updated: 2026-08-23
+source_count: 13
 tags: [clean-code, clean-architecture, solid, autor, quality-gate]
 skill: tech-mentor-backend
 status: stub
@@ -32,7 +32,7 @@ Terceira menção, em [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]]
 
 Quarta menção, em [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]]: um post do blog de Uncle Bob, escrito em formato de diálogo, define **objeto** e **estrutura de dados** como conceitos literalmente opostos — objeto é um conjunto de funções que operam sobre dados implícitos/encapsulados; estrutura de dados é um conjunto de dados operados por funções implícitas/externas. A partir dessa definição, Uncle Bob argumenta que não existe mapeamento direto entre objetos e relações de banco de dados (só transferência de dados), e sugere que "Object-Relational Mapper" é um nome equivocado. Essa distinção é a base teórica de [[wiki/concepts/objeto-vs-estrutura-de-dados]], que por sua vez fundamenta como [[wiki/concepts/clean-architecture]] alterna entre objetos (Entities, Use Cases, Presenter) e estruturas de dados (Input/Output Data, ViewModel) no fluxo de uma aplicação web — diagrama descrito no livro *Clean Architecture* do próprio Uncle Bob.
 
-**Nota de verificação**: assim como na menção sobre SQL, a transcrição de origem não cita o título exato nem a URL do post do blog — vale confirmar contra `blog.cleancoder.com` se a atribuição precisar ser usada como fonte primária.
+**Nota de verificação (resolvida em 2026-08-23)**: confirmado contra a fonte primária — ver "Post Original 'Classes vs. Data Structures' (Fonte Primária)" ao final desta página.
 
 ## Livro *Arquitetura Limpa na Prática* (Otávio Lemos)
 
@@ -70,6 +70,10 @@ Décima menção, em [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-cas
 
 **Nota de verificação**: atribuição a Uncle Bob é inferência de alta confiança (as fórmulas são exatamente as dele), mas o post-fonte não o nomeia explicitamente.
 
+## Post Original "Classes vs. Data Structures" (Fonte Primária)
+
+Décima primeira menção, em [[wiki/sources/classes-vs-estruturas-de-dados-uncle-bob]]: leitura completa do post original do blog Clean Coder, "Classes vs. Data Structures", publicado em 16/06/2019 (`blog.cleancoder.com/uncle-bob/2019/06/16/ObjectsAndDataStructures.html`) — resolve a nota de verificação da quarta menção acima (título exato, URL, autoria, todos confirmados). O post, em formato de diálogo socrático, vai além do que a transcrição de vídeo da quarta menção cobria: introduz o exemplo de formas geométricas (`Square`/`Circle`/`Triangle`) para mostrar que objetos e estruturas de dados invertem o trade-off de extensibilidade — fácil adicionar tipo vs. fácil adicionar operação, formalizado depois na literatura como [[wiki/concepts/expression-problem|Expression Problem]] — e usa esse mesmo exemplo para explicar **Dependency Inversion** pelo ângulo da direção de dependência de arquivos-fonte e do custo de recompilação/redeploy em cascata, não pelo ângulo usual de injeção de dependência.
+
 ## Key Sources
 
 - [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]] — métricas de acoplamento de pacote (A, I, D, aferente/eferente, zonas de dor/inutilidade), atribuição inferida
@@ -78,6 +82,7 @@ Décima menção, em [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-cas
 - [[wiki/sources/5-principios-que-mudaram-como-programador]]
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — citação sobre análise estática em PR como gatilho para o setup de quality gate do autor
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — post de blog sobre objeto vs. estrutura de dados, e diagrama de cenário web do livro *Clean Architecture*
+- [[wiki/sources/classes-vs-estruturas-de-dados-uncle-bob]] — post original "Classes vs. Data Structures" (fonte primária, lido na íntegra): confirma título/URL/data, adiciona o exemplo Square/Circle/Triangle (Expression Problem) e o argumento de Dependency Inversion via direção de dependência de código-fonte
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — livro-tutorial inteiro construído em torno da Clean Architecture de Martin, incluindo anedota de bate-papo pessoal sobre onde validar dados de entrada
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — post recente sobre não ler mais código de agentes, e o harness (testes, Gherkin, QA, métricas, mutation testing) que sustenta essa afirmação
 - [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — segundo vídeo sobre o mesmo tema, detalhando quatro gates de CI concretos (CCN, cobertura+mutation, tamanho de módulo, dependency structure)

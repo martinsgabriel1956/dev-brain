@@ -1,10 +1,10 @@
 ---
 type: concept
 title: "CI/CD"
-aliases: ["CI/CD", "continuous integration", "continuous delivery", "continuous deployment", "pipeline de entrega"]
+aliases: ["CI/CD", "continuous integration", "continuous delivery", "continuous deployment", "pipeline de entrega", "deployment pipeline"]
 date_created: 2026-04-22
-date_updated: 2026-08-11
-source_count: 9
+date_updated: 2026-08-23
+source_count: 11
 tags: [devops, cicd, deploy, automação, qualidade, projetos-novos, dora, trunk-based-development]
 skill: tech-mentor-infra
 status: stable
@@ -23,6 +23,21 @@ Disciplina de entrega de software onde código é integrado, testado e entregue 
 | **Continuous Deployment** | Tudo, incluindo o deploy em produção | Automático |
 
 A maioria das empresas opera em Continuous Delivery — todo commit está pronto, mas um humano decide quando vai para produção.
+
+## Continuous Delivery: definição primária (Martin Fowler)
+
+[[wiki/sources/continuous-delivery-martin-fowler]] (bliki, 2013) define Continuous Delivery como a disciplina de construir software de forma que ele **possa** ser lançado em produção a qualquer momento — a capacidade, não o ato. O "teste decisivo": um patrocinador de negócio poderia pedir que a versão de desenvolvimento atual fosse implantada em produção a qualquer momento, e ninguém pestanejaria, muito menos entraria em pânico.
+
+Fowler lista quatro indicadores concretos, desenvolvidos pelo grupo de trabalho de CD da própria [[wiki/entities/thoughtworks]]:
+
+1. O software é deployável durante todo o seu ciclo de vida.
+2. O time prioriza manter o software deployável em vez de trabalhar em novas features.
+3. Qualquer pessoa consegue feedback rápido e automatizado sobre a prontidão de produção do sistema a qualquer momento que alguém faça uma mudança.
+4. É possível fazer deploy "de um botão" de qualquer versão do software para qualquer ambiente, sob demanda.
+
+**CD ≠ Continuous Deployment, precisamente**: Continuous Deployment significa que toda mudança passa pelo pipeline e é automaticamente colocada em produção; Continuous Delivery só significa que você **consegue** fazer deploys frequentes, mas pode escolher não fazer — geralmente porque o negócio prefere um ritmo mais lento. Continuous Deployment exige Continuous Delivery como pré-requisito; o inverso não é obrigatório. Essa é a mesma lógica de separar capacidade de ato que aparece em [[wiki/concepts/deploy-vs-release]], um nível abaixo (deploy sem expor a feature via flag).
+
+Os dois requisitos para alcançar CD, segundo Fowler: uma [[wiki/concepts/devops-culture|cultura colaborativa]] entre todos os envolvidos na entrega (não só devs e ops) e automação extensiva via deployment pipeline (ver seção abaixo). Os três benefícios centrais que ele lista: **Reduced Deployment Risk** (mudanças menores, mais fácil corrigir), **Believable Progress** ("pronto" só é crível quando deployado, não quando os devs declaram) e **User Feedback** (colocar software na frente de usuários reais o quanto antes é a forma mais rápida de descobrir se ele é útil — este último exige Continuous Deployment de fato, ou ao menos deploy para um subconjunto de usuários).
 
 ## Deploy Manual vs. Automático — a diferença é o gatilho
 
@@ -46,7 +61,11 @@ Lint (30s) → Unit (2min) → Build (3min) → Integration (5min) → Security 
 
 Se lint falhar, nada mais executa — economiza tempo e recursos.
 
-O termo "Deployment Pipeline" é de [[wiki/entities/martin-fowler]]. Ele defende que [[teste-de-integracao-estreito-vs-amplo|testes de integração estreitos]] — por serem tão rápidos quanto unitários — devem rodar nos estágios iniciais do pipeline, dando feedback rápido; testes de integração amplos (system/E2E tests), sendo lentos, ficam melhor como gate de deploy do que de PR.
+## Deployment Pipeline: origem do termo (Martin Fowler)
+
+[[wiki/sources/deployment-pipeline-martin-fowler]] (bliki, 2013) cunha o termo "Deployment Pipeline" e formaliza o princípio de fail-fast acima: a resposta à tensão entre build rápido (feedback) e testes abrangentes (lentos) é quebrar o build em **estágios progressivos**, cada um trocando tempo extra por confiança crescente. O primeiro estágio normalmente compila e gera binários para os seguintes; estágios finais podem incluir verificações manuais e costumam terminar com o deploy em produção. [[wiki/entities/martin-fowler]] defende que [[teste-de-integracao-estreito-vs-amplo|testes de integração estreitos]] — por serem tão rápidos quanto unitários — devem rodar nos estágios iniciais do pipeline, dando feedback rápido; testes de integração amplos (system/E2E tests), sendo lentos, ficam melhor como gate de deploy do que de PR.
+
+Fowler amplia o escopo do pipeline além de "rodar testes rápido": seu trabalho é detectar **qualquer** mudança que cause problemas em produção — performance, segurança e usabilidade, não só corretude funcional — e ele deve dar a todos os grupos envolvidos na entrega **visibilidade sobre o fluxo de mudanças** e uma **trilha de auditoria completa**, não só servir de gate técnico. A recomendação prática de Fowler para introduzir continuous delivery é modelar o processo de entrega *atual* como um deployment pipeline e então procurar gargalos, oportunidades de automação e pontos de colaboração — um diagnóstico antes de qualquer ferramenta nova.
 
 ## Por que CI/CD importa
 
@@ -106,6 +125,8 @@ Essa fonte também **contrasta** com o fluxo `feature → dev/staging → main` 
 
 ## Key Sources
 
+- [[wiki/sources/deployment-pipeline-martin-fowler]] — fonte primária do termo "Deployment Pipeline": estágios progressivos por confiança, escopo além de testes (performance/segurança/usabilidade), colaboração e trilha de auditoria
+- [[wiki/sources/continuous-delivery-martin-fowler]] — fonte primária do termo "Continuous Delivery": quatro indicadores, distinção precisa vs. Continuous Deployment, DevOps culture, três benefícios centrais
 - [[sources/cicd-pipeline]]
 - [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]
 - [[wiki/sources/integration-test-martin-fowler]]

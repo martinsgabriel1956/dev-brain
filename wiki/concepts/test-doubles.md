@@ -3,8 +3,8 @@ type: concept
 title: "Test Doubles"
 aliases: ["dublê de teste", "mock stub fake spy", "xunit test patterns"]
 date_created: 2026-04-22
-date_updated: 2026-08-21
-source_count: 10
+date_updated: 2026-08-23
+source_count: 12
 tags: [testes, test-doubles, mock, stub, fake, spy, dummy]
 skill: tech-mentor-testing
 status: stable
@@ -19,8 +19,8 @@ Termo genérico para qualquer objeto que **substitui uma dependência real nos t
 A fonte primária ([[wiki/sources/test-double-xunitpatterns-meszaros]]) sustenta a taxonomia num vocabulário preciso que vale internalizar — é o que falta na descrição informal "mock é fake com asserção":
 
 - **SUT** (*System Under Test*) — o código sendo testado. **Nunca** é o que se substitui.
-- **DOC** (*Depended-On Component*) — a dependência real. **É o que o double substitui.** Definição formal isolada em [[wiki/sources/doc-xunitpatterns]]: classe ou componente do qual o SUT depende, tipicamente por delegação via chamadas de método.
-- **Entrada indireta** (*indirect input*) — valor que o SUT **recebe** de um DOC → precisa de **ponto de controle** → Stub/Mock.
+- **DOC** (*Depended-On Component*) — a dependência real. **É o que o double substitui.** Fonte primária isolada do termo: [[wiki/sources/depended-on-component-doc-xunitpatterns]] — "examinar e controlar" as interações do DOC com o SUT é a motivação formal para existir um Test Double.
+- **Entrada indireta** (*indirect input*) — valor que o SUT **recebe** de um DOC → precisa de **ponto de controle** → Stub/Mock. Fonte primária isolada de "control point": [[wiki/sources/control-point-xunitpatterns]] — o termo é mais amplo que só essa injeção (cobre também o próprio ato de exercitar o SUT), e cobra que control points exclusivos de teste nunca sejam usados pelo production code. É durante a fase de **fixture setup** — fonte primária isolada em [[wiki/sources/fixture-setup-xunitpatterns]] — que esses control points normalmente entram em cena, colocando o DOC no estado ("the 'before' picture") necessário para o teste.
 - **Saída indireta** (*indirect output*) — chamada/efeito que o SUT **dispara** sobre um DOC → precisa de **ponto de observação** → Spy/Mock.
 
 Esse eixo **controle × observação** é o que organiza os cinco tipos — formalizado com sua própria fonte primária em [[wiki/concepts/indirect-input-output]] (verbete "indirect input" isolado, ver [[wiki/sources/indirect-input-xunitpatterns]]). Meszaros ainda separa duas perguntas ortogonais: **por que** usar o double (define Dummy/Stub/Spy/Mock/Fake) vs. **como** construí-lo (Hard-Coded vs. Configurable Test Double — a técnica de construção não muda o papel). Detalhe importante: o **double só precisa expor a mesma API** que aquele teste exercita — não a interface inteira do DOC ("fiel o suficiente para a cena", na analogia do dublê de cinema).
@@ -86,6 +86,9 @@ Mockar um banco de dados permite verificar que `db.save` foi chamado, mas não c
 ## Key Sources
 
 - [[wiki/sources/doc-xunitpatterns]] — verbete de glossário dedicado à definição formal de DOC, o que um Test Double substitui
+- [[wiki/sources/control-point-xunitpatterns]] — verbete de glossário dedicado ao próprio termo control point: definição formal mais ampla que "back side do SUT", e a regra de que control points exclusivos de teste não devem entrar no production code
+- [[wiki/sources/fixture-setup-xunitpatterns]] — verbete de glossário dedicado ao termo fixture setup: a fase em que control points/Test Doubles são usados para preparar o "before" do teste; define test fixture/test context como o produto dessa fase
+- [[wiki/sources/depended-on-component-doc-xunitpatterns]] — verbete de glossário dedicado ao próprio termo DOC: definição formal e a motivação "examinar e controlar" para existir um Test Double
 - [[wiki/sources/indirect-input-xunitpatterns]] — verbete de glossário dedicado a "indirect input", a metade do eixo entrada/saída que motiva o uso de Stub
 - [[wiki/sources/test-double-xunitpatterns-meszaros]] — **fonte primária** da taxonomia (página canônica de Meszaros no xUnitPatterns.com); vocabulário SUT/DOC, entrada/saída indireta, pontos de controle/observação; Mock ≠ "Stub + asserção"
 - [[wiki/sources/test-doubles]]

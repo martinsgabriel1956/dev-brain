@@ -3,8 +3,8 @@ type: entity
 title: "Kent Beck"
 aliases: ["kent beck"]
 date_created: 2026-07-09
-date_updated: 2026-08-21
-source_count: 6
+date_updated: 2026-08-23
+source_count: 8
 tags: [autor, tdd, extreme-programming, design-incremental, junit, xunit, yagni]
 skill: tech-mentor-testing
 status: stub
@@ -17,6 +17,14 @@ Criador do TDD (Test-Driven Development) moderno e da Extreme Programming (XP), 
 ## Criador do framework original e coautor do JUnit
 
 Antes do TDD ser formalizado como prática, Beck já construía frameworks de teste caseiros em Smalltalk — usados por ele e clientes num ciclo de edição-e-teste rápido dentro da própria IDE. Preferia que cada time reconstruísse o próprio framework (levava poucas horas) em vez de compartilhar um único — um exemplo do que Fowler chamaria de [[wiki/concepts/seedwork|Seedwork]]. Esse framework foi usado no projeto [[wiki/entities/c3-project|C3]] (Chrysler, 1996), o "projeto de nascimento" da Extreme Programming, onde Ron Jeffries também foi apresentado a ele.
+
+## Relatou o primeiro caso de "Very Low Defect Project" a Fowler
+
+Segundo [[wiki/sources/very-low-defect-project-martin-fowler]], foi Beck quem descreveu a Fowler o primeiro exemplo do que este batizaria de [[wiki/concepts/very-low-defect-project|VeryLowDefectProject]]: uma fabricante de máquinas de classificação de alimentos (esteiras, câmeras e sensores, rodando em Smalltalk) que caiu de ~100 bugs abertos simultaneamente para cerca de um a cada dois meses depois de adotar XP.
+
+## Liderança do recomeço do C3 (1996)
+
+Segundo [[wiki/sources/c3-martin-fowler]], Beck assumiu a liderança do C3 em 1996, num recomeço motivado por problemas de estabilidade do desenvolvimento original em Smalltalk (iniciado em 1995). Foi nesse recomeço, não no início do projeto, que as práticas hoje conhecidas como [[wiki/concepts/extreme-programming|Extreme Programming]] foram reunidas de forma coesa pela primeira vez.
 
 Em 1997, num voo de Zurique para a OOPSLA em Atlanta, Beck programou em par com [[wiki/entities/gang-of-four|Erich Gamma]] a primeira versão do [[wiki/entities/junit]] — feita test-first. JUnit se tornou o membro fundador da família de frameworks "Xunit" e, segundo Fowler, foi essencial para sustentar o crescimento de XP e TDD na indústria. Ver [[wiki/sources/xunit-martin-fowler]].
 
@@ -48,3 +56,5 @@ A citação "invest in the design of the system every day" foi atribuída a Beck
 - [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] — verificação de autoria de *Extreme Programming Explained*, origem do YAGNI
 - [[wiki/sources/cognitive-debt-margaret-storey]] — "make the hard change easy" (*Tidy First?*) como prevenção de dívida cognitiva
 - [[wiki/sources/seedwork-martin-fowler]] — fonte primária que nomeia o padrão do framework de testes caseiro de Beck (reconstruído por cada time) como exemplo de [[wiki/concepts/seedwork]]
+- [[wiki/sources/c3-martin-fowler]] — liderança do recomeço do C3 em 1996; consolidação das práticas da Extreme Programming
+- [[wiki/sources/very-low-defect-project-martin-fowler]] — relatou a Fowler o caso da fabricante de máquinas de classificação de alimentos

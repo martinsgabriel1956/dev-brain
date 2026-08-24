@@ -3,8 +3,8 @@ type: source
 title: "Test Double (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["test double meszaros", "imposter", "xunit test patterns test double", "dublê de teste primária"]
 date_created: 2026-08-12
-date_updated: 2026-08-21
-source_file: /home/gabriel-martins/Documentos/dev-brain/raw/test-double-xunitpatterns-meszaros.md
+date_updated: 2026-08-23
+source_file: /home/nemomartins/Documentos/new/dev-study/raw/test-double-xunitpatterns-meszaros.md
 source_url: "http://xunitpatterns.com/Test%20Double.html"
 author: "Gerard Meszaros"
 date_published: 2007-01-01
@@ -81,7 +81,7 @@ Três guardrails da fonte primária: (a) ter **ao menos um teste sem double**, p
 
 ## Questões Abertas
 
-- **"indirect input" ganhou fonte primária própria e isolada** em [[wiki/sources/indirect-input-xunitpatterns]] (verbete de glossário do mesmo site) — formaliza só a metade "entrada" deste vocabulário; "indirect output", "control point" e "observation point" ainda não têm verbete ingerido individualmente. Ver [[wiki/concepts/indirect-input-output]].
+- **"indirect input", "DOC", "control point" e "fixture setup" ganharam fonte primária própria e isolada** em [[wiki/sources/indirect-input-xunitpatterns]], [[wiki/sources/depended-on-component-doc-xunitpatterns]], [[wiki/sources/control-point-xunitpatterns]] e [[wiki/sources/fixture-setup-xunitpatterns]] (todos verbetes de glossário do mesmo site) — formalizam a metade "entrada", o próprio termo do componente-dependência, o mecanismo de comando ao SUT, e a fase que estabelece as precondições do teste; "indirect output", "observation point" e "fixture teardown" ainda não têm verbete ingerido individualmente. Ver [[wiki/concepts/indirect-input-output]].
 - **"Mock" na fonte (2007) ≠ "mock" das bibliotecas modernas.** Frameworks como Jest/Vitest/Mockito chamam de "mock" qualquer double gerado — que na taxonomia de Meszaros pode ser Stub, Spy ou Mock. A wiki deve manter a distinção conceitual mesmo quando a ferramenta usa o termo de forma frouxa. Não é contradição, é deriva de vocabulário; registrar ao ingerir fontes de ferramentas de mocking.
 - O número "~50× mais rápido" (Fake em memória vs. banco) é um relato de caso único do livro, não benchmark reproduzível — usar como ilustração, não como métrica.
 - A fonte é uma **versão preliminar** do capítulo (o próprio site avisa que "o conteúdo mudou substancialmente" na versão publicada, p. 522). Divergências finas com a edição final do livro são possíveis; a taxonomia e as definições centrais, porém, são estáveis e batem com o relato de Fowler já ingerido.

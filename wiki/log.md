@@ -7883,3 +7883,194 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha em Sources
 
 **Notas / open questions:** (1) **Atribuição histórica não verificada** — a origem do termo "microweb service" (Peter Rogers, 2005, conferência Web Services Edge) e a apresentação "Microservices — Java, the Unix Way" (Polônia, 2012) são citadas pelo autor sem fonte primária/link na transcrição; marcado como confiança média em ambas as claims, não como fato estabelecido. (2) **Gap não resolvido**: a fonte não relaciona a apresentação de 2012 ao artigo formal de Fowler/Lewis (2014) já documentado em [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — puramente coincidência de década ou desenvolvimento relacionado, não esclarecido. (3) **Tensão latente registrada, não contradição**: o autor apresenta "banco exclusivo por serviço, acesso só via API" como a regra mais importante do vídeo, mas promete relativizá-la num vídeo futuro da mesma série — a wiki hoje trata a regra como praticamente absoluta em [[wiki/concepts/database-per-service]] e [[wiki/concepts/microsservicos]]; quando essa fonte futura for ingerida, revisar ambas as páginas contra o contraponto. (4) **Sem contradições diretas** — ingestão majoritariamente aditiva/corroborativa: quarta fonte independente do mesmo autor confirmando a descrição de SOA/ESB/SOAP já registrada a partir de três fontes anteriores, e quarta fonte geral reforçando a tese "monolito primeiro, microsserviços com justificativa real" já central em [[wiki/concepts/monolith-first]].
+## [2026-08-23] ingest | Classes vs. Data Structures (Uncle Bob, post original)
+
+**Fonte:** [[wiki/sources/classes-vs-estruturas-de-dados-uncle-bob]] — artigo original em inglês buscado via `curl` (HTML bruto de `blog.cleancoder.com/uncle-bob/2019/06/16/ObjectsAndDataStructures.html`, não resumo de WebFetch, para preservar o texto exato do diálogo) e traduzido para pt-BR em `raw/classes-vs-estruturas-de-dados-uncle-bob.md`.
+**Skill carregada:** `tech-mentor-backend` (mesma skill já usada em todas as páginas afetadas — [[wiki/concepts/objeto-vs-estrutura-de-dados]], [[wiki/concepts/clean-architecture]], [[wiki/concepts/dependency-inversion-principle]], [[wiki/entities/uncle-bob]]).
+
+**Arquivos criados:**
+- `raw/classes-vs-estruturas-de-dados-uncle-bob.md` — tradução do post original ("Classes vs. Data Structures", 16 jun 2019)
+- `wiki/sources/classes-vs-estruturas-de-dados-uncle-bob.md` — TL;DR, 6 key claims, entidades/conceitos, quotes em inglês preservadas, open questions fechadas
+- `wiki/concepts/expression-problem.md` — conceito novo (`status: stub`): nome formal do trade-off "fácil adicionar tipo vs. fácil adicionar operação" descrito no post via exemplo Square/Circle/Triangle
+- `wiki/concepts/polimorfismo.md` — conceito novo (`status: stub`): mecanismo do lado "objeto" do trade-off, contrastado com union discriminada + switch
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/objeto-vs-estrutura-de-dados.md` — `source_count` 2 → 3; duas novas seções ("Trade-off de extensibilidade" e "Direção da dependência de código-fonte"); nova linha em Key Sources
+- `wiki/concepts/dependency-inversion-principle.md` — `source_count` 2 → 3; nova seção "Ângulo de Recompilação/Redeploy (Uncle Bob, Post Original)"; nova linha em Key Sources
+- `wiki/concepts/clean-architecture.md` — `source_count` 6 → 7; nova linha em Key Sources
+- `wiki/concepts/mapper-pattern.md` — `source_count` 3 → 4; referência à fonte secundária trocada por referência à fonte primária lida na íntegra; nova linha em Key Sources
+- `wiki/concepts/acoplamento.md` — `source_count` 9 → 10; nova linha em Key sources (direção de dependência de arquivo-fonte como acoplamento)
+- `wiki/entities/uncle-bob.md` — `source_count` 12 → 13; nota de verificação da quarta menção marcada como resolvida; nova seção "Post Original 'Classes vs. Data Structures' (Fonte Primária)"; nova linha em Key Sources
+- `wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture.md` — as duas Open Questions (autoria/título/URL não confirmados) marcadas como resolvidas, com nota apontando para a nova fonte primária
+- `wiki/index.md` — novas linhas em Sources e Concepts
+
+**Notas / open questions:** (1) **Esta ingestão resolve open questions pendentes de uma fonte anterior** — [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] (transcrição de vídeo, ingerida em 24/07) citava este post sem conseguir confirmar título, URL ou autoria a partir do áudio; a leitura direta da fonte primária fecha as duas perguntas. (2) **Sem contradições** — o conteúdo da transcrição de vídeo é fiel ao post original; a ingestão é puramente aditiva, trazendo dois argumentos que a transcrição não cobria (Expression Problem via exemplo Square/Circle/Triangle, e Dependency Inversion via direção de dependência de arquivo-fonte/recompilação). (3) **`expression-problem` é conceito da literatura de linguagens de programação, não terminologia usada no post** — o post descreve o trade-off sem nomeá-lo formalmente; o nome foi adicionado como enriquecimento por ser a forma padrão de referenciar esse trade-off na área, mantendo clara a distinção entre o que é conteúdo do post e o que é conhecimento externo (`skill: tech-mentor-backend`, nenhuma citação `[external]` necessária pois é nomenclatura consolidada, não claim factual).
+
+---
+
+## [2026-08-23] ingest | Depended-On Component / DOC (xUnitPatterns.com, Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/depended-on-component-doc-xunitpatterns]] — verbete de glossário `DOC.html` buscado via `curl` (HTML bruto, não resumo de WebFetch, para preservar o texto exato da definição) e traduzido para pt-BR em `raw/depended-on-component-doc-xunitpatterns.md`.
+**Skill carregada:** `tech-mentor-testing` (mesma skill de todas as páginas afetadas — vocabulário de test doubles). Consultada `references/test-patterns.md` como calibração; não tem seção dedicada ao vocabulário formal SUT/DOC do glossário xUnitPatterns.com, então nenhum enriquecimento `[skill: tech-mentor-testing]` foi necessário além do já registrado por fonte primária.
+
+**Arquivos criados:**
+- `raw/depended-on-component-doc-xunitpatterns.md` — tradução do verbete de glossário (xunitpatterns.com/DOC.html)
+- `wiki/sources/depended-on-component-doc-xunitpatterns.md` — TL;DR, 3 afirmações centrais, 2 key claims, entidades/conceitos, open questions
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/test-doubles.md` — `source_count` 9 → 10; frase da definição de DOC enriquecida com a fonte primária isolada; nova linha em Key Sources
+- `wiki/concepts/indirect-input-output.md` — `source_count` 1 → 2; nova seção "Por que 'examinar e controlar' é a motivação formal"; nova linha em Key Sources
+- `wiki/entities/gerard-meszaros.md` — `source_count` 4 → 5; nova linha em Key Sources
+- `wiki/sources/test-double-xunitpatterns-meszaros.md` — open question sobre verbetes-irmãos atualizada (DOC agora ingerido); `source_file` corrigido de caminho antigo (`/home/gabriel-martins/...`) para o caminho atual do repo
+- `wiki/sources/indirect-input-xunitpatterns.md` — open question sobre verbetes-irmãos atualizada (DOC agora ingerido)
+- `wiki/concepts/teste-de-integracao-estreito-vs-amplo.md` — `source_count` 5 → 6; nova linha em Key Sources
+- `wiki/concepts/unit-test-solitario-vs-sociavel.md` — `source_count` 4 → 5; definição de "solitário" linkada à fonte primária de DOC; nova linha em Key Sources
+- `wiki/concepts/self-initializing-fake.md` — `source_count` 3 → 4; nova linha em Key Sources
+- `wiki/concepts/tdd.md` — `source_count` 13 → 14; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Fonte muito curta (um parágrafo)** — diferente das ingestões anteriores do mesmo catálogo (Test Double, Indirect Input), o verbete DOC é uma única definição sem variações ou seções internas; por isso o enriquecimento nas páginas tocadas foi deliberadamente leve (uma linha de Key Sources +, nos três conceitos mais centrais, uma frase ou seção curta), evitando inflar conteúdo que a fonte não sustenta. (2) **Sem contradições** — o termo DOC já era usado extensivamente na wiki via [[wiki/sources/test-double-xunitpatterns-meszaros]] e [[wiki/sources/indirect-input-xunitpatterns]]; esta ingestão apenas formaliza uma citação primária isolada para o termo, no mesmo padrão já estabelecido para "indirect input". (3) **Corrigido um `source_file` desatualizado** em [[wiki/sources/test-double-xunitpatterns-meszaros]] (apontava para um caminho de repo antigo, `/home/gabriel-martins/Documentos/dev-brain/`) — frontmatter drift trivial, corrigido inline sem exigir confirmação. (4) **Glossário xUnitPatterns.com ainda incompleto** — "indirect output", "control point", "observation point" e "direct input" continuam sem verbete próprio ingerido; candidatos para fechar o vocabulário formal completo do catálogo.
+
+---
+
+## [2026-08-23] ingest | Control Point (xUnitPatterns.com, Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/control-point-xunitpatterns]] — verbete de glossário `control point.html` buscado via `curl` (HTML bruto, não resumo de WebFetch, para preservar o texto exato da definição) e traduzido para pt-BR em `raw/control-point-xunitpatterns.md`.
+**Skill carregada:** `tech-mentor-testing` (mesma skill de todas as páginas afetadas — vocabulário de test doubles). Consultada `references/test-patterns.md` como calibração; sem seção dedicada ao vocabulário formal do glossário xUnitPatterns.com, mesmo padrão já registrado na ingestão de DOC.
+
+**Arquivos criados:**
+- `raw/control-point-xunitpatterns.md` — tradução do verbete de glossário (xunitpatterns.com/control point.html)
+- `wiki/sources/control-point-xunitpatterns.md` — TL;DR, 3 afirmações centrais, 3 key claims, entidades/conceitos, open questions
+
+**Páginas atualizadas (backlink + frontmatter, `source_count` incrementado, `date_updated` → 2026-08-23):**
+- `wiki/concepts/indirect-input-output.md` — `source_count` 2 → 3; nova seção "Control point é mais amplo do que a injeção de indirect input"; open question do control point fechada; nova linha em Key Sources
+- `wiki/concepts/test-doubles.md` — `source_count` 10 → 11; frase da definição de entrada indireta enriquecida com a fonte primária isolada; nova linha em Key Sources
+- `wiki/entities/gerard-meszaros.md` — `source_count` 5 → 6; nova linha em Key Sources
+- `wiki/sources/test-double-xunitpatterns-meszaros.md` — open question sobre verbetes-irmãos atualizada (control point agora ingerido)
+- `wiki/sources/indirect-input-xunitpatterns.md` — open question atualizada, com nota de que a leitura implícita de "control point" nessa fonte (injeção no "back side") é um caso específico, não a definição completa
+- `wiki/sources/depended-on-component-doc-xunitpatterns.md` — open question sobre verbetes-irmãos atualizada
+- `wiki/concepts/unit-test-solitario-vs-sociavel.md` — nova linha em Key Sources
+- `wiki/concepts/teste-de-integracao-estreito-vs-amplo.md` — nova linha em Key Sources
+- `wiki/concepts/self-initializing-fake.md` — nova linha em Key Sources
+- `wiki/concepts/tdd.md` — nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources, logo abaixo da fonte-irmã DOC
+
+**Notas / open questions:** (1) **Achado central: "control point" é mais amplo do que a wiki assumia por menção indireta** — [[wiki/sources/indirect-input-xunitpatterns]] só citava "control point on the back side of the SUT" (injeção de indirect input via Stub), o que sugeria um conceito restrito a isso. O verbete próprio revela que a definição formal cobre qualquer forma de comandar o SUT, incluindo o próprio ato de exercitá-lo (fase exercise SUT, "front door") e fixture setup/teardown — o "back side" é um caso específico, não a definição inteira. Corrigido em [[wiki/concepts/indirect-input-output]] e na open question de [[wiki/sources/indirect-input-xunitpatterns]]. (2) **Regra de design nova, sem equivalente explícito anterior na wiki**: control points criados estritamente para viabilizar teste (setter de estado interno, hook de reset) não devem ser usados pelo production code, pois bypassam validação de entrada ou encurtam o ciclo de vida normal do SUT/DOC — registrada como key claim #3 na fonte. (3) **Fonte muito curta (um parágrafo)**, mesmo padrão de DOC — enriquecimento deliberadamente leve nas páginas mais distantes (unit-test-solitário/sociável, teste de integração estreito/amplo, self-initializing-fake, TDD: uma linha em Key Sources cada), e conteúdo mais substancial só na página central do conceito ([[wiki/concepts/indirect-input-output]]). (4) **Glossário xUnitPatterns.com quase completo** — restam apenas "indirect output", "observation point" e "direct input" sem verbete próprio ingerido.
+
+---
+
+## [2026-08-23] ingest | Fixture Setup (xUnitPatterns.com, Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/fixture-setup-xunitpatterns]] — verbete de glossário `fixture setup.html` buscado via `curl` (a URL usa case-sensitivity — `fixture setup.html` em minúsculas, não `Fixture Setup.html`, descoberto ao inspecionar os links da página `Four Phase Test.html`) e traduzido para pt-BR em `raw/fixture-setup-xunitpatterns.md`.
+**Skill carregada:** `tech-mentor-testing` (mesma skill de todas as páginas afetadas — vocabulário de test doubles/xUnit). Sem seção dedicada ao vocabulário formal do glossário xUnitPatterns.com em `references/test-patterns.md`, mesmo padrão já registrado nas três ingestões anteriores do mesmo catálogo.
+
+**Arquivos criados:**
+- `raw/fixture-setup-xunitpatterns.md` — tradução do verbete de glossário (xunitpatterns.com/fixture setup.html)
+- `wiki/sources/fixture-setup-xunitpatterns.md` — TL;DR, 3 afirmações centrais, 2 key claims, entidades/conceitos, open questions
+
+**Páginas atualizadas (backlink + frontmatter, `source_count` incrementado, `date_updated` → 2026-08-23):**
+- `wiki/concepts/indirect-input-output.md` — `source_count` 3 → 4; nova seção "Fixture setup: a fase onde control points entram em cena"; open question atualizada (fixture setup agora ingerido); nova linha em Key Sources
+- `wiki/concepts/test-doubles.md` — `source_count` 11 → 12; frase sobre control point/entrada indireta enriquecida com a relação a fixture setup; nova linha em Key Sources
+- `wiki/concepts/tdd.md` — `source_count` 14 → 15; nova linha em Key Sources
+- `wiki/entities/gerard-meszaros.md` — `source_count` 6 → 7; nova linha em Key Sources
+- `wiki/sources/control-point-xunitpatterns.md` — open question sobre verbetes-irmãos atualizada (fixture setup agora ingerido)
+- `wiki/sources/indirect-input-xunitpatterns.md` — open question sobre verbetes-irmãos atualizada
+- `wiki/sources/depended-on-component-doc-xunitpatterns.md` — open question sobre verbetes-irmãos atualizada
+- `wiki/sources/test-double-xunitpatterns-meszaros.md` — open question sobre verbetes-irmãos atualizada
+- `wiki/index.md` — nova linha em Sources, logo abaixo da fonte-irmã control point
+
+**Notas / open questions:** (1) **Achado central: a fonte separa a fase (fixture setup) do seu produto (test fixture/test context)** — distinção fina que a wiki só conhecia por menção lateral em [[wiki/sources/control-point-xunitpatterns]] ("setting up or tearing down the fixture"), sem definição própria citável. Agora formalizada em [[wiki/concepts/indirect-input-output]]. (2) **Fecha o outro lado da relação já registrada por control point**: control point já dizia que é usado "for the purpose of setting up ... the fixture"; este verbete confirma, do lado da fixture setup, que é durante essa fase que control points/Test Doubles entram em cena para preparar o "before" do teste. (3) **Fonte muito curta (um parágrafo)**, mesmo padrão de DOC e control point — enriquecimento deliberadamente leve na maioria das páginas tocadas (uma linha em Key Sources), com conteúdo mais substancial só na página central do conceito ([[wiki/concepts/indirect-input-output]]) e uma frase de conexão em test-doubles. (4) **Glossário xUnitPatterns.com quase completo** — restam apenas "indirect output", "observation point", "direct input" e "fixture teardown" sem verbete próprio ingerido; "fixture teardown" é o candidato mais natural para a próxima ingestão, por ser a contraparte simétrica direta deste verbete.
+
+---
+
+## [2026-08-23] ingest | C3 (Martin Fowler)
+
+**Fonte:** [[wiki/sources/c3-martin-fowler]] — bliki curto de Fowler sobre o projeto Chrysler Comprehensive Compensation (C3), buscado via WebFetch e traduzido para pt-BR em `raw/c3-martin-fowler.md`.
+**Skill carregada:** `tech-mentor-testing`, consultada `references/test-patterns.md` (seção 11, TDD) como calibração — o índice da skill não tem entrada dedicada a "Extreme Programming"/história de metodologias ágeis; mesmo padrão de calibração leve já usado no stub original de [[wiki/entities/c3-project]] (criado durante a ingestão de [[wiki/sources/xunit-martin-fowler]]).
+
+**Arquivos criados:**
+- `raw/c3-martin-fowler.md` — tradução do bliki (martinfowler.com/bliki/C3.html)
+- `wiki/sources/c3-martin-fowler.md` — TL;DR, 8 key claims, entidades/conceitos, open questions
+- `wiki/concepts/extreme-programming.md` — stub novo: metodologia nunca tinha página própria, apesar de citada por tag ("extreme-programming", "xp") em várias páginas existentes (kent-beck, c3-project, dois-chapeus-kent-beck, yagni)
+
+**Páginas atualizadas (backlink + frontmatter, `source_count` incrementado, `date_updated` → 2026-08-23):**
+- `wiki/entities/c3-project.md` — de stub sem fonte primária própria para `status: stable`; `source_count` 1 → 2; nova seção "Linha do tempo" (1993-1999) e seção sobre a tese "XP não é garantia de sucesso"; nota "Não ingerido como fonte primária" removida
+- `wiki/entities/kent-beck.md` — `source_count` 6 → 7; nova seção sobre a liderança do recomeço do C3 em 1996; nova linha em Key Sources
+- `wiki/entities/martin-fowler.md` — `source_count` 22 → 23; nova seção sobre seu papel como consultor no C3 desde 1993; nova linha em Key Sources
+- `wiki/entities/junit.md` — `source_count` 2 → 3; nova linha em Key Sources
+- `wiki/concepts/seedwork.md` — `source_count` 2 → 3; nova linha em Key Sources
+- `wiki/concepts/tdd.md` — `source_count` 15 → 16; nova linha em Key Sources
+- `wiki/concepts/yagni.md` — `source_count` 11 → 12; nova linha em Key Sources
+- `wiki/concepts/dois-chapeus-kent-beck.md` — `source_count` 2 → 3; nova linha em Key Sources
+- `wiki/sources/xunit-martin-fowler.md` — open question sobre C3/Seedwork não ingeridos como fonte própria fechada (ambos agora ingeridos)
+- `wiki/index.md` — nova linha em Sources, nova linha em Concepts (extreme-programming), linha de c3-project em Entities enriquecida com a linha do tempo
+
+**Notas / open questions:** (1) **Achado central: C3 não sustentou seu próprio sucesso, mas isso não invalidou a XP** — o encerramento do desenvolvimento em 1999 e a reversão parcial ao COBOL legado são usados pelo próprio Fowler como prova de que "XP não é garantia de sucesso"; foram outros projetos, tocados por ex-membros do time do C3, que sustentaram a evolução da metodologia depois. Esse desfecho não estava registrado em nenhum lugar da wiki antes — o stub anterior de [[wiki/entities/c3-project]] só cobria a origem (1993-1997), não o desfecho (1999). (2) **Fecha uma dívida de duas ingestões atrás**: [[wiki/sources/xunit-martin-fowler]] já registrava que o stub de C3 tinha sido calibrado por consulta direta, não por ingestão própria — resolvido agora com uma fonte primária dedicada. (3) **Novo stub de conceito**: `extreme-programming.md` preenche uma lacuna — a tag `extreme-programming`/`xp` já existia em pelo menos 4 páginas (kent-beck, c3-project, dois-chapeus-kent-beck, yagni) sem nenhuma delas ter uma página central sobre a metodologia em si. Deixado como `status: stub` — candidato natural para expansão futura com as 12 práticas originais da XP, hoje não detalhadas em nenhuma fonte desta wiki. (4) **Sem contradições** com o conteúdo já registrado; a fonte apenas estende a linha do tempo do C3 para além do que [[wiki/sources/xunit-martin-fowler]] cobria.
+
+---
+
+## [2026-08-23] ingest | Very Low Defect Project (Martin Fowler)
+
+**Fonte:** [[wiki/sources/very-low-defect-project-martin-fowler]] — bliki curto de Fowler (jan/2004), buscado via WebFetch e traduzido para pt-BR em `raw/very-low-defect-project-martin-fowler.md`.
+**Skill carregada:** `tech-mentor-testing` — mesma calibração leve já usada nas duas ingestões anteriores sobre C3/XP (o índice da skill não tem entrada dedicada a história de metodologias ágeis).
+
+**Arquivos criados:**
+- `raw/very-low-defect-project-martin-fowler.md` — tradução do bliki (martinfowler.com/bliki/VeryLowDefectProject.html)
+- `wiki/sources/very-low-defect-project-martin-fowler.md` — TL;DR, 7 key claims, entidades/conceitos, open questions
+- `wiki/concepts/very-low-defect-project.md` — stub novo: termo já citado (sem link, sem fonte própria) em [[wiki/entities/c3-project]] e [[wiki/sources/c3-martin-fowler]] desde a ingestão anterior
+
+**Páginas atualizadas (backlink + frontmatter, `source_count` incrementado, `date_updated` → 2026-08-23):**
+- `wiki/entities/c3-project.md` — `source_count` 2 → 3; nova seção nomeando o projeto seguinte de ex-membros do C3 (portal na Chrysler, um bug em 2002); menção solta a "VeryLowDefectProject" agora linkada ao conceito; nova linha em Key Sources
+- `wiki/entities/kent-beck.md` — `source_count` 7 → 8; nova seção sobre o caso da fabricante de máquinas de classificação de alimentos, relatado por Beck a Fowler; nova linha em Key Sources
+- `wiki/entities/martin-fowler.md` — `source_count` 23 → 24; nova seção sobre a cunhagem do termo; nova linha em Key Sources
+- `wiki/entities/thoughtworks.md` — `source_count` 4 → 5; novo parágrafo sobre projetos-candidato a very-low-defect na própria empresa; nova linha em Key Sources
+- `wiki/concepts/extreme-programming.md` — `source_count` 1 → 2; nova seção sobre a correlação entre adoção séria de XP e taxas de defeito muito baixas; nova linha em Key Sources e em Ver também
+- `wiki/concepts/tdd.md` — `source_count` 16 → 17; nova linha em Key Sources
+- `wiki/sources/c3-martin-fowler.md` — open question sobre o time/projeto não identificado do "VeryLowDefectProject" marcada como resolvida
+- `wiki/index.md` — nova linha em Sources, nova linha em Concepts (very-low-defect-project), linha de c3-project em Entities enriquecida
+
+**Notas / open questions:** (1) **Achado central: esta fonte resolve uma open question de duas ingestões atrás.** [[wiki/sources/c3-martin-fowler]] (ago/2004) mencionava de passagem, sem nomear, que ex-membros do C3 mantinham um "VeryLowDefectProject" — só que essa fonte foi publicada **depois** da que a originou. Esta ingestão traz a fonte primária cronologicamente anterior (jan/2004) que já contava a história completa: software de portal na Chrysler, um defeito por mês virando exatamente um bug em todo o 2002, lançando versões a cada uma ou duas semanas. (2) **Tensão interessante registrada em [[wiki/concepts/extreme-programming]] e [[wiki/concepts/very-low-defect-project]]**: o C3 original não sustentou seu próprio sucesso (encerrado em 1999), mas parte da sua equipe produziu, em outro projeto, um dos resultados de qualidade mais fortes já atribuídos à XP — as duas fontes lidas em conjunto complicam de forma produtiva a tese isolada de "XP não é garantia de sucesso". (3) **Fowler é deliberadamente cauteloso**: evita duas afirmações fortes (XP garante o resultado; outros processos não conseguiriam o mesmo) — ressalva preservada literalmente nas páginas tocadas para não virar um "case de sucesso" acrítico. (4) **Sem contradições** com o conteúdo já registrado.
+
+---
+
+## [2026-08-23] ingest | Deployment Pipeline (Martin Fowler)
+
+**Fonte:** [[wiki/sources/deployment-pipeline-martin-fowler]] — bliki curto de Fowler (2013), buscado via WebFetch e traduzido para pt-BR em `raw/deployment-pipeline-martin-fowler.md`.
+**Skill carregada:** `tech-mentor-infra` (diferente das três ingestões anteriores de Fowler, que usaram `tech-mentor-testing` — esta fonte é sobre CI/CD/pipeline de deploy, não sobre testes ou história de metodologias).
+
+**Arquivos criados:**
+- `raw/deployment-pipeline-martin-fowler.md` — tradução do bliki (martinfowler.com/bliki/DeploymentPipeline.html)
+- `wiki/sources/deployment-pipeline-martin-fowler.md` — TL;DR, 6 key claims, entidades/conceitos, open questions
+
+**Páginas atualizadas (backlink + frontmatter, `source_count` incrementado, `date_updated` → 2026-08-23):**
+- `wiki/concepts/ci-cd.md` — `source_count` 9 → 10; alias "deployment pipeline" adicionada; linha solta ("o termo é de Fowler") expandida em seção própria com os 3 achados centrais (estágios progressivos, escopo além de testes, colaboração/trilha de auditoria); nova linha em Key Sources
+- `wiki/entities/martin-fowler.md` — `source_count` 24 → 25; bullet solto sobre "DeploymentPipeline" enriquecido com detalhe e link à fonte; nova linha em Key Sources
+- `wiki/concepts/pipeline-de-ci.md` — `source_count` 1 → 2; nova frase de abertura conectando a estrutura de 7 estágios já documentada ao princípio geral de Fowler; nova linha em Key Sources
+- `wiki/concepts/teste-de-integracao-estreito-vs-amplo.md` — `source_count` 6 → 7; frase nova conectando a linha de tabela "onde roda no pipeline" (já existente) ao princípio de estágios por confiança; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (`ci-cd` e `pipeline-de-ci` nunca tinham entrada própria no índice, apesar de serem páginas `stable`/`source_count` alto — corrigido como parte desta ingestão, não é drift introduzido por ela)
+
+**Notas / open questions:** (1) **Achado central: fecha uma citação solta de duas fontes diferentes.** Tanto [[wiki/concepts/ci-cd]] quanto [[wiki/entities/martin-fowler]] já citavam, cada uma numa única linha sem link, que "o termo Deployment Pipeline é de Fowler" — nenhuma das duas tinha a fonte primária. Esta ingestão fecha essa lacuna e também dá origem ao princípio de fail-fast (estágios rápidos primeiro) que `ci-cd.md` já documentava sem atribuição. (2) **Achado secundário sobre escopo**: a fonte deixa claro que o pipeline não é só sobre velocidade de teste — é sobre detectar qualquer classe de problema de produção (performance, segurança, usabilidade) e sobre dar visibilidade/trilha de auditoria a todos os grupos envolvidos na entrega, não só ser um gate técnico. Esse ângulo de colaboração/visibilidade não estava em nenhuma página tocada antes desta ingestão. (3) **Drift de índice encontrado e corrigido en passant**: `wiki/concepts/ci-cd.md` (source_count 9, status stable) e `wiki/concepts/pipeline-de-ci.md` nunca tiveram entrada em `wiki/index.md` — corrigido diretamente por ser um fix trivial de backlink, não uma sweep completa de lint. (4) **Sem contradições** com o conteúdo já registrado; a fonte só formaliza princípios que a wiki já usava informalmente.
+
+---
+
+## [2026-08-23] ingest | Continuous Delivery (Martin Fowler)
+
+**Fonte:** [[wiki/sources/continuous-delivery-martin-fowler]] — bliki de Fowler (2013, mesma data de publicação que Deployment Pipeline), buscado via WebFetch (que retornou só um resumo, não o texto completo — contornado baixando o HTML bruto via `curl` e extraindo o artigo diretamente) e salvo em `raw/continuous-delivery-martin-fowler.md`. Artigo já em inglês no original; não precisou de tradução para o raw, mantido em inglês com nota indicando isso.
+**Skill carregada:** `tech-mentor-infra`, seção CI/CD do índice (`references/devops/ci-cd-strategies.md`) — mesma skill do ingest irmão de Deployment Pipeline, por ser o mesmo domínio (CI/CD).
+
+**Arquivos criados:**
+- `raw/continuous-delivery-martin-fowler.md` — artigo em inglês (martinfowler.com/bliki/ContinuousDelivery.html)
+- `wiki/sources/continuous-delivery-martin-fowler.md` — TL;DR, 9 key claims, entidades/conceitos, open questions
+- `wiki/entities/jez-humble.md` — stub novo: coautor (com David Farley) do livro *Continuous Delivery*, citado por Fowler como obra fundacional e agradecido por ajuda na redação do bliki; nunca teve entity própria apesar de já ser mencionado em [[wiki/entities/david-farley]]
+- `wiki/concepts/devops-culture.md` — stub novo: nota de rodapé de Fowler que rejeita a leitura estreita de "devops" (dev+ops) e o define como um dos dois requisitos de Continuous Delivery
+
+**Páginas atualizadas (backlink + frontmatter, `source_count` incrementado, `date_updated` → 2026-08-23):**
+- `wiki/concepts/ci-cd.md` — `source_count` 10 → 11; nova seção "Continuous Delivery: definição primária (Martin Fowler)" com os quatro indicadores, a distinção precisa CD vs. Continuous Deployment e os três benefícios centrais; nova linha em Key Sources
+- `wiki/concepts/deploy-vs-release.md` — `source_count` 3 → 4; nova seção conectando a distinção deploy/release (nível do commit) à distinção Continuous Delivery/Continuous Deployment (nível do pipeline) como o mesmo raciocínio de capacidade-vs-ato aplicado em camadas diferentes; nova linha em Key Sources
+- `wiki/entities/martin-fowler.md` — `source_count` 25 → 26; nova seção sobre a cunhagem formal do termo e o crédito a Jez Humble; nova linha em Key Sources
+- `wiki/entities/david-farley.md` — `source_count` 1 → 2; nova seção citando a menção bibliográfica direta do livro *Continuous Delivery* por Fowler (distinta da anedota não verificada já registrada); nova linha em Ver também (Jez Humble) e Key Sources
+- `wiki/entities/thoughtworks.md` — `source_count` 5 → 6; novo parágrafo atribuindo os quatro indicadores de CD ao grupo de trabalho de CD da própria empresa, não a Fowler individualmente; nova linha em Key Sources
+- `wiki/concepts/pipeline-de-ci.md` — `source_count` 2 → 3; nova linha em Key Sources conectando o deployment pipeline como um dos dois requisitos de CD ao lado de DevOps culture
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (`devops-culture`) e Entities (`jez-humble`)
+
+**Notas / open questions:** (1) **Achado central: define o termo que o bliki-irmão (Deployment Pipeline, mesma data) pressupunha sem definir.** [[wiki/concepts/ci-cd]] já tinha a estrutura dos "três níveis" e já citava a origem do Deployment Pipeline, mas nunca teve uma fonte primária para "Continuous Delivery" em si — os quatro indicadores concretos (deployability contínua, prioridade sobre features, feedback automatizado, deploy sob demanda) eram informação nova para a wiki. (2) **Correção de atribuição**: os quatro indicadores não são de Fowler — são do grupo de trabalho de CD da Thoughtworks, que ele apenas relata; registrado explicitamente na entity de [[wiki/entities/thoughtworks]] para não virar atribuição errada por omissão. (3) **Lacuna de entity fechada**: Jez Humble era citado de passagem em [[wiki/entities/david-farley]] desde julho, mas nunca teve página própria — incoerente dado que é coautor do livro citado como fundacional; corrigido aqui como stub. (4) **WebFetch retornou resumo, não texto integral** — a ferramenta processa o conteúdo com um modelo auxiliar antes de devolver, o que descartou a estrutura literal do artigo (footnotes, blockquote do livro, texto exato dos quatro indicadores); contornado baixando o HTML bruto diretamente e extraindo o texto na íntegra, prática a considerar para próximas ingestões de fontes web quando fidelidade literal importar. (5) **Sem contradições** com o conteúdo já registrado; a fonte só formaliza e credita precisamente princípios que a wiki já usava informalmente.

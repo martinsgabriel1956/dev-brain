@@ -3,8 +3,8 @@ type: concept
 title: "Seedwork"
 aliases: ["seed work", "framework mínimo reconstruído por time"]
 date_created: 2026-07-19
-date_updated: 2026-08-21
-source_count: 2
+date_updated: 2026-08-23
+source_count: 3
 tags: [testes, reuso, frameworks, kent-beck, xunit, arquitetura, application-boundary]
 skill: tech-mentor-backend
 status: stable
@@ -42,3 +42,4 @@ Segundo [[wiki/sources/seedwork-martin-fowler]], Fowler generaliza o argumento: 
 
 - [[wiki/sources/seedwork-martin-fowler]] — fonte primária, ingerida em 2026-08-21
 - [[wiki/sources/xunit-martin-fowler]]
+- [[wiki/sources/c3-martin-fowler]] — linha do tempo do projeto onde o Seedwork de Beck foi usado
