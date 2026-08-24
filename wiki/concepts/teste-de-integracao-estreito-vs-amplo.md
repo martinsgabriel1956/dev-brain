@@ -3,8 +3,8 @@ type: concept
 title: "Teste de Integração: Estreito vs. Amplo"
 aliases: ["narrow integration test", "broad integration test", "teste de integração narrow", "teste de integração broad", "system test", "end-to-end test (Fowler)"]
 date_created: 2026-07-07
-date_updated: 2026-08-21
-source_count: 5
+date_updated: 2026-08-23
+source_count: 7
 tags: [testes, integracao, martin-fowler, contract-testing, microservices, terminologia]
 skill: tech-mentor-testing
 status: stable
@@ -24,6 +24,8 @@ status: stable
 | Onde roda no pipeline | estágio inicial do [[ci-cd]] | staging, geralmente como gate de deploy, não de PR |
 | Risco não coberto | double não fiel ao serviço real | — |
 | Mitigação do risco | [[contract-testing]] valida que o double é fiel | n/a — testa o real |
+
+Essa divisão por estágio é uma aplicação direta do princípio de [[wiki/sources/deployment-pipeline-martin-fowler|estágios progressivos por confiança]] do próprio Fowler: teste estreito é barato e roda cedo, teste amplo é caro e fica para o estágio onde vale pagar o tempo extra.
 
 ## Origem histórica
 
@@ -58,6 +60,9 @@ Para evitar a ambiguidade, Fowler prefere renomear em vez de qualificar todo mun
 
 - [[wiki/sources/integration-test-martin-fowler]]
 - [[wiki/sources/test-double-xunitpatterns-meszaros]] — fonte primária do double (DOC / "mesma API, fiel o suficiente") que viabiliza o teste estreito
+- [[wiki/sources/deployment-pipeline-martin-fowler]] — princípio de estágios progressivos por confiança que justifica onde cada tipo de teste roda no pipeline
+- [[wiki/sources/depended-on-component-doc-xunitpatterns]] — fonte primária isolada do termo DOC, o próprio componente que o teste estreito substitui por um double
+- [[wiki/sources/control-point-xunitpatterns]] — fonte primária isolada do termo control point, o mecanismo formal de comando ao double no lugar do DOC real
 - [[wiki/sources/contract-test-martin-fowler]] — mecânica do contract test que mitiga o double não-fiel
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — caso prático de "amplo" ambíguo em sistema com PSP e fornecedor externos
 - [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — testes de integração como o tipo de melhor custo-benefício segundo o consenso de CTOs relatado, usável como critério de aceitação por task para conter code rot

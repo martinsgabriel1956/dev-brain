@@ -3,7 +3,7 @@ type: source
 title: "Objetos vs. Estruturas de Dados na Clean Architecture"
 aliases: ["objetos vs estruturas de dados", "classes versus data structures uncle bob", "data structure clean architecture"]
 date_created: 2026-07-24
-date_updated: 2026-07-24
+date_updated: 2026-08-23
 source_count: 0
 tags: [clean-architecture, uncle-bob, data-structure, orm, dto, view-model, presenter, use-case, dependency-inversion, arquitetura]
 skill: tech-mentor-backend
@@ -48,6 +48,8 @@ A distinção mais fundamental da Clean Architecture entre **objetos** (comporta
 
 Nenhuma contradição encontrada. O conteúdo é altamente convergente com o que já está documentado: [[wiki/concepts/mapper-pattern]] já registra que "mapper é acoplado à camada/tecnologia, não ao domínio" e que a entidade de domínio permanece intocada ao trocar de ORM — esta fonte fornece a justificativa teórica de **por que** isso é assim (objetos ≠ estruturas de dados, logo não há mapeamento direto, só transferência). [[wiki/sources/presenters]] já descrevia o papel do Presenter/ViewModel do lado HTTP; esta fonte generaliza o mesmo padrão para o fluxo completo da Clean Architecture, incluindo o lado de entrada (Controller/Input Data) e persistência (Data Mapper), e fecha o link quebrado `[[concepts/clean-architecture]]` que essa fonte já citava sem a página existir.
 
+**Atualização 2026-08-23**: [[wiki/sources/classes-vs-estruturas-de-dados-uncle-bob]] ingeriu o post original citado por esta fonte, resolvendo as notas de verificação da seção "Open Questions" abaixo.
+
 ## Quotes Brutas Preservadas
 
 > "Objetos são um conjunto de funções que operam sobre elementos de dados implícitos, e a estrutura de dados é o oposto: um conjunto de elementos de dados que são operados por funções implícitas."
@@ -60,5 +62,5 @@ Nenhuma contradição encontrada. O conteúdo é altamente convergente com o que
 
 ## Open Questions
 
-- **Autoria não confirmada.** A transcrição não menciona o nome do apresentador nem cita a URL exata do post do blog de Uncle Bob referenciado (só descreve o formato de diálogo do post). Não foi possível verificar o título exato do post nem confirmar a atribuição direta a Robert C. Martin a partir do áudio.
-- **Nome exato do post do blog do Uncle Bob** não foi capturado com clareza na transcrição (áudio sugere algo como "Classes versus [Data Structures]"). Vale confirmar contra o blog real de Uncle Bob (`blog.cleancoder.com`) se for necessário citar como fonte primária.
+- ~~**Autoria não confirmada.**~~ **Resolvida em 2026-08-23.** A leitura da fonte primária ([[wiki/sources/classes-vs-estruturas-de-dados-uncle-bob]]) confirma: o post se chama "Classes vs. Data Structures", foi publicado por Robert C. Martin (Uncle Bob) em 16/06/2019 no blog Clean Coder, em `blog.cleancoder.com/uncle-bob/2019/06/16/ObjectsAndDataStructures.html`. A transcrição em vídeo desta fonte é fiel ao conteúdo do post original, mas cobre só as definições e a crítica ao ORM — o post original também traz o exemplo Square/Circle/Triangle (trade-off de extensibilidade, ver [[wiki/concepts/expression-problem]]) e o argumento de Dependency Inversion via direção de dependência de código-fonte, nenhum dos quais aparece nesta transcrição.
+- ~~**Nome exato do post do blog do Uncle Bob**~~ **Resolvida em 2026-08-23** — ver item acima.

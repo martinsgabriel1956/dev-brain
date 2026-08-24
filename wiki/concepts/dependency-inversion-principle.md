@@ -3,9 +3,9 @@ type: concept
 title: "Dependency Inversion Principle (DIP)"
 aliases: ["DIP", "dependency inversion", "inversão de dependência"]
 date_created: 2026-08-06
-date_updated: 2026-08-06
-source_count: 2
-tags: [solid, oop, architecture, dependency-injection]
+date_updated: 2026-08-23
+source_count: 3
+tags: [solid, oop, architecture, dependency-injection, expression-problem, recompilacao]
 skill: tech-mentor-backend
 status: stub
 ---
@@ -37,7 +37,17 @@ Via [[wiki/sources/solid-principles-in-pictures-ugonna-thelma]]: "módulos de al
 - **Abstração**: a interface que conecta as duas classes.
 - **Detalhes**: como a ferramenta funciona por dentro.
 
+## Ângulo de Recompilação/Redeploy (Uncle Bob, Post Original)
+
+Via [[wiki/sources/classes-vs-estruturas-de-dados-uncle-bob]]: uma forma diferente de chegar ao mesmo princípio, partindo da direção das **dependências de código-fonte** em vez de injeção de dependência. Comparando dois estilos de implementar operações sobre um conjunto de tipos (ver [[wiki/concepts/expression-problem]] e [[wiki/concepts/objeto-vs-estrutura-de-dados]]):
+
+- Com um `switch` sobre união discriminada, o arquivo do switch depende de (importa) cada implementação concreta, e quem chama depende do arquivo do switch. Mudar qualquer implementação obriga recompilar/redeployar o switch e, em cascata, todo mundo que o chama.
+- Com [[wiki/concepts/polimorfismo|polimorfismo]] sobre uma interface, tanto quem chama quanto cada implementação dependem só da interface — nunca uma implementação depende de quem chama. Mudar uma implementação só exige recompilar/redeployar aquele arquivo.
+
+Martin nomeia o segundo padrão de Dependency Inversion: as dependências de arquivo-fonte da implementação apontam na direção **oposta** à direção da chamada. É o mesmo princípio da injeção de dependência (abstração entre módulo de alto e baixo nível), só que justificado aqui pelo custo de recompilação/redeploy em cascata, não pela testabilidade.
+
 ## Key Sources
 
 - [[wiki/sources/principios-solid-ilustrados]]
 - [[wiki/sources/solid-principles-in-pictures-ugonna-thelma]]
+- [[wiki/sources/classes-vs-estruturas-de-dados-uncle-bob]] — mesmo princípio via ângulo de direção de dependência de código-fonte e recompilação em cascata

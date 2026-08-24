@@ -3,8 +3,8 @@ type: concept
 title: "YAGNI — You Ain't Gonna Need It"
 aliases: ["yagni", "you ain't gonna need it", "não vou precisar disso"]
 date_created: 2026-04-23
-date_updated: 2026-08-21
-source_count: 11
+date_updated: 2026-08-23
+source_count: 12
 tags: [arquitetura, principios, pragmatismo, over-engineering, xp]
 skill: tech-mentor-backend
 status: stable
@@ -86,3 +86,4 @@ Ver também [[wiki/concepts/fazer-a-coisa-mais-simples-que-poderia-funcionar]] �
 - [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] — exemplo de repositório com métodos CRUD implementados por precaução; benefícios de foco, velocidade e menor complexidade
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — "ignorar YAGNI" listado como sinal de over-engineering; exemplo de usar React Hook Form/Formik em vez de construir gerenciamento de formulário do zero
 - [[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]] — ordem de prioridade explícita YAGNI → SOLID → DRY; escalar sem necessidade real como sinal de mau engenheiro
+- [[wiki/sources/c3-martin-fowler]] — linha do tempo do projeto ([[wiki/entities/c3-project|C3]]) onde a Extreme Programming, metodologia que originou o YAGNI, foi consolidada em 1996

@@ -3,8 +3,8 @@ type: concept
 title: "Unit Test Solitário vs. Sociável"
 aliases: ["solitary unit test", "sociable unit test", "teste unitário solitário", "teste unitário sociável"]
 date_created: 2026-07-07
-date_updated: 2026-08-21
-source_count: 4
+date_updated: 2026-08-23
+source_count: 5
 tags: [testes, unit-test, tdd, martin-fowler, terminologia]
 skill: tech-mentor-testing
 status: stable
@@ -16,7 +16,7 @@ Distinção de Martin Fowler dentro do próprio "unit test": nem todo teste unit
 
 ## As duas variantes
 
-- **Solitário**: todo elemento do programa fora da unidade sob teste (todo **DOC**, no vocabulário de [[wiki/sources/test-double-xunitpatterns-meszaros|Meszaros]]) é substituído por um [[test-doubles|dublê]]. É o unit test "puro" no sentido mais restrito.
+- **Solitário**: todo elemento do programa fora da unidade sob teste (todo **DOC**, no vocabulário de [[wiki/sources/test-double-xunitpatterns-meszaros|Meszaros]] — ver definição isolada em [[wiki/sources/depended-on-component-doc-xunitpatterns]]) é substituído por um [[test-doubles|dublê]]. É o unit test "puro" no sentido mais restrito.
 - **Sociável**: a unidade sob teste colabora com objetos reais internos do próprio processo — só dependências externas (rede, banco, serviços de terceiros) viram double.
 
 ## Por que isso importa: a segunda confusão em cima de "integration test"
@@ -49,5 +49,7 @@ Continua usando "unit test" para os dois casos, qualificando com **"solitary"** 
 
 - [[wiki/sources/integration-test-martin-fowler]]
 - [[wiki/sources/test-double-xunitpatterns-meszaros]] — vocabulário entrada/saída indireta que distingue o double que torna um teste solitário
+- [[wiki/sources/depended-on-component-doc-xunitpatterns]] — fonte primária isolada do termo DOC, o "todo elemento fora da unidade" que define solitário
 - [[wiki/sources/indirect-input-xunitpatterns]] — fonte primária isolada da metade "entrada" desse eixo
+- [[wiki/sources/control-point-xunitpatterns]] — fonte primária isolada do termo control point, o mecanismo formal de comando ao SUT usado tanto no double quanto no exercise SUT
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — exemplo do teste de `add` que "sociabiliza" ao passar a chamar `db.save` real via SQLite, deixando de ser solitário

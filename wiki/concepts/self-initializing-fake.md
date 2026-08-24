@@ -3,8 +3,8 @@ type: concept
 title: "SelfInitializingFake"
 aliases: ["self-initializing fake", "fake auto-inicializável", "fake autoinicializável"]
 date_created: 2026-07-27
-date_updated: 2026-08-21
-source_count: 3
+date_updated: 2026-08-23
+source_count: 4
 tags: [testes, test-doubles, contract-testing, martin-fowler]
 skill: tech-mentor-testing
 status: stable
@@ -46,3 +46,5 @@ Um desafio citado é lidar com parâmetros que variam entre chamadas sem afetar 
 - [[wiki/sources/self-initializing-fake-martin-fowler]] — fonte primária do padrão: mecanismo de cache na primeira chamada, distinção Fake vs. Stub, caso de dados que mudam, pipeline em dois estágios, chave de cache sem parâmetros irrelevantes
 - [[wiki/sources/contract-test-martin-fowler]] — recomendação do padrão como técnica para construir doubles usados em contract tests
 - [[wiki/sources/test-double-xunitpatterns-meszaros]] — definição primária de Fake (implementação simplificada do DOC, nem controle nem observação)
+- [[wiki/sources/depended-on-component-doc-xunitpatterns]] — fonte primária isolada do termo DOC, o componente que o Fake simplifica
+- [[wiki/sources/control-point-xunitpatterns]] — fonte primária isolada do termo control point, o mecanismo formal usado para comandar o Fake no lugar do DOC real

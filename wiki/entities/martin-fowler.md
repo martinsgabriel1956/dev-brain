@@ -3,8 +3,8 @@ type: entity
 title: "Martin Fowler"
 aliases: ["Fowler", "martinfowler.com"]
 date_created: 2026-07-07
-date_updated: 2026-08-21
-source_count: 22
+date_updated: 2026-08-23
+source_count: 26
 tags: [thoughtworks, autor, testes, arquitetura, tech-debt, refactoring, agile]
 skill: tech-mentor-testing
 status: stable
@@ -57,6 +57,14 @@ Segundo [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]
 
 Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter usado o framework de testes caseiro de [[wiki/entities/kent-beck]] no projeto [[wiki/entities/c3-project|C3]] (origem da Extreme Programming), e ter sido um dos primeiros usuários alfa do [[wiki/entities/junit]] — chegando a enviar contribuições de volta para Beck e Erich Gamma logo após sua criação em 1997.
 
+## Consultor no C3 desde 1993
+
+[[wiki/sources/c3-martin-fowler]] é o relato dedicado de Fowler sobre o projeto [[wiki/entities/c3-project|C3]], onde ele próprio atuou como consultor a partir de 1993 — dois anos antes do início do desenvolvimento em Smalltalk e três antes do recomeço de 1996 que consolidou a [[wiki/concepts/extreme-programming|Extreme Programming]]. Ele nota que faltam análises confiáveis sobre o projeto vindas de quem participou em tempo integral, e reafirma (como já fizera em [[wiki/sources/xunit-martin-fowler]]) que a página da Wikipedia sobre o C3 é enganosa.
+
+## Cunhou "Very Low Defect Project" (2004)
+
+[[wiki/sources/very-low-defect-project-martin-fowler]] — bliki de janeiro de 2004, publicado sete meses antes do relato dedicado ao C3 — em que Fowler observa e nomeia a tendência de times de [[wiki/concepts/extreme-programming|Extreme Programming]] com menos de um bug em produção por mês, a partir de quatro casos (incluindo ex-colegas do [[wiki/entities/c3-project|C3]] e projetos-candidato da própria [[wiki/entities/thoughtworks]]). Mesmo traço de cautela terminológica descrito acima: ele evita afirmar que XP garante o resultado ou que outros processos não conseguiriam o mesmo. Ver [[wiki/concepts/very-low-defect-project]].
+
 ## Future of Software Engineering Retreat
 
 [[wiki/sources/cognitive-debt-margaret-storey]] cita uma sessão (breakout session) do "Future of Software Engineering Retreat", organizado por Fowler e a Thoughtworks, onde se discutiu que desenvolvedores precisam desacelerar e usar pair programming, refatoração e TDD para endereçar tanto dívida técnica quanto [[wiki/concepts/divida-cognitiva|dívida cognitiva]]. Citação de segunda mão — a fonte primária (o fragment de Fowler) não foi lida nesta ingestão.
@@ -77,10 +85,14 @@ Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter us
 
 [[wiki/sources/unit-of-work-martin-fowler]] é a própria página do padrão no catálogo online de *PoEAA* (martinfowler.com/eaaCatalog), publicada em 05 de março de 2003 — a definição formal citada acima ("mantém uma lista de objetos afetados por uma transação de negócio e coordena a escrita das alterações e a resolução de problemas de concorrência") vem diretamente dela. É apenas o resumo do catálogo; remete ao Capítulo 11 do ebook para o detalhamento, não lido nesta ingestão.
 
+## Cunhou "Continuous Delivery" formalmente, com ajuda de Jez Humble
+
+[[wiki/sources/continuous-delivery-martin-fowler]] (bliki, mesma data de 2013 que o de Deployment Pipeline) define o termo "Continuous Delivery" propriamente dito: a capacidade — não o ato — de lançar software em produção a qualquer momento, com quatro indicadores concretos desenvolvidos pelo grupo de trabalho de CD da [[wiki/entities/thoughtworks]]. Fowler separa a disciplina com precisão de Continuous Deployment (mesmo traço de precisão terminológica descrito acima), e credita [[wiki/entities/jez-humble]] com "ajuda detalhada" na redação da própria página — Humble e [[wiki/entities/david-farley]] são citados como autores do livro fundacional *Continuous Delivery*. É também aqui que Fowler cunha, via nota de rodapé, a leitura ampla de "[[wiki/concepts/devops-culture|DevOps culture]]" (além de dev+ops) como um dos dois requisitos de CD, ao lado da automação via deployment pipeline.
+
 ## Ver também
 
 - [[piramide-de-testes]]
-- [[ci-cd]] — termo "DeploymentPipeline" é dele
+- [[ci-cd]] — termo "DeploymentPipeline" é dele (bliki de 2013, fonte primária agora ingerida em [[wiki/sources/deployment-pipeline-martin-fowler]]): estágios progressivos por confiança, escopo além de testes (performance/segurança/usabilidade), colaboração e trilha de auditoria
 - [[walking-skeleton]] — padrão da mesma tradição de entrega incremental (Extreme Programming/continuous delivery)
 
 ## Key Sources
@@ -107,3 +119,7 @@ Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter us
 - [[wiki/sources/seedwork-martin-fowler]] — bliki de 2003 sobre reuso via frameworks mínimos ("seedwork"); reabilita parcialmente reuso por copiar-e-colar como alternativa pragmática quando um bom framework compartilhado não está disponível
 - [[wiki/sources/self-initializing-fake-martin-fowler]] — bliki de 2009: mecanismo do Fake que se autoinicializa contra o serviço real na primeira chamada e passa a servir do cache; publicado cerca de um ano e meio antes de recomendar o padrão em [[wiki/sources/contract-test-martin-fowler]] (2011)
 - [[wiki/sources/two-hard-things-martin-fowler]] — bliki de 2009, mantido como página viva: citação de Phil Karlton (naming + cache invalidation), atribuição nunca confirmada, quatro riffs coletados entre 2010 e 2021
+- [[wiki/sources/c3-martin-fowler]] — relato dedicado ao projeto C3, onde Fowler atuou como consultor desde 1993; linha do tempo completa e a tese de que "XP não é garantia de sucesso"
+- [[wiki/sources/very-low-defect-project-martin-fowler]] — bliki de 2004 que cunha o termo VeryLowDefectProject a partir de quatro casos observados, incluindo ex-colegas do C3 e Thoughtworks
+- [[wiki/sources/deployment-pipeline-martin-fowler]] — bliki de 2013 que cunha "Deployment Pipeline": estágios progressivos por confiança, escopo além de testes, colaboração e trilha de auditoria
+- [[wiki/sources/continuous-delivery-martin-fowler]] — bliki de 2013 que define "Continuous Delivery": quatro indicadores, distinção vs. Continuous Deployment, DevOps culture, crédito a Jez Humble

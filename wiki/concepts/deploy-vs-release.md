@@ -3,8 +3,8 @@ type: concept
 title: "Deploy vs. Release"
 aliases: ["deploy vs release", "separar deploy de release", "deploy diferente de release"]
 date_created: 2026-07-09
-date_updated: 2026-07-31
-source_count: 3
+date_updated: 2026-08-23
+source_count: 4
 tags: [devops, deploy, cicd, feature-flags, infra]
 skill: tech-mentor-infra
 status: stable
@@ -38,8 +38,13 @@ Um deploy pode acontecer **sem** release: o código já está na máquina, mas n
 
 Ortogonal a essa distinção: independente de o deploy ser manual (SSH + `git pull` + `npm start`, decisão humana pontual) ou automático (pipeline "triggada" por regra, ex.: merge na `main`), deploy e release continuam sendo eventos separáveis. A diferença entre manual e automático não é o que é executado, é qual o gatilho que dispara a execução — ver [[concepts/ci-cd]].
 
+## O mesmo raciocínio, um nível acima: Continuous Delivery vs. Continuous Deployment
+
+[[wiki/sources/continuous-delivery-martin-fowler]] aplica a mesma lógica de separar capacidade de ato a um nível acima do deploy individual: Continuous Delivery é a **capacidade** de lançar para produção a qualquer momento, enquanto Continuous Deployment é o **ato** automático de fazê-lo a cada mudança que passa no pipeline. Assim como um deploy pode acontecer sem release (feature flag desligada), um pipeline pode ser capaz de ir para produção a qualquer commit sem que isso de fato aconteça a cada vez — a decisão de exercer essa capacidade costuma ser do negócio, não uma limitação técnica. Ver [[wiki/concepts/ci-cd]] para os quatro indicadores concretos de que um time tem essa capacidade.
+
 ## Key Sources
 
 - [[sources/tipos-de-deploy]]
 - [[wiki/sources/rapid-release-at-massive-scale-facebook]] — Gatekeeper (Meta) como implementação real dessa separação em escala
 - [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — reforço didático da distinção com os mesmos dois mecanismos (feature flag e tráfego direcionado)
+- [[wiki/sources/continuous-delivery-martin-fowler]] — a mesma distinção capacidade-vs-ato aplicada a Continuous Delivery vs. Continuous Deployment

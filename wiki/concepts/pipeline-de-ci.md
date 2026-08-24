@@ -3,8 +3,8 @@ type: concept
 title: "Pipeline de CI"
 aliases: ["CI pipeline", "pipeline de integração contínua", "stages de CI", "build pipeline"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-08-23
+source_count: 3
 tags: [devops, cicd, pipeline, testes, build]
 skill: tech-mentor-infra
 status: stable
@@ -13,6 +13,8 @@ status: stable
 # Pipeline de CI
 
 Sequência de stages automatizados que validam cada commit antes de chegar à produção. Organizado do mais rápido ao mais lento.
+
+O princípio geral por trás dessa ordenação — estágios progressivos que trocam tempo extra por confiança crescente — vem de [[wiki/entities/martin-fowler]] ([[wiki/sources/deployment-pipeline-martin-fowler]]): estágios iniciais (lint, unit tests) pegam a maioria dos problemas rápido; estágios finais (integration tests, security gates) fazem uma checagem mais lenta e minuciosa. Os 7 estágios abaixo são uma implementação concreta desse princípio.
 
 ## Estrutura de 7 Stages
 
@@ -88,3 +90,5 @@ cache-to: type=gha,mode=max
 ## Key Sources
 
 - [[sources/cicd-pipeline]]
+- [[wiki/sources/deployment-pipeline-martin-fowler]] — origem do princípio de estágios progressivos por confiança
+- [[wiki/sources/continuous-delivery-martin-fowler]] — o deployment pipeline como um dos dois requisitos de Continuous Delivery, ao lado da cultura colaborativa ([[wiki/concepts/devops-culture]])

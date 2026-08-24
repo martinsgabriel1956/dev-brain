@@ -3,8 +3,8 @@ type: concept
 title: "TDD — Test-Driven Development"
 aliases: ["test driven development", "red green refactor", "desenvolvimento guiado por testes"]
 date_created: 2026-04-22
-date_updated: 2026-08-12
-source_count: 13
+date_updated: 2026-08-23
+source_count: 17
 tags: [testes, tdd, design, red-green-refactor, qualidade, dora]
 skill: tech-mentor-testing
 status: stable
@@ -137,5 +137,10 @@ Quando a interface, o input e o output já são conhecidos por uma especificaç�
 - [[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] — expectativa que quebra expõe bug de autorização real; teste como rede de segurança contra regressão futura não relacionada
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] — liga a regra "não misturar feature e refatoração" de Fowler ao ciclo RED-GREEN-REFACTOR
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — testes escritos antes do código como condição de parada objetiva de um loop agêntico goal-based
+- [[wiki/sources/depended-on-component-doc-xunitpatterns]] — fonte primária isolada do termo DOC, o componente que se isola ao escrever testes unitários no ciclo TDD
+- [[wiki/sources/control-point-xunitpatterns]] — fonte primária isolada do termo control point: fixture setup/teardown e exercise SUT, as fases centrais do ciclo TDD, são usos concretos desse mecanismo
+- [[wiki/sources/fixture-setup-xunitpatterns]] — fonte primária isolada do termo fixture setup: a fase que estabelece as precondições ("before" picture) antes do SUT poder ser exercitado; distingue a fase (fixture setup) do seu produto (test fixture/test context)
 - [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] — TDD como prática de prevenção de dívida técnica, não gestão; fase REFACTOR do ciclo como Boy Scout Rule estruturada
 - [[wiki/sources/test-double-xunitpatterns-meszaros]] — fonte primária dos doubles usados para isolar dependências no ciclo
+- [[wiki/sources/c3-martin-fowler]] — história do projeto [[wiki/entities/c3-project|C3]], onde as práticas da [[wiki/concepts/extreme-programming|Extreme Programming]] (incluindo o TDD) foram consolidadas pela primeira vez em 1996
+- [[wiki/sources/very-low-defect-project-martin-fowler]] — times de XP disciplinados chegando a menos de um bug/mês; fonte não detalha causalidade prática-a-prática, mas ver [[wiki/concepts/very-low-defect-project]]
