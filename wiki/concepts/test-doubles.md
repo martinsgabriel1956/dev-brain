@@ -4,7 +4,7 @@ title: "Test Doubles"
 aliases: ["dublê de teste", "mock stub fake spy", "xunit test patterns"]
 date_created: 2026-04-22
 date_updated: 2026-08-21
-source_count: 9
+source_count: 10
 tags: [testes, test-doubles, mock, stub, fake, spy, dummy]
 skill: tech-mentor-testing
 status: stable
@@ -19,7 +19,7 @@ Termo genérico para qualquer objeto que **substitui uma dependência real nos t
 A fonte primária ([[wiki/sources/test-double-xunitpatterns-meszaros]]) sustenta a taxonomia num vocabulário preciso que vale internalizar — é o que falta na descrição informal "mock é fake com asserção":
 
 - **SUT** (*System Under Test*) — o código sendo testado. **Nunca** é o que se substitui.
-- **DOC** (*Depended-On Component*) — a dependência real. **É o que o double substitui.**
+- **DOC** (*Depended-On Component*) — a dependência real. **É o que o double substitui.** Definição formal isolada em [[wiki/sources/doc-xunitpatterns]]: classe ou componente do qual o SUT depende, tipicamente por delegação via chamadas de método.
 - **Entrada indireta** (*indirect input*) — valor que o SUT **recebe** de um DOC → precisa de **ponto de controle** → Stub/Mock.
 - **Saída indireta** (*indirect output*) — chamada/efeito que o SUT **dispara** sobre um DOC → precisa de **ponto de observação** → Spy/Mock.
 
@@ -85,6 +85,7 @@ Mockar um banco de dados permite verificar que `db.save` foi chamado, mas não c
 
 ## Key Sources
 
+- [[wiki/sources/doc-xunitpatterns]] — verbete de glossário dedicado à definição formal de DOC, o que um Test Double substitui
 - [[wiki/sources/indirect-input-xunitpatterns]] — verbete de glossário dedicado a "indirect input", a metade do eixo entrada/saída que motiva o uso de Stub
 - [[wiki/sources/test-double-xunitpatterns-meszaros]] — **fonte primária** da taxonomia (página canônica de Meszaros no xUnitPatterns.com); vocabulário SUT/DOC, entrada/saída indireta, pontos de controle/observação; Mock ≠ "Stub + asserção"
 - [[wiki/sources/test-doubles]]

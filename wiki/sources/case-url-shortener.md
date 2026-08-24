@@ -3,8 +3,8 @@ type: source
 title: "Case: URL Shortener"
 aliases: ["url shortener design", "case url shortener", "bitly design"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-08-21
+source_count: 2
 tags: [system-design, cases, url-shortener, hashing, cache, redirect, snowflake]
 skill: tech-mentor-system-design
 source_file: /home/gabriel-martins/Documentos/dev-study/raw/case-url-shortener.md
@@ -57,6 +57,10 @@ Base62 7 chars                  = 62^7 = 3,5T combinações
 
 - Rate limiting por IP no endpoint de redirect — como evitar falsos positivos em NATs compartilhados?
 - ClickHouse vs DynamoDB para analytics de URL shortener em escala de 10B events/dia?
+
+## Fonte-Irmã: o Framework Genérico Por Trás do Caso
+
+[[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] usa o mesmo problema (encurtador de URL) para ensinar o processo de 7 passos de system design em si — requisitos funcionais/não-funcionais, estimativas, componentes, API, stack, revisão final — em vez de mergulhar nas decisões técnicas específicas já documentadas nesta página. Resolve a unicidade URL-curta↔URL-longa com uma abordagem mais simples (hash truncado + retry em colisão) do que o Snowflake ID + Base62 preferido aqui; útil como contraste de profundidade/rigor entre um vídeo introdutório e um deep-dive.
 
 ## Raw Quotes
 

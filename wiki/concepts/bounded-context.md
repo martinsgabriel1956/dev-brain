@@ -3,8 +3,8 @@ type: concept
 title: "Bounded Context"
 aliases: ["bounded context", "contexto delimitado"]
 date_created: 2026-08-18
-date_updated: 2026-08-18
-source_count: 3
+date_updated: 2026-08-21
+source_count: 4
 tags: [ddd, arquitetura, cqrs, microsservicos]
 skill: tech-mentor-backend
 status: stub
@@ -28,8 +28,13 @@ Fowler é explícito: aplicar CQRS como estilo arquitetural geral para um sistem
 
 [[wiki/sources/monolith-first-martin-fowler]] traz o segundo argumento central do princípio [[wiki/concepts/monolith-first]]: microsserviços só funcionam bem com bounded contexts bons e estáveis, mas mesmo arquitetos experientes em domínios familiares erram as fronteiras no início de um projeto — refatorar funcionalidade entre serviços já distribuídos é muito mais caro do que dentro de um monolito. Construir o monolito primeiro dá tempo de descobrir as fronteiras certas antes que o design distribuído as trave.
 
+## Base Conceitual dos Serviços em Microsserviços
+
+[[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] reforça que os serviços dentro de uma arquitetura de microsserviços são "fortemente inspirados" em bounded context: cada serviço deve ter uma e somente uma responsabilidade dentro de um contexto delimitado. É a mesma ideia já central nesta página (fronteira do modelo de domínio), aqui aplicada como pré-requisito conceitual — antes mesmo de discutir extração ou maturidade de módulo — para que um serviço seja considerado um "microsserviço" de fato, e não apenas uma divisão técnica arbitrária.
+
 ## Key Sources
 
 - [[wiki/sources/monolith-first-martin-fowler]] — fonte primária: dificuldade de acertar bounded contexts no início como segundo argumento contra começar com microsserviços
 - [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — bounded context como unidade de módulo do monolito modular, critério de maturidade para extração a microsserviço
+- [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] — bounded context como base conceitual de "uma e somente uma responsabilidade" dentro de um serviço de microsserviços
 - [[wiki/sources/cqrs-martin-fowler]]

@@ -3,8 +3,8 @@ type: concept
 title: "Distributed Lock"
 aliases: ["lock distribuído", "redis set nx", "distributed locking"]
 date_created: 2026-04-22
-date_updated: 2026-07-30
-source_count: 3
+date_updated: 2026-08-21
+source_count: 4
 tags: [system-design, redis, mysql, concorrencia, distributed-systems, race-condition]
 skill: tech-mentor-system-design
 status: stable
@@ -57,6 +57,7 @@ Processo lento ressuscita após TTL expirar e acredita ainda ter o lock. Soluç�
 [[concepts/split-brain]] — Redlock tenta resolver, mas tem controvérsia (Martin Kleppmann vs antirez).
 [[concepts/fencing-token]] — complemento obrigatório para locks em recursos críticos.
 [[concepts/skip-locked]] — alternativa para filas de trabalho sem broker externo.
+[[wiki/concepts/tuple-space]] / [[wiki/concepts/object-space]] — mesma garantia de exclusão mútua, obtida por remoção atômica (take) de uma tupla/objeto do espaço compartilhado em vez de uma primitiva de lock explícita.
 
 ## Key Sources
 
@@ -64,3 +65,4 @@ Processo lento ressuscita após TTL expirar e acredita ainda ter o lock. Soluç�
 - [[sources/skip-locked-fencing-token]]
 - [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] — reserva de estoque via linhas físicas + [[concepts/skip-locked]] no MySQL, sem lock explícito de aplicação
 - [[wiki/sources/system-design-entrevista-cinema-draw-io]] — exemplo negativo: reserva de assento via Redis TTL sem check-and-reserve atômico contra a fonte de disponibilidade, gerando leitura inconsistente entre API externa e estado interno de reserva
+- [[wiki/sources/tuple-space-wikipedia]] — modelo alternativo de exclusão mútua embutida (tuple space/Object Space): a remoção atômica da tupla/objeto do espaço já é o lock, sem primitiva separada

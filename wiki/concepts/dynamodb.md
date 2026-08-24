@@ -3,8 +3,8 @@ type: concept
 title: "Amazon DynamoDB"
 aliases: ["DynamoDB", "Dynamo"]
 date_created: 2026-08-04
-date_updated: 2026-08-18
-source_count: 3
+date_updated: 2026-08-21
+source_count: 4
 tags: ["aws", "dynamodb", "nosql", "banco-de-dados", "infra", "cloud"]
 skill: tech-mentor-infra
 status: stub
@@ -45,3 +45,4 @@ Antes de ir para produção, é possível desenvolver contra uma emulação loca
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]
 - [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — exemplo de partition/sort key, modos Provisioned vs. On-Demand, e casos ideais vs. não ideais
 - [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]] — uso via LocalStack para desenvolvimento local, em conjunto com PostgreSQL como banco principal
+- [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — escolha de NoSQL sobre SQL justificada por dois fatores concretos aplicados a um encurtador de URL: dados naturalmente chave-valor (short-code → URL longa) e requisito não-funcional de baixa latência

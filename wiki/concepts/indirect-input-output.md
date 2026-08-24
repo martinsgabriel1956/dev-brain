@@ -4,7 +4,7 @@ title: "Entrada e Saída Indireta (Indirect Input / Indirect Output)"
 aliases: ["indirect input", "indirect output", "entrada indireta", "saída indireta", "control point", "observation point", "ponto de controle", "ponto de observação", "direct input", "entrada direta"]
 date_created: 2026-08-21
 date_updated: 2026-08-21
-source_count: 1
+source_count: 2
 tags: [testes, test-doubles, sut, doc, terminologia, xunit]
 skill: tech-mentor-testing
 status: stub
@@ -18,6 +18,8 @@ Par de termos do vocabulário formal de [[wiki/entities/gerard-meszaros]] ([[wik
 
 - **Entrada indireta** (*indirect input*) — valor que o SUT **recebe** de um DOC e que afeta seu comportamento. Fonte primária: [[wiki/sources/indirect-input-xunitpatterns]]. Formas concretas: retorno de função, parâmetro de saída (out) atualizado, ou erro/exceção levantado pelo DOC.
 - **Saída indireta** (*indirect output*) — chamada ou efeito que o SUT **dispara** sobre um DOC, observável de fora.
+
+O "DOC" citado nos dois casos tem definição formal própria em [[wiki/sources/doc-xunitpatterns]]: classe ou componente de granularidade grossa do qual o SUT depende, geralmente por delegação via chamadas de método — e cujo interesse, em teste automatizado, está justamente em poder **examinar** (saída indireta) e **controlar** (entrada indireta) suas interações com o SUT.
 
 A contraparte de entrada indireta é a **entrada direta** (*direct input*): um valor passado explicitamente ao SUT pelo próprio teste (ex.: argumento de método), sem passar por nenhum DOC.
 
@@ -49,4 +51,5 @@ Sem esse vocabulário, é fácil descrever "mock" como "stub com asserção" —
 ## Key Sources
 
 - [[wiki/sources/indirect-input-xunitpatterns]] — fonte primária de "indirect input"
+- [[wiki/sources/doc-xunitpatterns]] — fonte primária da definição formal de DOC
 - [[wiki/sources/test-double-xunitpatterns-meszaros]] — vocabulário completo SUT/DOC/entrada-saída indireta/pontos de controle-observação

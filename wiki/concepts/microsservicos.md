@@ -3,8 +3,8 @@ type: concept
 title: "Microsserviços"
 aliases: ["microsservicos", "microservices", "arquitetura de microsserviços", "decomposição por domínio"]
 date_created: 2026-07-24
-date_updated: 2026-08-18
-source_count: 14
+date_updated: 2026-08-21
+source_count: 16
 tags: [microsservicos, arquitetura, bounded-context, distributed-monolith, circuit-breaker, resiliencia]
 skill: tech-mentor-backend
 status: draft
@@ -84,8 +84,26 @@ Times pequenos e autônomos — um dos benefícios centrais de microsserviços �
 
 [[wiki/concepts/monolith-first]] é o princípio de Fowler que nomeia formalmente a sequência já documentada nesta página em "Custo-Benefício": quase toda história de microsserviços bem-sucedida começou como monolito que cresceu e foi quebrado depois; quase todo sistema criado do zero já como microsserviços teve sérios problemas. [[wiki/sources/microsservicos-monolito-first-renato-augusto]] conecta essa observação diretamente à falta de conhecimento de domínio no início de um projeto — o mesmo argumento central da seção "Decomposição Correta" acima.
 
+## Critério Prático de Decisão: Proporção Leitura:Escrita
+
+[[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] usa um exemplo concreto e mensurável para decidir monolito vs. microsserviços, em vez de tratar a escolha como debate abstrato: um encurtador de URL com proporção leitura:escrita de 100:1 (100M redirects/dia vs. 1M criações/dia) justifica decompor em microsserviços porque permite escalar só o serviço de redirect, sem escalar a unidade inteira junto — a mesma vantagem de "escalabilidade seletiva" já registrada acima em Custo-Benefício, aqui ancorada num número de tráfego específico em vez de um argumento genérico.
+
+## Origem Histórica: de SOA/ESB (2005) ao Nome Consolidado (2012)
+
+[[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] completa, por um ângulo mais antigo, a linha do tempo que o artigo de Fowler/Lewis (2014) já documenta acima: em 2005, Peter Rogers cunhou o termo "microweb service" numa conferência (Web Services Edge), propondo serviços enxutos e REST como contraponto direto ao [[wiki/concepts/esb-enterprise-service-bus|SOA/ESB]] então dominante — barramento central, serviços robustos/genéricos, [[wiki/concepts/soap|SOAP]] com XML verboso. Só em 2012 um grupo de arquitetos consolidou o nome "microsserviços", no mesmo ano em que a apresentação "Microservices — Java, the Unix Way" (Polônia) trouxe a analogia com a filosofia Unix — processos pequenos, responsabilidade única, composição para resolver problemas maiores. A fonte não relaciona essa apresentação de 2012 ao artigo formal de Fowler/Lewis (2014) — em aberto se são desenvolvimentos independentes convergindo no mesmo nome.
+
+A mesma fonte formaliza, de maneira mais enxuta que as nove características de Fowler/Lewis, três requisitos práticos para um serviço contar como microsserviço: **standalone** (funciona sozinho), **deploy independente** (entrega não depende de outra aplicação) e **funcionalidade útil** dentro de um domínio — compatível com o critério de extração já citado acima em "Custo-Benefício" (`references/architecture-foundations.md` da skill).
+
+## O Desafio Menos Discutido: Capacitação do Time
+
+Além dos desafios técnicos já listados em "Custo-Benefício" (consistência distribuída, latência, observabilidade), [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] destaca um desafio organizacional pouco coberto nos materiais sobre o tema: sob pressão de prazo, desconhecimento do time ou falha na gestão técnica, é comum implementar só parte das estratégias de descentralização — parar no meio do caminho e abrir mão de práticas essenciais, como banco por serviço ou compartilhamento correto de bibliotecas de código. Segundo o autor, essa é a diferença real entre projetos com chance de dar certo e projetos fadados a serem reescritos assim que a complexidade cresce — reforça, por um ângulo de capacitação/gestão de time (não só arquitetura técnica), o mesmo padrão já central nesta página de "distributed monolith como sintoma de microsserviços malfeitos".
+
+A mesma fonte reafirma a regra de acesso exclusivo via API (nunca via banco compartilhado) como o ponto mais importante a reter sobre o modelo — mas sinaliza que um vídeo futuro da série vai relativizar essa regra se aplicada sem cuidado; até essa fonte ser ingerida, a wiki trata "database per service" como regra praticamente absoluta (ver [[wiki/concepts/database-per-service]]).
+
 ## Key Sources
 
+- [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] — origem histórica (Peter Rogers 2005, SOA/ESB como contraponto, "Microservices — Java, the Unix Way" 2012), três requisitos práticos (standalone, deploy independente, funcionalidade útil), e o desafio de capacitação de time como diferença entre projetos que dão certo e os que fracassam
+- [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — critério de decisão monolito vs. microsserviços ancorado na proporção leitura:escrita (100:1) de um caso concreto (encurtador de URL)
 - [[wiki/sources/monolith-first-martin-fowler]] — fonte primária: MicroservicePremium, os quatro caminhos práticos de execução, e o contra-argumento reconhecido por Fowler a favor de começar direto com microsserviços em substituições de sistema
 - [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — caso Amazon Prime Video, princípio Monolith First de Fowler nomeado explicitamente, YAGNI como mecanismo por trás da recomendação de não começar com microsserviços
 - [[wiki/sources/arquitetura-de-sacrificio]] — Fowler **desaconselha** microsserviços como arquitetura de sacrifício (distribuição + assincronia = amplificadores de complexidade); melhor monolito primeiro, desmontado gradualmente depois

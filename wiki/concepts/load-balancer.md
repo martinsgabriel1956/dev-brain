@@ -3,8 +3,8 @@ type: concept
 title: "Load Balancer"
 aliases: ["lb", "load balancing", "l4", "l7", "round robin"]
 date_created: 2026-04-23
-date_updated: 2026-08-19
-source_count: 18
+date_updated: 2026-08-21
+source_count: 19
 tags: [load-balancer, l4, l7, round-robin, health-check, alta-disponibilidade, infra, nginx]
 skill: tech-mentor-infra
 status: stub
@@ -100,3 +100,4 @@ Nem todo [[wiki/concepts/reverse-proxy]] é um load balancer: um LB decide **ent
 - [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — ALB acoplado ao [[wiki/concepts/auto-scaling|Auto Scaling Group]] como arquitetura clássica AWS: health checks constantes removem instâncias falhas do pool automaticamente
 - [[wiki/sources/system-design-load-balancer-nivel-macaco]] — demonstração em simulador nível a nível (sem LB → LB com round robin → tipos); Global Load Balancer por geolocalização, Gateway Load Balancer (Cloudflare) e Ingress citados como taxonomia; distinção didática Load Balancer vs. DNS via analogia de restaurante e ênfase no health check
 - [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — LB na frente de múltiplas instâncias da API de ingestão, adicionado por exigência de redundância/alta disponibilidade mesmo sem alta volumetria (ver [[wiki/concepts/escalabilidade-horizontal]])
+- [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — Amazon Elastic Load Balancer distribuindo tráfego entre servidores redundantes de cada microsserviço, justificado pelo requisito não-funcional de resiliência a falhas

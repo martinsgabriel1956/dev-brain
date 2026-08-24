@@ -2,6 +2,74 @@
 
 ---
 
+## [2026-08-21] ingest | Tuple Space (Wikipédia)
+
+**Fonte:** [[wiki/sources/tuple-space-wikipedia]] — verbete completo de https://en.wikipedia.org/wiki/Tuple_space, buscado via WebFetch, traduzido integralmente para pt-BR e salvo em `raw/tuple-space-wikipedia.md`.
+**Skill carregada:** `tech-mentor-backend` (path real `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/`). Consultado o índice do `SKILL.md`; nenhuma entrada de `references/` cobre tuple space/paradigma Linda diretamente (mais próximo: `distributed-systems.md`, `distributed-locking.md`, sem menção ao termo) — registrado como lacuna de referência em vez de forçar um match artificial.
+**Cluster novo, sem sobreposição prévia na wiki:** nenhuma página existente tratava tuple space, Linda, Object Space ou JavaSpaces; único ponto de contato foi [[wiki/concepts/distributed-lock]], para o qual foi adicionada uma seção comparativa (exclusão mútua por remoção atômica vs. lock explícito).
+
+**Arquivos criados:**
+- `raw/tuple-space-wikipedia.md`
+- `wiki/sources/tuple-space-wikipedia.md` — TL;DR, 7 key claims com evidência, 4 entidades, 8 conceitos, open questions (lacuna de referência na skill, fronteira com distributed lock, verbete datado)
+- `wiki/concepts/tuple-space.md`, `wiki/concepts/linda-coordination-language.md`, `wiki/concepts/object-space.md`, `wiki/concepts/javaspaces.md`, `wiki/concepts/master-worker-pattern.md`, `wiki/concepts/memoria-compartilhada-distribuida.md`, `wiki/concepts/blackboard-metaphor.md`, `wiki/concepts/space-based-architecture.md` (todos stub, com backlink recíproco à fonte)
+- `wiki/entities/david-gelernter.md`, `wiki/entities/nicholas-carriero.md`, `wiki/entities/ken-arnold.md`, `wiki/entities/bill-joy.md` (todos stub)
+
+**Páginas atualizadas:**
+- `wiki/concepts/distributed-lock.md` — nova linha em "Relacionado" e "Key Sources" contrastando o modelo de exclusão mútua por remoção atômica (tuple space/Object Space) com lock explícito; `source_count` 3→4, `date_updated` bump
+- `wiki/index.md` — nova linha em Sources; nova subseção "Coordenação Distribuída & Tuple Space" em Concepts (8 páginas); 4 novas linhas em Entities
+
+**Notas / open questions:** (1) skill `tech-mentor-backend` não tem referência dedicada a tuple space/Linda — candidato a lacuna a reportar fora do escopo deste ingest, já que o agente não edita `skills/`. (2) Fronteira formal entre exclusão mútua via *take* atômico (tuple space) e locks explícitos (Redlock, advisory lock) registrada como open question em ambas as pontas ([[wiki/sources/tuple-space-wikipedia]] e [[wiki/concepts/distributed-lock]]), não resolvida. (3) [[wiki/concepts/space-based-architecture]] ficou como stub fino — o verbete só cita o termo em "See Also"; candidato natural a um ingest futuro dedicado (GigaSpaces, Hazelcast).
+
+---
+
+## [2026-08-21] ingest | DOC — Depended-On Component (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/doc-xunitpatterns]] — verbete de glossário curto (duas frases) de http://xunitpatterns.com/DOC.html, buscado via `curl` (WebFetch falhou com `ECONNREFUSED` no host do site — provável bloqueio de IP/CDN), traduzido integralmente para PT-BR e salvo em `raw/doc-xunitpatterns.md`.
+**Skill carregada:** `tech-mentor-testing` — path real `/home/gabriel-martins/Documentos/skills/tech-mentor-testing/`. Consultado o índice do `SKILL.md`; nenhuma entrada específica para "DOC"/"depended-on component" nos arquivos de `references/` (o vocabulário SUT/DOC já estava coberto na wiki via ingests anteriores do mesmo site).
+**Nota de duplicidade evitada:** o termo "DOC" já era usado extensivamente em [[wiki/concepts/test-doubles]], [[wiki/concepts/indirect-input-output]] e [[wiki/sources/test-double-xunitpatterns-meszaros]], mas sem uma fonte primária dedicada só à sua definição formal de glossário — mesmo padrão do verbete-irmão "indirect input", já ingerido. Tratada como fonte-irmã que fecha uma citação específica, não substitui as anteriores.
+
+**Arquivos criados:**
+- `raw/doc-xunitpatterns.md`
+- `wiki/sources/doc-xunitpatterns.md` — TL;DR, 3 key claims com evidência, entidade e conceitos tocados, open question (verbetes-irmãos "control point"/"observation point"/"direct input" ainda não ingeridos)
+
+**Páginas atualizadas (backlink + frontmatter `source_count`/`date_updated`):**
+- `wiki/concepts/test-doubles.md` — definição formal de DOC amarrada à frase "é o que o double substitui"; nova linha em Key Sources
+- `wiki/concepts/indirect-input-output.md` — novo parágrafo ligando "examinar e controlar" do verbete de DOC ao par observação/controle já documentado; nova linha em Key Sources
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources, acima da fonte-irmã de "indirect input"
+
+**Notas / open questions:** (1) WebFetch falhou ao conectar no host do xUnitPatterns.com (`ECONNREFUSED`) — usado `curl` direto como alternativa, mesmo padrão que pode se repetir em ingests futuros do mesmo domínio. (2) Verbete deliberadamente enxuto (sem exemplo de código), servindo só como citação de definição rápida. (3) Vocabulário-irmão do glossário ("control point", "observation point", "direct input") segue não ingerido individualmente — candidato natural para fechar a série, junto com a mesma lacuna já registrada em [[wiki/sources/indirect-input-xunitpatterns]].
+
+---
+
+## [2026-08-21] ingest | Como Projetar Sistemas: Um Passo a Passo Completo (Estudo de Caso: Encurtador de URLs)
+
+**Fonte:** [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — transcrição de vídeo em português colada pelo usuário no chat, já em português (sem necessidade de tradução), reorganizada em seções e salva em `raw/como-projetar-sistemas-encurtador-de-urls-passo-a-passo.md`. Autor/canal não identificado na transcrição.
+**Skill carregada:** `tech-mentor-system-design` — path real `/home/gabriel-martins/Documentos/skills/tech-mentor-system-design/`. Consultado o índice do `SKILL.md` (entrada "System Design Clássicos... URL Shortener" → `references/system-design-cases.md`) e a seção 1 (URL Shortener) desse arquivo de referência para calibrar contra a decomposição de requisitos, estimativas e Base62/Snowflake ID já documentados na skill.
+**Nota de duplicidade evitada:** já existia [[wiki/sources/case-url-shortener]] na wiki, cobrindo o mesmo problema (encurtador de URL) em profundidade técnica (Snowflake ID, cache em camadas, analytics async). A nova fonte não duplica esse conteúdo — é um vídeo introdutório sobre o **framework de 7 passos de system design em si**, usando o encurtador só como exemplo do início ao fim; tratada como fonte-irmã, com seção cruzada em ambas as páginas explicando a diferença de foco/profundidade.
+
+**Arquivos criados:**
+- `raw/como-projetar-sistemas-encurtador-de-urls-passo-a-passo.md`
+- `wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo.md` — TL;DR, 12 key claims com evidência, conceitos tocados, open questions (autor não identificado; solução de unicidade por hash+retry não comparada em custo com Snowflake ID; Cognito/Amplify sem página própria ainda)
+
+**Páginas atualizadas (backlink + frontmatter `source_count`/`date_updated`):**
+- `wiki/sources/case-url-shortener.md` — nova seção "Fonte-Irmã: o Framework Genérico Por Trás do Caso"
+- `wiki/concepts/entrevista-system-design.md` — nova seção sobre o framework de 7 passos e a demonstração ao vivo do valor do passo de revisão final
+- `wiki/concepts/arquitetura-de-software.md` — nova linha em Key Sources (definição de abertura + tradeoff como fio condutor)
+- `wiki/concepts/microsservicos.md` — nova seção "Critério Prático de Decisão: Proporção Leitura:Escrita"
+- `wiki/concepts/monolito.md` — nova seção "A Analogia do Canivete Suíço"
+- `wiki/concepts/escalabilidade-horizontal.md` — nova linha em Key Sources (redundância de servidores como tática de resiliência)
+- `wiki/concepts/api-gateway.md` — nova linha em Key Sources (Amazon API Gateway + Cognito na stack de exemplo)
+- `wiki/concepts/dynamodb.md` — nova linha em Key Sources (justificativa NoSQL chave-valor + baixa latência)
+- `wiki/concepts/http-redirect-301-302.md` — nova linha em Key Sources (menção rápida, sem aprofundar)
+- `wiki/concepts/load-balancer.md` — nova linha em Key Sources (Elastic Load Balancer por resiliência)
+- `wiki/concepts/estimativas-back-of-envelope.md` — nova linha em Key Sources (proporção leitura:escrita como número que direciona decisão arquitetural)
+- `wiki/index.md` — nova linha em Sources, no topo da tabela
+
+**Notas / open questions:** (1) Autor/canal não identificado — sem elementos estilísticos suficientes para inferir autoria, diferente de outras fontes de system design já na wiki. (2) A solução de unicidade proposta (hash truncado + retry em colisão) é mais simples que o Snowflake ID + Base62 já preferido em [[wiki/sources/case-url-shortener]], mas a fonte não compara taxas de colisão em escala — lacuna registrada na fonte. (3) Cognito e Amplify aparecem na stack de exemplo mas sem profundidade suficiente para justificar stub próprio ainda.
+
+---
+
 ## [2026-08-19] ingest | Unit of Work (eaaCatalog, Martin Fowler)
 
 **Fonte:** [[wiki/sources/unit-of-work-martin-fowler]] — página do catálogo online de *Patterns of Enterprise Application Architecture* em https://martinfowler.com/eaaCatalog/unitOfWork.html, buscada via WebFetch, traduzida integralmente para PT-BR e salva em `raw/unit-of-work-martin-fowler.md` (conteúdo original em inglês).
@@ -7794,3 +7862,24 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — novas linhas em Sources, Concepts e Entities
 
 **Notas / open questions:** (1) **Corrige uma lacuna de atribuição espalhada por 4 páginas** — a citação de Phil Karlton já era citada em [[wiki/concepts/naming]], [[wiki/concepts/tradeoff-de-cache]], [[wiki/sources/cache-stampede-invalidation]] e [[wiki/sources/5-principios-programador]] sem nenhuma delas apontar para uma origem ou mencionar que a atribuição nunca foi confirmada — mesmo Fowler, que curou a página fonte, admite nunca ter achado uma fonte primária para Karlton. Todas as quatro páginas foram atualizadas para refletir essa incerteza em vez de tratar a citação como fato estabelecido. (2) **Sem contradições** — ingestão puramente aditiva/corretiva de atribuição. (3) **Autores dos riffs (Leon Bambrick, Mathias Verraes, Phillip Scott Bowden, Nat Pryce) não ganharam entity page** — citados só pelo tweet reproduzido, sem outro conteúdo que os caracterize; diferente de Phil Karlton, que é o sujeito central do próprio artigo. (4) **Fonte é um bliki muito curto e informal (piadas/citações)**, por isso o skill mapeado (`tech-mentor-leadership`) não tem uma seção de referência dedicada ao tema — sinalizado no início desta entrada, tratado como natureza do conteúdo (folclore, não técnica formal), não como lacuna real da skill.
+
+## [2026-08-21] ingest | Microsserviços: História, SOA/ESB, Benefícios e Desafios (Bernardo Lobato)
+
+**Fonte:** [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] — transcrição de vídeo do YouTube, já em português (sem necessidade de tradução), estruturada e salva em `raw/microsservicos-historia-soa-esb-bernardo-lobato.md`.
+**Skill carregada:** `tech-mentor-backend`. Consultado o índice (linha "Arquitetura, Clean Architecture, Microsserviços, Monolito...") → `references/architecture-foundations.md`, seção "Microsserviços vs Monolito Modular" (caminho arquitetural saudável, critérios reais de extração, anti-padrão distributed monolith) usada para calibrar as claims sobre requisitos práticos e database per service.
+
+**Arquivos criados:**
+- `raw/microsservicos-historia-soa-esb-bernardo-lobato.md` — transcrição estruturada em Markdown
+- `wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato.md` — TL;DR, 9 key claims com evidência, entidades/conceitos, open questions, citações preservadas
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/microsservicos.md` — `source_count` 15 → 16; duas novas seções ("Origem Histórica: de SOA/ESB (2005) ao Nome Consolidado (2012)" e "O Desafio Menos Discutido: Capacitação do Time"); nova linha em Key Sources
+- `wiki/concepts/esb-enterprise-service-bus.md` — `source_count` 1 → 2; `status` stub → draft; WSO2 ESB como exemplo open source acrescentado ao "Auge"; nova seção "SOA: o Modelo Arquitetural em Torno do ESB"; nova linha em Key Sources
+- `wiki/concepts/soap.md` — `source_count` 2 → 3; nova linha em Key Sources (terceira fonte independente do mesmo autor confirmando SOAP/XML como protocolo típico de SOA)
+- `wiki/concepts/bounded-context.md` — `source_count` 3 → 4; nova seção "Base Conceitual dos Serviços em Microsserviços"; nova linha em Key Sources
+- `wiki/concepts/database-per-service.md` — `source_count` 4 → 5; nova seção "Um Contraponto Prometido, Ainda Não Ingerido" registrando que o autor promete relativizar a regra "banco exclusivo por serviço" num vídeo futuro; nova linha em Key Sources
+- `wiki/concepts/monolith-first.md` — `source_count` 3 → 4; nova linha em Key Sources (quarta fonte independente reforçando a mesma recomendação)
+- `wiki/entities/bernardo-lobato.md` — `source_count` 11 → 12; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Atribuição histórica não verificada** — a origem do termo "microweb service" (Peter Rogers, 2005, conferência Web Services Edge) e a apresentação "Microservices — Java, the Unix Way" (Polônia, 2012) são citadas pelo autor sem fonte primária/link na transcrição; marcado como confiança média em ambas as claims, não como fato estabelecido. (2) **Gap não resolvido**: a fonte não relaciona a apresentação de 2012 ao artigo formal de Fowler/Lewis (2014) já documentado em [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — puramente coincidência de década ou desenvolvimento relacionado, não esclarecido. (3) **Tensão latente registrada, não contradição**: o autor apresenta "banco exclusivo por serviço, acesso só via API" como a regra mais importante do vídeo, mas promete relativizá-la num vídeo futuro da mesma série — a wiki hoje trata a regra como praticamente absoluta em [[wiki/concepts/database-per-service]] e [[wiki/concepts/microsservicos]]; quando essa fonte futura for ingerida, revisar ambas as páginas contra o contraponto. (4) **Sem contradições diretas** — ingestão majoritariamente aditiva/corroborativa: quarta fonte independente do mesmo autor confirmando a descrição de SOA/ESB/SOAP já registrada a partir de três fontes anteriores, e quarta fonte geral reforçando a tese "monolito primeiro, microsserviços com justificativa real" já central em [[wiki/concepts/monolith-first]].

@@ -3,8 +3,8 @@ type: concept
 title: "Arquitetura de Software"
 aliases: ["software architecture", "decisao arquitetural"]
 date_created: 2026-07-03
-date_updated: 2026-08-10
-source_count: 12
+date_updated: 2026-08-21
+source_count: 13
 tags: [arquitetura, carreira, fundamentos, ia, pos-graduacao]
 skill: tech-mentor-leadership
 status: draft
@@ -87,4 +87,5 @@ Nenhum desses livros foi lido/ingerido diretamente ainda no wiki — são citaç
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]] — como o repertório de arquitetura é avaliado em entrevista de system design
 - [[wiki/sources/application-boundary-martin-fowler]] — aplicações são construções sociais, não unidades tecnicamente objetivas
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — fluxo detalhado de Clean Architecture numa aplicação web e a distinção objeto vs. estrutura de dados que o sustenta
+- [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — definição de abertura ("determinar componentes, definir comunicação, garantir requisitos e padrões de qualidade") e a palavra-chave **tradeoff** como fio condutor de toda decisão arquitetural, demonstrada passo a passo sobre um encurtador de URL
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — camadas adjacentes devem ter abstrações diferentes (Cap. 7); pass-through methods, decorators e variáveis de contexto

@@ -4,7 +4,7 @@ title: "Monolith First"
 aliases: ["monolito primeiro", "monolith first", "martinfowler.com/bliki/monolithfirst"]
 date_created: 2026-08-18
 date_updated: 2026-08-21
-source_count: 3
+source_count: 4
 tags: [monolito, monolito-modular, microsservicos, martin-fowler, arquitetura, ddd, yagni, bounded-context]
 skill: tech-mentor-backend
 status: stable
@@ -50,3 +50,4 @@ Distinto mas complementar a [[wiki/sources/arquitetura-de-sacrificio]] (outro ar
 - [[wiki/sources/monolith-first-martin-fowler]] — fonte primária: MicroservicePremium, os dois argumentos (YAGNI e BoundedContexts), quatro caminhos práticos, contra-argumento
 - [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — nomeação explícita do princípio, as duas percepções de Fowler, e a imagem dos "dois caminhos" do bliki
 - [[wiki/sources/seedwork-martin-fowler]] — mesmo padrão retórico de Fowler (pragmatismo imperfeito sobre ideal inalcançável), aplicado a reuso de framework em vez de arquitetura de serviços
+- [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] — quarta fonte independente reforçando a mesma recomendação: monolito bem estruturado para projetos pequenos/MVPs que precisam validar rápido, com responsabilidades desenhadas para permitir quebra futura pouco traumática

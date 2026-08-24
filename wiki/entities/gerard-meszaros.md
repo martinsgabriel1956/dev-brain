@@ -4,7 +4,7 @@ title: "Gerard Meszaros"
 aliases: ["Meszaros", "xUnit Test Patterns author"]
 date_created: 2026-07-19
 date_updated: 2026-08-21
-source_count: 4
+source_count: 5
 tags: [testes, autor, test-doubles, xunit, taxonomia]
 skill: tech-mentor-testing
 status: draft
@@ -33,5 +33,6 @@ Além de ser a fonte da taxonomia relatada por Fowler, Meszaros é creditado com
 
 - [[wiki/sources/test-double-xunitpatterns-meszaros]] — **fonte primária**: a página canônica `Test Double` do próprio Meszaros (xUnitPatterns.com), com o vocabulário completo e as cinco variações
 - [[wiki/sources/indirect-input-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição de "indirect input"
+- [[wiki/sources/doc-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição formal de DOC (depended-on component)
 - [[wiki/sources/test-double-martin-fowler]] — fonte secundária que popularizou e atribuiu a taxonomia a ele
 - [[wiki/sources/self-initializing-fake-martin-fowler]] — creditado como contribuidor de ideias, junto com Josh Price e Darren Cotterill

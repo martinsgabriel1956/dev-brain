@@ -3,8 +3,8 @@ type: concept
 title: "Entrevista de System Design (Whiteboard Interview)"
 aliases: ["system design interview", "whiteboard interview", "lousa branca", "entrevista de arquitetura"]
 date_created: 2026-07-20
-date_updated: 2026-08-10
-source_count: 6
+date_updated: 2026-08-21
+source_count: 7
 tags: [system-design, entrevistas, arquitetura, carreira]
 skill: tech-mentor-system-design
 status: draft
@@ -56,6 +56,10 @@ Assim como na [[wiki/concepts/entrevista-tecnica-coding|entrevista de coding]], 
 
 [[wiki/sources/system-design-entrevista-cinema-draw-io]] é a primeira fonte na wiki a mostrar a estrutura de sessão sendo **executada**, não só descrita: o apresentador levanta requisitos via follow-up questions (seatmap, busca por nome, reserva de 15 minutos, acesso web) sobre o prompt vago "sistema de reserva de ingressos de cinema", justifica cada peça do desenho (load balancer, MySQL vs. não-relacional, APIs externas de seatmap e pagamento, Redis com TTL) e — de forma incomum entre as fontes já ingeridas — expõe abertamente um bug de consistência não resolvido no próprio rascunho (assento aparece disponível numa API externa mas já está reservado no Redis interno), tratando isso como material de conversa com o entrevistador em vez de esconder. Reforça na prática a regra de ouro desta página: comunicar o raciocínio vale mais que a solução perfeita.
 
+## Um Framework de 7 Passos, Ensinado do Zero Sobre um Caso Só
+
+[[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] é a fonte mais didática/introdutória da wiki sobre a estrutura da sessão: em vez de listar etapas em abstrato, ensina um framework de 7 passos (entender o problema → requisitos funcionais/não-funcionais → padrões de tráfego/estimativas → componentes em alto nível sem nomear tecnologia → definir API → só então escolher a stack técnica → revisar requisitos contra o desenho final) executando cada passo sobre um encurtador de URL do início ao fim — a mesma regra de "tecnologia por último" já implícita na estrutura de 4 etapas descrita acima, aqui explicitada como regra central: **"não invente as regras, faça perguntas de esclarecimento."** Contribuição própria: demonstra ao vivo o valor do passo final de revisão — o autor revisita a lista de requisitos originais contra o desenho e encontra uma lacuna real não tratada (unicidade 1:1 entre URL curta e longa), tratando isso como parte esperada do processo, não como falha grave a esconder — reforço direto da mesma lição de [[wiki/sources/system-design-entrevista-cinema-draw-io]] sobre expor lacunas em vez de escondê-las.
+
 ## Key sources
 
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]
@@ -63,3 +67,4 @@ Assim como na [[wiki/concepts/entrevista-tecnica-coding|entrevista de coding]], 
 - [[wiki/sources/anatomia-entrevista-system-design-bigtech]]
 - [[wiki/sources/system-design-entrevista-cinema-draw-io]] — demonstração ao vivo do framework num exemplo concreto (cinema), incluindo um bug de consistência auto-reconhecido pelo autor
 - [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — o erro que "elimina 90% dos candidatos" é pular para a solução sem investigar o contexto (volumetria, hotspots, criticidade de dados); o sênior faz perguntas primeiro, o pleno já dá a receita ("é só cache e réplicas")
+- [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — framework de 7 passos ensinado do zero sobre um encurtador de URL, com a regra de ouro "não invente as regras" e demonstração ao vivo do valor do passo final de revisão de requisitos

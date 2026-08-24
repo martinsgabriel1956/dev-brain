@@ -3,8 +3,8 @@ type: concept
 title: "SOAP"
 aliases: ["Simple Object Access Protocol", "web services SOAP", "WSDL"]
 date_created: 2026-08-04
-date_updated: 2026-08-18
-source_count: 2
+date_updated: 2026-08-21
+source_count: 3
 tags: [soap, wsdl, integracao, legado, xml, interoperabilidade, seguranca]
 skill: tech-mentor-backend
 status: stub
@@ -34,3 +34,4 @@ SOAP não desapareceu — migrou para segundo plano em setores onde contratos r�
 
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]]
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — SOAP e REST como as duas apostas concorrentes de "API pela web" que emergem na mesma década (2000s); CORBA/RMI como antecessores diretos
+- [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] — terceira fonte independente do mesmo autor confirmando SOAP/XML como protocolo pesado típico de serviços SOA, roteados via ESB; o termo "microsserviços" nasce em 2005 (Peter Rogers) propondo REST como substituto direto

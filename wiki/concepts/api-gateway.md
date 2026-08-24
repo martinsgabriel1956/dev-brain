@@ -3,8 +3,8 @@ type: concept
 title: "API Gateway"
 aliases: ["api gateway", "gateway de api", "ponto único de entrada de api"]
 date_created: 2026-07-23
-date_updated: 2026-08-18
-source_count: 7
+date_updated: 2026-08-21
+source_count: 8
 tags: [api-gateway, arquitetura-distribuida, gatekeeper, roteamento, edge-functions, single-point-of-failure]
 skill: tech-mentor-backend
 status: stable
@@ -95,3 +95,4 @@ Segundo [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]], o API Gat
 - [[wiki/sources/infraestrutura-como-codigo-cdk-aws]] — usado como componente central de uma stack de exemplo descrita em [[wiki/concepts/infraestrutura-como-codigo|IaC]] (`/user`, `/products` roteando para Lambdas distintos, sem que o backend tenha acesso direto à internet)
 - [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — REST API vs. HTTP API, integração com Lambda/EC2/ECS/DynamoDB, e as três formas de autorização (IAM, Cognito, Lambda Authorizer)
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — API Gateway como resposta de governança/segurança ao consumo massivo de API nos anos 2020, junto de OAuth e OpenID Connect
+- [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — Amazon API Gateway como ponto de entrada único da stack de exemplo de um encurtador de URL, integrado ao Cognito para autorizar endpoints protegidos

@@ -3,11 +3,11 @@ type: concept
 title: "ESB (Enterprise Service Bus)"
 aliases: ["Enterprise Service Bus", "barramento de serviços", "iPaaS"]
 date_created: 2026-08-04
-date_updated: 2026-08-04
-source_count: 1
+date_updated: 2026-08-21
+source_count: 2
 tags: [esb, integracao, legado, arquitetura, mensageria, ipaas]
 skill: tech-mentor-backend
-status: stub
+status: draft
 ---
 
 # ESB (Enterprise Service Bus)
@@ -18,7 +18,11 @@ O ESB centraliza transformação de mensagens, roteamento, orquestração de ser
 
 ## Auge (2004–2015)
 
-Plataformas como MuleSoft, IBM Integration Bus e Oracle Service Bus tornaram-se referência em bancos, seguradoras, telecomunicações e governo.
+Plataformas como MuleSoft, IBM Integration Bus e Oracle Service Bus tornaram-se referência em bancos, seguradoras, telecomunicações e governo. [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] confirma essa lista de fornecedores corporativos (IBM, Oracle, SAP) por uma segunda fonte independente, e acrescenta um exemplo de ESB **open source**: o **WSO2 ESB**, bastante difundido fora do universo de grandes fornecedores proprietários.
+
+## SOA: o Modelo Arquitetural em Torno do ESB
+
+O ESB não é um componente isolado — é a peça central de um estilo arquitetural mais amplo, o **SOA (Service Oriented Architecture)**: sistema organizado em serviços independentes que se comunicam por interfaces bem definidas, tipicamente roteadas através do próprio barramento. Segundo [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]], foi exatamente esse modelo — serviços robustos/genéricos, protocolos pesados como [[wiki/concepts/soap|SOAP]]/XML, governança centralizada no barramento — que o termo "microsserviços" nasceu como contraponto direto: em 2005, Peter Rogers propôs, numa conferência (Web Services Edge), diminuir o tamanho dos serviços e substituir SOAP/XML por REST, ainda pouco difundido em grandes empresas na época. Ver [[wiki/concepts/microsservicos]] para o percurso completo até o artigo formal de Fowler/Lewis (2014).
 
 ## Por que perdeu espaço em projetos novos
 
@@ -31,3 +35,4 @@ Organizações que passaram décadas construindo sistemas dificilmente substitue
 ## Key Sources
 
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]]
+- [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] — SOA como estilo arquitetural em torno do ESB, contraponto histórico direto ao surgimento de "microsserviços" (Peter Rogers, 2005), WSO2 ESB como exemplo open source
