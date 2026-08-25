@@ -3,8 +3,8 @@ type: concept
 title: "OAuth 2.0"
 aliases: ["OAuth", "OAuth 2.0", "delegação de acesso", "authorization code flow"]
 date_created: 2026-07-27
-date_updated: 2026-08-18
-source_count: 9
+date_updated: 2026-08-24
+source_count: 10
 tags: [oauth2, autorizacao, autenticacao, seguranca, delegacao-de-acesso]
 skill: tech-mentor-security
 status: draft
@@ -12,13 +12,30 @@ status: draft
 
 # OAuth 2.0
 
-Framework de **autorização** (não autenticação) criado em 2006 por um grupo de empresas da web (incluindo o Twitter) para resolver um problema específico: como deixar um aplicativo acessar dados de outro serviço em nome do usuário, **sem** o usuário compartilhar sua senha com esse aplicativo.
+Framework de **autorização** (não autenticação) criado em 2006-2007 por um grupo de empresas da web (incluindo o Twitter) para resolver um problema específico: como deixar um aplicativo acessar dados de outro serviço em nome do usuário, **sem** o usuário compartilhar sua senha com esse aplicativo.
 
-## O problema que resolve
+## O problema que resolve: o antipadrão da senha
 
-Antes do OAuth, se um app de agendamento quisesse acessar sua Google Agenda, a única forma seria você dar sua senha do Google para o app. Isso é péssimo por dois motivos: o app ganha acesso a tudo (não só à agenda), e você não consegue revogar o acesso sem trocar a senha — o que quebraria o acesso de todos os outros apps que também usam essa senha.
+Antes do OAuth, se um app de agendamento quisesse acessar sua Google Agenda, a única forma seria você dar sua senha do Google para o app. Isso é o que hoje se chama [[wiki/concepts/antipadrao-da-senha|antipadrão da senha]], e é péssimo por dois motivos: o app ganha acesso a tudo (não só à agenda), e você não consegue revogar o acesso sem trocar a senha — o que quebraria o acesso de todos os outros apps que também usam essa senha.
 
 OAuth introduz **delegação de acesso com escopo limitado**: o app recebe um token que só serve para o que foi autorizado, e pode ser revogado independentemente da senha.
+
+## Origem: Blaine Cook, Larry Halff e a linha do tempo até a RFC 6749
+
+O grupo de discussão OAuth começou em abril de 2007, do encontro entre [[wiki/entities/blaine-cook]] ([[wiki/entities/twitter|Twitter]], já trabalhando numa implementação do OpenID original) e [[wiki/entities/larry-halff]] (Magnolia, buscando conectar widgets de macOS à API do serviço sem exigir senha) — ambos sentindo, por caminhos diferentes, a falta de um padrão aberto de delegação de acesso. Pouco depois o [[wiki/entities/google]] se junta às discussões. Linha do tempo formal:
+
+- **Julho de 2007** — primeiro rascunho da especificação.
+- **Abril de 2010** — [[wiki/entities/ietf|IETF]] publica a **RFC 5849**, o **OAuth 1.0**: exigia assinatura criptográfica em cada requisição e canonicalização de parâmetros, complexo de implementar e manter interoperável entre provedores — por isso pouco usado hoje.
+- **2012** — IETF publica a **RFC 6749**, o **OAuth 2.0**: troca a complexidade criptográfica por HTTPS como base de segurança, introduz o token Bearer, e define fluxos muito mais simples de adotar em APIs modernas, SPAs e mobile. É a versão amplamente usada hoje, e a única detalhada neste documento.
+
+Ver [[wiki/sources/historia-oauth2-antipadrao-senha-bernardo-lobato]] para o relato completo.
+
+## Os quatro pilares
+
+- **Resource Owner** — o usuário dono do recurso a ser compartilhado.
+- **Client** — a aplicação que quer acessar o recurso em nome do usuário.
+- **Authorization Server** — valida a identidade/consentimento e emite os tokens.
+- **Resource Server** — a API que guarda o recurso protegido e confia no token emitido.
 
 ## Authorization Code Flow
 
@@ -50,6 +67,18 @@ Sem um `state` aleatório vinculado à sessão do usuário e verificado no retor
 
 Variante para dispositivos sem browser (CLIs, Smart TVs): o dispositivo mostra um código curto, o usuário abre o browser em outro aparelho para autorizar, e o dispositivo faz polling até receber o token.
 
+## Grant Types
+
+O **Grant Type** define como a aplicação obtém o token:
+
+- **Authorization Code** — o descrito acima; para login humano via redirecionamento no browser (web, SPA, mobile), com consentimento explícito. Se não há como redirecionar o usuário pelo navegador, este não é o grant type certo. Hoje exige [[wiki/concepts/pkce|PKCE]].
+- **Client Credentials** — sem usuário humano: sistema conversando com sistema (integrações back-end, jobs agendados). A aplicação se autentica com seu próprio `client_id`/`client_secret` — como login/senha, mas para aplicações.
+- **Refresh Token** — renova um access token expirado/inválido sem exigir novo login. Ver [[wiki/concepts/refresh-token-rotation]].
+
+## Formato do Token: Opaco vs. Autoassinado
+
+O access token OAuth 2 é **opaco para o cliente** por especificação — o padrão não obriga formato, mas na prática muitos provedores usam JWT ([[wiki/concepts/jwt]]). O resource server valida o token de duas formas: **introspecção** (stateful — consulta o Authorization Server a cada requisição) ou **validação local** (o token é autoassinado e carrega a própria verificação embutida, sem round-trip).
+
 ## Caso real: escopo aceito sem validação via URL
 
 Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], um pentest voluntário no SaaS "Find My SaaS" encontrou um fluxo de login via Google OAuth que aceitava parâmetros extras de escopo/permissão passados pela URL sem validação server-side — permitindo montar um link malicioso que solicitava permissões além do escopo padrão do app (e-mail, nome, foto) e, se aceito pela vítima, expunha o token de autenticação na URL de retorno. O autor original atribuiu o erro a "confiar demais no input do usuário"; tecnicamente é uma falha de validação de parâmetros do Authorization Request no próprio Authorization Server/app — a mesma classe de problema de não tratar `scope`/`redirect_uri` como entrada não confiável, adjacente ao mecanismo descrito em [[wiki/concepts/open-redirect]].
@@ -75,6 +104,7 @@ Em ambientes corporativos que já usam [[wiki/concepts/saml|SAML]] para federaç
 - [[wiki/concepts/token-relay-pattern]] — propagação do access token por serviços internos após obtido via OAuth
 - [[wiki/concepts/open-redirect]] — ataque específico contra validação frouxa da redirect_uri
 - [[wiki/concepts/ropc-resource-owner-password-credentials]] — antipadrão de contornar o fluxo de autorização correto pedindo senha diretamente
+- [[wiki/concepts/antipadrao-da-senha]] — o problema original que o OAuth resolve: compartilhar a própria senha com um serviço terceiro
 
 ## Key Sources
 
@@ -87,3 +117,4 @@ Em ambientes corporativos que já usam [[wiki/concepts/saml|SAML]] para federaç
 - [[wiki/sources/refresh-token-pattern-access-token-de-curta-duracao]] — authorization server como componente que valida/revoga o refresh token no padrão access+refresh token
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — OAuth situado na linha do tempo geral das APIs: consolidação nos anos 2020 como resposta de governança/segurança à escala de consumo de API alcançada pelas duas ondas de [[wiki/concepts/api-economy]] das décadas anteriores
 - [[wiki/sources/autenticacao-federada-sso-saml-bernardo-lobato]] — ponte SAML→OAuth: assertion SAML validada por um Authorization Server em troca de um access token
+- [[wiki/sources/historia-oauth2-antipadrao-senha-bernardo-lobato]] — origem histórica exata (Blaine Cook/Twitter, Larry Halff/Magnolia, RFC 5849/6749), antipadrão da senha nomeado, os quatro pilares, grant types (Authorization Code/Client Credentials/Refresh Token) e distinção token opaco (introspecção) vs. autoassinado (validação local)

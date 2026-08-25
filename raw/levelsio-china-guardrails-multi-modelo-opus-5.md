@@ -1,0 +1,88 @@
+# Por que o Levelsio "fugiu" para a China — guardrails, multi-modelo e Opus 5
+
+**Canal:** Lucas Montano
+**Formato:** vídeo do YouTube (transcrição automática, formatada em Markdown; sem tradução — conteúdo original em português)
+
+---
+
+Fala pessoal, bem-vindo de volta ao meu canal, meu nome é Lucas Montano e tu tá assistindo o canal Lucas Montano. Bom, no vídeo de hoje eu quero falar sobre um indie hacker chamado Levelsio e por que ele fugiu pra China.
+
+Levelsio, se tu tá vendo esse vídeo, desculpa te usar de clickbait aqui, mas é que na verdade tu trouxe um caso muito interessante ali no Twitter sobre as limitações, né, os guardrails dos modelos dos big labs versus modelos chineses como o Kimi K3.
+
+## Quem é o Levelsio
+
+Vamos lá: imagina só, cara, tu pagar 200 por mês numa ferramenta de código para que ela tratasse tu como suspeito. Basicamente isso foi isso que aconteceu com o Levelsio, o cara que sozinho ali fatura 3 milhões de dólares por ano — a última vez que eu vi ele é uma referência aí para todo mundo que é indie hacker, né, que criou os seus produtos. Para vocês terem noção, só o Photo AI, no ano passado, tava faturando uns 140.000; esse ano aqui tá em 90.000. Tem outro tweet dele sobre como os SaaS estão tendo um fluxo menor esse ano.
+
+E o que que ele postou aqui no seu blog mês passado, né, dia 28 de junho: que ele tem codado usando o Claude Code diretamente na VPS dele por quase um ano agora. Essa é uma estratégia que eu também tenho utilizado para meus sites — até mesmo o Stupid Button Club, por exemplo, eu conecto por SSH lá dentro, tenho o Claude e peço algumas modificações direto em produção. Eu faço isso porque o downtime, no meu caso, não é importante. Eu não sei como que o Levelsio faz pra não ter downtime mudando direto em produção o produto, mas para mim, pro meu caso de uso, tá valendo muito a pena eu editar direto em produção. É o novo force push pra main, basicamente isso.
+
+Mas aí tá, tipo, você já tem um overview, já sabe de quem se trata, já sabe do que que a gente tá falando. A gente tá falando de alguém que usa bastante IA nos seus próprios produtos, né, não só com projetinhos de experimento ali, MVPzinho, né — não só estilo o tio Wanco Bob, né, que pô, eu tenho todo o respeito e admiração, mas eu perguntei para ele esses dias lá no Twitter o que que ele tá criando, porque eu queria ver ele criar algo, né. Ele tem escrito bastante sobre quality gates e como que a gente testa a IA para esse novo mundo onde a gente não revisa mais o código da IA, mas ele não tá ativamente — eu acredito, não que eu saiba — criando um produto. No caso do Levelsio, ele tá criando produtos, os produtos estão faturando, então é legal, interessante, e ao meu ver a gente também tem que escutar a opinião de alguém como ele.
+
+## O tweet: Kimi K3 vs. os guardrails do Claude
+
+E aí, esse mês, dia 17 de julho, mais ou menos, aqui há uns 10 dias atrás, ele twittou isso aqui: "Kimi K3, da China, está concluindo minha lista de tarefas do simulador do Windows XP, enquanto o Claude perde duas semanas com os guardrails de segurança." Então, na verdade, o Claude tá tipo travando o desenvolvimento porque ele acha que tudo é muito perigoso para ser feito.
+
+Não sei se vocês viram a entrevista do Elon Musk também que saiu esse mês, onde ele fala também sobre isso, né: cara, tu não consegue frear os riscos da inteligência artificial. Qualquer regulamentação, qualquer bloqueio que os Estados Unidos façam nesses big labs de pesquisa de IA — OpenAI, Anthropic, xAI — esse bloqueio vai ser simplesmente para os Estados Unidos, para empresas americanas, cidadãos americanos, né, que é a minha suspeita também: que eles vão fazer isso para empresas americanas não utilizarem modelos chineses, justamente para controlar. Mas tu não consegue ter um controle da IA globalmente, então meio que a caixa de Pandora já foi aberta.
+
+E no caso do Levelsio, o que que irritou ele, cara: ele conta aqui que pediu ajuda pro Claude e, quando ele pediu essa ajuda, ele foi meio que rebaixado pro Opus por segurança, depois pro Sonnet de novo por segurança. Ou seja, o modelo que ele paga mais para usar, por debaixo dos panos, não é o que tá sendo utilizado, por questões de segurança.
+
+E não é só em questão de software, né. Ele twittou outro caso aqui que viralizou também, onde ele diz que perguntou pro Claude sobre a razão entre monócitos e linfócitos no sangue dele, um exame de sangue — coisa que qualquer um pergunta, né, faz o PDF lá e pergunta "como é que tá indo meus linfócitos". E o Claude veio com todo um sermão inteiro sobre como ele estava preocupado com a saúde dele. Então a gente tá vendo o Claude aí se tornando aquele professor chato e condescendente.
+
+## Por que o Claude está cada vez mais paranoico
+
+Bom, e por que que o Claude tá ficando cada vez mais paranoico, cara? Vocês devem lembrar do que aconteceu em junho de 2026 — eu trouxe aqui para vocês quando os pesquisadores da Amazon acharam um jeito de fazer o Fable 5 cuspir código de exploit, né. Até o modelo foi tirado do ar mundialmente por conta disso, e agora voltou com mais guardrails. E a consequência desse guardrail é justamente tu ter mais falsos positivos.
+
+Eu acredito que o Opus 5 veio para resolver isso, né. Então a Anthropic precisa endereçar um risco que ela tem — se tu fizer uma matriz SWOT ali, tu vai identificar que o risco dela não entregar o que o usuário quer, ou detectar coisas que são cotidianas como algo de alto risco, faz com que o usuário busque opções diferentes, opções mais abertas.
+
+No caso do Levelsio — que eu brinquei aqui que ele "fugiu pra China", né — é porque ele twittou sobre usar o Opencode com Kimi K3. Então tu pode usar o Kimi através, por exemplo, do OpenRouter, mas tu pode usar também upstream através do Kimi Server. Então ele falou aqui que pagou 19 dólares para pegar uma API key, e diferente do Claude Code, ele não bloqueia ele a cada 5 minutos — isso, claro, no caso dele que tá criando um simulador de Windows XP, isso deve ser altamente flagado dentro dos modelos da Anthropic depois dos modelos usarem até falhas do sistema operacional para escalar permissões e fugir de sandbox e coisas do tipo. Então ele perdeu duas semanas nesses guardrails de segurança "burros" que estavam tentando protegê-lo de um projeto que é um hobby dele.
+
+## O risco geopolítico para quem usa modelo chinês
+
+Então eu acredito que a maioria de vocês, na minha audiência aqui, não possuem empresa nos Estados Unidos, né. Se vocês possuíssem uma empresa nos Estados Unidos e tivessem a própria startup criando produtos em cima de modelos chineses para conseguir fazer aí uma arbitragem, digamos, de créditos, eu diria que vocês precisam adicionar isso como um risco do negócio de vocês. Cara, é porque, se for acompanhar todas as notícias — como, por exemplo, essa da Axios aqui — ela fala que, mesmo com o aumento da popularidade dos modelos chineses de código aberto, os líderes e formuladores de políticas de IA dos Estados Unidos se confortaram com a estimativa de que a China ainda estava de 6 a 12 meses atrás dos Estados Unidos.
+
+Cara, antigamente eles falavam que era 2 anos. Agora, 6 meses — digamos, em abril eles falaram que o DeepSeek estava 8 meses atrasado em relação aos principais sistemas americanos. Quando essa janela começar a diminuir — e a gente tiver aqui, por exemplo, um mês de atraso dos Estados Unidos, ou quando o modelo chinês até mesmo ultrapassar os modelos americanos, já que a China já ultrapassa os Estados Unidos em termo de geração de energia — então, se os caras têm mais geração de energia, têm minérios raros e estão conseguindo acompanhar os modelos americanos, é questão de tempo deles ultrapassarem os modelos americanos.
+
+E aí o meu ponto é: tu acha que os Estados Unidos vai deixar uma empresa americana utilizar modelos chineses que têm um guardrail de segurança mais fraco? Obviamente não, cara. E obviamente eles estão usando essa desculpa de colocar mais guardrails de segurança nas empresas americanas para depois ter o pretexto de bloquear modelos chineses. Então tu pode escrever isso que eu tô te falando agora: se tu não tem uma empresa americana, mas trabalha pro exterior...
+
+*(Bloco patrocinado pela HighGlobe — conta multimoeda para receber em dólar/euro com spread de 0,3%, sem IOF, saque via Pix, cartão Visa Signature, rendimento de 3% ao ano sobre saldo — omitido do restante da transcrição por não ser tecnicamente relevante ao conteúdo da wiki.)*
+
+## O que isso significa pro dev brasileiro
+
+### 1. A era do modelo único acabou
+
+Eu me vejo pulando no mesmo dia para múltiplos modelos. A galera me perguntava bastante: "Lucas, qual que é o modelo que tu mais gosta de usar?" E eu falava: "Ah, é o Sonnet 4.5, aí o Opus 4.7." Cara, agora simplesmente não tem resposta — não tem porquê. "Ah, mas para qual tarefa específica, Lucas?" Não, não tem, tá ligado. Cada um tá estruturando de uma forma; primeiro porque toda semana, todo mês, sai um modelo novo; e segundo porque tá cada vez mais difícil tu estimar o custo por tarefa. Então tu acaba agora optando por barreiras — que é basicamente a tua experiência de desenvolvimento, como que tu tá orquestrando, como que o modelo tá te respondendo nessa orquestração. E essa resposta do modelo tá fortemente ligada com o pós-treinamento desse modelo, com os guardrails desse modelo.
+
+Eu vou te dar um exemplo, cara: recentemente, no meu negócio — no caso é o aplicativo PSUA — eu comecei a ter um problema bem grande, que é tipo churn. E quando eu falo churn aqui, é de usuário, tá, não de assinantes — quem entende o aplicativo, usa o aplicativo. Mas como é que eu consigo identificar quem não entende o aplicativo mas seria um potencial assinante?
+
+Então o que que eu fiz dentro do PSUA — isso aqui vocês podem aplicar pro SaaS de vocês, pro produto de vocês: dentro do PSUA agora tu ganha 7 dias de premium em trial, tá. Então tu baixa o aplicativo gratuitamente, não precisa passar cartão, tu consegue utilizar ele algumas vezes ali para testar, e se tu gostou de fato, tu passa o cartão, mas não é cobrado — tá, é 0 cobrado no teu cartão em 7 dias. Sim, tu vai ser cobrado, e tu pode cancelar nesse período.
+
+O que que isso aqui me gera: isso aqui me gera uma conversão maior e me gera um... não um churn, isso me gera um refund menor, porque, pô, o cara teve 7 dias para testar gratuitamente, então nesses 7 dias ele meio que perdeu o direito de refund — embora eu sempre faça reembolso, legalmente eu não precisaria fazer. Então, operacionalmente, isso aqui é melhor para mim, e também a nível de dados é melhor, porque quem assinou o trial tá disposto a pagar pelo produto; se o cara tá disposto a pagar mas não renovou o trial, eu perdi esse usuário por algum motivo, certo. Então a gente chega na conclusão que o churn de trial é um lead extremamente qualificado, mas que precisa ser aquecido um pouco mais, precisa ser educado, precisa daqui a pouco me dar um feedback para eu melhorar o produto — enfim, ele é um lead mega qualificado.
+
+O que eu fiz: eu conectei no meu Claude o meu Stripe e a Resend, que é o que eu uso para enviar e-mail pros usuários, e com essas duas informações eu consigo preparar campanhas de educação, tá ligado, para educar o usuário em como usar o aplicativo.
+
+Agora tu me pergunta: "Lucas, qual o melhor modelo para eu usar?" Eu vou te falar, cara: para esse tipo de coisa, o Claude tá excelente, justamente por questão do guardrail dele — ele confirma qualquer coisa que possa dar merda, tá ligado. Qualquer coisa, como eu tô conectando o Stripe e a Resend nele, eu preciso, eu gosto de um modelo que tem um guardrail alto. Eu nunca utilizaria um modelo chinês aqui, não tem jeito, entendeu. Então, para essa situação, eu utilizaria o Claude. Então, dentro do meu próprio dia, eu tô mudando de um modelo que eu uso para programar — de um modelo, por exemplo, que eu poderia usar para criar um Windows XP, como o Levelsio tá fazendo — para um modelo que me ajuda mais no operacional de alguma coisa do meu aplicativo.
+
+Então acho que esse é o primeiro aprendizado, né: a gente tá nesse universo agora onde não tem um único modelo, tu tem diversos modelos que servem para programar, dependendo do que que tu tá programando.
+
+### 2. O grande rollback provavelmente não vem
+
+Segunda coisa interessante de se notar nessa treta toda, cara, é o alívio que a gente tem de que, se a bolha da IA acontecer, a gente vai ter o grande rollback. Eu acho que eu tô acreditando cada vez menos no grande rollback depois desses modelos novos chineses, porque a única forma da gente ter o grande rollback seria através dos Estados Unidos regulamentando o uso da IA — só que, se os Estados Unidos fizerem isso, é simplesmente para não fazer a bolha estourar, vão ser manobras políticas para conseguir controlar a economia, enquanto isso a gente tem a China colocando pressão no mercado global. E no final quem ganha é a gente.
+
+Então, por exemplo, a gente ganhou o Opus 5, ao meu ver, por conta do Kimi K3. A gente ganha reset semanal na OpenAI por conta do Fable. Então a Anthropic libera mais créditos, a OpenAI libera mais resets, e a China libera novos modelos que fazem as duas manterem num passo. Cara, então tá sendo mega vantajoso para nós aqui, usuários da IA.
+
+## Opus 5: onde ele brilha
+
+E já que sobrou um pouco mais de tempo, vamos falar do Opus 5 também, cara. O Opus 5 foi liberado semana passada, eu tenho utilizado ele bastante, principalmente para fazer code review, porque ele é mais barato que o Fable 5 e ele tem uma atenção aos detalhes grande. Então, se tu for ver, por exemplo, nessa tabela de benchmark comparando com o GPT 5.6 Sol, o Opus 5 tá em Agentic Terminal Coding excelente. Então, se precisar fazer algum script local Python para resolver algum problema teu, cara, vai no Opus 5, nem vai no Fable 5.
+
+Uma coisa que eu comecei a notar do Fable 5 é que ele pensa demais sobre coisas simples. Então, por exemplo, no meu processo do PSUA — vou mostrar pra ti aqui, ó — no meu processo de release do PSUA, eu basicamente tenho uma skill "/release". Essa skill corta um patch de release, manda tag, compila e cria os artefatos para Windows, macOS, Linux, e sobe tudo pro meu Cloudflare. Então é um deploy, uma release/deploy de tudo que eu tenho.
+
+E o que eu notei, cara, é que isso aqui usa muito terminal, tá ligado — é muito comando, desde o `git tag` lá, o comando de GitHub por terminal, até Cloudflare por terminal, e tudo mais de notarização. Então ele faz todo o processo também de notarizar os pontos DMG do macOS na Apple — tudo isso são scripts, tá ligado — e para isso eu tenho usado muito o Opus 5. Então, aquilo que eu tava falando para vocês, né: durante o meu dia eu tenho utilizado múltiplos modelos. O Opus 5 no Agentic Terminal Coding tá excelente, Agent Search também tá melhor do que todos os modelos, Computer Use também tá na frente de todos.
+
+Em código, ele não é o melhor — o melhor continua sendo o GPT 5.6 Sol, e eu tenho usado bastante ele para codar business workflows. Isso aqui eu não tava ligado, cara — pô, talvez para aquela minha automatização ali de envio de e-mails eu deveria usar o Opus 5 ao invés do Fable 5. Com certeza o Opus 5 tá melhor em business workflows.
+
+E em termos de performance, o Opus 5 entrega uma grande performance aqui em cima do seu predecessor 4.8 no Frontier Bench, custo por tentativa — é legal que eles não falaram custo por tarefa, né, é custo por tentativa, depende: o Opus tenta mais vezes do que o Fable. Mas a gente tem aqui o Opus competindo contra o GPT 5.6 Sol. Interessante que, nessa tabela, o Fable 5 se sai muito péssimo, cara — olha o Fable 5, o custo dele já parte lá de até 30, e ele entrega menos do que tu consegue fazer, por exemplo, com o Opus 5 por 8. Bizarro isso no Frontier Bench, né.
+
+Bom, e no Automation Bench o Opus 5 tá lá em cima, cara. Isso aqui me faz pensar que eu vou mudar então minha automatização toda pro Opus 5 em vez do Fable 5. Planejamento, inclusive, né — que é esse videozinho aqui, o Opus 5 construir esse simulador... interessante, Cognition, lá do Devin. O que mais a gente tem aqui: Misaligned Behavior — para quem não sabe, misaligned behavior é justamente aquilo de, pô, tu pediu uma coisa, ele vai lá e faz outra, né, de forma proativa. Então o Opus 5 também tá melhor nisso.
+
+O Opus 5 não teve avanços no Frontier em risky dual-use capabilities, então ele tá atrás aí do Fable 5 em, por exemplo, offensive cybersecurity. Interessante — não vou ficar lendo todos os benchmarks aqui para vocês, eu acho que vocês devem ler os benchmarks da forma que eu li, e ter em mente agora que o cenário mudou: tu não pode mais perguntar qual que é o melhor modelo, tu não pode ter um único modelo, tu precisa entender qual que é o modelo ideal para uma tarefa. Muitas vezes esse modelo ideal para uma tarefa tá justificado em cima do guardrail desse modelo, em cima de todo o pós-treinamento que essas empresas fizeram com aquele modelo.
+
+Eu vi uma frase também no Twitter essa semana que é muito real, cara: ninguém sabe, tá ligado. A gente tá nesse cenário, na nossa profissão como programador, que ninguém faz a mínima ideia de qual que vai ser o futuro, de qual que é a melhor prática, qual que é o melhor modelo. O que que tu deve fazer? Eu acho que a única coisa que a gente tem de fato, assim, de conhecimento, é que tu precisa se hidratar. Então não esquece, fecha esse vídeo — sabe quando às vezes tu acha que tá com mais fome, tá se sentindo cansado, enjoado de ouvir minha voz — vai lá e se hidrata, cara, levanta aqui e pega um copo d'água, tá, isso vai fazer bem para ti. Beleza, não esquece de deixar o like, comentar, e eu te vejo no próximo vídeo.

@@ -3,8 +3,8 @@ type: concept
 title: "ASCII"
 aliases: ["ascii", "american standard code for information interchange", "tabela ascii"]
 date_created: 2026-06-10
-date_updated: 2026-08-18
-source_count: 4
+date_updated: 2026-08-24
+source_count: 5
 tags: [ascii, charset, encoding, strings, cs-fundamentals, representacao, decode, iso-8859-1]
 skill: cs-fundamentals
 status: stable
@@ -60,9 +60,18 @@ O [[utf-8]] foi projetado para ser 100% retrocompatível com ASCII: qualquer byt
 
 Como todo byte ASCII tem o bit mais significativo em `0` (`b0 < 0x80`), um decoder [[utf-8]] pode identificar caracteres ASCII com uma única comparação, sem precisar de nenhuma operação bitwise — o byte já É a runa completa. [[wiki/sources/algoritmo-decode-utf8-com-tdd]] usa exatamente esse atalho como primeiro `case` do algoritmo, antes de entrar na lógica mais complexa de [[bitwise-operations|AND/OR/shift]] para caracteres multi-byte.
 
+## Maiúscula vs. Minúscula: Uma Diferença de Exatamente 32
+
+[[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] destaca um detalhe da tabela que as outras fontes não nomeavam explicitamente: toda letra minúscula fica **32 posições depois** da maiúscula correspondente (`'A'=65, 'a'=97`; `'B'=66, 'b'=98`...). Na prática, isso significa que alternar a caixa de uma letra é, em binário, **ligar ou desligar um único bit** — o bit de valor 32 no padrão de 8 bits do caractere. É o mesmo tipo de atalho bit a bit que o [[bitwise-operations|fast path de decodificação]] explora, só que aplicado a mudança de caixa em vez de detecção de largura.
+
+## Demonstração Física: Soletrando com Voluntários
+
+A mesma fonte descreve um exercício em sala onde 8 voluntários representam, com as mãos levantadas ou abaixadas, os 8 bits de um byte (pesos 1, 2, 4, 8, 16, 32, 64, 128) — cada rodada de "levantar ou não a mão" corresponde a um byte, e a plateia decodifica o valor decimal resultante consultando a tabela ASCII. Três rodadas decodificam os valores 66, 79 e 87 — B, O, W — soletrando "BOW". Serve como demonstração tangível de que uma mensagem de texto é, literalmente, uma sequência de decisões binárias por posição.
+
 ## Key Sources
 
 - [[sources/como-strings-realmente-funcionam]]
+- [[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] — relação exata de 32 entre maiúscula e minúscula; demonstração física com voluntários soletrando "BOW"; exercício de decode de 3 bytes (72, 73, 33 → "HI!")
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — ASCII como caso trivial (fast path) no decoder
 - [[wiki/sources/codificacao-de-caracteres-ascii-iso-8859-1-unicode]] — estrutura de bits (7 dados + verificação), tabela de contiguidade alfabética, exercício de decode
 - [[wiki/sources/gzip-deflate-huffman-lz77]] — ASCII (largura fixa) como contraste didático para explicar o Huffman coding (largura variável)

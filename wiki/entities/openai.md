@@ -3,8 +3,8 @@ type: entity
 title: "OpenAI"
 aliases: ["Open AI"]
 date_created: 2026-05-17
-date_updated: 2026-08-18
-source_count: 15
+date_updated: 2026-08-25
+source_count: 17
 tags: [openai, organização, llm, ia, cartao-corporativo]
 skill: tech-mentor-ai
 status: stable
@@ -65,6 +65,14 @@ Segundo [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]], em abril a Ope
 
 Segundo [[wiki/sources/harness-explicado-function-calling-hag-evals]], a documentação de function calling da OpenAI é citada como referência para construir sistemas agênticos — a fonte demonstra ao vivo uma harness mínima em Python usando a API da OpenAI (Responses API, a julgar pelo formato `type: function_call` / `type: output_text` observado), com uma única tool de bash. Ver [[wiki/concepts/tool-call]].
 
+## Demo Didática de Chatbot em ~10 Linhas (CS50)
+
+Segundo [[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]], a aula de abertura do [[wiki/concepts/cs50]] usa a Responses API da OpenAI (`client.responses.create`, parâmetros `input` e `instructions`, modelo `gpt-5`) como a demonstração mais simples possível de um chatbot próprio construído sobre uma API de terceiro — usada didaticamente para introduzir a distinção entre [[wiki/concepts/system-prompt-arquitetura|system prompt e user prompt]] sem nenhuma camada de harness por cima.
+
+## GPT 5.6 "Sol" Como Melhor Modelo de Coding Puro (vs. Opus 5)
+
+Segundo [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]], mesmo com o lançamento do [[wiki/entities/anthropic|Opus 5]] (forte em Agentic Terminal Coding/Agent Search/Computer Use), o **GPT 5.6 "Sol"** continua sendo, na visão de [[wiki/entities/lucas-montano]], o melhor modelo para **código puro** — e é o modelo recomendado por ele para codar **business workflows** (ex.: automações de e-mail via Resend). Reforça a mesma equivalência "Sol" = GPT 5.6 já registrada em [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]].
+
 ## Fontes
 
 - [[wiki/sources/gpt3-language-models-are-few-shot-learners]]
@@ -83,3 +91,5 @@ Segundo [[wiki/sources/harness-explicado-function-calling-hag-evals]], a documen
 - [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — citada apenas como concorrência frontier (linha GPT) no pano de fundo da ancoragem de preço da Anthropic (menção contextual)
 - [[wiki/sources/tokens-o-que-sao-e-por-que-custam-caro]] — tokenizer do GPT-4o (público, vocabulário ~200k tokens) tokeniza a mesma frase em menos da metade dos tokens gastos pelo Claude Opus 5
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — citada como referência de API de IA generativa (integração de LLM/visão) no capítulo dos anos 2020 de uma linha do tempo geral das APIs
+- [[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] — demo ao vivo de chatbot em ~10 linhas de Python via Responses API (`gpt-5`), usada para ensinar a distinção system prompt/user prompt
+- [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — GPT 5.6 "Sol" citado como melhor modelo de coding puro mesmo após lançamento do Opus 5; recomendado para codar business workflows

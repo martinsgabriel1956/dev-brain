@@ -3,8 +3,8 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-08-19
-source_count: 25
+date_updated: 2026-08-25
+source_count: 26
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack, memory-layers]
 skill: tech-mentor-ai
 status: stable
@@ -86,6 +86,14 @@ Segundo [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]], em abril a Ant
 
 [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] analisa a Anthropic como "mestre em vendas": no lançamento do **Opus 5**, teria usado [[wiki/concepts/ancoragem-de-preco|ancoragem de preço]] — ancorar o Opus ao **Fable** (premium caro) para fazê-lo parecer barato, apesar de custar mais que o dobro do Sonnet. Efeito de reposicionamento da linha: o Fable vira a nova âncora premium, o **Opus vira o "novo Sonnet"** (modelo do dia a dia) e o tier barato (Haiku) estaria sendo abandonado para modelos chineses/open source a ~1/10 do preço. Preços de saída narrados (sem link oficial): Fable ~10,50 e Opus ~5,25 por milhão de tokens. Reforça o padrão já documentado de [[wiki/concepts/corrida-preco-qualidade-llm|competição de preço/qualidade]] e de subsídio de produto (ver seção "Venda Enterprise no Brasil e Subsídio de Produto" acima).
 
+## Guardrails Percebidos como Fricção: Caso Levelsio e Downgrade Opus→Sonnet
+
+[[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] relata o caso de [[wiki/entities/pieter-levels|Pieter Levels]]: ao pedir ajuda ao Claude Code num projeto hobby (simulador de Windows XP), foi "rebaixado" de modelo — Opus para Sonnet — supostamente por segurança, e perdeu duas semanas em fricção com guardrails antes de migrar para o [[wiki/entities/moonshot-ai|Kimi K3]]. A mesma fonte relata um segundo incidente (também via tweet de Levels): o Claude respondeu com um "sermão" de saúde a uma pergunta rotineira sobre exame de sangue. [[wiki/entities/lucas-montano]] conecta os dois casos ao aumento de guardrails pós-incidente de junho de 2026 (pesquisadores da Amazon fizeram o Fable 5 produzir código de exploit, levando à retirada global do modelo — ver também o histórico mais amplo de bloqueio de modelos de cybersegurança em "Mitos e Fable 5" acima) como efeito colateral esperado: mais guardrail tende a gerar mais falso positivo. **Confiança:** o mecanismo exato de "downgrade automático por risco percebido" não está confirmado publicamente pela Anthropic nesta fonte — pode ser rate-limit/fallback de disponibilidade mal-interpretado como triagem de segurança.
+
+## Opus 5: Benchmarks de Lançamento
+
+Segundo [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]], o **Opus 5** (lançado ~semana anterior à fonte) se destaca em **Agentic Terminal Coding**, **Agent Search** e **Computer Use** — à frente de todos os concorrentes citados nessas três categorias — e é recomendado para scripts locais e automação de DevOps (release/deploy, notarização de DMG) por "pensar menos" que o Fable em tarefas simples e mecânicas, a menor custo. Fica atrás do **GPT 5.6 "Sol"** ([[wiki/entities/openai]]) em coding puro. Supera o próprio Opus 4.8 (predecessor) e o Fable 5 em custo-por-tentativa no **Frontier Bench** e tem bom desempenho em **Automation Bench**, com redução de **Misaligned Behavior** (comportamento proativo além do pedido). Não avançou em **dual-use capabilities de risco** — fica atrás do Fable 5 em offensive cybersecurity (ver "Mitos e Fable 5" acima para o contexto desses benchmarks de risco). Ver tabela comparativa em [[wiki/concepts/modelo-frontier]].
+
 ## Function Calling Chegou Depois da OpenAI: Workaround via Tags XML
 
 Segundo [[wiki/sources/harness-explicado-function-calling-hag-evals]], numa época em que a Anthropic ainda não oferecia function calling nativo (recurso inicialmente específico da OpenAI), o workaround de engenharia usado para obter o mesmo comportamento era pedir ao modelo que sinalizasse chamadas de função via tags XML no próprio texto de resposta — funcionava ~99% das vezes, cobrindo o restante com retry. Relato histórico sem data exata; ver [[wiki/concepts/tool-call]] para a cronologia geral do mecanismo.
@@ -126,3 +134,4 @@ Guia oficial publicado pela Anthropic definindo quatro níveis de autonomia para
 - [[wiki/sources/harness-explicado-function-calling-hag-evals]] — relato histórico de que o function calling nativo chegou depois da OpenAI; workaround via tags XML usado antes disso
 - [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — distinção de memória em três partes (atribuição incerta); mensagens cruzadas entre subagentes via "list agents"; linha do tempo Claude lançado em 2023, "devagarzinho"
 - [[wiki/sources/tokens-o-que-sao-e-por-que-custam-caro]] — tokenizer do Claude Opus 5 (privado, não divulgado) gastou quase o dobro de tokens que o GPT-4o na mesma frase em português; preços citados de Opus/Sonnet/Haiku (output ~5x mais caro que input)
+- [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — caso Levelsio (downgrade Opus→Sonnet "por segurança", sermão de saúde) como fricção de guardrail; benchmarks de lançamento do Opus 5 (forte em Agentic Terminal Coding/Agent Search/Computer Use/Automation Bench, atrás do GPT 5.6 Sol em coding puro, sem avanço em dual-use de risco)

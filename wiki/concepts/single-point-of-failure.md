@@ -3,8 +3,8 @@ type: concept
 title: "Single Point of Failure (SPOF)"
 aliases: ["spof", "ponto único de falha", "single point of failure"]
 date_created: 2026-08-10
-date_updated: 2026-08-10
-source_count: 1
+date_updated: 2026-08-24
+source_count: 2
 tags: [system-design, spof, alta-disponibilidade, resiliencia, arquitetura, escalabilidade]
 skill: tech-mentor-system-design
 status: stub
@@ -36,3 +36,4 @@ O padrão se repete: mover estado para fora do servidor ([[stateless]]) é o que
 ## Key Sources
 
 - [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — SPOF como fio condutor do desenho incremental: servidor único → múltiplos servidores + LB; banco único → replicação + promoção de réplica; cache como SPOF que exige invalidação e tolerância a indisponibilidade
+- [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — mesma progressão de eliminação de SPOF, com um nível adicional explícito: o data center inteiro como SPOF de nível mais alto, resolvido replicando toda a arquitetura em um segundo data center/região

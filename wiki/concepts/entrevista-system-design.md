@@ -4,7 +4,7 @@ title: "Entrevista de System Design (Whiteboard Interview)"
 aliases: ["system design interview", "whiteboard interview", "lousa branca", "entrevista de arquitetura"]
 date_created: 2026-07-20
 date_updated: 2026-08-21
-source_count: 7
+source_count: 8
 tags: [system-design, entrevistas, arquitetura, carreira]
 skill: tech-mentor-system-design
 status: draft
@@ -60,6 +60,10 @@ Assim como na [[wiki/concepts/entrevista-tecnica-coding|entrevista de coding]], 
 
 [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] é a fonte mais didática/introdutória da wiki sobre a estrutura da sessão: em vez de listar etapas em abstrato, ensina um framework de 7 passos (entender o problema → requisitos funcionais/não-funcionais → padrões de tráfego/estimativas → componentes em alto nível sem nomear tecnologia → definir API → só então escolher a stack técnica → revisar requisitos contra o desenho final) executando cada passo sobre um encurtador de URL do início ao fim — a mesma regra de "tecnologia por último" já implícita na estrutura de 4 etapas descrita acima, aqui explicitada como regra central: **"não invente as regras, faça perguntas de esclarecimento."** Contribuição própria: demonstra ao vivo o valor do passo final de revisão — o autor revisita a lista de requisitos originais contra o desenho e encontra uma lacuna real não tratada (unicidade 1:1 entre URL curta e longa), tratando isso como parte esperada do processo, não como falha grave a esconder — reforço direto da mesma lição de [[wiki/sources/system-design-entrevista-cinema-draw-io]] sobre expor lacunas em vez de escondê-las.
 
+## Três Erros que Eliminam Candidatos em Concorrência
+
+[[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] contribui um checklist específico de concorrência/[[wiki/concepts/race-condition]], distinto dos erros mais gerais já cobertos nesta página: (1) não identificar sozinho que um cenário tem risco de race condition — o entrevistador não vai apontar o problema; (2) usar Redis/lock distribuído para tudo quando um `FOR UPDATE` simples resolveria — complexidade desnecessária é red flag tanto quanto ausência de tratamento; (3) abrir transação, travar uma linha do banco, e dentro dela fazer chamadas a APIs externas (pagamento, etc.) — trava o recurso pelo tempo da chamada de rede e é citado como motivo de eliminação imediata. Reforça, num domínio técnico específico, a mesma régua de senioridade já documentada em [[wiki/concepts/niveis-de-senioridade-system-design]]: pleno aplica a receita, sênior investiga o cenário antes de escolher a ferramenta.
+
 ## Key sources
 
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]
@@ -68,3 +72,4 @@ Assim como na [[wiki/concepts/entrevista-tecnica-coding|entrevista de coding]], 
 - [[wiki/sources/system-design-entrevista-cinema-draw-io]] — demonstração ao vivo do framework num exemplo concreto (cinema), incluindo um bug de consistência auto-reconhecido pelo autor
 - [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — o erro que "elimina 90% dos candidatos" é pular para a solução sem investigar o contexto (volumetria, hotspots, criticidade de dados); o sênior faz perguntas primeiro, o pleno já dá a receita ("é só cache e réplicas")
 - [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — framework de 7 passos ensinado do zero sobre um encurtador de URL, com a regra de ouro "não invente as regras" e demonstração ao vivo do valor do passo final de revisão de requisitos
+- [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] — checklist de três erros de concorrência que eliminam candidatos: não identificar o risco de race condition, usar lock distribuído onde não é necessário, travar linha do banco durante chamada a API externa

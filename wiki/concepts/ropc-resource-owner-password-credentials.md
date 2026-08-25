@@ -3,8 +3,8 @@ type: concept
 title: "ROPC — Resource Owner Password Credentials"
 aliases: ["ROPC", "Resource Owner Password Credentials", "API como proxy de login"]
 date_created: 2026-08-13
-date_updated: 2026-08-13
-source_count: 1
+date_updated: 2026-08-24
+source_count: 2
 tags: [ropc, oauth2, oidc, antipadrao, autenticacao, seguranca]
 skill: tech-mentor-security
 status: stub
@@ -29,7 +29,9 @@ Completamente desencorajado nas APIs modernas. A recomendação é delegar auten
 - [[wiki/concepts/openid-connect]] — exige autenticação via client exatamente para evitar esse antipadrão
 - [[wiki/concepts/oauth2]] — o Authorization Code Flow, quando implementado corretamente, também impede esse vínculo entre API e senha do usuário
 - [[wiki/concepts/pkce]] — resolve um problema adjacente (client público sem onde guardar segredo), mas pressupõe que a autenticação já acontece corretamente via client/navegador, não via ROPC
+- [[wiki/concepts/antipadrao-da-senha]] — antipadrão relacionado mas distinto: lá a senha vai direto ao serviço terceiro; no ROPC, a senha passa pela própria API/client antes de chegar ao provedor de identidade
 
 ## Key Sources
 
 - [[wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth]]
+- [[wiki/sources/historia-oauth2-antipadrao-senha-bernardo-lobato]] — distinção com o antipadrão da senha mais amplo, que motivou a criação do OAuth

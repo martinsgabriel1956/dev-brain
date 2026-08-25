@@ -3,8 +3,8 @@ type: concept
 title: "Big O"
 aliases: ["complexidade de algoritmos", "Big-O notation", "O(n)", "complexidade assintótica"]
 date_created: 2026-06-26
-date_updated: 2026-08-18
-source_count: 10
+date_updated: 2026-08-25
+source_count: 12
 tags: [cs-fundamentals, algoritmos, big-o, complexidade, performance]
 skill: cs-fundamentals
 status: draft
@@ -70,6 +70,10 @@ Erro comum em entrevista: contar só o loop final e esquecer a transformação q
 
 A mesma fonte ilustra a regra de descartar constantes com um caso concreto: uma solução que percorre o array três vezes (popular hash map, inicializar buckets, popular buckets) é tecnicamente O(3n) — mas em notação Big O isso vira O(n), porque 1n, 3n, 20n ou 2 milhões de n têm a mesma classe de crescimento. Útil para não se confundir em entrevista quando a solução parece ter "múltiplos loops" mas ainda é linear.
 
+## Introdução Didática: Catálogo Telefônico e Três Curvas no Papel
+
+[[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] introduz Big O sem nenhuma notação formal, apenas desenhando três curvas (tamanho do problema × tempo) para três algoritmos de busca num catálogo telefônico físico de ~1000 páginas: (1) virar uma página por vez — reta com inclinação proporcional a n; (2) pular 2 páginas por vez — **ainda uma reta**, só que com metade da inclinação (otimizar a constante não muda a classe O(n)); (3) sempre dividir o restante ao meio — curva logarítmica, muito mais achatada. O teste decisivo: fundir dois catálogos de 1000 páginas num de 2000 dobra o tempo dos algoritmos 1 e 2, mas o algoritmo 3 precisa de **apenas um passo a mais** de divisão — ilustração concreta de por que O(log n) escala tão melhor que O(n) à medida que a entrada cresce, sem exigir nenhum cálculo prévio de logaritmo.
+
 ## Big O ≠ tempo real
 
 O(1) pode ser mais lento que O(n) para entradas pequenas se a constante for grande (ex: hash table com custo fixo alto vs array de 5 elementos). Big O é relevante para entradas **grandes**.
@@ -102,3 +106,5 @@ O(1) pode ser mais lento que O(n) para entradas pequenas se a constante for gran
 - [[wiki/sources/conceitos-que-regem-a-computacao-bits-turing-complexidade]] — Big O como comportamento assintótico; contraste O(n) × O(n²) × O(2ⁿ) com números concretos e a exponencial como base da segurança criptográfica
 - [[wiki/sources/busca-linear-e-binaria-giovana]] — derivação da complexidade logarítmica (`2^x = n`), por que o `+1` de O(log n + 1) é descartado, e tabela de crescimento O(n) vs. O(log n) (8/64/128 elementos)
 - [[wiki/sources/como-ficar-bom-em-leetcode]] — "tem que saber Big O para ficar bom em LeetCode, ponto" — pré-requisito não negociável antes de treinar padrões
+- [[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] — introdução via três algoritmos físicos de busca num catálogo telefônico (1 página, 2 páginas, dividir ao meio), com as três curvas desenhadas antes de qualquer notação O() formal
+- [[wiki/sources/busca-binaria-fila-protocolos-atendimento-live-coding]] — log₂(n) vs. n derivado com dois exemplos concretos (100 números → 7 etapas; dicionário de 240.000 palavras → 18 etapas)

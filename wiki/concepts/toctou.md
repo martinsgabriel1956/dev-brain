@@ -3,8 +3,8 @@ type: concept
 title: "TOCTOU (Time of Check to Time of Use)"
 aliases: ["toctou", "time of check time of use", "race condition financeira", "double spend"]
 date_created: 2026-07-04
-date_updated: 2026-07-04
-source_count: 1
+date_updated: 2026-08-25
+source_count: 2
 tags: [toctou, race-condition, concorrencia, appsec, transactions]
 skill: tech-mentor-security
 status: stable
@@ -30,12 +30,16 @@ Na prática não é preciso mandar exatamente duas requisições simultâneas �
 
 Aplica-se a qualquer recurso finito e compartilhado: saldo de conta, estoque de um produto, like/voto único, ticket disponível.
 
+[[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] documenta a mesma mecânica exata (sem usar o termo TOCTOU) com dois exemplos didáticos: duas pessoas comprando a mesma cadeira de cinema (falso positivo de "disponível" no check) e estoque de e-commerce sobrescrito (segunda escrita ignora o resultado da primeira porque leu o valor antigo em memória).
+
 ## Correção
 
-O check e o use precisam acontecer como uma operação **atômica** — ou os dois acontecem completos, sem interrupção, ou nenhum acontece.
+O check e o use precisam acontecer como uma operação **atômica** — ou os dois acontecem completos, sem interrupção, ou nenhum acontece. Três estratégias com tradeoffs diferentes, detalhadas em [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]]:
 
-- **Transactions no banco** (a solução mais comum) — `SELECT ... FOR UPDATE` + update dentro da mesma transaction, travando a linha até o commit.
-- Semáforos ou locks distribuídos (ex: Redis lock) quando o recurso é compartilhado entre múltiplos serviços, não só múltiplas conexões ao mesmo banco.
+- **[[wiki/concepts/pessimistic-locking]]** — `SELECT ... FOR UPDATE` + update dentro da mesma transaction, travando a linha até o commit. Serializa acesso; usar sob alta contenção ou quando o custo de um conflito é alto.
+- **[[wiki/concepts/optimistic-concurrency-control]]** — não trava nada; detecta o conflito no `UPDATE` via condição no `WHERE` (contador ou coluna `version`). Usar quando conflitos são raros — degrada sob alta contenção (retries em cascata).
+- **[[wiki/concepts/reservation-pattern]]** — quando há um usuário esperando na tela, mover o momento do conflito para antes do pagamento (reserva com TTL via Redis `SET NX EX`, por exemplo), em vez de deixar o usuário só descobrir o conflito depois de preencher os dados de pagamento.
+- Semáforos ou locks distribuídos (ex: Redis lock) quando o recurso é compartilhado entre múltiplos serviços, não só múltiplas conexões ao mesmo banco — ver [[wiki/concepts/distributed-lock]].
 - Filas — serializar as operações sobre o mesmo recurso em vez de processá-las em paralelo.
 
 ## Ver também
@@ -46,3 +50,4 @@ O check e o use precisam acontecer como uma operação **atômica** — ou os do
 ## Key Sources
 
 - [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]]
+- [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] — exemplos de cadeira de cinema/estoque de e-commerce + três estratégias de correção (pessimistic locking, OCC, reservations)

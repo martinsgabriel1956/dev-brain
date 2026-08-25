@@ -3,8 +3,8 @@ type: concept
 title: "Documentação de API com Swagger/Scalar"
 aliases: ["swagger", "scalar", "api reference", "openapi portfolio"]
 date_created: 2026-04-25
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-08-24
+source_count: 3
 tags: [documentacao, swagger, scalar, openapi, api, portfolio]
 skill: tech-mentor-leadership
 status: stub
@@ -38,8 +38,10 @@ Demonstra que o candidato pensa em quem vai consumir a API, não só em quem vai
 - [[portfolio-backend-junior]]
 - [[acoplamento]] — API bem documentada define contratos explícitos entre camadas
 - [[spec-driven-development]] — OpenAPI/Swagger como artefato de spec de boundary REST, ao lado de `.proto` (gRPC) e schema (GraphQL)
+- [[wiki/concepts/javadoc-api-reference]] — mesmo papel (referência exaustiva de métodos/parâmetros/retornos), aplicado a bibliotecas/linguagens em vez de APIs HTTP
 
 ## Key sources
 
 - [[wiki/sources/diferenciais-portfolio-backend-junior]]
 - [[wiki/sources/tdd-sdd-bdd-era-ia]]
+- [[wiki/sources/como-ler-documentacao-de-uma-linguagem-de-programacao]] — API reference generalizada para o contexto de linguagem/framework (JavaDoc)

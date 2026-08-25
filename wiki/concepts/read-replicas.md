@@ -3,8 +3,8 @@ type: concept
 title: "Read Replicas"
 aliases: ["réplica de leitura", "read replica", "replica routing"]
 date_created: 2026-04-22
-date_updated: 2026-08-19
-source_count: 7
+date_updated: 2026-08-24
+source_count: 8
 tags: [banco-de-dados, escalabilidade, read-replicas, postgresql, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -60,3 +60,4 @@ Read replicas são o mecanismo concreto por trás do read/write split usado em [
 - [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — read replica como "load balancer de banco de dados" (primário só escreve, réplicas só leem), terceiro degrau da escada de leitura (200-300k+ req/s); tradeoff de replication lag "de até segundos" é o ponto que corta candidatos que não o citam — crítico para fintech, tolerável para feed social
 - [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — justificativa didática do read/write split: "a maioria das aplicações lê mais do que escreve", então um banco de escrita alimenta réplicas de leitura
 - [[wiki/sources/world-cup-system-design]] — réplicas servindo rotas de histórico/estatística separadas do caminho de placar ao vivo (Redis), divisão por volatilidade do dado
+- [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — mesma justificativa didática ("a maioria das aplicações lê mais do que escreve"), com exemplo concreto de roteamento no Laravel (chaves `read`/`write`) e cluster Amazon Aurora

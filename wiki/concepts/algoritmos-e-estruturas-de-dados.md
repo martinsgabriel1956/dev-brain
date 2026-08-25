@@ -3,8 +3,8 @@ type: concept
 title: "Algoritmos e Estruturas de Dados"
 aliases: ["DSA", "data structures", "estruturas de dados", "algoritmos"]
 date_created: 2026-05-16
-date_updated: 2026-08-13
-source_count: 14
+date_updated: 2026-08-25
+source_count: 16
 tags: [fundamentos, cs-fundamentals, algoritmos, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -72,6 +72,10 @@ A estrutura de dados é *como* os dados ficam guardados; o algoritmo é a sequê
 
 O valor de DSA numa entrevista ao vivo não é só "resolver o problema" — é usar o vocabulário de estruturas e algoritmos para fazer as perguntas certas de esclarecimento antes de codar (ex.: perguntar se o input já está ordenado descarta algoritmos de ordenação do conjunto de opções). Entrevistadores tendem a evitar problemas prontos de plataformas de prática justamente para observar esse processo de raciocínio, não a resposta memorizada — ver [[wiki/concepts/reconhecimento-de-padroes]] sobre por que memorizar o padrão importa mais que memorizar o problema específico.
 
+## Pseudocódigo e a Terminologia Central de Algoritmo
+
+[[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] introduz **pseudocódigo** — instruções passo a passo em linguagem próxima do português/inglês, sem sintaxe rígida — como a ponte entre "algoritmo como conceito" e "código como implementação". Constrói ao vivo o pseudocódigo de uma busca binária num catálogo telefônico, nomeando quatro conceitos que sustentam praticamente qualquer linguagem (Scratch, C, Python): **funções** (verbos/ações, ex.: "abra na página X"), **condicionais** (bifurcações "se/senão"), **expressões booleanas** (perguntas com resposta binária, em homenagem a George Boole) e **loops** (instruções de "volte para" que induzem repetição). Um caso de borda recorrente e fácil de esquecer — "e se o item não existir na coleção?" — é tratado como exemplo canônico de por que faltar um ramo assim gera comportamento indefinido (travamentos, reinícios espontâneos) em software real.
+
 ## Conceitos Individuais
 
 Cada estrutura tem sua própria página com complexidade, analogias e quando usar:
@@ -87,6 +91,7 @@ Cada estrutura tem sua própria página com complexidade, analogias e quando usa
 - [[wiki/sources/akita-como-aprender-programacao]] — afirmação de que DSA é o que separa amadores de profissionais; por que linguagens modernas escondem essas estruturas; sequência de aprendizado
 - [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — DSA é parte pequena do todo; confundir DSA com lógica de programação seria "leviano"
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]] — introdução prática às cinco estruturas; três perguntas de decisão; quando usar cada uma
+- [[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] — pseudocódigo construído ao vivo (busca binária num catálogo telefônico); terminologia funções/condicionais/booleanos/loops; caso de borda "item ausente" como exemplo de comportamento indefinido
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]] — DSA como o primeiro dos fundamentos do "eixo vertical" da engenharia; explica por que sistemas degradam ao escalar de mil para cem mil usuários; livro-base Introduction to Algorithms (Cormen)
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — matemática (complexidade, probabilidade, cache) como "gramática por baixo do que você constrói"; exemplo do laço dentro do laço que derruba o sistema com 1000 usuários
 - [[wiki/sources/9-algoritmos-que-todo-programador-deveria-saber]] — nove algoritmos concretos das três categorias citadas na sequência de aprendizado acima: ordenação, busca e grafo, com mecanismo, complexidade e caso de uso de cada um
@@ -99,3 +104,4 @@ Cada estrutura tem sua própria página com complexidade, analogias e quando usa
 - [[wiki/sources/busca-linear-e-binaria-giovana]] — busca (passo 3 da sequência) via analogia física + código JS, defendendo o método "teoria no papel antes do código"
 - [[wiki/sources/como-ficar-bom-em-leetcode]] — lista das estruturas que "cobrem quase tudo" (array, linked list, queue, stack, binary tree, hash map, graph) e o loop estrutura→padrão→repetição para dominá-las; ênfase em implementar cada uma por conta própria
 - [[wiki/sources/por-que-comecar-com-c-em-2026-cs50-david-malan]] — David Malan (CS50): construir as próprias estruturas (hash tables, listas ligadas, tries, árvores, pilhas, filas) em [[wiki/concepts/linguagem-c|C]] porque a linguagem não as oferece prontas; valor não é reusar a implementação, mas entender design e diagnóstico por primeiros princípios
+- [[wiki/sources/busca-binaria-fila-protocolos-atendimento-live-coding]] — busca (passo 3) resolvida "no papel" com o chat, sem código, num exemplo do mundo real (fila de protocolos de atendimento), com leitura direta do livro *Entendendo Algoritmos*

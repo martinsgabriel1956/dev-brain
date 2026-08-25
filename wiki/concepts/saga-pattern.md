@@ -4,7 +4,7 @@ title: "Saga Pattern"
 aliases: ["saga", "saga distribuída", "compensating transactions"]
 date_created: 2026-04-22
 date_updated: 2026-08-03
-source_count: 5
+source_count: 6
 tags: [sistemas-distribuidos, consistencia, saga, microsservicos, compensação]
 skill: tech-mentor-system-design
 status: stub
@@ -54,3 +54,4 @@ Consistência eventual — não ACID. Compensações podem falhar também (saga 
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — versão didática coreografada via RabbitMQ, contrastada com o gargalo de coordenação do 2PC
 - [[wiki/sources/ciclo-de-mudanca-de-arquitetura]] — coreografia vs. orquestração como exemplo de decisão de TO-BE a validar via POC
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — Saga aplicado a transações que cruzam shards de banco de dados (exemplo de transferência financeira entre usuários em shards diferentes)
+- [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] — teaser no fechamento do vídeo (ainda não desenvolvido como fonte própria): cartão já cobrado quando uma etapa posterior de um fluxo multi-step falha, cenário canônico de compensação que aponta para saga

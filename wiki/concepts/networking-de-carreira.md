@@ -3,8 +3,8 @@ type: concept
 title: "Networking de Carreira"
 aliases: ["networking", "mercado invisível de vagas", "mercado de indicações"]
 date_created: 2026-07-20
-date_updated: 2026-07-31
-source_count: 3
+date_updated: 2026-08-24
+source_count: 4
 tags: [carreira, networking, contratacao, senioridade]
 skill: tech-mentor-leadership
 status: stub
@@ -26,8 +26,13 @@ Ambientes que reúnem profissionais com o mesmo objetivo por um período prolong
 
 [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] traz um ângulo complementar, voltado especificamente para quem busca a primeira vaga: dois erros recorrentes de candidatos júnior são enviar poucos currículos e se autofiltrar por distância geográfica ou por achar que a vaga "não bate 100%" com o próprio nível. A recomendação é aplicar amplamente e investir em comunidade (cursos, grupos de mentoria) como ponto de entrada, já que é ali que se concentra boa parte de quem está buscando oportunidade — reforçando que o mercado visível também tem armadilhas de autofiltragem que reduzem as chances antes mesmo de o candidato ser avaliado.
 
+## O Mercado Visível Também Tem Escala e Custo — Não É Só Ruído
+
+[[wiki/sources/duas-perguntas-linkedin-cursos-online-lei-de-sturgeon]] traz dados de dentro do processo de contratação que dão peso concreto ao lado "visível" desse par: uma consultoria que contrata 700+ pessoas de tecnologia por ano usa o [[wiki/entities/linkedin]] como canal principal, não como complemento à indicação — inclusive para vagas sênior e de liderança, que a intuição colocaria no mercado invisível. A licença de recrutamento paga pela empresa é cara (dezenas de milhares de dólares/ano) especificamente pela capacidade de busca filtrada por tecnologia/senioridade/região — o mesmo tipo de filtro que, do lado do candidato, é acionado por ter um perfil buscável. Ver [[wiki/concepts/assimetria-de-custo-plataforma-de-contratacao]].
+
 ## Key Sources
 
 - [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]]
 - [[wiki/sources/papinho-tech-solo-comunidade]] — mesmo mecanismo de indicação via presença recorrente, aplicado a meetups/eventos de comunidade
 - [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — autofiltragem excessiva (distância, "encaixe perfeito") como erro recorrente de candidatos júnior no mercado visível
+- [[wiki/sources/duas-perguntas-linkedin-cursos-online-lei-de-sturgeon]] — dados de volume de contratação via LinkedIn (700+/ano) e custo da licença de recrutamento, mostrando que o mercado visível tem peso real mesmo em vagas sênior/liderança

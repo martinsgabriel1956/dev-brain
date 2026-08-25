@@ -3,8 +3,8 @@ type: concept
 title: "Modelos de Consistência"
 aliases: ["modelos de consistência", "consistency models", "linearizability", "sequential consistency", "causal consistency", "eventual consistency"]
 date_created: 2026-04-22
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-08-24
+source_count: 3
 tags: [sistemas-distribuidos, consistencia, cap, linearizability, eventual, causal]
 skill: tech-mentor-system-design
 status: stable
@@ -129,3 +129,4 @@ Eventual Consistency é o "E" de [[wiki/concepts/base-basically-available-soft-s
 
 - [[sources/modelos-de-consistencia]]
 - [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] — exemplo de réplicas não sincronizadas e o acrônimo BASE
+- [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — consistência eventual como preço direto do write/read split: escrita no master pode não estar disponível numa leitura quase simultânea de um slave; mitigar com lock reintroduziria SPOF (escrita só confirmada após propagação)

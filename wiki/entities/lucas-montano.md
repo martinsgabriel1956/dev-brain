@@ -3,8 +3,8 @@ type: entity
 title: "Lucas Montano"
 aliases: ["Lucas Montano"]
 date_created: 2026-07-03
-date_updated: 2026-08-13
-source_count: 12
+date_updated: 2026-08-25
+source_count: 13
 tags: [criador-de-conteudo, ia, carreira, financas-pessoais, saas, growth, git]
 skill: tech-mentor-ai
 status: stub
@@ -36,8 +36,11 @@ Também mantém uma série sobre **Git** no canal, continuação do vídeo "Git 
 
 Também tem (atribuição provável, não confirmada — ver nota no frontmatter de [[wiki/sources/pull-requests-por-que-falham-alternativas-sem-pr]]) um vídeo em duas partes sobre por que [[wiki/concepts/code-review|pull requests]] falham e alternativas sem PR. Argumenta que o tempo de revisão humana não escala com o tamanho do PR (200 e 2.000 linhas recebem a mesma janela de ~20-30min), defende tamanho ótimo de ~100-300 linhas e cadência de revisão diária/2x-dia citando "inventário é custo" de [[wiki/entities/principles-of-product-development-flow|Reinertsen]] (ver [[wiki/concepts/inventario-e-custo]]). Descreve fast follow e draft PR como técnicas anti-inventário. Na segunda parte, relata (por ouvir falar, não experiência própria) o modelo sem-PR de algumas empresas: [[wiki/concepts/pair-programming|pair/mob programming]] (~1,6x velocidade, não 2x) + [[wiki/concepts/trunk-based-development|trunk-based development]] com pipeline de testes de integração como gate + [[wiki/concepts/feature-flag|feature flags]] para rollout progressivo — mas declara que pessoalmente ainda preferiria abrir PR mesmo nesse cenário. Mesma continuidade temática de [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] (processo de Git/PR) e [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] (code review).
 
+Também reage a um tweet viral do indie hacker [[wiki/entities/pieter-levels|Pieter Levels ("Levelsio")]] sobre guardrails do Claude bloqueando o desenvolvimento de um projeto hobby (simulador de Windows XP) enquanto o [[wiki/entities/moonshot-ai|Kimi K3]] completava as mesmas tarefas sem fricção — ver [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]]. Argumenta que o incidente reflete um trade-off real de guardrail pós-jailbreak do Fable 5 (junho de 2026) e um risco geopolítico específico para quem constrói negócio americano sobre modelo chinês. Generaliza para a tese de que "a era do modelo único acabou": relata rotear pessoalmente entre Claude (guardrail alto, para automações que tocam Stripe/e-mail de usuário no próprio app "PSUA") e modelos mais permissivos para tarefas de baixo risco — uma dimensão de roteamento por **tolerância a guardrail**, distinta de roteamento por complexidade/custo. No mesmo vídeo, descreve a técnica de trial de 7 dias sem cartão do PSUA como forma de qualificar leads de churn e reduzir refund (ver [[wiki/concepts/ltv-cac]]), e resenha benchmarks do recém-lançado Opus 5 (forte em Agentic Terminal Coding/Agent Search/Computer Use e Automation Bench; atrás do GPT 5.6 "Sol" em coding puro; sem avanço em dual-use capabilities de risco).
+
 ## Key Sources
 
+- [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — reação ao tweet de Levelsio sobre guardrails do Claude vs. Kimi K3; tese de fim da era do modelo único; roteamento por tolerância a guardrail; benchmarks do Opus 5; trial de 7 dias como técnica de qualificação de lead
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]]
 - [[wiki/sources/pull-requests-por-que-falham-alternativas-sem-pr]] — por que PRs falham (tempo de revisão não escala com tamanho); inventário-é-custo aplicado a PR; alternativas sem PR (pairing + trunk-based + feature flags)
 - [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] — continuação de "Git Flow é uma farsa"; maturidade sobre processo e o rebase-flow só-`main` para times pequenos

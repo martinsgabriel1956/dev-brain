@@ -3,8 +3,8 @@ type: concept
 title: "Ler Código de Terceiros"
 aliases: ["ler código de outras pessoas", "code reading", "aprender lendo código"]
 date_created: 2026-07-28
-date_updated: 2026-07-28
-source_count: 1
+date_updated: 2026-08-24
+source_count: 2
 tags: [carreira, habitos, aprendizado, legibilidade, code-review]
 skill: tech-mentor-leadership
 status: stub
@@ -20,6 +20,10 @@ O autor da fonte relata ter se inspirado na biblioteca `clipboard.js` para const
 
 > "Um projeto funcionando é muitas vezes melhor do que qualquer documentação."
 
+## Variante: ler a stdlib via API Reference
+
+[[wiki/sources/como-ler-documentacao-de-uma-linguagem-de-programacao]] mostra uma versão guiada da mesma habilidade: usar Ctrl+clique na IDE para sair da assinatura de um método na [[wiki/concepts/javadoc-api-reference|API reference]] (JavaDoc) e cair direto na implementação real — por exemplo, descobrir que `String.contains` usa `indexOf` internamente. Diferente do caso do `clipboard.js` (código de terceiros externo, sem documentação formal), aqui a leitura de implementação é apoiada por documentação estruturada, mas o mecanismo de aprendizado é o mesmo: entender o "como" por trás do "o quê".
+
 ## Ver Também
 
 - [[wiki/concepts/codebase-legibilidade-ia]] — legibilidade de código como propriedade que afeta tanto humanos quanto agentes de IA lendo o código
@@ -29,3 +33,4 @@ O autor da fonte relata ter se inspirado na biblioteca `clipboard.js` para const
 ## Key Sources
 
 - [[wiki/sources/7-habitos-programador-altamente-eficaz]]
+- [[wiki/sources/como-ler-documentacao-de-uma-linguagem-de-programacao]] — variante guiada via Ctrl+clique na API reference/JavaDoc

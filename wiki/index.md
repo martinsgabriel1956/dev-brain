@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-08-21
+date_updated: 2026-08-25
 ---
 
 
@@ -20,6 +20,12 @@ date_updated: 2026-08-21
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] | Sexto vídeo da série Tier S de [[wiki/entities/pedro-camaforte\|Pedro Camaforte]]: [[wiki/concepts/race-condition\|race condition]]/[[wiki/concepts/toctou\|TOCTOU]] via cadeira de cinema dupla-vendida e estoque sobrescrito; três estratégias — [[wiki/concepts/pessimistic-locking\|locking pessimista]] (`FOR UPDATE`), [[wiki/concepts/optimistic-concurrency-control\|OCC]] (coluna `version`), [[wiki/concepts/reservation-pattern\|reservations]] via Redis `SET NX EX` com fallback de lock pessimista se o Redis cair; demonstração empírica com 5 conexões simultâneas no PostgreSQL |
+| [[wiki/sources/busca-binaria-fila-protocolos-atendimento-live-coding]] | Corte de live coding do canal [[wiki/entities/fernanda-kipper\|Fernanda Kipper]]: [[wiki/concepts/algoritmos-de-busca\|busca binária]] resolvida "no papel" com o chat (fila de protocolos de atendimento), com leitura direta do livro *Entendendo Algoritmos* — analogia "adivinhar 1-100" e dicionário de 240.000 palavras (18 etapas via [[wiki/concepts/logaritmo\|log₂n]] vs. até 239.999 em brute force) |
+| [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] | [[wiki/entities/renato-augusto\|Renato Augusto]] reconstrói o mesmo capítulo "zero a milhões de usuários" (Alex Xu) já coberto em [[wiki/sources/escalar-para-um-milhao-de-usuarios]], mas com autoria explícita e exemplos concretos: read/write split configurado no Laravel, cluster Amazon Aurora, IPs privados atrás do [[wiki/concepts/load-balancer\|load balancer]] por segurança, ferramentas de mensageria nomeadas (RabbitMQ, Kafka, SQS) e analogia de checkout de e-commerce para jobs assíncronos |
+| [[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] | [[wiki/entities/david-malan\|David Malan]] (CS50, Harvard): aula de abertura — chatbot em ~10 linhas de Python via API da [[wiki/entities/openai\|OpenAI]] como demo mais elementar de **system prompt vs. user prompt**; representação de dados (unário/binário, [[wiki/concepts/ascii\|ASCII]], [[wiki/concepts/unicode\|Unicode]]/emoji, RGB, vídeo, som); [[wiki/concepts/algoritmos-de-busca\|algoritmos de busca]] via catálogo telefônico (linear vs. binária) e as três curvas de [[wiki/concepts/big-o\|Big O]]; pseudocódigo (funções/condicionais/booleanos/loops); introdução completa ao [[wiki/concepts/scratch-linguagem-de-blocos\|Scratch]] com dois projetos (Oscar Time, IB's Hardest Game) |
+| [[wiki/sources/historia-oauth2-antipadrao-senha-bernardo-lobato]] | [[wiki/entities/bernardo-lobato\|Bernardo Lobato]] narra a origem do **[[wiki/concepts/oauth2\|OAuth]]**: o **[[wiki/concepts/antipadrao-da-senha\|antipadrão da senha]]** pré-2007 (dar sua senha a serviços terceiros); [[wiki/entities/blaine-cook\|Blaine Cook]] ([[wiki/entities/twitter\|Twitter]]) e [[wiki/entities/larry-halff\|Larry Halff]] (Magnolia) fundam o grupo OAuth em abril/2007; RFC 5849 (OAuth 1.0, 2010) vs. RFC 6749 (OAuth 2.0, 2012); os quatro pilares (Resource Owner/Client/Authorization Server/Resource Server); grant types (Authorization Code, Client Credentials, Refresh Token); token opaco (introspecção) vs. autoassinado (validação local) |
+| [[wiki/sources/duas-perguntas-linkedin-cursos-online-lei-de-sturgeon]] | Sócio da consultoria [[wiki/entities/af-camara\|AF Câmara]] (700+ contratações/ano) argumenta que "a crítica ao LinkedIn/cursos online é real" e "isso pode me ajudar" são perguntas independentes, ambas respondíveis com "sim"; usa a **[[wiki/concepts/lei-de-sturgeon\|Lei de Sturgeon]]** (90% de tudo é lixo, importa o 10%) e o **[[wiki/concepts/mercado-de-limoes-assimetria-de-informacao\|mercado de limões]]** de Akerlof para explicar a queda de qualidade de cursos online; recomenda ser **[[wiki/concepts/assimetria-de-custo-plataforma-de-contratacao\|indexado]]** em vez de só consumir feed |
 | [[wiki/sources/tuple-space-wikipedia]] | Verbete da Wikipédia (traduzido para pt-BR em `raw/`) sobre **[[wiki/concepts/tuple-space\|tuple space]]**: repositório compartilhado de tuplas acessado concorrentemente por casamento de padrão (metáfora do quadro-negro / memória compartilhada distribuída), embasamento teórico de **Linda** ([[wiki/entities/david-gelernter\|Gelernter]] & [[wiki/entities/nicholas-carriero\|Carriero]], Yale 1986); detalha a generalização **Object Space** (exclusão mútua embutida via remoção-no-acesso) e a implementação **JavaSpaces** (Jini/Sun, padrão Master-Worker, API write/read/take) |
 | [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] | Autor não identificado. Framework introdutório de 7 passos para system design (entender problema → requisitos funcionais/não-funcionais → padrões de tráfego → componentes em alto nível sem tecnologia → definir APIs → só então escolher stack → revisar requisitos), ensinado do zero sobre um encurtador de URL na AWS (EC2, ELB, Amplify, API Gateway, Cognito, DynamoDB); regra de ouro "não invente as regras, faça perguntas de esclarecimento"; fonte-irmã de [[wiki/sources/case-url-shortener]] com foco no processo, não no deep-dive técnico |
 | [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] | Locutor não identificado: prompts caprichados com resultado medíocre são sintoma de contexto ausente (regra de negócio fora da janela), não de técnica de prompt — caso do serviço de cobrança recorrente que ignorou a fila de auditoria; três movimentos de engenharia de contexto corrigem o mesmo prompt mediano; distingue evolução (plugar IA no processo existente) de revolução (redesenhar sprint, tamanho de tarefa e ownership) — velocidade de escrever código ≠ velocidade de entrega |
@@ -293,6 +299,7 @@ date_updated: 2026-08-21
 | [[wiki/sources/diferenciais-portfolio-backend-junior]] | Para a primeira vaga de backend, o diferencial não é arquitetura sofisticada — é profissionalismo nas bases: testes de integração com banco real, Docker/deploy real, SQL além do CRUD, documentação Swagger, error handling estruturado e observabilidade |
 | [[wiki/sources/acoplamento-abstracao-estado]] | Acoplamento, abstração e estado como lentes para ler código, não termos para decorar — função god acoplada vs. separação por responsabilidade, interface como abstração, estado isolado (recebe/retorna) vs. estado global mutado |
 | [[wiki/sources/5-recursos-para-ser-um-desenvolvedor-melhor]] | Augusto Galego: documentação oficial, roadmap.sh, CS50, livros com custo-benefício (Refactoring sim, Clean Code com reserva), cursos até R$30 e contribuir com open source — nada substitui escrever muito código |
+| [[wiki/sources/como-ler-documentacao-de-uma-linguagem-de-programacao]] | Método prático: padrão getting started/tutorials/API reference/examples, JavaDoc via IDE (Ctrl+clique até a implementação) e associação lexical português→inglês para achar o método certo |
 | [[wiki/sources/golang-mercado-salarios-pesquisa-2024]] | Go paga acima de Java em todos os níveis (maior gap no Sênior, ~R$6.000/mês); Go Developer Survey confirma 93% de satisfação; 27,7% dos devs Go no Brasil atuam remoto para o exterior contra 12% em Java |
 | [[wiki/sources/golang-profissional-sem-grandes-frameworks]] | Lucas Badico: Go não é pra "código fofo" — sem framework dominante equivalente a Rails/Express, ~80% das dependências vêm da stdlib, e mesmo com generics a cultura prefere repetição estável a abstração grande e frágil |
 | [[wiki/sources/hmac-integridade-mensagem-local-first-entrevista]] | Pergunta de entrevista de system design sobre integridade de mensagem: carrinho local-first sem storage no servidor — por que criptografar quebra a exibição, chave assimétrica é cara demais, e HMAC (ipad/opad derivados do mesmo segredo, duas etapas de hash) é a resposta certa contra ataque de extensão de mensagem |
@@ -374,6 +381,8 @@ date_updated: 2026-08-21
 | [[wiki/sources/seedwork-martin-fowler]] | Martin Fowler (bliki, 2003, mesmo dia que o Application Boundary): "seedwork" — framework mínimo que cada time modifica livremente, reuso por copiar-e-colar reabilitado como pragmático quando um bom framework compartilhado não está ao alcance; cita "DLL-hell" da Microsoft como prova de que até reuso maduro é difícil; reuso entre aplicações é mais difícil que reuso interno porque uma ApplicationBoundary é uma construção social |
 | [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] | Bernardo Lobato: origem histórica de "microsserviços" — Peter Rogers cunha "microweb service" em 2005 como contraponto ao SOA/ESB dominante (SOAP/XML pesado, barramento central); nome consolidado em 2012, mesmo ano de "Microservices — Java, the Unix Way"; três requisitos práticos (standalone, deploy independente, funcionalidade útil), banco exclusivo por serviço via API, exemplo de streaming (recomendação vs. entrega de vídeo), benefícios/desafios, e capacitação de time como desafio central pouco discutido |
 | [[wiki/sources/continuous-delivery-martin-fowler]] | Bliki de Fowler (2013): define "Continuous Delivery" — capacidade (não ato) de lançar em produção a qualquer momento; quatro indicadores do grupo de CD da Thoughtworks; distinção precisa vs. Continuous Deployment; DevOps culture além de dev+ops; crédito a Jez Humble |
+| [[wiki/sources/como-transistores-formam-portas-logicas-celulas-padrao-cmos]] | [[wiki/entities/branch-education\|Branch Education]]: analogia "transistor = pino de Lego" para explicar FinFET tipo N/P, o inversor CMOS de 2 transistores, e como NAND (4)/AND/NOR/OR (6)/XOR/XNOR (10) se constroem em topologia série/paralelo; hierarquia célula padrão → célula macro (somador ~160, multiplicador ~6.100) → núcleo IP → chip com ~26 bilhões de transistores |
+| [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] | [[wiki/entities/lucas-montano\|Lucas Montano]] parte de tweet de [[wiki/entities/pieter-levels\|Pieter Levels]] (Kimi K3 termina tarefa enquanto Claude perde 2 semanas em guardrails, rebaixado Opus→Sonnet "por segurança") para duas teses: risco geopolítico real de negócio americano sobre modelo chinês (janela de atraso da China encolhendo), e "a era do modelo único acabou" — roteamento por **tolerância a guardrail** (Claude para Stripe/e-mail sensível, modelo permissivo para hobby); benchmarks do Opus 5 (forte em Agentic Terminal Coding/Agent Search/Computer Use, atrás do GPT 5.6 Sol em coding puro, sem avanço em dual-use de risco) |
 
 ## Concepts
 
@@ -400,6 +409,7 @@ date_updated: 2026-08-21
 | [[wiki/concepts/session-fixation]] | Atacante planta um session ID conhecido antes do login; regenerar o ID pós-login é a defesa |
 | [[wiki/concepts/open-redirect]] | Validação frouxa da `redirect_uri` no OAuth permite ao atacante desviar o `authorization_code` para domínio próprio |
 | [[wiki/concepts/step-up-authentication]] | MFA só no login não protege ações sensíveis pós-sessão — reautenticar o segundo fator antes de ações de alto risco |
+| [[wiki/concepts/antipadrao-da-senha]] | Trocar senha entre sistemas em vez de token — o problema pré-2007 que o OAuth existe para resolver |
 
 ### Onboarding & Aprendizado de Codebase
 
@@ -420,6 +430,9 @@ date_updated: 2026-08-21
 
 | Página | Hook |
 |---|---|
+| [[wiki/concepts/lei-de-sturgeon]] | Sturgeon (1957): 90% de tudo é lixo, o que importa é o 10% — separa "a crítica ao campo é real" de "isso pode me ajudar" |
+| [[wiki/concepts/mercado-de-limoes-assimetria-de-informacao]] | Akerlof (1970): mercado onde qualidade é invisível antes da compra derruba a própria média (carro usado, curso online) — mas também derruba o preço, trocando "encontrar" por "filtrar" |
+| [[wiki/concepts/assimetria-de-custo-plataforma-de-contratacao]] | LinkedIn: empresa paga dezenas de milhares de dólares/ano numa licença de busca; candidato tem custo zero para ser indexado — título/competências são metadados, não vaidade |
 | [[wiki/concepts/soft-skills]] | Habilidades humanas que potencializam o técnico — o multiplicador da carreira |
 | [[wiki/concepts/atitude-mindset-vs-tech-skill]] | Potencial (aposta no futuro, onde atitude/mindset dominam) vs. performance atual (onde a tech skill pesa hoje) — e por que "20% melhor" é immensurável |
 | [[wiki/concepts/mentalidade-de-dar-primeiro]] | Give-first: oferecer ajuda antes de precisar; o "efeito magnético" de os outros gostarem de trabalhar com você |
@@ -481,6 +494,9 @@ date_updated: 2026-08-21
 |---|---|
 | [[wiki/concepts/roadmap-sh]] | Mapa ordenado de tópicos por área (284k stars no GitHub) — direcionamento, não profundidade |
 | [[wiki/concepts/documentacao-oficial-como-recurso]] | Ler a doc do próprio framework — recurso óbvio e mais negligenciado |
+| [[wiki/concepts/padrao-de-secoes-de-documentacao-tecnica]] | Getting started, tutorials, API reference, examples — o mesmo padrão em toda linguagem/framework |
+| [[wiki/concepts/javadoc-api-reference]] | Camada de doc mais próxima do código — hierarquia, deprecated, assinatura exata; Ctrl+clique na IDE chega à implementação |
+| [[wiki/concepts/associacao-lexical-documentacao]] | Traduzir a necessidade em português para o verbo em inglês provável ("cortar em pedaços" → `split`) |
 | [[wiki/concepts/cs50]] | Curso gratuito de Harvard como base de fundamentos para quem não fez faculdade |
 | [[wiki/concepts/livros-recomendados-programador]] | Refactoring com endosso pleno, Clean Code com reserva explícita — custo-benefício como critério |
 | [[wiki/concepts/contribuir-open-source]] | Contribuir com o que você já usa — good first issue como ponto de entrada |
@@ -810,6 +826,9 @@ date_updated: 2026-08-21
 |---|---|
 | [[wiki/concepts/logica-booleana]] | AND, OR, NOT — as três operações que constroem qualquer circuito a partir de 0s e 1s |
 | [[wiki/concepts/sistema-binario-bit-byte]] | Bit (binary digit, 2 estados via transistor) → byte (8 bits, um caractere) → palavra → documento; toda informação é binária |
+| [[wiki/concepts/transistor]] | FinFET tipo N (conduz com 1V) vs. tipo P (conduz com 0V) — o "pino de Lego" que, combinado, implementa o bit físico e toda porta lógica |
+| [[wiki/concepts/cmos]] | Par de transistores N+P sempre opostos — nunca os dois ligados, daí o baixo consumo de energia e a tolerância a ruído do circuito dominante em chips modernos |
+| [[wiki/concepts/celula-padrao]] | A porta lógica física real: inversor (2 transistores), NAND (4), XOR (10) — e a hierarquia até célula macro, núcleo IP e chip completo |
 | [[wiki/concepts/maquina-de-turing]] | Fita infinita + cabeça de leitura/escrita + tabela de transição (Turing, 1936) — o modelo que define o que é computável |
 | [[wiki/concepts/determinismo-vs-nao-determinismo]] | Uma ação por (estado, símbolo) vs. várias — a distinção que origina P vs NP; associação com quântico é simplificação, não equivalência |
 | [[wiki/concepts/complexidade-computacional]] | Eficiência de algoritmos em tempo e espaço (finitos) — Big O como comportamento assintótico; base da segurança criptográfica |
@@ -869,6 +888,7 @@ date_updated: 2026-08-21
 | [[wiki/concepts/caminho-feliz]] | Fluxo ideal em que tudo ocorre conforme esperado |
 | [[wiki/concepts/edge-case]] | Cenários fora do fluxo principal que precisam ser tratados explicitamente |
 | [[wiki/concepts/algoritmos-e-estruturas-de-dados]] | A fundação que separa amadores de profissionais — DSA antes de qualquer framework |
+| [[wiki/concepts/scratch-linguagem-de-blocos]] | Linguagem visual de blocos do MIT Media Lab — mesmos quatro conceitos (função, condicional, booleano, loop) de C/Python, arrastados em vez de digitados |
 | [[wiki/concepts/algoritmos-de-ordenacao]] | Bubble Sort O(n²), Insertion Sort O(n²)/O(n) melhor caso, Merge Sort O(n log n) estável — não há um melhor universal |
 | [[wiki/concepts/algoritmos-de-busca]] | Linear Search O(n) vs Binary Search O(log n) — a busca binária exige dados já ordenados |
 | [[wiki/concepts/bucket-sort]] | Ordenar sem comparar: distribuir elementos em "baldes" indexados por um valor com teto conhecido (ex.: frequência ≤ n) — O(n) em vez de O(n log n) |
@@ -977,6 +997,11 @@ date_updated: 2026-08-21
 | [[wiki/concepts/large-scale-architecture]] | Escala e complexidade são eixos independentes de uma arquitetura — large scale foca em capacidade/dividir-para-conquistar, não necessariamente em interdependência |
 | [[wiki/concepts/arquitetura-complexa]] | Interdependência e poliglotismo, típico de legado enterprise que convive com o passado (mainframe → AS/400 → Linux → Windows) — sem métrica objetiva de classificação |
 | [[wiki/concepts/planejamento-de-capacidade]] | Estimar recursos futuros a partir dos dados da observabilidade — inclui o contra-intuitivo "gastar mais para perder menos" e disponibilidade como capacidade de recurso, não só uptime |
+| [[wiki/concepts/race-condition]] | Múltiplos acessos concorrentes fora de ordem produzem estado incorreto — variante frontend (fetch em useEffect) e variante backend ([[wiki/concepts/toctou]]) |
+| [[wiki/concepts/distributed-lock]] | Exclusão mútua entre processos distribuídos via `SET NX EX` no Redis — caso positivo (Uber, reserva de ingresso) e caso negativo (seatmap sem check-and-reserve atômico) |
+| [[wiki/concepts/pessimistic-locking]] | `SELECT ... FOR UPDATE` trava a linha até o commit — serializa acesso, ideal sob alta contenção e conflito caro |
+| [[wiki/concepts/optimistic-concurrency-control]] | Detecta conflito no `UPDATE` via coluna `version`, sem travar nada antes — ideal quando conflitos são raros |
+| [[wiki/concepts/reservation-pattern]] | Move o momento do conflito para a escolha do recurso (reserva com TTL), não para depois do pagamento preenchido |
 
 ### Coordenação Distribuída & Tuple Space
 
@@ -1441,8 +1466,21 @@ date_updated: 2026-08-21
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/mit-media-lab]] | Laboratório do MIT, criador do Scratch — linguagem visual usada como primeira linguagem ensinada no CS50 |
+| [[wiki/entities/harvard-university]] | Universidade onde o CS50 é ministrado — "John Harvard" é a analogia recorrente de busca em catálogo telefônico nas aulas de algoritmos |
+| [[wiki/entities/blaine-cook]] | Engenheiro do Twitter, cocriador do OAuth (2007) — buscava melhorar o compartilhamento de acesso, vindo de uma implementação de OpenID |
+| [[wiki/entities/larry-halff]] | Engenheiro do Magnolia, cocriador do OAuth (2007) — precisava de delegação de acesso para widgets de macOS sem expor senha |
+| [[wiki/entities/twitter]] | Onde Blaine Cook trabalhava ao cocriar o OAuth; citada como pioneira da API Economy dos anos 2000 |
+| [[wiki/entities/linkedin]] | Plataforma de rede profissional — licença de recrutamento cara para a empresa, custo zero para o candidato ser indexado |
+| [[wiki/entities/af-camara]] | Consultoria de tecnologia — 700+ contratações/ano, LinkedIn como canal principal, mesmo para vagas sênior/liderança |
+| [[wiki/entities/theodor-sturgeon]] | Escritor de ficção científica que cunhou a Lei de Sturgeon (1957): 90% de tudo é lixo, importa o 10% |
+| [[wiki/entities/george-akerlof]] | Economista — "The Market for Lemons" (1970), assimetria de informação e colapso de qualidade média |
+| [[wiki/entities/spring-boot]] | Framework Java — estudo de caso do padrão getting started/tutorials/guides/API reference; Spring Data JPA gera query a partir do nome do método |
 | [[wiki/entities/ibm]] | International Business Machines — citada como usuária de referência de **fita magnética (LTO)** para backup de longo prazo: a mídia "ultrapassada" que vence em custo/GB, durabilidade e isolamento de rede |
+| [[wiki/entities/pieter-levels]] | Indie hacker (~3M USD/ano sozinho, Photo AI e outros SaaS); codifica direto na VPS de produção com Claude Code; tweet viral sobre guardrails do Claude bloqueando um hobby (simulador de Windows XP) enquanto o Kimi K3 completava as mesmas tarefas |
 | [[wiki/entities/richard-hamming]] | Matemático (Turing Award 1968) — descreveu a etimologia *física* do código espaguete: saltos `goto` empilhados na memória para corrigir bugs |
+| [[wiki/entities/branch-education]] | Canal do YouTube de animações 3D sobre tecnologia — autor do vídeo sobre transistores, CMOS e células padrão |
+| [[wiki/entities/mat-venn]] | Criador do canal "Zero to ASIC Course" e do serviço Tiny Tapeout (fabricação própria de circuito integrado) |
 | [[wiki/entities/brian-foote]] | Coautor do paper *Big Ball of Mud* (PLoP '97) que popularizou o anti-padrão arquitetural |
 | [[wiki/entities/joseph-yoder]] | Coautor, com Foote, do paper *Big Ball of Mud* (1997) |
 | [[wiki/entities/brian-marick]] | Signatário do Manifesto Ágil — creditado por cunhar o termo *Big Ball of Mud* |

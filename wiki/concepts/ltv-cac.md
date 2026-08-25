@@ -3,8 +3,8 @@ type: concept
 title: "LTV e CAC"
 aliases: ["lifetime value", "custo de aquisição de cliente", "unit economics", "LTV/CAC"]
 date_created: 2026-07-09
-date_updated: 2026-08-11
-source_count: 4
+date_updated: 2026-08-25
+source_count: 5
 tags: [ltv, cac, growth, unit-economics, saas, retencao, graph-engineering, loop-engineering]
 skill: tech-mentor-leadership
 status: draft
@@ -38,9 +38,14 @@ LTV está diretamente ligado a por que o usuário continua pagando. Um produto c
 
 [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]] cita CAC e LTV (junto com churn e ROI) como conhecimento de negócio que um arquiteto de software precisa ter — não para calcular esses números, mas para entender o vocabulário e a motivação por trás de decisões técnicas que vêm do negócio (ex.: um aumento reportado de churn pode exigir investigação de performance/disponibilidade da arquitetura).
 
+## Trial Sem Cartão Como Qualificador de Lead e Redutor de Refund
+
+[[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] descreve uma mudança tática no app "PSUA" de [[wiki/entities/lucas-montano]]: trocar a assinatura direta por um trial de 7 dias sem cartão obrigatório. Efeitos observados: (1) menor refund — quem assina depois do trial já teve 7 dias para testar de graça, então tecnicamente "perdeu" o direito ao reembolso (o autor diz que reembolsa mesmo assim por questão legal, mas a obrigação operacional cai); (2) sinal de qualidade de lead — quem completa o trial e assina já demonstrou disposição de pagar, e quem não renova após o trial é um "churn de trial" tratado como **lead extremamente qualificado que precisa ser mais aquecido/educado**, não um lead perdido sem valor. O autor conecta [[wiki/entities/anthropic|Claude]] + Stripe + Resend para montar campanhas de e-mail automatizadas de reengajamento/educação desses leads pós-trial — um caso concreto de por que ele prefere um modelo de guardrail alto para essa automação específica (ver [[wiki/concepts/ai-safety-guardrails]] e [[wiki/concepts/roteamento-automatico-de-modelo]]).
+
 ## Key Sources
 
 - [[wiki/sources/como-vender-um-saas-sem-audiencia]]
 - [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]]
 - [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — CAC/churn/LTV como exemplo de por que um loop de IA de métrica única é insuficiente
 - [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — o gap entre R$5k e R$50k/mês é unit economics: manter o CAC baixo enquanto se aumenta o volume de leads frios; leads quentes (audiência própria) como ponto de partida de CAC menor (ver [[wiki/concepts/estagios-de-maturidade-de-produto]])
+- [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — trial de 7 dias sem cartão como técnica de qualificação de lead e redução de refund no app PSUA

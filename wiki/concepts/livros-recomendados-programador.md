@@ -3,8 +3,8 @@ type: concept
 title: "Livros Recomendados Para Programador"
 aliases: ["livros de programação", "biblioteca do dev", "clean code vs refactoring"]
 date_created: 2026-07-10
-date_updated: 2026-07-27
-source_count: 2
+date_updated: 2026-08-25
+source_count: 3
 tags: [carreira, aprendizado, recursos, livros]
 skill: tech-mentor-leadership
 status: stub
@@ -30,7 +30,12 @@ O contraste deliberado entre Clean Code (ressalva) e Refactoring (endosso pleno)
 
 [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] complementa o endosso a *Refactoring* e ao *Pragmatic Programmer* com uma explicação de fundo: ambos tratam de [[wiki/concepts/essential-complexity|princípios essenciais]], não de tecnologia específica — daí continuarem valendo a pena 20 anos após a primeira edição de cada um. A 2ª edição de *Refactoring* trocou o código de exemplo (Java datado → JavaScript) e o domínio didático (locadora de vídeos → peças de teatro) exatamente para renovar o "acidente" (tecnologia) mantendo a "essência" (princípios) intacta. Ver [[wiki/concepts/accidental-complexity]].
 
+## Entendendo Algoritmos na prática
+
+[[wiki/sources/busca-binaria-fila-protocolos-atendimento-live-coding]] mostra o livro sendo usado ao vivo como material didático primário — trechos lidos diretamente na tela para embasar um exercício de [[wiki/concepts/algoritmos-de-busca|busca binária]] (a analogia "adivinhar um número de 1 a 100" e o exemplo do dicionário de 240.000 palavras), reforçando a recomendação de que o livro é acessível para quem estuda para entrevistas estilo LeetCode.
+
 ## Key sources
 
 - [[wiki/sources/5-recursos-para-ser-um-desenvolvedor-melhor]]
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]]
+- [[wiki/sources/busca-binaria-fila-protocolos-atendimento-live-coding]] — *Entendendo Algoritmos* citado e lido ao vivo como material de apoio para ensinar busca binária

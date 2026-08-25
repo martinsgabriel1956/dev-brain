@@ -3,8 +3,8 @@ type: concept
 title: "Auto Scaling"
 aliases: ["autoscaling", "escalamento automático", "horizontal pod autoscaler", "HPA"]
 date_created: 2026-06-26
-date_updated: 2026-08-17
-source_count: 3
+date_updated: 2026-08-24
+source_count: 4
 tags: [system-design, escalabilidade, cloud, infra, automatizacao, performance]
 skill: tech-mentor-system-design
 status: draft
@@ -82,3 +82,4 @@ Na AWS, o ASG define três números: mínimo, desejado e máximo de instâncias 
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
 - [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — ASG com min/desejado/máximo sempre acoplado ao ALB, incluindo health checks e remoção automática de instâncias falhas
 - [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — auto scaling baseado no tamanho da fila como resposta a [[wiki/concepts/back-pressure]]; citado como viável mas mais difícil de configurar do que as alternativas mais baratas (poda de stale jobs, batching, admission control)
+- [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — motivação de negócio para elasticidade: pico sazonal de tráfego (Black Friday numa API de e-commerce) torna provisionamento manual impraticável (custo de esquecer desprovisionar vs. indisponibilidade por não provisionar a tempo)

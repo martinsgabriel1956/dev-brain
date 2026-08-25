@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-08-18
-source_count: 6
+date_updated: 2026-08-24
+source_count: 7
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -28,6 +28,10 @@ Empresa de tecnologia, criadora da família de modelos **Gemini** (ex.: Gemini 2
 
 Google, junto com Yahoo, Facebook e AOL, fundou em 2007 a OpenID Foundation, criada para padronizar o ecossistema caótico e incompatível do protocolo [[wiki/concepts/openid-legado|OpenID original]]. Anos depois, é citada como uma das big techs (junto com Microsoft e Apple) que adotaram em massa o [[wiki/concepts/openid-connect|OpenID Connect]], tornando-o base de praticamente todo botão de login social ("Entrar com Google"). Ver [[wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth]].
 
+## Participante Inicial das Discussões do OAuth (2007)
+
+Pouco depois de [[wiki/entities/blaine-cook]] (Twitter) e [[wiki/entities/larry-halff]] (Magnolia) iniciarem o grupo de discussão OAuth em abril de 2007, o Google já havia se juntado às discussões — mesmo ano em que, separadamente, cofundou a OpenID Foundation (ver seção abaixo). Ver [[wiki/sources/historia-oauth2-antipadrao-senha-bernardo-lobato]].
+
 ## Google Drive como Exemplo de Armazenamento em Nuvem
 
 Citada (ao lado de Dropbox e iCloud) como serviço de nuvem de referência em [[wiki/sources/tipos-de-armazenamento-de-dados]]: arquivos ficam em servidores remotos, criptografados e **duplicados em vários data centers** — geo-redundância que sobrevive à falha de um centro inteiro. Trade-off: espaço grande exige assinatura. Contraste com o [[wiki/concepts/nas-network-attached-storage|NAS]], em que o hardware é do próprio usuário.
@@ -40,3 +44,4 @@ Citada (ao lado de Dropbox e iCloud) como serviço de nuvem de referência em [[
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — Gemini 3.5 Flash como modelo de referência para tarefas que exigem velocidade
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — Gemini CLI citado como um dos providers com detecção de uso não-oficial e risco de banimento por rotação de contas free tier
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — criadora do [[wiki/concepts/grpc]] (2015), lançado na mesma década do GraphQL (Meta) como resposta de performance para comunicação interna entre microsserviços
+- [[wiki/sources/historia-oauth2-antipadrao-senha-bernardo-lobato]] — uma das primeiras empresas a se juntar às discussões do grupo OAuth, pouco após sua formação em abril de 2007

@@ -3,8 +3,8 @@ type: concept
 title: "Roteamento Automático de Modelo"
 aliases: ["model routing", "auto-seleção de modelo", "roteador de LLM"]
 date_created: 2026-07-19
-date_updated: 2026-08-05
-source_count: 3
+date_updated: 2026-08-25
+source_count: 4
 tags: [llm, model-routing, prompt-engineering, agregador-de-modelos]
 skill: tech-mentor-ai
 status: draft
@@ -39,6 +39,10 @@ Diferença chave em relação ao caso Adapta ONE acima: aqui a decisão de qual 
 
 [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] descreve um mecanismo de "rotação" que **não é** roteamento por qualidade/custo de modelo como os casos acima — é [[wiki/concepts/rotacao-de-contas-free-tier]], que troca entre **contas/credenciais** do mesmo tipo quando uma esgota a cota, não entre modelos de capacidade diferente. Os dois padrões compartilham a mesma infraestrutura de fallback ([[wiki/concepts/ai-gateway-llm-router]]), mas resolvem problemas distintos: um otimiza qual modelo responde melhor, o outro contorna limite de free tier por conta.
 
+## Novo Eixo: Roteamento por Tolerância a Guardrail
+
+[[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] descreve um eixo de roteamento distinto de todos os casos acima: não custo, não complexidade, mas **tolerância a guardrail** ([[wiki/concepts/ai-safety-guardrails]]). [[wiki/entities/lucas-montano]] relata rotear manualmente entre modelos conforme o risco percebido da tarefa em si — não da dificuldade dela: usa o Claude para automações que tocam dados sensíveis de produção (Stripe + Resend), justamente porque o guardrail alto confirma qualquer ação arriscada antes de executá-la; e usaria um modelo mais permissivo (chinês/open-weight) para tarefas de hobby de baixo risco real, como o caso do simulador de Windows XP de [[wiki/entities/pieter-levels|Pieter Levels]], que sofreu fricção desproporcional ao tentar essa mesma tarefa no Claude Code. É roteamento manual e qualitativo (decisão do humano por tarefa, não classificador automático), mais próximo do "roteamento por categoria estática" da Abacus.AI descrito acima — mas com o critério de categorização sendo risco/guardrail, não custo ou capacidade.
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/skills-agente]] — no caso da Adapta, o roteamento de modelo e as skills de contexto pessoal operam juntos: a skill fornece o contexto, o roteador escolhe o modelo que processa esse contexto
@@ -51,3 +55,4 @@ Diferença chave em relação ao caso Adapta ONE acima: aqui a decisão de qual 
 - [[wiki/sources/sistema-produtividade-ia-adapta]]
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — Custom Router da Abacus.AI como caso de roteamento por categoria estática configurada pelo humano
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — contraste com rotação de contas free tier (eixo de credencial, não de modelo)
+- [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — novo eixo de roteamento manual por tolerância a guardrail (Claude para dados sensíveis, modelo permissivo para hobby de baixo risco)

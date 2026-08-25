@@ -3,8 +3,8 @@ type: concept
 title: "Filas e Workers"
 aliases: ["job queue", "background processing", "async workers", "processamento assíncrono"]
 date_created: 2026-07-09
-date_updated: 2026-08-14
-source_count: 6
+date_updated: 2026-08-24
+source_count: 7
 tags: [filas, workers, background-jobs, mensageria, backend, retry, idempotencia]
 skill: tech-mentor-backend
 status: stub
@@ -52,3 +52,4 @@ Producer e worker como dois processos independentes (ex.: Bun), comunicando-se a
 - [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — computações pesadas (processar vídeo/imagem, gerar PDF) publicadas como jobs numa fila; worker (thread em outra máquina, lambda) puxa e processa, aliviando os servidores web para responderem rápido. A fonte chama isso de "publisher/subscriber" — na prática, uma job queue / competing consumers
 - [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] — a fila entre produtor e consumidor como [[wiki/concepts/buffer]] que absorve picos (ex.: Black Friday) e permite processamento em ritmo constante
 - [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — o que fazer quando o worker não acompanha o ritmo do produtor: identificar o gargalo, podar stale jobs, processar em batches, e controlar a admissão de novos jobs (ver [[wiki/concepts/admission-control]])
+- [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — mesmo padrão (job pesado → mensagem na fila → resposta imediata → worker processa em background), com nomes concretos de ferramentas (RabbitMQ, Kafka, AWS SQS) e a analogia de checkout de e-commerce: "pagar" não trava a tela até o gateway confirmar, exatamente como o padrão de resposta imediata + confirmação assíncrona

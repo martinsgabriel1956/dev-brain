@@ -3,8 +3,8 @@ type: concept
 title: "Race Condition"
 aliases: ["condição de corrida", "race condition fetch React", "request fora de ordem"]
 date_created: 2026-04-22
-date_updated: 2026-07-04
-source_count: 2
+date_updated: 2026-08-25
+source_count: 3
 tags: [react, bug, fetch, async, useEffect, race-condition]
 skill: tech-mentor-frontend
 status: stable
@@ -89,6 +89,8 @@ function handleSearch(query: string) {
 
 A race condition acima é específica de frontend (ordem de respostas de rede sobrescrevendo estado). A mesma família de bug existe no backend, sobre recursos compartilhados (saldo, estoque) — ver [[wiki/concepts/toctou]] para o caso de saque duplicado e a correção via transactions atômicas.
 
+[[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] reforça a variante de backend com dois exemplos didáticos (cadeira de cinema dupla-vendida, estoque de e-commerce sobrescrito) e percorre três estratégias de correção em ordem de sofisticação de UX: [[wiki/concepts/pessimistic-locking]] (`SELECT FOR UPDATE`), [[wiki/concepts/optimistic-concurrency-control]] (coluna `version`) e [[wiki/concepts/reservation-pattern]] (reserva com TTL, separando o momento do conflito do momento do pagamento).
+
 ## Ver também
 
 - [[useEffect]] — onde race condition aparece
@@ -100,3 +102,4 @@ A race condition acima é específica de frontend (ordem de respostas de rede so
 
 - [[wiki/sources/useeffect-problemas-e-solucoes]]
 - [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]]
+- [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] — variante backend com locking pessimista, OCC e reservations

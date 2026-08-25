@@ -3,8 +3,8 @@ type: concept
 title: "System Prompt (Arquitetura)"
 aliases: ["system prompt", "prompt escondido", "instrucoes ocultas llm"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 2
+date_updated: 2026-08-24
+source_count: 3
 tags: [system-prompt, harness, context-window, rules, skills, mcp]
 skill: tech-mentor-ai
 status: stable
@@ -53,7 +53,22 @@ Quando você usa o Claude Code, o system prompt contém (aproximadamente):
 - Suas rules do `CLAUDE.md` ou `.claude/rules/`
 - Front-matter de cada skill registrada
 
+## A Demo Mais Elementar Possível: Sem Harness
+
+[[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] mostra a distinção system/user prompt isolada de qualquer camada de harness, rules, skills ou MCP — só uma chamada direta à Responses API da [[wiki/entities/openai]]:
+
+```python
+response = client.responses.create(
+    input=user_prompt,        # o que o usuário digitou
+    instructions=system_prompt,  # regras fixas, definidas pelo programador
+    model="gpt-5",
+)
+```
+
+`user_prompt` é a entrada dinâmica (ex.: "o que é o CS50?"); `system_prompt` é a instrução fixa que se aplica a toda chamada (ex.: "Limite sua resposta a uma frase", ou, por brincadeira, "Finja que você é um gato"). Sem essa separação, o usuário teria que repetir manualmente a instrução ("em uma frase...") a cada pergunta — exatamente o problema que motiva colocar instruções permanentes no `instructions`/system prompt em vez do prompt do usuário. É o mesmo princípio arquitetural descrito acima para harnesses de codificação (peso probabilístico maior, aplicação a toda chamada), só que reduzido ao caso mínimo possível, sem nenhuma das camadas (rules de projeto, skills, definições de MCP) que compõem o system prompt de uma ferramenta como Claude Code.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-01-context-harness-engineering]]
 - [[wiki/sources/formacao-ia-devs-aula-02-rules]]
+- [[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] — demo mínima sem harness: `instructions` (system prompt) vs. `input` (user prompt) via Responses API da OpenAI

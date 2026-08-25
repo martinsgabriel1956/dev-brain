@@ -3,8 +3,8 @@ type: concept
 title: "Modelos Frontier"
 aliases: ["frontier models", "modelos de ponta", "modelos comerciais avancados"]
 date_created: 2026-06-02
-date_updated: 2026-08-12
-source_count: 7
+date_updated: 2026-08-25
+source_count: 8
 tags: [modelos, frontier, llm, openai, anthropic, google]
 skill: tech-mentor-ai
 status: draft
@@ -21,6 +21,7 @@ Os modelos de linguagem mais capazes disponíveis no mercado em um dado momento 
 | Fable | Anthropic | Segundo [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]], modelo de uso geral mais forte da Anthropic para arquitetura/planejamento no Artificial Analysis (pontuação 60); ver nota de ambiguidade abaixo sobre a relação com "Fable 5" (cybersegurança) |
 | Sol / GPT 5.6 | OpenAI | Modelo mais forte da OpenAI no Artificial Analysis (pontuação 59); "Sol" é apelido informal, não nome oficial confirmado |
 | Opus 4.7 / Opus 4.8 | Anthropic | Top em design/frontend; preferido para review; citado como alternativa quase tão boa quanto Fable para tarefas de alta complexidade |
+| Opus 5 | Anthropic | Segundo [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]]: forte em Agentic Terminal Coding, Agent Search e Computer Use (à frente de todos os citados); bom para scripts/DevOps por "pensar menos" que o Fable em tarefas simples, a menor custo; supera Opus 4.8 e o Fable 5 em custo-por-tentativa no Frontier Bench; bom em Automation Bench; reduz Misaligned Behavior; atrás do GPT 5.6 Sol em coding puro; sem avanço em dual-use capabilities de risco (atrás do Fable 5 em offensive cybersecurity) |
 | GPT-5.5 | OpenAI | Melhor reasoning para tarefas novas/complexas |
 | GPT-5.4 | OpenAI | Melhor custo-benefício que 5.5 para muitas tarefas |
 | Gemini 3.5 Flash | Google | Citado com pontuação 70 no coding index — rápido e forte para tarefas simples/urgentes |
@@ -68,3 +69,4 @@ Além dos modelos frontier de uso geral acima, surgiu em 2026 uma subclasse de m
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — Fable e Sol/GPT 5.6 como os dois modelos mais fortes no Artificial Analysis; dados de custo/velocidade comparativos entre modelos de fronteira e alternativas mais baratas
 - [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — reposicionamento da linha Anthropic: Fable como âncora premium, **Opus como "novo Sonnet"**, Grok 4.5 e Kimi K3 no mid-tier abaixo do Opus, tier barato (Haiku) sendo abandonado
 - [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — Fable e GPT 5.6 como os modelos mais capazes para long-running tasks (relatos de runs de mais de dois dias); tensão sobre GPT 5.6 tratado como modelo acessível de uso diário vs. bloqueado por cybersegurança
+- [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — benchmarks de lançamento do Opus 5 (Agentic Terminal Coding, Agent Search, Computer Use, Frontier Bench custo-por-tentativa, Automation Bench, Misaligned Behavior, dual-use capabilities de risco)

@@ -3,8 +3,8 @@ type: concept
 title: "Cache-Aside (Lazy Loading)"
 aliases: ["lazy loading cache", "cache aside", "flyweight cache"]
 date_created: 2026-06-26
-date_updated: 2026-08-10
-source_count: 2
+date_updated: 2026-08-24
+source_count: 3
 tags: [cache, cache-aside, redis, padroes-arquiteturais, backend]
 skill: tech-mentor-backend
 status: stable
@@ -66,3 +66,4 @@ Quando o TTL expira e muitos requests chegam simultaneamente — todos vão ao b
 
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
 - [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — descreve o fluxo cache-aside como "o padrão mais comum": miss → banco → grava no cache → devolve; hits seguintes vão direto ao cache
+- [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — camada de cache tratada explicitamente como SPOF: um único servidor de cache pode derrubar a aplicação; recomenda-se cluster de cache redundante (ex.: AWS ElastiCache com endereço único e balanceamento entre nós)

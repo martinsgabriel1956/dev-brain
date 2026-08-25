@@ -2,6 +2,105 @@
 
 ---
 
+## [2026-08-25] ingest | Race Condition: Locking Pessimista, Controle de Concorrência Otimista e Reservations
+
+**Fonte:** [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] — transcrição de vídeo em pt-BR fornecida diretamente pelo usuário (já em português, sem necessidade de tradução), formatada em Markdown com títulos por seção temática (exemplos, três estratégias, demonstração em código, framework de decisão, erros de entrevista, teaser) e salva em `raw/race-condition-locking-pessimista-otimista-reservations-tier-s.md`. Sexto vídeo da série Tier S de [[wiki/entities/pedro-camaforte]], que começou com [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] (já na wiki).
+
+**Skill carregada:** `tech-mentor-system-design` (path real desta máquina: `/home/gabriel-martins/Documentos/skills/tech-mentor-system-design/`) — seção "Concorrência — Race Conditions e Locks" de `references/performance-profiling-core.md` (Pessimistic Locking `FOR UPDATE`, Optimistic Locking via `version`, Redlock/fencing token) usada para confirmar terminologia e critérios de uso ("conflitos frequentes, operação rápida" vs. "conflitos raros, operações longas") idênticos aos da fonte, e para identificar um gap explícito: a fonte não cobre o risco de clock skew/GC pause expirando um lock do Redis antes do processo terminar (mitigado por fencing token), só o caso "Redis totalmente indisponível" — marcado como `[skill: tech-mentor-system-design]` nas páginas afetadas.
+
+**Arquivos criados:**
+- `raw/race-condition-locking-pessimista-otimista-reservations-tier-s.md` — transcrição formatada
+- `wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s.md` — TL;DR, 11 blocos de key claims, entidades, conceitos, conexão com outras fontes, open questions, raw quotes
+- `wiki/concepts/pessimistic-locking.md` — stub novo: `SELECT ... FOR UPDATE`, quando usar, tradeoff de fila, erro fatal de transação + chamada externa no meio
+- `wiki/concepts/optimistic-concurrency-control.md` — stub novo: coluna `version`, variação de faixa (`estoque > 0`), tradeoff sob alta contenção, cross-link com `expectedRevision` de event sourcing
+- `wiki/concepts/reservation-pattern.md` — stub novo: reserva com TTL, cron job (com bug estrutural de atraso) vs. Redis `SET NX EX`, fallback de duas camadas se o Redis cair
+
+**Páginas atualizadas (backlink + frontmatter, `source_count` incrementado, `date_updated` → 2026-08-25):**
+- `wiki/concepts/race-condition.md` — `source_count` 2 → 3; nova seção linkando a variante backend aos três novos conceitos de estratégia
+- `wiki/concepts/toctou.md` — `source_count` 1 → 2; exemplos de cadeira de cinema/estoque como reforço do mesmo mecanismo check-then-act; seção de correção expandida com as três estratégias
+- `wiki/concepts/distributed-lock.md` — `source_count` 4 → 5; nova seção "Contraponto Positivo" (reserva de ingresso com `SET NX EX` de fato atômico, ao contrário do exemplo negativo do cinema/draw.io já documentado) + fallback de duas camadas se o Redis cair
+- `wiki/concepts/entrevista-system-design.md` — `source_count` 7 → 8; nova seção "Três Erros que Eliminam Candidatos em Concorrência"
+- `wiki/concepts/idempotencia.md` — `source_count` 6 → 7; nova linha em Key Sources (teaser do próximo vídeo)
+- `wiki/concepts/saga-pattern.md` — `source_count` 5 → 6; nova linha em Key Sources (teaser do próximo vídeo)
+- `wiki/entities/pedro-camaforte.md` — `source_count` 2 → 3; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; 6 novas linhas em "Escalabilidade & System Design" (race-condition, distributed-lock — ambos estavam órfãos do índice — e os três conceitos novos)
+
+**Notas / open questions:** (1) **Terminologia TOCTOU nunca usada pela própria fonte** — a equivalência com [[wiki/concepts/toctou]] foi inferida por comparação estrutural (check-then-act) com o exemplo de saque bancário já documentado; vale confirmar em vídeos futuros da série se o termo aparece explicitamente. (2) **Órfãos de índice corrigidos de passagem**: [[wiki/concepts/race-condition]] e [[wiki/concepts/distributed-lock]] já existiam na wiki há tempo mas nunca tinham sido adicionados a `wiki/index.md` — corrigido nesta ingestão além do escopo mínimo, já que ambos foram tocados diretamente. (3) **Mesmo primitivo Redis, propósito diferente**: `SET NX EX` já documentado em [[wiki/concepts/distributed-lock]] a partir do caso Uber (exclusão mútua entre motoristas candidatos) reaparece aqui resolvendo um problema estruturalmente diferente (reserva temporizada de UX) — boa oportunidade para a página de conceito distinguir os dois usos, já aproveitada na atualização. (4) **Sem contradições** com conteúdo já registrado — a fonte reforça e aprofunda TOCTOU/distributed-lock com exemplos novos e complementares, sem conflitar com nada existente. (5) **Teaser do 7º vídeo** (rollback de efeito colateral já aplicado após falha em etapa posterior) registrado como linha leve em [[wiki/concepts/idempotencia]] e [[wiki/concepts/saga-pattern]], candidato natural a fechar o arco numa ingestão futura.
+
+---
+
+## [2026-08-25] ingest | Busca Binária: Encontrando a Posição de um Protocolo numa Fila Ordenada (Live Coding)
+
+**Fonte:** [[wiki/sources/busca-binaria-fila-protocolos-atendimento-live-coding]] — transcrição de áudio em pt-BR fornecida diretamente pelo usuário (já em português, sem necessidade de tradução), formatada em Markdown (parágrafos, diálogo do chat identificado por interlocutor, trechos lidos do livro isolados em blockquote) e salva em `raw/busca-binaria-fila-protocolos-atendimento-live-coding.md`.
+
+**Skill carregada:** `cs-fundamentals` (path real desta máquina: `/home/gabriel-martins/Documentos/skills/cs-fundamentals/`, confirmando que o caminho `/home/nemomartins/Documentos/new/skills/` citado no `CLAUDE.md` é de outra instalação — mesmo skill drift já documentado em ingestões anteriores, mas desta vez com o diretório real localizado e usado) — `references/algorithms-complexity.md`, seção "Binary Search" (linhas 115-137): confirma O(log n)/pré-requisito de array ordenado e acrescenta a generalização arquitetural "espaço de decisão monotônico" (ex.: binary search no espaço de valores de um rate limit), incorporada a [[wiki/concepts/algoritmos-de-busca]] marcada como `[skill: cs-fundamentals]`.
+
+**Arquivos criados:**
+- `raw/busca-binaria-fila-protocolos-atendimento-live-coding.md` — transcrição formatada
+- `wiki/sources/busca-binaria-fila-protocolos-atendimento-live-coding.md` — TL;DR, 10 key claims, trace passo a passo (protocolos 1001-1038), entidades, conceitos, open questions, raw quotes
+
+**Páginas atualizadas (backlink + frontmatter, `source_count` incrementado, `date_updated` → 2026-08-25):**
+- `wiki/concepts/algoritmos-de-busca.md` — `source_count` 5 → 6; nova seção "Além de arrays: espaço de decisão monotônico" `[skill: cs-fundamentals]`; nova linha em Key sources
+- `wiki/concepts/big-o.md` — `source_count` 11 → 12; nova linha em Key sources
+- `wiki/concepts/logaritmo.md` — `source_count` 1 → 2 (`status: stub` → `draft`); nova seção "Analogia didática (log₁₀)"; nova linha em Key sources
+- `wiki/concepts/melhor-caso-pior-caso-caso-medio.md` — `source_count` 2 → 3; nova linha em Key sources
+- `wiki/concepts/algoritmos-e-estruturas-de-dados.md` — `source_count` 15 → 16; nova linha em Key Sources
+- `wiki/concepts/livros-recomendados-programador.md` — `source_count` 2 → 3; nova seção "Entendendo Algoritmos na prática"; nova linha em Key sources
+- `wiki/entities/fernanda-kipper.md` — `source_count` 1 → 2; nova linha em Fontes na wiki
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Achado central: fonte-irmã de [[wiki/sources/busca-linear-e-binaria-giovana]] com abordagem complementar** — enquanto a fonte da Giovana implementa busca binária em código (JavaScript, contador de etapas), esta fonte resolve o problema inteiramente "no papel", em conjunto com o chat de uma live, sem escrever nenhuma linha de código — reforça a mesma tese pedagógica ("teoria antes do código") por um ângulo puramente conceitual. (2) **Primeira citação direta do livro *Entendendo Algoritmos* na wiki com trechos lidos ao vivo** — até então o livro só aparecia como recomendação em [[wiki/concepts/livros-recomendados-programador]]; agora há conteúdo técnico primário citado dele (analogia "adivinhar 1-100", exemplo do dicionário de 240.000 palavras). (3) **Skill drift resolvido, não só documentado**: desta vez o diretório real de skills desta máquina (`/home/gabriel-martins/Documentos/skills/`) foi localizado e a skill `cs-fundamentals` foi de fato carregada e usada (diferente de ingestões anteriores que só registravam a ausência do caminho do `CLAUDE.md`). Vale atualizar o `CLAUDE.md` com este caminho correto. (4) **Sem contradições** com o conteúdo já registrado; a fonte reforça, com um exemplo de domínio diferente (fila de protocolos de atendimento em vez de catálogo telefônico/dicionário/livro), a mesma mecânica de busca binária já bem documentada.
+
+---
+
+## [2026-08-24] ingest | Como Ler a Documentação de uma Linguagem de Programação
+
+**Fonte:** [[wiki/sources/como-ler-documentacao-de-uma-linguagem-de-programacao]] — transcrição de vídeo em pt-BR fornecida diretamente pelo usuário (locutor não identificado), sem tradução necessária (original já em português), salva com limpeza de formatação (parágrafos e seções, trecho publicitário removido) em `raw/como-ler-documentacao-de-uma-linguagem-de-programacao.md`.
+**Skill carregada:** `tech-mentor-leadership` (path real `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/`), seção Docs-as-Code / Diátaxis do índice do SKILL.md (`references/docs-as-code.md`) — o padrão de seções observado pela fonte (getting started/tutorials/API reference/examples) do lado do consumidor de documentação corresponde ao framework Diátaxis (Tutorial/How-to/Reference/Explanation) do lado de quem escreve documentação; cruzamento registrado explicitamente como `[skill: tech-mentor-leadership]` no novo conceito para distinguir do conteúdo da fonte.
+
+**Arquivos criados:**
+- `raw/como-ler-documentacao-de-uma-linguagem-de-programacao.md` — transcrição formatada
+- `wiki/sources/como-ler-documentacao-de-uma-linguagem-de-programacao.md` — TL;DR, 8 blocos de key claims, conceitos/entidades, open questions
+- `wiki/concepts/padrao-de-secoes-de-documentacao-tecnica.md` — stub novo: getting started/tutorials/API reference/examples como padrão universal, com cruzamento `[skill]` para Diátaxis
+- `wiki/concepts/javadoc-api-reference.md` — stub novo: hierarquia/deprecated/assinatura documentados pela API reference, navegação Ctrl+clique na IDE até a implementação
+- `wiki/concepts/associacao-lexical-documentacao.md` — stub novo: técnica de traduzir a necessidade em português para o verbo em inglês provável do método (contains, split, length, equals)
+- `wiki/entities/spring-boot.md` — stub novo: framework usado como estudo de caso, incluindo a nomenclatura de query do Spring Data JPA
+
+**Páginas atualizadas (backlink + frontmatter, `source_count` incrementado, `date_updated` → 2026-08-24):**
+- `wiki/concepts/documentacao-oficial-como-recurso.md` — `source_count` 1 → 2; nova seção "O 'como': navegar a documentação na prática" conectando o "porquê" já registrado (fonte de julho, Augusto Galego) ao método concreto desta fonte; nova linha em Key Sources
+- `wiki/concepts/ler-codigo-de-terceiros.md` — `source_count` 1 → 2; nova seção "Variante: ler a stdlib via API Reference" comparando a leitura de `clipboard.js` (código de terceiros externo, sem doc formal) com Ctrl+clique guiado por documentação estruturada (mesmo mecanismo de aprendizado, apoio diferente); nova linha em Key Sources
+- `wiki/concepts/documentacao-api-swagger.md` — `source_count` 2 → 3; nova linha em Relações conectando API reference de API HTTP (Swagger/OpenAPI) a API reference de linguagem/biblioteca (JavaDoc); nova linha em Key sources
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (`padrao-de-secoes-de-documentacao-tecnica`, `javadoc-api-reference`, `associacao-lexical-documentacao`); nova linha em Entities (`spring-boot`)
+
+**Notas / open questions:** (1) **Achado central**: a fonte fecha o "como" que faltava em [[wiki/concepts/documentacao-oficial-como-recurso]] — a fonte de julho (Augusto Galego) já afirmava que ler documentação tem retorno alto, mas não detalhava um método replicável de navegação; esta fonte fornece esse método (padrão de seções + API reference + associação lexical + navegação via IDE). (2) **Cruzamento com a skill**: o padrão de quatro seções (getting started/tutorials/API reference/examples) observado empiricamente pela fonte é isomórfico ao framework Diátaxis documentado em `references/docs-as-code.md` da skill `tech-mentor-leadership` — mesma estrutura, dois lados diferentes (consumidor vs. autor de documentação). Marcado como `[skill: tech-mentor-leadership]` na página nova para não confundir com afirmação da fonte original. (3) **Sem contradições** com conteúdo já registrado na wiki. (4) Autor/canal da fonte não identificado — mesma situação já registrada em outras ingestões de transcrição fornecida pelo usuário sem metadados de origem.
+
+---
+
+## [2026-08-24] ingest | Duas Perguntas: Crítica ao LinkedIn/Cursos Online vs. Pergunta da Oportunidade (Lei de Sturgeon)
+
+**Fonte:** [[wiki/sources/duas-perguntas-linkedin-cursos-online-lei-de-sturgeon]] — transcrição de vídeo em pt-BR fornecida diretamente pelo usuário (locutor não identificado, sócio da consultoria AF Câmara), salva sem tradução (já em português) em `raw/duas-perguntas-linkedin-cursos-online-lei-de-sturgeon.md`, com limpeza de formatação (parágrafos e seções) sobre o texto corrido original.
+**Skill carregada:** `tech-mentor-leadership` (path real `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/`), seção Engineering Brand / Personal Brand do índice do SKILL.md — conteúdo do lado candidato (perfil buscável, metadados de busca) espelha `references/engineering-brand.md`, embora essa referência trate do lado empresa (blog técnico, employer branding); nenhuma referência dedicada ao lado candidato de personal brand foi encontrada no índice — registrado como possível lacuna.
+
+**Arquivos criados:**
+- `raw/duas-perguntas-linkedin-cursos-online-lei-de-sturgeon.md` — transcrição formatada
+- `wiki/sources/duas-perguntas-linkedin-cursos-online-lei-de-sturgeon.md` — TL;DR, 5 blocos de key claims, conceitos/entidades, open questions
+- `wiki/concepts/lei-de-sturgeon.md` — stub novo: heurística de Theodor Sturgeon (1957), "90% de tudo é lixo, importa o 10%"
+- `wiki/concepts/mercado-de-limoes-assimetria-de-informacao.md` — stub novo: mecanismo de George Akerlof (1970) aplicado à queda de qualidade de cursos online
+- `wiki/concepts/assimetria-de-custo-plataforma-de-contratacao.md` — stub novo: custo assimétrico entre empresa (licença de recrutamento cara) e candidato (perfil buscável de graça)
+- `wiki/entities/linkedin.md` — stub novo, entidade central da fonte, nunca tinha página própria apesar de citada em várias outras fontes
+- `wiki/entities/af-camara.md` — stub novo: consultoria do locutor
+- `wiki/entities/theodor-sturgeon.md` — stub novo
+- `wiki/entities/george-akerlof.md` — stub novo
+
+**Páginas atualizadas (backlink + frontmatter, `source_count` incrementado, `date_updated` → 2026-08-24):**
+- `wiki/concepts/otimizacao-ats-curriculo.md` — `source_count` 1 → 2; nova seção conectando o metadado de busca do currículo (ATS) ao metadado de busca do perfil de plataforma (LinkedIn), mesma lógica em dois lugares diferentes; nova linha em Ver também e Key sources
+- `wiki/concepts/networking-de-carreira.md` — `source_count` 3 → 4; nova seção dando peso concreto (700+/ano, custo de licença) ao "mercado visível" já documentado nessa página, inclusive para vagas sênior/liderança que a intuição colocaria no mercado invisível; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (seção "Carreira & Soft Skills"); quatro novas linhas em Entities
+
+**Notas / open questions:** (1) **Achado central**: a fonte separa explicitamente duas perguntas que a wiki já tratava de forma implícita e espalhada — "a crítica a uma plataforma/curso é válida" (já presente em tom crítico em várias fontes de carreira) e "isso pode gerar oportunidade real" (documentado em [[wiki/concepts/networking-de-carreira]] e [[wiki/concepts/otimizacao-ats-curriculo]], mas nunca como uma dicotomia nomeada). A Lei de Sturgeon e o mercado de limões de Akerlof são as duas ferramentas conceituais que faltavam para nomear esse padrão. (2) **Sem contradição** com o conteúdo já registrado — a fonte reforça e formaliza princípios (metadados de busca > vaidade de conteúdo, custo baixo de erro como filtro de qualidade em cursos baratos) que já apareciam informalmente em [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]] e em fontes de comunidade/networking. (3) **Dado não verificável**: números de contratação e custo de licença do LinkedIn são relato de primeira mão do locutor, sem fonte externa — registrado como tal na fonte e nas entidades, não tratado como dado de mercado auditado. (4) **Lacuna de skill**: não há referência dedicada a "personal brand do candidato" em `tech-mentor-leadership` — o índice cobre engineering brand do lado da empresa, mas não o espelho do lado do profissional buscando vaga; considerar sinalizar isso fora da wiki caso o padrão se repita em futuras ingestões.
+
+---
+
 ## [2026-08-21] ingest | Tuple Space (Wikipédia)
 
 **Fonte:** [[wiki/sources/tuple-space-wikipedia]] — verbete completo de https://en.wikipedia.org/wiki/Tuple_space, buscado via WebFetch, traduzido integralmente para pt-BR e salvo em `raw/tuple-space-wikipedia.md`.
@@ -8074,3 +8173,139 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (`devops-culture`) e Entities (`jez-humble`)
 
 **Notas / open questions:** (1) **Achado central: define o termo que o bliki-irmão (Deployment Pipeline, mesma data) pressupunha sem definir.** [[wiki/concepts/ci-cd]] já tinha a estrutura dos "três níveis" e já citava a origem do Deployment Pipeline, mas nunca teve uma fonte primária para "Continuous Delivery" em si — os quatro indicadores concretos (deployability contínua, prioridade sobre features, feedback automatizado, deploy sob demanda) eram informação nova para a wiki. (2) **Correção de atribuição**: os quatro indicadores não são de Fowler — são do grupo de trabalho de CD da Thoughtworks, que ele apenas relata; registrado explicitamente na entity de [[wiki/entities/thoughtworks]] para não virar atribuição errada por omissão. (3) **Lacuna de entity fechada**: Jez Humble era citado de passagem em [[wiki/entities/david-farley]] desde julho, mas nunca teve página própria — incoerente dado que é coautor do livro citado como fundacional; corrigido aqui como stub. (4) **WebFetch retornou resumo, não texto integral** — a ferramenta processa o conteúdo com um modelo auxiliar antes de devolver, o que descartou a estrutura literal do artigo (footnotes, blockquote do livro, texto exato dos quatro indicadores); contornado baixando o HTML bruto diretamente e extraindo o texto na íntegra, prática a considerar para próximas ingestões de fontes web quando fidelidade literal importar. (5) **Sem contradições** com o conteúdo já registrado; a fonte só formaliza e credita precisamente princípios que a wiki já usava informalmente.
+
+---
+
+## [2026-08-24] ingest | A História do OAuth: Do Antipadrão da Senha ao Protocolo de Autorização (Bernardo Lobato)
+
+**Fonte:** [[wiki/sources/historia-oauth2-antipadrao-senha-bernardo-lobato]] — transcrição de vídeo fornecida diretamente pelo usuário (já em pt-BR), formatada e salva em `raw/historia-oauth2-antipadrao-senha-bernardo-lobato.md`.
+**Skill carregada:** `tech-mentor-security`, seção de identidade/autenticação (`references/appsec-authn-authz.md` e índice de identidade/IAM).
+
+**Arquivos criados:**
+- `raw/historia-oauth2-antipadrao-senha-bernardo-lobato.md` — transcrição formatada em Markdown
+- `wiki/sources/historia-oauth2-antipadrao-senha-bernardo-lobato.md` — TL;DR, 6 key claims, entidades/conceitos, open questions
+- `wiki/concepts/antipadrao-da-senha.md` — stub novo: termo (password antipattern) nomeado explicitamente pela primeira vez na wiki, distinto do ROPC já existente
+- `wiki/entities/blaine-cook.md` — stub novo: cocriador do OAuth (Twitter)
+- `wiki/entities/larry-halff.md` — stub novo: cocriador do OAuth (Magnolia)
+- `wiki/entities/twitter.md` — stub novo: nunca tinha página própria apesar de citada em várias fontes de API economy/OAuth
+
+**Páginas atualizadas (backlink + frontmatter, `source_count` incrementado, `date_updated` → 2026-08-24):**
+- `wiki/concepts/oauth2.md` — `source_count` 9 → 10; nova seção "Origem: Blaine Cook, Larry Halff e a linha do tempo até a RFC 6749" (datas exatas, RFC 5849 vs. RFC 6749); nova seção "Os quatro pilares"; nova seção "Grant Types" (Authorization Code / Client Credentials / Refresh Token); nova seção "Formato do Token: Opaco vs. Autoassinado" (introspecção vs. validação local); novo link em "Relação com outros conceitos" e "Key Sources"
+- `wiki/entities/bernardo-lobato.md` — `source_count` 12 → 13; nova linha em Key Sources
+- `wiki/entities/flickr.md` — `source_count` 1 → 2; nova seção "Exemplo Canônico do Antipadrão da Senha (Pré-OAuth)"; nova linha em Key Sources
+- `wiki/entities/google.md` — `source_count` 6 → 7; nova seção "Participante Inicial das Discussões do OAuth (2007)"; nova linha em Key Sources
+- `wiki/entities/ietf.md` — `source_count` 1 → 2; nova seção "Publicação do OAuth 1.0 e OAuth 2.0"; nova linha em Key Sources
+- `wiki/concepts/api-economy.md` — `source_count` 1 → 2; onda de 2006 enriquecida com citação específica desta fonte; nova seção "Relação com o Antipadrão da Senha e o OAuth"; nova linha em Key Sources
+- `wiki/concepts/ropc-resource-owner-password-credentials.md` — `source_count` 1 → 2; nova linha em "Relação com outros conceitos" distinguindo ROPC do antipadrão da senha mais amplo; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`antipadrao-da-senha`); três novas linhas em Entities (`blaine-cook`, `larry-halff`, `twitter`)
+
+**Notas / open questions:** (1) **Achado central: nomeia formalmente o antipadrão que motivou o OAuth e a dupla que o criou.** [[wiki/concepts/oauth2]] já tinha o fluxo Authorization Code bem documentado, mas a origem histórica só existia como uma linha solta ("criado em 2006 por um grupo de empresas da web, incluindo o Twitter") — esta fonte substitui essa lacuna por nomes, datas e números de RFC exatos, e nomeia pela primeira vez o "antipadrão da senha" como termo técnico, distinto do [[wiki/concepts/ropc-resource-owner-password-credentials|ROPC]] já documentado (senha entregue a terceiro vs. senha repassada pela própria API). (2) **Terminologia nova formalizada**: "os quatro pilares" (Resource Owner/Client/Authorization Server/Resource Server) e a taxonomia de três grant types lado a lado (Authorization Code/Client Credentials/Refresh Token) não estavam nomeados dessa forma organizada antes, apesar de PKCE e refresh token já terem fontes próprias. (3) **Open question registrada na fonte**: o grupo de discussão OAuth (abril/2007) e a fundação da OpenID Foundation (2007, já registrada em [[wiki/entities/google]]) são iniciativas paralelas na mesma janela de tempo — a wiki ainda não tem uma fonte que explique se as duas comunidades se cruzaram. (4) **Sem contradições** com o conteúdo já registrado; a fonte aprofunda e organiza informação que já estava implícita/dispersa.
+
+---
+
+## [2026-08-24] ingest | CS50 2026 — Semana 0: IA, Representação de Dados, Algoritmos e Scratch (David Malan)
+
+**Fonte:** [[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] — transcrição de vídeo/áudio (inglês) da aula de abertura do CS50, traduzida e formatada em `raw/cs50-2026-semana-0-representacao-dados-algoritmos-scratch.md`.
+**Skill carregada:** `cs-fundamentals` (domínio primário — binário, ASCII/Unicode, algoritmos, Big O, pseudocódigo); nota: o diretório de skills `/home/nemomartins/Documentos/new/skills/` referenciado no CLAUDE.md deste repo não existe nesta máquina — prossegui com calibração de domínio a partir do conteúdo e da convenção já estabelecida nas páginas existentes de `cs-fundamentals`, sem acesso ao arquivo de referência da skill. Domínio secundário `tech-mentor-ai` para a seção de system prompt/user prompt via API da OpenAI.
+
+**Arquivos criados:**
+- `raw/cs50-2026-semana-0-representacao-dados-algoritmos-scratch.md` — transcrição traduzida e formatada em Markdown
+- `wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch.md` — TL;DR, 7 key claims, entidades/conceitos, open questions
+- `wiki/concepts/scratch-linguagem-de-blocos.md` — stub novo: Scratch como linguagem visual, nunca tinha página própria apesar de citada de passagem em `cs50.md` e `sintaxe-vs-conhecimento-perene.md`
+- `wiki/entities/mit-media-lab.md` — stub novo: criador do Scratch
+- `wiki/entities/harvard-university.md` — stub novo: instituição onde o CS50 é ministrado, nunca tinha página própria apesar de citada indiretamente via `cs50.md`/`david-malan.md`
+
+**Páginas atualizadas (backlink + frontmatter, `source_count` incrementado, `date_updated` → 2026-08-24):**
+- `wiki/concepts/cs50.md` — `source_count` 2 → 3; nova seção "A aula de abertura (semana 0)"; nova linha em Key sources
+- `wiki/entities/david-malan.md` — `source_count` 1 → 2; nova seção "Aula de abertura: da representação de dados a Scratch"; nova linha em Key sources
+- `wiki/concepts/ascii.md` — `source_count` 4 → 5; nova seção sobre a diferença exata de 32 entre maiúscula/minúscula; nova seção sobre a demonstração física de soletração com voluntários; nova linha em Key Sources
+- `wiki/concepts/unicode.md` — `source_count` 3 → 4; nova seção "Emoji é Caractere, Não Imagem"; nova linha em Key Sources
+- `wiki/concepts/sistema-binario-bit-byte.md` — `source_count` 1 → 2 (`status: stub` → `draft`); nova seção "Unário vs. Binário: Por Que Base 2"; nova seção "Além de Texto: RGB, Vídeo e Som Também São Números"; dois novos links em "Relação com outros conceitos"; nova linha em Key sources
+- `wiki/concepts/big-o.md` — `source_count` 10 → 11; nova seção "Introdução Didática: Catálogo Telefônico e Três Curvas no Papel"; nova linha em Key sources
+- `wiki/concepts/algoritmos-de-busca.md` — `source_count` 4 → 5; nova seção "Caso de Borda Obrigatório: 'Não Está na Coleção'"; nova linha em Key sources
+- `wiki/concepts/algoritmos-e-estruturas-de-dados.md` — `source_count` 14 → 15; nova seção "Pseudocódigo e a Terminologia Central de Algoritmo"; nova linha em Key Sources
+- `wiki/concepts/system-prompt-arquitetura.md` — `source_count` 2 → 3; nova seção "A Demo Mais Elementar Possível: Sem Harness"; nova linha em Key Sources
+- `wiki/entities/openai.md` — `source_count` 15 → 16; nova seção "Demo Didática de Chatbot em ~10 Linhas (CS50)"; nova linha em Fontes
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`scratch-linguagem-de-blocos`, seção "Fundamentos de Lógica e Programação"); duas novas linhas em Entities (`mit-media-lab`, `harvard-university`)
+
+**Notas / open questions:** (1) **Achado central: primeira fonte "primeiros princípios" completa do CS50 na wiki, cobrindo em uma única aula o que antes estava disperso em várias fontes técnicas isoladas** — `10-conceitos-fundamentais-computacao`, `conceitos-que-regem-a-computacao-bits-turing-complexidade` e `codificacao-de-caracteres-ascii-iso-8859-1-unicode` já cobriam boa parte do conteúdo técnico de binário/ASCII/Big O, mas nenhuma tinha as analogias físicas exatas usadas em sala (lâmpadas contando 0–7, voluntários soletrando "BOW", catálogo telefônico de "John Harvard" com três algoritmos comparados lado a lado). (2) **Novidade estrutural: primeira página própria da wiki para Scratch**, apesar de citado de passagem em `cs50.md` há semanas — lacuna fechada com stub completo cobrindo interface, terminologia e dois projetos (Oscar Time, IB's Hardest Game). (3) **System prompt sem harness**: `system-prompt-arquitetura.md` só tinha o conceito no contexto de harnesses de codificação (Claude Code, Cursor); esta fonte acrescenta a demonstração mais crua possível (chamada direta à Responses API da OpenAI, sem nenhuma camada extra), útil como referência didática do conceito "puro". (4) **Skill drift documentado**: o diretório `/home/nemomartins/Documentos/new/skills/` citado no `CLAUDE.md` não existe nesta máquina (caminho de outra instalação/template) — a ingestão seguiu a convenção observada nas páginas `skill: cs-fundamentals` já existentes na wiki, sem acesso ao arquivo de referência formal da skill. Vale considerar atualizar o `CLAUDE.md` com o caminho correto de skills desta máquina, se existir um. (5) **Sem contradições** com o conteúdo já registrado; a fonte aprofunda, com analogias físicas e demonstrações ao vivo, conceitos que já estavam documentados de forma mais abstrata/textual.
+
+---
+
+## [2026-08-24] ingest | Escalando uma Aplicação do Zero a 1 Milhão de Usuários (Renato Augusto)
+
+**Fonte:** [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — transcrição de vídeo fornecida diretamente pelo usuário (já em pt-BR, sem necessidade de tradução), formatada e salva em `raw/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto.md`. Trecho de publicidade paga (patrocínio "Insider") identificado e omitido da transcrição por ser irrelevante ao conteúdo técnico.
+
+**Skill carregada:** `tech-mentor-system-design` (mesma skill usada na fonte-irmã [[wiki/sources/escalar-para-um-milhao-de-usuarios]]); nota: o diretório `/home/nemomartins/Documentos/new/skills/` citado no `CLAUDE.md` não existe nesta máquina — segui a convenção já estabelecida nas páginas `skill: tech-mentor-system-design` existentes na wiki (mesmo skill drift já documentado em ingestões anteriores).
+
+**Arquivos criados:**
+- `raw/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto.md` — transcrição formatada em Markdown
+- `wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto.md` — TL;DR, 10 key claims, entidade, 10 conceitos, conexão com outras fontes, open questions, raw quotes
+
+**Páginas atualizadas (backlink + frontmatter, `source_count` incrementado, `date_updated` → 2026-08-24):**
+- `wiki/entities/renato-augusto.md` — `source_count` 13 → 14; nova linha em Key Sources
+- `wiki/concepts/escalabilidade-horizontal.md` — `source_count` 19 → 20; nova linha em Key sources (IPs privados atrás do LB como prática de segurança)
+- `wiki/concepts/escalabilidade-vertical.md` — `source_count` 6 → 7; nova linha em Key sources
+- `wiki/concepts/load-balancer.md` — `source_count` 19 → 20; nova linha em Key sources (DNS apontando para IP público do LB, servidores com IP privado)
+- `wiki/concepts/replicacao-de-banco.md` — `source_count` 4 → 5 (`status: stub` → `draft`); nova seção "Implementação concreta: roteamento read/write no ORM ou no cluster" (exemplo Laravel `read`/`write` e cluster Amazon Aurora); nova linha em Key sources
+- `wiki/concepts/read-replicas.md` — `source_count` 7 → 8; nova linha em Key sources
+- `wiki/concepts/cache-aside.md` — `source_count` 2 → 3; nova linha em Key Sources (cache como SPOF, AWS ElastiCache)
+- `wiki/concepts/auto-scaling.md` — `source_count` 3 → 4; nova linha em Key sources (motivação de negócio: Black Friday)
+- `wiki/concepts/single-point-of-failure.md` — `source_count` 1 → 2; nova linha em Key Sources (data center inteiro como SPOF de nível mais alto)
+- `wiki/concepts/filas-e-workers.md` — `source_count` 6 → 7; nova linha em Key sources (ferramentas nomeadas + analogia de checkout de e-commerce)
+- `wiki/concepts/consistency-models.md` — `source_count` 2 → 3; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Achado central: fonte-irmã de autoria explícita para um esqueleto já bem documentado.** [[wiki/sources/escalar-para-um-milhao-de-usuarios]] já cobria a mesma progressão SPOF-a-SPOF do capítulo de Alex Xu (*System Design Interview*) com autoria apenas inferida (Augusto Galego); esta fonte é do mesmo capítulo, mas com autoria confirmada explicitamente na fala (Renato Augusto, já entidade estabelecida na wiki com 13 fontes prévias). O ganho real para a wiki não está em conceitos novos — quase todos já tinham páginas maduras (`status: stable`) — mas em **exemplos concretos de implementação** que a fonte-irmã não trazia: configuração `read`/`write` no Laravel, cluster Amazon Aurora, IPs privados atrás do load balancer como prática de segurança, nomes reais de ferramentas de mensageria (RabbitMQ, Kafka, SQS) e a analogia de checkout de e-commerce para justificar resposta imediata + processamento assíncrono. (2) **Única página que ganhou seção de conteúdo nova (não só backlink)**: `wiki/concepts/replicacao-de-banco.md`, que ainda estava em `status: stub` e recebeu uma seção inteira de implementação concreta — promovida a `draft`. (3) **Referência não verificada**: o autor cita que a Netflix documentou publicamente em blog próprio como lidou com replicação de dados entre múltiplos data centers, mas nenhuma URL foi fornecida na fala — registrado como open question na fonte, pista para uma ingestão futura mais específica. (4) **Sem contradições** com o conteúdo já registrado; a fonte reforça e detalha, com exemplos de implementação, uma narrativa que a wiki já tinha de forma mais abstrata.
+
+---
+
+## [2026-08-25] ingest | Por Que o Levelsio "Fugiu" pra China: Guardrails, Multi-Modelo e Opus 5 — Lucas Montano
+
+**Fonte:** [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — transcrição de vídeo do YouTube em português (canal Lucas Montano, autoria confirmada por autorreferência), formatada e salva em `raw/levelsio-china-guardrails-multi-modelo-opus-5.md`.
+
+**Skill carregada:** `tech-mentor-ai` (mesma convenção já estabelecida para todo o eixo de fontes sobre modelos/mercado de IA da wiki, ex. [[wiki/sources/kimi-k3-china-mercado-ia-open-source]], [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]]); o diretório `/home/nemomartins/Documentos/new/skills/` citado no `CLAUDE.md` não existe nesta máquina — skill drift já documentado em ingestões anteriores.
+
+**Arquivos criados:**
+- `raw/levelsio-china-guardrails-multi-modelo-opus-5.md` — transcrição formatada em Markdown (sem tradução)
+- `wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5.md` — TL;DR, 7 key claims com confiança avaliada, entidades/conceitos tocados, open questions, raw quotes
+- `wiki/entities/pieter-levels.md` (stub) — indie hacker "Levelsio", o caso de guardrail que motiva a fonte
+
+**Páginas atualizadas (backlink + frontmatter, `date_updated` → 2026-08-25):**
+- `wiki/entities/lucas-montano.md` — `source_count` 12 → 13; novo parágrafo + nova linha em Key Sources
+- `wiki/entities/moonshot-ai.md` — `source_count` 3 → 4; nova seção "Kimi K3 Como Escape de Guardrails Agressivos"
+- `wiki/entities/anthropic.md` — `source_count` 25 → 26; duas novas seções (fricção de guardrail/downgrade Opus→Sonnet; benchmarks de lançamento do Opus 5)
+- `wiki/entities/openai.md` — `source_count` 16 → 17; nova seção sobre GPT 5.6 "Sol" como melhor coding puro
+- `wiki/concepts/ai-safety-guardrails.md` — `source_count` 2 → 3; duas novas seções (falso positivo como efeito colateral; guardrail como eixo de roteamento)
+- `wiki/concepts/roteamento-automatico-de-modelo.md` — `source_count` 3 → 4; nova seção "Novo Eixo: Roteamento por Tolerância a Guardrail"
+- `wiki/concepts/corrida-preco-qualidade-llm.md` — `source_count` 4 → 5; duas novas seções (trava contra "grande rollback"; janela de atraso da China)
+- `wiki/concepts/export-controls-chips-ia.md` — `source_count` 1 → 2 (`status: stub` → `draft`); nova seção sobre vantagem energética chinesa e guardrail como pretexto protecionista
+- `wiki/concepts/modelo-frontier.md` — `source_count` 7 → 8; nova linha na tabela de modelos (Opus 5) com benchmarks de lançamento
+- `wiki/concepts/ltv-cac.md` — `source_count` 4 → 5; nova seção sobre trial sem cartão como qualificador de lead
+- `wiki/index.md` — nova linha em Sources; nova linha em Entities (Pieter Levels)
+
+**Notas / open questions:** (1) **Achado central: primeira fonte da wiki a tratar guardrail como eixo explícito de roteamento de modelo**, não só como tema de segurança isolado — o caso Levelsio (downgrade Opus→Sonnet "por segurança", fricção de duas semanas num hobby de baixo risco) e a prática pessoal de Lucas Montano de rotear entre Claude (dados sensíveis) e modelos permissivos (hobby) dão à wiki um exemplo concreto e pessoal do trade-off segurança/usabilidade que antes só existia de forma mais abstrata em [[wiki/concepts/ai-safety-guardrails]]. (2) **Vários claims de segunda mão (tweets relatados em vídeo, sem link/screenshot)** — o "downgrade automático por segurança" e o "sermão de saúde" do Claude não estão confirmados por fonte primária nem por documentação da Anthropic; registrado com confiança média/baixa nos claims correspondentes da fonte. (3) **Sem contradição direta com o resto da wiki** — a fonte reforça e dá textura ao padrão já documentado de bloqueio de modelos por risco de segurança nacional ([[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]]) e à corrida de preço/qualidade ([[wiki/concepts/corrida-preco-qualidade-llm]]), estendendo-a para o eixo geopolítico (janela de atraso da China, vantagem energética) e para benchmarks específicos do Opus 5 recém-lançado, que a wiki ainda não tinha em detalhe. (4) **Bloco patrocinado (HighGlobe) omitido do `raw/`** por não ser tecnicamente relevante — decisão registrada no próprio arquivo de transcrição para transparência, já que o agente formatou (mas não editou o conteúdo técnico de) a fonte original.
+
+---
+
+## [2026-08-25] ingest | Como Transistores Formam Portas Lógicas (Células Padrão CMOS) — Branch Education
+
+**Fonte:** [[wiki/sources/como-transistores-formam-portas-logicas-celulas-padrao-cmos]] — transcrição de vídeo fornecida pelo usuário em português (sem necessidade de tradução), formatada e salva em `raw/como-transistores-formam-portas-logicas-celulas-padrao-cmos.md`.
+
+**Skill carregada:** `cs-fundamentals` (mesma convenção já estabelecida em `big-o.md`, `logica-booleana.md` e `sistema-binario-bit-byte.md`); o diretório `/home/nemomartins/Documentos/new/skills/` citado no `CLAUDE.md` não existe nesta máquina — skill drift já documentado em ingestões anteriores, sem repetir aqui em detalhe.
+
+**Arquivos criados:**
+- `raw/como-transistores-formam-portas-logicas-celulas-padrao-cmos.md` — transcrição formatada em Markdown
+- `wiki/sources/como-transistores-formam-portas-logicas-celulas-padrao-cmos.md` — TL;DR, 10 key claims, entidades, conceitos tocados, conexão com o restante da wiki, open questions, raw quotes
+- `wiki/concepts/transistor.md` (stub) — anatomia FinFET, tipo N vs. tipo P, velocidade de comutação
+- `wiki/concepts/cmos.md` (stub) — por que a combinação N+P dá baixo consumo/alta tolerância a ruído
+- `wiki/concepts/celula-padrao.md` (stub) — inversor/NAND/AND/NOR/OR/XOR/XNOR por contagem de transistores, e a hierarquia célula padrão → célula macro → núcleo IP → chip
+- `wiki/entities/branch-education.md` (stub) — canal autor da fonte
+- `wiki/entities/mat-venn.md` (stub) — criador do "Zero to ASIC Course" e do Tiny Tapeout, creditado na fonte
+
+**Páginas atualizadas (backlink + frontmatter, `date_updated` → 2026-08-25):**
+- `wiki/concepts/logica-booleana.md` — `source_count` 2 → 3; nova seção "Da porta lógica ao transistor" explicando por que NAND (4 transistores) é preferida a AND (6) na fabricação; 3 novos links de relação; nova linha em Key sources
+- `wiki/concepts/sistema-binario-bit-byte.md` — `source_count` 2 → 3; nova seção "O bit físico: 1V/0V num transistor" abrindo a caixa-preta que a página já citava de forma abstrata; 2 novos links de relação; nova linha em Key sources
+- `wiki/index.md` — nova linha em Sources; 3 novas linhas em Concepts (seção "Fundamentos de CS"); 2 novas linhas em Entities
+
+**Notas / open questions:** (1) **Achado central: primeira fonte da wiki a abrir a "caixa-preta" do hardware sob o bit e a porta lógica.** `sistema-binario-bit-byte.md` e `logica-booleana.md` já afirmavam, de forma abstrata, que bits são implementados "por componentes como transistores" e que "processadores reais usam NAND por eficiência de fabricação" — esta fonte é a primeira a mostrar exatamente *como* (anatomia gate/canal/dielétrico, tipo N vs. tipo P, contagem exata de transistores por porta) e *por quê* (NAND = 4 transistores vs. AND = 6). Nenhuma contradição encontrada — a fonte só concretiza afirmações que já estavam na wiki de forma mais vaga. (2) **Três conceitos novos criados como stubs deliberadamente enxutos** (`transistor`, `cmos`, `celula-padrao`) — o vídeo é rico o bastante para sustentar três páginas separadas em vez de uma só, seguindo a regra "um conceito por página"; a hierarquia célula-padrão → célula-macro → núcleo IP → chip ficou concentrada em `celula-padrao.md` para não fragmentar demais. (3) **Lacuna registrada como open question na fonte**: o vídeo explicitamente adia para um vídeo futuro do mesmo canal a explicação de como essas portas lógicas implementam operações aritméticas (soma, multiplicação) — watch-list para uma ingestão futura se/quando esse vídeo for adicionado a `raw/`. (4) **Touch count menor que o usual (10 páginas ao todo, incluindo índice/log)** — domínio de hardware/circuitos ainda tem poucas páginas-irmãs na wiki (só `sistema-binario-bit-byte`, `logica-booleana` e `export-controls-chips-ia` tocam o tema de forma adjacente), então o grafo de conexões pré-existente é naturalmente mais raso que em tópicos de backend/system design já bem povoados.

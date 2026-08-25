@@ -3,8 +3,8 @@ type: concept
 title: "Corrida de Preço vs. Qualidade em LLMs"
 aliases: ["race to the bottom llm", "corrida para baixo de preço", "guerra de preços ia"]
 date_created: 2026-07-21
-date_updated: 2026-08-11
-source_count: 4
+date_updated: 2026-08-25
+source_count: 5
 tags: [mercado-de-ia, precificacao, competicao, llm, open-source, ancoragem]
 skill: tech-mentor-ai
 status: stub
@@ -40,9 +40,18 @@ O jogo de modelos deixou de ser dominado por uma única empresa. Combinado com [
 
 Uma empresa frontier não precisa cortar preço para responder à corrida — pode **reprecificar por percepção**. [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] argumenta que a [[wiki/entities/anthropic]] usou [[wiki/concepts/ancoragem-de-preco|ancoragem de preço]] no lançamento do Opus 5: com o mid-tier pressionado por baixo pelo [[wiki/entities/moonshot-ai|Kimi K3]] (US$ 0,92 vs US$ 2,13 do Fable numa task do Cline) e pelo [[wiki/entities/xai|Grok 4.5]], ancorar o Opus ao Fable (premium) faz o Opus parecer barato sem entrar numa guerra direta de preço — defendendo margem no meio da corrida.
 
+## "Ninguém Vai Ter o Grande Rollback": Concorrência Chinesa Como Trava Contra Regulação
+
+[[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] traz um argumento novo sobre por que a corrida tende a se manter: a esperança de que uma bolha de IA estourasse e "resetasse" o mercado (o "grande rollback") dependeria de regulação efetiva dos EUA sobre uso de IA — mas qualquer regulação americana tende a ser manobra política para não estourar a própria bolha, não controle real, porque não alcança a China. Segundo [[wiki/entities/lucas-montano]], essa dinâmica de três lados beneficia o usuário: a Anthropic lança o Opus 5 (leitura do autor: resposta à pressão do [[wiki/entities/moonshot-ai|Kimi K3]] no mid-tier — ver [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]]), a OpenAI libera mais resets semanais (resposta ao Fable), e a China libera novos modelos que forçam as duas a manter o ritmo — um ciclo de concessões competitivas em vez de uma trégua regulatória. **Confiança:** é interpretação/opinião do autor sobre incentivos de mercado, não fato reportado.
+
+## Janela de Atraso da China: de 2 Anos para 6-12 Meses
+
+A mesma fonte cita (via reportagem da Axios, sem URL fornecida) que formuladores de política de IA dos EUA revisaram a estimativa de atraso da China de ~2 anos para 6-12 meses, com o DeepSeek estimado em ~8 meses de atraso em abril de 2026 — ligado ao argumento mais amplo de [[wiki/concepts/export-controls-chips-ia|vantagem energética/mineral chinesa]] como fator que tende a encolher essa janela ainda mais. **Confiança:** baixa-média — números específicos citados de segunda mão, sem link para a fonte primária.
+
 ## Key Sources
 
 - [[wiki/sources/kimi-k3-china-mercado-ia-open-source]]
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — dado de ~70× de diferença de custo por tarefa entre Fable e DeepSeek V4 (via Artificial Analysis)
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — crítica ao modelo de cobrança por token (Palantir): preço deveria ser sobre valor gerado, não volume de token
 - [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — ancoragem de preço como resposta do frontier à corrida (Opus como "novo Sonnet")
+- [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — tese de que a corrida chinesa trava o "grande rollback" regulatório; janela de atraso da China encolhendo (2 anos → 6-12 meses)

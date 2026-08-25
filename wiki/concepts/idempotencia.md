@@ -3,8 +3,8 @@ type: concept
 title: "Idempotência"
 aliases: ["idempotência", "idempotency", "idempotency key"]
 date_created: 2026-04-22
-date_updated: 2026-08-21
-source_count: 6
+date_updated: 2026-08-25
+source_count: 7
 tags: [distribuidos, resiliencia, api, retry, mensageria, double-spend, double-submit, webhook, fintech]
 skill: tech-mentor-system-design
 status: stable
@@ -159,3 +159,4 @@ Um riff citado em [[wiki/sources/two-hard-things-martin-fowler]] (autoria de Mat
 - [[wiki/sources/double-spend-double-submit]] — double spend/double submit como o mesmo problema; chave de idempotência gerada no servidor via hash dos campos (mais robusta que chave enviada pelo cliente); janela de tempo de duplicidade como decisão de negócio
 - [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] — exemplo de [[wiki/concepts/kiss]] aplicado a uma checagem de status habilitados para reprocessamento (adjacente ao padrão de Idempotency Key, não idêntico)
 - [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] — por que o timeout sozinho não decide a causa; corrida resolvida por `INSERT` atômico em vez de `SELECT`+`INSERT`; idempotência vs. transação como proteções complementares; identidade cruzando fronteira de serviço via Outbox/Inbox; identidades de negócio por produto; TTL e testes de garantia
+- [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] — teaser no fechamento do vídeo (ainda não desenvolvido como fonte própria): quando uma etapa posterior de um fluxo multi-step falha depois que o cartão já foi cobrado, como desfazer o efeito colateral já aplicado — aponta para o par idempotência/[[wiki/concepts/saga-pattern]]

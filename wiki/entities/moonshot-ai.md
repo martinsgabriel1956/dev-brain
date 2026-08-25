@@ -3,8 +3,8 @@ type: entity
 title: "Moonshot AI"
 aliases: ["Moonshot", "Kimi"]
 date_created: 2026-07-21
-date_updated: 2026-08-11
-source_count: 3
+date_updated: 2026-08-25
+source_count: 4
 tags: [moonshot, kimi, china, llm, open-source, organização]
 skill: tech-mentor-ai
 status: stub
@@ -30,8 +30,13 @@ Diferente de labs fechados (OpenAI, Anthropic), a Moonshot publica não só o mo
 
 [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] cita um benchmark de custo do Cline (antes do lançamento do Opus 5): na mesma task, o **Kimi K3 custou US$ 0,92** contra **US$ 2,13 do Fable** ([[wiki/entities/anthropic]]) — com a ressalva de que o Fable foi mais rápido e gastou menos token. Essa pressão por baixo no *mid-tier* (junto ao [[wiki/entities/xai|Grok 4.5]]) é apresentada como o motivo pelo qual a Anthropic recorreu à [[wiki/concepts/ancoragem-de-preco|ancoragem de preço]].
 
+## Kimi K3 Como Escape de Guardrails Agressivos
+
+[[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] relata o caso de [[wiki/entities/pieter-levels|Pieter Levels]]: o Kimi K3, acessado via [[wiki/entities/opencode|Opencode]] com uma chave de API própria do Kimi Server (~19 USD, upstream — alternativa ao acesso via [[wiki/entities/openrouter|OpenRouter]]), completou uma lista de tarefas de um projeto hobby (simulador de Windows XP) sem o throttling a cada 5 minutos percebido no Claude Code, e sem os bloqueios "por segurança" que levaram o Claude a rebaixar o modelo usado (Opus → Sonnet) na mesma sessão. Ilustra concretamente por que modelos chineses mais permissivos atraem usuários frustrados com [[wiki/concepts/ai-safety-guardrails|guardrails]] agressivos — mesmo quando a tarefa em si é de baixo risco real (hobby pessoal, não produção crítica).
+
 ## Key Sources
 
+- [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — Kimi K3 via Opencode/Kimi Server como escape de guardrails agressivos do Claude Code num projeto hobby
 - [[wiki/sources/kimi-k3-china-mercado-ia-open-source]]
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — Kimi como modelo de fallback recomendado por custo-benefício
 - [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — Kimi K3 mais barato que o Fable em benchmark de custo (Cline)

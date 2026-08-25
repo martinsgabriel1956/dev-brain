@@ -3,8 +3,8 @@ type: concept
 title: "Escalabilidade Horizontal"
 aliases: ["horizontal scaling", "scale out", "escalar horizontalmente"]
 date_created: 2026-06-26
-date_updated: 2026-08-21
-source_count: 19
+date_updated: 2026-08-24
+source_count: 20
 tags: [escalabilidade, arquitetura, sistemas-distribuidos, nosql, redis, backend]
 skill: tech-mentor-backend
 status: stable
@@ -87,3 +87,4 @@ Escalar horizontalmente um serviço de conexões longas (WebSocket) tem uma rest
 - [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — caso explícito de escalar horizontalmente por redundância/alta disponibilidade, não por volumetria (data providers produzem centenas/milhares de eventos por segundo, não milhões); paralelismo real do Kafka amarrado ao número de partições, não ao número de consumers
 - [[wiki/sources/world-cup-system-design]] — quinto gatilho de escala, de escopo de produto (atender todos os campeonatos do mundo), distinto dos quatro gatilhos técnicos já documentados na fonte-irmã
 - [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — redundância de servidores (mínimo dois por microsserviço via EC2 + Elastic Load Balancer) como tática concreta para atender ao requisito não-funcional de resiliência a falhas, não só de volumetria
+- [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — versão de autoria explícita (Renato Augusto) do mesmo desenho SPOF-a-SPOF de [[wiki/sources/escalar-para-um-milhao-de-usuarios]]; reforça que servidores atrás do LB passam a usar IPs privados, inacessíveis diretamente da internet, como prática de segurança adicional à escala
