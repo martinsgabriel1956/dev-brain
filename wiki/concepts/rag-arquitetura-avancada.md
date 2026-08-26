@@ -3,8 +3,8 @@ type: concept
 title: "RAG em Escala — Além de Buscar e Injetar no Contexto"
 aliases: ["rag arquitetura", "retrieval augmented generation avancado", "rag em producao"]
 date_created: 2026-08-14
-date_updated: 2026-08-14
-source_count: 1
+date_updated: 2026-08-26
+source_count: 2
 tags: [rag, retrieval-augmented-generation, embeddings, banco-vetorial, arquitetura, versionamento]
 skill: tech-mentor-ai
 status: stub
@@ -26,6 +26,10 @@ A percepção comum de RAG (Retrieval Augmented Generation) — "buscar num banc
 
 Bancos de dados vetoriais fazem consulta por proximidade/similaridade de embeddings. Alguns bancos tradicionais (ex.: [[wiki/concepts/redis|Redis]]) oferecem suporte a vetor, funcionando como uma camada adicional de cache/busca em vez de exigir um banco vetorial dedicado. Cloud providers oferecem RAG "pronto para uso" combinando modelo + banco vetorial gerenciado (ex.: Vertex AI da Google).
 
+## RAG Básico Também é Arquitetura — Não Só o Avançado
+
+[[wiki/sources/rag-introducao-pipeline-completo]] reforça, num nível introdutório, o mesmo ponto central desta página: RAG é caracterizado como padrão de pipeline (arquitetura), não como uma tecnologia isolada. A fonte adiciona um ângulo ainda não coberto aqui — a distinção explícita entre RAG e [[wiki/concepts/agente-ia|agente de IA]] (chamar um modelo com contexto injetado é "uma consulta de API", não um agente por si só) — e detalha [[wiki/concepts/chunking]] e [[wiki/concepts/elegibilidade-de-chunks]] como as duas peças que determinam se um RAG "funciona" ou só parece funcionar em demo.
+
 ## Relação com Outros Conceitos
 
 - [[wiki/concepts/cache]] — cache de contexto/embeddings é a otimização de custo/latência mais citada para pipelines de RAG.
@@ -35,3 +39,4 @@ Bancos de dados vetoriais fazem consulta por proximidade/similaridade de embeddi
 ## Key Sources
 
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — RAG citado como ponto de system design com IA, com a ressalva de que a complexidade real está em metadado, versionamento, invalidação e sincronização, não na busca vetorial em si
+- [[wiki/sources/rag-introducao-pipeline-completo]] — versão introdutória do mesmo argumento (RAG = arquitetura de pipeline), com a distinção RAG vs. agente de IA e os conceitos de chunking e elegibilidade de chunks

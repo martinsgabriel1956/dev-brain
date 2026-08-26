@@ -3,8 +3,8 @@ type: concept
 title: "Vaga Júnior Vira Pleno"
 aliases: ["sumiço de vagas júnior", "vaga júnior exigindo pleno", "requisito júnior inflado"]
 date_created: 2026-07-31
-date_updated: 2026-08-19
-source_count: 5
+date_updated: 2026-08-26
+source_count: 6
 tags: [carreira, mercado-de-trabalho, junior, contratacao]
 skill: tech-mentor-leadership
 status: stub
@@ -42,9 +42,14 @@ Pode ser uma manifestação específica, em nível de categoria de vaga, do padr
 
 [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] não fala de texto de vaga diretamente, mas oferece um mecanismo paralelo do lado do conteúdo técnico: numa releitura de 13 requisitos de pleno de 4 anos atrás, 3 itens (estrutura de dados/algoritmos, dominar linguagem/paradigma, design patterns/arquitetura) foram rebaixados de "requisito de pleno" para "requisito de júnior". Se o piso técnico exigido de um júnior de fato subiu na prática de contratação — não só na opinião retrospectiva de um criador de conteúdo —, isso reforçaria este padrão. A fonte não cruza isso com dado de vaga real, então a conexão é inferência desta ingestão, não fato verificado nas duas pontas.
 
+## Fenômeno Distinto (Não o Mesmo): Júnior Vendido a Preço de Sênior em Mercado Aquecido
+
+[[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] descreve um padrão de sinal oposto ao desta página, útil para não confundir os dois: em ciclos de mercado aquecido (muita liquidez, canais de recrutamento saturados), [[wiki/concepts/body-shop-terceirizacao|Body Shops]] vendem júnior com currículo "florido" a **preço de sênior**, por falta de sênior disponível no mercado — o rótulo sobe, não o requisito técnico real. Já esta página documenta o padrão em ciclo de depressão: rótulo "júnior" mantido, mas requisito técnico exigido sobe para nível pleno. Os dois padrões não são o mesmo mecanismo (um é sobre preço/rótulo em alta demanda, o outro é sobre requisito em baixa demanda), mas ambos ilustram como [[wiki/concepts/ciclo-de-mercado-tech|o ciclo de mercado]] distorce a relação entre rótulo de vaga e nível técnico real — em direções opostas dependendo da fase do ciclo.
+
 ## Key Sources
 
 - [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — observação de origem, sem causa identificada pelo próprio relator
+- [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] — fenômeno de sinal oposto (júnior vendido a preço de sênior em mercado aquecido), útil para contraste
 - [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — mecanismo paralelo do lado do conteúdo técnico: 3 itens rebaixados de pleno para júnior, hipótese de piso técnico mais alto (não confirmada com dado de vaga)
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — mecanismo adjacente: concentração de cargos segregados em full-stack, reduzindo vagas segmentadas por escopo
 - [[wiki/sources/crise-vagas-tech-juros-altos-nao-e-so-culpa-da-ia]] — mecanismo causal plausível (custo de capital), não confirmado diretamente contra este fenômeno específico

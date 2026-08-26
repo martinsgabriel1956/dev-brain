@@ -3,8 +3,8 @@ type: concept
 title: "Mentoria Técnica"
 aliases: ["mentoring", "mentorar júniors", "replicar conhecimento"]
 date_created: 2026-04-22
-date_updated: 2026-08-18
-source_count: 7
+date_updated: 2026-08-26
+source_count: 8
 tags: [carreira, mentoria, liderança, júnior, cultura, crescimento]
 skill: tech-mentor-leadership
 status: stable
@@ -63,9 +63,15 @@ Falta de tempo, não má vontade, costuma ser a causa de comentários secos ou p
 
 [[wiki/entities/lucas-badico]], em [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]], trata mentoria não só como prática 1:1, mas como um sistema a ser construído: identifica duas dores concretas de escala — o mentorado sem visibilidade das sessões já tidas e do processo de agendar novas, e cerca de R$50 retidos por sessão numa plataforma de pagamento usada apenas como link (sem aproveitar o resto de suas funcionalidades) — e as ataca construindo sua própria plataforma de agendamento (clone do Calendly, sem as limitações do plano gratuito: múltiplos tipos de mentoria, múltiplos calendários sincronizados). O objetivo declarado do dashboard do mentorado é ir além da agenda: mostrar também o que foi aprendido em cada sessão e como está a evolução — reforçando a mentoria como jornada rastreável, não só encontro pontual.
 
+## Por que o Sênior Deve Filtrar as Opções, Não Só Responder Dúvida
+
+[[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] contribui um mecanismo concreto de por que mentoria multiplica produtividade, não só ensina: um júnior sem experiência, diante de 20 abordagens possíveis, precisaria testar as 20 para saber qual funciona; o sênior já testou essas 20 ao longo da carreira e sabe que só 2 valem a pena. Ao orientar "essas duas aqui, esquece o resto", o sênior corta um trabalho que levaria ordens de grandeza mais tempo — essa é a [[wiki/concepts/escalabilidade-vertical-vs-horizontal-de-pessoas|escalabilidade horizontal]] de um time: o sênior no centro, multiplicando a capacidade de 2-3 júniors ao lado, em vez de escalar sozinho até um teto. A mesma fonte reforça que feedback de mentoria precisa ser diário e específico ("essa linha vai dar problema em produção"), não elogio genérico — ver [[wiki/concepts/feedback-continuo-diario]].
+
 ## Ver também
 
 - [[one-on-one]] — formato estruturado de acompanhamento individual
+- [[wiki/concepts/equipe-mista-senior-junior]] — o formato de time onde mentoria técnica acontece na prática
+- [[wiki/concepts/feedback-continuo-diario]] — o ciclo diário que sustenta a mentoria, além das sessões formais
 - [[contratacao-barra-alta]] — contratar bem é o primeiro passo, mentorar é o segundo
 - [[wiki/concepts/code-review]] — o momento onde a falta de mentoria estruturada mais dói
 - [[wiki/concepts/sindrome-do-impostor]] — o que a ausência de mentoria alimenta no júnior
@@ -81,3 +87,4 @@ Falta de tempo, não má vontade, costuma ser a causa de comentários secos ou p
 - [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — terceira fonte independente sobre o efeito multiplicador do ensino; formação interna de time como alternativa à contratação de sênior pronto
 - [[wiki/sources/potencial-programador-atitude-mindset]] — a aritmética do [[wiki/concepts/efeito-multiplicador]] (ajudar 5 pessoas a melhorar 20% = +100%) e a ressalva de custo de tempo do lead que para de codar
 - [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]] — mentoria tratada como produto/sistema: plataforma própria de agendamento e dashboard de jornada do mentorado, construídos para resolver dores reais de visibilidade e pagamento
+- [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] — mentoria como filtro de opções (sênior já testou 20, sabe que só 2 valem a pena) e feedback diário/específico como mecanismo central

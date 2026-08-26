@@ -3,8 +3,8 @@ type: concept
 title: "Salt"
 aliases: ["salting", "salt criptográfico", "password salt"]
 date_created: 2026-06-11
-date_updated: 2026-08-03
-source_count: 3
+date_updated: 2026-08-26
+source_count: 4
 tags: [segurança, criptografia, password-hashing, salt]
 skill: tech-mentor-security
 status: stable
@@ -66,3 +66,4 @@ Ver [[concepts/pepper]] para a combinação ideal.
 - [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
 - [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]]
+- [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — exemplo didático Bob/Alice com mesma senha, salts diferentes

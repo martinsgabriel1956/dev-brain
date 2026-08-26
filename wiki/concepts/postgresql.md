@@ -3,8 +3,8 @@ type: concept
 title: "PostgreSQL"
 aliases: ["postgres", "pg"]
 date_created: 2026-04-22
-date_updated: 2026-08-05
-source_count: 8
+date_updated: 2026-08-26
+source_count: 9
 tags: [banco-de-dados, postgresql, relacional, jsonb, vetorial]
 skill: tech-mentor-system-design
 status: stable
@@ -61,6 +61,10 @@ O diferencial real frente ao [[wiki/concepts/mysql|MySQL]] (que também tem Full
 
 O comportamento descrito acima (processo por conexão, PgBouncer obrigatório) é a camada de acesso; por baixo dela, o motor relacional segue o fluxo genérico documentado em [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]]: páginas em [[wiki/concepts/buffer-pool]], durabilidade via [[wiki/concepts/write-ahead-log]], concorrência via [[wiki/concepts/mvcc]] e [[wiki/concepts/isolation-levels]] (Read Committed é o default do Postgres), e recuperação via checkpoints ([[wiki/concepts/database-recovery]]). O `autovacuum` citado na skill `tech-mentor-data` é a implementação concreta de Postgres para limpar as versões antigas que o MVCC acumula.
 
+## PG Vector Como Ponto de Entrada para RAG
+
+Reforçando o padrão já descrito acima (extensão nativa cobrindo o que levaria a adotar um banco especializado à parte): [[wiki/sources/rag-introducao-pipeline-completo]] cita o Postgres com a extensão `pgvector` como opção viável para armazenar embeddings de um pipeline de [[wiki/concepts/rag-arquitetura-avancada|RAG]] — "aguenta bastante carga" e roda em produção mesmo havendo bancos vetoriais dedicados (Pinecone, Weaviate). Cada registro guarda o vetor (embedding), o texto cru do [[wiki/concepts/chunking|chunk]] e metadados de filtro, na mesma linha do padrão JSONB já documentado aqui: menos infraestrutura poliglota.
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
@@ -71,3 +75,4 @@ O comportamento descrito acima (processo por conexão, PgBouncer obrigatório) �
 - [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]] — migrations cruas via docker-compose + script de versão contra Postgres local
 - [[wiki/sources/full-text-search-mysql-postgresql]] — tsvector/tsquery/GIN, stemming por lexema, e comparação de performance com/sem índice
 - [[wiki/sources/infraestrutura-como-codigo-cdk-aws]] — citado como o banco de dados de exemplo numa stack ilustrativa de [[wiki/concepts/infraestrutura-como-codigo|IaC]] (dois Lambdas atrás de um API Gateway, ambos conectados ao mesmo Postgres, sem acesso direto à internet); menção arquitetural breve, sem claim técnico novo sobre o motor
+- [[wiki/sources/rag-introducao-pipeline-completo]] — `pgvector` como vector store viável para RAG em produção, com exemplo de estrutura de registro (embedding + texto cru + metadados)

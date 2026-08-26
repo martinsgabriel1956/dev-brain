@@ -3,8 +3,8 @@ type: concept
 title: "Pepper"
 aliases: ["password pepper", "server-side secret"]
 date_created: 2026-06-11
-date_updated: 2026-07-28
-source_count: 2
+date_updated: 2026-08-26
+source_count: 3
 tags: [segurança, criptografia, password-hashing, pepper, defesa-em-profundidade]
 skill: tech-mentor-security
 status: stable
@@ -71,6 +71,10 @@ Se o atacante comprometeu também o servidor (acesso ao `.env`), o pepper é exp
 
 Rotacionar pepper requer re-hash de todas as senhas, o que exige que o usuário faça login (única forma de obter a senha em plaintext novamente). Estratégia: marcar hashes com versão do pepper e re-hashar progressivamente a cada login.
 
+## Risco Operacional de Tudo-ou-Nada
+
+Diferente de errar com [[concepts/salt]] (contido — vive na própria tabela junto ao hash), perder ou trocar por engano o valor do pepper no secrets manager **invalida todas as senhas do aplicativo de uma só vez**, para 100% dos usuários, sem possibilidade de reconstrução — o sistema não tem como saber qual era o valor anterior. Esse é o argumento central citado para o pepper ser considerado arriscado: o "raio de explosão" de um erro de deploy/rotação é o inverso do erro contido de um bug em salt ou hash.
+
 ---
 
 ## Relação com Outros Conceitos
@@ -84,3 +88,4 @@ Rotacionar pepper requer re-hash de todas as senhas, o que exige que o usuário 
 
 - [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
 - [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]
+- [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — risco de tudo-ou-nada ao perder o pepper

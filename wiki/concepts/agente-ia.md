@@ -3,8 +3,8 @@ type: concept
 title: "Agente de IA"
 aliases: ["agente", "AI agent", "agentes de ia"]
 date_created: 2026-05-18
-date_updated: 2026-08-14
-source_count: 6
+date_updated: 2026-08-26
+source_count: 7
 tags: [agentes-ia, llm, llmops, automacao]
 skill: tech-mentor-ai
 status: draft
@@ -29,6 +29,10 @@ Diferente de um simples chat com LLM, um agente possui um **loop de ação**: pe
 ## Impacto Operacional
 
 A capacidade de rodar agentes em paralelo e de deixá-los executando tarefas enquanto o desenvolvedor faz outra coisa criou um novo paradigma de trabalho — e com ele, o fenômeno [[token-anxiety]].
+
+## RAG Não É Agente de IA
+
+[[wiki/sources/rag-introducao-pipeline-completo]] traça uma distinção que vale reforçar aqui: um [[wiki/concepts/rag-arquitetura-avancada|RAG]] pode ser usado *por* um agente, mas ter um RAG não significa ter um agente. Chamar um modelo — mesmo injetando contexto recuperado no prompt — é "uma consulta de API", não um agente: falta o loop de ação (perceber → decidir → executar → observar → repetir) que caracteriza o agente de fato. Um "Hello World" que chama um LLM não é um agente por si só.
 
 ## Terminologia de Controle
 
@@ -77,3 +81,4 @@ Não pensar nessa arquitetura antes de implementar é apontado como causa recorr
 - [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] — blueprint de 5 peças + 4 componentes para agentes orientados a evento em produção
 - [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — modo agente do ChatGPT (com full access ao computador) fazendo setup, instalação de engine, escrevendo o próprio script de execução e testando o jogo sozinho; atritos triviais (falta de Git, login manual na Epic Games) ainda exigem humano
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — quatro arquiteturas de orquestração multiagente (paralela, sequencial, customizada, autônoma) e a tese de que o dev vai atuar cada vez mais como arquiteto para pilotar IA
+- [[wiki/sources/rag-introducao-pipeline-completo]] — distinção explícita entre RAG e agente de IA: chamar um modelo com contexto injetado é uma consulta de API, não um agente

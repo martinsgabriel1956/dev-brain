@@ -3,8 +3,8 @@ type: concept
 title: "Swap"
 aliases: ["swap", "swap space", "paging to disk", "memória virtual em disco"]
 date_created: 2026-04-22
-date_updated: 2026-06-26
-source_count: 2
+date_updated: 2026-08-26
+source_count: 3
 tags: [sistema-operacional, memória, performance, cs-fundamentals]
 skill: cs-fundamentals
 status: stable
@@ -56,8 +56,10 @@ Se o sistema começa a fazer swap constantemente (**thrashing**), a performance 
 
 - [[concepts/memoria-virtual]] — mecanismo que viabiliza o swap
 - [[concepts/processo]] — processos cujas páginas vão para swap ficam mais lentos
+- [[wiki/concepts/memoria-ram]] — swap existe justamente porque a RAM física é finita e ordens de magnitude mais rápida que o disco
 
 ## Key Sources
 
 - [[sources/sistema-operacional-por-baixo-dos-panos]]
 - [[sources/como-sistemas-operacionais-funcionam]]
+- [[wiki/sources/evolucao-memorias-ram-ddr1-a-ddr5]] — contexto de hardware: por que a capacidade e a largura de banda da RAM instalada (geração DDR) definem o quanto o sistema pode evitar recorrer a swap

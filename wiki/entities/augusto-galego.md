@@ -3,8 +3,8 @@ type: entity
 title: "Augusto Galego"
 aliases: ["Augusto Galego", "augustogalego.com"]
 date_created: 2026-07-20
-date_updated: 2026-08-17
-source_count: 11
+date_updated: 2026-08-26
+source_count: 12
 tags: [pessoa, programador, youtuber, brasil, devops, system-design, carreira, agentes-ia, code-review]
 skill: tech-mentor-infra
 status: stub
@@ -48,6 +48,10 @@ Além de infra/deploy, carreira e system design, produz conteúdo de reação/an
 
 Em [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]], reage a um tweet de [[wiki/entities/bero]] argumentando que, na era da IA, vale mais parecer bom dev (treinar LeetCode + System Design para entrevista) do que ser bom dev de fato. Concorda em parte: LeetCode caiu de valor prático, System Design subiu — inversão explícita do que ele mesmo defendia "dois anos atrás" no canal. Autorreferência direta pelo próprio nome em terceira pessoa na fala ("você pode argumentar Galego mas...") — a evidência de autoria mais forte já registrada nesta entidade, mais forte até que o padrão de patrocínio HostGator recorrente.
 
+## Conteúdo Introdutório de Segurança: Armazenamento de Senhas
+
+Além de infra/deploy, carreira/system design e reação a agentes de IA, produz conteúdo introdutório de segurança com disclaimer explícito de não-especialista ("não sou um expert em criptografia... cybersegurança... autenticação"). Em [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] explica hash/salt/pepper organizando a defesa em torno de dois modelos de ameaça — ataque online (rate limit + MFA) vs. ataque offline (hash + salt + pepper) — e fecha com uma escada de recomendação prática terminando em identity providers (Clerk, Auth0, Cognito) e passwordless (Magic Link, login social), incluindo preferência pessoal por não lidar com senha em SaaS B2C.
+
 ## Key Sources
 
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]]
@@ -61,3 +65,4 @@ Em [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-
 - [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — autoria inferida (mesmo curso pago de 90+ aulas, mesma política de reembolso de um mês): aula gratuita do curso reconstruindo o capítulo "de zero a milhões de usuários" de Alex Xu, desenho incremental guiado por SPOF
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — autoria confirmada (PWD do vídeo identifica o user "Augusto Galego"): comandos básicos de Linux e por que devs precisam reconhecê-los na era dos agentes; patrocínio Abacus
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — autoria confirmada por autorreferência direta ao próprio nome na fala; reação a tweet sobre LeetCode/System Design como filtro de entrevista vs. diferencial real de trabalho
+- [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — autoria confirmada por autorreferência ("cupom galego"); introdução a hash/salt/pepper organizada por modelo de ameaça (online vs. offline), com escada de recomendação até identity providers e passwordless

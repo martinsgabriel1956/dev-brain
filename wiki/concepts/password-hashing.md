@@ -3,8 +3,8 @@ type: concept
 title: "Password Hashing"
 aliases: ["hashing de senhas", "armazenamento seguro de senhas", "password storage"]
 date_created: 2026-06-11
-date_updated: 2026-08-03
-source_count: 5
+date_updated: 2026-08-26
+source_count: 6
 tags: [segurança, criptografia, password-hashing, autenticação]
 skill: tech-mentor-security
 status: stable
@@ -90,6 +90,8 @@ $hash = password_hash($password . $pepper, PASSWORD_ARGON2ID, [
 ## Ver também
 
 - [[wiki/concepts/mfa-multifator-autenticacao]] — password hashing protege o fator "algo que você sabe", mas não substitui a necessidade de fatores adicionais
+- [[wiki/concepts/ataque-online-vs-offline-senha]] — password hashing é a defesa do ataque offline; rate limit/MFA cobrem o ataque online, que hash sozinho não previne
+- [[wiki/concepts/identity-provider-terceirizacao-autenticacao]] — escada de terceirização (lib → framework → identity provider → passwordless) para quem não quer implementar isso do zero
 
 ## Key Sources
 
@@ -98,3 +100,4 @@ $hash = password_hash($password . $pepper, PASSWORD_ARGON2ID, [
 - [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]
 - [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — comparação numérica SHA-256 (1 bilhão hashes/s em GPU) vs. work factor de bcrypt/Argon2
+- [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — enquadra hash/salt/pepper como defesa do ataque offline especificamente, distinto de rate limit/MFA para o ataque online

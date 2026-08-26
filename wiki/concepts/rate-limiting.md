@@ -3,8 +3,8 @@ type: concept
 title: "Rate Limiting"
 aliases: ["throttling", "rate limit", "token bucket", "sliding window"]
 date_created: 2026-04-23
-date_updated: 2026-08-14
-source_count: 8
+date_updated: 2026-08-26
+source_count: 9
 tags: [rate-limiting, token-bucket, sliding-window, redis, throttling, protecao-api, gatekeeper, attack-surface]
 skill: tech-mentor-backend
 status: stub
@@ -42,9 +42,14 @@ Além do risco de segurança, não limitar rotas públicas gera custo direto: um
 
 [[wiki/concepts/rotacao-de-contas-free-tier]] descreve o lado inverso desta página, visto do ponto de vista de quem sofre o rate limit em vez de quem o implementa: em vez de escalar uma única conta contra o limite do provider, cadastra-se múltiplas contas free tier e um [[wiki/concepts/ai-gateway-llm-router|gateway]] rotaciona entre elas quando a corrente esgota — efetivamente multiplicando a cota disponível ao custo de risco de detecção/banimento pelo provider.
 
+## Rate Limit como Defesa do Ataque Online a Senha
+
+[[wiki/concepts/ataque-online-vs-offline-senha]] situa rate limit (por IP, dispositivo ou usuário) e bloqueio de conta após N tentativas como a defesa específica do ataque online de força bruta contra login — distinto de [[wiki/concepts/password-hashing]], que só protege contra o cenário de banco vazado (ataque offline). Sem rate limit, hash/salt/pepper bem implementados não impedem alguém de simplesmente testar senhas comuns pelo formulário de login público.
+
 ## Key Sources
 
 - [[sources/rate-limiting]]
+- [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — rate limit + bloqueio de conta como defesa do ataque online, ao lado de MFA
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — rotação de contas free tier como forma de contornar rate limit por conta individual
 - [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
 - [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]]

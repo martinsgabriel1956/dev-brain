@@ -3,8 +3,8 @@ type: entity
 title: "Full Cycle"
 aliases: ["Full Cycle Dev", "MBA Arquitetura Full Cycle"]
 date_created: 2026-07-20
-date_updated: 2026-08-17
-source_count: 4
+date_updated: 2026-08-26
+source_count: 5
 tags: [educacao, arquitetura, system-design, brasil, mba]
 skill: tech-mentor-system-design
 status: stub
@@ -22,3 +22,4 @@ Também oferece um **MBA em Engenharia de Software com IA**, estruturado em quat
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]]
 - [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]]
+- [[wiki/sources/rag-introducao-pipeline-completo]] — aula introdutória de RAG, citando o MBA em Engenharia de Software com IA como local das aulas avançadas de reranqueamento

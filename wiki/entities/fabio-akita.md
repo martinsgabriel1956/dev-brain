@@ -3,8 +3,8 @@ type: entity
 title: "Fábio Akita"
 aliases: ["Akita", "Akita On Rails"]
 date_created: 2026-05-16
-date_updated: 2026-08-03
-source_count: 6
+date_updated: 2026-08-26
+source_count: 7
 tags: [pessoa, programador, youtuber, brasil]
 skill: tech-mentor-leadership
 status: stable
@@ -54,6 +54,10 @@ Em janeiro de 2026, publicou um artigo propondo o **AI Jail** — ferramenta de 
 
 Em [[wiki/sources/cinco-escolas-programacao-com-ia]], o autor da fonte relata (de passagem, sem contexto completo) que Akita teria dito, em conversa ou vídeo, que a abordagem "copiloto" (autocomplete revisado sugestão-a-sugestão, ex.: Cursor/GitHub Copilot) seria "coisa de 2023" — já datada. O próprio autor da fonte discorda parcialmente, observando que essa escola segue com adesão ativa em 2026. `[transcrição incerta sobre o contexto exato da fala de Akita — citação de segunda mão, sem link à fonte primária]`.
 
+## Visão sobre Organização de Equipes de Tecnologia
+
+Em [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]], defende que [[wiki/concepts/equipe-mista-senior-junior|nenhuma equipe só de sêniors ou só de júniors funciona bem]] — usa a metáfora de pedreiro vs. mestre de obras para justificar times mistos, com o sênior orientando júniors ([[wiki/concepts/escalabilidade-vertical-vs-horizontal-de-pessoas|escalabilidade horizontal de pessoas]]) via [[wiki/concepts/feedback-continuo-diario|feedback diário e específico]], não elogio vazio. Relata sua própria trajetória como consultor em ~2002 no projeto de unificação de sistemas da Vivo/Claro (mesma passagem já documentada acima) como pano de fundo para sua crítica ao modelo [[wiki/concepts/body-shop-terceirizacao|Body Shop]] de contratação. Também traça um paralelo entre o mercado aquecido atual e a bolha da internet (2000-2001), incluindo a crítica de que "cultura corporativa" costuma funcionar como [[wiki/concepts/cultura-corporativa-vs-manifesto-na-parede|manifesto de marketing em vez de comportamento real]] — coerente com sua defesa geral, já documentada acima, de que fundamentos e raciocínio próprio superam modismos e cópia de padrões de empresas maiores (ver [[wiki/concepts/cargo-cult-tecnologico]]).
+
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]]
@@ -63,3 +67,4 @@ Em [[wiki/sources/cinco-escolas-programacao-com-ia]], o autor da fonte relata (d
 - [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — artigo/projeto AI Jail, comentado por terceiros (fonte não é o próprio canal de Akita)
 - [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] — áudio de segunda mão sobre fim do dinheiro fácil e aperto de processos seletivos
 - [[wiki/sources/cinco-escolas-programacao-com-ia]] — citação de segunda mão sobre a Escola 1 (copiloto) estar "datada"
+- [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] — como organizar equipes mistas de tecnologia, feedback diário, paralelo com a bolha da internet e crítica à "cultura" como manifesto de marketing

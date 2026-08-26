@@ -3,8 +3,8 @@ type: concept
 title: "Argon2"
 aliases: ["argon2id", "argon2i", "argon2d"]
 date_created: 2026-06-11
-date_updated: 2026-07-28
-source_count: 2
+date_updated: 2026-08-26
+source_count: 3
 tags: [segurança, criptografia, password-hashing, argon2, memory-hard]
 skill: tech-mentor-security
 status: stable
@@ -92,3 +92,4 @@ Sempre usar com [[concepts/pepper]] para defesa em profundidade.
 
 - [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
 - [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]
+- [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — citado como recomendação atual (Argon2id), com nota sobre resistência qualitativa a computação quântica

@@ -3,8 +3,8 @@ type: concept
 title: "Alucinação de LLM"
 aliases: ["hallucination", "llm hallucination", "alucinacao", "llm mente"]
 date_created: 2026-07-30
-date_updated: 2026-08-11
-source_count: 3
+date_updated: 2026-08-26
+source_count: 4
 tags: [alucinacao, hallucination, ai-safety, rag, guardrails, llm-as-judge, faithfulness]
 skill: tech-mentor-ai
 status: draft
@@ -40,6 +40,10 @@ Prompts que pedem explicitamente reconhecimento de incerteza ("me pergunta se n�
 
 Nenhuma dessas técnicas, isolada ou combinada, zera a alucinação — sempre resta um grau residual de invenção, conforme o próprio paper da OpenAI conclui sobre o limite teórico de 100% de precisão.
 
+## Elegibilidade de Chunks Como Gatilho de Recusa
+
+[[wiki/sources/rag-introducao-pipeline-completo]] dá uma versão concreta, em nível de pipeline, da mitigação "reconhecer incerteza": no retrieval de um RAG, nem todo chunk retornado pela busca vetorial é confiável o suficiente para compor a resposta — ver [[wiki/concepts/elegibilidade-de-chunks]]. Se nenhum chunk recuperado atinge o threshold de confiança definido, a recomendação é a mesma já documentada aqui: admitir que não se tem a informação é preferível a responder com contexto descontextualizado.
+
 ## Consequência de Produto: Risco Jurídico
 
 Uma LLM em produção que alucina para o usuário final gera passivo jurídico direto para a empresa — caso citado: Air Canada foi condenada a indenizar um cliente porque o chatbot da empresa deu uma informação falsa sobre política de reembolso. Esse risco cresce com [[wiki/concepts/tool-call|capacidades agênticas]] do chatbot (ex.: oferecer descontos automaticamente): um usuário mal-intencionado pode tentar induzir a LLM a alucinar uma resposta favorável a si mesmo.
@@ -59,3 +63,4 @@ Esse fluxo é a aplicação concreta do modelo de guardrails de entrada/saída j
 - [[wiki/sources/porque-nunca-confiar-em-llm-alucinacao]] — origem desta página: estatísticas de taxa de erro factual, paper da OpenAI sobre causa raiz, caso Air Canada, alucinação de pacotes de código, pipeline de produção com RAG + LLM-as-judge
 - [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] — "informações falsas" como o principal risco factual do estudo com IA; exige [[wiki/concepts/pensamento-critico]], sobretudo em conteúdo complexo
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — alucinação de pacotes/métodos/componentes em código corporativo explicada pelo treino em código público; [[wiki/concepts/skills-agente|skills]] propostas como mitigação (injetar padrões e esquemas internos)
+- [[wiki/sources/rag-introducao-pipeline-completo]] — conceito de "chunks elegíveis" com threshold de confiança: se nenhum chunk recuperado for elegível, o sistema deve recusar responder em vez de alucinar com contexto ruim

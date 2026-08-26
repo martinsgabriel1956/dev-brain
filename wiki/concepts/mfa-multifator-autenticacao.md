@@ -3,8 +3,8 @@ type: concept
 title: "MFA — Autenticação Multifator"
 aliases: ["MFA", "2FA", "multi-factor authentication", "two-factor authentication", "fatores de autenticação"]
 date_created: 2026-07-27
-date_updated: 2026-08-03
-source_count: 2
+date_updated: 2026-08-26
+source_count: 3
 tags: [mfa, 2fa, autenticacao, seguranca, fatores-de-autenticacao]
 skill: tech-mentor-security
 status: draft
@@ -51,9 +51,14 @@ Ver [[wiki/concepts/otp-hotp-totp]] para os detalhes de HOTP/TOTP e [[wiki/conce
 
 Aplicar MFA apenas no momento do login protege a entrada, mas não as ações depois dela. Se um atacante já tem uma sessão ativa (ex.: sessão sequestrada), pode trocar e-mail, resetar senha ou desativar o próprio MFA sem nunca precisar do segundo fator de novo. Operações sensíveis exigem reautenticação do segundo fator no momento da ação — ver [[wiki/concepts/step-up-authentication]].
 
+## MFA como Defesa do Ataque Online (e Rede de Segurança no Offline)
+
+[[wiki/concepts/ataque-online-vs-offline-senha]] enquadra MFA — junto com rate limiting/bloqueio de conta — como a defesa específica do ataque online (tentativa repetida de login), distinto de hash/salt/pepper, que defendem o ataque offline (vazamento de banco). MFA também funciona como rede de segurança adicional no cenário offline: mesmo que o atacante quebre o hash da senha, ainda falta o segundo fator para logar de fato.
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/password-hashing]] — o fator "algo que você sabe" continua vulnerável a vazamento mesmo com hash+salt
+- [[wiki/concepts/ataque-online-vs-offline-senha]] — MFA como defesa primária do ataque online
 - [[wiki/concepts/otp-hotp-totp]] — implementação do fator "algo que você tem" via código temporário
 - [[wiki/concepts/webauthn-fido2-u2f]] — implementação do fator "algo que você tem" via criptografia assimétrica
 - [[wiki/concepts/mobile-biometria]] — implementação do fator "algo que você é"
@@ -64,3 +69,4 @@ Aplicar MFA apenas no momento do login protege a entrada, mas não as ações de
 
 - [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — comparação de resistência a phishing por método; step-up authentication
+- [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — MFA (autenticador, código via WhatsApp/e-mail) como defesa do ataque online, distinto de hash/salt/pepper

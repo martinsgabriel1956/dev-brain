@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-08-25
+date_updated: 2026-08-26
 ---
 
 
@@ -20,6 +20,8 @@ date_updated: 2026-08-25
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] | [[wiki/entities/fabio-akita\|Fábio Akita]] sobre times mistos sênior-júnior (metáfora pedreiro vs. mestre de obras), feedback diário vs. elogio vazio, e paralelo entre o mercado aquecido atual e a bolha da internet de 2000-2001 (contratação como métrica de vaidade, Google vs. Cadê, cultura como manifesto de marketing) |
+| [[wiki/sources/evolucao-memorias-ram-ddr1-a-ddr5]] | Autor não identificado. Evolução completa das cinco gerações de [[wiki/concepts/ddr-sdram\|DDR SDRAM]] (2000–2021): voltagem, pinagem, frequência, largura de banda e buffer de pré-busca de DDR1 a DDR5, cada uma acompanhando uma geração de CPU Intel/AMD; DDR3 destacada como a geração mais longeva (~10 anos) |
 | [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] | Sexto vídeo da série Tier S de [[wiki/entities/pedro-camaforte\|Pedro Camaforte]]: [[wiki/concepts/race-condition\|race condition]]/[[wiki/concepts/toctou\|TOCTOU]] via cadeira de cinema dupla-vendida e estoque sobrescrito; três estratégias — [[wiki/concepts/pessimistic-locking\|locking pessimista]] (`FOR UPDATE`), [[wiki/concepts/optimistic-concurrency-control\|OCC]] (coluna `version`), [[wiki/concepts/reservation-pattern\|reservations]] via Redis `SET NX EX` com fallback de lock pessimista se o Redis cair; demonstração empírica com 5 conexões simultâneas no PostgreSQL |
 | [[wiki/sources/busca-binaria-fila-protocolos-atendimento-live-coding]] | Corte de live coding do canal [[wiki/entities/fernanda-kipper\|Fernanda Kipper]]: [[wiki/concepts/algoritmos-de-busca\|busca binária]] resolvida "no papel" com o chat (fila de protocolos de atendimento), com leitura direta do livro *Entendendo Algoritmos* — analogia "adivinhar 1-100" e dicionário de 240.000 palavras (18 etapas via [[wiki/concepts/logaritmo\|log₂n]] vs. até 239.999 em brute force) |
 | [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] | [[wiki/entities/renato-augusto\|Renato Augusto]] reconstrói o mesmo capítulo "zero a milhões de usuários" (Alex Xu) já coberto em [[wiki/sources/escalar-para-um-milhao-de-usuarios]], mas com autoria explícita e exemplos concretos: read/write split configurado no Laravel, cluster Amazon Aurora, IPs privados atrás do [[wiki/concepts/load-balancer\|load balancer]] por segurança, ferramentas de mensageria nomeadas (RabbitMQ, Kafka, SQS) e analogia de checkout de e-commerce para jobs assíncronos |
@@ -337,6 +339,7 @@ date_updated: 2026-08-25
 | [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] | Cinco níveis de arquitetura frontend (camadas → modular → vertical slice → microfrontend baseado em rotas → microfrontends parciais distribuídos); demo prática Shell + React/Angular/Solid.js via Custom Events expõe o custo real de microfrontends parciais (performance, CI/CD fragmentado, versionamento, governança); tese central: a maioria das decisões saudáveis fica entre monolito modular e microfrontend baseado em rotas, não nos extremos |
 | [[wiki/sources/microsservicos-martin-fowler-james-lewis]] | James Lewis e Martin Fowler (25 mar 2014): artigo original que cunhou a definição de microsserviços — nove características comuns, "smart endpoints and dumb pipes" contra ESBs, Lei de Conway como razão para decompor por capacidade de negócio, Polyglot Persistence, Design for Failure (Simian Army, Circuit Breaker); os próprios autores recusam declarar microsserviços "o futuro" sem ressalvas |
 | [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]] | Linha do tempo da criptografia — cítala espartana e cifra de César (criatividade, não matemática) → Vigenère (polialfabética, "indecifrável" por 300 anos) → Enigma (quebrada por reuso de chave) → AES/RSA modernos (key distribution problem resolvido por par público/privado) → IND-CPA como modelo formal (César falha, preserva padrão de repetição) → ameaça quântica (Shor quebra RSA, Grover só acelera busca) → password hashing (salt, pepper, BCrypt EKS-Blowfish limitado a 72 chars, Argon2id em três fases) |
+| [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] | [[wiki/entities/augusto-galego\|Augusto Galego]]: introdução a hash/salt/pepper organizada por dois modelos de ameaça — ataque online (rate limit + MFA) vs. ataque offline (hash + salt + pepper, Argon2id) — fechando com escada de recomendação prática: lib → framework (Better Auth) → identity provider (Clerk/Auth0/Cognito) → passwordless (Magic Link, login social) |
 | [[wiki/sources/story-points-po-forcando-30-40-pontos-por-sprint]] | Lucas Badico: pergunta de mentorado sobre PO exigindo 30-40 story points/sprint por pessoa vira discussão sobre o papel do Scrum Master e do PO — story points medem complexidade relativa (não tempo), forçar uma meta de cima para baixo corrompe a métrica (Lei de Goodhart), reduz colaboração e reproduz Waterfall com verniz de cerimônias ágeis |
 | [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] | Guia introdutório de dívida técnica: revisita Quadrante de Fowler e analogia com dívida financeira; acrescenta debt ratio/SQALE (`remediation/development cost`, faixas <5%/5-10%/10-20%/>20%), hotspot analysis (complexidade ciclomática × code churn), framework PAID, matriz refatorar-vs-reescrever (valor×risco), regra dos 20% vs. regra dos 25% do Shopify, TDD/pair programming/CI-CD como prevenção, template de business case para stakeholders, caso Knight Capital |
 | [[wiki/sources/historia-dos-formatos-de-imagem]] | Cronologia dos formatos de imagem (TGA 1984 → PDF): canal alfa e RLE nos formatos raster antigos, JPEG (compressão com perdas em blocos 8x8) vs. PNG (sem perdas, criado como resposta livre-de-patente ao GIF), SVG como único formato vetorial, e WebP/HEIC/AVIF como geração mais recente — HEIC e AVIF reaproveitam literalmente codecs de vídeo (HEVC, AV1) para comprimir uma imagem única |
@@ -383,6 +386,7 @@ date_updated: 2026-08-25
 | [[wiki/sources/continuous-delivery-martin-fowler]] | Bliki de Fowler (2013): define "Continuous Delivery" — capacidade (não ato) de lançar em produção a qualquer momento; quatro indicadores do grupo de CD da Thoughtworks; distinção precisa vs. Continuous Deployment; DevOps culture além de dev+ops; crédito a Jez Humble |
 | [[wiki/sources/como-transistores-formam-portas-logicas-celulas-padrao-cmos]] | [[wiki/entities/branch-education\|Branch Education]]: analogia "transistor = pino de Lego" para explicar FinFET tipo N/P, o inversor CMOS de 2 transistores, e como NAND (4)/AND/NOR/OR (6)/XOR/XNOR (10) se constroem em topologia série/paralelo; hierarquia célula padrão → célula macro (somador ~160, multiplicador ~6.100) → núcleo IP → chip com ~26 bilhões de transistores |
 | [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] | [[wiki/entities/lucas-montano\|Lucas Montano]] parte de tweet de [[wiki/entities/pieter-levels\|Pieter Levels]] (Kimi K3 termina tarefa enquanto Claude perde 2 semanas em guardrails, rebaixado Opus→Sonnet "por segurança") para duas teses: risco geopolítico real de negócio americano sobre modelo chinês (janela de atraso da China encolhendo), e "a era do modelo único acabou" — roteamento por **tolerância a guardrail** (Claude para Stripe/e-mail sensível, modelo permissivo para hobby); benchmarks do Opus 5 (forte em Agentic Terminal Coding/Agent Search/Computer Use, atrás do GPT 5.6 Sol em coding puro, sem avanço em dual-use de risco) |
+| [[wiki/sources/rag-introducao-pipeline-completo]] | Aula introdutória de RAG (estilo [[wiki/entities/full-cycle\|Full Cycle]]): o que significa cada letra da sigla, os dois pipelines (ingestão e consulta), [[wiki/concepts/chunking\|chunking]], embeddings/`pgvector`, metadados como mecanismo de filtro e de segurança de acesso, [[wiki/concepts/elegibilidade-de-chunks\|chunks elegíveis]] com threshold de confiança (recusar responder é melhor que alucinar), e a distinção explícita de que RAG não é [[wiki/concepts/agente-ia\|agente de IA]] |
 
 ## Concepts
 
@@ -410,6 +414,7 @@ date_updated: 2026-08-25
 | [[wiki/concepts/open-redirect]] | Validação frouxa da `redirect_uri` no OAuth permite ao atacante desviar o `authorization_code` para domínio próprio |
 | [[wiki/concepts/step-up-authentication]] | MFA só no login não protege ações sensíveis pós-sessão — reautenticar o segundo fator antes de ações de alto risco |
 | [[wiki/concepts/antipadrao-da-senha]] | Trocar senha entre sistemas em vez de token — o problema pré-2007 que o OAuth existe para resolver |
+| [[wiki/concepts/identity-provider-terceirizacao-autenticacao]] | Escada de terceirização de autenticação — lib de hash → framework (Better Auth) → identity provider (Clerk/Auth0/Cognito) → passwordless |
 
 ### Onboarding & Aprendizado de Codebase
 
@@ -509,6 +514,9 @@ date_updated: 2026-08-25
 | [[wiki/concepts/log-de-aprendizado]] | Registro semanal de aprendizado que torna visível a evolução sub-perceptível no dia a dia |
 | [[wiki/concepts/disciplina-vs-talento]] | Disciplina consistente supera talento no longo prazo — a única competição válida é com o eu do passado |
 | [[wiki/concepts/ciclo-de-mercado-tech]] | Mercado tech segue ciclos de abundância e depressão por oferta e procura — ciclo de abundância atual está terminando |
+| [[wiki/concepts/overhead-de-coordenacao-tamanho-de-equipe]] | Mais pessoas gera mais overhead de coordenação — quantidade é frequentemente o oposto de eficiência; headcount vira métrica de vaidade para investidor em ciclos de capital abundante |
+| [[wiki/concepts/cultura-corporativa-vs-manifesto-na-parede]] | "Cultura" como manifesto escrito na parede é majoritariamente marketing de talento; cultura real é comportamento, e muda com liderança, não com o texto oficial |
+| [[wiki/concepts/body-shop-terceirizacao]] | Terceirização de desenvolvimento focada em volume de contratação ("loja de corpos"), sem coesão de equipe — vende júnior a preço de sênior em mercado aquecido |
 | [[wiki/concepts/apego-a-ferramentas]] | Prender-se à primeira ferramenta aprendida é sinal de estagnação, não de expertise — martelo e chave de fenda |
 | [[wiki/concepts/engenheiro-vs-programador]] | Programador executa dentro de um espaço definido; engenheiro questiona a formulação do problema e governa a complexidade — mentalidade, não título |
 | [[wiki/concepts/governanca-de-codigo-gerado-por-ia]] | Quanto mais IA gera código, mais se precisa de engenheiros para governá-lo — metralhadora para quem não sabe mirar |
@@ -542,6 +550,9 @@ date_updated: 2026-08-25
 | [[wiki/concepts/ownership-proativo]] | Puxar responsabilidade por um projeto de alto impacto antes que caia no colo — com clareza prévia do que é sucesso |
 | [[wiki/concepts/contratacao-barra-alta]] | Envolver-se no processo de contratação e filtrar pela pessoa que mais faz bem à empresa — decide o jogo de longo prazo do time |
 | [[wiki/concepts/mentoria-tecnica]] | Sênior que replica conhecimento para júniors acelera o crescimento deles e preserva a cultura técnica ao longo do tempo |
+| [[wiki/concepts/equipe-mista-senior-junior]] | Nem só sêniors, nem só júniors: time ideal é sempre misto — metáfora do pedreiro vs. mestre de obras |
+| [[wiki/concepts/escalabilidade-vertical-vs-horizontal-de-pessoas]] | Sênior que orienta 2-3 júniors multiplica capacidade do time ("escalabilidade horizontal"), em vez de escalar sozinho até um teto |
+| [[wiki/concepts/feedback-continuo-diario]] | Feedback de verdade é diário e específico ("essa linha vai dar problema em produção"), não elogio genérico ("você está indo bem") |
 | [[wiki/concepts/build-in-public]] | Desenvolver um projeto real ao vivo — código, decisões e erros expostos em tempo real — como exposição de conteúdo e prática deliberada de uma tecnologia nova |
 | [[wiki/concepts/one-on-one]] | Reunião individual cara a cara em sala fechada — mecanismo principal para descobrir o que reuniões de status não revelam |
 | [[wiki/concepts/prova-de-conceito]] | Testar tecnologia emergente em protótipo pequeno antes de arriscar produto consolidado — mata a ansiedade sem colocar valor em risco |
@@ -646,6 +657,8 @@ date_updated: 2026-08-25
 | Página | Hook |
 |---|---|
 | [[wiki/concepts/agente-ia]] | Sistema baseado em LLM que executa tarefas autonomamente com loop de ação |
+| [[wiki/concepts/chunking]] | Dividir documento em pedaços menores antes do embedding — o passo que mais determina a qualidade do retrieval em RAG |
+| [[wiki/concepts/elegibilidade-de-chunks]] | Busca vetorial + filtro retorna candidatos, não a resposta certa — threshold de confiança decide o que entra no prompt; zero elegível = recusar responder |
 | [[wiki/concepts/janela-de-contexto]] | Limite de tokens por sessão; o reset é gatilho para token anxiety |
 | [[wiki/concepts/context-compaction]] | Compactação automática do histórico quando a janela enche — perda de nuances inevitável |
 | [[wiki/concepts/llmops]] | Práticas e cultura para operar LLMs e agentes em produção |
@@ -829,6 +842,8 @@ date_updated: 2026-08-25
 | [[wiki/concepts/transistor]] | FinFET tipo N (conduz com 1V) vs. tipo P (conduz com 0V) — o "pino de Lego" que, combinado, implementa o bit físico e toda porta lógica |
 | [[wiki/concepts/cmos]] | Par de transistores N+P sempre opostos — nunca os dois ligados, daí o baixo consumo de energia e a tolerância a ruído do circuito dominante em chips modernos |
 | [[wiki/concepts/celula-padrao]] | A porta lógica física real: inversor (2 transistores), NAND (4), XOR (10) — e a hierarquia até célula macro, núcleo IP e chip completo |
+| [[wiki/concepts/memoria-ram]] | Espaço de trabalho volátil do computador — mais rápida que flash/SSD, perde tudo sem energia; falta de RAM é a causa mais comum de travamento perceptível |
+| [[wiki/concepts/ddr-sdram]] | Evolução DDR1 (2000, 2,5V, 3,2 GB/s) até DDR5 (2021, 1,1V, 38+ GB/s, ECC on-die) — voltagem cai, frequência e buffer de pré-busca dobram a cada geração |
 | [[wiki/concepts/maquina-de-turing]] | Fita infinita + cabeça de leitura/escrita + tabela de transição (Turing, 1936) — o modelo que define o que é computável |
 | [[wiki/concepts/determinismo-vs-nao-determinismo]] | Uma ação por (estado, símbolo) vs. várias — a distinção que origina P vs NP; associação com quântico é simplificação, não equivalência |
 | [[wiki/concepts/complexidade-computacional]] | Eficiência de algoritmos em tempo e espaço (finitos) — Big O como comportamento assintótico; base da segurança criptográfica |
@@ -1292,6 +1307,7 @@ date_updated: 2026-08-25
 | [[wiki/concepts/pepper]] | Segredo do servidor concatenado à senha — defesa se só o banco vazar |
 | [[wiki/concepts/bcrypt]] | CPU-hard clássico (fator de trabalho configurável) — superado por rigs de GPU sem memory-hard |
 | [[wiki/concepts/argon2]] | Estado da arte: CPU-hard + memory-hard — gargalo de VRAM derrota paralelismo de GPU; três fases (hash inicial, preenchimento de matriz, mistura final) |
+| [[wiki/concepts/ataque-online-vs-offline-senha]] | Dois modelos de ameaça de senha — online (rate limit + MFA) vs. offline (hash + salt + pepper); hash/salt/pepper sozinhos não impedem o ataque online |
 | [[wiki/concepts/caesar-cipher]] | Substituição monoalfabética fixa — não é IND-CPA segura, preserva padrão de repetição de caracteres |
 | [[wiki/concepts/scytale]] | Cítala espartana — transposição via bastão de diâmetro específico, anterior à cifra de César |
 | [[wiki/concepts/vigenere-cipher]] | Substituição polialfabética via chave repetida — "cifra indecifrável" por 300 anos, primeiro exemplo histórico de criptografia simétrica |

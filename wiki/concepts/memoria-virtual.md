@@ -3,8 +3,8 @@ type: concept
 title: "Memória Virtual"
 aliases: ["virtual memory", "espaço de endereçamento virtual", "page table", "paging"]
 date_created: 2026-04-22
-date_updated: 2026-06-26
-source_count: 2
+date_updated: 2026-08-26
+source_count: 3
 tags: [sistema-operacional, memória, cs-fundamentals]
 skill: cs-fundamentals
 status: stable
@@ -55,8 +55,10 @@ Cache de traduções recentes (virtual → físico). Quando o [[concepts/context
 - [[concepts/processo]] — cada processo tem sua própria page table
 - [[concepts/context-switch]] — TLB flush é parte do custo da troca entre processos
 - [[concepts/kernel]] — mantém e gerencia as page tables
+- [[wiki/concepts/memoria-ram]] — o recurso físico (RAM DDR) que a memória virtual abstrai e compartilha entre processos
 
 ## Key Sources
 
 - [[sources/sistema-operacional-por-baixo-dos-panos]]
 - [[sources/como-sistemas-operacionais-funcionam]]
+- [[wiki/sources/evolucao-memorias-ram-ddr1-a-ddr5]] — lado físico (voltagem, pinagem, frequência, gerações DDR1–DDR5) da RAM que esta página abstrai via page table/TLB

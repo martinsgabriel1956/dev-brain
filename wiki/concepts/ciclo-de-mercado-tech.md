@@ -3,8 +3,8 @@ type: concept
 title: "Ciclo de Mercado Tech"
 aliases: ["ciclo de abundância e depressão", "lei da oferta e procura em tech", "ciclo de contratação tech"]
 date_created: 2026-07-03
-date_updated: 2026-08-17
-source_count: 9
+date_updated: 2026-08-26
+source_count: 10
 tags: [carreira, mercado-de-trabalho, oferta-e-procura, ciclo-economico]
 skill: tech-mentor-leadership
 status: draft
@@ -78,9 +78,16 @@ Essa lente é complementar, não concorrente, ao mecanismo de oferta/procura de 
 
 [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] observa uma manifestação adicional do ciclo de depressão setorial já documentado em "Frontend Pós-IA": contratações segregadas de front-end, back-end e DevOps estão dando lugar a cargos mesclados de full-stack (focado em back-end, focado em front-end, ou puro), com contratação de front-end especificamente reduzida. Ops e segurança parecem ter se mantido do mesmo tamanho relativo (segurança talvez até crescido). A causa apontada é a mesma comoditização do CRUD simples via IA já documentada na fonte de impacto no mercado de frontend — aqui vista pela ótica de reorganização de cargo, não de nicho de negócio (agência/freelancer vs. plataforma madura).
 
+## Paralelo com a Bolha da Internet (2000-2001) e Contratação Como Métrica de Vaidade
+
+[[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] estende a tese de ciclos com um paralelo histórico direto: no fim dos anos 90 até 2001, programadores (nem todos excepcionais) ganhavam salários "astronômicos", disputados por empresas recebendo investimento sem correlação clara com valor gerado — até o mercado financeiro questionar esse valor e o dinheiro secar, forçando terceirização em massa para a Índia por eficiência de custo. A fonte generaliza o mecanismo: em ciclos de dinheiro fácil, empresas sem lucro/receita como métrica de sucesso usam **contratação (headcount) e número de usuários como métricas substitutas de crescimento** para investidores — o que leva a contratar gente para produzir pouco, só para inflar a operação. Ver [[wiki/concepts/overhead-de-coordenacao-tamanho-de-equipe]] para o mecanismo de por que isso reduz eficiência real, e [[wiki/concepts/body-shop-terceirizacao]] para a manifestação do lado da oferta de mão de obra terceirizada nesse mesmo ciclo aquecido.
+
+A mesma fonte cita, como contraponto histórico, o Google (nascido de restrição de recursos — PageRank + máquinas baratas) versus o Cadê/kd.com.br (diretório manual, dependente de centenas de pessoas cadastrando páginas, inviável sem dinheiro sobrando) — tratado como `[external, não verificado nesta fonte]`, mas coerente com a tese central de que fundação construída sob restrição sobrevive melhor à virada do ciclo do que operação inflada por capital abundante.
+
 ## Key Sources
 
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]]
+- [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] — paralelo com a bolha de 2000-2001, contratação como métrica de vaidade para investidor, contraste Google vs. Cadê
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — concentração de cargos: front-end segregado sendo absorvido por full-stack, mesma causa (CRUD comoditizado) já vista em "Frontend Pós-IA"
 - [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — heurística de defasagem EUA → Brasil; vagas júnior americanas já exigindo fluência com IA, vagas brasileiras ainda não
 - [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]

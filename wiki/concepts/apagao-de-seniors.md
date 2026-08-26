@@ -3,8 +3,8 @@ type: concept
 title: "Apagão de Sêniors"
 aliases: ["apagão de devs sêniors", "senior dev blackout", "escassez de sêniors"]
 date_created: 2026-07-04
-date_updated: 2026-08-19
-source_count: 3
+date_updated: 2026-08-26
+source_count: 4
 tags: [vibe-coding, ia, carreira, fundamentos, senior]
 skill: tech-mentor-ai
 status: stub
@@ -33,8 +33,13 @@ Tese formulada em tweet do "Poker Dev", citada como gatilho em [[wiki/sources/ap
 
 [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] contribui um mecanismo prático de mitigação: com a IA gerando volume de código maior do que qualquer humano consegue revisar linha a linha, o autor relata escrever mais testes automatizados do que nunca, tratando isso como validação determinística — a alternativa a depender só de revisão humana (não escalável) ou revisão de uma IA sobre outra IA (sem garantia). Não resolve o apagão de sêniors capazes de arquitetar, mas reduz um vetor de risco adjacente: bugs estruturais não detectados por volume de código gerado sem cobertura de teste correspondente.
 
+## Manifestação Sem IA: Equipe Só de Júnior por Restrição de Caixa
+
+[[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] descreve uma via causal independente de IA/vibe coding para o mesmo risco de fundo: startups com pouco caixa às vezes apostam tudo em contratar só júnior (barato, "com potencial de crescer rápido"), sem sênior para orientar. O resultado é o mesmo problema estrutural — júnior sem orientação comete erros por falta de experiência, não por incompetência, e não desenvolve o julgamento que só vem de correção prática guiada. Reforça que o "apagão de sêniors" não depende só do vetor vibe coding; qualquer estrutura de time que prive o júnior de mentoria ativa (ver [[wiki/concepts/mentoria-tecnica]] e [[wiki/concepts/equipe-mista-senior-junior]]) alimenta o mesmo risco de longo prazo.
+
 ## Key Sources
 
 - [[wiki/sources/apagao-de-seniors-vibe-coding]]
+- [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] — via causal independente (equipe só de júnior por restrição de caixa, sem vetor de IA)
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — sênior "letrado em IA" como pré-requisito ainda presente na contratação, mesmo com CRUD resolvido
 - [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — testes automatizados como validação determinística contra volume de código gerado por IA maior do que revisão humana consegue cobrir

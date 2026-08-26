@@ -3,8 +3,8 @@ type: concept
 title: "Custo de Capital e Contratação em Tech"
 aliases: ["Selic e vagas de tecnologia", "juros altos e contratação", "custo de capital vs. contratação"]
 date_created: 2026-08-13
-date_updated: 2026-08-13
-source_count: 1
+date_updated: 2026-08-26
+source_count: 2
 tags: [carreira, mercado-de-trabalho, macroeconomia, selic, custo-de-capital, junior, ebitda]
 skill: tech-mentor-leadership
 status: draft
@@ -54,6 +54,11 @@ Essa distinção conecta diretamente com [[wiki/sources/custo-real-ia-tokens-pro
 - Nenhum dado é apresentado sobre em quanto tempo (ou se) o mesmo padrão se repete fora do Brasil — a fonte é explícita em focar no cenário brasileiro, mencionando de passagem que "é um cenário meio global" sem detalhar.
 - A previsão de queda da Selic para um dígito "só por 2028" é citada como expectativa de mercado no momento da gravação, não como fato — sujeita a mudar com dados macroeconômicos futuros.
 
+## Reverso: Quando o Capital é Abundante, Headcount Vira Métrica de Sucesso
+
+[[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] descreve o lado espelhado deste mecanismo: quando o capital é barato/abundante (o oposto do cenário de Selic alta documentado acima), empresas sem lucro/receita como métrica usam **contratação e número de usuários como substitutos de métrica de crescimento** para justificar a próxima rodada de investimento — levando a contratar gente para produzir pouco, só para parecer maior. Isso é coerente com o mecanismo central desta página lido ao contrário: assim como custo de capital alto torna "não contratar" a decisão racional, custo de capital baixo torna "contratar em excesso, mesmo sem necessidade operacional real" a decisão racional do ponto de vista de quem precisa mostrar crescimento a um investidor. Ver [[wiki/concepts/overhead-de-coordenacao-tamanho-de-equipe]] para por que esse excesso de contratação tende a reduzir eficiência.
+
 ## Key Sources
 
 - [[wiki/sources/crise-vagas-tech-juros-altos-nao-e-so-culpa-da-ia]]
+- [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] — mecanismo espelhado: capital abundante torna headcount métrica de vaidade para investidor

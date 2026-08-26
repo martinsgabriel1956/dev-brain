@@ -3,8 +3,8 @@ type: concept
 title: "Hashing"
 aliases: ["hashing", "hash", "função hash", "hash criptográfico"]
 date_created: 2026-04-29
-date_updated: 2026-07-28
-source_count: 3
+date_updated: 2026-08-26
+source_count: 4
 tags: [hashing, segurança, senhas, integridade, criptografia, sha256, bcrypt, argon2]
 skill: tech-mentor-security
 status: stable
@@ -68,3 +68,4 @@ Ver [[concepts/password-hashing]] para a visão completa do problema.
 - [[sources/autenticacao-segura]]
 - [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
 - [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]
+- [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — analogia hashmap (rápido) vs. hash de senha (lento de propósito)

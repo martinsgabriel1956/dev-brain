@@ -3,8 +3,8 @@ type: concept
 title: "Transistor"
 aliases: ["FinFET", "transistor tipo N", "transistor tipo P", "gate/canal/dielétrico"]
 date_created: 2026-08-25
-date_updated: 2026-08-25
-source_count: 1
+date_updated: 2026-08-26
+source_count: 2
 tags: [cs-fundamentals, hardware, transistor, finfet, cmos]
 skill: cs-fundamentals
 status: stub
@@ -47,7 +47,9 @@ A transição de estado de um transistor individual — e a lógica completa de 
 - [[wiki/concepts/celula-padrao]] — a menor combinação útil de transistores (inversor = 2, NAND = 4, XOR = 10)
 - [[wiki/concepts/sistema-binario-bit-byte]] — o bit físico (0V/1V) que o transistor implementa é a base de toda representação binária
 - [[wiki/concepts/logica-booleana]] — as portas AND/OR/NOT que redes de transistores implementam fisicamente
+- [[wiki/concepts/ddr-sdram]] — cada célula de DRAM (a base física da RAM) é um único transistor + capacitor por bit; a evolução geracional DDR muda interface/voltagem/frequência, não essa célula elementar
 
 ## Key sources
 
 - [[wiki/sources/como-transistores-formam-portas-logicas-celulas-padrao-cmos]] — anatomia do FinFET, comportamento tipo N vs. tipo P, e a analogia "transistor = pino de Lego"
+- [[wiki/sources/evolucao-memorias-ram-ddr1-a-ddr5]] — aplicação do transistor como célula de armazenamento em DRAM, contexto da evolução DDR1–DDR5

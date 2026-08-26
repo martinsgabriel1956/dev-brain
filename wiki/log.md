@@ -2,6 +2,58 @@
 
 ---
 
+## [2026-08-26] ingest | Armazenamento Seguro de Senhas: Hashing, Salting e Peppering (Galego)
+
+**Fonte:** [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — transcrição de vídeo fornecida pelo usuário em português (sem necessidade de tradução), publicidade inicial (cadeira SF, cupom "galego") removida do corpo, formatada em Markdown por seção temática e salva em `raw/armazenamento-seguro-de-senhas-hash-salt-pepper-galego.md`. Autoria atribuída a [[wiki/entities/augusto-galego]] por autorreferência direta no cupom.
+
+**Skill carregada:** `tech-mentor-security` (path real desta máquina: `/home/gabriel-martins/Documentos/skills/tech-mentor-security/`; o `/home/nemomartins/Documentos/new/skills/` citado no `CLAUDE.md` não existe — skill drift já documentado em ingestões anteriores) — `references/crypto.md` consultado para calibrar terminologia de hashing de senha (bcrypt/Argon2, regra de nunca implementar cripto própria) e `references/appsec-authn-authz.md`/`identity-iam.md` indicados no índice da skill para IAM/identity provider, usados como referência de nomenclatura para o novo conceito de terceirização.
+
+**Arquivos criados:**
+- `raw/armazenamento-seguro-de-senhas-hash-salt-pepper-galego.md` — transcrição formatada em Markdown
+- `wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego.md` — TL;DR, 8 key claims, conceitos/entidades tocados, conexão explícita com a fonte já existente sobre o mesmo tema (Renato Augusto), open questions, raw quotes
+- `wiki/concepts/ataque-online-vs-offline-senha.md` (stub) — os dois modelos de ameaça de senha como eixo organizador de qual defesa resolve qual problema (rate limit/MFA vs. hash/salt/pepper)
+- `wiki/concepts/identity-provider-terceirizacao-autenticacao.md` (stub) — escada de terceirização de autenticação em 4 níveis (lib → framework Better Auth → identity provider Clerk/Auth0/Cognito → passwordless)
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/hashing.md` — `source_count` 3 → 4; nova linha em Key Sources
+- `wiki/concepts/salt.md` — `source_count` 3 → 4; nova linha em Key Sources
+- `wiki/concepts/pepper.md` — `source_count` 2 → 3; nova seção "Risco Operacional de Tudo-ou-Nada"; nova linha em Key Sources
+- `wiki/concepts/argon2.md` — `source_count` 2 → 3; nova linha em Key Sources
+- `wiki/concepts/password-hashing.md` — `source_count` 5 → 6; duas novas linhas em "Ver também"; nova linha em Key Sources
+- `wiki/concepts/mfa-multifator-autenticacao.md` — `source_count` 2 → 3; nova seção "MFA como Defesa do Ataque Online"; nova linha em Key Sources
+- `wiki/concepts/rate-limiting.md` — `source_count` 8 → 9; nova seção "Rate Limit como Defesa do Ataque Online a Senha"; nova linha em Key Sources
+- `wiki/entities/augusto-galego.md` — `source_count` 11 → 12; nova seção "Conteúdo Introdutório de Segurança: Armazenamento de Senhas"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (Autenticação & Identidade; Segurança de APIs & Arquitetura)
+
+**Notas / open questions:** (1) Esta fonte cobre essencialmente o mesmo território técnico que [[wiki/sources/seguranca-armazenamento-senhas-banco-de-dados]] (Renato Augusto) — plaintext → hash → salt → pepper/Argon2 — sem nenhuma contradição encontrada; os dois ângulos genuinamente novos são a distinção explícita online/offline como eixo organizador, e a escada de recomendação prática nomeando Clerk/Auth0/Cognito/Better Auth, nenhum dos quais tinha página própria antes desta ingestão. (2) "Better Auth" é citado no áudio como "Better Off" — assumido erro de transcrição/pronúncia e corrigido para o nome real do framework; sinalizado como open question na fonte caso o usuário aponte outro nome. (3) `date_published` do vídeo não identificado na transcrição, deixado em branco no frontmatter da fonte. (4) Skill drift confirmado novamente: caminho de skills do `CLAUDE.md` não existe nesta máquina; usado o caminho real (`/home/gabriel-martins/Documentos/skills/`).
+
+---
+
+## [2026-08-26] ingest | RAG — Introdução e Pipeline Completo
+
+**Fonte:** [[wiki/sources/rag-introducao-pipeline-completo]] — transcrição de aula/vídeo (estilo Full Cycle) fornecida pelo usuário em português (sem necessidade de tradução), formatada em Markdown com títulos por seção temática e salva em `raw/rag-introducao-pipeline-completo.md`. Nível introdutório/pedagógico — explica RAG do zero, cobrindo o mesmo domínio já tratado em profundidade por [[wiki/sources/rag-retrieval]], sem contradição, apenas granularidade menor.
+
+**Skill carregada:** `tech-mentor-ai` (path real desta máquina: `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/`; o `/home/nemomartins/Documentos/new/skills/` citado no `CLAUDE.md` não existe — skill drift já documentado em ingestões anteriores) — `references/ai/fundamentals.md` (seção "RAG — Retrieval Augmented Generation", que o próprio índice da skill aponta como cobertura do RAG básico) usada para confirmar terminologia; `references/ai/rag-advanced.md` consultado por contraste para calibrar o que já está coberto em nível avançado na wiki.
+
+**Arquivos criados:**
+- `raw/rag-introducao-pipeline-completo.md` — transcrição formatada em Markdown
+- `wiki/sources/rag-introducao-pipeline-completo.md` — TL;DR, 6 blocos de key claims, entidades/conceitos tocados, conexão com `rag-retrieval` e `alucinacao-llm`, open questions
+- `wiki/concepts/chunking.md` (stub) — divisão de documento em pedaços, o que cada chunk carrega (ID, texto cru, metadados, embedding), problema de descontextualização
+- `wiki/concepts/elegibilidade-de-chunks.md` (stub) — busca vetorial + filtro retorna candidatos, não a resposta certa; threshold de confiança; recusar responder quando nenhum chunk é elegível
+
+**Páginas atualizadas (backlink + frontmatter, `date_updated` → 2026-08-26):**
+- `wiki/concepts/rag-arquitetura-avancada.md` — `source_count` 1 → 2; nova seção "RAG Básico Também é Arquitetura"; nova linha em Key Sources
+- `wiki/concepts/agente-ia.md` — `source_count` 6 → 7; nova seção "RAG Não É Agente de IA"; nova linha em Key Sources
+- `wiki/concepts/alucinacao-llm.md` — `source_count` 3 → 4; nova seção "Elegibilidade de Chunks Como Gatilho de Recusa"; nova linha em Key Sources
+- `wiki/concepts/postgresql.md` — `source_count` 8 → 9; nova seção "PG Vector Como Ponto de Entrada para RAG"; nova linha em Key Sources
+- `wiki/entities/full-cycle.md` — `source_count` 4 → 5; nova linha em Key sources
+- `wiki/sources/rag-retrieval.md` — `source_count` 2 → 3; nova linha em Key Sources cruzando com esta fonte introdutória
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (seção "Agentes & LLMOps")
+
+**Notas / open questions:** (1) **Sem contradição com o resto da wiki** — a fonte é estritamente introdutória e reforça, em vocabulário mais simples, claims já documentados em [[wiki/concepts/rag-arquitetura-avancada]] e [[wiki/concepts/alucinacao-llm]]; nenhum claim novo entra em conflito. (2) **Contribuição original não coberta antes**: a distinção explícita "RAG ≠ agente de IA" (chamar um modelo com contexto injetado é uma consulta de API, não um agente) não estava articulada em nenhuma página existente — foi o principal motivo de tocar `agente-ia.md`. (3) **`wiki/sources/rag-retrieval.md` tinha `source_count` no padrão de página de conceito (contando os próprios Key Sources) em vez de `0` como as demais páginas `type: source`** — inconsistência pré-existente, não corrigida aqui (fora do escopo deste ingest; mantive o padrão já presente no arquivo ao incrementar). (4) **Broken links pré-existentes não corrigidos**: `wiki/sources/rag-retrieval.md` já linkava `[[concepts/chunking]]`, `[[concepts/hybrid-search]]`, `[[concepts/reranking]]`, `[[concepts/hyde]]`, `[[concepts/contextual-retrieval]]`, `[[concepts/graphrag]]` e `[[concepts/hnsw]]` sem esses arquivos existirem, e a própria página não estava listada em `wiki/index.md`. Este ingest cria e linka corretamente `chunking.md` (fechando parte do gap), mas os demais seguem quebrados — candidato a `wiki/questions/` ou a uma sessão de lint dedicada.
+
+---
+
 ## [2026-08-25] ingest | Race Condition: Locking Pessimista, Controle de Concorrência Otimista e Reservations
 
 **Fonte:** [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] — transcrição de vídeo em pt-BR fornecida diretamente pelo usuário (já em português, sem necessidade de tradução), formatada em Markdown com títulos por seção temática (exemplos, três estratégias, demonstração em código, framework de decisão, erros de entrevista, teaser) e salva em `raw/race-condition-locking-pessimista-otimista-reservations-tier-s.md`. Sexto vídeo da série Tier S de [[wiki/entities/pedro-camaforte]], que começou com [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] (já na wiki).
@@ -8309,3 +8361,54 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha em Sources; 3 novas linhas em Concepts (seção "Fundamentos de CS"); 2 novas linhas em Entities
 
 **Notas / open questions:** (1) **Achado central: primeira fonte da wiki a abrir a "caixa-preta" do hardware sob o bit e a porta lógica.** `sistema-binario-bit-byte.md` e `logica-booleana.md` já afirmavam, de forma abstrata, que bits são implementados "por componentes como transistores" e que "processadores reais usam NAND por eficiência de fabricação" — esta fonte é a primeira a mostrar exatamente *como* (anatomia gate/canal/dielétrico, tipo N vs. tipo P, contagem exata de transistores por porta) e *por quê* (NAND = 4 transistores vs. AND = 6). Nenhuma contradição encontrada — a fonte só concretiza afirmações que já estavam na wiki de forma mais vaga. (2) **Três conceitos novos criados como stubs deliberadamente enxutos** (`transistor`, `cmos`, `celula-padrao`) — o vídeo é rico o bastante para sustentar três páginas separadas em vez de uma só, seguindo a regra "um conceito por página"; a hierarquia célula-padrão → célula-macro → núcleo IP → chip ficou concentrada em `celula-padrao.md` para não fragmentar demais. (3) **Lacuna registrada como open question na fonte**: o vídeo explicitamente adia para um vídeo futuro do mesmo canal a explicação de como essas portas lógicas implementam operações aritméticas (soma, multiplicação) — watch-list para uma ingestão futura se/quando esse vídeo for adicionado a `raw/`. (4) **Touch count menor que o usual (10 páginas ao todo, incluindo índice/log)** — domínio de hardware/circuitos ainda tem poucas páginas-irmãs na wiki (só `sistema-binario-bit-byte`, `logica-booleana` e `export-controls-chips-ia` tocam o tema de forma adjacente), então o grafo de conexões pré-existente é naturalmente mais raso que em tópicos de backend/system design já bem povoados.
+
+---
+
+## [2026-08-26] ingest | A Evolução Completa das Memórias RAM: DDR1 até DDR5
+
+**Fonte:** [[wiki/sources/evolucao-memorias-ram-ddr1-a-ddr5]] — transcrição de vídeo fornecida pelo usuário em português (sem necessidade de tradução), formatada e salva em `raw/evolucao-memorias-ram-ddr1-a-ddr5.md`. Autor/canal não identificado na transcrição.
+
+**Skill carregada:** `cs-fundamentals`, referência `references/hardware-for-engineers.md` — mesma skill usada em `como-transistores-formam-portas-logicas-celulas-padrao-cmos.md`. O diretório `/home/nemomartins/Documentos/new/skills/` citado no `CLAUDE.md` não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/` (skill drift já documentado em ingestões anteriores). Observação: a referência de hardware da skill é focada em otimização para engenheiros de software (cache lines, NUMA, TLB) e não cobre especificações de gerações DDR — usada apenas para calibrar terminologia/framing de hardware; o conteúdo técnico da fonte (voltagem, pinagem, frequência por geração) não tinha cobertura prévia em nenhuma referência da skill.
+
+## [2026-08-26] ingest | Organizando Equipes de Tecnologia — Fábio Akita
+
+**Fonte:** [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] — transcrição de vídeo/entrevista fornecida pelo usuário (ASR em português, garbled em vários trechos), reorganizada e pontuada para leitura, salva em `raw/organizando-equipes-de-tecnologia-fabio-akita.md`. Identidade do entrevistado (Fábio Akita) confirmada por detalhe biográfico já documentado na wiki (consultoria na unificação de sistemas Vivo/Claro/Petrobras, ~2002). Interlocutor não identificado com certeza.
+
+**Skill carregada:** `tech-mentor-leadership`, referências `references/technical-mentoring.md`, `references/leadership/engineering-hiring.md` e `references/leadership/engineering-culture.md`. O diretório `/home/nemomartins/Documentos/new/skills/` citado no `CLAUDE.md` não existe nesta máquina; usado o caminho real `/home/gabriel-martins/Documentos/skills/` (skill drift consistente com ingestões anteriores). A referência de mentoria validou o enquadramento de feedback/orientação já usado na wiki (modelo SBI, método socrático); a referência de cultura contribuiu o enquadramento "cultura é o que acontece quando ninguém está olhando" (cultura declarada vs. cultura real), marcado como `[skill: tech-mentor-leadership]` em `cultura-corporativa-vs-manifesto-na-parede.md`.
+
+**Arquivos criados:**
+- `raw/organizando-equipes-de-tecnologia-fabio-akita.md` — transcrição limpa em Markdown
+- `wiki/sources/organizando-equipes-de-tecnologia-fabio-akita.md` — TL;DR, 7 key claims, conceitos tocados, open questions, raw quotes
+- `wiki/concepts/equipe-mista-senior-junior.md` (stub) — nem só sênior, nem só júnior: metáfora pedreiro vs. mestre de obras
+- `wiki/concepts/escalabilidade-vertical-vs-horizontal-de-pessoas.md` (stub) — sênior orientando júniors como multiplicador de capacidade de time
+- `wiki/concepts/feedback-continuo-diario.md` (stub) — feedback diário e específico vs. elogio vazio
+- `wiki/concepts/overhead-de-coordenacao-tamanho-de-equipe.md` (stub) — quantidade de pessoas como oposto de eficiência; headcount como métrica de vaidade
+- `wiki/concepts/cultura-corporativa-vs-manifesto-na-parede.md` (stub) — cultura como manifesto de marketing vs. comportamento real
+- `wiki/concepts/body-shop-terceirizacao.md` (stub) — terceirização de desenvolvimento por volume ("loja de corpos")
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/entities/fabio-akita.md` — `source_count` 6 → 7; nova seção "Visão sobre Organização de Equipes de Tecnologia"; nova linha em Key Sources
+- `wiki/concepts/ciclo-de-mercado-tech.md` — `source_count` 9 → 10; nova seção sobre paralelo com a bolha da internet (2000-2001) e contratação como métrica de vaidade; contraste Google vs. Cadê
+- `wiki/concepts/custo-de-capital-e-contratacao-tech.md` — `source_count` 1 → 2; nova seção sobre o mecanismo espelhado (capital abundante → headcount como métrica de vaidade)
+- `wiki/concepts/contratacao-barra-alta.md` — `source_count` 2 → 3; nova seção sobre "pedir 5 sêniors" como diagnóstico errado da necessidade
+- `wiki/concepts/mentoria-tecnica.md` — `source_count` 7 → 8; nova seção sobre mentoria como filtro de opções (sênior já testou 20, sabe que só 2 valem a pena)
+- `wiki/concepts/apagao-de-seniors.md` — `source_count` 3 → 4; nova seção sobre via causal independente de IA (equipe só de júnior por restrição de caixa)
+- `wiki/concepts/vaga-junior-vira-pleno.md` — `source_count` 5 → 6; nova seção contrastando com o fenômeno de sinal oposto (júnior vendido a preço de sênior em mercado aquecido)
+- `wiki/index.md` — nova linha em Sources; 6 novas linhas em Concepts
+
+**Notas / open questions:** (1) Data/contexto exato da gravação é incerto — falas sobre pandemia e promessa de relocação sugerem ~2020-2021, não afirmado explicitamente; vale reconfirmar se o usuário souber a data/canal original. (2) O contraste Google vs. Cadê (kd.com.br) foi citado de memória pelo autor, sem fonte primária dentro da própria fala — marcado `[external, não verificado]` na fonte e nas páginas que o citam; vale checagem cruzada externa antes de tratar como fato consolidado. (3) Nenhuma contradição encontrada com o que já estava registrado na wiki — esta fonte principalmente **complementa e cruza** teses já existentes (`ciclo-de-mercado-tech`, `custo-de-capital-e-contratacao-tech`, `mentoria-tecnica`, `apagao-de-seniors`, `vaga-junior-vira-pleno`) com um ângulo novo (organização de equipes) e três conceitos genuinamente novos (mix de senioridade, overhead de coordenação, cultura vs. manifesto). (4) Skill drift confirmado novamente: caminho do `CLAUDE.md` não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+**Arquivos criados:**
+- `raw/evolucao-memorias-ram-ddr1-a-ddr5.md` — transcrição formatada em Markdown
+- `wiki/sources/evolucao-memorias-ram-ddr1-a-ddr5.md` — TL;DR, 10 key claims, conceitos tocados, conexão com o restante da wiki, open questions, raw quotes
+- `wiki/concepts/memoria-ram.md` (stub) — conceito geral de RAM como memória de trabalho volátil
+- `wiki/concepts/ddr-sdram.md` (draft) — tabela comparativa DDR1–DDR5, o que mudou geração a geração, trade-off latência vs. largura de banda
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/memoria-virtual.md` — `source_count` 2 → 3; novo link de relação para `memoria-ram`; nova linha em Key Sources
+- `wiki/concepts/swap.md` — `source_count` 2 → 3; novo link de relação para `memoria-ram`; nova linha em Key Sources
+- `wiki/concepts/memoria-flash.md` — `source_count` 1 → 2; nova seção "Flash vs. RAM" contrastando volatilidade e latência; nova linha em Key Sources
+- `wiki/concepts/transistor.md` — `source_count` 1 → 2; novo link de relação para `ddr-sdram` (célula DRAM = transistor + capacitor); nova linha em Key sources
+- `wiki/index.md` — nova linha em Sources; 2 novas linhas em Concepts (seção "Fundamentos de CS")
+
+**Notas / open questions:** (1) **Primeira fonte da wiki dedicada à evolução histórica/especificação de RAM DDR.** A wiki já cobria o lado de sistema operacional da memória (`memoria-virtual`, `swap`, TLB, page fault) e o lado de física do transistor (`transistor`, `cmos`, `celula-padrao`), mas faltava a camada intermediária de hardware puro — voltagem, pinagem, frequência, geração de módulo. Esta fonte preenche exatamente essa lacuna, sem contradizer nada já registrado. (2) **Dois conceitos novos**: `memoria-ram` (geral, guarda-chuva) e `ddr-sdram` (específico, a tabela comparativa das 5 gerações) — separados seguindo a regra "um conceito por página", já que o segundo é denso o bastante (tabela + trade-offs) para sustentar página própria. (3) **Fonte sem autor/canal identificado e sem URL** — registrado como open question; se o usuário tiver o link original, vale complementar o frontmatter depois. (4) **Skill drift confirmado novamente**: caminho de skills do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado o caminho real (`/home/gabriel-martins/Documentos/skills/`), consistente com ingestões anteriores de hardware.
