@@ -3,9 +3,9 @@ type: concept
 title: "Linguagem C"
 aliases: ["C", "C language", "linguagem C como fundação"]
 date_created: 2026-08-13
-date_updated: 2026-08-13
-source_count: 1
-tags: [cs-fundamentals, linguagens, aprendizado, fundamentos, performance]
+date_updated: 2026-08-27
+source_count: 2
+tags: [cs-fundamentals, lang-systems, linguagens, aprendizado, fundamentos, performance, baixo-nivel]
 skill: cs-fundamentals
 status: stub
 ---
@@ -31,6 +31,10 @@ A hash table de dezenas de linhas escrita em C na semana 5 do CS50 vira um dicio
 
 C ainda figura no topo dos rankings de onipresença de linguagens (número 1 ou 2 em alguns, ano após ano) por ser **altamente performática**, ainda que mais difícil de escrever que linguagens modernas. Mas seu valor no ensino não está no uso diário: Malan usa C só ~5 semanas por ano. O valor está nos princípios extraídos dela — a distinção "[[wiki/concepts/sintaxe-vs-conhecimento-perene|não precisar usar ≠ não precisar saber]]".
 
+## C como pré-requisito obrigatório para baixo nível em geral
+
+Em [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]], a defesa de C vai além do valor pedagógico: é apresentada como **exigência prática** para qualquer projeto real de baixo nível, não apenas como andaime de ensino. "Você não vai trabalhar num projeto de baixo nível sem saber C" — mesmo quem usa Rust, Zig ou C++ no dia a dia precisa dominar C (ponteiros, ponteiros de função, arrays, alocação de memória), porque é a base da maioria dos cursos, materiais e sistemas (kernels, drivers) da área. A fonte recomenda C como primeira linguagem de estudo antes de avançar para [[wiki/concepts/arquitetura-de-computadores]], [[wiki/concepts/sistemas-operacionais]] e [[wiki/concepts/sistemas-embarcados]].
+
 ## Relações
 
 - [[wiki/concepts/ponteiros-cpp-stack-heap-raii]] — ponteiros e stack vs. heap, conceitos que C expõe crus
@@ -40,3 +44,4 @@ C ainda figura no topo dos rankings de onipresença de linguagens (número 1 ou 
 ## Key sources
 
 - [[wiki/sources/por-que-comecar-com-c-em-2026-cs50-david-malan]] — C como fundação pedagógica; construir as próprias estruturas de dados; andaime para Python
+- [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] — C como exigência prática (não só pedagógica) para qualquer projeto de baixo nível

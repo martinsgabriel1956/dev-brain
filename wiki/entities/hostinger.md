@@ -3,8 +3,8 @@ type: entity
 title: "Hostinger"
 aliases: ["Hostinger VPS"]
 date_created: 2026-07-21
-date_updated: 2026-08-19
-source_count: 7
+date_updated: 2026-08-27
+source_count: 8
 tags: [tech-mentor-infra, vps, hosting, patrocinio, coolify]
 skill: tech-mentor-ai
 status: stub
@@ -28,8 +28,11 @@ Também citada (quinto bloco patrocinado) em [[wiki/sources/code-review-morreu-u
 
 Também citada (sexto bloco patrocinado) em [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]]: reforça o padrão de deploy de um clique já documentado (Claude Code 24x7, Codex, n8n, Docker) e acrescenta produtos ainda não citados na wiki para a Hostinger — **Horizons** (criação de MVP com IA, com banco de dados, usado pelo canal num hackathon) e um **serviço de GPU em lista de espera** (treino/inferência de modelos). Cita também "openla" (nome provavelmente mal transcrito) e **Hermes Agent** como agentes disponíveis, e o **Dokploy** (não confundir com o Coolify já citado em fontes anteriores — são PaaS self-hosted distintos, ambos com deploy de um clique na Hostinger) como ferramenta usada pelo próprio canal para gerenciar containers.
 
+Também citada (não em bloco patrocinado, uso real demonstrado) em [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]], por [[wiki/entities/lucas-montano]]: destino de um deploy de landing page em staging feito inteiramente por um [[wiki/concepts/loop-engineering|loop]] agêntico via [[wiki/concepts/mcp-server|MCP]] (chave de API gerada na própria Hostinger), incluindo o agente resetando e reconfigurando a VPS do zero após um problema de configuração, e configurando Nginx como proxy reverso — tudo em ~20 minutos.
+
 ## Key Sources
 
+- [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] — deploy de landing page em staging via MCP da Hostinger dentro de um loop agêntico, incluindo reset/reconfiguração da VPS pelo próprio agente
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]]
 - [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — plano KVM2, deploy de um clique de Claude Code/Codex CLI/N8N/Docker, cupom "Lucas Montano"
 - [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]]

@@ -3,8 +3,8 @@ type: concept
 title: "Quality Gate"
 aliases: ["quality gates", "portão de qualidade", "gate de qualidade", "análise estática em pull request"]
 date_created: 2026-07-16
-date_updated: 2026-08-11
-source_count: 7
+date_updated: 2026-08-27
+source_count: 9
 tags: [quality-gate, linter, analise-estatica, clean-code, modularizacao, ia, milestone, criterios-de-qualidade, ratchet, babysitting-de-agentes, branch-protection]
 skill: tech-mentor-testing
 status: draft
@@ -73,8 +73,18 @@ A fonte enquadra essas quatro técnicas como a resposta prática ao mesmo proble
 
 [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] adiciona a camada de decisão humana *acima* do gate: um gate verde é condição necessária mas não suficiente para dispensar leitura. A fonte propõe a [[wiki/concepts/matriz-risco-dificuldade-review-ia|matriz risco × dificuldade]] para decidir, PR a PR, se o resultado binário do gate basta (baixo risco → merge automático desde que haja teste), se exige amostragem (risco médio), ou se ainda precisa de revisão humana em pares (alto risco: auth, pagamentos, migração de banco). A mesma fonte relata o Quality Gate de [[wiki/entities/lucas-montano]] — [[wiki/concepts/ratchet-baseline|baseline]] congelada + agente em babysitting + revisor de IA lendo o `CLAUDE.md`/`review.md` do projeto — como instância prática desta página, ecoando [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]].
 
+## Clean Code Não Morreu, Migrou Para o Gate
+
+[[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] contra-argumenta diretamente a tese de que "Clean Code virou irrelevante" com a IA escrevendo o código: o conhecimento de Clean Code não desapareceu, migrou de disciplina manual (escrever bem) para critério verificável automaticamente (microbenchmarks + análise estática determinística, tipo SonarQube, rodando em CI antes do merge). O ponto central da fonte: isso não é "IA revisando IA" — é o dev escrevendo o próprio gate que audita o que a IA produziu, o que ainda exige entender os princípios do livro pra saber o que codificar como regra.
+
+## O Gate Como Condição de Parada de um Loop Noturno
+
+[[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] descreve o mesmo mecanismo aplicado a um [[wiki/concepts/loop-engineering|loop]] agêntico rodando sem supervisão em tempo real: o gate (testes passando, build sem erro, lint zerado, diff de print via Playwright) é o que decide, volta a volta, se o agente comita ou corrige — sem esse resultado binário e verificável, "o loop passa a noite inteira produzindo lixo com total confiança de que está indo bem". Critérios subjetivos como "deixa mais bonito" são explicitamente descartados como não verificáveis, reforçando a exigência de critério de entrada/saída explícito já documentada acima na visão de Schneider.
+
 ## Key Sources
 
+- [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — Clean Code como fonte dos critérios codificados no gate, não como disciplina de quem escreve o código à mão
+- [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] — gate como condição de parada verificável de um loop noturno sem supervisão
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]]
 - [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — matriz risco × dificuldade como camada de decisão acima do gate; Quality Gate de Lucas Montano com baseline e babysitting
 - [[wiki/sources/gate-de-qualidade-definicoes-formais]] — definições formais da literatura (checklist/aprovação por gate, milestone com critérios pré-definidos, ponto de verificação de Schneider) e características estruturais (critérios de entrada/saída, disparo por critério não por data, resultado binário, gates em paralelo)

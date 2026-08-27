@@ -3,8 +3,8 @@ type: concept
 title: "Read Replicas"
 aliases: ["réplica de leitura", "read replica", "replica routing"]
 date_created: 2026-04-22
-date_updated: 2026-08-24
-source_count: 8
+date_updated: 2026-08-27
+source_count: 9
 tags: [banco-de-dados, escalabilidade, read-replicas, postgresql, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -51,9 +51,14 @@ Read replicas são o mecanismo concreto por trás do read/write split usado em [
 
 [[wiki/sources/world-cup-system-design]] mostra um Web Server que consulta **réplicas de leitura** (`Replica 1`, `Replica 2`) diretamente para as rotas de histórico e estatística (`/matches/{id}/statistic`, `/team/{id}/history`, `/player/{id}/history`) — dados que não mudam a cada segundo e toleram alguma defasagem — enquanto o placar ao vivo (`/matches/{id}/stream`) segue um caminho totalmente separado via [[wiki/concepts/redis]]. É uma divisão de responsabilidade por volatilidade do dado: o que muda a cada evento vai para cache pré-computado; o que muda pouco (histórico consolidado) vai para réplica de banco relacional.
 
+## Réplicas Preservam Schema — Diferença Chave Frente a Eventos
+
+[[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] marca uma distinção explícita entre as duas formas mais comuns de consistência eventual em CQRS: com read replicas, o read model **preserva exatamente o schema** da base de escrita (mesmas tabelas, colunas, esquema); com sincronização via eventos, o query service pode transformar a informação livremente no formato final que quiser ao consumir (ex.: escrita relacional → leitura em Elasticsearch). Read replicas são, portanto, a opção mais simples quando o objetivo é só volume — não quando o objetivo também inclui divergência de modelo.
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
+- [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] — read replicas como opção de consistência eventual no CQRS que preserva o schema da escrita, em contraste com eventos (que permitem transformação livre do modelo)
 - [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — read replicas como base do read/write split em CQRS, com replication lag estimado em 1-3s
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — distinção explícita entre read replica (escala leitura) e sharding (escala leitura e escrita)

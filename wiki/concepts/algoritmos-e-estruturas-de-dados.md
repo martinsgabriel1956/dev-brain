@@ -3,8 +3,8 @@ type: concept
 title: "Algoritmos e Estruturas de Dados"
 aliases: ["DSA", "data structures", "estruturas de dados", "algoritmos"]
 date_created: 2026-05-16
-date_updated: 2026-08-25
-source_count: 16
+date_updated: 2026-08-27
+source_count: 17
 tags: [fundamentos, cs-fundamentals, algoritmos, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -86,6 +86,10 @@ Cada estrutura tem sua própria página com complexidade, analogias e quando usa
 - [[pilha]] — LIFO; operações de undo, call stack
 - [[arvore]] — O(log n); hierarquia, índices de banco de dados
 
+## DSA como pré-requisito específico para baixo nível
+
+[[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] reforça a fundação de DSA para quem migra de linguagens de alto nível (React, JavaScript, Python) para [[wiki/concepts/linguagem-c|C]] e programação de baixo nível: sem `.sort()` pronto ou bibliotecas de estruturas prontas, a falta dessa base vira gargalo imediato — o exemplo dado é não conseguir sequer reconhecer ou resolver detecção de ciclo em grafo. Cita **Cormen** ("a Bíblia", denso e difícil de ler), **"Entendendo Algoritmos"** (bem avaliado por terceiros) e a **Univesp** (aulas gratuitas) como fontes de estudo.
+
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]] — afirmação de que DSA é o que separa amadores de profissionais; por que linguagens modernas escondem essas estruturas; sequência de aprendizado
@@ -105,3 +109,4 @@ Cada estrutura tem sua própria página com complexidade, analogias e quando usa
 - [[wiki/sources/como-ficar-bom-em-leetcode]] — lista das estruturas que "cobrem quase tudo" (array, linked list, queue, stack, binary tree, hash map, graph) e o loop estrutura→padrão→repetição para dominá-las; ênfase em implementar cada uma por conta própria
 - [[wiki/sources/por-que-comecar-com-c-em-2026-cs50-david-malan]] — David Malan (CS50): construir as próprias estruturas (hash tables, listas ligadas, tries, árvores, pilhas, filas) em [[wiki/concepts/linguagem-c|C]] porque a linguagem não as oferece prontas; valor não é reusar a implementação, mas entender design e diagnóstico por primeiros princípios
 - [[wiki/sources/busca-binaria-fila-protocolos-atendimento-live-coding]] — busca (passo 3) resolvida "no papel" com o chat, sem código, num exemplo do mundo real (fila de protocolos de atendimento), com leitura direta do livro *Entendendo Algoritmos*
+- [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] — DSA como pré-requisito inegociável para migrar de linguagens de alto nível para baixo nível; Cormen, "Entendendo Algoritmos" e Univesp como fontes de estudo

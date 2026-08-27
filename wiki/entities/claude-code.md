@@ -3,8 +3,8 @@ type: entity
 title: "Claude Code"
 aliases: ["claude code cli"]
 date_created: 2026-05-18
-date_updated: 2026-08-05
-source_count: 14
+date_updated: 2026-08-27
+source_count: 15
 tags: [ferramenta, agentes-ia, anthropic, llmops, cli, mcp, hooks]
 skill: tech-mentor-ai
 status: stable
@@ -117,8 +117,13 @@ O mecanismo de [[context-compaction]] da janela de contexto do Claude Code é um
 
 [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] cita o Claude Code, ao lado do Cursor e do Lovable, como uma das ferramentas usadas para construir do zero a loja fictícia posteriormente comprometida por um pentester (`.env` exposto → [[wiki/concepts/idor]] → [[wiki/concepts/account-takeover]] → RCE). Uso apenas mencionado como exemplo de ferramenta de vibe coding, sem detalhamento técnico de como especificamente o Claude Code gerou o código vulnerável — contraste direto com o uso documentado logo acima, onde o mesmo agente foi usado deliberadamente como guia de segurança em vez de gerador autônomo.
 
+## Claim Não Verificado: Open Source Após Vazamento na Anthropic
+
+[[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] afirma que o Claude Code se tornou open source no GitHub depois de um vazamento na Anthropic — o código do harness completo construído em volta dos modelos Claude estaria publicamente disponível para clonar e adaptar. **Confiança: não verificado nesta ingestão** — nenhuma outra fonte já presente na wiki confirma este claim, e a fonte não cita data, escopo (código completo vs. parcial) ou link do repositório. Tratar como afirmação do autor do vídeo até confirmação por fonte primária (anúncio oficial da Anthropic ou o próprio repositório).
+
 ## Key Sources
 
+- [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] — claim não verificado de ter se tornado open source no GitHub após um vazamento na Anthropic; citado como exemplo de meio-termo de controle de harness (entre Cursor e OpenClaw)
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — autopentest guiado (autenticação, IDOR, CSRF, XSS/SQLi, rate limiting, secrets, dependências); método de seis passos para prompt de segurança
 - [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] — citado como uma das ferramentas de vibe coding usadas para construir a aplicação posteriormente comprometida
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]

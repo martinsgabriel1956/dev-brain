@@ -3,8 +3,8 @@ type: concept
 title: "CQRS — Command Query Responsibility Segregation"
 aliases: ["command query responsibility segregation", "cqrs pattern"]
 date_created: 2026-05-31
-date_updated: 2026-08-18
-source_count: 7
+date_updated: 2026-08-27
+source_count: 8
 tags: [cqrs, arquitetura, event-sourcing, ddd, sistemas-distribuidos]
 skill: tech-mentor-backend
 status: draft
@@ -112,6 +112,35 @@ Mensageria ([[fila]], [[filas-e-workers]]) não é obrigatória para implementar
 
 **Tom de cautela mais forte que as fontes derivadas:** Fowler afirma diretamente que a maioria das implementações de CQRS que observou se provou problemática, e sugere que um reporting database tradicional muitas vezes obtém benefícios semelhantes sem a sobrecarga de complexidade do CQRS — uma reserva mais explícita do que a lista de trade-offs já registrada acima.
 
+## Dois Motivadores Independentes: Volume e Modelo
+
+[[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] enquadra a decisão de adotar CQRS como resposta a dois problemas distintos, que podem aparecer separados ou combinados:
+
+- **Volume** — proporção leitura/escrita muito diferente (ex.: logs e sistemas IoT são write-heavy; busca de e-commerce é read-heavy). Justifica escalar cada lado de forma independente.
+- **Modelo/assinatura** — payloads de escrita e leitura muito diferentes (ex.: escrita via evento + leitura via HTTP, ou escrita via HTTP + leitura via GraphQL).
+
+Segundo essa fonte, se só o modelo diverge e o volume é parecido, o CQRS tende a ser complexidade desproporcional ao ganho — o verdadeiro trunfo do padrão aparece quando **as duas divergências se combinam**.
+
+## Forma Mais Simples: Mesmo Código-Fonte, Deployments com Escala Diferente
+
+Antes de separar em serviços/código-fonte distintos, a forma mais simples de CQRS é manter **o mesmo código-fonte** com dois conjuntos de deployments escalados de forma independente (ex.: 30 réplicas de escrita vs. 3 de leitura), com o [[wiki/concepts/api-gateway]] roteando por método HTTP (POST/PUT → escrita, GET → leitura). Isso já basta para ter divisão de responsabilidade entre comando e consulta — código-fonte de fato separado costuma vir depois, quando o serviço "ganha corpo" ou quando escrita e leitura passam a usar bases/protocolos diferentes. Ver [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]].
+
+## Seis Técnicas de Sincronização: Consistência Forte vs. Eventual
+
+[[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] organiza as estratégias de sincronização write→read em duas categorias. O argumento central: cada técnica de consistência forte resolve bem **ou** volume **ou** modelo, nunca os dois — só a consistência eventual entrega o trunfo completo do CQRS (escalar volume e ter modelo dedicado ao mesmo tempo).
+
+**Consistência forte** (pouco comum em CQRS pleno, mas útil como primeiro passo de migração):
+
+1. **Mesma base de dados com views/[[wiki/concepts/materialized-view|materialized views]]** — comando dá `UPDATE` na tabela, leitura faz `SELECT` numa view. Resolve modelo (API de consulta dedicada), não resolve volume (gargalo de banco compartilhado permanece — escalar a escrita ainda impacta a leitura).
+2. **Escrita em transação cruzando write e query service** — o serviço de escrita grava na própria base e, na mesma operação, escreve também na base do serviço de leitura. Quebra a separação de responsabilidade (o query service vira também um serviço de escrita) e não resolve volume, mas preserva um modelo de leitura dedicado.
+3. **[[wiki/concepts/api-composition|API Composition]]** — o query service perde base própria e passa a ter só cache; ao receber uma consulta, verifica o cache e, se ausente, propaga chamadas em fan-out para os serviços downstream que têm a informação, compõe e armazena o resultado. Funcionalmente equivalente a um BFF de leitura.
+
+**Consistência eventual** (onde o autor situa a maioria das implementações reais de CQRS):
+
+1. **[[wiki/concepts/read-replicas|Read replicas]]** — cluster com main node de escrita e réplicas de leitura (Aurora gerencia isso automaticamente; Postgres pode ser configurado manualmente). O read model preserva exatamente o schema da base de escrita.
+2. **Eventos via broker ([[wiki/concepts/event-driven-architecture|EDA]])** — Kafka, RabbitMQ, SNS/SQS. Diferente das réplicas, o query service pode transformar a informação no formato final que quiser ao consumir o evento (ex.: escrita relacional → leitura em Elasticsearch/Solr para busca textual/facetada). Risco explícito: o **[[wiki/concepts/dual-write-problem|bug da escrita dupla]]** — escrever na base e publicar o evento não são atômicos por padrão; ver [[wiki/concepts/outbox-pattern]] para a solução (transactional outbox), que essa fonte cita apenas de passagem.
+3. **Polling/job periódico** — o query service busca mudanças acumuladas de tempos em tempos (ex.: logs em S3, tabela temporária exposta via API), em vez de reagir em tempo real a cada mudança.
+
 ## Key Sources
 
 - [[wiki/sources/cqrs-martin-fowler]] — post original do bliki de Martin Fowler (2011); origem textual da definição mais citada; tom de cautela mais forte ("a maioria das implementações que vi foi problemática"); amarra o escopo de aplicação a bounded context
@@ -121,3 +150,4 @@ Mensageria ([[fila]], [[filas-e-workers]]) não é obrigatória para implementar
 - [[wiki/sources/cqrs-dicionario-programador-codigo-fonte-tv]] — progressão de cenários de motivação (single-user → LAN → SaaS multi-tenant), task-based UI, command bus, e as quatro estratégias de sincronização (automática, eventual, controlada, sob demanda)
 - [[wiki/sources/cqrs-e-event-sourcing-explicado-na-pratica]] — deriva CQRS de CQS (get/set em nível de função); fragmentação física do banco por natureza de carga como o "verdadeiro ganho"; tese de que CQRS quase sempre existe a serviço de Event Sourcing
 - [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]] — atribui a criação do CQRS a Greg Young; motivação via exemplo de agregado DDD; erro comum de reaproveitar models entre comando e leitura (viola SRP)
+- [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] — dois motivadores independentes (volume e modelo/assinatura); CQRS sem código-fonte separado (mesmo código, deployments com escala diferente); seis técnicas de sincronização organizadas em consistência forte (mesma base+views, transação cruzada, API Composition) vs. eventual (read replicas, eventos com bug da escrita dupla, polling)

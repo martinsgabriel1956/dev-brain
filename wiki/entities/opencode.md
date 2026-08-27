@@ -3,8 +3,8 @@ type: entity
 title: "OpenCode"
 aliases: ["Open Code"]
 date_created: 2026-07-31
-date_updated: 2026-07-31
-source_count: 2
+date_updated: 2026-08-27
+source_count: 3
 tags: [opencode, harness, cli, agentes-ia, model-routing]
 skill: tech-mentor-ai
 status: stub
@@ -22,7 +22,12 @@ Segundo [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]], a c
 
 [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] cita (como anedota, sem link/benchmark independente) devs migrando do [[wiki/entities/claude-code]] para o OpenCode alegando que o primeiro entra em loops de "bug suspeito → sugestão de correção → reescreve testes → reescreve código → reescreve testes de novo" que consomem token sem ganho de valor proporcional — usado na fonte como exemplo concreto de como o [[wiki/concepts/harness|harness]] pode multiplicar custo mesmo com preço por token em queda.
 
+## Citado Junto ao Hermes como Harness "Aberto a Qualquer Modelo"
+
+[[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] cita o OpenCode, ao lado do [[wiki/entities/hermes-agent|Hermes]], como exemplo de harness onde "qualquer um" dos modelos de fundação (GPT, Kimi, GLM, Opus, Fable) pode ser conectado — reforçando, no mesmo ponto já documentado acima (roteamento via Custom Router da Abacus), que o modelo é o "miolo" comum entre harnesses e o OpenCode se diferencia por não travar esse miolo a um único provider.
+
 ## Key Sources
 
+- [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] — citado, junto do Hermes, como harness aberto a qualquer modelo de fundação
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — conexão com Custom Router da Abacus.AI via API key
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — citado como destino de migração de devs saindo do Claude Code por loops de correção supérflua

@@ -3,8 +3,8 @@ type: concept
 title: "Ciclo do Agente (Agent Loop)"
 aliases: ["agent loop", "ciclo agentico", "prompt tool call loop"]
 date_created: 2026-06-02
-date_updated: 2026-08-06
-source_count: 8
+date_updated: 2026-08-27
+source_count: 9
 tags: [agente, tool-call, harness, ciclo, loop, ralph-loop]
 skill: tech-mentor-ai
 status: stable
@@ -86,12 +86,17 @@ O loop agêntico não é elegante — é iterativo e incremental. A qualidade do
 
 O "brute-force até funcionar" tem um custo matemático explícito: um processo de N etapas, cada uma com 99% de sucesso individual, não tem 99% de chance de sucesso completo — tem 0,99ᴺ (≈90,4% em 10 etapas, ≈60% em 50). Ver [[wiki/concepts/harness]] para os quatro mecanismos que atacam essa composição de erros ([[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]]).
 
+## Quem Impõe o Teto do Ciclo
+
+[[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] nomeia explicitamente o mecanismo que evita o loop infinito citado acima: um número máximo de tool calls, um timeout por tool, e fail checks — impostos pelo próprio agent loop do harness, não decididos pelo modelo. Sem esse teto, nada impede o modelo de pedir "mais uma tool call" indefinidamente antes de considerar a tarefa concluída.
+
 ## Variante Orientada a Trigger (Não a Chat)
 
 [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] descreve o mesmo ciclo (planner → tool call → observação → decisão) numa variante que não é iniciada por uma mensagem de usuário, mas por um **trigger de evento** (alerta de observabilidade, cron job, webhook) — o exemplo dado é um agente de DBA acionado por sinais operacionais, e não por um chat interativo. A saída também difere: em vez de responder ao usuário, o ciclo termina num **write-back** (log, ticket, notificação), fechando o loop sem necessariamente haver uma "resposta final" no sentido conversacional.
 
 ## Key Sources
 
+- [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] — quem impõe o teto do ciclo (máximo de tool calls, timeout por tool, fail checks) como responsabilidade explícita do agent loop, não do modelo
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
 - [[wiki/sources/formacao-ia-devs-aula-01-context-harness-engineering]]

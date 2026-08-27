@@ -3,8 +3,8 @@ type: concept
 title: "Abstração"
 aliases: ["abstraction", "esconder detalhes", "contrato genérico"]
 date_created: 2026-04-25
-date_updated: 2026-08-13
-source_count: 5
+date_updated: 2026-08-27
+source_count: 6
 tags: [abstracao, software-design, clean-code, arquitetura, interfaces]
 skill: tech-mentor-backend
 status: stable
@@ -72,8 +72,13 @@ A fonte usa uma analogia médica para justificar por que isso é necessário: um
 - [[hexagonal-architecture]] — Ports & Adapters é a formalização arquitetural de abstração: Port = contrato, Adapter = implementação concreta
 - [[dependency-injection]] — DI é o mecanismo que injeta a implementação concreta numa abstração
 
+## Linguagem Natural Como a Camada Mais Recente
+
+[[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] estende a cadeia de abstrações de programação para incluir a geração de código via LLM: assembly → C → linguagens com máquina virtual (Java/bytecode/JVM) → agora, prompt em linguagem natural → código-fonte convencional. A fonte propõe que isso não é ruptura qualitativa, é só mais um degrau — o mesmo tipo de "abrir mão de controle íntimo pela caixa mágica de tradução" que um engenheiro de 15 anos em assembly descreve ao migrar para C. Ver detalhamento em [[wiki/concepts/linguagem-natural-como-camada-de-abstracao]].
+
 ## Key sources
 
+- [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — linguagem natural como nova camada no topo da cadeia assembly→C→bytecode/JVM
 - [[wiki/sources/acoplamento-abstracao-estado]]
 - [[sources/roadmap-dev-senior-2026]] — abstração como pilar 2: camadas que escondem complexidade sem esconder clareza
 - [[wiki/sources/10-conceitos-fundamentais-computacao]] — abstração como o #1 conceito fundamental; cada um dos 9 outros conceitos é uma camada de abstração

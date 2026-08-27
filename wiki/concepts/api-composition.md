@@ -3,8 +3,8 @@ type: concept
 title: "API Composition"
 aliases: ["api composer", "composição de apis", "agregação de endpoints"]
 date_created: 2026-07-23
-date_updated: 2026-07-30
-source_count: 3
+date_updated: 2026-08-27
+source_count: 4
 tags: [api-composition, fan-out, aggregation-layer, api-gateway, bff, n-plus-one, dataloader, graphql]
 skill: tech-mentor-backend
 status: draft
@@ -46,8 +46,13 @@ Quando múltiplas chamadas por ID estão dispersas no código (padrão N+1), Dat
 
 O API Composer pode ser um componente dedicado ou, mais comumente na prática, a própria lógica de um [[wiki/concepts/bff-pattern]] — o BFF é, funcionalmente, um API Composer especializado para um único tipo de cliente.
 
+## Como Opção de Consistência Forte no CQRS
+
+[[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] situa API Composition como uma das três formas de manter **consistência forte** entre write e read model em [[wiki/concepts/cqrs]]: o query service abre mão de base de dados própria e passa a ter só cache — ao receber uma consulta, verifica o cache e, se ausente, faz fan-out para os serviços downstream que têm a informação, compõe a resposta e povoa o cache. A fonte reforça a equivalência já registrada acima com BFF ("é bem parecido com o que faria um BFF"), chamando-a de alternativa a manter uma base de leitura própria sincronizada via réplicas/eventos.
+
 ## Key Sources
 
 - [[wiki/sources/api-gateway-padrao-essencial-arquiteturas-distribuidas]]
+- [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] — API Composition como opção de consistência forte no CQRS: query service sem base própria, só cache, populado via fan-out sob demanda
 - [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]] — o endpoint "recebe lista de IDs já conhecida" é a mesma técnica de request collapsing, versão REST/manual do que DataLoader faz automaticamente
 - [[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] — fan-out para 4 sistemas heterogêneos de fornecedor dentro de um BFF de leitura, como alternativa a unificar os produtos via microfrontends

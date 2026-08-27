@@ -3,8 +3,8 @@ type: concept
 title: "Engenheiro vs. Programador"
 aliases: ["programador vs engenheiro", "mentalidade de engenharia", "software engineer vs coder"]
 date_created: 2026-07-03
-date_updated: 2026-08-19
-source_count: 8
+date_updated: 2026-08-27
+source_count: 9
 tags: [carreira, mentalidade, arquitetura, senioridade]
 skill: tech-mentor-leadership
 status: draft
@@ -70,8 +70,13 @@ Não é acumular ferramentas (ver [[wiki/concepts/apego-a-ferramentas]]), mas de
 
 [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] chega ao mesmo eixo por um caminho de autocorreção: revisitando uma lista própria de 13 requisitos de pleno de 4 anos atrás, o autor reclassifica 6 itens como commodity e 3 como rebaixados de pleno para júnior — e conclui que o único item que sobra como diferencial real de um pleno hoje é soft skills (code review, feedback, documentação, adaptação a processo), antes tratado como item de rodapé na própria lista original. Ver [[wiki/concepts/soft-skills-como-diferencial-de-pleno]] para o detalhamento dessa tese específica.
 
+## "Programar É Fácil, Decidir O Que Programar É Difícil" — Concordância Parcial
+
+[[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] reage a um artigo que defende essa frase como insulto aos programadores, e concorda em parte: hoje quase qualquer pessoa consegue gerar código funcional via IA, o que revelou que a barreira nunca foi só sintaxe — nem todo mundo *quer* programar, nem todo mundo consegue pensar sistematicamente ou decompor um problema, mesmo com a geração de código facilitada. Ao mesmo tempo, rebate o artigo no ponto simétrico: devs também estão absorvendo trabalho de produto/gestão (comunicação com stakeholders, alinhamento a OKRs) à medida que cargos de PM/EM são cortados por layoff — ou seja, o eixo "decidir o que construir" não fica só com produto, também passa a ser cobrado do dev sênior/tech lead.
+
 ## Key Sources
 
+- [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — concordância parcial com "programar é fácil, decidir é difícil"; devs absorvendo trabalho de produto/gestão por layoff em cargos de PM/EM
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]]
 - [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — autocorreção de lista própria de 4 anos atrás: soft skills reclassificado de item de rodapé para único diferencial real de pleno
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — quem tem o mesmo teto de capacidade da IA é substituído por ela; diferencial é entender o funcionamento, não operar a ferramenta

@@ -3,8 +3,8 @@ type: concept
 title: "Entrevista Técnica de Coding"
 aliases: ["coding interview", "entrevista estilo leetcode", "live coding interview", "whiteboard interview"]
 date_created: 2026-07-20
-date_updated: 2026-08-04
-source_count: 7
+date_updated: 2026-08-27
+source_count: 8
 tags: [carreira, entrevistas, coding-interview, algoritmos, comunicacao]
 skill: tech-mentor-leadership
 status: draft
@@ -60,8 +60,13 @@ O artigo original do mesmo autor (fonte primária do vídeo já citado acima) de
 - [[wiki/concepts/aprendizado-por-luta]] — ficar travado é sinal esperado, não fracasso
 - [[wiki/concepts/entrevista-system-design]] — mesma estrutura de "levar o candidato a dizer 'não sei'", em formato de arquitetura em vez de algoritmo
 
+## LeetCode Continua Relevante Mesmo Com Geração de Código por IA
+
+[[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] defende que praticar LeetCode/estruturas de dados continua valendo a pena mesmo quando a IA consegue gerar a implementação, por dois motivos: (1) a nota de corte de muitas empresas ainda exige essa fluência, e (2) resolver os problemas ensina a heurística dos "três níveis de profundidade" (ver [[wiki/concepts/hashmap]]) — saber não só usar uma estrutura abstrata, mas qual implementação concreta está por baixo e como ela resolve seus próprios problemas internos, conhecimento necessário pra avaliar código gerado por IA, não só pra escrevê-lo do zero.
+
 ## Key sources
 
+- [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — LeetCode ainda relevante na era de geração de código por IA; heurística dos três níveis de profundidade
 - [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]]
 - [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]] — artigo original com o roteiro completo de dez etapas ("Os Seis Passos")
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]

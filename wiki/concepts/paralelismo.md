@@ -3,9 +3,9 @@ type: concept
 title: "Paralelismo"
 aliases: ["parallelism", "execução paralela", "multicore", "multithreading"]
 date_created: 2026-06-26
-date_updated: 2026-06-26
-source_count: 1
-tags: [cs-fundamentals, paralelismo, concorrencia, multicore, performance]
+date_updated: 2026-08-27
+source_count: 2
+tags: [cs-fundamentals, lang-systems, paralelismo, concorrencia, multicore, performance, hpc]
 skill: cs-fundamentals
 status: draft
 ---
@@ -47,6 +47,10 @@ speedup = 1 / (serial_fraction + parallel_fraction / N)
 
 Adicionar mais threads sem sincronização cria mais oportunidades de [[race-condition]]. Mais paralelismo → mais coordenação necessária ([[mutex]], [[deadlock]]).
 
+## Computação de alto desempenho (HPC) como motivação para baixo nível
+
+[[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] cita **computação de alto desempenho (HPC)** — GPU, multicore, comunicação entre múltiplos nós via **MPI/OpenMPI** — como uma das motivações concretas para se aprofundar em programação de baixo nível e em [[wiki/concepts/arquitetura-de-computadores]], ao lado de [[wiki/concepts/sistemas-operacionais]] e [[wiki/concepts/sistemas-embarcados]]. A fonte não aprofunda tecnicamente o tema, mas o cita como área de atuação profissional do próprio autor, exigindo algoritmos paralelos e frameworks específicos.
+
 ## Relação com outros conceitos
 
 - [[concorrencia]] — o par conceitual obrigatório; muita gente confunde os dois
@@ -57,3 +61,4 @@ Adicionar mais threads sem sincronização cria mais oportunidades de [[race-con
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
+- [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] — HPC (GPU, multicore, MPI/OpenMPI) como motivação para baixo nível

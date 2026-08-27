@@ -3,8 +3,8 @@ type: entity
 title: "Peter Steinberger"
 aliases: ["Peter Steinberger", "Peter Stinberg"]
 date_created: 2026-07-28
-date_updated: 2026-08-19
-source_count: 3
+date_updated: 2026-08-27
+source_count: 4
 tags: [tech-mentor-ai, harness, loop-engineering, open-claw, graph-engineering]
 skill: tech-mentor-ai
 status: stub
@@ -22,8 +22,13 @@ Autor da frase viral (6,5 milhões de views) que dá título a [[wiki/sources/ha
 
 [[wiki/sources/graph-engineering-matematica-do-erro-composto]] é a primeira fonte na wiki a citar uma data concreta para o tweet que teria disparado "graph engineering" — 18 de julho — descrito como tendo alcançado milhões de views. Terceira fonte independente a convergir na atribuição a "Peter" como origem do salto loop→grafo, ainda sem link ou captura de tela do tweet original em nenhuma das três.
 
+## Mantra "Se Você Não É o Modelo, Você É o Harness" Restaurado Sem Atribuição
+
+[[wiki/sources/prompt-context-harness-engineering-tres-pilares]] cita, em tradução livre para o português, o mantra "se você não é o modelo, você é o harness" — sem atribuir autoria a ninguém. É a formulação mais próxima na wiki do título de [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] ("você é o harness, não o modelo"), que por sua vez credita a Peter Steinberger uma frase textualmente diferente ("você não deveria mais promptar agentes, deveria desenhar loops que promptam seus agentes"). Não resolve a divergência já registrada entre título e citação direta naquela fonte — só confirma que a formulação "modelo vs. harness" circula amplamente o suficiente para aparecer numa terceira fonte sem atribuição nenhuma.
+
 ## Key Sources
 
+- [[wiki/sources/prompt-context-harness-engineering-tres-pilares]] — mantra "se você não é o modelo, você é o harness" restaurado em português, sem atribuição de autoria
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]]
 - [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — segunda atribuição independente, tweet sobre loop→grafo
 - [[wiki/sources/graph-engineering-matematica-do-erro-composto]] — terceira atribuição independente; data concreta do tweet (18 de julho)

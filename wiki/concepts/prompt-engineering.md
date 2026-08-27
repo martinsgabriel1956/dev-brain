@@ -3,8 +3,8 @@ type: concept
 title: "Prompt Engineering"
 aliases: ["engenharia de prompt", "prompt design"]
 date_created: 2026-05-17
-date_updated: 2026-08-20
-source_count: 11
+date_updated: 2026-08-27
+source_count: 12
 tags: [prompt-engineering, llm, few-shot, codex, software-3]
 skill: tech-mentor-ai
 status: stable
@@ -102,8 +102,13 @@ Em modelos mais fortes (ex.: Fable), o mesmo princípio de "descreva o estado de
 
 Uma nova versão de prompt pode quebrar o comportamento do sistema da mesma forma que uma nova versão de código pode quebrar um teste. Versionar num repositório Git ou banco de dados registra o histórico, mas não valida a mudança. O padrão recomendado é tratar prompt como artefato com **gate em CI/CD**: rodar o novo prompt contra um conjunto de [[wiki/concepts/llm-evals-testing|evals/snapshots]] antes de liberar, barrando automaticamente uma versão que regride o comportamento esperado — em vez de descobrir a regressão em produção.
 
+## Por Que Prompt Engineering Deixou de Bastar Sozinho
+
+[[wiki/sources/prompt-context-harness-engineering-tres-pilares]] narra, sem contradizer o que já está registrado nesta página, por que a importância relativa de "saber pedir" caiu (sem desaparecer) desde 2022: com janela de contexto de ~4.000 tokens naquela época, o prompt era praticamente a única alavanca disponível — não havia espaço para injetar codebase inteira, rules ou histórico extenso. Com janelas de 1 milhão de tokens hoje e modelos melhores, um prompt mediano já produz boa resposta com mais frequência, deslocando a alavanca principal de qualidade para [[wiki/concepts/context-engineering-harness|context engineering]] e depois para [[wiki/concepts/harness|harness engineering]]. Consistente com "Prompt Bom Não Compensa Contexto Ausente" acima, mas com o argumento histórico do porquê.
+
 ## Fontes
 
+- [[wiki/sources/prompt-context-harness-engineering-tres-pilares]] — evolução histórica: janela de contexto pequena em 2022 (~4k tokens) tornava o prompt a única alavanca disponível; janela grande hoje desloca a alavanca principal para context/harness engineering
 - [[wiki/sources/microsoft-prompt-engineering-guide]]
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — método de seis passos para prompt de autopentest de segurança
 - [[wiki/sources/gpt3-language-models-are-few-shot-learners]]

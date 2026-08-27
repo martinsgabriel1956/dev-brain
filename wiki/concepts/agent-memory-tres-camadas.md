@@ -3,8 +3,8 @@ type: concept
 title: "Memória de Agente em Três Camadas (Sessão / Persistente / Skill)"
 aliases: ["three-layer agent memory", "memória de três camadas", "session/persistent/skill memory"]
 date_created: 2026-07-21
-date_updated: 2026-08-19
-source_count: 3
+date_updated: 2026-08-27
+source_count: 4
 tags: [tech-mentor-ai, agent-memory, learning-loop, sqlite, fts5, hermes-agent, claude-md, memory-layers]
 skill: tech-mentor-ai
 status: draft
@@ -45,8 +45,13 @@ A fonte também documenta uma prática de campo (não formalizada como spec ou l
 
 [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] descreve uma variante ainda sem página própria na wiki: memória compartilhada não por usuário/sessão, mas por **canal/equipe inteira** — um agente por canal do Slack (Claude Tag, da [[wiki/entities/anthropic]]) que aprende com as mensagens de todos os membros e une pedidos feitos por pessoas diferentes num mesmo contexto contínuo. As três camadas acima (sessão/persistente/skill) seguem se aplicando, mas a "sessão" deixa de ser de um usuário e passa a ser do canal como um todo — candidata a virar concept própria (`memoria-multiplayer-agente.md`) se surgir mais de uma fonte técnica detalhando o mecanismo.
 
+## Variante: User / Episodic / Semantic / Procedural Memory (Assemble de Contexto)
+
+[[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] descreve uma quarta nomenclatura para o mesmo domínio, no contexto do assemble de contexto de um agent run genérico (não específico de um harness com learning loop): **user memory** (fatos duráveis sobre o usuário), **episodic memory** (linha do tempo de descobertas já feitas na conversa atual — mapeia perto de "memória de sessão" acima, mas enfatizada como histórico cronológico de achados, não só janela ativa), **semantic memory** (fatos gerais de usuário/projeto, mais perto de persistent memory) e **procedural memory** (os arquivos markdown/playbooks — equivalente direto à camada procedural já usada nesta página). Diferença central frente às três camadas e à distinção da Anthropic acima: esta fonte separa explicitamente episodic de semantic, onde as outras duas nomenclaturas tratam esse par como uma única camada de "persistent/memória futura". A fonte também nota que nem toda ferramenta implementa todas as quatro camadas — algumas exigem configuração manual, outras não têm nenhuma forma de aprendizado contínuo sobre o usuário.
+
 ## Key sources
 
+- [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] — quarta nomenclatura (user/episodic/semantic/procedural memory) no contexto de assemble de contexto de um agent run; separa episodic de semantic explicitamente
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]]
 - [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] — variante de memória multiplayer por canal (não por usuário individual)
 - [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — distinção de três partes atribuída à Anthropic (contexto de trabalho / memória futura / artefatos revisados); hierarquia do CLAUDE.md enquadrada como memory layer; prática de campo de gerar docs em `docs/` ao fim de cada tarefa

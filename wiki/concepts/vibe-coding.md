@@ -3,8 +3,8 @@ type: concept
 title: "Vibe Coding"
 aliases: ["vibe coding", "vibe-coding", "coding por vibração", "agentic coding", "orquestração de agentes"]
 date_created: 2026-04-23
-date_updated: 2026-08-11
-source_count: 16
+date_updated: 2026-08-27
+source_count: 17
 tags: [vibe-coding, agentes-ia, produtividade, divida-cognitiva, ai-brainfry, paralelismo-cognitivo]
 skill: tech-mentor-ai
 status: stable
@@ -131,6 +131,7 @@ Citado como exemplo de hype tecnológico em formação (junto com MCP) no moment
 
 ## Key Sources
 
+- [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — relato de staff/tech lead/sênior sem escrever código manual há meses, 20-25 PRs/semana, revisão automatizada substituindo leitura humana
 - [[sources/divida-cognitiva-ai-brainfry]]
 - [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — armadilha de manutenção do vibe code por não-devs (Jira interno revertido); "quem não é da área vira TI"
 - [[sources/ia-salario-ou-carga-de-trabalho]]
@@ -163,3 +164,7 @@ O ponto novo trazido por essa fonte, em relação ao que já estava documentado:
 ## Segurança Nunca é Padrão em Código Gerado por IA — Caso Concreto
 
 [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] é o primeiro caso na wiki de demonstração ofensiva completa (não relato nem aula teórica) contra um sistema construído do zero via vibe coding: a partir de um único `.env` publicamente acessível — que a IA que gerou a aplicação nunca pensou em proteger —, um pentester encadeia [[wiki/concepts/idor]], [[wiki/concepts/account-takeover]] e [[wiki/concepts/upload-arbitrario-rce|RCE]] em menos de 10 minutos, sem quebrar nenhuma senha. Cita também estatísticas externas (não verificadas por esta fonte isoladamente) associando código gerado por IA a um número crescente de CVEs e a alta incidência de vulnerabilidades do OWASP Top 10. Reforça de forma concreta o ponto já registrado nesta página em "O Limite Não É Técnico, É de Julgamento": a lacuna não é a IA "não saber" gerar código seguro em teoria, é que ninguém no fluxo de vibe coding pediu ou verificou isso.
+
+## Relato de Mercado: Staff/Tech Lead/Sênior Sem Escrever Código Manualmente Há Meses
+
+[[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] traz um relato de primeira mão, não estatística formal: em grandes empresas, staff engineers, tech leads e sêniores relatam não escrever código manualmente há meses, com times liberando "milhares de dólares por dia" de uso de IA e produzindo 20-25 PRs por semana — a ponto de a revisão de código deixar de ser leitura humana linha a linha e virar estrutura de verificação automatizada (ver [[wiki/concepts/quality-gate]]). A mesma fonte nota que a previsão de [[wiki/entities/anthropic|Dario Amodei]] sobre o fim do código escrito manualmente em ~6 meses, motivo de piada quando feita, "errou o prazo por 8-12 meses, não a tese" — se confirma como realidade atrasada, não como exagero.

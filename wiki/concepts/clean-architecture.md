@@ -3,8 +3,8 @@ type: concept
 title: "Clean Architecture"
 aliases: ["arquitetura limpa", "clean arch"]
 date_created: 2026-07-24
-date_updated: 2026-08-23
-source_count: 7
+date_updated: 2026-08-27
+source_count: 8
 tags: [clean-architecture, uncle-bob, dependency-inversion, use-case, presenter, view-model, arquitetura, dci, bce]
 skill: tech-mentor-backend
 status: draft
@@ -91,8 +91,13 @@ No estudo de caso do livro, erros esperados (email inválido, usuário já exist
 
 As métricas de pacote de Robert Martin — abstração `A`, instabilidade `I = Ce/(Ca+Ce)` e distância da sequência principal `D = |A + I − 1|` — são a formalização quantitativa da própria Regra de Dependência: componentes estáveis (I baixo) devem ser abstratos (A alto) para poderem ser dependidos sem impedir a evolução; componentes voláteis (I alto) devem ser concretos. Ver [[wiki/concepts/metricas-de-acoplamento]] e [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]].
 
+## Gráfico de Complexidade-Versus-Tempo Citado Fora de Contexto de Código: Justificativa de Harness Engineering
+
+[[wiki/sources/prompt-context-harness-engineering-tres-pilares]] cita o gráfico de complexidade crescente ao longo do tempo do livro Clean Architecture — sem detalhar o gráfico especificamente, apenas de memória — como argumento para uma tese fora do escopo usual desta página: a complexidade de software cresce com ou sem IA, e o [[wiki/concepts/harness|harness]] (regras, guidelines, mecanismos de verificação) é o que, na era de agentes, cumpre o mesmo papel que "ter uma boa arquitetura" sempre cumpriu — manter essa complexidade sob controle. Claim de baixa especificidade (não aponta capítulo/página do livro), mas é o primeiro cruzamento na wiki entre esse gráfico específico e a motivação de harness engineering.
+
 ## Key Sources
 
+- [[wiki/sources/prompt-context-harness-engineering-tres-pilares]] — gráfico de complexidade-versus-tempo citado como justificativa para harness engineering, fora do escopo usual de Clean Architecture como estilo de código
 - [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]] — métricas de acoplamento (A, I, D) como formalização da Regra de Dependência
 - [[wiki/sources/presenters]] — papel do Presenter e ViewModel especificamente na camada HTTP/apresentação (REST, GraphQL, CLI)
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — fluxo completo do diagrama de cenário web, e a justificativa teórica (objeto vs. estrutura de dados) por trás de cada camada

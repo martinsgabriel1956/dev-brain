@@ -3,8 +3,8 @@ type: concept
 title: "Outbox Pattern"
 aliases: ["transactional outbox", "outbox + cdc", "outbox"]
 date_created: 2026-04-22
-date_updated: 2026-08-03
-source_count: 3
+date_updated: 2026-08-27
+source_count: 4
 tags: [sistemas-distribuidos, mensageria, outbox, cdc, consistencia, idempotencia, inbox]
 skill: tech-mentor-system-design
 status: stub
@@ -40,9 +40,14 @@ Latência adicional (CDC é assíncrono). Consumidor deve ser idempotente (mensa
 
 Outbox resolve a publicação confiável de um lado da fronteira. Do outro lado, quem consome precisa do complementar — [[wiki/concepts/inbox-pattern]] — para não duplicar o efeito quando o mesmo evento chega mais de uma vez (at-least-once delivery). Em pagamentos, isso é o que permite que a mesma chave de [[wiki/concepts/idempotencia]] atravesse o processo que caiu no meio do caminho: se o processador externo já aprovou a cobrança mas o backend caiu antes de salvar a resposta local, repassar a chave idempotente ao retry (ou reconciliar contra uma referência estável) evita criar uma segunda cobrança.
 
+## Citado Como Solução do Bug da Escrita Dupla em CQRS
+
+[[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] nomeia o problema resolvido por este padrão — "bug da escrita dupla", ver [[wiki/concepts/dual-write-problem]] — no contexto de sincronizar write e read model via eventos em [[wiki/concepts/cqrs]], mas apenas remete a outro vídeo do canal para a solução, sem detalhar o mecanismo (que já está registrado com profundidade acima e em `references/architecture-eda-patterns.md` da skill `tech-mentor-backend`).
+
 ## Key Sources
 
 - [[sources/3pc]]
+- [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] — citação nominal do bug da escrita dupla como risco de sincronizar CQRS via eventos, sem detalhar a solução
 - [[wiki/sources/outbox-pattern]]
 - [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] — Outbox/Inbox como o par que mantém a identidade da operação atravessando fronteiras de serviço sob entrega at-least-once
 - [[wiki/sources/ciclo-de-mudanca-de-arquitetura]] — citado como exemplo de decisão de TO-BE (Transaction Outbox) que exige o ciclo AS-IS/POC/migração, ver [[wiki/concepts/ciclo-de-mudanca-de-arquitetura]]

@@ -3,9 +3,9 @@ type: concept
 title: "Timing Attack"
 aliases: ["timing attack", "ataque de temporização", "side-channel timing", "crypto.timingSafeEqual"]
 date_created: 2026-06-10
-date_updated: 2026-07-04
-source_count: 3
-tags: [security, timing-attack, side-channel, criptografia, appsec, senhas]
+date_updated: 2026-08-27
+source_count: 4
+tags: [security, timing-attack, side-channel, criptografia, appsec, senhas, arquitetura-de-computadores]
 skill: tech-mentor-security
 status: stable
 ---
@@ -56,6 +56,10 @@ O timing attack é um exemplo de que **qualquer output do sistema pode ser vetor
 
 Ver [[attack-surface]]: superfície de ataque inclui os outputs do sistema, não só os inputs.
 
+## Side-Channel Attacks e Decisões de Arquitetura de Computadores
+
+[[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] amplia o escopo do timing attack ao afirmar, sem exemplos técnicos detalhados, que boa parte dos ataques de **side-channel** em geral decorre de decisões de [[wiki/concepts/arquitetura-de-computadores|arquitetura de computadores]] — não só do nível de aplicação (como comparação de string não constante), mas de efeitos observáveis de mecanismos como cache e pipeline de execução. Tratado como afirmação plausível mas não verificada tecnicamente na fonte (confiança média) — consistente com side-channels de microarquitetura conhecidos na literatura (ex.: ataques baseados em cache timing e branch prediction), mas o vídeo não cita casos concretos.
+
 ## Relação com Outros Conceitos
 
 - [[attack-surface]] — outputs (incluindo latência) são parte da superfície de ataque
@@ -73,3 +77,4 @@ O mesmo princípio se aplica à validação de webhooks: comparar a assinatura H
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — exemplo didático: descobrir senha de 9 chars com 26×9 tentativas em vez de 26^9
 - [[sources/seguranca-armazenamento-senhas-banco-de-dados]] — bcrypt e Argon2 como implementações que já resolvem o problema
 - [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]] — timing attack aplicado à validação de assinatura de webhook
+- [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] — side-channel attacks em geral ligados a decisões de arquitetura de computadores (afirmação sem exemplo técnico detalhado)

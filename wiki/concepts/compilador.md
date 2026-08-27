@@ -3,8 +3,8 @@ type: concept
 title: "Compilador"
 aliases: ["compiler", "compilação", "interpretador", "AST", "análise léxica"]
 date_created: 2026-06-26
-date_updated: 2026-07-16
-source_count: 4
+date_updated: 2026-08-27
+source_count: 5
 tags: [cs-fundamentals, compiladores, interpretadores, ast, linguagens-de-programacao]
 skill: cs-fundamentals
 status: draft
@@ -91,8 +91,13 @@ O compilador é a [[abstracao]] que permite escrever `let x = 10` e não se preo
 - [[logica-booleana]] — o output final são instruções que operam em bits via portas lógicas
 - [[recursao]] — parsers recursivos descendentes são implementações clássicas de analisadores sintáticos
 
+## Confiar na "Caixa Mágica" Não É Novidade da IA
+
+[[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] traz um relato em primeira pessoa (engenheiro de 15 anos em assembly migrando para C) de que "confiar no compilador" já foi, na sua época, tão desconfortável quanto "confiar na IA" é hoje — a ponto de o próprio engenheiro ter que escrever código só para auditar a qualidade do assembly gerado pelo compilador, porque os compiladores da época eram pouco confiáveis. A fonte usa isso para argumentar que gerar código via LLM é mais uma camada em cima da mesma cadeia (código-fonte → compilador/interpretador → bytecode/máquina virtual → linguagem de máquina), não uma substituição dela — ver [[wiki/concepts/linguagem-natural-como-camada-de-abstracao]].
+
 ## Key sources
 
+- [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — paralelo assembly→C como precedente histórico de "confiar na caixa mágica"; Java/Kotlin→bytecode→JVM como exemplo de que a linguagem de alto nível não é "a linguagem que fala com a máquina"
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]] — decisões de design (propósito, gramática, tipos, memória, ecossistema) que antecedem e envolvem o pipeline de compilação
 - [[wiki/sources/como-um-compilador-transforma-codigo-em-instrucoes-de-maquina]] — detalhamento da análise semântica (tabela de símbolos), da IR como forma atômica que evita explosão N×M, e da alocação de registradores na geração de código

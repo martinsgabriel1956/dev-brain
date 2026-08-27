@@ -3,8 +3,8 @@ type: entity
 title: "Lucas Montano"
 aliases: ["Lucas Montano"]
 date_created: 2026-07-03
-date_updated: 2026-08-25
-source_count: 13
+date_updated: 2026-08-27
+source_count: 14
 tags: [criador-de-conteudo, ia, carreira, financas-pessoais, saas, growth, git]
 skill: tech-mentor-ai
 status: stub
@@ -38,8 +38,11 @@ Também tem (atribuição provável, não confirmada — ver nota no frontmatter
 
 Também reage a um tweet viral do indie hacker [[wiki/entities/pieter-levels|Pieter Levels ("Levelsio")]] sobre guardrails do Claude bloqueando o desenvolvimento de um projeto hobby (simulador de Windows XP) enquanto o [[wiki/entities/moonshot-ai|Kimi K3]] completava as mesmas tarefas sem fricção — ver [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]]. Argumenta que o incidente reflete um trade-off real de guardrail pós-jailbreak do Fable 5 (junho de 2026) e um risco geopolítico específico para quem constrói negócio americano sobre modelo chinês. Generaliza para a tese de que "a era do modelo único acabou": relata rotear pessoalmente entre Claude (guardrail alto, para automações que tocam Stripe/e-mail de usuário no próprio app "PSUA") e modelos mais permissivos para tarefas de baixo risco — uma dimensão de roteamento por **tolerância a guardrail**, distinta de roteamento por complexidade/custo. No mesmo vídeo, descreve a técnica de trial de 7 dias sem cartão do PSUA como forma de qualificar leads de churn e reduzir refund (ver [[wiki/concepts/ltv-cac]]), e resenha benchmarks do recém-lançado Opus 5 (forte em Agentic Terminal Coding/Agent Search/Computer Use e Automation Bench; atrás do GPT 5.6 "Sol" em coding puro; sem avanço em dual-use capabilities de risco).
 
+Também produz um vídeo prático sobre **Loop Engineering** — ver [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] (autoria provável, sem menção nominal do canal na transcrição). Detalha a própria estrutura operacional de loops (quatro arquivos: `prompt.md`, `fixplan.md`, specs, `agents.md`), relata o caso de banco de dados apagado na Replit e o de testes trapaceados por agentes como desastres reais, propõe um checklist de seis itens de segurança, e demonstra ao vivo o comando `/loop` do Claude Code integrado à própria skill de Spec Driven do autor, paralelizando via `git worktree` e fazendo deploy de uma landing page numa VPS da [[wiki/entities/hostinger]] via MCP. Reforça, nesse vídeo, o mesmo padrão de anúncio recorrente de workshop de IA (1º de outubro) já citado em vídeos anteriores.
+
 ## Key Sources
 
+- [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] — guia prático de Loop Engineering: quatro arquivos operacionais, checklist de segurança, desastres reais (banco apagado, teste trapaceado), demonstração de `/loop` com deploy via MCP da Hostinger
 - [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — reação ao tweet de Levelsio sobre guardrails do Claude vs. Kimi K3; tese de fim da era do modelo único; roteamento por tolerância a guardrail; benchmarks do Opus 5; trial de 7 dias como técnica de qualificação de lead
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]]
 - [[wiki/sources/pull-requests-por-que-falham-alternativas-sem-pr]] — por que PRs falham (tempo de revisão não escala com tamanho); inventário-é-custo aplicado a PR; alternativas sem PR (pairing + trunk-based + feature flags)

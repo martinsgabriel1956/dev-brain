@@ -3,8 +3,8 @@ type: concept
 title: "API Gateway"
 aliases: ["api gateway", "gateway de api", "ponto único de entrada de api"]
 date_created: 2026-07-23
-date_updated: 2026-08-21
-source_count: 8
+date_updated: 2026-08-27
+source_count: 9
 tags: [api-gateway, arquitetura-distribuida, gatekeeper, roteamento, edge-functions, single-point-of-failure]
 skill: tech-mentor-backend
 status: stable
@@ -86,9 +86,14 @@ Segundo [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]], o API Gat
 - **BFF (Backend for Frontend)** — tipo específico de Gateway, um backend por tipo de cliente. Ver [[wiki/concepts/bff-pattern]].
 - **Gatekeeper Pattern** — a formalização de segurança do mesmo princípio de ponto único de entrada obrigatório. Ver [[wiki/concepts/gatekeeper-pattern]].
 
+## Roteador entre Write e Read Ecosystems no CQRS
+
+[[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] atribui explicitamente ao API Gateway a responsabilidade de rotear requisições entre os ecossistemas de escrita e leitura em [[wiki/concepts/cqrs]] — por método HTTP (POST/PUT → escrita, GET → leitura) mesmo quando ambos os lados compartilham o mesmo código-fonte, ou por host/serviço quando write e read já são deployments distintos. A recomendação central: essa segmentação deve ficar no Gateway, não ser empurrada para o frontend — senão o cliente passa a carregar a responsabilidade de saber qual host chamar.
+
 ## Key Sources
 
 - [[wiki/sources/api-gateway-bff]]
+- [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] — Gateway como responsável por rotear entre ecossistema de escrita e de leitura no CQRS, por método HTTP ou por host
 - [[wiki/sources/api-gateway-padrao-essencial-arquiteturas-distribuidas]]
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — API Gateway aparece como conhecimento esperado a partir do nível pleno, junto de workers e load balancer
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]] — no ecossistema AWS, é a forma mais comum de encaminhar requests até [[wiki/concepts/aws-lambda]]; comparado explicitamente ao [[wiki/concepts/load-balancer]] (mecanismo parecido, intuito diferente — não é balancear carga, é rotear por endpoint)

@@ -3,8 +3,8 @@ type: concept
 title: "Harness"
 aliases: ["AI harness", "harness de IA", "coding harness"]
 date_created: 2026-06-02
-date_updated: 2026-08-13
-source_count: 18
+date_updated: 2026-08-27
+source_count: 20
 tags: [harness, llm, tool-call, agente, context-engineering, erros-compostos, verificacao]
 skill: tech-mentor-ai
 status: stable
@@ -72,6 +72,20 @@ IDE e harness são camadas separadas. O harness usa `read_file`/`write_file` ind
 
 **User harness** — o que você fornece: rules, skills, MCPs, sensores. É onde está a maior alavanca de qualidade. Ver [[wiki/concepts/sensores-vs-guias]].
 
+### Gradiente de Controle: Nem Toda Ferramenta Expõe o Mesmo Harness
+
+[[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] refina a dicotomia acima com um espectro de três pontos, em vez de um corte binário provider/user:
+
+- **OpenClaw** (construir o próprio agente do zero) — controle quase total: dá para escolher a implementação de observabilidade e plugar a própria camada de memória episódica, ex. via **Mem0/memzero**, popular na comunidade como memória persistente para agentes.
+- **Codex e Claude Code** — meio-termo: o usuário não é responsável por todo o harness, mas tem flexibilidade real para adicionar guardrails, policies e outras peças.
+- **Cursor** — menor controle: a ferramenta mantém a maior parte do harness fechado; o usuário fica limitado, na prática, à parcela de user harness (rules etc.).
+
+Reforça, com exemplo concreto, por que "harness" não é sinônimo de "modelo": o mesmo Opus roda dentro do Cursor, do Claude Code; o mesmo GPT roda no Codex e no Trae; Kimi e GLM também aparecem no Trae. O modelo é o "miolo" comum — o que muda de ferramenta para ferramenta é só o harness construído em volta.
+
+### Claude Code Open Source Após Vazamento na Anthropic
+
+Ainda segundo [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]], o Claude Code se tornou open source no GitHub depois de um vazamento na Anthropic — o código do harness completo (tudo que a Anthropic constrói em volta dos próprios modelos para entregar a ferramenta) ficaria publicamente disponível para clonar e adaptar. **Confiança: não verificado nesta ingestão** contra fonte primária (anúncio oficial, repositório específico, data) — tratar como claim do autor do vídeo até confirmação independente.
+
 ## Harness como Trabalho Central do Product Engineer
 
 Dados de campo do Cursor (2026) mostram o harness em maturidade: code review automatizado por t-shirt size, specs estruturadas para agentes, MCP central com governança, self-healing por request, agents que abrem PRs sozinhos. Construir essa infraestrutura — não escrever o código em si — é a face 2 do [[product-engineer]]. A evolução do dev não é "deixar de construir" — é construir em camada diferente.
@@ -109,6 +123,17 @@ Enumeração parcial de componentes de harness, sete cobertos numa fonte que cit
 
 Dado de benchmark citado (sem número específico): o mesmo Claude Opus performa significativamente melhor dentro do harness do Claude Code do que em benchmark padrão sem harness — mesmo modelo, harness diferente, resultado diferente ([[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]]).
 
+### Mais Quatro Componentes Nomeados (Onze de Doze)
+
+[[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] descreve, sem se referir à contagem "doze componentes" acima, quatro peças adicionais de um agent run que preenchem parte da lacuna dos "cinco não nomeados":
+
+8. **Assemble de contexto como RAG explícito** — a montagem do contexto antes de cada chamada ao modelo (rules + skills + memória) é descrita como um RAG de fato: dados em banco vetorial, markdown (a parte procedural) e SQL, com retrieval do que é relevante para aquela inferência. Sobrepõe-se parcialmente ao item 3 (gestão de contexto) e ao item 5 (memória) acima, mas nomeia o mecanismo de retrieval explicitamente.
+9. **Agent loop com limites explícitos** — não só o ciclo reasoning→tool call→resultado ([[wiki/concepts/ciclo-agente]]), mas quem impõe o teto: número máximo de tool calls, timeout por tool, fail checks — para o ciclo não entrar em loop infinito de pedir mais informação antes de finalizar.
+10. **Guardrails** — filtros de segurança e formato aplicados tanto ao input do usuário quanto ao output da tool (que pode ser maliciosa) e ao output final do modelo; inclui policy check de segurança/ética. Ver [[wiki/concepts/ai-safety-guardrails]].
+11. **Observabilidade com retries e evals** — camada menos universal entre as ferramentas comerciais (mais comum em agentes customizados, ex. sobre OpenClaw): logs de falha, custo por token, mecanismo de retry para tarefas que falharam em execução, e evals medindo a resposta contra o padrão de qualidade esperado — resumido pela fonte como "how we know it works". Ver [[wiki/concepts/llm-evals-testing]].
+
+Com isso, permanece nomeado apenas um componente indeterminado do total de doze citado pela fonte original — os quatro acima cobrem boa parte, mas não fecham definitivamente a lista, já que a segunda fonte não referencia a contagem da primeira nem confirma que os itens se mapeiam 1:1.
+
 ## Harnesses com Learning Loop Embutido (Hermes Agent, Open Claw)
 
 [[wiki/sources/hermes-agent-open-claw-learning-loop]] descreve uma nova geração de harness que embute um [[wiki/concepts/closed-loop-skill-learning|closed-loop skill learning system]] — o harness não só executa tool calls, mas extrai padrões do histórico de execuções e gera/refina skills sozinho, sobre uma [[wiki/concepts/agent-memory-tres-camadas|memória em três camadas]]. Exemplos citados: [[wiki/entities/hermes-agent]] e [[wiki/entities/open-claw]] (ambos open source/MIT), e o "Dreaming in Claude" da Anthropic como resposta proprietária ao mesmo padrão. Isso desloca parte do trabalho antes feito manualmente com [[wiki/concepts/hooks-agente]] (extrair padrões de sessões passadas) para dentro do próprio ciclo do harness.
@@ -127,8 +152,18 @@ Essa mesma fonte também traz um exemplo concreto de "user harness" anterior à 
 
 [[wiki/sources/graph-engineering-matematica-do-erro-composto]] reabre esta definição ao recapitular o vídeo anterior do mesmo autor antes de introduzir grafo: harness é tudo que não é o modelo (ferramentas, contexto, verificação); o modelo é o motor; harness é o resto do carro. Sem claim novo sobre harness em si — a contribuição desta fonte é estender o argumento adiante, para [[wiki/concepts/grafo-como-abstracao-de-agentes|grafo]] e [[wiki/concepts/loop-engineering|loop]].
 
+## Nomenclatura de Memória do Assemble de Contexto: User / Episodic / Semantic / Procedural
+
+[[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] nomeia quatro tipos de memória agregados durante o assemble de contexto de um agent run: **user memory** (fatos duráveis sobre o usuário — preferências, quem é), **episodic memory** (linha do tempo de descobertas já feitas na conversa atual, relevante porque análises anteriores informam a próxima inferência), **semantic memory** (fatos gerais sobre usuário/projeto — ex. "é engenheira de software, está construindo uma startup"), e **procedural memory** (os arquivos markdown/playbooks configurados na máquina, no projeto e na ferramenta). Nomenclatura paralela, mas não idêntica, à [[wiki/concepts/agent-memory-tres-camadas|memória em três camadas]] (sessão/persistente/skill) já documentada na wiki — a peça nova frente ao que já existia é distinguir episodic de semantic explicitamente, algo que a fonte de três camadas não fazia.
+
+## Complexidade Crescente como Justificativa de Investir em Harness (Ligação com Clean Architecture)
+
+[[wiki/sources/prompt-context-harness-engineering-tres-pilares]] amarra explicitamente o gráfico de complexidade-versus-tempo de [[wiki/entities/uncle-bob|Robert Martin]] (Clean Architecture) à motivação de harness engineering: complexidade de software cresce com o tempo independente de haver IA envolvida — múltiplas pessoas passam pelo projeto, código se acumula. O harness (regras, guidelines, mecanismos de verificação) é apresentado como o equivalente, na era de agentes, a "ter uma boa arquitetura" — o jeito de manter essa complexidade crescente sob controle. Reforça, sem contradizer, a dicotomia já registrada acima entre provider harness e user harness, e a mesma metáfora "cérebro sem mãos" para a LLM isolada. A mesma fonte também restaura, em tradução livre para o português e sem atribuição de autoria, o mantra de [[wiki/entities/peter-steinberger]] ("se você não é o modelo, você é o harness").
+
 ## Key Sources
 
+- [[wiki/sources/prompt-context-harness-engineering-tres-pilares]] — gráfico de complexidade de Robert Martin/Clean Architecture como justificativa de harness; mantra de Peter Steinberger restaurado em português sem atribuição; evolução prompt→context→harness engineering narrada como resposta ao crescimento da janela de contexto (4k tokens em 2022 → 1M hoje)
+- [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] — gradiente de controle por ferramenta (OpenClaw > Codex/Claude Code > Cursor); quatro componentes adicionais nomeados (RAG de contexto, agent loop com limites, guardrails, observabilidade com retries/evals); claim não verificado de Claude Code open source pós-vazamento; nomenclatura user/episodic/semantic/procedural memory
 - [[wiki/sources/graph-engineering-matematica-do-erro-composto]] — recapitulação da definição (harness = carro, loop = piloto automático) como ponte para graph engineering
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — harness como multiplicador de custo mesmo com preço por token em queda; troca de Claude Code para OpenCode por loops de correção supérflua

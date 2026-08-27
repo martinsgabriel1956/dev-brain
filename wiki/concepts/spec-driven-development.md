@@ -3,8 +3,8 @@ type: concept
 title: "Spec-Driven Development"
 aliases: ["SDD", "spec driven", "desenvolvimento orientado a especificação", "planning-first"]
 date_created: 2026-06-02
-date_updated: 2026-08-19
-source_count: 19
+date_updated: 2026-08-27
+source_count: 20
 tags: [spec-driven, planejamento, ia-para-devs, harness, agente, qualidade, loop-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -74,6 +74,10 @@ Padrões globais (framework, linguagem, infraestrutura) ficam nas [[wiki/concept
 - Tarefas que normalmente levariam semanas de trabalho humano
 
 Para tarefas menores, use [[wiki/concepts/plan-mode|Plan Mode]].
+
+## Quando Usar Spec + Revisão em Vez de Soltar em Loop
+
+[[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] propõe um critério objetivo para decidir entre spec-driven com revisão humana a cada tarefa e um [[wiki/concepts/loop-engineering|loop]] autônomo rodando várias tarefas sem supervisão: **um teste automático sabe dizer se a tarefa ficou pronta?** Se não — código em produção/legado (erro afeta usuário real), UX/copy sem critério verificável, decisões de arquitetura que travam o projeto por anos, qualquer fluxo com pagamento ou dado sensível — o padrão certo é spec + revisão, com o dev aprovando cada tarefa antes da próxima. Se sim — projeto novo do zero, migração/porte mecânico, backlog com critério de aceite automático por item — a spec pode virar `fixplan.md` e rodar em loop noturno. Ritmo sugerido: **spec de dia, loop de noite** — specs escritas com calma alimentam o loop, que roda em sandbox com teto de gasto; PR pequeno é revisado de manhã.
 
 ## Relação com Documentação
 
@@ -172,3 +176,4 @@ O ponto não invalida SDD como definido acima (spec como contrato de execução,
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — Gherkin escrito antes da implementação como equivalente funcional da spec: única peça do sistema que o agente não derivou da própria cabeça, usada para validar implementação e testes contra a mesma fonte da verdade
 - [[wiki/sources/spec-writer-skill-criterios-de-boa-spec]] — skill "Spec Writer" (6 etapas) e framework de 7 critérios de validação de spec (falseabilidade, comportamento, invariantes, edge cases, fronteira, inputs/restrições, decisões de negócio)
 - [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — reafirma a tese central (spec como fonte de verdade) num panorama mais amplo de vocabulário técnico de 2026; menção ao Spec Kit do GitHub sem detalhe novo além do já registrado na tabela de ferramentas acima
+- [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] — critério objetivo "um teste automático sabe dizer se ficou pronto?" para decidir entre spec+revisão e loop autônomo; ritmo "spec de dia, loop de noite"

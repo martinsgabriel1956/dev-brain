@@ -8412,3 +8412,152 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha em Sources; 2 novas linhas em Concepts (seção "Fundamentos de CS")
 
 **Notas / open questions:** (1) **Primeira fonte da wiki dedicada à evolução histórica/especificação de RAM DDR.** A wiki já cobria o lado de sistema operacional da memória (`memoria-virtual`, `swap`, TLB, page fault) e o lado de física do transistor (`transistor`, `cmos`, `celula-padrao`), mas faltava a camada intermediária de hardware puro — voltagem, pinagem, frequência, geração de módulo. Esta fonte preenche exatamente essa lacuna, sem contradizer nada já registrado. (2) **Dois conceitos novos**: `memoria-ram` (geral, guarda-chuva) e `ddr-sdram` (específico, a tabela comparativa das 5 gerações) — separados seguindo a regra "um conceito por página", já que o segundo é denso o bastante (tabela + trade-offs) para sustentar página própria. (3) **Fonte sem autor/canal identificado e sem URL** — registrado como open question; se o usuário tiver o link original, vale complementar o frontmatter depois. (4) **Skill drift confirmado novamente**: caminho de skills do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado o caminho real (`/home/gabriel-martins/Documentos/skills/`), consistente com ingestões anteriores de hardware.
+
+## [2026-08-27] ingest | Harness: a Anatomia Técnica Por Trás do Claude Code, Cursor e Codex
+
+**Fonte:** [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] — transcrição de vídeo fornecida pelo usuário (ASR em português, garbled em vários trechos), reorganizada e formatada em artigo, salva em `raw/harness-anatomia-tecnica-alem-do-claude-md.md`. Sem necessidade de tradução (fonte já em português). Autor não identificado com certeza; encerramento do vídeo cita um portal de cursos gratuitos ("fernandakeiper.com", grafia incerta por ASR), possível autoria de Fernanda Kipper — não confirmada.
+
+**Skill carregada:** `tech-mentor-ai`, referência `references/ai/agent-harness-engineering.md`. O diretório `/home/nemomartins/Documentos/new/skills/` citado no `CLAUDE.md` não existe nesta máquina; usado o caminho real `/home/gabriel-martins/Documentos/skills/` (skill drift consistente com todas as ingestões anteriores). A referência técnica (harness de produção em Python: retry/timeout/observability/error boundary/cost tracking) confirma, em código, os mesmos componentes citados de forma mais informal na fonte (agent loop com limites, guardrails, observabilidade com retries/evals) — usada para calibrar terminologia técnica (`loop detection`, `context management`, `multi-model harness`), sem claim novo da skill em si além do que a fonte já trazia.
+
+**Arquivos criados:**
+- `raw/harness-anatomia-tecnica-alem-do-claude-md.md` — transcrição limpa em Markdown
+- `wiki/sources/harness-anatomia-tecnica-alem-do-claude-md.md` — TL;DR, 10 key claims, entidades, conceitos tocados, open questions, raw quotes
+- `wiki/entities/cursor.md` (stub) — IDE agêntica multi-modelo; menor controle de harness exposto ao usuário no gradiente descrito pela fonte
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/harness.md` — `source_count` 18 → 19; nova subseção "Gradiente de Controle" (OpenClaw > Codex/Claude Code > Cursor); nova subseção "Claude Code Open Source Após Vazamento na Anthropic" (não verificado); nova subseção "Mais Quatro Componentes Nomeados (Onze de Doze)" (RAG de contexto, agent loop com limites, guardrails, observabilidade com retries/evals); nova subseção de nomenclatura de memória (user/episodic/semantic/procedural); nova linha em Key Sources
+- `wiki/concepts/ciclo-agente.md` — `source_count` 8 → 9; nova seção "Quem Impõe o Teto do Ciclo" (máximo de tool calls, timeout, fail checks como responsabilidade do agent loop); nova linha em Key Sources
+- `wiki/concepts/ai-safety-guardrails.md` — `source_count` 3 → 4; nova seção "Guardrail Sobre Resultado de Tool, Não Só Sobre o Modelo"; nova linha em Key Sources
+- `wiki/concepts/llm-evals-testing.md` — `source_count` 1 → 2; nova seção "Evals Como Parte da Observabilidade do Harness"; nova linha em Key Sources
+- `wiki/concepts/agent-memory-tres-camadas.md` — `source_count` 3 → 4; nova seção "Variante: User / Episodic / Semantic / Procedural Memory" (quarta nomenclatura para o mesmo domínio); nova linha em Key sources
+- `wiki/entities/claude-code.md` — `source_count` 14 → 15; nova seção "Claim Não Verificado: Open Source Após Vazamento na Anthropic"; nova linha em Key Sources
+- `wiki/entities/codex-openai.md` — `source_count` 5 → 6; nova seção "Grau de Controle do Usuário sobre o Harness: Meio-Termo"; nova linha em Key Sources
+- `wiki/entities/opencode.md` — `source_count` 2 → 3; nova seção "Citado Junto ao Hermes como Harness 'Aberto a Qualquer Modelo'"; nova linha em Key Sources
+- `wiki/entities/open-claw.md` — `source_count` 4 → 5; nova seção "Exemplo Máximo de Controle de Harness: Mem0/Memzero"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Entities (Cursor); `date_updated` atualizado
+
+**Notas / open questions:** (1) **Nenhuma contradição encontrada** com o que já estava registrado em `harness.md` — esta fonte principalmente confirma e detalha a distinção "Duas Camadas do Harness" já existente (provider vs. user harness), refinando-a para um gradiente de três pontos e nomeando explicitamente quatro dos "cinco componentes não documentados" do total de doze citado por outra fonte já na wiki ([[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]]) — permanece um componente não identificado. (2) **Claim não verificado e novo:** Claude Code teria se tornado open source no GitHub após um vazamento na Anthropic — nenhuma outra fonte já indexada confirma isso; marcado como não verificado em `harness.md` e `claude-code.md`, tratado como afirmação do autor até confirmação por fonte primária. (3) **Primeira página dedicada ao Cursor** (`wiki/entities/cursor.md`), apesar de a ferramenta já aparecer em pelo menos três fontes anteriores sem página própria — criada como stub central por ser o exemplo do extremo de menor controle de harness no gradiente desta fonte. (4) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-08-27] ingest | Code Was Never the Hard Part — Reação ao Artigo (Lucas Montana)
+
+**Fonte:** [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — transcrição de vídeo do canal Lucas Montana (reação/leitura comentada a um artigo em inglês "Code Was Never the Hard Part — It's an Insult to All Programmers"), fornecida em português pelo usuário, transcrita e formatada em Markdown em `raw/code-was-never-the-hard-part-reacao-lucas-montana.md`. Sem necessidade de tradução — fonte original e citações do artigo já vêm em português (tradução do próprio autor do vídeo), exceto um trecho de áudio original em inglês (entrevista de um engenheiro não identificado sobre a transição assembly→C), preservado como citação bilíngue.
+
+**Skill carregada:** `tech-mentor-leadership`, referência `references/ai-strategy-engineering.md` (mapa de uso de IA em engenharia, quality gates automatizados, política de time). Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado o caminho real `/home/gabriel-martins/Documentos/skills/`.
+
+**Arquivos criados:**
+- `raw/code-was-never-the-hard-part-reacao-lucas-montana.md` — transcrição formatada em Markdown
+- `wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana.md` — TL;DR, 11 key claims, entidades, conceitos tocados, open questions, raw quotes
+- `wiki/concepts/linguagem-natural-como-camada-de-abstracao.md` (draft) — tese central da fonte: prompt em linguagem natural como degrau mais recente da cadeia assembly→C→bytecode/JVM
+- `wiki/entities/lucas-montana.md` (stub) — autor/canal da fonte
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/abstracao.md` — `source_count` 5 → 6; nova seção "Linguagem Natural Como a Camada Mais Recente"; nova linha em Key sources
+- `wiki/concepts/compilador.md` — `source_count` 4 → 5; nova seção "Confiar na 'Caixa Mágica' Não É Novidade da IA" (paralelo assembly→C); nova linha em Key sources
+- `wiki/concepts/vibe-coding.md` — `source_count` 16 → 17; nova seção sobre staff/tech lead/sênior sem escrever código manual há meses (20-25 PRs/semana); nova linha em Key Sources
+- `wiki/concepts/quality-gate.md` — `source_count` 7 → 8; nova seção "Clean Code Não Morreu, Migrou Para o Gate"; nova linha em Key Sources
+- `wiki/concepts/engenheiro-vs-programador.md` — `source_count` 8 → 9; nova seção sobre concordância parcial com "programar é fácil, decidir é difícil" e devs absorvendo trabalho de produto/gestão; nova linha em Key Sources
+- `wiki/concepts/falacia-do-custo-afundado.md` — `source_count` 1 → 2; nova seção "Versão Identitária: Defesa de Ferramenta Como Defesa Pessoal" (Flutter/React Native/Xamarin); nova linha em Key Sources
+- `wiki/concepts/burnout-dev.md` — `source_count` 3 → 4; nova seção sobre OKR cruzado com throughput de IA como mecanismo de intensificação de trabalho; nova linha em Key Sources
+- `wiki/concepts/ciclo-de-mercado-tech.md` — `source_count` 10 → 11; nova seção sobre salários altos/estresse pré-ZIRP e pré-IA como evidência contra "programar sempre foi fácil"; nova linha em Key Sources
+- `wiki/concepts/hashmap.md` — `source_count` 6 → 7; nova seção "Heurística dos 'Três Níveis de Profundidade'"; nova linha em Key sources
+- `wiki/concepts/entrevista-tecnica-coding.md` — `source_count` 7 → 8; nova seção sobre LeetCode continuar relevante mesmo com geração de código por IA; nova linha em Key sources
+- `wiki/entities/anthropic.md` — `source_count` 26 → 27; nova seção "Previsão de Dario Amodei Sobre Fim do Código Escrito Manualmente (Não Verificado)"; nova linha em Key Sources
+- `wiki/entities/leetcode.md` — `source_count` 5 → 6; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção "Processo de Desenvolvimento com IA"); nova linha em Entities (Lucas Montana)
+
+**Notas / open questions:** (1) **Nenhuma contradição encontrada** com o que já estava registrado na wiki — a fonte principalmente confirma e dá vocabulário novo a teses já presentes (quality gate como sucessor de Clean Code manual, falácia do custo afundado aplicada a identidade técnica, apagão de sêniors/absorção de trabalho de produto por devs). (2) **Dois claims não verificados marcados explicitamente**: a previsão de Dario Amodei sobre fim do código manual em ~6 meses (citada de memória pelo autor do vídeo, sem link pra declaração original) e a hipótese de que a Anthropic teria acesso interno antecipado a "Opus 4.7/4.8" — ambos registrados como não verificados em `wiki/entities/anthropic.md`. (3) **Dois nomes citados no áudio não puderam ser identificados com segurança** por garbling do ASR original: o engenheiro do clipe assembly→C ("Anco Bob" ou similar) e uma referência chamada "Karm" — nenhum dos dois foi promovido a entidade própria; registrado como open question na fonte, para revisão se o usuário identificar os nomes corretos. (4) **Novo conceito central criado** (`linguagem-natural-como-camada-de-abstracao.md`) em vez de só estender `abstracao.md` ou `vibe-coding.md`, porque a tese (paralelo histórico assembly→C→bytecode/JVM→prompt) é específica o suficiente e reaparece em múltiplas seções da fonte para justificar página própria, seguindo a regra "um conceito por página". (5) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-08-27] ingest | CQRS — Volume, Modelo e as Formas de Manter Consistência
+
+**Fonte:** [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] — transcrição de vídeo de uma série de System Design (autor não identificado), fornecida em português pelo usuário como texto bruto de fala, formatada em Markdown em `raw/cqrs-volume-modelo-consistencia-forte-eventual.md`. Sem necessidade de tradução.
+
+**Skill carregada:** `tech-mentor-backend`, referência `references/architecture-eda-patterns.md` (CQRS, API Composition Pattern, Dual Write Problem, Outbox Pattern). Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado o caminho real `/home/gabriel-martins/Documentos/skills/`.
+
+**Arquivos criados:**
+- `raw/cqrs-volume-modelo-consistencia-forte-eventual.md` — transcrição formatada em Markdown
+- `wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual.md` — TL;DR, 9 key claims, entidades, conceitos tocados, open questions, raw quotes
+- `wiki/concepts/dual-write-problem.md` (stub) — "bug da escrita dupla", nomeado explicitamente pela fonte mas sem página própria até agora, apesar de já citado em `outbox-pattern.md`
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/cqrs.md` — `source_count` 7 → 8; duas novas seções ("Dois Motivadores Independentes: Volume e Modelo" e "Forma Mais Simples: Mesmo Código-Fonte, Deployments com Escala Diferente") e uma seção grande organizando as seis técnicas de sincronização em consistência forte vs. eventual; nova linha em Key Sources
+- `wiki/concepts/api-composition.md` — `source_count` 3 → 4; nova seção "Como Opção de Consistência Forte no CQRS"; nova linha em Key Sources
+- `wiki/concepts/api-gateway.md` — `source_count` 8 → 9; nova seção "Roteador entre Write e Read Ecosystems no CQRS"; nova linha em Key Sources
+- `wiki/concepts/read-replicas.md` — `source_count` 8 → 9; nova seção "Réplicas Preservam Schema — Diferença Chave Frente a Eventos"; nova linha em Key Sources
+- `wiki/concepts/event-driven-architecture.md` — `source_count` 1 → 2; nova seção "Risco Explícito no CQRS: o Bug da Escrita Dupla"; nova linha em Key Sources
+- `wiki/concepts/materialized-view.md` — `source_count` 1 → 2; nova seção "Como 'CQRS-Like': Resolve Modelo, Não Volume"; nova linha em Key Sources
+- `wiki/concepts/outbox-pattern.md` — `source_count` 3 → 4; nova seção "Citado Como Solução do Bug da Escrita Dupla em CQRS"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (Dual Write Problem, junto de Event-Driven Architecture)
+
+**Notas / open questions:** (1) **Nenhuma contradição encontrada** com o que já estava registrado em `cqrs.md` — a fonte organiza de forma mais sistemática (dois motivadores explícitos; seis técnicas em duas categorias claras) trade-offs que já apareciam espalhados nas cinco fontes de CQRS anteriores (Fowler, Código Fonte TV, Full Cycle, cqrs-e-event-sourcing-explicado-na-pratica, cache-e-redis). (2) O "bug da escrita dupla" já era mencionado tangencialmente em `outbox-pattern.md`, mas nunca havia sido promovido a conceito próprio — criado agora como stub porque esta fonte o nomeia e trata como risco central de uma das seis técnicas catalogadas, justificando página independente em vez de só uma menção dentro de `outbox-pattern.md`. (3) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-08-27] ingest | Loop Engineering — Guia Prático, Casos Reais e Desastres
+
+**Fonte:** [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] — transcrição de vídeo (autoria provável de [[wiki/entities/lucas-montano]], sem menção nominal do canal) sobre uso prático de Loop Engineering, fornecida em português pelo usuário como texto bruto de fala, formatada em Markdown em `raw/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano.md`. Sem necessidade de tradução.
+
+**Skill carregada:** `tech-mentor-ai`, referências `references/ai/agents-runtime.md` (long-running agents, checkpointing, error boundaries, HITL) e `references/ai/spec-driven-development-ai.md` (SDD para IA). Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano.md` — transcrição formatada em Markdown
+- `wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano.md` — TL;DR, 12 key claims, entidades, conceitos tocados, open questions, raw quotes
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/loop-engineering.md` — `source_count` 9 → 10; cinco novas seções (estrutura operacional dos quatro arquivos + gate, checklist de seis itens de segurança, desastres reais, casos de sucesso relatados, árvore de decisão spec vs. loop, demonstração de `/loop` com deploy via MCP da Hostinger, custo de token de testes, casos de uso além de coding puro); nova linha em Key Sources
+- `wiki/concepts/spec-driven-development.md` — `source_count` 19 → 20; nova seção "Quando Usar Spec + Revisão em Vez de Soltar em Loop" com o critério objetivo "um teste automático sabe dizer se ficou pronto?"; nova linha em Key Sources
+- `wiki/concepts/quality-gate.md` — `source_count` 8 → 9; nova seção "O Gate Como Condição de Parada de um Loop Noturno"; nova linha em Key Sources
+- `wiki/concepts/agent-containment.md` — `source_count` 5 → 6; nova seção "Regra no Prompt Não é Bloqueio — Caso Real de Banco Apagado" (incidente Replit, 1.206 registros); nova linha em Key Sources
+- `wiki/concepts/worktree-paralelismo.md` — `source_count` 11 → 12; nova seção sobre worktree como substrato de múltiplos loops noturnos em paralelo; nova linha em Key Sources
+- `wiki/entities/lucas-montano.md` — `source_count` 13 → 14; novo parágrafo sobre o vídeo de Loop Engineering; nova linha em Key Sources
+- `wiki/entities/hostinger.md` — `source_count` 7 → 8; novo parágrafo sobre o caso de deploy via MCP (não patrocinado, uso real demonstrado); nova linha em Key Sources
+- `wiki/entities/geoffrey-huntley.md` — `source_count` 2 → 3; nova linha em Key Sources (terceira menção da origem do Ralph Loop, sem detalhe biográfico novo)
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Nenhuma contradição encontrada** — esta fonte é consistente e fortemente complementar ao que já estava registrado em `loop-engineering.md` (mesma origem Ralph Loop/Geoffrey Huntley, mesmo princípio de estado em arquivo em vez de contexto), adicionando a camada mais operacional/artesanal do padrão (arquivos concretos, checklist de segurança, casos reais de desastre) que faltava frente ao material mais teórico/avançado já presente (planner-executor-critic, judge, orquestrador de modelos, graph engineering). (2) **Autoria não confirmada nominalmente** — mesmo padrão de inferência por convergência de sinais já usado em outras fontes de Lucas Montano (workshop de IA, Hostinger, "nossa skill" de Spec Driven). (3) **Nome exato da skill de Spec Driven do autor não identificado** — variações fonéticas na transcrição ("ONP"/"NOP" Spec Driven) não batem com clareza contra o "TLC Spec Driven" já registrado em `spec-driven-development.md`; tratado como não verificado, sem forçar correspondência. (4) **Estudo de produtividade (19% mais lento / 20% mais rápido percebido) citado de memória, sem fonte primária** — registrado como claim não verificado tanto na fonte quanto em `loop-engineering.md`. (5) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-08-27] ingest | Guia para começar em programação de baixo nível (C, arquitetura, SO, embarcados)
+
+**Fonte:** [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] — transcrição de vídeo fornecida pelo usuário em português como texto bruto de fala, sem necessidade de tradução, limpa e organizada em Markdown em `raw/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados.md`. Autoria do canal não identificada com certeza (nome capturado na transcrição soa como erro de transcrição automática, algo como "Way").
+
+**Skill carregada:** `lang-systems`, referência `references/c-cpp.md` (C/C++ para sistemas, drivers e performance), com apoio de `cs-fundamentals` (`references/os-fundamentals.md`, `references/hardware-for-engineers.md`, `references/algorithms-complexity.md`) para o conteúdo de arquitetura, SO e fundamentos de algoritmos. Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados.md` — transcrição formatada e organizada em Markdown
+- `wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados.md` — TL;DR, 13 key claims, entidades, conceitos tocados, open questions, raw quotes
+- `wiki/entities/canal-desempenho-baixo-nivel.md` (stub) — autor/canal do vídeo, identidade não confirmada
+- `wiki/entities/carlos-maziero.md` (stub) — professor da UFPR, fonte recomendada para sistemas operacionais em português
+- `wiki/concepts/arquitetura-de-computadores.md` (stub) — Von Neumann, pipeline, cache, registradores; não existia página central para o tema, só menções espalhadas
+- `wiki/concepts/sistemas-operacionais.md` (stub) — conceito central de SO; só existiam fontes soltas (`como-sistemas-operacionais-funcionam`, `8-sistemas-operacionais-explicados`) sem página de conceito própria
+- `wiki/concepts/sistemas-embarcados.md` (stub) — não existia página própria, só a referência da skill `rust-embedded`
+- `wiki/concepts/engenharia-reversa.md` (stub) — citada na fonte, sem página própria até agora
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/linguagem-c.md` — `source_count` 1 → 2; nova seção "C como pré-requisito obrigatório para baixo nível em geral" (exigência prática, não só pedagógica); nova linha em Key Sources
+- `wiki/concepts/algoritmos-e-estruturas-de-dados.md` — `source_count` 16 → 17; nova seção "DSA como pré-requisito específico para baixo nível" (Cormen, Entendendo Algoritmos, Univesp); nova linha em Key Sources
+- `wiki/concepts/interrupcao-de-hardware.md` — `source_count` 2 → 3; nova seção sobre interrupções customizadas em embarcados e tabela de interrupção (NVIC do ARM); nova linha em Key Sources
+- `wiki/concepts/gerenciamento-de-memoria.md` — `source_count` 3 → 4; nova seção sobre gerenciamento manual (malloc, memory leak, double free) como motivação de estudo e responsabilidade central de um SO; nova linha em Key Sources
+- `wiki/concepts/paralelismo.md` — `source_count` 1 → 2; nova seção sobre HPC (GPU, multicore, MPI/OpenMPI) como motivação para baixo nível; nova linha em Key Sources
+- `wiki/concepts/timing-attack.md` — `source_count` 3 → 4; nova seção ligando side-channel attacks em geral a decisões de arquitetura de computadores (confiança média — afirmação sem exemplo técnico na fonte); nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; quatro novas linhas em Concepts (`sistemas-operacionais`, `sistemas-embarcados`, `arquitetura-de-computadores` em "Fundamentos de Sistemas Operacionais", `engenharia-reversa` em "Fundamentos de CS"); duas novas linhas em Entities
+
+**Notas / open questions:** (1) **Nenhuma contradição encontrada** com o que já estava na wiki — esta fonte é consistente com `linguagem-c.md` (reforça a mesma defesa de C vista em `por-que-comecar-com-c-em-2026-cs50-david-malan`, mas do ângulo de exigência prática em vez de pedagógica) e complementa `gerenciamento-de-memoria.md`, `interrupcao-de-hardware.md` e `paralelismo.md` sem sobrepor claims já registrados. (2) **Autoria do canal não identificada** — nome capturado na transcrição ("Way") tratado como possível erro de transcrição automática de fala; entidade criada como stub aberto a correção futura. (3) **Anedota de mercado não verificada** — o exemplo de alguém contratado pela Google após publicar um paper/servidor em 2013 tem nome de projeto e autor ambíguos na transcrição (algo como "LBM"/"Fish"); registrado como claim de baixa confiança, não verificado. (4) **Claim sobre side-channel attacks e arquitetura** tratado como confiança média — afirmação plausível e alinhada à literatura, mas sem exemplo técnico concreto na fonte; sinalizado em `timing-attack.md` para eventual reforço por uma fonte dedicada a Spectre/Meltdown. (5) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-08-27] ingest | Prompt Engineering, Context Engineering e Harness Engineering — Os Três Pilares
+
+**Fonte:** [[wiki/sources/prompt-context-harness-engineering-tres-pilares]] — transcrição de vídeo fornecida pelo usuário em português como texto bruto de fala, sem necessidade de tradução, limpa e organizada em Markdown em `raw/prompt-context-harness-engineering-tres-pilares.md`. Autoria não identificada (sem autorreferência na fala).
+
+**Skill carregada:** `tech-mentor-ai` (harness engineering, context engineering, prompt engineering — mesma skill já usada nas demais fontes desse cluster temático na wiki). Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/prompt-context-harness-engineering-tres-pilares.md` — transcrição formatada em Markdown
+- `wiki/sources/prompt-context-harness-engineering-tres-pilares.md` — TL;DR, 6 key claims, entidades, conceitos tocados, open questions, raw quotes
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/harness.md` — `source_count` 19 → 20; nova seção ligando o gráfico de complexidade-versus-tempo de Robert Martin/Clean Architecture à justificativa de investir em harness engineering; nova linha em Key Sources
+- `wiki/concepts/context-engineering-harness.md` — `source_count` 9 → 10; nova seção sobre a evolução prompt→context→harness amarrada ao crescimento histórico da janela de contexto; nova linha em Key Sources
+- `wiki/concepts/prompt-engineering.md` — `source_count` 11 → 12; nova seção sobre por que prompt engineering deixou de ser a única alavanca disponível; nova linha em Fontes
+- `wiki/concepts/context-window.md` — `source_count` 3 → 4; nova linha em Fontes corroborando o salto de ~4k para ~1M tokens já documentado na tabela existente
+- `wiki/concepts/clean-architecture.md` — `source_count` 7 → 8; nova seção sobre o gráfico de complexidade citado fora do escopo usual da página (harness engineering em vez de código); nova linha em Key Sources
+- `wiki/entities/uncle-bob.md` — `source_count` 13 → 14; nova linha em Key Sources
+- `wiki/entities/peter-steinberger.md` — `source_count` 3 → 4; nova seção sobre o mantra "se você não é o modelo, você é o harness" restaurado em português sem atribuição de autoria; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Nenhuma contradição encontrada** — fonte majoritariamente corroborativa do que já estava documentado em `harness.md` e `context-engineering-harness.md`; contribui a ponte narrativa histórica (janela de contexto pequena em 2022 → grande hoje) e o cruzamento inédito com o gráfico de complexidade de Clean Architecture como justificativa de harness. (2) **Autoria não identificada** — transcrição sem autorreferência nem nome de canal. (3) **Dois harnesses citados de ouvido não identificados com confiança** ("Itubilot CLI", "diminers" — possivelmente GitHub Copilot CLI e Gemini CLI) — mantidos como transcritos, sem forçar correspondência. (4) **Divergência pré-existente não resolvida**: o mantra "modelo vs. harness" restaurado aqui sem atribuição não bate literalmente com a frase que `harness-engineering-voce-e-o-harness-nao-o-modelo.md` atribui a Peter Steinberger (que é sobre loops, não sobre harness) — mera confirmação de que a formulação "modelo vs. harness" circula amplamente, não resolução da divergência de citação já registrada em `peter-steinberger.md`. (5) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.

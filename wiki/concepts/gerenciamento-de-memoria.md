@@ -3,9 +3,9 @@ type: concept
 title: "Gerenciamento de Memória (Linguagens de Programação)"
 aliases: ["memory management", "garbage collector", "GC", "ownership", "manual memory management"]
 date_created: 2026-07-09
-date_updated: 2026-07-28
-source_count: 3
-tags: [cs-fundamentals, linguagens-de-programacao, memoria, garbage-collector, rust, runtime, raii, cpp]
+date_updated: 2026-08-27
+source_count: 4
+tags: [cs-fundamentals, lang-systems, linguagens-de-programacao, memoria, garbage-collector, rust, runtime, raii, cpp, baixo-nivel]
 skill: cs-fundamentals
 status: draft
 ---
@@ -34,6 +34,10 @@ Cada valor tem exatamente um dono. Quando o dono sai do escopo, a memória é li
 
 O modelo de memória escolhido molda como todo o resto da linguagem — e do código escrito nela — se comporta. O mesmo vale para o modelo de concorrência associado ao runtime (threads, event loop, goroutines): o código de usuário se apoia nessas garantias desde o primeiro programa escrito, tornando mudanças posteriores extremamente custosas.
 
+## Gerenciamento manual como motivação e como filtro de entrada em baixo nível
+
+Em [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]], o gerenciamento manual de memória em [[wiki/concepts/linguagem-c|C]] — e os bugs clássicos que ele produz (memory leak, double free) — é citado logo na abertura como o tipo de dor de cabeça que atrai (ou afasta) quem migra de linguagens de alto nível para baixo nível. Também aparece como parte central do que um [[wiki/concepts/sistemas-operacionais|sistema operacional]] precisa oferecer às aplicações: a fonte cita `malloc` e proteção de memória entre processos como responsabilidades centrais do SO, ao lado de escalonamento e sistema de arquivos.
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/sistema-de-tipos]] — em Rust, ownership é parcialmente implementado como parte do sistema de tipos, verificado em compile-time
@@ -46,3 +50,4 @@ O modelo de memória escolhido molda como todo o resto da linguagem — e do có
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]]
 - [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — aprofundamento de ownership em Rust: move semantics, regra de exclusividade do borrowing (N leitores OU 1 escritor) e lifetimes como garantia de que referência não outlive o valor
 - [[wiki/sources/ponteiros-cpp-go-csharp]] — comparação prática C++/Go/C#: stack vs. heap, escape analysis em Go, RAII e `unique_ptr` em C++ moderno
+- [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] — gerenciamento manual (malloc, memory leak, double free) como motivação de estudo e como responsabilidade central de um sistema operacional

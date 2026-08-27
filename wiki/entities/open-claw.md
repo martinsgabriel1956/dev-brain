@@ -3,8 +3,8 @@ type: entity
 title: "Open Claw"
 aliases: ["OpenClaw", "open claw"]
 date_created: 2026-07-21
-date_updated: 2026-08-19
-source_count: 4
+date_updated: 2026-08-27
+source_count: 5
 tags: [tech-mentor-ai, open-claw, agent-memory, messaging-gateway, open-source, harness, graph-engineering]
 skill: tech-mentor-ai
 status: stub
@@ -24,8 +24,13 @@ Citado como caso que validou a categoria: a fonte especula que a aquisição do 
 
 **Segunda atualização:** [[wiki/sources/graph-engineering-matematica-do-erro-composto]], terceira fonte independente, também se refere a "criador do Open Claw" ao citar o tweet-origem de graph engineering, desta vez com data concreta (18 de julho). Três fontes distintas convergindo na mesma atribuição, ainda sem confirmação por fonte primária — mesmo tratamento de "não verificado, confiança reforçada" já registrado acima.
 
+## Exemplo Máximo de Controle de Harness: Mem0/Memzero como Memória Episódica Própria
+
+[[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] usa o OpenClaw (grafia "OpenCla"/"OpenClaw" incerta na transcrição, tratada como o mesmo projeto) como exemplo do extremo de maior controle no gradiente de harness: ao construir o próprio agente sobre o OpenClaw, o usuário pode escolher a implementação de observabilidade e conectar a própria camada de memória episódica — citando explicitamente o **Mem0 (memzero)**, uma camada de memória persistente para agentes popular na comunidade — algo mais difícil de fazer em ferramentas mais fechadas como o [[wiki/entities/cursor|Cursor]]. Reforça o enquadramento já registrado acima (learning loop de três camadas) com um exemplo concreto de peça plugável.
+
 ## Key Sources
 
+- [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] — exemplo de controle máximo de harness (observabilidade escolhida pelo usuário, memória episódica via Mem0/memzero)
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]]
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — claim não reconciliado de autoria (Peter Steinberger)
 - [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — segunda atribuição independente de "Peter" como criador do Open Claw

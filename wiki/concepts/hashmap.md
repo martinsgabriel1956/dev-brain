@@ -3,8 +3,8 @@ type: concept
 title: "Hashmap"
 aliases: ["hash map", "hash table", "dicionário", "mapa", "dictionary"]
 date_created: 2026-06-01
-date_updated: 2026-08-04
-source_count: 6
+date_updated: 2026-08-27
+source_count: 7
 tags: [cs-fundamentals, estruturas-de-dados, hashmap, performance, big-o]
 skill: cs-fundamentals
 status: draft
@@ -73,8 +73,13 @@ Um **set** é a mesma estrutura por baixo (hash table), mas guarda só a chave, 
 - [[arvore]] — alternativa para buscas ordenadas e por intervalo
 - [[wiki/concepts/time-space-tradeoff]] — hashmap é o exemplo canônico de trocar memória por velocidade de busca
 
+## Heurística dos "Três Níveis de Profundidade"
+
+[[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] usa `Map` como exemplo canônico de uma heurística de estudo: saber usar uma estrutura abstrata (nível 1 — "usei Map") não é o mesmo que saber qual implementação concreta a linguagem usa por baixo (nível 2 — "é uma hash table"), nem entender como essa implementação resolve seus próprios problemas internos (nível 3 — "como ela resolve colisão de hash", ver [[wiki/concepts/hashing]]). A fonte argumenta que esse aprofundamento continua justificando prática de LeetCode/estruturas de dados mesmo numa era em que a IA gera a implementação — o conhecimento de nível 2-3 é o que permite avaliar/depurar o código gerado, não só usá-lo.
+
 ## Key sources
 
+- [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — heurística dos três níveis de profundidade (Map → hash table → resolução de colisão de hash)
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]] — exemplo do trade-off tempo/memória: índice por e-mail (hashmap) troca espaço extra por busca O(1) em vez de O(n) numa lista

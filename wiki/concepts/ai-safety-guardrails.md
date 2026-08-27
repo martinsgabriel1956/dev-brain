@@ -3,8 +3,8 @@ type: concept
 title: "Guardrails de IA"
 aliases: ["guardrails", "ai guardrails", "input/output filters llm"]
 date_created: 2026-08-14
-date_updated: 2026-08-25
-source_count: 3
+date_updated: 2026-08-27
+source_count: 4
 tags: [guardrails, seguranca, ai-safety, prompt-injection, agent-containment]
 skill: tech-mentor-security
 status: stub
@@ -28,6 +28,10 @@ Containment    → sandboxing, circuit breaker — última linha de defesa se as
 
 A mesma fonte descreve o guardrail como um **eixo de roteamento de modelo**, ortogonal à capacidade bruta: [[wiki/entities/lucas-montano]] relata rotear deliberadamente para o Claude em tarefas que tocam dados sensíveis de produção (Stripe + Resend conectados para e-mail de usuário), justamente pelo guardrail alto — "eu nunca utilizaria um modelo chinês aqui, não tem jeito" — e para um modelo mais permissivo em tarefas de hobby sem risco real. Ver detalhamento em [[wiki/concepts/roteamento-automatico-de-modelo]].
 
+## Guardrail Sobre Resultado de Tool, Não Só Sobre o Modelo
+
+[[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] amplia o modelo em camadas acima com um ponto de aplicação adicional, dentro do [[wiki/concepts/ciclo-agente|agent loop]]: o próprio **resultado de uma tool** precisa passar por guardrail antes de ser reinjetado no contexto, porque uma tool pode ser maliciosa (ex. MCP não confiável) e devolver conteúdo perigoso — o guardrail aqui funciona como filtro entre "tool result" e "novo reasoning", não só entre usuário/modelo ou modelo/usuário. A fonte também descreve guardrail como parte de uma camada mais ampla — junto de policy check — sem detalhar mecanismo específico além disso.
+
 ## Relação com Outros Conceitos
 
 - [[wiki/concepts/prompt-injection-jailbreak]] — ataques que os guardrails existem para mitigar.
@@ -36,6 +40,7 @@ A mesma fonte descreve o guardrail como um **eixo de roteamento de modelo**, ort
 
 ## Key Sources
 
+- [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] — guardrail sobre resultado de tool (não só sobre input/output do modelo) como ponto de aplicação dentro do agent loop
 - [[wiki/sources/ai-safety-guardrails]]
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — guardrails como validação antes/depois de chamar agente ou tool, ao lado de jailbreak/prompt injection e OWASP Top 10 LLM
 - [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — caso Levelsio (falso positivo/downgrade Opus→Sonnet, sermão de saúde) como fricção real de guardrail agressivo; guardrail como eixo de roteamento de modelo

@@ -3,8 +3,8 @@ type: concept
 title: "Event-Driven Architecture (EDA)"
 aliases: ["arquitetura orientada a eventos", "eda", "event driven"]
 date_created: 2026-07-30
-date_updated: 2026-07-30
-source_count: 1
+date_updated: 2026-08-27
+source_count: 2
 tags: [event-driven, mensageria, saga-pattern, cqrs, microsservicos, arquitetura]
 skill: tech-mentor-backend
 status: stub
@@ -26,6 +26,11 @@ Também aparece como mecanismo de propagação em [[wiki/concepts/cqrs]]: ao inv
 
 Ganha-se desacoplamento e ausência de gargalo síncrono; perde-se consistência imediata — sempre existe uma janela de tempo (a fonte cita 1-3 segundos como exemplo) entre o evento acontecer e todos os consumidores refletirem esse estado. Por isso EDA nem sempre é a escolha certa: sistemas que exigem resposta imediata de baixíssima latência não toleram esse delay.
 
+## Risco Explícito no CQRS: o Bug da Escrita Dupla
+
+[[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] nomeia diretamente o risco de usar eventos como mecanismo de sincronização em [[wiki/concepts/cqrs]]: escrever na base e publicar o evento não são atômicos por padrão — se as duas escritas divergirem, gera-se uma inconsistência entre o que foi salvo e o que foi lido. Ver [[wiki/concepts/dual-write-problem]] e a solução via [[wiki/concepts/outbox-pattern]].
+
 ## Key Sources
 
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — EDA como nome da arquitetura de fila usada para Saga Pattern, e como mecanismo de propagação write→read em CQRS, com o trade-off de latência/consistência eventual
+- [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] — eventos como opção de consistência eventual no CQRS que permite transformação livre do read model; nomeia explicitamente o bug da escrita dupla como risco

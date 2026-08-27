@@ -3,8 +3,8 @@ type: concept
 title: "Falácia do Custo Afundado"
 aliases: ["sunk cost fallacy", "custo perdido", "custo afundado"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 1
+date_updated: 2026-08-27
+source_count: 2
 tags: [vies-cognitivo, tomada-de-decisao, produtividade, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -33,6 +33,11 @@ O mesmo raciocínio se aplica a seguir conselho de terceiros: se você já segui
 - [[wiki/concepts/paralisia-por-analise]] — outro viés que trava decisão, mas por excesso de opções em vez de apego ao passado
 - [[wiki/concepts/decisao-terceirizada]] — assumir prejuízo e recuperação rápida do erro, em vez de persistir nele
 
+## Versão Identitária: Defesa de Ferramenta Como Defesa Pessoal
+
+[[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] descreve uma variante do mesmo mecanismo aplicada a ferramentas/tecnologias, não a decisões: brincadeiras públicas sobre Flutter, React Native ou Xamarin geram reações de ofensa pessoal ("tu me ofendeu"), não debate técnico. A explicação proposta é a mesma raiz da falácia do custo afundado — tempo investido em especialização se converte em identidade, e questionar a ferramenta é lido como invalidar retroativamente as horas/noites já gastas se especializando nela, o que ativa defensiva em vez de reflexão. Ver também [[wiki/concepts/ego-driven-development]] para a manifestação em decisões de arquitetura.
+
 ## Key Sources
 
+- [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — defesa de tecnologia/ferramenta como defesa de identidade pessoal (Flutter/React Native/Xamarin)
 - [[wiki/sources/pare-de-terceirizar-suas-decisoes]]

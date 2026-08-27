@@ -3,8 +3,8 @@ type: concept
 title: "Context Window"
 aliases: ["janela de contexto", "context length", "token limit"]
 date_created: 2026-05-17
-date_updated: 2026-08-05
-source_count: 3
+date_updated: 2026-08-27
+source_count: 4
 tags: [llm, context-window, tokens, prompt-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -59,6 +59,7 @@ Isso é uma das causas do fenômeno [[token-anxiety]]: a consciência de que o c
 
 ## Fontes
 
+- [[wiki/sources/prompt-context-harness-engineering-tres-pilares]] — corrobora, de memória e sem citar modelo específico, o salto de ~4.000 tokens (2022) para ~1 milhão de tokens hoje já documentado na tabela acima; usa o salto como motivação histórica para a evolução prompt→context→harness engineering
 - [[wiki/sources/microsoft-prompt-engineering-guide]]
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — sessão longa via troca de modelo/conta com contexto compartilhado, em vez de compactação

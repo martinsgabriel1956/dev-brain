@@ -3,8 +3,8 @@ type: concept
 title: "Ciclo de Mercado Tech"
 aliases: ["ciclo de abundância e depressão", "lei da oferta e procura em tech", "ciclo de contratação tech"]
 date_created: 2026-07-03
-date_updated: 2026-08-26
-source_count: 10
+date_updated: 2026-08-27
+source_count: 11
 tags: [carreira, mercado-de-trabalho, oferta-e-procura, ciclo-economico]
 skill: tech-mentor-leadership
 status: draft
@@ -84,8 +84,13 @@ Essa lente é complementar, não concorrente, ao mecanismo de oferta/procura de 
 
 A mesma fonte cita, como contraponto histórico, o Google (nascido de restrição de recursos — PageRank + máquinas baratas) versus o Cadê/kd.com.br (diretório manual, dependente de centenas de pessoas cadastrando páginas, inviável sem dinheiro sobrando) — tratado como `[external, não verificado nesta fonte]`, mas coerente com a tese central de que fundação construída sob restrição sobrevive melhor à virada do ciclo do que operação inflada por capital abundante.
 
+## Salários Altos e Estresse Já Existiam Antes do ZIRP e Antes da IA
+
+[[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] usa um contra-argumento de mercado contra a tese de que "programar sempre foi fácil": se fosse, não explicaria por que devs eram tão requisitados e exigiam salários altos por anos mesmo antes do [[wiki/concepts/ciclo-de-mercado-tech|ciclo de ZIRP]], nem por que havia tanto estresse e esgotamento antes da IA passar a gerar PRs de milhares de linhas — empresas já buscavam "programadores 10x mais rápidos" e submetiam candidatos a entrevistas de LeetCode em múltiplas etapas, um padrão de seletividade que não combina com "trabalho fácil".
+
 ## Key Sources
 
+- [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — salários altos e estresse pré-ZIRP/pré-IA como evidência contra "programar sempre foi fácil"
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]]
 - [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] — paralelo com a bolha de 2000-2001, contratação como métrica de vaidade para investidor, contraste Google vs. Cadê
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — concentração de cargos: front-end segregado sendo absorvido por full-stack, mesma causa (CRUD comoditizado) já vista em "Frontend Pós-IA"

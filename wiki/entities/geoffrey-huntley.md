@@ -3,8 +3,8 @@ type: entity
 title: "Geoffrey Huntley"
 aliases: ["Geoffrey Huntley"]
 date_created: 2026-07-28
-date_updated: 2026-08-03
-source_count: 2
+date_updated: 2026-08-27
+source_count: 3
 tags: [tech-mentor-ai, ralph-loop, harness, loop-engineering]
 skill: tech-mentor-ai
 status: stub
@@ -22,3 +22,4 @@ Engenheiro australiano que, em julho de 2025, publicou o [[wiki/concepts/ralph-l
 
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]]
 - [[wiki/sources/cinco-escolas-programacao-com-ia]] — mesmo método citado como "Escola 4" (loop sem supervisão) numa taxonomia mais ampla
+- [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] — terceira menção, mesma origem do Ralph Loop (julho de 2025) usada como abertura histórica de um guia prático de loop, sem detalhe biográfico novo

@@ -3,8 +3,8 @@ type: entity
 title: "LeetCode"
 aliases: ["leit code", "leetcode.com"]
 date_created: 2026-08-04
-date_updated: 2026-08-12
-source_count: 5
+date_updated: 2026-08-27
+source_count: 6
 tags: [entrevista-tecnica, coding-interview, plataforma, algoritmos]
 skill: cs-fundamentals
 status: stub
@@ -22,6 +22,7 @@ Convenção observada em [[wiki/sources/binary-search-em-5-minutos]]: para probl
 
 ## Key Sources
 
+- [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — defesa de que LeetCode continua relevante mesmo com IA gerando código, via heurística dos "três níveis de profundidade" (ver [[wiki/concepts/hashmap]])
 - [[wiki/sources/binary-search-em-5-minutos]] — resolução ao vivo de binary search, com submissão validada na plataforma
 - [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]]
 - [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]]

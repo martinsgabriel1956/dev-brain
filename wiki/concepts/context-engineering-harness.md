@@ -3,8 +3,8 @@ type: concept
 title: "Context Engineering (nível Harness)"
 aliases: ["context engineering harness", "engenharia de contexto", "project knowledge ia"]
 date_created: 2026-06-02
-date_updated: 2026-08-20
-source_count: 9
+date_updated: 2026-08-27
+source_count: 10
 tags: [context-engineering, harness, rules, skills, project-knowledge]
 skill: tech-mentor-ai
 status: draft
@@ -90,8 +90,13 @@ A fonte também nomeia o efeito colateral do diagnóstico errado: citando Freder
 
 Context engineering não é gerar documentação estática uma vez — é fazer a IA buscar, em tempo real, documentação viva de servidores e bancos de dados da empresa. Em aplicações de grande porte (diferente de uma prova de conceito), cada documento e decisão registrada ao longo do tempo vira um **ativo do projeto**, na mesma lógica de investimento de um teste automatizado: paga-se o custo uma vez, colhe-se o benefício pelo resto do projeto. Ver [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] e [[wiki/concepts/rag-arquitetura-avancada]] para o mecanismo concreto de busca em tempo real.
 
+## Narrativa Didática da Evolução: Prompt → Context → Harness Engineering Como Resposta ao Crescimento da Janela de Contexto
+
+[[wiki/sources/prompt-context-harness-engineering-tres-pilares]] amarra a evolução dos três termos diretamente ao crescimento histórico da janela de contexto disponível: em 2022 (~4.000 tokens), o único jeito de melhorar resultado era refinar a forma de pedir (prompt engineering); com janelas maiores mas ainda limitadas, virou possível — e necessário — selecionar bem o que cabe dentro dela (context engineering); hoje, o problema deixou de ser só "o que cabe no prompt" e passou a ser "o que cerca o modelo" (harness engineering). Reafirma sem contradizer a tese central desta página (ponto ótimo = contexto certo no momento certo, só alcançável com bom harness), mas contextualiza a origem histórica da progressão de forma mais explícita do que as fontes já registradas abaixo.
+
 ## Key Sources
 
+- [[wiki/sources/prompt-context-harness-engineering-tres-pilares]] — evolução prompt→context→harness amarrada ao crescimento histórico da janela de contexto (4k tokens em 2022 → 1M hoje)
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]
 - [[wiki/sources/context-engineering-codebases-grandes-rpi]]

@@ -3,8 +3,8 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-08-25
-source_count: 26
+date_updated: 2026-08-27
+source_count: 27
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack, memory-layers]
 skill: tech-mentor-ai
 status: stable
@@ -106,8 +106,13 @@ Guia oficial publicado pela Anthropic definindo quatro níveis de autonomia para
 
 [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] atribui à Anthropic (transcrição foneticamente incerta, "OPA" no áudio original) uma distinção entre contexto de trabalho, memória para execuções futuras e artefatos revisados como fonte confiável — ver [[wiki/concepts/agent-memory-tres-camadas]] para o detalhamento e a nota de verificação. A mesma fonte descreve uma novidade específica do Claude Code — mensagens cruzadas entre subagentes via um recurso de "list agents" — ver [[wiki/concepts/subagentes]].
 
+## Previsão de Dario Amodei Sobre Fim do Código Escrito Manualmente (Não Verificado)
+
+[[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] cita Dario Amodei (CEO da Anthropic) tendo previsto, cerca de dois anos antes do vídeo, que em ~6 meses os programadores deixariam de escrever código manualmente — previsão que virou piada recorrente na época ("estamos a um mês de seis meses de não precisar mais escrever código"). A fonte argumenta que a previsão errou o prazo por cerca de 8-12 meses, não a tese: no momento do vídeo, relata staff engineers/tech leads/sêniores de grandes empresas não escrevendo código manualmente há meses. Hipótese não verificada da mesma fonte: labs como a Anthropic teriam acesso interno a modelos mais avançados (citada a geração "Opus 4.7/4.8") meses antes do público, o que explicaria por que a previsão pareceu exagerada no momento em que foi feita. Não há confirmação independente nem da declaração original de Amodei nem da hipótese de acesso antecipado — tratar como não verificado até fonte primária.
+
 ## Key Sources
 
+- [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — previsão de Dario Amodei sobre fim do código manual em ~6 meses, e hipótese não verificada de acesso interno antecipado a modelos mais avançados
 - [[wiki/sources/html-vs-markdown-para-agentes-de-ia]]
 - [[wiki/sources/kimi-k3-china-mercado-ia-open-source]] — venda Enterprise no Brasil, subsídio de produto como resposta à concorrência open source — citada de passagem como tendo "divulgado algo parecido" sobre preferir HTML a Markdown na saída de agentes; a fonte não linka o material original, então tratar como não verificado
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]

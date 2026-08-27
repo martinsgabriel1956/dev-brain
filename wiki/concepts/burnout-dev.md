@@ -3,8 +3,8 @@ type: concept
 title: "Burnout em Desenvolvimento"
 aliases: ["burnout", "esgotamento profissional", "developer burnout"]
 date_created: 2026-05-18
-date_updated: 2026-08-10
-source_count: 3
+date_updated: 2026-08-27
+source_count: 4
 tags: [burnout, saude-mental, produtividade, comportamento, carreira]
 skill: tech-mentor-ai
 status: draft
@@ -53,8 +53,13 @@ Outro caminho para o burnout, independente de agentes de IA: perseguir uma meta 
 
 Dado da Faros AI em [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]]: **30% dos devs já bateram nos limites de uso** das ferramentas de IA. O autor lê isso não como sinal de produtividade, mas de adoção insustentável — receita para burnout. Encaixa no mesmo mecanismo do [[wiki/concepts/paradoxo-da-aceleracao]]: a velocidade individual sobe, o volume de trabalho a revisar sobe junto, e o ritmo passa a ser insustentável mesmo que as métricas de output pareçam saudáveis.
 
+## Medir Produtividade via OKR Cruzado com Throughput de IA Intensifica, Não Só Mede
+
+[[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] propõe um mecanismo causal específico: empresas não precisam medir diretamente "produtividade com IA" — basta dobrar o número de tickets exigidos de um dev e cruzar isso com OKRs de negócio. O resultado prático não é visibilidade sobre ganho de eficiência, é intensificação do trabalho disfarçada de métrica — a mesma dinâmica de fundo do [[wiki/concepts/paradoxo-da-aceleracao]] registrado nesta página, agora com o mecanismo de avaliação explicitado.
+
 ## Key Sources
 
+- [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — throughput de tickets dobrado via IA cruzado com OKR como mecanismo de intensificação de trabalho, não de medição
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
 - [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]] — 30% dos devs batendo limites de uso de IA como sinal de adoção insustentável
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]] — inteligência emocional como proteção direta contra burnout; lidar com pressão e prazos sem perder equilíbrio

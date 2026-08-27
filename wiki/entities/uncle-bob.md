@@ -3,8 +3,8 @@ type: entity
 title: "Uncle Bob (Robert C. Martin)"
 aliases: ["uncle bob", "robert c. martin", "robert cecil martin"]
 date_created: 2026-07-03
-date_updated: 2026-08-23
-source_count: 13
+date_updated: 2026-08-27
+source_count: 14
 tags: [clean-code, clean-architecture, solid, autor, quality-gate]
 skill: tech-mentor-backend
 status: stub
@@ -76,6 +76,7 @@ Décima primeira menção, em [[wiki/sources/classes-vs-estruturas-de-dados-uncl
 
 ## Key Sources
 
+- [[wiki/sources/prompt-context-harness-engineering-tres-pilares]] — citado de memória (sem capítulo/página) pelo gráfico de complexidade-versus-tempo de Clean Architecture, usado como justificativa para investir em [[wiki/concepts/harness|harness engineering]]
 - [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]] — métricas de acoplamento de pacote (A, I, D, aferente/eferente, zonas de dor/inutilidade), atribuição inferida
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/principios-solid-ilustrados]] — atribuição da generalização de OCP+LSP em Dependency Inversion (1996), não confirmada contra fonte primária

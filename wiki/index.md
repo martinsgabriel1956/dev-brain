@@ -1,7 +1,8 @@
 ---
 type: index
-date_updated: 2026-08-26
+date_updated: 2026-08-27
 ---
+
 
 
 
@@ -20,6 +21,9 @@ date_updated: 2026-08-26
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] | Autor não identificado com certeza. Guia de trilha de estudo para migrar de linguagens de alto nível para baixo nível: [[wiki/concepts/algoritmos-e-estruturas-de-dados\|fundamentos]] como pré-requisito, [[wiki/concepts/linguagem-c\|C]] como base obrigatória, [[wiki/concepts/arquitetura-de-computadores\|arquitetura de computadores]] (Von Neumann, pipeline, cache, registradores) e prática via [[wiki/concepts/sistemas-operacionais\|sistemas operacionais]] e [[wiki/concepts/sistemas-embarcados\|sistemas embarcados]]; fontes Cormen, Hennessy & Patterson e Carlos Maziero (UFPR) |
+| [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] | [[wiki/entities/lucas-montano\|Lucas Montano]] (atribuição provável): guia prático de [[wiki/concepts/loop-engineering\|Loop Engineering]] — quatro arquivos operacionais (`prompt.md`/`fixplan.md`/specs/`agents.md`), gate verificável como condição de parada, checklist de 6 itens de segurança, desastres reais (banco apagado na Replit, teste trapaceado, estudo de 19% mais lento), casos de sucesso relatados, árvore de decisão spec vs. loop, e demonstração de `/loop` no Claude Code com deploy via MCP da Hostinger |
+| [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] | [[wiki/entities/lucas-montana\|Lucas Montana]] reage ao artigo "Code Was Never the Hard Part": paralelo assembly→C→bytecode/JVM→[[wiki/concepts/linguagem-natural-como-camada-de-abstracao\|linguagem natural]] como camadas sucessivas de abstração; Clean Code migrado pra [[wiki/concepts/quality-gate\|quality gate]] automatizado; previsão de Dario Amodei sobre fim do código manual (errou o prazo, não a tese); [[wiki/concepts/falacia-do-custo-afundado\|identidade profissional]] como defesa de ferramenta; heurística dos "três níveis de profundidade" (Map → hash table → colisão de hash) justificando LeetCode na era de IA |
 | [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] | [[wiki/entities/fabio-akita\|Fábio Akita]] sobre times mistos sênior-júnior (metáfora pedreiro vs. mestre de obras), feedback diário vs. elogio vazio, e paralelo entre o mercado aquecido atual e a bolha da internet de 2000-2001 (contratação como métrica de vaidade, Google vs. Cadê, cultura como manifesto de marketing) |
 | [[wiki/sources/evolucao-memorias-ram-ddr1-a-ddr5]] | Autor não identificado. Evolução completa das cinco gerações de [[wiki/concepts/ddr-sdram\|DDR SDRAM]] (2000–2021): voltagem, pinagem, frequência, largura de banda e buffer de pré-busca de DDR1 a DDR5, cada uma acompanhando uma geração de CPU Intel/AMD; DDR3 destacada como a geração mais longeva (~10 anos) |
 | [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] | Sexto vídeo da série Tier S de [[wiki/entities/pedro-camaforte\|Pedro Camaforte]]: [[wiki/concepts/race-condition\|race condition]]/[[wiki/concepts/toctou\|TOCTOU]] via cadeira de cinema dupla-vendida e estoque sobrescrito; três estratégias — [[wiki/concepts/pessimistic-locking\|locking pessimista]] (`FOR UPDATE`), [[wiki/concepts/optimistic-concurrency-control\|OCC]] (coluna `version`), [[wiki/concepts/reservation-pattern\|reservations]] via Redis `SET NX EX` com fallback de lock pessimista se o Redis cair; demonstração empírica com 5 conexões simultâneas no PostgreSQL |
@@ -129,6 +133,7 @@ date_updated: 2026-08-26
 | [[wiki/sources/loop-engineering-harness-e-a-frase-que-viralizou]] | Pedro Nauke (Compose): loop = 4 peças (objetivo checável, ação, feedback, condição de parada); origem no padrão ReAct (2022/2023); três fatores que destravaram loops longos em 2026 (modelo, harness, estado persistente); correção da frase viral "loop engineering matou harness engineering" — o loop contém o harness, não o substitui |
 | [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] | Vídeo 2 da série de Pedro Nauke: divisão **loop determinístico** (reinicia sessão a cada round, precisa de memória transitória em disco, pior com reasoning alto) vs. **loop agêntico** (via `/go`, compacta em vez de reiniciar, quem julga se terminou é o modelo); teste próprio mostra que breakdown de tasks melhora resultado mesmo em loop agêntico; **padrão judge** (agente separado via stop hook julga se a run terminou, útil com modelos menos densos); **padrão orquestrador** (modelo caro orquestra modelos baratos por tipo de tarefa); gerenciamento de estado via `state.md`; skills que encapsulam spec-driven + report + deep review + PR/squash merge numa run |
 | [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] | Frase viral de Peter Steinberger; matemática de erros compostos (0,99ⁿ) em processos de múltiplas etapas; quatro mitigações (verificação, checkpoints, ferramentas, contexto limpo); caso Vercel (remoção de 80% das ferramentas); Ralph Loop (Geoffrey Huntley, 2025); quatro níveis oficiais de loop da Anthropic (turn/goal/time/proactive); doze componentes do harness (sete documentados) |
+| [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] | Define harness como tudo ao redor do modelo; distingue user harness (rules/skills/CLAUDE.md) do harness embutido na ferramenta; detalha agent run em cinco partes (assemble de contexto/RAG com user/episodic/semantic/procedural memory, tools, agent loop com limites, guardrails, observabilidade com retries/evals); gradiente de controle por ferramenta (OpenClaw > Codex/Claude Code > Cursor); claim não verificado de Claude Code open source pós-vazamento na Anthropic |
 | [[wiki/sources/jspace-cerebro-cloud-antropic]] | Lucas Montano reage à pesquisa "J-Space" da Anthropic: espaço interno de ativações do Claude vinculável a palavras nunca ditas, lido via Jacobian Lens; não é chain-of-thought; tese pessoal do autor de que isso vira base de cobrança/auditoria de agentes |
 | [[wiki/sources/system-design-simulador-hotel-booking-replit]] | System design como a competência que a IA não substitui — construção de um simulador de system design via Replit e exercício prático de hotel booking (gargalo no banco → cache → load balancer → réplicas → fila Kafka, nota de IA 58/100) |
 | [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]] | Pedro Nauck: 5 verdades duras de 20+ anos de carreira — ego não discrimina por senioridade, side projects populares viram maldição de manutenção (caso Docz), reinventar a roda é remix com custo de manutenção, cultura brasileira do "hard worker" normalizou entrega mínima, e overthinking/over-engineering resolve problemas que ainda não existem |
@@ -387,6 +392,8 @@ date_updated: 2026-08-26
 | [[wiki/sources/como-transistores-formam-portas-logicas-celulas-padrao-cmos]] | [[wiki/entities/branch-education\|Branch Education]]: analogia "transistor = pino de Lego" para explicar FinFET tipo N/P, o inversor CMOS de 2 transistores, e como NAND (4)/AND/NOR/OR (6)/XOR/XNOR (10) se constroem em topologia série/paralelo; hierarquia célula padrão → célula macro (somador ~160, multiplicador ~6.100) → núcleo IP → chip com ~26 bilhões de transistores |
 | [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] | [[wiki/entities/lucas-montano\|Lucas Montano]] parte de tweet de [[wiki/entities/pieter-levels\|Pieter Levels]] (Kimi K3 termina tarefa enquanto Claude perde 2 semanas em guardrails, rebaixado Opus→Sonnet "por segurança") para duas teses: risco geopolítico real de negócio americano sobre modelo chinês (janela de atraso da China encolhendo), e "a era do modelo único acabou" — roteamento por **tolerância a guardrail** (Claude para Stripe/e-mail sensível, modelo permissivo para hobby); benchmarks do Opus 5 (forte em Agentic Terminal Coding/Agent Search/Computer Use, atrás do GPT 5.6 Sol em coding puro, sem avanço em dual-use de risco) |
 | [[wiki/sources/rag-introducao-pipeline-completo]] | Aula introdutória de RAG (estilo [[wiki/entities/full-cycle\|Full Cycle]]): o que significa cada letra da sigla, os dois pipelines (ingestão e consulta), [[wiki/concepts/chunking\|chunking]], embeddings/`pgvector`, metadados como mecanismo de filtro e de segurança de acesso, [[wiki/concepts/elegibilidade-de-chunks\|chunks elegíveis]] com threshold de confiança (recusar responder é melhor que alucinar), e a distinção explícita de que RAG não é [[wiki/concepts/agente-ia\|agente de IA]] |
+| [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] | Vídeo de série de System Design (autor não identificado): CQRS enquadrado em dois motivadores independentes (volume e modelo/assinatura); forma mais simples é mesmo código-fonte com deployments escalados de forma diferente, roteados pelo API Gateway; seis técnicas de sincronização write→read organizadas em consistência forte (mesma base+materialized view, transação cruzando write/query service, API Composition) vs. consistência eventual (read replicas, eventos com o bug da escrita dupla, polling) |
+| [[wiki/sources/prompt-context-harness-engineering-tres-pilares]] | Transcrição didática (autor não identificado): evolução prompt engineering → context engineering → harness engineering amarrada ao crescimento histórico da janela de contexto (4k tokens em 2022 → 1M hoje); mantra "se você não é o modelo, você é o harness" restaurado em português sem atribuição; gráfico de complexidade-versus-tempo de Robert Martin/Clean Architecture citado como justificativa de investir em harness |
 
 ## Concepts
 
@@ -711,6 +718,7 @@ date_updated: 2026-08-26
 
 | Página | Hook |
 |---|---|
+| [[wiki/concepts/linguagem-natural-como-camada-de-abstracao]] | Prompt em inglês/português como o degrau mais recente da cadeia assembly→C→bytecode/JVM; disrupção real só existiria se a IA gerasse binário direto |
 | [[wiki/concepts/niveis-adocao-ia-l0-l4]] | L0 (hater) → L4 (fábrica); a maioria dos devs está no L2; salto de produtividade real ocorre no L3 |
 | [[wiki/concepts/spec-driven-development]] | Planning-first: spec antes de executar; LLM executa autônoma; dev revisa resultado, não linha a linha |
 | [[wiki/concepts/worktree-paralelismo]] | Git worktrees isolam tarefas paralelas; base do trabalho L3 — múltiplas specs rodando simultaneamente |
@@ -792,7 +800,10 @@ date_updated: 2026-08-26
 | [[wiki/concepts/mutex]] | Chave de porta para seções críticas — garante que só uma thread acessa o recurso compartilhado por vez |
 | [[wiki/concepts/escalonador]] | Árbitro do processador — Round-Robin, filas de prioridade, aging; Linux usa CFS para processos normais |
 | [[wiki/concepts/context-switch]] | Troca de processo no processador — salva/restaura estado completo; TLB flush é o custo extra entre processos |
-| [[wiki/concepts/interrupcao-de-hardware]] | Sinal que para o processador e transfere controle ao SO — timer, teclado, disco; base do escalonador preemptivo |
+| [[wiki/concepts/interrupcao-de-hardware]] | Sinal que para o processador e transfere controle ao SO — timer, teclado, disco; base do escalonador preemptivo; em embarcados exige tabela de interrupção própria (ex.: NVIC do ARM) |
+| [[wiki/concepts/sistemas-operacionais]] | Interface entre hardware e aplicações — troca de tarefas, sistema de arquivos, malloc e proteção de memória; construir um SO do zero (mesmo minimalista, para Arduino/ESP) como uma das melhores portas de entrada prática em baixo nível |
+| [[wiki/concepts/sistemas-embarcados]] | Muito I/O, atuadores, interrupções customizadas por sensor, drivers próprios — diferente de SO, não dá para abstrair a arquitetura específica do processador |
+| [[wiki/concepts/arquitetura-de-computadores]] | Von Neumann, pipeline, cache, registradores — a base teórica que explica por que side-channel attacks e controle real de baixo nível exigem entender o hardware por dentro |
 | [[wiki/concepts/memoria-virtual]] | Cada processo crê ter toda a memória — page table traduz virtual→físico; page fault é o custo do miss |
 | [[wiki/concepts/swap]] | Extensão da RAM no disco — páginas frias movidas para liberar RAM; uso excessivo causa thrashing |
 | [[wiki/concepts/sistema-de-arquivos]] | Abstração sobre blocos do disco — nomes, hierarquia, tabela de blocos; deletar só remove a referência |
@@ -874,6 +885,7 @@ date_updated: 2026-08-26
 | [[wiki/concepts/compactacao-de-texto]] | Deflate = LZ77/LZSS (sliding window, triplet offset/length/caractere) + Huffman coding (priority queue, código curto para caractere frequente); gzip é o formato de arquivo que embrulha o deflate, não o algoritmo em si |
 | [[wiki/concepts/linguagem-c]] | C como fundação pedagógica — próxima do hardware mas legível, biblioteca padrão enxuta força construir as próprias estruturas; andaime da hash table de C ao `dict` de Python |
 | [[wiki/concepts/primeiros-principios]] | Decompor até os fatos fundamentais e reconstruir — entender *como* funciona por dentro; habilita design informado e diagnóstico, separa engenheiro de coder |
+| [[wiki/concepts/engenharia-reversa]] | Partir de assembly e reconstruir a lógica original em C — entender comportamento de um binário sem acesso ao código-fonte |
 
 ### Formatos de Imagem & Compressão
 
@@ -1202,6 +1214,7 @@ date_updated: 2026-08-26
 | [[wiki/concepts/modelo-de-dominio-anemico]] | Anti-padrão: classe com dados e setters puros, regras de negócio de fora — objeto que é estrutura de dados disfarçada; o oposto do domínio rico |
 | [[wiki/concepts/database-per-service]] | Banco isolado por microsserviço resolve deadlock de banco compartilhado, mas cria problema de atomicidade entre serviços — motiva 2PC/Saga |
 | [[wiki/concepts/event-driven-architecture]] | Comunicação via eventos publicados/reagidos em vez de chamadas síncronas — base do Saga coreografado e da propagação write→read em CQRS |
+| [[wiki/concepts/dual-write-problem]] | "Bug da escrita dupla": escrever no banco e publicar evento não são atômicos por padrão — risco central de sincronizar CQRS via eventos, resolvido pelo Outbox Pattern |
 | [[wiki/concepts/soap]] | Protocolo XML de 1998 com contrato rígido via WSDL; sobrevive em bancos, seguradoras e NF-e mesmo após REST+JSON dominar APIs novas |
 | [[wiki/concepts/xml-extensible-markup-language]] | Formato de dados estruturado de 1998, espinha dorsal da tecnologia corporativa pré-JSON; ainda essencial em Office, Java, config e NF-e |
 | [[wiki/concepts/esb-enterprise-service-bus]] | Barramento central de integração pré-microsserviços — "smart endpoints, dumb pipes" nasceu como reação a ele; ainda essencial em empresas com grande legado |
@@ -1482,6 +1495,10 @@ date_updated: 2026-08-26
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/canal-desempenho-baixo-nivel]] | Autoria não confirmada (transcrição soa como "Way") — criador de conteúdo sobre programação de baixo nível e performance; guia de trilha de estudo C → arquitetura → SO/embarcados |
+| [[wiki/entities/carlos-maziero]] | Professor da UFPR — livro de sistemas operacionais com projeto acompanhante de SO do zero (PingOS), citado como fonte em português para estudar SO |
+| [[wiki/entities/lucas-montana]] | Canal de reação/leitura comentada de artigos técnicos; argumenta que geração de código por IA é mais uma camada de abstração, não ruptura |
+| [[wiki/entities/cursor]] | IDE agêntica multi-modelo; menor controle de harness exposto ao usuário entre as ferramentas comparadas na wiki |
 | [[wiki/entities/mit-media-lab]] | Laboratório do MIT, criador do Scratch — linguagem visual usada como primeira linguagem ensinada no CS50 |
 | [[wiki/entities/harvard-university]] | Universidade onde o CS50 é ministrado — "John Harvard" é a analogia recorrente de busca em catálogo telefônico nas aulas de algoritmos |
 | [[wiki/entities/blaine-cook]] | Engenheiro do Twitter, cocriador do OAuth (2007) — buscava melhorar o compartilhamento de acesso, vindo de uma implementação de OpenID |

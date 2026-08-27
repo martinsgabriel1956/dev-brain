@@ -3,9 +3,9 @@ type: concept
 title: "Interrupção de Hardware"
 aliases: ["interrupt", "hardware interrupt", "IRQ", "timer interrupt"]
 date_created: 2026-04-22
-date_updated: 2026-06-26
-source_count: 2
-tags: [sistema-operacional, hardware, cs-fundamentals]
+date_updated: 2026-08-27
+source_count: 3
+tags: [sistema-operacional, hardware, cs-fundamentals, lang-systems, embarcados]
 skill: cs-fundamentals
 status: stable
 ---
@@ -45,6 +45,10 @@ O [[concepts/escalonador]] preemptivo depende do timer interrupt para funcionar:
 
 Além das interrupções de hardware, existe o **software interrupt** (trap): o processo voluntariamente chama o SO via [[concepts/syscall]] para pedir um serviço. O mecanismo é similar — CPU troca de modo e transfere controle ao kernel.
 
+## Interrupções customizadas em sistemas embarcados
+
+Em [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]], interrupções aparecem como um dos motivos concretos para se aprofundar em [[wiki/concepts/arquitetura-de-computadores]]: em [[wiki/concepts/sistemas-embarcados|sistemas embarcados]] e críticos, é comum precisar definir **interrupções customizadas** com base na leitura de sensores, o que exige entender clocks de interrupção e como configurar a **tabela de interrupções** específica do processador — o exemplo dado é o **NVIC** (Nested Vectored Interrupt Controller) do ARM. Diferente de um SO de propósito geral, onde boa parte da arquitetura pode ser abstraída, em embarcados isso não é opcional.
+
 ## Ver também
 
 - [[concepts/escalonador]] — usa timer interrupt para preempção
@@ -56,3 +60,4 @@ Além das interrupções de hardware, existe o **software interrupt** (trap): o 
 
 - [[sources/sistema-operacional-por-baixo-dos-panos]]
 - [[sources/como-sistemas-operacionais-funcionam]]
+- [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] — interrupções customizadas em embarcados; tabela de interrupções (NVIC do ARM)
