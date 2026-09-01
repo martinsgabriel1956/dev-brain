@@ -3,8 +3,8 @@ type: concept
 title: "CQRS — Command Query Responsibility Segregation"
 aliases: ["command query responsibility segregation", "cqrs pattern"]
 date_created: 2026-05-31
-date_updated: 2026-08-27
-source_count: 8
+date_updated: 2026-09-01
+source_count: 9
 tags: [cqrs, arquitetura, event-sourcing, ddd, sistemas-distribuidos]
 skill: tech-mentor-backend
 status: draft
@@ -151,3 +151,4 @@ Antes de separar em serviços/código-fonte distintos, a forma mais simples de C
 - [[wiki/sources/cqrs-e-event-sourcing-explicado-na-pratica]] — deriva CQRS de CQS (get/set em nível de função); fragmentação física do banco por natureza de carga como o "verdadeiro ganho"; tese de que CQRS quase sempre existe a serviço de Event Sourcing
 - [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]] — atribui a criação do CQRS a Greg Young; motivação via exemplo de agregado DDD; erro comum de reaproveitar models entre comando e leitura (viola SRP)
 - [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] — dois motivadores independentes (volume e modelo/assinatura); CQRS sem código-fonte separado (mesmo código, deployments com escala diferente); seis técnicas de sincronização organizadas em consistência forte (mesma base+views, transação cruzada, API Composition) vs. eventual (read replicas, eventos com bug da escrita dupla, polling)
+- [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — vídeo focado em Event Sourcing que recomenda CQRS como conteúdo complementar; não desenvolve CQRS diretamente, só reforça a proximidade entre os dois padrões

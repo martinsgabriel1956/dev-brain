@@ -3,8 +3,8 @@ type: concept
 title: "Sharding"
 aliases: ["database sharding", "particionamento horizontal", "shard", "shard key"]
 date_created: 2026-06-26
-date_updated: 2026-08-03
-source_count: 3
+date_updated: 2026-09-01
+source_count: 4
 tags: [system-design, banco-de-dados, sharding, escalabilidade, distribuido]
 skill: tech-mentor-system-design
 status: stub
@@ -70,6 +70,7 @@ Não faz sentido tentar fazer sharding de um monolito inteiro com centenas de ta
 1. [[escalabilidade-vertical]] — mais RAM/CPU no banco (mais simples)
 2. [[replicacao-de-banco]] — read replicas para aliviar leitura
 3. [[cache]] — reduzir hits ao banco antes de distribuí-lo
+4. [[wiki/concepts/particionamento-de-tabela]] — particionamento lógico (RANGE/LIST/HASH) dentro do mesmo banco, sem o custo de múltiplos nós físicos do sharding
 
 > **Regra:** sharding é complexo. Esgote as alternativas primeiro.
 
@@ -88,3 +89,4 @@ Não faz sentido tentar fazer sharding de um monolito inteiro com centenas de ta
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
 - [[wiki/sources/large-scale-vs-complex-architecture]] — sharding citado como exemplo de técnica que escala TPS/resiliência sem necessariamente tornar a arquitetura "complexa" em alto nível; movimentação de usuário entre shards como caso concreto que exige control plane
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — distinção entre boa shard key e boa distribuição (range-based por faixa fixa de `user_id` vs. por `created_at`), problema da celebridade, shard global para tabelas sem FK à shard key, e sharding como passo posterior à decomposição por DDD/microsserviços
+- [[wiki/sources/particionamento-por-list-postgresql-sql-30-dias]] — particionamento por LIST citado como alternativa mais leve ao sharding físico (mesmo banco, roteamento por partição)

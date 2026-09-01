@@ -3,8 +3,8 @@ type: entity
 title: "Augusto Galego"
 aliases: ["Augusto Galego", "augustogalego.com"]
 date_created: 2026-07-20
-date_updated: 2026-08-26
-source_count: 12
+date_updated: 2026-08-28
+source_count: 13
 tags: [pessoa, programador, youtuber, brasil, devops, system-design, carreira, agentes-ia, code-review]
 skill: tech-mentor-infra
 status: stub
@@ -52,6 +52,10 @@ Em [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-
 
 Além de infra/deploy, carreira/system design e reação a agentes de IA, produz conteúdo introdutório de segurança com disclaimer explícito de não-especialista ("não sou um expert em criptografia... cybersegurança... autenticação"). Em [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] explica hash/salt/pepper organizando a defesa em torno de dois modelos de ameaça — ataque online (rate limit + MFA) vs. ataque offline (hash + salt + pepper) — e fecha com uma escada de recomendação prática terminando em identity providers (Clerk, Auth0, Cognito) e passwordless (Magic Link, login social), incluindo preferência pessoal por não lidar com senha em SaaS B2C.
 
+## Segunda Aula de Segurança: SQL Injection
+
+Continuando a linha de conteúdo introdutório de segurança iniciada com hash/salt/pepper, em [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] explica SQL Injection do zero e organiza a defesa em sete camadas concêntricas (query parametrizada, prepared statement, menor privilégio no banco, solução nativa do backend, ORM/query builder, validação de input, WAF), fechando com a mesma disciplina prática de "corrija primeiro a nível de código" e o mesmo padrão de patrocínio ("cupom Galego") que confirma autoria.
+
 ## Key Sources
 
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]]
@@ -66,3 +70,4 @@ Além de infra/deploy, carreira/system design e reação a agentes de IA, produz
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — autoria confirmada (PWD do vídeo identifica o user "Augusto Galego"): comandos básicos de Linux e por que devs precisam reconhecê-los na era dos agentes; patrocínio Abacus
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — autoria confirmada por autorreferência direta ao próprio nome na fala; reação a tweet sobre LeetCode/System Design como filtro de entrevista vs. diferencial real de trabalho
 - [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — autoria confirmada por autorreferência ("cupom galego"); introdução a hash/salt/pepper organizada por modelo de ameaça (online vs. offline), com escada de recomendação até identity providers e passwordless
+- [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] — autoria confirmada por "cupom Galego"; SQL Injection explicado do zero com sete camadas de defesa concêntricas, do banco (query parametrizada, prepared statement) à borda (WAF)

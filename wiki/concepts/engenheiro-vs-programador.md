@@ -4,7 +4,7 @@ title: "Engenheiro vs. Programador"
 aliases: ["programador vs engenheiro", "mentalidade de engenharia", "software engineer vs coder"]
 date_created: 2026-07-03
 date_updated: 2026-08-27
-source_count: 9
+source_count: 10
 tags: [carreira, mentalidade, arquitetura, senioridade]
 skill: tech-mentor-leadership
 status: draft
@@ -74,8 +74,13 @@ Não é acumular ferramentas (ver [[wiki/concepts/apego-a-ferramentas]]), mas de
 
 [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] reage a um artigo que defende essa frase como insulto aos programadores, e concorda em parte: hoje quase qualquer pessoa consegue gerar código funcional via IA, o que revelou que a barreira nunca foi só sintaxe — nem todo mundo *quer* programar, nem todo mundo consegue pensar sistematicamente ou decompor um problema, mesmo com a geração de código facilitada. Ao mesmo tempo, rebate o artigo no ponto simétrico: devs também estão absorvendo trabalho de produto/gestão (comunicação com stakeholders, alinhamento a OKRs) à medida que cargos de PM/EM são cortados por layoff — ou seja, o eixo "decidir o que construir" não fica só com produto, também passa a ser cobrado do dev sênior/tech lead.
 
+## O "Pentester Operário" e a Esteira de Agentes
+
+[[wiki/sources/pipeline-agentes-ia-pentest-idor-critica-nao-substitui]] aplica a mesma dicotomia ao domínio de segurança ofensiva: um pipeline de agentes de IA encontrou um IDOR que dois pentests manuais não viram, mas também gerou um volume alto de falsos positivos cuja triagem virou o novo gargalo humano do processo — ver [[wiki/concepts/economia-da-descoberta-automatizada-de-vulnerabilidades]]. A tese explícita da fonte: quem "só executa checklist" (o programador/pedreiro deste domínio) perde valor relativo quando a execução exaustiva vira barata; quem entende o domínio a ponto de desenhar e auditar o pipeline — escolher agentes, calibrar onde o humano valida, julgar o que é sinal contra ruído — é o engenheiro deste cenário, e esse papel exige *mais* conhecimento de segurança para supervisionar, não menos.
+
 ## Key Sources
 
+- [[wiki/sources/pipeline-agentes-ia-pentest-idor-critica-nao-substitui]] — aplicação da dicotomia a pentest: pipeline de agentes acha o que humanos não acham, mas quem desenha/audita a esteira é quem sustenta valor
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — concordância parcial com "programar é fácil, decidir é difícil"; devs absorvendo trabalho de produto/gestão por layoff em cargos de PM/EM
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]]
 - [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — autocorreção de lista própria de 4 anos atrás: soft skills reclassificado de item de rodapé para único diferencial real de pleno

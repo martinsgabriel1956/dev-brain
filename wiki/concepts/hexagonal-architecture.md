@@ -3,8 +3,8 @@ type: concept
 title: "Hexagonal Architecture (Ports & Adapters)"
 aliases: ["arquitetura hexagonal", "ports and adapters", "ports adapters", "hexagonal"]
 date_created: 2026-05-04
-date_updated: 2026-08-19
-source_count: 8
+date_updated: 2026-09-01
+source_count: 9
 tags: [arquitetura, hexagonal, ports-adapters, acoplamento, testabilidade]
 skill: tech-mentor-backend
 status: stable
@@ -128,8 +128,13 @@ it("should throw when email already exists", async () => {
 - CRUDs simples sem lógica de negócio
 - MVPs com uma pessoa e < 300 linhas
 
+## Adapters Nem Sempre São Genéricos: Infraestrutura Contextual vs. Infraestrutura Pura
+
+[[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] adiciona uma distinção de granularidade dentro do que essa página chama de "Adapter": adapters como controllers, resolvers GraphQL e repositórios têm **conhecimento específico do contexto de domínio** (ex.: `UserController` só faz sentido dentro do módulo `identity`) — por isso não são totalmente reusáveis entre módulos, mesmo sendo tecnicamente "infraestrutura". Já um adapter puramente técnico (setup de ORM, logger, config) é **infraestrutura pura**: genérico, movível entre módulos sem alteração — é esse segundo tipo que vira um módulo de infraestrutura compartilhado numa arquitetura modular. Ver [[wiki/concepts/tipos-de-modulos]] para a taxonomia completa.
+
 ## Key Sources
 
+- [[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] — distinção entre adapters contextuais (não reusáveis) e infraestrutura pura (reusável entre módulos)
 - [[sources/hexagonal-architecture]] — referência técnica aprofundada (Alistair Cockburn, driving/driven ports)
 - [[sources/ports-and-adapters-codebase-para-ia]] — antes/depois com exemplo de blog + ângulo de IA
 - [[wiki/sources/mappers-conversao-entre-camadas]] — mapper como peça dentro do adapter de persistência

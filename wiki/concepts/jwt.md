@@ -3,8 +3,8 @@ type: concept
 title: "JWT — JSON Web Token"
 aliases: ["JWT", "JSON Web Token", "access token", "refresh token"]
 date_created: 2026-07-27
-date_updated: 2026-08-14
-source_count: 4
+date_updated: 2026-09-01
+source_count: 5
 tags: [jwt, autenticacao, stateless, token, seguranca]
 skill: tech-mentor-security
 status: draft
@@ -81,6 +81,14 @@ Como o JWT é stateless, não dá para invalidar um token antes de expirar sem r
 
 Se o usuário faz logout ou a conta é comprometida, o servidor marca o Refresh Token como revogado; na próxima tentativa de renovação, o servidor recusa e o usuário precisa autenticar de novo. É o equilíbrio entre requisições rápidas/stateless e controle de revogação centralizado.
 
+## O Ecossistema JOSE por Trás do JWT
+
+O JWT é apenas o **formato**; quem define como ele é assinado e/ou criptografado é o ecossistema [[wiki/concepts/jose|JOSE]] (JSON Object Signing and Encryption) — quatro especificações do IETF: [[wiki/concepts/jws]] (assinatura — o que este documento descreve acima), [[wiki/concepts/jwe]] (criptografia do payload, para quando dado sensível não pode ficar nem em base64), [[wiki/concepts/jwk]] (formato JSON para publicar/rotacionar chaves públicas via endpoint `.well-known/jwks.json`) e [[wiki/concepts/jwa]] (catálogo de algoritmos válidos).
+
+O JWA é a origem de um trade-off importante: por listar múltiplos algoritmos válidos e permitir que o header do próprio token declare qual usar ([[wiki/concepts/cipher-agility|cipher agility]]), ele abre a superfície para o ataque de **[[wiki/concepts/algorithm-confusion]]** — um verificador que confia cegamente no `alg` do header pode ser enganado a aceitar `alg: none` (sem assinatura) ou a confundir um algoritmo assimétrico com um simétrico. A defesa é a mesma já recomendada acima: sempre declarar `algorithms: [...]` explicitamente na verificação, nunca deixar o token decidir seu próprio algoritmo.
+
+A alternativa que elimina essa classe de ataque por design é o [[wiki/concepts/paseto]], que troca a flexibilidade de algoritmo por versões fixas e imutáveis.
+
 ## ID Token vs Access Token
 
 No contexto de [[wiki/concepts/openid-connect]], o ID Token é especificamente um JWT com claims padronizadas (`issuer`, `subject`, `audience`) que prova **quem é o usuário**, diferente do Access Token do [[wiki/concepts/oauth2]], que prova **o que o app pode fazer**.
@@ -93,6 +101,9 @@ No contexto de [[wiki/concepts/openid-connect]], o ID Token é especificamente u
 - [[wiki/concepts/token-relay-pattern]] — propagação do token (incluindo JWT) por múltiplos serviços internos
 - [[wiki/concepts/criptografia]] — assinatura do JWT usa HMAC (chave simétrica) ou par de chaves assimétrico, dependendo do algoritmo
 - [[wiki/concepts/refresh-token-rotation]] — aprofundamento da rotação: reuse detection e fingerprinting de dispositivo
+- [[wiki/concepts/jose]] — ecossistema de especificações (JWS/JWE/JWK/JWA) que define como o JWT é assinado/criptografado
+- [[wiki/concepts/algorithm-confusion]] — ataque que explora a cipher agility do JWA quando o servidor confia no `alg` do header
+- [[wiki/concepts/paseto]] — alternativa de cipher rigidity que elimina algorithm confusion por design
 
 ## Key Sources
 
@@ -100,3 +111,4 @@ No contexto de [[wiki/concepts/openid-connect]], o ID Token é especificamente u
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — HMAC vs. RSA/ECDSA, chave fraca, validação de issuer/audience, localStorage vs. cookie httpOnly, rotação de refresh token
 - [[wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth]] — o ID Token do OIDC é um JWT distinto do access token, destinado à aplicação cliente (não à API)
 - [[wiki/sources/refresh-token-pattern-access-token-de-curta-duracao]] — janela de exposição, por que Access Token de longa duração é falha de segurança, e por que armazenar refresh token só no backend quebra o fluxo stateless
+- [[wiki/sources/jose-jws-jwe-jwk-jwa-algorithm-confusion-paseto]] — ecossistema JOSE (JWS/JWE/JWK/JWA) por trás do JWT, ataque de algorithm confusion (`alg: none` e RS256→HS256), e o PASETO como alternativa de cipher rigidity

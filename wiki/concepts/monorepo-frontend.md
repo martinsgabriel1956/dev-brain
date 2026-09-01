@@ -22,6 +22,10 @@ Apps importam de packages; packages nunca importam de apps — a dependência fl
 
 É a peça que permite ao [[wiki/concepts/microfrontend-baseado-em-rotas|microfrontend baseado em rotas]] entregar builds/deploys independentes por módulo sem herdar a fragmentação de governança e versionamento dos [[wiki/concepts/microfrontends-parciais|microfrontends parciais/polirrepo]] — o versionamento continua centralizado num único grafo de dependências, em vez de exigir bump manual repo a repo.
 
+## Equivalente no Backend
+
+[[wiki/concepts/monorepo-backend]] documenta a mesma estrutura `apps/`+`packages/` aplicada ao backend, onde ela serve de base para [[wiki/concepts/composicao-de-modulos|composição de módulos]] (module composition).
+
 ## Key Sources
 
 - [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] — libs de monorepo (ex. Nx) como substituto de pasta compartilhada na transição de monolito modular para microfrontend baseado em rotas

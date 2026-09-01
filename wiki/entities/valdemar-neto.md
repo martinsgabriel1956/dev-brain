@@ -1,23 +1,20 @@
 ---
 type: entity
 title: "Valdemar Neto"
-aliases: ["Valdemar"]
-date_created: 2026-06-01
-date_updated: 2026-08-03
-source_count: 5
-tags: [nodejs, javascript, backend, arquitetura, youtuber, tech-leads-club]
-skill: tech-mentor-ai
+aliases: ["Valdemar Neto"]
+date_created: 2026-09-01
+date_updated: 2026-09-01
+source_count: 2
+tags: [arquitetura-software, monolito-modular, criador-de-conteudo, tech-leads-club, backend]
+skill: tech-mentor-backend
 status: stub
 ---
 
 # Valdemar Neto
 
-Engenheiro de software brasileiro, criador de conteúdo sobre desenvolvimento avançado, arquitetura de software e IA. Cofundador da **Tech Leads Club** — comunidade para pessoas sênior com mais de 2.000 membros ativos (70%+ sênior).
+Cofundador da [[wiki/entities/tech-leads-club]], com passagens por Atlassian e Totvs. Pesquisa e aplica arquiteturas modulares e sistemas de grande porte há mais de 6 anos. Está escrevendo um livro, "Os 10 Princípios da Arquitetura Modular", e ministra o curso "Aplicações Enterprise" na Tech Leads Club.
 
-## Key sources
+## Key Sources
 
-- [[wiki/sources/agents-md-vale-a-pena-paper-zurique]] — análise do paper de Zurique sobre efetividade de agents.md
-- [[wiki/sources/context-engineering-codebases-grandes-rpi]] — progressive disclosure, on-demand loading e workflow RPI para codebases grandes
-- [[wiki/sources/escala-niveis-uso-ia-engenheiros]] — análise da escala de 7 níveis de uso de IA; relato pessoal de estar no nível 6
-- [[wiki/sources/product-engineer-vale-do-silicio-2026]] — relato de viagem ao Vale do Silício; conversas com Cursor, Tray, Stripe, Databricks; conceito de Product Engineer
-- [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — autoria não confirmada por nome na fala, inferida por menção ao workshop "Desenvolvimento Assistido por IA Avançado" e à skill "TLC Spec Driven" (Tech Leads Club); demonstra breakdown de tasks com execução via 4 subagentes em paralelo
+- [[wiki/sources/os-10-principios-arquitetura-modular-valdemar-neto]] — distinção monolito modular vs. [[wiki/concepts/arquitetura-modular]], os 10 princípios nomeados, exemplo de sistema de streaming em NestJS/NX
+- [[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] — taxonomia de [[wiki/concepts/tipos-de-modulos|três tipos de módulo]] (domínio, infraestrutura pura, feature), estrutura Core/Supporting Infrastructure/Infraestrutura Pura, mesmo exemplo "Fake Flix"

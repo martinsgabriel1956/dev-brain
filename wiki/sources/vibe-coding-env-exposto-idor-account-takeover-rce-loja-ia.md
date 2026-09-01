@@ -3,7 +3,7 @@ type: source
 title: "Vibe coding, .env exposto, IDOR, account takeover e RCE numa loja feita com IA"
 aliases: ["loja do lucas pentest", "env exposto idor account takeover rce", "geraldo alcantara loja ia"]
 date_created: 2026-07-31
-date_updated: 2026-07-31
+date_updated: 2026-08-27
 source_file: /home/gabriel-martins/Documentos/dev-brain/raw/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia.md
 source_url: ""
 author: "Geraldo Alcântara"
@@ -38,6 +38,10 @@ Vídeo educacional (ambiente de laboratório controlado, autorizado) de Geraldo 
 ## Concepts
 
 [[wiki/concepts/idor]] · [[wiki/concepts/secrets-management]] · [[wiki/concepts/attack-surface]] · [[wiki/concepts/vibe-coding]] · [[wiki/concepts/account-takeover]] · [[wiki/concepts/upload-arbitrario-rce]] · [[wiki/concepts/hardening-de-servidor]] · [[wiki/concepts/autenticacao-e-autorizacao]]
+
+## IDOR Manual vs. IDOR Encontrado por Esteira de Agentes
+
+Aqui o IDOR foi encontrado por um pentester humano (Geraldo Alcântara) contra um sistema construído via vibe coding, sem nenhum pentest prévio. [[wiki/sources/pipeline-agentes-ia-pentest-idor-critica-nao-substitui]] mostra o cenário inverso: um IDOR encontrado por um pipeline de agentes de IA autônomos, num sistema *já auditado duas vezes* por pentests manuais. As duas fontes juntas reforçam que IDOR continua sendo a falha de controle de acesso mais comumente perdida, seja o testador humano ou uma esteira de agentes — o que muda é o custo e a exaustividade da busca, não a natureza do erro. Ver [[wiki/concepts/economia-da-descoberta-automatizada-de-vulnerabilidades]].
 
 ## Conexão com fontes existentes
 
