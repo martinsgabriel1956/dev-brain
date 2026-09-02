@@ -3,8 +3,8 @@ type: concept
 title: "Priority Queue (Fila de Prioridade) / Heap"
 aliases: ["priority queue", "fila de prioridade", "heap", "min-heap", "max-heap"]
 date_created: 2026-08-18
-date_updated: 2026-08-18
-source_count: 1
+date_updated: 2026-09-02
+source_count: 2
 tags: [cs-fundamentals, estruturas-de-dados, heap, priority-queue, huffman-coding]
 skill: cs-fundamentals
 status: stub
@@ -34,7 +34,9 @@ Estrutura de dados que, ao contrário de uma [[wiki/concepts/fila]] comum (FIFO)
 
 - [[wiki/concepts/arvore]] — o heap é uma árvore binária especializada (heap-ordered, não busca-ordered como uma BST); a árvore de Huffman resultante da priority queue, porém, não é um heap em si — é o produto final da sequência de merges.
 - [[wiki/concepts/fila]] — mesma interface conceitual (enqueue/dequeue), ordem de saída diferente (prioridade em vez de chegada).
+- [[wiki/concepts/ambulance-pattern]] — **falso cognato em arquitetura de mensageria**: implementar priorização de mensagens como uma fila de prioridade única (heap ordenado por campo de prioridade) causa starvation do tráfego normal, exatamente porque o item de maior prioridade sempre sai primeiro. O Ambulance Pattern resolve isso evitando esse modelo — usa filas físicas separadas em vez de uma única priority queue.
 
 ## Key sources
 
 - [[wiki/sources/gzip-deflate-huffman-lz77]] — uso de priority queue na construção passo a passo da árvore de Huffman dentro do deflate/gzip
+- [[wiki/sources/ambulance-pattern-priorizacao-mensagens-mark-richards]] — contraste: por que usar uma priority queue única para priorizar mensagens em mensageria distribuída causa starvation, ao contrário do uso da estrutura de dados em algoritmos como Huffman/Dijkstra

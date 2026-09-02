@@ -3,8 +3,8 @@ type: concept
 title: "Síndrome do Impostor"
 aliases: ["impostor syndrome", "medo de ser descoberto", "sensação de fraude"]
 date_created: 2026-07-03
-date_updated: 2026-07-31
-source_count: 5
+date_updated: 2026-09-01
+source_count: 6
 tags: [carreira, saúde-mental, júnior, inteligência-emocional]
 skill: tech-mentor-leadership
 status: draft
@@ -43,6 +43,12 @@ Essa mesma fonte também reforça um antídoto adicional ao já registrado acima
 
 [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] aplica a mesma lógica de "estado atual é provisório, não permanente" a um contexto ainda não coberto na wiki: a reprovação num processo seletivo. A recomendação prática é [[wiki/concepts/persistencia-em-processo-seletivo|perguntar quando é possível tentar novamente]] em vez de tratar a reprovação como veredito definitivo — com um caso relatado de candidato que voltou meses depois muito mais evoluído e foi contratado.
 
+## Variante: Medo de Aplicar, Não Só Medo Depois de Contratado
+
+[[wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub]] documenta uma manifestação anterior no tempo às demais registradas nesta página: o medo de **aplicar** para uma vaga (no caso, estágio), não o medo que surge depois de já estar no emprego. Em resposta direta a uma pergunta de espectador ("como perder o medo de aplicar para vagas de estágio? Nunca me sinto preparado"), a posição do autor é que a sensação de despreparo **não tem prazo de validade que se resolve sozinho com mais estudo** — sempre vai parecer que falta alguma coisa, que existe alguém mais qualificado, ou que "deveria estudar mais antes de tentar". A recomendação é agir apesar da sensação ("aplicar com medo mesmo"), não esperar ela desaparecer, porque esperar se sentir pronto pode significar esperar indefinidamente.
+
+Isso conecta com [[wiki/concepts/persistencia-em-processo-seletivo]] numa sequência temporal: esta variante cobre o momento *antes* de aplicar (medo de tentar), enquanto aquele conceito cobre o momento *depois* de uma reprovação (medo de tentar de novo) — ambos resolvidos pela mesma lógica de fundo ("o estado atual é provisório, agir é o que muda o estado", não esperar uma sensação de prontidão que não chega por si só).
+
 ## Relacionado
 
 - [[wiki/concepts/inteligencia-emocional]] — regular a resposta emocional a crítica é o antídoto direto
@@ -57,3 +63,4 @@ Essa mesma fonte também reforça um antídoto adicional ao já registrado acima
 - [[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]] — variante sênior da síndrome (medo de estar desatualizado) e o enquadramento de que o estado atual de falta de habilidade é provisório
 - [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] — reenquadramento "burrice vs. inteligência" → "experiência vs. inexperiência"; remédio para inexperiência é experimentar
 - [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — mesma lógica de "estado provisório" aplicada à reprovação em processo seletivo, com recomendação de perguntar quando tentar de novo
+- [[wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub]] — variante anterior no tempo: medo de aplicar para a vaga, antes mesmo de existir reprovação; recomendação de agir apesar da sensação de despreparo permanente

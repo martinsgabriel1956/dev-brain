@@ -8787,3 +8787,95 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha em Sources; nova linha em Concepts (particionamento-de-tabela)
 
 **Notas / open questions:** (1) **Nenhuma contradição** — fonte é uma continuação direta de uma playlist ("dia 12", particionamento por RANGE) que **não está ingerida** nesta wiki; o novo conceito [[wiki/concepts/particionamento-de-tabela]] cobre RANGE apenas com apoio da skill `tech-mentor-data` (marcado `[skill: tech-mentor-data]`), não por fonte primária própria — registrado como open question, candidato a fonte futura se o "dia 12" for trazido para `raw/`. (2) Autor/canal do vídeo não identificado — sem nome de pessoa ou canal na fala, apenas menções genéricas a like/inscrição/sino. (3) Distinção formal entre particionamento (lógico, mesmo banco) e [[wiki/concepts/sharding]] (físico, múltiplos nós) reforçada nos dois conceitos, pois a fonte usa linguagem que poderia confundir os dois. (4) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-01] ingest | Escopo Bem Definido em Projetos: o Valor Está no Processo, Não no Resultado (Lord / LoreHub)
+
+**Fonte:** [[wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub]] — transcrição de fala fornecida pelo usuário como texto bruto (pt-BR, sem necessidade de tradução), limpa e organizada em Markdown em `raw/escopo-de-projetos-processo-nao-resultado-lorehub.md`. Autor identificado apenas como "Lord", canal/comunidade "LoreHub".
+
+**Skill carregada:** `tech-mentor-leadership`. Nenhum arquivo de referência específico da tabela cobre "escolha/escopo de side project" — tratado com conhecimento base da skill, conforme protocolo ("arquivo de referência não encontrado"). Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/escopo-de-projetos-processo-nao-resultado-lorehub.md` — transcrição formatada em Markdown
+- `wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub.md` — TL;DR, 7 key claims, conceitos tocados, open questions, raw quotes
+- `wiki/entities/lord-lorehub.md` (novo, stub) — autor/comunidade
+- `wiki/entities/discloud.md` (novo, stub) — hospedagem/deploy citada como opção gratuita
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/necessidade-como-gatilho-de-aprendizado.md` — `source_count` 1 → 2; nova seção "Aplicada à Escolha de Projetos Pessoais, Não Só de Tópicos de Estudo"; nova linha em Key Sources
+- `wiki/concepts/checklist-primeiro-dia-projeto.md` — `source_count` 2 → 3; nova seção "Requisitos Descobertos via User Stories, Não Só Listados de Cabeça"; nova linha em Key Sources
+- `wiki/concepts/user-stories.md` — `source_count` 2 → 3; nova seção "Engineering Stories: o Requisito Que o Usuário Não Vê"; nova linha em Key Sources
+- `wiki/concepts/sindrome-do-impostor.md` — `source_count` 5 → 6; nova seção "Variante: Medo de Aplicar, Não Só Medo Depois de Contratado"; nova linha em Key Sources
+- `wiki/concepts/persistencia-em-processo-seletivo.md` — `source_count` 1 → 2; nova seção "Precedida pelo Medo de Aplicar"; nova linha em Key Sources
+- `wiki/concepts/mvp.md` — `source_count` 6 → 7; nova seção "MVP de Aprendizado Pessoal (Sem Mercado, Sem Usuário Real)"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Entities (lord-lorehub, discloud)
+
+**Notas / open questions:** (1) **Nenhuma contradição** — fonte é altamente complementar a conceitos já estabelecidos ([[wiki/concepts/necessidade-como-gatilho-de-aprendizado]], [[wiki/concepts/checklist-primeiro-dia-projeto]], [[wiki/concepts/mvp]], [[wiki/concepts/sindrome-do-impostor]]), reforçando-os de fontes independentes em vez de contradizê-los. (2) **Termo não padronizado**: "engineering story" é vocabulário próprio do autor, não terminologia de indústria (Scrum/XP não a definem) — registrado em [[wiki/concepts/user-stories]] como equivalente funcional a uma task técnica no formato canônico de user story. (3) **Autoria pouco identificada**: "Lord"/"LoreHub" sem sobrenome, plataforma ou métricas de audiência — entidade criada como stub, candidata a expansão se mais fontes do mesmo autor forem ingeridas. (4) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-02] ingest | The Ambulance Pattern (Lição 56 — Developer to Architect, Mark Richards)
+
+**Fonte:** [[wiki/sources/ambulance-pattern-priorizacao-mensagens-mark-richards]] — página em inglês (https://www.developertoarchitect.com/lessons/lesson56.html) cujo conteúdo real está num vídeo do YouTube embutido via iframe (`XBVX9sEydnU`), não em texto na página HTML. Legendas automáticas em inglês extraídas via `yt-dlp`, limpas e traduzidas para pt-BR em `raw/ambulance-pattern-priorizacao-mensagens-mark-richards.md`.
+
+**Skill carregada:** `tech-mentor-system-design`, referência `references/messaging-patterns.md` (índice) — tópico específico não coberto por nenhum arquivo de referência da skill; tratado com conhecimento base, conforme protocolo ("arquivo de referência não encontrado"). Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/ambulance-pattern-priorizacao-mensagens-mark-richards.md` — transcrição limpa e traduzida
+- `wiki/sources/ambulance-pattern-priorizacao-mensagens-mark-richards.md` — TL;DR, 5 key claims, conceitos tocados, open questions, raw quotes (em inglês, mantidas no idioma original)
+- `wiki/concepts/ambulance-pattern.md` (novo) — página dedicada ao padrão: problema (prioridade na mensagem → starvation), solução (filas separadas), refinamento (instância dedicada por fila)
+- `wiki/entities/mark-richards.md` (novo, stub) — autor, fundador do site "Developer to Architect"
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/mensageria.md` — `source_count` 8 → 9; nova seção sobre o Ambulance Pattern; nova linha em Key Sources
+- `wiki/concepts/filas-e-workers.md` — `source_count` 7 → 8; nova seção "Fila Dedicada por Prioridade: Ambulance Pattern"; nova linha em Key sources
+- `wiki/concepts/priority-queue.md` — `source_count` 1 → 2; nova entrada em "Relação com outros conceitos" marcando o Ambulance Pattern como falso cognato (starvation quando se usa priority queue única para roteamento de mensagens); nova linha em Key sources
+- `wiki/concepts/back-pressure.md` — `source_count` 3 → 4; nova seção "Starvation por Competição de Fluxos (não é a mesma causa)" distinguindo a causa (competição de prioridade vs. descompasso de velocidade); nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (ambulance-pattern); nova linha em Entities (mark-richards)
+
+**Notas / open questions:** (1) **Nenhuma contradição** — fonte introduz um padrão novo na wiki, sem sobreposição direta com conteúdo existente; a única tensão é terminológica, resolvida explicitamente: [[wiki/concepts/priority-queue]] (estrutura de dados) não deve ser confundida com o roteamento por filas separadas do Ambulance Pattern — o vídeo inclusive descreve o **oposto** de uma priority queue única (que causaria o mesmo starvation que o vídeo critica na técnica de "prioridade na mensagem"). (2) **Conteúdo primário é vídeo, não texto**: a página HTML da fonte não contém o conteúdo do lesson — apenas metadados e o iframe do YouTube. Extração feita via `yt-dlp --write-auto-sub` (legendas automáticas, sem revisão humana da Google/YouTube) — pequeno risco de erro de transcrição automática em termos técnicos, mas o conteúdo é curto (~5 min) e coerente. (3) Vídeo não cita tecnologia/broker específico (não menciona SQS, RabbitMQ priority queue plugin, Kafka) — tratado em nível conceitual/arquitetural puro. (4) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-02] ingest | Database Branching: Como Criar Bancos de Dados de Teste Isolados por Branch
+
+**Fonte:** [[wiki/sources/database-branching-testes-neon-fernanda-kipper]] — transcrição de vídeo de [[wiki/entities/fernanda-kipper]] fornecida diretamente pelo usuário em fala corrida, sem pontuação; formatada em Markdown e salva em `raw/database-branching-testes-neon-fernanda-kipper.md` (já em pt-BR, sem necessidade de tradução).
+
+**Skill carregada:** `tech-mentor-backend`, referência `references/backend-tooling.md` (seção "Database Branching — Neon e PlanetScale") — confirma com alta confiança o mecanismo de copy-on-write e o critério de "quando vale o custo" descritos pela fonte, sem nenhuma divergência técnica. Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/database-branching-testes-neon-fernanda-kipper.md` — transcrição formatada em Markdown
+- `wiki/sources/database-branching-testes-neon-fernanda-kipper.md` — TL;DR, 8 key claims, conceitos tocados, open questions, raw quotes
+- `wiki/concepts/database-branching.md` (novo) — conceito dedicado: problema do banco compartilhado, mecanismo copy-on-write, fluxo típico (produção → staging → branches efêmeras), implementações conhecidas (Neon, PlanetScale), quando vale o custo
+- `wiki/entities/neon-database.md` (novo, stub) — plataforma Postgres serverless com branching nativo
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/database-migration.md` — `source_count` 1 → 2; nova seção "Onde Testar Migrations Sem Colidir Entre Branches"; nova linha em Key Sources
+- `wiki/concepts/expand-contract.md` — `source_count` 2 → 3; novo parágrafo distinguindo isolamento no tempo (Expand-Contract) vs. no espaço (database branching) como técnicas complementares; nova linha em Key Sources
+- `wiki/concepts/testes-integracao-banco-real.md` — `source_count` 4 → 5; nova seção "Um Banco Real Compartilhado Entre Branches Recria o Mesmo Problema Que Mockar"; nova linha em Key sources
+- `wiki/concepts/variaveis-de-ambiente.md` — `source_count` 1 → 2; nova seção "Atualização Automática por Plataforma de Deploy"; nova linha em Key Sources
+- `wiki/concepts/postgresql.md` — `source_count` 10 → 11; nova seção "Postgres Serverless com Branching: Neon"; nova linha em Key Sources
+- `wiki/concepts/checklist-primeiro-dia-projeto.md` — `source_count` 3 → 4; nova seção "Quando Vários Devs Chegam: Migrations Automáticas Não Bastam Sozinhas"; nova linha em Key Sources
+- `wiki/entities/fernanda-kipper.md` — `source_count` 2 → 3; nova linha em Fontes na wiki
+- `wiki/entities/vercel.md` — `source_count` 2 → 3; nova seção "Caso: Integração Nativa com Neon Para Database Branching"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (database-branching, seção "Bancos de Dados & SQL"); nova linha em Entities (neon-database)
+
+**Notas / open questions:** (1) **Nenhuma contradição** — fonte introduz um mecanismo de infraestrutura novo que resolve o mesmo tipo de problema já discutido em [[wiki/concepts/expand-contract]] e [[wiki/concepts/testes-integracao-banco-real]], sem competir com nenhuma recomendação existente; a página de conceito nova explicita a distinção "isolamento no tempo vs. no espaço" para não confundir os dois padrões. (2) **Refresh do seed de staging não é coberto pela fonte** — a branch-mãe de dev ficou com um seed desatualizado (6 cursos vs. 11 em produção) sem processo de sincronização mencionado; candidato a fonte futura sobre data masking em ambientes de teste. (3) **Cleanup de branches efêmeras não é mencionado pela fonte**, ao contrário do workflow de CI documentado na skill (`neon branches delete if: always()`) — vale confirmar em fonte futura se o setup real de `fernandakipper.com` também limpa as branches. (4) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-02] ingest | Pare de Ter Ideias: Lean Canvas Obsoleto, ICP e MVP na Era da IA
+
+**Fonte:** [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]] — transcrição de vídeo fornecida diretamente pelo usuário em fala corrida, sem pontuação, em português; formatada em Markdown e salva em `raw/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia.md` (já em pt-BR, sem necessidade de tradução).
+
+**Skill carregada:** `tech-mentor-leadership` — nenhum arquivo de `references/` cobre especificamente "ideação de produto/ICP/Lean Canvas"; tratado com conhecimento base da skill, conforme protocolo ("arquivo de referência não encontrado"). Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia.md` — transcrição formatada em Markdown
+- `wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia.md` — TL;DR, 8 key claims, conceitos tocados, open questions, raw quotes
+- `wiki/concepts/lean-canvas.md` (novo) — framework de Ash Maurya, os 9 quadrantes, crítica ao uso como passo 1 obrigatório, mudança de gargalo 2012→2026
+- `wiki/concepts/icp-ideal-customer-profile.md` (novo) — ICP específico vs. genérico, early adopter, dev como ICP ruim para ferramentas de dev, três categorias de problema (reduzir custo/aumentar lucro/vender sonho)
+- `wiki/entities/ash-maurya.md` (novo, stub) — criador do Lean Canvas
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/mvp.md` — `source_count` 7 → 8; nova seção "MVP e a Compressão do Tempo de Construção com IA" (estudos GitHub 2022 e Y Combinator); nova linha em Key Sources
+- `wiki/concepts/lean-startup.md` — `source_count` 2 → 3; nova seção "Lean Canvas Como Ferramenta de Diagnóstico, Não Ritual Obrigatório"; nova linha em Key Sources
+- `wiki/concepts/validacao-de-problema.md` — `source_count` 1 → 2; nova seção "Dev Como Fonte de Problema: Um Viés Específico"; nova linha em Key Sources
+- `wiki/concepts/produto-vendivel-desde-o-dia-zero.md` — `source_count` 2 → 3; nova seção "Mesmo Autor, Mesmo Produto: 'Já Existir' Como Sinal de Mercado"; nova linha em Key Sources
+- `wiki/entities/lucas-montano.md` — `source_count` 14 → 15; novo parágrafo sobre este vídeo; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (lean-canvas, icp-ideal-customer-profile, seção "Produto & Lean Startup"); nova linha em Entities (ash-maurya)
+
+**Notas / open questions:** (1) **Nenhuma contradição** — fonte reforça, de ângulo complementar, teses já estabelecidas em [[wiki/concepts/lean-startup]] e [[wiki/concepts/validacao-de-problema]] (problema antes de solução), sem competir com nenhuma recomendação existente. (2) **Autoria não confirmada nominalmente**: a transcrição não cita o nome do canal/autor; atribuição a [[wiki/entities/lucas-montano]] inferida pela menção ao produto "Persua" (provável garble de "Persoa"/"Pessoa", já registrado em [[wiki/sources/como-vender-um-saas-sem-audiencia]]) e ao segundo canal "Stupid Tech Founder" (citado como "Stupid Button Club" em vídeos anteriores do mesmo autor). (3) **Números do produto não cruzados**: os valores citados aqui (ARR ~$1M, 25.000 downloads, 1.000 assinantes) não aparecem na fonte anterior sobre o mesmo produto — não há contradição, apenas dado adicional não verificado contra outra fonte independente. (4) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.

@@ -3,8 +3,8 @@ type: concept
 title: "PostgreSQL"
 aliases: ["postgres", "pg"]
 date_created: 2026-04-22
-date_updated: 2026-09-01
-source_count: 10
+date_updated: 2026-09-02
+source_count: 11
 tags: [banco-de-dados, postgresql, relacional, jsonb, vetorial]
 skill: tech-mentor-system-design
 status: stable
@@ -69,6 +69,10 @@ Reforçando o padrão já descrito acima (extensão nativa cobrindo o que levari
 
 Feature nativa do motor (`PARTITION BY RANGE|LIST|HASH`), diferente de [[wiki/concepts/sharding]] — continua sendo o mesmo banco, com o motor roteando cada linha para a tabela filha certa e permitindo *partition pruning* em queries filtradas pela coluna de particionamento. `LIST` cabe quando a coluna tem um conjunto conhecido e finito de valores (UF, categoria, tenant); sem uma partição `DEFAULT` como catch-all, um INSERT para um valor não mapeado falha. Ver [[wiki/concepts/particionamento-de-tabela]] para RANGE vs. LIST em detalhe.
 
+## Postgres Serverless com Branching: Neon
+
+[[wiki/entities/neon-database|Neon]] é um Postgres serverless com **[[wiki/concepts/database-branching|database branching]]** nativo via copy-on-write: cada branch de código pode ter seu próprio banco de teste isolado, criado a partir de uma branch-mãe sem copiar os dados inteiros. Resolve o problema de colisão de schema quando migrations concorrentes de branches diferentes atropelam um único banco de teste compartilhado. Ver [[wiki/sources/database-branching-testes-neon-fernanda-kipper]].
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
@@ -81,3 +85,4 @@ Feature nativa do motor (`PARTITION BY RANGE|LIST|HASH`), diferente de [[wiki/co
 - [[wiki/sources/infraestrutura-como-codigo-cdk-aws]] — citado como o banco de dados de exemplo numa stack ilustrativa de [[wiki/concepts/infraestrutura-como-codigo|IaC]] (dois Lambdas atrás de um API Gateway, ambos conectados ao mesmo Postgres, sem acesso direto à internet); menção arquitetural breve, sem claim técnico novo sobre o motor
 - [[wiki/sources/rag-introducao-pipeline-completo]] — `pgvector` como vector store viável para RAG em produção, com exemplo de estrutura de registro (embedding + texto cru + metadados)
 - [[wiki/sources/particionamento-por-list-postgresql-sql-30-dias]] — `PARTITION BY LIST`, partição DEFAULT como catch-all, chave primária composta em tabela particionada
+- [[wiki/sources/database-branching-testes-neon-fernanda-kipper]] — Neon como Postgres serverless com branching copy-on-write para bancos de teste isolados por branch

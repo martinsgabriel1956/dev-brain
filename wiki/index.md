@@ -1,7 +1,8 @@
 ---
 type: index
-date_updated: 2026-09-01
+date_updated: 2026-09-02
 ---
+
 
 
 
@@ -21,6 +22,7 @@ date_updated: 2026-09-01
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/ambulance-pattern-priorizacao-mensagens-mark-richards]] | [[wiki/entities/mark-richards\|Mark Richards]] (Developer to Architect, Lição 56): [[wiki/concepts/ambulance-pattern\|Ambulance Pattern]] — priorizar mensagens via campo de prioridade no header causa starvation do fluxo normal; a alternativa correta é separar fisicamente em duas filas (normal e alta prioridade), opcionalmente com instância de worker dedicada por fila |
 | [[wiki/sources/evoluir-software-sem-pagar-preco-de-microsservicos]] | Autor não identificado. O real ganho de microsserviços é modularização, não distribuição: complexidade local (baixa) vs. global (comunicação, deploy orquestrado, consistência); três caminhos de escala — [[wiki/concepts/servicos-de-dominio\|serviços de domínio]], [[wiki/concepts/monolito-modular\|monolito modular]] clássico (múltiplos `main.ts` a partir do mesmo codebase — "monolito é escolha de deploy") e [[wiki/concepts/composicao-de-modulos\|composição de módulos]] via [[wiki/concepts/monorepo-backend\|monorepo]] `apps/`+`packages/` (NestJS/NX) |
 | [[wiki/sources/os-10-principios-arquitetura-modular-valdemar-neto]] | [[wiki/entities/valdemar-neto\|Valdemar Neto]] (Tech Leads Club): distinção formal [[wiki/concepts/monolito-modular\|monolito modular]] (um deploy, todos os módulos) vs. [[wiki/concepts/arquitetura-modular\|arquitetura modular]] (múltiplos monolitos/apps recombinando módulos via monorepo); "microsserviços não compõem"; 10 princípios nomeados (limites, componibilidade, independência, isolamento de estado, comunicação explícita, substituibilidade, deploy/escala independentes, observabilidade, falhas isoladas); exemplo de streaming em NestJS/NX |
 | [[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] | Valdemar Neto: arquitetura modular como nível acima de [[wiki/concepts/clean-architecture\|Clean]]/[[wiki/concepts/hexagonal-architecture\|Hexagonal Architecture]] e do Shared Kernel do DDD; estrutura Core/Supporting Infrastructure/Infraestrutura Pura; [[wiki/concepts/tipos-de-modulos\|três tipos de módulo]] — domínio, infraestrutura pura, feature (evitado) |
@@ -403,6 +405,9 @@ date_updated: 2026-09-01
 | [[wiki/sources/prompt-context-harness-engineering-tres-pilares]] | Transcrição didática (autor não identificado): evolução prompt engineering → context engineering → harness engineering amarrada ao crescimento histórico da janela de contexto (4k tokens em 2022 → 1M hoje); mantra "se você não é o modelo, você é o harness" restaurado em português sem atribuição; gráfico de complexidade-versus-tempo de Robert Martin/Clean Architecture citado como justificativa de investir em harness |
 | [[wiki/sources/jose-jws-jwe-jwk-jwa-algorithm-confusion-paseto]] | Bernardo Lobato, "Anatomia de um Token 2": ecossistema JOSE (JWS assinatura/JWE criptografia/JWK chaves em JSON/JWA catálogo de algoritmos) por trás do JWT; JWA como fonte da cipher agility, causa raiz do ataque de algorithm confusion (`alg: none`, caso Tim McLean 2015, variante RS256→HS256); PASETO como alternativa de cipher rigidity com versões fixas (Ed25519/AES-256-GCM) |
 | [[wiki/sources/particionamento-por-list-postgresql-sql-30-dias]] | Autor não identificado, playlist "SQL em 30 Dias" (dia 13): `PARTITION BY LIST` no PostgreSQL para conjuntos conhecidos e finitos de valores (ex.: UF/estado), em contraste com `PARTITION BY RANGE` do "dia 12" (não ingerido); demo de [[wiki/concepts/particionamento-de-tabela\|partições nomeadas]] + partição `DEFAULT` como catch-all, e chave primária composta incluindo a coluna de particionamento |
+| [[wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub]] | [[wiki/entities/lord-lorehub\|Lord (LoreHub)]]: valor de um projeto pessoal está no processo/aprendizado, não na ambição da ideia; método de checklist `.md` de v1 via [[wiki/concepts/user-stories\|user stories]], complementado por **engineering stories** ("como dev, quero...") para requisitos invisíveis ao usuário; responde pergunta de espectador sobre medo de aplicar para estágio — variante de [[wiki/concepts/sindrome-do-impostor\|síndrome do impostor]] anterior à reprovação |
+| [[wiki/sources/database-branching-testes-neon-fernanda-kipper]] | [[wiki/entities/fernanda-kipper\|Fernanda Kipper]]: banco de teste único compartilhado por todas as branches causa colisão de esquema quando migrations concorrentes se atropelam (testes instáveis, dados contaminados, times bloqueados); solução via [[wiki/concepts/database-branching\|database branching]] — banco isolado por branch usando **copy-on-write**, demonstrado com [[wiki/entities/neon-database\|Neon]] + integração automática com a [[wiki/entities/vercel\|Vercel]] no portal `fernandakipper.com` |
+| [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]] | [[wiki/entities/lucas-montano\|Lucas Montano]] (provável): [[wiki/concepts/lean-canvas\|Lean Canvas]] de Ash Maurya é inútil como passo 1 obrigatório em 2026 — só problema e [[wiki/concepts/icp-ideal-customer-profile\|ICP]] continuam essenciais; gargalo de startup mudou de "programar" (meses em 2012) para "validar" (dias com IA, estudos GitHub/YC); dev é ICP ruim para ferramentas de dev; "já existir" é sinal de mercado, não motivo para desistir (case Persoa/Cluely/Granola) |
 
 ## Concepts
 
@@ -605,6 +610,8 @@ date_updated: 2026-09-01
 | [[wiki/concepts/produto-vendivel-desde-o-dia-zero]] | Primeira feature já deve ser vendível — não lançar grátis esperando apego para converter depois |
 | [[wiki/concepts/ltv-cac]] | Não investir em aquisição sem saber o LTV — tráfego "orgânico sintético" também tem custo |
 | [[wiki/concepts/marketing-organico-viral]] | Sketch de produto que viraliza sem parecer propaganda — build in public deixou de ser pré-requisito |
+| [[wiki/concepts/lean-canvas]] | Framework de 9 quadrantes de Ash Maurya — útil como diagnóstico de problema/ICP, inútil como ritual de passo 1 obrigatório na era de MVP em dias, não meses |
+| [[wiki/concepts/icp-ideal-customer-profile]] | Cliente com maior chance de pagar e virar recorrente, específico (não "programadores" em geral); dev tipicamente é ICP ruim para ferramentas de dev, pois constrói em vez de pagar |
 | [[wiki/concepts/especialista-de-powerpoint]] | Quem nunca lançou nada dando conselho de escala e feature — filtrar feedback de quem não tem execução real por trás |
 | [[wiki/concepts/estagios-de-maturidade-de-produto]] | Framework 0-5 (ideia validada → estranho usa → R$1k → recorrência → R$5k/mês → US$100k); gargalo da maioria não é técnica, é definição de produto; gap 4→5 é unit economics |
 | [[wiki/concepts/canais-de-distribuicao]] | Meios recorrentes pelos quais estranhos chegam ao produto (YouTube, Instagram, SEO, afiliados); pré-requisito da recorrência; tipo de lead (quente/frio) afeta o CAC |
@@ -631,6 +638,7 @@ date_updated: 2026-09-01
 | [[wiki/concepts/pilha]] | LIFO — último a entrar, primeiro a sair; undo, call stack, DFS |
 | [[wiki/concepts/arvore]] | O(log n) por busca; hierarquia natural; base dos índices de banco de dados |
 | [[wiki/concepts/priority-queue]] | Heap; sempre entrega maior/menor prioridade primeiro, não o mais antigo; base da construção da árvore de Huffman |
+| [[wiki/concepts/ambulance-pattern]] | Priorizar mensagens via header causa starvation do fluxo normal; solução é separar em duas filas físicas, opcionalmente com worker dedicado por fila |
 | [[wiki/concepts/crud-resolvido]] | CRUD simples automatizado pela IA; porta de entrada do júnior fechada; sênior em escassez |
 | [[wiki/concepts/harness-de-qualidade]] | Ferramental que força padrões de código bom de forma determinística ao redor da IA |
 | [[wiki/concepts/pipeline-de-qualidade]] | Lint → testes → coverage → mutation → segurança → E2E; passa ou não passa |
@@ -1191,6 +1199,7 @@ date_updated: 2026-09-01
 | [[wiki/concepts/mvcc]] | Múltiplas versões de uma linha em paralelo — leitura e escrita concorrentes sem lock mútuo |
 | [[wiki/concepts/isolation-levels]] | Read Committed vs. Repeatable Read vs. Serializable — qual versão dos dados uma transação enxerga |
 | [[wiki/concepts/database-recovery]] | Checkpoint limita o WAL a reler; recovery reaplica confirmadas e descarta incompletas após uma queda |
+| [[wiki/concepts/database-branching]] | Banco de dados isolado por branch de código via copy-on-write (Neon, PlanetScale) — evita colisão de schema entre migrations concorrentes num banco de teste compartilhado |
 
 ### Arquitetura Backend & Event-Driven
 
@@ -1522,6 +1531,7 @@ date_updated: 2026-09-01
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/mark-richards]] | Arquiteto de software, fundador do site "Developer to Architect" ("Software Architecture Monday") — autor do [[wiki/concepts/ambulance-pattern\|Ambulance Pattern]] |
 | [[wiki/entities/canal-desempenho-baixo-nivel]] | Autoria não confirmada (transcrição soa como "Way") — criador de conteúdo sobre programação de baixo nível e performance; guia de trilha de estudo C → arquitetura → SO/embarcados |
 | [[wiki/entities/carlos-maziero]] | Professor da UFPR — livro de sistemas operacionais com projeto acompanhante de SO do zero (PingOS), citado como fonte em português para estudar SO |
 | [[wiki/entities/lucas-montana]] | Canal de reação/leitura comentada de artigos técnicos; argumenta que geração de código por IA é mais uma camada de abstração, não ruptura |
@@ -1532,6 +1542,8 @@ date_updated: 2026-09-01
 | [[wiki/entities/larry-halff]] | Engenheiro do Magnolia, cocriador do OAuth (2007) — precisava de delegação de acesso para widgets de macOS sem expor senha |
 | [[wiki/entities/twitter]] | Onde Blaine Cook trabalhava ao cocriar o OAuth; citada como pioneira da API Economy dos anos 2000 |
 | [[wiki/entities/linkedin]] | Plataforma de rede profissional — licença de recrutamento cara para a empresa, custo zero para o candidato ser indexado |
+| [[wiki/entities/lord-lorehub]] | Criador de conteúdo por trás do projeto/comunidade LoreHub — ensina escopo/checklist de projeto pessoal usando o próprio LoreHub como exemplo |
+| [[wiki/entities/discloud]] | Hospedagem/deploy com tier gratuito e auto deploy via GitHub — mesmo papel do [[wiki/entities/hostgator]], mas sem custo inicial |
 | [[wiki/entities/af-camara]] | Consultoria de tecnologia — 700+ contratações/ano, LinkedIn como canal principal, mesmo para vagas sênior/liderança |
 | [[wiki/entities/theodor-sturgeon]] | Escritor de ficção científica que cunhou a Lei de Sturgeon (1957): 90% de tudo é lixo, importa o 10% |
 | [[wiki/entities/george-akerlof]] | Economista — "The Market for Lemons" (1970), assimetria de informação e colapso de qualidade média |
@@ -1629,6 +1641,7 @@ date_updated: 2026-09-01
 | [[wiki/entities/gang-of-four]] | Erich Gamma, Richard Helm, Ralph Johnson e John Vlissides — autores de *Design Patterns* (1994); Gamma também coautor do JUnit |
 | [[wiki/entities/vercel-ai-sdk]] | SDK TypeScript da Vercel para chamar múltiplos provedores de LLM com API unificada |
 | [[wiki/entities/vercel]] | Plataforma de deploy — caso interno de remover 80% das ferramentas de um agente para melhorar performance |
+| [[wiki/entities/neon-database]] | Postgres serverless com database branching nativo via copy-on-write; integração automática com a Vercel para banco de teste isolado por branch |
 | [[wiki/entities/jason-wei]] | Pesquisador Google Brain — lead author do paper de chain-of-thought prompting e do paper de emergent abilities |
 | [[wiki/entities/fabio-akita]] | Programador brasileiro, autodidata desde 1991, criador do canal Akita On Rails |
 | [[wiki/entities/lucas-badico]] | Programador e professor brasileiro, criador de conteúdo sobre Golang e carreira; defende a ponte fullstack como caminho de entrada ao backend |
@@ -1667,6 +1680,7 @@ date_updated: 2026-09-01
 | [[wiki/entities/shopify]] | E-commerce que hospeda ~14% das lojas americanas — substituiu reserva de estoque Redis+MySQL por MySQL puro com SKIP LOCKED, segurando US$ 5,1M/minuto na Black Friday 2025 |
 | [[wiki/entities/37signals]] | Empresa por trás do Basecamp e Rails — saiu do cloud para hardware próprio; criadora do Solid Queue, fila 100% sobre banco relacional |
 | [[wiki/entities/lucas-montano]] | Criador de conteúdo brasileiro — argumenta que o pânico de "atrofia cognitiva" por IA mede o tipo errado de habilidade (sintaxe, não conhecimento perene) |
+| [[wiki/entities/ash-maurya]] | Criador do Lean Canvas — framework de 9 quadrantes que virou ritual de aceleradora a partir de ~2012, hoje relido como diagnóstico rápido de problema/ICP, não passo 1 obrigatório |
 | [[wiki/entities/eric-ries]] | Autor de *A Startup Enxuta* — ex-programador que criou a metodologia Lean Startup depois de lançar um produto que ninguém queria |
 | [[wiki/entities/mano-deivin]] | Canal brasileiro de YouTube sobre carreira e produto para devs |
 | [[wiki/entities/nir-eyal]] | Autor de *Hooked* e *Indistraível* — escreveu o segundo livro como antídoto ao próprio primeiro |

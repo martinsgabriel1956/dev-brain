@@ -3,8 +3,8 @@ type: concept
 title: "Persistência em Processo Seletivo"
 aliases: ["perguntar quando pode tentar de novo", "reaplicar depois de reprovado", "persistência em entrevista"]
 date_created: 2026-07-31
-date_updated: 2026-07-31
-source_count: 1
+date_updated: 2026-09-01
+source_count: 2
 tags: [entrevistas, carreira, junior, contratacao, persistencia]
 skill: tech-mentor-leadership
 status: stub
@@ -22,6 +22,10 @@ Caso relatado de um candidato/estagiário reprovado que, ao perguntar quando pod
 
 Reforça, num contexto específico (reprovação em processo seletivo), a mesma lógica documentada em [[wiki/concepts/sindrome-do-impostor]] a partir de outra fonte independente ([[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]]): o estado atual de "não ter habilidade suficiente ainda" é provisório, não permanente — reprovação numa etapa da carreira não é veredito definitivo sobre capacidade.
 
+## Precedida pelo Medo de Aplicar
+
+[[wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub]] documenta a etapa cronologicamente anterior a esta: o medo de aplicar em primeiro lugar, antes de existir qualquer reprovação. A prescrição é a mesma em espírito — agir apesar da sensação de despreparo, em vez de esperar ela desaparecer — só que aplicada ao momento de enviar a candidatura, não ao momento de reagir a um "não". Ver a variante correspondente em [[wiki/concepts/sindrome-do-impostor]].
+
 ## Relacionado
 
 - [[wiki/concepts/sindrome-do-impostor]] — mesma lógica de "estado provisório, não permanente", aplicada aqui à reprovação em processo seletivo
@@ -31,3 +35,4 @@ Reforça, num contexto específico (reprovação em processo seletivo), a mesma 
 ## Key Sources
 
 - [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — Dica 3 (persistência: perguntar quando pode tentar novamente após reprovação)
+- [[wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub]] — etapa anterior: medo de aplicar antes mesmo de existir reprovação

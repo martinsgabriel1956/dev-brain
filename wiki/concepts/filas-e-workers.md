@@ -3,8 +3,8 @@ type: concept
 title: "Filas e Workers"
 aliases: ["job queue", "background processing", "async workers", "processamento assíncrono"]
 date_created: 2026-07-09
-date_updated: 2026-08-24
-source_count: 7
+date_updated: 2026-09-02
+source_count: 8
 tags: [filas, workers, background-jobs, mensageria, backend, retry, idempotencia]
 skill: tech-mentor-backend
 status: stub
@@ -35,9 +35,14 @@ Fila e worker não são o mesmo modelo mental de [[wiki/concepts/pub-sub|Pub/Sub
 
 Producer e worker como dois processos independentes (ex.: Bun), comunicando-se apenas via Redis — nunca por chamada de função direta. Parar o producer não trava o worker (ele drena a fila); parar o worker não perde jobs (retoma de onde parou ao reconectar). Ver [[wiki/concepts/bullmq]] para a anatomia da lib.
 
+## Fila Dedicada por Prioridade: Ambulance Pattern
+
+Quando tráfego de alta prioridade compete com tráfego normal pelos mesmos workers, a tentação é priorizar via campo de prioridade na mensagem — mas isso causa starvation do fluxo normal (mensagens prioritárias sempre furam a fila). O padrão recomendado é separar fisicamente em duas filas e, opcionalmente, dedicar instâncias de worker específicas a cada fila — permitindo processamento paralelo real sem que um fluxo bloqueie o outro. Ver [[wiki/concepts/ambulance-pattern]].
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/fila]] — a estrutura de dados FIFO que fundamenta o padrão
+- [[wiki/concepts/ambulance-pattern]] — variante com múltiplas filas e workers dedicados por canal de prioridade
 - [[wiki/concepts/escalabilidade-horizontal]] — workers escalam horizontalmente de forma independente da API
 - [[wiki/concepts/stateless]] — jobs em andamento não podem depender de estado local do worker, sob risco de perda se a instância cair
 - [[wiki/concepts/pub-sub]] — modelo mental oposto: publica um trabalho a ser feito, não um fato
@@ -53,3 +58,4 @@ Producer e worker como dois processos independentes (ex.: Bun), comunicando-se a
 - [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] — a fila entre produtor e consumidor como [[wiki/concepts/buffer]] que absorve picos (ex.: Black Friday) e permite processamento em ritmo constante
 - [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — o que fazer quando o worker não acompanha o ritmo do produtor: identificar o gargalo, podar stale jobs, processar em batches, e controlar a admissão de novos jobs (ver [[wiki/concepts/admission-control]])
 - [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — mesmo padrão (job pesado → mensagem na fila → resposta imediata → worker processa em background), com nomes concretos de ferramentas (RabbitMQ, Kafka, AWS SQS) e a analogia de checkout de e-commerce: "pagar" não trava a tela até o gateway confirmar, exatamente como o padrão de resposta imediata + confirmação assíncrona
+- [[wiki/sources/ambulance-pattern-priorizacao-mensagens-mark-richards]] — separar fila e instância de worker por canal de prioridade, para evitar que tráfego de alta prioridade trave o fluxo normal (starvation)

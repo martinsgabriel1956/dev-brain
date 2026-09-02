@@ -3,8 +3,8 @@ type: concept
 title: "Lean Startup"
 aliases: ["startup enxuta", "the lean startup", "metodologia lean startup"]
 date_created: 2026-07-07
-date_updated: 2026-08-06
-source_count: 2
+date_updated: 2026-09-02
+source_count: 3
 tags: [carreira, produto, mvp, startup, validacao, empreendedorismo]
 skill: tech-mentor-leadership
 status: stable
@@ -44,13 +44,20 @@ O MVP é a ferramenta tática da fase "Construir" — o menor artefato capaz de 
 
 Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], o autor cita explicitamente o ciclo construir-medir-aprender ao justificar por que lançou o Find My SaaS numa VPS mínima, sem arquitetura elaborada: "sem esperar nada perfeito e sem querer prever todas as cascas possíveis" — mas ressalva que isso exige conhecimento suficiente para entregar algo "minimamente seguro", não ausência de cuidado. Ver [[wiki/concepts/mvp]] para a implementação técnica dessa entrega mínima e [[wiki/concepts/over-engineering]] para a recusa explícita de complexidade de infraestrutura antecipada.
 
+## Lean Canvas Como Ferramenta de Diagnóstico, Não Ritual Obrigatório
+
+[[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]] questiona a prática, comum a partir de ~2012, de preencher o [[wiki/concepts/lean-canvas]] de Ash Maurya inteiro como passo 1 antes de captar investimento ou construir. O argumento não é abandonar o Lean Startup, mas reconhecer que o gargalo mudou: com IA, o MVP leva dias em vez de meses (ver [[wiki/concepts/mvp#MVP e a Compressão do Tempo de Construção com IA]]), então vale gastar menos tempo documentando hipóteses num canvas e mais tempo executando o ciclo [[concepts/build-measure-learn]] de verdade. Os dois quadrantes do canvas que o autor mantém como essenciais — problema e [[wiki/concepts/icp-ideal-customer-profile|ICP]] — mapeiam diretamente para a fase "Visão" do Lean Startup, reforçando de fonte independente que [[wiki/concepts/validacao-de-problema]] continua sendo o ponto de partida correto.
+
 ## Ver Também
 
 - [[concepts/build-measure-learn]] — o ciclo operacional da metodologia
 - [[concepts/mvp]] — a unidade de entrega mínima
 - [[concepts/scope-creep]] — o que a metodologia previne ao forçar escopo mínimo
+- [[wiki/concepts/lean-canvas]] — ferramenta de diagnóstico da fase "Visão", com crítica ao uso como passo 1 obrigatório
+- [[wiki/concepts/icp-ideal-customer-profile]] — especificação do "cliente" na fase de validação de problema
 
 ## Key Sources
 
 - [[sources/lean-startup-para-devs-mano-deivin]]
 - [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — build-measure-learn aplicado ao lançamento real do Find My SaaS
+- [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]] — crítica ao Lean Canvas como passo 1 obrigatório; gargalo real deslocado de "programar" para "validar" na era da IA

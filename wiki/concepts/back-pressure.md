@@ -3,8 +3,8 @@ type: concept
 title: "Back Pressure"
 aliases: ["back pressure", "backpressure", "pressão de volta", "producer consumer imbalance"]
 date_created: 2026-04-23
-date_updated: 2026-08-14
-source_count: 3
+date_updated: 2026-09-02
+source_count: 4
 tags: [back-pressure, streaming, reactive, producer-consumer, flow-control]
 skill: tech-mentor-system-design
 status: stable
@@ -83,11 +83,16 @@ fromEvent(eventSource, "data").pipe(
 ).subscribe();
 ```
 
+## Starvation por Competição de Fluxos (não é a mesma causa)
+
+[[wiki/concepts/ambulance-pattern]] descreve um efeito colateral irmão, mas com causa diferente: não é o consumidor mais lento que o produtor, é um fluxo de alta prioridade que sempre fura a fila e trava o fluxo normal — starvation por competição de prioridade, não por descompasso de velocidade. A correção também é diferente: em vez de bufferizar/descartar/desacelerar, separa-se fisicamente os fluxos em filas distintas.
+
 ## Relação com outros conceitos
 
 - [[concepts/reactive-architecture]] — back pressure é um dos 4 pilares do Reactive Manifesto
 - [[concepts/thundering-herd]] — thundering herd é o oposto: consumidores sobrecarregando o produtor/recurso compartilhado
 - [[concepts/bulkhead]] — bulkhead limita o impacto; back pressure controla o fluxo
+- [[wiki/concepts/ambulance-pattern]] — starvation por competição entre fluxos de prioridades diferentes, não por velocidade de consumo
 
 ## Key Sources
 
@@ -95,3 +100,4 @@ fromEvent(eventSource, "data").pipe(
 - [[sources/reactive-architecture]]
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — back pressure citado como exemplo do "mundo debaixo do CRUD": produtor mais rápido que consumidor exige decidir entre descartar, segurar ou derrubar
 - [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — identificar o gargalo antes de escalar, técnicas baratas (poda de stale jobs, priorização, batching), e demonstração prática de admission control com low/high watermark via BullMQ + Redis
+- [[wiki/sources/ambulance-pattern-priorizacao-mensagens-mark-richards]] — starvation por competição de prioridade dentro da mesma fila, resolvida com separação física de filas em vez de controle de fluxo

@@ -3,8 +3,8 @@ type: concept
 title: "Database Migration"
 aliases: ["migration", "migrations", "migrate up", "migrate down", "migração de banco de dados"]
 date_created: 2026-07-28
-date_updated: 2026-07-28
-source_count: 1
+date_updated: 2026-09-02
+source_count: 2
 tags: [banco-de-dados, migrations, versionamento, orm, postgresql, git]
 skill: tech-mentor-backend
 status: draft
@@ -39,10 +39,15 @@ Com ORM, na maioria dos casos não é preciso escrever migrations manualmente �
 
 Ter uma ORM gerando a migration não garante que ela é segura em escala: adicionar uma constraint de unicidade ou um campo derivado em uma tabela grande (ex.: ~100k+ linhas) pode causar lock prolongado e travar a tabela em produção. Testar em staging com dados similares aos de produção antes de aplicar em produção é necessário independentemente da ferramenta usada. Para o padrão que evita lock e permite convivência de duas versões do código durante a transição, ver [[wiki/concepts/expand-contract]].
 
+## Onde Testar Migrations Sem Colidir Entre Branches
+
+Quando várias branches de código aplicam migrations concorrentes num único banco de teste compartilhado, o schema de uma branch vaza para o ambiente de teste das outras — colisão de esquema, testes instáveis, dados contaminados. [[wiki/concepts/database-branching]] resolve isso dando a cada branch seu próprio banco isolado via copy-on-write, sem o custo de duplicar o banco inteiro por branch.
+
 ## Relacionado
 
 - [[wiki/concepts/orm]] — fluxo inverso de definição de estado final → migration derivada
 - [[wiki/concepts/expand-contract]] — padrão de 3 fases para mudanças breaking sem downtime
+- [[wiki/concepts/database-branching]] — isola o *onde testar* migrations concorrentes entre branches
 - [[wiki/concepts/postgresql]] — engine usado nos exemplos práticos
 - [[wiki/concepts/code-review]] — migrations tratadas com a mesma seriedade que código de aplicação
 - [[wiki/concepts/checklist-primeiro-dia-projeto]] — migrations automáticas desde o primeiro deploy
@@ -51,3 +56,4 @@ Ter uma ORM gerando a migration não garante que ela é segura em escala: adicio
 
 - [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]]
 - [[wiki/sources/migrations-schema-evolution]] — aprofunda zero-downtime, expand-contract e locks de DDL especificamente
+- [[wiki/sources/database-branching-testes-neon-fernanda-kipper]] — onde testar migrations concorrentes sem colisão de schema entre branches
