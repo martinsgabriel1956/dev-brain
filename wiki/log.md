@@ -8879,3 +8879,43 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (lean-canvas, icp-ideal-customer-profile, seção "Produto & Lean Startup"); nova linha em Entities (ash-maurya)
 
 **Notas / open questions:** (1) **Nenhuma contradição** — fonte reforça, de ângulo complementar, teses já estabelecidas em [[wiki/concepts/lean-startup]] e [[wiki/concepts/validacao-de-problema]] (problema antes de solução), sem competir com nenhuma recomendação existente. (2) **Autoria não confirmada nominalmente**: a transcrição não cita o nome do canal/autor; atribuição a [[wiki/entities/lucas-montano]] inferida pela menção ao produto "Persua" (provável garble de "Persoa"/"Pessoa", já registrado em [[wiki/sources/como-vender-um-saas-sem-audiencia]]) e ao segundo canal "Stupid Tech Founder" (citado como "Stupid Button Club" em vídeos anteriores do mesmo autor). (3) **Números do produto não cruzados**: os valores citados aqui (ARR ~$1M, 25.000 downloads, 1.000 assinantes) não aparecem na fonte anterior sobre o mesmo produto — não há contradição, apenas dado adicional não verificado contra outra fonte independente. (4) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-02] ingest | Aprendendo a Aprender: Talento é Mito, Prática Deliberada é o Que Funciona (Fábio Akita)
+
+**Fonte:** [[wiki/sources/akita-pratica-deliberada-mito-do-talento]] — transcrição de vídeo fornecida diretamente pelo usuário em fala corrida, sem pontuação, em português; formatada em Markdown e salva em `raw/akita-pratica-deliberada-mito-do-talento.md` (já em pt-BR, sem necessidade de tradução).
+
+**Skill carregada:** `tech-mentor-leadership` — nenhum arquivo de `references/` cobre especificamente "prática deliberada / mito do talento"; tratado com conhecimento base da skill (o tema é adjacente a `individual-development-plan.md`, mas não coincide), conforme protocolo ("arquivo de referência não encontrado"). Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/akita-pratica-deliberada-mito-do-talento.md` — transcrição formatada em Markdown
+- `wiki/sources/akita-pratica-deliberada-mito-do-talento.md` — TL;DR, 10 key claims, conceitos tocados, open questions, raw quotes
+- `wiki/concepts/zona-de-aprendizado.md` (novo) — três círculos concêntricos de Noel Tichy (conforto/aprendizado/pânico)
+- `wiki/concepts/autoavaliacao-vs-validacao-externa.md` (novo) — metacognição, atribuição de erro, crítica à validação externa
+- `wiki/concepts/mito-do-genio-mozart.md` (novo) — desconstrução histórica do mito de Mozart como "faísca divina"
+- `wiki/entities/geoff-colvin.md` (novo, stub) — autor de *Talent Is Overrated*
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/pratica-deliberada.md` — `source_count` 3 → 4; nova seção "Zona de Aprendizado, Alta Repetição e Foco Solitário" e "Autoavaliação Como Fechamento do Ciclo"; novos links em Relação com Outros Conceitos; nova linha em Key Sources
+- `wiki/concepts/disciplina-vs-talento.md` — `source_count` 6 → 7; nova seção "Sétima Fonte: O Caso Mozart Como Evidência Histórica Detalhada"; nova linha em Key Sources
+- `wiki/entities/fabio-akita.md` — `source_count` 7 → 8; nova seção "Série 'Aprendendo a Aprender': Contra o Mito do Talento"; nova linha em Key Sources
+- `wiki/concepts/aprender-a-aprender.md` — `source_count` 7 → 8; nova seção "'Esvaziar o Copo': Ceticismo Como Pré-Condição"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (seção "Aprendizado e Mentalidade"); duas novas linhas em Entities (fabio-akita já existia, adicionado geoff-colvin)
+
+**Notas / open questions:** (1) **Nenhuma contradição** — fonte reforça, com evidência histórica mais detalhada (caso Mozart) e mecanismo estrutural mais explícito (zona de aprendizado, autoavaliação), a tese já estabelecida em [[wiki/concepts/disciplina-vs-talento]] e [[wiki/concepts/pratica-deliberada]]; a atribuição da regra das 10 mil horas a Gladwell/Ericsson é consistente com o que já estava registrado em `pratica-deliberada.md`. (2) **Sem verificação independente**: os números citados (índice de precocidade, datas de recordes olímpicos, detalhes biográficos de Mozart) vêm todos do livro de Geoff Colvin relatado por Akita — nenhum estudo primário foi checado pela wiki. (3) **Entidades secundárias sem stub**: Malcolm Gladwell, Mozart, Tchaikovsky, Leopold Auer, Roger Bacon e Noel Tichy foram mencionados mas não ganharam página própria — não são foco recorrente da wiki de mentoria técnica; citados inline nas páginas relevantes. (4) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-02] ingest | Idempotência com Redis — Controle de Mensagens WhatsApp (Tulio Faria, DevPleno)
+
+**Fonte:** [[wiki/sources/idempotencia-redis-controle-mensagens-whatsapp-tulio-faria]] — transcrição de vídeo fornecida diretamente pelo usuário em fala corrida, sem pontuação, em português; formatada em Markdown e salva em `raw/idempotencia-redis-controle-mensagens-whatsapp-tulio-faria.md` (já em pt-BR, sem necessidade de tradução).
+
+**Skill carregada:** `tech-mentor-backend` — arquivo de referência específico encontrado: `references/idempotency-patterns.md`. Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/idempotencia-redis-controle-mensagens-whatsapp-tulio-faria.md` — transcrição formatada em Markdown
+- `wiki/sources/idempotencia-redis-controle-mensagens-whatsapp-tulio-faria.md` — TL;DR, 5 key claims, conceitos tocados, open questions, raw quotes
+- `wiki/entities/tulio-faria.md` (novo, stub) — criador do canal DevPleno
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/idempotencia.md` — `source_count` 7 → 8; novas seções "`SET ... EX ... GET` do Redis: Check-and-Set Atômico numa Única Chamada" e "Caso Real: Notificações WhatsApp/SMS — Chave Composta + Janela de Minutos, Não Segundos"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Entities (tulio-faria)
+
+**Notas / open questions:** (1) **Nenhuma contradição** — fonte é um caso de aplicação concreto (notificações WhatsApp/SMS) do mesmo padrão já bem estabelecido em [[wiki/concepts/idempotencia]], reforçando claims existentes (timeout não decide o que aconteceu; janela de tempo é decisão de negócio; combinar campos do domínio como chave). Contribuição nova e específica: a técnica `redis.set(key, val, "EX", ttl, "GET")` como variante do `SET NX EX` já documentado, trocando "recusar escrita se já existe" por "sempre escrever, mas devolver o valor anterior". (2) **Gap identificado**: o vídeo não trata da corrida entre duas chamadas concorrentes com a mesma chave (o comando usado não tem efeito de lock como o `NX`) — diferente da resolução via `INSERT ... ON CONFLICT` já registrada na wiki; sinalizado como pergunta em aberto na fonte. (3) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.

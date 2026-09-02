@@ -3,8 +3,8 @@ type: concept
 title: "Idempotência"
 aliases: ["idempotência", "idempotency", "idempotency key"]
 date_created: 2026-04-22
-date_updated: 2026-08-25
-source_count: 7
+date_updated: 2026-09-02
+source_count: 8
 tags: [distribuidos, resiliencia, api, retry, mensageria, double-spend, double-submit, webhook, fintech]
 skill: tech-mentor-system-design
 status: stable
@@ -146,6 +146,28 @@ Desabilitar o botão após o clique melhora a UX, mas não protege o backend —
 
 O teste mais revelador corta a resposta **depois** que o efeito acontece e **antes** que o cliente receba a confirmação — reproduzindo a mesma janela de incerteza que motiva o retry. Complementares: disparar duas requisições simultâneas com a mesma chave, duplicar a entrega de um webhook, e reiniciar um worker no ponto mais crítico. Em produção, a taxa de chaves repetidas e de conflitos de payload mostra se o cliente usa o contrato corretamente; operações presas em `processing` mostram onde o fluxo não fechou o resultado.
 
+## `SET ... EX ... GET` do Redis: Check-and-Set Atômico numa Única Chamada
+
+Variante prática do padrão de chave em Redis, além do já registrado `SET NX EX` (usado para [[wiki/concepts/distributed-locking|locks]]): o comando `SET` aceita a flag `GET`, que faz o Redis retornar o valor **anterior** da chave no mesmo momento em que grava o novo valor e o TTL — dispensando uma chamada de leitura separada antes do `SET` e a janela de corrida que duas operações distintas (`GET` depois `SET`) abririam.
+
+```javascript
+// sent recebe o valor ANTERIOR da chave (ou null se não existia) — e já regrava, atomicamente
+const sent = await redis.set(idempotencyKey, "1", "EX", 60, "GET");
+if (!sent) {
+  // chave não existia: primeira vez dentro da janela — processar
+} else {
+  // chave já existia: repetição dentro do TTL — ignorar
+}
+```
+
+Diferença de propósito frente ao `SET NX EX`: `NX` recusa a escrita se a chave já existe (útil para lock, onde só um vencedor deve prosseguir); `GET` sempre escreve, mas devolve o estado anterior para a aplicação decidir — adequado a deduplicação onde não há necessidade de impedir a escrita, só de saber se já tinha acontecido antes.
+
+## Caso Real: Notificações WhatsApp/SMS — Chave Composta + Janela de Minutos, Não Segundos
+
+Fonte concreta de aplicação do padrão fora do domínio financeiro: um SaaS que envia mensagens via bot de WhatsApp não-oficial (instável, sem confirmação de entrega confiável) usa idempotência para não duplicar notificações quando um timeout no envio motiva um retry. A chave combina três características do próprio negócio, não um ID técnico: telefone do destinatário + tipo da mensagem + hash do conteúdo. A janela de deduplicação usada em produção é de **5 minutos** — mais longa que o típico timeout de rede, o suficiente para cobrir o "não sei se o WhatsApp recebeu" sem impedir o reenvio legítimo de uma mensagem realmente diferente pouco tempo depois.
+
+O mesmo mecanismo (chave + TTL) também controla **volume de notificações por usuário** (ex.: limitar quantos SMS um mesmo destinatário recebe) — uso adjacente a idempotência estrita, mais próximo de rate limiting por destinatário do que de deduplicação de uma operação idêntica, mas implementado com a mesma primitiva.
+
 ## Riff de folclore: os "dois problemas difíceis" de sistemas distribuídos
 
 Um riff citado em [[wiki/sources/two-hard-things-martin-fowler]] (autoria de Mathias Verraes) substitui os dois problemas clássicos de Phil Karlton — [[wiki/concepts/naming|naming]] e [[wiki/concepts/tradeoff-de-cache|cache invalidation]] — por "guaranteed order of messages" e "exactly-once delivery" em sistemas distribuídos. É piada, não claim técnico, mas a substituição funciona porque aponta certo: entrega exactly-once é precisamente o problema que idempotência resolve (via [[concepts/retry-backoff|retry]] seguro). Ver [[wiki/concepts/two-hard-things]].
@@ -160,3 +182,4 @@ Um riff citado em [[wiki/sources/two-hard-things-martin-fowler]] (autoria de Mat
 - [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] — exemplo de [[wiki/concepts/kiss]] aplicado a uma checagem de status habilitados para reprocessamento (adjacente ao padrão de Idempotency Key, não idêntico)
 - [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] — por que o timeout sozinho não decide a causa; corrida resolvida por `INSERT` atômico em vez de `SELECT`+`INSERT`; idempotência vs. transação como proteções complementares; identidade cruzando fronteira de serviço via Outbox/Inbox; identidades de negócio por produto; TTL e testes de garantia
 - [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] — teaser no fechamento do vídeo (ainda não desenvolvido como fonte própria): quando uma etapa posterior de um fluxo multi-step falha depois que o cartão já foi cobrado, como desfazer o efeito colateral já aplicado — aponta para o par idempotência/[[wiki/concepts/saga-pattern]]
+- [[wiki/sources/idempotencia-redis-controle-mensagens-whatsapp-tulio-faria]] — caso real de notificações (WhatsApp/SMS): chave composta por telefone + tipo + hash da mensagem; janela de 5 minutos como decisão de produto; `redis.set(key, val, "EX", ttl, "GET")` como check-and-set atômico; mesmo mecanismo usado para limitar volume de SMS por usuário
