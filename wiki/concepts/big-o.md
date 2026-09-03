@@ -3,8 +3,8 @@ type: concept
 title: "Big O"
 aliases: ["complexidade de algoritmos", "Big-O notation", "O(n)", "complexidade assintótica"]
 date_created: 2026-06-26
-date_updated: 2026-08-25
-source_count: 12
+date_updated: 2026-09-03
+source_count: 14
 tags: [cs-fundamentals, algoritmos, big-o, complexidade, performance]
 skill: cs-fundamentals
 status: draft
@@ -108,3 +108,5 @@ O(1) pode ser mais lento que O(n) para entradas pequenas se a constante for gran
 - [[wiki/sources/como-ficar-bom-em-leetcode]] — "tem que saber Big O para ficar bom em LeetCode, ponto" — pré-requisito não negociável antes de treinar padrões
 - [[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] — introdução via três algoritmos físicos de busca num catálogo telefônico (1 página, 2 páginas, dividir ao meio), com as três curvas desenhadas antes de qualquer notação O() formal
 - [[wiki/sources/busca-binaria-fila-protocolos-atendimento-live-coding]] — log₂(n) vs. n derivado com dois exemplos concretos (100 números → 7 etapas; dicionário de 240.000 palavras → 18 etapas)
+- [[wiki/sources/algoritmos-de-ordenacao-bubble-insertion-selection-merge-quicksort-heapsort]] — seis algoritmos de ordenação com mecanismo passo a passo (Selection Sort, Quicksort com pivô e Heapsort novos para a wiki), sem análise assintótica formal na própria fonte — complexidades vêm da skill `cs-fundamentals`
+- [[wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization]] — custo de recursão sem TCO enquadrado como custo de alocação de call stack, não como diferença assintótica de complexidade

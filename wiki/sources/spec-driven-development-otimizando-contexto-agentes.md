@@ -54,6 +54,10 @@ Nenhuma contradição com o que já está registrado na wiki — esta fonte func
 
 A skill demonstrada ("TLC Spec Driven", atribuída à Tech Leads Club e a "Felipe Rodrigues") e o "Spec Kit do GitHub" são citados como duas implementações concretas do mesmo padrão — nenhuma das duas tem página própria na wiki; ambas mencionadas aqui como ferramentas, não como entidades centrais da fonte.
 
+## Atualização Posterior: Benchmark de Granularidade de Subagentes
+
+[[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]], ingerida depois, refina o Cenário 4/Execute descrito acima ("quatro subagentes em paralelo a partir do breakdown de tasks"): um benchmark de campo posterior, sobre a mesma skill TLC Spec Driven, mostra que a quantidade de subagentes usada na execução importa tanto quanto decidir se paraleliza — um subagente por task piora tempo, custo e qualidade ao mesmo tempo frente a não usar subagente nenhum, enquanto agrupar tasks relacionadas em poucos subagentes coesos (3, no caso testado) iguala ou supera o desempenho de um agente único. A skill teria evoluído de granularidade por task para agrupamento por fase como resultado direto desse achado.
+
 ## Perguntas Abertas
 
 - Autor não confirmado por nome completo/canal na transcrição fornecida — atribuição a Valdemar Neto é inferência por contexto (menção ao workshop "Desenvolvimento Assistido por IA Avançado" e à skill "TLC Spec Driven" da Tech Leads Club, mesma organização já registrada na página de Valdemar Neto).

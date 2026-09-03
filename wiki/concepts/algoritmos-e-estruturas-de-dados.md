@@ -3,8 +3,8 @@ type: concept
 title: "Algoritmos e Estruturas de Dados"
 aliases: ["DSA", "data structures", "estruturas de dados", "algoritmos"]
 date_created: 2026-05-16
-date_updated: 2026-08-27
-source_count: 17
+date_updated: 2026-09-03
+source_count: 19
 tags: [fundamentos, cs-fundamentals, algoritmos, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -110,3 +110,5 @@ Cada estrutura tem sua própria página com complexidade, analogias e quando usa
 - [[wiki/sources/por-que-comecar-com-c-em-2026-cs50-david-malan]] — David Malan (CS50): construir as próprias estruturas (hash tables, listas ligadas, tries, árvores, pilhas, filas) em [[wiki/concepts/linguagem-c|C]] porque a linguagem não as oferece prontas; valor não é reusar a implementação, mas entender design e diagnóstico por primeiros princípios
 - [[wiki/sources/busca-binaria-fila-protocolos-atendimento-live-coding]] — busca (passo 3) resolvida "no papel" com o chat, sem código, num exemplo do mundo real (fila de protocolos de atendimento), com leitura direta do livro *Entendendo Algoritmos*
 - [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] — DSA como pré-requisito inegociável para migrar de linguagens de alto nível para baixo nível; Cormen, "Entendendo Algoritmos" e Univesp como fontes de estudo
+- [[wiki/sources/algoritmos-de-ordenacao-bubble-insertion-selection-merge-quicksort-heapsort]] — seis algoritmos de ordenação (passo 2 da sequência de aprendizado acima), com Selection Sort, Quicksort e Heapsort cobertos pela primeira vez com mecanismo detalhado
+- [[wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization]] — recursão vs. iteração como equivalência formal (tese de Church-Turing), não hierarquia de eficiência; call stack como estrutura de dados alocável manualmente; tail call optimization

@@ -3,8 +3,8 @@ type: concept
 title: "Máquina de Turing"
 aliases: ["Turing machine", "máquina de turing", "modelo de Turing", "tabela de transição"]
 date_created: 2026-08-07
-date_updated: 2026-08-07
-source_count: 1
+date_updated: 2026-09-03
+source_count: 2
 tags: [cs-fundamentals, teoria-da-computacao, maquina-de-turing, computabilidade, automatos]
 skill: cs-fundamentals
 status: stub
@@ -33,13 +33,20 @@ A força do modelo está na combinação de **simplicidade** e **poder**. Apesar
 
 Na hierarquia de Chomsky, a máquina de Turing corresponde às gramáticas irrestritas — reconhece qualquer linguagem computável, o topo do poder expressivo. `[skill: cs-fundamentals — references/computation-theory.md]`
 
+## Turing-completude e a tese de Church-Turing
+
+Uma linguagem é dita **Turing-completa** quando, dado tempo e memória suficientes, consegue computar tudo aquilo que é computável — ou seja, tem o mesmo poder expressivo de uma máquina de Turing. A [[wiki/concepts/church-turing-thesis|tese de Church-Turing]] estabelece que a máquina de Turing e o **lambda calculus** de [[wiki/entities/alonso-church|Alonso Church]] são computacionalmente equivalentes — dois modelos independentes com exatamente o mesmo poder. Praticamente toda linguagem de programação de propósito geral usada no mercado é Turing-completa, o que tem uma consequência prática direta: [[wiki/concepts/recursao|todo algoritmo recursivo pode ser convertido em iterativo, e vice-versa]] — ver [[wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization]].
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/determinismo-vs-nao-determinismo]] — a máquina de Turing tem variantes determinística (uma ação por estado/símbolo) e não-determinística (várias ações)
 - [[wiki/concepts/complexidade-computacional]] — as classes de complexidade são definidas em termos do que máquinas de Turing (determinísticas e não) resolvem e em quanto tempo/espaço
 - [[wiki/concepts/sistema-binario-bit-byte]] — a fita opera sobre símbolos de um alfabeto finito, tipicamente 0 e 1
 - [[wiki/concepts/maquina-de-estados-ui]] — FSM é um modelo de autômato mais fraco (memória finita, sem fita) do mesmo campo da teoria da computação
+- [[wiki/concepts/church-turing-thesis]] — equivalência formal entre máquina de Turing e lambda calculus
+- [[wiki/concepts/recursao]] — recursão e iteração são intercambiáveis em qualquer linguagem Turing-completa
 
 ## Key sources
 
 - [[wiki/sources/conceitos-que-regem-a-computacao-bits-turing-complexidade]] — definição via fita infinita, cabeça de leitura/escrita e tabela de transição; argumento de que representa tudo que é computável
+- [[wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization]] — Turing-completude e tese de Church-Turing como base formal para a equivalência recursão/iteração

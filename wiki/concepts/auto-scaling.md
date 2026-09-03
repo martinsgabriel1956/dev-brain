@@ -3,8 +3,8 @@ type: concept
 title: "Auto Scaling"
 aliases: ["autoscaling", "escalamento automático", "horizontal pod autoscaler", "HPA"]
 date_created: 2026-06-26
-date_updated: 2026-08-24
-source_count: 4
+date_updated: 2026-09-03
+source_count: 5
 tags: [system-design, escalabilidade, cloud, infra, automatizacao, performance]
 skill: tech-mentor-system-design
 status: draft
@@ -66,6 +66,10 @@ Auto scaling só funciona bem se novas instâncias podem atender qualquer requis
 | **Risco** | Custo extra de instâncias ociosas | Latência alta durante ramp-up |
 | **Ideal para** | Picos previsíveis (Black Friday, horário comercial) | Carga imprevisível |
 
+## Ressalva: "Monolito" Não É Sinônimo de "Servidor Único Sem Réplicas"
+
+[[wiki/sources/arquitetura-monolitica-vantagens-desvantagens]] descreve auto scaling como "mais difícil" num [[wiki/concepts/monolito|monolito]], ilustrando com o processo manual de desligar/trocar tipo de instância/religar (escala **vertical**). Isso simplifica demais: um monolito escala **horizontalmente** como qualquer outra aplicação stateless — múltiplas réplicas idênticas atrás de um [[wiki/concepts/load-balancer]], com Auto Scaling Group. A limitação real que a fonte descreve é de single-server sem réplicas, não do estilo arquitetural monolítico em si — a confusão entre os dois é comum na prática (times pequenos rodando monolito numa única instância), mas não é uma restrição inerente ao monolito.
+
 ## Relação com outros conceitos
 
 - [[escalabilidade-horizontal]] — auto scaling é a automação dela
@@ -83,3 +87,4 @@ Na AWS, o ASG define três números: mínimo, desejado e máximo de instâncias 
 - [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — ASG com min/desejado/máximo sempre acoplado ao ALB, incluindo health checks e remoção automática de instâncias falhas
 - [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — auto scaling baseado no tamanho da fila como resposta a [[wiki/concepts/back-pressure]]; citado como viável mas mais difícil de configurar do que as alternativas mais baratas (poda de stale jobs, batching, admission control)
 - [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — motivação de negócio para elasticidade: pico sazonal de tráfego (Black Friday numa API de e-commerce) torna provisionamento manual impraticável (custo de esquecer desprovisionar vs. indisponibilidade por não provisionar a tempo)
+- [[wiki/sources/arquitetura-monolitica-vantagens-desvantagens]] — descreve auto scaling como mais difícil em monolito, citando o processo manual de resize vertical (desligar/trocar tipo/religar); conflates monolito com single-server sem réplicas, ver ressalva acima

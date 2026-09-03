@@ -3,8 +3,8 @@ type: concept
 title: "Escalabilidade Vertical"
 aliases: ["vertical scaling", "scale up", "upgrade de servidor"]
 date_created: 2026-06-26
-date_updated: 2026-08-24
-source_count: 7
+date_updated: 2026-09-03
+source_count: 8
 tags: [system-design, escalabilidade, infra, performance, tradeoff]
 skill: tech-mentor-system-design
 status: draft
@@ -61,3 +61,4 @@ Vertical online (aumentar CPU/memória sem desligar) existe via hypervisor há b
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — escalar o banco verticalmente (+ índices, cache, read replicas) como a tática recomendada antes de sharding, até o teto físico de hardware
 - [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — "você nunca vê uma Netflix rodando num único servidor": teto físico + o servidor como [[single-point-of-failure|SPOF]] são exatamente o que motiva a virada para escala horizontal
 - [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — versão de autoria explícita do mesmo argumento (teto físico de hardware + persistência do SPOF), no mesmo capítulo de *System Design Interview*
+- [[wiki/sources/arquitetura-monolitica-vantagens-desvantagens]] — descreve o processo manual de resize num monolito tradicional (desligar → trocar tipo de instância → religar) como razão prática pela qual auto scaling costuma ser mais difícil de operar num monolito de servidor único; reforça a indisponibilidade do resize já registrada acima, mas conflates monolito com single-server sem réplicas (ver ressalva em [[wiki/concepts/auto-scaling]])

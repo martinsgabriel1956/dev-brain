@@ -2,6 +2,29 @@
 
 ---
 
+## [2026-09-03] ingest | Arquitetura Monolítica: Vantagens e Desvantagens
+
+**Fonte:** [[wiki/sources/arquitetura-monolitica-vantagens-desvantagens]] — transcrição de vídeo introdutório pt-BR (autor/canal não identificados na fala), colada pelo usuário no chat, transformada em Markdown (limpeza de disfluências de fala, sem alterar conteúdo) e salva em `raw/arquitetura-monolitica-vantagens-desvantagens.md`. Já estava em português, sem necessidade de tradução.
+
+**Skill carregada:** `tech-mentor-backend` (path real desta máquina: `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/`; `/home/nemomartins/Documentos/new/skills/` citado no `CLAUDE.md` segue não existindo — skill drift já documentado em ingestões anteriores). `references/architecture-foundations.md` consultado para calibrar terminologia de monolito/microsserviços; nenhuma seção específica cobria o ângulo operacional de resize vertical, então essa parte foi calibrada contra o que a wiki já tinha em [[wiki/concepts/escalabilidade-vertical]] e [[wiki/concepts/auto-scaling]].
+
+**Arquivos criados:**
+- `raw/arquitetura-monolitica-vantagens-desvantagens.md` — transcrição formatada em Markdown
+- `wiki/sources/arquitetura-monolitica-vantagens-desvantagens.md` — TL;DR, 5 key claims, entidades/conceitos tocados, contradições/reforços, open questions, raw quotes
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/monolito.md` — `source_count` 5 → 6; novas seções "Deploy Único: Cadência Cai Conforme o Time Cresce" e "SPOF de Módulo, Não Só de Servidor"; nova linha em Key sources
+- `wiki/concepts/single-point-of-failure.md` — `source_count` 2 → 3; nova seção "SPOF Lógico: Bug de Módulo, Não Só Queda de Servidor"; nova linha em Key Sources
+- `wiki/concepts/auto-scaling.md` — `source_count` 4 → 5; nova seção de ressalva "Monolito Não É Sinônimo de Servidor Único Sem Réplicas"; nova linha em Key sources
+- `wiki/concepts/escalabilidade-vertical.md` — `source_count` 7 → 8; nova linha em Key sources reforçando a indisponibilidade do resize manual já documentada
+- `wiki/concepts/dry.md` — `source_count` 1 → 2; nova seção "Monolito Facilita DRY por Chamada de Função Direta"; nova linha em Key Sources
+- `wiki/concepts/zero-downtime-deploy.md` — `source_count` 3 → 4; nova seção "Caso Base: Monolito de Servidor Único Sem as Estratégias Acima"; nova linha em Key Sources
+- `wiki/concepts/microsservicos.md` — nova linha em Key Sources (contraste de reuso de código, sem dado novo além do já coberto na página)
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) Fonte é puramente introdutória/didática — não traz caso real, benchmark ou fonte primária, ao contrário de outras fontes já na wiki sobre o mesmo tema (ex.: [[wiki/sources/microsservicos-monolito-first-renato-augusto]] com o caso Amazon Prime Video). (2) A claim da fonte sobre auto scaling ser "mais difícil" em monolito conflates monolito com servidor único sem réplicas — registrado como ressalva de calibração em [[wiki/concepts/auto-scaling]] e [[wiki/concepts/escalabilidade-vertical]], não como erro grave da fonte. (3) Autoria e canal não identificados na transcrição. (4) Sem contradições factuais graves com o resto da wiki.
+
+
 ## [2026-08-31] ingest | xUnit (xUnitPatterns.com — Gerard Meszaros)
 
 **Fonte:** [[wiki/sources/xunit-xunitpatterns]] — verbete de glossário curto do site xUnitPatterns.com (http://xunitpatterns.com/xUnit.html), coletado via `curl` direto (HTML pequeno, sem necessidade de proxy de leitura), traduzido para português e salvo em `raw/xunit-xunitpatterns.md`, seguindo o mesmo padrão de tradução já usado em `raw/sut-xunitpatterns.md` e `raw/unit-test-xunitpatterns.md`.
@@ -9075,3 +9098,71 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha em Sources; nova linha em Entities (tulio-faria)
 
 **Notas / open questions:** (1) **Nenhuma contradição** — fonte é um caso de aplicação concreto (notificações WhatsApp/SMS) do mesmo padrão já bem estabelecido em [[wiki/concepts/idempotencia]], reforçando claims existentes (timeout não decide o que aconteceu; janela de tempo é decisão de negócio; combinar campos do domínio como chave). Contribuição nova e específica: a técnica `redis.set(key, val, "EX", ttl, "GET")` como variante do `SET NX EX` já documentado, trocando "recusar escrita se já existe" por "sempre escrever, mas devolver o valor anterior". (2) **Gap identificado**: o vídeo não trata da corrida entre duas chamadas concorrentes com a mesma chave (o comando usado não tem efeito de lock como o `NX`) — diferente da resolução via `INSERT ... ON CONFLICT` já registrada na wiki; sinalizado como pergunta em aberto na fonte. (3) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-03] ingest | Subagentes: Quando Vale a Pena — Um Case Real de Custo x Velocidade
+
+**Fonte:** [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] — transcrição de vídeo fornecida diretamente pelo usuário em fala corrida, sem pontuação, em português; formatada e transformada em Markdown, salva em `raw/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven.md` (já em pt-BR, sem necessidade de tradução).
+
+**Skill carregada:** `tech-mentor-ai` — referências consultadas: `references/ai/agents-orchestration.md` (multi-agent/orchestrator patterns) e o índice geral da skill. Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven.md` — transcrição formatada em Markdown, com notas de correção de ASR
+- `wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven.md` — TL;DR, 8 key claims, entidades/conceitos tocados, contradições/reforços, open questions, raw quotes
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/subagentes.md` — `source_count` 6 → 7; nova seção "Quanto Granular é Granular Demais: Um Benchmark de Campo" com tabela dos 4 cenários, duas leituras da indústria (Anthropic vs. Cognition) e modelo mental de 4 critérios; nova linha em Key Sources
+- `wiki/concepts/spec-driven-development.md` — `source_count` 20 → 21; nova seção "Quantos Subagentes Usar na Execução: Benchmark de Granularidade"; nova linha em Key Sources
+- `wiki/concepts/janela-de-contexto.md` — `source_count` 5 → 6; nova seção "Granularidade de Subagentes e a Janela do Agente Principal"; nova linha em Key Sources
+- `wiki/concepts/rpi-workflow.md` — `source_count` 4 → 5; nova seção "Subagentes na Fase de Research Sempre Compensam"; nova linha em Key Sources
+- `wiki/entities/devin-ai.md` — `source_count` 1 → 2; nova seção sobre a posição da Cognition contra multi-agente; nova linha em Key Sources
+- `wiki/entities/anthropic.md` — `source_count` 27 → 28; nova seção sobre a pesquisa interna citada de segunda mão (custo 15× maior, 90% de respostas melhores); nova linha em Key Sources
+- `wiki/entities/valdemar-neto.md` — `source_count` 2 → 3; nova seção sobre possível autoria não confirmada (mesma skill "TLC Spec Driven" referenciada em duas fontes); nova linha em Key Sources
+- `wiki/entities/tech-leads-club.md` — `source_count` 2 → 4; texto e Key Sources atualizados para citar a skill "TLC Spec Driven" nas duas fontes que a referenciam
+- `wiki/sources/spec-driven-development-otimizando-contexto-agentes.md` — nova seção "Atualização Posterior: Benchmark de Granularidade de Subagentes", cruzando o Cenário 4/Execute original com o benchmark mais detalhado desta nova fonte
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Sem contradição, refinamento quantitativo:** a fonte não contradiz nada já registrado sobre subagentes — ela dá números concretos (tempo, tokens, nota de qualidade) para uma pergunta que a wiki só tinha qualitativamente ("quantos subagentes usar?"). O achado mais forte é que granularidade excessiva (1 subagente por task) piora os três eixos ao mesmo tempo, não é um trade-off. (2) **Tensão não resolvida, sinalizada na própria fonte**: a citação de memória da pesquisa da Anthropic ("15× mais caro, 90% de respostas melhores") não bate diretamente com o benchmark do próprio vídeo (cenário mais caro teve a *pior* nota, não uma melhor) — o autor especula sobre a causa sem verificar; registrado como open question tanto na fonte quanto em `anthropic.md`. (3) **Indício de mesma autoria que `spec-driven-development-otimizando-contexto-agentes`** (referência direta e específica à skill "TLC Spec Driven"), mas não confirmado por nome completo em nenhuma das duas transcrições — registrado como possibilidade, não fato, em `valdemar-neto.md`. (4) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-03] ingest | Algoritmos de Ordenação: Bubble, Insertion, Selection, Merge, Quicksort e Heapsort
+
+**Fonte:** [[wiki/sources/algoritmos-de-ordenacao-bubble-insertion-selection-merge-quicksort-heapsort]] — transcrição de aula fornecida diretamente pelo usuário em fala corrida, sem pontuação, em português (já pt-BR, sem necessidade de tradução); formatada, pontuada e com correções de ASR marcadas ("boa sorte"→"bubble sort", "incesting sort"→"insertion sort", "mej sorte"/"medi"→"merge sort", "rip sort"→"heap sort"), salva em `raw/algoritmos-de-ordenacao-bubble-insertion-selection-merge-quicksort-heapsort.md`.
+
+**Skill carregada:** `cs-fundamentals` — arquivo de referência consultado: `references/algorithms-complexity.md` (complexidades de Quicksort, Merge Sort, Heapsort e tabela de decisão). Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/algoritmos-de-ordenacao-bubble-insertion-selection-merge-quicksort-heapsort.md` — transcrição formatada em Markdown
+- `wiki/sources/algoritmos-de-ordenacao-bubble-insertion-selection-merge-quicksort-heapsort.md` — TL;DR, 7 key claims, entidades/conceitos tocados, contradições/reforços, open questions, raw quotes
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/algoritmos-de-ordenacao.md` — `source_count` 3 → 4; novas seções "Selection Sort" e "Heapsort"; seção "Quicksort — citado por contraste" expandida em "Quicksort" com mecanismo de partição e causa do pior caso (pivô extremo); tabela de decisão atualizada; nova linha em Key sources
+- `wiki/concepts/big-o.md` — `source_count` 12 → 13; nova linha em Key sources
+- `wiki/concepts/algoritmos-de-busca.md` — `source_count` 6 → 7; nova linha em Key sources
+- `wiki/concepts/recursao.md` — `source_count` 4 → 5; nova linha em Key sources
+- `wiki/concepts/algoritmos-e-estruturas-de-dados.md` — `source_count` 17 → 18; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; hook do Concepts atualizado para `algoritmos-de-ordenacao`
+
+**Notas / open questions:** (1) **Sem contradição, complementa** [[wiki/sources/9-algoritmos-que-todo-programador-deveria-saber]] (que já cobria Bubble, Insertion e Merge Sort): esta fonte confirma o mesmo mecanismo com exemplos numéricos diferentes e adiciona três algoritmos novos para a wiki — Selection Sort (ausente até agora), Quicksort com mecanismo de partição detalhado (antes só citado por contraste, sem exemplo do pivô) e Heapsort (ausente, apesar de já estar na tabela de complexidade da skill `cs-fundamentals`). (2) **Gap identificado na própria fonte, sinalizado na página de origem**: a aula demonstra a construção do Max Heap (comparações pai-filho) mas não chega a mostrar o passo de extração-e-rebalanceamento repetido que produz o array ordenado final — registrado como open question em `algoritmos-de-ordenacao-bubble-insertion-selection-merge-quicksort-heapsort.md`. (3) A fonte não menciona complexidade assintótica formal para nenhum dos seis algoritmos (foco 100% em mecanismo); os valores de O() nas páginas da wiki vêm da skill `cs-fundamentals`, não desta fonte. (4) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-03] ingest | Recursão vs. Iteração: Call Stack, Church-Turing e Tail Call Optimization
+
+**Fonte:** [[wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization]] — transcrição de vídeo fornecida diretamente pelo usuário em fala corrida, sem pontuação, em português (já pt-BR, sem necessidade de tradução); formatada e pontuada, salva em `raw/recursao-vs-iteracao-call-stack-tail-call-optimization.md`. Trecho final promocional (curso do autor) omitido do raw por não ser conteúdo técnico. Autor não identificado por nome na fala.
+
+**Skill carregada:** `cs-fundamentals` — arquivo de referência consultado: `references/algorithms-complexity.md` (seção "Recursão e Memoização", já registra tail recursion e suporte irregular por linguagem — Go não otimiza, Kotlin/Scala têm `tailrec`, JavaScript não garante). Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/recursao-vs-iteracao-call-stack-tail-call-optimization.md` — transcrição formatada em Markdown
+- `wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization.md` — TL;DR, 8 key claims, entidades/conceitos tocados, contradições/reforços, open questions, raw quotes
+- `wiki/concepts/tail-call-optimization.md` — stub novo: definição, exemplo C (não-tail-call vs. tail-call com helper+acumulador), tabela de suporte por linguagem
+- `wiki/concepts/church-turing-thesis.md` — stub novo: lambda calculus (Church) ↔ máquina de Turing, Turing-completude, consequência recursão⇔iteração
+- `wiki/entities/alonso-church.md` — stub novo
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/recursao.md` — `source_count` 5 → 6; nova seção "Recursão e iteração são intercambiáveis (tese de Church-Turing)"; nova linha em Key sources
+- `wiki/concepts/pilha.md` — `source_count` 2 → 3; nova seção "A call stack não é mágica — é só uma estrutura de dados"; nova linha em Key sources
+- `wiki/concepts/maquina-de-turing.md` — `source_count` 1 → 2; nova seção "Turing-completude e a tese de Church-Turing"; nova linha em Key sources
+- `wiki/entities/alan-turing.md` — `source_count` 1 → 2; novo parágrafo em "Contexto da Menção"; seção "Key sources" adicionada
+- `wiki/concepts/big-o.md` — `source_count` 13 → 14; nova linha em Key sources
+- `wiki/concepts/algoritmos-e-estruturas-de-dados.md` — `source_count` 18 → 19; nova linha em Key sources
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (Fundamentos de CS); nova linha em Entities
+
+**Notas / open questions:** (1) **Sem contradição, ângulo complementar**: [[wiki/concepts/recursao]] já desmontava "recursão é lenta" pelo ângulo de complexidade assintótica (fatorial O(n) vs. Fibonacci ingênuo O(2ⁿ)); esta fonte ataca a mesma generalização por um ângulo diferente — onde a estrutura de suporte (call stack) é alocada, e se o compilador consegue eliminar essa alocação via TCO. Não havia, antes desta fonte, nenhuma página cobrindo a tese de Church-Turing nem tail call optimization isoladamente — ambas criadas como stubs novos. (2) **Claim de confiança média-alta, não verificada por fonte primária**: a afirmação de que Python não implementa TCO é dada pelo próprio autor como "salvo engano" — registrado como tal na fonte, não citado como fato absoluto nas páginas de conceito. (3) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
