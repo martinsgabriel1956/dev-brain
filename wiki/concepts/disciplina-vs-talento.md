@@ -3,8 +3,8 @@ type: concept
 title: "Disciplina vs Talento"
 aliases: ["talento não é determinante", "disciplina supera talento", "dom para programação"]
 date_created: 2026-06-26
-date_updated: 2026-08-13
-source_count: 6
+date_updated: 2026-09-02
+source_count: 7
 tags: [carreira, mentalidade, aprendizado, disciplina, talento, iniciante]
 skill: tech-mentor-leadership
 status: stable
@@ -56,6 +56,10 @@ A única variável que o iniciante controla é a constância da prática. Talent
 
 [[wiki/sources/papinho-tech-solo-q-and-a-carreira]] aplica a mesma tese a um contexto específico — a educação a distância (ver [[wiki/concepts/ead-educacao-a-distancia]]). Quando a instituição não aplica cobrança/avaliação adequada, o resultado passa a depender quase inteiramente da constância do próprio aluno: sem cobrança externa, "99% das vezes" o aluno desanima e não aprende o conteúdo importante. É o corolário direto desta página — a única variável que o estudante controla é a constância — levada ao ambiente onde essa variável tem o maior peso.
 
+## Sétima Fonte: O Caso Mozart Como Evidência Histórica Detalhada
+
+[[wiki/sources/akita-pratica-deliberada-mito-do-talento]] chega à mesma tese por um caminho mais radical que as fontes anteriores: em vez de argumentar que talento inato "não é determinante", argumenta que **talento inato não existe** — citando *Talent Is Overrated* de [[wiki/entities/geoff-colvin]], desconstrói o caso mais citado de "gênio nato" (Mozart) mostrando 18 anos de treinamento pesado por trás da primeira obra hoje considerada de nível mundial. Ver [[wiki/concepts/mito-do-genio-mozart]] para o detalhamento completo. A fonte também contribui o mecanismo estrutural que faltava nas fontes anteriores desta página — *o que exatamente* torna uma prática "deliberada" ([[wiki/concepts/zona-de-aprendizado|zona de aprendizado]], alta repetição, [[wiki/concepts/autoavaliacao-vs-validacao-externa|autoavaliação vs. validação externa]]) — em vez de apenas afirmar que disciplina supera talento.
+
 ## Ver Também
 
 - [[familiaridade-vs-capacidade]] — mecanismo que explica por que o "talento" parece real
@@ -71,3 +75,4 @@ A única variável que o iniciante controla é a constância da prática. Talent
 - [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] — quarta fonte; desafio "One Punch Man" como caso concreto de progresso via ação consistente operacionalizada em passos mínimos
 - [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — quinta fonte; Hábitos 4 e 6, consistência vs. intensidade e investimento fora do 9-às-5
 - [[wiki/sources/papinho-tech-solo-q-and-a-carreira]] — sexta fonte; autodisciplina como fator decisivo no EAD sem cobrança externa
+- [[wiki/sources/akita-pratica-deliberada-mito-do-talento]] — sétima fonte; talento inato não existe, caso Mozart como evidência histórica, mecanismo estrutural da prática deliberada

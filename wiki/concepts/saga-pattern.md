@@ -3,8 +3,8 @@ type: concept
 title: "Saga Pattern"
 aliases: ["saga", "saga distribuída", "compensating transactions"]
 date_created: 2026-04-22
-date_updated: 2026-08-03
-source_count: 6
+date_updated: 2026-09-01
+source_count: 7
 tags: [sistemas-distribuidos, consistencia, saga, microsservicos, compensação]
 skill: tech-mentor-system-design
 status: stub
@@ -47,6 +47,10 @@ O mesmo problema resolvido para microsserviços com bancos separados se repete e
 
 Consistência eventual — não ACID. Compensações podem falhar também (saga idempotente é obrigatória). Mais complexo que uma transação local, mas escala horizontalmente.
 
+## Relação com Event Sourcing
+
+[[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] cita a aplicação do Saga em microsserviços como um dos casos de mercado mais comuns onde o apresentador precisou aplicar [[wiki/concepts/event-sourcing]]: sem uma transação de banco garantida entre serviços, é necessário registrar o histórico das transações (total ou parcialmente, no espírito do padrão) para poder desfazer uma etapa caso alguma falhe no meio do fluxo — o mecanismo de compensação depende de saber exatamente o que já foi feito.
+
 ## Key Sources
 
 - [[sources/3pc]]
@@ -55,3 +59,4 @@ Consistência eventual — não ACID. Compensações podem falhar também (saga 
 - [[wiki/sources/ciclo-de-mudanca-de-arquitetura]] — coreografia vs. orquestração como exemplo de decisão de TO-BE a validar via POC
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — Saga aplicado a transações que cruzam shards de banco de dados (exemplo de transferência financeira entre usuários em shards diferentes)
 - [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] — teaser no fechamento do vídeo (ainda não desenvolvido como fonte própria): cartão já cobrado quando uma etapa posterior de um fluxo multi-step falha, cenário canônico de compensação que aponta para saga
+- [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — Saga citado como um dos principais motivadores práticos para aplicar Event Sourcing em microsserviços sem transação de banco garantida

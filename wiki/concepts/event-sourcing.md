@@ -3,8 +3,8 @@ type: concept
 title: "Event Sourcing"
 aliases: ["event store", "append-only log", "eventsourcing"]
 date_created: 2026-05-31
-date_updated: 2026-08-19
-source_count: 7
+date_updated: 2026-09-01
+source_count: 8
 tags: [event-sourcing, arquitetura, cqrs, ddd, imutabilidade, fintech]
 skill: tech-mentor-backend
 status: stable
@@ -110,6 +110,18 @@ A mesma fonte conecta Event Sourcing ao **write-ahead log (WAL)** de bancos rela
 
 **Custo real de recalcular a timeline a cada leitura**: essa mesma fonte expõe o problema prático que motiva [[wiki/concepts/cqrs|projeções/read models]] — reconstruir o placar do zero a cada requisição (buscar todos os gols, ordenar, interpretar payload, somar por time, considerar VAR) não escala com um volume alto de leitores simultâneos. A solução aplicada foi um consumer dedicado, mantendo um estado pré-computado em [[wiki/concepts/redis|Redis]], em vez de recalcular a projeção a cada leitura — CQRS na prática, sem nomear o padrão explicitamente.
 
+## Variante Leve: Histórico Sem Event Store Completo
+
+[[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] descreve uma alternativa pragmática para quando só se precisa de rastro histórico, sem implementar Event Sourcing por completo (sem event store dedicado, sem streaming): uma tabela append-only onde cada mudança de estado é um novo insert, e o registro anterior é marcado com um campo `enabled = false` (mantendo só um `enabled = true` por entidade) em vez de sofrer update de valor. Exemplo de modelagem: uma tabela de **saldo** (um único registro `enabled = true`, todo o histórico preservado nos anteriores) ligada a uma tabela de **extrato** (todos os lançamentos válidos, quase sempre só inserts — um lançamento errado gera um novo registro de estorno, não uma edição do original) via uma tabela `account` que desacopla cliente de conta corrente. Essa mesma fonte nota que esse desacoplamento (extrato referenciando só o `account_id`, não o cliente diretamente) já ajuda com [[wiki/concepts/compliance|LGPD]]: apagar os dados do cliente não exige tocar no histórico financeiro.
+
+## Arquitetura Completa: Streaming + Registro Dedicado + Replay
+
+A mesma fonte descreve a arquitetura de referência para aplicar o padrão por completo: APIs orquestram microsserviços coreografados que publicam mudanças de estado numa ferramenta de streaming (Kafka ou equivalente — tratado como "black box", não precisa ser Kafka necessariamente). Um componente dedicado ("o Betty" — apelido informal do apresentador) registra cada mudança tanto no banco de eventos/streaming quanto num banco SQL transacional, tipicamente serializando o próprio objeto de domínio. Um segundo componente faz o caminho inverso — lê o evento do banco e o relança na fila no estado daquele momento passado — fazendo os microsserviços reexecutarem as ações e reproduzirem exatamente o que aconteceu, para fins de auditoria ou troubleshooting.
+
+## Cases de Mercado
+
+[[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] lista quatro cenários reais (relato de experiência do apresentador, sem nomes de empresa) onde aplicou Event Sourcing: (1) **[[wiki/concepts/saga-pattern|Saga]]** — necessário para garantir contexto transacional sem transação de banco real, permitindo desfazer etapas em caso de falha; (2) **opt-in/[[wiki/concepts/compliance|LGPD]]** — histórico de consentimento do cliente e broadcast confiável de mudanças para parceiros (cobrança, marketing); (3) **auditoria de segurança financeira** — adotado após uma empresa sofrer auditoria sem os dados necessários; (4) **faturamento de telecomunicações** — controle de consumo (dados, voz, pacotes) sujeito a fiscalização da Anatel; segundo o autor, raríssimas operadoras aplicam o padrão corretamente, mas as que aplicam conseguem justificar rapidamente cada lançamento ao regulador.
+
 ## Key Sources
 
 - [[wiki/sources/cqrs-martin-fowler]] — post original do bliki (2011) já lista Event Sourcing como padrão que combina naturalmente com CQRS
@@ -119,3 +131,4 @@ A mesma fonte conecta Event Sourcing ao **write-ahead log (WAL)** de bancos rela
 - [[wiki/sources/cqrs-e-event-sourcing-explicado-na-pratica]] — impedance mismatch como motivação concreta; conexão com write-ahead log de bancos relacionais; tese de que adotar Event Sourcing é decisão de domínio, não técnica
 - [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]] — exemplo do Datomic/Nubank como banco imutável; conceito de Command Sourcing (Greg Young)
 - [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — placar de futebol como exemplo concreto de estado derivado de uma timeline via Kafka; custo de recalcular a timeline a cada leitura como motivação prática para cache de estado pré-computado
+- [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — variante leve via insert + flag `enabled` sem event store completo; arquitetura de referência (streaming + componente de registro + componente de replay); cases de mercado (Saga, opt-in/LGPD, auditoria financeira, faturamento de telecom sob fiscalização Anatel); prós/contras consolidados (reprodutibilidade total vs. volume de dados/complexidade/tempo de desenvolvimento)

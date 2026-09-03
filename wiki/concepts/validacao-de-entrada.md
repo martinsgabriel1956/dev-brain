@@ -3,8 +3,8 @@ type: concept
 title: "Validação de Entrada"
 aliases: ["input validation", "validação de dados", "nunca confie no client"]
 date_created: 2026-07-09
-date_updated: 2026-07-30
-source_count: 3
+date_updated: 2026-08-28
+source_count: 4
 tags: [validacao, seguranca, backend, regra-de-negocio, arquitetura-em-camadas, celebrate, joi, schema-validation]
 skill: tech-mentor-backend
 status: stub
@@ -40,6 +40,10 @@ Em Node/Express, uma forma concreta de aplicar essa camada é um middleware de v
 
 Essa camada **não substitui** a query parametrizada (placeholders `$1`/`$2`) — é defesa adicional na borda, mesma lógica de "nunca confiar no client" já descrita acima.
 
+## Por Que Validação de Formato Não Basta Contra SQL Injection
+
+[[wiki/sources/sql-injection-guia-completo-solucoes-galego]] argumenta que validar apenas o *formato* de um campo (ex.: Zod garantindo que um e-mail "parece" um e-mail) é uma defesa fraca contra [[wiki/concepts/sql-injection]] quando usada isoladamente, por dois motivos: (1) o comportamento interno do validador é opaco — não se sabe qual regex/máquina de estados ele usa, e até e-mails sintaticamente válidos podem ser estranhos o suficiente para escapar de uma checagem ingênua; (2) campos de texto livre (ex.: descrição de produto) só validados como "é uma string" não barram um payload SQL embutido no meio do texto. A validação de formato pega casos estreitos (um parâmetro numérico, como no exemplo Celebrate/Joi acima) — não generaliza para qualquer input.
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/contrato-de-api]] — o contrato define o formato esperado; a validação garante que ele é respeitado em runtime
@@ -52,3 +56,4 @@ Essa camada **não substitui** a query parametrizada (placeholders `$1`/`$2`) �
 - [[wiki/sources/10-conceitos-fundamentais-backend]]
 - [[wiki/sources/injecao-sql-aula-modulo-seguranca]] — exemplo prático de validação de schema (Celebrate/Joi) como camada extra contra SQL Injection
 - [[wiki/sources/email-address]] — sintaxe formal RFC 5322 de e-mail vs. práticas reais de validação de provedores
+- [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] — validação de formato como defesa fraca isolada contra SQLi: comportamento opaco do validador e campos de texto livre não cobertos

@@ -3,8 +3,8 @@ type: concept
 title: "Clean Architecture"
 aliases: ["arquitetura limpa", "clean arch"]
 date_created: 2026-07-24
-date_updated: 2026-08-27
-source_count: 8
+date_updated: 2026-09-01
+source_count: 9
 tags: [clean-architecture, uncle-bob, dependency-inversion, use-case, presenter, view-model, arquitetura, dci, bce]
 skill: tech-mentor-backend
 status: draft
@@ -95,8 +95,13 @@ As métricas de pacote de Robert Martin — abstração `A`, instabilidade `I = 
 
 [[wiki/sources/prompt-context-harness-engineering-tres-pilares]] cita o gráfico de complexidade crescente ao longo do tempo do livro Clean Architecture — sem detalhar o gráfico especificamente, apenas de memória — como argumento para uma tese fora do escopo usual desta página: a complexidade de software cresce com ou sem IA, e o [[wiki/concepts/harness|harness]] (regras, guidelines, mecanismos de verificação) é o que, na era de agentes, cumpre o mesmo papel que "ter uma boa arquitetura" sempre cumpriu — manter essa complexidade sob controle. Claim de baixa especificidade (não aponta capítulo/página do livro), mas é o primeiro cruzamento na wiki entre esse gráfico específico e a motivação de harness engineering.
 
+## Clean Architecture como Base de um Módulo em Arquitetura Modular
+
+[[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] mapeia o vocabulário de Clean Architecture (Use Cases, Entities) para dentro de um único módulo de [[wiki/concepts/monolito-modular|monolito modular]]: Use Cases/Entities formam o **Core** (lógica de negócio); Controllers/repositórios formam a camada de **Supporting Infrastructure**, com conhecimento específico do contexto de domínio (por isso não totalmente compartilhável); e uma terceira camada, **Infraestrutura Pura** (lib de banco, logger, config), fica de fora do módulo e é compartilhada entre módulos diferentes. A tese da fonte: Clean Architecture isola bem o domínio do mundo externo, mas não trata de como reusar infraestrutura *entre* módulos/contextos nem de rodar módulos em processos separados — lacuna que a [[wiki/concepts/arquitetura-modular|arquitetura modular]] cobre. Ver taxonomia completa em [[wiki/concepts/tipos-de-modulos]].
+
 ## Key Sources
 
+- [[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] — mapeamento de Use Cases/Entities para a camada "Core" de um módulo; lacuna de reuso de infraestrutura entre módulos que a arquitetura modular cobre
 - [[wiki/sources/prompt-context-harness-engineering-tres-pilares]] — gráfico de complexidade-versus-tempo citado como justificativa para harness engineering, fora do escopo usual de Clean Architecture como estilo de código
 - [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]] — métricas de acoplamento (A, I, D) como formalização da Regra de Dependência
 - [[wiki/sources/presenters]] — papel do Presenter e ViewModel especificamente na camada HTTP/apresentação (REST, GraphQL, CLI)

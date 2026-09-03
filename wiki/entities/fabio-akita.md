@@ -3,8 +3,8 @@ type: entity
 title: "Fábio Akita"
 aliases: ["Akita", "Akita On Rails"]
 date_created: 2026-05-16
-date_updated: 2026-08-26
-source_count: 7
+date_updated: 2026-09-02
+source_count: 8
 tags: [pessoa, programador, youtuber, brasil]
 skill: tech-mentor-leadership
 status: stable
@@ -58,9 +58,14 @@ Em [[wiki/sources/cinco-escolas-programacao-com-ia]], o autor da fonte relata (d
 
 Em [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]], defende que [[wiki/concepts/equipe-mista-senior-junior|nenhuma equipe só de sêniors ou só de júniors funciona bem]] — usa a metáfora de pedreiro vs. mestre de obras para justificar times mistos, com o sênior orientando júniors ([[wiki/concepts/escalabilidade-vertical-vs-horizontal-de-pessoas|escalabilidade horizontal de pessoas]]) via [[wiki/concepts/feedback-continuo-diario|feedback diário e específico]], não elogio vazio. Relata sua própria trajetória como consultor em ~2002 no projeto de unificação de sistemas da Vivo/Claro (mesma passagem já documentada acima) como pano de fundo para sua crítica ao modelo [[wiki/concepts/body-shop-terceirizacao|Body Shop]] de contratação. Também traça um paralelo entre o mercado aquecido atual e a bolha da internet (2000-2001), incluindo a crítica de que "cultura corporativa" costuma funcionar como [[wiki/concepts/cultura-corporativa-vs-manifesto-na-parede|manifesto de marketing em vez de comportamento real]] — coerente com sua defesa geral, já documentada acima, de que fundamentos e raciocínio próprio superam modismos e cópia de padrões de empresas maiores (ver [[wiki/concepts/cargo-cult-tecnologico]]).
 
+## Série "Aprendendo a Aprender": Contra o Mito do Talento
+
+Em [[wiki/sources/akita-pratica-deliberada-mito-do-talento]], segundo episódio de uma série sobre metacognição e aprendizado, defende que talento inato não existe — citando *Talent Is Overrated* de [[wiki/entities/geoff-colvin]] para desconstruir o mito de Mozart como "faísca divina" (ver [[wiki/concepts/mito-do-genio-mozart]]). Detalha a estrutura da [[wiki/concepts/pratica-deliberada|prática deliberada]] (zona de aprendizado, alta repetição, foco solitário) e fecha defendendo [[wiki/concepts/autoavaliacao-vs-validacao-externa|autoavaliação rigorosa em vez de validação externa]] — relata nunca pedir feedback de terceiros, por considerar isso "a maneira mais fácil de sabotar seu talento". Reforça o tema recorrente do "esvaziar o copo" (questionar tudo, inclusive as próprias certezas) já presente em [[wiki/concepts/aprender-a-aprender]].
+
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]]
+- [[wiki/sources/akita-pratica-deliberada-mito-do-talento]] — segundo episódio da série "Aprendendo a Aprender"; mito do talento, caso Mozart, autoavaliação vs. validação externa
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]]
 - [[wiki/sources/akita-discurso-howard-roark-a-nascente-ayn-rand]]
 - [[wiki/sources/pare-de-terceirizar-suas-decisoes]]

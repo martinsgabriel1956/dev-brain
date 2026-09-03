@@ -3,8 +3,8 @@ type: concept
 title: "SQL Injection"
 aliases: ["sql injection", "sqli", "injeção sql", "bobby tables"]
 date_created: 2026-06-10
-date_updated: 2026-08-19
-source_count: 7
+date_updated: 2026-09-01
+source_count: 9
 tags: [security, sql-injection, owasp, input-sanitization, appsec, attack-surface]
 skill: tech-mentor-security
 status: stable
@@ -72,6 +72,10 @@ Uma thread analisada em [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] prop
 
 **Nota de nomenclatura**: não confundir "Bobby Tables" (o meme do xkcd, citado acima) com "Bob Tables" — possível título de um blog post atribuído a Uncle Bob sobre eliminar SQL de sistemas. São referências distintas que soam parecidas.
 
+## Sete Camadas de Defesa (do Banco à Borda)
+
+[[wiki/sources/sql-injection-guia-completo-solucoes-galego]] organiza as defesas contra SQLi como camadas concêntricas, da mais próxima do banco até a borda da rede: (1) query parametrizada, (2) prepared statement (mesma lógica, nativa do banco — ex. Postgres), (3) menor privilégio na conexão servidor↔banco, (4) solução nativa da linguagem/framework de backend, (5) ORM ou query builder, (6) validação de input como camada complementar (não substituta), (7) [[wiki/concepts/waf]] como última linha antes do servidor — explicitamente descrito como incapaz de bloquear 100% dos casos, mas útil "de quebra" por filtrar payloads suspeitos no corpo de requests. A recomendação de ação imediata ao encontrar um SQLi em produção é corrigir primeiro a nível de código/backend, não a validação de input nem o WAF.
+
 ## Relação com Outros Conceitos
 
 - [[attack-surface]] — inputs são a superfície de ataque mais explorada
@@ -90,7 +94,9 @@ Uma thread analisada em [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] prop
 - [[sources/seguranca-armazenamento-senhas-banco-de-dados]] — contexto histórico: SQLi nos anos 90 como vetor que expôs o plaintext
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] — contradiz a simplificação "eliminar SQL elimina SQL attacks"
 - [[wiki/sources/injecao-sql-aula-modulo-seguranca]] — demonstração ao vivo (Express + `pg`) do ataque via query string e via parâmetro de rota, correção via placeholders `$1`/`$2`, e camada extra de validação de schema com Celebrate/Joi
+- [[wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv]] — citado apenas como indicação do próximo episódio da série "Dicionário do Programador" (não desenvolvido nesta fonte); mencionado como "ataque comum, mas fácil de evitar", mesmo enquadramento dado a XSS
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — teste manual de injeção como parte de checklist de autopentest
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — SQLi no campo de e-mail do login (`' or 1=1`) como vetor clássico contra formulários de autenticação
 - [[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] — citado como exemplo canônico de padrão inseguro presente nos dados de treinamento (snippets do Stack Overflow com concatenação de string em query) que um LLM pode reproduzir com a mesma fluência de um padrão parametrizado e seguro, sem o "alerta interno" que um dev experiente tem ao ver esse padrão
 - [[wiki/sources/xss-cross-site-scripting-luiz-viana]] — citado como par de XSS na mesma frente de treino prático de exploração ([[wiki/concepts/dvwa]]/bug bounty), embora a fonte foque em XSS
+- [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] — organiza as defesas em sete camadas concêntricas (query parametrizada → prepared statement → menor privilégio → nativo do backend → ORM/query builder → validação de input → WAF), com recomendação de corrigir primeiro a nível de código/backend ao encontrar SQLi em produção

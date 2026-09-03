@@ -3,8 +3,8 @@ type: concept
 title: "Validação de Problema"
 aliases: ["validar a dor", "problem validation", "validação da visão"]
 date_created: 2026-07-07
-date_updated: 2026-07-07
-source_count: 1
+date_updated: 2026-09-02
+source_count: 2
 tags: [carreira, produto, startup, validacao]
 skill: tech-mentor-leadership
 status: stable
@@ -30,12 +30,19 @@ Erro comum: achar que a concorrência é "outro app parecido". Na prática, a co
 
 Pular direto para a solução: "vou criar um app de delivery por assinatura" antes de confirmar que o problema (dificuldade de acesso à padaria) é real e generalizado. A dor pessoal do dev não é evidência de mercado.
 
+## Dev Como Fonte de Problema: Um Viés Específico
+
+[[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]] descreve uma variante específica do "erro do dev emocionado": o programador que busca ideia de produto pensando em problemas *que ele mesmo sente enquanto dev*, esquecendo que dev costuma ser um péssimo [[wiki/concepts/icp-ideal-customer-profile|ICP]] para ferramentas de dev — porque, tipicamente, constrói a própria solução em vez de pagar por uma de terceiros (cita o ciclo histórico de bibliotecas JavaScript e, mais recentemente, a proliferação de agentes de IA caseiros). A dor pessoal do dev, aqui, não é apenas fraca evidência de mercado geral (como já registrado acima) — é evidência especificamente fraca quando o mercado-alvo também é composto por devs.
+
 ## Ver Também
 
 - [[concepts/lean-startup]] — fase "Visão" dentro da metodologia completa
 - [[concepts/build-measure-learn]] — próxima fase, depois da dor validada
 - [[concepts/pivotar-ou-perseverar]] — decisão que reaparece se a validação inicial se mostrar fraca
+- [[wiki/concepts/icp-ideal-customer-profile]] — especificação de quem exatamente sente a dor validada
+- [[wiki/concepts/lean-canvas]] — framework onde "problema" e "ICP" são os dois primeiros quadrantes
 
 ## Key Sources
 
 - [[sources/lean-startup-para-devs-mano-deivin]]
+- [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]] — variante específica: dev como ICP ruim para produtos de dev, porque constrói em vez de pagar

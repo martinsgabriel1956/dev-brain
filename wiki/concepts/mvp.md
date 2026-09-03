@@ -3,8 +3,8 @@ type: concept
 title: "MVP (Minimum Viable Product)"
 aliases: ["mvp", "produto mínimo viável", "minimum viable product"]
 date_created: 2026-04-29
-date_updated: 2026-08-11
-source_count: 6
+date_updated: 2026-09-02
+source_count: 8
 tags: [projetos, produtividade, entrega, planejamento, carreira, startup]
 skill: tech-mentor-leadership
 status: stable
@@ -54,6 +54,14 @@ MVPs e protótipos são o contexto onde [[wiki/concepts/vibe-coding]] entrega va
 
 Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], o autor leva a lógica do MVP até a infraestrutura: hospeda o Find My SaaS numa única VPS de 1 vCPU/4GB, monolito sem [[wiki/concepts/over-engineering|Kubernetes ou microsserviços]], de propósito, para descobrir se o MVP "aguenta porrada" (230 mil+ requisições em 15 dias, incluindo ataques). A escolha reforça que "mínimo" no MVP não se limita a features — também se aplica ao dimensionamento de infraestrutura, evitando gastar tempo/dinheiro em capacidade que ainda não tem uso comprovado.
 
+## MVP e a Compressão do Tempo de Construção com IA
+
+Em [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]], o autor argumenta que o gargalo histórico do MVP — o tempo de programar — deixou de ser o fator limitante. Em 2012, um MVP decente levava meses (recrutar sócio técnico, desenhar arquitetura, testar). Em 2026, com IA, o mesmo MVP leva dias, deslocando o gargalo real para a validação: medir a interação de usuários reais em vez de gastar tempo em planejamento pré-código (ver [[wiki/concepts/lean-canvas]]). Cita dois estudos como evidência: um estudo controlado do GitHub em 2022, no qual 55% dos devs que usaram IA entregaram a solução mais rápido que o grupo de controle sem IA; e um estudo da Y Combinator mostrando que startups de batches recentes entregam 5x mais rápido que batches anteriores, com a maioria do código gerado por IA.
+
+## MVP de Aprendizado Pessoal (Sem Mercado, Sem Usuário Real)
+
+[[wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub]] aplica o conceito de MVP fora do contexto de startup/mercado: um app de clima cuja v1 inteira é "(1) buscar dados de uma API, (2) mostrar os dados" já conta como MVP completo se cobre exatamente a lacuna de aprendizado que o autor queria preencher (consumir API, renderizar dados). O critério de "mínimo" aqui não é "resolve o problema central de um usuário real" (definição de mercado usada no restante desta página), mas "cobre o objetivo de aprendizado que motivou o projeto" — ver [[wiki/concepts/necessidade-como-gatilho-de-aprendizado]] para o mecanismo por trás dessa variante.
+
 ## Ver Também
 
 - [[concepts/scope-creep]] — inimigo principal do MVP
@@ -72,3 +80,5 @@ Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], 
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — reforça a tese de lançar com monetização desde o dia um e escopo mínimo sendo exatamente a única funcionalidade pela qual alguém pagaria (o simulador em si, não uma tela de diagramação gratuita); o próprio autor admite em retrospecto ter violado essa regra ao incluir um "simulador de caos" no MVP inicial
 - [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — MVP mínimo estendido à infraestrutura (VPS 1 vCPU/4GB), testado sob carga real e ataque
 - [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — MVP jogável (jogo de golfe na Unreal) construído por vibe coding em 3 prompts; [[wiki/concepts/estagios-de-maturidade-de-produto|estágio 1]] é "um estranho consegue usar"
+- [[wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub]] — variante de MVP de aprendizado pessoal, sem mercado nem usuário real: "mínimo" medido pela lacuna de conhecimento preenchida, não por validação de hipótese de negócio
+- [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]] — gargalo do MVP mudou de "programar" para "validar" com IA; estudos GitHub (2022) e Y Combinator sobre ganho de velocidade

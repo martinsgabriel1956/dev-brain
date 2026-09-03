@@ -3,8 +3,8 @@ type: concept
 title: "Confiar no Frontend (Client-Side Trust Anti-Pattern)"
 aliases: ["confiar no frontend", "nunca confie no cliente", "client-side validation bypass", "trust boundary violation"]
 date_created: 2026-07-04
-date_updated: 2026-08-19
-source_count: 3
+date_updated: 2026-09-01
+source_count: 4
 tags: [appsec, trust-boundary, business-logic, client-side-security, owasp]
 skill: tech-mentor-security
 status: stable
@@ -50,3 +50,4 @@ Este é o princípio subjacente que também explica por que [[wiki/concepts/idor
 - [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]]
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — variante de bypass de regra de negócio direto na API (não via DevTools)
 - [[wiki/sources/xss-cross-site-scripting-luiz-viana]] — variante em nível de formulário: atributo `maxlength` removido via DevTools para digitar payload de XSS maior que o limite de UI
+- [[wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv]] — reforça o mesmo princípio de forma indireta: a recomendação de "nunca confiar em nada enviado pelo usuário" é dada como resumo de fechamento, generalizando a lição do caso da loja do Bob (busca não sanitizada) para qualquer input

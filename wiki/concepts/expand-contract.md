@@ -3,8 +3,8 @@ type: concept
 title: "Expand-Contract"
 aliases: ["expand contract pattern", "parallel change", "migration em 3 fases"]
 date_created: 2026-04-22
-date_updated: 2026-07-28
-source_count: 2
+date_updated: 2026-09-02
+source_count: 3
 tags: [devops, deploy, database, migration, backward-compatibility, infra]
 skill: tech-mentor-infra
 status: stable
@@ -50,7 +50,10 @@ Qualquer migration que renomeia, remove ou muda tipo de coluna **deve** usar Exp
 
 [[wiki/concepts/database-migration]] — Expand-Contract é o padrão a aplicar quando a operação de migration não é trivial (rename, drop, mudança de tipo). Relato de incidente real: adicionar campo derivado em tabela com ~100k linhas travou a tabela por ~5 minutos em produção — exemplo do custo de pular direto para a operação final em vez de expandir/preencher/contrair.
 
+[[wiki/concepts/database-branching]] — mesma preocupação de fundo (não corromper produção durante mudança de schema), resolvida por um eixo diferente: Expand-Contract isola no *tempo* (três fases sequenciais convivendo com duas versões do código em produção); database branching isola no *espaço* (cada branch de código tem seu próprio banco físico via copy-on-write, antes mesmo de chegar em produção). Técnicas complementares — dá para aplicar Expand-Contract *dentro* de uma branch de banco Neon antes do merge.
+
 ## Key Sources
 
 - [[sources/blue-green-canary-rolling]]
 - [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]] — incidente de lock em produção ao alterar tabela grande
+- [[wiki/sources/database-branching-testes-neon-fernanda-kipper]] — técnica complementar (isolamento no espaço via banco por branch, não no tempo via fases)

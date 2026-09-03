@@ -3,8 +3,8 @@ type: entity
 title: "Lucas Montano"
 aliases: ["Lucas Montano"]
 date_created: 2026-07-03
-date_updated: 2026-08-27
-source_count: 14
+date_updated: 2026-09-02
+source_count: 15
 tags: [criador-de-conteudo, ia, carreira, financas-pessoais, saas, growth, git]
 skill: tech-mentor-ai
 status: stub
@@ -40,6 +40,8 @@ Também reage a um tweet viral do indie hacker [[wiki/entities/pieter-levels|Pie
 
 Também produz um vídeo prático sobre **Loop Engineering** — ver [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] (autoria provável, sem menção nominal do canal na transcrição). Detalha a própria estrutura operacional de loops (quatro arquivos: `prompt.md`, `fixplan.md`, specs, `agents.md`), relata o caso de banco de dados apagado na Replit e o de testes trapaceados por agentes como desastres reais, propõe um checklist de seis itens de segurança, e demonstra ao vivo o comando `/loop` do Claude Code integrado à própria skill de Spec Driven do autor, paralelizando via `git worktree` e fazendo deploy de uma landing page numa VPS da [[wiki/entities/hostinger]] via MCP. Reforça, nesse vídeo, o mesmo padrão de anúncio recorrente de workshop de IA (1º de outubro) já citado em vídeos anteriores.
 
+Também tem (autoria provável, não confirmada nominalmente — mesma cadeia de sinais recorrente: menção ao produto "Persua"/Persoa e ao segundo canal "Stupid Tech Founder") um vídeo argumentando que preencher o [[wiki/concepts/lean-canvas|Lean Canvas]] de Ash Maurya inteiro como passo 1 do desenvolvimento de produto é perda de tempo em 2026 — ver [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]]. Mantém como essenciais apenas os dois primeiros quadrantes do canvas (problema e [[wiki/concepts/icp-ideal-customer-profile|ICP]]), argumentando que o gargalo de uma startup deixou de ser "programar" (meses de MVP em 2012) e passou a ser "validar" (dias de MVP em 2026 com IA), citando um estudo do GitHub (2022) e um da Y Combinator sobre ganho de velocidade com IA. Revisita o próprio produto Persoa/"Persua" — cópia deliberada de posicionamento de Cluely (que copiou o Granola) — como exemplo de que um mercado já disputado é sinal positivo, citando números de ARR e conversão download-para-assinante do próprio produto.
+
 ## Key Sources
 
 - [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] — guia prático de Loop Engineering: quatro arquivos operacionais, checklist de segurança, desastres reais (banco apagado, teste trapaceado), demonstração de `/loop` com deploy via MCP da Hostinger
@@ -56,3 +58,4 @@ Também produz um vídeo prático sobre **Loop Engineering** — ver [[wiki/sour
 - [[wiki/sources/como-vender-um-saas-sem-audiencia]]
 - [[wiki/sources/jspace-cerebro-cloud-antropic]]
 - [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — citação de segunda mão: seu Quality Gate com vários baselines e agente em babysitting corrigindo o PR até passar nos pré-requisitos objetivos
+- [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]] — crítica ao Lean Canvas como passo 1 obrigatório; ICP e problema como colunas essenciais; gargalo de MVP deslocado de "programar" para "validar" com IA

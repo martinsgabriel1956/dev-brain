@@ -3,8 +3,8 @@ type: concept
 title: "Princípio do Menor Privilégio"
 aliases: ["least privilege", "principle of least privilege", "PoLP", "menor privilégio", "permissão mínima"]
 date_created: 2026-06-10
-date_updated: 2026-08-06
-source_count: 4
+date_updated: 2026-08-28
+source_count: 5
 tags: [security, least-privilege, iam, vpc, appsec, arquitetura-seguranca, defense-in-depth]
 skill: tech-mentor-security
 status: stable
@@ -49,6 +49,10 @@ O menor privilégio também se aplica ao próprio acesso SSH: [[wiki/concepts/ss
 
 **Whitelist de tool calling em agentes autônomos**: [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] descreve o mesmo princípio como um dos 4 componentes essenciais de um agente de produção — uma lista explícita das ferramentas que o agente pode chamar (ex.: rodar query, checar stats de tabela, rotacionar connection pool para um agente de DBA), com operações destrutivas (`DROP TABLE`) permanentemente fora da whitelist, independente do que o modelo decida.
 
+## Usuário de Banco Dedicado por Serviço, Como Camada Contra SQL Injection
+
+[[wiki/sources/sql-injection-guia-completo-solucoes-galego]] aplica PoLP à conexão servidor↔banco: em vez de uma credencial única com acesso total, cada serviço (ex.: "aplicação de e-mails") tem seu próprio usuário de banco, restrito a `SELECT`/`INSERT`/`DELETE` em tabelas específicas. Isso não previne [[wiki/concepts/sql-injection]] em si — não impede a injeção de acontecer — mas minimiza o dano: mesmo uma injeção bem-sucedida não consegue `DROP TABLE` se o usuário não tiver esse privilégio. O mesmo raciocínio é generalizado para além de SQLi: se um atacante comprometer o servidor inteiro (SSH, RCE), privilégios mínimos no banco limitam o raio de explosão daí em diante.
+
 ## Relação com Outros Conceitos
 
 - [[defense-in-depth]] — o menor privilégio é uma das camadas; contém o dano quando outras camadas falham
@@ -63,3 +67,4 @@ O menor privilégio também se aplica ao próprio acesso SSH: [[wiki/concepts/ss
 - [[wiki/sources/ssh-chaves-como-funcionam]] — chave SSH como credencial mínima para acesso a bastion hosts
 - [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — permissões granulares de leitura/escrita por pasta para um agente de IA
 - [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] — whitelist de tool calling como um dos 4 componentes de um agente autônomo de produção
+- [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] — usuário de banco dedicado por serviço, restrito a `SELECT`/`INSERT`/`DELETE`, como camada de contenção contra SQL Injection e contra comprometimento total do servidor

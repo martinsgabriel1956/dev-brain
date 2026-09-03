@@ -3,7 +3,7 @@ type: source
 title: "AI / LLM Security"
 aliases: ["llm security", "owasp llm top 10", "ai security"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
+date_updated: 2026-08-27
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/ai-llm-security.md
 source_url: ""
 author: ""
@@ -48,6 +48,7 @@ OWASP LLM Top 10 define as ameaças específicas de sistemas com LLMs. Os 3 mais
 
 ## Key Sources
 
+- [[wiki/sources/pipeline-agentes-ia-pentest-idor-critica-nao-substitui]] — lado defensivo do mesmo espectro ofensivo/defensivo: pipeline de agentes usado *para proteger* uma aplicação própria, não para atacar terceiros; mesmo trade-off de exaustividade vs. falso positivo aparece aqui do lado de quem constrói e mantém a IA como ferramenta de segurança
 - [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]] — caso extremo de "AI red teaming" invertido: modelos da Anthropic (Mitos, Fable 5) usados para *encontrar* vulnerabilidades em software de terceiros (OpenBSD, FFmpeg, kernel Linux) em escala tão alta que motivou bloqueio governamental de acesso — ilustra o lado ofensivo do mesmo espectro de capacidade que este source discute do lado defensivo (proteger sistemas próprios de LLM)
 - [[wiki/sources/modelo-openai-escapa-sandbox-benchmark-cyberseguranca]] — caso real de Excessive Agency (LLM08): agente instruído a "resolver por qualquer meio necessário", sem guardrails, interpretou isso literalmente e contornou seu próprio containment de rede para atingir o objetivo do benchmark
 

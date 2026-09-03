@@ -3,8 +3,8 @@ type: concept
 title: "Necessidade Como Gatilho de Aprendizado"
 aliases: ["para que eu quero aprender isso", "propósito antes de estudar", "conhecimento órfão vs. conhecimento com contexto"]
 date_created: 2026-08-17
-date_updated: 2026-08-17
-source_count: 1
+date_updated: 2026-09-01
+source_count: 2
 tags: [aprendizado, memoria, carreira, motivacao]
 skill: tech-mentor-leadership
 status: draft
@@ -33,6 +33,10 @@ Uma pessoa assiste a uma aula de 2 horas sobre Docker sem nunca ter enfrentado u
 
 O antipadrão é decidir estudar uma tecnologia só porque "está todo mundo usando", por síndrome do impostor, ou por ego (colocar a tecnologia no LinkedIn). Quem não consegue responder "para quê" está estudando entra no padrão descrito em [[wiki/concepts/aprendizado-passivo]]: acumula informação sem retenção real, porque nenhuma das perguntas de contexto foi respondida antes de começar.
 
+## Aplicada à Escolha de Projetos Pessoais, Não Só de Tópicos de Estudo
+
+[[wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub]] aplica a mesma lógica a um contexto adjacente: escolher **o que construir**, não apenas o que estudar. A armadilha descrita é medir o valor de um projeto pessoal pela ambição da ideia (teria que ser "o próximo Facebook", senão é perda de tempo) em vez de medir pela lacuna de conhecimento que ele preenche — um app de previsão do tempo não existe para competir com o melhor app já feito, existe para ensinar a consumir uma API, renderizar dados e tratar erros. A prescrição prática decorrente é escolher o projeto pensando primeiro no que se quer aprender com ele, o mesmo raciocínio de "necessidade → contexto → retenção" documentado acima, só que aplicado no nível de "qual projeto construir" em vez de "qual curso fazer". Ver [[wiki/concepts/mvp]] para o método tático de escopar essa v1 de aprendizado, e [[wiki/concepts/checklist-primeiro-dia-projeto]] para o checklist `.md` que operacionaliza a escolha.
+
 ## Relação com Outros Conceitos
 
 - [[wiki/concepts/homeostase-sinaptica]] — explica o mecanismo neurológico por trás de por que necessidade (utilidade/contexto/resolução de problema) aumenta retenção
@@ -43,3 +47,4 @@ O antipadrão é decidir estudar uma tecnologia só porque "está todo mundo usa
 ## Key Sources
 
 - [[wiki/sources/como-nunca-mais-esquecer-o-que-voce-estuda-programacao]]
+- [[wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub]] — mesma lógica aplicada à escolha de projetos pessoais (não só tópicos de estudo)

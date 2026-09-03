@@ -3,8 +3,8 @@ type: concept
 title: "Attack Surface (Superfície de Ataque)"
 aliases: ["attack surface", "superfície de ataque", "minimização de superfície", "surface minimization"]
 date_created: 2026-06-05
-date_updated: 2026-08-06
-source_count: 5
+date_updated: 2026-09-01
+source_count: 6
 tags: [attack-surface, security, arquitetura-seguranca, defense-in-depth, gatekeeper]
 skill: tech-mentor-security
 status: stable
@@ -69,3 +69,4 @@ Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], 
 - [[wiki/sources/ssh-chaves-como-funcionam]] — hardening de sshd_config como redução de superfície na camada de infraestrutura
 - [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — visibilidade/audiência como multiplicador do volume de ataques recebidos, independente de mudança técnica na superfície
 - [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] — brute force de diretórios (dirsearch) como técnica de recon que descobre superfície não intencional
+- [[wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv]] — campo de busca sem sanitização como ponto de entrada explorável (reflected XSS); exemplo didático de que qualquer campo que reflete input do usuário na resposta é superfície de ataque

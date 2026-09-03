@@ -3,8 +3,8 @@ type: entity
 title: "Código Fonte TV"
 aliases: ["Codigo Fonte TV", "CDF"]
 date_created: 2026-07-10
-date_updated: 2026-08-19
-source_count: 7
+date_updated: 2026-09-01
+source_count: 8
 tags: [canal, youtube, mercado-de-trabalho, pesquisa-salarial, brasil, design-patterns, typescript]
 skill: tech-mentor-leadership
 status: stub
@@ -38,3 +38,4 @@ Além de mercado/carreira (pesquisa salarial, CDF Café) e "mão no código" com
 - [[wiki/sources/design-pattern-observer-codigo-fonte-tv]] — episódio "mão no código" sobre o padrão Observer em TypeScript/Deno, com exemplo genérico e exemplo de notificação de vídeo do YouTube
 - [[wiki/sources/cqrs-dicionario-programador-codigo-fonte-tv]] — episódio "Dicionário do Programador" sobre CQRS: progressão de cenários de motivação, task-based UI, command bus, estratégias de sincronização e menção a Event Sourcing
 - [[wiki/sources/design-pattern-facade-codigo-fonte-tv]] — segundo episódio "mão no código" da minissérie de design patterns (depois de Strategy): Facade via exemplo de remoção de conta sob LGPD, com posição própria (diverge de Renato Augusto) de que a implementação fere o SRP
+- [[wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv]] — episódio "Dicionário do Programador" sobre XSS: estudo de caso narrativo (loja do Bob) para reflected vs. stored XSS, patrocínio da [[wiki/entities/alura]], indicação de SQL Injection como próximo episódio da série

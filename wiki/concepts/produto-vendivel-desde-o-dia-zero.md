@@ -3,8 +3,8 @@ type: concept
 title: "Produto Vendível Desde o Dia Zero"
 aliases: ["feature vendível", "PMF de uma única feature", "não dar tempo grátis esperando apego"]
 date_created: 2026-07-09
-date_updated: 2026-08-06
-source_count: 2
+date_updated: 2026-09-02
+source_count: 3
 tags: [product-market-fit, saas, mvp, growth, pricing]
 skill: tech-mentor-leadership
 status: draft
@@ -32,7 +32,12 @@ Complementar a esse princípio: o autor recomenda que quem empreende pela primei
 
 Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], o Find My SaaS monetiza desde o lançamento via um único mecanismo pago (boost/destaque temporário de um SaaS cadastrado na home) — o produto central (listar e receber upvote) continua gratuito, mas a via de receita já existe desde o dia zero, gerando R$ 4.819 em 15 dias sem tráfego pago. Reforça o princípio central desta página com uma variante: em vez de uma feature core paga, é uma camada de visibilidade paga sobre um produto gratuito — mesma lógica de "algo vendível desde o início", aplicada a marketplace em vez de SaaS de uso direto.
 
+## Mesmo Autor, Mesmo Produto: "Já Existir" Como Sinal de Mercado
+
+Em [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]], o mesmo autor (Persoa, também garbled na transcrição como "Persua") revisita o próprio produto sob outro ângulo: ele foi conscientemente posicionado como cópia de Cluely (que por sua vez seguiu o posicionamento do Granola), e essa cópia deliberada não é apresentada como fraqueza — é citada como evidência de que existe mercado validado (Cluely faturando ~5M USD/ano no relato do autor). O produto do autor teria batido "$1M/ano de ARR" com apenas 1.000 assinantes pagantes entre 25.000 contas criadas — reforçando, com números concretos, que a "funcionalidade vendível" (não o volume de downloads) é o que sustenta o negócio. Ver [[wiki/concepts/icp-ideal-customer-profile]] para o argumento mais amplo de que um mercado já disputado é sinal positivo, não motivo para desistir da ideia.
+
 ## Key Sources
 
 - [[wiki/sources/como-vender-um-saas-sem-audiencia]]
 - [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — monetização via boost pago desde o lançamento, sobre produto core gratuito
+- [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]] — mesmo produto (Persoa/Persua) revisitado: cópia consciente de concorrente como sinal de mercado validado, não fraqueza

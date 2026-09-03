@@ -3,8 +3,8 @@ type: concept
 title: "Testes de Integração com Banco Real"
 aliases: ["testes integração banco", "não mockar banco", "banco de teste dedicado"]
 date_created: 2026-04-25
-date_updated: 2026-08-12
-source_count: 4
+date_updated: 2026-09-02
+source_count: 5
 tags: [testes, integracao, banco-de-dados, portfolio, backend]
 skill: tech-mentor-leadership
 status: stable
@@ -67,9 +67,14 @@ Bater no banco real não é a mesma coisa que um [[teste-de-integracao-estreito-
 
 Se o double do banco não reproduz os mesmos problemas do banco real (constraints, tipos, comportamento de driver), o teste de integração que o usa não está de fato validando integração nenhuma — é só um teste mais fraco escrito pelo próprio autor do código, testando as próprias suposições em vez da realidade. Isso é a face oposta da recomendação de Meszaros ([[wiki/sources/test-double-xunitpatterns-meszaros]]): um [[test-doubles|Fake]] de banco em memória é legítimo *quando a fidelidade não importa para aquele teste* (ele cita um caso de ~50× de ganho de velocidade), mas a própria fonte alerta para **sempre ter ao menos um teste sem double** — que aqui é justamente o teste contra o banco real.
 
+## Um Banco Real Compartilhado Entre Branches Recria o Mesmo Problema Que Mockar
+
+Testar contra um banco real (não mockado) só entrega o valor prometido nesta página se esse banco for isolado por branch. Um único banco de teste compartilhado por todas as branches concorrentes sofre colisão de esquema quando migrations se atropelam — o teste passa a validar um estado de banco que é "produção + minhas mudanças + mudanças de todo mundo", não mais fiel a produção do que um mock mal calibrado seria. [[wiki/concepts/database-branching]] resolve isso dando a cada branch seu próprio banco isolado via copy-on-write, preservando o benefício de testar contra um banco real sem o custo do compartilhamento.
+
 ## Key sources
 
 - [[wiki/sources/diferenciais-portfolio-backend-junior]]
 - [[wiki/sources/integration-test-martin-fowler]]
 - [[wiki/sources/test-double-xunitpatterns-meszaros]] — Fake em memória (ganho de velocidade) vs. a regra "ao menos um teste sem double"
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — "se você não criar o banco de dados de teste real, você está testando um mock que você mesmo escreveu"
+- [[wiki/sources/database-branching-testes-neon-fernanda-kipper]] — banco real só é confiável entre branches concorrentes se for isolado por branch

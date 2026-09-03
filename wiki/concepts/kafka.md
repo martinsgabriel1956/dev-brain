@@ -3,8 +3,8 @@ type: concept
 title: "Apache Kafka"
 aliases: ["kafka", "topics e partitions", "consumer groups", "kafka producer", "kafka consumer"]
 date_created: 2026-08-19
-date_updated: 2026-08-19
-source_count: 3
+date_updated: 2026-09-01
+source_count: 4
 tags: [kafka, topics, partitions, consumer-groups, mensageria, event-sourcing, murmur-hash, offset-commit, rebalance]
 skill: tech-mentor-backend
 status: draft
@@ -99,3 +99,4 @@ A taxonomia de eventos de partida é fechada: `MATCH_STARTED`, `GOAL`, `YELLOW_C
 - [[wiki/sources/kafka]] — partition key e ordenação por entidade, paralelismo limitado ao número de partições, Kafka vs. RabbitMQ, configuração segura de producer (`acks=all`, `enable.idempotence=true`)
 - [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — mecanismo do hash Murmur + módulo para roteamento de partição explicado passo a passo, offset commit como razão de consumers ociosos, dois consumer groups independentes consumindo o mesmo tópico para propósitos diferentes (persistência completa vs. cache de estado), event replay motivado por bug de cálculo financeiro
 - [[wiki/sources/world-cup-system-design]] — slide deck da mesma aula: schema JSON completo do evento bruto vs. normalizado, taxonomia fechada de 11 tipos de evento, SQL de persistência em `matches`/`match_events`
+- [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — Kafka tratado como "black box" de streaming na arquitetura de referência de Event Sourcing (microsserviços coreografados publicam/consomem mudanças de estado); autor nota explicitamente que não precisa ser Kafka — qualquer ferramenta de streaming de grandes volumes de dados não transacionais serve

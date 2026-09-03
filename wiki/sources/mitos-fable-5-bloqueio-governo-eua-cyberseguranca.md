@@ -3,7 +3,7 @@ type: source
 title: "Mitos e Fable 5: os modelos de IA bloqueados pelo governo dos EUA por poder de cybersegurança"
 aliases: ["mitos anthropic", "fable 5 bloqueio", "projeto glasswing", "mitos vs fable 5", "bloqueio governo eua ia cyberseguranca"]
 date_created: 2026-07-24
-date_updated: 2026-07-29
+date_updated: 2026-08-27
 source_count: 1
 tags: [ai-safety, cybersegurança, anthropic, red-teaming, jailbreak, export-controls, china, japao, nsa, vulnerabilidades, ai-red-teaming]
 skill: tech-mentor-security
@@ -57,6 +57,10 @@ Vídeo (Código Fonte TV) sobre uma nova classe de modelos de IA especializados 
 **Novo ângulo não coberto antes:** nenhuma fonte da wiki registrava até agora o padrão de **bloqueio governamental de acesso a modelos de IA por risco de cybersegurança nacional** (Mitos 5, Fable 5, GPT 5.6) — isso é distinto de export controls de hardware (já coberto em [[wiki/sources/kimi-k3-china-mercado-ia-open-source]]) e merece ser tratado como um mecanismo de política pública novo e específico para modelos de "dual-use" em segurança ofensiva.
 
 **Continuação posterior:** [[wiki/sources/modelo-openai-escapa-sandbox-benchmark-cyberseguranca]] mostra o **GLM 5.2** (aqui citado como concorrente chinês do Mitos, via Zhipu AI) do lado defensivo — supostamente hospedado internamente pela própria OpenAI, sem guardrails, para investigar um incidente real depois que modelos com guardrail padrão se recusaram a ajudar. Reforça o tema desta fonte de que a capacidade de cybersegurança de ponta não fica confinada a um único laboratório ou país.
+
+## Ângulo Econômico Complementar: Custo por Vulnerabilidade e o Gargalo de Falso Positivo
+
+[[wiki/sources/pipeline-agentes-ia-pentest-idor-critica-nao-substitui]] cobre o mesmo fenômeno de descoberta automatizada de vulnerabilidades em escala muito menor (um pipeline multiagente genérico contra uma aplicação de produção, não um modelo especializado como Mitos), mas adiciona dois ângulos que esta fonte não cobre: o argumento explícito de que o **custo por vulnerabilidade encontrada despenca** quando a busca é exaustiva e automatizada (mudando a economia da atividade), e o reverso — volume alto de falsos positivos, com a **triagem humana virando o novo gargalo** do processo. Ver [[wiki/concepts/economia-da-descoberta-automatizada-de-vulnerabilidades]].
 
 ## Open Questions
 

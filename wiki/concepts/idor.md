@@ -3,8 +3,8 @@ type: concept
 title: "IDOR / BOLA (Insecure Direct Object Reference)"
 aliases: ["idor", "bola", "broken object level authorization", "insecure direct object reference"]
 date_created: 2026-07-04
-date_updated: 2026-08-06
-source_count: 4
+date_updated: 2026-08-27
+source_count: 5
 tags: [idor, bola, owasp, api-security, broken-access-control, appsec]
 skill: tech-mentor-security
 status: stable
@@ -48,6 +48,10 @@ A partir daí, o mesmo IDOR foi escalado de manual para automatizado: a requisi�
 
 [[wiki/sources/uuid-quando-usar-pergunta-diogo]] discute o mesmo padrão de vulnerabilidade a partir do lado da modelagem de dados: URLs de API REST com ID sequencial (`/organizacoes/1/usuarios/2`) permitem que um usuário autenticado varie o número e acesse dados de outro cliente/usuário, principalmente em sistemas multi-tenant com tabelas compartilhadas. A fonte reforça o mesmo ponto já registrado acima — [[wiki/concepts/uuid|UUID]] dificulta a enumeração, mas não substitui a validação de autorização em cada referência entre entidades (cada chave estrangeira precisa ser cruzada com as permissões do usuário autenticado). A fonte também descreve um caso de uso legítimo do UUID como "senha implícita" de recurso não autenticado — ex.: comprovante de compra acessível só por link, sem login.
 
+## IDOR Encontrado por Pipeline de Agentes onde Dois Pentests Manuais Não Viram
+
+[[wiki/sources/pipeline-agentes-ia-pentest-idor-critica-nao-substitui]] registra um caso em que uma aplicação de produção, já aprovada em dois pentests manuais com profissionais experientes, teve um IDOR encontrado por um pipeline de agentes de IA autônomos. A explicação não é "a IA é mais inteligente" — é exploração exaustiva e sistemática de combinações de parâmetros, sem o custo marginal de paciência que limita a cobertura de um pentester humano. Ver [[wiki/concepts/economia-da-descoberta-automatizada-de-vulnerabilidades]] para o argumento econômico completo (custo por vulnerabilidade encontrada despenca, mas a triagem humana de falsos positivos vira o novo gargalo).
+
 ## Ver também
 
 - [[wiki/concepts/rate-limiting]] — outra defesa de borda para APIs (BOPLA/API4 é frequentemente citado junto com BOLA); ausência de rate limiting é o que permite a enumeração automatizada acima
@@ -72,3 +76,4 @@ A partir daí, o mesmo IDOR foi escalado de manual para automatizado: a requisi�
 - [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]]
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]]
 - [[wiki/sources/uuid-quando-usar-pergunta-diogo]]
+- [[wiki/sources/pipeline-agentes-ia-pentest-idor-critica-nao-substitui]]

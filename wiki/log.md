@@ -22,6 +22,53 @@
 - `wiki/index.md` — nova linha em Sources; nova linha em Entities (SUnit)
 
 **Notas / open questions:** (1) O valor real desta fonte não é a definição de xUnit em si (já coberta com mais profundidade histórica por [[wiki/sources/xunit-martin-fowler]]), mas o fato de nomear **SUnit** explicitamente como o framework caseiro de Kent Beck em Smalltalk — nenhuma fonte anterior na wiki (incluindo o próprio Fowler) tinha dado nome próprio a esse framework, só descrito genericamente. (2) SUnit ainda não tem fonte primária isolada própria — o stub criado se apoia só nesta citação cruzada; candidato a fonte dedicada se o site tiver um verbete de glossário específico para o termo (não confirmado na coleta desta sessão). (3) Sem contradições encontradas com o resto da wiki.
+## [2026-08-28] ingest | Hospedando um Site Completo Dentro de uma URL (Fragment + Brotli + WebAssembly)
+
+**Fonte:** [[wiki/sources/hospedando-site-completo-em-url-fragment-brotli-webassembly]] — transcrição de vídeo colada pelo usuário no chat (autor: Michel Leonardo), já em português, sem necessidade de tradução; transformada em Markdown e salva em `raw/hospedando-site-completo-em-url-fragment-brotli-webassembly.md` conforme instrução do usuário.
+
+**Skill carregada:** `tech-mentor-security` (path real: `/home/gabriel-martins/Documentos/skills/tech-mentor-security/`; `/home/nemomartins/Documentos/new/skills/` do `CLAUDE.md` segue não existindo). `references/appsec-attacks-deep.md` consultado para calibrar a seção de XSS/DOM XSS que abre o vídeo.
+
+**Arquivos criados:**
+- `raw/hospedando-site-completo-em-url-fragment-brotli-webassembly.md` — transcrição formatada em Markdown
+- `wiki/sources/hospedando-site-completo-em-url-fragment-brotli-webassembly.md` — TL;DR, 6 key claims com confiança marcada (uma delas rebaixada para média-alta por falta de citação primária do limite de tamanho do Nginx e do valor "~2MB" do fragment), conceitos/entidades tocados, open questions, quotes
+- `wiki/concepts/fragment-identifier-url.md` (novo) — mecanismo central: `#` nunca vai ao servidor; base tanto do DOM XSS quanto da técnica de hospedagem
+- `wiki/concepts/webassembly.md` (novo) — Wasm, TinyGo, `syscall/js`, `js.Global()`, `select{}` vazio, `wasm_exec.js`
+- `wiki/concepts/brotli.md` (novo) — dicionário estático + LZ77-like + codificação por frequência; dependência do header `Content-Encoding: br`
+- `wiki/concepts/base64-encoding.md` (novo) — Base64 padrão vs. Base64URL, por que `+`/`/`/`=` quebram URLs
+- `wiki/entities/michel-leonardo.md` (novo, stub)
+
+**Arquivos atualizados:**
+- `wiki/concepts/xss.md` — nova seção conectando o mecanismo de DOM XSS (fragment nunca chega ao servidor) ao uso não-malicioso da mesma superfície para hospedagem sem servidor; novo backlink e Key Source
+- `wiki/concepts/compactacao-de-texto.md` — nova seção relacionando Brotli ao par LZ77+Huffman já documentado; novo Key Source
+- `wiki/index.md` — nova fonte e 4 novos conceitos em "Pipeline de Renderização do Browser"; nova entidade em "Segurança Ofensiva — Pessoas & Plataformas"
+
+**Notas:** fonte é uma demonstração técnica funcional (proof-of-concept de hospedagem estática sem servidor), não um exploit contra terceiros — a moldura de XSS é só o gatilho de inspiração narrativa do autor, não o foco técnico do vídeo. Nenhuma contradição com claims existentes na wiki; a fonte reforça e estende [[wiki/sources/xss-cross-site-scripting-luiz-viana]] (mesma observação sobre DOM XSS ser invisível a WAF/logs de servidor). Open question relevante: guia de blog citado como referência para TinyGo+Wasm não tem URL/autor completo verificável.
+
+---
+
+## [2026-08-27] ingest | Pipeline de Agentes de IA em Pentest Encontrou um IDOR que Dois Pentests Manuais Não Viram
+
+**Fonte:** [[wiki/sources/pipeline-agentes-ia-pentest-idor-critica-nao-substitui]] — transcrição de vídeo (canal Akita, apresentador Joel) colada pelo usuário no chat, sem arquivo de origem prévio; transformada em Markdown e salva em `raw/pipeline-agentes-ia-pentest-idor-critica-nao-substitui.md` antes da ingestão, conforme instrução do usuário. Já estava em português — sem necessidade de tradução.
+
+**Skill carregada:** `tech-mentor-security` (path real desta máquina: `/home/gabriel-martins/Documentos/skills/tech-mentor-security/`; confirma novamente que `/home/nemomartins/Documentos/new/skills/` citado no `CLAUDE.md` não existe — skill drift já documentado em ingestões anteriores). `references/redteam-pentest.md` consultado para terminologia de metodologia de pentest (fases, IDOR via troca de user_id no Burp) e `references/security/vulnerability-management.md` para calibrar o conceito de falso positivo e triagem de vulnerabilidade.
+
+**Arquivos criados:**
+- `raw/pipeline-agentes-ia-pentest-idor-critica-nao-substitui.md` — transcrição formatada em Markdown
+- `wiki/sources/pipeline-agentes-ia-pentest-idor-critica-nao-substitui.md` — TL;DR, 4 key claims (com confiança marcada explicitamente como média/média-alta, dado que o estudo primário não é nomeado na fonte), conceitos/entidades tocados, conexões com fontes existentes, open questions
+- `wiki/concepts/economia-da-descoberta-automatizada-de-vulnerabilidades.md` (stub) — custo por vulnerabilidade encontrada despenca com busca exaustiva por agentes; trade-off com falso positivo; valor migra de "testar" para "projetar/julgar" a esteira
+
+**Arquivos atualizados:**
+- `wiki/concepts/idor.md` — nova seção sobre o IDOR encontrado pelo pipeline onde pentests manuais falharam
+- `wiki/concepts/human-in-the-loop.md` — nova seção: HITL forçado pela taxa de falso positivo do próprio agente, não só checkpoint por design
+- `wiki/concepts/engenheiro-vs-programador.md` — nova seção: o "pentester operário" vs. quem desenha/audita a esteira de agentes, aplicando a dicotomia central da wiki ao domínio de segurança
+- `wiki/sources/pentest-redteam.md` — nova seção cruzando com o achado do pipeline; Key Sources atualizado
+- `wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca.md` — nova seção com o ângulo econômico complementar (custo por vulnerabilidade, gargalo de falso positivo) que a fonte do Mitos/Fable 5 não cobria
+- `wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas.md` — nova seção contrastando pentest guiado por humano vs. pipeline totalmente autônomo
+- `wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia.md` — nova seção contrastando IDOR achado por pentester humano vs. por esteira de agentes
+- `wiki/sources/ai-llm-security.md` — Key Sources atualizado com o ângulo defensivo (IA protegendo a própria aplicação, não atacando terceiros)
+- `wiki/index.md` — nova fonte e novo conceito adicionados em "Segurança Ofensiva — Pessoas & Plataformas"
+
+**Notas:** A fonte é um relato de segunda mão de um estudo não identificado pelo apresentador (sem nome de paper, pesquisadores, ou link) — todas as claims foram marcadas com confiança média a média-alta e a limitação foi registrada explicitamente nas Open Questions do source page, em vez de tratar a claim como verificada. Nenhuma contradição direta com a wiki existente; a fonte se encaixa como reforço/contraponto de três fontes já existentes sobre IDOR e pentest, e como aplicação concreta, ao domínio de segurança, da tese já estabelecida em [[wiki/concepts/engenheiro-vs-programador]].
 
 ---
 
@@ -8721,3 +8768,310 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha em Sources, logo após `xunit-xunitpatterns`
 
 **Notas / open questions:** (1) **Nenhuma contradição encontrada** — fonte confirma a definição de test fixture/test context já registrada via [[wiki/sources/fixture-setup-xunitpatterns]], mas é a citação própria dedicada ao substantivo (não à fase "fixture setup"). (2) **Achado novo**: JUnit e seus ports diretos mantêm o test context separado da Testcase Class que o cria — reforça que a Testcase Class é uma Test Suite Factory ([[wiki/sources/test-case-xunitpatterns]]), e o fixture é o que ela produz, não estado fixo embutido nela. A fonte não nomeia quais variantes de xUnit fundem os dois conceitos. (3) **Lacuna que persiste**: **Four-Phase Test** segue sem verbete primário isolado na wiki — citado de passagem por esta fonte e por [[wiki/sources/fixture-setup-xunitpatterns]], mas nunca ingerido como página própria. Candidato natural para a próxima sessão do mesmo cluster, junto das lacunas já acumuladas (customer test, acceptance test, test suite, test run, fixture teardown, observation point, direct input).
+## [2026-08-28] ingest | SQL Injection: O Que É e Como Se Proteger (Guia Completo de Soluções)
+
+**Fonte:** [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] — transcrição de vídeo fornecida pelo usuário em português como texto bruto de fala, limpa e organizada em Markdown em `raw/sql-injection-guia-completo-solucoes-galego.md` (sem necessidade de tradução). Autoria confirmada: [[wiki/entities/augusto-galego]] (menção a "cupom Galego" no bloco de patrocínio, mesmo padrão já usado para confirmar autoria em fontes anteriores).
+
+**Skill carregada:** `tech-mentor-security` (SQL Injection, defesa em camadas, OWASP). Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/sql-injection-guia-completo-solucoes-galego.md` — transcrição formatada em Markdown
+- `wiki/sources/sql-injection-guia-completo-solucoes-galego.md` — TL;DR, 7 key claims, entidades/conceitos tocados, open questions, raw quotes
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/sql-injection.md` — `source_count` 7 → 8; nova seção "Sete Camadas de Defesa (do Banco à Borda)" organizando query parametrizada → prepared statement → menor privilégio → nativo do backend → ORM/query builder → validação de input → WAF; nova linha em Key Sources
+- `wiki/concepts/principio-do-menor-privilegio.md` — `source_count` 4 → 5; nova seção sobre usuário de banco dedicado por serviço como camada contra SQL Injection e contra comprometimento total do servidor; nova linha em Key Sources
+- `wiki/concepts/waf.md` — `source_count` 4 → 5; nova seção posicionando o WAF como última (não primeira) camada de defesa contra SQLi; nova linha em Key Sources
+- `wiki/concepts/orm.md` — `source_count` 4 → 5; nova linha em Key Sources (ORM/query builder como camada de defesa, sem a fonte mencionar a ressalva de raw query interpolada já documentada na página)
+- `wiki/concepts/validacao-de-entrada.md` — `source_count` 3 → 4; nova seção sobre por que validação de formato isolada não basta contra SQLi (validador opaco, campos de texto livre não cobertos); nova linha em Key Sources
+- `wiki/entities/augusto-galego.md` — `source_count` 12 → 13; nova seção "Segunda Aula de Segurança: SQL Injection"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Nenhuma contradição encontrada** — fonte é consistente e complementar ao que já estava documentado em `sql-injection.md` (mesmo exemplo "Bobby Tables"/e-mail malicioso, mesma defesa central de parametrização) e triangula bem com a demonstração ao vivo de [[wiki/sources/injecao-sql-aula-modulo-seguranca]]. (2) **Lacuna identificada**: a fonte trata ORM como defesa presumidamente confiável sem mencionar o risco de raw query interpolada dentro de uma ORM, ponto que `sql-injection.md` e `orm.md` já registravam de fontes anteriores — não é contradição, é uma omissão da fonte nova, sinalizada na própria página de origem. (3) Nenhuma solução nativa de linguagem específica é detalhada (a fonte fica genérica em "cada backend tem a sua solução") — complementado pelo código concreto já presente em `injecao-sql-aula-modulo-seguranca`. (4) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-01] ingest | Anatomia de um Token 2 — JOSE, JWS, JWE, JWK, JWA, Algorithm Confusion e PASETO
+
+**Fonte:** [[wiki/sources/jose-jws-jwe-jwk-jwa-algorithm-confusion-paseto]] — transcrição de vídeo fornecida pelo usuário em português como texto bruto de fala, sem necessidade de tradução, limpa e organizada em Markdown em `raw/jose-jws-jwe-jwk-jwa-algorithm-confusion-paseto.md`. Autoria confirmada: [[wiki/entities/bernardo-lobato]] (autorreferência explícita no vídeo, continuação direta de "Anatomia de um Token 1", já coberto em [[wiki/concepts/jwt]]).
+
+**Skill carregada:** `tech-mentor-security` (JWT/OAuth 2.0/OIDC, referência `appsec-authn-authz.md`, cuja seção "JWT — O Que Ninguém Te Conta" já registrava o risco de `alg: none` e ancorou a validação de precisão das claims sobre esse ataque). Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/jose-jws-jwe-jwk-jwa-algorithm-confusion-paseto.md` — transcrição formatada em Markdown
+- `wiki/sources/jose-jws-jwe-jwk-jwa-algorithm-confusion-paseto.md` — TL;DR, 11 key claims, entidades/conceitos tocados, open questions, raw quotes
+- `wiki/concepts/jose.md` (novo) — ecossistema de especificações JOSE, os quatro pilares
+- `wiki/concepts/jws.md` (novo) — JSON Web Signature
+- `wiki/concepts/jwe.md` (novo) — JSON Web Encryption, estrutura de cinco partes
+- `wiki/concepts/jwk.md` (novo) — JSON Web Key, rotação via `kid`/JWKS
+- `wiki/concepts/jwa.md` (novo) — JSON Web Algorithms, fonte da cipher agility
+- `wiki/concepts/cipher-agility.md` (novo) — filosofia de design e seu custo de segurança, contraponto cipher rigidity
+- `wiki/concepts/algorithm-confusion.md` (novo) — ataque `alg: none` (caso Tim McLean 2015) e variante RS256↔HS256
+- `wiki/concepts/paseto.md` (novo) — Platform Agnostic Security Token, cipher rigidity
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/jwt.md` — `source_count` 4 → 5; nova seção "O Ecossistema JOSE por Trás do JWT" ligando JWS/JWE/JWK/JWA e o ataque de algorithm confusion à recomendação de whitelist de algoritmos já documentada; três novos links em "Relação com outros conceitos"; nova linha em Key Sources
+- `wiki/entities/bernardo-lobato.md` — `source_count` 13 → 14; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nove novas linhas na seção "Autenticação & Identidade" (jose, jws, jwe, jwk, jwa, cipher-agility, algorithm-confusion, paseto)
+
+**Notas / open questions:** (1) **Nenhuma contradição encontrada** — a fonte é diretamente complementar a `jwt.md`, que já recomendava whitelist explícita de algoritmos (`algorithms: ['HS256']`) sem nomear formalmente o ataque que essa prática previne; este vídeo fecha essa lacuna nomeando algorithm confusion e sua causa raiz (cipher agility do JWA). (2) **Lacuna sinalizada pela própria fonte**: o mecanismo completo do ataque RS256→HS256 (usar a chave pública RS256 exposta como segredo HMAC) é mencionado mas não detalhado — registrado como pergunta em aberto em `algorithm-confusion.md` para uma fonte futura mais profunda. (3) **Claim sobre Tim McLean (2015) marcada como `[external]` parcial**: a atribuição e o ano batem com registros públicos amplamente conhecidos, mas a fonte não cita CVE nem nomeia as bibliotecas exatas — sinalizado em `algorithm-confusion.md` e na página de origem. (4) **PASETO sem evidência de adoção real citada** — a fonte apresenta a especificação e o trade-off de design, mas não cita nenhuma empresa/framework usando em produção; registrado como open question em aberto. (5) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-01] ingest | Event Sourcing — Conceito, Prós, Contras e Cases de Mercado
+
+**Fonte:** [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — transcrição de vídeo fornecida pelo usuário em português como texto bruto de fala, já em pt-BR (sem necessidade de tradução), limpa e organizada em Markdown em `raw/event-sourcing-conceito-pros-contras-cases-mercado.md`. Autoria/canal **não identificado** — apresentador se dirige ao público como "ARQ" (abreviação de "arquiteto"), padrão de endereçamento inédito nas fontes já ingeridas; nenhuma entidade foi criada por falta de confirmação de identidade.
+
+**Skill carregada:** `tech-mentor-system-design`, referência `references/event-sourcing-cqrs.md` (Aggregate/Command/Event, EventStore, snapshots, projeções incrementais, upcasting, domain vs. integration events) e tabela de índice confirmando `messaging-patterns.md` para Saga/CQRS/Outbox. Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/event-sourcing-conceito-pros-contras-cases-mercado.md` — transcrição formatada em Markdown
+- `wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado.md` — TL;DR, 11 key claims, entidades/conceitos tocados, open questions, raw quotes
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/event-sourcing.md` — `source_count` 7 → 8; novas seções "Variante Leve: Histórico Sem Event Store Completo" (padrão insert + flag `enabled`, exemplo de tabelas extrato/account/saldo, desacoplamento como ajuda de LGPD), "Arquitetura Completa: Streaming + Registro Dedicado + Replay" e "Cases de Mercado" (Saga, opt-in/LGPD, auditoria financeira, telecom/Anatel); nova linha em Key Sources
+- `wiki/concepts/saga-pattern.md` — `source_count` 6 → 7; nova seção "Relação com Event Sourcing"; nova linha em Key Sources
+- `wiki/concepts/cqrs.md` — `source_count` 8 → 9; nova linha em Key Sources (fonte recomenda CQRS como conteúdo complementar, sem desenvolvê-lo)
+- `wiki/concepts/kafka.md` — `source_count` 3 → 4; nova linha em Key Sources (Kafka como "black box" de streaming, não obrigatório)
+- `wiki/concepts/compliance.md` — `source_count` 4 → 5; nova linha em Key Sources (Event Sourcing como caso de mercado para opt-in/LGPD e auditoria financeira/regulatória — telecom/Anatel como exemplo fora do eixo LGPD/PCI/SOC2 já coberto)
+- `wiki/entities/martin-fowler.md` — `source_count` 26 → 27; nova linha em Key Sources, com nuance registrada sobre atribuição de origem do padrão (Fowler documentou via bliki; Greg Young é mais citado como origem do par CQRS+Event Sourcing em outra fonte já ingerida)
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Nenhuma contradição forte encontrada** — só uma tensão leve registrada em `martin-fowler.md`: esta fonte atribui a Fowler a fundação do padrão Event Sourcing, enquanto [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]] atribui a Greg Young a origem do par CQRS+Event Sourcing na comunidade DDD — ambas plausíveis e não mutuamente exclusivas (documentação/popularização via bliki vs. prática original), tratada como nuance, não como contradição a resolver. (2) **Três cases de mercado (Saga, opt-in/LGPD, auditoria financeira, telecom/Anatel) são relatos de experiência pessoal do apresentador**, sem nome de empresa, métricas verificáveis ou fonte externa — marcados como confiança baixa/média na página de origem, mantidos por serem plausíveis e consistentes com a literatura já registrada (auditoria, compliance, saga). (3) **Variante "leve" do padrão (insert + flag `enabled`, sem event store) não tem nome formal identificado** na literatura já consultada — registrado como open question em aberto, candidato a investigação futura (pode corresponder a slowly changing dimension tipo 2 ou soft-delete temporal). (4) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-01] ingest | Como Evoluir Software Sem Pagar o Preço de Microsserviços
+
+**Fonte:** [[wiki/sources/evoluir-software-sem-pagar-preco-de-microsservicos]] — transcrição de vídeo em português fornecida pelo usuário como texto bruto de fala, já em pt-BR (sem necessidade de tradução), limpa e organizada em Markdown em `raw/evoluir-software-sem-pagar-preco-de-microsservicos.md`. Autor/canal **não identificado** — menciona vender um curso ("Construindo Aplicações Enterprise") e um livro futuro gratuito sobre arquitetura modular, mas nenhum nome de pessoa ou canal aparece na transcrição; nenhuma entidade foi criada.
+
+**Skill carregada:** `tech-mentor-backend`, referências `architecture-foundations.md` (seções "Microsserviços vs Monolito Modular" e "Modular Monolith — Design, Estrutura e Migração") e `monorepo-backend.md` (estrutura `apps/`+`libs/`, NX `affected`, monorepo vs. polirrepo). Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/evoluir-software-sem-pagar-preco-de-microsservicos.md` — transcrição formatada em Markdown
+- `wiki/sources/evoluir-software-sem-pagar-preco-de-microsservicos.md` — TL;DR, 8 key claims, conceitos tocados, open questions, raw quotes
+- `wiki/concepts/composicao-de-modulos.md` (novo) — module composition: `packages/` (módulos de domínio puros) + `apps/` (bootstraps recombináveis), mecanismo concreto NestJS/NX
+- `wiki/concepts/servicos-de-dominio.md` (novo) — granularidade intermediária entre monolito único e microsserviços, stub com open question sobre correspondência na skill
+- `wiki/concepts/monorepo-backend.md` (novo) — equivalente backend de `monorepo-frontend.md`, base estrutural para composição de módulos
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/monolito-modular.md` — `source_count` 5 → 6; nova seção "Monolito é uma Escolha de Deploy: Separação de Execução via Múltiplos Entrypoints" (exemplo NestJS com dois `main.ts`, limite de redeploy cruzado, evolução para composição de módulos); nova linha em Key Sources
+- `wiki/concepts/microsservicos.md` — `source_count` 16 → 17; parágrafo novo em "Custo-Benefício" com o vocabulário complexidade local vs. global e composição de módulos como meio-termo; nova linha em Key Sources
+- `wiki/concepts/monorepo-frontend.md` — nova seção "Equivalente no Backend" linkando `monorepo-backend.md` (sem novo Key Source, é só cross-link)
+- `wiki/index.md` — nova linha em Sources; quatro novas linhas em "Arquitetura Backend & Event-Driven" (servicos-de-dominio, composicao-de-modulos, monorepo-backend, mais a linha de source)
+
+**Notas / open questions:** (1) **Nenhuma contradição encontrada** — a fonte é diretamente complementar a `monolito-modular.md` e `microsservicos.md`, adicionando um mecanismo concreto (múltiplos entrypoints a partir do mesmo codebase, depois formalizado como "module composition" via monorepo) a um argumento que a wiki já sustentava em nível mais abstrato. (2) **Termo "module composition" é novo na wiki** e não aparece nas referências já consultadas da skill `tech-mentor-backend` — tratado como contribuição original desta fonte. (3) **"Serviços de domínio" como categoria nomeada não tem correspondência direta em `architecture-foundations.md`** — registrado como open question em `servicos-de-dominio.md`, possivelmente equivalente a "extração parcial por bounded context" na terminologia da skill. (4) Trecho final do áudio impreciso ("os 10 municípios da arquitetura modular") — quase certamente erro de ASR para "os 10 mandamentos"; mantido como incerteza, não corrigido no `raw/`. (5) Menções a Meta/Uber usando monorepos grandes são citadas sem fonte primária — plausíveis (fato amplamente relatado) mas não verificadas nesta ingestão. (6) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-01] ingest | XSS Attack — Dicionário do Programador (Código Fonte TV)
+
+**Fonte:** [[wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv]] — transcrição de vídeo fornecida pelo usuário em português como texto bruto de fala, já em pt-BR (sem necessidade de tradução), limpa e organizada em Markdown em `raw/xss-attack-dicionario-programador-codigo-fonte-tv.md`. Autoria: [[wiki/entities/codigo-fonte-tv]], série "Dicionário do Programador", patrocínio [[wiki/entities/alura]] (mencionado no áudio de forma foneticamente ambígua — "loira" — normalizado para "Alura" por contexto: escola online de tecnologia, formação de Segurança de Aplicações).
+
+**Skill carregada:** `tech-mentor-security`, referência `references/appsec-attacks-deep.md` (seção "XSS — Tipos e Impacto Real": reflected/stored/DOM XSS). Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/xss-attack-dicionario-programador-codigo-fonte-tv.md` — transcrição formatada em Markdown
+- `wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv.md` — TL;DR, 6 key claims, entidades/conceitos tocados, open questions, raw quotes
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/xss.md` — `source_count` 6 → 7; novas seções "Reflected XSS Como Engenharia Social: o Caso da Loja do Bob" e "Estatística de Mercado (Não Verificada)"; nova linha em Key Sources
+- `wiki/entities/codigo-fonte-tv.md` — `source_count` 7 → 8; nova linha em Key Sources
+- `wiki/entities/alura.md` — `source_count` 1 → 2; nova linha em Menções e em Key sources (segunda aparição, agora como patrocinadora de conteúdo de terceiros)
+- `wiki/concepts/sql-injection.md` — `source_count` 8 → 9; nova linha em Key Sources (citação leve: mencionado apenas como indicação de próximo episódio da série)
+- `wiki/concepts/sessoes-http-cookies.md` — `source_count` 5 → 6; nova linha em Key Sources (roubo de cookie de autenticação via reflected XSS, `HttpOnly` citado em checklist de mitigação)
+- `wiki/concepts/confiar-no-frontend.md` — `source_count` 3 → 4; nova linha em Key Sources (reforço do princípio geral, sem novo mecanismo técnico)
+- `wiki/concepts/attack-surface.md` — `source_count` 5 → 6; nova linha em Key Sources (campo de busca sem sanitização como ponto de entrada)
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Sobreposição parcial com [[wiki/sources/xss-cross-site-scripting-luiz-viana]]**, já ingerida — ambas cobrem reflected/stored XSS, mas esta fonte é mais introdutória/narrativa (estudo de caso fictício) e não demonstra em laboratório (DVWA); tratada como complementar, não redundante — contribui a narrativa de engenharia social do reflected XSS e as estatísticas de mercado. (2) **Estatística "74% dos ataques de 2019 / 60%+ dos sites vulneráveis" citada sem fonte primária** — registrada como claim de confiança baixa/média em `wiki/concepts/xss.md`, candidata a verificação numa ingestão futura dedicada a dados de mercado. (3) **Trecho de áudio ambíguo** ("skellen Jackson") interpretado como referência a CSRF pelo contexto (mesmo mecanismo de payload em URL), mas não confirmado — registrado como open question na fonte; nenhuma página de conceito para CSP ou CSRF existe ainda na wiki (ambos aparecem só como menção lateral). (4) **`bug-bounty.md` deliberadamente não tocado** — esta fonte não menciona bug bounty (a atacante do estudo de caso é maliciosa, não uma pesquisadora reportando responsavelmente), então não foi forçada uma conexão. (5) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-01] ingest | Os 10 Princípios da Arquitetura Modular (Valdemar Neto)
+
+**Fonte:** [[wiki/sources/os-10-principios-arquitetura-modular-valdemar-neto]] — transcrição de vídeo em português fornecida pelo usuário como texto bruto de fala, já em pt-BR (sem necessidade de tradução), limpa e organizada em Markdown em `raw/os-10-principios-arquitetura-modular-valdemar-neto.md`. Autoria: [[wiki/entities/valdemar-neto]] (novo), cofundador da [[wiki/entities/tech-leads-club]] (novo), ex-Atlassian, ex-Totvs — nomes das empresas normalizados por proximidade fonética a partir do áudio original ("Atlácia" → Atlassian, "Totorks" → Totvs), não verificados externamente.
+
+**Skill carregada:** `tech-mentor-backend`, referência `architecture-foundations.md` (seções "Microsserviços vs Monolito Modular" e "Modular Monolith") e `monorepo-backend.md` (estrutura `apps/`+`packages/`, NX `affected`). Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/os-10-principios-arquitetura-modular-valdemar-neto.md` — transcrição formatada em Markdown
+- `wiki/sources/os-10-principios-arquitetura-modular-valdemar-neto.md` — TL;DR, 7 key claims, entidades/conceitos tocados, open questions, raw quotes
+- `wiki/entities/valdemar-neto.md` (novo)
+- `wiki/entities/tech-leads-club.md` (novo)
+- `wiki/concepts/arquitetura-modular.md` (novo) — distinção formal monolito modular (um deploy, todos os módulos) vs. arquitetura modular (múltiplos monolitos/apps recombinando módulos via monorepo), os 10 princípios nomeados na íntegra, argumento "microsserviços não compõem"
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/monolito-modular.md` — `source_count` 6 → 7; nova seção "Monolito Modular vs. Arquitetura Modular: uma Distinção Formal"; nova linha em Key Sources
+- `wiki/concepts/microsservicos.md` — `source_count` 17 → 18; nova seção "Microsserviços Não Compõem"; nova linha em Key Sources
+- `wiki/concepts/composicao-de-modulos.md` — `source_count` 1 → 2, `status` stub → draft; nova seção "Nomenclatura Alternativa: Arquitetura Modular" (mesmo mecanismo, termo diferente cunhado por fonte independente); nova linha em Key Sources; novo alias "arquitetura modular"
+- `wiki/concepts/monorepo-backend.md` — `source_count` 1 → 2; menção a Bazel/Maven como ferramental alternativo; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (arquitetura-modular); duas novas linhas em Entities (valdemar-neto, tech-leads-club)
+
+**Notas / open questions:** (1) **Nenhuma contradição** — esta fonte é altamente complementar a [[wiki/sources/evoluir-software-sem-pagar-preco-de-microsservicos]] (já ingerida), cobrindo o **mesmo mecanismo técnico** (monorepo com módulos de domínio recombináveis em múltiplas apps) sob um nome diferente ("arquitetura modular" em vez de "module composition") — tratado como sinônimo entre fontes independentes, registrado explicitamente em ambos os conceitos afetados. (2) **Contribuição nova e não sobreposta**: a taxonomia numerada de 10 princípios (com nomes próprios) e o argumento específico "microsserviços não compõem" não existiam antes na wiki. (3) Nomes de empresas (Atlassian, Totvs) inferidos por proximidade fonética a partir de transcrição de áudio distorcida — não confirmados por fonte externa, registrado como open question na fonte. (4) Bazel e Maven citados de passagem como ferramental alternativo de monorepo, sem exemplo prático nesta fonte — nenhuma página própria criada para eles. (5) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-01] ingest | Três Tipos de Módulos numa Arquitetura de Monolito Modular (Valdemar Neto)
+
+**Fonte:** [[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] — transcrição de vídeo em português fornecida pelo usuário como texto bruto de fala, já em pt-BR (sem necessidade de tradução), limpa e organizada em Markdown em `raw/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto.md`. Segunda fonte na wiki do mesmo autor, [[wiki/entities/valdemar-neto]] (já existente), usando o mesmo exemplo de código do curso "Aplicações Enterprise" da [[wiki/entities/tech-leads-club]] (já existente) — app de exemplo nomeado nesta fonte como "Fake Flix".
+
+**Skill carregada:** `tech-mentor-backend`, referência `architecture-foundations.md` (seção "Modular Monolith", fronteiras explícitas via código) e `architecture-specialized.md` (DDD, Bounded Context, Shared Kernel). Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto.md` — transcrição formatada em Markdown
+- `wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto.md` — TL;DR, 7 key claims, entidades/conceitos tocados, open questions, raw quotes
+- `wiki/concepts/tipos-de-modulos.md` (novo) — três tipos de módulo (domínio, infraestrutura pura, feature) e estrutura interna Core/Supporting Infrastructure/Infraestrutura Pura
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/arquitetura-modular.md` — `source_count` 1 → 2; nova seção "Por que Nem Clean/Hexagonal Nem DDD Cobrem Isso"; nova linha em Key Sources
+- `wiki/concepts/monolito-modular.md` — `source_count` 7 → 8; nova seção "Três Tipos de Módulo Dentro do Monolito Modular"; nova linha em Key Sources
+- `wiki/concepts/clean-architecture.md` — `source_count` 8 → 9; nova seção "Clean Architecture como Base de um Módulo em Arquitetura Modular"; nova linha em Key Sources
+- `wiki/concepts/hexagonal-architecture.md` — `source_count` 8 → 9; nova seção "Adapters Nem Sempre São Genéricos: Infraestrutura Contextual vs. Infraestrutura Pura"; nova linha em Key Sources
+- `wiki/concepts/composicao-de-modulos.md` — `source_count` 2 → 3; nova seção "Que Tipo de Módulo Vira `packages/`"; nova linha em Key Sources
+- `wiki/concepts/monorepo-backend.md` — `source_count` 2 → 3; nova linha em Key Sources
+- `wiki/concepts/microsservicos.md` — `source_count` 18 → 19; nova seção "Microsserviços São Só um Codebase Singular Menor"; nova linha em Key Sources
+- `wiki/concepts/ddd.md` — `source_count` 12 → 13; nova seção "Shared Kernel Não Cobre Reuso de Infraestrutura (Claim Não Verificado)"; nova linha em Key Sources
+- `wiki/entities/valdemar-neto.md` — `source_count` 1 → 2; nova linha em Key Sources
+- `wiki/entities/tech-leads-club.md` — `source_count` 1 → 2; nova linha em Key Sources; nota sobre nome "Fake Flix"
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (tipos-de-modulos)
+
+**Notas / open questions:** (1) **Nenhuma contradição** — fonte altamente complementar às duas fontes já ingeridas sobre o mesmo autor/exemplo de código. Contribuição nova: posicionamento explícito da arquitetura modular como nível acima de Clean/Hexagonal Architecture e do Shared Kernel do DDD; camada "Supporting Infrastructure" (infraestrutura contextual, distinta de infraestrutura pura); taxonomia nomeada de três tipos de módulo com crítica justificada a módulos de feature. (2) **Claim não verificado**: a afirmação de que o Shared Kernel do DDD não cobre reuso de infraestrutura não foi checada contra fonte primária (Evans/Vernon) — registrada como open question em [[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] e em [[wiki/concepts/ddd]]. (3) **"Ultimate NestJS"** citado como repositório público de terceiros (anti-exemplo de módulos de feature) — sem página própria, por não ser central nem afiliado ao autor. (4) **"Fake Flix"** é o nome do app de exemplo do curso, não mencionado na fonte anterior sobre o mesmo autor — registrado em [[wiki/entities/tech-leads-club]]. (5) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-01] ingest | Particionamento por LIST no PostgreSQL (playlist "SQL em 30 Dias", dia 13)
+
+**Fonte:** [[wiki/sources/particionamento-por-list-postgresql-sql-30-dias]] — transcrição de vídeo em português fornecida pelo usuário como texto bruto de fala (já em pt-BR, sem necessidade de tradução), limpa e organizada em Markdown em `raw/particionamento-por-list-postgresql-sql-30-dias.md`. Autor/canal não identificado no texto da transcrição.
+
+**Skill carregada:** `tech-mentor-data`, referências `references/databases/relational.md` (seção particionamento por RANGE, Hot/Warm/Cold Storage Tiering) e `references/databases/distributed.md` (particionamento nativo PostgreSQL por range/list/hash como alternativa anterior ao sharding). Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/particionamento-por-list-postgresql-sql-30-dias.md` — transcrição formatada em Markdown
+- `wiki/sources/particionamento-por-list-postgresql-sql-30-dias.md` — TL;DR, 6 key claims, conceitos tocados, open questions, raw quotes
+- `wiki/concepts/particionamento-de-tabela.md` (novo) — RANGE vs. LIST vs. HASH, exemplo de LIST com partição DEFAULT, distinção formal frente a sharding
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/postgresql.md` — `source_count` 9 → 10; nova seção "Particionamento Nativo: RANGE vs. LIST"; nova linha em Key Sources
+- `wiki/concepts/sharding.md` — `source_count` 3 → 4; nova linha em "Alternativas antes do sharding" apontando para particionamento lógico; nova linha em Key sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (particionamento-de-tabela)
+
+**Notas / open questions:** (1) **Nenhuma contradição** — fonte é uma continuação direta de uma playlist ("dia 12", particionamento por RANGE) que **não está ingerida** nesta wiki; o novo conceito [[wiki/concepts/particionamento-de-tabela]] cobre RANGE apenas com apoio da skill `tech-mentor-data` (marcado `[skill: tech-mentor-data]`), não por fonte primária própria — registrado como open question, candidato a fonte futura se o "dia 12" for trazido para `raw/`. (2) Autor/canal do vídeo não identificado — sem nome de pessoa ou canal na fala, apenas menções genéricas a like/inscrição/sino. (3) Distinção formal entre particionamento (lógico, mesmo banco) e [[wiki/concepts/sharding]] (físico, múltiplos nós) reforçada nos dois conceitos, pois a fonte usa linguagem que poderia confundir os dois. (4) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-01] ingest | Escopo Bem Definido em Projetos: o Valor Está no Processo, Não no Resultado (Lord / LoreHub)
+
+**Fonte:** [[wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub]] — transcrição de fala fornecida pelo usuário como texto bruto (pt-BR, sem necessidade de tradução), limpa e organizada em Markdown em `raw/escopo-de-projetos-processo-nao-resultado-lorehub.md`. Autor identificado apenas como "Lord", canal/comunidade "LoreHub".
+
+**Skill carregada:** `tech-mentor-leadership`. Nenhum arquivo de referência específico da tabela cobre "escolha/escopo de side project" — tratado com conhecimento base da skill, conforme protocolo ("arquivo de referência não encontrado"). Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/escopo-de-projetos-processo-nao-resultado-lorehub.md` — transcrição formatada em Markdown
+- `wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub.md` — TL;DR, 7 key claims, conceitos tocados, open questions, raw quotes
+- `wiki/entities/lord-lorehub.md` (novo, stub) — autor/comunidade
+- `wiki/entities/discloud.md` (novo, stub) — hospedagem/deploy citada como opção gratuita
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/necessidade-como-gatilho-de-aprendizado.md` — `source_count` 1 → 2; nova seção "Aplicada à Escolha de Projetos Pessoais, Não Só de Tópicos de Estudo"; nova linha em Key Sources
+- `wiki/concepts/checklist-primeiro-dia-projeto.md` — `source_count` 2 → 3; nova seção "Requisitos Descobertos via User Stories, Não Só Listados de Cabeça"; nova linha em Key Sources
+- `wiki/concepts/user-stories.md` — `source_count` 2 → 3; nova seção "Engineering Stories: o Requisito Que o Usuário Não Vê"; nova linha em Key Sources
+- `wiki/concepts/sindrome-do-impostor.md` — `source_count` 5 → 6; nova seção "Variante: Medo de Aplicar, Não Só Medo Depois de Contratado"; nova linha em Key Sources
+- `wiki/concepts/persistencia-em-processo-seletivo.md` — `source_count` 1 → 2; nova seção "Precedida pelo Medo de Aplicar"; nova linha em Key Sources
+- `wiki/concepts/mvp.md` — `source_count` 6 → 7; nova seção "MVP de Aprendizado Pessoal (Sem Mercado, Sem Usuário Real)"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Entities (lord-lorehub, discloud)
+
+**Notas / open questions:** (1) **Nenhuma contradição** — fonte é altamente complementar a conceitos já estabelecidos ([[wiki/concepts/necessidade-como-gatilho-de-aprendizado]], [[wiki/concepts/checklist-primeiro-dia-projeto]], [[wiki/concepts/mvp]], [[wiki/concepts/sindrome-do-impostor]]), reforçando-os de fontes independentes em vez de contradizê-los. (2) **Termo não padronizado**: "engineering story" é vocabulário próprio do autor, não terminologia de indústria (Scrum/XP não a definem) — registrado em [[wiki/concepts/user-stories]] como equivalente funcional a uma task técnica no formato canônico de user story. (3) **Autoria pouco identificada**: "Lord"/"LoreHub" sem sobrenome, plataforma ou métricas de audiência — entidade criada como stub, candidata a expansão se mais fontes do mesmo autor forem ingeridas. (4) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-02] ingest | The Ambulance Pattern (Lição 56 — Developer to Architect, Mark Richards)
+
+**Fonte:** [[wiki/sources/ambulance-pattern-priorizacao-mensagens-mark-richards]] — página em inglês (https://www.developertoarchitect.com/lessons/lesson56.html) cujo conteúdo real está num vídeo do YouTube embutido via iframe (`XBVX9sEydnU`), não em texto na página HTML. Legendas automáticas em inglês extraídas via `yt-dlp`, limpas e traduzidas para pt-BR em `raw/ambulance-pattern-priorizacao-mensagens-mark-richards.md`.
+
+**Skill carregada:** `tech-mentor-system-design`, referência `references/messaging-patterns.md` (índice) — tópico específico não coberto por nenhum arquivo de referência da skill; tratado com conhecimento base, conforme protocolo ("arquivo de referência não encontrado"). Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/ambulance-pattern-priorizacao-mensagens-mark-richards.md` — transcrição limpa e traduzida
+- `wiki/sources/ambulance-pattern-priorizacao-mensagens-mark-richards.md` — TL;DR, 5 key claims, conceitos tocados, open questions, raw quotes (em inglês, mantidas no idioma original)
+- `wiki/concepts/ambulance-pattern.md` (novo) — página dedicada ao padrão: problema (prioridade na mensagem → starvation), solução (filas separadas), refinamento (instância dedicada por fila)
+- `wiki/entities/mark-richards.md` (novo, stub) — autor, fundador do site "Developer to Architect"
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/mensageria.md` — `source_count` 8 → 9; nova seção sobre o Ambulance Pattern; nova linha em Key Sources
+- `wiki/concepts/filas-e-workers.md` — `source_count` 7 → 8; nova seção "Fila Dedicada por Prioridade: Ambulance Pattern"; nova linha em Key sources
+- `wiki/concepts/priority-queue.md` — `source_count` 1 → 2; nova entrada em "Relação com outros conceitos" marcando o Ambulance Pattern como falso cognato (starvation quando se usa priority queue única para roteamento de mensagens); nova linha em Key sources
+- `wiki/concepts/back-pressure.md` — `source_count` 3 → 4; nova seção "Starvation por Competição de Fluxos (não é a mesma causa)" distinguindo a causa (competição de prioridade vs. descompasso de velocidade); nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (ambulance-pattern); nova linha em Entities (mark-richards)
+
+**Notas / open questions:** (1) **Nenhuma contradição** — fonte introduz um padrão novo na wiki, sem sobreposição direta com conteúdo existente; a única tensão é terminológica, resolvida explicitamente: [[wiki/concepts/priority-queue]] (estrutura de dados) não deve ser confundida com o roteamento por filas separadas do Ambulance Pattern — o vídeo inclusive descreve o **oposto** de uma priority queue única (que causaria o mesmo starvation que o vídeo critica na técnica de "prioridade na mensagem"). (2) **Conteúdo primário é vídeo, não texto**: a página HTML da fonte não contém o conteúdo do lesson — apenas metadados e o iframe do YouTube. Extração feita via `yt-dlp --write-auto-sub` (legendas automáticas, sem revisão humana da Google/YouTube) — pequeno risco de erro de transcrição automática em termos técnicos, mas o conteúdo é curto (~5 min) e coerente. (3) Vídeo não cita tecnologia/broker específico (não menciona SQS, RabbitMQ priority queue plugin, Kafka) — tratado em nível conceitual/arquitetural puro. (4) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-02] ingest | Database Branching: Como Criar Bancos de Dados de Teste Isolados por Branch
+
+**Fonte:** [[wiki/sources/database-branching-testes-neon-fernanda-kipper]] — transcrição de vídeo de [[wiki/entities/fernanda-kipper]] fornecida diretamente pelo usuário em fala corrida, sem pontuação; formatada em Markdown e salva em `raw/database-branching-testes-neon-fernanda-kipper.md` (já em pt-BR, sem necessidade de tradução).
+
+**Skill carregada:** `tech-mentor-backend`, referência `references/backend-tooling.md` (seção "Database Branching — Neon e PlanetScale") — confirma com alta confiança o mecanismo de copy-on-write e o critério de "quando vale o custo" descritos pela fonte, sem nenhuma divergência técnica. Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/database-branching-testes-neon-fernanda-kipper.md` — transcrição formatada em Markdown
+- `wiki/sources/database-branching-testes-neon-fernanda-kipper.md` — TL;DR, 8 key claims, conceitos tocados, open questions, raw quotes
+- `wiki/concepts/database-branching.md` (novo) — conceito dedicado: problema do banco compartilhado, mecanismo copy-on-write, fluxo típico (produção → staging → branches efêmeras), implementações conhecidas (Neon, PlanetScale), quando vale o custo
+- `wiki/entities/neon-database.md` (novo, stub) — plataforma Postgres serverless com branching nativo
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/database-migration.md` — `source_count` 1 → 2; nova seção "Onde Testar Migrations Sem Colidir Entre Branches"; nova linha em Key Sources
+- `wiki/concepts/expand-contract.md` — `source_count` 2 → 3; novo parágrafo distinguindo isolamento no tempo (Expand-Contract) vs. no espaço (database branching) como técnicas complementares; nova linha em Key Sources
+- `wiki/concepts/testes-integracao-banco-real.md` — `source_count` 4 → 5; nova seção "Um Banco Real Compartilhado Entre Branches Recria o Mesmo Problema Que Mockar"; nova linha em Key sources
+- `wiki/concepts/variaveis-de-ambiente.md` — `source_count` 1 → 2; nova seção "Atualização Automática por Plataforma de Deploy"; nova linha em Key Sources
+- `wiki/concepts/postgresql.md` — `source_count` 10 → 11; nova seção "Postgres Serverless com Branching: Neon"; nova linha em Key Sources
+- `wiki/concepts/checklist-primeiro-dia-projeto.md` — `source_count` 3 → 4; nova seção "Quando Vários Devs Chegam: Migrations Automáticas Não Bastam Sozinhas"; nova linha em Key Sources
+- `wiki/entities/fernanda-kipper.md` — `source_count` 2 → 3; nova linha em Fontes na wiki
+- `wiki/entities/vercel.md` — `source_count` 2 → 3; nova seção "Caso: Integração Nativa com Neon Para Database Branching"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (database-branching, seção "Bancos de Dados & SQL"); nova linha em Entities (neon-database)
+
+**Notas / open questions:** (1) **Nenhuma contradição** — fonte introduz um mecanismo de infraestrutura novo que resolve o mesmo tipo de problema já discutido em [[wiki/concepts/expand-contract]] e [[wiki/concepts/testes-integracao-banco-real]], sem competir com nenhuma recomendação existente; a página de conceito nova explicita a distinção "isolamento no tempo vs. no espaço" para não confundir os dois padrões. (2) **Refresh do seed de staging não é coberto pela fonte** — a branch-mãe de dev ficou com um seed desatualizado (6 cursos vs. 11 em produção) sem processo de sincronização mencionado; candidato a fonte futura sobre data masking em ambientes de teste. (3) **Cleanup de branches efêmeras não é mencionado pela fonte**, ao contrário do workflow de CI documentado na skill (`neon branches delete if: always()`) — vale confirmar em fonte futura se o setup real de `fernandakipper.com` também limpa as branches. (4) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-02] ingest | Pare de Ter Ideias: Lean Canvas Obsoleto, ICP e MVP na Era da IA
+
+**Fonte:** [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]] — transcrição de vídeo fornecida diretamente pelo usuário em fala corrida, sem pontuação, em português; formatada em Markdown e salva em `raw/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia.md` (já em pt-BR, sem necessidade de tradução).
+
+**Skill carregada:** `tech-mentor-leadership` — nenhum arquivo de `references/` cobre especificamente "ideação de produto/ICP/Lean Canvas"; tratado com conhecimento base da skill, conforme protocolo ("arquivo de referência não encontrado"). Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia.md` — transcrição formatada em Markdown
+- `wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia.md` — TL;DR, 8 key claims, conceitos tocados, open questions, raw quotes
+- `wiki/concepts/lean-canvas.md` (novo) — framework de Ash Maurya, os 9 quadrantes, crítica ao uso como passo 1 obrigatório, mudança de gargalo 2012→2026
+- `wiki/concepts/icp-ideal-customer-profile.md` (novo) — ICP específico vs. genérico, early adopter, dev como ICP ruim para ferramentas de dev, três categorias de problema (reduzir custo/aumentar lucro/vender sonho)
+- `wiki/entities/ash-maurya.md` (novo, stub) — criador do Lean Canvas
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/mvp.md` — `source_count` 7 → 8; nova seção "MVP e a Compressão do Tempo de Construção com IA" (estudos GitHub 2022 e Y Combinator); nova linha em Key Sources
+- `wiki/concepts/lean-startup.md` — `source_count` 2 → 3; nova seção "Lean Canvas Como Ferramenta de Diagnóstico, Não Ritual Obrigatório"; nova linha em Key Sources
+- `wiki/concepts/validacao-de-problema.md` — `source_count` 1 → 2; nova seção "Dev Como Fonte de Problema: Um Viés Específico"; nova linha em Key Sources
+- `wiki/concepts/produto-vendivel-desde-o-dia-zero.md` — `source_count` 2 → 3; nova seção "Mesmo Autor, Mesmo Produto: 'Já Existir' Como Sinal de Mercado"; nova linha em Key Sources
+- `wiki/entities/lucas-montano.md` — `source_count` 14 → 15; novo parágrafo sobre este vídeo; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (lean-canvas, icp-ideal-customer-profile, seção "Produto & Lean Startup"); nova linha em Entities (ash-maurya)
+
+**Notas / open questions:** (1) **Nenhuma contradição** — fonte reforça, de ângulo complementar, teses já estabelecidas em [[wiki/concepts/lean-startup]] e [[wiki/concepts/validacao-de-problema]] (problema antes de solução), sem competir com nenhuma recomendação existente. (2) **Autoria não confirmada nominalmente**: a transcrição não cita o nome do canal/autor; atribuição a [[wiki/entities/lucas-montano]] inferida pela menção ao produto "Persua" (provável garble de "Persoa"/"Pessoa", já registrado em [[wiki/sources/como-vender-um-saas-sem-audiencia]]) e ao segundo canal "Stupid Tech Founder" (citado como "Stupid Button Club" em vídeos anteriores do mesmo autor). (3) **Números do produto não cruzados**: os valores citados aqui (ARR ~$1M, 25.000 downloads, 1.000 assinantes) não aparecem na fonte anterior sobre o mesmo produto — não há contradição, apenas dado adicional não verificado contra outra fonte independente. (4) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-02] ingest | Aprendendo a Aprender: Talento é Mito, Prática Deliberada é o Que Funciona (Fábio Akita)
+
+**Fonte:** [[wiki/sources/akita-pratica-deliberada-mito-do-talento]] — transcrição de vídeo fornecida diretamente pelo usuário em fala corrida, sem pontuação, em português; formatada em Markdown e salva em `raw/akita-pratica-deliberada-mito-do-talento.md` (já em pt-BR, sem necessidade de tradução).
+
+**Skill carregada:** `tech-mentor-leadership` — nenhum arquivo de `references/` cobre especificamente "prática deliberada / mito do talento"; tratado com conhecimento base da skill (o tema é adjacente a `individual-development-plan.md`, mas não coincide), conforme protocolo ("arquivo de referência não encontrado"). Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/akita-pratica-deliberada-mito-do-talento.md` — transcrição formatada em Markdown
+- `wiki/sources/akita-pratica-deliberada-mito-do-talento.md` — TL;DR, 10 key claims, conceitos tocados, open questions, raw quotes
+- `wiki/concepts/zona-de-aprendizado.md` (novo) — três círculos concêntricos de Noel Tichy (conforto/aprendizado/pânico)
+- `wiki/concepts/autoavaliacao-vs-validacao-externa.md` (novo) — metacognição, atribuição de erro, crítica à validação externa
+- `wiki/concepts/mito-do-genio-mozart.md` (novo) — desconstrução histórica do mito de Mozart como "faísca divina"
+- `wiki/entities/geoff-colvin.md` (novo, stub) — autor de *Talent Is Overrated*
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/pratica-deliberada.md` — `source_count` 3 → 4; nova seção "Zona de Aprendizado, Alta Repetição e Foco Solitário" e "Autoavaliação Como Fechamento do Ciclo"; novos links em Relação com Outros Conceitos; nova linha em Key Sources
+- `wiki/concepts/disciplina-vs-talento.md` — `source_count` 6 → 7; nova seção "Sétima Fonte: O Caso Mozart Como Evidência Histórica Detalhada"; nova linha em Key Sources
+- `wiki/entities/fabio-akita.md` — `source_count` 7 → 8; nova seção "Série 'Aprendendo a Aprender': Contra o Mito do Talento"; nova linha em Key Sources
+- `wiki/concepts/aprender-a-aprender.md` — `source_count` 7 → 8; nova seção "'Esvaziar o Copo': Ceticismo Como Pré-Condição"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (seção "Aprendizado e Mentalidade"); duas novas linhas em Entities (fabio-akita já existia, adicionado geoff-colvin)
+
+**Notas / open questions:** (1) **Nenhuma contradição** — fonte reforça, com evidência histórica mais detalhada (caso Mozart) e mecanismo estrutural mais explícito (zona de aprendizado, autoavaliação), a tese já estabelecida em [[wiki/concepts/disciplina-vs-talento]] e [[wiki/concepts/pratica-deliberada]]; a atribuição da regra das 10 mil horas a Gladwell/Ericsson é consistente com o que já estava registrado em `pratica-deliberada.md`. (2) **Sem verificação independente**: os números citados (índice de precocidade, datas de recordes olímpicos, detalhes biográficos de Mozart) vêm todos do livro de Geoff Colvin relatado por Akita — nenhum estudo primário foi checado pela wiki. (3) **Entidades secundárias sem stub**: Malcolm Gladwell, Mozart, Tchaikovsky, Leopold Auer, Roger Bacon e Noel Tichy foram mencionados mas não ganharam página própria — não são foco recorrente da wiki de mentoria técnica; citados inline nas páginas relevantes. (4) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-02] ingest | Idempotência com Redis — Controle de Mensagens WhatsApp (Tulio Faria, DevPleno)
+
+**Fonte:** [[wiki/sources/idempotencia-redis-controle-mensagens-whatsapp-tulio-faria]] — transcrição de vídeo fornecida diretamente pelo usuário em fala corrida, sem pontuação, em português; formatada em Markdown e salva em `raw/idempotencia-redis-controle-mensagens-whatsapp-tulio-faria.md` (já em pt-BR, sem necessidade de tradução).
+
+**Skill carregada:** `tech-mentor-backend` — arquivo de referência específico encontrado: `references/idempotency-patterns.md`. Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/idempotencia-redis-controle-mensagens-whatsapp-tulio-faria.md` — transcrição formatada em Markdown
+- `wiki/sources/idempotencia-redis-controle-mensagens-whatsapp-tulio-faria.md` — TL;DR, 5 key claims, conceitos tocados, open questions, raw quotes
+- `wiki/entities/tulio-faria.md` (novo, stub) — criador do canal DevPleno
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/idempotencia.md` — `source_count` 7 → 8; novas seções "`SET ... EX ... GET` do Redis: Check-and-Set Atômico numa Única Chamada" e "Caso Real: Notificações WhatsApp/SMS — Chave Composta + Janela de Minutos, Não Segundos"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Entities (tulio-faria)
+
+**Notas / open questions:** (1) **Nenhuma contradição** — fonte é um caso de aplicação concreto (notificações WhatsApp/SMS) do mesmo padrão já bem estabelecido em [[wiki/concepts/idempotencia]], reforçando claims existentes (timeout não decide o que aconteceu; janela de tempo é decisão de negócio; combinar campos do domínio como chave). Contribuição nova e específica: a técnica `redis.set(key, val, "EX", ttl, "GET")` como variante do `SET NX EX` já documentado, trocando "recusar escrita se já existe" por "sempre escrever, mas devolver o valor anterior". (2) **Gap identificado**: o vídeo não trata da corrida entre duas chamadas concorrentes com a mesma chave (o comando usado não tem efeito de lock como o `NX`) — diferente da resolução via `INSERT ... ON CONFLICT` já registrada na wiki; sinalizado como pergunta em aberto na fonte. (3) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.

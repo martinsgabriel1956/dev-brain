@@ -4,7 +4,7 @@ title: "DDD — Domain-Driven Design"
 aliases: ["domain-driven design", "ddd", "domínio"]
 date_created: 2026-05-31
 date_updated: 2026-08-18
-source_count: 12
+source_count: 13
 tags: [ddd, arquitetura, bounded-context, aggregate, domain-events, hexagonal]
 skill: tech-mentor-backend
 status: draft
@@ -88,9 +88,14 @@ No DDD, o agregado é responsável por proteger suas próprias invariantes — r
 
 [[wiki/sources/microsservicos-monolito-first-renato-augusto]] posiciona DDD como a resposta direta ao motivo mais importante para não começar um projeto com microsserviços: no início, o domínio ainda está sendo descoberto (regras de negócio, processos e entidades em constante evolução), e decompor fisicamente o sistema antes disso gera fronteiras de serviço que não representam corretamente as responsabilidades reais — exigindo retrabalho de múltiplos microsserviços e de seus bancos de dados isolados quando o domínio verdadeiro se revela (exemplo didático: estoque e promoções cruzando as fronteiras "óbvias" entre produtos, pedidos e clientes num e-commerce). A fonte é explícita ao afirmar que DDD "não é uma arquitetura, não é uma forma de organizar as pastinhas do projeto" — é a abordagem que usa bounded contexts para entender o domínio antes de fisicamente distribuir o sistema em [[wiki/concepts/monolito-modular|monolito modular]] primeiro, e só depois em [[wiki/concepts/microsservicos]] (ver [[wiki/concepts/monolith-first]]).
 
+## Shared Kernel Não Cobre Reuso de Infraestrutura (Claim Não Verificado)
+
+[[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] afirma que o Shared Kernel do DDD não trata explicitamente de reuso de infraestrutura entre contextos nem de rodar módulos em processos separados — usado como justificativa para a existência da [[wiki/concepts/arquitetura-modular|arquitetura modular]] como camada adicional acima do DDD. Claim do autor, não verificado nesta ingestão contra uma fonte primária de DDD (Evans/Vernon); esta página ainda não documenta Shared Kernel com profundidade suficiente para confirmar ou contestar.
+
 ## Key Sources
 
 - [[wiki/sources/monolith-first-martin-fowler]] — fonte primária do argumento de dificuldade de acertar bounded contexts no início de um projeto, base do princípio Monolith First que motiva adiar microsserviços até o domínio amadurecer
+- [[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] — claim não verificado de que o Shared Kernel não cobre reuso de infraestrutura entre contextos
 - [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — DDD/bounded context como resposta à falta de conhecimento de domínio no início de um projeto, motivo principal para adiar microsserviços
 - [[wiki/sources/cqrs-martin-fowler]] — bounded context como escopo de aplicação do CQRS
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]

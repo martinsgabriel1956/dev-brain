@@ -3,8 +3,8 @@ type: entity
 title: "Fernanda Kipper"
 aliases: ["Fernanda Kipper", "fernandakipper"]
 date_created: 2026-08-12
-date_updated: 2026-08-25
-source_count: 2
+date_updated: 2026-09-02
+source_count: 3
 tags: [criadora-de-conteudo, youtube, desenvolvimento-web, ensino]
 skill: tech-mentor-networking
 status: stub
@@ -18,3 +18,4 @@ Desenvolvedora e criadora de conteúdo técnico (canal no YouTube), com material
 
 - [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — aula amarrando teoria de endereçamento da internet (IP, domínio, DNS, HTTP/HTTPS) a uma configuração prática de domínio na [[wiki/entities/amazon-web-services|AWS]] (Route 53 + ACM + CloudFront + S3). Estilo pedagógico: teoria com analogias (endereço de casa, agenda telefônica) antes da parte hands-on.
 - [[wiki/sources/busca-binaria-fila-protocolos-atendimento-live-coding]] — corte de um live coding quinzenal (2º e 4º domingo do mês) do canal principal "Fernanda Kiperdev": exercício de [[wiki/concepts/algoritmos-de-busca|busca binária]] resolvido em conjunto com o chat, com leitura de trechos do livro *Entendendo Algoritmos*
+- [[wiki/sources/database-branching-testes-neon-fernanda-kipper]] — [[wiki/concepts/database-branching|database branching]] com [[wiki/entities/neon-database|Neon]]: caso real de conflitos de migrations concorrentes no portal `fernandakipper.com`, resolvido com bancos de teste isolados por branch via copy-on-write, integrado à [[wiki/entities/vercel|Vercel]]

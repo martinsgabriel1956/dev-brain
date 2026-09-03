@@ -3,8 +3,8 @@ type: concept
 title: "XSS (Cross-Site Scripting)"
 aliases: ["xss", "cross-site scripting", "injeção javascript", "script injection"]
 date_created: 2026-06-10
-date_updated: 2026-08-19
-source_count: 5
+date_updated: 2026-09-01
+source_count: 7
 tags: [security, xss, owasp, appsec, input-sanitization, attack-surface, dvwa, csp]
 skill: tech-mentor-security
 status: draft
@@ -56,6 +56,18 @@ XSS e [[sql-injection]] são instâncias do mesmo padrão: input não sanitizado
 
 Se um token de autenticação (sessão ou [[wiki/concepts/jwt|JWT]]) está guardado em `localStorage`, um script injetado via XSS lê `localStorage` diretamente e exfiltra o token para um servidor externo. Um cookie `HttpOnly` neutraliza esse vetor específico — o script injetado não consegue ler o valor do cookie, mesmo com execução JS completa na página.
 
+## O Mesmo Mecanismo, Sem Intenção Maliciosa: Site Inteiro no Fragment
+
+[[wiki/sources/hospedando-site-completo-em-url-fragment-brotli-webassembly]] parte da mesma observação central do DOM XSS descrita acima — que o [[wiki/concepts/fragment-identifier-url]] nunca é enviado ao servidor e é lido só pelo navegador da vítima — e a leva a um uso não-malicioso: em vez de injetar um payload curto malicioso, guardar ali um site inteiro (minificado, comprimido em [[wiki/concepts/brotli]], decodificado no cliente via [[wiki/concepts/webassembly]]). É a mesma superfície técnica (dados fora do alcance de qualquer filtro server-side), usada como mecanismo de hospedagem em vez de vetor de ataque — reforça que a defesa contra DOM XSS tem que estar necessariamente no código client-side, já que nem [[wiki/concepts/waf]] nem log de servidor têm visibilidade sobre esse canal.
+
+## Reflected XSS Como Engenharia Social: o Caso da Loja do Bob
+
+[[wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv]] ilustra o reflected XSS com um estudo de caso narrativo: um site de e-commerce reflete o termo de busca sem sanitização na página de "nenhum resultado encontrado". A atacante confirma a execução com um payload simples, hospeda um script de roubo de cookie em domínio próprio, ofusca o código, encurta o link apontando para a busca vulnerável e o distribui em comunidades temáticas para induzir cliques — sequestrando as sessões de quem clica. O ponto central: reflected XSS não fica armazenado em lugar nenhum do servidor, então **precisa de um vetor humano** para chegar até a vítima; isso o diferencia estruturalmente do stored XSS, que dispensa esse passo porque o próprio site entrega o payload a quem visualiza o conteúdo afetado (exemplo clássico: um tópico de fórum com `<script>` embutido no corpo, executado automaticamente para todo visitante).
+
+## Estatística de Mercado (Não Verificada)
+
+A mesma fonte cita que, de todos os ataques documentados em 2019, cerca de 74% estariam de alguma forma relacionados a XSS, e que mais de 60% dos sites existentes permaneceriam vulneráveis a algum ataque desse tipo — sem citar a fonte primária do dado. Direcionalmente consistente com XSS aparecer historicamente no OWASP Top 10, mas registrado aqui como claim de confiança baixa/média, não triangulado.
+
 ## Relação com Outros Conceitos
 
 - [[attack-surface]] — qualquer ponto que renderiza input do usuário é superfície de ataque para XSS
@@ -67,6 +79,7 @@ Se um token de autenticação (sessão ou [[wiki/concepts/jwt|JWT]]) está guard
 - [[wiki/concepts/confiar-no-frontend]] — `maxlength` de formulário é o mesmo anti-padrão de validação só no cliente
 - [[wiki/concepts/waf]] — não detecta DOM XSS quando o payload nunca passa pelo servidor
 - [[wiki/concepts/bug-bounty]] — XSS é uma das falhas mais comuns reportadas em programas de bug bounty
+- [[wiki/concepts/fragment-identifier-url]] — canal que nunca chega ao servidor; base tanto do DOM XSS quanto da técnica de hospedagem sem servidor
 
 ## Key Sources
 
@@ -76,3 +89,5 @@ Se um token de autenticação (sessão ou [[wiki/concepts/jwt|JWT]]) está guard
 - [[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] — citado, junto de [[sql-injection]], como padrão inseguro comum em projetos públicos usados como dado de treinamento de LLMs de código
 - [[wiki/sources/refresh-token-pattern-access-token-de-curta-duracao]] — motivo central de excluir `localStorage` como opção de armazenamento do refresh token
 - [[wiki/sources/xss-cross-site-scripting-luiz-viana]] — demonstração prática no DVWA: bypass de blocklist de tag, restrição client-side (`maxlength`) contornável, e limite do WAF contra DOM XSS
+- [[wiki/sources/hospedando-site-completo-em-url-fragment-brotli-webassembly]] — extensão criativa (não-maliciosa) do mesmo mecanismo de DOM XSS: usa o fragment identifier como canal de dados invisível ao servidor para hospedar um site inteiro sem servidor
+- [[wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv]] — introdução didática com estudo de caso narrativo (loja do Bob): reflected XSS como ataque que exige engenharia social vs. stored XSS entregue automaticamente pelo próprio site; estatísticas de mercado não verificadas (74%/60%)

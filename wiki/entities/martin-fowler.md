@@ -3,8 +3,8 @@ type: entity
 title: "Martin Fowler"
 aliases: ["Fowler", "martinfowler.com"]
 date_created: 2026-07-07
-date_updated: 2026-08-23
-source_count: 26
+date_updated: 2026-09-01
+source_count: 27
 tags: [thoughtworks, autor, testes, arquitetura, tech-debt, refactoring, agile]
 skill: tech-mentor-testing
 status: stable
@@ -123,3 +123,4 @@ Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter us
 - [[wiki/sources/very-low-defect-project-martin-fowler]] — bliki de 2004 que cunha o termo VeryLowDefectProject a partir de quatro casos observados, incluindo ex-colegas do C3 e Thoughtworks
 - [[wiki/sources/deployment-pipeline-martin-fowler]] — bliki de 2013 que cunha "Deployment Pipeline": estágios progressivos por confiança, escopo além de testes, colaboração e trilha de auditoria
 - [[wiki/sources/continuous-delivery-martin-fowler]] — bliki de 2013 que define "Continuous Delivery": quatro indicadores, distinção vs. Continuous Deployment, DevOps culture, crédito a Jez Humble
+- [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — citado como um dos fundadores/documentadores do padrão Event Sourcing via bliki; nuance registrada: outras fontes (ex.: [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]]) atribuem a Greg Young a origem do par CQRS+Event Sourcing na comunidade DDD, não a Fowler

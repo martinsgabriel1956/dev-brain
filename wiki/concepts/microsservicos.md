@@ -3,8 +3,8 @@ type: concept
 title: "Microsserviços"
 aliases: ["microsservicos", "microservices", "arquitetura de microsserviços", "decomposição por domínio"]
 date_created: 2026-07-24
-date_updated: 2026-08-21
-source_count: 16
+date_updated: 2026-09-01
+source_count: 19
 tags: [microsservicos, arquitetura, bounded-context, distributed-monolith, circuit-breaker, resiliencia]
 skill: tech-mentor-backend
 status: draft
@@ -43,6 +43,16 @@ Uma aula constrói, problema por problema, o percurso que leva um microsserviço
 **Custos:** complexidade operacional bem maior — consistência de dados distribuída, latência de rede entre serviços, observabilidade sobre múltiplos serviços, orquestração de deploy, e padrões de resiliência obrigatórios ([[wiki/concepts/circuit-breaker]], retry, timeout) para lidar com falhas parciais que não existiam num processo único.
 
 Segundo `references/architecture-foundations.md` da skill `tech-mentor-backend`, monolito modular é o ponto de partida correto para ~90% dos casos — o caminho arquitetural saudável é monolito bem modularizado → extrair microsserviço quando há necessidade real (escala diferente, time separado, deploy independente), não o inverso.
+
+[[wiki/sources/evoluir-software-sem-pagar-preco-de-microsservicos]] nomeia esse trade-off com um vocabulário próprio, complementar ao já registrado: microsserviços resolvem **complexidade local** (código de cada serviço pequeno, isolado, baixa carga cognitiva) ao custo de nova **complexidade global** (comunicação entre serviços, deploy orquestrado, consistência distribuída, monitoramento fragmentado) — a mesma conta de custo operacional já documentada acima, agora com um mecanismo concreto de meio-termo: em vez de saltar direto para microsserviços, é possível recombinar módulos de domínio em diferentes processos de deploy a partir do mesmo codebase ([[wiki/concepts/composicao-de-modulos|composição de módulos]] via [[wiki/concepts/monorepo-backend|monorepo]]), adiando o momento em que vale pagar o preço de repositórios/pipelines/infraestrutura separados.
+
+## Microsserviços Não Compõem
+
+[[wiki/sources/os-10-principios-arquitetura-modular-valdemar-neto]] nomeia uma limitação estrutural específica de microsserviços, não registrada antes nesta forma: eles **não compõem** — não é possível colocar vários microsserviços dentro de uma mesma app/processo, porque cada um vive em codebase/repositório/pipeline próprios. Em contraste, módulos de domínio organizados num monorepo (ver [[wiki/concepts/arquitetura-modular]] e [[wiki/concepts/composicao-de-modulos]]) podem ser recombinados em "infinitas" apps diferentes a partir do mesmo código. É um argumento novo a favor da tese central desta página (monolito modular como ponto de partida correto): a componibilidade é uma vantagem que microsserviços perdem estruturalmente ao se dividirem em codebases separados.
+
+## Microsserviços São Só um Codebase Singular Menor
+
+[[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] traz um ângulo complementar ao argumento acima: internamente, um microsserviço continua sendo um **codebase singular** — a mesma limitação estrutural de um monolito tradicional, só que menor. A transição de monolito para microsserviços não mudou como padrões como [[wiki/concepts/clean-architecture]]/[[wiki/concepts/hexagonal-architecture]] são aplicados dentro de cada serviço; quem resolve isso é a [[wiki/concepts/arquitetura-modular|arquitetura modular]], que divide o mesmo codebase em módulos com tipos e responsabilidades explícitos (ver [[wiki/concepts/tipos-de-modulos]]).
 
 ## Microsserviços como Eixo de Aprendizado (Não Só Estilo Arquitetural)
 
@@ -112,6 +122,7 @@ A mesma fonte reafirma a regra de acesso exclusivo via API (nunca via banco comp
 - [[wiki/sources/microsservicos]] — decomposição por bounded context, distributed monolith como anti-pattern, padrões de resiliência obrigatórios
 - [[wiki/sources/talk-about-platforms-evan-bottcher]] — o pré-requisito organizacional: plataforma self-service para sustentar times autônomos sem acoplamento de backlog
 - [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — microsserviços como guia/eixo de aprendizado de arquitetura, hype de 2014 em perspectiva histórica, relato pessoal de carreira, Keycloak como peça pronta reaproveitável
+- [[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] — microsserviço como "codebase singular menor", mesma limitação estrutural do monolito tradicional que só a arquitetura modular resolve
 - [[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]] — "microsserviços exigem justificativa" como opinião estável (não mudou em 6 anos), reforçando a mesma tese por um ângulo independente
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — monolito vs. microsserviços como decisão de sênior-plus, e como tópico de tradeoff cobrado em entrevista sênior
 - [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] — mesmo princípio de extração tardia (monolito modular → vertical slice → builds separados) aplicado à arquitetura frontend
@@ -119,3 +130,5 @@ A mesma fonte reafirma a regra de acesso exclusivo via API (nunca via banco comp
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — sharding de banco como consequência da decomposição por DDD, não como técnica aplicável a um monolito inteiro
 - [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]] — microsserviços eliminam o [[wiki/concepts/code-espaguete]] por impossibilidade estrutural (serviço não chama função de outro), mas a troca chamada-de-função→chamada-de-rede traz latência e overhead que só compensam com razão real de hardware/escala; o [[wiki/concepts/monolito-modular]] como etapa anterior que facilita a extração futura
 - [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]] — tática concreta de extração: clonar o banco de dados compartilhado e rodar migração isolada a partir dele, no momento em que um módulo (ex.: payment) ganha time dedicado — ver [[wiki/concepts/database-per-service]]
+- [[wiki/sources/evoluir-software-sem-pagar-preco-de-microsservicos]] — vocabulário complexidade local vs. global, e [[wiki/concepts/composicao-de-modulos|composição de módulos]] via monorepo como meio-termo concreto antes de pagar o preço de microsserviços de fato
+- [[wiki/sources/os-10-principios-arquitetura-modular-valdemar-neto]] — "microsserviços não compõem" como limitação estrutural frente à componibilidade de [[wiki/concepts/arquitetura-modular|arquitetura modular]]; dois motivos concretos (virtualização + aprendizado de décadas) para o retorno de monolitos modulares

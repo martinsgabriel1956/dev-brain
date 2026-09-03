@@ -3,8 +3,8 @@ type: concept
 title: "Sessões HTTP e Cookies"
 aliases: ["sessão HTTP", "session ID", "cookie de sessão", "sessão stateful"]
 date_created: 2026-07-27
-date_updated: 2026-08-19
-source_count: 5
+date_updated: 2026-09-01
+source_count: 6
 tags: [sessao, cookie, autenticacao, stateless, http, seguranca]
 skill: tech-mentor-security
 status: draft
@@ -70,3 +70,4 @@ Redis é o padrão de produção justamente por resolver o caso de múltiplos se
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — invalidação ao trocar senha; comparação memória vs. banco vs. Redis para armazenamento de sessão
 - [[wiki/sources/refresh-token-pattern-access-token-de-curta-duracao]] — cookie `HttpOnly` recomendado especificamente para o refresh token, comparado com `localStorage` e armazenamento em memória/estado da aplicação
 - [[wiki/sources/xss-cross-site-scripting-luiz-viana]] — `document.cookie` citado como alvo direto de exfiltração num payload de XSS bem-sucedido, reforçando por que `HttpOnly` é a defesa específica contra esse vetor
+- [[wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv]] — estudo de caso do "roubo de cookie de autenticação" via script hospedado em domínio externo (reflected XSS); marca `HttpOnly` como item de checklist de mitigação, sem detalhar o mecanismo

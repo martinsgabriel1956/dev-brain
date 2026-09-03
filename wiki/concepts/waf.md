@@ -3,8 +3,8 @@ type: concept
 title: "WAF (Web Application Firewall)"
 aliases: ["waf", "web application firewall", "firewall de aplicação"]
 date_created: 2026-06-05
-date_updated: 2026-08-19
-source_count: 4
+date_updated: 2026-08-28
+source_count: 5
 tags: [waf, ddos, owasp, borda, attack-surface, cloud-security, aws-waf, cloudflare, under-attack-mode, syn-flood]
 skill: tech-mentor-security
 status: stable
@@ -45,6 +45,10 @@ Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] �
 
 Um WAF inspeciona tráfego HTTP entre cliente e servidor — não tem visibilidade sobre o que acontece só no navegador. Um payload de [[wiki/concepts/xss|DOM-based XSS]] que nunca é enviado ao servidor (por exemplo, indo depois de um fragmento de URL `#`, que por definição do protocolo HTTP não trafega na requisição) simplesmente não existe do ponto de vista do WAF. Ver [[wiki/sources/xss-cross-site-scripting-luiz-viana]] para a demonstração prática desse gap.
 
+## WAF Contra SQL Injection: Última Camada, Não a Primeira
+
+[[wiki/sources/sql-injection-guia-completo-solucoes-galego]] posiciona o WAF explicitamente como a **última** das sete camadas de defesa contra [[wiki/concepts/sql-injection]] — depois de query parametrizada, prepared statement, menor privilégio, solução nativa do backend, ORM e validação de input — não a primeira nem a principal. A fonte descarta explicitamente a expectativa de cobertura total ("de maneira alguma o WAF vai prevenir 100% das SQL Injections"), tratando-o como bônus de proteção geral por padrão de payload, e recomenda corrigir primeiro a nível de código/backend ao encontrar um SQLi em produção.
+
 ## Provedores Comuns
 
 - **AWS WAF** — integra com CloudFront, ALB, API Gateway
@@ -58,3 +62,4 @@ Um WAF inspeciona tráfego HTTP entre cliente e servidor — não tem visibilida
 - [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]] — Under Attack Mode desativado como falha real de configuração, não do produto
 - [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — 157 tentativas maliciosas bloqueadas, mesma origem, momento anterior ao incidente
 - [[wiki/sources/xss-cross-site-scripting-luiz-viana]] — DOM-based XSS como caso onde o WAF não tem visibilidade, porque o payload nunca é enviado ao servidor
+- [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] — WAF posicionado como última de sete camadas de defesa contra SQLi, sem expectativa de cobertura total

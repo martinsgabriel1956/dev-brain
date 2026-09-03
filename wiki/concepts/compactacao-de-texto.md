@@ -3,8 +3,8 @@ type: concept
 title: "Compactação de Texto (Huffman Coding, Deflate, LZSS/LZ77)"
 aliases: ["huffman coding", "deflate", "lzss", "lz77", "compressão de texto", "text compression"]
 date_created: 2026-07-27
-date_updated: 2026-08-18
-source_count: 3
+date_updated: 2026-08-28
+source_count: 4
 tags: [cs-fundamentals, compressao, huffman-coding, deflate, lzss, lz77, gzip, encoding, priority-queue]
 skill: cs-fundamentals
 status: draft
@@ -55,6 +55,10 @@ Ver [[wiki/sources/por-que-letras-minusculas-economizam-dados]] para a demonstra
 
 O mesmo Huffman coding descrito acima não é exclusivo de texto/HTTP: [[wiki/sources/historia-dos-formatos-de-imagem]] documenta que tanto JPEG quanto PNG usam Huffman coding como passo final de compressão — no JPEG, sobre os coeficientes já quantizados pela DCT (compressão com perdas); no PNG, sobre a saída do deflate (compressão sem perdas), o mesmo par Huffman + LZSS documentado aqui. Ver [[wiki/concepts/compressao-com-perdas-vs-sem-perdas]] e [[wiki/concepts/formato-jpeg]].
 
+## Relação com Brotli
+
+[[wiki/concepts/brotli]] é um algoritmo mais recente (Google) que generaliza o mesmo par LZ77-like + codificação por frequência descrito aqui, adicionando um dicionário estático embutido com os termos mais comuns da web. [[wiki/sources/hospedando-site-completo-em-url-fragment-brotli-webassembly]] documenta um caso extremo de uso: comprimir um site inteiro com Brotli para caber dentro do [[wiki/concepts/fragment-identifier-url]] de uma URL, sem servidor — como não há servidor para negociar `Content-Encoding: br`, o descompressor teve que ser reimplementado e rodado no cliente via [[wiki/concepts/webassembly]].
+
 ## Ver também
 
 - [[wiki/concepts/big-o]] — Huffman coding e LZSS não mudam a complexidade assintótica do texto, mudam a densidade de informação por byte.
@@ -63,3 +67,4 @@ O mesmo Huffman coding descrito acima não é exclusivo de texto/HTTP: [[wiki/so
 
 - [[wiki/sources/por-que-letras-minusculas-economizam-dados]]
 - [[wiki/sources/gzip-deflate-huffman-lz77]] — distinção gzip (formato) vs. deflate (algoritmo), triplet do LZ77 (offset/length/caractere), sliding window (search + look-ahead buffer), e priority queue na construção da árvore de Huffman
+- [[wiki/sources/hospedando-site-completo-em-url-fragment-brotli-webassembly]] — Brotli como evolução do mesmo par LZ77 + codificação por frequência, aplicado a um caso extremo de compressão de site inteiro sem servidor
