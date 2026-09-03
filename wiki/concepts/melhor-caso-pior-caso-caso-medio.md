@@ -4,7 +4,7 @@ title: "Melhor Caso, Pior Caso e Caso Médio"
 aliases: ["best case", "worst case", "average case", "melhor caso", "pior caso", "caso médio"]
 date_created: 2026-07-10
 date_updated: 2026-08-25
-source_count: 3
+source_count: 4
 tags: [cs-fundamentals, big-o, complexidade, algoritmos]
 skill: cs-fundamentals
 status: draft
@@ -47,3 +47,4 @@ Se uma operação roda milhares de vezes por dia em produção, o comportamento 
 - [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]]
 - [[wiki/sources/busca-linear-e-binaria-giovana]] — busca linear como exemplo dos três cenários (melhor caso O(1) na primeira posição; pior caso O(n) no fim/ausente), e o princípio de que a complexidade sempre assume o pior cenário
 - [[wiki/sources/busca-binaria-fila-protocolos-atendimento-live-coding]] — "seja qual for o número, você adivinha em no máximo 7 tentativas" (100 itens) é uma garantia de pior caso, não de caso médio
+- [[wiki/sources/como-calcular-complexidade-de-algoritmos-big-o-em-3-passos]] — define complexidade explicitamente como a contagem de passos "no pior caso possível", antes mesmo de introduzir a notação Big-O

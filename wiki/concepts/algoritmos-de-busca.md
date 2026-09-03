@@ -4,7 +4,7 @@ title: "Algoritmos de Busca"
 aliases: ["searching algorithms", "search", "busca", "linear search", "binary search"]
 date_created: 2026-07-09
 date_updated: 2026-09-03
-source_count: 7
+source_count: 8
 tags: [cs-fundamentals, algoritmos, searching, big-o, linear-search, binary-search, two-pointer, logaritmo]
 skill: cs-fundamentals
 status: draft
@@ -85,3 +85,4 @@ Binary Search só é possível porque alguém pagou o custo de ordenar os dados 
 - [[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] — três algoritmos físicos num catálogo telefônico de ~1000 páginas (1 página, 2 páginas, dividir ao meio) buscando "John Harvard"; caso de borda obrigatório "item ausente"; construção do pseudocódigo passo a passo
 - [[wiki/sources/busca-binaria-fila-protocolos-atendimento-live-coding]] — trace manual (sem código) buscando um protocolo numa fila ordenada, com leitura direta do livro *Entendendo Algoritmos*: analogia "adivinhar 1-100 com menor número de tentativas" e dicionário de 240.000 palavras (18 etapas vs. até 239.999 no brute force)
 - [[wiki/sources/algoritmos-de-ordenacao-bubble-insertion-selection-merge-quicksort-heapsort]] — ordenação como pré-requisito de Binary Search: seis algoritmos de ordenação (Quicksort incluído) detalhados mecanismo a mecanismo
+- [[wiki/sources/como-calcular-complexidade-de-algoritmos-big-o-em-3-passos]] — busca linear em vetor como primeiro exemplo do método de 3 passos (achar o loop → checar `size()` é O(1) → complexidade final O(n)); busca em estrutura ordenada via `count()` como O(log n)

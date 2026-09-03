@@ -3,8 +3,8 @@ type: concept
 title: "Problema de Escopo Aberto"
 aliases: ["open scope problem", "open-ended problem", "problema de escopo fechado", "operacionalizar um problema", "ação vs resultado"]
 date_created: 2026-07-24
-date_updated: 2026-07-24
-source_count: 1
+date_updated: 2026-09-03
+source_count: 2
 tags: [carreira, mentalidade, aprendizado, sindrome-do-impostor, procrastinacao]
 skill: tech-mentor-leadership
 status: draft
@@ -48,3 +48,4 @@ Encarar um problema difícil e travar é comumente interpretado como prova de "b
 ## Key Sources
 
 - [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] — fonte de origem do conceito; playlist do Dr. Alok Kanojia citada como base
+- [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — o enunciado de entrevista de arquitetura ("construa um e-commerce") como problema de escopo aberto por construção; levantar requisitos é o ato de operacionalizá-lo

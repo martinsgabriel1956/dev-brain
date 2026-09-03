@@ -4,7 +4,7 @@ title: "Algoritmos de Ordenação"
 aliases: ["sorting algorithms", "sorting", "ordenação"]
 date_created: 2026-07-09
 date_updated: 2026-09-03
-source_count: 4
+source_count: 5
 tags: [cs-fundamentals, algoritmos, sorting, big-o, bubble-sort, insertion-sort, selection-sort, merge-sort, quicksort, heapsort]
 skill: cs-fundamentals
 status: draft
@@ -94,3 +94,4 @@ Quando o valor de ordenação tem teto conhecido (ex.: frequência de um element
 - [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — custo escondido de `sort()` numa solução que parece O(n); bucket sort por frequência como alternativa O(n) sem comparação
 - [[wiki/sources/busca-linear-e-binaria-giovana]] — ordenação prévia (ex.: Quicksort) como pré-requisito da busca binária
 - [[wiki/sources/algoritmos-de-ordenacao-bubble-insertion-selection-merge-quicksort-heapsort]] — Selection Sort (novo); mecanismo de partição do Quicksort (pivô, causa do pior caso); construção do Max Heap no Heapsort
+- [[wiki/sources/como-calcular-complexidade-de-algoritmos-big-o-em-3-passos]] — segundo exemplo concreto do custo escondido de `sort()`: uma solução mais curta com `sort()` (O(n log n)) é comparada lado a lado com uma alternativa de dois loops lineares (O(n)) que resolve o mesmo problema mais rápido

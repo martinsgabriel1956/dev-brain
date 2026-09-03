@@ -3,8 +3,8 @@ type: concept
 title: "Comunicação Técnica"
 aliases: ["comunicação", "comunicação efetiva", "tradução técnica", "emissor receptor"]
 date_created: 2026-04-23
-date_updated: 2026-07-29
-source_count: 5
+date_updated: 2026-09-03
+source_count: 6
 tags: [carreira, comunicação, liderança, soft-skills]
 skill: tech-mentor-leadership
 status: stable
@@ -69,3 +69,4 @@ O princípio "tradução é responsabilidade de quem emite" tem uma aplicação 
 - [[wiki/sources/papinho-tech-solo-adaptabilidade]] — comunicação muda por nível hierárquico e por formato/canal, sem mudar a essência de quem comunica
 - [[wiki/sources/3-pilares-testes-automatizados-produtividade]] — técnica de repetir de volta o entendimento da tarefa antes de implementar, para evitar retrabalho
 - [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — Hábito 10, "ouvir para entender vs. ouvir para responder" em conversas de hierarquia assimétrica
+- [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — numa entrevista de arquitetura o produto entregue é o racional justificado, não o diagrama; raciocínio exposto vale mais que velocidade de resposta

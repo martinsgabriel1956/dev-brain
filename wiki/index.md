@@ -423,6 +423,8 @@ date_updated: 2026-09-03
 | [[wiki/sources/akita-pratica-deliberada-mito-do-talento]] | [[wiki/entities/fabio-akita\|Fábio Akita]]: talento inato não existe — citando *Talent Is Overrated* de [[wiki/entities/geoff-colvin\|Geoff Colvin]], desconstrói o mito de Mozart como "faísca divina" ([[wiki/concepts/mito-do-genio-mozart]], 18 anos de treinamento antes da primeira obra de nível mundial); detalha estrutura da [[wiki/concepts/pratica-deliberada\|prática deliberada]] ([[wiki/concepts/zona-de-aprendizado\|zona de aprendizado]], alta repetição, 4-5h/dia); fecha com [[wiki/concepts/autoavaliacao-vs-validacao-externa\|autoavaliação vs. validação externa]] |
 | [[wiki/sources/algoritmos-de-ordenacao-bubble-insertion-selection-merge-quicksort-heapsort]] | Aula com framing de concurso: seis algoritmos de ordenação passo a passo — Bubble, Insertion e Selection Sort (comparativos O(n²)), Merge Sort e Quicksort (dividir-para-conquistar), Heapsort (Max Heap sobre árvore binária); traz Selection Sort, mecanismo de partição do Quicksort e construção do Max Heap pela primeira vez para a wiki |
 | [[wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization]] | Recursão vs. iteração não é hierarquia de eficiência, é tese de Church-Turing: toda linguagem Turing-completa permite converter uma na outra; call stack é só uma estrutura de dados alocável manualmente; tail call optimization (ausente em Python) só se aplica quando a chamada recursiva é a última operação da função; leitura de assembly `call` vs. `jump` |
+| [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] | Três crenças que reprovam em entrevista de arquitetura: (1) o enunciado já define o problema — na prática ele é vago por construção e exige levantar requisitos antes de desenhar; (2) velocidade é sinal de competência — a sessão mede raciocínio e justificativa, não tempo; (3) existe "a melhor tecnologia" — a melhor alternativa é derivada do caso de uso comparado a prós e contras, o que torna fundamentos mais valiosos que qualquer stack |
+| [[wiki/sources/como-calcular-complexidade-de-algoritmos-big-o-em-3-passos]] | Método operacional de 3 passos para calcular Big-O: achar as repetições, checar a complexidade de funções nativas da linguagem via documentação (cppreference), ignorar constantes e manter o termo de maior grau; heurística de 10⁷–10⁸ operações/segundo para prever se uma solução passa dentro do tempo; exemplo didático de `sort()` (O(n log n)) tornando uma solução "mais curta" pior que dois loops lineares (O(n)) |
 
 ## Concepts
 
@@ -1050,6 +1052,7 @@ date_updated: 2026-09-03
 
 | Página | Hook |
 |---|---|
+| [[wiki/concepts/requisitos-funcionais-e-nao-funcionais]] | Funcionais definem o que existe, não funcionais (latência, disponibilidade, consistência, volume) definem sob que condições — as três perguntas mínimas antes de desenhar qualquer componente |
 | [[wiki/concepts/single-point-of-failure]] | Componente cuja falha derruba o sistema inteiro — o fio condutor por trás de toda redundância (múltiplos servidores, réplicas, LB em par) |
 | [[wiki/concepts/escalabilidade-vertical]] | Scale up — simples mas com teto físico e single point of failure |
 | [[wiki/concepts/escalabilidade-horizontal]] | Scale out — sem teto teórico, requer stateless e load balancer |

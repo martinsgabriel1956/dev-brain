@@ -9166,3 +9166,50 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (Fundamentos de CS); nova linha em Entities
 
 **Notas / open questions:** (1) **Sem contradição, ângulo complementar**: [[wiki/concepts/recursao]] já desmontava "recursão é lenta" pelo ângulo de complexidade assintótica (fatorial O(n) vs. Fibonacci ingênuo O(2ⁿ)); esta fonte ataca a mesma generalização por um ângulo diferente — onde a estrutura de suporte (call stack) é alocada, e se o compilador consegue eliminar essa alocação via TCO. Não havia, antes desta fonte, nenhuma página cobrindo a tese de Church-Turing nem tail call optimization isoladamente — ambas criadas como stubs novos. (2) **Claim de confiança média-alta, não verificada por fonte primária**: a afirmação de que Python não implementa TCO é dada pelo próprio autor como "salvo engano" — registrado como tal na fonte, não citado como fato absoluto nas páginas de conceito. (3) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-09-03] ingest | Três Mentiras que Estão Fazendo Você Ser Reprovado em Entrevistas de Arquitetura de Sistemas
+
+**Fonte:** [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — transcrição de vídeo curto fornecida diretamente pelo usuário em fala corrida, sem pontuação, já em pt-BR (sem necessidade de tradução); formatada, pontuada e estruturada em Markdown, salva em `raw/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas.md`. CTA final ("meu último vídeo do canal", link nos comentários) omitido do raw por não ser conteúdo técnico. Autor e canal não identificados na transcrição — nenhuma entidade criada.
+
+**Skill carregada:** `tech-mentor-system-design` — arquivo de referência consultado: `references/system-design.md` (framework de 4 etapas, com o passo 1 *Clarify Requirements*: escopo IN/OUT, escala, RNFs, constraints; e "Trade-off Templates para Entrevista de System Design"). Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas.md` — transcrição formatada em Markdown
+- `wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas.md` — TL;DR, 8 key claims, conceitos tocados, conexão com fontes irmãs, open questions, raw quotes
+- `wiki/concepts/requisitos-funcionais-e-nao-funcionais.md` — stub novo: distinção funcional/não funcional, por que a ordem importa, as três perguntas mínimas, relação com escopo aberto e com o passo *Clarify Requirements* da skill
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/entrevista-system-design.md` — `source_count` 8 → 9; nova seção "Três crenças que reprovam candidatos" (tabela crença → por que é falsa → correção); etapa 1 da estrutura da sessão agora aponta para o novo conceito de requisitos; nova linha em Key sources
+- `wiki/concepts/sem-balas-de-prata.md` — `source_count` 1 → 2; nova seção "O efeito paralisante em entrevistas"; nova linha em Key Sources
+- `wiki/concepts/estimativas-back-of-envelope.md` — `source_count` 6 → 7; nova linha em Key Sources
+- `wiki/concepts/escolha-de-stack.md` — `source_count` 3 → 4; nova linha em Key Sources
+- `wiki/concepts/avaliar-hype-tecnologico.md` — `source_count` 1 → 2; nova linha em Key Sources
+- `wiki/concepts/comunicacao-tecnica.md` — `source_count` 5 → 6; nova linha em Key Sources
+- `wiki/concepts/adr-architecture-decision-record.md` — `source_count` 2 → 3; nova linha em Key Sources
+- `wiki/concepts/problema-de-escopo-aberto.md` — `source_count` 1 → 2; nova linha em Key Sources
+- `wiki/concepts/high-level-design.md` — `source_count` 6 → 7; nova linha em Key Sources
+- `wiki/concepts/niveis-de-senioridade-system-design.md` — `source_count` 5 → 6; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (Escalabilidade & System Design)
+
+**Notas / open questions:** (1) **Sem contradição — reforço e compressão.** Esta fonte é a versão negativa (o que não fazer) do que [[wiki/sources/anatomia-entrevista-system-design-bigtech]] e [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]] já descrevem positivamente; os três antipadrões mapeiam quase um-a-um sobre erros já registrados na wiki, incluindo a gradação pleno-vs-sênior de [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] (pleno dá a receita pronta, sênior investiga contexto primeiro) — que é exatamente o contraste velocidade vs. raciocínio da mentira nº 2, observado num problema concreto. (2) **Lacuna preenchida:** apesar de "requisitos funcionais e não funcionais" aparecer em três fontes de system design já ingeridas, não existia página de conceito dedicada — criada agora como stub e backlinkada às duas fontes que a sustentam. (3) **Autoria não identificada:** a transcrição não nomeia autor nem canal; ao contrário de ingests anteriores, não há elementos textuais suficientes para inferir com confiança. Campo `author` vazio, nenhuma entidade criada — se o usuário identificar a origem, fonte e entidade precisam ser atualizadas. (4) **Fonte rasa por design:** formato "3 mentiras", afirma os antipadrões sem exemplo trabalhado (o e-commerce é citado mas nunca resolvido); o valor é de enquadramento, não de método. O vídeo referenciado no CTA omitido ("passo a passo para projetar qualquer sistema") seria a fonte de método que falta a esta. (5) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina.
+
+## [2026-09-03] ingest | Como Calcular a Complexidade de Algoritmos (Big-O) em 3 Passos
+
+**Fonte:** [[wiki/sources/como-calcular-complexidade-de-algoritmos-big-o-em-3-passos]] — transcrição de vídeo do canal do usuário, fornecida em fala corrida sem pontuação (saída de transcrição automática), já em pt-BR (sem necessidade de tradução); limpa, pontuada e estruturada em Markdown, salva em `raw/como-calcular-complexidade-de-algoritmos-big-o-em-3-passos.md`. CTA final (inscrever-se, comentar dúvidas) resumido em uma frase no lugar de reproduzido literalmente. Autor/nome do canal não citado na fala — nenhuma entidade criada.
+
+**Skill carregada:** `cs-fundamentals` — arquivo de referência consultado: `references/algorithms-complexity.md` (Big-O/Θ/Ω, regras práticas de descarte de constantes e termos menores, tabela de ordenação de complexidades). Caminho real usado: `/home/gabriel-martins/Documentos/skills/` (o `CLAUDE.md` aponta para `/home/nemomartins/...`, que não existe nesta máquina — skill drift já registrado em ingests anteriores).
+
+**Arquivos criados:**
+- `raw/como-calcular-complexidade-de-algoritmos-big-o-em-3-passos.md` — transcrição formatada em Markdown
+- `wiki/sources/como-calcular-complexidade-de-algoritmos-big-o-em-3-passos.md` — TL;DR, 8 key claims, entidades/conceitos tocados, open questions, 2 quotes preservadas
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/big-o.md` — `source_count` 14 → 15; nova seção "Método operacional: 3 passos para calcular a complexidade de um código" (com sub-notas sobre o segundo exemplo de `sort()` e sobre loops independentes de tamanhos diferentes); nova linha em Key sources
+- `wiki/concepts/documentacao-oficial-como-recurso.md` — `source_count` 2 → 3; nova seção "Documentação como fonte de complexidade, não só de API"; nova linha em Key sources
+- `wiki/concepts/algoritmos-de-busca.md` — `source_count` 7 → 8; nova linha em Key sources
+- `wiki/concepts/algoritmos-de-ordenacao.md` — `source_count` 4 → 5; nova linha em Key sources
+- `wiki/concepts/entrevista-tecnica-coding.md` — `source_count` 8 → 9; nova linha em Key sources
+- `wiki/concepts/melhor-caso-pior-caso-caso-medio.md` — `source_count` 3 → 4; nova linha em Key sources
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Sem contradição — reforço com método novo.** O conteúdo desta fonte (ordem das complexidades, regra de descartar constantes, "ordenar não é de graça") já era coberto por [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] e [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]]; o que essa fonte acrescenta de fato novo é o **roteiro operacional de 3 passos** (loops → funções nativas via documentação → descartar constantes) como procedimento repetível, e a heurística concreta de 10⁷–10⁸ operações/segundo para estimar viabilidade de uma solução antes de rodá-la — nenhuma fonte anterior tinha essa heurística numérica. (2) **Incerteza no exemplo 4 (dois loops de tamanhos `n` e `m`):** a transcrição automática não permite recuperar com certeza se os loops são sequenciais (O(n+m)) ou aninhados/produto cartesiano (O(n·m)); o vídeo afirma o resultado O(n·m), registrado como tal na fonte e na página de conceito, com a ressalva sinalizada em ambas. (3) **Autoria não identificada:** vídeo do próprio canal do usuário, mas nome do canal não foi dito na fala — campo `author` da fonte deixado vazio; se o usuário confirmar, atualizar. (4) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina.

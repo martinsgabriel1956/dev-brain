@@ -4,7 +4,7 @@ title: "Entrevista Técnica de Coding"
 aliases: ["coding interview", "entrevista estilo leetcode", "live coding interview", "whiteboard interview"]
 date_created: 2026-07-20
 date_updated: 2026-08-27
-source_count: 8
+source_count: 9
 tags: [carreira, entrevistas, coding-interview, algoritmos, comunicacao]
 skill: tech-mentor-leadership
 status: draft
@@ -74,3 +74,4 @@ O artigo original do mesmo autor (fonte primária do vídeo já citado acima) de
 - [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] — caso (de segunda mão) de candidato reprovado na Netflix por nervosismo, resolvendo o problema minutos depois sem pressão
 - [[wiki/sources/binary-search-em-5-minutos]] — resolução completa e rápida de um problema clássico de busca binária, ilustrando fluência de padrão já internalizado
 - [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — três problemas resolvidos em versão ingênua e versão ótima, com justificativa de complexidade em cada etapa
+- [[wiki/sources/como-calcular-complexidade-de-algoritmos-big-o-em-3-passos]] — motivação de abertura: não saber responder "qual a complexidade desse código?" numa entrevista; método de 3 passos como resposta operacional a essa pergunta

@@ -4,7 +4,7 @@ title: "Big O"
 aliases: ["complexidade de algoritmos", "Big-O notation", "O(n)", "complexidade assintótica"]
 date_created: 2026-06-26
 date_updated: 2026-09-03
-source_count: 14
+source_count: 15
 tags: [cs-fundamentals, algoritmos, big-o, complexidade, performance]
 skill: cs-fundamentals
 status: draft
@@ -74,6 +74,14 @@ A mesma fonte ilustra a regra de descartar constantes com um caso concreto: uma 
 
 [[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] introduz Big O sem nenhuma notação formal, apenas desenhando três curvas (tamanho do problema × tempo) para três algoritmos de busca num catálogo telefônico físico de ~1000 páginas: (1) virar uma página por vez — reta com inclinação proporcional a n; (2) pular 2 páginas por vez — **ainda uma reta**, só que com metade da inclinação (otimizar a constante não muda a classe O(n)); (3) sempre dividir o restante ao meio — curva logarítmica, muito mais achatada. O teste decisivo: fundir dois catálogos de 1000 páginas num de 2000 dobra o tempo dos algoritmos 1 e 2, mas o algoritmo 3 precisa de **apenas um passo a mais** de divisão — ilustração concreta de por que O(log n) escala tão melhor que O(n) à medida que a entrada cresce, sem exigir nenhum cálculo prévio de logaritmo.
 
+## Método operacional: 3 passos para calcular a complexidade de um código
+
+[[wiki/sources/como-calcular-complexidade-de-algoritmos-big-o-em-3-passos]] condensa o cálculo de complexidade num roteiro de três passos, aplicável a cerca de 90% dos códigos do dia a dia: (1) achar as repetições (loops) do código; (2) verificar a complexidade de cada função/método nativo da linguagem que o código usa — não assumir O(1) de graça, consultar a documentação oficial (ex.: seção "Complexity" de cada função no cppreference.com para `std::vector`); (3) ignorar constantes e manter só o termo de maior grau da expressão resultante. Ver [[wiki/concepts/documentacao-oficial-como-recurso]] para o hábito de consulta à documentação como parte do passo 2.
+
+**Reforço da regra "ordenar nunca é de graça" com um segundo exemplo lado a lado:** a mesma fonte compara duas soluções que verificam se a menor idade de um vetor se repete — uma com dois loops lineares (O(n)) e outra, mais curta e sem loop explícito no código do programador, que ordena o vetor com `sort()` e compara os dois primeiros elementos (O(n log n), porque a complexidade de `sort()` domina). A segunda parece mais rápida por ter menos linhas; é o oposto. Mesmo padrão de armadilha já registrado em [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]], agora com um exemplo didático adicional.
+
+**Cuidado ao combinar loops sobre entradas de tamanhos diferentes:** quando dois loops percorrem estruturas de tamanhos independentes (`n` e `m`), eles não podem ser tratados como a mesma variável — o resultado é expresso em função de ambos (ex.: O(n·m) quando aninhados), não simplificado para uma única letra.
+
 ## Big O ≠ tempo real
 
 O(1) pode ser mais lento que O(n) para entradas pequenas se a constante for grande (ex: hash table com custo fixo alto vs array de 5 elementos). Big O é relevante para entradas **grandes**.
@@ -110,3 +118,4 @@ O(1) pode ser mais lento que O(n) para entradas pequenas se a constante for gran
 - [[wiki/sources/busca-binaria-fila-protocolos-atendimento-live-coding]] — log₂(n) vs. n derivado com dois exemplos concretos (100 números → 7 etapas; dicionário de 240.000 palavras → 18 etapas)
 - [[wiki/sources/algoritmos-de-ordenacao-bubble-insertion-selection-merge-quicksort-heapsort]] — seis algoritmos de ordenação com mecanismo passo a passo (Selection Sort, Quicksort com pivô e Heapsort novos para a wiki), sem análise assintótica formal na própria fonte — complexidades vêm da skill `cs-fundamentals`
 - [[wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization]] — custo de recursão sem TCO enquadrado como custo de alocação de call stack, não como diferença assintótica de complexidade
+- [[wiki/sources/como-calcular-complexidade-de-algoritmos-big-o-em-3-passos]] — método operacional de 3 passos (achar loops → checar complexidade de funções nativas via documentação → descartar constantes); heurística de 10⁷–10⁸ operações/segundo para prever se uma solução passa dentro do limite de tempo; segundo exemplo concreto de `sort()` tornando uma solução "mais curta" assintoticamente pior
