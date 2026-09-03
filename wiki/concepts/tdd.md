@@ -4,7 +4,7 @@ title: "TDD — Test-Driven Development"
 aliases: ["test driven development", "red green refactor", "desenvolvimento guiado por testes"]
 date_created: 2026-04-22
 date_updated: 2026-08-23
-source_count: 17
+source_count: 18
 tags: [testes, tdd, design, red-green-refactor, qualidade, dora]
 skill: tech-mentor-testing
 status: stable
@@ -144,3 +144,4 @@ Quando a interface, o input e o output já são conhecidos por uma especificaç�
 - [[wiki/sources/test-double-xunitpatterns-meszaros]] — fonte primária dos doubles usados para isolar dependências no ciclo
 - [[wiki/sources/c3-martin-fowler]] — história do projeto [[wiki/entities/c3-project|C3]], onde as práticas da [[wiki/concepts/extreme-programming|Extreme Programming]] (incluindo o TDD) foram consolidadas pela primeira vez em 1996
 - [[wiki/sources/very-low-defect-project-martin-fowler]] — times de XP disciplinados chegando a menos de um bug/mês; fonte não detalha causalidade prática-a-prática, mas ver [[wiki/concepts/very-low-defect-project]]
+- [[wiki/sources/test-fixture-xunitpatterns]] — fonte primária isolada do termo test fixture/test context: configurar o fixture é a primeira fase do Four-Phase Test, precondição para o SUT ser exercitado no ciclo RED-GREEN-REFACTOR

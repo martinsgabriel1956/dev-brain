@@ -3,8 +3,8 @@ type: concept
 title: "Dependency Injection"
 aliases: ["DI", "injeção de dependência"]
 date_created: 2026-08-04
-date_updated: 2026-08-19
-source_count: 3
+date_updated: 2026-08-31
+source_count: 4
 tags: [design-patterns, acoplamento, testabilidade, di]
 skill: tech-mentor-backend
 status: stub
@@ -26,8 +26,13 @@ Técnica em que um componente recebe suas dependências de fora (via construtor,
 
 [[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] nomeia o reverso da testabilidade: quando um componente recebe sua dependência via DI através de uma interface (ex.: um use case recebendo `UserRepository`), o ponto onde o componente é lido não revela qual implementação concreta está rodando — é preciso rastrear onde o componente foi instanciado (a composition root) e qual implementação foi passada como parâmetro naquele ponto. Ganha-se substituibilidade e testabilidade, perde-se rastreabilidade direta na leitura do código.
 
+## DI vs. Dependency Lookup como mecanismo de instalação de Test Double
+
+[[wiki/sources/replace-dependency-with-test-double-xunitpatterns]] situa DI como um dos dois mecanismos possíveis para substituir uma dependência real por um [[wiki/concepts/test-doubles|Test Double]] num teste — o outro é **Dependency Lookup** (buscar a dependência via um registro/service locator, sem página própria ainda na wiki). A fonte aponta DI como a opção preferida para **unit tests**, enquanto Dependency Lookup costuma funcionar melhor para **customer tests**, sem detalhar a causa raiz dessa preferência por nível de teste. Em linguagens estaticamente tipadas, essa substituição normalmente exige primeiro extrair uma interface da dependência real (refatoração **Extract Interface** [Fowler]), para que a variável injetada seja tipada pela interface, não pela classe concreta.
+
 ## Key Sources
 
 - [[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] — DI citada como técnica que afrouxa mas não remove o acoplamento do segundo estágio; base de testes unitários e de integração
 - [[wiki/sources/design-pattern-facade-codigo-fonte-tv]] — tensão entre DI completa e a simplicidade que o Facade deveria oferecer ao cliente
 - [[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] — exemplo prático (`CreateUser`/`UserRepository`/`PostgresUserRepository`) e o custo de rastreabilidade na hora de debugar
+- [[wiki/sources/replace-dependency-with-test-double-xunitpatterns]] — DI como mecanismo preferido para instalar Test Doubles em unit tests, em contraste com Dependency Lookup para customer tests

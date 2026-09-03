@@ -3,8 +3,8 @@ type: concept
 title: "Extreme Programming (XP)"
 aliases: ["xp", "programação extrema"]
 date_created: 2026-08-23
-date_updated: 2026-08-23
-source_count: 2
+date_updated: 2026-08-31
+source_count: 3
 tags: [extreme-programming, kent-beck, agile, historia, craftsmanship]
 skill: tech-mentor-testing
 status: stub
@@ -21,6 +21,10 @@ Metodologia ágil de desenvolvimento de software criada por [[wiki/entities/kent
 ## Adoção séria correlaciona com taxas de defeito muito baixas
 
 [[wiki/sources/very-low-defect-project-martin-fowler]] (2004) mostra o outro lado da moeda da tese acima: apesar de "XP não ser garantia de sucesso", Fowler observa que uma minoria (mas crescente) de times com adoção séria de XP chega a menos de um bug em produção por mês — o [[wiki/concepts/very-low-defect-project|VeryLowDefectProject]]. O contraste é direto: o próprio [[wiki/entities/c3-project|C3]] não sustentou seu sucesso, mas ex-membros do time do C3 produziram, em outro projeto (portal na Chrysler), um dos resultados de qualidade mais fortes já atribuídos à XP — exatamente um bug em todo o ano de 2002. Fowler é cuidadoso para não transformar essa correlação em garantia: os times observados são disciplinados, liderados por gente com anos de XP, e ele não descarta que outros processos cheguem ao mesmo resultado.
+
+## "Unit test" em XP tem dois sinônimos: developer test e programmer test
+
+Fonte primária isolada: [[wiki/sources/unit-test-xunitpatterns]] (verbete de glossário de Gerard Meszaros). Na nomenclatura da XP, **"unit test"** também é chamado de **developer test** ou **programmer test** — sinônimos históricos, não termos com significado distinto. Detalhe de vocabulário nunca antes registrado nesta página, apesar de [[wiki/concepts/tdd]] já documentar o ciclo red-green-refactor que produz exatamente esse tipo de teste.
 
 ## Relação com práticas específicas já documentadas nesta wiki
 
@@ -40,3 +44,4 @@ Metodologia ágil de desenvolvimento de software criada por [[wiki/entities/kent
 
 - [[wiki/sources/c3-martin-fowler]]
 - [[wiki/sources/very-low-defect-project-martin-fowler]] — adoção séria de XP correlaciona com taxas de defeito muito baixas, sem ser garantia
+- [[wiki/sources/unit-test-xunitpatterns]] — fonte primária dos sinônimos "developer test"/"programmer test" para unit test em XP

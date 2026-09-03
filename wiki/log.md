@@ -2,6 +2,29 @@
 
 ---
 
+## [2026-08-31] ingest | xUnit (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/xunit-xunitpatterns]] — verbete de glossário curto do site xUnitPatterns.com (http://xunitpatterns.com/xUnit.html), coletado via `curl` direto (HTML pequeno, sem necessidade de proxy de leitura), traduzido para português e salvo em `raw/xunit-xunitpatterns.md`, seguindo o mesmo padrão de tradução já usado em `raw/sut-xunitpatterns.md` e `raw/unit-test-xunitpatterns.md`.
+
+**Skill carregada:** `tech-mentor-testing` (path confirmado nesta máquina: `/home/nemomartins/Documentos/new/skills/tech-mentor-testing/` — sem skill drift desta vez, ao contrário do registrado em ingests anteriores de outras máquinas). Índice do `SKILL.md` consultado; nenhum arquivo de `references/` cobre a arquitetura da família de frameworks xUnit em si (apenas menções de ferramentas como `junit.xml` em `test-tooling.md`), então a calibração de domínio veio inteiramente da própria fonte primária e do que já estava na wiki.
+
+**Arquivos criados:**
+- `raw/xunit-xunitpatterns.md` — tradução do verbete
+- `wiki/sources/xunit-xunitpatterns.md` — TL;DR, 3 afirmações centrais, 3 key claims, entidades/conceitos tocados, open questions, raw quotes
+- `wiki/entities/sunit.md` (stub) — framework de testes em Smalltalk de Kent Beck, citado nominalmente pela primeira vez em qualquer fonte da wiki
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/entities/junit.md` — `source_count` 3 → 4; nova frase citando SUnit como segundo ancestral formal; nova linha em Key Sources
+- `wiki/entities/kent-beck.md` — `source_count` 8 → 9; nota adicionada nomeando o framework caseiro de Beck como SUnit; nova linha em Key Sources
+- `wiki/entities/gerard-meszaros.md` — `source_count` 13 → 14; nova linha em Key Sources
+- `wiki/sources/xunit-martin-fowler.md` — nova seção "Conexão com o verbete de glossário de Meszaros"
+- `wiki/concepts/test-doubles.md` — `source_count` 15 → 16; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Entities (SUnit)
+
+**Notas / open questions:** (1) O valor real desta fonte não é a definição de xUnit em si (já coberta com mais profundidade histórica por [[wiki/sources/xunit-martin-fowler]]), mas o fato de nomear **SUnit** explicitamente como o framework caseiro de Kent Beck em Smalltalk — nenhuma fonte anterior na wiki (incluindo o próprio Fowler) tinha dado nome próprio a esse framework, só descrito genericamente. (2) SUnit ainda não tem fonte primária isolada própria — o stub criado se apoia só nesta citação cruzada; candidato a fonte dedicada se o site tiver um verbete de glossário específico para o termo (não confirmado na coleta desta sessão). (3) Sem contradições encontradas com o resto da wiki.
+
+---
+
 ## [2026-08-26] ingest | Armazenamento Seguro de Senhas: Hashing, Salting e Peppering (Galego)
 
 **Fonte:** [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — transcrição de vídeo fornecida pelo usuário em português (sem necessidade de tradução), publicidade inicial (cadeira SF, cupom "galego") removida do corpo, formatada em Markdown por seção temática e salva em `raw/armazenamento-seguro-de-senhas-hash-salt-pepper-galego.md`. Autoria atribuída a [[wiki/entities/augusto-galego]] por autorreferência direta no cupom.
@@ -8561,3 +8584,140 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha em Sources
 
 **Notas / open questions:** (1) **Nenhuma contradição encontrada** — fonte majoritariamente corroborativa do que já estava documentado em `harness.md` e `context-engineering-harness.md`; contribui a ponte narrativa histórica (janela de contexto pequena em 2022 → grande hoje) e o cruzamento inédito com o gráfico de complexidade de Clean Architecture como justificativa de harness. (2) **Autoria não identificada** — transcrição sem autorreferência nem nome de canal. (3) **Dois harnesses citados de ouvido não identificados com confiança** ("Itubilot CLI", "diminers" — possivelmente GitHub Copilot CLI e Gemini CLI) — mantidos como transcritos, sem forçar correspondência. (4) **Divergência pré-existente não resolvida**: o mantra "modelo vs. harness" restaurado aqui sem atribuição não bate literalmente com a frase que `harness-engineering-voce-e-o-harness-nao-o-modelo.md` atribui a Peter Steinberger (que é sobre loops, não sobre harness) — mera confirmação de que a formulação "modelo vs. harness" circula amplamente, não resolução da divergência de citação já registrada em `peter-steinberger.md`. (5) Skill drift confirmado novamente: caminho do `CLAUDE.md` (`/home/nemomartins/...`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`.
+
+## [2026-08-30] ingest | Test Stub (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/test-stub-xunitpatterns-meszaros]] — tradução/adaptação em `raw/test-stub-xunitpatterns-meszaros.md` da página `Test Stub` do catálogo xUnitPatterns.com. **Site original indisponível no momento da ingestão** (`ECONNREFUSED` ao tentar `http://xunitpatterns.com/Test%20Stub.html` diretamente); conteúdo reconstruído via proxy de leitura (r.jina.ai) + buscas que citam o texto original. Fiel à estrutura e ao conteúdo técnico do padrão, mas não confirmado como transcrição literal frase a frase — sinalizado no frontmatter e no corpo do arquivo.
+
+**Skill carregada:** `tech-mentor-testing` (mesma skill já usada nas demais fontes do cluster xUnitPatterns/Test Doubles na wiki).
+
+**Arquivos criados:**
+- `raw/test-stub-xunitpatterns-meszaros.md` — tradução/adaptação em português
+- `wiki/sources/test-stub-xunitpatterns-meszaros.md` — TL;DR, afirmações centrais, 5 key claims, entidades, conceitos tocados, open questions, citações
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/test-doubles.md` — `source_count` 12 → 13; nova seção "Test Stub em detalhe: Responder, Saboteur e Entity Chain Snipping"; nova linha em Key Sources
+- `wiki/entities/gerard-meszaros.md` — `source_count` 7 → 8; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources, logo após a entrada de `test-double-xunitpatterns-meszaros`
+
+**Notas / open questions:** (1) **Nenhuma contradição encontrada** — a fonte é estritamente elaborativa em relação a [[wiki/sources/test-double-xunitpatterns-meszaros]], já ingerida; detalha o que lá era só mencionado (Stub como ponto de controle) com as variações Responder/Saboteur e o padrão Entity Chain Snipping. (2) **Risco de fidelidade da fonte**: por indisponibilidade do site original, recomenda-se reingerir/comparar se o site voltar ao ar, especialmente as citações diretas. (3) O par "observation point"/"indirect output" do eixo controle-observação segue sem verbete de glossário isolado ingerido (mesma lacuna já registrada na fonte-mãe de Test Double).
+
+
+## [2026-08-31] ingest | SUT — System Under Test (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/sut-xunitpatterns]] — tradução em `raw/sut-xunitpatterns.md` da página `SUT` (verbete de glossário) do catálogo xUnitPatterns.com. Site acessado com sucesso via `curl` direto (o `WebFetch` do harness falhou com `ECONNREFUSED` ao tentar o IP do host, mas o mesmo host respondeu normalmente por `curl`); conteúdo é transcrição fiel do HTML original, não reconstrução via proxy.
+
+**Skill carregada:** `tech-mentor-testing` (mesma skill já usada nas demais fontes do cluster xUnitPatterns/Test Doubles na wiki). Caminho do `CLAUDE.md` (`/home/nemomartins/Documentos/new/skills/`) confirmado correto nesta máquina — sem skill drift desta vez.
+
+**Arquivos criados:**
+- `raw/sut-xunitpatterns.md` — tradução em português
+- `wiki/sources/sut-xunitpatterns.md` — TL;DR, afirmações centrais, 3 key claims, entidades, conceitos tocados, open questions, citações
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/test-doubles.md` — `source_count` 13 → 14; nota sobre SUT como papel relativo ao teste e as siglas CUT/OUT/MUT/AUT; nova linha em Key Sources
+- `wiki/concepts/indirect-input-output.md` — `source_count` 4 → 5; nova seção "O SUT é sempre relativo ao teste, e seu escopo escala com a granularidade"; nova linha em Key Sources
+- `wiki/concepts/piramide-de-testes.md` — `source_count` 8 → 9; nova linha em Key Sources ligando a escala do SUT (classe → aplicação) às camadas da pirâmide
+- `wiki/entities/gerard-meszaros.md` — `source_count` 8 → 9; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources, logo após `fixture-setup-xunitpatterns`
+
+**Notas / open questions:** (1) **Nenhuma contradição encontrada** — fonte estritamente elaborativa em relação a [[wiki/sources/test-double-xunitpatterns-meszaros]] e [[wiki/sources/doc-xunitpatterns]], já ingeridas; formaliza pela primeira vez que SUT é um **papel relativo ao teste** (não propriedade fixa do código) e introduz três siglas irmãs nunca antes documentadas na wiki: **CUT** (class under test), **MUT** (method(s) under test) e **AUT** (application under test) — **OUT** (object under test) já era citado implicitamente em `test-doubles.md` mas sem a sigla nomeada. (2) **OUT não tem entrada própria no índice de Glossário do site** — só aparece dentro do próprio verbete de SUT; tratado como sigla irmã de mesmo peso, sem fonte primária isolada dedicada. (3) Restam sem fonte primária isolada: "observation point", "indirect output", "direct input", "fixture teardown" (mesma lacuna já registrada em ingests anteriores do mesmo glossário).
+
+
+## [2026-08-31] ingest | Unit Test (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/unit-test-xunitpatterns]] — tradução em `raw/unit-test-xunitpatterns.md` da página `unit test` (verbete de glossário) do catálogo xUnitPatterns.com. Site acessado com sucesso via `curl` direto (mesma abordagem já usada na ingestão de SUT — `WebFetch` do harness falha com `ECONNREFUSED` no IP do host, mas `curl` responde normalmente).
+
+**Skill carregada:** `tech-mentor-testing` (mesma skill do cluster xUnitPatterns/Test Doubles/SUT já ingerido na wiki).
+
+**Arquivos criados:**
+- `raw/unit-test-xunitpatterns.md` — tradução em português
+- `wiki/sources/unit-test-xunitpatterns.md` — TL;DR, afirmações centrais, 3 key claims, entidades, conceitos tocados, open questions, citações
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/unit-test-solitario-vs-sociavel.md` — `source_count` 5 → 6; nova seção "Definição-raiz: o que faz um teste ser 'de unidade'" (critério é o tamanho do SUT, não a técnica de isolamento — precede a distinção solitário/sociável); nova linha em Key Sources
+- `wiki/concepts/extreme-programming.md` — `source_count` 2 → 3; nova seção sobre os sinônimos "developer test"/"programmer test" para unit test em XP; nova linha em Key Sources
+- `wiki/concepts/piramide-de-testes.md` — `source_count` 9 → 10; nova linha em Key Sources
+- `wiki/entities/gerard-meszaros.md` — `source_count` 9 → 10; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources, logo após `sut-xunitpatterns`
+
+**Notas / open questions:** (1) **Nenhuma contradição encontrada** — fonte elaborativa em relação a [[wiki/sources/sut-xunitpatterns]] (o par SUT/unit test se define mutuamente: unit test é "SUT pequeno"). (2) **Achado inédito**: "developer test" e "programmer test" como sinônimos de unit test em eXtreme Programming, nunca antes documentados em [[wiki/concepts/extreme-programming]]. (3) **Lacuna aberta**: "customer test" segue sem verbete de glossário isolado próprio — conhecido só por contraste dentro deste verbete e do de SUT; candidato natural para próxima ingestão do mesmo cluster xUnitPatterns.com, junto de "acceptance test" e "user story".
+
+
+## [2026-08-31] ingest | Test (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/test-xunitpatterns]] — tradução em `raw/test-xunitpatterns.md` da página `test` (verbete de glossário) do catálogo xUnitPatterns.com. Site acessado com sucesso via `curl` direto (mesma abordagem já usada nas duas ingestões anteriores do mesmo cluster).
+
+**Skill carregada:** `tech-mentor-testing` (mesma skill do cluster xUnitPatterns/SUT/unit test já ingerido na wiki).
+
+**Arquivos criados:**
+- `raw/test-xunitpatterns.md` — tradução em português
+- `wiki/sources/test-xunitpatterns.md` — TL;DR, afirmações centrais, 2 key claims, entidades, conceitos tocados, open questions, citações
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/criterios-de-bom-teste.md` — `source_count` 2 → 3; nova seção "Definição-raiz: o que é um teste" (procedimento manual ou automatizado que verifica o SUT); nova linha em Key Sources
+- `wiki/concepts/piramide-de-testes.md` — `source_count` 10 → 11; nova linha em Key Sources
+- `wiki/entities/gerard-meszaros.md` — `source_count` 10 → 11; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources, logo após `unit-test-xunitpatterns`
+
+**Notas / open questions:** (1) **Nenhuma contradição encontrada** — é o verbete mais básico e elementar de todo o glossário xUnitPatterns.com, consistente com tudo já ingerido (SUT, unit test, Test Double). (2) **Achado de menor peso, mas registrado**: a fonte trata "test" e "test case" como sinônimos diretos, sem hierarquia entre especificação e implementação — diferente de convenções de mercado que separam os dois termos. (3) **Lacunas abertas acumuladas do mesmo glossário**: "customer test", "acceptance test", "test suite" e "test run" seguem sem verbete isolado ingerido — candidatos para próximas ingestões do mesmo cluster.
+
+## [2026-08-31] ingest | Test Case (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/test-case-xunitpatterns]] — tradução em `raw/test-case-xunitpatterns.md` da página `test case` (verbete de glossário) do catálogo xUnitPatterns.com (`http://xunitpatterns.com/test%20case.html`). Site acessado com sucesso via `curl` direto (URL em minúsculas, como fornecida pelo usuário — `WebFetch` do harness falhou com `ECONNREFUSED`, mesma limitação já registrada nas ingestões anteriores do cluster).
+
+**Skill carregada:** `tech-mentor-testing` (mesma skill do cluster xUnitPatterns/SUT/unit test/test já ingerido na wiki).
+
+**Arquivos criados:**
+- `raw/test-case-xunitpatterns.md` — tradução em português
+- `wiki/sources/test-case-xunitpatterns.md` — TL;DR, afirmações centrais, 2 key claims, entidades, conceitos tocados, open questions, citações
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/sources/test-xunitpatterns.md` — `source_count` 0 → 1; open question corrigida ("test case" recebe, sim, verbete próprio — link para a nova fonte)
+- `wiki/concepts/criterios-de-bom-teste.md` — `source_count` 3 → 4; nova frase na seção "Definição-raiz" sobre a Testcase Class; nova linha em Key Sources
+- `wiki/concepts/piramide-de-testes.md` — `source_count` 11 → 12; nova linha em Key Sources
+- `wiki/entities/gerard-meszaros.md` — `source_count` 11 → 12; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources, logo após `test-xunitpatterns`
+
+**Notas / open questions:** (1) **Corrige uma lacuna registrada anteriormente**: [[wiki/sources/test-xunitpatterns]] havia notado que "test case" não tinha verbete próprio no Glossário — na verdade tem, e esta fonte o confirma. (2) **Achado novo**: "test case" não é só sinônimo de "test" — no vocabulário XUnit também nomeia a **Testcase Class**, reclassificada pelo próprio Meszaros como uma **Test Suite Factory** disfarçada, e o lugar onde se agrupam **Test Methods** relacionados. (3) **Três termos novos sem fonte primária isolada ainda**: Testcase Class, Test Suite Factory e Test Method — candidatos naturais para a próxima ingestão do mesmo cluster, junto das lacunas já acumuladas (customer test, acceptance test, test suite, test run).
+
+## [2026-08-31] ingest | Replace Dependency with Test Double (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/replace-dependency-with-test-double-xunitpatterns]] — tradução em `raw/replace-dependency-with-test-double-xunitpatterns.md` da página `Replace Dependency with Test Double` (Test Refactoring) do catálogo xUnitPatterns.com (`http://xunitpatterns.com/Replace%20Dependency%20with%20Test%20Double.html`). `WebFetch` do harness falhou com `ECONNREFUSED` (mesma limitação já registrada em todas as ingestões anteriores do cluster); `curl` direto respondeu normalmente.
+
+**Skill carregada:** `tech-mentor-testing` (mesma skill de todo o cluster xUnitPatterns/Test Doubles/SUT já ingerido na wiki).
+
+**Arquivos criados:**
+- `raw/replace-dependency-with-test-double-xunitpatterns.md` — tradução em português
+- `wiki/sources/replace-dependency-with-test-double-xunitpatterns.md` — TL;DR, afirmações centrais, 4 key claims, entidades, conceitos tocados, open questions, citações
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/test-doubles.md` — `source_count` 14 → 15; nova seção "Da taxonomia à prática: a refatoração 'Replace Dependency with Test Double'" (as três decisões ortogonais: mecanismo de substituição, papel do double, técnica de construção); nova linha em Key Sources
+- `wiki/concepts/dependency-injection.md` — `source_count` 3 → 4; nova seção "DI vs. Dependency Lookup como mecanismo de instalação de Test Double"; nova linha em Key Sources
+- `wiki/entities/gerard-meszaros.md` — `source_count` 12 → 13; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources, logo após `test-case-xunitpatterns`
+
+**Notas / open questions:** (1) **Nenhuma contradição encontrada** — fonte é o elo mecânico entre a taxonomia de Test Double já documentada ([[wiki/sources/test-double-xunitpatterns-meszaros]], [[wiki/sources/test-stub-xunitpatterns-meszaros]]) e o processo de refatorar um teste para introduzir um double. (2) **Achado novo**: introduz **Dependency Lookup** como alternativa à Dependency Injection para instalar um Test Double, preferida para customer tests — termo sem página própria na wiki até agora. (3) **Lacunas abertas**: nem **Dependency Lookup** nem **Extract Interface** [Fowler] (citada como pré-requisito em linguagens estaticamente tipadas) têm fonte primária isolada ainda ingerida; candidatas para uma futura sessão, junto das lacunas já acumuladas do cluster (customer test, acceptance test, test suite, test run).
+
+## [2026-08-31] ingest | Test Fixture (in xUnit) (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/test-fixture-xunitpatterns]] — tradução em `raw/test-fixture-xunitpatterns.md` do verbete de glossário `test fixture - xUnit` do catálogo xUnitPatterns.com (`http://xunitpatterns.com/test%20fixture%20-%20xUnit.html`). `WebFetch` do harness falhou com `ECONNREFUSED` (mesma limitação já registrada em todas as ingestões anteriores do cluster); `curl` direto respondeu normalmente, HTML convertido para texto com `html2text`.
+
+**Skill carregada:** `tech-mentor-testing` (mesma skill de todo o cluster xUnitPatterns/Test Doubles/SUT já ingerido na wiki).
+
+**Arquivos criados:**
+- `raw/test-fixture-xunitpatterns.md` — tradução em português
+- `wiki/sources/test-fixture-xunitpatterns.md` — TL;DR, afirmações centrais, 3 key claims, entidades, conceitos tocados, open questions, citações
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/entities/junit.md` — `source_count` 4 → 5; nova seção "Test context separado da Testcase Class"; nova linha em Key Sources
+- `wiki/entities/gerard-meszaros.md` — `source_count` 14 → 15; nova linha em Key Sources
+- `wiki/concepts/indirect-input-output.md` — `source_count` 5 → 6; nova seção "Test fixture é o produto da fase, não um atributo fixo da Testcase Class"; nova linha em Key Sources
+- `wiki/concepts/test-doubles.md` — `source_count` 16 → 17; nova linha em Key Sources
+- `wiki/concepts/tdd.md` — `source_count` 17 → 18; nova linha em Key Sources
+- `wiki/concepts/criterios-de-bom-teste.md` — `source_count` 4 → 5; nova frase na seção "Definição-raiz"; nova linha em Key Sources
+- `wiki/concepts/piramide-de-testes.md` — `source_count` 12 → 13; nova linha em Key Sources
+- `wiki/sources/fixture-setup-xunitpatterns.md` — `source_count` 0 → 1; nova seção "Nota — verbete irmão dedicado ao substantivo 'test fixture'"
+- `wiki/sources/test-case-xunitpatterns.md` — `source_count` 0 → 1; nova seção "Nota — a Testcase Class como fábrica do test fixture, não seu dono"
+- `wiki/index.md` — nova linha em Sources, logo após `xunit-xunitpatterns`
+
+**Notas / open questions:** (1) **Nenhuma contradição encontrada** — fonte confirma a definição de test fixture/test context já registrada via [[wiki/sources/fixture-setup-xunitpatterns]], mas é a citação própria dedicada ao substantivo (não à fase "fixture setup"). (2) **Achado novo**: JUnit e seus ports diretos mantêm o test context separado da Testcase Class que o cria — reforça que a Testcase Class é uma Test Suite Factory ([[wiki/sources/test-case-xunitpatterns]]), e o fixture é o que ela produz, não estado fixo embutido nela. A fonte não nomeia quais variantes de xUnit fundem os dois conceitos. (3) **Lacuna que persiste**: **Four-Phase Test** segue sem verbete primário isolado na wiki — citado de passagem por esta fonte e por [[wiki/sources/fixture-setup-xunitpatterns]], mas nunca ingerido como página própria. Candidato natural para a próxima sessão do mesmo cluster, junto das lacunas já acumuladas (customer test, acceptance test, test suite, test run, fixture teardown, observation point, direct input).

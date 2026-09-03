@@ -3,8 +3,8 @@ type: concept
 title: "Test Doubles"
 aliases: ["dublê de teste", "mock stub fake spy", "xunit test patterns"]
 date_created: 2026-04-22
-date_updated: 2026-08-23
-source_count: 12
+date_updated: 2026-08-31
+source_count: 17
 tags: [testes, test-doubles, mock, stub, fake, spy, dummy]
 skill: tech-mentor-testing
 status: stable
@@ -18,7 +18,7 @@ Termo genérico para qualquer objeto que **substitui uma dependência real nos t
 
 A fonte primária ([[wiki/sources/test-double-xunitpatterns-meszaros]]) sustenta a taxonomia num vocabulário preciso que vale internalizar — é o que falta na descrição informal "mock é fake com asserção":
 
-- **SUT** (*System Under Test*) — o código sendo testado. **Nunca** é o que se substitui.
+- **SUT** (*System Under Test*) — o código sendo testado. **Nunca** é o que se substitui. Fonte primária isolada do próprio termo: [[wiki/sources/sut-xunitpatterns]] — SUT é sempre definido **a partir da perspectiva do teste** (papel relativo, não propriedade fixa do código) e seu escopo escala com a granularidade: classe/objeto/método (**CUT**/**OUT**/**MUT**) em unit tests, aplicação inteira ou subsistema (**AUT**) em customer tests.
 - **DOC** (*Depended-On Component*) — a dependência real. **É o que o double substitui.** Fonte primária isolada do termo: [[wiki/sources/depended-on-component-doc-xunitpatterns]] — "examinar e controlar" as interações do DOC com o SUT é a motivação formal para existir um Test Double.
 - **Entrada indireta** (*indirect input*) — valor que o SUT **recebe** de um DOC → precisa de **ponto de controle** → Stub/Mock. Fonte primária isolada de "control point": [[wiki/sources/control-point-xunitpatterns]] — o termo é mais amplo que só essa injeção (cobre também o próprio ato de exercitar o SUT), e cobra que control points exclusivos de teste nunca sejam usados pelo production code. É durante a fase de **fixture setup** — fonte primária isolada em [[wiki/sources/fixture-setup-xunitpatterns]] — que esses control points normalmente entram em cena, colocando o DOC no estado ("the 'before' picture") necessário para o teste.
 - **Saída indireta** (*indirect output*) — chamada/efeito que o SUT **dispara** sobre um DOC → precisa de **ponto de observação** → Spy/Mock.
@@ -34,6 +34,25 @@ Fake   → implementação funcional simplificada
 Spy    → observa sem alterar comportamento real
 Mock   → controla retorno E verifica como foi chamado
 ```
+
+## Test Stub em detalhe: Responder, Saboteur e Entity Chain Snipping
+
+Fonte primária dedicada: [[wiki/sources/test-stub-xunitpatterns-meszaros]]. A página guarda-chuva de Test Double já define Stub como o ponto de controle das entradas indiretas, mas a fonte específica de Test Stub detalha duas variações operacionais:
+
+- **Responder** — entrega entradas **válidas** para exercitar o caminho normal (tipicamente um Simple Success Test).
+- **Saboteur** — entrega entradas **inválidas** ou lança exceções, para verificar como o SUT trata falhas do seu DOC. O teste correspondente ainda segue Simple Success Test (espera-se que o SUT capture e trate a exceção internamente), não Expected Exception Test (que esperaria a exceção se propagar para fora do SUT).
+
+Também descreve o **Entity Chain Snipping**: em vez de montar uma cadeia inteira de objetos relacionados (`Customer → Address → City → State`) só para o SUT chegar a um valor, um único stub de `Customer` já responde com o valor final necessário — reduz o *fixture setup*, ao custo de acoplar o teste ao caminho de navegação que o SUT usa.
+
+## Da taxonomia à prática: a refatoração "Replace Dependency with Test Double"
+
+Fonte primária dedicada: [[wiki/sources/replace-dependency-with-test-double-xunitpatterns]]. Enquanto as fontes acima definem **o que** cada tipo de double é, esta fonte define **como** introduzi-lo num teste existente, como uma sequência de três decisões ortogonais:
+
+1. **Mecanismo de substituição** — [[wiki/concepts/dependency-injection|Dependency Injection]] (melhor para unit tests) vs. **Dependency Lookup** (melhor para customer tests).
+2. **Papel do double** — Fake Object, Test Stub ou Mock Object, decidido por como o teste vai usá-lo (não pela técnica de construção).
+3. **Técnica de construção** — Hard-Coded vs. Configurable Test Double (já registrado acima).
+
+Em linguagens estaticamente tipadas, normalmente é preciso aplicar antes a refatoração **Extract Interface** [Fowler], para que a variável que guarda a dependência seja tipada pela interface — não pela classe concreta —, permitindo trocar a implementação real pelo double sem alterar o SUT. Testes com Mock Object tendem a ser mais "front-loaded" (trabalho concentrado na construção do double) e costumam fechar com uma chamada a um método de `verification`.
 
 ## Guia de escolha
 
@@ -89,12 +108,17 @@ Mockar um banco de dados permite verificar que `db.save` foi chamado, mas não c
 - [[wiki/sources/control-point-xunitpatterns]] — verbete de glossário dedicado ao próprio termo control point: definição formal mais ampla que "back side do SUT", e a regra de que control points exclusivos de teste não devem entrar no production code
 - [[wiki/sources/fixture-setup-xunitpatterns]] — verbete de glossário dedicado ao termo fixture setup: a fase em que control points/Test Doubles são usados para preparar o "before" do teste; define test fixture/test context como o produto dessa fase
 - [[wiki/sources/depended-on-component-doc-xunitpatterns]] — verbete de glossário dedicado ao próprio termo DOC: definição formal e a motivação "examinar e controlar" para existir um Test Double
+- [[wiki/sources/sut-xunitpatterns]] — verbete de glossário dedicado ao próprio termo SUT: papel relativo ao teste (não propriedade fixa do código) e as siglas irmãs CUT/OUT/MUT/AUT conforme a granularidade
 - [[wiki/sources/indirect-input-xunitpatterns]] — verbete de glossário dedicado a "indirect input", a metade do eixo entrada/saída que motiva o uso de Stub
 - [[wiki/sources/test-double-xunitpatterns-meszaros]] — **fonte primária** da taxonomia (página canônica de Meszaros no xUnitPatterns.com); vocabulário SUT/DOC, entrada/saída indireta, pontos de controle/observação; Mock ≠ "Stub + asserção"
+- [[wiki/sources/test-stub-xunitpatterns-meszaros]] — fonte primária dedicada à variação Test Stub; detalha Responder vs. Saboteur e o padrão Entity Chain Snipping
+- [[wiki/sources/replace-dependency-with-test-double-xunitpatterns]] — fonte primária da refatoração mecânica: Dependency Injection vs. Dependency Lookup, escolha do papel do double, Hard-Coded vs. Configurable, e Extract Interface como pré-requisito em linguagens estaticamente tipadas
 - [[wiki/sources/test-doubles]]
 - [[wiki/sources/test-double-martin-fowler]] — fonte secundária que popularizou o termo, com atribuição correta da taxonomia a Gerard Meszaros
 - [[wiki/sources/xunit-martin-fowler]] — origem histórica da família de frameworks Xunit que dá nome ao livro de Meszaros
+- [[wiki/sources/xunit-xunitpatterns]] — verbete de glossário formal do próprio Meszaros para o termo "xUnit": qualquer framework baseado no padrão do JUnit ou SUnit
 - [[wiki/sources/integration-test-martin-fowler]]
 - [[wiki/sources/contract-test-martin-fowler]] — SelfInitializingFake como técnica para doubles usados em contract testing
 - [[wiki/sources/self-initializing-fake-martin-fowler]] — fonte primária do padrão SelfInitializingFake: Fake vs. Stub, mecanismo de cache
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — limite do mock de banco: assertion de chamada não prova persistência
+- [[wiki/sources/test-fixture-xunitpatterns]] — verbete de glossário dedicado ao termo test fixture/test context, o "palco" onde Test Doubles entram durante a fixture setup; nuance: em JUnit esse fixture é produto da Testcase Class, não estado embutido nela

@@ -3,8 +3,8 @@ type: concept
 title: "Unit Test Solitário vs. Sociável"
 aliases: ["solitary unit test", "sociable unit test", "teste unitário solitário", "teste unitário sociável"]
 date_created: 2026-07-07
-date_updated: 2026-08-23
-source_count: 5
+date_updated: 2026-08-31
+source_count: 6
 tags: [testes, unit-test, tdd, martin-fowler, terminologia]
 skill: tech-mentor-testing
 status: stable
@@ -13,6 +13,10 @@ status: stable
 # Unit Test Solitário vs. Sociável
 
 Distinção de Martin Fowler dentro do próprio "unit test": nem todo teste unitário isola tudo ao redor da unidade testada.
+
+## Definição-raiz: o que faz um teste ser "de unidade"
+
+Antes de solitário vs. sociável, há uma definição mais básica que as duas variações compartilham — fonte primária isolada em [[wiki/sources/unit-test-xunitpatterns]]: o que classifica um teste como "unit test" **não é a técnica usada** (isolar dependências com double ou não), é o **tamanho do SUT**. Um unit test exercita "um subconjunto muito pequeno do sistema geral" — possivelmente um único objeto ou método, "irreconhecível a quem não está envolvido em construir o software". A fonte contrasta isso com **customer test** (derivado dos requisitos, verificável pelo cliente) — os dois termos se definem um pelo oposto do outro. Solitário e sociável são duas formas de exercitar esse mesmo SUT pequeno, não duas definições concorrentes de "unidade".
 
 ## As duas variantes
 
@@ -53,3 +57,4 @@ Continua usando "unit test" para os dois casos, qualificando com **"solitary"** 
 - [[wiki/sources/indirect-input-xunitpatterns]] — fonte primária isolada da metade "entrada" desse eixo
 - [[wiki/sources/control-point-xunitpatterns]] — fonte primária isolada do termo control point, o mecanismo formal de comando ao SUT usado tanto no double quanto no exercise SUT
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — exemplo do teste de `add` que "sociabiliza" ao passar a chamar `db.save` real via SQLite, deixando de ser solitário
+- [[wiki/sources/unit-test-xunitpatterns]] — fonte primária isolada da definição-raiz de "unit test": critério é o tamanho do SUT, não a técnica de isolamento; contraste formal com customer test

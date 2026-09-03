@@ -3,7 +3,7 @@ type: source
 title: "Xunit (Martin Fowler)"
 aliases: ["xunit bliki", "história do junit", "origem do junit"]
 date_created: 2026-07-19
-date_updated: 2026-08-23
+date_updated: 2026-08-31
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/xunit-martin-fowler.md
 source_url: "https://martinfowler.com/bliki/Xunit.html"
 author: "Martin Fowler"
@@ -44,6 +44,10 @@ Bliki entry curto (mesma data do Test Double: 17 jan 2006) em que Fowler conta a
 ## Conexão com o outro bliki entry da mesma data
 
 Este artigo e [[wiki/sources/test-double-martin-fowler]] foram publicados no mesmo dia (17 jan 2006). O Test Double bliki abre citando que Gerard Meszaros "está escrevendo um livro para capturar padrões de uso dos vários frameworks Xunit" — ou seja, o próprio Fowler está usando o termo "Xunit" definido neste artigo para contextualizar o outro. As duas fontes são, na prática, um par: uma conta a origem técnica/histórica da família de frameworks, a outra cataloga o vocabulário de objetos de teste (Test Doubles) que surgiu ao redor deles.
+
+## Conexão com o verbete de glossário de Meszaros
+
+[[wiki/sources/xunit-xunitpatterns]] é o verbete de glossário formal do próprio Meszaros para o mesmo termo "xUnit" definido neste bliki — mas onde este artigo conta a origem histórica (o framework caseiro de Beck, o voo com Gamma), o verbete de Meszaros só define por linhagem: "qualquer Test Automation Framework de unit testing baseado no padrão do **JUnit ou SUnit**". A citação nominal a **SUnit** ali é o que preenche a lacuna deixada por este artigo, que menciona o framework caseiro de Beck em Smalltalk sem nunca lhe dar esse nome.
 
 ## Open Questions
 

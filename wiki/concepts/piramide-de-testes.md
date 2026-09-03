@@ -3,8 +3,8 @@ type: concept
 title: "Pirâmide de Testes"
 aliases: ["test pyramid", "ice cream cone", "testing trophy", "estratégia de testes"]
 date_created: 2026-04-22
-date_updated: 2026-08-19
-source_count: 8
+date_updated: 2026-08-31
+source_count: 13
 tags: [testes, pirâmide, estratégia, unitário, integração, e2e, projetos-novos]
 skill: tech-mentor-testing
 status: stable
@@ -156,3 +156,8 @@ Nessa leitura, o teste de maior valor por unidade de custo tende a ser um teste 
 - [[wiki/sources/integration-test-martin-fowler]]
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — releitura da pirâmide como problema de alocação de recursos; valor assimétrico de E2E entre legado e startup em pivot
 - [[wiki/sources/test-double-xunitpatterns-meszaros]] — doubles como ferramenta da base (unitários) da pirâmide
+- [[wiki/sources/sut-xunitpatterns]] — fonte primária do termo SUT: escopo escala explicitamente de classe/método (unit test, base da pirâmide) a aplicação inteira (customer test, topo da pirâmide)
+- [[wiki/sources/unit-test-xunitpatterns]] — fonte primária do termo "unit test": critério é o tamanho do SUT, não a técnica de teste; base da pirâmide definida com precisão formal
+- [[wiki/sources/test-xunitpatterns]] — fonte primária isolada do termo genérico "test": todas as camadas da pirâmide são instâncias deste conceito elementar
+- [[wiki/sources/test-case-xunitpatterns]] — fonte primária isolada de "test case": além de sinônimo de test, nomeia a Testcase Class — a unidade estrutural de código (Test Suite Factory) que agrupa Test Methods de qualquer camada da pirâmide
+- [[wiki/sources/test-fixture-xunitpatterns]] — fonte primária isolada de "test fixture"/"test context": tudo que precisa estar em vigor para o teste rodar, independentemente da camada da pirâmide; configurá-lo é a primeira fase do Four-Phase Test

@@ -3,8 +3,8 @@ type: entity
 title: "Kent Beck"
 aliases: ["kent beck"]
 date_created: 2026-07-09
-date_updated: 2026-08-23
-source_count: 8
+date_updated: 2026-08-31
+source_count: 9
 tags: [autor, tdd, extreme-programming, design-incremental, junit, xunit, yagni]
 skill: tech-mentor-testing
 status: stub
@@ -16,7 +16,7 @@ Criador do TDD (Test-Driven Development) moderno e da Extreme Programming (XP), 
 
 ## Criador do framework original e coautor do JUnit
 
-Antes do TDD ser formalizado como prática, Beck já construía frameworks de teste caseiros em Smalltalk — usados por ele e clientes num ciclo de edição-e-teste rápido dentro da própria IDE. Preferia que cada time reconstruísse o próprio framework (levava poucas horas) em vez de compartilhar um único — um exemplo do que Fowler chamaria de [[wiki/concepts/seedwork|Seedwork]]. Esse framework foi usado no projeto [[wiki/entities/c3-project|C3]] (Chrysler, 1996), o "projeto de nascimento" da Extreme Programming, onde Ron Jeffries também foi apresentado a ele.
+Antes do TDD ser formalizado como prática, Beck já construía frameworks de teste caseiros em Smalltalk — usados por ele e clientes num ciclo de edição-e-teste rápido dentro da própria IDE. Preferia que cada time reconstruísse o próprio framework (levava poucas horas) em vez de compartilhar um único — um exemplo do que Fowler chamaria de [[wiki/concepts/seedwork|Seedwork]]. Esse framework foi usado no projeto [[wiki/entities/c3-project|C3]] (Chrysler, 1996), o "projeto de nascimento" da Extreme Programming, onde Ron Jeffries também foi apresentado a ele. [[wiki/sources/xunit-xunitpatterns]] é a primeira fonte primária a dar nome próprio a esse framework: **[[wiki/entities/sunit|SUnit]]**, citado ao lado do JUnit como um dos dois padrões de referência que definem formalmente o que é um framework "xUnit".
 
 ## Relatou o primeiro caso de "Very Low Defect Project" a Fowler
 
@@ -53,6 +53,7 @@ A citação "invest in the design of the system every day" foi atribuída a Beck
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]] — metáfora dos dois chapéus
 - [[wiki/sources/xunit-martin-fowler]] — origem do JUnit e do framework de testes que o antecedeu
+- [[wiki/sources/xunit-xunitpatterns]] — nomeia esse framework de testes caseiro como SUnit
 - [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] — verificação de autoria de *Extreme Programming Explained*, origem do YAGNI
 - [[wiki/sources/cognitive-debt-margaret-storey]] — "make the hard change easy" (*Tidy First?*) como prevenção de dívida cognitiva
 - [[wiki/sources/seedwork-martin-fowler]] — fonte primária que nomeia o padrão do framework de testes caseiro de Beck (reconstruído por cada time) como exemplo de [[wiki/concepts/seedwork]]

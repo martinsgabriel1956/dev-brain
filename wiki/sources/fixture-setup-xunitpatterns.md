@@ -3,13 +3,13 @@ type: source
 title: "Fixture Setup (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["fixture setup", "test fixture", "test context", "configuração de fixture"]
 date_created: 2026-08-23
-date_updated: 2026-08-23
+date_updated: 2026-08-31
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/fixture-setup-xunitpatterns.md
 source_url: "http://xunitpatterns.com/fixture%20setup.html"
 author: "Gerard Meszaros"
 date_published: 2003-01-01
 date_ingested: 2026-08-23
-source_count: 0
+source_count: 1
 tags: [testes, test-doubles, sut, fixture, xunit, fonte-primaria, terminologia]
 skill: tech-mentor-testing
 status: stable
@@ -52,6 +52,10 @@ A fonte primária isolada de "control point" ([[wiki/sources/control-point-xunit
 - [[wiki/concepts/tdd]] — fixture setup como a primeira fase do Four-Phase Test, precondição para o ciclo RED-GREEN-REFACTOR poder exercitar o SUT
 - [[wiki/concepts/test-doubles]] — Test Double como o mecanismo típico usado durante a fixture setup para colocar DOCs no estado necessário
 - [[wiki/concepts/indirect-input-output]] — fixture setup como o momento em que control points (já definidos nesse conceito) são efetivamente usados
+
+## Nota — verbete irmão dedicado ao substantivo "test fixture"
+
+O glossário do xUnitPatterns.com tem um verbete próprio, separado deste, dedicado exclusivamente ao substantivo **test fixture**/**test context** (este verbete o define apenas como efeito colateral da definição de "fixture setup", a fase): ver [[wiki/sources/test-fixture-xunitpatterns]]. Ele acrescenta uma nuance estrutural que esta fonte não cobre — em JUnit e seus ports diretos, o test context é mantido separado da **Testcase Class** que o cria (reforçando que a Testcase Class é, na verdade, uma Test Suite Factory; ver [[wiki/sources/test-case-xunitpatterns]]) — e confirma, de fonte dedicada, que configurar o fixture é a primeira fase do **Four-Phase Test**.
 
 ## Questões Abertas
 

@@ -3,8 +3,8 @@ type: concept
 title: "Entrada e Saída Indireta (Indirect Input / Indirect Output)"
 aliases: ["indirect input", "indirect output", "entrada indireta", "saída indireta", "control point", "observation point", "ponto de controle", "ponto de observação", "direct input", "entrada direta"]
 date_created: 2026-08-21
-date_updated: 2026-08-23
-source_count: 4
+date_updated: 2026-08-31
+source_count: 6
 tags: [testes, test-doubles, sut, doc, terminologia, xunit]
 skill: tech-mentor-testing
 status: stub
@@ -46,6 +46,14 @@ A fonte primária isolada do termo fixture setup ([[wiki/sources/fixture-setup-x
 
 A fonte primária isolada do próprio termo DOC ([[wiki/sources/depended-on-component-doc-xunitpatterns]]) confirma que esse eixo controle/observação não é um detalhe do padrão Test Double — é a razão formal de existir um DOC como conceito: "we need to be able to examine and control its interactions with the SUT to get complete test coverage". Examinar = ponto de observação (saída indireta); controlar = ponto de controle (entrada indireta).
 
+## Test fixture é o produto da fase, não um atributo fixo da Testcase Class
+
+A fonte primária isolada do próprio termo test fixture ([[wiki/sources/test-fixture-xunitpatterns]]) confirma a mesma equivalência já registrada acima (test fixture = test context = o que a fixture setup produz) e acrescenta uma nuance estrutural: em JUnit e seus ports diretos, esse test context é mantido conceitualmente **separado** da [[wiki/entities/junit|Testcase Class]] que o cria — reforçando que a Testcase Class é, na verdade, uma **Test Suite Factory** (ver [[wiki/sources/test-case-xunitpatterns]]), e o test fixture é o que ela produz a cada execução, não estado embutido permanentemente na classe.
+
+## O SUT é sempre relativo ao teste, e seu escopo escala com a granularidade
+
+A fonte primária isolada do próprio termo SUT ([[wiki/sources/sut-xunitpatterns]]) formaliza algo que ficava implícito: SUT "é sempre definido a partir da perspectiva do teste" — não é uma propriedade fixa de uma classe, é um papel que muda conforme qual teste está rodando (a mesma classe pode ser SUT em um teste e DOC em outro). O tamanho do SUT também escala com a granularidade: em um unit test é uma classe/objeto/método (CUT/OUT/MUT); em um customer test é a aplicação inteira ou um subsistema grande (AUT). O eixo entrada/saída indireta descrito acima vale identicamente em qualquer escala — só muda o que está de cada lado do par SUT/DOC.
+
 ## Por que a distinção importa
 
 Sem esse vocabulário, é fácil descrever "mock" como "stub com asserção" — uma simplificação que a própria fonte primária rejeita (ver [[wiki/sources/test-double-xunitpatterns-meszaros]]). A distinção correta é: Stub controla **entrada** indireta; Mock/Spy observam **saída** indireta. É esse eixo que também organiza a distinção entre [[wiki/concepts/unit-test-solitario-vs-sociavel|estilo de teste London (mocka saída) e Detroit (usa objetos reais, stuba só entrada de I/O externo)]].
@@ -68,3 +76,5 @@ Sem esse vocabulário, é fácil descrever "mock" como "stub com asserção" —
 - [[wiki/sources/indirect-input-xunitpatterns]] — fonte primária de "indirect input"
 - [[wiki/sources/doc-xunitpatterns]] — fonte primária da definição formal de DOC
 - [[wiki/sources/test-double-xunitpatterns-meszaros]] — vocabulário completo SUT/DOC/entrada-saída indireta/pontos de controle-observação
+- [[wiki/sources/sut-xunitpatterns]] — fonte primária isolada do termo SUT: papel relativo ao teste e escala com a granularidade (CUT/OUT/MUT/AUT)
+- [[wiki/sources/test-fixture-xunitpatterns]] — fonte primária isolada do termo test fixture/test context; JUnit e seus ports diretos mantêm esse conceito separado da Testcase Class que o cria
