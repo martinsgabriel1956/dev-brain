@@ -3,8 +3,8 @@ type: concept
 title: "TDD — Test-Driven Development"
 aliases: ["test driven development", "red green refactor", "desenvolvimento guiado por testes"]
 date_created: 2026-04-22
-date_updated: 2026-08-23
-source_count: 18
+date_updated: 2026-09-04
+source_count: 19
 tags: [testes, tdd, design, red-green-refactor, qualidade, dora]
 skill: tech-mentor-testing
 status: stable
@@ -53,6 +53,8 @@ Começa pelas unidades internas do domínio. Usa objetos reais, mocka apenas I/O
 Começa pelo comportamento externo. Mocka todos os colaboradores ainda não existentes — o design emerge das interfaces que o teste exige. Risco: mocks podem mascarar integração quebrada.
 
 Essas duas escolas mapeiam quase diretamente para a distinção de Fowler entre [[unit-test-solitario-vs-sociavel|unit test solitário (London) e sociável (Detroit)]].
+
+**[external]** O [[wiki/entities/jmock|JMock]] — framework de Mock Object catalogado em [[wiki/sources/jmock]] — foi criado por Steve Freeman, Nat Pryce e Joe Walnes; Freeman e Pryce são também os autores de *Growing Object-Oriented Software, Guided by Tests* (2009), o livro que formaliza a escola London/Mockist. Não é apenas um exemplo posterior da escola — é uma de suas ferramentas de origem. Essa ligação não está na fonte primária ingerida (o verbete do xUnitPatterns.com não cita autoria do JMock).
 
 ## Origem: do framework caseiro em Smalltalk ao JUnit
 
@@ -145,3 +147,4 @@ Quando a interface, o input e o output já são conhecidos por uma especificaç�
 - [[wiki/sources/c3-martin-fowler]] — história do projeto [[wiki/entities/c3-project|C3]], onde as práticas da [[wiki/concepts/extreme-programming|Extreme Programming]] (incluindo o TDD) foram consolidadas pela primeira vez em 1996
 - [[wiki/sources/very-low-defect-project-martin-fowler]] — times de XP disciplinados chegando a menos de um bug/mês; fonte não detalha causalidade prática-a-prática, mas ver [[wiki/concepts/very-low-defect-project]]
 - [[wiki/sources/test-fixture-xunitpatterns]] — fonte primária isolada do termo test fixture/test context: configurar o fixture é a primeira fase do Four-Phase Test, precondição para o SUT ser exercitado no ciclo RED-GREEN-REFACTOR
+- [[wiki/sources/jmock]] — verbete de "Tools" do xUnitPatterns.com; JMock não é citado como ferramenta da escola London/Mockist pela fonte primária, mas é [external] historicamente a origem dela via Freeman/Pryce

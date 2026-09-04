@@ -3,7 +3,7 @@ type: source
 title: "Replace Dependency with Test Double (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["replace dependency with test double", "test refactoring test double", "xunit test patterns replace dependency"]
 date_created: 2026-08-31
-date_updated: 2026-08-31
+date_updated: 2026-09-04
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/replace-dependency-with-test-double-xunitpatterns.md
 source_url: "http://xunitpatterns.com/Replace%20Dependency%20with%20Test%20Double.html"
 author: "Gerard Meszaros"
@@ -55,6 +55,7 @@ Para introduzir um Test Double sem alterar o tipo declarado da dependência, mui
 
 - [[wiki/entities/gerard-meszaros]] — autor da fonte; mesma autoria do restante do cluster xUnitPatterns já ingerido
 - [[wiki/entities/martin-fowler|Fowler]] — citado como autor da refatoração **Extract Interface**, referenciada como pré-requisito em linguagens estaticamente tipadas
+- [[wiki/entities/jmock]] — exemplo concreto de framework que constrói o Configurable Test Double via toolkit (Configuration Interface), em vez de Hard-Coded manual; ver [[wiki/sources/jmock]]
 
 ## Conceitos Tocados
 

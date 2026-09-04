@@ -3,7 +3,7 @@ type: source
 title: "Test Stub (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["test stub meszaros", "stub", "responder", "saboteur", "xunit test patterns test stub"]
 date_created: 2026-08-30
-date_updated: 2026-08-30
+date_updated: 2026-09-04
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/test-stub-xunitpatterns-meszaros.md
 source_url: "http://xunitpatterns.com/Test%20Stub.html"
 author: "Gerard Meszaros"
@@ -49,7 +49,7 @@ A página de Test Double já citava a existência do Stub, mas não detalhava es
 Quando o SUT navega por uma cadeia de objetos relacionados só para chegar a um valor needed, criar a cadeia inteira (`Customer → Address → City → State`) no teste é caro e frágil. O padrão sugere "cortar" a cadeia stubando diretamente o objeto de entrada (`Customer`) para responder já com o valor final necessário — reduz o *fixture setup* e melhora a legibilidade, ao custo de acoplar o teste à forma como o SUT navega a cadeia.
 
 ### 4. Hard-Coded vs. Configurable — a mesma dualidade construtiva de Test Double, aplicada ao Stub
-Reforça o que já estava registrado em [[wiki/concepts/test-doubles]]: a pergunta "como construir" (hard-coded no código do teste vs. configurável via *fixture setup*, muitas vezes gerado por reflexão/proxy dinâmico como no exemplo com JMock) é ortogonal à pergunta "por que usar" (Stub vs. Mock vs. Fake). Um Stub pode ser tanto hard-coded quanto configurável — a escolha depende de reutilização entre testes.
+Reforça o que já estava registrado em [[wiki/concepts/test-doubles]]: a pergunta "como construir" (hard-coded no código do teste vs. configurável via *fixture setup*, muitas vezes gerado por reflexão/proxy dinâmico como no exemplo com JMock) é ortogonal à pergunta "por que usar" (Stub vs. Mock vs. Fake). Um Stub pode ser tanto hard-coded quanto configurável — a escolha depende de reutilização entre testes. Fonte primária dedicada ao JMock agora ingerida em [[wiki/sources/jmock]] — confirma a Configuration Interface fluente como o mecanismo concreto por trás desse "gerado por reflexão/proxy dinâmico".
 
 ### 5. Mesmos guardrails de Test Double, sem novidade normativa
 Os cuidados listados (ao menos um teste sem stub; não substituir o SUT em vez da dependência; excesso de stubs → Fragile Tests via Overspecified Software) replicam integralmente os já documentados em [[wiki/sources/test-double-xunitpatterns-meszaros]] — não é um claim novo, é a mesma regra reafirmada no contexto específico do Stub.
@@ -59,6 +59,7 @@ Os cuidados listados (ao menos um teste sem stub; não substituir o SUT em vez d
 ## Entidades Mencionadas
 
 - [[wiki/entities/gerard-meszaros]] — autor da fonte; mesma autoria da fonte-mãe de Test Double
+- [[wiki/entities/jmock]] — ferramenta citada de passagem como exemplo de stub/mock gerado por reflexão/proxy dinâmico; ver fonte primária dedicada em [[wiki/sources/jmock]]
 
 ## Conceitos Tocados
 

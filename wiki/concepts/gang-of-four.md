@@ -3,8 +3,8 @@ type: entity
 title: "Gang of Four"
 aliases: ["GoF", "Gang of Four", "Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"]
 date_created: 2026-05-05
-date_updated: 2026-05-05
-source_count: 1
+date_updated: 2026-09-04
+source_count: 2
 tags: [design-patterns, gof, livro, arquitetura]
 skill: tech-mentor-backend
 status: stable
@@ -41,3 +41,4 @@ Todos os 23 padrões permanecem aplicáveis. Os mais frequentes em decisões arq
 ## Key Sources
 
 - [[sources/sete-padroes-de-design-de-software]]
+- [[wiki/sources/decorator-xunitpatterns]] — xUnitPatterns.com (Meszaros) cita diretamente a definição original do GOF para o [[wiki/concepts/decorator-pattern|Decorator]], como parte da categoria "External Patterns" do site (padrões gerais emprestados de outros catálogos, não específicos de teste)

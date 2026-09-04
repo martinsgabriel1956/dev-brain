@@ -3,8 +3,8 @@ type: concept
 title: "Unit Test Solitário vs. Sociável"
 aliases: ["solitary unit test", "sociable unit test", "teste unitário solitário", "teste unitário sociável"]
 date_created: 2026-07-07
-date_updated: 2026-08-31
-source_count: 6
+date_updated: 2026-09-04
+source_count: 7
 tags: [testes, unit-test, tdd, martin-fowler, terminologia]
 skill: tech-mentor-testing
 status: stable
@@ -38,6 +38,8 @@ A distinção mapeia quase diretamente para as duas escolas descritas em [[tdd]]
 
 Na taxonomia de Meszaros, o eixo é **entrada indireta** (Stub/Mock controlam o que o SUT recebe) vs. **saída indireta** (Spy/Mock verificam o que o SUT dispara) — a escola London tende a Mocks (verifica interação), a Detroit tende a objetos reais + Stub só para I/O. Ver [[wiki/concepts/indirect-input-output]] e [[wiki/sources/test-double-xunitpatterns-meszaros]].
 
+O [[wiki/entities/jmock|JMock]] ([[wiki/sources/jmock]]) é o exemplo de ferramenta que operacionaliza o lado London/solitário: sua Configuration Interface fluente existe justamente para configurar, em runtime, os Mocks que substituem todo colaborador ainda não implementado.
+
 ## Como Fowler resolve na própria escrita
 
 Continua usando "unit test" para os dois casos, qualificando com **"solitary"** ou **"sociable"** apenas quando a distinção muda o argumento. Não adota um termo novo para substituir "unit test" (diferente do que faz com "integration test", que ele troca por "system test"/"narrow integration test").
@@ -58,3 +60,4 @@ Continua usando "unit test" para os dois casos, qualificando com **"solitary"** 
 - [[wiki/sources/control-point-xunitpatterns]] — fonte primária isolada do termo control point, o mecanismo formal de comando ao SUT usado tanto no double quanto no exercise SUT
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — exemplo do teste de `add` que "sociabiliza" ao passar a chamar `db.save` real via SQLite, deixando de ser solitário
 - [[wiki/sources/unit-test-xunitpatterns]] — fonte primária isolada da definição-raiz de "unit test": critério é o tamanho do SUT, não a técnica de isolamento; contraste formal com customer test
+- [[wiki/sources/jmock]] — verbete de "Tools" do xUnitPatterns.com: JMock como ferramenta que operacionaliza o unit test solitário via Configuration Interface

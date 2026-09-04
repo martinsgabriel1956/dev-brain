@@ -3,8 +3,8 @@ type: concept
 title: "Decorator Pattern"
 aliases: ["padrão decorator", "design pattern decorator"]
 date_created: 2026-05-01
-date_updated: 2026-08-11
-source_count: 4
+date_updated: 2026-09-04
+source_count: 5
 tags: [design-patterns, structural, decorator, oop]
 skill: tech-mentor-backend
 status: stub
@@ -13,6 +13,15 @@ status: stub
 ## Definição
 
 Padrão estrutural que adiciona comportamento a objetos em cadeia (wrapping recursivo), sem alterar a classe original. Foco em extensão funcional.
+
+## Definição formal (GOF, via xUnitPatterns.com)
+
+[[wiki/sources/decorator-xunitpatterns]] cita a formulação canônica do [[wiki/entities/gang-of-four|GOF]] (*Design Patterns*, 1994), que as fontes em vídeo abaixo parafraseiam sem citar diretamente:
+
+> "Attach additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality."
+> — GOF, citado por Gerard Meszaros
+
+Resumo do próprio Meszaros: um Decorator é "um objeto posicionado entre um cliente e outro objeto com o propósito de adicionar comportamento" — que **implementa a mesma interface** do objeto decorado e adiciona comportamento antes ou depois de delegar a mesma chamada que recebeu. Essa é a mesma mecânica de "recebe o objeto decorado externamente + chama o método correspondente antes/depois de decorar" já descrita abaixo com os exemplos de notificações e `ImageProcessor` — agora com a fonte primária original por trás da definição informal.
 
 ## Diferença do Proxy
 
@@ -41,6 +50,7 @@ Essa fonte traz dois ângulos que reforçam a definição:
 
 ## Key Sources
 
+- [[wiki/sources/decorator-xunitpatterns]] — verbete de "External Patterns" do xUnitPatterns.com (Meszaros): cita a definição formal original do GOF, fonte primária em inglês para a definição já registrada nesta página
 - [[wiki/sources/design-pattern-proxy]]
 - [[sources/design-pattern-strategy]] — distinção Decorator (pele) vs Strategy (miolo/algoritmo)
 - [[wiki/sources/seis-design-patterns-mais-usados-na-pratica]] — analogia dos filtros de foto do Instagram; exemplo de encadeamento de canais de notificação (e-mail → Slack → SMS); nota sobre decorators do TypeScript/Angular/NestJS

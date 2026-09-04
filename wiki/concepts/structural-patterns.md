@@ -3,8 +3,8 @@ type: concept
 title: "Padrões Estruturais (GoF)"
 aliases: ["structural patterns", "padrões estruturais", "structural-patterns"]
 date_created: 2026-05-01
-date_updated: 2026-08-18
-source_count: 3
+date_updated: 2026-09-04
+source_count: 4
 tags: [design-patterns, structural, gof, oop]
 skill: tech-mentor-backend
 status: stable
@@ -35,3 +35,4 @@ Padrões criacionais tratam de *como* objetos nascem. Padrões estruturais trata
 - [[wiki/sources/design-pattern-proxy]]
 - [[sources/sete-padroes-de-design-de-software]]
 - [[wiki/sources/design-pattern-facade-codigo-fonte-tv]]
+- [[wiki/sources/decorator-xunitpatterns]] — xUnitPatterns.com (Meszaros) cita a definição original do GOF para o [[wiki/concepts/decorator-pattern|Decorator]]

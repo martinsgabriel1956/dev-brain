@@ -3,8 +3,8 @@ type: concept
 title: "Test Doubles"
 aliases: ["dublê de teste", "mock stub fake spy", "xunit test patterns"]
 date_created: 2026-04-22
-date_updated: 2026-09-02
-source_count: 20
+date_updated: 2026-09-04
+source_count: 23
 tags: [testes, test-doubles, mock, stub, fake, spy, dummy]
 skill: tech-mentor-testing
 status: stable
@@ -24,6 +24,10 @@ A fonte primária ([[wiki/sources/test-double-xunitpatterns-meszaros]]) sustenta
 - **Saída indireta** (*indirect output*) — chamada/efeito que o SUT **dispara** sobre um DOC → precisa de **ponto de observação** → Spy/Mock. Fonte primária isolada de "observation point": [[wiki/sources/observation-point-xunitpatterns]] — contraparte simétrica de control point ("como o teste inspeciona o estado pós-exercício do SUT"), com escopo mais amplo que só a saída indireta (cobre também a verificação de estado direto do próprio SUT); mesma regra de não usar em production code, aqui pelo risco de expor detalhes de implementação privados.
 
 Esse eixo **controle × observação** é o que organiza os cinco tipos — formalizado com sua própria fonte primária em [[wiki/concepts/indirect-input-output]] (verbete "indirect input" isolado, ver [[wiki/sources/indirect-input-xunitpatterns]]). Meszaros ainda separa duas perguntas ortogonais: **por que** usar o double (define Dummy/Stub/Spy/Mock/Fake) vs. **como** construí-lo (Hard-Coded vs. Configurable Test Double — a técnica de construção não muda o papel). Detalhe importante: o **double só precisa expor a mesma API** que aquele teste exercita — não a interface inteira do DOC ("fiel o suficiente para a cena", na analogia do dublê de cinema).
+
+**Exemplo concreto de Configurable Test Double**: [[wiki/entities/jmock|JMock]], catalogado por Meszaros na categoria "Tools" do mesmo site ([[wiki/sources/jmock]]) como framework dinâmico de Mock Object para Java. O que o verbete elogia especificamente é a **Configuration Interface** fluente usada para especificar expectativas — a API de method chaining que gera o double em runtime via reflexão/proxy dinâmico.
+
+**Correção/refinamento (2026-09-04):** o lado Configurable não é uniforme — [[wiki/sources/utwhcm-xunitpatterns]] revela, pela estrutura de link do próprio site (`Configurable Test Double.html#Hand-Built Test Double`), que existe uma subseção **Hand-Built Test Double** dentro da página Configurable Test Double. Isso significa que "escrito à mão" **não** é sinônimo de Hard-Coded: um Hand-Built Test Double é uma classe escrita manualmente pelo desenvolvedor, mas ainda **configurável** em runtime (ex.: via setters), diferente de um Hard-Coded Test Double (comportamento fixo no código do double) e diferente também de um Configurable Test Double **gerado dinamicamente** por um framework (o caso do JMock, via reflexão/proxy). A definição completa de Hand-Built ainda depende da página primária "Configurable Test Double", não ingerida até o momento — ver questão aberta em [[wiki/sources/utwhcm-xunitpatterns]].
 
 ## Os cinco tipos
 
@@ -125,3 +129,6 @@ Mockar um banco de dados permite verificar que `db.save` foi chamado, mas não c
 - [[wiki/sources/procedure-variable-xunitpatterns]] — verbete de glossário dedicado ao termo "procedure variable" (function pointer/delegate): mecanismo de dynamic binding por trás do Configurable Test Double, e precursor histórico do despacho polimórfico em C++ pré-OOP
 - [[wiki/sources/observation-point-xunitpatterns]] — verbete de glossário dedicado ao próprio termo observation point: contraparte simétrica de control point, fecha a hierarquia interaction point → control point | observation point
 - [[wiki/sources/interaction-point-xunitpatterns]] — verbete de glossário dedicado ao próprio termo interaction point: a categoria mãe de control point e observation point, partição binária e exaustiva de como um teste interage com o SUT
+- [[wiki/sources/jmock]] — verbete de "Tools" (não Glossary) do mesmo site: descreve o JMock como exemplo concreto de framework de Mock Object com Configurable Test Double via Configuration Interface fluente
+- [[wiki/sources/utwhcm-xunitpatterns]] — verbete de "References" (não Glossary/Tools) do mesmo site: revela a subdivisão Hand-Built vs. Dinamicamente Gerado dentro de Configurable Test Double, corrigindo a imprecisão anterior desta página
+- [[wiki/sources/decorator-xunitpatterns]] — verbete de "External Patterns" (não Glossary/Tools/References) do mesmo site: cita a definição original do GOF para o [[wiki/concepts/decorator-pattern|Decorator]]; conexão com a construção de Test Doubles por wrapping (ex.: Test Spy em torno de um DOC real) **não confirmada** por esta fonte isolada — ver questão aberta na source page

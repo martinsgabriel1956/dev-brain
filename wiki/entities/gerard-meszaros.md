@@ -3,8 +3,8 @@ type: entity
 title: "Gerard Meszaros"
 aliases: ["Meszaros", "xUnit Test Patterns author"]
 date_created: 2026-07-19
-date_updated: 2026-09-02
-source_count: 21
+date_updated: 2026-09-04
+source_count: 24
 tags: [testes, autor, test-doubles, xunit, taxonomia]
 skill: tech-mentor-testing
 status: draft
@@ -53,3 +53,6 @@ Além de ser a fonte da taxonomia relatada por Fowler, Meszaros é creditado com
 - [[wiki/sources/interaction-point-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição do próprio termo "interaction point": a categoria mãe da qual control point e observation point são os dois subtipos exaustivos
 - [[wiki/sources/extreme-programming-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição mais genérica do próprio termo "eXtreme Programming": metodologia ágil que destaca pair programming, testes unitários automatizados e iterações curtas
 - [[wiki/sources/customer-test-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição do próprio termo "customer test": teste da funcionalidade visível do sistema, independente das decisões de design internas ao SUT — fecha, de fonte primária isolada, o par de contraste com "unit test"
+- [[wiki/sources/jmock]] — primeira entrada da categoria "Tools" do site ingerida na wiki: descreve o [[wiki/entities/jmock]] como framework de Mock Object para Java, com destaque para a Configuration Interface fluente
+- [[wiki/sources/utwhcm-xunitpatterns]] — primeira entrada da categoria "References" (bibliografia) do site ingerida na wiki: verbete de citação ao artigo externo de Sven Gorts sobre mocks construídos à mão
+- [[wiki/sources/decorator-xunitpatterns]] — primeira entrada da categoria "External Patterns" do site ingerida na wiki: verbete curto que cita a definição original do GOF para o Decorator, sem elaboração própria de Meszaros
