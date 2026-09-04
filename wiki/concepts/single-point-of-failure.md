@@ -3,8 +3,8 @@ type: concept
 title: "Single Point of Failure (SPOF)"
 aliases: ["spof", "ponto único de falha", "single point of failure"]
 date_created: 2026-08-10
-date_updated: 2026-08-24
-source_count: 2
+date_updated: 2026-09-03
+source_count: 3
 tags: [system-design, spof, alta-disponibilidade, resiliencia, arquitetura, escalabilidade]
 skill: tech-mentor-system-design
 status: stub
@@ -25,6 +25,10 @@ No desenho incremental "de zero a milhões de usuários", cada evolução da arq
 
 O padrão se repete: mover estado para fora do servidor ([[stateless]]) é o que permite que qualquer instância seja substituível, tornando a redundância eficaz.
 
+## SPOF Lógico: Bug de Módulo, Não Só Queda de Servidor
+
+[[wiki/sources/arquitetura-monolitica-vantagens-desvantagens]] nomeia uma variante do SPOF que as outras fontes (focadas em servidor/banco/LB físico) não cobrem: num [[wiki/concepts/monolito|monolito]], um bug introduzido numa nova versão de **um módulo** (ex.: estoque) pode derrubar módulos não relacionados (vendas), porque todos compartilham o mesmo processo e o mesmo deploy. É o mesmo princípio — falha isolada com blast radius total — só que a causa é código defeituoso, não infraestrutura indisponível.
+
 ## Relação com outros conceitos
 
 - [[escalabilidade-vertical]] — escalar "para cima" mantém o servidor único como SPOF; é o limite que motiva a escala horizontal
@@ -37,3 +41,4 @@ O padrão se repete: mover estado para fora do servidor ([[stateless]]) é o que
 
 - [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — SPOF como fio condutor do desenho incremental: servidor único → múltiplos servidores + LB; banco único → replicação + promoção de réplica; cache como SPOF que exige invalidação e tolerância a indisponibilidade
 - [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — mesma progressão de eliminação de SPOF, com um nível adicional explícito: o data center inteiro como SPOF de nível mais alto, resolvido replicando toda a arquitetura em um segundo data center/região
+- [[wiki/sources/arquitetura-monolitica-vantagens-desvantagens]] — variante lógica do SPOF: bug num módulo derruba módulos não relacionados, porque monolito compartilha processo e deploy

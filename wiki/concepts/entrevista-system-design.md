@@ -3,8 +3,8 @@ type: concept
 title: "Entrevista de System Design (Whiteboard Interview)"
 aliases: ["system design interview", "whiteboard interview", "lousa branca", "entrevista de arquitetura"]
 date_created: 2026-07-20
-date_updated: 2026-08-21
-source_count: 8
+date_updated: 2026-09-03
+source_count: 9
 tags: [system-design, entrevistas, arquitetura, carreira]
 skill: tech-mentor-system-design
 status: draft
@@ -18,10 +18,22 @@ Etapa de entrevista técnica em grandes empresas em que o candidato precisa dese
 
 A ordem importa tanto quanto o conteúdo — desenhar antes de levantar requisitos é um erro clássico porque faltam elementos e passa a impressão de que o candidato não está engajando com o entrevistador.
 
-1. **Levantar requisitos, não presumir.** Perguntar explicitamente quais são as funcionalidades *core* (essenciais) vs. auxiliares. O foco do desenho deve estar nas core; auxiliares ficam para o final, se sobrar tempo.
+1. **Levantar requisitos, não presumir.** Ver [[wiki/concepts/requisitos-funcionais-e-nao-funcionais]] — perguntar explicitamente quais são as funcionalidades *core* (essenciais) vs. auxiliares. O foco do desenho deve estar nas core; auxiliares ficam para o final, se sobrar tempo.
 2. **Plano de capacidade.** Ver [[wiki/concepts/estimativas-back-of-envelope]] — requisições por segundo/minuto, picos de acesso, banda necessária, custo de armazenamento em disco (dia/ano/5 anos) e replication factor.
 3. **Modelagem de dados e API.** Mostrar repertório de bancos de dados (RDBMS, chave-valor, busca) por caso de uso — sem se aprofundar em modelagem complexa — e modelar a [[wiki/concepts/contrato-de-api|API]]: endpoints principais, request/response, protocolo (HTTP, gRPC).
 4. **Só então desenhar o [[wiki/concepts/high-level-design|high-level design]].** O desenho na lousa é a última etapa, não a primeira — e o entrevistador avalia se o desenho é coerente com tudo que foi levantado antes.
+
+## Três crenças que reprovam candidatos
+
+[[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] nomeia os três atalhos que substituem a compreensão do problema — e que produzem reprovação mesmo quando o candidato conhece as peças:
+
+| Crença | Por que é falsa | Correção |
+|---|---|---|
+| **"Se o enunciado acabou, o problema está definido"** | O enunciado é vago por construção ("construa a arquitetura de um e-commerce"). Cada pergunta omitida leva a uma arquitetura diferente. | Pausar e levantar [[wiki/concepts/requisitos-funcionais-e-nao-funcionais\|requisitos]]: quem usa e quantos, quais features principais, qual RNF crítico. |
+| **"Quanto mais rápido eu resolver, melhor"** | A sessão mede raciocínio, não velocidade. Chegar à resposta em 30 segundos pulando o entendimento não conta como acerto. | Expor as implicações consideradas e justificar cada escolha — o produto entregue é o racional, não o diagrama. |
+| **"Preciso conhecer a melhor tecnologia"** | Não existe tecnologia perfeita ([[wiki/concepts/sem-balas-de-prata]]); a melhor alternativa é derivada do caso de uso comparado aos prós e contras de cada opção. | Investir em fundamentos de sistemas, que transferem entre stacks — ao contrário de tecnologias específicas. |
+
+As três compartilham a mesma raiz: trocar a fase de entendimento por um atalho (desenhar cedo, responder rápido, ou já saber a resposta "certa").
 
 ## Regra de ouro: só cite tecnologia que você domina
 
@@ -73,3 +85,4 @@ Assim como na [[wiki/concepts/entrevista-tecnica-coding|entrevista de coding]], 
 - [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — o erro que "elimina 90% dos candidatos" é pular para a solução sem investigar o contexto (volumetria, hotspots, criticidade de dados); o sênior faz perguntas primeiro, o pleno já dá a receita ("é só cache e réplicas")
 - [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — framework de 7 passos ensinado do zero sobre um encurtador de URL, com a regra de ouro "não invente as regras" e demonstração ao vivo do valor do passo final de revisão de requisitos
 - [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] — checklist de três erros de concorrência que eliminam candidatos: não identificar o risco de race condition, usar lock distribuído onde não é necessário, travar linha do banco durante chamada a API externa
+- [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — formulação negativa das três crenças que reprovam: o enunciado já define o problema, velocidade é sinal de competência, e existe "a melhor tecnologia"

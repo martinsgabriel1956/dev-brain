@@ -3,8 +3,8 @@ type: concept
 title: "Janela de Contexto"
 aliases: ["context window", "context length", "janela de tokens"]
 date_created: 2026-05-18
-date_updated: 2026-08-20
-source_count: 5
+date_updated: 2026-09-03
+source_count: 6
 tags: [llm, tokens, agentes-ia, llmops]
 skill: tech-mentor-ai
 status: draft
@@ -56,6 +56,10 @@ Mesmo com janelas de contexto de até 1M de tokens disponíveis, a recomendaçã
 
 [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] reforça, com um caso concreto, um ponto frequentemente subestimado: o modelo não "esquece" o que não está na janela — aquilo **nunca esteve lá**. Um projeto real acumula anos de regras de negócio e decisões de arquitetura que vivem, na melhor das hipóteses, na cabeça de duas ou três pessoas; se essas regras não foram transformadas em artefato dentro do repositório (ver [[wiki/concepts/context-engineering-harness]]), o prompt mais detalhado do mundo não as coloca na janela. A fonte ilustra com um serviço de cobrança recorrente gerado com um prompt caprichado (idempotência, formato de resposta, tratamento de erro especificados) que ignorou uma regra central — cobrança deve passar por fila de auditoria — documentada em um arquivo que a IA nunca leu. A analogia usada: instruções detalhadíssimas para uma pessoa vendada numa sala que ela nunca viu, seguidas da reclamação de que ela esbarrou no móvel.
 
+## Granularidade de Subagentes e a Janela do Agente Principal
+
+[[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] mostra um mecanismo direto de como o número de subagentes afeta a janela do agente principal: cada subagente retorna um output ao terminar, e é o **acúmulo desses outputs** — não o volume de trabalho de cada subagente individualmente — que polui a janela do principal. Num benchmark de campo (mesma spec de 17 tasks), rodar tudo sem subagentes terminou com a janela do principal em 74%; agrupar as tasks em poucos subagentes coesos (3, no sweet spot testado) terminou com a janela em apenas 26% — margem que importa porque qualquer correção pós-implementação num one-shot já em 74% tende a saturar a janela de 200k tokens e degradar qualidade. Ver [[wiki/concepts/subagentes]].
+
 ## Key Sources
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
@@ -63,3 +67,4 @@ Mesmo com janelas de contexto de até 1M de tokens disponíveis, a recomendaçã
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
 - [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — heurística de ~200k tokens mesmo com janelas de 1M disponíveis
 - [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] — caso concreto de regra de negócio fora da janela (fila de auditoria de cobrança) e a analogia da pessoa vendada
+- [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] — outputs de subagentes acumulados na janela do principal escalam com o número de subagentes, não com o volume de trabalho; benchmark mostrando janela final de 26% (3 subagentes) vs. 74% (sem subagentes)

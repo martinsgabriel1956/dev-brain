@@ -3,8 +3,8 @@ type: concept
 title: "Estimativas Back-of-Envelope"
 aliases: ["back of envelope", "estimativas de escala", "capacity estimation"]
 date_created: 2026-04-22
-date_updated: 2026-08-21
-source_count: 6
+date_updated: 2026-09-03
+source_count: 7
 tags: [system-design, estimativas, entrevista, escala, capacity-planning]
 skill: tech-mentor-system-design
 status: stub
@@ -55,3 +55,4 @@ Em [[wiki/concepts/entrevista-system-design|entrevistas de system design]], esse
 - [[wiki/sources/anatomia-entrevista-system-design-bigtech]]
 - [[wiki/sources/system-design-entrevista-cinema-draw-io]] — exemplo prático de omitir a etapa de propósito: o apresentador explicitamente não aprofunda BOE no rascunho, chamando escala/RPS de pergunta "mais para senioridades mais altas" fora do escopo do exercício
 - [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — a proporção leitura:escrita (100:1) como o número que efetivamente direciona uma decisão arquitetural (monolito vs. microsserviços), não só um dado de capacidade genérico
+- [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — "quantos usuários a gente espera" listada como uma das três perguntas obrigatórias antes de desenhar qualquer componente

@@ -3,8 +3,8 @@ type: concept
 title: "Recursão"
 aliases: ["recursion", "função recursiva", "chamada recursiva"]
 date_created: 2026-06-26
-date_updated: 2026-08-18
-source_count: 4
+date_updated: 2026-09-03
+source_count: 6
 tags: [cs-fundamentals, algoritmos, recursao, pilha-de-execucao, dividir-e-conquistar]
 skill: cs-fundamentals
 status: draft
@@ -80,6 +80,12 @@ A Fibonacci recursiva precisa de **dois** casos base (não um) porque cada chama
 
 **Cuidado com a categoria "recursão é mais lenta":** essa afirmação (comum em introduções ao tema) mistura duas coisas com custo bem diferente. O `fatorial` recursivo acima é O(n) — uma chamada por nível, sem repetição de trabalho. Já o `fibonacci` recursivo ingênuo é O(2ⁿ) — a árvore de chamadas recomputa os mesmos subproblemas repetidamente (`fibonacci(3)` é chamado de novo dentro de `fibonacci(5)` e de `fibonacci(4)`). A correção para esse segundo caso não é "trocar recursão por iteração", é [[wiki/concepts/programacao-dinamica|memoização]] — ver [[wiki/sources/recursao-fatorial-fibonacci-javascript]].
 
+## Recursão e iteração são intercambiáveis (tese de Church-Turing)
+
+A crença de que "recursão é sempre menos eficiente e mais complexa que iteração" mistura uma observação específica de algumas linguagens (Python, por exemplo, não faz [[wiki/concepts/tail-call-optimization|tail call optimization]]) com uma verdade universal que não existe. Pela [[wiki/concepts/church-turing-thesis|tese de Church-Turing]], toda linguagem de programação de uso geral é Turing-completa — o que implica que **todo algoritmo recursivo pode ser convertido em iterativo, e vice-versa**, sem perda de poder computacional. A diferença real está em **quem administra a estrutura de suporte**: numa recursão "crua", o compilador/runtime empilha e desempilha frames na [[wiki/concepts/pilha|call stack]] automaticamente via `call`/`return`; numa versão iterativa, o próprio programador aloca e administra essa estrutura (um array, uma lista usada como stack). Em assembly, isso fica visível: uma chamada recursiva vira uma instrução `call`, uma iteração de for loop vira um `jump` de volta ao topo do loop — ambos são controle de fluxo, mas só o `call` administra a stack — ver [[wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization]].
+
+Isso não significa que a escolha seja indiferente na prática: [[wiki/concepts/tail-call-optimization|TCO]] só existe em algumas linguagens (Kotlin/Scala com `tailrec` explícito, C com otimização de compilador), não existe em Python, e só se aplica quando a chamada recursiva é a **última** operação da função (uma *tail call* de fato — não é o caso do `fatorial` recursivo "ingênuo", onde ainda falta multiplicar por `n` depois do retorno).
+
 ## Recursão vs. iteração com ponteiros
 
 Nem todo problema "naturalmente recursivo" precisa de recursão de fato — binary search é recursivo na estrutura do raciocínio ("resolva no sub-array menor"), mas a implementação mais barata dispensa a chamada recursiva e a cópia de array, substituindo por dois índices que se movem sobre a mesma estrutura ([[wiki/concepts/two-pointer]]).
@@ -99,6 +105,8 @@ Nem todo problema "naturalmente recursivo" precisa de recursão de fato — bina
 - [[arvore]] — árvore é a estrutura recursiva por excelência; percorrer uma árvore sem recursão é mais difícil
 - [[abstracao]] — recursão é uma abstração: o problema de tamanho n é expresso em termos do mesmo problema de tamanho n-1
 - [[wiki/concepts/two-pointer]] — alternativa iterativa que dispensa recursão e cópia de estrutura em problemas de array
+- [[wiki/concepts/church-turing-thesis]] — base formal de por que toda recursão é conversível em iteração
+- [[wiki/concepts/tail-call-optimization]] — mecanismo de compilador que elimina o crescimento da call stack quando a chamada recursiva é a última operação da função
 
 ## Key sources
 
@@ -106,3 +114,5 @@ Nem todo problema "naturalmente recursivo" precisa de recursão de fato — bina
 - [[wiki/sources/9-algoritmos-que-todo-programador-deveria-saber]]
 - [[wiki/sources/binary-search-em-5-minutos]] — motivação explícita para trocar recursão com recriação de array por two pointer iterativo
 - [[wiki/sources/recursao-fatorial-fibonacci-javascript]] — trace passo a passo de fatorial e Fibonacci recursivos em JavaScript, caso base vs. chamada recursiva
+- [[wiki/sources/algoritmos-de-ordenacao-bubble-insertion-selection-merge-quicksort-heapsort]] — Merge Sort e Quicksort como exemplos canônicos de dividir-para-conquistar recursivo, com trace numérico completo de divisão e (no Merge Sort) remontagem
+- [[wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization]] — por que "recursão é mais lenta" é específico de linguagens sem TCO, não universal; conversão de fatorial recursivo em iterativo com stack manual; leitura de assembly (`call` vs. `jump`); tese de Church-Turing como base formal da equivalência recursão/iteração

@@ -3,8 +3,8 @@ type: concept
 title: "RPI Workflow"
 aliases: ["research plan implement", "RPI", "research-plan-implement"]
 date_created: 2026-05-04
-date_updated: 2026-08-03
-source_count: 4
+date_updated: 2026-09-03
+source_count: 5
 tags: [coding-agents, context-engineering, workflow, ai-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -70,9 +70,14 @@ O RPI funciona melhor quando o codebase usa [[progressive-disclosure-ia]]: arqui
 
 Independentemente da fonte original, [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] confirma a mesma heurística prática — manter o uso da janela em torno de ~200k tokens mesmo quando o modelo suporta até 1M — e amarra explicitamente RPI ao Spec-Driven Development como resposta ao mesmo problema (quanto mais janela ocupada, maior a chance de alucinação), com um exemplo concreto de mudança em ~90 arquivos conduzida sem estourar essa faixa.
 
+## Subagentes na Fase de Research Sempre Compensam
+
+[[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] reforça, dentro de um modelo mental de 4 critérios para quando usar subagentes, que a fase de **Research** é o caso mais claro: o agente principal passa um prompt dizendo o que quer de volta, o subagente varre o codebase e retorna só o necessário — preserva a janela do principal e não a polui. Diferente da fase de Implement (onde a granularidade de subagentes importa muito e pode piorar o resultado se for excessiva — ver [[wiki/concepts/subagentes]]), a fase de Research não teve nenhum cenário testado onde usar subagente saiu pior que não usar.
+
 ## Key Sources
 
 - [[sources/erros-workflow-research-plan-implement]]
 - [[sources/context-engineering-avancado-para-coding-agents]]
 - [[wiki/sources/context-engineering-codebases-grandes-rpi]] — sub-planos para refatorações grandes; memória de longo prazo; progressive disclosure na prática
 - [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — heurística de ~200k tokens; RPI e SDD como resposta ao mesmo problema; exemplo de campo com ~90 arquivos
+- [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] — fase de Research como caso claro onde subagente sempre compensa (sem cenário testado em que piorou o resultado)

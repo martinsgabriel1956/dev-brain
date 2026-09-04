@@ -3,8 +3,8 @@ type: concept
 title: "Zero-Downtime Deploy"
 aliases: ["zero downtime", "deploy sem downtime", "deploy sem interrupção"]
 date_created: 2026-04-22
-date_updated: 2026-07-09
-source_count: 3
+date_updated: 2026-09-03
+source_count: 4
 tags: [devops, deploy, cicd, availability, infra, kubernetes, migrations]
 skill: tech-mentor-system-design
 status: stable
@@ -23,6 +23,10 @@ O oposto direto é o [[concepts/recreate-deployment]] — shutdown seguido de st
 | [[concepts/rolling-update]] | Lento | Normal | API compat obrigatória |
 | [[concepts/blue-green-deploy]] | Instantâneo | 2× durante switch | DB suporta 2 versões |
 | [[concepts/canary-release]] | Gradual/automático | Normal + roteamento | Observabilidade necessária |
+
+## Caso Base: Monolito de Servidor Único Sem as Estratégias Acima
+
+[[wiki/sources/arquitetura-monolitica-vantagens-desvantagens]] descreve o cenário que este conceito existe para resolver: um monolito tradicional rodando em servidor único, sem nenhuma das estratégias da tabela abaixo, sofre indisponibilidade a cada deploy — a aplicação fica fora do ar enquanto a nova versão sobe. É essa restrição que empurra times a amarrar deploys a um dia fixo da semana em vez de deploy contínuo, e é exatamente o que [[wiki/concepts/rolling-update]] e [[wiki/concepts/blue-green-deploy]] eliminam ao introduzir redundância de instâncias.
 
 ## Pré-requisito: Expand-Contract
 
@@ -101,3 +105,4 @@ spec:
 - [[sources/blue-green-canary-rolling]]
 - [[sources/zero-downtime-deploy]]
 - [[sources/tipos-de-deploy]]
+- [[wiki/sources/arquitetura-monolitica-vantagens-desvantagens]] — caso base sem nenhuma estratégia de zero-downtime: monolito de servidor único fica indisponível a cada deploy, empurrando times a amarrar deploys a um dia fixo da semana

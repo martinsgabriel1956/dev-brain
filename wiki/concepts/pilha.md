@@ -3,8 +3,8 @@ type: concept
 title: "Pilha (Stack)"
 aliases: ["stack", "LIFO", "call stack"]
 date_created: 2026-06-01
-date_updated: 2026-08-18
-source_count: 2
+date_updated: 2026-09-03
+source_count: 3
 tags: [cs-fundamentals, estruturas-de-dados, pilha, stack, lifo]
 skill: cs-fundamentals
 status: draft
@@ -41,12 +41,18 @@ Uma pilha de pratos. Você coloca o novo prato em cima e é o primeiro a ser ret
 - Você precisa de desfazer operações (undo/redo)
 - Você precisa rastrear estado aninhado (chamadas de função, tags XML)
 
+## A call stack não é mágica — é só uma estrutura de dados
+
+A call stack usada por chamadas de função é administrada automaticamente pelo compilador/runtime, mas isso não a torna especial: é uma pilha comum, e nada impede um programador de alocar e administrar a sua própria stack manualmente (ex.: uma lista usada com `append`/`pop`) para substituir uma recursão por uma versão iterativa equivalente. Em assembly, a diferença fica visível: uma chamada recursiva compila para uma instrução `call` (que empilha um frame na stack), enquanto uma iteração de for loop compila para um `jump` de volta ao topo do loop (sem tocar a stack) — ver [[wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization]]. Ver [[wiki/concepts/tail-call-optimization]] para o caso em que o compilador consegue eliminar esse empilhamento por completo.
+
 ## Relação com outros conceitos
 
 - [[fila]] — estrutura inversa: FIFO em vez de LIFO
 - [[excecao-vs-erro]] — stack trace é a representação da call stack no momento da exceção
+- [[wiki/concepts/tail-call-optimization]] — otimização que evita o crescimento da call stack em certas recursões
 
 ## Key sources
 
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
 - [[wiki/sources/recursao-fatorial-fibonacci-javascript]] — trace passo a passo do desenrolar da call stack em fatorial e Fibonacci recursivos
+- [[wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization]] — call stack como estrutura de dados alocável manualmente; leitura de assembly (`call` vs. `jump`)

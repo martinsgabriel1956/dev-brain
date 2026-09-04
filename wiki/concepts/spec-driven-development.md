@@ -3,8 +3,8 @@ type: concept
 title: "Spec-Driven Development"
 aliases: ["SDD", "spec driven", "desenvolvimento orientado a especificação", "planning-first"]
 date_created: 2026-06-02
-date_updated: 2026-08-27
-source_count: 20
+date_updated: 2026-09-03
+source_count: 21
 tags: [spec-driven, planejamento, ia-para-devs, harness, agente, qualidade, loop-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -96,6 +96,10 @@ A spec não é uma "living documentation" permanente. É produzida para guiar um
 
 Na fase de execução, o agente pode ler o breakdown de tasks e despachar autonomamente [[wiki/concepts/subagentes|múltiplos subagentes]] em paralelo — um por grupo de tasks que não têm dependência entre si — em vez de executar tudo sequencialmente na mesma janela de contexto. Exemplo de campo: um projeto de ~40 tasks teve fase de research feita via subagentes e fase de implementação com 4 subagentes rodando em paralelo, cada um cobrindo um subconjunto de tasks identificado no breakdown como paralelizável. Ver [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]].
 
+## Quantos Subagentes Usar na Execução: Benchmark de Granularidade
+
+Complementando a seção anterior, [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] testa quantos subagentes usar ao executar o breakdown de tasks de uma spec TLC Spec Driven — não só *se* paralelizar. Benchmark com a mesma spec de 17 tasks em quatro configurações mostra que **um subagente por task (granularidade máxima) é estritamente pior** que não usar subagente nenhum (tempo, custo em tokens e nota de qualidade todos piores), enquanto agrupar tasks relacionadas em poucos subagentes coesos (3, no caso testado) iguala ou supera o desempenho de um agente único, com a vantagem extra de terminar com a janela de contexto do principal muito mais livre para correções. Ver detalhamento completo em [[wiki/concepts/subagentes]].
+
 ## Estado: Registro de Decisões Pós-Planejamento
 
 Distinto da spec (o que fazer) e do design (como), um projeto spec-driven também produz um artefato de **estado**, que registra as decisões tomadas pelo agente *durante* a execução (não durante o research). Serve para dar continuidade quando o trabalho precisa ser retomado numa janela de contexto nova — "continua o projeto tal" funciona porque o estado documenta o porquê das decisões já tomadas — e para permitir que o trabalho seja fatiado em múltiplos pull requests sem perder rastreabilidade. É um artefato complementar à [[wiki/concepts/memoria-de-longo-prazo-ia|memória de longo prazo]] (que salva o *research*, antes da implementação começar): o estado salva o que aconteceu *depois*.
@@ -177,3 +181,4 @@ O ponto não invalida SDD como definido acima (spec como contrato de execução,
 - [[wiki/sources/spec-writer-skill-criterios-de-boa-spec]] — skill "Spec Writer" (6 etapas) e framework de 7 critérios de validação de spec (falseabilidade, comportamento, invariantes, edge cases, fronteira, inputs/restrições, decisões de negócio)
 - [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — reafirma a tese central (spec como fonte de verdade) num panorama mais amplo de vocabulário técnico de 2026; menção ao Spec Kit do GitHub sem detalhe novo além do já registrado na tabela de ferramentas acima
 - [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] — critério objetivo "um teste automático sabe dizer se ficou pronto?" para decidir entre spec+revisão e loop autônomo; ritmo "spec de dia, loop de noite"
+- [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] — benchmark de granularidade de subagentes na execução do breakdown de tasks: 1 por task piora tudo; agrupamento coeso (sweet spot de 3) iguala ou supera 1 agente único

@@ -3,8 +3,8 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-08-27
-source_count: 27
+date_updated: 2026-09-03
+source_count: 28
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack, memory-layers]
 skill: tech-mentor-ai
 status: stable
@@ -110,6 +110,10 @@ Guia oficial publicado pela Anthropic definindo quatro níveis de autonomia para
 
 [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] cita Dario Amodei (CEO da Anthropic) tendo previsto, cerca de dois anos antes do vídeo, que em ~6 meses os programadores deixariam de escrever código manualmente — previsão que virou piada recorrente na época ("estamos a um mês de seis meses de não precisar mais escrever código"). A fonte argumenta que a previsão errou o prazo por cerca de 8-12 meses, não a tese: no momento do vídeo, relata staff engineers/tech leads/sêniores de grandes empresas não escrevendo código manualmente há meses. Hipótese não verificada da mesma fonte: labs como a Anthropic teriam acesso interno a modelos mais avançados (citada a geração "Opus 4.7/4.8") meses antes do público, o que explicaria por que a previsão pareceu exagerada no momento em que foi feita. Não há confirmação independente nem da declaração original de Amodei nem da hipótese de acesso antecipado — tratar como não verificado até fonte primária.
 
+## Pesquisa Citada (Sem Link) Sobre Custo de Multi-Agente
+
+[[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] cita, de memória e sem link direto, uma pesquisa da Anthropic que reportaria custo até 15× maior com sistemas multi-agente, mas resposta melhor em 90% dos casos frente a um agente único rodando por muito tempo. Confiança baixa: nem o número nem a metodologia da pesquisa foram conferidos contra a publicação original nesta ingestão; o próprio autor da fonte especula, sem testar, que a causa do custo alto seria falta de agrupamento coeso de tasks entre os subagentes — hipótese não verificada. Candidato a fonte própria se a pesquisa original for localizada.
+
 ## Key Sources
 
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — previsão de Dario Amodei sobre fim do código manual em ~6 meses, e hipótese não verificada de acesso interno antecipado a modelos mais avançados
@@ -120,6 +124,7 @@ Guia oficial publicado pela Anthropic definindo quatro níveis de autonomia para
 - [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/custo-tokens-portugues-vs-ingles]]
+- [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] — pesquisa interna citada de segunda mão sobre custo 15× maior com multi-agente vs. 90% de respostas melhores; sem link, confiança baixa
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — claim não verificado de mudança de tokenizer no Sonnet 5; contexto do Departamento de Guerra dos EUA na crítica do CEO da Palantir
 - [[wiki/sources/tokens-llm-fundamentos-typescript]]
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]

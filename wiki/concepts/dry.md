@@ -3,8 +3,8 @@ type: concept
 title: "DRY (Don't Repeat Yourself)"
 aliases: ["dry principle", "não se repita", "duplicação de código"]
 date_created: 2026-08-18
-date_updated: 2026-08-18
-source_count: 1
+date_updated: 2026-09-03
+source_count: 2
 tags: [dry, code-smells, duplicacao, abstracao, under-engineering, yagni]
 skill: tech-mentor-backend
 status: stub
@@ -33,6 +33,10 @@ O código duplicado costuma continuar compreensível e testável isoladamente �
 
 Extrair uma função auxiliar central (ex.: um helper de request HTTP que valida status e faz parsing) e reutilizá-la nos pontos que hoje duplicam a lógica — sem tentar abstrair preventivamente tudo que *poderia* se repetir no futuro. Mesmo depois de abstrair, evitar detalhes "mágicos" hard-coded (ex.: URL de API direto no código) — preferir variável de ambiente ou, no mínimo, uma constante nomeada (ver [[wiki/concepts/naming]]).
 
+## Monolito Facilita DRY por Chamada de Função Direta
+
+[[wiki/sources/arquitetura-monolitica-vantagens-desvantagens]] ilustra o caso mais simples de eliminar duplicação: numa aplicação [[wiki/concepts/monolito|monolítica]], uma classe única (ex.: "produtos") é compartilhada por chamada de função direta entre os módulos de estoque, vendas e relatórios — atualizar a classe num só lugar propaga a mudança automaticamente para todos. A fonte contrasta isso com microsserviços, onde reduzir duplicação equivalente exige mecanismos adicionais (contrato de API, client library versionada) em vez de reuso direto de código no mesmo processo.
+
 ## Relacionado
 
 [[wiki/concepts/code-smells]] · [[wiki/concepts/yagni]] · [[wiki/concepts/naming]] · [[wiki/concepts/refatoracao]]
@@ -40,3 +44,4 @@ Extrair uma função auxiliar central (ex.: um helper de request HTTP que valida
 ## Key Sources
 
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]]
+- [[wiki/sources/arquitetura-monolitica-vantagens-desvantagens]] — exemplo de reuso via classe compartilhada num monolito, contrastado com a dificuldade equivalente em microsserviços
