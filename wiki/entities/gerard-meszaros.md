@@ -4,7 +4,7 @@ title: "Gerard Meszaros"
 aliases: ["Meszaros", "xUnit Test Patterns author"]
 date_created: 2026-07-19
 date_updated: 2026-09-04
-source_count: 24
+source_count: 32
 tags: [testes, autor, test-doubles, xunit, taxonomia]
 skill: tech-mentor-testing
 status: draft
@@ -44,6 +44,7 @@ Além de ser a fonte da taxonomia relatada por Fowler, Meszaros é creditado com
 - [[wiki/sources/test-automater-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição de "test automater": a pessoa/papel do projeto que constrói os testes, distinta do "subject matter expert" que define quais testes devem existir
 - [[wiki/sources/test-case-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição de "test case": sinônimo de test, mas também nomeia a Testcase Class (Test Suite Factory que agrupa Test Methods)
 - [[wiki/sources/fixture-setup-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição de "fixture setup" e "test fixture"/"test context"
+- [[wiki/sources/emergent-design-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição de "emergent design" — o oposto formal de BDUF (Big Design, Up Front)
 - [[wiki/sources/test-fixture-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição do próprio termo "test fixture"/"test context" e a nuance de que JUnit o mantém separado da Testcase Class que o cria
 - [[wiki/sources/xunit-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição formal do próprio termo "xUnit" (padrão baseado em JUnit ou SUnit)
 - [[wiki/sources/test-double-martin-fowler]] — fonte secundária que popularizou e atribuiu a taxonomia a ele
@@ -56,3 +57,10 @@ Além de ser a fonte da taxonomia relatada por Fowler, Meszaros é creditado com
 - [[wiki/sources/jmock]] — primeira entrada da categoria "Tools" do site ingerida na wiki: descreve o [[wiki/entities/jmock]] como framework de Mock Object para Java, com destaque para a Configuration Interface fluente
 - [[wiki/sources/utwhcm-xunitpatterns]] — primeira entrada da categoria "References" (bibliografia) do site ingerida na wiki: verbete de citação ao artigo externo de Sven Gorts sobre mocks construídos à mão
 - [[wiki/sources/decorator-xunitpatterns]] — primeira entrada da categoria "External Patterns" do site ingerida na wiki: verbete curto que cita a definição original do GOF para o Decorator, sem elaboração própria de Meszaros
+- [[wiki/sources/test-driven-development-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição formal do próprio termo "test-driven development": distingue TDD de test-first development e cunha o termo emergent design
+- [[wiki/sources/test-first-development-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição formal do próprio termo "test-first development": fecha com fonte primária dedicada a distinção com TDD e acrescenta a aplicação em dois níveis (unit test / customer test)
+- [[wiki/sources/bduf-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição do próprio termo "BDUF" (Big Design, Up Front): fecha o par de contraste com [[wiki/sources/emergent-design-xunitpatterns]], ambos agora com fonte primária dedicada
+- [[wiki/sources/storytest-driven-development-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição formal do próprio termo "storytest-driven development" (STDD): fecha a lacuna deixada pelos verbetes de TDD e test-first, que só citavam o termo por contraste; atribui a cunhagem a Joshua Kerievsky (Industrial XP)
+- [[wiki/sources/ixp-industrial-xp-xunitpatterns]] — verbete de glossário da seção References do mesmo site, isolando a definição do próprio termo "Industrial XP" (IXP): variante de marca do XP para escalar em empresas maiores, criada por Joshua Kerievsky
+- [[wiki/sources/test-context-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição do próprio termo "test context": mesma equivalência a test fixture, com o dado novo de que o RSpec usa esse nome literalmente e um exemplo de código do Four-Phase Test
+- [[wiki/sources/rspec-xunitpatterns]] — verbete da categoria "xUnit Members" do mesmo site, dedicado ao framework RSpec: nova geração de membros do xUnit para "Tests as Specification", mapeamento completo de vocabulário e JBehave como equivalente Java

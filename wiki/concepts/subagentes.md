@@ -3,8 +3,8 @@ type: concept
 title: "Subagentes"
 aliases: ["subagents", "sub-agentes", "Task tool", ".claude/agents"]
 date_created: 2026-07-03
-date_updated: 2026-09-03
-source_count: 7
+date_updated: 2026-09-04
+source_count: 8
 tags: [subagentes, claude-code, multi-agent, paralelismo, context-engineering, harness, list-agents, mensagens-cruzadas]
 skill: tech-mentor-ai
 status: draft
@@ -96,6 +96,16 @@ Já um agrupamento coeso em poucos subagentes (3, neste caso, agrupando ~6 tasks
 3. **Tarefas pequenas e fortemente acopladas** → manter na mesma janela, monitorando o quanto ela enche.
 4. **Trabalho paralelizável** → subagentes ganham velocidade, mas de novo sem fragmentar demais.
 
+## Agent Waves e Roteamento por Papel: Modelo Forte no Coordenador, Modelo Fraco nos Workers
+
+[[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] batiza de "Agent Waves" o mesmo Padrão Orquestrador já descrito acima (coordenador quebra a tarefa em subtarefas paralelizáveis, workers executam) — nome novo para técnica já praticada pela comunidade — e acrescenta um eixo de otimização de custo distinto de granularidade: **qual modelo cada papel do pipeline usa**, não quantos subagentes existem.
+
+A regra proposta: o coordenador (que pesquisa, planeja, quebra a tarefa e decide) usa o modelo mais forte/caro disponível (no caso testado, Kimi K3); uma vez a tarefa bem especificada, a implementação em si é delegada a um modelo mais barato (Kimi K2.7 Code, ~3× a 10× mais barato dependendo do regime de cache). **Alerta central da fonte:** se todos os subagentes de um Agent Wave usarem o mesmo modelo caro, a paralelização só aumenta custo — porque cada subagente novo reinjeta contexto do zero, consumindo mais tokens de input que um agente único faria sozinho; esse overhead de tokens só compensa em custo total se cair no preço do modelo barato.
+
+Uma simulação simples projetou ~34% de economia (R$110 → R$73/mês) usando essa segregação de papel, mas um teste real na API da Kimi via [[wiki/entities/opencode|OpenCode]], na mesma tarefa (pequena, um preview de e-mail num painel admin), só confirmou a direção do efeito com ~5% de economia — o autor atribui a discrepância ao tamanho pequeno da tarefa testada (overhead de tokens extra consome proporcionalmente mais da economia potencial) e a uma implementação deliberadamente não estruturada do Agent Wave (só um prompt pedindo para "planejar e delegar", sem pipeline de orquestração real), sem confirmar qual dos dois fatores pesa mais.
+
+Isso é complementar, não substituto, ao benchmark de granularidade da seção anterior: aquele benchmark não distingue modelo do coordenador vs. modelo dos workers (aparentemente usa o mesmo modelo em todos os subagentes), enquanto esta fonte isola exatamente essa variável.
+
 ## Key Sources
 
 - [[wiki/sources/graph-engineering-matematica-do-erro-composto]] — organização típica organizador/researchers/builders/reviewers, arestas decidindo dependência entre subagentes
@@ -105,3 +115,4 @@ Já um agrupamento coeso em poucos subagentes (3, neste caso, agrupando ~6 tasks
 - [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — 4 subagentes em paralelo despachados a partir do breakdown de tasks de uma spec
 - [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — gestão de projeto (épico → história → tarefa → subtarefa com dependências cruzadas) como exemplo de como decidir quantos subagentes podem rodar em paralelo sem se bloquear, mesmo antes de qualquer agente de IA entrar no processo
 - [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] — benchmark de campo com 4 cenários de granularidade (sem subagente, 1 por task, agrupado por fase, sweet spot de 3): granularidade excessiva piora tempo, custo e qualidade ao mesmo tempo; agrupamento coeso iguala ou supera 1 agente único com janela final muito mais livre
+- [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] — "Agent Waves" (rebatismo do Padrão Orquestrador) + roteamento por papel (coordenador forte, workers baratos) como alavanca de custo ortogonal à granularidade; simulação projeta ~34% de economia, teste real só confirma ~5%

@@ -3,8 +3,8 @@ type: concept
 title: "Pirâmide de Testes"
 aliases: ["test pyramid", "ice cream cone", "testing trophy", "estratégia de testes"]
 date_created: 2026-04-22
-date_updated: 2026-09-02
-source_count: 14
+date_updated: 2026-09-04
+source_count: 17
 tags: [testes, pirâmide, estratégia, unitário, integração, e2e, projetos-novos]
 skill: tech-mentor-testing
 status: stable
@@ -149,9 +149,15 @@ Nessa leitura, o teste de maior valor por unidade de custo tende a ser um teste 
 
 Fonte primária isolada: [[wiki/sources/customer-test-xunitpatterns]] (verbete de glossário de Gerard Meszaros). O topo da pirâmide — E2E/aceitação — corresponde ao que o glossário xUnitPatterns.com chama de **customer test**: teste da funcionalidade *visível* do sistema, com o SUT sendo a aplicação inteira ou um módulo funcional de ponta a ponta. A fonte acrescenta um critério que a pirâmide, por si só, não formaliza: um customer test deveria ser **independente das decisões de design internas ao SUT** — o mesmo conjunto de testes de aceitação deveria valer não importa como o sistema é construído por dentro, ainda que a arquitetura de alto nível possa mudar *como* o teste interage com o SUT (ex.: via UI vs. via API).
 
+## Test-first pode operar no nível de customer test, não só de unit test
+
+Fonte primária: [[wiki/sources/test-first-development-xunitpatterns]] (verbete de glossário de Gerard Meszaros). O verbete de [[wiki/concepts/test-first-development]] esclarece que a prática de escrever o teste antes do código de produção não é exclusiva da base da pirâmide (unit test) — pode ser aplicada também no topo, no nível de customer test, dependendo de quais testes o time escolhe automatizar. Isso é exatamente a definição de [[wiki/concepts/storytest-driven-development]] — confirmado por [[wiki/sources/storytest-driven-development-xunitpatterns]], que fecha essa relação antes só suspeita.
+
 ## Key Sources
 
 - [[sources/piramide-de-testes]]
+- [[wiki/sources/test-first-development-xunitpatterns]] — fonte primária: test-first development pode ser aplicado no nível de customer test (topo), não só unit test (base)
+- [[wiki/sources/storytest-driven-development-xunitpatterns]] — fonte primária: STDD é a prática de test-first no nível de customer test (topo da pirâmide), garantindo que a integração das unidades produza um todo utilizável
 - [[wiki/sources/customer-test-xunitpatterns]] — fonte primária isolada do termo "customer test": nome formal do topo da pirâmide, com o critério de independência das decisões de design do SUT
 - [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — testes automatizados reclassificados como requisito que ficou mais importante (não só mantido) na progressão de pleno, junto de tooling avançado
 - [[sources/roadmap-dev-senior-2026]] — testes como seguro contra decisões ruins da IA (pilar 5)
@@ -166,3 +172,4 @@ Fonte primária isolada: [[wiki/sources/customer-test-xunitpatterns]] (verbete d
 - [[wiki/sources/test-xunitpatterns]] — fonte primária isolada do termo genérico "test": todas as camadas da pirâmide são instâncias deste conceito elementar
 - [[wiki/sources/test-case-xunitpatterns]] — fonte primária isolada de "test case": além de sinônimo de test, nomeia a Testcase Class — a unidade estrutural de código (Test Suite Factory) que agrupa Test Methods de qualquer camada da pirâmide
 - [[wiki/sources/test-fixture-xunitpatterns]] — fonte primária isolada de "test fixture"/"test context": tudo que precisa estar em vigor para o teste rodar, independentemente da camada da pirâmide; configurá-lo é a primeira fase do Four-Phase Test
+- [[wiki/sources/test-context-xunitpatterns]] — fonte primária isolada do próprio termo test context, com exemplo de código do Four-Phase Test e o dado de que o RSpec usa esse nome literalmente

@@ -3,8 +3,8 @@ type: concept
 title: "Extreme Programming (XP)"
 aliases: ["xp", "programação extrema"]
 date_created: 2026-08-23
-date_updated: 2026-09-02
-source_count: 4
+date_updated: 2026-09-04
+source_count: 5
 tags: [extreme-programming, kent-beck, agile, historia, craftsmanship]
 skill: tech-mentor-testing
 status: stub
@@ -30,6 +30,10 @@ Fonte primária isolada: [[wiki/sources/unit-test-xunitpatterns]] (verbete de gl
 
 Fonte primária isolada: [[wiki/sources/extreme-programming-xunitpatterns]] (verbete de glossário de Gerard Meszaros). A definição mais enxuta já registrada para XP nesta wiki — uma única frase: "uma metodologia ágil de desenvolvimento de software que destaca pair programming, testes unitários automatizados e iterações curtas". Não cita TDD como ciclo, não cita planning game, refatoração contínua nem YAGNI — reforça, por contraste, o quanto o restante desta página (via Fowler) é mais rico que o vocabulário puro de glossário do site.
 
+## Industrial XP (IXP): variante de marca para escalar XP em empresas maiores
+
+Fonte primária isolada: [[wiki/sources/ixp-industrial-xp-xunitpatterns]] (verbete de glossário de Gerard Meszaros, seção References). **Industrial XP (IXP)**, criada por [[wiki/entities/joshua-kerievsky]], é uma variante "de marca" do XP clássico que acrescenta práticas para escalar sua adoção em empresas de maior porte — a fonte cita **Project Chartering** como exemplo. IXP é também o contexto em que Kerievsky cunhou [[wiki/concepts/storytest-driven-development]], termo já registrado nesta wiki, mas que até esta ingestão não tinha uma página própria para IXP nem para seu criador. Ver [[wiki/concepts/industrial-xp]].
+
 ## Relação com práticas específicas já documentadas nesta wiki
 
 - [[wiki/concepts/tdd]] — ciclo RED-GREEN-REFACTOR, uma das práticas centrais da XP
@@ -50,3 +54,4 @@ Fonte primária isolada: [[wiki/sources/extreme-programming-xunitpatterns]] (ver
 - [[wiki/sources/very-low-defect-project-martin-fowler]] — adoção séria de XP correlaciona com taxas de defeito muito baixas, sem ser garantia
 - [[wiki/sources/unit-test-xunitpatterns]] — fonte primária dos sinônimos "developer test"/"programmer test" para unit test em XP
 - [[wiki/sources/extreme-programming-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição mais genérica do próprio termo "eXtreme Programming"
+- [[wiki/sources/ixp-industrial-xp-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição de Industrial XP (IXP) como variante de escala do XP, criada por Joshua Kerievsky

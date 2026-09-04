@@ -3,7 +3,7 @@ type: source
 title: "Test Fixture (in xUnit) (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["test fixture", "test context", "fixture de teste", "xunit patterns glossary test fixture"]
 date_created: 2026-08-31
-date_updated: 2026-08-31
+date_updated: 2026-09-04
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/test-fixture-xunitpatterns.md
 source_url: "http://xunitpatterns.com/test%20fixture%20-%20xUnit.html"
 author: "Gerard Meszaros"
@@ -63,6 +63,7 @@ Reforça, de fonte primária dedicada ao termo "test fixture" (não só à fase 
 - A fonte não nomeia quais variantes de xUnit **não** se enquadram no grupo "JUnit e ports diretos" — ou seja, quais frameworks fundem test context e Testcase Class num único objeto persistente. Sem essa lista, não é possível confirmar empiricamente o contraste (apenas que ele existe, segundo Meszaros).
 - **Four-Phase Test** segue sem fonte primária isolada na wiki — citado de passagem aqui e em [[wiki/sources/fixture-setup-xunitpatterns]], mas nunca como verbete próprio. Candidato natural para a próxima ingestão do mesmo cluster xUnitPatterns.com (a página `Four Phase Test.html` já é referenciada indiretamente por ambas as fontes).
 - A página remete a um verbete de desambiguação ("test fixture (disambiguation)") para outros sentidos do termo em ferramentas fora do xUnit (ex.: FIT) — não ingerido; fora do escopo desta sessão.
+- ~~O verbete dedicado ao próprio termo "test context" (citado aqui só como sinônimo, "some people call this the test context") não tinha fonte primária isolada~~ — **corrigido**: ver [[wiki/sources/test-context-xunitpatterns]], que formaliza o termo e acrescenta que o RSpec o usa literalmente como nome ("context"), além de um exemplo de código do Four-Phase Test.
 
 ---
 

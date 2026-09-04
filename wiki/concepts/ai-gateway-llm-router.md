@@ -3,8 +3,8 @@ type: concept
 title: "AI Gateway / LLM Router (Proxy Multi-Provider)"
 aliases: ["ai gateway", "llm gateway", "proxy multi-provider", "litellm", "portkey"]
 date_created: 2026-08-05
-date_updated: 2026-08-14
-source_count: 2
+date_updated: 2026-09-04
+source_count: 3
 tags: [tech-mentor-ai, ai-gateway, llm-router, proxy-pattern, fallback, multi-provider]
 skill: tech-mentor-ai
 status: stub
@@ -50,6 +50,8 @@ Escalar uma aplicação com IA exige balancear um trade-off entre três eixos �
 
 O modelo mais barato nem sempre serve para toda parte de um sistema. Uma pipeline pode usar **dois ou três modelos diferentes** em chamadas separadas dentro de um único processo, e isso acaba sendo mais rápido e mais barato do que depender de um único modelo mais lento e caro para tudo — cada modelo é otimizado para um ponto diferente do triângulo.
 
+**Caso concreto medido (não só teórico):** [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] testa esse trade-off dentro de um único pipeline multiagente — modelo forte (Kimi K3) restrito ao papel de coordenador/planejamento, modelo mais barato (Kimi K2.7 Code) nos workers de implementação, via [[wiki/concepts/subagentes|Agent Waves]]. A economia projetada numa simulação (~34%) só se confirmou parcialmente num teste real (~5%) na mesma tarefa — atribuído ao overhead de tokens de input que a própria paralelização gera (cada subagente reinjeta contexto do zero), que precisa cair no preço do modelo barato para compensar.
+
 ## Alavancas Concretas de Custo
 
 - Distinguir **input tokens** vs. **output tokens** e limites por modelo
@@ -63,3 +65,4 @@ O modelo mais barato nem sempre serve para toda parte de um sistema. Uma pipelin
 
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]]
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — triângulo performance/custo/qualidade, uso de múltiplos modelos por pipeline, e alavancas concretas de controle de custo (tokens, cache, truncamento, sumarização, teste A/B)
+- [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] — caso medido de modelo forte/coordenador + modelo barato/worker num único pipeline multiagente

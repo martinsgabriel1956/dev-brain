@@ -3,8 +3,8 @@ type: concept
 title: "MVP (Minimum Viable Product)"
 aliases: ["mvp", "produto mínimo viável", "minimum viable product"]
 date_created: 2026-04-29
-date_updated: 2026-09-02
-source_count: 8
+date_updated: 2026-09-04
+source_count: 9
 tags: [projetos, produtividade, entrega, planejamento, carreira, startup]
 skill: tech-mentor-leadership
 status: stable
@@ -62,6 +62,10 @@ Em [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]], o autor argu
 
 [[wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub]] aplica o conceito de MVP fora do contexto de startup/mercado: um app de clima cuja v1 inteira é "(1) buscar dados de uma API, (2) mostrar os dados" já conta como MVP completo se cobre exatamente a lacuna de aprendizado que o autor queria preencher (consumir API, renderizar dados). O critério de "mínimo" aqui não é "resolve o problema central de um usuário real" (definição de mercado usada no restante desta página), mas "cobre o objetivo de aprendizado que motivou o projeto" — ver [[wiki/concepts/necessidade-como-gatilho-de-aprendizado]] para o mecanismo por trás dessa variante.
 
+## MVP Como Ferramenta de Descoberta de Escopo com Cliente Externo
+
+[[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]] descreve uma terceira variante de MVP, além das já cobertas nesta página (validação de mercado, aprendizado pessoal): o MVP **integrado** entregue o quanto antes a um cliente pagante externo em um projeto de consultoria/implementação de IA, especificamente para expor divergências de escopo que só se revelam quando o cliente vê e testa o produto funcionando. Diferente do MVP de startup (validar hipótese de mercado), aqui o objetivo é gerenciar expectativa e prevenir o padrão "cliente empolgado no início, insatisfeito no fim" — ver [[wiki/concepts/gerenciamento-de-expectativa-em-servicos-de-ia]].
+
 ## Ver Também
 
 - [[concepts/scope-creep]] — inimigo principal do MVP
@@ -82,3 +86,4 @@ Em [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]], o autor argu
 - [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — MVP jogável (jogo de golfe na Unreal) construído por vibe coding em 3 prompts; [[wiki/concepts/estagios-de-maturidade-de-produto|estágio 1]] é "um estranho consegue usar"
 - [[wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub]] — variante de MVP de aprendizado pessoal, sem mercado nem usuário real: "mínimo" medido pela lacuna de conhecimento preenchida, não por validação de hipótese de negócio
 - [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]] — gargalo do MVP mudou de "programar" para "validar" com IA; estudos GitHub (2022) e Y Combinator sobre ganho de velocidade
+- [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]] — MVP integrado como ferramenta de descoberta de escopo em serviços de IA para cliente externo

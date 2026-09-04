@@ -3,8 +3,8 @@ type: concept
 title: "Soft Skills Como Diferencial de Pleno"
 aliases: ["não seja um idiota", "soft skill como único diferencial", "reclassificação de soft skills"]
 date_created: 2026-08-19
-date_updated: 2026-08-19
-source_count: 1
+date_updated: 2026-09-04
+source_count: 2
 tags: [carreira, pleno, soft-skills, ia-para-devs, senioridade]
 skill: tech-mentor-leadership
 status: stub
@@ -32,6 +32,11 @@ Diferente de outras teses já registradas na wiki sobre comoditização por IA (
 - [[wiki/concepts/engenheiro-vs-programador]] — julgamento/colaboração como o que sobra quando execução é comoditizada
 - [[wiki/concepts/apagao-de-seniors]] — risco simétrico: se ninguém aprende fundamentos técnicos, soft skills sozinhas não sustentam um pleno capaz de revisar código gerado por IA
 
+## Mesma Tese, Contexto de Seleção Entre Humanos
+
+[[wiki/sources/como-se-comportar-na-entrevista-de-system-design-tier-s]] chega a uma conclusão estruturalmente idêntica por um caminho diferente: não é comparação humano vs. IA, é seleção entre candidatos humanos igualmente preparados tecnicamente para uma vaga Tier S. Ali, o comportamental (comunicar raciocínio, receber feedback sem defensividade, colaborar em vez de monologar) é o que resta como diferencial quando o técnico é *commodity entre os candidatos*, não porque a IA o tenha absorvido. As duas fontes convergem no "o que resta quando o técnico deixa de diferenciar", mas por mecanismos distintos — vale manter a distinção explícita em vez de tratar como a mesma evidência.
+
 ## Key Sources
 
 - [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — origem da tese; autocorreção do próprio autor sobre uma lista de 13 itens de 4 anos antes
+- [[wiki/sources/como-se-comportar-na-entrevista-de-system-design-tier-s]] — mesma conclusão (comportamental como diferencial real), mecanismo distinto: seleção entre candidatos humanos, não comoditização por IA

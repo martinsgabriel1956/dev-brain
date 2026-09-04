@@ -3,8 +3,8 @@ type: concept
 title: "Portfólio Backend Júnior"
 aliases: ["portfólio primeira vaga", "diferenciais backend junior", "primeira vaga backend"]
 date_created: 2026-04-25
-date_updated: 2026-08-17
-source_count: 6
+date_updated: 2026-09-04
+source_count: 7
 tags: [carreira, backend, junior, portfolio]
 skill: tech-mentor-leadership
 status: stable
@@ -65,6 +65,10 @@ Em processo real de triagem de currículos júnior, dois filtros vêm antes de q
 
 [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] reforça o mesmo princípio pela ótica de quem monta o portfólio, não de quem o avalia: o autor relata ter estudado por conta própria tema por tema alinhado a requisitos reais de vaga, construindo uma aplicação completa para ter "o que falar" em entrevista, mesmo antes de qualquer experiência profissional. A dica que ele destaca: mais projetos no GitHub demonstram vontade de aprender, autonomia e capacidade de resolver problemas — o que pesa na entrevista mesmo sem vínculo empregatício formal por trás do projeto.
 
+## Comparação Entre Candidatos Reais: Trajetória + Projetos > Formatação de Currículo
+
+[[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] compara três currículos júnior reais aplicados a uma mesma vaga (Node/TypeScript/Java/React/AWS/Terraform) e observa que o candidato com a trajetória mais elogiada (empresa júnior → estágio → estágio, em ~2 anos) não foi o de melhor formatação de currículo, e sim o único com **três projetos pessoais documentados** (link, ferramentas, data), incluindo o projeto final do curso [[wiki/concepts/cs50]]. Nos três candidatos, o gap comum para a vaga-alvo específica foi o mesmo: Java e Terraform apareciam como "habilidade" listada, mas sem nenhum projeto, curso ou experiência que evidenciasse o uso real — reforçando que portfólio (evidência) supera lista de habilidades (promessa) mesmo dentro do próprio documento de currículo.
+
 ## Tensão: o Checklist Ainda Diferencia Se a IA Barateou o SaaS Funcional?
 
 [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] argumenta que gerar um SaaS funcional deixou de provar competência por si só, já que a IA barateou a produção do artefato — ver detalhamento em [[wiki/concepts/curriculo-vs-portfolio]]. Isso reforça, e não contradiz, o checklist desta página: os itens listados (testes, SQL além do básico, observabilidade, error handling) são justamente o que a IA não gera bem sozinha e o recrutador leigo não sabe avaliar de olhar rápido — a tensão é sobre o que basta *mostrar* (rodar bonito na tela), não sobre o que basta *ter*.
@@ -77,3 +81,4 @@ Em processo real de triagem de currículos júnior, dois filtros vêm antes de q
 - [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]
 - [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]] — triagem de currículos reais confirmando GitHub/portfólio como filtro eliminatório, não apenas diferencial
 - [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] — estratégia de implementar sozinho uma feature da empresa-alvo
+- [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — comparação de três currículos reais: trajetória + projetos pessoais documentados venceu formatação de currículo na avaliação

@@ -40,4 +40,4 @@ Vector Clocks resolvem o rastreamento de causalidade em sistemas distribuídos s
 - [[conflict-resolution]]
 - [[crdt]]
 - [[eventual-consistency]]
-- [[last-write-wins]]
+- [[wiki/concepts/last-write-wins]]

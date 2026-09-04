@@ -3,8 +3,8 @@ type: concept
 title: "Comunicação Técnica"
 aliases: ["comunicação", "comunicação efetiva", "tradução técnica", "emissor receptor"]
 date_created: 2026-04-23
-date_updated: 2026-09-03
-source_count: 6
+date_updated: 2026-09-04
+source_count: 7
 tags: [carreira, comunicação, liderança, soft-skills]
 skill: tech-mentor-leadership
 status: stable
@@ -54,9 +54,14 @@ O princípio "tradução é responsabilidade de quem emite" tem uma aplicação 
 
 [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] (Hábito 10, "Ouvir ativamente") nomeia um equívoco comum: acreditar que se deve **ouvir para responder**, quando na verdade o objetivo é **ouvir para entender**. "Qualquer um consegue responder, poucos conseguem entender." A fonte aplica isso especificamente a conflitos de hierarquia assimétrica no trabalho — é fácil, tendo mais autoridade numa conversa difícil, mostrar impaciência e querer demonstrar poder; e é fácil, tendo menos autoridade, parar de prestar atenção ou colocar a culpa no outro lado. A recomendação prática: em reuniões, praticar deliberadamente ser o último a falar, deixando todos os outros compartilharem suas ideias primeiro — isso dá a sensação de serem ouvidos e garante que você ouviu todas as ideias antes de formar a sua opinião. Isso reforça, de um ângulo diferente, o mesmo princípio central desta página: comunicação efetiva não é sobre transmitir bem — é sobre garantir que a mensagem foi recebida (aqui, na direção inversa: garantir que você recebeu a mensagem do outro antes de emitir a sua).
 
+## Aplicação ao Texto Escrito de Currículo
+
+[[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] aplica o mesmo princípio ("a tradução é responsabilidade de quem emite") ao texto de um currículo: bullet points vagos ("liderei o desenvolvimento de novas funcionalidades em projetos estratégicos") exigem que quem lê preencha as lacunas de contexto — tecnologia usada, resultado alcançado — o que é o candidato falhando em fazer a tradução na ponta de saída. Ver [[wiki/concepts/metodo-star-bullet-points]] para o framework concreto de reescrita.
+
 ## Ver também
 
 - [[concepts/abrangencia-profissional]] — pré-requisito para comunicação cross-domain
+- [[wiki/concepts/metodo-star-bullet-points]] — aplicação do princípio de comunicação efetiva a bullet points de currículo
 - [[concepts/profundidade-e-maestria]] — profundidade sem comunicação fica presa na cabeça
 - [[entities/randy-nelson]] — origem do framework
 - [[wiki/concepts/comunicacao-persuasiva]] — aplicação tática do mesmo princípio: traduzir para a linguagem de quem decide, não para o próprio jargão
@@ -70,3 +75,4 @@ O princípio "tradução é responsabilidade de quem emite" tem uma aplicação 
 - [[wiki/sources/3-pilares-testes-automatizados-produtividade]] — técnica de repetir de volta o entendimento da tarefa antes de implementar, para evitar retrabalho
 - [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — Hábito 10, "ouvir para entender vs. ouvir para responder" em conversas de hierarquia assimétrica
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — numa entrevista de arquitetura o produto entregue é o racional justificado, não o diagrama; raciocínio exposto vale mais que velocidade de resposta
+- [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — bullet points vagos de currículo como falha de tradução na ponta de emissão

@@ -3,8 +3,8 @@ type: concept
 title: "BDD — Behavior-Driven Development"
 aliases: ["behavior driven development", "gherkin", "cucumber", "specs executáveis"]
 date_created: 2026-04-22
-date_updated: 2026-08-04
-source_count: 4
+date_updated: 2026-09-04
+source_count: 5
 tags: [testes, bdd, gherkin, cucumber, especificação, living-docs]
 skill: tech-mentor-testing
 status: stable
@@ -83,9 +83,14 @@ Vale notar: BDD é frequentemente citado como boa prática por pessoas que admit
 
 [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] posiciona Gherkin/BDD dentro de uma lista de cinco verificações que [[wiki/entities/uncle-bob]] usa em vez de ler código gerado por agentes (junto com teste unitário, cobertura, [[wiki/concepts/teste-de-mutacao|mutation testing]] e métrica de qualidade). O papel específico atribuído ao Gherkin nessa lista: pega o pior tipo de erro de todos — construir a coisa errada, mesmo que construída certo. Teste unitário confirma que o código faz o que diz que faz; Gherkin confirma que o que ele faz é, de fato, o que deveria ser feito. A fonte também liga isso diretamente a [[wiki/concepts/spec-driven-development]]: escrito antes da implementação, o Gherkin funciona como a spec — a única peça do sistema que o agente não derivou da própria cabeça, usada depois para validar implementação e testes contra a mesma fonte da verdade.
 
+## RSpec como possível precursor terminológico
+
+[[wiki/sources/rspec-xunitpatterns]] descreve o [[wiki/entities/rspec|RSpec]] como um framework de "nova geração" que troca vocabulário de teste por vocabulário de especificação (fixture→context, assert→should) para servir "Tests as Specification" — mesma motivação declarada do BDD, embora a fonte não cite BDD, Gherkin ou Dan North diretamente. **[external]/inferência**: é razoável ler o RSpec como precursor terminológico do BDD formal, mas essa ligação não está confirmada por nenhuma fonte primária ingerida até agora.
+
 ## Key Sources
 
 - [[wiki/sources/bdd]]
+- [[wiki/sources/rspec-xunitpatterns]] — RSpec como precursor terminológico possível ("Tests as Specification"), sem confirmação explícita de ligação com BDD/Gherkin na própria fonte
 - [[wiki/sources/tdd-sdd-bdd-era-ia]] — cobertura mais rasa, autor declara pouca prática com BDD
 - [[wiki/sources/3-pilares-testes-automatizados-produtividade]] — Given/When/Then usado como anotação pessoal de planejamento, fora do contexto formal de BDD
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — Gherkin como o item que pega "construir a coisa errada", e sua função de spec imutável equivalente ao Spec-Driven Development

@@ -3,8 +3,8 @@ type: entity
 title: "Moonshot AI"
 aliases: ["Moonshot", "Kimi"]
 date_created: 2026-07-21
-date_updated: 2026-08-25
-source_count: 4
+date_updated: 2026-09-04
+source_count: 5
 tags: [moonshot, kimi, china, llm, open-source, organização]
 skill: tech-mentor-ai
 status: stub
@@ -34,9 +34,16 @@ Diferente de labs fechados (OpenAI, Anthropic), a Moonshot publica não só o mo
 
 [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] relata o caso de [[wiki/entities/pieter-levels|Pieter Levels]]: o Kimi K3, acessado via [[wiki/entities/opencode|Opencode]] com uma chave de API própria do Kimi Server (~19 USD, upstream — alternativa ao acesso via [[wiki/entities/openrouter|OpenRouter]]), completou uma lista de tarefas de um projeto hobby (simulador de Windows XP) sem o throttling a cada 5 minutos percebido no Claude Code, e sem os bloqueios "por segurança" que levaram o Claude a rebaixar o modelo usado (Opus → Sonnet) na mesma sessão. Ilustra concretamente por que modelos chineses mais permissivos atraem usuários frustrados com [[wiki/concepts/ai-safety-guardrails|guardrails]] agressivos — mesmo quando a tarefa em si é de baixo risco real (hobby pessoal, não produção crítica).
 
+## Kimi K3 (Coordenador) vs. Kimi K2.7 Code (Worker): Preços Internos à Família
+
+[[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] cita preços granulares dos dois modelos da própria Moonshot, usados para justificar uma estratégia de [[wiki/concepts/roteamento-automatico-de-modelo|roteamento por papel]] dentro de um pipeline de [[wiki/concepts/subagentes|Agent Waves]]: **Kimi K3** — US$15/M tokens de output, US$3/M de input em cache miss, US$0,30/M em cache hit; **Kimi K2.7 Code** (modelo específico da Moonshot para código) — US$1,4/M output, US$0,95/M input em cache miss, US$0,19/M em cache hit. Ou seja, dentro da própria família Kimi, o K3 é "o caro" e o K2.7 é "o barato" (diferença de ~3× a ~10× conforme o regime de cache) — contraste interno que complementa a comparação já registrada acima contra o Fable (fonte externa à família). A fonte usa esse contraste para propor: modelo caro (K3) só no coordenador que planeja/decide, modelo barato (K2.7) nos workers de implementação — uma simulação projetou ~34% de economia com essa segregação, mas um teste real na mesma tarefa (pequena) confirmou só ~5%.
+
+A Moonshot também oferece assinatura mensal com créditos inclusos (citada com faixa de alguns dólares a ~US$199/mês), como alternativa ao pagamento por token via API — sem comparação de custo-benefício entre os dois modelos de cobrança na fonte.
+
 ## Key Sources
 
 - [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — Kimi K3 via Opencode/Kimi Server como escape de guardrails agressivos do Claude Code num projeto hobby
 - [[wiki/sources/kimi-k3-china-mercado-ia-open-source]]
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — Kimi como modelo de fallback recomendado por custo-benefício
 - [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — Kimi K3 mais barato que o Fable em benchmark de custo (Cline)
+- [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] — preços de cache hit/miss de K3 vs. K2.7 Code; K3 como coordenador caro, K2.7 como worker barato num pipeline de Agent Waves

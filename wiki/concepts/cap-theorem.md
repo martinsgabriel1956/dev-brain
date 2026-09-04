@@ -3,8 +3,8 @@ type: concept
 title: "Teorema CAP"
 aliases: ["CAP theorem", "CAP", "consistência disponibilidade partição", "PACELC"]
 date_created: 2026-06-26
-date_updated: 2026-07-28
-source_count: 6
+date_updated: 2026-09-04
+source_count: 7
 tags: [system-design, sistemas-distribuidos, cap-theorem, consistencia, disponibilidade]
 skill: tech-mentor-system-design
 status: stub
@@ -67,8 +67,13 @@ A escolha AP do teorema CAP é essencialmente o que [[wiki/concepts/base-basical
 
 Material de prova de concurso costuma ensinar o CAP com categorização fixa por produto, útil para memorização mas simplificada: **CA** (consistência + disponibilidade, sem tolerância a partição) — SGBDR em geral e Neo4j; **CP** — MongoDB, BigTable, HBase, Redis, Memcached; **AP** — CouchDB, DynamoDB, SimpleDB, Cassandra. Vale notar que essa fonte inclui Neo4j como exemplo de CA, o que é uma simplificação: um Neo4j single-instance não enfrenta partição de rede da mesma forma que um cluster distribuído, então classificá-lo no eixo CAP tradicional (pensado para sistemas distribuídos) é didaticamente conveniente mas tecnicamente questionável. Ver [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]].
 
+## Paralelo com Local-First vs Offline-First
+
+[[wiki/sources/local-first-vs-offline-first]] descreve, para arquiteturas de sincronização client-side, um trade-off estruturalmente parecido com CP vs. AP: em [[wiki/concepts/offline-first]] o servidor é a autoridade e a escrita local só é definitiva após aceite remoto (análogo a priorizar consistência); em [[wiki/concepts/local-first]] cada réplica local aceita escritas offline e converge depois (análogo a priorizar disponibilidade). Não é o mesmo teorema (CAP é sobre partição de rede em sistemas distribuídos server-side; local-first é sobre onde reside a autoridade do dado entre cliente e servidor), mas a pergunta de fundo — "se duas cópias divergem, quem tem razão?" — é a mesma forma de decisão.
+
 ## Key sources
 
+- [[wiki/sources/local-first-vs-offline-first]] — paralelo estrutural entre CP/AP e offline-first/local-first
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]] (menção superficial — necessita fonte dedicada)
 - [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] — BASE como formalização prática da escolha AP
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]]

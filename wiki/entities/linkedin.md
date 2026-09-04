@@ -3,8 +3,8 @@ type: entity
 title: "LinkedIn"
 aliases: []
 date_created: 2026-08-24
-date_updated: 2026-08-24
-source_count: 1
+date_updated: 2026-09-04
+source_count: 2
 tags: [plataforma, contratacao, networking, carreira]
 skill: tech-mentor-leadership
 status: stub
@@ -19,3 +19,4 @@ Alvo comum de crítica por conteúdo performático (posts de superação, humild
 ## Key Sources
 
 - [[wiki/sources/duas-perguntas-linkedin-cursos-online-lei-de-sturgeon]] — canal principal de contratação de uma consultoria (700+ contratações/ano) e citado por outros CEOs/CTOs entrevistados informalmente pelo autor como principal canal de contratação inclusive para vagas sênior/liderança
+- [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — vaga fake de desenvolvedor júnior usada como base do exercício de análise de currículo foi retirada de uma publicação real no LinkedIn

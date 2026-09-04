@@ -4,7 +4,7 @@ title: "Test Doubles"
 aliases: ["dublê de teste", "mock stub fake spy", "xunit test patterns"]
 date_created: 2026-04-22
 date_updated: 2026-09-04
-source_count: 23
+source_count: 24
 tags: [testes, test-doubles, mock, stub, fake, spy, dummy]
 skill: tech-mentor-testing
 status: stable
@@ -126,6 +126,7 @@ Mockar um banco de dados permite verificar que `db.save` foi chamado, mas não c
 - [[wiki/sources/self-initializing-fake-martin-fowler]] — fonte primária do padrão SelfInitializingFake: Fake vs. Stub, mecanismo de cache
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — limite do mock de banco: assertion de chamada não prova persistência
 - [[wiki/sources/test-fixture-xunitpatterns]] — verbete de glossário dedicado ao termo test fixture/test context, o "palco" onde Test Doubles entram durante a fixture setup; nuance: em JUnit esse fixture é produto da Testcase Class, não estado embutido nela
+- [[wiki/sources/test-context-xunitpatterns]] — verbete de glossário dedicado ao próprio termo test context: mesma equivalência de test fixture, agora com fonte primária isolada e o dado de que o RSpec usa literalmente o nome "context" para o mesmo conceito
 - [[wiki/sources/procedure-variable-xunitpatterns]] — verbete de glossário dedicado ao termo "procedure variable" (function pointer/delegate): mecanismo de dynamic binding por trás do Configurable Test Double, e precursor histórico do despacho polimórfico em C++ pré-OOP
 - [[wiki/sources/observation-point-xunitpatterns]] — verbete de glossário dedicado ao próprio termo observation point: contraparte simétrica de control point, fecha a hierarquia interaction point → control point | observation point
 - [[wiki/sources/interaction-point-xunitpatterns]] — verbete de glossário dedicado ao próprio termo interaction point: a categoria mãe de control point e observation point, partição binária e exaustiva de como um teste interage com o SUT

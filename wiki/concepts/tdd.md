@@ -4,8 +4,8 @@ title: "TDD — Test-Driven Development"
 aliases: ["test driven development", "red green refactor", "desenvolvimento guiado por testes"]
 date_created: 2026-04-22
 date_updated: 2026-09-04
-source_count: 19
-tags: [testes, tdd, design, red-green-refactor, qualidade, dora]
+source_count: 24
+tags: [testes, tdd, design, red-green-refactor, qualidade, dora, emergent-design]
 skill: tech-mentor-testing
 status: stable
 ---
@@ -25,6 +25,14 @@ RED → GREEN → REFACTOR → RED → GREEN → REFACTOR → ...
 - **REFACTOR**: melhore sem quebrar os testes
 
 Sem o Refactor, TDD é apenas "testes primeiro" — acumula débito técnico com os testes.
+
+## TDD não é sinônimo de test-first development
+
+[[wiki/sources/test-driven-development-xunitpatterns]] (verbete de glossário de [[wiki/entities/gerard-meszaros]]) formaliza uma distinção que a wiki só tratava informalmente: **test-first development** é o termo genérico — só implica escrever o teste antes do código. **Test-driven development** é mais específico: implica também fazer o código de produção funcionar **um teste de cada vez**, característica batizada de [[wiki/concepts/emergent-design|emergent design]] — oposto formal de [[wiki/concepts/bduf|BDUF]] (Big Design, Up Front) — o design do sistema emerge incrementalmente de cada teste, em vez de ser definido antecipadamente. É a mesma ideia que a seção "As duas escolas" abaixo já descrevia informalmente para a escola London ("o design emerge das interfaces que o teste exige"), agora nomeada e com fonte primária. Ver também [[wiki/concepts/test-first-development]] e [[wiki/concepts/storytest-driven-development]] (termo relacionado citado pela mesma fonte, ainda sem definição própria na wiki).
+
+[[wiki/sources/test-first-development-xunitpatterns]] fecha essa distinção com fonte primária dedicada ao próprio termo test-first (antes só inferido por contraste): confirma que test-first é o guarda-chuva genérico e acrescenta um dado novo — pode ser aplicado tanto no nível de unit test quanto de customer test, dependendo de quais testes o time escolhe automatizar. Ver [[wiki/concepts/test-first-development]].
+
+[[wiki/sources/storytest-driven-development-xunitpatterns]] define, com fonte primária própria, o termo relacionado que TDD e test-first apenas citavam por contraste: **storytest-driven development (STDD)** é a variação do TDD que escreve customer tests antes da funcionalidade correspondente, garantindo que a integração das unidades produza um todo utilizável para o cliente — não só unidades corretas isoladamente. Termo cunhado por Joshua Kerievsky, como parte da metodologia "Industrial XP" (IXP). Ver [[wiki/concepts/storytest-driven-development]].
 
 [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] liga explicitamente a primeira das três dicas de Fowler para refatorar com segurança — nunca misturar adicionar funcionalidade com refatorar — ao mesmo ciclo RED-GREEN-REFACTOR: primeiro faz funcionar (RED → GREEN), depois refatora (REFACTOR), nunca as duas coisas ao mesmo tempo. Ver [[wiki/concepts/dois-chapeus-kent-beck]].
 
@@ -123,6 +131,10 @@ Quando a interface, o input e o output já são conhecidos por uma especificaç�
 
 [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] enquadra TDD não como técnica de gestão de dívida técnica já existente, mas como **prevenção** — é difícil escrever lógica confusa e mal desenhada quando é preciso primeiro passar num teste limpo e simples (fase GREEN). Nesse enquadramento, a fase de REFACTOR do ciclo é onde a [[wiki/concepts/boy-scout-rule]] acontece de forma estruturada e obrigatória, em vez de depender da disciplina individual do dev de limpar o código depois. Ver [[wiki/concepts/tech-debt-como-ferramenta]] para as outras práticas de prevenção citadas na mesma fonte (pair programming, CI/CD com quality gates).
 
+## RSpec e a nova geração de membros do xUnit
+
+[[wiki/sources/rspec-xunitpatterns]] enquadra o [[wiki/entities/rspec|RSpec]] como um dos primeiros de uma nova geração de membros da família xUnit criados especificamente para tornar os testes de TDD mais úteis como especificação ("Tests as Specification"): troca todo o vocabulário de "teste" por vocabulário de especificação — fixture→[[wiki/sources/test-context-xunitpatterns|context]], Test Method→specify, assert→should. [[wiki/entities/jbehave|JBehave]] é citado como o equivalente Java. Ver [[wiki/concepts/bdd]] para a hipótese (não confirmada por esta fonte) de que esse vocabulário antecede o de BDD.
+
 ## Key Sources
 
 - [[wiki/sources/tdd]]
@@ -147,4 +159,9 @@ Quando a interface, o input e o output já são conhecidos por uma especificaç�
 - [[wiki/sources/c3-martin-fowler]] — história do projeto [[wiki/entities/c3-project|C3]], onde as práticas da [[wiki/concepts/extreme-programming|Extreme Programming]] (incluindo o TDD) foram consolidadas pela primeira vez em 1996
 - [[wiki/sources/very-low-defect-project-martin-fowler]] — times de XP disciplinados chegando a menos de um bug/mês; fonte não detalha causalidade prática-a-prática, mas ver [[wiki/concepts/very-low-defect-project]]
 - [[wiki/sources/test-fixture-xunitpatterns]] — fonte primária isolada do termo test fixture/test context: configurar o fixture é a primeira fase do Four-Phase Test, precondição para o SUT ser exercitado no ciclo RED-GREEN-REFACTOR
+- [[wiki/sources/test-context-xunitpatterns]] — fonte primária isolada do próprio termo test context, com exemplo de código do Four-Phase Test e o dado de que o RSpec o nomeia "context"
 - [[wiki/sources/jmock]] — verbete de "Tools" do xUnitPatterns.com; JMock não é citado como ferramenta da escola London/Mockist pela fonte primária, mas é [external] historicamente a origem dela via Freeman/Pryce
+- [[wiki/sources/test-driven-development-xunitpatterns]] — verbete de glossário isolando a definição formal do próprio termo "test-driven development": distingue TDD de test-first development e cunha o termo [[wiki/concepts/emergent-design|emergent design]]
+- [[wiki/sources/emergent-design-xunitpatterns]] — fonte primária dedicada ao próprio termo emergent design: oposto formal de [[wiki/concepts/bduf|BDUF]] (Big Design, Up Front), o mecanismo pelo qual o design emerge é justamente o ciclo RED-GREEN-REFACTOR "um teste de cada vez"
+- [[wiki/sources/storytest-driven-development-xunitpatterns]] — fonte primária isolada do termo storytest-driven development (STDD): variação do TDD focada em customer tests, cunhada por Joshua Kerievsky (Industrial XP)
+- [[wiki/sources/rspec-xunitpatterns]] — fonte primária dedicada ao framework RSpec: nova geração de membros do xUnit para "Tests as Specification", com mapeamento completo de vocabulário (fixture/context, Test Method/specify, assert/should) e JBehave como equivalente Java

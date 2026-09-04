@@ -3,8 +3,8 @@ type: concept
 title: "Os Seis Passos (Mock Interview)"
 aliases: ["the six steps", "seis passos leetcode", "roteiro de entrevista simulada", "mock interview framework"]
 date_created: 2026-07-22
-date_updated: 2026-07-22
-source_count: 1
+date_updated: 2026-09-04
+source_count: 2
 tags: [entrevistas, coding-interview, carreira, pratica-deliberada, mock-interview]
 skill: tech-mentor-leadership
 status: draft
@@ -42,6 +42,11 @@ Documentar feedback após cada sessão — inclusive pontos não-técnicos (fala
 - [[wiki/concepts/reconhecimento-de-padroes]] — o repertório que sustenta um bom brainstorm na etapa 7
 - [[wiki/concepts/aprendizado-por-luta]] — ficar travado durante o roteiro é esperado, não motivo para abandoná-lo
 
+## O Mesmo Mecanismo Aplicado a System Design
+
+[[wiki/sources/como-se-comportar-na-entrevista-de-system-design-tier-s]] recomenda, para [[wiki/concepts/entrevista-system-design|entrevista de system design]], o mesmo mecanismo central deste framework — pedir a um par (de preferência mais sênior) que faça perguntas como um entrevistador real faria, gravar a sessão e reassistir para identificar o que melhorar — mas sem o detalhamento em etapas explícitas. Confirma que a lógica de "simular o formato real, não só treinar o conteúdo sozinho" transfere de coding interview para system design interview, ainda que a fonte de system design não cite este framework nem o replique passo a passo.
+
 ## Key sources
 
 - [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]] — artigo original que detalha o framework completo em dez etapas
+- [[wiki/sources/como-se-comportar-na-entrevista-de-system-design-tier-s]] — mesmo mecanismo (mock interview com par sênior + gravação) recomendado para entrevista de system design, sem o detalhamento em etapas

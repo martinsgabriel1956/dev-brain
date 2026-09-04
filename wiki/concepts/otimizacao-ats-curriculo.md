@@ -3,8 +3,8 @@ type: concept
 title: "Otimização de Currículo para ATS"
 aliases: ["ATS", "applicant tracking system", "robô que lê currículo", "keyword matching currículo"]
 date_created: 2026-07-15
-date_updated: 2026-08-24
-source_count: 2
+date_updated: 2026-09-04
+source_count: 3
 tags: [carreira, contratação, ats, currículo]
 skill: tech-mentor-leadership
 status: draft
@@ -20,6 +20,14 @@ Antes de qualquer humano ler um currículo, a maioria das empresas passa o docum
 - Uma única menção isolada é um sinal fraco — pode ser só um curso feito uma vez
 - Repetir a tecnologia em **múltiplas seções** (resumo/"sobre mim", experiência, habilidades técnicas) sinaliza uso recorrente e real, não pontual
 - Recomendação prática: pelo menos duas a três repetições da stack-alvo ao longo do documento
+
+## PDF Pesquisável como Pré-Requisito Mecânico
+
+[[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] acrescenta um requisito mecânico anterior à contagem de repetições: o PDF do currículo precisa permitir Ctrl+F e retornar a palavra-chave — se o texto não é selecionável/pesquisável (por exemplo, currículo exportado como imagem), o ATS não encontra a keyword mesmo que ela apareça visualmente no documento. Um currículo com "TypeScript" citado três a quatro vezes ao longo do texto é dado como exemplo de repetição adequada.
+
+## Habilidade Listada sem Evidência no Corpo do Currículo
+
+A mesma fonte documenta um padrão recorrente nos três currículos analisados: uma tecnologia (no caso, Java) aparece na seção "habilidades técnicas" mas não é citada em nenhuma experiência, projeto ou curso do restante do documento. Isso não derruba o ATS (que só conta menções), mas compromete a etapa seguinte — a leitura humana — porque levanta a pergunta óbvia em entrevista: "onde você usou isso?". Reforça a distinção desta página entre repetição pontual (fraca) e repetição distribuída em múltiplas seções (forte): a keyword precisa aparecer também onde há contexto (experiência, projeto), não só na lista solta de habilidades.
 
 ## Relação com [[wiki/concepts/curriculo-vs-portfolio]]
 
@@ -39,3 +47,4 @@ Passar no ATS é só a primeira barreira — é sobre o currículo (a "promessa"
 
 - [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]]
 - [[wiki/sources/duas-perguntas-linkedin-cursos-online-lei-de-sturgeon]] — mesmo mecanismo de metadados de busca, aplicado ao perfil do LinkedIn em vez de ao currículo
+- [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — PDF pesquisável como pré-requisito mecânico, e o padrão de habilidade listada (Java) sem nenhuma evidência de uso no corpo do currículo

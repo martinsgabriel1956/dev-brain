@@ -3,8 +3,8 @@ type: entity
 title: "OpenCode"
 aliases: ["Open Code"]
 date_created: 2026-07-31
-date_updated: 2026-08-27
-source_count: 3
+date_updated: 2026-09-04
+source_count: 4
 tags: [opencode, harness, cli, agentes-ia, model-routing]
 skill: tech-mentor-ai
 status: stub
@@ -26,8 +26,13 @@ Segundo [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]], a c
 
 [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] cita o OpenCode, ao lado do [[wiki/entities/hermes-agent|Hermes]], como exemplo de harness onde "qualquer um" dos modelos de fundação (GPT, Kimi, GLM, Opus, Fable) pode ser conectado — reforçando, no mesmo ponto já documentado acima (roteamento via Custom Router da Abacus), que o modelo é o "miolo" comum entre harnesses e o OpenCode se diferencia por não travar esse miolo a um único provider.
 
+## Usado como Harness para Comparar Custo de Agente Único vs. Agent Waves
+
+[[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] usa o OpenCode como harness para rodar um teste prático em produção (não simulação): a mesma tarefa (preview de e-mails num painel admin de newsletter) executada duas vezes — uma com um único agente Kimi K3 fazendo tudo, outra delegando a implementação a um Kimi K2.7 Code via [[wiki/concepts/subagentes|Agent Waves]] — medindo o custo real por diferença de saldo na plataforma da Kimi antes/depois de cada execução. Reforça o papel do OpenCode como harness agnóstico de provider já documentado acima: a troca entre K3 (agente único) e K3+K2.7 (Agent Waves) foi feita só trocando o modelo/prompt na mesma ferramenta, sem mudar de harness.
+
 ## Key Sources
 
 - [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] — citado, junto do Hermes, como harness aberto a qualquer modelo de fundação
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — conexão com Custom Router da Abacus.AI via API key
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — citado como destino de migração de devs saindo do Claude Code por loops de correção supérflua
+- [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] — usado para testar, na prática, custo de agente único (K3) vs. Agent Waves (K3 coordinator + K2.7 worker) na mesma tarefa

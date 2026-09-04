@@ -3,8 +3,8 @@ type: concept
 title: "Cache"
 aliases: ["caching", "cache de aplicação"]
 date_created: 2026-06-26
-date_updated: 2026-08-19
-source_count: 11
+date_updated: 2026-09-04
+source_count: 12
 tags: [cache, performance, redis, arquitetura, backend, grande-rollback, buffer]
 skill: tech-mentor-backend
 status: stable
@@ -78,6 +78,8 @@ Além dos padrões clássicos acima, IA adiciona uma camada de cache específica
 
 Não entender bem essa camada de cache impacta latência, mas principalmente **custo**: cada chamada e cada token de LLM tem custo direto — ver [[wiki/concepts/ai-gateway-llm-router]].
 
+**Exemplo numérico concreto de cache hit vs. miss:** [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] cita preços reais da [[wiki/entities/moonshot-ai|Moonshot AI]] onde o cache de tokens de input muda o custo em até 10×: o Kimi K3 cobra US$3/M tokens de input em cache miss contra US$0,30/M em cache hit; o Kimi K2.7 Code cobra US$0,95/M em cache miss contra US$0,19/M em cache hit. Isso mostra concretamente por que "cache de tokens em LLMs" (acima) não é um detalhe de implementação do provider — é uma alavanca de custo de ordem de grandeza, visível diretamente na tabela de preços pública.
+
 ## Key Sources
 
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
@@ -91,3 +93,4 @@ Não entender bem essa camada de cache impacta latência, mas principalmente **c
 - [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] — cache definido pela expectativa de reutilização e explicitamente contrastado com [[wiki/concepts/buffer]] (diferença de velocidade); origem histórica no cache de CPU (IBM System/360, chamado *high speed buffer*)
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — camada específica de IA: cache de tokens por provider, cache de contexto/embeddings em RAG, cache-aware prompts e fingerprints; caching como alavanca de custo, não só de latência
 - [[wiki/sources/system-design-load-balancer-nivel-macaco]] — cache citado, numa pergunta frequente de aula introdutória, como técnica alternativa a "só adicionar mais servidor/load balancer" para escalar, reforçando o mesmo framing de "melhor amigo antes de escalar" já registrado acima
+- [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] — preços reais de cache hit vs. miss da Moonshot AI (Kimi K3 e K2.7 Code), diferença de até 10× no custo de input tokens

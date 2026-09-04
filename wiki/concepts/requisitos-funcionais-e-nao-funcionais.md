@@ -3,8 +3,8 @@ type: concept
 title: "Requisitos Funcionais e Não Funcionais"
 aliases: ["requisitos funcionais", "requisitos não funcionais", "RNF", "functional requirements", "non-functional requirements", "levantamento de requisitos"]
 date_created: 2026-09-03
-date_updated: 2026-09-03
-source_count: 2
+date_updated: 2026-09-04
+source_count: 3
 tags: [system-design, requisitos, arquitetura, entrevistas, escopo]
 skill: tech-mentor-system-design
 status: stub
@@ -41,3 +41,4 @@ Um enunciado de entrevista é, por construção, um [[wiki/concepts/problema-de-
 
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — as três perguntas mínimas; pular esta etapa é a "mentira nº 1" (achar que o enunciado já define o problema)
 - [[wiki/sources/anatomia-entrevista-system-design-bigtech]] — funcionais antes de não funcionais; RNFs como o que separa solução de VPS de solução de bigtech
+- [[wiki/sources/como-se-comportar-na-entrevista-de-system-design-tier-s]] — levantamento tratado como negociação em voz alta com o entrevistador ("quantos usuários simultâneos a gente está considerando?"), sem precisar saber os números de antemão; o candidato pode propor um número e pedir confirmação

@@ -9390,3 +9390,297 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha em Sources
 
 **Notas / open questions:** (1) Primeira entrada da categoria **External Patterns** do site ingerida — quarta categoria distinta coberta pela wiki (depois de Glossary, Tools, References), e a primeira que não é conteúdo original de Meszaros nem citação de artigo sobre testes: é vocabulário de design pattern geral (GOF) que o site referencia como dependência externa. (2) **Nenhuma nova entidade criada** — GOF já existia como entidade ([[wiki/entities/gang-of-four]]) de uma ingestão anterior não relacionada ao xUnitPatterns.com. (3) O verbete não explica se/como o Decorator é efetivamente usado na construção de Test Doubles em outras páginas do catálogo (ex.: Test Spy como wrapper de um DOC real) — registrado como questão aberta na source page e refletido com ressalva explícita em `wiki/concepts/test-doubles.md`, para não inventar uma conexão sem evidência textual. (4) A página em si é um rascunho mínimo (nota do site: "conteúdo provavelmente mudou substancialmente" desde a publicação do livro) — mais curta até que os verbetes de Glossary já ingeridos. (5) `WebFetch` falhou novamente com `ECONNREFUSED`; `curl` funcionou sem problemas, terceira confirmação seguida de que é limitação da ferramenta para este host específico.
+
+---
+
+## [2026-09-04] ingest | 3 Fatores Não Técnicos Para Entregar Projetos de IA em Empresas
+
+**Fonte:** [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]] — transcrição pt-BR fornecida pelo usuário (áudio bruto colado no prompt, autor/canal não identificado), sem necessidade de tradução, limpa e estruturada em seções e salva em `raw/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas.md`. Relato em primeira pessoa de um implementador/consultor de IA (dois anos full-time vendendo e entregando projetos para empresas) sobre três fatores não técnicos que determinam o sucesso de um projeto de IA, além da excelência técnica obrigatória.
+
+**Skill carregada:** `tech-mentor-leadership` — domínio de carreira/consultoria/gestão de cliente. Nenhum arquivo de referência específico cobre "gerenciamento de cliente/stakeholder em consultoria externa de IA" (o mais próximo, `managing-up.md`, cobre influência *ascendente interna*; `ai-strategy-engineering.md` cobre adoção *interna* de IA por um time — nenhum dos dois cobre venda/entrega para cliente externo); conteúdo tratado com conhecimento base da skill, seguindo o protocolo de "arquivo de referência não encontrado".
+
+**Arquivos criados:**
+- `raw/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas.md` — transcrição limpa e estruturada em seções (base técnica obrigatória + 3 fatores + conclusão)
+- `wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas.md` — TL;DR, 14 key claims, conceitos tocados, open questions, 8 citações preservadas
+- `wiki/concepts/gerenciamento-de-expectativa-em-servicos-de-ia.md` — conceito novo cobrindo os fatores 1 e 2 (MVP integrado como ferramenta de descoberta de escopo + controle de hype do cliente via comunicação constante e negociação de trade-off)
+- `wiki/concepts/mudanca-cultural-como-produto-de-servicos-de-ia.md` — conceito novo cobrindo o fator 3 (todo serviço de IA é mudança cultural/organizacional; resistência política de stakeholders internos pode inviabilizar projeto tecnicamente perfeito)
+- `wiki/concepts/recorrencia-em-servicos-de-ia.md` — conceito novo amarrando os três fatores ao objetivo de negócio: satisfação do cliente gera recompra; hype vende a primeira vez mas não sustenta recorrência
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/mvp.md` — `source_count` 8 → 9; nova seção "MVP Como Ferramenta de Descoberta de Escopo com Cliente Externo" (terceira variante de MVP, além de mercado e aprendizado pessoal); nova linha em Key Sources
+- `wiki/concepts/scope-creep.md` — `source_count` 1 → 2; nova seção sobre scope creep em serviço para cliente externo (fonte da expansão é o cliente, não o entusiasmo do dev; mitigação é negociação de trade-off, não disciplina pessoal); nova linha em Key Sources
+- `wiki/concepts/hype-de-ia.md` — `source_count` 2 → 3; nova seção "Hype Vazando Para Dentro de um Projeto de Cliente"; nova linha em Key Sources
+- `wiki/concepts/avaliar-hype-tecnologico.md` — `source_count` 2 → 3; nova seção "Hype do Lado do Cliente em Serviços de IA"; nova linha em Key Sources
+- `wiki/concepts/freelance-como-alavanca-de-renda.md` — `source_count` 2 → 3; nova seção "Do Grande Contrato à Recorrência"; nova linha em Key Sources
+- `wiki/index.md` — 3 novas linhas em Concepts (Carreira & Soft Skills) e nova linha em Sources
+
+**Notas / open questions:** (1) Autor/canal não identificado no áudio — impossível verificar credenciais reais ("dois anos full-time"). (2) "Mega Break", citado como exemplo de caso viral de IA consumido por leigos, pode ser erro de transcrição de um nome próprio em inglês — não verificado. (3) **Skill drift confirmado novamente**: caminho do `CLAUDE.md` (`/home/nemomartins/Documentos/new/skills/`) não existe nesta máquina; usado `/home/gabriel-martins/Documentos/skills/`, mesmo caminho já registrado em ingestões anteriores — vale abrir uma correção permanente no `CLAUDE.md` em algum momento, em vez de recontornar isso a cada ingestão. (4) Lacuna real na skill `tech-mentor-leadership`: nenhum arquivo de referência cobre consultoria/venda de serviço técnico para cliente externo (managing-up.md e ai-strategy-engineering.md cobrem contextos internos a uma empresa apenas) — candidato a sugestão de novo arquivo de referência, fora do escopo desta ingestão.
+
+---
+
+## [2026-09-04] ingest | Como se Comportar na Entrevista de System Design (Fechamento da Série Tier S)
+
+**Fonte:** [[wiki/sources/como-se-comportar-na-entrevista-de-system-design-tier-s]] — transcrição de vídeo do YouTube colada pelo usuário no prompt (pt-BR, sem necessidade de tradução), limpa e estruturada em seções, salva em `raw/como-se-comportar-na-entrevista-de-system-design-tier-s.md`. Sétimo e último vídeo da série Tier S de [[wiki/entities/pedro-camaforte]] (depois de [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] e [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] já ingeridos). Sem conteúdo técnico novo — fecha o arco com a tese de que dominar os 7 conceitos técnicos da série é necessário mas não suficiente: o que diferencia candidatos numa vaga Tier S é comunicação de raciocínio e reação a feedback, não repertório técnico.
+
+**Skill carregada:** `tech-mentor-system-design` — mesma skill das duas ingestões anteriores da série. Consultado `references/system-design.md` (índice: "System Design, HLD, Estimativas, Load Balancer, CDN, Trade-offs, Entrevista SD"), que corrobora fortemente o roteiro de 3-4 etapas da fonte com seu próprio framework de 4 etapas (Clarify Requirements → Estimativas Back-of-Envelope → High-Level Design → Deep Dive) e a "regra de ouro" de nunca decidir tecnologia sem explicar o porquê/tradeoff — usado para calibrar confiança alta nas key claims e registrar a única discrepância real: ordenação de estimativas de capacidade (explícita na skill, implícita nesta fonte). Caminho local real: `/home/gabriel-martins/Documentos/skills/tech-mentor-system-design/` (caminho do `CLAUDE.md`, `/home/nemomartins/...`, não existe nesta máquina — skill drift já registrado em ingestões anteriores).
+
+**Arquivos criados:**
+- `raw/como-se-comportar-na-entrevista-de-system-design-tier-s.md` — transcrição limpa e estruturada em seções
+- `wiki/sources/como-se-comportar-na-entrevista-de-system-design-tier-s.md` — TL;DR, 11 key claims (com confiança calibrada via skill), entidades/conceitos tocados, open questions, 6 citações preservadas
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/entities/pedro-camaforte.md` — `source_count` 3 → 4; nova linha em Key Sources
+- `wiki/concepts/entrevista-system-design.md` — `source_count` 9 → 10; nova seção "O Fechamento da Série: Comportamental Pesa Mais que Repertório Técnico"; nova linha em Key sources
+- `wiki/concepts/requisitos-funcionais-e-nao-funcionais.md` — `source_count` 2 → 3; nova linha em Key Sources (levantamento como negociação em voz alta, sem números de antemão)
+- `wiki/concepts/soft-skills-como-diferencial-de-pleno.md` — `source_count` 1 → 2; nova seção "Mesma Tese, Contexto de Seleção Entre Humanos" distinguindo o mecanismo (seleção entre candidatos vs. comoditização por IA); nova linha em Key Sources
+- `wiki/concepts/seis-passos-mock-interview.md` — `source_count` 1 → 2; nova seção confirmando transferência do mecanismo de coding interview para system design interview; nova linha em Key sources
+- `wiki/index.md` — nova linha em Sources; linha de [[wiki/entities/pedro-camaforte]] atualizada para refletir o fechamento da série
+
+**Notas / open questions:** (1) Autor menciona vídeo futuro sobre Uber aplicando o framework completo — não hospedado no canal no momento da ingestão; candidato a ingestão futura. (2) Fonte trata estimativa de capacidade como implícita dentro do levantamento de RNF, sem o detalhamento numérico (QPS, storage) que o framework da skill nomeia como etapa distinta — registrado como gap de profundidade, não contradição. (3) Terceira e última fonte confirmada da série Tier S nesta wiki — os 4 vídeos restantes da série original (URLs pré-assinadas, real-time updates, etc.) não foram ingeridos ainda; candidatos a ingestão futura se o usuário fornecer as transcrições.
+
+---
+
+## [2026-09-04] ingest | Test-Driven Development (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/test-driven-development-xunitpatterns]] — verbete curto do **Glossary** do xUnitPatterns.com, fornecido pelo usuário como URL (`http://xunitpatterns.com/test-driven%20development.html`), baixado via `curl` (mesmo contorno das ingestões anteriores da série, `WebFetch` não foi tentado desta vez por já se saber que falha para este host), traduzido para pt-BR e salvo em `raw/test-driven-development-xunitpatterns.md`. Conteúdo original em inglês, curto (uma definição + duas frases de contraste/ver-também).
+
+**Skill carregada:** `tech-mentor-testing` — mesma sessão de skill das ingestões anteriores da série xUnitPatterns.com; `references/test-patterns.md` consultado (TDD/BDD/Contract Testing) mas não continha os termos "emergent design"/"test-first development"/"storytest-driven development" — não são cobertos pela skill, tratados só com base na fonte primária.
+
+**Arquivos criados:**
+- `raw/test-driven-development-xunitpatterns.md` — tradução pt-BR do verbete de glossário
+- `wiki/sources/test-driven-development-xunitpatterns.md` — TL;DR, 5 afirmações centrais, 3 key claims, entidades/conceitos tocados, open questions, 2 citações preservadas
+- `wiki/concepts/emergent-design.md` — novo stub: termo cunhado por Meszaros para "design que emerge de fazer TDD um teste por vez"
+- `wiki/concepts/test-first-development.md` — novo stub: termo guarda-chuva mais amplo do qual TDD é caso específico
+- `wiki/concepts/storytest-driven-development.md` — novo stub: termo citado como "ver também", não definido pela fonte
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/tdd.md` — `source_count` 19 → 20; nova seção "TDD não é sinônimo de test-first development" formalizando a distinção já implícita em "As duas escolas"; nova linha em Key Sources
+- `wiki/entities/gerard-meszaros.md` — `source_count` 24 → 25; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (Testes & Qualidade)
+
+**Notas / open questions:** (1) **Achado principal: TDD ≠ test-first development.** A wiki já usava os dois termos quase como sinônimos; o verbete original de Meszaros formaliza que test-first é o guarda-chuva genérico e TDD é o caso específico que exige evolução um-teste-por-vez (emergent design). (2) O termo "emergent design" nunca havia sido nomeado explicitamente na wiki, apesar da ideia já aparecer informalmente na seção "As duas escolas" de [[wiki/concepts/tdd]] (escola London: "o design emerge das interfaces que o teste exige"). (3) Dois verbetes-irmãos do mesmo glossário ficaram como lacuna: `test first development.html` e `storytest-driven development.html` não foram ingeridos — candidatos naturais para fechar essas duas definições com fonte primária própria em vez de inferência por contraste. (4) Sem contradição com o resto da wiki — a fonte refina/formaliza distinções que já estavam implícitas.
+
+---
+
+## [2026-09-04] ingest | Test-First Development (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/test-first-development-xunitpatterns]] — verbete curto do **Glossary** do xUnitPatterns.com, fornecido pelo usuário como URL (`http://xunitpatterns.com/test%20first%20development.html`), baixado via `curl` (WebFetch falhou novamente com `ECONNREFUSED` para este host, mesma limitação já registrada nas ingestões anteriores da série), traduzido para pt-BR e salvo em `raw/test-first-development-xunitpatterns.md`. Fecha uma lacuna deixada explicitamente aberta pela ingestão anterior de [[wiki/sources/test-driven-development-xunitpatterns]]: aquela fonte só citava "test-first development" por contraste, sem defini-lo; este verbete dedicado dá a fonte primária direta.
+
+**Skill carregada:** `tech-mentor-testing` — mesma sessão de skill das ingestões anteriores da série xUnitPatterns.com. Caminho real nesta máquina: `/home/gabriel-martins/Documentos/skills/tech-mentor-testing/` (o caminho do `CLAUDE.md`, `/home/nemomartins/...`, não existe aqui — skill drift já registrado em ingestões anteriores). `references/test-patterns.md` não cobre os termos específicos deste verbete; tratado só com base na fonte primária.
+
+**Arquivos criados:**
+- `raw/test-first-development-xunitpatterns.md` — tradução pt-BR do verbete de glossário
+- `wiki/sources/test-first-development-xunitpatterns.md` — TL;DR, 4 afirmações centrais, 2 key claims, entidades/conceitos tocados, open questions, 2 citações preservadas
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/test-first-development.md` — promovido de `stub` (inferido por contraste) para `stable` (fonte primária dedicada); `source_count` 1 → 2; nova seção sobre os dois níveis de aplicação (unit test / customer test)
+- `wiki/concepts/tdd.md` — `source_count` 20 → 21; nova nota reforçando a distinção com fonte primária dedicada ao termo-irmão
+- `wiki/concepts/emergent-design.md` — `source_count` 1 → 2; nova linha em Key Sources
+- `wiki/concepts/piramide-de-testes.md` — `source_count` 14 → 15; nova seção "Test-first pode operar no nível de customer test, não só de unit test"; nova linha em Key Sources
+- `wiki/entities/gerard-meszaros.md` — `source_count` 25 → 26; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; hook de [[wiki/concepts/test-first-development]] atualizado
+
+**Notas / open questions:** (1) **Achado principal: confirmação, não contradição.** A fonte primária dedicada confirma exatamente a distinção já inferida por contraste na ingestão anterior (test-first é guarda-chuva; TDD acrescenta emergent design), sem surpresas. (2) **Dado genuinamente novo**: test-first development pode ser aplicado tanto no nível de unit test quanto de customer test — conectado a [[wiki/concepts/piramide-de-testes]] (topo vs. base) e à suspeita ainda não confirmada de que isso é operacionalmente próximo de [[wiki/concepts/storytest-driven-development]] (STDD), termo que continua sem fonte primária própria na wiki. (3) Verbete-irmão do glossário `storytest-driven development.html` continua não ingerido — candidato natural para fechar a última lacuna desta pequena série de três termos (TDD, test-first, STDD).
+
+---
+
+## [2026-09-04] ingest | Emergent Design (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/emergent-design-xunitpatterns]] — verbete curtíssimo do **Glossary** do xUnitPatterns.com, fornecido pelo usuário como URL (`http://xunitpatterns.com/emergent%20design.html`), baixado via `curl` (WebFetch falhou novamente com `ECONNREFUSED` para este host, mesma limitação já registrada em todas as ingestões anteriores da série), traduzido para pt-BR e salvo em `raw/emergent-design-xunitpatterns.md`. Fecha a lacuna deixada explicitamente aberta pelas duas ingestões anteriores ([[wiki/sources/test-driven-development-xunitpatterns]] e [[wiki/sources/test-first-development-xunitpatterns]]): "emergent design" já era citado e definido de forma embutida dentro do verbete de TDD, mas nunca tinha fonte primária própria e dedicada.
+
+**Skill carregada:** `tech-mentor-testing` — mesma sessão de skill das ingestões anteriores da série xUnitPatterns.com. Caminho real nesta máquina: `/home/gabriel-martins/Documentos/skills/tech-mentor-testing/` (o caminho do `CLAUDE.md`, `/home/nemomartins/...`, não existe aqui — skill drift já registrado em ingestões anteriores).
+
+**Arquivos criados:**
+- `raw/emergent-design-xunitpatterns.md` — tradução pt-BR do verbete de glossário
+- `wiki/sources/emergent-design-xunitpatterns.md` — TL;DR, 3 afirmações centrais, 2 key claims, entidades/conceitos tocados, open questions, 1 citação preservada
+- `wiki/concepts/bduf.md` — novo stub: BDUF (Big Design, Up Front) nomeado formalmente pela primeira vez na wiki como o oposto de emergent design; ainda sem verbete de glossário próprio ingerido
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/emergent-design.md` — promovido de `stub` (inferido por dentro do verbete de TDD) para `stable` (fonte primária dedicada); `source_count` 2 → 3; corpo reescrito para citar BDUF como oposto formal
+- `wiki/concepts/tdd.md` — nova linha em Key Sources; menção a BDUF na seção "TDD não é sinônimo de test-first development"
+- `wiki/entities/gerard-meszaros.md` — `source_count` 26 → 27; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts para [[wiki/concepts/bduf]]; hook de [[wiki/concepts/emergent-design]] atualizado
+
+**Notas / open questions:** (1) **Achado principal: confirmação, não contradição.** O verbete confirma exatamente a definição já inferida na ingestão de test-driven-development, sem surpresas de conteúdo. (2) **Dado genuinamente novo**: o antônimo formal **BDUF** (Big Design, Up Front) nunca tinha página própria na wiki — criado como stub nesta ingestão, ainda sem fonte primária dedicada (`http://xunitpatterns.com/BDUF.html` não ingerido). (3) Isso fecha a pequena série de três termos relacionados (TDD, test-first development, emergent design) com fonte primária dedicada para cada um; falta ainda `storytest-driven development.html`, aberto desde a primeira ingestão da série.
+
+## [2026-09-04] ingest | BDUF (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/bduf-xunitpatterns]] — verbete curtíssimo do **Glossary** do xUnitPatterns.com, fornecido pelo usuário como URL (`http://xunitpatterns.com/BDUF.html`), baixado via `curl` (WebFetch falhou com `ECONNREFUSED` para este host, mesma limitação já registrada em todas as ingestões anteriores da série), traduzido para pt-BR e salvo em `raw/bduf-xunitpatterns.md`. Fecha a última lacuna explicitamente aberta em [[wiki/sources/emergent-design-xunitpatterns]]: BDUF já era citado como o oposto formal de emergent design, mas sem fonte primária própria — definição do stub em [[wiki/concepts/bduf]] era apenas inferida por contraste.
+
+**Skill carregada:** `tech-mentor-testing` — mesma sessão de skill das ingestões anteriores da série xUnitPatterns.com. Caminho real nesta máquina: `/home/gabriel-martins/Documentos/skills/tech-mentor-testing/` (o caminho do `CLAUDE.md`, `/home/nemomartins/...`, não existe aqui — skill drift já registrado em ingestões anteriores).
+
+**Arquivos criados:**
+- `raw/bduf-xunitpatterns.md` — tradução pt-BR do verbete de glossário
+- `wiki/sources/bduf-xunitpatterns.md` — TL;DR, 4 afirmações centrais, 2 key claims, entidades/conceitos tocados, open questions, 1 citação preservada
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/bduf.md` — promovido de `stub` (inferido por contraste) para `stable` (fonte primária dedicada); `source_count` 1 → 2; corpo reescrito citando a definição direta da fonte
+- `wiki/concepts/emergent-design.md` — `source_count` 3 → 4; nova linha em Key Sources
+- `wiki/entities/gerard-meszaros.md` — `source_count` 27 → 28; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; hook de [[wiki/concepts/bduf]] atualizado
+
+**Notas / open questions:** (1) **Achado principal: confirmação, não contradição.** O verbete confirma exatamente a definição já inferida na ingestão de emergent design, sem conteúdo novo além da fonte primária em si. (2) Fecha o par de contraste TDD → test-first development → emergent design → BDUF, todos agora com fonte primária dedicada isolada. (3) Único verbete-irmão ainda pendente da série mais ampla: `storytest-driven development.html`, aberto desde a primeira ingestão da série.
+
+---
+
+## [2026-09-04] ingest | Storytest-Driven Development (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/storytest-driven-development-xunitpatterns]] — verbete curtíssimo do **Glossary** do xUnitPatterns.com, fornecido pelo usuário como URL (`http://xunitpatterns.com/storytest-driven%20development.html`), baixado via `curl` (WebFetch falhou com `ECONNREFUSED` para este host, mesma limitação já registrada em todas as ingestões anteriores da série), traduzido para pt-BR e salvo em `raw/storytest-driven-development-xunitpatterns.md`. Fecha a última lacuna explicitamente aberta desde a primeira ingestão da série ([[wiki/sources/test-driven-development-xunitpatterns]]): "storytest-driven development" (STDD) era citado como termo relacionado em duas fontes anteriores, mas nunca tinha fonte primária própria — definição do stub em [[wiki/concepts/storytest-driven-development]] era apenas inferida por contraste.
+
+**Skill carregada:** `tech-mentor-testing` — mesma sessão de skill das ingestões anteriores da série xUnitPatterns.com. Caminho do `CLAUDE.md`, `/home/nemomartins/...`, não existe nesta máquina — skill drift já registrado em ingestões anteriores; aplicado com base no domínio (testes/TDD) sem carregar arquivo de skill externo.
+
+**Arquivos criados:**
+- `raw/storytest-driven-development-xunitpatterns.md` — tradução pt-BR do verbete de glossário
+- `wiki/sources/storytest-driven-development-xunitpatterns.md` — TL;DR, 4 afirmações centrais, 3 key claims, entidades/conceitos tocados, open questions, 2 citações preservadas
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/storytest-driven-development.md` — promovido de `stub` (inferido por contraste) para `stable` (fonte primária dedicada); `source_count` 1 → 2; corpo reescrito citando a definição direta da fonte e a atribuição a Joshua Kerievsky (Industrial XP)
+- `wiki/concepts/tdd.md` — `source_count` 21 → 22; nova nota registrando STDD como variação formal do TDD
+- `wiki/concepts/test-first-development.md` — `source_count` 2 → 3; confirma que test-first no nível de customer test é operacionalmente STDD
+- `wiki/concepts/piramide-de-testes.md` — `source_count` 15 → 16; nota atualizada fechando a relação STDD ↔ topo da pirâmide (customer test)
+- `wiki/entities/gerard-meszaros.md` — `source_count` 28 → 29; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; hook de [[wiki/concepts/storytest-driven-development]] atualizado nas Concepts
+
+**Notas / open questions:** (1) **Achado principal: confirmação, não contradição.** O verbete confirma exatamente a suspeita já registrada nas duas ingestões anteriores (STDD = test-first no nível de customer test), sem surpresas de conteúdo. (2) **Dado genuinamente novo**: atribuição de autoria do termo a **Joshua Kerievsky**, via sua metodologia "Industrial XP" (IXP) — nenhum dos dois tinha menção prévia na wiki; não foram criados stubs próprios por falta de profundidade nesta única fonte curta. (3) Fecha a série completa de quatro termos relacionados do glossário xUnitPatterns.com (TDD, test-first development, emergent design, BDUF) mais este quinto (STDD), todos agora com fonte primária dedicada isolada.
+
+## [2026-09-04] ingest | IXP - Industrial XP (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/ixp-industrial-xp-xunitpatterns]] — verbete curtíssimo da seção **References** (não Glossary) do xUnitPatterns.com, fornecido pelo usuário como URL (`http://xunitpatterns.com/IXP.html`), baixado via `curl` (WebFetch falhou com `ECONNREFUSED` para este host, mesma limitação já registrada em todas as ingestões anteriores da série), traduzido para pt-BR e salvo em `raw/ixp-industrial-xp-xunitpatterns.md`. Fecha a lacuna deixada explicitamente em aberto pela ingestão anterior ([[wiki/sources/storytest-driven-development-xunitpatterns]]): "Joshua Kerievsky e Industrial XP (IXP) não têm página própria na wiki" — agora ambos têm.
+
+**Skill carregada:** `tech-mentor-testing` — mesma sessão de skill das ingestões anteriores da série xUnitPatterns.com. Caminho do `CLAUDE.md`, `/home/nemomartins/...`, não existe nesta máquina — skill drift já registrado em ingestões anteriores; aplicado com base no domínio (testes/agile/XP) sem carregar arquivo de skill externo.
+
+**Arquivos criados:**
+- `raw/ixp-industrial-xp-xunitpatterns.md` — tradução pt-BR do verbete
+- `wiki/sources/ixp-industrial-xp-xunitpatterns.md` — TL;DR, 3 afirmações centrais, 3 key claims, entidades/conceitos tocados, open questions, 1 citação preservada
+- `wiki/entities/joshua-kerievsky.md` — novo stub: criador da IXP, cunhador de storytest-driven development
+- `wiki/concepts/industrial-xp.md` — novo stub `stable`: variante de marca do XP para escalar em empresas maiores (Project Chartering citado sem definição)
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/extreme-programming.md` — `source_count` 4 → 5; nova seção "Industrial XP (IXP)" e nova linha em Key Sources
+- `wiki/concepts/storytest-driven-development.md` — `source_count` 2 → 3; menções a Kerievsky/IXP convertidas de texto plano para `[[wikilinks]]` reais, apontando às novas páginas
+- `wiki/entities/gerard-meszaros.md` — `source_count` 29 → 30; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources, Concepts e Entities
+
+**Notas / open questions:** (1) **Achado principal**: confirma, de fonte primária dedicada e independente, a atribuição de IXP e de storytest-driven development a Joshua Kerievsky já registrada por contraste na ingestão anterior — sem contradição. (2) **Project Chartering** é citado como a única prática nomeada de IXP, mas não definido por nenhuma fonte da wiki — candidato a stub futuro caso apareça fonte que aprofunde o tema. (3) A fonte grafa o sobrenome de Kerievsky de duas formas diferentes no mesmo parágrafo ("Kierievski"/"Kierievsky") — inconsistência do próprio catálogo; adotada a grafia mais comum na literatura ("Kerievsky") como título da entidade, com nota explicativa na página. (4) Fecha, junto com a ingestão anterior, a série xUnitPatterns.com iniciada com TDD/test-first/emergent-design/BDUF/STDD — todos os termos relacionados citados por contraste ao longo da série agora têm página própria.
+
+---
+
+## [2026-09-04] ingest | Test Context (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/test-context-xunitpatterns]] — verbete curto do **Glossary** do xUnitPatterns.com, fornecido pelo usuário como URL (`http://xunitpatterns.com/test%20context.html`), baixado via `curl` (WebFetch falhou com `ECONNREFUSED` para este host, mesma limitação já registrada em todas as ingestões anteriores da série), traduzido para pt-BR e salvo em `raw/test-context-xunitpatterns.md`. Fecha a lacuna deixada em aberto por [[wiki/sources/test-fixture-xunitpatterns]], que já citava "test context" apenas como sinônimo ("some people call this the test context") sem fonte primária própria.
+
+**Skill carregada:** `tech-mentor-testing`, caminho real desta máquina `/home/gabriel-martins/Documentos/skills/tech-mentor-testing/` (o caminho do `CLAUDE.md`, `/home/nemomartins/...`, não existe aqui — skill drift já registrado em ingestões anteriores). Tópico mapeado para `references/test-patterns.md` (TDD/Fixtures).
+
+**Arquivos criados:**
+- `raw/test-context-xunitpatterns.md` — tradução pt-BR do verbete de glossário
+- `wiki/sources/test-context-xunitpatterns.md` — TL;DR, 3 afirmações centrais, 3 key claims, entidades/conceitos tocados, open questions, 2 citações preservadas
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/test-doubles.md` — `source_count` 23 → 24; nova linha em Key Sources
+- `wiki/concepts/indirect-input-output.md` — `source_count` 8 → 9; nova linha em Key Sources
+- `wiki/concepts/piramide-de-testes.md` — `source_count` 16 → 17; nova linha em Key Sources
+- `wiki/concepts/criterios-de-bom-teste.md` — `source_count` 5 → 6; nova linha em Key Sources
+- `wiki/concepts/tdd.md` — `source_count` 22 → 23; nova linha em Key Sources
+- `wiki/sources/test-fixture-xunitpatterns.md` — open question resolvida com strikethrough, apontando para a nova fonte
+- `wiki/entities/gerard-meszaros.md` — `source_count` 30 → 31; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Achado principal, genuinamente novo**: é o **RSpec** que usa literalmente o nome "context" para o que o xUnit chama de test fixture — primeira ferramenta fora da família xUnit citada nominalmente em toda a série de glossário ingerida até aqui. (2) RSpec não tem página própria na wiki — não foi criado stub por falta de profundidade nesta única fonte curta; candidato a entidade futura. (3) A fonte traz o primeiro exemplo de código da série (fixture de um conjunto `fruits`, Four-Phase Test) e uma observação de design não detalhada: a forma de construir o fixture tem "ramificações de longo alcance" — sem especificar quais técnicas são preferíveis, ponte aberta para [[wiki/concepts/criterios-de-bom-teste]]. (4) Sem contradição com o resto da wiki.
+
+---
+
+## [2026-09-04] ingest | RSpec (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/rspec-xunitpatterns]] — verbete curto da categoria **xUnit Members** (não Glossary) do xUnitPatterns.com, fornecido pelo usuário como URL (`http://xunitpatterns.com/RSpec.html`), baixado via `curl` (`WebFetch` falhou com `ECONNREFUSED` para este host, mesma limitação já registrada em todas as ingestões anteriores da série), traduzido para pt-BR e salvo em `raw/rspec-xunitpatterns.md`. Fecha a open question deixada explicitamente por [[wiki/sources/test-context-xunitpatterns]]: "RSpec não tem página própria na wiki — candidato natural caso uma fonte futura aprofunde BDD/RSpec especificamente".
+
+**Skill carregada:** `tech-mentor-testing` — mesma sessão de skill das ingestões anteriores da série xUnitPatterns.com. Caminho do `CLAUDE.md`, `/home/nemomartins/...`, não existe nesta máquina — skill drift já registrado em ingestões anteriores; aplicado com base no domínio (testes/TDD/BDD) sem carregar arquivo de skill externo.
+
+**Arquivos criados:**
+- `raw/rspec-xunitpatterns.md` — tradução pt-BR do verbete
+- `wiki/sources/rspec-xunitpatterns.md` — TL;DR, 4 afirmações centrais, 4 key claims, entidades/conceitos tocados, open questions, 2 citações preservadas
+- `wiki/entities/rspec.md` — nova entidade `stub`: framework RSpec, nova geração de membros do xUnit para "Tests as Specification"
+- `wiki/entities/jbehave.md` — nova entidade `stub` mínima: equivalente Java do RSpec, citado apenas por contraste
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/tdd.md` — `source_count` 23 → 24; nova seção "RSpec e a nova geração de membros do xUnit" e nova linha em Key Sources
+- `wiki/concepts/bdd.md` — `source_count` 4 → 5; nova seção "RSpec como possível precursor terminológico" (marcada [external]/inferência) e nova linha em Key Sources
+- `wiki/sources/test-context-xunitpatterns.md` — open question do RSpec resolvida com strikethrough, apontando para a nova fonte
+- `wiki/entities/gerard-meszaros.md` — `source_count` 31 → 32; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Entities (RSpec, JBehave)
+
+**Notas / open questions:** (1) **Achado principal**: fecha, com fonte primária dedicada, a lacuna de RSpec sem página própria — e amplia o mapeamento terminológico já conhecido (fixture→context) com dois pares novos: Test Method→specify, assert→should. (2) **Dado novo**: JBehave citado como equivalente Java do RSpec — primeira menção na wiki, sem profundidade própria (stub mínimo). (3) **Conexão inferida, não confirmada pela fonte**: RSpec como precursor terminológico do vocabulário formal de BDD ("Tests as Specification" ↔ especificação executável) — a fonte não cita BDD, Gherkin ou Dan North; marcada explicitamente como [external] nas páginas de RSpec e BDD. (4) Sem contradição com o resto da wiki.
+
+---
+
+## [2026-09-04] ingest | Análise de Currículo — Vaga Fake de Desenvolvedor Júnior
+
+**Fonte:** [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — transcrição de vídeo (autor/canal não identificados no texto fornecido) em que o autor cria uma vaga fake real de desenvolvedor júnior (Node/TypeScript/Java/React/AWS/Terraform, São Paulo, 2026), pede aplicações a juniors, e analisa ao vivo os três primeiros currículos recebidos, sem nenhum critério de seleção prévio. Transcrição bruta em pt-BR já estava no idioma-alvo da wiki — sem necessidade de tradução. Salva em `raw/analise-curriculo-vaga-junior-desenvolvedor.md` com o material de patrocínio (UVP) e CTA final (curso pago) explicitamente marcados como irrelevantes para a wiki.
+
+**Skill carregada:** `tech-mentor-leadership` por domínio (carreira/contratação/currículo) — caminho `/home/nemomartins/Documentos/new/skills/` não existe nesta máquina, mesmo skill drift já registrado em ingestões anteriores da wiki (ex.: RSpec, ver entrada anterior). Aplicado sem arquivo de skill externo carregado.
+
+**Arquivos criados:**
+- `raw/analise-curriculo-vaga-junior-desenvolvedor.md` — transcrição estruturada em Markdown
+- `wiki/sources/analise-curriculo-vaga-junior-desenvolvedor.md` — TL;DR, key claims, entidades/conceitos tocados, open questions, 3 citações preservadas, fonte irmã cross-referenciada
+- `wiki/concepts/metodo-star-bullet-points.md` — novo conceito `stub`: framework STAR/XYZ para transformar bullet points vagos em descrições objetivas de impacto
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/curriculo-vs-portfolio.md` — `source_count` 5 → 6; nova seção sobre projeto pessoal superando formatação de currículo na avaliação
+- `wiki/concepts/otimizacao-ats-curriculo.md` — `source_count` 2 → 3; duas novas seções (PDF pesquisável como pré-requisito mecânico; habilidade listada sem evidência no corpo do currículo)
+- `wiki/concepts/portfolio-backend-junior.md` — `source_count` 6 → 7; nova seção comparando três currículos reais
+- `wiki/concepts/vaga-junior-vira-pleno.md` — `source_count` 6 → 7; nova seção com exemplo concreto de vaga "júnior" com stack completa de pleno/sênior
+- `wiki/concepts/credencialismo-formacao-formal.md` — `source_count` 1 → 2; nova seção sobre faculdade como via de acesso a estágio
+- `wiki/concepts/cs50.md` — `source_count` 3 → 4; nova seção sobre projeto final do CS50 como peça de portfólio
+- `wiki/concepts/documentar-conquistas.md` — `source_count` 2 → 3; nova seção ligando o hábito à matéria-prima de bullet points fortes
+- `wiki/concepts/comunicacao-tecnica.md` — `source_count` 6 → 7; nova seção aplicando o princípio de tradução-na-emissão ao texto de currículo
+- `wiki/concepts/mercado-de-limoes-assimetria-de-informacao.md` — `source_count` 1 → 2; nova seção sobre a mesma assimetria do lado da contratação (habilidade declarada sem evidência)
+- `wiki/entities/linkedin.md` — `source_count` 1 → 2; nova linha em Key Sources (vaga-base do exercício veio do LinkedIn)
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (Carreira & Soft Skills)
+
+**Notas / open questions:** (1) **Achado principal, genuinamente novo**: projeto pessoal documentado (link + ferramentas + data) identificado como o diferencial mais forte observado entre três currículos reais — mais forte até que a qualidade de formatação do próprio documento, reforçando [[wiki/concepts/curriculo-vs-portfolio]] com um estudo de caso concreto. (2) **Padrão recorrente confirmado por uma segunda fonte independente**: habilidade (Java) listada sem nenhuma evidência de uso no corpo do currículo — o mesmo padrão já documentado em [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]], agora com exemplo verbatim e conectado explicitamente a [[wiki/concepts/mercado-de-limoes-assimetria-de-informacao]] como assimetria de informação do lado da contratação. (3) **Fonte irmã já existente**: [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]] cobre tema quase idêntico (vídeo/canal diferente, foco em .NET e "pensar produto") — cross-referenciada na nova fonte em vez de fundida, por serem vídeos distintos com amostras de currículo distintas. (4) Amostra de três currículos é explicitamente não representativa (autor afirma que foram só os três primeiros a chegar) — registrado como open question na fonte, tratado como estudo de caso qualitativo em todas as páginas atualizadas. (5) Sem contradição com o resto da wiki.
+
+---
+
+## [2026-09-04] ingest | Local-First vs Offline-First
+
+**Fonte:** [[wiki/sources/local-first-vs-offline-first]] — transcrição de vídeo (autor/canal não identificados no texto fornecido) sobre a distinção entre local-first e offline-first: a pergunta que separa as duas arquiteturas não é "funciona sem rede?" (ambas funcionam), e sim qual cópia do dado é a autoridade. Transcrição já em pt-BR, sem necessidade de tradução, salva em `raw/local-first-vs-offline-first.md`.
+
+**Skill carregada:** `tech-mentor-system-design` por domínio (arquitetura de sincronização client-server, sistemas distribuídos) — caminho `/home/nemomartins/Documentos/new/skills/` não existe nesta máquina, mesmo skill drift já registrado em ingestões anteriores. Aplicado sem arquivo de skill externo carregado.
+
+**Arquivos criados:**
+- `raw/local-first-vs-offline-first.md` — transcrição estruturada em Markdown
+- `wiki/sources/local-first-vs-offline-first.md` — TL;DR, 9 key claims, conceitos tocados, open questions
+- `wiki/concepts/offline-first.md` — novo conceito `draft`: servidor como autoridade, local como cache subordinado
+- `wiki/concepts/last-write-wins.md` — novo conceito `stub`: resolução de conflito por timestamp mais recente, tradeoff de perda silenciosa de dados
+- `wiki/questions/local-first-definicoes-conflitantes.md` — nova página de contradição registrando os dois significados incompatíveis de "local-first" na wiki
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/local-first.md` — `source_count` 1 → 2; reestruturado para apresentar a definição canônica (réplica primária, posse) como definição principal, com o uso anterior (HMAC/dado efêmero) rebaixado a seção explícita de "uso divergente", cross-referenciando a nova página de contradição
+- `wiki/concepts/crdt.md` — `source_count` 1 → 2; nova seção relacionando CRDT a LWW como estratégias concorrentes de resolução de conflito em local-first
+- `wiki/concepts/cap-theorem.md` — `source_count` 6 → 7; nova seção traçando paralelo estrutural entre CP/AP e offline-first/local-first
+- `wiki/sources/vector-clocks.md` — corrigido link quebrado `[[last-write-wins]]` → `[[wiki/concepts/last-write-wins]]`, agora que a página existe
+- `wiki/index.md` — nova linha em Sources; nova linha em Questions; duas novas linhas em Concepts (Escalabilidade & System Design); linha de `local-first` reescrita para refletir a revisão do conceito
+
+**Notas / open questions:** (1) **Contradição real, não superficial**: a wiki já tinha uma página `local-first` definindo o termo como "dado calculado no servidor, entregue ao cliente sem persistência, validado por HMAC" ([[wiki/sources/hmac-integridade-mensagem-local-first-entrevista]]) — o oposto conceitual da definição canônica desta nova fonte (dispositivo como réplica autoritativa, servidor como relay secundário). Resolvido por revisão da página, não por fusão: a definição canônica passou a liderar o documento, o uso anterior foi mantido como registro histórico explicitamente marcado. Ver [[wiki/questions/local-first-definicoes-conflitantes]] para a análise completa. (2) **Lacuna identificada**: `[[last-write-wins]]` já era citado por [[wiki/sources/vector-clocks]] desde 2026-04-22 sem página própria — corrigido nesta ingestão. (3) O vídeo cita CRDT apenas por contraste superficial; profundidade real já existe em [[wiki/concepts/crdt]] via [[wiki/sources/crdt-colaboracao-tempo-real]] — sem necessidade de expandir CRDT aqui. (4) Autor/canal do vídeo não identificados no texto — nenhuma entidade nova criada.
+
+---
+
+## [2026-09-04] ingest | Agent Waves + Modelos Fortes e Fracos: Otimizando Custo de API de IA
+
+**Fonte:** [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] — transcrição de vídeo (autor/canal não identificados no texto fornecido) sobre "Agent Waves" (nome recente para o padrão já conhecido de orquestração multiagente: coordenador quebra a tarefa, workers executam em paralelo) combinado com roteamento de modelo forte no coordenador e modelo fraco nos workers, para reduzir custo de API de IA. Transcrição já em pt-BR, sem necessidade de tradução, salva em `raw/agent-waves-custo-modelos-fortes-fracos-kimi.md`.
+
+**Skill carregada:** `tech-mentor-ai` por domínio (multiagentes, roteamento de modelo, custo de API de LLM) — caminho `/home/nemomartins/Documentos/new/skills/` não existe nesta máquina, mesmo skill drift já registrado em ingestões anteriores. Aplicado sem arquivo de skill externo carregado.
+
+**Arquivos criados:**
+- `raw/agent-waves-custo-modelos-fortes-fracos-kimi.md` — transcrição estruturada em Markdown
+- `wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi.md` — TL;DR, 10 key claims, conceitos tocados, open questions
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/subagentes.md` — `source_count` 7 → 8; nova seção "Agent Waves e Roteamento por Papel" explicando a alavanca de custo (modelo forte no coordenador, modelo barato nos workers) como eixo ortogonal ao benchmark de granularidade já existente na página
+- `wiki/concepts/roteamento-automatico-de-modelo.md` — `source_count` 4 → 5; nova seção "Roteamento por Papel Dentro de um Pipeline Multiagente" como eixo distinto dos já catalogados (complexidade, categoria estática, tolerância a guardrail)
+- `wiki/entities/moonshot-ai.md` — `source_count` 4 → 5; nova seção com preços granulares de cache hit/miss do Kimi K3 vs. K2.7 Code, e o uso de K3 como coordenador caro / K2.7 como worker barato
+- `wiki/entities/opencode.md` — `source_count` 3 → 4; nova seção descrevendo o uso do OpenCode como harness para medir, na prática, custo de agente único vs. Agent Waves na mesma tarefa
+- `wiki/concepts/ai-gateway-llm-router.md` — `source_count` 2 → 3; caso concreto medido (não só teórico) adicionado à seção do triângulo custo/performance/qualidade
+- `wiki/concepts/cache.md` — `source_count` 11 → 12; exemplo numérico concreto de cache hit vs. miss (preços reais da Moonshot AI) adicionado à seção de cache em LLMs
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Achado estrutural principal**: subagentes consomem mais tokens de input que um agente único (reinjeção de contexto a cada spawn) — essa é a razão pela qual delegar para um modelo caro em todos os subagentes de um Agent Wave *aumenta* custo, não reduz; a economia só existe se o overhead de tokens cair no preço de um modelo barato. (2) **Discrepância não resolvida entre simulação (~34%) e teste real (~5%)**: o autor não isola se a causa é o tamanho pequeno da tarefa testada ou a implementação deliberadamente não estruturada do Agent Wave — registrado como open question na fonte. (3) **Complementar, não redundante**, ao benchmark de granularidade já em [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]]: aquele testa *quantos* subagentes usar (mesmo modelo em todos); esta fonte testa *qual modelo cada papel* (coordenador vs. worker) deve usar, independente de quantidade. (4) Autor/canal do vídeo não identificados no texto — nenhuma entidade nova criada, apenas seções novas em entidades e conceitos já existentes.

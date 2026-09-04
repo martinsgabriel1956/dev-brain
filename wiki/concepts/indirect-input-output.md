@@ -3,8 +3,8 @@ type: concept
 title: "Entrada e Saída Indireta (Indirect Input / Indirect Output)"
 aliases: ["indirect input", "indirect output", "entrada indireta", "saída indireta", "control point", "observation point", "ponto de controle", "ponto de observação", "direct input", "entrada direta"]
 date_created: 2026-08-21
-date_updated: 2026-09-02
-source_count: 8
+date_updated: 2026-09-04
+source_count: 9
 tags: [testes, test-doubles, sut, doc, terminologia, xunit]
 skill: tech-mentor-testing
 status: stub
@@ -86,4 +86,5 @@ Sem esse vocabulário, é fácil descrever "mock" como "stub com asserção" —
 - [[wiki/sources/test-double-xunitpatterns-meszaros]] — vocabulário completo SUT/DOC/entrada-saída indireta/pontos de controle-observação
 - [[wiki/sources/sut-xunitpatterns]] — fonte primária isolada do termo SUT: papel relativo ao teste e escala com a granularidade (CUT/OUT/MUT/AUT)
 - [[wiki/sources/test-fixture-xunitpatterns]] — fonte primária isolada do termo test fixture/test context; JUnit e seus ports diretos mantêm esse conceito separado da Testcase Class que o cria
+- [[wiki/sources/test-context-xunitpatterns]] — fonte primária isolada do próprio termo test context: mesma equivalência a test fixture, com o dado novo de que o RSpec usa esse nome literalmente e um exemplo de código do Four-Phase Test
 - [[wiki/sources/observation-point-xunitpatterns]] — fonte primária isolada do termo observation point: contraparte simétrica de control point, fecha a hierarquia interaction point → control point | observation point

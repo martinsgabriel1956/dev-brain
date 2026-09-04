@@ -3,8 +3,8 @@ type: concept
 title: "Freelance Como Alavanca de Renda"
 aliases: ["freela para aumentar renda", "side income dev", "renda extra programador"]
 date_created: 2026-07-09
-date_updated: 2026-08-11
-source_count: 2
+date_updated: 2026-09-04
+source_count: 3
 tags: [financas-pessoais, carreira, freelance, renda, precificacao]
 skill: tech-mentor-leadership
 status: stub
@@ -22,6 +22,10 @@ Em faixas salariais baixas (< R$ 2.500/mês), um único freela pontual tem impac
 
 Captar o primeiro freela é o começo; **fechar grandes contratos** exige saber precificar. [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] argumenta que muitos devs bons tecnicamente travam justamente aí — por ignorarem negócio — e ensina [[wiki/concepts/ancoragem-de-preco|ancoragem de preço]] como ferramenta para elevar o valor cobrado por serviços/propostas.
 
+## Do Grande Contrato à Recorrência
+
+Fechar um contrato grande não encerra o funil: [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]] argumenta que, especificamente em serviços de IA, a sustentabilidade financeira de longo prazo depende de **recorrência** — o mesmo cliente recontratando, não apenas a captação pontual de projetos. Ver [[wiki/concepts/recorrencia-em-servicos-de-ia]] para os fatores (gerenciamento de expectativa, adoção organizacional) que determinam se um cliente volta a comprar.
+
 ## Relacionado
 
 - [[wiki/concepts/comparacao-na-carreira]] — mesma faixa etária/momento de carreira onde a régua de comparação costuma ser injusta
@@ -32,3 +36,4 @@ Captar o primeiro freela é o começo; **fechar grandes contratos** exige saber 
 
 - [[wiki/sources/como-eu-investiria-como-programador-ate-50000]]
 - [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — precificação (ancoragem) como alavanca para sair do freela pequeno rumo a grandes contratos
+- [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]] — próximo estágio do funil: sustentar recorrência depois de já ter fechado contratos maiores de IA

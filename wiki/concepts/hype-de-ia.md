@@ -3,8 +3,8 @@ type: concept
 title: "Hype de IA"
 aliases: ["hype ia", "ia hype", "narrativa ia investidores"]
 date_created: 2026-05-31
-date_updated: 2026-07-09
-source_count: 2
+date_updated: 2026-09-04
+source_count: 3
 tags: [hype-de-ia, fomo-tecnologico, era-agentica, roi-de-ia, ai-washing]
 skill: tech-mentor-ai
 status: stable
@@ -68,7 +68,12 @@ O hype vai se normalizar. A tecnologia não vai regredir.
 
 Este documento foca no hype de IA especificamente (financiado por VC), mas o padrão de detecção de qualquer hype tecnológico — um assunto "pipocando" repetidamente em canais independentes (Twitter/X, Hacker News, comunidades técnicas, newsletters) — é generalizado em [[wiki/concepts/avaliar-hype-tecnologico]], junto com o modelo [[wiki/concepts/triade-retorno-risco-liquidez]] para decidir se vale a pena embarcar nele.
 
+## Hype Vazando Para Dentro de um Projeto de Cliente
+
+[[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]] descreve uma consequência prática deste ciclo, do ponto de vista de quem entrega serviços de IA: o cliente consome o mesmo conteúdo de entretenimento/FOMO descrito acima fora do projeto, e tenta trazer esse hype para dentro do escopo já acordado (ex.: pedir uma feature "porque vi que isso muda tudo"). A contramedida descrita não é ignorar o cliente, mas comunicação constante (e-mail semanal de status) e negociação explícita de trade-off quando o pedido foge do escopo — ver [[wiki/concepts/gerenciamento-de-expectativa-em-servicos-de-ia]]. O hype, nesse caso, também é descrito como passageiro: "o hype a uma hora vai passar", mas a demanda por implementação real de IA é estrutural — reforçando a conclusão desta página de que a tecnologia é real mesmo quando o volume de atenção é inflado.
+
 ## Key Sources
 
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
 - [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]]
+- [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]] — hype como risco de scope creep vindo do cliente, em vez de fenômeno de mercado

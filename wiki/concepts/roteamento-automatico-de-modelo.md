@@ -3,8 +3,8 @@ type: concept
 title: "Roteamento Automático de Modelo"
 aliases: ["model routing", "auto-seleção de modelo", "roteador de LLM"]
 date_created: 2026-07-19
-date_updated: 2026-08-25
-source_count: 4
+date_updated: 2026-09-04
+source_count: 5
 tags: [llm, model-routing, prompt-engineering, agregador-de-modelos]
 skill: tech-mentor-ai
 status: draft
@@ -43,6 +43,12 @@ Diferença chave em relação ao caso Adapta ONE acima: aqui a decisão de qual 
 
 [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] descreve um eixo de roteamento distinto de todos os casos acima: não custo, não complexidade, mas **tolerância a guardrail** ([[wiki/concepts/ai-safety-guardrails]]). [[wiki/entities/lucas-montano]] relata rotear manualmente entre modelos conforme o risco percebido da tarefa em si — não da dificuldade dela: usa o Claude para automações que tocam dados sensíveis de produção (Stripe + Resend), justamente porque o guardrail alto confirma qualquer ação arriscada antes de executá-la; e usaria um modelo mais permissivo (chinês/open-weight) para tarefas de hobby de baixo risco real, como o caso do simulador de Windows XP de [[wiki/entities/pieter-levels|Pieter Levels]], que sofreu fricção desproporcional ao tentar essa mesma tarefa no Claude Code. É roteamento manual e qualitativo (decisão do humano por tarefa, não classificador automático), mais próximo do "roteamento por categoria estática" da Abacus.AI descrito acima — mas com o critério de categorização sendo risco/guardrail, não custo ou capacidade.
 
+## Novo Eixo: Roteamento por Papel Dentro de um Pipeline Multiagente (Coordenador vs. Worker)
+
+[[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] descreve um eixo de roteamento distinto de todos os casos acima: nenhum deles decide *entre requisições/tarefas independentes* — decidem entre **papéis hierárquicos dentro da mesma tarefa multiagente** ([[wiki/concepts/subagentes|Agent Waves]]). O coordenador (que pesquisa, planeja e quebra a tarefa em subtarefas) usa o modelo mais forte disponível; os workers, que só executam a implementação já especificada, usam um modelo mais barato da mesma família (Kimi K3 → Kimi K2.7 Code). É roteamento estático por função no pipeline, decidido no prompt/config antes da execução — mais parecido com o "roteamento por categoria estática" do Custom Router da Abacus.AI do que com um classificador aprendido, mas a categoria aqui é **papel no fluxo de trabalho**, não tipo de tarefa isolada.
+
+Achado da fonte: essa segregação só reduz custo total se o modelo do worker for de fato mais barato — cada subagente novo reinjeta contexto (aumentando tokens de input em relação a um agente único), e se esse overhead cair no preço do modelo caro, o roteamento por papel deixa de compensar. Uma simulação projetou ~34% de economia; um teste real na mesma tarefa (pequena) só confirmou ~5%, atribuído ao tamanho reduzido da tarefa e a uma implementação não otimizada do pipeline.
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/skills-agente]] — no caso da Adapta, o roteamento de modelo e as skills de contexto pessoal operam juntos: a skill fornece o contexto, o roteador escolhe o modelo que processa esse contexto
@@ -56,3 +62,4 @@ Diferença chave em relação ao caso Adapta ONE acima: aqui a decisão de qual 
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — Custom Router da Abacus.AI como caso de roteamento por categoria estática configurada pelo humano
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — contraste com rotação de contas free tier (eixo de credencial, não de modelo)
 - [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — novo eixo de roteamento manual por tolerância a guardrail (Claude para dados sensíveis, modelo permissivo para hobby de baixo risco)
+- [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] — roteamento por papel dentro de um pipeline multiagente: modelo forte no coordenador, modelo barato nos workers de implementação

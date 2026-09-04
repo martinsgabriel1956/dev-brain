@@ -3,8 +3,8 @@ type: concept
 title: "Avaliar Hype Tecnológico com a Tríade Retorno-Risco-Liquidez"
 aliases: ["como identificar hype", "avaliação de tecnologia emergente", "quando adotar tecnologia nova", "hype tecnológico"]
 date_created: 2026-07-09
-date_updated: 2026-09-03
-source_count: 2
+date_updated: 2026-09-04
+source_count: 3
 tags: [hype, tomada-de-decisao, escolha-de-stack, carreira, tech-debt]
 skill: tech-mentor-leadership
 status: stable
@@ -59,7 +59,12 @@ Um projeto pessoal/paralelo em que você declara explicitamente que não busca r
 - [[wiki/concepts/escolha-de-stack]] trata da dicotomia aprender-vs-monetizar na escolha de tecnologia para um projeto — a tríade aqui formaliza *por que* essa dicotomia existe: aprender tecnologia nova é uma aposta de retorno-conhecimento com risco controlado (projeto pessoal), enquanto monetizar exige rentabilidade financeira real que justifique o risco.
 - [[wiki/concepts/tech-debt-como-ferramenta]] e o over-engineering compartilham a mesma estrutura de decisão: risco e liquidez ruins só se justificam por retorno comprovadamente alto.
 
+## Hype do Lado do Cliente em Serviços de IA
+
+[[wiki/concepts/hype-de-ia]] descreve, a partir de [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]], uma aplicação adjacente desta tríade fora do contexto de escolha de stack: o cliente de um projeto de IA pode avaliar mal o hype que consome (retorno superestimado, risco/liquidez ignorados) e tentar puxar esse julgamento errado para dentro do escopo do projeto. A resposta prática ali é do implementador, não do cliente — negociar trade-off explícito em vez de aceitar a avaliação de risco distorcida do cliente.
+
 ## Key Sources
 
 - [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]]
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — mesma conclusão por outro caminho: não existe tecnologia perfeita, só adequação ao caso de uso específico avaliada contra prós e contras
+- [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]] — aplicação da tríade ao hype consumido pelo cliente de um projeto de IA, não pelo próprio profissional

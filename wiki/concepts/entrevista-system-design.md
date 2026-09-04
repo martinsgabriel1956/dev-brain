@@ -3,8 +3,8 @@ type: concept
 title: "Entrevista de System Design (Whiteboard Interview)"
 aliases: ["system design interview", "whiteboard interview", "lousa branca", "entrevista de arquitetura"]
 date_created: 2026-07-20
-date_updated: 2026-09-03
-source_count: 9
+date_updated: 2026-09-04
+source_count: 10
 tags: [system-design, entrevistas, arquitetura, carreira]
 skill: tech-mentor-system-design
 status: draft
@@ -76,6 +76,15 @@ Assim como na [[wiki/concepts/entrevista-tecnica-coding|entrevista de coding]], 
 
 [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] contribui um checklist específico de concorrência/[[wiki/concepts/race-condition]], distinto dos erros mais gerais já cobertos nesta página: (1) não identificar sozinho que um cenário tem risco de race condition — o entrevistador não vai apontar o problema; (2) usar Redis/lock distribuído para tudo quando um `FOR UPDATE` simples resolveria — complexidade desnecessária é red flag tanto quanto ausência de tratamento; (3) abrir transação, travar uma linha do banco, e dentro dela fazer chamadas a APIs externas (pagamento, etc.) — trava o recurso pelo tempo da chamada de rede e é citado como motivo de eliminação imediata. Reforça, num domínio técnico específico, a mesma régua de senioridade já documentada em [[wiki/concepts/niveis-de-senioridade-system-design]]: pleno aplica a receita, sênior investiga o cenário antes de escolher a ferramenta.
 
+## O Fechamento da Série: Comportamental Pesa Mais que Repertório Técnico
+
+[[wiki/sources/como-se-comportar-na-entrevista-de-system-design-tier-s]] fecha a série de sete vídeos de [[wiki/entities/pedro-camaforte]] sem introduzir nenhum conceito técnico novo — em vez disso, formaliza a tese que já estava implícita nas três crenças-que-reprovam acima e no checklist de concorrência de [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]]: entre centenas de candidatos igualmente estudados para uma vaga Tier S, o que decide quem avança é como o candidato **comunica** o raciocínio e **reage a feedback**, não o repertório técnico em si (que é pré-requisito, não diferencial). Contribuições próprias:
+
+- **Mapeamento dos 7 conceitos da série de volta a features de sistemas clássicos** (Instagram, WhatsApp, YouTube) — cada feature de entrevista se decompõe em um dos sete conceitos já cobertos (escalar leituras/escritas, URL pré-assinada, real-time updates), servindo de heurística de ponto de partida para identificar o "desafio central" de qualquer prompt de entrevista.
+- **Roteiro de 3-4 etapas antes de desenhar**: requisitos funcionais/não funcionais (negociados em conversa direta, sem precisar saber os números de antemão) → entidades principais (≤2 min) → APIs/interfaces → só então o desenho, com aprofundamento como etapa opcional escolhida pelo entrevistador. Converge fortemente com o framework de 4 etapas em [skill: tech-mentor-system-design] `system-design.md` (Clarify Requirements → Estimativas → HLD → Deep Dive), com uma diferença de ordenação: a skill nomeia estimativas de capacidade como etapa distinta antes de entidades/APIs, enquanto esta fonte mantém a estimativa implícita dentro do levantamento de requisitos não funcionais.
+- **Tabela de dois perfis contrastados**: Desenvolvedor 1 (assume e já sai fazendo, fica defensivo com feedback, só cita tecnologia, faz monólogo) vs. Desenvolvedor 2 (pergunta antes, recebe feedback aberto, explica o porquê de cada decisão, colabora) — formalização didática da mesma régua comportamental já presente nas outras fontes desta página.
+- **"Nunca diga a tecnologia sem o porquê e o tradeoff"** — quase idêntico à "regra de ouro" já documentada na skill de system design ("nunca diga 'depende' sem completar 'depende de X, dado que X é Y, a escolha é Z porque...'"), aqui enquadrado como questão de comunicação/comportamento em vez de disciplina técnica pura.
+
 ## Key sources
 
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]
@@ -86,3 +95,4 @@ Assim como na [[wiki/concepts/entrevista-tecnica-coding|entrevista de coding]], 
 - [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — framework de 7 passos ensinado do zero sobre um encurtador de URL, com a regra de ouro "não invente as regras" e demonstração ao vivo do valor do passo final de revisão de requisitos
 - [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] — checklist de três erros de concorrência que eliminam candidatos: não identificar o risco de race condition, usar lock distribuído onde não é necessário, travar linha do banco durante chamada a API externa
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — formulação negativa das três crenças que reprovam: o enunciado já define o problema, velocidade é sinal de competência, e existe "a melhor tecnologia"
+- [[wiki/sources/como-se-comportar-na-entrevista-de-system-design-tier-s]] — fechamento da série de Pedro Camaforte: mapeamento dos 7 conceitos técnicos da série de volta a features de sistemas clássicos, roteiro de 3-4 etapas antes de desenhar, e a tabela de dois perfis de candidato (que assume vs. que pergunta; monólogo vs. colaboração)

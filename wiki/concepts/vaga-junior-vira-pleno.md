@@ -3,8 +3,8 @@ type: concept
 title: "Vaga Júnior Vira Pleno"
 aliases: ["sumiço de vagas júnior", "vaga júnior exigindo pleno", "requisito júnior inflado"]
 date_created: 2026-07-31
-date_updated: 2026-08-26
-source_count: 6
+date_updated: 2026-09-04
+source_count: 7
 tags: [carreira, mercado-de-trabalho, junior, contratacao]
 skill: tech-mentor-leadership
 status: stub
@@ -46,6 +46,10 @@ Pode ser uma manifestação específica, em nível de categoria de vaga, do padr
 
 [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] descreve um padrão de sinal oposto ao desta página, útil para não confundir os dois: em ciclos de mercado aquecido (muita liquidez, canais de recrutamento saturados), [[wiki/concepts/body-shop-terceirizacao|Body Shops]] vendem júnior com currículo "florido" a **preço de sênior**, por falta de sênior disponível no mercado — o rótulo sobe, não o requisito técnico real. Já esta página documenta o padrão em ciclo de depressão: rótulo "júnior" mantido, mas requisito técnico exigido sobe para nível pleno. Os dois padrões não são o mesmo mecanismo (um é sobre preço/rótulo em alta demanda, o outro é sobre requisito em baixa demanda), mas ambos ilustram como [[wiki/concepts/ciclo-de-mercado-tech|o ciclo de mercado]] distorce a relação entre rótulo de vaga e nível técnico real — em direções opostas dependendo da fase do ciclo.
 
+## Exemplo Concreto de Vaga "Júnior" com Stack de Pleno/Sênior
+
+[[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] descreve — sem discutir o fenômeno por nome — uma vaga real anonimizada de São Paulo, rotulada "desenvolvedor júnior" em 2026, exigindo Node, TypeScript, Java, React, sistemas distribuídos, AWS, testes automatizados, pipeline de CI/CD, Terraform e observabilidade. O próprio autor da fonte reconhece a tensão implicitamente ao afirmar que não é preciso preencher todos os requisitos para ser uma candidatura plausível — uma forma de admitir, na prática, que a lista de exigência formal está acima do que um júnior típico domina. Não é uma fonte que analisa o padrão "júnior vira pleno" diretamente, mas é um exemplo concreto e recente de vaga real que ilustra o fenômeno, com stack listada verbatim.
+
 ## Key Sources
 
 - [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — observação de origem, sem causa identificada pelo próprio relator
@@ -54,3 +58,4 @@ Pode ser uma manifestação específica, em nível de categoria de vaga, do padr
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — mecanismo adjacente: concentração de cargos segregados em full-stack, reduzindo vagas segmentadas por escopo
 - [[wiki/sources/crise-vagas-tech-juros-altos-nao-e-so-culpa-da-ia]] — mecanismo causal plausível (custo de capital), não confirmado diretamente contra este fenômeno específico
 - [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — contraponto anedótico: levantamento informal ainda mostra volume de vagas júnior com requisitos clássicos, não inflados
+- [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — exemplo concreto: vaga real rotulada "júnior" em 2026 com stack completa de Node/TypeScript/Java/React/AWS/Terraform/observabilidade

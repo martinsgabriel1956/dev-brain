@@ -3,8 +3,8 @@ type: concept
 title: "Critérios de Bom Teste"
 aliases: ["determinístico conciso relevante", "o que faz um teste bom", "qualidade de testes"]
 date_created: 2026-07-10
-date_updated: 2026-08-31
-source_count: 5
+date_updated: 2026-09-04
+source_count: 6
 tags: [testes, qualidade, flaky, relevância, craftsmanship]
 skill: tech-mentor-testing
 status: stable
@@ -59,3 +59,4 @@ Na prática, relevância tende a importar mais que concisão — um teste leveme
 - [[wiki/sources/test-xunitpatterns]] — fonte primária isolada da definição-raiz de "test": procedimento (manual ou automatizado) que verifica o SUT, frequentemente chamado de test case
 - [[wiki/sources/test-case-xunitpatterns]] — fonte primária isolada de "test case": sinônimo de test, mas também nomeia a Testcase Class (Test Suite Factory que agrupa Test Methods)
 - [[wiki/sources/test-fixture-xunitpatterns]] — fonte primária isolada de "test fixture"/"test context": em JUnit, mantido separado da Testcase Class que o produz
+- [[wiki/sources/test-context-xunitpatterns]] — fonte primária isolada de "test context": observa que a forma escolhida para construir o fixture (inline, factory, builder) tem "ramificações de longo alcance" sobre a escrita e manutenção dos testes — sem detalhar quais técnicas são preferíveis
