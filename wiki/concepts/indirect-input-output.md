@@ -3,8 +3,8 @@ type: concept
 title: "Entrada e Saída Indireta (Indirect Input / Indirect Output)"
 aliases: ["indirect input", "indirect output", "entrada indireta", "saída indireta", "control point", "observation point", "ponto de controle", "ponto de observação", "direct input", "entrada direta"]
 date_created: 2026-08-21
-date_updated: 2026-08-31
-source_count: 6
+date_updated: 2026-09-02
+source_count: 8
 tags: [testes, test-doubles, sut, doc, terminologia, xunit]
 skill: tech-mentor-testing
 status: stub
@@ -50,6 +50,14 @@ A fonte primária isolada do próprio termo DOC ([[wiki/sources/depended-on-comp
 
 A fonte primária isolada do próprio termo test fixture ([[wiki/sources/test-fixture-xunitpatterns]]) confirma a mesma equivalência já registrada acima (test fixture = test context = o que a fixture setup produz) e acrescenta uma nuance estrutural: em JUnit e seus ports diretos, esse test context é mantido conceitualmente **separado** da [[wiki/entities/junit|Testcase Class]] que o cria — reforçando que a Testcase Class é, na verdade, uma **Test Suite Factory** (ver [[wiki/sources/test-case-xunitpatterns]]), e o test fixture é o que ela produz a cada execução, não estado embutido permanentemente na classe.
 
+## Observation point fecha o par simétrico com control point
+
+A fonte primária isolada do próprio termo ([[wiki/sources/observation-point-xunitpatterns]]) faz para a saída o mesmo que [[wiki/sources/control-point-xunitpatterns]] fez para a entrada: "como o teste inspeciona o estado pós-exercício (*post-exercise state*) do SUT". Com os dois verbetes ingeridos, a hierarquia formal fica explícita — **interaction point** é a categoria mãe, com **control point** (pedir algo ao SUT: entrada) e **observation point** (verificar o que o SUT fez ou se tornou: saída) como os dois subtipos. O escopo de observation point é mais amplo que só a saída indireta observada por Spy/Mock: cobre também a verificação de **estado direto** do próprio SUT, não apenas o que ele disparou sobre um DOC. A mesma regra de design de control point se repete aqui, com motivo diferente: observation points criados **estritamente para viabilizar teste** não devem ser usados pelo production code, pois podem **expor detalhes de implementação privados** do SUT sem garantia de estabilidade (contra "bypassar validação de entrada", o risco do lado control point).
+
+## Interaction point é a categoria mãe, formalizada por fonte própria
+
+A fonte primária isolada do próprio termo ([[wiki/sources/interaction-point-xunitpatterns]]) formaliza o nó raiz da hierarquia já usada acima: **interaction point** é "um ponto no qual um teste interage com o SUT", e pode ser **ou** control point **ou** observation point — uma partição binária e exaustiva, sem terceira variante. Até esta fonte, "interaction point" só aparecia na wiki por menção indireta dentro das definições de control point e observation point ("It is a kind of interaction point"); agora a árvore completa do glossário fica documentada por fonte primária em todos os três nós: **interaction point → control point | observation point**.
+
 ## O SUT é sempre relativo ao teste, e seu escopo escala com a granularidade
 
 A fonte primária isolada do próprio termo SUT ([[wiki/sources/sut-xunitpatterns]]) formaliza algo que ficava implícito: SUT "é sempre definido a partir da perspectiva do teste" — não é uma propriedade fixa de uma classe, é um papel que muda conforme qual teste está rodando (a mesma classe pode ser SUT em um teste e DOC em outro). O tamanho do SUT também escala com a granularidade: em um unit test é uma classe/objeto/método (CUT/OUT/MUT); em um customer test é a aplicação inteira ou um subsistema grande (AUT). O eixo entrada/saída indireta descrito acima vale identicamente em qualquer escala — só muda o que está de cada lado do par SUT/DOC.
@@ -66,7 +74,7 @@ Sem esse vocabulário, é fácil descrever "mock" como "stub com asserção" —
 
 ## Questões Abertas
 
-- Os verbetes irmãos "indirect output", "observation point", "direct input" e "fixture teardown" do mesmo glossário xUnitPatterns.com ainda não têm fonte primária própria ingerida — só são conhecidos aqui por inferência a partir de [[wiki/sources/indirect-input-xunitpatterns]] e [[wiki/sources/test-double-xunitpatterns-meszaros]]. "control point" e "fixture setup" já foram ingeridos isoladamente em [[wiki/sources/control-point-xunitpatterns]] e [[wiki/sources/fixture-setup-xunitpatterns]]. Candidatos a ingestão futura para fechar o vocabulário.
+- Os verbetes irmãos "indirect output", "direct input" e "fixture teardown" do mesmo glossário xUnitPatterns.com ainda não têm fonte primária própria ingerida — só são conhecidos aqui por inferência a partir de [[wiki/sources/indirect-input-xunitpatterns]] e [[wiki/sources/test-double-xunitpatterns-meszaros]]. "control point", "fixture setup" e "observation point" já foram ingeridos isoladamente em [[wiki/sources/control-point-xunitpatterns]], [[wiki/sources/fixture-setup-xunitpatterns]] e [[wiki/sources/observation-point-xunitpatterns]]. Candidatos a ingestão futura para fechar o vocabulário.
 
 ## Key Sources
 
@@ -78,3 +86,4 @@ Sem esse vocabulário, é fácil descrever "mock" como "stub com asserção" —
 - [[wiki/sources/test-double-xunitpatterns-meszaros]] — vocabulário completo SUT/DOC/entrada-saída indireta/pontos de controle-observação
 - [[wiki/sources/sut-xunitpatterns]] — fonte primária isolada do termo SUT: papel relativo ao teste e escala com a granularidade (CUT/OUT/MUT/AUT)
 - [[wiki/sources/test-fixture-xunitpatterns]] — fonte primária isolada do termo test fixture/test context; JUnit e seus ports diretos mantêm esse conceito separado da Testcase Class que o cria
+- [[wiki/sources/observation-point-xunitpatterns]] — fonte primária isolada do termo observation point: contraparte simétrica de control point, fecha a hierarquia interaction point → control point | observation point

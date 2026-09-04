@@ -3,8 +3,8 @@ type: concept
 title: "Extreme Programming (XP)"
 aliases: ["xp", "programação extrema"]
 date_created: 2026-08-23
-date_updated: 2026-08-31
-source_count: 3
+date_updated: 2026-09-02
+source_count: 4
 tags: [extreme-programming, kent-beck, agile, historia, craftsmanship]
 skill: tech-mentor-testing
 status: stub
@@ -26,6 +26,10 @@ Metodologia ágil de desenvolvimento de software criada por [[wiki/entities/kent
 
 Fonte primária isolada: [[wiki/sources/unit-test-xunitpatterns]] (verbete de glossário de Gerard Meszaros). Na nomenclatura da XP, **"unit test"** também é chamado de **developer test** ou **programmer test** — sinônimos históricos, não termos com significado distinto. Detalhe de vocabulário nunca antes registrado nesta página, apesar de [[wiki/concepts/tdd]] já documentar o ciclo red-green-refactor que produz exatamente esse tipo de teste.
 
+## Definição de dicionário do glossário xUnitPatterns.com: só três práticas visíveis
+
+Fonte primária isolada: [[wiki/sources/extreme-programming-xunitpatterns]] (verbete de glossário de Gerard Meszaros). A definição mais enxuta já registrada para XP nesta wiki — uma única frase: "uma metodologia ágil de desenvolvimento de software que destaca pair programming, testes unitários automatizados e iterações curtas". Não cita TDD como ciclo, não cita planning game, refatoração contínua nem YAGNI — reforça, por contraste, o quanto o restante desta página (via Fowler) é mais rico que o vocabulário puro de glossário do site.
+
 ## Relação com práticas específicas já documentadas nesta wiki
 
 - [[wiki/concepts/tdd]] — ciclo RED-GREEN-REFACTOR, uma das práticas centrais da XP
@@ -45,3 +49,4 @@ Fonte primária isolada: [[wiki/sources/unit-test-xunitpatterns]] (verbete de gl
 - [[wiki/sources/c3-martin-fowler]]
 - [[wiki/sources/very-low-defect-project-martin-fowler]] — adoção séria de XP correlaciona com taxas de defeito muito baixas, sem ser garantia
 - [[wiki/sources/unit-test-xunitpatterns]] — fonte primária dos sinônimos "developer test"/"programmer test" para unit test em XP
+- [[wiki/sources/extreme-programming-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição mais genérica do próprio termo "eXtreme Programming"

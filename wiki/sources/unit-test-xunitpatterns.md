@@ -61,7 +61,7 @@ A fonte cita a nomenclatura de **eXtreme Programming**: "developer test" e "prog
 
 ## Questões Abertas
 
-- **"customer test" ainda não tem verbete de glossário isolado próprio** — conhecido até agora só por contraste dentro deste verbete e de [[wiki/sources/sut-xunitpatterns]]. Candidato natural para fechar o par de termos, junto com "acceptance test" e "user story", já listados no índice de Glossário do site mas não ingeridos.
+- ~~"customer test" ainda não tem verbete de glossário isolado próprio~~ — **corrigido**: ver [[wiki/sources/customer-test-xunitpatterns]], que fecha o par de contraste com fonte primária isolada e acrescenta o critério de independência das decisões de design. "acceptance test" e "user story" seguem no índice de Glossário do site sem ingestão isolada.
 - A fonte não distingue explicitamente as escolas London/Detroit (solitário/sociável) — esse refinamento continua vindo só de Fowler, via [[wiki/sources/integration-test-martin-fowler]], já registrado em [[wiki/concepts/unit-test-solitario-vs-sociavel]].
 
 ---

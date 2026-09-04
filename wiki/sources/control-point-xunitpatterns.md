@@ -3,7 +3,7 @@ type: source
 title: "Control Point (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["control point", "ponto de controle", "xunit patterns glossary control point"]
 date_created: 2026-08-23
-date_updated: 2026-08-23
+date_updated: 2026-09-02
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/control-point-xunitpatterns.md
 source_url: "http://xunitpatterns.com/control%20point.html"
 author: "Gerard Meszaros"
@@ -58,7 +58,7 @@ Esta é a afirmação de maior valor prático da fonte, sem equivalente explíci
 
 ## Questões Abertas
 
-- Restam do mesmo glossário: **"observation point"** (contraparte simétrica de control point, para saída indireta/verificação), **"direct input"** e **"fixture teardown"** — ainda conhecidos só por menção nas fontes já ingeridas. "fixture setup" já foi ingerido isoladamente em [[wiki/sources/fixture-setup-xunitpatterns]]. São os últimos candidatos para fechar o vocabulário completo do glossário xUnitPatterns.com usado nesta wiki.
+- **Atualização 2026-09-02:** "observation point" (a contraparte simétrica antecipada abaixo) e a categoria mãe "interaction point" já foram ingeridos isoladamente, em [[wiki/sources/observation-point-xunitpatterns]] e [[wiki/sources/interaction-point-xunitpatterns]] respectivamente — a hierarquia interaction point → control point | observation point está agora completa por fonte primária em todos os nós. Restam do mesmo glossário: **"direct input"** e **"fixture teardown"** — ainda conhecidos só por menção nas fontes já ingeridas. "fixture setup" já foi ingerido isoladamente em [[wiki/sources/fixture-setup-xunitpatterns]]. São os últimos candidatos para fechar o vocabulário completo do glossário xUnitPatterns.com usado nesta wiki.
 - A fonte não dá exemplo concreto de um "control point exclusivo de teste que bypassa validação" (ex.: um método `_setInternalStateForTest()`) — a regra fica registrada em abstrato; um exemplo de código real seria um enriquecimento útil se aparecer em fonte futura.
 
 ---

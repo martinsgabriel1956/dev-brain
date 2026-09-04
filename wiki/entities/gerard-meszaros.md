@@ -3,8 +3,8 @@ type: entity
 title: "Gerard Meszaros"
 aliases: ["Meszaros", "xUnit Test Patterns author"]
 date_created: 2026-07-19
-date_updated: 2026-08-31
-source_count: 15
+date_updated: 2026-09-02
+source_count: 21
 tags: [testes, autor, test-doubles, xunit, taxonomia]
 skill: tech-mentor-testing
 status: draft
@@ -41,9 +41,15 @@ Além de ser a fonte da taxonomia relatada por Fowler, Meszaros é creditado com
 - [[wiki/sources/sut-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição formal de SUT (system under test) e as siglas irmãs CUT/OUT/MUT/AUT
 - [[wiki/sources/unit-test-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição formal de unit test (critério: tamanho do SUT) e os sinônimos de XP (developer test, programmer test)
 - [[wiki/sources/test-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição mais básica de todas: o próprio termo "test" (procedimento que verifica o SUT), sinônimo de test case
+- [[wiki/sources/test-automater-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição de "test automater": a pessoa/papel do projeto que constrói os testes, distinta do "subject matter expert" que define quais testes devem existir
 - [[wiki/sources/test-case-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição de "test case": sinônimo de test, mas também nomeia a Testcase Class (Test Suite Factory que agrupa Test Methods)
 - [[wiki/sources/fixture-setup-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição de "fixture setup" e "test fixture"/"test context"
 - [[wiki/sources/test-fixture-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição do próprio termo "test fixture"/"test context" e a nuance de que JUnit o mantém separado da Testcase Class que o cria
 - [[wiki/sources/xunit-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição formal do próprio termo "xUnit" (padrão baseado em JUnit ou SUnit)
 - [[wiki/sources/test-double-martin-fowler]] — fonte secundária que popularizou e atribuiu a taxonomia a ele
 - [[wiki/sources/self-initializing-fake-martin-fowler]] — creditado como contribuidor de ideias, junto com Josh Price e Darren Cotterill
+- [[wiki/sources/procedure-variable-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição de "procedure variable" (function pointer/delegate): mecanismo de dynamic binding por trás do Configurable Test Double, e precursor histórico do despacho polimórfico
+- [[wiki/sources/observation-point-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição do próprio termo "observation point": contraparte simétrica de control point, fecha a hierarquia interaction point → control point | observation point
+- [[wiki/sources/interaction-point-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição do próprio termo "interaction point": a categoria mãe da qual control point e observation point são os dois subtipos exaustivos
+- [[wiki/sources/extreme-programming-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição mais genérica do próprio termo "eXtreme Programming": metodologia ágil que destaca pair programming, testes unitários automatizados e iterações curtas
+- [[wiki/sources/customer-test-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição do próprio termo "customer test": teste da funcionalidade visível do sistema, independente das decisões de design internas ao SUT — fecha, de fonte primária isolada, o par de contraste com "unit test"

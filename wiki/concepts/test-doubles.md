@@ -3,8 +3,8 @@ type: concept
 title: "Test Doubles"
 aliases: ["dublê de teste", "mock stub fake spy", "xunit test patterns"]
 date_created: 2026-04-22
-date_updated: 2026-08-31
-source_count: 17
+date_updated: 2026-09-02
+source_count: 20
 tags: [testes, test-doubles, mock, stub, fake, spy, dummy]
 skill: tech-mentor-testing
 status: stable
@@ -21,7 +21,7 @@ A fonte primária ([[wiki/sources/test-double-xunitpatterns-meszaros]]) sustenta
 - **SUT** (*System Under Test*) — o código sendo testado. **Nunca** é o que se substitui. Fonte primária isolada do próprio termo: [[wiki/sources/sut-xunitpatterns]] — SUT é sempre definido **a partir da perspectiva do teste** (papel relativo, não propriedade fixa do código) e seu escopo escala com a granularidade: classe/objeto/método (**CUT**/**OUT**/**MUT**) em unit tests, aplicação inteira ou subsistema (**AUT**) em customer tests.
 - **DOC** (*Depended-On Component*) — a dependência real. **É o que o double substitui.** Fonte primária isolada do termo: [[wiki/sources/depended-on-component-doc-xunitpatterns]] — "examinar e controlar" as interações do DOC com o SUT é a motivação formal para existir um Test Double.
 - **Entrada indireta** (*indirect input*) — valor que o SUT **recebe** de um DOC → precisa de **ponto de controle** → Stub/Mock. Fonte primária isolada de "control point": [[wiki/sources/control-point-xunitpatterns]] — o termo é mais amplo que só essa injeção (cobre também o próprio ato de exercitar o SUT), e cobra que control points exclusivos de teste nunca sejam usados pelo production code. É durante a fase de **fixture setup** — fonte primária isolada em [[wiki/sources/fixture-setup-xunitpatterns]] — que esses control points normalmente entram em cena, colocando o DOC no estado ("the 'before' picture") necessário para o teste.
-- **Saída indireta** (*indirect output*) — chamada/efeito que o SUT **dispara** sobre um DOC → precisa de **ponto de observação** → Spy/Mock.
+- **Saída indireta** (*indirect output*) — chamada/efeito que o SUT **dispara** sobre um DOC → precisa de **ponto de observação** → Spy/Mock. Fonte primária isolada de "observation point": [[wiki/sources/observation-point-xunitpatterns]] — contraparte simétrica de control point ("como o teste inspeciona o estado pós-exercício do SUT"), com escopo mais amplo que só a saída indireta (cobre também a verificação de estado direto do próprio SUT); mesma regra de não usar em production code, aqui pelo risco de expor detalhes de implementação privados.
 
 Esse eixo **controle × observação** é o que organiza os cinco tipos — formalizado com sua própria fonte primária em [[wiki/concepts/indirect-input-output]] (verbete "indirect input" isolado, ver [[wiki/sources/indirect-input-xunitpatterns]]). Meszaros ainda separa duas perguntas ortogonais: **por que** usar o double (define Dummy/Stub/Spy/Mock/Fake) vs. **como** construí-lo (Hard-Coded vs. Configurable Test Double — a técnica de construção não muda o papel). Detalhe importante: o **double só precisa expor a mesma API** que aquele teste exercita — não a interface inteira do DOC ("fiel o suficiente para a cena", na analogia do dublê de cinema).
 
@@ -50,7 +50,7 @@ Fonte primária dedicada: [[wiki/sources/replace-dependency-with-test-double-xun
 
 1. **Mecanismo de substituição** — [[wiki/concepts/dependency-injection|Dependency Injection]] (melhor para unit tests) vs. **Dependency Lookup** (melhor para customer tests).
 2. **Papel do double** — Fake Object, Test Stub ou Mock Object, decidido por como o teste vai usá-lo (não pela técnica de construção).
-3. **Técnica de construção** — Hard-Coded vs. Configurable Test Double (já registrado acima).
+3. **Técnica de construção** — Hard-Coded vs. Configurable Test Double (já registrado acima). Fonte primária isolada do mecanismo por trás do lado "Configurable": [[wiki/sources/procedure-variable-xunitpatterns]] — uma **procedure variable** (function pointer, ou delegate em .Net) é uma variável que referencia um procedimento em vez de um dado, permitindo atribuir o comportamento do double em runtime (dynamic binding) em vez de fixá-lo no código do double (o caminho Hard-Coded). A mesma fonte situa isso como precursor histórico do despacho polimórfico: C++ inicial montava suas dispatch tables de objetos/classes manualmente com tabelas de procedure variables, antes de existir sintaxe de método virtual — ver [[wiki/concepts/polimorfismo]].
 
 Em linguagens estaticamente tipadas, normalmente é preciso aplicar antes a refatoração **Extract Interface** [Fowler], para que a variável que guarda a dependência seja tipada pela interface — não pela classe concreta —, permitindo trocar a implementação real pelo double sem alterar o SUT. Testes com Mock Object tendem a ser mais "front-loaded" (trabalho concentrado na construção do double) e costumam fechar com uma chamada a um método de `verification`.
 
@@ -122,3 +122,6 @@ Mockar um banco de dados permite verificar que `db.save` foi chamado, mas não c
 - [[wiki/sources/self-initializing-fake-martin-fowler]] — fonte primária do padrão SelfInitializingFake: Fake vs. Stub, mecanismo de cache
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — limite do mock de banco: assertion de chamada não prova persistência
 - [[wiki/sources/test-fixture-xunitpatterns]] — verbete de glossário dedicado ao termo test fixture/test context, o "palco" onde Test Doubles entram durante a fixture setup; nuance: em JUnit esse fixture é produto da Testcase Class, não estado embutido nela
+- [[wiki/sources/procedure-variable-xunitpatterns]] — verbete de glossário dedicado ao termo "procedure variable" (function pointer/delegate): mecanismo de dynamic binding por trás do Configurable Test Double, e precursor histórico do despacho polimórfico em C++ pré-OOP
+- [[wiki/sources/observation-point-xunitpatterns]] — verbete de glossário dedicado ao próprio termo observation point: contraparte simétrica de control point, fecha a hierarquia interaction point → control point | observation point
+- [[wiki/sources/interaction-point-xunitpatterns]] — verbete de glossário dedicado ao próprio termo interaction point: a categoria mãe de control point e observation point, partição binária e exaustiva de como um teste interage com o SUT

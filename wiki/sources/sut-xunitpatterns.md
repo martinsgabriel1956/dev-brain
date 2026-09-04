@@ -3,7 +3,7 @@ type: source
 title: "SUT — System Under Test (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["SUT", "system under test", "sistema sob teste", "AUT", "MUT", "CUT", "xunit patterns glossary SUT"]
 date_created: 2026-08-31
-date_updated: 2026-08-31
+date_updated: 2026-09-02
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/sut-xunitpatterns.md
 source_url: "http://xunitpatterns.com/SUT.html"
 author: "Gerard Meszaros"
@@ -60,7 +60,8 @@ Nenhuma menção prévia a **AUT** (*application under test*), **MUT** (*method(
 ## Questões Abertas
 
 - **OUT** (*object under test*) é citado no texto mas não recebe entrada própria no índice de Glossário do site (só aparece dentro do verbete de SUT) — tratado aqui como sigla irmã de mesmo peso que CUT/MUT, sem fonte primária isolada própria.
-- Os verbetes irmãos "observation point", "indirect output", "direct input" e "fixture teardown" do mesmo glossário seguem sem fonte primária isolada ingerida (lacuna já registrada em ingests anteriores — ver [[wiki/concepts/indirect-input-output]]).
+- Os verbetes irmãos "indirect output", "direct input" e "fixture teardown" do mesmo glossário seguem sem fonte primária isolada ingerida (lacuna já registrada em ingests anteriores — ver [[wiki/concepts/indirect-input-output]]). "observation point" já foi ingerido isoladamente em [[wiki/sources/observation-point-xunitpatterns]].
+- ~~"customer test", citado aqui como o tipo de teste em que o SUT escala para AUT (aplicação inteira), não tinha fonte primária isolada~~ — **corrigido**: ver [[wiki/sources/customer-test-xunitpatterns]], que formaliza o termo e acrescenta um critério novo (independência das decisões de design do SUT) não citado nesta página.
 
 ---
 

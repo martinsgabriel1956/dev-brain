@@ -3,7 +3,7 @@ type: source
 title: "Test (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["test", "teste", "test case", "caso de teste", "xunit patterns glossary test"]
 date_created: 2026-08-31
-date_updated: 2026-08-31
+date_updated: 2026-09-02
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/test-xunitpatterns.md
 source_url: "http://xunitpatterns.com/test.html"
 author: "Gerard Meszaros"
@@ -54,7 +54,8 @@ Muitas convenções de mercado tratam "test case" como um documento/especificaç
 ## Questões Abertas
 
 - ~~"test case" não recebe verbete próprio no índice de Glossário do site~~ — **corrigido**: recebe, sim, verbete próprio. Ver [[wiki/sources/test-case-xunitpatterns]], que confirma o sinônimo genérico e acrescenta um segundo sentido técnico do XUnit (Testcase Class como Test Suite Factory).
-- **"test suite" e "test run"**, termos irmãos que agregam testes individuais, seguem sem fonte primária isolada ingerida — candidatos naturais para fechar a base do vocabulário junto com "customer test" e "acceptance test" (já registrados como lacuna em [[wiki/sources/unit-test-xunitpatterns]]).
+- **"test suite" e "test run"**, termos irmãos que agregam testes individuais, seguem sem fonte primária isolada ingerida — candidatos naturais para fechar a base do vocabulário. ~~"customer test" e "acceptance test" também seguiam sem fonte isolada~~ — **parcialmente corrigido**: ver [[wiki/sources/customer-test-xunitpatterns]]; "acceptance test" permanece sem fonte isolada.
+- ~~Quem constrói o teste não tem papel formalizado no glossário~~ — **corrigido**: ver [[wiki/sources/test-automater-xunitpatterns]], que isola o papel de "test automater" (quem constrói/automatiza os testes definidos aqui) e o distingue do "subject matter expert" (quem decide o que testar). Restam ainda "test maintainer", "test reader" e "test stripper" como papéis irmãos não ingeridos.
 
 ---
 

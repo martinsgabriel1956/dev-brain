@@ -3,8 +3,8 @@ type: concept
 title: "Pirâmide de Testes"
 aliases: ["test pyramid", "ice cream cone", "testing trophy", "estratégia de testes"]
 date_created: 2026-04-22
-date_updated: 2026-08-31
-source_count: 13
+date_updated: 2026-09-02
+source_count: 14
 tags: [testes, pirâmide, estratégia, unitário, integração, e2e, projetos-novos]
 skill: tech-mentor-testing
 status: stable
@@ -145,9 +145,14 @@ Nessa leitura, o teste de maior valor por unidade de custo tende a ser um teste 
 
 [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] traz o mesmo racional de "testes como seguro contra IA" (já registrado via [[wiki/sources/roadmap-dev-senior-2026]]) sob a ótica de progressão de carreira: revisitando uma lista própria de 4 anos atrás sobre requisitos de pleno, o autor reclassifica testes automatizados como um dos únicos itens que **ficaram mais importantes** (não apenas mantidos) — junto de tooling avançado. Relato de primeira pessoa: escreve mais testes hoje do que em qualquer momento anterior da carreira, e delega cada vez menos a escrita autônoma de testes à própria IA, preferindo planejar quais testes escrever e como rodá-los no CI.
 
+## O topo da pirâmide tem nome formal: customer test
+
+Fonte primária isolada: [[wiki/sources/customer-test-xunitpatterns]] (verbete de glossário de Gerard Meszaros). O topo da pirâmide — E2E/aceitação — corresponde ao que o glossário xUnitPatterns.com chama de **customer test**: teste da funcionalidade *visível* do sistema, com o SUT sendo a aplicação inteira ou um módulo funcional de ponta a ponta. A fonte acrescenta um critério que a pirâmide, por si só, não formaliza: um customer test deveria ser **independente das decisões de design internas ao SUT** — o mesmo conjunto de testes de aceitação deveria valer não importa como o sistema é construído por dentro, ainda que a arquitetura de alto nível possa mudar *como* o teste interage com o SUT (ex.: via UI vs. via API).
+
 ## Key Sources
 
 - [[sources/piramide-de-testes]]
+- [[wiki/sources/customer-test-xunitpatterns]] — fonte primária isolada do termo "customer test": nome formal do topo da pirâmide, com o critério de independência das decisões de design do SUT
 - [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — testes automatizados reclassificados como requisito que ficou mais importante (não só mantido) na progressão de pleno, junto de tooling avançado
 - [[sources/roadmap-dev-senior-2026]] — testes como seguro contra decisões ruins da IA (pilar 5)
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]] — base da pirâmide como pré-requisito de segurança para refatorar
