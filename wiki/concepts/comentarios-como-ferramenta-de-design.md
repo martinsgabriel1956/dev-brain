@@ -3,8 +3,8 @@ type: concept
 title: "Comentários Como Ferramenta de Design"
 aliases: ["write the comments first", "escrever comentários primeiro", "comments as design tool", "interface comment", "implementation comment"]
 date_created: 2026-07-29
-date_updated: 2026-08-18
-source_count: 2
+date_updated: 2026-09-08
+source_count: 3
 tags: [comentarios, documentacao, design, ousterhout, clean-code, abstracao]
 skill: tech-mentor-backend
 status: draft
@@ -59,7 +59,12 @@ Processo descrito pelo autor: comentário de interface da classe → assinaturas
 - [[wiki/concepts/naming]] — nomes e comentários são as duas ferramentas do livro para reduzir obscuridade; Ousterhout defende as duas contra a posição de Martin de eliminar comentários em favor de nomes de método extremamente longos.
 - [[wiki/concepts/refatoracao]] — regras de manutenção de comentários (Cap. 16) aplicadas especificamente ao contexto de modificar código já existente.
 
+## "A Utopia do Código Autodocumentado" Contrariada pelos Projetos Open Source Mais Citados
+
+[[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] escolhe o Cap. 15 como o trecho mais valioso do livro, reforçando a discordância com Clean Code por um caminho empírico: projetos amplamente reconhecidos como referência de qualidade — API pública do Google, o kernel Linux, a JVM, o Spring — usam comentários extensivamente, contrariando a "utopia" de que código suficientemente bem escrito dispensaria documentação. O argumento não é uma citação do livro, mas converge diretamente com a posição de Ousterhout já registrada acima.
+
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — Caps. 12, 13 e 15 (as quatro desculpas, interface vs. implementação, escrever comentários primeiro, discordância com Clean Code)
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — exemplo pontual de comentário substituível por naming melhor de constante (convergente com Clean Code, não com a defesa geral de Ousterhout)
+- [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — Cap. 15 escolhido como o trecho mais importante do livro; projetos open source de referência (Google, Linux, JVM, Spring) como contra-exemplo prático da "utopia do código autodocumentado"

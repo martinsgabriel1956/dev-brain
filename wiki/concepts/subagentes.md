@@ -3,9 +3,9 @@ type: concept
 title: "Subagentes"
 aliases: ["subagents", "sub-agentes", "Task tool", ".claude/agents"]
 date_created: 2026-07-03
-date_updated: 2026-09-04
-source_count: 8
-tags: [subagentes, claude-code, multi-agent, paralelismo, context-engineering, harness, list-agents, mensagens-cruzadas]
+date_updated: 2026-09-10
+source_count: 9
+tags: [subagentes, claude-code, multi-agent, paralelismo, context-engineering, harness, list-agents, mensagens-cruzadas, fork, permission-mode]
 skill: tech-mentor-ai
 status: draft
 ---
@@ -15,6 +15,18 @@ status: draft
 Padrão de paralelismo **a nível de janela de contexto**: o agente principal ([[wiki/concepts/ciclo-agente|chat pai]]) delega uma tarefa a uma instância separada do modelo, que roda numa janela de contexto própria, executa sua tarefa isoladamente e retorna **apenas o resultado final** — o raciocínio intermediário e os tool calls do subagente não entram no contexto do agente pai.
 
 No [[wiki/entities/claude-code]], isso é implementado pela tool `Task`/`Agent`: cada subagente é, na prática, um processo separado sendo lançado pelo processo pai.
+
+## Fork vs. Subagent
+
+[[wiki/sources/guia-pratico-subagents-claude-code-configuracao-fork-invocacao]] traça uma distinção que faltava nesta página: **fork** (`/fork` no [[wiki/entities/claude-code]]) clona **toda a conversa** do agente principal — todo o contexto, todo o histórico — para um novo background agent, que continua dali como se fosse uma segunda instância do mesmo main agent. Um **subagent** não herda a conversa por padrão: ele nasce com uma janela própria, recebendo só o prompt da tarefa que o pai decidiu delegar. É por isso que subagent economiza contexto (janela pequena e focada) enquanto fork multiplica o mesmo contexto grande em paralelo — os dois mecanismos resolvem problemas diferentes (fork = continuar a mesma linha de raciocínio em paralelo; subagent = isolar uma subtarefa do raciocínio principal).
+
+## Três Formas de Invocar um Subagent
+
+1. **Linguagem natural** — pedir diretamente ("inicie um subagent que faça X"); o Claude Code carrega a skill relevante e instancia um agente **General Purpose** em background, sem precisar de nenhum agente customizado pré-criado.
+2. **Menção explícita `@nome-do-agent`** — exige um subagent já declarado em `.claude/agents/*.md` (criado manualmente ou pedindo ao Claude para criar); autocomplete lista os agentes disponíveis.
+3. **`claude --agent <nome>`** fora da sessão atual — inicia a sessão inteira do Claude Code já dentro daquele agente customizado, com seu contexto e modo de operação, sem passar pelo main agent genérico primeiro.
+
+Nota: o comando `/agent` (invocação direta por slash) foi removido do Claude Code — a via atual passa por uma dessas três formas.
 
 ## Diferença Central para Worktrees
 
@@ -33,6 +45,15 @@ Diferente de uma skill pura, um subagente pode fixar:
 
 - **`model`** — ex.: Opus para um agente de Product Manager (decisões de maior peso), Sonnet para implementação, Haiku para documentação.
 - **`tools`** — lista restrita de [[wiki/concepts/tool-call|tools]] disponíveis. Um subagente "code reviewer" só precisa de `Read`, `Grep`, `Glob`, `Bash` — sem `Write`/`Edit`, porque ele não escreve código, só analisa. Restringir tools reduz o system prompt do subagente e, por consequência, o custo em tokens.
+
+### Outros Campos de Configuração ([[wiki/sources/guia-pratico-subagents-claude-code-configuracao-fork-invocacao]])
+
+- **`permission mode`** — `default`; `acceptEdits` (autoaceita edição de arquivo — recomendação de uso corriqueiro para subagent); `dontAsk`/`deny` (nega automaticamente o que não está explicitamente permitido); `bypassPermissions` (pula toda permissão — só seguro dentro de VM/dev container isolado, nunca rodando muitos agentes em paralelo sem sandbox); `plan`.
+- **`isolation`** — roda o subagent numa [[wiki/concepts/worktree-paralelismo|worktree]] isolada, evitando conflito de arquivo com outros agentes em paralelo.
+- **`max turns`** — limite de round trips de tool call; configuração de baixo valor prático na maioria dos casos.
+- **`skills`** — controla quais [[wiki/concepts/skills-agente|skills]] entram pré-injetadas no contexto do subagent. Sem configuração explícita, o subagent descobre skills disponíveis sob demanda, igual ao mecanismo padrão de descoberta. Dá para pré-injetar skills relevantes ao papel do agente (ex.: um code reviewer pré-carregado com skills de padrão de codebase) ou bloquear o acesso via `disallowedTools` negando a ferramenta de skill.
+- **`memory`** — três tipos de memória persistente do subagent: **user** (vale em todos os projetos do usuário), **projeto** (aprendizados deste projeto, só relevante se a auto memory do projeto estiver ativa) e **local** (não versionada em Git, privada da máquina) — versus uma memória de projeto compartilhada via Git com toda a equipe.
+- **`background`** — se o subagent roda em background ou não.
 
 ## Padrão Orquestrador
 
@@ -116,3 +137,4 @@ Isso é complementar, não substituto, ao benchmark de granularidade da seção 
 - [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — gestão de projeto (épico → história → tarefa → subtarefa com dependências cruzadas) como exemplo de como decidir quantos subagentes podem rodar em paralelo sem se bloquear, mesmo antes de qualquer agente de IA entrar no processo
 - [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] — benchmark de campo com 4 cenários de granularidade (sem subagente, 1 por task, agrupado por fase, sweet spot de 3): granularidade excessiva piora tempo, custo e qualidade ao mesmo tempo; agrupamento coeso iguala ou supera 1 agente único com janela final muito mais livre
 - [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] — "Agent Waves" (rebatismo do Padrão Orquestrador) + roteamento por papel (coordenador forte, workers baratos) como alavanca de custo ortogonal à granularidade; simulação projeta ~34% de economia, teste real só confirma ~5%
+- [[wiki/sources/guia-pratico-subagents-claude-code-configuracao-fork-invocacao]] — distinção fork (`/fork`, clona toda a conversa) vs. subagent (não herda conversa); três formas de invocação (linguagem natural, `@nome`, `claude --agent`); campos `permission mode`, `isolation`, `max turns`, `skills`, `memory` (user/projeto/local), `background`; opinião do autor de que o ganho do subagent está no isolamento de contexto, não no paralelismo massivo

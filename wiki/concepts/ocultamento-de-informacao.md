@@ -3,8 +3,8 @@ type: concept
 title: "Ocultamento de Informação (Information Hiding)"
 aliases: ["information hiding", "information leakage", "vazamento de informação", "decomposição temporal", "temporal decomposition"]
 date_created: 2026-07-29
-date_updated: 2026-07-29
-source_count: 1
+date_updated: 2026-09-08
+source_count: 2
 tags: [arquitetura, complexidade, design, ousterhout, information-hiding, parnas]
 skill: tech-mentor-backend
 status: draft
@@ -32,13 +32,19 @@ Ocorre quando uma decisão de design se reflete em mais de um módulo. Exemplo d
 
 Regra prática: a ordem de execução quase sempre importa e vai aparecer em algum lugar do código — mas não precisa (e geralmente não deveria) determinar a estrutura de módulos.
 
+## Vazamento de Informação e Change Amplification São o Mesmo Fenômeno, Vistos de Ângulos Diferentes
+
+[[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] descreve, sem citar o termo "information leakage" diretamente, exatamente esse mecanismo pelo ângulo de quem sofre a consequência: uma mudança que parece localizada numa única classe se espalha para dependências desconhecidas — porque a mesma decisão de design estava, sem que ninguém soubesse, replicada em múltiplos lugares do código. Ver [[wiki/concepts/sintomas-de-complexidade-ousterhout]] para o vocabulário completo do Cap. 2 (change amplification, cognitive load, unknown unknowns) que essa fonte introduz na wiki.
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/modulo-profundo]] — ocultamento de informação é a técnica-mãe para produzir módulos profundos; quanto mais se esconde, mais funcional e mais simples a interface tende a ficar.
 - [[wiki/concepts/red-flags-de-design]] — Information Leakage e Temporal Decomposition são dois dos 14 red flags catalogados no livro.
 - [[wiki/concepts/complexidade-acidental]] — vazamento de informação é uma forma estrutural (não do domínio) de complexidade acidental.
 - [[wiki/concepts/arquitetura-de-software]] — decisão de onde uma informação deveria "morar" é, em essência, uma decisão de arquitetura.
+- [[wiki/concepts/sintomas-de-complexidade-ousterhout]] — change amplification é o sintoma prático (Cap. 2) do qual information leakage é frequentemente a causa estrutural (Cap. 5).
 
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — Cap. 5, exemplos de servidor HTTP (leitura+parsing, parâmetros, defaults em respostas)
+- [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — change amplification descrito como o sintoma prático vivido por quem sofre com informação vazada/duplicada entre módulos

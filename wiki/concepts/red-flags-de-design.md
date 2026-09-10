@@ -3,8 +3,8 @@ type: concept
 title: "Red Flags de Design"
 aliases: ["design red flags", "sinais de alerta de design", "code smell (ousterhout)"]
 date_created: 2026-07-10
-date_updated: 2026-08-18
-source_count: 3
+date_updated: 2026-09-08
+source_count: 4
 tags: [design, code-review, ousterhout, complexidade, qualidade]
 skill: tech-mentor-backend
 status: draft
@@ -56,6 +56,10 @@ Todo red flag e todo princípio de design tem exceções — levar qualquer idei
 
 [[wiki/concepts/code-smells]] é o vocabulário equivalente da linhagem Fowler/*Refactoring*, não uma continuação direta deste catálogo de Ousterhout. Os dois compartilham o mesmo espírito central — um sinal a investigar, não uma regra determinística a aplicar cegamente — e há sobreposição parcial de conteúdo: **Repetition** (red flag, item da tabela acima) cobre o mesmo território que [[wiki/concepts/dry]]; **Information Leakage** é próximo de [[wiki/concepts/feature-envy]] (uma classe acessando dados internos de outra); **Vague Name** e **Hard to Pick Name** se sobrepõem parcialmente com o smell "números mágicos" quando o problema é falta de um nome, não falta de nome preciso. Nenhum dos dois catálogos é subconjunto do outro — cada um nomeia sinais que o outro não cobre (ex.: [[wiki/concepts/god-object]], [[wiki/concepts/data-clumps]] e [[wiki/concepts/primitive-obsession]] não aparecem nesta lista de red flags).
 
+## Shallow Module na Prática: A API de I/O do Java
+
+[[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] traz um exemplo real e recorrente do red flag **Shallow Module** citado como referência até hoje pelo comitê executivo do Java: a API de I/O (`java.io`) exige compor manualmente uma cadeia de classes (`FileInputStream` → `BufferedInputStream` → `ObjectInputStream`) para uma operação comum — abrir e ler um arquivo com buffer — porque foi desenhada priorizando opções de otimização sobre um caminho simples para o caso comum. Ver detalhamento em [[wiki/concepts/modulo-profundo]].
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/code-review]] — o veículo prático recomendado para exercitar o reconhecimento de red flags.
@@ -64,9 +68,11 @@ Todo red flag e todo princípio de design tem exceções — levar qualquer idei
 - [[wiki/concepts/ocultamento-de-informacao]] — Information Leakage e Temporal Decomposition são os red flags específicos desse conceito.
 - [[wiki/concepts/comentarios-como-ferramenta-de-design]] — Comment Repeats Code, Implementation Documentation Contaminates Interface e Hard to Describe são os três red flags de comentários.
 - [[wiki/concepts/naming]] — Vague Name e Hard to Pick Name.
+- [[wiki/concepts/sintomas-de-complexidade-ousterhout]] — red flags detectam as causas estruturais que produzem os três sintomas (change amplification, cognitive load, unknown unknowns).
 
 ## Key Sources
 
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — catálogo completo dos 14 red flags nomeados no livro (apêndice "Summary of Red Flags")
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — catálogo paralelo de 9 code smells (linhagem Fowler), com sobreposição parcial (Repetition ≈ DRY, Information Leakage ≈ feature envy) mas cobrindo sinais distintos (god object, data clumps, primitive obsession)
+- [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — exemplo real recorrente de Shallow Module (API de I/O do Java), citado pelo comitê executivo do Java como erro de design reconhecido

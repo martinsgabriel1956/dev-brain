@@ -3,8 +3,8 @@ type: concept
 title: "TDD — Test-Driven Development"
 aliases: ["test driven development", "red green refactor", "desenvolvimento guiado por testes"]
 date_created: 2026-04-22
-date_updated: 2026-09-04
-source_count: 24
+date_updated: 2026-09-08
+source_count: 25
 tags: [testes, tdd, design, red-green-refactor, qualidade, dora, emergent-design]
 skill: tech-mentor-testing
 status: stable
@@ -135,9 +135,16 @@ Quando a interface, o input e o output já são conhecidos por uma especificaç�
 
 [[wiki/sources/rspec-xunitpatterns]] enquadra o [[wiki/entities/rspec|RSpec]] como um dos primeiros de uma nova geração de membros da família xUnit criados especificamente para tornar os testes de TDD mais úteis como especificação ("Tests as Specification"): troca todo o vocabulário de "teste" por vocabulário de especificação — fixture→[[wiki/sources/test-context-xunitpatterns|context]], Test Method→specify, assert→should. [[wiki/entities/jbehave|JBehave]] é citado como o equivalente Java. Ver [[wiki/concepts/bdd]] para a hipótese (não confirmada por esta fonte) de que esse vocabulário antecede o de BDD.
 
+## TDD Guia Design de Código, Não Arquitetura — Visão de Dois Praticantes
+
+[[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] discute a citação de [[wiki/entities/dhh|DHH]] "TDD is dead" ("the units of development should be abstractions, not features... don't create the abstraction in pieces over time; design it all at once", já registrada em [[wiki/entities/john-ousterhout]] como parte do Cap. 19 do livro) e chega a uma posição própria, convergente mas argumentada diferente: [[wiki/entities/mauricio-linhares|Maurício Linhares]] usa o teste como "primeiro usuário" do código — a facilidade ou dificuldade de testar valida se o design imaginado funciona —, mas restringe essa prática a backend/testes unitários, não a interfaces. [[wiki/entities/otavio-santana|Otávio Santana]] combina TDD com linguagem ubíqua de DDD para checar alinhamento com o negócio, mas hoje não pratica TDD estrito: escreve o teste, corrige bugs reproduzindo-os em teste primeiro, e trata testes majoritariamente como ferramenta de regressão, não de design.
+
+Ambos insistem numa distinção que DHH, na leitura deles, mistura: **design de código** (nível de método/classe, onde o teste unitário atua e pode legitimamente influenciar a modelagem) é diferente de **arquitetura** (estrutura da aplicação inteira) — teste unitário não consegue guiar decisões arquiteturais, só pode, no máximo, *sinalizar* que a arquitetura está complicando demais o design (exemplo citado: a quantidade de configuração/anotação que certas convenções do Spring exigem só para tornar uma classe testável).
+
 ## Key Sources
 
 - [[wiki/sources/tdd]]
+- [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — debate sobre TDD guiar design de código vs. arquitetura, distinção não feita explicitamente por DHH; teste como ferramenta de regressão predominante para Otávio Santana
 - [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
 - [[wiki/sources/tdd-sdd-bdd-era-ia]]

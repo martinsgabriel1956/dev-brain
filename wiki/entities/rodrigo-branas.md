@@ -3,8 +3,8 @@ type: entity
 title: "Rodrigo Branas"
 aliases: ["Branas", "Rodrigo Branas"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 6
+date_updated: 2026-09-08
+source_count: 7
 tags: [instrutor, ia-para-devs, clean-architecture, ddd, brasil]
 skill: tech-mentor-ai
 status: stable
@@ -30,6 +30,10 @@ Desenvolvedor e instrutor brasileiro com 25 anos de experiência em desenvolvime
 - Recomenda auto-compact em 400k tokens para evitar degradação de contexto
 - Não recomenda Sonnet 4.6 para tarefas exigentes — prefere Opus para custo/qualidade
 
+## Curso Antigo de Clean Architecture no Frontend (Autoria Inferida, Não Confirmada)
+
+[[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] é uma aula (transcrição sem identificação nominal do instrutor) que aplica Clean Architecture a uma tela de login em Vue.js. A nomenclatura de classes usada (`RemoteAuthentication`, `HttpPostClient`, `AxiosHttpClient`, `ValidationComposite`, `EmailValidation`, `RequiredFieldValidation`) e o termo "composição grude" para composition root batem exatamente com os repositórios públicos de referência `clean-ts-api`/`clean-react`, historicamente associados a Rodrigo Branas — mas isso é inferência por padrão de nomenclatura, não confirmação: nenhuma fala da transcrição cita o nome do instrutor. Se confirmado, é evidência de que o histórico de 15 anos ensinando Clean Architecture/DDD (citado no perfil acima) inclui pelo menos um curso de arquitetura de frontend aplicada a Vue.js, anterior ao foco atual em IA.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-01-abertura]]
@@ -38,3 +42,4 @@ Desenvolvedor e instrutor brasileiro com 25 anos de experiência em desenvolvime
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]
 - [[wiki/sources/formacao-ia-devs-aula-06-qa]]
+- [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] — autoria inferida (não confirmada) por padrão de nomenclatura de classes idêntico a `clean-ts-api`/`clean-react`

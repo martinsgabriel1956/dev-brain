@@ -4,7 +4,7 @@ title: "Autenticação e Autorização"
 aliases: ["authn authz", "authentication vs authorization", "quem é você vs o que você pode fazer"]
 date_created: 2026-07-09
 date_updated: 2026-08-03
-source_count: 4
+source_count: 5
 tags: [autenticacao, autorizacao, seguranca, backend, jwt, sessao, rbac]
 skill: tech-mentor-backend
 status: stub
@@ -57,6 +57,7 @@ O backend recebe uma credencial — cookie de sessão, JWT, token de API — que
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]]
 - [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] — chave de integração de fator único aceita como credencial completa de login
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — metáfora da portaria e enumeração de contas via mensagem de erro genérica
+- [[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] — falha de autenticação (login sem rate limit/MFA/resposta genérica) explorada isoladamente, sem depender de falha de autorização
 
 ## Key sources
 

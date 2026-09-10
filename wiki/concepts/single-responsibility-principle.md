@@ -3,8 +3,8 @@ type: concept
 title: "Single Responsibility Principle (SRP)"
 aliases: ["SRP", "single responsibility", "responsabilidade única"]
 date_created: 2026-05-01
-date_updated: 2026-08-18
-source_count: 5
+date_updated: 2026-09-08
+source_count: 6
 tags: [solid, oop, architecture]
 skill: tech-mentor-backend
 status: stub
@@ -34,6 +34,10 @@ Via [[wiki/sources/principios-solid-ilustrados]]: numa máquina de lavar, basta 
 
 Via [[wiki/sources/solid-principles-in-pictures-ugonna-thelma]]: "uma classe deve ter uma única responsabilidade" — quando uma classe acumula responsabilidades, o risco de bug aumenta porque uma mudança numa delas pode afetar as outras sem querer.
 
+## Estudo de Caso: de ~10 Responsabilidades a 4 num Componente de Tela
+
+[[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] dá um exemplo end-to-end de SRP aplicado a um componente de UI (login, Vue.js), não a uma classe de backend. O componente inicial acumula: validação de campo, gravação em cache/local storage, navegação, regra de negócio (autenticação), comunicação com API, tratamento de resposta/erro, renderização de UI e controle de estado — cerca de dez responsabilidades. Extraindo cada uma para sua própria camada (Domínio, Data, Infraestrutura, Validation), sobram só quatro no componente: renderizar UI, controlar estado, navegação e (deliberadamente, por ora) acesso ao local storage. É um exemplo raro na wiki de SRP sendo aplicado camada-a-camada num componente de frontend inteiro, em vez de uma classe isolada.
+
 ## Key Sources
 
 - [[wiki/sources/design-pattern-proxy]]
@@ -41,3 +45,4 @@ Via [[wiki/sources/solid-principles-in-pictures-ugonna-thelma]]: "uma classe dev
 - [[wiki/sources/principios-solid-ilustrados]]
 - [[wiki/sources/solid-principles-in-pictures-ugonna-thelma]]
 - [[wiki/sources/design-pattern-facade-codigo-fonte-tv]] — posição contrária: Facade que orquestra múltiplos serviços fere SRP, mesmo sem lógica de negócio própria
+- [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] — componente de login (Vue.js) reduzido de ~10 para 4 responsabilidades via separação em camadas de Clean Architecture

@@ -3,8 +3,8 @@ type: concept
 title: "Attack Surface (Superfície de Ataque)"
 aliases: ["attack surface", "superfície de ataque", "minimização de superfície", "surface minimization"]
 date_created: 2026-06-05
-date_updated: 2026-09-01
-source_count: 6
+date_updated: 2026-09-08
+source_count: 7
 tags: [attack-surface, security, arquitetura-seguranca, defense-in-depth, gatekeeper]
 skill: tech-mentor-security
 status: stable
@@ -57,6 +57,10 @@ Rotas de webhook em paths padrão (`/api/webhook`, `/api/hook`) são um exemplo 
 
 Nem toda superfície é intencional. [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] demonstra brute force de diretórios/arquivos (dirsearch) como primeiro passo de reconhecimento contra uma aplicação — a ferramenta testa caminhos comuns até encontrar algo que a aplicação não estava "mostrando" intencionalmente, mas também não estava bloqueando. Nesse caso, revelou um `.env` publicamente acessível. O princípio de "por que isso precisa estar acessível?" se aplica igualmente a arquivos estáticos: se um servidor não bloqueia explicitamente dotfiles e caminhos de configuração, eles fazem parte da superfície de ataque real, mesmo que nunca linkados por nenhuma página. Ver [[wiki/concepts/secrets-management]] para a mitigação específica desse caso.
 
+## Segundo Caso de Recon com dirsearch: Painel Admin Não Linkado
+
+[[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] repete a mesma técnica de recon já documentada acima (dirsearch, wordlist do SecLists) contra um alvo diferente: em vez de um `.env`, o fuzzing revela `/admin` e `/dashboard` — um painel administrativo funcional, nunca linkado em nenhuma página pública do site, mas plenamente acessível a quem soubesse (ou descobrisse) o caminho. Confirma o padrão: superfície não intencional não é uma exceção rara, é o resultado esperado de qualquer aplicação que não trata "arquivo/rota não linkada" como equivalente a "protegida".
+
 ## Visibilidade Como Multiplicador de Ataque
 
 Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], o autor generaliza um princípio observacional: quanto mais visibilidade um projeto tem (canal com audiência, presença ativa em rede social), mais ataques ele atrai — não porque a superfície técnica mudou, mas porque mais gente sabe que ela existe e tem motivo para testá-la (script kiddies, estudantes de segurança praticando). Cita como exemplo negativo o caso do "Cinema Hub" de Abraham, que deixou um arquivo `.env` publicamente acessível e teve a base de dados inteira exportada — mesma classe de falha (dotfile de configuração exposto) documentada acima via [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]], em um caso independente e não relacionado.
@@ -70,3 +74,4 @@ Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], 
 - [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — visibilidade/audiência como multiplicador do volume de ataques recebidos, independente de mudança técnica na superfície
 - [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] — brute force de diretórios (dirsearch) como técnica de recon que descobre superfície não intencional
 - [[wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv]] — campo de busca sem sanitização como ponto de entrada explorável (reflected XSS); exemplo didático de que qualquer campo que reflete input do usuário na resposta é superfície de ataque
+- [[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] — segundo caso independente de dirsearch revelando superfície não linkada (painel admin `/admin` e `/dashboard`, em vez de um `.env`)

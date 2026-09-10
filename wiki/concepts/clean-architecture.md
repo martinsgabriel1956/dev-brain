@@ -3,8 +3,8 @@ type: concept
 title: "Clean Architecture"
 aliases: ["arquitetura limpa", "clean arch"]
 date_created: 2026-07-24
-date_updated: 2026-09-01
-source_count: 9
+date_updated: 2026-09-08
+source_count: 10
 tags: [clean-architecture, uncle-bob, dependency-inversion, use-case, presenter, view-model, arquitetura, dci, bce]
 skill: tech-mentor-backend
 status: draft
@@ -99,6 +99,16 @@ As métricas de pacote de Robert Martin — abstração `A`, instabilidade `I = 
 
 [[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] mapeia o vocabulário de Clean Architecture (Use Cases, Entities) para dentro de um único módulo de [[wiki/concepts/monolito-modular|monolito modular]]: Use Cases/Entities formam o **Core** (lógica de negócio); Controllers/repositórios formam a camada de **Supporting Infrastructure**, com conhecimento específico do contexto de domínio (por isso não totalmente compartilhável); e uma terceira camada, **Infraestrutura Pura** (lib de banco, logger, config), fica de fora do módulo e é compartilhada entre módulos diferentes. A tese da fonte: Clean Architecture isola bem o domínio do mundo externo, mas não trata de como reusar infraestrutura *entre* módulos/contextos nem de rodar módulos em processos separados — lacuna que a [[wiki/concepts/arquitetura-modular|arquitetura modular]] cobre. Ver taxonomia completa em [[wiki/concepts/tipos-de-modulos]].
 
+## Aplicação no Frontend: Camada Main como Composition Root Concreto
+
+[[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] aplica a Regra de Dependência a um componente de tela (login, em Vue.js) em vez de a uma API, com um mapeamento direto de camadas: **Domínio** (`Authentication`, interface pura de regra de negócio) → **Data** (`RemoteAuthentication`, implementação concreta que trata resposta/erro de API, dependendo só de uma interface própria `HttpPostClient`) → **Infraestrutura** (`AxiosHttpClient`, implementação de `HttpPostClient` usando Axios) → **Presentation** (o componente de login em si, dependendo só das interfaces `Authentication` e `Validation`) → **Main** (composition root, ver [[wiki/concepts/composition-root]]).
+
+O ponto que essa fonte acrescenta ao vocabulário já documentado nesta página: a camada Main é implementada concretamente com o design pattern [[wiki/concepts/factory-pattern|Factory]] (`LoginFactory`), que conhece todas as implementações concretas do sistema e monta o componente de login já injetado com elas — o mesmo papel descrito acima para a quinta camada do livro de Robert Martin (Principal & Configuração), agora com um mecanismo nomeado. Por depender de virtualmente todas as camadas (ao contrário das demais, que têm dependência única entre si), o Main não é desenhado com setas para cada componente individual no diagrama de arquitetura — só para as camadas, para não poluir o diagrama.
+
+## Divergência Pragmática em Frameworks Reativos: Presentation Absorve UI
+
+A mesma fonte nomeia uma divergência deliberada frente ao fluxo Controller/Presenter/View descrito acima: em frameworks reativos como Vue (o mesmo raciocínio se aplica a React/Angular), separar totalmente "Presentation" (conversão de dados, ViewModel) de "View" (renderização pura) significaria abrir mão do sistema de reatividade nativo do framework — que é justamente seu ponto forte (bind automático entre estado e input, sem mapeamento manual). A fonte trata isso como decisão pragmática e explícita, não como violação da Regra de Dependência: o componente de UI continua dependendo só de interfaces do domínio (`Authentication`) e de validação (`Validation`), nunca de implementações concretas — só a fronteira entre "Presenter" e "View" que fica fundida num único componente.
+
 ## Key Sources
 
 - [[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] — mapeamento de Use Cases/Entities para a camada "Core" de um módulo; lacuna de reuso de infraestrutura entre módulos que a arquitetura modular cobre
@@ -110,3 +120,4 @@ As métricas de pacote de Robert Martin — abstração `A`, instabilidade `I = 
 - [[wiki/sources/clean-architecture-arquitetura-centrada-no-dominio]] — comparação direta com a arquitetura em 3 camadas, explicando a origem do nome "domain-centric"
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — estudo de caso completo em TypeScript (theWisePad), genealogia DCI/BCE/Hexagonal, casos reais de adoção (Netflix, Uber, iFood), e o padrão Either para tratamento de erros
 - [[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] — exemplo prático de DI (`CreateUser`/`UserRepository`/adapter Postgres), custo de debugar implementação "escondida" atrás da interface, boilerplate, atrito com frameworks opinativos, e leitura de que a popularidade vem mais da fama de Uncle Bob que de mérito técnico exclusivo
+- [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] — aplicação a um componente de tela (login, Vue.js): Main como composition root implementado via Factory, e a divergência pragmática de fundir Presenter/View em frameworks reativos

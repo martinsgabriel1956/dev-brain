@@ -3,8 +3,8 @@ type: concept
 title: "Worktree e Paralelismo de Tarefas"
 aliases: ["worktree parallelism", "git worktree IA", "paralelismo de tarefas ia"]
 date_created: 2026-06-02
-date_updated: 2026-08-27
-source_count: 12
+date_updated: 2026-09-10
+source_count: 13
 tags: [worktree, paralelismo, git, spec-driven, produtividade]
 skill: tech-mentor-ai
 status: stable
@@ -60,6 +60,8 @@ Boa prática documentada no `CLAUDE.md`: instruir o agente a **encerrar a worktr
 
 Worktree é paralelismo a nível de **file system** (cópias físicas, PRs separadas). Ver [[wiki/concepts/subagentes]] para o paralelismo equivalente a nível de **janela de contexto** (resultado convergido numa única PR). Regra prática: tarefas independentes que virarão entregas separadas → worktree; uma tarefa grande dividida em partes que convergem para uma única entrega → subagente.
 
+[[wiki/sources/guia-pratico-subagents-claude-code-configuracao-fork-invocacao]] documenta o campo `isolation` na configuração de um subagent customizado (`.claude/agents/*.md`): marcar essa flag faz o próprio subagent rodar dentro de uma worktree isolada, evitando conflito de arquivo com outros agentes/subagentes rodando em paralelo na mesma sessão — um ponto de encontro entre os dois mecanismos, em vez de alternativas mutuamente exclusivas.
+
 ## Paralelismo Real no Cursor (2026)
 
 Confirmação de campo: cada feature full stack no Cursor dispara ~5 Claude agents simultâneos + 1 agente de code review + a engenheira validando. O tech lead do Databricks usa os intervalos entre reuniões para disparar 2–3 agents e revisar PRs nos blocos livres. Esses padrões confirmam que o paralelismo não é teórico — é o fluxo diário de [[product-engineer|product engineers]] em empresas de ponta.
@@ -114,3 +116,4 @@ Ao encerrar a sessão (`/quit`), o Claude Code pergunta explicitamente se o usu�
 - [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] — demonstração completa de `git worktree add`/`list`/`remove -f` no terminal; comparação lado a lado de onde Codex (app) e Claude Code guardam a worktree criada nativamente
 - [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — o artefato de "estado" de um projeto spec-driven permite fatiar o trabalho em múltiplos pull requests sem perder rastreabilidade das decisões já tomadas
 - [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — caso-limite especulativo de paralelismo sem controle: [[wiki/entities/peter-steinberger]] citado rodando múltiplos loops em paralelo (~US$ 1 milhão/mês em tokens) até eles conflitarem entre si ou operarem sobre informação desatualizada, motivando a busca por um [[wiki/concepts/grafo-como-abstracao-de-agentes|grafo]] de orquestração em vez de loops paralelos sem coordenação explícita
+- [[wiki/sources/guia-pratico-subagents-claude-code-configuracao-fork-invocacao]] — campo `isolation` na configuração de um subagent customizado: roda esse subagent numa worktree própria, evitando conflito de arquivo com outros agentes em paralelo

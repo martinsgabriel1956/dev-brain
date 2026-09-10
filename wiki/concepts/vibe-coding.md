@@ -3,8 +3,8 @@ type: concept
 title: "Vibe Coding"
 aliases: ["vibe coding", "vibe-coding", "coding por vibração", "agentic coding", "orquestração de agentes"]
 date_created: 2026-04-23
-date_updated: 2026-08-27
-source_count: 17
+date_updated: 2026-09-08
+source_count: 18
 tags: [vibe-coding, agentes-ia, produtividade, divida-cognitiva, ai-brainfry, paralelismo-cognitivo]
 skill: tech-mentor-ai
 status: stable
@@ -151,6 +151,7 @@ Citado como exemplo de hype tecnológico em formação (junto com MCP) no moment
 - [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] — cadeia de ataque completa (pentest ofensivo, não relato de processo) contra uma loja construída inteiramente via vibe coding (Cursor, Lovable, Claude Code); reforço estatístico externo ao ponto já central desta página ("segurança sem brechas exploráveis" como algo que a IA não supre sozinha)
 - [[wiki/sources/cinco-escolas-programacao-com-ia]] — distinção de Antirez entre "automatic programming" e vibe coding, formulada de forma independente ao migrar de posição anti-agente para uso intensivo de agentes
 - [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — caso concreto de vibe coding de jogo (golfe na Unreal) com agente em full access; a diferença entre "1 prompt" e "8 prompts" é conhecimento de domínio + bom senso no prompt + colocar o agente em loop, não o modelo. Traz também um contraexemplo pontual ao "segurança nunca é padrão": o agente projetou a integração jogo↔celular com superfície de rede minimizada sem ser pedido (ver [[wiki/concepts/agent-containment]])
+- [[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] — segundo caso de pentest ofensivo contra app vibe coded; painel admin pedido explicitamente ao prompt, mas sem rate limit, lockout, CAPTCHA ou MFA — senha quebrada por brute force com Burp Intruder, ffuf e Hydra
 
 ## Distinção de Antirez: "Automatic Programming" vs. Vibe Coding
 
@@ -164,6 +165,10 @@ O ponto novo trazido por essa fonte, em relação ao que já estava documentado:
 ## Segurança Nunca é Padrão em Código Gerado por IA — Caso Concreto
 
 [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] é o primeiro caso na wiki de demonstração ofensiva completa (não relato nem aula teórica) contra um sistema construído do zero via vibe coding: a partir de um único `.env` publicamente acessível — que a IA que gerou a aplicação nunca pensou em proteger —, um pentester encadeia [[wiki/concepts/idor]], [[wiki/concepts/account-takeover]] e [[wiki/concepts/upload-arbitrario-rce|RCE]] em menos de 10 minutos, sem quebrar nenhuma senha. Cita também estatísticas externas (não verificadas por esta fonte isoladamente) associando código gerado por IA a um número crescente de CVEs e a alta incidência de vulnerabilidades do OWASP Top 10. Reforça de forma concreta o ponto já registrado nesta página em "O Limite Não É Técnico, É de Julgamento": a lacuna não é a IA "não saber" gerar código seguro em teoria, é que ninguém no fluxo de vibe coding pediu ou verificou isso.
+
+## Segundo Caso: Painel Admin Pedido Explicitamente ao Prompt, Sem Nenhuma Defesa de Login
+
+[[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] é uma variação do caso anterior com uma nuance específica: aqui o painel administrativo **foi pedido explicitamente** no prompt ("cria um site de pizzaria com painel para eu gerenciar meus pedidos") — não é uma superfície acidental como o `.env` do caso da loja. A IA entrega o painel funcional, mas sem rate limit, sem account lockout, sem CAPTCHA, sem MFA e com mensagens de erro de login que vazam quais usuários existem (user enumeration) — permitindo que a senha do admin seja quebrada por brute force em segundos com três ferramentas diferentes (Burp Intruder, ffuf, Hydra). O enquadramento do autor generaliza o ponto já registrado em "O Limite Não É Técnico, É de Julgamento": a IA entrega literalmente o que foi pedido no prompt, não o que o requisito de negócio implicava — um painel de gerenciamento de pedidos implica autenticação robusta, mas ninguém pediu isso explicitamente, então ninguém recebeu.
 
 ## Relato de Mercado: Staff/Tech Lead/Sênior Sem Escrever Código Manualmente Há Meses
 

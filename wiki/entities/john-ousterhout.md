@@ -3,8 +3,8 @@ type: entity
 title: "John Ousterhout"
 aliases: ["ousterhout", "philosophy of software design"]
 date_created: 2026-07-09
-date_updated: 2026-08-04
-source_count: 4
+date_updated: 2026-09-08
+source_count: 5
 tags: [autor, complexidade, arquitetura, deep-modules, professor]
 skill: tech-mentor-backend
 status: draft
@@ -36,9 +36,14 @@ Citado em [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-
 
 [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] recupera o debate público — travado por anos, sem acordo — entre Ousterhout e [[wiki/entities/uncle-bob]] sobre função pequena (*Clean Code*) vs. módulo profundo. A fonte argumenta que, com agentes de IA como novo "leitor" mensurável, esse debate ganha pela primeira vez um jeito de ser medido empiricamente. Num estudo controlado citado (sem nome/link, tratar como direcional): quebrar métodos e classes densos em helpers menores, isoladamente, deu **empate** — a explicação apontada foi que extração de código redistribui complexidade em vez de eliminá-la, reforçando o argumento central de Ousterhout de que módulo profundo, não tamanho de função, é o que importa. Ver [[wiki/concepts/modulo-profundo]] e [[wiki/concepts/codigo-grepavel]] para a exceção onde a quebra em funções menores ajudou (por buscabilidade, não por profundidade).
 
+## Discutido em Bate-Papo entre Praticantes (Não é Fonte Primária do Livro)
+
+[[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] é a primeira fonte no wiki que discute o livro *de segunda mão* — dois engenheiros experientes ([[wiki/entities/otavio-santana]] e [[wiki/entities/mauricio-linhares]]) comentando os conceitos a partir de experiência própria, não citando o texto diretamente. Traz vocabulário do Cap. 2 (change amplification, cognitive load, unknown unknowns) ainda não nomeado nas duas ingestões anteriores do livro — ver [[wiki/concepts/sintomas-de-complexidade-ousterhout]] — e exemplos adicionais de má/boa API (Java I/O, cliente HTTP do Go, `file_get_contents` do PHP) complementares aos já registrados em [[wiki/concepts/modulo-profundo]].
+
 ## Key Sources
 
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]]
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — debate histórico com Uncle Bob e primeiro estudo controlado medindo função pequena vs. módulo profundo
+- [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — discussão de segunda mão do livro por dois praticantes, com vocabulário do Cap. 2 e exemplos adicionais de API

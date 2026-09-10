@@ -3,8 +3,8 @@ type: concept
 title: "Dependency Injection"
 aliases: ["DI", "injeção de dependência"]
 date_created: 2026-08-04
-date_updated: 2026-08-31
-source_count: 4
+date_updated: 2026-09-08
+source_count: 5
 tags: [design-patterns, acoplamento, testabilidade, di]
 skill: tech-mentor-backend
 status: stub
@@ -24,7 +24,11 @@ Técnica em que um componente recebe suas dependências de fora (via construtor,
 
 ## Custo Reverso: Implementação Real Fica Difícil de Rastrear
 
-[[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] nomeia o reverso da testabilidade: quando um componente recebe sua dependência via DI através de uma interface (ex.: um use case recebendo `UserRepository`), o ponto onde o componente é lido não revela qual implementação concreta está rodando — é preciso rastrear onde o componente foi instanciado (a composition root) e qual implementação foi passada como parâmetro naquele ponto. Ganha-se substituibilidade e testabilidade, perde-se rastreabilidade direta na leitura do código.
+[[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] nomeia o reverso da testabilidade: quando um componente recebe sua dependência via DI através de uma interface (ex.: um use case recebendo `UserRepository`), o ponto onde o componente é lido não revela qual implementação concreta está rodando — é preciso rastrear onde o componente foi instanciado (a [[wiki/concepts/composition-root|composition root]]) e qual implementação foi passada como parâmetro naquele ponto. Ganha-se substituibilidade e testabilidade, perde-se rastreabilidade direta na leitura do código.
+
+## Quem faz a injeção: a Composition Root
+
+[[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] nomeia explicitamente quem cumpre esse papel numa arquitetura em camadas: uma camada própria (**Main**), implementada como uma [[wiki/concepts/factory-pattern|Factory]] (`LoginFactory`), que conhece todas as implementações concretas do sistema e as injeta no componente final. É o único ponto do sistema que se acopla a tudo — "sacrifício" deliberado para que as demais camadas fiquem desacopladas entre si. Ver [[wiki/concepts/composition-root]] para o conceito isolado.
 
 ## DI vs. Dependency Lookup como mecanismo de instalação de Test Double
 
@@ -36,3 +40,4 @@ Técnica em que um componente recebe suas dependências de fora (via construtor,
 - [[wiki/sources/design-pattern-facade-codigo-fonte-tv]] — tensão entre DI completa e a simplicidade que o Facade deveria oferecer ao cliente
 - [[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] — exemplo prático (`CreateUser`/`UserRepository`/`PostgresUserRepository`) e o custo de rastreabilidade na hora de debugar
 - [[wiki/sources/replace-dependency-with-test-double-xunitpatterns]] — DI como mecanismo preferido para instalar Test Doubles em unit tests, em contraste com Dependency Lookup para customer tests
+- [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] — camada Main/Factory (`LoginFactory`) como composition root concreto numa tela Vue.js

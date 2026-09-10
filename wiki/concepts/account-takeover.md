@@ -3,8 +3,8 @@ type: concept
 title: "Account Takeover (ATO)"
 aliases: ["account takeover", "ato", "tomada de conta", "sequestro de conta"]
 date_created: 2026-07-31
-date_updated: 2026-07-31
-source_count: 1
+date_updated: 2026-09-08
+source_count: 2
 tags: [account-takeover, ato, appsec, autenticacao, fraude, idor]
 skill: tech-mentor-security
 status: stub
@@ -17,6 +17,10 @@ Classe de vulnerabilidade/ataque em que um agente externo consegue autenticar-se
 ## Vetor Demonstrado: Reuso de Credencial de API como Cookie de Sessão
 
 [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] demonstra um ATO derivado de encadear duas falhas menores: primeiro um [[wiki/concepts/idor]] no endpoint de perfil expõe a "chave de integração" de outro usuário (o ID do perfil na URL é sequencial, sem checagem de ownership); depois, essa chave sozinha — sem senha, sem MFA — é aceita por um endpoint de autenticação (`POST /api/login`) que gera um cookie de sessão válido. Nenhuma das duas falhas isoladamente parece crítica; encadeadas, resultam em login completo como qualquer usuário cujo ID seja adivinhado ou enumerado.
+
+## Segundo Vetor: Brute Force de Senha, Não Vazamento de Credencial
+
+[[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] chega ao mesmo resultado (login completo como admin, sem ser o dono legítimo) por um caminho estruturalmente diferente do vetor acima: em vez de encadear um IDOR que vaza uma credencial já existente, o atacante simplesmente adivinha a senha por [[wiki/concepts/rate-limiting|brute force]], habilitado por [[wiki/concepts/mfa-multifator-autenticacao|ausência de MFA]] e user enumeration (mensagens de erro que confirmam qual usuário existe). Mesmo resultado — ATO —, causa raiz diferente: um é falha de autorização (IDOR expõe segredo alheio), o outro é falha de resistência do próprio mecanismo de autenticação (login aceita tentativas ilimitadas). Ver [[wiki/concepts/ataque-online-vs-offline-senha]] para o enquadramento completo dessa segunda classe.
 
 ## Por Que É Mais Grave que um IDOR Isolado
 
@@ -37,3 +41,4 @@ Um IDOR que vaza dados (nome, e-mail, endereço) já é sério, mas está limita
 ## Key Sources
 
 - [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]]
+- [[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] — ATO via brute force de senha (Burp Intruder, ffuf, Hydra) habilitado por user enumeration e ausência de rate limit/MFA, sem depender de IDOR

@@ -3,8 +3,8 @@ type: concept
 title: "Decorator Pattern"
 aliases: ["padrão decorator", "design pattern decorator"]
 date_created: 2026-05-01
-date_updated: 2026-09-04
-source_count: 5
+date_updated: 2026-09-08
+source_count: 7
 tags: [design-patterns, structural, decorator, oop]
 skill: tech-mentor-backend
 status: stub
@@ -48,10 +48,16 @@ Essa fonte traz dois ângulos que reforçam a definição:
 
 **Nota de precisão:** a fonte equipara os *decorators de linguagem* do TypeScript (`@Injectable` do Angular, `@Component` do NestJS) ao Decorator Pattern estrutural do GoF. A analogia funcional procede — ambos adicionam comportamento sem alterar a classe original —, mas a mecânica é diferente: decorators de linguagem operam via metadata/reflection em tempo de definição da classe, enquanto o Decorator GoF é wrapping de objeto em runtime, implementando a mesma interface do objeto decorado.
 
+## `java.io`: Ótimo Exemplo de Decorator, Péssimo Exemplo de API
+
+[[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] destaca a API de I/O do Java (`FileInputStream` → `BufferedInputStream` → `ObjectInputStream`) como o exemplo mais citado do padrão Decorator em livros e cursos — e, simultaneamente, um dos exemplos mais citados de má API na comunidade Java, referenciado até hoje pelo comitê executivo da linguagem como erro reconhecido de design. As duas coisas não são contraditórias: o padrão em si está corretamente aplicado (cada classe adiciona comportamento por wrapping, implementando a mesma interface), mas o problema é a ausência de um caminho simples de alto nível para o caso comum (ler um arquivo inteiro) — só resolvido no Java 9. Ver [[wiki/concepts/modulo-profundo]] e [[wiki/concepts/red-flags-de-design]] (red flag Shallow Module) para o detalhamento do motivo estrutural.
+
 ## Key Sources
 
-- [[wiki/sources/decorator-xunitpatterns]] — verbete de "External Patterns" do xUnitPatterns.com (Meszaros): cita a definição formal original do GOF, fonte primária em inglês para a definição já registrada nesta página
+- [[wiki/sources/decorator-xunitpatterns]]
+- [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — `java.io` como exemplo simultâneo de bom Decorator didático e péssima API de uso — verbete de "External Patterns" do xUnitPatterns.com (Meszaros): cita a definição formal original do GOF, fonte primária em inglês para a definição já registrada nesta página
 - [[wiki/sources/design-pattern-proxy]]
 - [[sources/design-pattern-strategy]] — distinção Decorator (pele) vs Strategy (miolo/algoritmo)
 - [[wiki/sources/seis-design-patterns-mais-usados-na-pratica]] — analogia dos filtros de foto do Instagram; exemplo de encadeamento de canais de notificação (e-mail → Slack → SMS); nota sobre decorators do TypeScript/Angular/NestJS
 - [[wiki/sources/design-pattern-decorator-renato-augusto]] — pipeline `ImageProcessor` (básico → marca d'água → resize); composição recursiva, vínculo com Open/Closed e contraste com Chain of Responsibility
+- [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] — citação breve como pattern-exemplo de OCP (adicionar funcionalidade à instância de um objeto sem alterar a classe original), sem exemplo de código nesta fonte

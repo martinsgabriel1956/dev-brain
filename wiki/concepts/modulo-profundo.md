@@ -3,8 +3,8 @@ type: concept
 title: "Módulo Profundo (Deep Module)"
 aliases: ["deep module", "shallow module", "módulo raso", "caixa cinza"]
 date_created: 2026-07-09
-date_updated: 2026-08-04
-source_count: 4
+date_updated: 2026-09-08
+source_count: 5
 tags: [arquitetura, complexidade, design, ousterhout, interface, encapsulamento]
 skill: tech-mentor-backend
 status: draft
@@ -61,9 +61,16 @@ A mesma fonte cita a interface de I/O do Unix (cinco chamadas de sistema — `op
 
 A exceção notável do mesmo estudo (-35% tokens num caso) não veio de profundidade — veio de [[wiki/concepts/codigo-grepavel|grepability]]: funções menores e nomeadas ficaram mais fáceis de localizar por busca textual em tarefas futuras. Isso é ortogonal ao debate módulo-profundo-vs-função-pequena — uma vantagem específica de agentes que navegam por busca, não de leitores sequenciais.
 
+## Por que a `java.io` ficou rasa: ausência de retorno múltiplo e over-otimização
+
+[[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] complementa o exemplo de classitis do Java I/O já registrado acima com uma explicação estrutural do motivo: a API foi desenhada para maximizar opções de otimização, não facilidade de uso, e algumas de suas falhas nascem de limitações da própria linguagem (ausência de retorno múltiplo, forçando o uso de uma constante especial para sinalizar fim de arquivo em vez de um resultado explícito). Só no Java 9 — quase duas décadas depois — apareceu um método simples para ler um arquivo inteiro em bytes; até lá, praticamente todo projeto Java reescrevia essa mesma classe utilitária, sinal de que a abstração pública estava errada ou incompleta. É citado como exemplo simultâneo de duas coisas: o melhor exemplo didático do padrão [[wiki/concepts/decorator-pattern|Decorator]] e o pior exemplo de design de API — ver a mesma fonte em [[wiki/concepts/decorator-pattern]].
+
+O antídoto discutido não é eliminar as opções de baixo nível, mas empilhar camadas: oferecer uma interface simples de alto nível para o caso comum, com acesso de baixo nível disponível só para quem precisa. Exemplos citados na mesma fonte, complementares ao Unix I/O já registrado acima: o cliente HTTP padrão do Go (implementa três versões do protocolo HTTP e o handshake TLS por baixo, mas expõe request/response simples) e a função `file_get_contents` do PHP (aceita tanto caminho de arquivo local quanto URL, sem exigir do usuário nenhum conhecimento sobre a diferença).
+
 ## Key Sources
 
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — generalidade moderada (Cap. 6), Unix I/O e classitis do Java I/O (Cap. 4)
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — primeiro estudo controlado medindo o debate com Uncle Bob, e a distinção entre profundidade e grepability
+- [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — motivo estrutural da rasura do `java.io` (sem retorno múltiplo, otimização em vez de usabilidade); camadas simples sobre complexidade escondida no cliente HTTP do Go e em `file_get_contents` do PHP

@@ -3,11 +3,11 @@ type: concept
 title: "Ataque Online vs. Offline a Senha"
 aliases: ["online attack", "offline attack", "modelo de ameaça de senha"]
 date_created: 2026-08-26
-date_updated: 2026-08-26
-source_count: 1
-tags: [segurança, autenticação, password-hashing, rate-limiting, mfa, modelo-de-ameaca]
+date_updated: 2026-09-08
+source_count: 2
+tags: [segurança, autenticação, password-hashing, rate-limiting, mfa, modelo-de-ameaca, user-enumeration, brute-force]
 skill: tech-mentor-security
-status: stub
+status: draft
 ---
 
 # Ataque Online vs. Offline a Senha
@@ -33,6 +33,12 @@ Atacante obtém acesso direto ao banco de dados (vazamento, dump) e tenta revert
 - [[wiki/concepts/pepper]] — segredo que não vaza junto com o banco
 - [[wiki/concepts/argon2]] — torna o brute force local computacionalmente inviável
 
+## Demonstração Prática do Ataque Online: Três Ferramentas, Mesma Falha
+
+[[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] fornece a demonstração ferramental que faltava a esta página: um painel admin (encontrado por fuzzing de diretórios com dirsearch, ver [[wiki/concepts/attack-surface]]) sem rate limit, sem account lockout, sem CAPTCHA e sem MFA tem a senha do usuário `admin` quebrada por brute force com **Burp Intruder**, **ffuf** e **Hydra** — as três convergindo na mesma senha, usando o mesmo sinal de sucesso (ausência da frase de erro "senha incorreta" na resposta, ou um status code 302 em vez de 200 no caso do Burp).
+
+**Pré-condição habilitadora: user enumeration.** Antes do brute force de senha, a fonte identifica que a aplicação responde com mensagens diferentes para "usuário não encontrado" (`teste` + qualquer senha) e "senha incorreta" (`admin` + qualquer senha) — confirmando `admin` como conta válida sem precisar adivinhar. Isso reduz o ataque de "descobrir usuário E senha" para "descobrir só a senha de um usuário já confirmado", tornando o brute force objetivamente mais rápido.
+
 ## Por Que a Distinção Importa
 
 Um erro comum é achar que implementar Argon2 + salt + pepper "resolve segurança de senha" — na prática isso só cobre o cenário de vazamento de banco. Sem rate limit e MFA, o sistema continua vulnerável a alguém simplesmente testando senhas comuns pelo formulário de login público. As duas famílias de defesa são complementares, não substitutas.
@@ -46,3 +52,4 @@ Um erro comum é achar que implementar Argon2 + salt + pepper "resolve seguranç
 ## Key Sources
 
 - [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]]
+- [[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] — demonstração prática do ataque online com três ferramentas (Burp Intruder, ffuf, Hydra) e user enumeration como pré-condição habilitadora

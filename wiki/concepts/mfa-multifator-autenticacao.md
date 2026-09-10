@@ -3,8 +3,8 @@ type: concept
 title: "MFA — Autenticação Multifator"
 aliases: ["MFA", "2FA", "multi-factor authentication", "two-factor authentication", "fatores de autenticação"]
 date_created: 2026-07-27
-date_updated: 2026-08-26
-source_count: 3
+date_updated: 2026-09-08
+source_count: 4
 tags: [mfa, 2fa, autenticacao, seguranca, fatores-de-autenticacao]
 skill: tech-mentor-security
 status: draft
@@ -70,3 +70,4 @@ Aplicar MFA apenas no momento do login protege a entrada, mas não as ações de
 - [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — comparação de resistência a phishing por método; step-up authentication
 - [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — MFA (autenticador, código via WhatsApp/e-mail) como defesa do ataque online, distinto de hash/salt/pepper
+- [[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] — MFA listado como mitigação num painel admin sem nenhuma defesa (rate limit, lockout, CAPTCHA ou MFA) invadido por brute force com três ferramentas diferentes

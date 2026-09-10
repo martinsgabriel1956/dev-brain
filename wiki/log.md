@@ -9684,3 +9684,108 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 - `wiki/index.md` — nova linha em Sources
 
 **Notas / open questions:** (1) **Achado estrutural principal**: subagentes consomem mais tokens de input que um agente único (reinjeção de contexto a cada spawn) — essa é a razão pela qual delegar para um modelo caro em todos os subagentes de um Agent Wave *aumenta* custo, não reduz; a economia só existe se o overhead de tokens cair no preço de um modelo barato. (2) **Discrepância não resolvida entre simulação (~34%) e teste real (~5%)**: o autor não isola se a causa é o tamanho pequeno da tarefa testada ou a implementação deliberadamente não estruturada do Agent Wave — registrado como open question na fonte. (3) **Complementar, não redundante**, ao benchmark de granularidade já em [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]]: aquele testa *quantos* subagentes usar (mesmo modelo em todos); esta fonte testa *qual modelo cada papel* (coordenador vs. worker) deve usar, independente de quantidade. (4) Autor/canal do vídeo não identificados no texto — nenhuma entidade nova criada, apenas seções novas em entidades e conceitos já existentes.
+
+---
+
+## [2026-09-08] ingest | Como um Painel Admin de Site "Vibe Coded" é Invadido em Segundos (Burp, ffuf, Hydra)
+
+**Fonte:** [[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] — transcrição de vídeo já em pt-BR (autor/canal não identificados no texto fornecido), estruturada em Markdown e salva em `raw/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra.md`. Laboratório de pentest autorizado usando como pretexto um site fictício de pizzaria "vibe coded" com painel administrativo pedido explicitamente ao prompt de IA. Sem tradução necessária.
+
+**Skill carregada:** `tech-mentor-security`, path real `/home/gabriel-martins/Documentos/skills/tech-mentor-security/` (nota de skill drift: o `CLAUDE.md` deste repositório referencia `/home/nemomartins/Documentos/new/skills/`, que não existe nesta máquina — path correto já usado em ingestões anteriores). Referências consultadas: `references/appsec-ddos-waf.md` (rate limiting como defesa de brute force/credential stuffing) e índice de `references/redteam-pentest.md`.
+
+**Arquivos criados:**
+- `raw/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra.md` — transcrição estruturada em Markdown
+- `wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra.md` — TL;DR, 5 key claims, conceitos tocados, conexão com fontes existentes, open questions
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/ataque-online-vs-offline-senha.md` — `source_count` 1 → 2, `status` stub → draft; nova seção "Demonstração Prática do Ataque Online: Três Ferramentas, Mesma Falha" — primeiro exemplo ferramental (Burp Intruder, ffuf, Hydra) que a página só tinha de forma teórica antes
+- `wiki/concepts/rate-limiting.md` — `source_count` 9 → 10; nova seção sobre ausência de rate limit + erro não genérico como combinação suficiente para brute force trivial
+- `wiki/concepts/attack-surface.md` — `source_count` 6 → 7; nova seção "Segundo Caso de Recon com dirsearch" comparando este achado (painel admin) ao caso anterior (`.env` exposto)
+- `wiki/concepts/mfa-multifator-autenticacao.md` — `source_count` 3 → 4; linha nova em Key Sources (nenhuma seção nova — mecanismo já coberto via `ataque-online-vs-offline-senha`)
+- `wiki/concepts/vibe-coding.md` — `source_count` 17 → 18; nova seção "Segundo Caso: Painel Admin Pedido Explicitamente ao Prompt, Sem Nenhuma Defesa de Login", distinguindo esta fonte da anterior (aqui o painel foi pedido no prompt, não é superfície acidental)
+- `wiki/concepts/account-takeover.md` — `source_count` 1 → 2; nova seção "Segundo Vetor: Brute Force de Senha, Não Vazamento de Credencial", distinguindo o mecanismo desta fonte (falha de autenticação) do vetor já documentado (IDOR vazando credencial)
+- `wiki/concepts/autenticacao-e-autorizacao.md` — `source_count` 4 → 5; linha nova em Key Sources como caso de falha de autenticação isolada, sem depender de falha de autorização
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Par técnico direto de [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]]**: mesmo pretexto narrativo (app vibe coded, mesma primeira ferramenta de recon — dirsearch), mas eixo de ataque diferente — a fonte anterior é IDOR→ATO→RCE; esta é inteiramente brute force de login online, preenchendo uma lacuna que existia na wiki (o conceito de ataque online já existia, mas sem exemplo de ferramenta real rodando o ataque). (2) **Três ferramentas convergentes**: Burp Intruder, ffuf e Hydra são documentadas lado a lado contra o mesmo alvo, todas usando o mesmo sinal de sucesso (ausência da frase de erro) — primeira vez na wiki que esse padrão de "mesma vulnerabilidade, três ferramentas equivalentes" aparece de forma explícita. (3) Autor/canal do vídeo não identificados no texto — nenhuma entidade nova criada, e nenhuma correspondência óbvia com criadores de conteúdo de pentest já registrados na wiki (ex.: Geraldo Alcântara, autor da fonte irmã). (4) Wordlists específicas citadas de forma incompleta na transcrição — o autor promete indicar as "melhores" ao final do vídeo, mas essa parte não está capturada no texto fornecido.
+
+---
+
+## [2026-09-08] ingest | Filosofia do Design de Software — Bate-Papo Eduardo Matos, Otávio Santana e Maurício Linhares
+
+**Fonte:** [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — transcrição em português (áudio já em pt-BR, sem tradução necessária), fornecida como texto corrido sem pontuação/parágrafos, estruturada em Markdown e salva em `raw/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares.md`. Eduardo Matos entrevista Otávio Santana e Maurício Linhares sobre *A Philosophy of Software Design*, de John Ousterhout — fonte de discussão de segunda mão do mesmo livro já ingerido diretamente em [[wiki/sources/filosofia-do-design-de-software-livro-completo]] e [[wiki/sources/filosofia-do-design-de-software-introducao]].
+
+**Skill carregada:** `tech-mentor-backend`, path `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/` (nota de skill drift recorrente: o `CLAUDE.md` deste repositório referencia `/home/nemomartins/Documentos/new/skills/`, que não existe nesta máquina — path correto já usado em ingestões anteriores). Referências consultadas: índice de `references/software-craftsmanship.md` (Technical Debt, Code Review, Onboarding/Documentation) e `references/api-design.md`, `references/design-patterns.md`.
+
+**Arquivos criados:**
+- `raw/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares.md` — transcrição estruturada em Markdown
+- `wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares.md` — TL;DR, 8 key claims, entidades, conceitos tocados, open questions, citações preservadas
+- `wiki/concepts/sintomas-de-complexidade-ousterhout.md` — novo conceito: os três sintomas do Cap. 2 (change amplification, cognitive load, unknown unknowns), vocabulário do livro ainda não nomeado nas duas ingestões anteriores
+- `wiki/concepts/define-errors-out-of-existence.md` — novo conceito: técnica do Cap. 10, antes só mencionada inline na fonte do livro completo, agora com página própria
+- `wiki/entities/otavio-santana.md` — nova entidade, engenheiro convidado
+- `wiki/entities/mauricio-linhares.md` — nova entidade, engenheiro convidado
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/entities/john-ousterhout.md` — `source_count` 4 → 5; nova seção sobre a discussão de segunda mão do livro
+- `wiki/concepts/modulo-profundo.md` — `source_count` 4 → 5; nova seção sobre motivo estrutural da rasura do `java.io` e camadas simples (cliente HTTP do Go, `file_get_contents` do PHP)
+- `wiki/concepts/red-flags-de-design.md` — `source_count` 3 → 4; nova seção com exemplo real recorrente de Shallow Module; linha nova de relação com sintomas-de-complexidade-ousterhout
+- `wiki/concepts/ocultamento-de-informacao.md` — `source_count` 1 → 2; nova seção conectando change amplification (sintoma) a information leakage (causa)
+- `wiki/concepts/tech-debt-como-ferramenta.md` — `source_count` 13 → 14; nova seção sobre o hábito de linkar ticket ao código tático
+- `wiki/concepts/comentarios-como-ferramenta-de-design.md` — `source_count` 2 → 3; nova seção sobre projetos open source de referência que comentam extensivamente
+- `wiki/concepts/tdd.md` — `source_count` 24 → 25; nova seção sobre TDD guiando design de código vs. arquitetura, debate em torno da citação de DHH
+- `wiki/concepts/ddd.md` — `source_count` 13 → 14; nova seção sobre erro comum de Repository com nomes CRUD genéricos
+- `wiki/concepts/repository-pattern.md` — `source_count` 6 → 7; nova seção com o mesmo ponto, do lado do padrão
+- `wiki/concepts/decorator-pattern.md` — `source_count` 5 → 6; nova seção sobre `java.io` como bom exemplo de Decorator e péssima API
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (Padrões e Design); duas novas linhas em Entities
+
+**Notas / open questions:** (1) **Fonte de discussão, não fonte primária** — os convidados comentam o livro a partir de experiência própria, sem citar o texto diretamente na maior parte da conversa; onde a fala converge com trechos já documentados do livro (ex.: substring do Java no Cap. 10, java.io no Cap. 4), a nova fonte foi tratada como reforço/exemplo adicional, não como claim nova sobre o livro. (2) **Vocabulário novo genuíno**: change amplification, cognitive load e unknown unknowns (Cap. 2) não estavam nomeados em nenhuma das duas ingestões anteriores do livro — a nova página `sintomas-de-complexidade-ousterhout` fecha essa lacuna. (3) Não foi possível identificar o nome completo do colaborador do Spring citado por Otávio Santana como origem do "paradoxo da escolha" aplicado a design de API — registrado como open question na fonte. (4) Entidades Otávio Santana e Maurício Linhares criadas como stubs — cobertura mínima, apenas o que aparece nesta fonte; podem crescer em ingestões futuras se outras fontes os citarem.
+
+---
+
+## [2026-09-08] ingest | Clean Architecture no Frontend — Diagrama de Camadas Aplicado a uma Tela de Login (Vue.js)
+
+**Fonte:** [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] — transcrição de aula em vídeo, áudio de reconhecimento de fala com diversos erros de transcrição corrigidos por contexto (Vue capturado foneticamente como "iate/iett/yakult/vert"; API como "pel/ap/apehit"). Estruturada em Markdown e salva em `raw/clean-architecture-frontend-vue-diagrama-camadas-login.md`. Já em pt-BR, sem tradução necessária.
+
+**Skill carregada:** `tech-mentor-backend`, path `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/` (nota de skill drift recorrente: o `CLAUDE.md` deste repositório referencia `/home/nemomartins/Documentos/new/skills/`, que não existe nesta máquina — path correto já usado em ingestões anteriores). Referências consultadas: índice de `references/design-patterns.md` (Factory, Composite, SOLID) e `references/architecture-foundations.md` (Clean Architecture, Ports & Adapters).
+
+**Arquivos criados:**
+- `raw/clean-architecture-frontend-vue-diagrama-camadas-login.md` — transcrição estruturada em Markdown
+- `wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login.md` — TL;DR, 7 key claims, conceitos tocados, open questions (autoria inferida)
+- `wiki/concepts/composition-root.md` — novo conceito: camada Main como ponto único que instancia e injeta todas as implementações concretas, mecanismo Factory
+- `wiki/concepts/composite-pattern.md` — novo conceito: `ValidationComposite` agrupando validadores de formulário, primeiro exemplo próprio de Composite na wiki
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/clean-architecture.md` — `source_count` 9 → 10; duas novas seções: Main/composition root/Factory concreto no frontend, e divergência pragmática de fundir Presenter/View em frameworks reativos
+- `wiki/concepts/factory-pattern.md` — `source_count` 3 → 4; nova seção sobre Factory como mecanismo de composition root (`LoginFactory`)
+- `wiki/concepts/dependency-injection.md` — `source_count` 4 → 5; nova seção "Quem faz a injeção: a Composition Root"
+- `wiki/concepts/single-responsibility-principle.md` — `source_count` 5 → 6; nova seção com estudo de caso ~10 → 4 responsabilidades no componente de login
+- `wiki/concepts/dependency-inversion-principle.md` — `source_count` 3 → 4; nova seção sobre interface de fronteira ("boundary") criada no lado do consumidor
+- `wiki/concepts/interface-segregation-principle.md` — `source_count` 2 → 3; nova seção sobre `HttpClient` (get/post/put/delete) segregado em `HttpPostClient`
+- `wiki/concepts/decorator-pattern.md` — `source_count` 6 → 7; linha nova em Key Sources (citação breve como pattern-exemplo de OCP, sem código nesta fonte)
+- `wiki/concepts/structural-patterns.md` — `source_count` 4 → 5; link do Composite na tabela apontando para a nova página, linha nova em Key Sources
+- `wiki/entities/rodrigo-branas.md` — `source_count` 6 → 7; nova seção sobre autoria inferida (não confirmada) deste curso, via padrão de nomenclatura de classes idêntico a `clean-ts-api`/`clean-react`
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (Padrões e Design)
+
+**Notas / open questions:** (1) **Autoria não confirmada**: a transcrição não nomeia o instrutor, mas a nomenclatura de classes (`RemoteAuthentication`, `HttpPostClient`, `AxiosHttpClient`, `ValidationComposite`, termo "composição grude") bate exatamente com os repositórios de referência públicos `clean-ts-api`/`clean-react`, historicamente associados a Rodrigo Branas — já com página própria na wiki (até agora só ligada à Formação IA para Devs). Registrado como inferência de alta confiança, não fato citado na fonte. (2) **Composition Root ganhou página própria**: o termo já aparecia inline em `clean-architecture.md` e `dependency-injection.md` desde ingests anteriores, mas sem exemplo de código — esta fonte é a primeira a fornecer um mecanismo concreto (Factory) e motivou a promoção para página dedicada. (3) **Composite Pattern estava documentado só na tabela de `structural-patterns.md`, sem exemplo próprio** — esta fonte fecha essa lacuna. (4) OCP e ISP são citados na fonte apenas como promessa de aprofundamento em aulas futuras do mesmo curso (não ingeridas) — tratados com confiança média até uma eventual aula seguinte ser processada.
+
+---
+
+## [2026-09-10] ingest | Guia Prático de Subagents no Claude Code — Configuração, Fork e as 3 Formas de Invocação
+
+**Fonte:** [[wiki/sources/guia-pratico-subagents-claude-code-configuracao-fork-invocacao]] — transcrição de vídeo (fala corrida, com bloco de patrocínio da UVP) já em português, estruturada em Markdown e salva em `raw/guia-pratico-subagents-claude-code-configuracao-fork-invocacao.md`. Sem tradução necessária.
+
+**Skill carregada:** `tech-mentor-ai` (path oficial do `CLAUDE.md`, `/home/nemomartins/Documentos/new/skills/`, não existe nesta máquina — mesma skill drift já registrada em ingests anteriores; conteúdo calibrado por conhecimento acumulado da wiki sobre subagentes e Claude Code, sem acesso ao arquivo `SKILL.md`/referências).
+
+**Arquivos criados:**
+- `raw/guia-pratico-subagents-claude-code-configuracao-fork-invocacao.md`
+- `wiki/sources/guia-pratico-subagents-claude-code-configuracao-fork-invocacao.md` — TL;DR, 7 key claims, entidades/conceitos tocados, contradições/reforços, open questions, raw quotes
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/subagentes.md` — `source_count` 8 → 9; duas novas seções ("Fork vs. Subagent" e "Três Formas de Invocar um Subagent") e expansão de "Como Declarar um Subagente Customizado" com os campos `permission mode`, `isolation`, `max turns`, `skills`, `memory`, `background`
+- `wiki/concepts/worktree-paralelismo.md` — `source_count` 12 → 13; nota sobre o campo `isolation` de um subagent rodando dentro de uma worktree própria
+- `wiki/concepts/skills-agente.md` — `source_count` 8 → 9; nota sobre o campo `skills` de configuração de subagent (pré-injeção explícita ou bloqueio via `disallowedTools`)
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Fork (`/fork`) não tinha página nem seção própria na wiki até agora** — só existia a distinção worktree-vs-subagent; esta fonte foi a primeira a nomear e descrever o fork como terceira forma de paralelismo (clona toda a conversa, ao contrário de subagent), tratado aqui como seção dentro de `subagentes.md` em vez de página nova, por ser um conceito pequeno e sempre discutido em contraste direto com subagent. (2) **Remoção do `/agent`** citada só pela observação do autor na própria UI, sem changelog oficial linkado — registrado como open question na fonte, não propagado como fato consolidado para `subagentes.md`. (3) A opinião pessoal do autor (ceticismo sobre paralelismo massivo, preferência por isolamento de contexto) foi citada na página do conceito como complementar, não equivalente em confiança, ao benchmark numérico já registrado de [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] — mantendo a distinção entre opinião e dado medido.
+
+---

@@ -3,8 +3,8 @@ type: concept
 title: "Dependency Inversion Principle (DIP)"
 aliases: ["DIP", "dependency inversion", "inversão de dependência"]
 date_created: 2026-08-06
-date_updated: 2026-08-23
-source_count: 3
+date_updated: 2026-09-08
+source_count: 4
 tags: [solid, oop, architecture, dependency-injection, expression-problem, recompilacao]
 skill: tech-mentor-backend
 status: stub
@@ -27,6 +27,10 @@ Aplicação prática comum: injeção de dependência — a classe de alto níve
 ## Implicação Arquitetural [skill: tech-mentor-backend]
 
 Em Clean Architecture, é o que torna o domínio testável e substituível: o domínio define as interfaces (`IEmailService`, `IOrderRepository`), e a camada de infraestrutura as implementa — nunca o contrário. É o mesmo princípio que permite `PostgresOrderRepository` e `InMemoryOrderRepository` serem intercambiáveis em teste (ver também [[wiki/concepts/liskov-substitution-principle|LSP]], do qual essa intercambialidade depende).
+
+## Interface de Fronteira ("Boundary") Definida pelo Consumidor, não pela Implementação
+
+[[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] nomeia explicitamente o mecanismo mental por trás do DIP: normalmente, um componente que precisa de um validador simplesmente importaria a classe concreta de validação — e isso faria o componente depender diretamente da camada que implementa a validação. A inversão consiste em criar a interface (`Validation`) **dentro da própria camada que consome** (Presentation), não na camada que implementa; a implementação concreta é quem passa a apontar para essa interface. Essa interface criada no lado do consumidor é chamada, na fonte, de fronteira ("boundary") da camada — o mesmo mecanismo usado para desacoplar a camada Data da Infraestrutura via `HttpPostClient` (a interface de HTTP é definida na Data, não na Infraestrutura, mesmo sendo a Infraestrutura quem efetivamente faz a chamada HTTP).
 
 ## Definição Formal e Vocabulário (Fonte Primária)
 
@@ -51,3 +55,4 @@ Martin nomeia o segundo padrão de Dependency Inversion: as dependências de arq
 - [[wiki/sources/principios-solid-ilustrados]]
 - [[wiki/sources/solid-principles-in-pictures-ugonna-thelma]]
 - [[wiki/sources/classes-vs-estruturas-de-dados-uncle-bob]] — mesmo princípio via ângulo de direção de dependência de código-fonte e recompilação em cascata
+- [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] — interface de fronteira (`Validation`, `HttpPostClient`) criada no lado do consumidor, não da implementação, num exemplo de tela Vue.js

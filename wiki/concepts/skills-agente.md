@@ -3,8 +3,8 @@ type: concept
 title: "Skills (Padrão de Harness)"
 aliases: ["skills harness", "agents skills", "skill pattern ia", "skills.sh"]
 date_created: 2026-06-02
-date_updated: 2026-08-11
-source_count: 8
+date_updated: 2026-09-10
+source_count: 9
 tags: [skills, harness, context-engineering, lazy-loading, system-prompt, grill-me, rfc, babysitting-de-agentes, produto-de-consumo]
 skill: tech-mentor-ai
 status: stable
@@ -88,6 +88,8 @@ Modelos ainda não carregam skills de forma confiável sem sinalização. Estrat
 
 Formato de arquivo quase idêntico (front-matter + corpo Markdown), mas propósito diferente. Uma skill não aceita `model` nem `tools` customizados — é só um prompt reutilizável carregado sob demanda. Um [[wiki/concepts/subagentes|subagente]] roda em paralelo, com processo e janela de contexto próprios, e pode fixar modelo e restringir tools. Ver comparação completa em [[wiki/concepts/subagentes]].
 
+**Campo `skills` na configuração de um subagent:** [[wiki/sources/guia-pratico-subagents-claude-code-configuracao-fork-invocacao]] documenta que a configuração de um [[wiki/concepts/subagentes|subagent]] customizado (`.claude/agents/*.md`) tem um campo `skills` separado do comportamento padrão de descoberta: sem preenchê-lo, o subagent descobre skills disponíveis sob demanda como qualquer agente; preenchendo, dá para pré-injetar explicitamente as skills relevantes ao papel do subagent (ex.: um code reviewer pré-carregado com skills de padrão de codebase, sem depender de descoberta automática), ou bloquear o acesso a skills via `disallowedTools` negando a ferramenta de skill.
+
 **Risco de sobreposição:** acumular muitas skills (inclusive baixadas de repositórios públicos como "awesome claude skills") junto com muitos subagentes customizados tende a confundir o roteamento automático do próprio modelo — ele pode acionar uma skill genérica quando o usuário esperava um subagente específico, porque as descrições se sobrepõem. Curadoria (poucas skills/agentes bem descritos) supera acúmulo.
 
 ## Caso: Workforce Multiagente com Skills Curtas (<70 linhas)
@@ -124,3 +126,4 @@ Skills podem conter scripts executáveis. **Skills de terceiros não verificadas
 - [[wiki/sources/sistema-produtividade-ia-adapta]] — skill como contexto pessoal persistente (rotina, prioridades) em produto de consumo, fora de contexto de codificação
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]] — skill auto-gerada e auto-refinada por closed-loop skill learning system, limite de generalização por domínio
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — skill como camada de injeção de contexto acionada por título/descrição/keywords para combater alucinação de pacotes e forçar padrões internos da empresa; *Skill Creator* (skill que cria skills) e importação de skills da comunidade na [[wiki/entities/verdent-ai|Verdent]]
+- [[wiki/sources/guia-pratico-subagents-claude-code-configuracao-fork-invocacao]] — campo `skills` na configuração de um subagent customizado: pré-injeção explícita de skills relevantes ao papel do agente, ou bloqueio via `disallowedTools`

@@ -3,8 +3,8 @@ type: concept
 title: "Rate Limiting"
 aliases: ["throttling", "rate limit", "token bucket", "sliding window"]
 date_created: 2026-04-23
-date_updated: 2026-08-26
-source_count: 9
+date_updated: 2026-09-08
+source_count: 10
 tags: [rate-limiting, token-bucket, sliding-window, redis, throttling, protecao-api, gatekeeper, attack-surface]
 skill: tech-mentor-backend
 status: stub
@@ -46,9 +46,14 @@ Além do risco de segurança, não limitar rotas públicas gera custo direto: um
 
 [[wiki/concepts/ataque-online-vs-offline-senha]] situa rate limit (por IP, dispositivo ou usuário) e bloqueio de conta após N tentativas como a defesa específica do ataque online de força bruta contra login — distinto de [[wiki/concepts/password-hashing]], que só protege contra o cenário de banco vazado (ataque offline). Sem rate limit, hash/salt/pepper bem implementados não impedem alguém de simplesmente testar senhas comuns pelo formulário de login público.
 
+## Ausência de Rate Limit + Erro Não Genérico = Brute Force Trivial
+
+[[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] mostra o caso concreto onde a ausência de rate limit não é o único fator: combinada a mensagens de erro de login distintas (user enumeration — "usuário não encontrado" vs. "senha incorreta"), a senha de um painel admin é quebrada em segundos por três ferramentas diferentes (Burp Intruder, ffuf, Hydra), todas usando o mesmo sinal de sucesso na resposta. Reforça que rate limit sozinho é uma de várias camadas — sem ele, nenhuma outra defesa de autenticação online (exceto MFA) impede o brute force de rodar até o fim.
+
 ## Key Sources
 
 - [[sources/rate-limiting]]
+- [[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] — ausência de rate limit como condição necessária para brute force de login com Burp Intruder, ffuf e Hydra
 - [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — rate limit + bloqueio de conta como defesa do ataque online, ao lado de MFA
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — rotação de contas free tier como forma de contornar rate limit por conta individual
 - [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]

@@ -3,8 +3,8 @@ type: concept
 title: "Repository Pattern"
 aliases: ["padrão repositório", "repository"]
 date_created: 2026-05-01
-date_updated: 2026-08-19
-source_count: 6
+date_updated: 2026-09-08
+source_count: 7
 tags: [design-patterns, data-access, repository, infrastructure]
 skill: tech-mentor-backend
 status: stub
@@ -31,9 +31,14 @@ Na prática de um repositório Data Mapper, a conversão campo-a-campo entre ent
 
 [[wiki/sources/unit-of-work-padrao-de-design]] mostra esse par concretamente: SQLAlchemy combina os dois padrões na mesma ferramenta — as classes ORM implementam o Repository (abstração de acesso a dados), e o objeto `Session` implementa o Unit of Work (acumula operações e só escreve no banco em `commit`, com `rollback` desfazendo tudo se algo falhar no meio). Ver [[wiki/concepts/unit-of-work]] para o mecanismo completo.
 
+## Erro Comum: Nomes CRUD Genéricos em Vez de Vocabulário de Domínio
+
+[[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] cita como erro recorrente aplicar sufixo "Repository" a uma classe com métodos genéricos de CRUD ("inserir", "deletar", "atualizar") e considerar isso suficiente para "estar fazendo DDD". O propósito do padrão é abstrair a implementação com vocabulário do domínio: um repositório de carros de uma locadora deveria ser conceitualmente uma "garagem", com "registrar" ou "estacionar" em vez de "inserir". Ver [[wiki/concepts/ddd]] para o mesmo ponto do lado do pilar Ubiquitous Language.
+
 ## Key Sources
 
 - [[wiki/sources/design-pattern-proxy]]
+- [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — erro comum de nomear métodos com vocabulário CRUD genérico em vez de vocabulário de domínio; exemplo da "garagem"
 - [[wiki/sources/mappers-conversao-entre-camadas]]
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — Data Access interface + Data Mapper no fluxo completo da Clean Architecture
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — exemplo de repositório MongoDB (schemaless), crítica a ORMs que anotam entidades de domínio, e Unit of Work como alternativa para concorrência

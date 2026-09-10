@@ -3,8 +3,8 @@ type: concept
 title: "Tech Debt como Ferramenta"
 aliases: ["tech debt deliberado", "dívida técnica estratégica", "ship with debt"]
 date_created: 2026-04-26
-date_updated: 2026-08-10
-source_count: 13
+date_updated: 2026-09-08
+source_count: 14
 tags: [tech-debt, carreira, craftsmanship, estrategia, velocidade, under-engineering, alocacao-de-tempo, medicao]
 skill: tech-mentor-leadership
 status: draft
@@ -54,6 +54,10 @@ O quadrante de Fowler descreve como *tomar* debt conscientemente. Para o debt in
 ## Leitura via Tríade Retorno-Risco-Liquidez
 
 O [[wiki/concepts/avaliar-hype-tecnologico]] descreve o mesmo raciocínio com outro vocabulário: tomar tech debt (ou over-engineering, ou adotar uma tecnologia hype) sempre significa aceitar risco alto e liquidez baixa — a decisão só é boa se a rentabilidade esperada compensar esses dois eixos ruins. Uma dívida tomada sem retorno proporcional é, nesse modelo, simplesmente um mau negócio, e é isso que separa debt Prudente+Deliberado de debt Imprudente.
+
+## Hábito Prático: Linkar Ticket ao Código no Momento da Entrega Tática
+
+[[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] descreve uma prática concreta de disciplina individual para o débito Prudente+Deliberado: ao entregar uma solução sob pressão sabendo que não é a ideal, criar imediatamente um card/ticket (ex.: Jira) e deixar um link para ele no próprio código, explicando por que a solução foi feita daquele jeito (prazo, falta de conhecimento no momento, restrição de negócio) e o que precisa ser revisto — repetição de código, problema de entendimento, manutenção de longo prazo, estabilidade. A vantagem sobre deixar a dívida implícita: o card serve tanto de lembrete futuro quanto de comunicação com o time sobre o que foi conscientemente adiado, sem depender da memória de quem escreveu o código original. Conecta-se ao "tactical tornado" do livro (Cap. 3, já registrado acima) pelo ângulo oposto: é justamente o hábito que separa um programador tático disciplinado de um "tornado" — que também entrega rápido, mas sem deixar rastro documentado do que precisa ser corrigido depois.
 
 ## Quando refatoração vira débito técnico
 
@@ -128,3 +132,4 @@ Ver também: o mesmo capítulo cunha explicitamente o termo **"technical debt"**
 - [[wiki/sources/7-habitos-programador-altamente-eficaz]] — caso de débito imposto por decisão de gestão (fluxo complexo vencendo fluxo simples), fora do modelo usual de decisão consciente do próprio time
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — distinção tática/estratégica (Ousterhout, Cap. 3), independente do Quadrante de Fowler; "tactical tornado"; regra dos 10-20% de investimento; caso Facebook "move fast and break things"
 - [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — hotfix sob pressão como fonte típica de dívida imprudente; a [[wiki/concepts/folga-de-capacidade-slack|folga de ~20%]] como forma de não *ter* que emitir dívida ao responder a imprevistos
+- [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — hábito prático de linkar ticket ao código no momento de aceitar uma solução tática, com o que precisa ser revisto documentado explicitamente
