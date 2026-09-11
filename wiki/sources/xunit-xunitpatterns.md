@@ -3,7 +3,7 @@ type: source
 title: "xUnit (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["xunit", "xUnit framework family", "test automation framework family", "xunit patterns glossary xunit"]
 date_created: 2026-08-31
-date_updated: 2026-08-31
+date_updated: 2026-09-11
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/xunit-xunitpatterns.md
 source_url: "http://xunitpatterns.com/xUnit.html"
 author: "Gerard Meszaros"
@@ -60,7 +60,7 @@ Reforça, de fonte primária, a mesma distinção já formalizada em [[wiki/sour
 
 ## Questões Abertas
 
-- **SUnit não tem, até esta ingestão, nenhuma fonte primária própria isolada** — sua existência é inferida por citação cruzada (este verbete + o relato não-nomeado de Fowler em [[wiki/sources/xunit-martin-fowler]]). Candidato a ingestão futura se o site xUnitPatterns.com tiver um verbete de glossário próprio para "SUnit" (não confirmado — não visto na barra lateral "xUnit Members" da página coletada).
+- ~~**SUnit não tem, até esta ingestão, nenhuma fonte primária própria isolada**~~ — **resolvido em 2026-09-11**: o xUnitPatterns.com tem, sim, um verbete próprio na categoria **xUnit Members**, agora ingerido como [[wiki/sources/sunit-xunitpatterns]].
 - O verbete não distingue "xUnit" (o padrão/família) de "XUnit" (a página da Wikipedia citada usa capitalização diferente) — tratado aqui como o mesmo termo, variação apenas de estilo de capitalização.
 
 ---

@@ -3,8 +3,8 @@ type: entity
 title: "Martin Fowler"
 aliases: ["Fowler", "martinfowler.com"]
 date_created: 2026-07-07
-date_updated: 2026-09-01
-source_count: 27
+date_updated: 2026-09-11
+source_count: 28
 tags: [thoughtworks, autor, testes, arquitetura, tech-debt, refactoring, agile]
 skill: tech-mentor-testing
 status: stable
@@ -44,6 +44,7 @@ Segundo [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]
 - [[wiki/concepts/self-initializing-fake]] — bliki próprio de 2009 ([[wiki/sources/self-initializing-fake-martin-fowler]]) detalhando o padrão: um Fake que na primeira chamada encaminha ao serviço real e grava a resposta em cache, servindo daí em diante; recomendado depois, em 2011, como técnica para construir doubles usados em contract tests
 - [[wiki/concepts/monolith-first]] — princípio (bliki, 2015, martinfowler.com/bliki/MonolithFirst.html) de que projetos novos não devem começar com microsserviços; formulado a partir da observação de que quase toda história de microsserviços bem-sucedida começou como monolito, e quase todo sistema que nasceu já distribuído teve sérios problemas; sustentado por YAGNI e pela dificuldade de acertar bounded contexts no início — ver a fonte primária [[wiki/sources/monolith-first-martin-fowler]]
 - [[test-doubles]] — divulgou o termo guarda-chuva "TestDouble" no bliki em 2006, mas a taxonomia dos cinco tipos (Dummy/Fake/Stub/Spy/Mock) é de autoria de [[wiki/entities/gerard-meszaros]], não dele — ver [[wiki/sources/test-double-martin-fowler]] (relato de Fowler) e agora também a **fonte primária** de Meszaros em [[wiki/sources/test-double-xunitpatterns-meszaros]]
+- [[wiki/concepts/extract-interface]] — refatoração do livro *Refactoring: Improving the Design of Existing Software*, catalogada (mas não escrita) no site de Meszaros: extrair para uma interface própria o subconjunto de uma classe usado por vários clientes; citada como pré-requisito técnico para instalar Test Doubles via Dependency Injection em linguagens estaticamente tipadas — ver [[wiki/sources/extract-interface-xunitpatterns]]
 - [[wiki/concepts/seedwork]] — termo cunhado por ele para descrever frameworks mínimos reconstruídos por cada time, a partir de discussão originada num post de Michael Feathers; fonte primária agora ingerida em [[wiki/sources/seedwork-martin-fowler]], publicada no mesmo dia (2003-09-11) que [[wiki/sources/application-boundary-martin-fowler]] e reutilizando a mesma tese central (ApplicationBoundary como construção social) para explicar por que reuso de código entre aplicações é difícil
 - [[wiki/concepts/application-boundary]] — tese de 2003 de que "aplicações são construções sociais", argumentando contra a previsão da época de que SOA tornaria aplicações obsoletas — ver [[wiki/sources/application-boundary-martin-fowler]]
 - [[wiki/concepts/microsservicos]] — coautor (com [[wiki/entities/james-lewis]]) do artigo de 2014 que cunhou a definição do termo hoje citada universalmente na indústria; mesma característica de precisão terminológica descrita acima aparece aqui como recusa a declarar microsserviços "o futuro" sem ressalvas — ver [[wiki/sources/microsservicos-martin-fowler-james-lewis]]
@@ -124,3 +125,4 @@ Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter us
 - [[wiki/sources/deployment-pipeline-martin-fowler]] — bliki de 2013 que cunha "Deployment Pipeline": estágios progressivos por confiança, escopo além de testes, colaboração e trilha de auditoria
 - [[wiki/sources/continuous-delivery-martin-fowler]] — bliki de 2013 que define "Continuous Delivery": quatro indicadores, distinção vs. Continuous Deployment, DevOps culture, crédito a Jez Humble
 - [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — citado como um dos fundadores/documentadores do padrão Event Sourcing via bliki; nuance registrada: outras fontes (ex.: [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]]) atribuem a Greg Young a origem do par CQRS+Event Sourcing na comunidade DDD, não a Fowler
+- [[wiki/sources/extract-interface-xunitpatterns]] — verbete de "Code Refactorings" do catálogo de Meszaros, conteúdo atribuído a Fowler (livro *Refactoring*): mesmo padrão host≠autor já registrado para Consumer-Driven Contracts/Ian Robinson e "Talk about Platforms"/Evan Bottcher

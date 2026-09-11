@@ -3,8 +3,8 @@ type: entity
 title: "Gerard Meszaros"
 aliases: ["Meszaros", "xUnit Test Patterns author"]
 date_created: 2026-07-19
-date_updated: 2026-09-04
-source_count: 32
+date_updated: 2026-09-11
+source_count: 37
 tags: [testes, autor, test-doubles, xunit, taxonomia]
 skill: tech-mentor-testing
 status: draft
@@ -64,3 +64,8 @@ Além de ser a fonte da taxonomia relatada por Fowler, Meszaros é creditado com
 - [[wiki/sources/ixp-industrial-xp-xunitpatterns]] — verbete de glossário da seção References do mesmo site, isolando a definição do próprio termo "Industrial XP" (IXP): variante de marca do XP para escalar em empresas maiores, criada por Joshua Kerievsky
 - [[wiki/sources/test-context-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição do próprio termo "test context": mesma equivalência a test fixture, com o dado novo de que o RSpec usa esse nome literalmente e um exemplo de código do Four-Phase Test
 - [[wiki/sources/rspec-xunitpatterns]] — verbete da categoria "xUnit Members" do mesmo site, dedicado ao framework RSpec: nova geração de membros do xUnit para "Tests as Specification", mapeamento completo de vocabulário e JBehave como equivalente Java
+- [[wiki/sources/substitutable-dependency-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição do próprio termo "substitutable dependency": fecha uma lacuna citada de passagem em várias fontes anteriores, e nomeia Test-Specific Subclass como terceiro mecanismo formal, ao lado de Dependency Injection e Dependency Lookup
+- [[wiki/sources/extract-interface-xunitpatterns]] — primeira entrada da categoria **Code Refactorings** do catálogo ingerida na wiki: verbete curto sobre a refatoração Extract Interface, cujo conteúdo o próprio Meszaros atribui a [[wiki/entities/martin-fowler]], não a si mesmo — fecha lacuna citada de passagem em duas fontes anteriores sobre Test Doubles
+- [[wiki/sources/annotation-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição do próprio termo "annotation": usa JUnit 4.0 como exemplo canônico (marca Testcase Classes e Test Methods) e cita NUnit como equivalente via "attributes" — fonte primária isolada para um detalhe até agora só mencionado de passagem em [[wiki/entities/junit]]
+- [[wiki/sources/sunit-xunitpatterns]] — verbete da categoria "xUnit Members" do mesmo site, dedicado ao próprio [[wiki/entities/sunit|SUnit]]: tagline autodenominada "a mãe de todos os frameworks de teste unitário", link de download — fecha a lacuna de fonte primária isolada sinalizada em [[wiki/sources/xunit-xunitpatterns]]
+- [[wiki/sources/testcase-class-xunitpatterns]] — verbete da categoria "XUnit Basics" do mesmo site, dedicado ao próprio termo **Testcase Class**: confirma-a como Test Suite Factory e detalha a mecânica de execução (Testcase Object, Test Suite Object, Test Runner) — fecha a lacuna de fonte primária isolada sinalizada em [[wiki/sources/test-case-xunitpatterns]]

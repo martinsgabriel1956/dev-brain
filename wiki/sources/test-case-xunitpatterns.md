@@ -3,7 +3,7 @@ type: source
 title: "Test Case (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["test case", "caso de teste", "testcase class", "xunit patterns glossary test case"]
 date_created: 2026-08-31
-date_updated: 2026-08-31
+date_updated: 2026-09-11
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/test-case-xunitpatterns.md
 source_url: "http://xunitpatterns.com/test%20case.html"
 author: "Gerard Meszaros"
@@ -60,7 +60,7 @@ O verbete afirma que a Testcase Class "é na verdade" (*is actually*) uma Test S
 ## Questões Abertas
 
 - **Resolve parcialmente** a questão aberta em [[wiki/sources/test-xunitpatterns]] ("'test case' não recebe verbete próprio no índice de Glossário do site") — na verdade recebe verbete próprio; a observação anterior deve ser corrigida.
-- **Testcase Class, Test Suite Factory e Test Method** são citados aqui pela primeira vez na wiki, mas nenhum dos três tem verbete de glossário isolado ingerido ainda — candidatos naturais para a próxima ingestão do mesmo cluster xUnitPatterns.com.
+- ~~**Testcase Class, Test Suite Factory e Test Method** são citados aqui pela primeira vez na wiki, mas nenhum dos três tem verbete de glossário isolado ingerido ainda — candidatos naturais para a próxima ingestão do mesmo cluster xUnitPatterns.com.~~ — **corrigido (2026-09-11)**: ver [[wiki/sources/testcase-class-xunitpatterns]], fonte primária dedicada que confirma a Testcase Class como Test Suite Factory e detalha a mecânica completa (cria um [[wiki/concepts/testcase-object|Testcase Object]] por [[wiki/concepts/test-method|Test Method]], agrupados num [[wiki/concepts/test-suite-object|Test Suite Object]] consumido pelo [[wiki/concepts/test-runner|Test Runner]]). **Test Suite Factory** em si segue sem fonte primária isolada (link original aponta para `Test Enumeration.html#Test Suite Factory`, ainda não ingerido).
 - **"Test Suite Factory"** como reclassificação funcional da Testcase Class levanta a pergunta: existe uma "Test Enumeration" mais ampla no catálogo (o link original aponta para `Test Enumeration.html#Test Suite Factory`) que caracteriza esse padrão com mais profundidade — candidata a fonte primária futura.
 
 ---

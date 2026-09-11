@@ -3,8 +3,8 @@ type: concept
 title: "Test Doubles"
 aliases: ["dublê de teste", "mock stub fake spy", "xunit test patterns"]
 date_created: 2026-04-22
-date_updated: 2026-09-04
-source_count: 24
+date_updated: 2026-09-11
+source_count: 26
 tags: [testes, test-doubles, mock, stub, fake, spy, dummy]
 skill: tech-mentor-testing
 status: stable
@@ -52,11 +52,13 @@ Também descreve o **Entity Chain Snipping**: em vez de montar uma cadeia inteir
 
 Fonte primária dedicada: [[wiki/sources/replace-dependency-with-test-double-xunitpatterns]]. Enquanto as fontes acima definem **o que** cada tipo de double é, esta fonte define **como** introduzi-lo num teste existente, como uma sequência de três decisões ortogonais:
 
-1. **Mecanismo de substituição** — [[wiki/concepts/dependency-injection|Dependency Injection]] (melhor para unit tests) vs. **Dependency Lookup** (melhor para customer tests).
+1. **Mecanismo de substituição** — [[wiki/concepts/dependency-injection|Dependency Injection]] (melhor para unit tests) vs. [[wiki/concepts/dependency-lookup|Dependency Lookup]] (melhor para customer tests). Fonte primária isolada do termo guarda-chuva que nomeia essa propriedade — **substitutable dependency** — em [[wiki/sources/substitutable-dependency-xunitpatterns]]: revela um **terceiro** mecanismo, [[wiki/concepts/test-specific-subclass|Test-Specific Subclass]], não citado nas fontes anteriores sobre "como" instalar um double.
 2. **Papel do double** — Fake Object, Test Stub ou Mock Object, decidido por como o teste vai usá-lo (não pela técnica de construção).
 3. **Técnica de construção** — Hard-Coded vs. Configurable Test Double (já registrado acima). Fonte primária isolada do mecanismo por trás do lado "Configurable": [[wiki/sources/procedure-variable-xunitpatterns]] — uma **procedure variable** (function pointer, ou delegate em .Net) é uma variável que referencia um procedimento em vez de um dado, permitindo atribuir o comportamento do double em runtime (dynamic binding) em vez de fixá-lo no código do double (o caminho Hard-Coded). A mesma fonte situa isso como precursor histórico do despacho polimórfico: C++ inicial montava suas dispatch tables de objetos/classes manualmente com tabelas de procedure variables, antes de existir sintaxe de método virtual — ver [[wiki/concepts/polimorfismo]].
 
-Em linguagens estaticamente tipadas, normalmente é preciso aplicar antes a refatoração **Extract Interface** [Fowler], para que a variável que guarda a dependência seja tipada pela interface — não pela classe concreta —, permitindo trocar a implementação real pelo double sem alterar o SUT. Testes com Mock Object tendem a ser mais "front-loaded" (trabalho concentrado na construção do double) e costumam fechar com uma chamada a um método de `verification`.
+Em linguagens estaticamente tipadas, normalmente é preciso aplicar antes a refatoração **[[wiki/concepts/extract-interface|Extract Interface]]** [Fowler], para que a variável que guarda a dependência seja tipada pela interface — não pela classe concreta —, permitindo trocar a implementação real pelo double sem alterar o SUT. Testes com Mock Object tendem a ser mais "front-loaded" (trabalho concentrado na construção do double) e costumam fechar com uma chamada a um método de `verification`.
+
+**Atualização 2026-09-11:** Extract Interface ganhou fonte primária dedicada e página própria — [[wiki/sources/extract-interface-xunitpatterns]] confirma que o conteúdo, apesar de catalogado no site de Meszaros, é atribuído ao próprio Fowler (*Refactoring: Improving the Design of Existing Software*): resolve o problema de "vários clientes usam o mesmo subconjunto da interface de uma classe" extraindo esse subconjunto para uma interface. Ver [[wiki/concepts/extract-interface]].
 
 ## Guia de escolha
 
@@ -133,3 +135,5 @@ Mockar um banco de dados permite verificar que `db.save` foi chamado, mas não c
 - [[wiki/sources/jmock]] — verbete de "Tools" (não Glossary) do mesmo site: descreve o JMock como exemplo concreto de framework de Mock Object com Configurable Test Double via Configuration Interface fluente
 - [[wiki/sources/utwhcm-xunitpatterns]] — verbete de "References" (não Glossary/Tools) do mesmo site: revela a subdivisão Hand-Built vs. Dinamicamente Gerado dentro de Configurable Test Double, corrigindo a imprecisão anterior desta página
 - [[wiki/sources/decorator-xunitpatterns]] — verbete de "External Patterns" (não Glossary/Tools/References) do mesmo site: cita a definição original do GOF para o [[wiki/concepts/decorator-pattern|Decorator]]; conexão com a construção de Test Doubles por wrapping (ex.: Test Spy em torno de um DOC real) **não confirmada** por esta fonte isolada — ver questão aberta na source page
+- [[wiki/sources/substitutable-dependency-xunitpatterns]] — verbete de glossário dedicado ao próprio termo "substitutable dependency": fonte primária isolada da propriedade de design que viabiliza instalar um Test Double, citada de passagem em múltiplas fontes anteriores; nomeia Test-Specific Subclass como terceiro mecanismo, ao lado de Dependency Injection e Dependency Lookup
+- [[wiki/sources/extract-interface-xunitpatterns]] — verbete de "Code Refactorings" (não Glossary/Test Refactorings) do mesmo site, conteúdo atribuído a Martin Fowler: fecha a lacuna "Extract Interface [Fowler] também não tem página própria" citada de passagem em duas fontes anteriores; mecanismo concreto por trás de "substitutable dependency" quando o mecanismo de instalação é Dependency Injection em linguagens estaticamente tipadas

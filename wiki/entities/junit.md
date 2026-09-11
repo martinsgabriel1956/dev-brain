@@ -3,8 +3,8 @@ type: entity
 title: "JUnit"
 aliases: ["junit"]
 date_created: 2026-07-19
-date_updated: 2026-08-31
-source_count: 5
+date_updated: 2026-09-11
+source_count: 7
 tags: [testes, tdd, junit, xunit, kent-beck, erich-gamma, test-fixture]
 skill: tech-mentor-testing
 status: stub
@@ -22,6 +22,10 @@ Antes do JUnit, Kent Beck já mantinha frameworks de teste caseiros em Smalltalk
 
 O verbete de glossário dedicado ao termo [[wiki/sources/test-fixture-xunitpatterns|test fixture]] cita JUnit nominalmente como exemplo de variante de xUnit que mantém o **test context** (o [[wiki/concepts/indirect-input-output|test fixture]]) conceitualmente separado da **Testcase Class** que o cria — "JUnit and its direct ports fall into this camp". Isso reforça a reclassificação já registrada em [[wiki/sources/test-case-xunitpatterns]]: a Testcase Class "é na verdade" uma **Test Suite Factory**, e o test fixture é o produto dessa fábrica a cada execução de teste, não um atributo fixo embutido na própria classe. A fonte não nomeia quais variantes de xUnit ficam fora desse grupo (fundindo os dois conceitos num único objeto persistente).
 
+## Primeiro exemplo de código de uma Testcase Class
+
+[[wiki/sources/testcase-class-xunitpatterns]] traz o primeiro exemplo de código de uma [[wiki/sources/testcase-class-xunitpatterns|Testcase Class]] já ingerido na wiki: `TestScheduleFlight extends TestCase`, estilo JUnit 3, com três [[wiki/concepts/test-method|Test Methods]] testando transições de estado de um objeto `Flight`. Cada método monta seu próprio fixture localmente via um helper (`FlightTestHelper`), sem depender de estado de instância compartilhado da classe — consistente, na prática, com a observação já registrada acima de que JUnit mantém o test context separado da Testcase Class que o cria.
+
 ## Proliferação de ports
 
 Michael Feathers criou o CppUnit (provavelmente o primeiro port para outra linguagem); a partir daí praticamente toda linguagem ganhou um port de JUnit — a família XUnit. NUnit (C#) chegou a influenciar de volta o próprio Java: o uso de atributos no NUnit 2.0 (elogiado por Anders Hejlsberg) antecipou o padrão que o Java adotaria como annotations.
@@ -38,3 +42,5 @@ Michael Feathers criou o CppUnit (provavelmente o primeiro port para outra lingu
 - [[wiki/sources/seedwork-martin-fowler]] — fonte primária do termo Seedwork usado para descrever o antecessor caseiro do JUnit
 - [[wiki/sources/c3-martin-fowler]] — linha do tempo do C3 (1993-1999), projeto onde o antecessor do JUnit foi usado
 - [[wiki/sources/test-fixture-xunitpatterns]] — verbete de glossário dedicado ao termo test fixture/test context: cita JUnit e seus ports diretos como exemplo de variante de xUnit que mantém o test context separado da Testcase Class que o cria
+- [[wiki/sources/annotation-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição do próprio termo "annotation": JUnit 4.0 como exemplo canônico (marca Testcase Classes e Test Methods), com NUnit citado como equivalente via "attributes"
+- [[wiki/sources/testcase-class-xunitpatterns]] — verbete de glossário do mesmo site, dedicado ao termo Testcase Class: traz o primeiro exemplo de código de uma Testcase Class em Java/JUnit 3 já ingerido na wiki

@@ -9789,3 +9789,116 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 **Notas / open questions:** (1) **Fork (`/fork`) não tinha página nem seção própria na wiki até agora** — só existia a distinção worktree-vs-subagent; esta fonte foi a primeira a nomear e descrever o fork como terceira forma de paralelismo (clona toda a conversa, ao contrário de subagent), tratado aqui como seção dentro de `subagentes.md` em vez de página nova, por ser um conceito pequeno e sempre discutido em contraste direto com subagent. (2) **Remoção do `/agent`** citada só pela observação do autor na própria UI, sem changelog oficial linkado — registrado como open question na fonte, não propagado como fato consolidado para `subagentes.md`. (3) A opinião pessoal do autor (ceticismo sobre paralelismo massivo, preferência por isolamento de contexto) foi citada na página do conceito como complementar, não equivalente em confiança, ao benchmark numérico já registrado de [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] — mantendo a distinção entre opinião e dado medido.
 
 ---
+
+## [2026-09-11] ingest | Substitutable Dependency (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/substitutable-dependency-xunitpatterns]] — verbete de glossário curto do xUnitPatterns.com, original em inglês (http://xunitpatterns.com/substitutable%20dependency.html), traduzido para português e salvo em `raw/substitutable-dependency-xunitpatterns.md`, seguindo o mesmo padrão de tradução já usado nos demais verbetes deste site (`control-point-xunitpatterns.md`, `doc-xunitpatterns.md`, etc.).
+
+**Skill carregada:** `tech-mentor-testing` — `SKILL.md` lido em `/home/nemomartins/Documentos/new/skills/tech-mentor-testing/SKILL.md` (path existe nesta máquina, sem skill drift desta vez). Tópico ("Test Doubles") mapeado para `references/test-patterns.md`, que não contém seção dedicada a Test Doubles apesar do índice do `SKILL.md` apontar para lá — calibração feita, em vez disso, pelo contexto já acumulado na wiki a partir das fontes primárias irmãs do mesmo glossário (já ingeridas).
+
+**Arquivos criados:**
+- `raw/substitutable-dependency-xunitpatterns.md` — tradução estruturada em Markdown
+- `wiki/sources/substitutable-dependency-xunitpatterns.md` — TL;DR, 2 afirmações centrais, 3 key claims, entidades/conceitos tocados, open questions, citações
+- `wiki/concepts/dependency-lookup.md` — novo stub: mecanismo de instalação de Test Double via registro/service locator, preferido para customer tests
+- `wiki/concepts/test-specific-subclass.md` — novo stub: terceiro mecanismo de substitutable dependency, inédito na wiki antes desta fonte
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/test-doubles.md` — `source_count` 24 → 25; link para o novo termo guarda-chuva na seção da refatoração "Replace Dependency with Test Double"; nova linha em Key Sources
+- `wiki/concepts/dependency-injection.md` — `source_count` 5 → 6; nova seção "O termo guarda-chuva: substitutable dependency"; link para o novo stub `dependency-lookup`; nova linha em Key Sources
+- `wiki/entities/gerard-meszaros.md` — `source_count` 32 → 33; nova linha em Key Sources
+- `wiki/sources/replace-dependency-with-test-double-xunitpatterns.md` — open question sobre Dependency Lookup sem página própria marcada como resolvida (2026-09-11), com link para o novo stub; `date_updated` atualizado
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts
+
+**Notas / open questions:** (1) **Termo guarda-chuva fechando uma lacuna recorrente** — "substitutable dependency" já era citado de passagem em pelo menos três fontes já ingeridas ([[wiki/sources/test-double-xunitpatterns-meszaros]], [[wiki/sources/test-stub-xunitpatterns-meszaros]], [[wiki/sources/replace-dependency-with-test-double-xunitpatterns]]) sem nunca ter fonte primária dedicada — mesmo padrão já visto com "control point" e "DOC". (2) **Achado novo**: o verbete revela um terceiro mecanismo formal, **Test-Specific Subclass**, que nenhuma fonte anterior da wiki nomeava (as fontes só discutiam DI vs. Dependency Lookup) — criado como stub por ser central ao próprio verbete, mas sem detalhe mecânico disponível ainda. (3) **Fonte deliberadamente mínima** — duas frases, sem exemplo de código, no mesmo estilo enxuto de outros verbetes de Glossário já ingeridos (DOC, control point); a maior parte do valor desta ingestão está em conectar retroativamente um termo já usado repetidamente na wiki à sua definição formal, não em conteúdo novo extenso.
+
+---
+
+## [2026-09-11] ingest | Extract Interface (xUnitPatterns.com — catálogo de Gerard Meszaros, conteúdo atribuído a Martin Fowler)
+
+**Fonte:** [[wiki/sources/extract-interface-xunitpatterns]] — verbete curto da categoria **Code Refactorings** do xUnitPatterns.com, original em inglês (http://xunitpatterns.com/Extract%20Interface.html), traduzido para português e salvo em `raw/extract-interface-xunitpatterns.md`, seguindo o mesmo padrão de tradução dos demais verbetes deste site.
+
+**Skill carregada:** `tech-mentor-testing` — `SKILL.md` lido em `/home/nemomartins/Documentos/new/skills/tech-mentor-testing/SKILL.md` (path existe nesta máquina, sem skill drift). Tópico ("Test Doubles"/mocks) mapeado para `references/test-patterns.md`, sem menção direta a "Extract Interface" — calibração feita pelo contexto já acumulado na wiki a partir das fontes primárias irmãs do mesmo catálogo (já ingeridas).
+
+**Arquivos criados:**
+- `raw/extract-interface-xunitpatterns.md` — tradução estruturada em Markdown
+- `wiki/sources/extract-interface-xunitpatterns.md` — TL;DR, 4 afirmações centrais, 3 key claims, entidades/conceitos tocados, open questions, citações
+- `wiki/concepts/extract-interface.md` — novo stub: refatoração de Fowler que extrai um subconjunto de interface compartilhado por vários clientes; pré-requisito técnico para Test Doubles via DI em linguagens estaticamente tipadas
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/test-doubles.md` — `source_count` 25 → 26; nova linha em Key Sources; open question herdada agora resolvida com link para o novo stub
+- `wiki/concepts/dependency-injection.md` — `source_count` 6 → 7; nova seção "Extract Interface: o mecanismo que viabiliza DI em linguagens estaticamente tipadas"; nova linha em Key Sources
+- `wiki/concepts/refatoracao.md` — `source_count` 6 → 7; nova seção "Extract Interface: uma refatoração estrutural de tipos, não de comportamento"; nova linha em Key Sources e em "Relacionado"
+- `wiki/entities/martin-fowler.md` — `source_count` 27 → 28; nova linha em "Termos e frameworks cunhados/popularizados" e em Key Sources (mesmo padrão host≠autor já registrado para Consumer-Driven Contracts/Ian Robinson)
+- `wiki/entities/gerard-meszaros.md` — `source_count` 33 → 34; nova linha em Key Sources
+- `wiki/sources/replace-dependency-with-test-double-xunitpatterns.md` — open question "Extract Interface [Fowler] também não tem página própria" marcada como resolvida (2026-09-11), com link para o novo stub
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (Padrões e Design)
+
+**Notas / open questions:** (1) **Fecha uma lacuna citada duas vezes** — tanto [[wiki/sources/replace-dependency-with-test-double-xunitpatterns]] quanto [[wiki/concepts/test-doubles]] citavam "Extract Interface [Fowler]" apenas de passagem, sem página própria; esta ingestão fecha a lacuna, mas só até o nível de detalhe do próprio verbete (uma frase de problema, uma de solução — sem mecânica passo a passo). (2) **Padrão "host ≠ autor" dentro do próprio catálogo de Meszaros**: diferente da maioria das páginas já ingeridas do xUnitPatterns.com (Glossary, Test Refactorings — autoria própria de Meszaros), esta é a primeira entrada da categoria **Code Refactorings** ingerida na wiki, e o próprio site credita o conteúdo a Fowler, não a Meszaros — mesmo padrão host≠autor já visto em páginas do site de Fowler (Consumer-Driven Contracts/Ian Robinson, Talk about Platforms/Evan Bottcher), agora observado na direção oposta. (3) **Fonte minimalista e declaradamente desatualizada** — a própria página original avisa que o capítulo correspondente do livro publicado de Fowler "provavelmente mudou substancialmente" em relação a esta versão preliminar; tratada como a fonte primária mais próxima disponível, não como texto definitivo.
+
+---
+
+## [2026-09-11] ingest | Annotation (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/annotation-xunitpatterns]] — verbete de glossário curtíssimo do xUnitPatterns.com, original em inglês (http://xunitpatterns.com/annotation.html), traduzido para português e salvo em `raw/annotation-xunitpatterns.md`, seguindo o mesmo padrão de tradução já usado nos demais verbetes deste site.
+
+**Skill carregada:** `tech-mentor-testing` — `SKILL.md` lido em `/home/nemomartins/Documentos/new/skills/tech-mentor-testing/SKILL.md` (path existe nesta máquina, sem skill drift). Tópico não consta explicitamente no índice do `SKILL.md`; busca em `references/test-patterns.md` por "annotation/JUnit/NUnit/Testcase Class/Test Method" não retornou nenhuma seção dedicada — calibração feita, como nas ingestões anteriores deste catálogo, pelo contexto já acumulado na wiki a partir das fontes primárias irmãs do mesmo glossário.
+
+**Arquivos criados:**
+- `raw/annotation-xunitpatterns.md` — tradução estruturada em Markdown
+- `wiki/sources/annotation-xunitpatterns.md` — TL;DR, 3 afirmações centrais, 3 key claims, entidades/conceitos tocados, open questions, citações
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/entities/junit.md` — `source_count` 5 → 6; nova linha em Key Sources
+- `wiki/entities/gerard-meszaros.md` — `source_count` 34 → 35; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Fonte mínima que fecha um detalhe já citado de passagem** — a relação annotation (JUnit) ↔ attribute (NUnit) já estava registrada em [[wiki/entities/junit]] (via [[wiki/sources/xunit-martin-fowler]], no contexto da proliferação de ports), mas nunca com fonte primária dedicada ao próprio termo "annotation"; esta ingestão fecha essa lacuna sem trazer fato novo. (2) **Nenhuma página de concept nova criada** — diferente de ingestões anteriores deste catálogo (Dependency Lookup, Test-Specific Subclass, Extract Interface), "annotation" não justificou stub próprio: é vocabulário genérico ("uma forma de indicar algo sobre algo"), concretizado inteiramente pelo exemplo já coberto em `wiki/entities/junit.md`. (3) **NUnit segue sem página própria** — mencionado de passagem nesta fonte e em pelo menos duas outras já ingeridas, mas nunca como assunto central; registrado como open question na fonte para uma futura ingestão dedicada ao framework, caso o catálogo tenha um verbete próprio.
+
+---
+
+## [2026-09-11] ingest | SUnit (xUnitPatterns.com — categoria xUnit Members)
+
+**Fonte:** [[wiki/sources/sunit-xunitpatterns]] — verbete curto da categoria **xUnit Members** do xUnitPatterns.com, original em inglês (http://xunitpatterns.com/SUnit.html), traduzido para português e salvo em `raw/sunit-xunitpatterns.md`, seguindo o mesmo padrão de tradução dos demais verbetes deste site. Buscado via WebFetch (falhou por ECONNREFUSED — ferramenta sem rota até o host) e recuperado via `curl` em Bash.
+
+**Skill carregada:** `tech-mentor-testing` — `SKILL.md` lido em `/home/nemomartins/Documentos/new/skills/tech-mentor-testing/SKILL.md` (path existe nesta máquina, sem skill drift). Busca por "SUnit"/"Smalltalk" em `references/*.md` não retornou nenhuma seção dedicada — calibração feita, como nas ingestões anteriores deste catálogo, pelo contexto já acumulado na wiki a partir das fontes primárias irmãs do mesmo site.
+
+**Arquivos criados:**
+- `raw/sunit-xunitpatterns.md` — tradução estruturada em Markdown
+- `wiki/sources/sunit-xunitpatterns.md` — TL;DR, 3 afirmações centrais, 3 key claims, entidades/conceitos tocados, open questions, citações
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/entities/sunit.md` — `source_count` 1 → 2, `status` stub → draft; novo parágrafo com a tagline autodenominada "a mãe de todos os frameworks de teste unitário" e o link de download; nova linha em Key Sources
+- `wiki/entities/kent-beck.md` — `source_count` 9 → 10; nova linha em Key Sources
+- `wiki/entities/gerard-meszaros.md` — `source_count` 35 → 36; nova linha em Key Sources
+- `wiki/sources/xunit-xunitpatterns.md` — open question "SUnit não tem, até esta ingestão, nenhuma fonte primária própria isolada" marcada como resolvida (2026-09-11), com link para o novo verbete
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Fecha exatamente a lacuna que a própria wiki havia sinalizado** — a ingestão de [[wiki/sources/xunit-xunitpatterns]] (2026-08-31) já registrava como questão aberta a ausência de um verbete primário isolado para SUnit, e questionava se o site teria um na categoria "xUnit Members"; tinha. (2) **Fonte deliberadamente mínima** — um único parágrafo, sem detalhe de API, versão ou data; todo o valor histórico/mecânico sobre o SUnit (uso no C3, reconstrução por time, Seedwork) continua vindo de fontes indiretas já ingeridas ([[wiki/sources/xunit-martin-fowler]], [[wiki/sources/seedwork-martin-fowler]]). (3) **Falha de ferramenta registrada**: WebFetch retornou `ECONNREFUSED` para `xunitpatterns.com` (tanto http quanto https) nesta sessão; o conteúdo foi recuperado via `curl` direto em Bash, que teve sucesso — possível bloqueio de rede específico da ferramenta WebFetch, não do host em si.
+
+---
+
+## [2026-09-11] ingest | Testcase Class (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/testcase-class-xunitpatterns]] — verbete da categoria **XUnit Basics** do xUnitPatterns.com, original em inglês (http://xunitpatterns.com/Testcase%20Class.html), traduzido para português e salvo em `raw/testcase-class-xunitpatterns.md`, seguindo o mesmo padrão de tradução dos demais verbetes deste site. WebFetch retornou `ECONNREFUSED` novamente para `xunitpatterns.com` nesta sessão (mesma falha registrada na ingestão de SUnit); conteúdo recuperado via `curl` em Bash e convertido de HTML para texto com `html2text`.
+
+**Skill carregada:** `tech-mentor-testing` — `SKILL.md` lido em `/home/nemomartins/Documentos/new/skills/tech-mentor-testing/SKILL.md` (path existe nesta máquina, sem skill drift). Busca por "Testcase Class"/"Test Method"/"Test Runner" em `references/*.md` não retornou seção dedicada — calibração feita, como nas ingestões anteriores deste cluster, pelo contexto já acumulado na wiki a partir das fontes primárias irmãs do mesmo site.
+
+**Arquivos criados:**
+- `raw/testcase-class-xunitpatterns.md` — tradução estruturada em Markdown
+- `wiki/sources/testcase-class-xunitpatterns.md` — TL;DR, 5 afirmações centrais, 6 key claims, entidades/conceitos tocados, open questions, citações
+- `wiki/concepts/test-method.md` — novo stub: unidade elementar de lógica de teste, agrupada na Testcase Class
+- `wiki/concepts/testcase-object.md` — novo stub: instância da Testcase Class criada uma vez por Test Method
+- `wiki/concepts/test-suite-object.md` — novo stub: coleção de Testcase Objects montada pela Testcase Class
+- `wiki/concepts/test-runner.md` — novo stub: consumidor final do Test Suite Object
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/sources/test-case-xunitpatterns.md` — open question "Testcase Class, Test Suite Factory e Test Method sem verbete isolado" marcada como resolvida (2026-09-11), com link para a nova fonte; `date_updated` atualizado
+- `wiki/sources/test-fixture-xunitpatterns.md` — nova nota (hipótese não confirmada) conectando VbUnit/NUnit chamarem a Testcase Class de "test fixture" à questão aberta sobre quais variantes de xUnit não separam test context de Testcase Class; `date_updated` atualizado
+- `wiki/entities/gerard-meszaros.md` — `source_count` 36 → 37; nova linha em Key Sources
+- `wiki/entities/junit.md` — `source_count` 6 → 7; nova seção sobre o primeiro exemplo de código de uma Testcase Class (Java/JUnit 3) já ingerido na wiki; nova linha em Key Sources
+- `wiki/concepts/refatoracao.md` — `source_count` 7 → 8; nova seção distinguindo Extract Method (comportamento) de Extract Interface (tipos), ambas de Fowler
+- `wiki/index.md` — nova linha em Sources; quatro novas linhas em Concepts (test-method, testcase-object, test-suite-object, test-runner)
+
+**Notas / open questions:** (1) **Fecha a lacuna mais citada do cluster** — "Testcase Class", "Test Suite Factory" e "Test Method" eram citados de passagem em pelo menos cinco fontes já ingeridas sem nunca ter fonte primária dedicada; esta ingestão fecha três das quatro pontas (Testcase Class, Test Method, e a mecânica da Test Suite Factory), mas **Test Suite Factory em si** segue sem verbete isolado — o link original do site aponta para `Test Enumeration.html#Test Suite Factory`, ainda não ingerido. (2) **Achado novo não solicitado**: a fonte nomeia VbUnit e NUnit como frameworks que chamam a própria Testcase Class de "test fixture" — dado que a wiki conecta (como hipótese, não fato) à observação já registrada de que JUnit "e seus ports diretos" mantêm test context e Testcase Class separados, sugerindo que VbUnit/NUnit podem ser exatamente os frameworks fora desse grupo. (3) **Três termos novos sem página própria**: Testcase Superclass, Test Helper e Test Utility Method — os três destinos possíveis para código extraído via Extract Method — citados pela primeira vez na wiki, candidatos à próxima ingestão do cluster (categorias "Fixture Setup Patterns"/"Test Organization" do site provavelmente os cobrem). (4) **Terceiro sentido de "fixture" registrado sem elaboração**: o framework Fit usa "fixture" para o Adapter [GOF] que implementa um Data-Driven Test (Interpreter [GOF]) — nenhum dos três termos (Fit, Data-Driven Test, Interpreter neste sentido) tem página própria; ficam como open question, não como stub, por serem citados apenas de passagem na seção "Further Reading". (5) **Falha de ferramenta recorrente**: WebFetch com `ECONNREFUSED` para `xunitpatterns.com` pela segunda vez consecutiva nesta série de ingestões — reforça a hipótese de bloqueio de rede específico da ferramenta, não do host.
+
+---

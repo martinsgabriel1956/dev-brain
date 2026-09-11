@@ -3,7 +3,7 @@ type: source
 title: "Replace Dependency with Test Double (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["replace dependency with test double", "test refactoring test double", "xunit test patterns replace dependency"]
 date_created: 2026-08-31
-date_updated: 2026-09-04
+date_updated: 2026-09-11
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/replace-dependency-with-test-double-xunitpatterns.md
 source_url: "http://xunitpatterns.com/Replace%20Dependency%20with%20Test%20Double.html"
 author: "Gerard Meszaros"
@@ -61,12 +61,13 @@ Para introduzir um Test Double sem alterar o tipo declarado da dependência, mui
 
 - [[wiki/concepts/test-doubles]] — conceito central; esta fonte é o "como fazer" mecânico que conecta a taxonomia já documentada ao processo de refatoração do teste
 - [[wiki/concepts/dependency-injection]] — mecanismo apontado como preferido para unit tests nesta refatoração
+- [[wiki/concepts/dependency-lookup]] — mecanismo apontado como preferido para customer tests nesta refatoração; ganhou página própria (stub) em [[wiki/sources/substitutable-dependency-xunitpatterns]]
 - [[wiki/concepts/unit-test-solitario-vs-sociavel]] — DI/Lookup são os mecanismos que tornam um teste solitário possível, ao substituir o DOC
 
 ## Questões Abertas
 
-- **Dependency Lookup não tem página própria na wiki.** A fonte o cita como alternativa à DI para customer tests, mas o mecanismo (service locator/registro) não está documentado em nenhum concept page existente — candidato a stub numa futura ingestão, caso surja fonte dedicada.
-- **Extract Interface [Fowler] também não tem página própria.** Citada apenas de passagem como pré-requisito técnico; não há fonte primária de Fowler sobre essa refatoração específica ainda ingerida na wiki.
+- **Atualização 2026-09-11:** Dependency Lookup ganhou página própria (status stub) em [[wiki/concepts/dependency-lookup]], criada a partir de [[wiki/sources/substitutable-dependency-xunitpatterns]] — ainda sem fonte primária dedicada ao mecanismo em si (service locator/registro), só citado por contraste com DI nas duas fontes que o mencionam até agora.
+- ~~**Extract Interface [Fowler] também não tem página própria.**~~ **Resolvido em 2026-09-11**: ingerida em [[wiki/sources/extract-interface-xunitpatterns]] — verbete de "Code Refactorings" do próprio catálogo de Meszaros, conteúdo atribuído a Fowler. Ver [[wiki/concepts/extract-interface]].
 - **Por que DI é melhor para unit tests e Lookup para customer tests não é explicado** — a fonte afirma a preferência sem justificar a causa raiz (possivelmente relacionado a granularidade: customer tests operam num nível onde um registro global de dependências é mais prático que injeção explícita ponto a ponto, mas isso é inferência, não afirmação da fonte).
 - Nenhuma contradição encontrada com o que já estava na wiki sobre Test Doubles — esta fonte é estritamente elaborativa, preenchendo a lacuna "mecânica de refatoração" que faltava entre a taxonomia (Test Double, Test Stub) e a prática de escrever o teste.
 
