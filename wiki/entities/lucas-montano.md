@@ -3,8 +3,8 @@ type: entity
 title: "Lucas Montano"
 aliases: ["Lucas Montano"]
 date_created: 2026-07-03
-date_updated: 2026-09-02
-source_count: 15
+date_updated: 2026-09-14
+source_count: 16
 tags: [criador-de-conteudo, ia, carreira, financas-pessoais, saas, growth, git]
 skill: tech-mentor-ai
 status: stub
@@ -42,8 +42,11 @@ Também produz um vídeo prático sobre **Loop Engineering** — ver [[wiki/sour
 
 Também tem (autoria provável, não confirmada nominalmente — mesma cadeia de sinais recorrente: menção ao produto "Persua"/Persoa e ao segundo canal "Stupid Tech Founder") um vídeo argumentando que preencher o [[wiki/concepts/lean-canvas|Lean Canvas]] de Ash Maurya inteiro como passo 1 do desenvolvimento de produto é perda de tempo em 2026 — ver [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]]. Mantém como essenciais apenas os dois primeiros quadrantes do canvas (problema e [[wiki/concepts/icp-ideal-customer-profile|ICP]]), argumentando que o gargalo de uma startup deixou de ser "programar" (meses de MVP em 2012) e passou a ser "validar" (dias de MVP em 2026 com IA), citando um estudo do GitHub (2022) e um da Y Combinator sobre ganho de velocidade com IA. Revisita o próprio produto Persoa/"Persua" — cópia deliberada de posicionamento de Cluely (que copiou o Granola) — como exemplo de que um mercado já disputado é sinal positivo, citando números de ARR e conversão download-para-assinante do próprio produto.
 
+Também produz um vídeo técnico explicando a mudança de spec do [[wiki/concepts/model-context-protocol|MCP]] — ver [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] (autoria provável, mesma auto-referência de canal no fechamento e cupom de patrocínio "Lucas Montano" para a [[wiki/entities/hostinger]]). Explica a mudança de core stateful para stateless do protocolo (fim do handshake, método `server discover`, cross-call state via handle assinado pelo servidor), usando a analogia de uma comanda de restaurante para o handle de estado, e compara a lenta adoção do MCP com a do QR Code. Fecha o vídeo perguntando à audiência se prefere mais conteúdo técnico ou retomar pautas de hype de IA/empreendedorismo — sinal de reposicionamento editorial do canal em direção a dois canais distintos (técnico e "Techfounder").
+
 ## Key Sources
 
+- [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] — mudança de spec do MCP (fim do handshake, `server discover`, cross-call state via handle assinado); analogia da comanda de restaurante
 - [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] — guia prático de Loop Engineering: quatro arquivos operacionais, checklist de segurança, desastres reais (banco apagado, teste trapaceado), demonstração de `/loop` com deploy via MCP da Hostinger
 - [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — reação ao tweet de Levelsio sobre guardrails do Claude vs. Kimi K3; tese de fim da era do modelo único; roteamento por tolerância a guardrail; benchmarks do Opus 5; trial de 7 dias como técnica de qualificação de lead
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]]

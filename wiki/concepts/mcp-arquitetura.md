@@ -3,8 +3,8 @@ type: concept
 title: "MCP — Arquitetura Host/Client/Server"
 aliases: ["mcp arquitetura", "mcp host client server", "mcp componentes"]
 date_created: 2026-06-02
-date_updated: 2026-07-09
-source_count: 3
+date_updated: 2026-09-14
+source_count: 4
 tags: [mcp, arquitetura, host, client, server, json-rpc, stdio, sse, streamable-http]
 skill: tech-mentor-ai
 status: stable
@@ -31,6 +31,8 @@ Codex                            API interna
 ## O Server Deve Permanecer em Pé
 
 Diferente de um script que sobe e cai, o server MCP mantém estado e conexão ativa. Isso explica o tempo de inicialização visível ao abrir Claude Code, Cursor ou Codex: é o handshake entre host e os servers registrados.
+
+> **Atualização (2026):** essa descrição reflete o modelo pré-mudança de spec. Segundo [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]], a especificação core do MCP passou a ser stateless — o handshake deixa de ser obrigatório, e servidores remotos podem rodar como funções serverless/edge efêmeras, sem precisar "permanecer em pé" entre chamadas. Ver [[wiki/concepts/mcp-stateless-server-discover]]. Ainda não confirmado se isso se aplica também a servidores locais via stdio (a fonte fala principalmente de servidores remotos).
 
 ## Transportes
 
@@ -60,3 +62,4 @@ Citado como exemplo de hype tecnológico em formação (junto com Vibe Coding) e
 - [[wiki/sources/formacao-ia-devs-aula-01-mcp-parte1]]
 - [[wiki/sources/formacao-ia-devs-aula-02-mcp-parte2]]
 - [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]]
+- [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] — mudança de spec removendo o handshake obrigatório do core do protocolo

@@ -3,8 +3,8 @@ type: concept
 title: "User Stories"
 aliases: ["User Story", "Histórias de Usuário", "US"]
 date_created: 2026-05-17
-date_updated: 2026-09-01
-source_count: 3
+date_updated: 2026-09-14
+source_count: 4
 tags: [produto, requisitos, agile, bdd]
 skill: tech-mentor-leadership
 status: stable
@@ -65,8 +65,13 @@ Nota de terminologia: "engineering story" não é termo padronizado na literatur
 
 **Evitar como substituto:** sistemas regulados (rastreabilidade), integrações críticas com SLA → complementar com [[frd-functional-requirements-document]], features puramente de infra sem impacto UX direto (usar tasks técnicas).
 
+## Questionando o Sizing Fibonacci na Era da IA
+
+[[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] provoca diretamente a prática usual de estimativa desta página: em vez de continuar quebrando stories em pedaços cada vez menores via [[wiki/concepts/story-points|Fibonacci]] ("se for maior que 21, quebra"), propõe aceitar tarefas cada vez **maiores**, com sprints mais curtas (uma semana, três dias). O raciocínio: a IA já preenche o gap de conhecimento entre camadas adjacentes que um dev não domina totalmente (ver [[wiki/concepts/ia-como-amplificador]]), e o custo de regenerar código ruim é baixo — então vale menos a pena investir tempo fracionando a story para reduzir risco de estimativa. É uma provocação de consultoria ainda em teste em "alguns lugares", não uma prática validada com dado — tratar como hipótese, não substituto do processo de Definition of Ready acima.
+
 ## Key Sources
 
+- [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] — provocação para abandonar sizing fracionado via Fibonacci e aceitar tarefas maiores em sprints mais curtas, apoiado no custo baixo de regenerar código com IA
 - [[wiki/sources/user-stories]]
 - [[wiki/sources/story-points-po-forcando-30-40-pontos-por-sprint]]
 - [[wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub]] — uso solo (fora de time ágil formal) para escopar projetos pessoais, e o complemento "engineering stories" para requisitos invisíveis ao usuário

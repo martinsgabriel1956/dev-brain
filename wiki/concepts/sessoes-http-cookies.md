@@ -3,8 +3,8 @@ type: concept
 title: "Sessões HTTP e Cookies"
 aliases: ["sessão HTTP", "session ID", "cookie de sessão", "sessão stateful"]
 date_created: 2026-07-27
-date_updated: 2026-09-01
-source_count: 6
+date_updated: 2026-09-14
+source_count: 7
 tags: [sessao, cookie, autenticacao, stateless, http, seguranca]
 skill: tech-mentor-security
 status: draft
@@ -13,6 +13,8 @@ status: draft
 # Sessões HTTP e Cookies
 
 Solução clássica para o problema de HTTP ser um protocolo **sem estado**: cada requisição é independente, o servidor não guarda contexto entre elas. Sem algum mecanismo, o servidor não sabe se a próxima requisição vem do mesmo usuário que acabou de fazer login.
+
+O session ID/cookie de sessão é o exemplo mais comum de **[[wiki/concepts/token-opaco|token opaco]]**: uma string sem significado embutido, resolvida no servidor a cada requisição — daí a revogação instantânea (basta apagar a entrada) e o custo de exigir armazenamento central.
 
 ## Como funciona
 
@@ -71,3 +73,4 @@ Redis é o padrão de produção justamente por resolver o caso de múltiplos se
 - [[wiki/sources/refresh-token-pattern-access-token-de-curta-duracao]] — cookie `HttpOnly` recomendado especificamente para o refresh token, comparado com `localStorage` e armazenamento em memória/estado da aplicação
 - [[wiki/sources/xss-cross-site-scripting-luiz-viana]] — `document.cookie` citado como alvo direto de exfiltração num payload de XSS bem-sucedido, reforçando por que `HttpOnly` é a defesa específica contra esse vetor
 - [[wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv]] — estudo de caso do "roubo de cookie de autenticação" via script hospedado em domínio externo (reflected XSS); marca `HttpOnly` como item de checklist de mitigação, sem detalhar o mecanismo
+- [[wiki/sources/anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato]] — session token formalizado como o caso clássico de token opaco, dentro da distinção arquitetural opaco vs. autocontido

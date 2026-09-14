@@ -3,7 +3,7 @@ type: source
 title: "JOSE, JWS, JWE, JWK, JWA: Algorithm Confusion e a Alternativa PASETO"
 aliases: ["Anatomia de um Token 2", "ecossistema JOSE", "algorithm confusion", "alg none", "PASETO"]
 date_created: 2026-09-01
-date_updated: 2026-09-01
+date_updated: 2026-09-14
 source_count: 0
 tags: [jwt, jose, jws, jwe, jwk, jwa, algorithm-confusion, paseto, cipher-agility, seguranca, criptografia]
 skill: tech-mentor-security
@@ -19,7 +19,7 @@ date_ingested: 2026-09-01
 
 ## TL;DR
 
-Vídeo de [[wiki/entities/bernardo-lobato]], continuação direta de "Anatomia de um Token 1" (já coberto em [[wiki/concepts/jwt]]). Aprofunda o **ecossistema JOSE** (JSON Object Signing and Encryption) que sustenta o JWT: **JWS** (assinatura — integridade/autenticidade, RFC 7515 implícita), **JWE** (criptografia — confidencialidade, RFC 7516), **JWK** (representação JSON de chaves criptográficas, RFC 7517) e **JWA** (catálogo de algoritmos permitidos, RFC 7518). O núcleo do vídeo é mostrar que o JWA é a fonte de uma filosofia de design chamada **cipher agility** — suportar múltiplos algoritmos e trocar entre eles via o próprio header do token — e que essa flexibilidade é a causa raiz do ataque **algorithm confusion** (incluindo a variante `alg: none`), que expôs bibliotecas populares (Node.js, Python, Ruby, PHP) segundo pesquisa de **Tim McLean em 2015**. Fecha apresentando o **PASETO** (Platform Agnostic Security Token) como alternativa de "cipher rigidity" — versões fixas (V1–V4), algoritmos únicos e modernos (Ed25519, AES-256-GCM), sem espaço para o cliente escolher o algoritmo — e conclui que o JWT continua valendo a pena desde que a validação seja rígida (whitelist de algoritmos no servidor, nunca aceitar o algoritmo vindo do cliente).
+Vídeo de [[wiki/entities/bernardo-lobato]], continuação direta de [[wiki/sources/anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato|"Anatomia de um Token 1"]] (ingerido posteriormente; à época deste ingest só o conteúdo já estava coberto em [[wiki/concepts/jwt]], sem fonte dedicada — lacuna agora preenchida). Aprofunda o **ecossistema JOSE** (JSON Object Signing and Encryption) que sustenta o JWT: **JWS** (assinatura — integridade/autenticidade, RFC 7515 implícita), **JWE** (criptografia — confidencialidade, RFC 7516), **JWK** (representação JSON de chaves criptográficas, RFC 7517) e **JWA** (catálogo de algoritmos permitidos, RFC 7518). O núcleo do vídeo é mostrar que o JWA é a fonte de uma filosofia de design chamada **cipher agility** — suportar múltiplos algoritmos e trocar entre eles via o próprio header do token — e que essa flexibilidade é a causa raiz do ataque **algorithm confusion** (incluindo a variante `alg: none`), que expôs bibliotecas populares (Node.js, Python, Ruby, PHP) segundo pesquisa de **Tim McLean em 2015**. Fecha apresentando o **PASETO** (Platform Agnostic Security Token) como alternativa de "cipher rigidity" — versões fixas (V1–V4), algoritmos únicos e modernos (Ed25519, AES-256-GCM), sem espaço para o cliente escolher o algoritmo — e conclui que o JWT continua valendo a pena desde que a validação seja rígida (whitelist de algoritmos no servidor, nunca aceitar o algoritmo vindo do cliente).
 
 ## Key Claims
 

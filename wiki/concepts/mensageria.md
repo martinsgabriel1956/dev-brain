@@ -3,8 +3,8 @@ type: concept
 title: "Mensageria"
 aliases: ["message broker", "queue", "stream", "eda", "event driven"]
 date_created: 2026-04-23
-date_updated: 2026-09-02
-source_count: 9
+date_updated: 2026-09-14
+source_count: 10
 tags: [mensageria, kafka, rabbitmq, sqs, queue, stream, eda, at-least-once, dlq]
 skill: tech-mentor-backend
 status: stub
@@ -49,3 +49,4 @@ Comunicação assíncrona entre serviços via broker de mensagens. Resolve acopl
 - [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] — fila (Kafka/SQS/RabbitMQ/Redis Streams) apresentada como "grande buffer" que absorve picos e desacopla produtor de consumidor
 - [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — demonstração passo a passo de por que um segundo consumer Kafka fica ocioso sem partições adicionais; dois consumer groups independentes consumindo o mesmo tópico para propósitos distintos
 - [[wiki/sources/ambulance-pattern-priorizacao-mensagens-mark-richards]] — por que prioridade embutida na mensagem causa starvation, e por que separar em duas filas físicas (opcionalmente com instância dedicada por fila) resolve sem esse efeito colateral
+- [[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] — publicar numa fila/broker logo após um INSERT no banco não é atômico por padrão (dual write problem); solução via [[wiki/concepts/outbox-pattern]]

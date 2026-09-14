@@ -3,8 +3,8 @@ type: concept
 title: "CLAUDE.md"
 aliases: ["claude md", "project memory", "user memory", "memory claude code"]
 date_created: 2026-05-31
-date_updated: 2026-08-11
-source_count: 5
+date_updated: 2026-09-14
+source_count: 6
 tags: [claude-code, claude-md, memory, context-engineering, agente-ia]
 skill: tech-mentor-ai
 status: stable
@@ -121,8 +121,13 @@ Devido à [[token-tax-multilingual]], um `CLAUDE.md` escrito em português conso
 
 [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] estende o uso do `CLAUDE.md` para um arquivo irmão, `review.md`, que codifica o que um revisor deve procurar. A cadeia lógica atribuída a [[wiki/entities/boris]]: se você sabe explicar por que um código está ruim, sabe escrever essa explicação — então escreva-a num `CLAUDE.md`/`review.md` que um **agente revisor** lê como input, em vez de re-explicar a cada PR. Boris argumenta que escrever esses arquivos (mais skills e docs) que deixam agentes trabalharem com *zero contexto adicional* é o novo trabalho de engenharia, barateado pela automação. No fluxo de [[wiki/concepts/matriz-risco-dificuldade-review-ia|amostragem]], cada defeito encontrado por sampling vira uma regra nova nesses arquivos — o `CLAUDE.md` é o destino do aprendizado, não uma correção pontual. (A fonte nota de passagem a preferência da [[wiki/entities/anthropic|Anthropic]] por `AGENTS.md` sobre `CLAUDE.md`.)
 
+## Controvérsia Pública: Claude Code Só Lê CLAUDE.md, Não AGENTS.md
+
+[[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] relata que o Claude Code lê apenas `CLAUDE.md`, recusando o formato compartilhado `AGENTS.md` (lido por outros agentes, como o Codex da OpenAI) — o que motivou Tobi Lütke, CEO da [[wiki/entities/shopify]], a cogitar publicamente banir o Claude Code na empresa. Ver [[wiki/concepts/agents-md-vs-claude-md]] para o detalhamento completo, incluindo a **contradição registrada** com a nota logo acima desta seção (que atribui à Anthropic uma preferência pelo `AGENTS.md`) — nenhuma das duas fontes é primária, e a contradição não foi resolvida nesta sessão.
+
 ## Key Sources
 
+- [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] — controvérsia pública Shopify/Tobi Lütke sobre Claude Code não ler AGENTS.md
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — `review.md` como CLAUDE.md do revisor automático; docs como o novo trabalho de engenharia (Boris); CLAUDE.md como destino do aprendizado de sampling
 - [[wiki/sources/agents-md-vale-a-pena-paper-zurique]] — paper de Zurique; evidência empírica de custo e efetividade; estratégia enxuto + links

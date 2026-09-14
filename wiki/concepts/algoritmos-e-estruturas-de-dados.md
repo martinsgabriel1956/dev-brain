@@ -3,8 +3,8 @@ type: concept
 title: "Algoritmos e Estruturas de Dados"
 aliases: ["DSA", "data structures", "estruturas de dados", "algoritmos"]
 date_created: 2026-05-16
-date_updated: 2026-09-03
-source_count: 19
+date_updated: 2026-09-14
+source_count: 20
 tags: [fundamentos, cs-fundamentals, algoritmos, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -90,8 +90,13 @@ Cada estrutura tem sua própria página com complexidade, analogias e quando usa
 
 [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] reforça a fundação de DSA para quem migra de linguagens de alto nível (React, JavaScript, Python) para [[wiki/concepts/linguagem-c|C]] e programação de baixo nível: sem `.sort()` pronto ou bibliotecas de estruturas prontas, a falta dessa base vira gargalo imediato — o exemplo dado é não conseguir sequer reconhecer ou resolver detecção de ciclo em grafo. Cita **Cormen** ("a Bíblia", denso e difícil de ler), **"Entendendo Algoritmos"** (bem avaliado por terceiros) e a **Univesp** (aulas gratuitas) como fontes de estudo.
 
+## Entender o CLRS Como Meta de Formação Acadêmica
+
+[[wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos]] acrescenta um ângulo de expectativa educacional: uma boa graduação em computação deveria formar a pessoa com capacidade de entender as notações de um livro denso como o CLRS (Cormen), mesmo que o ponto de partida para quem "não manja de matemática" seja um livro mais intuitivo (*Entendendo Algoritmos*). Reforça, do lado da formação formal, a mesma dupla de fontes (Cormen + Entendendo Algoritmos) já citada em [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] para quem migra para baixo nível.
+
 ## Key Sources
 
+- [[wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos]] — entender o CLRS/Cormen como meta de uma boa formação acadêmica; Entendendo Algoritmos como ponto de entrada para quem não manja de matemática
 - [[wiki/sources/akita-como-aprender-programacao]] — afirmação de que DSA é o que separa amadores de profissionais; por que linguagens modernas escondem essas estruturas; sequência de aprendizado
 - [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — DSA é parte pequena do todo; confundir DSA com lógica de programação seria "leviano"
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]] — introdução prática às cinco estruturas; três perguntas de decisão; quando usar cada uma

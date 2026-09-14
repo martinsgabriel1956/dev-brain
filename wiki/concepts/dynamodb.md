@@ -3,8 +3,8 @@ type: concept
 title: "Amazon DynamoDB"
 aliases: ["DynamoDB", "Dynamo"]
 date_created: 2026-08-04
-date_updated: 2026-08-21
-source_count: 4
+date_updated: 2026-09-14
+source_count: 5
 tags: ["aws", "dynamodb", "nosql", "banco-de-dados", "infra", "cloud"]
 skill: tech-mentor-infra
 status: stub
@@ -40,9 +40,18 @@ Exemplo canônico de partition key + sort key: partition key = customer ID, sort
 
 Antes de ir para produção, é possível desenvolver contra uma emulação local do DynamoDB via [[wiki/concepts/localstack]] — evita custo de nuvem e dependência de rede durante o desenvolvimento. [[wiki/entities/lucas-badico]] usa esse caminho no core do seu sistema de mentoria em Go, reservando DynamoDB para casos de uso já pensados nativamente para AWS (ex.: agendar notificação uma hora antes de uma mentoria), enquanto o banco relacional principal é PostgreSQL/PostGIS. Ver [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]].
 
+## Custo por Payload: WCU e RCU
+
+O modelo de cobrança torna o **tamanho do payload** um fator direto de custo, diferente do [[wiki/concepts/postgresql|Postgres]] (onde o tamanho importa mais para performance/armazenamento que para custo da operação): escrita é cobrada em **WCU** (Write Cost Unit, documento dividido por 1 KB — um documento de 24 KB = 24 WCU), cobrando ainda mais se exigir consistência forte ou escrever em mais de uma tabela ao mesmo tempo; leitura é cobrada em **RCU** (Read Cost Unit, dividido por 4 KB). Ver [[wiki/concepts/criterios-de-escolha-de-banco-de-dados]] e [[wiki/concepts/toast-postgresql]] para o contraste direto com o Postgres.
+
+## Compensa Quando Storage é Alto e Transação é Baixa
+
+Cenário concreto onde DynamoDB supera Postgres: base de dados grande (muito storage) mas com baixa frequência de leitura/escrita. No Postgres, manter o índice de uma tabela grande em memória (shared buffer) para boa performance exigiria uma máquina com muita RAM subutilizada — no Dynamo, o custo de storage é baixo, e como o volume de transações é baixo, o custo de transação (onde o Dynamo realmente cobra) também fica baixo. Ver [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]].
+
 ## Key Sources
 
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]
 - [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — exemplo de partition/sort key, modos Provisioned vs. On-Demand, e casos ideais vs. não ideais
 - [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]] — uso via LocalStack para desenvolvimento local, em conjunto com PostgreSQL como banco principal
 - [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — escolha de NoSQL sobre SQL justificada por dois fatores concretos aplicados a um encurtador de URL: dados naturalmente chave-valor (short-code → URL longa) e requisito não-funcional de baixa latência
+- [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]] — modelo de cobrança WCU/RCU por KB de payload, e cenário de storage alto + transação baixa onde DynamoDB compensa mais que Postgres

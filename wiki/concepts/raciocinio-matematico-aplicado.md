@@ -3,8 +3,8 @@ type: concept
 title: "Raciocínio Matemático Aplicado"
 aliases: ["pensamento matemático", "matemática básica para devs", "raciocínio quantitativo"]
 date_created: 2026-07-03
-date_updated: 2026-08-13
-source_count: 3
+date_updated: 2026-09-14
+source_count: 4
 tags: [matematica, raciocinio, fundacao-tecnica, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -48,8 +48,13 @@ Ao contrário de linguagens e frameworks — que mudam a cada [[ciclo-de-mercado
 - [[autodidata]] — postura necessária para buscar essa fundação por conta própria, já que cursos não ensinam
 - [[wiki/concepts/reserva-de-emergencia]] — decisão de juros compostos/renda fixa aplicada na prática por faixa salarial
 
+## Matemática Como Barreira de Entrada ao CLRS — Não Motivo Para Ignorá-la
+
+[[wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos]] acrescenta uma nuance prática ao "filtro de entrada" já documentado acima: não entender hoje funções, limites e afins não é, por si só, um grande problema — quem precisa estudar algoritmos deve primeiro buscar a intuição (ex.: via *Entendendo Algoritmos*) antes de encarar um livro denso como o CLRS. Mas a fonte é explícita que isso não é uma licença para ignorar matemática indefinidamente: uma boa graduação deveria formar a pessoa capaz de entender a notação do Cormen. É uma variante mais branda do argumento de filtro — sequência (intuição antes de rigor), não exigência de facilidade imediata com matemática.
+
 ## Key Sources
 
+- [[wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos]] — matemática como barreira de entrada ao CLRS, mas não desculpa para ignorá-la para sempre; sequência intuição→rigor via Entendendo Algoritmos antes do Cormen
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]]
 - [[wiki/sources/como-eu-investiria-como-programador-ate-50000]] — mesma tese aplicada de forma prática: tesouro pré-fixado, IPCA+ e cautela com juros compostos mal calculados em investimentos
 - [[wiki/sources/papinho-tech-solo-q-and-a-carreira]] — matemática como filtro de entrada na graduação de computação (área exata; Cálculo/Estatística/Probabilidade na grade)

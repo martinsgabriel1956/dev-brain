@@ -3,8 +3,8 @@ type: concept
 title: "Visão de Negócio do Desenvolvedor"
 aliases: ["lado sombrio da força", "dev entende de negócio", "business acumen para devs"]
 date_created: 2026-07-29
-date_updated: 2026-08-11
-source_count: 3
+date_updated: 2026-09-14
+source_count: 4
 tags: [carreira, negocio, comunicacao, priorizacao, precificacao]
 skill: tech-mentor-leadership
 status: draft
@@ -39,8 +39,13 @@ Não existe fórmula única por indústria, mas o ponto de entrada recomendado �
 
 [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] leva o tema ao terreno de **vendas/precificação**: o dev bom tecnicamente que ignora negócio consegue o emprego ou os primeiros clientes, mas falha em fechar **grandes contratos**. A fonte ensina [[wiki/concepts/ancoragem-de-preco|ancoragem de preço]] usando o lançamento do Opus 5 da [[wiki/entities/anthropic]] como estudo de caso — e insiste que a jogada só funciona porque há competência técnica real por trás: "a época de fazer dinheiro só com lábia passou; agora o mercado cobra resultado". Reforça a tese central desta página (negócio e técnica são inseparáveis) pelo ângulo de quanto se cobra, não só do que se constrói.
 
+## "Vira Ouro": Contra a Tese de que o Negócio Vai Mandar no Dev
+
+[[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] discorda explicitamente de uma tese que circula no mercado — a de que, com a IA, quem manda passa a ser o profissional de negócio/visão analógica, e o desenvolvedor perde importância. O argumento contrário: o dev consegue adquirir conhecimento de negócio rápido partindo de uma base técnica já sólida, e esse conhecimento técnico não foi descartado pela IA, continua muito relevante — a questão é como ele é usado. Quando as duas coisas se combinam, "vira ouro". A fonte reforça isso com autocrítica: antes da IA, era comum (o próprio autor se inclui) ser um dev muito técnico mas pouco interessado em regra de negócio; hoje isso deixou de ser suficiente.
+
 ## Key Sources
 
+- [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] — "conhecimento técnico + negócio vira ouro"; contra-argumento à tese de que o profissional de negócio passa a mandar no desenvolvedor
 - [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — Hábito 7, único source até o momento
 - [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — demanda por software crescendo apesar da IA (não-devs vibe codam scripts); serviço virando produto via orquestração de agentes; framework de [[wiki/concepts/estagios-de-maturidade-de-produto]] e [[wiki/concepts/canais-de-distribuicao]]
 - [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — visão de negócio aplicada a precificação (ancoragem); técnica + negócio inseparáveis para fechar grandes contratos

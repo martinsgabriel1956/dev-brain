@@ -3,8 +3,8 @@ type: concept
 title: "Outbox Pattern"
 aliases: ["transactional outbox", "outbox + cdc", "outbox"]
 date_created: 2026-04-22
-date_updated: 2026-08-27
-source_count: 4
+date_updated: 2026-09-14
+source_count: 5
 tags: [sistemas-distribuidos, mensageria, outbox, cdc, consistencia, idempotencia, inbox]
 skill: tech-mentor-system-design
 status: stub
@@ -44,9 +44,14 @@ Outbox resolve a publicação confiável de um lado da fronteira. Do outro lado,
 
 [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] nomeia o problema resolvido por este padrão — "bug da escrita dupla", ver [[wiki/concepts/dual-write-problem]] — no contexto de sincronizar write e read model via eventos em [[wiki/concepts/cqrs]], mas apenas remete a outro vídeo do canal para a solução, sem detalhar o mecanismo (que já está registrado com profundidade acima e em `references/architecture-eda-patterns.md` da skill `tech-mentor-backend`).
 
+## Por Que uma Transação Local Não Basta Sozinha
+
+[[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] percorre o raciocínio passo a passo com um exemplo de entrevista (cadastro de usuário + e-mail de boas-vindas): a primeira correção intuitiva para o [[wiki/concepts/dual-write-problem]] é envolver o INSERT no banco e a publicação no broker numa mesma transação de banco de dados. Isso **não resolve** — a transação local não tem poder de atomicidade sobre a chamada externa (Kafka, HTTP). Se a aplicação ou o banco caírem exatamente entre a publicação da mensagem e o `COMMIT`, a mensagem já foi enviada mas o registro nunca foi persistido: o usuário recebe o e-mail de boas-vindas, mas não existe no banco para fazer login. Isso é o motivo estrutural pelo qual o outbox precisa estar **dentro** da mesma transação local do dado de negócio (não como uma segunda operação externa "protegida" por ela).
+
 ## Key Sources
 
 - [[sources/3pc]]
+- [[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] — desafio de entrevista de cadastro de usuário + e-mail de boas-vindas; demonstra por que envolver a chamada externa numa transação de banco não resolve o dual write, e detalha o Outbox Consumer via polling vs. CDC/Debezium como evolução
 - [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] — citação nominal do bug da escrita dupla como risco de sincronizar CQRS via eventos, sem detalhar a solução
 - [[wiki/sources/outbox-pattern]]
 - [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] — Outbox/Inbox como o par que mantém a identidade da operação atravessando fronteiras de serviço sob entrega at-least-once

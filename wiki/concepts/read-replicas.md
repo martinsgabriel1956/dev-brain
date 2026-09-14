@@ -3,8 +3,8 @@ type: concept
 title: "Read Replicas"
 aliases: ["réplica de leitura", "read replica", "replica routing"]
 date_created: 2026-04-22
-date_updated: 2026-08-27
-source_count: 9
+date_updated: 2026-09-14
+source_count: 10
 tags: [banco-de-dados, escalabilidade, read-replicas, postgresql, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -55,6 +55,10 @@ Read replicas são o mecanismo concreto por trás do read/write split usado em [
 
 [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] marca uma distinção explícita entre as duas formas mais comuns de consistência eventual em CQRS: com read replicas, o read model **preserva exatamente o schema** da base de escrita (mesmas tabelas, colunas, esquema); com sincronização via eventos, o query service pode transformar a informação livremente no formato final que quiser ao consumir (ex.: escrita relacional → leitura em Elasticsearch). Read replicas são, portanto, a opção mais simples quando o objetivo é só volume — não quando o objetivo também inclui divergência de modelo.
 
+## Réplicas Não Removem o Teto Vertical do Primário
+
+Mesmo com réplicas de leitura, bases relacionais tradicionais continuam escalando principalmente na **vertical**: o nó primário (onde chegam `INSERT`/`UPDATE`) está limitado à capacidade de hardware daquele servidor. Sharding manual pode quebrar entre servidores, mas não é um processo natural/automático do banco — diferente de um key-value store como [[wiki/concepts/dynamodb|DynamoDB]], que escala automaticamente e horizontalmente conforme o workload. Ver [[wiki/concepts/criterios-de-escolha-de-banco-de-dados]] e [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]].
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
@@ -66,3 +70,4 @@ Read replicas são o mecanismo concreto por trás do read/write split usado em [
 - [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — justificativa didática do read/write split: "a maioria das aplicações lê mais do que escreve", então um banco de escrita alimenta réplicas de leitura
 - [[wiki/sources/world-cup-system-design]] — réplicas servindo rotas de histórico/estatística separadas do caminho de placar ao vivo (Redis), divisão por volatilidade do dado
 - [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — mesma justificativa didática ("a maioria das aplicações lê mais do que escreve"), com exemplo concreto de roteamento no Laravel (chaves `read`/`write`) e cluster Amazon Aurora
+- [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]] — réplicas de leitura não eliminam o teto vertical do nó primário de escrita, contrastado com escalabilidade horizontal automática do DynamoDB

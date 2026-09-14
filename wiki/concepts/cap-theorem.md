@@ -3,8 +3,8 @@ type: concept
 title: "Teorema CAP"
 aliases: ["CAP theorem", "CAP", "consistência disponibilidade partição", "PACELC"]
 date_created: 2026-06-26
-date_updated: 2026-09-04
-source_count: 7
+date_updated: 2026-09-14
+source_count: 8
 tags: [system-design, sistemas-distribuidos, cap-theorem, consistencia, disponibilidade]
 skill: tech-mentor-system-design
 status: stub
@@ -80,3 +80,4 @@ Material de prova de concurso costuma ensinar o CAP com categorização fixa por
 - [[wiki/sources/anatomia-entrevista-system-design-bigtech]]
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — CP vs AP aplicado à escolha de MySQL/PostgreSQL/Oracle (CP) vs. MongoDB/Redis-eventual (AP tendencial)
 - [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] — categorização CA/CP/AP fixa por produto, como cobrada em prova de concurso
+- [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]] — consistência eventual em réplicas de leitura e em bases NoSQL com sharding apresentada como um dos 8 critérios práticos de escolha de banco; ver [[wiki/concepts/criterios-de-escolha-de-banco-de-dados]]

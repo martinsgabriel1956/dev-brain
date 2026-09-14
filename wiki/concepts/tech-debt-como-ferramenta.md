@@ -3,8 +3,8 @@ type: concept
 title: "Tech Debt como Ferramenta"
 aliases: ["tech debt deliberado", "dívida técnica estratégica", "ship with debt"]
 date_created: 2026-04-26
-date_updated: 2026-09-08
-source_count: 14
+date_updated: 2026-09-14
+source_count: 16
 tags: [tech-debt, carreira, craftsmanship, estrategia, velocidade, under-engineering, alocacao-de-tempo, medicao]
 skill: tech-mentor-leadership
 status: draft
@@ -118,8 +118,18 @@ Ver também: o mesmo capítulo cunha explicitamente o termo **"technical debt"**
 
 [[concepts/observabilidade]] · [[sources/conceitos-que-ninguem-ensina]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/avaliar-hype-tecnologico]] · [[wiki/concepts/divida-cognitiva]] · [[wiki/concepts/debt-ratio-sqale]] · [[wiki/concepts/hotspot-analysis]] · [[wiki/concepts/paid-framework]] · [[wiki/concepts/refactor-vs-rewrite-matrix]]
 
+## Ciclos Mais Curtos Como Gatilho Para Alocar Tempo a Débito Técnico
+
+[[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] traz um mecanismo de origem diferente para o mesmo problema de alocação de tempo desta página: com a IA acelerando a entrega de features, ciclos de sprint encurtam (de duas semanas para uma semana ou três dias), o que libera tempo que antes nunca era priorizado — bons casos de teste, quality gates fortes, pagamento de débito técnico. A fonte propõe inclusive a ideia de sprints inteiras dedicadas a débito técnico como contrapartida ao ganho de velocidade, em vez de só cobrar mais entrega no mesmo ritmo. É uma variante do modelo de "sprint/percentual dedicado" já registrado nesta página ([[wiki/sources/tech-debt-guia-completo-gestao-metricas]]), mas motivada especificamente pela aceleração de IA, não por um percentual fixo de capacidade.
+
+## "Build for Rebuilding": Descarte Deliberado Como Padrão Operacional
+
+[[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] descreve uma quarta regra do playbook da Anthropic — "build for rebuilding" — como uma variante deliberada e institucionalizada do descarte de código já documentado nesta página: como o custo de escrever e jogar fora código caiu, reconstruir (não só incrementar) uma feature várias vezes vira estratégia consciente, não sinal de falha de planejamento. Segundo a fonte, times costumam só entender de fato o problema depois de algumas reconstruções — o que reforça a lógica desta página de que dívida/descarte técnico bem gerido é uma ferramenta, não um fracasso a ser evitado a qualquer custo. Ver [[wiki/concepts/sdlc-nativo-de-ia]] para o framework completo.
+
 ## Key Sources
 
+- [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] — "build for rebuilding": reconstrução iterativa deliberada como estratégia, não falha de planejamento
+- [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] — ciclos de sprint mais curtos via IA liberando tempo para débito técnico e quality gates; proposta de sprint dedicada a débito técnico como contrapartida ao ganho de velocidade
 - [[wiki/sources/arquitetura-de-sacrificio]] — arquitetura de sacrifício = dívida assumida *deliberadamente*, com plano de substituição, sem abrir mão da qualidade interna
 - [[sources/5-principios-programador]]
 - [[wiki/sources/5-principles-that-changed-me-as-a-programmer]]

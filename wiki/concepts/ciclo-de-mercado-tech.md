@@ -3,8 +3,8 @@ type: concept
 title: "Ciclo de Mercado Tech"
 aliases: ["ciclo de abundância e depressão", "lei da oferta e procura em tech", "ciclo de contratação tech"]
 date_created: 2026-07-03
-date_updated: 2026-08-27
-source_count: 11
+date_updated: 2026-09-14
+source_count: 12
 tags: [carreira, mercado-de-trabalho, oferta-e-procura, ciclo-economico]
 skill: tech-mentor-leadership
 status: draft
@@ -88,8 +88,15 @@ A mesma fonte cita, como contraponto histórico, o Google (nascido de restriçã
 
 [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] usa um contra-argumento de mercado contra a tese de que "programar sempre foi fácil": se fosse, não explicaria por que devs eram tão requisitados e exigiam salários altos por anos mesmo antes do [[wiki/concepts/ciclo-de-mercado-tech|ciclo de ZIRP]], nem por que havia tanto estresse e esgotamento antes da IA passar a gerar PRs de milhares de linhas — empresas já buscavam "programadores 10x mais rápidos" e submetiam candidatos a entrevistas de LeetCode em múltiplas etapas, um padrão de seletividade que não combina com "trabalho fácil".
 
+## Bootcamp de Frontend como Via de Entrada da Onda de Abundância — e Sua Saturação
+
+[[wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos]] narra em detalhe um caso concreto do mecanismo já documentado na seção "O Mecanismo": bootcamps de frontend (~6 meses) foram a via de entrada dominante numa fase de abundância, atraente por valor motivacional claro (construir um site visível) e risco/responsabilidade menor que backend (menos exposição a dados sensíveis e banco de dados). A saturação de concorrência — "todo dev tinha que saber JavaScript porque só estavam ensinando isso" — já criava dificuldade de entrada **antes** da IA existir, reforçando que o ciclo de abundância→depressão por essa via específica não depende do vetor IA para começar. Depois da IA, a fonte descreve frontend como o segmento tecnicamente mais fácil/barato de automatizar, agravando (não iniciando) a mesma saturação.
+
+Um dado anedótico (nome de consultoria não confirmado com segurança na transcrição, possivelmente "Mackin") reforça a "Defasagem EUA → Brasil como Preditor de Onda" já documentada acima: vagas júnior nos EUA em queda de ~1-2%, revertendo uma tendência anterior de crescimento — sem dado equivalente citado para o Brasil.
+
 ## Key Sources
 
+- [[wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos]] — bootcamp de frontend como via de entrada saturada antes da IA; dado anedótico (fonte não confirmada) de queda de vagas júnior nos EUA
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — salários altos e estresse pré-ZIRP/pré-IA como evidência contra "programar sempre foi fácil"
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]]
 - [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] — paralelo com a bolha de 2000-2001, contratação como métrica de vaidade para investidor, contraste Google vs. Cadê

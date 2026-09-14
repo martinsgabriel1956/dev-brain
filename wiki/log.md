@@ -9789,3 +9789,394 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 **Notas / open questions:** (1) **Fork (`/fork`) não tinha página nem seção própria na wiki até agora** — só existia a distinção worktree-vs-subagent; esta fonte foi a primeira a nomear e descrever o fork como terceira forma de paralelismo (clona toda a conversa, ao contrário de subagent), tratado aqui como seção dentro de `subagentes.md` em vez de página nova, por ser um conceito pequeno e sempre discutido em contraste direto com subagent. (2) **Remoção do `/agent`** citada só pela observação do autor na própria UI, sem changelog oficial linkado — registrado como open question na fonte, não propagado como fato consolidado para `subagentes.md`. (3) A opinião pessoal do autor (ceticismo sobre paralelismo massivo, preferência por isolamento de contexto) foi citada na página do conceito como complementar, não equivalente em confiança, ao benchmark numérico já registrado de [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] — mantendo a distinção entre opinião e dado medido.
 
 ---
+
+## [2026-09-14] ingest | IA em 2026: Por Que Ela Não Vai Substituir o Desenvolvedor — Processos, Governança e Segurança
+
+**Fonte:** [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] — transcrição de vídeo sem roteiro, em português, transformada em Markdown estruturado a partir de fala corrida colada diretamente pelo usuário (sem arquivo de origem preexistente em `raw/`); salva em `raw/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca.md`. Sem tradução necessária.
+
+**Skill carregada:** `tech-mentor-ai`. O `CLAUDE.md` aponta o base path de skills para `/home/nemomartins/Documentos/new/skills/`, que não existe nesta máquina (mesma skill drift já registrada em ingests anteriores) — mas desta vez as skills foram localizadas em `/home/gabriel-martins/Documentos/skills/`, mesma estrutura de diretórios. `tech-mentor-ai/SKILL.md` foi lido por completo (índice de referências) e a referência `references/ai-assisted-engineering.md` foi consultada, mas cobre principalmente uso de Copilot/Cursor, não os temas centrais desta fonte (processo ágil, governança, ataques de anomalia/destilação); `references/ai/ai-safety-engineering.md` e `references/ai/governance.md` também foram parcialmente lidas para calibração de segurança/governança, mas nenhuma cobre a distinção destilação-em-massa vs. ataque-de-anomalia-com-poucas-interações descrita na fonte — tratada como conceito novo, sem contraparte na skill.
+
+**Arquivos criados:**
+- `raw/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca.md`
+- `wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca.md` — TL;DR, 11 key claims, conceitos/entidades tocados, ver também, open questions, citações
+- `wiki/concepts/ataque-de-destilacao-e-extracao-de-dados-llm.md` — página nova, stub: distingue ataque de destilação em massa (comportamento do modelo, caso Alibaba/OpenAI) de ataque de anomalia (extração de dados expostos a um agente com 5-6 interações)
+- `wiki/entities/alibaba.md` — página nova, stub: atribuída como autora do ataque de destilação contra a OpenAI
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/novo-perfil-dev-ia.md` — `source_count` 6 → 7; nova seção sobre orquestração como trabalho humano do ângulo de consultoria a grandes empresas brasileiras
+- `wiki/concepts/visao-de-negocio-do-desenvolvedor.md` — `source_count` 3 → 4; nova seção "vira ouro" contra a tese de que o profissional de negócio passaria a mandar no desenvolvedor
+- `wiki/concepts/ia-como-amplificador.md` — `source_count` 3 → 4; nova seção sobre IA preenchendo gap raso entre camadas adjacentes (backend/frontend), distinta do gap profundo de julgamento arquitetural já documentado na página
+- `wiki/concepts/mudanca-cultural-como-produto-de-servicos-de-ia.md` — `source_count` 1 → 2; nova seção sobre repensar sprint como mudança cultural que pode ser benefício (folga, sprint leve), não só ameaça
+- `wiki/concepts/hype-de-ia.md` — `source_count` 3 → 4; nova seção sobre governança/segurança não gerarem hype apesar de serem os temas reais discutidos internamente nas empresas
+- `wiki/concepts/tech-debt-como-ferramenta.md` — `source_count` 14 → 15; nova seção sobre ciclos mais curtos via IA liberando tempo para débito técnico, variante do modelo de sprint dedicado já documentado
+- `wiki/concepts/user-stories.md` — `source_count` 3 → 4; nova seção questionando o sizing Fibonacci em favor de tarefas maiores com sprints mais curtas
+- `wiki/concepts/engenharia-reversa.md` — `source_count` 1 → 2; nova seção aplicando o termo a extração de dados via comportamento de agente de IA (fora do escopo original de binário/assembly da página)
+- `wiki/concepts/finops-para-ia.md` — `source_count` 1 → 2; confirmação cruzada de que controle de gasto de IA é tema central nas conversas internas de empresas grandes
+- `wiki/concepts/governanca-de-codigo-gerado-por-ia.md` — `source_count` 6 → 7; nova seção expandindo o paradoxo da página para processo, gasto e segurança, além de revisão de código
+- `wiki/entities/openai.md` — `source_count` 17 → 18; novo incidente de segurança (ataque de destilação atribuído à Alibaba)
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts; duas novas linhas em Entities
+
+**Notas / open questions:** (1) **Cifra do caso Alibaba/OpenAI (~25 mil contas falsas) citada de memória pelo autor, sem fonte primária** — registrado como não confirmado em `wiki/entities/alibaba.md`, `wiki/entities/openai.md` e na própria source; vale checar contra reportagem oficial se aparecer em fonte futura. (2) **Distinção destilação-em-massa vs. ataque-de-anomalia-com-poucas-interações é conceito novo nesta wiki**, sem contraparte nem nos materiais de referência da skill `tech-mentor-ai` consultados nem em nenhuma página existente — tratado como stub em `wiki/concepts/ataque-de-destilacao-e-extracao-de-dados-llm.md`, sem mecanismo de detecção documentado (a própria fonte admite que hoje é difícil detectar esse tipo de ataque na prática). (3) **Fonte é opinião de consultoria, não estudo com dado** — a maioria dos claims desta fonte (sprints menores com tarefas maiores, folga/sprint leve como contrapartida, "vira ouro") foi registrada com confiança média, por serem observações/provocações de consultoria ainda em teste, não práticas validadas com métrica; refletido no tom das seções adicionadas às páginas de conceito (evitar tratar como consenso de mercado). (4) **Raw file não veio de um documento preexistente** — o usuário colou a transcrição diretamente no prompt e pediu para transformá-la em Markdown em `raw/` antes de ingerir; tratado como equivalente a "a pessoa dropou um arquivo em raw/", já que o conteúdo é fala corrida de vídeo como as demais transcrições desta wiki.
+
+---
+
+## [2026-09-14] ingest | Não Faz Sentido se Formar Para Ser Júnior — Mercado, Fundamentos e Livros
+
+**Fonte:** [[wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos]] — transcrição de vídeo/live sem roteiro, em português, colada diretamente pelo usuário no prompt (sem arquivo de origem preexistente em `raw/`); transformada em Markdown estruturado e salva em `raw/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos.md`. Sem tradução necessária.
+
+**Skill carregada:** `tech-mentor-leadership`. Localizada em `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/` (mesmo skill drift do `CLAUDE.md` já registrado em ingests anteriores, que aponta para `/home/nemomartins/Documentos/new/skills/`, inexistente nesta máquina). `SKILL.md` lido por completo (índice de referências) e a referência `references/career-progression.md` foi lida por completo — cobre majoritariamente progressão Senior→Staff→Principal e negociação salarial, que não é o foco central desta fonte (carreira júnior→pleno, mercado de entrada, fundamentos acadêmicos); nenhuma referência mais específica para "júnior→pleno"/mercado de entrada foi encontrada no índice da skill, então a calibração de domínio ficou majoritariamente a cargo de páginas já existentes na wiki sobre o mesmo tema (`vaga-junior-vira-pleno`, `ciclo-de-mercado-tech`).
+
+**Arquivos criados:**
+- `raw/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos.md`
+- `wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos.md` — TL;DR, 10 key claims, conceitos tocados, ver também, 4 perguntas abertas, citações
+
+**Páginas atualizadas (backlink + frontmatter), nenhuma página nova de concept/entity:**
+- `wiki/concepts/vaga-junior-vira-pleno.md` — `source_count` 7 → 8; nova seção "Recomendação de Carreira: Formar-se Para Pleno, Não Para Júnior"
+- `wiki/concepts/ciclo-de-mercado-tech.md` — `source_count` 11 → 12; nova seção sobre bootcamp de frontend como via de entrada saturada antes da IA, e dado anedótico de queda de vagas júnior nos EUA
+- `wiki/concepts/livros-recomendados-programador.md` — `source_count` 3 → 4; nova seção contrastando Entendendo Algoritmos (intuição) com CLRS/Cormen (denso)
+- `wiki/concepts/algoritmos-e-estruturas-de-dados.md` — `source_count` 19 → 20; nova seção sobre entender o CLRS como meta de formação acadêmica
+- `wiki/concepts/credencialismo-formacao-formal.md` — `source_count` 2 → 3; nova seção "comprando diploma" vs. aproveitar a graduação
+- `wiki/concepts/fundacao-tecnica.md` — `source_count` 10 → 11; nova seção sobre sociedade dependente de infraestrutura computacional como justificativa estrutural
+- `wiki/concepts/apagao-de-seniors.md` — `source_count` 4 → 5; nova seção sobre dado anedótico de queda de vagas júnior nos EUA como via causal adjacente
+- `wiki/concepts/networking-de-carreira.md` — `source_count` 4 → 5; nova seção sobre network de ex-alunos de graduação e reconhecimento explícito do papel da sorte
+- `wiki/concepts/raciocinio-matematico-aplicado.md` — `source_count` 3 → 4; nova seção sobre matemática como barreira de entrada ao CLRS, não motivo para ignorá-la
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Nome da consultoria do dado de queda de vagas júnior nos EUA não confirmado** — soa como "Mackin"/"Maquin" na transcrição, sem grafia segura; nenhuma entidade foi criada na wiki por falta de confirmação, e o dado foi tratado como anedótico/baixa-média confiança em todas as páginas tocadas. (2) **Frase sobre frontend e risco de automação por IA é ambígua na transcrição original** — interpretada como "frontend é o segmento mais fácil/barato de automatizar" por ser a leitura consistente com o resto do argumento e com `wiki/concepts/ciclo-de-mercado-tech` (seção "Frontend Pós-IA"), mas registrada como não 100% inequívoca na própria source. (3) **Nomes de empresas citados de memória pelo autor** (Disney, "Gopa"/possivelmente GoPuff) como exemplo de colegas bem posicionados em frontend sênior — não viraram entidades novas por serem menção de passagem, não foco da fonte, e por incerteza na grafia do segundo nome. (4) **Fonte é opinião/recomendação pessoal de carreira, não estudo com dado** — a maioria dos claims (formar-se para pleno, boa faculdade vale a pena) foi registrada com confiança média nas seções adicionadas, evitando tratar como consenso de mercado.
+
+---
+
+## [2026-09-14] ingest | Particionamento por HASH no PostgreSQL
+
+**Fonte:** [[wiki/sources/particionamento-por-hash-postgresql-sql-30-dias]] — transcrição de vídeo curto, em português, colada diretamente pelo usuário no prompt (sem arquivo de origem preexistente em `raw/`); transformada em Markdown estruturado e salva em `raw/particionamento-por-hash-postgresql-sql-30-dias.md`. Sem tradução necessária. Terceiro vídeo da mesma playlist "Como ser bom em SQL em 30 dias" já presente na wiki (LIST ingerido anteriormente; RANGE/"full" citado mas ainda não ingerido).
+
+**Skill carregada:** `tech-mentor-data`. Localizada em `/home/gabriel-martins/Documentos/skills/tech-mentor-data/` (mesmo skill drift do `CLAUDE.md` já registrado em ingests anteriores, que aponta para `/home/nemomartins/Documentos/new/skills/`, inexistente nesta máquina). `SKILL.md` lido por completo (índice de referências); tópico mapeado para `references/databases/postgresql.md` — sem conteúdo dedicado a `PARTITION BY HASH` nesse arquivo nem em `postgresql-advanced.md`/`postgresql-internals.md` (só RANGE via `pg_partman`), então a calibração de domínio ficou majoritariamente a cargo da página de concept já existente na wiki (`particionamento-de-tabela`, criada no ingest anterior de LIST).
+
+**Arquivos criados:**
+- `raw/particionamento-por-hash-postgresql-sql-30-dias.md`
+- `wiki/sources/particionamento-por-hash-postgresql-sql-30-dias.md` — TL;DR, 8 key claims, conceitos tocados, 4 perguntas abertas, citações
+
+**Páginas atualizadas (backlink + frontmatter), nenhuma página nova de concept/entity:**
+- `wiki/concepts/particionamento-de-tabela.md` — `source_count` 1 → 2; nova seção "Particionamento por HASH" com sintaxe `MODULUS`/`REMAINDER`, exemplo completo, e nota explícita de que HASH não é sharding físico
+- `wiki/concepts/postgresql.md` — `source_count` 11 → 12; seção "Particionamento Nativo" expandida de "RANGE vs. LIST" para "RANGE, LIST e HASH"
+- `wiki/concepts/sharding.md` — `source_count` 4 → 5; nova frase na lista de alternativas ao sharding, citando HASH do Postgres como o exemplo mais fácil de confundir com sharding real
+- `wiki/index.md` — nova linha em Sources, logo após a entrada de LIST
+
+**Notas / open questions:** (1) **Vídeo de RANGE ("full") da mesma playlist ainda não ingerido** — mencionado de segunda mão tanto nesta fonte quanto na fonte de LIST, mas sem SQL/demo próprios verificáveis nesta wiki; se aparecer como raw futuro, cross-referenciar as três fontes da playlist. (2) **Particionamento multi-nível (ano → estado) foi apenas descrito verbalmente pelo autor**, sem SQL demonstrado — registrado como menção não verificável na source, não incorporado como exemplo de código na página de concept. (3) **Distinção HASH vs. sharding é o ponto mais valioso desta fonte** — o próprio autor usa "sharding" como analogia e se corrige explicitamente; isso foi propagado como frase própria em `sharding.md` para reduzir confusão terminológica recorrente nessa página. (4) **Raw file não veio de um documento preexistente** — mesma situação já registrada nos ingests anteriores desta sessão: o usuário colou a transcrição diretamente no prompt.
+
+---
+
+## [2026-09-14] ingest | AI Engineer, Forward Deployed Engineer, Product Engineer: o que a demanda real diz
+
+**Fonte:** [[wiki/sources/ai-engineer-forward-deployed-engineer-mercado-vagas-2026]] — transcrição de vídeo sem roteiro, em português, colada diretamente pelo usuário no prompt (sem arquivo de origem preexistente em `raw/`); transformada em Markdown estruturado e salva em `raw/ai-engineer-forward-deployed-engineer-mercado-vagas-2026.md`. Sem tradução necessária.
+
+**Skill carregada:** `tech-mentor-leadership` (domínio primário: carreira/demanda de mercado entre quatro cargos; `tech-mentor-ai` marcado como domínio secundário nas tags, por o conteúdo cruzar AI Engineer/agentes). Localizada em `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/` (mesmo skill drift do `CLAUDE.md`, que aponta para `/home/nemomartins/Documentos/new/skills/`, inexistente nesta máquina, já registrado em ingests anteriores desta sessão). `SKILL.md` lido por completo (índice de referências); `references/career-progression.md` lido por completo — cobre majoritariamente Senior→Staff→Principal→Solutions Architect e negociação salarial, útil para o paralelo Forward Deployed Engineer↔Solutions Architect, mas sem conteúdo específico sobre AI Engineer/Machine Learning Engineer como categorias de mercado; nenhuma referência mais específica para "demanda de cargos de IA" foi encontrada no índice da skill, então a calibração de domínio ficou majoritariamente a cargo de páginas já existentes na wiki (`product-engineer`, `arquiteto-de-solucoes`, `novo-perfil-dev-ia`).
+
+**Arquivos criados:**
+- `raw/ai-engineer-forward-deployed-engineer-mercado-vagas-2026.md`
+- `wiki/sources/ai-engineer-forward-deployed-engineer-mercado-vagas-2026.md` — TL;DR, 11 key claims, case real (Thalis Pereira), conceitos/entidades tocados, 4 perguntas abertas, citações
+- `wiki/concepts/forward-deployed-engineer.md` — página nova, stub: definição do cargo, fragmentação de nomenclatura, dados de demanda (True Up), avaliação cética de carreira, o que pesa em entrevista
+- `wiki/entities/thalis-pereira.md` — página nova, stub: case real de Forward Deployed/AI Engineer citado na fonte
+- `wiki/entities/true-up.md` — página nova, stub: agregador de vagas, fonte dos dados de demanda
+- `wiki/entities/palantir.md` — página nova, stub: empresa-referência do modelo Forward Deployed Engineer
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/product-engineer.md` — `source_count` 2 → 3; nova seção posicionando o cargo na hierarquia de quatro cargos de IA por demanda real
+- `wiki/concepts/novo-perfil-dev-ia.md` — `source_count` 7 → 8; nova seção sobre progressão de carreira (usar IA bem → especializar em agentes) e analogia com o hype de blockchain
+- `wiki/concepts/arquiteto-de-solucoes.md` — `source_count` 1 → 2; nova seção mostrando que Forward Deployed Engineer é o mesmo papel rebatizado, com avaliação de carreira mais cética que a desta página
+- `wiki/concepts/vaga-junior-vira-pleno.md` — `source_count` 8 → 9; nova seção sobre pressão de full-stack como mecanismo do encolhimento da faixa pleno
+- `wiki/concepts/apagao-de-seniors.md` — `source_count` 5 → 6; nova seção com via causal demográfica distinta (corte de júnior hoje → falta de sênior em 2030/2031)
+- `wiki/concepts/livros-recomendados-programador.md` — `source_count` 4 → 5; nova seção sobre o livro *AI Engineering* como guia de entrevista parcialmente desatualizado
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (Perfil Profissional & Product Engineering); três novas linhas em Entities
+
+**Notas / open questions:** (1) **Autor do vídeo não identificado** nesta transcrição — sem nome de canal/pessoa no texto fornecido pelo usuário; nenhuma entidade "autor" foi criada por falta de confirmação. (2) **Dado "AI Engineer paga 15-25% a mais que Machine Learning Engineer"** citado sem fonte nomeada — registrado com confiança média na source, não propagado como fato consolidado a nenhuma página de conceito. (3) **Metodologia do True Up não detalhada além de "agrega e deduplica"** — números citados de segunda mão pelo autor do vídeo, sem link ou captura preservada; refletido na nota de confiança em `wiki/entities/true-up.md`. (4) **Projeção de aumento de demanda a partir de 2027** é especulação do autor sobre a mesma lógica demográfica já usada para o apagão de sêniors — tratada como confiança baixa-média em todas as páginas tocadas, para não virar consenso de mercado. (5) **Raw file não veio de um documento preexistente** — mesma situação já registrada nos ingests anteriores desta sessão: o usuário colou a transcrição diretamente no prompt e pediu explicitamente para primeiro criar o Markdown em `raw/`, depois ingerir.
+
+---
+
+## [2026-09-14] ingest | IA, Paradoxo de Jevons e o Futuro da Profissão de Programador
+
+**Fonte:** [[wiki/sources/ia-paradoxo-de-jevons-camada-de-abstracao-futuro-do-programador]] — transcrição de vídeo/monólogo sem roteiro, em português, colada diretamente pelo usuário no prompt (sem arquivo de origem preexistente em `raw/`); transformada em Markdown estruturado e salva em `raw/ia-paradoxo-de-jevons-camada-de-abstracao-futuro-do-programador.md`. Sem tradução necessária.
+
+**Skill carregada:** `tech-mentor-ai` (domínio primário: mecanismo estocástico de LLM, camada de abstração de IA, Paradoxo de Jevons; `tech-mentor-leadership` seria domínio secundário pela discussão de carreira/mercado, mas não foi carregada nesta sessão — a calibração de carreira já estava coberta por páginas existentes da wiki). Localizada em `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/` (mesmo skill drift do `CLAUDE.md` já registrado em ingests anteriores, que aponta para `/home/nemomartins/Documentos/new/skills/`, inexistente nesta máquina). `SKILL.md` lido por completo (índice de referências); `references/ai/fundamentals.md` lido — confirma o mecanismo de amostragem de token por distribuição de probabilidade e que `temperature=0` é determinístico, usado para qualificar com ressalva a alegação da fonte de que "o mesmo prompt sempre gera código totalmente diferente" (mais correto para temperatura alta que para harnesses de código configurados com temperatura baixa).
+
+**Arquivos criados:**
+- `raw/ia-paradoxo-de-jevons-camada-de-abstracao-futuro-do-programador.md`
+- `wiki/sources/ia-paradoxo-de-jevons-camada-de-abstracao-futuro-do-programador.md` — TL;DR, 13 key claims, conceitos/entidades tocados, ver também, 5 perguntas abertas, citações
+- `wiki/entities/geoffrey-hinton.md` — página nova, stub: previsão errada de 2016 sobre extinção da radiologia
+- `wiki/entities/james-bessen.md` — página nova, stub: tese de que automação muda a economia da atividade, não a elimina
+- `wiki/entities/jean-sammet.md` — página nova, stub: relato de resistência histórica a linguagens de alto nível
+- `wiki/entities/grace-hopper.md` — página nova, stub: propôs o compilador, enfrentou resistência de programadores assembly
+- `wiki/entities/lex-fridman.md` — página nova, stub: podcast onde DHH relatou o caso do caixa eletrônico
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/paradoxo-de-jevons.md` — `source_count` 3 → 4; nova seção com três casos históricos (radiologia/Hinton, ATM/Bessen, mecanização agrícola como contraexemplo) aplicando o paradoxo a emprego, complementando o caso único da Oracle já registrado
+- `wiki/concepts/linguagem-natural-como-camada-de-abstracao.md` — `source_count` 1 → 2; segunda formulação independente da tese via resistência histórica a compiladores (Grace Hopper, Jean Sammet, pai de Kent Beck) e ressalva nova de que a analogia não é perfeita por LLMs serem estocásticas
+- `wiki/concepts/novo-perfil-dev-ia.md` — `source_count` 8 → 9; nova seção com a citação de Kent Beck (90% desvalorizado / 10% mil vezes mais valioso) e qualidades humanas (comunicação, resiliência) como valor crescente
+- `wiki/concepts/ia-como-amplificador.md` — `source_count` 4 → 5; nova seção com formulação geral do amplificador (conhecimento de engenharia como multiplicador, "multiplica bagunça" quando ausente)
+- `wiki/entities/kent-beck.md` — `source_count` 9 → 10; nova anedota (pai programador assembly migrando para C) e novo tweet citado (90%/10%)
+- `wiki/entities/dhh.md` — `source_count` 1 → 2; nova menção: criador da distro Omakub com IA, "mais prazer em programar"; aparição no podcast de Lex Fridman
+- `wiki/index.md` — nova linha em Sources; cinco novas linhas em Entities
+
+**Notas / open questions:** (1) **Atribuições a Jean Sammet e Grace Hopper** sobre resistência histórica a linguagens de alto nível são citadas de memória pelo autor, sem obra/entrevista nomeada — tratadas como plausíveis mas não verbatim confirmadas em ambas as páginas de entidade novas. (2) **Anedota do pai de Kent Beck** (assembly → C) não tem palestra específica identificada — sem fonte primária nesta wiki que confirme. (3) **Dado de crescimento do número de radiologistas pós-IA** é citado sem estatística/período pelo autor — vale confirmar magnitude em fonte futura. (4) **Atribuição a James Bessen** não nomeia obra específica (possivelmente *Learning by Doing*) — tratada como paráfrase, não citação direta. (5) **Caso do caixa eletrônico via DHH/Lex Fridman** é relato de terceira mão — episódio específico do podcast não identificado. (6) **Ressalva técnica sobre não-determinismo de LLM** foi qualificada nesta ingestão usando a skill `tech-mentor-ai`: a afirmação da fonte de que "o mesmo prompt sempre gera código totalmente diferente" é uma simplificação — depende do parâmetro de temperatura, que a fonte não menciona. (7) **Raw file não veio de um documento preexistente** — o usuário colou a transcrição diretamente no prompt e pediu para primeiro criar o Markdown em `raw/`, depois ingerir.
+
+---
+
+## [2026-09-14] ingest | Cinema e Programação: o Programador Virou Diretor de IA?
+
+**Fonte:** [[wiki/sources/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico]] — transcrição de vídeo do YouTube de [[wiki/entities/lucas-badico]], em português, colada diretamente pelo usuário no prompt (sem arquivo de áudio/vídeo preexistente em `raw/`); transformada em Markdown estruturado e salva em `raw/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico.md`. Sem tradução necessária (conteúdo já em português).
+
+**Skill carregada:** `tech-mentor-leadership` (domínio primário: carreira, dependência de IA, valor profissional, saúde mental no trabalho com IA). Localizada em `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/` (mesmo skill drift do `CLAUDE.md` já registrado em ingests anteriores, que aponta para `/home/nemomartins/Documentos/new/skills/`, inexistente nesta máquina). `SKILL.md` lido por completo (índice de referências); `references/ai-strategy-engineering.md` lido como referência de calibração (mapa de risco/valor de uso de IA em engenharia), embora o conteúdo final da fonte tenha puxado mais para o eixo de carreira/identidade profissional do que para estratégia de adoção de IA em time.
+
+**Arquivos criados:**
+- `raw/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico.md`
+- `wiki/sources/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico.md` — TL;DR, 6 key claims, conceitos/entidades tocados, 4 perguntas abertas, 3 citações
+- `wiki/concepts/diretor-de-ia-metafora-do-cinema.md` — página nova: metáfora do diretor de cinema aplicada à IA, contraponto emocional ao Nível 4 (Diretor) da escala de maturidade, analogia de carreira via produção/segunda unidade
+- `wiki/concepts/portabilidade-de-valor-profissional-na-era-da-ia.md` — página nova: tese de que o valor do dev migrou do conhecimento pessoal (portável) para a ferramenta de IA da empresa (não portável), paralelo com a industrialização
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/escala-maturidade-ia-dev.md` — `source_count` 1 → 2; nova seção de contraponto emocional ao Nível 4 (progressão técnica correta pode coexistir com falta de realização e ansiedade)
+- `wiki/concepts/dependencia-ia.md` — `source_count` 6 → 7; nova seção sobre variante sênior empregada (ansiedade crescente sem perda de emprego)
+- `wiki/concepts/autonomia-tecnica.md` — `source_count` 2 → 3; nova seção ligando autonomia técnica à portabilidade de valor entre empregadores
+- `wiki/concepts/ia-como-amplificador.md` — `source_count` 5 → 6; nova seção sobre tensão entre julgamento (portável) e acesso à ferramenta (não portável)
+- `wiki/concepts/fundacao-tecnica.md` — `source_count` 11 → 12; nova seção com a analogia de cinema (produção → segunda unidade → direção) aplicada ao risco de começar a carreira já dependendo de IA
+- `wiki/concepts/novo-perfil-dev-ia.md` — `source_count` 9 → 10; nova seção com contraponto emocional de primeira pessoa à Analogia do Gerente ("babá de IA")
+- `wiki/entities/lucas-badico.md` — `source_count` 4 → 5; nova seção sobre a reflexão do autor a respeito de virar "diretor de IA" e a intenção de cancelar o Claude
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (Carreira & Soft Skills); atualização da linha de entidade de Lucas Badico
+
+**Notas / open questions:** (1) **Intenção de cancelar o Claude e retomar lives de programação manual** é declaração do autor no momento da gravação, sem confirmação em fonte futura — tratado como intenção, não fato consumado, em todas as páginas tocadas. (2) **Custo citado (~R$3.000/6 meses no plano Opus)** não especifica o plano exato (Claude Max vs. API) — vale confirmar em fonte futura. (3) **Projeção de "uma ou duas gerações" para a profissão deixar de ser lucrativa** é especulação pessoal do autor, sem dado de mercado — tratada com confiança baixa em todas as páginas que a citam. (4) **Tensão aberta entre a leitura técnica positiva do Nível 4 (Diretor) na escala de maturidade e a leitura emocional negativa desta fonte** foi registrada explicitamente em `wiki/concepts/diretor-de-ia-metafora-do-cinema.md`, sem resolução — as duas dimensões (capacidade técnica vs. satisfação pessoal) podem divergir legitimamente. (5) **Raw file não veio de um documento preexistente** — o usuário colou a transcrição diretamente no prompt e pediu explicitamente para primeiro criar o Markdown em `raw/`, depois ingerir.
+
+---
+
+## [2026-09-14] ingest | Ainda Existe Mercado para COBOL e Mainframe? (pesquisas de mercado)
+
+**Fonte:** [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] — transcrição de vídeo do YouTube, autor não identificado no texto colado (canal focado em retorno à TI/transição para mainframe, ~40 anos de experiência em empresas com mainframe), em português, colada diretamente pelo usuário no prompt; transformada em Markdown estruturado e salva em `raw/mercado-cobol-mainframe-pesquisas-retorno-ti.md`. Sem tradução necessária (conteúdo já em português).
+
+**Skill carregada:** `tech-mentor-backend`. Localizada em `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/` (mesmo skill drift do `CLAUDE.md` já registrado em ingests anteriores, que aponta para `/home/nemomartins/Documentos/new/skills/`, inexistente nesta máquina). `SKILL.md` lido por completo (índice de referências) — nenhuma linha do índice cobre "mercado de trabalho mainframe/COBOL" especificamente (é o tópico mais próximo de carreira/mercado de nicho dentro de um domínio técnico); escolhido `tech-mentor-backend` por ser a skill já usada nas páginas existentes `wiki/concepts/cobol.md` e `wiki/concepts/mainframe.md`, mantendo consistência de categorização em vez de criar um precedente novo com `tech-mentor-leadership`.
+
+**Arquivos criados:**
+- `raw/mercado-cobol-mainframe-pesquisas-retorno-ti.md`
+- `wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti.md` — TL;DR, 6 key claims (cada uma com confiança avaliada), conceitos/entidades tocados, 4 perguntas abertas, 3 citações
+- `wiki/concepts/mercado-de-trabalho-mainframe-cobol.md` — página nova: síntese das quatro pesquisas de mercado (skills global, Arcati, Kyndryl, Vanson Bourne/Micro Focus) com os números centrais de demanda
+- `wiki/concepts/modernizacao-de-mainframe.md` — página nova: padrão de integração (nuvem híbrida/API/DevOps) em vez de substituição, e o efeito de skill dupla na contratação
+- `wiki/entities/broadcom.md` — página nova, stub: parceira da pesquisa global de skills em mainframe
+- `wiki/entities/kyndryl.md` — página nova, stub: autora da pesquisa de modernização de mainframe (nome ambíguo no áudio, "Kindrew" interpretado como Kyndryl, não confirmado)
+- `wiki/entities/micro-focus.md` — página nova, stub: encomendante da pesquisa Vanson Bourne sobre criticidade de sistemas COBOL
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/cobol.md` — `source_count` 1 → 2; nova seção com o dado da pesquisa Vanson Bourne/Micro Focus (92% tratam sistemas COBOL como críticos)
+- `wiki/concepts/mainframe.md` — `source_count` 1 → 2; nova seção "Mercado atual" com os dados de contratação ativa (91%) e baixa taxa de desativação (3,2%)
+- `wiki/concepts/apagao-de-seniors.md` — `source_count` 6 → 7; nova seção documentando uma via causal independente de IA/vibe coding e já consumada (não projetada): aposentadoria da geração mainframe/COBOL levando conhecimento tácito de arquitetura e regra de negócio
+- `wiki/concepts/vaga-junior-vira-pleno.md` — `source_count` 9 → 10; nova seção de contraponto setorial (mainframe busca simultaneamente 79% mid-level e 51% entry-level, por motivo geracional, não aperto orçamentário)
+- `wiki/entities/ibm.md` — `source_count` 2 → 3; nova menção como parceira da pesquisa global de skills em mainframe
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (seção de arquitetura/legado, junto a `cobol`/`mainframe`); três novas linhas em Entities (Broadcom, Kyndryl, Micro Focus); atualização da linha de entidade IBM
+
+**Notas / open questions:** (1) **Nenhuma das quatro pesquisas citadas no vídeo foi lida na fonte primária** — todos os números (91%, 79%, 51%, 3,2%, 36%, 92%, 800 bilhões de linhas) vêm exclusivamente da narração do autor, sem relatório/PDF original anexado a `raw/`. Registrado como pergunta em aberto na página de fonte. (2) **Autor do vídeo não identificado por nome** no texto colado. (3) **Nome da empresa "Kyndryl"** é interpretação da transcrição foneticamente ambígua ("Kindrew") — não confirmado contra fonte primária, registrado explicitamente na página da entidade. (4) **Contradição/tensão não resolvida com [[wiki/concepts/vaga-junior-vira-pleno]]**: o padrão geral já documentado na wiki é de aperto para vaga júnior (rótulo mantido, requisito inflado, por pressão orçamentária); o mercado de mainframe descrito nesta fonte mostra demanda simultaneamente alta por entry-level (51%) e mid-level (79%), por motivo geracional — não fica claro se mainframe é exceção ao padrão geral, ou se sofre a mesma inflação de requisito sem a fonte investigar isso; registrado como pergunta em aberto na página de fonte e como contraponto setorial em `vaga-junior-vira-pleno.md`. (5) **Raw file não veio de um documento preexistente** — o usuário colou a transcrição diretamente no prompt e pediu explicitamente para primeiro criar o Markdown em `raw/`, depois ingerir.
+
+---
+
+## [2026-09-14] ingest | Como uma Única Requisição Derruba o Servidor Node.js (Event Loop, SSR e CPU-bound)
+
+**Fonte:** [[wiki/sources/node-single-thread-ssr-bloqueio-event-loop]] — transcrição de vídeo do YouTube de Júnior Alves, em português, colada diretamente pelo usuário no prompt; transformada em Markdown estruturado e salva em `raw/node-single-thread-ssr-bloqueio-event-loop.md`. Sem tradução necessária (conteúdo já em português).
+
+**Skill carregada:** `lang-dynamic` (domínio primário: internals do Node.js — event loop, single thread, worker threads). Localizada em `/home/gabriel-martins/Documentos/skills/lang-dynamic/` (mesmo skill drift do `CLAUDE.md` já registrado em ingests anteriores, que aponta para `/home/nemomartins/Documentos/new/skills/`, inexistente nesta máquina). `SKILL.md` lido por completo (índice de referências); `references/nodejs-core.md` lido por inteiro — confirmou as fases do event loop (libuv), a prioridade `process.nextTick` > Promise > fase do loop, e a matriz de decisão Worker Threads vs. Child Process vs. Cluster, usada para qualificar a generalização da fonte (que trata os três mecanismos genericamente como "trad" sem diferenciar). `tech-mentor-frontend` seria domínio secundário pelo tema SSR/Next.js, mas não foi carregado nesta sessão — o ângulo da fonte é majoritariamente sobre mecânica interna do runtime Node.js, não sobre frameworks frontend em si.
+
+**Arquivos criados:**
+- `raw/node-single-thread-ssr-bloqueio-event-loop.md`
+- `wiki/sources/node-single-thread-ssr-bloqueio-event-loop.md` — TL;DR, 7 key claims, entidades/conceitos tocados, 3 perguntas abertas, 3 citações
+- `wiki/concepts/renderizacao-ssr-vs-csr.md` — página nova: distinção SSR/CSR, por que SSR é CPU-bound em Node.js e pode travar o event loop, mitigações (cache/ISR, streaming SSR, worker threads, filas)
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/event-loop-performance-js.md` — `source_count` 1 → 2; nova seção "I/O-bound vs. CPU-bound: por que o event loop escala", incluindo por que SSR pesado é CPU-bound e por que `await`/`setTimeout`/microtasks não resolvem bloqueio de CPU
+- `wiki/concepts/thread.md` — `source_count` 3 → 4; nova seção "Worker Threads em Node.js: escape para trabalho CPU-bound", com a distinção worker threads vs. cluster vs. child process calibrada pela skill `lang-dynamic`
+- `wiki/concepts/filas-e-workers.md` — `source_count` 8 → 9; nova seção sobre filas como saída para SSR CPU-bound travando o event loop
+- `wiki/concepts/cache.md` — `source_count` 12 → 13; nova seção "Cache de Renderização SSR" (cache/ISR como mitigação de recomputação e de risco de bloqueio)
+- `wiki/concepts/hydration.md` — `source_count` 1 → 2; novo link para `renderizacao-ssr-vs-csr` como o passo que precede a hydration
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (seção "JavaScript / Node.js Performance")
+
+**Notas / open questions:** (1) **Fonte não cita métricas reais** (tempo de bloqueio observado, tamanho exato de payload) — exemplos como "JSON de 50MB" são ilustrativos, não um caso documentado. Registrado na página de fonte. (2) **Fonte trata worker threads, cluster e child process de forma genérica** ("mandar pra uma thread") sem diferenciar os três mecanismos — qualificado com `references/nodejs-core.md` da skill `lang-dynamic` em `wiki/concepts/thread.md`. (3) **Fonte não menciona streaming SSR** (ex. `renderToPipeableStream` do React 18) nem outras técnicas modernas de renderização incremental que mitigam parcialmente o problema sem sair da thread principal — mencionado como lacuna na página de fonte e na página de conceito nova, mas não desenvolvido por estar fora do escopo desta fonte. (4) **Raw file não veio de um documento preexistente** — o usuário colou a transcrição diretamente no prompt e pediu explicitamente para primeiro criar o Markdown em `raw/`, depois ingerir.
+
+---
+
+## [2026-09-14] ingest | MCP Stateless: Fim do Handshake e Server Discover
+
+**Fonte:** [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] — transcrição de vídeo do YouTube (autoria provável: Lucas Montano), em português, colada diretamente pelo usuário no prompt; transformada em Markdown estruturado e salva em `raw/mcp-stateless-fim-do-handshake-server-discover-lucas-montano.md`. Sem tradução necessária (conteúdo já em português).
+
+**Skill carregada:** `tech-mentor-ai`, localizada em `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/` (mesmo skill drift do `CLAUDE.md` já registrado em ingests anteriores, que aponta para `/home/nemomartins/Documentos/new/skills/`, inexistente nesta máquina). `SKILL.md` lido por completo (índice de referências); `references/ai/mcp.md` lido por inteiro — confirmou arquitetura host/client/server, transportes (stdio/SSE deprecado/Streamable HTTP), OAuth 2.1+PKCE, Sampling, Roots, multi-tenant e a seção de governança 2026 (MCP → Linux Foundation). O arquivo de referência **não documenta** a remoção do handshake nem o método `server discover` relatados nesta fonte — tratado como lacuna de calibração da skill, registrado como open question na página de fonte em vez de editado (skill é read-only para o agente).
+
+**Arquivos criados:**
+- `raw/mcp-stateless-fim-do-handshake-server-discover-lucas-montano.md`
+- `wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano.md` — TL;DR, 6 key claims (2 com citação textual do changelog da Anthropic), 9 entidades/conceitos tocados, 5 perguntas abertas, 4 citações
+- `wiki/concepts/mcp-stateless-server-discover.md` — página nova (stub): mudança de spec 2026, analogia da comanda de restaurante para cross-call state, multi-round trip requests, headers de método/recurso, server discover
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/model-context-protocol.md` — `source_count` 6 → 7; nova seção "Mudança de Spec (2026): Core Passa a Ser Stateless"
+- `wiki/concepts/mcp-arquitetura.md` — `source_count` 3 → 4; nota de atualização na seção "O Server Deve Permanecer em Pé", sinalizando que a descrição pré-existente reflete o modelo pré-mudança
+- `wiki/concepts/mcp-server.md` — `source_count` 3 → 4; nova seção "Deploy Serverless com Spec Stateless (2026)"
+- `wiki/concepts/cli-vs-mcp.md` — `source_count` 2 → 3; tabela de comparação anotada (descoberta "via handshake" marcada como desatualizada) + nova seção explicando a mudança
+- `wiki/entities/anthropic.md` — `source_count` 28 → 29; nova seção sobre a mudança de spec do MCP
+- `wiki/entities/lucas-montano.md` — `source_count` 15 → 16; novo parágrafo sobre o vídeo técnico de MCP stateless
+- `wiki/entities/hostinger.md` — `source_count` 8 → 9; novo parágrafo (sétimo bloco patrocinado, plano KVM2, cupom "Lucas Montano")
+- `wiki/entities/claude-code.md` — `source_count` 15 → 16; nova seção "Claim Não Verificado: 'Cowork' Rodando na Nuvem via Claude Desktop App" (menção tangencial e não confirmada da fonte)
+- `wiki/index.md` — nova linha em Sources (seção MCP); nova linha em Concepts (seção MCP)
+
+**Notas / open questions:** (1) **Nenhuma fonte primária foi lida diretamente** — nem o changelog oficial da Anthropic, nem a spec atualizada em `modelcontextprotocol.io`. Apenas duas citações textuais curtas do changelog aparecem na transcrição; o restante do mecanismo técnico (headers exatos, algoritmo de assinatura do handle) é descrição do autor do vídeo. Registrado como pergunta em aberto na página de fonte e refletido no `status: stub` da página de conceito nova. (2) **Contradição/desatualização identificada com páginas pré-existentes**: `wiki/concepts/cli-vs-mcp.md` e `wiki/concepts/mcp-arquitetura.md` descreviam descoberta/inicialização via handshake como parte inerente do protocolo — ambas anotadas com a mudança relatada nesta fonte, sem remover o conteúdo anterior (ainda relevante para o modelo pré-mudança e para servidores locais via stdio, que a fonte não afirma estarem cobertos pela mudança). (3) **Skill `tech-mentor-ai` desatualizada em relação a essa mudança específica** — `references/ai/mcp.md` não menciona a remoção do handshake nem o `server discover`; como skills são read-only para o agente, isso não foi corrigido diretamente, apenas registrado como lacuna. (4) **Estatística de "400 milhões de downloads mensais do SDK" e "950 MCP servers"** citada sem link para relatório oficial — tratada como não confirmada, seguindo o padrão já adotado para estatísticas não verificadas em outras fontes da wiki. (5) **Autoria do vídeo (Lucas Montano)** inferida por convergência de sinais (auto-menção de canal no fechamento, cupom de patrocínio nominal), não por identificação direta na transcrição. (6) **Raw file não veio de um documento preexistente** — o usuário colou a transcrição diretamente no prompt e pediu explicitamente para primeiro criar o Markdown em `raw/`, depois ingerir.
+
+---
+
+## [2026-09-14] ingest | Anatomia de um Token 1: Token Opaco vs. Token Autocontido
+
+**Fonte:** [[wiki/sources/anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato]] — transcrição de vídeo do YouTube de Bernardo Lobato, em português, colada diretamente pelo usuário no prompt; transformada em Markdown estruturado e salva em `raw/tokens-opacos-vs-autocontidos-jose-jwt-jwe-cwt.md`. Sem tradução necessária (conteúdo já em português). Esta fonte é o predecessor direto de [[wiki/sources/jose-jws-jwe-jwk-jwa-algorithm-confusion-paseto]] ("Anatomia de um Token 2", já ingerido em 2026-09-01) — que referenciava "Anatomia de um Token 1" sem que uma fonte dedicada existisse na wiki até agora; a lacuna foi fechada e a página do vídeo 2 atualizada para apontar para esta fonte real.
+
+**Skill carregada:** `tech-mentor-security`, localizada em `/home/gabriel-martins/Documentos/skills/tech-mentor-security/` (mesmo skill drift do `CLAUDE.md` já registrado em ingests anteriores, que aponta para `/home/nemomartins/Documentos/new/skills/`, inexistente nesta máquina). `SKILL.md` lido por completo (índice de referências); `references/appsec-authn-authz.md` lido por inteiro — confirmou o mecanismo de Token Introspection (RFC 7662) e revogação (RFC 7009) para tokens opacos em sistemas multi-serviço, usado para enriquecer `wiki/concepts/token-opaco.md` além do que a fonte cobriu diretamente, marcado como `[skill: tech-mentor-security]`.
+
+**Arquivos criados:**
+- `raw/tokens-opacos-vs-autocontidos-jose-jwt-jwe-cwt.md`
+- `wiki/sources/anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato.md` — TL;DR, 12 key claims, 1 entidade, 8 conceitos tocados, 4 perguntas abertas, 5 citações
+- `wiki/concepts/token-opaco.md` — página nova: definição, trade-off central (revogação instantânea vs. consulta ao servidor), geração segura via CSPRNG/256 bits, contraste com UUIDv4 (122 bits), distinção token vs. ID, Token Introspection (RFC 7662/7009, via skill)
+- `wiki/concepts/api-key.md` — página nova: autenticação de aplicação (não usuário), vantagem de simplicidade, risco de vazamento, boas práticas
+- `wiki/concepts/cwt-cbor-web-token.md` — página nova (stub): variante binária do JWT via COSE, para IoT; números de RFC completados como `[external]` não verificado
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/jwt.md` — `source_count` 5 → 6; novo parágrafo de abertura contrastando token autocontido com token opaco; nova entrada em "Relação com outros conceitos" e em "Key Sources"
+- `wiki/concepts/jose.md` — `source_count` 1 → 2; nova entrada em "Relação com outros conceitos" (CWT/COSE) e em "Key Sources"
+- `wiki/concepts/sessoes-http-cookies.md` — `source_count` 6 → 7; novo parágrafo de abertura formalizando o session ID como instância central de token opaco; nova linha em "Key Sources"
+- `wiki/concepts/uuid.md` — `source_count` 2 → 3; nova seção "UUID Não É Token de Segurança" (122 bits vs. 256 bits, distinção identificador vs. segredo); nova linha em "Key Sources"
+- `wiki/concepts/criptografia.md` — `source_count` 5 → 6; nova seção "CSPRNG: Gerando Segredos Imprevisíveis"; nova linha em "Key sources"
+- `wiki/entities/bernardo-lobato.md` — `source_count` 14 → 15; nova linha listando o vídeo como predecessor de "Anatomia de um Token 2"
+- `wiki/sources/jose-jws-jwe-jwk-jwa-algorithm-confusion-paseto.md` — TL;DR corrigido para apontar ao link real desta nova fonte, em vez da referência genérica anterior a `wiki/concepts/jwt`; `date_updated` atualizado
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (seção "Autenticação & Identidade")
+
+**Notas / open questions:** (1) **RFCs do CWT/COSE (8392, 8152/9052) não foram citadas pela fonte** — completadas na página de conceito como referência de navegação, marcadas `[external]`, não verificadas contra a especificação primária nesta sessão. (2) **Dois vídeos futuros anunciados pelo autor** (Access/Refresh Token detalhado dentro desta série específica, e arquitetura híbrida stateful/stateless) — não está confirmado se já foram publicados; a wiki já cobre refresh token via [[wiki/sources/refresh-token-pattern-access-token-de-curta-duracao]], mas não é certo que seja o vídeo anunciado aqui. (3) **Lacuna histórica fechada**: a wiki já citava "Anatomia de um Token 1" desde 2026-09-01 como se já estivesse coberta em `wiki/concepts/jwt`, mas nenhuma fonte dedicada existia — esta sessão resolve essa inconsistência de proveniência, sem alterar o conteúdo técnico já registrado (apenas atribuindo-o corretamente à fonte real). (4) **Raw file não veio de um documento preexistente** — o usuário colou a transcrição diretamente no prompt e pediu explicitamente para primeiro criar o Markdown em `raw/`, depois ingerir.
+
+---
+
+## [2026-09-14] ingest | Guia do Claude Code para Startups (Reação a Playbook da Anthropic)
+
+**Fonte:** [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] — transcrição de vídeo do YouTube, em português (sem tradução necessária), de um criador de conteúdo focado em tech founders, reagindo a um playbook da Anthropic sobre startups de rápido crescimento usando o Claude Code. Colada diretamente pelo usuário no prompt; transformada em Markdown estruturado e salva em `raw/guia-claude-code-para-startups-anthropic-ai-native-sdlc.md` antes da ingestão, conforme pedido explícito do usuário.
+
+**Skill carregada:** `tech-mentor-ai`, localizada em `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/` (mesmo skill drift do `CLAUDE.md` já registrado em ingests anteriores, que aponta para `/home/nemomartins/Documentos/new/skills/`, inexistente nesta máquina). `SKILL.md` lido (índice de referências); `references/ai/reasoning-models-2025.md` (seção "AI Coding Agents"), `references/ai/agentic-production-2026.md` e `references/ai/agent-harness-engineering.md` lidos por inteiro para calibrar taxonomia de agentes de codificação e padrões de produção citados na fonte.
+
+**Arquivos criados:**
+- `raw/guia-claude-code-para-startups-anthropic-ai-native-sdlc.md`
+- `wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc.md` — TL;DR, 13 key claims, 5 entidades, 10 conceitos tocados, 5 perguntas abertas, 5 citações
+- `wiki/concepts/everyone-ships.md` — página nova: regra 1 do playbook, deslocamento da expertise do engenheiro para revisão, risco de CEO não técnico shipando
+- `wiki/concepts/sdlc-nativo-de-ia.md` — página nova: as 5 regras consolidadas (everyone ships, automate the tedium, trust but verify, build for rebuilding, prototype/dog food/productionize) e as três lacunas de risco apontadas pelo autor
+- `wiki/concepts/agents-md-vs-claude-md.md` — página nova: fragmentação de configuração entre agentes, controvérsia pública Shopify/Tobi Lütke, contradição registrada com nota pré-existente na wiki
+- `wiki/concepts/risco-de-outage-fornecedor-ia.md` — página nova (stub): dependência de fornecedor único de IA, >20 outages da Anthropic em 30 dias (não verificado)
+- `wiki/entities/tobi-lutke.md` — página nova (stub): CEO da Shopify, CEO técnico shipando, controvérsia AGENTS.md
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/entities/claude-code.md` — `source_count` 16 → 17; nova seção sobre o playbook e a controvérsia AGENTS.md
+- `wiki/entities/anthropic.md` — `source_count` 29 → 30; nova seção sobre o playbook "AI Natives Working at the Frontier" e a contradição registrada sobre AGENTS.md
+- `wiki/entities/shopify.md` — `source_count` 1 → 2; novas seções sobre Tobi Lütke/adoção agressiva de IA e a controvérsia AGENTS.md
+- `wiki/concepts/governanca-de-codigo-gerado-por-ia.md` — `source_count` 7 → 8; nova seção conectando "everyone ships" ao paradoxo central da página
+- `wiki/concepts/novo-perfil-dev-ia.md` — `source_count` 10 → 11; nova seção reforçando o deslocamento para julgamento/revisão
+- `wiki/concepts/claude-md.md` — `source_count` 5 → 6; nova seção sobre a controvérsia pública AGENTS.md vs. CLAUDE.md
+- `wiki/concepts/mcp-server.md` — `source_count` 4 → 5; nova seção sobre marketplace de plugins corporativos via MCP + SSO
+- `wiki/concepts/finops-para-ia.md` — `source_count` 2 → 3; nova seção sobre automação sem governança tornando consumo invisível
+- `wiki/concepts/tech-debt-como-ferramenta.md` — `source_count` 15 → 16; nova seção sobre "build for rebuilding" como descarte deliberado institucionalizado
+- `wiki/index.md` — nova linha em Sources; quatro novas linhas em Concepts; uma nova linha em Entities
+
+**Notas / open questions:** (1) **Nenhuma URL do relatório original da Anthropic foi fornecida** — todas as estatísticas (ClickHouse 30%, Clay 100%, Artemis 6.000 PRs/semana, "10x maior") e o próprio nome do relatório ("AI natives working at the frontier") são citados de segunda mão pelo autor do vídeo-fonte, sem link, e não foram verificados contra a publicação original nesta sessão. (2) **Contradição identificada e registrada explicitamente**: `wiki/entities/anthropic.md` já continha, via [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]], uma menção de passagem a uma suposta preferência da Anthropic por `AGENTS.md`; esta nova fonte relata o oposto — Claude Code só lê `CLAUDE.md`, e a Anthropic teria recusado publicamente adotar `AGENTS.md` na controvérsia com Tobi Lütke. Ambas as fontes são relatos de segunda mão, sem changelog oficial citado; a contradição foi anotada em `wiki/concepts/agents-md-vs-claude-md.md`, `wiki/concepts/claude-md.md`, `wiki/entities/claude-code.md` e `wiki/entities/anthropic.md`, mas não resolvida (nenhuma fonte primária consultada nesta sessão). (3) **Número de outages da Anthropic (>20 em 30 dias) não verificado** contra status page ou fonte oficial — tratado como alegação não confirmada do autor. (4) **Vários nomes próprios citados de ouvido têm grafia incerta**: "Parael"/"Paraelp" (co-founder), "Bookhund" (Emergent), "Tarik" (funcionário da Anthropic — mesmo nome, grafia incerta, já usado em outro contexto de billing bug registrado anteriormente em `wiki/entities/anthropic.md`; não está confirmado se é a mesma pessoa), "AISRI" (ferramenta/agente citado). (5) **Raw file não veio de um documento preexistente** — o usuário colou a transcrição diretamente no prompt e pediu explicitamente para primeiro criar o Markdown em `raw/`, depois ingerir.
+
+---
+
+## [2026-09-14] ingest | 6 Conselhos para quem está começando (ou quer entrar) na área de programação
+
+**Fonte:** [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] — transcrição de vídeo do YouTube, em português, de canal/autor não identificado. Colada diretamente pelo usuário no prompt; transformada em Markdown estruturado (bloco de patrocínio do vídeo — Abacus.ai — removido por não ser conteúdo relevante ao tema) e salva em `raw/6-conselhos-carreira-programador-10-anos-experiencia.md` antes da ingestão, conforme pedido explícito do usuário.
+
+**Skill carregada:** `tech-mentor-leadership`, localizada em `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/` (mesmo skill drift do `CLAUDE.md` já registrado em ingests anteriores, que aponta para `/home/nemomartins/Documentos/new/skills/`, inexistente nesta máquina). `SKILL.md` lido (índice de referências); `references/technical-mentoring.md` lido por inteiro para calibrar taxonomia de mentoria/feedback/ownership citada na fonte.
+
+**Arquivos criados:**
+- `raw/6-conselhos-carreira-programador-10-anos-experiencia.md`
+- `wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia.md` — TL;DR, 10 key claims, entidades, 13 conceitos tocados, 3 perguntas abertas, 5 citações
+- `wiki/concepts/paradoxo-da-empregabilidade.md` — página nova: catch 22 de experiência/emprego, faculdade como via de acesso mais comum, refutação do contra-exemplo Zuckerberg/Gates
+- `wiki/concepts/ingles-para-desenvolvedores.md` — página nova: inglês como gate de acesso ao mercado global, não diferencial; efeito sobre acesso a documentação técnica atualizada
+- `wiki/concepts/loop-de-feedback-rapido.md` — página nova: ciclo fazer→observar→ajustar→repetir; reformulação "10.000 feedbacks"; aplicação prática no dia a dia de programador
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/credencialismo-formacao-formal.md` — `source_count` 3 → 4; nova seção sobre a refutação do contra-exemplo Zuckerberg/Gates
+- `wiki/concepts/dolarizacao-de-renda.md` — `source_count` 2 → 3; nova seção sobre inglês como pré-requisito comum a qualquer via de dolarização
+- `wiki/concepts/projetos-fundamentais-para-aprender-a-programar.md` — `source_count` 1 → 2; nova seção sobre projetos como ponte entre teoria e prática (gap estudo/aplicação)
+- `wiki/concepts/networking-de-carreira.md` — `source_count` 5 → 6; nova seção sobre projetos publicados no LinkedIn como gatilho de rede
+- `wiki/concepts/fundacao-tecnica.md` — `source_count` 12 → 13; nova seção sobre fundamentação teórica como pré-requisito para guiar a IA corretamente
+- `wiki/concepts/curriculo-vs-portfolio.md` — `source_count` 6 → 7; nova seção sobre currículo orientado à vaga, não ao que já foi estudado
+- `wiki/concepts/otimizacao-ats-curriculo.md` — `source_count` 3 → 4; nova seção sobre palavras-chave derivadas das vagas-alvo
+- `wiki/concepts/extreme-ownership.md` — `source_count` 2 → 3; nova seção sobre "se importar" como traço mais raro e mais difícil de ensinar que técnica
+- `wiki/concepts/ownership-proativo.md` — `source_count` 2 → 3; nova linha em Key Sources sobre se importar genuinamente como sustento do ownership
+- `wiki/concepts/feedback-continuo-diario.md` — `source_count` 1 → 2; nova seção generalizando o mecanismo para além do ambiente de trabalho
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (seção "Carreira & Soft Skills")
+
+**Notas / open questions:** (1) **Autor/canal não identificado**, sem link para verificar autoria — diferente de fontes já registradas que ao menos creditam um artigo original (ex.: [[wiki/sources/9-habitos-programador-junior]] credita Tom Hombergs). (2) **Estimativa de "1 a 1,5 ano de atraso de carreira"** por falta de currículo orientado à vaga é anedótica pessoal do autor, sem forma de verificação externa. (3) **"Loop de feedback rápido" não tem framework acionável** além de heurística e exemplos — comparado ao framework mais estruturado (SBI, code review como mentoria) já registrado em [[wiki/concepts/feedback-continuo-diario]] via [[wiki/entities/fabio-akita]]; tensão anotada, não resolvida, nas duas páginas. (4) **Raw file não veio de um documento preexistente** — o usuário colou a transcrição diretamente no prompt e pediu explicitamente para primeiro criar o Markdown em `raw/`, depois ingerir.
+
+---
+
+## [2026-09-14] ingest | Como Escolher o Banco de Dados Certo (Além do Tipo de Dado)
+
+**Fonte:** [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]] — transcrição de vídeo (autor/canal não identificado), em português, sobre a pergunta "qual banco de dados você usaria?" em entrevistas de system design. Colada diretamente pelo usuário no prompt; transformada em Markdown estruturado e salva em `raw/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado.md` antes da ingestão, conforme pedido explícito do usuário. Não precisou de tradução (já em português).
+
+**Skill carregada:** `tech-mentor-backend`, localizada em `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/` (mesmo skill drift do `CLAUDE.md` já registrado em ingests anteriores, que aponta para `/home/nemomartins/Documentos/new/skills/`, inexistente nesta máquina). `SKILL.md` lido (índice de referências); `references/architecture-foundations.md`, `references/document-databases.md` e `references/database-connection-patterns.md` lidos por inteiro para calibrar a comparação Postgres/MongoDB/DynamoDB e os mecanismos internos (MVCC, TOAST, pooling) citados na fonte.
+
+**Arquivos criados:**
+- `raw/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado.md`
+- `wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado.md` — TL;DR, 12 key claims, 12 conceitos tocados, 4 perguntas abertas, 3 citações
+- `wiki/concepts/criterios-de-escolha-de-banco-de-dados.md` — página nova (stable): framework dos 8 critérios de escolha de banco, com exemplo central de decisão Postgres/MongoDB/DynamoDB sem considerar formato do dado
+- `wiki/concepts/toast-postgresql.md` — página nova (stub): mecanismo TOAST do Postgres para valores grandes, contraste explícito com cobrança WCU/RCU do DynamoDB
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/postgresql.md` — `source_count` 12 → 13; novas seções sobre padrão de fábrica otimizado para leitura (`UNLOGGED`, `synchronous_commit`), TOAST, e vacuum como custo de escrita intensa
+- `wiki/concepts/mongodb.md` — `source_count` 2 → 3; nova seção sobre arquitetura nativamente distribuída/otimizada para escrita
+- `wiki/concepts/dynamodb.md` — `source_count` 4 → 5; novas seções sobre modelo de cobrança WCU/RCU por KB de payload e cenário de storage alto/transação baixa
+- `wiki/concepts/mvcc.md` — `source_count` 1 → 2; nova seção ligando table bloat por escrita intensa a critério de escolha de banco
+- `wiki/concepts/read-replicas.md` — `source_count` 9 → 10; nova seção sobre teto vertical do nó primário mesmo com réplicas
+- `wiki/concepts/sharding.md` — `source_count` 5 → 6; nova linha em Key Sources sobre sharding manual (Postgres) vs. nativo (Mongo/Dynamo)
+- `wiki/concepts/nosql.md` — `source_count` 6 → 7; nova linha em Key Sources sobre arquitetura distribuída por padrão como critério independente do formato do dado
+- `wiki/concepts/cap-theorem.md` — `source_count` 7 → 8; nova linha em Key Sources sobre consistência eventual em réplicas/sharding como critério prático
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (seção de banco de dados)
+
+**Notas / open questions:** (1) **Vídeo não cita fontes primárias** (documentação AWS/Postgres) para nenhum número técnico — todas as claims foram cruzadas apenas contra o conhecimento já presente na wiki e na skill `tech-mentor-backend`, não contra documentação oficial nesta sessão. (2) **Ganho de "~3-5%" ao desativar `synchronous_commit`** é citado sem benchmark linkado. (3) **Limiar de "24 KB" para TOAST** não bate exatamente com a documentação oficial do Postgres (TOAST ativa por coluna acima de ~2 KB, não por linha inteira em 24 KB) — tratado como simplificação didática do autor, anotado como open question na fonte. (4) **Claim de que MongoDB "já vem" com sharding por padrão** simplifica: sharding no MongoDB exige configuração explícita de cluster, não é comportamento de instância standalone — reconciliação futura sugerida em `wiki/concepts/mongodb.md`. (5) Esta fonte é complementar, não duplicada, a [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — aquela cobre história/ACID/CAP/números de instância única; esta cobre o framework de critérios de decisão e mecânica interna (MVCC/TOAST/WCU-RCU). (6) **Raw file não veio de um documento preexistente** — o usuário colou a transcrição diretamente no prompt e pediu explicitamente para primeiro criar o Markdown em `raw/`, depois ingerir.
+
+---
+
+## [2026-09-14] ingest | VPN: Conceito e Tunelamento
+
+**Fonte:** [[wiki/sources/vpn-conceito-tunelamento-acesso-remoto]] — transcrição de vídeo/áudio (fala corrida, sem pontuação, autor/canal não identificado), em português, sobre o conceito de VPN. Colada diretamente pelo usuário no prompt; transformada em Markdown estruturado e salva em `raw/vpn-conceito-tunelamento-acesso-remoto.md` antes da ingestão, conforme pedido explícito. Já estava em português — sem necessidade de tradução.
+
+**Skill carregada:** `tech-mentor-networking`, localizada em `/home/gabriel-martins/Documentos/skills/tech-mentor-networking/` (mesmo skill drift do `CLAUDE.md` já registrado em ingests anteriores, que aponta para `/home/nemomartins/Documentos/new/skills/`, inexistente nesta máquina). `SKILL.md` lido (índice de referências) e `references/vpn-wireguard.md` lido por inteiro para calibrar a seção de protocolos/ZTNA da página de conceito, embora a fonte em si não cite protocolo específico.
+
+**Arquivos criados:**
+- `raw/vpn-conceito-tunelamento-acesso-remoto.md`
+- `wiki/sources/vpn-conceito-tunelamento-acesso-remoto.md` — TL;DR, 3 key claims, 4 conceitos tocados, 3 perguntas abertas, 2 citações
+- `wiki/concepts/vpn.md` — página nova (draft): definição "privada + virtual", casos de uso site-to-site e acesso remoto, contraste VPN tradicional vs. ZTNA, panorama de protocolos (WireGuard/IPSec/OpenVPN)
+- `wiki/concepts/tunelamento.md` — página nova (stub): mecanismo de encapsulamento que torna a VPN "virtual"
+- `wiki/concepts/restricao-geografica-geo-blocking.md` — página nova (stub): bloqueio por IP/localização e bypass via VPN
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/criptografia.md` — `source_count` 6 → 7; nova seção relacionando criptografia simétrica pós-handshake ao tráfego tunelado de VPN
+- `wiki/index.md` — nova linha em Sources; três novas linhas em Concepts (seção "Segurança de APIs & Arquitetura")
+
+**Notas / open questions:** (1) **Fonte é introdutória/glossário** — sem citar protocolo (WireGuard/IPSec/OpenVPN) nem entrar em mecanismo criptográfico do handshake; por isso o escopo do touch ficou proporcionalmente menor (3 conceitos novos + 1 atualizado, não 10-15) — os detalhes técnicos de protocolo já existem em [[wiki/sources/tls-mtls-vpn]] e foram apenas referenciados, não duplicados. (2) **Contraste VPN vs. ZTNA** não está na fonte original — foi adicionado ao concept [[wiki/concepts/vpn]] a partir do conhecimento já registrado em [[wiki/sources/zero-trust]] e da skill `tech-mentor-networking`, marcado como tal no corpo da página. (3) **Trade-off de detecção de IP de VPN por serviços de streaming/censura** (arms race) não está na fonte — adicionado como observação em [[wiki/concepts/restricao-geografica-geo-blocking]], não como claim atribuído à fonte. (4) **Raw file não veio de um documento preexistente** — o usuário colou a transcrição diretamente no prompt e pediu explicitamente para primeiro criar o Markdown em `raw/`, depois ingerir.
+
+---
+
+## [2026-09-14] ingest | Transactional Outbox Pattern: o Desafio de Entrevista do Cadastro de Usuário
+
+**Fonte:** [[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] — transcrição de vídeo (fala corrida, sem pontuação, autor não identificado nominalmente na fala, mas inferido como [[wiki/entities/renato-augusto]] pela menção ao "Mapa do Arquiteto"), em português. Colada diretamente pelo usuário no prompt; transformada em Markdown estruturado e salva em `raw/transactional-outbox-pattern-entrevista-cadastro-usuario.md` antes da ingestão, conforme pedido explícito. Já estava em português — sem necessidade de tradução.
+
+**Skill carregada:** `tech-mentor-backend`, localizada em `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/` (mesmo skill drift do `CLAUDE.md` já registrado em ingests anteriores, que aponta para `/home/nemomartins/Documentos/new/skills/`, inexistente nesta máquina). `SKILL.md` lido (índice de referências) e `references/architecture-eda-patterns.md` lido por inteiro, seção "Dual Write Problem" e "Padrão Outbox", para calibrar terminologia e confirmar consistência com o conteúdo já registrado na wiki.
+
+**Arquivos criados:**
+- `raw/transactional-outbox-pattern-entrevista-cadastro-usuario.md`
+- `wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario.md` — TL;DR, 6 key claims, 3 entidades mencionadas, 7 conceitos tocados, 4 perguntas abertas, 3 citações
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/outbox-pattern.md` — `source_count` 4 → 5; nova seção "Por Que uma Transação Local Não Basta Sozinha" detalhando o exemplo passo a passo de por que envolver a chamada externa numa transação de banco não resolve o dual write
+- `wiki/concepts/dual-write-problem.md` — `source_count` 1 → 2; nova seção "Onde Também Aparece: Desafio Clássico de Entrevista de Programação" generalizando o problema além do contexto CQRS já registrado
+- `wiki/concepts/event-driven-architecture.md` — `source_count` 2 → 3; nova seção sobre não-atomicidade entre escrita no banco e publicação de evento como propriedade estrutural de EDA, não peculiaridade de CQRS
+- `wiki/concepts/kafka.md` — `source_count` 4 → 5; nova seção "Publicar no Kafka Após um INSERT no Banco Não É Garantido"
+- `wiki/concepts/mensageria.md` — `source_count` 9 → 10; nova linha em Key Sources sobre dual write ao publicar em qualquer broker
+- `wiki/concepts/database-transactions.md` — `source_count` 5 → 6; nova seção "Limite da Transação Local: Não Cobre Chamadas Externas"
+- `wiki/entities/renato-augusto.md` — `source_count` 14 → 15; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources (topo da tabela)
+
+**Notas / open questions:** (1) **Autoria não confirmada nominalmente** — o apresentador nunca se identifica na transcrição; a atribuição a Renato Augusto vem exclusivamente da menção ao produto "Mapa do Arquiteto", já registrado como dele em [[wiki/entities/renato-augusto]] a partir de outras fontes. (2) **Fonte é complementar, não duplicada**, a [[wiki/sources/outbox-pattern]] (já na wiki, cobre o mesmo padrão com exemplos em TypeScript/Prisma e SQL) — esta transcrição contribui o enquadramento de entrevista de programação e a progressão didática completa (ingênuo → transação local falha → outbox), que a fonte anterior não detalha com a mesma ênfase no "porquê a transação local não basta". (3) **Não cita fontes primárias** (documentação Debezium, papers) — todo o conteúdo é apresentado como conhecimento consolidado do autor. (4) **Não cobre o Inbox Pattern** apesar de mencionar implicitamente at-least-once delivery — esse complemento já está coberto em [[wiki/concepts/outbox-pattern]] por outra fonte, não duplicado aqui. (5) **Raw file não veio de um documento preexistente** — o usuário colou a transcrição diretamente no prompt e pediu explicitamente para primeiro criar o Markdown em `raw/`, depois ingerir.

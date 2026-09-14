@@ -3,8 +3,8 @@ type: concept
 title: "Extreme Ownership"
 aliases: ["ownership extremo", "Jocko Willink", "responsabilidade total"]
 date_created: 2026-04-22
-date_updated: 2026-08-11
-source_count: 2
+date_updated: 2026-09-14
+source_count: 3
 tags: [liderança, carreira, responsabilidade, ego, ownership]
 skill: tech-mentor-leadership
 status: stable
@@ -55,7 +55,12 @@ Sêniors e tech leads que praticam extreme ownership constroem confiança mais r
 - [[ownership-proativo]] — aplicação proativa (antes do problema)
 - [[problema-com-solucao]] — Extreme Ownership aplicado a feedback para gestores
 
+## Se Importar Como o Traço Mais Raro, Mais Difícil de Ensinar que Técnica
+
+[[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] adiciona uma observação de fundo sobre por que ownership genuíno é raro: o autor afirma conseguir ensinar programação do zero a alguém, e conseguir encontrar um excelente programador — mas achar muito difícil "ensinar alguém que não se importa a se importar". Aponta isso como uma dor recorrente em empresas, distinta de qualquer lacuna de habilidade técnica cobrível por treinamento ou mentoria (ver [[wiki/concepts/loop-de-feedback-rapido]] para o mecanismo de melhoria que o ownership sustenta).
+
 ## Key Sources
 
 - [[wiki/sources/desenvolvedor-acima-da-media-10-itens]]
 - [[wiki/sources/potencial-programador-atitude-mindset]] — versão cotidiana do princípio: assumir a responsabilidade pela própria entrega e se desbloquear sozinho, ligada a [[wiki/concepts/ownership-proativo]]
+- [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] — cuidar do resultado ("se importar") como traço mais raro e mais difícil de ensinar do que habilidade técnica

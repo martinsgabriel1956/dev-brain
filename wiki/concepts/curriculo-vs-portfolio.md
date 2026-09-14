@@ -3,8 +3,8 @@ type: concept
 title: "Currículo vs Portfólio"
 aliases: ["currículo vs portfólio", "promise vs proof", "promessa vs prova"]
 date_created: 2026-04-23
-date_updated: 2026-09-04
-source_count: 6
+date_updated: 2026-09-14
+source_count: 7
 tags: [carreira, contratação, portfólio, evidência]
 skill: tech-mentor-leadership
 status: stable
@@ -60,9 +60,14 @@ Em revisão real de currículos de candidatos júnior, a ausência de link para 
 
 [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] argumenta que a IA degradou o poder de sinal do artefato que este conceito trata como "prova": em 2019, um bom GitHub ou um SaaS funcional era forte evidência de competência real, porque exigia esforço substancial para existir. Hoje, gerar um SaaS funcional com 100 usuários não exige mais tanta competência técnica — e um recrutador não consegue avaliar as nuances reais do sistema por trás. **Isto não é uma contradição direta** com a tabela "promessa vs. prova" desta página: o portfólio continua sendo mais evidência que um currículo, mas o *limiar* do que conta como prova subiu — mostrar que o produto funciona já não basta; o diferencial passa a ser demonstrar competência que a IA não gera de forma trivial (arquitetura sob carga, segurança, decisões de trade-off documentadas). Tensão registrada, não resolvida: nenhuma das duas fontes propõe um critério objetivo e atualizado do que hoje conta como prova suficiente.
 
+## Currículo Orientado à Vaga, Não ao que Já Foi Estudado
+
+[[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] acrescenta um erro distinto dos já documentados nesta página: não é sobre currículo vs. portfólio, mas sobre a *direção* do desenvolvimento de habilidades antes de montar qualquer um dos dois. O autor relata ter passado os dois primeiros anos de faculdade focado só na grade acadêmica, sem entender o que o mercado real pedia — ao procurar emprego, descobriu que as vagas exigiam habilidades que não tinha. A recomendação é inverter a ordem: olhar o que as vagas pedem **antes** de desenvolver a habilidade, não depois. O autor estima que essa falta de orientação atrasou a própria carreira em 1 a 1,5 ano.
+
 ## Key Sources
 
 - [[sources/tres-caracteristicas-melhor-candidato]]
+- [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] — currículo/habilidades orientados ao que as vagas pedem, desenvolvidos antes da busca por emprego, não depois
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — tensão: poder de sinal do portfólio/GitHub caiu porque a IA barateou a produção do artefato que antes provava competência
 - [[wiki/sources/diferenciais-portfolio-backend-junior]]
 - [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]

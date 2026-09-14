@@ -3,8 +3,8 @@ type: concept
 title: "JWT — JSON Web Token"
 aliases: ["JWT", "JSON Web Token", "access token", "refresh token"]
 date_created: 2026-07-27
-date_updated: 2026-09-01
-source_count: 5
+date_updated: 2026-09-14
+source_count: 6
 tags: [jwt, autenticacao, stateless, token, seguranca]
 skill: tech-mentor-security
 status: draft
@@ -13,6 +13,8 @@ status: draft
 # JWT — JSON Web Token
 
 Token de autenticação **stateless**: toda a informação necessária para validar a identidade do usuário fica dentro do próprio token, não em uma entrada de banco de dados no servidor. Resolve o problema de escala das [[wiki/concepts/sessoes-http-cookies|sessões tradicionais]], que exigem um armazenamento central (ex.: Redis) consultado a cada requisição.
+
+O JWT é a instância mais comum da categoria **token autocontido** — em oposição ao [[wiki/concepts/token-opaco|token opaco]], que não carrega informação legível e exige consulta ao servidor a cada validação. Essa distinção arquitetural (opaco vs. autocontido) é formalizada em [[wiki/sources/anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato]].
 
 ## Estrutura
 
@@ -104,6 +106,7 @@ No contexto de [[wiki/concepts/openid-connect]], o ID Token é especificamente u
 - [[wiki/concepts/jose]] — ecossistema de especificações (JWS/JWE/JWK/JWA) que define como o JWT é assinado/criptografado
 - [[wiki/concepts/algorithm-confusion]] — ataque que explora a cipher agility do JWA quando o servidor confia no `alg` do header
 - [[wiki/concepts/paseto]] — alternativa de cipher rigidity que elimina algorithm confusion por design
+- [[wiki/concepts/token-opaco]] — categoria contrastante: string sem significado embutido, revogável instantaneamente, exige consulta ao servidor
 
 ## Key Sources
 
@@ -112,3 +115,4 @@ No contexto de [[wiki/concepts/openid-connect]], o ID Token é especificamente u
 - [[wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth]] — o ID Token do OIDC é um JWT distinto do access token, destinado à aplicação cliente (não à API)
 - [[wiki/sources/refresh-token-pattern-access-token-de-curta-duracao]] — janela de exposição, por que Access Token de longa duração é falha de segurança, e por que armazenar refresh token só no backend quebra o fluxo stateless
 - [[wiki/sources/jose-jws-jwe-jwk-jwa-algorithm-confusion-paseto]] — ecossistema JOSE (JWS/JWE/JWK/JWA) por trás do JWT, ataque de algorithm confusion (`alg: none` e RS256→HS256), e o PASETO como alternativa de cipher rigidity
+- [[wiki/sources/anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato]] — "Anatomia de um Token 1", vídeo predecessor da fonte acima: contraste formal entre token autocontido (JWT) e token opaco, e introdução em nível superficial do JOSE

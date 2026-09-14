@@ -3,8 +3,8 @@ type: concept
 title: "Filas e Workers"
 aliases: ["job queue", "background processing", "async workers", "processamento assíncrono"]
 date_created: 2026-07-09
-date_updated: 2026-09-02
-source_count: 8
+date_updated: 2026-09-14
+source_count: 9
 tags: [filas, workers, background-jobs, mensageria, backend, retry, idempotencia]
 skill: tech-mentor-backend
 status: stub
@@ -39,6 +39,10 @@ Producer e worker como dois processos independentes (ex.: Bun), comunicando-se a
 
 Quando tráfego de alta prioridade compete com tráfego normal pelos mesmos workers, a tentação é priorizar via campo de prioridade na mensagem — mas isso causa starvation do fluxo normal (mensagens prioritárias sempre furam a fila). O padrão recomendado é separar fisicamente em duas filas e, opcionalmente, dedicar instâncias de worker específicas a cada fila — permitindo processamento paralelo real sem que um fluxo bloqueie o outro. Ver [[wiki/concepts/ambulance-pattern]].
 
+## Filas como saída para SSR CPU-bound travando o event loop
+
+Além do caso clássico de checkout (não travar a resposta principal com envio de e-mail/nota fiscal), filas também servem como saída quando o trabalho pesado é **renderização SSR** em Node.js: renderizar um componente gigante ou transformar um payload grande antes de renderizar é uma operação CPU-bound que trava o [[wiki/concepts/event-loop-performance-js|event loop]] inteiro enquanto roda — nenhuma outra requisição é atendida nesse período, nem mesmo I/O que já retornou. Tirar esse trabalho do caminho síncrono da requisição via fila (processar fora da resposta imediata) é uma das soluções, ao lado de [[wiki/concepts/thread|worker threads]] e cache de renderização. Ver [[wiki/concepts/renderizacao-ssr-vs-csr]].
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/fila]] — a estrutura de dados FIFO que fundamenta o padrão
@@ -59,3 +63,4 @@ Quando tráfego de alta prioridade compete com tráfego normal pelos mesmos work
 - [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — o que fazer quando o worker não acompanha o ritmo do produtor: identificar o gargalo, podar stale jobs, processar em batches, e controlar a admissão de novos jobs (ver [[wiki/concepts/admission-control]])
 - [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — mesmo padrão (job pesado → mensagem na fila → resposta imediata → worker processa em background), com nomes concretos de ferramentas (RabbitMQ, Kafka, AWS SQS) e a analogia de checkout de e-commerce: "pagar" não trava a tela até o gateway confirmar, exatamente como o padrão de resposta imediata + confirmação assíncrona
 - [[wiki/sources/ambulance-pattern-priorizacao-mensagens-mark-richards]] — separar fila e instância de worker por canal de prioridade, para evitar que tráfego de alta prioridade trave o fluxo normal (starvation)
+- [[wiki/sources/node-single-thread-ssr-bloqueio-event-loop]] — filas como uma das soluções reais (junto de worker threads e cache) para SSR CPU-bound travando o event loop de Node.js, tirando o trabalho pesado do caminho síncrono da requisição

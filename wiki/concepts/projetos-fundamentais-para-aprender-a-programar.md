@@ -3,8 +3,8 @@ type: concept
 title: "Projetos Fundamentais para Aprender a Programar"
 aliases: ["Snake, supermercado e pathfinding", "três projetos de aprendizado", "software é argila não lego"]
 date_created: 2026-07-31
-date_updated: 2026-07-31
-source_count: 1
+date_updated: 2026-09-14
+source_count: 2
 tags: [projetos, aprendizado, iniciantes, algoritmos, modelagem, gerenciamento-de-estado]
 skill: tech-mentor-leadership
 status: draft
@@ -52,6 +52,11 @@ Cada projeto força um tipo de raciocínio diferente dos outros dois — não s�
 - [[wiki/concepts/algoritmos-e-estruturas-de-dados]] — hub mais amplo de DSA; este projeto é uma aplicação prática e motivadora de estudar a área
 - [[wiki/concepts/projeto-com-adrenalina]] — tensão de fase: aquele conceito recomenda escolher o projeto pelo interesse genuíno do aprendiz; este propõe três projetos prescritos por habilidade, independentemente do interesse pessoal — resolvem perguntas diferentes ("o que me motiva a continuar" vs. "quais habilidades um currículo mínimo de projetos deveria cobrir")
 
+## Projetos Como Ponte Entre Teoria e Prática, Não Só Escolha de Habilidade
+
+[[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] contribui uma justificativa de fundo mais ampla que complementa a escolha dos três projetos desta página: existe um gap entre estudar algo e conseguir aplicá-lo — o que parece útil na teoria nem sempre é como o mercado de fato funciona. Projetos (não necessariamente os três aqui prescritos — também voluntários, de faculdade, com amigos ou de comunidade) são a forma mais rápida de fechar esse gap, e publicar no LinkedIn é citado como via para atrair usuários reais e feedback (ver [[wiki/concepts/networking-de-carreira]] e [[wiki/concepts/loop-de-feedback-rapido]]). Sem projetos, a fonte argumenta que a carreira fica "profundamente estagnada e desconexa do mundo real".
+
 ## Key Sources
 
 - [[wiki/sources/tres-projetos-para-aprender-programar]]
+- [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] — projetos como ponte entre teoria e prática, com publicação em comunidade/LinkedIn como via de feedback

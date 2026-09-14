@@ -3,8 +3,8 @@ type: entity
 title: "Hostinger"
 aliases: ["Hostinger VPS"]
 date_created: 2026-07-21
-date_updated: 2026-08-27
-source_count: 8
+date_updated: 2026-09-14
+source_count: 9
 tags: [tech-mentor-infra, vps, hosting, patrocinio, coolify]
 skill: tech-mentor-ai
 status: stub
@@ -30,8 +30,11 @@ Também citada (sexto bloco patrocinado) em [[wiki/sources/ia-2026-nao-e-so-prom
 
 Também citada (não em bloco patrocinado, uso real demonstrado) em [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]], por [[wiki/entities/lucas-montano]]: destino de um deploy de landing page em staging feito inteiramente por um [[wiki/concepts/loop-engineering|loop]] agêntico via [[wiki/concepts/mcp-server|MCP]] (chave de API gerada na própria Hostinger), incluindo o agente resetando e reconfigurando a VPS do zero após um problema de configuração, e configurando Nginx como proxy reverso — tudo em ~20 minutos.
 
+Também citada (sétimo bloco patrocinado) em [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]], por [[wiki/entities/lucas-montano]]: mesmo plano **KVM2** e cupom "Lucas Montano" já documentados, aqui no contexto de um vídeo sobre implementar um MCP server stateless na própria VPS da Hostinger — reforça o padrão da Hostinger como ambiente de experimentação técnica do autor, não só de deploy de produção.
+
 ## Key Sources
 
+- [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] — plano KVM2, cupom "Lucas Montano", usada como ambiente de experimentação para implementar um MCP server stateless
 - [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] — deploy de landing page em staging via MCP da Hostinger dentro de um loop agêntico, incluindo reset/reconfiguração da VPS pelo próprio agente
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]]
 - [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — plano KVM2, deploy de um clique de Claude Code/Codex CLI/N8N/Docker, cupom "Lucas Montano"

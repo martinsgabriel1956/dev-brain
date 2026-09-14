@@ -3,8 +3,8 @@ type: concept
 title: "MVCC (Multi-Version Concurrency Control)"
 aliases: ["mvcc", "controle de concorrência por múltiplas versões", "multi-version concurrency control"]
 date_created: 2026-07-29
-date_updated: 2026-07-29
-source_count: 1
+date_updated: 2026-09-14
+source_count: 2
 tags: [banco-de-dados, mvcc, concorrencia, postgresql, database-internals]
 skill: tech-mentor-data
 status: stub
@@ -30,6 +30,10 @@ O que cada transação enxerga sob MVCC — a versão antiga ou a mais recente �
 
 Versões antigas de uma linha (dead tuples) não desaparecem sozinhas — precisam ser limpas depois que nenhuma transação ativa mais as referencia. É esse o trabalho do `VACUUM`/autovacuum no PostgreSQL, sem o qual a tabela "incha" com lixo. Ver `references/databases/postgresql-internals.md` da skill `tech-mentor-data`.
 
+## MVCC Como Critério de Escolha de Banco
+
+Volume de escrita muito alto numa base MVCC acumula dead tuples mais rápido do que o autovacuum consegue limpar — degradando performance por table bloat. Esse é um dos motivos concretos, além do formato do dado, que leva a preferir um banco nativamente distribuído/otimizado para escrita (ex.: [[wiki/concepts/mongodb]]) em vez de forçar um Postgres tradicional a um workload de escrita muito intenso. Ver [[wiki/concepts/criterios-de-escolha-de-banco-de-dados]] e [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]].
+
 ## Relação com outros conceitos
 
 - [[wiki/concepts/isolation-levels]] — define qual versão cada transação pode enxergar
@@ -40,3 +44,4 @@ Versões antigas de uma linha (dead tuples) não desaparecem sozinhas — precis
 ## Key Sources
 
 - [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]] — MVCC explicado via exemplo de Pix concorrente e extrato não bloqueante
+- [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]] — table bloat por escrita intensa como critério prático de escolha entre Postgres e um banco nativamente distribuído

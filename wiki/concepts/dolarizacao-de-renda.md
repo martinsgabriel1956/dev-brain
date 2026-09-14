@@ -3,8 +3,8 @@ type: concept
 title: "Dolarização de Renda e Patrimônio"
 aliases: ["dolarizar salário", "renda em dólar", "proteção cambial pessoal"]
 date_created: 2026-07-09
-date_updated: 2026-07-10
-source_count: 2
+date_updated: 2026-09-14
+source_count: 3
 tags: [financas-pessoais, carreira, dolar, tributacao, pj]
 skill: tech-mentor-leadership
 status: stub
@@ -26,13 +26,19 @@ Recomendada a partir de ~R$ 25.000/mês em [[wiki/sources/como-eu-investiria-com
 
 [[wiki/sources/golang-mercado-salarios-pesquisa-2024]] dá um dado concreto para a via "trabalho remoto para empresa estrangeira": entre devs que programam em Go e moram no Brasil, 27,7% atuam em projetos no exterior, contra apenas 12% entre devs Java. Isso sugere que apostar numa stack de nicho relativo com forte adoção internacional (Go é fortemente usado em cloud/infra fora do Brasil) amplia o acesso a essa forma de dolarização — não só quem já está em Big Tech ou fazendo freelance consegue essa exposição.
 
+## Inglês Como Pré-Requisito Comum, Independente da Stack
+
+[[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] adiciona o habilitador que atravessa qualquer via de acesso já documentada nesta página: sem inglês, nenhuma empresa estrangeira processa visto ou contrato remoto, e a renda fica inteiramente atrelada ao ciclo econômico do país de origem. A especialização em stack de nicho (Go, já citada abaixo) amplia o acesso, mas o inglês é o pré-requisito que vem antes da escolha de stack. Ver [[wiki/concepts/ingles-para-desenvolvedores]].
+
 ## Relacionado
 
 - [[wiki/concepts/holding-patrimonial]] — próximo passo de estruturação patrimonial em faixas mais altas
 - [[wiki/concepts/equity-como-diferencial]] — outra forma de exposição a moeda/mercado estrangeiro via RSU
 - [[wiki/concepts/go-fundamentos]] — a stack usada como exemplo concreto de especialização que amplia acesso a trabalho remoto internacional
+- [[wiki/concepts/ingles-para-desenvolvedores]] — pré-requisito comum a qualquer forma de trabalho remoto internacional
 
 ## Key Sources
 
 - [[wiki/sources/como-eu-investiria-como-programador-ate-50000]]
 - [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]
+- [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] — inglês como pré-requisito de acesso ao mercado global, anterior à escolha de stack

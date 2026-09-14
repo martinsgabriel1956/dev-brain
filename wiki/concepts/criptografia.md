@@ -3,8 +3,8 @@ type: concept
 title: "Criptografia"
 aliases: ["cryptography", "encryption", "hashing", "criptografia assimétrica", "criptografia simétrica"]
 date_created: 2026-06-26
-date_updated: 2026-08-07
-source_count: 5
+date_updated: 2026-09-14
+source_count: 7
 tags: [cs-fundamentals, criptografia, seguranca, hashing, tls, https, hmac]
 skill: cs-fundamentals
 status: draft
@@ -80,6 +80,10 @@ Garante que a mensagem veio de quem diz ser.
 
 Nem toda garantia de integridade exige criptografar o dado (perde-se a legibilidade) nem exige chave assimétrica (cara computacionalmente em alto volume). [[wiki/concepts/hmac]] resolve isso derivando duas chaves (interna e externa) a partir do mesmo segredo via padding — em vez de simplesmente concatenar `secret + mensagem` antes de fazer hash, o que é vulnerável a ataque de extensão de mensagem. HMAC garante integridade e autenticidade com o custo baixo de uma função de hash, ao preço de não ter não-repúdio (qualquer lado com o segredo pode gerar ou verificar).
 
+## CSPRNG: Gerando Segredos Imprevisíveis
+
+Criptografia não protege só dados em trânsito/repouso — também sustenta a **geração** de segredos que precisam ser imprevisíveis, como um [[wiki/concepts/token-opaco|token opaco]] de autorização. Um **CSPRNG** (Cryptographically Secure Pseudo-Random Number Generator) é distinto de um gerador pseudoaleatório comum (`Math.random()`): suas propriedades garantem que, mesmo conhecendo saídas anteriores, um atacante não consegue prever a próxima. É o mecanismo recomendado para gerar tokens de sessão, chaves de reset de senha e chaves de idempotência — com pelo menos 256 bits de entropia. Implementações: `crypto.randomBytes` (Node.js), `SecureRandom` (Java), módulo `secrets` (Python).
+
 ## Medindo Segurança Formalmente: IND-CPA
 
 Não basta um esquema "parecer" embaralhado — [[wiki/concepts/ind-cpa-security]] é um modelo formal onde um atacante escolhe mensagens para cifrar e tenta distinguir qual de duas cifras corresponde a qual mensagem original. Um esquema que preserva padrões (como a [[wiki/concepts/caesar-cipher]], que sempre mapeia a mesma letra para a mesma letra) falha nesse teste — a existência de qualquer vazamento de informação, mesmo sutil, já desqualifica o esquema como seguro.
@@ -107,6 +111,10 @@ Computadores quânticos ameaçam parte da criptografia atual de formas distintas
 
 A garantia de segurança não é mágica: é [[wiki/concepts/complexidade-computacional|complexidade computacional]]. Quebrar um hash por força bruta significa percorrer o espaço de chaves, cujo tamanho cresce com o número de caracteres e o alfabeto usado (letras, números, especiais, maiúsculas e minúsculas). Como o custo desse ataque é exponencial no tamanho da chave, o tempo para descriptografar sem a chave dispara e se torna inviável mesmo com hardware avançado. (Simplificação didática: a dureza real depende do algoritmo — fatoração/log discreto na assimétrica, busca de chave na simétrica — e não é *provada* exponencial em todos os casos.)
 
+## Relação com [[wiki/concepts/vpn]] e [[wiki/concepts/tunelamento]]
+
+Uma VPN aplica criptografia (tipicamente simétrica, AES, após um handshake inicial) sobre o tráfego que passa por um túnel virtual — mesma lógica do HTTPS descrita acima, mas encapsulando conexões de rede inteiras em vez de uma sessão HTTP.
+
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
@@ -114,3 +122,5 @@ A garantia de segurança não é mágica: é [[wiki/concepts/complexidade-comput
 - [[wiki/sources/hmac-integridade-mensagem-local-first-entrevista]]
 - [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]
 - [[wiki/sources/conceitos-que-regem-a-computacao-bits-turing-complexidade]] — segurança criptográfica como aplicação da inviabilidade da complexidade exponencial conforme a chave cresce
+- [[wiki/sources/anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato]] — CSPRNG como mecanismo de geração de token opaco seguro, com exemplos por linguagem (Node.js/Java/Python)
+- [[wiki/sources/vpn-conceito-tunelamento-acesso-remoto]] — VPN como aplicação de criptografia sobre tráfego de rede tunelado

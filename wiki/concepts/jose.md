@@ -3,8 +3,8 @@ type: concept
 title: "JOSE — JSON Object Signing and Encryption"
 aliases: ["JOSE", "JSON Object Signing and Encryption", "ecossistema JOSE"]
 date_created: 2026-09-01
-date_updated: 2026-09-01
-source_count: 1
+date_updated: 2026-09-14
+source_count: 2
 tags: [jose, jwt, jws, jwe, jwk, jwa, seguranca, criptografia]
 skill: tech-mentor-security
 status: draft
@@ -32,7 +32,9 @@ A alternativa de design oposta é o **[[wiki/concepts/paseto]]**, que adota "cip
 - [[wiki/concepts/jwt]] — formato concreto de token que instancia as especificações JOSE
 - [[wiki/concepts/criptografia]] — base teórica (simétrica/assimétrica) usada por JWS e JWE
 - [[wiki/concepts/rfc-request-for-comments]] — JWS/JWE/JWK/JWA são RFCs do IETF (7515–7518)
+- [[wiki/concepts/cwt-cbor-web-token]] — COSE é o equivalente ao JOSE no mundo binário CBOR
 
 ## Key Sources
 
 - [[wiki/sources/jose-jws-jwe-jwk-jwa-algorithm-confusion-paseto]]
+- [[wiki/sources/anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato]] — introdução em nível superficial ao JOSE (JWS/JWE, Base64 ≠ criptografia), predecessora do deep-dive acima

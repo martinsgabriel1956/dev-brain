@@ -3,8 +3,8 @@ type: concept
 title: "Linguagem Natural como Camada de Abstração"
 aliases: ["natural language as abstraction layer", "prompt como linguagem de programação", "inglês como linguagem de alto nível"]
 date_created: 2026-08-27
-date_updated: 2026-08-27
-source_count: 1
+date_updated: 2026-09-14
+source_count: 2
 tags: [abstracao, ia-e-programacao, compiladores, llm, camadas-de-abstracao]
 skill: tech-mentor-leadership
 status: draft
@@ -29,6 +29,13 @@ A fonte propõe um critério concreto pra separar "mais uma camada" de "ruptura 
 - [[wiki/concepts/vibe-coding]] — o padrão de trabalho que resulta de operar nessa camada mais alta (orquestrar prompts em vez de escrever sintaxe)
 - [[wiki/concepts/abstraction-illusion]] — risco adjacente: achar que dominar a camada mais alta é suficiente, sem entender o que ela esconde
 
+## Segunda Formulação Independente: Resistência Histórica a Compiladores + Ressalva Estocástica
+
+[[wiki/sources/ia-paradoxo-de-jevons-camada-de-abstracao-futuro-do-programador]] chega à mesma tese central por um caminho histórico diferente: em vez do paralelo assembly→C/Java→bytecode, usa o surgimento dos primeiros compiladores e linguagens de alto nível (Cobol, Fortran) — quando programadores "raiz" de assembly resistiram, achando que código gerado por compilador seria pior que código escrito à mão. [[wiki/entities/grace-hopper]] (que propôs a ideia do compilador) e [[wiki/entities/jean-sammet]] (pioneira de linguagens de alto nível) relataram essa resistência de primeira mão, segundo a fonte. [[wiki/entities/kent-beck]] contribui uma anedota pessoal equivalente: seu pai, programador assembly, precisou migrar para C quando as habilidades de baixo nível que tinha perderam valor econômico.
+
+**Ressalva importante que esta fonte adiciona e a anterior não tinha:** a analogia com o compilador não é perfeita, porque LLMs são **estocásticas** — a escolha do próximo token segue uma distribuição de probabilidade (`[skill: tech-mentor-ai]` confirma: temperatura controla esse grau de aleatoriedade, sendo 0 = determinístico), então o mesmo prompt pode gerar código diferente em execuções diferentes, ao contrário de um compilador, que é determinístico. Um compilador sempre traduz o mesmo código-fonte para o mesmo binário (dada a mesma versão/flags); uma LLM não tem essa garantia. Isso é uma diferença técnica real entre a "camada de compilação" e a "camada de LLM", não apenas uma questão de grau.
+
 ## Key Sources
 
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — formulação original da tese via paralelo assembly→C e Java→bytecode→JVM
+- [[wiki/sources/ia-paradoxo-de-jevons-camada-de-abstracao-futuro-do-programador]] — segunda formulação independente via resistência histórica a compiladores (Grace Hopper, Jean Sammet, pai de Kent Beck); ressalva de que a analogia não é perfeita por LLMs serem estocásticas

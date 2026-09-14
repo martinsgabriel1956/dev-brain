@@ -3,8 +3,8 @@ type: concept
 title: "Vaga Júnior Vira Pleno"
 aliases: ["sumiço de vagas júnior", "vaga júnior exigindo pleno", "requisito júnior inflado"]
 date_created: 2026-07-31
-date_updated: 2026-09-04
-source_count: 7
+date_updated: 2026-09-14
+source_count: 10
 tags: [carreira, mercado-de-trabalho, junior, contratacao]
 skill: tech-mentor-leadership
 status: stub
@@ -50,8 +50,23 @@ Pode ser uma manifestação específica, em nível de categoria de vaga, do padr
 
 [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] descreve — sem discutir o fenômeno por nome — uma vaga real anonimizada de São Paulo, rotulada "desenvolvedor júnior" em 2026, exigindo Node, TypeScript, Java, React, sistemas distribuídos, AWS, testes automatizados, pipeline de CI/CD, Terraform e observabilidade. O próprio autor da fonte reconhece a tensão implicitamente ao afirmar que não é preciso preencher todos os requisitos para ser uma candidatura plausível — uma forma de admitir, na prática, que a lista de exigência formal está acima do que um júnior típico domina. Não é uma fonte que analisa o padrão "júnior vira pleno" diretamente, mas é um exemplo concreto e recente de vaga real que ilustra o fenômeno, com stack listada verbatim.
 
+## Recomendação de Carreira: Formar-se Para Pleno, Não Para Júnior
+
+[[wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos]] aborda a mesma fronteira fluida júnior/pleno por um ângulo de expectativa de carreira, não de rótulo de vaga: quem cursa uma graduação de 4-5 anos deveria se formar já preparado para ocupar posição de pleno, não júnior — a exceção sendo empresas de reconhecimento ultra (Google, JP Morgan) que pagam, mesmo a um júnior, salário equivalente ao de pleno em outras empresas. A fonte reforça diretamente a heterogeneidade de mercado já documentada nesta página ("um júnior do Google... é completamente diferente de um júnior de uma empresa da esquina"), mas sem dado de vaga real — é recomendação pessoal, não achado empírico.
+
+## Pressão de Full-Stack Como Mecanismo do "Encolhimento" de Pleno
+
+[[wiki/sources/ai-engineer-forward-deployed-engineer-mercado-vagas-2026]] descreve, para a faixa pleno especificamente (não júnior), um mecanismo próximo ao já documentado nesta página para "concentração de cargos" ([[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]]): a faixa pleno "encolheu bastante" porque a expectativa geral passou a ser full-stack, empurrando a especialização técnica para o nível sênior. Isso não fala diretamente do rótulo "júnior vira pleno", mas descreve a mesma pressão estrutural por outro ângulo — a fronteira entre as faixas fica mais fluida quando a diferenciação por especialização desaparece do meio da pirâmide. A fonte também confirma, com outra frase, o corte de contratação júnior: "contratação parou basicamente".
+
+## Contraponto Setorial: Mercado de Mainframe Busca Mais Pleno, Não Menos Júnior por Rótulo
+
+[[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] traz um dado de nicho que não confirma nem contradiz diretamente o padrão desta página, mas vale registrar como comparação: no mercado de [[wiki/concepts/mainframe|mainframe]]/[[wiki/concepts/cobol|COBOL]], **79%** das empresas buscam mid-level e **51%** buscam entry-level (ambos os números altos, sem indicar concorrência entre faixas) — o motivo apontado pela fonte é geracional (ver [[wiki/concepts/apagao-de-seniors]]), não aperto orçamentário. A fonte não analisa se as vagas "entry-level" de mainframe sofrem a mesma inflação de requisito documentada nesta página para o mercado geral; fica como pergunta em aberto registrada em [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]].
+
 ## Key Sources
 
+- [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] — contraponto setorial (mainframe/COBOL): demanda alta simultânea por mid-level (79%) e entry-level (51%), motivada por aposentadoria geracional, não por aperto de mercado
+- [[wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos]]
+- [[wiki/sources/ai-engineer-forward-deployed-engineer-mercado-vagas-2026]] — pressão de full-stack como mecanismo do encolhimento de pleno; confirmação do corte de contratação júnior — recomendação de carreira (formar-se para pleno) e reforço qualitativo da heterogeneidade júnior-Google vs. júnior-empresa-pequena
 - [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — observação de origem, sem causa identificada pelo próprio relator
 - [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] — fenômeno de sinal oposto (júnior vendido a preço de sênior em mercado aquecido), útil para contraste
 - [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — mecanismo paralelo do lado do conteúdo técnico: 3 itens rebaixados de pleno para júnior, hipótese de piso técnico mais alto (não confirmada com dado de vaga)

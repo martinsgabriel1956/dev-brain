@@ -3,8 +3,8 @@ type: concept
 title: "Cache"
 aliases: ["caching", "cache de aplicação"]
 date_created: 2026-06-26
-date_updated: 2026-09-04
-source_count: 12
+date_updated: 2026-09-14
+source_count: 13
 tags: [cache, performance, redis, arquitetura, backend, grande-rollback, buffer]
 skill: tech-mentor-backend
 status: stable
@@ -80,6 +80,10 @@ Não entender bem essa camada de cache impacta latência, mas principalmente **c
 
 **Exemplo numérico concreto de cache hit vs. miss:** [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] cita preços reais da [[wiki/entities/moonshot-ai|Moonshot AI]] onde o cache de tokens de input muda o custo em até 10×: o Kimi K3 cobra US$3/M tokens de input em cache miss contra US$0,30/M em cache hit; o Kimi K2.7 Code cobra US$0,95/M em cache miss contra US$0,19/M em cache hit. Isso mostra concretamente por que "cache de tokens em LLMs" (acima) não é um detalhe de implementação do provider — é uma alavanca de custo de ordem de grandeza, visível diretamente na tabela de preços pública.
 
+## Cache de Renderização SSR
+
+SSR puro recomputa o mesmo HTML a cada requisição — 100 usuários acessando a mesma página geram 100 renderizações idênticas no servidor. Como renderização SSR complexa é uma operação CPU-bound que pode travar o [[wiki/concepts/event-loop-performance-js|event loop]] de Node.js (ver [[wiki/concepts/renderizacao-ssr-vs-csr]]), cachear o HTML gerado — especialmente para páginas de baixa volatilidade — reduz tanto latência quanto o risco de bloqueio sob carga concorrente. Estratégias híbridas (parte estática, parte dinâmica) e mecanismos como o ISR (Incremental Static Regeneration) do Next.js seguem essa mesma lógica: evitar recomputar o que não mudou.
+
 ## Key Sources
 
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
@@ -94,3 +98,4 @@ Não entender bem essa camada de cache impacta latência, mas principalmente **c
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — camada específica de IA: cache de tokens por provider, cache de contexto/embeddings em RAG, cache-aware prompts e fingerprints; caching como alavanca de custo, não só de latência
 - [[wiki/sources/system-design-load-balancer-nivel-macaco]] — cache citado, numa pergunta frequente de aula introdutória, como técnica alternativa a "só adicionar mais servidor/load balancer" para escalar, reforçando o mesmo framing de "melhor amigo antes de escalar" já registrado acima
 - [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] — preços reais de cache hit vs. miss da Moonshot AI (Kimi K3 e K2.7 Code), diferença de até 10× no custo de input tokens
+- [[wiki/sources/node-single-thread-ssr-bloqueio-event-loop]] — cache de renderização (e ISR do Next.js) como mitigação para SSR CPU-bound recomputado a cada requisição, reduzindo tanto latência quanto risco de travar o event loop sob carga concorrente

@@ -3,8 +3,8 @@ type: concept
 title: "Networking de Carreira"
 aliases: ["networking", "mercado invisível de vagas", "mercado de indicações"]
 date_created: 2026-07-20
-date_updated: 2026-08-24
-source_count: 4
+date_updated: 2026-09-14
+source_count: 6
 tags: [carreira, networking, contratacao, senioridade]
 skill: tech-mentor-leadership
 status: stub
@@ -30,9 +30,19 @@ Ambientes que reúnem profissionais com o mesmo objetivo por um período prolong
 
 [[wiki/sources/duas-perguntas-linkedin-cursos-online-lei-de-sturgeon]] traz dados de dentro do processo de contratação que dão peso concreto ao lado "visível" desse par: uma consultoria que contrata 700+ pessoas de tecnologia por ano usa o [[wiki/entities/linkedin]] como canal principal, não como complemento à indicação — inclusive para vagas sênior e de liderança, que a intuição colocaria no mercado invisível. A licença de recrutamento paga pela empresa é cara (dezenas de milhares de dólares/ano) especificamente pela capacidade de busca filtrada por tecnologia/senioridade/região — o mesmo tipo de filtro que, do lado do candidato, é acionado por ter um perfil buscável. Ver [[wiki/concepts/assimetria-de-custo-plataforma-de-contratacao]].
 
+## Network de Ex-Alunos de Graduação Como Benefício Complementar ao Diploma
+
+[[wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos]] estende para a graduação (não só pós-graduação, já documentada acima) o mesmo mecanismo de network institucional: uma boa faculdade proporciona bom network com ex-alunos e empresas fundadas/lideradas por ex-alunos, o que ajuda no posicionamento de mercado independente do conteúdo técnico da grade. A fonte também reconhece explicitamente o papel da sorte dentro desse mecanismo — mesmo sem mirar uma empresa de prestígio, é possível "ter sorte de entrar por networking em algum lugar bem posicionado".
+
+## Projetos Pessoais Publicados Como Gatilho de Rede, Não Só Prova Técnica
+
+[[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] acrescenta uma função de networking à publicação de projetos pessoais que outras fontes desta página tratam mais como prova de competência (ver [[wiki/concepts/curriculo-vs-portfolio]]): postar projetos no LinkedIn é citado explicitamente como forma de **achar usuários** — o projeto funciona simultaneamente como prova técnica e como gancho de rede/visibilidade, reforçando o mesmo mercado visível já documentado abaixo via [[wiki/entities/linkedin]].
+
 ## Key Sources
 
+- [[wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos]] — network de ex-alunos de graduação (não só pós) como benefício complementar ao diploma; reconhecimento explícito do papel da sorte
 - [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]]
 - [[wiki/sources/papinho-tech-solo-comunidade]] — mesmo mecanismo de indicação via presença recorrente, aplicado a meetups/eventos de comunidade
 - [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — autofiltragem excessiva (distância, "encaixe perfeito") como erro recorrente de candidatos júnior no mercado visível
 - [[wiki/sources/duas-perguntas-linkedin-cursos-online-lei-de-sturgeon]] — dados de volume de contratação via LinkedIn (700+/ano) e custo da licença de recrutamento, mostrando que o mercado visível tem peso real mesmo em vagas sênior/liderança
+- [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] — projetos pessoais publicados no LinkedIn como forma de atrair usuários, dupla função de prova técnica e gatilho de rede

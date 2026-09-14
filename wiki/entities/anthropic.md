@@ -3,8 +3,8 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-09-03
-source_count: 28
+date_updated: 2026-09-14
+source_count: 30
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack, memory-layers]
 skill: tech-mentor-ai
 status: stable
@@ -114,6 +114,14 @@ Guia oficial publicado pela Anthropic definindo quatro níveis de autonomia para
 
 [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] cita, de memória e sem link direto, uma pesquisa da Anthropic que reportaria custo até 15× maior com sistemas multi-agente, mas resposta melhor em 90% dos casos frente a um agente único rodando por muito tempo. Confiança baixa: nem o número nem a metodologia da pesquisa foram conferidos contra a publicação original nesta ingestão; o próprio autor da fonte especula, sem testar, que a causa do custo alto seria falta de agrupamento coeso de tasks entre os subagentes — hipótese não verificada. Candidato a fonte própria se a pesquisa original for localizada.
 
+## Playbook "AI Natives Working at the Frontier"
+
+Segundo [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]], a Anthropic publicou um relatório de entrevistas com mais de uma dúzia de startups de rápido crescimento sobre como operam usando o Claude Code, consolidado em cinco regras operacionais — ver [[wiki/concepts/sdlc-nativo-de-ia]]. A mesma fonte relata uma controvérsia pública entre a Anthropic e Tobi Lütke (CEO da [[wiki/entities/shopify]]) sobre o Claude Code não ler `AGENTS.md`, só `CLAUDE.md` — ver [[wiki/concepts/agents-md-vs-claude-md]], incluindo uma **contradição registrada** com uma menção anterior na wiki (via [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]]) de que a Anthropic teria preferência por `AGENTS.md`. Nenhuma das fontes é primária; tratado como contradição em aberto.
+
+## Mudança de Spec no MCP: Fim do Handshake (2026)
+
+Segundo [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]], a Anthropic mudou a especificação core do [[wiki/concepts/model-context-protocol|MCP]] de stateful para stateless, removendo o handshake/sessão obrigatórios em favor de um método `server discover` e de handles de estado assinados pelo servidor — mudança relatada como recente ("semana anterior" ao vídeo), sem data exata confirmada nem link direto ao changelog oficial nesta ingestão. Ver [[wiki/concepts/mcp-stateless-server-discover]].
+
 ## Key Sources
 
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — previsão de Dario Amodei sobre fim do código manual em ~6 meses, e hipótese não verificada de acesso interno antecipado a modelos mais avançados
@@ -145,3 +153,5 @@ Guia oficial publicado pela Anthropic definindo quatro níveis de autonomia para
 - [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — distinção de memória em três partes (atribuição incerta); mensagens cruzadas entre subagentes via "list agents"; linha do tempo Claude lançado em 2023, "devagarzinho"
 - [[wiki/sources/tokens-o-que-sao-e-por-que-custam-caro]] — tokenizer do Claude Opus 5 (privado, não divulgado) gastou quase o dobro de tokens que o GPT-4o na mesma frase em português; preços citados de Opus/Sonnet/Haiku (output ~5x mais caro que input)
 - [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — caso Levelsio (downgrade Opus→Sonnet "por segurança", sermão de saúde) como fricção de guardrail; benchmarks de lançamento do Opus 5 (forte em Agentic Terminal Coding/Agent Search/Computer Use/Automation Bench, atrás do GPT 5.6 Sol em coding puro, sem avanço em dual-use de risco)
+- [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] — mudança de spec do MCP: fim do handshake obrigatório, core stateless, método `server discover`, cross-call state via handle assinado
+- [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] — playbook "AI natives working at the frontier" com startups; controvérsia AGENTS.md vs. CLAUDE.md com Tobi Lütke/Shopify

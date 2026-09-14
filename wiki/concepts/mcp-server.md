@@ -3,8 +3,8 @@ type: concept
 title: "MCP Server — Configuração e Uso no Claude Code"
 aliases: ["mcp server claude code", "configurar mcp", "claude mcp cli"]
 date_created: 2026-05-31
-date_updated: 2026-08-06
-source_count: 3
+date_updated: 2026-09-14
+source_count: 5
 tags: [mcp, claude-code, agente-ia, ferramentas, llmops]
 skill: tech-mentor-ai
 status: stable
@@ -97,9 +97,19 @@ Um servidor MCP não precisa ser genérico (filesystem, Docker) — pode expor u
 
 Nem toda correlação automática de telemetria passa por um MCP server. O **Grafana Cloud** também expõe o mesmo tipo de correlação (logs + métricas + traces) via um assistente de IA embutido na própria interface web da plataforma — nesse caminho, o custo de IA é do plano do Grafana Cloud, não dos créditos do editor de código do usuário. Já o Grafana MCP, por rodar como tool dentro do editor (ex. Claude Code), consome os créditos de IA do próprio editor. Mesmo prompt genérico, mesmo resultado (causa raiz + linha de código) nos dois caminhos testados.
 
+## Deploy Serverless com Spec Stateless (2026)
+
+Segundo [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]], com o core do MCP passando a ser stateless, um servidor MCP remoto simples pode ser implementado como um único arquivo POST, sem depender do MCP TypeScript SDK oficial, e deployado serverless/edge sem infraestrutura de sessão (Redis, sticky session). Ver [[wiki/concepts/mcp-stateless-server-discover]] para o mecanismo completo (handle mintado pelo servidor, `server discover`, headers de método/recurso).
+
+## Marketplace de Plugins Corporativos via MCP + SSO
+
+[[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] descreve um padrão de adoção corporativa de MCP citado num playbook da Anthropic com startups: conectar as ferramentas do dia a dia do time (Jira, Figma, Google Drive) via servidores MCP autenticados com login corporativo (SSO), organizados como um "marketplace de plugins" interno — em vez de cada dev configurar MCPs individualmente. A lógica citada na fonte: "o Claude não consegue entender o que não vê" — conectar fontes de dados confiáveis é pré-requisito para o agente ser útil em contexto de negócio real, não só em tarefas de código isoladas. Ver [[wiki/concepts/sdlc-nativo-de-ia]] (regra 5: prototype/dog food/productionize).
+
 ## Key Sources
 
+- [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] — marketplace de plugins corporativos via MCP + SSO (Jira, Figma, Drive)
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
+- [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] — deploy stateless/serverless de MCP server, implementação em arquivo único sem SDK oficial
 - [[wiki/sources/mcp]]
 - [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — Grafana MCP + Context7 usados juntos para investigação automatizada de incidentes
 - [[wiki/sources/monitoramento-aplicacoes-ia-grafana-cloud-opentelemetry]] — contraste de custo entre Grafana MCP (créditos do editor) e chat web do Grafana Cloud (sem custo de editor)

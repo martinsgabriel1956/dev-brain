@@ -3,8 +3,8 @@ type: concept
 title: "Database Transactions"
 aliases: ["transações", "prisma transaction", "$transaction"]
 date_created: 2026-04-22
-date_updated: 2026-07-29
-source_count: 5
+date_updated: 2026-09-14
+source_count: 6
 tags: [banco-de-dados, acid, transactions, prisma, postgresql]
 skill: tech-mentor-system-design
 status: stable
@@ -48,9 +48,14 @@ Duas transações concorrentes sobre o mesmo dado não deixam de rodar — Isola
 
 O agrupamento `BEGIN`/updates/`COMMIT` não implica que tudo já esteja persistido no arquivo de dados no momento do commit — implica que a mudança já está garantida no [[wiki/concepts/write-ahead-log]], suficiente para ser reconstruída em caso de queda. A página final no disco (via [[wiki/concepts/buffer-pool]]) pode ser gravada depois, de forma assíncrona. Ver [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]].
 
+## Limite da Transação Local: Não Cobre Chamadas Externas
+
+Uma transação de banco de dados garante atomicidade **apenas entre operações no mesmo banco**. [[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] mostra o erro comum de tentar estender essa garantia a uma chamada externa (publicar num broker, chamar um serviço de terceiros) simplesmente envolvendo-a num `BEGIN`/`COMMIT` — se a aplicação ou o banco falharem entre a chamada externa e o commit, a operação externa já aconteceu mas o commit nunca se efetiva (ou vice-versa). Esse é o [[wiki/concepts/dual-write-problem]]; a solução é gravar a intenção da chamada externa como um dado local (tabela outbox) dentro da própria transação, ver [[wiki/concepts/outbox-pattern]].
+
 ## Key Sources
 
 - [[sources/banco-de-dados]]
+- [[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] — por que uma transação de banco não garante atomicidade sobre uma chamada externa (Kafka, serviço de terceiros)
 - [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]] — mesmo exemplo de Pix (débito/crédito) para atomicidade, com o mecanismo de WAL por trás do commit
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] — mesmo exemplo de transferência bancária para atomicidade; nuance sobre isolamento em escritas concorrentes

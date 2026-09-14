@@ -3,8 +3,8 @@ type: concept
 title: "Arquiteto de Soluções"
 aliases: ["arquiteto de solucoes", "engenheiro de solucoes", "solutions architect", "technical solution architect"]
 date_created: 2026-08-13
-date_updated: 2026-08-13
-source_count: 1
+date_updated: 2026-09-14
+source_count: 2
 tags: [carreira, arquiteto-de-solucoes, solutions-architect, t-shaped, ia, qa]
 skill: tech-mentor-leadership
 status: stub
@@ -35,6 +35,11 @@ O que torna esse papel acessível agora é a IA como **multiplicador**: um profi
 - [[wiki/concepts/adaptabilidade]] — a régua que empurra a fusão de papéis
 - [[wiki/entities/julio-de-lima]] — referência de QA, a disciplina usada como caso da convergência
 
+## O Mesmo Papel Rebatizado como Forward Deployed Engineer
+
+[[wiki/sources/ai-engineer-forward-deployed-engineer-mercado-vagas-2026]] descreve, sem citar esta página, essencialmente o mesmo papel sob o nome de moda em 2026: [[wiki/concepts/forward-deployed-engineer]] (referência de mercado: Palantir) — vai dentro do cliente para instalar, configurar e desenvolver a integração de um produto complexo, e é comparado diretamente a Solutions Architect (AWS) e Consultor de Implementação. Ao contrário da leitura otimista desta página (convergência de papéis habilitada pela IA, aposta do autor original), a fonte é cética quanto ao valor de carreira específico do rótulo "Forward Deployed Engineer": sem progressão clara (nenhum "senior" reconhecido), trabalho pouco visível salvo quando o cliente fica insatisfeito, e demanda real pequena até nos EUA (<1.000 de 65.000 vagas de dev no agregador True Up) — praticamente inexistente no Brasil por falta de empresas nativas digitais com produto complexo o bastante para justificar essa função. A fragmentação nominal (Forward Deployed AI Engineer, Applied AI Engineer, Deployment Solutions Engineer, Customer Engineer) reforça a tese desta página de que o cargo "já existia" — só ganhou nome novo com o hype de IA.
+
 ## Key Sources
 
 - [[wiki/sources/papinho-tech-solo-q-and-a-carreira]] — QA convergindo para arquiteto de soluções; IA como habilitador da fusão de papéis
+- [[wiki/sources/ai-engineer-forward-deployed-engineer-mercado-vagas-2026]] — mesmo papel sob o nome Forward Deployed Engineer; dados de demanda e avaliação cética de carreira

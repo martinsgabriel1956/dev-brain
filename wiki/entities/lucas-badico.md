@@ -3,8 +3,8 @@ type: entity
 title: "Lucas Badico"
 aliases: ["Badico"]
 date_created: 2026-07-03
-date_updated: 2026-08-18
-source_count: 4
+date_updated: 2026-09-14
+source_count: 5
 tags: [pessoa, programador, youtuber, go, brasil, agile, mentoria]
 skill: tech-mentor-leadership
 status: stub
@@ -37,8 +37,13 @@ Desde ~2026-06 constrói, inteiramente em [[wiki/concepts/build-in-public|live s
 
 Mantém um grupo de mentorados (mencionado como tendo mais de 50 pessoas) usado como fonte de discussão para conteúdo do canal — por exemplo, uma pergunta de um mentorado sobre metas forçadas de [[wiki/concepts/story-points]] virou a base de um vídeo sobre o papel do [[wiki/concepts/scrum-master]] e do PO. Oferece mentoria individual mediante contato direto (Instagram/e-mail).
 
+## Reflexão sobre Trabalho com IA: "Diretor de IA" e Ansiedade de Dependência
+
+Em [[wiki/sources/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico]] (vídeo-desabafo, ~2026-09), relata que o trabalho na empresa americana atual ficou "muito fácil" (~95% executado por IA, ele só move tasks e testa/valida) e muito ágil, mas que isso trouxe preguiça, ansiedade crescente e a sensação de ter virado "diretor de IA"/"babá de IA" em vez de programador — mesmo mecanismo do Nível 4 (Diretor) da [[wiki/concepts/escala-maturidade-ia-dev]], mas vivido como pessoalmente insatisfatório (ver [[wiki/concepts/diretor-de-ia-metafora-do-cinema]]). Defende que o valor do profissional migrou do conhecimento pessoal para a ferramenta de IA fornecida pela empresa (ver [[wiki/concepts/portabilidade-de-valor-profissional-na-era-da-ia]]), e recomenda que quem está começando carreira não dependa de IA desde o início — usando a analogia de que ninguém começa como diretor de cinema sem antes passar pela produção. Anuncia a intenção de cancelar a assinatura do Claude (citando custo de ~R$3.000/6 meses no plano Opus) e retomar lives de programação manual e as aulas de Go pendentes, atrasadas desde a troca de emprego.
+
 ## Key Sources
 
+- [[wiki/sources/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico]] — reflexão sobre trabalhar como "diretor de IA"; ansiedade de dependência; intenção de cancelar assinatura de IA e voltar a codar manualmente em lives
 - [[wiki/sources/golang-mercado-trabalho-frontend-para-backend]]
 - [[wiki/sources/story-points-po-forcando-30-40-pontos-por-sprint]]
 - [[wiki/sources/golang-profissional-sem-grandes-frameworks]]

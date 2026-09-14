@@ -3,8 +3,8 @@ type: concept
 title: "Otimização de Currículo para ATS"
 aliases: ["ATS", "applicant tracking system", "robô que lê currículo", "keyword matching currículo"]
 date_created: 2026-07-15
-date_updated: 2026-09-04
-source_count: 3
+date_updated: 2026-09-14
+source_count: 4
 tags: [carreira, contratação, ats, currículo]
 skill: tech-mentor-leadership
 status: draft
@@ -43,8 +43,13 @@ Passar no ATS é só a primeira barreira — é sobre o currículo (a "promessa"
 - [[wiki/concepts/portfolio-backend-junior]] — o que compõe a prova técnica depois da triagem
 - [[wiki/concepts/assimetria-de-custo-plataforma-de-contratacao]] — o mesmo mecanismo de metadados de busca aplicado ao perfil de uma plataforma de rede profissional em vez de a um documento de currículo
 
+## Palavras-Chave Devem Vir das Vagas-Alvo, Não de uma Lista Genérica
+
+[[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] conecta o mecanismo do ATS a um erro anterior: se o desenvolvedor não olhou primeiro o que as vagas-alvo pedem, corre o risco de otimizar o currículo para palavras-chave que não são as que os empregadores de fato buscam. Ver [[wiki/concepts/curriculo-vs-portfolio]] para a mesma tese aplicada ao processo de desenvolvimento de habilidades, não só ao texto do documento.
+
 ## Key sources
 
 - [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]]
+- [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] — palavras-chave do currículo devem vir do que as vagas-alvo pedem, não de uma lista genérica de habilidades já estudadas
 - [[wiki/sources/duas-perguntas-linkedin-cursos-online-lei-de-sturgeon]] — mesmo mecanismo de metadados de busca, aplicado ao perfil do LinkedIn em vez de ao currículo
 - [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — PDF pesquisável como pré-requisito mecânico, e o padrão de habilidade listada (Java) sem nenhuma evidência de uso no corpo do currículo

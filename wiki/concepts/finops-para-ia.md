@@ -3,8 +3,8 @@ type: concept
 title: "FinOps para IA (Token FinOps)"
 aliases: ["finops para ia", "token finops", "finops de ia", "governança de custo de ia"]
 date_created: 2026-07-31
-date_updated: 2026-07-31
-source_count: 1
+date_updated: 2026-09-14
+source_count: 3
 tags: [finops, token-economics, custo-de-ia, governanca, budget, metricas-de-valor]
 skill: tech-mentor-ai
 status: stub
@@ -25,6 +25,16 @@ Especialização do [[wiki/concepts/finops|FinOps]] genérico de cloud para o co
 
 Formulado como as "quatro dicas" de encerramento de [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]], em reação direta à crítica do CEO da Palantir ([[wiki/entities/palantir-technologies]]) ao modelo de cobrança por token da OpenAI e Anthropic. As mesmas quatro práticas aparecem, com nomenclatura e exemplos de código diferentes, na seção "FinOps para LLM" do material de referência de token economics do tech-mentor (budget por feature/tenant, anomaly detection de custo, model routing) — ver [[wiki/concepts/modelo-por-leverage-tarefa]] e [[wiki/concepts/roteamento-automatico-de-modelo]] para o lado de roteamento de modelo dessa mesma prática.
 
+## Governança de Gasto Como Tema Interno Não-Mainstream
+
+[[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] confirma, de um ângulo diferente (consultoria a bancos e e-commerces brasileiros, não análise pública de um caso como o da Uber), que "como eu controlo gastos" de IA é um dos temas centrais nas conversas internas de empresas grandes — reforçando que FinOps para IA é preocupação recorrente e ainda pouco resolvida na prática, mesmo em organizações de grande porte. A fonte não detalha práticas específicas (as quatro práticas já documentadas nesta página continuam sendo a referência mais concreta), apenas confirma que o problema é generalizado e raramente discutido publicamente — ver [[wiki/concepts/hype-de-ia]] para o porquê desse tipo de conteúdo não "viralizar".
+
+## Automação Sem Governança Torna o Consumo Invisível
+
+[[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] descreve um risco complementar às quatro práticas acima: quando processos são automatizados com IA cedo demais e sem revisão contínua, a organização acumula *schedulers* e automações que passam a rodar "de forma invisível" no dia a dia — perdendo visibilidade de quantas automações existem e quanto consomem. O risco citado na fonte é concreto: se o fornecedor de IA subir preços ou os créditos acabarem, a operação para sem que ninguém saiba exatamente por quê. Ver também [[wiki/concepts/risco-de-outage-fornecedor-ia]] (risco irmão, de disponibilidade em vez de custo) e a prática 4 acima ("Ownership em prototipagem") sobre evitar lock-in estrutural em um único provedor.
+
 ## Key Sources
 
+- [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] — risco de automação sem governança tornar consumo/custo invisível até o orçamento estourar
+- [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] — confirmação de que controle de gastos de IA é tema central nas conversas internas de grandes empresas brasileiras, pouco discutido no mainstream
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]]

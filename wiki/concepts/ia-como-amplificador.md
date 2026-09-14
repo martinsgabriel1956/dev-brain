@@ -3,8 +3,8 @@ type: concept
 title: "IA como Amplificador (sem julgamento)"
 aliases: ["ia amplificador", "ai as amplifier", "amplificador sem julgamento"]
 date_created: 2026-08-10
-date_updated: 2026-08-17
-source_count: 3
+date_updated: 2026-09-14
+source_count: 6
 tags: [ia-produtividade, seniority, codigo-legado, code-review, julgamento]
 skill: tech-mentor-leadership
 status: draft
@@ -48,8 +48,23 @@ O diferencial deixa de ser "escrever rápido" e passa a ser **julgar o que foi g
 
 [[wiki/concepts/paradoxo-da-aceleracao]] · [[wiki/concepts/gaming-de-testes-por-ia]] · [[wiki/concepts/codigo-legado-ia]] · [[wiki/concepts/apagao-de-seniors]] · [[wiki/concepts/novo-perfil-dev-ia]] · [[wiki/concepts/dependencia-ia]]
 
+## Amplificando o Gap Entre Camadas de um Dev (Backend/Frontend)
+
+[[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] descreve uma variante positiva e mais restrita do amplificador: um dev backend geralmente não é totalmente leigo em frontend (e vice-versa) — tem uma noção leve das outras camadas. A IA consegue preencher bem esse gap específico de conhecimento parcial, o que justifica (segundo a fonte) dar tarefas maiores e multi-camada a um único dev, em vez de fragmentar tudo por especialidade. Note a diferença de escopo em relação ao resto desta página: aqui o amplificador atua sobre um gap de conhecimento **relativamente raso** (camada adjacente já parcialmente conhecida), não sobre julgamento arquitetural profundo em codebase legado — por isso o ganho descrito é mais consistentemente positivo, sem o contraste "sênior bom vs. sênior mediano" das outras fontes desta página.
+
+## Formulação Geral: Conhecimento Técnico como Multiplicador do Ganho
+
+[[wiki/sources/ia-paradoxo-de-jevons-camada-de-abstracao-futuro-do-programador]] contribui uma formulação mais geral do mesmo mecanismo de amplificador, não restrita a codebase legado ou gap entre camadas: "se você sabe muito de engenharia de software, você fica muitas vezes mais produtivo [com IA]. E o contrário também ocorre: quem sabe pouco ou tem ideias erradas, na verdade, a IA multiplica a bagunça." A fonte usa isso para explicar por que conhecimento de princípios, arquitetura e boas práticas (ver [[wiki/concepts/novo-perfil-dev-ia]]) não perdeu valor com a IA — pelo contrário, virou o fator que determina se o amplificador multiplica qualidade ou multiplica erro.
+
+## Tensão: Julgamento Portável vs. Acesso à Ferramenta Não Portável
+
+[[wiki/sources/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico]] introduz uma tensão parcial com a tese central desta página. Se a IA amplifica o julgamento existente, o julgamento (portável, pertence à pessoa) deveria continuar sendo o fator dominante de valor entre empregos. Mas a fonte argumenta que parte do resultado também depende do *acesso* específico à ferramenta (modelo, contexto, configuração fornecidos pelo empregador) — algo que não é portável da mesma forma. Detalhado em [[wiki/concepts/portabilidade-de-valor-profissional-na-era-da-ia]].
+
 ## Key Sources
 
+- [[wiki/sources/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico]] — tensão entre julgamento (portável) e acesso à ferramenta (não portável) como dois componentes distintos do ganho amplificado
+- [[wiki/sources/ia-paradoxo-de-jevons-camada-de-abstracao-futuro-do-programador]] — formulação geral: conhecimento de engenharia de software como multiplicador do ganho ("multiplica bagunça" quando ausente)
+- [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] — IA preenchendo o gap de conhecimento raso entre camadas adjacentes (backend/frontend) como justificativa para tarefas maiores e multi-camada
 - [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]]
 - [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — formulação "copiloto, não download do cérebro"; falso positivo quando o usuário não sabe o que pedir
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — devs júnior com acesso total a IA ainda cometem erros de júnior; amplificação de velocidade sem substituir julgamento

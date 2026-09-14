@@ -3,8 +3,8 @@ type: concept
 title: "Autonomia Técnica"
 aliases: ["technical autonomy", "autonomia de código", "independência técnica"]
 date_created: 2026-05-31
-date_updated: 2026-07-24
-source_count: 2
+date_updated: 2026-09-14
+source_count: 3
 tags: [autonomia-tecnica, carreira-dev, aprendizado, iniciante, dependencia-ia]
 skill: tech-mentor-leadership
 status: stable
@@ -70,8 +70,13 @@ Autonomia técnica e mentalidade autodidata se reforçam: o autodidata investiga
 
 Na [[escala-maturidade-ia-dev]], o nível 4 (Diretor) exige **mais** conhecimento de domínio do que o nível 3 — mesmo delegando mais tarefas para a IA. Para escrever uma spec de testes completa (CPF válido, inválido, casos de borda, internacionais), você precisa conhecer o domínio em profundidade. Autonomia técnica não diminui com o uso de IA nos níveis superiores — ela é pré-requisito para chegar lá.
 
+## Autonomia Como Pré-Requisito de Portabilidade de Carreira
+
+[[wiki/sources/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico]] acrescenta um ângulo novo: autonomia técnica não é só o que permite trabalhar sem IA disponível — é o que torna o valor do profissional **portável entre empregadores**. A fonte argumenta que, sem autonomia construída previamente, o output do dev passa a ser proporcional às ferramentas de IA que a empresa atual fornece, não ao seu próprio conhecimento — o que reduz a garantia de repetir o mesmo desempenho numa empresa diferente. Ver [[wiki/concepts/portabilidade-de-valor-profissional-na-era-da-ia]].
+
 ## Key Sources
 
+- [[wiki/sources/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico]] — autonomia técnica como pré-requisito de portabilidade de valor entre empregadores, não só de trabalhar sem IA
 - [[wiki/sources/ia-e-aprendizado-programacao-iniciantes]]
 - [[wiki/sources/escala-niveis-uso-ia-engenheiros]] — paradoxo do nível 4: mais delegação exige mais conhecimento de domínio
 - [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — repertório de arquitetura (construído estudando microsserviços) como o que permite curar entre 10 sugestões de arquitetura que uma IA pode gerar; sem fundamentos, o dev não sabe distinguir uma boa sugestão de "salada de letrinhas bonitas"

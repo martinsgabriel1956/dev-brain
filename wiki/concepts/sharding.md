@@ -3,8 +3,8 @@ type: concept
 title: "Sharding"
 aliases: ["database sharding", "particionamento horizontal", "shard", "shard key"]
 date_created: 2026-06-26
-date_updated: 2026-09-01
-source_count: 4
+date_updated: 2026-09-14
+source_count: 6
 tags: [system-design, banco-de-dados, sharding, escalabilidade, distribuido]
 skill: tech-mentor-system-design
 status: stub
@@ -70,7 +70,7 @@ Não faz sentido tentar fazer sharding de um monolito inteiro com centenas de ta
 1. [[escalabilidade-vertical]] — mais RAM/CPU no banco (mais simples)
 2. [[replicacao-de-banco]] — read replicas para aliviar leitura
 3. [[cache]] — reduzir hits ao banco antes de distribuí-lo
-4. [[wiki/concepts/particionamento-de-tabela]] — particionamento lógico (RANGE/LIST/HASH) dentro do mesmo banco, sem o custo de múltiplos nós físicos do sharding
+4. [[wiki/concepts/particionamento-de-tabela]] — particionamento lógico (RANGE/LIST/HASH) dentro do mesmo banco, sem o custo de múltiplos nós físicos do sharding. `PARTITION BY HASH` do Postgres é o exemplo mais fácil de confundir com sharding real, por calcular um hash e rotear automaticamente — mas continua sendo uma única instância, sem distribuição física entre servidores; ver [[wiki/sources/particionamento-por-hash-postgresql-sql-30-dias]]
 
 > **Regra:** sharding é complexo. Esgote as alternativas primeiro.
 
@@ -90,3 +90,5 @@ Não faz sentido tentar fazer sharding de um monolito inteiro com centenas de ta
 - [[wiki/sources/large-scale-vs-complex-architecture]] — sharding citado como exemplo de técnica que escala TPS/resiliência sem necessariamente tornar a arquitetura "complexa" em alto nível; movimentação de usuário entre shards como caso concreto que exige control plane
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — distinção entre boa shard key e boa distribuição (range-based por faixa fixa de `user_id` vs. por `created_at`), problema da celebridade, shard global para tabelas sem FK à shard key, e sharding como passo posterior à decomposição por DDD/microsserviços
 - [[wiki/sources/particionamento-por-list-postgresql-sql-30-dias]] — particionamento por LIST citado como alternativa mais leve ao sharding físico (mesmo banco, roteamento por partição)
+- [[wiki/sources/particionamento-por-hash-postgresql-sql-30-dias]] — particionamento por HASH usado como analogia pedagógica de sharding pelo autor, que se corrige explicitamente: HASH roteia por cálculo automático mas continua numa única instância Postgres, sem distribuição física entre nós
+- [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]] — sharding manual do Postgres (não automático) vs. sharding nativo de MongoDB/DynamoDB, apresentado como critério de escolha ligado a leitura/escrita, não a formato do dado; ver [[wiki/concepts/criterios-de-escolha-de-banco-de-dados]]

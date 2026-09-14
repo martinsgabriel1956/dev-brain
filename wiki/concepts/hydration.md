@@ -3,8 +3,8 @@ type: concept
 title: "Hydration"
 aliases: ["hidratação", "hydration mismatch", "arquitetura de ilhas", "islands architecture"]
 date_created: 2026-08-03
-date_updated: 2026-08-03
-source_count: 1
+date_updated: 2026-09-14
+source_count: 2
 tags: [frontend, ssr, hydration, islands-architecture, performance]
 skill: tech-mentor-frontend
 status: stable
@@ -32,7 +32,9 @@ Se só uma fração da página é interativa, hidratar tudo desperdiça JavaScri
 
 - [[wiki/concepts/dom]] — o que a hydration está conectando
 - [[wiki/concepts/client-side-routing]] — outro mecanismo que troca conteúdo sem full page reload
+- [[wiki/concepts/renderizacao-ssr-vs-csr]] — o passo que precede a hydration: como e onde o HTML foi montado, e por que SSR complexo é CPU-bound no servidor antes mesmo de chegar à etapa de hydration no cliente
 
 ## Key Sources
 
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
+- [[wiki/sources/node-single-thread-ssr-bloqueio-event-loop]] — contexto de onde a hydration se encaixa: depois que o servidor já pagou o custo de CPU renderizando o HTML (potencialmente travando o event loop sob carga), o cliente ainda paga o custo de hidratar a página

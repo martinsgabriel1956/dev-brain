@@ -3,8 +3,8 @@ type: concept
 title: "Ownership Proativo"
 aliases: ["puxar responsabilidade", "proactive ownership", "projeto de alto impacto"]
 date_created: 2026-04-22
-date_updated: 2026-08-11
-source_count: 2
+date_updated: 2026-09-14
+source_count: 3
 tags: [carreira, senioridade, ownership, liderança, destaque]
 skill: tech-mentor-leadership
 status: stable
@@ -52,3 +52,4 @@ Puxar responsabilidade e não entregar é pior do que não puxar. Calibre a ambi
 
 - [[wiki/sources/desenvolvedor-acima-da-media-10-itens]]
 - [[wiki/sources/potencial-programador-atitude-mindset]] — ownership como 1º dos 3 traços de potencial de Gregor Ojstersek; "se você está bloqueado, é sua responsabilidade se desbloquear" (ir atrás da aprovação do PR em vez de virar "passageiro")
+- [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] — se importar genuinamente com a qualidade do próprio trabalho, não pelo chefe ou pela empresa, como o que torna ownership sustentável no tempo

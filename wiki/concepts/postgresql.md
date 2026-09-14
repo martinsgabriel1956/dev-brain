@@ -3,8 +3,8 @@ type: concept
 title: "PostgreSQL"
 aliases: ["postgres", "pg"]
 date_created: 2026-04-22
-date_updated: 2026-09-02
-source_count: 11
+date_updated: 2026-09-14
+source_count: 13
 tags: [banco-de-dados, postgresql, relacional, jsonb, vetorial]
 skill: tech-mentor-system-design
 status: stable
@@ -65,13 +65,25 @@ O comportamento descrito acima (processo por conexão, PgBouncer obrigatório) �
 
 Reforçando o padrão já descrito acima (extensão nativa cobrindo o que levaria a adotar um banco especializado à parte): [[wiki/sources/rag-introducao-pipeline-completo]] cita o Postgres com a extensão `pgvector` como opção viável para armazenar embeddings de um pipeline de [[wiki/concepts/rag-arquitetura-avancada|RAG]] — "aguenta bastante carga" e roda em produção mesmo havendo bancos vetoriais dedicados (Pinecone, Weaviate). Cada registro guarda o vetor (embedding), o texto cru do [[wiki/concepts/chunking|chunk]] e metadados de filtro, na mesma linha do padrão JSONB já documentado aqui: menos infraestrutura poliglota.
 
-## Particionamento Nativo: RANGE vs. LIST
+## Particionamento Nativo: RANGE, LIST e HASH
 
-Feature nativa do motor (`PARTITION BY RANGE|LIST|HASH`), diferente de [[wiki/concepts/sharding]] — continua sendo o mesmo banco, com o motor roteando cada linha para a tabela filha certa e permitindo *partition pruning* em queries filtradas pela coluna de particionamento. `LIST` cabe quando a coluna tem um conjunto conhecido e finito de valores (UF, categoria, tenant); sem uma partição `DEFAULT` como catch-all, um INSERT para um valor não mapeado falha. Ver [[wiki/concepts/particionamento-de-tabela]] para RANGE vs. LIST em detalhe.
+Feature nativa do motor (`PARTITION BY RANGE|LIST|HASH`), diferente de [[wiki/concepts/sharding]] — continua sendo o mesmo banco, com o motor roteando cada linha para a tabela filha certa e permitindo *partition pruning* em queries filtradas pela coluna de particionamento. `LIST` cabe quando a coluna tem um conjunto conhecido e finito de valores (UF, categoria, tenant); sem uma partição `DEFAULT` como catch-all, um INSERT para um valor não mapeado falha. `HASH` (`FOR VALUES WITH (MODULUS n, REMAINDER i)`) cabe quando não há separação natural por período nem por lista, mas o objetivo é só distribuir os registros em N partições de tamanho fixo — o próprio Postgres calcula o hash da coluna e roteia automaticamente, mas isso continua sendo **uma única instância**: não distribui fisicamente entre servidores como o [[wiki/concepts/sharding|sharding]] real. Ver [[wiki/concepts/particionamento-de-tabela]] para RANGE vs. LIST vs. HASH em detalhe.
 
 ## Postgres Serverless com Branching: Neon
 
 [[wiki/entities/neon-database|Neon]] é um Postgres serverless com **[[wiki/concepts/database-branching|database branching]]** nativo via copy-on-write: cada branch de código pode ter seu próprio banco de teste isolado, criado a partir de uma branch-mãe sem copiar os dados inteiros. Resolve o problema de colisão de schema quando migrations concorrentes de branches diferentes atropelam um único banco de teste compartilhado. Ver [[wiki/sources/database-branching-testes-neon-fernanda-kipper]].
+
+## Padrão de Fábrica: Otimizado para Leitura, Não Escrita
+
+Numa instalação tradicional, o Postgres é estruturado para performance de **leitura**: os índices (B+ tree) são construídos esperando ficar residentes no [[wiki/concepts/buffer-pool|shared buffer]], entregando consultas em milissegundos de um dígito. Na escrita, cada `INSERT`/`UPDATE` exige recalcular/rebalancear o índice — o custo inverso. Duas alavancas para aumentar throughput de escrita à custa de garantias: `CREATE TABLE ... UNLOGGED` (pula o [[wiki/concepts/write-ahead-log|WAL]]) e desativar `synchronous_commit` (não espera propagar o WAL pro disco antes de responder — ganho estimado de ~3-5% pela fonte, sem benchmark linkado). Ver [[wiki/concepts/criterios-de-escolha-de-banco-de-dados]] e [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]].
+
+## Valores Grandes: TOAST
+
+Coluna cujo valor não cabe numa página (8 KB) é movida para uma tabela auxiliar (TOAST), deixando só uma referência na linha principal — impacta performance de leitura, mas não gera cobrança direta por operação (diferente do modelo WCU/RCU do [[wiki/concepts/dynamodb|DynamoDB]]). Ver [[wiki/concepts/toast-postgresql]].
+
+## Escrita Intensa Suja a Base: MVCC e Vacuum
+
+Volume de escrita muito alto numa base MVCC como o Postgres acumula tuplas versionadas (dead tuples) — `VACUUM`/autovacuum precisa rodar com frequência para limpar, senão a tabela sofre table bloat e a performance degrada. É um dos motivos pelos quais, em cenários de escrita muito intensa, [[wiki/concepts/mongodb|MongoDB]] (arquitetura já nascida com sharding/distribuição) tende a fazer mais sentido que forçar o Postgres a esse padrão de uso. Ver [[wiki/concepts/mvcc]].
 
 ## Key Sources
 
@@ -85,4 +97,6 @@ Feature nativa do motor (`PARTITION BY RANGE|LIST|HASH`), diferente de [[wiki/co
 - [[wiki/sources/infraestrutura-como-codigo-cdk-aws]] — citado como o banco de dados de exemplo numa stack ilustrativa de [[wiki/concepts/infraestrutura-como-codigo|IaC]] (dois Lambdas atrás de um API Gateway, ambos conectados ao mesmo Postgres, sem acesso direto à internet); menção arquitetural breve, sem claim técnico novo sobre o motor
 - [[wiki/sources/rag-introducao-pipeline-completo]] — `pgvector` como vector store viável para RAG em produção, com exemplo de estrutura de registro (embedding + texto cru + metadados)
 - [[wiki/sources/particionamento-por-list-postgresql-sql-30-dias]] — `PARTITION BY LIST`, partição DEFAULT como catch-all, chave primária composta em tabela particionada
+- [[wiki/sources/particionamento-por-hash-postgresql-sql-30-dias]] — `PARTITION BY HASH` via `MODULUS`/`REMAINDER`, distinção explícita entre particionamento HASH (mesma instância) e sharding físico (múltiplos nós), introspecção de partições via catálogo
 - [[wiki/sources/database-branching-testes-neon-fernanda-kipper]] — Neon como Postgres serverless com branching copy-on-write para bancos de teste isolados por branch
+- [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]] — Postgres como padrão otimizado para leitura (índice em shared buffer), alavancas de throughput de escrita (`UNLOGGED`, `synchronous_commit`), TOAST para valores grandes, e vacuum como custo de escrita intensa em MVCC

@@ -3,8 +3,8 @@ type: concept
 title: "Apache Kafka"
 aliases: ["kafka", "topics e partitions", "consumer groups", "kafka producer", "kafka consumer"]
 date_created: 2026-08-19
-date_updated: 2026-09-01
-source_count: 4
+date_updated: 2026-09-14
+source_count: 5
 tags: [kafka, topics, partitions, consumer-groups, mensageria, event-sourcing, murmur-hash, offset-commit, rebalance]
 skill: tech-mentor-backend
 status: draft
@@ -94,9 +94,14 @@ Como o Kafka retém eventos além do momento em que foram consumidos, é possív
 
 A taxonomia de eventos de partida é fechada: `MATCH_STARTED`, `GOAL`, `YELLOW_CARD`, `RED_CARD`, `VAR_REVIEW_STARTED`, `VAR_DECISION`, `CORNER_KICK`, `PENALTY`, `FOUL`, `SUBSTITUTION`, `MATCH_ENDED`. O consumer que persiste a timeline completa grava esse evento em duas tabelas relacionais — `matches` (dados da partida) e `match_events` (`event_id`, `external_event_id`, `match_id`, `minute`, `type`, `payload` como JSONB, `received_at`, `source`) — o event log de [[wiki/concepts/event-sourcing]] materializado como schema SQL concreto.
 
+## Publicar no Kafka Após um INSERT no Banco Não É Garantido
+
+[[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] usa o Kafka como o broker do exemplo canônico do [[wiki/concepts/dual-write-problem]]: se a aplicação insere um usuário no banco e em seguida publica no Kafka, uma queda do processo, uma indisponibilidade do Kafka, ou até uma falha de rede entre o `PUBLISH` e o `COMMIT` da transação local do banco pode deixar a mensagem publicada sem o dado persistido (ou vice-versa). A solução recomendada não é retry ingênuo — é o [[wiki/concepts/outbox-pattern]], eventualmente com Debezium + Kafka Connect lendo o WAL do banco para publicar automaticamente a partir da tabela outbox.
+
 ## Key Sources
 
 - [[wiki/sources/kafka]] — partition key e ordenação por entidade, paralelismo limitado ao número de partições, Kafka vs. RabbitMQ, configuração segura de producer (`acks=all`, `enable.idempotence=true`)
+- [[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] — Kafka como o broker do exemplo de dual write problem (cadastro + e-mail de boas-vindas); Kafka Connect citado como mecanismo de integração nativa do Debezium
 - [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — mecanismo do hash Murmur + módulo para roteamento de partição explicado passo a passo, offset commit como razão de consumers ociosos, dois consumer groups independentes consumindo o mesmo tópico para propósitos diferentes (persistência completa vs. cache de estado), event replay motivado por bug de cálculo financeiro
 - [[wiki/sources/world-cup-system-design]] — slide deck da mesma aula: schema JSON completo do evento bruto vs. normalizado, taxonomia fechada de 11 tipos de evento, SQL de persistência em `matches`/`match_events`
 - [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — Kafka tratado como "black box" de streaming na arquitetura de referência de Event Sourcing (microsserviços coreografados publicam/consomem mudanças de estado); autor nota explicitamente que não precisa ser Kafka — qualquer ferramenta de streaming de grandes volumes de dados não transacionais serve

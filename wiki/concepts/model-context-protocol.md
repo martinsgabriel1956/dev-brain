@@ -3,8 +3,8 @@ type: concept
 title: "Model Context Protocol (MCP)"
 aliases: ["MCP", "model context protocol", "protocol mcp"]
 date_created: 2026-06-02
-date_updated: 2026-08-14
-source_count: 6
+date_updated: 2026-09-14
+source_count: 7
 tags: [mcp, model-context-protocol, tools, harness, json-rpc, anthropic]
 skill: tech-mentor-ai
 status: stable
@@ -49,6 +49,10 @@ Uso local comum de MCP roda sobre **STDIO**. Escalar MCP dentro de uma empresa �
 
 Ver [[wiki/concepts/cli-vs-mcp]].
 
+## Mudança de Spec (2026): Core Passa a Ser Stateless
+
+Segundo [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]], a Anthropic mudou a especificação core do MCP de stateful/bidirecional para **stateless**: o handshake que mantinha sessão entre client e server acaba, um método `server discover` (obrigatório no servidor) substitui parte desse papel, e estado entre chamadas passa a ser um handle opaco assinado pelo servidor e reenviado como argumento comum — não mais mantido pela sessão de transporte. Ver detalhamento em [[wiki/concepts/mcp-stateless-server-discover]]. Fonte de segunda mão (vídeo, não spec oficial) — tratar como não totalmente confirmado até cruzar com `modelcontextprotocol.io`.
+
 ## Tendência de Mercado
 
 A tendência é que empresas como Salesforce passem a oferecer MCPs como interface principal para seus produtos, no lugar de (ou complementando) APIs REST tradicionais.
@@ -65,3 +69,4 @@ MCPs de domínio (Tools que expõem um backend inteiro, não uma função isolad
 - [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — Grafana MCP como exemplo de MCP de domínio para observabilidade
 - [[wiki/sources/monitoramento-aplicacoes-ia-grafana-cloud-opentelemetry]] — configuração de "skills" no assistente do Grafana Cloud como exemplo prático da distinção MCP vs Skills fora do ecossistema Claude
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — migração de STDIO para streamable HTTP como requisito de escala e SSE como transporte depreciado
+- [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] — mudança de spec (2026) removendo handshake/sessão stateful do core do protocolo; método `server discover`; cross-call state via handle assinado pelo servidor

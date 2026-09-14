@@ -3,8 +3,8 @@ type: concept
 title: "Mudança Cultural Como Produto de Serviços de IA"
 aliases: ["IA como mudança organizacional", "resistência interna a projetos de IA", "adulto na sala em projetos de IA", "gestão de stakeholders em consultoria de IA"]
 date_created: 2026-09-04
-date_updated: 2026-09-04
-source_count: 1
+date_updated: 2026-09-14
+source_count: 2
 tags: [servicos-de-ia, consultoria, mudanca-cultural, stakeholders, gestao-de-pessoas, adocao]
 skill: tech-mentor-leadership
 status: draft
@@ -47,6 +47,11 @@ Resistência política a projetos existe em qualquer mudança organizacional, ma
 - [[wiki/concepts/hype-de-ia]] — mesma carga emocional em torno do tema que alimenta tanto expectativa inflada quanto resistência defensiva
 - [[wiki/concepts/recorrencia-em-servicos-de-ia]] — adoção real (não só entrega técnica) é pré-condição para o cliente voltar a contratar
 
+## Repensar Processo Ágil Também é Mudança Cultural — e Pode Ser um Benefício, Não Só uma Ameaça
+
+[[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] traz uma variante distinta desta página: a resistência cultural aqui não é sobre "a IA vai me substituir", mas sobre repensar a própria estrutura de sprint (tamanho de tarefa, duração do ciclo). O autor levanta o questionamento inverso ao risco padrão desta página — se entregas que levavam um mês agora levam uma semana, por que não usar esse ganho para dar folga ao time, ter sprints mais leves focadas em débito técnico, ou premiar quem entrega mais rápido, em vez de simplesmente aumentar a cobrança? A fonte é explícita em tratar isso como pergunta em aberto e questão cultural de cada empresa, não como prática já validada — reforçando o padrão desta página de que a adoção de IA nunca é puramente técnica, sempre negocia algo organizacional/humano junto.
+
 ## Key Sources
 
+- [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] — repensar sprints/tarefas como mudança cultural; questionamento sobre folga e sprint leve para débito técnico como contrapartida ao ganho de velocidade
 - [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]]

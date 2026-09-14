@@ -1,7 +1,8 @@
 ---
 type: index
-date_updated: 2026-09-08
+date_updated: 2026-09-14
 ---
+
 
 
 
@@ -23,6 +24,10 @@ date_updated: 2026-09-08
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] | Autoria inferida (provável [[wiki/entities/renato-augusto\|Renato Augusto]]): desafio de entrevista "cadastro de usuário + e-mail de boas-vindas" expõe o [[wiki/concepts/dual-write-problem\|Dual Write Problem]] — por que uma transação de banco local não cobre a chamada externa ao broker; solução via [[wiki/concepts/outbox-pattern\|Transactional Outbox Pattern]] com Outbox Consumer (polling ou CDC/Debezium + Kafka Connect) |
+| [[wiki/sources/vpn-conceito-tunelamento-acesso-remoto]] | Transcrição introdutória sobre [[wiki/concepts/vpn\|VPN]]: "privada" (acesso restrito) + "virtual" (usa infraestrutura de rede pública via [[wiki/concepts/tunelamento\|tunelamento]]); caso de uso matriz/filial e bypass de [[wiki/concepts/restricao-geografica-geo-blocking\|restrição geográfica]] |
+| [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]] | Framework de 8 critérios (além do tipo do dado) para escolher banco em entrevista de system design: [[wiki/concepts/criterios-de-escolha-de-banco-de-dados\|data schema, forma de acesso, leitura/escrita, transacional/storage, consistência, latência, escalabilidade, custo]]; [[wiki/concepts/postgresql\|Postgres]] (leitura, `UNLOGGED`/`synchronous_commit`, [[wiki/concepts/toast-postgresql\|TOAST]], [[wiki/concepts/mvcc\|MVCC]]/vacuum) vs. [[wiki/concepts/mongodb\|MongoDB]] (escrita) vs. [[wiki/concepts/dynamodb\|DynamoDB]] (WCU/RCU por payload, storage barato/transação cara) |
+| [[wiki/sources/ai-engineer-forward-deployed-engineer-mercado-vagas-2026]] | Quatro cargos de IA definidos por demanda real, não por hype: [[wiki/concepts/forward-deployed-engineer\|Forward Deployed Engineer]] (nichado, <1.000 vagas de 65.000 no True Up, pouca progressão), AI Engineer (inflado no Indeed — maioria é dev comum rotulado, não engenharia de agentes), [[wiki/concepts/product-engineer\|Product Engineer]] (dev ponta a ponta) e Machine Learning Engineer; case real de [[wiki/entities/thalis-pereira\|Thalis Pereira]] sobre o que pesa em entrevista |
 | [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] | Aula introdutória (autor não confirmado, provável [[wiki/entities/rodrigo-branas\|Rodrigo Branas]]) diagramando [[wiki/concepts/clean-architecture\|Clean Architecture]] numa tela de login em Vue.js: componente com ~10 responsabilidades separado em Domínio/Data/Infraestrutura/Presentation/Validation/Main; `LoginFactory` como [[wiki/concepts/composition-root\|composition root]]; `ValidationComposite` ([[wiki/concepts/composite-pattern\|Composite]]) agrupando validadores; exemplos de [[wiki/concepts/single-responsibility-principle\|SRP]], [[wiki/concepts/dependency-inversion-principle\|DIP]] (interface "boundary" do lado do consumidor) e [[wiki/concepts/interface-segregation-principle\|ISP]] (`HttpClient` segregado em `HttpPostClient`) |
 | [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] | [[wiki/entities/otavio-santana\|Otávio Santana]] e [[wiki/entities/mauricio-linhares\|Maurício Linhares]] discutem *A Philosophy of Software Design* com [[wiki/entities/john-ousterhout\|Ousterhout]]: [[wiki/concepts/sintomas-de-complexidade-ousterhout\|change amplification/cognitive load/unknown unknowns]], `java.io` como exemplo de [[wiki/concepts/modulo-profundo\|módulo raso]] e de [[wiki/concepts/decorator-pattern\|Decorator]], TDD como design de código vs. arquitetura, [[wiki/concepts/repository-pattern\|Repository]] com nomes CRUD genéricos, e [[wiki/concepts/define-errors-out-of-existence\|define errors out of existence]] |
 | [[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] | Laboratório autorizado (autor não identificado): painel admin de um site de pizzaria "vibe coded" é encontrado por fuzzing de diretórios ([[wiki/concepts/attack-surface\|dirsearch]]) e invadido por [[wiki/concepts/ataque-online-vs-offline-senha\|brute force de senha]] com três ferramentas equivalentes (Burp Intruder, ffuf, Hydra), habilitado por user enumeration e ausência de [[wiki/concepts/rate-limiting\|rate limit]], lockout, CAPTCHA e [[wiki/concepts/mfa-multifator-autenticacao\|MFA]] |
@@ -247,6 +252,7 @@ date_updated: 2026-09-08
 | [[wiki/sources/formacao-ia-devs-aula-06-qa]] | Q&A: revisão de código com IA, arquitetura importa, legado, juniores, Go como linguagem AI-friendly |
 | [[wiki/sources/formacao-ia-devs-aula-01-mcp-parte1]] | MCP arquitetura: host/client/server, JSON-RPC, primitivas tools/resources/prompts — antes não havia padronização |
 | [[wiki/sources/formacao-ia-devs-aula-02-mcp-parte2]] | MCPs como sensores do harness; CLI economiza contexto; file system é o padrão de mercado para contexto IA |
+| [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] | Anthropic muda spec core do MCP para stateless: fim do handshake obrigatório, método `server discover`, cross-call state via handle assinado pelo servidor — analogia da comanda de restaurante |
 | [[wiki/sources/formacao-ia-devs-aula-03-plan-mode]] | Plan Mode: salvar plano em arquivo, guideline de granularidade (1 arquivo → direto, 2-3 → Plan Mode, multi-domínio → SDD) |
 | [[wiki/sources/formacao-ia-devs-aula-04-agentes-planejamento]] | SDD completo: Agente PRD → Tech Spec → Tarefas isoladas; PRD é para a IA, não para a empresa |
 | [[wiki/sources/formacao-ia-devs-aula-05-qa]] | Q&A: Resume retoma onde parou, padrões de arquitetura ficam em rules, SDD funciona para refactoring e migrações |
@@ -384,6 +390,7 @@ date_updated: 2026-09-08
 | [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] | Reação à entrevista de Alex Karp (CEO da Palantir) à CNBC sobre deal com a Nvidia que virou crítica ao modelo de cobrança por token da OpenAI/Anthropic — três argumentos (wealth tax, roubo de propriedade intelectual, preço deveria ser sobre valor); harness como multiplicador oculto de custo; quatro dicas de FinOps para IA |
 | [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] | Marco Bruno (Cohab Code): 3 dicas para conseguir a primeira vaga júnior — aplicar amplamente e investir em comunidade em vez de se autofiltrar, tratar toda entrevista como ensaio ("nunca aposte o que não pode perder"), e preparo mental para receber feedback sem se defender + persistência (perguntar quando tentar de novo) + transparência sobre prazos; observa vagas júnior exigindo pleno no mercado brasileiro |
 | [[wiki/sources/large-scale-vs-complex-architecture]] | Large scale (capacidade/escala, dividir-para-conquistar, control plane) e complexidade (interdependência, legado poliglota tipo mainframe→AS/400→Linux→Windows) são eixos independentes; over-engineering vs. over-thinking como anti-patterns espelho; autor admite não ter métrica objetiva para "complexidade" |
+| [[wiki/sources/node-single-thread-ssr-bloqueio-event-loop]] | Júnior Alves: uma única requisição de SSR pesado trava o event loop single thread do Node.js inteiro (tela em branco pra todo mundo); distinção I/O-bound vs. CPU-bound, por que `await`/`setTimeout` não resolvem, e as soluções reais — chunking, worker threads, filas, cache de renderização (ISR) |
 | [[wiki/sources/10-conceitos-internos-frameworks-frontend]] | Short em português listando 10 mecanismos internos que React/Vue/Angular resolvem por baixo dos panos, em ordem decrescente: estado (prop drilling, derived state) → batching → tree shaking/code splitting → ciclo de vida → compilação → roteamento client-side (History API) → hydration/ilhas → reatividade (Virtual DOM vs. signals) → reconciliação (keys) → DOM; fecha com a tese de que frameworks existem para minimizar toques no DOM e aumentar produtividade |
 | [[wiki/sources/ciclo-de-mudanca-de-arquitetura]] | Aula curta: ciclo operacional de uma mudança de arquitetura — avaliar 100% o AS-IS (tecnologia + regras de negócio) → desenhar o TO-BE → validar com POC testada na escala real esperada (não numa fração dela) → migrar em coexistência com o legado via padrões de transição → migração concluída vira o novo AS-IS, reiniciando o ciclo; tese central é que assertividade importa porque descobrir tarde que o caminho está errado é retrabalho caro |
 | [[wiki/sources/escalabilidade-horizontal-vertical-custo-grafico]] | Aula curta e introdutória: diferença horizontal/vertical via analogias visuais (horizonte vs. imagem esticada) e exemplo gráfico de custo — horizontal permite adicionar exatamente a capacidade necessária (um servidor a mais), vertical em cloud providers costuma forçar dobrar o tier da instância, gerando capacidade ociosa; mais réplicas menores aumentam resiliência |
@@ -422,7 +429,9 @@ date_updated: 2026-09-08
 | [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] | Vídeo de série de System Design (autor não identificado): CQRS enquadrado em dois motivadores independentes (volume e modelo/assinatura); forma mais simples é mesmo código-fonte com deployments escalados de forma diferente, roteados pelo API Gateway; seis técnicas de sincronização write→read organizadas em consistência forte (mesma base+materialized view, transação cruzando write/query service, API Composition) vs. consistência eventual (read replicas, eventos com o bug da escrita dupla, polling) |
 | [[wiki/sources/prompt-context-harness-engineering-tres-pilares]] | Transcrição didática (autor não identificado): evolução prompt engineering → context engineering → harness engineering amarrada ao crescimento histórico da janela de contexto (4k tokens em 2022 → 1M hoje); mantra "se você não é o modelo, você é o harness" restaurado em português sem atribuição; gráfico de complexidade-versus-tempo de Robert Martin/Clean Architecture citado como justificativa de investir em harness |
 | [[wiki/sources/jose-jws-jwe-jwk-jwa-algorithm-confusion-paseto]] | Bernardo Lobato, "Anatomia de um Token 2": ecossistema JOSE (JWS assinatura/JWE criptografia/JWK chaves em JSON/JWA catálogo de algoritmos) por trás do JWT; JWA como fonte da cipher agility, causa raiz do ataque de algorithm confusion (`alg: none`, caso Tim McLean 2015, variante RS256→HS256); PASETO como alternativa de cipher rigidity com versões fixas (Ed25519/AES-256-GCM) |
+| [[wiki/sources/anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato]] | Bernardo Lobato, "Anatomia de um Token 1" (predecessor do vídeo acima): distinção arquitetural [[wiki/concepts/token-opaco\|token opaco]] vs. token autocontido (JWT), geração segura via CSPRNG (256 bits) vs. UUID v4 (122 bits), token vs. ID, [[wiki/concepts/api-key\|API key]] e session token como usos de token opaco, introdução superficial ao JOSE, e [[wiki/concepts/cwt-cbor-web-token\|CWT]] para IoT |
 | [[wiki/sources/particionamento-por-list-postgresql-sql-30-dias]] | Autor não identificado, playlist "SQL em 30 Dias" (dia 13): `PARTITION BY LIST` no PostgreSQL para conjuntos conhecidos e finitos de valores (ex.: UF/estado), em contraste com `PARTITION BY RANGE` do "dia 12" (não ingerido); demo de [[wiki/concepts/particionamento-de-tabela\|partições nomeadas]] + partição `DEFAULT` como catch-all, e chave primária composta incluindo a coluna de particionamento |
+| [[wiki/sources/particionamento-por-hash-postgresql-sql-30-dias]] | Autor não identificado, mesma playlist "SQL em 30 Dias": `PARTITION BY HASH` (`MODULUS`/`REMAINDER`) para distribuir registros sem separação natural por período/lista; autor se corrige explicitamente ao usar "sharding" como analogia — HASH roteia automaticamente mas continua numa única instância Postgres, ver [[wiki/concepts/sharding]]; introspecção de partições via catálogo (`pg_partition_tree`/`pg_get_expr`) |
 | [[wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub]] | [[wiki/entities/lord-lorehub\|Lord (LoreHub)]]: valor de um projeto pessoal está no processo/aprendizado, não na ambição da ideia; método de checklist `.md` de v1 via [[wiki/concepts/user-stories\|user stories]], complementado por **engineering stories** ("como dev, quero...") para requisitos invisíveis ao usuário; responde pergunta de espectador sobre medo de aplicar para estágio — variante de [[wiki/concepts/sindrome-do-impostor\|síndrome do impostor]] anterior à reprovação |
 | [[wiki/sources/database-branching-testes-neon-fernanda-kipper]] | [[wiki/entities/fernanda-kipper\|Fernanda Kipper]]: banco de teste único compartilhado por todas as branches causa colisão de esquema quando migrations concorrentes se atropelam (testes instáveis, dados contaminados, times bloqueados); solução via [[wiki/concepts/database-branching\|database branching]] — banco isolado por branch usando **copy-on-write**, demonstrado com [[wiki/entities/neon-database\|Neon]] + integração automática com a [[wiki/entities/vercel\|Vercel]] no portal `fernandakipper.com` |
 | [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]] | [[wiki/entities/lucas-montano\|Lucas Montano]] (provável): [[wiki/concepts/lean-canvas\|Lean Canvas]] de Ash Maurya é inútil como passo 1 obrigatório em 2026 — só problema e [[wiki/concepts/icp-ideal-customer-profile\|ICP]] continuam essenciais; gargalo de startup mudou de "programar" (meses em 2012) para "validar" (dias com IA, estudos GitHub/YC); dev é ICP ruim para ferramentas de dev; "já existir" é sinal de mercado, não motivo para desistir (case Persoa/Cluely/Granola) |
@@ -451,6 +460,13 @@ date_updated: 2026-09-08
 | [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] | Vaga fake real de desenvolvedor júnior (Node/TypeScript/Java/React/AWS/Terraform) usada para avaliar três currículos reais anonimizados: projeto pessoal com link supera formatação de currículo, e habilidade listada (Java) sem nenhuma evidência no corpo do texto vira pergunta certa em entrevista |
 | [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] | "Agent Waves" (rebatismo do Padrão Orquestrador já conhecido) + roteamento por papel — modelo forte/caro (Kimi K3) só no coordenador que planeja, modelo barato (Kimi K2.7 Code) nos workers de implementação; simulação projeta ~34% de economia, teste real na API da Kimi via OpenCode só confirma ~5%, atribuído a tarefa pequena e implementação não otimizada do pipeline; alerta central: usar o mesmo modelo caro em todos os subagentes só aumenta custo, porque cada subagente reinjeta contexto |
 | [[wiki/sources/guia-pratico-subagents-claude-code-configuracao-fork-invocacao]] | Guia prático de subagents no Claude Code: distingue fork (`/fork`, clona toda a conversa) de subagent (não herda conversa); três formas de invocação (linguagem natural, `@nome-do-agent`, `claude --agent`); campos de configuração `permission mode`, `isolation`, `max turns`, `skills`, `memory` (user/projeto/local), `background`; opinião do autor: o ganho do subagent está no isolamento de contexto, não no paralelismo massivo |
+| [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] | IA não substitui o dev porque orquestrar código em software real de empresa continua sendo trabalho humano; provocação para repensar sprints (tarefas maiores, ciclos menores); governança de gasto e segurança contra ataques de anomalia (extração de dados via agente com poucas interações, distinto do ataque de destilação em massa atribuído à Alibaba contra a OpenAI) são os temas que de fato ocupam empresas grandes, mas raramente viram conteúdo mainstream |
+| [[wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos]] | Quem cursa graduação de 4-5 anos deveria se formar preparado para nível pleno, não júnior (exceto em empresas de prestígio que pagam júnior como pleno); *Entendendo Algoritmos* como porta de entrada acessível para o CLRS/Cormen; bootcamp de frontend como via de entrada saturada mesmo antes da IA; dado anedótico (fonte não confirmada) de queda de vagas júnior nos EUA revertendo tendência de crescimento |
+| [[wiki/sources/ia-paradoxo-de-jevons-camada-de-abstracao-futuro-do-programador]] | Geração de código por IA como mais um degrau na escada histórica de abstração (compilador provocou a mesma resistência de programadores assembly que a IA provoca hoje); ressalva de que a analogia não é perfeita porque LLMs são estocásticas; Paradoxo de Jevons aplicado a emprego via radiologia (Hinton), caixa eletrônico (Bessen) e mecanização agrícola como contraexemplo; Kent Beck: "90% das habilidades desvalorizadas, 10% mil vezes mais valiosas" |
+| [[wiki/sources/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico]] | Lucas Badico relata trabalho ~95% executado por IA (ele só testa/valida), ansiedade crescente proporcional ao uso, e a sensação de ter virado "diretor de IA"/"babá de IA"; tese de que o valor do profissional migrou do conhecimento pessoal para a ferramenta da empresa (paralelo com industrialização); conselho de carreira via metáfora de diretor de cinema (comece na "produção", não na direção); anuncia intenção de cancelar o Claude e voltar a codar manualmente em lives |
+| [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] | Autor não identificado (~40 anos em empresas com mainframe) reúne quatro pesquisas de mercado sobre COBOL/mainframe: 91% dos empregadores contratando para posições novas (79% mid-level, 51% entry-level), só 3,2% planejando desativar o mainframe, tendência de modernização por integração (Kyndryl), e 92% dos especialistas COBOL tratando os sistemas da própria empresa como críticos; conclusão: mercado não quer "programador COBOL" isolado, quer quem combina sistema legado com ferramentas modernas |
+| [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] | Reação a playbook da Anthropic com startups de rápido crescimento sobre [[wiki/concepts/sdlc-nativo-de-ia\|SDLC nativo de IA]]: cinco regras ([[wiki/concepts/everyone-ships\|everyone ships]], automate the tedium, trust but verify, build for rebuilding, prototype/dog food/productionize); risco de [[wiki/concepts/risco-de-outage-fornecedor-ia\|dependência de fornecedor único]]; controvérsia pública Shopify/Tobi Lütke sobre o Claude Code não ler [[wiki/concepts/agents-md-vs-claude-md\|AGENTS.md]] (contradiz nota pré-existente na wiki) |
+| [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] | Autor não identificado condensa 10 anos de carreira em 6 conselhos: faculdade se possível (refutando o contra-exemplo Zuckerberg/Gates, que saíram com algo já funcionando), [[wiki/concepts/ingles-para-desenvolvedores\|inglês]] como gate de acesso ao mercado global, projetos como ponte entre teoria e prática, [[wiki/concepts/fundacao-tecnica\|fundamentação teórica]] para guiar a IA corretamente, currículo orientado ao que as vagas pedem, e — o "melhor conselho" — [[wiki/concepts/loop-de-feedback-rapido\|loop de feedback rápido]] ("10.000 feedbacks" em vez de "10.000 horas"); fecha com ownership genuíno como o traço mais raro de ensinar |
 
 ## Concepts
 
@@ -467,6 +483,9 @@ date_updated: 2026-09-08
 | [[wiki/concepts/otp-hotp-totp]] | Código de 6 dígitos a partir de seed + relógio ou contador — RSA SecurID proprietário até HOTP/TOTP padronizado pela IETF |
 | [[wiki/concepts/webauthn-fido2-u2f]] | Criptografia assimétrica em vez de segredo compartilhado — chave privada nunca sai do dispositivo, phishing-resistant por design |
 | [[wiki/concepts/jwt]] | Token stateless com header.payload.signature — Access Token curto + Refresh Token revogável resolve o dilema revogação vs. escala |
+| [[wiki/concepts/token-opaco]] | String sem significado embutido, resolvida no servidor — revogação instantânea ao custo de consulta a cada validação; gerar com CSPRNG e 256 bits, nunca sequencial/UUID |
+| [[wiki/concepts/api-key]] | Autentica aplicações, não usuários — chave secreta em header, simples de integrar, mas perigosa se vazar sem rotação/mTLS |
+| [[wiki/concepts/cwt-cbor-web-token]] | Versão binária do JWT via COSE — leve o suficiente para IoT e canais de banda restrita (stub) |
 | [[wiki/concepts/jose]] | JSON Object Signing and Encryption — guarda-chuva de RFCs (JWS/JWE/JWK/JWA) que define como o JWT é assinado e criptografado |
 | [[wiki/concepts/jws]] | JSON Web Signature — integridade/autenticidade via assinatura digital; payload continua legível em base64 |
 | [[wiki/concepts/jwe]] | JSON Web Encryption — confidencialidade via criptografia autenticada, estrutura de cinco partes; para dado sensível que não pode ficar nem em base64 |
@@ -568,6 +587,11 @@ date_updated: 2026-09-08
 | [[wiki/concepts/mudanca-cultural-como-produto-de-servicos-de-ia]] | Todo serviço de IA é mudança de processo/cultura — resistência interna (insegurança, desprestígio) pode inviabilizar um projeto tecnicamente perfeito |
 | [[wiki/concepts/recorrencia-em-servicos-de-ia]] | Serviço de IA é negócio de recorrência, não venda única — cliente insatisfeito (mesmo com entrega correta) não recontrata |
 | [[wiki/concepts/metodo-star-bullet-points]] | Método STAR/XYZ para transformar bullet points vagos de currículo em descrições objetivas — "liderei funcionalidades estratégicas" vira "migrei o projeto de JS para TypeScript, trazendo robustez e manutenibilidade" |
+| [[wiki/concepts/diretor-de-ia-metafora-do-cinema]] | Como diretor de cinema, o dev que orquestra IA não executa diretamente mas garante que o resultado corresponde à visão — mesmo mecanismo do Nível 4 (Diretor), mas pode ser pessoalmente insatisfatório ("babá de IA") mesmo quando tecnicamente correto |
+| [[wiki/concepts/portabilidade-de-valor-profissional-na-era-da-ia]] | Antes o output era proporcional ao conhecimento pessoal; com IA fornecida pela empresa, passa a ser proporcional à ferramenta do empregador — paralelo com a industrialização (valor na máquina, não no operador) |
+| [[wiki/concepts/paradoxo-da-empregabilidade]] | Catch 22 clássico: precisa de experiência para ter emprego, precisa de emprego para ter experiência — faculdade/estágio como via mais comum de romper o ciclo |
+| [[wiki/concepts/ingles-para-desenvolvedores]] | Inglês como gate de acesso ao mercado global, não diferencial opcional — sem ele, renda fica atrelada ao ciclo econômico do próprio país |
+| [[wiki/concepts/loop-de-feedback-rapido]] | Fazer → observar resultado real → ajustar → repetir, no menor intervalo possível — reformula "10.000 horas" em "10.000 feedbacks"; medo de rejeição/ego é o que trava o ciclo |
 
 ### Recursos de Aprendizado
 
@@ -707,6 +731,7 @@ date_updated: 2026-09-08
 |---|---|
 | [[wiki/concepts/product-engineer]] | Constrói a coisa que constrói a coisa — senso de produto + harness; o cargo do dev em 2026 |
 | [[wiki/concepts/taste-dev]] | Julgamento estético e de qualidade sem regra explícita — o diferencial do Product Engineer |
+| [[wiki/concepts/forward-deployed-engineer]] | Vai dentro do cliente instalar/integrar produto de IA complexo (ref.: Palantir) — mesmo papel do arquiteto de soluções sob nome novo; cargo nichado (<1.000 vagas de 65.000 no True Up), quase inexistente no Brasil, pouca progressão de carreira |
 
 ### IA em Organizações — Custo, ROI e Adoção
 
@@ -815,6 +840,7 @@ date_updated: 2026-09-08
 | [[wiki/concepts/mcp-arquitetura]] | Host/Client/Server + transportes stdio/SSE/Streamable HTTP — server deve ficar em pé, não subir e cair |
 | [[wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp]] | Agente com Grafana MCP correlaciona métricas/logs/traces sozinho e acha causa raiz em código — semanas de investigação viram minutos, mas só se os dados já existirem; guardrails podem recusar investigar um ataque real por não distinguir defesa de ofensa |
 | [[wiki/concepts/cli-vs-mcp]] | CLI usa treinamento da LLM e economiza contexto; MCP expõe tools delimitadas — critério de decisão |
+| [[wiki/concepts/mcp-stateless-server-discover]] | Mudança de spec (2026): MCP core vira stateless, fim do handshake, método `server discover` obrigatório, cross-call state via handle assinado pelo servidor (analogia da comanda de restaurante) |
 | [[wiki/concepts/tech-spec]] | Segundo artefato do SDD: traduz o PRD em decisões técnicas (contratos, schemas, arquitetura) |
 | [[wiki/concepts/human-in-the-loop]] | HITL em três granularidades: por tool call, por plan, por etapa SDD — Plan Mode é a forma leve |
 | [[wiki/concepts/task-looper]] | Executor automático de tarefas SDD — itera pela lista aprovada com critérios de aceite, sem intervenção |
@@ -827,6 +853,7 @@ date_updated: 2026-09-08
 | Página | Hook |
 |---|---|
 | [[wiki/concepts/event-loop-performance-js]] | Single-thread JS: qualquer Sync bloqueia todos os clientes — Web Streams e arquitetura assíncrona como solução |
+| [[wiki/concepts/renderizacao-ssr-vs-csr]] | SSR: servidor paga o custo de CPU da renderização (CPU-bound) e pode travar o event loop; CSR: cliente monta a página, servidor só serve estático/API |
 | [[wiki/concepts/tipos-primitivos-javascript]] | Os 8 tipos de JS e por que `typeof null === "object"` — `Object.prototype.toString.call()` como checagem mais precisa |
 
 ### Claude Code — Recursos e Padrões
@@ -1246,6 +1273,8 @@ date_updated: 2026-09-08
 | [[wiki/concepts/sql-server]] | Escolha operacional (não técnica) quando a empresa já vive no ecossistema Windows/.NET/Power BI |
 | [[wiki/concepts/sqlite]] | Biblioteca embarcada, arquivo único, lock global de escrita — não substituto de banco cliente-servidor |
 | [[wiki/concepts/mongodb]] | Documento BSON sem esquema fixo; sem JOIN nativo; complementa o relacional, não substitui |
+| [[wiki/concepts/criterios-de-escolha-de-banco-de-dados]] | Framework de 8 critérios além do tipo do dado (schema, acesso, leitura/escrita, transacional/storage, consistência, latência, escalabilidade, custo) para escolher banco em entrevista/produção |
+| [[wiki/concepts/toast-postgresql]] | Mecanismo do Postgres para colunas grandes demais para uma página (8 KB) — move valor pra tabela auxiliar; impacta performance, não custo direto da operação |
 | [[wiki/concepts/full-text-search]] | Índice invertido dedicado (`FULLTEXT`/`MATCH AGAINST` no MySQL, `tsvector`/`GIN` no Postgres) — resolve relevância e performance onde `LIKE '%termo%'` falha nos dois eixos |
 | [[wiki/concepts/indice-invertido]] | Palavra → lista de IDs onde ela ocorre; estrutura por baixo de todo Full-Text Search, de `FULLTEXT INDEX` a Lucene |
 | [[wiki/concepts/like-wildcard]] | `LIKE '%termo%'` — antipattern de busca: substring de caracteres em vez de palavra, e full table scan em vez de índice |
@@ -1307,6 +1336,8 @@ date_updated: 2026-09-08
 | [[wiki/concepts/jquery]] | Biblioteca JS de 2006 que unificou DOM/eventos entre navegadores; raramente escolhida hoje mas ainda mantida ativamente em 2026 |
 | [[wiki/concepts/cobol]] | Linguagem de 1959 que sustenta o sistema financeiro mundial (Pix incluso); modernização se dá pela borda (API/filas), não por reescrita |
 | [[wiki/concepts/mainframe]] | Origem das primeiras APIs (anos 60-70) — rotinas/bibliotecas locais do SO num único computador de grande porte, sem qualquer noção de rede |
+| [[wiki/concepts/mercado-de-trabalho-mainframe-cobol]] | 91% dos empregadores de mainframe contratando para posições novas, 79% buscando mid-level — dados de quatro pesquisas de mercado, não só percepção |
+| [[wiki/concepts/modernizacao-de-mainframe]] | Tendência real não é substituir o mainframe, é integrá-lo com nuvem híbrida/API/DevOps (Kyndryl) — mainframe continua ligado |
 | [[wiki/concepts/windows-api]] | WinAPI da Microsoft (anos 80) — primeira base comum de janelas/botões/gráficos/entrada para todo dev de Windows, fim da reinvenção da roda por jogo |
 | [[wiki/concepts/posix]] | Padrão de portabilidade entre Unix (fim dos anos 80) — mesmo problema que a WinAPI resolvia no Windows, resolvido do lado da fragmentação entre fabricantes Unix |
 | [[wiki/concepts/corba-rmi]] | Primeira geração de APIs remotas (anos 90) — comunicação entre processos via rede, "same-platform" e complexa demais para Java/C++/.NET interoperarem de verdade; antecessor direto do SOAP |
@@ -1444,6 +1475,9 @@ date_updated: 2026-09-08
 | [[wiki/concepts/shift-left-testing]] | Mover testes de segurança para o início do ciclo (planejamento, código) em vez de só no fim — secret scanning, SCA, SAST, IAST cobrindo cada fase |
 | [[wiki/concepts/prompt-injection-jailbreak]] | Jailbreak muda tom/comportamento; prompt injection extrai dados sensíveis e executa operações destrutivas — mais grave e distinto do jailbreak |
 | [[wiki/concepts/ai-safety-guardrails]] | Camadas de defesa em profundidade para LLM: input filters → output filters → containment, validando antes/depois de cada chamada a agente ou tool |
+| [[wiki/concepts/vpn]] | "Privada" = acesso restrito, "virtual" = usa infraestrutura de rede pública via tunelamento; site-to-site (matriz/filial) e acesso remoto; zona de confiança plana em contraste com ZTNA |
+| [[wiki/concepts/tunelamento]] | Encapsula tráfego criptografado dentro de uma conexão sobre rede pública — o mecanismo que torna a VPN "virtual" |
+| [[wiki/concepts/restricao-geografica-geo-blocking]] | Bloqueio de acesso por localização de IP — VPN contorna saindo pelo IP do provedor; serviços mantêm listas de IPs de VPN conhecidos como contramedida |
 
 ### Frontend & Design Engineering
 
@@ -1590,11 +1624,18 @@ date_updated: 2026-09-08
 | [[wiki/concepts/finops-para-ia]] | Quatro práticas de governança de custo de token: budget/limite por dev-ferramenta, métricas de valor em vez de dashboard de volume, classificação de dados para self-hosted, ownership evitando lock-in de provedor |
 | [[wiki/concepts/sintomas-de-complexidade-ousterhout]] | Os três sintomas de complexidade do Cap. 2 de Ousterhout — change amplification, cognitive load, unknown unknowns — usados como checklist prático para reconhecer complexidade crescente antes de qualquer métrica formal |
 | [[wiki/concepts/define-errors-out-of-existence]] | Técnica de Ousterhout (Cap. 10): redesenhar a semântica de uma operação para que a condição de erro deixe de existir, em vez de lançar exceção — substring do Java (erro) vs. list slice do Python (trunca) como exemplo canônico |
+| [[wiki/concepts/everyone-ships]] | Barreira para colocar código em produção cai — quem entende o problema de negócio (advogado, PM) abre o PR, não só quem entende o código; expertise do engenheiro se desloca para revisão |
+| [[wiki/concepts/sdlc-nativo-de-ia]] | Cinco regras de um playbook da Anthropic com startups: everyone ships, automate the tedium, trust but verify, build for rebuilding, prototype/dog food/productionize |
+| [[wiki/concepts/agents-md-vs-claude-md]] | Claude Code só lê CLAUDE.md, não o AGENTS.md compartilhado entre agentes — controvérsia pública com Tobi Lütke (Shopify); contradiz nota pré-existente sobre preferência da Anthropic por AGENTS.md |
+| [[wiki/concepts/risco-de-outage-fornecedor-ia]] | Montar um SDLC inteiro em torno de um único fornecedor de IA expõe a organização a qualquer indisponibilidade desse fornecedor |
 
 ## Entities
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/thalis-pereira]] | Membro da comunidade Tech Clube, Forward Deployed/AI Engineer — case real de projetos e do que pesa numa entrevista para o cargo |
+| [[wiki/entities/true-up]] | Agregador de vagas de tecnologia que deduplica dados — fonte dos números de demanda de AI Engineer/Forward Deployed Engineer nos EUA |
+| [[wiki/entities/palantir]] | Empresa-referência do modelo Forward Deployed Engineer — produto complexo demais para vender pronto, exige integração no cliente |
 | [[wiki/entities/jmock]] | Framework dinâmico de [[wiki/concepts/test-doubles\|Mock Object]] para Java, com Configuration Interface fluente — exemplo do lado **Dinamicamente Gerado** de Configurable Test Double; [external] criado por Steve Freeman, Nat Pryce e Joe Walnes — Freeman/Pryce também autores de *Growing Object-Oriented Software, Guided by Tests*, origem da escola London/Mockist de [[wiki/concepts/tdd\|TDD]] |
 | [[wiki/entities/rspec]] | Framework de testes Ruby — nova geração de membros do xUnit que troca vocabulário de teste por vocabulário de especificação (fixture→context, assert→should); precursor terminológico possível do [[wiki/concepts/bdd\|BDD]], sem confirmação explícita na fonte primária |
 | [[wiki/entities/jbehave]] | Equivalente Java do [[wiki/entities/rspec\|RSpec]], citado por contraste na mesma fonte; stub sem cobertura própria ainda |
@@ -1619,7 +1660,10 @@ date_updated: 2026-09-08
 | [[wiki/entities/theodor-sturgeon]] | Escritor de ficção científica que cunhou a Lei de Sturgeon (1957): 90% de tudo é lixo, importa o 10% |
 | [[wiki/entities/george-akerlof]] | Economista — "The Market for Lemons" (1970), assimetria de informação e colapso de qualidade média |
 | [[wiki/entities/spring-boot]] | Framework Java — estudo de caso do padrão getting started/tutorials/guides/API reference; Spring Data JPA gera query a partir do nome do método |
-| [[wiki/entities/ibm]] | International Business Machines — citada como usuária de referência de **fita magnética (LTO)** para backup de longo prazo: a mídia "ultrapassada" que vence em custo/GB, durabilidade e isolamento de rede |
+| [[wiki/entities/ibm]] | International Business Machines — citada como usuária de referência de **fita magnética (LTO)** para backup de longo prazo: a mídia "ultrapassada" que vence em custo/GB, durabilidade e isolamento de rede; parceira da pesquisa global de skills em mainframe |
+| [[wiki/entities/broadcom]] | Dona de portfólio de software de mainframe (herdado da CA Technologies) — parceira da pesquisa global de skills em mainframe com IBM e 21 CS |
+| [[wiki/entities/kyndryl]] | Spin-off da IBM (2021) em serviços de infraestrutura — autora da pesquisa que mostra a tendência real de modernização de mainframe: integração, não substituição |
+| [[wiki/entities/micro-focus]] | Dona do compilador Micro Focus COBOL — encomendou a pesquisa Vanson Bourne que mostra 92% dos especialistas tratando sistemas COBOL como críticos |
 | [[wiki/entities/pieter-levels]] | Indie hacker (~3M USD/ano sozinho, Photo AI e outros SaaS); codifica direto na VPS de produção com Claude Code; tweet viral sobre guardrails do Claude bloqueando um hobby (simulador de Windows XP) enquanto o Kimi K3 completava as mesmas tarefas |
 | [[wiki/entities/valdemar-neto]] | Cofundador da Tech Leads Club, ex-Atlassian, ex-Totvs — autor dos "10 Princípios da Arquitetura Modular", distinção monolito modular vs. arquitetura modular |
 | [[wiki/entities/tech-leads-club]] | Comunidade/empresa de educação técnica cofundada por Valdemar Neto — curso "Aplicações Enterprise" |
@@ -1700,7 +1744,8 @@ date_updated: 2026-09-08
 | [[wiki/entities/randy-nelson]] | Ex-Pixar, hoje Apple — educador; autor da palestra sobre as três características (profundidade, abrangência, comunicação) de um candidato excepcional |
 | [[wiki/entities/eduarda-rocket-city]] | Engenheira de software internacional, criadora de conteúdo no canal Rocket City |
 | [[wiki/entities/joao-rocket-city]] | Engenheiro de software pra gringa (3 anos), apresentador de série semanal de system design no canal Rocket City |
-| [[wiki/entities/openai]] | Organização responsável pelo GPT-3/4 — formalizou in-context learning e scaling laws; criadora do tokenizer tiktoken; benchmark interno de cybersegurança sem guardrails resultou em zero-day explorado e ataque real via credencial vazada |
+| [[wiki/entities/openai]] | Organização responsável pelo GPT-3/4 — formalizou in-context learning e scaling laws; criadora do tokenizer tiktoken; benchmark interno de cybersegurança sem guardrails resultou em zero-day explorado e ataque real via credencial vazada; alvo (segundo caso citado de memória) de ataque de destilação atribuído à Alibaba com ~25 mil contas falsas |
+| [[wiki/entities/alibaba]] | Gigante chinesa de e-commerce/cloud e desenvolvedora de modelos (linha Qwen) — citada como responsável por um ataque de destilação em massa contra a OpenAI (~25 mil contas falsas, número não confirmado com fonte primária) |
 | [[wiki/entities/hugging-face]] | Hub de modelos, datasets e benchmarks de IA — alvo de um ataque real via credencial de servidor vazada e publicamente indexada, explorado por um agente de IA autônomo |
 | [[wiki/entities/google]] | Criadora do Gemini e do harness AntiGravity — concorrente de Anthropic e OpenAI, tokenizer próprio |
 | [[wiki/entities/openrouter]] | Gateway/agregador de acesso a múltiplos modelos de LLM (incluindo modelos chineses como GLM) por trás de uma única API |
@@ -1719,7 +1764,7 @@ date_updated: 2026-09-08
 | [[wiki/entities/jason-wei]] | Pesquisador Google Brain — lead author do paper de chain-of-thought prompting e do paper de emergent abilities |
 | [[wiki/entities/fabio-akita]] | Programador brasileiro, autodidata desde 1991, criador do canal Akita On Rails |
 | [[wiki/entities/geoff-colvin]] | Editor sênior da *Fortune*, autor de *Talent Is Overrated* — prática deliberada supera anos de experiência bruta |
-| [[wiki/entities/lucas-badico]] | Programador e professor brasileiro, criador de conteúdo sobre Golang e carreira; defende a ponte fullstack como caminho de entrada ao backend |
+| [[wiki/entities/lucas-badico]] | Programador e professor brasileiro, criador de conteúdo sobre Golang e carreira; defende a ponte fullstack como caminho de entrada ao backend; relata trabalhar como "diretor de IA"/"babá de IA" e anuncia intenção de cancelar o Claude para voltar a codar manualmente |
 | [[wiki/entities/codigo-fonte-tv]] | Canal brasileiro de YouTube com pesquisa salarial própria (pesquisa.codefonte.com.br), série de design patterns em TypeScript/Deno e série "Dicionário do Programador" (ex.: CQRS); cruza dados com pesquisas oficiais de fabricantes de linguagem |
 | [[wiki/entities/john-romero]] | Co-criador de Doom — "programação é criatividade baseada em lógica" |
 | [[wiki/entities/edsger-dijkstra]] | Cientista da computação holandês — programação formal, crítica à linguagem natural em código |
@@ -1808,6 +1853,11 @@ date_updated: 2026-09-08
 | [[wiki/entities/greg-young]] | Criador do CQRS (a partir de CQS); autor da ideia de Command Sourcing |
 | [[wiki/entities/bero]] | Autor de tweet reagido por Augusto Galego (LeetCode/System Design vs. ser bom dev de fato) — identidade não confirmada, possível confusão fonética com [[wiki/entities/boris]] |
 | [[wiki/entities/jez-humble]] | Coautor, com David Farley, do livro *Continuous Delivery* — obra fundacional citada por Fowler; ajudou Fowler a redigir o bliki que define o termo |
+| [[wiki/entities/geoffrey-hinton]] | "Padrinho" do deep learning — previu em 2016 que IA extinguiria a profissão de radiologista; o número de radiologistas cresceu em vez de cair |
+| [[wiki/entities/james-bessen]] | Economista — automação não elimina a profissão, muda a economia da atividade; caso de referência é o caixa eletrônico aumentando a demanda por caixas humanos |
+| [[wiki/entities/jean-sammet]] | Pioneira de linguagens de programação de alto nível — relata resistência de programadores assembly ao surgimento de Cobol/Fortran |
+| [[wiki/entities/grace-hopper]] | Propôs a ideia do compilador — enfrentou resistência de programadores "raiz" que achavam código gerado automaticamente pior que código escrito à mão |
+| [[wiki/entities/lex-fridman]] | Host de podcast — entrevista com DHH é a fonte do caso do caixa eletrônico usado como paralelo contra a tese de que IA reduz emprego em tecnologia |
 
 ### Documentação de Arquitetura
 
@@ -1850,6 +1900,8 @@ date_updated: 2026-09-08
 | [[wiki/entities/solyd]] | Plataforma de ensino de hacking/pentest — laboratórios sob demanda (DVWA) e certificações práticas |
 | [[wiki/sources/pipeline-agentes-ia-pentest-idor-critica-nao-substitui]] | Pipeline de agentes de IA achou IDOR que dois pentests manuais não viram — mas também gerou alto volume de falso positivo, com triagem humana virando o novo gargalo |
 | [[wiki/concepts/economia-da-descoberta-automatizada-de-vulnerabilidades]] | Custo por vulnerabilidade encontrada despenca com busca exaustiva por agentes; valor migra de testar para projetar/julgar a esteira |
+| [[wiki/concepts/ataque-de-destilacao-e-extracao-de-dados-llm]] | Distingue ataque de destilação em massa (extrai comportamento do modelo, exige escala — caso Alibaba/OpenAI) de ataque de anomalia (extrai dados expostos a um agente com só 5-6 interações bem desenhadas) — o segundo é subestimado porque o caso público de referência usa escala massiva |
+| [[wiki/entities/tobi-lutke]] | CEO da Shopify, exemplo de CEO tecnicamente forte fazendo commits diretos; cogitou publicamente banir o Claude Code por não suportar AGENTS.md |
 
 ## Questions
 

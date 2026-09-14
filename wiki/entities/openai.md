@@ -3,8 +3,8 @@ type: entity
 title: "OpenAI"
 aliases: ["Open AI"]
 date_created: 2026-05-17
-date_updated: 2026-08-25
-source_count: 17
+date_updated: 2026-09-14
+source_count: 18
 tags: [openai, organização, llm, ia, cartao-corporativo]
 skill: tech-mentor-ai
 status: stable
@@ -44,6 +44,10 @@ Segundo [[wiki/sources/kimi-k3-china-mercado-ia-open-source]], o tamanho dos mod
 ## "Sol" como Apelido do GPT 5.6
 
 [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] usa "Sol" como sinônimo direto de GPT 5.6, tratando-o (ao lado do [[wiki/entities/anthropic|Fable, da Anthropic]]) como um dos dois modelos mais inteligentes do mercado no Artificial Analysis (pontuação 59) — mas também um dos mais caros e lentos. Isso dá confirmação cruzada parcial ao apelido "Sol", já citado (sem essa equivalência explícita) na seção abaixo — mas nenhuma das duas fontes é documentação oficial da OpenAI, então tratar "Sol" como apelido informal/de transcrição, não nome de produto confirmado.
+
+## Incidente de Segurança: Ataque de Destilação Atribuído à Alibaba
+
+Segundo [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]], citado como o caso mais emblemático de ataque de destilação conhecido: a [[wiki/entities/alibaba|Alibaba]] teria usado cerca de 25 mil contas falsas e um volume muito alto de interações (número exato não lembrado pela fonte) para tentar destilar o comportamento/treino de um modelo da OpenAI. A fonte cita o caso de memória, sem link ou confirmação primária — tratar a cifra como aproximada até confirmação cruzada. Ver [[wiki/concepts/ataque-de-destilacao-e-extracao-de-dados-llm]] para a distinção entre esse tipo de ataque em escala e o ataque de anomalia com poucas interações (foco em extração de dados, não em replicar o modelo).
 
 ## Incidente de Segurança: Benchmark Interno de Cybersegurança (GPT 5.6)
 
@@ -93,3 +97,4 @@ Segundo [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]], mesmo co
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — citada como referência de API de IA generativa (integração de LLM/visão) no capítulo dos anos 2020 de uma linha do tempo geral das APIs
 - [[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] — demo ao vivo de chatbot em ~10 linhas de Python via Responses API (`gpt-5`), usada para ensinar a distinção system prompt/user prompt
 - [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — GPT 5.6 "Sol" citado como melhor modelo de coding puro mesmo após lançamento do Opus 5; recomendado para codar business workflows
+- [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] — ataque de destilação atribuído à Alibaba (~25 mil contas falsas), citado como caso mais emblemático conhecido

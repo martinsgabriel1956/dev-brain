@@ -3,8 +3,8 @@ type: concept
 title: "Event-Driven Architecture (EDA)"
 aliases: ["arquitetura orientada a eventos", "eda", "event driven"]
 date_created: 2026-07-30
-date_updated: 2026-08-27
-source_count: 2
+date_updated: 2026-09-14
+source_count: 3
 tags: [event-driven, mensageria, saga-pattern, cqrs, microsservicos, arquitetura]
 skill: tech-mentor-backend
 status: stub
@@ -30,7 +30,12 @@ Ganha-se desacoplamento e ausência de gargalo síncrono; perde-se consistência
 
 [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] nomeia diretamente o risco de usar eventos como mecanismo de sincronização em [[wiki/concepts/cqrs]]: escrever na base e publicar o evento não são atômicos por padrão — se as duas escritas divergirem, gera-se uma inconsistência entre o que foi salvo e o que foi lido. Ver [[wiki/concepts/dual-write-problem]] e a solução via [[wiki/concepts/outbox-pattern]].
 
+## Publicar Evento no Broker Não É Atômico com a Escrita no Banco
+
+[[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] mostra, num exemplo passo a passo (cadastro de usuário disparando e-mail de boas-vindas), que essa não-atomicidade não é um detalhe raro de CQRS — é estrutural a qualquer arquitetura orientada a eventos: gravar no banco e publicar um evento são duas operações independentes, e nenhuma transação local cobre a segunda. Ver [[wiki/concepts/dual-write-problem]] e a solução via [[wiki/concepts/outbox-pattern]].
+
 ## Key Sources
 
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — EDA como nome da arquitetura de fila usada para Saga Pattern, e como mecanismo de propagação write→read em CQRS, com o trade-off de latência/consistência eventual
 - [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] — eventos como opção de consistência eventual no CQRS que permite transformação livre do read model; nomeia explicitamente o bug da escrita dupla como risco
+- [[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] — exemplo didático completo (cadastro + e-mail) de por que publicar um evento nunca é atômico com a escrita no banco, com a solução via outbox e CDC/Debezium

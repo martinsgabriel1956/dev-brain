@@ -3,8 +3,8 @@ type: concept
 title: "Dependência de IA"
 aliases: ["ai dependency", "dependência ferramenta", "loop de prompts"]
 date_created: 2026-05-31
-date_updated: 2026-08-17
-source_count: 6
+date_updated: 2026-09-14
+source_count: 7
 tags: [dependencia-ia, ia-e-programacao, aprendizado-passivo, autonomia-tecnica, iniciante]
 skill: tech-mentor-leadership
 status: stable
@@ -90,8 +90,13 @@ Pedir para uma IA revisar/sugerir melhorias no próprio código antes de abrir u
 
 [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] traz uma variante da mesma tese aplicada a profissionais sênior, não apenas iniciantes: se sua capacidade acaba sendo a mesma que a da IA entrega sozinha, a empresa passa a contratar a IA em vez de você. Não é o mesmo mecanismo de "não saber raciocinar sem a IA" (o foco aqui é o *teto* de capacidade, não a *incapacidade* de trabalhar sem a ferramenta), mas o resultado prático converge: quem não constrói julgamento além do que a IA já entrega perde a razão de ser contratado.
 
+## A Versão Sênior Empregada: Dependência Sem Perder o Emprego
+
+[[wiki/sources/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico]] contribui uma variante que as fontes anteriores desta página não cobriam: um profissional sênior, já empregado e produtivo, pode desenvolver dependência de IA mesmo sem os sintomas clássicos de "não sabe explicar o código" — o relato é de ansiedade crescente e proporcional ao uso, não de incapacidade técnica imediata. A fonte também estende o conselho de carreira: assim como um diretor de cinema não deveria começar dirigindo sem passar pela produção, um dev não deveria iniciar a carreira dependendo de IA — ver [[wiki/concepts/diretor-de-ia-metafora-do-cinema]] e [[wiki/concepts/fundacao-tecnica]].
+
 ## Key Sources
 
+- [[wiki/sources/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico]] — variante sênior: ansiedade crescente proporcional ao uso, mesmo sem perda de emprego; conselho de carreira via metáfora de diretor de cinema
 - [[wiki/sources/ia-e-aprendizado-programacao-iniciantes]]
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — variante sênior: teto de capacidade igual ao da IA leva a ser substituído por ela, não a incapacidade de trabalhar sem ela
 - [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — "terceirizar o raciocínio" como risco central para juniores; diferencial passa a ser boas perguntas + validação, não sintaxe decorada

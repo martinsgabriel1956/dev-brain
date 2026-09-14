@@ -3,8 +3,8 @@ type: entity
 title: "IBM"
 aliases: ["IBM", "International Business Machines"]
 date_created: 2026-08-13
-date_updated: 2026-08-18
-source_count: 2
+date_updated: 2026-09-14
+source_count: 3
 tags: [ibm, hardware, storage, fita-magnetica, lto, organização]
 skill: tech-mentor-data
 status: stub
@@ -20,7 +20,10 @@ Citada como usuária de referência de [[concepts/fita-magnetica]] (LTO) para ba
 
 Também citada como pioneira das primeiras [[wiki/concepts/contrato-de-api|APIs]] no sentido histórico do termo: o [[wiki/concepts/mainframe|IBM System/360]] (anos 60-70) forneceu interfaces de programação locais que permitiam múltiplas linguagens e aplicações rodarem na mesma máquina, sem qualquer noção de rede — o ponto de partida da linha do tempo que leva até a API como a conhecemos hoje.
 
+Também parceira (com [[wiki/entities/broadcom|Broadcom]] e 21 CS) da pesquisa global de skills e mainframe citada em [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] — 750 empresas, 200 universidades e 200 estudantes entrevistados, base do dado de 91% dos empregadores contratando para posições novas em mainframe.
+
 ## Key Sources
 
 - [[wiki/sources/tipos-de-armazenamento-de-dados]] — IBM entre grandes usuárias de fita magnética
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — IBM System/360 como pioneira em interface de programação local de mainframe, origem histórica do termo "API"
+- [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] — parceira da pesquisa global de skills e mainframe (com Broadcom e 21 CS)

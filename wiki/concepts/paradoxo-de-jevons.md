@@ -3,8 +3,8 @@ type: concept
 title: "Paradoxo de Jevons"
 aliases: ["jevons paradox", "efeito rebote", "rebound effect", "paradoxo jevons ia"]
 date_created: 2026-05-31
-date_updated: 2026-08-06
-source_count: 3
+date_updated: 2026-09-14
+source_count: 4
 tags: [paradoxo-de-jevons, token-economics, era-agentica, custo-ia, economia]
 skill: tech-mentor-ai
 status: stable
@@ -58,8 +58,19 @@ O caso Uber (orçamento de IA de 2026 estourado em 4 meses) já estava registrad
 
 [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] aplica a mesma estrutura de raciocínio a um domínio diferente do custo de inferência: capacidade de trabalho, não tokens. O argumento — automação não implica demissão automaticamente, desde que o tempo liberado seja canalizado para gerar mais valor — é a versão "efeito rebote" aplicada a headcount: uma empresa que mantém 3 programadores agora produzindo 3x cada (9x de output total) supera uma concorrente que demite 2 para "ficar só com quem produz por 3". É uma tese normativa do autor, não um resultado observado, mas estruturalmente é o mesmo mecanismo de Jevons — eficiência maior expande o total consumido/produzido, em vez de reduzir proporcionalmente o insumo (tokens no caso original, headcount aqui).
 
+## Três Casos Históricos de Automação Que Aumentaram (Não Reduziram) Emprego
+
+[[wiki/sources/ia-paradoxo-de-jevons-camada-de-abstracao-futuro-do-programador]] contribui evidência histórica adicional para a aplicação do paradoxo a emprego (não só a custo de token), além do caso único da Oracle já registrado acima:
+
+- **Radiologia:** [[wiki/entities/geoffrey-hinton]] previu em 2016 que a IA acabaria com a profissão de radiologista. O número de radiologistas cresceu, porque a automação parcial baratear o diagnóstico por imagem expandiu a demanda total (hospitais que antes não ofereciam esse serviço passaram a oferecer).
+- **Caixas eletrônicos (ATM):** ao baratear a operação de uma agência bancária, o ATM permitiu abrir mais agências — o que aumentou, em vez de reduzir, o número total de caixas humanos (tellers) necessários. [[wiki/entities/james-bessen]] formaliza esse padrão: "a automação não elimina a profissão, ela muda a economia da atividade."
+- **Contraexemplo explícito — mecanização agrícola:** a própria fonte reconhece que esse padrão **não é universal** — a mecanização do campo durante a Revolução Industrial de fato reduziu a demanda por trabalhadores rurais e causou grande impacto negativo. Isso evita tratar "Jevons sempre se aplica a emprego" como lei geral: o padrão depende de quanto o barateamento expande o *total* de demanda pela atividade versus apenas substitui o insumo humano por máquina sem gerar novos casos de uso.
+
+A conclusão da fonte é que o caso da profissão de dev de software se parece mais com radiologia/ATM (mais software barato → mais software construído → mais gente para mantê-lo) do que com mecanização agrícola — mas isso é apresentado como expectativa/previsão do autor, não como resultado observado no mercado de trabalho de dev.
+
 ## Key Sources
 
 - [[wiki/sources/ia-custo-roi-bolha-ou-realidade]]
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] — segunda confirmação do caso Uber, com crítica do CEO da Palantir ao timing token maxing vs. ROI
 - [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] — aplicação do mesmo mecanismo a headcount/emprego em vez de custo de token
+- [[wiki/sources/ia-paradoxo-de-jevons-camada-de-abstracao-futuro-do-programador]] — três casos históricos adicionais (radiologia/Hinton, ATM/Bessen, mecanização agrícola como contraexemplo) aplicando o paradoxo a emprego, não a custo de inferência

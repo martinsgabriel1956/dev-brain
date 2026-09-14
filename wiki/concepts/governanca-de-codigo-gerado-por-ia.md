@@ -3,8 +3,8 @@ type: concept
 title: "Governança de Código Gerado por IA"
 aliases: ["paradoxo da ia no codigo", "governar codigo de ia"]
 date_created: 2026-07-03
-date_updated: 2026-08-06
-source_count: 6
+date_updated: 2026-09-14
+source_count: 8
 tags: [ia-no-processo-de-engenharia, arquitetura, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -51,7 +51,18 @@ A IA ameaça quem permanece só na camada de execução e não evolui para julga
 
 [[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] traz o contraponto quantitativo mais forte já registrado nesta página: não é só que código gerado por IA nasce mais vulnerável (~2,77x mais falhas de segurança que código humano, segundo CodeRabbit e Veracode) — pedir para a IA **refinar** o próprio código repetidamente piora a segurança, não melhora. Um paper testando 400 amostras ao longo de 40 rodadas de refinamento mediu 37,6% de aumento em vulnerabilidades críticas depois de apenas 5 iterações, mesmo com um prompt pedindo explicitamente foco em segurança a cada rodada. Isso reforça o argumento central desta página de outro ângulo: a ausência de governança não é só "ninguém revisou o código gerado" — é que o próprio ato de iterar sem checkpoints de revisão introduz risco continuamente, mesmo quando alguém está "melhorando" o código de boa fé. Ver [[wiki/concepts/degradacao-de-seguranca-iterativa-ia]] para o mecanismo detalhado e a mitigação de processo proposta (SAST no delta, limite de iterações, testes de segurança como contrato prévio).
 
+## Governança Além do Código: Processo, Gasto e Segurança
+
+[[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] expande o escopo do paradoxo desta página para fora da revisão de código em si: a mesma lógica ("mais IA gerando output exige mais julgamento/controle humano, não menos") aparece em processo ágil (repensar sprint/tarefas), em gestão de gasto ([[wiki/concepts/finops-para-ia]]) e em segurança (detectar [[wiki/concepts/ataque-de-destilacao-e-extracao-de-dados-llm|ataques de anomalia]] contra agentes expostos). A fonte reforça que esses temas de governança "mais ampla" (não só revisão de PR) são o que de fato ocupa as conversas internas de empresas grandes — mas raramente viram conteúdo popular (ver [[wiki/concepts/hype-de-ia]]).
+
+## "Everyone Ships" Empurra o Ponto de Governança da Escrita Para a Revisão
+
+[[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] descreve, a partir de um playbook da Anthropic com startups de rápido crescimento, um padrão organizacional que é uma instância direta do paradoxo desta página: quando pessoas não técnicas (advogados, PMs) passam a abrir pull requests diretamente — ver [[wiki/concepts/everyone-ships]] — a expertise diferencial do engenheiro se desloca ainda mais para revisão e julgamento, não para escrita. A fonte também reforça o argumento de "quem gera o ticket/código não é técnico" já registrado acima, mas numa versão institucionalizada e incentivada pela própria empresa, não como falha de processo isolada.
+
 ## Key Sources
+
+- [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] — "everyone ships" como versão institucionalizada do paradoxo desta página
+- [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] — governança de IA além do código: processo ágil, gasto e segurança contra ataques de anomalia
 
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]]
 - [[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] — dados quantitativos de degradação de segurança em refinamento iterativo com IA

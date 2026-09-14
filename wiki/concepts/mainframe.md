@@ -3,8 +3,8 @@ type: concept
 title: "Mainframe"
 aliases: ["computador de grande porte", "IBM System/360"]
 date_created: 2026-08-18
-date_updated: 2026-08-18
-source_count: 1
+date_updated: 2026-09-14
+source_count: 2
 tags: [mainframe, hardware, historia-da-computacao, ibm, sistema-operacional]
 skill: tech-mentor-backend
 status: stub
@@ -20,6 +20,11 @@ O [[wiki/entities/ibm]] System/360 é citado como pioneiro em oferecer **interfa
 
 O mesmo período viu o [[wiki/concepts/unix]] nascer em minicomputadores, consolidando a "chamada de sistema" como forma padronizada de API entre programa e kernel.
 
+## Mercado atual: contratação ativa, não desativação
+
+Longe de ser tecnologia em fim de vida, pesquisas de mercado citadas em [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] mostram **91%** dos empregadores que já usam mainframe planejando contratar para **posições novas** (não só repor saída), e apenas **3,2%** das empresas usuárias planejando **desativar** o mainframe nos próximos 3 anos — mesmo com mais da metade da receita de 36% delas passando por sistemas em mainframe. A tendência dominante é [[wiki/concepts/modernizacao-de-mainframe|modernização por integração]] (nuvem híbrida, API, DevOps) em vez de substituição. Ver [[wiki/concepts/mercado-de-trabalho-mainframe-cobol]] para o quadro completo de dados de demanda.
+
 ## Key Sources
 
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — mainframes e IBM System/360 como origem das primeiras interfaces de programação, anos 60-70
+- [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] — pesquisas de mercado: 91% dos empregadores contratando para posições novas, só 3,2% planejando desativar o mainframe

@@ -3,8 +3,8 @@ type: entity
 title: "Kent Beck"
 aliases: ["kent beck"]
 date_created: 2026-07-09
-date_updated: 2026-08-31
-source_count: 9
+date_updated: 2026-09-14
+source_count: 10
 tags: [autor, tdd, extreme-programming, design-incremental, junit, xunit, yagni]
 skill: tech-mentor-testing
 status: stub
@@ -44,6 +44,18 @@ Beck é o autor do livro fundador da Extreme Programming, onde [[wiki/concepts/y
 
 [[wiki/sources/cognitive-debt-margaret-storey]] cita Beck (com link para [tidyfirst.substack.com/p/tidy-first-example](https://tidyfirst.substack.com/p/tidy-first-example)) como origem do enquadramento "make the hard change easy, then make the easy change" — ordenar tidying antes de mudanças arriscadas. A autora argumenta que a relutância em fazer esse trabalho preparatório, sob pressão por velocidade com IA, é o que leva à dívida cognitiva. Isso confirma, a favor de *Tidy First?*, a nota de verificação abaixo sobre a citação "invest in the design of the system every day" — mesma obra, mesmo argumento de investir continuamente em preparar o terreno antes de mudar.
 
+## Pai Programador Assembly Migrando Para C — Paralelo Com a IA de Hoje
+
+Segundo [[wiki/sources/ia-paradoxo-de-jevons-camada-de-abstracao-futuro-do-programador]], Beck relatou numa palestra que seu pai era programador assembly e, quando surgiu o C, precisou migrar porque as habilidades que tinha (alocação manual de registradores, conhecimento de layout de memória) perderam valor econômico. A fonte usa essa anedota como paralelo histórico direto para a crise de identidade que devs enfrentam hoje com a geração de código por IA — mesmo mecanismo de desvalorização de habilidade técnica de baixo nível diante de uma nova camada de abstração, ver [[wiki/concepts/linguagem-natural-como-camada-de-abstracao]].
+
+**Nota de confiança:** anedota relatada de segunda mão pelo autor da fonte, sem palestra específica identificada.
+
+## Tweet "90% Desvalorizado, 10% Mil Vezes Mais Valioso"
+
+A mesma fonte cita um tweet famoso de Beck: "O valor econômico de 90% das minhas habilidades praticamente despencou. Já os 10% restantes ficaram 1000 vezes mais valiosos." Usado como evidência central de que conhecimento técnico de implementação (sintaxe, linha a linha) perdeu valor com a IA, mas princípios de engenharia de software, arquitetura e julgamento continuam (e aumentaram) de valor — reforça a tese já registrada em [[wiki/concepts/novo-perfil-dev-ia]] e [[wiki/concepts/ia-como-amplificador]] de que a IA multiplica o julgamento de quem já sabe guiá-la.
+
+**Nota de confiança:** citação amplamente circulada publicamente; a formulação exata das porcentagens vem de memória do autor da fonte, deve ser tratada como aproximada.
+
 ## Nota de verificação
 
 A citação "invest in the design of the system every day" foi atribuída a Beck na palestra-fonte, mas a obra exata não foi identificada durante aquela ingestão — provavelmente de *Tidy First?*, como sugere a citação equivalente em [[wiki/sources/cognitive-debt-margaret-storey]], a confirmar em ingestão futura que leia o livro diretamente.
@@ -59,3 +71,4 @@ A citação "invest in the design of the system every day" foi atribuída a Beck
 - [[wiki/sources/seedwork-martin-fowler]] — fonte primária que nomeia o padrão do framework de testes caseiro de Beck (reconstruído por cada time) como exemplo de [[wiki/concepts/seedwork]]
 - [[wiki/sources/c3-martin-fowler]] — liderança do recomeço do C3 em 1996; consolidação das práticas da Extreme Programming
 - [[wiki/sources/very-low-defect-project-martin-fowler]] — relatou a Fowler o caso da fabricante de máquinas de classificação de alimentos
+- [[wiki/sources/ia-paradoxo-de-jevons-camada-de-abstracao-futuro-do-programador]] — anedota do pai programador assembly migrando para C; tweet "90% desvalorizado / 10% mil vezes mais valioso"

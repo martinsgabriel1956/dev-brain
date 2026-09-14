@@ -3,8 +3,8 @@ type: entity
 title: "Claude Code"
 aliases: ["claude code cli"]
 date_created: 2026-05-18
-date_updated: 2026-08-27
-source_count: 15
+date_updated: 2026-09-14
+source_count: 17
 tags: [ferramenta, agentes-ia, anthropic, llmops, cli, mcp, hooks]
 skill: tech-mentor-ai
 status: stable
@@ -75,6 +75,14 @@ Esc            → para a execução atual
 
 As tools do Claude Code carregam descrições que entram no contexto do modelo — não é necessário nomear explicitamente qual ferramenta usar (ex.: "use o Playwright para testar isso"). Um pedido genérico como "testa aí no navegador" já é suficiente para o agente inferir e selecionar a ferramenta certa, embora nomear explicitamente também funcione e continue sendo válido quando há ambiguidade real entre ferramentas equivalentes.
 
+## Playbook da Anthropic com Startups Nativas de IA
+
+Segundo [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]], a Anthropic publicou um relatório/playbook baseado em entrevistas com mais de uma dúzia de startups de rápido crescimento usando o Claude Code, descrevendo um framework de cinco regras operacionais — ver [[wiki/concepts/sdlc-nativo-de-ia]]. Estatísticas citadas de segunda mão (não verificadas contra a publicação original): ClickHouse com 30% a mais de funcionalidades entregues, Clay com 100% de triagem de bugs automatizada, Artemis Security com mais de 6.000 PRs/semana.
+
+## Controvérsia: Claude Code Não Lê AGENTS.md
+
+O Claude Code lê apenas `CLAUDE.md`, não o formato compartilhado `AGENTS.md` usado por outros agentes (ex. Codex da OpenAI) — ver [[wiki/concepts/agents-md-vs-claude-md]] para a controvérsia pública com Tobi Lütke (CEO da [[wiki/entities/shopify]]) e a contradição registrada com outra fonte da wiki que já mencionava uma suposta preferência da Anthropic por `AGENTS.md`.
+
 ## Retenção de Dados de Sessão
 
 Sessões ficam retidas localmente em `~/.claude/projects` por padrão durante 30 dias, período configurável. Sessões individuais podem ser deletadas manualmente; enquanto não deletadas, ficam disponíveis para consulta, leitura ou análise.
@@ -121,8 +129,13 @@ O mecanismo de [[context-compaction]] da janela de contexto do Claude Code é um
 
 [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] afirma que o Claude Code se tornou open source no GitHub depois de um vazamento na Anthropic — o código do harness completo construído em volta dos modelos Claude estaria publicamente disponível para clonar e adaptar. **Confiança: não verificado nesta ingestão** — nenhuma outra fonte já presente na wiki confirma este claim, e a fonte não cita data, escopo (código completo vs. parcial) ou link do repositório. Tratar como afirmação do autor do vídeo até confirmação por fonte primária (anúncio oficial da Anthropic ou o próprio repositório).
 
+## Claim Não Verificado: "Cowork" Rodando na Nuvem via Claude Desktop App
+
+[[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] menciona, de passagem e com o próprio autor manifestando incerteza ("eu nem sei se a Anthropic tá utilizando isso"), que o Claude Desktop App teria divulgado a possibilidade de rodar tarefas de "cowork" na nuvem. Não fica claro se "cowork" se refere a uma feature distinta do Claude Code ou é confusão de nomenclatura com outro produto/feature da Anthropic (ex. execução remota de tarefas já documentada em outras fontes da wiki). **Confiança: baixa** — claim tangencial, sem detalhamento nem confirmação de fonte primária nesta ingestão.
+
 ## Key Sources
 
+- [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] — menção tangencial e não confirmada a "cowork" rodando na nuvem via Claude Desktop App
 - [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] — claim não verificado de ter se tornado open source no GitHub após um vazamento na Anthropic; citado como exemplo de meio-termo de controle de harness (entre Cursor e OpenClaw)
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — autopentest guiado (autenticação, IDOR, CSRF, XSS/SQLi, rate limiting, secrets, dependências); método de seis passos para prompt de segurança
 - [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] — citado como uma das ferramentas de vibe coding usadas para construir a aplicação posteriormente comprometida

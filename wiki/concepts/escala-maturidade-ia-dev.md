@@ -3,8 +3,8 @@ type: concept
 title: "Escala de Maturidade de IA para Devs"
 aliases: ["7 níveis de uso de IA", "escala de Steve", "niveis ia engenheiro", "maturidade ia dev"]
 date_created: 2026-06-01
-date_updated: 2026-06-01
-source_count: 1
+date_updated: 2026-09-14
+source_count: 2
 tags: [carreira, ia-engineering, modelo-mental, maturidade, niveis, delegacao, orquestracao]
 skill: tech-mentor-leadership
 status: draft
@@ -94,6 +94,10 @@ Raramente toca em código. Define arquitetura, contratos de API, especificaçõe
 
 ---
 
+## Contraponto Emocional ao Nível 4 — Nem Todo "Diretor" se Sente Bem Dirigindo
+
+[[wiki/sources/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico]] chega ao mesmo modelo mental do Nível 4 por um caminho independente — a metáfora de [[wiki/concepts/diretor-de-ia-metafora-do-cinema|diretor de cinema]] — mas contribui um ângulo que esta página não cobria: a progressão técnica correta (especificar comportamento, validar resultado, delegar execução) pode coexistir com falta de realização pessoal. O autor descreve o próprio papel como "babá de IA" — tecnicamente no nível certo, mas emocionalmente esvaziado, com ansiedade crescente atrelada à dependência da ferramenta (ver [[wiki/concepts/portabilidade-de-valor-profissional-na-era-da-ia]]). Isso não invalida o framework de maturidade técnica, mas separa duas dimensões que a escala, sozinha, trata como uma só: **capacidade de operar no nível** e **satisfação em operar nele**.
+
 ## O Paradoxo Central
 
 > Quanto mais alto o nível, **mais skill você precisa** — não menos.
@@ -127,7 +131,9 @@ Ver [[learning-gap-organizacional]] para a dimensão organizacional desse mesmo 
 - [[autonomia-tecnica]] — o paradoxo do nível 4: mais delegação exige mais autonomia e conhecimento
 - [[dependencia-ia]] — níveis 0–2 são a zona onde a relação com IA permanece passiva
 - [[rpi-workflow]] — o RPI é a implementação prática dos níveis 4–5
+- [[wiki/concepts/diretor-de-ia-metafora-do-cinema]] — mesmo mecanismo do Nível 4 via metáfora de cinema, com leitura emocional distinta
 
 ## Key sources
 
 - [[wiki/sources/escala-niveis-uso-ia-engenheiros]] — framework completo dos 7 níveis; paradoxo de skill; gargalo nível 2→4
+- [[wiki/sources/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico]] — contraponto emocional ao Nível 4: progressão técnica correta pode coexistir com falta de realização pessoal e ansiedade de dependência
