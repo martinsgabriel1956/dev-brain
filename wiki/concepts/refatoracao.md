@@ -3,8 +3,8 @@ type: concept
 title: "Refatoração"
 aliases: ["refactoring", "refatorar"]
 date_created: 2026-07-15
-date_updated: 2026-08-18
-source_count: 6
+date_updated: 2026-09-11
+source_count: 8
 tags: [refactoring, clean-code, craftsmanship, design-de-software, tech-debt]
 skill: tech-mentor-backend
 status: draft
@@ -93,9 +93,17 @@ Refatoração idealmente não é um "projeto" à parte que precisa de aprovaçã
 - **Evitar duplicação de documentação** — se não há um lugar óbvio único para uma decisão cross-module, o autor recomenda um arquivo central `designNotes` com referências curtas a partir de cada ponto do código afetado (exemplo real: o tratamento de "zombie servers" no sistema RAMCloud).
 - **Revisar o diff antes de commitar** — checagem manual de que cada mudança de código tem a documentação correspondente atualizada.
 
+## Extract Interface: uma refatoração estrutural de tipos, não de comportamento
+
+[[wiki/sources/extract-interface-xunitpatterns]] cataloga uma refatoração de Fowler mais restrita que as discutidas acima: **Extract Interface** — quando vários clientes usam apenas um subconjunto da interface de uma classe, ou duas classes compartilham parte do seu contrato, extrai-se esse subconjunto para uma interface própria. Diferente das refatorações de design/legibilidade tratadas nas seções anteriores, esta é puramente uma mudança de **vocabulário de tipos**: nada no comportamento observável muda. Ganhou relevância prática além do código de produção como pré-requisito técnico para instalar [[wiki/concepts/test-doubles|Test Doubles]] via [[wiki/concepts/dependency-injection|Dependency Injection]] em linguagens estaticamente tipadas — ver [[wiki/concepts/extract-interface]].
+
+## Extract Method: a refatoração-irmã que remove duplicação de comportamento, não de tipos
+
+[[wiki/sources/testcase-class-xunitpatterns]] cita uma segunda refatoração de Fowler no mesmo cluster xUnitPatterns.com, fácil de confundir com a anterior pelo nome parecido: **Extract Method**. Enquanto Extract Interface muda o vocabulário de *tipos* que os clientes enxergam, Extract Method extrai código duplicado (tipicamente entre Test Methods) para um método nomeado — no vocabulário de testes, um **Test Utility Method**. Meszaros a recomenda especificamente para evitar **Test Code Duplication**; o método extraído pode ficar na própria [[wiki/sources/testcase-class-xunitpatterns|Testcase Class]] ou ser movido para uma Testcase Superclass ou um Test Helper — nenhum dos dois com página própria ainda.
+
 ## Relacionado
 
-[[wiki/concepts/dois-chapeus-kent-beck]] · [[wiki/concepts/tech-debt-como-ferramenta]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/piramide-de-testes]] · [[wiki/concepts/god-object]] · [[wiki/concepts/entropia-de-software]] · [[wiki/concepts/essential-complexity]] · [[wiki/concepts/accidental-complexity]] · [[wiki/entities/martin-fowler]] · [[wiki/entities/kent-beck]] · [[wiki/concepts/comentarios-como-ferramenta-de-design]]
+[[wiki/concepts/dois-chapeus-kent-beck]] · [[wiki/concepts/tech-debt-como-ferramenta]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/piramide-de-testes]] · [[wiki/concepts/god-object]] · [[wiki/concepts/entropia-de-software]] · [[wiki/concepts/essential-complexity]] · [[wiki/concepts/accidental-complexity]] · [[wiki/entities/martin-fowler]] · [[wiki/entities/kent-beck]] · [[wiki/concepts/comentarios-como-ferramenta-de-design]] · [[wiki/concepts/extract-interface]]
 
 ## Key Sources
 
@@ -105,3 +113,4 @@ Refatoração idealmente não é um "projeto" à parte que precisa de aprovaçã
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — "ficar estratégico" ao modificar código existente; regras de manutenção de comentários (Cap. 16)
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — refatoração conduzida por IA com [[wiki/concepts/plan-mode|plan mode]] e [[wiki/concepts/strategy-pattern|Strategy]]; comportamento externo (interface do front end) preservado — mas a validação do resultado é visual/estrutural, sem os testes automatizados que esta página exige como garantia
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — catálogo de 9 code smells com régua de seis critérios (compreensível, testável, acoplamento, coesão, modular, manutenção) para decidir se um smell concreto justifica refatoração
+- [[wiki/sources/extract-interface-xunitpatterns]] — verbete de "Code Refactorings" (xUnitPatterns.com/Meszaros, conteúdo atribuído a Fowler): Extract Interface como refatoração estrutural de tipos, pré-requisito técnico para Test Doubles em linguagens estaticamente tipadas

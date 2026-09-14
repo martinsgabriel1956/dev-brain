@@ -3,16 +3,16 @@ type: entity
 title: "SUnit"
 aliases: ["sunit", "framework de teste caseiro de kent beck em smalltalk"]
 date_created: 2026-08-31
-date_updated: 2026-08-31
-source_count: 1
+date_updated: 2026-09-11
+source_count: 2
 tags: [testes, sunit, smalltalk, xunit, kent-beck]
 skill: tech-mentor-testing
-status: stub
+status: draft
 ---
 
 # SUnit
 
-Framework de testes unitários em **Smalltalk**, criado por [[wiki/entities/kent-beck]]. É citado por [[wiki/sources/xunit-xunitpatterns]] como um dos dois frameworks de referência (ao lado do [[wiki/entities/junit]]) sobre os quais o **padrão xUnit** é definido: "*qualquer Test Automation Framework de unit testing baseado no padrão do JUnit ou SUnit*".
+Framework de testes unitários em **Smalltalk**, criado por [[wiki/entities/kent-beck]]. É citado por [[wiki/sources/xunit-xunitpatterns]] como um dos dois frameworks de referência (ao lado do [[wiki/entities/junit]]) sobre os quais o **padrão xUnit** é definido: "*qualquer Test Automation Framework de unit testing baseado no padrão do JUnit ou SUnit*". O próprio verbete que o site xUnitPatterns.com dedica a ele — [[wiki/sources/sunit-xunitpatterns]], categoria **xUnit Members** — descreve o SUnit como autodenominado ("*self-proclaimed*") **"a mãe de todos os frameworks de teste unitário"**, disponível para download em http://sunit.sourceforge.net.
 
 ## Ancestral não-nomeado do JUnit
 
@@ -26,4 +26,5 @@ A wiki já documentava, via [[wiki/entities/c3-project]] e [[wiki/sources/xunit-
 
 ## Key Sources
 
-- [[wiki/sources/xunit-xunitpatterns]] — única fonte primária isolada até agora a nomear "SUnit" explicitamente
+- [[wiki/sources/xunit-xunitpatterns]] — primeira fonte a nomear "SUnit" explicitamente, dentro do verbete de glossário do termo "xUnit"
+- [[wiki/sources/sunit-xunitpatterns]] — verbete próprio da categoria xUnit Members, dedicado ao SUnit em si: tagline "a mãe de todos os frameworks de teste unitário", link de download
