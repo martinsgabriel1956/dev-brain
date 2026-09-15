@@ -3,8 +3,8 @@ type: concept
 title: "Sharding"
 aliases: ["database sharding", "particionamento horizontal", "shard", "shard key"]
 date_created: 2026-06-26
-date_updated: 2026-09-14
-source_count: 6
+date_updated: 2026-09-15
+source_count: 7
 tags: [system-design, banco-de-dados, sharding, escalabilidade, distribuido]
 skill: tech-mentor-system-design
 status: stub
@@ -59,6 +59,10 @@ Nem toda tabela tem FK para a entidade escolhida como shard key (ex.: num sistem
 
 Não faz sentido tentar fazer sharding de um monolito inteiro com centenas de tabelas: o resultado é fragmentar poucas tabelas centrais e replicar dezenas de outras em todo shard. A ordem correta é primeiro decompor o sistema em [[wiki/concepts/microsservicos]] guiados por [[wiki/concepts/ddd|DDD]] (bounded contexts) e só então aplicar sharding no banco de dados de um microsserviço específico, onde uma única entidade/shard key central faz sentido. Ver [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]].
 
+## Quando Sharding do Banco Não Basta: Clonar a Infraestrutura Inteira
+
+[[wiki/entities/nubank]] descobriu em 2016 que particionar só o banco de dados resolve apenas o gargalo do banco — se o gargalo real estiver em outro lugar (mensageria, batch job, rede, ou disponibilidade de máquinas na própria cloud), sharding tradicional não ajuda. A resposta foi um esquema de **[[wiki/concepts/cell-based-architecture|Scalability Units]]**: em vez de shard = partição de banco, shard = **cópia completa de toda a infraestrutura** (microsserviços, clusters Kafka dedicados, bancos de dados separados, redes isoladas). Hoje são 20 shards no Brasil, cada um servindo um grupo de clientes roteado no login. Isso é uma generalização de sharding para o nível de **[[wiki/concepts/cell-based-architecture|Cell-Based Architecture]]** — mesmo princípio de particionamento, aplicado à unidade de infraestrutura inteira em vez de só à camada de persistência. Ver [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]].
+
 ## Quando usar
 
 - Volume de dados supera a capacidade de um único servidor
@@ -92,3 +96,4 @@ Não faz sentido tentar fazer sharding de um monolito inteiro com centenas de ta
 - [[wiki/sources/particionamento-por-list-postgresql-sql-30-dias]] — particionamento por LIST citado como alternativa mais leve ao sharding físico (mesmo banco, roteamento por partição)
 - [[wiki/sources/particionamento-por-hash-postgresql-sql-30-dias]] — particionamento por HASH usado como analogia pedagógica de sharding pelo autor, que se corrige explicitamente: HASH roteia por cálculo automático mas continua numa única instância Postgres, sem distribuição física entre nós
 - [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]] — sharding manual do Postgres (não automático) vs. sharding nativo de MongoDB/DynamoDB, apresentado como critério de escolha ligado a leitura/escrita, não a formato do dado; ver [[wiki/concepts/criterios-de-escolha-de-banco-de-dados]]
+- [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — Scalability Units do Nubank: sharding generalizado para clone de infraestrutura inteira (não só banco), motivado por gargalos fora do banco de dados (Kafka, batch jobs, capacidade de máquinas na AWS)

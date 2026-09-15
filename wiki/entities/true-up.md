@@ -20,6 +20,11 @@ Segundo [[wiki/sources/ai-engineer-forward-deployed-engineer-mercado-vagas-2026]
 
 **Nota de confiança:** a metodologia exata de deduplicação/classificação não é detalhada na fonte além da alegação "agrega e deduplica"; os números são citados de segunda mão pelo autor do vídeo, sem link ou captura preservada nesta ingestão.
 
+## Tensão com Fonte Mais Recente Sobre Chegada ao Brasil
+
+[[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]] projeta chegada crescente de vagas de Forward Deployed Engineer ao Brasil "nos próximos meses" — em tensão (não contradição direta, pois uma é presente e outra é projeção) com o dado quantitativo do True Up acima, que mostra a vaga como praticamente inexistente no Brasil hoje. Ver open question registrada em [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]].
+
 ## Key Sources
 
-- [[wiki/sources/ai-engineer-forward-deployed-engineer-mercado-vagas-2026]] — única fonte que cita a ferramenta nesta wiki
+- [[wiki/sources/ai-engineer-forward-deployed-engineer-mercado-vagas-2026]] — única fonte que cita dados diretos da ferramenta nesta wiki
+- [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]] — projeção de chegada ao Brasil que tensiona com o dado quantitativo do True Up

@@ -3,8 +3,8 @@ type: concept
 title: "Quadrante de Fowler (Tech Debt)"
 aliases: ["quadrante fowler", "fowler tech debt quadrant", "tech debt quadrant"]
 date_created: 2026-06-02
-date_updated: 2026-07-28
-source_count: 2
+date_updated: 2026-09-15
+source_count: 3
 tags: [tech-debt, fowler, planejamento, engenharia, decisao]
 skill: tech-mentor-leadership
 status: stable
@@ -52,7 +52,12 @@ Se a feature sobreviver à validação e entrar em manutenção ativa, o debt de
 
 O quadrante decide *se* tomar dívida conscientemente, mas não diz quanto tempo alocar para pagá-la nem por onde começar. [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] cobre essa camada seguinte, hoje ausente desta página: modelos concretos de alocação de tempo (regra dos 20%, regra dos 25% do Shopify), mensuração formal via [[wiki/concepts/debt-ratio-sqale]] e priorização via [[wiki/concepts/hotspot-analysis]] e [[wiki/concepts/paid-framework]] — ver detalhamento em [[wiki/concepts/tech-debt-como-ferramenta]].
 
+## Reformulação Sem Vocabulário de Quadrante
+
+[[wiki/sources/fatores-nao-tecnicos-codigo-ruim-bons-desenvolvedores-bernardo-lobato]] chega ao mesmo raciocínio central por outra porta, sem citar Fowler nominalmente: pressão de prazo pode levar a um atalho racional, mas "a solução ideal deveria virar dívida técnica e ser tratada posteriormente com o devido rigor" — exatamente a definição de debt Prudente+Deliberado. A fonte adiciona uma ressalva importante do lado oposto: não normalizar qualquer atalho como "culpa do contexto" é tão importante quanto reconhecer o contexto real — ver [[wiki/concepts/fatores-nao-tecnicos-qualidade-de-codigo]].
+
 ## Key Sources
 
 - [[wiki/sources/5-principles-that-changed-me-as-a-programmer]]
 - [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] — modelos de alocação de tempo e mensuração formal, camada complementar ao quadrante
+- [[wiki/sources/fatores-nao-tecnicos-codigo-ruim-bons-desenvolvedores-bernardo-lobato]] — mesma lógica Prudente+Deliberado reformulada sem citar Fowler, com ressalva contra normalizar atalho como desculpa

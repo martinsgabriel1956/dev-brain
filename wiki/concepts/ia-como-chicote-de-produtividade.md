@@ -3,8 +3,8 @@ type: concept
 title: "IA como Chicote de Produtividade"
 aliases: ["chicote de produtividade", "ia obrigada", "adocao forcada ia", "ia sem autonomia"]
 date_created: 2026-04-26
-date_updated: 2026-08-10
-source_count: 2
+date_updated: 2026-09-15
+source_count: 3
 tags: [carreira, burnout, ia-produtividade, autonomia, gestao, transferencia-responsabilidade]
 skill: tech-mentor-leadership
 status: draft
@@ -70,7 +70,14 @@ Isso não é adoção de IA — é **transferência de responsabilidade**.
 
 O mesmo padrão de "ganho capturado pela empresa, carga transferida ao dev" aparece nos dados da Faros AI ([[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]]): o tempo economizado na escrita é imediatamente realocado para mais tarefas (+21%) e mais PRs, empilhando trabalho no gargalo de revisão (+91% no tempo de code review) — e 30% dos devs já batem nos limites de uso das ferramentas. É o [[wiki/concepts/paradoxo-da-aceleracao]] visto pelo ângulo da carga de trabalho: intensificação, não produtividade líquida.
 
+## Precedente Histórico: Toda Tecnologia de Comunicação Mais Rápida Aumentou a Disponibilidade Esperada
+
+[[wiki/sources/ia-produtividade-nao-reduz-trabalho-corrida-da-ia-profecia-autorrealizavel]] amplia o mecanismo desta página com um argumento histórico: carta → e-mail → mensagem instantânea (WhatsApp/SMS) — cada salto de velocidade de comunicação não reduziu a carga de trabalho, apenas aumentou a expectativa de disponibilidade (inclusive fora do expediente). A IA, na leitura da fonte, repete o padrão: empresas relatam funcionários "5 a 8x mais produtivos", mas ninguém trabalha proporcionalmente menos nem ganha proporcionalmente mais.
+
+Um caso concreto de chicote citado: gestor cobra semanalmente do funcionário quais ferramentas, skills e agentes de IA foram usados e quanto isso aumentou a produtividade — o funcionário relata que a experiência o deixa "entorpecido", não mais produtivo em sentido pleno. É a mesma estrutura já documentada nesta página (cobrança sem autonomia = intensificação, não produtividade), mas aplicada especificamente à métrica de *uso de IA* como alvo, o que conecta este caso a [[wiki/concepts/goodharts-law]] e ao novo conceito [[wiki/concepts/solucoes-gulosas-pressao-de-mercado]].
+
 ## Key Sources
 
 - [[sources/ia-salario-ou-carga-de-trabalho]]
 - [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]] — tempo economizado realocado para mais tarefas; gargalo de revisão e limites de uso como carga transferida ao dev
+- [[wiki/sources/ia-produtividade-nao-reduz-trabalho-corrida-da-ia-profecia-autorrealizavel]] — precedente histórico (comunicação mais rápida = mais disponibilidade esperada, não menos trabalho) e caso concreto de cobrança semanal de métricas de uso de IA

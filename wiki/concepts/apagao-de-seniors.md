@@ -3,8 +3,8 @@ type: concept
 title: "Apagão de Sêniors"
 aliases: ["apagão de devs sêniors", "senior dev blackout", "escassez de sêniors"]
 date_created: 2026-07-04
-date_updated: 2026-09-14
-source_count: 7
+date_updated: 2026-09-15
+source_count: 8
 tags: [vibe-coding, ia, carreira, fundamentos, senior]
 skill: tech-mentor-ai
 status: stub
@@ -32,6 +32,10 @@ Tese formulada em tweet do "Poker Dev", citada como gatilho em [[wiki/sources/ap
 ## Testes Automatizados Como Contenção do Risco de Apagão
 
 [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] contribui um mecanismo prático de mitigação: com a IA gerando volume de código maior do que qualquer humano consegue revisar linha a linha, o autor relata escrever mais testes automatizados do que nunca, tratando isso como validação determinística — a alternativa a depender só de revisão humana (não escalável) ou revisão de uma IA sobre outra IA (sem garantia). Não resolve o apagão de sêniors capazes de arquitetar, mas reduz um vetor de risco adjacente: bugs estruturais não detectados por volume de código gerado sem cobertura de teste correspondente.
+
+## Descartabilidade Como Consequência de Entregar Sem Aprender
+
+[[wiki/sources/ia-produtividade-nao-reduz-trabalho-corrida-da-ia-profecia-autorrealizavel]] conecta o apagão de sêniors a uma dinâmica de mercado, não só individual: sob pressão de entrega (ver [[wiki/concepts/solucoes-gulosas-pressao-de-mercado]]), o profissional entrega o resultado mas não adquire conhecimento — o que a fonte descreve como se tornar "um profissional mais descartável" no longo prazo. É o mesmo mecanismo do apagão visto do lado da motivação: não é só que menos gente aprende fundamentos por escolha, é que a estrutura de cobrança do mercado ativamente desincentiva parar para aprender.
 
 ## Manifestação Sem IA: Equipe Só de Júnior por Restrição de Caixa
 

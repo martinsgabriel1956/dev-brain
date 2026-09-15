@@ -3,7 +3,7 @@ type: source
 title: "Tokens: o Que São e Por Que Custam Tão Caro"
 aliases: ["por que output custa mais que input", "tokens de verdade explicado", "GPT-4o vs Claude Opus tokens"]
 date_created: 2026-08-17
-date_updated: 2026-08-17
+date_updated: 2026-09-15
 source_count: 0
 tags: [tokens, tokenizacao, llm-fundamentals, token-economics, autoregressive, bpe, vocabulario, precificacao-llm]
 skill: tech-mentor-ai
@@ -57,7 +57,7 @@ Explica desde a base por que LLMs precisam converter texto em tokens (elas só o
 
 - O autor assume que o vocabulário do tokenizer da Anthropic é menor que o do GPT-4o com base apenas na contagem de tokens observada — a Anthropic não divulga publicamente o tamanho do vocabulário nem o algoritmo exato do tokenizer. Fica em aberto se a diferença observada (quase 2x mais tokens) vem só do tamanho do vocabulário ou também de outras decisões de tokenização (ex.: tratamento de espaços, maiúsculas, acentuação em português).
 - Os valores de preço citados (Opus ~$5/$25 por milhão de tokens input/output) não foram cross-checados contra a tabela de preços oficial vigente da Anthropic nesta ingestão — tratar como aproximação da fonte, não como preço confirmado.
-- A fonte não menciona [[wiki/concepts/kv-cache]] nem prompt caching como técnicas que mitigam parcialmente o custo do reprocessamento autorregressivo descrito — é uma lacuna frente ao que já está registrado em [[wiki/concepts/kv-cache]] e em `references/ai/token-economics.md` (skill tech-mentor-ai).
+- ~~A fonte não menciona [[wiki/concepts/kv-cache]] nem prompt caching como técnicas que mitigam parcialmente o custo do reprocessamento autorregressivo descrito~~ — lacuna preenchida por [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]] (2026-09-15), que cobre [[wiki/concepts/prompt-caching]] em detalhe. Ressalva: aquela fonte trata do custo de reprocessamento do **input**/prefixo (mitigado por cache), enquanto esta fonte trata do custo estrutural do **output** (geração autorregressiva token a token) — mecanismos complementares, não o mesmo fenômeno.
 
 ## Raw Quotes
 

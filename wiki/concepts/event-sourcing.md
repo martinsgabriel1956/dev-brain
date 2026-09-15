@@ -3,8 +3,8 @@ type: concept
 title: "Event Sourcing"
 aliases: ["event store", "append-only log", "eventsourcing"]
 date_created: 2026-05-31
-date_updated: 2026-09-01
-source_count: 8
+date_updated: 2026-09-15
+source_count: 9
 tags: [event-sourcing, arquitetura, cqrs, ddd, imutabilidade, fintech]
 skill: tech-mentor-backend
 status: stable
@@ -122,6 +122,10 @@ A mesma fonte descreve a arquitetura de referência para aplicar o padrão por c
 
 [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] lista quatro cenários reais (relato de experiência do apresentador, sem nomes de empresa) onde aplicou Event Sourcing: (1) **[[wiki/concepts/saga-pattern|Saga]]** — necessário para garantir contexto transacional sem transação de banco real, permitindo desfazer etapas em caso de falha; (2) **opt-in/[[wiki/concepts/compliance|LGPD]]** — histórico de consentimento do cliente e broadcast confiável de mudanças para parceiros (cobrança, marketing); (3) **auditoria de segurança financeira** — adotado após uma empresa sofrer auditoria sem os dados necessários; (4) **faturamento de telecomunicações** — controle de consumo (dados, voz, pacotes) sujeito a fiscalização da Anatel; segundo o autor, raríssimas operadoras aplicam o padrão corretamente, mas as que aplicam conseguem justificar rapidamente cada lançamento ao regulador.
 
+## "Modelamos Tudo Como Stream Processing" (Nubank, 2025)
+
+Reforço de segunda fonte para o mesmo caso: uma citação atribuída à InfoQ sobre a arquitetura atual do Nubank (72 bilhões de eventos/dia) — "até batch jobs são distribuídos como streams de mensagens no Kafka". Não é um detalhe novo de princípio (já coberto acima em "Uso no Nubank"), mas confirma que o compromisso com event sourcing/stream processing se manteve como filosofia de arquitetura à medida que a empresa escalou de milhões para 122 milhões de clientes — não foi abandonado em favor de processamento em lote tradicional conforme o volume cresceu. Ver [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]].
+
 ## Key Sources
 
 - [[wiki/sources/cqrs-martin-fowler]] — post original do bliki (2011) já lista Event Sourcing como padrão que combina naturalmente com CQRS
@@ -132,3 +136,4 @@ A mesma fonte descreve a arquitetura de referência para aplicar o padrão por c
 - [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]] — exemplo do Datomic/Nubank como banco imutável; conceito de Command Sourcing (Greg Young)
 - [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — placar de futebol como exemplo concreto de estado derivado de uma timeline via Kafka; custo de recalcular a timeline a cada leitura como motivação prática para cache de estado pré-computado
 - [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — variante leve via insert + flag `enabled` sem event store completo; arquitetura de referência (streaming + componente de registro + componente de replay); cases de mercado (Saga, opt-in/LGPD, auditoria financeira, faturamento de telecom sob fiscalização Anatel); prós/contras consolidados (reprodutibilidade total vs. volume de dados/complexidade/tempo de desenvolvimento)
+- [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — reforço de segunda fonte: filosofia de stream processing mantida em escala (72 bilhões de eventos/dia), batch jobs modelados como streams

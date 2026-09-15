@@ -3,9 +3,9 @@ type: entity
 title: "OpenAI"
 aliases: ["Open AI"]
 date_created: 2026-05-17
-date_updated: 2026-09-14
-source_count: 18
-tags: [openai, organização, llm, ia, cartao-corporativo]
+date_updated: 2026-09-15
+source_count: 19
+tags: [openai, organização, llm, ia, cartao-corporativo, prompt-caching]
 skill: tech-mentor-ai
 status: stable
 ---
@@ -57,6 +57,10 @@ Segundo [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-segur
 
 Segundo [[wiki/sources/porque-nunca-confiar-em-llm-alucinacao]], a OpenAI publicou pesquisa própria sobre por que LLMs alucinam: os procedimentos padrão de treinamento e avaliação recompensam o palpite em vez do reconhecimento de incerteza, e a conclusão do próprio paper é que a precisão nunca chegará a 100% — independente do tamanho do modelo, algumas perguntas do mundo real são inerentemente irrespondíveis. Ver [[wiki/concepts/alucinacao-llm]].
 
+## Adoção do Modelo Forward Deployed Engineer
+
+Segundo [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]], a OpenAI é citada, junto com [[wiki/entities/anthropic]], [[wiki/entities/cohere]] e [[wiki/entities/cognition]], como uma das empresas de IA que adotaram o modelo [[wiki/concepts/forward-deployed-engineer]] (origem: [[wiki/entities/palantir]]) para integrar suas soluções em clientes Enterprise. Citado sem link/vaga específica — confiança média.
+
 ## Anthropic Ultrapassa a OpenAI no Cartão Corporativo (Abril 2026)
 
 Segundo [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]], em abril a OpenAI caiu para 32,3% de participação em % de empresas americanas usando cartão corporativo para seus serviços, sendo ultrapassada pela Anthropic (34,4%) pela primeira vez — fonte primária do dado não identificada na transcrição, tratar como não confirmado externamente. Ver [[wiki/entities/anthropic]].
@@ -98,3 +102,5 @@ Segundo [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]], mesmo co
 - [[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] — demo ao vivo de chatbot em ~10 linhas de Python via Responses API (`gpt-5`), usada para ensinar a distinção system prompt/user prompt
 - [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — GPT 5.6 "Sol" citado como melhor modelo de coding puro mesmo após lançamento do Opus 5; recomendado para codar business workflows
 - [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] — ataque de destilação atribuído à Alibaba (~25 mil contas falsas), citado como caso mais emblemático conhecido
+- [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]] — citada como uma das empresas de IA que adotam o modelo Forward Deployed Engineer
+- [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]] — citada como caso mais simples de prompt caching: cache implícito/automático, sem configuração manual, ao contrário do breakpoint explícito da Anthropic

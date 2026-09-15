@@ -3,9 +3,9 @@ type: entity
 title: "DeepSeek"
 aliases: ["Deep Seek", "DeepSeek AI"]
 date_created: 2026-07-21
-date_updated: 2026-07-31
-source_count: 2
-tags: [deepseek, china, llm, open-source, organização]
+date_updated: 2026-09-15
+source_count: 3
+tags: [deepseek, china, llm, open-source, organização, prompt-caching]
 skill: tech-mentor-ai
 status: stub
 ---
@@ -27,3 +27,4 @@ Lab de IA chinês, criador de modelos open source considerados referência de cu
 
 - [[wiki/sources/kimi-k3-china-mercado-ia-open-source]]
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — DeepSeek V4 como referência de custo-benefício, ~70× mais barato por tarefa que o Fable
+- [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]] — citado (via [[wiki/entities/openrouter]]) como exemplo de modelo que aceita [[wiki/concepts/prompt-caching]] com prompts pequenos, mínimo de tokens não verificado nesta ingestão

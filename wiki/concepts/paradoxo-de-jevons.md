@@ -3,8 +3,8 @@ type: concept
 title: "Paradoxo de Jevons"
 aliases: ["jevons paradox", "efeito rebote", "rebound effect", "paradoxo jevons ia"]
 date_created: 2026-05-31
-date_updated: 2026-09-14
-source_count: 4
+date_updated: 2026-09-15
+source_count: 5
 tags: [paradoxo-de-jevons, token-economics, era-agentica, custo-ia, economia]
 skill: tech-mentor-ai
 status: stable
@@ -68,9 +68,14 @@ O caso Uber (orçamento de IA de 2026 estourado em 4 meses) já estava registrad
 
 A conclusão da fonte é que o caso da profissão de dev de software se parece mais com radiologia/ATM (mais software barato → mais software construído → mais gente para mantê-lo) do que com mecanização agrícola — mas isso é apresentado como expectativa/previsão do autor, não como resultado observado no mercado de trabalho de dev.
 
+## Efeito Rebote no Nível do Tempo de Trabalho Individual
+
+[[wiki/sources/ia-produtividade-nao-reduz-trabalho-corrida-da-ia-profecia-autorrealizavel]] aplica a mesma lógica de rebote a um terceiro nível, além de custo de token (organizacional) e headcount (emprego): **carga horária individual**. O argumento histórico: cada ganho de eficiência em comunicação (carta → e-mail → mensagem instantânea) não reduziu a carga de trabalho — aumentou a expectativa de disponibilidade. A IA, segundo a fonte, repete o padrão: "5 a 8x mais produtivo" não se traduz em trabalhar proporcionalmente menos. É estruturalmente o mesmo mecanismo (eficiência maior expande o total consumido — aqui, horas/tarefas — em vez de reduzir proporcionalmente o esforço), mas no nível da experiência individual do trabalhador, não da conta da empresa ou do total de empregos no setor. Ver também [[wiki/concepts/ia-como-chicote-de-produtividade]], que documenta o mesmo padrão com foco no mecanismo organizacional (cobrança sem autonomia).
+
 ## Key Sources
 
 - [[wiki/sources/ia-custo-roi-bolha-ou-realidade]]
+- [[wiki/sources/ia-produtividade-nao-reduz-trabalho-corrida-da-ia-profecia-autorrealizavel]] — efeito rebote aplicado à carga de trabalho individual (comunicação mais rápida → mais disponibilidade esperada, não menos trabalho)
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] — segunda confirmação do caso Uber, com crítica do CEO da Palantir ao timing token maxing vs. ROI
 - [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] — aplicação do mesmo mecanismo a headcount/emprego em vez de custo de token
 - [[wiki/sources/ia-paradoxo-de-jevons-camada-de-abstracao-futuro-do-programador]] — três casos históricos adicionais (radiologia/Hinton, ATM/Bessen, mecanização agrícola como contraexemplo) aplicando o paradoxo a emprego, não a custo de inferência

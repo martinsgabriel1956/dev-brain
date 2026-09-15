@@ -3,8 +3,8 @@ type: entity
 title: "Bernardo Lobato"
 aliases: ["Bernardo Lobato"]
 date_created: 2026-06-05
-date_updated: 2026-09-14
-source_count: 15
+date_updated: 2026-09-15
+source_count: 16
 tags: [arquitetura-software, segurança, criador-de-conteudo, youtube, backend]
 skill: tech-mentor-security
 status: stub
@@ -16,6 +16,7 @@ Desenvolvedor e criador de conteúdo brasileiro. Publica vídeos toda sexta-feir
 
 ## Key Sources
 
+- [[wiki/sources/fatores-nao-tecnicos-codigo-ruim-bons-desenvolvedores-bernardo-lobato]] — vídeo curto/reflexivo fora da série técnica hands-on: framework de quatro fatores não técnicos (pressão de prazo, contexto do projeto, conhecimento incompleto, incentivos organizacionais) que explicam código abaixo do potencial mesmo de bons profissionais
 - [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]] — vídeo introdutório de uma série planejada sobre refatoração
 - [[wiki/sources/api-gateway-padrao-essencial-arquiteturas-distribuidas]] — primeiro vídeo de uma série planejada sobre padrões de integração de aplicações

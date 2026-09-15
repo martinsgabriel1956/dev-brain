@@ -3,8 +3,8 @@ type: entity
 title: "Clojure"
 aliases: ["clj", "clojurescript", "cljs"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 1
+date_updated: 2026-09-15
+source_count: 2
 tags: [clojure, lisp, jvm, programacao-funcional, imutabilidade]
 skill: tech-mentor-backend
 status: draft
@@ -40,3 +40,4 @@ A JVM oferece bibliotecas para criptografia, networking, serialização, logging
 ## Key Sources
 
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
+- [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — reforço da tese de imutabilidade (dados que não mudam eliminam classes inteiras de bugs em sistemas concorrentes), sem detalhe técnico novo sobre a linguagem em si

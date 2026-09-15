@@ -3,8 +3,8 @@ type: concept
 title: "Code Review"
 aliases: ["revisão de código", "pull request review", "PR review"]
 date_created: 2026-07-03
-date_updated: 2026-08-13
-source_count: 17
+date_updated: 2026-09-15
+source_count: 18
 tags: [code-review, qualidade, carreira, júnior, mentoria, grill-me, babysitting-de-agentes, quality-gate, under-engineering]
 skill: tech-mentor-leadership
 status: draft
@@ -95,6 +95,10 @@ Duas técnicas concretas para reduzir esse inventário sem sacrificar qualidade:
 
 Também cita **checklists de PR** (ex.: "criei testes de integração", "testei localmente", "testei em staging") como camada adicional de qualidade usada por algumas empresas antes do merge.
 
+## A Armadilha de Julgar Código Fora de Contexto
+
+[[wiki/sources/fatores-nao-tecnicos-codigo-ruim-bons-desenvolvedores-bernardo-lobato]] descreve o risco central de revisar/criticar código legado sem contexto suficiente: comparar aquele código com o que se escreveria "começando do zero hoje" é uma comparação injusta, porque ignora restrições reais (dependências, decisões anteriores, contratos de API que não podem ser quebrados) que o código imaginado do zero nunca vai encontrar. Isso é diferente do critério "regra de negócio primeiro" já documentado nesta página — aqui o erro não é sobre prioridade de revisão, é sobre atribuir a qualidade do código apenas à competência de quem escreveu, sem considerar o contexto de produção. Ver [[wiki/concepts/julgar-codigo-fora-de-contexto]] para o mecanismo detalhado.
+
 ## Relacionado
 
 - [[wiki/concepts/definicao-de-pronto]] — code review é um dos critérios de "pronto"
@@ -104,6 +108,7 @@ Também cita **checklists de PR** (ex.: "criei testes de integração", "testei 
 - [[wiki/concepts/divida-cognitiva]] — code review como checkpoint contra fragmentação de entendimento compartilhado em times com IA
 - [[wiki/concepts/rebase-vs-merge]] — rebase local antes do PR, merge para integrar
 - [[wiki/concepts/inventario-e-custo]] — PR aberto como inventário parado; base do argumento de cadência de revisão diária
+- [[wiki/concepts/julgar-codigo-fora-de-contexto]] — risco de atribuir código legado ruim à competência do dev, ignorando restrições reais de produção
 
 ## Ler por Categoria de Mudança, Não Tudo de Uma Vez
 
@@ -124,6 +129,7 @@ A tensão que explica a diferença: responsabilizar cada dev pelo que coloca em 
 
 ## Key Sources
 
+- [[wiki/sources/fatores-nao-tecnicos-codigo-ruim-bons-desenvolvedores-bernardo-lobato]] — armadilha de julgar código legado fora de contexto, comparando-o com código greenfield imaginário
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]]
 - [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — estratificação do review por porte da empresa; accountability individual × substituibilidade; review em time grande como QA de contexto (arquitetura/padrões/requisitos)
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]

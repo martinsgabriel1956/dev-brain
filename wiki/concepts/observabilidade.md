@@ -3,8 +3,8 @@ type: concept
 title: "Observabilidade"
 aliases: ["observabilidade", "observability", "três pilares", "metrics logs traces"]
 date_created: 2026-04-22
-date_updated: 2026-08-14
-source_count: 11
+date_updated: 2026-09-15
+source_count: 12
 tags: [observabilidade, metricas, logs, traces, prometheus, sre, infraestrutura]
 skill: tech-mentor-system-design
 status: stable
@@ -159,6 +159,10 @@ Framing didático direto: quando alguém reporta lentidão, a pergunta não é "
 
 A entrada de agentes de IA na pipeline adiciona uma pergunta específica aos três pilares clássicos: como fazer **tracing de um LLM** — a chamada de um agente para outro, e a latência entre cada salto de uma cadeia multiagente. O Open Telemetry está incorporando instrumentação orientada a IA para cobrir esse caso, na mesma lógica de Collector centralizando formatação e roteamento já documentada acima. Ver [[wiki/concepts/llm-evals-testing]] para a contraparte de avaliação pré-deploy (evals), que complementa — sem substituir — observabilidade em produção.
 
+## Build vs. Buy em Escala: Caso Alexandria (Nubank)
+
+[[wiki/entities/alexandria-nubank|Alexandria]], a plataforma de observabilidade construída internamente pelo [[wiki/entities/nubank]], é um caso concreto de quando abandonar uma solução de terceiros: com 600 TB de logs/dia, a conta da solução externa cresceu a ponto de — citação atribuída ao site do Nubank — "poderíamos contratar o Lionel Messi como engenheiro de software pagando o mesmo valor que pagávamos pela solução externa". A arquitetura resultante: ingestão em microbatch via [[wiki/concepts/kafka|Kafka]], processamento com filtros/agregações customizados, storage em S3 colunar com 95% de compressão, e query engine distribuída — 50% mais barata que a solução anterior, com controle total sobre os dados. Reforça, com um número de custo extremo e citável, a heurística já conhecida de engenharia de plataforma: em volume baixo/médio, comprar quase sempre vence construir; a inflexão para construir aparece quando o custo marginal do fornecedor deixa de escalar sublinearmente com o volume. Ver [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]].
+
 ## Relacionado
 
 [[concepts/sli]] · [[concepts/slo]] · [[concepts/error-budget]] · [[concepts/blameless-post-mortem]] · [[concepts/circuit-breaker]] · [[concepts/service-mesh]] · [[wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp]]
@@ -176,3 +180,4 @@ A entrada de agentes de IA na pipeline adiciona uma pergunta específica aos tr�
 - [[wiki/sources/sre-capacidade-observabilidade-confiabilidade-custo]] — observabilidade como visão fim-a-fim do fluxo/traceability em resposta a "tá muito lento"; insumo direto do planejamento de capacidade
 - [[wiki/sources/monitoramento-aplicacoes-ia-grafana-cloud-opentelemetry]] — onboarding prático do Grafana Cloud (plano gratuito permanente, data sources automáticos), boa prática de batch de telemetria, e tensão não resolvida entre modo "Direct" e a regra de sempre passar pelo Collector
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — tracing de LLM e latência entre chamadas de agentes como extensão dos três pilares clássicos; Open Telemetry incorporando instrumentação orientada a IA
+- [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — caso Alexandria: plataforma de logs construída internamente por custo de escala (600 TB/dia), arquitetura de 4 componentes (ingestão Kafka microbatch, processamento, storage S3 colunar 95% compressão, query engine distribuída), 50% mais barata que a solução terceirizada anterior

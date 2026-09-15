@@ -3,8 +3,8 @@ type: concept
 title: "Dívida Cognitiva"
 aliases: ["divida cognitiva", "cognitive debt", "acumulo de falta de entendimento", "debt cognitivo"]
 date_created: 2026-04-23
-date_updated: 2026-07-16
-source_count: 4
+date_updated: 2026-09-15
+source_count: 5
 tags: [divida-cognitiva, saude-mental, ai-brainfry, tech-debt, modelo-mental, agentes-ia]
 skill: tech-mentor-ai
 status: stable
@@ -93,9 +93,14 @@ Ver também: [[concepts/ia-como-chicote-de-produtividade]] para o contraste com 
 
 [[wiki/sources/atrofia-cognitiva-ia-programacao]] traz um contraponto útil: esquecer *sintaxe* (escrever um `for` loop de cabeça) não é dívida cognitiva — é irrelevante, já era resolvido por autocomplete e Google antes da IA. Ver [[wiki/concepts/sintaxe-vs-conhecimento-perene]]. A dívida cognitiva real está em outro lugar: no PR "refatorado com base na saída do ChatGPT" que o próprio autor não consegue explicar — abdicação de julgamento, não esquecimento de teclado.
 
+## `[external]` Possível Evidência Empírica: Estudo da Anthropic sobre Formação de Habilidade
+
+[[wiki/sources/ia-produtividade-nao-reduz-trabalho-corrida-da-ia-profecia-autorrealizavel]] cita, de segunda mão, um artigo da Anthropic ("How AI Impacts Skills Formation") sobre devs aprendendo uma biblioteca Python pouco conhecida com apoio de LLM: quem usou LLM resolveu o problema, mas em geral não conseguia articular bem o que tinha feito. Se confirmado na fonte primária (ainda não lida nesta wiki), isso seria evidência direta e medida de dívida cognitiva — o padrão "resolve mas não entende" é exatamente o sintoma central desta página. Tratado como Confidence Baixa até a fonte original ser localizada.
+
 ## Key Sources
 
 - [[sources/divida-cognitiva-ai-brainfry]] — fonte secundária (HBR), citava Storey sem ser a fonte primária
+- [[wiki/sources/ia-produtividade-nao-reduz-trabalho-corrida-da-ia-profecia-autorrealizavel]] — citação de segunda mão de estudo da Anthropic sobre formação de habilidade (resolve mas não articula o que fez)
 - [[sources/addy-osmani-80-problem-agentic-coding]]
 - [[sources/ia-salario-ou-carga-de-trabalho]]
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]] — distingue esquecimento de sintaxe (irrelevante) de dívida cognitiva real (perda de julgamento e capacidade de explicar decisões)

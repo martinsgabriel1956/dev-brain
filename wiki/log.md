@@ -10292,3 +10292,132 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 **Notas / open questions:** (1) **Fecha a lacuna mais citada do cluster** — "Testcase Class", "Test Suite Factory" e "Test Method" eram citados de passagem em pelo menos cinco fontes já ingeridas sem nunca ter fonte primária dedicada; esta ingestão fecha três das quatro pontas (Testcase Class, Test Method, e a mecânica da Test Suite Factory), mas **Test Suite Factory em si** segue sem verbete isolado — o link original do site aponta para `Test Enumeration.html#Test Suite Factory`, ainda não ingerido. (2) **Achado novo não solicitado**: a fonte nomeia VbUnit e NUnit como frameworks que chamam a própria Testcase Class de "test fixture" — dado que a wiki conecta (como hipótese, não fato) à observação já registrada de que JUnit "e seus ports diretos" mantêm test context e Testcase Class separados, sugerindo que VbUnit/NUnit podem ser exatamente os frameworks fora desse grupo. (3) **Três termos novos sem página própria**: Testcase Superclass, Test Helper e Test Utility Method — os três destinos possíveis para código extraído via Extract Method — citados pela primeira vez na wiki, candidatos à próxima ingestão do cluster (categorias "Fixture Setup Patterns"/"Test Organization" do site provavelmente os cobrem). (4) **Terceiro sentido de "fixture" registrado sem elaboração**: o framework Fit usa "fixture" para o Adapter [GOF] que implementa um Data-Driven Test (Interpreter [GOF]) — nenhum dos três termos (Fit, Data-Driven Test, Interpreter neste sentido) tem página própria; ficam como open question, não como stub, por serem citados apenas de passagem na seção "Further Reading". (5) **Falha de ferramenta recorrente**: WebFetch com `ECONNREFUSED` para `xunitpatterns.com` pela segunda vez consecutiva nesta série de ingestões — reforça a hipótese de bloqueio de rede específico da ferramenta, não do host.
 
 ---
+
+## [2026-09-15] ingest | Por Dentro da Arquitetura do Nubank: Como Escalar para 122 Milhões de Clientes
+
+**Source:** [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — transcrição de vídeo em português (autor não identificado no áudio), colada diretamente pelo usuário no chat, sem pontuação nem parágrafos. Transformada em Markdown estruturado com correções leves de ASR (ex.: "acassinou" → "acessando") e salva em `raw/nubank-arquitetura-escala-122-milhoes-clientes.md`. Nenhuma tradução necessária (fonte já em pt-BR). Distinta de [[wiki/sources/nubank-clojure-datomic-event-sourcing]] (já ingerida em 2026-05-31, mesmo tema Clojure/Datomic mas vídeo/canal diferente) — nome de arquivo escolhido para não colidir.
+
+**Skill carregada:** `tech-mentor-backend` — `SKILL.md` lido em `/home/gabriel-martins/Documentos/skills/tech-mentor-backend/SKILL.md` (caminho real desta máquina; o caminho documentado no CLAUDE.md do repositório, `/home/nemomartins/Documentos/new/skills/`, não existe neste host — `/home/nemomartins` não existe). Referência específica consultada: `references/architecture-resilience-patterns.md` (seção Cell-Based Architecture, usada para nomear formalmente o padrão por trás das "Scalability Units" do vídeo) e `references/architecture/db-sharding.md` (contraste entre sharding de banco tradicional e o que o vídeo descreve).
+
+**Arquivos criados:**
+- `raw/nubank-arquitetura-escala-122-milhoes-clientes.md` — transcrição estruturada em Markdown
+- `wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes.md` — TL;DR, 7 claims principais, entidades/conceitos tocados, open questions, citações brutas
+- `wiki/concepts/cell-based-architecture.md` — novo stub: padrão já coberto pela skill `tech-mentor-backend` mas sem página própria na wiki até agora; Scalability Units do Nubank como caso real principal
+- `wiki/entities/alexandria-nubank.md` — novo stub: plataforma de observabilidade/logs construída internamente pelo Nubank
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/entities/nubank.md` — `source_count` 3 → 4; TL;DR e Perfil atualizados com números de 2025 (122M clientes vs. 100M antes, 4.000+ microsserviços, 20 shards, 600TB logs/dia, 450M eventos antifraude/dia); nova linha na tabela de Decisões Técnicas (sharding, observabilidade); nova seção "Escala e Autorização de Transação"; nova linha em Key Sources
+- `wiki/entities/clojure.md` — `source_count` 1 → 2; nova linha em Key Sources (reforço, sem detalhe técnico novo)
+- `wiki/concepts/datomic.md` — `source_count` 3 → 4; nova seção "Arquitetura Interna: Transactor + Peers" (detalhe não presente na fonte original desta página); nova linha em Key Sources
+- `wiki/concepts/kafka.md` — `source_count` 5 → 6; nova seção "Escala em Produção: Nubank (72 bilhões de eventos/dia)"; nova linha em Key Sources
+- `wiki/concepts/event-sourcing.md` — `source_count` 8 → 9; nova seção curta de reforço ("Modelamos Tudo Como Stream Processing"); nova linha em Key Sources
+- `wiki/concepts/cqrs.md` — `source_count` 9 → 10; nova seção "Caso Real: CQRS Aplicado à Latência do Caminho Crítico (Nubank)" — autorização de transação 10.000ms → 288ms P90; nova linha em Key Sources
+- `wiki/concepts/sharding.md` — `source_count` 6 → 7; nova seção "Quando Sharding do Banco Não Basta: Clonar a Infraestrutura Inteira", cross-link para o novo `cell-based-architecture`; nova linha em Key Sources
+- `wiki/concepts/microsservicos.md` — `source_count` 19 → 20; nova seção "Caso de Escala Extrema: 4.000+ Microsserviços no Nubank"; nova linha em Key Sources
+- `wiki/concepts/observabilidade.md` — `source_count` 11 → 12; nova seção "Build vs. Buy em Escala: Caso Alexandria (Nubank)"; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (Arquitetura Backend & Event-Driven → cell-based-architecture); duas linhas em Entities (nubank atualizada, alexandria-nubank nova); `date_updated` do índice atualizado
+
+**Notas / open questions:** (1) **Nenhuma fonte primária localizada nesta ingestão** — o vídeo cita repetidamente "o site do Nubank" (citações de Edward Wible, "Lionel Messi", limites da AWS em 2016) sem URL visível; todas as claims atribuídas foram registradas como Confidence Média, não Alta, até uma ingestão futura localizar e linkar o(s) post(s) originais de engenharia do Nubank. (2) **Preenche uma lacuna real da skill**: `tech-mentor-backend/references/architecture-resilience-patterns.md` já documentava Cell-Based Architecture, mas a wiki nunca tinha criado a página correspondente — esta ingestão fecha essa lacuna usando o caso Nubank como motivador. (3) **Divergência de contagem de clientes**: a wiki registrava 100M clientes (fonte de 2026-05-31); esta fonte reporta 122M (dado de 2025) — tratado como atualização, não contradição, já que são momentos diferentes no tempo; `wiki/entities/nubank.md` documenta ambos os números com a data implícita de cada um. (4) **Caminho de skills divergente do CLAUDE.md**: o `CLAUDE.md` do repositório aponta para `/home/nemomartins/Documentos/new/skills/`, path que não existe nesta máquina (usuário real é `gabriel-martins`); o carregamento foi feito a partir do path real (`/home/gabriel-martins/Documentos/skills/`). Logs anteriores desta wiki registram o path do CLAUDE.md como se existisse ("path existe nesta máquina") — não confirmado nesta sessão; provavelmente uma inconsistência herdada de sessões anteriores que não verificaram o filesystem diretamente. (5) **DAG do orquestrador antifraude não tem página própria** — citado só de passagem em `wiki/entities/nubank.md`; se uma fonte futura aprofundar orquestração baseada em grafo (Temporal, Step Functions, ou implementação própria), considerar stub dedicado.
+
+---
+
+## [2026-09-15] ingest | Fatores Não Técnicos que Explicam Código Ruim de Bons Desenvolvedores
+
+**Source:** [[wiki/sources/fatores-nao-tecnicos-codigo-ruim-bons-desenvolvedores-bernardo-lobato]] — transcrição de vídeo colada diretamente pelo usuário no chat (texto corrido, sem pontuação/parágrafos), já em português (sem necessidade de tradução). Transformada em Markdown estruturado (títulos por fator, CTAs de like/inscrição preservados conforme convenção já usada em outras fontes de Bernardo Lobato) e salva em `raw/fatores-nao-tecnicos-codigo-ruim-bons-desenvolvedores-bernardo-lobato.md`.
+
+**Skill carregada:** `tech-mentor-leadership` — `SKILL.md` lido em `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/SKILL.md` (path real confirmado nesta máquina; reforça a nota já registrada na ingestão anterior sobre o CLAUDE.md apontar para `/home/nemomartins/...`, que não existe neste host). Referências específicas consultadas: `references/tech-debt-management.md` (Quadrante de Fowler, distinção "debt real" vs. "reckless debt" vs. "não é debt") e `references/engineering-metrics.md` (seção Goodhart's Law, SPACE Framework — Activity gamificável). Ambas confirmam, sem contradizer, o que a wiki já tinha registrado sobre esses dois conceitos.
+
+**Arquivos criados:**
+- `raw/fatores-nao-tecnicos-codigo-ruim-bons-desenvolvedores-bernardo-lobato.md`
+- `wiki/sources/fatores-nao-tecnicos-codigo-ruim-bons-desenvolvedores-bernardo-lobato.md` — TL;DR, 5 claims principais, entidades/conceitos tocados, open questions, fontes relacionadas
+- `wiki/concepts/fatores-nao-tecnicos-qualidade-de-codigo.md` — novo stub: o framework central da fonte (4 fatores), sem página própria até agora apesar dos fatores individuais já estarem espalhados pela wiki
+- `wiki/concepts/julgar-codigo-fora-de-contexto.md` — novo stub: a armadilha específica de comparar código legado com código greenfield imaginário, mecanismo citado na fonte mas sem página própria
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/quadrante-de-fowler.md` — `source_count` 2 → 3; nova seção "Reformulação Sem Vocabulário de Quadrante"; nova linha em Key Sources
+- `wiki/concepts/tech-debt-como-ferramenta.md` — `source_count` 16 → 17; nova seção sobre o framework de 4 fatores; nova linha em Key Sources
+- `wiki/concepts/contexto-organizacional-para-arquitetura.md` — `source_count` 4 → 5; nova seção "Do Nível de Arquitetura ao Nível de Trecho de Código"; nova linha em Key Sources
+- `wiki/concepts/code-review.md` — `source_count` 17 → 18; nova seção "A Armadilha de Julgar Código Fora de Contexto"; nova linha em Relacionado e em Key Sources
+- `wiki/concepts/goodharts-law.md` — `source_count` 3 → 4; nova seção sobre incentivos organizacionais moldando qualidade de código (caso não nomeado); nova linha em Key Sources
+- `wiki/concepts/output-vs-outcome.md` — `source_count` 1 → 2; nova seção "Fora do Contexto de IA: Tickets Fechados como Métrica de Output"; nova seção Key Sources adicionada (página não tinha essa seção antes)
+- `wiki/concepts/boy-scout-rule.md` — `source_count` 4 → 5; nova seção curta de reforço; nova linha em Key Sources
+- `wiki/entities/bernardo-lobato.md` — `source_count` 15 → 16; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (Boas Práticas de Engenharia → fatores-nao-tecnicos-qualidade-de-codigo, julgar-codigo-fora-de-contexto)
+
+**Notas / open questions:** (1) **Fonte é síntese, não dado novo** — os quatro fatores listados já estavam, individualmente, bem mais desenvolvidos em outras fontes da wiki (tech-debt-guia-completo-gestao-metricas, application-boundary-martin-fowler, talk-about-platforms-evan-bottcher, e os casos já registrados de Goodhart's Law). O valor real desta ingestão é o *enquadramento unificador* em um único framework nomeado, não conteúdo técnico inédito — refletido no `status: draft` dos dois novos conceitos. (2) **Conexão inferida, não citada pela fonte**: o vídeo menciona "transportar padrões de uma linguagem para outra" sem citar exemplo — a wiki conectou isso a [[wiki/sources/go-is-not-java]] retroativamente; marcado explicitamente como inferência da wiki na fonte, não como citação do autor. (3) **Quarto fator é Goodhart não nomeado**: a fonte descreve o mecanismo de incentivos organizacionais sem usar o vocabulário de Goodhart's Law — tratado como instância do conceito já registrado, não como fonte que cita a lei. (4) **Nenhuma contradição encontrada** com o conteúdo já existente na wiki sobre Quadrante de Fowler, contexto organizacional, code review ou métricas.
+
+---
+
+## [2026-09-15] ingest | IA, Produtividade e a Corrida que Ninguém Escolheu
+
+**Source:** [[wiki/sources/ia-produtividade-nao-reduz-trabalho-corrida-da-ia-profecia-autorrealizavel]] — transcrição de trecho de live/podcast colada diretamente pelo usuário no chat (fala corrida com comentários de chat incorporados, sem pontuação/parágrafos), já em português (sem necessidade de tradução). Transformada em Markdown estruturado por tema (título por argumento) e salva em `raw/ia-produtividade-nao-reduz-trabalho-corrida-da-ia-profecia-autorrealizavel.md`.
+
+**Skill carregada:** `tech-mentor-leadership` — `SKILL.md` lido em `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/SKILL.md`. Referências específicas consultadas: `references/ai-strategy-engineering.md` (mapa de risco/valor de uso de IA em times de engenharia) e `references/engineering-metrics.md` (seção Goodhart's Law, já usada para calibrar o cruzamento com métricas de produtividade citadas na fala). Domínio secundário `tech-mentor-ai` (skill formation, estudo da Anthropic citado de segunda mão) registrado em `tags:` da fonte, conforme convenção do CLAUDE.md para fontes multi-domínio.
+
+**Arquivos criados:**
+- `raw/ia-produtividade-nao-reduz-trabalho-corrida-da-ia-profecia-autorrealizavel.md`
+- `wiki/sources/ia-produtividade-nao-reduz-trabalho-corrida-da-ia-profecia-autorrealizavel.md` — TL;DR, 6 claims com confidence individual, entidades/conceitos tocados, open questions
+- `wiki/concepts/solucoes-gulosas-pressao-de-mercado.md` — novo stub: mecanismo de otimização de curto prazo sob pressão de mercado, análogo a algoritmos gulosos, sem página própria até agora apesar de citado implicitamente em várias fontes de carreira
+- `wiki/concepts/profecia-autorrealizavel-corrida-da-ia.md` — novo stub: urgência de adoção de IA como profecia autorrealizável alimentada por marketing, distinto do Paradoxo de Jevons já documentado
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/ia-como-chicote-de-produtividade.md` — `source_count` 2 → 3; nova seção "Precedente Histórico: Toda Tecnologia de Comunicação Mais Rápida Aumentou a Disponibilidade Esperada"; nova linha em Key Sources
+- `wiki/concepts/atrofia-cognitiva.md` — `source_count` 2 → 3; duas novas seções (analogia muscular/números de telefone; estudo `[external]` da Anthropic sobre formação de habilidade); nova linha em Key Sources
+- `wiki/concepts/divida-cognitiva.md` — `source_count` 4 → 5; nova seção `[external]` sobre o mesmo estudo da Anthropic (resolve mas não articula = sintoma central da página); nova linha em Key Sources
+- `wiki/concepts/paradoxo-de-jevons.md` — `source_count` 4 → 5; nova seção "Efeito Rebote no Nível do Tempo de Trabalho Individual" (terceiro nível de aplicação do paradoxo, além de custo de token e headcount); nova linha em Key Sources
+- `wiki/concepts/compute-como-compensacao.md` — `source_count` 1 → 2; nova seção "Contraponto: O '8x' Raramente Vira '8x de Salário'"; nova linha em Key Sources
+- `wiki/concepts/output-vs-outcome.md` — `source_count` 2 → 3; nova seção "Na Escala da Sociedade: Produtividade Também É Output, Não Outcome"; nova linha em Key Sources
+- `wiki/concepts/apagao-de-seniors.md` — `source_count` 7 → 8; nova seção "Descartabilidade Como Consequência de Entregar Sem Aprender"
+- `wiki/index.md` — nova linha em Sources; cinco novas linhas em Concepts na seção "IA em Organizações — Custo, ROI e Adoção" (duas delas, `ia-como-chicote-de-produtividade` e `compute-como-compensacao`, corrigem uma lacuna pré-existente: essas páginas já existiam na wiki mas nunca tinham sido indexadas)
+
+**Notas / open questions:** (1) **Estudo da Anthropic citado apenas de segunda mão** — "How AI Impacts Skills Formation" não foi lido diretamente nesta ingestão, só descrito dentro da fala. Marcado `[external]` e Confidence Baixa em todas as páginas que o citam ([[wiki/concepts/atrofia-cognitiva]], [[wiki/concepts/divida-cognitiva]]); ação de acompanhamento explícita: localizar e ler o artigo original antes de promover essas seções a Confidence Alta. (2) **Claim de queda salarial sem fonte** — a fala afirma que salários estão caindo apesar de produtividade relatada 5-8x maior, sem citar estudo; registrado como Confidence média/baixa na fonte e no contraponto adicionado a [[wiki/concepts/compute-como-compensacao]]. (3) **Lacuna de indexação pré-existente corrigida**: `wiki/concepts/ia-como-chicote-de-produtividade.md` e `wiki/concepts/compute-como-compensacao.md` já existiam (criadas em 2026-04-26) mas nunca apareciam em `wiki/index.md` — corrigido nesta ingestão como efeito colateral, não como sweep de lint completo. (4) **Nenhuma contradição direta encontrada** com conteúdo existente — esta fonte principalmente conecta e generaliza mecanismos já documentados (Jevons, chicote de produtividade, atrofia cognitiva, Goodhart, output vs. outcome) sob um argumento histórico/político (profecia autorrealizável da corrida de IA) que nenhuma fonte anterior tinha articulado explicitamente.
+
+---
+
+## [2026-09-15] ingest | Forward Deployed Engineers: Origem na Palantir e a Onda Chegando ao Brasil
+
+**Source:** transcrição de vídeo PT-BR (fala corrida, sem pontuação, autor não identificado) recebida diretamente no chat — transformada em markdown estruturado e salva em `raw/forward-deployed-engineers-origem-palantir-onda-brasil.md` antes da ingestão, conforme solicitado.
+**Skill:** tech-mentor-leadership (`references/career-progression.md`).
+
+**Páginas criadas:**
+- `wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil.md`
+- `wiki/entities/aws.md`
+- `wiki/entities/itau.md`
+- `wiki/entities/cohere.md`
+- `wiki/entities/cognition.md`
+
+**Páginas atualizadas:**
+- `wiki/concepts/forward-deployed-engineer.md` — nova seção de origem histórica (Palantir 2007-2010, etimologia militar do termo) e seção de adoção por cloud/empresas de IA; `source_count` 1→2, `status` stub→draft
+- `wiki/entities/palantir.md` — origem do modelo FDE detalhada; nota sobre duplicação com `wiki/entities/palantir-technologies.md` sinalizada para lint; `source_count` 1→2, `status` stub→draft
+- `wiki/entities/openai.md`, `wiki/entities/anthropic.md` — nova seção curta "Adoção do Modelo Forward Deployed Engineer"
+- `wiki/entities/true-up.md` — seção de tensão entre dado quantitativo (FDE quase inexistente no Brasil) e projeção de chegada crescente desta nova fonte
+- `wiki/concepts/arquiteto-de-solucoes.md` — seção "Origem Histórica do Rótulo Forward Deployed Engineer"
+- `wiki/concepts/atrofia-cognitiva.md` — seção conectando "caixa-preta de LLM" a risco de empregabilidade no cargo FDE, não só a aprendizado
+- `wiki/index.md` — nova linha em Sources; linha atualizada em Concepts (forward-deployed-engineer); linha atualizada + quatro novas linhas em Entities (palantir, aws, itau, cohere, cognition)
+
+**Notas / open questions:** (1) **Narrativa histórica da Palantir (2007-2010) sem fonte primária** citada no vídeo — nem link, nem paper, nem post oficial; tratada como Confidence Média em todas as páginas que a registram. (2) **Tensão (não contradição) com a fonte anterior sobre demanda no Brasil**: esta fonte projeta chegada "com força" nos próximos meses, enquanto [[wiki/sources/ai-engineer-forward-deployed-engineer-mercado-vagas-2026]] registra dado quantitativo (True Up) de demanda quase inexistente hoje — registrado em `wiki/entities/true-up.md` e nas open questions da nova fonte. (3) **Duplicação de entidade pré-existente identificada, não criada por esta ingestão**: `wiki/entities/palantir.md` e `wiki/entities/palantir-technologies.md` cobrem a mesma empresa sob skills diferentes (`tech-mentor-leadership` vs. `tech-mentor-ai`) — sinalizado nas duas páginas para resolução em sweep de lint futuro, não consolidado nesta ingestão. (4) Nomes de empresas de IA citadas como adotantes do modelo FDE (OpenAI, Anthropic, Cohere, Cognition) não têm vaga/link específico nesta transcrição — Confidence Média, candidato a verificação cruzada numa ingestão futura.
+
+---
+
+## [2026-09-15] ingest | Prompt Caching e KV Cache: Como Fazer Prompting Como um Profissional
+
+**Source:** transcrição de vídeo PT-BR (fala corrida, sem pontuação, autor: Ronald Hulk) recebida diretamente no chat — transformada em markdown estruturado e salva em `raw/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk.md` antes da ingestão, conforme solicitado.
+**Skill:** tech-mentor-ai (`references/ai/context-engineering.md`, seção "Prompt Caching por Provider"; complementado por `references/ai/token-economics.md`).
+
+**Páginas criadas:**
+- `wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk.md`
+- `wiki/concepts/prompt-caching.md` — conceito central novo: prática de produção que explora o KV Cache de propósito, com tabela comparativa por provider (Anthropic, OpenAI, Gemini, OpenRouter)
+- `wiki/concepts/time-to-first-token.md` — stub: métrica de latência (TTFT), já citada solta em `wiki/sources/llmops-observabilidade.md` mas nunca com página própria
+
+**Páginas atualizadas:**
+- `wiki/concepts/kv-cache.md` — nova seção "Prompt Caching: Explorando o KV Cache de Propósito em Produção"; `source_count` 2→3
+- `wiki/entities/anthropic.md`, `wiki/entities/openai.md`, `wiki/entities/deepseek.md`, `wiki/entities/openrouter.md` — nova linha/seção em Key Sources sobre o papel de cada provider em prompt caching
+- `wiki/sources/tokens-o-que-sao-e-por-que-custam-caro.md` — open question sobre ausência de menção a KV Cache/prompt caching marcada como resolvida (riscada), com ressalva de que aquela fonte trata do custo de output (autorregressivo) e esta do custo de input (reprocessamento de prefixo) — mecanismos complementares
+- `wiki/concepts/ai-gateway-llm-router.md` — link de "cache" trocado por "prompt caching" na lista de alavancas de custo; nova linha em Key Sources; `source_count` 3→4
+- `wiki/concepts/prompt-engineering.md` — nova linha em "Relação com Outros Conceitos" e em Fontes conectando estrutura estático→variável do prompt ao requisito técnico de cache hit; `source_count` 12→13
+- `wiki/sources/llmops-observabilidade.md` — novo item em Entities & Concepts Touched apontando para `wiki/concepts/time-to-first-token.md`
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts na seção "Agentes & LLMOps"
+
+**Notas / open questions:** (1) **Números específicos de mínimo de tokens por modelo na Anthropic** (4096 tokens em modelos antigos, 512 no Opus 5) citados no vídeo não batem com o valor único documentado em `references/ai/context-engineering.md` (1024 tokens geral) — não cross-checados contra documentação oficial da Anthropic nesta ingestão; marcado Confidence Baixa-média em `wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk.md` e `wiki/entities/anthropic.md`, candidato a verificação com fonte primária numa ingestão futura. (2) **Mínimo de tokens do DeepSeek via OpenRouter** citado apenas qualitativamente ("bem pequenininho"), sem número — não verificado. (3) **Nenhuma contradição encontrada** com conteúdo pré-existente; esta fonte preenche diretamente uma lacuna já registrada em `wiki/sources/tokens-o-que-sao-e-por-que-custam-caro.md` (ver acima).
+
+---

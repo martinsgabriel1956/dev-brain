@@ -3,8 +3,8 @@ type: concept
 title: "KV Cache"
 aliases: ["KV Cache", "key-value cache", "cache de atenção"]
 date_created: 2026-07-21
-date_updated: 2026-08-17
-source_count: 2
+date_updated: 2026-09-15
+source_count: 3
 tags: [inferencia, llm, atencao, custo, performance]
 skill: tech-mentor-ai
 status: stub
@@ -24,7 +24,12 @@ O [[wiki/sources/kimi-k3-china-mercado-ia-open-source|Kimi K3]] (Moonshot AI) di
 
 [[wiki/concepts/autoregressive-language-model]] explica o problema de base que o KV Cache mitiga: sem cache, cada token gerado exigiria reprocessar do zero toda a sequência anterior (prompt + tokens já gerados), porque a geração é recursiva por natureza. [[wiki/sources/tokens-o-que-sao-e-por-que-custam-caro]] descreve esse reprocessamento token a token de forma didática (sem mencionar o KV Cache diretamente) como a razão estrutural pela qual o token de output custa mais que o de input em todos os providers — o KV Cache é a técnica de produção que existe justamente para evitar recalcular o que já foi computado, amortizando (mas não eliminando) esse custo.
 
+## Prompt Caching: Explorando o KV Cache de Propósito em Produção
+
+[[wiki/concepts/prompt-caching]] é a prática de estruturar prompts e chamadas de API deliberadamente para acionar reuso do KV Cache entre requisições com o mesmo prefixo (system prompt, ferramentas, documentos fixos), em vez de deixar o reaproveitamento como efeito colateral. [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]] documenta as diferenças de implementação entre providers (Anthropic com cache mais explícito e TTL configurável, OpenAI com cache implícito, OpenRouter dependendo de modelo+provedor), os antipadrões que quebram o cache (dado dinâmico no início do prompt) e o impacto direto na redução do [[wiki/concepts/time-to-first-token|time to first token]].
+
 ## Key Sources
 
 - [[wiki/sources/kimi-k3-china-mercado-ia-open-source]]
 - [[wiki/sources/tokens-o-que-sao-e-por-que-custam-caro]] — explicação didática do problema de reprocessamento autorregressivo que motiva a existência do KV Cache
+- [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]] — prompt caching como prática de produção que explora o KV Cache de propósito, com diferenças por provider e antipadrões comuns

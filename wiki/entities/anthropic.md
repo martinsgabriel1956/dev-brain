@@ -3,9 +3,9 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-09-14
-source_count: 30
-tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack, memory-layers]
+date_updated: 2026-09-15
+source_count: 31
+tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack, memory-layers, prompt-caching]
 skill: tech-mentor-ai
 status: stable
 ---
@@ -118,6 +118,10 @@ Guia oficial publicado pela Anthropic definindo quatro níveis de autonomia para
 
 Segundo [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]], a Anthropic publicou um relatório de entrevistas com mais de uma dúzia de startups de rápido crescimento sobre como operam usando o Claude Code, consolidado em cinco regras operacionais — ver [[wiki/concepts/sdlc-nativo-de-ia]]. A mesma fonte relata uma controvérsia pública entre a Anthropic e Tobi Lütke (CEO da [[wiki/entities/shopify]]) sobre o Claude Code não ler `AGENTS.md`, só `CLAUDE.md` — ver [[wiki/concepts/agents-md-vs-claude-md]], incluindo uma **contradição registrada** com uma menção anterior na wiki (via [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]]) de que a Anthropic teria preferência por `AGENTS.md`. Nenhuma das fontes é primária; tratado como contradição em aberto.
 
+## Adoção do Modelo Forward Deployed Engineer
+
+Segundo [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]], a Anthropic é citada, junto com [[wiki/entities/openai]], [[wiki/entities/cohere]] e [[wiki/entities/cognition]], como uma das empresas de IA que adotaram o modelo [[wiki/concepts/forward-deployed-engineer]] (origem histórica: [[wiki/entities/palantir]], anos 2000) para integrar suas soluções em clientes Enterprise. Citado sem link/vaga específica — confiança média.
+
 ## Mudança de Spec no MCP: Fim do Handshake (2026)
 
 Segundo [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]], a Anthropic mudou a especificação core do [[wiki/concepts/model-context-protocol|MCP]] de stateful para stateless, removendo o handshake/sessão obrigatórios em favor de um método `server discover` e de handles de estado assinados pelo servidor — mudança relatada como recente ("semana anterior" ao vídeo), sem data exata confirmada nem link direto ao changelog oficial nesta ingestão. Ver [[wiki/concepts/mcp-stateless-server-discover]].
@@ -128,6 +132,7 @@ Segundo [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-mont
 - [[wiki/sources/html-vs-markdown-para-agentes-de-ia]]
 - [[wiki/sources/kimi-k3-china-mercado-ia-open-source]] — venda Enterprise no Brasil, subsídio de produto como resposta à concorrência open source — citada de passagem como tendo "divulgado algo parecido" sobre preferir HTML a Markdown na saída de agentes; a fonte não linka o material original, então tratar como não verificado
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
+- [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]] — descrita como caso especial de prompt caching: cache mais "forçado" (breakpoint explícito) que a OpenAI, com TTL configurável; números de mínimo de tokens por modelo citados na fonte não batem com o valor único documentado na skill e ficam como não verificados
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
@@ -155,3 +160,4 @@ Segundo [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-mont
 - [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — caso Levelsio (downgrade Opus→Sonnet "por segurança", sermão de saúde) como fricção de guardrail; benchmarks de lançamento do Opus 5 (forte em Agentic Terminal Coding/Agent Search/Computer Use/Automation Bench, atrás do GPT 5.6 Sol em coding puro, sem avanço em dual-use de risco)
 - [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] — mudança de spec do MCP: fim do handshake obrigatório, core stateless, método `server discover`, cross-call state via handle assinado
 - [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] — playbook "AI natives working at the frontier" com startups; controvérsia AGENTS.md vs. CLAUDE.md com Tobi Lütke/Shopify
+- [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]] — citada como uma das empresas de IA que adotam o modelo Forward Deployed Engineer

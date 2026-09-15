@@ -3,8 +3,8 @@ type: concept
 title: "AI Gateway / LLM Router (Proxy Multi-Provider)"
 aliases: ["ai gateway", "llm gateway", "proxy multi-provider", "litellm", "portkey"]
 date_created: 2026-08-05
-date_updated: 2026-09-04
-source_count: 3
+date_updated: 2026-09-15
+source_count: 4
 tags: [tech-mentor-ai, ai-gateway, llm-router, proxy-pattern, fallback, multi-provider]
 skill: tech-mentor-ai
 status: stub
@@ -55,7 +55,7 @@ O modelo mais barato nem sempre serve para toda parte de um sistema. Uma pipelin
 ## Alavancas Concretas de Custo
 
 - Distinguir **input tokens** vs. **output tokens** e limites por modelo
-- [[wiki/concepts/cache]] de tokens/contexto como redutor direto de custo
+- [[wiki/concepts/prompt-caching|Prompt caching]] de tokens/contexto como redutor direto de custo — ver detalhamento por provider em [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]]
 - Estimativas de custo por usuário, por chamada, por fluxo multiagente completo
 - Logging e monitoramento contínuo de gasto
 - Truncamento inteligente de prompt e sumarização para economizar tokens
@@ -66,3 +66,4 @@ O modelo mais barato nem sempre serve para toda parte de um sistema. Uma pipelin
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]]
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — triângulo performance/custo/qualidade, uso de múltiplos modelos por pipeline, e alavancas concretas de controle de custo (tokens, cache, truncamento, sumarização, teste A/B)
 - [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] — caso medido de modelo forte/coordenador + modelo barato/worker num único pipeline multiagente
+- [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]] — prompt caching como alavanca de custo detalhada por provider (Anthropic, OpenAI, OpenRouter)

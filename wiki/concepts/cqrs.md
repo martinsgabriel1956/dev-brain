@@ -3,8 +3,8 @@ type: concept
 title: "CQRS — Command Query Responsibility Segregation"
 aliases: ["command query responsibility segregation", "cqrs pattern"]
 date_created: 2026-05-31
-date_updated: 2026-09-01
-source_count: 9
+date_updated: 2026-09-15
+source_count: 10
 tags: [cqrs, arquitetura, event-sourcing, ddd, sistemas-distribuidos]
 skill: tech-mentor-backend
 status: draft
@@ -46,6 +46,10 @@ Em prática: events persistidos, projeções (read models) construídas por CQRS
 ## Uso no Nubank
 
 O [[nubank]] utiliza CQRS em conjunto com [[event-sourcing]] e [[datomic]]. A separação permite que o estado atual (saldo, status) seja reconstruído a partir do event log sem poluir o modelo de domínio.
+
+## Caso Real: CQRS Aplicado à Latência do Caminho Crítico (Nubank)
+
+O [[wiki/entities/nubank]] usa a mesma lógica de "materializar na escrita, ler barato" para resolver um problema de **latência**, não só de modelagem: a autorização de transação de cartão precisa responder em menos de 100ms ponta a ponta. O time reduziu a latência crítica de ~10.000ms para **288ms no P90** (76% de redução) removendo dependências síncronas do caminho de leitura — em vez de calcular limite disponível, rodar análise de fraude e validar o cartão em tempo real a cada autorização, essas informações são **precomputadas e materializadas no momento da escrita**, e a maioria das requisições de autorização é atendida com um único lookup num datastore de baixa latência. É CQRS na forma mais pura: separar o custo computacional (write side) do custo de resposta (read side), aplicado a um requisito de negócio com SLA de milissegundos, não a um caso de múltiplas projeções de dado. Ver [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]].
 
 ## Redis como Read Layer
 
@@ -152,3 +156,4 @@ Antes de separar em serviços/código-fonte distintos, a forma mais simples de C
 - [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]] — atribui a criação do CQRS a Greg Young; motivação via exemplo de agregado DDD; erro comum de reaproveitar models entre comando e leitura (viola SRP)
 - [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] — dois motivadores independentes (volume e modelo/assinatura); CQRS sem código-fonte separado (mesmo código, deployments com escala diferente); seis técnicas de sincronização organizadas em consistência forte (mesma base+views, transação cruzada, API Composition) vs. eventual (read replicas, eventos com bug da escrita dupla, polling)
 - [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — vídeo focado em Event Sourcing que recomenda CQRS como conteúdo complementar; não desenvolve CQRS diretamente, só reforça a proximidade entre os dois padrões
+- [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — caso real aplicando CQRS a um requisito de latência (não de modelagem): autorização de transação reduzida de ~10.000ms a 288ms P90 via materialização no write side

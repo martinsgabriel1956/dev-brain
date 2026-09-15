@@ -3,8 +3,8 @@ type: concept
 title: "Prompt Engineering"
 aliases: ["engenharia de prompt", "prompt design"]
 date_created: 2026-05-17
-date_updated: 2026-08-27
-source_count: 12
+date_updated: 2026-09-15
+source_count: 13
 tags: [prompt-engineering, llm, few-shot, codex, software-3]
 skill: tech-mentor-ai
 status: stable
@@ -71,6 +71,7 @@ Não há estrutura obrigatória — os modelos são flexíveis. Itere e meça.
 - [[context-window]] — limite de tamanho do prompt
 - [[hyperparameters-llm]] — controles de temperatura, stop sequence etc.
 - [[fine-tuning]] — alternativa mais custosa
+- [[wiki/concepts/prompt-caching]] — estruturar o prompt (estático primeiro, variável por último) não é só questão de qualidade de resposta, também é o que determina se a chamada aciona ou invalida o cache do provider
 
 ## Formato de Estrutura: Markdown, Tags ou HTML?
 
@@ -121,3 +122,4 @@ Uma nova versão de prompt pode quebrar o comportamento do sistema da mesma form
 - [[wiki/sources/harness-explicado-function-calling-hag-evals]] — skills não dão "superpoder", só adicionam mais texto ao prompt; distinção reforçada entre o que roda localmente (código) e o que só existe como texto no data center do provider
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — versionamento de prompt como artefato com gate em CI/CD (não só Git); prompt engineering como pilar fundamental da arquitetura de agente, ao lado de tree of thoughts, skeleton of thoughts, ReAct e self-refining
 - [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] — limite estrutural do prompt bem escrito quando a informação necessária nunca esteve na janela de contexto; crítica ao "prompt mágico" como bala de prata (Frederick Brooks)
+- [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]] — a mesma estrutura "estático → variável" recomendada para clareza também é o requisito técnico para acionar [[wiki/concepts/prompt-caching]]; dado dinâmico (timestamp) no início do prompt quebra o cache do provider

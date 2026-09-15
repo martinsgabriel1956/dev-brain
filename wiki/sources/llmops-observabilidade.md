@@ -3,7 +3,7 @@ type: source
 title: "LLMOps & Observabilidade"
 aliases: ["llmops", "observabilidade llm", "langfuse", "langsmith", "prompt versioning"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
+date_updated: 2026-09-15
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/llmops-observabilidade.md
 source_url: ""
 author: ""
@@ -51,6 +51,7 @@ LLMOps é observabilidade adaptada para LLMs: traces hierárquicos (trace→span
 - [[entities/langsmith]]
 - [[concepts/slo]]
 - [[concepts/prompt-versioning]]
+- [[wiki/concepts/time-to-first-token]]
 
 ## Open Questions
 

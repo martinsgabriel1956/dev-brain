@@ -3,8 +3,8 @@ type: concept
 title: "Tech Debt como Ferramenta"
 aliases: ["tech debt deliberado", "dívida técnica estratégica", "ship with debt"]
 date_created: 2026-04-26
-date_updated: 2026-09-14
-source_count: 16
+date_updated: 2026-09-15
+source_count: 17
 tags: [tech-debt, carreira, craftsmanship, estrategia, velocidade, under-engineering, alocacao-de-tempo, medicao]
 skill: tech-mentor-leadership
 status: draft
@@ -126,8 +126,13 @@ Ver também: o mesmo capítulo cunha explicitamente o termo **"technical debt"**
 
 [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] descreve uma quarta regra do playbook da Anthropic — "build for rebuilding" — como uma variante deliberada e institucionalizada do descarte de código já documentado nesta página: como o custo de escrever e jogar fora código caiu, reconstruir (não só incrementar) uma feature várias vezes vira estratégia consciente, não sinal de falha de planejamento. Segundo a fonte, times costumam só entender de fato o problema depois de algumas reconstruções — o que reforça a lógica desta página de que dívida/descarte técnico bem gerido é uma ferramenta, não um fracasso a ser evitado a qualquer custo. Ver [[wiki/concepts/sdlc-nativo-de-ia]] para o framework completo.
 
+## Um Framework de Quatro Fatores Não Técnicos (Sem Vocabulário de Fowler)
+
+[[wiki/sources/fatores-nao-tecnicos-codigo-ruim-bons-desenvolvedores-bernardo-lobato]] enquadra o argumento central desta página — código ruim nem sempre é dev ruim — dentro de um framework mais amplo de quatro fatores não técnicos: pressão de prazo (a própria lógica do Quadrante de Fowler), contexto do projeto (legado, restrições, dependências), conhecimento incompleto/fator tempo, e incentivos organizacionais (que aqui se conecta a [[wiki/concepts/goodharts-law]]). O reforço específico a esta página: a mesma fonte adiciona a ressalva de que reconhecer contexto não é licença para normalizar qualquer atalho como "culpa do contexto" — o ponto central continua sendo tornar a dívida visível e registrar o tradeoff, não deixá-la implícita. Ver [[wiki/concepts/fatores-nao-tecnicos-qualidade-de-codigo]] para o framework completo.
+
 ## Key Sources
 
+- [[wiki/sources/fatores-nao-tecnicos-codigo-ruim-bons-desenvolvedores-bernardo-lobato]] — framework de quatro fatores não técnicos; reforça "tornar a dívida visível" sem normalizar atalho como desculpa
 - [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] — "build for rebuilding": reconstrução iterativa deliberada como estratégia, não falha de planejamento
 - [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] — ciclos de sprint mais curtos via IA liberando tempo para débito técnico e quality gates; proposta de sprint dedicada a débito técnico como contrapartida ao ganho de velocidade
 - [[wiki/sources/arquitetura-de-sacrificio]] — arquitetura de sacrifício = dívida assumida *deliberadamente*, com plano de substituição, sem abrir mão da qualidade interna
