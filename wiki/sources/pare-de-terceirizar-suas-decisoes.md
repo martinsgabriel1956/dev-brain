@@ -75,3 +75,7 @@ Rant do Akita contra dois hábitos: (1) pedir para influencers/palestrantes deci
 - Onde fica a linha entre "aprender com palestras de big tech sem cargo-cultar" e simplesmente ignorá-las por completo? O autor deixa claro que elas têm valor educativo — o problema é a decisão de adotar sem contexto, não a palestra em si.
 - Como aplicar [[wiki/concepts/antifragilidade]] de forma prática em decisão de arquitetura de projeto pequeno (não só em escolha de linguagem/carreira)? O vídeo fala mais de carreira/tecnologia como aposta pessoal do que de arquitetura de sistema propriamente.
 - Nenhuma contradição relevante encontrada com o restante da wiki — reforça e cruza diretamente com [[wiki/concepts/ciclo-de-mercado-tech]] (mesmo autor, mesmo argumento sobre ondas de tecnologia) e com [[wiki/concepts/paralisia-por-analise]] (excesso de escolha/informação).
+
+## Continuação: Episódio Seguinte da Série
+
+[[wiki/sources/agilidade-manifesto-agil-fabio-akita]] é o segundo episódio da mesma série sobre "profissão de prática", já citando este vídeo explicitamente como o episódio anterior. Aplica o mesmo eixo argumentativo — [[wiki/concepts/skin-in-the-game|skin in the game]] e recusa de terceirizar julgamento — à indústria de consultoria e coaching ágil: consultores/coaches não têm skin in the game na implementação, por isso não sofrem o prejuízo se ela falhar.

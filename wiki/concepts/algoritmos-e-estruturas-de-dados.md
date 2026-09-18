@@ -3,8 +3,8 @@ type: concept
 title: "Algoritmos e Estruturas de Dados"
 aliases: ["DSA", "data structures", "estruturas de dados", "algoritmos"]
 date_created: 2026-05-16
-date_updated: 2026-09-14
-source_count: 20
+date_updated: 2026-09-18
+source_count: 21
 tags: [fundamentos, cs-fundamentals, algoritmos, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -94,8 +94,13 @@ Cada estrutura tem sua própria página com complexidade, analogias e quando usa
 
 [[wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos]] acrescenta um ângulo de expectativa educacional: uma boa graduação em computação deveria formar a pessoa com capacidade de entender as notações de um livro denso como o CLRS (Cormen), mesmo que o ponto de partida para quem "não manja de matemática" seja um livro mais intuitivo (*Entendendo Algoritmos*). Reforça, do lado da formação formal, a mesma dupla de fontes (Cormen + Entendendo Algoritmos) já citada em [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] para quem migra para baixo nível.
 
+## Relendo os Fundamentos Depois de Ficar Imersa em Agentes de IA
+
+[[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] traz um relato de primeira mão sobre releitura deliberada: a autora, após um período intenso usando Claude Code/Codex, releu *Entendendo Algoritmos* especificamente para "ter certeza que não esqueceu o básico" — não porque tivesse esquecido a sintaxe, mas porque a sintaxe nunca foi o ponto. A distinção que ela traça é a mesma já estabelecida no restante desta página (DSA como fundação, não como decoreba): o que separa quem sabe essa base de quem não sabe é o **nível de raciocínio lógico e pensamento crítico sobre o que está sendo gerado pelo agente** — sem a base, a pessoa "fica muito perdida" e não consegue nem avaliar o que a IA produziu. A fonte marca isso explicitamente como opinião pessoal, com a ressalva de que o vídeo, ao enfatizar tanto arquitetura, pode ter dado a impressão errada de que fundamentos não importam para quem é júnior — eles continuam importando, segundo a autora.
+
 ## Key Sources
 
+- [[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] — releitura deliberada de Entendendo Algoritmos após período imersa em agentes de IA; DSA como o que permite julgar criticamente o output do agente, não decorar sintaxe
 - [[wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos]] — entender o CLRS/Cormen como meta de uma boa formação acadêmica; Entendendo Algoritmos como ponto de entrada para quem não manja de matemática
 - [[wiki/sources/akita-como-aprender-programacao]] — afirmação de que DSA é o que separa amadores de profissionais; por que linguagens modernas escondem essas estruturas; sequência de aprendizado
 - [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — DSA é parte pequena do todo; confundir DSA com lógica de programação seria "leviano"

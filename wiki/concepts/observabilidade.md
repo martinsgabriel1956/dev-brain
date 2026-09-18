@@ -3,8 +3,8 @@ type: concept
 title: "Observabilidade"
 aliases: ["observabilidade", "observability", "três pilares", "metrics logs traces"]
 date_created: 2026-04-22
-date_updated: 2026-09-15
-source_count: 12
+date_updated: 2026-09-18
+source_count: 13
 tags: [observabilidade, metricas, logs, traces, prometheus, sre, infraestrutura]
 skill: tech-mentor-system-design
 status: stable
@@ -169,6 +169,7 @@ A entrada de agentes de IA na pipeline adiciona uma pergunta específica aos tr�
 
 ## Key Sources
 
+- [[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] — declaração de intenção editorial: métricas relevantes, configuração e confiabilidade de alertas, disaster recovery, observabilidade em sistemas distribuídos e logs estruturados anunciados como próximo tema de estudo/conteúdo — sem claim técnico novo, plano futuro
 - [[sources/observabilidade]]
 - [[wiki/sources/diferenciais-portfolio-backend-junior]]
 - [[sources/5-principios-programador]]

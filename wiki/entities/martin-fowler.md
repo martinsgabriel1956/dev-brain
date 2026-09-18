@@ -3,8 +3,8 @@ type: entity
 title: "Martin Fowler"
 aliases: ["Fowler", "martinfowler.com"]
 date_created: 2026-07-07
-date_updated: 2026-09-11
-source_count: 28
+date_updated: 2026-09-18
+source_count: 30
 tags: [thoughtworks, autor, testes, arquitetura, tech-debt, refactoring, agile]
 skill: tech-mentor-testing
 status: stable
@@ -90,14 +90,23 @@ Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter us
 
 [[wiki/sources/continuous-delivery-martin-fowler]] (bliki, mesma data de 2013 que o de Deployment Pipeline) define o termo "Continuous Delivery" propriamente dito: a capacidade — não o ato — de lançar software em produção a qualquer momento, com quatro indicadores concretos desenvolvidos pelo grupo de trabalho de CD da [[wiki/entities/thoughtworks]]. Fowler separa a disciplina com precisão de Continuous Deployment (mesmo traço de precisão terminológica descrito acima), e credita [[wiki/entities/jez-humble]] com "ajuda detalhada" na redação da própria página — Humble e [[wiki/entities/david-farley]] são citados como autores do livro fundacional *Continuous Delivery*. É também aqui que Fowler cunha, via nota de rodapé, a leitura ampla de "[[wiki/concepts/devops-culture|DevOps culture]]" (além de dev+ops) como um dos dois requisitos de CD, ao lado da automação via deployment pipeline.
 
+## Signatário do Manifesto para o Desenvolvimento Ágil de Software (2001)
+
+Em [[wiki/sources/agilidade-manifesto-agil-fabio-akita]], citado como um dos 17 signatários originais do manifesto de Snowbird (2001), ao lado de [[wiki/entities/kent-beck]], [[wiki/entities/uncle-bob]], [[wiki/entities/dave-thomas]] e outros — a fonte usa sua presença na lista para reconstruir a origem real do manifesto contra a "lenda" popular de uma reunião doutrinária única, já que cada signatário vinha de práticas/metodologias próprias e concorrentes entre si.
+
 ## Ver também
 
 - [[piramide-de-testes]]
 - [[ci-cd]] — termo "DeploymentPipeline" é dele (bliki de 2013, fonte primária agora ingerida em [[wiki/sources/deployment-pipeline-martin-fowler]]): estágios progressivos por confiança, escopo além de testes (performance/segurança/usabilidade), colaboração e trilha de auditoria
 - [[walking-skeleton]] — padrão da mesma tradição de entrega incremental (Extreme Programming/continuous delivery)
 
+## Blog Como Hábito Contínuo de Estudo, Não Só Fonte Pontual
+
+[[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] cita o blog de Fowler como leitura contínua (não um artigo específico) ao retomar estudo técnico depois de um período focado em empreendedorismo — event-driven architecture, monolitos, microsserviços, divisão de responsabilidade, estruturação e migração de dados. Não acrescenta claim técnico novo sobre Fowler; registra o blog como hábito de estudo recomendado, coerente com o volume de fontes primárias do bliki já documentado nesta entity.
+
 ## Key Sources
 
+- [[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] — blog citado como hábito de estudo contínuo (não artigo específico) ao retomar estudo técnico
 - [[wiki/sources/integration-test-martin-fowler]]
 - [[wiki/sources/contract-test-martin-fowler]]
 - [[wiki/sources/test-double-martin-fowler]]
@@ -126,3 +135,4 @@ Em [[wiki/sources/xunit-martin-fowler]], Fowler relata em primeira pessoa ter us
 - [[wiki/sources/continuous-delivery-martin-fowler]] — bliki de 2013 que define "Continuous Delivery": quatro indicadores, distinção vs. Continuous Deployment, DevOps culture, crédito a Jez Humble
 - [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — citado como um dos fundadores/documentadores do padrão Event Sourcing via bliki; nuance registrada: outras fontes (ex.: [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]]) atribuem a Greg Young a origem do par CQRS+Event Sourcing na comunidade DDD, não a Fowler
 - [[wiki/sources/extract-interface-xunitpatterns]] — verbete de "Code Refactorings" do catálogo de Meszaros, conteúdo atribuído a Fowler (livro *Refactoring*): mesmo padrão host≠autor já registrado para Consumer-Driven Contracts/Ian Robinson e "Talk about Platforms"/Evan Bottcher
+- [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — citado como um dos 17 signatários originais do Manifesto para o Desenvolvimento Ágil de Software (2001)

@@ -3,8 +3,8 @@ type: concept
 title: "Extreme Programming (XP)"
 aliases: ["xp", "programação extrema"]
 date_created: 2026-08-23
-date_updated: 2026-09-04
-source_count: 5
+date_updated: 2026-09-18
+source_count: 6
 tags: [extreme-programming, kent-beck, agile, historia, craftsmanship]
 skill: tech-mentor-testing
 status: stub
@@ -34,6 +34,10 @@ Fonte primária isolada: [[wiki/sources/extreme-programming-xunitpatterns]] (ver
 
 Fonte primária isolada: [[wiki/sources/ixp-industrial-xp-xunitpatterns]] (verbete de glossário de Gerard Meszaros, seção References). **Industrial XP (IXP)**, criada por [[wiki/entities/joshua-kerievsky]], é uma variante "de marca" do XP clássico que acrescenta práticas para escalar sua adoção em empresas de maior porte — a fonte cita **Project Chartering** como exemplo. IXP é também o contexto em que Kerievsky cunhou [[wiki/concepts/storytest-driven-development]], termo já registrado nesta wiki, mas que até esta ingestão não tinha uma página própria para IXP nem para seu criador. Ver [[wiki/concepts/industrial-xp]].
 
+## Recomendação de Ponto de Partida Para Iniciantes (vs. Scrum)
+
+[[wiki/sources/agilidade-manifesto-agil-fabio-akita]] argumenta que, para quem está começando na área, as práticas que realmente importam vêm da XP — TDD, build/integração contínua, design incremental — e não das cerimônias do Scrum ("brincar de cartas" no planning poker, chapéu em círculo para falar na daily). A fonte enquadra XP como as práticas de fato herdadas do espírito original do manifesto, em contraste com o Scrum, que nem menciona "ágil" no seu guia original apesar de ter virado, popularmente, sinônimo de "ser ágil" — ver [[wiki/concepts/manifesto-agil-como-adjetivo]].
+
 ## Relação com práticas específicas já documentadas nesta wiki
 
 - [[wiki/concepts/tdd]] — ciclo RED-GREEN-REFACTOR, uma das práticas centrais da XP
@@ -55,3 +59,4 @@ Fonte primária isolada: [[wiki/sources/ixp-industrial-xp-xunitpatterns]] (verbe
 - [[wiki/sources/unit-test-xunitpatterns]] — fonte primária dos sinônimos "developer test"/"programmer test" para unit test em XP
 - [[wiki/sources/extreme-programming-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição mais genérica do próprio termo "eXtreme Programming"
 - [[wiki/sources/ixp-industrial-xp-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição de Industrial XP (IXP) como variante de escala do XP, criada por Joshua Kerievsky
+- [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — recomenda XP (não Scrum) como ponto de partida para iniciantes; Kent Beck e Ward Cunningham como criadores, no contexto dos 17 signatários do manifesto de 2001

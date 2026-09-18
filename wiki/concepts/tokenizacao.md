@@ -3,8 +3,8 @@ type: concept
 title: "Tokenização"
 aliases: ["token", "tokens", "encode/decode llm", "vocabulário de tokens"]
 date_created: 2026-07-03
-date_updated: 2026-08-17
-source_count: 3
+date_updated: 2026-09-18
+source_count: 4
 tags: [tokenizacao, llm-fundamentals, tokens, vocabulario, bpe]
 skill: tech-mentor-ai
 status: stable
@@ -52,11 +52,17 @@ Os dois extremos de granularidade têm problemas opostos: tokenização por cara
 
 Palavras incomuns no corpus de treino (nomes inventados, jargão raro) são fragmentadas em mais tokens do que palavras frequentes, porque o vocabulário não tem um chunk único que as represente. O mesmo efeito penaliza idiomas pouco representados no corpus — ver [[token-tax-multilingual]] — e linguagens de programação menos populares.
 
+## Do ID de Vocabulário ao Significado: Embeddings
+
+O ID de um token (posição no vocabulário) não carrega significado — só o identifica. O passo seguinte, fora do escopo da tokenização em si, traduz esse ID num [[wiki/concepts/embedding-vectors|embedding vector]] via lookup numa matriz treinada, e depois em contexto via [[wiki/concepts/self-attention|self-attention]]. Ver [[wiki/concepts/transformer-architecture]] para o pipeline completo.
+
 ## Conexões
 
 - [[byte-pair-encoding]] — algoritmo de treinamento de vocabulário mais usado na prática
 - [[token-tax-multilingual]] — consequência da tokenização para idiomas não-ingleses
 - [[token-economics]] — custo é cobrado por token de entrada e saída, a taxas diferentes
+- [[wiki/concepts/embedding-vectors]] — o que dá significado ao ID de token gerado pela tokenização
+- [[wiki/concepts/transformer-architecture]] — pipeline onde tokenização é a primeira etapa
 
 ## Consequência Prática: Análise por Token ≠ Leitura Linha a Linha
 
@@ -67,3 +73,4 @@ Palavras incomuns no corpus de treino (nomes inventados, jargão raro) são frag
 - [[wiki/sources/tokens-llm-fundamentos-typescript]]
 - [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] — caso real de falha em checagem sintática trivial por processamento via tokens em vez de leitura linha a linha
 - [[wiki/sources/tokens-o-que-sao-e-por-que-custam-caro]] — por que subword tokens vencem letra-por-letra e palavra-por-palavra; experimento comparando GPT-4o vs. Claude Opus 5
+- [[wiki/sources/self-attention-mecanismo-transformers]] — o que acontece depois da tokenização: ID de token → embedding vector → contexto via self-attention

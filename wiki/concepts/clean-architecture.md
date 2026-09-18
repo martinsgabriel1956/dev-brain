@@ -3,8 +3,8 @@ type: concept
 title: "Clean Architecture"
 aliases: ["arquitetura limpa", "clean arch"]
 date_created: 2026-07-24
-date_updated: 2026-09-08
-source_count: 10
+date_updated: 2026-09-18
+source_count: 11
 tags: [clean-architecture, uncle-bob, dependency-inversion, use-case, presenter, view-model, arquitetura, dci, bce]
 skill: tech-mentor-backend
 status: draft
@@ -109,8 +109,13 @@ O ponto que essa fonte acrescenta ao vocabulário já documentado nesta página:
 
 A mesma fonte nomeia uma divergência deliberada frente ao fluxo Controller/Presenter/View descrito acima: em frameworks reativos como Vue (o mesmo raciocínio se aplica a React/Angular), separar totalmente "Presentation" (conversão de dados, ViewModel) de "View" (renderização pura) significaria abrir mão do sistema de reatividade nativo do framework — que é justamente seu ponto forte (bind automático entre estado e input, sem mapeamento manual). A fonte trata isso como decisão pragmática e explícita, não como violação da Regra de Dependência: o componente de UI continua dependendo só de interfaces do domínio (`Authentication`) e de validação (`Validation`), nunca de implementações concretas — só a fronteira entre "Presenter" e "View" que fica fundida num único componente.
 
+## Reestudada Para Guiar Agentes de IA, Não Por Nostalgia do Conceito
+
+[[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] traz um motivo de reestudo distinto dos já documentados nesta página: a autora relata estar revisando Clean Architecture não para reaprender o conceito em si, mas para saber **guiar seus agentes de IA** a organizar pastas e interfaces de um jeito que não acople a aplicação às escolhas que o agente tomou no começo — prevenindo gargalo quando o projeto crescer em usuários e colaboradores. É o inverso do caso já documentado em [[wiki/concepts/governanca-de-codigo-gerado-por-ia]] (onde a preocupação é auditar o que o agente já gerou): aqui a arquitetura é usada como **restrição de prompt/contexto imposta antes de o agente escrever qualquer coisa**, não como checklist de revisão posterior. Não há exemplo concreto de resultado nesta fonte — é relato de intenção/método de trabalho, não estudo de caso.
+
 ## Key Sources
 
+- [[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] — Clean Architecture reestudada como restrição imposta a agentes de IA antes da geração de código, não como checklist de revisão posterior
 - [[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] — mapeamento de Use Cases/Entities para a camada "Core" de um módulo; lacuna de reuso de infraestrutura entre módulos que a arquitetura modular cobre
 - [[wiki/sources/prompt-context-harness-engineering-tres-pilares]] — gráfico de complexidade-versus-tempo citado como justificativa para harness engineering, fora do escopo usual de Clean Architecture como estilo de código
 - [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]] — métricas de acoplamento (A, I, D) como formalização da Regra de Dependência

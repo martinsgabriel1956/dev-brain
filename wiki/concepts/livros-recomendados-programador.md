@@ -3,8 +3,8 @@ type: concept
 title: "Livros Recomendados Para Programador"
 aliases: ["livros de programação", "biblioteca do dev", "clean code vs refactoring"]
 date_created: 2026-07-10
-date_updated: 2026-09-14
-source_count: 5
+date_updated: 2026-09-18
+source_count: 6
 tags: [carreira, aprendizado, recursos, livros]
 skill: tech-mentor-leadership
 status: stub
@@ -42,8 +42,13 @@ O contraste deliberado entre Clean Code (ressalva) e Refactoring (endosso pleno)
 
 [[wiki/sources/ai-engineer-forward-deployed-engineer-mercado-vagas-2026]] acrescenta um livro fora do escopo desta página até agora: *AI Engineering*, citado pelo case real de [[wiki/entities/thalis-pereira]] como a referência direta das etapas técnicas de entrevista para vagas de [[wiki/concepts/forward-deployed-engineer]]/AI Engineer (RAG, bancos vetoriais, prompts, agentes). A ressalva relatada é que parte desse conteúdo já está desatualizada frente ao trabalho real do dia a dia — diferente do endosso mais estável dado a *Refactoring* e *The Pragmatic Programmer* nesta página, o valor de *AI Engineering* é tratado como decrescente com o tempo, por cobrir uma área que muda rápido.
 
+## Designing Data-Intensive Applications: Segunda Fonte Endossando o "Livro que Separa Júnior de Sênior"
+
+[[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] endossa *Designing Data-Intensive Applications* ([[wiki/entities/martin-kleppmann|Kleppmann]]) como leitura em andamento — a autora nunca havia lido antes desta ingestão, então é recomendação prospectiva, não testada. Confirma o mesmo peso já dado ao livro em [[wiki/concepts/arquitetura-de-software]] ("o livro que separa júnior de sênior" nesse tema): streaming de eventos, multitenancy, joins, shuffling, locks, transações em banco, índices, snapshots — conteúdo voltado a escala de enterprise (a fonte cita Itaú, Mercado Livre, Nubank, iFood como referência de porte). A mesma fonte também recomenda ler o blog de [[wiki/entities/martin-fowler]] continuamente (não um livro único, mas artigos avulsos sobre event-driven architecture, monolitos, microsserviços, divisão de responsabilidade) e o blog **Serverless Land** da AWS para arquiteturas serverless/distribuídas `[external, sem página dedicada nesta ingestão]` — ambos como hábito de estudo contínuo, não itens de uma lista fechada.
+
 ## Key sources
 
+- [[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] — segunda fonte independente endossando *Designing Data-Intensive Applications*; recomenda também o blog de Martin Fowler e o Serverless Land (AWS) como hábito contínuo de estudo
 - [[wiki/sources/ai-engineer-forward-deployed-engineer-mercado-vagas-2026]] — *AI Engineering* como guia de entrevista para AI/Forward Deployed Engineer, com ressalva de desatualização
 - [[wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos]] — contraste Entendendo Algoritmos (intuição, ponto de partida) vs. CLRS/Cormen (denso, exige matemática); recomendação de segunda mão, não testada pelo próprio autor
 - [[wiki/sources/5-recursos-para-ser-um-desenvolvedor-melhor]]

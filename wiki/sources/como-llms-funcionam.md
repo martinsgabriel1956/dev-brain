@@ -3,7 +3,7 @@ type: source
 title: "Como LLMs Funcionam"
 aliases: ["como llms funcionam", "transformers fundamentos", "tokenizacao"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
+date_updated: 2026-09-18
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/como-llms-funcionam.md
 source_url: ""
 author: ""
@@ -50,6 +50,10 @@ LLMs são previsores de próximo token treinados em escala. Arquitetura Transfor
 - [[concepts/mamba-ssm]]
 - [[concepts/flash-attention]]
 - [[concepts/text-diffusion]]
+
+## Ver também
+
+- [[wiki/sources/self-attention-mecanismo-transformers]] — deep dive específico no mecanismo de self-attention citado en passant aqui; cobre tokens → embeddings → Q/K → attention score em detalhe
 
 ## Open Questions
 

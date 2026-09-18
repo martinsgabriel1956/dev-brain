@@ -3,8 +3,8 @@ type: concept
 title: "Forward Deployed Engineer"
 aliases: ["fde", "forward deployed ai engineer", "applied ai engineer", "deployment solutions engineer"]
 date_created: 2026-09-14
-date_updated: 2026-09-15
-source_count: 2
+date_updated: 2026-09-18
+source_count: 3
 tags: [carreira, mercado-de-trabalho, forward-deployed-engineer, ai-engineer, solutions-architect]
 skill: tech-mentor-leadership
 status: draft
@@ -44,6 +44,10 @@ Opinião explícita do autor da fonte: não há progressão clara (nenhum "Senio
 
 Segundo o case de [[wiki/entities/thalis-pereira]] na fonte: certificação cloud, engenharia de produto/Extreme Programming, fundamentos de machine learning e LLMs (sem exigir profundidade extrema), e interface com cliente. Conhecimento de arquitetura de software em geral é o que **menos** pesa. As etapas técnicas de entrevista seguem de perto o livro *AI Engineering* (RAG, bancos vetoriais, prompts, agentes) — mas parte desse conteúdo já está desatualizada frente ao trabalho real do dia a dia, que exige menos apego a um modelo/técnica específica, já que um modelo novo pode tornar obsoleto o que estava sendo feito.
 
+## Terceira Fonte Independente: Exemplo da Tese "Sênior Decide, Não Só Codifica"
+
+[[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] cita o cargo brevemente (sem dado novo sobre demanda ou origem) como exemplo do argumento central da fonte: o papel exige combinar engenharia (problemas de escala do cliente, integração, governança de dados, esquema de dados, divisão de responsabilidades) com customer success e habilidade comercial — usado para ilustrar que profissional técnico relevante é quem toma decisão frente a um problema real de cliente, não quem só escreve código. Não contradiz nem acrescenta dado às duas fontes já registradas abaixo (origem Palantir, dados de demanda real); é a terceira fonte independente do wiki tratando o tema, mas a mais rasa das três em profundidade sobre o cargo em si.
+
 ## Conexões
 
 - [[wiki/concepts/arquiteto-de-solucoes]] — o mesmo papel client-facing já documentado nesta wiki sob outro nome
@@ -52,5 +56,6 @@ Segundo o case de [[wiki/entities/thalis-pereira]] na fonte: certificação clou
 
 ## Key Sources
 
+- [[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] — menção breve, sem dado novo: cargo citado como exemplo de "sênior decide, não só codifica"
 - [[wiki/sources/ai-engineer-forward-deployed-engineer-mercado-vagas-2026]] — definição, dados de demanda (True Up/Indeed), case real de entrevista e avaliação de carreira
 - [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]] — origem histórica na Palantir (2007-2010), etimologia militar do termo, adoção por AWS/nuvem e por OpenAI/Anthropic/Cohere/Cognition, recomendação de preparo (fundamentos)

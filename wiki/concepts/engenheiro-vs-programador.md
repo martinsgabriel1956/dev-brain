@@ -3,8 +3,8 @@ type: concept
 title: "Engenheiro vs. Programador"
 aliases: ["programador vs engenheiro", "mentalidade de engenharia", "software engineer vs coder"]
 date_created: 2026-07-03
-date_updated: 2026-08-27
-source_count: 10
+date_updated: 2026-09-18
+source_count: 11
 tags: [carreira, mentalidade, arquitetura, senioridade]
 skill: tech-mentor-leadership
 status: draft
@@ -78,8 +78,13 @@ Não é acumular ferramentas (ver [[wiki/concepts/apego-a-ferramentas]]), mas de
 
 [[wiki/sources/pipeline-agentes-ia-pentest-idor-critica-nao-substitui]] aplica a mesma dicotomia ao domínio de segurança ofensiva: um pipeline de agentes de IA encontrou um IDOR que dois pentests manuais não viram, mas também gerou um volume alto de falsos positivos cuja triagem virou o novo gargalo humano do processo — ver [[wiki/concepts/economia-da-descoberta-automatizada-de-vulnerabilidades]]. A tese explícita da fonte: quem "só executa checklist" (o programador/pedreiro deste domínio) perde valor relativo quando a execução exaustiva vira barata; quem entende o domínio a ponto de desenhar e auditar o pipeline — escolher agentes, calibrar onde o humano valida, julgar o que é sinal contra ruído — é o engenheiro deste cenário, e esse papel exige *mais* conhecimento de segurança para supervisionar, não menos.
 
+## Estudar Para Ser o Engenheiro, Não Só o Programador
+
+[[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] chega à mesma dicotomia pelo ângulo de "o que estudar": em vez de descrever a distinção em abstrato, lista o repertório concreto que sustenta o lado do engenheiro — entender pré-requisitos e regras de negócio, potencial de escala, fontes de dados e sua volatilidade futura, estabilidade de APIs externas — antes de desenhar qualquer solução. Reforça sem contradizer o restante desta página: o ponto novo é conectar diretamente essa mentalidade a um plano de estudo (arquitetura, Clean Architecture, Designing Data-Intensive Applications, observabilidade), não apenas nomear a distinção.
+
 ## Key Sources
 
+- [[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] — a distinção traduzida em plano de estudo concreto (arquitetura, DDIA, observabilidade), não só em descrição de mentalidade
 - [[wiki/sources/pipeline-agentes-ia-pentest-idor-critica-nao-substitui]] — aplicação da dicotomia a pentest: pipeline de agentes acha o que humanos não acham, mas quem desenha/audita a esteira é quem sustenta valor
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — concordância parcial com "programar é fácil, decidir é difícil"; devs absorvendo trabalho de produto/gestão por layoff em cargos de PM/EM
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]]

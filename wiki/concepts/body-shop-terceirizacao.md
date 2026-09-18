@@ -3,8 +3,8 @@ type: concept
 title: "Body Shop (Terceirização de Desenvolvimento)"
 aliases: ["body shop de ti", "loja de corpos", "terceirização agressiva"]
 date_created: 2026-08-26
-date_updated: 2026-08-26
-source_count: 1
+date_updated: 2026-09-18
+source_count: 2
 tags: [mercado-de-trabalho, terceirização, contratação, consultoria]
 skill: tech-mentor-leadership
 status: stub
@@ -31,7 +31,9 @@ Em ciclos de mercado com liquidez abundante, os Body Shops ficam saturados (sem 
 - [[wiki/concepts/ciclo-de-mercado-tech]] — o ciclo de abundância/depressão que intensifica esse padrão
 - [[wiki/concepts/overhead-de-coordenacao-tamanho-de-equipe]] — contratação por volume sem correlação com necessidade real
 - [[wiki/concepts/contratacao-barra-alta]] — o oposto do modelo Body Shop: filtro rigoroso guiado por quem entende tecnicamente
+- [[wiki/concepts/cadeia-de-intermediacao-em-consultoria]] — fenômeno próximo mas distinto: aqui o foco é volume de contratação sem coesão; lá é o número de camadas contratuais entre profissional e cliente final, independente de volume
 
 ## Key Sources
 
 - [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]]
+- [[wiki/sources/consultoria-e-uma-boa-opcao-de-carreira]] — relato de caso pessoal de subcontratação em cadeia (não volume, mas camadas de revenda de horas)

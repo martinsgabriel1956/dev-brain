@@ -3,8 +3,8 @@ type: concept
 title: "MVP (Minimum Viable Product)"
 aliases: ["mvp", "produto mínimo viável", "minimum viable product"]
 date_created: 2026-04-29
-date_updated: 2026-09-04
-source_count: 9
+date_updated: 2026-09-18
+source_count: 10
 tags: [projetos, produtividade, entrega, planejamento, carreira, startup]
 skill: tech-mentor-leadership
 status: stable
@@ -66,6 +66,10 @@ Em [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]], o autor argu
 
 [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]] descreve uma terceira variante de MVP, além das já cobertas nesta página (validação de mercado, aprendizado pessoal): o MVP **integrado** entregue o quanto antes a um cliente pagante externo em um projeto de consultoria/implementação de IA, especificamente para expor divergências de escopo que só se revelam quando o cliente vê e testa o produto funcionando. Diferente do MVP de startup (validar hipótese de mercado), aqui o objetivo é gerenciar expectativa e prevenir o padrão "cliente empolgado no início, insatisfeito no fim" — ver [[wiki/concepts/gerenciamento-de-expectativa-em-servicos-de-ia]].
 
+## Definir Custo/Tempo Primeiro, Encaixar Escopo Depois
+
+[[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]] formula a mesma lógica de MVP a partir da direção oposta à intuição comum: em vez de definir todo o escopo primeiro e tentar encaixar custo e tempo depois (comparado a "encaixar uma peça redonda num buraco quadrado"), o projeto deve definir **custo e tempo primeiro**, e só então encaixar o que couber dentro desse limite — o que não couber, fica de fora. Reforça com a mesma fonte a analogia "dividir para conquistar" (Napoleão) e recomenda nunca comprometer-se com planejamento de longo prazo adiantado (ex.: nunca pagar um curso de dez meses de uma vez — testar mês a mês) como aplicação do mesmo princípio a decisões de consumo, não só a projetos de software.
+
 ## Ver Também
 
 - [[concepts/scope-creep]] — inimigo principal do MVP
@@ -87,3 +91,4 @@ Em [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]], o autor argu
 - [[wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub]] — variante de MVP de aprendizado pessoal, sem mercado nem usuário real: "mínimo" medido pela lacuna de conhecimento preenchida, não por validação de hipótese de negócio
 - [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]] — gargalo do MVP mudou de "programar" para "validar" com IA; estudos GitHub (2022) e Y Combinator sobre ganho de velocidade
 - [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]] — MVP integrado como ferramenta de descoberta de escopo em serviços de IA para cliente externo
+- [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]] — definir custo/tempo primeiro e encaixar escopo depois; nunca comprometer-se com planejamento de longo prazo adiantado

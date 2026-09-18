@@ -3,8 +3,8 @@ type: concept
 title: "Monolith First"
 aliases: ["monolito primeiro", "monolith first", "martinfowler.com/bliki/monolithfirst"]
 date_created: 2026-08-18
-date_updated: 2026-08-21
-source_count: 4
+date_updated: 2026-09-18
+source_count: 5
 tags: [monolito, monolito-modular, microsservicos, martin-fowler, arquitetura, ddd, yagni, bounded-context]
 skill: tech-mentor-backend
 status: stable
@@ -45,8 +45,13 @@ Distinto mas complementar a [[wiki/sources/arquitetura-de-sacrificio]] (outro ar
 
 [[wiki/sources/seedwork-martin-fowler]] (2003) usa a mesma estrutura de argumento, décadas antes: em vez de esperar por um framework de reuso perfeito (raro e difícil de alcançar), Fowler recomenda uma alternativa pragmática e imperfeita — o [[wiki/concepts/seedwork]]. Monolith First aplica o mesmo raciocínio à escolha arquitetural de dia 1: em vez de esperar ter certeza sobre os [[wiki/concepts/bounded-context|bounded contexts]] corretos antes de distribuir, comece pelo monolito modular e evolua a decomposição depois. Em ambos os casos, o critério de decisão de Fowler é "o que é útil agora", não "o que é ideal em teoria".
 
+## Motivo Novo em 2026: Contexto de Repositório Único Para Agentes de IA
+
+[[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] registra um motivador de popularidade do monolito **ausente de todas as fontes anteriores desta página**: agentes de IA de codificação têm mais contexto de todo o sistema quando o código fica num único repositório, o que facilita o trabalho do agente — segundo a fonte, essa é uma razão real pela qual "as pessoas estão preferindo deixar tudo no monolito" no mercado atual. A fonte é explícita em não tratar isso como justificativa suficiente por si só ("isso tem trade-offs, não é só jogar tudo no monolito e tá tudo certo — existe arquitetura de microsserviço por um motivo"), o que mantém coerência com o argumento estrutural já documentado nesta página (conhecimento de domínio, não conveniência de ferramenta, é o critério central do princípio de Fowler). Nenhum dado ou fonte técnica é citado para sustentar o vínculo causal "IA → preferência por monolito" — é observação de mercado da autora, candidata a verificação futura se surgir uma fonte dedicada ao tema.
+
 ## Key Sources
 
+- [[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] — motivador novo (não presente nas fontes anteriores): monolito preferido atualmente em parte por dar mais contexto de repositório único a agentes de IA
 - [[wiki/sources/monolith-first-martin-fowler]] — fonte primária: MicroservicePremium, os dois argumentos (YAGNI e BoundedContexts), quatro caminhos práticos, contra-argumento
 - [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — nomeação explícita do princípio, as duas percepções de Fowler, e a imagem dos "dois caminhos" do bliki
 - [[wiki/sources/seedwork-martin-fowler]] — mesmo padrão retórico de Fowler (pragmatismo imperfeito sobre ideal inalcançável), aplicado a reuso de framework em vez de arquitetura de serviços

@@ -3,8 +3,8 @@ type: concept
 title: "System Design por Nível de Senioridade"
 aliases: ["system design junior pleno senior", "expectativas de system design por nível", "o que esperar de cada senioridade em arquitetura"]
 date_created: 2026-07-27
-date_updated: 2026-09-03
-source_count: 6
+date_updated: 2026-09-18
+source_count: 7
 tags: [system-design, carreira, senioridade, junior, pleno, senior, entrevistas]
 skill: tech-mentor-system-design
 status: draft
@@ -56,8 +56,13 @@ Desenvolver um sistema inteiro do zero para uma equipe trabalhar em cima — dec
 
 [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] traz uma confirmação de outro ângulo: numa releitura de 13 requisitos de pleno listados 4 anos antes, em que 6 itens caíram para commodity e 3 foram rebaixados para júnior, system design é citado explicitamente como um dos apenas dois itens que "envelheceram bem" — sem alteração relevante de importância. Convergente com o fato desta página de que a expectativa de system design para pleno se mantém estável entre fontes diferentes, mesmo com ~4,5 anos de agentes de IA escrevendo código no intervalo.
 
+## O Sênior no Dia a Dia, Não na Entrevista: Menos Código, Mais Decisão
+
+[[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] traz um ângulo complementar às fontes acima (que focam majoritariamente em entrevista): observando o **dia a dia real** de um sênior fora do contexto de entrevista, a fonte afirma que escrever código "na mão" é tipicamente a atividade que menos ocupa o tempo desse profissional — o grosso é reunião de decisão técnica, decisão de time, decisão arquitetural e trade-off. Reforça sem contradizer o eixo já estabelecido nesta página (sênior = otimizar e liderar a conversa sobre tradeoffs): a novidade é articular explicitamente *por que* as empresas buscam seniors — não é acaso, é que a decisão arquitetural malfeita custa caro em escala (usuários, dor de gestão, instabilidade), enquanto a decisão bem tomada exige entender pré-requisitos de negócio, potencial de escala, fontes de dados e estabilidade de APIs externas antes mesmo de desenhar a solução.
+
 ## Key Sources
 
+- [[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] — ângulo de dia a dia real (fora de entrevista): sênior gasta a maior parte do tempo em decisão, não em código
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]]
 - [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — system design citado como um dos dois únicos itens que não mudaram numa releitura de 13 requisitos de pleno de 4 anos atrás
 - [[wiki/sources/system-design-entrevista-cinema-draw-io]] — confirmação prática independente: o apresentador, ao desenhar um rascunho de entrevista, decide não aprofundar escalabilidade/RPS por considerar isso pergunta de senioridade mais alta — mesma gradação descrita nesta página, vinda de outra fonte/canal

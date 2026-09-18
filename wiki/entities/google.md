@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-08-24
-source_count: 7
+date_updated: 2026-09-18
+source_count: 8
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -32,6 +32,10 @@ Google, junto com Yahoo, Facebook e AOL, fundou em 2007 a OpenID Foundation, cri
 
 Pouco depois de [[wiki/entities/blaine-cook]] (Twitter) e [[wiki/entities/larry-halff]] (Magnolia) iniciarem o grupo de discussão OAuth em abril de 2007, o Google já havia se juntado às discussões — mesmo ano em que, separadamente, cofundou a OpenID Foundation (ver seção abaixo). Ver [[wiki/sources/historia-oauth2-antipadrao-senha-bernardo-lobato]].
 
+## Origem do Paper "Attention Is All You Need" (2017) e do TensorFlow Embedding Projector
+
+[[wiki/sources/self-attention-mecanismo-transformers]] atribui à equipe do Google a origem do paper [[wiki/entities/attention-is-all-you-need-paper|"Attention Is All You Need"]] (2017), que introduziu a [[wiki/concepts/transformer-architecture|arquitetura Transformer]] e o mecanismo de [[wiki/concepts/self-attention]] — base de praticamente toda LLM generativa moderna. A mesma fonte cita o **TensorFlow Embedding Projector** (ferramenta do Google) como demonstração visual de como [[wiki/concepts/embedding-vectors|embedding vectors]] de palavras se posicionam num espaço multidimensional por proximidade semântica.
+
 ## Google Drive como Exemplo de Armazenamento em Nuvem
 
 Citada (ao lado de Dropbox e iCloud) como serviço de nuvem de referência em [[wiki/sources/tipos-de-armazenamento-de-dados]]: arquivos ficam em servidores remotos, criptografados e **duplicados em vários data centers** — geo-redundância que sobrevive à falha de um centro inteiro. Trade-off: espaço grande exige assinatura. Contraste com o [[wiki/concepts/nas-network-attached-storage|NAS]], em que o hardware é do próprio usuário.
@@ -45,3 +49,4 @@ Citada (ao lado de Dropbox e iCloud) como serviço de nuvem de referência em [[
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — Gemini CLI citado como um dos providers com detecção de uso não-oficial e risco de banimento por rotação de contas free tier
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — criadora do [[wiki/concepts/grpc]] (2015), lançado na mesma década do GraphQL (Meta) como resposta de performance para comunicação interna entre microsserviços
 - [[wiki/sources/historia-oauth2-antipadrao-senha-bernardo-lobato]] — uma das primeiras empresas a se juntar às discussões do grupo OAuth, pouco após sua formação em abril de 2007
+- [[wiki/sources/self-attention-mecanismo-transformers]] — origem do paper "Attention Is All You Need" (2017) e do TensorFlow Embedding Projector

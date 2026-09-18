@@ -10421,3 +10421,129 @@ Skill carregada: `tech-mentor-ai`, de `/home/gabriel-martins/Documentos/skills/t
 **Notas / open questions:** (1) **Números específicos de mínimo de tokens por modelo na Anthropic** (4096 tokens em modelos antigos, 512 no Opus 5) citados no vídeo não batem com o valor único documentado em `references/ai/context-engineering.md` (1024 tokens geral) — não cross-checados contra documentação oficial da Anthropic nesta ingestão; marcado Confidence Baixa-média em `wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk.md` e `wiki/entities/anthropic.md`, candidato a verificação com fonte primária numa ingestão futura. (2) **Mínimo de tokens do DeepSeek via OpenRouter** citado apenas qualitativamente ("bem pequenininho"), sem número — não verificado. (3) **Nenhuma contradição encontrada** com conteúdo pré-existente; esta fonte preenche diretamente uma lacuna já registrada em `wiki/sources/tokens-o-que-sao-e-por-que-custam-caro.md` (ver acima).
 
 ---
+
+## [2026-09-18] ingest | Consultoria é uma Boa Opção de Carreira?
+
+**Source:** transcrição de vídeo/live PT-BR (fala corrida, sem pontuação, autor não identificado, respondendo pergunta de espectador) recebida diretamente no chat — transformada em markdown estruturado e salva em `raw/consultoria-e-uma-boa-opcao-de-carreira.md` antes da ingestão, conforme solicitado. Nenhuma tradução foi necessária (fonte já em português).
+**Skill:** tech-mentor-leadership. **Nota de skill:** o diretório `/home/nemomartins/Documentos/new/skills/tech-mentor-leadership/` não existe neste ambiente (path do CLAUDE.md não resolve no filesystem local) — a calibração de domínio nesta ingestão foi feita por convenção interna da wiki (mesma tag `skill: tech-mentor-leadership` já usada em `wiki/concepts/body-shop-terceirizacao.md` e `wiki/sources/soft-skills-carreira-tecnologia-eduarda.md`), não por leitura do SKILL.md/reference file. Sinalizado aqui para não ser confundido com calibração real.
+
+**Páginas criadas:**
+- `wiki/sources/consultoria-e-uma-boa-opcao-de-carreira.md`
+- `wiki/concepts/cadeia-de-intermediacao-em-consultoria.md` — conceito novo: subcontratação em cascata entre consultorias (profissional → Consultoria B → cliente final), com corte de margem e triplicação de linhas de reporte
+- `wiki/concepts/trabalhar-para-produto-vs-consultoria.md` — conceito novo: as duas vantagens de trabalhar direto pro "produto" (salário integral, gestão única), relativizadas por um caso pessoal positivo dentro de esquema intermediado
+
+**Páginas atualizadas:**
+- `wiki/concepts/body-shop-terceirizacao.md` — nova linha em Key Sources e em "Ver também", distinguindo explicitamente de cadeia de intermediação (volume de contratação vs. camadas contratuais); `source_count` 1→2
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts (junto a body-shop-terceirizacao)
+
+**Notas / open questions:** (1) **Skills path do CLAUDE.md não existe neste ambiente** (`/home/nemomartins/Documentos/new/skills/`) — ver nota de skill acima; candidato a esclarecimento com o usuário numa ingestão futura sobre se o path deveria ser ajustado para este ambiente (`/home/gabriel-martins/...`). (2) **"Consultoria no Brasil é muito mais poucas ideias do que na Espanha"** é afirmação qualitativa sem dados, baseada em amostra pessoal de 3 empresas total — sinalizada com confiança baixa na fonte, sem página de comparação Brasil/Espanha pré-existente na wiki para triangular. (3) **Nenhuma contradição encontrada** com conteúdo pré-existente; a fonte complementa `wiki/concepts/body-shop-terceirizacao.md` com um mecanismo de intermediação distinto do já documentado.
+
+---
+
+## [2026-09-18] ingest | Agilidade e o Manifesto Ágil
+
+**Source:** transcrição de vídeo PT-BR (fala corrida, sem pontuação, autor Fábio Akita) recebida diretamente no chat — transformada em markdown estruturado e salva em `raw/agilidade-manifesto-agil-fabio-akita.md` antes da ingestão, conforme solicitado. Nenhuma tradução foi necessária (fonte já em português). Segundo episódio de uma série sobre "profissão de prática", já citando `wiki/sources/pare-de-terceirizar-suas-decisoes.md` como episódio anterior.
+**Skill:** tech-mentor-leadership. **Nota de skill:** mesma situação já registrada na ingestão anterior — o diretório `/home/nemomartins/Documentos/new/skills/` não existe neste ambiente; calibração de domínio feita por convenção interna, cruzando com páginas já existentes da wiki com a mesma tag (`wiki/concepts/scrum-master.md`, `wiki/concepts/story-points.md`, `wiki/concepts/goodharts-law.md`, `wiki/entities/fabio-akita.md`), não por leitura do SKILL.md/reference file.
+
+**Páginas criadas:**
+- `wiki/sources/agilidade-manifesto-agil-fabio-akita.md`
+- `wiki/concepts/manifesto-agil-como-adjetivo.md` — conceito central novo: "ágil" é adjetivo (Dave Thomas, GOTO 2015), não nome de metodologia vendável; reconstrói os 17 signatários do manifesto de 2001
+- `wiki/concepts/software-nao-e-engenharia-de-producao.md` — conceito novo: Lean/Kanban/Six Sigma resolvem problemas de manufatura física, não se transferem para software (sem restrições físicas)
+- `wiki/concepts/accountability-em-equipes-ageis.md` — conceito novo: "ser ágil é ser adulto" — accountability (liberdade + ônus) vs. processo usado como muleta para evitar responsabilidade
+- `wiki/concepts/gestao-de-riscos-e-controle-ilusorio.md` — conceito novo: gestão de risco não é eliminação de risco; "ter controle" vs. "achar que tem controle" via microgerenciamento
+- `wiki/entities/dave-thomas.md` — nova entity: coautor de *The Pragmatic Programmer*, signatário do manifesto, fonte do argumento central "ágil é adjetivo" (palestra GOTO 2015, não lida diretamente nesta ingestão)
+
+**Páginas atualizadas:**
+- `wiki/entities/fabio-akita.md` — nova seção sobre a crítica à indústria de consultoria ágil; `source_count` 8→9
+- `wiki/entities/martin-fowler.md`, `wiki/entities/kent-beck.md`, `wiki/entities/uncle-bob.md` — nova seção em cada um sobre sua condição de signatário do manifesto de 2001, citados nesta fonte; `source_count` incrementado em cada um
+- `wiki/concepts/extreme-programming.md` — nova seção sobre a recomendação de XP (não Scrum) como ponto de partida para iniciantes; `source_count` 5→6
+- `wiki/concepts/scrum-master.md` — nova seção contextualizando que Scrum não menciona "ágil" no guia original e é anterior ao manifesto; `source_count` 1→2
+- `wiki/concepts/goodharts-law.md` — nova seção generalizando o mecanismo da lei para a validação retórica de metodologias ágeis inteiras via números sem controle metodológico; `source_count` 4→5
+- `wiki/concepts/cultura-corporativa-vs-manifesto-na-parede.md` — nova seção aplicando a mesma tese (manifesto estático interpretado seletivamente) ao Manifesto Ágil; `source_count` 1→2
+- `wiki/sources/pare-de-terceirizar-suas-decisoes.md` — nova seção linkando ao episódio seguinte da série
+- `wiki/index.md` — nova linha em Sources; quatro novas linhas em Concepts (seção "Agile & Estimativa"); uma nova linha em Entities (Dave Thomas)
+
+**Notas / open questions:** (1) **A palestra de Dave Thomas na GOTO 2015 e o blog post de 2014** (assim como o artigo "Ágil está morto" do próprio Akita) são citados como fontes primárias do argumento central, mas não foram assistidos/lidos nesta ingestão — apenas relatados pela transcrição de Akita. Candidatos a ingestão futura como fontes primárias independentes. (2) **Citação parafraseada atribuída a Uncle Bob** ("não existe metodologia ágil, existe ser ágil") sem link/data ao post original — mesma cautela de atribuição já registrada em menções anteriores a Uncle Bob nesta wiki. (3) **Nenhuma contradição encontrada** com conteúdo pré-existente; a fonte é altamente consistente com `wiki/concepts/scrum-master.md`, `wiki/concepts/goodharts-law.md` (mesmo mecanismo de "ágil industrializado") e `wiki/sources/pare-de-terceirizar-suas-decisoes.md` (mesmo autor, mesmo eixo de skin-in-the-game aplicado a consultores).
+
+---
+
+## [2026-09-18] ingest | Self-Attention: o Mecanismo por Trás dos Transformers
+
+**Source:** transcrição de vídeo PT-BR (série de desmistificação de LLMs, autoria não identificada na transcrição) recebida diretamente no chat — transformada em markdown estruturado e salva em `raw/self-attention-mecanismo-transformers.md` antes da ingestão, conforme solicitado. Nenhuma tradução foi necessária (fonte já em português).
+**Skill:** tech-mentor-ai. Carregado `SKILL.md` e a referência `references/ai/fundamentals.md` (seção "Transformer Architecture — Attention e Positional Encoding" e "Tokenização — BPE"), localizados em `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/` — path diferente do declarado no CLAUDE.md (`/home/nemomartins/Documentos/new/skills/`), mas o mesmo skill existe neste ambiente sob o nome de usuário real (`gabriel-martins`) e sob `Documentos/skills` em vez de `Documentos/new/skills`; usado normalmente nesta ingestão.
+
+**Páginas criadas:**
+- `wiki/sources/self-attention-mecanismo-transformers.md`
+- `wiki/concepts/transformer-architecture.md` — conceito central novo: pipeline completo da arquitetura Transformer; **também preenche um link quebrado pré-existente** — `wiki/sources/como-llms-funcionam.md` já linkava `[[concepts/transformer-architecture]]` desde 2026-04-23 sem que a página existisse
+- `wiki/concepts/self-attention.md` — conceito novo: mecanismo Q/K(/V), cálculo de attention score, softmax, ligação com ambiguidade contextual
+- `wiki/concepts/embedding-vectors.md` — conceito novo: embeddings de token/word (arquitetura Transformer), distinto de embeddings de busca semântica/RAG já cobertos em `tech-mentor-ai/references/ai/fundamentals.md` — nota explícita na página para não confundir os dois usos
+- `wiki/concepts/positional-encoding.md` — conceito novo: necessidade de codificação posicional, com implementações (sinusoidal, aprendida, RoPE) marcadas `[external]` por não serem cobertas pela fonte
+- `wiki/entities/attention-is-all-you-need-paper.md` — nova entity (paper): Vaswani et al., Google, 2017, marco histórico do Transformer
+
+**Páginas atualizadas:**
+- `wiki/concepts/tokenizacao.md` — nova seção "Do ID de Vocabulário ao Significado: Embeddings" ligando tokenização a embeddings/self-attention; `source_count` 3→4
+- `wiki/sources/como-llms-funcionam.md` — nova seção "Ver também" linkando à nova fonte como deep dive do mecanismo de self-attention citado ali apenas en passant
+- `wiki/entities/hugging-face.md` — nova seção sobre o guia intuitivo de embeddings citado como demonstração visual; `source_count` 1→2
+- `wiki/entities/google.md` — nova seção sobre a origem do paper "Attention Is All You Need" e do TensorFlow Embedding Projector; `source_count` 7→8
+- `wiki/index.md` — nova linha em Sources; quatro novas linhas em Concepts (seção "LLMs e IA"); uma nova linha em Entities
+
+**Notas / open questions:** (1) **Path de skills do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`), mas desta vez o diretório de skills foi localizado com sucesso em `/home/gabriel-martins/Documentos/skills/tech-mentor-ai/` e efetivamente lido — diferente de duas ingestões anteriores que registraram o path como inexistente sem checar variações. Recomenda-se ajustar o CLAUDE.md para o path real numa próxima sessão de manutenção. (2) **A fonte não cobre o vetor V (Value)** do mecanismo padrão Q/K/V nem detalha o cálculo matemático de Q/K — lacuna reconhecida pela própria narradora no vídeo; preenchida parcialmente com conhecimento `[external]` em `wiki/concepts/self-attention.md`, claramente demarcado. (3) **Nenhuma contradição encontrada** com conteúdo pré-existente; a fonte é altamente complementar a `wiki/sources/como-llms-funcionam.md`, aprofundando um mecanismo que lá era apenas mencionado.
+
+---
+
+## [2026-09-18] ingest | Aprendizado, Gestão e a Beira do Caos
+
+**Source:** transcrição de vídeo PT-BR (fala corrida, sem pontuação, autor Fábio Akita — vídeo comemorativo dos 300 mil inscritos do canal) recebida diretamente no chat — transformada em markdown estruturado e salva em `raw/aprendizado-gestao-e-beira-do-caos-fabio-akita.md` antes da ingestão, conforme solicitado. Nenhuma tradução foi necessária (fonte já em português).
+**Skill:** tech-mentor-leadership. Carregado `SKILL.md` em `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/` (path real deste ambiente — diferente do declarado no CLAUDE.md, `/home/nemomartins/Documentos/new/skills/`, que não existe aqui; mesma situação já registrada em ingestões anteriores). Consultadas as referências `software-craftsmanship.md` e `engineering-management.md`, mas nenhuma cobre PDCA/Kaizen/Deming/Goldratt/Six Sigma/beira do caos em profundidade — calibração de domínio feita majoritariamente por convenção interna, cruzando com páginas já existentes da wiki com o mesmo autor e tags relacionadas (`wiki/concepts/scrum-master.md`, `wiki/concepts/goodharts-law.md`, `wiki/concepts/gestao-de-riscos-e-controle-ilusorio.md`, `wiki/entities/fabio-akita.md`).
+
+**Páginas criadas:**
+- `wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita.md`
+- `wiki/concepts/beira-do-caos.md` — conceito central novo: hipótese pessoal do autor de que "balanço" é a oscilação disciplinada entre ordem e caos (edge of chaos), não um estado estático
+- `wiki/concepts/determinismo-newtoniano-e-seus-limites.md` — conceito novo: por que fórmulas deterministas (Newton) só funcionam em escalas curtas de tempo/dimensão — relatividade, física quântica e teoria do caos como quebras históricas
+- `wiki/concepts/tentativa-e-erro-como-metodo-cientifico.md` — conceito novo: tese de que PDCA, DMAIC, Kaizen, Scrum e método científico são a mesma estrutura cíclica de resolução de problemas desconhecidos
+- `wiki/concepts/ciclo-pdca-deming.md` — conceito novo
+- `wiki/concepts/teoria-das-restricoes-goldratt.md` — conceito novo
+- `wiki/concepts/six-sigma-dmaic.md` — conceito novo, incluindo o case histórico Motorola
+- `wiki/concepts/jogar-codigo-fora-como-pratica.md` — conceito novo: escrever e descartar protótipos como disciplina central de programação
+- `wiki/entities/edwards-deming.md` — nova entity
+- `wiki/entities/eliyahu-goldratt.md` — nova entity
+
+**Páginas atualizadas:**
+- `wiki/entities/fabio-akita.md` — nova seção sobre esta fonte; `source_count` 9→10
+- `wiki/concepts/gestao-de-riscos-e-controle-ilusorio.md` — nova seção reforçando a analogia do seguro (repetida quase verbatim nesta fonte) com a máxima "se você tem risco, vai acabar tendo perda"; `source_count` 1→2
+- `wiki/concepts/scrum-master.md` — nova seção ligando a estrutura do Sprint ao PDCA/Kaizen do Modelo Toyota; `source_count` 2→3
+- `wiki/concepts/goodharts-law.md` — nova seção com o caso histórico Motorola/Six Sigma (números de sucesso genuínos que não sustentaram sucesso de longo prazo); `source_count` 5→6
+- `wiki/concepts/mvp.md` — nova seção sobre definir custo/tempo primeiro e encaixar escopo depois; `source_count` 9→10
+- `wiki/index.md` — nova linha em Sources; oito novas linhas em Concepts (cinco em "Agile & Estimativa", três em "Aprendizado e Mentalidade"); duas novas linhas em Entities
+
+**Notas / open questions:** (1) **Path de skills do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada em múltiplas ingestões anteriores; o path real (`/home/gabriel-martins/Documentos/skills/`) foi usado normalmente. Segue recomendado ajustar o CLAUDE.md numa sessão de manutenção futura. (2) **A hipótese "beira do caos = balanço"** é marcada pelo próprio autor como especulação pessoal, não citação de literatura estabelecida sobre edge of chaos (Kauffman, Langton, Packard) — candidato a checagem futura se uma fonte primária for ingerida. (3) **Números do case Motorola/Six Sigma** (vendas 5x, lucro 20%/ano, economia de US$14bi, ações +21%/ano entre 1987-1997) não foram verificados nesta ingestão. (4) **Menção vaga a pesquisas de "beira do caos" em redes neurais/deep learning**, sem autor, paper ou ano citado — marcada como `[external, não verificado]`. (5) **Nenhuma contradição encontrada** com conteúdo pré-existente; a fonte é altamente consistente com `wiki/sources/agilidade-manifesto-agil-fabio-akita.md` (mesmo autor), repetindo quase verbatim a analogia do seguro e aprofundando a origem histórica do Scrum via PDCA/Kaizen.
+
+---
+
+## [2026-09-18] ingest | Vale a Pena Aprender a Programar com IA? O Que Estou Estudando Agora
+
+**Source:** transcrição de vídeo em português (fala corrida, sem pontuação, autora não identificada nominalmente), recebida diretamente no chat — transformada em markdown estruturado e salva em `raw/o-que-estudar-vale-a-pena-aprender-programar-com-ia.md` antes da ingestão, conforme solicitado. Nenhuma tradução foi necessária (fonte já em português).
+**Skill:** tech-mentor-leadership. Carregado `SKILL.md` e a referência `references/career-progression.md` em `/home/gabriel-martins/Documentos/skills/tech-mentor-leadership/` (path real deste ambiente — diferente do declarado no CLAUDE.md, `/home/nemomartins/Documentos/new/skills/`, que não existe aqui; mesma situação já registrada em múltiplas ingestões anteriores, incluindo a imediatamente acima).
+
+**Páginas criadas:**
+- `wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia.md`
+
+Nenhum stub novo de concept/entity foi criado — todos os temas centrais da fonte (papel do sênior, fundamentos vs. arquitetura, Clean Architecture, monolito vs. microsserviços, livros recomendados, observabilidade, forward deployed engineer) já tinham páginas robustas e bem estabelecidas na wiki.
+
+**Páginas atualizadas (10):**
+- `wiki/concepts/niveis-de-senioridade-system-design.md` — nova seção "dia a dia real" (sênior gasta mais tempo decidindo do que codando, fora do contexto de entrevista); `source_count` 6→7
+- `wiki/concepts/engenheiro-vs-programador.md` — nova seção conectando a dicotomia a um plano de estudo concreto; `source_count` 10→11
+- `wiki/concepts/livros-recomendados-programador.md` — segunda fonte independente endossando *Designing Data-Intensive Applications*; blog de Martin Fowler e Serverless Land (AWS) como hábito contínuo de estudo; `source_count` 5→6
+- `wiki/concepts/algoritmos-e-estruturas-de-dados.md` — releitura deliberada de *Entendendo Algoritmos* após período imersa em agentes de IA, como base para julgar criticamente o output do agente; `source_count` 20→21
+- `wiki/concepts/clean-architecture.md` — **ângulo novo**: Clean Architecture reestudada para guiar agentes de IA a organizar pastas/interfaces antes da geração de código, não como checklist de revisão posterior; `source_count` 10→11
+- `wiki/concepts/monolith-first.md` — **ângulo novo, ausente de todas as fontes anteriores**: agentes de IA como motivador atual de retomada de popularidade do monolito, por darem mais contexto de repositório único; `source_count` 4→5
+- `wiki/concepts/observabilidade.md` — nota de plano editorial (observabilidade como próximo tema de estudo/conteúdo da autora); `source_count` 12→13
+- `wiki/entities/martin-fowler.md` — blog citado como hábito de estudo contínuo; `source_count` 29→30
+- `wiki/entities/martin-kleppmann.md` — *Designing Data-Intensive Applications* citado como leitura recente/em andamento; `source_count` 1→2
+- `wiki/concepts/forward-deployed-engineer.md` — terceira fonte independente citando o cargo, mas a mais rasa das três; `source_count` 2→3
+
+Também atualizado: `wiki/index.md` (nova linha em Sources).
+
+**Notas / open questions:** (1) **Path de skills do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada em múltiplas ingestões anteriores; path real usado normalmente. (2) **Identidade da autora não determinada** a partir da transcrição — marcado como `[não identificado]` no frontmatter da fonte, diferente de outras fontes do mesmo "gênero" no wiki que citam nome/canal. (3) **Vínculo causal "agentes de IA preferem monolito por contexto de repositório único → retomada de popularidade do monolito"** é observação da autora sem fonte/dado externo citado — candidato a verificação futura, registrado como questão aberta na página de origem e em `wiki/concepts/monolith-first.md`. (4) **Alegação "escassez de seniors sempre existiu, não é novidade da IA"** também sem dado citado nesta fonte — candidato a checagem cruzada numa sessão de lint futura. (5) **Nenhuma contradição encontrada** com conteúdo pré-existente da wiki; a fonte converge fortemente com `wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos.md` (fundamentos continuam valendo a pena) e com as duas fontes já ingeridas sobre forward deployed engineer.
+
+---

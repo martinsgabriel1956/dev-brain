@@ -3,8 +3,8 @@ type: concept
 title: "Scrum Master"
 aliases: ["SM", "Facilitador Scrum"]
 date_created: 2026-07-28
-date_updated: 2026-07-28
-source_count: 1
+date_updated: 2026-09-18
+source_count: 3
 tags: [agile, scrum, engineering-management, papeis]
 skill: tech-mentor-leadership
 status: stable
@@ -32,10 +32,20 @@ Essa versão do papel é descrita como o "Agile industrializado": no fim, garant
 
 O Agile nasceu porque desenvolvedores estavam exaustos de fazer *crunch* e entregar software ruim sob processos rígidos. A tese central é que times ágeis são **mais velozes** porque valorizam aprendizado contínuo e bem-estar — não porque forçam mais output bruto por pessoa. Forçar mais código ou mais pontos não é o mesmo que ser mais veloz, mesmo que pareça assim para quem olha só o número. Um Scrum Master que perde essa tese de vista está, na prática, revertendo o motivo de existência do próprio papel.
 
+## Contexto Mais Amplo: Scrum Não É "Ser Ágil"
+
+[[wiki/sources/agilidade-manifesto-agil-fabio-akita]] observa que o Scrum foi criado nos anos 80, antes do Manifesto Ágil (2001), e que seu guia original sequer usa o termo "ágil" — a associação popular entre "implementar Scrum" e "ser ágil" é uma distorção posterior, adotada porque o Scrum era o texto mais simples e palatável para não-programadores. Isso reforça, em outra escala, o mesmo diagnóstico já registrado nesta página: quando o Scrum Master vira fiscal de cerimônias e números, o papel reproduz exatamente o tipo de "ágil industrializado" que essa fonte descreve como a distorção central do movimento — ver [[wiki/concepts/manifesto-agil-como-adjetivo]].
+
+## Raiz Estrutural do Sprint: PDCA/Kaizen do Modelo Toyota
+
+[[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]] aprofunda a origem histórica já registrada acima: o Sprint (execução linear seguida de retrospectiva/review, ajuste e novo Sprint) é estruturalmente o mesmo ciclo do [[wiki/concepts/ciclo-pdca-deming|PDCA de Deming]] e do Kaizen do Modelo Toyota — ver [[wiki/concepts/tentativa-e-erro-como-metodo-cientifico]]. Isso reforça, de outro ângulo, por que o papel de Scrum Master degenera em "fiscal de números" quando perde de vista essa raiz: o ciclo PDCA/Kaizen nasceu para resolver a causa raiz de um problema real a cada iteração (ver [[wiki/concepts/tentativa-e-erro-como-metodo-cientifico|5 Porquês]]), não para gerar relatórios de conformidade de processo.
+
 ## Conceitos Relacionados
 
-[[wiki/concepts/story-points]] · [[wiki/concepts/planning-poker]] · [[wiki/concepts/goodharts-law]]
+[[wiki/concepts/story-points]] · [[wiki/concepts/planning-poker]] · [[wiki/concepts/goodharts-law]] · [[wiki/concepts/manifesto-agil-como-adjetivo]] · [[wiki/concepts/tentativa-e-erro-como-metodo-cientifico]]
 
 ## Key Sources
 
 - [[wiki/sources/story-points-po-forcando-30-40-pontos-por-sprint]]
+- [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — Scrum como distorção posterior do manifesto original, não sua implementação canônica
+- [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]] — Sprint/retrospectiva como instância do mesmo ciclo estrutural do PDCA/Kaizen do Modelo Toyota

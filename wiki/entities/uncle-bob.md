@@ -3,8 +3,8 @@ type: entity
 title: "Uncle Bob (Robert C. Martin)"
 aliases: ["uncle bob", "robert c. martin", "robert cecil martin"]
 date_created: 2026-07-03
-date_updated: 2026-08-27
-source_count: 14
+date_updated: 2026-09-18
+source_count: 15
 tags: [clean-code, clean-architecture, solid, autor, quality-gate]
 skill: tech-mentor-backend
 status: stub
@@ -74,6 +74,12 @@ Décima menção, em [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-cas
 
 Décima primeira menção, em [[wiki/sources/classes-vs-estruturas-de-dados-uncle-bob]]: leitura completa do post original do blog Clean Coder, "Classes vs. Data Structures", publicado em 16/06/2019 (`blog.cleancoder.com/uncle-bob/2019/06/16/ObjectsAndDataStructures.html`) — resolve a nota de verificação da quarta menção acima (título exato, URL, autoria, todos confirmados). O post, em formato de diálogo socrático, vai além do que a transcrição de vídeo da quarta menção cobria: introduz o exemplo de formas geométricas (`Square`/`Circle`/`Triangle`) para mostrar que objetos e estruturas de dados invertem o trade-off de extensibilidade — fácil adicionar tipo vs. fácil adicionar operação, formalizado depois na literatura como [[wiki/concepts/expression-problem|Expression Problem]] — e usa esse mesmo exemplo para explicar **Dependency Inversion** pelo ângulo da direção de dependência de arquivos-fonte e do custo de recompilação/redeploy em cascata, não pelo ângulo usual de injeção de dependência.
 
+## Décima Segunda Menção: Signatário do Manifesto e Citação "Não Existe Metodologia Ágil, Existe Ser Ágil"
+
+Em [[wiki/sources/agilidade-manifesto-agil-fabio-akita]], citado como um dos 17 signatários do Manifesto para o Desenvolvimento Ágil de Software (2001), e parafraseado defendendo uma posição radical: não existe "metodologia ágil" nem "implementar ágil" — existem métodos e práticas adotados por profissionais que **são** ágeis, ou não são. Essa citação sustenta o argumento central da fonte de que o termo foi distorcido de adjetivo para substantivo vendável — ver [[wiki/concepts/manifesto-agil-como-adjetivo]]. O autor da fonte (Akita) relata ter trocado ideias pessoalmente com Uncle Bob e descreve-o como "muito eloquente, um excelente orador", alertando que é fácil ser convencido só pelo carisma.
+
+**Nota de verificação**: mesma cautela de atribuição das menções anteriores — a citação é parafraseada pela transcrição de Akita, sem link, data ou texto exato do post/palestra original de Uncle Bob.
+
 ## Key Sources
 
 - [[wiki/sources/prompt-context-harness-engineering-tres-pilares]] — citado de memória (sem capítulo/página) pelo gráfico de complexidade-versus-tempo de Clean Architecture, usado como justificativa para investir em [[wiki/concepts/harness|harness engineering]]
@@ -90,3 +96,4 @@ Décima primeira menção, em [[wiki/sources/classes-vs-estruturas-de-dados-uncl
 - [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — terceiro vídeo de reação (Galego): concorda que as métricas são objetivas mas insuficientes, e propõe a matriz risco × dificuldade para migrar de "reviso tudo" para "não reviso"
 - [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — vídeo de Lucas Montano: treta com "Fernando" sobre estar on call, origem nos anos 60, citação "code quality still matters... tools that measure", projetos GitHub como play projects
 - [[wiki/sources/busca-linear-e-binaria-giovana]] — menção contextual: seu livro *Código Limpo* (*Clean Code*) usado como objeto físico na analogia da busca (procurar a página 310)
+- [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — signatário do manifesto de 2001; citação parafraseada "não existe metodologia ágil, existe ser ágil"

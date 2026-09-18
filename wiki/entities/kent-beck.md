@@ -3,8 +3,8 @@ type: entity
 title: "Kent Beck"
 aliases: ["kent beck"]
 date_created: 2026-07-09
-date_updated: 2026-09-14
-source_count: 10
+date_updated: 2026-09-18
+source_count: 11
 tags: [autor, tdd, extreme-programming, design-incremental, junit, xunit, yagni]
 skill: tech-mentor-testing
 status: stub
@@ -56,6 +56,10 @@ A mesma fonte cita um tweet famoso de Beck: "O valor econômico de 90% das minha
 
 **Nota de confiança:** citação amplamente circulada publicamente; a formulação exata das porcentagens vem de memória do autor da fonte, deve ser tratada como aproximada.
 
+## Signatário do Manifesto Ágil e Criador do XP com Ward Cunningham
+
+Em [[wiki/sources/agilidade-manifesto-agil-fabio-akita]], citado como um dos 17 signatários do manifesto de 2001 e, junto com [[wiki/entities/ward-cunningham|Ward Cunningham]] (sem página própria ainda nesta wiki), como criador das práticas de Extreme Programming — a fonte recomenda XP, não Scrum, como ponto de partida para iniciantes que querem entender "agilidade" de verdade. Ver [[wiki/concepts/manifesto-agil-como-adjetivo]].
+
 ## Nota de verificação
 
 A citação "invest in the design of the system every day" foi atribuída a Beck na palestra-fonte, mas a obra exata não foi identificada durante aquela ingestão — provavelmente de *Tidy First?*, como sugere a citação equivalente em [[wiki/sources/cognitive-debt-margaret-storey]], a confirmar em ingestão futura que leia o livro diretamente.
@@ -73,3 +77,4 @@ A citação "invest in the design of the system every day" foi atribuída a Beck
 - [[wiki/sources/c3-martin-fowler]] — liderança do recomeço do C3 em 1996; consolidação das práticas da Extreme Programming
 - [[wiki/sources/very-low-defect-project-martin-fowler]] — relatou a Fowler o caso da fabricante de máquinas de classificação de alimentos
 - [[wiki/sources/ia-paradoxo-de-jevons-camada-de-abstracao-futuro-do-programador]] — anedota do pai programador assembly migrando para C; tweet "90% desvalorizado / 10% mil vezes mais valioso"
+- [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — signatário do manifesto de 2001; criador do XP com Ward Cunningham, recomendado como ponto de partida para iniciantes em vez do Scrum

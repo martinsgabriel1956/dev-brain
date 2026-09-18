@@ -3,8 +3,8 @@ type: entity
 title: "Fábio Akita"
 aliases: ["Akita", "Akita On Rails"]
 date_created: 2026-05-16
-date_updated: 2026-09-02
-source_count: 8
+date_updated: 2026-09-18
+source_count: 10
 tags: [pessoa, programador, youtuber, brasil]
 skill: tech-mentor-leadership
 status: stable
@@ -62,6 +62,14 @@ Em [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]], defende que [
 
 Em [[wiki/sources/akita-pratica-deliberada-mito-do-talento]], segundo episódio de uma série sobre metacognição e aprendizado, defende que talento inato não existe — citando *Talent Is Overrated* de [[wiki/entities/geoff-colvin]] para desconstruir o mito de Mozart como "faísca divina" (ver [[wiki/concepts/mito-do-genio-mozart]]). Detalha a estrutura da [[wiki/concepts/pratica-deliberada|prática deliberada]] (zona de aprendizado, alta repetição, foco solitário) e fecha defendendo [[wiki/concepts/autoavaliacao-vs-validacao-externa|autoavaliação rigorosa em vez de validação externa]] — relata nunca pedir feedback de terceiros, por considerar isso "a maneira mais fácil de sabotar seu talento". Reforça o tema recorrente do "esvaziar o copo" (questionar tudo, inclusive as próprias certezas) já presente em [[wiki/concepts/aprender-a-aprender]].
 
+## Crítica à Indústria de Consultoria e Coaching Ágil
+
+Em [[wiki/sources/agilidade-manifesto-agil-fabio-akita]], segundo episódio de uma série sobre "profissão de prática" (o primeiro é [[wiki/sources/pare-de-terceirizar-suas-decisoes]]), reconstrói a origem do Manifesto para o Desenvolvimento Ágil de Software (2001) e seus 17 signatários, apoiando-se num argumento de [[wiki/entities/dave-thomas]] (palestra GOTO 2015): "ágil" é adjetivo, não substantivo vendável — ver [[wiki/concepts/manifesto-agil-como-adjetivo]]. Argumenta que técnicas de engenharia de produção física (Lean, Kanban, Six Sigma) não se transferem para software por este não ter restrições físicas (ver [[wiki/concepts/software-nao-e-engenharia-de-producao]]), e que consultorias ágeis sobrevivem porque gestores terceirizam decisões por medo — mesmo mecanismo de [[wiki/concepts/decisao-terceirizada|terceirização de decisão]] já documentado em [[wiki/sources/pare-de-terceirizar-suas-decisoes]]. Fecha com a tese "ser ágil é ser adulto": *accountability* (responsabilidade + ônus pelas consequências), não apenas autonomia — ver [[wiki/concepts/accountability-em-equipes-ageis]] e [[wiki/concepts/gestao-de-riscos-e-controle-ilusorio]].
+
+## Aprendizado, Gestão e Beira do Caos (Teoria Geral)
+
+Em [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]], vídeo comemorativo dos 300 mil inscritos, apresenta sua "teoria geral" sobre aprendizado, gestão de projetos e administração de empresas: usa a quebra histórica do [[wiki/concepts/determinismo-newtoniano-e-seus-limites|determinismo newtoniano]] (relatividade, física quântica, teoria do caos) como metáfora para argumentar que não existe receita determinista de sucesso além de escalas curtas de tempo. Reconstrói a origem do movimento de qualidade dos anos 80 ([[wiki/entities/edwards-deming|Deming]]/PDCA, [[wiki/entities/eliyahu-goldratt|Goldratt]]/Teoria das Restrições, Six Sigma) para defender que [[wiki/concepts/tentativa-e-erro-como-metodo-cientifico|PDCA, DMAIC, Kaizen, Scrum e o método científico são o mesmo ciclo]]. Introduz [[wiki/concepts/beira-do-caos|beira do caos]] como hipótese pessoal sobre o que significa "balanço": não ordem estática, mas oscilação disciplinada entre ordem e caos controlado. Aplica isso a planejamento de curto prazo, [[wiki/concepts/mvp|MVP]] e [[wiki/concepts/jogar-codigo-fora-como-pratica|escrever e jogar código fora]] como disciplina de programação, fechando com [[wiki/concepts/gestao-de-riscos-e-controle-ilusorio|gestão de risco]] (repetindo a analogia do seguro já registrada em fonte anterior) e a tese de que medo da opinião alheia, não falta de método, é a raiz da inação.
+
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]]
@@ -73,3 +81,5 @@ Em [[wiki/sources/akita-pratica-deliberada-mito-do-talento]], segundo episódio 
 - [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] — áudio de segunda mão sobre fim do dinheiro fácil e aperto de processos seletivos
 - [[wiki/sources/cinco-escolas-programacao-com-ia]] — citação de segunda mão sobre a Escola 1 (copiloto) estar "datada"
 - [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] — como organizar equipes mistas de tecnologia, feedback diário, paralelo com a bolha da internet e crítica à "cultura" como manifesto de marketing
+- [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — segundo episódio da série "profissão de prática"; crítica à indústria de consultoria ágil, origem do manifesto, "ágil é adjetivo", accountability vs. autonomia
+- [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]] — vídeo dos 300 mil inscritos; teoria geral sobre aprendizado/gestão via quebra do determinismo newtoniano, origem do movimento de qualidade (Deming, Goldratt, Six Sigma), tese "PDCA=DMAIC=Kaizen=Scrum=método científico", hipótese da beira do caos
