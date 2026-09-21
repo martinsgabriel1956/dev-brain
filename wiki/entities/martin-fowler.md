@@ -3,8 +3,8 @@ type: entity
 title: "Martin Fowler"
 aliases: ["Fowler", "martinfowler.com"]
 date_created: 2026-07-07
-date_updated: 2026-09-18
-source_count: 30
+date_updated: 2026-09-21
+source_count: 34
 tags: [thoughtworks, autor, testes, arquitetura, tech-debt, refactoring, agile]
 skill: tech-mentor-testing
 status: stable
@@ -32,6 +32,10 @@ Segundo [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]
 
 **Nota de contradição:** essa mesma fonte afirma que a Thoughtworks "foi fundada também pelo Martin Fowler". Isso contradiz o que já está registrado nesta entity (Fowler é Chief Scientist, não fundador da empresa) — tratado como possível imprecisão do autor do vídeo, não como fato verificado. Ver open questions em [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]].
 
+## Defensor do "JUnit New Instance Behavior"
+
+Segundo [[wiki/sources/there-is-always-an-exception-xunitpatterns]] (Meszaros), Fowler considerou relevante o bastante o caso do [[wiki/entities/nunit|NUnit]] 2.x reutilizar uma única instância da Testcase Class entre [[wiki/concepts/test-method|Test Methods]] (em vez de seguir o padrão do [[wiki/entities/junit|JUnit]] de uma nova instância por método) para escrever um artigo dedicado no bliki defendendo a abordagem do JUnit como a correta: [JunitNewInstance](http://martinfowler.com/bliki/JunitNewInstance.html). A fonte apenas referencia a URL, sem citar o argumento completo do artigo — candidato a ingestão futura dedicada.
+
 ## Termos e frameworks cunhados/popularizados, presentes nesta wiki
 
 - [[teste-de-integracao-estreito-vs-amplo]] — narrow vs. broad integration test, system test
@@ -45,6 +49,8 @@ Segundo [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]
 - [[wiki/concepts/monolith-first]] — princípio (bliki, 2015, martinfowler.com/bliki/MonolithFirst.html) de que projetos novos não devem começar com microsserviços; formulado a partir da observação de que quase toda história de microsserviços bem-sucedida começou como monolito, e quase todo sistema que nasceu já distribuído teve sérios problemas; sustentado por YAGNI e pela dificuldade de acertar bounded contexts no início — ver a fonte primária [[wiki/sources/monolith-first-martin-fowler]]
 - [[test-doubles]] — divulgou o termo guarda-chuva "TestDouble" no bliki em 2006, mas a taxonomia dos cinco tipos (Dummy/Fake/Stub/Spy/Mock) é de autoria de [[wiki/entities/gerard-meszaros]], não dele — ver [[wiki/sources/test-double-martin-fowler]] (relato de Fowler) e agora também a **fonte primária** de Meszaros em [[wiki/sources/test-double-xunitpatterns-meszaros]]
 - [[wiki/concepts/extract-interface]] — refatoração do livro *Refactoring: Improving the Design of Existing Software*, catalogada (mas não escrita) no site de Meszaros: extrair para uma interface própria o subconjunto de uma classe usado por vários clientes; citada como pré-requisito técnico para instalar Test Doubles via Dependency Injection em linguagens estaticamente tipadas — ver [[wiki/sources/extract-interface-xunitpatterns]]
+- [[wiki/concepts/extract-method]] — refatoração-irmã do mesmo livro, mesma proveniência host≠autor no catálogo de Meszaros: transformar um fragmento de código repetido/repetível num método nomeado; citada em [[wiki/sources/testcase-class-xunitpatterns]] como técnica para eliminar Test Code Duplication — ver [[wiki/sources/extract-method-xunitpatterns]]
+- [[wiki/concepts/rename-method]] — terceira refatoração do mesmo livro citada no catálogo de Meszaros, ainda sem página primária dedicada isolada: recomendada em [[wiki/sources/test-discovery-xunitpatterns]] para migrar Test Methods existentes a um framework que faz **Test Method Discovery** por convenção de nomenclatura
 - [[wiki/concepts/seedwork]] — termo cunhado por ele para descrever frameworks mínimos reconstruídos por cada time, a partir de discussão originada num post de Michael Feathers; fonte primária agora ingerida em [[wiki/sources/seedwork-martin-fowler]], publicada no mesmo dia (2003-09-11) que [[wiki/sources/application-boundary-martin-fowler]] e reutilizando a mesma tese central (ApplicationBoundary como construção social) para explicar por que reuso de código entre aplicações é difícil
 - [[wiki/concepts/application-boundary]] — tese de 2003 de que "aplicações são construções sociais", argumentando contra a previsão da época de que SOA tornaria aplicações obsoletas — ver [[wiki/sources/application-boundary-martin-fowler]]
 - [[wiki/concepts/microsservicos]] — coautor (com [[wiki/entities/james-lewis]]) do artigo de 2014 que cunhou a definição do termo hoje citada universalmente na indústria; mesma característica de precisão terminológica descrita acima aparece aqui como recusa a declarar microsserviços "o futuro" sem ressalvas — ver [[wiki/sources/microsservicos-martin-fowler-james-lewis]]
@@ -106,6 +112,7 @@ Em [[wiki/sources/agilidade-manifesto-agil-fabio-akita]], citado como um dos 17 
 
 ## Key Sources
 
+- [[wiki/sources/there-is-always-an-exception-xunitpatterns]] — cita o artigo "JunitNewInstance" de Fowler, defendendo a abordagem do JUnit (nova instância por Test Method) contra a exceção do NUnit 2.x/TestNG
 - [[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] — blog citado como hábito de estudo contínuo (não artigo específico) ao retomar estudo técnico
 - [[wiki/sources/integration-test-martin-fowler]]
 - [[wiki/sources/contract-test-martin-fowler]]
@@ -135,4 +142,7 @@ Em [[wiki/sources/agilidade-manifesto-agil-fabio-akita]], citado como um dos 17 
 - [[wiki/sources/continuous-delivery-martin-fowler]] — bliki de 2013 que define "Continuous Delivery": quatro indicadores, distinção vs. Continuous Deployment, DevOps culture, crédito a Jez Humble
 - [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — citado como um dos fundadores/documentadores do padrão Event Sourcing via bliki; nuance registrada: outras fontes (ex.: [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]]) atribuem a Greg Young a origem do par CQRS+Event Sourcing na comunidade DDD, não a Fowler
 - [[wiki/sources/extract-interface-xunitpatterns]] — verbete de "Code Refactorings" do catálogo de Meszaros, conteúdo atribuído a Fowler (livro *Refactoring*): mesmo padrão host≠autor já registrado para Consumer-Driven Contracts/Ian Robinson e "Talk about Platforms"/Evan Bottcher
+- [[wiki/sources/extract-method-xunitpatterns]] — verbete-irmão de "Code Refactorings", mesma proveniência host≠autor: Extract Method como refatoração de comportamento (não de tipos), técnica para eliminar Test Code Duplication
 - [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — citado como um dos 17 signatários originais do Manifesto para o Desenvolvimento Ágil de Software (2001)
+- [[wiki/sources/test-discovery-xunitpatterns]] — cita a refatoração **Rename Method** [Fowler] como técnica de migração de Test Methods para descoberta por convenção de nomenclatura
+- [[wiki/sources/rename-method-xunitpatterns]] — verbete-irmão de "Code Refactorings", terceira confirmação do padrão host≠autor: fecha a fonte primária dedicada de Rename Method, citada em test-discovery-xunitpatterns; preserva citação direta de Fowler sobre métodos pequenos demais

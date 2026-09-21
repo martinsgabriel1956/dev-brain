@@ -3,7 +3,7 @@ type: source
 title: "Control Point (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["control point", "ponto de controle", "xunit patterns glossary control point"]
 date_created: 2026-08-23
-date_updated: 2026-09-02
+date_updated: 2026-09-21
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/control-point-xunitpatterns.md
 source_url: "http://xunitpatterns.com/control%20point.html"
 author: "Gerard Meszaros"
@@ -55,6 +55,7 @@ Esta é a afirmação de maior valor prático da fonte, sem equivalente explíci
 - [[wiki/concepts/indirect-input-output]] — control point definido com precisão e generalidade maior do que a menção indireta já registrada; a injeção de indirect input é um caso específico, não a definição completa
 - [[wiki/concepts/test-doubles]] — control points exclusivos de teste conectam-se à mesma motivação "examinar e controlar" que justifica o Test Double
 - [[wiki/concepts/tdd]] — fixture setup/teardown e exercise SUT como usos concretos de control point no ciclo de um teste
+- [[wiki/concepts/production-code]] — termo usado aqui na regra de design ("não devem ser usados pelo production code"), agora com fonte primária própria em [[wiki/sources/production-code-xunitpatterns]]
 
 ## Questões Abertas
 

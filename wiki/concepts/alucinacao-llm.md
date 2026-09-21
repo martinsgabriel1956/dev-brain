@@ -3,8 +3,8 @@ type: concept
 title: "Alucinação de LLM"
 aliases: ["hallucination", "llm hallucination", "alucinacao", "llm mente"]
 date_created: 2026-07-30
-date_updated: 2026-08-26
-source_count: 4
+date_updated: 2026-09-21
+source_count: 5
 tags: [alucinacao, hallucination, ai-safety, rag, guardrails, llm-as-judge, faithfulness]
 skill: tech-mentor-ai
 status: draft
@@ -58,8 +58,13 @@ Uma LLM em produção que alucina para o usuário final gera passivo jurídico d
 
 Esse fluxo é a aplicação concreta do modelo de guardrails de entrada/saída já documentado em [[wiki/sources/ai-safety-guardrails]] (grounding check como output filter).
 
+## Mitigação Heurística: Reiniciar a Sessão ao "Sentir" Degradação
+
+[[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] documenta uma versão informal da mitigação `/clear` + nova sessão já registrada em [[wiki/concepts/degradacao-de-contexto]]: em vez de disparar por contagem de tokens ou threshold técnico, o autor reinicia a conversa ao perceber subjetivamente que as respostas pioraram — encerra com uma frase de fechamento, fecha o terminal e começa do zero. Para recuperar contexto de conversas anteriores sem manter a sessão longa viva, pede ao agente para buscar a discussão relevante em conversas passadas em vez de simplesmente confiar na memória da sessão atual. É a mesma lógica técnica já documentada, aplicada por sinal qualitativo em vez de métrica.
+
 ## Key Sources
 
+- [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — reinício heurístico de sessão (sem threshold técnico) como mitigação prática de alucinação/degradação
 - [[wiki/sources/porque-nunca-confiar-em-llm-alucinacao]] — origem desta página: estatísticas de taxa de erro factual, paper da OpenAI sobre causa raiz, caso Air Canada, alucinação de pacotes de código, pipeline de produção com RAG + LLM-as-judge
 - [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] — "informações falsas" como o principal risco factual do estudo com IA; exige [[wiki/concepts/pensamento-critico]], sobretudo em conteúdo complexo
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — alucinação de pacotes/métodos/componentes em código corporativo explicada pelo treino em código público; [[wiki/concepts/skills-agente|skills]] propostas como mitigação (injetar padrões e esquemas internos)

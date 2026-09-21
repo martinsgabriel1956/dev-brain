@@ -3,8 +3,8 @@ type: concept
 title: "Máquina de Turing"
 aliases: ["Turing machine", "máquina de turing", "modelo de Turing", "tabela de transição"]
 date_created: 2026-08-07
-date_updated: 2026-09-03
-source_count: 2
+date_updated: 2026-09-21
+source_count: 3
 tags: [cs-fundamentals, teoria-da-computacao, maquina-de-turing, computabilidade, automatos]
 skill: cs-fundamentals
 status: stub
@@ -42,7 +42,7 @@ Uma linguagem é dita **Turing-completa** quando, dado tempo e memória suficien
 - [[wiki/concepts/determinismo-vs-nao-determinismo]] — a máquina de Turing tem variantes determinística (uma ação por estado/símbolo) e não-determinística (várias ações)
 - [[wiki/concepts/complexidade-computacional]] — as classes de complexidade são definidas em termos do que máquinas de Turing (determinísticas e não) resolvem e em quanto tempo/espaço
 - [[wiki/concepts/sistema-binario-bit-byte]] — a fita opera sobre símbolos de um alfabeto finito, tipicamente 0 e 1
-- [[wiki/concepts/maquina-de-estados-ui]] — FSM é um modelo de autômato mais fraco (memória finita, sem fita) do mesmo campo da teoria da computação
+- [[wiki/concepts/finite-state-machine]] — FSM é um modelo de autômato mais fraco (memória finita, sem fita) do mesmo campo da teoria da computação; [[wiki/concepts/maquina-de-estados-ui]] é uma de suas aplicações (a de UI)
 - [[wiki/concepts/church-turing-thesis]] — equivalência formal entre máquina de Turing e lambda calculus
 - [[wiki/concepts/recursao]] — recursão e iteração são intercambiáveis em qualquer linguagem Turing-completa
 
@@ -50,3 +50,4 @@ Uma linguagem é dita **Turing-completa** quando, dado tempo e memória suficien
 
 - [[wiki/sources/conceitos-que-regem-a-computacao-bits-turing-complexidade]] — definição via fita infinita, cabeça de leitura/escrita e tabela de transição; argumento de que representa tudo que é computável
 - [[wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization]] — Turing-completude e tese de Church-Turing como base formal para a equivalência recursão/iteração
+- [[wiki/sources/o-que-e-uma-finite-state-machine]] — introduz FSM (a aplicação de Game Design do autômato finito) via exemplos de Pac-Man e HFSM

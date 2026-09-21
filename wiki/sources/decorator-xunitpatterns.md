@@ -59,7 +59,7 @@ Diferente dos verbetes de Glossary (ex.: [[wiki/sources/doc-xunitpatterns]], [[w
 ## Questões Abertas
 
 - O verbete não explica **por que** o Decorator está catalogado dentro do xUnitPatterns.com — se é usado como técnica de implementação em outras páginas do catálogo (ex.: Test Spy ou Mock Object descritos como um Decorator em torno de um [[wiki/concepts/test-doubles|DOC]] real) ou se é referenciado apenas como vocabulário geral citado ao longo do livro. Candidato a esclarecer ingerindo as páginas "Test Spy" ou "Mock Object" do mesmo site, ainda não cobertas.
-- As demais entradas da categoria "External Patterns" (Adapter, Command, Composite, Facade, Observer, Singleton, Strategy, Template Method, entre ~40 outras listadas na barra lateral) não foram ingeridas — candidatas naturais para completar o panorama desta categoria específica do site.
+- As demais entradas da categoria "External Patterns" (Adapter, Composite, Facade, Observer, Singleton, Strategy, Template Method, entre ~40 outras listadas na barra lateral) não foram ingeridas — candidatas naturais para completar o panorama desta categoria específica do site. **Atualização (2026-09-21):** [[wiki/sources/command-xunitpatterns]] e [[wiki/sources/pluggable-behavior-xunitpatterns]] já preenchem duas dessas lacunas.
 - A nota do site ("o conteúdo deste capítulo provavelmente mudou substancialmente") não é datada nem detalhada — não há como confirmar se a definição final publicada no livro (2007) diverge da citação nesta página web (gerada em 2011).
 
 ---

@@ -3,7 +3,7 @@ type: source
 title: "Test-Driven Development (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["test-driven development xunitpatterns", "TDD glossary xunitpatterns"]
 date_created: 2026-09-04
-date_updated: 2026-09-04
+date_updated: 2026-09-21
 source_file: /home/gabriel-martins/Documentos/dev-brain/raw/test-driven-development-xunitpatterns.md
 source_url: "http://xunitpatterns.com/test-driven%20development.html"
 author: "Gerard Meszaros"
@@ -58,6 +58,7 @@ O verbete referencia "storytest-driven development" como ver-também, sem explic
 - [[wiki/concepts/emergent-design]] — novo stub criado a partir desta fonte; termo cunhado aqui pela primeira vez na wiki
 - [[wiki/concepts/test-first-development]] — novo stub criado a partir desta fonte; termo-guarda-chuva mais amplo do qual TDD é um caso específico
 - [[wiki/concepts/storytest-driven-development]] — novo stub criado a partir desta fonte; termo apenas referenciado, não definido pelo verbete original
+- [[wiki/concepts/production-code]] — termo usado aqui ("the production code is made to work one test at a time"), agora com fonte primária própria em [[wiki/sources/production-code-xunitpatterns]]
 
 ## Questões Abertas
 

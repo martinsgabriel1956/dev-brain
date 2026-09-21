@@ -3,8 +3,8 @@ type: concept
 title: "Entrada e Saída Indireta (Indirect Input / Indirect Output)"
 aliases: ["indirect input", "indirect output", "entrada indireta", "saída indireta", "control point", "observation point", "ponto de controle", "ponto de observação", "direct input", "entrada direta"]
 date_created: 2026-08-21
-date_updated: 2026-09-04
-source_count: 9
+date_updated: 2026-09-21
+source_count: 12
 tags: [testes, test-doubles, sut, doc, terminologia, xunit]
 skill: tech-mentor-testing
 status: stub
@@ -36,7 +36,7 @@ Esse eixo controle × observação é o mesmo já sintetizado em [[wiki/concepts
 
 ## Control point é mais amplo do que a injeção de indirect input
 
-A fonte primária isolada do próprio termo ([[wiki/sources/control-point-xunitpatterns]]) corrige uma leitura estreita demais: "control point" não é exclusivo da injeção de entrada indireta pelo Stub. A definição formal é "como o teste pede ao SUT para fazer algo por ele" — cobre **qualquer** interação de comando, incluindo o próprio ato de exercitar o SUT (fase **exercise SUT**, o "front door" normal do teste) e a configuração/desmontagem da fixture. O "control point on the back side of the SUT" citado em [[wiki/sources/indirect-input-xunitpatterns]] é um **caso específico** — o usado para configurar um DOC antes do teste — não a definição inteira do termo. A fonte também isola uma regra de design: control points criados **estritamente para viabilizar teste** (ex.: um setter de estado interno, um hook de reset) **não devem ser usados pelo production code**, porque contornam validação de entrada ou encurtam o ciclo de vida normal do SUT/DOC.
+A fonte primária isolada do próprio termo ([[wiki/sources/control-point-xunitpatterns]]) corrige uma leitura estreita demais: "control point" não é exclusivo da injeção de entrada indireta pelo Stub. A definição formal é "como o teste pede ao SUT para fazer algo por ele" — cobre **qualquer** interação de comando, incluindo o próprio ato de exercitar o SUT (fase **exercise SUT**, o "front door" normal do teste) e a configuração/desmontagem da fixture. O "control point on the back side of the SUT" citado em [[wiki/sources/indirect-input-xunitpatterns]] é um **caso específico** — o usado para configurar um DOC antes do teste — não a definição inteira do termo. A fonte também isola uma regra de design: control points criados **estritamente para viabilizar teste** (ex.: um setter de estado interno, um hook de reset) **não devem ser usados pelo [[wiki/concepts/production-code|production code]]**, porque contornam validação de entrada ou encurtam o ciclo de vida normal do SUT/DOC. O termo "production code" em si só ganhou fonte primária própria em [[wiki/sources/production-code-xunitpatterns]] — o contraponto formal de "test code", cunhado por [[wiki/entities/gerard-meszaros]].
 
 ## Fixture setup: a fase onde control points entram em cena
 
@@ -76,6 +76,8 @@ Sem esse vocabulário, é fácil descrever "mock" como "stub com asserção" —
 
 - Os verbetes irmãos "indirect output", "direct input" e "fixture teardown" do mesmo glossário xUnitPatterns.com ainda não têm fonte primária própria ingerida — só são conhecidos aqui por inferência a partir de [[wiki/sources/indirect-input-xunitpatterns]] e [[wiki/sources/test-double-xunitpatterns-meszaros]]. "control point", "fixture setup" e "observation point" já foram ingeridos isoladamente em [[wiki/sources/control-point-xunitpatterns]], [[wiki/sources/fixture-setup-xunitpatterns]] e [[wiki/sources/observation-point-xunitpatterns]]. Candidatos a ingestão futura para fechar o vocabulário.
 
+[[wiki/sources/need-driven-development-xunitpatterns]] usa o termo "indirect output" no fluxo do processo outside-in de TDD (Mock Objects verificam as indirect outputs esperadas do código sendo escrito), mas **não** define o termo diretamente — o verbete "indirect output" dedicado, citado na questão aberta abaixo, segue não ingerido.
+
 ## Key Sources
 
 - [[wiki/sources/control-point-xunitpatterns]] — fonte primária isolada do termo control point: definição mais ampla que "back side do SUT", e regra de design sobre control points exclusivos de teste
@@ -88,3 +90,6 @@ Sem esse vocabulário, é fácil descrever "mock" como "stub com asserção" —
 - [[wiki/sources/test-fixture-xunitpatterns]] — fonte primária isolada do termo test fixture/test context; JUnit e seus ports diretos mantêm esse conceito separado da Testcase Class que o cria
 - [[wiki/sources/test-context-xunitpatterns]] — fonte primária isolada do próprio termo test context: mesma equivalência a test fixture, com o dado novo de que o RSpec usa esse nome literalmente e um exemplo de código do Four-Phase Test
 - [[wiki/sources/observation-point-xunitpatterns]] — fonte primária isolada do termo observation point: contraparte simétrica de control point, fecha a hierarquia interaction point → control point | observation point
+- [[wiki/sources/need-driven-development-xunitpatterns]] — usa "indirect output" como o que os Mock Objects verificam no fluxo de need-driven development, sem definir o termo diretamente
+- [[wiki/sources/production-code-xunitpatterns]] — fonte primária isolada do termo "production code": define o contraponto formal de "test code" que dá sentido à regra de design "control/observation points exclusivos de teste não devem ser usados pelo production code"
+- [[wiki/sources/test-code-xunitpatterns]] — fonte primária isolada do termo-irmão "test code", fechando o par terminológico completo por trás da regra de design

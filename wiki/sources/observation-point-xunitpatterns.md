@@ -3,7 +3,7 @@ type: source
 title: "Observation Point (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["observation point", "ponto de observação", "xunit patterns glossary observation point"]
 date_created: 2026-09-02
-date_updated: 2026-09-02
+date_updated: 2026-09-21
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/observation-point-xunitpatterns.md
 source_url: "http://xunitpatterns.com/observation%20point.html"
 author: "Gerard Meszaros"
@@ -55,6 +55,7 @@ A definição amarra observation point ao estado do SUT **depois** da fase de ex
 - [[wiki/concepts/indirect-input-output]] — observation point definido com precisão e generalidade maior do que a menção indireta já registrada; a saída indireta observada por Spy/Mock é um caso específico, não a definição completa
 - [[wiki/concepts/test-doubles]] — observation points exclusivos de teste conectam-se à mesma motivação "examinar e controlar" que justifica o Test Double
 - [[wiki/concepts/tdd]] — result verification (Four-Phase Test) como uso concreto de observation point no ciclo de um teste
+- [[wiki/concepts/production-code]] — termo usado aqui na regra de design ("não devem ser usados pelo production code"), agora com fonte primária própria em [[wiki/sources/production-code-xunitpatterns]]
 
 ## Questões Abertas
 

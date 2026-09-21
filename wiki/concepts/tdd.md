@@ -3,8 +3,8 @@ type: concept
 title: "TDD — Test-Driven Development"
 aliases: ["test driven development", "red green refactor", "desenvolvimento guiado por testes"]
 date_created: 2026-04-22
-date_updated: 2026-09-08
-source_count: 25
+date_updated: 2026-09-21
+source_count: 26
 tags: [testes, tdd, design, red-green-refactor, qualidade, dora, emergent-design]
 skill: tech-mentor-testing
 status: stable
@@ -131,6 +131,10 @@ Quando a interface, o input e o output já são conhecidos por uma especificaç�
 
 [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] enquadra TDD não como técnica de gestão de dívida técnica já existente, mas como **prevenção** — é difícil escrever lógica confusa e mal desenhada quando é preciso primeiro passar num teste limpo e simples (fase GREEN). Nesse enquadramento, a fase de REFACTOR do ciclo é onde a [[wiki/concepts/boy-scout-rule]] acontece de forma estruturada e obrigatória, em vez de depender da disciplina individual do dev de limpar o código depois. Ver [[wiki/concepts/tech-debt-como-ferramenta]] para as outras práticas de prevenção citadas na mesma fonte (pair programming, CI/CD com quality gates).
 
+## Need-Driven Development: o nome formal da escola London/Outside-In
+
+[[wiki/sources/need-driven-development-xunitpatterns]] nomeia, com fonte primária isolada, o processo que a seção "As duas escolas" acima já descrevia informalmente para a escola London: **need-driven development**. É a mesma prática — código escrito de fora para dentro, todo código dependente substituído por [[wiki/concepts/test-doubles|Mock Objects]] que verificam as [[wiki/concepts/indirect-input-output|indirect outputs]] esperadas do código sendo escrito —, agora com definição oficial do catálogo de Meszaros em vez de apenas inferida por contraste com Detroit School. A fonte acrescenta uma justificativa explícita para o processo: garantir que as responsabilidades de cada unidade sejam bem compreendidas *antes* de serem codificadas, evidenciadas tanto por unit tests quanto por exemplos de uso real. A camada mais externa do software fecha o processo usando [[wiki/concepts/storytest-driven-development]], com exemplos de uso por clientes reais somados aos [[wiki/sources/customer-test-xunitpatterns|customer tests]] — citando **Service Facade** [CJ2EEP] como exemplo concreto de interface acionada por um cliente real.
+
 ## RSpec e a nova geração de membros do xUnit
 
 [[wiki/sources/rspec-xunitpatterns]] enquadra o [[wiki/entities/rspec|RSpec]] como um dos primeiros de uma nova geração de membros da família xUnit criados especificamente para tornar os testes de TDD mais úteis como especificação ("Tests as Specification"): troca todo o vocabulário de "teste" por vocabulário de especificação — fixture→[[wiki/sources/test-context-xunitpatterns|context]], Test Method→specify, assert→should. [[wiki/entities/jbehave|JBehave]] é citado como o equivalente Java. Ver [[wiki/concepts/bdd]] para a hipótese (não confirmada por esta fonte) de que esse vocabulário antecede o de BDD.
@@ -172,3 +176,4 @@ Ambos insistem numa distinção que DHH, na leitura deles, mistura: **design de 
 - [[wiki/sources/emergent-design-xunitpatterns]] — fonte primária dedicada ao próprio termo emergent design: oposto formal de [[wiki/concepts/bduf|BDUF]] (Big Design, Up Front), o mecanismo pelo qual o design emerge é justamente o ciclo RED-GREEN-REFACTOR "um teste de cada vez"
 - [[wiki/sources/storytest-driven-development-xunitpatterns]] — fonte primária isolada do termo storytest-driven development (STDD): variação do TDD focada em customer tests, cunhada por Joshua Kerievsky (Industrial XP)
 - [[wiki/sources/rspec-xunitpatterns]] — fonte primária dedicada ao framework RSpec: nova geração de membros do xUnit para "Tests as Specification", com mapeamento completo de vocabulário (fixture/context, Test Method/specify, assert/should) e JBehave como equivalente Java
+- [[wiki/sources/need-driven-development-xunitpatterns]] — fonte primária isolada do termo need-driven development: nomeia formalmente o processo outside-in/London School (código de fora para dentro, todo código dependente substituído por Mock Object verificando indirect outputs), até então só descrito informalmente na seção "As duas escolas"

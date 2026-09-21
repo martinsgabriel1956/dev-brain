@@ -3,7 +3,7 @@ type: source
 title: "Test-First Development (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["test first development xunitpatterns", "test-first glossary xunitpatterns"]
 date_created: 2026-09-04
-date_updated: 2026-09-04
+date_updated: 2026-09-21
 source_file: /home/gabriel-martins/Documentos/dev-brain/raw/test-first-development-xunitpatterns.md
 source_url: "http://xunitpatterns.com/test%20first%20development.html"
 author: "Gerard Meszaros"
@@ -54,6 +54,7 @@ Esta é a única informação genuinamente nova frente ao que já estava inferid
 - [[wiki/concepts/tdd]] — reforça (sem alterar) a distinção já registrada na ingestão anterior
 - [[wiki/concepts/emergent-design]] — reforça a definição já existente (característica que test-first *não* exige, mas TDD sim)
 - [[wiki/concepts/piramide-de-testes]] — nova conexão: test-first development pode operar no nível de customer test, não só no de unit test
+- [[wiki/concepts/production-code]] — termo usado aqui ("the tests are written before the production code"), agora com fonte primária própria em [[wiki/sources/production-code-xunitpatterns]]
 
 ## Questões Abertas
 

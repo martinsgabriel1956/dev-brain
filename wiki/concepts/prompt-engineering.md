@@ -3,8 +3,8 @@ type: concept
 title: "Prompt Engineering"
 aliases: ["engenharia de prompt", "prompt design"]
 date_created: 2026-05-17
-date_updated: 2026-09-15
-source_count: 13
+date_updated: 2026-09-21
+source_count: 14
 tags: [prompt-engineering, llm, few-shot, codex, software-3]
 skill: tech-mentor-ai
 status: stable
@@ -95,6 +95,10 @@ Em modelos mais fortes (ex.: Fable), o mesmo princípio de "descreva o estado de
 
 [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] descreve um método específico de domínio (segurança/autopentest), mas que reafirma vários princípios já documentados nesta página em outro contexto: (1) declarar o papel de quem pede o teste (dono do sistema, não atacante externo); (2) apontar para documentação já existente do sistema em vez de deixar o modelo inferir arquitetura — instância direta de "Describe It"; (3) definir explicitamente o que o sistema **não é** (ex.: "não uso Kubernetes"), tão importante quanto dizer o que é, para restringir o espaço de hipóteses do modelo; (4) testar um escopo por vez em sessões separadas — a fonte relata que testar tudo de uma vez faz o modelo "delirar" e gasta mais tokens sem necessidade; (5) definir o formato de resposta esperado; (6) declarar explicitamente o que a IA **não pode fazer** sem nova autorização — contra-exemplo de "Tell It" mal calibrado: uma autorização ampla ("pode mexer, não pergunte mais") interpretada literalmente pode levar o agente a refatorar código sem solicitar confirmação em uma pergunta não relacionada.
 
+## Perguntar Antes de Pedir Implementação (Brainstorm → User Flow → Segurança → Arquitetura)
+
+[[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] descreve uma variante do padrão "Tell It" aplicada a quem não lê nem escreve o código gerado: em vez de já pedir a implementação, o autor começa pelo problema a resolver, pede ao agente para "brainstormar soluções possíveis", e só avança para pedir implementação depois de fechar user flow, preocupações de segurança e arquitetura na conversa. A lógica é a mesma de declarar contexto e restrições antes da instrução — só que estendida para uma fase de discussão completa antes de qualquer código ser gerado, o que faz sentido dado que o autor não vai revisar o resultado linha a linha depois.
+
 ## Prompt Bom Não Compensa Contexto Ausente
 
 [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] documenta um caso onde um prompt tecnicamente bem construído (Tell It completo: idempotência, formato de resposta, tratamento de erro) ainda assim gerou código que violava uma regra de negócio central, porque essa regra vivia fora da janela de contexto do modelo. A fonte trata isso como o limite estrutural do prompt engineering: nenhuma técnica de fraseado resolve a ausência de informação que o modelo nunca recebeu — esse é o problema que [[wiki/concepts/context-engineering-harness|context engineering]] existe para resolver, um nível acima do prompt individual. Ver essa página para o caso completo (fila de auditoria de cobrança) e os três movimentos aplicados para corrigi-lo.
@@ -109,6 +113,7 @@ Uma nova versão de prompt pode quebrar o comportamento do sistema da mesma form
 
 ## Fontes
 
+- [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — perguntas extensas antes de implementação (brainstorm → user flow → segurança → arquitetura) como variante de "Tell It" para quem não revisa código linha a linha; reforço independente da recomendação de screenshot como referência já documentada acima
 - [[wiki/sources/prompt-context-harness-engineering-tres-pilares]] — evolução histórica: janela de contexto pequena em 2022 (~4k tokens) tornava o prompt a única alavanca disponível; janela grande hoje desloca a alavanca principal para context/harness engineering
 - [[wiki/sources/microsoft-prompt-engineering-guide]]
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — método de seis passos para prompt de autopentest de segurança

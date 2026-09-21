@@ -3,8 +3,8 @@ type: entity
 title: "C3 (Chrysler Comprehensive Compensation Project)"
 aliases: ["C3", "Chrysler Comprehensive Compensation", "projeto de nascimento da XP"]
 date_created: 2026-07-19
-date_updated: 2026-08-23
-source_count: 3
+date_updated: 2026-09-21
+source_count: 4
 tags: [extreme-programming, kent-beck, historia, xp]
 skill: tech-mentor-testing
 status: stable
@@ -32,7 +32,7 @@ Segundo [[wiki/sources/c3-martin-fowler]], o C3 nunca chegou a cobrir toda a fol
 
 ## Relevância para esta wiki
 
-O framework de testes caseiro em Smalltalk que Beck usava no C3 — um exemplo de [[wiki/concepts/seedwork|Seedwork]] — é o antecessor direto do [[wiki/entities/junit]], criado por Beck e Erich Gamma em 1997. O time do C3 também tinha o hábito de colorir a janela de build inteira de vermelho/verde conforme os testes passavam ou falhavam — prática que o JUnit formalizaria como a barra de progresso red/green bar.
+O framework de testes caseiro em Smalltalk que Beck usava no C3 — um exemplo de [[wiki/concepts/seedwork|Seedwork]] — é o antecessor direto do [[wiki/entities/junit]], criado por Beck e Erich Gamma em 1997. O time do C3 também tinha o hábito de colorir a janela de build inteira de vermelho/verde conforme os testes passavam ou falhavam — prática que o JUnit formalizaria como a barra de progresso red/green bar, manifestação visual do conceito de [[wiki/sources/test-result-xunitpatterns|test result]]: cada execução pode produzir um resultado diferente da anterior.
 
 ## Nota sobre confiabilidade de fontes externas
 
@@ -50,3 +50,4 @@ Fowler nota, tanto em [[wiki/sources/xunit-martin-fowler]] quanto em [[wiki/sour
 - [[wiki/sources/xunit-martin-fowler]]
 - [[wiki/sources/c3-martin-fowler]] — fonte primária dedicada ao projeto: linha do tempo completa, desfecho e a tese de que "XP não é garantia de sucesso"
 - [[wiki/sources/very-low-defect-project-martin-fowler]] — nomeia (sem nomes próprios) o projeto seguinte de ex-membros do C3: software de portal na Chrysler, exatamente um bug em 2002
+- [[wiki/sources/test-result-xunitpatterns]] — verbete de glossário do xUnitPatterns.com, isolando a definição do próprio termo "test result": dá nome formal ao conceito por trás da prática do red/green bar originada no time do C3

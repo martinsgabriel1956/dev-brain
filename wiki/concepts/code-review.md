@@ -3,8 +3,8 @@ type: concept
 title: "Code Review"
 aliases: ["revisão de código", "pull request review", "PR review"]
 date_created: 2026-07-03
-date_updated: 2026-09-15
-source_count: 18
+date_updated: 2026-09-21
+source_count: 20
 tags: [code-review, qualidade, carreira, júnior, mentoria, grill-me, babysitting-de-agentes, quality-gate, under-engineering]
 skill: tech-mentor-leadership
 status: draft
@@ -127,9 +127,19 @@ Também cita **checklists de PR** (ex.: "criei testes de integração", "testei 
 
 A tensão que explica a diferença: responsabilizar cada dev pelo que coloca em prod funciona em empresa média, mas empresa grande recusa isso porque aumenta o [[wiki/concepts/bus-factor|bus factor]] e reduz substituibilidade — grande empresa quer processos, não heróis. Daí a fonte falar em "várias verdades": review forte em time grande, opcional em time médio, dispensável em projeto solo. O autor ([[wiki/entities/lucas-montano]]) leva a ponta solo ao extremo, fazendo *push force* direto em produção via SSH+Claude Code quando o custo de downtime é baixo.
 
+## IA Aprovando PR de IA (GitHub Copilot)
+
+[[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] descreve o passo seguinte à estratificação por risco já documentada acima: o GitHub Copilot já consegue revisar pull requests escritos por bots — incluindo pelo seu próprio agente na nuvem — produzir uma avaliação de aprovação e, se o admin do repositório habilitar, aprovar o PR sozinho. O ponto de decisão humana não desaparece, mas se move: em vez de ler cada diff, o humano define a *política* — quais mudanças um agente pode aprovar, quais diretórios exigem uma pessoa, que tipo de falha bloqueia o pipeline, quão independente o revisor precisa ser do autor. É a mesma lógica da [[wiki/concepts/matriz-risco-dificuldade-review-ia|matriz risco × dificuldade]] de [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]], mas com o próprio revisor de baixo risco automatizado, não só o merge. Frase do autor: "movemos o humano um andar acima e deixamos duas máquinas no andar de baixo discutindo sobre TypeScript."
+
+## Checklist Verbalizado no Prompt em Vez de Harness ou Leitura Linha a Linha
+
+[[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] é um caso de projeto solo que confirma a red flag já registrada acima ("Estratificar por Porte da Empresa"): revisar linha a linha não faz sentido no accountability de um dev só. Mas em vez do [[wiki/concepts/harness-de-qualidade|harness]] recomendado por [[wiki/entities/lucas-montano]] (testes E2E, orquestração de testes, agente revisor separado), o autor usa uma terceira via — um checklist verbalizado diretamente no prompt e verificado pelo mesmo agente que gerou o código, sem teste automatizado externo nem segundo agente independente conferindo o resultado.
+
 ## Key Sources
 
+- [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — projeto solo sem leitura linha a linha; checklist de verificação verbalizado no prompt como terceira via entre leitura humana e harness de qualidade
 - [[wiki/sources/fatores-nao-tecnicos-codigo-ruim-bons-desenvolvedores-bernardo-lobato]] — armadilha de julgar código legado fora de contexto, comparando-o com código greenfield imaginário
+- [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] — GitHub Copilot revisando e aprovando PR de outro agente; decisão humana desloca de "ler o diff" para "definir a política de aprovação"
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]]
 - [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — estratificação do review por porte da empresa; accountability individual × substituibilidade; review em time grande como QA de contexto (arquitetura/padrões/requisitos)
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]

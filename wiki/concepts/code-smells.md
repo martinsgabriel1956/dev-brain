@@ -3,8 +3,8 @@ type: concept
 title: "Code Smells"
 aliases: ["code smell", "cheiro de código", "sinais de código ruim"]
 date_created: 2026-08-18
-date_updated: 2026-08-18
-source_count: 1
+date_updated: 2026-09-21
+source_count: 2
 tags: [code-smells, clean-code, refactoring, craftsmanship]
 skill: tech-mentor-backend
 status: draft
@@ -34,10 +34,15 @@ Um code smell é um sinal de que um trecho de código **talvez** esteja deterior
 
 Não varrer a code base inteira caçando smells para refatorar sem antes considerar o objetivo real a atingir. Às vezes a melhoria é cara demais para valer a pena, ou a guideline simplesmente não se aplica ao cenário. A recomendação é entender o **conceito por trás** de cada smell (por que ele indica risco de manutenção/compreensão/acoplamento), não seguir os exemplos específicos como regras rígidas — o mesmo espírito de "toda regra de design tem exceções" já registrado em [[wiki/concepts/red-flags-de-design]].
 
+## Taxonomia irmã: Test Smells (Meszaros)
+
+O catálogo xUnitPatterns.com de [[wiki/entities/gerard-meszaros]] usa "smell" com o mesmo espírito — sintoma a investigar, não regra rígida — mas aplicado a testes, não a código de produção. [[wiki/sources/production-bugs-xunitpatterns]] documenta um **Project Smell** dessa taxonomia irmã: **Production Bugs**, cuja árvore de causas inclui [[wiki/concepts/production-bugs|Lost Test, Untested Code, Untested Requirement e Neverfail Test]].
+
 ## Relacionado
 
-[[wiki/concepts/red-flags-de-design]] · [[wiki/concepts/refatoracao]] · [[wiki/concepts/god-object]] · [[wiki/concepts/acoplamento]] · [[wiki/concepts/coesao]] · [[wiki/concepts/tech-debt-como-ferramenta]] · [[wiki/concepts/naming]]
+[[wiki/concepts/red-flags-de-design]] · [[wiki/concepts/refatoracao]] · [[wiki/concepts/god-object]] · [[wiki/concepts/acoplamento]] · [[wiki/concepts/coesao]] · [[wiki/concepts/tech-debt-como-ferramenta]] · [[wiki/concepts/naming]] · [[wiki/concepts/production-bugs]]
 
 ## Key Sources
 
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]]
+- [[wiki/sources/production-bugs-xunitpatterns]] — taxonomia irmã (Test Smells / Project Smells) do mesmo espírito aplicada a testes

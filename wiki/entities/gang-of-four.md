@@ -3,8 +3,8 @@ type: entity
 title: "Gang of Four (GoF)"
 aliases: ["GoF", "gang of four"]
 date_created: 2026-05-01
-date_updated: 2026-08-06
-source_count: 3
+date_updated: 2026-09-21
+source_count: 6
 tags: [design-patterns, books, oop, junit, testes]
 skill: tech-mentor-backend
 status: stable
@@ -29,3 +29,6 @@ Além do *Design Patterns*, Erich Gamma programou em par com [[wiki/entities/ken
 - [[wiki/sources/design-pattern-proxy]]
 - [[wiki/sources/xunit-martin-fowler]] — Erich Gamma, coautor do JUnit
 - [[wiki/sources/design-pattern-observer-codigo-fonte-tv]] — vídeo cita a definição formal do GoF para o Observer ("dependência um-para-muitos... notificados e atualizados automaticamente")
+- [[wiki/sources/testcase-object-xunitpatterns]] — Meszaros cita o **Command** [GOF] explicitamente como o padrão por trás do Testcase Object: cada teste da família xUnit é um objeto Command com método `run` padrão
+- [[wiki/sources/command-xunitpatterns]] — verbete de External Patterns dedicado à definição canônica do próprio **Command**, citada diretamente ("encapsulate a request as an object...")
+- [[wiki/sources/adapter-xunitpatterns]] — verbete de External Patterns dedicado à definição canônica do **Adapter**, citada diretamente ("convert the interface of a class into another interface clients expect...")

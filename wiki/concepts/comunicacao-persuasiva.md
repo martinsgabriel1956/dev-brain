@@ -3,8 +3,8 @@ type: concept
 title: "Comunicação Persuasiva"
 aliases: ["gatilhos mentais", "venda de ideia técnica", "persuasão técnica"]
 date_created: 2026-07-03
-date_updated: 2026-07-21
-source_count: 3
+date_updated: 2026-09-21
+source_count: 4
 tags: [comunicacao, persuasao, soft-skills, carreira, negociacao]
 skill: tech-mentor-leadership
 status: draft
@@ -37,6 +37,10 @@ O enquadramento de "gatilhos emocionais" (urgência/ganância) é uma versão si
 
 O mesmo princípio — não expor o argumento cru, traduzi-lo para a moeda que o público realmente valoriza — aparece fora do contexto interno de empresa em [[wiki/concepts/marketing-organico-viral]]: uma sketch de produto que se apresenta abertamente como propaganda falha em persuadir; ela só funciona quando não parece propaganda. É a mesma lógica de "gatilho emocional bem aplicado depende de a alegação de fundo ser verdadeira" — a sketch só viraliza de forma sustentável se o produto realmente entrega o que a peça sugere.
 
+## Construir Coalizão Antes de Propor, Não Só Traduzir o Argumento
+
+[[wiki/sources/como-lidar-com-politica-empresarial-lideranca-engenharia]] adiciona uma etapa anterior à tradução do argumento já documentada acima: antes mesmo de apresentar a proposta, ter relacionamento e credibilidade prévios com quem vai decidir já reduz o risco percebido da mudança — independentemente de quão bem o argumento técnico foi traduzido para negócio. É complementar, não substituto, ao managing up: dados concretos (custo, horas, incidentes) convencem melhor quando já existe confiança prévia entre quem propõe e quem decide. Ver [[wiki/concepts/politica-organizacional]] para o mecanismo completo, incluindo o risco do overreach sem esse capital político construído antes.
+
 ## Ver também
 
 - [[wiki/concepts/comunicacao-tecnica]] — princípio geral de que a tradução é responsabilidade de quem fala
@@ -44,9 +48,11 @@ O mesmo princípio — não expor o argumento cru, traduzi-lo para a moeda que o
 - [[wiki/concepts/soft-skills]]
 - [[wiki/concepts/marketing-organico-viral]] — mesma lógica de tradução de mensagem aplicada a marketing de produto para consumidor
 - [[wiki/concepts/adaptabilidade]] — persuasão é um caso específico do princípio mais geral de adaptar comunicação ao público
+- [[wiki/concepts/politica-organizacional]] — relacionamento e credibilidade como pré-requisito à persuasão, antes mesmo do argumento ser apresentado
 
 ## Key Sources
 
+- [[wiki/sources/como-lidar-com-politica-empresarial-lideranca-engenharia]] — relacionamento prévio como redutor de risco percebido, complementar à tradução técnica→negócio do managing up
 - [[wiki/sources/3-soft-skills-que-poucos-programadores-dominam]]
 - [[wiki/sources/como-vender-um-saas-sem-audiencia]]
 - [[wiki/sources/papinho-tech-solo-adaptabilidade]] — adaptação de registro de comunicação por nível hierárquico e por canal

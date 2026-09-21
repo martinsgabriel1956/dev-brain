@@ -3,8 +3,8 @@ type: concept
 title: "Worktree e Paralelismo de Tarefas"
 aliases: ["worktree parallelism", "git worktree IA", "paralelismo de tarefas ia"]
 date_created: 2026-06-02
-date_updated: 2026-09-10
-source_count: 13
+date_updated: 2026-09-21
+source_count: 14
 tags: [worktree, paralelismo, git, spec-driven, produtividade]
 skill: tech-mentor-ai
 status: stable
@@ -102,6 +102,10 @@ Ao encerrar a sessão (`/quit`), o Claude Code pergunta explicitamente se o usu�
 
 [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] descreve uma skill de [[wiki/concepts/spec-driven-development|Spec Driven]] que, ao receber uma instrução de implementação, gera o plano de ação e já o executa como um [[wiki/concepts/loop-engineering|loop]] — paralelizando automaticamente subtarefas que tocam os mesmos arquivos via `git worktree`, cada uma em sessão headless separada da sessão principal, com merge automático ao final. É a mesma dinâmica de "várias worktrees rodando ao mesmo tempo enquanto o dev faz outra coisa" citada na abertura do vídeo — múltiplos loops noturnos, cada um numa worktree isolada, revisados juntos de manhã.
 
+## Variante: Mesmo Problema, Múltiplos Modelos, Escolher o Vencedor
+
+[[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] descreve uma variante do padrão de paralelismo via worktree que não é sobre paralelizar *subtarefas diferentes*, mas sobre paralelizar a **mesma tarefa** em modelos diferentes: o Cursor permite enviar um problema para vários modelos simultaneamente, cada um isolado em sua própria worktree, e depois comparar os resultados e ficar com o melhor. O autor observa que isso inverte um instinto de gestão de engenharia — duplicar trabalho entre pessoas sempre foi visto como desperdício a eliminar, mas duplicar entre modelos compensa porque o recurso escasso passou a ser compute, não tempo humano. A consequência: como produzir uma implementação fica barato, **escolher entre implementações concorrentes** (qual entendeu a arquitetura certa, qual não inventou abstração à toa, qual não escondeu uma bomba no error handling) vira a habilidade mais relevante — ver [[wiki/concepts/governanca-de-codigo-gerado-por-ia]].
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-02-mercado-perfil-profissional]]
@@ -117,3 +121,4 @@ Ao encerrar a sessão (`/quit`), o Claude Code pergunta explicitamente se o usu�
 - [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — o artefato de "estado" de um projeto spec-driven permite fatiar o trabalho em múltiplos pull requests sem perder rastreabilidade das decisões já tomadas
 - [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — caso-limite especulativo de paralelismo sem controle: [[wiki/entities/peter-steinberger]] citado rodando múltiplos loops em paralelo (~US$ 1 milhão/mês em tokens) até eles conflitarem entre si ou operarem sobre informação desatualizada, motivando a busca por um [[wiki/concepts/grafo-como-abstracao-de-agentes|grafo]] de orquestração em vez de loops paralelos sem coordenação explícita
 - [[wiki/sources/guia-pratico-subagents-claude-code-configuracao-fork-invocacao]] — campo `isolation` na configuração de um subagent customizado: roda esse subagent numa worktree própria, evitando conflito de arquivo com outros agentes em paralelo
+- [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] — variante N-modelos-mesmo-problema: Cursor roda o mesmo problema em worktrees isoladas por modelo, comparando resultados

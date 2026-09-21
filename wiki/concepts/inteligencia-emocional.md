@@ -3,8 +3,8 @@ type: concept
 title: "Inteligência Emocional"
 aliases: ["IE", "EQ", "emotional intelligence", "maturidade emocional"]
 date_created: 2026-05-19
-date_updated: 2026-07-31
-source_count: 3
+date_updated: 2026-09-21
+source_count: 4
 tags: [soft-skills, inteligencia-emocional, carreira, resiliência, liderança]
 skill: tech-mentor-leadership
 status: stable
@@ -43,9 +43,14 @@ Um caso concreto de IE em ação: separar "meu código foi reprovado" de "eu fui
 
 [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] aplica o mesmo mecanismo de "não tornar pessoal a crítica" a um momento específico ainda não coberto na wiki: o feedback recebido ao final de uma entrevista de emprego. A recomendação concreta é não se defender e não prometer "vou melhorar isso" na hora — porque isso cria um gatilho mental de assumir automaticamente que o entrevistador estava certo, mesmo sem ter refletido de fato sobre o ponto levantado. A prática sugerida: absorver o feedback, e só avaliar com senso crítico depois, com a cabeça fria, se você de fato concorda com o que foi dito.
 
+## Não Reproduzir Hábitos Tóxicos de uma Cultura Política Ruim
+
+[[wiki/sources/como-lidar-com-politica-empresarial-lideranca-engenharia]] aplica o mesmo princípio de regulação emocional a um contexto organizacional, não interpessoal direto: estar exposto a uma cultura política tóxica (culpar colegas publicamente, tratar tudo como urgente, estar "sempre online" por status) não deveria significar reproduzir esses comportamentos só porque "é assim que todo mundo opera aqui". A fonte também recomenda uma pergunta de diagnóstico contínua — "esse ambiente é saudável para eu fazer parte dele no longo prazo?" — como forma de não normalizar internamente um ambiente nocivo por exposição prolongada. Ver [[wiki/concepts/politica-organizacional]] para o mecanismo completo de política boa vs. ruim.
+
 ## Conexões
 
 - [[wiki/concepts/soft-skills]]
+- [[wiki/concepts/politica-organizacional]] — regulação emocional aplicada a não internalizar hábitos tóxicos de cultura política
 - [[wiki/concepts/adaptabilidade]] — par inseparável
 - [[wiki/concepts/burnout-dev]] — IE é a principal proteção contra burnout em tech
 - [[wiki/concepts/colaboracao-times]] — conflitos de time exigem IE para não escalarem
@@ -55,6 +60,7 @@ Um caso concreto de IE em ação: separar "meu código foi reprovado" de "eu fui
 
 ## Key Sources
 
+- [[wiki/sources/como-lidar-com-politica-empresarial-lideranca-engenharia]] — não reproduzir hábitos tóxicos observados numa cultura política ruim; pergunta de diagnóstico contínuo sobre saúde do ambiente
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] — não tornar pessoal os comentários de code review
 - [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — não se defender nem prometer melhoria na hora ao receber feedback de entrevista

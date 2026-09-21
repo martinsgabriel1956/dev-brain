@@ -3,8 +3,8 @@ type: concept
 title: "Governança de Código Gerado por IA"
 aliases: ["paradoxo da ia no codigo", "governar codigo de ia"]
 date_created: 2026-07-03
-date_updated: 2026-09-14
-source_count: 8
+date_updated: 2026-09-21
+source_count: 10
 tags: [ia-no-processo-de-engenharia, arquitetura, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -59,9 +59,23 @@ A IA ameaça quem permanece só na camada de execução e não evolui para julga
 
 [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] descreve, a partir de um playbook da Anthropic com startups de rápido crescimento, um padrão organizacional que é uma instância direta do paradoxo desta página: quando pessoas não técnicas (advogados, PMs) passam a abrir pull requests diretamente — ver [[wiki/concepts/everyone-ships]] — a expertise diferencial do engenheiro se desloca ainda mais para revisão e julgamento, não para escrita. A fonte também reforça o argumento de "quem gera o ticket/código não é técnico" já registrado acima, mas numa versão institucionalizada e incentivada pela própria empresa, não como falha de processo isolada.
 
+## Zero Código Manual Não Elimina o Julgamento — Só Move Onde Ele Atua
+
+[[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] descreve o caso limite mais extremo já registrado nesta página: um produto interno da [[wiki/entities/openai|OpenAI]], construído em cinco meses sob a restrição de "zero código escrito manualmente" — lógica de aplicação, testes, CI, documentação, observabilidade e ferramentas internas, todos produzidos pelo [[wiki/entities/codex-openai|Codex]], chegando a ~1 milhão de linhas. O autor argumenta que isso não elimina a engenharia, só remove a digitação: arquitetura, fronteiras entre módulos, significado dos testes, comportamento do ambiente e observabilidade continuam exigindo alguém com "julgamento suficiente para notar quando um agente produziu código que funciona perfeitamente e nunca deveria ter existido" — a mesma capacidade de governança já central a esta página, deslocada de "revisar cada linha" para "revisar se o sistema como um todo deveria existir daquela forma". Reforça também o ponto já registrado acima sobre paralelismo (via [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]]): mais produção não é só mais ganho, é também mais superfície para defeito, duplicação, abstração ruim e desvio arquitetural.
+
+## O Gargalo Migra de Produzir Para Escolher
+
+A mesma fonte descreve, do lado do [[wiki/concepts/worktree-paralelismo#Variante: Mesmo Problema, Múltiplos Modelos, Escolher o Vencedor|padrão N-modelos-mesmo-problema]] no Cursor, uma instância adicional do paradoxo central desta página: quando produzir uma implementação fica barato o suficiente para rodar quatro em paralelo, a habilidade que resta ao engenheiro não é mais "produzir a resposta certa" — é julgar qual das quatro implementações concorrentes entendeu a arquitetura corretamente, qual não inventou abstração desnecessária e qual não escondeu um problema no tratamento de erro. É a mesma governança já descrita nesta página (julgamento, contexto, responsabilidade), só que aplicada a *escolher entre outputs* em vez de revisar um único output.
+
+## Julgamento Movido Para Antes (Perguntas) e Para o Prompt (Checklist), Não Para a Revisão
+
+[[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] descreve um caso individual (não organizacional) onde o julgamento humano não desaparece, mas se desloca para dois pontos fora da revisão pós-geração: perguntas extensas antes de pedir implementação (ver [[wiki/concepts/prompt-engineering]]) e um checklist de verificação verbalizado no prompt, delegado ao próprio agente, em vez de lido pelo humano depois. É uma variante mais radical do "Zero Código Manual Não Elimina o Julgamento" já registrado acima (caso OpenAI/Codex): lá o julgamento se desloca para revisar se o sistema deveria existir daquela forma; aqui o autor nem chega a essa revisão pós-hoc — o julgamento é inteiramente front-loaded na especificação e no critério de aceite verbalizado, sem confirmação humana independente de que o critério foi de fato cumprido.
+
 ## Key Sources
 
+- [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — julgamento deslocado para perguntas upfront e checklist verbalizado no prompt, sem nenhuma revisão humana pós-geração
 - [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] — "everyone ships" como versão institucionalizada do paradoxo desta página
+- [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] — projeto interno da OpenAI com ~1M linhas e zero código manual; julgamento se desloca de "revisar linha" para "revisar se o sistema deveria existir"; escolher entre implementações concorrentes como nova forma de governança
 - [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] — governança de IA além do código: processo ágil, gasto e segurança contra ataques de anomalia
 
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]]

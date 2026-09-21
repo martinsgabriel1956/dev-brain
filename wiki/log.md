@@ -10547,3 +10547,691 @@ Também atualizado: `wiki/index.md` (nova linha em Sources).
 **Notas / open questions:** (1) **Path de skills do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada em múltiplas ingestões anteriores; path real usado normalmente. (2) **Identidade da autora não determinada** a partir da transcrição — marcado como `[não identificado]` no frontmatter da fonte, diferente de outras fontes do mesmo "gênero" no wiki que citam nome/canal. (3) **Vínculo causal "agentes de IA preferem monolito por contexto de repositório único → retomada de popularidade do monolito"** é observação da autora sem fonte/dado externo citado — candidato a verificação futura, registrado como questão aberta na página de origem e em `wiki/concepts/monolith-first.md`. (4) **Alegação "escassez de seniors sempre existiu, não é novidade da IA"** também sem dado citado nesta fonte — candidato a checagem cruzada numa sessão de lint futura. (5) **Nenhuma contradição encontrada** com conteúdo pré-existente da wiki; a fonte converge fortemente com `wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos.md` (fundamentos continuam valendo a pena) e com as duas fontes já ingeridas sobre forward deployed engineer.
 
 ---
+
+## [2026-09-21] ingest | Testcase Object (xUnitPatterns.com — Gerard Meszaros)
+
+**Source:** artigo em inglês do site xUnitPatterns.com (http://xunitpatterns.com/Testcase%20Object.html), fornecido pelo usuário via URL colada (`WebFetch` falhou com `ECONNREFUSED`; conteúdo obtido via `curl` direto). Traduzido para português e salvo em `raw/testcase-object-xunitpatterns.md` antes da ingestão, seguindo o mesmo padrão de tradução já usado para o restante do cluster xUnitPatterns.com da wiki.
+**Skill:** tech-mentor-testing. Carregado o skill `anthropic-skills:tech-mentor-testing` (equivalente funcional disponível nesta sessão) e consultado `SKILL.md` em `/home/gabriel-martins/Documentos/skills/tech-mentor-testing/` (path real deste ambiente — diferente do declarado no CLAUDE.md, `/home/nemomartins/Documentos/new/skills/`, que não existe aqui; mesma situação já registrada em múltiplas ingestões anteriores).
+
+**Páginas criadas:**
+- `wiki/sources/testcase-object-xunitpatterns.md` — fonte primária dedicada ao termo, fechando o stub que já existia em `wiki/concepts/testcase-object.md`
+
+Nenhum stub novo de concept/entity foi criado — todos os termos centrais da fonte (Command Pattern, JUnit, Gang of Four) já tinham páginas robustas na wiki; Pluggable Behavior [SBPP] e reflection foram citados apenas de passagem, sem elaboração própria de Meszaros, e ficaram registrados como open questions em vez de virarem stubs.
+
+**Páginas atualizadas:**
+- `wiki/concepts/testcase-object.md` — de stub para stable: mecânica completa (Command Pattern, Pluggable Behavior + reflection, convenção de nomenclatura no Test Tree Explorer); `source_count` 2→3
+- `wiki/concepts/test-method.md` — nova seção sobre como o nome do Test Method chega ao Testcase Object via Pluggable Behavior + reflection; `source_count` 2→3
+- `wiki/concepts/test-runner.md` — nova seção sobre o Graphical Test Runner do JUnit no Eclipse e o Test Tree Explorer; `source_count` 1→2
+- `wiki/concepts/test-suite-object.md` — confirma a mecânica pela perspectiva do Testcase Object, nomeia Test Discovery/Test Enumeration; `source_count` 1→2
+- `wiki/concepts/command-pattern.md` — nova seção "Aplicação concreta: cada teste xUnit é um Command", ligando o padrão GOF geral a esta aplicação específica; `source_count` 2→3
+- `wiki/sources/testcase-class-xunitpatterns.md` — nota de atualização linkando para a nova fonte dedicada ao Testcase Object
+- `wiki/entities/junit.md` — nova seção sobre o Graphical Test Runner no Eclipse (Command Pattern em ação); `source_count` 8→9
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources; `source_count` 38→39
+- `wiki/entities/gang-of-four.md` — nova linha em Key Sources citando o Command Pattern aplicado ao Testcase Object; `source_count` 3→4
+- `wiki/sources/there-is-always-an-exception-xunitpatterns.md` — nota de atualização registrando que a fonte dedicada ao Testcase Object (referenciada como lacuna) agora existe; `source_count` 0→1
+- `wiki/index.md` — nova linha em Sources, no cluster xUnitPatterns.com
+
+**Notas / open questions:** (1) **Path de skills do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada em múltiplas ingestões anteriores; path real usado normalmente. (2) **WebFetch falhou** com `connect ECONNREFUSED` ao tentar buscar a URL diretamente — contornado com `curl` via Bash, salvando o HTML no scratchpad da sessão antes de extrair o conteúdo. (3) **Test Discovery, Test Enumeration e Test Selection** seguem sem página/fonte primária dedicada — mesma lacuna já sinalizada em ingestões anteriores do cluster, candidatos naturais para a próxima ingestão de "XUnit Basics". (4) **Pluggable Behavior [SBPP]** (Smalltalk Best Practice Patterns, Kent Beck) e **reflection** (termo de glossário do site) citados apenas de passagem — não viraram stub por decisão editorial (citação sem elaboração própria de Meszaros), registrados como open questions na nova fonte. (5) **Nenhuma contradição encontrada** com conteúdo pré-existente da wiki; a fonte é puramente complementar e confirmatória do já registrado em `wiki/sources/testcase-class-xunitpatterns.md` e `wiki/sources/there-is-always-an-exception-xunitpatterns.md`, fechando pela primeira vez a mecânica interna de despacho (Command Pattern, Pluggable Behavior, reflection) do Testcase Object.
+
+---
+
+## [2026-09-21] ingest | There's Always an Exception (xUnitPatterns.com — Gerard Meszaros)
+
+**Source:** artigo/sidebar em inglês do site xUnitPatterns.com (http://xunitpatterns.com/There%20is%20Always%20an%20Exception.html), fornecido pelo usuário via URL colada. Traduzido para português e salvo em `raw/there-is-always-an-exception-xunitpatterns.md` antes da ingestão, seguindo o mesmo padrão de tradução já usado para o restante do cluster xUnitPatterns.com da wiki (cabeçalho com fonte/autor/copyright, rodapé com data de geração original).
+**Skill:** tech-mentor-testing. Carregado `SKILL.md` e a referência `references/test-patterns.md` em `/home/gabriel-martins/Documentos/skills/tech-mentor-testing/` (path real deste ambiente — diferente do declarado no CLAUDE.md, `/home/nemomartins/Documentos/new/skills/`, que não existe aqui; mesma situação já registrada em múltiplas ingestões anteriores).
+
+**Páginas criadas:**
+- `wiki/sources/there-is-always-an-exception-xunitpatterns.md`
+- `wiki/entities/nunit.md` — nova entity: porta do xUnit para .NET, foco central da fonte
+- `wiki/entities/testng.md` — nova entity: framework de teste Java, a outra exceção citada pela fonte
+- `wiki/entities/james-newkirk.md` — nova entity: coautor do NUnit 2.0, citado admitindo o erro de design
+- `wiki/concepts/shared-fixture.md` — novo conceito: fixture reutilizado entre testes, deliberado ou implícito
+- `wiki/concepts/erratic-test.md` — novo conceito: família de test smells por fatores externos ao teste, incluindo dependência de ordem de execução
+
+**Páginas atualizadas:**
+- `wiki/entities/junit.md` — nova seção "JUnit New Instance Behavior" nomeando a exceção do NUnit 2.x/TestNG; `source_count` 7→8
+- `wiki/concepts/testcase-object.md` — nova seção sobre a regra "um por Test Method" e sua exceção; `source_count` 1→2
+- `wiki/concepts/test-method.md` — nova seção sobre a mesma exceção, do ponto de vista do Test Method; `source_count` 1→2
+- `wiki/entities/martin-fowler.md` — nova seção citando o artigo "JunitNewInstance" do bliki; `source_count` 30→31
+- `wiki/entities/gerard-meszaros.md` — nova seção sobre esta fonte (categoria "Sidebars", não glossário nem pattern); `source_count` 37→38
+- `wiki/index.md` — nova linha em Sources; duas novas linhas em Concepts; três novas linhas em Entities
+
+**Notas / open questions:** (1) **Path de skills do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada em múltiplas ingestões anteriores; path real usado normalmente. (2) **Repo root do CLAUDE.md também não corresponde a este ambiente** (`/home/nemomartins/Documentos/new/dev-study/` não existe; o repo real é `/home/gabriel-martins/Documentos/dev-brain`, com `raw/` e `wiki/` diretamente na raiz) — usado o path real, consistente com o que as fontes mais recentes da wiki já vinham fazendo. (3) **Conteúdo do artigo "JunitNewInstance" de Fowler não verificado** — a fonte só referencia a URL, sem citar o argumento completo; candidato a ingestão futura dedicada. (4) **Estado atual do NUnit/TestNG não verificado** — a fonte é de 2003-2008; não há confirmação sobre se versões mais recentes desses frameworks mudaram o comportamento de instanciação documentado. (5) **Nenhuma contradição encontrada** com conteúdo pré-existente da wiki; a fonte é puramente complementar ao cluster já extenso de páginas xUnitPatterns.com (Meszaros), preenchendo pela primeira vez o tema de exceções ao modelo de instanciação do xUnit.
+
+---
+
+## [2026-09-21] ingest | Command (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/command-xunitpatterns]] — verbete curtíssimo da categoria **External Patterns** do xUnitPatterns.com, fornecido pelo usuário como URL (`http://xunitpatterns.com/Command.html`), baixado via `curl` (WebFetch resumiria via modelo menor, arriscando perda de fidelidade num texto já muito curto) e traduzido para pt-BR em `raw/command-xunitpatterns.md`. Conteúdo original em inglês, mínimo: citação direta da definição do GOF para o padrão Command, sem elaboração própria de Meszaros — mesmo formato de [[wiki/sources/decorator-xunitpatterns]].
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — mesma calibração de domínio da série xUnitPatterns.com; conteúdo em si é de design pattern geral (GOF), não específico de teste.
+
+**Arquivos criados:**
+- `raw/command-xunitpatterns.md` — tradução pt-BR do verbete de External Pattern, com metadados do artigo
+- `wiki/sources/command-xunitpatterns.md` — TL;DR, 3 afirmações centrais, 3 key claims, entidades/conceitos tocados, 2 open questions, 3 citações preservadas
+
+**Páginas atualizadas (backlink + frontmatter):**
+- `wiki/concepts/command-pattern.md` — `source_count` 3 → 4; nova seção "Definição formal (GOF, via xUnitPatterns.com)"; nova linha em Key Sources
+- `wiki/concepts/testcase-object.md` — `source_count` 3 → 4; nova frase de contraste (definição geral com undo/redo vs. aplicação parcial); nova linha em Key Sources
+- `wiki/entities/gang-of-four.md` — `source_count` 4 → 5; nova linha em Key Sources
+- `wiki/entities/gerard-meszaros.md` — `source_count` 39 → 40; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`command-pattern` estava ausente do índice — drift pré-existente corrigido de passagem)
+
+**Notas / open questions:** (1) **Drift pré-existente corrigido:** `wiki/concepts/command-pattern.md` já existia com `source_count: 3` mas nunca havia sido adicionado a `wiki/index.md` — corrigido nesta ingestão. (2) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** — mesma situação já registrada em ingestões anteriores; usado o path real (`/home/gabriel-martins/Documentos/dev-brain`, skill via Skill tool). (3) **Nenhuma contradição encontrada** — a fonte é puramente complementar: fornece a definição formal do GOF que faltava como contraponto à aplicação já registrada do Command ao Testcase Object, e destaca explicitamente que essa aplicação usa só uma fração da definição geral (sem queue/log/undo). (4) **Demais entradas de "External Patterns"** (Adapter, Composite, Facade, Observer, Singleton, Strategy, Template Method, ~40 outras) seguem não ingeridas — mesma lacuna já sinalizada em [[wiki/sources/decorator-xunitpatterns]].
+
+---
+
+## [2026-09-21] ingest | Attribute (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/attribute-xunitpatterns]] — verbete curtíssimo de Glossário do xUnitPatterns.com, fornecido pelo usuário como URL (`http://xunitpatterns.com/attribute.html`), baixado via `curl` (WebFetch retornou `ECONNREFUSED` para os dois esquemas http/https, mesmo com o site acessível por `curl` — provável bloqueio do fetcher hospedado contra o IP do host) e traduzido para pt-BR em `raw/attribute-xunitpatterns.md`. Conteúdo original mínimo: duas frases definindo "attribute" como "uma característica de algo", com dois sentidos no xUnit — sinônimo de annotation (JUnit↔NUnit) ou sinônimo de instance variable.
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — mesma calibração de domínio da série xUnitPatterns.com.
+
+**Arquivos criados:**
+- `raw/attribute-xunitpatterns.md` — tradução pt-BR do verbete de glossário, com metadados do artigo
+- `wiki/sources/attribute-xunitpatterns.md` — TL;DR, 3 afirmações centrais, 3 key claims, entidades/conceitos tocados, 2 open questions, 1 citação preservada
+- `wiki/concepts/instance-variable.md` — novo conceito stub: segundo sentido de "attribute" no xUnit, sem página própria até agora; conecta ao mecanismo de Shared Fixture implícito (NUnit 2.x/TestNG) já documentado em [[wiki/sources/there-is-always-an-exception-xunitpatterns]]
+
+**Páginas atualizadas:**
+- `wiki/sources/annotation-xunitpatterns.md` — nova seção (4) cruzando com esta fonte; `date_updated` atualizado
+- `wiki/entities/gerard-meszaros.md` — `source_count` 40 → 41; nova linha em Key Sources
+- `wiki/entities/nunit.md` — `source_count` 1 → 2; nova linha em Key Sources
+- `wiki/concepts/shared-fixture.md` — `source_count` 1 → 2; menção solta a "variável de instância" convertida em link `[[wiki/concepts/instance-variable]]`; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`instance-variable`)
+
+**Notas / open questions:** (1) **WebFetch falhou com `ECONNREFUSED`** para `xunitpatterns.com` em ambos os esquemas (http e https), apesar do site responder normalmente via `curl` direto — contornado baixando o HTML via `curl` e lendo com a ferramenta Read; possível bloqueio de rede específico do fetcher hospedado contra o IP do site (52.1.13.203), não do conteúdo em si. (2) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** — mesma situação já registrada em ingestões anteriores; usado o path real (`/home/gabriel-martins/Documentos/dev-brain`, skill via Skill tool). (3) **Nenhuma contradição encontrada** — a fonte confirma e complementa simetricamente [[wiki/sources/annotation-xunitpatterns]], e acrescenta um sentido (instance variable) sem relação com o primeiro. (4) **"instance variable.html" no catálogo original não foi ingerido** — a nova página `wiki/concepts/instance-variable.md` é um stub baseado apenas na menção lateral deste verbete; candidato a fonte primária dedicada futura.
+
+---
+
+## [2026-09-21] ingest | Need-Driven Development (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/need-driven-development-xunitpatterns]] — verbete curto de Glossário do xUnitPatterns.com, fornecido pelo usuário como URL (`http://xunitpatterns.com/need-driven%20development.html`), baixado via `curl` (URL com maiúscula/espaço codificado retornava 404; a URL em minúsculas do próprio site funcionou) e traduzido para pt-BR em `raw/need-driven-development-xunitpatterns.md`. Conteúdo original: um único parágrafo definindo need-driven development como variação outside-in do TDD, onde Mock Objects substituem todo código dependente e verificam indirect outputs, garantindo compreensão de responsabilidades antes da codificação; a camada mais externa fecha com storytest-driven development e customer tests, citando Service Facade [CJ2EEP] como exemplo.
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — mesma calibração de domínio da série xUnitPatterns.com; referência `test-patterns.md` (seções TDD, Outside-In vs. Inside-Out) já cobria o vocabulário London/Mockist necessário.
+
+**Arquivos criados:**
+- `raw/need-driven-development-xunitpatterns.md` — tradução pt-BR do verbete de glossário, com metadados do artigo
+- `wiki/sources/need-driven-development-xunitpatterns.md` — TL;DR, 5 afirmações centrais, 4 key claims, entidades/conceitos tocados, 2 open questions, 2 citações preservadas
+
+**Páginas atualizadas:**
+- `wiki/concepts/tdd.md` — nova seção "Need-Driven Development: o nome formal da escola London/Outside-In"; nova linha em Key Sources; `source_count` 25 → 26
+- `wiki/concepts/storytest-driven-development.md` — novo parágrafo ligando STDD à metade externa do processo de need-driven development; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/concepts/test-doubles.md` — nova linha em Key Sources cruzando Mock Object com o processo nomeado; `source_count` 26 → 27
+- `wiki/concepts/indirect-input-output.md` — novo parágrafo registrando o uso (não-definição) de "indirect output" nesta fonte; nova linha em Key Sources; `source_count` 9 → 10
+- `wiki/sources/customer-test-xunitpatterns.md` — nova seção "Cruzamentos posteriores"; `date_updated` atualizado
+- `wiki/entities/gerard-meszaros.md` — `source_count` 41 → 42; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources
+
+**Notas / open questions:** (1) **Service Facade [CJ2EEP] não tem página própria na wiki** — citado apenas de passagem como exemplo, sem elaboração do verbete sobre o padrão em si; *Core J2EE Patterns* (Alur, Malks, Crupi) também não está catalogado. Candidato a ingestão futura se aparecer fonte dedicada. (2) **Termo "indirect output" segue sem fonte primária dedicada** — usado nesta fonte e em [[wiki/concepts/indirect-input-output]] apenas por inferência a partir de "indirect input"; mesma lacuna já sinalizada anteriormente. (3) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** — mesma situação já registrada em ingestões anteriores; usado o path real (`/home/gabriel-martins/Documentos/dev-brain`, skill via Skill tool). (4) **Nenhuma contradição encontrada** — a fonte é puramente complementar: nomeia formalmente um processo que a wiki já descrevia informalmente na página de TDD, sem alterar nenhuma afirmação pré-existente. (5) Optei por **não criar stubs redundantes** para "Mock Object" e "indirect output" como conceitos próprios — ambos já são cobertos em profundidade por [[wiki/concepts/test-doubles]] e [[wiki/concepts/indirect-input-output]] respectivamente; preferi cross-referenciar essas páginas existentes a fragmentar o grafo com páginas curtas duplicadas.
+
+---
+
+## [2026-09-21] ingest | Production Code (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/production-code-xunitpatterns]] — verbete curtíssimo de Glossário do xUnitPatterns.com, fornecido pelo usuário como URL (`http://xunitpatterns.com/production%20code.html`). O WebFetch falhou novamente com `ECONNREFUSED` contra o IP do site (mesma falha já registrada em ingestões anteriores); contornado baixando o HTML via `curl` direto e lendo com a ferramenta Read. Traduzido para pt-BR em `raw/production-code-xunitpatterns.md`. Conteúdo original: um único parágrafo em que Meszaros explica a origem do termo — precisava de uma forma de nomear o código que não é código de teste, e escolheu "production code" emprestando o nome do ambiente de produção, em oposição a "test code".
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — mesma calibração de domínio da série xUnitPatterns.com; termo puramente terminológico, sem arquivo de referência específico necessário além do protocolo geral de glossário já aplicado às fontes anteriores da série.
+
+**Arquivos criados:**
+- `raw/production-code-xunitpatterns.md` — tradução pt-BR do verbete de glossário, com metadados do artigo
+- `wiki/sources/production-code-xunitpatterns.md` — TL;DR, 3 afirmações-chave, entidades/conceitos tocados, 2 open questions, 1 citação preservada
+- `wiki/concepts/production-code.md` — novo stub: fecha uma lacuna terminológica citada de passagem em quatro fontes já ingeridas ([[wiki/sources/control-point-xunitpatterns]], [[wiki/sources/observation-point-xunitpatterns]], [[wiki/sources/test-driven-development-xunitpatterns]], [[wiki/sources/test-first-development-xunitpatterns]]) sem nunca ter página própria
+
+**Páginas atualizadas:**
+- `wiki/concepts/test-doubles.md` — dois pontos do vocabulário SUT/DOC (entrada/saída indireta) linkados a `[[wiki/concepts/production-code]]`; nova linha em Key Sources; `source_count` 27 → 28
+- `wiki/concepts/indirect-input-output.md` — parágrafo sobre control point atualizado com link e frase de fechamento; nova linha em Key Sources; `source_count` 10 → 11
+- `wiki/sources/control-point-xunitpatterns.md` — nova linha em Conceitos Tocados; `date_updated` atualizado
+- `wiki/sources/observation-point-xunitpatterns.md` — nova linha em Conceitos Tocados; `date_updated` atualizado
+- `wiki/sources/test-driven-development-xunitpatterns.md` — nova linha em Conceitos Tocados; `date_updated` atualizado
+- `wiki/sources/test-first-development-xunitpatterns.md` — nova linha em Conceitos Tocados; `date_updated` atualizado
+- `wiki/entities/gerard-meszaros.md` — `source_count` 42 → 43; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`production-code`)
+
+**Notas / open questions:** (1) **WebFetch falhou com `ECONNREFUSED`** contra `xunitpatterns.com`, mesma falha de rede específica do fetcher hospedado já registrada em ingestões anteriores desta série — contornado via `curl` direto, que responde normalmente. (2) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada em ingestões anteriores; usado o path real e a skill equivalente via Skill tool. (3) **Nenhuma contradição encontrada** — a fonte é puramente complementar: dá nome formal a um termo já usado sem definição própria em quatro fontes diferentes da wiki, sem alterar nenhuma afirmação pré-existente. (4) **"Test code"**, o termo irmão citado explicitamente no próprio verbete, segue sem página de glossário dedicada — candidato natural para uma próxima ingestão da mesma série.
+
+---
+
+## [2026-09-21] ingest | Test Code (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/test-code-xunitpatterns]] — verbete curtíssimo de Glossário do xUnitPatterns.com, fornecido pelo usuário como URL (`http://xunitpatterns.com/test%20code.html`, colado via texto pastado). WebFetch falhou novamente com `ECONNREFUSED` contra o IP do site (mesma falha já registrada em ingestões anteriores desta série); contornado baixando o HTML via `curl` direto e lendo com a ferramenta Read. Traduzido para pt-BR em `raw/test-code-xunitpatterns.md`. Conteúdo original: um único parágrafo — "test code" é código escrito especificamente para testar outro código, seja esse código production code ou outro test code. Ingestão respondia diretamente à open question #1 deixada pelo verbete de "production code" ("candidato natural para uma próxima ingestão").
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — mesma calibração de domínio da série xUnitPatterns.com; termo puramente terminológico, sem arquivo de referência específico necessário além do protocolo geral de glossário já aplicado às fontes anteriores da série.
+
+**Arquivos criados:**
+- `raw/test-code-xunitpatterns.md` — tradução pt-BR do verbete de glossário, com metadados do artigo
+- `wiki/sources/test-code-xunitpatterns.md` — TL;DR, 3 afirmações-chave, entidades/conceitos tocados, 2 open questions, 1 citação preservada
+- `wiki/concepts/test-code.md` — novo stub: fecha o par terminológico com [[wiki/concepts/production-code]], lacuna citada de passagem em quatro fontes já ingeridas e sinalizada explicitamente como open question no verbete-irmão
+
+**Páginas atualizadas:**
+- `wiki/concepts/production-code.md` — parágrafo de abertura e "Ver também"/"Key Sources" atualizados com o contraponto agora definido; `source_count` 1 → 2
+- `wiki/concepts/test-doubles.md` — nova linha em Key Sources cobrindo o caso de test double customizado precisando de teste próprio; `source_count` 28 → 29
+- `wiki/concepts/indirect-input-output.md` — nova linha em Key Sources fechando o par terminológico por trás da regra de design já registrada; `source_count` 11 → 12
+- `wiki/entities/gerard-meszaros.md` — `source_count` 43 → 44; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`test-code`)
+
+**Notas / open questions:** (1) **WebFetch falhou com `ECONNREFUSED`** contra `xunitpatterns.com`, mesma falha de rede específica do fetcher hospedado já registrada em todas as ingestões anteriores desta série — contornado via `curl` direto. (2) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** — mesma situação já registrada; usado o path real (`/home/gabriel-martins/Documentos/dev-brain`, skill via Skill tool). (3) **Nenhuma contradição encontrada** — a fonte fecha formalmente um par terminológico já usado informalmente em toda a wiki, sem alterar nenhuma afirmação pré-existente. (4) **"Test code testando test code"** — a única cláusula não trivial do verbete (test code pode testar outro test code) não vem com exemplo concreto; candidato a amarrar com o termo "metatest", já catalogado no glossário do site mas sem fonte primária dedicada, numa próxima ingestão. (5) Com esta ingestão, o par production code / test code está **totalmente coberto** por fontes primárias isoladas na wiki.
+
+---
+
+## [2026-09-21] ingest | Production (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/production-xunitpatterns]] — verbete curtíssimo de Glossário do xUnitPatterns.com, fornecido pelo usuário como URL (`http://xunitpatterns.com/production.html`, colado via texto pastado). O WebFetch falhou novamente com `ECONNREFUSED` contra o IP do site (mesma falha já registrada em todas as ingestões anteriores desta série); contornado baixando o HTML via `curl` direto e lendo com a ferramenta Read. Traduzido para pt-BR em `raw/production-xunitpatterns.md`. Conteúdo original: um único parágrafo definindo "production" como o ambiente de TI onde aplicações rodam para usuários reais, em contraste com ambientes de teste (acceptance, integration, development, qual). Este é o verbete-raiz do qual "production code" ([[wiki/sources/production-code-xunitpatterns]]) já citava a definição de passagem, sem fonte primária isolada própria até agora.
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — mesma calibração de domínio da série xUnitPatterns.com; termo puramente terminológico, sem arquivo de referência específico necessário além do protocolo geral de glossário já aplicado às fontes anteriores da série.
+
+**Arquivos criados:**
+- `raw/production-xunitpatterns.md` — tradução pt-BR do verbete de glossário, com metadados do artigo
+- `wiki/sources/production-xunitpatterns.md` — TL;DR, 3 afirmações-chave, entidades/conceitos tocados, 2 open questions, 1 citação preservada
+- `wiki/concepts/production.md` — novo stub: isola a palavra-raiz "production" (o ambiente) do termo derivado "production code", e distingue esse sentido do de [[wiki/concepts/pensamento-em-producao]] (mentalidade de engenharia, não ambiente)
+
+**Páginas atualizadas:**
+- `wiki/concepts/production-code.md` — parágrafo de abertura e "Ver também"/"Key Sources" atualizados com link para a nova fonte primária da palavra-raiz; `source_count` 2 → 3
+- `wiki/concepts/pensamento-em-producao.md` — nova linha em "Relação com outros conceitos" distinguindo os dois sentidos de "produção" (ambiente vs. mentalidade)
+- `wiki/entities/gerard-meszaros.md` — `source_count` 44 → 45; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`production`)
+
+**Notas / open questions:** (1) **WebFetch falhou com `ECONNREFUSED`** contra `xunitpatterns.com`, mesma falha de rede específica do fetcher hospedado já registrada em todas as ingestões anteriores desta série — contornado via `curl` direto, que responde normalmente. (2) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** — mesma situação já registrada; usado o path real (`/home/gabriel-martins/Documentos/dev-brain`, skill via Skill tool). (3) **Nenhuma contradição encontrada** — a fonte é puramente complementar: dá fonte primária isolada a um termo já citado de passagem em [[wiki/sources/production-code-xunitpatterns]], sem alterar nenhuma afirmação pré-existente. (4) **Os quatro ambientes de teste citados** (acceptance, integration, development, qual) não têm elaboração própria neste verbete — "acceptance" já aparece indiretamente via [[wiki/sources/customer-test-xunitpatterns]], mas os demais três seguem sem fonte primária dedicada; candidatos a ingestão futura se o catálogo tiver verbetes próprios. (5) Com esta ingestão, a última lacuna terminológica citada de passagem no par production code / test code está fechada.
+
+---
+
+## [2026-09-21] ingest | Pluggable Behavior (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/pluggable-behavior-xunitpatterns]] — verbete curtíssimo da categoria **External Patterns** do xUnitPatterns.com, fornecido pelo usuário como URL colada (`http://xunitpatterns.com/Pluggable%20Behavior.html`). O `WebFetch` falhou novamente com `connect ECONNREFUSED` contra o IP do site (mesma falha de rede já registrada em todas as ingestões anteriores desta série); contornado baixando o HTML via `curl` direto e lendo com a ferramenta Read. Traduzido para pt-BR em `raw/pluggable-behavior-xunitpatterns.md`. Conteúdo original: resumo de uma frase ("Add a variable that will be used to trigger different behavior") + parágrafo definindo as duas variações do padrão (Pluggable Method Selector, Pluggable Block) + nota "Paraphrased from Kent Beck's book 'Smalltalk Best Practice Patterns' [SBPP]". Terceira entrada da categoria External Patterns ingerida, depois de Decorator e Command — mas a primeira que cita Kent Beck em vez do GOF.
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — mesma calibração de domínio da série xUnitPatterns.com.
+
+**Arquivos criados:**
+- `raw/pluggable-behavior-xunitpatterns.md` — tradução pt-BR do verbete, com metadados do artigo
+- `wiki/sources/pluggable-behavior-xunitpatterns.md` — TL;DR, 4 afirmações-chave, entidades/conceitos tocados, 2 open questions, 4 citações preservadas
+- `wiki/concepts/pluggable-behavior.md` — novo conceito, direto para `status: stable`: fecha a lacuna de definição formal já sinalizada como open question em [[wiki/sources/testcase-object-xunitpatterns]] (nota 2); distingue Pluggable (Method) Selector de Pluggable Block e compara com Strategy e Command
+
+**Páginas atualizadas:**
+- `wiki/concepts/testcase-object.md` — nova frase na seção de mecânica de despacho, classificando o uso como Pluggable (Method) Selector, não Pluggable Block; nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/concepts/test-method.md` — link adicionado à definição formal do padrão já citado; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/sources/testcase-object-xunitpatterns.md` — open question #2 marcada como resolvida (riscada + nota de atualização); nova linha em Conceitos Tocados
+- `wiki/concepts/command-pattern.md` — nova seção "Parente próximo: Pluggable Block"; nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/concepts/strategy-pattern.md` — nova seção "Parente mais leve: Pluggable (Method) Selector"; nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/entities/kent-beck.md` — nova seção "Autor de *Smalltalk Best Practice Patterns* [SBPP] — origem do Pluggable Behavior"; nova linha em Key Sources; `source_count` 11 → 12
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources; `source_count` 45 → 46
+- `wiki/sources/command-xunitpatterns.md` — nota de atualização registrando a terceira entrada da categoria
+- `wiki/sources/decorator-xunitpatterns.md` — nota de atualização registrando que duas das lacunas de "External Patterns" já foram preenchidas
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`pluggable-behavior`)
+
+**Notas / open questions:** (1) **WebFetch falhou com `connect ECONNREFUSED`** contra `xunitpatterns.com` — mesma falha de rede já registrada em todas as ingestões anteriores desta série, contornado via `curl` direto. (2) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada; usado o path real (`/home/gabriel-martins/Documentos/skills/tech-mentor-testing/`, skill carregada via Skill tool). (3) **O livro *Smalltalk Best Practice Patterns* [SBPP] em si segue sem página própria na wiki** — candidato a stub numa ingestão futura que leia mais do catálogo de padrões de Beck. (4) **Nenhuma contradição encontrada** — a fonte é puramente complementar e resolve, sem alterar nenhuma afirmação pré-existente, uma lacuna explicitamente sinalizada como open question em [[wiki/sources/testcase-object-xunitpatterns]]. (5) Com esta ingestão, a categoria **External Patterns** do site tem três entradas cobertas (Decorator, Command, Pluggable Behavior) de ~40 listadas na barra lateral.
+
+---
+
+## [2026-09-21] ingest | Block (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/block-xunitpatterns]] — verbete curtíssimo do Glossário do xUnitPatterns.com, fornecido pelo usuário como URL colada (`http://xunitpatterns.com/block.html`). `WebFetch` falhou novamente com `connect ECONNREFUSED` contra o IP do site (mesma falha de rede já registrada em todas as ingestões anteriores desta série); contornado baixando o HTML via `curl` direto e lendo com a ferramenta Read. Traduzido para pt-BR em `raw/block-xunitpatterns.md`. Conteúdo original: definição de "block" (bloco de código executável passado a um método) — nativo em Smalltalk e Ruby ("block closures"), com equivalentes em Java ("anonymous inner classes") e C# ("delegates").
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — mesma calibração de domínio da série xUnitPatterns.com; conteúdo em si é de mecânica geral de linguagem de programação (closures), não específico de teste, mas citado no Glossário do site por sustentar a variação Pluggable Block do padrão Pluggable Behavior.
+
+**Arquivos criados:**
+- `raw/block-xunitpatterns.md` — tradução pt-BR do verbete de glossário, com metadados do artigo
+- `wiki/sources/block-xunitpatterns.md` — TL;DR, 3 afirmações-chave, 3 key claims, entidades/conceitos tocados, 2 open questions, 3 citações preservadas
+
+**Páginas atualizadas:**
+- `wiki/concepts/pluggable-behavior.md` — definição do termo "block" incorporada à descrição da variação Pluggable Block; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/sources/procedure-variable-xunitpatterns.md` — nova nota em Questões Abertas cruzando os dois mecanismos de "comportamento como valor" (closure/block vs. function pointer/procedure variable), incluindo a coincidência de ambos citarem "delegate" (C#) como equivalente
+- `wiki/entities/gerard-meszaros.md` — `source_count` 46 → 47; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; hook do concept `pluggable-behavior` atualizado com link para a nova fonte
+
+**Notas / open questions:** (1) **WebFetch falhou com `connect ECONNREFUSED`** contra `xunitpatterns.com` — mesma falha de rede já registrada em todas as ingestões anteriores desta série, contornado via `curl` direto. (2) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada; usado o path real (`/home/gabriel-martins/Documentos/skills/tech-mentor-testing/`, skill carregada via Skill tool). (3) **Nenhuma contradição encontrada** — a fonte é complementar, dando fonte primária isolada a um termo já citado de passagem em [[wiki/concepts/pluggable-behavior]]. (4) O termo irmão "block closure" tem verbete próprio no Glossário (visto na barra lateral) e ainda não foi ingerido isoladamente — candidato natural para uma ingestão futura que distinga "block" (o bloco de código) de "block closure" (o bloco capturando o contexto léxico). (5) Nenhuma nova página de concept/entity foi criada nesta ingestão — puramente complementar, fechando lacunas de fonte primária em páginas já existentes.
+
+---
+
+## [2026-09-21] ingest | Instance Variable (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/instance-variable-xunitpatterns]] — verbete do Glossário do xUnitPatterns.com, fornecido pelo usuário como URL colada (`http://xunitpatterns.com/instance%20variable.html`). Baixado via `curl` direto (mesmo padrão de contorno usado em toda a série, já que `xunitpatterns.com` não responde a fetch direto neste ambiente) e lido com a ferramenta Read. Traduzido para pt-BR em `raw/instance-variable-xunitpatterns.md`. Conteúdo original: definição de "instance variable" (também conhecida como "member variable") — variável associada a um objeto e não à classe, acessível só via instância, sintaxe de acesso variando por linguagem (`objectReference.variableName`, ou `self`/`this` explícito), sobreposta apenas por local variables dentro de um método.
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — mesma calibração de domínio da série xUnitPatterns.com. Nenhum arquivo de referência específico cobre o termo (é vocabulário genérico de OO, não um tópico de estratégia/ferramenta de teste); protocolo seguido: respondido com conhecimento base, sinalizado aqui.
+
+**Arquivos criados:**
+- `raw/instance-variable-xunitpatterns.md` — tradução pt-BR do verbete de glossário, com metadados do artigo
+- `wiki/sources/instance-variable-xunitpatterns.md` — TL;DR, 4 afirmações-chave, 3 key claims, entidades/conceitos tocados, 2 open questions, 2 citações preservadas
+
+**Páginas atualizadas:**
+- `wiki/concepts/instance-variable.md` — promovido de `stub` para `draft`: corpo reescrito com a definição própria da fonte primária (antes só tinha a definição via xUnit/attribute); nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/sources/attribute-xunitpatterns.md` — open question que sinalizava a ausência de fonte primária para "instance variable" marcada como resolvida, com link para a nova fonte
+- `wiki/entities/gerard-meszaros.md` — `source_count` 47 → 48; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; hook do concept `instance-variable` atualizado
+
+**Notas / open questions:** (1) **WebFetch/rede:** mesma falha de rede já registrada em toda a série — contornado via `curl` direto. (2) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** — mesma situação já registrada; usado o path real (`/home/gabriel-martins/Documentos/skills/tech-mentor-testing/`). (3) **Nenhuma contradição encontrada** — a fonte resolve um stub existente, sem conflitar com o que já estava documentado. (4) **class variable** (terceiro termo do trio local/instance/class) segue sem fonte primária isolada no catálogo — candidato natural para ingestão futura. (5) Nenhuma nova página de concept/entity foi criada — a ingestão foi puramente de resolução de stub e enriquecimento de páginas já existentes.
+
+---
+
+## [2026-09-21] ingest | Local Variable (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/local-variable-xunitpatterns]] — verbete do Glossário do xUnitPatterns.com, fornecido pelo usuário como URL colada (`http://xunitpatterns.com/local%20variable.html`). `WebFetch` falhou novamente com `connect ECONNREFUSED` contra o IP do site (mesma falha de rede já registrada em todas as ingestões anteriores desta série); contornado baixando o HTML via `curl` direto (com a URL em minúsculas — a variante capitalizada `Local%20Variable.html` retornou 404) e lendo com a ferramenta Read. Traduzido para pt-BR em `raw/local-variable-xunitpatterns.md`. Conteúdo original: definição de "local variable" — variável associada a um bloco de código, não a um objeto ou classe; só acessível de dentro do bloco, sai de escopo quando o bloco retorna ao chamador. Verbete mais curto da série até agora: uma única frase, sem exemplo de código.
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — mesma calibração de domínio da série xUnitPatterns.com; conteúdo em si é vocabulário genérico de escopo de variável, não específico de teste, mas citado no Glossário do site como o mecanismo de shadow de instance variable.
+
+**Arquivos criados:**
+- `raw/local-variable-xunitpatterns.md` — tradução pt-BR do verbete de glossário, com metadados do artigo
+- `wiki/sources/local-variable-xunitpatterns.md` — TL;DR, 3 afirmações-chave, 3 key claims, entidades/conceitos tocados, 2 open questions, 1 citação preservada
+- `wiki/concepts/local-variable.md` — novo stub: definição genérica, contraste com instance variable, open question sobre class variable
+
+**Páginas atualizadas:**
+- `wiki/concepts/instance-variable.md` — corpo enriquecido com a definição própria de local variable (antes só citada como "o mecanismo de shadow", sem fonte); nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/entities/gerard-meszaros.md` — `source_count` 48 → 49; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources e em Concepts
+
+**Notas / open questions:** (1) **WebFetch falhou com `connect ECONNREFUSED`** contra `xunitpatterns.com` — mesma falha de rede já registrada em toda a série, contornado via `curl` direto. (2) **URL sensível a capitalização:** `Local%20Variable.html` (capitalizado) retornou 404; a URL correta usa minúsculas, `local%20variable.html`, como fornecida originalmente pelo usuário. (3) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada; usado o path real (skill carregada via Skill tool). (4) **Nenhuma contradição encontrada** — a fonte fecha um par terminológico já mapeado (instance variable ↔ local variable), sem conflitar com o que já estava documentado. (5) **class variable** (terceiro termo do trio local/instance/class) continua sem fonte primária isolada no catálogo — candidato natural para ingestão futura.
+
+---
+
+## [2026-09-21] ingest | Reflection (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/reflection-xunitpatterns]] — verbete do Glossário do xUnitPatterns.com, fornecido pelo usuário como URL colada (`http://xunitpatterns.com/reflection.html`). `WebFetch` falhou com `connect ECONNREFUSED` contra o IP do site (mesma falha de rede já registrada em toda a série), contornado baixando o HTML via `curl` direto e lendo com a ferramenta Read. Traduzido para pt-BR em `raw/reflection-xunitpatterns.md`. Conteúdo original: definição de "reflection" — capacidade de um programa examinar sua própria estrutura enquanto está em execução, usada com frequência em ferramentas para reduzir o trabalho de adicionar novas funcionalidades. Verbete curto, sem exemplo de código ou amarração a linguagem específica.
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — mesma calibração de domínio da série xUnitPatterns.com. Nenhum arquivo de referência específico cobre o termo (é vocabulário genérico de linguagem/runtime, não um tópico de estratégia/ferramenta de teste); protocolo seguido: respondido com conhecimento base, sinalizado aqui.
+
+**Arquivos criados:**
+- `raw/reflection-xunitpatterns.md` — tradução pt-BR do verbete de glossário, com metadados do artigo
+- `wiki/sources/reflection-xunitpatterns.md` — TL;DR, 2 afirmações-chave, 3 key claims, entidades/conceitos tocados, 2 open questions, 1 citação preservada
+- `wiki/concepts/reflection.md` — novo stub: definição própria da fonte primária, seção dedicada à aplicação concreta no despacho do Testcase Object
+
+**Páginas atualizadas:**
+- `wiki/concepts/testcase-object.md` — linha "Mecânica de despacho" agora linka para o novo concept `reflection`; nova linha em Key Sources; `source_count` 5 → 6
+- `wiki/concepts/pluggable-behavior.md` — definição do Pluggable (Method) Selector agora linka para o novo concept `reflection`; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/concepts/test-method.md` — seção "Como o nome do Test Method chega ao Testcase Object" agora linka para o novo concept `reflection`; nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/sources/testcase-object-xunitpatterns.md` — open question #3, que sinalizava a ausência de fonte primária para "reflection", marcada como resolvida, com link para a nova fonte e para o novo concept
+- `wiki/entities/gerard-meszaros.md` — `source_count` 49 → 50; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts
+
+**Notas / open questions:** (1) **WebFetch falhou com `connect ECONNREFUSED`** contra `xunitpatterns.com` — mesma falha de rede já registrada em toda a série, contornado via `curl` direto. (2) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada; usado o path real (`/home/gabriel-martins/Documentos/skills/tech-mentor-testing/`, skill carregada via Skill tool). (3) **Nenhuma contradição encontrada** — a fonte resolve uma lacuna de fonte primária já sinalizada explicitamente em três páginas (testcase-object, pluggable-behavior, test-method), sem conflitar com o que já estava documentado; foi, ao contrário, o item de dívida mais antigo e mais citado da série a ser fechado nesta ingestão. (4) O verbete não detalha mecanismo por linguagem (`Method.invoke`, `send`, `perform:`) nem trade-offs de performance — candidato a aprofundamento futuro via fonte externa, já que o catálogo em si não vai além da definição conceitual.
+
+---
+
+## [2026-09-21] ingest | Extract Method (xUnitPatterns.com — catálogo de Gerard Meszaros, conteúdo atribuído a Martin Fowler)
+
+**Fonte:** [[wiki/sources/extract-method-xunitpatterns]] — verbete de "Code Refactorings" do xUnitPatterns.com, fornecido pelo usuário como URL colada (`http://xunitpatterns.com/Extract%20Method.html`). Baixado via `curl` direto (mesma falha de rede recorrente de `WebFetch`/`ECONNREFUSED` contra o host esperada, contornada preventivamente sem tentar a ferramenta). Traduzido para pt-BR em `raw/extract-method-xunitpatterns.md`. Conteúdo original: verbete minimalista — problema (um fragmento de código agrupável), solução (transformá-lo num método nomeado que explique seu propósito), e remissão bibliográfica ao livro *Refactoring: Improving the Design of Existing Software*, de Fowler. Mesma nota do site alertando que o capítulo publicado do livro "provavelmente mudou substancialmente" em relação a esta versão preliminar, e mesmo padrão host≠autor já registrado para [[wiki/sources/extract-interface-xunitpatterns]].
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — mesma calibração de domínio de toda a série xUnitPatterns.com, e mesma skill usada para a refatoração-irmã Extract Interface.
+
+**Arquivos criados:**
+- `raw/extract-method-xunitpatterns.md` — tradução pt-BR do verbete de "Code Refactorings", com metadados do artigo
+- `wiki/sources/extract-method-xunitpatterns.md` — TL;DR, 4 afirmações-chave, 3 key claims, entidades/conceitos tocados, 3 open questions, 3 citações preservadas
+- `wiki/concepts/extract-method.md` — novo stub: definição própria da fonte primária, seção dedicada ao papel em Test Code Duplication
+
+**Páginas atualizadas:**
+- `wiki/concepts/refatoracao.md` — seção "Extract Method" reescrita para citar a nova fonte primária dedicada (antes citava só de passagem via `testcase-class-xunitpatterns`); novo link no rodapé e em Key Sources; `source_count` 8 → 9
+- `wiki/sources/testcase-class-xunitpatterns.md` — nota de atualização na Key Claim 4, linkando para a nova fonte que fecha a lacuna de "Extract Method [Fowler]"
+- `wiki/entities/martin-fowler.md` — nova linha na lista de termos/refatorações cunhados; nova linha em Key Sources; `source_count` 31 → 32
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources; `source_count` 50 → 51
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts
+
+**Notas / open questions:** (1) **Fecha uma lacuna citada em duas fontes**: tanto [[wiki/sources/testcase-class-xunitpatterns]] quanto [[wiki/concepts/refatoracao]] citavam "Extract Method [Fowler]" apenas de passagem, sem fonte primária dedicada — mesmo padrão de lacuna já fechado para Extract Interface. (2) **Mesma ressalva de desatualização do site já registrada para Extract Interface** — o verbete se declara defasado em relação ao capítulo publicado do livro; tratado como a versão mais primária disponível, não como texto definitivo. (3) **Test Utility Method, Testcase Superclass e Test Helper seguem sem página própria** — os três destinos possíveis para o código extraído por esta refatoração, já sinalizados como open question em [[wiki/sources/testcase-class-xunitpatterns]], continuam candidatos à próxima ingestão do cluster. (4) **Nenhuma contradição encontrada** — a fonte apenas formaliza, com atribuição explícita a Fowler, o que já estava documentado por citação indireta.
+
+---
+
+## [2026-09-21] ingest | Test Fixture (Fit) (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/test-fixture-fit-xunitpatterns]] — verbete de glossário do xUnitPatterns.com, fornecido pelo usuário como URL colada (`http://xunitpatterns.com/test%20fixture%20-%20FIT.html`). `WebFetch` falhou com `connect ECONNREFUSED` contra o IP do site (mesma falha de rede recorrente de toda a série), contornado baixando o HTML via `curl` direto. Traduzido para pt-BR em `raw/test-fixture-fit-xunitpatterns.md`. Conteúdo original: verbete curtíssimo isolando o **terceiro sentido** da palavra "fixture" no vocabulário de testes — no framework **Fit**, é o **Adapter** [GOF] que interpreta a tabela do Fit e invoca métodos no **SUT**, implementando um **Data-Driven Test**.
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — mesma calibração de domínio de toda a série xUnitPatterns.com. Referência consultada: `references/test-patterns.md` (seção de fixtures/test doubles); o site não tem verbete próprio para "Fit" em si, apenas para este sentido específico de "fixture".
+
+**Arquivos criados:**
+- `raw/test-fixture-fit-xunitpatterns.md` — tradução pt-BR do verbete de glossário, com metadados do artigo
+- `wiki/sources/test-fixture-fit-xunitpatterns.md` — TL;DR, 4 afirmações-chave, 3 key claims, entidades/conceitos tocados, 3 open questions, 2 citações preservadas
+- `wiki/entities/fit.md` — novo stub: framework Fit, definição de "fixture" no seu contexto, ainda sem fonte primária dedicada ao framework em si
+- `wiki/concepts/data-driven-test.md` — novo stub: teste dirigido por dados externos, com o fixture do Fit como exemplo canônico
+
+**Páginas atualizadas:**
+- `wiki/concepts/adapter-pattern.md` — nova seção "Adapter como Fixture: o Termo 'Fixture' no Framework Fit"; nova linha em Key Sources; `source_count` 7 → 8
+- `wiki/sources/test-fixture-xunitpatterns.md` — open question sobre o verbete de desambiguação (que citava FIT, "não ingerido") marcada como resolvida, com link para a nova fonte
+- `wiki/sources/testcase-class-xunitpatterns.md` — open question sobre "Fit, Data-Driven Test e Interpreter [GOF]" marcada como parcialmente resolvida (Fit e Data-Driven Test agora têm stub; Interpreter [GOF] segue em aberto)
+- `wiki/entities/gerard-meszaros.md` — `source_count` 51 → 52; nova linha em Key Sources
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (Testes & Qualidade); nova linha em Entities
+
+**Notas / open questions:** (1) **WebFetch falhou com `connect ECONNREFUSED`** contra `xunitpatterns.com` — mesma falha de rede já registrada em toda a série, contornado via `curl` direto. (2) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada; usada a skill real via Skill tool (`anthropic-skills:tech-mentor-testing`). (3) **Fecha uma lacuna citada em duas fontes anteriores** ([[wiki/sources/testcase-class-xunitpatterns]] e [[wiki/sources/test-fixture-xunitpatterns]]), que citavam esta definição de passagem ou remetiam ao verbete sem o ingerir — mesmo padrão de fechamento de lacuna da série. (4) **Fit em si (o framework) segue sem fonte primária dedicada** — o catálogo não tem verbete próprio `FIT.html` ingerido ainda; `wiki/entities/fit.md` permanece stub. (5) **Interpreter [GOF]**, citado por Meszaros como o padrão que o Data-Driven Test implementa, também segue sem página própria. (6) **Nenhuma contradição encontrada** — a fonte apenas formaliza, com citação primária dedicada, o terceiro sentido de "fixture" já citado indiretamente em duas fontes anteriores.
+
+---
+
+## [2026-09-21] ingest | Adapter (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/adapter-xunitpatterns]] — verbete da categoria **External Patterns** do xUnitPatterns.com, fornecido pelo usuário como URL colada (`http://xunitpatterns.com/Adapter.html`). `WebFetch` falhou com `connect ECONNREFUSED` contra o IP do site (mesma falha de rede recorrente de toda a série), contornado baixando o HTML via `curl` direto. Traduzido para pt-BR em `raw/adapter-xunitpatterns.md`. Conteúdo original: verbete curtíssimo citando a definição canônica do **Adapter** [GOF] — "convert the interface of a class into another interface clients expect" — sem elaboração própria de Meszaros.
+
+**Skill carregada:** `tech-mentor-backend`, via Skill tool (`anthropic-skills:tech-mentor-backend`) — domínio de Design Patterns (`references/design-patterns.md`), já que este verbete é a definição formal do próprio padrão GOF, não sua aplicação a um conceito de teste (diferente do restante da série xUnitPatterns.com, tipicamente calibrada com `tech-mentor-testing`).
+
+**Arquivos criados:**
+- `raw/adapter-xunitpatterns.md` — tradução pt-BR do verbete de External Patterns, com metadados do artigo
+- `wiki/sources/adapter-xunitpatterns.md` — TL;DR, 3 afirmações-chave, 3 key claims, entidades/conceitos tocados, 2 open questions, 3 citações preservadas (incluindo o erro de digitação "clents" do site original)
+
+**Páginas atualizadas:**
+- `wiki/concepts/adapter-pattern.md` — nova seção "Definição Canônica do GOF (Fonte Primária)"; nova linha em Key Sources; `source_count` 8 → 9; página também adicionada ao índice pela primeira vez (estava ausente de `wiki/index.md` apesar de já `status: stable` com 8 fontes — drift de índice pré-existente, corrigido nesta ingestão)
+- `wiki/entities/gang-of-four.md` — nova linha em Key Sources; `source_count` 5 → 6
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources; `source_count` 52 → 53
+- `wiki/index.md` — nova linha em Sources; nova linha em Concepts (Padrões e Design, retroativa — ver nota acima)
+
+**Notas / open questions:** (1) **WebFetch falhou com `connect ECONNREFUSED`** contra `xunitpatterns.com` — mesma falha de rede já registrada em toda a série, contornado via `curl` direto. (2) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada; usada a skill real via Skill tool. (3) **Drift de índice pré-existente corrigido**: `wiki/concepts/adapter-pattern.md` já era uma página `stable` com 8 fontes citando-a, mas nunca havia sido adicionada a `wiki/index.md` — corrigido como parte desta ingestão, não como sweep de lint separado. (4) **Fecha uma lacuna citada em [[wiki/sources/test-fixture-fit-xunitpatterns]]**, que aplicava o Adapter ao framework Fit sem citar a definição formal do padrão em si — mesmo padrão de fechamento de lacuna já visto entre [[wiki/sources/testcase-object-xunitpatterns]] e [[wiki/sources/command-xunitpatterns]]. (5) **Nenhuma contradição encontrada** — a fonte apenas formaliza, com citação primária dedicada, a definição do Adapter já usada na wiki via aplicação ao Fit.
+
+---
+
+## [2026-09-21] ingest | 7 Things Developers Are Doing in 2026 That Would Have Looked Insane Three Years Ago (Max Lorian / The Coding Front, Medium)
+
+**Fonte:** [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] — ensaio de opinião publicado em 12/09/2026 no Medium (publicação The Coding Front), fornecido pelo usuário como URL colada. `WebFetch` retornou HTTP 403 (bloqueio anti-scraping do Medium), contornado via proxy leitor `r.jina.ai` (mesma classe de contorno já usada para outras fontes bloqueadas). Traduzido integralmente para pt-BR em `raw/7-coisas-que-desenvolvedores-fazem-em-2026-max-lorian.md`. Conteúdo: sete comportamentos hoje normalizados em times que usam agentes de codificação — (1) delegar ticket inteiro e sair, (2) rodar o mesmo problema em múltiplos modelos em paralelo (worktrees) e escolher o vencedor, (3) `AGENTS.md`/`CLAUDE.md`/`GEMINI.md`/`copilot-instructions.md` como documentação para uma "terceira audiência" não-humana, (4) agente com VM/desktop próprio (credenciais, rede, computer use), (5) GitHub Copilot revisando e aprovando PR de outro agente, (6) Cursor Automations rodando agentes por evento/schedule (Slack, Linear, PR, PagerDuty — números autorreportados de Faire e Amplitude), (7) projeto interno da OpenAI com ~1M linhas sob restrição de zero código escrito manualmente.
+
+**Skill carregada:** `tech-mentor-ai`, via Skill tool (`anthropic-skills:tech-mentor-ai`) — referências consultadas: `ai-assisted-engineering.md` (AI assistida em produção, guardrails, fluxos) e `ai/spec-driven-development-ai.md` (formatos de spec/`CLAUDE.md` como contrato para agentes), para calibrar nomenclatura de conceitos já existentes na wiki (era agêntica, autonomy slider, worktree, containment, loop engineering) em vez de criar duplicatas.
+
+**Arquivos criados:**
+- `raw/7-coisas-que-desenvolvedores-fazem-em-2026-max-lorian.md` — tradução pt-BR completa do artigo, com cabeçalho de atribuição (autor, fonte, data)
+- `wiki/sources/7-coisas-desenvolvedores-2026-max-lorian.md` — TL;DR, 7 key claims (uma por comportamento do artigo, cada uma com nota de confiança — a maioria dos números citados no artigo é autorrelato de empresas/OpenAI sem link para fonte primária), entidades, 9 conceitos tocados, 4 citações preservadas, 3 open questions
+
+**Páginas atualizadas:**
+- `wiki/concepts/era-agentica.md` — nova seção "Dar o Ticket e Ir Embora"; `source_count` 4 → 5
+- `wiki/concepts/autonomy-slider.md` — nova seção sobre o exemplo de volume máximo em produção; `source_count` 1 → 2
+- `wiki/concepts/worktree-paralelismo.md` — nova seção "Variante: Mesmo Problema, Múltiplos Modelos, Escolher o Vencedor"; `source_count` 13 → 14
+- `wiki/concepts/agents-md-vs-claude-md.md` — nova seção sobre a "terceira audiência" de documentação; `source_count` 1 → 2
+- `wiki/concepts/agent-containment.md` — nova seção "Máquina Própria como Padrão de Produto (2026)"; `source_count` 6 → 7
+- `wiki/concepts/code-review.md` — nova seção "IA Aprovando PR de IA (GitHub Copilot)"; `source_count` 18 → 19
+- `wiki/concepts/human-in-the-loop.md` — nova seção sobre o humano se deslocando de checkpoint para definidor de política; `source_count` 6 → 7
+- `wiki/concepts/loop-engineering.md` — nova seção "Produto Comercial do Loop Disparado por Evento: Cursor Automations", fechando lacuna teórica já prevista na página; `source_count` 10 → 11
+- `wiki/concepts/governanca-de-codigo-gerado-por-ia.md` — duas novas seções (zero código manual da OpenAI; gargalo migrando de produzir para escolher); `source_count` 8 → 9
+- `wiki/entities/cursor.md` — três novas seções (Automations, execução multi-modelo, desktop operável); `source_count` 1 → 2
+- `wiki/entities/codex-openai.md` — nova seção sobre o projeto interno da OpenAI; `source_count` 6 → 7
+- `wiki/entities/openai.md` — nova seção sobre o mesmo projeto interno; `source_count` 19 → 20
+- `wiki/index.md` — nova linha em Sources (topo da tabela)
+
+**Notas / open questions:** (1) **WebFetch bloqueado (HTTP 403) pelo Medium** — contornado via `r.jina.ai` como proxy leitor, mesma classe de solução já usada para outros bloqueios de scraping registrados na wiki. (2) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada em ingests anteriores; usada a skill real via Skill tool. (3) **Maioria dos números do artigo é autorrelato não verificável**: estatísticas de adoção da Faire e da Amplitude (Cursor Automations) e o claim de "~1M linhas sem código manual" da OpenAI não têm link para fonte primária no artigo original — registrado como confiança "média" em cada key claim correspondente, não como fato estabelecido. (4) **Fecha uma lacuna teórica prevista em [[wiki/concepts/loop-engineering]]**: a página já previa loop engineering "possivelmente disparado por evento" antes de qualquer fonte trazer um exemplo comercial — Cursor Automations é esse exemplo. (5) **Nenhuma contradição encontrada** com conteúdo já existente na wiki — a fonte é majoritariamente convergente com o material já indexado sobre era agêntica, worktree e governança, oferecendo formulações e exemplos novos em vez de claims conflitantes.
+
+---
+
+## [2026-09-21] ingest | O que é uma Finite State Machine? (Felipe Costa, Medium)
+
+**Fonte:** [[wiki/sources/o-que-e-uma-finite-state-machine]] — artigo introdutório (07/12/2023, Medium, `@felipecoast`), fornecido pelo usuário como URL colada. `WebFetch` retornou HTTP 403 (mesmo bloqueio anti-scraping do Medium já registrado em ingests anteriores), contornado via proxy leitor `r.jina.ai`. Artigo já estava em português — sem necessidade de tradução. Salvo em `raw/o-que-e-uma-finite-state-machine.md` conforme pedido explícito. Conteúdo: definição de FSM aplicada a Game Design via dois exemplos práticos (fantasmas de Pac-Man perseguindo/fugindo do jogador; uma turret hipotética patrulhando/atacando/reiniciando por revive), papel histórico de FSM como técnica clássica de IA de jogos, e um "easter egg" final sobre Hierarchical Finite State Machine (HFSM) — subestados aninhados dentro de cada estado de topo.
+
+**Skill carregada:** `cs-fundamentals`, via Skill tool (`anthropic-skills:cs-fundamentals`) — referência consultada: `references/computation-theory.md`, seção "Máquinas de Estado Finito (FSM)" (incluindo a nota "FSM vs Statechart (Harel)", usada para contextualizar HFSM).
+
+**Arquivos criados:**
+- `raw/o-que-e-uma-finite-state-machine.md` — cópia estruturada do artigo (já em pt-BR), com cabeçalho de atribuição
+- `wiki/sources/o-que-e-uma-finite-state-machine.md` — TL;DR, 4 key claims, 6 entidades/conceitos tocados, 3 open questions, 3 citações preservadas
+- `wiki/concepts/finite-state-machine.md` — primeira página de conceito dedicada a FSM na wiki (definição formal, exemplo de Pac-Man, papel histórico em IA de jogos, relação com Máquina de Turing/State Pattern/máquina de estados de UI/HFSM)
+- `wiki/concepts/hierarchical-finite-state-machine.md` — conceito novo (stub): HFSM como extensão hierárquica da FSM, com nota de equivalência a Statecharts (Harel) marcada como adição da skill, não da fonte
+- `wiki/entities/felipe-costa.md` — entidade nova (stub): autor do artigo
+
+**Páginas atualizadas:**
+- `wiki/concepts/maquina-de-turing.md` — corrigido link que apontava para [[wiki/concepts/maquina-de-estados-ui]] como se fosse a página geral de FSM (agora aponta para [[wiki/concepts/finite-state-machine]]); nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/state-pattern.md` — nova seção "Exemplo de domínio: IA de jogos" ligando State Pattern à implementação prática de uma FSM; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/maquina-de-estados-ui.md` — novo item de relação e nova linha em Key Sources, contrastando a aplicação de UI com a aplicação de Game Design; `source_count` 1 → 2
+- `wiki/index.md` — nova linha em Sources (topo da tabela), duas novas linhas em Concepts (`finite-state-machine`, `hierarchical-finite-state-machine`), nova linha em Entities (`felipe-costa`)
+
+**Notas / open questions:** (1) **WebFetch bloqueado (HTTP 403) pelo Medium** — contornado via `r.jina.ai`, mesma classe de solução já registrada em ingests anteriores. (2) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada; usada a skill real via Skill tool. (3) **Corrige um drift estrutural pré-existente**: [[wiki/concepts/maquina-de-turing]] linkava para [[wiki/concepts/maquina-de-estados-ui]] (uma página específica de UI/frontend) como se fosse a página geral de FSM, porque nenhuma página de conceito dedicada a FSM existia ainda — corrigido criando [[wiki/concepts/finite-state-machine]] e redirecionando o link. (4) **A fonte não distingue FSM das técnicas sucessoras em IA de jogos** (Behavior Trees, GOAP, Utility AI) nem cita Harel/Statecharts para o conceito de HFSM — ambas as lacunas foram marcadas como `[external]`/`[skill: cs-fundamentals]` nas páginas correspondentes, não preenchidas silenciosamente como se fossem afirmações da fonte. (5) **Nenhuma contradição encontrada** com conteúdo já existente na wiki — a fonte preenche uma lacuna estrutural (FSM sem página própria) em vez de contradizer algo já registrado.
+
+---
+
+## [2026-09-21] ingest | Building Projects in the AI Era for Software Engineers (Himanshu Singh, Medium)
+
+**Fonte:** [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — artigo publicado em 13/09/2026, fornecido pelo usuário como URL colada. `WebFetch` retornou HTTP 403 (mesmo bloqueio anti-scraping do Medium já registrado em ingests anteriores), contornado via proxy leitor `r.jina.ai`. Artigo já estava em inglês, sem necessidade de tradução — salvo em `raw/building-projects-in-the-ai-era-for-software-engineers.md` conforme pedido explícito do usuário. Conteúdo: relato de Himanshu Singh, engenheiro full-stack Web3, sobre construir dois projetos (agentfriendlycode.com, usetu.la) inteiramente via IA sem ler ou escrever código manualmente — cinco práticas: perguntas extensas antes de implementar, checklist de verificação pré-commit delegado ao agente, reinício de sessão ao notar alucinação, referência visual (screenshot) para UI, e agente único em vez de swarm.
+
+**Skill carregada:** `tech-mentor-ai`, via Skill tool (`anthropic-skills:tech-mentor-ai`) — referência consultada: `references/ai-assisted-engineering.md`.
+
+**Arquivos criados:**
+- `raw/building-projects-in-the-ai-era-for-software-engineers.md` — cópia estruturada do artigo (inglês original)
+- `wiki/sources/building-projects-in-the-ai-era-himanshu-singh.md` — TL;DR, 5 key claims, 9 conceitos tocados, 3 open questions, 4 citações preservadas
+- `wiki/entities/himanshu-singh.md` — entidade nova (stub): autor do artigo
+
+**Páginas atualizadas:**
+- `wiki/concepts/prompt-engineering.md` — nova seção sobre perguntas extensas antes de implementação (brainstorm → user flow → segurança → arquitetura); nova linha em Fontes; `source_count` 13 → 14
+- `wiki/concepts/vibe-coding.md` — nova seção sobre checklist delegado ao agente como terceira via entre leitura humana e gate mecânico via CI; nova linha em Key Sources; `source_count` 18 → 19
+- `wiki/concepts/alucinacao-llm.md` — nova seção sobre reinício heurístico de sessão (sem threshold técnico); nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/concepts/degradacao-de-contexto.md` — nova seção sobre gatilho qualitativo vs. threshold de tokens para `/clear`; nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/concepts/human-in-the-loop.md` — nova seção sobre checklist verbalizado no prompt substituindo o checkpoint humano; nova linha em Key Sources; `source_count` 7 → 8
+- `wiki/concepts/governanca-de-codigo-gerado-por-ia.md` — nova seção sobre julgamento deslocado para perguntas upfront + checklist, sem revisão pós-geração; nova linha em Key Sources; `source_count` 9 → 10
+- `wiki/concepts/autonomy-slider.md` — nova seção sobre volume alto no slider com critério explícito (não "sem critério"); nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/subagentes.md` — nova seção com contraponto anedótico (agente único suficiente para baixo volume); nova linha em Key Sources; `source_count` 9 → 10
+- `wiki/concepts/code-review.md` — nova seção sobre checklist verbalizado no prompt como terceira via em projeto solo; nova linha em Key Sources; `source_count` 19 → 20
+- `wiki/index.md` — nova linha em Sources (topo da tabela) e nova linha em Entities (`himanshu-singh`)
+
+**Notas / open questions:** (1) **WebFetch bloqueado (HTTP 403) pelo Medium** — contornado via `r.jina.ai`, mesma classe de solução já registrada em ingests anteriores. (2) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada; usada a skill real via Skill tool. (3) **Todas as claims da fonte são autorrelato não verificável** — nenhuma métrica comparativa, incidente documentado ou teste controlado; cada key claim foi marcada com confiança "média" ou "baixa" correspondente, exceto o padrão de screenshot-como-referência (confiança "alta"), que já tinha reforço independente em [[wiki/concepts/prompt-engineering]]. (4) **Nenhuma contradição encontrada** com conteúdo já existente na wiki — a fonte é um caso concreto e convergente com múltiplos conceitos já centrais (governança, HITL, degradação de contexto, autonomy slider), sem introduzir claim que contradiga algo já registrado. Uma tensão aberta (não contradição) foi registrada nas Perguntas Abertas do source page: o checklist delegado ao agente nunca foi comparado, na fonte, contra revisão humana equivalente.
+
+---
+
+## [2026-09-21] ingest | How to Deal With Company Politics as an Engineering Leader (Gregor Ojstersek, newsletter Engineering Leadership)
+
+**Fonte:** [[wiki/sources/como-lidar-com-politica-empresarial-lideranca-engenharia]] — newsletter publicada em 14/09/2026, fornecida pelo usuário como URL colada (Substack). `WebFetch` retornou HTTP 403 (mesmo bloqueio anti-scraping já registrado para Medium, agora também observado no domínio da newsletter), contornado via proxy leitor `r.jina.ai`. Artigo original em inglês — **traduzido integralmente para português** (diferente do ingest anterior desta sessão, que manteve o texto em inglês por já estar alinhado à convenção observada em alguns raws técnicos; revisando a convenção predominante do repositório — ex.: `filosofia-do-design-de-software-introducao.md` — a tradução para PT-BR é o padrão real usado em `raw/`, corrigido aqui). Removido bloco publicitário de patrocinador (webinar "Unblocked") e rodapé de redes sociais/assinatura paga, mantendo apenas o conteúdo substantivo do artigo. Salvo em `raw/como-lidar-com-politica-empresarial-lideranca-engenharia.md`. Conteúdo: relato pessoal do autor (13+ anos de indústria) sobre navegar política organizacional na transição de engenheiro sênior para Team Lead e depois Engineering Manager — diagrama de influência vs. organograma, relacionamento/credibilidade como redutores de risco percebido em propostas de mudança, distinção entre política saudável e tóxica, e um caso pessoal de overreach (tentar mudar processo fora do próprio escopo) que gerou backlash.
+
+**Skill carregada:** `tech-mentor-leadership`, via Skill tool (`anthropic-skills:tech-mentor-leadership`) — referência consultada: `references/technical-strategy.md`, seção "Navigating Org Politics".
+
+**Arquivos criados:**
+- `raw/como-lidar-com-politica-empresarial-lideranca-engenharia.md` — tradução integral do artigo (inglês → português), com remoção de conteúdo patrocinado/rodapé
+- `wiki/sources/como-lidar-com-politica-empresarial-lideranca-engenharia.md` — TL;DR, 4 key claims, 6 conceitos/entidades tocados, 3 open questions, 4 citações preservadas (original em inglês + tradução)
+- `wiki/concepts/politica-organizacional.md` — primeira página de conceito dedicada a política organizacional/navigating politics na wiki (diagrama de influência, relacionamento como redutor de risco, política boa vs. ruim, overreach sem capital político, cultura tóxica raramente muda de dentro)
+- `wiki/entities/gregor-ojstersek.md` — entidade nova (stub): autor da newsletter
+
+**Páginas atualizadas:**
+- `wiki/concepts/habilidade-de-lidar-com-pessoas.md` — nova seção aplicando a tese 85/15 a decisões organizacionais (não só conexão pessoal); nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/comunicacao-persuasiva.md` — nova seção sobre construir coalizão/relacionamento antes de propor, complementar ao managing up já documentado; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/entities/dale-carnegie.md` — nova linha em Key Sources aplicando a tese de confiança genuína à redução de risco percebido em mudanças organizacionais; `source_count` 2 → 3
+- `wiki/concepts/extreme-ownership.md` — nova seção de contraponto: ownership fora do próprio escopo sem capital político gera backlash, não mudança; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/concepts/inteligencia-emocional.md` — nova seção sobre não reproduzir hábitos tóxicos de uma cultura política ruim; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/index.md` — nova linha em Sources (topo da tabela), nova linha em Concepts (Carreira & Soft Skills), nova linha em Entities (`gregor-ojstersek`)
+
+**Notas / open questions:** (1) **WebFetch bloqueado (HTTP 403)** — desta vez no domínio da newsletter Substack, não Medium; mesma classe de bloqueio anti-scraping já registrada em múltiplos ingests anteriores, contornado com `r.jina.ai`. (2) **Correção de convenção de tradução**: o ingest anterior desta sessão (Himanshu Singh, Medium) manteve o texto em inglês no `raw/`, mas ao revisar `filosofia-do-design-de-software-introducao.md` (tradução de Ousterhout já existente no repositório) ficou claro que o padrão real do repositório é traduzir para PT-BR — este ingest segue essa convenção corrigida. (3) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada; usada a skill real via Skill tool. (4) **Claims majoritariamente autorrelato**: nenhuma das 4 key claims tem dado externo verificável — todas marcadas com confiança "baixa" a "média", exceto o caso pessoal específico de overreach (relatado como experiência nomeada do próprio autor, confiança "alta" como relato individual, mas não generalizável sem contraponto). (5) **Nenhuma contradição encontrada** com conteúdo já existente na wiki — a fonte preenche uma lacuna estrutural (política organizacional/navigating politics não tinha página de conceito dedicada, apesar de já aparecer como seção em `references/technical-strategy.md`) e reforça, com um ângulo novo, teses já documentadas (85/15, Dale Carnegie, managing up, extreme ownership, inteligência emocional).
+
+---
+
+## [2026-09-21] ingest | Test Discovery (xUnitPatterns.com, Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/test-discovery-xunitpatterns]] — verbete da categoria "XUnit Basics" do site xUnitPatterns.com, colado pelo usuário como URL (`http://xunitpatterns.com/Test%20Discovery.html`). Página em inglês, baixada via `curl` (WebFetch teria sumarizado com modelo pequeno; preferiu-se leitura completa do HTML para tradução fiel) e **traduzida integralmente para português**, seguindo a convenção já usada nas demais entradas do mesmo cluster xUnitPatterns.com em `raw/` (ex.: `testcase-object-xunitpatterns.md`). Salvo em `raw/test-discovery-xunitpatterns.md`. Conteúdo: define **Test Discovery** — o mecanismo pelo qual o Test Automation Framework descobre automaticamente Test Methods e Test Suite Objects via reflection ou compile-time knowledge — desdobrado em duas variações (**Testcase Class Discovery**, **Test Method Discovery**), com seis exemplos de código (C++/CppUnit "pré-Discovery" e via macro de compilação, Java/JUnit por nomenclatura, C#/NUnit via attributes, Ruby via convenção de diretório).
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — referência consultada: `references/test-patterns.md` (seção TDD/xUnit).
+
+**Arquivos criados:**
+- `raw/test-discovery-xunitpatterns.md` — tradução integral do verbete (inglês → português)
+- `wiki/sources/test-discovery-xunitpatterns.md` — TL;DR, 7 afirmações centrais, 6 key claims, 5 entidades/6 conceitos tocados, 4 open questions, 5 citações preservadas
+- `wiki/concepts/test-discovery.md` — página de conceito central e nova, fechando lacuna já sinalizada em três páginas existentes
+- `wiki/concepts/test-enumeration.md` — stub novo: a alternativa manual, citada extensivamente por contraste mas ainda sem verbete próprio no site
+- `wiki/concepts/marker-interface.md` — stub novo: uma das quatro soluções de Testcase Class Discovery [PJV1]
+- `wiki/concepts/rename-method.md` — stub novo: refatoração de Fowler recomendada na migração para descoberta por nomenclatura
+- `wiki/entities/cppunit.md` — entidade nova (stub): framework C++ usado como exemplo central dos dois lados de Test Discovery
+
+**Páginas atualizadas:**
+- `wiki/concepts/test-runner.md` — nova seção fechando "como o Test Runner sabe quais testes rodar"; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/testcase-object.md` — lacuna "Test Discovery/Test Enumeration não detalhados" fechada; nova linha em Key Sources; `source_count` 6 → 7
+- `wiki/concepts/test-suite-object.md` — nova seção "Discovery vs. Enumeration" substitui a lacuna antiga; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/test-method.md` — nova seção sobre como o framework reconhece um Test Method (nomenclatura vs. attribute/annotation); nova linha em Key Sources; `source_count` 5 → 6
+- `wiki/concepts/reflection.md` — nova seção com o segundo uso concreto (Test Discovery em runtime) e a exceção do compile-time knowledge; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/sources/testcase-class-xunitpatterns.md` — nota de atualização registrando que a lacuna de Testcase Class/Test Method Discovery foi fechada por esta ingestão
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources; `source_count` 53 → 54
+- `wiki/entities/junit.md` — nova seção sobre a transição de Test Method Discovery por nomenclatura (JUnit 3) para annotation (JUnit 4+); nova linha em Key Sources; `source_count` 9 → 10
+- `wiki/entities/nunit.md` — nova seção com exemplos concretos de `[Test]`/`[TestFixture]`; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/entities/martin-fowler.md` — nova entrada na lista de termos/refatorações citando Rename Method; nova linha em Key Sources; `source_count` 32 → 33
+- `wiki/index.md` — nova linha em Sources (topo da tabela), quatro novas linhas em Concepts, uma nova linha em Entities (`cppunit`)
+
+**Notas / open questions:** (1) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada em ingests anteriores; usada a skill real via Skill tool e os paths reais do ambiente atual. (2) **Test Enumeration segue sem fonte primária isolada** — citada extensivamente por contraste nesta fonte (inclusive as sub-variações Test Method/Suite Enumeration), mas o verbete dedicado (`Test Enumeration.html`) ainda não foi ingerido; resolveria também **Test Suite Factory**, cujo link no site aponta para essa mesma página, lacuna já registrada desde [[wiki/sources/test-case-xunitpatterns]]. (3) **Tensão não resolvida pela própria fonte**: a definição de "How It Works" cita reflection como o mecanismo de Test Discovery, mas o próprio exemplo da macro `CPPUNIT_TEST_SUITE_REGISTRATION` do CppUnit resolve a mesma descoberta em tempo de compilação, sem reflection — registrado como observação da wiki, não como fato explicitamente nomeado pela fonte. (4) **Testcase Superclass** segue sem página própria, citada de passagem tanto aqui quanto em [[wiki/sources/testcase-class-xunitpatterns]]. (5) **Nenhuma contradição encontrada** com conteúdo já existente na wiki — a fonte fecha, de forma consistente, três lacunas estruturais já sinalizadas explicitamente em ingestões anteriores do mesmo cluster xUnitPatterns.com.
+
+---
+
+## [2026-09-21] ingest | Test Suite (xUnitPatterns.com, Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/test-suite-xunitpatterns]] — verbete de Glossário do site xUnitPatterns.com, colado pelo usuário como URL (`http://xunitpatterns.com/test%20suite.html`). Página em inglês, baixada via `curl` (mesma preferência das ingestões anteriores do cluster, para leitura completa em vez de sumarização por modelo pequeno) e **traduzida integralmente para português**, seguindo a convenção do restante do cluster. Salvo em `raw/test-suite-xunitpatterns.md`. Conteúdo: verbete de uma única frase definindo **test suite** — "a way to name a collection of tests that you want to run together" — sem detalhar mecânica de montagem, deixada a cargo dos verbetes técnicos de "XUnit Basics" já ingeridos.
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — tópico não tem seção dedicada em nenhum arquivo de `references/` (termo de glossário básico); aplicado conhecimento base da skill conforme protocolo de fallback do próprio `SKILL.md`.
+
+**Arquivos criados:**
+- `raw/test-suite-xunitpatterns.md` — tradução integral do verbete (inglês → português)
+- `wiki/sources/test-suite-xunitpatterns.md` — TL;DR, 1 afirmação central, 2 key claims, 1 entidade/1 conceito tocado, 2 open questions, 1 citação preservada
+
+**Páginas atualizadas:**
+- `wiki/concepts/test-suite-object.md` — nova seção sobre a origem terminológica informal do termo; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources; `source_count` 54 → 55
+- `wiki/index.md` — nova linha em Sources (topo da tabela)
+
+**Notas / open questions:** (1) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada em ingests anteriores; usada a skill real localizada em `/home/gabriel-martins/Documentos/skills/` via Skill tool. (2) **Fonte extremamente curta** (uma única frase de definição) — número de páginas tocadas proporcionalmente menor que ingestões anteriores do cluster, já que não há conteúdo técnico novo além da própria definição isolada. (3) **Test Suite Factory** segue sem fonte primária isolada (mesma lacuna já registrada desde [[wiki/sources/test-case-xunitpatterns]]) — o link original do site para esse termo aponta para `Test Enumeration.html#Test Suite Factory`, categoria ainda não ingerida. (4) **Nenhuma contradição encontrada** com conteúdo já existente na wiki — a fonte fecha, de forma consistente e sem tensão, a lacuna terminológica citada de passagem nas três fontes já ingeridas do mesmo cluster.
+
+---
+
+## [2026-09-21] ingest | Test Result (xUnitPatterns.com, Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/test-result-xunitpatterns]] — verbete de Glossário do site xUnitPatterns.com, colado pelo usuário como URL (`http://xunitpatterns.com/test%20result.html`). Página em inglês, baixada via `curl` e **traduzida integralmente para português**, seguindo a convenção do restante do cluster. Salvo em `raw/test-result-xunitpatterns.md`. Conteúdo: verbete de uma única frase definindo **test result** — "a test or test suite can be run many times, each with a different test result" — estabelecendo que o resultado é produto de cada execução, não propriedade fixa do teste ou da suíte.
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — tópico não tem seção dedicada em nenhum arquivo de `references/` (termo de glossário básico); aplicado conhecimento base da skill conforme protocolo de fallback do próprio `SKILL.md`.
+
+**Arquivos criados:**
+- `raw/test-result-xunitpatterns.md` — tradução integral do verbete (inglês → português)
+- `wiki/sources/test-result-xunitpatterns.md` — TL;DR, 2 afirmações centrais, 2 key claims, 2 entidades/1 conceito tocado, 2 open questions, 1 citação preservada
+
+**Páginas atualizadas:**
+- `wiki/concepts/test-suite-object.md` — nova frase fechando o lado do ciclo de vida referente à execução/resultado; nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources; `source_count` 55 → 56
+- `wiki/entities/junit.md` — nova frase ligando a prática histórica do red/green bar ao conceito formal de test result; nova linha em Key Sources; `source_count` 10 → 11
+- `wiki/entities/c3-project.md` — nova frase ligando a prática do time do C3 (colorir a janela de build) ao conceito formal de test result; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/index.md` — nova linha em Sources (topo da tabela)
+
+**Notas / open questions:** (1) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada em ingests anteriores; usada a skill real localizada em `/home/gabriel-martins/Documentos/skills/` via Skill tool. (2) **Fonte extremamente curta** (uma única frase de definição), mesmo perfil do ingest anterior (`test suite`) — número de páginas tocadas proporcional ao conteúdo novo real. (3) **Taxonomia de resultados incompleta**: o índice de Glossário do site lista **test success**, **test failure**, **test error** e **test run** como termos irmãos ainda sem verbete isolado na wiki — candidatos naturais para fechar a taxonomia completa de execução/resultado do cluster xUnitPatterns.com. (4) **Nenhuma contradição encontrada** com conteúdo já existente na wiki — a fonte formaliza, sem tensão, um conceito já presente implicitamente na prática histórica do red/green bar documentada em [[wiki/entities/c3-project]] e [[wiki/entities/junit]].
+
+---
+
+## [2026-09-21] ingest | Test Run (xUnitPatterns.com, Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/test-run-xunitpatterns]] — verbete de Glossário do site xUnitPatterns.com, colado pelo usuário como URL (`http://xunitpatterns.com/test%20run.html`). Página em inglês, baixada via `curl` e **traduzida integralmente para português**. Salvo em `raw/test-run-xunitpatterns.md`. Conteúdo: verbete de uma única frase, **idêntico ao de** [[wiki/sources/test-result-xunitpatterns]] — "a test or test suite can be run many times, each with a different test result" — diferindo apenas em qual termo recebe o link de destaque na própria frase do site original.
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — tópico não tem seção dedicada em nenhum arquivo de `references/` (termo de glossário básico); aplicado conhecimento base da skill conforme protocolo de fallback do próprio `SKILL.md`.
+
+**Arquivos criados:**
+- `raw/test-run-xunitpatterns.md` — tradução integral do verbete (inglês → português)
+- `wiki/sources/test-run-xunitpatterns.md` — TL;DR, 2 afirmações centrais, 2 key claims, 1 entidade/1 conceito tocado, 2 open questions, 1 citação preservada
+
+**Páginas atualizadas:**
+- `wiki/sources/test-result-xunitpatterns.md` — open question fechada parcialmente, registrando o cruzamento com este novo verbete (texto idêntico)
+- `wiki/concepts/test-suite-object.md` — nova frase nomeando formalmente o evento de execução; nova linha em Key Sources; `source_count` 5 → 6
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources; `source_count` 56 → 57
+- `wiki/index.md` — nova linha em Sources (topo da tabela)
+
+**Notas / open questions:** (1) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada em ingests anteriores; usada a skill real localizada em `/home/gabriel-martins/Documentos/skills/` via Skill tool. (2) **Duplicação literal de texto entre verbetes**: primeira vez que dois verbetes de Glossário do mesmo catálogo têm corpo 100% idêntico na wiki — achado registrado como Key Claim na própria fonte, não uma anomalia a corrigir. (3) **Taxonomia de resultados ainda incompleta**: **test success**, **test failure** e **test error** seguem sem verbete isolado ingerido — mesma lacuna já sinalizada no ingest anterior (`test result`), agora parcialmente reduzida. (4) **Nenhuma contradição encontrada** com conteúdo já existente na wiki.
+
+---
+
+## [2026-09-21] ingest | Production Bugs (xUnitPatterns.com, Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/production-bugs-xunitpatterns]] — página da categoria "Test Smells" (Project Smells) do site xUnitPatterns.com, colada pelo usuário como URL (`http://xunitpatterns.com/Production%20Bugs.html#Lost%20Test`). Página em inglês, baixada via `curl` e **traduzida integralmente para português**, seguindo a convenção do cluster. Salva em `raw/production-bugs-xunitpatterns.md`. Conteúdo: a árvore completa de causas de bugs em produção — **Infrequently Run Tests** e **Untested Code** (que se ramifica em **Missing Unit Test** e **Lost Test**), mais **Untested Requirement** e **Neverfail Test** documentadas em detalhe — cada sub-causa com Sintomas/Causa Raiz/Possível Solução própria, incluindo dois exemplos de código Java (Untested Code, Untested Requirement com bug real no log).
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — tópico não tem seção dedicada em nenhum arquivo de `references/` (test smell clássico do glossário xUnitPatterns.com); aplicado conhecimento base da skill conforme protocolo de fallback do próprio `SKILL.md`.
+
+**Arquivos criados:**
+- `raw/production-bugs-xunitpatterns.md` — tradução integral do artigo (inglês → português)
+- `wiki/sources/production-bugs-xunitpatterns.md` — TL;DR, 5 afirmações centrais, 3 key claims, 3 entidades/7 conceitos tocados, 3 open questions, 3 citações preservadas
+- `wiki/concepts/production-bugs.md` — stub novo: página central do test smell, com as cinco sub-causas resumidas (Lost Test, Missing Unit Test, Untested Code, Untested Requirement, Neverfail Test)
+
+**Páginas atualizadas:**
+- `wiki/concepts/test-discovery.md` — nova seção "Consequência quando falha: Lost Test"; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/test-suite-object.md` — nova seção sobre AllTests Suite/Suite of Suites como pontos de falha; nova linha em Key Sources; `source_count` 6 → 7
+- `wiki/concepts/erratic-test.md` — nova seção relacionando Chained Tests/Interacting Tests e Unrepeatable Test; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/test-method.md` — nova seção catalogando as formas concretas de perder um Test Method; nova linha em Key Sources; `source_count` 6 → 7
+- `wiki/concepts/testcase-object.md` — nova seção sobre o caso em que o objeto nunca chega a ser criado (Lost Test); nova linha em Key Sources; `source_count` 7 → 8
+- `wiki/concepts/code-smells.md` — nova seção ligando a taxonomia de Code Smells (Fowler) à taxonomia irmã de Test/Project Smells (Meszaros); nova linha em Key Sources e em Relacionado; `source_count` 1 → 2
+- `wiki/concepts/ci-cd.md` — nova seção sobre o gate de CI contra Lost Test (falhar build acima de limiar de testes ignorados); nova linha em Key Sources; `source_count` 11 → 12
+- `wiki/entities/nunit.md` — nova seção sobre `[Ignore]` como causa concreta de Lost Test; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources; `source_count` 57 → 58
+- `wiki/index.md` — nova linha em Sources (topo da tabela), nova linha em Concepts (Testes & Qualidade)
+
+**Notas / open questions:** (1) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada em ingests anteriores; usada a skill real localizada em `/home/gabriel-martins/Documentos/skills/` via Skill tool. (2) **Chained Tests** e **Humble Object/Humble Executable** seguem sem página própria, citados de passagem como soluções/causas relacionadas — candidatos a stub futuro. (3) **Nenhuma contradição encontrada** com conteúdo já existente na wiki — a fonte fecha lacunas já sinalizadas em [[wiki/concepts/test-discovery]] e [[wiki/concepts/test-suite-object]] sobre "o que acontece quando a montagem da suíte falha", e complementa (sem contradizer) a taxonomia de Test Doubles/Behavior Verification já documentada via [[wiki/entities/gerard-meszaros]] na explicação de Untested Requirement.
+
+---
+
+## [2026-09-21] ingest | Continuous Integration (xUnitPatterns.com, Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/continuous-integration-xunitpatterns]] — verbete de Glossário do site xUnitPatterns.com, colado pelo usuário como URL (`http://xunitpatterns.com/continuous%20integration.html`). Página em inglês, baixada via `curl` e **traduzida integralmente para português**, seguindo a convenção do cluster. Salva em `raw/continuous-integration-xunitpatterns.md`. Conteúdo: verbete curto definindo **continuous integration** do ponto de vista de testes — integração de código a cada poucas horas/dias, build automatizado por check-in rodando todos os testes, critério binário de "build falho" (qualquer teste falhando reprova o build) e regra de prioridade stop-the-line (consertar o build vira topo da fila).
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — tópico não tem seção dedicada em nenhum arquivo de `references/` (termo de glossário básico do catálogo); aplicado conhecimento base da skill conforme protocolo de fallback do próprio `SKILL.md`.
+
+**Arquivos criados:**
+- `raw/continuous-integration-xunitpatterns.md` — tradução integral do verbete (inglês → português)
+- `wiki/sources/continuous-integration-xunitpatterns.md` — TL;DR, 4 afirmações centrais, 3 key claims, 2 entidades/2 conceitos tocados, 2 open questions, 2 citações preservadas
+
+**Páginas atualizadas:**
+- `wiki/concepts/ci-cd.md` — nova seção "Continuous Integration: definição primária centrada em teste (Meszaros)", contrastando com a definição de Continuous Delivery de Fowler já presente; nova linha em Key Sources; `source_count` 12 → 13
+- `wiki/concepts/production-bugs.md` — nova seção fechando a definição de "build falho" que sustenta o gate de CI contra Lost Test; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources; `source_count` 58 → 59
+- `wiki/index.md` — nova linha em Sources (topo da tabela)
+
+**Notas / open questions:** (1) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada em ingests anteriores; usada a skill real localizada em `/home/gabriel-martins/Documentos/skills/` via Skill tool. (2) **Fonte curta** (um único parágrafo de definição) — número de páginas tocadas proporcional ao conteúdo novo real, concentrado em [[wiki/concepts/ci-cd]] e [[wiki/concepts/production-bugs]], os dois pontos onde o termo já era citado sem fonte primária isolada. (3) **Nenhuma contradição encontrada** com conteúdo já existente na wiki — a definição de Meszaros (centrada em teste) e a de Fowler (centrada em releasability), já presentes em [[wiki/concepts/ci-cd]], são complementares: escopos diferentes do mesmo termo, não versões conflitantes.
+
+---
+
+## [2026-09-21] ingest | Marker Interface (xUnitPatterns.com, Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/marker-interface-xunitpatterns]] — verbete da categoria "External Patterns" do site xUnitPatterns.com, colado pelo usuário como URL (`http://xunitpatterns.com/Marker%20Interface.html`). Página em inglês, baixada via `curl` e **traduzida integralmente para português**, seguindo a convenção do cluster. Salva em `raw/marker-interface-xunitpatterns.md`. Conteúdo: verbete curto definindo o padrão **Marker Interface** — interface vazia usada para indicar um atributo booleano semântico de uma classe, útil em classes utilitárias que precisam checar algo sobre objetos sem assumir uma classe concreta específica. Diferente de outras entradas de External Patterns já ingeridas (Command, Decorator), esta não cita o [GOF] como origem — é formulação própria de Meszaros.
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — tópico não tem seção dedicada em nenhum arquivo de `references/` (padrão externo citado de passagem no glossário); aplicado conhecimento base da skill conforme protocolo de fallback do próprio `SKILL.md`.
+
+**Arquivos criados:**
+- `raw/marker-interface-xunitpatterns.md` — tradução integral do verbete (inglês → português)
+- `wiki/sources/marker-interface-xunitpatterns.md` — TL;DR, 3 afirmações centrais, 3 key claims, 1 entidade/2 conceitos tocados, 2 open questions, 2 citações preservadas
+
+**Páginas atualizadas:**
+- `wiki/concepts/marker-interface.md` — reescrita: de stub (uma única menção de passagem) para página estável com fonte primária dedicada; `status` stub → stable; `source_count` 1 → 2
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources; `source_count` 59 → 60
+- `wiki/index.md` — nova linha em Sources (topo da tabela)
+
+**Notas / open questions:** (1) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada em ingests anteriores; usada a skill real localizada em `/home/gabriel-martins/Documentos/skills/` via Skill tool. (2) **Fonte curta e sem exemplo de código** — ao contrário de outras entradas de External Patterns, não há exemplo concreto nem menção a marker interfaces reais do JDK (`Serializable`, `Cloneable`); o contraste Marker Interface vs. annotations como mecanismo de marcação (relevante pós-Java 5) segue sem fonte que o discuta diretamente. (3) **Nenhuma contradição encontrada** com conteúdo já existente na wiki — a fonte confirma, sem tensão, a leitura já registrada em [[wiki/concepts/marker-interface]] a partir de [[wiki/sources/test-discovery-xunitpatterns]].
+
+---
+
+## [2026-09-21] ingest | Class Attribute (xUnitPatterns.com, Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/class-attribute-xunitpatterns]] — verbete de Glossário do site xUnitPatterns.com, colado pelo usuário como URL (`http://xunitpatterns.com/class%20attribute.html`). Página em inglês, baixada via `curl` e **traduzida integralmente para português**, seguindo a convenção do cluster. Salva em `raw/class-attribute-xunitpatterns.md`. Conteúdo: verbete curto isolando o sentido "annotation de classe" já registrado em [[wiki/sources/attribute-xunitpatterns]] — um attribute colocado numa classe no código-fonte para dizer ao compilador/runtime que essa classe é "especial"; em xUnit, usado para indicar que uma classe é uma Testcase Class.
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — tópico não tem seção dedicada em nenhum arquivo de `references/` (termo de glossário básico do catálogo); aplicado conhecimento base da skill conforme protocolo de fallback do próprio `SKILL.md`.
+
+**Arquivos criados:**
+- `raw/class-attribute-xunitpatterns.md` — tradução integral do verbete (inglês → português)
+- `wiki/sources/class-attribute-xunitpatterns.md` — TL;DR, 2 afirmações centrais, 3 key claims, 2 entidades/1 conceito tocado, 2 open questions, 1 citação preservada
+
+**Páginas atualizadas:**
+- `wiki/concepts/test-discovery.md` — nomeia formalmente o termo genérico "class attribute" na seção de Testcase Class Discovery; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/entities/nunit.md` — complementa a seção existente sobre `[TestFixture]`/`[Test]` com a definição formal do termo genérico; nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/sources/attribute-xunitpatterns.md` — open question fechada, registrando que "class attribute" ganhou fonte primária isolada; "method attribute" segue como lacuna irmã
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources; `source_count` 60 → 61
+- `wiki/index.md` — nova linha em Sources (topo da tabela)
+
+**Notas / open questions:** (1) **Path de skills/repo do CLAUDE.md não corresponde a este ambiente** (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — mesma situação já registrada em ingests anteriores; usada a skill real localizada em `/home/gabriel-martins/Documentos/skills/` via Skill tool. (2) **"method attribute"** segue no índice de Glossário do site como termo irmão ainda não ingerido isoladamente — completaria o par genérico/específico ao lado de class attribute. (3) **Fonte muito curta** (duas frases) — número de páginas tocadas proporcional ao conteúdo novo real, concentrado nos pontos onde `[TestFixture]` já era citado sem o termo genérico nomeado. (4) **Nenhuma contradição encontrada** com conteúdo já existente na wiki — a fonte fecha, sem tensão, uma lacuna terminológica já sinalizada em [[wiki/sources/attribute-xunitpatterns]].
+
+---
+
+## [2026-09-21] ingest | Method Attribute (xUnitPatterns.com, Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/method-attribute-xunitpatterns]] — verbete de Glossário do site xUnitPatterns.com, colado pelo usuário como URL (`http://xunitpatterns.com/method%20attribute.html`). Página em inglês, baixada via `curl` e **traduzida integralmente para português**, seguindo a convenção do cluster. Salva em `raw/method-attribute-xunitpatterns.md`. Conteúdo: verbete curto isolando o sentido "annotation de método" já registrado em [[wiki/sources/attribute-xunitpatterns]] — um attribute colocado num método no código-fonte para dizer ao compilador/runtime que esse método é "especial"; em xUnit, usado para indicar que um método é um Test Method. Fecha exatamente a lacuna deixada em aberto pela ingestão anterior de [[wiki/sources/class-attribute-xunitpatterns]], que já flagava "method attribute" como termo irmão ainda não ingerido.
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — tópico não tem seção dedicada em nenhum arquivo de `references/` (termo de glossário básico do catálogo); aplicado conhecimento base da skill conforme protocolo de fallback do próprio `SKILL.md`.
+
+**Arquivos criados:**
+- `raw/method-attribute-xunitpatterns.md` — tradução integral do verbete (inglês → português)
+- `wiki/sources/method-attribute-xunitpatterns.md` — TL;DR, 2 afirmações centrais, 3 key claims, 2 entidades/1 conceito tocado, 2 open questions, 1 citação preservada
+
+**Páginas atualizadas:**
+- `wiki/concepts/test-discovery.md` — nomeia formalmente o termo genérico "method attribute" na seção de Test Method Discovery; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/concepts/test-method.md` — linka o termo genérico "method attribute" já citado de passagem na seção de reconhecimento de Test Methods; nova linha em Key Sources; `source_count` 7 → 8
+- `wiki/entities/nunit.md` — complementa a seção existente sobre `[Test]`/`[TestFixture]` com a definição formal do termo genérico, espelhando class attribute; nova linha em Key Sources; `source_count` 5 → 6
+- `wiki/sources/class-attribute-xunitpatterns.md` — open question fechada, registrando que "method attribute" ganhou fonte primária isolada; `source_count` 0 → 1
+- `wiki/sources/attribute-xunitpatterns.md` — open question fechada: os dois pares (class attribute / method attribute) agora estão completos
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources; `source_count` 61 → 62
+- `wiki/index.md` — nova linha em Sources (topo da tabela)
+
+**Notas / open questions:** (1) Mesmo path mismatch do CLAUDE.md já registrado em ingests anteriores (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`) — sem impacto na execução, usada a skill real via Skill tool. (2) Com esta ingestão, os dois pares terminológicos do glossário ficam fechados na wiki: annotation/attribute (genérico) e class attribute/method attribute (com escopo) — nenhuma lacuna irmã pendente identificada neste cluster. (3) Fonte muito curta (duas frases), estrutura idêntica à de class attribute apenas trocando classe→método — número de páginas tocadas proporcional ao conteúdo novo real. (4) Nenhuma contradição encontrada com conteúdo já existente na wiki.
+
+---
+
+## [2026-09-21] ingest | Rename Method (xUnitPatterns.com — catálogo de Gerard Meszaros, conteúdo atribuído a Martin Fowler)
+
+**Fonte:** [[wiki/sources/rename-method-xunitpatterns]] — verbete da categoria "Code Refactorings" do site xUnitPatterns.com, colado pelo usuário como URL (`http://xunitpatterns.com/Rename%20Method.html`). Página em inglês, baixada via `curl` e **traduzida integralmente para português**, seguindo a convenção do cluster. Salva em `raw/rename-method-xunitpatterns.md`. Conteúdo: verbete curto — problema ("o nome de um método não revela seu propósito"), solução ("mude o nome do método"), mais uma citação direta de Fowler sobre o risco de métodos pequenos demais dificultarem a leitura do código. Terceiro verbete consecutivo do padrão "host ≠ autor" já registrado para [[wiki/sources/extract-method-xunitpatterns]] e [[wiki/sources/extract-interface-xunitpatterns]]: Meszaros hospeda, Fowler é o autor do conteúdo (*Refactoring: Improving the Design of Existing Software*).
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — mesma sessão da ingestão anterior de "method attribute"; tópico não tem seção dedicada em `references/` (refatoração genérica, fora do escopo específico de teste); aplicado conhecimento base da skill conforme protocolo de fallback do próprio `SKILL.md`.
+
+**Arquivos criados:**
+- `raw/rename-method-xunitpatterns.md` — tradução integral do verbete (inglês → português)
+- `wiki/sources/rename-method-xunitpatterns.md` — TL;DR, 5 afirmações centrais, 3 key claims, 2 entidades/3 conceitos tocados, 3 open questions, 3 citações preservadas
+
+**Páginas atualizadas:**
+- `wiki/concepts/rename-method.md` — stub → **stable**: fonte primária dedicada substitui a citação indireta única; nova seção sobre a citação de Fowler preservada; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/test-discovery.md` — nomeia formalmente a fonte primária de Rename Method na seção de refatoração de migração; nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/sources/test-discovery-xunitpatterns.md` — open question fechada: Rename Method (e Marker Interface, já resolvida antes) deixam de constar como pendentes; Testcase Superclass segue como única lacuna real
+- `wiki/entities/martin-fowler.md` — nova linha em Key Sources; `source_count` 33 → 34
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources; `source_count` 62 → 63
+- `wiki/index.md` — nova linha em Sources (topo da tabela)
+
+**Notas / open questions:** (1) Mesmo path mismatch do CLAUDE.md já registrado em ingests anteriores — sem impacto na execução. (2) A fonte é genérica (refatoração de propósito geral, sem menção a teste) — toda a aplicação ao contexto de Test Method Discovery vem de [[wiki/sources/test-discovery-xunitpatterns]], uma fonte separada, consistente com o padrão já visto em Extract Method/Extract Interface. (3) A citação de Fowler preservada fala do risco de métodos pequenos demais (contexto de Extract Method), não da mecânica de Rename Method em si — levemente desalinhada, mas é a única voz direta de Fowler capturada nos três verbetes de refatoração ingeridos até agora. (4) Restam catorze refatorações-irmãs da categoria "Code Refactorings" ainda sem fonte primária dedicada (Extract Class, Extract Superclass, Inline Method, etc.) — nenhuma citada em outra fonte já na wiki, portanto sem urgência de ingestão. (5) Nenhuma contradição encontrada com conteúdo já existente na wiki.
+
+---

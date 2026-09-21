@@ -3,8 +3,8 @@ type: concept
 title: "CI/CD"
 aliases: ["CI/CD", "continuous integration", "continuous delivery", "continuous deployment", "pipeline de entrega", "deployment pipeline"]
 date_created: 2026-04-22
-date_updated: 2026-08-23
-source_count: 11
+date_updated: 2026-09-21
+source_count: 13
 tags: [devops, cicd, deploy, automação, qualidade, projetos-novos, dora, trunk-based-development]
 skill: tech-mentor-infra
 status: stable
@@ -23,6 +23,10 @@ Disciplina de entrega de software onde código é integrado, testado e entregue 
 | **Continuous Deployment** | Tudo, incluindo o deploy em produção | Automático |
 
 A maioria das empresas opera em Continuous Delivery — todo commit está pronto, mas um humano decide quando vai para produção.
+
+## Continuous Integration: definição primária centrada em teste (Meszaros)
+
+[[wiki/sources/continuous-integration-xunitpatterns]] (verbete de Glossário do xUnitPatterns.com) oferece uma segunda definição primária de CI, mais estreita que a de Fowler abaixo: integrar mudanças de código continuamente (a cada poucas horas a dias), tipicamente acoplado a um build automatizado por check-in que roda todos os testes. O critério de "build falho" é binário — **qualquer** teste falhando reprova o build inteiro — e a consequência é a regra de prioridade **stop-the-line**: consertar o build vira topo da fila, só mudanças voltadas à correção são aceitas até o build voltar a passar. É esse critério binário que sustenta o gate de CI contra [[wiki/concepts/production-bugs|Lost Test]] já recomendado em [[wiki/sources/production-bugs-xunitpatterns]].
 
 ## Continuous Delivery: definição primária (Martin Fowler)
 
@@ -112,6 +116,10 @@ Padrão didático comum: `feature branch → dev/staging → main`. A feature va
 
 Essa fonte também **contrasta** com o fluxo `feature → dev/staging → main` documentado acima: ela argumenta contra manter uma branch `dev` de **vida longa**, defendendo só a `main` como fonte de verdade ([[wiki/concepts/trunk-based-development]]) — com *staging* sendo um **ambiente** idêntico ao de produção (só muda URL/capacidade), não uma branch. Não é contradição de mérito: são trade-offs distintos (evitar manter conflitos entre uma `dev` atrasada e uma `prod` com hotfix, vs. ter um gate humano explícito por branch).
 
+## Gate contra testes desabilitados silenciosamente
+
+[[wiki/sources/production-bugs-xunitpatterns]] recomenda um gate específico contra o test smell **[[wiki/concepts/production-bugs|Lost Test]]**: configurar o pipeline de CI para falhar o build se o número de testes marcados como "ignorados" (`[Ignore]`) ultrapassar um limiar, e comparar a contagem total de testes antes/depois de cada check-in para garantir que ela cresceu na proporção esperada. É um gate complementar aos "6 Princípios de Pipeline Saudável" acima — não detecta testes lentos ou flaky, mas testes que silenciosamente pararam de existir ou de rodar.
+
 ## Ver também
 
 - [[wiki/concepts/trunk-based-development]] — o fluxo só-`main` com single command deploy
@@ -129,6 +137,8 @@ Essa fonte também **contrasta** com o fluxo `feature → dev/staging → main` 
 - [[wiki/sources/continuous-delivery-martin-fowler]] — fonte primária do termo "Continuous Delivery": quatro indicadores, distinção precisa vs. Continuous Deployment, DevOps culture, três benefícios centrais
 - [[sources/cicd-pipeline]]
 - [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]
+- [[wiki/sources/production-bugs-xunitpatterns]] — gate de CI contra Lost Test: falhar build acima de um limiar de testes ignorados, comparar contagem de testes antes/depois do check-in
+- [[wiki/sources/continuous-integration-xunitpatterns]] — **fonte primária dedicada**: definição de CI centrada em teste (Meszaros), critério binário de build falho, regra de prioridade stop-the-line
 - [[wiki/sources/integration-test-martin-fowler]]
 - [[wiki/sources/tipos-de-deploy]]
 - [[wiki/sources/como-evitar-over-engineering-david-farley]]

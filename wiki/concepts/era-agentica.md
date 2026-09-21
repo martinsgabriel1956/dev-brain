@@ -3,8 +3,8 @@ type: concept
 title: "Era Agêntica"
 aliases: ["agentic era", "era dos agentes", "agentes de ia em producao"]
 date_created: 2026-05-31
-date_updated: 2026-08-06
-source_count: 4
+date_updated: 2026-09-21
+source_count: 5
 tags: [era-agentica, agente-ia, token-economics, paradoxo-de-jevons, llmops]
 skill: tech-mentor-ai
 status: stable
@@ -80,6 +80,10 @@ A maioria dos devs ainda opera nos níveis 1–2 — o que explica por que estud
 
 Satya Nadella (CEO da [[wiki/entities/microsoft]]) descreve essa migração de custo com o termo **[[wiki/concepts/capital-de-tokens|capital de tokens]]**: assim como o capital humano historicamente gerou conhecimento e valor, o volume de tokens consumidos por agentes passa a ser tratado como um ativo equivalente — reforçando, em outras palavras, o mesmo fenômeno que a tabela de custo por dev acima já descreve.
 
+## "Dar o Ticket e Ir Embora"
+
+[[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] descreve o sintoma mais visível da era agêntica no dia a dia: atribuir uma issue ao GitHub Copilot, mencionar o [[wiki/entities/cursor|Cursor]] a partir do Slack/Linear, ou passar uma tarefa ao [[wiki/entities/codex-openai|Codex]] — e sair, sem acompanhar a execução. O agente recebe ambiente próprio, edita o repositório, roda comandos, testa e abre PR sozinho. O autor argumenta que isso rompe o vocabulário de "assistente": assistente assiste enquanto alguém faz algo; um sistema que trabalha a tarefa inteira enquanto o humano está em outra sala é **delegação**, não assistência — reforçando, de outro ângulo, a mesma mudança de unidade de trabalho (autocomplete → tarefa completa) que esta página já documenta pelo lado do custo.
+
 ## Key Sources
 
 - [[wiki/sources/ia-custo-roi-bolha-ou-realidade]]
@@ -87,5 +91,6 @@ Satya Nadella (CEO da [[wiki/entities/microsoft]]) descreve essa migração de c
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
 - [[wiki/sources/escala-niveis-uso-ia-engenheiros]] — níveis 5–7 como materialização individual da era agêntica
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] — capital de tokens (Nadella) e previsão Gartner 2028
+- [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] — "dar o ticket e ir embora": delegação, não assistência, como sintoma cotidiano da era agêntica
 - [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] — paradigma de agente como membro assíncrono do time organizacional (Claude Tag), complementar à mudança de modelo de custo
 - [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] — caso concreto de agente orientado a evento (trigger) em produção substituindo tarefa de DBA, usado como estudo de caso do layoff da Oracle

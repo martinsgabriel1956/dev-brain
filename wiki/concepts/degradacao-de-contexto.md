@@ -3,8 +3,8 @@ type: concept
 title: "Degradação de Contexto"
 aliases: ["context degradation", "lost in the middle", "degradação janela contexto"]
 date_created: 2026-06-02
-date_updated: 2026-08-11
-source_count: 4
+date_updated: 2026-09-21
+source_count: 5
 tags: [contexto, degradacao, janela-de-contexto, llm, qualidade]
 skill: tech-mentor-ai
 status: stable
@@ -59,8 +59,13 @@ Ter uma janela grande não significa que devo preenchê-la. Quanto mais informa�
 
 [[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] descreve um efeito próximo, mas registrado como conceito distinto por precaução: [[wiki/concepts/degradacao-de-seguranca-iterativa-ia]] — código gerado por IA acumula mais vulnerabilidades críticas a cada rodada de refinamento (37,6% a mais depois de 5 iterações, segundo um paper citado). A fonte não deixa claro se essas rodadas ocorreram numa única sessão longa (o que aproximaria o mecanismo desta página — perda de atenção com janela de contexto muito preenchida) ou em chamadas independentes sem contexto compartilhado (o que apontaria para simples ausência de memória persistente entre chamadas, um mecanismo diferente). Fica como open question até uma fonte futura esclarecer.
 
+## Gatilho Qualitativo em Vez de Threshold de Tokens
+
+[[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] aplica o mesmo mecanismo de `/clear` + nova sessão já documentado acima, mas com um gatilho diferente do threshold técnico (~400k tokens): o autor reinicia a conversa ao perceber subjetivamente uma resposta "não tão boa", sem monitorar contagem de tokens. Ver [[wiki/concepts/alucinacao-llm]] para o mesmo caso do ângulo de mitigação de alucinação.
+
 ## Key Sources
 
+- [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — reinício de sessão disparado por percepção qualitativa de degradação, não por contagem de tokens
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] — possível variante de domínio (segurança) do mesmo tipo de degradação por perda de memória/atenção entre rodadas

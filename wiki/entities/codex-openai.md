@@ -3,8 +3,8 @@ type: entity
 title: "Codex (OpenAI)"
 aliases: ["Codex", "OpenAI Codex", "codex app"]
 date_created: 2026-06-02
-date_updated: 2026-08-27
-source_count: 6
+date_updated: 2026-09-21
+source_count: 7
 tags: [codex, openai, harness, ia-para-devs]
 skill: tech-mentor-ai
 status: stable
@@ -47,9 +47,14 @@ Segundo [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]], o app 
 
 [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] posiciona o Codex, ao lado do Claude Code, num meio-termo de controle de harness: o usuário não é responsável pelo harness inteiro (diferente de construir um agente do zero sobre [[wiki/entities/open-claw|OpenClaw]]), mas tem flexibilidade real para adicionar guardrails, policies e outras peças — mais controle do que o oferecido pelo [[wiki/entities/cursor|Cursor]], que mantém a maior parte do harness fechado ao usuário.
 
+## Produto Interno da OpenAI com "Zero Código Escrito Manualmente"
+
+Segundo [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]], a [[wiki/entities/openai|OpenAI]] descreve cinco meses construindo e lançando um produto interno sob a restrição de que nenhuma linha fosse escrita manualmente — lógica de aplicação, testes, CI, documentação, observabilidade e ferramentas internas, todos produzidos pelo Codex, chegando a aproximadamente 1 milhão de linhas. Segundo a fonte, os engenheiros descrevem o próprio trabalho como desenhar ambientes, especificar intenção e construir loops de feedback que permitem aos agentes trabalhar — não como escrever código. Claim de autorrelato da própria OpenAI, sem link para paper/post técnico detalhado no artigo original; tratar como não verificado de forma independente. Ver [[wiki/concepts/governanca-de-codigo-gerado-por-ia#Zero Código Manual Não Elimina o Julgamento — Só Move Onde Ele Atua|governança de código gerado por IA]] para a análise do que isso implica (e não implica) para o trabalho de engenharia restante.
+
 ## Key Sources
 
 - [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] — posicionado, com o Claude Code, como meio-termo de controle de harness (entre Cursor e OpenClaw)
+- [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] — projeto interno da OpenAI com ~1M linhas geradas via Codex sob restrição de zero código manual
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
 - [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]

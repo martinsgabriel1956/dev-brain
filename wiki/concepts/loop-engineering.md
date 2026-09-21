@@ -3,8 +3,8 @@ type: concept
 title: "Loop Engineering"
 aliases: ["loop engineering", "engenharia de loop", "loop de harness", "loop fixo", "loop criador"]
 date_created: 2026-07-10
-date_updated: 2026-08-27
-source_count: 10
+date_updated: 2026-09-21
+source_count: 11
 tags: [loop-engineering, harness, agente, automacao, planner-executor-critic, loop-fixo, loop-criador, spec-driven, ralph-loop, anthropic, graph-engineering, loop-deterministico, loop-agentico, judge-pattern, orquestracao-de-modelos, langchain, erro-composto, quality-gate, agent-containment]
 skill: tech-mentor-ai
 status: stable
@@ -208,9 +208,16 @@ A mesma fonte observa que a LLM não executa o teste em si — ela manda a máqu
 
 Scripts de migração de dados (sempre em sandbox, com snapshot/backup prévio, nunca contra variáveis de produção), configuração e hardening de VPS, avaliação de segurança de uma VPS inteira — fechamento de portas abertas, problemas de protocolo, upload de arquivo malicioso — incluindo testes de intrusão/pentest ([[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]]).
 
+## Produto Comercial do Loop Disparado por Evento: Cursor Automations
+
+[[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] fecha, com exemplo comercial concreto, a lacuna deixada em aberto na seção "Os Três Níveis do Dev Loop" acima — loop engineering como quarta camada "possivelmente disparado por evento". O **Cursor Automations** roda agentes a partir de agendamento ou de eventos como mensagem no Slack, ticket no Linear, PR mesclado no GitHub ou incidente no PagerDuty — exatamente o padrão "disparável por prompt, schedule ou evento" já descrito nesta página, agora produtizado. Números citados no artigo (autorrelato das empresas, sem link para fonte primária — tratar com a mesma cautela que outros dados não auditados na wiki): a Faire roda mais de 2.000 jobs autônomos por semana para investigação de CI, correção de bug e code review; a Amplitude roda mais de 1.000 por semana, com 60–70% dos PRs de baixo risco indo direto para produção sem revisão humana.
+
+O autor reforça, com outras palavras, a mesma distinção já registrada acima em "Loop Agêntico vs. Cron Job": um cron job tradicional segue um `if status === failed` determinístico; aqui, o branch de decisão é "um modelo olhando para a situação e decidindo o que fazer" — e ele nota o risco espelhado: um agente que reage de forma consistente à interpretação errada de um evento pode repetir esse erro centenas de vezes antes de alguém notar, o inverso do argumento de confiabilidade que costuma justificar automação orientada a evento.
+
 ## Key Sources
 
 - [[wiki/sources/loop-engineering-planner-critic-grafo]]
+- [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] — Cursor Automations como produto comercial do padrão de loop disparado por evento; números de adoção (autorrelato) da Faire e da Amplitude
 - [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — taxonomia dos três níveis do dev loop, distinção loop fixo/loop criador, caso Ban→Rust, quatro perguntas de decisão
 - [[wiki/sources/loop-engineering-harness-e-a-frase-que-viralizou]] — origem no padrão ReAct (2022/2023), três fatores que destravaram loops longos em 2026, correção da frase viral "loop engineering matou harness engineering"
 - [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — vídeo 2 da série de Pedro Nauke: divisão loop determinístico/agêntico, custo de contexto inicial em modelos de reasoning alto, padrão judge (stop hook), padrão orquestrador de modelos, gerenciamento de estado via `state.md`, skills como encapsulamento de loop

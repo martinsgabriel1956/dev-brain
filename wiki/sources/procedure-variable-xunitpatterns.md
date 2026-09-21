@@ -3,7 +3,7 @@ type: source
 title: "Procedure Variable (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["procedure variable", "variável de procedimento", "function pointer", "delegate .net", "xunit patterns glossary procedure variable"]
 date_created: 2026-09-02
-date_updated: 2026-09-02
+date_updated: 2026-09-21
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/procedure-variable-xunitpatterns.md
 source_url: "http://xunitpatterns.com/procedure%20variable.html"
 author: "Gerard Meszaros"
@@ -56,6 +56,7 @@ A definição situa *procedure variables* como precursoras históricas das OOPLs
 
 - A fonte não dá um exemplo concreto de código (nem em C, nem em .Net) mostrando uma *procedure variable* sendo usada para montar um Configurable Test Double — a conexão com Test Doubles é inferência da wiki a partir de [[wiki/sources/replace-dependency-with-test-double-xunitpatterns]], não afirmação explícita deste verbete.
 - O mesmo glossário do xUnitPatterns.com lista termos irmãos de mecânica de linguagem ainda não ingeridos — ex.: **dynamic binding** e **static binding** têm verbetes próprios linkados no Glossário (vistos na barra lateral desta página) e ainda não foram ingeridos isoladamente; candidatos naturais para fechar esta pequena série de vocabulário de linguagem, análoga à série de papéis de projeto (test automater/maintainer/reader/stripper).
+- **Atualização (2026-09-21):** [[wiki/sources/block-xunitpatterns]] ingerido — fecha o par de mecanismos de "comportamento como valor" pelo lado da *closure* (Smalltalk/Ruby *block*, Java *anonymous inner class*, C# *delegate*), em contraste com o *function pointer/delegate* nomeado por esta fonte. Curiosamente, ambos os verbetes citam "delegate" (C#) como equivalente — o glossário não distingue os dois termos por essa palavra, e sim pelo mecanismo de linguagem subjacente (closure léxica vs. ponteiro para código).
 
 ---
 

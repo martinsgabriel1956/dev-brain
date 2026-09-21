@@ -3,8 +3,8 @@ type: concept
 title: "Subagentes"
 aliases: ["subagents", "sub-agentes", "Task tool", ".claude/agents"]
 date_created: 2026-07-03
-date_updated: 2026-09-10
-source_count: 9
+date_updated: 2026-09-21
+source_count: 10
 tags: [subagentes, claude-code, multi-agent, paralelismo, context-engineering, harness, list-agents, mensagens-cruzadas, fork, permission-mode]
 skill: tech-mentor-ai
 status: draft
@@ -127,8 +127,13 @@ Uma simulação simples projetou ~34% de economia (R$110 → R$73/mês) usando e
 
 Isso é complementar, não substituto, ao benchmark de granularidade da seção anterior: aquele benchmark não distingue modelo do coordenador vs. modelo dos workers (aparentemente usa o mesmo modelo em todos os subagentes), enquanto esta fonte isola exatamente essa variável.
 
+## Contraponto Anedótico: Um Único Agente Basta Para Baixo Volume
+
+[[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] relata, sem testar nem medir, que um único agente por sessão é suficiente para o próprio fluxo de trabalho, mesmo observando outros desenvolvedores rodando swarms de agentes em paralelo. O autor atribui a diferença ao próprio volume de tarefas (poucas coisas para rodar ao mesmo tempo), não a uma crítica ao padrão de swarm — é uma escolha de escala pessoal, não um dado que contradiga o benchmark de granularidade já documentado acima.
+
 ## Key Sources
 
+- [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — relato anedótico de agente único suficiente para baixo volume de trabalho, sem crítica técnica a swarms
 - [[wiki/sources/graph-engineering-matematica-do-erro-composto]] — organização típica organizador/researchers/builders/reviewers, arestas decidindo dependência entre subagentes
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
 - [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — mensagens cruzadas entre subagentes via "list agents": um subagente pode disparar outro diretamente, sem depender do agente pai como intermediário

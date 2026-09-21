@@ -3,8 +3,8 @@ type: entity
 title: "Dale Carnegie"
 aliases: ["Dale Carnegie"]
 date_created: 2026-07-03
-date_updated: 2026-07-20
-source_count: 2
+date_updated: 2026-09-21
+source_count: 3
 tags: [autor, soft-skills, comunicacao, lideranca]
 skill: tech-mentor-leadership
 status: stub
@@ -16,5 +16,6 @@ Autor americano, escritor de *Como Fazer Amigos e Influenciar Pessoas* (1936), o
 
 ## Key Sources
 
+- [[wiki/sources/como-lidar-com-politica-empresarial-lideranca-engenharia]] — mesma tese (confiança genuína como moeda de influência) aplicada especificamente à redução do risco percebido em propostas de mudança organizacional, ver [[wiki/concepts/politica-organizacional]]
 - [[wiki/sources/3-soft-skills-que-poucos-programadores-dominam]]
 - [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]] — citado como leitura recomendada para arquitetos desenvolverem comunicação e soft skills

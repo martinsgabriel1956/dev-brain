@@ -3,7 +3,7 @@ type: source
 title: "Annotation (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["annotation", "anotação", "xunit patterns glossary annotation"]
 date_created: 2026-09-11
-date_updated: 2026-09-11
+date_updated: 2026-09-21
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/annotation-xunitpatterns.md
 source_url: "http://xunitpatterns.com/annotation.html"
 author: "Gerard Meszaros"
@@ -43,6 +43,9 @@ O verbete não elabora a diferença de implementação entre annotations Java e 
 
 ### 3. Fonte fecha, de forma isolada, um detalhe até agora só mencionado de passagem
 Antes desta ingestão, a relação annotation↔attribute só aparecia em [[wiki/entities/junit]] e em [[wiki/sources/xunit-martin-fowler]], sempre no contexto da história de proliferação de ports do JUnit — nunca como definição própria do termo "annotation". Este verbete, apesar de mínimo, é a primeira fonte primária dedicada ao termo em si.
+
+### 4. Complementada por [[wiki/sources/attribute-xunitpatterns]]: o caminho inverso, partindo de "attribute"
+[[wiki/sources/attribute-xunitpatterns]] confirma essa relação a partir do lado oposto — o verbete de "attribute" no próprio glossário do site — e acrescenta um segundo sentido do termo (sinônimo de [[wiki/concepts/instance-variable|instance variable]]) sem relação com annotation. Os dois verbetes, lidos juntos, fecham o par simétrico de definições entre "annotation" e "attribute".
 
 ---
 

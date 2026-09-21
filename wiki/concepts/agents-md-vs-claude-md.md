@@ -3,8 +3,8 @@ type: concept
 title: "AGENTS.md vs. CLAUDE.md"
 aliases: ["agents.md", "fragmentação de config de agentes", "controvérsia agents md shopify"]
 date_created: 2026-09-14
-date_updated: 2026-09-14
-source_count: 1
+date_updated: 2026-09-21
+source_count: 2
 tags: [claude-code, agents-md, claude-md, padronizacao, interoperabilidade, multi-agente, shopify]
 skill: tech-mentor-ai
 status: stub
@@ -34,6 +34,10 @@ Independente da controvérsia pública específica, a fonte aponta que compartil
 
 [[wiki/entities/anthropic]] já registrava, a partir de [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]], uma menção de passagem a uma **preferência da própria Anthropic por `AGENTS.md`** (atribuída a [[wiki/entities/boris|Boris]], criador do Claude Code). Isso está em tensão direta com o relato desta fonte, de que o Claude Code só lê `CLAUDE.md` e que a Anthropic recusou publicamente adotar `AGENTS.md` na controvérsia com Tobi Lütke. Nenhuma das duas fontes é uma referência primária (changelog oficial, documentação) — ambas são relatos de segunda mão. Registrado como contradição em aberto, não resolvida nesta sessão: pode refletir uma mudança de posição da Anthropic entre os dois momentos, informação desatualizada em uma das fontes, ou imprecisão de uma das transcrições.
 
+## Enquadramento: Documentação para uma "Terceira Audiência"
+
+[[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] enquadra o fenômeno de um ângulo distinto da controvérsia de padronização: para além de qual formato específico vence, o autor observa que repositórios passaram a ter uma **terceira audiência** de leitores — além do compilador e dos humanos que mantêm o código, agora existe o agente, que precisa saber o que pode mudar, como testar, quais fronteiras importam e qual comando realmente funciona "apesar do que o README diz". O GitHub já vai além: usa o Copilot para *gerar* as instruções que depois vão guiar o próprio Copilot no repositório — documentação que aprende a se reproduzir. O autor nota o efeito colateral: trabalho de engenharia que ficava perpetuamente adiado porque humanos conseguiam contornar a bagunça (ex. um build process que só vive na cabeça de um dev específico) agora tem um "cliente" sem bom senso algum, e passa a doer a cada execução de agente — pressão indireta para formalizar exatamente o tipo de regra que arquivos como `AGENTS.md`/`CLAUDE.md` tentam capturar.
+
 ## Relação com Outros Conceitos
 
 - [[wiki/concepts/claude-md]] — o lado "Anthropic" da fragmentação
@@ -43,3 +47,4 @@ Independente da controvérsia pública específica, a fonte aponta que compartil
 ## Key Sources
 
 - [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]]
+- [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] — enquadra `AGENTS.md`/`CLAUDE.md` como documentação para uma "terceira audiência" (o agente), além de compilador e humano

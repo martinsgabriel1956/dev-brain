@@ -3,8 +3,8 @@ type: concept
 title: "Storytest-Driven Development"
 aliases: ["storytest-driven development", "STDD"]
 date_created: 2026-09-04
-date_updated: 2026-09-04
-source_count: 3
+date_updated: 2026-09-21
+source_count: 4
 tags: [testes, tdd, xunit, bdd]
 skill: tech-mentor-testing
 status: stable
@@ -16,9 +16,12 @@ Variação do [[wiki/concepts/tdd|test-driven development]] que consiste em escr
 
 O termo foi cunhado por [[wiki/entities/joshua-kerievsky|Joshua Kerievsky]], como parte de sua metodologia [[wiki/concepts/industrial-xp|"Industrial XP" (IXP)]] — uma variação prática do [[wiki/concepts/extreme-programming|XP]] clássico.
 
+STDD é também a metade externa do processo definido em [[wiki/sources/need-driven-development-xunitpatterns|need-driven development]]: enquanto need-driven development cobre a codificação unidade a unidade de fora para dentro via [[wiki/concepts/test-doubles|Mock Objects]], STDD cobre a camada mais externa do software, com exemplos de uso por clientes reais somados aos [[wiki/sources/customer-test-xunitpatterns|customer tests]] — citando **Service Facade** [CJ2EEP] como exemplo concreto de interface acionada por um cliente real.
+
 ## Key Sources
 
 - [[wiki/sources/storytest-driven-development-xunitpatterns]] — **fonte primária dedicada**: define o termo diretamente, atribui a cunhagem a Joshua Kerievsky (Industrial XP)
 - [[wiki/sources/test-driven-development-xunitpatterns]] — citado como "ver também", sem definição própria
 - [[wiki/sources/test-first-development-xunitpatterns]] — não cita STDD diretamente, mas descreve a mesma prática por contraste (test-first no nível de customer test)
 - [[wiki/sources/ixp-industrial-xp-xunitpatterns]] — fecha a lacuna de atribuição: fonte primária dedicada a Industrial XP e Joshua Kerievsky, antes só citados por contraste aqui
+- [[wiki/sources/need-driven-development-xunitpatterns]] — cita STDD como o processo que fecha a camada mais externa do software no fluxo de need-driven development, com exemplos de uso por clientes reais (Service Facade [CJ2EEP]) somados aos customer tests

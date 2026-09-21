@@ -3,8 +3,8 @@ type: concept
 title: "Autonomy Slider (Karpathy)"
 aliases: ["autonomy slider", "controle de autonomia da ia", "slider de autonomia"]
 date_created: 2026-08-03
-date_updated: 2026-08-03
-source_count: 1
+date_updated: 2026-09-21
+source_count: 3
 tags: [andrej-karpathy, agentes-ia, vibe-coding, delegacao, niveis-adocao-ia]
 skill: tech-mentor-ai
 status: stub
@@ -33,6 +33,16 @@ O entendimento (a teoria mental de como e por que o sistema funciona) não escal
 - [[wiki/concepts/human-in-the-loop]] — descreve granularidades específicas de intervenção humana (por tool call, por plano, por etapa) que, na prática, são pontos concretos no slider de Karpathy.
 - [[wiki/concepts/vibe-coding]] — volume "no talo" sem critério de qualidade é, na prática, a definição de vibe coding; volume "no talo" **com** critério é o que [[wiki/entities/antirez]] batizou de "automatic programming" na mesma fonte.
 
+## Exemplo de Volume no Máximo em Produção: "Dar o Ticket e Ir Embora"
+
+[[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] descreve, sem citar Karpathy diretamente, o mesmo ponto extremo do slider já em uso cotidiano: atribuir uma issue ao GitHub Copilot ou ao [[wiki/entities/cursor|Cursor]] e sair — sem checkpoint humano até o PR estar aberto. A fonte reforça a mesma observação sobre o vocabulário: chamar isso de "assistente" já não descreve o comportamento no volume máximo do slider — é delegação.
+
+## Volume Alto Sem Ser "No Talo Sem Critério": Checklist Como Critério Explícito
+
+[[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] é um exemplo de posição bem alta no slider (zero código manual, zero leitura linha a linha) que ainda assim não se enquadra em vibe coding "sem critério": o autor substitui a leitura humana por perguntas extensas antes de implementar e por um checklist de verificação explícito pedido ao próprio agente antes de commit. Reforça o ponto já central nesta página (ver "Automatic Programming vs. Vibe Coding" em [[wiki/concepts/vibe-coding]]): a posição no slider é ortogonal a ter ou não critério de qualidade — aqui o critério existe, só que verbalizado no prompt em vez de aplicado por leitura humana do resultado.
+
 ## Key Sources
 
+- [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — volume alto no slider (zero leitura de código) combinado com checklist de verificação explícito no prompt, não com ausência de critério
 - [[wiki/sources/cinco-escolas-programacao-com-ia]]
+- [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] — "dar o ticket e ir embora" como exemplo cotidiano de volume máximo no slider

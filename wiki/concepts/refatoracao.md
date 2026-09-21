@@ -3,8 +3,8 @@ type: concept
 title: "Refatoração"
 aliases: ["refactoring", "refatorar"]
 date_created: 2026-07-15
-date_updated: 2026-09-11
-source_count: 8
+date_updated: 2026-09-21
+source_count: 9
 tags: [refactoring, clean-code, craftsmanship, design-de-software, tech-debt]
 skill: tech-mentor-backend
 status: draft
@@ -99,11 +99,11 @@ Refatoração idealmente não é um "projeto" à parte que precisa de aprovaçã
 
 ## Extract Method: a refatoração-irmã que remove duplicação de comportamento, não de tipos
 
-[[wiki/sources/testcase-class-xunitpatterns]] cita uma segunda refatoração de Fowler no mesmo cluster xUnitPatterns.com, fácil de confundir com a anterior pelo nome parecido: **Extract Method**. Enquanto Extract Interface muda o vocabulário de *tipos* que os clientes enxergam, Extract Method extrai código duplicado (tipicamente entre Test Methods) para um método nomeado — no vocabulário de testes, um **Test Utility Method**. Meszaros a recomenda especificamente para evitar **Test Code Duplication**; o método extraído pode ficar na própria [[wiki/sources/testcase-class-xunitpatterns|Testcase Class]] ou ser movido para uma Testcase Superclass ou um Test Helper — nenhum dos dois com página própria ainda.
+[[wiki/sources/extract-method-xunitpatterns]] agora fecha, com fonte primária dedicada, uma lacuna citada de passagem em [[wiki/sources/testcase-class-xunitpatterns]]: **Extract Method**, refatoração de Fowler fácil de confundir com Extract Interface pelo nome parecido. Enquanto Extract Interface muda o vocabulário de *tipos* que os clientes enxergam, Extract Method extrai código duplicado (tipicamente entre Test Methods) para um método nomeado — no vocabulário de testes, um **Test Utility Method**. Meszaros a recomenda especificamente para evitar **Test Code Duplication**; o método extraído pode ficar na própria [[wiki/sources/testcase-class-xunitpatterns|Testcase Class]] ou ser movido para uma Testcase Superclass ou um Test Helper — nenhum dos dois com página própria ainda. Ver [[wiki/concepts/extract-method]].
 
 ## Relacionado
 
-[[wiki/concepts/dois-chapeus-kent-beck]] · [[wiki/concepts/tech-debt-como-ferramenta]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/piramide-de-testes]] · [[wiki/concepts/god-object]] · [[wiki/concepts/entropia-de-software]] · [[wiki/concepts/essential-complexity]] · [[wiki/concepts/accidental-complexity]] · [[wiki/entities/martin-fowler]] · [[wiki/entities/kent-beck]] · [[wiki/concepts/comentarios-como-ferramenta-de-design]] · [[wiki/concepts/extract-interface]]
+[[wiki/concepts/dois-chapeus-kent-beck]] · [[wiki/concepts/tech-debt-como-ferramenta]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/piramide-de-testes]] · [[wiki/concepts/god-object]] · [[wiki/concepts/entropia-de-software]] · [[wiki/concepts/essential-complexity]] · [[wiki/concepts/accidental-complexity]] · [[wiki/entities/martin-fowler]] · [[wiki/entities/kent-beck]] · [[wiki/concepts/comentarios-como-ferramenta-de-design]] · [[wiki/concepts/extract-interface]] · [[wiki/concepts/extract-method]]
 
 ## Key Sources
 
@@ -114,3 +114,4 @@ Refatoração idealmente não é um "projeto" à parte que precisa de aprovaçã
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — refatoração conduzida por IA com [[wiki/concepts/plan-mode|plan mode]] e [[wiki/concepts/strategy-pattern|Strategy]]; comportamento externo (interface do front end) preservado — mas a validação do resultado é visual/estrutural, sem os testes automatizados que esta página exige como garantia
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — catálogo de 9 code smells com régua de seis critérios (compreensível, testável, acoplamento, coesão, modular, manutenção) para decidir se um smell concreto justifica refatoração
 - [[wiki/sources/extract-interface-xunitpatterns]] — verbete de "Code Refactorings" (xUnitPatterns.com/Meszaros, conteúdo atribuído a Fowler): Extract Interface como refatoração estrutural de tipos, pré-requisito técnico para Test Doubles em linguagens estaticamente tipadas
+- [[wiki/sources/extract-method-xunitpatterns]] — verbete-irmão de "Code Refactorings" (mesma proveniência host≠autor): Extract Method como refatoração de comportamento, técnica recomendada para eliminar Test Code Duplication

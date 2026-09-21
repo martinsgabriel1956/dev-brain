@@ -3,8 +3,8 @@ type: entity
 title: "Kent Beck"
 aliases: ["kent beck"]
 date_created: 2026-07-09
-date_updated: 2026-09-18
-source_count: 11
+date_updated: 2026-09-21
+source_count: 12
 tags: [autor, tdd, extreme-programming, design-incremental, junit, xunit, yagni]
 skill: tech-mentor-testing
 status: stub
@@ -56,6 +56,10 @@ A mesma fonte cita um tweet famoso de Beck: "O valor econômico de 90% das minha
 
 **Nota de confiança:** citação amplamente circulada publicamente; a formulação exata das porcentagens vem de memória do autor da fonte, deve ser tratada como aproximada.
 
+## Autor de *Smalltalk Best Practice Patterns* [SBPP] — origem do Pluggable Behavior
+
+[[wiki/sources/pluggable-behavior-xunitpatterns]] parafraseia Beck e seu livro *Smalltalk Best Practice Patterns* [SBPP] como origem do padrão [[wiki/concepts/pluggable-behavior|Pluggable Behavior]] — adicionar uma variável a um objeto para disparar comportamento diferente em runtime, evitando dezenas de subclasses que diferem em um ou dois métodos. É o mesmo padrão, citado sem elaboração em [[wiki/sources/testcase-object-xunitpatterns]], que explica como um [[wiki/concepts/testcase-object|Testcase Object]] sabe qual [[wiki/concepts/test-method|Test Method]] invocar (construtor recebe o nome do método, `run` usa reflection). Reforça a raiz Smalltalk do vocabulário de padrões de teste de Beck, já presente na wiki via [[wiki/entities/sunit|SUnit]].
+
 ## Signatário do Manifesto Ágil e Criador do XP com Ward Cunningham
 
 Em [[wiki/sources/agilidade-manifesto-agil-fabio-akita]], citado como um dos 17 signatários do manifesto de 2001 e, junto com [[wiki/entities/ward-cunningham|Ward Cunningham]] (sem página própria ainda nesta wiki), como criador das práticas de Extreme Programming — a fonte recomenda XP, não Scrum, como ponto de partida para iniciantes que querem entender "agilidade" de verdade. Ver [[wiki/concepts/manifesto-agil-como-adjetivo]].
@@ -78,3 +82,4 @@ A citação "invest in the design of the system every day" foi atribuída a Beck
 - [[wiki/sources/very-low-defect-project-martin-fowler]] — relatou a Fowler o caso da fabricante de máquinas de classificação de alimentos
 - [[wiki/sources/ia-paradoxo-de-jevons-camada-de-abstracao-futuro-do-programador]] — anedota do pai programador assembly migrando para C; tweet "90% desvalorizado / 10% mil vezes mais valioso"
 - [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — signatário do manifesto de 2001; criador do XP com Ward Cunningham, recomendado como ponto de partida para iniciantes em vez do Scrum
+- [[wiki/sources/pluggable-behavior-xunitpatterns]] — autor de *Smalltalk Best Practice Patterns* [SBPP], origem do padrão Pluggable Behavior citado (sem definição) em [[wiki/sources/testcase-object-xunitpatterns]]

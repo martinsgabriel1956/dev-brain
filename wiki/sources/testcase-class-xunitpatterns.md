@@ -3,7 +3,7 @@ type: source
 title: "Testcase Class (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["testcase class", "test fixture (NUnit/VbUnit)", "classe de caso de teste"]
 date_created: 2026-09-11
-date_updated: 2026-09-11
+date_updated: 2026-09-21
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/testcase-class-xunitpatterns.md
 source_url: "http://xunitpatterns.com/Testcase%20Class.html"
 author: "Gerard Meszaros"
@@ -77,8 +77,10 @@ A seção "Further Reading" nomeia um terceiro sentido de "fixture", distinto ta
 - **Testcase Superclass, Test Helper e Test Utility Method** são citados aqui pela primeira vez na wiki como os três destinos possíveis para código de teste extraído, mas nenhum tem página própria nem fonte primária dedicada isolada ainda — candidatos naturais para a próxima ingestão do mesmo cluster (o rodapé do site indica categorias dedicadas "Fixture Setup Patterns" e "Test Organization" onde esses verbetes provavelmente vivem).
 - **Hipótese não confirmada pela fonte**: VbUnit e NUnit chamarem a própria Testcase Class de "test fixture" pode ser exatamente o motivo pelo qual [[wiki/sources/test-fixture-xunitpatterns]] registra que só "JUnit e seus ports diretos" mantêm o test context separado da Testcase Class — se VbUnit/NUnit fundem os dois nomes, é plausível que também fundam os dois conceitos num único objeto. A fonte atual **não afirma isso explicitamente**; é uma inferência da wiki, não um fato citado, e fica marcada como tal até uma fonte primária sobre NUnit/VbUnit confirmar ou refutar.
 - **NUnit e VbUnit seguem sem entidade própria na wiki** — mencionados de passagem em múltiplas fontes (esta, [[wiki/sources/annotation-xunitpatterns]], [[wiki/entities/junit]]) mas nunca como assunto central.
-- **Fit, Data-Driven Test e Interpreter [GOF]** (no sentido de tabela/dados dirigindo o teste) são citados pela primeira vez na wiki nesta fonte, sem elaboração — candidatos a ingestão futura se o catálogo tiver verbetes próprios para eles.
+- ~~**Fit, Data-Driven Test e Interpreter [GOF]** (no sentido de tabela/dados dirigindo o teste) são citados pela primeira vez na wiki nesta fonte, sem elaboração — candidatos a ingestão futura se o catálogo tiver verbetes próprios para eles.~~ — **parcialmente corrigido**: ver [[wiki/sources/test-fixture-fit-xunitpatterns]], que formaliza com fonte primária dedicada o sentido de "fixture" no Fit (o Adapter) e cria stubs para [[wiki/entities/fit]] e [[wiki/concepts/data-driven-test]]. **Interpreter [GOF]** segue sem página/fonte primária própria.
 - **Test Suite Factory** segue sem fonte primária isolada (o link original do site aponta para `Test Enumeration.html#Test Suite Factory`, ainda não ingerido) — questão aberta já registrada em [[wiki/sources/test-case-xunitpatterns]], não resolvida por esta fonte.
+
+**Atualização:** a lacuna do **Testcase Object** em si (mecânica interna de despacho, Command Pattern, Test Tree Explorer) foi fechada por [[wiki/sources/testcase-object-xunitpatterns]], fonte primária dedicada ao termo ingerida em 2026-09-21. A lacuna da refatoração **Extract Method** citada na seção 4 acima também foi fechada, na mesma data, por [[wiki/sources/extract-method-xunitpatterns]]. **Nova atualização (mesma data):** [[wiki/sources/test-discovery-xunitpatterns]] fecha, com fonte primária dedicada, a lacuna de como a Testcase Class é encontrada pelo framework (**Testcase Class Discovery**) e como seus Test Methods são reconhecidos (**Test Method Discovery**) — mecânica que esta fonte já descrevia em alto nível ("acts as a Test Suite Factory") sem detalhar o *como*. A lacuna de **Test Suite Factory** em si segue aberta (o link continua apontando para `Test Enumeration.html`, ainda não ingerido).
 
 ---
 

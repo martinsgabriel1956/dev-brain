@@ -3,7 +3,7 @@ type: source
 title: "Customer Test (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["customer test", "teste de cliente", "story test", "acceptance test", "xunit patterns glossary customer test"]
 date_created: 2026-09-02
-date_updated: 2026-09-02
+date_updated: 2026-09-21
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/customer-test-xunitpatterns.md
 source_url: "http://xunitpatterns.com/customer%20test.html"
 author: "Gerard Meszaros"
@@ -62,6 +62,10 @@ A fonte faz questão de qualificar a própria afirmação: a *arquitetura* de al
 - A fonte não dá exemplo concreto do que significa "decisão de arquitetura de alto nível" afetando a interação — deixa implícito (ex.: testar via GUI vs. via camada de serviço), mas não cita nenhum caso.
 
 ---
+
+## Cruzamentos posteriores
+
+[[wiki/sources/need-driven-development-xunitpatterns]] (2026-09-21) cita customer tests como o complemento da camada mais externa do fluxo de need-driven development, somados a exemplos de uso por clientes reais (Service Facade [CJ2EEP]) — não acrescenta definição nova a customer test em si, apenas o situa como peça do processo mais amplo.
 
 ## Citações Relevantes
 

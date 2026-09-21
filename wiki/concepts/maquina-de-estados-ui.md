@@ -3,8 +3,8 @@ type: concept
 title: "Interface como Máquina de Estados"
 aliases: ["UI state machine", "estados de componente", "componente como máquina de estados"]
 date_created: 2026-07-21
-date_updated: 2026-07-21
-source_count: 1
+date_updated: 2026-09-21
+source_count: 2
 tags: [ui, ux, design, frontend, estado, state-machine]
 skill: tech-mentor-frontend
 status: draft
@@ -43,7 +43,9 @@ Não exige desenhar um diagrama de estados formal para todo componente simples �
 - [[wiki/concepts/estado]] — definição geral de estado em sistemas; este conceito é a aplicação específica a componentes de UI.
 - [[wiki/concepts/affordance]] — o estado de um componente deveria se refletir visualmente na sua affordance (ex.: botão disabled parece diferente de um botão clicável).
 - [[wiki/concepts/caminho-feliz]] — máquinas de estado mal mapeadas tendem a só cobrir o caminho feliz, deixando erro e loading como afterthought.
+- [[wiki/concepts/finite-state-machine]] — esta página é uma aplicação específica (UI/frontend) do conceito geral de FSM, cuja definição formal e outros exemplos de domínio (Game Design) vivem na página geral.
 
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
+- [[wiki/sources/o-que-e-uma-finite-state-machine]] — mencionada como fonte geral de FSM, para contraste entre a aplicação de UI e a aplicação de Game Design (Pac-Man)

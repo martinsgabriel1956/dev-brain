@@ -3,8 +3,8 @@ type: concept
 title: "Vibe Coding"
 aliases: ["vibe coding", "vibe-coding", "coding por vibração", "agentic coding", "orquestração de agentes"]
 date_created: 2026-04-23
-date_updated: 2026-09-08
-source_count: 18
+date_updated: 2026-09-21
+source_count: 19
 tags: [vibe-coding, agentes-ia, produtividade, divida-cognitiva, ai-brainfry, paralelismo-cognitivo]
 skill: tech-mentor-ai
 status: stable
@@ -129,8 +129,13 @@ Citado como exemplo de hype tecnológico em formação (junto com MCP) no moment
 
 [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] traz duas anedotas-tese sobre o que acontece quando quem não é da área vibe coda algo que "fica bom": ele passa a mantê-lo. No caso relatado, um responsável por QA (não-dev) vibe-codou um Jira interno melhor que Jira/Linear/Trello (março/2026); ~4 meses depois o time voltou às ferramentas de mercado porque a manutenção da ferramenta interna estava consumindo a capacidade de trabalho deles. É a manifestação concreta, no eixo *manutenção*, do limite já central nesta página ("O Limite Não É Técnico, É de Julgamento"): software vibe-codado que sai do estágio de MVP/protótipo sempre passa a exigir melhorias e manutenção contínuas — e especializar um não-dev em manter software é, na prática, reinventar um time de TI. A mesma fonte usa isso para argumentar que "o dev ainda vai ser o cara que vai vibe codar", e que só faz sentido substituir dev por IA quando o *supply* já está suprido (o gargalo virou vender, não produzir).
 
+## Checklist Delegado ao Próprio Agente Como Alternativa à Leitura Linha a Linha
+
+[[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] descreve uma mitigação distinta das já documentadas acima (que dependem de disciplina humana de ler/entender ou de gate mecânico via CI): antes de cada commit, o autor pede explicitamente ao próprio agente que verifique best practices, qualidade dos comentários, consistência entre arquivos, ausência de vazamento de dado sensível e não-compromisso de segurança/UX — sem ler o código gerado linha a linha. É uma terceira via em relação a "Review obrigatório antes de commit" (leitura humana) e ao "Ratchet de Baseline" (gate mecânico via CI): aqui o critério de qualidade é verbalizado no prompt e a verificação delegada de volta ao próprio modelo que gerou o código, sem confirmação humana independente de que o checklist capturou os problemas reais. A fonte não relata nenhum incidente que essa prática tenha deixado passar — mas também não é comparada contra revisão humana equivalente.
+
 ## Key Sources
 
+- [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — dois projetos construídos sem nenhum código lido ou escrito manualmente; checklist de verificação pré-commit delegado ao agente como substituto da leitura linha a linha; reinício de sessão ao notar alucinação; screenshot como referência para UI; agente único, sem swarm
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — relato de staff/tech lead/sênior sem escrever código manual há meses, 20-25 PRs/semana, revisão automatizada substituindo leitura humana
 - [[sources/divida-cognitiva-ai-brainfry]]
 - [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — armadilha de manutenção do vibe code por não-devs (Jira interno revertido); "quem não é da área vira TI"

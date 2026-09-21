@@ -31,6 +31,7 @@ O código escrito é ~10% do trabalho. Os outros 90% são o sistema rodando em p
 - [[wiki/concepts/engenheiro-vs-programador]] — é um dos componentes do "eixo horizontal" que separa quem executa de quem governa o sistema
 - [[wiki/concepts/governanca-de-codigo-gerado-por-ia]] — código gerado por IA que nunca foi pensado para produção carrega esse risco de forma ampliada
 - [[wiki/concepts/sintaxe-vs-conhecimento-perene]] — exemplos concretos de pensamento em produção (causas de 401/500, debugging só-em-prod, propagação de exceções) são o que [[wiki/sources/atrofia-cognitiva-ia-programacao]] chama de "conhecimento perene", em contraste com sintaxe memorizada
+- [[wiki/concepts/production]] — sentido distinto, mas etimologicamente relacionado, de "produção": ali é definida como substantivo (o ambiente de execução em si, glossário de [[wiki/entities/gerard-meszaros]]); aqui é a mentalidade de engenharia voltada a esse ambiente
 
 ## Exemplos concretos de conhecimento perene
 

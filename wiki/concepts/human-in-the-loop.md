@@ -3,8 +3,8 @@ type: concept
 title: "Human-in-the-Loop (HITL)"
 aliases: ["HITL", "human in the loop", "aprovação humana agente"]
 date_created: 2026-06-02
-date_updated: 2026-08-27
-source_count: 6
+date_updated: 2026-09-21
+source_count: 8
 tags: [hitl, human-in-the-loop, agente, spec-driven, aprovacao, controle, checkpoint, erros-compostos]
 skill: tech-mentor-ai
 status: stable
@@ -59,9 +59,19 @@ O [[wiki/concepts/plan-mode|Plan Mode]] é uma forma leve de HITL: o humano revi
 
 [[wiki/sources/pipeline-agentes-ia-pentest-idor-critica-nao-substitui]] descreve uma variante do padrão HITL onde a intervenção humana não é uma salvaguarda opcional, mas um gargalo imposto pelo próprio comportamento do agente: um pipeline de pentest exaustivo encontra vulnerabilidades reais, mas também produz um volume alto de falsos positivos, e cada um precisa de um humano para investigar e descartar. Diferente dos exemplos acima (checkpoint por design, escape hatch por limiar de confiança), aqui o HITL é uma consequência direta do trade-off entre cobertura exaustiva e precisão — ver [[wiki/concepts/economia-da-descoberta-automatizada-de-vulnerabilidades]].
 
+## O Humano "Sobe um Andar": de Ler Diff para Definir Política
+
+[[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] descreve uma variante de HITL que não é checkpoint dentro de uma execução, mas deslocamento de *onde* o humano atua no sistema como um todo: com agentes escrevendo e revisando PRs entre si (ver [[wiki/concepts/code-review#IA Aprovando PR de IA (GitHub Copilot)|code review de IA por IA]]), o humano deixa de intervir em cada execução e passa a definir as regras que decidem quando um agente pode agir sozinho — quais mudanças um agente pode aprovar, quais diretórios exigem revisão humana, que falha bloqueia o pipeline. Mesma lógica do "escape hatch por limiar de confiança" já registrado nesta página, mas descrita de um ângulo organizacional: "movemos o humano um andar acima e deixamos duas máquinas no andar de baixo discutindo sobre TypeScript."
+
+## Checklist Verbalizado no Prompt Como Substituto do Checkpoint Humano
+
+[[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] descreve uma variante de granularidade "por deploy" (ver tabela acima) onde o próprio checkpoint deixa de ser humano: em vez de o humano ler o diff antes do commit, o autor pede ao agente que audite a si mesmo contra uma lista explícita de critérios (best practices, comentários, consistência, segurança, dados sensíveis) antes de cada commit. Diferente do "Humano 'Sobe um Andar'" já registrado acima — ali o humano ainda define política que outro agente aplica — aqui não há segundo agente nem humano verificando o resultado do checklist; o mesmo agente que gerou o código também audita a própria geração.
+
 ## Key Sources
 
+- [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — checklist de verificação verbalizado no prompt e delegado ao próprio agente gerador, substituindo o checkpoint humano por etapa/deploy
 - [[wiki/sources/formacao-ia-devs-aula-04-agentes-planejamento]]
+- [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] — humano se move de checkpoint por execução para definidor de política de quando o agente pode agir sozinho
 - [[wiki/sources/pipeline-agentes-ia-pentest-idor-critica-nao-substitui]] — HITL como gargalo de triagem de falso positivo, não checkpoint opcional
 - [[wiki/sources/formacao-ia-devs-aula-05-qa]]
 - [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — HITL como nível 3 do dev loop; loop engineering automatiza a execução entre specs mas não a decisão de intenção/roadmap

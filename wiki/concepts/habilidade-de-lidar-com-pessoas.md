@@ -3,8 +3,8 @@ type: concept
 title: "Habilidade de Lidar com Pessoas"
 aliases: ["people skills", "85/15 sucesso profissional", "influência interpessoal"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 1
+date_updated: 2026-09-21
+source_count: 2
 tags: [soft-skills, carreira, lideranca, comunicacao]
 skill: tech-mentor-leadership
 status: draft
@@ -31,13 +31,19 @@ A tese de fundo do livro: as pessoas lembram como você as fez se sentir, mais d
 
 Este conceito se sobrepõe a [[wiki/concepts/colaboracao-times]] (trabalho em equipe) e [[wiki/concepts/comunicacao-tecnica]] (tradução técnica), mas com um recorte mais amplo: não é sobre construir software junto ou traduzir jargão, é sobre a competência genérica de gerar confiança e ser lembrado positivamente, que abre portas para promoção e oportunidades.
 
+## Aplicação a Decisões Organizacionais, Não Só a Conexão Pessoal
+
+[[wiki/sources/como-lidar-com-politica-empresarial-lideranca-engenharia]] estende essa tese para um contexto mais específico que "ser lembrado positivamente": ao propor uma mudança organizacional, quem recebe a proposta avalia implicitamente o risco de dizer sim — e um relacionamento prévio de confiança reduz esse risco percebido antes mesmo de o mérito técnico da proposta entrar em jogo. Ver [[wiki/concepts/politica-organizacional]] para o mecanismo completo.
+
 ## Ver também
 
 - [[wiki/concepts/soft-skills]]
 - [[wiki/concepts/comunicacao-persuasiva]]
 - [[wiki/concepts/colaboracao-times]]
+- [[wiki/concepts/politica-organizacional]] — mesma tese aplicada a navegar decisões e mudanças dentro da empresa
 - [[wiki/entities/dale-carnegie]]
 
 ## Key Sources
 
+- [[wiki/sources/como-lidar-com-politica-empresarial-lideranca-engenharia]] — relacionamento e credibilidade como redutores de risco percebido em propostas de mudança organizacional
 - [[wiki/sources/3-soft-skills-que-poucos-programadores-dominam]]
