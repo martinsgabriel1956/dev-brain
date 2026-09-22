@@ -3,8 +3,8 @@ type: concept
 title: "Service Mesh"
 aliases: ["service mesh", "malha de serviços"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-09-22
+source_count: 2
 tags: [service-mesh, kubernetes, microsservicos, infraestrutura, resiliencia, seguranca]
 skill: tech-mentor-system-design
 status: stable
@@ -68,4 +68,5 @@ Kiali visualiza o service graph com taxas de erro por link e status mTLS em temp
 
 ## Key Sources
 
+- [[wiki/sources/grpc]] — gRPC usa HTTP/2 + Protobuf para comunicação entre serviços. Schema-first via `.proto`. 4 padrões de comunicação: Unary, Server Streaming, Client Streaming, Bidirectional Streaming. Vantagens vs REST:...
 - [[sources/service-mesh]]

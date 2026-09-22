@@ -3,8 +3,8 @@ type: concept
 title: "RFC — Request for Comments"
 aliases: ["RFC", "Request for Comments"]
 date_created: 2026-05-17
-date_updated: 2026-07-22
-source_count: 3
+date_updated: 2026-09-22
+source_count: 4
 tags: [rfc, documentação, processo, arquitetura, ia, source-of-truth]
 skill: tech-mentor-system-design
 status: draft
@@ -12,7 +12,7 @@ status: draft
 
 # RFC — Request for Comments
 
-Documento de proposta aberta que busca feedback antes de uma decisão ser tomada. Diferente do [[trd-technical-requirements-document]] (especificação para implementar) e do [[adr-architecture-decision-record]] (registro de decisão já tomada).
+Documento de proposta aberta que busca feedback antes de uma decisão ser tomada. Diferente do [[concepts/trd-technical-requirements-document]] (especificação para implementar) e do [[adr-architecture-decision-record]] (registro de decisão já tomada).
 
 Uso: quando a decisão ainda está em aberto e múltiplos stakeholders devem opinar.
 
@@ -28,6 +28,7 @@ Fora do contexto de processo organizacional documentado acima, "RFC" também é 
 
 ## Key Sources
 
+- [[wiki/sources/request-for-comments]] — fonte dedicada ao mecanismo RFC em si: propor mudanças grandes demais para decidir em silêncio (breaking changes, migrações)
 - [[wiki/sources/trd-technical-requirements-document]]
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — RFC como source of truth anti-alucinação para IA; inversão de tempo 80/20 planejamento/execução; especificações agnósticas à linguagem
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — uso homônimo do termo: RFC como especificação técnica IETF (RFC 3629 / UTF-8), não processo de proposta

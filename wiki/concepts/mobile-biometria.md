@@ -69,8 +69,8 @@ biometricPrompt.authenticate(
 
 ## Ver também
 
-- [[mobile-seguranca]] — Keychain/Keystore para armazenamento de chaves
-- [[mobile-armazenamento-local]] — onde guardar tokens protegidos por biometria
+- [[concepts/mobile-seguranca]] — Keychain/Keystore para armazenamento de chaves
+- [[concepts/mobile-armazenamento-local]] — onde guardar tokens protegidos por biometria
 - [[autenticacao-segura]] — padrões gerais de autenticação
 - [[wiki/concepts/webauthn-fido2-u2f]] — biometria como liberador local da chave privada num fluxo challenge-response
 - [[wiki/concepts/mfa-multifator-autenticacao]] — biometria implementa o fator "algo que você é"

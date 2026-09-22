@@ -4,7 +4,7 @@ title: "Dizer Sim Para Tudo"
 aliases: ["yes man dev", "sempre disponível", "promise debt", "dívida de promessa"]
 date_created: 2026-04-22
 date_updated: 2026-04-22
-source_count: 2
+source_count: 3
 tags: [hábitos, carreira, foco, liderança, produtividade, limites]
 skill: tech-mentor-leadership
 status: stable

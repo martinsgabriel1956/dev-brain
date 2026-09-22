@@ -4,7 +4,7 @@ title: "SAST (Static Application Security Testing)"
 aliases: ["sast", "static application security testing", "análise estática de segurança", "sonarqube"]
 date_created: 2026-06-10
 date_updated: 2026-08-06
-source_count: 3
+source_count: 4
 tags: [security, sast, devsecops, sonarqube, appsec, static-analysis]
 skill: tech-mentor-security
 status: stable

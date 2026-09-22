@@ -3,8 +3,8 @@ type: concept
 title: "Rate Limiting"
 aliases: ["throttling", "rate limit", "token bucket", "sliding window"]
 date_created: 2026-04-23
-date_updated: 2026-09-08
-source_count: 10
+date_updated: 2026-09-22
+source_count: 11
 tags: [rate-limiting, token-bucket, sliding-window, redis, throttling, protecao-api, gatekeeper, attack-surface]
 skill: tech-mentor-backend
 status: stub
@@ -52,6 +52,7 @@ Além do risco de segurança, não limitar rotas públicas gera custo direto: um
 
 ## Key Sources
 
+- [[wiki/sources/estimativas-back-of-envelope]] — Framework de 4 passos: (1) clarificar escopo — DAU, read/write ratio, pico vs média; (2) estimar QPS; (3) estimar storage; (4) estimar bandwidth. O objetivo é ordem de grandeza para evitar...
 - [[sources/rate-limiting]]
 - [[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] — ausência de rate limit como condição necessária para brute force de login com Burp Intruder, ffuf e Hydra
 - [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — rate limit + bloqueio de conta como defesa do ataque online, ao lado de MFA

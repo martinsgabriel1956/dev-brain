@@ -4,7 +4,7 @@ title: "SQL Injection"
 aliases: ["sql injection", "sqli", "injeção sql", "bobby tables"]
 date_created: 2026-06-10
 date_updated: 2026-09-01
-source_count: 9
+source_count: 10
 tags: [security, sql-injection, owasp, input-sanitization, appsec, attack-surface]
 skill: tech-mentor-security
 status: stable

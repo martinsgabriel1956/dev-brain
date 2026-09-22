@@ -4,7 +4,7 @@ title: "Entrada e Saída Indireta (Indirect Input / Indirect Output)"
 aliases: ["indirect input", "indirect output", "entrada indireta", "saída indireta", "control point", "observation point", "ponto de controle", "ponto de observação", "direct input", "entrada direta"]
 date_created: 2026-08-21
 date_updated: 2026-09-21
-source_count: 12
+source_count: 13
 tags: [testes, test-doubles, sut, doc, terminologia, xunit]
 skill: tech-mentor-testing
 status: stub

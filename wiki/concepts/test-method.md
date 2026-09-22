@@ -4,7 +4,7 @@ title: "Test Method"
 aliases: ["método de teste"]
 date_created: 2026-09-11
 date_updated: 2026-09-21
-source_count: 8
+source_count: 9
 tags: [testes, testcase-class, xunit, terminologia]
 skill: tech-mentor-testing
 status: stub

@@ -32,4 +32,4 @@ Baseline Profiles instruem o ART (Android Runtime) a pré-compilar caminhos crí
 
 ## Conceitos Abordados
 
-- [[mobile-baseline-profiles]] · [[mobile-metricas-criticas]] · [[mobile-profiling]] · [[mobile-cicd]]
+- [[concepts/mobile-baseline-profiles]] · [[concepts/mobile-metricas-criticas]] · [[concepts/mobile-profiling]] · [[concepts/mobile-cicd]]

@@ -3,8 +3,8 @@ type: concept
 title: "Redis GEO"
 aliases: ["redis geo", "redis geosearch", "redis geoadd"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-09-22
+source_count: 2
 tags: [redis, geoespacial, localização, system-design, performance]
 skill: tech-mentor-system-design
 status: stable
@@ -51,4 +51,5 @@ Dados efêmeros: se Redis cair, motoristas reenviam posição em 4s. Degradaçã
 
 ## Key Sources
 
+- [[wiki/sources/presence-system]] — Sistema de presença (online/offline) usa Heartbeat + Redis TTL: cliente envia ping a cada 15s, servidor atualiza `presence:{userId}` com SETEX 30s. Se TTL expirar, usuário está offline. Para...
 - [[sources/case-uber]]

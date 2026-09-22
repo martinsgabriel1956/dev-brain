@@ -44,13 +44,13 @@ O domínio fica no centro, protegido de detalhes de infraestrutura:
 
 ## Conexão com Event Sourcing
 
-DDD e [[event-sourcing]] são complementares: Domain Events (DDD) são exatamente os eventos persistidos em Event Sourcing. O Aggregate emite eventos que descrevem o que aconteceu; o Event Store os persiste.
+DDD e [[concepts/event-sourcing]] são complementares: Domain Events (DDD) são exatamente os eventos persistidos em Event Sourcing. O Aggregate emite eventos que descrevem o que aconteceu; o Event Store os persiste.
 
 [[wiki/sources/cqrs-e-event-sourcing-explicado-na-pratica]] reforça essa conexão pelo ângulo de estabilidade: a ação de domínio (ex.: "criar uma ordem com tais produtos") tende a mudar pouco ao longo do tempo mesmo quando a estrutura de persistência muda — reforça a tese de que o evento deve refletir a ação do domínio, não os detalhes de como ela é armazenada.
 
 ## Uso no Nubank
 
-O [[nubank]] usa DDD como base para organizar o domínio financeiro — contas, transações, limites de crédito. A combinação DDD + [[programacao-funcional]] + [[event-sourcing]] permite que o codebase envelheça como vinho.
+O [[nubank]] usa DDD como base para organizar o domínio financeiro — contas, transações, limites de crédito. A combinação DDD + [[programacao-funcional]] + [[concepts/event-sourcing]] permite que o codebase envelheça como vinho.
 
 ## Ubiquitous Language como Correção do Desalinhamento Dev-IA
 

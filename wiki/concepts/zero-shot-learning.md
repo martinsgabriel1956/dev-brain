@@ -4,7 +4,7 @@ title: "Zero-Shot Learning"
 aliases: ["zero-shot", "zero-shot prompting", "aprendizado zero-shot"]
 date_created: 2026-05-17
 date_updated: 2026-05-17
-source_count: 1
+source_count: 2
 tags: [llm, zero-shot, in-context-learning, prompt-engineering]
 skill: tech-mentor-ai
 status: stable

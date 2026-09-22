@@ -4,7 +4,7 @@ title: "UUID — Universally Unique Identifier"
 aliases: ["uuid", "uuidv4", "uuidv7", "ulid", "nanoid"]
 date_created: 2026-04-23
 date_updated: 2026-09-14
-source_count: 3
+source_count: 4
 tags: [uuid, primary-key, distribuido, uuidv7, ulid, snowflake-id, banco-de-dados, idor, sharding]
 skill: tech-mentor-data
 status: stub

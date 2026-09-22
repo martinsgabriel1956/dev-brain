@@ -4,7 +4,7 @@ title: "IDOR / BOLA (Insecure Direct Object Reference)"
 aliases: ["idor", "bola", "broken object level authorization", "insecure direct object reference"]
 date_created: 2026-07-04
 date_updated: 2026-08-27
-source_count: 5
+source_count: 1
 tags: [idor, bola, owasp, api-security, broken-access-control, appsec]
 skill: tech-mentor-security
 status: stable

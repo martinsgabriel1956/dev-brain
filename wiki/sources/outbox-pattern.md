@@ -43,7 +43,7 @@ Outbox Pattern resolve o problema de dual-write: salvar no banco E publicar no b
 - [[concepts/cdc]]
 - [[concepts/debezium]]
 - [[concepts/inbox-pattern]]
-- [[concepts/idempotency]]
+- [[concepts/idempotencia]]
 - [[concepts/dual-write]]
 
 ## Open Questions

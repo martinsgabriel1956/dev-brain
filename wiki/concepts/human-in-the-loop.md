@@ -3,8 +3,8 @@ type: concept
 title: "Human-in-the-Loop (HITL)"
 aliases: ["HITL", "human in the loop", "aprovação humana agente"]
 date_created: 2026-06-02
-date_updated: 2026-09-21
-source_count: 8
+date_updated: 2026-09-22
+source_count: 9
 tags: [hitl, human-in-the-loop, agente, spec-driven, aprovacao, controle, checkpoint, erros-compostos]
 skill: tech-mentor-ai
 status: stable
@@ -69,6 +69,7 @@ O [[wiki/concepts/plan-mode|Plan Mode]] é uma forma leve de HITL: o humano revi
 
 ## Key Sources
 
+- [[wiki/sources/agentes-core]] — Um agente é um LLM em loop: decide, age via tools, observa resultado, itera. A diferença para um pipeline é a capacidade de roteamento dinâmico — o LLM escolhe o próximo passo. Complexidade...
 - [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — checklist de verificação verbalizado no prompt e delegado ao próprio agente gerador, substituindo o checkpoint humano por etapa/deploy
 - [[wiki/sources/formacao-ia-devs-aula-04-agentes-planejamento]]
 - [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] — humano se move de checkpoint por execução para definidor de política de quando o agente pode agir sozinho

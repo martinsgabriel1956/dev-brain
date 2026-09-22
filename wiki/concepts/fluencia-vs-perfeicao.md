@@ -4,7 +4,7 @@ title: "Fluência vs. Perfeição"
 aliases: ["fluencia", "fluency over perfection", "fazer apesar do erro"]
 date_created: 2026-05-16
 date_updated: 2026-06-26
-source_count: 2
+source_count: 4
 tags: [aprendizado, mentalidade, linguagem]
 skill: tech-mentor-leadership
 status: stable

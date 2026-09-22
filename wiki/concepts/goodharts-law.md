@@ -3,8 +3,8 @@ type: concept
 title: "Lei de Goodhart"
 aliases: ["Goodhart's Law", "Goodhart's Law Metrics"]
 date_created: 2026-07-28
-date_updated: 2026-09-18
-source_count: 6
+date_updated: 2026-09-22
+source_count: 7
 tags: [metrics, engineering-management, tomada-de-decisao]
 skill: tech-mentor-leadership
 status: stable
@@ -50,6 +50,10 @@ O mesmo mecanismo aparece ao medir produtividade com IA: contagem de PRs e volum
 
 [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]] traz um caso concreto e histórico do mesmo mecanismo em escala de metodologia de gestão inteira, complementando a crítica já registrada acima (via [[wiki/sources/agilidade-manifesto-agil-fabio-akita]]): a Motorola apresentou números de sucesso reais e expressivos com [[wiki/concepts/six-sigma-dmaic|Six Sigma]] entre 1987–1997 (vendas 5x, lucro 20%/ano), mas isso não garantiu sucesso de longo prazo — a empresa perdeu relevância nas décadas seguintes. O ponto não é que os números fossem falsos ou torturados (diferente do exemplo de story points forçados), mas que **números de sucesso passado, mesmo genuínos, não são garantia de metodologia vencedora indefinidamente** — um ângulo adicional ao mecanismo de Goodhart já documentado nesta página, mais próximo de viés de sobrevivência do que de manipulação direta da métrica.
 
+## Caso Clássico: Medir "Bugs Corrigidos" Incentiva Criar Mais Bugs
+
+[[wiki/sources/sobre-ser-gerente-fabio-akita]] traz uma instância direta e didática do mecanismo desta página, fora do contexto de story points: uma empresa que mede "quantidade de bugs corrigidos" como métrica positiva, premiando quem mais corrige, cria o incentivo racional oposto ao pretendido — ninguém se preocupa em não gerar bugs novos, porque a métrica premia corrigir, não prevenir. É o mesmo padrão do exemplo de story points forçados já documentado acima, mas isolado como exemplo único de métrica mal desenhada, sem a camada adicional de pressão de PO/Scrum Master.
+
 ## Key Sources
 
 - [[wiki/sources/fatores-nao-tecnicos-codigo-ruim-bons-desenvolvedores-bernardo-lobato]]
@@ -58,3 +62,4 @@ O mesmo mecanismo aparece ao medir produtividade com IA: contagem de PRs e volum
 - [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]] — métricas de output infladas por IA como caso de Goodhart na era da IA
 - [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — aplica a lei a métricas de qualidade: meta de "100% de cobertura" gera testes inúteis, mas 5% de cobertura ainda é sinal legítimo de subteste (a métrica serve como sinal, não como alvo)
 - [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]] — caso histórico Motorola/Six Sigma: números de sucesso genuínos não garantem sucesso de longo prazo
+- [[wiki/sources/sobre-ser-gerente-fabio-akita]] — caso didático isolado: medir "bugs corrigidos" como métrica positiva incentiva criar mais bugs

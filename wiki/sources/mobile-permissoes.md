@@ -33,4 +33,4 @@ iOS: pedir permissão apenas quando necessário com contexto claro (`NSCameraUsa
 
 ## Conceitos Abordados
 
-- [[mobile-permissoes]] · [[mobile-seguranca]] · [[mobile-biometria]]
+- [[concepts/mobile-permissoes]] · [[concepts/mobile-seguranca]] · [[concepts/mobile-biometria]]

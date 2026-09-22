@@ -14,7 +14,7 @@ status: stub
 
 ## Definição
 
-O texto gerado por um modelo de linguagem em resposta a um [[prompt-engineering|prompt]]. O modelo recebe o prompt e "continua escrevendo" — como uma pessoa que recebe o começo de uma frase e a completa.
+O texto gerado por um modelo de linguagem em resposta a um [[concepts/prompt-engineering|prompt]]. O modelo recebe o prompt e "continua escrevendo" — como uma pessoa que recebe o começo de uma frase e a completa.
 
 ## Mecanismo
 

@@ -31,14 +31,14 @@ Resumo em PT-BR da trilogia de artigos de Wenbin Fang sobre como ele construiu e
 
 ## Conceitos-Chave
 
-- [[one-person-company]] — empresa operada por uma única pessoa com sistemas automatizados
-- [[boring-technology]] — Django, PostgreSQL, Redis, RabbitMQ, Celery — sem AI ou blockchain
-- [[good-enough-engineering]] — não over-engenheirar antes de ter usuários
+- [[concepts/one-person-company]] — empresa operada por uma única pessoa com sistemas automatizados
+- [[concepts/boring-technology]] — Django, PostgreSQL, Redis, RabbitMQ, Celery — sem AI ou blockchain
+- [[concepts/good-enough-engineering]] — não over-engenheirar antes de ter usuários
 - [[over-engineering]] — armadilha de construir mais do que o necessário
-- [[analise-paralitica]] — pensar demais sem agir ("Seu pensar demais é minha oportunidade")
-- [[processamento-assincrono]] — workers Celery + RabbitMQ para tarefas pesadas
-- [[monorepo]] — repositório único para backend + frontend + DevOps
-- [[aprendizado-informal]] — podcasts como recurso de conhecimento não estruturado
+- [[concepts/analise-paralitica]] — pensar demais sem agir ("Seu pensar demais é minha oportunidade")
+- [[concepts/processamento-assincrono]] — workers Celery + RabbitMQ para tarefas pesadas
+- [[concepts/monorepo]] — repositório único para backend + frontend + DevOps
+- [[concepts/aprendizado-informal]] — podcasts como recurso de conhecimento não estruturado
 
 ---
 

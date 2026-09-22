@@ -57,9 +57,9 @@ Detecta regressões de startup antes de chegar à produção.
 
 ## Ver também
 
-- [[mobile-metricas-criticas]] — cold start como KPI
-- [[mobile-profiling]] — medir ganho com Macrobenchmark
-- [[mobile-cicd]] — geração automática de perfil
+- [[concepts/mobile-metricas-criticas]] — cold start como KPI
+- [[concepts/mobile-profiling]] — medir ganho com Macrobenchmark
+- [[concepts/mobile-cicd]] — geração automática de perfil
 
 ## Key Sources
 

@@ -3,8 +3,8 @@ type: concept
 title: "Scrum Master"
 aliases: ["SM", "Facilitador Scrum"]
 date_created: 2026-07-28
-date_updated: 2026-09-18
-source_count: 3
+date_updated: 2026-09-22
+source_count: 4
 tags: [agile, scrum, engineering-management, papeis]
 skill: tech-mentor-leadership
 status: stable
@@ -40,6 +40,10 @@ O Agile nasceu porque desenvolvedores estavam exaustos de fazer *crunch* e entre
 
 [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]] aprofunda a origem histórica já registrada acima: o Sprint (execução linear seguida de retrospectiva/review, ajuste e novo Sprint) é estruturalmente o mesmo ciclo do [[wiki/concepts/ciclo-pdca-deming|PDCA de Deming]] e do Kaizen do Modelo Toyota — ver [[wiki/concepts/tentativa-e-erro-como-metodo-cientifico]]. Isso reforça, de outro ângulo, por que o papel de Scrum Master degenera em "fiscal de números" quando perde de vista essa raiz: o ciclo PDCA/Kaizen nasceu para resolver a causa raiz de um problema real a cada iteração (ver [[wiki/concepts/tentativa-e-erro-como-metodo-cientifico|5 Porquês]]), não para gerar relatórios de conformidade de processo.
 
+## Sprint Longo Como Sintoma, Não Escolha Neutra
+
+[[wiki/sources/sobre-ser-gerente-fabio-akita]] contribui um diagnóstico direto para uma falha que o papel de Scrum Master deveria capturar: sprints com mais de duas semanas geralmente escondem outro problema sendo mascarado com mais tempo, em vez de resolvido — normalmente reuniões que consomem tempo demais (planning tomando a segunda-feira inteira, review/retro tomando a sexta inteira) ou interrupções constantes no meio da semana. Reforça o ponto já central desta página: cronometrar cerimônias ao segundo, sem questionar por que elas precisam ser tão longas, é o mesmo erro de fiscalizar números sem entender a causa raiz.
+
 ## Conceitos Relacionados
 
 [[wiki/concepts/story-points]] · [[wiki/concepts/planning-poker]] · [[wiki/concepts/goodharts-law]] · [[wiki/concepts/manifesto-agil-como-adjetivo]] · [[wiki/concepts/tentativa-e-erro-como-metodo-cientifico]]
@@ -49,3 +53,4 @@ O Agile nasceu porque desenvolvedores estavam exaustos de fazer *crunch* e entre
 - [[wiki/sources/story-points-po-forcando-30-40-pontos-por-sprint]]
 - [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — Scrum como distorção posterior do manifesto original, não sua implementação canônica
 - [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]] — Sprint/retrospectiva como instância do mesmo ciclo estrutural do PDCA/Kaizen do Modelo Toyota
+- [[wiki/sources/sobre-ser-gerente-fabio-akita]] — sprint acima de 2 semanas como sintoma de reunião longa demais ou interrupção constante, não escolha neutra de processo

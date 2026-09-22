@@ -32,8 +32,8 @@ O Strangler Fig substitui sistemas legados de forma incremental em três estági
 ## Conceitos Abordados
 - [[strangler-fig]]
 - [[cdc]]
-- [[feature-flags]]
-- [[expand-contract]]
+- [[concepts/feature-flags]]
+- [[concepts/expand-contract]]
 - [[shadow-mode]]
 - [[proxy-facade]]
 - [[migração-incremental]]

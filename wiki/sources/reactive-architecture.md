@@ -35,7 +35,7 @@ Reactive Architecture (Reactive Manifesto): 4 pilares — Responsive (responde e
 ## Entities & Concepts Touched
 
 - [[concepts/reactive-architecture]]
-- [[concepts/backpressure]]
+- [[concepts/back-pressure]]
 - [[concepts/message-driven]]
 - [[concepts/reactive-manifesto]]
 - [[concepts/rxjs]]

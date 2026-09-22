@@ -3,8 +3,8 @@ type: concept
 title: "Clean Architecture"
 aliases: ["arquitetura limpa", "clean arch"]
 date_created: 2026-07-24
-date_updated: 2026-09-18
-source_count: 11
+date_updated: 2026-09-22
+source_count: 12
 tags: [clean-architecture, uncle-bob, dependency-inversion, use-case, presenter, view-model, arquitetura, dci, bce]
 skill: tech-mentor-backend
 status: draft
@@ -115,6 +115,7 @@ A mesma fonte nomeia uma divergência deliberada frente ao fluxo Controller/Pres
 
 ## Key Sources
 
+- [[wiki/sources/architecture-fitness-functions]] — Fitness Functions são testes automatizados que validam restrições arquiteturais — conceito de *Building Evolutionary Architectures* (Ford, Parsons, Kua). Em vez de ADRs que ninguém lê, você escreve...
 - [[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] — Clean Architecture reestudada como restrição imposta a agentes de IA antes da geração de código, não como checklist de revisão posterior
 - [[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] — mapeamento de Use Cases/Entities para a camada "Core" de um módulo; lacuna de reuso de infraestrutura entre módulos que a arquitetura modular cobre
 - [[wiki/sources/prompt-context-harness-engineering-tres-pilares]] — gráfico de complexidade-versus-tempo citado como justificativa para harness engineering, fora do escopo usual de Clean Architecture como estilo de código

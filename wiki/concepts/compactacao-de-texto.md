@@ -4,7 +4,7 @@ title: "Compactação de Texto (Huffman Coding, Deflate, LZSS/LZ77)"
 aliases: ["huffman coding", "deflate", "lzss", "lz77", "compressão de texto", "text compression"]
 date_created: 2026-07-27
 date_updated: 2026-08-28
-source_count: 4
+source_count: 3
 tags: [cs-fundamentals, compressao, huffman-coding, deflate, lzss, lz77, gzip, encoding, priority-queue]
 skill: cs-fundamentals
 status: draft

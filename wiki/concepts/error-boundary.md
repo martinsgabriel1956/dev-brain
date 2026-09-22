@@ -4,7 +4,7 @@ title: "Error Boundary"
 aliases: ["error boundaries", "boundary de erro React"]
 date_created: 2026-04-22
 date_updated: 2026-04-22
-source_count: 1
+source_count: 2
 tags: [react, error-handling, resiliência, error-boundary]
 skill: tech-mentor-frontend
 status: stable

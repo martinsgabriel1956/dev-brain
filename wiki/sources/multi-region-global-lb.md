@@ -39,4 +39,4 @@ Multi-region é a resposta para SLAs de 99,99%+ e latência global baixa, mas cu
 - [[anycast]]
 - [[read-local-write-global]]
 - [[consistencia-de-dados]]
-- [[failover]]
+- [[concepts/failover]]

@@ -12,7 +12,7 @@ status: draft
 
 # Sticky Session
 
-Configuração do [[load-balancer]] que garante que **todas as requisições de um mesmo usuário sempre vão para o mesmo servidor**. Usada como solução paliativa quando o servidor é stateful (guarda sessão em memória).
+Configuração do [[concepts/load-balancer]] que garante que **todas as requisições de um mesmo usuário sempre vão para o mesmo servidor**. Usada como solução paliativa quando o servidor é stateful (guarda sessão em memória).
 
 ## Como funciona
 
@@ -46,7 +46,7 @@ Sticky session trata o sintoma (sessão em memória) sem resolver a causa. A sol
 ## Relação com outros conceitos
 
 - [[stateless]] — a solução correta que elimina a necessidade de sticky sessions
-- [[load-balancer]] — quem implementa a afinidade de sessão
+- [[concepts/load-balancer]] — quem implementa a afinidade de sessão
 - [[escalabilidade-horizontal]] — sticky session limita os benefícios da horizontal
 
 ## Key sources

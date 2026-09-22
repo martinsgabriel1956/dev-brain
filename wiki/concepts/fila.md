@@ -50,7 +50,7 @@ Esta página trata da **estrutura de dados** fila. Sistemas de mensageria como K
 
 - [[pilha]] — estrutura inversa: LIFO em vez de FIFO
 - [[array]] — uma fila pode ser implementada sobre um array circular
-- [[event-sourcing]] — eventos são consumidos em ordem; fila é o mecanismo subjacente
+- [[concepts/event-sourcing]] — eventos são consumidos em ordem; fila é o mecanismo subjacente
 - [[wiki/concepts/filas-e-workers]] — o padrão arquitetural de processamento assíncrono construído sobre esta estrutura
 - [[wiki/concepts/bullmq]] — implementação concreta dessa estrutura sobre Redis, com producer/worker como processos independentes
 

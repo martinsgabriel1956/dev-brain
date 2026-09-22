@@ -4,7 +4,7 @@ title: "Back Pressure"
 aliases: ["back pressure", "backpressure", "pressão de volta", "producer consumer imbalance"]
 date_created: 2026-04-23
 date_updated: 2026-09-02
-source_count: 4
+source_count: 5
 tags: [back-pressure, streaming, reactive, producer-consumer, flow-control]
 skill: tech-mentor-system-design
 status: stable

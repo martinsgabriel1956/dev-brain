@@ -4,7 +4,7 @@ title: "useMemo"
 aliases: ["use memo", "memoização React", "memoize"]
 date_created: 2026-04-22
 date_updated: 2026-08-04
-source_count: 3
+source_count: 4
 tags: [react, hooks, performance, memoização, useMemo]
 skill: tech-mentor-frontend
 status: stable

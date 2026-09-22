@@ -4,7 +4,7 @@ title: "NUnit"
 aliases: ["nunit"]
 date_created: 2026-09-21
 date_updated: 2026-09-21
-source_count: 6
+source_count: 7
 tags: [testes, xunit, dotnet, csharp, test-fixture]
 skill: tech-mentor-testing
 status: stub

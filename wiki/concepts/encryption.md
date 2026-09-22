@@ -4,7 +4,7 @@ title: "Encryption (Criptografia)"
 aliases: ["encryption", "criptografia", "cifra", "encriptação"]
 date_created: 2026-04-29
 date_updated: 2026-07-10
-source_count: 3
+source_count: 4
 tags: [encryption, criptografia, segurança, chave, aes, rsa, e2e, confidencialidade, hmac]
 skill: tech-mentor-security
 status: stable

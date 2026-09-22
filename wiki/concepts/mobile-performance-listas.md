@@ -64,8 +64,8 @@ ListView.builder(
 
 ## Ver também
 
-- [[mobile-animacoes-performaticas]] — animações em itens de lista
-- [[mobile-profiling]] — medir jank com Perfetto/Instruments
+- [[concepts/mobile-animacoes-performaticas]] — animações em itens de lista
+- [[concepts/mobile-profiling]] — medir jank com Perfetto/Instruments
 
 ## Key Sources
 

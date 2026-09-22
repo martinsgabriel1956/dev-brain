@@ -35,12 +35,12 @@ CDN é uma rede de servidores distribuídos (PoPs) que cacheia conteúdo próxim
 
 ## Conceitos Abordados
 
-- [[cdn]]
+- [[concepts/cdn]]
 - [[edge-computing]]
 - [[cache-control]]
 - [[etag]]
 - [[surrogate-keys]]
-- [[cache-invalidation]]
+- [[concepts/cache-invalidation]]
 - [[pop-point-of-presence]]
 - [[waf]]
 - [[ddos-protection]]

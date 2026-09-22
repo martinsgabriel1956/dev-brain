@@ -3,8 +3,8 @@ type: concept
 title: "Split-Brain"
 aliases: ["split brain", "partição de rede", "cérebro dividido"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-09-22
+source_count: 2
 tags: [sistemas-distribuidos, consistencia, partição, split-brain, cap-theorem]
 skill: tech-mentor-system-design
 status: stub
@@ -34,4 +34,5 @@ Algoritmos com **quorum**: [[concepts/raft-paxos]]. Uma decisão só avança se 
 
 ## Key Sources
 
+- [[wiki/sources/raft-leader-election]] — Raft é o algoritmo de consenso mais legível e amplamente usado (etcd, CockroachDB, Consul, TiKV). Três papéis: Leader (único, escreve), Follower (replica), Candidate (em eleição). Eleição: timeout...
 - [[sources/3pc]]

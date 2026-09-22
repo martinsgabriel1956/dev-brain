@@ -37,6 +37,7 @@ Lucas Montana reage ao artigo em inglês "Code Was Never the Hard Part — It's 
 
 ## Entidades Mencionadas
 
+- [[wiki/entities/lucas-montana]] — autor/narrador do vídeo de reação
 - [[wiki/entities/anthropic]] — previsão de Dario Amodei sobre fim do código escrito manualmente em ~6 meses, e hipótese de acesso antecipado a modelos mais avançados
 - [[wiki/entities/leetcode]] — plataforma citada como ainda relevante pra prática de estruturas de dados/algoritmos, mesmo na era de geração de código por IA
 - [[wiki/entities/uncle-bob|Uncle Bob (Robert C. Martin)]] — citado indiretamente via referência ao livro Clean Code como um dos "livros volumosos" mencionados pelo artigo original

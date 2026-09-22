@@ -72,9 +72,9 @@ userId + sessionId permitem correlacionar crashlytics com logs de servidor.
 
 ## Ver também
 
-- [[mobile-metricas-criticas]] — o que monitorar
-- [[mobile-cicd]] — gates de qualidade antes de cada deploy
-- [[observabilidade]] — princípios gerais de observabilidade
+- [[concepts/mobile-metricas-criticas]] — o que monitorar
+- [[concepts/mobile-cicd]] — gates de qualidade antes de cada deploy
+- [[concepts/observabilidade]] — princípios gerais de observabilidade
 
 ## Key Sources
 

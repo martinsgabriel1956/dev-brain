@@ -3,8 +3,8 @@ type: concept
 title: "RED Method"
 aliases: ["red method", "rate errors duration", "golden signals"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-09-22
+source_count: 3
 tags: [observabilidade, metricas, prometheus, sre]
 skill: tech-mentor-system-design
 status: stable
@@ -30,4 +30,6 @@ Rate e Errors alimentam diretamente o SLI de disponibilidade. Duration alimenta 
 
 ## Key Sources
 
+- [[wiki/sources/flame-graph-profiling]] — 4 frameworks de diagnóstico: Flame Graph (onde o CPU passa o tempo), USE Method (Utilization/Saturation/Errors — para recursos de infra), RED Method (Rate/Errors/Duration — para serviços), Four...
+- [[wiki/sources/performance-methods]] — 3 frameworks diagnósticos: USE (Utilization/Saturation/Errors — para recursos), RED (Rate/Errors/Duration — para serviços), Four Golden Signals (Google SRE — Latency/Traffic/Errors/Saturation). k6...
 - [[sources/observabilidade]]

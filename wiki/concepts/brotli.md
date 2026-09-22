@@ -4,7 +4,7 @@ title: "Brotli"
 aliases: ["brotli", "compressão brotli", "content-encoding br"]
 date_created: 2026-08-28
 date_updated: 2026-08-28
-source_count: 1
+source_count: 0
 tags: [compressao, brotli, http, performance, gzip]
 skill: tech-mentor-security
 status: draft

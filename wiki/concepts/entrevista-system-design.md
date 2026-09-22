@@ -4,7 +4,7 @@ title: "Entrevista de System Design (Whiteboard Interview)"
 aliases: ["system design interview", "whiteboard interview", "lousa branca", "entrevista de arquitetura"]
 date_created: 2026-07-20
 date_updated: 2026-09-04
-source_count: 10
+source_count: 9
 tags: [system-design, entrevistas, arquitetura, carreira]
 skill: tech-mentor-system-design
 status: draft

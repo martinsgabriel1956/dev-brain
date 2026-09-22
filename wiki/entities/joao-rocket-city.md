@@ -4,7 +4,7 @@ title: "João (Rocket City)"
 aliases: ["João"]
 date_created: 2026-07-30
 date_updated: 2026-07-30
-source_count: 1
+source_count: 0
 tags: [pessoa, carreira, system-design, entrevistas, youtube]
 skill: tech-mentor-system-design
 status: stub

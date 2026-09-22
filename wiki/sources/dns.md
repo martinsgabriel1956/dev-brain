@@ -33,10 +33,10 @@ DNS traduz nomes legíveis em IPs. O fluxo percorre cache local → resolver rec
 
 ## Conceitos Abordados
 
-- [[dns]]
+- [[concepts/dns]]
 - [[dns-ttl]]
 - [[dns-record-types]]
 - [[dns-routing-policies]]
 - [[email-deliverability]]
-- [[failover]]
-- [[load-balancer]]
+- [[concepts/failover]]
+- [[concepts/load-balancer]]

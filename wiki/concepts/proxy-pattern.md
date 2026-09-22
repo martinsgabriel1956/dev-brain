@@ -4,7 +4,7 @@ title: "Proxy Pattern"
 aliases: ["padrão proxy", "design pattern proxy"]
 date_created: 2026-05-01
 date_updated: 2026-08-05
-source_count: 3
+source_count: 4
 tags: [design-patterns, structural, proxy, oop]
 skill: tech-mentor-backend
 status: stable

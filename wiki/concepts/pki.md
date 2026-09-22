@@ -1,0 +1,29 @@
+---
+type: concept
+title: "Pki"
+aliases: []
+date_created: 2026-09-22
+date_updated: 2026-09-22
+source_count: 2
+tags: [pki]
+skill: tech-mentor-security
+status: stub
+---
+
+# Pki
+
+Stub criado durante sweep de lint (links quebrados) a partir de referências em 2 página(s) da wiki — conteúdo completo pendente de ingest dedicado.
+
+## Contexto das citações
+
+- Em [[wiki/sources/criptografia-fundamentos]]: [[concepts/pki]]
+- Em [[wiki/sources/tls-mtls-vpn]]: [[concepts/pki]]
+
+## Pendências
+
+Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a partir do texto das páginas que a citam. Precisa de fonte dedicada para virar `draft`/`stable`.
+
+## Key sources
+
+- [[wiki/sources/criptografia-fundamentos]]
+- [[wiki/sources/tls-mtls-vpn]]

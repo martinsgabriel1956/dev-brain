@@ -4,7 +4,7 @@ title: "Currículo vs Portfólio"
 aliases: ["currículo vs portfólio", "promise vs proof", "promessa vs prova"]
 date_created: 2026-04-23
 date_updated: 2026-09-14
-source_count: 7
+source_count: 8
 tags: [carreira, contratação, portfólio, evidência]
 skill: tech-mentor-leadership
 status: stable

@@ -3,8 +3,8 @@ type: concept
 title: "gRPC"
 aliases: ["grpc", "protocol buffers", "protobuf rpc"]
 date_created: 2026-08-18
-date_updated: 2026-08-18
-source_count: 2
+date_updated: 2026-09-22
+source_count: 3
 tags: [grpc, rpc, protobuf, http2, apis, go, comunicacao-interna]
 skill: tech-mentor-backend
 status: stub
@@ -34,5 +34,6 @@ Segundo [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]], o gRPC fo
 
 ## Key Sources
 
+- [[wiki/sources/grpc]] — gRPC usa HTTP/2 + Protobuf para comunicação entre serviços. Schema-first via `.proto`. 4 padrões de comunicação: Unary, Server Streaming, Client Streaming, Bidirectional Streaming. Vantagens vs REST:...
 - [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]] — uso de gRPC para comunicação interna entre módulos, HTTP para clientes externos, em um monolito modular Go
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — origem do gRPC (Google, 2015) como resposta de performance à ascensão de arquiteturas de microsserviços, em paralelo ao surgimento do GraphQL

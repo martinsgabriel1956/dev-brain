@@ -42,14 +42,14 @@ SELECT SUM(amount) FROM ledger_entries;  -- deve retornar 0
 
 ## Conexão com Event Sourcing
 
-O ledger imutável é [[event-sourcing]] aplicado ao domínio financeiro:
+O ledger imutável é [[concepts/event-sourcing]] aplicado ao domínio financeiro:
 - Cada entrada = um evento imutável
 - Saldo atual = replay / soma de todos os eventos
-- [[Datomic]] implementa esse padrão a nível de banco de dados
+- [[concepts/datomic]] implementa esse padrão a nível de banco de dados
 
 ## Uso no Nubank
 
-O [[nubank]] usa esse padrão como base do sistema financeiro. A imutabilidade do ledger, combinada com [[datomic]] e [[event-sourcing]], dá ao Nubank time-travel e auditoria nativa — algo que bancos legados não conseguem oferecer.
+O [[nubank]] usa esse padrão como base do sistema financeiro. A imutabilidade do ledger, combinada com [[datomic]] e [[concepts/event-sourcing]], dá ao Nubank time-travel e auditoria nativa — algo que bancos legados não conseguem oferecer.
 
 ## Key Sources
 

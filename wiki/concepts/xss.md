@@ -3,8 +3,8 @@ type: concept
 title: "XSS (Cross-Site Scripting)"
 aliases: ["xss", "cross-site scripting", "injeção javascript", "script injection"]
 date_created: 2026-06-10
-date_updated: 2026-09-01
-source_count: 7
+date_updated: 2026-09-22
+source_count: 9
 tags: [security, xss, owasp, appsec, input-sanitization, attack-surface, dvwa, csp]
 skill: tech-mentor-security
 status: draft
@@ -83,6 +83,7 @@ A mesma fonte cita que, de todos os ataques documentados em 2019, cerca de 74% e
 
 ## Key Sources
 
+- [[wiki/sources/browser-security]] — Browser Security: Same-Origin Policy é a base (scheme+host+port). CORS habilita cross-origin controlado. CSP com nonces previne XSS mesmo após injeção. COEP + COOP habilitam `SharedArrayBuffer` e...
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — mencionado como exemplo de vulnerabilidade detectada por SAST (SonarQube)
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — teste manual de injeção de script como parte de checklist de autopentest assistido por IA
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — roubo de token via localStorage vs. proteção de cookie HttpOnly; CSP como camada de defesa

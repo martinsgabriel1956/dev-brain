@@ -50,7 +50,7 @@ O resultado do cálculo de atenção é um novo vetor por token, combinando sign
 
 ## Custo: O(n²)
 
-Para n tokens, a matriz de atenção é n×n — custo quadrático no comprimento da sequência. Ver [[transformer-architecture]] para o impacto disso em context window e as otimizações ([[flash-attention]], [[mamba-ssm]]) que existem para mitigar.
+Para n tokens, a matriz de atenção é n×n — custo quadrático no comprimento da sequência. Ver [[transformer-architecture]] para o impacto disso em context window e as otimizações ([[concepts/flash-attention]], [[concepts/mamba-ssm]]) que existem para mitigar.
 
 ## Conexões
 
@@ -58,7 +58,7 @@ Para n tokens, a matriz de atenção é n×n — custo quadrático no compriment
 - [[embedding-vectors]] — a entrada semântica sobre a qual Q/K/V são calculados
 - [[positional-encoding]] — pré-requisito para que attention capture ordem
 - [[wiki/entities/attention-is-all-you-need-paper]] — paper que introduziu o mecanismo (2017)
-- [[flash-attention]] — implementação IO-aware do mesmo cálculo matemático, muito mais eficiente
+- [[concepts/flash-attention]] — implementação IO-aware do mesmo cálculo matemático, muito mais eficiente
 
 ## Key Sources
 

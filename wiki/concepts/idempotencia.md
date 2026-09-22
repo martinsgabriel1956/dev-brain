@@ -3,8 +3,8 @@ type: concept
 title: "Idempotência"
 aliases: ["idempotência", "idempotency", "idempotency key"]
 date_created: 2026-04-22
-date_updated: 2026-09-02
-source_count: 8
+date_updated: 2026-09-22
+source_count: 10
 tags: [distribuidos, resiliencia, api, retry, mensageria, double-spend, double-submit, webhook, fintech]
 skill: tech-mentor-system-design
 status: stable
@@ -174,6 +174,7 @@ Um riff citado em [[wiki/sources/two-hard-things-martin-fowler]] (autoria de Mat
 
 ## Key Sources
 
+- [[wiki/sources/event-driven-architecture]] — EDA desacopla produtores de consumidores via eventos — comunicação assíncrona, temporal decoupling. Dois padrões de coordenação: Choreography (cada serviço reage a eventos, sem coordenador) e...
 - [[wiki/sources/two-hard-things-martin-fowler]] — riff de folclore que cita "exactly-once delivery" como um dos dois problemas difíceis de sistemas distribuídos
 - [[sources/retry-backoff]]
 - [[wiki/sources/acoplamento-abstracao-estado]]

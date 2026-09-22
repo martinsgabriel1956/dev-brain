@@ -3,7 +3,7 @@ type: source
 title: "Test Run (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["test run", "execução de teste", "xunit patterns glossary test run"]
 date_created: 2026-09-21
-date_updated: 2026-09-21
+date_updated: 2026-09-22
 source_file: /home/gabriel-martins/Documentos/dev-brain/raw/test-run-xunitpatterns.md
 source_url: "http://xunitpatterns.com/test%20run.html"
 author: "Gerard Meszaros"
@@ -52,7 +52,7 @@ Esta é a primeira vez, na wiki, que dois verbetes do Glossário xUnitPatterns.c
 
 ## Questões Abertas
 
-- Resolve parcialmente a lacuna sinalizada em [[wiki/sources/test-result-xunitpatterns]] ("test success", "test failure", "test error" e "test run" como termos irmãos sem fonte isolada) — "test run" agora está coberto; **test success**, **test failure** e **test error** seguem sem verbete próprio ingerido.
+- Resolve a lacuna sinalizada em [[wiki/sources/test-result-xunitpatterns]] ("test success", "test failure", "test error" e "test run" como termos irmãos sem fonte isolada) — "test run" agora está coberto; ~~**test success**, **test failure** e **test error** seguem sem verbete próprio ingerido.~~ **atualização 2026-09-22**: [[wiki/sources/test-failure-xunitpatterns]] fechou "test failure", [[wiki/sources/test-success-xunitpatterns]] fechou "test success" e [[wiki/sources/test-error-xunitpatterns]] fechou "test error", o último do quarteto. Lacuna completamente resolvida.
 - A fonte não esclarece se "test run" pode se referir tanto à execução de um `test` individual quanto de uma `test suite` inteira (o texto usa "a test or test suite" indistintamente) — fica implícito que sim, sem termo separado para cada granularidade.
 
 ---

@@ -63,7 +63,7 @@ Fonte complementar a [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]] — 
 - [[harness-de-qualidade]] — ferramental determinístico que força padrões de código bom
 - [[pipeline-de-qualidade]] — linters, coverage, mutation testing, análise estática, E2E
 - [[teste-de-mutacao]] — valida que testes realmente testam comportamento
-- [[tdd]] — TDD via IA é mais fácil e mais necessário
+- [[concepts/tdd]] — TDD via IA é mais fácil e mais necessário
 - [[n-plus-one]] — erro estrutural típico da IA: foco na feature, não no sistema
 
 ---

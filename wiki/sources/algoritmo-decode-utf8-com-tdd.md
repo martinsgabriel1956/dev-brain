@@ -27,11 +27,11 @@ Continuação direta de [[wiki/sources/como-strings-realmente-funcionam]] (respo
 
 **1. TDD funciona melhor quando interface, input e output já são conhecidos.**
 A especificação UTF-8 (RFC) já define exatamente isso, tornando este um caso de uso ideal para TDD.
-→ [[tdd]]
+→ [[concepts/tdd]]
 
 **2. Importar a suite de testes de uma implementação de referência é uma técnica válida de TDD.**
 Em vez de escrever testes do zero (arriscando esquecer edge cases), o autor copiou os testes do pacote `unicode/utf8` da stdlib de Go. Passar em todos eles é evidência forte de corretude — inclusive contra sequências de bytes inválidas que seriam difíceis de antecipar sozinho.
-→ [[tdd]], [[go-stdlib]]
+→ [[concepts/tdd]], [[concepts/go-stdlib]]
 
 **3. Decodificar é mais simples que validar.**
 Montar a runa a partir de bytes válidos é direto; a maior parte da complexidade do algoritmo está em rejeitar corretamente todo input inválido (comprimento, bytes de continuação, overlong encoding, surrogate pairs, codepoint máximo).
@@ -78,9 +78,9 @@ Este vídeo usa "RFC" no sentido de **especificação técnica publicada pela IE
 - [[ascii]]
 - [[charset]]
 - [[string]]
-- [[tdd]]
-- [[go-fundamentos]]
-- [[go-stdlib]]
+- [[concepts/tdd]]
+- [[concepts/go-fundamentos]]
+- [[concepts/go-stdlib]]
 - [[bitwise-operations]]
 - [[overlong-encoding]]
 - [[rfc-request-for-comments]]

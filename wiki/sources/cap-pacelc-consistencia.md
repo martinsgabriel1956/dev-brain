@@ -34,14 +34,14 @@ Aprofundamento em CAP e PACELC com foco no comportamento pr√°tico durante parti√
 
 ## Conceitos Abordados
 
-- [[cap-theorem-concept]]
-- [[pacelc]]
-- [[linearizability]]
+- [[concepts/cap-theorem-concept]]
+- [[concepts/pacelc]]
+- [[concepts/linearizability]]
 - [[sequential-consistency]]
-- [[causal-consistency]]
-- [[eventual-consistency]]
+- [[concepts/causal-consistency]]
+- [[concepts/eventual-consistency]]
 - [[read-repair]]
-- [[anti-entropy]]
-- [[hinted-handoff]]
-- [[vector-clock]]
-- [[merkle-tree]]
+- [[concepts/anti-entropy]]
+- [[concepts/hinted-handoff]]
+- [[concepts/vector-clock]]
+- [[concepts/merkle-tree]]

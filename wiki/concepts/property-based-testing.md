@@ -30,7 +30,7 @@ Race conditions aparecem em combinações específicas de timing que testes manu
 
 ## Relacionado
 
-- [[piramide-de-testes]] — onde property-based testing se encaixa
+- [[concepts/piramide-de-testes]] — onde property-based testing se encaixa
 - [[vibe-coding]] — técnica especialmente útil para verificar código gerado por IA
 
 ## Key Sources

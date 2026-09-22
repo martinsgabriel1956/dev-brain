@@ -4,7 +4,7 @@ title: "Autonomia Técnica"
 aliases: ["technical autonomy", "autonomia de código", "independência técnica"]
 date_created: 2026-05-31
 date_updated: 2026-09-14
-source_count: 3
+source_count: 4
 tags: [autonomia-tecnica, carreira-dev, aprendizado, iniciante, dependencia-ia]
 skill: tech-mentor-leadership
 status: stable

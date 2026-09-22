@@ -32,4 +32,4 @@ Valida que dois serviços concordam com o formato da comunicação — sem preci
 
 ## Conceitos Abordados
 
-- [[contract-testing]] · [[piramide-de-testes]] · [[bdd]] · [[living-documentation]]
+- [[concepts/contract-testing]] · [[concepts/piramide-de-testes]] · [[concepts/bdd]] · [[concepts/living-documentation]]

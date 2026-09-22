@@ -62,7 +62,7 @@ function addItem(cart: Cart, item: Item): Cart {
 
 [[datomic]] implementa imutabilidade no nível do banco de dados: acumula fatos (datoms) em um log append-only. Histórico completo sempre preservado com time-travel nativo.
 
-[[event-sourcing]] aplica o mesmo princípio ao nível do domínio: eventos são fatos imutáveis, estado é derivado por replay.
+[[concepts/event-sourcing]] aplica o mesmo princípio ao nível do domínio: eventos são fatos imutáveis, estado é derivado por replay.
 
 ## Por que Resolve Complexidade
 

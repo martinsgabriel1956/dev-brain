@@ -3,8 +3,8 @@ type: concept
 title: "SLO — Service Level Objective"
 aliases: ["service level objective", "slo"]
 date_created: 2026-04-22
-date_updated: 2026-08-03
-source_count: 2
+date_updated: 2026-09-22
+source_count: 3
 tags: [sre, confiabilidade, operações]
 skill: tech-mentor-infra
 status: stable
@@ -40,5 +40,6 @@ Um exemplo didático torna essa distinção concreta: o time de banco de dados d
 
 ## Key Sources
 
+- [[wiki/sources/performance-methods]] — 3 frameworks diagnósticos: USE (Utilization/Saturation/Errors — para recursos), RED (Rate/Errors/Duration — para serviços), Four Golden Signals (Google SRE — Latency/Traffic/Errors/Saturation). k6...
 - [[sources/sre-sli-slo-sla]]
 - [[sources/slo-sli-sla-exemplo-ecommerce]]

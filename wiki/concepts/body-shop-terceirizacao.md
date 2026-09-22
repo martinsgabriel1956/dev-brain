@@ -3,8 +3,8 @@ type: concept
 title: "Body Shop (Terceirização de Desenvolvimento)"
 aliases: ["body shop de ti", "loja de corpos", "terceirização agressiva"]
 date_created: 2026-08-26
-date_updated: 2026-09-18
-source_count: 2
+date_updated: 2026-09-22
+source_count: 3
 tags: [mercado-de-trabalho, terceirização, contratação, consultoria]
 skill: tech-mentor-leadership
 status: stub
@@ -26,6 +26,10 @@ Existe demanda para esse tipo de contratação porque muitas empresas contratant
 
 Em ciclos de mercado com liquidez abundante, os Body Shops ficam saturados (sem gente disponível) e passam a vender júnior com currículo "florido" a preço de sênior — a empresa contratante, com dinheiro sobrando, faz vista grossa. O júnior nesse esquema não tem quem o oriente de fato, não cresce, entrega abaixo do esperado, e a reputação de todo o mercado piora. Ver [[wiki/concepts/ciclo-de-mercado-tech]] para o mecanismo mais amplo desse ciclo.
 
+## A Alternativa Recomendada: Sênior Interno Lidera, Terceiro (Se Houver) Fica Subordinado
+
+[[wiki/sources/sobre-ser-gerente-fabio-akita]] contribui o contraponto construtivo ao padrão descrito nesta página: em vez de terceirizar um projeto novo por inteiro, o gestor deveria designar seus próprios membros mais sêniores para liderá-lo — recorrendo a terceiros apenas quando falta uma especialização específica, e nesse caso colocando o terceiro subordinado ao sênior interno (tratado como júnior até aprender), não como substituto da equipe própria. Ver [[wiki/concepts/equipe-mista-senior-junior]] para o ciclo de sucessão que sustenta essa alternativa ao longo do tempo.
+
 ## Ver também
 
 - [[wiki/concepts/ciclo-de-mercado-tech]] — o ciclo de abundância/depressão que intensifica esse padrão
@@ -37,3 +41,4 @@ Em ciclos de mercado com liquidez abundante, os Body Shops ficam saturados (sem 
 
 - [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]]
 - [[wiki/sources/consultoria-e-uma-boa-opcao-de-carreira]] — relato de caso pessoal de subcontratação em cadeia (não volume, mas camadas de revenda de horas)
+- [[wiki/sources/sobre-ser-gerente-fabio-akita]] — alternativa recomendada: sênior interno lidera o projeto novo, terceiro (quando necessário) fica subordinado a ele

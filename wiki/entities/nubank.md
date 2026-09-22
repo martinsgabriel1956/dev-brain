@@ -14,7 +14,7 @@ status: stable
 
 ## TL;DR
 
-Maior banco digital da América Latina. 122 milhões de clientes (Brasil, México, Colômbia — dado de 2025). Fundado ~2013. Pioneiro no uso de [[clojure]], [[datomic]] e [[event-sourcing]] em escala de banco de varejo, motivado pelo paper "Out of the Tar Pit" e pela necessidade de eliminar [[complexidade-acidental]]. Além da fundação em Clojure/Datomic, opera hoje com 4.000+ microsserviços particionados em 20 shards via [[wiki/concepts/cell-based-architecture|Scalability Units]], e construiu observabilidade própria ([[wiki/entities/alexandria-nubank|Alexandria]]) por custo de escala.
+Maior banco digital da América Latina. 122 milhões de clientes (Brasil, México, Colômbia — dado de 2025). Fundado ~2013. Pioneiro no uso de [[clojure]], [[datomic]] e [[concepts/event-sourcing]] em escala de banco de varejo, motivado pelo paper "Out of the Tar Pit" e pela necessidade de eliminar [[complexidade-acidental]]. Além da fundação em Clojure/Datomic, opera hoje com 4.000+ microsserviços particionados em 20 shards via [[wiki/concepts/cell-based-architecture|Scalability Units]], e construiu observabilidade própria ([[wiki/entities/alexandria-nubank|Alexandria]]) por custo de escala.
 
 ## Perfil
 
@@ -30,7 +30,7 @@ Maior banco digital da América Latina. 122 milhões de clientes (Brasil, Méxic
 |---------|---------|-----------|
 | Linguagem principal | [[clojure]] | Funcional, imutável, JVM |
 | Banco de dados | [[datomic]] | Imutável, time-travel, auditoria |
-| Arquitetura | [[event-sourcing]] + [[cqrs]] + [[ddd]] | Eliminar complexidade acidental |
+| Arquitetura | [[concepts/event-sourcing]] + [[concepts/cqrs]] + [[ddd]] | Eliminar complexidade acidental |
 | Framework | Interno (não público) | Controle total de threads e GC |
 | Sharding | [[wiki/concepts/cell-based-architecture\|Scalability Units]] (clone de infra completa, não só do banco) | Sharding de banco sozinho parou de bastar em 2016 — AWS chegou a ficar sem máquinas para o ritmo de crescimento |
 | Observabilidade | [[wiki/entities/alexandria-nubank\|Alexandria]] (construída internamente) | Solução de logs terceirizada ficou financeiramente inviável na escala do banco |

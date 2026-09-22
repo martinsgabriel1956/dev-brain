@@ -4,7 +4,7 @@ title: "WebAssembly (Wasm)"
 aliases: ["webassembly", "wasm", "tinygo", "syscall/js", "go para wasm"]
 date_created: 2026-08-28
 date_updated: 2026-08-28
-source_count: 1
+source_count: 0
 tags: [webassembly, wasm, golang, tinygo, performance, browser, compiladores]
 skill: tech-mentor-security
 status: draft

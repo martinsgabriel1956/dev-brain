@@ -97,8 +97,8 @@ Roda no dispositivo real — acesso ao engine Flutter, sem mock de framework.
 
 ## Ver também
 
-- [[piramide-de-testes]] — estratégia geral de testes
-- [[mobile-cicd]] — integrar testes no pipeline
+- [[concepts/piramide-de-testes]] — estratégia geral de testes
+- [[concepts/mobile-cicd]] — integrar testes no pipeline
 
 ## Key Sources
 

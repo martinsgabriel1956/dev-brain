@@ -78,7 +78,7 @@ Retornar 500 para tudo (ou não tratar erros) é um sinal de descuido. HTTP code
 ## Relações
 
 - [[portfolio-backend-junior]]
-- [[observabilidade]] — handler global alimenta o sistema de observabilidade
+- [[concepts/observabilidade]] — handler global alimenta o sistema de observabilidade
 - [[efeito-colateral]] — erros não tratados são efeitos colaterais silenciosos
 
 ## Key sources

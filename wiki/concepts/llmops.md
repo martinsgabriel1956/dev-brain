@@ -3,8 +3,8 @@ type: concept
 title: "LLMOps"
 aliases: ["llm ops", "operações de llm", "ai ops"]
 date_created: 2026-05-18
-date_updated: 2026-06-01
-source_count: 3
+date_updated: 2026-09-22
+source_count: 4
 tags: [llm, agentes-ia, mlops, infraestrutura, operacoes]
 skill: tech-mentor-ai
 status: stub
@@ -50,6 +50,7 @@ Paper de Zurique (Universidade de Zurique) quantificou o custo. A estratégia re
 
 ## Key Sources
 
+- [[wiki/sources/agentes-em-producao]] — Pilotos de agentes funcionam. Produção quebra em 3 pontos: integração com sistemas legados (APIs internas sem docs), state management (sessões longas não cabem no contexto), e governança (auditoria,...
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
 - [[wiki/sources/ia-custo-roi-bolha-ou-realidade]]
 - [[wiki/sources/agents-md-vale-a-pena-paper-zurique]] — paper de Zurique; custo de arquivos de contexto; estratégia enxuto + links

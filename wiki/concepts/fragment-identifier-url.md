@@ -4,7 +4,7 @@ title: "Fragment Identifier (Hash da URL)"
 aliases: ["fragment identifier", "url fragment", "location.hash", "hashtag da url", "#fragment"]
 date_created: 2026-08-28
 date_updated: 2026-08-28
-source_count: 2
+source_count: 0
 tags: [browser, url, http, xss, dom, javascript]
 skill: tech-mentor-security
 status: draft

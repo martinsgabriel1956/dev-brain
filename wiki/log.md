@@ -5655,10 +5655,10 @@ Skill carregada: `cs-fundamentals`, lida de `/home/gabriel-martins/Documentos/sk
 - `wiki/concepts/reconhecimento-de-padroes.md` — nova seção "Três padrões concretos numa única fonte"; nova linha em Key Sources; `source_count` 2 → 3
 - `wiki/entities/leetcode.md` — nova linha em Key Sources; `source_count` 3 → 4
 - `wiki/entities/augusto-galego.md` — nova seção "Possível Conteúdo de Algoritmos/DSA (Autoria Inferida, Evidência Fraca)"; nova linha em Key Sources; `source_count` 5 → 6
-- `wiki/sources/two-sum-explicacao.md` — corrigido link quebrado pré-existente `[[concepts/hash-map]]` → `[[wiki/concepts/hashmap]]` e `[[concepts/time-space-tradeoff]]` → `[[wiki/concepts/time-space-tradeoff]]` (formato de path antigo sem prefixo `wiki/`); nova linha cruzando para a fonte nova (mesma técnica de hash map/set em O(n) aplicada a problemas diferentes)
+- `wiki/sources/two-sum-explicacao.md` — corrigido link quebrado pré-existente `[[concepts/hashmap]]` → `[[wiki/concepts/hashmap]]` e `[[concepts/time-space-tradeoff]]` → `[[wiki/concepts/time-space-tradeoff]]` (formato de path antigo sem prefixo `wiki/`); nova linha cruzando para a fonte nova (mesma técnica de hash map/set em O(n) aplicada a problemas diferentes)
 - `wiki/index.md` — nova linha em Sources; nova linha em Concepts (`bucket-sort`)
 
-**Notas:** Sem contradições técnicas com a wiki existente — a fonte reforça e aprofunda com exemplos concretos claims já documentadas (custo de ordenação, O(1) de hash map, técnica de two pointers), sem introduzir nada que contradiga o que já estava registrado. Achado de lint incidental: `wiki/sources/two-sum-explicacao.md` tinha dois links quebrados no formato de path antigo (`[[concepts/hash-map]]` e `[[concepts/time-space-tradeoff]]`, sem prefixo `wiki/`) — ambos corrigidos por resolverem para páginas já existentes; o terceiro link da mesma lista, `[[concepts/complement-pattern]]`, continua quebrado (página nunca existiu) e não foi criado por não ser central a esta ingestão — fica registrado aqui para varredura de lint futura. Autoria da fonte não identificada no vídeo; único indício é o cupom de patrocínio "Augusto 20" (serviço de câmbio/remessas), tratado como evidência fraca de que o autor seria [[wiki/entities/augusto-galego]] — mais fraca que as inferências anteriores desse mesmo autor (que se apoiavam em padrões de patrocínio idênticos ou citação de produtos próprios), registrada como open question em ambos os lados do link. Página nova `bucket-sort.md` preenche uma lacuna que a wiki não tinha: nenhuma fonte anterior documentava um algoritmo de ordenação não-comparativo (a tabela de `algoritmos-de-ordenacao.md` só cobria bubble/insertion/merge sort, todos comparativos).
+**Notas:** Sem contradições técnicas com a wiki existente — a fonte reforça e aprofunda com exemplos concretos claims já documentadas (custo de ordenação, O(1) de hash map, técnica de two pointers), sem introduzir nada que contradiga o que já estava registrado. Achado de lint incidental: `wiki/sources/two-sum-explicacao.md` tinha dois links quebrados no formato de path antigo (`[[concepts/hashmap]]` e `[[concepts/time-space-tradeoff]]`, sem prefixo `wiki/`) — ambos corrigidos por resolverem para páginas já existentes; o terceiro link da mesma lista, `[[concepts/complement-pattern]]`, continua quebrado (página nunca existiu) e não foi criado por não ser central a esta ingestão — fica registrado aqui para varredura de lint futura. Autoria da fonte não identificada no vídeo; único indício é o cupom de patrocínio "Augusto 20" (serviço de câmbio/remessas), tratado como evidência fraca de que o autor seria [[wiki/entities/augusto-galego]] — mais fraca que as inferências anteriores desse mesmo autor (que se apoiavam em padrões de patrocínio idênticos ou citação de produtos próprios), registrada como open question em ambos os lados do link. Página nova `bucket-sort.md` preenche uma lacuna que a wiki não tinha: nenhuma fonte anterior documentava um algoritmo de ordenação não-comparativo (a tabela de `algoritmos-de-ordenacao.md` só cobria bubble/insertion/merge sort, todos comparativos).
 
 ---
 
@@ -11235,3 +11235,883 @@ Nenhum stub novo de concept/entity foi criado — todos os termos centrais da fo
 **Notas / open questions:** (1) Mesmo path mismatch do CLAUDE.md já registrado em ingests anteriores — sem impacto na execução. (2) A fonte é genérica (refatoração de propósito geral, sem menção a teste) — toda a aplicação ao contexto de Test Method Discovery vem de [[wiki/sources/test-discovery-xunitpatterns]], uma fonte separada, consistente com o padrão já visto em Extract Method/Extract Interface. (3) A citação de Fowler preservada fala do risco de métodos pequenos demais (contexto de Extract Method), não da mecânica de Rename Method em si — levemente desalinhada, mas é a única voz direta de Fowler capturada nos três verbetes de refatoração ingeridos até agora. (4) Restam catorze refatorações-irmãs da categoria "Code Refactorings" ainda sem fonte primária dedicada (Extract Class, Extract Superclass, Inline Method, etc.) — nenhuma citada em outra fonte já na wiki, portanto sem urgência de ingestão. (5) Nenhuma contradição encontrada com conteúdo já existente na wiki.
 
 ---
+
+## [2026-09-22] ingest | Developers Not Writing Tests (xUnitPatterns.com — catálogo de Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/developers-not-writing-tests-xunitpatterns]] — verbete da categoria "Project Smells" do site xUnitPatterns.com, colado pelo usuário como URL (`http://xunitpatterns.com/Developers%20Not%20Writing%20Tests.html`). Página em inglês, baixada via `curl` e **traduzida integralmente para português**, seguindo a convenção do cluster. Salva em `raw/developers-not-writing-tests-xunitpatterns.md`. Conteúdo: segundo Project Smell da wiki, irmão de Production Bugs (os dois se citam mutuamente na fonte original) — sintomas, três causas raiz (falta de tempo, código difícil de testar, estratégia de automação errada), e conselhos de troubleshooting voltados a gestão, incluindo cunhagem do termo **test debt** e alerta contra metas gameáveis de contagem de testes.
+
+**Skill carregada:** `tech-mentor-testing`, via Skill tool (`anthropic-skills:tech-mentor-testing`) — tópico é test smell de nível de projeto; sem seção dedicada específica em `references/`, aplicado conhecimento base da skill conforme protocolo de fallback do próprio `SKILL.md`.
+
+**Arquivos criados:**
+- `raw/developers-not-writing-tests-xunitpatterns.md` — tradução integral do verbete (inglês → português)
+- `wiki/sources/developers-not-writing-tests-xunitpatterns.md` — TL;DR, 5 afirmações centrais, 3 key claims, 1 entidade/4 conceitos tocados, 3 open questions, 3 citações preservadas
+- `wiki/concepts/developers-not-writing-tests.md` — stub novo: Project Smell irmão de Production Bugs, cunha "test debt", três causas raiz, alerta de Goodhart's Law contra metas gameáveis
+
+**Páginas atualizadas:**
+- `wiki/concepts/production-bugs.md` — fecha a referência cruzada já presente no texto original ("Ambos os casos estão relacionados a Developers Not Writing Tests") com link e nova seção; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/code-smells.md` — registra o segundo Project Smell da taxonomia irmã de Meszaros, com a distinção "quem detecta" (gestão vs. dev); nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/tech-debt-como-ferramenta.md` — nova seção "Test Debt": caso nomeado do mesmo mecanismo de dívida técnica, ancorado em ausência de testes; nova linha em Key Sources e em Relacionado; `source_count` 17 → 18
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources; `source_count` 63 → 64
+- `wiki/index.md` — nova linha em Sources (topo da tabela) e nova linha em Concepts
+
+**Notas / open questions:** (1) Mesmo path mismatch do CLAUDE.md já registrado em ingests anteriores (`/home/nemomartins/...` vs. `/home/gabriel-martins/...`, e skills locais inexistentes em `/home/nemomartins/Documentos/new/skills/`) — sem impacto na execução, usada a skill real via Skill tool. (2) **Hard-to-Test Code**, **Fragile Test** e **Obscure Test** seguem sem página própria na wiki, agora citadas de passagem em duas fontes diferentes (esta e Production Bugs) — candidatos fortes a ingestão dedicada futura. (3) **Five Whys / TPS** citado como técnica de troubleshooting, sem página própria na wiki ainda. (4) Nenhuma contradição encontrada com conteúdo já existente na wiki — a referência cruzada com Production Bugs era esperada e apenas foi fechada com link explícito.
+
+---
+
+## [2026-09-22] ingest | test debt (xUnitPatterns.com — catálogo de Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/test-debt-xunitpatterns]] — verbete da categoria "Glossary" do site xUnitPatterns.com, colado pelo usuário como URL (`http://xunitpatterns.com/test%20debt.html`). Página em inglês, baixada via `curl` e **traduzida integralmente para português**, seguindo a convenção do cluster. Salva em `raw/test-debt-xunitpatterns.md`. Conteúdo: verbete curto de glossário isolando a definição formal do termo **test debt** — origem do vocabulário de "dívida" (lista de discussão Industrial XP) e a definição operacional (código desprotegido por ausência de testes). O termo já era discutido em profundidade na wiki via [[wiki/sources/developers-not-writing-tests-xunitpatterns]]; este verbete fecha a lacuna de fonte primária isolada, no mesmo padrão já usado para dezenas de outros termos do glossário do catálogo.
+
+**Skill carregada:** `tech-mentor-testing` (lida diretamente de `/home/gabriel-martins/Documentos/skills/tech-mentor-testing/SKILL.md` e `references/test-strategy.md`) — tópico é terminologia de dívida de teste.
+
+**Arquivos criados:**
+- `raw/test-debt-xunitpatterns.md` — tradução integral do verbete (inglês → português)
+- `wiki/sources/test-debt-xunitpatterns.md` — TL;DR, 3 afirmações centrais, 2 key claims, 1 entidade/2 conceitos tocados, 1 open question, 2 citações preservadas
+
+**Páginas atualizadas:**
+- `wiki/concepts/developers-not-writing-tests.md` — nova frase citando a fonte primária isolada e a colisão terminológica com a skill; nova linha em Key Sources; `source_count` 1 → 2
+- `wiki/concepts/tech-debt-como-ferramenta.md` — novo parágrafo na seção "Test Debt" sobre a origem do vocabulário e a colisão terminológica com `references/test-strategy.md` da skill `tech-mentor-testing`; nova linha em Key Sources; `source_count` 18 → 19
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources; `source_count` 64 → 65
+- `wiki/index.md` — nova linha em Sources (topo da tabela)
+
+**Notas / open questions:** (1) **Colisão terminológica identificada**: "test debt" segundo Meszaros (ausência de testes → código desprotegido) não é o mesmo conceito que "Test Debt" descrito em `references/test-strategy.md` da skill `tech-mentor-testing` (testes com ROI negativo — flaky, acoplados à implementação, lentos, redundantes). Os dois mecanismos de dívida compartilham nome mas são distintos; nenhuma fonte na wiki reconciliava isso até agora — registrado como open question na fonte e nas duas páginas de conceito tocadas. (2) Mesmo path mismatch do CLAUDE.md já registrado em ingests anteriores — sem impacto na execução; skill real localizada em `/home/gabriel-martins/Documentos/skills/`. (3) Nenhuma outra contradição encontrada — o conteúdo do verbete é consistente com o que já estava documentado via a fonte-irmã.
+
+---
+
+## [2026-09-22] ingest | Hard-to-Test Code (xUnitPatterns.com — catálogo de Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/hard-to-test-code-xunitpatterns]] — verbete da categoria "Test Smells" do site xUnitPatterns.com, colado pelo usuário como URL (`http://xunitpatterns.com/Hard%20to%20Test%20Code.html`). Página em inglês, baixada via `curl` e **traduzida integralmente para português**, seguindo a convenção do cluster. Salva em `raw/hard-to-test-code-xunitpatterns.md`. Conteúdo: test smell com três causas raiz nomeadas — **Highly Coupled Code** (a.k.a. Hard-Coded Dependency: classe não testável isoladamente, resolvida via TDD natural ou Test Double/Test Stub/Mock Object, com nota sobre retrofit em legado citando o livro de Michael Feathers), **Asynchronous Code** (teste precisa coordenar com thread/processo separado, resolvida via padrão Humble Object) e **Untestable Test Code** (corpo do Test Method obscuro ou com Conditional Test Logic, resolvida extraindo para Test Utility Methods). Fecha a lacuna citada de passagem como segunda causa raiz de "test debt" em [[wiki/sources/developers-not-writing-tests-xunitpatterns]].
+
+**Skill carregada:** `tech-mentor-testing` (mesma skill do ingest anterior nesta sessão, já calibrada).
+
+**Arquivos criados:**
+- `raw/hard-to-test-code-xunitpatterns.md` — tradução integral do verbete (inglês → português)
+- `wiki/sources/hard-to-test-code-xunitpatterns.md` — TL;DR, 5 afirmações centrais, 3 key claims, 2 entidades/4 conceitos tocados, 4 open questions, 3 citações preservadas
+- `wiki/concepts/hard-to-test-code.md` — stub novo: Test Smell com três causas raiz nomeadas, fecha a lacuna citada em Developers Not Writing Tests
+
+**Páginas atualizadas:**
+- `wiki/concepts/developers-not-writing-tests.md` — substitui a menção solta a "Hard-to-Test Code (ainda sem página própria)" por link para o novo stub; nova linha em Key Sources; `source_count` 2 → 3
+- `wiki/concepts/production-bugs.md` — nova frase conectando o padrão Humble Object (já citado para Neverfail Test) à segunda ocorrência, agora para código assíncrono em geral; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/concepts/test-doubles.md` — nova seção "Motivação prática: quebrar acoplamento em Hard-to-Test Code", ligando Test Stub/Mock Object ao caso de uso de Highly Coupled Code; nova linha em Key Sources; `source_count` 29 → 30
+- `wiki/concepts/code-smells.md` — novo parágrafo distinguindo a categoria "Test Smells" (mais próxima do código) da categoria "Project Smells" já documentada; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources; `source_count` 65 → 66
+- `wiki/index.md` — nova linha em Sources (topo da tabela) e nova linha em Concepts
+
+**Notas / open questions:** (1) **Humble Object / Humble Executable** agora citado em duas fontes independentes (Production Bugs, para Neverfail Test; Hard-to-Test Code, para Asynchronous Code em geral) sem página própria — candidato ainda mais forte a ingestão futura. (2) **Obscure Test** e **Conditional Test Logic** seguem sem página própria, citadas aqui como causas de Untestable Test Code — mesma lacuna já sinalizada no ingest anterior. (3) **Michael Feathers** e seu livro "Working Effectively with Legacy Code" são citados como referência externa para retrofit de testes em legado — nem o autor nem o livro têm página na wiki; não criada página própria porque a menção é de passagem (footnote/citação), não o foco da fonte — candidato a fonte secundária se disponível. (4) Nenhuma contradição encontrada com conteúdo já existente — a fonte reforça e detalha lacunas já sinalizadas, sem conflitar com nada documentado.
+
+---
+
+## [2026-09-22] ingest | Frequent Debugging (xUnitPatterns.com — catálogo de Gerard Meszaros)
+
+**Fonte:** [[wiki/sources/frequent-debugging-xunitpatterns]] — verbete da categoria "Test Smells" do site xUnitPatterns.com, subcategoria **Behavior Smells**, colado pelo usuário como URL (`http://xunitpatterns.com/Frequent%20Debugging.html`). Página em inglês, baixada via `curl` (WebFetch falhou com `ECONNREFUSED`) e **traduzida integralmente para português**, seguindo a convenção do cluster. Salva em `raw/frequent-debugging-xunitpatterns.md`. Conteúdo: test smell a.k.a. Manual Debugging — precisar de debugger interativo ou prints para entender a maioria das falhas de teste, sintoma de falta de **Defect Localization**. Duas causas nomeadas: unit/component tests insuficientes (agravado quando Mock Objects não batem com o comportamento real dos objetos que substituem) e **Infrequently Run Tests** (mesma sub-causa já documentada em Production Bugs, por um ângulo diferente: custo de localizar o bug, não de deixá-lo escapar). Solução central: test-driven development verdadeiro + storytest-driven development.
+
+**Skill carregada:** `tech-mentor-testing` (mesma skill do cluster xUnitPatterns nesta sessão, já calibrada).
+
+**Arquivos criados:**
+- `raw/frequent-debugging-xunitpatterns.md` — tradução integral do verbete (inglês → português)
+- `wiki/sources/frequent-debugging-xunitpatterns.md` — TL;DR, 6 afirmações centrais, 3 key claims, 1 entidade/6 conceitos tocados, 4 open questions, 4 citações preservadas
+- `wiki/concepts/frequent-debugging.md` — stub novo: Behavior Smell, primeira fonte dessa subcategoria na wiki, duas causas nomeadas e solução
+
+**Páginas atualizadas:**
+- `wiki/concepts/production-bugs.md` — nova seção conectando Infrequently Run Tests (já causa de Production Bugs) ao custo de localizar bugs via Frequent Debugging; nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/concepts/developers-not-writing-tests.md` — nova seção "Sintoma observável relacionado: Frequent Debugging"; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/concepts/code-smells.md` — novo parágrafo nomeando as três subcategorias de Test Smells (Code Smells, Project Smells, Behavior Smells) pela primeira vez explicitamente; nova linha em Key Sources; `source_count` 4 → 5
+- `wiki/concepts/test-doubles.md` — nova seção "Mock dessincronizado causa depuração manual, não só integração quebrada"; nova linha em Key Sources; `source_count` 30 → 31
+- `wiki/concepts/tdd.md` — nova seção "TDD Verdadeiro como Solução Nomeada para Frequent Debugging"; nova linha em Key Sources; `source_count` 26 → 27
+- `wiki/concepts/test-runner.md` — nova seção sobre saída insuficiente do Test Runner como ponto de partida do smell; nova linha em Key Sources; `source_count` 3 → 4
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources; `source_count` 66 → 67
+- `wiki/index.md` — nova linha em Sources (topo da tabela) e nova linha em Concepts
+
+**Notas / open questions:** (1) Fecha a taxonomia das três subcategorias de "Test Smells" do catálogo (Code Smells, Project Smells, Behavior Smells) pela primeira vez de forma explícita na wiki — antes só duas das três tinham fonte. (2) **Defect Localization** e **Assertion Message** são citados como conceitos-chave sem página própria — candidatos fortes a ingestão futura, amarrando múltiplos smells já documentados. (3) **Component test** como categoria (entre unit test e customer test) segue sem página conceitual própria apesar de citada em várias fontes já ingeridas. (4) Nenhuma contradição encontrada — a fonte reforça e cruza lacunas já sinalizadas em ingests anteriores (Infrequently Run Tests, Mock Object mal calibrado), sem conflitar com nada documentado.
+
+---
+
+## [2026-09-22] lint-fix | Orphan page backlink cleanup
+
+**Trigger:** Varredura de lint (Workflow 3) identificou páginas órfãs (zero backlinks de entrada). Re-execução da varredura no momento do fix encontrou 60 órfãs reais (excluindo index.md/log.md, que não contam), todas em `wiki/sources/`.
+
+**Ação:** Para 39 fontes órfãs que já citavam conceitos/entidades existentes via `[[wikilink]]` no corpo do texto, foi adicionada uma linha em "## Key Sources" (ou seção criada, quando ausente) nas 58 páginas de conceito/entidade correspondentes, com `date_updated` e `source_count` atualizados. Para as 21 fontes restantes — sem nenhum link de saída para uma página de conceito/entidade existente (alvo inexistente ou só cita outras fontes) — foi adicionada uma linha na tabela `## Sources` de `wiki/index.md`, como previsto no Workflow 3 ("link from index.md as fallback rather than leaving fully unlinked").
+
+**Páginas de conceito/entidade atualizadas (58):** account-takeover, blast-radius, cache-aside, cache-stampede, cache, cdn, cell-based-architecture, chat-distribuido, circuit-breaker, clean-architecture, consistency-models, consistent-hashing, contract-testing, cqrs, db-sharding, defense-in-depth, distributed-lock, distributed-tracing, distributed-transactions, dns, dora-metrics, dynamodb, event-driven-architecture, fanout-pattern, finops, graphql, grpc, hexagonal-architecture, human-in-the-loop, idempotencia, inbox-pattern, jwt, kafka, llmops, load-balancer, mensageria, over-engineering, post-quantum-cryptography, presenca-online, pub-sub, raft-paxos, rate-limiting, red-method, redis-geo, redis, runbook, saga-pattern, service-mesh, sharding, slo, snowflake-id, space-based-architecture, split-brain, sre, websocket-vs-polling, xss, entities/aws, entities/martin-kleppmann.
+
+**Fontes resolvidas via fallback em index.md (21):** agent-memory, bancos-especializados, container-hardening, gitops-argocd, go-core, gossip-protocol, identidade-avancada, k8s-networking, kubernetes-core, multi-region-global-lb, otel-collector-sampling, pagination, passkeys-webauthn, postgresql-extensions, reasoning-models, rest-openapi, runtime-security, serialization-protocols, threat-modeling, typescript-avancado, wardley-maps.
+
+**Notas:** Nenhuma página foi deletada. Vários alvos de link nessas fontes órfãs (ex.: `[[concepts/dns-ttl]]`, `[[entities/langsmith]]`) apontam para páginas que ainda não existem — isso é o achado separado de "links quebrados" do sweep original, não tratado aqui. 7 pares fonte→fonte (ex.: `agent-memory` → `context-engineering`) não geraram edição de prosa, pois a wiki não tem convenção de "Key Sources" em páginas do tipo `source`; essas ficaram cobertas apenas pelo fallback em index.md.
+
+---
+
+## [2026-09-22] lint-fix | Disambiguated bare wikilinks for duplicate slugs
+
+**Trigger:** Varredura de lint (Workflow 3) sinalizou 104 "slugs duplicados" — pares `wiki/concepts/X.md` + `wiki/sources/X.md` com o mesmo nome de arquivo. Investigação mostrou que isso é esperado pela arquitetura da wiki (fonte resume o artigo, conceito guarda o conhecimento durável) e não é, por si só, um bug — os 104 pares não foram renomeados.
+
+**Problema real:** links `[[x]]` sem prefixo de diretório ficam ambíguos quando `x` é um desses 104 nomes duplicados, pois o Obsidian não sabe se o alvo é `concepts/x` ou `sources/x`. Uma varredura encontrou 76 desses 104 nomes efetivamente referenciados de forma "nua" (sem prefixo) em algum lugar da wiki — 450 ocorrências no total, em 186 arquivos.
+
+**Ação:** Todas as 450 ocorrências foram inspecionadas por contexto (seção onde apareciam — "Conceitos Abordados", "Ver também", "Conexões com Outras Sources", etc.). Apesar de algumas seções terem "Sources" no nome, o conteúdo linkado era sempre o **conceito** discutido, nunca uma citação a outra fonte — confirmado por amostragem manual. As 450 ocorrências foram então prefixadas com `[[concepts/x]]`, exceto 2 casos especiais resolvidos para `entities/`: `rabbitmq` (existe como `entities/rabbitmq.md` + `sources/rabbitmq.md`, não `concepts/`) e `gang-of-four` (contexto sempre "livro de 1994, autores" — referência à entidade, não ao conceito).
+
+**Verificação:** re-executada a detecção de links ambíguos após o fix — zero bare links restantes entre os 104 nomes duplicados.
+
+**Achado colateral (não corrigido, fora de escopo):** `wiki/concepts/gang-of-four.md` tem `type: entity` no frontmatter e conteúdo quase idêntico a `wiki/entities/gang-of-four.md` — parece uma página duplicada/mal categorizada, não apenas um nome compartilhado. Requer decisão do usuário (merge ou remoção de uma das duas).
+
+---
+
+## [2026-09-22] lint-fix | Broken link fixes: typo corrections + stub creation
+
+**Contexto:** parte do sweep de lint da wiki (Workflow 3). Análise inicial apontou 877 ocorrências de links quebrados; reanálise cuidadosa (corrigindo falsos positivos de parsing de alias com pipe escapado `\|` em tabelas) achou 937 ocorrências reais / 756 alvos únicos. 58 tinham nome parecido com página existente (candidatos a typo); 698 eram genuinamente ausentes.
+
+**Correções de typo/variante (19 merges aplicados, 27 ocorrências):**
+- Datomic->concepts/datomic
+- Efeitos-colaterais->concepts/efeitos-colaterais
+- Event-sourcing->concepts/event-sourcing
+- Imutabilidade->concepts/imutabilidade
+- Programacao-funcional->concepts/programacao-funcional
+- concepts/hash-map->concepts/hashmap
+- concepts/idempotency->concepts/idempotencia
+- concepts/postmortem->concepts/post-mortem
+- concepts/twelve-factor->sources/twelve-factor-app
+- microsserviço->concepts/microsservicos
+- concepts/go-concurrency->concepts/go-concorrencia
+- entities/cloudfront->concepts/aws-cloudfront
+- entities/code-rabbit->entities/coderabbit
+- concepts/fan-out-pattern->concepts/fanout-pattern
+- concepts/backpressure->concepts/back-pressure
+- concepts/argon2id->concepts/argon2
+- entities/deepseek-r1->entities/deepseek
+- concepts/secure-defaults->concepts/secure-by-default
+- resharding->concepts/sharding
+
+Vários outros candidatos a "near-match" foram **deliberadamente não mesclados** por serem conceitos distintos apesar do nome parecido (ex.: `optimistic-locking` ≠ `pessimistic-locking`, `stateless-nao` ≠ `stateless`, `openapi` ≠ `openai`, `irsa` ≠ `rsa`, `slsa` ≠ `sla`, `temporal-decoupling` ≠ `temporal-coupling`, `tls` ≠ `mtls`, `use-method` ≠ `red-method`, `redlock` ≠ `deadlock`, `registry-pattern` ≠ `repository-pattern`).
+
+**Stubs criados (126 páginas, citadas 2+ vezes cada):**
+- [[wiki/concepts/aes-gcm]] (concept, 2 citações)
+- [[wiki/concepts/analise-paralitica]] (concept, 2 citações)
+- [[wiki/concepts/anemic-domain-model]] (concept, 2 citações)
+- [[wiki/concepts/anti-entropy]] (concept, 2 citações)
+- [[wiki/concepts/api-versioning]] (concept, 2 citações)
+- [[wiki/concepts/aprendizado-informal]] (concept, 2 citações)
+- [[wiki/concepts/architecture-documentation]] (concept, 2 citações)
+- [[wiki/concepts/at-least-once-delivery]] (concept, 2 citações)
+- [[wiki/concepts/at-least-once]] (concept, 2 citações)
+- [[wiki/concepts/auto-instrumentation]] (concept, 2 citações)
+- [[wiki/concepts/avro]] (concept, 2 citações)
+- [[wiki/concepts/back-of-envelope]] (concept, 2 citações)
+- [[wiki/concepts/backward-compatibility]] (concept, 4 citações)
+- [[wiki/concepts/bm25]] (concept, 1 citações)
+- [[wiki/concepts/boring-technology]] (concept, 2 citações)
+- [[wiki/concepts/cache-invalidation]] (concept, 3 citações)
+- [[wiki/concepts/cap-theorem-concept]] (concept, 2 citações)
+- [[wiki/concepts/carga-cognitiva]] (concept, 1 citações)
+- [[wiki/concepts/cascade-pattern-llm]] (concept, 2 citações)
+- [[wiki/concepts/causal-consistency]] (concept, 3 citações)
+- [[wiki/concepts/cdc]] (concept, 3 citações)
+- [[wiki/concepts/checkpointing-agents]] (concept, 2 citações)
+- [[wiki/concepts/choreography]] (concept, 2 citações)
+- [[wiki/concepts/cognitive-load]] (concept, 2 citações)
+- [[wiki/concepts/complement-pattern]] (concept, 1 citações)
+- [[wiki/concepts/computer-use]] (concept, 2 citações)
+- [[wiki/concepts/contextual-retrieval]] (concept, 1 citações)
+- [[wiki/concepts/csp]] (concept, 2 citações)
+- [[wiki/concepts/cursor-pagination]] (concept, 2 citações)
+- [[wiki/concepts/cvss]] (concept, 2 citações)
+- [[wiki/concepts/distributed-monolith]] (concept, 4 citações)
+- [[wiki/concepts/dlq]] (concept, 3 citações)
+- [[wiki/concepts/dpo]] (concept, 2 citações)
+- [[wiki/concepts/drift-detection]] (concept, 1 citações)
+- [[wiki/concepts/durable-execution]] (concept, 2 citações)
+- [[wiki/concepts/ebpf]] (concept, 3 citações)
+- [[wiki/concepts/evals-llm]] (concept, 2 citações)
+- [[wiki/concepts/eventual-consistency]] (concept, 6 citações)
+- [[wiki/concepts/faceted-search]] (concept, 2 citações)
+- [[wiki/concepts/failover]] (concept, 2 citações)
+- [[wiki/concepts/fitness-functions]] (concept, 3 citações)
+- [[wiki/concepts/flame-graph]] (concept, 2 citações)
+- [[wiki/concepts/flash-attention]] (concept, 2 citações)
+- [[wiki/concepts/four-golden-signals]] (concept, 2 citações)
+- [[wiki/concepts/gdpr]] (concept, 2 citações)
+- [[wiki/concepts/good-enough-engineering]] (concept, 2 citações)
+- [[wiki/concepts/goroutines]] (concept, 2 citações)
+- [[wiki/concepts/graphrag]] (concept, 1 citações)
+- [[wiki/concepts/hinted-handoff]] (concept, 2 citações)
+- [[wiki/concepts/hnsw]] (concept, 1 citações)
+- [[wiki/concepts/hpa]] (concept, 2 citações)
+- [[wiki/concepts/http2]] (concept, 2 citações)
+- [[wiki/concepts/hybrid-search]] (concept, 1 citações)
+- [[wiki/concepts/hyde]] (concept, 1 citações)
+- [[wiki/concepts/iac]] (concept, 1 citações)
+- [[wiki/concepts/jit-access]] (concept, 2 citações)
+- [[wiki/concepts/least-privilege]] (concept, 3 citações)
+- [[wiki/concepts/lgpd]] (concept, 2 citações)
+- [[wiki/concepts/linearizability]] (concept, 2 citações)
+- [[wiki/concepts/mamba-ssm]] (concept, 2 citações)
+- [[wiki/concepts/merkle-tree]] (concept, 2 citações)
+- [[wiki/concepts/mfa]] (concept, 2 citações)
+- [[wiki/concepts/monorepo]] (concept, 2 citações)
+- [[wiki/concepts/network-policy]] (concept, 2 citações)
+- [[wiki/concepts/one-person-company]] (concept, 4 citações)
+- [[wiki/concepts/opentelemetry]] (concept, 3 citações)
+- [[wiki/concepts/orchestration]] (concept, 2 citações)
+- [[wiki/concepts/owasp]] (concept, 2 citações)
+- [[wiki/concepts/pacelc]] (concept, 2 citações)
+- [[wiki/concepts/paralelismo-de-tarefas-ia]] (concept, 2 citações)
+- [[wiki/concepts/passkeys]] (concept, 4 citações)
+- [[wiki/concepts/pentest]] (concept, 2 citações)
+- [[wiki/concepts/pki]] (concept, 2 citações)
+- [[wiki/concepts/platform-engineering]] (concept, 2 citações)
+- [[wiki/concepts/ports-adapters]] (concept, 2 citações)
+- [[wiki/concepts/processamento-assincrono]] (concept, 2 citações)
+- [[wiki/concepts/projecao]] (concept, 2 citações)
+- [[wiki/concepts/prompt-injection]] (concept, 2 citações)
+- [[wiki/concepts/protobuf]] (concept, 3 citações)
+- [[wiki/concepts/rbac]] (concept, 2 citações)
+- [[wiki/concepts/reranking]] (concept, 1 citações)
+- [[wiki/concepts/right-to-erasure]] (concept, 2 citações)
+- [[wiki/concepts/robustness-principle]] (concept, 2 citações)
+- [[wiki/concepts/schema-evolution]] (concept, 3 citações)
+- [[wiki/concepts/schema-migration]] (concept, 2 citações)
+- [[wiki/concepts/semantic-cache]] (concept, 2 citações)
+- [[wiki/concepts/session-management]] (concept, 3 citações)
+- [[wiki/concepts/spiffe]] (concept, 3 citações)
+- [[wiki/concepts/stale-while-revalidate]] (concept, 2 citações)
+- [[wiki/concepts/sunset-policy]] (concept, 2 citações)
+- [[wiki/concepts/tech-debt]] (concept, 2 citações)
+- [[wiki/concepts/terraform-modules]] (concept, 1 citações)
+- [[wiki/concepts/terraform-state]] (concept, 1 citações)
+- [[wiki/concepts/terragrunt]] (concept, 1 citações)
+- [[wiki/concepts/tls]] (concept, 2 citações)
+- [[wiki/concepts/tool-use-agents]] (concept, 3 citações)
+- [[wiki/concepts/totp]] (concept, 2 citações)
+- [[wiki/concepts/ttl]] (concept, 3 citações)
+- [[wiki/concepts/upcasting]] (concept, 2 citações)
+- [[wiki/concepts/use-method]] (concept, 2 citações)
+- [[wiki/concepts/useMutation]] (concept, 2 citações)
+- [[wiki/concepts/useQuery]] (concept, 2 citações)
+- [[wiki/concepts/vacuum-postgresql]] (concept, 2 citações)
+- [[wiki/concepts/vector-clock]] (concept, 4 citações)
+- [[wiki/concepts/wal]] (concept, 2 citações)
+- [[wiki/concepts/webauthn]] (concept, 3 citações)
+- [[wiki/concepts/workload-identity]] (concept, 2 citações)
+- [[wiki/concepts/write-behind]] (concept, 2 citações)
+- [[wiki/concepts/write-through]] (concept, 2 citações)
+- [[wiki/concepts/xfetch]] (concept, 2 citações)
+- [[wiki/concepts/zero-downtime]] (concept, 2 citações)
+- [[wiki/concepts/ztna]] (concept, 2 citações)
+- [[wiki/entities/clinic-js]] (entity, 2 citações)
+- [[wiki/entities/cockroachdb]] (entity, 2 citações)
+- [[wiki/entities/compose-tool]] (entity, 3 citações)
+- [[wiki/entities/falco]] (entity, 2 citações)
+- [[wiki/entities/ffmpeg]] (entity, 2 citações)
+- [[wiki/entities/kyverno]] (entity, 2 citações)
+- [[wiki/entities/langsmith]] (entity, 1 citações)
+- [[wiki/entities/listen-notes]] (entity, 3 citações)
+- [[wiki/entities/lucene]] (entity, 1 citações)
+- [[wiki/entities/opa-gatekeeper]] (entity, 2 citações)
+- [[wiki/entities/opa]] (entity, 3 citações)
+- [[wiki/entities/spire]] (entity, 2 citações)
+- [[wiki/entities/tailscale]] (entity, 2 citações)
+- [[wiki/entities/wenbin-fang]] (entity, 3 citações)
+
+Todas com `status: stub`, TL;DR reconstruído apenas do contexto das páginas citantes (sem invenção de conteúdo), seção `## Key sources` linkando de volta. Indexadas em `wiki/index.md` sob novas subseções "Stubs de Lint — Links Quebrados (2026-09-22)" em Concepts e Entities.
+
+**Não tratados (fora do escopo desta correção, ficam para triagem futura):**
+- ~572 alvos citados uma única vez permanecem como links quebrados — não geram stub automático por baixo sinal de relevância.
+- `wiki/concepts/gang-of-four.md` com `type: entity` duplicando `wiki/entities/gang-of-four.md` (achado do sweep de slugs duplicados) — ainda pendente de decisão do usuário.
+
+## [2026-04-22] lint-backfill | Retroactive log entry for 87 pages
+
+**Páginas:**
+- [[wiki/concepts/ack-triplo]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/ambient-mesh]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/argo-rollouts]] (skill: `tech-mentor-infra`)
+- [[wiki/concepts/blameless-post-mortem]] (skill: `tech-mentor-infra`)
+- [[wiki/concepts/blast-radius]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/bulkhead]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/cassandra-schema]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/compound-components]] (skill: `tech-mentor-frontend`)
+- [[wiki/concepts/container-presenter]] (skill: `tech-mentor-frontend`)
+- [[wiki/concepts/error-boundary]] (skill: `tech-mentor-frontend`)
+- [[wiki/concepts/error-budget]] (skill: `tech-mentor-infra`)
+- [[wiki/concepts/error-budget-policy]] (skill: `tech-mentor-infra`)
+- [[wiki/concepts/fail-fast]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/falha-em-cascata]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/fanout-pattern]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/fault-injection]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/fencing-token]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/game-day]] (skill: `tech-mentor-infra`)
+- [[wiki/concepts/graceful-degradation]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/incident-lifecycle]] (skill: `tech-mentor-infra`)
+- [[wiki/concepts/incident-roles]] (skill: `tech-mentor-infra`)
+- [[wiki/concepts/incident-severity]] (skill: `tech-mentor-infra`)
+- [[wiki/concepts/infinite-query]] (skill: `tech-mentor-frontend`)
+- [[wiki/concepts/jsx]] (skill: `tech-mentor-frontend`)
+- [[wiki/concepts/littles-law]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/mtls]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/notification-system]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/optimistic-updates]] (skill: `tech-mentor-frontend`)
+- [[wiki/concepts/presenca-online]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/query-key]] (skill: `tech-mentor-frontend`)
+- [[wiki/concepts/raft-paxos]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/read-your-writes]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/realtime-tracking]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/red-method]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/ride-matching-pipeline]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/server-state]] (skill: `tech-mentor-frontend`)
+- [[wiki/concepts/service-mesh]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/sidecar-pattern]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/snowflake-id]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/split-brain]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/surge-pricing]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/swr]] (skill: `tech-mentor-frontend`)
+- [[wiki/concepts/tempo-variavel-capacidade-fixa]] (skill: `tech-mentor-leadership`)
+- [[wiki/concepts/tenant-context]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/three-phase-commit]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/thundering-herd]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/useReducer]] (skill: `tech-mentor-frontend`)
+- [[wiki/concepts/useRef]] (skill: `tech-mentor-frontend`)
+- [[wiki/entities/dribbble]] (skill: `tech-mentor-frontend`)
+- [[wiki/entities/linear-app]] (skill: `tech-mentor-frontend`)
+- [[wiki/entities/tanstack]] (skill: `tech-mentor-frontend`)
+- [[wiki/sources/3pc]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/bulkhead]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/cache]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/cache-strategies]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/cap-theorem]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/case-twitter-feed]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/case-uber]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/case-whatsapp]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/cdn]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/cicd-pipeline]] (skill: `tech-mentor-infra`)
+- [[wiki/sources/circuit-breaker]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/comparacao-na-carreira-dev]] (skill: `tech-mentor-leadership`)
+- [[wiki/sources/consistent-hashing]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/contract-testing]] (skill: `tech-mentor-testing`)
+- [[wiki/sources/dns]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/estimativas-back-of-envelope]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/event-sourcing]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/gossip-protocol]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/horizontal-vs-vertical-scaling]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/living-documentation]] (skill: `tech-mentor-testing`)
+- [[wiki/sources/logica-programacao-sem-matematica]] (skill: `tech-mentor-leadership`)
+- [[wiki/sources/microservicos-vs-monolito-modular]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/multi-region-global-lb]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/multi-tenancy]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/notification-system]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/numeros-de-latencia]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/piramide-de-testes]] (skill: `tech-mentor-testing`)
+- [[wiki/sources/quorum]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/retry-backoff]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/service-discovery]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/service-mesh]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/skip-locked-fencing-token]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/sre-error-budget-incidents]] (skill: `tech-mentor-infra`)
+- [[wiki/sources/tanstack-query-tudo-que-voce-precisa-saber]] (skill: `tech-mentor-frontend`)
+- [[wiki/sources/two-phase-commit]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/zero-downtime-deploy]] (skill: `tech-mentor-system-design`)
+
+**Notas:** Entradas retroativas — página(s) já existiam na wiki mas nunca foram registradas em log.md no momento do ingest original. Detalhes de skill/sessão original não estão disponíveis além do campo `skill:` do frontmatter de cada página, quando presente.
+
+---
+
+## [2026-04-23] lint-backfill | Retroactive log entry for 119 pages
+
+**Páginas:**
+- [[wiki/concepts/abstraction-bloat]] (skill: `tech-mentor-ai`)
+- [[wiki/concepts/abstraction-illusion]] (skill: `tech-mentor-backend`)
+- [[wiki/concepts/adapter-pattern-analytics]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/ai-brainfry]] (skill: `tech-mentor-ai`)
+- [[wiki/concepts/cache-stampede]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/native-module]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/operational-transformation]] (skill: `tech-mentor-system-design`)
+- [[wiki/concepts/profundidade-e-maestria]] (skill: `tech-mentor-leadership`)
+- [[wiki/concepts/shared-sdk]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/temporal-coupling]] (skill: `tech-mentor-system-design`)
+- [[wiki/entities/randy-nelson]] (skill: `tech-mentor-leadership`)
+- [[wiki/entities/yjs]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/addy-osmani-80-problem-agentic-coding]] (skill: `tech-mentor-ai`)
+- [[wiki/sources/adr]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/agent-memory]] (skill: `tech-mentor-ai`)
+- [[wiki/sources/agentes-core]] (skill: `tech-mentor-ai`)
+- [[wiki/sources/agentes-em-producao]] (skill: `tech-mentor-ai`)
+- [[wiki/sources/ai-gateway-token-economics]] (skill: `tech-mentor-ai`)
+- [[wiki/sources/anti-patterns]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/api-contracts-versioning]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/architecture-fitness-functions]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/async-io-memory-management]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/background-jobs]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/bancos-especializados]] (skill: `tech-mentor-data`)
+- [[wiki/sources/browser-security]] (skill: `tech-mentor-security`)
+- [[wiki/sources/c4-model]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/cdc-debezium]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/cell-based-architecture]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/clean-architecture-ia-custo-real]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/cloud-security]] (skill: `tech-mentor-security`)
+- [[wiki/sources/conceitos-que-ninguem-ensina]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/container-hardening]] (skill: `tech-mentor-security`)
+- [[wiki/sources/context-engineering]] (skill: `tech-mentor-ai`)
+- [[wiki/sources/conways-law]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/data-privacy]] (skill: `tech-mentor-security`)
+- [[wiki/sources/db-sharding]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/ddd-cqrs]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/ddd-strategic]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/ddd-tactical]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/dependency-injection]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/design-patterns-gof]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/distributed-locks]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/distributed-locks-raft]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/dlq-event-patterns]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/dynamodb]] (skill: `tech-mentor-data`)
+- [[wiki/sources/event-driven-architecture]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/event-ordering-long-running]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/event-versioning]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/evolutionary-architecture]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/expand-contract]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/fase-1-fundamentos-infraestrutura]] (skill: `tech-mentor-infra`)
+- [[wiki/sources/feature-flags]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/fine-tuning]] (skill: `tech-mentor-ai`)
+- [[wiki/sources/finops-cost-aware-architecture]] (skill: `tech-mentor-infra`)
+- [[wiki/sources/flame-graph-profiling]] (skill: `tech-mentor-infra`)
+- [[wiki/sources/fraud-abuse]] (skill: `tech-mentor-security`)
+- [[wiki/sources/gitops-argocd]] (skill: `tech-mentor-infra`)
+- [[wiki/sources/go-core]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/graceful-degradation]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/graphql]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/grpc]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/hexagonal-architecture]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/hipaa-sox]] (skill: `tech-mentor-security`)
+- [[wiki/sources/identidade-avancada]] (skill: `tech-mentor-security`)
+- [[wiki/sources/incident-response]] (skill: `tech-mentor-security`)
+- [[wiki/sources/input-validation-output-encoding]] (skill: `tech-mentor-security`)
+- [[wiki/sources/integration-patterns-eip]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/k8s-autoscaling]] (skill: `tech-mentor-infra`)
+- [[wiki/sources/k8s-networking]] (skill: `tech-mentor-infra`)
+- [[wiki/sources/kubernetes-core]] (skill: `tech-mentor-infra`)
+- [[wiki/sources/kubernetes-security]] (skill: `tech-mentor-security`)
+- [[wiki/sources/lgpd-gdpr]] (skill: `tech-mentor-security`)
+- [[wiki/sources/load-balancer]] (skill: `tech-mentor-infra`)
+- [[wiki/sources/mcp]] (skill: `tech-mentor-ai`)
+- [[wiki/sources/mensageria]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/micro-kernel]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/mobile-platform-engineering]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-security]] (skill: `tech-mentor-security`)
+- [[wiki/sources/mongodb]] (skill: `tech-mentor-data`)
+- [[wiki/sources/monolito-modular]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/nats-jetstream]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/navigation-paradox-2026]] (skill: `tech-mentor-ai`)
+- [[wiki/sources/otel-collector-sampling]] (skill: `tech-mentor-infra`)
+- [[wiki/sources/otel-sdk]] (skill: `tech-mentor-infra`)
+- [[wiki/sources/pagination]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/passkeys-webauthn]] (skill: `tech-mentor-security`)
+- [[wiki/sources/performance-methods]] (skill: `tech-mentor-infra`)
+- [[wiki/sources/platform-engineering-devex]] (skill: `tech-mentor-infra`)
+- [[wiki/sources/policy-as-code]] (skill: `tech-mentor-infra`)
+- [[wiki/sources/post-quantum-crypto]] (skill: `tech-mentor-security`)
+- [[wiki/sources/postgresql-avancado]] (skill: `tech-mentor-data`)
+- [[wiki/sources/postgresql-extensions]] (skill: `tech-mentor-data`)
+- [[wiki/sources/presence-system]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/prompt-engineering]] (skill: `tech-mentor-ai`)
+- [[wiki/sources/rabbitmq]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/raft-leader-election]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/rbac-abac-rebac]] (skill: `tech-mentor-security`)
+- [[wiki/sources/reactive-architecture]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/reasoning-models]] (skill: `tech-mentor-ai`)
+- [[wiki/sources/redis-avancado]] (skill: `tech-mentor-data`)
+- [[wiki/sources/rest-openapi]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/rfc]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/runtime-security]] (skill: `tech-mentor-security`)
+- [[wiki/sources/saga-pattern]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/schema-registry]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/secret-scanning]] (skill: `tech-mentor-security`)
+- [[wiki/sources/secrets-management]] (skill: `tech-mentor-security`)
+- [[wiki/sources/secure-design-patterns]] (skill: `tech-mentor-security`)
+- [[wiki/sources/serialization-protocols]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/sessions]] (skill: `tech-mentor-security`)
+- [[wiki/sources/solid]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/space-based-architecture]] (skill: `tech-mentor-system-design`)
+- [[wiki/sources/sqs-sns]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/super-productivity-ai-architecture-guide]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/temporal]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/threat-modeling]] (skill: `tech-mentor-security`)
+- [[wiki/sources/twelve-factor-app]] (skill: `tech-mentor-infra`)
+- [[wiki/sources/typescript-avancado]] (skill: `lang-dynamic`)
+- [[wiki/sources/wardley-maps]] (skill: `tech-mentor-system-design`)
+
+**Notas:** Entradas retroativas — página(s) já existiam na wiki mas nunca foram registradas em log.md no momento do ingest original. Detalhes de skill/sessão original não estão disponíveis além do campo `skill:` do frontmatter de cada página, quando presente.
+
+---
+
+## [2026-04-24] lint-backfill | Retroactive log entry for 60 pages
+
+**Páginas:**
+- [[wiki/concepts/go-oop-composicao]] (skill: `lang-systems`)
+- [[wiki/concepts/go-producao]] (skill: `lang-systems`)
+- [[wiki/concepts/mobile-animacoes-performaticas]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-armazenamento-local]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-baseline-profiles]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-chamadas-http]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-cicd]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-cross-platform-decision]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-deep-links]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-kmp]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-layouts-responsivos]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-metricas-criticas]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-monetizacao]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-monitoramento]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-offline-first-avancado]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-offline-first-basico]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-on-device-ai]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-performance-listas]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-permissoes]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-profiling]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-publicacao-aso]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-push-notifications]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-seguranca]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-state-management-global]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-state-management-local]] (skill: `tech-mentor-mobile`)
+- [[wiki/concepts/mobile-testes]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/go-arquitetura]] (skill: `lang-systems`)
+- [[wiki/sources/go-avancado]] (skill: `lang-systems`)
+- [[wiki/sources/go-concorrencia]] (skill: `lang-systems`)
+- [[wiki/sources/go-fundamentos]] (skill: `lang-systems`)
+- [[wiki/sources/go-oop-composicao]] (skill: `lang-systems`)
+- [[wiki/sources/go-producao]] (skill: `lang-systems`)
+- [[wiki/sources/mobile-animacoes-performaticas]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-armazenamento-local]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-baseline-profiles]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-biometria]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-chamadas-http]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-cicd]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-cross-platform-decision]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-deep-links]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-design-system]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-feature-flags]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-kmp]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-layouts-responsivos]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-metricas-criticas]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-monetizacao]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-monitoramento]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-navegacao]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-offline-first-avancado]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-offline-first-basico]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-on-device-ai]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-performance-listas]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-permissoes]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-profiling]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-publicacao-aso]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-push-notifications]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-seguranca]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-state-management-global]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-state-management-local]] (skill: `tech-mentor-mobile`)
+- [[wiki/sources/mobile-testes]] (skill: `tech-mentor-mobile`)
+
+**Notas:** Entradas retroativas — página(s) já existiam na wiki mas nunca foram registradas em log.md no momento do ingest original. Detalhes de skill/sessão original não estão disponíveis além do campo `skill:` do frontmatter de cada página, quando presente.
+
+---
+
+## [2026-04-25] lint-backfill | Retroactive log entry for 5 pages
+
+**Páginas:**
+- [[wiki/concepts/docker-portfolio]] (skill: `tech-mentor-leadership`)
+- [[wiki/concepts/efeito-colateral]] (skill: `tech-mentor-backend`)
+- [[wiki/concepts/error-handling-estruturado]] (skill: `tech-mentor-leadership`)
+- [[wiki/concepts/estado-compartilhado]] (skill: `tech-mentor-backend`)
+- [[wiki/concepts/lentes-de-codigo]] (skill: `tech-mentor-backend`)
+
+**Notas:** Entradas retroativas — página(s) já existiam na wiki mas nunca foram registradas em log.md no momento do ingest original. Detalhes de skill/sessão original não estão disponíveis além do campo `skill:` do frontmatter de cada página, quando presente.
+
+---
+
+## [2026-04-26] lint-backfill | Retroactive log entry for 3 pages
+
+**Páginas:**
+- [[wiki/sources/ia-salario-ou-carga-de-trabalho]] (skill: `tech-mentor-leadership`)
+- [[wiki/sources/listen-notes-good-enough-engineering]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/listen-notes-podcasts-nova-wikipedia]] (skill: `tech-mentor-leadership`)
+
+**Notas:** Entradas retroativas — página(s) já existiam na wiki mas nunca foram registradas em log.md no momento do ingest original. Detalhes de skill/sessão original não estão disponíveis além do campo `skill:` do frontmatter de cada página, quando presente.
+
+---
+
+## [2026-04-29] lint-backfill | Retroactive log entry for 18 pages
+
+**Páginas:**
+- [[wiki/concepts/comprimento-de-funcao]] (skill: `tech-mentor-leadership`)
+- [[wiki/concepts/entendimento-do-dominio]] (skill: `tech-mentor-leadership`)
+- [[wiki/concepts/goal-gradient-effect]] (skill: `tech-mentor-leadership`)
+- [[wiki/concepts/indentacao-como-aviso]] (skill: `tech-mentor-leadership`)
+- [[wiki/concepts/logs-em-producao]] (skill: `tech-mentor-leadership`)
+- [[wiki/concepts/n-plus-um-detector]] (skill: `tech-mentor-ai`)
+- [[wiki/concepts/pensamento-sistemico]] (skill: `tech-mentor-leadership`)
+- [[wiki/concepts/perfeccionismo-em-devs]] (skill: `tech-mentor-leadership`)
+- [[wiki/concepts/property-based-testing]] (skill: `tech-mentor-ai`)
+- [[wiki/concepts/strings-de-log-integras]] (skill: `tech-mentor-leadership`)
+- [[wiki/concepts/tier-de-empresas-tech]] (skill: `tech-mentor-leadership`)
+- [[wiki/concepts/usuarios-como-agentes-do-caos]] (skill: `tech-mentor-leadership`)
+- [[wiki/concepts/vocabulario-tecnico]] (skill: `tech-mentor-leadership`)
+- [[wiki/sources/como-aprender-um-codebase-novo]] (skill: `tech-mentor-leadership`)
+- [[wiki/sources/estilo-de-codigo-convencoes]] (skill: `tech-mentor-leadership`)
+- [[wiki/sources/listen-notes-one-person-startup]] (skill: `tech-mentor-backend`)
+- [[wiki/sources/roadmap-dev-senior-2026]] (skill: `tech-mentor-leadership`)
+- [[wiki/sources/trimodal-compensacao-tech]] (skill: `tech-mentor-leadership`)
+
+**Notas:** Entradas retroativas — página(s) já existiam na wiki mas nunca foram registradas em log.md no momento do ingest original. Detalhes de skill/sessão original não estão disponíveis além do campo `skill:` do frontmatter de cada página, quando presente.
+
+---
+
+## [2026-05-01] lint-backfill | Retroactive log entry for 2 pages
+
+**Páginas:**
+- [[wiki/concepts/hipotese-e-validacao]] (skill: `tech-mentor-leadership`)
+- [[wiki/concepts/pensamento-regressivo]] (skill: `tech-mentor-leadership`)
+
+**Notas:** Entradas retroativas — página(s) já existiam na wiki mas nunca foram registradas em log.md no momento do ingest original. Detalhes de skill/sessão original não estão disponíveis além do campo `skill:` do frontmatter de cada página, quando presente.
+
+---
+
+## [2026-05-02] lint-backfill | Retroactive log entry for 7 pages
+
+**Páginas:**
+- [[wiki/concepts/abi]] (skill: `lang-systems`)
+- [[wiki/concepts/calling-convention]] (skill: `lang-systems`)
+- [[wiki/concepts/dynamic-linking]] (skill: `lang-systems`)
+- [[wiki/concepts/ffi]] (skill: `lang-systems`)
+- [[wiki/concepts/object-file]] (skill: `lang-systems`)
+- [[wiki/concepts/static-linking]] (skill: `lang-systems`)
+- [[wiki/sources/como-multiplas-linguagens-vivem-num-unico-binario]] (skill: `lang-systems`)
+
+**Notas:** Entradas retroativas — página(s) já existiam na wiki mas nunca foram registradas em log.md no momento do ingest original. Detalhes de skill/sessão original não estão disponíveis além do campo `skill:` do frontmatter de cada página, quando presente.
+
+---
+
+## [2026-05-04] lint-backfill | Retroactive log entry for 7 pages
+
+**Páginas:**
+- [[wiki/concepts/compaction-intencional]] (skill: `tech-mentor-ai`)
+- [[wiki/concepts/design-discussion]] (skill: `tech-mentor-ai`)
+- [[wiki/concepts/dumb-zone]] (skill: `tech-mentor-ai`)
+- [[wiki/concepts/mental-alignment]] (skill: `tech-mentor-ai`)
+- [[wiki/sources/context-engineering-avancado-para-coding-agents]] (skill: `tech-mentor-ai`)
+- [[wiki/sources/erros-workflow-research-plan-implement]] (skill: `tech-mentor-ai`)
+- [[wiki/sources/ports-and-adapters-codebase-para-ia]] (skill: `tech-mentor-backend`)
+
+**Notas:** Entradas retroativas — página(s) já existiam na wiki mas nunca foram registradas em log.md no momento do ingest original. Detalhes de skill/sessão original não estão disponíveis além do campo `skill:` do frontmatter de cada página, quando presente.
+
+---
+
+## [2026-05-05] lint-backfill | Retroactive log entry for 12 pages
+
+**Páginas:**
+- [[wiki/concepts/behavioral-patterns]] (skill: `tech-mentor-backend`)
+- [[wiki/concepts/bridge-pattern]] (skill: `tech-mentor-backend`)
+- [[wiki/concepts/builder-pattern]] (skill: `tech-mentor-backend`)
+- [[wiki/concepts/chain-of-responsibility-pattern]] (skill: `tech-mentor-backend`)
+- [[wiki/concepts/creational-patterns]] (skill: `tech-mentor-backend`)
+- [[wiki/concepts/data-residency]] (skill: `tech-mentor-security`)
+- [[wiki/concepts/dsar]] (skill: `tech-mentor-security`)
+- [[wiki/concepts/flyweight-pattern]] (skill: `tech-mentor-backend`)
+- [[wiki/concepts/mediator-pattern]] (skill: `tech-mentor-backend`)
+- [[wiki/concepts/redis-cluster]] (skill: `tech-mentor-infra`)
+- [[wiki/sources/clusters]] (skill: `tech-mentor-infra`)
+- [[wiki/sources/compliance]] (skill: `tech-mentor-security`)
+
+**Notas:** Entradas retroativas — página(s) já existiam na wiki mas nunca foram registradas em log.md no momento do ingest original. Detalhes de skill/sessão original não estão disponíveis além do campo `skill:` do frontmatter de cada página, quando presente.
+
+---
+
+## [2026-05-06] lint-backfill | Retroactive log entry for 9 pages
+
+**Páginas:**
+- [[wiki/concepts/aws-outposts]] (skill: `tech-mentor-infra`)
+- [[wiki/concepts/aws-wavelength]] (skill: `tech-mentor-infra`)
+- [[wiki/concepts/backbone-de-rede-aws]] (skill: `tech-mentor-infra`)
+- [[wiki/concepts/regiao-aws]] (skill: `tech-mentor-infra`)
+- [[wiki/concepts/zona-de-disponibilidade]] (skill: `tech-mentor-infra`)
+- [[wiki/concepts/zona-local-aws]] (skill: `tech-mentor-infra`)
+- [[wiki/concepts/zona-local-dedicada]] (skill: `tech-mentor-infra`)
+- [[wiki/sources/aws-infraestrutura-global]] (skill: `tech-mentor-infra`)
+- [[wiki/sources/iam-introduction-users-groups-policies]] (skill: `tech-mentor-infra`)
+
+**Notas:** Entradas retroativas — página(s) já existiam na wiki mas nunca foram registradas em log.md no momento do ingest original. Detalhes de skill/sessão original não estão disponíveis além do campo `skill:` do frontmatter de cada página, quando presente.
+
+---
+
+## [2026-05-31] lint-backfill | Retroactive log entry for 2 pages
+
+**Páginas:**
+- [[wiki/concepts/observador-tercerático]] (skill: `tech-mentor-leadership`)
+- [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]] (skill: `tech-mentor-ai`)
+
+**Notas:** Entradas retroativas — página(s) já existiam na wiki mas nunca foram registradas em log.md no momento do ingest original. Detalhes de skill/sessão original não estão disponíveis além do campo `skill:` do frontmatter de cada página, quando presente.
+
+---
+
+## [2026-09-22] lint-fix | Index/log drift resolved
+
+Sweep de drift de índice/log concluído. Recontagem real no momento da correção (o número original de 426/243 do sweep inicial já tinha encolhido por causa de fixes anteriores nesta sessão de lint):
+
+- **481 páginas** estavam ausentes de `wiki/index.md` → todas inseridas (248 em Sources, 225 em Concepts sob nova subseção "Backfill de Índice — Lint (2026-09-22)", 8 em Entities na mesma subseção).
+- **331 páginas** estavam ausentes de `wiki/log.md` → backfilled em 12 blocos `lint-backfill`, agrupados pela data de `date_ingested`/`date_created`/`date_updated` de cada página (todas tinham data disponível — nenhuma entrada "sem data" foi necessária). `log.md` não é estritamente cronológico (ordem de append, não sort estrito), então os blocos de backfill foram anexados ao final em vez de inseridos em posições retroativas no meio do arquivo, para preservar o invariante append-only.
+
+Verificação pós-fix: 0 páginas restantes ausentes de `index.md`.
+
+---
+
+## [2026-09-22] lint-fix | Gang of Four: merge de página duplicada
+
+`wiki/concepts/gang-of-four.md` tinha `type: entity` no frontmatter e conteúdo quase idêntico a `wiki/entities/gang-of-four.md` — duplicação real da mesma entidade em dois lugares, achado sinalizado durante o sweep de slugs duplicados.
+
+- Conteúdo único de `wiki/concepts/gang-of-four.md` (seções "Os 23 Padrões — Por Categoria" e "Relevância Atual", aliases dos 4 autores, tags `gof`/`livro`/`arquitetura`, 2 Key Sources: [[wiki/sources/sete-padroes-de-design-de-software]] e [[wiki/sources/decorator-xunitpatterns]]) foi mesclado em `wiki/entities/gang-of-four.md`.
+- `wiki/entities/gang-of-four.md`: `source_count` 6 → 8, `date_updated` → 2026-09-22.
+- `wiki/concepts/gang-of-four.md` deletado.
+- Backlink corrigido: `wiki/concepts/composite-pattern.md` apontava para `[[wiki/concepts/gang-of-four]]` → agora `[[wiki/entities/gang-of-four]]`.
+- `wiki/index.md`: linha duplicada em Concepts removida (a entrada correta em Entities, linha ~2486, já existia).
+
+---
+
+## [2026-09-22] lint-fix | Frontmatter drift + tabela quebrada + source_count
+
+Últimos itens pendentes do lint re-sweep desta sessão:
+
+- **Frontmatter incompleto:** `wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares.md` ganhou `date_updated: 2026-09-08` (igual ao `date_created`, nunca tinha sido atualizada de fato); `wiki/sources/indice-de-banco-de-dados.md` ganhou `status: stable` (página completa, 61 linhas de conteúdo).
+- **`wiki/index.md` — linhas de tabela quebradas:** de 7 linhas sinalizadas, apenas 3 eram bugs reais (as outras 4 já usavam `\|` escapado corretamente). Corrigidas: linha da fórmula `D = |A + I − 1|` (métricas de acoplamento, 2 ocorrências, agora `\|...\|`) e a linha de `application-boundary-martin-fowler` que estava sem o `|` de fechamento da row.
+- **`source_count` drift:** recontagem real (contando as entradas de fato na seção "Key Sources"/"Fontes" de cada página, não qualquer link incidental) encontrou **156 páginas** desatualizadas — maioria por ±1, entropia normal de edições incrementais ao longo do tempo, não regressão desta sessão. Corrigidas todas as 156 via script (frontmatter `source_count` recalculado a partir da contagem real de fontes citadas). Verificação pós-fix: YAML válido em todos os 2404+ arquivos, 0 divergências restantes.
+
+---
+
+## [2026-09-22] lint-fix | Páginas órfãs recentes (9 encontradas no re-sweep)
+
+Órfãs surgidas entre rounds de correção anteriores (só citadas em `index.md`/`log.md`, nunca de outra página de conteúdo). 7 de 9 resolvidas com backlink genuíno; 2 deixadas como estão, com motivo documentado abaixo.
+
+**Resolvidas:**
+- `wiki/concepts/nichos-frontend-automatizados-ia` ← `wiki/sources/impacto-ia-mercado-frontend.md` (adicionado à seção Concepts, que não citava o conceito que a própria fonte originou)
+- `wiki/entities/otavio-lemos` ← `wiki/sources/arquitetura-limpa-na-pratica.md` (adicionado como autor do livro em "Pessoas/entidades")
+- `wiki/entities/lucas-montana` ← `wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana.md` (adicionado em "Entidades Mencionadas" como autor/narrador)
+- `wiki/entities/himanshu-singh` ← `wiki/sources/building-projects-in-the-ai-era-himanshu-singh.md` (nova seção "Entidades" criada, autor do relato)
+- `wiki/sources/gitops-argocd` ← `wiki/concepts/ci-cd.md` (todos os 6 alvos originais da fonte eram links quebrados sem página; linkado a partir de `ci-cd.md` como conceito-guarda-chuva mais próximo, com linha nova em Key Sources)
+- `wiki/sources/request-for-comments` ← `wiki/concepts/rfc-request-for-comments.md` (Key Sources estava citando fontes derivadas mas não a fonte original do próprio conceito; `source_count` 3→4)
+- `wiki/sources/formacao-ia-devs-aula-04-qa` ← `wiki/entities/pedro-nauke.md` (faltava na lista cronológica das aulas da série "Formação IA para Devs" que ele já cita; `source_count` 9→10)
+
+**Não resolvidas, com motivo:**
+- `wiki/sources/typescript-avancado` — nenhuma página existente na wiki trata de TypeScript/generics avançado como conceito próprio; forçar um link seria artificial. Já está em `index.md` (fallback do Workflow 3). Fica pendente até um futuro ingest criar um hub de TypeScript.
+- `wiki/entities/discloud` — **resolvido em seguida** (ver entrada abaixo).
+
+---
+
+## [2026-09-22] lint-fix | Discloud: citação corrigida, não estava errada
+
+Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado-lorehub.md` **de fato menciona Discloud** ("## Deploy (menção a patrocinador)", linha 46-48) — a citação original estava certa, só que o ingest anterior não capturou esse trecho no resumo em `wiki/sources/`. Não era citação mal atribuída, era conteúdo perdido no resumo.
+
+- `wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub.md`: nova linha na tabela Key Claims sobre a menção de patrocínio, nova seção `## Entidades` linkando `[[wiki/entities/discloud]]`, `date_updated` → 2026-09-22.
+- `wiki/entities/discloud.md` não precisou de edição — já citava a fonte certa desde o início.
+- Verificação: `wiki/entities/discloud` agora tem backlink genuíno de `wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub`. Órfã resolvida.
+
+---
+
+## [2026-09-22] ingest | Test Failure (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** http://xunitpatterns.com/test%20failure.html — traduzida para `raw/test-failure-xunitpatterns.md`
+**Skill carregada:** `tech-mentor-testing` (nenhum arquivo de referência específico bateu com terminologia básica de glossário XUnit — respondido com conhecimento base, conforme protocolo da skill)
+
+**Criado:**
+- `wiki/sources/test-failure-xunitpatterns.md` — verbete de glossário: test failure = resultado real ≠ resultado esperado, contrastado com test error e test success
+
+**Páginas tocadas (8):**
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources, `source_count` 68→69
+- `wiki/sources/test-result-xunitpatterns.md` — Open Questions atualizada: "test failure" agora coberto, restam "test success" e "test error"
+- `wiki/sources/test-run-xunitpatterns.md` — mesma atualização de Open Questions
+- `wiki/concepts/tdd.md` — fase RED do ciclo agora referencia a definição formal; nova linha em Key Sources, `source_count` 31→32
+- `wiki/concepts/test-runner.md` — nova linha em Key Sources, `source_count` 4→5
+- `wiki/entities/junit.md` — nova linha em Key Sources (red bar formaliza o estado de test failure), `source_count` 11→12
+- `wiki/entities/c3-project.md` — mesma lógica (red bar do C3), `source_count` 4→5
+
+**Notas:** verbete minúsculo (uma frase), mas fecha metade de uma lacuna de 3 termos irmãos ("test success", "test failure", "test error") já sinalizada em duas fontes anteriores. Restam sem fonte isolada: **test success** e **test error** — candidatos naturais para um próximo ingest da mesma série.
+
+---
+
+## [2026-09-22] ingest | Test Success (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** http://xunitpatterns.com/test%20success.html — traduzida para `raw/test-success-xunitpatterns.md`
+**Skill carregada:** `tech-mentor-testing` (mesma sessão do ingest anterior — nenhum arquivo de referência específico bateu com terminologia básica de glossário XUnit, respondido com conhecimento base)
+
+**Criado:**
+- `wiki/sources/test-success-xunitpatterns.md` — verbete de glossário: test success = **todos** os resultados reais batem com os esperados, contrastado com test failure e test error; par simétrico exato de [[wiki/sources/test-failure-xunitpatterns]]
+
+**Páginas tocadas (8):**
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources, `source_count` 69→70
+- `wiki/sources/test-result-xunitpatterns.md` — Open Questions atualizada: "test success" agora coberto, resta só "test error"
+- `wiki/sources/test-run-xunitpatterns.md` — mesma atualização
+- `wiki/sources/test-failure-xunitpatterns.md` — sua própria Questão Aberta ("test success segue sem fonte") corrigida na mesma sessão
+- `wiki/concepts/tdd.md` — fase GREEN do ciclo agora referencia a definição formal; nova linha em Key Sources, `source_count` 32→33
+- `wiki/concepts/test-runner.md` — nova linha em Key Sources, `source_count` 5→6
+- `wiki/entities/junit.md` — green bar formaliza test success (par do red bar/test failure já linkado); `source_count` 12→13
+- `wiki/entities/c3-project.md` — mesma lógica; `source_count` 5→6
+
+**Notas:** com este ingest, fecham-se 2 dos 3 termos irmãos sinalizados desde [[wiki/sources/test-result-xunitpatterns]]. Resta apenas **test error** — candidato natural para fechar a série completa (test run, test result, test failure, test success, test error).
+
+---
+
+## [2026-09-22] ingest | Test-Driven Bug Fixing (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** http://xunitpatterns.com/test-driven%20bug%20fixing.html — traduzida para `raw/test-driven-bug-fixing-xunitpatterns.md`
+**Skill carregada:** `tech-mentor-testing` (nenhum arquivo de referência específico bateu com terminologia básica de glossário XUnit — respondido com conhecimento base, conforme protocolo da skill)
+
+**Criado:**
+- `wiki/sources/test-driven-bug-fixing-xunitpatterns.md` — verbete de glossário: test-driven bug fixing = escrever/automatizar um unit test que reproduz o bug antes de depurar e corrigir; extensão formal do TDD para correção de defeitos
+
+**Páginas tocadas (4):**
+- `wiki/concepts/frequent-debugging.md` — fecha a referência ao termo "test-driven bug fixing" citada sem fonte própria na seção de solução; `source_count` 1→2
+- `wiki/concepts/tdd.md` — nova linha em Key Sources; `source_count` 33→34
+- `wiki/concepts/production-bugs.md` — nova linha em Key Sources (resposta formalizada para o cenário Untested Requirement); `source_count` 5→6
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources, `source_count` 70→71
+
+**Notas:** verbete de uma frase, mas fecha uma lacuna terminológica em aberto desde [[wiki/sources/frequent-debugging-xunitpatterns]], que já citava "test-driven bug fixing" pelo nome sem fonte própria na wiki. Sem contradição com o restante da wiki.
+
+---
+
+## [2026-09-22] ingest | Test Error (xUnitPatterns.com — Gerard Meszaros)
+
+**Fonte:** http://xunitpatterns.com/test%20error.html — traduzida para `raw/test-error-xunitpatterns.md`
+**Skill carregada:** `tech-mentor-testing` (mesma sessão da série anterior — nenhum arquivo de referência específico bateu com terminologia básica de glossário XUnit, respondido com conhecimento base, conforme protocolo da skill)
+
+**Criado:**
+- `wiki/sources/test-error-xunitpatterns.md` — verbete de glossário: test error = erro que impede o teste de rodar até a conclusão (exceção do SUT, do teste ou do runtime) — falha do *mecanismo* de execução, não do resultado; mais fácil de depurar que test failure porque a causa tende a ser mais local
+
+**Páginas tocadas (8):**
+- `wiki/entities/gerard-meszaros.md` — nova linha em Key Sources, `source_count` 71→72
+- `wiki/sources/test-result-xunitpatterns.md` — Open Questions fechada: os quatro termos irmãos (test run, test result, test failure, test success, test error) agora têm fonte isolada
+- `wiki/sources/test-run-xunitpatterns.md` — mesma atualização
+- `wiki/sources/test-failure-xunitpatterns.md` — Open Questions fechada: distinção test failure/test error agora confirmada textualmente pela fonte primária
+- `wiki/sources/test-success-xunitpatterns.md` — Open Questions fechada: caso de execução parcial confirmado como categoria "test error"
+- `wiki/concepts/tdd.md` — nova linha em Key Sources (terceiro termo do trio, não mapeia limpo para RED/GREEN); `source_count` 34→35
+- `wiki/concepts/test-runner.md` — nova linha em Key Sources (terceiro resultado possível reportado); `source_count` 6→7
+- `wiki/entities/junit.md` — nova linha em Key Sources; `source_count` 13→14
+- `wiki/entities/c3-project.md` — nova linha em Key Sources; `source_count` 6→7
+- `wiki/concepts/frequent-debugging.md` — nova seção no corpo ligando a afirmação central da fonte (test error tem causa mais local) ao conceito de Defect Localization já nomeado na página; nova linha em Key Sources; `source_count` 2→3
+
+**Notas:** fecha a série completa de 5 termos irmãos do vocabulário de resultado/execução do xUnitPatterns.com (test run, test result, test failure, test success, test error), sinalizada como lacuna desde o ingest de [[wiki/sources/test-result-xunitpatterns]]. Contribuição nova mais relevante: a fonte faz uma afirmação comparativa explícita sobre depurabilidade (test error > test failure em facilidade de debug, por localidade da causa) que se conecta diretamente ao conceito de Defect Localization em [[wiki/concepts/frequent-debugging]] — não apenas fecha vocabulário, adiciona uma claim nova ao grafo. Sem contradição com o restante da wiki.
+
+---
+
+## [2026-09-22] ingest | Sobre Ser Gerente (Fábio Akita)
+
+**Fonte:** transcrição de vídeo em PT-BR, colada pelo usuário, transformada em markdown estruturado em `raw/sobre-ser-gerente-fabio-akita.md` (já em português — sem necessidade de tradução; um trecho no meio, sobre a analogia com *Peaky Blinders*, veio corrompido/ilegível na transcrição original — sinalizado explicitamente no `raw/` e nas Open Questions do source, sem tentativa de reconstituição).
+**Skill:** tech-mentor-leadership.
+
+**Criado:**
+- `wiki/sources/sobre-ser-gerente-fabio-akita.md` — teoria consolidada de Akita sobre gestão de projetos/pessoas: crítica a PMP/PMBOK/MBA, tríade escopo-tempo-custo com quarta variável invisível (qualidade), software não é linha de produção (compilador como "operário automatizado", orquestra clássica vs. jazz), "nível A contrata nível A", gestor precisa ter sido praticante, confiança ≠ amizade, gerenciar projetos = gerenciar pessoas = gerenciar expectativas
+- `wiki/concepts/triade-escopo-tempo-custo-qualidade.md` — stub novo: Iron Triangle clássico + qualidade como quarta variável que absorve pressão quando as outras três ficam fixas
+- `wiki/concepts/nivel-a-contrata-nivel-a.md` — stub novo: cascata de julgamento na contratação (nível B só reconhece até C, C só até D)
+- `wiki/concepts/gestor-deve-ter-sido-praticante.md` — stub novo: tese de que respeito técnico exige experiência prática prévia na função gerenciada
+
+**Páginas tocadas (12):**
+- `wiki/entities/fabio-akita.md` — nova seção "Teoria Consolidada de Gestão de Projetos e Pessoas", nova linha em Key Sources; `source_count` 11→12
+- `wiki/concepts/software-nao-e-engenharia-de-producao.md` — nova seção com as metáforas do compilador como "operário" e orquestra vs. jazz, ausentes na fonte anterior; nova linha em Key Sources; `source_count` 1→2
+- `wiki/concepts/cargo-cult-tecnologico.md` — nova seção sobre a variante de orçamento/nível salarial ("você pode pagar o que a Netflix paga?"); nova linha em Key Sources; `source_count` 5→6
+- `wiki/concepts/estimativas-de-software.md` — nova seção nomeando a distinção estimativa vs. previsão e a regra prática de tamanho de história (meio dia, máx. 2-3 dias); nova linha em Key Sources; `source_count` 3→4
+- `wiki/concepts/story-points.md` — nova seção sobre tamanho de história como sinal de saúde do processo e sprint > 2 semanas como sintoma; nova linha em Key Sources; `source_count` 3→4
+- `wiki/concepts/scrum-master.md` — nova seção sobre sprint longo como sintoma de reunião/interrupção, não escolha neutra; nova linha em Key Sources; `source_count` 3→4
+- `wiki/concepts/equipe-mista-senior-junior.md` — nova seção sobre o ciclo de sucessão (sênior cria sucessor antes de assumir projeto novo) e analogia esportiva de rotação de reservas; nova linha em Key Sources; `source_count` 1→2
+- `wiki/concepts/mentoria-tecnica.md` — nova seção conectando a criação de sucessor interno como pré-requisito sequencial ao ciclo de mentoria já documentado; nova linha em Key Sources; `source_count` 9→10
+- `wiki/concepts/goodharts-law.md` — novo caso didático isolado (medir "bugs corrigidos" incentiva criar mais bugs); nova linha em Key Sources; `source_count` 6→7
+- `wiki/concepts/apagao-de-seniors.md` — nova via causal organizacional (terceirizar em vez de formar sucessor interno, mesmo sem restrição de caixa); nova linha em Key Sources; `source_count` 7→8
+- `wiki/concepts/body-shop-terceirizacao.md` — novo contraponto construtivo (sênior interno lidera, terceiro fica subordinado); nova linha em Key Sources; `source_count` 2→3
+- `wiki/concepts/gestao-de-riscos-e-controle-ilusorio.md` — nova seção sobre "saber dizer não" como habilidade central de gestão de risco (analogia do general e as batalhas); nova linha em Key Sources; `source_count` 2→3
+
+**Notas:** fonte robusta que aprofunda e cruza uma parte substancial do corpo já existente de fontes de Fábio Akita na wiki — dois argumentos centrais (software não é engenharia de produção, cargo cult de Netflix/Google) já estavam documentados a partir de outras fontes do mesmo autor e ganharam aqui novas metáforas/ângulos sem contradição. Três teses novas e centrais (quarta variável invisível de qualidade, "nível A contrata nível A", gestor precisa ter sido praticante) não tinham página própria e foram criadas como stubs. Duas delas (nível A contrata nível A, gestor deve ter sido praticante) são apresentadas na fonte de forma categórica, sem contraexemplos — sinalizado como Open Question no source e nota de tensão na própria página do segundo stub. Sem contradição factual com o restante da wiki.

@@ -4,7 +4,7 @@ title: "Analytics Pipeline"
 aliases: ["pipeline de analytics", "async analytics", "event analytics"]
 date_created: 2026-04-22
 date_updated: 2026-07-24
-source_count: 2
+source_count: 3
 tags: [system-design, analytics, kafka, clickhouse, async, olap]
 skill: tech-mentor-system-design
 status: stub

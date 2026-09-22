@@ -3,8 +3,8 @@ type: concept
 title: "Contract Testing"
 aliases: ["teste de contrato", "pact", "consumer-driven contracts", "can-i-deploy"]
 date_created: 2026-04-22
-date_updated: 2026-08-21
-source_count: 8
+date_updated: 2026-09-22
+source_count: 9
 tags: [testes, contract-testing, pact, microservices, ci, distribuídos]
 skill: tech-mentor-testing
 status: stable
@@ -69,7 +69,7 @@ body: {
 **Use:** múltiplos microsserviços com dependências, times diferentes owning consumer e provider.
 **Evite:** API pública com consumers desconhecidos → OpenAPI + Schemathesis; monólito — não faz sentido.
 
-Contract testing não substitui E2E — são camadas diferentes da [[piramide-de-testes]].
+Contract testing não substitui E2E — são camadas diferentes da [[concepts/piramide-de-testes]].
 
 ## Papel no teste de integração estreito (Fowler)
 
@@ -87,8 +87,8 @@ Em [[wiki/sources/contract-test-martin-fowler]], Fowler detalha a operação pr�
 
 ## Ver também
 
-- [[piramide-de-testes]] — onde contract testing se encaixa
-- [[bdd]] — complementar para specs de comportamento
+- [[concepts/piramide-de-testes]] — onde contract testing se encaixa
+- [[concepts/bdd]] — complementar para specs de comportamento
 - [[race-condition]] — problema que contract testing não resolve (lógica de negócio)
 - [[teste-de-integracao-estreito-vs-amplo]] — onde contract testing entra na estratégia de Fowler
 
@@ -98,6 +98,7 @@ Quando ativar o serviço externo real (ex.: staging de um provedor de pagamentos
 
 ## Key Sources
 
+- [[wiki/sources/api-contracts-versioning]] — API contract é o contrato formal entre produtor e consumidor — define o que muda é breaking change. TypeSpec gera OpenAPI de forma agnóstica. Spectral faz linting de contratos. Estratégias de...
 - [[wiki/sources/contract-testing]]
 - [[wiki/sources/integration-test-martin-fowler]]
 - [[wiki/sources/contract-test-martin-fowler]] — cadência de execução, tratamento de falha e SelfInitializingFake

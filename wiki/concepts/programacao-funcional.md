@@ -34,10 +34,10 @@ Dado o mesmo input, sempre retorna o mesmo output. Sem efeitos colaterais.
     preco))
 ```
 
-### [[Imutabilidade]]
+### [[concepts/imutabilidade]]
 Variáveis não mudam após criadas. Elimina toda uma classe de bugs de estado compartilhado.
 
-### [[Efeitos-colaterais]] Explícitos
+### [[concepts/efeitos-colaterais]] Explícitos
 Efeitos colaterais existem (I/O é inevitável), mas são declarados explicitamente e empurrados para as periferias do sistema.
 
 ## Por que Resolve Complexidade
@@ -64,11 +64,11 @@ A programação funcional força:
 - Domínio puro no centro = funções puras sem efeitos colaterais
 - Adapters na borda = onde os efeitos colaterais são explicitamente isolados
 
-[[event-sourcing]] é naturalmente funcional: `estado_atual = reduce(eventos, estado_inicial)`.
+[[concepts/event-sourcing]] é naturalmente funcional: `estado_atual = reduce(eventos, estado_inicial)`.
 
 ## Código Envelhece como Vinho
 
-Sistemas funcionais com [[ddd]] e [[event-sourcing]] têm menor taxa de degradação. Contraste com sistemas Java/Ruby OO tradicionais onde mutabilidade acumulada vira legado intocável — "código que envelhece como leite".
+Sistemas funcionais com [[ddd]] e [[concepts/event-sourcing]] têm menor taxa de degradação. Contraste com sistemas Java/Ruby OO tradicionais onde mutabilidade acumulada vira legado intocável — "código que envelhece como leite".
 
 ## Uso no Nubank
 

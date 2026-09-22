@@ -4,7 +4,7 @@ title: "Blameless Post-mortem"
 aliases: ["post-mortem", "blameless postmortem", "post mortem sem blame"]
 date_created: 2026-04-22
 date_updated: 2026-04-22
-source_count: 1
+source_count: 2
 tags: [sre, cultura, incidentes, aprendizado]
 skill: tech-mentor-infra
 status: stable

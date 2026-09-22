@@ -33,4 +33,4 @@ Android: Perfetto para system tracing, Android Studio Profiler (CPU/Memory/Netwo
 
 ## Conceitos Abordados
 
-- [[mobile-profiling]] · [[mobile-metricas-criticas]] · [[mobile-animacoes-performaticas]] · [[mobile-performance-listas]]
+- [[concepts/mobile-profiling]] · [[concepts/mobile-metricas-criticas]] · [[concepts/mobile-animacoes-performaticas]] · [[concepts/mobile-performance-listas]]

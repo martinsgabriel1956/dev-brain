@@ -4,7 +4,7 @@ title: "Error Budget"
 aliases: ["error budget", "budget de erros"]
 date_created: 2026-04-22
 date_updated: 2026-04-22
-source_count: 1
+source_count: 2
 tags: [sre, confiabilidade, operações, prometheus]
 skill: tech-mentor-infra
 status: stable

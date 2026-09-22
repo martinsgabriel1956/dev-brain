@@ -12,7 +12,7 @@ status: stable
 
 # Creational Patterns (Padrões Criacionais)
 
-Uma das três categorias dos 23 padrões [[gang-of-four]]. Tratam de **como objetos são criados**, dando flexibilidade sobre quando, como e qual objeto é instanciado — em vez de criar diretamente com `new`.
+Uma das três categorias dos 23 padrões [[entities/gang-of-four]]. Tratam de **como objetos são criados**, dando flexibilidade sobre quando, como e qual objeto é instanciado — em vez de criar diretamente com `new`.
 
 ## Os 5 Padrões Criacionais GoF
 

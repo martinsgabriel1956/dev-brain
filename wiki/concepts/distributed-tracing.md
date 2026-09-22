@@ -3,8 +3,8 @@ type: concept
 title: "Distributed Tracing"
 aliases: ["tracing distribuído", "opentelemetry", "spans", "trace context"]
 date_created: 2026-04-23
-date_updated: 2026-08-06
-source_count: 4
+date_updated: 2026-09-22
+source_count: 5
 tags: [distributed-tracing, observabilidade, opentelemetry, jaeger, spans, w3c-trace-context]
 skill: tech-mentor-infra
 status: draft
@@ -42,6 +42,7 @@ Diferente do formato de dado (padronizado pelo OpenTelemetry), a linguagem de co
 
 ## Key Sources
 
+- [[wiki/sources/otel-sdk]] — OpenTelemetry: padrão unificado para traces, métricas e logs — vendor-agnostic. SDK TypeScript inicializa ANTES de qualquer import. Auto-instrumentation cobre HTTP, Express, Prisma, Redis...
 - [[sources/distributed-tracing]]
 - [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — arquitetura do Collector, instrumentação de libs de baixo nível, e correlação automática via IA/MCP
 - [[wiki/sources/sre-capacidade-observabilidade-confiabilidade-custo]] — framing didático de tracing como a resposta natural a "tá muito lento" (fluxo/jornada/trace da chamada)

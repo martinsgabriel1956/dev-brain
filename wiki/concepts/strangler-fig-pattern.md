@@ -4,7 +4,7 @@ title: "Strangler Fig Pattern"
 aliases: ["strangler pattern", "figueira mata-pau", "migração incremental"]
 date_created: 2026-08-03
 date_updated: 2026-08-10
-source_count: 4
+source_count: 5
 tags: [strangler-fig, migração, legado, proxy, cdc, feature-flags, arquitetura]
 skill: tech-mentor-system-design
 status: stub

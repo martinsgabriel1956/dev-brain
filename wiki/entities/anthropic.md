@@ -4,7 +4,7 @@ title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
 date_updated: 2026-09-15
-source_count: 31
+source_count: 33
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack, memory-layers, prompt-caching]
 skill: tech-mentor-ai
 status: stable

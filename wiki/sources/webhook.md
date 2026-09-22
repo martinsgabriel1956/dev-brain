@@ -37,7 +37,7 @@ Webhook é o inverso de polling: producer empurra eventos HTTP quando algo acont
 - [[concepts/webhook]]
 - [[concepts/hmac-signing]]
 - [[concepts/replay-attack]]
-- [[concepts/idempotency]]
+- [[concepts/idempotencia]]
 - [[concepts/fanout-pattern]]
 - [[concepts/at-least-once-delivery]]
 - [[wiki/concepts/inbox-pattern]] — `X-Webhook-Id` para deduplicação nesta fonte é a mesma ideia registrada com mais profundidade em [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] como inbox persistente por `provedor + event ID`

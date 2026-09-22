@@ -32,7 +32,7 @@ logger.error("Falha ao processar pagamento", extra={
 
 ## Relacionado
 
-- [[observabilidade]] — logs como um dos três pilares de observabilidade
+- [[concepts/observabilidade]] — logs como um dos três pilares de observabilidade
 - [[strings-de-log-integras]] — nunca quebrar mensagens de log (impossibilita grep)
 
 ## Key Sources

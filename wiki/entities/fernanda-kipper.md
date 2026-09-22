@@ -4,7 +4,7 @@ title: "Fernanda Kipper"
 aliases: ["Fernanda Kipper", "fernandakipper"]
 date_created: 2026-08-12
 date_updated: 2026-09-02
-source_count: 3
+source_count: 0
 tags: [criadora-de-conteudo, youtube, desenvolvimento-web, ensino]
 skill: tech-mentor-networking
 status: stub

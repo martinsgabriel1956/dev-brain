@@ -12,7 +12,7 @@ status: stable
 
 # BDD — Behavior-Driven Development
 
-Extensão do [[tdd]] que usa **linguagem de domínio (Gherkin)** para descrever comportamentos como especificações executáveis — simultaneamente documentação e testes. Elimina o gap entre o que o negócio especifica e o que o time implementa.
+Extensão do [[concepts/tdd]] que usa **linguagem de domínio (Gherkin)** para descrever comportamentos como especificações executáveis — simultaneamente documentação e testes. Elimina o gap entre o que o negócio especifica e o que o time implementa.
 
 ## Fluxo
 
@@ -69,9 +69,9 @@ BDD sem engajamento do negócio = testes com sintaxe mais verbosa. Se só o dev 
 
 ## Ver também
 
-- [[tdd]] — base do BDD
-- [[living-documentation]] — output natural do BDD via CI
-- [[piramide-de-testes]] — BDD vive no topo/meio da pirâmide
+- [[concepts/tdd]] — base do BDD
+- [[concepts/living-documentation]] — output natural do BDD via CI
+- [[concepts/piramide-de-testes]] — BDD vive no topo/meio da pirâmide
 
 Vale notar: BDD é frequentemente citado como boa prática por pessoas que admitem ter pouca experiência prática com ele — reforça a "armadilha crítica" acima, já que é fácil recomendar BDD em tese sem ter sentido o overhead na prática.
 

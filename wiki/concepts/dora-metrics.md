@@ -3,7 +3,7 @@ type: concept
 title: "DORA Metrics"
 aliases: ["DORA", "DevOps Research and Assessment", "Accelerate"]
 date_created: 2026-07-09
-date_updated: 2026-08-10
+date_updated: 2026-09-22
 source_count: 5
 tags: [devops, metrics, cicd, qualidade, engineering-culture, tech-debt]
 skill: tech-mentor-leadership
@@ -42,8 +42,8 @@ Não usar para comparar times entre si (contextos diferentes) nem para avaliar p
 
 - [[over-engineering]] — o "triângulo de ferro" é o mito que a pesquisa DORA refuta; medo de quebrar leva a portões de deploy excessivos (PRs grandes, muitas aprovações), que por sua vez pioram tanto a velocidade quanto a qualidade
 - [[ci-cd]] — a prática que operacionaliza deploys frequentes e lead time curto
-- [[tdd]] — testes automatizados são pré-condição para manter o sistema sempre implantável
-- [[zero-downtime-deploy]] — reduz o custo/risco percebido de cada deploy, incentivando frequência maior
+- [[concepts/tdd]] — testes automatizados são pré-condição para manter o sistema sempre implantável
+- [[concepts/zero-downtime-deploy]] — reduz o custo/risco percebido de cada deploy, incentivando frequência maior
 - [[wiki/concepts/goodharts-law]] — a mesma regra de "não usar para comparar times nem avaliar indivíduos" é uma defesa contra o mesmo risco que corrompe [[wiki/concepts/story-points]] quando forçados como meta: a métrica vira alvo e para de medir o que deveria medir
 
 ## Lead Time como Sinal Indireto de Dívida Técnica
@@ -60,6 +60,7 @@ Um ano antes do livro *Accelerate* formalizar a pesquisa DORA, o Facebook já do
 
 ## Key Sources
 
+- [[wiki/sources/platform-engineering-devex]] — Platform Engineering cria um IDP (Internal Developer Platform) para reduzir carga cognitiva dos times de produto. Backstage é o software catalog padrão. Golden Path Templates eliminam decisões...
 - [[wiki/sources/como-evitar-over-engineering-david-farley]]
 - [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]] — output (PRs, volume) inflado pela IA vs. outcome (bug rate, lead time) como métrica que realmente importa
 - [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] — lead time crescente como proxy indireto de dívida técnica acumulada

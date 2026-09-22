@@ -3,8 +3,8 @@ type: concept
 title: "CQRS — Command Query Responsibility Segregation"
 aliases: ["command query responsibility segregation", "cqrs pattern"]
 date_created: 2026-05-31
-date_updated: 2026-09-15
-source_count: 10
+date_updated: 2026-09-22
+source_count: 11
 tags: [cqrs, arquitetura, event-sourcing, ddd, sistemas-distribuidos]
 skill: tech-mentor-backend
 status: draft
@@ -37,7 +37,7 @@ O estado em memória (ex: saldo calculado) **nunca vai direto ao banco** — o b
 
 ## Relação com Event Sourcing
 
-[[event-sourcing]] e CQRS andam juntos mas são independentes:
+[[concepts/event-sourcing]] e CQRS andam juntos mas são independentes:
 - Event Sourcing: *como persistir* (eventos imutáveis)
 - CQRS: *como separar leitura de escrita*
 
@@ -45,7 +45,7 @@ Em prática: events persistidos, projeções (read models) construídas por CQRS
 
 ## Uso no Nubank
 
-O [[nubank]] utiliza CQRS em conjunto com [[event-sourcing]] e [[datomic]]. A separação permite que o estado atual (saldo, status) seja reconstruído a partir do event log sem poluir o modelo de domínio.
+O [[nubank]] utiliza CQRS em conjunto com [[concepts/event-sourcing]] e [[datomic]]. A separação permite que o estado atual (saldo, status) seja reconstruído a partir do event log sem poluir o modelo de domínio.
 
 ## Caso Real: CQRS Aplicado à Latência do Caminho Crítico (Nubank)
 
@@ -147,6 +147,7 @@ Antes de separar em serviços/código-fonte distintos, a forma mais simples de C
 
 ## Key Sources
 
+- [[wiki/sources/ddd-cqrs]] — CQRS separa o modelo de escrita (Command Side — Aggregate normalizado, regras de negócio) do modelo de leitura (Query Side — Read Model desnormalizado, otimizado para queries). Projeções sincronizam...
 - [[wiki/sources/cqrs-martin-fowler]] — post original do bliki de Martin Fowler (2011); origem textual da definição mais citada; tom de cautela mais forte ("a maioria das implementações que vi foi problemática"); amarra o escopo de aplicação a bounded context
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]

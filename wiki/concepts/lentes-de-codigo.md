@@ -30,7 +30,7 @@ Regras são aplicadas mecanicamente. Lentes mudam a percepção. Quem entende ac
 | [[coesao]] | Se as responsabilidades dentro de uma unidade fazem sentido juntas |
 | [[efeito-colateral]] | O que uma função muda além do que retorna |
 | [[imutabilidade]] | Se dados podem ser modificados inesperadamente |
-| [[idempotencia]] | Se chamar N vezes tem o mesmo resultado que chamar 1 vez |
+| [[concepts/idempotencia]] | Se chamar N vezes tem o mesmo resultado que chamar 1 vez |
 
 ## Na era da IA
 
@@ -44,7 +44,7 @@ Modelos de linguagem geram código que funciona na maioria dos casos. O código 
 - [[coesao]]
 - [[efeito-colateral]]
 - [[imutabilidade]]
-- [[idempotencia]]
+- [[concepts/idempotencia]]
 
 ## Key sources
 

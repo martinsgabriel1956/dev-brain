@@ -18,7 +18,7 @@ Qualquer componente cuja falha, sozinha, derruba o sistema inteiro. É o conceit
 
 No desenho incremental "de zero a milhões de usuários", cada evolução da arquitetura existe para remover um SPOF ou destravar o gargalo que ele criava:
 
-- **Servidor único** → é SPOF: se cai, a aplicação cai. Resolve-se com **múltiplos servidores** ([[escalabilidade-horizontal]]) atrás de um [[load-balancer]].
+- **Servidor único** → é SPOF: se cai, a aplicação cai. Resolve-se com **múltiplos servidores** ([[escalabilidade-horizontal]]) atrás de um [[concepts/load-balancer]].
 - **Banco único** → vira o próximo SPOF e gargalo. Resolve-se com [[replicacao-de-banco|replicação]]: um banco de escrita + réplicas de leitura, com **promoção** de uma réplica caso o primário caia.
 - **Cache única** → também é SPOF: exige política de invalidação e uma aplicação que **tolere a cache indisponível** (degradar para o banco).
 - **Load balancer** → não pode ser SPOF: usa-se par active-passive com VIP (Virtual IP).
@@ -34,7 +34,7 @@ O padrão se repete: mover estado para fora do servidor ([[stateless]]) é o que
 - [[escalabilidade-vertical]] — escalar "para cima" mantém o servidor único como SPOF; é o limite que motiva a escala horizontal
 - [[escalabilidade-horizontal]] — redundância de instâncias é a forma direta de eliminar o SPOF de servidor
 - [[replicacao-de-banco]] — remove o SPOF da camada de dados via réplicas + failover/promoção
-- [[load-balancer]] — quem distribui carga entre instâncias redundantes; ele próprio não pode ser SPOF
+- [[concepts/load-balancer]] — quem distribui carga entre instâncias redundantes; ele próprio não pode ser SPOF
 - [[stateless]] — pré-requisito para que instâncias sejam intercambiáveis
 
 ## Key Sources

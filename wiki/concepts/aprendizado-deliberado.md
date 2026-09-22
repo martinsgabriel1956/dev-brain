@@ -4,7 +4,7 @@ title: "Aprendizado Deliberado"
 aliases: ["deliberate learning", "aprendizado intencional", "prática deliberada"]
 date_created: 2026-04-22
 date_updated: 2026-04-22
-source_count: 3
+source_count: 4
 tags: [aprendizado, tecnica, carreira, pratica]
 skill: tech-mentor-leadership
 status: stable

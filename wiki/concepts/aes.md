@@ -4,7 +4,7 @@ title: "AES (Advanced Encryption Standard)"
 aliases: ["aes", "aes-256", "aes-gcm", "advanced encryption standard"]
 date_created: 2026-07-28
 date_updated: 2026-07-28
-source_count: 1
+source_count: 2
 tags: [criptografia, aes, criptografia-simetrica, cifra-por-bloco]
 skill: tech-mentor-security
 status: stable

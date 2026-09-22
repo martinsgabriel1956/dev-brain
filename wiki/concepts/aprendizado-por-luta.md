@@ -4,7 +4,7 @@ title: "Aprendizado por Luta"
 aliases: ["desirable difficulties", "dificuldades desejáveis", "aprender pela dificuldade", "Kolb experiential learning"]
 date_created: 2026-04-29
 date_updated: 2026-07-28
-source_count: 4
+source_count: 5
 tags: [aprendizado, psicologia, carreira, pratica, ia]
 skill: tech-mentor-leadership
 status: stable

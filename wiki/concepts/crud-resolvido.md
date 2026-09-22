@@ -4,7 +4,7 @@ title: "CRUD Resolvido"
 aliases: ["crud ia", "crud automatizado", "porta de entrada fechada"]
 date_created: 2026-05-31
 date_updated: 2026-08-19
-source_count: 3
+source_count: 4
 tags: [crud-resolvido, era-agentica, dev-junior, mercado-de-trabalho, ia-e-dev]
 skill: tech-mentor-backend
 status: stable

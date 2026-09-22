@@ -94,10 +94,10 @@ Esse "evite" é exatamente o contexto do [[wiki/concepts/checklist-primeiro-dia-
 
 ## Ver também
 
-- [[bdd]] — principal gerador de living documentation
-- [[tdd]] — testes como documentação técnica
-- [[contract-testing]] — documentação de contratos entre serviços
-- [[piramide-de-testes]] — contexto estratégico
+- [[concepts/bdd]] — principal gerador de living documentation
+- [[concepts/tdd]] — testes como documentação técnica
+- [[concepts/contract-testing]] — documentação de contratos entre serviços
+- [[concepts/piramide-de-testes]] — contexto estratégico
 
 ## Key Sources
 

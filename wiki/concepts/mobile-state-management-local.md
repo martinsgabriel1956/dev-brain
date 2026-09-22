@@ -81,8 +81,8 @@ class _CounterWidgetState extends State<CounterWidget> {
 
 ## Ver também
 
-- [[mobile-state-management-global]] — quando elevar para global
-- [[mobile-layouts-responsivos]] — estado de layout (breakpoints) é local
+- [[concepts/mobile-state-management-global]] — quando elevar para global
+- [[concepts/mobile-layouts-responsivos]] — estado de layout (breakpoints) é local
 
 ## Key Sources
 

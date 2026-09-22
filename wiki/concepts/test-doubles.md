@@ -3,8 +3,8 @@ type: concept
 title: "Test Doubles"
 aliases: ["dublê de teste", "mock stub fake spy", "xunit test patterns"]
 date_created: 2026-04-22
-date_updated: 2026-09-21
-source_count: 29
+date_updated: 2026-09-22
+source_count: 32
 tags: [testes, test-doubles, mock, stub, fake, spy, dummy]
 skill: tech-mentor-testing
 status: stable
@@ -92,17 +92,25 @@ Substitui APIs externas no nível da rede com `msw`. O código nem sabe que est�
 
 ## O termo "TestDouble" e o teste de integração estreito
 
-O termo guarda-chuva "Test Double" (analogia a dublê de cinema) foi divulgado por [[wiki/entities/martin-fowler]] em seu bliki em 2006 — mas a taxonomia interna dos cinco tipos (Dummy/Fake/Stub/Spy/Mock) é de autoria de [[wiki/entities/gerard-meszaros]], criada para capturar padrões de uso da família de frameworks "[[wiki/entities/junit|Xunit]]" (ver [[wiki/sources/xunit-martin-fowler]] para a origem dessa família, criada por [[wiki/entities/kent-beck]] e Erich Gamma) e publicada no livro *xUnit Test Patterns* (2007). Fowler relata explicitamente essa autoria no próprio artigo; ver [[wiki/sources/test-double-martin-fowler]]. Test Double é a peça que viabiliza o [[teste-de-integracao-estreito-vs-amplo|narrow integration test]]: em vez de ativar um serviço externo real para testar a integração, exercita-se o código que fala com esse serviço contra um double — desde que ele seja fiel o suficiente (checado por [[contract-testing]]).
+O termo guarda-chuva "Test Double" (analogia a dublê de cinema) foi divulgado por [[wiki/entities/martin-fowler]] em seu bliki em 2006 — mas a taxonomia interna dos cinco tipos (Dummy/Fake/Stub/Spy/Mock) é de autoria de [[wiki/entities/gerard-meszaros]], criada para capturar padrões de uso da família de frameworks "[[wiki/entities/junit|Xunit]]" (ver [[wiki/sources/xunit-martin-fowler]] para a origem dessa família, criada por [[wiki/entities/kent-beck]] e Erich Gamma) e publicada no livro *xUnit Test Patterns* (2007). Fowler relata explicitamente essa autoria no próprio artigo; ver [[wiki/sources/test-double-martin-fowler]]. Test Double é a peça que viabiliza o [[teste-de-integracao-estreito-vs-amplo|narrow integration test]]: em vez de ativar um serviço externo real para testar a integração, exercita-se o código que fala com esse serviço contra um double — desde que ele seja fiel o suficiente (checado por [[concepts/contract-testing]]).
 
 ## Ver também
 
 - [[wiki/concepts/indirect-input-output]] — eixo entrada/saída indireta que organiza os cinco tipos
-- [[tdd]] — contexto onde test doubles são usados
-- [[piramide-de-testes]] — doubles são a ferramenta dos testes unitários
+- [[concepts/tdd]] — contexto onde test doubles são usados
+- [[concepts/piramide-de-testes]] — doubles são a ferramenta dos testes unitários
 - [[race-condition]] — MSW ajuda a testar race conditions de rede
 - [[teste-de-integracao-estreito-vs-amplo]] — uso de doubles fora do unitário, em testes de integração estreitos
 - [[unit-test-solitario-vs-sociavel]] — doubles definem se um unit test é solitário ou sociável
-- [[wiki/concepts/self-initializing-fake]] — Fake que, na primeira chamada, encaminha ao serviço real e grava a resposta em cache, servindo daí em diante; técnica recomendada por Fowler para doubles usados em [[contract-testing]]
+- [[wiki/concepts/self-initializing-fake]] — Fake que, na primeira chamada, encaminha ao serviço real e grava a resposta em cache, servindo daí em diante; técnica recomendada por Fowler para doubles usados em [[concepts/contract-testing]]
+
+## Motivação prática: quebrar acoplamento em Hard-to-Test Code
+
+[[wiki/sources/hard-to-test-code-xunitpatterns]] fornece o motivo operacional para escolher Test Double na causa "Highly Coupled Code" do smell [[wiki/concepts/hard-to-test-code]]: uma classe que não executa isoladamente (acoplada demais a outras) é resolvida quebrando o acoplamento, e a técnica citada é especificamente **Test Stub** ou **Mock Object** — não os cinco tipos da taxonomia igualmente. Para retrofit em código legado altamente acoplado, a fonte aponta o livro "Working Effectively with Legacy Code" de Michael Feathers como referência dedicada.
+
+## Mock dessincronizado causa depuração manual, não só integração quebrada
+
+[[wiki/sources/frequent-debugging-xunitpatterns]] nomeia uma consequência concreta do risco já citado acima (integração mascarada pela escola London/Mockist, via [[wiki/concepts/tdd]]): quando Mock Objects substituem extensivamente depended-on objects mas os unit tests desses objetos não batem com o comportamento programado nos mocks, a suíte passa localmente sem refletir o comportamento real — e o erro só aparece depois, exigindo [[wiki/concepts/frequent-debugging|depuração manual]] para ser rastreado. É o mesmo risco de "mock mentiroso" com um sintoma observável e nomeado, em vez de apenas um risco abstrato de design.
 
 ## Limite do mock: verifica a chamada, não o resultado
 
@@ -118,6 +126,7 @@ Mockar um banco de dados permite verificar que `db.save` foi chamado, mas não c
 - [[wiki/sources/indirect-input-xunitpatterns]] — verbete de glossário dedicado a "indirect input", a metade do eixo entrada/saída que motiva o uso de Stub
 - [[wiki/sources/test-double-xunitpatterns-meszaros]] — **fonte primária** da taxonomia (página canônica de Meszaros no xUnitPatterns.com); vocabulário SUT/DOC, entrada/saída indireta, pontos de controle/observação; Mock ≠ "Stub + asserção"
 - [[wiki/sources/test-stub-xunitpatterns-meszaros]] — fonte primária dedicada à variação Test Stub; detalha Responder vs. Saboteur e o padrão Entity Chain Snipping
+- [[wiki/sources/hard-to-test-code-xunitpatterns]] — motivação prática de Test Stub/Mock Object: quebrar Highly Coupled Code para viabilizar teste isolado
 - [[wiki/sources/replace-dependency-with-test-double-xunitpatterns]] — fonte primária da refatoração mecânica: Dependency Injection vs. Dependency Lookup, escolha do papel do double, Hard-Coded vs. Configurable, e Extract Interface como pré-requisito em linguagens estaticamente tipadas
 - [[wiki/sources/test-doubles]]
 - [[wiki/sources/test-double-martin-fowler]] — fonte secundária que popularizou o termo, com atribuição correta da taxonomia a Gerard Meszaros
@@ -140,3 +149,4 @@ Mockar um banco de dados permite verificar que `db.save` foi chamado, mas não c
 - [[wiki/sources/need-driven-development-xunitpatterns]] — verbete de glossário dedicado ao termo "need-driven development": nomeia formalmente o processo TDD outside-in/London School onde Mock Object substitui todo código dependente, verificando as indirect outputs esperadas — mesmo mecanismo já documentado aqui, agora com processo nomeado por fonte primária
 - [[wiki/sources/production-code-xunitpatterns]] — verbete de glossário dedicado ao termo "production code": define formalmente o contraponto de "test code" que SUT e DOC sempre são, fechando a lacuna de um termo já citado várias vezes sem fonte própria
 - [[wiki/sources/test-code-xunitpatterns]] — verbete de glossário dedicado ao termo-irmão "test code": código escrito para testar outro código, seja production code ou outro test code — cobre explicitamente o caso de um test double customizado precisar ele próprio de teste
+- [[wiki/sources/frequent-debugging-xunitpatterns]] — nomeia a consequência prática de um Mock Object dessincronizado do comportamento real do DOC: depuração manual, não apenas risco abstrato de integração mascarada

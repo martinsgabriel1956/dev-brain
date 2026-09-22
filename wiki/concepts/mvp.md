@@ -4,7 +4,7 @@ title: "MVP (Minimum Viable Product)"
 aliases: ["mvp", "produto mínimo viável", "minimum viable product"]
 date_created: 2026-04-29
 date_updated: 2026-09-18
-source_count: 10
+source_count: 11
 tags: [projetos, produtividade, entrega, planejamento, carreira, startup]
 skill: tech-mentor-leadership
 status: stable

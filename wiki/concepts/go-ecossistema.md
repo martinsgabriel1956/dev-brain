@@ -87,9 +87,9 @@ Confirmando o encaixe da stdlib/ecossistema acima com o uso real reportado pelo 
 
 ## Ver também
 
-- [[go-stdlib]] — entender net/http antes de adicionar Chi
-- [[go-arquitetura]] — como o ecossistema encaixa na clean architecture
-- [[go-producao]] — linting + Docker + observabilidade
+- [[concepts/go-stdlib]] — entender net/http antes de adicionar Chi
+- [[concepts/go-arquitetura]] — como o ecossistema encaixa na clean architecture
+- [[concepts/go-producao]] — linting + Docker + observabilidade
 
 ## Key Sources
 

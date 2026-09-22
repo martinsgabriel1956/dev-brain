@@ -4,7 +4,7 @@ title: "Composition Root"
 aliases: ["composition root", "composição grude", "raiz de composição", "main layer"]
 date_created: 2026-09-08
 date_updated: 2026-09-08
-source_count: 3
+source_count: 2
 tags: [design-patterns, dependency-injection, clean-architecture, factory-pattern, acoplamento]
 skill: tech-mentor-backend
 status: stub

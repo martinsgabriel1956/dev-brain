@@ -65,7 +65,7 @@ O domínio não sabe que existe banco de dados. Isso o torna testável com funç
 
 ## Conexão com Event Sourcing
 
-[[event-sourcing]] aplica esse princípio ao nível de persistência: o aggregate (domínio) apenas emite eventos (puro), e o framework/adapter persiste esses eventos (efeito colateral explícito nas bordas).
+[[concepts/event-sourcing]] aplica esse princípio ao nível de persistência: o aggregate (domínio) apenas emite eventos (puro), e o framework/adapter persiste esses eventos (efeito colateral explícito nas bordas).
 
 ## Key Sources
 

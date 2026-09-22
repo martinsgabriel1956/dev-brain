@@ -4,7 +4,7 @@ title: "Extract Method"
 aliases: ["extrair método"]
 date_created: 2026-09-21
 date_updated: 2026-09-21
-source_count: 1
+source_count: 2
 tags: [refactoring, testes, test-code-duplication]
 skill: tech-mentor-testing
 status: stub

@@ -4,7 +4,7 @@ title: "Contrato de API"
 aliases: ["API contract", "contrato de interface", "interface contract"]
 date_created: 2026-07-09
 date_updated: 2026-08-18
-source_count: 9
+source_count: 8
 tags: [api, contrato, backend, arquitetura, desacoplamento]
 skill: tech-mentor-backend
 status: stub

@@ -4,7 +4,7 @@ title: "Database Migration"
 aliases: ["migration", "migrations", "migrate up", "migrate down", "migração de banco de dados"]
 date_created: 2026-07-28
 date_updated: 2026-09-02
-source_count: 2
+source_count: 3
 tags: [banco-de-dados, migrations, versionamento, orm, postgresql, git]
 skill: tech-mentor-backend
 status: draft

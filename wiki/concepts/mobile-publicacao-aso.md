@@ -64,8 +64,8 @@ Taxa de resposta 5x maior quando solicitado no contexto correto.
 
 ## Ver também
 
-- [[mobile-monetizacao]] — configurar produtos antes de publicar
-- [[mobile-cicd]] — automatizar upload do build
+- [[concepts/mobile-monetizacao]] — configurar produtos antes de publicar
+- [[concepts/mobile-cicd]] — automatizar upload do build
 
 ## Key Sources
 

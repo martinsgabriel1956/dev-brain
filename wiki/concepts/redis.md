@@ -3,8 +3,8 @@ type: concept
 title: "Redis"
 aliases: ["redis cache", "redis db"]
 date_created: 2026-06-26
-date_updated: 2026-08-19
-source_count: 11
+date_updated: 2026-09-22
+source_count: 12
 tags: [redis, cache, nosql, banco-in-memory, chave-valor, backend, grande-rollback]
 skill: tech-mentor-backend
 status: stable
@@ -14,7 +14,7 @@ status: stable
 
 ## TL;DR
 
-Banco [[nosql]] [[banco-in-memory]] do tipo chave-valor. Projetado para latência mínima — armazena tudo na RAM e acessa por chave, sem esquema, sem SQL. Caso de uso principal: [[cache]].
+Banco [[nosql]] [[banco-in-memory]] do tipo chave-valor. Projetado para latência mínima — armazena tudo na RAM e acessa por chave, sem esquema, sem SQL. Caso de uso principal: [[concepts/cache]].
 
 ## Modelo de Dados
 
@@ -52,7 +52,7 @@ A chave pode ser longa e semântica. Busca por prefixo (`GET cod_cliente:*`) per
 ## Padrões de Uso
 
 - **[[cache-aside]]** — busca no Redis; em miss vai ao banco e popula com TTL
-- **[[cqrs]] read layer** — Redis como projeção otimizada de leitura; SQL como fonte de verdade
+- **[[concepts/cqrs]] read layer** — Redis como projeção otimizada de leitura; SQL como fonte de verdade
 - **[[feature-flag]]** — interruptores de código com latência mínima
 - **Session store** — tokens de sessão, permissões de menu, extrato do cliente
 - **Reserva temporizada (TTL como regra de negócio)** — guardar uma chave com expiração automática para implementar diretamente uma regra do tipo "reserva por N minutos", sem job/cron externo para liberar o recurso. Ver [[wiki/sources/system-design-entrevista-cinema-draw-io]] abaixo — mas note a ressalva de consistência descrita ali.
@@ -89,6 +89,7 @@ Reforço direto do caso Shopify acima: em quase 100% dos casos reais, Redis não
 
 ## Key Sources
 
+- [[wiki/sources/sessions]] — JWT stateless: impossível revogar antes do TTL. Sessions server-side com Redis: revogação imediata ao custo de state. MFA TOTP: mínimo aceitável. WebAuthn/Passkeys: padrão futuro sem senha,...
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — Redis Pub/Sub como notificador entre microsserviços, armadilha da conexão sem Singleton
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — Redis Pub/Sub como broker entre servidores WebSocket replicados, tópico por usuário/grupo

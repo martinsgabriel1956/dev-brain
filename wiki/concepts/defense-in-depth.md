@@ -3,8 +3,8 @@ type: concept
 title: "Defense in Depth"
 aliases: ["defense in depth", "defesa em profundidade", "camadas de segurança", "layered security"]
 date_created: 2026-06-05
-date_updated: 2026-07-20
-source_count: 3
+date_updated: 2026-09-22
+source_count: 5
 tags: [defense-in-depth, security, arquitetura-seguranca, least-privilege, gatekeeper, waf]
 skill: tech-mentor-security
 status: stable
@@ -53,6 +53,7 @@ Cada camada assume que a anterior pode falhar: mesmo que o agente escape da cela
 
 ## Key Sources
 
+- [[wiki/sources/secure-design-patterns]] — 7 padrões de design seguro: Defense in Depth (múltiplas camadas independentes), Least Privilege (permissão mínima necessária), Secure Defaults (configuração padrão é segura), Fail Secure/Closed...
 - [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — as 5 práticas do Pragmatic Programmer como instâncias de camadas de defense in depth
 - [[wiki/sources/ssh-chaves-como-funcionam]] — hardening de SSH como exemplo de camada de infraestrutura

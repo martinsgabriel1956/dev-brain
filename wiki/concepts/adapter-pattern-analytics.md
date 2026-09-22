@@ -4,7 +4,7 @@ title: "Adapter Pattern para Analytics Mobile"
 aliases: ["analytics adapter", "analytics provider pattern", "troca de provider analytics"]
 date_created: 2026-04-23
 date_updated: 2026-04-23
-source_count: 1
+source_count: 0
 tags: [mobile, analytics, adapter-pattern, design-patterns, platform-engineering]
 skill: tech-mentor-mobile
 status: stable

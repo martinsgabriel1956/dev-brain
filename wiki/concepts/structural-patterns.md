@@ -12,7 +12,7 @@ status: stable
 
 # Structural Patterns (Padrões Estruturais)
 
-Uma das três categorias dos 23 padrões [[gang-of-four]]. Tratam de **como objetos se relacionam e se compõem** para formar estruturas maiores — como Legos.
+Uma das três categorias dos 23 padrões [[entities/gang-of-four]]. Tratam de **como objetos se relacionam e se compõem** para formar estruturas maiores — como Legos.
 
 ## Os 7 Padrões Estruturais GoF
 

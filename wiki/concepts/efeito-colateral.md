@@ -43,7 +43,7 @@ Sistemas úteis precisam de efeitos (persistir dados, enviar notificações, faz
 - [[estado-compartilhado]] — mutar estado global é o efeito colateral mais problemático
 - [[imutabilidade]] — dados imutáveis eliminam a classe de efeitos de mutação
 - [[acoplamento]] — efeitos colaterais ocultos criam acoplamento implícito e imprevisível
-- [[idempotencia]] — funções idempotentes têm efeitos colaterais controlados e repetíveis
+- [[concepts/idempotencia]] — funções idempotentes têm efeitos colaterais controlados e repetíveis
 
 ## Key sources
 

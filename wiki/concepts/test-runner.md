@@ -3,8 +3,8 @@ type: concept
 title: "Test Runner"
 aliases: ["executor de testes"]
 date_created: 2026-09-11
-date_updated: 2026-09-21
-source_count: 3
+date_updated: 2026-09-22
+source_count: 7
 tags: [testes, testcase-class, xunit, terminologia]
 skill: tech-mentor-testing
 status: stub
@@ -22,6 +22,10 @@ Componente de [[wiki/concepts/tdd|xUnit]] que consome um [[wiki/concepts/test-su
 
 [[wiki/sources/testcase-object-xunitpatterns]] traz o primeiro exemplo visual da wiki de um **Graphical Test Runner**: o do [[wiki/entities/junit]] embutido no Eclipse, que permite ao usuário "descer" (drill down) na árvore de testes — o **Test Tree Explorer** — para inspecionar os Testcase Objects individuais dentro de um Test Suite Object. A fonte confirma que essa capacidade de inspeção/manipulação em tempo real é justamente o motivo pelo qual o Test Runner precisa tratar testes como objetos (Testcase Object como Command [GOF]), e não como procedimentos: um Test Runner gráfico precisa poder navegar e selecionar testes individuais na árvore, o que exige que cada teste seja um objeto manipulável.
 
+## Saída insuficiente do Test Runner como ponto de partida de um smell
+
+[[wiki/sources/frequent-debugging-xunitpatterns]] parte de um cenário concreto de insuficiência: quando a saída do Test Runner (mensagem de falha, padrão de falhas) não basta para determinar o problema, e depuração manual (debugger interativo, prints) se torna necessária com frequência, tem-se o smell [[wiki/concepts/frequent-debugging|Frequent Debugging]] — sintoma de falta de Defect Localization na suíte, não do Test Runner em si.
+
 ## Status: stub
 
 Conhecido, até esta ingestão, apenas pela descrição de alto nível em [[wiki/sources/testcase-class-xunitpatterns]] e pelo exemplo do Graphical Test Runner do Eclipse acima — sem fonte primária dedicada ("Test Runner.html" no site, ainda não ingerida), a mecânica interna (como o runner descobre testes, reporta resultados, trata falhas de fixture) não está detalhada na wiki.
@@ -31,3 +35,7 @@ Conhecido, até esta ingestão, apenas pela descrição de alto nível em [[wiki
 - [[wiki/sources/testcase-class-xunitpatterns]] — situa o Test Runner como consumidor final do Test Suite Object produzido pela Testcase Class
 - [[wiki/sources/testcase-object-xunitpatterns]] — exemplo concreto do Graphical Test Runner do JUnit no Eclipse; Test Tree Explorer
 - [[wiki/sources/test-discovery-xunitpatterns]] — **fonte primária dedicada** ao mecanismo pelo qual o Test Runner descobre os testes a executar (Test Discovery vs. Test Enumeration)
+- [[wiki/sources/frequent-debugging-xunitpatterns]] — cenário de partida do smell Frequent Debugging: saída do Test Runner insuficiente para localizar o problema sem depuração manual
+- [[wiki/sources/test-failure-xunitpatterns]] — verbete de glossário que formaliza um dos resultados possíveis que o Test Runner reporta ao final de uma execução: resultado real diferente do esperado
+- [[wiki/sources/test-success-xunitpatterns]] — verbete par: formaliza o outro resultado possível — todos os resultados reais batem com os esperados
+- [[wiki/sources/test-error-xunitpatterns]] — verbete par: formaliza o terceiro resultado possível — um erro impede a execução de chegar até a asserção, distinto de test failure (asserção rodou e divergiu)

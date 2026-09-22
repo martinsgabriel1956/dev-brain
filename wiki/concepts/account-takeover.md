@@ -3,8 +3,8 @@ type: concept
 title: "Account Takeover (ATO)"
 aliases: ["account takeover", "ato", "tomada de conta", "sequestro de conta"]
 date_created: 2026-07-31
-date_updated: 2026-09-08
-source_count: 2
+date_updated: 2026-09-22
+source_count: 3
 tags: [account-takeover, ato, appsec, autenticacao, fraude, idor]
 skill: tech-mentor-security
 status: stub
@@ -40,5 +40,6 @@ Um IDOR que vaza dados (nome, e-mail, endereço) já é sério, mas está limita
 
 ## Key Sources
 
+- [[wiki/sources/fraud-abuse]] — Fraud & Abuse: múltiplas camadas. Device Fingerprinting (FingerprintJS) identifica dispositivos mesmo sem cookies. Velocity Checks detectam padrões anômalos (N tentativas em X segundos). Fraud...
 - [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]]
 - [[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] — ATO via brute force de senha (Burp Intruder, ffuf, Hydra) habilitado por user enumeration e ausência de rate limit/MFA, sem depender de IDOR

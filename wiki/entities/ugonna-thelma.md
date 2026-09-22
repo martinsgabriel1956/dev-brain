@@ -4,7 +4,7 @@ title: "Ugonna Thelma"
 aliases: ["ugonna thelma", "gol na telma (transcrição incorreta)"]
 date_created: 2026-08-06
 date_updated: 2026-08-06
-source_count: 1
+source_count: 2
 tags: [solid, oop, autor, medium]
 skill: tech-mentor-backend
 status: stub

@@ -12,6 +12,7 @@ source_url: ""
 author: "Canal não identificado no áudio (série 'conceitos importantes da programação em pouco tempo'); menciona ter curso de system design)"
 date_published: ""
 date_ingested: 2026-07-29
+status: stable
 ---
 
 ## TL;DR

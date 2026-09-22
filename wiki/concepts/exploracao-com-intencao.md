@@ -4,7 +4,7 @@ title: "Exploração com Intenção"
 aliases: ["intentional exploration", "explorar código com objetivo", "seguir o fio", "navegação intencional"]
 date_created: 2026-04-29
 date_updated: 2026-07-23
-source_count: 3
+source_count: 2
 tags: [codebase, aprendizado, debugging, fluxo-de-dados, onboarding]
 skill: tech-mentor-leadership
 status: stable

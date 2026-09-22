@@ -4,7 +4,7 @@ title: "Coesão"
 aliases: ["cohesion", "alta coesão", "baixa coesão"]
 date_created: 2026-04-25
 date_updated: 2026-08-18
-source_count: 4
+source_count: 3
 tags: [coesao, software-design, clean-code, arquitetura]
 skill: tech-mentor-backend
 status: stub

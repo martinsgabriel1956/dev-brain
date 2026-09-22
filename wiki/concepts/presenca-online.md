@@ -3,8 +3,8 @@ type: concept
 title: "Presença Online"
 aliases: ["presence", "online status", "last seen", "indicador de presença"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-09-22
+source_count: 2
 tags: [system-design, chat, presença, redis, kafka, escala]
 skill: tech-mentor-system-design
 status: stable
@@ -49,4 +49,5 @@ Consistência eventual aceitável para presença — atraso de alguns segundos n
 
 ## Key Sources
 
+- [[wiki/sources/presence-system]] — Sistema de presença (online/offline) usa Heartbeat + Redis TTL: cliente envia ping a cada 15s, servidor atualiza `presence:{userId}` com SETEX 30s. Se TTL expirar, usuário está offline. Para...
 - [[sources/case-whatsapp]]

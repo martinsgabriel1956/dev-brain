@@ -4,7 +4,7 @@ title: "Autoconsciência de Aprendizado"
 aliases: ["aprender a aprender", "metacognição de aprendizado", "como eu aprendo", "learning self-awareness"]
 date_created: 2026-06-05
 date_updated: 2026-06-05
-source_count: 1
+source_count: 2
 tags: [metacognicao, aprendizado, autodidata, carreira, estilos-de-aprendizado]
 skill: tech-mentor-leadership
 status: stable

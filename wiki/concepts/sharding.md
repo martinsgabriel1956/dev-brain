@@ -3,7 +3,7 @@ type: concept
 title: "Sharding"
 aliases: ["database sharding", "particionamento horizontal", "shard", "shard key"]
 date_created: 2026-06-26
-date_updated: 2026-09-15
+date_updated: 2026-09-22
 source_count: 7
 tags: [system-design, banco-de-dados, sharding, escalabilidade, distribuido]
 skill: tech-mentor-system-design
@@ -73,7 +73,7 @@ Não faz sentido tentar fazer sharding de um monolito inteiro com centenas de ta
 
 1. [[escalabilidade-vertical]] — mais RAM/CPU no banco (mais simples)
 2. [[replicacao-de-banco]] — read replicas para aliviar leitura
-3. [[cache]] — reduzir hits ao banco antes de distribuí-lo
+3. [[concepts/cache]] — reduzir hits ao banco antes de distribuí-lo
 4. [[wiki/concepts/particionamento-de-tabela]] — particionamento lógico (RANGE/LIST/HASH) dentro do mesmo banco, sem o custo de múltiplos nós físicos do sharding. `PARTITION BY HASH` do Postgres é o exemplo mais fácil de confundir com sharding real, por calcular um hash e rotear automaticamente — mas continua sendo uma única instância, sem distribuição física entre servidores; ver [[wiki/sources/particionamento-por-hash-postgresql-sql-30-dias]]
 
 > **Regra:** sharding é complexo. Esgote as alternativas primeiro.
@@ -81,7 +81,7 @@ Não faz sentido tentar fazer sharding de um monolito inteiro com centenas de ta
 ## Relação com outros conceitos
 
 - [[replicacao-de-banco]] — a outra estratégia de escalar banco; complementar ao sharding
-- [[cap-theorem]] — sharding força decisões sobre consistência vs disponibilidade
+- [[concepts/cap-theorem]] — sharding força decisões sobre consistência vs disponibilidade
 - [[escalabilidade-horizontal]] — sharding é a escalabilidade horizontal aplicada ao banco de dados
 - [[gargalo]] — banco é o gargalo mais comum; sharding é o último recurso para ele
 
@@ -97,3 +97,7 @@ Não faz sentido tentar fazer sharding de um monolito inteiro com centenas de ta
 - [[wiki/sources/particionamento-por-hash-postgresql-sql-30-dias]] — particionamento por HASH usado como analogia pedagógica de sharding pelo autor, que se corrige explicitamente: HASH roteia por cálculo automático mas continua numa única instância Postgres, sem distribuição física entre nós
 - [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]] — sharding manual do Postgres (não automático) vs. sharding nativo de MongoDB/DynamoDB, apresentado como critério de escolha ligado a leitura/escrita, não a formato do dado; ver [[wiki/concepts/criterios-de-escolha-de-banco-de-dados]]
 - [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — Scalability Units do Nubank: sharding generalizado para clone de infraestrutura inteira (não só banco), motivado por gargalos fora do banco de dados (Kafka, batch jobs, capacidade de máquinas na AWS)
+
+## Key Sources
+
+- [[wiki/sources/cell-based-architecture]] — Cell-Based Architecture particiona o sistema em células funcionalmente completas e independentes — cada célula serve um subconjunto de usuários ou tenants. Falha em uma célula não afeta as demais...

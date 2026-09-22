@@ -4,7 +4,7 @@ title: "VPN — Virtual Private Network"
 aliases: ["vpn", "rede privada virtual", "virtual private network"]
 date_created: 2026-09-14
 date_updated: 2026-09-14
-source_count: 1
+source_count: 3
 tags: [vpn, networking, tunelamento, criptografia, seguranca]
 skill: tech-mentor-networking
 status: draft

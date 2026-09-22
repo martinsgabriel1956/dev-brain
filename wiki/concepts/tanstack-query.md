@@ -68,8 +68,8 @@ gcTime    → quanto tempo o dado fica no cache após não ter consumidores
 
 ## Ver também
 
-- [[useQuery]] — detalhes de leitura
-- [[useMutation]] — detalhes de escrita
+- [[concepts/useQuery]] — detalhes de leitura
+- [[concepts/useMutation]] — detalhes de escrita
 - [[query-key]] — estratégia de cache
 - [[optimistic-updates]] — UX de atualização instantânea
 - [[swr]] — alternativa mais leve

@@ -4,7 +4,7 @@ title: "Facade Pattern"
 aliases: ["padrão facade", "design pattern facade", "fachada"]
 date_created: 2026-05-01
 date_updated: 2026-08-18
-source_count: 5
+source_count: 6
 tags: [design-patterns, structural, facade, oop, encapsulamento]
 skill: tech-mentor-backend
 status: stable

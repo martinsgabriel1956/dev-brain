@@ -121,10 +121,10 @@ Extrair um módulo para um serviço próprio, nesse desenho, é remover a linha 
 
 ## Ver também
 
-- [[clean-architecture]] — princípios gerais
-- [[hexagonal-architecture]] — ports & adapters
-- [[go-ecossistema]] — Chi, sqlc, golangci-lint
-- [[go-producao]] — graceful shutdown, health checks
+- [[concepts/clean-architecture]] — princípios gerais
+- [[concepts/hexagonal-architecture]] — ports & adapters
+- [[concepts/go-ecossistema]] — Chi, sqlc, golangci-lint
+- [[concepts/go-producao]] — graceful shutdown, health checks
 - [[wiki/concepts/monolito-modular]] — quando "feature" vira "módulo" com fronteira de extração explícita
 
 ## Key Sources

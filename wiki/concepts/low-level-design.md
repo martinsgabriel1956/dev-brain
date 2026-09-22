@@ -43,4 +43,4 @@ Alto — diverge do código com o tempo. Requer disciplina para manter atualizad
 
 ## Conceitos Relacionados
 
-[[high-level-design]] · [[adr-architecture-decision-record]] · [[trd-technical-requirements-document]]
+[[concepts/high-level-design]] · [[adr-architecture-decision-record]] · [[concepts/trd-technical-requirements-document]]

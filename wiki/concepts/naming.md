@@ -4,7 +4,7 @@ title: "Naming"
 aliases: ["nomeação", "naming things", "nomear variáveis", "nomes ruins"]
 date_created: 2026-04-26
 date_updated: 2026-08-21
-source_count: 6
+source_count: 5
 tags: [naming, clean-code, craftsmanship, legibilidade, carreira]
 skill: tech-mentor-leadership
 status: draft

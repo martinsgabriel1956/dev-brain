@@ -4,7 +4,7 @@ title: "Reflection"
 aliases: ["reflexão", "introspecção"]
 date_created: 2026-09-21
 date_updated: 2026-09-21
-source_count: 2
+source_count: 4
 tags: [oo, testes, xunit, terminologia, mecanismo-de-linguagem]
 skill: tech-mentor-testing
 status: stub

@@ -4,7 +4,7 @@ title: "Strategy Pattern"
 aliases: ["strategy", "padrão estratégia"]
 date_created: 2026-05-05
 date_updated: 2026-09-21
-source_count: 5
+source_count: 6
 tags: [design-patterns, behavioral, strategy, gof, open-closed, polimorfismo]
 skill: tech-mentor-backend
 status: stable

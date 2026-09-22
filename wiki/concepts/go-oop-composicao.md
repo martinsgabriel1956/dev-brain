@@ -87,9 +87,9 @@ Mais idiomático que múltiplos type assertions sequenciais.
 
 ## Ver também
 
-- [[go-fundamentos]] — structs e tipos base
-- [[go-arquitetura]] — interfaces como contratos de repository
-- [[clean-architecture]] — inversão de dependência via interfaces
+- [[concepts/go-fundamentos]] — structs e tipos base
+- [[concepts/go-arquitetura]] — interfaces como contratos de repository
+- [[concepts/clean-architecture]] — inversão de dependência via interfaces
 
 ## Key Sources
 

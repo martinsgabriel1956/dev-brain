@@ -4,7 +4,7 @@ title: "Hashing"
 aliases: ["hashing", "hash", "função hash", "hash criptográfico"]
 date_created: 2026-04-29
 date_updated: 2026-08-26
-source_count: 4
+source_count: 5
 tags: [hashing, segurança, senhas, integridade, criptografia, sha256, bcrypt, argon2]
 skill: tech-mentor-security
 status: stable

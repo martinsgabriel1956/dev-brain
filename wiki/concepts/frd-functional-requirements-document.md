@@ -33,7 +33,7 @@ Especificação técnica suficiente para engenharia implementar sem ambiguidade.
 
 **Usar:** sistemas regulados (PCI-DSS, LGPD, HIPAA), integrações críticas, times grandes/distribuídos sem contato diário com PM, features com SLA contratual.
 
-**Evitar:** MVPs — [[user-stories]] com bons critérios de aceitação cobrem o mesmo espaço com menos overhead.
+**Evitar:** MVPs — [[concepts/user-stories]] com bons critérios de aceitação cobrem o mesmo espaço com menos overhead.
 
 ## Posição na Hierarquia
 
@@ -51,4 +51,4 @@ TRD (como o sistema é implementado)
 
 ## Conceitos Relacionados
 
-[[prd-product-requirements-document]] · [[user-stories]] · [[trd-technical-requirements-document]] · [[adr-architecture-decision-record]]
+[[prd-product-requirements-document]] · [[concepts/user-stories]] · [[concepts/trd-technical-requirements-document]] · [[adr-architecture-decision-record]]

@@ -4,7 +4,7 @@ title: "MySQL"
 aliases: ["mysql", "innodb"]
 date_created: 2026-07-07
 date_updated: 2026-07-29
-source_count: 4
+source_count: 3
 tags: [mysql, banco-de-dados, sql, innodb, gap-locking, skip-locked, backend]
 skill: tech-mentor-backend
 status: draft

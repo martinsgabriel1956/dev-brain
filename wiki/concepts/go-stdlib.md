@@ -100,7 +100,7 @@ func TestAdd(t *testing.T) {
 
 ## unicode/utf8
 
-Pacote de referência para tudo relacionado a codificação/decodificação [[utf-8]] em Go — `utf8.RuneCountInString`, `utf8.DecodeRune`. [[wiki/sources/algoritmo-decode-utf8-com-tdd]] reimplementa `DecodeRune` do zero como exercício didático e **importa a própria suite de testes desse pacote** da stdlib como oráculo de corretude — validando a implementação própria contra os mesmos edge cases (sequências inválidas, overlong encoding, surrogate pairs) que o time do Go já mapeou. Ver [[tdd]] para a técnica geral de importar testes de uma implementação de referência.
+Pacote de referência para tudo relacionado a codificação/decodificação [[utf-8]] em Go — `utf8.RuneCountInString`, `utf8.DecodeRune`. [[wiki/sources/algoritmo-decode-utf8-com-tdd]] reimplementa `DecodeRune` do zero como exercício didático e **importa a própria suite de testes desse pacote** da stdlib como oráculo de corretude — validando a implementação própria contra os mesmos edge cases (sequências inválidas, overlong encoding, surrogate pairs) que o time do Go já mapeou. Ver [[concepts/tdd]] para a técnica geral de importar testes de uma implementação de referência.
 
 ## log/slog (Go 1.21+)
 
@@ -115,9 +115,9 @@ Substitui `log` padrão — structured logging nativo sem dependência externa.
 
 ## Ver também
 
-- [[go-ecossistema]] — Chi, sqlc quando stdlib não é suficiente
-- [[go-concorrencia]] — `context` e `sync` são parte da stdlib
-- [[go-producao]] — `net/http/pprof` e `log/slog` em produção
+- [[concepts/go-ecossistema]] — Chi, sqlc quando stdlib não é suficiente
+- [[concepts/go-concorrencia]] — `context` e `sync` são parte da stdlib
+- [[concepts/go-producao]] — `net/http/pprof` e `log/slog` em produção
 
 ## Key Sources
 

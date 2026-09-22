@@ -3,8 +3,8 @@ type: concept
 title: "Tech Debt como Ferramenta"
 aliases: ["tech debt deliberado", "dívida técnica estratégica", "ship with debt"]
 date_created: 2026-04-26
-date_updated: 2026-09-15
-source_count: 17
+date_updated: 2026-09-22
+source_count: 18
 tags: [tech-debt, carreira, craftsmanship, estrategia, velocidade, under-engineering, alocacao-de-tempo, medicao]
 skill: tech-mentor-leadership
 status: draft
@@ -114,9 +114,15 @@ O autor nomeia o extremo da tática como **"tactical tornado"**: o programador q
 
 Ver também: o mesmo capítulo cunha explicitamente o termo **"technical debt"**, com a ressalva de que, ao contrário de dívida financeira, a dívida técnica raramente é paga por completo — "you'll keep paying and paying forever" se a decisão foi tática pura (equivalente ao quadrante Imprudente de Fowler), não uma troca consciente.
 
+## Test Debt — Caso Nomeado, Ancorado Especificamente em Ausência de Testes
+
+[[wiki/sources/developers-not-writing-tests-xunitpatterns]] (Gerard Meszaros, xUnitPatterns.com) cunha o termo **test debt** para um caso específico do mesmo mecanismo já documentado nesta página: não escrever testes automatizados para todo código "que poderia quebrar" hipoteca o futuro do time — cada feature nova fica mais lenta de entregar, e refatorar fica cada vez mais arriscado (logo, cada vez mais raro). Diferente do Quadrante de Fowler, aqui a causa raiz não é uma decisão arquitetural consciente, mas uma de três causas concretas: falta de tempo, código difícil de testar, ou estratégia de automação de testes errada (testes frágeis/obscuros demais para escrever rápido). Ver [[wiki/concepts/developers-not-writing-tests]] para a árvore completa de causas.
+
+[[wiki/sources/test-debt-xunitpatterns]] isola a definição formal do termo em fonte primária dedicada e revela a origem do vocabulário: Meszaros credita a metáfora de "dívida" ("não fazer o suficiente de algo") à lista de discussão Industrial XP, não à cunhagem de Cunningham. **Atenção à colisão terminológica**: a skill `tech-mentor-testing` (`references/test-strategy.md`) usa "Test Debt" para um conceito diferente — testes com ROI negativo (flaky, acoplados à implementação, lentos, redundantes) — que é dívida no *código de teste*, não dívida por *ausência* de testes. Os dois mecanismos compartilham nome mas não são intercambiáveis; nenhuma fonte na wiki reconcilia isso ainda.
+
 ## Relacionado
 
-[[concepts/observabilidade]] · [[sources/conceitos-que-ninguem-ensina]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/avaliar-hype-tecnologico]] · [[wiki/concepts/divida-cognitiva]] · [[wiki/concepts/debt-ratio-sqale]] · [[wiki/concepts/hotspot-analysis]] · [[wiki/concepts/paid-framework]] · [[wiki/concepts/refactor-vs-rewrite-matrix]]
+[[concepts/observabilidade]] · [[sources/conceitos-que-ninguem-ensina]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/avaliar-hype-tecnologico]] · [[wiki/concepts/divida-cognitiva]] · [[wiki/concepts/debt-ratio-sqale]] · [[wiki/concepts/hotspot-analysis]] · [[wiki/concepts/paid-framework]] · [[wiki/concepts/refactor-vs-rewrite-matrix]] · [[wiki/concepts/developers-not-writing-tests]]
 
 ## Ciclos Mais Curtos Como Gatilho Para Alocar Tempo a Débito Técnico
 
@@ -148,3 +154,5 @@ Ver também: o mesmo capítulo cunha explicitamente o termo **"technical debt"**
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — distinção tática/estratégica (Ousterhout, Cap. 3), independente do Quadrante de Fowler; "tactical tornado"; regra dos 10-20% de investimento; caso Facebook "move fast and break things"
 - [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — hotfix sob pressão como fonte típica de dívida imprudente; a [[wiki/concepts/folga-de-capacidade-slack|folga de ~20%]] como forma de não *ter* que emitir dívida ao responder a imprevistos
 - [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — hábito prático de linkar ticket ao código no momento de aceitar uma solução tática, com o que precisa ser revisto documentado explicitamente
+- [[wiki/sources/developers-not-writing-tests-xunitpatterns]] — cunha "test debt": caso nomeado do mesmo mecanismo, ancorado especificamente em ausência de testes automatizados
+- [[wiki/sources/test-debt-xunitpatterns]] — verbete de glossário isolando a definição formal de "test debt" e a origem do vocabulário de "dívida" (lista Industrial XP)

@@ -51,8 +51,8 @@ Escala sozinha não resolve raciocínio complexo. A combinação de duas ideias 
 - [[few-shot-learning]] — CoT é uma extensão com passos de raciocínio
 - [[in-context-learning]] — CoT funciona sem gradient updates
 - [[scaling-laws]] — CoT não segue scaling law suave; emergência abrupta
-- [[fine-tuning]] — CoT via prompting supera fine-tuned GPT-3 no GSM8K
-- [[prompt-engineering]] — CoT é uma técnica dentro da hierarquia de prompt engineering
+- [[concepts/fine-tuning]] — CoT via prompting supera fine-tuned GPT-3 no GSM8K
+- [[concepts/prompt-engineering]] — CoT é uma técnica dentro da hierarquia de prompt engineering
 
 ## Setup Experimental
 
@@ -88,7 +88,7 @@ Escala sozinha não resolve raciocínio complexo. A combinação de duas ideias 
 
 - O que exatamente no pré-treinamento causa a emergência do CoT em ~100B?
 - Reasoning models (o1/o3/Claude extended thinking) internalizam CoT no treinamento — a relação com CoT prompting explícito ainda precisa ser mapeada
-- CoT com modelos menores é possível via destilação (ver [[fine-tuning]] com rationale distillation)?
+- CoT com modelos menores é possível via destilação (ver [[concepts/fine-tuning]] com rationale distillation)?
 
 ## Quotes Notáveis
 

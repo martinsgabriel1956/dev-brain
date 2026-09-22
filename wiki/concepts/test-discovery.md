@@ -4,7 +4,7 @@ title: "Test Discovery"
 aliases: ["descoberta de testes", "testcase class discovery", "test method discovery"]
 date_created: 2026-09-21
 date_updated: 2026-09-21
-source_count: 5
+source_count: 6
 tags: [testes, testcase-class, test-runner, xunit, terminologia]
 skill: tech-mentor-testing
 status: stable

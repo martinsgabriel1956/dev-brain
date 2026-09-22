@@ -50,8 +50,8 @@ val offsetX by animateFloatAsState(
 
 ## Ver também
 
-- [[mobile-performance-listas]] — virtualização para listas animadas
-- [[mobile-profiling]] — medir jank antes de otimizar
+- [[concepts/mobile-performance-listas]] — virtualização para listas animadas
+- [[concepts/mobile-profiling]] — medir jank antes de otimizar
 
 ## Key Sources
 

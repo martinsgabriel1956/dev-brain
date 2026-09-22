@@ -4,7 +4,7 @@ title: "Acoplamento"
 aliases: ["coupling", "baixo acoplamento", "alto acoplamento"]
 date_created: 2026-04-25
 date_updated: 2026-08-23
-source_count: 10
+source_count: 11
 tags: [acoplamento, software-design, clean-code, arquitetura, under-engineering]
 skill: tech-mentor-backend
 status: stable

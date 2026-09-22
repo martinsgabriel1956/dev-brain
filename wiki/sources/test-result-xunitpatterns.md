@@ -3,7 +3,7 @@ type: source
 title: "Test Result (xUnitPatterns.com — Gerard Meszaros)"
 aliases: ["test result", "resultado de teste", "xunit patterns glossary test result"]
 date_created: 2026-09-21
-date_updated: 2026-09-21
+date_updated: 2026-09-22
 source_file: /home/gabriel-martins/Documentos/dev-brain/raw/test-result-xunitpatterns.md
 source_url: "http://xunitpatterns.com/test%20result.html"
 author: "Gerard Meszaros"
@@ -53,7 +53,7 @@ A definição trata "test" e "test suite" como igualmente sujeitos a ter um "tes
 
 ## Questões Abertas
 
-- ~~O Glossário do site lista termos irmãos ainda não ingeridos que provavelmente refinam este conceito — **test success**, **test failure**, **test error** e **test run** aparecem no índice de Glossário do site, mas nenhum tem verbete isolado na wiki ainda~~ — **parcialmente corrigido (2026-09-21)**: ver [[wiki/sources/test-run-xunitpatterns]], cujo corpo de texto é **idêntico, palavra por palavra**, a este verbete — o catálogo trata "test run" (o evento de executar) e "test result" (o produto dessa execução) como duas faces do mesmo fenômeno, sem prosa própria para diferenciá-los. **test success**, **test failure** e **test error** seguem sem fonte isolada.
+- ~~O Glossário do site lista termos irmãos ainda não ingeridos que provavelmente refinam este conceito — **test success**, **test failure**, **test error** e **test run** aparecem no índice de Glossário do site, mas nenhum tem verbete isolado na wiki ainda~~ — **resolvido (2026-09-22)**: [[wiki/sources/test-run-xunitpatterns]] fechou "test run" (texto idêntico, palavra por palavra, a este verbete — o catálogo trata "test run" e "test result" como duas faces do mesmo fenômeno). [[wiki/sources/test-failure-xunitpatterns]] fechou "test failure" e [[wiki/sources/test-success-xunitpatterns]] fechou "test success" (par simétrico de definições). [[wiki/sources/test-error-xunitpatterns]] fechou o último termo, "test error" — falha do mecanismo de execução, não do resultado. Os quatro termos irmãos do quarteto original estão agora todos com fonte primária isolada na wiki.
 - A fonte não formaliza se "test result" agregado de uma suíte é uma simples lista de resultados individuais ou um objeto com semântica própria (ex.: "N passaram, M falharam") — deixado implícito.
 
 ---

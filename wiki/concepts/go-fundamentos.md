@@ -103,9 +103,9 @@ O Go Developer Survey oficial do Google confirma esse padrão de adoção com da
 
 ## Ver também
 
-- [[go-oop-composicao]] — como structs evoluem para OOP via composição
-- [[go-concorrencia]] — goroutines e channels
-- [[go-stdlib]] — net/http, json, database/sql
+- [[concepts/go-oop-composicao]] — como structs evoluem para OOP via composição
+- [[concepts/go-concorrencia]] — goroutines e channels
+- [[concepts/go-stdlib]] — net/http, json, database/sql
 - [[wiki/concepts/ponte-fullstack-para-especializacao]] — estratégia de carreira para quem quer entrar no ecossistema Go vindo de outra stack
 - [[wiki/concepts/rust-fundamentos]] — o lado Rust do contraste pragmatismo vs. expressividade
 

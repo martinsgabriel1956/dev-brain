@@ -81,7 +81,7 @@ type OrderStatus = "pending" | "processing" | "shipped" | "delivered" | "cancell
 
 | Doc | Foco | Quando usar |
 |---|---|---|
-| [[trd-technical-requirements-document]] | Especificação completa de uma feature | Antes de iniciar implementação complexa |
+| [[concepts/trd-technical-requirements-document]] | Especificação completa de uma feature | Antes de iniciar implementação complexa |
 | [[rfc-request-for-comments]] | Proposta de mudança — busca feedback | Quando a decisão ainda está aberta |
 | [[adr-architecture-decision-record]] | Registro de decisão tomada + contexto | Após a decisão, para rastreabilidade |
 
@@ -95,4 +95,4 @@ type OrderStatus = "pending" | "processing" | "shipped" | "delivered" | "cancell
 
 ## Conceitos Relacionados
 
-[[trd-technical-requirements-document]] · [[prd-product-requirements-document]] · [[brd-business-requirements-document]] · [[rfc-request-for-comments]] · [[adr-architecture-decision-record]]
+[[concepts/trd-technical-requirements-document]] · [[prd-product-requirements-document]] · [[brd-business-requirements-document]] · [[rfc-request-for-comments]] · [[adr-architecture-decision-record]]

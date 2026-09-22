@@ -44,7 +44,7 @@ Total:      ~1 exabyte de storage
 ## Entities
 
 - [[entities/youtube]]
-- [[entities/cloudfront]]
+- [[concepts/aws-cloudfront]]
 - [[entities/s3]]
 - [[entities/ffmpeg]]
 

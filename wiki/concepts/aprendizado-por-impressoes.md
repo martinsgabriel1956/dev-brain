@@ -4,7 +4,7 @@ title: "Aprendizado por Impressões"
 aliases: ["impressões repetidas", "first impression learning", "spaced exposure", "múltiplas exposições"]
 date_created: 2026-04-29
 date_updated: 2026-06-20
-source_count: 2
+source_count: 1
 tags: [aprendizado, cognição, onboarding, codebase, spaced-repetition]
 skill: tech-mentor-leadership
 status: stable

@@ -4,7 +4,7 @@ title: "Aprender Ensinando"
 aliases: ["learn by teaching", "feynman technique", "ensinar para aprender", "técnica feynman aplicada a código"]
 date_created: 2026-04-29
 date_updated: 2026-06-20
-source_count: 2
+source_count: 1
 tags: [aprendizado, mentoria, pair-programming, gaps, onboarding, metacognição]
 skill: tech-mentor-leadership
 status: stable

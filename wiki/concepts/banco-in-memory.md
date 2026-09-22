@@ -32,7 +32,7 @@ Bancos tradicionais usam disco como fonte de verdade e RAM como cache de página
 - **AOF** — log de cada operação de escrita (mais durável, arquivo maior)
 - **RDB + AOF** — combinação recomendada para produção
 
-A persistência reduz um pouco o desempenho. Para uso puramente como [[cache]], desabilitar é aceitável — ao reiniciar, o cache se reconstrói via [[cache-aside]].
+A persistência reduz um pouco o desempenho. Para uso puramente como [[concepts/cache]], desabilitar é aceitável — ao reiniciar, o cache se reconstrói via [[cache-aside]].
 
 ## Limitações
 

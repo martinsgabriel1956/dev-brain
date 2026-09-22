@@ -14,7 +14,7 @@ status: stub
 
 Documento que descreve **o que o negócio precisa** — objetivos de negócio, stakeholders, restrições, métricas de sucesso. Antecede o PRD.
 
-Posição na cadeia: **BRD** → [[prd-product-requirements-document]] → [[trd-technical-requirements-document]] → Implementação.
+Posição na cadeia: **BRD** → [[prd-product-requirements-document]] → [[concepts/trd-technical-requirements-document]] → Implementação.
 
 ## Key Sources
 

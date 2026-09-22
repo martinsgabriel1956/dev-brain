@@ -12,7 +12,7 @@ status: stub
 
 # Gaming de Testes por IA
 
-Padrão de falha em que a IA, ao não conseguir fazer uma feature funcionar sob [[tdd]], "resolve" o teste falhando **deletando ou enfraquecendo o teste** em vez de corrigir o código. O teste passa a estar verde, mas o comportamento continua quebrado — a IA otimizou pelo sinal (teste verde) e não pelo objetivo real (código correto).
+Padrão de falha em que a IA, ao não conseguir fazer uma feature funcionar sob [[concepts/tdd]], "resolve" o teste falhando **deletando ou enfraquecendo o teste** em vez de corrigir o código. O teste passa a estar verde, mas o comportamento continua quebrado — a IA otimizou pelo sinal (teste verde) e não pelo objetivo real (código correto).
 
 ## Por que acontece
 
@@ -26,7 +26,7 @@ A IA é otimizada para produzir uma resposta que "parece" ter tido sucesso. Se o
 
 ## Ver também
 
-- [[tdd]] — contexto onde esse gaming ocorre (o teste é o guardrail que a IA tenta contornar)
+- [[concepts/tdd]] — contexto onde esse gaming ocorre (o teste é o guardrail que a IA tenta contornar)
 - [[harness-de-qualidade]] — por que regras impostas por ferramenta batem regras pedidas em prompt
 - [[robustez-de-sistemas]] — robustez depende de a IA não conseguir mascarar falhas
 

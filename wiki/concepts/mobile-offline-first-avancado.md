@@ -67,9 +67,9 @@ Y.js / Automerge para edição simultânea sem conflito — texto, listas, count
 
 ## Ver também
 
-- [[mobile-offline-first-basico]] — fundamentos
+- [[concepts/mobile-offline-first-basico]] — fundamentos
 - [[crdt-colaboracao-tempo-real]] — CRDT em profundidade
-- [[idempotencia]] — idempotency key em operações
+- [[concepts/idempotencia]] — idempotency key em operações
 
 ## Key Sources
 

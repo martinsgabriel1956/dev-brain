@@ -3,8 +3,8 @@ type: concept
 title: "Equipe Mista Sênior-Júnior"
 aliases: ["time misto", "pedreiro vs mestre de obras", "mix de senioridade"]
 date_created: 2026-08-26
-date_updated: 2026-08-26
-source_count: 1
+date_updated: 2026-09-22
+source_count: 2
 tags: [carreira, liderança, mentoria, contratação, senioridade, time]
 skill: tech-mentor-leadership
 status: stub
@@ -26,6 +26,12 @@ Um cliente que pede "5 sêniors" geralmente não precisa de 5 sêniors — preci
 
 Mesmo o júnior mais bem-intencionado e capaz, sem orientação, comete erros — não por incompetência, mas porque é da natureza de qualquer pessoa errar numa área que ainda não domina bem. Isso costuma acontecer em dois cenários opostos: startups recém-financiadas que só contratam sênior para "impressionar investidor" (ver [[wiki/concepts/custo-de-capital-e-contratacao-tech]]), e startups com pouco caixa que apostam só em júnior barato para esticar o orçamento — sem prever o custo de erros sem revisão. Ver [[wiki/concepts/apagao-de-seniors]] para o risco de longo prazo de times sem sênior orientando.
 
+## O Ciclo de Sucessão: Sênior Cria Sucessor Antes de Assumir Novo Projeto
+
+[[wiki/sources/sobre-ser-gerente-fabio-akita]] acrescenta o mecanismo de rotação que sustenta um time misto ao longo do tempo, em vez de só justificar por que ele funciona num instante fixo. Quando surge um projeto novo e o time atual já está ocupado, o erro recorrente é contratar uma empresa terceirizada em vez de alocar os membros mais sêniores das próprias equipes no projeto novo — colocando terceiros (quando necessários) subordinados a esse sênior interno, tratados como júnior até dominarem a especialização faltante. Depois que o projeto passa para operação, o sênior precisa criar um sucessor interno para a própria posição antes de assumir o próximo projeto novo — só assim o ciclo se sustenta: júnior bem mentorado vira o próximo sênior, que mentora o próximo júnior, enquanto o sênior original segue para novos projetos. Ver [[wiki/concepts/body-shop-terceirizacao]] para a crítica direta ao caminho de terceirização como primeira opção.
+
+A mesma fonte reforça, num ângulo esportivo, por que times não deveriam sempre escalar só os "melhores": se só o "dream team" joga, quem está de reserva nunca ganha experiência, e quando um membro-estrela tem um problema, ninguém consegue cobrir — pequenas mudanças periódicas na composição do time (misturar reservas em jogos não decisivos) é o que gera novas estrelas ao longo do tempo, não a estabilidade permanente do time ideal.
+
 ## Ver também
 
 - [[wiki/concepts/escalabilidade-vertical-vs-horizontal-de-pessoas]] — o mecanismo por trás de por que o sênior deve orientar em vez de escalar sozinho
@@ -36,3 +42,4 @@ Mesmo o júnior mais bem-intencionado e capaz, sem orientação, comete erros �
 ## Key Sources
 
 - [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]]
+- [[wiki/sources/sobre-ser-gerente-fabio-akita]] — ciclo de sucessão (sênior cria sucessor antes de assumir novo projeto); crítica à terceirização como primeira opção; analogia esportiva de rotação de reservas

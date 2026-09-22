@@ -3,8 +3,8 @@ type: concept
 title: "FinOps — Cost-Aware Architecture"
 aliases: ["finops", "cloud cost", "unit economics", "cost optimization"]
 date_created: 2026-04-23
-date_updated: 2026-08-03
-source_count: 4
+date_updated: 2026-09-22
+source_count: 5
 tags: [finops, cloud-cost, unit-economics, right-sizing, spot-instances, egress, aws]
 skill: tech-mentor-infra
 status: stub
@@ -44,6 +44,7 @@ Reforço direto do exemplo acima ("gastar mais pode ser otimizar custo"), agora 
 
 ## Key Sources
 
+- [[wiki/sources/k8s-autoscaling]] — 4 dimensões de autoscaling no K8s: HPA (pods por CPU/memória), VPA (tamanho do pod por historial), KEDA (pods por eventos externos — fila Kafka, SQS, cron), Karpenter (nodes por demanda de pods...
 - [[sources/finops-cost-aware-architecture]]
 - [[wiki/sources/sre-capacidade-observabilidade-confiabilidade-custo]] — otimização de custo como "gastar mais para perder menos"; ligação com planejamento de capacidade
 - [[wiki/sources/escalabilidade-horizontal-vertical-custo-grafico]] — exemplo gráfico de desperdício quando escalar verticalmente força dobrar o tier da instância

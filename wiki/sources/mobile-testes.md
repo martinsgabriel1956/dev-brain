@@ -33,4 +33,4 @@ Pirâmide mobile: unit tests (lógica de negócio/ViewModel) na base, testes de 
 
 ## Conceitos Abordados
 
-- [[mobile-testes]] · [[mobile-cicd]] · [[mobile-metricas-criticas]] · [[mobile-profiling]] · [[piramide-de-testes]]
+- [[concepts/mobile-testes]] · [[concepts/mobile-cicd]] · [[concepts/mobile-metricas-criticas]] · [[concepts/mobile-profiling]] · [[concepts/piramide-de-testes]]

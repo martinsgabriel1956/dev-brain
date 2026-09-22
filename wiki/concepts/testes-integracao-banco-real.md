@@ -60,12 +60,12 @@ Bater no banco real não é a mesma coisa que um [[teste-de-integracao-estreito-
 
 - [[portfolio-backend-junior]]
 - [[efeito-colateral]] — mockar banco esconde efeitos colaterais reais
-- [[idempotencia]] — testes de integração validam idempotência de operações
+- [[concepts/idempotencia]] — testes de integração validam idempotência de operações
 - [[teste-de-integracao-estreito-vs-amplo]] — por que banco real não é "teste amplo" no sentido de Fowler
 
 ## Um mock de banco mal pensado "não integra"
 
-Se o double do banco não reproduz os mesmos problemas do banco real (constraints, tipos, comportamento de driver), o teste de integração que o usa não está de fato validando integração nenhuma — é só um teste mais fraco escrito pelo próprio autor do código, testando as próprias suposições em vez da realidade. Isso é a face oposta da recomendação de Meszaros ([[wiki/sources/test-double-xunitpatterns-meszaros]]): um [[test-doubles|Fake]] de banco em memória é legítimo *quando a fidelidade não importa para aquele teste* (ele cita um caso de ~50× de ganho de velocidade), mas a própria fonte alerta para **sempre ter ao menos um teste sem double** — que aqui é justamente o teste contra o banco real.
+Se o double do banco não reproduz os mesmos problemas do banco real (constraints, tipos, comportamento de driver), o teste de integração que o usa não está de fato validando integração nenhuma — é só um teste mais fraco escrito pelo próprio autor do código, testando as próprias suposições em vez da realidade. Isso é a face oposta da recomendação de Meszaros ([[wiki/sources/test-double-xunitpatterns-meszaros]]): um [[concepts/test-doubles|Fake]] de banco em memória é legítimo *quando a fidelidade não importa para aquele teste* (ele cita um caso de ~50× de ganho de velocidade), mas a própria fonte alerta para **sempre ter ao menos um teste sem double** — que aqui é justamente o teste contra o banco real.
 
 ## Um Banco Real Compartilhado Entre Branches Recria o Mesmo Problema Que Mockar
 

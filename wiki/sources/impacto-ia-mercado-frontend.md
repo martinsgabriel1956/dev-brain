@@ -41,6 +41,7 @@ Nenhuma entidade nomeada com página própria na wiki foi citada explicitamente 
 
 ## Concepts
 
+- [[wiki/concepts/nichos-frontend-automatizados-ia]] — nichos de frontend (agência, freelancer de landing page, consultoria de CRUD) devastados pela IA
 - [[wiki/concepts/novo-perfil-dev-ia]]
 - [[wiki/concepts/product-engineer]]
 - [[wiki/concepts/spec-driven-development]]

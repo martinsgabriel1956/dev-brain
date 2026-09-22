@@ -25,7 +25,7 @@ Vídeo que percorre três metodologias — TDD, SDD e BDD — como técnicas com
 
 **Claim:** TDD tem três etapas — escrever um teste que falha, escrever o mínimo de código pro teste passar, refatorar mantendo os testes passando.
 **Evidência:** Exemplo prático com função `concat_string`: teste falha primeiro (RED), implementação mínima `s1 + s2` (GREEN), depois refactor.
-**Confiança:** Alta — consistente com [[tdd]] já documentado na wiki.
+**Confiança:** Alta — consistente com [[concepts/tdd]] já documentado na wiki.
 
 **Claim:** Testar apenas o happy path não é suficiente — TDD exige pensar em comportamento de edge cases (ex: o que acontece se `concat_string` recebe um inteiro em vez de string) e escrever testes para os erros esperados.
 **Evidência:** Argumento conceitual, sem dados formais citados.
@@ -63,8 +63,8 @@ Vídeo que percorre três metodologias — TDD, SDD e BDD — como técnicas com
 
 ## Conceitos
 
-- [[tdd]] — ciclo red-green-refactor, exemplo prático de concatenação de strings
-- [[bdd]] — Given/When/Then, Cucumber/Gherkin, autor declara pouca experiência prática
+- [[concepts/tdd]] — ciclo red-green-refactor, exemplo prático de concatenação de strings
+- [[concepts/bdd]] — Given/When/Then, Cucumber/Gherkin, autor declara pouca experiência prática
 - [[spec-driven-development]] — aqui com foco em contratos de API (OpenAPI, Protobuf/gRPC, GraphQL) como boundary entre serviços/times, complementando a definição já existente na wiki (mais focada em specs para agentes de IA)
 - [[gaming-de-testes-por-ia]] — comportamento de deletar testes que falham em vez de corrigir o código (conceito novo, criado a partir desta fonte)
 - [[harness-de-qualidade]] — TDD/SDD impostos via `CLAUDE.md`/skill/harness em vez de apenas pedidos no prompt

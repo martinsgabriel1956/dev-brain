@@ -4,7 +4,7 @@ title: "Data-Driven Test"
 aliases: ["teste dirigido por dados", "data driven test"]
 date_created: 2026-09-21
 date_updated: 2026-09-21
-source_count: 1
+source_count: 2
 tags: [testes, fit, data-driven-test, adapter, interpreter]
 skill: tech-mentor-testing
 status: stub

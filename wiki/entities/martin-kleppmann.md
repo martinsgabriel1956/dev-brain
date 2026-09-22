@@ -3,8 +3,8 @@ type: entity
 title: "Martin Kleppmann"
 aliases: ["kleppmann"]
 date_created: 2026-04-23
-date_updated: 2026-09-18
-source_count: 2
+date_updated: 2026-09-22
+source_count: 3
 tags: [distributed-systems, author, redlock, crdt, designing-data-intensive-applications]
 skill: tech-mentor-system-design
 status: stub
@@ -28,5 +28,6 @@ Pesquisador e autor britânico especializado em sistemas distribuídos. Professo
 
 ## Key Sources
 
+- [[wiki/sources/redis-avancado]] — Redis Streams é o log de eventos persistente com consumer groups e ACK — superior ao Pub/Sub para entrega garantida. Redlock é o distributed lock sem SPOF (5 nós, maioria). Eviction policies...
 - [[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] — DDIA citado como leitura recente/em andamento, endossado para conceitos de escala enterprise
 - [[sources/distributed-locks-raft]]

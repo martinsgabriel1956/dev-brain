@@ -14,7 +14,7 @@ status: stable
 
 ## TL;DR
 
-Distinção do paper *"Out of the Tar Pit"* (Moseley & Marks): **complexidade essencial** vem do problema em si (inevitável); **complexidade acidental** vem das escolhas de implementação (evitável). [[Imutabilidade]] e controle de [[efeitos-colaterais]] eliminam a maior parte da complexidade acidental.
+Distinção do paper *"Out of the Tar Pit"* (Moseley & Marks): **complexidade essencial** vem do problema em si (inevitável); **complexidade acidental** vem das escolhas de implementação (evitável). [[concepts/imutabilidade]] e controle de [[efeitos-colaterais]] eliminam a maior parte da complexidade acidental.
 
 ## Definição
 
@@ -29,15 +29,15 @@ Distinção do paper *"Out of the Tar Pit"* (Moseley & Marks): **complexidade es
 ## Fontes Principais de Complexidade Acidental
 
 1. **Estado mutável compartilhado** — múltiplos componentes modificam o mesmo objeto
-2. **[[Efeitos-colaterais]] implícitos** — funções que fazem mais do que prometem
+2. **[[concepts/efeitos-colaterais]] implícitos** — funções que fazem mais do que prometem
 3. **Acoplamento temporal** — ordem de execução importa de forma não declarada
 4. **Concorrência sem estrutura** — threads acessando estado compartilhado
 
 ## Como Eliminar
 
-- [[Programacao-funcional]]: imutabilidade por default, efeitos explícitos
+- [[concepts/programacao-funcional]]: imutabilidade por default, efeitos explícitos
 - [[Ddd]]: domínio puro, efeitos nas periferias
-- [[Event-sourcing]]: estado derivado de eventos imutáveis, não de mutações
+- [[concepts/event-sourcing]]: estado derivado de eventos imutáveis, não de mutações
 
 ## O Paper
 

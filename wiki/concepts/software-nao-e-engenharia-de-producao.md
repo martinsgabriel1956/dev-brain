@@ -3,8 +3,8 @@ type: concept
 title: "Software Não É Engenharia de Produção"
 aliases: ["software não é hardware", "lean/kanban não se aplica a software", "soft porque não é hard"]
 date_created: 2026-09-18
-date_updated: 2026-09-18
-source_count: 1
+date_updated: 2026-09-22
+source_count: 2
 tags: [agile, engineering-management, filosofia-de-software, metricas]
 skill: tech-mentor-leadership
 status: stub
@@ -28,6 +28,12 @@ Métricas ("funciona no Google", "funciona no Spotify") raramente vêm acompanha
 
 A fonte não descarta o Lean por completo — a parte *conceitual* (evitar desperdício, ser rápido para mudar de direção) tem valor. O que não se sustenta são as técnicas e métricas específicas nascidas para resolver problemas de linha de produção física, aplicadas mecanicamente a um domínio sem restrições físicas.
 
+## O Compilador é o "Operário", o Programador é o Arquiteto
+
+[[wiki/sources/sobre-ser-gerente-fabio-akita]] aprofunda o argumento central com duas metáforas que a fonte anterior não usa. Primeiro, refuta a comparação de programador com operário de linha de fábrica (que executa uma "planta baixa" detalhada feita por um arquiteto): esse papel de execução mecânica e repetitiva já está automatizado — é o compilador/interpretador que recebe o código-fonte e produz o binário executado mecanicamente. O código-fonte não é a "planta baixa", é o produto final do raciocínio — o que faz de todo programador, tecnicamente, um arquiteto, não um operário.
+
+Segundo, refuta a metáfora de orquestra clássica (maestro = gerente, composição = trabalho do arquiteto, músicos = executores de precisão): a analogia mais correta é um grupo de jazz, onde intuição, improvisação e estilo individual de cada músico moldam o resultado final, dentro de uma base mínima compartilhada para não virar "só barulho". Reforça com o mesmo argumento já documentado acima (duas construtoras convergem para o mesmo prédio; dois programadores com a mesma especificação divergem em ordens de grandeza) que **o código é a própria especificação** — não é possível especificar software com precisão antes de codificar, exceto em nichos onde o grosso do trabalho já é integração/customização de algo pronto (ex.: agências WordPress, ERPs consolidados), que se aproximam de fato de uma linha de montagem.
+
 ## Ver também
 
 - [[wiki/concepts/goodharts-law]] — mecanismo complementar: mesmo quando uma métrica de software faz algum sentido inicialmente, virar alvo formal a corrompe
@@ -35,4 +41,5 @@ A fonte não descarta o Lean por completo — a parte *conceitual* (evitar despe
 
 ## Key Sources
 
-- [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — fonte primária desta ingestão, único source até o momento
+- [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — fonte primária desta ingestão
+- [[wiki/sources/sobre-ser-gerente-fabio-akita]] — metáforas do compilador como "operário automatizado" e orquestra clássica vs. jazz; nichos (WordPress, ERPs) onde o trabalho se aproxima de fato de linha de montagem

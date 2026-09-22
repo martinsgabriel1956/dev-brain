@@ -4,7 +4,7 @@ title: "Mass Assignment (BOPLA)"
 aliases: ["mass assignment", "bopla", "broken object property level authorization", "atribuicao em massa"]
 date_created: 2026-07-04
 date_updated: 2026-07-04
-source_count: 1
+source_count: 2
 tags: [mass-assignment, bopla, owasp, api-security, appsec]
 skill: tech-mentor-security
 status: stable

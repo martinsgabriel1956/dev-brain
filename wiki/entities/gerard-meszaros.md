@@ -3,8 +3,8 @@ type: entity
 title: "Gerard Meszaros"
 aliases: ["Meszaros", "xUnit Test Patterns author"]
 date_created: 2026-07-19
-date_updated: 2026-09-21
-source_count: 63
+date_updated: 2026-09-22
+source_count: 72
 tags: [testes, autor, test-doubles, xunit, taxonomia]
 skill: tech-mentor-testing
 status: draft
@@ -35,6 +35,7 @@ Em [[wiki/sources/there-is-always-an-exception-xunitpatterns]], categoria "Sideb
 
 ## Key Sources
 
+- [[wiki/sources/test-driven-bug-fixing-xunitpatterns]] — verbete de glossário: nomeia a extensão do TDD para correção de bugs (teste que reproduz o bug antes de depurar/corrigir)
 - [[wiki/sources/test-double-xunitpatterns-meszaros]] — **fonte primária**: a página canônica `Test Double` do próprio Meszaros (xUnitPatterns.com), com o vocabulário completo e as cinco variações
 - [[wiki/sources/test-stub-xunitpatterns-meszaros]] — fonte primária dedicada à variação Test Stub: Responder vs. Saboteur, Entity Chain Snipping
 - [[wiki/sources/replace-dependency-with-test-double-xunitpatterns]] — fonte primária da refatoração "Replace Dependency with Test Double": mecânica de decisão entre DI/Dependency Lookup, papel do double e técnica de construção
@@ -99,3 +100,10 @@ Em [[wiki/sources/there-is-always-an-exception-xunitpatterns]], categoria "Sideb
 - [[wiki/sources/class-attribute-xunitpatterns]] — verbete de glossário do mesmo site, isolando o primeiro sentido de [[wiki/sources/attribute-xunitpatterns|attribute]] (annotation de classe) restrito ao nível de classe: nomeia formalmente o mecanismo genérico do qual `[TestFixture]` (NUnit) já documentado é instância concreta
 - [[wiki/sources/method-attribute-xunitpatterns]] — verbete de glossário do mesmo site, isolando o primeiro sentido de [[wiki/sources/attribute-xunitpatterns|attribute]] (annotation de método) restrito ao nível de método: fecha o par simétrico com [[wiki/sources/class-attribute-xunitpatterns]], nomeando formalmente o mecanismo genérico do qual `[Test]` (NUnit) já documentado é instância concreta
 - [[wiki/sources/rename-method-xunitpatterns]] — terceiro verbete de "Code Refactorings" ingerido, mesma proveniência host≠autor de Extract Method/Extract Interface: Rename Method [Fowler], fecha a lacuna de fonte primária citada em [[wiki/sources/test-discovery-xunitpatterns]] e no stub [[wiki/concepts/rename-method]]
+- [[wiki/sources/developers-not-writing-tests-xunitpatterns]] — segundo verbete da categoria "Project Smells" ingerido, depois de Production Bugs: cunha o termo **test debt**, árvore de três causas (falta de tempo, código difícil de testar, estratégia de automação errada), e o critério de "quem detecta" o smell (gestão, não o desenvolvedor)
+- [[wiki/sources/test-debt-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição formal do próprio termo **test debt**: origem do vocabulário de "dívida" (lista Industrial XP) e a definição operacional (código desprotegido por ausência de testes) — fecha a lacuna de fonte primária isolada sinalizada em [[wiki/sources/developers-not-writing-tests-xunitpatterns]]
+- [[wiki/sources/hard-to-test-code-xunitpatterns]] — verbete da categoria "Test Smells" do mesmo site, dedicado ao próprio **Hard-to-Test Code**: três causas raiz nomeadas (Highly Coupled Code, Asynchronous Code, Untestable Test Code), cada uma com sintoma/impacto/causa-raiz/solução — fecha a lacuna de fonte primária isolada sinalizada em [[wiki/sources/developers-not-writing-tests-xunitpatterns]] e reforça a candidatura de Humble Object a ingestão futura
+- [[wiki/sources/frequent-debugging-xunitpatterns]] — verbete da categoria "Test Smells" do mesmo site, subcategoria **Behavior Smells** (primeira da wiki): dedicado ao próprio **Frequent Debugging** (a.k.a. Manual Debugging) — falta de Defect Localization como causa raiz, Mock Objects dessincronizados e Infrequently Run Tests como causas nomeadas, TDD verdadeiro + storytest-driven development como solução
+- [[wiki/sources/test-failure-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição do próprio termo **test failure**: resultado real diferente do esperado, contrastado explicitamente com test error e test success — fecha parte da lacuna sinalizada em [[wiki/sources/test-result-xunitpatterns]] e formaliza o mecanismo por trás da fase RED do ciclo TDD
+- [[wiki/sources/test-success-xunitpatterns]] — par simétrico do verbete anterior: **test success** é quando *todos* os resultados reais batem com os esperados — formaliza a fase GREEN do ciclo TDD; fecha a segunda de três lacunas de termos irmãos, resta só "test error"
+- [[wiki/sources/test-error-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição do próprio termo **test error**: falha do mecanismo de execução (não do resultado) que impede a asserção de rodar até o fim — mais fácil de depurar que test failure porque a causa tende a ser mais local; fecha a última das quatro lacunas de termos irmãos sinalizadas desde [[wiki/sources/test-result-xunitpatterns]]

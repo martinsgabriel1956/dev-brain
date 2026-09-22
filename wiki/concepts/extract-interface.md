@@ -4,7 +4,7 @@ title: "Extract Interface"
 aliases: ["extrair interface"]
 date_created: 2026-09-11
 date_updated: 2026-09-11
-source_count: 1
+source_count: 2
 tags: [refactoring, testes, test-doubles, dependency-injection, interface]
 skill: tech-mentor-testing
 status: stub

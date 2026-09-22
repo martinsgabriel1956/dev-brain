@@ -30,10 +30,10 @@ CQRS separa operações que mudam estado (Commands) de operações que leem esta
 | Commands retornam void ou ID — nunca os dados completos | Média |
 
 ## Conceitos Abordados
-- [[cqrs]]
-- [[event-sourcing]]
-- [[eventual-consistency]]
+- [[concepts/cqrs]]
+- [[concepts/event-sourcing]]
+- [[concepts/eventual-consistency]]
 - [[read-model]]
 - [[write-model]]
-- [[projecao]]
+- [[concepts/projecao]]
 - [[bounded-context]]

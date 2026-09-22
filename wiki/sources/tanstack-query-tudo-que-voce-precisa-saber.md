@@ -39,8 +39,8 @@ Visão geral completa do TanStack Query: modelo mental de server state, setup, `
 ## Conceitos Abordados
 
 - [[tanstack-query]]
-- [[useQuery]]
-- [[useMutation]]
+- [[concepts/useQuery]]
+- [[concepts/useMutation]]
 - [[query-key]]
 - [[optimistic-updates]]
 - [[infinite-query]]

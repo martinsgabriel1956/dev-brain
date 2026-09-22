@@ -4,7 +4,7 @@ title: "Storytest-Driven Development"
 aliases: ["storytest-driven development", "STDD"]
 date_created: 2026-09-04
 date_updated: 2026-09-21
-source_count: 4
+source_count: 5
 tags: [testes, tdd, xunit, bdd]
 skill: tech-mentor-testing
 status: stable

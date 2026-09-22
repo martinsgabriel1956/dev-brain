@@ -46,7 +46,7 @@ r.Get("/ready", func(w http.ResponseWriter, r *http.Request) {
 })
 ```
 
-K8s usa `/ready` para rolling deploys — crítico para [[zero-downtime-deploy]].
+K8s usa `/ready` para rolling deploys — crítico para [[concepts/zero-downtime-deploy]].
 
 ## Métricas com Prometheus
 
@@ -104,9 +104,9 @@ Binário < 20MB, sem shell, sem package manager — superfície de ataque mínim
 
 ## Ver também
 
-- [[observabilidade]] — três pilares: logs, métricas, traces
-- [[zero-downtime-deploy]] — graceful shutdown no contexto de rolling deploy
-- [[go-arquitetura]] — estrutura de projeto que viabiliza estes patterns
+- [[concepts/observabilidade]] — três pilares: logs, métricas, traces
+- [[concepts/zero-downtime-deploy]] — graceful shutdown no contexto de rolling deploy
+- [[concepts/go-arquitetura]] — estrutura de projeto que viabiliza estes patterns
 
 ## Key Sources
 

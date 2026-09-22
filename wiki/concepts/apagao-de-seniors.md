@@ -3,7 +3,7 @@ type: concept
 title: "Apagão de Sêniors"
 aliases: ["apagão de devs sêniors", "senior dev blackout", "escassez de sêniors"]
 date_created: 2026-07-04
-date_updated: 2026-09-15
+date_updated: 2026-09-22
 source_count: 8
 tags: [vibe-coding, ia, carreira, fundamentos, senior]
 skill: tech-mentor-ai
@@ -53,6 +53,10 @@ Tese formulada em tweet do "Poker Dev", citada como gatilho em [[wiki/sources/ap
 
 [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] documenta uma variante do apagão de sêniors totalmente independente de IA/vibe coding e já em curso, não apenas projetada: décadas de baixa entrada de profissionais novos em [[wiki/concepts/mainframe|mainframe]]/[[wiki/concepts/cobol|COBOL]] deixaram o conhecimento concentrado em uma geração que acumulou 20-40 anos de experiência e agora está se aposentando. A fonte é explícita sobre o que se perde além de sintaxe: "quando esse sujeito sai da empresa, não tá indo embora só o conhecimento de COBOL — o conhecimento de arquitetura, da máquina, do sistema, e das regras de negócio e processos" vai junto, porque boa parte desse conhecimento nunca foi documentado. Reflete diretamente na contratação: 79% da demanda por mainframe é por perfil mid-level (não júnior puro, não só reposição de sênior), porque as empresas precisam de gente com visão de processo e arquitetura, não só de quem aprendeu COBOL recentemente. Ver [[wiki/concepts/mercado-de-trabalho-mainframe-cobol]].
 
+## Via Causal Adjacente: Terceirizar em Vez de Formar Sucessor Interno
+
+[[wiki/sources/sobre-ser-gerente-fabio-akita]] descreve uma variante organizacional do mesmo risco, distinta da restrição de caixa já documentada acima: mesmo empresas com caixa saudável cometem o erro de terceirizar projetos novos em vez de alocar seus próprios sêniores nesses projetos e exigir que eles formem um sucessor interno antes de seguir em frente — ver [[wiki/concepts/equipe-mista-senior-junior]] para o ciclo completo. Sem essa disciplina, a empresa nunca acumula sêniores novos, porque delega justamente o trabalho que geraria esse aprendizado para fora.
+
 ## Key Sources
 
 - [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] — via causal demográfica já consumada e independente de IA: aposentadoria da geração mainframe/COBOL levando conhecimento tácito de arquitetura e regra de negócio
@@ -62,3 +66,4 @@ Tese formulada em tweet do "Poker Dev", citada como gatilho em [[wiki/sources/ap
 - [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] — via causal independente (equipe só de júnior por restrição de caixa, sem vetor de IA)
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — sênior "letrado em IA" como pré-requisito ainda presente na contratação, mesmo com CRUD resolvido
 - [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — testes automatizados como validação determinística contra volume de código gerado por IA maior do que revisão humana consegue cobrir
+- [[wiki/sources/sobre-ser-gerente-fabio-akita]] — via causal organizacional: terceirizar projeto novo em vez de formar sucessor interno, mesmo sem restrição de caixa

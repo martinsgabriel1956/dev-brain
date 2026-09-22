@@ -33,4 +33,4 @@ Para HTTP: `net/http` puro (Go 1.22+ com path params nativos) ou Chi para roteam
 
 ## Conceitos Abordados
 
-- [[go-ecossistema]] · [[go-stdlib]] · [[go-arquitetura]] · [[go-producao]]
+- [[concepts/go-ecossistema]] · [[concepts/go-stdlib]] · [[concepts/go-arquitetura]] · [[concepts/go-producao]]

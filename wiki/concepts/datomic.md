@@ -49,7 +49,7 @@ O [[nubank]] escolheu Datomic porque:
 
 ## Relação com Event Sourcing
 
-Datomic é essencialmente [[event-sourcing]] no nível do banco de dados. A diferença: em Event Sourcing você design seus próprios eventos; Datomic gerencia isso internamente com datoms.
+Datomic é essencialmente [[concepts/event-sourcing]] no nível do banco de dados. A diferença: em Event Sourcing você design seus próprios eventos; Datomic gerencia isso internamente com datoms.
 
 ## Arquitetura Interna: Transactor + Peers
 

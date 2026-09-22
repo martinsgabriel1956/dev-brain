@@ -4,7 +4,7 @@ title: "Reconhecimento de Padrões"
 aliases: ["pattern recognition", "padrões de solução", "padrões de problema", "repertório de padrões"]
 date_created: 2026-06-10
 date_updated: 2026-08-12
-source_count: 4
+source_count: 5
 tags: [aprendizado, maestria, pratica-deliberada, cognicao, programacao]
 skill: tech-mentor-leadership
 status: stable

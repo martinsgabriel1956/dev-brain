@@ -4,7 +4,7 @@ title: "Mediator Pattern"
 aliases: ["mediator", "padrão mediador"]
 date_created: 2026-05-05
 date_updated: 2026-05-05
-source_count: 1
+source_count: 2
 tags: [design-patterns, behavioral, mediator, gof]
 skill: tech-mentor-backend
 status: stub

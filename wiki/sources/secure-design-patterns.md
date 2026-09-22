@@ -37,7 +37,7 @@ status: stable
 - [[concepts/defense-in-depth]]
 - [[concepts/least-privilege]]
 - [[concepts/fail-secure]]
-- [[concepts/secure-defaults]]
+- [[concepts/secure-by-default]]
 - [[concepts/attack-surface-minimization]]
 - [[concepts/assume-breach]]
 - [[concepts/separation-of-duties]]

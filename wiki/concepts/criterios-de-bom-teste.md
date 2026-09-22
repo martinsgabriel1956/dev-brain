@@ -48,7 +48,7 @@ Na prática, relevância tende a importar mais que concisão — um teste leveme
 
 ## Ver também
 
-- [[piramide-de-testes]] — esses critérios valem para as três camadas, mas se aplicam com dificuldade crescente (E2E é o mais difícil de manter conciso e durável)
+- [[concepts/piramide-de-testes]] — esses critérios valem para as três camadas, mas se aplicam com dificuldade crescente (E2E é o mais difícil de manter conciso e durável)
 - [[testar-proprio-codigo]] — relevância implica testar além do happy path
 - [[gaming-de-testes-por-ia]] — um teste não-determinístico ou irrelevante é terreno fértil para a IA "resolver" o problema enfraquecendo o teste em vez do código
 

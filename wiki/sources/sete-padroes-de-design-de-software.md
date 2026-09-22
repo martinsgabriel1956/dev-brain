@@ -21,7 +21,7 @@ Vídeo do canal Forest (YouTube) que apresenta 7 dos 23 padrões GoF com exemplo
 
 ## TL;DR
 
-Design patterns são soluções para problemas recorrentes de programação, independente de linguagem. Os 23 padrões [[gang-of-four]] se dividem em [[creational-patterns]], [[structural-patterns]] e [[behavioral-patterns]]. Este source cobre 7 dos mais usados na prática cotidiana.
+Design patterns são soluções para problemas recorrentes de programação, independente de linguagem. Os 23 padrões [[entities/gang-of-four]] se dividem em [[creational-patterns]], [[structural-patterns]] e [[behavioral-patterns]]. Este source cobre 7 dos mais usados na prática cotidiana.
 
 ## Padrões Cobertos
 
@@ -55,7 +55,7 @@ Design patterns são soluções para problemas recorrentes de programação, ind
 
 ## Conexões
 
-- [[gang-of-four]] — livro de 1994, 23 padrões, base de toda a discussão
+- [[entities/gang-of-four]] — livro de 1994, 23 padrões, base de toda a discussão
 - [[open-closed-principle]] — Strategy pattern como aplicação direta
 - [[creational-patterns]] — Singleton, Builder, Factory
 - [[structural-patterns]] — Facade, Adapter

@@ -68,8 +68,8 @@ LayoutBuilder(
 
 ## Ver também
 
-- [[mobile-design-system]] — tokens de espaçamento como base para layouts
-- [[mobile-performance-listas]] — listas em grids responsivos
+- [[concepts/mobile-design-system]] — tokens de espaçamento como base para layouts
+- [[concepts/mobile-performance-listas]] — listas em grids responsivos
 
 ## Key Sources
 

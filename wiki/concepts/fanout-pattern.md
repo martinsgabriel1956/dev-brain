@@ -3,8 +3,8 @@ type: concept
 title: "Fan-out Pattern"
 aliases: ["fanout", "fan-out on write", "fan-out on read", "fan out"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-09-22
+source_count: 3
 tags: [system-design, distribuidos, notificacao, feed, escala]
 skill: tech-mentor-system-design
 status: stable
@@ -52,4 +52,6 @@ Threshold típico: 10k–1M seguidores dependendo da arquitetura e custo de stor
 
 ## Key Sources
 
+- [[wiki/sources/sqs-sns]] — SQS é uma fila gerenciada AWS (zero operação). Standard: alta throughput, ordenação best-effort. FIFO: ordering garantido por MessageGroupId, deduplicação nativa (5 min window), limitado a 3k msg/s...
+- [[wiki/sources/webhook]] — Webhook é o inverso de polling: producer empurra eventos HTTP quando algo acontece. Problemas sérios: replay attacks, ordem de entrega, falhas de receiver, fanout. Solução: HMAC-SHA256 para...
 - [[sources/notification-system]]

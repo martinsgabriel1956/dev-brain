@@ -45,10 +45,10 @@ Normalização e transações ACID entre tabelas exigem coordenação entre nós
 ## Pré-requisitos para funcionar
 
 1. **Servidores [[stateless]]** — sessão em Redis, arquivos em S3, dados no banco; nada em memória local
-2. **[[load-balancer]]** — distribui requisições entre as instâncias
+2. **[[concepts/load-balancer]]** — distribui requisições entre as instâncias
 3. **[[auto-scaling]]** — sobe e derruba instâncias automaticamente por regras (CPU, fila, memória)
 
-Quando distribuir dados entre máquinas, entra o [[cap-theorem]] — consistência vs disponibilidade vs tolerância a partições.
+Quando distribuir dados entre máquinas, entra o [[concepts/cap-theorem]] — consistência vs disponibilidade vs tolerância a partições.
 
 ## Granularidade Fina de Capacidade
 

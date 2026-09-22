@@ -59,7 +59,7 @@ O menor privilégio também se aplica ao próprio acesso SSH: [[wiki/concepts/ss
 - [[wiki/concepts/agent-containment]] — PoLP aplicado especificamente ao processo de um agente de IA, não só a serviços humanos
 - [[attack-surface]] — reduzir privilégios reduz o impacto de cada ponto de entrada
 - [[secure-by-default]] — o menor privilégio é o default seguro para permissões
-- [[secrets-management]] — secrets acessíveis apenas pelos serviços que precisam deles
+- [[concepts/secrets-management]] — secrets acessíveis apenas pelos serviços que precisam deles
 
 ## Key Sources
 

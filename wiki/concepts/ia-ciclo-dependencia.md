@@ -4,7 +4,7 @@ title: "IA — Ciclo de Dependência"
 aliases: ["ia dependencia", "degradacao por ia", "vibe coding dependencia", "ciclo de degradacao"]
 date_created: 2026-04-29
 date_updated: 2026-07-09
-source_count: 2
+source_count: 3
 tags: [ia, carreira, vibe-coding, competencia, fundamentos]
 skill: tech-mentor-leadership
 status: stable

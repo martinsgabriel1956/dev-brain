@@ -14,7 +14,7 @@ status: draft
 
 ## TL;DR
 
-Dialeto Lisp funcional rodando na JVM, criado por [[rich-hickey]] em 2007. [[Imutabilidade]] por default em todas as estruturas de dados. Acesso ao ecossistema Java completo. Linguagem principal do [[nubank]].
+Dialeto Lisp funcional rodando na JVM, criado por [[rich-hickey]] em 2007. [[concepts/imutabilidade]] por default em todas as estruturas de dados. Acesso ao ecossistema Java completo. Linguagem principal do [[nubank]].
 
 ## Características
 
@@ -26,9 +26,9 @@ Dialeto Lisp funcional rodando na JVM, criado por [[rich-hickey]] em 2007. [[Imu
 
 ## Por que o Nubank Escolheu
 
-1. [[Programacao-funcional|Programação funcional]] nativa — elimina [[complexidade-acidental]]
+1. [[concepts/programacao-funcional|Programação funcional]] nativa — elimina [[complexidade-acidental]]
 2. **Ecossistema JVM** — bibliotecas Java maduras disponíveis imediatamente
-3. **[[Imutabilidade]]** por default — alinha com princípios do [[event-sourcing]]
+3. **[[concepts/imutabilidade]]** por default — alinha com princípios do [[concepts/event-sourcing]]
 4. Criado pelo mesmo autor do [[datomic]] ([[rich-hickey]]) — integração natural
 
 ## Ecossistema JVM como Vantagem

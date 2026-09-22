@@ -4,7 +4,7 @@ title: "Write-Ahead Log (WAL)"
 aliases: ["WAL", "write ahead log", "log de transações"]
 date_created: 2026-07-29
 date_updated: 2026-07-29
-source_count: 1
+source_count: 2
 tags: [banco-de-dados, wal, durabilidade, postgresql, database-internals]
 skill: tech-mentor-data
 status: stub

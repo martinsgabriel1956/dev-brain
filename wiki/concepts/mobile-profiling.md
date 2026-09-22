@@ -73,9 +73,9 @@ override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
 ## Ver também
 
-- [[mobile-metricas-criticas]] — thresholds para identificar problemas
-- [[mobile-animacoes-performaticas]] — medir jank de animações
-- [[mobile-baseline-profiles]] — usar Macrobenchmark para baseline
+- [[concepts/mobile-metricas-criticas]] — thresholds para identificar problemas
+- [[concepts/mobile-animacoes-performaticas]] — medir jank de animações
+- [[concepts/mobile-baseline-profiles]] — usar Macrobenchmark para baseline
 
 ## Key Sources
 

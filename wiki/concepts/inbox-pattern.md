@@ -3,8 +3,8 @@ type: concept
 title: "Inbox Pattern"
 aliases: ["inbox", "transactional inbox", "webhook deduplication", "consumer idempotency"]
 date_created: 2026-07-27
-date_updated: 2026-07-27
-source_count: 2
+date_updated: 2026-09-22
+source_count: 3
 tags: [sistemas-distribuidos, mensageria, idempotencia, webhook, at-least-once]
 skill: tech-mentor-backend
 status: stub
@@ -39,5 +39,6 @@ Webhooks (ver [[wiki/concepts/webhook-signature-validation]]), consumidores Kafk
 
 ## Key Sources
 
+- [[wiki/sources/webhook]] — Webhook é o inverso de polling: producer empurra eventos HTTP quando algo acontece. Problemas sérios: replay attacks, ordem de entrega, falhas de receiver, fanout. Solução: HMAC-SHA256 para...
 - [[wiki/sources/outbox-pattern]]
 - [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] — inbox persistente por `provedor + event ID`, e por que a confirmação de recebimento perdida (não a entrega em si) motiva a reentrega

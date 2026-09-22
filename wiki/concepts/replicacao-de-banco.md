@@ -53,7 +53,7 @@ Em replicação assíncrona, há um delay entre o write no primário e a atualiz
 ## Relação com outros conceitos
 
 - [[sharding]] — complementar; sharding escala writes e armazenamento
-- [[cap-theorem]] — replicação assíncrona implica consistência eventual
+- [[concepts/cap-theorem]] — replicação assíncrona implica consistência eventual
 - [[escalabilidade-horizontal]] — replicação é escala horizontal específica para a camada de dados
 - [[gargalo]] — a replicação alivia o gargalo de leitura no banco
 

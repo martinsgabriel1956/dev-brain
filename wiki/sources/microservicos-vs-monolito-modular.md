@@ -30,8 +30,8 @@ A escolha entre monolito modular e microsserviços deve ser guiada por necessida
 | Extrair serviço só faz sentido quando há time com ownership completo (código, banco, deploy, on-call) | Alta |
 
 ## Conceitos Abordados
-- [[microsserviço]]
-- [[monolito-modular]]
+- [[concepts/microsservicos]]
+- [[concepts/monolito-modular]]
 - [[distributed-monolith]]
 - [[conways-law]]
 - [[strangler-fig]]

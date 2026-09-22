@@ -3,8 +3,8 @@ type: concept
 title: "Estimativas de Software"
 aliases: ["software estimation", "por que subestimamos tarefas", "estimativa de tarefas"]
 date_created: 2026-07-29
-date_updated: 2026-08-18
-source_count: 3
+date_updated: 2026-09-22
+source_count: 4
 tags: [carreira, gestao-de-projetos, planejamento, produtividade]
 skill: tech-mentor-leadership
 status: draft
@@ -57,6 +57,10 @@ Uma estimativa de "um mês" isolada não comunica margem de erro nenhuma. O form
 
 Complementando a nota de feedback loop acima: medir o erro não basta — é preciso identificar a **direção** dele. Se as estimativas do time erram consistentemente para baixo, o ajuste é estimar para cima; se erram consistentemente para cima, estimar para baixo; se o erro é **disperso** (sem padrão, ora muito abaixo, ora muito acima), o problema não é calibração de viés — é falta de redução de incerteza antes de bater o martelo na estimativa (ver seção acima).
 
+## Estimativa Não É Previsão
+
+[[wiki/sources/sobre-ser-gerente-fabio-akita]] nomeia diretamente uma confusão que já perpassa esta página sem rótulo formal: estimativa e previsão são palavras diferentes porque significam coisas diferentes, mas quem pede estimativa frequentemente está, na prática, esperando uma previsão (compromisso). Daí o atrito recorrente — "mas você disse que em duas semanas estaria pronto" — quando o número original era uma estimativa sob incerteza, não uma promessa. A fonte propõe uma regra prática de tamanho de história independente da técnica de estimativa usada (story points ou horas): o tamanho ideal é meio dia, no máximo dois ou três dias — acima disso é um épico e deve ser dividido antes de estimar, não depois.
+
 ## Relação com outros conceitos
 
 - [[wiki/sources/story-points-po-forcando-30-40-pontos-por-sprint]] — story points/T-shirt sizing/poker planning são citados na fonte atual como técnicas alternativas de estimativa, sem escolha de uma única "correta"; a outra fonte aprofunda por que forçar meta numérica de story points corrompe a métrica (Lei de Goodhart).
@@ -70,3 +74,4 @@ Complementando a nota de feedback loop acima: medir o erro não basta — é pre
 - [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — Hábito 11
 - [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — foco complementar: mensurar o *erro* da estimativa (gap planejado × entregue por sprint) importa mais do que acertar a estimativa; sem isso a empresa não sabe sua capacidade real
 - [[wiki/sources/por-que-estimativas-de-software-falham-como-melhorar]] — mecanismo organizacional de por que a estimativa original nunca é invalidada, exemplo numérico de custo oculto (2h→6h), método de redução de incerteza, estimativa em range, e calibração da direção do erro
+- [[wiki/sources/sobre-ser-gerente-fabio-akita]] — distinção nomeada entre estimativa e previsão; regra prática de tamanho de história (meio dia, máximo 2-3 dias)

@@ -4,7 +4,7 @@ title: "Dívida Cognitiva"
 aliases: ["divida cognitiva", "cognitive debt", "acumulo de falta de entendimento", "debt cognitivo"]
 date_created: 2026-04-23
 date_updated: 2026-09-15
-source_count: 5
+source_count: 6
 tags: [divida-cognitiva, saude-mental, ai-brainfry, tech-debt, modelo-mental, agentes-ia]
 skill: tech-mentor-ai
 status: stable

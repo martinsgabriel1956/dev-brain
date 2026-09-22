@@ -4,7 +4,7 @@ title: "Observer Pattern"
 aliases: ["observer", "pub/sub pattern", "event listener pattern"]
 date_created: 2026-05-05
 date_updated: 2026-08-06
-source_count: 5
+source_count: 6
 tags: [design-patterns, behavioral, observer, gof, event-driven, pub-sub]
 skill: tech-mentor-backend
 status: stable
@@ -115,7 +115,7 @@ function createGame() {
 
 ## Relação com outros conceitos
 
-- Base conceptual do [[mensageria]] e sistemas event-driven
+- Base conceptual do [[concepts/mensageria]] e sistemas event-driven
 - Domain Events em DDD usam o mesmo princípio
 - Diferença de Pub/Sub: Observer tem referência direta ao Subject; Pub/Sub usa broker intermediário
 

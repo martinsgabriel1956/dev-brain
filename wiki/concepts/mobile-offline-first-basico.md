@@ -72,9 +72,9 @@ Badge informativo > tela de erro vazia.
 
 ## Ver também
 
-- [[mobile-offline-first-avancado]] — sync, conflitos, CRDT
-- [[mobile-armazenamento-local]] — SQLite/MMKV como cache local
-- [[mobile-chamadas-http]] — TanStack Query para stale-while-revalidate automático
+- [[concepts/mobile-offline-first-avancado]] — sync, conflitos, CRDT
+- [[concepts/mobile-armazenamento-local]] — SQLite/MMKV como cache local
+- [[concepts/mobile-chamadas-http]] — TanStack Query para stale-while-revalidate automático
 
 ## Key Sources
 

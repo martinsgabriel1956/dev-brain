@@ -4,7 +4,7 @@ title: "MCP Server — Configuração e Uso no Claude Code"
 aliases: ["mcp server claude code", "configurar mcp", "claude mcp cli"]
 date_created: 2026-05-31
 date_updated: 2026-09-14
-source_count: 5
+source_count: 6
 tags: [mcp, claude-code, agente-ia, ferramentas, llmops]
 skill: tech-mentor-ai
 status: stable

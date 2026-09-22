@@ -4,7 +4,7 @@ title: "Vibe Coding"
 aliases: ["vibe coding", "vibe-coding", "coding por vibração", "agentic coding", "orquestração de agentes"]
 date_created: 2026-04-23
 date_updated: 2026-09-21
-source_count: 19
+source_count: 22
 tags: [vibe-coding, agentes-ia, produtividade, divida-cognitiva, ai-brainfry, paralelismo-cognitivo]
 skill: tech-mentor-ai
 status: stable

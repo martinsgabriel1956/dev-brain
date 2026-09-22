@@ -75,7 +75,7 @@ Estrutura hierárquica onde cada nó pode ter filhos. Busca em O(log n) — elim
 
 - [[wiki/concepts/array]] — novo conceito
 - [[wiki/concepts/hashmap]] — novo conceito
-- [[wiki/concepts/fila]] — novo conceito (estrutura de dados; diferente de [[event-sourcing]] ou filas de mensageria)
+- [[wiki/concepts/fila]] — novo conceito (estrutura de dados; diferente de [[concepts/event-sourcing]] ou filas de mensageria)
 - [[wiki/concepts/pilha]] — novo conceito
 - [[wiki/concepts/arvore]] — novo conceito
 - [[wiki/concepts/algoritmos-e-estruturas-de-dados]] — fonte primária enriquecida com conceitos individuais

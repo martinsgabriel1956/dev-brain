@@ -4,7 +4,7 @@ title: "Token Maxing"
 aliases: ["token maxing", "token anxiety produtividade", "consumo compulsivo de tokens"]
 date_created: 2026-06-02
 date_updated: 2026-07-31
-source_count: 5
+source_count: 4
 tags: [token-maxing, produtividade, vale-do-silicio, comportamento, ia-para-devs]
 skill: tech-mentor-ai
 status: draft

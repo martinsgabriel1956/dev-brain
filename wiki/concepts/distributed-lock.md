@@ -3,8 +3,8 @@ type: concept
 title: "Distributed Lock"
 aliases: ["lock distribuído", "redis set nx", "distributed locking"]
 date_created: 2026-04-22
-date_updated: 2026-08-25
-source_count: 5
+date_updated: 2026-09-22
+source_count: 8
 tags: [system-design, redis, mysql, concorrencia, distributed-systems, race-condition]
 skill: tech-mentor-system-design
 status: stable
@@ -69,6 +69,8 @@ A mesma fonte cobre o edge case "e se o Redis cair": lock via Redis no caminho f
 
 ## Key Sources
 
+- [[wiki/sources/cache-strategies]] — Aprofundamento nas estratégias de cache com exemplos TypeScript completos. Cache-Aside é o padrão default para leituras. Write-Through para consistência forte. Write-Behind para throughput máximo de...
+- [[wiki/sources/raft-leader-election]] — Raft é o algoritmo de consenso mais legível e amplamente usado (etcd, CockroachDB, Consul, TiKV). Três papéis: Leader (único, escreve), Follower (replica), Candidate (em eleição). Eleição: timeout...
 - [[sources/case-uber]]
 - [[sources/skip-locked-fencing-token]]
 - [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] — reserva de estoque via linhas físicas + [[concepts/skip-locked]] no MySQL, sem lock explícito de aplicação

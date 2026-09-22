@@ -40,7 +40,7 @@ Questão em aberto: ICL é aprendizado genuíno ou recuperação sofisticada de 
 
 ## Implicações Práticas
 
-- Alternativa barata a [[fine-tuning]]: para muitos casos de uso, few-shot ICL é suficiente.
+- Alternativa barata a [[concepts/fine-tuning]]: para muitos casos de uso, few-shot ICL é suficiente.
 - Hierarquia de custo/esforço: `zero-shot → few-shot → fine-tuning`.
 - Qualidade dos exemplos importa mais do que quantidade (sweet spot: 3–5 exemplos).
 - Limitação: o contexto tem tamanho finito (context window).

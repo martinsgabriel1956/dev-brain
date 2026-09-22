@@ -4,7 +4,7 @@ title: "Autodidata"
 aliases: ["autodidatismo", "self-teaching", "aprendizado autônomo"]
 date_created: 2026-05-16
 date_updated: 2026-07-28
-source_count: 7
+source_count: 8
 tags: [aprendizado, mentalidade, carreira, dependencia-ia, autonomia-tecnica]
 skill: tech-mentor-leadership
 status: stable

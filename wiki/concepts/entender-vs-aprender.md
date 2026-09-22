@@ -4,7 +4,7 @@ title: "Entender vs. Aprender"
 aliases: ["entender vs aprender", "compreensão vs habilidade", "ilusão de fluência", "illusion of knowing"]
 date_created: 2026-06-05
 date_updated: 2026-08-10
-source_count: 2
+source_count: 4
 tags: [aprendizado, pratica, metacognicao, ead, aprendizado-passivo]
 skill: tech-mentor-leadership
 status: stable

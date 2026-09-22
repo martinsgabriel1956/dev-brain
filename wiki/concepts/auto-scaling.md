@@ -74,7 +74,7 @@ Auto scaling só funciona bem se novas instâncias podem atender qualquer requis
 
 - [[escalabilidade-horizontal]] — auto scaling é a automação dela
 - [[stateless]] — pré-requisito para que novas instâncias funcionem corretamente
-- [[load-balancer]] — precisa detectar e registrar novas instâncias automaticamente
+- [[concepts/load-balancer]] — precisa detectar e registrar novas instâncias automaticamente
 - [[gargalo]] — identificar o gargalo antes de configurar auto scaling evita escalar a camada errada
 
 ## AWS Auto Scaling Group (ASG) — Min/Desejado/Máximo

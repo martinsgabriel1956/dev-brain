@@ -4,7 +4,7 @@ title: "ORM (Object-Relational Mapping)"
 aliases: ["orm", "object relational mapping", "mapeamento objeto-relacional"]
 date_created: 2026-07-03
 date_updated: 2026-08-28
-source_count: 5
+source_count: 6
 tags: [orm, sql, banco-de-dados, prisma, hibernate, doctrine, abstracao, drizzle, migrations, n-plus-one, lazy-loading, django]
 skill: tech-mentor-backend
 status: stub

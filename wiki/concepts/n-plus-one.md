@@ -4,7 +4,7 @@ title: "N+1 Query Problem"
 aliases: ["n+1", "n mais um", "n plus one"]
 date_created: 2026-04-22
 date_updated: 2026-07-28
-source_count: 2
+source_count: 4
 tags: [banco-de-dados, performance, orm, prisma, n-plus-one, graphql, api-design]
 skill: tech-mentor-system-design
 status: stable

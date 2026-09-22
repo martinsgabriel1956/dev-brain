@@ -3,8 +3,8 @@ type: concept
 title: "Cargo Cult Tecnológico"
 aliases: ["copiar stack de big tech", "solução Netflix Google Facebook sem contexto", "cargo cult de arquitetura"]
 date_created: 2026-07-03
-date_updated: 2026-08-11
-source_count: 5
+date_updated: 2026-09-22
+source_count: 6
 tags: [arquitetura, tomada-de-decisao, carreira, escala, contexto, processo, git]
 skill: tech-mentor-leadership
 status: draft
@@ -52,6 +52,10 @@ Assistir a uma palestra de um ciclista profissional sobre a bicicleta de 8 mil d
 
 [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] aplica o mesmo mecanismo a **processo de desenvolvimento**, não a arquitetura ou stack. [[wiki/entities/lucas-montano]] chama [[wiki/concepts/git-flow|Git Flow]] de "uma das maiores falácias da bolha dev" e provoca: *"me diga uma grande empresa que está usando Git Flow"*. A tese é que **influenciadores são "modificadores de cultura"** — pegam um post/palestra e a comunidade o abraça "como um gospel", elevando-o a "padrão industrial" sem que a indústria de fato o adote. O exemplo mais forte que ele dá é o mesmo já citado acima — os **squads do Spotify** (post/palestra reproduzidos à exaustão até o time original desmentir que o Spotify usasse aquilo) — ao lado do movimento ágil e da orientação a objetos. O antídoto é o mesmo do cargo cult clássico: buscar **princípios** e avaliar o próprio contexto (porte do time, natureza da empresa), em vez de importar a receita — ver [[wiki/concepts/maturidade-tecnica]].
 
+## A Variante de Orçamento e Nível Salarial ("Você Pode Pagar Isso?")
+
+[[wiki/sources/sobre-ser-gerente-fabio-akita]] acrescenta um ângulo mais concreto ao argumento "compare-se com o dia um deles": antes mesmo de escala de usuários, o filtro mais básico é orçamento e nível de equipe. Empresas como Netflix pagam profissionais nível A meio milhão de dólares por ano ou mais, com budgets de projeto na casa dos milhões de dólares — quando um gestor cita "vamos fazer do jeito que a Netflix faz" sem ter nem o orçamento nem o nível de equipe equivalente, o problema não é só de escala de tráfego, é de recursos disponíveis para executar a mesma solução com a mesma qualidade. Reforça, por um caminho independente, a mesma pergunta prática já central nesta página: "você pode pagar isso?" antes de perguntar "isso funciona para o meu contexto?".
+
 ## Ver também
 
 - [[wiki/concepts/git-flow]] — instância de processo elevada a "padrão industrial" por influenciadores
@@ -67,3 +71,4 @@ Assistir a uma palestra de um ciclista profissional sobre a bicicleta de 8 mil d
 - [[wiki/sources/a-insanidade-de-ser-um-programador-hoje]] — a variante por consenso coletivo de mercado ("React é a forma certa"), sem autoridade de empresa específica
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — a variante por ansiedade de ficar para trás (FOMO de framework), mecanismo invertido do cargo cult clássico
 - [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] — a variante de processo (Git Flow como "padrão industrial" de influenciador); influenciadores como "modificadores de cultura"
+- [[wiki/sources/sobre-ser-gerente-fabio-akita]] — a variante de orçamento/nível salarial: "você pode pagar o que a Netflix paga?" como filtro anterior ao de escala de usuários

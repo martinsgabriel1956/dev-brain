@@ -4,7 +4,7 @@ title: "Comparação na Carreira"
 aliases: ["bastidor vs palco", "síndrome do impostor", "comparação com colegas", "primeiro degrau"]
 date_created: 2026-04-22
 date_updated: 2026-07-27
-source_count: 6
+source_count: 7
 tags: [carreira, mentalidade, comparação, iniciante, impostor]
 skill: tech-mentor-leadership
 status: stable

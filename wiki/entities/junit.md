@@ -3,8 +3,8 @@ type: entity
 title: "JUnit"
 aliases: ["junit"]
 date_created: 2026-07-19
-date_updated: 2026-09-21
-source_count: 11
+date_updated: 2026-09-22
+source_count: 14
 tags: [testes, tdd, junit, xunit, kent-beck, erich-gamma, test-fixture]
 skill: tech-mentor-testing
 status: stub
@@ -60,3 +60,6 @@ Michael Feathers criou o CppUnit (provavelmente o primeiro port para outra lingu
 - [[wiki/sources/testcase-object-xunitpatterns]] — verbete de glossário do mesmo site, dedicado ao próprio termo Testcase Object: usa o Graphical Test Runner do JUnit no Eclipse como exemplo concreto de Test Tree Explorer
 - [[wiki/sources/test-discovery-xunitpatterns]] — usa JUnit para ilustrar as duas gerações de Test Method Discovery: convenção de nomenclatura (JUnit 3) e annotation `@Test` (JUnit 4+)
 - [[wiki/sources/test-result-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição do próprio termo "test result": fecha a lacuna de fonte primária isolada para o conceito por trás da prática histórica do red bar/green bar
+- [[wiki/sources/test-failure-xunitpatterns]] — verbete de glossário do mesmo site, isolando o termo "test failure": o red bar formaliza precisamente esse estado — resultado real diferente do esperado
+- [[wiki/sources/test-success-xunitpatterns]] — par simétrico: o green bar formaliza "test success" — todos os resultados reais batem com os esperados
+- [[wiki/sources/test-error-xunitpatterns]] — terceiro estado possível reportado pelo runner além de red/green bar: um erro que impede a execução de chegar até a asserção

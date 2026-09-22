@@ -3,8 +3,8 @@ type: concept
 title: "Gestão de Riscos vs. Controle Ilusório"
 aliases: ["ter controle vs achar que tem controle", "risco zero não existe", "microgerenciamento como falso controle"]
 date_created: 2026-09-18
-date_updated: 2026-09-18
-source_count: 2
+date_updated: 2026-09-22
+source_count: 3
 tags: [agile, engineering-management, gestao-de-riscos, tomada-de-decisao]
 skill: tech-mentor-leadership
 status: stub
@@ -34,6 +34,10 @@ Em empresas com muitas equipes, frequentemente é possível identificar equipes 
 
 [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]] repete quase verbatim a analogia do seguro já registrada acima (cobertura de 100% custa caro demais para valer a pena; cancelar o seguro achando que está economizando é o verdadeiro desperdício), acrescentando a formulação explícita como máxima de gerenciamento de risco: "se você tem risco, vai acabar tendo perda" — a gestão de risco não elimina a perda esperada, apenas a torna pequena e administrável (o preço do seguro) em vez de rara e catastrófica (o acidente sem cobertura). A mesma fonte conecta essa tese à [[wiki/concepts/beira-do-caos|beira do caos]]: assumir risco de forma deliberada é a versão prática de tolerar "caos controlado" em vez de buscar ordem/controle absoluto.
 
+## Saber Dizer Não Como Habilidade Central de Gestão de Risco
+
+[[wiki/sources/sobre-ser-gerente-fabio-akita]] acrescenta uma dimensão comportamental ao argumento já registrado acima: gerenciar risco, na prática, exige saber dizer não a batalhas que não valem a pena — um bom gestor é comparado a um general que escolhe com cuidado quais batalhas lutar, porque recursos (tempo, orçamento) são finitos, não infinitos. Alguém que sempre diz sim (para não desagradar hierarquia) nunca desenvolve esse julgamento; alguém que só diz não e nunca entrega é igualmente inútil. A fonte liga isso diretamente ao motivo de existir gestão: se os recursos fossem infinitos, não haveria necessidade de decidir nada — a decisão só existe porque escassez obriga escolha, o mesmo argumento de fundo já central nesta página, agora aplicado à escolha de quais riscos vale a pena assumir e quais recusar de saída.
+
 ## Ver também
 
 - [[wiki/concepts/accountability-em-equipes-ageis]] — o mesmo argumento aplicado ao indivíduo/equipe, em vez de à liderança organizacional
@@ -44,3 +48,4 @@ Em empresas com muitas equipes, frequentemente é possível identificar equipes 
 
 - [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — fonte primária desta ingestão, único source até o momento
 - [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]] — repete a analogia do seguro quase verbatim, acrescentando a máxima "se você tem risco, vai acabar tendo perda"
+- [[wiki/sources/sobre-ser-gerente-fabio-akita]] — dimensão comportamental: saber dizer não como habilidade central; escolha de batalhas como analogia militar de gestão de risco sob recursos finitos

@@ -64,7 +64,7 @@ Conteúdo técnico perdeu audiência para conteúdo de IA por hype, financiament
 - [[harness-de-qualidade]] — pipeline determinística que força padrões de código bom
 - [[pipeline-de-qualidade]] — linters, coverage, mutation testing, análise estática, E2E
 - [[teste-de-mutacao]] — validar que os testes realmente testam comportamento
-- [[tdd]] — TDD via IA: mais fácil do que nunca; resultado mais previsível
+- [[concepts/tdd]] — TDD via IA: mais fácil do que nunca; resultado mais previsível
 - [[n-plus-one]] — erro estrutural típico da IA; foco na feature, não no sistema
 - [[era-agentica]] — contexto que tornou CRUD resolvido e sênior escasso
 

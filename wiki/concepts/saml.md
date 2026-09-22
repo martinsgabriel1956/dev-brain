@@ -4,7 +4,7 @@ title: "SAML 2.0"
 aliases: ["SAML", "Security Assertion Markup Language", "SAMLRequest", "SAMLResponse"]
 date_created: 2026-08-18
 date_updated: 2026-08-18
-source_count: 1
+source_count: 3
 tags: [saml, sso, federated-identity, xml, seguranca, identity-provider]
 skill: tech-mentor-security
 status: draft

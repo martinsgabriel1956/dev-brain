@@ -4,7 +4,7 @@ title: "Eduarda (Rocket City)"
 aliases: ["Eduarda", "Eduarda engenheira"]
 date_created: 2026-05-19
 date_updated: 2026-07-31
-source_count: 2
+source_count: 0
 tags: [pessoa, carreira, soft-skills, engenheira, youtube, appsec, saas]
 skill: tech-mentor-leadership
 status: stub

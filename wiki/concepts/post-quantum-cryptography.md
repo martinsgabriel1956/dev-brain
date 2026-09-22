@@ -3,8 +3,8 @@ type: concept
 title: "Criptografia Pós-Quântica"
 aliases: ["post-quantum cryptography", "pqc", "criptografia pos-quantica", "harvest now decrypt later", "colha agora decifre depois"]
 date_created: 2026-07-28
-date_updated: 2026-07-28
-source_count: 1
+date_updated: 2026-09-22
+source_count: 2
 tags: [criptografia, computacao-quantica, criptografia-pos-quantica, nist-pqc]
 skill: tech-mentor-security
 status: stub
@@ -37,4 +37,5 @@ Estratégia recomendada de transição: **TLS híbrido** (ex.: X25519 + ML-KEM-7
 
 ## Key Sources
 
+- [[wiki/sources/post-quantum-crypto]] — Computadores quânticos quebrarão RSA e ECC via algoritmo de Shor (fatoração eficiente). NIST padronizou em 2024: CRYSTALS-Kyber/ML-KEM (troca de chave), CRYSTALS-Dilithium/ML-DSA (assinatura)....
 - [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]

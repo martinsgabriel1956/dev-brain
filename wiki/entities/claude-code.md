@@ -4,7 +4,7 @@ title: "Claude Code"
 aliases: ["claude code cli"]
 date_created: 2026-05-18
 date_updated: 2026-09-14
-source_count: 17
+source_count: 16
 tags: [ferramenta, agentes-ia, anthropic, llmops, cli, mcp, hooks]
 skill: tech-mentor-ai
 status: stable

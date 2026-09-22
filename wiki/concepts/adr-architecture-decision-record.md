@@ -14,7 +14,7 @@ status: stub
 
 Registro histórico de uma decisão arquitetural já tomada, com contexto, alternativas consideradas e motivo da escolha. Serve para rastreabilidade — futuros membros do time entendem *por que* o sistema é como é.
 
-Diferente do [[rfc-request-for-comments]] (decisão em aberto) e do [[trd-technical-requirements-document]] (especificação para implementar).
+Diferente do [[rfc-request-for-comments]] (decisão em aberto) e do [[concepts/trd-technical-requirements-document]] (especificação para implementar).
 
 Formato clássico: título · status · contexto · decisão · consequências.
 

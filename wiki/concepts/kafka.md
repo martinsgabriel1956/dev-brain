@@ -3,8 +3,8 @@ type: concept
 title: "Apache Kafka"
 aliases: ["kafka", "topics e partitions", "consumer groups", "kafka producer", "kafka consumer"]
 date_created: 2026-08-19
-date_updated: 2026-09-15
-source_count: 6
+date_updated: 2026-09-22
+source_count: 7
 tags: [kafka, topics, partitions, consumer-groups, mensageria, event-sourcing, murmur-hash, offset-commit, rebalance]
 skill: tech-mentor-backend
 status: draft
@@ -104,6 +104,7 @@ A taxonomia de eventos de partida é fechada: `MATCH_STARTED`, `GOAL`, `YELLOW_C
 
 ## Key Sources
 
+- [[wiki/sources/integration-patterns-eip]] — Enterprise Integration Patterns (Hohpe & Woolf) são padrões reutilizáveis para integração assíncrona. Os 3 mais práticos: Claim Check (armazena payload grande externamente, envia referência),...
 - [[wiki/sources/kafka]] — partition key e ordenação por entidade, paralelismo limitado ao número de partições, Kafka vs. RabbitMQ, configuração segura de producer (`acks=all`, `enable.idempotence=true`)
 - [[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] — Kafka como o broker do exemplo de dual write problem (cadastro + e-mail de boas-vindas); Kafka Connect citado como mecanismo de integração nativa do Debezium
 - [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — mecanismo do hash Murmur + módulo para roteamento de partição explicado passo a passo, offset commit como razão de consumers ociosos, dois consumer groups independentes consumindo o mesmo tópico para propósitos diferentes (persistência completa vs. cache de estado), event replay motivado por bug de cálculo financeiro

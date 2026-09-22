@@ -4,7 +4,7 @@ title: "YAGNI — You Ain't Gonna Need It"
 aliases: ["yagni", "you ain't gonna need it", "não vou precisar disso"]
 date_created: 2026-04-23
 date_updated: 2026-08-23
-source_count: 12
+source_count: 11
 tags: [arquitetura, principios, pragmatismo, over-engineering, xp]
 skill: tech-mentor-backend
 status: stable

@@ -4,7 +4,7 @@ title: "Hostinger"
 aliases: ["Hostinger VPS"]
 date_created: 2026-07-21
 date_updated: 2026-09-14
-source_count: 9
+source_count: 8
 tags: [tech-mentor-infra, vps, hosting, patrocinio, coolify]
 skill: tech-mentor-ai
 status: stub

@@ -3,8 +3,8 @@ type: concept
 title: "Cache"
 aliases: ["caching", "cache de aplicação"]
 date_created: 2026-06-26
-date_updated: 2026-09-14
-source_count: 13
+date_updated: 2026-09-22
+source_count: 17
 tags: [cache, performance, redis, arquitetura, backend, grande-rollback, buffer]
 skill: tech-mentor-backend
 status: stable
@@ -86,6 +86,10 @@ SSR puro recomputa o mesmo HTML a cada requisição — 100 usuários acessando 
 
 ## Key Sources
 
+- [[wiki/sources/case-twitter-feed]] — O feed do Twitter é o caso clássico de **fan-out de escrita em escala extrema**. A solução é híbrida: fan-out on write para usuários normais (pré-computa timelines no Redis) e fan-out on read para...
+- [[wiki/sources/estimativas-back-of-envelope]] — Framework de 4 passos: (1) clarificar escopo — DAU, read/write ratio, pico vs média; (2) estimar QPS; (3) estimar storage; (4) estimar bandwidth. O objetivo é ordem de grandeza para evitar...
+- [[wiki/sources/fase-1-fundamentos-infraestrutura]] — Fundamentos de infraestrutura: DNS (TTL, tipos de record), Load Balancer (L4 vs L7, algoritmos), CDN (edge cache, origem), Cache (hit/miss, eviction, invalidação), Banco de Dados (ACID, replicação,...
+- [[wiki/sources/numeros-de-latencia]] — RAM é 1000× mais rápida que SSD; SSD é 100× mais rápido que HDD. Redis ~0.1ms, PostgreSQL com índice 1-10ms, cross-region 130-250ms. Cada hop de rede no mesmo DC custa ~0.5ms — 10 microserviços no...
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]] — cache como "melhor amigo antes de escalar"; banco é o gargalo mais comum
 - [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] — contraponto: cache como camada de reserva foi removido em favor do banco relacional puro, ver [[wiki/concepts/grande-rollback]]

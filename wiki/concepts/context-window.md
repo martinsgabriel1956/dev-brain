@@ -39,7 +39,7 @@ Tamanho máximo de tokens que um modelo de linguagem pode processar em uma únic
 
 ## Relação com Outros Conceitos
 
-- [[prompt-engineering]] — o contexto é o espaço onde o prompt vive
+- [[concepts/prompt-engineering]] — o contexto é o espaço onde o prompt vive
 - [[hyperparameters-llm]] — `max_tokens` controla o tamanho do completion
 - [[in-context-learning]] — exemplos few-shot consomem tokens do context window
 

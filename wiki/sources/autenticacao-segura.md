@@ -39,7 +39,7 @@ Autenticação vs Autorização: authn = quem você é, authz = o que pode fazer
 ## Entities & Concepts Touched
 
 - [[concepts/bcrypt]]
-- [[concepts/argon2id]]
+- [[concepts/argon2]]
 - [[concepts/totp]]
 - [[concepts/passkeys]]
 - [[concepts/webauthn]]

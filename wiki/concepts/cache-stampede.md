@@ -3,8 +3,8 @@ type: concept
 title: "Cache Stampede"
 aliases: ["cache stampede", "cache stampede prevention", "dog-piling", "thundering herd cache"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
-source_count: 1
+date_updated: 2026-09-22
+source_count: 2
 tags: [cache-stampede, thundering-herd, cache, probabilistic-expiration, request-coalescing]
 skill: tech-mentor-system-design
 status: stable
@@ -120,4 +120,5 @@ async function getStaleWhileRevalidate(key: string) {
 
 ## Key Sources
 
+- [[wiki/sources/cache-strategies]] — Aprofundamento nas estratégias de cache com exemplos TypeScript completos. Cache-Aside é o padrão default para leituras. Write-Through para consistência forte. Write-Behind para throughput máximo de...
 - [[sources/conceitos-que-ninguem-ensina]]

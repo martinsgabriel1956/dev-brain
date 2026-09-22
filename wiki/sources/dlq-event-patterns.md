@@ -41,7 +41,7 @@ DLQ captura mensagens que falham repetidamente — sem DLQ, poison pills bloquei
 - [[concepts/dlq]]
 - [[concepts/at-least-once]]
 - [[concepts/exactly-once]]
-- [[concepts/idempotency]]
+- [[concepts/idempotencia]]
 - [[concepts/event-versioning]]
 - [[concepts/tolerant-reader]]
 - [[concepts/upcasting]]

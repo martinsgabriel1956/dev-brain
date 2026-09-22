@@ -72,7 +72,7 @@ date_ingested: "2026-04-29"
 - [[habitos-ruins-de-programador]] — hábitos que agravam os 5 problemas acima
 - [[9-habitos-programador-junior]] — hábitos que ajudam a evitá-los
 - [[conceitos-que-ninguem-ensina]] — princípios práticos que a faculdade não ensina
-- [[observabilidade]] — o lado sistêmico do princípio de logging
+- [[concepts/observabilidade]] — o lado sistêmico do princípio de logging
 - [[estilo-de-codigo-convencoes]] — naming e comentários como parte de código legível
 
 ---

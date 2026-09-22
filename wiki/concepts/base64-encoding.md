@@ -4,7 +4,7 @@ title: "Base64 / Base64URL"
 aliases: ["base64", "base64url", "codificacao base64", "binary-to-text encoding"]
 date_created: 2026-08-28
 date_updated: 2026-08-28
-source_count: 1
+source_count: 0
 tags: [encoding, base64, url, http, binary]
 skill: tech-mentor-security
 status: draft

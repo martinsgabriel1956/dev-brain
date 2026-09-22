@@ -78,4 +78,4 @@ Nota de terminologia: "engineering story" não é termo padronizado na literatur
 
 ## Conceitos Relacionados
 
-[[prd-product-requirements-document]] · [[frd-functional-requirements-document]] · [[trd-technical-requirements-document]]
+[[prd-product-requirements-document]] · [[frd-functional-requirements-document]] · [[concepts/trd-technical-requirements-document]]

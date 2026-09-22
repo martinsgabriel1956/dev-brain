@@ -4,7 +4,7 @@ title: "Encoding"
 aliases: ["encoding", "codificação", "url encoding", "base64", "hex encoding"]
 date_created: 2026-04-29
 date_updated: 2026-04-29
-source_count: 1
+source_count: 2
 tags: [encoding, base64, url-encoding, representacao-de-dados, fundamentos]
 skill: tech-mentor-security
 status: stable

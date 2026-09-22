@@ -33,4 +33,4 @@ Sincronização avançada: delta sync com `updated_at` watermark (buscar apenas 
 
 ## Conceitos Abordados
 
-- [[mobile-offline-first-avancado]] · [[mobile-offline-first-basico]] · [[mobile-armazenamento-local]] · [[crdt-colaboracao-tempo-real]]
+- [[concepts/mobile-offline-first-avancado]] · [[concepts/mobile-offline-first-basico]] · [[concepts/mobile-armazenamento-local]] · [[crdt-colaboracao-tempo-real]]

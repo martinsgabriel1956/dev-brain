@@ -3,7 +3,7 @@ type: concept
 title: "DNS — Domain Name System"
 aliases: [Domain Name System]
 date_created: 2026-04-22
-date_updated: 2026-08-19
+date_updated: 2026-09-22
 source_count: 6
 tags: [dns, rede, infraestrutura]
 skill: tech-mentor-system-design
@@ -36,3 +36,7 @@ Confusão comum: os dois "decidem para onde a requisição vai", mas em camadas 
 - [[wiki/sources/portas-de-rede-como-funcionam]] — DNS como resolução de nome, complementar à porta como resolução de serviço
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]] — DNS como primeira etapa de rede do critical rendering path, analogia com lista de contatos do celular
 - [[wiki/sources/email-address]] — registros MX como aplicação de DNS ao roteamento de e-mail (SMTP)
+
+## Key Sources
+
+- [[wiki/sources/fase-1-fundamentos-infraestrutura]] — Fundamentos de infraestrutura: DNS (TTL, tipos de record), Load Balancer (L4 vs L7, algoritmos), CDN (edge cache, origem), Cache (hit/miss, eviction, invalidação), Banco de Dados (ACID, replicação,...

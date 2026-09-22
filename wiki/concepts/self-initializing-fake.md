@@ -4,7 +4,7 @@ title: "SelfInitializingFake"
 aliases: ["self-initializing fake", "fake auto-inicializável", "fake autoinicializável"]
 date_created: 2026-07-27
 date_updated: 2026-08-23
-source_count: 4
+source_count: 5
 tags: [testes, test-doubles, contract-testing, martin-fowler]
 skill: tech-mentor-testing
 status: stable

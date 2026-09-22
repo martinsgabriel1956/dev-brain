@@ -60,8 +60,8 @@ O Nubank (100M clientes, maior banco digital da América Latina) tomou suas deci
 
 ## Conceitos Tocados
 
-- [[event-sourcing]] — persistir eventos, não estado; reaplica eventos para calcular estado atual
-- [[cqrs]] — separação entre leitura e escrita; estado em memória derivado do event log
+- [[concepts/event-sourcing]] — persistir eventos, não estado; reaplica eventos para calcular estado atual
+- [[concepts/cqrs]] — separação entre leitura e escrita; estado em memória derivado do event log
 - [[imutabilidade]] — variáveis não mudam após criadas; elimina toda uma classe de bugs
 - [[efeitos-colaterais]] — funções que fazem mais do que prometem; devem ser explícitos e periféricos
 - [[programacao-funcional]] — paradigma que força imutabilidade e funções puras

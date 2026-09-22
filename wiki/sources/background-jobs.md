@@ -43,7 +43,7 @@ Background jobs processam tasks fora do request/response cycle. BullMQ (Redis-ba
 - [[concepts/skip-locked]]
 - [[concepts/dead-letter-queue]]
 - [[concepts/idempotencia]]
-- [[concepts/fan-out-pattern]]
+- [[concepts/fanout-pattern]]
 
 ## Open Questions
 

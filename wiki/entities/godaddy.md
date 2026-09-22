@@ -4,7 +4,7 @@ title: "GoDaddy"
 aliases: ["GoDaddy", "Go Daddy"]
 date_created: 2026-08-12
 date_updated: 2026-08-12
-source_count: 1
+source_count: 0
 tags: [registrador, dominio, dns, hosting]
 skill: tech-mentor-networking
 status: stub

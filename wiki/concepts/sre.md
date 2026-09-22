@@ -3,8 +3,8 @@ type: concept
 title: "SRE — Site Reliability Engineering"
 aliases: ["site reliability engineering", "sre"]
 date_created: 2026-04-22
-date_updated: 2026-08-03
-source_count: 3
+date_updated: 2026-09-22
+source_count: 4
 tags: [sre, confiabilidade, operações, devops]
 skill: tech-mentor-infra
 status: stable
@@ -37,6 +37,7 @@ O guarda-chuva de confiabilidade (consistência, durabilidade, tolerância a fal
 
 ## Key Sources
 
+- [[wiki/sources/flame-graph-profiling]] — 4 frameworks de diagnóstico: Flame Graph (onde o CPU passa o tempo), USE Method (Utilization/Saturation/Errors — para recursos de infra), RED Method (Rate/Errors/Duration — para serviços), Four...
 - [[sources/sre-sli-slo-sla]]
 - [[wiki/sources/sre-capacidade-observabilidade-confiabilidade-custo]] — os cinco pilares de sucesso (capacidade, observabilidade, custo, release engineering, segurança) e confiabilidade como guarda-chuva
 - [[wiki/sources/rto-rpo-recovery-time-point-objective]] — RTO/RPO como indicadores de confiabilidade no cenário de desastre, definidos a partir da tolerância do negócio

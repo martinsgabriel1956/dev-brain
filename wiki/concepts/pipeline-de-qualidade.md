@@ -4,7 +4,7 @@ title: "Pipeline de Qualidade"
 aliases: ["quality pipeline", "pipeline de código", "ci quality gates"]
 date_created: 2026-05-31
 date_updated: 2026-07-28
-source_count: 7
+source_count: 8
 tags: [pipeline-de-qualidade, harness, qualidade, ci-cd, testes, segurança, era-agentica, ratchet, npm-audit, under-engineering]
 skill: tech-mentor-backend
 status: stable

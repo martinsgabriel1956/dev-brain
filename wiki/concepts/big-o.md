@@ -4,7 +4,7 @@ title: "Big O"
 aliases: ["complexidade de algoritmos", "Big-O notation", "O(n)", "complexidade assintótica"]
 date_created: 2026-06-26
 date_updated: 2026-09-03
-source_count: 15
+source_count: 16
 tags: [cs-fundamentals, algoritmos, big-o, complexidade, performance]
 skill: cs-fundamentals
 status: draft

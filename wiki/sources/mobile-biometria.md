@@ -32,4 +32,4 @@ iOS usa `LocalAuthentication` (LAContext) com Secure Enclave — chave privada n
 
 ## Conceitos Abordados
 
-- [[mobile-biometria]] · [[mobile-seguranca]] · [[mobile-armazenamento-local]] · [[autenticacao-segura]]
+- [[concepts/mobile-biometria]] · [[concepts/mobile-seguranca]] · [[concepts/mobile-armazenamento-local]] · [[autenticacao-segura]]

@@ -3,8 +3,8 @@ type: concept
 title: "Consistent Hashing"
 aliases: ["hash consistente", "anel de hashing", "consistent hash ring"]
 date_created: 2026-08-03
-date_updated: 2026-08-19
-source_count: 2
+date_updated: 2026-09-22
+source_count: 4
 tags: [consistent-hashing, sharding, sistemas-distribuidos, escalabilidade, banco-de-dados]
 skill: tech-mentor-system-design
 status: stub
@@ -34,5 +34,7 @@ Shards são posicionados em pontos de um anel (0° a 360°, ou um espaço de has
 
 ## Key Sources
 
+- [[wiki/sources/case-twitter-feed]] — O feed do Twitter é o caso clássico de **fan-out de escrita em escala extrema**. A solução é híbrida: fan-out on write para usuários normais (pré-computa timelines no Redis) e fan-out on read para...
+- [[wiki/sources/estimativas-back-of-envelope]] — Framework de 4 passos: (1) clarificar escopo — DAU, read/write ratio, pico vs média; (2) estimar QPS; (3) estimar storage; (4) estimar bandwidth. O objetivo é ordem de grandeza para evitar...
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — anel virtual como solução ao custo de resharding do módulo simples, citado como mecanismo interno de bancos não relacionais com sharding nativo
 - [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — contra-exemplo prático: o particionamento do Kafka usa hash + módulo simples (não um anel), sofrendo a mesma limitação de resharding total ao mudar o número de partições

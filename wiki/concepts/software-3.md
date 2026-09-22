@@ -28,7 +28,7 @@ Origem: [Twitter exchange com Chris Olah](https://twitter.com/karpathy/status/12
 
 ## Implicações
 
-- [[prompt-engineering]] é uma skill de engenharia de software — não é "apenas escrever texto".
+- [[concepts/prompt-engineering]] é uma skill de engenharia de software — não é "apenas escrever texto".
 - A qualidade do output depende da qualidade do prompt assim como a qualidade de um software 1.0 depende da qualidade do código.
 - Prompt engineering é iterável: ciclo de feedback muito mais rápido que treinar um modelo.
 - O "programa" é o prompt — deve ser versionado, testado e mantido como código.
@@ -41,7 +41,7 @@ Origem: [Twitter exchange com Chris Olah](https://twitter.com/karpathy/status/12
 
 ## Relação com Outros Conceitos
 
-- [[prompt-engineering]] — a prática central do Software 3.0
+- [[concepts/prompt-engineering]] — a prática central do Software 3.0
 - [[in-context-learning]] — o mecanismo que torna o Software 3.0 possível
 - [[foundation-model]] — o substrato sobre o qual o Software 3.0 opera
 

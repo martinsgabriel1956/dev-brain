@@ -4,7 +4,7 @@ title: "Progressive Disclosure para IA"
 aliases: ["progressive disclosure", "entrega gradual de contexto", "context by directory"]
 date_created: 2026-06-01
 date_updated: 2026-08-20
-source_count: 2
+source_count: 3
 tags: [context-engineering, coding-agents, on-demand-loading, claude-md, cursor-rules]
 skill: tech-mentor-ai
 status: draft

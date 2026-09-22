@@ -4,7 +4,7 @@ title: "OpenAI"
 aliases: ["Open AI"]
 date_created: 2026-05-17
 date_updated: 2026-09-21
-source_count: 20
+source_count: 22
 tags: [openai, organização, llm, ia, cartao-corporativo, prompt-caching]
 skill: tech-mentor-ai
 status: stable

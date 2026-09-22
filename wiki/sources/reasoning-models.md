@@ -42,7 +42,7 @@ Reasoning models gastam tokens extras em pensamento interno antes de responder. 
 - [[concepts/reasoning-models]]
 - [[concepts/extended-thinking]]
 - [[concepts/thinking-budget]]
-- [[entities/deepseek-r1]]
+- [[entities/deepseek]]
 - [[concepts/long-context]]
 - [[concepts/computer-use]]
 - [[concepts/coding-agents]]

@@ -3,8 +3,8 @@ type: concept
 title: "Mensageria"
 aliases: ["message broker", "queue", "stream", "eda", "event driven"]
 date_created: 2026-04-23
-date_updated: 2026-09-14
-source_count: 10
+date_updated: 2026-09-22
+source_count: 13
 tags: [mensageria, kafka, rabbitmq, sqs, queue, stream, eda, at-least-once, dlq]
 skill: tech-mentor-backend
 status: stub
@@ -39,6 +39,8 @@ Comunicação assíncrona entre serviços via broker de mensagens. Resolve acopl
 
 ## Key Sources
 
+- [[wiki/sources/case-twitter-feed]] — O feed do Twitter é o caso clássico de **fan-out de escrita em escala extrema**. A solução é híbrida: fan-out on write para usuários normais (pré-computa timelines no Redis) e fan-out on read para...
+- [[wiki/sources/numeros-de-latencia]] — RAM é 1000× mais rápida que SSD; SSD é 100× mais rápido que HDD. Redis ~0.1ms, PostgreSQL com índice 1-10ms, cross-region 130-250ms. Cada hop de rede no mesmo DC custa ~0.5ms — 10 microserviços no...
 - [[sources/mensageria]]
 - [[sources/design-pattern-observer]] — distinção Observer (in-process) vs Pub/Sub (broker distribuído)
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — Redis Pub/Sub como notificador entre microsserviços, sem persistência nem replay

@@ -4,7 +4,7 @@ title: "Command Pattern"
 aliases: ["command", "padrão comando"]
 date_created: 2026-05-05
 date_updated: 2026-09-21
-source_count: 5
+source_count: 6
 tags: [design-patterns, behavioral, command, gof, undo-redo, xunit, testes]
 skill: tech-mentor-backend
 status: stub

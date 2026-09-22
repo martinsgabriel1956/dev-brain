@@ -3,8 +3,8 @@ type: concept
 title: "Story Points"
 aliases: ["Pontos de História", "Estimativa Relativa", "Story Point Estimation"]
 date_created: 2026-07-28
-date_updated: 2026-08-20
-source_count: 3
+date_updated: 2026-09-22
+source_count: 4
 tags: [agile, scrum, estimativa, engineering-management]
 skill: tech-mentor-leadership
 status: stable
@@ -52,6 +52,10 @@ Consequências observadas quando isso acontece:
 
 A mesma fonte também questiona, por extensão, o timebox padrão de sprint (2 semanas): trata-o como meio (criar ritmo de feedback num mundo em que escrever código era caro), não como fim — e relata reduzi-lo experimentalmente (1 semana, ou até 3 dias em projetos menos complexos) sob o argumento de que manter a janela de feedback fixa enquanto a produção acelera só acumula trabalho não validado. Nenhum dado de resultado desse experimento é citado — ver [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] para o open question sobre isso.
 
+## Tamanho de História Como Sinal de Saúde do Processo
+
+[[wiki/sources/sobre-ser-gerente-fabio-akita]] complementa a definição de [[wiki/concepts/estimativas-de-software|estimativa]] acima com um limite prático independente da unidade escolhida (pontos ou horas): a melhor história é do tamanho de meio dia de trabalho, no máximo dois ou três dias — o que passar disso é um épico e precisa ser dividido antes de entrar no backlog, não depois. A mesma fonte trata sprints acima de duas semanas como sintoma, não escolha neutra de processo: se um sprint precisa ser mais longo que isso, normalmente esconde outro problema (reuniões longas demais, interrupções constantes) sendo compensado com mais tempo de execução em vez de resolvido na raiz.
+
 ## Quando Usar / Evitar
 
 **Usar:** planejamento de sprint, previsão de entrega baseada em velocity histórica, conversa estruturada sobre complexidade via [[wiki/concepts/planning-poker]].
@@ -67,3 +71,4 @@ A mesma fonte também questiona, por extensão, o timebox padrão de sprint (2 s
 - [[wiki/sources/story-points-po-forcando-30-40-pontos-por-sprint]]
 - [[wiki/sources/por-que-estimativas-de-software-falham-como-melhorar]] — crítica à equivalência implícita entre pontos e horas dentro de uma sprint
 - [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] — velocity/throughput definidos para um gargalo (escrever código) que a IA pode ter deslocado; experimento de reduzir o timebox de sprint quando a produção de código acelera
+- [[wiki/sources/sobre-ser-gerente-fabio-akita]] — regra prática de tamanho de história (meio dia, máximo 2-3 dias) independente da unidade de estimativa; sprint acima de 2 semanas como sintoma de outro problema

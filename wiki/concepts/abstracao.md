@@ -4,7 +4,7 @@ title: "Abstração"
 aliases: ["abstraction", "esconder detalhes", "contrato genérico"]
 date_created: 2026-04-25
 date_updated: 2026-08-27
-source_count: 6
+source_count: 7
 tags: [abstracao, software-design, clean-code, arquitetura, interfaces]
 skill: tech-mentor-backend
 status: stable
@@ -69,8 +69,8 @@ A fonte usa uma analogia médica para justificar por que isso é necessário: um
 
 - [[acoplamento]] — boa abstração é o que permite baixo acoplamento entre camadas
 - [[single-responsibility]] — cada abstração deve representar uma única responsabilidade
-- [[hexagonal-architecture]] — Ports & Adapters é a formalização arquitetural de abstração: Port = contrato, Adapter = implementação concreta
-- [[dependency-injection]] — DI é o mecanismo que injeta a implementação concreta numa abstração
+- [[concepts/hexagonal-architecture]] — Ports & Adapters é a formalização arquitetural de abstração: Port = contrato, Adapter = implementação concreta
+- [[concepts/dependency-injection]] — DI é o mecanismo que injeta a implementação concreta numa abstração
 
 ## Linguagem Natural Como a Camada Mais Recente
 

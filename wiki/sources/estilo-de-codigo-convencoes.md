@@ -69,7 +69,7 @@ Convenções de estilo de código baseadas no Linux Kernel Coding Style. Quatro 
 
 - [[anti-patterns]] — aninhamento excessivo e comentários desnecessários como anti-patterns
 - [[conceitos-que-ninguem-ensina]] — convenções práticas que ninguém ensina formalmente
-- [[clean-architecture]] — princípios de código legível e manutenível
+- [[concepts/clean-architecture]] — princípios de código legível e manutenível
 
 ---
 

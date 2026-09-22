@@ -59,13 +59,13 @@ Repetido byte a byte, esse padrão constrói um valor maior a partir de fragment
 ## Outras Aplicações Comuns
 
 - **Feature flags / permissões como bitmask**: `READ | WRITE` combina flags; `perms & WRITE != 0` verifica se uma flag está setada.
-- **`iota` em Go para bitmask**: `const (Read = 1 << iota; Write; Exec)` gera `1, 2, 4` — ver [[go-fundamentos]].
+- **`iota` em Go para bitmask**: `const (Read = 1 << iota; Write; Exec)` gera `1, 2, 4` — ver [[concepts/go-fundamentos]].
 - **Parsing de protocolos binários**: TCP flags, headers de protocolo, cores em hexadecimal.
 
 ## Relação com Outros Conceitos
 
 - [[utf-8]] — decode/encode usa AND+shift+OR para montar/desmontar runas
-- [[go-fundamentos]] — `iota` com left shift para bitmask em Go
+- [[concepts/go-fundamentos]] — `iota` com left shift para bitmask em Go
 - [[wiki/concepts/sistema-binario-bit-byte]] — o que os operadores bitwise manipulam: os bits que formam bytes; AND/OR/XOR como base do processamento binário
 
 ## Key Sources

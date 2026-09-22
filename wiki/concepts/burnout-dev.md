@@ -4,7 +4,7 @@ title: "Burnout em Desenvolvimento"
 aliases: ["burnout", "esgotamento profissional", "developer burnout"]
 date_created: 2026-05-18
 date_updated: 2026-08-27
-source_count: 4
+source_count: 5
 tags: [burnout, saude-mental, produtividade, comportamento, carreira]
 skill: tech-mentor-ai
 status: draft

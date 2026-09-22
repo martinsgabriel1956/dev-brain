@@ -4,7 +4,7 @@ title: "Attack Surface (Superfície de Ataque)"
 aliases: ["attack surface", "superfície de ataque", "minimização de superfície", "surface minimization"]
 date_created: 2026-06-05
 date_updated: 2026-09-08
-source_count: 7
+source_count: 8
 tags: [attack-surface, security, arquitetura-seguranca, defense-in-depth, gatekeeper]
 skill: tech-mentor-security
 status: stable

@@ -4,7 +4,7 @@ title: "Refatoração"
 aliases: ["refactoring", "refatorar"]
 date_created: 2026-07-15
 date_updated: 2026-09-21
-source_count: 9
+source_count: 8
 tags: [refactoring, clean-code, craftsmanship, design-de-software, tech-debt]
 skill: tech-mentor-backend
 status: draft

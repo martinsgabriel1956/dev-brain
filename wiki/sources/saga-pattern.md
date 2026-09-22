@@ -42,7 +42,7 @@ Saga é o padrão para transações distribuídas sem 2PC. Duas abordagens: Chor
 - [[concepts/choreography]]
 - [[concepts/orchestration]]
 - [[concepts/compensating-transaction]]
-- [[concepts/idempotency]]
+- [[concepts/idempotencia]]
 - [[entities/temporal]]
 - [[concepts/distributed-transactions]]
 

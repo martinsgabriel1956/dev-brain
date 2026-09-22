@@ -3,7 +3,7 @@ type: concept
 title: "Space-Based Architecture"
 aliases: ["SBA", "arquitetura baseada em espaço"]
 date_created: 2026-08-21
-date_updated: 2026-08-21
+date_updated: 2026-09-22
 source_count: 1
 tags: [arquitetura, sistemas-distribuidos, escalabilidade, tuple-space]
 skill: tech-mentor-backend
@@ -19,3 +19,7 @@ Citado apenas na seção "Ver também" do verbete de origem — ainda não aprof
 ## Key sources
 
 - [[wiki/sources/tuple-space-wikipedia]] — citado como conceito relacionado ("See Also"), sem aprofundamento no verbete
+
+## Key Sources
+
+- [[wiki/sources/space-based-architecture]] — Space-Based Architecture: elimina o banco de dados do caminho crítico das requisições. Processing Units (PUs) contêm lógica + cópia do dado em memória. Data Grid (Hazelcast/Ignite) sincroniza estado...

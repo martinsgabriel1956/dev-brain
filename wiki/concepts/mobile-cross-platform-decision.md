@@ -43,8 +43,8 @@ Obrigatório para: ARKit/ARCore intensivo, Bluetooth BLE avançado, HealthKit/He
 
 ## Ver também
 
-- [[mobile-kmp]] — KMP em profundidade
-- [[mobile-design-system]] — como manter consistência entre plataformas
+- [[concepts/mobile-kmp]] — KMP em profundidade
+- [[concepts/mobile-design-system]] — como manter consistência entre plataformas
 
 ## Key Sources
 

@@ -44,7 +44,7 @@ A conta bancária é a analogia canônica: o extrato é o event log, o saldo é 
 
 ✅ Auditoria completa obrigatória (financeiro, compliance, regulatório)
 ✅ Time-travel: "qual era o estado em T?"
-✅ Múltiplas projeções do mesmo dado ([[cqrs]])
+✅ Múltiplas projeções do mesmo dado ([[concepts/cqrs]])
 ✅ Replay: reconstruir projeções corrompidas ou criar novas
 ✅ Bugs 100% reproduzíveis (salva eventos, dá replay)
 ❌ Queries ad-hoc complexas — event sourcing não é OLAP
@@ -71,16 +71,16 @@ Replay: snapshot + eventos de t=1001 em diante
 
 - Curva de aprendizado alta
 - Event log cresce indefinidamente → precisa de snapshot strategy
-- Queries sobre estado atual exigem projeções ([[cqrs]])
+- Queries sobre estado atual exigem projeções ([[concepts/cqrs]])
 - Complexidade arquitetural — raramente usado fora de bancos/apostas/compliance
 
 ## Relação com CQRS
 
-Event Sourcing e [[cqrs]] andam juntos mas são independentes:
+Event Sourcing e [[concepts/cqrs]] andam juntos mas são independentes:
 - Event Sourcing resolve *como persistir*
 - CQRS resolve *como separar leitura de escrita*
 
-Em prática financeira: events persistidos no store, projeções (read models) construídas por [[cqrs]] para queries rápidas.
+Em prática financeira: events persistidos no store, projeções (read models) construídas por [[concepts/cqrs]] para queries rápidas.
 
 ## Uso no Nubank
 

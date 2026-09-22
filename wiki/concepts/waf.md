@@ -4,7 +4,7 @@ title: "WAF (Web Application Firewall)"
 aliases: ["waf", "web application firewall", "firewall de aplicação"]
 date_created: 2026-06-05
 date_updated: 2026-08-28
-source_count: 5
+source_count: 6
 tags: [waf, ddos, owasp, borda, attack-surface, cloud-security, aws-waf, cloudflare, under-attack-mode, syn-flood]
 skill: tech-mentor-security
 status: stable

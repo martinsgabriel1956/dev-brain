@@ -4,7 +4,7 @@ title: "Navigation Paradox"
 aliases: ["navigation paradox", "paradoxo de navegação", "dependência escondida agente"]
 date_created: 2026-04-23
 date_updated: 2026-08-04
-source_count: 2
+source_count: 3
 tags: [ia, agentes, arquitetura, dependencias, tokens, benchmark, pesquisa]
 skill: tech-mentor-ai
 status: stable

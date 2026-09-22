@@ -3,8 +3,8 @@ type: concept
 title: "Code Smells"
 aliases: ["code smell", "cheiro de código", "sinais de código ruim"]
 date_created: 2026-08-18
-date_updated: 2026-09-21
-source_count: 2
+date_updated: 2026-09-22
+source_count: 5
 tags: [code-smells, clean-code, refactoring, craftsmanship]
 skill: tech-mentor-backend
 status: draft
@@ -36,7 +36,11 @@ Não varrer a code base inteira caçando smells para refatorar sem antes conside
 
 ## Taxonomia irmã: Test Smells (Meszaros)
 
-O catálogo xUnitPatterns.com de [[wiki/entities/gerard-meszaros]] usa "smell" com o mesmo espírito — sintoma a investigar, não regra rígida — mas aplicado a testes, não a código de produção. [[wiki/sources/production-bugs-xunitpatterns]] documenta um **Project Smell** dessa taxonomia irmã: **Production Bugs**, cuja árvore de causas inclui [[wiki/concepts/production-bugs|Lost Test, Untested Code, Untested Requirement e Neverfail Test]].
+O catálogo xUnitPatterns.com de [[wiki/entities/gerard-meszaros]] usa "smell" com o mesmo espírito — sintoma a investigar, não regra rígida — mas aplicado a testes, não a código de produção. [[wiki/sources/production-bugs-xunitpatterns]] documenta um **Project Smell** dessa taxonomia irmã: **Production Bugs**, cuja árvore de causas inclui [[wiki/concepts/production-bugs|Lost Test, Untested Code, Untested Requirement e Neverfail Test]]. [[wiki/sources/developers-not-writing-tests-xunitpatterns]] documenta o segundo Project Smell dessa família — [[wiki/concepts/developers-not-writing-tests|Developers Not Writing Tests]] — com uma diferença importante de quem detecta: smells de código de produção tipicamente aparecem para quem está lendo/mexendo no código, enquanto Project Smells como este são mais visíveis para quem tem visão de time inteiro (gestão).
+
+A categoria irmã **Test Smells** (distinta de Project Smells) fica mais próxima do código: [[wiki/sources/hard-to-test-code-xunitpatterns]] documenta [[wiki/concepts/hard-to-test-code|Hard-to-Test Code]], smell dessa categoria com três causas nomeadas (Highly Coupled Code, Asynchronous Code, Untestable Test Code) — a árvore de causas que faltava para a segunda causa raiz de "test debt" já citada em [[wiki/concepts/developers-not-writing-tests]].
+
+O catálogo de Meszaros divide "Test Smells" em três subcategorias: **Code Smells** (Hard-to-Test Code, acima), **Project Smells** (Production Bugs, Developers Not Writing Tests) e uma terceira, **Behavior Smells** — sintomas observados na *execução* dos testes, não no código nem no projeto. [[wiki/sources/frequent-debugging-xunitpatterns]] documenta o primeiro exemplo dessa terceira subcategoria: [[wiki/concepts/frequent-debugging|Frequent Debugging]] (a.k.a. Manual Debugging), causado por falta de Defect Localization na suíte de testes.
 
 ## Relacionado
 
@@ -46,3 +50,6 @@ O catálogo xUnitPatterns.com de [[wiki/entities/gerard-meszaros]] usa "smell" c
 
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]]
 - [[wiki/sources/production-bugs-xunitpatterns]] — taxonomia irmã (Test Smells / Project Smells) do mesmo espírito aplicada a testes
+- [[wiki/sources/developers-not-writing-tests-xunitpatterns]] — segundo Project Smell da mesma taxonomia irmã; cunha o termo "test debt"
+- [[wiki/sources/hard-to-test-code-xunitpatterns]] — Test Smell (categoria distinta de Project Smell) com três causas nomeadas: Highly Coupled Code, Asynchronous Code, Untestable Test Code
+- [[wiki/sources/frequent-debugging-xunitpatterns]] — primeira fonte da subcategoria "Behavior Smells": Frequent Debugging, causado por falta de Defect Localization

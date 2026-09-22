@@ -32,4 +32,4 @@ Flexbox (RN), ConstraintLayout/LayoutBuilder (Android/Flutter), Auto Layout (iOS
 
 ## Conceitos Abordados
 
-- [[mobile-layouts-responsivos]] · [[mobile-navegacao]] · [[mobile-performance-listas]] · [[mobile-design-system]]
+- [[concepts/mobile-layouts-responsivos]] · [[concepts/mobile-navegacao]] · [[concepts/mobile-performance-listas]] · [[concepts/mobile-design-system]]

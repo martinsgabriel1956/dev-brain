@@ -3,7 +3,7 @@ type: concept
 title: "Circuit Breaker"
 aliases: ["circuit breaker pattern", "disjuntor", "opossum"]
 date_created: 2026-04-22
-date_updated: 2026-07-27
+date_updated: 2026-09-22
 source_count: 4
 tags: [resiliencia, circuit-breaker, system-design]
 skill: tech-mentor-system-design
@@ -115,6 +115,7 @@ Circuit breaker decide **SE** tenta. [[concepts/bulkhead]] decide **QUANTOS** te
 
 ## Key Sources
 
+- [[wiki/sources/agentes-em-producao]] — Pilotos de agentes funcionam. Produção quebra em 3 pontos: integração com sistemas legados (APIs internas sem docs), state management (sessões longas não cabem no contexto), e governança (auditoria,...
 - [[sources/bulkhead]]
 - [[sources/circuit-breaker]]
 - [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — circuit breaker citado como conceito que se aplica em qualquer chamada de API externa (banco, serviço de pagamento, terceiro), mesmo dentro de uma aplicação única — não é exclusividade de sistemas distribuídos, ver [[wiki/concepts/microsservicos]]

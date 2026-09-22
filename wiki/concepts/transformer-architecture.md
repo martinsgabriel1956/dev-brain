@@ -35,7 +35,7 @@ Antes do Transformer, modelos já usavam embedding vectors para representar sign
 
 ## Custo Computacional
 
-Self-attention é O(n²) no comprimento da sequência — para n tokens, a matriz de atenção é n×n. Isso é o gargalo físico por trás do limite de [[context-window|context window]] e motivou arquiteturas alternativas como [[mamba-ssm]] (O(n)) e otimizações como [[flash-attention]] (mesmo resultado matemático, muito mais eficiente em memória).
+Self-attention é O(n²) no comprimento da sequência — para n tokens, a matriz de atenção é n×n. Isso é o gargalo físico por trás do limite de [[context-window|context window]] e motivou arquiteturas alternativas como [[concepts/mamba-ssm]] (O(n)) e otimizações como [[concepts/flash-attention]] (mesmo resultado matemático, muito mais eficiente em memória).
 
 ## Conexões
 
@@ -45,8 +45,8 @@ Self-attention é O(n²) no comprimento da sequência — para n tokens, a matri
 - [[tokenizacao]] — etapa anterior que transforma texto em tokens/IDs
 - [[wiki/entities/attention-is-all-you-need-paper]] — paper de origem (2017)
 - [[mixture-of-experts]] — variação que substitui o FFN denso por experts esparsos
-- [[flash-attention]] — otimização de implementação do cálculo de atenção
-- [[mamba-ssm]] — arquitetura alternativa O(n) para sequências longas
+- [[concepts/flash-attention]] — otimização de implementação do cálculo de atenção
+- [[concepts/mamba-ssm]] — arquitetura alternativa O(n) para sequências longas
 
 ## Key Sources
 

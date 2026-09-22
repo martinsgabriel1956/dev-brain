@@ -4,7 +4,7 @@ title: "Martin Fowler"
 aliases: ["Fowler", "martinfowler.com"]
 date_created: 2026-07-07
 date_updated: 2026-09-21
-source_count: 34
+source_count: 35
 tags: [thoughtworks, autor, testes, arquitetura, tech-debt, refactoring, agile]
 skill: tech-mentor-testing
 status: stable
@@ -44,10 +44,10 @@ Segundo [[wiki/sources/there-is-always-an-exception-xunitpatterns]] (Meszaros), 
 - [[tolerant-reader]] / [[wiki/sources/tolerant-reader]] — robustez de consumers em schema evolution
 - Repository e Active Record (via *PoEAA*) — ver [[design-patterns]]
 - Feature Toggles — ver [[wiki/sources/feature-flags]]
-- [[contract-testing]] — terminologia (`ContractTest`) usada de forma consistente entre suas fontes; artigo próprio original chamava-se "Integration Contract Test", renomeado depois para "Contract Test" quando o termo mais curto ganhou adoção na indústria — ver [[wiki/sources/contract-test-martin-fowler]]
+- [[concepts/contract-testing]] — terminologia (`ContractTest`) usada de forma consistente entre suas fontes; artigo próprio original chamava-se "Integration Contract Test", renomeado depois para "Contract Test" quando o termo mais curto ganhou adoção na indústria — ver [[wiki/sources/contract-test-martin-fowler]]
 - [[wiki/concepts/self-initializing-fake]] — bliki próprio de 2009 ([[wiki/sources/self-initializing-fake-martin-fowler]]) detalhando o padrão: um Fake que na primeira chamada encaminha ao serviço real e grava a resposta em cache, servindo daí em diante; recomendado depois, em 2011, como técnica para construir doubles usados em contract tests
 - [[wiki/concepts/monolith-first]] — princípio (bliki, 2015, martinfowler.com/bliki/MonolithFirst.html) de que projetos novos não devem começar com microsserviços; formulado a partir da observação de que quase toda história de microsserviços bem-sucedida começou como monolito, e quase todo sistema que nasceu já distribuído teve sérios problemas; sustentado por YAGNI e pela dificuldade de acertar bounded contexts no início — ver a fonte primária [[wiki/sources/monolith-first-martin-fowler]]
-- [[test-doubles]] — divulgou o termo guarda-chuva "TestDouble" no bliki em 2006, mas a taxonomia dos cinco tipos (Dummy/Fake/Stub/Spy/Mock) é de autoria de [[wiki/entities/gerard-meszaros]], não dele — ver [[wiki/sources/test-double-martin-fowler]] (relato de Fowler) e agora também a **fonte primária** de Meszaros em [[wiki/sources/test-double-xunitpatterns-meszaros]]
+- [[concepts/test-doubles]] — divulgou o termo guarda-chuva "TestDouble" no bliki em 2006, mas a taxonomia dos cinco tipos (Dummy/Fake/Stub/Spy/Mock) é de autoria de [[wiki/entities/gerard-meszaros]], não dele — ver [[wiki/sources/test-double-martin-fowler]] (relato de Fowler) e agora também a **fonte primária** de Meszaros em [[wiki/sources/test-double-xunitpatterns-meszaros]]
 - [[wiki/concepts/extract-interface]] — refatoração do livro *Refactoring: Improving the Design of Existing Software*, catalogada (mas não escrita) no site de Meszaros: extrair para uma interface própria o subconjunto de uma classe usado por vários clientes; citada como pré-requisito técnico para instalar Test Doubles via Dependency Injection em linguagens estaticamente tipadas — ver [[wiki/sources/extract-interface-xunitpatterns]]
 - [[wiki/concepts/extract-method]] — refatoração-irmã do mesmo livro, mesma proveniência host≠autor no catálogo de Meszaros: transformar um fragmento de código repetido/repetível num método nomeado; citada em [[wiki/sources/testcase-class-xunitpatterns]] como técnica para eliminar Test Code Duplication — ver [[wiki/sources/extract-method-xunitpatterns]]
 - [[wiki/concepts/rename-method]] — terceira refatoração do mesmo livro citada no catálogo de Meszaros, ainda sem página primária dedicada isolada: recomendada em [[wiki/sources/test-discovery-xunitpatterns]] para migrar Test Methods existentes a um framework que faz **Test Method Discovery** por convenção de nomenclatura
@@ -102,7 +102,7 @@ Em [[wiki/sources/agilidade-manifesto-agil-fabio-akita]], citado como um dos 17 
 
 ## Ver também
 
-- [[piramide-de-testes]]
+- [[concepts/piramide-de-testes]]
 - [[ci-cd]] — termo "DeploymentPipeline" é dele (bliki de 2013, fonte primária agora ingerida em [[wiki/sources/deployment-pipeline-martin-fowler]]): estágios progressivos por confiança, escopo além de testes (performance/segurança/usabilidade), colaboração e trilha de auditoria
 - [[walking-skeleton]] — padrão da mesma tradição de entrega incremental (Extreme Programming/continuous delivery)
 

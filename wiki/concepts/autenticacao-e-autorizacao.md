@@ -4,7 +4,7 @@ title: "Autenticação e Autorização"
 aliases: ["authn authz", "authentication vs authorization", "quem é você vs o que você pode fazer"]
 date_created: 2026-07-09
 date_updated: 2026-08-03
-source_count: 5
+source_count: 4
 tags: [autenticacao, autorizacao, seguranca, backend, jwt, sessao, rbac]
 skill: tech-mentor-backend
 status: stub

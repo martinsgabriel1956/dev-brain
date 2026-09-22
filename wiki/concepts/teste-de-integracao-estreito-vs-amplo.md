@@ -4,7 +4,7 @@ title: "Teste de Integração: Estreito vs. Amplo"
 aliases: ["narrow integration test", "broad integration test", "teste de integração narrow", "teste de integração broad", "system test", "end-to-end test (Fowler)"]
 date_created: 2026-07-07
 date_updated: 2026-08-23
-source_count: 7
+source_count: 9
 tags: [testes, integracao, martin-fowler, contract-testing, microservices, terminologia]
 skill: tech-mentor-testing
 status: stable
@@ -19,11 +19,11 @@ status: stable
 | | Estreito (narrow) | Amplo (broad) |
 |---|---|---|
 | Escopo | só a fatia de código que fala com um serviço externo | todos os serviços reais, ativados juntos |
-| Dependência | [[test-doubles]] do serviço externo (in-process ou over-the-wire, ex. mountebank) | instâncias reais de cada serviço |
+| Dependência | [[concepts/test-doubles]] do serviço externo (in-process ou over-the-wire, ex. mountebank) | instâncias reais de cada serviço |
 | Velocidade | próxima de um teste unitário — roda no mesmo framework | lenta — precisa de ambiente e rede |
 | Onde roda no pipeline | estágio inicial do [[ci-cd]] | staging, geralmente como gate de deploy, não de PR |
 | Risco não coberto | double não fiel ao serviço real | — |
-| Mitigação do risco | [[contract-testing]] valida que o double é fiel | n/a — testa o real |
+| Mitigação do risco | [[concepts/contract-testing]] valida que o double é fiel | n/a — testa o real |
 
 Essa divisão por estágio é uma aplicação direta do princípio de [[wiki/sources/deployment-pipeline-martin-fowler|estágios progressivos por confiança]] do próprio Fowler: teste estreito é barato e roda cedo, teste amplo é caro e fica para o estágio onde vale pagar o tempo extra.
 
@@ -31,11 +31,11 @@ Essa divisão por estágio é uma aplicação direta do princípio de [[wiki/sou
 
 A definição "ampla" vem do waterfall dos anos 80: módulos eram construídos isoladamente por meses e só se juntavam numa fase de QA que ativava tudo junto para validar a composição. Não havia alternativa prática — testar carrinho + catálogo exigia rodar os dois.
 
-A definição "estreita" só se tornou viável quando a prática de dublês de teste fiéis amadureceu: hoje dá para testar a integração do carrinho com o catálogo exercitando apenas o código do carrinho que fala com o catálogo, contra um double do catálogo. A fonte primária de [[test-doubles]] ([[wiki/sources/test-double-xunitpatterns-meszaros]]) formaliza por que isso funciona: substitui-se o **DOC** (o catálogo) por um double que só precisa expor a **mesma API** que o SUT (o carrinho) exercita — "fiel o suficiente", não idêntico.
+A definição "estreita" só se tornou viável quando a prática de dublês de teste fiéis amadureceu: hoje dá para testar a integração do carrinho com o catálogo exercitando apenas o código do carrinho que fala com o catálogo, contra um double do catálogo. A fonte primária de [[concepts/test-doubles]] ([[wiki/sources/test-double-xunitpatterns-meszaros]]) formaliza por que isso funciona: substitui-se o **DOC** (o catálogo) por um double que só precisa expor a **mesma API** que o SUT (o carrinho) exercita — "fiel o suficiente", não idêntico.
 
 ## O combo que substitui o teste amplo
 
-Narrow integration test + [[contract-testing]] cobrem, juntos, o que o teste amplo cobria:
+Narrow integration test + [[concepts/contract-testing]] cobrem, juntos, o que o teste amplo cobria:
 - o narrow test garante que o *seu* código chama a dependência corretamente;
 - o contract test garante que o double usado é fiel ao comportamento real do provider.
 
@@ -49,9 +49,9 @@ Para evitar a ambiguidade, Fowler prefere renomear em vez de qualificar todo mun
 
 ## Ver também
 
-- [[test-doubles]] — a ferramenta que viabiliza o teste estreito
-- [[contract-testing]] — mitiga o risco de um double não fiel
-- [[piramide-de-testes]] — onde estreito e amplo se encaixam nas camadas
+- [[concepts/test-doubles]] — a ferramenta que viabiliza o teste estreito
+- [[concepts/contract-testing]] — mitiga o risco de um double não fiel
+- [[concepts/piramide-de-testes]] — onde estreito e amplo se encaixam nas camadas
 - [[testes-integracao-banco-real]] — caso particular: banco de dados costuma ser tratado como infraestrutura própria, não como "serviço externo" no sentido de Fowler
 - [[unit-test-solitario-vs-sociavel]] — confusão irmã: parte da comunidade chama de "integration test" o que é um unit test sociável
 - [[wiki/entities/martin-fowler]]

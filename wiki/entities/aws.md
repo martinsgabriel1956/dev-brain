@@ -3,8 +3,8 @@ type: entity
 title: "AWS"
 aliases: ["amazon web services"]
 date_created: 2026-09-15
-date_updated: 2026-09-15
-source_count: 1
+date_updated: 2026-09-22
+source_count: 4
 tags: [empresa, cloud, forward-deployed-engineer, solutions-architect]
 skill: tech-mentor-leadership
 status: stub
@@ -22,4 +22,7 @@ Segundo [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]],
 
 ## Key Sources
 
+- [[wiki/sources/cloud-security]] — Cloud Security: IAM com least privilege, Permission Boundaries para delegação segura, SCPs para guardrails em toda a org AWS. CSPM (Prowler, Security Hub) audita misconfigurations continuamente....
+- [[wiki/sources/dynamodb]] — DynamoDB: NoSQL serverless AWS com escala ilimitada. Single-Table Design: todos os tipos de entidade em uma tabela, acesso por PK+SK patterns. GSI (Global Secondary Index) permite queries por outras...
+- [[wiki/sources/sqs-sns]] — SQS é uma fila gerenciada AWS (zero operação). Standard: alta throughput, ordenação best-effort. FIFO: ordering garantido por MessageGroupId, deduplicação nativa (5 min window), limitado a 3k msg/s...
 - [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]] — relato de engenheiros AWS atuando dentro do Itaú, modelo Solutions Architect como precursor do FDE em cloud

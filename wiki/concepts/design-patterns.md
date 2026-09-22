@@ -4,7 +4,7 @@ title: "Design Patterns"
 aliases: ["padrões de projeto", "GoF", "Gang of Four patterns"]
 date_created: 2026-05-16
 date_updated: 2026-08-11
-source_count: 6
+source_count: 7
 tags: [design, arquitetura, padroes, programacao]
 skill: tech-mentor-leadership
 status: stable

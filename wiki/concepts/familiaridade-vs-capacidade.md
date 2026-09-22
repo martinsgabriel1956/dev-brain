@@ -4,7 +4,7 @@ title: "Familiaridade vs Capacidade"
 aliases: ["velocidade de aprendizado", "linha de largada", "exposição anterior", "dom para programação"]
 date_created: 2026-04-22
 date_updated: 2026-06-26
-source_count: 2
+source_count: 3
 tags: [carreira, mentalidade, aprendizado, iniciante]
 skill: tech-mentor-leadership
 status: stable

@@ -45,6 +45,10 @@ Himanshu Singh, engenheiro full-stack focado em Web3, construiu dois projetos ([
 
 ---
 
+## Entidades
+
+- [[wiki/entities/himanshu-singh]] — autor do relato, engenheiro full-stack focado em Web3
+
 ## Conceitos
 
 - [[wiki/concepts/prompt-engineering]] — padrão de perguntas extensas antes de implementar como variante do "Tell It"/spec-first

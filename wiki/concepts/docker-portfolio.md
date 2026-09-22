@@ -62,12 +62,12 @@ Multi-stage build resulta em imagem menor e mais segura — só o necessário pa
 
 ## Bônus: incluir observabilidade no Compose
 
-Adicionar Jaeger ou similar ao `docker-compose.yml` demonstra maturidade além do básico (ver [[observabilidade]]).
+Adicionar Jaeger ou similar ao `docker-compose.yml` demonstra maturidade além do básico (ver [[concepts/observabilidade]]).
 
 ## Relações
 
 - [[portfolio-backend-junior]]
-- [[observabilidade]]
+- [[concepts/observabilidade]]
 
 ## Key sources
 

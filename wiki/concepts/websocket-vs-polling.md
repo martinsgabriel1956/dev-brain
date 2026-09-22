@@ -3,8 +3,8 @@ type: concept
 title: "WebSocket vs Polling"
 aliases: ["websocket", "long polling", "http polling", "sse"]
 date_created: 2026-04-22
-date_updated: 2026-07-03
-source_count: 4
+date_updated: 2026-09-22
+source_count: 5
 tags: [system-design, websocket, realtime, protocolo, chat]
 skill: tech-mentor-system-design
 status: stable
@@ -54,6 +54,7 @@ Para sistemas com poucos usuários simultâneos e tolerância a delay de segundo
 
 ## Key Sources
 
+- [[wiki/sources/presence-system]] — Sistema de presença (online/offline) usa Heartbeat + Redis TTL: cliente envia ping a cada 15s, servidor atualiza `presence:{userId}` com SETEX 30s. Se TTL expirar, usuário está offline. Para...
 - [[sources/case-whatsapp]]
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — implementação prática de SSE e long polling, erros comuns de produção
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — quando polling é a resposta certa em entrevista; LB L4 vs L7; erros mais comuns

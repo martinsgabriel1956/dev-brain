@@ -3,8 +3,8 @@ type: concept
 title: "Amazon DynamoDB"
 aliases: ["DynamoDB", "Dynamo"]
 date_created: 2026-08-04
-date_updated: 2026-09-14
-source_count: 5
+date_updated: 2026-09-22
+source_count: 6
 tags: ["aws", "dynamodb", "nosql", "banco-de-dados", "infra", "cloud"]
 skill: tech-mentor-infra
 status: stub
@@ -50,6 +50,7 @@ Cenário concreto onde DynamoDB supera Postgres: base de dados grande (muito sto
 
 ## Key Sources
 
+- [[wiki/sources/dynamodb]] — DynamoDB: NoSQL serverless AWS com escala ilimitada. Single-Table Design: todos os tipos de entidade em uma tabela, acesso por PK+SK patterns. GSI (Global Secondary Index) permite queries por outras...
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]
 - [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — exemplo de partition/sort key, modos Provisioned vs. On-Demand, e casos ideais vs. não ideais
 - [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]] — uso via LocalStack para desenvolvimento local, em conjunto com PostgreSQL como banco principal

@@ -68,9 +68,9 @@ Frida pode fazer SSL unpinning e modificar lógica de validação de receipt. De
 
 ## Ver também
 
-- [[mobile-biometria]] — Keychain/Keystore integrado com biometria
-- [[mobile-armazenamento-local]] — onde guardar cada tipo de dado
-- [[mobile-monetizacao]] — receipt validation server-side
+- [[concepts/mobile-biometria]] — Keychain/Keystore integrado com biometria
+- [[concepts/mobile-armazenamento-local]] — onde guardar cada tipo de dado
+- [[concepts/mobile-monetizacao]] — receipt validation server-side
 
 ## Key Sources
 

@@ -3,8 +3,8 @@ type: concept
 title: "DB Sharding"
 aliases: ["sharding", "database sharding", "horizontal partitioning"]
 date_created: 2026-04-23
-date_updated: 2026-08-06
-source_count: 7
+date_updated: 2026-09-22
+source_count: 9
 tags: [sharding, escalabilidade, banco-de-dados, consistent-hashing, shard-key]
 skill: tech-mentor-system-design
 status: stub
@@ -37,6 +37,8 @@ Um risco prático de usar chaves sequenciais (auto-incremento) em bases separada
 
 ## Key Sources
 
+- [[wiki/sources/case-twitter-feed]] — O feed do Twitter é o caso clássico de **fan-out de escrita em escala extrema**. A solução é híbrida: fan-out on write para usuários normais (pré-computa timelines no Redis) e fan-out on read para...
+- [[wiki/sources/estimativas-back-of-envelope]] — Framework de 4 passos: (1) clarificar escopo — DAU, read/write ratio, pico vs média; (2) estimar QPS; (3) estimar storage; (4) estimar bandwidth. O objetivo é ordem de grandeza para evitar...
 - [[sources/db-sharding]]
 - [[sources/clusters]]
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]] — sharding (horizontal/vertical, partições, escolha de shard key) é citado como tópico de aprofundamento típico de entrevista sênior, junto de reader replicas e Federation

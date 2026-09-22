@@ -3,8 +3,8 @@ type: concept
 title: "Event-Driven Architecture (EDA)"
 aliases: ["arquitetura orientada a eventos", "eda", "event driven"]
 date_created: 2026-07-30
-date_updated: 2026-09-14
-source_count: 3
+date_updated: 2026-09-22
+source_count: 5
 tags: [event-driven, mensageria, saga-pattern, cqrs, microsservicos, arquitetura]
 skill: tech-mentor-backend
 status: stub
@@ -36,6 +36,8 @@ Ganha-se desacoplamento e ausência de gargalo síncrono; perde-se consistência
 
 ## Key Sources
 
+- [[wiki/sources/event-driven-architecture]] — EDA desacopla produtores de consumidores via eventos — comunicação assíncrona, temporal decoupling. Dois padrões de coordenação: Choreography (cada serviço reage a eventos, sem coordenador) e...
+- [[wiki/sources/integration-patterns-eip]] — Enterprise Integration Patterns (Hohpe & Woolf) são padrões reutilizáveis para integração assíncrona. Os 3 mais práticos: Claim Check (armazena payload grande externamente, envia referência),...
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — EDA como nome da arquitetura de fila usada para Saga Pattern, e como mecanismo de propagação write→read em CQRS, com o trade-off de latência/consistência eventual
 - [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] — eventos como opção de consistência eventual no CQRS que permite transformação livre do read model; nomeia explicitamente o bug da escrita dupla como risco
 - [[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] — exemplo didático completo (cadastro + e-mail) de por que publicar um evento nunca é atômico com a escrita no banco, com a solução via outbox e CDC/Debezium

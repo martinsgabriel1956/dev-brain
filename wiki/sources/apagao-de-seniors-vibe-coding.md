@@ -82,10 +82,10 @@ O vibe coding pode criar um apagão de devs sêniors: menos gente aprendendo fun
 
 - [[banco-de-dados]] — N+1, connection pooling, queries eficientes
 - [[async-io-memory-management]] — memory leaks, gestão de memória assíncrona
-- [[supply-chain-security]] — pinagem de versões, dependency scanning, CVEs
+- [[concepts/supply-chain-security]] — pinagem de versões, dependency scanning, CVEs
 - [[devsecops-pipeline]] — secret scanning, audit de dependências em CI
-- [[piramide-de-testes]] — onde property-based testing se encaixa na estratégia de testes
-- [[tdd]] — property-based testing como extensão do TDD
+- [[concepts/piramide-de-testes]] — onde property-based testing se encaixa na estratégia de testes
+- [[concepts/tdd]] — property-based testing como extensão do TDD
 
 ---
 

@@ -138,6 +138,7 @@ Essa fonte também **contrasta** com o fluxo `feature → dev/staging → main` 
 - [[sources/cicd-pipeline]]
 - [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]
 - [[wiki/sources/production-bugs-xunitpatterns]] — gate de CI contra Lost Test: falhar build acima de um limiar de testes ignorados, comparar contagem de testes antes/depois do check-in
+- [[wiki/sources/gitops-argocd]] — GitOps pull-based (ArgoCD/Flux) como modelo de deploy contínuo onde o cluster sincroniza do Git em vez de receber push do CI
 - [[wiki/sources/continuous-integration-xunitpatterns]] — **fonte primária dedicada**: definição de CI centrada em teste (Meszaros), critério binário de build falho, regra de prioridade stop-the-line
 - [[wiki/sources/integration-test-martin-fowler]]
 - [[wiki/sources/tipos-de-deploy]]

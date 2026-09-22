@@ -78,8 +78,8 @@ Biblioteca da Sourcegraph que encapsula padrões comuns de concorrência em Go (
 
 ## Ver também
 
-- [[go-fundamentos]] — tipos e structs
-- [[go-stdlib]] — `context`, `sync` fazem parte da stdlib
+- [[concepts/go-fundamentos]] — tipos e structs
+- [[concepts/go-stdlib]] — `context`, `sync` fazem parte da stdlib
 - [[distributed-locks]] — concorrência distribuída além de uma instância
 
 ## Key Sources

@@ -33,4 +33,4 @@ StoreKit 2 (iOS) e Google Play Billing Library 6+ (Android) para IAP e subscript
 
 ## Conceitos Abordados
 
-- [[mobile-monetizacao]] · [[mobile-seguranca]] · [[mobile-publicacao-aso]]
+- [[concepts/mobile-monetizacao]] · [[concepts/mobile-seguranca]] · [[concepts/mobile-publicacao-aso]]

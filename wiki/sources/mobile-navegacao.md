@@ -33,4 +33,4 @@ React Navigation (RN) é o padrão — Stack, Tab, Drawer compostos. Navigation 
 
 ## Conceitos Abordados
 
-- [[mobile-navegacao]] · [[mobile-deep-links]] · [[mobile-state-management-global]] · [[mobile-layouts-responsivos]]
+- [[concepts/mobile-navegacao]] · [[concepts/mobile-deep-links]] · [[concepts/mobile-state-management-global]] · [[concepts/mobile-layouts-responsivos]]

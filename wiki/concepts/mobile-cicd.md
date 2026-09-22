@@ -68,8 +68,8 @@ jobs:
 ## Ver também
 
 - [[cicd-pipeline]] — princípios gerais de pipeline
-- [[mobile-testes]] — o que testar antes do build
-- [[mobile-monitoramento]] — monitorar após rollout
+- [[concepts/mobile-testes]] — o que testar antes do build
+- [[concepts/mobile-monitoramento]] — monitorar após rollout
 
 ## Key Sources
 

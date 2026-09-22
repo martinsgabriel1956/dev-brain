@@ -4,7 +4,7 @@ title: "Kent Beck"
 aliases: ["kent beck"]
 date_created: 2026-07-09
 date_updated: 2026-09-21
-source_count: 12
+source_count: 14
 tags: [autor, tdd, extreme-programming, design-incremental, junit, xunit, yagni]
 skill: tech-mentor-testing
 status: stub

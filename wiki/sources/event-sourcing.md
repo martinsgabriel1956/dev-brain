@@ -30,11 +30,11 @@ Em vez de armazenar o estado atual, Event Sourcing persiste a sequência imutáv
 | Optimistic locking é implementado nativamente via UNIQUE(stream_id, version) no event store | Alta |
 
 ## Conceitos Abordados
-- [[event-sourcing]]
+- [[concepts/event-sourcing]]
 - [[aggregate]]
 - [[event-store]]
 - [[snapshot]]
-- [[projecao]]
+- [[concepts/projecao]]
 - [[upcaster]]
 - [[optimistic-locking]]
 - [[time-travel-query]]

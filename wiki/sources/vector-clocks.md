@@ -34,10 +34,10 @@ Vector Clocks resolvem o rastreamento de causalidade em sistemas distribuídos s
 
 ## Conceitos Abordados
 
-- [[vector-clock]]
-- [[causal-consistency]]
+- [[concepts/vector-clock]]
+- [[concepts/causal-consistency]]
 - [[happened-before]]
 - [[conflict-resolution]]
 - [[crdt]]
-- [[eventual-consistency]]
+- [[concepts/eventual-consistency]]
 - [[wiki/concepts/last-write-wins]]

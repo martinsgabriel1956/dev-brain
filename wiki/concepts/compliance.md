@@ -4,7 +4,7 @@ title: "Compliance"
 aliases: ["conformidade", "regulatory compliance", "compliance técnico"]
 date_created: 2026-05-05
 date_updated: 2026-09-01
-source_count: 5
+source_count: 7
 tags: [compliance, lgpd, gdpr, pci-dss, soc2, hipaa, iso-27001, security, audit]
 skill: tech-mentor-security
 status: stable

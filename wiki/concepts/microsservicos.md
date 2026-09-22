@@ -4,7 +4,7 @@ title: "Microsserviços"
 aliases: ["microsservicos", "microservices", "arquitetura de microsserviços", "decomposição por domínio"]
 date_created: 2026-07-24
 date_updated: 2026-09-15
-source_count: 20
+source_count: 22
 tags: [microsservicos, arquitetura, bounded-context, distributed-monolith, circuit-breaker, resiliencia]
 skill: tech-mentor-backend
 status: draft

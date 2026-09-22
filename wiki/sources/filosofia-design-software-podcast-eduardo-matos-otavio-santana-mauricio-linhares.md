@@ -3,6 +3,7 @@ type: source
 title: "Filosofia do Design de Software — bate-papo Eduardo Matos, Otávio Santana e Maurício Linhares"
 aliases: ["podcast filosofia do design", "otavio santana mauricio linhares philosophy of software design"]
 date_created: 2026-09-08
+date_updated: 2026-09-08
 source_file: /home/gabriel-martins/Documentos/dev-brain/raw/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares.md
 source_url: ""
 author: "Eduardo Matos (host), Otávio Santana e Maurício Linhares (convidados)"

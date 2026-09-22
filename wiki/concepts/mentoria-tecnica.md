@@ -3,8 +3,8 @@ type: concept
 title: "Mentoria Técnica"
 aliases: ["mentoring", "mentorar júniors", "replicar conhecimento"]
 date_created: 2026-04-22
-date_updated: 2026-08-26
-source_count: 8
+date_updated: 2026-09-22
+source_count: 10
 tags: [carreira, mentoria, liderança, júnior, cultura, crescimento]
 skill: tech-mentor-leadership
 status: stable
@@ -67,6 +67,10 @@ Falta de tempo, não má vontade, costuma ser a causa de comentários secos ou p
 
 [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] contribui um mecanismo concreto de por que mentoria multiplica produtividade, não só ensina: um júnior sem experiência, diante de 20 abordagens possíveis, precisaria testar as 20 para saber qual funciona; o sênior já testou essas 20 ao longo da carreira e sabe que só 2 valem a pena. Ao orientar "essas duas aqui, esquece o resto", o sênior corta um trabalho que levaria ordens de grandeza mais tempo — essa é a [[wiki/concepts/escalabilidade-vertical-vs-horizontal-de-pessoas|escalabilidade horizontal]] de um time: o sênior no centro, multiplicando a capacidade de 2-3 júniors ao lado, em vez de escalar sozinho até um teto. A mesma fonte reforça que feedback de mentoria precisa ser diário e específico ("essa linha vai dar problema em produção"), não elogio genérico — ver [[wiki/concepts/feedback-continuo-diario]].
 
+## Mentoria Como Pré-Requisito Para o Sênior Assumir Novo Projeto
+
+[[wiki/sources/sobre-ser-gerente-fabio-akita]] acrescenta uma obrigação sequencial ao ciclo de mentoria já documentado nesta página: antes de um sênior assumir um projeto novo, ele precisa ter criado um sucessor interno para a posição que está deixando — ver [[wiki/concepts/equipe-mista-senior-junior]] para o ciclo completo de rotação que essa regra sustenta. Sem essa etapa, mentoria vira gargalo estrutural em vez de multiplicador: o conhecimento fica preso na única pessoa, e a empresa não consegue abrir novos projetos sem recorrer a terceirização.
+
 ## Ver também
 
 - [[one-on-one]] — formato estruturado de acompanhamento individual
@@ -88,3 +92,4 @@ Falta de tempo, não má vontade, costuma ser a causa de comentários secos ou p
 - [[wiki/sources/potencial-programador-atitude-mindset]] — a aritmética do [[wiki/concepts/efeito-multiplicador]] (ajudar 5 pessoas a melhorar 20% = +100%) e a ressalva de custo de tempo do lead que para de codar
 - [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]] — mentoria tratada como produto/sistema: plataforma própria de agendamento e dashboard de jornada do mentorado, construídos para resolver dores reais de visibilidade e pagamento
 - [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] — mentoria como filtro de opções (sênior já testou 20, sabe que só 2 valem a pena) e feedback diário/específico como mecanismo central
+- [[wiki/sources/sobre-ser-gerente-fabio-akita]] — criar sucessor interno como pré-requisito para o sênior assumir novo projeto; ausência disso transforma mentoria em gargalo estrutural

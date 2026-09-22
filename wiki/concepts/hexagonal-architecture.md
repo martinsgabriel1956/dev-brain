@@ -3,8 +3,8 @@ type: concept
 title: "Hexagonal Architecture (Ports & Adapters)"
 aliases: ["arquitetura hexagonal", "ports and adapters", "ports adapters", "hexagonal"]
 date_created: 2026-05-04
-date_updated: 2026-09-01
-source_count: 9
+date_updated: 2026-09-22
+source_count: 10
 tags: [arquitetura, hexagonal, ports-adapters, acoplamento, testabilidade]
 skill: tech-mentor-backend
 status: stable
@@ -134,6 +134,7 @@ it("should throw when email already exists", async () => {
 
 ## Key Sources
 
+- [[wiki/sources/micro-kernel]] — Micro-Kernel Architecture: core system mínimo + plugins que estendem funcionalidade. Core define o contrato (interface/API) que plugins implementam. Registry gerencia plugins dinamicamente. Usado em:...
 - [[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] — distinção entre adapters contextuais (não reusáveis) e infraestrutura pura (reusável entre módulos)
 - [[sources/hexagonal-architecture]] — referência técnica aprofundada (Alistair Cockburn, driving/driven ports)
 - [[sources/ports-and-adapters-codebase-para-ia]] — antes/depois com exemplo de blog + ângulo de IA

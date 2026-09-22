@@ -3,8 +3,8 @@ type: concept
 title: "Cell-Based Architecture"
 aliases: ["arquitetura baseada em células", "scalability units", "cell architecture"]
 date_created: 2026-09-15
-date_updated: 2026-09-15
-source_count: 1
+date_updated: 2026-09-22
+source_count: 2
 tags: [cell-based-architecture, sharding, blast-radius, escalabilidade, resiliencia, fintech]
 skill: tech-mentor-backend
 status: stub
@@ -53,4 +53,5 @@ Segundo `references/architecture-resilience-patterns.md` da skill `tech-mentor-b
 
 ## Key Sources
 
+- [[wiki/sources/cell-based-architecture]] — Cell-Based Architecture particiona o sistema em células funcionalmente completas e independentes — cada célula serve um subconjunto de usuários ou tenants. Falha em uma célula não afeta as demais...
 - [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — caso real: Scalability Units do Nubank, motivação (AWS sem máquinas em 2016), roteamento por login, 20 shards no Brasil

@@ -4,7 +4,7 @@ title: "Economia da Descoberta Automatizada de Vulnerabilidades"
 aliases: ["custo por vulnerabilidade encontrada", "esteira de agentes de pentest", "triagem de falso positivo em pentest com ia"]
 date_created: 2026-08-27
 date_updated: 2026-08-27
-source_count: 1
+source_count: 2
 tags: [pentest, ai-red-teaming, economia-da-automacao, falsos-positivos, human-in-the-loop]
 skill: tech-mentor-security
 status: stub

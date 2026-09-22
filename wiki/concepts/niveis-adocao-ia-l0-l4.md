@@ -4,7 +4,7 @@ title: "Níveis de Adoção de IA — L0 a L4"
 aliases: ["L0 L1 L2 L3 L4", "escada de maturidade IA dev", "niveis ia branas nauke"]
 date_created: 2026-06-02
 date_updated: 2026-08-19
-source_count: 4
+source_count: 5
 tags: [ia-para-devs, adocao, maturidade, produtividade, spec-driven]
 skill: tech-mentor-ai
 status: stable

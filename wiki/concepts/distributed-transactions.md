@@ -3,8 +3,8 @@ type: concept
 title: "Distributed Transactions"
 aliases: ["transações distribuídas", "transações em microsserviços"]
 date_created: 2026-04-22
-date_updated: 2026-07-27
-source_count: 2
+date_updated: 2026-09-22
+source_count: 3
 tags: [sistemas-distribuidos, consistencia, transacoes, microsservicos, idempotencia]
 skill: tech-mentor-system-design
 status: stub
@@ -40,5 +40,6 @@ Transação e [[wiki/concepts/idempotencia]] resolvem problemas diferentes e com
 
 ## Key Sources
 
+- [[wiki/sources/saga-pattern]] — Saga é o padrão para transações distribuídas sem 2PC. Duas abordagens: Choreography (cada serviço reage a eventos, sem coordenador — simples mas difícil de debugar) e Orchestration (orchestrator...
 - [[sources/3pc]]
 - [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] — distinção explícita entre o que a transação resolve e o que a idempotência resolve

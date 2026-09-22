@@ -4,7 +4,7 @@ title: "Media Upload Pattern"
 aliases: ["presigned url", "upload direto s3", "media upload", "direct upload"]
 date_created: 2026-04-22
 date_updated: 2026-04-22
-source_count: 1
+source_count: 2
 tags: [system-design, s3, upload, cdn, performance, infra, valet-key, presigned-url]
 skill: tech-mentor-system-design
 status: stable

@@ -19,7 +19,7 @@ date_ingested: 2026-06-26
 
 ## TL;DR
 
-Guia de decisão e arquitetura para uso de [[redis]] como solução de [[cache]]: o que é, pontos fortes e fracos, e três padrões de arquitetura reais (Feature Flags, Flyweight/Cache-Aside e CQRS com camada de leitura).
+Guia de decisão e arquitetura para uso de [[redis]] como solução de [[concepts/cache]]: o que é, pontos fortes e fracos, e três padrões de arquitetura reais (Feature Flags, Flyweight/Cache-Aside e CQRS com camada de leitura).
 
 ## Key Claims
 
@@ -29,7 +29,7 @@ Guia de decisão e arquitetura para uso de [[redis]] como solução de [[cache]]
 | Cache serve para encurtar o caminho entre aplicação e dados — não para tudo | Fonte distingue casos de baixa volatilidade como adequados | Alta |
 | Redis roda em single CPU — o caminho para mais capacidade é clusterizar | Limitação explicitada na fonte; cada instância usa 1 núcleo | Alta |
 | [[cache-aside]] (Flyweight) popula o cache sob demanda com TTL | Exemplo 2 da fonte; coincide com padrão da referência `redis-advanced.md` | Alta |
-| [[cqrs]] pode usar Redis como camada de leitura, mantendo SQL como fonte de verdade | Exemplo 3 da fonte; batch/trigger sincroniza SQL → Redis | Alta |
+| [[concepts/cqrs]] pode usar Redis como camada de leitura, mantendo SQL como fonte de verdade | Exemplo 3 da fonte; batch/trigger sincroniza SQL → Redis | Alta |
 | Adicionar cache aumenta complexidade — é necessário pensar em sincronismo e TTL | Seção de tradeoffs da fonte; não é solução universal | Alta |
 
 ## Entidades
@@ -39,12 +39,12 @@ Guia de decisão e arquitetura para uso de [[redis]] como solução de [[cache]]
 
 ## Conceitos
 
-- [[cache]] — estratégia de manter dados em memória para resposta rápida
+- [[concepts/cache]] — estratégia de manter dados em memória para resposta rápida
 - [[cache-aside]] — padrão lazy loading: busca no cache, em miss vai ao banco
 - [[feature-flag]] — interruptores de funcionalidade; caso de uso ideal para Redis
 - [[banco-in-memory]] — modelo onde os dados vivem na RAM principal
 - [[escalabilidade-horizontal]] — adicionar máquinas ao invés de mais recursos na mesma
-- [[cqrs]] — separar modelos de escrita e leitura; Redis como read layer
+- [[concepts/cqrs]] — separar modelos de escrita e leitura; Redis como read layer
 - [[tradeoff-de-cache]] — complexidade adicionada vs ganho de performance
 - [[nosql]] — bancos sem esquema relacional, escalam horizontalmente
 

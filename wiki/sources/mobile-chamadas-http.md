@@ -32,4 +32,4 @@ TanStack Query (RN/Expo) ou Riverpod FutureProvider (Flutter) para server state 
 
 ## Conceitos Abordados
 
-- [[mobile-chamadas-http]] · [[mobile-offline-first-basico]] · [[mobile-state-management-global]] · [[cache]]
+- [[concepts/mobile-chamadas-http]] · [[concepts/mobile-offline-first-basico]] · [[concepts/mobile-state-management-global]] · [[concepts/cache]]

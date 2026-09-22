@@ -4,7 +4,7 @@ title: "Amazon Web Services"
 aliases: ["AWS", "Amazon Cloud"]
 date_created: 2026-05-06
 date_updated: 2026-08-18
-source_count: 7
+source_count: 8
 tags: ["aws", "cloud-provider", "amazon", "infraestrutura"]
 skill: tech-mentor-infra
 status: stable

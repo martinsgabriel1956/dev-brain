@@ -4,7 +4,7 @@ title: "Open/Closed Principle (OCP)"
 aliases: ["OCP", "open closed principle", "aberto fechado", "open-closed"]
 date_created: 2026-05-01
 date_updated: 2026-08-18
-source_count: 5
+source_count: 7
 tags: [solid, oop, architecture, design-patterns]
 skill: tech-mentor-backend
 status: stable

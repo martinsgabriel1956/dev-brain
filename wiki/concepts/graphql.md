@@ -3,8 +3,8 @@ type: concept
 title: "GraphQL"
 aliases: ["graphql", "graph query language"]
 date_created: 2026-07-28
-date_updated: 2026-08-18
-source_count: 2
+date_updated: 2026-09-22
+source_count: 3
 tags: [graphql, api-design, n-plus-one, dataloader, meta, frontend-backend, over-fetching, under-fetching]
 skill: tech-mentor-backend
 status: draft
@@ -67,5 +67,6 @@ Algumas ORMs replicam a ergonomia de "pedir uma estrutura aninhada numa chamada 
 
 ## Key Sources
 
+- [[wiki/sources/graphql]] — GraphQL permite que o cliente especifique exatamente os dados necessários. O problema clássico N+1 (100 orders = 100 queries de user) é resolvido com DataLoader (batching automático). Persisted...
 - [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]]
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — GraphQL situado na linha do tempo dos anos 2010, surgindo em paralelo ao [[wiki/concepts/grpc]] (Google, mesma década) mas resolvendo um problema diferente (over-fetching cliente-servidor, não performance serviço-a-serviço)

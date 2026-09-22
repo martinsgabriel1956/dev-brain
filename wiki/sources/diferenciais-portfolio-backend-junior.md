@@ -50,7 +50,7 @@ Para a primeira vaga de backend, o diferencial não é arquitetura sofisticada �
 - [[docker-portfolio]]
 - [[documentacao-api-swagger]]
 - [[error-handling-estruturado]]
-- [[observabilidade]]
+- [[concepts/observabilidade]]
 - [[sql-alem-do-basico]]
 - [[curriculo-vs-portfolio]]
 - [[comparacao-na-carreira]]

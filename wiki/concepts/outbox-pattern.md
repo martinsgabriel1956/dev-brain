@@ -4,7 +4,7 @@ title: "Outbox Pattern"
 aliases: ["transactional outbox", "outbox + cdc", "outbox"]
 date_created: 2026-04-22
 date_updated: 2026-09-14
-source_count: 5
+source_count: 6
 tags: [sistemas-distribuidos, mensageria, outbox, cdc, consistencia, idempotencia, inbox]
 skill: tech-mentor-system-design
 status: stub

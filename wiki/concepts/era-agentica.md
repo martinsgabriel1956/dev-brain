@@ -4,7 +4,7 @@ title: "Era Agêntica"
 aliases: ["agentic era", "era dos agentes", "agentes de ia em producao"]
 date_created: 2026-05-31
 date_updated: 2026-09-21
-source_count: 5
+source_count: 8
 tags: [era-agentica, agente-ia, token-economics, paradoxo-de-jevons, llmops]
 skill: tech-mentor-ai
 status: stable

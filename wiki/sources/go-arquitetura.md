@@ -33,4 +33,4 @@ Clean Architecture em Go usa `cmd/` para wiring, `internal/domain/` para entitie
 
 ## Conceitos Abordados
 
-- [[go-arquitetura]] · [[clean-architecture]] · [[hexagonal-architecture]] · [[go-ecossistema]] · [[go-producao]]
+- [[concepts/go-arquitetura]] · [[concepts/clean-architecture]] · [[concepts/hexagonal-architecture]] · [[concepts/go-ecossistema]] · [[concepts/go-producao]]

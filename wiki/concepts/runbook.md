@@ -3,8 +3,8 @@ type: concept
 title: "Runbook"
 aliases: ["runbook", "playbook", "operational runbook"]
 date_created: 2026-04-22
-date_updated: 2026-05-17
-source_count: 2
+date_updated: 2026-09-22
+source_count: 3
 tags: [sre, operações, incidentes, documentação, kubernetes]
 skill: tech-mentor-infra
 status: stable
@@ -64,9 +64,10 @@ Versionado junto ao código (mesmo repo) garante atualização junto com mudanç
 
 ## Pré-requisitos e Rollback
 
-Runbook efetivo inclui: **Pré-requisitos** (permissões, ferramentas), **Passos numerados** (comandos exatos), **Verificação de sucesso** e **Rollback** explícito. Quando a causa não está identificada, não use runbook — use [[playbook]].
+Runbook efetivo inclui: **Pré-requisitos** (permissões, ferramentas), **Passos numerados** (comandos exatos), **Verificação de sucesso** e **Rollback** explícito. Quando a causa não está identificada, não use runbook — use [[concepts/playbook]].
 
 ## Key Sources
 
+- [[wiki/sources/incident-response]] — Incident Response (NIST SP 800-61): 4 fases — Preparação, Detecção & Análise, Contenção/Erradicação/Recuperação, Lições Aprendidas. Preparação: playbooks por tipo de incidente prontos ANTES do...
 - [[sources/sre-error-budget-incidents]]
 - [[wiki/sources/runbook]]

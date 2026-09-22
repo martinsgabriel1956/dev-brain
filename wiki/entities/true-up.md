@@ -4,7 +4,7 @@ title: "True Up"
 aliases: ["trueup", "true up jobs"]
 date_created: 2026-09-14
 date_updated: 2026-09-14
-source_count: 1
+source_count: 2
 tags: [ferramenta, mercado-de-trabalho, dados, agregador-de-vagas]
 skill: tech-mentor-leadership
 status: stub

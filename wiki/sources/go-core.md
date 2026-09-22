@@ -44,7 +44,7 @@ Go: linguagem para sistemas distribuídos com concorrência nativa via CSP (Comm
 - [[concepts/interfaces-go]]
 - [[concepts/error-handling-go]]
 - [[concepts/csp]]
-- [[concepts/go-concurrency]]
+- [[concepts/go-concorrencia]]
 
 ## Open Questions
 

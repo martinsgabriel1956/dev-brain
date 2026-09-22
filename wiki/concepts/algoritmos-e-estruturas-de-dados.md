@@ -4,7 +4,7 @@ title: "Algoritmos e Estruturas de Dados"
 aliases: ["DSA", "data structures", "estruturas de dados", "algoritmos"]
 date_created: 2026-05-16
 date_updated: 2026-09-18
-source_count: 21
+source_count: 22
 tags: [fundamentos, cs-fundamentals, algoritmos, programacao]
 skill: tech-mentor-leadership
 status: stable

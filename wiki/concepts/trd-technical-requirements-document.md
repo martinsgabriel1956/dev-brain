@@ -32,7 +32,7 @@ Desnecessário quando: feature isolada em um serviço, bug fix sem mudança de c
 
 - [[rfc-request-for-comments]] — proposta aberta buscando feedback (antes da decisão)
 - [[adr-architecture-decision-record]] — registro histórico de decisão já tomada (após a decisão)
-- [[trd-technical-requirements-document]] — especificação completa para implementação (antes do código)
+- [[concepts/trd-technical-requirements-document]] — especificação completa para implementação (antes do código)
 
 ## Key Sources
 

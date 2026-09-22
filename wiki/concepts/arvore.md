@@ -63,7 +63,7 @@ Entender árvores te ajuda a entender por que `SELECT` em coluna sem índice var
 
 - [[hashmap]] — alternativa para busca exata O(1); árvore é melhor para intervalos e ordenação
 - [[array]] — alternativa para dados planos com acesso sequencial
-- [[event-sourcing]] — árvores de Merkle são usadas para verificar integridade de logs de eventos
+- [[concepts/event-sourcing]] — árvores de Merkle são usadas para verificar integridade de logs de eventos
 - [[wiki/concepts/algoritmos-de-grafo]] — árvore é um caso particular de grafo (acíclico e conectado); DFS/BFS percorrem ambos da mesma forma
 - [[wiki/concepts/priority-queue]] — estrutura auxiliar usada para construir a árvore de Huffman (heap ordenado por frequência, não é ele mesmo a árvore final)
 

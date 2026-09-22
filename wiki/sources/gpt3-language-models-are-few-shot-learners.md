@@ -49,7 +49,7 @@ Fine-tuning exige datasets rotulados por tarefa e cria risco de overfitting a ar
 
 - [[foundation-model]] — GPT-3 é um dos primeiros exemplos do termo
 - [[autoregressive-language-model]] — arquitetura base do GPT-3
-- [[fine-tuning]] — abordagem que GPT-3 busca substituir / reduzir dependência
+- [[concepts/fine-tuning]] — abordagem que GPT-3 busca substituir / reduzir dependência
 
 ## Questões em Aberto
 

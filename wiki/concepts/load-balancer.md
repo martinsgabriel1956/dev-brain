@@ -3,8 +3,8 @@ type: concept
 title: "Load Balancer"
 aliases: ["lb", "load balancing", "l4", "l7", "round robin"]
 date_created: 2026-04-23
-date_updated: 2026-08-24
-source_count: 20
+date_updated: 2026-09-22
+source_count: 21
 tags: [load-balancer, l4, l7, round-robin, health-check, alta-disponibilidade, infra, nginx]
 skill: tech-mentor-infra
 status: stub
@@ -82,6 +82,7 @@ Nem todo [[wiki/concepts/reverse-proxy]] é um load balancer: um LB decide **ent
 
 ## Key Sources
 
+- [[wiki/sources/fase-1-fundamentos-infraestrutura]] — Fundamentos de infraestrutura: DNS (TTL, tipos de record), Load Balancer (L4 vs L7, algoritmos), CDN (edge cache, origem), Cache (hit/miss, eviction, invalidação), Banco de Dados (ACID, replicação,...
 - [[sources/load-balancer]]
 - [[sources/clusters]]
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]

@@ -12,7 +12,7 @@ status: stub
 
 # Composite Pattern
 
-Padrão estrutural [[wiki/concepts/gang-of-four|GoF]] que compõe objetos com a mesma interface em estruturas maiores, permitindo tratar um objeto individual e uma composição de objetos de forma uniforme — quem consome não precisa saber se está lidando com um único elemento ou com vários agrupados.
+Padrão estrutural [[wiki/entities/gang-of-four|GoF]] que compõe objetos com a mesma interface em estruturas maiores, permitindo tratar um objeto individual e uma composição de objetos de forma uniforme — quem consome não precisa saber se está lidando com um único elemento ou com vários agrupados.
 
 ## Exemplo prático: composição de validadores de formulário
 

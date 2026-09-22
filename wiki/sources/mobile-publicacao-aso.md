@@ -33,4 +33,4 @@ ASO (App Store Optimization) = SEO para stores. Título e subtítulo têm mais p
 
 ## Conceitos Abordados
 
-- [[mobile-publicacao-aso]] · [[mobile-monetizacao]] · [[mobile-cicd]] · [[mobile-monitoramento]]
+- [[concepts/mobile-publicacao-aso]] · [[concepts/mobile-monetizacao]] · [[concepts/mobile-cicd]] · [[concepts/mobile-monitoramento]]

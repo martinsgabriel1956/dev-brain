@@ -4,7 +4,7 @@ title: "useEffect"
 aliases: ["use effect", "efeitos React", "side effects React"]
 date_created: 2026-04-22
 date_updated: 2026-08-03
-source_count: 3
+source_count: 4
 tags: [react, hooks, efeitos, side-effects, useEffect]
 skill: tech-mentor-frontend
 status: stable

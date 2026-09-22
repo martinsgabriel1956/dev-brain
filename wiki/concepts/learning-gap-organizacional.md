@@ -4,7 +4,7 @@ title: "Learning Gap Organizacional"
 aliases: ["learning gap", "gap de adoção ia", "maturidade organizacional ia"]
 date_created: 2026-05-31
 date_updated: 2026-05-31
-source_count: 1
+source_count: 2
 tags: [learning-gap-organizacional, roi-de-ia, organizacoes, adocao-ia, llmops]
 skill: tech-mentor-ai
 status: stable

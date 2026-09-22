@@ -3,8 +3,8 @@ type: concept
 title: "TDD — Test-Driven Development"
 aliases: ["test driven development", "red green refactor", "desenvolvimento guiado por testes"]
 date_created: 2026-04-22
-date_updated: 2026-09-21
-source_count: 26
+date_updated: 2026-09-22
+source_count: 35
 tags: [testes, tdd, design, red-green-refactor, qualidade, dora, emergent-design]
 skill: tech-mentor-testing
 status: stable
@@ -20,8 +20,8 @@ Prática onde o **teste é escrito antes do código de produção**. O benefíci
 RED → GREEN → REFACTOR → RED → GREEN → REFACTOR → ...
 ```
 
-- **RED**: escreva um teste que falha — o comportamento ainda não existe
-- **GREEN**: escreva o *mínimo* de código para o teste passar — sem over-engineering
+- **RED**: escreva um teste que falha — o comportamento ainda não existe (formalizado como [[wiki/sources/test-failure-xunitpatterns|test failure]]: resultado real diferente do esperado)
+- **GREEN**: escreva o *mínimo* de código para o teste passar — sem over-engineering (formalizado como [[wiki/sources/test-success-xunitpatterns|test success]]: todos os resultados reais batem com os esperados)
 - **REFACTOR**: melhore sem quebrar os testes
 
 Sem o Refactor, TDD é apenas "testes primeiro" — acumula débito técnico com os testes.
@@ -76,9 +76,9 @@ Antes do TDD ser formalizado, [[wiki/entities/kent-beck]] já construía framewo
 
 ## Ver também
 
-- [[bdd]] — extensão do TDD para linguagem de negócio
-- [[test-doubles]] — como isolar dependências no ciclo TDD (taxonomia e vocabulário SUT/DOC na fonte primária [[wiki/sources/test-double-xunitpatterns-meszaros]])
-- [[piramide-de-testes]] — onde TDD vive na estratégia de testes
+- [[concepts/bdd]] — extensão do TDD para linguagem de negócio
+- [[concepts/test-doubles]] — como isolar dependências no ciclo TDD (taxonomia e vocabulário SUT/DOC na fonte primária [[wiki/sources/test-double-xunitpatterns-meszaros]])
+- [[concepts/piramide-de-testes]] — onde TDD vive na estratégia de testes
 - [[testar-proprio-codigo]] — hábito relacionado
 
 ## TDD com IA
@@ -135,6 +135,10 @@ Quando a interface, o input e o output já são conhecidos por uma especificaç�
 
 [[wiki/sources/need-driven-development-xunitpatterns]] nomeia, com fonte primária isolada, o processo que a seção "As duas escolas" acima já descrevia informalmente para a escola London: **need-driven development**. É a mesma prática — código escrito de fora para dentro, todo código dependente substituído por [[wiki/concepts/test-doubles|Mock Objects]] que verificam as [[wiki/concepts/indirect-input-output|indirect outputs]] esperadas do código sendo escrito —, agora com definição oficial do catálogo de Meszaros em vez de apenas inferida por contraste com Detroit School. A fonte acrescenta uma justificativa explícita para o processo: garantir que as responsabilidades de cada unidade sejam bem compreendidas *antes* de serem codificadas, evidenciadas tanto por unit tests quanto por exemplos de uso real. A camada mais externa do software fecha o processo usando [[wiki/concepts/storytest-driven-development]], com exemplos de uso por clientes reais somados aos [[wiki/sources/customer-test-xunitpatterns|customer tests]] — citando **Service Facade** [CJ2EEP] como exemplo concreto de interface acionada por um cliente real.
 
+## TDD Verdadeiro como Solução Nomeada para Frequent Debugging
+
+[[wiki/sources/frequent-debugging-xunitpatterns]] cita explicitamente **test-driven development verdadeiro** (não apenas test-first) como "a melhor forma de evitar as circunstâncias que levam a *Frequent Debugging*" — o smell de precisar de depurador manual ou prints para entender a maioria das falhas de teste, sintoma de falta de **Defect Localization**. A fonte recomenda combinar TDD com [[wiki/concepts/storytest-driven-development|storytest-driven development]] para cobrir também a camada de component test, não só unit test — ver [[wiki/concepts/frequent-debugging]].
+
 ## RSpec e a nova geração de membros do xUnit
 
 [[wiki/sources/rspec-xunitpatterns]] enquadra o [[wiki/entities/rspec|RSpec]] como um dos primeiros de uma nova geração de membros da família xUnit criados especificamente para tornar os testes de TDD mais úteis como especificação ("Tests as Specification"): troca todo o vocabulário de "teste" por vocabulário de especificação — fixture→[[wiki/sources/test-context-xunitpatterns|context]], Test Method→specify, assert→should. [[wiki/entities/jbehave|JBehave]] é citado como o equivalente Java. Ver [[wiki/concepts/bdd]] para a hipótese (não confirmada por esta fonte) de que esse vocabulário antecede o de BDD.
@@ -160,6 +164,9 @@ Ambos insistem numa distinção que DHH, na leitura deles, mistura: **design de 
 - [[wiki/sources/3-pilares-testes-automatizados-produtividade]] — decomposição de tarefa em entrada/processamento/saída como passo pré-RED; setup de live reload/debug/testes integrados via `node --test` + `--inspect` + `launch.json`
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — importar a suite de testes de uma implementação de referência (stdlib de Go) como oráculo de corretude
 - [[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] — expectativa que quebra expõe bug de autorização real; teste como rede de segurança contra regressão futura não relacionada
+- [[wiki/sources/test-failure-xunitpatterns]] — verbete de glossário do xUnitPatterns.com (Meszaros) que formaliza, com fonte primária, o próprio termo por trás da fase RED: resultado real diferente do esperado
+- [[wiki/sources/test-success-xunitpatterns]] — par simétrico: formaliza o próprio termo por trás da fase GREEN — todos os resultados reais batem com os esperados
+- [[wiki/sources/test-error-xunitpatterns]] — terceiro termo do trio: não mapeia limpo para RED nem GREEN — é a interrupção do mecanismo de execução que impede o ciclo de sequer chegar a um veredito
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] — liga a regra "não misturar feature e refatoração" de Fowler ao ciclo RED-GREEN-REFACTOR
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — testes escritos antes do código como condição de parada objetiva de um loop agêntico goal-based
 - [[wiki/sources/depended-on-component-doc-xunitpatterns]] — fonte primária isolada do termo DOC, o componente que se isola ao escrever testes unitários no ciclo TDD
@@ -177,3 +184,5 @@ Ambos insistem numa distinção que DHH, na leitura deles, mistura: **design de 
 - [[wiki/sources/storytest-driven-development-xunitpatterns]] — fonte primária isolada do termo storytest-driven development (STDD): variação do TDD focada em customer tests, cunhada por Joshua Kerievsky (Industrial XP)
 - [[wiki/sources/rspec-xunitpatterns]] — fonte primária dedicada ao framework RSpec: nova geração de membros do xUnit para "Tests as Specification", com mapeamento completo de vocabulário (fixture/context, Test Method/specify, assert/should) e JBehave como equivalente Java
 - [[wiki/sources/need-driven-development-xunitpatterns]] — fonte primária isolada do termo need-driven development: nomeia formalmente o processo outside-in/London School (código de fora para dentro, todo código dependente substituído por Mock Object verificando indirect outputs), até então só descrito informalmente na seção "As duas escolas"
+- [[wiki/sources/frequent-debugging-xunitpatterns]] — TDD verdadeiro (combinado com storytest-driven development) citado como solução central para o test smell Frequent Debugging, causado por falta de Defect Localization
+- [[wiki/sources/test-driven-bug-fixing-xunitpatterns]] — fonte primária isolada da extensão do TDD para correção de bugs: escrever o unit test que reproduz o defeito antes de depurar e corrigir

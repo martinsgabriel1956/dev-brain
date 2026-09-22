@@ -45,9 +45,9 @@ Sempre medir em dispositivo médio-baixo (Motorola G series, Samsung A03). Flags
 
 ## Ver também
 
-- [[mobile-baseline-profiles]] — reduzir cold start no Android
-- [[mobile-profiling]] — identificar o que está lento
-- [[mobile-monitoramento]] — monitorar em produção
+- [[concepts/mobile-baseline-profiles]] — reduzir cold start no Android
+- [[concepts/mobile-profiling]] — identificar o que está lento
+- [[concepts/mobile-monitoramento]] — monitorar em produção
 
 ## Key Sources
 

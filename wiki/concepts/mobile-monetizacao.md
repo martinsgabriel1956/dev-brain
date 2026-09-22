@@ -68,8 +68,8 @@ Nunca confiar no cliente para liberar acesso — adulterável com Frida/jailbrea
 
 ## Ver também
 
-- [[mobile-seguranca]] — receipt validation
-- [[mobile-publicacao-aso]] — configurar produtos na store
+- [[concepts/mobile-seguranca]] — receipt validation
+- [[concepts/mobile-publicacao-aso]] — configurar produtos na store
 
 ## Key Sources
 

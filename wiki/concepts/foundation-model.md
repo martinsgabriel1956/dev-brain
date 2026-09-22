@@ -14,7 +14,7 @@ status: draft
 
 ## Definição
 
-Modelo treinado em larga escala em dados não estruturados (geralmente web-scale) que serve como base para downstream tasks — seja via [[fine-tuning]], [[in-context-learning]] ou prompting direto.
+Modelo treinado em larga escala em dados não estruturados (geralmente web-scale) que serve como base para downstream tasks — seja via [[concepts/fine-tuning]], [[in-context-learning]] ou prompting direto.
 
 O termo foi cunhado por Bommasani et al. (2021) em "On the Opportunities and Risks of Foundation Models" (Stanford), mas GPT-3 ([[wiki/sources/gpt3-language-models-are-few-shot-learners]]) é um dos primeiros exemplos paradigmáticos.
 

@@ -3,8 +3,8 @@ type: concept
 title: "Blast Radius"
 aliases: ["raio de explosão", "failure blast radius"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-09-22
+source_count: 2
 tags: [resiliencia, blast-radius, system-design, isolamento]
 skill: tech-mentor-system-design
 status: stub
@@ -32,4 +32,5 @@ Serviço D (crítico): quer 5 threads → não tem → falha
 
 ## Key Sources
 
+- [[wiki/sources/cell-based-architecture]] — Cell-Based Architecture particiona o sistema em células funcionalmente completas e independentes — cada célula serve um subconjunto de usuários ou tenants. Falha em uma célula não afeta as demais...
 - [[sources/bulkhead]]

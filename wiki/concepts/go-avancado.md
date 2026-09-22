@@ -84,9 +84,9 @@ Pausas < 1ms com configurações padrão para a maioria dos workloads.
 
 ## Ver também
 
-- [[go-fundamentos]] — base de tipos e structs
-- [[go-concorrencia]] — sync/atomic em contexto de concorrência
-- [[go-producao]] — pprof para profiling de GC em produção
+- [[concepts/go-fundamentos]] — base de tipos e structs
+- [[concepts/go-concorrencia]] — sync/atomic em contexto de concorrência
+- [[concepts/go-producao]] — pprof para profiling de GC em produção
 
 ## Key Sources
 

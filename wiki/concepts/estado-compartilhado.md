@@ -67,7 +67,7 @@ Estado compartilhado via `useState` que passa por props cria prop drilling e aco
 - [[imutabilidade]] — solução estrutural para o problema de estado compartilhado
 - [[efeito-colateral]] — mutar estado global é um efeito colateral; isolá-lo elimina o efeito
 - [[acoplamento]] — estado compartilhado cria acoplamento implícito entre funções
-- [[idempotencia]] — funções idempotentes não dependem de estado externo mutável
+- [[concepts/idempotencia]] — funções idempotentes não dependem de estado externo mutável
 
 ## Key sources
 

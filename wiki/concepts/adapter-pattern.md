@@ -4,7 +4,7 @@ title: "Adapter Pattern"
 aliases: ["padrão adapter", "design pattern adapter", "adaptador"]
 date_created: 2026-05-01
 date_updated: 2026-09-21
-source_count: 9
+source_count: 10
 tags: [design-patterns, structural, adapter, oop, integracao]
 skill: tech-mentor-backend
 status: stable

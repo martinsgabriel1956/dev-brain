@@ -4,7 +4,7 @@ title: "Loop Engineering"
 aliases: ["loop engineering", "engenharia de loop", "loop de harness", "loop fixo", "loop criador"]
 date_created: 2026-07-10
 date_updated: 2026-09-21
-source_count: 11
+source_count: 10
 tags: [loop-engineering, harness, agente, automacao, planner-executor-critic, loop-fixo, loop-criador, spec-driven, ralph-loop, anthropic, graph-engineering, loop-deterministico, loop-agentico, judge-pattern, orquestracao-de-modelos, langchain, erro-composto, quality-gate, agent-containment]
 skill: tech-mentor-ai
 status: stable

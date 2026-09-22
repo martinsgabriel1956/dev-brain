@@ -14,7 +14,7 @@ status: stable
 
 Documento que descreve **o que o produto faz** — funcionalidades, comportamento esperado, personas, casos de uso. Não descreve como o sistema implementa.
 
-Posição na cadeia: BRD → **PRD** → [[trd-technical-requirements-document]] → Implementação.
+Posição na cadeia: BRD → **PRD** → [[concepts/trd-technical-requirements-document]] → Implementação.
 
 ## PRD no Contexto de IA (Spec Driven Development)
 

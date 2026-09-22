@@ -4,7 +4,7 @@ title: "Atrofia Cognitiva"
 aliases: ["atrofiação cognitiva", "cognitive atrophy", "cognitive offloading", "atrofia cognitiva", "skill decay por ia"]
 date_created: 2026-08-10
 date_updated: 2026-09-15
-source_count: 3
+source_count: 4
 tags: [atrofia-cognitiva, aprendizado, ia-e-programacao, dependencia-ia, pensamento-critico, risco]
 skill: tech-mentor-leadership
 status: draft

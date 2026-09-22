@@ -33,4 +33,4 @@ Inferência local: Core ML (iOS, Neural Engine) e TFLite/LiteRT (Android, NNAPI/
 
 ## Conceitos Abordados
 
-- [[mobile-on-device-ai]] · [[mobile-metricas-criticas]] · [[mobile-profiling]] · [[mobile-cross-platform-decision]]
+- [[concepts/mobile-on-device-ai]] · [[concepts/mobile-metricas-criticas]] · [[concepts/mobile-profiling]] · [[concepts/mobile-cross-platform-decision]]

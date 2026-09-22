@@ -4,7 +4,7 @@ title: "Prompt Engineering"
 aliases: ["engenharia de prompt", "prompt design"]
 date_created: 2026-05-17
 date_updated: 2026-09-21
-source_count: 14
+source_count: 15
 tags: [prompt-engineering, llm, few-shot, codex, software-3]
 skill: tech-mentor-ai
 status: stable
@@ -70,7 +70,7 @@ Não há estrutura obrigatória — os modelos são flexíveis. Itere e meça.
 - [[completion]] — o output gerado pelo modelo
 - [[context-window]] — limite de tamanho do prompt
 - [[hyperparameters-llm]] — controles de temperatura, stop sequence etc.
-- [[fine-tuning]] — alternativa mais custosa
+- [[concepts/fine-tuning]] — alternativa mais custosa
 - [[wiki/concepts/prompt-caching]] — estruturar o prompt (estático primeiro, variável por último) não é só questão de qualidade de resposta, também é o que determina se a chamada aciona ou invalida o cache do provider
 
 ## Formato de Estrutura: Markdown, Tags ou HTML?

@@ -39,7 +39,7 @@ Adicionar recursos na camada errada não resolve — e ainda desperdiça dinheir
 
 Na maioria dos sistemas web, a camada de aplicação escala facilmente (é [[stateless]], horizontal). O banco de dados é stateful por natureza e concentra toda a contention. Por isso:
 
-1. **Cache primeiro** — [[cache]] reduz hits ao banco sem complexidade de escala
+1. **Cache primeiro** — [[concepts/cache]] reduz hits ao banco sem complexidade de escala
 2. **Índices** — a diferença entre 1s e 1ms em uma query
 3. **Read replicas** — distribui carga de leitura ([[replicacao-de-banco]])
 4. **Sharding** — último recurso quando writes também precisam escalar ([[sharding]])
@@ -60,7 +60,7 @@ Na maioria dos sistemas web, a camada de aplicação escala facilmente (é [[sta
 ## Relação com outros conceitos
 
 - [[big-o]] — complexidade algorítmica ruim é gargalo de código puro
-- [[cache]] — a ferramenta mais eficiente para aliviar gargalo de banco
+- [[concepts/cache]] — a ferramenta mais eficiente para aliviar gargalo de banco
 - [[sharding]] e [[replicacao-de-banco]] — soluções para gargalo no banco de dados
 - [[escalabilidade-horizontal]] — solução para gargalo na camada de aplicação
 - [[auto-scaling]] — automatiza a resposta ao gargalo detectado por métricas

@@ -24,7 +24,7 @@ O diferencial numa primeira vaga de backend não é arquitetura sofisticada — 
 | [[sql-alem-do-basico]] | JOINs, agregações, subqueries — sai do CRUD e mostra domínio real |
 | [[documentacao-api-swagger]] | 1 em 10 devs se preocupa; diferencial imediato e visível |
 | [[error-handling-estruturado]] | Classes de erro + handler global = profissionalismo no código |
-| [[observabilidade]] | Jaeger/Sentry no Docker Compose; mostra visibilidade sobre a aplicação |
+| [[concepts/observabilidade]] | Jaeger/Sentry no Docker Compose; mostra visibilidade sobre a aplicação |
 
 ## O que NÃO focar na primeira vaga
 
@@ -49,7 +49,7 @@ Para tecnologias com menos vagas júnior formais (ex.: Go), a mesma lógica de p
 - [[documentacao-api-swagger]]
 - [[error-handling-estruturado]]
 - [[sql-alem-do-basico]]
-- [[observabilidade]]
+- [[concepts/observabilidade]]
 - [[curriculo-vs-portfolio]]
 - [[wiki/concepts/ponte-fullstack-para-especializacao]]
 

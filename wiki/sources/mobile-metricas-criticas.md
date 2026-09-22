@@ -33,4 +33,4 @@ Métricas obrigatórias: Cold Start < 2s, Warm Start < 1s, FPS ≥ 60 (90/120 em
 
 ## Conceitos Abordados
 
-- [[mobile-metricas-criticas]] · [[mobile-profiling]] · [[mobile-monitoramento]] · [[mobile-baseline-profiles]]
+- [[concepts/mobile-metricas-criticas]] · [[concepts/mobile-profiling]] · [[concepts/mobile-monitoramento]] · [[concepts/mobile-baseline-profiles]]

@@ -4,7 +4,7 @@ title: "Arquiteto de Soluções"
 aliases: ["arquiteto de solucoes", "engenheiro de solucoes", "solutions architect", "technical solution architect"]
 date_created: 2026-08-13
 date_updated: 2026-09-14
-source_count: 2
+source_count: 3
 tags: [carreira, arquiteto-de-solucoes, solutions-architect, t-shaped, ia, qa]
 skill: tech-mentor-leadership
 status: stub

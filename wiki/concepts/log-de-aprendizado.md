@@ -4,7 +4,7 @@ title: "Log de Aprendizado"
 aliases: ["learning log", "diário de aprendizado", "registro de evolução"]
 date_created: 2026-04-22
 date_updated: 2026-06-26
-source_count: 2
+source_count: 3
 tags: [carreira, aprendizado, mentalidade, progresso, iniciante]
 skill: tech-mentor-leadership
 status: stable

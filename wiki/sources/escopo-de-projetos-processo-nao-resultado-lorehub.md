@@ -3,7 +3,7 @@ type: source
 title: "Escopo Bem Definido em Projetos: o Valor Está no Processo, Não no Resultado"
 aliases: ["projetos não precisam ser revolucionários", "engineering stories", "medo de aplicar para estágio"]
 date_created: 2026-09-01
-date_updated: 2026-09-01
+date_updated: 2026-09-22
 source_count: 0
 tags: [projetos, escopo, aprendizado, sindrome-do-impostor, carreira, estagio, user-stories]
 skill: tech-mentor-leadership
@@ -33,6 +33,11 @@ date_ingested: 2026-09-01
 | User stories ("como usuário, quero [ação] para [benefício]") são a ferramenta recomendada para descobrir os requisitos do checklist | Exemplo: "como usuário, eu quero consultar o clima atual" / "como usuário, eu quero visualizar os dados" |
 | "Engineering stories" ("como dev, quero...") cobrem requisitos que o usuário não vê e não valoriza diretamente | Exemplos dados: "como dev, eu quero testes unitários" / "como dev, eu quero evitar código duplicado" |
 | A sensação de nunca estar completamente preparado para aplicar a uma vaga (de estágio) é permanente, não um estágio a ser superado antes de agir | Resposta direta à pergunta do espectador: "você provavelmente nunca vai se sentir completamente preparado [...] esperar se sentir pronto pode fazer você esperar para sempre" |
+| Menção a patrocinador: [[wiki/entities/discloud]] como opção para colocar projetos pessoais no ar de graça | Autor recomenda a plataforma para quem já tem projeto em andamento e quer publicá-lo sem começar pagando hospedagem — plano free, conecta ao GitHub, auto deploy a cada commit |
+
+## Entidades
+
+- [[wiki/entities/discloud]] — plataforma de hospedagem/deploy citada como recomendação prática (menção de patrocínio)
 
 ## Conceitos
 

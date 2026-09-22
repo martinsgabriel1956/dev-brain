@@ -4,7 +4,7 @@ title: "Cache Layer"
 aliases: ["camada de cache", "caching"]
 date_created: 2026-05-01
 date_updated: 2026-08-10
-source_count: 3
+source_count: 2
 tags: [cache, performance, infrastructure, proxy]
 skill: tech-mentor-backend
 status: stub

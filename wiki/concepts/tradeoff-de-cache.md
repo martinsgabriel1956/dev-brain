@@ -14,7 +14,7 @@ status: stable
 
 ## TL;DR
 
-Adicionar [[cache]] sempre aumenta a complexidade do sistema. O ganho de performance precisa superar o custo de manter mais uma tecnologia, uma estratégia de sincronismo e um vetor de inconsistência.
+Adicionar [[concepts/cache]] sempre aumenta a complexidade do sistema. O ganho de performance precisa superar o custo de manter mais uma tecnologia, uma estratégia de sincronismo e um vetor de inconsistência.
 
 ## O Que Você Ganha
 

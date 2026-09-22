@@ -32,4 +32,4 @@ Animações performáticas rodam na UI thread — nunca no JS thread (RN) ou na 
 
 ## Conceitos Abordados
 
-- [[mobile-animacoes-performaticas]] · [[mobile-performance-listas]] · [[mobile-profiling]]
+- [[concepts/mobile-animacoes-performaticas]] · [[concepts/mobile-performance-listas]] · [[concepts/mobile-profiling]]

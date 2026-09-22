@@ -4,7 +4,7 @@ title: "Singleton Pattern"
 aliases: ["singleton"]
 date_created: 2026-05-05
 date_updated: 2026-08-06
-source_count: 5
+source_count: 6
 tags: [design-patterns, creational, singleton, gof]
 skill: tech-mentor-backend
 status: stable

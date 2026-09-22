@@ -3,8 +3,8 @@ type: concept
 title: "Snowflake ID"
 aliases: ["snowflake", "distributed id generation", "geração de id distribuído"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-09-22
+source_count: 2
 tags: [system-design, id-generation, distributed-systems, snowflake, base62]
 skill: tech-mentor-system-design
 status: stable
@@ -54,4 +54,5 @@ Atribuição de `worker_id` — feita uma vez no startup via ZooKeeper, etcd, ou
 
 ## Key Sources
 
+- [[wiki/sources/case-twitter-feed]] — O feed do Twitter é o caso clássico de **fan-out de escrita em escala extrema**. A solução é híbrida: fan-out on write para usuários normais (pré-computa timelines no Redis) e fan-out on read para...
 - [[sources/case-url-shortener]]

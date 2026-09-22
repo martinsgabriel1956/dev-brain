@@ -33,4 +33,4 @@ FCM (Firebase Cloud Messaging) para Android e iOS (via APNs bridge). Token FCM �
 
 ## Conceitos Abordados
 
-- [[mobile-push-notifications]] · [[mobile-deep-links]] · [[mobile-navegacao]] · [[mobile-permissoes]]
+- [[concepts/mobile-push-notifications]] · [[concepts/mobile-deep-links]] · [[concepts/mobile-navegacao]] · [[concepts/mobile-permissoes]]

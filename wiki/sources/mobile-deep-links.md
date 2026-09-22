@@ -32,4 +32,4 @@ Universal Links (iOS) e App Links (Android) usam HTTPS — abrem o app se instal
 
 ## Conceitos Abordados
 
-- [[mobile-deep-links]] · [[mobile-navegacao]] · [[mobile-push-notifications]] · [[mobile-seguranca]]
+- [[concepts/mobile-deep-links]] · [[concepts/mobile-navegacao]] · [[concepts/mobile-push-notifications]] · [[concepts/mobile-seguranca]]

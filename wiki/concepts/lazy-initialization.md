@@ -4,7 +4,7 @@ title: "Lazy Initialization"
 aliases: ["inicialização lazy", "lazy loading", "virtual proxy"]
 date_created: 2026-05-01
 date_updated: 2026-06-05
-source_count: 2
+source_count: 1
 tags: [performance, design-patterns, proxy]
 skill: tech-mentor-backend
 status: stub

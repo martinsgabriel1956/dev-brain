@@ -32,4 +32,4 @@ TDD é escrever o teste antes do código. O benefício central não é cobertura
 
 ## Conceitos Abordados
 
-- [[tdd]] · [[test-doubles]] · [[bdd]] · [[piramide-de-testes]]
+- [[concepts/tdd]] · [[concepts/test-doubles]] · [[concepts/bdd]] · [[concepts/piramide-de-testes]]

@@ -14,7 +14,7 @@ status: stable
 
 ## Definição
 
-Técnica de [[prompt-engineering]] que induz o modelo a externalizar o raciocínio intermediário antes de produzir a resposta final. Formalizada em [[wiki/sources/chain-of-thought-prompting]] (Wei et al., 2022), é uma [[emergent-ability]] de modelos com ~100B+ parâmetros: não beneficia modelos menores e pode até piorar a performance deles.
+Técnica de [[concepts/prompt-engineering]] que induz o modelo a externalizar o raciocínio intermediário antes de produzir a resposta final. Formalizada em [[wiki/sources/chain-of-thought-prompting]] (Wei et al., 2022), é uma [[emergent-ability]] de modelos com ~100B+ parâmetros: não beneficia modelos menores e pode até piorar a performance deles.
 
 ## Como Ativar
 

@@ -3,8 +3,8 @@ type: entity
 title: "Fábio Akita"
 aliases: ["Akita", "Akita On Rails"]
 date_created: 2026-05-16
-date_updated: 2026-09-18
-source_count: 10
+date_updated: 2026-09-22
+source_count: 12
 tags: [pessoa, programador, youtuber, brasil]
 skill: tech-mentor-leadership
 status: stable
@@ -70,6 +70,10 @@ Em [[wiki/sources/agilidade-manifesto-agil-fabio-akita]], segundo episódio de u
 
 Em [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]], vídeo comemorativo dos 300 mil inscritos, apresenta sua "teoria geral" sobre aprendizado, gestão de projetos e administração de empresas: usa a quebra histórica do [[wiki/concepts/determinismo-newtoniano-e-seus-limites|determinismo newtoniano]] (relatividade, física quântica, teoria do caos) como metáfora para argumentar que não existe receita determinista de sucesso além de escalas curtas de tempo. Reconstrói a origem do movimento de qualidade dos anos 80 ([[wiki/entities/edwards-deming|Deming]]/PDCA, [[wiki/entities/eliyahu-goldratt|Goldratt]]/Teoria das Restrições, Six Sigma) para defender que [[wiki/concepts/tentativa-e-erro-como-metodo-cientifico|PDCA, DMAIC, Kaizen, Scrum e o método científico são o mesmo ciclo]]. Introduz [[wiki/concepts/beira-do-caos|beira do caos]] como hipótese pessoal sobre o que significa "balanço": não ordem estática, mas oscilação disciplinada entre ordem e caos controlado. Aplica isso a planejamento de curto prazo, [[wiki/concepts/mvp|MVP]] e [[wiki/concepts/jogar-codigo-fora-como-pratica|escrever e jogar código fora]] como disciplina de programação, fechando com [[wiki/concepts/gestao-de-riscos-e-controle-ilusorio|gestão de risco]] (repetindo a analogia do seguro já registrada em fonte anterior) e a tese de que medo da opinião alheia, não falta de método, é a raiz da inação.
 
+## Teoria Consolidada de Gestão de Projetos e Pessoas
+
+Em [[wiki/sources/sobre-ser-gerente-fabio-akita]], apresenta sua visão mais ampla e consolidada sobre o papel de gerente. Rejeita certificações formais (PMP, MBA) como garantia de competência — descreve tê-las tratado como "colecionar papel" — e define gestão, na essência, como a capacidade de tomar decisões com informação incompleta. Reformula a tríade clássica de projeto (escopo-tempo-custo) acrescentando uma quarta variável invisível, qualidade, que absorve a pressão quando as outras três são mantidas fixas — ver [[wiki/concepts/triade-escopo-tempo-custo-qualidade]]. Aprofunda, com nova analogia (compilador como "operário automatizado", orquestra clássica vs. jazz), a tese já registrada em [[wiki/concepts/software-nao-e-engenharia-de-producao]] de que o programador é arquiteto, não operário. Introduz duas teses de contratação e liderança não documentadas em fontes anteriores: [[wiki/concepts/nivel-a-contrata-nivel-a]] (só nível A reconhece e contrata nível A) e [[wiki/concepts/gestor-deve-ter-sido-praticante]] (um gestor sem experiência prática na função nunca conquista respeito genuíno da equipe). Fecha com a tese central: "gerenciar projetos é gerenciar pessoas, e gerenciar pessoas é gerenciar expectativas" — confiança não é amizade, e feedback honesto é o que de fato preserva a confiança dentro de uma equipe.
+
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]]
@@ -83,3 +87,4 @@ Em [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]], vídeo comem
 - [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] — como organizar equipes mistas de tecnologia, feedback diário, paralelo com a bolha da internet e crítica à "cultura" como manifesto de marketing
 - [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — segundo episódio da série "profissão de prática"; crítica à indústria de consultoria ágil, origem do manifesto, "ágil é adjetivo", accountability vs. autonomia
 - [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]] — vídeo dos 300 mil inscritos; teoria geral sobre aprendizado/gestão via quebra do determinismo newtoniano, origem do movimento de qualidade (Deming, Goldratt, Six Sigma), tese "PDCA=DMAIC=Kaizen=Scrum=método científico", hipótese da beira do caos
+- [[wiki/sources/sobre-ser-gerente-fabio-akita]] — teoria consolidada sobre gestão de projetos e pessoas: crítica a PMP/MBA, quarta variável invisível (qualidade), programador como arquiteto (não operário), "nível A contrata nível A", gestor precisa ter sido praticante, confiança ≠ amizade

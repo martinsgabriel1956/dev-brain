@@ -3,8 +3,8 @@ type: entity
 title: "C3 (Chrysler Comprehensive Compensation Project)"
 aliases: ["C3", "Chrysler Comprehensive Compensation", "projeto de nascimento da XP"]
 date_created: 2026-07-19
-date_updated: 2026-09-21
-source_count: 4
+date_updated: 2026-09-22
+source_count: 7
 tags: [extreme-programming, kent-beck, historia, xp]
 skill: tech-mentor-testing
 status: stable
@@ -51,3 +51,6 @@ Fowler nota, tanto em [[wiki/sources/xunit-martin-fowler]] quanto em [[wiki/sour
 - [[wiki/sources/c3-martin-fowler]] — fonte primária dedicada ao projeto: linha do tempo completa, desfecho e a tese de que "XP não é garantia de sucesso"
 - [[wiki/sources/very-low-defect-project-martin-fowler]] — nomeia (sem nomes próprios) o projeto seguinte de ex-membros do C3: software de portal na Chrysler, exatamente um bug em 2002
 - [[wiki/sources/test-result-xunitpatterns]] — verbete de glossário do xUnitPatterns.com, isolando a definição do próprio termo "test result": dá nome formal ao conceito por trás da prática do red/green bar originada no time do C3
+- [[wiki/sources/test-failure-xunitpatterns]] — verbete de glossário do mesmo site, isolando o termo "test failure": formaliza o estado exato que o red bar do C3 sinalizava visualmente
+- [[wiki/sources/test-success-xunitpatterns]] — par simétrico: formaliza o estado exato que o green bar do C3 sinalizava visualmente
+- [[wiki/sources/test-error-xunitpatterns]] — terceiro estado possível além de red/green bar: um erro que impede a execução de chegar até a asserção

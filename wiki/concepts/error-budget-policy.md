@@ -4,7 +4,7 @@ title: "Error Budget Policy"
 aliases: ["error budget policy", "política de error budget"]
 date_created: 2026-04-22
 date_updated: 2026-04-22
-source_count: 1
+source_count: 2
 tags: [sre, confiabilidade, operações, processo]
 skill: tech-mentor-infra
 status: stable

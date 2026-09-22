@@ -3,8 +3,8 @@ type: entity
 title: "Pedro Nauke"
 aliases: ["Nauke", "Nauck", "Pedro Nauke", "Pedro Nauck", "pernop"]
 date_created: 2026-06-02
-date_updated: 2026-08-12
-source_count: 9
+date_updated: 2026-09-22
+source_count: 10
 tags: [instrutor, ia-para-devs, compose, tooling, brasil, open-source, carreira]
 skill: tech-mentor-ai
 status: stable
@@ -63,6 +63,7 @@ Ferramenta de orquestração spec-driven que:
 - [[wiki/sources/formacao-ia-devs-aula-02-mercado-perfil-profissional]]
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
 - [[wiki/sources/formacao-ia-devs-aula-04-harness]]
+- [[wiki/sources/formacao-ia-devs-aula-04-qa]]
 - [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]
 - [[wiki/sources/formacao-ia-devs-aula-06-qa]]
 - [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]]

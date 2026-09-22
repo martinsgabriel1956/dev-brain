@@ -81,7 +81,7 @@ Livro-tutorial em português que ensina Arquitetura Limpa (Robert C. Martin) por
 
 ## Entidades e Conceitos Mencionados
 
-- **Pessoas/entidades:** Robert C. Martin (Uncle Bob), Alistair Cockburn, Trygve Reenskaug, James Coplien, Ivar Jacobson, Martin Fowler, Eric Evans, Mark Richards, Neal Ford, Dan North, Maurício Aniche (autor do prefácio), Khalil Stemmler, Scott Wlaschin, Chris Kiehl, David Parnas.
+- **Pessoas/entidades:** [[wiki/entities/otavio-lemos]] (autor do livro), Robert C. Martin (Uncle Bob), Alistair Cockburn, Trygve Reenskaug, James Coplien, Ivar Jacobson, Martin Fowler, Eric Evans, Mark Richards, Neal Ford, Dan North, Maurício Aniche (autor do prefácio), Khalil Stemmler, Scott Wlaschin, Chris Kiehl, David Parnas.
 - **Empresas citadas com uso de arquitetura desacoplada:** iFood, Netflix, Uber, Amazon, Mercado Livre, Nubank.
 - **Conceitos centrais:** [[wiki/concepts/clean-architecture]], Arquitetura Hexagonal (Ports & Adapters), DCI (Data, Context, Interaction), BCE (Boundary, Control, Entity), Regra de Dependência, Value Object, Either monad, Repository pattern, Template Method (via composição), Humble Object, MVP (Model-View-Presenter), Domain-Driven Design (regras de domínio vs. aplicação), Inversão de Dependência (SOLID), Conway's Law / Inverse Conway Maneuver.
 

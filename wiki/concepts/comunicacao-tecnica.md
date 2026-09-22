@@ -4,7 +4,7 @@ title: "Comunicação Técnica"
 aliases: ["comunicação", "comunicação efetiva", "tradução técnica", "emissor receptor"]
 date_created: 2026-04-23
 date_updated: 2026-09-04
-source_count: 7
+source_count: 8
 tags: [carreira, comunicação, liderança, soft-skills]
 skill: tech-mentor-leadership
 status: stable

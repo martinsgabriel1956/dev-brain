@@ -3,8 +3,8 @@ type: concept
 title: "Over-Engineering"
 aliases: ["overengineering", "verde neném", "engenharia excessiva", "gold plating"]
 date_created: 2026-06-09
-date_updated: 2026-08-19
-source_count: 14
+date_updated: 2026-09-22
+source_count: 15
 tags: [design, qualidade, anti-pattern, aprendizado, design-patterns, dora, under-engineering]
 skill: tech-mentor-leadership
 status: stable
@@ -120,6 +120,7 @@ Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], 
 
 ## Key Sources
 
+- [[wiki/sources/listen-notes-one-person-startup]] — Resumo em PT-BR da trilogia de artigos de Wenbin Fang sobre como ele construiu e opera o [Listen Notes](https://www.listennotes.com/) sozinho. Cobre infraestrutura (20 servidores AWS), modelo de...
 - [[wiki/sources/arquitetura-de-sacrificio]] — priorizar flexibilidade sobre performance/escala no início ("performance é uma feature" é trade-off, não regra) é o antídoto direto à otimização prematura
 - [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]]
 - [[wiki/sources/como-evitar-over-engineering-david-farley]]

@@ -27,7 +27,7 @@ Um servidor **stateless** não guarda nenhuma informação do usuário em memór
 
 ## Por que stateless é pré-requisito da escalabilidade horizontal
 
-Se o servidor guarda sessão em memória, o [[load-balancer]] precisa mandar o mesmo usuário sempre para o mesmo servidor ([[sticky-session]]). Isso:
+Se o servidor guarda sessão em memória, o [[concepts/load-balancer]] precisa mandar o mesmo usuário sempre para o mesmo servidor ([[sticky-session]]). Isso:
 
 - Cria desequilíbrio de carga (um servidor sobrecarregado, outros ociosos)
 - Perde as sessões se o servidor cair
@@ -57,7 +57,7 @@ O mesmo trade-off aparece na dupla access token / refresh token: manter o access
 ## Relação com outros conceitos
 
 - [[escalabilidade-horizontal]] — stateless é o pré-requisito arquitetural
-- [[load-balancer]] — distribui livremente quando os servidores são stateless
+- [[concepts/load-balancer]] — distribui livremente quando os servidores são stateless
 - [[sticky-session]] — solução paliativa que adia o problema de estado; antônimo da solução correta
 - [[redis]] — destino natural para sessões e dados temporários
 - [[wiki/concepts/jwt]] — access token stateless vs. refresh token stateful como aplicação do mesmo trade-off em autenticação

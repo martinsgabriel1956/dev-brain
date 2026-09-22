@@ -33,4 +33,4 @@ Flutter para UI pixel-perfect cross-platform com Dart. React Native quando o tim
 
 ## Conceitos Abordados
 
-- [[mobile-cross-platform-decision]] · [[mobile-kmp]] · [[mobile-design-system]] · [[mobile-metricas-criticas]]
+- [[concepts/mobile-cross-platform-decision]] · [[concepts/mobile-kmp]] · [[concepts/mobile-design-system]] · [[concepts/mobile-metricas-criticas]]

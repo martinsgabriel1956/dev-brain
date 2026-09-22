@@ -4,7 +4,7 @@ title: "Paridade Local–Produção"
 aliases: ["staging parity", "works on my machine", "local vs prod", "paridade de ambiente"]
 date_created: 2026-04-26
 date_updated: 2026-07-31
-source_count: 4
+source_count: 3
 tags: [staging, producao, docker, devops, debugging, ambiente]
 skill: tech-mentor-leadership
 status: draft
