@@ -3,8 +3,8 @@ type: concept
 title: "Autonomia e Responsabilidade"
 aliases: ["autonomia técnica", "ownership", "responsabilidade profissional"]
 date_created: 2026-05-19
-date_updated: 2026-08-12
-source_count: 4
+date_updated: 2026-09-23
+source_count: 5
 tags: [soft-skills, autonomia, responsabilidade, carreira, ownership]
 skill: tech-mentor-leadership
 status: stable
@@ -63,3 +63,4 @@ O mesmo par vale no nível organizacional: [[wiki/sources/talk-about-platforms-e
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] — alinhar prioridade antes do PR; não criar tarefas fora do escopo pedido
 - [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] — tensão entre "não peça permissão" para prática pessoal e "alinhe antes de executar" para escopo formal de entrega
 - [[wiki/sources/talk-about-platforms-evan-bottcher]] — autonomia + responsabilidade operacional em nível de time (you build it, you run it)
+- [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — autonomia para achar as pessoas certas e completar requisitos sem o gestor "em cima" — o que mais inspira confiança ([[wiki/concepts/desenrolar-demandas]])

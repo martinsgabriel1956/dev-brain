@@ -3,8 +3,8 @@ type: concept
 title: "Property-Based Testing"
 aliases: ["property based testing", "teste baseado em propriedades", "hypothesis", "fast-check"]
 date_created: 2026-04-29
-date_updated: 2026-04-29
-source_count: 1
+date_updated: 2026-09-23
+source_count: 2
 tags: [testes, race-condition, confiabilidade, hypothesis, fast-check, concorrencia]
 skill: tech-mentor-ai
 status: stub
@@ -36,3 +36,4 @@ Race conditions aparecem em combinações específicas de timing que testes manu
 ## Key Sources
 
 - [[sources/apagao-de-seniors-vibe-coding]]
+- [[wiki/sources/design-by-contract-video]] — autor sinaliza PBT como técnica "bem relacionada" ao [[wiki/concepts/design-by-contract]] (invariantes ↔ propriedades)

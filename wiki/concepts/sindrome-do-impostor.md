@@ -3,8 +3,8 @@ type: concept
 title: "Síndrome do Impostor"
 aliases: ["impostor syndrome", "medo de ser descoberto", "sensação de fraude"]
 date_created: 2026-07-03
-date_updated: 2026-09-01
-source_count: 6
+date_updated: 2026-09-23
+source_count: 7
 tags: [carreira, saúde-mental, júnior, inteligência-emocional]
 skill: tech-mentor-leadership
 status: draft
@@ -64,3 +64,4 @@ Isso conecta com [[wiki/concepts/persistencia-em-processo-seletivo]] numa sequê
 - [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] — reenquadramento "burrice vs. inteligência" → "experiência vs. inexperiência"; remédio para inexperiência é experimentar
 - [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — mesma lógica de "estado provisório" aplicada à reprovação em processo seletivo, com recomendação de perguntar quando tentar de novo
 - [[wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub]] — variante anterior no tempo: medo de aplicar para a vaga, antes mesmo de existir reprovação; recomendação de agir apesar da sensação de despreparo permanente
+- [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] — autor trata a subestimação como hábito mental corrigível que atinge júnior, pleno e sênior; ver [[wiki/concepts/palco-vs-bastidores]]

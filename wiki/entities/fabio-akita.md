@@ -3,8 +3,8 @@ type: entity
 title: "Fábio Akita"
 aliases: ["Akita", "Akita On Rails"]
 date_created: 2026-05-16
-date_updated: 2026-09-22
-source_count: 12
+date_updated: 2026-09-23
+source_count: 13
 tags: [pessoa, programador, youtuber, brasil]
 skill: tech-mentor-leadership
 status: stable
@@ -88,3 +88,4 @@ Em [[wiki/sources/sobre-ser-gerente-fabio-akita]], apresenta sua visão mais amp
 - [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — segundo episódio da série "profissão de prática"; crítica à indústria de consultoria ágil, origem do manifesto, "ágil é adjetivo", accountability vs. autonomia
 - [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]] — vídeo dos 300 mil inscritos; teoria geral sobre aprendizado/gestão via quebra do determinismo newtoniano, origem do movimento de qualidade (Deming, Goldratt, Six Sigma), tese "PDCA=DMAIC=Kaizen=Scrum=método científico", hipótese da beira do caos
 - [[wiki/sources/sobre-ser-gerente-fabio-akita]] — teoria consolidada sobre gestão de projetos e pessoas: crítica a PMP/MBA, quarta variável invisível (qualidade), programador como arquiteto (não operário), "nível A contrata nível A", gestor precisa ter sido praticante, confiança ≠ amizade
+- [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] — citado por André Casciotti: 'não terceirize suas decisões'

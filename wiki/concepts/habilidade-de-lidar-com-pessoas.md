@@ -3,8 +3,8 @@ type: concept
 title: "Habilidade de Lidar com Pessoas"
 aliases: ["people skills", "85/15 sucesso profissional", "influência interpessoal"]
 date_created: 2026-07-03
-date_updated: 2026-09-21
-source_count: 2
+date_updated: 2026-09-23
+source_count: 3
 tags: [soft-skills, carreira, lideranca, comunicacao]
 skill: tech-mentor-leadership
 status: draft
@@ -47,3 +47,4 @@ Este conceito se sobrepõe a [[wiki/concepts/colaboracao-times]] (trabalho em eq
 
 - [[wiki/sources/como-lidar-com-politica-empresarial-lideranca-engenharia]] — relacionamento e credibilidade como redutores de risco percebido em propostas de mudança organizacional
 - [[wiki/sources/3-soft-skills-que-poucos-programadores-dominam]]
+- [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — conversas informais e proximidade com usuário/time ajudam a achar as pessoas certas e mediar conflitos ([[wiki/concepts/desafogar-o-time]])

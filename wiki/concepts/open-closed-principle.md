@@ -3,8 +3,8 @@ type: concept
 title: "Open/Closed Principle (OCP)"
 aliases: ["OCP", "open closed principle", "aberto fechado", "open-closed"]
 date_created: 2026-05-01
-date_updated: 2026-08-18
-source_count: 7
+date_updated: 2026-09-23
+source_count: 8
 tags: [solid, oop, architecture, design-patterns]
 skill: tech-mentor-backend
 status: stable
@@ -67,3 +67,4 @@ Via [[wiki/sources/solid-principles-in-pictures-ugonna-thelma]]: "classes devem 
 - [[wiki/sources/solid-principles-in-pictures-ugonna-thelma]]
 - [[wiki/sources/design-pattern-decorator-renato-augusto]] — OCP como justificativa direta do [[wiki/concepts/decorator-pattern|Decorator]]: estender por wrapping em vez de modificar a classe em produção
 - [[wiki/sources/design-pattern-facade-codigo-fonte-tv]] — exemplo negativo: Facade acoplada a implementações concretas quebra OCP ao adicionar um canal novo (SMS)
+- [[wiki/sources/design-by-contract-video]] — OCP atribuído a [[wiki/entities/bertrand-meyer]], o mesmo autor do [[wiki/concepts/design-by-contract]]

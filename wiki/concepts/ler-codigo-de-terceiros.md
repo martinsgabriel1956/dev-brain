@@ -3,8 +3,8 @@ type: concept
 title: "Ler Código de Terceiros"
 aliases: ["ler código de outras pessoas", "code reading", "aprender lendo código"]
 date_created: 2026-07-28
-date_updated: 2026-08-24
-source_count: 2
+date_updated: 2026-09-23
+source_count: 3
 tags: [carreira, habitos, aprendizado, legibilidade, code-review]
 skill: tech-mentor-leadership
 status: stub
@@ -34,3 +34,4 @@ O autor da fonte relata ter se inspirado na biblioteca `clipboard.js` para const
 
 - [[wiki/sources/7-habitos-programador-altamente-eficaz]]
 - [[wiki/sources/como-ler-documentacao-de-uma-linguagem-de-programacao]] — variante guiada via Ctrl+clique na API reference/JavaDoc
+- [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — entender o sentido e o porquê do código (não só a lógica) como base para desenrolar demandas ([[wiki/concepts/desenrolar-demandas]])

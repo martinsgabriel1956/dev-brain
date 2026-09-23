@@ -3,8 +3,8 @@ type: concept
 title: "Repertório Técnico"
 aliases: ["repertorio", "repertório de programador", "padrões acumulados"]
 date_created: 2026-06-01
-date_updated: 2026-07-03
-source_count: 3
+date_updated: 2026-09-23
+source_count: 4
 tags: [aprendizado, fundamentos, programacao, carreira, pattern-recognition]
 skill: tech-mentor-leadership
 status: draft
@@ -56,3 +56,4 @@ Repetir a mesma receita 20 vezes não constrói repertório — constrói profic
 - [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — conceito central; repertório como terceiro pilar da competência em programação
 - [[wiki/sources/the-comparison-trap-in-programming-careers]] — exemplo concreto do repertório em ação: o ponto e vírgula, que no início causava pânico, passa a ser resolvido instantaneamente; bugs que tomavam dias passam a ser óbvios — esse é o sinal de que repertório foi construído
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — repertório como "cola" que multiplica o que a IA entrega; exemplos pessoais de transferência entre domínios (3D/RA, Flash/animação)
+- [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — repertório próximo ao foco de especialidade cria brechas de oportunidade para abraçar granadas ([[wiki/concepts/abracar-granadas]])

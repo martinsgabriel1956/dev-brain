@@ -3,8 +3,8 @@ type: concept
 title: "Exceção vs. Erro"
 aliases: ["erro vs exceção", "exception vs error", "erro de domínio", "exceção de sistema"]
 date_created: 2026-06-01
-date_updated: 2026-06-01
-source_count: 1
+date_updated: 2026-09-23
+source_count: 2
 tags: [fundamentos, backend, resiliencia, dominio, excecao, nodejs]
 skill: tech-mentor-backend
 status: draft
@@ -75,3 +75,4 @@ A última linha mostra que o mesmo tipo de evento pode ser erro ou exceção dep
 ## Key sources
 
 - [[wiki/sources/let-it-crash-nodejs-asynclocalstorage]] — distinção central da estratégia; exemplos concretos de cada categoria
+- [[wiki/sources/design-by-contract-video]] — violação de pré-condição tratada como exceção/asserção ("remédio" do contrato)

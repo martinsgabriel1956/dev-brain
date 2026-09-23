@@ -3,8 +3,8 @@ type: concept
 title: "Comunicação Técnica"
 aliases: ["comunicação", "comunicação efetiva", "tradução técnica", "emissor receptor"]
 date_created: 2026-04-23
-date_updated: 2026-09-04
-source_count: 8
+date_updated: 2026-09-23
+source_count: 9
 tags: [carreira, comunicação, liderança, soft-skills]
 skill: tech-mentor-leadership
 status: stable
@@ -76,3 +76,4 @@ O princípio "tradução é responsabilidade de quem emite" tem uma aplicação 
 - [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — Hábito 10, "ouvir para entender vs. ouvir para responder" em conversas de hierarquia assimétrica
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — numa entrevista de arquitetura o produto entregue é o racional justificado, não o diagrama; raciocínio exposto vale mais que velocidade de resposta
 - [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — bullet points vagos de currículo como falha de tradução na ponta de emissão
+- [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — comunicação como habilidade de desenrolar demandas: escutar, escrever, ler o momento, expor fatos sem culpar pessoas, conversa informal ([[wiki/concepts/expor-problemas-construtivamente]])

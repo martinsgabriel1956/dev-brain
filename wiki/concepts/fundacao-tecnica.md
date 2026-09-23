@@ -3,8 +3,8 @@ type: concept
 title: "Fundação Técnica"
 aliases: ["fundamentos", "base técnica", "foundations"]
 date_created: 2026-05-16
-date_updated: 2026-09-14
-source_count: 13
+date_updated: 2026-09-23
+source_count: 14
 tags: [aprendizado, carreira, fundamentos]
 skill: tech-mentor-leadership
 status: stable
@@ -94,3 +94,4 @@ Isso não se aplica a quem nunca construiu a fundação — um dev que aprendeu 
 - [[wiki/sources/papinho-tech-solo-q-and-a-carreira]] — o mesmo eixo vertical/horizontal descrito como [[wiki/concepts/profissional-t-shaped|formação em T]]; matemática (Cálculo/Estatística) como componente da grade de computação
 - [[wiki/sources/por-que-comecar-com-c-em-2026-cs50-david-malan]] — David Malan: construir as próprias estruturas de dados em C para entender "de baixo para cima" o que acontece dentro do dispositivo; base que serve de andaime para linguagens de alto nível
 - [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — tese de que a ordem de aquisição pode ser invertida (alto nível primeiro, fundamentos sob demanda) sem tornar a fundação dispensável
+- [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] — fundamentos de linguagem e de computação (memória, ARM/x86, redes, DNS, Docker em ambiente corporativo) tornam o aprendizado posterior mais simples

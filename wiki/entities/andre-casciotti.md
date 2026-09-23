@@ -3,8 +3,8 @@ type: entity
 title: "André Casciotti"
 aliases: ["Próximo Nível (canal)"]
 date_created: 2026-07-03
-date_updated: 2026-07-23
-source_count: 2
+date_updated: 2026-09-23
+source_count: 4
 tags: [carreira, mentoria, youtube, criador-de-conteudo]
 skill: tech-mentor-leadership
 status: stub
@@ -20,6 +20,7 @@ Criador de conteúdo técnico, apresentador do quadro "Próximo Nível" (canal n
 - Progressão de carreira através de granularidade — mudanças pequenas e coesas em vez de tentar mudar tudo de uma vez.
 - Automações pessoais como veículo de prática de baixo risco.
 - Síndrome do impostor como fenômeno recorrente em toda a carreira (não só no início), e habilidade como algo adquirido, não talento nato.
+- Como se tornar essencial na empresa: entregar apesar dos problemas, autonomia e apoio ao time; crescer na empresa vs. trocar por salário.
 - Técnicas operacionais de decomposição de tarefas e organização pessoal para lidar com trabalho que parece difícil demais.
 
 ## Ver também
@@ -36,3 +37,5 @@ Criador de conteúdo técnico, apresentador do quadro "Próximo Nível" (canal n
 
 - [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]]
 - [[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]]
+- [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] — terceira fonte: tese de que confiança é mentalidade + hábitos, três erros (subestimar-se, conhecimento na hora errada, medo do prazo > medo do bug); conceito-chave [[wiki/concepts/confianca-profissional-dev]]
+- [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — quarta fonte: como ser dev essencial (entregar apesar dos problemas, desenrolar demandas, desafogar o time; salário = raridade); conceito-chave [[wiki/concepts/dev-essencial-e-raridade]]

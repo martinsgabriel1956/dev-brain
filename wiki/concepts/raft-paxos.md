@@ -3,8 +3,8 @@ type: concept
 title: "Raft / Paxos"
 aliases: ["raft", "paxos", "consenso distribuído", "quorum consensus"]
 date_created: 2026-04-22
-date_updated: 2026-09-22
-source_count: 2
+date_updated: 2026-09-23
+source_count: 3
 tags: [sistemas-distribuidos, consenso, raft, paxos, quorum, etcd]
 skill: tech-mentor-system-design
 status: stub
@@ -41,3 +41,4 @@ Para **consenso de liderança** e **replicação de log** com tolerância a part
 
 - [[wiki/sources/raft-leader-election]] — Raft é o algoritmo de consenso mais legível e amplamente usado (etcd, CockroachDB, Consul, TiKV). Três papéis: Leader (único, escreve), Follower (replica), Candidate (em eleição). Eleição: timeout...
 - [[sources/3pc]]
+- [[wiki/sources/github-2018-cap-pacelc-particao-video]] — leitura forte exige round trip ao quórum (~+0,19 ms no teste local); ver [[wiki/concepts/custo-da-leitura-forte-vs-local]]

@@ -12115,3 +12115,55 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 - `wiki/concepts/gestao-de-riscos-e-controle-ilusorio.md` — nova seção sobre "saber dizer não" como habilidade central de gestão de risco (analogia do general e as batalhas); nova linha em Key Sources; `source_count` 2→3
 
 **Notas:** fonte robusta que aprofunda e cruza uma parte substancial do corpo já existente de fontes de Fábio Akita na wiki — dois argumentos centrais (software não é engenharia de produção, cargo cult de Netflix/Google) já estavam documentados a partir de outras fontes do mesmo autor e ganharam aqui novas metáforas/ângulos sem contradição. Três teses novas e centrais (quarta variável invisível de qualidade, "nível A contrata nível A", gestor precisa ter sido praticante) não tinham página própria e foram criadas como stubs. Duas delas (nível A contrata nível A, gestor deve ter sido praticante) são apresentadas na fonte de forma categórica, sem contraexemplos — sinalizado como Open Question no source e nota de tensão na própria página do segundo stub. Sem contradição factual com o restante da wiki.
+
+---
+
+## [2026-09-23] ingest | Design by Contract (vídeo)
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/design-by-contract-video.md` (já em português; sem tradução). A transcrição automática estava muito distorcida (\"countrykitty\", \"alfeu\", \"closer\", \"a operar\"...): termos corrigidos pelo contexto e listados no cabeçalho do raw; trecho biográfico de Meyer e exemplo em Clojure sinalizados como incertos.
+**Skill:** tech-mentor-backend (secundários em tags: testes). Observação: o arquivo de referência da skill não cobre Design by Contract; conteúdo calibrado com conhecimento base, e a conexão com LSP marcada como [external].
+
+**Criado:** [[wiki/sources/design-by-contract-video]], [[wiki/concepts/design-by-contract]], [[wiki/concepts/precondicao-poscondicao-invariante]], [[wiki/entities/bertrand-meyer]], [[wiki/entities/eiffel]]
+
+**Tocadas (9):** [[wiki/concepts/open-closed-principle]], [[wiki/concepts/liskov-substitution-principle]], [[wiki/concepts/property-based-testing]], [[wiki/concepts/contract-testing]], [[wiki/concepts/fail-fast]], [[wiki/concepts/encapsulamento]], [[wiki/concepts/tdd]], [[wiki/concepts/excecao-vs-erro]], [[wiki/entities/clojure]] — Key Sources + bump de `source_count`/`date_updated`.
+
+**Notas:** fonte curta e introdutória; sem contradições com a wiki. Ponto de atenção: o exemplo de cláusulas condicionais (10 mil/100 mil) é regra de negócio, não contrato estrito.
+
+---
+
+## [2026-09-23] ingest | 3 Erros que Minam sua Confiança como Dev (André Casciotti)
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/3-erros-que-minam-confianca-como-dev.md` (já em português; sem tradução). Título original desconhecido — título descritivo derivado do conteúdo. Termos corrigidos pelo contexto (dev sênior, mock, NuGet, .NET, Akita, etc.) e listados no cabeçalho do raw; um trecho ("código de smoke") sinalizado como incerto.
+**Skill:** tech-mentor-leadership (a skill não tem referência específica para autoconfiança/mentalidade; conteúdo mantido fiel à fonte, sem adições externas).
+
+**Criado:** [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]], [[wiki/concepts/confianca-profissional-dev]], [[wiki/concepts/medo-do-prazo-vs-medo-do-bug]], [[wiki/concepts/informacao-conhecimento-habilidade]], [[wiki/concepts/palco-vs-bastidores]]
+
+**Tocadas (12):** [[wiki/entities/andre-casciotti]], [[wiki/entities/fabio-akita]], [[wiki/concepts/sindrome-do-impostor]], [[wiki/concepts/zona-de-desconforto-da-aprendizagem]], [[wiki/concepts/decisao-terceirizada]], [[wiki/concepts/alto-nivel-antes-do-fundamento]], [[wiki/concepts/fundacao-tecnica]], [[wiki/concepts/avaliar-hype-tecnologico]], [[wiki/concepts/tech-debt]], [[wiki/concepts/medo-de-codigo]], [[wiki/concepts/requisitos-funcionais-e-nao-funcionais]], [[wiki/concepts/testes-como-aprendizado]] — Key Sources + bump de `source_count`/`date_updated`.
+
+**Notas:** fonte baseada só em experiência do autor (sem pesquisa citada; percentuais 90%/99% são estimativas). Reforça teses já presentes (fundamentos antes do avançado, não terceirizar decisões, dívida técnica consciente). Sem contradição factual; tensão leve com a leitura de síndrome do impostor registrada como Open Question.
+
+---
+
+## [2026-09-23] ingest | GitHub 2018, CAP e PACELC (vídeo)
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/github-2018-cap-pacelc-video.md` (já em português; sem tradução). Termos distorcidos corrigidos e listados no cabeçalho do raw (PACELC, quórum, round trip, partição).
+**Skill:** tech-mentor-system-design (referência `distributed-systems-core.md`: CAP/PACELC).
+
+**Criado:** [[wiki/sources/github-2018-cap-pacelc-particao-video]], [[wiki/entities/github]], [[wiki/concepts/github-incidente-2018-particao-de-rede]], [[wiki/concepts/disponibilidade-no-teorema-cap]], [[wiki/concepts/analogia-agencias-bancarias-cap]], [[wiki/concepts/custo-da-leitura-forte-vs-local]], [[wiki/concepts/falacias-da-computacao-distribuida]]
+
+**Tocadas (8):** [[wiki/concepts/pacelc]] (stub → draft), [[wiki/concepts/cap-theorem]], [[wiki/concepts/cap-theorem-concept]], [[wiki/concepts/split-brain]], [[wiki/concepts/raft-paxos]], [[wiki/concepts/consistency-models]], [[wiki/concepts/eventual-consistency]], [[wiki/concepts/alta-disponibilidade]] — Key Sources + bump de `source_count`/`date_updated`.
+
+**Notas:** o relato do incidente é simplificado (post-mortem oficial não verificado, marcado [external]); medições são de teste local do autor, sem rede entre zonas. Sem contradição com a wiki; a definição formal de disponibilidade do CAP contrasta com a noção de uptime em [[wiki/concepts/alta-disponibilidade]].
+
+---
+
+## [2026-09-23] ingest | Como Ser um Dev Essencial e Ganhar Mais (André Casciotti)
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/como-ser-dev-essencial-e-ganhar-mais.md` (já em português; sem tradução). Título original desconhecido — título descritivo derivado do tema. Termos/gírias corrigidos pelo contexto (Redis, Kubernetes, .NET, Tech Lead, hardcode etc.) e listados no cabeçalho do raw.
+**Skill:** tech-mentor-leadership (a skill não tem referência específica para este tema; conteúdo mantido fiel à fonte, sem adições externas).
+
+**Criado:** [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]], [[wiki/concepts/dev-essencial-e-raridade]], [[wiki/concepts/entregar-apesar-dos-problemas]], [[wiki/concepts/expor-problemas-construtivamente]], [[wiki/concepts/desenrolar-demandas]], [[wiki/concepts/desafogar-o-time]], [[wiki/concepts/abracar-granadas]], [[wiki/concepts/crescer-na-empresa-vs-trocar-por-salario]], [[wiki/concepts/resolver-problemas-como-habilidade-central]]
+
+**Tocadas (18):** [[wiki/entities/andre-casciotti]], [[wiki/concepts/soft-skills]], [[wiki/concepts/ownership-proativo]], [[wiki/concepts/autonomia-responsabilidade]], [[wiki/concepts/perfeccionismo-em-devs]], [[wiki/concepts/comunicacao-tecnica]], [[wiki/concepts/refatoracao]], [[wiki/concepts/tech-debt]], [[wiki/concepts/repertorio]], [[wiki/concepts/habilidade-de-lidar-com-pessoas]], [[wiki/concepts/politica-organizacional]], [[wiki/concepts/efeito-multiplicador]], [[wiki/concepts/informacao-conhecimento-habilidade]], [[wiki/concepts/medo-do-prazo-vs-medo-do-bug]], [[wiki/concepts/ler-codigo-de-terceiros]], [[wiki/concepts/atitude-mindset-vs-tech-skill]], [[wiki/concepts/confianca-profissional-dev]], [[wiki/concepts/testes-como-aprendizado]], [[wiki/concepts/requisitos-funcionais-e-nao-funcionais]] — Key Sources + bump de `source_count`/`date_updated`.
+
+**Notas:** fonte baseada só na experiência do autor (sem dados; raridade→salário e preconceito etário ~40 anos são afirmações sem evidência). A pergunta de abertura (técnico vs. político) só é respondida pelo lado comportamental. Tensão leve e conciliável com [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] (entregar "mais ou menos" vs. não correr): ambas pedem decisão consciente e alinhada. Sem contradição factual.

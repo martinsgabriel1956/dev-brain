@@ -3,8 +3,8 @@ type: concept
 title: "Eventual Consistency"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-22
-source_count: 6
+date_updated: 2026-09-23
+source_count: 7
 tags: [eventual-consistency]
 skill: tech-mentor-system-design
 status: stub
@@ -34,3 +34,4 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 - [[wiki/sources/gossip-protocol]]
 - [[wiki/sources/quorum]]
 - [[wiki/sources/vector-clocks]]
+- [[wiki/sources/github-2018-cap-pacelc-particao-video]] — leitura local no nó isolado devolve dado pré-partição; divergência de escritas no GitHub 2018

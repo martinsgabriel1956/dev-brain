@@ -3,8 +3,8 @@ type: concept
 title: "Atitude e Mindset vs. Tech Skill"
 aliases: ["atitude vs habilidade técnica", "potencial de engenheiro", "great engineer formula"]
 date_created: 2026-08-11
-date_updated: 2026-08-11
-source_count: 1
+date_updated: 2026-09-23
+source_count: 2
 tags: [carreira, lideranca, mindset, atitude, senioridade, potencial]
 skill: tech-mentor-leadership
 status: stub
@@ -34,6 +34,7 @@ Atitude e mindset importam de verdade e aparecem em três traços observáveis: 
 ## Key sources
 
 - [[wiki/sources/potencial-programador-atitude-mindset]]
+- [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — "contratam por skill, demitem por perfil": técnica ajuda a entrar, atitude/comportamento a permanecer ([[wiki/concepts/dev-essencial-e-raridade]])
 
 ## Relacionados
 

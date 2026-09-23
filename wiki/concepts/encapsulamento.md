@@ -3,8 +3,8 @@ type: concept
 title: "Encapsulamento"
 aliases: ["encapsulamento", "encapsulation", "information hiding"]
 date_created: 2026-08-10
-date_updated: 2026-08-13
-source_count: 2
+date_updated: 2026-09-23
+source_count: 3
 tags: [encapsulamento, separation-of-concerns, arquitetura, modularidade, backend, oop, invariante]
 skill: tech-mentor-backend
 status: draft
@@ -43,3 +43,4 @@ Uma classe que expõe só setters de atribuição, sem comportamento, é um [[wi
 
 - [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]] — encapsulamento como isolamento de módulos via contratos
 - [[wiki/sources/encapsulamento-proteger-estado-invalido]] — o objetivo real é proteger o estado contra estados inválidos; `private` é meio, invariante é fim; encapsulamento ≠ acesso
+- [[wiki/sources/design-by-contract-video]] — invariantes de [[wiki/concepts/precondicao-poscondicao-invariante]] como formalização do estado válido a proteger

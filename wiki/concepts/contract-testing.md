@@ -3,8 +3,8 @@ type: concept
 title: "Contract Testing"
 aliases: ["teste de contrato", "pact", "consumer-driven contracts", "can-i-deploy"]
 date_created: 2026-04-22
-date_updated: 2026-09-22
-source_count: 9
+date_updated: 2026-09-23
+source_count: 10
 tags: [testes, contract-testing, pact, microservices, ci, distribuídos]
 skill: tech-mentor-testing
 status: stable
@@ -107,3 +107,4 @@ Quando ativar o serviço externo real (ex.: staging de um provedor de pagamentos
 - [[wiki/sources/consumer-driven-contracts-martin-fowler]] — origem do termo (Ian Robinson, 2006), modelo de três camadas, Must Ignore pattern
 - [[wiki/sources/test-double-xunitpatterns-meszaros]] — o "fiel o suficiente" do double que o contract test existe para garantir
 - [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — Tolerant Reader e Consumer-Driven Contracts citados como técnicas que permitem contratos de serviço evoluírem de forma independente sem gerenciamento central; menciona um time na Austrália que orienta a construção de novos serviços pelo contrato (definido antes do código), evitando over-building via YAGNI
+- [[wiki/sources/design-by-contract-video]] — distingue contrato de API (OpenAPI/HTTP) de contrato de código ([[wiki/concepts/design-by-contract]]); segundo o autor, o primeiro não expressa pré/pós-condições

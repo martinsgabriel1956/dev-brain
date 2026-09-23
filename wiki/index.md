@@ -26,6 +26,10 @@ date_updated: 2026-09-22
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/github-2018-cap-pacelc-particao-video]] | Vídeo de system design: incidente do GitHub 2018 (rede voltou em 43 s, serviço em 24 h+ por escritas divergentes) para explicar CAP (disponibilidade = todo nó vivo responde), o dilema recusar vs. pagar com caixa local e PACELC (latência vs. consistência sem partição), com teste local de leitura local (~0,05 ms) vs. forte (+0,19 ms). |
+| [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] | André Casciotti: para ganhar mais, seja essencial — técnica ajuda a entrar, não a ficar; 3 habilidades (entregar apesar dos problemas, desenrolar demandas, desafogar o time), salário baseado em raridade, crescer na empresa vs. trocar por salário, resolver problemas como base |
+| [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] | André Casciotti: confiança não vem com tempo de carreira, é mentalidade + hábitos; 3 erros — se subestimar, buscar conhecimento na hora errada (avançado antes do básico), ter mais medo do prazo do que do bug; sem resultado entregue a confiança não basta |
+| [[wiki/sources/design-by-contract-video]] | Vídeo curto sobre Design by Contract (Bertrand Meyer/Eiffel): contrato entre módulos com pré-condições (chamador), pós-condições (rotina) e invariantes; suporte nativo em Clojure, simulável com condicionais/comentários; distinto de contrato de API (OpenAPI); ligado a property-based testing |
 | [[wiki/sources/sobre-ser-gerente-fabio-akita]] | Vídeo longo de Akita consolidando sua teoria de gestão: certificações são "colecionar papel"; tríade escopo-tempo-custo tem quarta variável invisível (qualidade); software não é linha de produção (programador é arquiteto, compilador é o "operário"); só nível A contrata nível A; gestor precisa ter sido praticante; gerenciar projetos é gerenciar pessoas e expectativas |
 | [[wiki/sources/frequent-debugging-xunitpatterns]] | Behavior Smell do xUnitPatterns.com (Meszaros), primeira fonte dessa subcategoria de "Test Smells": **Frequent Debugging** (a.k.a. Manual Debugging) — causado por falta de Defect Localization; causas nomeadas: unit/component tests insuficientes (agravado por Mock Objects dessincronizados) e Infrequently Run Tests (mesma sub-causa de Production Bugs); solução: TDD verdadeiro + storytest-driven development |
 | [[wiki/sources/test-driven-bug-fixing-xunitpatterns]] | Verbete de Glossário do xUnitPatterns.com (Meszaros) que isola a definição do próprio termo **test-driven bug fixing**: escrever e automatizar um unit test que reproduz o bug antes de depurar e corrigir — extensão formal do TDD para correção de defeitos; fecha a referência ao termo já citada sem fonte própria em [[wiki/sources/frequent-debugging-xunitpatterns]] |
@@ -851,6 +855,18 @@ date_updated: 2026-09-22
 
 | Página | Hook |
 |---|---|
+| [[wiki/concepts/dev-essencial-e-raridade]] | Salário reflete raridade das habilidades; essencial = o chefe não quer perder (3 habilidades valorizadas) |
+| [[wiki/concepts/entregar-apesar-dos-problemas]] | Prazo apertado, código ruim, requisito ruim: problema repetido vira desculpa para o gestor; resmungar ok se entregar — stub-draft |
+| [[wiki/concepts/expor-problemas-construtivamente]] | Mostrar impacto (1h vira 5h) sem culpar pessoas gera mérito; jogo da carreira é para ganhar, com integridade |
+| [[wiki/concepts/desenrolar-demandas]] | Aprender com o carro andando: ler código, completar requisitos perguntando, pesquisar, autonomia que inspira confiança |
+| [[wiki/concepts/desafogar-o-time]] | Velocidade com qualidade + apoio de negócio, técnico e em crises — "porto seguro" do time |
+| [[wiki/concepts/abracar-granadas]] | Oferecer-se em crises ligadas ao seu foco para mostrar habilidades — stub |
+| [[wiki/concepts/crescer-na-empresa-vs-trocar-por-salario]] | Trocar por salário cansa com o tempo; ficar dá estabilidade, reputação e escolha de quando sair, se houver entrega |
+| [[wiki/concepts/resolver-problemas-como-habilidade-central]] | Requisitos + arquitetura + testes (+ refatoração) como base do dev que resolve; zero bugs desafoga o time |
+| [[wiki/concepts/confianca-profissional-dev]] | Confiança como mentalidade e hábitos, loops de erro e alavancas para sair deles — só vale com resultado entregue |
+| [[wiki/concepts/medo-do-prazo-vs-medo-do-bug]] | Correr para entregar gera bugs e dívida; validar, entender requisitos e decidir de forma consciente e alinhada |
+| [[wiki/concepts/informacao-conhecimento-habilidade]] | Habilidade (aplicar no mundo real) sustenta a carreira; acumular informação gera medo — stub |
+| [[wiki/concepts/palco-vs-bastidores]] | Comparar a especialidade alheia com o que você ainda não sabe é injusto — stub |
 | [[wiki/concepts/lei-de-sturgeon]] | Sturgeon (1957): 90% de tudo é lixo, o que importa é o 10% — separa "a crítica ao campo é real" de "isso pode me ajudar" |
 | [[wiki/concepts/mercado-de-limoes-assimetria-de-informacao]] | Akerlof (1970): mercado onde qualidade é invisível antes da compra derruba a própria média (carro usado, curso online) — mas também derruba o preço, trocando "encontrar" por "filtrar" |
 | [[wiki/concepts/assimetria-de-custo-plataforma-de-contratacao]] | LinkedIn: empresa paga dezenas de milhares de dólares/ano numa licença de busca; candidato tem custo zero para ser indexado — título/competências são metadados, não vaidade |
@@ -1949,6 +1965,8 @@ date_updated: 2026-09-22
 
 | Página | Hook |
 |---|---|
+| [[wiki/concepts/design-by-contract]] | Módulos como partes de um contrato: exige (pré), garante (pós), mantém (invariante) — origem em Eiffel/Meyer |
+| [[wiki/concepts/precondicao-poscondicao-invariante]] | Os três componentes do contrato e quem responde por cada um |
 | [[wiki/concepts/unit-of-work]] | Ponto de coleta que acumula operações (criar/atualizar/remover) e as aplica num `commit` único, com `rollback` desfazendo o lote se algo falhar — SQLAlchemy combina esse padrão com Repository na mesma ferramenta |
 | [[wiki/concepts/pattern-recognition]] | Capacidade humana de detectar repetições — base do aprendizado por exposição |
 | [[wiki/concepts/anti-corruption-layer]] | DDD estratégico: downstream traduz o modelo de um sistema legado/externo na fronteira, via Facade ou Adapter, para que o vocabulário externo nunca vaze pro domínio — usado durante a coexistência do Strangler Fig |
@@ -2351,10 +2369,23 @@ date_updated: 2026-09-22
 | [[wiki/concepts/zona-local-aws]] | Extensão de uma [[regiao-aws\|Região AWS]] posicionada em grandes centros metropolitanos, fora da localização física da região principal. Permite executar workloads com latência de um dígito (single-digit ms) para usuários finais em cidades específicas. |
 | [[wiki/concepts/zona-local-dedicada]] | Infraestrutura de nuvem AWS criada especificamente para um cliente, setor ou governo, para atender a requisitos regulatórios e de [[soberania-digital]]. Diferente de uma [[zona-local-aws\|Zona Local]] padrão, é isolada e dedicada — operada pela AWS, mas com acesso restrito à entidade contratante. |
 
+### Sistemas Distribuídos — CAP, PACELC e Incidentes
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/github-incidente-2018-particao-de-rede]] | Link caiu 43 s, dois data centers aceitaram escritas: 24 h+ para reconciliar |
+| [[wiki/concepts/disponibilidade-no-teorema-cap]] | Disponível no CAP = todo nó vivo responde sem erro, mesmo isolado |
+| [[wiki/concepts/analogia-agencias-bancarias-cap]] | Malote não chega: recusar saque (C) ou pagar com caixa local (A) |
+| [[wiki/concepts/custo-da-leitura-forte-vs-local]] | Leitura local ~0,05 ms vs. forte +0,19 ms de round trip ao quórum |
+| [[wiki/concepts/falacias-da-computacao-distribuida]] | "A rede é confiável" e "a latência é zero" |
+
 ## Entities
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/github]] | Plataforma de código; caso de estudo do incidente de partição de 2018 |
+| [[wiki/entities/bertrand-meyer]] | Criador do Eiffel, Design by Contract e Open/Closed Principle — stub |
+| [[wiki/entities/eiffel]] | Linguagem OO onde nasceu o Design by Contract — stub |
 | [[wiki/entities/felipe-costa]] | Autor no Medium (`@felipecoast`) de introdução a Finite State Machine em Game Design (Pac-Man, HFSM) — stub, sem mais contexto biográfico disponível |
 | [[wiki/entities/thalis-pereira]] | Membro da comunidade Tech Clube, Forward Deployed/AI Engineer — case real de projetos e do que pesa numa entrevista para o cargo |
 | [[wiki/entities/true-up]] | Agregador de vagas de tecnologia que deduplica dados — fonte dos números de demanda de AI Engineer/Forward Deployed Engineer nos EUA |
@@ -2546,7 +2577,7 @@ date_updated: 2026-09-22
 | [[wiki/entities/james-lewis]] | Principal Consultant na Thoughtworks — coautor com Martin Fowler do artigo de 2014 que cunhou a definição de microsserviços |
 | [[wiki/entities/david-farley]] | Coautor de *Continuous Delivery* com Jez Humble; envolvido no LMAX; refuta o "triângulo de ferro" com dados DORA |
 | [[wiki/entities/mercado-livre]] | Maior e-commerce/fintech da América Latina — combina ISO 27001 + PCI-DSS + Zero Trust; adotante consolidado de Go em produção |
-| [[wiki/entities/andre-casciotti]] | Criador de conteúdo brasileiro, canal Próximo Nível — carreira dev, granularidade de mudança, síndrome do impostor em todo nível de carreira, decomposição de tarefas |
+| [[wiki/entities/andre-casciotti]] | Criador de conteúdo brasileiro, canal Próximo Nível — carreira dev, granularidade de mudança, síndrome do impostor em todo nível de carreira, decomposição de tarefas; tornar-se dev essencial |
 | [[wiki/entities/marco-bruno]] | Educador, comunidade Cohab Code — 3 dicas para vaga júnior (networking, ensaiar entrevistas, transparência); ensinar como multiplicador de impacto |
 | [[wiki/entities/robert-nystrom]] | Autor de *Crafting Interpreters* — implementação passo a passo da linguagem Lox (interpretador Java + VM bytecode em C) |
 | [[wiki/entities/llvm]] | Infraestrutura de compilador reutilizável — backend de otimização/codegen multi-arquitetura usado por Rust e Swift |

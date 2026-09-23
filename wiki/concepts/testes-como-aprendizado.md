@@ -3,8 +3,8 @@ type: concept
 title: "Testes como Aprendizado"
 aliases: ["escrever testes para aprender", "testes como ferramenta de entendimento"]
 date_created: 2026-06-20
-date_updated: 2026-06-20
-source_count: 1
+date_updated: 2026-09-23
+source_count: 3
 tags: [testes, onboarding, aprendizado, codebase, tdd]
 skill: tech-mentor-leadership
 status: stable
@@ -39,3 +39,5 @@ Cada teste é uma impressão ativa e densa: você formula uma hipótese (expecta
 ## Key sources
 
 - [[wiki/sources/como-aprender-novas-codebases]]
+- [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] — validar entregas (unitário e manual) é apontado como remédio central contra bug em produção
+- [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — testes unitários/manuais como uma das três bases de resolver problemas; "código ruim não passa por testes" ([[wiki/concepts/resolver-problemas-como-habilidade-central]])

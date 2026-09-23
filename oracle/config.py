@@ -5,8 +5,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 OPENAI_API_KEY = os.environ["OPENAI_API_KEY"]
-SUPABASE_URL = os.environ["SUPABASE_URL"]
-SUPABASE_SERVICE_KEY = os.environ["SUPABASE_SERVICE_KEY"]
+TURSO_DATABASE_URL = os.environ["TURSO_DATABASE_URL"]
+TURSO_AUTH_TOKEN = os.environ["TURSO_AUTH_TOKEN"]
+ORACLE_API_KEY = os.environ["ORACLE_API_KEY"]
 
 EMBEDDING_MODEL = "text-embedding-3-small"
 EMBEDDING_DIMENSIONS = 1536

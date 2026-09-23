@@ -3,8 +3,8 @@ type: concept
 title: "Efeito Multiplicador"
 aliases: ["multiplier effect", "multiplier mindset", "alavancagem de time"]
 date_created: 2026-08-11
-date_updated: 2026-08-11
-source_count: 1
+date_updated: 2026-09-23
+source_count: 2
 tags: [carreira, lideranca, senioridade, mentoria, impacto, tech-lead]
 skill: tech-mentor-leadership
 status: stub
@@ -33,6 +33,7 @@ No fim, o que importa é o **resultado que o time inteiro entrega** — e aí at
 ## Key sources
 
 - [[wiki/sources/potencial-programador-atitude-mindset]]
+- [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — desafogar o time (apoio técnico, de negócio e em crises) como forma concreta de multiplicar ([[wiki/concepts/desafogar-o-time]])
 
 ## Relacionados
 

@@ -3,8 +3,8 @@ type: concept
 title: "Perfeccionismo em Devs"
 aliases: ["perfeccionismo", "perfectionism", "never good enough"]
 date_created: 2026-04-29
-date_updated: 2026-04-29
-source_count: 1
+date_updated: 2026-09-23
+source_count: 2
 tags: [psicologia, produtividade, carreira, projetos, self-handicapping]
 skill: tech-mentor-leadership
 status: stable
@@ -50,3 +50,4 @@ O perfeccionismo é frequentemente **proteção psicológica**, não busca de qu
 ## Key Sources
 
 - [[sources/por-que-devs-nao-terminam-projetos]]
+- [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — "abandone o perfeccionismo": entregar com consciência e melhoria contínua, jogo da carreira é para ganhar ([[wiki/concepts/entregar-apesar-dos-problemas]])

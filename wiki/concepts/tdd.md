@@ -3,8 +3,8 @@ type: concept
 title: "TDD — Test-Driven Development"
 aliases: ["test driven development", "red green refactor", "desenvolvimento guiado por testes"]
 date_created: 2026-04-22
-date_updated: 2026-09-22
-source_count: 35
+date_updated: 2026-09-23
+source_count: 36
 tags: [testes, tdd, design, red-green-refactor, qualidade, dora, emergent-design]
 skill: tech-mentor-testing
 status: stable
@@ -186,3 +186,4 @@ Ambos insistem numa distinção que DHH, na leitura deles, mistura: **design de 
 - [[wiki/sources/need-driven-development-xunitpatterns]] — fonte primária isolada do termo need-driven development: nomeia formalmente o processo outside-in/London School (código de fora para dentro, todo código dependente substituído por Mock Object verificando indirect outputs), até então só descrito informalmente na seção "As duas escolas"
 - [[wiki/sources/frequent-debugging-xunitpatterns]] — TDD verdadeiro (combinado com storytest-driven development) citado como solução central para o test smell Frequent Debugging, causado por falta de Defect Localization
 - [[wiki/sources/test-driven-bug-fixing-xunitpatterns]] — fonte primária isolada da extensão do TDD para correção de bugs: escrever o unit test que reproduz o defeito antes de depurar e corrigir
+- [[wiki/sources/design-by-contract-video]] — DbC como técnica complementar de corretude, ao lado de testes ([[wiki/concepts/design-by-contract]])

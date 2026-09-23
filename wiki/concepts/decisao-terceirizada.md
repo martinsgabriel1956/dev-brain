@@ -3,8 +3,8 @@ type: concept
 title: "Decisão Terceirizada"
 aliases: ["terceirizar decisões", "outsourcing de decisão", "pedir para influencer decidir por você"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 1
+date_updated: 2026-09-23
+source_count: 2
 tags: [carreira, tomada-de-decisao, mentalidade, autonomia]
 skill: tech-mentor-leadership
 status: draft
@@ -41,3 +41,4 @@ O hábito de terceirizar decisões se alimenta da mesma pressão social que empu
 ## Key Sources
 
 - [[wiki/sources/pare-de-terceirizar-suas-decisoes]]
+- [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] — dicas de youtuber/curso/sênior não devem ser a 'estrela do norte'; praticar e tirar conclusões próprias (cita Fábio Akita)

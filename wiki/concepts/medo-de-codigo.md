@@ -3,8 +3,8 @@ type: concept
 title: "Medo de Código"
 aliases: ["fear of code", "código julgando", "futucar código"]
 date_created: 2026-07-28
-date_updated: 2026-07-28
-source_count: 1
+date_updated: 2026-09-23
+source_count: 2
 tags: [carreira, habitos, psicologia, craftsmanship]
 skill: tech-mentor-leadership
 status: stub
@@ -29,3 +29,4 @@ O hábito de "gostar de futucar código" (mexer, quebrar de propósito, testar l
 ## Key Sources
 
 - [[wiki/sources/7-habitos-programador-altamente-eficaz]]
+- [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] — ligação com o loop de erro e crenças limitantes descritos como base da perda de confiança

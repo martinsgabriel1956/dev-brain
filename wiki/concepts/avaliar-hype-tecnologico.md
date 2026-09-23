@@ -3,8 +3,8 @@ type: concept
 title: "Avaliar Hype Tecnológico com a Tríade Retorno-Risco-Liquidez"
 aliases: ["como identificar hype", "avaliação de tecnologia emergente", "quando adotar tecnologia nova", "hype tecnológico"]
 date_created: 2026-07-09
-date_updated: 2026-09-04
-source_count: 3
+date_updated: 2026-09-23
+source_count: 4
 tags: [hype, tomada-de-decisao, escolha-de-stack, carreira, tech-debt]
 skill: tech-mentor-leadership
 status: stable
@@ -68,3 +68,4 @@ Um projeto pessoal/paralelo em que você declara explicitamente que não busca r
 - [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]]
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — mesma conclusão por outro caminho: não existe tecnologia perfeita, só adequação ao caso de uso específico avaliada contra prós e contras
 - [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]] — aplicação da tríade ao hype consumido pelo cliente de um projeto de IA, não pelo próprio profissional
+- [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] — microsserviços como hype adotado sem saber que problema resolve; 'elegante' e 'moderno' como justificativas vagas

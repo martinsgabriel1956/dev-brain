@@ -3,8 +3,8 @@ type: concept
 title: "Liskov Substitution Principle (LSP)"
 aliases: ["LSP", "liskov", "substituição de liskov"]
 date_created: 2026-05-01
-date_updated: 2026-08-06
-source_count: 3
+date_updated: 2026-09-23
+source_count: 4
 tags: [solid, oop, architecture]
 skill: tech-mentor-backend
 status: stub
@@ -31,3 +31,4 @@ Via [[wiki/sources/solid-principles-in-pictures-ugonna-thelma]]: "se S é subtip
 - [[wiki/sources/design-pattern-proxy]]
 - [[wiki/sources/principios-solid-ilustrados]]
 - [[wiki/sources/solid-principles-in-pictures-ugonna-thelma]]
+- [[wiki/sources/design-by-contract-video]] — LSP e DbC compartilham a mesma origem intelectual (Meyer); ver nota [external] em [[wiki/concepts/design-by-contract]]

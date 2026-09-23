@@ -3,8 +3,8 @@ type: concept
 title: "Fail Fast"
 aliases: ["rejeição rápida", "fast failure"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-09-23
+source_count: 2
 tags: [resiliencia, fail-fast, system-design, latencia]
 skill: tech-mentor-system-design
 status: stub
@@ -48,3 +48,4 @@ Pool cheio → rejeita em 1s com erro explícito, não em 30s com timeout.
 ## Key Sources
 
 - [[sources/bulkhead]]
+- [[wiki/sources/design-by-contract-video]] — pré-condição violada como ponto de falha cedo na fronteira ([[wiki/concepts/design-by-contract]])
