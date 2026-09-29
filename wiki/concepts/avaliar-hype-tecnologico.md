@@ -3,8 +3,8 @@ type: concept
 title: "Avaliar Hype Tecnológico com a Tríade Retorno-Risco-Liquidez"
 aliases: ["como identificar hype", "avaliação de tecnologia emergente", "quando adotar tecnologia nova", "hype tecnológico"]
 date_created: 2026-07-09
-date_updated: 2026-09-23
-source_count: 4
+date_updated: 2026-09-28
+source_count: 5
 tags: [hype, tomada-de-decisao, escolha-de-stack, carreira, tech-debt]
 skill: tech-mentor-leadership
 status: stable
@@ -63,8 +63,13 @@ Um projeto pessoal/paralelo em que você declara explicitamente que não busca r
 
 [[wiki/concepts/hype-de-ia]] descreve, a partir de [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]], uma aplicação adjacente desta tríade fora do contexto de escolha de stack: o cliente de um projeto de IA pode avaliar mal o hype que consome (retorno superestimado, risco/liquidez ignorados) e tentar puxar esse julgamento errado para dentro do escopo do projeto. A resposta prática ali é do implementador, não do cliente — negociar trade-off explícito em vez de aceitar a avaliação de risco distorcida do cliente.
 
+## Hype Que Não Vinga: Custo de Apostar Sem Base
+
+[[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] acrescenta o lado negativo concreto de investir tempo/carreira num hype específico sem fundamentos por trás: microsserviços, squads e o próprio Agile já foram hype — algumas mudam de forma e permanecem relevantes (microsserviços, hoje visto de forma mais crítica: "dá muito trabalho em produção"), outras somem por completo. O autor relata conhecer devs que precisaram se reinventar quase do zero, e outros que desistiram da área, depois de investir tempo e até certificação numa tecnologia que não vingou. Aplica a mesma cautela à IA no momento atual do vídeo: recurso real e útil, mas "ainda tem muita água pra passar debaixo da ponte" — apostar tudo nela sem fortalecer [[wiki/concepts/fundacao-tecnica|fundamentos]] repete o padrão de risco alto/liquidez baixa sem retorno garantido.
+
 ## Key Sources
 
+- [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] — custo real de apostar em hype que não vinga (reinvenção forçada, desistência da área); ressalva sobre IA como hype atual ainda em curso
 - [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]]
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — mesma conclusão por outro caminho: não existe tecnologia perfeita, só adequação ao caso de uso específico avaliada contra prós e contras
 - [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]] — aplicação da tríade ao hype consumido pelo cliente de um projeto de IA, não pelo próprio profissional

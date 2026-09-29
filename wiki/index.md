@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-09-22
+date_updated: 2026-09-28
 ---
 
 
@@ -26,6 +26,8 @@ date_updated: 2026-09-22
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] | André Casciotti: sempre vai faltar conhecimento técnico — condição permanente, não falha pessoal; 3 táticas: estudar por demanda (fechar o leque, abrir por necessidade), praticar cedo na proporção 20/80 estudo/prática, fortalecer fundamentos (linguagem/runtime, lógica, rede, resolver problemas, qualidade) apesar dos ciclos de hype |
+| [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] | André Casciotti: guia do que estudar sendo iniciante — aprender com foco no problema (não no "como fazer"), escolher caminho de carreira rápido, mentalidade de crescimento; lista técnica: C#/ASP.NET MVC backend, teste unitário desde cedo, SQL ANSI, Git/GitHub, fundamentos de CLR/GC, cliente-servidor/HTTP, infra básica; IA acelera o que você já sabe fazer |
 | [[wiki/sources/github-2018-cap-pacelc-particao-video]] | Vídeo de system design: incidente do GitHub 2018 (rede voltou em 43 s, serviço em 24 h+ por escritas divergentes) para explicar CAP (disponibilidade = todo nó vivo responde), o dilema recusar vs. pagar com caixa local e PACELC (latência vs. consistência sem partição), com teste local de leitura local (~0,05 ms) vs. forte (+0,19 ms). |
 | [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] | André Casciotti: para ganhar mais, seja essencial — técnica ajuda a entrar, não a ficar; 3 habilidades (entregar apesar dos problemas, desenrolar demandas, desafogar o time), salário baseado em raridade, crescer na empresa vs. trocar por salário, resolver problemas como base |
 | [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] | André Casciotti: confiança não vem com tempo de carreira, é mentalidade + hábitos; 3 erros — se subestimar, buscar conhecimento na hora errada (avançado antes do básico), ter mais medo do prazo do que do bug; sem resultado entregue a confiança não basta |
@@ -881,6 +883,13 @@ date_updated: 2026-09-22
 | [[wiki/concepts/matriz-risco-dificuldade-review-ia]] | Framework de transição para migrar de "reviso tudo" para "não reviso": classifica cada PR por risco × dificuldade e aplica merge automático (baixo risco, com teste), amostragem (risco médio) ou revisão manual em pares (alto risco: auth, pagamentos, migração de banco) |
 | [[wiki/concepts/sindrome-do-impostor]] | Confundir "código reprovado" com "eu fui reprovado" — o gatilho mais comum no primeiro emprego |
 | [[wiki/concepts/problema-de-escopo-aberto]] | Escopo fechado (jogo, objetivo + caminho previsível) vs. escopo aberto (vida real, sem limites definidos) — operacionalizar o problema em pedaços fechados e trocar foco de resultado por ação |
+| [[wiki/concepts/aprender-com-foco-no-problema]] | Todo trabalho de dev nasce de um problema, não de um "como fazer"; exercício: criar sistema do zero a partir de modelo real e "caçar problemas" (auth, filtro/índice, permissão, SLA) |
+| [[wiki/concepts/escolha-rapida-de-caminho-de-carreira]] | Escolher rápido (linguagem → vertente → stack) em vez de "abraçar o mundo"; trocar depois é melhor que ficar decidindo para sempre — stub |
+| [[wiki/concepts/mentalidade-de-crescimento]] | Nada é definitivo na carreira; barreira de aprender nova linguagem cai depois da primeira — recomenda experimentar outro paradigma (Java→Clojure, C#→F#) — stub |
+| [[wiki/concepts/curadoria-de-informacao]] | Excesso de opinião hoje atrapalha mais que ajuda; curadoria própria (aumentar/enxugar fontes) é processo iterativo, não escolha única — stub |
+| [[wiki/concepts/mito-da-falta-de-conhecimento-tecnico]] | Sempre vai faltar conhecimento técnico — condição permanente, não falha corrigível; ignorância como bênção; limite cognitivo (memória curto vs. longo prazo) — stub |
+| [[wiki/concepts/estudar-por-demanda]] | Fechar o leque no foco (profundidade), superficialidade no resto, e abrir por demanda quando surge necessidade real — não antes; doses pequenas e constantes — stub |
+| [[wiki/concepts/proporcao-8020-estudo-pratica]] | 20% estudo/80% prática dentro do foco (inverso fora); informação→conhecimento→habilidade; nomeia o anti-padrão "dev pitaqueiro" — stub |
 | [[wiki/concepts/comunicacao-tecnica]] | Ser entendido, não apenas falar — acelerador de time |
 | [[wiki/concepts/colaboracao-times]] | Construir junto; empatia de papel e gestão de conflito |
 | [[wiki/concepts/autonomia-responsabilidade]] | Liberdade + maturidade para alinhar expectativas antes de executar |
@@ -1543,6 +1552,8 @@ date_updated: 2026-09-22
 | Página | Hook |
 |---|---|
 | [[wiki/concepts/requisicao-resposta]] | O idioma básico do backend — método, rota, headers, body de um lado; status code do outro |
+| [[wiki/concepts/arquitetura-cliente-servidor]] | Fundamento pré-HTTP: onde termina o cliente e começa o servidor, como o browser se encaixa — falta comum até em devs experientes que só "entregam código" — stub |
+| [[wiki/concepts/clr-e-garbage-collector]] | CLR/CTS/GC do .NET explicam boa parte dos problemas de performance em produção; estudar em paralelo com a prática, por demanda — stub |
 | [[wiki/concepts/contrato-de-api]] | API como contrato entre cliente e servidor — permite mudar o backend por dentro sem quebrar quem consome |
 | [[wiki/concepts/validacao-de-entrada]] | Nunca confiar no client — separação em camadas (controller/service/banco) evita regra de negócio espalhada |
 | [[wiki/concepts/autenticacao-e-autorizacao]] | Duas perguntas diferentes: quem é você (autenticação) vs. o que você pode fazer (autorização) |

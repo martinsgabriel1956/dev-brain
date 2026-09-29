@@ -3,8 +3,8 @@ type: concept
 title: "Escolha de Stack"
 aliases: ["escolher stack", "stack choice", "framework batteries included", "escolha de framework"]
 date_created: 2026-07-07
-date_updated: 2026-09-03
-source_count: 4
+date_updated: 2026-09-28
+source_count: 5
 tags: [stack, framework, projetos, mvp, saas, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -46,6 +46,10 @@ O [[wiki/concepts/avaliar-hype-tecnologico]] explica *por que* essa dicotomia ap
 
 Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], o autor do Find My SaaS (feito em Ruby) recebe, sem solicitar, um e-mail sugerindo reescrever o projeto em TypeScript com a justificativa de que Ruby é "fracamente tipado". Rejeita a sugestão: se a troca fosse mesmo por tipagem forte, a escolha não seria TypeScript, e trocar de stack só por preferência alheia — sem avaliação real de custo/benefício para o projeto em questão — coloca em risco a execução. Ver [[wiki/concepts/especialista-de-powerpoint]] para o padrão mais amplo de feedback não solicitado de quem nunca lançou um produto.
 
+## Escolha de Stack de Carreira vs. de Projeto
+
+[[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] aplica uma lógica distinta da dicotomia aprender-vs-monetizar acima: para quem ainda não tem repertório para decidir por objetivo próprio, o critério vira majoritariamente **empregabilidade** — escolher rápido entre C#, Java ou JavaScript (na experiência do autor, as de maior mercado corporativo) e ir atrás de vaga focada nessa escolha, em vez de ficar avaliando dezenas de linguagens. Ver [[wiki/concepts/escolha-rapida-de-caminho-de-carreira]] para o detalhamento desse caso — trata-se da escolha do **caminho de carreira** de um iniciante, não da stack de um projeto específico.
+
 ## Ver Também
 
 - [[wiki/concepts/checklist-primeiro-dia-projeto]] — a escolha de stack é o primeiro passo do checklist
@@ -58,3 +62,4 @@ Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], 
 - [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]]
 - [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — rejeição de pressão externa para trocar de stack (Ruby → TypeScript) sem justificativa técnica real
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — escolha de tecnologia reposicionada como exercício de tradeoff contextual (caso de uso × prós e contras), não de repertório memorizado
+- [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] — escolha de stack de carreira (critério de empregabilidade) para iniciante, distinta da escolha de stack de projeto

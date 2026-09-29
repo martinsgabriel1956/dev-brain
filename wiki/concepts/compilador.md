@@ -3,8 +3,8 @@ type: concept
 title: "Compilador"
 aliases: ["compiler", "compilação", "interpretador", "AST", "análise léxica"]
 date_created: 2026-06-26
-date_updated: 2026-08-27
-source_count: 5
+date_updated: 2026-09-28
+source_count: 6
 tags: [cs-fundamentals, compiladores, interpretadores, ast, linguagens-de-programacao]
 skill: cs-fundamentals
 status: draft
@@ -95,9 +95,14 @@ O compilador é a [[abstracao]] que permite escrever `let x = 10` e não se preo
 
 [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] traz um relato em primeira pessoa (engenheiro de 15 anos em assembly migrando para C) de que "confiar no compilador" já foi, na sua época, tão desconfortável quanto "confiar na IA" é hoje — a ponto de o próprio engenheiro ter que escrever código só para auditar a qualidade do assembly gerado pelo compilador, porque os compiladores da época eram pouco confiáveis. A fonte usa isso para argumentar que gerar código via LLM é mais uma camada em cima da mesma cadeia (código-fonte → compilador/interpretador → bytecode/máquina virtual → linguagem de máquina), não uma substituição dela — ver [[wiki/concepts/linguagem-natural-como-camada-de-abstracao]].
 
+## Fundamentos de Runtime como Recomendação para Iniciantes
+
+[[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] recomenda, para quem está começando (ou mesmo experiente sem essa base), estudar o pipeline de compilação da própria linguagem escolhida e a VM que a executa — no caso do C#, Roslyn (compilador) e a CLR/GC (ver [[wiki/concepts/clr-e-garbage-collector]]) — não em profundidade teórica isolada, mas em paralelo com a prática, deixando os assuntos "pipocarem" conforme erros de build, warnings do compilador ou problemas de performance aparecem no dia a dia.
+
 ## Key sources
 
-- [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — paralelo assembly→C como precedente histórico de "confiar na caixa mágica"; Java/Kotlin→bytecode→JVM como exemplo de que a linguagem de alto nível não é "a linguagem que fala com a máquina"
+- [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]]
+- [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] — recomendação de estudar compilador/IDE/runtime em paralelo com a prática, por demanda; ver [[wiki/concepts/clr-e-garbage-collector]] — paralelo assembly→C como precedente histórico de "confiar na caixa mágica"; Java/Kotlin→bytecode→JVM como exemplo de que a linguagem de alto nível não é "a linguagem que fala com a máquina"
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]] — decisões de design (propósito, gramática, tipos, memória, ecossistema) que antecedem e envolvem o pipeline de compilação
 - [[wiki/sources/como-um-compilador-transforma-codigo-em-instrucoes-de-maquina]] — detalhamento da análise semântica (tabela de símbolos), da IR como forma atômica que evita explosão N×M, e da alocação de registradores na geração de código

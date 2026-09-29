@@ -3,8 +3,8 @@ type: concept
 title: "Alto Nível Antes do Fundamento"
 aliases: ["ordem invertida de aprendizado", "top-down learning path", "fundamento sob demanda"]
 date_created: 2026-08-17
-date_updated: 2026-09-23
-source_count: 2
+date_updated: 2026-09-28
+source_count: 3
 tags: [aprendizado, carreira, junior, ensino, fundamentos]
 skill: tech-mentor-leadership
 status: stub
@@ -49,7 +49,12 @@ Esta tese está em tensão parcial, não em contradição direta, com a leitura 
 - [[wiki/concepts/sintaxe-vs-conhecimento-perene]] — por que aprender sintaxe tarde não é o mesmo que nunca aprender conhecimento perene
 - [[wiki/concepts/dependencia-ia]] — quando começar pelo alto nível vira dependência em vez de ponte para o fundamento
 
+## Tensão de Ênfase com "Fortaleça as Bases Proativamente"
+
+[[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] defende fortalecer fundamentos de forma proativa e constante ("em doses pequenas e constantes"), o que soa mais prescritivo do que a leitura top-down desta página (fundamento "puxado" pela dor real do projeto). Não é contradição direta — [[wiki/concepts/estudar-por-demanda]], da mesma fonte, já descreve um meio-termo (superficialidade proativa + aprofundamento reativo por necessidade) que concilia as duas leituras — mas fica registrada a diferença de ênfase entre as fontes.
+
 ## Key Sources
 
+- [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] — tensão de ênfase (fortalecer bases proativamente vs. puxar fundamento pela dor); conciliada por [[wiki/concepts/estudar-por-demanda]]
 - [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]]
 - [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] — querer 'testes avançados' sem saber testar/mockar; divisão básico/avançado é inventada e relativa

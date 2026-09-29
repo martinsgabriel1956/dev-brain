@@ -3,8 +3,8 @@ type: concept
 title: "Refatoração"
 aliases: ["refactoring", "refatorar"]
 date_created: 2026-07-15
-date_updated: 2026-09-23
-source_count: 9
+date_updated: 2026-09-28
+source_count: 10
 tags: [refactoring, clean-code, craftsmanship, design-de-software, tech-debt]
 skill: tech-mentor-backend
 status: draft
@@ -112,6 +112,7 @@ Refatoração idealmente não é um "projeto" à parte que precisa de aprovaçã
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]]
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — "ficar estratégico" ao modificar código existente; regras de manutenção de comentários (Cap. 16)
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — refatoração conduzida por IA com [[wiki/concepts/plan-mode|plan mode]] e [[wiki/concepts/strategy-pattern|Strategy]]; comportamento externo (interface do front end) preservado — mas a validação do resultado é visual/estrutural, sem os testes automatizados que esta página exige como garantia
+- [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] — "melhoria contínua" aplicada ao *aprendizado*: implementar uma versão simples primeiro e melhorar depois, uma coisa de cada vez, em vez de tentar fazer tudo perfeito de uma vez ([[wiki/concepts/aprender-com-foco-no-problema]])
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — catálogo de 9 code smells com régua de seis critérios (compreensível, testável, acoplamento, coesão, modular, manutenção) para decidir se um smell concreto justifica refatoração
 - [[wiki/sources/extract-interface-xunitpatterns]] — verbete de "Code Refactorings" (xUnitPatterns.com/Meszaros, conteúdo atribuído a Fowler): Extract Interface como refatoração estrutural de tipos, pré-requisito técnico para Test Doubles em linguagens estaticamente tipadas
 - [[wiki/sources/extract-method-xunitpatterns]] — verbete-irmão de "Code Refactorings" (mesma proveniência host≠autor): Extract Method como refatoração de comportamento, técnica recomendada para eliminar Test Code Duplication

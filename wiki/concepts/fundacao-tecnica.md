@@ -3,8 +3,8 @@ type: concept
 title: "Fundação Técnica"
 aliases: ["fundamentos", "base técnica", "foundations"]
 date_created: 2026-05-16
-date_updated: 2026-09-23
-source_count: 14
+date_updated: 2026-09-28
+source_count: 15
 tags: [aprendizado, carreira, fundamentos]
 skill: tech-mentor-leadership
 status: stable
@@ -79,8 +79,13 @@ Isso não se aplica a quem nunca construiu a fundação — um dev que aprendeu 
 
 [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] reforça o argumento central desta página com um ângulo específico da era do Claude Code: as "boas práticas" recomendadas para orientar ferramentas de IA — padrão de arquitetura, design patterns, system design — são, na origem, os mesmos fundamentos clássicos de engenharia de software. Os problemas que a IA comete (migração de banco malfeita, otimização errada) são justamente onde a fundamentação teórica falha em orientar. O autor faz autocrítica: focou demais em aprender o framework do momento sem entender *por que* um padrão era bom, e estima que teria evoluído mais rápido se tivesse conectado os dois desde o início.
 
+## Ninguém Pede nem Ensina o Básico
+
+[[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] acrescenta uma explicação de por que a fundação é tão frequentemente pulada: vagas de emprego não listam "lógica boa" ou "código fácil de manter" como requisito, porque isso é tratado como obrigação implícita e óbvia; criadores de conteúdo (autor incluso) também falam pouco de fundamentos, porque a audiência busca o que está na moda (hype do momento). O resultado é ausência de sinal externo cobrando o básico, apesar de todos assumirem que ele é dominado — quem chega agora ignora fundamentos justamente porque ninguém pede, não porque não importem. Lista concreta de fundamentos recomendada por essa fonte: linguagem/runtime (CLR do .NET, JVM — entender por que a aplicação se comporta de certo jeito em produção, ex. memory leak), rede e infraestrutura básica, lógica de programação (deficiência comum e invisível sem code review ou análise estática), resolver problemas reais (nem sempre com código — às vezes só análise e consulta em banco), e entregar código com qualidade e sem bugs. Reforça com um caso pessoal: só conseguiu aprender teste unitário depois de estudar arquitetura, porque faltava o fundamento anterior (desacoplamento) — fundamentos têm dependência entre si nem sempre óbvia antes de vivida. Ver [[wiki/concepts/estudar-por-demanda]] para a recomendação complementar de "doses pequenas e constantes" ao estudar fundamentos.
+
 ## Key Sources
 
+- [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] — ninguém pede/ensina o básico nas vagas nem no conteúdo; lista concreta (runtime/CLR/JVM, rede, lógica, resolver problemas, qualidade); caso pessoal de teste unitário travado por falta de fundamento de arquitetura
 - [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] — fundamentação teórica como pré-requisito para guiar corretamente a IA (Claude Code); autocrítica sobre priorizar framework do momento sem entender a teoria por trás
 - [[wiki/sources/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico]] — analogia de carreira via cinema: produção → segunda unidade → direção, aplicada ao risco de começar a carreira já dependendo de IA
 - [[wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos]] — sociedade dependente de infraestrutura computacional como justificativa estrutural (não só de carreira) para profissionais mais aprofundados

@@ -3,8 +3,8 @@ type: concept
 title: "Prática Deliberada"
 aliases: ["deliberate practice", "10000 horas", "regra das 10000 horas", "800 horas júnior", "horas de prática"]
 date_created: 2026-06-10
-date_updated: 2026-09-02
-source_count: 4
+date_updated: 2026-09-28
+source_count: 5
 tags: [aprendizado, carreira, mentalidade, iniciante, maestria]
 skill: tech-mentor-leadership
 status: stable
@@ -78,8 +78,13 @@ Exercício de curso é deliberadamente simplificado por razões didáticas — b
 - [[wiki/concepts/mito-do-genio-mozart]] — caso de estudo histórico que desmonta a alternativa (talento inato) a esta tese
 - [[wiki/concepts/disciplina-vs-talento]] — a tese "disciplina supera talento" da qual a prática deliberada é o mecanismo
 
+## A Proporção 80/20 Como Heurística Complementar
+
+[[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] contribui uma heurística de alocação de tempo complementar (não uma medição rigorosa como as 800–1000h citadas acima): dentro do foco de carreira, 20% do tempo em estudo e 80% em prática; fora do foco, a proporção se inverte. É uma regra prática pessoal do autor, sem dado empírico citado — ver [[wiki/concepts/proporcao-8020-estudo-pratica]] para o detalhamento e o anti-padrão do "dev pitaqueiro" que ela busca evitar.
+
 ## Key Sources
 
+- [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] — proporção 80/20 estudo/prática dentro e fora do foco, como heurística complementar às 800–1000h
 - [[sources/quanto-tempo-aprender-programacao]] — tabela de horas/tempo, teto cognitivo diário, analogia da mangueira de incêndio
 - [[wiki/sources/the-comparison-trap-in-programming-careers]] — estratégia de "refazer exercícios antigos do zero sem ver a solução" como forma de medir progresso; equivale a prática deliberada com feedback imediato sobre velocidade e automatização
 - [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] — prática de curso vs. prática real; automações pessoais de baixo risco como veículo de prática deliberada

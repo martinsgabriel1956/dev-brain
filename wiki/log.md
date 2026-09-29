@@ -12167,3 +12167,31 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (18):** [[wiki/entities/andre-casciotti]], [[wiki/concepts/soft-skills]], [[wiki/concepts/ownership-proativo]], [[wiki/concepts/autonomia-responsabilidade]], [[wiki/concepts/perfeccionismo-em-devs]], [[wiki/concepts/comunicacao-tecnica]], [[wiki/concepts/refatoracao]], [[wiki/concepts/tech-debt]], [[wiki/concepts/repertorio]], [[wiki/concepts/habilidade-de-lidar-com-pessoas]], [[wiki/concepts/politica-organizacional]], [[wiki/concepts/efeito-multiplicador]], [[wiki/concepts/informacao-conhecimento-habilidade]], [[wiki/concepts/medo-do-prazo-vs-medo-do-bug]], [[wiki/concepts/ler-codigo-de-terceiros]], [[wiki/concepts/atitude-mindset-vs-tech-skill]], [[wiki/concepts/confianca-profissional-dev]], [[wiki/concepts/testes-como-aprendizado]], [[wiki/concepts/requisitos-funcionais-e-nao-funcionais]] — Key Sources + bump de `source_count`/`date_updated`.
 
 **Notas:** fonte baseada só na experiência do autor (sem dados; raridade→salário e preconceito etário ~40 anos são afirmações sem evidência). A pergunta de abertura (técnico vs. político) só é respondida pelo lado comportamental. Tensão leve e conciliável com [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] (entregar "mais ou menos" vs. não correr): ambas pedem decisão consciente e alinhada. Sem contradição factual.
+
+---
+
+## [2026-09-28] ingest | O Que Estudar — Guia para Iniciantes (André Casciotti)
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/o-que-estudar-guia-para-iniciantes-andre-casciotti.md` (já em português; sem tradução). Título original desconhecido — título descritivo derivado do conteúdo. Vários termos corrompidos pela transcrição automática (ex.: "as pinet MVC"→ASP.NET MVC, "Reds"→Redis, "Roslin"→Roslyn, "IS"→IIS, "Castro"→Kestrel, "SCAD Server"→SQL Server, "Aliance"→ANSI, "Cubernits"→Kubernetes) corrigidos por contexto e listados no cabeçalho do raw. Autor se identifica como "André Casar" — provável erro de transcrição de André Casciotti, já presente na wiki com 4 fontes anteriores.
+
+**Skill:** tech-mentor-leadership (a skill não tem referência específica para orientação de estudo de iniciante; conteúdo mantido fiel à fonte, sem adições externas).
+
+**Criado:** [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]], [[wiki/concepts/aprender-com-foco-no-problema]], [[wiki/concepts/escolha-rapida-de-caminho-de-carreira]], [[wiki/concepts/mentalidade-de-crescimento]], [[wiki/concepts/curadoria-de-informacao]], [[wiki/concepts/arquitetura-cliente-servidor]], [[wiki/concepts/clr-e-garbage-collector]]
+
+**Tocadas (11):** [[wiki/entities/andre-casciotti]] (5ª fonte), [[wiki/concepts/repertorio]], [[wiki/concepts/escolha-de-stack]], [[wiki/concepts/resolver-problemas-como-habilidade-central]], [[wiki/concepts/requisitos-funcionais-e-nao-funcionais]], [[wiki/concepts/testes-como-aprendizado]], [[wiki/concepts/refatoracao]], [[wiki/concepts/git]], [[wiki/concepts/compilador]], [[wiki/concepts/ia-como-amplificador]], [[wiki/concepts/sql-alem-do-basico]] — Key Sources + bump de `source_count`/`date_updated`.
+
+**Notas:** fonte baseada só na experiência do autor, sem dados de mercado citados para as recomendações de stack (C#/Java/JavaScript "têm mais mercado" que Python). Tensão leve registrada como Open Question: o critério "qual linguagem tem mais mercado" para escolha de carreira contrasta em ênfase (não em conteúdo) com [[wiki/concepts/escolha-de-stack]], que trata escolha de stack de projeto como função de objetivo (aprender vs. monetizar). Sem contradição factual com o restante da wiki — reforça teses já presentes (fundamentos importam mesmo na era da IA, via [[wiki/concepts/ia-como-amplificador]]; teste desde cedo, via [[wiki/concepts/testes-como-aprendizado]]).
+
+---
+
+## [2026-09-28] ingest | Por Que Sempre Vai Faltar Conhecimento Técnico (André Casciotti)
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti.md` (já em português; sem tradução). Título original desconhecido — título descritivo derivado do conteúdo. Autor se identifica como "André Casac", provável erro de transcrição de André Casciotti, já presente na wiki com 5 fontes anteriores. Termos corrigidos por contexto (OAuth, Kubernetes, .NET, IA) e listados no cabeçalho do raw.
+
+**Skill:** tech-mentor-leadership (a skill não tem referência específica para este tema — mito da falta de conhecimento, proporção estudo/prática, fundamentos vs. hype; conteúdo mantido fiel à fonte, sem adições externas).
+
+**Criado:** [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]], [[wiki/concepts/mito-da-falta-de-conhecimento-tecnico]], [[wiki/concepts/estudar-por-demanda]], [[wiki/concepts/proporcao-8020-estudo-pratica]]
+
+**Tocadas (10):** [[wiki/entities/andre-casciotti]] (6ª fonte), [[wiki/concepts/informacao-conhecimento-habilidade]], [[wiki/concepts/sobrecarga-de-informacao]], [[wiki/concepts/avaliar-hype-tecnologico]], [[wiki/concepts/escolha-rapida-de-caminho-de-carreira]], [[wiki/concepts/fundacao-tecnica]], [[wiki/concepts/pratica-deliberada]], [[wiki/concepts/curadoria-de-informacao]], [[wiki/concepts/alto-nivel-antes-do-fundamento]], [[wiki/concepts/resolver-problemas-como-habilidade-central]] — Key Sources + bump de `source_count`/`date_updated`.
+
+**Notas:** fonte baseada só na experiência do autor, sem dado empírico citado para a proporção 20/80 estudo/prática nem para "quanto mais se aprende, mais se sente falta" (marcado como Open Question). Tensão leve de ênfase (não de conteúdo) registrada entre [[wiki/concepts/estudar-por-demanda]] (fortalecer fundamentos proativamente, em doses constantes) e a leitura top-down de [[wiki/concepts/alto-nivel-antes-do-fundamento]] (fundamento puxado pela dor real) — conciliada dentro da própria fonte pelo mecanismo de "superficialidade proativa + aprofundamento reativo". Sem contradição factual com o restante da wiki — reforça e aprofunda teses já presentes (informação vs. conhecimento vs. habilidade, avaliação de hype tecnológico, valor dos fundamentos).

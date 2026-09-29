@@ -3,8 +3,8 @@ type: concept
 title: "IA como Amplificador (sem julgamento)"
 aliases: ["ia amplificador", "ai as amplifier", "amplificador sem julgamento"]
 date_created: 2026-08-10
-date_updated: 2026-09-14
-source_count: 6
+date_updated: 2026-09-28
+source_count: 7
 tags: [ia-produtividade, seniority, codigo-legado, code-review, julgamento]
 skill: tech-mentor-leadership
 status: draft
@@ -68,3 +68,4 @@ O diferencial deixa de ser "escrever rápido" e passa a ser **julgar o que foi g
 - [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]]
 - [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — formulação "copiloto, não download do cérebro"; falso positivo quando o usuário não sabe o que pedir
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — devs júnior com acesso total a IA ainda cometem erros de júnior; amplificação de velocidade sem substituir julgamento
+- [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] — formulação direta a devs iniciantes: "a IA acelera aquilo que você já faz"; quem programa bem entrega mais rápido, quem só faz código porcaria põe bug em produção mais rápido — usada para justificar que fundamentos ainda precisam ser estudados

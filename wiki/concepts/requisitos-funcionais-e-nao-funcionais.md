@@ -3,8 +3,8 @@ type: concept
 title: "Requisitos Funcionais e Não Funcionais"
 aliases: ["requisitos funcionais", "requisitos não funcionais", "RNF", "functional requirements", "non-functional requirements", "levantamento de requisitos"]
 date_created: 2026-09-03
-date_updated: 2026-09-23
-source_count: 5
+date_updated: 2026-09-28
+source_count: 6
 tags: [system-design, requisitos, arquitetura, entrevistas, escopo]
 skill: tech-mentor-system-design
 status: stub
@@ -44,3 +44,4 @@ Um enunciado de entrevista é, por construção, um [[wiki/concepts/problema-de-
 - [[wiki/sources/como-se-comportar-na-entrevista-de-system-design-tier-s]] — levantamento tratado como negociação em voz alta com o entrevistador ("quantos usuários simultâneos a gente está considerando?"), sem precisar saber os números de antemão; o candidato pode propor um número e pedir confirmação
 - [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] — sem análise de requisitos o teste sai 'viciado'; ordem correta: requisito antes de teste
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — análise de requisitos como base de conhecimento de negócio e de completar requisitos incompletos perguntando ([[wiki/concepts/desenrolar-demandas]])
+- [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] — "caçar problemas" num sistema de estudo (modelo real + implementações como autenticação, filtro/índice, permissão) como prática autodirigida de levantamento de requisitos; ver [[wiki/concepts/aprender-com-foco-no-problema]]; SQL como DML mínimo (select/insert/update/delete) recomendado antes de DDL

@@ -3,8 +3,8 @@ type: concept
 title: "SQL Além do Básico"
 aliases: ["sql avançado portfolio", "joins agregações subqueries", "domínio SQL"]
 date_created: 2026-04-25
-date_updated: 2026-07-29
-source_count: 4
+date_updated: 2026-09-28
+source_count: 5
 tags: [sql, postgresql, mysql, portfolio, backend, banco-de-dados]
 skill: tech-mentor-leadership
 status: stub
@@ -54,6 +54,10 @@ PostgreSQL é o banco relacional mais comum em vagas backend modernas. Demonstra
 
 Além de portfólio, há um argumento de produção: queries escritas diretamente tendem a ser mais otimizadas do que as geradas por ORM, porque quem escreve sabe exatamente quais tabelas relaciona, quais colunas retorna e se a query está batendo o [[wiki/concepts/database-index|índice]]. Em sistemas com relacionamentos profundos e chaves compostas, isso deixa de ser preferência e vira necessidade — o ORM simplesmente não consegue expressar a lógica. Ver [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]].
 
+## O Piso Antes do Teto: SQL ANSI e DML Básico
+
+Esta página documenta o teto (JOINs, agregações, subqueries, full-text search) — mas [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] argumenta que, para um iniciante, o piso mínimo é o **DML** da linguagem SQL ANSI (select, insert, update, delete), sem necessidade de aprofundar em DDL (criação de tabela) nesse momento — em empresas maiores normalmente alguém cuida disso, ou já se usa um ORM com migrations. A fonte reduz SQL a **teoria de conjuntos aplicada**: o join do select é a mesma lógica de interseção/junção de conjuntos estudada na escola — um ângulo pedagógico para quem SQL ainda "assusta". Sobre o banco a usar para praticar: recomenda SQL Server para quem trabalha ou pretende trabalhar com C# (pacotes de licenciamento combinados nas empresas), com MySQL/MariaDB e PostgreSQL como alternativas gratuitas.
+
 ## Relações
 
 - [[portfolio-backend-junior]]
@@ -67,3 +71,4 @@ Além de portfólio, há um argumento de produção: queries escritas diretament
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]
 - [[wiki/sources/full-text-search-mysql-postgresql]] — Full-Text Search como demonstração prática de ir além do CRUD básico
+- [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] — o piso mínimo (DML de SQL ANSI) antes do teto documentado nesta página; SQL como teoria de conjuntos aplicada
