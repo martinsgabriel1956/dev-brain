@@ -3,8 +3,8 @@ type: concept
 title: "FOMO Tecnológico"
 aliases: ["fomo", "fear of missing out", "ansiedade de adoção"]
 date_created: 2026-05-18
-date_updated: 2026-08-05
-source_count: 4
+date_updated: 2026-09-29
+source_count: 5
 tags: [comportamento, produtividade, agentes-ia, burnout, hype-de-ia, carreira, fundamentos, graph-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -60,9 +60,14 @@ Isso não torna o FOMO falso — torna o ecossistema de informação sobre IA di
 
 [[wiki/sources/graph-engineering-do-loop-ao-grafo]] descreve o mesmo mecanismo de sinal-vs-ruído sob outro nome: toda semana um termo novo vira post de LinkedIn (loop engineering, um agente novo, "graph engineering"), e a tentação é "parar tudo" para estudar cada um do zero. O autor argumenta que já saber o que é uma estrutura de dados de grafo (conhecimento de fundamentos, não de hype) permitiu assimilar "graph engineering" rapidamente ao ler um tweet, sem pânico — e decidir conscientemente aplicar só o que fazia sentido, em vez de se jogar de cabeça. Resume isso como "a IA é uma alavanca (leverage) de algo que você já faz e já sabe" — a alavanca cresce com conhecimento prático e de base, e quem a tem "perde um pouco o FOMO": vê o termo novo, reconhece o padrão de baixo, e decide não reagir por ansiedade. Mesma lógica de sinal-vs-ruído/JOMO de [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]], aplicada especificamente ao ciclo de hype de nomenclatura de arquitetura de agentes (prompt → harness → loop → grafo, ver [[wiki/concepts/loop-engineering]]).
 
+## Versão Organizacional do FOMO
+
+O equivalente empresarial é o [[wiki/concepts/isomorfismo-mimetico]]: a empresa teme "não estar andando na mesma direção" das outras. Ver [[wiki/concepts/problema-antes-da-tecnologia]].
+
 ## Key Sources
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
 - [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — origem pré-IA do padrão, com o conceito complementar de JOMO
 - [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — fundamentos de estrutura de dados como alavanca contra o ciclo semanal de nomenclatura hype em arquitetura de agentes
+- [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — versão organizacional (empresa que teme não seguir os pares): isomorfismo mimético

@@ -3,8 +3,8 @@ type: entity
 title: "Fred Brooks"
 aliases: ["fred brooks", "Frederick Brooks", "No Silver Bullet", "Mythical Man-Month"]
 date_created: 2026-04-23
-date_updated: 2026-07-20
-source_count: 3
+date_updated: 2026-09-30
+source_count: 5
 tags: [fred-brooks, essential-complexity, accidental-complexity, software-engineering, mythical-man-month, design-concept]
 skill: tech-mentor-system-design
 status: stable
@@ -40,8 +40,18 @@ Argumento central: não existe bala de prata em software porque a maior parte da
 - [[concepts/essential-complexity]] — conceito cunhado por Brooks
 - [[concepts/ddd-strategic]] — DDD é uma metodologia para lidar com complexidade essencial de domínio
 
+## Citação em Vídeo sobre o Dev na Era da IA
+
+[[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] cita Brooks ("o saudoso") como alguém que responde muito do que se vive com a IA, sem especificar obra ou frase (a ligação com *No Silver Bullet* seria inferência).
+
+## Lei de Brooks e Time Cirúrgico em Vídeo sobre Times Menores
+
+Verbete próprio: [[wiki/concepts/lei-de-brooks]]. [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]] usa a lei para defender times pequenos e recomenda ler o capítulo sobre "time cirúrgico" de um livro antigo (grafia ilegível na transcrição; provavelmente *The Mythical Man-Month*, inferência). Ver [[wiki/concepts/time-cirurgico]].
+
 ## Key Sources
 
 - [[sources/conceitos-que-ninguem-ensina]]
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
 - [[wiki/sources/cognitive-debt-margaret-storey]] — coordenação/sobrecarga cognitiva aplicada a agentes de IA
+- [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — citado sem obra/frase especificada
+- [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]

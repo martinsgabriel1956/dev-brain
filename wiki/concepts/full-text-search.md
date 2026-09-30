@@ -3,8 +3,8 @@ type: concept
 title: "Full-Text Search"
 aliases: ["busca full text", "FULLTEXT INDEX", "match against", "tsvector tsquery", "busca por relevância em SQL"]
 date_created: 2026-07-29
-date_updated: 2026-07-29
-source_count: 2
+date_updated: 2026-09-29
+source_count: 3
 tags: [banco-de-dados, full-text-search, mysql, postgresql, sql, performance, relevancia, gin]
 skill: tech-mentor-data
 status: stable
@@ -78,3 +78,4 @@ Tanto `FULLTEXT INDEX` (MySQL) quanto o índice `GIN` sobre `tsvector` (PostgreS
 
 - [[wiki/sources/full-text-search-mysql-postgresql]] — fonte principal: LIKE vs. Full-Text Search, MySQL FULLTEXT/MATCH AGAINST, PostgreSQL tsvector/tsquery/GIN, lexemas
 - [[wiki/sources/elasticsearch-opensearch]] — próximo degrau quando o Full-Text Search nativo não é mais suficiente (BM25, facets, >10M docs)
+- [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — outra implementação possível da [[wiki/concepts/busca-por-palavra-chave]] em RAG híbrido (a fonte não especifica)

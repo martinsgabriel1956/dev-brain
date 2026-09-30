@@ -3,8 +3,8 @@ type: concept
 title: "Recursão"
 aliases: ["recursion", "função recursiva", "chamada recursiva"]
 date_created: 2026-06-26
-date_updated: 2026-09-03
-source_count: 6
+date_updated: 2026-09-29
+source_count: 7
 tags: [cs-fundamentals, algoritmos, recursao, pilha-de-execucao, dividir-e-conquistar]
 skill: cs-fundamentals
 status: draft
@@ -116,3 +116,4 @@ Nem todo problema "naturalmente recursivo" precisa de recursão de fato — bina
 - [[wiki/sources/recursao-fatorial-fibonacci-javascript]] — trace passo a passo de fatorial e Fibonacci recursivos em JavaScript, caso base vs. chamada recursiva
 - [[wiki/sources/algoritmos-de-ordenacao-bubble-insertion-selection-merge-quicksort-heapsort]] — Merge Sort e Quicksort como exemplos canônicos de dividir-para-conquistar recursivo, com trace numérico completo de divisão e (no Merge Sort) remontagem
 - [[wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization]] — por que "recursão é mais lenta" é específico de linguagens sem TCO, não universal; conversão de fatorial recursivo em iterativo com stack manual; leitura de assembly (`call` vs. `jump`); tese de Church-Turing como base formal da equivalência recursão/iteração
+- [[wiki/sources/ordenacao-selection-quicksort-bubble-sort-live-coding]] — Quicksort como recursão "inteligente": caso base `len(array) < 2`, cada chamada recebe um subarray menor; distinção Quicksort (recursivo) × Bubble Sort (dois loops iterativos); ver [[wiki/concepts/quicksort]] e [[wiki/concepts/dividir-para-conquistar]]

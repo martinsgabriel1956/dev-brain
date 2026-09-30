@@ -3,8 +3,8 @@ type: concept
 title: "Event-Driven Architecture (EDA)"
 aliases: ["arquitetura orientada a eventos", "eda", "event driven"]
 date_created: 2026-07-30
-date_updated: 2026-09-22
-source_count: 5
+date_updated: 2026-09-30
+source_count: 6
 tags: [event-driven, mensageria, saga-pattern, cqrs, microsservicos, arquitetura]
 skill: tech-mentor-backend
 status: stub
@@ -34,6 +34,10 @@ Ganha-se desacoplamento e ausência de gargalo síncrono; perde-se consistência
 
 [[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] mostra, num exemplo passo a passo (cadastro de usuário disparando e-mail de boas-vindas), que essa não-atomicidade não é um detalhe raro de CQRS — é estrutural a qualquer arquitetura orientada a eventos: gravar no banco e publicar um evento são duas operações independentes, e nenhuma transação local cobre a segunda. Ver [[wiki/concepts/dual-write-problem]] e a solução via [[wiki/concepts/outbox-pattern]].
 
+## Comunicação Assíncrona como Base
+
+[[wiki/entities/bernardo-lobato]] apresenta a [[wiki/concepts/comunicacao-assincrona]] como conceito prévio a EDA, [[wiki/concepts/cqrs]], [[wiki/concepts/event-sourcing]] e [[wiki/concepts/microsservicos]]; o exemplo de pedidos (um evento, vários consumidores independentes) é a forma mais simples de EDA. Risco citado: adotar sem estudo ou emular síncrono sobre assíncrono.
+
 ## Key Sources
 
 - [[wiki/sources/event-driven-architecture]] — EDA desacopla produtores de consumidores via eventos — comunicação assíncrona, temporal decoupling. Dois padrões de coordenação: Choreography (cada serviço reage a eventos, sem coordenador) e...
@@ -41,3 +45,4 @@ Ganha-se desacoplamento e ausência de gargalo síncrono; perde-se consistência
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — EDA como nome da arquitetura de fila usada para Saga Pattern, e como mecanismo de propagação write→read em CQRS, com o trade-off de latência/consistência eventual
 - [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] — eventos como opção de consistência eventual no CQRS que permite transformação livre do read model; nomeia explicitamente o bug da escrita dupla como risco
 - [[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] — exemplo didático completo (cadastro + e-mail) de por que publicar um evento nunca é atômico com a escrita no banco, com a solução via outbox e CDC/Debezium
+- [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — comunicação assíncrona como pré-requisito conceitual de EDA/CQRS/Event Sourcing; exemplo de pedidos

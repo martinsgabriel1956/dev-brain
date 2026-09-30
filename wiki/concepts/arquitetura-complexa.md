@@ -3,8 +3,8 @@ type: concept
 title: "Arquitetura Complexa"
 aliases: ["complex architecture", "complexidade arquitetural"]
 date_created: 2026-08-03
-date_updated: 2026-08-03
-source_count: 1
+date_updated: 2026-09-29
+source_count: 2
 tags: [system-design, arquitetura, complexidade, legado, poliglota, over-thinking]
 skill: tech-mentor-system-design
 status: stub
@@ -37,6 +37,11 @@ Não há um checklist confiável para dizer se uma arquitetura "é complexa" —
 - [[wiki/concepts/accidental-complexity]] / [[wiki/concepts/essential-complexity]] — distinção mais formal (Fred Brooks) sobre origem da complexidade; a "complexidade de legado" descrita aqui é majoritariamente acidental (decisão de não migrar tudo), mas pode ter núcleo essencial (regra de negócio genuinamente complexa).
 - [[wiki/concepts/large-scale-architecture]] — eixo independente; uma arquitetura pode ser as duas coisas, uma delas ou nenhuma.
 
+## Legado que evolui por integração
+
+Exemplo de complexidade real: mainframe ↔ SaaS ↔ microsserviços em nuvem híbrida ↔ Java J2EE departamental, tudo integrado ([[wiki/concepts/cloud-como-modelo-de-consumo]]).
+
 ## Key Sources
 
+- [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — cadeia heterogênea mainframe/SaaS/microsserviços/J2EE
 - [[wiki/sources/large-scale-vs-complex-architecture]]

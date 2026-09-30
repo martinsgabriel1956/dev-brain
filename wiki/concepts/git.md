@@ -3,8 +3,8 @@ type: concept
 title: "Git"
 aliases: ["git", "git init", ".git", "controle de versão"]
 date_created: 2026-08-11
-date_updated: 2026-09-28
-source_count: 2
+date_updated: 2026-09-29
+source_count: 3
 tags: [git, controle-de-versao, cli, tech-mentor-leadership]
 skill: tech-mentor-infra
 status: stub
@@ -28,7 +28,12 @@ Segundo [[wiki/entities/andre-casciotti]] ([[wiki/sources/o-que-estudar-guia-par
 - [[wiki/concepts/rebase-vs-merge]] · [[wiki/concepts/atomic-commits]]
 - [[wiki/concepts/comandos-basicos-linux]]
 
+## Atomic commits e cherry-pick
+
+[[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] usa o Git como ferramenta de planejamento via commits atômicos ([[wiki/concepts/atomic-commits]]) e cita `cherry-pick` como motivo para o menor commit possível.
+
 ## Key Sources
 
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]]
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] — distinção Git (versionamento local) vs. GitHub (repositório descentralizado)
+- [[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] — commits atômicos e cherry-pick como motivo

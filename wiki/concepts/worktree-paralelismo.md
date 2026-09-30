@@ -3,8 +3,8 @@ type: concept
 title: "Worktree e Paralelismo de Tarefas"
 aliases: ["worktree parallelism", "git worktree IA", "paralelismo de tarefas ia"]
 date_created: 2026-06-02
-date_updated: 2026-09-21
-source_count: 14
+date_updated: 2026-09-30
+source_count: 16
 tags: [worktree, paralelismo, git, spec-driven, produtividade]
 skill: tech-mentor-ai
 status: stable
@@ -106,8 +106,14 @@ Ao encerrar a sessão (`/quit`), o Claude Code pergunta explicitamente se o usu�
 
 [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] descreve uma variante do padrão de paralelismo via worktree que não é sobre paralelizar *subtarefas diferentes*, mas sobre paralelizar a **mesma tarefa** em modelos diferentes: o Cursor permite enviar um problema para vários modelos simultaneamente, cada um isolado em sua própria worktree, e depois comparar os resultados e ficar com o melhor. O autor observa que isso inverte um instinto de gestão de engenharia — duplicar trabalho entre pessoas sempre foi visto como desperdício a eliminar, mas duplicar entre modelos compensa porque o recurso escasso passou a ser compute, não tempo humano. A consequência: como produzir uma implementação fica barato, **escolher entre implementações concorrentes** (qual entendeu a arquitetura certa, qual não inventou abstração à toa, qual não escondeu uma bomba no error handling) vira a habilidade mais relevante — ver [[wiki/concepts/governanca-de-codigo-gerado-por-ia]].
 
+## Worktree Como Isolamento Entre Sessões do Claude Code
+
+Segundo [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]], a flag de worktree do [[wiki/entities/claude-code]] existe para que duas sessões (feature A e feature B) não colidam: sem isso podem editar o mesmo arquivo ou uma pode commitar trabalho incompleto da outra. Com duas worktrees há duas versões do código e cada sessão trabalha numa. Ver também [[wiki/concepts/modalidades-de-paralelismo-claude-code]] e [[wiki/concepts/agent-teams]], onde a regra é não compartilhar arquivos entre colegas.
+
 ## Key Sources
 
+
+- [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — git/worktrees paralelos não eliminam a sensação de perder tempo sozinhos; organização em waves com PR por tarefa — ver [[wiki/concepts/waves-de-desenvolvimento]]
 - [[wiki/sources/formacao-ia-devs-aula-02-mercado-perfil-profissional]]
 - [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] — worktree como mecanismo de paralelismo dentro de um loop de Spec Driven, sessões headless separadas mergeadas ao final
 - [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — crítico no início da adoção de agentes, hoje automatizado pelas próprias interfaces a ponto de deixar de ser diferencial
@@ -122,3 +128,4 @@ Ao encerrar a sessão (`/quit`), o Claude Code pergunta explicitamente se o usu�
 - [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — caso-limite especulativo de paralelismo sem controle: [[wiki/entities/peter-steinberger]] citado rodando múltiplos loops em paralelo (~US$ 1 milhão/mês em tokens) até eles conflitarem entre si ou operarem sobre informação desatualizada, motivando a busca por um [[wiki/concepts/grafo-como-abstracao-de-agentes|grafo]] de orquestração em vez de loops paralelos sem coordenação explícita
 - [[wiki/sources/guia-pratico-subagents-claude-code-configuracao-fork-invocacao]] — campo `isolation` na configuração de um subagent customizado: roda esse subagent numa worktree própria, evitando conflito de arquivo com outros agentes em paralelo
 - [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] — variante N-modelos-mesmo-problema: Cursor roda o mesmo problema em worktrees isoladas por modelo, comparando resultados
+- [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — reforça o motivo do isolamento; conecta a modalidades de paralelismo e agent teams

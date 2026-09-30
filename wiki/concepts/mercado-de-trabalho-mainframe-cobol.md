@@ -3,8 +3,8 @@ type: concept
 title: "Mercado de Trabalho em Mainframe/COBOL"
 aliases: ["demanda por profissionais mainframe", "escassez de profissional cobol", "vagas mainframe"]
 date_created: 2026-09-14
-date_updated: 2026-09-14
-source_count: 1
+date_updated: 2026-09-29
+source_count: 2
 tags: [mainframe, cobol, mercado-de-trabalho, carreira, contratacao]
 skill: tech-mentor-backend
 status: stub
@@ -29,6 +29,11 @@ Buscar diretamente "COBOL"/"mainframe" em LinkedIn, Indeed, Gupy e Glassdoor pro
 
 A demanda concentrada em mid-level (79%) reflete uma dinâmica geracional: por décadas entrou pouca gente nova em mainframe, enquanto quem já estava lá acumulou 20-40 anos de experiência. Agora essa geração está se aposentando, e o conhecimento que sai com ela não é só sintaxe COBOL — é arquitetura, comportamento da máquina e regras de negócio não documentadas (ver [[wiki/concepts/apagao-de-seniors]] para o mecanismo geral de perda de conhecimento tácito quando sêniores saem sem sucessão). Ao mesmo tempo, a tendência de [[wiki/concepts/modernizacao-de-mainframe|modernização por integração]] (manter o mainframe ligado, conectá-lo a nuvem híbrida/APIs/DevOps) exige que quem entra combine o conhecimento do sistema legado com ferramentas modernas — não basta saber COBOL isolado do resto do ecossistema.
 
+## MaaS e a equipe de especialistas
+
+No [[wiki/concepts/mainframe-as-a-service]] o provedor assume e compartilha os especialistas (CICS, DB2, z/OS, storage, performance) entre clientes — para algumas empresas isso pesa mais que a economia de infra. Sugere demanda concentrada em provedores; inferência, sem dado.
+
 ## Key Sources
 
+- [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — provedores de MaaS absorvem/compartilham especialistas (opinião do autor)
 - [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] — as quatro pesquisas citadas acima (Futuro um grupo/IBM/Broadcom/21 CS; Arcati; Kyndryl; Vanson Bourne/Micro Focus)

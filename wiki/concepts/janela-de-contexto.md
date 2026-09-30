@@ -3,8 +3,8 @@ type: concept
 title: "Janela de Contexto"
 aliases: ["context window", "context length", "janela de tokens"]
 date_created: 2026-05-18
-date_updated: 2026-09-03
-source_count: 6
+date_updated: 2026-09-29
+source_count: 7
 tags: [llm, tokens, agentes-ia, llmops]
 skill: tech-mentor-ai
 status: draft
@@ -68,3 +68,4 @@ Mesmo com janelas de contexto de até 1M de tokens disponíveis, a recomendaçã
 - [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — heurística de ~200k tokens mesmo com janelas de 1M disponíveis
 - [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] — caso concreto de regra de negócio fora da janela (fila de auditoria de cobrança) e a analogia da pessoa vendada
 - [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] — outputs de subagentes acumulados na janela do principal escalam com o número de subagentes, não com o volume de trabalho; benchmark mostrando janela final de 26% (3 subagentes) vs. 74% (sem subagentes)
+- [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — argumento para top-K enxuto: desempenho cai com contexto muito grande e chunks irrelevantes poluem a resposta ([[wiki/concepts/top-k-retrieval]])

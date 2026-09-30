@@ -3,8 +3,8 @@ type: concept
 title: "Memória de Longo Prazo para Agentes"
 aliases: ["long-term memory", "memória de longo prazo", "plano persistido", "research output salvo"]
 date_created: 2026-06-01
-date_updated: 2026-08-03
-source_count: 3
+date_updated: 2026-09-29
+source_count: 4
 tags: [context-engineering, coding-agents, rpi-workflow, refatoracao, subplano]
 skill: tech-mentor-ai
 status: draft
@@ -101,3 +101,4 @@ Esta página cobre memória persistida para uma única mudança grande (research
 - [[wiki/sources/context-engineering-codebases-grandes-rpi]] — padrão demonstrado com refatoração de SubscriptionService para DDD tático (13+ serviços, 6 PRs)
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]] — padrão irmão de memória entre sessões, com escopo mais amplo (preferências e skills, não só refactoring plans)
 - [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — artefato de "estado" pós-implementação, complementar (não substituto) à memória de research
+- [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — exemplo informal de 'memória semântica' (lembrar preferências entre sessões) na demo da [[wiki/entities/rock-pro]]; termo usado de forma ambígua

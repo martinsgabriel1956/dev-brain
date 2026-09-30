@@ -64,3 +64,7 @@ Aula introdutória (estilo Full Cycle) explicando RAG do zero: o que significa c
 
 - Qual o valor de threshold de "elegibilidade" (0,9 no exemplo da aula) é realista em produção, e como ele se relaciona com as métricas de `context_precision`/`context_recall` do RAGAS já documentadas em [[wiki/sources/rag-retrieval]]?
 - A aula não detalha como versionar ou invalidar metadados quando o documento-fonte muda — ponto que [[wiki/concepts/rag-arquitetura-avancada]] já identifica como o "trabalho real" do RAG em escala.
+
+## Related
+
+- [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — aprofunda busca híbrida, top-K e fusion; ver [[wiki/concepts/hybrid-search]]

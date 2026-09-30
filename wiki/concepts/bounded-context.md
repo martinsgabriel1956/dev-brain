@@ -3,8 +3,8 @@ type: concept
 title: "Bounded Context"
 aliases: ["bounded context", "contexto delimitado"]
 date_created: 2026-08-18
-date_updated: 2026-08-21
-source_count: 4
+date_updated: 2026-09-30
+source_count: 5
 tags: [ddd, arquitetura, cqrs, microsservicos]
 skill: tech-mentor-backend
 status: stub
@@ -32,9 +32,16 @@ Fowler é explícito: aplicar CQRS como estilo arquitetural geral para um sistem
 
 [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] reforça que os serviços dentro de uma arquitetura de microsserviços são "fortemente inspirados" em bounded context: cada serviço deve ter uma e somente uma responsabilidade dentro de um contexto delimitado. É a mesma ideia já central nesta página (fronteira do modelo de domínio), aqui aplicada como pré-requisito conceitual — antes mesmo de discutir extração ou maturidade de módulo — para que um serviço seja considerado um "microsserviço" de fato, e não apenas uma divisão técnica arbitrária.
 
+## Limite Linguístico e Semântico: Duas Classes para o Mesmo Conceito
+
+[[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] ([[wiki/entities/bernardo-lobato|Bernardo Lobato]], *Dominando DDD #4*) define o bounded context como **limite linguístico e semântico do domínio da solução**: até onde um termo tem significado consistente. Exemplo (imagem de [[wiki/entities/martin-fowler]]): "Produto" em Vendas (preço, palavras-chave, estoque) vs. Suporte (só ID, nome, descrição curta) → **duas classes**, cada uma só com o que o contexto precisa — menos [[wiki/concepts/acoplamento]] entre times, mais [[wiki/concepts/coesao]] dentro do módulo. Classes separadas podem mapear a **mesma tabela** (mapeamento parcial de colunas) — o autor não discute o acoplamento de dados que isso mantém (inferência).
+
+**Distinções:** ≠ [[wiki/concepts/subdominio]] (divisão do *negócio*; um subdomínio pode ter 1+ contextos) e ≠ [[wiki/concepts/ubiquitous-language]] (o contexto define onde a linguagem vale; analogia país/dialeto). **Como identificar:** conflito de vocabulário entre times em refinamento/discovery. **Integração entre contextos:** [[wiki/concepts/shared-kernel]], [[wiki/concepts/customer-supplier]], [[wiki/concepts/conformist]], [[wiki/concepts/anti-corruption-layer]] — ver [[wiki/concepts/context-map]].
+
 ## Key Sources
 
 - [[wiki/sources/monolith-first-martin-fowler]] — fonte primária: dificuldade de acertar bounded contexts no início como segundo argumento contra começar com microsserviços
 - [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — bounded context como unidade de módulo do monolito modular, critério de maturidade para extração a microsserviço
 - [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] — bounded context como base conceitual de "uma e somente uma responsabilidade" dentro de um serviço de microsserviços
 - [[wiki/sources/cqrs-martin-fowler]]
+- [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — fonte primária do bounded context como limite linguístico; duas classes "Produto" (Vendas/Suporte); ≠ subdomínio, ≠ linguagem ubíqua

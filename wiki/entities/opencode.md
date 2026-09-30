@@ -3,8 +3,8 @@ type: entity
 title: "OpenCode"
 aliases: ["Open Code"]
 date_created: 2026-07-31
-date_updated: 2026-09-04
-source_count: 4
+date_updated: 2026-09-30
+source_count: 6
 tags: [opencode, harness, cli, agentes-ia, model-routing]
 skill: tech-mentor-ai
 status: stub
@@ -30,9 +30,15 @@ Segundo [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]], a c
 
 [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] usa o OpenCode como harness para rodar um teste prático em produção (não simulação): a mesma tarefa (preview de e-mails num painel admin de newsletter) executada duas vezes — uma com um único agente Kimi K3 fazendo tudo, outra delegando a implementação a um Kimi K2.7 Code via [[wiki/concepts/subagentes|Agent Waves]] — medindo o custo real por diferença de saldo na plataforma da Kimi antes/depois de cada execução. Reforça o papel do OpenCode como harness agnóstico de provider já documentado acima: a troca entre K3 (agente único) e K3+K2.7 (Agent Waves) foi feita só trocando o modelo/prompt na mesma ferramenta, sem mudar de harness.
 
+## Citado Como Harness Onde as Dicas se Aplicam
+
+[[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] afirma, sem demonstrar, que as dicas funcionam também no OpenCode. Ver [[wiki/concepts/harness]].
+
 ## Key Sources
 
 - [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] — citado, junto do Hermes, como harness aberto a qualquer modelo de fundação
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — conexão com Custom Router da Abacus.AI via API key
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — citado como destino de migração de devs saindo do Claude Code por loops de correção supérflua
 - [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] — usado para testar, na prática, custo de agente único (K3) vs. Agent Waves (K3 coordinator + K2.7 worker) na mesma tarefa
+- [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — citado como harness de preferência de parte do time (portabilidade de skills)
+- [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — menção de transferibilidade

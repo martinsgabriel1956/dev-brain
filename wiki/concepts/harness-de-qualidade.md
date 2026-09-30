@@ -3,8 +3,8 @@ type: concept
 title: "Harness de Qualidade"
 aliases: ["quality harness", "harness ia", "ferramental de qualidade"]
 date_created: 2026-05-31
-date_updated: 2026-08-11
-source_count: 7
+date_updated: 2026-09-29
+source_count: 10
 tags: [harness, qualidade, pipeline-de-qualidade, tdd, testes, era-agentica, robustez]
 skill: tech-mentor-backend
 status: stable
@@ -87,8 +87,14 @@ Harness de qualidade é o mecanismo que constrói [[robustez-de-sistemas]] quand
 
 [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] enquadra o harness com a metáfora de **fazenda industrial vs. jardim**: em vez de cuidar planta por planta (ler cada linha), você mede solo/ar/adubo (as provas objetivas desta página) e cultiva "um ambiente em que código bom é a única possibilidade". Mas a fonte é explícita — como a seção "métrica boa não garante código bom" — que métrica verde dá probabilidade, não garantia. Por isso propõe migrar a confiança no harness **por quadrante de risco** (ver [[wiki/concepts/matriz-risco-dificuldade-review-ia]]), começando onde o erro é pequeno. [[wiki/entities/boris]] complementa: escrever `CLAUDE.md`/`review.md`/skills/docs é o novo trabalho de engenharia que torna o harness legível para os agentes, e automatizar isso ficou barato.
 
+## Execução Determinística, Geração Assistida
+
+Reforço de [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]]: o código de testes/gates/linters pode ser gerado com IA, mas sua **execução** não deve depender de LLM (custo, lentidão, não determinismo). Ver [[wiki/concepts/ia-na-esteira-ci-cd]]. O mesmo vídeo defende reinvestir o tempo ganho com IA justamente nesse harness ([[wiki/concepts/tempo-ganho-com-ia-reinvestido-em-qualidade]]).
+
 ## Key Sources
 
+
+- [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — gates verificáveis (linter, camadas, código slop, dependência circular) exigidos pelo contrato de revisão
 - [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
 - [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — metáfora fazenda vs. jardim; confiança no harness migrada por quadrante de risco; docs como o novo trabalho de engenharia (Boris)
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
@@ -96,3 +102,5 @@ Harness de qualidade é o mecanismo que constrói [[robustez-de-sistemas]] quand
 - [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] — caso negativo: IA usada como o próprio gate, sem harness ao redor, resultado inconsistente
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — os cinco pilares do harness de Uncle Bob, cada um pegando um tipo de erro diferente; regra operacional de ler por categoria de mudança
 - [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — quatro gates bloqueantes concretos (CCN, cobertura+mutation, tamanho de módulo, dependency structure) para os mesmos componentes já listados nesta página
+- [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — gerar com IA ≠ executar com LLM; tempo ganho reinvestido em qualidade
+- [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — skills avaliadas com asserções e baseline sem skill como sensor de qualidade

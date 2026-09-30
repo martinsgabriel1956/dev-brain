@@ -3,8 +3,8 @@ type: concept
 title: "Prompt Engineering"
 aliases: ["engenharia de prompt", "prompt design"]
 date_created: 2026-05-17
-date_updated: 2026-09-21
-source_count: 15
+date_updated: 2026-09-30
+source_count: 16
 tags: [prompt-engineering, llm, few-shot, codex, software-3]
 skill: tech-mentor-ai
 status: stable
@@ -111,6 +111,10 @@ Uma nova versão de prompt pode quebrar o comportamento do sistema da mesma form
 
 [[wiki/sources/prompt-context-harness-engineering-tres-pilares]] narra, sem contradizer o que já está registrado nesta página, por que a importância relativa de "saber pedir" caiu (sem desaparecer) desde 2022: com janela de contexto de ~4.000 tokens naquela época, o prompt era praticamente a única alavanca disponível — não havia espaço para injetar codebase inteira, rules ou histórico extenso. Com janelas de 1 milhão de tokens hoje e modelos melhores, um prompt mediano já produz boa resposta com mais frequência, deslocando a alavanca principal de qualidade para [[wiki/concepts/context-engineering-harness|context engineering]] e depois para [[wiki/concepts/harness|harness engineering]]. Consistente com "Prompt Bom Não Compensa Contexto Ausente" acima, mas com o argumento histórico do porquê.
 
+## Registro de Versões e Reprodutibilidade
+
+[[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] complementa a seção anterior: antes de validar (gate de eval), é preciso poder **rastrear e reproduzir** cada versão. A proposta é versionar o ecossistema do prompt — texto + modelo + provedor + temperatura + autor + motivo — e não só a string ([[wiki/concepts/versionamento-de-prompt]], [[wiki/concepts/metadados-de-prompt]]). Ressalva da própria fonte: versionar não melhora a resposta; a qualidade vem de instruções, estrutura e tools.
+
 ## Fontes
 
 - [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — perguntas extensas antes de implementação (brainstorm → user flow → segurança → arquitetura) como variante de "Tell It" para quem não revisa código linha a linha; reforço independente da recomendação de screenshot como referência já documentada acima
@@ -128,3 +132,4 @@ Uma nova versão de prompt pode quebrar o comportamento do sistema da mesma form
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — versionamento de prompt como artefato com gate em CI/CD (não só Git); prompt engineering como pilar fundamental da arquitetura de agente, ao lado de tree of thoughts, skeleton of thoughts, ReAct e self-refining
 - [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] — limite estrutural do prompt bem escrito quando a informação necessária nunca esteve na janela de contexto; crítica ao "prompt mágico" como bala de prata (Frederick Brooks)
 - [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]] — a mesma estrutura "estático → variável" recomendada para clareza também é o requisito técnico para acionar [[wiki/concepts/prompt-caching]]; dado dinâmico (timestamp) no início do prompt quebra o cache do provider
+- [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — versionamento como ecossistema (não só string), reprodutibilidade, semver de prompt e rollback

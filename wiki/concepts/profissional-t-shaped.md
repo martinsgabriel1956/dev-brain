@@ -3,8 +3,8 @@ type: concept
 title: "Profissional T-Shaped (Formação em T)"
 aliases: ["formacao em T", "T-shaped", "profissional em T", "especialista generalista"]
 date_created: 2026-08-13
-date_updated: 2026-08-13
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [carreira, t-shaped, formacao-em-t, generalista, especialista, arquiteto-de-solucoes]
 skill: tech-mentor-leadership
 status: stub
@@ -40,6 +40,11 @@ Com a IA nivelando a execução técnica isolada, a vantagem migra para quem con
 - [[wiki/concepts/fundacao-tecnica]] — eixo vertical/horizontal de conhecimento
 - [[wiki/concepts/adaptabilidade]] — a régua que sobe exige ampliar a barra horizontal
 
+## Especialista de Base que Generaliza na Era da IA
+
+[[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]] diz que a IA privilegia o generalista "não fraco", isto é, o especialista de base que generaliza, e que ser versátil vira o mínimo. Ver [[wiki/concepts/framework-compressao-cruzamento-valorizacao]].
+
 ## Key Sources
 
 - [[wiki/sources/papinho-tech-solo-q-and-a-carreira]] — definição da metáfora do T e ligação com arquiteto de soluções
+- [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]

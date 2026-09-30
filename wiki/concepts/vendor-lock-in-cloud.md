@@ -3,8 +3,8 @@ type: concept
 title: "Vendor Lock-in em Cloud"
 aliases: ["vendor lock-in", "lock-in de nuvem", "aprisionamento a provedor"]
 date_created: 2026-08-04
-date_updated: 2026-08-05
-source_count: 2
+date_updated: 2026-09-29
+source_count: 3
 tags: ["vendor-lock-in", "aws", "cloud", "arquitetura", "infra", "custo"]
 skill: tech-mentor-infra
 status: stub
@@ -37,7 +37,12 @@ Serviços mais integrados ao ecossistema de um provedor tendem a ser mais simple
 - [[wiki/concepts/camada-de-aplicacao-vs-modelo]] — mesma lógica estrutural aplicada a modelos de IA em vez de serviços de cloud
 - [[wiki/concepts/ai-gateway-llm-router]] — mecanismo concreto usado para contornar lock-in de modelo numa ferramenta de IA
 
+## Análogo em MaaS
+
+Contratar [[wiki/concepts/mainframe-as-a-service]] troca dependência de hardware próprio por dependência de provedor/contrato. A fonte não discute esse risco — inferência marcada como tal.
+
 ## Key Sources
 
+- [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — MaaS troca dependência de hardware por dependência de provedor (inferência; não discutido)
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — lock-in de ferramenta de IA a um único provider de modelo, contornado via AI Gateway

@@ -3,8 +3,8 @@ type: concept
 title: "FinOps — Cost-Aware Architecture"
 aliases: ["finops", "cloud cost", "unit economics", "cost optimization"]
 date_created: 2026-04-23
-date_updated: 2026-09-22
-source_count: 5
+date_updated: 2026-09-29
+source_count: 6
 tags: [finops, cloud-cost, unit-economics, right-sizing, spot-instances, egress, aws]
 skill: tech-mentor-infra
 status: stub
@@ -42,8 +42,13 @@ Em cloud providers, o próximo tier de instância geralmente é o dobro do anter
 
 Reforço direto do exemplo acima ("gastar mais pode ser otimizar custo"), agora do lado da recuperação: um site que fatura ~$1.000/minuto perde ~$120 mil em receita se o [[wiki/concepts/rto|RTO]] for de duas horas. Isso significa que o RTO tolerável de um sistema não é uma escolha técnica isolada — é uma decisão de custo, exatamente como escalar de 10 para 20 servidores é uma decisão de custo. Ver [[wiki/sources/rto-rpo-recovery-time-point-objective]].
 
+## CAPEX → OPEX e capacidade ociosa
+
+Terceirizar infra converte [[wiki/concepts/capex-vs-opex|CAPEX em OPEX]] e elimina a ociosidade de [[wiki/concepts/dimensionamento-para-o-pico]] — exemplo em mainframe: [[wiki/concepts/mainframe-as-a-service]]. Sem quantificação na fonte.
+
 ## Key Sources
 
+- [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — CAPEX→OPEX e ociosidade eliminada no exemplo de MaaS (sem números)
 - [[wiki/sources/k8s-autoscaling]] — 4 dimensões de autoscaling no K8s: HPA (pods por CPU/memória), VPA (tamanho do pod por historial), KEDA (pods por eventos externos — fila Kafka, SQS, cron), Karpenter (nodes por demanda de pods...
 - [[sources/finops-cost-aware-architecture]]
 - [[wiki/sources/sre-capacidade-observabilidade-confiabilidade-custo]] — otimização de custo como "gastar mais para perder menos"; ligação com planejamento de capacidade

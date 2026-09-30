@@ -3,8 +3,8 @@ type: concept
 title: "Complexidade Acidental"
 aliases: ["accidental complexity", "essential complexity"]
 date_created: 2026-05-31
-date_updated: 2026-07-29
-source_count: 5
+date_updated: 2026-09-29
+source_count: 6
 tags: [complexidade-acidental, programacao-funcional, out-of-the-tar-pit, arquitetura]
 skill: tech-mentor-backend
 status: stable
@@ -59,6 +59,10 @@ Distinção do paper *"Out of the Tar Pit"* (Moseley & Marks): **complexidade es
 
 [[wiki/sources/filosofia-do-design-de-software-livro-completo]] (Cap. 10) dá o exemplo mais concreto do wiki de complexidade acidental gerada por decisão de API, não pelo domínio: exceções mal desenhadas (ex.: `substring` do Java lançando erro para índice fora do intervalo, em vez de truncar como Python faz) obrigam todo chamador a escrever código de tratamento que não tem relação com o problema real sendo resolvido. Um estudo citado (Yuan et al., USENIX OSDI 2014) encontrou que mais de 90% das falhas catastróficas em sistemas distribuídos vieram de tratamento de erro incorreto — evidência empírica externa de que essa categoria de complexidade acidental é responsável por uma fração desproporcional dos bugs mais graves. Ver [[wiki/concepts/definir-erros-para-fora-da-existencia]] para a técnica central de mitigação.
 
+## Reduzir complexidade como o trabalho do engenheiro
+
+[[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] descreve o trabalho do engenheiro como reduzir complexidade ([[wiki/concepts/reducao-de-complexidade]]); não usa o termo "acidental", a ligação é inferência desta wiki.
+
 ## Key Sources
 
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
@@ -66,3 +70,4 @@ Distinção do paper *"Out of the Tar Pit"* (Moseley & Marks): **complexidade es
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]] — mesma distinção essencial/acidental via Frederick Brooks (Mythical Man-Month), não Out of the Tar Pit
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — por que "aprenda o framework" foi vendido como suficiente até o sistema escalar
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] — definição de Ousterhout (estrutura, não implementação) e módulos rasos como fonte de complexidade
+- [[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] — reduzir complexidade; termo acidental não usado

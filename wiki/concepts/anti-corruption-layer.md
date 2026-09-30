@@ -3,8 +3,8 @@ type: concept
 title: "Anti-Corruption Layer (ACL)"
 aliases: ["camada de anticorrupção", "acl pattern", "anti corruption layer"]
 date_created: 2026-08-18
-date_updated: 2026-08-18
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [ddd, context-map, facade-pattern, adapter-pattern, strangler-fig, sistemas-legados, acoplamento, dependencia-oculta]
 skill: tech-mentor-backend
 status: draft
@@ -83,6 +83,11 @@ Durante uma migração incremental ([[wiki/concepts/strangler-fig-pattern]]), o 
 
 Nem toda integração com um sistema legado justifica um ACL — o custo de manter a camada de tradução pode superar o problema que ela resolve. Nesse caso, **Separate Ways** (aceitar duplicação, não integrar) é uma alternativa de Context Map legítima, não apenas "não fazer nada".
 
+## ACL como Uma das Estratégias entre Contextos
+
+[[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] cita a ACL como "camada de tradução" entre contextos delimitados, bastante usada na **modernização de sistemas legados** (detalhamento prometido no vídeo seguinte da série). Junto de [[wiki/concepts/shared-kernel]], [[wiki/concepts/customer-supplier]] e [[wiki/concepts/conformist]], compõe o [[wiki/concepts/context-map]]. Nota: o autor chama a ACL de "mais abrangente" que os demais — opinião dele; aqui ela é tratada como mais um padrão de Context Mapping.
+
 ## Key Sources
 
 - [[wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado]] — motivação de alto nível (dependência forte, dependência escondida, múltiplos legados); skill `tech-mentor-backend` (`references/architecture/ddd-advanced.md`) supriu o nome formal do padrão, o exemplo de código e os padrões vizinhos de Context Map (OHS, Published Language, Separate Ways)
+- [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — ACL citada como camada de tradução na modernização de legado

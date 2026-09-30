@@ -3,8 +3,8 @@ type: concept
 title: "Tolerância a Falha (Fault Tolerance)"
 aliases: ["FT", "Fault Tolerance", "fault-tolerant", "ativo-ativo"]
 date_created: 2026-08-03
-date_updated: 2026-08-03
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: ["tolerancia-a-falha", "alta-disponibilidade", "failover", "cluster", "arquitetura", "infra"]
 skill: tech-mentor-infra
 status: stub
@@ -43,6 +43,11 @@ O custo estrutural mais alto de FT vem de dois fatores, segundo a fonte:
 - [[wiki/concepts/replicacao-de-banco]] — o mecanismo de "clone" ativo entre datacenters na fonte é replicação; em FT a réplica já está servindo tráfego, não é apenas standby.
 - [[wiki/concepts/cap-theorem]] — em aberto: a fonte não detalha como a consistência é mantida entre nós ativo-ativo escrevendo em paralelo.
 
+## Comunicação Assíncrona e Tolerância a Falha
+
+[[wiki/entities/bernardo-lobato]] argumenta que, com [[wiki/concepts/comunicacao-assincrona]], a queda de um serviço não prejudica a experiência global e, ao voltar, ele relê as mensagens que perdeu. Ressalva: isso depende de [[wiki/concepts/garantia-de-entrega]] e de consumidor idempotente.
+
 ## Key Sources
 
 - [[wiki/sources/ha-vs-ft-alta-disponibilidade-tolerancia-a-falha]]
+- [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — serviço que cai relê mensagens perdidas ao voltar

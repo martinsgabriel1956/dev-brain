@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-09-28
+date_updated: 2026-09-30
 ---
 
 
@@ -26,6 +26,22 @@ date_updated: 2026-09-28
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]]: **[[wiki/concepts/comunicacao-assincrona|comunicação assíncrona]]** vs. [[wiki/concepts/comunicacao-sincrona|síncrona]] (bloqueio, acoplamento forte, baixa resiliência — exemplo do serviço de autenticação); três formas: polling por ID ([[wiki/concepts/async-request-reply]]), [[wiki/concepts/webhook]] e [[wiki/concepts/mensageria|mensageria]]; exemplo de pedidos com eventos consumidos por Estoque e Faturamento; desafios: debug, [[wiki/concepts/garantia-de-entrega]] e [[wiki/concepts/eventual-consistency|consistência eventual]] |
+| [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]] | Michel Leonardo: proxy em Go que carrega páginas sem HTTP, usando ICMP Echo Request/Reply sobre IPv6; HTML fatiado em 1024 B (fuga do MTU), 4 bytes iniciais = total de pedaços, remontagem por array; prova de conceito sem imagens/retransmissão |
+| [[wiki/sources/sql-injection-sqlmap-luiz-viana]] | Vídeo prático de Luiz Viana: mecanismo da aspa simples que quebra a query, depois automação com SQLMap — taxonomia de técnicas (boolean/time/error/UNION-based), leitura de arquivo no servidor (`--file-read`, `LOAD_FILE`/`INTO OUTFILE`), `--level`/`--risk` contra falso negativo, injeção via POST/cookie, bypass de WAF com tampers |
+| [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] | Vídeo PT-BR (Otávio Miranda, inferido): terminal = emulador sobre PTY (master/slave) + line discipline + fork/redirecionamento de fds; SSH repete o modelo; OMXTerm = xterm.js → WebSocket → broker → SSH com cookies rígidos, ticket de uso único (anti-CSWSH), allowlist de destino, anti-DNS-rebinding, rate limit em 2 camadas; deploy Docker+Traefik na Hostinger; alerta: 10 mil linhas geradas por agentes levaram ~2 meses para serem entendidas |
+| [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] | Vídeo PT-BR: prompt esquecido em bloco de notas perde o *porquê*; versionar o **ecossistema** do prompt (texto + modelo + temperatura + autor + motivo), com semver (major/minor/correção), versão ativa e rollback de um clique, para reprodutibilidade; versionar não melhora a qualidade (regressão contra golden dataset é vídeo futuro); demo: UI web + `metadata.json` + loader que monta o agente |
+| [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]] | André Casciotti: por que você não é promovido — promoção depende de cultura, equipe e chefe direto, mas o dev influencia "jogando o jogo": objetivos de carreira explícitos (nos 1:1), visibilidade das entregas (contexto, números, testes, status diário) e overdelivery calibrado ("ser antes de ter") conforme subnível; frustração vem da expectativa |
+| [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]] | Vídeo PT-BR: Gartner prevê 60% de times de software menores até 2029; autor (tech lead + dev + PM + PO) defende que isso muda a descrição de cargo, não elimina vagas; framework **compressão → cruzamento → valorização**; Lei de Brooks e time cirúrgico; valor migra para contexto e ownership |
+| [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] | Vídeo (Ronald Hulk): busca semântica não basta em RAG — busca híbrida (semântica + palavra-chave em paralelo) com **fusion** de rankings, top-K ótimo e pesos definidos por teste do retrieval; demo na harness Rock Pro |
+| [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] | Vídeo PT-BR: artigo de DiMaggio e Powell (1983) aplicado a TI — isomorfismo **coercitivo, normativo e mimético** explicam por que empresas adotam as mesmas "modernidades" (mainframe → cliente-servidor → ERP → nuvem → microsserviços → IA); erro = perguntar "por que ainda não fazemos o que os outros fazem?" antes de "qual problema resolvemos?"; caso de 1991 (mainframe "na contramão do downsizing" durou 20+ anos); mimetismo é racional sob incerteza, mas "tecnologia excelente no problema errado é decisão ruim" |
+| [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] | Vídeo PT-BR: estrutura de uma skill e uso da skill-creator da Anthropic para (1) otimizar a description por loop de queries *should trigger* e (2) benchmark com vs. sem skill em Haiku e Opus (Haiku ~90% vs. ~50%; Opus 100/100 nos dois) com relatório de grades por asserção; tese de portabilidade entre Claude Code/Codex/OpenCode. Transcrição truncada; sem amostra informada |
+| [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] | Aula PT-BR: pilares para desenvolver com IA (harness, modelos, memória, skills, MCPs), por que o workflow básico spec→implementa→revisa é improdutivo e a alternativa — **contrato de revisão auditável**, gates de qualidade, revisor independente e **waves** paralelas. Transcrição truncada. |
+| [[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] | Vídeo PT-BR: pergunta boa = contexto + erro exato + o que já tentou (respeita o tempo do sênior); gangorra entre nunca pedir e pedir demais; regra do **ciclo de 2 horas** (código parecido → doc/IA → tentativa própria → pedir ajuda com contexto) com exceções (deadline, júnior com tarefa urgente, pair); documentar o aprendido. Tempos são heurística sem dados |
+| [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] | Vídeo PT-BR: Casas Bahia e SulAmérica foram para a nuvem (zCloud da Kyndryl) **sem abandonar o mainframe** — Mainframe as a Service; separar *onde a aplicação executa* de *como a infra é consumida*; virtualização/LPAR nasceu no mainframe; multitenância, CAPEX→OPEX, fim da capacidade ociosa do pico e especialistas compartilhados; nuvem e mainframe não são opostos (sem números de economia na fonte) |
+| [[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] | Vídeo PT-BR que lê e comenta um artigo: o trabalho do engenheiro é reduzir complexidade e a chave é *pensar muito na hora certa* — commits atômicos e specs (BDD) primeiro, depois execução quase mecânica; crítica ao TDD em nível de método (a unidade é a classe) e conclusão de que produtividade vem de autoconhecimento, não de metodologia dogmática |
+| [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] | Vídeo PT-BR de consultor: a IA achatou o *tempo* de gerar código, não necessariamente o *valor*; tempo ganho deve ir para qualidade (testes, gates, CI/CD); IA para **gerar** a esteira, não para **executá-la** (determinismo, custo); evals/drift de produtos com LLM periódicos ou por mudança de prompt; pergunta em aberto: como fazer retrospectiva de bugs quando a LLM escreve o código; fase de migração, não extinção, do dev |
+| [[wiki/sources/historia-do-captcha-do-teste-de-turing-ao-turnstile]] | Vídeo PT-BR sobre a história do CAPTCHA (1996→hoje): Naor e o teste de Turing invertido, texto distorcido vs. OCR, formalização de 2003 (todo CAPTCHA nasce com prazo de validade), reCAPTCHA aproveitando trabalho humano para o NYT, Google matando o CAPTCHA de texto com IA (99%), reCAPTCHA v3 como score/segurança por obscuridade, Cloudflare Turnstile (proof of work + proof of space), FunCaptcha do Roblox e serviços de resolução humana por API |
 | [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] | André Casciotti: sempre vai faltar conhecimento técnico — condição permanente, não falha pessoal; 3 táticas: estudar por demanda (fechar o leque, abrir por necessidade), praticar cedo na proporção 20/80 estudo/prática, fortalecer fundamentos (linguagem/runtime, lógica, rede, resolver problemas, qualidade) apesar dos ciclos de hype |
 | [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] | André Casciotti: guia do que estudar sendo iniciante — aprender com foco no problema (não no "como fazer"), escolher caminho de carreira rápido, mentalidade de crescimento; lista técnica: C#/ASP.NET MVC backend, teste unitário desde cedo, SQL ANSI, Git/GitHub, fundamentos de CLR/GC, cliente-servidor/HTTP, infra básica; IA acelera o que você já sabe fazer |
 | [[wiki/sources/github-2018-cap-pacelc-particao-video]] | Vídeo de system design: incidente do GitHub 2018 (rede voltou em 43 s, serviço em 24 h+ por escritas divergentes) para explicar CAP (disponibilidade = todo nó vivo responde), o dilema recusar vs. pagar com caixa local e PACELC (latência vs. consistência sem partição), com teste local de leitura local (~0,05 ms) vs. forte (+0,19 ms). |
@@ -64,6 +80,7 @@ date_updated: 2026-09-28
 | [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]] | Origem histórica do [[wiki/concepts/forward-deployed-engineer\|Forward Deployed Engineer]] na [[wiki/entities/palantir\|Palantir]] (2007-2010, clientes CIA/FBI, termo emprestado da terminologia militar); adoção posterior por cloud ([[wiki/entities/aws\|AWS]] dentro do [[wiki/entities/itau\|Itaú]]) e agora por empresas de IA ([[wiki/entities/openai\|OpenAI]], [[wiki/entities/anthropic\|Anthropic]], [[wiki/entities/cohere\|Cohere]], [[wiki/entities/cognition\|Cognition]]); onda projetada para o Brasil; recomendação de estudo: fundamentos de computação/ML + engenharia de software |
 | [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] | Aula introdutória (autor não confirmado, provável [[wiki/entities/rodrigo-branas\|Rodrigo Branas]]) diagramando [[wiki/concepts/clean-architecture\|Clean Architecture]] numa tela de login em Vue.js: componente com ~10 responsabilidades separado em Domínio/Data/Infraestrutura/Presentation/Validation/Main; `LoginFactory` como [[wiki/concepts/composition-root\|composition root]]; `ValidationComposite` ([[wiki/concepts/composite-pattern\|Composite]]) agrupando validadores; exemplos de [[wiki/concepts/single-responsibility-principle\|SRP]], [[wiki/concepts/dependency-inversion-principle\|DIP]] (interface "boundary" do lado do consumidor) e [[wiki/concepts/interface-segregation-principle\|ISP]] (`HttpClient` segregado em `HttpPostClient`) |
 | [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] | [[wiki/entities/otavio-santana\|Otávio Santana]] e [[wiki/entities/mauricio-linhares\|Maurício Linhares]] discutem *A Philosophy of Software Design* com [[wiki/entities/john-ousterhout\|Ousterhout]]: [[wiki/concepts/sintomas-de-complexidade-ousterhout\|change amplification/cognitive load/unknown unknowns]], `java.io` como exemplo de [[wiki/concepts/modulo-profundo\|módulo raso]] e de [[wiki/concepts/decorator-pattern\|Decorator]], TDD como design de código vs. arquitetura, [[wiki/concepts/repository-pattern\|Repository]] com nomes CRUD genéricos, e [[wiki/concepts/define-errors-out-of-existence\|define errors out of existence]] |
+| [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]] (*Dominando DDD #4*): **[[wiki/concepts/bounded-context|bounded context]]** como limite linguístico e semântico do domínio da solução; "Produto" em Vendas vs. Suporte → duas classes para o mesmo conceito (mesma tabela possível); ≠ [[wiki/concepts/subdominio|subdomínio]] e ≠ [[wiki/concepts/ubiquitous-language|linguagem ubíqua]] (país/dialeto); conflito de vocabulário entre times como sinal de contextos distintos; prévia de [[wiki/concepts/shared-kernel|Shared Kernel]], [[wiki/concepts/customer-supplier|Customer/Supplier]], [[wiki/concepts/conformist|Conformist]] e [[wiki/concepts/anti-corruption-layer|ACL]] |
 | [[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] | Laboratório autorizado (autor não identificado): painel admin de um site de pizzaria "vibe coded" é encontrado por fuzzing de diretórios ([[wiki/concepts/attack-surface\|dirsearch]]) e invadido por [[wiki/concepts/ataque-online-vs-offline-senha\|brute force de senha]] com três ferramentas equivalentes (Burp Intruder, ffuf, Hydra), habilitado por user enumeration e ausência de [[wiki/concepts/rate-limiting\|rate limit]], lockout, CAPTCHA e [[wiki/concepts/mfa-multifator-autenticacao\|MFA]] |
 | [[wiki/sources/self-attention-mecanismo-transformers]] | Vídeo didático explica [[wiki/concepts/self-attention\|self-attention]]: tokens → IDs → [[wiki/concepts/embedding-vectors\|embedding vectors]] (significado geral, não contextual — ambiguidade do tipo "banco" instituição vs. assento); [[wiki/concepts/positional-encoding\|positional encoding]] injeta ordem; vetores Q/K cruzados geram attention score (importância mútua entre tokens), normalizado via softmax, produzindo vetor final significado+contexto; [[wiki/entities/attention-is-all-you-need-paper\|"Attention Is All You Need"]] (2017) como marco histórico |
 | [[wiki/sources/arquitetura-monolitica-vantagens-desvantagens]] | Vídeo introdutório pt-BR (autor não identificado): fundamentos de [[wiki/concepts/monolito\|arquitetura monolítica]] — módulos interligados no mesmo servidor via chamada de função direta; vantagens (deploy único mais simples, reuso de código sem duplicidade, comunicação sem custo de rede) e desvantagens (cadência de deploy cai conforme o time cresce, [[wiki/concepts/single-point-of-failure\|SPOF]] de módulo, [[wiki/concepts/auto-scaling\|auto scaling]] vertical mais difícil de operar) |
@@ -273,6 +290,7 @@ date_updated: 2026-09-28
 | [[wiki/sources/post-mortem]] | Post-mortem blameless analisa incidentes após resolução — 5 Porquês até causa sistêmica, action items com dono e prazo |
 | [[wiki/sources/nubank-clojure-datomic-event-sourcing]] | Por que o Nubank escolheu Clojure + Datomic — imutabilidade, event sourcing e DDD como fundação para 100M clientes |
 | [[wiki/sources/claude-code-guia-pratico-full-cycle]] | Claude Code na prática — CLAUDE.md, MCP, hooks, plan mode, commands, gestão de contexto e armadilhas de custo |
+| [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] | Dicas da documentação do Claude Code: worktrees, cinco modalidades de paralelismo (custo e atenção), rotinas agendadas, Chrome/Playwright, Computer Use, sessões remotas, `/fork` e output estruturado com Zod/Pydantic |
 | [[wiki/sources/ia-e-aprendizado-programacao-iniciantes]] | Como usar IA sem parar de aprender — dois perfis, dois extremos, dependência disfarçada e o papel do esforço produtivo |
 | [[wiki/sources/profissional-do-futuro-ia-identidade-aprendizado]] | Nexialista, crença de alta eficácia e observador tercerático — o profissional do futuro é o mais adaptável, não o mais atualizado |
 | [[wiki/sources/ia-custo-roi-bolha-ou-realidade]] | Custo real da IA com dados — 71% sem ROI, paradoxo de Jevons, AI Washing e por que não é bolha mas curva de adoção |
@@ -486,6 +504,7 @@ date_updated: 2026-09-28
 | [[wiki/sources/decorator-xunitpatterns]] | Primeira entrada da categoria **External Patterns** do xUnitPatterns.com ([[wiki/entities/gerard-meszaros\|Meszaros]]) ingerida na wiki: verbete curtíssimo que cita a definição canônica do [[wiki/concepts/decorator-pattern\|Decorator]] do [[wiki/entities/gang-of-four\|GOF]] ("attach additional responsibilities to an object dynamically"), sem elaboração própria de Meszaros — dá fonte primária em inglês, independente das fontes secundárias em vídeo já usadas na página de conceito |
 | [[wiki/sources/test-driven-development-xunitpatterns]] | Verbete de glossário do xUnitPatterns.com ([[wiki/entities/gerard-meszaros\|Meszaros]]) que isola a definição formal do próprio termo **test-driven development**: distingue TDD de [[wiki/concepts/test-first-development\|test-first development]] pelo critério de fazer o código de produção funcionar um teste de cada vez, característica batizada de [[wiki/concepts/emergent-design\|emergent design]]; cita [[wiki/concepts/storytest-driven-development\|storytest-driven development]] como termo relacionado, sem definir |
 | [[wiki/sources/algoritmos-de-ordenacao-bubble-insertion-selection-merge-quicksort-heapsort]] | Aula com framing de concurso: seis algoritmos de ordenação passo a passo — Bubble, Insertion e Selection Sort (comparativos O(n²)), Merge Sort e Quicksort (dividir-para-conquistar), Heapsort (Max Heap sobre árvore binária); traz Selection Sort, mecanismo de partição do Quicksort e construção do Max Heap pela primeira vez para a wiki |
+| [[wiki/sources/ordenacao-selection-quicksort-bubble-sort-live-coding]] | Corte de live coding do canal [[wiki/entities/fernanda-kipper\|Fernanda Kipper]] (continuação da live de busca binária): pergunta de abertura sobre qual algoritmo o `.sort` nativo usa; [[wiki/concepts/selection-sort\|Selection Sort]] O(n²) com o exemplo de artistas/plays do livro *Entendendo Algoritmos* e descarte da constante ½; [[wiki/concepts/quicksort\|Quicksort]] (caso base `len < 2`, pivô, particionamento, n por nível × log n níveis, pior caso O(n²)); [[wiki/concepts/bubble-sort\|Bubble Sort]] (`for` dentro de `for`); eficiência do Quicksort atrelada à [[wiki/concepts/escolha-de-pivo\|escolha do pivô]]. Sinaliza imprecisões da fonte (caso base, pior caso pelo formato da entrada) |
 | [[wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization]] | Recursão vs. iteração não é hierarquia de eficiência, é tese de Church-Turing: toda linguagem Turing-completa permite converter uma na outra; call stack é só uma estrutura de dados alocável manualmente; tail call optimization (ausente em Python) só se aplica quando a chamada recursiva é a última operação da função; leitura de assembly `call` vs. `jump` |
 | [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] | Três crenças que reprovam em entrevista de arquitetura: (1) o enunciado já define o problema — na prática ele é vago por construção e exige levantar requisitos antes de desenhar; (2) velocidade é sinal de competência — a sessão mede raciocínio e justificativa, não tempo; (3) existe "a melhor tecnologia" — a melhor alternativa é derivada do caso de uso comparado a prós e contras, o que torna fundamentos mais valiosos que qualquer stack |
 | [[wiki/sources/como-calcular-complexidade-de-algoritmos-big-o-em-3-passos]] | Método operacional de 3 passos para calcular Big-O: achar as repetições, checar a complexidade de funções nativas da linguagem via documentação (cppreference), ignorar constantes e manter o termo de maior grau; heurística de 10⁷–10⁸ operações/segundo para prever se uma solução passa dentro do tempo; exemplo didático de `sort()` (O(n log n)) tornando uma solução "mais curta" pior que dois loops lineares (O(n)) |
@@ -801,6 +820,133 @@ date_updated: 2026-09-28
 
 ## Concepts
 
+### Comunicação Assíncrona (2026-09-30)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/comunicacao-assincrona]] | Emissor não espera a resposta; polling, webhook ou broker; ganhos (acoplamento fraco, picos, autonomia) e desafios |
+| [[wiki/concepts/comunicacao-sincrona]] | Chamada bloqueante com resposta imediata; acoplamento forte e baixa resiliência |
+| [[wiki/concepts/async-request-reply]] | Devolver ID da operação e cliente fazer polling do status/resultado |
+| [[wiki/concepts/webhook]] | Receptor chama callback cadastrado no solicitante ao concluir |
+| [[wiki/concepts/garantia-de-entrega]] | Brokers nem sempre garantem entrega por padrão; at-least-once, DLQ, idempotência |
+
+### DDD — Bounded Context e Context Map (2026-09-30)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/ubiquitous-language]] | Vocabulário comum time técnico + negócio; vale dentro de um bounded context (dialeto do país) |
+| [[wiki/concepts/subdominio]] | Divisão do negócio (problema); pode ter 1+ bounded contexts |
+| [[wiki/concepts/context-map]] | Mapa de relações entre bounded contexts e padrões de integração |
+| [[wiki/concepts/shared-kernel]] | Modelo compartilhado de forma controlada entre contextos |
+| [[wiki/concepts/customer-supplier]] | Dependência hierárquica upstream/downstream entre contextos |
+| [[wiki/concepts/conformist]] | Contexto que se adapta ao modelo de outro sem traduzir |
+
+### ICMP Browser / Redes (2026-09-30)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/icmp]] | Protocolo de erros/diagnóstico do ping; tipos 128/129 em ICMPv6 |
+| [[wiki/concepts/mtu]] | Tamanho máximo de pacote antes de fragmentar (~1500 B) |
+| [[wiki/concepts/fragmentacao-ip]] | Perder um fragmento invalida o pacote inteiro |
+| [[wiki/concepts/ipv6]] | IPv6: payload ~65 KB, ICMPv6, endereço fácil em servidor |
+| [[wiki/concepts/icmp-tunneling]] | Usar o campo de dados do ICMP como canal de transporte |
+| [[wiki/concepts/forward-proxy]] | Proxy em nome do cliente (oculta o IP do cliente ao site) |
+| [[wiki/concepts/remontagem-de-pacotes-fora-de-ordem]] | Total de pedaços + array indexado pela sequência |
+
+### SQL Injection com SQLMap (2026-09-30)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/sqlmap]] | Ferramenta open source de detecção/exploração automatizada de SQL injection |
+| [[wiki/concepts/sql-injection-tecnicas-de-exploracao]] | Taxonomia: boolean-based blind, time-based blind, error-based, UNION-based |
+| [[wiki/concepts/load-file-into-outfile-mysql]] | `LOAD_FILE`/`INTO OUTFILE`: ler e potencialmente escrever arquivos no servidor via SQLi |
+
+### Terminal, PTY & Terminal Web (2026-09-30)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/tty-teletypewriter]] | Dispositivo físico pré-computador (teleprinter); dumb terminal; base do Unix |
+| [[wiki/concepts/pty-pseudoterminal]] | Terminal virtual com pontas master/slave que o kernel entrega para fingir o TTY |
+| [[wiki/concepts/line-discipline]] | Echo, buffer e edição de linha no kernel entre master e slave; `stty -echo` |
+| [[wiki/concepts/emulador-de-terminal]] | A janela que lê/escreve no master e renderiza os bytes (xterm.js na web) |
+| [[wiki/concepts/fork-e-heranca-de-file-descriptors]] | Como o shell nasce: fork, herança e redirecionamento de stdin/stdout/stderr |
+| [[wiki/concepts/terminal-web-broker-websocket-ssh]] | Navegador → WebSocket → broker → SSH; auth em duas fases |
+| [[wiki/concepts/ticket-de-uso-unico-websocket]] | Ticket de 60 s apagado ao usar; WebSocket sem cookies |
+| [[wiki/concepts/cross-site-websocket-hijacking]] | CSRF aplicado a WebSocket; evitado com ticket (stub) |
+| [[wiki/concepts/csrf]] | Site malicioso usando cookies do usuário logado; SameSite (stub) |
+| [[wiki/concepts/dns-rebinding]] | Resolver uma vez e usar só o IP (stub) |
+| [[wiki/concepts/allowlist-de-destino-ssh]] | Egress por IP, replicada no app e no UFW |
+| [[wiki/concepts/design-efemero-zero-persistencia]] | Não salvar nada; só hashes de tokens (stub) |
+| [[wiki/concepts/auditoria-de-issue-por-agente-de-contexto-limpo]] | Issue explicada de volta por agente limpo; orquestrador/writer/reviewer |
+
+### Versionamento de Prompts (2026-09-30)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/versionamento-de-prompt]] | Versionar o ecossistema do prompt para rastrear e reproduzir; versionar não melhora a qualidade |
+| [[wiki/concepts/metadados-de-prompt]] | Modelo, provedor, temperatura, autor, data e motivo da mudança guardados junto ao texto |
+| [[wiki/concepts/versionamento-semantico-de-prompt]] | Major / minor / correção aplicados a prompts; sem critério objetivo de compatibilidade |
+| [[wiki/concepts/rollback-de-prompt]] | Voltar à versão anterior com um clique trocando a versão ativa |
+| [[wiki/concepts/golden-dataset]] | Base de respostas esperadas para comparar versões de prompt (stub) |
+| [[wiki/concepts/teste-de-regressao-de-prompt]] | Comparar versão 1 vs. 1.2 sobre o mesmo golden dataset (stub) |
+| [[wiki/concepts/prompt-registry-local]] | `metadata.json` com versão ativa + JSON por versão + loader/agent builder + UI web |
+
+### Promoção & Jogo da Carreira (2026-09-30)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/jogar-o-jogo-da-carreira]] | Carreira se joga para ganhar, não para jogar bonito; agir sobre o que se influencia e calibrar expectativa |
+| [[wiki/concepts/fatores-externos-de-promocao]] | Cultura da empresa, desempenho da equipe e chefe direto: o que não depende só do dev |
+| [[wiki/concepts/objetivos-de-carreira-explicitos]] | O gestor não é vidente: plano de dois passos e dizer o que se quer (1:1) |
+| [[wiki/concepts/visibilidade-das-entregas]] | O invisível não é importante: números relativos, comunicar testes, status diário |
+| [[wiki/concepts/entender-contexto-da-demanda]] | Análise de requisitos, urgência vs. importância; contexto cumulativo |
+| [[wiki/concepts/overdelivery-calibrado]] | "Ser antes de ter" sem abusar; alinhar com o chefe |
+| [[wiki/concepts/subniveis-de-senioridade]] | Três subníveis por nível; carreira é escada, um degrau por vez; o que se espera do sênior |
+
+### Times Menores, Múltiplos Papéis & Posicionamento com IA (2026-09-30)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/multiplos-papeis-em-times-pequenos]] | Velocidade com IA vem também de cada pessoa acumular papéis (dev/PM/PO); times menores por produtividade, não economia |
+| [[wiki/concepts/framework-compressao-cruzamento-valorizacao]] | 3 passos: onde a IA comprimiu esforço, quais funções cruzar, onde concentrar contexto/ownership |
+| [[wiki/concepts/nao-delegar-o-que-nao-conhece]] | Gestor que nunca viveu o papel gerenciado cria conflito; exemplo do cansaço do dev — stub |
+| [[wiki/concepts/contexto-concentrado-como-valor]] | Trabalho mais valorizado exige contexto; gargalo vira julgar o que vale construir |
+| [[wiki/concepts/lei-de-brooks]] | Mais gente em projeto atrasado o atrasa mais; base para times pequenos — stub |
+| [[wiki/concepts/time-cirurgico]] | Time pequeno de papéis complementares, contra times grandes por camada; obra inferida — stub |
+
+### RAG e Busca Híbrida (2026-09-29)
+
+| Página | Descrição |
+|---|---|
+| [[wiki/concepts/busca-semantica]] | Busca por significado via embeddings; falha com consultas de uma ou duas palavras |
+| [[wiki/concepts/busca-por-palavra-chave]] | Busca textual por termos; complementa a semântica na busca híbrida |
+| [[wiki/concepts/similaridade-de-cosseno]] | Métrica que compara o vetor da pergunta com os dos chunks |
+| [[wiki/concepts/top-k-retrieval]] | Quantos chunks retornar: K pequeno perde, K grande polui o contexto |
+| [[wiki/concepts/fusion-de-rankings]] | Etapa que desempata e rankeia os resultados das duas buscas (RRF ou pesos) |
+| [[wiki/concepts/rag-como-ferramenta-de-busca]] | RAG como problema de busca: retrieval exposto como tool ao agente |
+| [[wiki/concepts/rag-demo-vs-mundo-real]] | Por que RAG funciona na demo e falha em produção; medir o retrieval |
+
+### Isomorfismo Institucional & Ondas de Modernização (2026-09-29)
+
+| Página | Descrição |
+|---|---|
+| [[wiki/concepts/isomorfismo-institucional]] | DiMaggio e Powell: organizações de um campo ficam parecidas por pressão coercitiva, normativa ou mimética — não por eficácia comprovada |
+| [[wiki/concepts/isomorfismo-mimetico]] | Imitar quem parece acertar por incerteza e busca de legitimidade; racional, mas perigoso quando vem antes do problema |
+| [[wiki/concepts/ondas-de-modernizacao-tecnologica]] | Mainframe → cliente-servidor → ERP → nuvem → microsserviços → IA: a "modernidade" muda de direção, o comportamento organizacional não |
+| [[wiki/concepts/cliente-servidor-como-onda-de-modernizacao]] | Downsizing dos anos 90: modernizar = sair do mainframe; caso de 1991 "na contramão" |
+| [[wiki/concepts/problema-antes-da-tecnologia]] | "Qual problema resolvemos?" antes de "por que não fazemos o que os outros fazem?" |
+
+### Mainframe como Serviço & Cloud (2026-09-29)
+
+| Página | Descrição |
+|---|---|
+| [[wiki/concepts/mainframe-as-a-service]] | MaaS: contratar capacidade de mainframe de um provedor (zCloud/Kyndryl) — mesmo código COBOL, novo modelo de consumo |
+| [[wiki/concepts/lpar]] | Partição lógica (PR/SM): vários SOs isolados num mesmo mainframe; base do compartilhamento e do MaaS |
+| [[wiki/concepts/virtualizacao]] | Particionar/compartilhar recursos físicos; nasceu no mainframe, antes da cloud pública |
+| [[wiki/concepts/cloud-como-modelo-de-consumo]] | Nuvem = como a infra é consumida, não onde/como a app executa; mainframe e nuvem não são opostos |
+| [[wiki/concepts/capex-vs-opex]] | Capital imobilizado vs. custo operacional; terceirizar converte CAPEX em OPEX (break-even 18–36 meses em cargas estáveis) |
+| [[wiki/concepts/dimensionamento-para-o-pico]] | Capacidade para o pico deixa ociosidade ("dinheiro parado"); elasticidade a elimina |
+
 ### Autenticação & Identidade
 
 | Página | Hook |
@@ -926,6 +1072,9 @@ date_updated: 2026-09-28
 | [[wiki/concepts/cultura-do-trabalhador-esforcado]] | "Hard worker" como padrão mínimo obrigatório em vez de diferencial — esforço aparente mascarando entrega inconsistente |
 | [[wiki/concepts/curva-de-aprendizado]] | Conhecimento não cresce linear com o que você consegue criar — cada objetivo esconde uma cadeia de pré-requisitos não óbvios (caso SMTP) |
 | [[wiki/concepts/debugar-antes-de-perguntar]] | Buscar solução por conta própria antes de perguntar — quem só pergunta vira um "proxy super conectado", sem gerar raciocínio próprio |
+| [[wiki/concepts/pergunta-bem-formulada]] | Pergunta de ajuda boa = contexto + erro exato + o que já tentou + pedido específico; respeita o tempo do sênior e do suporte |
+| [[wiki/concepts/equilibrio-ao-pedir-ajuda]] | Gangorra: nunca perguntar (estoura prazo) × perguntar demais (vira fardo); o meio é o ponto saudável |
+| [[wiki/concepts/ciclo-de-2-horas]] | Timebox de pedir ajuda: código parecido → doc/IA → tentativa própria; passou de ~2 h, pedir com contexto; exceções: deadline, júnior urgente, pair |
 | [[wiki/concepts/ler-codigo-de-terceiros]] | Ler código de outras pessoas ensina o que dificulta legibilidade e é fonte direta de aprendizado — "projeto funcionando é melhor que documentação" |
 | [[wiki/concepts/medo-de-codigo]] | A sensação de que o código "julga" está inteiramente na cabeça — reformulação: é o código quem precisa de você, não o contrário |
 | [[wiki/concepts/jogo-finito-vs-infinito]] | Carse/Sinek aplicado à carreira: intensidade é jogo finito (vencer um pico), disciplina é jogo infinito (continuar jogando) — programação é jogo infinito mesmo quando age como finito |
@@ -945,6 +1094,18 @@ date_updated: 2026-09-28
 | [[wiki/concepts/paradoxo-da-empregabilidade]] | Catch 22 clássico: precisa de experiência para ter emprego, precisa de emprego para ter experiência — faculdade/estágio como via mais comum de romper o ciclo |
 | [[wiki/concepts/ingles-para-desenvolvedores]] | Inglês como gate de acesso ao mercado global, não diferencial opcional — sem ele, renda fica atrelada ao ciclo econômico do próprio país |
 | [[wiki/concepts/loop-de-feedback-rapido]] | Fazer → observar resultado real → ajustar → repetir, no menor intervalo possível — reformula "10.000 horas" em "10.000 feedbacks"; medo de rejeição/ego é o que trava o ciclo |
+
+### Produtividade, Foco & Metodologia de Trabalho
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/preguicoso-inteligente-vs-idiota-proativo]] | Preguiça inteligente busca o caminho simples; o "idiota proativo" é o perigo — pontos são por entrega, não por dificuldade |
+| [[wiki/concepts/reducao-de-complexidade]] | O trabalho do engenheiro é tornar tudo o mais simples possível — via práticas de programação e metodologia de trabalho |
+| [[wiki/concepts/pensar-na-hora-certa]] | Pensar muito no início (decompor, especificar) e executar quase mecanicamente depois — custo pago em "moeda mental" |
+| [[wiki/concepts/classe-como-unidade-de-teste]] | Menor unidade certa a testar em OOP é geralmente a classe, não o método — evita reescrever testes |
+| [[wiki/concepts/dogmatismo-em-metodologias]] | TDD/BDD/Scrum levados ao pé da letra viram fundamentalismo e ficam contraproducentes |
+| [[wiki/concepts/autoconhecimento-de-produtividade]] | O que te faz produtivo (ambiente, foco, Pomodoro ou não) só se descobre experimentando |
+| [[wiki/concepts/estado-de-flow]] | Momento em que tudo já foi preparado mentalmente e digitar o código é o menor problema |
 
 ### Recursos de Aprendizado
 
@@ -1046,6 +1207,9 @@ date_updated: 2026-09-28
 
 | Página | Hook |
 |---|---|
+| [[wiki/concepts/ia-na-esteira-ci-cd]] | Gerar a esteira com IA (sim) vs. executá-la dependendo de LLM (evitar: custo, lentidão, não determinismo); evals/drift de produto com LLM periódicos ou quando o prompt muda |
+| [[wiki/concepts/tempo-ganho-com-ia-reinvestido-em-qualidade]] | Tempo poupado na geração de código deve ir para testes, quality gate e CI/CD que o time to market sempre adiou |
+| [[wiki/concepts/retrospectiva-de-erros-de-ia]] | Stub: qual a cerimônia equivalente à retro de sprint quando a LLM gera o código? Bug por padrão ignorado vs. regra de negócio desatualizada |
 | [[wiki/concepts/robustez-de-sistemas]] | Palavra do ano — escalabilidade, abstrações, boundaries, testes, segurança; o que a IA não garante sozinha |
 | [[wiki/concepts/let-it-crash]] | Projetar para quebrar controladamente — orquestrador recria instâncias limpas em vez de recuperar estado corrompido |
 | [[wiki/concepts/graceful-shutdown]] | Sequência controlada de encerramento: responde cliente → para conexões → libera recursos → process.exit |
@@ -1084,6 +1248,7 @@ date_updated: 2026-09-28
 
 | Página | Hook |
 |---|---|
+| [[wiki/concepts/valor-do-codigo-com-tempo-achatado]] | A IA achatou o tempo de gerar código; o valor do código talvez não caiu na mesma proporção — e conhecimento vale mais |
 | [[wiki/concepts/product-engineer]] | Constrói a coisa que constrói a coisa — senso de produto + harness; o cargo do dev em 2026 |
 | [[wiki/concepts/taste-dev]] | Julgamento estético e de qualidade sem regra explícita — o diferencial do Product Engineer |
 | [[wiki/concepts/forward-deployed-engineer]] | Vai dentro do cliente instalar/integrar produto de IA complexo (ref.: Palantir, origem 2007-2010) — mesmo papel do arquiteto de soluções sob nome novo; cargo nichado (<1.000 vagas de 65.000 no True Up), quase inexistente no Brasil hoje mas com onda projetada; pouca progressão de carreira |
@@ -1176,6 +1341,14 @@ date_updated: 2026-09-28
 
 | Página | Hook |
 |---|---|
+| [[wiki/concepts/pilares-de-desenvolvimento-com-ia]] | Sete pilares (harness, modelos, docs, memória, local de execução, skills, MCPs) que tornam o dev mais intencional com IA |
+| [[wiki/concepts/avaliacao-de-skills]] | Evals aplicados a skills: acionamento (description) + qualidade (com/sem skill, por modelo), ciclo de melhoria guiado por relatório de grades |
+| [[wiki/concepts/otimizacao-de-descricao-de-skill]] | Loop do skill-creator que gera e testa descriptions contra queries *should trigger* — a description decide o carregamento da skill |
+| [[wiki/concepts/benchmark-com-e-sem-skill]] | Delta de resultado com vs. sem skill por modelo: ~90% vs. ~50% no Haiku, 100/100 nos dois no Opus — decide se a skill merece existir |
+| [[wiki/concepts/contrato-de-revisao]] | Contrato verificável entre implementador e revisor: ambiente, estado inicial, gates, critérios de aceitação e superfícies |
+| [[wiki/concepts/revisao-por-agente-independente]] | O agente que implementa não deve revisar; exige processo e contrato claro |
+| [[wiki/concepts/waves-de-desenvolvimento]] | Ondas de tarefas paralelas com spec e PR por tarefa, autorrevisadas por agentes |
+| [[wiki/concepts/memory-rot]] | Memória do agente que envelhece e deixa de refletir o software (stub) |
 | [[wiki/concepts/linguagem-natural-como-camada-de-abstracao]] | Prompt em inglês/português como o degrau mais recente da cadeia assembly→C→bytecode/JVM; disrupção real só existiria se a IA gerasse binário direto |
 | [[wiki/concepts/niveis-adocao-ia-l0-l4]] | L0 (hater) → L4 (fábrica); a maioria dos devs está no L2; salto de produtividade real ocorre no L3 |
 | [[wiki/concepts/spec-driven-development]] | Planning-first: spec antes de executar; LLM executa autônoma; dev revisa resultado, não linha a linha |
@@ -1226,6 +1399,13 @@ date_updated: 2026-09-28
 | [[wiki/concepts/slash-commands-agente]] | Commands customizados em .claude/commands/*.md — workflows em Markdown reutilizáveis |
 | [[wiki/concepts/hooks-agente]] | Automação garantida em eventos do agente — diferente de CLAUDE.md, não pode ser ignorado |
 | [[wiki/concepts/mcp-server]] | Configuração de servidores MCP no Claude Code — CLI, global vs local, permissões |
+| [[wiki/concepts/modalidades-de-paralelismo-claude-code]] | Cinco formas de paralelizar no Claude Code (terminais, subagentes, Agents View, Agent Teams, workflows) e o custo ~2x |
+| [[wiki/concepts/agent-teams]] | Times de sessões supervisionadas pelo Claude (experimental) — regra: sem arquivos em comum |
+| [[wiki/concepts/rotinas-agendadas-claude-code]] | `/loop` local e routines na nuvem — health check, revisão de PRs em cron |
+| [[wiki/concepts/sessoes-remotas-claude-code]] | Sessão na nuvem e Remote Control (monitorar a execução local por outro dispositivo) |
+| [[wiki/concepts/fork-de-sessao-claude-code]] | `/fork`: cópia exata da sessão para explorar dois caminhos sem perder o original |
+| [[wiki/concepts/integracao-navegador-claude-code]] | Chrome e MCP do Playwright para testar/depurar apps web sem trocar de contexto |
+| [[wiki/concepts/saida-estruturada-llm]] | Schema (Zod/Pydantic → JSON Schema) para receber resposta do modelo no formato exato |
 
 ### LLMs e IA
 
@@ -1385,6 +1565,13 @@ date_updated: 2026-09-28
 | [[wiki/concepts/algoritmos-e-estruturas-de-dados]] | A fundação que separa amadores de profissionais — DSA antes de qualquer framework |
 | [[wiki/concepts/scratch-linguagem-de-blocos]] | Linguagem visual de blocos do MIT Media Lab — mesmos quatro conceitos (função, condicional, booleano, loop) de C/Python, arrastados em vez de digitados |
 | [[wiki/concepts/algoritmos-de-ordenacao]] | Bubble, Insertion e Selection Sort O(n²); Merge Sort O(n log n) estável; Quicksort O(n log n) médio/O(n²) pior caso (pivô extremo); Heapsort O(n log n) in-place via Max Heap — não há um melhor universal |
+| [[wiki/concepts/selection-sort]] | Ordenar achando o extremo do que sobrou n vezes — O(n²); a média de n/2 comparações não muda a classe |
+| [[wiki/concepts/quicksort]] | Dividir-para-conquistar com pivô e particionamento — O(n log n) médio, O(n²) com pivô ruim; caso base `len < 2` |
+| [[wiki/concepts/bubble-sort]] | Dois loops aninhados com swap — O(n²); melhor caso O(n) só com a flag de "sem trocas" |
+| [[wiki/concepts/dividir-para-conquistar]] | Quebrar até um caso base, resolver e combinar — a base de Quicksort, Merge Sort e busca binária |
+| [[wiki/concepts/escolha-de-pivo]] | Primeiro/meio/último/aleatório: não afeta a correção do Quicksort, mas decide entre O(n log n) e O(n²) |
+| [[wiki/concepts/sort-nativo-das-linguagens]] | O que `.sort()` faz por trás (Timsort em JS/V8 e Python) e a armadilha da ordenação lexicográfica padrão do JS |
+| [[wiki/concepts/descarte-de-constantes-big-o]] | Por que ½·n² é O(n²): constantes não mudam a classe de crescimento |
 | [[wiki/concepts/algoritmos-de-busca]] | Linear Search O(n) vs Binary Search O(log n) — a busca binária exige dados já ordenados |
 | [[wiki/concepts/bucket-sort]] | Ordenar sem comparar: distribuir elementos em "baldes" indexados por um valor com teto conhecido (ex.: frequência ≤ n) — O(n) em vez de O(n log n) |
 | [[wiki/concepts/two-pointer]] | Dois índices móveis sobre a mesma estrutura em vez de recriar sub-arrays a cada chamada recursiva — implementação real de binary search |
@@ -1779,6 +1966,22 @@ date_updated: 2026-09-28
 | [[wiki/concepts/efeito-colateral]] | O que uma função muda além do que retorna — o objetivo não é eliminar efeitos, é isolá-los e torná-los explícitos |
 | [[wiki/concepts/estado-compartilhado]] | Múltiplas funções lendo/mutando o mesmo estado tornam debugging impossível em escala — solução: funções que recebem estado e retornam novo estado |
 
+### Anti-bot & CAPTCHA
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/captcha]] | Teste automático humano vs. máquina; requisitos de 2003 e prazo de validade inerente |
+| [[wiki/concepts/recaptcha]] | v1 (voto de palavras p/ NYT), "Não sou um robô", v3 (score 0–1) |
+| [[wiki/concepts/teste-de-turing]] | Jogo da imitação de Turing; CAPTCHA é sua versão invertida |
+| [[wiki/concepts/ocr]] | Reconhecimento óptico de caracteres; origem e morte do CAPTCHA de texto |
+| [[wiki/concepts/bot-detection]] | Camadas de detecção de automação e seus limites |
+| [[wiki/concepts/seguranca-por-obscuridade]] | Segurança dependente do sigilo do algoritmo (reCAPTCHA v3, FunCaptcha) |
+| [[wiki/concepts/cloudflare-turnstile]] | CAPTCHA não interativo da Cloudflare: prova de navegador real |
+| [[wiki/concepts/proof-of-work]] | Nonce com hash de zeros à esquerda; custo por força bruta |
+| [[wiki/concepts/proof-of-space]] | Tabela em memória + consulta aleatória; RAM não escala barato |
+| [[wiki/concepts/funcaptcha]] | CAPTCHA 3D do Roblox (Arkose): 1.200+ variações + telemetria |
+| [[wiki/concepts/servico-de-resolucao-de-captcha]] | Humanos resolvendo CAPTCHA por API (2Captcha): contorno por custo |
+
 ### Segurança de APIs & Arquitetura
 
 | Página | Hook |
@@ -2090,7 +2293,7 @@ date_updated: 2026-09-28
 | [[wiki/concepts/hnsw]] | Stub gerado no sweep de lint (links quebrados) a partir de 1 citações — conteúdo completo pendente de ingest dedicado |
 | [[wiki/concepts/hpa]] | Stub gerado no sweep de lint (links quebrados) a partir de 2 citações — conteúdo completo pendente de ingest dedicado |
 | [[wiki/concepts/http2]] | Stub gerado no sweep de lint (links quebrados) a partir de 2 citações — conteúdo completo pendente de ingest dedicado |
-| [[wiki/concepts/hybrid-search]] | Stub gerado no sweep de lint (links quebrados) a partir de 1 citações — conteúdo completo pendente de ingest dedicado |
+| [[wiki/concepts/hybrid-search]] | Busca semântica + por palavra-chave em paralelo, unidas por fusion; cobre o que a semântica sozinha perde |
 | [[wiki/concepts/hyde]] | Stub gerado no sweep de lint (links quebrados) a partir de 1 citações — conteúdo completo pendente de ingest dedicado |
 | [[wiki/concepts/iac]] | Stub gerado no sweep de lint (links quebrados) a partir de 1 citações — conteúdo completo pendente de ingest dedicado |
 | [[wiki/concepts/jit-access]] | Stub gerado no sweep de lint (links quebrados) a partir de 2 citações — conteúdo completo pendente de ingest dedicado |
@@ -2113,7 +2316,7 @@ date_updated: 2026-09-28
 | [[wiki/concepts/pki]] | Stub gerado no sweep de lint (links quebrados) a partir de 2 citações — conteúdo completo pendente de ingest dedicado |
 | [[wiki/concepts/platform-engineering]] | Stub gerado no sweep de lint (links quebrados) a partir de 2 citações — conteúdo completo pendente de ingest dedicado |
 | [[wiki/concepts/ports-adapters]] | Stub gerado no sweep de lint (links quebrados) a partir de 2 citações — conteúdo completo pendente de ingest dedicado |
-| [[wiki/concepts/processamento-assincrono]] | Stub gerado no sweep de lint (links quebrados) a partir de 2 citações — conteúdo completo pendente de ingest dedicado |
+| [[wiki/concepts/processamento-assincrono]] | Receptor processa em background (workers + fila) e entrega o resultado depois; lado receptor da [[wiki/concepts/comunicacao-assincrona]] |
 | [[wiki/concepts/projecao]] | Stub gerado no sweep de lint (links quebrados) a partir de 2 citações — conteúdo completo pendente de ingest dedicado |
 | [[wiki/concepts/prompt-injection]] | Stub gerado no sweep de lint (links quebrados) a partir de 2 citações — conteúdo completo pendente de ingest dedicado |
 | [[wiki/concepts/protobuf]] | Stub gerado no sweep de lint (links quebrados) a partir de 3 citações — conteúdo completo pendente de ingest dedicado |
@@ -2392,8 +2595,32 @@ date_updated: 2026-09-28
 
 ## Entities
 
+### ICMP Browser (2026-09-30)
+
 | Página | Hook |
 |---|---|
+| [[wiki/entities/icmp-browser]] | Proxy/navegador em Go sobre ICMP (prova de conceito) |
+
+### Terminal Web (2026-09-30)
+
+| Página | Hook |
+|---|---|
+| [[wiki/entities/omxterm]] | Terminal web MVP (xterm.js + Fastify/SSH2/WebSocket) para uma pessoa, zero persistência |
+| [[wiki/entities/otavio-miranda]] | Autor do OMXTerm e do vídeo (identificação inferida) |
+| [[wiki/entities/xterm-js]] | Emulador de terminal JS usado no navegador |
+| [[wiki/entities/traefik]] | Proxy reverso com Let's Encrypt e rate limit no deploy do OMXTerm |
+
+| Página | Hook |
+|---|---|
+| [[wiki/entities/ronald-hulk]] | Criador de conteúdo sobre IA em produção, RAG e harness; autor da Rock Pro |
+| [[wiki/entities/rock-pro]] | Harness online de aprendizado do Ronald Hulk; demo de RAG híbrida |
+| [[wiki/entities/the-iron-cage-revisited-paper]] | Artigo de DiMaggio e Powell (1983) que define isomorfismo institucional — coercitivo, normativo, mimético |
+| [[wiki/entities/moni-naor]] | Propôs o teste de Turing para web em 1996 — origem do CAPTCHA |
+| [[wiki/entities/new-york-times]] | Arquivo digitalizado via reCAPTCHA |
+| [[wiki/entities/bill-gates]] | Citação atribuída sobre a pessoa preguiçosa para trabalho difícil (atribuição não verificada) |
+| [[wiki/entities/cal-newport]] | Autor de *Deep Work*, referência para trabalho profundo |
+| [[wiki/entities/cloudflare]] | CDN/segurança; criadora do Turnstile |
+| [[wiki/entities/roblox]] | Usa FunCaptcha (Arkose Labs) |
 | [[wiki/entities/github]] | Plataforma de código; caso de estudo do incidente de partição de 2018 |
 | [[wiki/entities/bertrand-meyer]] | Criador do Eiffel, Design by Contract e Open/Closed Principle — stub |
 | [[wiki/entities/eiffel]] | Linguagem OO onde nasceu o Design by Contract — stub |
@@ -2548,6 +2775,7 @@ date_updated: 2026-09-28
 | [[wiki/entities/christopher-alexander]] | Arquiteto que criou a linguagem de patterns original — inspiração para o GoF |
 | [[wiki/entities/nikon-cotaro]] | Autor do artigo Token Anxiety (fev/2025) |
 | [[wiki/entities/claude-code]] | CLI da Anthropic com agentes e janela de contexto com reset |
+| [[wiki/entities/skill-creator]] | Skill oficial da Anthropic para criar, otimizar e avaliar skills (scripts run_loop, run_eval, aggregate_benchmark) |
 | [[wiki/entities/luiz-tibirica]] | Growth hacker, 42 anos, Citybank/Bradesco/Itaú — criador do conceito Observador Tercerático |
 | [[wiki/entities/nubank]] | Maior banco digital da América Latina (122M clientes, 2025) — Clojure + Datomic + Event Sourcing, 4.000+ microsserviços, Scalability Units, observabilidade in-house |
 | [[wiki/entities/alexandria-nubank]] | Plataforma de logs construída internamente pelo Nubank — 600TB/dia, ingestão Kafka + storage S3 colunar, 50% mais barata que a solução terceirizada que substituiu |
@@ -2556,6 +2784,7 @@ date_updated: 2026-09-28
 | [[wiki/entities/rodrigo-branas]] | Instrutor brasileiro, 25 anos de dev — co-criador da Formação IA para Devs; foco em harness e spec-driven |
 | [[wiki/entities/pedro-nauke]] | Instrutor brasileiro, 22 anos de dev — criador do Compose; especialista em spec-driven e paralelismo de tarefas |
 | [[wiki/entities/anthropic]] | Criadora do Claude e do Claude Code — definiu specs de rules/skills/MCP que viraram padrão de mercado |
+| [[wiki/entities/anthropic-engineering-blog]] | Blog `anthropic.com/engineering` — leitura sugerida ("Effective harnesses for long-running agents") para conversar com o mercado internacional |
 | [[wiki/entities/pascadev]] | Canal brasileiro de conteúdo sobre IA e Claude Code — série sobre eficiência com LLMs |
 | [[wiki/entities/codex-openai]] | Harness de codificação da OpenAI baseado em GPT-5.x — par do Claude Code em 2026 |
 | [[wiki/entities/rockyou]] | Empresa que vazou 32M senhas em plaintext em 2009 — originou a wordlist com bilhões de senhas reais |
@@ -2637,6 +2866,13 @@ date_updated: 2026-09-28
 | [[wiki/entities/attention-is-all-you-need-paper]] | Paper de 2017 (equipe Google) que introduziu a arquitetura Transformer e o mecanismo de self-attention — marco histórico do avanço acelerado das LLMs generativas |
 | [[wiki/entities/edwards-deming]] | Autor de *Out of the Crisis*, criador do ciclo PDCA e dos 14 pontos de gerenciamento — figura central do movimento de qualidade dos anos 80 |
 | [[wiki/entities/eliyahu-goldratt]] | Autor de *A Meta* (1984), criador da Teoria das Restrições — resolva o elo mais fraco da corrente, um de cada vez |
+
+### Mainframe & Cloud — Empresas (2026-09-29)
+
+| Página | Descrição |
+|---|---|
+| [[wiki/entities/casas-bahia]] | Varejista que migrou o mainframe para o zCloud da Kyndryl (MaaS) |
+| [[wiki/entities/sulamerica]] | Seguradora/saúde que migrou para o zCloud da Kyndryl (out/2023) um ano antes das Casas Bahia |
 
 ### Documentação de Arquitetura
 

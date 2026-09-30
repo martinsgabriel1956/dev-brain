@@ -3,8 +3,8 @@ type: concept
 title: "Avaliar Hype Tecnológico com a Tríade Retorno-Risco-Liquidez"
 aliases: ["como identificar hype", "avaliação de tecnologia emergente", "quando adotar tecnologia nova", "hype tecnológico"]
 date_created: 2026-07-09
-date_updated: 2026-09-28
-source_count: 5
+date_updated: 2026-09-29
+source_count: 6
 tags: [hype, tomada-de-decisao, escolha-de-stack, carreira, tech-debt]
 skill: tech-mentor-leadership
 status: stable
@@ -67,6 +67,10 @@ Um projeto pessoal/paralelo em que você declara explicitamente que não busca r
 
 [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] acrescenta o lado negativo concreto de investir tempo/carreira num hype específico sem fundamentos por trás: microsserviços, squads e o próprio Agile já foram hype — algumas mudam de forma e permanecem relevantes (microsserviços, hoje visto de forma mais crítica: "dá muito trabalho em produção"), outras somem por completo. O autor relata conhecer devs que precisaram se reinventar quase do zero, e outros que desistiram da área, depois de investir tempo e até certificação numa tecnologia que não vingou. Aplica a mesma cautela à IA no momento atual do vídeo: recurso real e útil, mas "ainda tem muita água pra passar debaixo da ponte" — apostar tudo nela sem fortalecer [[wiki/concepts/fundacao-tecnica|fundamentos]] repete o padrão de risco alto/liquidez baixa sem retorno garantido.
 
+## Perspectiva Organizacional: Isomorfismo Mimético
+
+A tríade avalia o hype do ponto de vista de quem decide; [[wiki/concepts/isomorfismo-institucional]] explica por que empresas inteiras adotam mesmo sem retorno claro: pressão coercitiva, normativa ou mimética. Ponto de partida antes da tríade: definir o problema ([[wiki/concepts/problema-antes-da-tecnologia]]).
+
 ## Key Sources
 
 - [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] — custo real de apostar em hype que não vinga (reinvenção forçada, desistência da área); ressalva sobre IA como hype atual ainda em curso
@@ -74,3 +78,4 @@ Um projeto pessoal/paralelo em que você declara explicitamente que não busca r
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — mesma conclusão por outro caminho: não existe tecnologia perfeita, só adequação ao caso de uso específico avaliada contra prós e contras
 - [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]] — aplicação da tríade ao hype consumido pelo cliente de um projeto de IA, não pelo próprio profissional
 - [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] — microsserviços como hype adotado sem saber que problema resolve; 'elegante' e 'moderno' como justificativas vagas
+- [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — perspectiva organizacional do hype: ondas de modernização e isomorfismo mimético

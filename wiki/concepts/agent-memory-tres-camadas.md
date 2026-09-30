@@ -3,8 +3,8 @@ type: concept
 title: "Memória de Agente em Três Camadas (Sessão / Persistente / Skill)"
 aliases: ["three-layer agent memory", "memória de três camadas", "session/persistent/skill memory"]
 date_created: 2026-07-21
-date_updated: 2026-08-27
-source_count: 4
+date_updated: 2026-09-29
+source_count: 5
 tags: [tech-mentor-ai, agent-memory, learning-loop, sqlite, fts5, hermes-agent, claude-md, memory-layers]
 skill: tech-mentor-ai
 status: draft
@@ -51,6 +51,8 @@ A fonte também documenta uma prática de campo (não formalizada como spec ou l
 
 ## Key sources
 
+
+- [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — memória como pilar (evita repetir erro) e o risco de memory rot — ver [[wiki/concepts/memory-rot]]
 - [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] — quarta nomenclatura (user/episodic/semantic/procedural memory) no contexto de assemble de contexto de um agent run; separa episodic de semantic explicitamente
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]]
 - [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] — variante de memória multiplayer por canal (não por usuário individual)

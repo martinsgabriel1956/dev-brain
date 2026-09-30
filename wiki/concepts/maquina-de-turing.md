@@ -3,8 +3,8 @@ type: concept
 title: "Máquina de Turing"
 aliases: ["Turing machine", "máquina de turing", "modelo de Turing", "tabela de transição"]
 date_created: 2026-08-07
-date_updated: 2026-09-21
-source_count: 3
+date_updated: 2026-09-29
+source_count: 4
 tags: [cs-fundamentals, teoria-da-computacao, maquina-de-turing, computabilidade, automatos]
 skill: cs-fundamentals
 status: stub
@@ -51,3 +51,4 @@ Uma linguagem é dita **Turing-completa** quando, dado tempo e memória suficien
 - [[wiki/sources/conceitos-que-regem-a-computacao-bits-turing-complexidade]] — definição via fita infinita, cabeça de leitura/escrita e tabela de transição; argumento de que representa tudo que é computável
 - [[wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization]] — Turing-completude e tese de Church-Turing como base formal para a equivalência recursão/iteração
 - [[wiki/sources/o-que-e-uma-finite-state-machine]] — introduz FSM (a aplicação de Game Design do autômato finito) via exemplos de Pac-Man e HFSM
+- [[wiki/sources/historia-do-captcha-do-teste-de-turing-ao-turnstile]] — distinção: o [[wiki/concepts/teste-de-turing]] (1950, base do CAPTCHA) não é a máquina de Turing (1936)

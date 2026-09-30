@@ -3,8 +3,8 @@ type: concept
 title: "Alocação de Modelo por Alavancagem da Tarefa"
 aliases: ["model routing by leverage", "leverage-based model selection", "alavancagem de tarefa"]
 date_created: 2026-07-21
-date_updated: 2026-07-31
-source_count: 2
+date_updated: 2026-09-29
+source_count: 3
 tags: [claude-code, model-routing, agentes, custo, arquitetura-de-agentes]
 skill: tech-mentor-ai
 status: draft
@@ -38,7 +38,12 @@ Modelo mais leve (ex.: Sonnet) → implementação das tarefas, possivelmente
 - [[wiki/concepts/subagentes]] — a etapa de implementação pode ser paralelizada entre vários subagentes rodando o modelo mais leve
 - [[wiki/concepts/worktree-paralelismo]] — paralelismo a nível de file system para as mesmas tarefas de implementação, quando independentes o suficiente para branches separados
 
+## Skill Como Alternativa a Modelo Mais Caro
+
+No benchmark de [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]], uma skill elevou o Haiku de ~50% para ~90% na tarefa testada, enquanto o Opus atingiu 100% sem ela — indício de que skill + modelo menor é uma alavanca de custo, e que a necessidade da skill deve ser reavaliada ao trocar de modelo ([[wiki/concepts/benchmark-com-e-sem-skill]]). Evidência de um único caso, sem amostra informada.
+
 ## Key Sources
 
 - [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]]
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — adiciona velocidade como terceiro eixo de decisão, além de alavancagem/custo
+- [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — skill eleva Haiku de ~50% a ~90%; Opus dispensa a skill

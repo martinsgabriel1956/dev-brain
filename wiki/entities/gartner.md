@@ -3,8 +3,8 @@ type: entity
 title: "Gartner"
 aliases: ["Gartner Inc"]
 date_created: 2026-07-16
-date_updated: 2026-07-30
-source_count: 3
+date_updated: 2026-09-30
+source_count: 4
 tags: [consultoria, pesquisa-de-mercado, custo-ia, token-economics, roi-de-ia, devsecops]
 skill: tech-mentor-ai
 status: draft
@@ -22,8 +22,13 @@ Consultoria e empresa de pesquisa de mercado global, citada recorrentemente na w
 - **Sem correlação entre demissão e ROI de IA** — reforça que atribuir cortes de pessoal à IA (ver [[wiki/concepts/ai-washing]]) não é justificado pelos próprios números da adoção.
 - **Sem visibilidade clara do uso de tokens, organizações arriscam estouros de orçamento e perdem capacidade de rastrear custo vs. valor.**
 
+## Previsão de Times Menores (2029)
+
+Segundo [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]] (citação oral, sem link ao relatório; **não verificada**), a Gartner prevê que 60% das organizações adotarão times menores de software até 2029. O autor lê isso como mudança de descrição de cargo, não como fim de empregos. Ver [[wiki/concepts/multiplos-papeis-em-times-pequenos]].
+
 ## Key Sources
 
 - [[wiki/sources/ia-custo-roi-bolha-ou-realidade]]
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]]
 - [[wiki/sources/devsecops-origem-cultura-manifesto]] — creditada como quem cunhou "DevSecOps" em 2012 (sem citação direta ao relatório original na fonte)
+- [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]

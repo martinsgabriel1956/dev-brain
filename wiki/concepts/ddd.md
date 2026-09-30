@@ -3,8 +3,8 @@ type: concept
 title: "DDD — Domain-Driven Design"
 aliases: ["domain-driven design", "ddd", "domínio"]
 date_created: 2026-05-31
-date_updated: 2026-09-08
-source_count: 14
+date_updated: 2026-09-30
+source_count: 15
 tags: [ddd, arquitetura, bounded-context, aggregate, domain-events, hexagonal]
 skill: tech-mentor-backend
 status: draft
@@ -96,6 +96,10 @@ No DDD, o agregado é responsável por proteger suas próprias invariantes — r
 
 [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] (via [[wiki/entities/otavio-santana]]) aponta um erro recorrente na aplicação prática do padrão Repository: colocar sufixo "Repository" na classe e métodos genéricos de CRUD ("inserir", "deletar", "atualizar") e considerar isso "estar usando DDD", quando o conceito é o oposto — abstrair a implementação usando vocabulário do domínio (Ubiquitous Language). Exemplo didático: numa empresa de locação de carros, o repositório de carros deveria ser conceitualmente uma "garagem", com métodos como "registrar" ou "estacionar" em vez de "inserir". Ver [[wiki/concepts/repository-pattern]] para o mesmo ponto do lado do padrão em si.
 
+## Terceiro Pilar: Bounded Context na Série "Dominando DDD"
+
+[[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] apresenta o bounded context como terceiro pilar do DDD, após domínio/subdomínio ([[wiki/concepts/subdominio]]) e [[wiki/concepts/ubiquitous-language]]. Ênfase: simples de entender, difícil de implementar; o ganho está em reduzir ambiguidade, modularizar (caminho para [[wiki/concepts/microsservicos]]) e reduzir acoplamento entre times. Detalhes em [[wiki/concepts/bounded-context]]; integração entre contextos em [[wiki/concepts/context-map]].
+
 ## Key Sources
 
 - [[wiki/sources/monolith-first-martin-fowler]] — fonte primária do argumento de dificuldade de acertar bounded contexts no início de um projeto, base do princípio Monolith First que motiva adiar microsserviços até o domínio amadurecer
@@ -112,3 +116,4 @@ No DDD, o agregado é responsável por proteger suas próprias invariantes — r
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — DDD como pré-requisito para sharding de sistemas grandes; sem decomposição em bounded contexts não há uma única entidade/shard key candidata
 - [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]] — exemplo de agregado (ordem de serviço → pedido → cliente → indicação) usado para motivar a separação entre modelo de comando e modelo de leitura em [[wiki/concepts/cqrs]]
 - [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — Repository com nomes CRUD genéricos como erro comum de aplicação superficial de DDD; exemplo da "garagem" para vocabulário de domínio
+- [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — terceiro pilar do DDD (bounded context) na série Dominando DDD

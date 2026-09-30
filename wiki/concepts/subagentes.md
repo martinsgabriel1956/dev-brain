@@ -3,8 +3,8 @@ type: concept
 title: "Subagentes"
 aliases: ["subagents", "sub-agentes", "Task tool", ".claude/agents"]
 date_created: 2026-07-03
-date_updated: 2026-09-21
-source_count: 10
+date_updated: 2026-09-30
+source_count: 13
 tags: [subagentes, claude-code, multi-agent, paralelismo, context-engineering, harness, list-agents, mensagens-cruzadas, fork, permission-mode]
 skill: tech-mentor-ai
 status: draft
@@ -131,8 +131,14 @@ Isso é complementar, não substituto, ao benchmark de granularidade da seção 
 
 [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] relata, sem testar nem medir, que um único agente por sessão é suficiente para o próprio fluxo de trabalho, mesmo observando outros desenvolvedores rodando swarms de agentes em paralelo. O autor atribui a diferença ao próprio volume de tarefas (poucas coisas para rodar ao mesmo tempo), não a uma crítica ao padrão de swarm — é uma escolha de escala pessoal, não um dado que contradiga o benchmark de granularidade já documentado acima.
 
+## Subagentes Entre as Cinco Modalidades de Paralelismo
+
+Na taxonomia da fonte, subagentes são a modalidade em que o Claude **delega e coleta resultados dentro de uma única conversa**; difere de Agents View (tarefas individuais vistas depois) e de [[wiki/concepts/agent-teams]] (grupo de sessões supervisionado, experimental). O `/fork` ([[wiki/concepts/fork-de-sessao-claude-code]]) também roda num subagente. Quadro completo em [[wiki/concepts/modalidades-de-paralelismo-claude-code]].
+
 ## Key Sources
 
+
+- [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — agentes especializados (definir os próprios) para ser intencional com o domínio; agentes que se autorrevisam nas PRs de cada wave
 - [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — relato anedótico de agente único suficiente para baixo volume de trabalho, sem crítica técnica a swarms
 - [[wiki/sources/graph-engineering-matematica-do-erro-composto]] — organização típica organizador/researchers/builders/reviewers, arestas decidindo dependência entre subagentes
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
@@ -143,3 +149,5 @@ Isso é complementar, não substituto, ao benchmark de granularidade da seção 
 - [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] — benchmark de campo com 4 cenários de granularidade (sem subagente, 1 por task, agrupado por fase, sweet spot de 3): granularidade excessiva piora tempo, custo e qualidade ao mesmo tempo; agrupamento coeso iguala ou supera 1 agente único com janela final muito mais livre
 - [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] — "Agent Waves" (rebatismo do Padrão Orquestrador) + roteamento por papel (coordenador forte, workers baratos) como alavanca de custo ortogonal à granularidade; simulação projeta ~34% de economia, teste real só confirma ~5%
 - [[wiki/sources/guia-pratico-subagents-claude-code-configuracao-fork-invocacao]] — distinção fork (`/fork`, clona toda a conversa) vs. subagent (não herda conversa); três formas de invocação (linguagem natural, `@nome`, `claude --agent`); campos `permission mode`, `isolation`, `max turns`, `skills`, `memory` (user/projeto/local), `background`; opinião do autor de que o ganho do subagent está no isolamento de contexto, não no paralelismo massivo
+- [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — subagentes encadeados rodando prompts com/sem skill em paralelo para o benchmark
+- [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — subagentes na taxonomia de paralelismo; fork roda num subagente

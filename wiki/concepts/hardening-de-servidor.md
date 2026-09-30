@@ -3,8 +3,8 @@ type: concept
 title: "Hardening de Servidor"
 aliases: ["server hardening", "hardening", "endurecimento de servidor"]
 date_created: 2026-07-10
-date_updated: 2026-07-31
-source_count: 2
+date_updated: 2026-09-30
+source_count: 3
 tags: [hardening, ssh, sshd, seguranca, defense-in-depth, presets]
 skill: tech-mentor-security
 status: stub
@@ -34,7 +34,12 @@ Uma fonte da wiki descreve uma ferramenta com **presets escalonados** — "paran
 - [[wiki/concepts/secure-by-default]] — o objetivo do hardening é aproximar a configuração real do default mais seguro possível.
 - [[wiki/concepts/attack-surface]] — hardening reduz diretamente a superfície exposta.
 
+## Hardening da VPS antes do deploy
+
+[[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] presume servidor já endurecido (hardening completo + VPN WireGuard, tratados em outros vídeos do autor); firewall UFW e allowlist por IP compõem a defesa em camadas ([[wiki/concepts/allowlist-de-destino-ssh]]).
+
 ## Key Sources
 
+- [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — servidor endurecido + UFW como pré-requisito do deploy
 - [[wiki/sources/ssh-chaves-como-funcionam]]
 - [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] — bloqueio de dotfiles (`.env`) como regra de hardening número um contra o vetor de ataque mais simples da fonte

@@ -3,8 +3,8 @@ type: concept
 title: "Dev Essencial e Raridade"
 aliases: ["dev essencial", "dev necessário", "salário baseado em raridade"]
 date_created: 2026-09-23
-date_updated: 2026-09-23
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [carreira, salario, valorizacao, soft-skills]
 skill: tech-mentor-leadership
 status: draft
@@ -32,6 +32,11 @@ Base comum: [[wiki/concepts/resolver-problemas-como-habilidade-central]]. Alavan
 - **Alegação sem evidência**: a relação raridade→salário é raciocínio do autor (analogia do colecionador), sem dado de mercado. Ver Open Questions do source.
 - Relacionado a [[wiki/concepts/efeito-multiplicador]] e [[wiki/concepts/soft-skills-como-diferencial-de-pleno]].
 
+## Complemento: Fazer e Mostrar
+
+[[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]] adiciona que ser essencial não basta se for invisível: o gestor precisa enxergar ([[wiki/concepts/visibilidade-das-entregas]]) e saber o que o dev quer ([[wiki/concepts/objetivos-de-carreira-explicitos]]).
+
 ## Key Sources
 
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]]
+- [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]

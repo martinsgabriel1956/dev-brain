@@ -3,8 +3,8 @@ type: concept
 title: "Gerenciamento de Sessões (Claude Code)"
 aliases: ["sessões claude code", "claude --resume", "/rename", "/go"]
 date_created: 2026-07-21
-date_updated: 2026-07-21
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [claude-code, sessoes, contexto, agente-ia, retencao-de-dados]
 skill: tech-mentor-ai
 status: draft
@@ -38,6 +38,11 @@ Sessões ficam retidas localmente (por padrão, em `~/.claude/projects`) por um 
 
 Gerenciar sessões é complementar a [[wiki/concepts/context-compaction]]: a estratégia de "uma tarefa, uma sessão" só funciona bem na prática se for fácil retomar uma sessão pausada mais tarde — caso contrário, o dev tende a empilhar tarefas não relacionadas na mesma sessão só para não perder contexto.
 
+## Fork e Sessões Remotas
+
+Duas extensões do ciclo de vida da sessão: [[wiki/concepts/fork-de-sessao-claude-code]] (bifurca a sessão atual numa cópia exata) e [[wiki/concepts/sessoes-remotas-claude-code]] (nuvem e Remote Control, para trabalhos longos). A fonte compara sessões a branches/commits do Git.
+
 ## Key Sources
 
 - [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]]
+- [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — fork e sessões remotas

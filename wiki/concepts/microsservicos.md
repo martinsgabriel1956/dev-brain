@@ -3,8 +3,8 @@ type: concept
 title: "Microsserviços"
 aliases: ["microsservicos", "microservices", "arquitetura de microsserviços", "decomposição por domínio"]
 date_created: 2026-07-24
-date_updated: 2026-09-15
-source_count: 22
+date_updated: 2026-09-30
+source_count: 25
 tags: [microsservicos, arquitetura, bounded-context, distributed-monolith, circuit-breaker, resiliencia]
 skill: tech-mentor-backend
 status: draft
@@ -114,6 +114,14 @@ A mesma fonte reafirma a regra de acesso exclusivo via API (nunca via banco comp
 
 [[wiki/entities/nubank]] opera com mais de **4.000 microsserviços** (dado de 2025) atendendo 122 milhões de clientes — um dos maiores números documentados publicamente nesta wiki. A fonte não detalha estratégia de descoberta de serviço ou governança em si, mas confirma indiretamente a tese central desta página: essa escala só é operável porque a decomposição está alinhada à necessidade real (bancária, multi-produto, multi-país) e vem acompanhada de padrões de resiliência e observabilidade construídos sob medida ([[wiki/concepts/cell-based-architecture|Scalability Units]] para isolar blast radius, [[wiki/entities/alexandria-nubank|Alexandria]] para observabilidade). Ver [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]].
 
+## Bounded Context como Pré-Requisito Conceitual (Antecipação)
+
+[[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]]: o autor apresenta bounded contexts como base de modularização e antecipa que serão úteis "quando falarmos de arquiteturas distribuídas e microsserviços" — mesma linha de [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]]. Ver [[wiki/concepts/bounded-context]].
+
+## Comunicação Assíncrona como Pré-Requisito
+
+[[wiki/entities/bernardo-lobato]] trata a [[wiki/concepts/comunicacao-assincrona]] como conceito obrigatório antes das arquiteturas distribuídas: desacopla serviços, tolera falhas (serviço que volta relê as mensagens perdidas) e permite times pequenos focados em um serviço. Alerta: exige capacitação, e emular síncrono sobre assíncrono não funciona.
+
 ## Key Sources
 
 - [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] — origem histórica (Peter Rogers 2005, SOA/ESB como contraponto, "Microservices — Java, the Unix Way" 2012), três requisitos práticos (standalone, deploy independente, funcionalidade útil), e o desafio de capacitação de time como diferença entre projetos que dão certo e os que fracassam
@@ -138,3 +146,6 @@ A mesma fonte reafirma a regra de acesso exclusivo via API (nunca via banco comp
 - [[wiki/sources/arquitetura-monolitica-vantagens-desvantagens]] — fonte introdutória sobre o monolito (não sobre microsserviços diretamente): cita reuso de código via classe compartilhada como "geralmente mais difícil" em microsserviços, sem detalhar os mecanismos de mitigação (contrato de API, client library versionada) que a wiki já documenta em profundidade nesta página
 - [[wiki/sources/os-10-principios-arquitetura-modular-valdemar-neto]] — "microsserviços não compõem" como limitação estrutural frente à componibilidade de [[wiki/concepts/arquitetura-modular|arquitetura modular]]; dois motivos concretos (virtualização + aprendizado de décadas) para o retorno de monolitos modulares
 - [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — caso real de 4.000+ microsserviços em produção atendendo 122M clientes; escala sustentada por Scalability Units (blast radius) e observabilidade in-house
+- [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — microsserviços como uma das "ondas de modernização" adotadas por mimetismo — ver [[wiki/concepts/ondas-de-modernizacao-tecnologica]]
+- [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — bounded context como base de modularização (antecipação)
+- [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — comunicação assíncrona como base dos microsserviços; autonomia de times e tolerância a falha

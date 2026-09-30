@@ -3,8 +3,8 @@ type: concept
 title: "TDD — Test-Driven Development"
 aliases: ["test driven development", "red green refactor", "desenvolvimento guiado por testes"]
 date_created: 2026-04-22
-date_updated: 2026-09-23
-source_count: 36
+date_updated: 2026-09-29
+source_count: 37
 tags: [testes, tdd, design, red-green-refactor, qualidade, dora, emergent-design]
 skill: tech-mentor-testing
 status: stable
@@ -149,6 +149,10 @@ Quando a interface, o input e o output já são conhecidos por uma especificaç�
 
 Ambos insistem numa distinção que DHH, na leitura deles, mistura: **design de código** (nível de método/classe, onde o teste unitário atua e pode legitimamente influenciar a modelagem) é diferente de **arquitetura** (estrutura da aplicação inteira) — teste unitário não consegue guiar decisões arquiteturais, só pode, no máximo, *sinalizar* que a arquitetura está complicando demais o design (exemplo citado: a quantidade de configuração/anotação que certas convenções do Spring exigem só para tornar uma classe testável).
 
+## Crítica ao TDD: o grão do teste unitário
+
+[[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] apresenta um relato anedótico de desencanto com TDD dogmático ([[wiki/concepts/dogmatismo-em-metodologias]]) e uma crítica específica: o problema não é saber a especificação, mas testar pequenos métodos cujo design ainda não existe, gerando testes reescritos. Proposta: testar a **classe** como menor unidade ([[wiki/concepts/classe-como-unidade-de-teste]]). Posição opinativa, sem evidência empírica.
+
 ## Key Sources
 
 - [[wiki/sources/tdd]]
@@ -187,3 +191,4 @@ Ambos insistem numa distinção que DHH, na leitura deles, mistura: **design de 
 - [[wiki/sources/frequent-debugging-xunitpatterns]] — TDD verdadeiro (combinado com storytest-driven development) citado como solução central para o test smell Frequent Debugging, causado por falta de Defect Localization
 - [[wiki/sources/test-driven-bug-fixing-xunitpatterns]] — fonte primária isolada da extensão do TDD para correção de bugs: escrever o unit test que reproduz o defeito antes de depurar e corrigir
 - [[wiki/sources/design-by-contract-video]] — DbC como técnica complementar de corretude, ao lado de testes ([[wiki/concepts/design-by-contract]])
+- [[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] — crítica opinativa ao TDD em nível de método; classe como unidade

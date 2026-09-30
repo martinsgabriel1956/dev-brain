@@ -3,8 +3,8 @@ type: concept
 title: "Determinismo vs. Probabilismo em IA"
 aliases: ["ferramenta certa para a tarefa ia", "analise semantica vs analise deterministica", "llm como juiz determinístico"]
 date_created: 2026-07-27
-date_updated: 2026-07-27
-source_count: 1
+date_updated: 2026-09-30
+source_count: 3
 tags: [determinismo, robustez-de-sistemas, tokenizacao, era-agentica, harness-de-qualidade]
 skill: tech-mentor-ai
 status: draft
@@ -30,6 +30,16 @@ O mesmo princípio já estava implícito em [[wiki/concepts/harness-de-qualidade
 
 Usar um LLM para validação determinística é como usar um carro de corrida para arar um campo, ou uma chave de fenda para pregar um prego: o problema não é a ferramenta, é a tarefa que se espera dela.
 
+## Aplicação à Esteira de CI/CD
+
+[[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] aplica a distinção à esteira: código gera ações determinísticas e LLM gera saídas indeterminadas; por isso a execução de testes/gates/linters não deve depender de LLM, e a LLM entra na construção ou em verificações periódicas. Ver [[wiki/concepts/ia-na-esteira-ci-cd]].
+
+## Reprodutibilidade de Prompt
+
+[[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] busca "reproduzir exatamente" o comportamento de uma versão antiga registrando prompt, modelo e temperatura. Como o LLM é probabilístico, isso reduz mas não elimina a variação `[inferência]`; ver [[wiki/concepts/versionamento-de-prompt]].
+
 ## Key Sources
 
 - [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]]
+- [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — determinismo aplicado à execução da esteira
+- [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — reprodutibilidade de prompt e seus limites

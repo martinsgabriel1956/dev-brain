@@ -3,8 +3,8 @@ type: concept
 title: "HTTP vs HTTPS"
 aliases: ["HTTP", "HTTPS", "http vs https", "hypertext transfer protocol secure"]
 date_created: 2026-08-12
-date_updated: 2026-08-12
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [rede, http, https, ssl, tls, seguranca, man-in-the-middle]
 skill: tech-mentor-networking
 status: stub
@@ -27,5 +27,10 @@ Ambos são **HyperText Transfer Protocol** — o protocolo de transferência de 
 
 > A fonte chama HTTPS de "criptografia de ponta a ponta". Rigorosamente, TLS é criptografia **em trânsito** (cliente↔servidor; o servidor descriptografa) — não end-to-end no sentido estrito. `[skill: tech-mentor-networking — references/protocols-transport.md]`
 
+## Navegar sem HTTP entre cliente e proxy
+
+[[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]]: o [[wiki/entities/icmp-browser]] troca o HTTP por [[wiki/concepts/icmp]] no trecho cliente↔proxy (sem TLS); o proxy ainda usa HTTP(S) para buscar o site.
+
 ## Key sources
 - [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — HTTP sem criptografia vs HTTPS seguro; Man-in-the-Middle; o que o SSL garante (e o que não garante)
+- [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]] — trecho sem HTTP/TLS

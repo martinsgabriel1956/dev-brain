@@ -3,8 +3,8 @@ type: entity
 title: "GitHub"
 aliases: ["github.com"]
 date_created: 2026-09-23
-date_updated: 2026-09-23
-source_count: 1
+date_updated: 2026-09-29
+source_count: 2
 tags: [plataforma, git, incidente, sistemas-distribuidos]
 skill: tech-mentor-system-design
 status: stub
@@ -17,3 +17,4 @@ Plataforma de hospedagem de código. Na wiki aparece como estudo de caso de falh
 ## Key sources
 
 - [[wiki/sources/github-2018-cap-pacelc-particao-video]] — incidente de 2018 usado para explicar CAP/PACELC
+- [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — citado como ferramenta a aprender junto com a IA

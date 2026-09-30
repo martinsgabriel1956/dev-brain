@@ -3,8 +3,8 @@ type: concept
 title: "Timing Attack"
 aliases: ["timing attack", "ataque de temporização", "side-channel timing", "crypto.timingSafeEqual"]
 date_created: 2026-06-10
-date_updated: 2026-08-27
-source_count: 4
+date_updated: 2026-09-30
+source_count: 5
 tags: [security, timing-attack, side-channel, criptografia, appsec, senhas, arquitetura-de-computadores]
 skill: tech-mentor-security
 status: stable
@@ -72,8 +72,13 @@ Ver [[attack-surface]]: superfície de ataque inclui os outputs do sistema, não
 
 O mesmo princípio se aplica à validação de webhooks: comparar a assinatura HMAC recebida com `===` vaza, por diferença de tempo, em qual byte a assinatura correta diverge — permitindo reconstruí-la. Ver [[wiki/concepts/webhook-signature-validation]].
 
+## Nota de rate limit
+
+[[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] lista o timing attack como algo que "talvez você não precise se preocupar" se houver rate limit, pois vira um brute force mais elaborado (mede-se o tempo de comparação de strings). É uma mitigação parcial `[skill: tech-mentor-security]`: comparação em tempo constante (`crypto.timingSafeEqual`) segue sendo a defesa direta.
+
 ## Key Sources
 
+- [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — rate limit reduz a viabilidade de timing attack (segundo o autor)
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — exemplo didático: descobrir senha de 9 chars com 26×9 tentativas em vez de 26^9
 - [[sources/seguranca-armazenamento-senhas-banco-de-dados]] — bcrypt e Argon2 como implementações que já resolvem o problema
 - [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]] — timing attack aplicado à validação de assinatura de webhook

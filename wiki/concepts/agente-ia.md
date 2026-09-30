@@ -3,8 +3,8 @@ type: concept
 title: "Agente de IA"
 aliases: ["agente", "AI agent", "agentes de ia"]
 date_created: 2026-05-18
-date_updated: 2026-08-26
-source_count: 7
+date_updated: 2026-09-30
+source_count: 8
 tags: [agentes-ia, llm, llmops, automacao]
 skill: tech-mentor-ai
 status: draft
@@ -73,6 +73,10 @@ Antes de sair implementando, [[wiki/sources/8-pontos-arquitetura-de-software-na-
 
 Não pensar nessa arquitetura antes de implementar é apontado como causa recorrente de retrabalho em projetos multiagênticos. Ver também [[wiki/concepts/design-patterns-ia]] e o protocolo [[wiki/concepts/agent-to-agent-protocol|A2A]] para comunicação entre agentes de frameworks distintos.
 
+## Prompt Ativo Define o Agente
+
+Na demo de [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]], um *agent builder* cria o agente lendo a versão ativa do prompt, com modelo e temperatura ([[wiki/concepts/prompt-registry-local]]): trocar a versão ativa reconfigura o agente sem editar código.
+
 ## Key Sources
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
@@ -82,3 +86,4 @@ Não pensar nessa arquitetura antes de implementar é apontado como causa recorr
 - [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — modo agente do ChatGPT (com full access ao computador) fazendo setup, instalação de engine, escrevendo o próprio script de execução e testando o jogo sozinho; atritos triviais (falta de Git, login manual na Epic Games) ainda exigem humano
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — quatro arquiteturas de orquestração multiagente (paralela, sequencial, customizada, autônoma) e a tese de que o dev vai atuar cada vez mais como arquiteto para pilotar IA
 - [[wiki/sources/rag-introducao-pipeline-completo]] — distinção explícita entre RAG e agente de IA: chamar um modelo com contexto injetado é uma consulta de API, não um agente
+- [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — agente montado a partir da versão ativa do prompt

@@ -3,8 +3,8 @@ type: concept
 title: "Política Organizacional (Navigating Politics)"
 aliases: ["company politics", "política da empresa", "navigating org politics", "diagrama de influência"]
 date_created: 2026-09-21
-date_updated: 2026-09-23
-source_count: 2
+date_updated: 2026-09-30
+source_count: 3
 tags: [politica-organizacional, lideranca, influencia, credibilidade, carreira, gestao-de-pessoas]
 skill: tech-mentor-leadership
 status: draft
@@ -43,7 +43,12 @@ A política de uma empresa raramente muda sem uma mudança drástica na lideran�
 - [[wiki/concepts/inteligencia-emocional]] — não internalizar os maus hábitos de uma cultura política tóxica exige a mesma regulação emocional documentada para code review e feedback
 - [[wiki/concepts/extreme-ownership]] — ownership do próprio escopo vs. overreach sem credibilidade suficiente para sustentar a mudança proposta
 
+## Jogar o Jogo Como Dev Individual: Objetivo Explícito e Visibilidade
+
+[[wiki/entities/andre-casciotti]] trata a política do lado de quem não quer politicagem: "aprenda a jogar o jogo" ([[wiki/concepts/jogar-o-jogo-da-carreira]]). Sem gerir ninguém, o dev ainda influencia o ambiente declarando objetivos ([[wiki/concepts/objetivos-de-carreira-explicitos]]) e dando visibilidade às entregas ([[wiki/concepts/visibilidade-das-entregas]]). Ele admite aversão a política, mas diz que subir de nível a exige, e nomeia como fatores fora do controle a cultura, a equipe e o chefe direto ([[wiki/concepts/fatores-externos-de-promocao]]).
+
 ## Key Sources
 
 - [[wiki/sources/como-lidar-com-politica-empresarial-lideranca-engenharia]] — origem desta página: diagrama de influência vs. organograma, relacionamento como redutor de risco percebido, política boa vs. ruim, overreach sem capital político, cultura tóxica raramente muda de dentro
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — pergunta de abertura "técnico ou político?" — o autor responde com habilidades comportamentais, não com escalada hierárquica; cuidado com quando/onde resmungar
+- [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]

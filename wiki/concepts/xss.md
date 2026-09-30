@@ -3,8 +3,8 @@ type: concept
 title: "XSS (Cross-Site Scripting)"
 aliases: ["xss", "cross-site scripting", "injeção javascript", "script injection"]
 date_created: 2026-06-10
-date_updated: 2026-09-22
-source_count: 9
+date_updated: 2026-09-30
+source_count: 11
 tags: [security, xss, owasp, appsec, input-sanitization, attack-surface, dvwa, csp]
 skill: tech-mentor-security
 status: draft
@@ -50,7 +50,7 @@ No DOM-based XSS, o JavaScript client-side lê dados (ex.: `location.hash`, um p
 
 ## Relação com SQL Injection
 
-XSS e [[sql-injection]] são instâncias do mesmo padrão: input não sanitizado injetado em um contexto interpretável (SQL no caso do SQLi, HTML/JS no caso do XSS). A mitigação também segue o mesmo princípio: separar dados de código, nunca confiar em input externo.
+XSS e [[sql-injection]] são instâncias do mesmo padrão: input não sanitizado injetado em um contexto interpretável (SQL no caso do SQLi, HTML/JS no caso do XSS). A mitigação também segue o mesmo princípio: separar dados de código, nunca confiar em input externo. [[wiki/sources/sql-injection-sqlmap-luiz-viana]], do mesmo autor de [[wiki/sources/xss-cross-site-scripting-luiz-viana]], aplica exatamente esse paralelo: mesmo formato de curso (mecanismo manual → automação com ferramenta), trocando XSS/DVWA por [[wiki/concepts/sql-injection]]/[[wiki/concepts/sqlmap]].
 
 ## Roubo de Token Via XSS: Motivo Prático Para Cookie `HttpOnly`
 
@@ -81,8 +81,13 @@ A mesma fonte cita que, de todos os ataques documentados em 2019, cerca de 74% e
 - [[wiki/concepts/bug-bounty]] — XSS é uma das falhas mais comuns reportadas em programas de bug bounty
 - [[wiki/concepts/fragment-identifier-url]] — canal que nunca chega ao servidor; base tanto do DOM XSS quanto da técnica de hospedagem sem servidor
 
+## Relação com HttpOnly
+
+[[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] lista XSS junto a CSRF e cookies como base "básica" da segurança web; o `HttpOnly` dos cookies de sessão impede que um XSS os leia via JavaScript ([[wiki/concepts/sessoes-http-cookies]], [[wiki/concepts/csrf]]).
+
 ## Key Sources
 
+- [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — XSS na lista de estudo; HttpOnly como mitigação
 - [[wiki/sources/browser-security]] — Browser Security: Same-Origin Policy é a base (scheme+host+port). CORS habilita cross-origin controlado. CSP com nonces previne XSS mesmo após injeção. COEP + COOP habilitam `SharedArrayBuffer` e...
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — mencionado como exemplo de vulnerabilidade detectada por SAST (SonarQube)
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — teste manual de injeção de script como parte de checklist de autopentest assistido por IA
@@ -92,3 +97,4 @@ A mesma fonte cita que, de todos os ataques documentados em 2019, cerca de 74% e
 - [[wiki/sources/xss-cross-site-scripting-luiz-viana]] — demonstração prática no DVWA: bypass de blocklist de tag, restrição client-side (`maxlength`) contornável, e limite do WAF contra DOM XSS
 - [[wiki/sources/hospedando-site-completo-em-url-fragment-brotli-webassembly]] — extensão criativa (não-maliciosa) do mesmo mecanismo de DOM XSS: usa o fragment identifier como canal de dados invisível ao servidor para hospedar um site inteiro sem servidor
 - [[wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv]] — introdução didática com estudo de caso narrativo (loja do Bob): reflected XSS como ataque que exige engenharia social vs. stored XSS entregue automaticamente pelo próprio site; estatísticas de mercado não verificadas (74%/60%)
+- [[wiki/sources/sql-injection-sqlmap-luiz-viana]] — citado como par estrutural (mesmo autor, mesmo formato pedagógico) aplicado a SQL Injection em vez de XSS

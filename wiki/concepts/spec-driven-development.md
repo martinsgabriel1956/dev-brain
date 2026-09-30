@@ -3,8 +3,8 @@ type: concept
 title: "Spec-Driven Development"
 aliases: ["SDD", "spec driven", "desenvolvimento orientado a especificação", "planning-first"]
 date_created: 2026-06-02
-date_updated: 2026-09-03
-source_count: 21
+date_updated: 2026-09-29
+source_count: 23
 tags: [spec-driven, planejamento, ia-para-devs, harness, agente, qualidade, loop-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -159,8 +159,14 @@ O ponto não invalida SDD como definido acima (spec como contrato de execução,
 
 [[wiki/sources/graph-engineering-matematica-do-erro-composto]] propõe um mapeamento direto entre SDD e [[wiki/concepts/grafo-como-abstracao-de-agentes|grafo de agentes]]: a spec vira várias tasks (**nós**), tasks independentes rodam em paralelo (**arestas**), cada task tem sua verificação (**verificação por nó**), o review final é o **nó de convergência**, e aprovar o plano antes de executar é o **humano** dentro do grafo. A tese: quem já pratica SDD bem já desenha grafos sem chamar assim — é o mesmo mapa mental, só sem o nome novo.
 
+## Especificar antes, executar depois
+
+[[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] defende pensar muito e escrever as especificações antes de codar (chamando de BDD); depois só fazê-las passar — ideia afim a SDD ([[wiki/concepts/pensar-na-hora-certa]]), sem mencionar agentes de IA.
+
 ## Key Sources
 
+
+- [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — SDD sozinho não basta: falta o contrato de revisão auditável entre implementador e revisor; plano em etapas (não lista de tarefas) e specs por tarefa para waves paralelas — ver [[wiki/concepts/contrato-de-revisao]]
 - [[wiki/sources/graph-engineering-matematica-do-erro-composto]] — mapeamento de SDD para os quatro componentes de um grafo de agentes (tasks=nós, paralelismo=arestas, testes=verificação por nó, review final=convergência, aprovação do plano=humano)
 - [[wiki/sources/formacao-ia-devs-aula-01-abertura]]
 - [[wiki/sources/formacao-ia-devs-aula-02-mercado-perfil-profissional]]
@@ -182,3 +188,4 @@ O ponto não invalida SDD como definido acima (spec como contrato de execução,
 - [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — reafirma a tese central (spec como fonte de verdade) num panorama mais amplo de vocabulário técnico de 2026; menção ao Spec Kit do GitHub sem detalhe novo além do já registrado na tabela de ferramentas acima
 - [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] — critério objetivo "um teste automático sabe dizer se ficou pronto?" para decidir entre spec+revisão e loop autônomo; ritmo "spec de dia, loop de noite"
 - [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] — benchmark de granularidade de subagentes na execução do breakdown de tasks: 1 por task piora tudo; agrupamento coeso (sweet spot de 3) iguala ou supera 1 agente único
+- [[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] — especificar primeiro (chamado de BDD), sem IA

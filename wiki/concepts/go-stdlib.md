@@ -3,8 +3,8 @@ type: concept
 title: "Go — Standard Library Essencial"
 aliases: ["go net/http server", "go encoding json", "go database/sql", "go table-driven tests", "go slog"]
 date_created: 2026-04-24
-date_updated: 2026-07-31
-source_count: 3
+date_updated: 2026-09-30
+source_count: 4
 tags: [go, stdlib, net-http, json, database-sql, testing, slog, unicode-utf8]
 skill: lang-systems
 status: stable
@@ -119,8 +119,13 @@ Substitui `log` padrão — structured logging nativo sem dependência externa.
 - [[concepts/go-concorrencia]] — `context` e `sync` são parte da stdlib
 - [[concepts/go-producao]] — `net/http/pprof` e `log/slog` em produção
 
+## Templates e web server no ICMP Browser
+
+[[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]]: web server simples com o sistema de templates nativo do Go para mostrar dados vindos do código sem criar uma API; usa também biblioteca oficial de ICMP (extensão `x/net`, inferido) — ver [[wiki/entities/icmp-browser]].
+
 ## Key Sources
 
 - [[wiki/sources/go-stdlib]]
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — `unicode/utf8` como referência e fonte de testes para uma reimplementação didática de `DecodeRune`
 - [[wiki/sources/golang-profissional-sem-grandes-frameworks]] — estimativa de ~80% das dependências vindas da stdlib em projetos Go profissionais, e o `net/http` como caso concreto de stdlib substituindo pacotes externos
+- [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]] — html/template para renderizar sem API; ICMP em Go

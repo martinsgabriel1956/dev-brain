@@ -3,8 +3,8 @@ type: entity
 title: "IBM"
 aliases: ["IBM", "International Business Machines"]
 date_created: 2026-08-13
-date_updated: 2026-09-14
-source_count: 3
+date_updated: 2026-09-29
+source_count: 5
 tags: [ibm, hardware, storage, fita-magnetica, lto, organização]
 skill: tech-mentor-data
 status: stub
@@ -22,8 +22,14 @@ Também citada como pioneira das primeiras [[wiki/concepts/contrato-de-api|APIs]
 
 Também parceira (com [[wiki/entities/broadcom|Broadcom]] e 21 CS) da pesquisa global de skills e mainframe citada em [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] — 750 empresas, 200 universidades e 200 estudantes entrevistados, base do dado de 91% dos empregadores contratando para posições novas em mainframe.
 
+## Origem de PR/SM e LPAR
+
+O PR/SM e as [[wiki/concepts/lpar|LPARs]] (particionamento do mainframe) são tecnologia da linha IBM Z — ver [[wiki/concepts/virtualizacao]]. Atribuição inferida do contexto, não afirmada pela fonte.
+
 ## Key Sources
 
+- [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — LPAR/PR/SM e virtualização no mainframe (inferido)
 - [[wiki/sources/tipos-de-armazenamento-de-dados]] — IBM entre grandes usuárias de fita magnética
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — IBM System/360 como pioneira em interface de programação local de mainframe, origem histórica do termo "API"
 - [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] — parceira da pesquisa global de skills e mainframe (com Broadcom e 21 CS)
+- [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — IBM 9221/ES/9000 como o mainframe do projeto de 1991 relatado, "na contramão do downsizing"

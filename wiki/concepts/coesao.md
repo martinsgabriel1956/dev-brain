@@ -3,8 +3,8 @@ type: concept
 title: "Coesão"
 aliases: ["cohesion", "alta coesão", "baixa coesão"]
 date_created: 2026-04-25
-date_updated: 2026-08-18
-source_count: 3
+date_updated: 2026-09-30
+source_count: 4
 tags: [coesao, software-design, clean-code, arquitetura]
 skill: tech-mentor-backend
 status: stub
@@ -56,8 +56,13 @@ O alvo de design é **alta coesão dentro de módulos + baixo [[acoplamento]] en
 
 O critério de coesão não se limita a funções e módulos. [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] aplica o mesmo raciocínio a mudanças de processo ou tecnologia: ao separar uma mudança grande em partes menores, as partes precisam continuar fazendo sentido isoladamente — não é qualquer corte, é um corte coeso. Ver [[wiki/concepts/granularidade-de-mudanca]] para o desenvolvimento completo desse argumento.
 
+## Coesão do Módulo via Bounded Context
+
+[[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] liga coesão a bounded context: cada módulo mantém apenas o que interessa à sua responsabilidade (o suporte não carrega detalhes de produto de vendas). Ver [[wiki/concepts/bounded-context]].
+
 ## Key sources
 
 - [[wiki/sources/acoplamento-abstracao-estado]]
 - [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] — coesão como critério para dividir mudanças de processo, não só código
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — god object (agrupamento indevido) e data clumps (falta de agrupamento devido) como baixa coesão em direções opostas
+- [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — módulo mantém só o que interessa ao seu contexto

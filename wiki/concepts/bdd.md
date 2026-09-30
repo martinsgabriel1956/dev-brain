@@ -3,8 +3,8 @@ type: concept
 title: "BDD — Behavior-Driven Development"
 aliases: ["behavior driven development", "gherkin", "cucumber", "specs executáveis"]
 date_created: 2026-04-22
-date_updated: 2026-09-04
-source_count: 5
+date_updated: 2026-09-29
+source_count: 6
 tags: [testes, bdd, gherkin, cucumber, especificação, living-docs]
 skill: tech-mentor-testing
 status: stable
@@ -87,6 +87,10 @@ Vale notar: BDD é frequentemente citado como boa prática por pessoas que admit
 
 [[wiki/sources/rspec-xunitpatterns]] descreve o [[wiki/entities/rspec|RSpec]] como um framework de "nova geração" que troca vocabulário de teste por vocabulário de especificação (fixture→context, assert→should) para servir "Tests as Specification" — mesma motivação declarada do BDD, embora a fonte não cite BDD, Gherkin ou Dan North diretamente. **[external]/inferência**: é razoável ler o RSpec como precursor terminológico do BDD formal, mas essa ligação não está confirmada por nenhuma fonte primária ingerida até agora.
 
+## BDD como "pensar antes, depois desligar o cérebro"
+
+[[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] defende BDD como forma de usar o cérebro o mínimo possível com código de qualidade: pensar bem nas especificações exatas (incluindo [[wiki/concepts/edge-case|casos extremos]]), codificá-las primeiro e só então fazê-las passar. **Tensão de terminologia:** o "BDD" da fonte é mais próximo de *specify-first* que do ritual Gherkin com PO/QA descrito acima; a fonte também alerta que times podem rejeitar BDD/tickets "as a user, I want…" como dogmáticos ([[wiki/concepts/dogmatismo-em-metodologias]]).
+
 ## Key Sources
 
 - [[wiki/sources/bdd]]
@@ -94,3 +98,4 @@ Vale notar: BDD é frequentemente citado como boa prática por pessoas que admit
 - [[wiki/sources/tdd-sdd-bdd-era-ia]] — cobertura mais rasa, autor declara pouca prática com BDD
 - [[wiki/sources/3-pilares-testes-automatizados-produtividade]] — Given/When/Then usado como anotação pessoal de planejamento, fora do contexto formal de BDD
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — Gherkin como o item que pega "construir a coisa errada", e sua função de spec imutável equivalente ao Spec-Driven Development
+- [[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] — BDD como especificar-antes, sem detalhar Gherkin

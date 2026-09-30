@@ -3,8 +3,8 @@ type: concept
 title: "Logaritmo"
 aliases: ["logaritmo binário", "log n", "log2", "logarithm"]
 date_created: 2026-08-12
-date_updated: 2026-08-25
-source_count: 2
+date_updated: 2026-09-29
+source_count: 3
 tags: [cs-fundamentals, matematica, big-o, logaritmo, complexidade]
 skill: cs-fundamentals
 status: draft
@@ -37,3 +37,4 @@ O crescimento logarítmico é o que torna a busca binária tão eficiente: dobra
 
 - [[wiki/sources/busca-linear-e-binaria-giovana]] — derivação `2^x = n`, base 2 do logaritmo binário e por que o `+1` de O(log n + 1) é descartado
 - [[wiki/sources/busca-binaria-fila-protocolos-atendimento-live-coding]] — analogia log₁₀(100) = 2 ("quantos 10 para chegar a 100") como ponte didática para log₂(n) em busca binária
+- [[wiki/sources/ordenacao-selection-quicksort-bubble-sort-live-coding]] — O(n log n) do Quicksort: o `log n` vem de o array ser dividido ao meio a cada recursão, o `n` do `for` de particionamento em cada nível

@@ -3,8 +3,8 @@ type: concept
 title: "CI/CD"
 aliases: ["CI/CD", "continuous integration", "continuous delivery", "continuous deployment", "pipeline de entrega", "deployment pipeline"]
 date_created: 2026-04-22
-date_updated: 2026-09-21
-source_count: 13
+date_updated: 2026-09-30
+source_count: 15
 tags: [devops, cicd, deploy, automação, qualidade, projetos-novos, dora, trunk-based-development]
 skill: tech-mentor-infra
 status: stable
@@ -131,6 +131,14 @@ Essa fonte também **contrasta** com o fluxo `feature → dev/staging → main` 
 - [[concepts/walking-skeleton]] — padrão que fundamenta o deploy imediato do boilerplate
 - [[concepts/dora-metrics]] — como medir se o pipeline está de fato acelerando o time
 
+## IA na Esteira: Gerar vs. Executar
+
+[[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] propõe manter a esteira determinística e barata, usando IA para construí-la; verificações de comportamento de produtos com LLM rodam periodicamente ou quando o prompt muda, não a cada commit. Ver [[wiki/concepts/ia-na-esteira-ci-cd]].
+
+## Prompts no Ciclo de Entrega
+
+[[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] trata prompt como artefato com versão e rollback; o gate automático (regressão contra golden dataset) é o passo de CI correspondente ([[wiki/concepts/teste-de-regressao-de-prompt]]).
+
 ## Key Sources
 
 - [[wiki/sources/deployment-pipeline-martin-fowler]] — fonte primária do termo "Deployment Pipeline": estágios progressivos por confiança, escopo além de testes (performance/segurança/usabilidade), colaboração e trilha de auditoria
@@ -147,3 +155,5 @@ Essa fonte também **contrasta** com o fluxo `feature → dev/staging → main` 
 - [[wiki/sources/rapid-release-at-massive-scale-facebook]] — caso real (Meta/Facebook, 2017) de deploy quase-contínuo em escala massiva
 - [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — aula didática reforçando os três níveis, com demo prática em GitHub Actions + VPS e fluxo de branch feature/dev-staging/main
 - [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] — CI como single command deploy frictionless para times pequenos; contra a branch `dev` de vida longa
+- [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — IA na esteira: gerar vs. executar; evals agendados
+- [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — prompt versionado como artefato de entrega, com rollback

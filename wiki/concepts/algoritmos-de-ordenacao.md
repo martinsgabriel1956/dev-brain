@@ -3,8 +3,8 @@ type: concept
 title: "Algoritmos de Ordenação"
 aliases: ["sorting algorithms", "sorting", "ordenação"]
 date_created: 2026-07-09
-date_updated: 2026-09-03
-source_count: 5
+date_updated: 2026-09-29
+source_count: 6
 tags: [cs-fundamentals, algoritmos, sorting, big-o, bubble-sort, insertion-sort, selection-sort, merge-sort, quicksort, heapsort]
 skill: cs-fundamentals
 status: draft
@@ -16,9 +16,11 @@ Métodos para reorganizar elementos de uma lista ou array em uma ordem definida 
 
 ## Bubble Sort
 
+Página dedicada: [[wiki/concepts/bubble-sort]].
+
 Compara elementos adjacentes e troca-os se estiverem fora de ordem, repetindo passagens até o array estar ordenado — o maior elemento "borbulha" até o topo a cada passagem.
 
-- **Tempo médio/pior caso:** O(n²)
+- **Tempo médio/pior caso:** O(n²) | **Melhor caso:** O(n) só na variante que encerra quando uma passada não faz trocas
 - Didático, mas raramente usado na prática.
 
 ## Insertion Sort
@@ -29,6 +31,8 @@ Constrói o array ordenado um elemento por vez: para cada elemento, desloca os e
 - Boa escolha quando os dados já estão quase ordenados; ruim quando estão invertidos.
 
 ## Selection Sort
+
+Página dedicada: [[wiki/concepts/selection-sort]].
 
 Varre o arranjo **inteiro** a cada passada em busca do menor valor restante e o fixa na posição corrente — diferente do Insertion Sort, que agrega um elemento novo por vez ao subconjunto já ordenado, o Selection Sort já olha para todos os elementos de uma vez em cada passada. Exemplo de campo: `[7, 4, 5, 9, 8, 2, 1]` → acha o menor (1), fixa na posição 0; acha o segundo menor (2) no restante, fixa na posição 1; e assim sucessivamente até ordenar. Ver [[wiki/sources/algoritmos-de-ordenacao-bubble-insertion-selection-merge-quicksort-heapsort]].
 
@@ -46,6 +50,8 @@ Algoritmo recursivo, dividir-para-conquistar: divide o array ao meio recursivame
 
 ## Quicksort
 
+Página dedicada: [[wiki/concepts/quicksort]] (caso base `len < 2`, n por nível × log n níveis; ver [[wiki/concepts/escolha-de-pivo]] e [[wiki/concepts/dividir-para-conquistar]]).
+
 Também dividir-para-conquistar, mas particiona em vez de mesclar: escolhe um **pivô**, reorganiza o arranjo em subarranjo de elementos menores que o pivô (esquerda) e maiores (direita), depois repete recursivamente em cada subarranjo até tudo ordenado. Exemplo: `[6, 5, 12, 10, 9, 1]` com pivô 5 particiona em `[1]` (esquerda) e `[6, 9, 10, 12]` (direita). *In-place* (pouca memória extra) — ao contrário do Merge Sort, que sacrifica espaço por estabilidade e previsibilidade de pior caso.
 
 - **Tempo médio:** O(n log n) | **Pior caso:** O(n²)
@@ -59,6 +65,10 @@ Constrói um **Max Heap** — uma árvore binária armazenada em array onde todo
 - **Tempo:** O(n log n) em todos os casos
 - **Espaço:** O(1), in-place — vantagem sobre Merge Sort quando memória extra é proibida
 - Não é cache-friendly (acesso randômico ao heap fragmenta cache), diferente do Quicksort
+
+## Sort nativo da linguagem
+
+Antes de implementar qualquer um destes, vale saber o que o `.sort()` da linguagem já faz (Timsort em JS/V8 e Python) — ver [[wiki/concepts/sort-nativo-das-linguagens]].
 
 ## Tabela de decisão
 
@@ -95,3 +105,4 @@ Quando o valor de ordenação tem teto conhecido (ex.: frequência de um element
 - [[wiki/sources/busca-linear-e-binaria-giovana]] — ordenação prévia (ex.: Quicksort) como pré-requisito da busca binária
 - [[wiki/sources/algoritmos-de-ordenacao-bubble-insertion-selection-merge-quicksort-heapsort]] — Selection Sort (novo); mecanismo de partição do Quicksort (pivô, causa do pior caso); construção do Max Heap no Heapsort
 - [[wiki/sources/como-calcular-complexidade-de-algoritmos-big-o-em-3-passos]] — segundo exemplo concreto do custo escondido de `sort()`: uma solução mais curta com `sort()` (O(n log n)) é comparada lado a lado com uma alternativa de dois loops lineares (O(n)) que resolve o mesmo problema mais rápido
+- [[wiki/sources/ordenacao-selection-quicksort-bubble-sort-live-coding]] — Selection Sort via lista-nova do livro (O(n) por seleção × n), Bubble Sort com melhor caso O(n) na variante otimizada, Quicksort como recursão com caso base `len < 2` e O(n log n) = n por nível × log n níveis; eficiência atrelada à [[wiki/concepts/escolha-de-pivo]]; pergunta de abertura sobre qual algoritmo o `sort` nativo usa (ver [[wiki/concepts/sort-nativo-das-linguagens]])

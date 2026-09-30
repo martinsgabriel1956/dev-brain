@@ -3,8 +3,8 @@ type: concept
 title: "Proxy Pattern"
 aliases: ["padrão proxy", "design pattern proxy"]
 date_created: 2026-05-01
-date_updated: 2026-08-05
-source_count: 4
+date_updated: 2026-09-30
+source_count: 5
 tags: [design-patterns, structural, proxy, oop]
 skill: tech-mentor-backend
 status: stable
@@ -72,9 +72,14 @@ O Controller não sabe que está lidando com um Proxy — depende apenas da inte
 
 [[wiki/concepts/ai-gateway-llm-router]] é uma instância de mercado do Remote Proxy combinado com Protection/Logging Proxy: o cliente (ex.: [[wiki/entities/claude-code]]) fala apenas com a interface HTTP compatível com a API da Anthropic, sem saber que o "objeto real" por trás pode ser um modelo completamente diferente (GLM, MiMo) numa conta/provider distinto — o mesmo princípio de substituição transparente ilustrado na Estrutura Mínima acima, aplicado a chamadas de LLM em vez de objetos em memória.
 
+## Proxy de rede vs. padrão de projeto
+
+"Proxy" de rede ([[wiki/concepts/forward-proxy]]) é intermediário de tráfego, distinto do padrão estrutural; o [[wiki/entities/icmp-browser]] ([[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]]) ilustra o primeiro, com estrutura semelhante ao Remote Proxy (intermediário que busca o recurso por você).
+
 ## Key Sources
 
 - [[wiki/sources/design-pattern-proxy]]
 - [[sources/design-pattern-facade]] — relações com Facade e distinção entre os dois
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — Remote Proxy aplicado a AI Gateway/roteamento de LLM
 - [[wiki/sources/design-pattern-decorator-renato-augusto]] — contraste Decorator vs. Proxy: mesmo wrapping de interface, mas Decorator recebe o objeto externamente e encadeia múltiplos wrappers para estender comportamento
+- [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]] — proxy de rede vs. padrão

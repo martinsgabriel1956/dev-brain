@@ -3,8 +3,8 @@ type: concept
 title: "Memória RAM"
 aliases: ["RAM", "random access memory", "memória de trabalho", "memória volátil"]
 date_created: 2026-08-26
-date_updated: 2026-08-26
-source_count: 1
+date_updated: 2026-09-29
+source_count: 2
 tags: [hardware, memoria, cs-fundamentals, ram, volatil]
 skill: cs-fundamentals
 status: stub
@@ -36,3 +36,4 @@ O padrão dominante em PCs, notebooks e servidores desde os anos 2000 é o **DDR
 ## Key Sources
 
 - [[wiki/sources/evolucao-memorias-ram-ddr1-a-ddr5]]
+- [[wiki/sources/historia-do-captcha-do-teste-de-turing-ao-turnstile]] — RAM cara de escalar como base do [[wiki/concepts/proof-of-space]]

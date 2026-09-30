@@ -3,8 +3,8 @@ type: concept
 title: "Tunelamento (Tunneling)"
 aliases: ["tunneling", "túnel virtual", "vpn tunnel"]
 date_created: 2026-09-14
-date_updated: 2026-09-14
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [networking, vpn, criptografia, tunelamento]
 skill: tech-mentor-networking
 status: stub
@@ -25,6 +25,11 @@ Em implementações modernas como WireGuard, o túnel é uma interface de rede (
 - [[wiki/concepts/vpn]] — o produto final que o tunelamento viabiliza
 - [[wiki/concepts/criptografia]] — os dados dentro do túnel trafegam cifrados, tipicamente com criptografia simétrica (AES) após um handshake assimétrico inicial
 
+## Variante sem criptografia: ICMP
+
+[[wiki/concepts/icmp-tunneling]] encapsula dados no campo de dados do ICMP; é tunelamento no sentido de encapsulamento, mas sem cifra — ver [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]].
+
 ## Key sources
 
 - [[wiki/sources/vpn-conceito-tunelamento-acesso-remoto]] — definição introdutória do túnel virtual como mecanismo central da VPN
+- [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]] — exemplo de tunelamento via ICMP

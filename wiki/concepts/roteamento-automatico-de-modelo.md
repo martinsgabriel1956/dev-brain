@@ -3,8 +3,8 @@ type: concept
 title: "Roteamento Automático de Modelo"
 aliases: ["model routing", "auto-seleção de modelo", "roteador de LLM"]
 date_created: 2026-07-19
-date_updated: 2026-09-04
-source_count: 5
+date_updated: 2026-09-29
+source_count: 6
 tags: [llm, model-routing, prompt-engineering, agregador-de-modelos]
 skill: tech-mentor-ai
 status: draft
@@ -63,3 +63,4 @@ Achado da fonte: essa segregação só reduz custo total se o modelo do worker f
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — contraste com rotação de contas free tier (eixo de credencial, não de modelo)
 - [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — novo eixo de roteamento manual por tolerância a guardrail (Claude para dados sensíveis, modelo permissivo para hobby de baixo risco)
 - [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] — roteamento por papel dentro de um pipeline multiagente: modelo forte no coordenador, modelo barato nos workers de implementação
+- [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — skill + modelo menor como alternativa ao modelo caro (benchmark com/sem skill)

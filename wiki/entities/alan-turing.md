@@ -3,8 +3,8 @@ type: entity
 title: "Alan Turing"
 aliases: ["alan turing", "alan m. turing"]
 date_created: 2026-08-07
-date_updated: 2026-09-03
-source_count: 2
+date_updated: 2026-09-29
+source_count: 3
 tags: [cs-fundamentals, teoria-da-computacao, maquina-de-turing, matematico, pioneiro]
 skill: cs-fundamentals
 status: stub
@@ -24,3 +24,4 @@ Em [[wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization]], Turi
 
 - [[wiki/sources/conceitos-que-regem-a-computacao-bits-turing-complexidade]] — máquina de Turing (1936) como modelo do que é computável
 - [[wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization]] — tese de Church-Turing e Turing-completude
+- [[wiki/sources/historia-do-captcha-do-teste-de-turing-ao-turnstile]] — origem do [[wiki/concepts/teste-de-turing]], que o [[wiki/concepts/captcha]] inverte

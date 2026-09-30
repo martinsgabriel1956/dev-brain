@@ -3,8 +3,8 @@ type: concept
 title: "RAG em Escala — Além de Buscar e Injetar no Contexto"
 aliases: ["rag arquitetura", "retrieval augmented generation avancado", "rag em producao"]
 date_created: 2026-08-14
-date_updated: 2026-08-26
-source_count: 2
+date_updated: 2026-09-29
+source_count: 3
 tags: [rag, retrieval-augmented-generation, embeddings, banco-vetorial, arquitetura, versionamento]
 skill: tech-mentor-ai
 status: stub
@@ -40,3 +40,4 @@ Bancos de dados vetoriais fazem consulta por proximidade/similaridade de embeddi
 
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — RAG citado como ponto de system design com IA, com a ressalva de que a complexidade real está em metadado, versionamento, invalidação e sincronização, não na busca vetorial em si
 - [[wiki/sources/rag-introducao-pipeline-completo]] — versão introdutória do mesmo argumento (RAG = arquitetura de pipeline), com a distinção RAG vs. agente de IA e os conceitos de chunking e elegibilidade de chunks
+- [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — retrieval como etapa e como tool; busca híbrida como resposta ao limite da semântica ([[wiki/concepts/hybrid-search]])

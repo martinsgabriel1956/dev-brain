@@ -62,3 +62,7 @@ RAG injeta contexto relevante no prompt para reduzir alucinações e manter conh
 
 - Qual chunk size é ideal para código fonte vs documentação vs transcrições de reunião?
 - GraphRAG tem custo de construção alto — quando o grafo de conhecimento justifica vs hybrid search simples?
+
+## Related
+
+- [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — aprofunda busca híbrida, top-K e fusion; ver [[wiki/concepts/hybrid-search]]

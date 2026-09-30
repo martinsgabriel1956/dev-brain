@@ -3,8 +3,8 @@ type: concept
 title: "Reranking"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-22
-source_count: 1
+date_updated: 2026-09-29
+source_count: 2
 tags: [reranking]
 skill: tech-mentor-ai
 status: stub
@@ -25,3 +25,4 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 ## Key sources
 
 - [[wiki/sources/rag-retrieval]]
+- [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — etapa posterior ao [[wiki/concepts/fusion-de-rankings|fusion]] não mencionada no vídeo; ver [[wiki/concepts/hybrid-search]]

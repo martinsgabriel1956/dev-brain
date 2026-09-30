@@ -3,8 +3,8 @@ type: concept
 title: "SSH e Chaves SSH"
 aliases: ["ssh", "secure shell", "chave ssh", "ssh-keygen", "authorized_keys", "openssh"]
 date_created: 2026-07-10
-date_updated: 2026-08-11
-source_count: 3
+date_updated: 2026-09-30
+source_count: 4
 tags: [ssh, openssh, ed25519, autenticacao, criptografia-assimetrica, iam, hardening, bastion]
 skill: tech-mentor-security
 status: stable
@@ -74,8 +74,13 @@ Host two
 - [[wiki/concepts/hardening-de-servidor]] — chave SSH é a base sobre a qual o hardening de acesso remoto é construído.
 - [[wiki/concepts/porta-de-rede]] — SSH é uma das quatro well-known ports citadas como exemplo canônico (porta 22), ao lado de HTTP/80, HTTPS/443 e SMTP/25; a diretiva `Port` no `~/.ssh/config` e no `sshd_config` é justamente onde essa porta pode ser trocada do padrão.
 
+## SSH sobre PTY e SSH via navegador
+
+[[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]]: o cliente SSH ocupa o lugar do programa local e o `sshd` remoto fala com o master de um [[wiki/concepts/pty-pseudoterminal|PTY]] no servidor. Um [[wiki/concepts/terminal-web-broker-websocket-ssh|broker]] pode abrir SSH em nome do navegador; o fingerprint do host é conferido a cada sessão (`ssh-keygen -lf /etc/ssh/ssh_host_ed25519_key.pub`), pois o MVP não guarda `known_hosts` ([[wiki/concepts/design-efemero-zero-persistencia]]).
+
 ## Key Sources
 
+- [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — SSH como cliente/`sshd` sobre PTY; conferência de fingerprint no terminal web
 - [[wiki/sources/ssh-chaves-como-funcionam]]
 - [[wiki/sources/portas-de-rede-como-funcionam]] — porta 22 como well-known port do SSH
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — via SSH em produção você opera por comandos de shell; interface gráfica costuma inexistir ou ser travada

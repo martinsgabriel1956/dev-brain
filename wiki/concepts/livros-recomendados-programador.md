@@ -3,8 +3,8 @@ type: concept
 title: "Livros Recomendados Para Programador"
 aliases: ["livros de programação", "biblioteca do dev", "clean code vs refactoring"]
 date_created: 2026-07-10
-date_updated: 2026-09-18
-source_count: 6
+date_updated: 2026-09-29
+source_count: 7
 tags: [carreira, aprendizado, recursos, livros]
 skill: tech-mentor-leadership
 status: stub
@@ -54,3 +54,4 @@ O contraste deliberado entre Clean Code (ressalva) e Refactoring (endosso pleno)
 - [[wiki/sources/5-recursos-para-ser-um-desenvolvedor-melhor]]
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]]
 - [[wiki/sources/busca-binaria-fila-protocolos-atendimento-live-coding]] — *Entendendo Algoritmos* citado e lido ao vivo como material de apoio para ensinar busca binária
+- [[wiki/sources/ordenacao-selection-quicksort-bubble-sort-live-coding]] — capítulos de Selection Sort (com o exemplo de artistas/plays) e Quicksort de *Entendendo Algoritmos* lidos ao vivo, incluindo o quadro ilustrativo de tempos de execução a 10 ops/s

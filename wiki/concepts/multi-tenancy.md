@@ -3,8 +3,8 @@ type: concept
 title: "Multi-tenancy"
 aliases: ["multi-tenancy", "multitenancy", "tenant isolation", "saas isolation"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-09-29
+source_count: 2
 tags: [system-design, saas, isolamento, postgresql, rls, gdpr, migrations, arquitetura]
 skill: tech-mentor-system-design
 status: stable
@@ -146,6 +146,11 @@ async deleteData(tenantId: string) {
 - **Migrations parciais:** rastrear versão por tenant, ter rollback seletivo
 - **Noisy neighbor silencioso:** instrumentar `pg_stat_statements` por `tenant_id` para identificar ofensores
 
+## Multitenância em infraestrutura (mainframe)
+
+Não é só padrão de SaaS/banco: também existe no nível de infra. Provedores de [[wiki/concepts/mainframe-as-a-service]] entregam [[wiki/concepts/lpar|LPARs]] segregadas de um mesmo equipamento físico a clientes diferentes. [skill: tech-mentor-infra] Ressalva: isolamento de partição não resolve sozinho rede, storage e operação.
+
 ## Key Sources
 
+- [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — multitenância de infra: LPARs de um mesmo mainframe para clientes distintos
 - [[sources/multi-tenancy]]

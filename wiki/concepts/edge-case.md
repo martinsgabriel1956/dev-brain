@@ -3,8 +3,8 @@ type: concept
 title: "Edge Case"
 aliases: ["caso de borda", "cenário de erro", "caso extremo"]
 date_created: 2026-05-13
-date_updated: 2026-05-13
-source_count: 1
+date_updated: 2026-09-29
+source_count: 2
 tags: [edge-case, caso-de-borda, fundamentos, cs-fundamentals]
 skill: cs-fundamentals
 status: draft
@@ -43,3 +43,11 @@ Edge cases são onde os sistemas falham em produção. Mapear edge cases no iní
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-quatro-passos]]
+
+## Casos extremos no BDD
+
+[[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]]: parte do "pensar muito" antes de codar é refletir sobre casos extremos ao escrever as especificações ([[wiki/concepts/bdd]]).
+
+## Key Sources
+
+- [[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] — casos extremos pensados ao escrever especificações

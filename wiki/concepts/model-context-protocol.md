@@ -3,8 +3,8 @@ type: concept
 title: "Model Context Protocol (MCP)"
 aliases: ["MCP", "model context protocol", "protocol mcp"]
 date_created: 2026-06-02
-date_updated: 2026-09-14
-source_count: 7
+date_updated: 2026-09-29
+source_count: 8
 tags: [mcp, model-context-protocol, tools, harness, json-rpc, anthropic]
 skill: tech-mentor-ai
 status: stable
@@ -63,6 +63,8 @@ MCPs de domínio (Tools que expõem um backend inteiro, não uma função isolad
 
 ## Key Sources
 
+
+- [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — MCPs 'na quantidade adequada': inicializar muitos servidores ocupa a janela de contexto
 - [[wiki/sources/mcp]]
 - [[wiki/sources/formacao-ia-devs-aula-01-mcp-parte1]]
 - [[wiki/sources/formacao-ia-devs-aula-02-mcp-parte2]]

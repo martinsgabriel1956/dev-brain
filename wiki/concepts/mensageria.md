@@ -3,8 +3,8 @@ type: concept
 title: "Mensageria"
 aliases: ["message broker", "queue", "stream", "eda", "event driven"]
 date_created: 2026-04-23
-date_updated: 2026-09-22
-source_count: 13
+date_updated: 2026-09-30
+source_count: 14
 tags: [mensageria, kafka, rabbitmq, sqs, queue, stream, eda, at-least-once, dlq]
 skill: tech-mentor-backend
 status: stub
@@ -37,6 +37,10 @@ Comunicação assíncrona entre serviços via broker de mensagens. Resolve acopl
 
 **Por que o Kafka não paraleliza sozinho ao subir mais consumers:** essa é a diferença estrutural mais confundida entre Kafka e filas tradicionais. Num consumer group Kafka, a próxima mensagem de uma partição só é entregue depois que o consumer atual comita o offset da anterior — enquanto isso, um segundo consumer do mesmo grupo fica ocioso, mesmo com trabalho disponível. RabbitMQ/SQS funcionam diferente: consumers adicionais competem livremente por mensagens da mesma fila, sem essa barreira de ordenação. Ver [[wiki/concepts/kafka]] para o mecanismo completo (partições, offset commit, rebalance).
 
+## Mensageria como Uma das Três Formas de Assíncrono
+
+No vídeo de [[wiki/entities/bernardo-lobato]], o broker de tópicos/eventos (Kafka, RabbitMQ) é a forma mais usada de [[wiki/concepts/comunicacao-assincrona]], ao lado de polling por ID ([[wiki/concepts/async-request-reply]]) e [[wiki/concepts/webhook]], que dispensam broker. Exemplo: evento "pedido criado" consumido por Estoque e Faturamento. Desafios nomeados: debug, [[wiki/concepts/garantia-de-entrega]] e consistência eventual.
+
 ## Key Sources
 
 - [[wiki/sources/case-twitter-feed]] — O feed do Twitter é o caso clássico de **fan-out de escrita em escala extrema**. A solução é híbrida: fan-out on write para usuários normais (pré-computa timelines no Redis) e fan-out on read para...
@@ -52,3 +56,4 @@ Comunicação assíncrona entre serviços via broker de mensagens. Resolve acopl
 - [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — demonstração passo a passo de por que um segundo consumer Kafka fica ocioso sem partições adicionais; dois consumer groups independentes consumindo o mesmo tópico para propósitos distintos
 - [[wiki/sources/ambulance-pattern-priorizacao-mensagens-mark-richards]] — por que prioridade embutida na mensagem causa starvation, e por que separar em duas filas físicas (opcionalmente com instância dedicada por fila) resolve sem esse efeito colateral
 - [[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] — publicar numa fila/broker logo após um INSERT no banco não é atômico por padrão (dual write problem); solução via [[wiki/concepts/outbox-pattern]]
+- [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — publicar evento "pedido criado" em fila/tópico consumido por Estoque e Faturamento; broker vs. polling vs. webhook

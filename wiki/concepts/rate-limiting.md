@@ -3,8 +3,8 @@ type: concept
 title: "Rate Limiting"
 aliases: ["throttling", "rate limit", "token bucket", "sliding window"]
 date_created: 2026-04-23
-date_updated: 2026-09-22
-source_count: 11
+date_updated: 2026-09-30
+source_count: 13
 tags: [rate-limiting, token-bucket, sliding-window, redis, throttling, protecao-api, gatekeeper, attack-surface]
 skill: tech-mentor-backend
 status: stub
@@ -50,8 +50,13 @@ Além do risco de segurança, não limitar rotas públicas gera custo direto: um
 
 [[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] mostra o caso concreto onde a ausência de rate limit não é o único fator: combinada a mensagens de erro de login distintas (user enumeration — "usuário não encontrado" vs. "senha incorreta"), a senha de um painel admin é quebrada em segundos por três ferramentas diferentes (Burp Intruder, ffuf, Hydra), todas usando o mesmo sinal de sucesso na resposta. Reforça que rate limit sozinho é uma de várias camadas — sem ele, nenhuma outra defesa de autenticação online (exceto MFA) impede o brute force de rodar até o fim.
 
+## Duas camadas: proxy + aplicação
+
+No [[wiki/entities/omxterm]] ([[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]]): rate limit no proxy reverso ([[wiki/entities/traefik]], middleware) **e** interno — 10 tentativas de token em 60 s bloqueiam o IP, que passa a ser ignorado. Cobre também o brute force de token e reduz timing attack.
+
 ## Key Sources
 
+- [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — rate limit em duas camadas (Traefik + app: 10 tentativas/60 s)
 - [[wiki/sources/estimativas-back-of-envelope]] — Framework de 4 passos: (1) clarificar escopo — DAU, read/write ratio, pico vs média; (2) estimar QPS; (3) estimar storage; (4) estimar bandwidth. O objetivo é ordem de grandeza para evitar...
 - [[sources/rate-limiting]]
 - [[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] — ausência de rate limit como condição necessária para brute force de login com Burp Intruder, ffuf e Hydra
@@ -63,3 +68,4 @@ Além do risco de segurança, não limitar rotas públicas gera custo direto: um
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — brute force e credential stuffing no login sem rate limiting
 - [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] — o mesmo dilema estrutural (dropar a requisição vs. enfileirar e aceitar latência maior) aparece em load balancing sob carga, espelhando a escolha entre rejeitar (429) e enfileirar em rate limiting
 - [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — rate limit aplicado no **produtor** (não na borda de uma API pública): trava a taxa de produção na mesma capacidade que o consumidor consegue processar, como controle de [[wiki/concepts/back-pressure]]
+- [[wiki/sources/historia-do-captcha-do-teste-de-turing-ao-turnstile]] — CAPTCHA/[[wiki/concepts/servico-de-resolucao-de-captcha]] só encarece a ação; limites por identidade/IP seguem necessários em camadas com [[wiki/concepts/bot-detection]]

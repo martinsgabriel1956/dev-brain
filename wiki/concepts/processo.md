@@ -3,8 +3,8 @@ type: concept
 title: "Processo"
 aliases: ["process", "PID", "process ID", "instância de programa"]
 date_created: 2026-04-22
-date_updated: 2026-06-26
-source_count: 2
+date_updated: 2026-09-30
+source_count: 3
 tags: [sistema-operacional, processo, concorrência, cs-fundamentals]
 skill: cs-fundamentals
 status: stable
@@ -58,7 +58,12 @@ Ver [[concepts/thread]] para a comparação completa.
 - [[concepts/memoria-virtual]] — como o espaço de memória é isolado
 - [[concepts/syscall]] — como processos pedem serviços ao kernel
 
+## Fork, herança de descritores e exec
+
+Detalhe didático em [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]]: o filho de um `fork()` herda stdin/stdout/stderr e pode repontá-los antes de trocar de programa; é como o shell roda `ls` ([[wiki/concepts/fork-e-heranca-de-file-descriptors]]).
+
 ## Key Sources
 
+- [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — fork com redirecionamento de stdout demonstrado em Python
 - [[sources/sistema-operacional-por-baixo-dos-panos]]
 - [[sources/como-sistemas-operacionais-funcionam]]

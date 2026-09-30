@@ -3,8 +3,8 @@ type: concept
 title: "Escolha Rápida de Caminho de Carreira"
 aliases: ["escolher caminho rápido", "definir stack de carreira logo no início", "não abraçar o mundo"]
 date_created: 2026-09-28
-date_updated: 2026-09-28
-source_count: 2
+date_updated: 2026-09-30
+source_count: 3
 tags: [carreira, iniciante, decisao, stack, foco]
 skill: tech-mentor-leadership
 status: stub
@@ -41,7 +41,12 @@ C#, Java ou JavaScript, por terem (na experiência dele) mais mercado corporativ
 
 [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] reforça esta tese sob um ângulo complementar: definir o foco não é só uma decisão de empregabilidade — é pré-requisito estrutural para poder "fechar o leque" (ir fundo só no foco, manter tudo o mais superficial) dado que profundidade em tudo é impossível pelo limite cognitivo. Ver [[wiki/concepts/estudar-por-demanda]] para o mecanismo completo de "fechar e abrir por demanda".
 
+## Pelo Menos Dois Passos à Frente
+
+No contexto de promoção, o autor pede um plano de carreira de **dois passos**, suficiente para decidir na bifurcação técnico vs. gestão. Ver [[wiki/concepts/objetivos-de-carreira-explicitos]].
+
 ## Key Sources
 
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]]
 - [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] — foco como pré-requisito para "fechar o leque"; liga com [[wiki/concepts/estudar-por-demanda]]
+- [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]

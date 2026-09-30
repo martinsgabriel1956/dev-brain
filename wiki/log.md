@@ -12195,3 +12195,279 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (10):** [[wiki/entities/andre-casciotti]] (6ª fonte), [[wiki/concepts/informacao-conhecimento-habilidade]], [[wiki/concepts/sobrecarga-de-informacao]], [[wiki/concepts/avaliar-hype-tecnologico]], [[wiki/concepts/escolha-rapida-de-caminho-de-carreira]], [[wiki/concepts/fundacao-tecnica]], [[wiki/concepts/pratica-deliberada]], [[wiki/concepts/curadoria-de-informacao]], [[wiki/concepts/alto-nivel-antes-do-fundamento]], [[wiki/concepts/resolver-problemas-como-habilidade-central]] — Key Sources + bump de `source_count`/`date_updated`.
 
 **Notas:** fonte baseada só na experiência do autor, sem dado empírico citado para a proporção 20/80 estudo/prática nem para "quanto mais se aprende, mais se sente falta" (marcado como Open Question). Tensão leve de ênfase (não de conteúdo) registrada entre [[wiki/concepts/estudar-por-demanda]] (fortalecer fundamentos proativamente, em doses constantes) e a leitura top-down de [[wiki/concepts/alto-nivel-antes-do-fundamento]] (fundamento puxado pela dor real) — conciliada dentro da própria fonte pelo mecanismo de "superficialidade proativa + aprofundamento reativo". Sem contradição factual com o restante da wiki — reforça e aprofunda teses já presentes (informação vs. conhecimento vs. habilidade, avaliação de hype tecnológico, valor dos fundamentos).
+
+---
+
+## [2026-09-29] ingest | Ordenação de Listas: Selection Sort, Quicksort e Bubble Sort (Live Coding)
+
+**Fonte:** transcrição de corte de live coding em PT-BR colada pelo usuário, limpa e estruturada em `raw/ordenacao-selection-quicksort-bubble-sort-live-coding.md` (já em português; sem tradução). Título derivado do conteúdo. Termos corrompidos pela transcrição corrigidos por contexto e listados no cabeçalho do raw (ex.: "arrei"→array, "Bubl Sorte"→Bubble Sort, "The Black Eyes"→The Black Keys).
+
+**Skill:** cs-fundamentals (`references/algorithms-complexity.md`; skill localizada em `/home/gabriel-martins/Documentos/skills/`, pois o path do CLAUDE.md não existe nesta máquina).
+
+**Criado:** [[wiki/sources/ordenacao-selection-quicksort-bubble-sort-live-coding]], [[wiki/concepts/selection-sort]], [[wiki/concepts/quicksort]], [[wiki/concepts/bubble-sort]], [[wiki/concepts/dividir-para-conquistar]], [[wiki/concepts/escolha-de-pivo]], [[wiki/concepts/sort-nativo-das-linguagens]], [[wiki/concepts/descarte-de-constantes-big-o]]
+
+**Tocadas (10):** [[wiki/concepts/algoritmos-de-ordenacao]], [[wiki/concepts/big-o]], [[wiki/concepts/recursao]], [[wiki/concepts/logaritmo]], [[wiki/concepts/melhor-caso-pior-caso-caso-medio]], [[wiki/concepts/algoritmos-de-busca]], [[wiki/concepts/algoritmos-e-estruturas-de-dados]], [[wiki/concepts/array]], [[wiki/concepts/livros-recomendados-programador]], [[wiki/entities/fernanda-kipper]] — Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** a fonte levanta a pergunta "qual algoritmo o `sort` nativo usa?" mas não responde; resposta adicionada com marcação [external] (V8 blog: Timsort desde v7.0). Imprecisões da fonte registradas na página de source: caso base do Quicksort dito como "1 ou 2 elementos" (correto: 0 ou 1); pior caso descrito como "array invertido" (depende do pivô — com pivô = primeiro, o array já ordenado também é pior caso); melhor caso O(n) do Bubble Sort exige a variante com flag de "sem trocas". Sem contradição com a wiki: reforça e detalha [[wiki/concepts/algoritmos-de-ordenacao]].
+
+---
+
+## [2026-09-29] ingest | A História do CAPTCHA: do Teste de Turing ao Turnstile
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/historia-do-captcha-do-teste-de-turing-ao-turnstile.md` (já em português; sem tradução). Termos corrompidos pela transcrição corrigidos por contexto e listados no cabeçalho do raw (ex.: "Monyor"→Moni Naor, "tanto style"→Turnstile, "fun capture"→FunCaptcha, "iolo"→YOLO).
+
+**Skill:** tech-mentor-security (`references/security/fraud-abuse.md`; skill em `~/.claude-personal/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina).
+
+**Criado:** [[wiki/sources/historia-do-captcha-do-teste-de-turing-ao-turnstile]], [[wiki/concepts/captcha]], [[wiki/concepts/recaptcha]], [[wiki/concepts/teste-de-turing]], [[wiki/concepts/ocr]], [[wiki/concepts/bot-detection]], [[wiki/concepts/seguranca-por-obscuridade]], [[wiki/concepts/cloudflare-turnstile]], [[wiki/concepts/proof-of-work]], [[wiki/concepts/proof-of-space]], [[wiki/concepts/funcaptcha]], [[wiki/concepts/servico-de-resolucao-de-captcha]], [[wiki/entities/moni-naor]], [[wiki/entities/new-york-times]], [[wiki/entities/cloudflare]], [[wiki/entities/roblox]]
+
+**Tocadas (8):** [[wiki/concepts/rate-limiting]], [[wiki/concepts/hashing]], [[wiki/concepts/sessoes-http-cookies]], [[wiki/concepts/engenharia-reversa]], [[wiki/concepts/maquina-de-turing]], [[wiki/concepts/memoria-ram]], [[wiki/entities/alan-turing]], [[wiki/entities/google]] — Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** tensão registrada: a fonte diz que o movimento do mouse não influenciava o reCAPTCHA nos testes de 2016, enquanto a skill de segurança lista dinâmica de mouse como sinal comum de bot detection (provável diferença de sistema/versão). Número de cookies por IP (~63.000) corrompido na transcrição — marcado como incerto. Números (99%, 13 mi de artigos, 9 dias) vêm só da narração, sem paper verificado. Sem contradição com o restante da wiki.
+
+---
+
+## [2026-09-29] ingest | O Dev na Era da IA: Tempo Ganho, Qualidade, Esteira e Novas Preocupações
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes.md` (já em português; sem tradução). Título derivado do conteúdo; autor desconhecido. Termos corrompidos corrigidos por contexto e listados no cabeçalho do raw (ex.: "to calling"→tool calling, "LRAP"→provavelmente RAG, "Fredery Books"→Fred Brooks, "CSD"→CI/CD).
+
+**Skill:** tech-mentor-ai (`references/ai/agent-harness-engineering.md`, `llm-testing.md`; skill localizada em `~/.claude-personal/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina).
+
+**Criado:** [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]], [[wiki/concepts/ia-na-esteira-ci-cd]], [[wiki/concepts/retrospectiva-de-erros-de-ia]], [[wiki/concepts/valor-do-codigo-com-tempo-achatado]], [[wiki/concepts/tempo-ganho-com-ia-reinvestido-em-qualidade]]
+
+**Tocadas (15):** [[wiki/concepts/harness]], [[wiki/concepts/harness-de-qualidade]], [[wiki/concepts/quality-gate]], [[wiki/concepts/ci-cd]], [[wiki/concepts/pipeline-de-ci]], [[wiki/concepts/determinismo-vs-probabilismo-em-ia]], [[wiki/concepts/drift-detection]], [[wiki/concepts/llm-evals-testing]], [[wiki/concepts/skills-agente]], [[wiki/concepts/novo-perfil-dev-ia]], [[wiki/concepts/ia-como-amplificador]], [[wiki/concepts/closed-loop-skill-learning]], [[wiki/entities/fred-brooks]], [[wiki/entities/claude-code]], [[wiki/entities/github]] — Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** a fonte formula, sem responder, como fazer a retrospectiva de erros quando a LLM gera o código; caminhos plausíveis na wiki marcados como inferência. Tensão de ênfase (não factual) com o padrão *babysit* de [[wiki/concepts/quality-gate]]/[[wiki/concepts/skills-agente]]: o autor rejeita LLM como *executor* do gate, não como assistente após ele. [[wiki/concepts/drift-detection]] (antes só Terraform) ganhou o sentido de *behavior drift* de LLM. Sem dado empírico na fonte (cadência de 2 semanas é exemplo). Fred Brooks citado sem obra/frase — ligação com *No Silver Bullet* seria inferência. Sem contradição factual com o restante da wiki.
+
+---
+
+## [2026-09-29] ingest | Como Ser um Ótimo Programador Sem Usar o Cérebro
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário (leitura comentada de um artigo em inglês, já traduzida na fala), limpa e estruturada em `raw/como-ser-otimo-programador-sem-usar-o-cerebro.md` (sem tradução adicional; trechos do artigo marcados como citação). Autor do artigo e canal desconhecidos. Termos corrompidos corrigidos por contexto e listados no cabeçalho do raw (ex.: "TDH"→TDAH, "scom"→Scrum, "Comet"→commit).
+
+**Skill:** tech-mentor-testing (`references/test-patterns.md`, seções TDD e BDD; skill em `~/.claude-personal/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina).
+
+**Criado:** [[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]], [[wiki/concepts/preguicoso-inteligente-vs-idiota-proativo]], [[wiki/concepts/reducao-de-complexidade]], [[wiki/concepts/pensar-na-hora-certa]], [[wiki/concepts/classe-como-unidade-de-teste]], [[wiki/concepts/dogmatismo-em-metodologias]], [[wiki/concepts/autoconhecimento-de-produtividade]], [[wiki/concepts/estado-de-flow]], [[wiki/entities/bill-gates]], [[wiki/entities/cal-newport]]
+
+**Tocadas (11):** [[wiki/concepts/bdd]], [[wiki/concepts/tdd]], [[wiki/concepts/atomic-commits]], [[wiki/concepts/pomodoro]], [[wiki/concepts/foco-profundo]], [[wiki/concepts/edge-case]], [[wiki/concepts/unit-test-solitario-vs-sociavel]], [[wiki/concepts/complexidade-acidental]], [[wiki/concepts/spec-driven-development]], [[wiki/concepts/ativo-vs-produtivo]], [[wiki/concepts/git]] — Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** (1) o "BDD" do artigo é mais *specify-first* que o ritual Gherkin com PO/QA já descrito em [[wiki/concepts/bdd]] — tensão de terminologia registrada, sem contradição factual. (2) A posição "a unidade é a classe" é opinião, próxima do estilo sociável de [[wiki/concepts/unit-test-solitario-vs-sociavel]]; sem evidência empírica na fonte. (3) Citação atribuída a Bill Gates não verificada. (4) [[wiki/entities/the-primeagen]] não foi tocada: menção na transcrição é ambígua. (5) Tensão leve com a defesa de disciplina em [[wiki/concepts/tdd]] — é sobre rigidez, não sobre o valor da prática. (6) Afirmações sobre TDAH (audiência, utilidade) sem dados.
+
+---
+
+## [2026-09-29] ingest | Mainframe as a Service: Casas Bahia, SulAmérica e o zCloud da Kyndryl
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl-zcloud.md` (já em português; sem tradução). Título derivado do conteúdo; autor/canal desconhecidos. Termos corrompidos corrigidos por contexto e listados no cabeçalho do raw (ex.: "Kindrew"→Kyndryl, "Prisma/Lipar"→PR/SM/LPAR, "MAS/GMAS"→MaaS, "Acer"→Azure, "Six"→CICS).
+
+**Skill:** tech-mentor-infra (`references/cloud/cloud-agnostic.md`, seções bare metal/hybrid e break-even CapEx; `finops.md`; skill em `~/.claude-personal/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina). Verificação externa: Kyndryl confirma zCloud como MaaS multitenant e os casos SulAmérica (out/2023) e Casas Bahia.
+
+**Criado:** [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]], [[wiki/concepts/mainframe-as-a-service]], [[wiki/concepts/lpar]], [[wiki/concepts/virtualizacao]], [[wiki/concepts/cloud-como-modelo-de-consumo]], [[wiki/concepts/capex-vs-opex]], [[wiki/concepts/dimensionamento-para-o-pico]], [[wiki/entities/casas-bahia]], [[wiki/entities/sulamerica]]
+
+**Tocadas (15):** [[wiki/concepts/mainframe]], [[wiki/concepts/modernizacao-de-mainframe]], [[wiki/concepts/cobol]], [[wiki/concepts/multi-tenancy]], [[wiki/concepts/finops]], [[wiki/concepts/vendor-lock-in-cloud]], [[wiki/concepts/planejamento-de-capacidade]], [[wiki/concepts/arquitetura-complexa]], [[wiki/concepts/mercado-de-trabalho-mainframe-cobol]], [[wiki/concepts/codigo-legado-ia]], [[wiki/entities/kyndryl]], [[wiki/entities/ibm]], [[wiki/entities/aws]], [[wiki/entities/microsoft]], [[wiki/entities/google]] — Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** (1) a fonte não quantifica a economia do MaaS (gráfico de MIPS hipotético). (2) Risco de lock-in de provedor e limites reais de elasticidade não são discutidos — marcado como inferência/pergunta aberta. (3) Isolamento de LPAR tratado quase como sinônimo de multitenância; é simplificação. (4) A interpretação "Kindrew = Kyndryl" antes "não confirmada" em [[wiki/entities/kyndryl]] fica reforçada por este contexto (MaaS/zCloud). (5) Sem contradição factual com [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]]; complementa a tese de "modernização por integração" com a variante "modernização pelo modelo de consumo". Duplicidade pré-existente `multi-tenancy` × `multitenancy` não tocada (candidata a lint).
+
+---
+
+## [2026-09-29] ingest | Como Fazer Perguntas Certas (e o Ciclo de 2 Horas)
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/como-fazer-perguntas-certas-ciclo-de-2-horas.md` (já em português; sem tradução). Título derivado do conteúdo; autor/canal desconhecidos. Termos corrompidos corrigidos por contexto e listados no cabeçalho do raw (ex.: "no pointer exception"→NullPointerException, "per programming"→pair programming, "techia"→tech lead, "chat EPT"→ChatGPT).
+
+**Skill:** tech-mentor-leadership (`references/technical-mentoring.md`, `psychological-safety.md`; skill em `~/.claude-personal/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina). A skill só tangencia o tema ("como pedir ajuda eficientemente"), sem regra de timebox.
+
+**Criado:** [[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]], [[wiki/concepts/pergunta-bem-formulada]], [[wiki/concepts/equilibrio-ao-pedir-ajuda]], [[wiki/concepts/ciclo-de-2-horas]]
+
+**Tocadas (12):** [[wiki/concepts/debugar-antes-de-perguntar]], [[wiki/concepts/pair-programming]], [[wiki/concepts/mentoria-tecnica]], [[wiki/concepts/equipe-mista-senior-junior]], [[wiki/concepts/documentar-conquistas]], [[wiki/concepts/documentacao-oficial-como-recurso]], [[wiki/concepts/pomodoro]], [[wiki/concepts/debugging]], [[wiki/concepts/foco-profundo]], [[wiki/concepts/sindrome-do-impostor]], [[wiki/concepts/comunicacao-tecnica]], [[wiki/concepts/ia-ciclo-dependencia]] — Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** (1) os tempos do ciclo (10–15 + 5–10 + 30–70 min) somam 45–95 min, não 120 — as 2 h parecem teto; heurística sem evidência. (2) Tensão leve com [[wiki/concepts/debugar-antes-de-perguntar]]: aquela fonte defende resistir a perguntar (aprendizado), esta impõe teto de tempo (prazo) — complementares, sem contradição factual. (3) A fonte cobre só o lado de quem pergunta; papel do sênior/segurança psicológica não tratados. (4) Nenhuma entidade nova criada (ChatGPT/OpenAI e Java só como exemplos).
+
+
+---
+
+## [2026-09-29] ingest | Pilares do Desenvolvimento com IA: Harness, Contrato de Revisão e Waves
+
+**Fonte:** transcrição de aula/vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves.md` (já em português; sem tradução). Título derivado do conteúdo; autor/canal desconhecidos (possível [[wiki/entities/wesley-willians]] / MBA [[wiki/entities/full-cycle]], não confirmado). **Transcrição truncada** no final. Termos corrompidos corrigidos por contexto e listados no cabeçalho do raw (ex.: "CAMBAN"→Kanban, "Secolite"→SQLite, "Sonet"→Sonnet, "cloud.md"→CLAUDE.md, "NIP"→Knip).
+
+**Skill:** tech-mentor-ai (`references/ai/agent-harness-engineering.md`; skill em `~/.claude-personal/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina). A skill recomenda simplificar scaffolding para modelos modernos; a fonte prega mais gates — registrado como tensão leve.
+
+**Criado:** [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]], [[wiki/concepts/pilares-de-desenvolvimento-com-ia]], [[wiki/concepts/contrato-de-revisao]], [[wiki/concepts/revisao-por-agente-independente]], [[wiki/concepts/waves-de-desenvolvimento]], [[wiki/concepts/memory-rot]]
+
+**Tocadas (18):** [[wiki/concepts/harness]], [[wiki/concepts/spec-driven-development]], [[wiki/concepts/worktree-paralelismo]], [[wiki/concepts/code-review]], [[wiki/concepts/fitness-functions]], [[wiki/concepts/quality-gate]], [[wiki/concepts/agent-memory-tres-camadas]], [[wiki/concepts/skills-agente]], [[wiki/concepts/ativo-vs-produtivo]], [[wiki/concepts/model-context-protocol]], [[wiki/concepts/subagentes]], [[wiki/concepts/token-anxiety]], [[wiki/concepts/paralelismo-de-tarefas-ia]], [[wiki/concepts/harness-de-qualidade]], [[wiki/concepts/vibe-coding]], [[wiki/entities/wesley-willians]], [[wiki/entities/claude-code]], [[wiki/entities/full-cycle]] — Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** (1) sem evidência empírica de que contrato + waves supera o workflow básico. (2) Contrato do exemplo cita PostgreSQL/vídeo enquanto o app é SQLite/Kanban — provável ilustração de outro projeto. (3) O "orgulho ferido" do implementador é metáfora; mecanismo plausível é viés de mesma janela de contexto (inferência). (4) Alegação de que ferramentas de SDD não têm contrato de revisão não verificada. (5) "Waves" tem sentido distinto em [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] (roteamento de modelos) — conceitos vizinhos, não idênticos. (6) Memory rot só nomeado, sem mitigação na fonte. (7) Nenhuma entidade nova para Next.js/Playwright/Knip/Prisma (menções laterais).
+
+---
+
+## [2026-09-29] ingest | Avaliação de Skills com o Skill Creator: Description e Benchmark com/sem Skill
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/avaliacao-de-skills-skill-creator-description-e-benchmark.md` (já em português; sem tradução). Título derivado do conteúdo; autor/canal desconhecidos. **Transcrição truncada** no final. Termos corrompidos corrigidos por contexto e listados no cabeçalho do raw (ex.: "ponto cloud"→`.claude`, "Haiko"→Haiku, "room runlup.p pai"→provável `run_loop.py`, "skill.m"→`SKILL.md`).
+
+**Skill:** tech-mentor-ai (`references/ai/production-evals.md`, `llm-testing.md`; skill em `~/.claude-personal/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina). Diretório da skill-creator também consultado para verificar os scripts citados (`run_loop.py`, `aggregate_benchmark.py` etc. existem).
+
+**Criado:** [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]], [[wiki/concepts/avaliacao-de-skills]], [[wiki/concepts/otimizacao-de-descricao-de-skill]], [[wiki/concepts/benchmark-com-e-sem-skill]], [[wiki/entities/skill-creator]]
+
+**Tocadas (15):** [[wiki/concepts/skills-agente]], [[wiki/concepts/llm-evals-testing]], [[wiki/concepts/evals-llm]], [[wiki/concepts/closed-loop-skill-learning]], [[wiki/concepts/modelo-por-leverage-tarefa]], [[wiki/concepts/roteamento-automatico-de-modelo]], [[wiki/concepts/harness]], [[wiki/concepts/harness-de-qualidade]], [[wiki/concepts/subagentes]], [[wiki/concepts/progressive-disclosure-ia]], [[wiki/concepts/pilares-de-desenvolvimento-com-ia]], [[wiki/entities/claude-code]], [[wiki/entities/anthropic]], [[wiki/entities/opencode]], [[wiki/entities/codex-openai]] — Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** (1) sem amostra/variância: 90% vs. 50% (Haiku) e 100/100 (Opus) vêm de uma única skill (migração de banco), verbalmente. (2) Alegação de portabilidade entre Claude Code/Codex/OpenCode não demonstrada — só Haiku e Opus testados. (3) Tensão leve com [[wiki/concepts/skills-agente]] ("skill que atrapalha", sem medição): esta fonte oferece o método de medição. (4) O stub [[wiki/concepts/evals-llm]] ganhou fonte relacionada mas continua stub (duplica [[wiki/concepts/llm-evals-testing]]; candidato a lint). (5) Nome da skill do autor ("query optimizer") incerto pela transcrição.
+
+
+---
+
+## [2026-09-29] ingest | A Gaiola de Ferro Revisitada: Isomorfismo Institucional, Ondas de Modernização e a Corrida por IA
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo.md` (já em português; sem tradução). Título derivado do conteúdo; autor/canal desconhecidos (link do artigo estava só na descrição do vídeo). Termos corrompidos corrigidos por contexto e listados no cabeçalho do raw (ex.: "Demidio e Powel"→DiMaggio e Powell, "Cisco MB 10.000"→provável SISCO MB-10000, "Novel"→Novell).
+
+**Skill:** tech-mentor-leadership (`references/strategy/tech-radar-build-vs-buy.md`; skill em `~/.claude-personal/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina). Domínio principal: estratégia técnica/cultura organizacional; secundários: tech-mentor-ai (hype de IA) e tech-mentor-backend (mainframe/microsserviços), anotados em `tags:`.
+
+**Criado:** [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]], [[wiki/concepts/isomorfismo-institucional]], [[wiki/concepts/isomorfismo-mimetico]], [[wiki/concepts/ondas-de-modernizacao-tecnologica]], [[wiki/concepts/cliente-servidor-como-onda-de-modernizacao]], [[wiki/concepts/problema-antes-da-tecnologia]], [[wiki/entities/the-iron-cage-revisited-paper]]
+
+**Tocadas (15):** [[wiki/concepts/cargo-cult-tecnologico]], [[wiki/concepts/hype-de-ia]], [[wiki/concepts/ai-washing]], [[wiki/concepts/fomo-tecnologico]], [[wiki/concepts/avaliar-hype-tecnologico]], [[wiki/concepts/modernizacao-de-mainframe]], [[wiki/concepts/mainframe]], [[wiki/concepts/arquitetura-cliente-servidor]], [[wiki/concepts/microsservicos]], [[wiki/concepts/body-shop-terceirizacao]], [[wiki/concepts/cloud-como-modelo-de-consumo]], [[wiki/concepts/decisao-terceirizada]], [[wiki/concepts/profecia-autorrealizavel-corrida-da-ia]], [[wiki/concepts/eficacia-vs-eficiencia]], [[wiki/entities/ibm]] — Key sources + bump de `source_count`/`date_updated` (corpo ampliado nas 7 primeiras e em modernizacao-de-mainframe/mainframe).
+
+**Notas:** (1) sem dados quantitativos: custos do cliente-servidor e a contrafactual de 1991 são relato/retórica. (2) A fonte reduz o artigo original a uma taxonomia de adoção tecnológica; o original trata de estruturação de campos organizacionais [external: https://doi.org/10.2307/2095101 — referência bibliográfica não verificada online nesta sessão]. (3) "Mimetismo é racional" convive com [[wiki/concepts/cargo-cult-tecnologico]] (que trata a cópia como erro de contexto) — complementares, não contraditórios. (4) Nenhuma entidade criada para os autores (só o paper); "SISCO MB-10000" e Windows NT/Novell/Clipper/Visual Basic são menções laterais sem página.
+
+
+---
+
+## [2026-09-29] ingest | Sua RAG é Ruim? Busca Híbrida (Semântica + Palavra-chave) na Prática
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/rag-busca-hibrida-semantica-e-textual-ronald-hulk.md` (já em português; sem tradução). Autor: Ronald Hulk. Título derivado do conteúdo. Termos corrompidos corrigidos por contexto e listados no cabeçalho do raw (ex.: "reg"→RAG, "bed/beding"→embedding, "topic"→top-K).
+
+**Skill:** tech-mentor-ai (`references/ai/ai-search.md`; skill em `~/.claude-personal/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina).
+
+**Criado:** [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]], [[wiki/concepts/busca-semantica]], [[wiki/concepts/busca-por-palavra-chave]], [[wiki/concepts/similaridade-de-cosseno]], [[wiki/concepts/top-k-retrieval]], [[wiki/concepts/fusion-de-rankings]], [[wiki/concepts/rag-como-ferramenta-de-busca]], [[wiki/concepts/rag-demo-vs-mundo-real]], [[wiki/entities/ronald-hulk]], [[wiki/entities/rock-pro]]
+
+**Tocadas:** [[wiki/concepts/hybrid-search]] (stub→draft), [[wiki/concepts/chunking]], [[wiki/concepts/embedding-vectors]], [[wiki/concepts/bm25]], [[wiki/concepts/full-text-search]], [[wiki/concepts/reranking]], [[wiki/concepts/janela-de-contexto]], [[wiki/concepts/degradacao-de-contexto]], [[wiki/concepts/tool-use-agents]], [[wiki/concepts/tool-call]], [[wiki/concepts/llm-evals-testing]], [[wiki/concepts/memoria-de-longo-prazo-ia]], [[wiki/concepts/harness]], [[wiki/concepts/rag-arquitetura-avancada]], [[wiki/sources/rag-introducao-pipeline-completo]], [[wiki/sources/rag-retrieval]], [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]]
+
+**Notas:** (1) sem números: K, pesos e métricas de retrieval não são dados; a fonte não nomeia BM25 nem RRF (associados via skill). (2) "120/150/200 milhões de tokens" provavelmente é "mil" (erro de transcrição). (3) Trecho de "memória semântica" ambíguo. (4) Reranking não é mencionado no vídeo. (5) Os stubs [[wiki/concepts/bm25]] e [[wiki/concepts/reranking]] seguem stubs (só ganharam fonte relacionada).
+
+
+---
+
+## [2026-09-30] ingest | Dicas de Claude Code da Documentação: Worktrees, Paralelismo, Rotinas, Sessões Remotas, Fork e Output Estruturado
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado.md` (já em português; sem tradução). Autor "Galego" (autodenominação; canal desconhecido). Termos corrompidos corrigidos por contexto e listados no cabeçalho do raw (ex.: "Entropic"→Anthropic, "Pidentic"→Pydantic, "Chrome job"→cron job). Um trecho ("IFN P") ficou ininteligível.
+
+**Skill:** tech-mentor-ai (`references/ai/agents-orchestration.md`, `references/ai/computer-use-gui-agents.md`, `references/ai/structured-outputs-function-calling.md`; skill em `~/.claude-personal/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]], [[wiki/concepts/modalidades-de-paralelismo-claude-code]], [[wiki/concepts/agent-teams]], [[wiki/concepts/rotinas-agendadas-claude-code]], [[wiki/concepts/sessoes-remotas-claude-code]], [[wiki/concepts/fork-de-sessao-claude-code]], [[wiki/concepts/integracao-navegador-claude-code]], [[wiki/concepts/saida-estruturada-llm]], [[wiki/entities/anthropic-engineering-blog]]
+
+**Tocadas (13):** [[wiki/concepts/paralelismo-de-tarefas-ia]] (stub→draft), [[wiki/concepts/computer-use]] (stub→draft), [[wiki/concepts/worktree-paralelismo]], [[wiki/concepts/subagentes]], [[wiki/concepts/gerenciamento-de-sessoes-claude-code]], [[wiki/concepts/rewind-checkpoints-claude-code]], [[wiki/concepts/harness]], [[wiki/concepts/loop-engineering]], [[wiki/entities/claude-code]], [[wiki/entities/anthropic]], [[wiki/entities/codex-openai]], [[wiki/entities/opencode]], [[wiki/entities/cursor]] — Key sources + bump de `source_count`/`date_updated`, com seção nova em cada.
+
+**Notas:** (1) Nenhum nome de comando/flag (`--worktree`, `/loop`, `/fork`, `/code/routines`, Agents View, Agent Teams, Remote Control) foi verificado na documentação atual; vêm da fala do autor. (2) "Custo 2x" do paralelismo é estimativa qualitativa; ver benchmark de campo em [[wiki/concepts/subagentes]]. (3) Sem contradições com a wiki; complementa [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]] e [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]], que já cobriam worktree/subagentes. (4) Trecho de patrocínio (gateway de pagamentos) ignorado, sem página. (5) Artigo "Effective harnesses for long-running agents" tem título inferido; candidato a ingest futuro.
+
+
+---
+
+## [2026-09-30] ingest | Times Menores e Múltiplos Papéis na Era da IA: Compressão, Cruzamento de Funções e Valorização
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao.md` (já em português; sem tradução). Autor não identificado (fundador de empresa que estrutura times; tech lead/dev/PM/PO). Termos corrompidos corrigidos por contexto e listados no cabeçalho do raw (ex.: "Garten"→Gartner, "Lady Brooks"→Lei de Brooks, "MIT Com"→provavelmente *The Mythical Man-Month*, marcado como inferência).
+
+**Skill:** tech-mentor-leadership (SKILL.md carregado; nenhuma referência específica cobre "times menores/multi-papel", então usados `ai-strategy-engineering.md` e `engineering-management.md` só para checagem de escopo; skill em `~/.claude-personal/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]], [[wiki/concepts/multiplos-papeis-em-times-pequenos]], [[wiki/concepts/framework-compressao-cruzamento-valorizacao]], [[wiki/concepts/nao-delegar-o-que-nao-conhece]], [[wiki/concepts/contexto-concentrado-como-valor]], [[wiki/concepts/lei-de-brooks]], [[wiki/concepts/time-cirurgico]]
+
+**Tocadas (13):** [[wiki/entities/gartner]], [[wiki/entities/fred-brooks]], [[wiki/concepts/overhead-de-coordenacao-tamanho-de-equipe]], [[wiki/concepts/ia-como-amplificador]], [[wiki/concepts/ownership-proativo]], [[wiki/concepts/extreme-ownership]], [[wiki/concepts/profissional-t-shaped]], [[wiki/concepts/abrangencia-profissional]], [[wiki/concepts/portabilidade-de-valor-profissional-na-era-da-ia]], [[wiki/concepts/valor-do-codigo-com-tempo-achatado]], [[wiki/concepts/equipe-mista-senior-junior]], [[wiki/concepts/apagao-de-seniors]], [[wiki/concepts/autonomia-responsabilidade]] — seção nova + Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** (1) A previsão "60% de times menores até 2029" vem de citação oral; não foi checada. (2) A obra sobre "time cirúrgico" é inferida; conteúdo do capítulo não verificado. (3) Sem contradições, mas a fonte não discute custo de acumular papéis, fator ônibus nem o papel do júnior; registrado nas ressalvas. (4) "Menos esforço = menos valor percebido" é premissa do autor, sem dado. (5) Sem página de autor/entidade nova (autor não identificado).
+
+---
+
+## [2026-09-30] ingest | Por que Você Não É Promovido: Como Jogar o Jogo da Carreira (André Casciotti)
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti.md` (já em português; sem tradução). Autor: [[wiki/entities/andre-casciotti]] (quadro Próximo Nível). Título do vídeo não informado (título descritivo). Termos corrompidos corrigidos por contexto e listados no cabeçalho do raw (ex.: "hallback"→rollback, "dele"→daily, "overdivery"→overdelivery); três trechos incertos marcados.
+
+**Skill:** tech-mentor-leadership (SKILL.md, `references/career-progression.md` e `references/managing-up.md`; skill em `~/.claude-personal/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]], [[wiki/concepts/jogar-o-jogo-da-carreira]], [[wiki/concepts/fatores-externos-de-promocao]], [[wiki/concepts/objetivos-de-carreira-explicitos]], [[wiki/concepts/visibilidade-das-entregas]], [[wiki/concepts/entender-contexto-da-demanda]], [[wiki/concepts/overdelivery-calibrado]], [[wiki/concepts/subniveis-de-senioridade]]
+
+**Tocadas (14):** [[wiki/entities/andre-casciotti]], [[wiki/concepts/politica-organizacional]], [[wiki/concepts/one-on-one]], [[wiki/concepts/comunicar-progresso]], [[wiki/concepts/ownership-proativo]], [[wiki/concepts/comunicacao-tecnica]], [[wiki/concepts/documentar-conquistas]], [[wiki/concepts/dev-essencial-e-raridade]], [[wiki/concepts/crescer-na-empresa-vs-trocar-por-salario]], [[wiki/concepts/soft-skills-como-diferencial-de-pleno]], [[wiki/concepts/mentoria-tecnica]], [[wiki/concepts/escolha-rapida-de-caminho-de-carreira]], [[wiki/concepts/requisitos-funcionais-e-nao-funcionais]], [[wiki/concepts/gestor-deve-ter-sido-praticante]] — seção nova + Key sources + bump de `source_count`/`date_updated` (entidade: só Key sources e temas).
+
+**Notas:** (1) Tudo é experiência anedótica do autor, que se declara "tendência, não certeza"; nenhuma afirmação de mercado (ex.: grandes empresas contratam sênior de fora) foi verificada. (2) Os "subníveis" são modelo pessoal do autor, não padrão; não comparados em profundidade com `engineering-levels-ladder.md`. (3) Sem contradições com a wiki; complementa [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] (lá: ser essencial; aqui: fazer e mostrar). (4) Trecho final de divulgação do curso "Dev que Resolve" ignorado, sem página.
+
+
+---
+
+## [2026-09-30] ingest | Versionamento de Prompts: Reprodutibilidade, Metadados, Versionamento Semântico e Rollback Instantâneo
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset.md` (já em português; sem tradução). Autor não identificado (dev de um assistente financeiro; repositório "prompt manager"). Termos corrompidos corrigidos por contexto e listados no cabeçalho do raw (ex.: "Open Houter"→OpenRouter, "Tropic"→Anthropic, "a gente"→agente); nome do prompt de exemplo ("add expense") e caminho do diretório marcados como incertos.
+
+**Skill:** tech-mentor-ai (SKILL.md, `references/ai/production-evals.md`, `references/ai/mlops-vs-llmops.md`; skill em `~/.claude-personal/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]], [[wiki/concepts/versionamento-de-prompt]], [[wiki/concepts/metadados-de-prompt]], [[wiki/concepts/versionamento-semantico-de-prompt]], [[wiki/concepts/rollback-de-prompt]], [[wiki/concepts/golden-dataset]], [[wiki/concepts/teste-de-regressao-de-prompt]], [[wiki/concepts/prompt-registry-local]]
+
+**Tocadas (14):** [[wiki/concepts/prompt-engineering]], [[wiki/concepts/llm-evals-testing]], [[wiki/concepts/evals-llm]], [[wiki/concepts/llmops]], [[wiki/concepts/system-prompt-arquitetura]], [[wiki/concepts/hyperparameters-llm]], [[wiki/concepts/agente-ia]], [[wiki/concepts/determinismo-vs-probabilismo-em-ia]], [[wiki/concepts/drift-detection]], [[wiki/concepts/ci-cd]], [[wiki/concepts/feature-flag]], [[wiki/concepts/api-versioning]], [[wiki/entities/openrouter]], [[wiki/entities/google]] — seção nova + Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** (1) Reprodutibilidade é parcial: a fonte não trata seed nem snapshot de modelo, e o provedor pode mudar o modelo sob o mesmo ID. (2) Versionar ≠ melhorar (ressalva do próprio autor); golden dataset/regressão só descritos, sem demo, por isso os dois conceitos são stubs. (3) Sem critério objetivo para major vs. minor. (4) Repositório e vídeos citados não foram acessados; nada verificado no código. (5) Sem contradições com a wiki; concretiza [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] (versionamento com gate em CI/CD) e [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] (evals por mudança de prompt). (6) Pedido de curtida/inscrição ignorado.
+
+
+---
+
+## [2026-09-30] ingest | OMXTerm: Como Funciona o Terminal (TTY, PTY, Shell), Terminal Web com WebSocket + SSH, Deploy com Docker + Traefik e Segurança
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda.md` (já em português; sem tradução). Autor: [[wiki/entities/otavio-miranda]] (inferido do cupom/domínio; título do vídeo não informado). Termos corrompidos corrigidos por contexto e listados no cabeçalho do raw (ex.: "Pi", artigo de Linus Åkesson só pelo ano, "sshd_host_ed25519_key.pub").
+
+**Skill:** tech-mentor-security (SKILL.md, `references/appsec-owasp.md`, `appsec-authn-authz.md`, `appsec-ddos-waf.md`, `security/secure-design-patterns.md` consultados por busca de termos; skill em `~/.claude/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md). Secundário: tech-mentor-infra, tech-mentor-ai (nas tags/notas).
+
+**Criado:** [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]], [[wiki/concepts/tty-teletypewriter]], [[wiki/concepts/pty-pseudoterminal]], [[wiki/concepts/line-discipline]], [[wiki/concepts/emulador-de-terminal]], [[wiki/concepts/fork-e-heranca-de-file-descriptors]], [[wiki/concepts/terminal-web-broker-websocket-ssh]], [[wiki/concepts/ticket-de-uso-unico-websocket]], [[wiki/concepts/cross-site-websocket-hijacking]], [[wiki/concepts/csrf]], [[wiki/concepts/dns-rebinding]], [[wiki/concepts/allowlist-de-destino-ssh]], [[wiki/concepts/design-efemero-zero-persistencia]], [[wiki/concepts/auditoria-de-issue-por-agente-de-contexto-limpo]], [[wiki/entities/omxterm]], [[wiki/entities/otavio-miranda]], [[wiki/entities/xterm-js]], [[wiki/entities/traefik]]
+
+**Tocadas (21):** [[wiki/concepts/shell-terminal]], [[wiki/concepts/ssh]], [[wiki/concepts/kernel]], [[wiki/concepts/processo]], [[wiki/concepts/unix]], [[wiki/entities/ken-thompson]], [[wiki/concepts/comprehension-debt]], [[wiki/concepts/vibe-coding]], [[wiki/concepts/revisao-por-agente-independente]], [[wiki/concepts/timing-attack]], [[wiki/concepts/rate-limiting]], [[wiki/concepts/waf]], [[wiki/concepts/sessoes-http-cookies]], [[wiki/concepts/xss]], [[wiki/concepts/websocket-vs-polling]], [[wiki/concepts/reverse-proxy]], [[wiki/concepts/hardening-de-servidor]], [[wiki/concepts/vpn]], [[wiki/concepts/dns]], [[wiki/concepts/owasp]], [[wiki/entities/hostinger]] — seção nova + Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** (1) Nada verificado no código; "bastante seguro" é presunção do autor. (2) O broker vê a chave privada SSH do usuário; a garantia é política de descarte, não verificável (inferência). (3) CSWSH, CSRF e DNS rebinding são stubs: a fonte só nomeia/aplica, não explica em profundidade; definições gerais marcadas `[external]`. (4) Sem contradições com a wiki; reforça [[wiki/concepts/comprehension-debt]] com um caso em que o processo era rígido (não "vibe"). (5) Patrocínio Hostinger tratado como publicidade; pedido de engajamento ignorado.
+
+---
+
+## [2026-09-30] ingest | SQL Injection com SQLMap — Laboratório Prático (Luiz Viana)
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, traduzida para inglês (pedido explícito) e estruturada em `raw/sql-injection-sqlmap-luiz-viana.md`. Autor: [[wiki/entities/luiz-viana]] (mesmo autor de [[wiki/sources/xss-cross-site-scripting-luiz-viana]], já na wiki). Vídeo demonstra um laboratório de pentest com desafios numerados ("Lesson 1", "Lesson 7", "Lesson 10", "Lesson 11", "Lesson 20"); link do laboratório citado no vídeo mas não presente na transcrição colada.
+
+**Skill:** tech-mentor-security (SKILL.md + `references/appsec-owasp.md` — categoria Injection/SQLi — e `references/redteam-pentest.md` — metodologia de pentest e uso do SQLMap; skill em `~/.claude-personal/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md e o formato das fontes mais recentes como referência estrutural).
+
+**Criado:** [[wiki/sources/sql-injection-sqlmap-luiz-viana]], [[wiki/concepts/sqlmap]], [[wiki/concepts/sql-injection-tecnicas-de-exploracao]], [[wiki/concepts/load-file-into-outfile-mysql]]
+
+**Tocadas (9):** [[wiki/concepts/sql-injection]], [[wiki/concepts/pentest]] (promovido de stub para draft), [[wiki/concepts/waf]], [[wiki/concepts/owasp]], [[wiki/concepts/bug-bounty]], [[wiki/concepts/xss]], [[wiki/entities/luiz-viana]] (promovido de stub para draft) — seção nova + Key sources + bump de `source_count`/`date_updated` em cada uma.
+
+**Notas:** (1) Conteúdo é material de pentest/hacking ofensivo (dual-use), consistente com fontes já presentes na wiki do mesmo autor e do mesmo gênero ([[wiki/sources/sql-injection-guia-completo-solucoes-galego]], [[wiki/sources/xss-cross-site-scripting-luiz-viana]], [[wiki/sources/pentest-redteam]]); tratado como educacional/defensivo, sem alvo real nomeado. (2) A afirmação de que `INTO OUTFILE` pode levar a RCE é citada na fonte mas não demonstrada ao vivo — registrada como claim não verificada em [[wiki/concepts/load-file-into-outfile-mysql]]. (3) Nomes exatos de flags do SQLMap (`--list-tampers`, sintaxe de `--technique`, uso de `*` em `--headers`) não foram cruzados com a documentação oficial nesta sessão — plausíveis, mas não triangulados. (4) Sem contradições com a wiki; complementa [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] (que cobre defesa em 7 camadas) com o lado ofensivo/exploração. (5) Laboratório do vídeo não identificado por nome/plataforma (só citado como "link na descrição", ausente da transcrição colada).
+
+
+---
+
+## [2026-09-30] ingest | ICMP Browser: navegando na internet via ping em Go (Michel Leonardo)
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo.md` (já em português; sem tradução). Autor: [[wiki/entities/michel-leonardo]] (já na wiki). Termos corrompidos corrigidos por contexto e listados no cabeçalho do raw (ex.: "1228" → 128, "10000 bytes" → provável 1500, "Golend" → GoLand).
+
+**Skill:** tech-mentor-networking (SKILL.md + `references/linux-networking.md` [MTU/PMTUD], `references/ipv6-network-observability.md` [ICMPv6], `references/protocols-transport.md`; skill em `~/.claude-personal/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]], [[wiki/concepts/icmp]], [[wiki/concepts/mtu]], [[wiki/concepts/fragmentacao-ip]], [[wiki/concepts/ipv6]], [[wiki/concepts/icmp-tunneling]], [[wiki/concepts/forward-proxy]], [[wiki/concepts/remontagem-de-pacotes-fora-de-ordem]], [[wiki/entities/icmp-browser]]
+
+**Tocadas (11):** [[wiki/entities/michel-leonardo]], [[wiki/concepts/dns]], [[wiki/concepts/tunelamento]], [[wiki/concepts/vpn]], [[wiki/concepts/reverse-proxy]], [[wiki/concepts/proxy-pattern]], [[wiki/concepts/tcp-three-way-handshake]], [[wiki/concepts/go-stdlib]], [[wiki/concepts/http-vs-https]], [[wiki/concepts/array]], [[wiki/concepts/ddos-syn-flood]] — seção nova + Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** (1) MTU do áudio ("10000") corrigido por conhecimento externo, sinalizado. (2) O vídeo mistura comportamento IPv4/IPv6 na fragmentação (em IPv6 só a origem fragmenta; [external], não verificado). (3) Segurança do "proxy" é inferência: canal ICMP sem cifra/autenticação. (4) Código do projeto (na descrição), vídeo anterior (codec ICMP) e post do Doom via DNS não acessados. (5) Sem contradições com a wiki; o conceito de proxy foi desambiguado de [[wiki/concepts/proxy-pattern]]. (6) Patrocínio JetBrains e pedidos de engajamento tratados como publicidade/ignorados.
+
+
+---
+
+## [2026-09-30] ingest | Bounded Context (Contextos Delimitados) — Dominando DDD #4 (Bernardo Lobato)
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/bounded-context-contextos-delimitados-bernardo-lobato.md` (já em português; sem tradução). Autor: [[wiki/entities/bernardo-lobato]]. Erros de reconhecimento de fala corrigidos por contexto e listados no cabeçalho do raw (ex.: "DVD" → DDD, "Martin Faller" → Martin Fowler, "Bald/bonded" → bounded).
+
+**Skill:** tech-mentor-backend (SKILL.md + `references/architecture/ddd-advanced.md` — Context Map, Shared Kernel, Customer/Supplier, Conformist, ACL; skill em `~/.claude-personal/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]], [[wiki/concepts/ubiquitous-language]], [[wiki/concepts/subdominio]], [[wiki/concepts/context-map]], [[wiki/concepts/shared-kernel]], [[wiki/concepts/customer-supplier]], [[wiki/concepts/conformist]]
+
+**Tocadas (10):** [[wiki/concepts/bounded-context]], [[wiki/concepts/ddd]], [[wiki/concepts/anti-corruption-layer]], [[wiki/concepts/acoplamento]], [[wiki/concepts/coesao]], [[wiki/concepts/microsservicos]], [[wiki/concepts/monolito-modular]], [[wiki/concepts/strangler-fig-pattern]], [[wiki/concepts/database-per-service]], [[wiki/entities/bernardo-lobato]], [[wiki/entities/martin-fowler]] — seção nova + Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** (1) Sem contradições com a wiki; reforça [[wiki/sources/ddd-strategic]] e a definição já existente de bounded context. (2) Os seis conceitos novos são stubs: a fonte só nomeia os padrões de integração; definições adicionais vêm da skill e estão marcadas. (3) Tensão não resolvida na fonte: várias classes por contexto podem mapear a mesma tabela, o que mantém acoplamento de dados (inferência; ver [[wiki/concepts/database-per-service]]). (4) Artigo exato de Fowler que originou a imagem Vendas/Suporte não verificado; Evans (2003) não consultado. (5) Vídeos 1–3 e 5 da série não estão na wiki. (6) Pedidos de like/inscrição ignorados.
+
+
+---
+
+## [2026-09-30] ingest | Comunicação Assíncrona — Arquiteturas Distribuídas (Bernardo Lobato)
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato.md` (já em português; sem tradução). Autor: [[wiki/entities/bernardo-lobato]]. Erros de reconhecimento de fala corrigidos por contexto e listados no cabeçalho do raw (ex.: "KFC" → Kafka, "RaptamQue" → RabbitMQ, "pulling" → polling, "autoacoplamento" → alto acoplamento); dois trechos ambíguos sinalizados.
+
+**Skill:** tech-mentor-backend (SKILL.md + `references/architecture-resilience-patterns.md` [Temporal vs. Spatial Coupling] e `references/architecture-eda-patterns.md` [Request-Reply assíncrono, síncrono vs. assíncrono]; skill em `~/.claude-personal/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]], [[wiki/concepts/comunicacao-assincrona]], [[wiki/concepts/comunicacao-sincrona]], [[wiki/concepts/async-request-reply]], [[wiki/concepts/webhook]], [[wiki/concepts/garantia-de-entrega]]
+
+**Tocadas (16):** [[wiki/concepts/processamento-assincrono]] (stub → draft), [[wiki/concepts/mensageria]], [[wiki/concepts/eventual-consistency]], [[wiki/concepts/event-driven-architecture]], [[wiki/concepts/acoplamento]], [[wiki/concepts/temporal-coupling]], [[wiki/concepts/microsservicos]], [[wiki/concepts/cqrs]], [[wiki/concepts/event-sourcing]], [[wiki/concepts/observabilidade]], [[wiki/concepts/distributed-tracing]], [[wiki/concepts/tolerancia-a-falha]], [[wiki/concepts/buffer]], [[wiki/concepts/websocket-vs-polling]], [[wiki/concepts/kafka]], [[wiki/entities/rabbitmq]], [[wiki/entities/bernardo-lobato]] — seção nova + Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** (1) Sem contradições com a wiki; reforça [[wiki/concepts/temporal-coupling]] e a tabela síncrono/assíncrono da skill. (2) Ressalvas adicionadas: "acoplamento fraco" vale no eixo temporal (o contrato da mensagem continua acoplando); "como se nada tivesse acontecido" omite duplicatas/reprocessamento (exige consumidor idempotente); o vídeo não cita outbox/dual write. (3) A afirmação de que brokers não garantem entrega "por padrão" é genérica e não foi verificada por broker. (4) Cinco conceitos novos são stubs/draft: a fonte só os apresenta em alto nível; definições extras vêm da skill e estão marcadas. (5) Vídeos prometidos sobre comunicação síncrona e mensageria não estão na wiki. (6) Pedidos de like/inscrição tratados como engajamento, sem valor técnico.

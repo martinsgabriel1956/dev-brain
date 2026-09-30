@@ -3,8 +3,8 @@ type: concept
 title: "Vibe Coding"
 aliases: ["vibe coding", "vibe-coding", "coding por vibração", "agentic coding", "orquestração de agentes"]
 date_created: 2026-04-23
-date_updated: 2026-09-21
-source_count: 22
+date_updated: 2026-09-30
+source_count: 24
 tags: [vibe-coding, agentes-ia, produtividade, divida-cognitiva, ai-brainfry, paralelismo-cognitivo]
 skill: tech-mentor-ai
 status: stable
@@ -133,8 +133,15 @@ Citado como exemplo de hype tecnológico em formação (junto com MCP) no moment
 
 [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] descreve uma mitigação distinta das já documentadas acima (que dependem de disciplina humana de ler/entender ou de gate mecânico via CI): antes de cada commit, o autor pede explicitamente ao próprio agente que verifique best practices, qualidade dos comentários, consistência entre arquivos, ausência de vazamento de dado sensível e não-compromisso de segurança/UX — sem ler o código gerado linha a linha. É uma terceira via em relação a "Review obrigatório antes de commit" (leitura humana) e ao "Ratchet de Baseline" (gate mecânico via CI): aqui o critério de qualidade é verbalizado no prompt e a verificação delegada de volta ao próprio modelo que gerou o código, sem confirmação humana independente de que o checklist capturou os problemas reais. A fonte não relata nenhum incidente que essa prática tenha deixado passar — mas também não é comparada contra revisão humana equivalente.
 
+## Contra-exemplo: spec + agentes sem "vibe", mas com dívida de entendimento
+
+Em [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] o autor diz que **não** fez vibe coding (tinha PRD, issues auditadas, revisão por agentes), e mesmo assim perdeu o controle do entendimento do código. Indica que processo rígido de geração não elimina a [[wiki/concepts/comprehension-debt]]. Ver [[wiki/concepts/auditoria-de-issue-por-agente-de-contexto-limpo]].
+
 ## Key Sources
 
+- [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — processo rígido com agentes ainda gera dívida de entendimento
+
+- [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — demo 'go horse' (sem plano, sem CLAUDE.md) mostrando por que funciona mas gera problemas de qualidade e segurança
 - [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — dois projetos construídos sem nenhum código lido ou escrito manualmente; checklist de verificação pré-commit delegado ao agente como substituto da leitura linha a linha; reinício de sessão ao notar alucinação; screenshot como referência para UI; agente único, sem swarm
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — relato de staff/tech lead/sênior sem escrever código manual há meses, 20-25 PRs/semana, revisão automatizada substituindo leitura humana
 - [[sources/divida-cognitiva-ai-brainfry]]

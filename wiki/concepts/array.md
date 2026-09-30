@@ -3,8 +3,8 @@ type: concept
 title: "Array"
 aliases: ["vetor", "lista indexada", "indexed array"]
 date_created: 2026-06-01
-date_updated: 2026-08-12
-source_count: 7
+date_updated: 2026-09-30
+source_count: 9
 tags: [cs-fundamentals, estruturas-de-dados, array, performance, big-o]
 skill: cs-fundamentals
 status: draft
@@ -60,6 +60,10 @@ Uma fila de pessoas num show. Você sabe que a 10ª pessoa está na posição 9.
 - [[wiki/concepts/algoritmos-de-busca]] — array ordenado é pré-requisito obrigatório de binary search; array não ordenado permite só busca linear
 - [[wiki/concepts/two-pointer]] — técnica que navega dois índices do mesmo array sem recriá-lo
 
+## Uso: remontar pacotes
+
+[[wiki/concepts/remontagem-de-pacotes-fora-de-ordem]]: array pré-alocado com o total de pedaços, indexado pela sequência ([[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]]).
+
 ## Key sources
 
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
@@ -69,3 +73,5 @@ Uma fila de pessoas num show. Você sabe que a 10ª pessoa está na posição 9.
 - [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — Longest Consecutive Sequence: transformar array em hash set para checar membership em O(1) em vez de O(n)
 - [[wiki/sources/busca-linear-e-binaria-giovana]] — indexação começa em 0 e vai até `length - 1`; array ordenado como pré-condição da busca binária
 - [[wiki/sources/como-ficar-bom-em-leetcode]] — array como primeira estrutura da lista essencial; base de [[wiki/concepts/two-pointer|two pointer]] e [[wiki/concepts/sliding-window|sliding window]]
+- [[wiki/sources/ordenacao-selection-quicksort-bubble-sort-live-coding]] — arrays e listas como pré-requisito declarado para os algoritmos de ordenação; Quicksort particiona o array em subarrays a cada chamada
+- [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]] — array para reordenar pacotes

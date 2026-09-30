@@ -3,8 +3,8 @@ type: concept
 title: "Buffer"
 aliases: ["buffer", "buffering", "área de buffer", "buffer de fluxo"]
 date_created: 2026-08-11
-date_updated: 2026-08-14
-source_count: 2
+date_updated: 2026-09-30
+source_count: 3
 tags: [buffer, backend, system-design, mensageria, streaming, io, desacoplamento, backpressure]
 skill: tech-mentor-backend
 status: draft
@@ -57,7 +57,12 @@ O [[wiki/concepts/buffer-pool]] do banco de dados, apesar do nome, funciona conc
 - [[wiki/concepts/filas-e-workers]] — load leveling: absorver picos sem perder requisições
 - [[wiki/concepts/latencia-streaming-ao-vivo]] — buffer de leitura antecipada do player
 
+## Fila Assíncrona Absorvendo Picos (Black Friday)
+
+[[wiki/entities/bernardo-lobato]] cita picos como a Black Friday: na [[wiki/concepts/comunicacao-assincrona]], pagamento e pedidos podem sofrer pico sem exigir escalar a solução toda — papel de buffer da fila.
+
 ## Key Sources
 
 - [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] — buffer como absorvedor de diferença de velocidade, de I/O de hardware a filas de mensagem e streaming
 - [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — o buffer (fila) tem limite físico; se o descasamento de velocidade entre produtor e consumidor é sustentado, ele cresce indefinidamente até crashar o sistema — motivando controles ativos como [[wiki/concepts/admission-control]]
+- [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — fila como absorvedor de pico na Black Friday

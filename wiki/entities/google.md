@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-09-18
-source_count: 8
+date_updated: 2026-09-30
+source_count: 11
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -40,8 +40,17 @@ Pouco depois de [[wiki/entities/blaine-cook]] (Twitter) e [[wiki/entities/larry-
 
 Citada (ao lado de Dropbox e iCloud) como serviço de nuvem de referência em [[wiki/sources/tipos-de-armazenamento-de-dados]]: arquivos ficam em servidores remotos, criptografados e **duplicados em vários data centers** — geo-redundância que sobrevive à falha de um centro inteiro. Trade-off: espaço grande exige assinatura. Contraste com o [[wiki/concepts/nas-network-attached-storage|NAS]], em que o hardware é do próprio usuário.
 
+## Google Cloud
+
+Google Cloud citado entre os hyperscalers do imaginário de "ir para a nuvem" ([[wiki/concepts/cloud-como-modelo-de-consumo]]).
+
+## Gemini em Exemplo de Versionamento
+
+Em [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]], uma versão de prompt registra o modelo Gemini com temperatura 0, contra outra versão com modelo da OpenAI ([[wiki/concepts/metadados-de-prompt]]).
+
 ## Key Sources
 
+- [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — Google Cloud entre os hyperscalers do imaginário de nuvem
 - [[wiki/sources/tokens-llm-fundamentos-typescript]]
 - [[wiki/sources/tipos-de-armazenamento-de-dados]] — Google Drive como exemplo de nuvem com geo-redundância
 - [[wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth]] — membro fundador da OpenID Foundation (2007); adotante em massa do OpenID Connect
@@ -50,3 +59,5 @@ Citada (ao lado de Dropbox e iCloud) como serviço de nuvem de referência em [[
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — criadora do [[wiki/concepts/grpc]] (2015), lançado na mesma década do GraphQL (Meta) como resposta de performance para comunicação interna entre microsserviços
 - [[wiki/sources/historia-oauth2-antipadrao-senha-bernardo-lobato]] — uma das primeiras empresas a se juntar às discussões do grupo OAuth, pouco após sua formação em abril de 2007
 - [[wiki/sources/self-attention-mecanismo-transformers]] — origem do paper "Attention Is All You Need" (2017) e do TensorFlow Embedding Projector
+- [[wiki/sources/historia-do-captcha-do-teste-de-turing-ao-turnstile]] — comprou o [[wiki/concepts/recaptcha]] (2009), matou o CAPTCHA de texto com IA (99%, 2014), lançou "Não sou um robô" e o v3
+- [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — Gemini como modelo de exemplo nos metadados de versão

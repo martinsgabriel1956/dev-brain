@@ -3,8 +3,8 @@ type: concept
 title: "Fitness Functions"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-22
-source_count: 3
+date_updated: 2026-09-29
+source_count: 4
 tags: [fitness-functions]
 skill: tech-mentor-backend
 status: stub
@@ -26,6 +26,8 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 
 ## Key sources
 
+
+- [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — aplicação prática em contrato de revisão: scripts que falham se houver regra de negócio no controller, repositório na camada errada, dependência circular ou arquivos fora da organização arquitetural
 - [[wiki/sources/architecture-fitness-functions]]
 - [[wiki/sources/checklist-solutions-architect]]
 - [[wiki/sources/evolutionary-architecture]]

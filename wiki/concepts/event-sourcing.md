@@ -3,8 +3,8 @@ type: concept
 title: "Event Sourcing"
 aliases: ["event store", "append-only log", "eventsourcing"]
 date_created: 2026-05-31
-date_updated: 2026-09-15
-source_count: 9
+date_updated: 2026-09-30
+source_count: 10
 tags: [event-sourcing, arquitetura, cqrs, ddd, imutabilidade, fintech]
 skill: tech-mentor-backend
 status: stable
@@ -126,6 +126,10 @@ A mesma fonte descreve a arquitetura de referência para aplicar o padrão por c
 
 Reforço de segunda fonte para o mesmo caso: uma citação atribuída à InfoQ sobre a arquitetura atual do Nubank (72 bilhões de eventos/dia) — "até batch jobs são distribuídos como streams de mensagens no Kafka". Não é um detalhe novo de princípio (já coberto acima em "Uso no Nubank"), mas confirma que o compromisso com event sourcing/stream processing se manteve como filosofia de arquitetura à medida que a empresa escalou de milhões para 122 milhões de clientes — não foi abandonado em favor de processamento em lote tradicional conforme o volume cresceu. Ver [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]].
 
+## Pré-Requisito: Comunicação Assíncrona
+
+Citado em [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] como um dos estilos construídos sobre [[wiki/concepts/comunicacao-assincrona]]; sem detalhamento (vídeos futuros da série de [[wiki/entities/bernardo-lobato]]).
+
 ## Key Sources
 
 - [[wiki/sources/cqrs-martin-fowler]] — post original do bliki (2011) já lista Event Sourcing como padrão que combina naturalmente com CQRS
@@ -137,3 +141,4 @@ Reforço de segunda fonte para o mesmo caso: uma citação atribuída à InfoQ s
 - [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — placar de futebol como exemplo concreto de estado derivado de uma timeline via Kafka; custo de recalcular a timeline a cada leitura como motivação prática para cache de estado pré-computado
 - [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — variante leve via insert + flag `enabled` sem event store completo; arquitetura de referência (streaming + componente de registro + componente de replay); cases de mercado (Saga, opt-in/LGPD, auditoria financeira, faturamento de telecom sob fiscalização Anatel); prós/contras consolidados (reprodutibilidade total vs. volume de dados/complexidade/tempo de desenvolvimento)
 - [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — reforço de segunda fonte: filosofia de stream processing mantida em escala (72 bilhões de eventos/dia), batch jobs modelados como streams
+- [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — Event Sourcing listado como estilo que depende da comunicação assíncrona

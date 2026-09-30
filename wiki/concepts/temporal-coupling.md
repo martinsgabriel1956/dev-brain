@@ -3,8 +3,8 @@ type: concept
 title: "Temporal Coupling"
 aliases: ["temporal coupling", "acoplamento temporal", "ordem implícita de chamadas"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [temporal-coupling, api-design, acoplamento, ordem-implícita, design-patterns]
 skill: tech-mentor-system-design
 status: stable
@@ -89,6 +89,11 @@ Solução: retry com backoff exponencial no startup + health check que falha enq
 - [[concepts/hexagonal-architecture]] — ports tornam dependências de infraestrutura declarativas
 - [[concepts/accidental-complexity]] — temporal coupling implícito é uma forma de complexidade acidental
 
+## Exemplo: Serviço de Autenticação Síncrono
+
+Caso didático de [[wiki/entities/bernardo-lobato]]: sistema bloqueado aguardando um serviço externo de autenticação/autorização (JWT); se ele cair ou ficar lento, a solução inteira fica inviável — a [[wiki/concepts/comunicacao-assincrona]] é apresentada como resposta (acoplamento mais fraco).
+
 ## Key Sources
 
 - [[sources/conceitos-que-ninguem-ensina]]
+- [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — exemplo de autenticação síncrona e resposta via comunicação assíncrona

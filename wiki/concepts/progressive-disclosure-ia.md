@@ -3,8 +3,8 @@ type: concept
 title: "Progressive Disclosure para IA"
 aliases: ["progressive disclosure", "entrega gradual de contexto", "context by directory"]
 date_created: 2026-06-01
-date_updated: 2026-08-20
-source_count: 3
+date_updated: 2026-09-29
+source_count: 4
 tags: [context-engineering, coding-agents, on-demand-loading, claude-md, cursor-rules]
 skill: tech-mentor-ai
 status: draft
@@ -76,3 +76,4 @@ Progressive disclosure é a implementação prática do orçamento de instruçõ
 - [[wiki/sources/context-engineering-codebases-grandes-rpi]] — demonstração prática com codebase de streaming; Cursor Rules com alwaysApply e gatilhos
 - [[wiki/sources/agents-md-vale-a-pena-paper-zurique]] — links para arquivos específicos como estratégia de custo
 - [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] — analogia "mapa antes da rua" para dosagem de contexto
+- [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — a description é o único trecho da skill sempre no contexto; otimizá-la decide o carregamento

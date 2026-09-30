@@ -3,8 +3,8 @@ type: concept
 title: "Autonomia e Responsabilidade"
 aliases: ["autonomia técnica", "ownership", "responsabilidade profissional"]
 date_created: 2026-05-19
-date_updated: 2026-09-23
-source_count: 5
+date_updated: 2026-09-30
+source_count: 6
 tags: [soft-skills, autonomia, responsabilidade, carreira, ownership]
 skill: tech-mentor-leadership
 status: stable
@@ -57,6 +57,10 @@ O mesmo par vale no nível organizacional: [[wiki/sources/talk-about-platforms-e
 - [[wiki/concepts/code-review]] — alinhar com o PO antes de abrir PR é parte do ciclo de entrega
 - [[wiki/concepts/automacao-pessoal-para-aprender]] — onde a iniciativa "sem pedir permissão" tem risco baixo por rodar fora do pipeline formal
 
+## Responsabilidade que Concentra Contexto
+
+[[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]: quem acumula papéis e responsabilidade guarda mais contexto e decide mais rápido. Ver [[wiki/concepts/contexto-concentrado-como-valor]] e [[wiki/concepts/nao-delegar-o-que-nao-conhece]].
+
 ## Key Sources
 
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]
@@ -64,3 +68,4 @@ O mesmo par vale no nível organizacional: [[wiki/sources/talk-about-platforms-e
 - [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] — tensão entre "não peça permissão" para prática pessoal e "alinhe antes de executar" para escopo formal de entrega
 - [[wiki/sources/talk-about-platforms-evan-bottcher]] — autonomia + responsabilidade operacional em nível de time (you build it, you run it)
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — autonomia para achar as pessoas certas e completar requisitos sem o gestor "em cima" — o que mais inspira confiança ([[wiki/concepts/desenrolar-demandas]])
+- [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]

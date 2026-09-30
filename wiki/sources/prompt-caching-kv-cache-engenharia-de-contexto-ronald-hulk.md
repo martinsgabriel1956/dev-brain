@@ -57,6 +57,9 @@ Vídeo (Ronald Hulk) que explica prompt caching como técnica prática de engenh
 
 ## Entidades e Conceitos Tocados
 
+- [[wiki/entities/ronald-hulk]]
+- [[wiki/entities/rock-pro]]
+- [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] (mesmo autor)
 - [[wiki/concepts/kv-cache]]
 - [[wiki/concepts/prompt-caching]]
 - [[wiki/concepts/time-to-first-token]]

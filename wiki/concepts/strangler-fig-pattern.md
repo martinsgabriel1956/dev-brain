@@ -3,8 +3,8 @@ type: concept
 title: "Strangler Fig Pattern"
 aliases: ["strangler pattern", "figueira mata-pau", "migração incremental"]
 date_created: 2026-08-03
-date_updated: 2026-08-10
-source_count: 5
+date_updated: 2026-09-30
+source_count: 6
 tags: [strangler-fig, migração, legado, proxy, cdc, feature-flags, arquitetura]
 skill: tech-mentor-system-design
 status: stub
@@ -51,6 +51,10 @@ Durante a fase "Coexist", legado e sistema novo convivem sob o mesmo domínio de
 
 O caso mais extremo de "legado que não se reescreve" é justamente sistemas [[wiki/concepts/cobol|COBOL]] em bancos e no sistema financeiro: em vez de reescrita, a estratégia dominante é expor funcionalidades por API/filas de mensagens enquanto o núcleo de regra de negócio permanece intacto — o mesmo espírito do Strangler Fig, mesmo quando o time não usa esse nome para o processo.
 
+## ACL em Modernização de Legado (Ponte com DDD)
+
+[[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] cita a [[wiki/concepts/anti-corruption-layer]] como camada de tradução "bastante utilizada quando estamos modernizando sistema legado" — o mesmo uso que faz par com o Strangler Fig durante a coexistência novo/legado (relação sugerida; o vídeo não cita o Strangler Fig).
+
 ## Key Sources
 
 - [[wiki/sources/arquitetura-de-sacrificio]] — o "introduzir microsserviços depois para desmontar o monolito gradualmente" de Fowler é, na prática, este padrão
@@ -58,3 +62,4 @@ O caso mais extremo de "legado que não se reescreve" é justamente sistemas [[w
 - [[wiki/sources/ciclo-de-mudanca-de-arquitetura]]
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — COBOL e SOAP como exemplos reais de "modernizar a borda, manter o núcleo legado" em vez de reescrita total
 - [[wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado]] — o componente de tradução (ACL) que evita dependência forte entre sistema novo e legado durante a coexistência
+- [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — ACL em modernização de legado

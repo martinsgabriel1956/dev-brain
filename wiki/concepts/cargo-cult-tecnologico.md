@@ -3,8 +3,8 @@ type: concept
 title: "Cargo Cult Tecnológico"
 aliases: ["copiar stack de big tech", "solução Netflix Google Facebook sem contexto", "cargo cult de arquitetura"]
 date_created: 2026-07-03
-date_updated: 2026-09-22
-source_count: 6
+date_updated: 2026-09-29
+source_count: 7
 tags: [arquitetura, tomada-de-decisao, carreira, escala, contexto, processo, git]
 skill: tech-mentor-leadership
 status: draft
@@ -64,6 +64,10 @@ Assistir a uma palestra de um ciclista profissional sobre a bicicleta de 8 mil d
 - [[wiki/concepts/ciclo-de-mercado-tech]] — por que a tecnologia "quente" muda por década e não é garantia de acerto
 - [[wiki/concepts/granularidade-de-mudanca]] — a exigência de "valor real" por trás de qualquer mudança técnica, evitando tanto cargo cult quanto vaidade
 
+## A Variante Mimética por Incerteza e Legitimidade
+
+O [[wiki/concepts/isomorfismo-mimetico]] dá base organizacional ao cargo cult: sob incerteza, imitar quem parece acertar é racional e sinaliza legitimidade ao mercado. Difere da variante de escala: aqui o gatilho não é ignorar o contexto do outro, e sim a pressão de "não estar fazendo o que os outros fazem" ([[wiki/concepts/isomorfismo-institucional]]).
+
 ## Key Sources
 
 - [[wiki/sources/pare-de-terceirizar-suas-decisoes]]
@@ -72,3 +76,4 @@ Assistir a uma palestra de um ciclista profissional sobre a bicicleta de 8 mil d
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — a variante por ansiedade de ficar para trás (FOMO de framework), mecanismo invertido do cargo cult clássico
 - [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] — a variante de processo (Git Flow como "padrão industrial" de influenciador); influenciadores como "modificadores de cultura"
 - [[wiki/sources/sobre-ser-gerente-fabio-akita]] — a variante de orçamento/nível salarial: "você pode pagar o que a Netflix paga?" como filtro anterior ao de escala de usuários
+- [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — a variante mimética (DiMaggio e Powell): imitação por incerteza e busca de legitimidade, sem necessariamente haver irracionalidade

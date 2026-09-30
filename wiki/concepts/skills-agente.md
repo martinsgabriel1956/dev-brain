@@ -3,8 +3,8 @@ type: concept
 title: "Skills (Padrão de Harness)"
 aliases: ["skills harness", "agents skills", "skill pattern ia", "skills.sh"]
 date_created: 2026-06-02
-date_updated: 2026-09-10
-source_count: 9
+date_updated: 2026-09-29
+source_count: 12
 tags: [skills, harness, context-engineering, lazy-loading, system-prompt, grill-me, rfc, babysitting-de-agentes, produto-de-consumo]
 skill: tech-mentor-ai
 status: stable
@@ -116,8 +116,18 @@ A mesma fonte descreve a skill **Grill Me**, de [[wiki/entities/matt-pocock]]: u
 
 Skills podem conter scripts executáveis. **Skills de terceiros não verificadas podem conter código malicioso** (roubar `.env`, etc.). Verificar antes de instalar.
 
+## Skill Que Atrapalha
+
+Relato em [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]]: nem toda skill ajuda; algumas "deixam a LLM burra" ou levam o Claude Code a tomar decisões e mover conhecimento para onde não foi pedido — é preciso conter esse comportamento. Sem medição na fonte; evals com/sem a skill seriam a forma de verificar.
+
+## Avaliação: description e benchmark com/sem skill
+
+[[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] mostra como medir uma skill em vez de confiar na intuição: (1) a description é otimizada em loop com queries *should trigger* ([[wiki/concepts/otimizacao-de-descricao-de-skill]]); (2) o valor da skill é medido rodando com e sem ela por modelo ([[wiki/concepts/benchmark-com-e-sem-skill]]) — no relato, ~90% vs. ~50% no Haiku e 100/100 nos dois casos no Opus, ou seja, a skill compensa modelo menor e pode ser dispensável em modelo forte. Ver [[wiki/concepts/avaliacao-de-skills]] e [[wiki/entities/skill-creator]].
+
 ## Key Sources
 
+
+- [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — 'falsa sensação' de saber criar uma skill decente; a diferença entre boa e ruim é grande e a frustração vem do resultado
 - [[wiki/sources/formacao-ia-devs-aula-03-skills]]
 - [[wiki/sources/formacao-ia-devs-aula-02-rules]]
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
@@ -127,3 +137,5 @@ Skills podem conter scripts executáveis. **Skills de terceiros não verificadas
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]] — skill auto-gerada e auto-refinada por closed-loop skill learning system, limite de generalização por domínio
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — skill como camada de injeção de contexto acionada por título/descrição/keywords para combater alucinação de pacotes e forçar padrões internos da empresa; *Skill Creator* (skill que cria skills) e importação de skills da comunidade na [[wiki/entities/verdent-ai|Verdent]]
 - [[wiki/sources/guia-pratico-subagents-claude-code-configuracao-fork-invocacao]] — campo `skills` na configuração de um subagent customizado: pré-injeção explícita de skills relevantes ao papel do agente, ou bloqueio via `disallowedTools`
+- [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — skill que piora o modelo (relato, sem medição)
+- [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — avaliação de skills: loop de description e benchmark com/sem skill em Haiku vs. Opus

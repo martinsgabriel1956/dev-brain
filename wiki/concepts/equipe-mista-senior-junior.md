@@ -3,8 +3,8 @@ type: concept
 title: "Equipe Mista Sênior-Júnior"
 aliases: ["time misto", "pedreiro vs mestre de obras", "mix de senioridade"]
 date_created: 2026-08-26
-date_updated: 2026-09-22
-source_count: 2
+date_updated: 2026-09-30
+source_count: 4
 tags: [carreira, liderança, mentoria, contratação, senioridade, time]
 skill: tech-mentor-leadership
 status: stub
@@ -39,7 +39,17 @@ A mesma fonte reforça, num ângulo esportivo, por que times não deveriam sempr
 - [[wiki/concepts/feedback-continuo-diario]] — o ciclo que sustenta o crescimento do júnior dentro desse time
 - [[wiki/concepts/contratacao-barra-alta]] — decidir quem entra no time, sênior ou júnior, sem baixar o padrão
 
+## Custo de Interrupção do Sênior no Time Misto
+
+Num time misto o sênior é procurado com frequência; [[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] argumenta que perguntas vagas roubam o tempo dele, e que o júnior deve esgotar o [[wiki/concepts/ciclo-de-2-horas]] e perguntar com contexto ([[wiki/concepts/pergunta-bem-formulada]]) — com exceção de tarefas urgentes atribuídas a júnior/novato.
+
+## Lacuna: Júnior em Times Pequenos
+
+[[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]] defende times menores e multi-papel, mas não trata de como júniors aprendem nesse modelo; ponto em aberto frente a esta página. Ver [[wiki/concepts/multiplos-papeis-em-times-pequenos]].
+
 ## Key Sources
 
 - [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]]
 - [[wiki/sources/sobre-ser-gerente-fabio-akita]] — ciclo de sucessão (sênior cria sucessor antes de assumir novo projeto); crítica à terceirização como primeira opção; analogia esportiva de rotação de reservas
+- [[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] — interrupção do sênior e regra de pedir ajuda pelo júnior
+- [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]

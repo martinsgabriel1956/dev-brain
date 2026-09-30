@@ -3,8 +3,8 @@ type: concept
 title: "Atomic Commits"
 aliases: ["commit atômico", "commits pequenos", "PR pequeno", "unidade funcional de commit"]
 date_created: 2026-04-22
-date_updated: 2026-08-11
-source_count: 4
+date_updated: 2026-09-29
+source_count: 5
 tags: [git, commits, hábitos, craftsmanship, code-review, qualidade]
 skill: tech-mentor-leadership
 status: stable
@@ -73,9 +73,14 @@ Não existe número mágico de linhas, mas o princípio é: **um PR deve ser rev
 - [[testar-proprio-codigo]] — teste vai junto no mesmo commit
 - [[wiki/concepts/rebase-vs-merge]] — mecânica de rebase e squash usada para chegar a commits atômicos
 
+## Commits atômicos como ferramenta de planejamento
+
+[[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] vê os commits atômicos como forma de **forçar o planejamento**: mapear de antemão o conjunto exato de commits pequenos obriga a decompor a tarefa; o custo é pago "em moeda mental" no início ([[wiki/concepts/pensar-na-hora-certa]]). O apresentador prefere o menor commit possível para facilitar `cherry-pick`, independentemente de squash/rebase/merge, e observa que dividir a tarefa não depende de como se usa o Git.
+
 ## Key Sources
 
 - [[wiki/sources/habitos-ruins-de-programador]]
 - [[wiki/sources/4-habitos-programador-ineficiente]]
 - [[wiki/sources/git-rebase-na-pratica]] — demonstração prática de rebase e histórico linear
 - [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] — um-arquivo-um-commit como facilitador de conflitos de rebase num fluxo só-main
+- [[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] — planejamento via commits atômicos; menor commit para cherry-pick

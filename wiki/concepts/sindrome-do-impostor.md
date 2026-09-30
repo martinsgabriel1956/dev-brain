@@ -3,8 +3,8 @@ type: concept
 title: "Síndrome do Impostor"
 aliases: ["impostor syndrome", "medo de ser descoberto", "sensação de fraude"]
 date_created: 2026-07-03
-date_updated: 2026-09-23
-source_count: 7
+date_updated: 2026-09-29
+source_count: 8
 tags: [carreira, saúde-mental, júnior, inteligência-emocional]
 skill: tech-mentor-leadership
 status: draft
@@ -56,6 +56,10 @@ Isso conecta com [[wiki/concepts/persistencia-em-processo-seletivo]] numa sequê
 - [[wiki/concepts/maturidade-tecnica]] — capacidade de extrair aprendizado mesmo de situações adversas
 - [[wiki/concepts/relacao-criador-criatura]] — variante da mesma família: em vez de sentir-se fraude apesar da própria competência, a pessoa infla a competência alheia (colocando-a num pedestal) a ponto de anular a percepção da própria capacidade
 
+## Medo de Perguntar Como Alimento do Silêncio
+
+[[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] associa o medo de "parecer incompetente" ao extremo de **nunca pedir ajuda** (estourar prazo em silêncio) e propõe um método objetivo ([[wiki/concepts/ciclo-de-2-horas]]) para substituir a decisão emocional de "perguntar ou não". Ver [[wiki/concepts/equilibrio-ao-pedir-ajuda]]. Não é evidência clínica; é observação do apresentador.
+
 ## Key Sources
 
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]]
@@ -65,3 +69,4 @@ Isso conecta com [[wiki/concepts/persistencia-em-processo-seletivo]] numa sequê
 - [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — mesma lógica de "estado provisório" aplicada à reprovação em processo seletivo, com recomendação de perguntar quando tentar de novo
 - [[wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub]] — variante anterior no tempo: medo de aplicar para a vaga, antes mesmo de existir reprovação; recomendação de agir apesar da sensação de despreparo permanente
 - [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] — autor trata a subestimação como hábito mental corrigível que atinge júnior, pleno e sênior; ver [[wiki/concepts/palco-vs-bastidores]]
+- [[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] — medo de perguntar e o ciclo de 2 horas como método

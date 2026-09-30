@@ -3,8 +3,8 @@ type: concept
 title: "Eficácia vs. Eficiência"
 aliases: ["effective vs efficient", "fazer a coisa certa vs fazer certo a coisa"]
 date_created: 2026-07-04
-date_updated: 2026-07-19
-source_count: 2
+date_updated: 2026-09-29
+source_count: 3
 tags: [produtividade, priorizacao, carreira, tomada-de-decisao]
 skill: tech-mentor-leadership
 status: draft
@@ -38,3 +38,4 @@ Inverter essa ordem — otimizar a execução antes de validar se a tarefa é a 
 
 - [[wiki/sources/produtividade-falsa-vs-verdadeira]]
 - [[wiki/sources/sistema-produtividade-ia-adapta]]
+- [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — fazer a coisa certa (problema real) antes de adotar a tecnologia da moda — [[wiki/concepts/problema-antes-da-tecnologia]]

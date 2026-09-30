@@ -3,8 +3,8 @@ type: entity
 title: "Bernardo Lobato"
 aliases: ["Bernardo Lobato"]
 date_created: 2026-06-05
-date_updated: 2026-09-15
-source_count: 16
+date_updated: 2026-09-30
+source_count: 18
 tags: [arquitetura-software, segurança, criador-de-conteudo, youtube, backend]
 skill: tech-mentor-security
 status: stub
@@ -32,3 +32,5 @@ Desenvolvedor e criador de conteúdo brasileiro. Publica vídeos toda sexta-feir
 - [[wiki/sources/historia-oauth2-antipadrao-senha-bernardo-lobato]] — vídeo da série sobre OAuth/OIDC/JWT dedicado à origem histórica do OAuth: antipadrão da senha nomeado, Blaine Cook (Twitter) e Larry Halff (Magnolia) como criadores, linha do tempo RFC 5849 (OAuth 1.0) → RFC 6749 (OAuth 2.0), quatro pilares, grant types e token opaco vs. autoassinado
 - [[wiki/sources/jose-jws-jwe-jwk-jwa-algorithm-confusion-paseto]] — "Anatomia de um Token 2": ecossistema JOSE (JWS/JWE/JWK/JWA) por trás do JWT, o ataque de algorithm confusion (`alg: none`, caso Tim McLean 2015, variante RS256→HS256) e o PASETO como alternativa de cipher rigidity
 - [[wiki/sources/anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato]] — "Anatomia de um Token 1", predecessor direto do vídeo acima: distinção formal token opaco vs. autocontido, geração segura via CSPRNG (256 bits), token vs. ID, session token e API key, introdução superficial ao JOSE, e o CWT (CBOR Web Token) para IoT
+- [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — quarto vídeo da série *Dominando DDD*: bounded context como limite linguístico/semântico, exemplo Produto em Vendas vs. Suporte, distinção de subdomínio e linguagem ubíqua, prévia de Shared Kernel/Customer-Supplier/Conformist/ACL
+- [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — vídeo introdutório às arquiteturas distribuídas: comunicação síncrona vs. assíncrona, três formas (polling por ID, webhook, mensageria), exemplo de pedidos e três desafios (debug, garantia de entrega, consistência eventual)

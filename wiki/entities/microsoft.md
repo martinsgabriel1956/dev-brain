@@ -3,8 +3,8 @@ type: entity
 title: "Microsoft"
 aliases: []
 date_created: 2026-07-16
-date_updated: 2026-08-21
-source_count: 7
+date_updated: 2026-09-29
+source_count: 8
 tags: [empresa, custo-ia, token-economics, demissao, capital-de-tokens]
 skill: tech-mentor-ai
 status: stub
@@ -34,8 +34,13 @@ Citada, junto com Google e Apple, como uma das big techs que adotaram em massa o
 
 [[wiki/sources/seedwork-martin-fowler]] (2003) cita o "DLL-hell" da Microsoft — bibliotecas compartilhadas do Windows que quebravam quando versões diferentes, atualizadas em cronogramas distintos, entravam em conflito — como prova de que mesmo reuso de código maduro (não só o [[wiki/concepts/seedwork|seedwork]] improvisado) é difícil de acertar na prática. Décadas antes da economia de IA descrita nas demais fontes desta entity, é o mesmo tipo de problema estrutural de versionamento que hoje aparece em discussões de [[wiki/concepts/schema-evolution|schema evolution]] e contratos de API.
 
+## Azure
+
+Azure citado (transcrição "Acer") entre os hyperscalers do imaginário de "ir para a nuvem" ([[wiki/concepts/cloud-como-modelo-de-consumo]]).
+
 ## Key Sources
 
+- [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — Azure entre os hyperscalers do imaginário de nuvem
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]]
 - [[wiki/sources/seedwork-martin-fowler]] — "DLL-hell" como exemplo histórico de dificuldade de versionamento em reuso de bibliotecas compartilhadas
 - [[wiki/sources/openid-connect-oidc-autenticacao-alem-do-oauth]] — adotante em massa do OpenID Connect

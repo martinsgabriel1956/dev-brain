@@ -3,8 +3,8 @@ type: concept
 title: "Kernel"
 aliases: ["kernel", "núcleo do SO", "kernel mode", "ring 0"]
 date_created: 2026-04-22
-date_updated: 2026-07-20
-source_count: 3
+date_updated: 2026-09-30
+source_count: 4
 tags: [sistema-operacional, kernel, cs-fundamentals]
 skill: cs-fundamentals
 status: stable
@@ -69,8 +69,13 @@ Para o contexto de propósito/mercado de cada SO que roda um destes kernels (nã
 - [[concepts/processo]] — kernel cria e gerencia processos
 - [[concepts/memoria-virtual]] — kernel mantém as page tables
 
+## Kernel e a line discipline
+
+[[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]]: cada tecla digitada vai ao kernel e volta (echo) pela [[wiki/concepts/line-discipline]], que também faz buffer/edição de linha antes de entregar dados a um processo; PTY master/slave são arquivos especiais tratados pelo kernel ([[wiki/concepts/pty-pseudoterminal]]).
+
 ## Key Sources
 
+- [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — line discipline e PTY como serviços do kernel
 - [[sources/sistema-operacional-por-baixo-dos-panos]]
 - [[sources/como-sistemas-operacionais-funcionam]]
 - [[wiki/sources/8-sistemas-operacionais-explicados]] — panorama comparativo de propósito/mercado dos SOs que rodam sobre estes kernels

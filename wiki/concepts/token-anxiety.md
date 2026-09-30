@@ -3,8 +3,8 @@ type: concept
 title: "Token Anxiety"
 aliases: ["ansiedade de token", "token ansiedade"]
 date_created: 2026-05-18
-date_updated: 2026-06-09
-source_count: 3
+date_updated: 2026-09-29
+source_count: 4
 tags: [agentes-ia, comportamento, produtividade, burnout, llmops, token-economics, era-agentica]
 skill: tech-mentor-ai
 status: draft
@@ -66,6 +66,8 @@ Há uma camada adicional de ansiedade para devs que escrevem em português: alé
 
 ## Key Sources
 
+
+- [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — variante do desconforto de ficar parado vendo a IA programar (ansiedade que aumenta ao tomar café) e a dúvida sobre produtividade real
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
 - [[wiki/sources/ia-custo-roi-bolha-ou-realidade]]
 - [[wiki/sources/custo-tokens-portugues-vs-ingles]]

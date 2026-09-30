@@ -3,8 +3,8 @@ type: concept
 title: "Closed-Loop Skill Learning System"
 aliases: ["learning loop de agente", "skill learning loop", "auto-geração de skills"]
 date_created: 2026-07-21
-date_updated: 2026-07-21
-source_count: 1
+date_updated: 2026-09-29
+source_count: 3
 tags: [tech-mentor-ai, learning-loop, skills-agente, hooks-agente, hermes-agent, pattern-extraction]
 skill: tech-mentor-ai
 status: draft
@@ -37,6 +37,16 @@ Skills geradas por este loop nascem **super específicas** — ex.: "sumarizar u
 - [[wiki/concepts/hooks-agente]] — mecanismo hoje disponível para implementar manualmente as etapas 2–4 antes de existir automação dedicada
 - [[wiki/concepts/harness]] — o loop é um recurso de harness, comparável a "dream consolidation" já citado em [[wiki/entities/claude-code]]
 
+## Aplicação à Retrospectiva de Erros
+
+[[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] pergunta como dar feedback à IA para que erros não se repitam; loops que convertem falhas em skills são uma resposta plausível (inferência). Ver [[wiki/concepts/retrospectiva-de-erros-de-ia]].
+
+## Contraponto Manual: Avaliação Guiada de Skills
+
+[[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] mostra a versão semiautomática do refinamento de skills: o [[wiki/entities/skill-creator]] itera a description e o desenvolvedor lê o relatório de falhas para ajustar o corpo — humano no laço, ao contrário do loop totalmente automático do Hermes. Ver [[wiki/concepts/avaliacao-de-skills]].
+
 ## Key sources
 
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]]
+- [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — resposta plausível à retrospectiva de erros de IA
+- [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — refinamento de skill com humano no laço via skill-creator

@@ -3,8 +3,8 @@ type: concept
 title: "DDoS e SYN Flood"
 aliases: ["syn flood", "ddos", "denial of service distribuído", "under attack mode"]
 date_created: 2026-07-31
-date_updated: 2026-08-06
-source_count: 2
+date_updated: 2026-09-30
+source_count: 3
 tags: [ddos, syn-flood, tcp, cloudflare, under-attack-mode, syn-cookies, seguranca, rede]
 skill: tech-mentor-security
 status: draft
@@ -51,7 +51,12 @@ Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] �
 5. SYN cookies habilitados no kernel.
 6. Monitoramento de RAM do proxy, contagem de processos e sockets TCP abertos — permite detectar o ataque antes da perda total de acesso.
 
+## Nota: ICMP também vira alvo
+
+Tráfego ICMP não solicitado é comum em interfaces expostas ([[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]]); filtrar por tipo é a defesa mínima — ver [[wiki/concepts/icmp]].
+
 ## Key sources
 
 - [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]]
 - [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — 157 tentativas maliciosas bloqueadas, precursor ao incidente acima
+- [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]] — ICMP não solicitado e filtragem por tipo

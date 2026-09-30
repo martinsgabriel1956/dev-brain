@@ -3,8 +3,8 @@ type: concept
 title: "Comprehension Debt"
 aliases: ["comprehension debt", "dívida de compreensão", "dívida cognitiva código ia"]
 date_created: 2026-04-23
-date_updated: 2026-08-03
-source_count: 5
+date_updated: 2026-09-30
+source_count: 6
 tags: [ia, agentes, qualidade, ownership, cognição, divida-tecnica]
 skill: tech-mentor-ai
 status: stable
@@ -47,8 +47,13 @@ A promessa de estar "quase lá" é o hook psicológico. Cada iteração adiciona
 
 [[wiki/sources/cinco-escolas-programacao-com-ia]] cita o mesmo fenômeno sob o nome "dívida de compreensão", atribuindo-o a Addy Osmani (Google). A wiki já registra, a partir da fonte primária ([[wiki/sources/addy-osmani-80-problem-agentic-coding]]), que quem **cunhou** o termo foi Jeremy Twei — Osmani é o autor do artigo que **popularizou** o conceito. Não é uma contradição de fato (cunhar ≠ popularizar), mas a nova fonte reforça que a atribuição a Osmani, isoladamente, tende a se espalhar de forma imprecisa — vale manter a distinção cunhagem/popularização explícita em fontes futuras.
 
+## Caso: 10 mil linhas geradas por agentes, dois meses para entender
+
+[[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]]: [[wiki/entities/otavio-miranda]] fez um MVP inteiro por agentes (34 issues auditadas, orquestrador/writer/reviewer) e acordou com um monorepo "perfeito" que ele não tocou; só ao tentar gravar um vídeo explicando notou que não entendia o código — e a saída foi ler/revisar. Sugestão prática dele: explicar a alguém (ou gravar-se) como teste de entendimento. Ver [[wiki/concepts/auditoria-de-issue-por-agente-de-contexto-limpo]].
+
 ## Key Sources
 
+- [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — caso pessoal: gerou 10 mil linhas por agente e levou ~2 meses para entender
 - [[sources/addy-osmani-80-problem-agentic-coding]]
 - [[sources/erros-workflow-research-plan-implement]] — não ler o código durante o research é o caminho direto para comprehension debt
 - [[sources/context-engineering-avancado-para-coding-agents]] — mental alignment como antídoto coletivo

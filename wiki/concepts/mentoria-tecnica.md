@@ -3,8 +3,8 @@ type: concept
 title: "Mentoria Técnica"
 aliases: ["mentoring", "mentorar júniors", "replicar conhecimento"]
 date_created: 2026-04-22
-date_updated: 2026-09-22
-source_count: 10
+date_updated: 2026-09-30
+source_count: 12
 tags: [carreira, mentoria, liderança, júnior, cultura, crescimento]
 skill: tech-mentor-leadership
 status: stable
@@ -81,6 +81,14 @@ Falta de tempo, não má vontade, costuma ser a causa de comentários secos ou p
 - [[wiki/concepts/sindrome-do-impostor]] — o que a ausência de mentoria alimenta no júnior
 - [[wiki/concepts/comunidade-tecnica]] — mentoria/ensino generalizado para a escala de comunidade, com o ciclo de retribuição como mecanismo central
 
+## O Lado do Mentorado: Perguntar Bem
+
+[[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] descreve o outro lado da mentoria: como o júnior deve chegar ao sênior. Uma pergunta bem formulada ([[wiki/concepts/pergunta-bem-formulada]]) — contexto, erro exato, o que já tentou — respeita o tempo do sênior e permite mentorar o raciocínio em vez de só entregar resposta; a fonte não trata do papel do sênior ao responder. Ver [[wiki/concepts/equilibrio-ao-pedir-ajuda]].
+
+## Ensinar Quem Está Embaixo Como Expectativa do Sênior
+
+[[wiki/entities/andre-casciotti]] inclui, no perfil esperado de sênior, ajudar quem está abaixo a subir, não "dando chinelada" mas ensinando, guiando e mostrando o caminho. Ver [[wiki/concepts/subniveis-de-senioridade]].
+
 ## Key Sources
 
 - [[wiki/sources/desenvolvedor-acima-da-media-10-itens]]
@@ -93,3 +101,5 @@ Falta de tempo, não má vontade, costuma ser a causa de comentários secos ou p
 - [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]] — mentoria tratada como produto/sistema: plataforma própria de agendamento e dashboard de jornada do mentorado, construídos para resolver dores reais de visibilidade e pagamento
 - [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]] — mentoria como filtro de opções (sênior já testou 20, sabe que só 2 valem a pena) e feedback diário/específico como mecanismo central
 - [[wiki/sources/sobre-ser-gerente-fabio-akita]] — criar sucessor interno como pré-requisito para o sênior assumir novo projeto; ausência disso transforma mentoria em gargalo estrutural
+- [[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] — perguntar bem como contrapartida do mentorado
+- [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]

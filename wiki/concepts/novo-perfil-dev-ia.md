@@ -3,8 +3,8 @@ type: concept
 title: "Novo Perfil do Desenvolvedor na Era da IA"
 aliases: ["dev ia", "engenheiro ia 2026", "novo dev", "perfil profissional ia"]
 date_created: 2026-06-02
-date_updated: 2026-09-14
-source_count: 11
+date_updated: 2026-09-29
+source_count: 12
 tags: [carreira, perfil-profissional, ia-para-devs, arquitetura, planejamento]
 skill: tech-mentor-ai
 status: draft
@@ -84,6 +84,10 @@ O conceito descrito aqui ganhou nome formal confirmado por dados de campo do Val
 
 [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] contribui um dado de campo consistente com esta página vindo de startups (não do Vale do Silício especificamente, mas do mesmo tipo de empresa nativa de IA): quando pessoas não técnicas passam a "shipar" diretamente (ver [[wiki/concepts/everyone-ships]]), o valor do engenheiro sênior se concentra ainda mais em revisão de pull request — reforçando, de outro ângulo, a tese já registrada nesta página de convergência entre execução e julgamento.
 
+## Migração, Não Extinção
+
+[[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]]: "não é uma fase de extinção do desenvolvedor, é uma fase de migração" — mudança de paradigma em que surgem mais preocupações (qualidade, esteira, feedback à IA), e o conhecimento *enterprise* correspondente ainda não chegou aos cursos. Ver [[wiki/concepts/valor-do-codigo-com-tempo-achatado]].
+
 ## Key Sources
 
 - [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] — "everyone ships" como reforço de campo à tese de deslocamento para julgamento/revisão
@@ -97,3 +101,4 @@ O conceito descrito aqui ganhou nome formal confirmado por dados de campo do Val
 - [[wiki/sources/formacao-ia-devs-aula-01-abertura]]
 - [[wiki/sources/product-engineer-vale-do-silicio-2026]]
 - [[wiki/sources/impacto-ia-mercado-frontend]]
+- [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — migração (não extinção) e novas preocupações

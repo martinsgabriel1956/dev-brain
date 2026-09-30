@@ -3,8 +3,8 @@ type: concept
 title: "Eventual Consistency"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-23
-source_count: 7
+date_updated: 2026-09-30
+source_count: 8
 tags: [eventual-consistency]
 skill: tech-mentor-system-design
 status: stub
@@ -26,6 +26,10 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a partir do texto das páginas que a citam. Precisa de fonte dedicada para virar `draft`/`stable`.
 
+## Consistência Eventual como Custo da Comunicação Assíncrona
+
+Terceiro desafio da [[wiki/concepts/comunicacao-assincrona]] segundo [[wiki/entities/bernardo-lobato]]: um pedido e um pagamento em serviços distintos podem divergir enquanto a mudança de status se propaga, e uma consulta pode devolver dado desatualizado. Ponto prático: é preciso alinhar com liderança/cliente que o sistema não será consistente o tempo inteiro.
+
 ## Key sources
 
 - [[wiki/sources/cap-pacelc-consistencia]]
@@ -35,3 +39,4 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 - [[wiki/sources/quorum]]
 - [[wiki/sources/vector-clocks]]
 - [[wiki/sources/github-2018-cap-pacelc-particao-video]] — leitura local no nó isolado devolve dado pré-partição; divergência de escritas no GitHub 2018
+- [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — exemplo pedido/pagamento: dado desatualizado entre serviços; "vender" o modelo à liderança

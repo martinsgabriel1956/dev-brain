@@ -3,8 +3,8 @@ type: concept
 title: "Big O"
 aliases: ["complexidade de algoritmos", "Big-O notation", "O(n)", "complexidade assintótica"]
 date_created: 2026-06-26
-date_updated: 2026-09-03
-source_count: 16
+date_updated: 2026-09-29
+source_count: 17
 tags: [cs-fundamentals, algoritmos, big-o, complexidade, performance]
 skill: cs-fundamentals
 status: draft
@@ -119,3 +119,4 @@ O(1) pode ser mais lento que O(n) para entradas pequenas se a constante for gran
 - [[wiki/sources/algoritmos-de-ordenacao-bubble-insertion-selection-merge-quicksort-heapsort]] — seis algoritmos de ordenação com mecanismo passo a passo (Selection Sort, Quicksort com pivô e Heapsort novos para a wiki), sem análise assintótica formal na própria fonte — complexidades vêm da skill `cs-fundamentals`
 - [[wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization]] — custo de recursão sem TCO enquadrado como custo de alocação de call stack, não como diferença assintótica de complexidade
 - [[wiki/sources/como-calcular-complexidade-de-algoritmos-big-o-em-3-passos]] — método operacional de 3 passos (achar loops → checar complexidade de funções nativas via documentação → descartar constantes); heurística de 10⁷–10⁸ operações/segundo para prever se uma solução passa dentro do limite de tempo; segundo exemplo concreto de `sort()` tornando uma solução "mais curta" assintoticamente pior
+- [[wiki/sources/ordenacao-selection-quicksort-bubble-sort-live-coding]] — Selection Sort como exemplo de `for` dentro de `for` = O(n²); regra de descarte de constantes ([[wiki/concepts/descarte-de-constantes-big-o]]); quadro ilustrativo de tempos a 10 ops/s para n = 1000 (O(log n) ≈ 1 s … O(n²) ≈ 27 h); ressalva de que o hardware invalida tempos absolutos

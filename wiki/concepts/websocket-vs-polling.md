@@ -3,8 +3,8 @@ type: concept
 title: "WebSocket vs Polling"
 aliases: ["websocket", "long polling", "http polling", "sse"]
 date_created: 2026-04-22
-date_updated: 2026-09-22
-source_count: 5
+date_updated: 2026-09-30
+source_count: 7
 tags: [system-design, websocket, realtime, protocolo, chat]
 skill: tech-mentor-system-design
 status: stable
@@ -52,10 +52,20 @@ Alternativa unidirecional (server → client apenas). Mais simples que WebSocket
 
 Para sistemas com poucos usuários simultâneos e tolerância a delay de segundos (relatório pronto para download, notificação não-crítica), polling simples é a resposta correta em entrevista: menor complexidade, sem infraestrutura extra, sem WebSocket. O erro comum é o oposto — meter WebSocket num sistema de baixa escala só para "parecer" mais robusto. Ver [[wiki/sources/updates-tempo-real-polling-sse-websocket]] para a moldura completa de "que pergunta o entrevistador está realmente fazendo" (escala horizontal, comunicação entre servidores, usuário offline) e por que WebSocket exige [[wiki/concepts/load-balancer|load balancer de camada 4]], nunca de camada 7.
 
+## WebSocket em produção: segurança e backpressure
+
+[[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]]: WebSocket é contínuo/stateful (vs. request/response stateless), o que muda a autenticação ([[wiki/concepts/ticket-de-uso-unico-websocket]]) e exige **backpressure** entre WebSocket e SSH; o terminal web envia cada tecla e resize como mensagem ([[wiki/concepts/terminal-web-broker-websocket-ssh]]).
+
+## Polling como Forma de Assíncrono
+
+Polling de um endpoint de status com um ID de operação é uma das três formas de [[wiki/concepts/comunicacao-assincrona]] em [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]]; ver [[wiki/concepts/async-request-reply]].
+
 ## Key Sources
 
+- [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — WebSocket com ticket, sem cookies; backpressure WebSocket↔SSH
 - [[wiki/sources/presence-system]] — Sistema de presença (online/offline) usa Heartbeat + Redis TTL: cliente envia ping a cada 15s, servidor atualiza `presence:{userId}` com SETEX 30s. Se TTL expirar, usuário está offline. Para...
 - [[sources/case-whatsapp]]
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — implementação prática de SSE e long polling, erros comuns de produção
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — quando polling é a resposta certa em entrevista; LB L4 vs L7; erros mais comuns
 - [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] — WhatsApp citado como exemplo de arquitetura que exige LB de camada 4 por usar WebSocket (vídeo dedicado à arquitetura completa ainda não ingerido)
+- [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — polling por ID de operação como forma de assíncrono

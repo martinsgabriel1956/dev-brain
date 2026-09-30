@@ -3,8 +3,8 @@ type: concept
 title: "Reverse Proxy"
 aliases: ["proxy reverso", "reverse proxy", "web server como proxy"]
 date_created: 2026-07-20
-date_updated: 2026-08-06
-source_count: 3
+date_updated: 2026-09-30
+source_count: 5
 tags: [nginx, reverse-proxy, infra, deploy, web-server, traefik, coolify, auto-update, disponibilidade]
 skill: tech-mentor-infra
 status: stub
@@ -35,8 +35,18 @@ Usuário → Nginx (porta 80) → app na porta 3001 (blue) ou 3002 (green)
 3. A troca de tráfego é só uma edição da configuração do proxy (`proxy_pass` apontando para a outra porta) seguida de reload — nenhum processo é criado ou destruído nesse passo.
 4. A versão antiga fica de pé por um tempo depois da troca, permitindo rollback instantâneo (reverter a config do proxy de volta).
 
+## Traefik como proxy reverso do OMXTerm
+
+[[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]]: [[wiki/entities/traefik]] termina HTTPS (Let's Encrypt), aplica rate limit e roda em rede Docker com IP fixo, para o UFW reconhecer o tráfego interno ([[wiki/concepts/allowlist-de-destino-ssh]]).
+
+## Contraste: forward proxy
+
+O reverse proxy age pelo servidor; o [[wiki/concepts/forward-proxy]] age pelo cliente, como no [[wiki/entities/icmp-browser]] ([[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]]).
+
 ## Key Sources
 
+- [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — Traefik + Let's Encrypt + rate limit em Docker
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]] — demo prática de reverse proxy com swap manual entre duas portas via script, sem load balancing real entre elas
 - [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]] — auto-update de proxy (Traefik via Coolify) como causa raiz de um bug de CPU/memory leak que agravou um SYN flood
 - [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] — Nginx citado como exemplo de reverse proxy/LB HTTP com Round Robin como algoritmo padrão (afirmação repetida na fonte, ainda não verificada contra a documentação oficial)
+- [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]] — contraste com forward proxy

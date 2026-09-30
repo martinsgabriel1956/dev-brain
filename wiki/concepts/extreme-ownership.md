@@ -3,8 +3,8 @@ type: concept
 title: "Extreme Ownership"
 aliases: ["ownership extremo", "Jocko Willink", "responsabilidade total"]
 date_created: 2026-04-22
-date_updated: 2026-09-21
-source_count: 4
+date_updated: 2026-09-30
+source_count: 5
 tags: [liderança, carreira, responsabilidade, ego, ownership]
 skill: tech-mentor-leadership
 status: stable
@@ -63,9 +63,14 @@ Sêniors e tech leads que praticam extreme ownership constroem confiança mais r
 
 [[wiki/sources/como-lidar-com-politica-empresarial-lideranca-engenharia]] descreve um caso limite que não contradiz o princípio central desta página, mas marca seu limite prático: o autor relata ter tentado melhorar processos em áreas fora do próprio escopo formal como Engineering Manager recém-promovido, e ter sido reportado por "meter o nariz onde não é chamado". A diferença não é de princípio — é de capital político: extreme ownership funciona bem dentro do escopo pelo qual alguém já é responsável (ver "Aplicação em times de desenvolvimento" acima); estender a mesma postura para áreas de outras pessoas sem relacionamento e credibilidade construídos antes tende a ser lido como invasão, não como liderança. Ver [[wiki/concepts/politica-organizacional]] para o mecanismo completo.
 
+## Ownership no Discurso de Times Menores
+
+[[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]] usa "ownership" (termo em inglês, sem citar Willink) como o traço que separa o sênior por resultado do "sênior do papel". Ver [[wiki/concepts/contexto-concentrado-como-valor]].
+
 ## Key Sources
 
 - [[wiki/sources/como-lidar-com-politica-empresarial-lideranca-engenharia]] — overreach de ownership fora do próprio escopo, sem capital político prévio, gerando resistência em vez de mudança
 - [[wiki/sources/desenvolvedor-acima-da-media-10-itens]]
 - [[wiki/sources/potencial-programador-atitude-mindset]] — versão cotidiana do princípio: assumir a responsabilidade pela própria entrega e se desbloquear sozinho, ligada a [[wiki/concepts/ownership-proativo]]
 - [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] — cuidar do resultado ("se importar") como traço mais raro e mais difícil de ensinar do que habilidade técnica
+- [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]

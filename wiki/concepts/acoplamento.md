@@ -3,8 +3,8 @@ type: concept
 title: "Acoplamento"
 aliases: ["coupling", "baixo acoplamento", "alto acoplamento"]
 date_created: 2026-04-25
-date_updated: 2026-08-23
-source_count: 11
+date_updated: 2026-09-30
+source_count: 13
 tags: [acoplamento, software-design, clean-code, arquitetura, under-engineering]
 skill: tech-mentor-backend
 status: stable
@@ -98,6 +98,14 @@ Sobre medição, apresenta as métricas de [[wiki/entities/uncle-bob|Robert C. M
 - [[coesao]] — conceito complementar: coesão alta dentro de um módulo + acoplamento baixo entre módulos é o alvo
 - [[efeito-colateral]] — funções com efeitos colaterais ocultos aumentam o acoplamento implícito
 
+## Acoplamento entre Times via Modelos Duplicados por Contexto
+
+[[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]]: duas classes "Produto" (Vendas e Suporte) em vez de uma compartilhada evitam acoplar o contexto de suporte a funcionalidades de vendas; em sistemas com muitos times, isso reduz o acoplamento entre módulos/times. Trade-off (inferência, não discutido na fonte): a duplicação exige tradução/sincronização entre modelos. Ver [[wiki/concepts/bounded-context]].
+
+## Acoplamento Síncrono vs. Assíncrono
+
+Em [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]]: [[wiki/concepts/comunicacao-sincrona]] gera acoplamento forte (mudança ou lentidão em um serviço afeta o outro; exemplo: serviço de autenticação), enquanto [[wiki/concepts/comunicacao-assincrona]] o enfraquece, sobretudo no eixo temporal ([[wiki/concepts/temporal-coupling]]).
+
 ## Key sources
 
 - [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]] — taxonomia (6 tipos + 2 categorias) e as métricas de Uncle Bob (aferente/eferente, abstração A, instabilidade I, distância D, zonas de dor/inutilidade)
@@ -111,3 +119,5 @@ Sobre medição, apresenta as métricas de [[wiki/entities/uncle-bob|Robert C. M
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — feature envy como acoplamento "content" atravessando classes; god object como acoplamento resolvido via composição
 - [[wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado]] — dependência forte entre sistema novo e legado; dependência escondida via configuração dinâmica ou reflection em runtime
 - [[wiki/sources/classes-vs-estruturas-de-dados-uncle-bob]] — direção da dependência de arquivo-fonte como manifestação concreta de acoplamento: `switch` sobre união discriminada acopla quem chama a cada implementação (recompilação em cascata); polimorfismo com interface inverte essa direção ([[wiki/concepts/dependency-inversion-principle]])
+- [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — modelos duplicados por contexto reduzem acoplamento entre times
+- [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — acoplamento forte na síncrona vs. fraco na assíncrona (exemplo de autenticação)

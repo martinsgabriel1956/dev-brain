@@ -3,8 +3,8 @@ type: concept
 title: "Checkpoints e Rewind (Claude Code)"
 aliases: ["rewind", "checkpoints claude code", "/rewind"]
 date_created: 2026-07-21
-date_updated: 2026-07-21
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [claude-code, checkpoints, rewind, versionamento, agente-ia]
 skill: tech-mentor-ai
 status: draft
@@ -29,6 +29,11 @@ O Git permite reverter para um commit específico, mas commits marcam pontos dis
 
 Complementar, não substituto: commits continuam sendo a forma durável de versionar o código entre sessões. O rewind atua dentro do ciclo de vida de uma única conversa/sessão.
 
+## Rewind vs. Fork
+
+O rewind volta a um ponto anterior da **mesma** conversa; o [[wiki/concepts/fork-de-sessao-claude-code]] mantém dois caminhos vivos a partir de um ponto, sem descartar nenhum.
+
 ## Key Sources
 
 - [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]]
+- [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — contraste rewind x fork

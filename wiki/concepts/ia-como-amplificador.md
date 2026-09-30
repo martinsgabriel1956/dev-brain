@@ -3,8 +3,8 @@ type: concept
 title: "IA como Amplificador (sem julgamento)"
 aliases: ["ia amplificador", "ai as amplifier", "amplificador sem julgamento"]
 date_created: 2026-08-10
-date_updated: 2026-09-28
-source_count: 7
+date_updated: 2026-09-30
+source_count: 9
 tags: [ia-produtividade, seniority, codigo-legado, code-review, julgamento]
 skill: tech-mentor-leadership
 status: draft
@@ -60,6 +60,14 @@ O diferencial deixa de ser "escrever rápido" e passa a ser **julgar o que foi g
 
 [[wiki/sources/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico]] introduz uma tensão parcial com a tese central desta página. Se a IA amplifica o julgamento existente, o julgamento (portável, pertence à pessoa) deveria continuar sendo o fator dominante de valor entre empregos. Mas a fonte argumenta que parte do resultado também depende do *acesso* específico à ferramenta (modelo, contexto, configuração fornecidos pelo empregador) — algo que não é portável da mesma forma. Detalhado em [[wiki/concepts/portabilidade-de-valor-profissional-na-era-da-ia]].
 
+## Conhecimento Como Multiplicador de Valor
+
+[[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]]: com o código gerado por LLM, "quanto mais conhecimento você tem, mais valor" saber codar e debugar ganha; e bons testes exigem conhecimento técnico e de negócio do dev, não só delegação. Ver [[wiki/concepts/valor-do-codigo-com-tempo-achatado]].
+
+## Amplificação de Quem Acumula Contexto
+
+[[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]] sugere que o julgamento amplificado pela IA é o de quem concentra contexto (dev + PM + PO). Ver [[wiki/concepts/contexto-concentrado-como-valor]] e [[wiki/concepts/framework-compressao-cruzamento-valorizacao]].
+
 ## Key Sources
 
 - [[wiki/sources/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico]] — tensão entre julgamento (portável) e acesso à ferramenta (não portável) como dois componentes distintos do ganho amplificado
@@ -69,3 +77,5 @@ O diferencial deixa de ser "escrever rápido" e passa a ser **julgar o que foi g
 - [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — formulação "copiloto, não download do cérebro"; falso positivo quando o usuário não sabe o que pedir
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — devs júnior com acesso total a IA ainda cometem erros de júnior; amplificação de velocidade sem substituir julgamento
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] — formulação direta a devs iniciantes: "a IA acelera aquilo que você já faz"; quem programa bem entrega mais rápido, quem só faz código porcaria põe bug em produção mais rápido — usada para justificar que fundamentos ainda precisam ser estudados
+- [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — conhecimento como multiplicador; testes exigem conhecimento de negócio
+- [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]

@@ -3,8 +3,8 @@ type: concept
 title: "TCP Three-Way Handshake"
 aliases: ["handshake TCP", "SYN-SYN/ACK-ACK"]
 date_created: 2026-07-28
-date_updated: 2026-07-31
-source_count: 2
+date_updated: 2026-09-30
+source_count: 3
 tags: [rede, tcp, handshake, browser, critical-rendering-path, syn-flood, syn-cookies, seguranca]
 skill: tech-mentor-frontend
 status: draft
@@ -23,6 +23,11 @@ No fluxo de carregamento de uma página web, acontece depois da resolução [[wi
 
 O mesmo mecanismo que garante uma conexão confiável é o alvo de um [[wiki/concepts/ddos-syn-flood|SYN flood]]: o atacante envia o `SYN` inicial em massa e nunca responde ao `SYN-ACK` do servidor com o `ACK` final. Se o servidor reserva memória/socket assim que recebe cada `SYN`, uma fila de conexões "meio-abertas" cresce até esgotar recursos. **SYN cookies** resolvem isso adiando a alocação de memória até o terceiro passo do handshake de fato se completar — o servidor responde ao `SYN` com um `SYN-ACK` cujo número de sequência é derivado criptograficamente, sem guardar estado, e só materializa a conexão quando (e se) o `ACK` final confirma esse valor.
 
+## Contraste: transporte sem garantia
+
+[[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]]: o [[wiki/concepts/icmp]] não tem conexão, entrega garantida nem retransmissão; o autor precisa reordenar e aceitar perdas ([[wiki/concepts/remontagem-de-pacotes-fora-de-ordem]], [[wiki/concepts/fragmentacao-ip]]) — o que o TCP faz por padrão.
+
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
 - [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]]
+- [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]] — contraste TCP × ICMP

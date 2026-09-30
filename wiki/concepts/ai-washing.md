@@ -3,8 +3,8 @@ type: concept
 title: "AI Washing"
 aliases: ["ai washing", "ia como desculpa", "demissão por ia"]
 date_created: 2026-05-31
-date_updated: 2026-07-16
-source_count: 2
+date_updated: 2026-09-29
+source_count: 3
 tags: [ai-washing, organizacoes, demissao, roi-de-ia, etica-ia]
 skill: tech-mentor-ai
 status: stable
@@ -74,7 +74,12 @@ O contraste entre **59%** usando a narrativa e apenas **9%** relatando substitui
 
 Diferente do padrão GitLab (justificar sem recuar), o CEO da [[wiki/entities/meta]] admitiu publicamente, em memorando interno, que a empresa cometeu erros ao reestruturar equipes antecipando ganhos de agentes de IA que ainda não se confirmaram — reforçando que o ajuste de funcionários foi antecipado demais em relação ao real progresso da tecnologia. É um contraponto ao padrão típico de AI Washing: em vez de manter a narrativa, a empresa recuou publicamente da atribuição.
 
+## Leitura Institucional: Sinalizar Modernidade
+
+A fonte de isomorfismo institucional oferece uma explicação não maliciosa para parte do AI washing: sob incerteza, empresas anunciam projetos de IA para **sinalizar legitimidade** ([[wiki/concepts/isomorfismo-mimetico]]) — "mimetismo não é irracionalidade nem incompetência". Não confirma intenção enganosa; só que a sinalização pode ser motivo tão forte quanto o problema real.
+
 ## Key Sources
 
 - [[wiki/sources/ia-custo-roi-bolha-ou-realidade]]
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] — pesquisa Resume Templates (59%/9%/45%/45%) e caso Meta/Zuckerberg
+- [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — leitura institucional: anunciar projetos de IA para sinalizar legitimidade (mimetismo), não necessariamente por má-fé

@@ -3,8 +3,8 @@ type: concept
 title: "Gestor Deve Ter Sido Praticante"
 aliases: ["general que foi soldado", "treinador que foi jogador", "gestor técnico vs não técnico"]
 date_created: 2026-09-22
-date_updated: 2026-09-22
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [lideranca, gestao-de-projetos, engineering-management, respeito]
 skill: tech-mentor-leadership
 status: stub
@@ -28,6 +28,11 @@ Esta é uma tese forte, apresentada sem contraexemplos: existem gestores/executi
 - [[wiki/concepts/mentoria-tecnica]] — a forma que essa credibilidade técnica assume no dia a dia, quando o gestor também mentora
 - Segurança psicológica (Amy Edmondson) — confiança mútua como pré-condição para times de alta performance, framing complementar vindo da literatura formal de management; `[skill: tech-mentor-leadership]`, sem página própria na wiki ainda
 
+## Contraponto: Rollback Após Ir Para Gestão
+
+O autor conhece várias pessoas que "deram rollback" após virar gestor sem querer lidar com gestão de pessoas; defende escolher pelo que se gosta, não pelo crachá. Ver [[wiki/concepts/objetivos-de-carreira-explicitos]].
+
 ## Key Sources
 
 - [[wiki/sources/sobre-ser-gerente-fabio-akita]]
+- [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]

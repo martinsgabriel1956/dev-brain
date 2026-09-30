@@ -3,8 +3,8 @@ type: concept
 title: "CQRS — Command Query Responsibility Segregation"
 aliases: ["command query responsibility segregation", "cqrs pattern"]
 date_created: 2026-05-31
-date_updated: 2026-09-22
-source_count: 11
+date_updated: 2026-09-30
+source_count: 12
 tags: [cqrs, arquitetura, event-sourcing, ddd, sistemas-distribuidos]
 skill: tech-mentor-backend
 status: draft
@@ -145,6 +145,10 @@ Antes de separar em serviços/código-fonte distintos, a forma mais simples de C
 2. **Eventos via broker ([[wiki/concepts/event-driven-architecture|EDA]])** — Kafka, RabbitMQ, SNS/SQS. Diferente das réplicas, o query service pode transformar a informação no formato final que quiser ao consumir o evento (ex.: escrita relacional → leitura em Elasticsearch/Solr para busca textual/facetada). Risco explícito: o **[[wiki/concepts/dual-write-problem|bug da escrita dupla]]** — escrever na base e publicar o evento não são atômicos por padrão; ver [[wiki/concepts/outbox-pattern]] para a solução (transactional outbox), que essa fonte cita apenas de passagem.
 3. **Polling/job periódico** — o query service busca mudanças acumuladas de tempos em tempos (ex.: logs em S3, tabela temporária exposta via API), em vez de reagir em tempo real a cada mudança.
 
+## Pré-Requisito: Comunicação Assíncrona
+
+No vídeo [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]], CQRS é citado como um dos estilos a que a [[wiki/concepts/comunicacao-assincrona]] dá acesso, junto com Event Sourcing, EDA e microsserviços; o autor adia os detalhes. A consistência eventual descrita ali é o mesmo custo visto na sincronização write→read.
+
 ## Key Sources
 
 - [[wiki/sources/ddd-cqrs]] — CQRS separa o modelo de escrita (Command Side — Aggregate normalizado, regras de negócio) do modelo de leitura (Query Side — Read Model desnormalizado, otimizado para queries). Projeções sincronizam...
@@ -158,3 +162,4 @@ Antes de separar em serviços/código-fonte distintos, a forma mais simples de C
 - [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] — dois motivadores independentes (volume e modelo/assinatura); CQRS sem código-fonte separado (mesmo código, deployments com escala diferente); seis técnicas de sincronização organizadas em consistência forte (mesma base+views, transação cruzada, API Composition) vs. eventual (read replicas, eventos com bug da escrita dupla, polling)
 - [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — vídeo focado em Event Sourcing que recomenda CQRS como conteúdo complementar; não desenvolve CQRS diretamente, só reforça a proximidade entre os dois padrões
 - [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — caso real aplicando CQRS a um requisito de latência (não de modelagem): autorização de transação reduzida de ~10.000ms a 288ms P90 via materialização no write side
+- [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — CQRS listado como estilo que depende da comunicação assíncrona

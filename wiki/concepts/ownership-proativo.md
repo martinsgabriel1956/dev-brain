@@ -3,8 +3,8 @@ type: concept
 title: "Ownership Proativo"
 aliases: ["puxar responsabilidade", "proactive ownership", "projeto de alto impacto"]
 date_created: 2026-04-22
-date_updated: 2026-09-23
-source_count: 4
+date_updated: 2026-09-30
+source_count: 6
 tags: [carreira, senioridade, ownership, liderança, destaque]
 skill: tech-mentor-leadership
 status: stable
@@ -48,9 +48,19 @@ Puxar responsabilidade e não entregar é pior do que não puxar. Calibre a ambi
 - [[extreme-ownership]] — responsabilidade quando algo dá errado
 - [[dev-e-negocio]] — pré-requisito para identificar o que tem alto impacto
 
+## Ownership como Fonte de Valor Quando a IA Comprime a Execução
+
+[[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]: se qualquer coisa é construível rápido, o gargalo é julgar o que vale fazer; quem assume ownership decide e vale mais, e poucos querem assumir. Ver [[wiki/concepts/contexto-concentrado-como-valor]].
+
+## Overdelivery Calibrado e Alinhado com o Gestor
+
+A mesma fonte descreve o comportamento como "ser antes de ter" e o limita: não abusar (tira espaço dos outros) e alinhar com o chefe para não "errar a mão". Ver [[wiki/concepts/overdelivery-calibrado]] e [[wiki/concepts/subniveis-de-senioridade]].
+
 ## Key Sources
 
 - [[wiki/sources/desenvolvedor-acima-da-media-10-itens]]
 - [[wiki/sources/potencial-programador-atitude-mindset]] — ownership como 1º dos 3 traços de potencial de Gregor Ojstersek; "se você está bloqueado, é sua responsabilidade se desbloquear" (ir atrás da aprovação do PR em vez de virar "passageiro")
 - [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] — se importar genuinamente com a qualidade do próprio trabalho, não pelo chefe ou pela empresa, como o que torna ownership sustentável no tempo
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — proatividade "quando interessa a você" e cuidado com o "não é comigo"; abraçar granadas ligadas ao seu foco ([[wiki/concepts/abracar-granadas]])
+- [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]
+- [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]

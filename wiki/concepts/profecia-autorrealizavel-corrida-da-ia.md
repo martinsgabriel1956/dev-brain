@@ -3,8 +3,8 @@ type: concept
 title: "Profecia Autorrealizável da Corrida da IA"
 aliases: ["ai race self-fulfilling prophecy", "corrida da ia", "urgencia artificial ia", "ninguem sabe onde"]
 date_created: 2026-09-15
-date_updated: 2026-09-15
-source_count: 1
+date_updated: 2026-09-29
+source_count: 2
 tags: [carreira, capitalismo, marketing, ia-produtividade, tomada-de-decisao]
 skill: tech-mentor-leadership
 status: stub
@@ -43,3 +43,4 @@ A fonte argumenta que esta transformação difere de revoluções tecnológicas 
 ## Key Sources
 
 - [[wiki/sources/ia-produtividade-nao-reduz-trabalho-corrida-da-ia-profecia-autorrealizavel]] — define o mecanismo: marketing + urgência indefinida + redirecionamento de orçamento/pesquisa como profecia que se autorrealiza
+- [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — complemento organizacional: a corrida por IA como isomorfismo mimético (pressão de acionistas/clientes → estratégia antes do problema)

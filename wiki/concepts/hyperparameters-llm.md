@@ -3,8 +3,8 @@ type: concept
 title: "Hiperparâmetros de LLM"
 aliases: ["hyperparameters", "temperature", "stop sequence", "max tokens", "top-p"]
 date_created: 2026-05-17
-date_updated: 2026-05-17
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [llm, hyperparameters, temperature, prompt-engineering, inferência]
 skill: tech-mentor-ai
 status: stable
@@ -55,6 +55,11 @@ Penaliza tokens que já apareceram no completion — reduz repetição. Útil pa
 - [[concepts/prompt-engineering]] — prompt + hiperparâmetros juntos definem o output
 - [[context-window]] — `max_tokens` é um dos controles do context window
 
+## Temperatura como Metadado Versionado
+
+Em [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]], a temperatura é um dos campos guardados em cada versão de prompt ([[wiki/concepts/metadados-de-prompt]]), pois mudar de temperatura ou de modelo muda o comportamento e impede reproduzir a versão anterior.
+
 ## Fontes
 
 - [[wiki/sources/microsoft-prompt-engineering-guide]]
+- [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — temperatura/modelo/esforço como metadados de versão

@@ -3,8 +3,8 @@ type: concept
 title: "Ativo vs. Produtivo"
 aliases: ["ser ativo não é ser produtivo", "atividade como procrastinação", "produtividade falsa"]
 date_created: 2026-07-04
-date_updated: 2026-07-20
-source_count: 3
+date_updated: 2026-09-29
+source_count: 5
 tags: [produtividade, carreira, habitos, procrastinacao]
 skill: tech-mentor-leadership
 status: draft
@@ -40,8 +40,15 @@ Dias em que se faz "um monte de coisa" mas termina-se insatisfeito ou com a sens
 
 [[wiki/sources/indistraivel-nir-eyal-mano-deivin]] descreve um mecanismo concreto de como o padrão "ativo, mas não produtivo" acontece minuto a minuto: um [[wiki/concepts/gatilho-interno-vs-externo|gatilho interno]] (uma lembrança que surge no meio de uma tarefa) dispara uma cadeia de ações que, cada uma isoladamente, parece legítima — mas que no total substitui a tarefa original por horas de atividade não planejada. A diferença para o diagnóstico já registrado nesta página é o nível de granularidade: em vez de um padrão observado ao longo do dia, é o mecanismo momento a momento pelo qual esse padrão se instala.
 
+## Pontos são por entrega, não por dificuldade
+
+[[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]]: "você não ganha pontos extras por dificuldade"; contrapõe o preguiçoso inteligente ao "idiota proativo" ([[wiki/concepts/preguicoso-inteligente-vs-idiota-proativo]]).
+
 ## Key Sources
 
+
+- [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — ansiedade de olhar a IA programar e dúvida 'entregar mais código = ser produtivo?'; a saída é um fluxo de ~10 tarefas sem conversa constante
 - [[wiki/sources/produtividade-falsa-vs-verdadeira]]
 - [[wiki/sources/sistema-produtividade-ia-adapta]]
 - [[wiki/sources/indistraivel-nir-eyal-mano-deivin]]
+- [[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] — entrega vs. dificuldade; idiota proativo

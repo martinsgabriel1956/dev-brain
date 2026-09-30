@@ -3,8 +3,8 @@ type: concept
 title: "Quality Gate"
 aliases: ["quality gates", "portão de qualidade", "gate de qualidade", "análise estática em pull request"]
 date_created: 2026-07-16
-date_updated: 2026-08-27
-source_count: 9
+date_updated: 2026-09-29
+source_count: 11
 tags: [quality-gate, linter, analise-estatica, clean-code, modularizacao, ia, milestone, criterios-de-qualidade, ratchet, babysitting-de-agentes, branch-protection]
 skill: tech-mentor-testing
 status: draft
@@ -81,8 +81,14 @@ A fonte enquadra essas quatro técnicas como a resposta prática ao mesmo proble
 
 [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] descreve o mesmo mecanismo aplicado a um [[wiki/concepts/loop-engineering|loop]] agêntico rodando sem supervisão em tempo real: o gate (testes passando, build sem erro, lint zerado, diff de print via Playwright) é o que decide, volta a volta, se o agente comita ou corrige — sem esse resultado binário e verificável, "o loop passa a noite inteira produzindo lixo com total confiança de que está indo bem". Critérios subjetivos como "deixa mais bonito" são explicitamente descartados como não verificáveis, reforçando a exigência de critério de entrada/saída explícito já documentada acima na visão de Schneider.
 
+## Gate Sem LLM na Execução
+
+[[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]]: a IA é ótima para **construir** o quality gate (e ampliar cobertura), mas o gate em si deve rodar como código determinístico; o autor considera ainda inadequado plugar um agente lendo o log a cada build. Contraste de ênfase com o padrão *babysit* acima. Ver [[wiki/concepts/ia-na-esteira-ci-cd]].
+
 ## Key Sources
 
+
+- [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — gates (linter, dependências, camadas, Knip, dependência circular) como parte obrigatória do contrato de revisão auditável — ver [[wiki/concepts/contrato-de-revisao]]
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — Clean Code como fonte dos critérios codificados no gate, não como disciplina de quem escreve o código à mão
 - [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] — gate como condição de parada verificável de um loop noturno sem supervisão
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]]
@@ -92,3 +98,4 @@ A fonte enquadra essas quatro técnicas como a resposta prática ao mesmo proble
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — branch protection com required status checks como mecanismo mínimo de enforcement, sobre um pipeline de apenas lint + teste
 - [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — quatro gates concretos (CCN, cobertura+mutation, tamanho de módulo, dependency structure) para transformar a lista de métricas de Uncle Bob num pipeline de CI real
 - [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — "qualidade de código é mensurável, não subjetiva"; o quality gate no CD como o substituto que "já surgiu" para a revisão linha a linha (contra o "algo precisa surgir no lugar" de Gergely Orosz)
+- [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — IA gera o gate, mas não o executa; contraste com babysit

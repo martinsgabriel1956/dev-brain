@@ -3,8 +3,8 @@ type: concept
 title: "1:1 (One-on-one)"
 aliases: ["one on one", "reunião individual", "1:1 semanal"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [liderança, gestão, pessoas, feedback, carreira, 1on1]
 skill: tech-mentor-leadership
 status: stable
@@ -51,6 +51,11 @@ Em reuniões abertas há ruído, pressão social, correria. Em 1:1s individuais 
 - [[mentoria-tecnica]] — 1:1 como formato de mentoria
 - [[extreme-ownership]] — líder que faz 1:1 descobre problemas antes que virem crises
 
+## O 1:1 Como Canal para Declarar Objetivos de Carreira
+
+Do lado do liderado, [[wiki/entities/andre-casciotti]] recomenda usar o 1:1 para dizer explicitamente o que se quer ("quero ser gestor" ou "quero ser técnico"); gestor disposto responde com oportunidades alinhadas (liderar projeto, liderança técnica em decisões de arquitetura). Ver [[wiki/concepts/objetivos-de-carreira-explicitos]].
+
 ## Key Sources
 
 - [[wiki/sources/desenvolvedor-acima-da-media-10-itens]]
+- [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]

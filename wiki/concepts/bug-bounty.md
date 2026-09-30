@@ -3,8 +3,8 @@ type: concept
 title: "Bug Bounty"
 aliases: ["bug bounty", "programa de recompensa por falhas", "vdp"]
 date_created: 2026-08-19
-date_updated: 2026-08-19
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [bug-bounty, pentest, appsec, red-team, xss]
 skill: tech-mentor-security
 status: stub
@@ -28,3 +28,4 @@ Classes de vulnerabilidade comuns e "simples" — como [[wiki/concepts/xss]] e [
 ## Key Sources
 
 - [[wiki/sources/xss-cross-site-scripting-luiz-viana]] — bug bounty citado como motivação prática para aprender XSS, com ressalva de que testes só valem em sistemas com permissão explícita
+- [[wiki/sources/sql-injection-sqlmap-luiz-viana]] — mesmo autor e mesmo enquadramento (aprender a técnica manual antes de automatizar com [[wiki/concepts/sqlmap]]), aplicado a [[wiki/concepts/sql-injection]] em vez de XSS

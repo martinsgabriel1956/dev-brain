@@ -3,8 +3,8 @@ type: concept
 title: "Planejamento de Capacidade"
 aliases: ["capacity planning", "planejamento de capacidade", "capacidade de infraestrutura"]
 date_created: 2026-08-03
-date_updated: 2026-08-03
-source_count: 1
+date_updated: 2026-09-29
+source_count: 2
 tags: [capacity-planning, sre, infraestrutura, observabilidade, finops]
 skill: tech-mentor-infra
 status: stub
@@ -42,6 +42,11 @@ Capacity planning e [[wiki/concepts/finops]] se cruzam de um jeito contra-intuit
 
 Antes de picos previsíveis (Black Friday, lançamento viral), simular a carga esperada com ferramentas como k6, Gatling ou Locust — validar que o plano de capacidade aguenta o pico antes que o pico aconteça de verdade.
 
+## Elasticidade vs. capacidade fixa para o pico
+
+Capacidade fixa dimensionada para o pico deixa ociosidade ([[wiki/concepts/dimensionamento-para-o-pico]]); serviços elásticos como [[wiki/concepts/mainframe-as-a-service]] contratam com margem sobre o histórico de consumo (MIPS).
+
 ## Key Sources
 
+- [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — histórico de MIPS e capacidade elástica com margem de segurança
 - [[wiki/sources/sre-capacidade-observabilidade-confiabilidade-custo]]

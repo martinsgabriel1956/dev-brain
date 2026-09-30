@@ -3,8 +3,8 @@ type: concept
 title: "Documentação Oficial Como Recurso de Aprendizado"
 aliases: ["ler a documentação", "docs do framework"]
 date_created: 2026-07-10
-date_updated: 2026-08-24
-source_count: 3
+date_updated: 2026-09-29
+source_count: 4
 tags: [carreira, aprendizado, recursos, documentacao]
 skill: tech-mentor-leadership
 status: stub
@@ -24,8 +24,13 @@ Ler a documentação do framework/runtime usado no dia a dia é apontado como o 
 
 [[wiki/sources/como-calcular-complexidade-de-algoritmos-big-o-em-3-passos]] usa a documentação oficial (cppreference.com, para C++) com um propósito específico: descobrir a complexidade Big-O de funções/métodos nativos da linguagem (`size()`, `sort()`, `count()`) antes de assumi-la. A maioria das referências de linguagem/biblioteca padrão inclui uma seção de "Complexity" para cada função — recurso concreto para não tratar chamadas de biblioteca como uma "caixa preta" grátis dentro do cálculo de [[wiki/concepts/big-o|Big O]].
 
+## Documentação no Ciclo de 2 Horas
+
+[[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] coloca a documentação (da empresa ou da linguagem) — ou uma IA — como a **2ª etapa** (~5–10 min) do [[wiki/concepts/ciclo-de-2-horas]], depois de procurar código parecido no próprio projeto e antes da tentativa própria e de pedir ajuda.
+
 ## Key sources
 
 - [[wiki/sources/5-recursos-para-ser-um-desenvolvedor-melhor]]
 - [[wiki/sources/como-ler-documentacao-de-uma-linguagem-de-programacao]] — método detalhado de navegação (padrão de seções + API reference + IDE)
 - [[wiki/sources/como-calcular-complexidade-de-algoritmos-big-o-em-3-passos]] — consulta à seção "Complexity" da documentação (cppreference) como parte do método de cálculo de Big-O
+- [[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] — doc como 2ª etapa do ciclo de 2 horas

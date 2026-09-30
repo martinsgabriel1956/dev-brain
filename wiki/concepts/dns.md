@@ -3,8 +3,8 @@ type: concept
 title: "DNS — Domain Name System"
 aliases: [Domain Name System]
 date_created: 2026-04-22
-date_updated: 2026-09-22
-source_count: 6
+date_updated: 2026-09-30
+source_count: 8
 tags: [dns, rede, infraestrutura]
 skill: tech-mentor-system-design
 status: stub
@@ -29,7 +29,16 @@ DNS é a primeira etapa de rede do [[wiki/concepts/critical-rendering-path]] do 
 
 Confusão comum: os dois "decidem para onde a requisição vai", mas em camadas diferentes. Analogia de restaurante usada em [[wiki/sources/system-design-load-balancer-nivel-macaco]]: DNS decide **em qual mesa você senta** (resolve nome → IP, escolhe a rota); o [[wiki/concepts/load-balancer]] decide **qual garçom vai te atender** (decide quem/como atende dentro daquela rota). A diferença técnica: DNS apenas traduz nome em endereço, sem saber se o destino está saudável — por isso é possível resolver um domínio corretamente e ainda cair num erro no meio do caminho. O load balancer faz health check ativo dos servidores e só roteia para instâncias saudáveis, redirecionando na hora se uma estiver sobrecarregada ou fora do ar.
 
+## Wildcard e DNS rebinding
+
+[[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]]: registro **A com wildcard** (`*`) para o domínio do deploy; e proteção contra [[wiki/concepts/dns-rebinding]] resolvendo o domínio uma vez e usando só o IP depois.
+
+## DNS como canal de transporte
+
+Segundo [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]], um post citado por [[wiki/entities/michel-leonardo]] mostrou Doom rodando sobre DNS, inspiração para [[wiki/concepts/icmp-tunneling]]: protocolos "auxiliares" podem ser reaproveitados como transporte (post não verificado).
+
 ## Key sources
+- [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — wildcard A + defesa contra DNS rebinding
 - [[sources/dns]]
 - [[wiki/sources/system-design-load-balancer-nivel-macaco]] — distinção didática DNS vs. Load Balancer (analogia de restaurante) e o health check como diferencial do load balancer
 - [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — DNS como agenda telefônica (domínio → IP); resolução via provedor; propagação de name servers
@@ -40,3 +49,4 @@ Confusão comum: os dois "decidem para onde a requisição vai", mas em camadas 
 ## Key Sources
 
 - [[wiki/sources/fase-1-fundamentos-infraestrutura]] — Fundamentos de infraestrutura: DNS (TTL, tipos de record), Load Balancer (L4 vs L7, algoritmos), CDN (edge cache, origem), Cache (hit/miss, eviction, invalidação), Banco de Dados (ACID, replicação,...
+- [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]] — dns/uso de DNS como transporte (Doom via DNS, citado de passagem)

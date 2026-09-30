@@ -3,8 +3,8 @@ type: concept
 title: "COBOL"
 aliases: ["Common Business-Oriented Language"]
 date_created: 2026-08-04
-date_updated: 2026-09-14
-source_count: 2
+date_updated: 2026-09-29
+source_count: 3
 tags: [cobol, mainframe, legado, sistema-financeiro, linguagem-de-programacao]
 skill: tech-mentor-backend
 status: stub
@@ -39,7 +39,12 @@ A linguagem continua evoluindo: a versão mais recente do padrão oficial foi pu
 
 Pesquisa da Vanson Bourne para a [[wiki/entities/micro-focus|Micro Focus]] (47 países, 114 entrevistados entre especialistas COBOL e tomadores de decisão de TI), citada em [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]]: **92%** dos entrevistados consideram os sistemas em COBOL da própria organização **sistemas críticos**. A estimativa também citada de 800 bilhões de linhas de COBOL em produção é tratada com ressalva pela fonte — quantidade de código não é proxy direto de quantidade de vaga. Ver [[wiki/concepts/mercado-de-trabalho-mainframe-cobol]] para o quadro completo de dados de demanda.
 
+## COBOL na nuvem
+
+É possível "ir para a nuvem" mantendo milhões de linhas de COBOL: no [[wiki/concepts/mainframe-as-a-service]] o código roda como está, só muda o consumo da infraestrutura ([[wiki/concepts/cloud-como-modelo-de-consumo]]).
+
 ## Key Sources
 
+- [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — COBOL/DB2/CICS seguem rodando em MaaS, sem reescrita
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]]
 - [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] — pesquisa Vanson Bourne/Micro Focus: 92% dos especialistas tratam sistemas COBOL da própria organização como críticos

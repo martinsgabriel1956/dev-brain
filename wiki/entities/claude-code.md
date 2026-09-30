@@ -3,8 +3,8 @@ type: entity
 title: "Claude Code"
 aliases: ["claude code cli"]
 date_created: 2026-05-18
-date_updated: 2026-09-14
-source_count: 16
+date_updated: 2026-09-30
+source_count: 20
 tags: [ferramenta, agentes-ia, anthropic, llmops, cli, mcp, hooks]
 skill: tech-mentor-ai
 status: stable
@@ -133,8 +133,14 @@ O mecanismo de [[context-compaction]] da janela de contexto do Claude Code é um
 
 [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] menciona, de passagem e com o próprio autor manifestando incerteza ("eu nem sei se a Anthropic tá utilizando isso"), que o Claude Desktop App teria divulgado a possibilidade de rodar tarefas de "cowork" na nuvem. Não fica claro se "cowork" se refere a uma feature distinta do Claude Code ou é confusão de nomenclatura com outro produto/feature da Anthropic (ex. execução remota de tarefas já documentada em outras fontes da wiki). **Confiança: baixa** — claim tangencial, sem detalhamento nem confirmação de fonte primária nesta ingestão.
 
+## Dicas de Paralelismo, Agendamento e Sessões da Documentação
+
+[[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] reúne recursos de trabalho em escala: worktrees ([[wiki/concepts/worktree-paralelismo]]), cinco modalidades de paralelismo ([[wiki/concepts/modalidades-de-paralelismo-claude-code]]), [[wiki/concepts/agent-teams]] (experimental), [[wiki/concepts/rotinas-agendadas-claude-code]], [[wiki/concepts/integracao-navegador-claude-code]], [[wiki/concepts/computer-use]], [[wiki/concepts/sessoes-remotas-claude-code]] e [[wiki/concepts/fork-de-sessao-claude-code]]. O autor afirma que a maioria vale também para Codex, OpenCode e Cursor. Nomes e sintaxes não foram verificados na documentação atual.
+
 ## Key Sources
 
+
+- [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — CLI usada na demo do Kanban (Sonnet, effort high, /clear) sem CLAUDE.md/plano
 - [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] — menção tangencial e não confirmada a "cowork" rodando na nuvem via Claude Desktop App
 - [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] — claim não verificado de ter se tornado open source no GitHub após um vazamento na Anthropic; citado como exemplo de meio-termo de controle de harness (entre Cursor e OpenClaw)
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — autopentest guiado (autenticação, IDOR, CSRF, XSS/SQLi, rate limiting, secrets, dependências); método de seis passos para prompt de segurança
@@ -155,3 +161,9 @@ O mecanismo de [[context-compaction]] da janela de contexto do Claude Code é um
 ## Lockin de Modelo Contornável via Base URL Customizada
 
 [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] demonstra que o Claude Code aceita qualquer endpoint compatível com o formato da API da Anthropic via `ANTHROPIC_BASE_URL` em `.claude/settings.json` — inclusive um [[wiki/concepts/ai-gateway-llm-router|AI Gateway]] self-hosted que redireciona as chamadas para modelos de outros providers (ex.: GLM 5.2 via OpenRouter, MiMo da Xiaomi via Kiro) sem exigir login com uma conta Anthropic real. O autor da fonte descreve isso como "quebrar o lockin" do Claude Code — a ferramenta continua funcionando normalmente, mas o modelo real por trás pode ser qualquer um compatível com o gateway. Ver [[wiki/concepts/rotacao-de-contas-free-tier]] para o mecanismo relacionado de rotação entre múltiplas contas free tier do mesmo provider.
+
+## Key Sources
+
+- [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — exemplo de ferramenta cujo comportamento (skills, decisões não pedidas) precisa ser contido
+- [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — estrutura `.claude/skills/` e uso do skill-creator para avaliar skills
+- [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — dicas de paralelismo, rotinas, sessões remotas, fork

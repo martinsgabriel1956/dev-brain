@@ -3,8 +3,8 @@ type: concept
 title: "Comunicar Progresso"
 aliases: ["talk about what you're doing", "status update", "regular updates"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [carreira, comunicação, habitos, estimativas, liderança]
 skill: tech-mentor-leadership
 status: stable
@@ -41,6 +41,11 @@ Daily standup. Mas mesmo com ele: tem alguém fora do ritual que deveria ser atu
 
 [[concepts/documentar-conquistas]] — registrar o que foi feito ajuda a comunicar com precisão.
 
+## Status Diário Como Visibilidade e Sinal de Senioridade
+
+Para [[wiki/entities/andre-casciotti]], o status diário (daily ou mensagem ao gestor: o que fez, o que falta, dificuldades) dá visibilidade ao que é grande ou desbravador, mostra senioridade e aumenta a chance de promoção. Ver [[wiki/concepts/visibilidade-das-entregas]].
+
 ## Key Sources
 
 - [[sources/9-habitos-programador-junior]]
+- [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]

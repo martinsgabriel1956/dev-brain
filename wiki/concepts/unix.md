@@ -3,8 +3,8 @@ type: concept
 title: "Unix"
 aliases: ["UNIX"]
 date_created: 2026-07-20
-date_updated: 2026-08-18
-source_count: 4
+date_updated: 2026-09-30
+source_count: 5
 tags: [sistema-operacional, unix, servidor, cs-fundamentals, comunidade, open-source]
 skill: cs-fundamentals
 status: stub
@@ -30,8 +30,13 @@ Segundo [[wiki/sources/a-insanidade-de-ser-um-programador-hoje]], o Unix nasceu 
 
 Segundo [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]], foi nos anos 70 que o Unix consolidou a "chamada de sistema" (system call) como forma padronizada de [[wiki/concepts/contrato-de-api|API]] entre um programa e o kernel — a filosofia de pequenas funções reutilizáveis e combináveis. A fonte credita explicitamente essa filosofia como influência de design em modelos posteriores, incluindo REST com JSON (registrado aqui como leitura do autor, sem citação formal da linhagem). Nos anos 80, o [[wiki/concepts/posix]] padronizou essas chamadas de sistema entre diferentes distribuições Unix, dando portabilidade real ao código C.
 
+## Do teletype ao PTY
+
+Os primeiros Unix rodavam em computadores enormes ligados a teletypes com várias sessões ([[wiki/concepts/tty-teletypewriter]]); o modelo sobrevive hoje como [[wiki/concepts/pty-pseudoterminal|PTY]] ([[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]]).
+
 ## Key Sources
 
+- [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — origem TTY e sobrevivência como PTY
 - [[wiki/sources/8-sistemas-operacionais-explicados]] — panorama comparativo de propósito e mercado
 - [[wiki/sources/a-insanidade-de-ser-um-programador-hoje]] — origem do Unix como subproduto do jogo *Space Travel* de Ken Thompson; `grep` como exemplo de ferramenta privada que virou pública; senso de comunidade da área
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — o `grep` criado por Thompson em uso cotidiano; conjunto de comandos Unix que devs e harnesses de IA rodam

@@ -3,8 +3,8 @@ type: concept
 title: "Comunicação Técnica"
 aliases: ["comunicação", "comunicação efetiva", "tradução técnica", "emissor receptor"]
 date_created: 2026-04-23
-date_updated: 2026-09-23
-source_count: 9
+date_updated: 2026-09-30
+source_count: 11
 tags: [carreira, comunicação, liderança, soft-skills]
 skill: tech-mentor-leadership
 status: stable
@@ -66,6 +66,14 @@ O princípio "tradução é responsabilidade de quem emite" tem uma aplicação 
 - [[entities/randy-nelson]] — origem do framework
 - [[wiki/concepts/comunicacao-persuasiva]] — aplicação tática do mesmo princípio: traduzir para a linguagem de quem decide, não para o próprio jargão
 
+## A Pergunta Como Comunicação Técnica
+
+[[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] trata a pergunta de ajuda como comunicação técnica: contexto + erro exato + tentativas + pedido específico ([[wiki/concepts/pergunta-bem-formulada]]) — o mesmo vale para suporte, onde "está dando erro" sem detalhe atrasa a análise.
+
+## Comunicar o Valor do Próprio Trabalho
+
+[[wiki/entities/andre-casciotti]] estende comunicação à visibilidade: falar do trabalho com números relativos ("-50%" em vez de "-1 segundo"), comunicar testes e roteiros, e dizer o que se quer ao gestor, que não é vidente. Ver [[wiki/concepts/visibilidade-das-entregas]] e [[wiki/concepts/objetivos-de-carreira-explicitos]].
+
 ## Key Sources
 
 - [[sources/tres-caracteristicas-melhor-candidato]]
@@ -77,3 +85,5 @@ O princípio "tradução é responsabilidade de quem emite" tem uma aplicação 
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — numa entrevista de arquitetura o produto entregue é o racional justificado, não o diagrama; raciocínio exposto vale mais que velocidade de resposta
 - [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — bullet points vagos de currículo como falha de tradução na ponta de emissão
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — comunicação como habilidade de desenrolar demandas: escutar, escrever, ler o momento, expor fatos sem culpar pessoas, conversa informal ([[wiki/concepts/expor-problemas-construtivamente]])
+- [[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] — pergunta de ajuda como caso de comunicação clara
+- [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]

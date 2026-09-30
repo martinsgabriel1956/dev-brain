@@ -1,29 +1,29 @@
 ---
 type: concept
 title: "Processamento Assincrono"
-aliases: []
+aliases: ["processamento assíncrono", "background processing"]
 date_created: 2026-09-22
-date_updated: 2026-09-22
-source_count: 2
-tags: [processamento-assincrono]
+date_updated: 2026-09-30
+source_count: 3
+tags: [processamento-assincrono, comunicacao-assincrona, workers, filas]
 skill: tech-mentor-backend
-status: stub
+status: draft
 ---
 
 # Processamento Assincrono
 
-Stub criado durante sweep de lint (links quebrados) a partir de referências em 2 página(s) da wiki — conteúdo completo pendente de ingest dedicado.
+Receptor processa a solicitação **em background**, sem devolver o resultado na mesma chamada. É o lado do *receptor* da [[wiki/concepts/comunicacao-assincrona]]: quem recebe a mensagem aceita, enfileira e processa depois (workers + fila), e o resultado é entregue por notificação ([[wiki/concepts/webhook]]), consulta de status ([[wiki/concepts/async-request-reply]]) ou evento ([[wiki/concepts/mensageria]]).
 
-## Contexto das citações
+## Usos citados
 
-- Em [[wiki/sources/listen-notes-good-enough-engineering]]: [[processamento-assincrono]] — workers + message queue para tarefas pesadas
-- Em [[wiki/sources/listen-notes-one-person-startup]]: [[processamento-assincrono]] — workers Celery + RabbitMQ para tarefas pesadas
+- Workers + message queue para tarefas pesadas — [[wiki/sources/listen-notes-good-enough-engineering]]
+- Workers Celery + RabbitMQ para tarefas pesadas — [[wiki/sources/listen-notes-one-person-startup]]
+- Serviços de Estoque e Faturamento processando o evento "pedido criado" de forma independente — [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]]
 
-## Pendências
-
-Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a partir do texto das páginas que a citam. Precisa de fonte dedicada para virar `draft`/`stable`.
+Ver também [[wiki/concepts/filas-e-workers]].
 
 ## Key sources
 
 - [[wiki/sources/listen-notes-good-enough-engineering]]
 - [[wiki/sources/listen-notes-one-person-startup]]
+- [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — receptor processa em background e notifica depois

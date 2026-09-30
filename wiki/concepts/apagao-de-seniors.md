@@ -3,8 +3,8 @@ type: concept
 title: "Apagão de Sêniors"
 aliases: ["apagão de devs sêniors", "senior dev blackout", "escassez de sêniors"]
 date_created: 2026-07-04
-date_updated: 2026-09-22
-source_count: 8
+date_updated: 2026-09-30
+source_count: 9
 tags: [vibe-coding, ia, carreira, fundamentos, senior]
 skill: tech-mentor-ai
 status: stub
@@ -57,6 +57,10 @@ Tese formulada em tweet do "Poker Dev", citada como gatilho em [[wiki/sources/ap
 
 [[wiki/sources/sobre-ser-gerente-fabio-akita]] descreve uma variante organizacional do mesmo risco, distinta da restrição de caixa já documentada acima: mesmo empresas com caixa saudável cometem o erro de terceirizar projetos novos em vez de alocar seus próprios sêniores nesses projetos e exigir que eles formem um sucessor interno antes de seguir em frente — ver [[wiki/concepts/equipe-mista-senior-junior]] para o ciclo completo. Sem essa disciplina, a empresa nunca acumula sêniores novos, porque delega justamente o trabalho que geraria esse aprendizado para fora.
 
+## Sênior por Resultado vs. Sênior do Papel
+
+[[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]] diferencia o sênior "do papel" do sênior que prova valor por ownership e resultado, e vê a escassez de quem assume essa responsabilidade como oportunidade. Ver [[wiki/concepts/contexto-concentrado-como-valor]].
+
 ## Key Sources
 
 - [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] — via causal demográfica já consumada e independente de IA: aposentadoria da geração mainframe/COBOL levando conhecimento tácito de arquitetura e regra de negócio
@@ -67,3 +71,4 @@ Tese formulada em tweet do "Poker Dev", citada como gatilho em [[wiki/sources/ap
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — sênior "letrado em IA" como pré-requisito ainda presente na contratação, mesmo com CRUD resolvido
 - [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — testes automatizados como validação determinística contra volume de código gerado por IA maior do que revisão humana consegue cobrir
 - [[wiki/sources/sobre-ser-gerente-fabio-akita]] — via causal organizacional: terceirizar projeto novo em vez de formar sucessor interno, mesmo sem restrição de caixa
+- [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]

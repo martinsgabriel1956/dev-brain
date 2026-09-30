@@ -3,8 +3,8 @@ type: concept
 title: "Arquitetura Cliente-Servidor"
 aliases: ["client-server", "cliente servidor", "browser e servidor", "arquitetura web básica"]
 date_created: 2026-09-28
-date_updated: 2026-09-28
-source_count: 1
+date_updated: 2026-09-29
+source_count: 2
 tags: [fundamentos, http, rede, backend, iniciante]
 skill: tech-mentor-leadership
 status: stub
@@ -37,3 +37,4 @@ Andar de mãos dadas com o básico de rede: o que é IP, o que é DNS, por que a
 ## Key Sources
 
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]]
+- [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — o movimento de mercado "cliente-servidor" dos anos 90 (downsizing) como onda de modernização — ver [[wiki/concepts/cliente-servidor-como-onda-de-modernizacao]]

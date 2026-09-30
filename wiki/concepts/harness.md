@@ -3,8 +3,8 @@ type: concept
 title: "Harness"
 aliases: ["AI harness", "harness de IA", "coding harness"]
 date_created: 2026-06-02
-date_updated: 2026-08-27
-source_count: 20
+date_updated: 2026-09-30
+source_count: 25
 tags: [harness, llm, tool-call, agente, context-engineering, erros-compostos, verificacao]
 skill: tech-mentor-ai
 status: stable
@@ -160,8 +160,22 @@ Essa mesma fonte também traz um exemplo concreto de "user harness" anterior à 
 
 [[wiki/sources/prompt-context-harness-engineering-tres-pilares]] amarra explicitamente o gráfico de complexidade-versus-tempo de [[wiki/entities/uncle-bob|Robert Martin]] (Clean Architecture) à motivação de harness engineering: complexidade de software cresce com o tempo independente de haver IA envolvida — múltiplas pessoas passam pelo projeto, código se acumula. O harness (regras, guidelines, mecanismos de verificação) é apresentado como o equivalente, na era de agentes, a "ter uma boa arquitetura" — o jeito de manter essa complexidade crescente sob controle. Reforça, sem contradizer, a dicotomia já registrada acima entre provider harness e user harness, e a mesma metáfora "cérebro sem mãos" para a LLM isolada. A mesma fonte também restaura, em tradução livre para o português e sem atribuição de autoria, o mantra de [[wiki/entities/peter-steinberger]] ("se você não é o modelo, você é o harness").
 
+## Harness Engineering e a Retrospectiva de Erros de IA
+
+A fonte [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] cita harness engineering como resposta parcial ao problema de dar feedback à IA que gera o código para que erros não se repitam, mas afirma que as preocupações "vão muito além" do harness. Ver [[wiki/concepts/retrospectiva-de-erros-de-ia]].
+
+## Portabilidade de Skills Entre Harnesses
+
+[[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] argumenta que, como membros do time preferem harnesses diferentes (Claude Code, Codex, OpenCode), o workflow em skills deve ser testado em vários modelos/clients para gerar experiência minimamente parecida — a demonstração cobre só Haiku e Opus (não confirma portabilidade entre harnesses).
+
+## O Que Se Transfere Entre Harnesses
+
+O autor de [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] argumenta que as dicas de Claude Code valem em Codex, OpenCode, Cursor e outros harnesses "porque fundamentalmente todos esses sistemas funcionam meio que da mesma maneira". É claim não verificado: os nomes das features são específicos; a ideia (isolar por worktree, paralelizar com limites, agendar, bifurcar sessão) é o que se transfere. Leitura sugerida: [[wiki/entities/anthropic-engineering-blog]].
+
 ## Key Sources
 
+
+- [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — IDEs/CLIs como harness e agentes especializáveis; gates de qualidade como parte forte do harness (script de linter/arquitetura/camadas rodado a cada execução); demo do harness mínimo (só Claude Code + AGENTS.md do Next.js)
 - [[wiki/sources/prompt-context-harness-engineering-tres-pilares]] — gráfico de complexidade de Robert Martin/Clean Architecture como justificativa de harness; mantra de Peter Steinberger restaurado em português sem atribuição; evolução prompt→context→harness engineering narrada como resposta ao crescimento da janela de contexto (4k tokens em 2022 → 1M hoje)
 - [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] — gradiente de controle por ferramenta (OpenClaw > Codex/Claude Code > Cursor); quatro componentes adicionais nomeados (RAG de contexto, agent loop com limites, guardrails, observabilidade com retries/evals); claim não verificado de Claude Code open source pós-vazamento; nomenclatura user/episodic/semantic/procedural memory
 - [[wiki/sources/graph-engineering-matematica-do-erro-composto]] — recapitulação da definição (harness = carro, loop = piloto automático) como ponte para graph engineering
@@ -182,3 +196,7 @@ Essa mesma fonte também traz um exemplo concreto de "user harness" anterior à 
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — a harness executa comandos de shell nativos (`cat`, `echo`, `grep`, `sed`) na máquina do usuário e envia o output ao servidor da Anthropic; "puro suco da harness"
 - [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — qualidade de compactação de contexto do Codex como diferencial do harness no comando `/go`; stop hook como ponto de extensão determinístico para o padrão judge
 - [[wiki/sources/harness-explicado-function-calling-hag-evals]] — harness mínima em ~1 arquivo Python (system prompt + 1 tool + loop while true) como esqueleto didático do mecanismo por trás de Claude Code/Codex; workaround via tags XML antes do function calling nativo existir em todo provider; sistema RAG corporativo pré-termo "harness" como exemplo de "user harness" informal
+- [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — a pergunta em aberto: como fazer a retrospectiva de bugs quando o autor do código é a LLM
+- [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — portabilidade de workflow/skills entre Claude Code, Codex e OpenCode (alegação)
+- [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — [[wiki/entities/rock-pro]]: harness de aprendizado que é 'literalmente uma RAG'; o autor critica confundir harness/loop engineering com 'usar Claude Code'
+- [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — transferibilidade das dicas entre harnesses

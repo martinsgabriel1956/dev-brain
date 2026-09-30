@@ -3,8 +3,8 @@ type: concept
 title: "LLMOps"
 aliases: ["llm ops", "operações de llm", "ai ops"]
 date_created: 2026-05-18
-date_updated: 2026-09-22
-source_count: 4
+date_updated: 2026-09-30
+source_count: 5
 tags: [llm, agentes-ia, mlops, infraestrutura, operacoes]
 skill: tech-mentor-ai
 status: stub
@@ -48,9 +48,14 @@ Manter `agents.md` / `CLAUDE.md` é uma decisão de LLMOps com trade-off mensur�
 
 Paper de Zurique (Universidade de Zurique) quantificou o custo. A estratégia recomendada: base mínima no arquivo principal, arquivos específicos linkados e carregados sob demanda. Ver [[claude-md]] e [[instruction-budget]].
 
+## Versionamento e Rollback de Prompt como Prática de LLMOps
+
+[[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] trata prompt versioning como controle operacional: registro de metadados, versão ativa, rollback com um clique e loader que monta o agente a partir do registro ([[wiki/concepts/versionamento-de-prompt]], [[wiki/concepts/rollback-de-prompt]], [[wiki/concepts/prompt-registry-local]]).
+
 ## Key Sources
 
 - [[wiki/sources/agentes-em-producao]] — Pilotos de agentes funcionam. Produção quebra em 3 pontos: integração com sistemas legados (APIs internas sem docs), state management (sessões longas não cabem no contexto), e governança (auditoria,...
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
 - [[wiki/sources/ia-custo-roi-bolha-ou-realidade]]
 - [[wiki/sources/agents-md-vale-a-pena-paper-zurique]] — paper de Zurique; custo de arquivos de contexto; estratégia enxuto + links
+- [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — prompt versioning, rollback e registry local

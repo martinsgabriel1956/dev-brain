@@ -3,8 +3,8 @@ type: concept
 title: "Database per Service"
 aliases: ["banco por serviço", "database-per-service pattern", "polyglot persistence"]
 date_created: 2026-07-30
-date_updated: 2026-08-21
-source_count: 5
+date_updated: 2026-09-30
+source_count: 6
 tags: [microsservicos, banco-de-dados, deadlock, arquitetura]
 skill: tech-mentor-backend
 status: stub
@@ -34,6 +34,10 @@ Além de isolar bancos por serviço, é comum ter **múltiplos bancos especializ
 
 [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] apresenta a regra "banco exclusivo por serviço, acesso só via API" como o ponto mais importante a reter sobre microsserviços — mas o próprio autor sinaliza, no fim do vídeo, que um vídeo futuro da mesma série vai argumentar por que essa regra, levada ao pé da letra sem cuidado, pode ser uma péssima ideia. Até essa fonte futura ser ingerida, esta página trata "database per service" como regra praticamente absoluta; quando ingerida, checar contra o contraponto já parcialmente registrado acima em "Polyglot Persistence" (múltiplos bancos por padrão de acesso, não por isolamento entre serviços).
 
+## Tensão: Modelos Separados, Tabela Compartilhada
+
+[[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] diz que classes separadas por bounded context podem mapear a **mesma tabela** do banco. Isso mantém acoplamento no nível de dados e contrasta com Database per Service em microsserviços; o vídeo não discute essa transição (inferência) — pergunta em aberto na fonte.
+
 ## Key Sources
 
 - [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] — a regra formulada como critério mais importante do vídeo; menção a um contraponto futuro ainda não ingerido
@@ -41,3 +45,4 @@ Além de isolar bancos por serviço, é comum ter **múltiplos bancos especializ
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — banco por serviço como solução ao deadlock de banco compartilhado, e como origem do problema de atomicidade que motiva 2PC/Saga
 - [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]] — "cada serviço com seu próprio banco" citado como custo dos microsserviços (um request pode consultar 4 bancos), com ressalva explícita do autor ao consenso
 - [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]] — tática de clonar o banco compartilhado do monolito modular no momento da extração de um módulo, em vez de nascer com bancos já separados
+- [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — classes separadas podem compartilhar a mesma tabela

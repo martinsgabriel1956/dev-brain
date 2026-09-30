@@ -3,8 +3,8 @@ type: entity
 title: "Cursor"
 aliases: ["Cursor IDE", "Cursor AI"]
 date_created: 2026-08-27
-date_updated: 2026-09-21
-source_count: 2
+date_updated: 2026-09-30
+source_count: 3
 tags: [cursor, harness, ide, agentes-ia, ia-para-devs]
 skill: tech-mentor-ai
 status: stub
@@ -30,7 +30,12 @@ A mesma fonte descreve uma funcionalidade do Cursor que envia o mesmo problema p
 
 Agentes na nuvem do Cursor podem operar um desktop completo: abrir a aplicação recém-modificada, clicar dentro dela, coletar screenshots/vídeo e decidir se o resultado funcionou antes de continuar corrigindo — capacidade citada como exemplo do padrão mais amplo de dar ao agente uma máquina própria (terminal, browser, credenciais, rede). Ver [[wiki/concepts/agent-containment#Máquina Própria como Padrão de Produto (2026)|agent containment]].
 
+## Citado Como Harness Onde as Dicas se Aplicam
+
+[[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] afirma, sem demonstrar, que as dicas funcionam também no Cursor. Ver [[wiki/concepts/harness]].
+
 ## Key Sources
 
 - [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] — menor grau de controle de harness entre as ferramentas comparadas; exemplo de modelo (Opus) intercambiável entre Cursor e Claude Code
 - [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] — Cursor Automations (evento/schedule), execução multi-modelo em worktrees paralelas, desktop operável por agente
+- [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — menção de transferibilidade

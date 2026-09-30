@@ -3,8 +3,8 @@ type: concept
 title: "Sessões HTTP e Cookies"
 aliases: ["sessão HTTP", "session ID", "cookie de sessão", "sessão stateful"]
 date_created: 2026-07-27
-date_updated: 2026-09-14
-source_count: 7
+date_updated: 2026-09-30
+source_count: 9
 tags: [sessao, cookie, autenticacao, stateless, http, seguranca]
 skill: tech-mentor-security
 status: draft
@@ -65,8 +65,13 @@ Redis é o padrão de produção justamente por resolver o caso de múltiplos se
 - [[wiki/concepts/session-fixation]] — ataque específico contra a regeneração de session ID
 - [[wiki/concepts/step-up-authentication]] — uma sessão válida não deve ser suficiente para ações sensíveis, mesmo sem session fixation
 
+## Cookies rígidos + WebSocket sem cookie
+
+[[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] demonstra três cookies de sessão (`device-token`, `session-id`, `session-token`) com `HttpOnly`, `Secure` e `SameSite=Strict`, que somem ao fechar o navegador; o WebSocket, por ser stateful, autentica por [[wiki/concepts/ticket-de-uso-unico-websocket|ticket de uso único]] em vez de cookie, evitando [[wiki/concepts/cross-site-websocket-hijacking]] e [[wiki/concepts/csrf]].
+
 ## Key Sources
 
+- [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — cookies HttpOnly/Secure/SameSite=Strict + WebSocket via ticket
 - [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]]
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — invalidação ao trocar senha; comparação memória vs. banco vs. Redis para armazenamento de sessão
@@ -74,3 +79,4 @@ Redis é o padrão de produção justamente por resolver o caso de múltiplos se
 - [[wiki/sources/xss-cross-site-scripting-luiz-viana]] — `document.cookie` citado como alvo direto de exfiltração num payload de XSS bem-sucedido, reforçando por que `HttpOnly` é a defesa específica contra esse vetor
 - [[wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv]] — estudo de caso do "roubo de cookie de autenticação" via script hospedado em domínio externo (reflected XSS); marca `HttpOnly` como item de checklist de mitigação, sem detalhar o mecanismo
 - [[wiki/sources/anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato]] — session token formalizado como o caso clássico de token opaco, dentro da distinção arquitetural opaco vs. autocontido
+- [[wiki/sources/historia-do-captcha-do-teste-de-turing-ao-turnstile]] — idade do cookie como sinal do [[wiki/concepts/recaptcha]]: cookie maduro (>9 dias) garantia passar; geração massiva de cookies por um IP

@@ -3,8 +3,8 @@ type: concept
 title: "Requisitos Funcionais e Não Funcionais"
 aliases: ["requisitos funcionais", "requisitos não funcionais", "RNF", "functional requirements", "non-functional requirements", "levantamento de requisitos"]
 date_created: 2026-09-03
-date_updated: 2026-09-28
-source_count: 6
+date_updated: 2026-09-30
+source_count: 7
 tags: [system-design, requisitos, arquitetura, entrevistas, escopo]
 skill: tech-mentor-system-design
 status: stub
@@ -37,6 +37,10 @@ O framework de 4 etapas da skill de system design formaliza o mesmo passo como *
 
 Um enunciado de entrevista é, por construção, um [[wiki/concepts/problema-de-escopo-aberto]]: o entrevistador entrega vagueza de propósito. Levantar requisitos é o ato de operacionalizá-lo — transformar o problema aberto em um conjunto de problemas fechados que podem ser resolvidos e defendidos.
 
+## Análise de Requisitos Como Habilidade de Carreira
+
+[[wiki/entities/andre-casciotti]] a apresenta como habilidade básica que desenvolve comunicação, contexto, urgência e importância. Ver [[wiki/concepts/entender-contexto-da-demanda]].
+
 ## Key Sources
 
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — as três perguntas mínimas; pular esta etapa é a "mentira nº 1" (achar que o enunciado já define o problema)
@@ -45,3 +49,4 @@ Um enunciado de entrevista é, por construção, um [[wiki/concepts/problema-de-
 - [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] — sem análise de requisitos o teste sai 'viciado'; ordem correta: requisito antes de teste
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — análise de requisitos como base de conhecimento de negócio e de completar requisitos incompletos perguntando ([[wiki/concepts/desenrolar-demandas]])
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] — "caçar problemas" num sistema de estudo (modelo real + implementações como autenticação, filtro/índice, permissão) como prática autodirigida de levantamento de requisitos; ver [[wiki/concepts/aprender-com-foco-no-problema]]; SQL como DML mínimo (select/insert/update/delete) recomendado antes de DDL
+- [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]

@@ -3,8 +3,8 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-09-15
-source_count: 33
+date_updated: 2026-09-30
+source_count: 35
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack, memory-layers, prompt-caching]
 skill: tech-mentor-ai
 status: stable
@@ -126,6 +126,10 @@ Segundo [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]],
 
 Segundo [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]], a Anthropic mudou a especificação core do [[wiki/concepts/model-context-protocol|MCP]] de stateful para stateless, removendo o handshake/sessão obrigatórios em favor de um método `server discover` e de handles de estado assinados pelo servidor — mudança relatada como recente ("semana anterior" ao vídeo), sem data exata confirmada nem link direto ao changelog oficial nesta ingestão. Ver [[wiki/concepts/mcp-stateless-server-discover]].
 
+## Documentação do Claude Code e Blog de Engenharia
+
+A documentação do Claude Code é a fonte declarada das dicas em [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]]; o blog de engenharia é indicado como leitura de repertório: [[wiki/entities/anthropic-engineering-blog]]. Também oferece rotinas na nuvem ([[wiki/concepts/rotinas-agendadas-claude-code]]) e saída estruturada via SDK ([[wiki/concepts/saida-estruturada-llm]]).
+
 ## Key Sources
 
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — previsão de Dario Amodei sobre fim do código manual em ~6 meses, e hipótese não verificada de acesso interno antecipado a modelos mais avançados
@@ -161,3 +165,5 @@ Segundo [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-mont
 - [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] — mudança de spec do MCP: fim do handshake obrigatório, core stateless, método `server discover`, cross-call state via handle assinado
 - [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] — playbook "AI natives working at the frontier" com startups; controvérsia AGENTS.md vs. CLAUDE.md com Tobi Lütke/Shopify
 - [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]] — citada como uma das empresas de IA que adotam o modelo Forward Deployed Engineer
+- [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — skill-creator como skill oficial de avaliação de skills; Haiku vs. Opus no benchmark
+- [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — documentação, blog de engenharia, rotinas e saída estruturada

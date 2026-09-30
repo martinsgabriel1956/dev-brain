@@ -3,8 +3,8 @@ type: entity
 title: "Hostinger"
 aliases: ["Hostinger VPS"]
 date_created: 2026-07-21
-date_updated: 2026-09-14
-source_count: 8
+date_updated: 2026-09-30
+source_count: 9
 tags: [tech-mentor-infra, vps, hosting, patrocinio, coolify]
 skill: tech-mentor-ai
 status: stub
@@ -32,8 +32,11 @@ Também citada (não em bloco patrocinado, uso real demonstrado) em [[wiki/sourc
 
 Também citada (sétimo bloco patrocinado) em [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]], por [[wiki/entities/lucas-montano]]: mesmo plano **KVM2** e cupom "Lucas Montano" já documentados, aqui no contexto de um vídeo sobre implementar um MCP server stateless na própria VPS da Hostinger — reforça o padrão da Hostinger como ambiente de experimentação técnica do autor, não só de deploy de produção.
 
+Também citada (oitavo bloco patrocinado) em [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]], por [[wiki/entities/otavio-miranda]]: usa o **KVM4** (KVM2 recomendado como o mais popular/melhor custo-benefício), período de 24 meses, template Ubuntu 24.04 com Docker, cupom "Otávio Miranda". Publicidade, não avaliação técnica; servidor então usado para o deploy do [[wiki/entities/omxterm]] com [[wiki/entities/traefik]].
+
 ## Key Sources
 
+- [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — KVM4/KVM2, Ubuntu 24.04 + Docker, cupom "Otávio Miranda"
 - [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] — plano KVM2, cupom "Lucas Montano", usada como ambiente de experimentação para implementar um MCP server stateless
 - [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] — deploy de landing page em staging via MCP da Hostinger dentro de um loop agêntico, incluindo reset/reconfiguração da VPS pelo próprio agente
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]]

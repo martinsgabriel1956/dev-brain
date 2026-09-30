@@ -3,8 +3,8 @@ type: entity
 title: "Codex (OpenAI)"
 aliases: ["Codex", "OpenAI Codex", "codex app"]
 date_created: 2026-06-02
-date_updated: 2026-09-21
-source_count: 7
+date_updated: 2026-09-30
+source_count: 9
 tags: [codex, openai, harness, ia-para-devs]
 skill: tech-mentor-ai
 status: stable
@@ -51,6 +51,10 @@ Segundo [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]], o app 
 
 Segundo [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]], a [[wiki/entities/openai|OpenAI]] descreve cinco meses construindo e lançando um produto interno sob a restrição de que nenhuma linha fosse escrita manualmente — lógica de aplicação, testes, CI, documentação, observabilidade e ferramentas internas, todos produzidos pelo Codex, chegando a aproximadamente 1 milhão de linhas. Segundo a fonte, os engenheiros descrevem o próprio trabalho como desenhar ambientes, especificar intenção e construir loops de feedback que permitem aos agentes trabalhar — não como escrever código. Claim de autorrelato da própria OpenAI, sem link para paper/post técnico detalhado no artigo original; tratar como não verificado de forma independente. Ver [[wiki/concepts/governanca-de-codigo-gerado-por-ia#Zero Código Manual Não Elimina o Julgamento — Só Move Onde Ele Atua|governança de código gerado por IA]] para a análise do que isso implica (e não implica) para o trabalho de engenharia restante.
 
+## Citado Como Harness Onde as Dicas se Aplicam
+
+[[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] afirma, sem demonstrar, que as dicas de paralelismo, worktree e sessões funcionam também no Codex. Ver [[wiki/concepts/modalidades-de-paralelismo-claude-code]].
+
 ## Key Sources
 
 - [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] — posicionado, com o Claude Code, como meio-termo de controle de harness (entre Cursor e OpenClaw)
@@ -60,3 +64,5 @@ Segundo [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]], a [[wiki/enti
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
 - [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] — suporte nativo a worktree no app ("new worktree" / "create permanent worktree")
 - [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — `/go` e compactação de contexto como diferencial no loop agêntico; ciclo de retroalimentação entre logs do Codex e treinamento do próximo GPT
+- [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — citado como harness de preferência de parte do time (portabilidade de skills)
+- [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — menção de transferibilidade

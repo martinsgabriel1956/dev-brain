@@ -3,9 +3,9 @@ type: entity
 title: "Michel Leonardo"
 aliases: ["Michel Leonardo"]
 date_created: 2026-08-28
-date_updated: 2026-08-28
-source_count: 1
-tags: [xss, webassembly, golang, gambiarra, criador-de-conteudo]
+date_updated: 2026-09-30
+source_count: 2
+tags: [icmp, networking, xss, webassembly, golang, gambiarra, criador-de-conteudo]
 skill: tech-mentor-security
 status: stub
 ---
@@ -17,3 +17,4 @@ Criador de conteúdo (YouTube), autor de [[wiki/sources/hospedando-site-completo
 ## Key Sources
 
 - [[wiki/sources/hospedando-site-completo-em-url-fragment-brotli-webassembly]]
+- [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]] — cria o [[wiki/entities/icmp-browser]], proxy em Go sobre ICMP/IPv6; patrocínio JetBrains e sorteios mensais no canal

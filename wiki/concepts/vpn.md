@@ -3,8 +3,8 @@ type: concept
 title: "VPN — Virtual Private Network"
 aliases: ["vpn", "rede privada virtual", "virtual private network"]
 date_created: 2026-09-14
-date_updated: 2026-09-14
-source_count: 3
+date_updated: 2026-09-30
+source_count: 5
 tags: [vpn, networking, tunelamento, criptografia, seguranca]
 skill: tech-mentor-networking
 status: draft
@@ -41,8 +41,18 @@ WireGuard (moderno, kernel-integrado, ~4000 linhas de código, alta performance)
 - [[wiki/concepts/restricao-geografica-geo-blocking]] — um dos usos práticos mais comuns de VPN hoje
 - [[wiki/concepts/mtls]] — autenticação mútua por certificado, mecanismo relacionado usado em alternativas de acesso como ZTNA/service mesh
 
+## VPN como rede de administração
+
+Em [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] o autor libera para o terminal web só os IPs da VPN (WireGuard), o da residência e de outras VPS — IP por IP, não a sub-rede ([[wiki/concepts/allowlist-de-destino-ssh]]).
+
+## Contraste: ICMP tunneling
+
+O [[wiki/entities/icmp-browser]] ([[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]]) leva dados por um túnel [[wiki/concepts/icmp]], mas sem criptografia nem autenticação, ao contrário de uma VPN; ver [[wiki/concepts/icmp-tunneling]].
+
 ## Key sources
 
+- [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — IPs da VPN WireGuard na allowlist do terminal web
 - [[wiki/sources/vpn-conceito-tunelamento-acesso-remoto]] — definição introdutória, caso de uso matriz/filial e bypass de restrição geográfica
 - [[wiki/sources/tls-mtls-vpn]] — comparação técnica WireGuard vs. IPSec vs. OpenVPN, Tailscale como WireGuard gerenciado
 - [[wiki/sources/zero-trust]] — contraste VPN tradicional (zona de confiança plana) vs. ZTNA (verificação por request)
+- [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]] — contraste com túnel ICMP sem cifra

@@ -3,8 +3,8 @@ type: entity
 title: "Full Cycle"
 aliases: ["Full Cycle Dev", "MBA Arquitetura Full Cycle"]
 date_created: 2026-07-20
-date_updated: 2026-08-26
-source_count: 5
+date_updated: 2026-09-29
+source_count: 6
 tags: [educacao, arquitetura, system-design, brasil, mba]
 skill: tech-mentor-system-design
 status: stub
@@ -18,6 +18,8 @@ Também oferece um **MBA em Engenharia de Software com IA**, estruturado em quat
 
 ## Key sources
 
+
+- [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — possível origem (referência a 'o MBA' e ao contrato de revisão usado nele) — não confirmado
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]]

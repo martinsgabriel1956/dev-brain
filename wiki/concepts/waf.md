@@ -3,8 +3,8 @@ type: concept
 title: "WAF (Web Application Firewall)"
 aliases: ["waf", "web application firewall", "firewall de aplicação"]
 date_created: 2026-06-05
-date_updated: 2026-08-28
-source_count: 6
+date_updated: 2026-09-30
+source_count: 8
 tags: [waf, ddos, owasp, borda, attack-surface, cloud-security, aws-waf, cloudflare, under-attack-mode, syn-flood]
 skill: tech-mentor-security
 status: stable
@@ -49,17 +49,27 @@ Um WAF inspeciona tráfego HTTP entre cliente e servidor — não tem visibilida
 
 [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] posiciona o WAF explicitamente como a **última** das sete camadas de defesa contra [[wiki/concepts/sql-injection]] — depois de query parametrizada, prepared statement, menor privilégio, solução nativa do backend, ORM e validação de input — não a primeira nem a principal. A fonte descarta explicitamente a expectativa de cobertura total ("de maneira alguma o WAF vai prevenir 100% das SQL Injections"), tratando-o como bônus de proteção geral por padrão de payload, e recomenda corrigir primeiro a nível de código/backend ao encontrar um SQLi em produção.
 
+## Bypass Ofensivo: Tampers e Randomização do SQLMap
+
+[[wiki/sources/sql-injection-sqlmap-luiz-viana]] descreve o lado ofensivo do mesmo problema: quando um WAF ou filtro anti-injeção bloqueia payloads clássicos de [[wiki/concepts/sql-injection]] antes de chegarem ao banco, [[wiki/concepts/sqlmap]] oferece scripts de "tamper" (ex.: `space2comment`, que troca espaços por comentários SQL equivalentes; `randomcase`, que randomiza maiúsculas/minúsculas) para disfarçar o payload sem alterar seu efeito no banco — o WAF opera por reconhecimento de padrão de payload, então uma transformação que preserva a semântica SQL mas muda a forma textual pode escapar da detecção. Complementarmente, `--random-agent` (rotaciona User-Agent) e `--delay` (espaça requisições) miram especificamente em WAFs que também usam heurísticas de comportamento/fingerprint, não só padrão de payload.
+
 ## Provedores Comuns
 
 - **AWS WAF** — integra com CloudFront, ALB, API Gateway
 - **Azure Web Application Firewall** — integra com Application Gateway e Front Door
 - **Cloudflare WAF** — borda distribuída globalmente
 
+## WAF e proteção de borda no OMXTerm
+
+[[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] cita o WAF (que controla também a saída) na lista de estudo, e diz que **DoS/DDoS não é tratado no app**, dependendo de proteção de borda (Hostinger/Cloudflare).
+
 ## Key Sources
 
+- [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — WAF na lista de estudo; DDoS delegado à borda
 - [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
 - [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — WAF como complemento ao SAST: SAST age no dev, WAF age em produção
 - [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]] — Under Attack Mode desativado como falha real de configuração, não do produto
 - [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — 157 tentativas maliciosas bloqueadas, mesma origem, momento anterior ao incidente
 - [[wiki/sources/xss-cross-site-scripting-luiz-viana]] — DOM-based XSS como caso onde o WAF não tem visibilidade, porque o payload nunca é enviado ao servidor
 - [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] — WAF posicionado como última de sete camadas de defesa contra SQLi, sem expectativa de cobertura total
+- [[wiki/sources/sql-injection-sqlmap-luiz-viana]] — lado ofensivo: tampers do SQLMap (`space2comment`, `randomcase`) e `--random-agent`/`--delay` como técnicas de bypass de WAF/filtro anti-injeção

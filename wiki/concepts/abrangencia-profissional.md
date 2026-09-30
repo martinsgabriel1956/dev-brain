@@ -3,8 +3,8 @@ type: concept
 title: "Abrangência Profissional"
 aliases: ["abrangência", "T-shaped", "generalista", "interessado vs interessante", "breadth"]
 date_created: 2026-04-23
-date_updated: 2026-07-29
-source_count: 2
+date_updated: 2026-09-30
+source_count: 3
 tags: [carreira, contratação, liderança, comunicação, aprendizado]
 skill: tech-mentor-leadership
 status: stable
@@ -60,7 +60,12 @@ A fonte nota que **líderes tendem a ser generalistas** (cita Elon Musk como exe
 - [[concepts/dev-e-negocio]] — exemplo de abrangência aplicada: dev que entende negócio
 - [[entities/randy-nelson]] — origem do framework
 
+## Cruzamento de Funções com IA
+
+[[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]] trata a abrangência como necessidade de mercado: fronteiras entre funções estão diluindo e cruzá-las é o passo 2 do [[wiki/concepts/framework-compressao-cruzamento-valorizacao]].
+
 ## Key Sources
 
 - [[sources/tres-caracteristicas-melhor-candidato]]
 - [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — Hábito 12, prós/contras de especialista vs. generalista
+- [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]

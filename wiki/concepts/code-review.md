@@ -3,8 +3,8 @@ type: concept
 title: "Code Review"
 aliases: ["revisão de código", "pull request review", "PR review"]
 date_created: 2026-07-03
-date_updated: 2026-09-21
-source_count: 20
+date_updated: 2026-09-29
+source_count: 21
 tags: [code-review, qualidade, carreira, júnior, mentoria, grill-me, babysitting-de-agentes, quality-gate, under-engineering]
 skill: tech-mentor-leadership
 status: draft
@@ -137,6 +137,8 @@ A tensão que explica a diferença: responsabilizar cada dev pelo que coloca em 
 
 ## Key Sources
 
+
+- [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — revisão por IA só funciona com processo completo, revisor distinto do implementador e material claro para revisar (contrato) — ver [[wiki/concepts/revisao-por-agente-independente]]
 - [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — projeto solo sem leitura linha a linha; checklist de verificação verbalizado no prompt como terceira via entre leitura humana e harness de qualidade
 - [[wiki/sources/fatores-nao-tecnicos-codigo-ruim-bons-desenvolvedores-bernardo-lobato]] — armadilha de julgar código legado fora de contexto, comparando-o com código greenfield imaginário
 - [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] — GitHub Copilot revisando e aprovando PR de outro agente; decisão humana desloca de "ler o diff" para "definir a política de aprovação"

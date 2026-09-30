@@ -3,8 +3,8 @@ type: concept
 title: "Apache Kafka"
 aliases: ["kafka", "topics e partitions", "consumer groups", "kafka producer", "kafka consumer"]
 date_created: 2026-08-19
-date_updated: 2026-09-22
-source_count: 7
+date_updated: 2026-09-30
+source_count: 8
 tags: [kafka, topics, partitions, consumer-groups, mensageria, event-sourcing, murmur-hash, offset-commit, rebalance]
 skill: tech-mentor-backend
 status: draft
@@ -102,6 +102,10 @@ A taxonomia de eventos de partida é fechada: `MATCH_STARTED`, `GOAL`, `YELLOW_C
 
 [[wiki/entities/nubank]] processa **72 bilhões de eventos Kafka por dia** (dado de 2025) — toda ação do sistema (app aberto, saldo consultado, transação aprovada, pagamento processado) vira um evento publicado num tópico. Citação atribuída à InfoQ: "Nós modelamos tudo no banco como stream processing. Até batch jobs são distribuídos como streams de mensagens no Kafka" — ou seja, mesmo processamento em lote é modelado como consumo de stream, não como job separado do pipeline de eventos. Isso viabiliza **desacoplamento radical**: o serviço que aprova uma transação não precisa saber que existe um serviço de notificação push — ambos consomem do mesmo tópico de forma independente, cada um no próprio ritmo, sem chamada direta entre si. Ver [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]].
 
+## Kafka como Exemplo de Broker Assíncrono
+
+Kafka (ao lado de RabbitMQ) é citado como exemplo de broker de [[wiki/concepts/comunicacao-assincrona]] em [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]]; o vídeo não entra em partições nem offsets.
+
 ## Key Sources
 
 - [[wiki/sources/integration-patterns-eip]] — Enterprise Integration Patterns (Hohpe & Woolf) são padrões reutilizáveis para integração assíncrona. Os 3 mais práticos: Claim Check (armazena payload grande externamente, envia referência),...
@@ -111,3 +115,4 @@ A taxonomia de eventos de partida é fechada: `MATCH_STARTED`, `GOAL`, `YELLOW_C
 - [[wiki/sources/world-cup-system-design]] — slide deck da mesma aula: schema JSON completo do evento bruto vs. normalizado, taxonomia fechada de 11 tipos de evento, SQL de persistência em `matches`/`match_events`
 - [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — Kafka tratado como "black box" de streaming na arquitetura de referência de Event Sourcing (microsserviços coreografados publicam/consomem mudanças de estado); autor nota explicitamente que não precisa ser Kafka — qualquer ferramenta de streaming de grandes volumes de dados não transacionais serve
 - [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — 72 bilhões de eventos/dia em produção; batch jobs modelados como streams (citação InfoQ); desacoplamento radical entre serviço de aprovação de transação e serviço de notificação via consumo independente do mesmo tópico
+- [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — Kafka/RabbitMQ citados como brokers de mensageria (exemplo de assíncrono)

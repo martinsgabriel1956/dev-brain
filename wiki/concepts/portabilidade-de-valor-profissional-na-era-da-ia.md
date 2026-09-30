@@ -3,8 +3,8 @@ type: concept
 title: "Portabilidade de Valor Profissional na Era da IA"
 aliases: ["valor atrelado à ferramenta", "output proporcional à ferramenta", "industrialização do dev"]
 date_created: 2026-09-14
-date_updated: 2026-09-14
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [carreira, dependencia-ia, valor-profissional, portabilidade, industrializacao]
 skill: tech-mentor-leadership
 status: draft
@@ -35,6 +35,11 @@ Há uma tensão parcial com a tese do amplificador, segundo a qual quem tem mais
 - [[wiki/concepts/diretor-de-ia-metafora-do-cinema]] — a insatisfação emocional relatada nesta fonte está ligada à percepção de perda de valor pessoal
 - [[wiki/concepts/fundacao-tecnica]] — fundação sólida é o que continua sendo portável entre empregos e ciclos de mercado, mesmo quando a ferramenta específica não é
 
+## Compressão de Esforço e Valor Percebido
+
+[[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]] afirma (sem dado) que menos esforço significa menos valor percebido e propõe migrar valor para contexto e julgamento. Ver [[wiki/concepts/framework-compressao-cruzamento-valorizacao]].
+
 ## Key Sources
 
 - [[wiki/sources/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico]] — origem da tese; paralelo com a industrialização; hipótese especulativa de encolhimento do valor profissional em 1-2 gerações
+- [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]

@@ -3,8 +3,8 @@ type: concept
 title: "Overhead de Coordenação e Tamanho de Equipe"
 aliases: ["quantidade de pessoas vs eficiência", "contratação como métrica de vaidade", "headcount vaidade"]
 date_created: 2026-08-26
-date_updated: 2026-08-26
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [liderança, gestão-de-times, eficiência, mercado-de-trabalho, startups]
 skill: tech-mentor-leadership
 status: stub
@@ -32,6 +32,11 @@ O padrão apareceu de forma extrema na bolha da internet (2000-2001): posições
 - [[wiki/concepts/custo-de-capital-e-contratacao-tech]] — o mecanismo financeiro que torna crescimento de headcount atrativo para investidor em ciclos de dinheiro fácil
 - [[wiki/concepts/body-shop-terceirizacao]] — modelo de contratação em volume, sem correlação direta com necessidade real de projeto
 
+## Segunda Fonte: Times Menores por Produtividade, Não por Economia
+
+[[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]] chega à mesma conclusão de outro ângulo: com a IA, times menores valem por menos barreiras e menos custo de comunicação, ancorados na [[wiki/concepts/lei-de-brooks]]. Diferença: aqui a redução vem acompanhada de cada pessoa acumular papéis ([[wiki/concepts/multiplos-papeis-em-times-pequenos]]).
+
 ## Key Sources
 
 - [[wiki/sources/organizando-equipes-de-tecnologia-fabio-akita]]
+- [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]

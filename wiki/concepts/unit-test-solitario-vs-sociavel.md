@@ -3,8 +3,8 @@ type: concept
 title: "Unit Test Solitário vs. Sociável"
 aliases: ["solitary unit test", "sociable unit test", "teste unitário solitário", "teste unitário sociável"]
 date_created: 2026-07-07
-date_updated: 2026-09-04
-source_count: 8
+date_updated: 2026-09-29
+source_count: 9
 tags: [testes, unit-test, tdd, martin-fowler, terminologia]
 skill: tech-mentor-testing
 status: stable
@@ -51,6 +51,10 @@ Continua usando "unit test" para os dois casos, qualificando com **"solitary"** 
 - [[teste-de-integracao-estreito-vs-amplo]] — confusão irmã sobre o termo "integration test"
 - [[wiki/entities/martin-fowler]]
 
+## Classe como menor unidade
+
+[[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] defende que a menor unidade certa em OOP é geralmente a classe, não o método — posição próxima do estilo sociável, embora a fonte não use o termo ([[wiki/concepts/classe-como-unidade-de-teste]]).
+
 ## Key Sources
 
 - [[wiki/sources/integration-test-martin-fowler]]
@@ -61,3 +65,4 @@ Continua usando "unit test" para os dois casos, qualificando com **"solitary"** 
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — exemplo do teste de `add` que "sociabiliza" ao passar a chamar `db.save` real via SQLite, deixando de ser solitário
 - [[wiki/sources/unit-test-xunitpatterns]] — fonte primária isolada da definição-raiz de "unit test": critério é o tamanho do SUT, não a técnica de isolamento; contraste formal com customer test
 - [[wiki/sources/jmock]] — verbete de "Tools" do xUnitPatterns.com: JMock como ferramenta que operacionaliza o unit test solitário via Configuration Interface
+- [[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] — classe como menor unidade a testar

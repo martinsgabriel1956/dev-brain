@@ -3,8 +3,8 @@ type: concept
 title: "Observabilidade"
 aliases: ["observabilidade", "observability", "três pilares", "metrics logs traces"]
 date_created: 2026-04-22
-date_updated: 2026-09-18
-source_count: 13
+date_updated: 2026-09-30
+source_count: 14
 tags: [observabilidade, metricas, logs, traces, prometheus, sre, infraestrutura]
 skill: tech-mentor-system-design
 status: stable
@@ -167,6 +167,10 @@ A entrada de agentes de IA na pipeline adiciona uma pergunta específica aos tr�
 
 [[concepts/sli]] · [[concepts/slo]] · [[concepts/error-budget]] · [[concepts/blameless-post-mortem]] · [[concepts/circuit-breaker]] · [[concepts/service-mesh]] · [[wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp]]
 
+## Observabilidade como Resposta ao Debug Assíncrono
+
+[[wiki/entities/bernardo-lobato]] nomeia o debug como o primeiro desafio da [[wiki/concepts/comunicacao-assincrona]]: sem passo a passo linear, é preciso depurar vários sistemas sem saber a ordem do problema. Ferramentas de rastreabilidade ([[wiki/concepts/distributed-tracing]]) endereçam isso; o autor adia o detalhe para o tema de observabilidade.
+
 ## Key Sources
 
 - [[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] — declaração de intenção editorial: métricas relevantes, configuração e confiabilidade de alertas, disaster recovery, observabilidade em sistemas distribuídos e logs estruturados anunciados como próximo tema de estudo/conteúdo — sem claim técnico novo, plano futuro
@@ -182,3 +186,4 @@ A entrada de agentes de IA na pipeline adiciona uma pergunta específica aos tr�
 - [[wiki/sources/monitoramento-aplicacoes-ia-grafana-cloud-opentelemetry]] — onboarding prático do Grafana Cloud (plano gratuito permanente, data sources automáticos), boa prática de batch de telemetria, e tensão não resolvida entre modo "Direct" e a regra de sempre passar pelo Collector
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — tracing de LLM e latência entre chamadas de agentes como extensão dos três pilares clássicos; Open Telemetry incorporando instrumentação orientada a IA
 - [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — caso Alexandria: plataforma de logs construída internamente por custo de escala (600 TB/dia), arquitetura de 4 componentes (ingestão Kafka microbatch, processamento, storage S3 colunar 95% compressão, query engine distribuída), 50% mais barata que a solução terceirizada anterior
+- [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — debug em fluxo assíncrono como motivação para rastreabilidade

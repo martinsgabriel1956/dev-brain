@@ -3,8 +3,8 @@ type: concept
 title: "Monolito Modular"
 aliases: ["monolito modular", "modular monolith", "majestic monolith", "bounded modules"]
 date_created: 2026-08-10
-date_updated: 2026-09-01
-source_count: 8
+date_updated: 2026-09-30
+source_count: 9
 tags: [monolito-modular, monolito, arquitetura, ports-adapters, migracao, backend]
 skill: tech-mentor-backend
 status: draft
@@ -52,6 +52,10 @@ O monolito modular é a **etapa intermediária** entre um [[wiki/concepts/monoli
 
 Contratos entre módulos garantem [[wiki/concepts/separation-of-concerns]] e [[wiki/concepts/encapsulamento]]. Relacionado a [[wiki/concepts/contrato-de-api]] (aqui o "contrato" é in-process, não necessariamente HTTP). Ver também a variante frontend em [[wiki/concepts/monolito-modular-frontend]].
 
+## Bounded Context como Critério de Modularização
+
+[[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] afirma que bounded contexts "facilitam a modularização" e reduzem acoplamento entre módulos/times — reforça o uso de bounded context como unidade de módulo já descrito nesta página. Ver [[wiki/concepts/bounded-context]].
+
 ## Key sources
 
 - [[wiki/sources/monolith-first-martin-fowler]] — fonte primária de Monolith First: MicroservicePremium, YAGNI e dificuldade de bounded contexts como os dois argumentos que justificam o monolito modular como etapa inicial
@@ -62,3 +66,4 @@ Contratos entre módulos garantem [[wiki/concepts/separation-of-concerns]] e [[w
 - [[wiki/sources/evoluir-software-sem-pagar-preco-de-microsservicos]] — "monolito é uma escolha de deploy": múltiplos entrypoints (`main.ts`) fazendo bootstrap de diferentes subconjuntos de módulos a partir do mesmo codebase; limite (redeploy cruzado) e evolução para [[wiki/concepts/composicao-de-modulos]] via monorepo
 - [[wiki/sources/os-10-principios-arquitetura-modular-valdemar-neto]] — distinção formal monolito modular vs. [[wiki/concepts/arquitetura-modular|arquitetura modular]], os 10 princípios para escalar arquitetura modular, argumento de que microsserviços não compõem
 - [[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] — os três tipos de módulo (domínio, infraestrutura pura, feature) e a estrutura interna Core/Supporting Infrastructure/Infraestrutura Pura
+- [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — bounded context como critério de modularização
