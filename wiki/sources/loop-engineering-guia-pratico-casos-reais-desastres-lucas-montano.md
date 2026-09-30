@@ -54,7 +54,7 @@ Vídeo prático (não teórico) sobre Loop Engineering: como o autor efetivament
 - [[wiki/concepts/mcp-server|MCP]]
 - [[wiki/concepts/task-looper]]
 - [[wiki/concepts/rfc-request-for-comments|RFC]]
-- [[wiki/concepts/architecture-decision-record|ADR]]
+- [[wiki/concepts/adr-architecture-decision-record|ADR]]
 
 ## Open Questions
 

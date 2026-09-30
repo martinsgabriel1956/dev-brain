@@ -3,8 +3,8 @@ type: concept
 title: "AI Gateway / LLM Router (Proxy Multi-Provider)"
 aliases: ["ai gateway", "llm gateway", "proxy multi-provider", "litellm", "portkey"]
 date_created: 2026-08-05
-date_updated: 2026-09-15
-source_count: 4
+date_updated: 2026-09-30
+source_count: 5
 tags: [tech-mentor-ai, ai-gateway, llm-router, proxy-pattern, fallback, multi-provider]
 skill: tech-mentor-ai
 status: stub
@@ -61,9 +61,14 @@ O modelo mais barato nem sempre serve para toda parte de um sistema. Uma pipelin
 - Truncamento inteligente de prompt e sumarização para economizar tokens
 - Testes A/B de custo × qualidade antes de trocar de modelo em produção
 
+## Provider Routing Gerenciado (OpenRouter)
+
+[[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] mostra o lado de fallback dentro de um gateway gerenciado: o roteamento automático é valioso, mas sem restringir ([[wiki/concepts/pool-de-provedores-llm]]) pode cair em provedor de menor [[wiki/concepts/quantizacao-de-llm|quantização]] ou sem [[wiki/concepts/zero-data-retention|ZDR]].
+
 ## Key Sources
 
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]]
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — triângulo performance/custo/qualidade, uso de múltiplos modelos por pipeline, e alavancas concretas de controle de custo (tokens, cache, truncamento, sumarização, teste A/B)
 - [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] — caso medido de modelo forte/coordenador + modelo barato/worker num único pipeline multiagente
 - [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]] — prompt caching como alavanca de custo detalhada por provider (Anthropic, OpenAI, OpenRouter)
+- [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] — roteamento gerenciado com fallback: pool de provedores e riscos da chamada crua

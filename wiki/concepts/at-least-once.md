@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/dlq-event-patterns]]: [[concepts/at-least-once]]
-- Em [[wiki/sources/nats-jetstream]]: [[concepts/at-least-once]]
+- Em [[wiki/sources/dlq-event-patterns]]: [[wiki/concepts/at-least-once]]
+- Em [[wiki/sources/nats-jetstream]]: [[wiki/concepts/at-least-once]]
 
 ## Pendências
 

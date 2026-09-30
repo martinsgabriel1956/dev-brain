@@ -26,7 +26,7 @@ Cada projeto é um mundo novo: pessoas novas, requisitos novos, frameworks novos
 
 - Gerencie expectativas: "Nunca fiz isso, mas quero aprender."
 - Não finja que sabe.
-- Se travar, use [[concepts/pair-programming]] para kickoff.
+- Se travar, use [[wiki/concepts/pair-programming]] para kickoff.
 
 ## Reforço: Por Que Evitar Tarefas Difíceis é Pior do que Arriscar
 
@@ -34,5 +34,5 @@ Cada projeto é um mundo novo: pessoas novas, requisitos novos, frameworks novos
 
 ## Key Sources
 
-- [[sources/9-habitos-programador-junior]]
+- [[wiki/sources/9-habitos-programador-junior]]
 - [[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]] — reforça o argumento com o tripé calma/coragem/cara-de-pau e a observação de que tarefas complexas demais raramente chegam a quem está começando

@@ -36,11 +36,11 @@ Elasticsearch/OpenSearch: motor de busca distribuído baseado em Lucene. BM25 co
 
 - [[entities/elasticsearch]]
 - [[entities/opensearch]]
-- [[concepts/bm25]]
+- [[wiki/concepts/bm25]]
 - [[wiki/concepts/full-text-search]]
-- [[concepts/faceted-search]]
-- [[concepts/cdc]]
-- [[entities/lucene]]
+- [[wiki/concepts/faceted-search]]
+- [[wiki/concepts/cdc]]
+- [[wiki/entities/lucene]]
 
 ## Open Questions
 

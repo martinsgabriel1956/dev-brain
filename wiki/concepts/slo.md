@@ -12,7 +12,7 @@ status: stable
 
 # SLO — Service Level Objective
 
-Meta interna de confiabilidade — threshold do [[concepts/sli]] que o time se compromete a manter. É a fonte da verdade para decisões operacionais (não o [[concepts/sla]]).
+Meta interna de confiabilidade — threshold do [[wiki/concepts/sli]] que o time se compromete a manter. É a fonte da verdade para decisões operacionais (não o [[wiki/concepts/sla]]).
 
 ## Exemplos
 
@@ -28,18 +28,18 @@ Freshness:       "95% dos dados da dashboard atualizados em < 5 minutos"
 - Muito baixo (95%) → usuários insatisfeitos
 - **Regra:** comece com o que você já entrega hoje, meça 30 dias, depois decida o target
 
-SLO interno é sempre mais rigoroso que o [[concepts/sla]] externo — a diferença é a margem de segurança antes de gerar penalidade contratual.
+SLO interno é sempre mais rigoroso que o [[wiki/concepts/sla]] externo — a diferença é a margem de segurança antes de gerar penalidade contratual.
 
 ## Relação com Error Budget
 
-`Error Budget = 1 - SLO`. SLO de 99.9% em 30 dias = 43.2 minutos de indisponibilidade permitida. Ver [[concepts/error-budget]].
+`Error Budget = 1 - SLO`. SLO de 99.9% em 30 dias = 43.2 minutos de indisponibilidade permitida. Ver [[wiki/concepts/error-budget]].
 
 ## SLO É Sobre Quem Faz o Acordo, Não Sobre o Número
 
-Um exemplo didático torna essa distinção concreta: o time de banco de dados de um e-commerce promete "99,9% disponível" para o time de aplicação — isso é um SLO, porque ambos são áreas da mesma empresa, sem multa envolvida se a meta falhar (só "problema interno"). Se esse mesmo compromisso de disponibilidade fosse feito por uma empresa de banco de dados contratada externamente, o mesmo número deixaria de ser um SLO e passaria a ser um [[concepts/sla]].
+Um exemplo didático torna essa distinção concreta: o time de banco de dados de um e-commerce promete "99,9% disponível" para o time de aplicação — isso é um SLO, porque ambos são áreas da mesma empresa, sem multa envolvida se a meta falhar (só "problema interno"). Se esse mesmo compromisso de disponibilidade fosse feito por uma empresa de banco de dados contratada externamente, o mesmo número deixaria de ser um SLO e passaria a ser um [[wiki/concepts/sla]].
 
 ## Key Sources
 
 - [[wiki/sources/performance-methods]] — 3 frameworks diagnósticos: USE (Utilization/Saturation/Errors — para recursos), RED (Rate/Errors/Duration — para serviços), Four Golden Signals (Google SRE — Latency/Traffic/Errors/Saturation). k6...
-- [[sources/sre-sli-slo-sla]]
-- [[sources/slo-sli-sla-exemplo-ecommerce]]
+- [[wiki/sources/sre-sli-slo-sla]]
+- [[wiki/sources/slo-sli-sla-exemplo-ecommerce]]

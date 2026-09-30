@@ -37,8 +37,8 @@ Enterprise Integration Patterns (Hohpe & Woolf) são padrões reutilizáveis par
 - [[concepts/claim-check-pattern]]
 - [[concepts/competing-consumers]]
 - [[concepts/routing-slip]]
-- [[concepts/event-driven-architecture]]
-- [[concepts/kafka]]
+- [[wiki/concepts/event-driven-architecture]]
+- [[wiki/concepts/kafka]]
 - [[concepts/dlq-event-patterns]]
 
 ## Open Questions

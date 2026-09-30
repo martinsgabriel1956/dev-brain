@@ -46,19 +46,19 @@ spec:
 
 ## Quando Evitar
 
-- Quando rollback rápido é crítico → use [[concepts/blue-green-deploy]]
-- Quando precisa validar métricas antes de escalar → use [[concepts/canary-release]]
+- Quando rollback rápido é crítico → use [[wiki/concepts/blue-green-deploy]]
+- Quando precisa validar métricas antes de escalar → use [[wiki/concepts/canary-release]]
 - Quando mudança não é backward compatible com tráfego misto
 
 ## Comparativo
 
-→ [[concepts/deploy-strategies]]
+→ [[wiki/concepts/deploy-strategies]]
 
 ## Alternativa mais simples (e mais arriscada)
 
-Se você não substituir gradualmente e simplesmente desligar tudo e subir a nova versão de uma vez, isso é [[concepts/recreate-deployment]] — mais simples, mas com downtime na janela entre shutdown e start.
+Se você não substituir gradualmente e simplesmente desligar tudo e subir a nova versão de uma vez, isso é [[wiki/concepts/recreate-deployment]] — mais simples, mas com downtime na janela entre shutdown e start.
 
 ## Key Sources
 
-- [[sources/blue-green-canary-rolling]]
-- [[sources/tipos-de-deploy]]
+- [[wiki/sources/blue-green-canary-rolling]]
+- [[wiki/sources/tipos-de-deploy]]

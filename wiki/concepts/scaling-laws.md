@@ -48,7 +48,7 @@ O importante: as curvas são **smooth e previsíveis** — sem cliffs ou thresho
 
 - [[foundation-model]] — modelos treinados a escala suficiente para emergência de capacidades
 - [[in-context-learning]] — capacidade que melhora com escala de forma desproporcionalmente rápida
-- [[concepts/fine-tuning]] — alternativa quando compute de pré-treino não está disponível
+- [[wiki/concepts/fine-tuning]] — alternativa quando compute de pré-treino não está disponível
 
 ## Fontes
 

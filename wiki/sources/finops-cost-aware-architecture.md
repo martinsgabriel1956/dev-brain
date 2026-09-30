@@ -34,9 +34,9 @@ FinOps é a prática de tornar custo de cloud uma variável de engenharia, não 
 
 ## Conceitos
 
-- [[concepts/finops]] — disciplina de custo como engenharia
+- [[wiki/concepts/finops]] — disciplina de custo como engenharia
 - [[concepts/unit-economics]] — custo por unidade de negócio
-- [[concepts/storage-tiering]] — Hot/Warm/Cold já documentado
+- [[wiki/concepts/storage-tiering]] — Hot/Warm/Cold já documentado
 - [[concepts/right-sizing]] — dimensionamento adequado de instâncias
 - [[concepts/spot-instances]] — arquitetura spot-aware para workloads tolerantes a interrupção
 

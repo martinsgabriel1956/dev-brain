@@ -35,9 +35,9 @@ Temporal: Durable Execution — workflows são funções que persistem estado au
 ## Entities & Concepts Touched
 
 - [[entities/temporal]]
-- [[concepts/durable-execution]]
+- [[wiki/concepts/durable-execution]]
 - [[concepts/workflow-orchestration]]
-- [[concepts/saga-pattern]]
+- [[wiki/concepts/saga-pattern]]
 - [[concepts/activities-temporal]]
 - [[concepts/signals-temporal]]
 

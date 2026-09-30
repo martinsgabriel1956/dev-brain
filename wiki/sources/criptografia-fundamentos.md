@@ -38,13 +38,13 @@ Criptografia fundamental: hash (irreversível), encryption (reversível com chav
 
 ## Entities & Concepts Touched
 
-- [[concepts/aes-gcm]]
+- [[wiki/concepts/aes-gcm]]
 - [[concepts/envelope-encryption]]
 - [[concepts/kdf]]
-- [[concepts/pki]]
+- [[wiki/concepts/pki]]
 - [[concepts/x509]]
 - [[concepts/ed25519]]
-- [[concepts/hmac]]
+- [[wiki/concepts/hmac]]
 - [[concepts/tde]]
 
 ## Open Questions

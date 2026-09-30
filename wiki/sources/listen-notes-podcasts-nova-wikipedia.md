@@ -67,8 +67,8 @@ Wenbin Fang explica como podcasts substituíram a Wikipédia como sua principal 
 
 ## Entidades Mencionadas
 
-- [[entities/wenbin-fang]] — autor
-- [[entities/listen-notes]] — produto criado para resolver esse problema
+- [[wiki/entities/wenbin-fang]] — autor
+- [[wiki/entities/listen-notes]] — produto criado para resolver esse problema
 - [[wikipedia]] — referência de aprendizado informal na era Web 2.0
 - [[spotify]] — comparativo de volume
 
@@ -76,11 +76,11 @@ Wenbin Fang explica como podcasts substituíram a Wikipédia como sua principal 
 
 ## Conceitos
 
-- [[concepts/aprendizado-informal]] — consumo de conhecimento sem estrutura formal (Wikipédia, podcasts)
+- [[wiki/concepts/aprendizado-informal]] — consumo de conhecimento sem estrutura formal (Wikipédia, podcasts)
 - [[aprendizado-por-topico]] — seguir assuntos em vez de canais/shows
 - [[low-thinking-tasks]] — tarefas de baixo esforço cognitivo ideais para consumo passivo de conteúdo
 - [[listen-later]] — playlist para consumo assíncrono de episódios
-- [[concepts/one-person-company]] — empresa que surgiu de uma necessidade pessoal real
+- [[wiki/concepts/one-person-company]] — empresa que surgiu de uma necessidade pessoal real
 
 ---
 

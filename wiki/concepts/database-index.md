@@ -75,7 +75,7 @@ Um índice composto (ex.: `account_id` + `created_at` para acelerar a tela de ex
 
 ## Key Sources
 
-- [[sources/banco-de-dados]]
+- [[wiki/sources/banco-de-dados]]
 - [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]] — índice como dado que precisa de manutenção a cada escrita; ligação entre índice e páginas/buffer pool
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] — índice hash como mecanismo de garantia de unicidade (e-mail único)

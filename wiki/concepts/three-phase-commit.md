@@ -12,7 +12,7 @@ status: stable
 
 # Three-Phase Commit (3PC)
 
-Extensão do [[concepts/two-phase-commit]] que adiciona fase PreCommit para eliminar blocking quando coordinator falha. **Uso real: acadêmico.**
+Extensão do [[wiki/concepts/two-phase-commit]] que adiciona fase PreCommit para eliminar blocking quando coordinator falha. **Uso real: acadêmico.**
 
 ## As Três Fases
 
@@ -36,7 +36,7 @@ Se coordinator cai **antes do PreCommit**: participants não confirmaram → ABO
 
 ## Por que Não é Usado em Produção
 
-Assume que partições de rede não ocorrem. Em redes reais, partição após PreCommit causa [[concepts/split-brain]]:
+Assume que partições de rede não ocorrem. Em redes reais, partição após PreCommit causa [[wiki/concepts/split-brain]]:
 
 ```
 Coordinator + A  ←──✗──→  B
@@ -58,8 +58,8 @@ B: isolado, timeout → ABORT
 
 ## Alternativas para Produção
 
-→ [[concepts/saga-pattern]], [[concepts/outbox-pattern]], [[concepts/raft-paxos]], [[concepts/distributed-transactions]]
+→ [[wiki/concepts/saga-pattern]], [[wiki/concepts/outbox-pattern]], [[wiki/concepts/raft-paxos]], [[wiki/concepts/distributed-transactions]]
 
 ## Key Sources
 
-- [[sources/3pc]]
+- [[wiki/sources/3pc]]

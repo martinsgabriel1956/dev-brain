@@ -38,11 +38,11 @@ gRPC usa HTTP/2 + Protobuf para comunicação entre serviços. Schema-first via 
 
 ## Entities & Concepts Touched
 
-- [[concepts/grpc]]
-- [[concepts/protobuf]]
-- [[concepts/http2]]
+- [[wiki/concepts/grpc]]
+- [[wiki/concepts/protobuf]]
+- [[wiki/concepts/http2]]
 - [[concepts/bidirectional-streaming]]
-- [[concepts/service-mesh]]
+- [[wiki/concepts/service-mesh]]
 
 ## Open Questions
 

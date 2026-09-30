@@ -16,7 +16,7 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/por-que-devs-nao-terminam-projetos]]: **Cognitive load sem sistema**: sem roadmap e tracking, a memória de trabalho satura e gera burnout — ciência é chamada de Cognitive Load Theory. → [[concepts/carga-cognitiva]]
+- Em [[wiki/sources/por-que-devs-nao-terminam-projetos]]: **Cognitive load sem sistema**: sem roadmap e tracking, a memória de trabalho satura e gera burnout — ciência é chamada de Cognitive Load Theory. → [[wiki/concepts/carga-cognitiva]]
 
 ## Pendências
 

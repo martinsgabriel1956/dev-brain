@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/expand-contract]]: [[concepts/zero-downtime]]
-- Em [[wiki/sources/migrations-schema-evolution]]: [[concepts/zero-downtime]]
+- Em [[wiki/sources/expand-contract]]: [[wiki/concepts/zero-downtime]]
+- Em [[wiki/sources/migrations-schema-evolution]]: [[wiki/concepts/zero-downtime]]
 
 ## Pendências
 

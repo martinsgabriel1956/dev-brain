@@ -32,19 +32,19 @@ Abstraction bloat cria um loop de custo:
 1. Agente gera arquitetura complexa desnecessária
 2. Codebase cresce em número de arquivos e indireções
 3. Próximas features consumem mais tokens de contexto
-4. Agente tem maior chance de perder dependências (ver [[concepts/navigation-paradox]])
+4. Agente tem maior chance de perder dependências (ver [[wiki/concepts/navigation-paradox]])
 5. Custo por feature sobe em tokens, revisão e bugs
 
 ## Como Mitigar
 
 - **Supervisão ativa:** questione toda abstração que você não teria criado sem a IA
 - **Prompts explícitos:** "implemente de forma simples e direta, sem abstrações preventivas"
-- **YAGNI como filtro:** ver [[concepts/yagni]]
+- **YAGNI como filtro:** ver [[wiki/concepts/yagni]]
 - **Leia o código gerado:** não confie só nos testes passando
 
 ## Key Sources
 
-- [[sources/addy-osmani-80-problem-agentic-coding]]
-- [[sources/clean-architecture-ia-custo-real]]
-- [[sources/super-productivity-ai-architecture-guide]]
-- [[sources/overengineering-carol-ate-quinta]]
+- [[wiki/sources/addy-osmani-80-problem-agentic-coding]]
+- [[wiki/sources/clean-architecture-ia-custo-real]]
+- [[wiki/sources/super-productivity-ai-architecture-guide]]
+- [[wiki/sources/overengineering-carol-ate-quinta]]

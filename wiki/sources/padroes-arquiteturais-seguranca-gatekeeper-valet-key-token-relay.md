@@ -43,15 +43,15 @@ Três padrões arquiteturais de segurança que agem no nível do design, não do
 
 ## Entities & Concepts Touched
 
-- [[concepts/gatekeeper-pattern]]
-- [[concepts/valet-key-pattern]]
-- [[concepts/token-relay-pattern]]
-- [[concepts/attack-surface]]
-- [[concepts/waf]]
-- [[concepts/defense-in-depth]]
-- [[concepts/rate-limiting]]
-- [[concepts/media-upload-pattern]]
-- [[entities/bernardo-lobato]]
+- [[wiki/concepts/gatekeeper-pattern]]
+- [[wiki/concepts/valet-key-pattern]]
+- [[wiki/concepts/token-relay-pattern]]
+- [[wiki/concepts/attack-surface]]
+- [[wiki/concepts/waf]]
+- [[wiki/concepts/defense-in-depth]]
+- [[wiki/concepts/rate-limiting]]
+- [[wiki/concepts/media-upload-pattern]]
+- [[wiki/entities/bernardo-lobato]]
 
 ## Open Questions
 

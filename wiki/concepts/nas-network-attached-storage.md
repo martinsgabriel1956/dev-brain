@@ -12,7 +12,7 @@ status: stub
 
 # NAS (Network Attached Storage)
 
-Servidor de armazenamento que **você mesmo monta e gerencia**: instala [[concepts/hd-disco-rigido|HDs]] nos compartimentos e o conecta à rede local, permitindo que várias pessoas acessem os arquivos remotamente dentro da mesma rede.
+Servidor de armazenamento que **você mesmo monta e gerencia**: instala [[wiki/concepts/hd-disco-rigido|HDs]] nos compartimentos e o conecta à rede local, permitindo que várias pessoas acessem os arquivos remotamente dentro da mesma rede.
 
 ## NAS vs. nuvem pública
 

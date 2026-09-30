@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/tls-mtls-vpn]]: [[concepts/ztna]]
-- Em [[wiki/sources/zero-trust]]: [[concepts/ztna]]
+- Em [[wiki/sources/tls-mtls-vpn]]: [[wiki/concepts/ztna]]
+- Em [[wiki/sources/zero-trust]]: [[wiki/concepts/ztna]]
 
 ## Pendências
 

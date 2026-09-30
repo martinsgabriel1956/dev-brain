@@ -76,8 +76,8 @@ export function Button({ label, variant, onPress, disabled }: ButtonProps) {
 
 ## Ver também
 
-- [[concepts/mobile-cross-platform-decision]] — design system unificado entre plataformas
-- [[concepts/mobile-feature-flags]] — flags para rollout de novos componentes
+- [[wiki/concepts/mobile-cross-platform-decision]] — design system unificado entre plataformas
+- [[wiki/concepts/mobile-feature-flags]] — flags para rollout de novos componentes
 
 ## Key Sources
 

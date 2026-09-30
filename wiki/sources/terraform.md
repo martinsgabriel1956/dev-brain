@@ -39,11 +39,11 @@ Terraform é o padrão de IaC. State é o coração — armazena o mapa entre c�
 ## Entities & Concepts Touched
 
 - [[concepts/terraform]]
-- [[concepts/iac]]
-- [[concepts/terraform-state]]
-- [[concepts/terraform-modules]]
-- [[concepts/terragrunt]]
-- [[concepts/drift-detection]]
+- [[wiki/concepts/iac]]
+- [[wiki/concepts/terraform-state]]
+- [[wiki/concepts/terraform-modules]]
+- [[wiki/concepts/terragrunt]]
+- [[wiki/concepts/drift-detection]]
 
 ## Open Questions
 

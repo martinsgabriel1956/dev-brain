@@ -35,11 +35,11 @@ Devs que focam em "fazer funcionar" sem perguntar "o que acontece quando cresce?
 
 ## Relações
 
-- [[concepts/acoplamento]] — dependências são o maior gargalo de sistemas que crescem
-- [[concepts/observabilidade]] — ver o sistema como sistema vivo em produção
-- [[concepts/paridade-local-producao]] — sistemas em prod se comportam diferente do dev
+- [[wiki/concepts/acoplamento]] — dependências são o maior gargalo de sistemas que crescem
+- [[wiki/concepts/observabilidade]] — ver o sistema como sistema vivo em produção
+- [[wiki/concepts/paridade-local-producao]] — sistemas em prod se comportam diferente do dev
 
 ## Key Sources
 
-- [[sources/roadmap-dev-senior-2026]]
-- [[sources/pensamento-estruturado-resolucao-de-problemas]] — complementa: pensar sobre o problema antes de qualquer código
+- [[wiki/sources/roadmap-dev-senior-2026]]
+- [[wiki/sources/pensamento-estruturado-resolucao-de-problemas]] — complementa: pensar sobre o problema antes de qualquer código

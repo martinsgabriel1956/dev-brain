@@ -3,8 +3,8 @@ type: concept
 title: "Data Residency"
 aliases: ["residência de dados", "data sovereignty", "soberania de dados"]
 date_created: 2026-05-05
-date_updated: 2026-05-05
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [data-residency, compliance, lgpd, gdpr, multi-region, architecture]
 skill: tech-mentor-security
 status: stub
@@ -27,8 +27,9 @@ Em SaaS multi-tenant, data residency por cliente exige separação de storage (D
 
 ## Key Sources
 
-- [[sources/compliance]] — data residency como um dos 3 cenários onde compliance muda arquitetura
+- [[wiki/sources/compliance]] — data residency como um dos 3 cenários onde compliance muda arquitetura
 
 ## Conceitos Relacionados
 
-[[concepts/compliance]] · [[concepts/multi-tenancy]] · [[concepts/db-sharding]]
+[[wiki/concepts/compliance]] · [[wiki/concepts/multi-tenancy]] · [[wiki/concepts/db-sharding]]
+- [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] — região do provedor de LLM afeta latência e residência de dados

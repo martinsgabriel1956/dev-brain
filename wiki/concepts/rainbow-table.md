@@ -12,7 +12,7 @@ status: stable
 
 # Rainbow Table
 
-Tabela pré-computada que mapeia hashes de volta às senhas originais. É uma forma de [[concepts/ataque-pre-computacao]]: o trabalho computacional é feito **uma vez** e reutilizado contra qualquer banco que use o mesmo algoritmo de hash sem [[concepts/salt]].
+Tabela pré-computada que mapeia hashes de volta às senhas originais. É uma forma de [[wiki/concepts/ataque-pre-computacao]]: o trabalho computacional é feito **uma vez** e reutilizado contra qualquer banco que use o mesmo algoritmo de hash sem [[wiki/concepts/salt]].
 
 Não é "descriptografia" — a função de hash continua unidirecional. A rainbow table simplesmente encontra uma entrada que produza aquele hash por busca em tabela.
 
@@ -20,7 +20,7 @@ Não é "descriptografia" — a função de hash continua unidirecional. A rainb
 
 ## Como Funciona
 
-1. Atacante pega uma wordlist (ex: [[entities/rockyou]] — 29 bilhões de senhas reais)
+1. Atacante pega uma wordlist (ex: [[wiki/entities/rockyou]] — 29 bilhões de senhas reais)
 2. Gera o hash de cada senha: `hash("123456") → e10adc...`
 3. Armazena a tabela `hash → senha`
 4. Quando um banco vaza, busca cada hash do banco na tabela → senha encontrada em milissegundos
@@ -31,7 +31,7 @@ O trabalho de computar os hashes foi feito uma vez; o reaproveitamento é ilimit
 
 ## Por Que Salt Derrota Rainbow Tables
 
-Com [[concepts/salt]] único por usuário:
+Com [[wiki/concepts/salt]] único por usuário:
 ```
 hash("123456" + salt_maria) → resultado único para Maria
 hash("123456" + salt_julia) → resultado diferente para Julia
@@ -49,14 +49,14 @@ Sites como "MD5 Decrypt" não revertem hashes criptograficamente. Eles consultam
 
 ## Relação com Outros Conceitos
 
-- [[concepts/ataque-pre-computacao]] — categoria de ataque à qual pertence
-- [[concepts/salt]] — técnica que invalida rainbow tables
-- [[concepts/hashing]] — propriedades das funções de hash
-- [[concepts/password-hashing]] — contexto de defesa
-- [[entities/rockyou]] — wordlist base para rainbow tables modernas
+- [[wiki/concepts/ataque-pre-computacao]] — categoria de ataque à qual pertence
+- [[wiki/concepts/salt]] — técnica que invalida rainbow tables
+- [[wiki/concepts/hashing]] — propriedades das funções de hash
+- [[wiki/concepts/password-hashing]] — contexto de defesa
+- [[wiki/entities/rockyou]] — wordlist base para rainbow tables modernas
 
 ## Key Sources
 
-- [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
+- [[wiki/sources/seguranca-armazenamento-senhas-banco-de-dados]]
 - [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]]

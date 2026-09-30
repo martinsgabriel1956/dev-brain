@@ -33,11 +33,11 @@ Graceful Degradation é o princípio de continuar operando com capacidade reduzi
 
 ## Conceitos
 
-- [[concepts/graceful-degradation]] — já existe no index
-- [[concepts/circuit-breaker]] — detecta falha e aciona fallback automaticamente
-- [[concepts/bulkhead]] — isolamento previne cascata
-- [[concepts/feature-flags]] — mecanismo de disable programático
-- [[concepts/falha-em-cascata]] — o que graceful degradation previne
+- [[wiki/concepts/graceful-degradation]] — já existe no index
+- [[wiki/concepts/circuit-breaker]] — detecta falha e aciona fallback automaticamente
+- [[wiki/concepts/bulkhead]] — isolamento previne cascata
+- [[wiki/concepts/feature-flags]] — mecanismo de disable programático
+- [[wiki/concepts/falha-em-cascata]] — o que graceful degradation previne
 
 ## Key Sources
 

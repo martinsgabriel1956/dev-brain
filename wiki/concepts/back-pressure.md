@@ -90,14 +90,14 @@ fromEvent(eventSource, "data").pipe(
 ## Relação com outros conceitos
 
 - [[concepts/reactive-architecture]] — back pressure é um dos 4 pilares do Reactive Manifesto
-- [[concepts/thundering-herd]] — thundering herd é o oposto: consumidores sobrecarregando o produtor/recurso compartilhado
-- [[concepts/bulkhead]] — bulkhead limita o impacto; back pressure controla o fluxo
+- [[wiki/concepts/thundering-herd]] — thundering herd é o oposto: consumidores sobrecarregando o produtor/recurso compartilhado
+- [[wiki/concepts/bulkhead]] — bulkhead limita o impacto; back pressure controla o fluxo
 - [[wiki/concepts/ambulance-pattern]] — starvation por competição entre fluxos de prioridades diferentes, não por velocidade de consumo
 
 ## Key Sources
 
-- [[sources/conceitos-que-ninguem-ensina]]
-- [[sources/reactive-architecture]]
+- [[wiki/sources/conceitos-que-ninguem-ensina]]
+- [[wiki/sources/reactive-architecture]]
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — back pressure citado como exemplo do "mundo debaixo do CRUD": produtor mais rápido que consumidor exige decidir entre descartar, segurar ou derrubar
 - [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — identificar o gargalo antes de escalar, técnicas baratas (poda de stale jobs, priorização, batching), e demonstração prática de admission control com low/high watermark via BullMQ + Redis
 - [[wiki/sources/ambulance-pattern-priorizacao-mensagens-mark-richards]] — starvation por competição de prioridade dentro da mesma fila, resolvida com separação física de filas em vez de controle de fluxo

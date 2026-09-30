@@ -38,12 +38,12 @@ Os 5 anti-patterns arquiteturais mais destrutivos: Big Ball of Mud (sem estrutur
 
 ## Entities & Concepts Touched
 
-- [[concepts/big-ball-of-mud]]
-- [[concepts/distributed-monolith]]
+- [[wiki/concepts/big-ball-of-mud]]
+- [[wiki/concepts/distributed-monolith]]
 - [[concepts/god-class]]
-- [[concepts/anemic-domain-model]]
-- [[concepts/accidental-complexity]]
-- [[concepts/clean-architecture]]
+- [[wiki/concepts/anemic-domain-model]]
+- [[wiki/concepts/accidental-complexity]]
+- [[wiki/concepts/clean-architecture]]
 
 ## Open Questions
 

@@ -34,12 +34,12 @@ Origem histórica: a "janela de manutenção" ("site em manutenção das 9 às 1
 
 - Ambientes sem SLA de disponibilidade (dev, staging, projetos pessoais)
 - Sistemas onde o downtime é aceitável ou já é comunicado (janela de manutenção)
-- Deploys serverless simples, onde a própria cloud faz algo equivalente a um Recreate instantâneo por baixo dos panos — ver [[concepts/ci-cd]]
+- Deploys serverless simples, onde a própria cloud faz algo equivalente a um Recreate instantâneo por baixo dos panos — ver [[wiki/concepts/ci-cd]]
 
 ## Quando evitar
 
-Qualquer sistema com SLA de disponibilidade real — nesse caso usar [[concepts/rolling-update]], [[concepts/blue-green-deploy]] ou [[concepts/canary-release]], todos desenhados para eliminar essa janela de downtime. Ver [[concepts/zero-downtime-deploy]] para o objetivo geral e [[concepts/deploy-strategies]] para o comparativo completo.
+Qualquer sistema com SLA de disponibilidade real — nesse caso usar [[wiki/concepts/rolling-update]], [[wiki/concepts/blue-green-deploy]] ou [[wiki/concepts/canary-release]], todos desenhados para eliminar essa janela de downtime. Ver [[wiki/concepts/zero-downtime-deploy]] para o objetivo geral e [[wiki/concepts/deploy-strategies]] para o comparativo completo.
 
 ## Key Sources
 
-- [[sources/tipos-de-deploy]]
+- [[wiki/sources/tipos-de-deploy]]

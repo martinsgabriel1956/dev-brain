@@ -41,11 +41,11 @@ Ego-driven development não é só um problema individual. Quando o código resu
 
 ## Relação com outros conceitos
 
-- [[concepts/over-engineering]] — ego-driven development é o mecanismo psicológico que produz over-engineering
-- [[concepts/kiss]] — o antídoto comportamental
-- [[concepts/abstraction-bloat]] — efeito análogo com IA como vetor (viés de treinamento vs viés de ego)
+- [[wiki/concepts/over-engineering]] — ego-driven development é o mecanismo psicológico que produz over-engineering
+- [[wiki/concepts/kiss]] — o antídoto comportamental
+- [[wiki/concepts/abstraction-bloat]] — efeito análogo com IA como vetor (viés de treinamento vs viés de ego)
 
 ## Key Sources
 
-- [[sources/overengineering-carol-ate-quinta]]
+- [[wiki/sources/overengineering-carol-ate-quinta]]
 - [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]]

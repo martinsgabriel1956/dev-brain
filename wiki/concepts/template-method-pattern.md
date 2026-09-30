@@ -44,5 +44,5 @@ Usa **herança** — a estrutura do algoritmo fica na classe pai (método templa
 
 ## Key Sources
 
-- [[sources/design-pattern-strategy]] — mencionado nas relações como contraponto ao Strategy
+- [[wiki/sources/design-pattern-strategy]] — mencionado nas relações como contraponto ao Strategy
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — variação via composição (não herança) na classe `WebController` de uma API REST em Clean Architecture

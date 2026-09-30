@@ -14,7 +14,7 @@ status: stable
 
 Complexidade acidental é aquela que o time introduziu involuntariamente — não existe por necessidade do problema, existe porque foi mais fácil adicionar do que refatorar.
 
-Conceito de Fred Brooks ("No Silver Bullet", 1986), em contraste com [[concepts/essential-complexity]].
+Conceito de Fred Brooks ("No Silver Bullet", 1986), em contraste com [[wiki/concepts/essential-complexity]].
 
 ## Diagnóstico
 
@@ -65,18 +65,18 @@ A maioria do que times chamam de "tech debt" é complexidade acidental acumulada
 
 ## Relação com outros conceitos
 
-- [[concepts/essential-complexity]] — o contraponto: complexidade que não pode ser removida
+- [[wiki/concepts/essential-complexity]] — o contraponto: complexidade que não pode ser removida
 - [[wiki/concepts/arquitetura-complexa]] — legado enterprise poliglota como manifestação concreta de complexidade acidental acumulada por décadas
-- [[concepts/temporal-coupling]] — temporal coupling é uma forma específica de complexidade acidental
+- [[wiki/concepts/temporal-coupling]] — temporal coupling é uma forma específica de complexidade acidental
 - [[concepts/evolutionary-architecture]] — fitness functions detectam aumento de complexidade acidental automaticamente
-- [[entities/fred-brooks]] — autor do conceito ("No Silver Bullet", 1986)
+- [[wiki/entities/fred-brooks]] — autor do conceito ("No Silver Bullet", 1986)
 - [[wiki/concepts/modelo-cascata-vs-desenvolvimento-incremental]] — mecanismo de processo (Ousterhout) que explica por que complexidade acidental se acumula sem correção sob cascata
 - [[wiki/concepts/red-flags-de-design]] — heurística prática para detectar complexidade acidental cedo, antes que ela se acumule
 
 ## Key Sources
 
-- [[sources/conceitos-que-ninguem-ensina]]
-- [[sources/overengineering-carol-ate-quinta]]
+- [[wiki/sources/conceitos-que-ninguem-ensina]]
+- [[wiki/sources/overengineering-carol-ate-quinta]]
 - [[wiki/sources/filosofia-do-design-de-software-introducao]]
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] — uso análogo (não-Brooks) aplicado a tecnologia de exemplo didático vs. princípios de refatoração
 - [[wiki/sources/large-scale-vs-complex-architecture]] — legado enterprise poliglota (mainframe → AS/400 → Linux → Windows convivendo) como exemplo concreto e cotidiano de complexidade acidental acumulada

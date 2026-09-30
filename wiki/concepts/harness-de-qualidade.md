@@ -27,7 +27,7 @@ A IA segue **regras impostas por ferramenta** mais consistentemente do que regra
 ## Componentes do Harness
 
 ### TDD obrigatório
-Mandar a IA fazer [[concepts/tdd]] — o ciclo test-first força código que passa em testes antes de ser aceito. Resultado mais previsível e com menos bugs estruturais. Instrução crítica que precisa acompanhar isso: proibir a IA de deletar ou enfraquecer testes que falham em vez de corrigir o código — ver [[gaming-de-testes-por-ia]].
+Mandar a IA fazer [[wiki/concepts/tdd]] — o ciclo test-first força código que passa em testes antes de ser aceito. Resultado mais previsível e com menos bugs estruturais. Instrução crítica que precisa acompanhar isso: proibir a IA de deletar ou enfraquecer testes que falham em vez de corrigir o código — ver [[gaming-de-testes-por-ia]].
 
 ### Spec-Driven Development obrigatório
 Da mesma forma que TDD, [[spec-driven-development]] pode ser imposto: contrato de API (OpenAPI/Swagger, `.proto`, schema GraphQL) definido antes da IA implementar qualquer lado da boundary.

@@ -36,10 +36,10 @@ Eventos em sistemas distribuídos nunca podem ser alterados destrutivamente — 
 
 - [[concepts/event-versioning]]
 - [[concepts/tolerant-reader]]
-- [[concepts/upcasting]]
+- [[wiki/concepts/upcasting]]
 - [[concepts/schema-registry]]
-- [[concepts/event-sourcing]]
-- [[concepts/expand-contract]]
+- [[wiki/concepts/event-sourcing]]
+- [[wiki/concepts/expand-contract]]
 
 ## Open Questions
 

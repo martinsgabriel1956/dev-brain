@@ -34,12 +34,12 @@ Cluster é um grupo de máquinas (nodes) que se apresentam como um sistema únic
 
 ## Conceitos
 
-- [[concepts/cluster]] — fundamento: o que é, tipos, trade-offs
-- [[concepts/control-plane]] — coordenador central que decide placement de workloads
-- [[concepts/redis-cluster]] — hash slots, gossip protocol, failover
-- [[concepts/db-sharding]] — consistent hashing, shard key, resharding
-- [[concepts/load-balancer]] — entry point do cluster para clients externos
-- [[concepts/cap-theorem]] — dilema inevitável em sistemas distribuídos com network partition
+- [[wiki/concepts/cluster]] — fundamento: o que é, tipos, trade-offs
+- [[wiki/concepts/control-plane]] — coordenador central que decide placement de workloads
+- [[wiki/concepts/redis-cluster]] — hash slots, gossip protocol, failover
+- [[wiki/concepts/db-sharding]] — consistent hashing, shard key, resharding
+- [[wiki/concepts/load-balancer]] — entry point do cluster para clients externos
+- [[wiki/concepts/cap-theorem]] — dilema inevitável em sistemas distribuídos com network partition
 
 ## Open Questions
 

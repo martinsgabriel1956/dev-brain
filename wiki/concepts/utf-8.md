@@ -74,5 +74,5 @@ O verbete [[encoding]] nesta wiki cobre *transport encoding* (Base64, URL encodi
 
 ## Key Sources
 
-- [[sources/como-strings-realmente-funcionam]]
+- [[wiki/sources/como-strings-realmente-funcionam]]
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — implementação prática do algoritmo de decode em Go, via TDD

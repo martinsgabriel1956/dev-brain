@@ -16,9 +16,9 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/architecture-fitness-functions]]: [[concepts/fitness-functions]]
-- Em [[wiki/sources/checklist-solutions-architect]]: [[concepts/fitness-functions]]
-- Em [[wiki/sources/evolutionary-architecture]]: [[concepts/fitness-functions]]
+- Em [[wiki/sources/architecture-fitness-functions]]: [[wiki/concepts/fitness-functions]]
+- Em [[wiki/sources/checklist-solutions-architect]]: [[wiki/concepts/fitness-functions]]
+- Em [[wiki/sources/evolutionary-architecture]]: [[wiki/concepts/fitness-functions]]
 
 ## Pendências
 

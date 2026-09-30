@@ -44,7 +44,7 @@ status: stable
 - [[entities/pgvector]]
 - [[entities/qdrant]]
 - [[entities/duckdb]]
-- [[entities/cockroachdb]]
+- [[wiki/entities/cockroachdb]]
 - [[concepts/graph-db]]
 - [[concepts/time-series-db]]
 - [[concepts/vector-db]]

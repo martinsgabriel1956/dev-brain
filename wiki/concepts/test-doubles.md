@@ -92,17 +92,17 @@ Substitui APIs externas no nível da rede com `msw`. O código nem sabe que est�
 
 ## O termo "TestDouble" e o teste de integração estreito
 
-O termo guarda-chuva "Test Double" (analogia a dublê de cinema) foi divulgado por [[wiki/entities/martin-fowler]] em seu bliki em 2006 — mas a taxonomia interna dos cinco tipos (Dummy/Fake/Stub/Spy/Mock) é de autoria de [[wiki/entities/gerard-meszaros]], criada para capturar padrões de uso da família de frameworks "[[wiki/entities/junit|Xunit]]" (ver [[wiki/sources/xunit-martin-fowler]] para a origem dessa família, criada por [[wiki/entities/kent-beck]] e Erich Gamma) e publicada no livro *xUnit Test Patterns* (2007). Fowler relata explicitamente essa autoria no próprio artigo; ver [[wiki/sources/test-double-martin-fowler]]. Test Double é a peça que viabiliza o [[teste-de-integracao-estreito-vs-amplo|narrow integration test]]: em vez de ativar um serviço externo real para testar a integração, exercita-se o código que fala com esse serviço contra um double — desde que ele seja fiel o suficiente (checado por [[concepts/contract-testing]]).
+O termo guarda-chuva "Test Double" (analogia a dublê de cinema) foi divulgado por [[wiki/entities/martin-fowler]] em seu bliki em 2006 — mas a taxonomia interna dos cinco tipos (Dummy/Fake/Stub/Spy/Mock) é de autoria de [[wiki/entities/gerard-meszaros]], criada para capturar padrões de uso da família de frameworks "[[wiki/entities/junit|Xunit]]" (ver [[wiki/sources/xunit-martin-fowler]] para a origem dessa família, criada por [[wiki/entities/kent-beck]] e Erich Gamma) e publicada no livro *xUnit Test Patterns* (2007). Fowler relata explicitamente essa autoria no próprio artigo; ver [[wiki/sources/test-double-martin-fowler]]. Test Double é a peça que viabiliza o [[teste-de-integracao-estreito-vs-amplo|narrow integration test]]: em vez de ativar um serviço externo real para testar a integração, exercita-se o código que fala com esse serviço contra um double — desde que ele seja fiel o suficiente (checado por [[wiki/concepts/contract-testing]]).
 
 ## Ver também
 
 - [[wiki/concepts/indirect-input-output]] — eixo entrada/saída indireta que organiza os cinco tipos
-- [[concepts/tdd]] — contexto onde test doubles são usados
-- [[concepts/piramide-de-testes]] — doubles são a ferramenta dos testes unitários
+- [[wiki/concepts/tdd]] — contexto onde test doubles são usados
+- [[wiki/concepts/piramide-de-testes]] — doubles são a ferramenta dos testes unitários
 - [[race-condition]] — MSW ajuda a testar race conditions de rede
 - [[teste-de-integracao-estreito-vs-amplo]] — uso de doubles fora do unitário, em testes de integração estreitos
 - [[unit-test-solitario-vs-sociavel]] — doubles definem se um unit test é solitário ou sociável
-- [[wiki/concepts/self-initializing-fake]] — Fake que, na primeira chamada, encaminha ao serviço real e grava a resposta em cache, servindo daí em diante; técnica recomendada por Fowler para doubles usados em [[concepts/contract-testing]]
+- [[wiki/concepts/self-initializing-fake]] — Fake que, na primeira chamada, encaminha ao serviço real e grava a resposta em cache, servindo daí em diante; técnica recomendada por Fowler para doubles usados em [[wiki/concepts/contract-testing]]
 
 ## Motivação prática: quebrar acoplamento em Hard-to-Test Code
 

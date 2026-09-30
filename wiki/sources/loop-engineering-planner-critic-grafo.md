@@ -56,7 +56,7 @@ Vídeo opinativo que propõe uma progressão de abstração — prompt engineeri
 
 ## Contradições / Reforços com o Resto da Wiki
 
-**Reforço direto:** [[wiki/sources/agentes-orquestracao]] já descrevia o padrão Planner-Executor-Critic e LangGraph ("nodes são passos, edges são transições condicionais") em termos quase idênticos, mas os conceitos `[[concepts/planner-executor-critic]]` e `[[concepts/langgraph]]` citados naquela fonte nunca haviam sido criados (link quebrado — drift pré-existente, corrigido nesta ingestão). Esta fonte fornece o exemplo concreto e a demonstração em vídeo que faltava para essas páginas.
+**Reforço direto:** [[wiki/sources/agentes-orquestracao]] já descrevia o padrão Planner-Executor-Critic e LangGraph ("nodes são passos, edges são transições condicionais") em termos quase idênticos, mas os conceitos `[[wiki/concepts/planner-executor-critic]]` e `[[wiki/concepts/langgraph]]` citados naquela fonte nunca haviam sido criados (link quebrado — drift pré-existente, corrigido nesta ingestão). Esta fonte fornece o exemplo concreto e a demonstração em vídeo que faltava para essas páginas.
 
 **Reforço:** [[wiki/concepts/ciclo-agente]] já documentava "É um brute-force até funcionar" (Branas) — esta fonte adiciona a camada de que o brute-force pode ser tornado sistemático via rúbrica + verificador com modelo distinto, reduzindo (sem eliminar) a natureza cega da iteração.
 

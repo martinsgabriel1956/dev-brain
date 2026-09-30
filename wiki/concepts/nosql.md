@@ -3,8 +3,8 @@ type: concept
 title: "NoSQL"
 aliases: ["not only sql", "bancos não relacionais"]
 date_created: 2026-04-22
-date_updated: 2026-09-14
-source_count: 7
+date_updated: 2026-09-30
+source_count: 8
 tags: [banco-de-dados, nosql, mongodb, redis, cassandra, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -24,13 +24,13 @@ Categoria de bancos de dados que não seguem o modelo relacional. Cada tipo reso
 
 ## Quando Não Usar
 
-- Dados financeiros ou transacionais → use relacional com [[concepts/acid]]
+- Dados financeiros ou transacionais → use relacional com [[wiki/concepts/acid]]
 - Relacionamentos complexos entre entidades → JOINs relacionais são mais simples
 - Quando você quer schema flexível mas já tem PostgreSQL → use `JSONB`
 
 ## Consistência
 
-A maioria oferece consistência eventual. Para inventário crítico e saldos, isso é inaceitável. → [[concepts/relational-vs-nosql]]
+A maioria oferece consistência eventual. Para inventário crítico e saldos, isso é inaceitável. → [[wiki/concepts/relational-vs-nosql]]
 
 ## Escalabilidade
 
@@ -50,10 +50,11 @@ Provas de concurso brasileiras tratam "SGBD NoSQL" como termo formal (em oposiç
 
 ## Key Sources
 
-- [[sources/banco-de-dados]]
+- [[wiki/sources/banco-de-dados]]
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — exemplo concreto de catálogo com schema variável (notebook/camiseta/livro) e limite de conexões do MongoDB em instância única
 - [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] — lista estendida de exemplos por modelo (chave-valor, documento, colunas, grafos), como cobrada em concurso
 - [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — regra prática de quando sair do "SQL por padrão": latência super baixa, esquema flexível (logs/JSON) ou throughput muito alto (armazenar todos os requests); também NoSQL como store externo de sessões/preferências fora dos servidores stateless
 - [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]] — arquitetura já nativamente distribuída (sharding por padrão) como motivo de escolha para volume de escrita alto, independente do formato do dado; ver [[wiki/concepts/criterios-de-escolha-de-banco-de-dados]]
+- [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — NoSQL/JSON como escolha frequente de banco de leitura desnormalizado em CQRS (evita joins; ver [[wiki/concepts/read-model]])

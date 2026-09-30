@@ -38,7 +38,7 @@ Lei de Hick: o tempo de decisão aumenta logaritmicamente com o número de opç�
 
 - **Timeboxing de decisão**: X minutos para escolher, então decide
 - **Critério de desempate default**: use o que você já conhece para o MVP
-- **[[concepts/mvp]]**: a tecnologia importa menos quando o escopo é mínimo
+- **[[wiki/concepts/mvp]]**: a tecnologia importa menos quando o escopo é mínimo
 - Decisões de arquitetura podem mudar — começar é mais valioso que escolher certo
 
 ## Terceirizar a decisão como fuga da paralisia
@@ -57,14 +57,14 @@ Isso reforça o mecanismo de mitigação já registrado acima ("aceita bom o suf
 
 ## Ver Também
 
-- [[concepts/perfeccionismo-em-devs]] — perfeccionismo alimenta paralisia
-- [[concepts/planning-fallacy]] — planejar demais é outra forma de paralisia
+- [[wiki/concepts/perfeccionismo-em-devs]] — perfeccionismo alimenta paralisia
+- [[wiki/concepts/planning-fallacy]] — planejar demais é outra forma de paralisia
 - [[wiki/concepts/decisao-terceirizada]] — terceirizar a decisão como fuga da paralisia, sem resolver a causa raiz
 - [[wiki/concepts/time-boxing]] — versão generalizada do timeboxing, além do uso específico de decisão
 
 ## Key Sources
 
-- [[sources/por-que-devs-nao-terminam-projetos]]
+- [[wiki/sources/por-que-devs-nao-terminam-projetos]]
 - [[wiki/sources/pare-de-terceirizar-suas-decisoes]]
 - [[wiki/sources/indistraivel-nir-eyal-mano-deivin]]
 - [[wiki/sources/7-habitos-programador-altamente-eficaz]]

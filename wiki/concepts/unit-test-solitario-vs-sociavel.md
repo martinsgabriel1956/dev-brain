@@ -20,7 +20,7 @@ Antes de solitário vs. sociável, há uma definição mais básica que as duas 
 
 ## As duas variantes
 
-- **Solitário**: todo elemento do programa fora da unidade sob teste (todo **DOC**, no vocabulário de [[wiki/sources/test-double-xunitpatterns-meszaros|Meszaros]] — ver definição isolada em [[wiki/sources/depended-on-component-doc-xunitpatterns]]) é substituído por um [[concepts/test-doubles|dublê]]. É o unit test "puro" no sentido mais restrito.
+- **Solitário**: todo elemento do programa fora da unidade sob teste (todo **DOC**, no vocabulário de [[wiki/sources/test-double-xunitpatterns-meszaros|Meszaros]] — ver definição isolada em [[wiki/sources/depended-on-component-doc-xunitpatterns]]) é substituído por um [[wiki/concepts/test-doubles|dublê]]. É o unit test "puro" no sentido mais restrito.
 - **Sociável**: a unidade sob teste colabora com objetos reais internos do próprio processo — só dependências externas (rede, banco, serviços de terceiros) viram double.
 
 ## Por que isso importa: a segunda confusão em cima de "integration test"
@@ -29,7 +29,7 @@ Parte da comunidade adotou a definição restrita de unit test (só o solitário
 
 ## Relação com as escolas de TDD
 
-A distinção mapeia quase diretamente para as duas escolas descritas em [[concepts/tdd]]:
+A distinção mapeia quase diretamente para as duas escolas descritas em [[wiki/concepts/tdd]]:
 
 | Escola de TDD | Tipo de unit test predominante |
 |---|---|
@@ -46,8 +46,8 @@ Continua usando "unit test" para os dois casos, qualificando com **"solitary"** 
 
 ## Ver também
 
-- [[concepts/tdd]] — escolas London/Detroit como manifestação prática dessa distinção
-- [[concepts/test-doubles]] — o mecanismo que torna um teste solitário
+- [[wiki/concepts/tdd]] — escolas London/Detroit como manifestação prática dessa distinção
+- [[wiki/concepts/test-doubles]] — o mecanismo que torna um teste solitário
 - [[teste-de-integracao-estreito-vs-amplo]] — confusão irmã sobre o termo "integration test"
 - [[wiki/entities/martin-fowler]]
 

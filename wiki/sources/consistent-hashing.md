@@ -33,9 +33,9 @@ Consistent Hashing resolve o problema de resharding em sistemas distribuídos: a
 
 ## Conceitos Abordados
 
-- [[concepts/consistent-hashing]]
+- [[wiki/concepts/consistent-hashing]]
 - [[virtual-node]]
 - [[hash-ring]]
-- [[concepts/db-sharding]]
+- [[wiki/concepts/db-sharding]]
 - [[redis-cluster]]
-- [[concepts/sharding]]
+- [[wiki/concepts/sharding]]

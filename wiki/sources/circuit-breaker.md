@@ -86,12 +86,12 @@ API não-crítica (analytics): threshold 30%, resetTimeout 10s
 
 ## Conceitos Tocados
 
-- [[concepts/circuit-breaker]] — o padrão em si
-- [[concepts/falha-em-cascata]] — problema que o circuit breaker resolve
-- [[concepts/retry-backoff]] — deve ficar dentro do circuit breaker, não fora
-- [[concepts/bulkhead]] — decide QUANTOS tentam; circuit breaker decide SE tenta
-- [[concepts/graceful-degradation]] — fallback é a expressão prática de graceful degradation
-- [[concepts/observabilidade]] — métricas de state e calls_total
+- [[wiki/concepts/circuit-breaker]] — o padrão em si
+- [[wiki/concepts/falha-em-cascata]] — problema que o circuit breaker resolve
+- [[wiki/concepts/retry-backoff]] — deve ficar dentro do circuit breaker, não fora
+- [[wiki/concepts/bulkhead]] — decide QUANTOS tentam; circuit breaker decide SE tenta
+- [[wiki/concepts/graceful-degradation]] — fallback é a expressão prática de graceful degradation
+- [[wiki/concepts/observabilidade]] — métricas de state e calls_total
 
 ---
 

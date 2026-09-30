@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/clean-architecture]]: [[concepts/ports-adapters]]
-- Em [[wiki/sources/hexagonal-architecture]]: [[concepts/ports-adapters]]
+- Em [[wiki/sources/clean-architecture]]: [[wiki/concepts/ports-adapters]]
+- Em [[wiki/sources/hexagonal-architecture]]: [[wiki/concepts/ports-adapters]]
 
 ## Pendências
 

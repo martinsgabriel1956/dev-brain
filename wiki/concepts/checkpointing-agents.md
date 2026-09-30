@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/agentes-em-producao]]: [[concepts/checkpointing-agents]]
-- Em [[wiki/sources/agentes-orquestracao]]: [[concepts/checkpointing-agents]]
+- Em [[wiki/sources/agentes-em-producao]]: [[wiki/concepts/checkpointing-agents]]
+- Em [[wiki/sources/agentes-orquestracao]]: [[wiki/concepts/checkpointing-agents]]
 
 ## Pendências
 

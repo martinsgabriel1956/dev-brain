@@ -44,13 +44,13 @@ RAG injeta contexto relevante no prompt para reduzir alucinações e manter conh
 ## Entities & Concepts Touched
 
 - [[concepts/rag-retrieval]]
-- [[concepts/chunking]]
-- [[concepts/hybrid-search]]
-- [[concepts/reranking]]
-- [[concepts/hyde]]
-- [[concepts/contextual-retrieval]]
-- [[concepts/graphrag]]
-- [[concepts/hnsw]]
+- [[wiki/concepts/chunking]]
+- [[wiki/concepts/hybrid-search]]
+- [[wiki/concepts/reranking]]
+- [[wiki/concepts/hyde]]
+- [[wiki/concepts/contextual-retrieval]]
+- [[wiki/concepts/graphrag]]
+- [[wiki/concepts/hnsw]]
 
 ## Key Sources
 

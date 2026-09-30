@@ -33,10 +33,10 @@ Sistema de presença (online/offline) usa Heartbeat + Redis TTL: cliente envia p
 
 ## Conceitos
 
-- [[concepts/presenca-online]] — já existe no index
-- [[concepts/websocket-vs-polling]] — transporte do heartbeat
-- [[concepts/chat-distribuido]] — context de uso do presence system
-- [[concepts/redis-geo]] — complemento para presença geolocalizada
+- [[wiki/concepts/presenca-online]] — já existe no index
+- [[wiki/concepts/websocket-vs-polling]] — transporte do heartbeat
+- [[wiki/concepts/chat-distribuido]] — context de uso do presence system
+- [[wiki/concepts/redis-geo]] — complemento para presença geolocalizada
 
 ## Key Sources
 

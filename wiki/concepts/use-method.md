@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/flame-graph-profiling]]: [[concepts/use-method]]
-- Em [[wiki/sources/performance-methods]]: [[concepts/use-method]]
+- Em [[wiki/sources/flame-graph-profiling]]: [[wiki/concepts/use-method]]
+- Em [[wiki/sources/performance-methods]]: [[wiki/concepts/use-method]]
 
 ## Pendências
 

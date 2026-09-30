@@ -110,7 +110,7 @@ Em [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-loba
 
 - [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]] — taxonomia (6 tipos + 2 categorias) e as métricas de Uncle Bob (aferente/eferente, abstração A, instabilidade I, distância D, zonas de dor/inutilidade)
 - [[wiki/sources/acoplamento-abstracao-estado]]
-- [[sources/ports-and-adapters-codebase-para-ia]] — forte acoplamento em god class quebra três módulos por uma mudança
+- [[wiki/sources/ports-and-adapters-codebase-para-ia]] — forte acoplamento em god class quebra três módulos por uma mudança
 - [[wiki/sources/design-pattern-adapter]] — `new` de uma classe concreta de baixo nível (lib externa) dentro de uma classe de alto nível é a manifestação de acoplamento que o [[wiki/concepts/adapter-pattern]] resolve
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — exemplo real de login e criação de conta acoplados no mesmo arquivo; separação tratada como algo que se aprende na prática, não como regra fixa
 - [[wiki/sources/7-habitos-programador-altamente-eficaz]] — analogia médica dos órgãos aplicada ao acoplamento: limites mal definidos entre componentes causam os mesmos sintomas que órgãos ferindo os limites uns dos outros

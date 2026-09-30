@@ -38,13 +38,13 @@ GoF tem 23 padrões em 3 categorias. Os essenciais para backend: Factory Method 
 
 ## Entities & Concepts Touched
 
-- [[concepts/strategy-pattern]]
-- [[concepts/decorator-pattern]]
-- [[concepts/observer-pattern]]
+- [[wiki/concepts/strategy-pattern]]
+- [[wiki/concepts/decorator-pattern]]
+- [[wiki/concepts/observer-pattern]]
 - [[concepts/factory-method]]
-- [[concepts/command-pattern]]
-- [[concepts/adapter-pattern]]
-- [[concepts/builder-pattern]]
+- [[wiki/concepts/command-pattern]]
+- [[wiki/concepts/adapter-pattern]]
+- [[wiki/concepts/builder-pattern]]
 
 ## Open Questions
 

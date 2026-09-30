@@ -61,7 +61,7 @@ const user = UserFactory.create("admin", "1", "John");
 
 ## Key Sources
 
-- [[sources/sete-padroes-de-design-de-software]]
+- [[wiki/sources/sete-padroes-de-design-de-software]]
 - [[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] — Factory como segundo estágio de desacoplamento (isolamento com chamada estática explícita), intermediário entre código "ameba" e Observer
 - [[wiki/sources/seis-design-patterns-mais-usados-na-pratica]] — analogia do pedido numa pizzaria; exemplo de sistema de pagamentos (Pix/cartão/boleto) e `document.createElement` como factory nativa do browser
 - [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] — Factory como mecanismo concreto de composition root (`LoginFactory`) numa tela Vue.js

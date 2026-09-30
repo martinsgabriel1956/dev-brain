@@ -115,14 +115,14 @@ function createGame() {
 
 ## Relação com outros conceitos
 
-- Base conceptual do [[concepts/mensageria]] e sistemas event-driven
+- Base conceptual do [[wiki/concepts/mensageria]] e sistemas event-driven
 - Domain Events em DDD usam o mesmo princípio
 - Diferença de Pub/Sub: Observer tem referência direta ao Subject; Pub/Sub usa broker intermediário
 
 ## Key Sources
 
-- [[sources/sete-padroes-de-design-de-software]]
-- [[sources/design-pattern-observer]]
+- [[wiki/sources/sete-padroes-de-design-de-software]]
+- [[wiki/sources/design-pattern-observer]]
 - [[wiki/sources/seis-design-patterns-mais-usados-na-pratica]] — analogia do sino de inscrição do YouTube; nota o `useEffect` do React e o `EventEmitter` do Node.js como Observer do dia a dia
 - [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]] — implementação minimalista com `Set`, usada como base de uma store estilo Zustand
 - [[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] — Observer como terceiro estágio de desacoplamento (vs. acoplamento estático via Factory); implementação `subscribe`/`notifySubscribers` sem `update()` padronizado; trade-off complexidade vs. número de observers

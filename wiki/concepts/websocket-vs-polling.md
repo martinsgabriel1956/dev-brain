@@ -4,7 +4,7 @@ title: "WebSocket vs Polling"
 aliases: ["websocket", "long polling", "http polling", "sse"]
 date_created: 2026-04-22
 date_updated: 2026-09-30
-source_count: 7
+source_count: 8
 tags: [system-design, websocket, realtime, protocolo, chat]
 skill: tech-mentor-system-design
 status: stable
@@ -36,7 +36,7 @@ WebSocket:
 
 ## Problema do WebSocket: Estado
 
-Chat server mantém estado de conexão — qual socket pertence a qual usuário. Isso torna escala horizontal não trivial. → [[concepts/chat-distribuido]]
+Chat server mantém estado de conexão — qual socket pertence a qual usuário. Isso torna escala horizontal não trivial. → [[wiki/concepts/chat-distribuido]]
 
 ## SSE (Server-Sent Events)
 
@@ -64,8 +64,9 @@ Polling de um endpoint de status com um ID de operação é uma das três formas
 
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — WebSocket com ticket, sem cookies; backpressure WebSocket↔SSH
 - [[wiki/sources/presence-system]] — Sistema de presença (online/offline) usa Heartbeat + Redis TTL: cliente envia ping a cada 15s, servidor atualiza `presence:{userId}` com SETEX 30s. Se TTL expirar, usuário está offline. Para...
-- [[sources/case-whatsapp]]
+- [[wiki/sources/case-whatsapp]]
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — implementação prática de SSE e long polling, erros comuns de produção
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — quando polling é a resposta certa em entrevista; LB L4 vs L7; erros mais comuns
 - [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] — WhatsApp citado como exemplo de arquitetura que exige LB de camada 4 por usar WebSocket (vídeo dedicado à arquitetura completa ainda não ingerido)
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — polling por ID de operação como forma de assíncrono
+- [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — HTTP = pergunta/resposta pontual; WebSocket = conexão aberta bidirecional, ambos iniciados por negociação parecida

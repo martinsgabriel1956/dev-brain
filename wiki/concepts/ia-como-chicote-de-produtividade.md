@@ -64,7 +64,7 @@ Isso não é adoção de IA — é **transferência de responsabilidade**.
 
 ## Relacionado
 
-[[concepts/compute-como-compensacao]] · [[concepts/divida-cognitiva]] · [[concepts/vibe-coding]]
+[[wiki/concepts/compute-como-compensacao]] · [[wiki/concepts/divida-cognitiva]] · [[wiki/concepts/vibe-coding]]
 
 ## Confirmação quantitativa: o tempo economizado vira mais trabalho a revisar
 
@@ -78,6 +78,6 @@ Um caso concreto de chicote citado: gestor cobra semanalmente do funcionário qu
 
 ## Key Sources
 
-- [[sources/ia-salario-ou-carga-de-trabalho]]
+- [[wiki/sources/ia-salario-ou-carga-de-trabalho]]
 - [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]] — tempo economizado realocado para mais tarefas; gargalo de revisão e limites de uso como carga transferida ao dev
 - [[wiki/sources/ia-produtividade-nao-reduz-trabalho-corrida-da-ia-profecia-autorrealizavel]] — precedente histórico (comunicação mais rápida = mais disponibilidade esperada, não menos trabalho) e caso concreto de cobrança semanal de métricas de uso de IA

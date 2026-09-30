@@ -33,7 +33,7 @@ O que **não** incluir:
 ## Quando Usar
 
 - Periodicamente, independente de estar no caminho certo ou errado
-- Antes de cruzar ~40% da context window ([[concepts/dumb-zone]])
+- Antes de cruzar ~40% da context window ([[wiki/concepts/dumb-zone]])
 - Ao mudar de fase (ex: de research para plan — compactar o research antes de iniciar o plan)
 - Quando o output do agente começa a degradar — sinal de que está na dumb zone
 
@@ -53,9 +53,9 @@ Sub-agentes são a versão automatizada da compaction intencional para tarefas d
 - Retorna apenas uma mensagem sucinta para o agente pai
 - O pai nunca acumula o ruído da exploração — começa limpo com o resultado
 
-Ver [[concepts/separacao-de-contextos]].
+Ver [[wiki/concepts/separacao-de-contextos]].
 
 ## Key Sources
 
-- [[sources/erros-workflow-research-plan-implement]]
-- [[sources/context-engineering-avancado-para-coding-agents]]
+- [[wiki/sources/erros-workflow-research-plan-implement]]
+- [[wiki/sources/context-engineering-avancado-para-coding-agents]]

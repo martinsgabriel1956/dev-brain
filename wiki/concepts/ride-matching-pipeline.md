@@ -42,7 +42,7 @@ Pipeline de 5 etapas para encontrar o melhor motorista para um passageiro em <1s
 
 ## Race Condition no Passo 4
 
-Dois passageiros podem receber oferta do mesmo motorista. → [[concepts/distributed-lock]]
+Dois passageiros podem receber oferta do mesmo motorista. → [[wiki/concepts/distributed-lock]]
 
 ## ETA vs Distância Euclidiana
 
@@ -54,4 +54,4 @@ GEOSEARCH retorna distância em linha reta. ETA real depende de tráfego, ruas d
 
 ## Key Sources
 
-- [[sources/case-uber]]
+- [[wiki/sources/case-uber]]

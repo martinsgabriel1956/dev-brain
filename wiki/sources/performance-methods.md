@@ -34,13 +34,13 @@ status: stable
 
 ## Entities & Concepts Touched
 
-- [[concepts/use-method]]
-- [[concepts/red-method]]
-- [[concepts/four-golden-signals]]
+- [[wiki/concepts/use-method]]
+- [[wiki/concepts/red-method]]
+- [[wiki/concepts/four-golden-signals]]
 - [[entities/k6]]
 - [[concepts/load-testing]]
-- [[concepts/flame-graph]]
-- [[concepts/slo]]
+- [[wiki/concepts/flame-graph]]
+- [[wiki/concepts/slo]]
 - [[concepts/latency-percentiles]]
 
 ## Open Questions

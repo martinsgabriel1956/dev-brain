@@ -23,10 +23,10 @@ Isola recursos (threads, conexões, semáforos) por downstream. Um serviço lent
 
 ## Key Claims
 
-- **Pool compartilhado sem bulkhead = blast radius total** — 1 serviço lento drena todas as threads; serviços críticos ficam sem recursos. → [[concepts/blast-radius]]
-- **Bulkhead + Circuit Breaker são complementares** — circuit breaker decide SE tenta; bulkhead decide QUANTOS tentam ao mesmo tempo. Ordem: bulkhead envolve circuit breaker. → [[concepts/circuit-breaker]] [[concepts/bulkhead]]
-- **Fail fast quando pool está cheio** — rejeitar em 1s é melhor que esperar 30s para falhar. `Promise.race` com timeout. → [[concepts/fail-fast]]
-- **Dimensionamento via Little's Law** — `concorrência = throughput × latência_média`. Com margem de 2×. → [[concepts/littles-law]]
+- **Pool compartilhado sem bulkhead = blast radius total** — 1 serviço lento drena todas as threads; serviços críticos ficam sem recursos. → [[wiki/concepts/blast-radius]]
+- **Bulkhead + Circuit Breaker são complementares** — circuit breaker decide SE tenta; bulkhead decide QUANTOS tentam ao mesmo tempo. Ordem: bulkhead envolve circuit breaker. → [[wiki/concepts/circuit-breaker]] [[wiki/concepts/bulkhead]]
+- **Fail fast quando pool está cheio** — rejeitar em 1s é melhor que esperar 30s para falhar. `Promise.race` com timeout. → [[wiki/concepts/fail-fast]]
+- **Dimensionamento via Little's Law** — `concorrência = throughput × latência_média`. Com margem de 2×. → [[wiki/concepts/littles-law]]
 - **Chamadas assíncronas via fila já têm bulkhead implícito** — a fila é o compartimento. Bulkhead só é necessário com chamadas síncronas/concorrentes.
 - **Métricas obrigatórias** — `pool_active`, `pool_queued`, `rejected_total` por serviço. Pool constantemente cheio = downstream lento ou pool subdimensionado.
 
@@ -37,7 +37,7 @@ Isola recursos (threads, conexões, semáforos) por downstream. Um serviço lent
 
 ## Concepts
 
-[[concepts/bulkhead]] · [[concepts/circuit-breaker]] · [[concepts/blast-radius]] · [[concepts/fail-fast]] · [[concepts/littles-law]] · [[concepts/graceful-degradation]]
+[[wiki/concepts/bulkhead]] · [[wiki/concepts/circuit-breaker]] · [[wiki/concepts/blast-radius]] · [[wiki/concepts/fail-fast]] · [[wiki/concepts/littles-law]] · [[wiki/concepts/graceful-degradation]]
 
 ## Open Questions
 

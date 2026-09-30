@@ -38,13 +38,13 @@ DLQ captura mensagens que falham repetidamente — sem DLQ, poison pills bloquei
 
 ## Entities & Concepts Touched
 
-- [[concepts/dlq]]
-- [[concepts/at-least-once]]
+- [[wiki/concepts/dlq]]
+- [[wiki/concepts/at-least-once]]
 - [[concepts/exactly-once]]
-- [[concepts/idempotencia]]
+- [[wiki/concepts/idempotencia]]
 - [[concepts/event-versioning]]
 - [[concepts/tolerant-reader]]
-- [[concepts/upcasting]]
+- [[wiki/concepts/upcasting]]
 - [[concepts/poison-pill]]
 
 ## Open Questions

@@ -38,12 +38,12 @@ OAuth2: protocolo de autorização (delegação de acesso). OIDC: camada de aute
 
 ## Entities & Concepts Touched
 
-- [[concepts/oauth2]]
+- [[wiki/concepts/oauth2]]
 - [[concepts/oidc]]
-- [[concepts/jwt]]
-- [[concepts/pkce]]
-- [[concepts/refresh-token-rotation]]
-- [[concepts/session-management]]
+- [[wiki/concepts/jwt]]
+- [[wiki/concepts/pkce]]
+- [[wiki/concepts/refresh-token-rotation]]
+- [[wiki/concepts/session-management]]
 
 ## Open Questions
 

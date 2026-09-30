@@ -48,4 +48,4 @@ istioctl waypoint apply --namespace payments
 
 ## Key Sources
 
-- [[sources/service-mesh]]
+- [[wiki/sources/service-mesh]]

@@ -84,8 +84,8 @@ O ganho não é só linhas de código — é a legibilidade para quem lê depois
 ## Relação com outros princípios
 
 - **YAGNI** (You Aren't Gonna Need It) — complementar: não adicione o que não é necessário agora.
-- **[[concepts/over-engineering]]** — KISS é o antídoto.
-- **[[concepts/accidental-complexity]]** — KISS é a prática que previne complexidade acidental.
+- **[[wiki/concepts/over-engineering]]** — KISS é o antídoto.
+- **[[wiki/concepts/accidental-complexity]]** — KISS é a prática que previne complexidade acidental.
 - **[[wiki/concepts/fazer-a-coisa-mais-simples-que-poderia-funcionar]]** — princípio irmão, de origem em XP: heurística mais específica de "primeira tentativa" ao escrever uma solução nova, enquanto KISS é a disciplina geral que vale em qualquer momento do design.
 
 ## "Boas Práticas" Não São Leis Universais
@@ -94,7 +94,7 @@ O ganho não é só linhas de código — é a legibilidade para quem lê depois
 
 ## Key Sources
 
-- [[sources/overengineering-carol-ate-quinta]]
+- [[wiki/sources/overengineering-carol-ate-quinta]]
 - [[wiki/sources/5-principios-que-mudaram-como-programador]]
 - [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] — origem na Marinha dos EUA, KISS aplicado a testes, exemplo de refactor de validação de status, benefício de retenção de usuário via UX simples
 - [[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]] — "boas práticas" como contextuais, não leis; escalar sem necessidade real como sinal de mau engenheiro

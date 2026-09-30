@@ -45,7 +45,7 @@ Fan-out é o desafio central: um evento → N usuários × M canais. Regra: fan-
 
 ## Concepts & Entities Touched
 
-[[concepts/notification-system]] · [[concepts/fanout-pattern]] · [[concepts/idempotencia]] · [[concepts/distributed-lock]] · [[concepts/ack-triplo]] · [[concepts/presenca-online]]
+[[wiki/concepts/notification-system]] · [[wiki/concepts/fanout-pattern]] · [[wiki/concepts/idempotencia]] · [[wiki/concepts/distributed-lock]] · [[wiki/concepts/ack-triplo]] · [[wiki/concepts/presenca-online]]
 
 ## Open Questions
 

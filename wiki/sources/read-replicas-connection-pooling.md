@@ -33,11 +33,11 @@ Read Replicas escalam workloads read-heavy roteando queries SELECT para réplica
 
 ## Conceitos
 
-- [[concepts/read-replicas]] — já existe no index
-- [[concepts/connection-pooling]] — já existe no index
-- [[concepts/read-your-writes]] — já existe no index
-- [[concepts/postgresql]] — banco de referência
-- [[concepts/db-sharding]] — quando réplicas não são suficientes
+- [[wiki/concepts/read-replicas]] — já existe no index
+- [[wiki/concepts/connection-pooling]] — já existe no index
+- [[wiki/concepts/read-your-writes]] — já existe no index
+- [[wiki/concepts/postgresql]] — banco de referência
+- [[wiki/concepts/db-sharding]] — quando réplicas não são suficientes
 
 ## Key Sources
 

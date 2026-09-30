@@ -44,7 +44,7 @@ Em 2026, self-hosted open-weight é viável para workloads > 10M tokens/dia — 
 - [[concepts/sglang]]
 - [[concepts/quantizacao-llm]]
 - [[concepts/multi-tier-routing]]
-- [[concepts/cascade-pattern-llm]]
+- [[wiki/concepts/cascade-pattern-llm]]
 
 ## Conexão com Kimi K3 e Mercado de IA
 

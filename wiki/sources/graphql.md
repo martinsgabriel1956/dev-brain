@@ -38,12 +38,12 @@ GraphQL permite que o cliente especifique exatamente os dados necessários. O pr
 
 ## Entities & Concepts Touched
 
-- [[concepts/graphql]]
+- [[wiki/concepts/graphql]]
 - [[concepts/dataloader]]
 - [[concepts/n-plus-one-problem]]
 - [[concepts/graphql-federation]]
 - [[concepts/persisted-queries]]
-- [[concepts/cursor-pagination]]
+- [[wiki/concepts/cursor-pagination]]
 
 ## Open Questions
 

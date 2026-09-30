@@ -30,8 +30,8 @@ Isso remove o bloqueio emocional de comparar velocidade com outras pessoas. Se a
 
 ## Relação com Outros Conceitos
 
-Complementa [[concepts/familiaridade-vs-capacidade]] (velocidade inicial ≠ talento) e [[concepts/linha-de-largada]] (ponto de partida diferente, não capacidade diferente). Juntos formam o núcleo mental para persistir em programação sem se comparar com colegas.
+Complementa [[wiki/concepts/familiaridade-vs-capacidade]] (velocidade inicial ≠ talento) e [[wiki/concepts/linha-de-largada]] (ponto de partida diferente, não capacidade diferente). Juntos formam o núcleo mental para persistir em programação sem se comparar com colegas.
 
 ## Key Sources
 
-- [[sources/como-aprender-programacao-3-dicas]]
+- [[wiki/sources/como-aprender-programacao-3-dicas]]

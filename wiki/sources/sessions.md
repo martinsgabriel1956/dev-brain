@@ -34,14 +34,14 @@ JWT stateless: impossível revogar antes do TTL. Sessions server-side com Redis:
 
 ## Entities & Concepts Touched
 
-- [[concepts/session-management]]
-- [[concepts/jwt]]
-- [[concepts/redis]]
-- [[concepts/mfa]]
-- [[concepts/totp]]
-- [[concepts/passkeys]]
-- [[concepts/spiffe]]
-- [[entities/spire]]
+- [[wiki/concepts/session-management]]
+- [[wiki/concepts/jwt]]
+- [[wiki/concepts/redis]]
+- [[wiki/concepts/mfa]]
+- [[wiki/concepts/totp]]
+- [[wiki/concepts/passkeys]]
+- [[wiki/concepts/spiffe]]
+- [[wiki/entities/spire]]
 
 ## Open Questions
 

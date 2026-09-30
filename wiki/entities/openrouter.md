@@ -4,7 +4,7 @@ title: "OpenRouter"
 aliases: ["open router"]
 date_created: 2026-08-05
 date_updated: 2026-09-30
-source_count: 3
+source_count: 4
 tags: [tech-mentor-ai, ai-gateway, multi-provider, llm, prompt-caching]
 skill: tech-mentor-ai
 status: stub
@@ -22,8 +22,13 @@ Serviço/gateway que agrega acesso a múltiplos modelos de LLM (incluindo modelo
 
 Em [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]], o autor escolhe o modelo de cada versão de prompt pelo ID do OpenRouter, com presets no código ([[wiki/concepts/prompt-registry-local]]).
 
+## Uso Profissional: Modelo + Provedor
+
+Segundo [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]], a chamada crua roteia para qualquer provedor; o uso profissional fixa um [[wiki/concepts/pool-de-provedores-llm|pool de ≥3 provedores]] avaliados por [[wiki/concepts/criterios-de-selecao-de-provedor-llm|seis critérios]] e restringe quantização, preço e retenção de dados no payload. Modelos [[wiki/concepts/open-weight-model|open weight]] têm preço distribuído por provedor.
+
 ## Key Sources
 
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]]
 - [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]] — suporte a prompt caching como propriedade da combinação modelo+provedor, não da OpenRouter isoladamente
 - [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — IDs de modelo do OpenRouter no registro de versões de prompt
+- [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] — guia de uso profissional: modelo+provedor, pool, quantização, ZDR e payload `provider`

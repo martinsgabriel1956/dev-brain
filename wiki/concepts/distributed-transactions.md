@@ -22,11 +22,11 @@ Em microsserviços, cada serviço tem seu próprio banco. Não existe transaçã
 
 | Abordagem | Consistência | Locks | Uso |
 |---|---|---|---|
-| [[concepts/two-phase-commit]] | Forte | Sim (blocking) | Raramente em prod |
-| [[concepts/three-phase-commit]] | Forte* | Não* | Acadêmico |
-| [[concepts/saga-pattern]] | Eventual | Não | Microsserviços |
-| [[concepts/outbox-pattern]] | Eventual (at-least-once) | Não | Eventos/mensageria |
-| CockroachDB/Spanner | Forte | Via [[concepts/raft-paxos]] | Banco distribuído |
+| [[wiki/concepts/two-phase-commit]] | Forte | Sim (blocking) | Raramente em prod |
+| [[wiki/concepts/three-phase-commit]] | Forte* | Não* | Acadêmico |
+| [[wiki/concepts/saga-pattern]] | Eventual | Não | Microsserviços |
+| [[wiki/concepts/outbox-pattern]] | Eventual (at-least-once) | Não | Eventos/mensageria |
+| CockroachDB/Spanner | Forte | Via [[wiki/concepts/raft-paxos]] | Banco distribuído |
 
 *apenas sem partições de rede
 
@@ -41,5 +41,5 @@ Transação e [[wiki/concepts/idempotencia]] resolvem problemas diferentes e com
 ## Key Sources
 
 - [[wiki/sources/saga-pattern]] — Saga é o padrão para transações distribuídas sem 2PC. Duas abordagens: Choreography (cada serviço reage a eventos, sem coordenador — simples mas difícil de debugar) e Orchestration (orchestrator...
-- [[sources/3pc]]
+- [[wiki/sources/3pc]]
 - [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] — distinção explícita entre o que a transação resolve e o que a idempotência resolve

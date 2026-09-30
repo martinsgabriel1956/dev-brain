@@ -82,5 +82,5 @@ Em Go, `rune` é um alias para `int32` — representa um codepoint [[unicode]] c
 
 ## Key Sources
 
-- [[sources/como-strings-realmente-funcionam]]
+- [[wiki/sources/como-strings-realmente-funcionam]]
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — implementação do algoritmo de decode bytes → runa

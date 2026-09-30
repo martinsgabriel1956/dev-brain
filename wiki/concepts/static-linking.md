@@ -38,8 +38,8 @@ O linker localiza cada função referenciada nas bibliotecas estáticas (`.a` / 
 
 ## Contraste
 
-Ver [[concepts/dynamic-linking]] para a alternativa que compartilha o código entre processos.
+Ver [[wiki/concepts/dynamic-linking]] para a alternativa que compartilha o código entre processos.
 
 ## Key Sources
 
-- [[sources/como-multiplas-linguagens-vivem-num-unico-binario]]
+- [[wiki/sources/como-multiplas-linguagens-vivem-num-unico-binario]]

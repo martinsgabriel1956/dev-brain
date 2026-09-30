@@ -34,12 +34,12 @@ status: stable
 
 ## Entities & Concepts Touched
 
-- [[concepts/rbac]]
+- [[wiki/concepts/rbac]]
 - [[concepts/abac]]
 - [[concepts/rebac]]
 - [[concepts/zanzibar]]
 - [[entities/openfga]]
-- [[entities/opa]]
+- [[wiki/entities/opa]]
 
 ## Open Questions
 

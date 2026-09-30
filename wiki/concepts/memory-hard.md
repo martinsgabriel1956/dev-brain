@@ -14,7 +14,7 @@ status: stable
 
 Propriedade de algoritmos que exigem uma quantidade significativa de **memória RAM** para executar, proporcional a um parâmetro configurável. O objetivo é limitar o paralelismo de GPUs e ASICs, cujo gargalo é a VRAM — não a capacidade de processamento.
 
-É a propriedade que diferencia [[concepts/argon2]] de [[concepts/bcrypt]] e o que torna o Argon2 resistente a ataques por rigs de GPU.
+É a propriedade que diferencia [[wiki/concepts/argon2]] de [[wiki/concepts/bcrypt]] e o que torna o Argon2 resistente a ataques por rigs de GPU.
 
 ---
 
@@ -22,8 +22,8 @@ Propriedade de algoritmos que exigem uma quantidade significativa de **memória 
 
 GPUs têm poder de processamento massivo (ex: RTX 5090 → 21.760 núcleos CUDA), mas memória limitada (32 GB de VRAM no topo de linha).
 
-[[concepts/bcrypt]] ocupa 4 KB de RAM por instância → cabe ~8 milhões de instâncias em 32 GB.
-[[concepts/argon2]] com `m=65536` (64 MB) → cabe ~500 instâncias em 32 GB.
+[[wiki/concepts/bcrypt]] ocupa 4 KB de RAM por instância → cabe ~8 milhões de instâncias em 32 GB.
+[[wiki/concepts/argon2]] com `m=65536` (64 MB) → cabe ~500 instâncias em 32 GB.
 
 O atacante pode ter 21.760 núcleos, mas só consegue usar ~500 deles em paralelo. Aumentar `memory_cost` para 256 MB reduz para ~125 instâncias paralelas.
 
@@ -45,11 +45,11 @@ Aumentar `memory_cost` é a alavanca mais poderosa para tornar ataques por GPU i
 
 ## Relação com Outros Conceitos
 
-- [[concepts/argon2]] — o algoritmo que implementa memory-hard para senhas
-- [[concepts/cpu-hard]] — propriedade complementar (BCrypt tem só CPU-hard)
-- [[concepts/password-hashing]] — contexto de uso
-- [[concepts/bcrypt]] — não é memory-hard, daí sua vulnerabilidade a GPU
+- [[wiki/concepts/argon2]] — o algoritmo que implementa memory-hard para senhas
+- [[wiki/concepts/cpu-hard]] — propriedade complementar (BCrypt tem só CPU-hard)
+- [[wiki/concepts/password-hashing]] — contexto de uso
+- [[wiki/concepts/bcrypt]] — não é memory-hard, daí sua vulnerabilidade a GPU
 
 ## Key Sources
 
-- [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
+- [[wiki/sources/seguranca-armazenamento-senhas-banco-de-dados]]

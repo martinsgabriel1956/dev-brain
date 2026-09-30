@@ -12,7 +12,7 @@ status: stable
 
 # Structural Patterns (Padrões Estruturais)
 
-Uma das três categorias dos 23 padrões [[entities/gang-of-four]]. Tratam de **como objetos se relacionam e se compõem** para formar estruturas maiores — como Legos.
+Uma das três categorias dos 23 padrões [[wiki/entities/gang-of-four]]. Tratam de **como objetos se relacionam e se compõem** para formar estruturas maiores — como Legos.
 
 ## Os 7 Padrões Estruturais GoF
 
@@ -33,7 +33,7 @@ Padrões criacionais tratam de *como* objetos nascem. Padrões estruturais trata
 ## Key Sources
 
 - [[wiki/sources/design-pattern-proxy]]
-- [[sources/sete-padroes-de-design-de-software]]
+- [[wiki/sources/sete-padroes-de-design-de-software]]
 - [[wiki/sources/design-pattern-facade-codigo-fonte-tv]]
 - [[wiki/sources/decorator-xunitpatterns]] — xUnitPatterns.com (Meszaros) cita a definição original do GOF para o [[wiki/concepts/decorator-pattern|Decorator]]
 - [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] — primeiro exemplo próprio de Composite na wiki (`ValidationComposite` agrupando validadores de formulário)

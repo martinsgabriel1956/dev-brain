@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/identidade-avancada]]: [[entities/spire]]
-- Em [[wiki/sources/sessions]]: [[entities/spire]]
+- Em [[wiki/sources/identidade-avancada]]: [[wiki/entities/spire]]
+- Em [[wiki/sources/sessions]]: [[wiki/entities/spire]]
 
 ## Pendências
 

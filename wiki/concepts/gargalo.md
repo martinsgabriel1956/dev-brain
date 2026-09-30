@@ -3,8 +3,8 @@ type: concept
 title: "Gargalo"
 aliases: ["bottleneck", "gargalo de sistema", "ponto de contenção"]
 date_created: 2026-06-26
-date_updated: 2026-08-14
-source_count: 4
+date_updated: 2026-09-30
+source_count: 5
 tags: [system-design, performance, escalabilidade, debugging, monitoramento]
 skill: tech-mentor-system-design
 status: draft
@@ -39,7 +39,7 @@ Adicionar recursos na camada errada não resolve — e ainda desperdiça dinheir
 
 Na maioria dos sistemas web, a camada de aplicação escala facilmente (é [[stateless]], horizontal). O banco de dados é stateful por natureza e concentra toda a contention. Por isso:
 
-1. **Cache primeiro** — [[concepts/cache]] reduz hits ao banco sem complexidade de escala
+1. **Cache primeiro** — [[wiki/concepts/cache]] reduz hits ao banco sem complexidade de escala
 2. **Índices** — a diferença entre 1s e 1ms em uma query
 3. **Read replicas** — distribui carga de leitura ([[replicacao-de-banco]])
 4. **Sharding** — último recurso quando writes também precisam escalar ([[sharding]])
@@ -60,10 +60,14 @@ Na maioria dos sistemas web, a camada de aplicação escala facilmente (é [[sta
 ## Relação com outros conceitos
 
 - [[big-o]] — complexidade algorítmica ruim é gargalo de código puro
-- [[concepts/cache]] — a ferramenta mais eficiente para aliviar gargalo de banco
+- [[wiki/concepts/cache]] — a ferramenta mais eficiente para aliviar gargalo de banco
 - [[sharding]] e [[replicacao-de-banco]] — soluções para gargalo no banco de dados
 - [[escalabilidade-horizontal]] — solução para gargalo na camada de aplicação
 - [[auto-scaling]] — automatiza a resposta ao gargalo detectado por métricas
+
+## Enquadramento: Gargalo, Não Catálogo
+
+Mensagem central da fonte: a pergunta não é "o que é um load balancer", e sim "qual é o gargalo atual e qual o custo da decisão" (latência, consistência, resiliência, custo). No caso, cada problema observado (back end lento, imagem lenta, picos, spam) é mapeado a um bloco ([[wiki/concepts/building-blocks-system-design]], [[wiki/concepts/design-em-camadas]]).
 
 ## Key sources
 
@@ -71,3 +75,4 @@ Na maioria dos sistemas web, a camada de aplicação escala facilmente (é [[sta
 - [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — CPU profile/flame graph como técnica prática de "gargalo de código": tirar uma foto da CPU para achar a função que mais consome tempo de execução; caso real onde isso revelou um pacote compartilhado travando o event loop, corrigido com ~50% de ganho de velocidade
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — num simulador interativo, aumentar tráfego expõe o SQL database em vermelho (bottleneck flag, disponibilidade caindo a 55%); a sequência de correção segue exatamente a regra de ouro desta página — cache primeiro, réplicas depois — e mostra o gargalo se deslocando do banco para o app server assim que o banco deixa de ser o elo mais fraco
 - [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — exemplo de [[wiki/concepts/back-pressure]] em que o consumidor parece lento, mas o gargalo real está no banco de dados; escalar o consumidor sem identificar isso não resolve nada
+- [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — gargalo atual + custo da decisão como pergunta central; quatro problemas observados mapeados a blocos

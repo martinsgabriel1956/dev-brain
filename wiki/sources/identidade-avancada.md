@@ -35,12 +35,12 @@ Identidade avançada: SSO com OIDC/SAML para autenticação centralizada. MFA: T
 ## Entities & Concepts Touched
 
 - [[concepts/sso]]
-- [[concepts/mfa]]
-- [[concepts/passkeys]]
-- [[concepts/webauthn]]
-- [[concepts/spiffe]]
-- [[entities/spire]]
-- [[concepts/jit-access]]
+- [[wiki/concepts/mfa]]
+- [[wiki/concepts/passkeys]]
+- [[wiki/concepts/webauthn]]
+- [[wiki/concepts/spiffe]]
+- [[wiki/entities/spire]]
+- [[wiki/concepts/jit-access]]
 - [[entities/casbin]]
 
 ## Open Questions

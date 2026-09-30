@@ -42,5 +42,5 @@ Commits atômicos funcionam como log de aprendizado implícito no histórico do 
 ## Key Sources
 
 - [[wiki/sources/comparacao-na-carreira-dev]]
-- [[sources/9-habitos-programador-junior]]
+- [[wiki/sources/9-habitos-programador-junior]]
 - [[wiki/sources/the-comparison-trap-in-programming-careers]] — estratégia descrita em primeira pessoa: anotar ao menos uma coisa nova por semana; no final do mês a lista surpreende mesmo em períodos que pareciam estagnados

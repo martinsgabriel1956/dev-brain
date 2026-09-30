@@ -39,7 +39,7 @@ Segundo [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leona
 
 ## Key sources
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — wildcard A + defesa contra DNS rebinding
-- [[sources/dns]]
+- [[wiki/sources/dns]]
 - [[wiki/sources/system-design-load-balancer-nivel-macaco]] — distinção didática DNS vs. Load Balancer (analogia de restaurante) e o health check como diferencial do load balancer
 - [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — DNS como agenda telefônica (domínio → IP); resolução via provedor; propagação de name servers
 - [[wiki/sources/portas-de-rede-como-funcionam]] — DNS como resolução de nome, complementar à porta como resolução de serviço

@@ -35,4 +35,4 @@ Bridge e [[strategy-pattern]] têm estrutura similar (composição + delegação
 
 ## Key Sources
 
-- [[sources/design-pattern-strategy]] — mencionado nas relações como padrão de estrutura similar
+- [[wiki/sources/design-pattern-strategy]] — mencionado nas relações como padrão de estrutura similar

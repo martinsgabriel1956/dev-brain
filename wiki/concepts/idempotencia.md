@@ -3,8 +3,8 @@ type: concept
 title: "Idempotência"
 aliases: ["idempotência", "idempotency", "idempotency key"]
 date_created: 2026-04-22
-date_updated: 2026-09-22
-source_count: 10
+date_updated: 2026-09-30
+source_count: 11
 tags: [distribuidos, resiliencia, api, retry, mensageria, double-spend, double-submit, webhook, fintech]
 skill: tech-mentor-system-design
 status: stable
@@ -12,7 +12,7 @@ status: stable
 
 # Idempotência
 
-Propriedade de uma operação que produz o mesmo resultado independente do número de vezes que é executada. Pré-requisito para [[concepts/retry-backoff]] seguro.
+Propriedade de uma operação que produz o mesmo resultado independente do número de vezes que é executada. Pré-requisito para [[wiki/concepts/retry-backoff]] seguro.
 
 ## O Problema sem Idempotência
 
@@ -170,13 +170,13 @@ O mesmo mecanismo (chave + TTL) também controla **volume de notificações por 
 
 ## Riff de folclore: os "dois problemas difíceis" de sistemas distribuídos
 
-Um riff citado em [[wiki/sources/two-hard-things-martin-fowler]] (autoria de Mathias Verraes) substitui os dois problemas clássicos de Phil Karlton — [[wiki/concepts/naming|naming]] e [[wiki/concepts/tradeoff-de-cache|cache invalidation]] — por "guaranteed order of messages" e "exactly-once delivery" em sistemas distribuídos. É piada, não claim técnico, mas a substituição funciona porque aponta certo: entrega exactly-once é precisamente o problema que idempotência resolve (via [[concepts/retry-backoff|retry]] seguro). Ver [[wiki/concepts/two-hard-things]].
+Um riff citado em [[wiki/sources/two-hard-things-martin-fowler]] (autoria de Mathias Verraes) substitui os dois problemas clássicos de Phil Karlton — [[wiki/concepts/naming|naming]] e [[wiki/concepts/tradeoff-de-cache|cache invalidation]] — por "guaranteed order of messages" e "exactly-once delivery" em sistemas distribuídos. É piada, não claim técnico, mas a substituição funciona porque aponta certo: entrega exactly-once é precisamente o problema que idempotência resolve (via [[wiki/concepts/retry-backoff|retry]] seguro). Ver [[wiki/concepts/two-hard-things]].
 
 ## Key Sources
 
 - [[wiki/sources/event-driven-architecture]] — EDA desacopla produtores de consumidores via eventos — comunicação assíncrona, temporal decoupling. Dois padrões de coordenação: Choreography (cada serviço reage a eventos, sem coordenador) e...
 - [[wiki/sources/two-hard-things-martin-fowler]] — riff de folclore que cita "exactly-once delivery" como um dos dois problemas difíceis de sistemas distribuídos
-- [[sources/retry-backoff]]
+- [[wiki/sources/retry-backoff]]
 - [[wiki/sources/acoplamento-abstracao-estado]]
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — idempotência como resposta ao webhook duplicado; errar at-least-once vs. exactly-once cobra o cliente em dobro ou perde o pedido
 - [[wiki/sources/double-spend-double-submit]] — double spend/double submit como o mesmo problema; chave de idempotência gerada no servidor via hash dos campos (mais robusta que chave enviada pelo cliente); janela de tempo de duplicidade como decisão de negócio
@@ -184,3 +184,4 @@ Um riff citado em [[wiki/sources/two-hard-things-martin-fowler]] (autoria de Mat
 - [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] — por que o timeout sozinho não decide a causa; corrida resolvida por `INSERT` atômico em vez de `SELECT`+`INSERT`; idempotência vs. transação como proteções complementares; identidade cruzando fronteira de serviço via Outbox/Inbox; identidades de negócio por produto; TTL e testes de garantia
 - [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] — teaser no fechamento do vídeo (ainda não desenvolvido como fonte própria): quando uma etapa posterior de um fluxo multi-step falha depois que o cartão já foi cobrado, como desfazer o efeito colateral já aplicado — aponta para o par idempotência/[[wiki/concepts/saga-pattern]]
 - [[wiki/sources/idempotencia-redis-controle-mensagens-whatsapp-tulio-faria]] — caso real de notificações (WhatsApp/SMS): chave composta por telefone + tipo + hash da mensagem; janela de 5 minutos como decisão de produto; `redis.set(key, val, "EX", ttl, "GET")` como check-and-set atômico; mesmo mecanismo usado para limitar volume de SMS por usuário
+- [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — POST não é idempotente, GET/PUT/DELETE são; clique duplo em pagamento pode cobrar duas vezes (explicação básica de método HTTP)

@@ -49,11 +49,11 @@ A qualidade do código que a IA vai interagir importa mais do que o prompt, o mo
 
 ## Conceitos Centrais
 
-- [[concepts/hexagonal-architecture]] — Ports & Adapters: o padrão e seus componentes
-- [[concepts/codebase-legibilidade-ia]] — legibilidade para humanos = legibilidade para IA
-- [[concepts/acoplamento]] — o inimigo central; forte acoplamento congela o código
-- [[concepts/adapter-pattern]] — implementação concreta de um port
-- [[concepts/single-responsibility-principle]] — cada módulo com uma razão para mudar
+- [[wiki/concepts/hexagonal-architecture]] — Ports & Adapters: o padrão e seus componentes
+- [[wiki/concepts/codebase-legibilidade-ia]] — legibilidade para humanos = legibilidade para IA
+- [[wiki/concepts/acoplamento]] — o inimigo central; forte acoplamento congela o código
+- [[wiki/concepts/adapter-pattern]] — implementação concreta de um port
+- [[wiki/concepts/single-responsibility-principle]] — cada módulo com uma razão para mudar
 
 ---
 
@@ -120,10 +120,10 @@ O autor coloca validações no `UserService`. O argumento DDD puro seria colocar
 
 ## Conexões com o Wiki
 
-- [[sources/hexagonal-architecture]] — referência técnica aprofundada do padrão (Alistair Cockburn, driving/driven ports, in-memory adapters)
-- [[sources/clean-architecture-ia-custo-real]] — custo em tokens de arquitetura horizontal com IA
-- [[sources/navigation-paradox-2026]] — agente perde arquivos críticos em arquitetura por camada
-- [[sources/acoplamento-abstracao-estado]] — acoplamento como lente de design
+- [[wiki/sources/hexagonal-architecture]] — referência técnica aprofundada do padrão (Alistair Cockburn, driving/driven ports, in-memory adapters)
+- [[wiki/sources/clean-architecture-ia-custo-real]] — custo em tokens de arquitetura horizontal com IA
+- [[wiki/sources/navigation-paradox-2026]] — agente perde arquivos críticos em arquitetura por camada
+- [[wiki/sources/acoplamento-abstracao-estado]] — acoplamento como lente de design
 
 ---
 

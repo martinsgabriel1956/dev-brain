@@ -34,11 +34,11 @@ DI é o padrão de fornecer dependências externamente em vez de instanciá-las 
 
 ## Entities & Concepts Touched
 
-- [[concepts/dependency-injection]]
+- [[wiki/concepts/dependency-injection]]
 - [[concepts/ioc]]
 - [[concepts/testabilidade]]
-- [[concepts/clean-architecture]]
-- [[concepts/hexagonal-architecture]]
+- [[wiki/concepts/clean-architecture]]
+- [[wiki/concepts/hexagonal-architecture]]
 
 ## Open Questions
 

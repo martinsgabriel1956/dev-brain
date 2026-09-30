@@ -165,7 +165,7 @@ A entrada de agentes de IA na pipeline adiciona uma pergunta específica aos tr�
 
 ## Relacionado
 
-[[concepts/sli]] · [[concepts/slo]] · [[concepts/error-budget]] · [[concepts/blameless-post-mortem]] · [[concepts/circuit-breaker]] · [[concepts/service-mesh]] · [[wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp]]
+[[wiki/concepts/sli]] · [[wiki/concepts/slo]] · [[wiki/concepts/error-budget]] · [[wiki/concepts/blameless-post-mortem]] · [[wiki/concepts/circuit-breaker]] · [[wiki/concepts/service-mesh]] · [[wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp]]
 
 ## Observabilidade como Resposta ao Debug Assíncrono
 
@@ -174,10 +174,10 @@ A entrada de agentes de IA na pipeline adiciona uma pergunta específica aos tr�
 ## Key Sources
 
 - [[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] — declaração de intenção editorial: métricas relevantes, configuração e confiabilidade de alertas, disaster recovery, observabilidade em sistemas distribuídos e logs estruturados anunciados como próximo tema de estudo/conteúdo — sem claim técnico novo, plano futuro
-- [[sources/observabilidade]]
+- [[wiki/sources/observabilidade]]
 - [[wiki/sources/diferenciais-portfolio-backend-junior]]
-- [[sources/5-principios-programador]]
-- [[sources/roadmap-dev-senior-2026]] — pilar 4: ler o sistema como sistema vivo (logs, métricas)
+- [[wiki/sources/5-principios-programador]]
+- [[wiki/sources/roadmap-dev-senior-2026]] — pilar 4: ler o sistema como sistema vivo (logs, métricas)
 - [[wiki/sources/10-conceitos-fundamentais-backend]] — observabilidade como "meta-conceito" nº 1: o que amarra cache, fila, banco e autenticação no mundo real; logs = o que aconteceu, métricas = está crescendo?, traces = onde o tempo foi gasto
 - [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — arquitetura do Collector como ponto único de roteamento; correlação automática de telemetria via agente de IA + MCP
 - [[wiki/sources/impacto-ia-mercado-frontend]] — observabilidade como um dos itens que menos mudou com IA, citado como marcador de maturidade de plataforma que blinda orgs do impacto de mercado

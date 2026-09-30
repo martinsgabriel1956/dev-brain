@@ -40,12 +40,12 @@ Não foi a primeira criptografia da história — a [[wiki/concepts/scytale]] es
 
 ## Relação com outros conceitos
 
-- [[concepts/encryption]] — Caesar Cipher é o exemplo histórico mais simples do conceito.
+- [[wiki/concepts/encryption]] — Caesar Cipher é o exemplo histórico mais simples do conceito.
 - [[wiki/concepts/scytale]] — outra cifra pré-moderna, por transposição em vez de substituição
 - [[wiki/concepts/vigenere-cipher]] — evolução que resolve a fraqueza de substituição fixa do César
 - [[wiki/concepts/ind-cpa-security]] — modelo formal que demonstra por que César é insegura
 
 ## Key Sources
 
-- [[sources/encoding-hashing-encryption]]
+- [[wiki/sources/encoding-hashing-encryption]]
 - [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]

@@ -20,8 +20,8 @@ Citado sobre aprendizado na prática:
 
 > "Nenhuma hora de Deus é melhor que uma hora aprendendo fazendo."
 
-Técnica que ele descreve como usada pelos melhores programadores que conhece: construir primeiro, aprender o que o problema exige conforme aparece — oposto do [[concepts/tutorial-hell]].
+Técnica que ele descreve como usada pelos melhores programadores que conhece: construir primeiro, aprender o que o problema exige conforme aparece — oposto do [[wiki/concepts/tutorial-hell]].
 
 ## Key Sources
 
-- [[sources/principio-da-inversao-programador]]
+- [[wiki/sources/principio-da-inversao-programador]]

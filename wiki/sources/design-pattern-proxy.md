@@ -45,15 +45,15 @@ Cliente → ReportGeneratorProxy.generate()
 
 ## Entities & Concepts Touched
 
-- [[concepts/proxy-pattern]]
-- [[concepts/decorator-pattern]]
-- [[concepts/cache-layer]]
-- [[concepts/lazy-initialization]]
-- [[concepts/open-closed-principle]]
-- [[concepts/single-responsibility-principle]]
-- [[concepts/design-patterns]]
-- [[entities/gang-of-four]]
-- [[entities/renato-augusto]]
+- [[wiki/concepts/proxy-pattern]]
+- [[wiki/concepts/decorator-pattern]]
+- [[wiki/concepts/cache-layer]]
+- [[wiki/concepts/lazy-initialization]]
+- [[wiki/concepts/open-closed-principle]]
+- [[wiki/concepts/single-responsibility-principle]]
+- [[wiki/concepts/design-patterns]]
+- [[wiki/entities/gang-of-four]]
+- [[wiki/entities/renato-augusto]]
 
 ## Open Questions
 

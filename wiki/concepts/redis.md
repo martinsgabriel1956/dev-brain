@@ -3,8 +3,8 @@ type: concept
 title: "Redis"
 aliases: ["redis cache", "redis db"]
 date_created: 2026-06-26
-date_updated: 2026-09-22
-source_count: 12
+date_updated: 2026-09-30
+source_count: 13
 tags: [redis, cache, nosql, banco-in-memory, chave-valor, backend, grande-rollback]
 skill: tech-mentor-backend
 status: stable
@@ -14,7 +14,7 @@ status: stable
 
 ## TL;DR
 
-Banco [[nosql]] [[banco-in-memory]] do tipo chave-valor. Projetado para latência mínima — armazena tudo na RAM e acessa por chave, sem esquema, sem SQL. Caso de uso principal: [[concepts/cache]].
+Banco [[nosql]] [[banco-in-memory]] do tipo chave-valor. Projetado para latência mínima — armazena tudo na RAM e acessa por chave, sem esquema, sem SQL. Caso de uso principal: [[wiki/concepts/cache]].
 
 ## Modelo de Dados
 
@@ -52,7 +52,7 @@ A chave pode ser longa e semântica. Busca por prefixo (`GET cod_cliente:*`) per
 ## Padrões de Uso
 
 - **[[cache-aside]]** — busca no Redis; em miss vai ao banco e popula com TTL
-- **[[concepts/cqrs]] read layer** — Redis como projeção otimizada de leitura; SQL como fonte de verdade
+- **[[wiki/concepts/cqrs]] read layer** — Redis como projeção otimizada de leitura; SQL como fonte de verdade
 - **[[feature-flag]]** — interruptores de código com latência mínima
 - **Session store** — tokens de sessão, permissões de menu, extrato do cliente
 - **Reserva temporizada (TTL como regra de negócio)** — guardar uma chave com expiração automática para implementar diretamente uma regra do tipo "reserva por N minutos", sem job/cron externo para liberar o recurso. Ver [[wiki/sources/system-design-entrevista-cinema-draw-io]] abaixo — mas note a ressalva de consistência descrita ali.
@@ -87,6 +87,10 @@ Reforço direto do caso Shopify acima: em quase 100% dos casos reais, Redis não
 
 [[wiki/sources/world-cup-system-design]] desenha o Redis usado como cache de placar pré-computado (alimentado pelo Score Service) e o Redis usado como barramento [[wiki/concepts/pub-sub|Pub/Sub]] (que notifica o Web Server para repassar via SSE) como **dois blocos separados no diagrama de arquitetura**, não uma única instância acumulando as duas funções — e só o Redis de cache evolui para cluster multi-nó na versão final da arquitetura; o Redis Pub/Sub permanece single-node. O board não justifica essa separação explicitamente (ver open question na fonte), mas é consistente com o princípio de que cache (dado que precisa sobreviver e ser consultável) e pub/sub (broadcast efêmero, sem persistência) têm perfis de uso e de disponibilidade diferentes.
 
+## Caso: Cache de Foto de Perfil
+
+Citado como o cache mais comum: guarda `user_id` → `photo_url` com TTL de 5 min, atualizado em novo upload ([[wiki/concepts/cache]]).
+
 ## Key Sources
 
 - [[wiki/sources/sessions]] — JWT stateless: impossível revogar antes do TTL. Sessions server-side com Redis: revogação imediata ao custo de state. MFA TOTP: mínimo aceitável. WebAuthn/Passkeys: padrão futuro sem senha,...
@@ -101,3 +105,4 @@ Reforço direto do caso Shopify acima: em quase 100% dos casos reais, Redis não
 - [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — Redis via Docker como broker de uma fila BullMQ na demo de admission control com low/high watermark
 - [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — cache de placar pré-computado alimentado por um consumer group Kafka dedicado, evitando recalcular a timeline completa a cada leitura; Redis Pub/Sub propagando atualizações para conexões SSE distribuídas entre instâncias
 - [[wiki/sources/world-cup-system-design]] — slide deck da mesma aula: Redis de cache e Redis Pub/Sub desenhados como duas instâncias separadas, só a de cache clusterizada na arquitetura final
+- [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — Instagram simplificado: Redis como cache da URL da foto de perfil (TTL 5 min)

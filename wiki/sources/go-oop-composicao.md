@@ -33,4 +33,4 @@ Go não tem herança — usa **composição via embedding**. Embedding promove m
 
 ## Conceitos Abordados
 
-- [[concepts/go-oop-composicao]] · [[concepts/go-fundamentos]] · [[concepts/go-arquitetura]] · [[concepts/clean-architecture]]
+- [[wiki/concepts/go-oop-composicao]] · [[wiki/concepts/go-fundamentos]] · [[wiki/concepts/go-arquitetura]] · [[wiki/concepts/clean-architecture]]

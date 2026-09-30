@@ -46,6 +46,6 @@ Comparar velocidade de aprendizado no início da carreira é **comparar históri
 
 ## Key Sources
 
-- [[sources/comparacao-na-carreira-dev]]
-- [[sources/como-aprender-programacao-3-dicas]]
+- [[wiki/sources/comparacao-na-carreira-dev]]
+- [[wiki/sources/como-aprender-programacao-3-dicas]]
 - [[wiki/sources/the-comparison-trap-in-programming-careers]] — narrativa em primeira pessoa: viu código pela primeira vez aos 17; colegas dominavam em semanas o que ela levava um mês; conclui que a diferença era histórico acumulado de vida inteira

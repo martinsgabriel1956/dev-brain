@@ -12,7 +12,7 @@ status: stable
 
 # Read-Your-Writes
 
-Garantia de que após escrever, o mesmo cliente sempre lê o valor escrito — mesmo com [[concepts/read-replicas]].
+Garantia de que após escrever, o mesmo cliente sempre lê o valor escrito — mesmo com [[wiki/concepts/read-replicas]].
 
 ## Problema
 
@@ -36,13 +36,13 @@ async function getOrders(userId: string) {
 
 ## Trade-off
 
-Aumenta carga no primário temporariamente após escritas. Para workloads muito write-heavy, avalie se [[concepts/read-replicas]] fazem sentido.
+Aumenta carga no primário temporariamente após escritas. Para workloads muito write-heavy, avalie se [[wiki/concepts/read-replicas]] fazem sentido.
 
 ## Contexto mais amplo
 
-Submodelo de [[concepts/consistency-models]] — eventual consistency com a garantia mínima de que um cliente vê suas próprias escritas.
+Submodelo de [[wiki/concepts/consistency-models]] — eventual consistency com a garantia mínima de que um cliente vê suas próprias escritas.
 
 ## Key Sources
 
-- [[sources/banco-de-dados]]
-- [[sources/modelos-de-consistencia]]
+- [[wiki/sources/banco-de-dados]]
+- [[wiki/sources/modelos-de-consistencia]]

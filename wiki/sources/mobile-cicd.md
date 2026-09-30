@@ -32,4 +32,4 @@ Fastlane `match` gerencia certificados/provisioning em repositório git criptogr
 
 ## Conceitos Abordados
 
-- [[concepts/mobile-cicd]] · [[concepts/mobile-testes]] · [[concepts/mobile-monitoramento]] · [[concepts/mobile-baseline-profiles]] · [[cicd-pipeline]]
+- [[wiki/concepts/mobile-cicd]] · [[wiki/concepts/mobile-testes]] · [[wiki/concepts/mobile-monitoramento]] · [[wiki/concepts/mobile-baseline-profiles]] · [[cicd-pipeline]]

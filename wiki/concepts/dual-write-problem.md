@@ -3,8 +3,8 @@ type: concept
 title: "Dual Write Problem (Bug da Escrita Dupla)"
 aliases: ["bug da escrita dupla", "dual write", "problema da escrita dupla"]
 date_created: 2026-08-27
-date_updated: 2026-09-14
-source_count: 2
+date_updated: 2026-09-30
+source_count: 3
 tags: [dual-write-problem, cqrs, event-driven-architecture, outbox-pattern, consistencia, sistemas-distribuidos]
 skill: tech-mentor-backend
 status: stub
@@ -30,3 +30,4 @@ A solução padrão é o [[wiki/concepts/outbox-pattern]]: escrever o evento num
 
 - [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] — citação nominal do bug da escrita dupla como risco de sincronizar CQRS via eventos
 - [[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] — versão didática completa do problema com exemplo de entrevista, incluindo por que uma transação de banco local não basta para cobrir a chamada externa
+- [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — fonte sincroniza escrita→leitura por evento sem tratar a atomicidade entre gravar e publicar; lacuna que o outbox resolve

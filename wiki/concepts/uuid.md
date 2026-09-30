@@ -47,7 +47,7 @@ UUIDv4 é às vezes usado como token de autorização/sessão por conveniência,
 
 ## Key Sources
 
-- [[sources/uuid-primary-key-mysql]]
-- [[sources/case-url-shortener]] (Snowflake ID como alternativa)
+- [[wiki/sources/uuid-primary-key-mysql]]
+- [[wiki/sources/case-url-shortener]] (Snowflake ID como alternativa)
 - [[wiki/sources/uuid-quando-usar-pergunta-diogo]] — argumentos de negócio para UUID (merge de shards, anti-enumeração) e estratégia híbrida sequência-interna + UUID-público
 - [[wiki/sources/anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato]] — UUIDv4 (122 bits) vs. token opaco de 256 bits gerado por CSPRNG; distinção de propósito entre identificador e segredo de autorização

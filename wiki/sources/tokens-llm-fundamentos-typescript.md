@@ -43,14 +43,14 @@ Deep dive didático sobre tokens em LLMs usando TypeScript: por que o mesmo prom
 
 ## Entities & Concepts Touched
 
-- [[concepts/byte-pair-encoding]]
-- [[concepts/token-tax-multilingual]]
-- [[concepts/tokenizacao]]
-- [[entities/anthropic]]
-- [[entities/openai]]
-- [[entities/google]]
-- [[entities/matt-pocock]]
-- [[entities/vercel-ai-sdk]]
+- [[wiki/concepts/byte-pair-encoding]]
+- [[wiki/concepts/token-tax-multilingual]]
+- [[wiki/concepts/tokenizacao]]
+- [[wiki/entities/anthropic]]
+- [[wiki/entities/openai]]
+- [[wiki/entities/google]]
+- [[wiki/entities/matt-pocock]]
+- [[wiki/entities/vercel-ai-sdk]]
 
 ## Open Questions
 

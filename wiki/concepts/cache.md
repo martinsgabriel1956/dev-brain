@@ -3,8 +3,8 @@ type: concept
 title: "Cache"
 aliases: ["caching", "cache de aplicação"]
 date_created: 2026-06-26
-date_updated: 2026-09-22
-source_count: 17
+date_updated: 2026-09-30
+source_count: 18
 tags: [cache, performance, redis, arquitetura, backend, grande-rollback, buffer]
 skill: tech-mentor-backend
 status: stable
@@ -84,6 +84,10 @@ Não entender bem essa camada de cache impacta latência, mas principalmente **c
 
 SSR puro recomputa o mesmo HTML a cada requisição — 100 usuários acessando a mesma página geram 100 renderizações idênticas no servidor. Como renderização SSR complexa é uma operação CPU-bound que pode travar o [[wiki/concepts/event-loop-performance-js|event loop]] de Node.js (ver [[wiki/concepts/renderizacao-ssr-vs-csr]]), cachear o HTML gerado — especialmente para páginas de baixa volatilidade — reduz tanto latência quanto o risco de bloqueio sob carga concorrente. Estratégias híbridas (parte estática, parte dinâmica) e mecanismos como o ISR (Incremental Static Regeneration) do Next.js seguem essa mesma lógica: evitar recomputar o que não mudou.
 
+## Caso: Foto de Perfil com TTL de 5 Minutos
+
+Guardar `user_id` → `photo_url` no Redis com TTL de 5 min, atualizando a chave a cada novo upload; indicado para dado muito lido que muda pouco. O TTL é a janela máxima de dado desatualizado se a atualização falhar (inferência; o vídeo não discute).
+
 ## Key Sources
 
 - [[wiki/sources/case-twitter-feed]] — O feed do Twitter é o caso clássico de **fan-out de escrita em escala extrema**. A solução é híbrida: fan-out on write para usuários normais (pré-computa timelines no Redis) e fan-out on read para...
@@ -103,3 +107,4 @@ SSR puro recomputa o mesmo HTML a cada requisição — 100 usuários acessando 
 - [[wiki/sources/system-design-load-balancer-nivel-macaco]] — cache citado, numa pergunta frequente de aula introdutória, como técnica alternativa a "só adicionar mais servidor/load balancer" para escalar, reforçando o mesmo framing de "melhor amigo antes de escalar" já registrado acima
 - [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] — preços reais de cache hit vs. miss da Moonshot AI (Kimi K3 e K2.7 Code), diferença de até 10× no custo de input tokens
 - [[wiki/sources/node-single-thread-ssr-bloqueio-event-loop]] — cache de renderização (e ISR do Next.js) como mitigação para SSR CPU-bound recomputado a cada requisição, reduzindo tanto latência quanto risco de travar o event loop sob carga concorrente
+- [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — Instagram simplificado: cache de foto de perfil (Redis, TTL 5 min, atualizado no upload) para não bater no banco

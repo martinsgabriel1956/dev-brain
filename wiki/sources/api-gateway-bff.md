@@ -34,12 +34,12 @@ API Gateway controla tráfego norte-sul (externo → sistema): authn/authz, rate
 
 ## Entities & Concepts Touched
 
-- [[concepts/api-gateway]]
-- [[concepts/bff-pattern]]
-- [[concepts/rate-limiting]]
+- [[wiki/concepts/api-gateway]]
+- [[wiki/concepts/bff-pattern]]
+- [[wiki/concepts/rate-limiting]]
 - [[concepts/north-south-traffic]]
 - [[concepts/east-west-traffic]]
-- [[concepts/service-mesh]]
+- [[wiki/concepts/service-mesh]]
 - [[concepts/aggregation-layer]]
 
 ## Open Questions

@@ -32,4 +32,4 @@ Design system mobile é a fonte única de verdade entre Figma e código. Arquite
 
 ## Conceitos Abordados
 
-- [[concepts/mobile-design-system]] · [[concepts/mobile-cross-platform-decision]] · [[concepts/mobile-feature-flags]]
+- [[wiki/concepts/mobile-design-system]] · [[wiki/concepts/mobile-cross-platform-decision]] · [[wiki/concepts/mobile-feature-flags]]

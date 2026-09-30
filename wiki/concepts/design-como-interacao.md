@@ -24,7 +24,7 @@ Design não é o que o usuário vê quando abre a aplicação — é o que ele *
 |---|---|
 | **Micro-interações** | Animações de botão, transições de página |
 | **Feedback visual** | Spinner, loading state, confirmação de ação |
-| **Performance percebida** | [[concepts/fake-delay]] para tornar ações rápidas perceptíveis |
+| **Performance percebida** | [[wiki/concepts/fake-delay]] para tornar ações rápidas perceptíveis |
 | **Onboarding** | Primeira experiência do usuário com o produto |
 | **Acessibilidade** | Produto funciona para o público-alvo em qualquer contexto |
 | **Linguagem** | Tom dos erros, labels, mensagens vazias |
@@ -37,13 +37,13 @@ Estudar design só pela parte visual (combinar cores, espaçamentos) pode produz
 
 - Botões são visualmente quase idênticos entre aplicações
 - O que diferencia é a resposta ao clique: timing, animação, estado intermediário
-- [[entities/linear]] é a referência mais citada por devs frontend justamente por esse nível de cuidado
+- [[wiki/entities/linear]] é a referência mais citada por devs frontend justamente por esse nível de cuidado
 
 ---
 
 ## Para o Dev
 
-O papel do [[concepts/design-engineer]] é implementar essas camadas de detalhe. Não é apenas "fazer bonito" — é garantir que cada interação seja intencional e coerente.
+O papel do [[wiki/concepts/design-engineer]] é implementar essas camadas de detalhe. Não é apenas "fazer bonito" — é garantir que cada interação seja intencional e coerente.
 
 Técnicas concretas:
 - `Promise.all([fetch, sleep(MIN_DELAY)])` para garantir feedback mínimo visível
@@ -64,13 +64,13 @@ Erros recorrentes em UI gerada rapidamente por IA — como a ausência de `curso
 
 ## Relação com Outros Conceitos
 
-- [[concepts/fake-delay]] — exemplo prático de design de interação
-- [[concepts/design-engineer]] — o papel que implementa design como interação
-- [[entities/linear]] — referência máxima de aplicação com design de interação de alta qualidade
+- [[wiki/concepts/fake-delay]] — exemplo prático de design de interação
+- [[wiki/concepts/design-engineer]] — o papel que implementa design como interação
+- [[wiki/entities/linear]] — referência máxima de aplicação com design de interação de alta qualidade
 - [[wiki/concepts/hierarquia-visual]] — estrutura de atenção que precede a interação
 - [[wiki/concepts/affordance]] — sinalização de como interagir com um elemento
 
 ## Key Sources
 
-- [[sources/design-first-vs-code-first-referencias]]
+- [[wiki/sources/design-first-vs-code-first-referencias]]
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]

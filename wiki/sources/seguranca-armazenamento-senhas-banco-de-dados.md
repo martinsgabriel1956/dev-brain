@@ -29,65 +29,65 @@ Armazenar senhas corretamente exige entender a evolução histórica dos ataques
 
 Senhas armazenadas exatamente como o usuário digitou. Qualquer vazamento de banco expunha tudo imediatamente. O SQL Injection popularizado nos anos 90 tornou esse padrão catastrófico: um atacante com acesso ao banco ganhava também acesso a qualquer outro serviço onde o usuário reutilizasse a senha.
 
-**Caso real:** [[entities/rockyou]] — 2009, 32 milhões de senhas vazadas em plaintext. Originou a wordlist RockYou, hoje com bilhões de senhas reais, usada como base para todos os ataques subsequentes.
+**Caso real:** [[wiki/entities/rockyou]] — 2009, 32 milhões de senhas vazadas em plaintext. Originou a wordlist RockYou, hoje com bilhões de senhas reais, usada como base para todos os ataques subsequentes.
 
 ### Era 2: MD5 e SHA-1 (Anos 2000)
 
-Funções de hash [[concepts/hashing]] foram adotadas como solução: determinísticas, com efeito avalanche, unidirecionais. O banco armazenava o hash, não a senha.
+Funções de hash [[wiki/concepts/hashing]] foram adotadas como solução: determinísticas, com efeito avalanche, unidirecionais. O banco armazenava o hash, não a senha.
 
 **Problema 1 — Velocidade:** MD5/SHA geram bilhões de hashes/segundo. Um atacante consegue testar bilhões de candidatas em segundos.
 
 **Problema 2 — Senhas iguais = hashes iguais:** Sem unicidade por usuário, quebrar uma senha quebra todas que usam o mesmo valor.
 
-**Problema 3 — [[concepts/ataque-pre-computacao]]:** Com listas como RockYou, o atacante pré-computa todos os hashes uma vez e reutiliza contra qualquer banco vazado.
+**Problema 3 — [[wiki/concepts/ataque-pre-computacao]]:** Com listas como RockYou, o atacante pré-computa todos os hashes uma vez e reutiliza contra qualquer banco vazado.
 
 ### Era 2.5: MD5/SHA + Salt
 
-[[concepts/salt]] resolve o ataque de pré-computação ao forçar recálculo por usuário. Mas não resolve a velocidade — com bilhões de hashes/segundo, fazer um loop em 29 bilhões de candidatas por linha do banco ainda é viável.
+[[wiki/concepts/salt]] resolve o ataque de pré-computação ao forçar recálculo por usuário. Mas não resolve a velocidade — com bilhões de hashes/segundo, fazer um loop em 29 bilhões de candidatas por linha do banco ainda é viável.
 
 ### Era 3: BCrypt / PBKDF2 (Anos 2010)
 
-[[concepts/bcrypt]] introduz o conceito de [[concepts/cpu-hard]]: o algoritmo é **intencionalmente lento**. Com fator de trabalho 12, gera ~3 hashes/segundo. O salt já é gerado automaticamente.
+[[wiki/concepts/bcrypt]] introduz o conceito de [[wiki/concepts/cpu-hard]]: o algoritmo é **intencionalmente lento**. Com fator de trabalho 12, gera ~3 hashes/segundo. O salt já é gerado automaticamente.
 
 **Problema:** GPUs modernas têm dezenas de milhares de núcleos e bcrypt ocupa apenas 4 KB de RAM por instância. Uma RTX 5090 (21.760 núcleos CUDA) consegue testar ~5 bilhões de candidatas/dia. Uma rig com múltiplas GPUs varre um banco em dias.
 
 ### Era 4: Argon2id (Estado da Arte)
 
-[[concepts/argon2]] introduz [[concepts/memory-hard]]: além de CPU-hard, ocupa quantidade configurável de RAM por instância (ex: 64 MB). Isso limita o paralelismo de GPUs pelo gargalo de VRAM (32 GB numa RTX 5090 = máximo ~500 instâncias paralelas de 64 MB).
+[[wiki/concepts/argon2]] introduz [[wiki/concepts/memory-hard]]: além de CPU-hard, ocupa quantidade configurável de RAM por instância (ex: 64 MB). Isso limita o paralelismo de GPUs pelo gargalo de VRAM (32 GB numa RTX 5090 = máximo ~500 instâncias paralelas de 64 MB).
 
 Configuração recomendada: `m=65536` (64 MB), `t=3` iterações, `p=4` threads, variante `argon2id`.
 
 ### Técnica Adicional: Pepper
 
-[[concepts/pepper]] é um valor secreto armazenado no ENV do servidor (não no banco). Concatenado à senha antes do hash, inutiliza qualquer tentativa de brute-force mesmo que o banco vaze, porque o atacante não sabe que o pepper existe.
+[[wiki/concepts/pepper]] é um valor secreto armazenado no ENV do servidor (não no banco). Concatenado à senha antes do hash, inutiliza qualquer tentativa de brute-force mesmo que o banco vaze, porque o atacante não sabe que o pepper existe.
 
 ---
 
 ## Conceitos Centrais
 
-- [[concepts/password-hashing]] — visão geral do problema
-- [[concepts/salt]] — unicidade por usuário, invalida rainbow tables
-- [[concepts/rainbow-table]] — ataque de pré-computação que salt resolve
-- [[concepts/cpu-hard]] — algoritmos lentos por design
-- [[concepts/memory-hard]] — o que derrota GPUs
-- [[concepts/bcrypt]] — CPU-hard, obsoleto contra rigs de GPU
-- [[concepts/argon2]] — estado da arte, memory-hard
-- [[concepts/pepper]] — segredo do servidor, defesa em profundidade
-- [[concepts/ataque-pre-computacao]] — como funcionam os ataques históricos
+- [[wiki/concepts/password-hashing]] — visão geral do problema
+- [[wiki/concepts/salt]] — unicidade por usuário, invalida rainbow tables
+- [[wiki/concepts/rainbow-table]] — ataque de pré-computação que salt resolve
+- [[wiki/concepts/cpu-hard]] — algoritmos lentos por design
+- [[wiki/concepts/memory-hard]] — o que derrota GPUs
+- [[wiki/concepts/bcrypt]] — CPU-hard, obsoleto contra rigs de GPU
+- [[wiki/concepts/argon2]] — estado da arte, memory-hard
+- [[wiki/concepts/pepper]] — segredo do servidor, defesa em profundidade
+- [[wiki/concepts/ataque-pre-computacao]] — como funcionam os ataques históricos
 
 ---
 
 ## Entidades
 
-- [[entities/rockyou]] — empresa e wordlist originada no vazamento de 2009
+- [[wiki/entities/rockyou]] — empresa e wordlist originada no vazamento de 2009
 
 ---
 
 ## Relação com Outros Conceitos do Wiki
 
-- [[concepts/hashing]] — propriedades das funções de hash (determinístico, efeito avalanche, unidirecional)
-- [[concepts/sql-injection]] — vetor original que tornou o plaintext perigoso nos anos 90
-- [[concepts/timing-attack]] — comparação segura de hashes exige tempo constante
+- [[wiki/concepts/hashing]] — propriedades das funções de hash (determinístico, efeito avalanche, unidirecional)
+- [[wiki/concepts/sql-injection]] — vetor original que tornou o plaintext perigoso nos anos 90
+- [[wiki/concepts/timing-attack]] — comparação segura de hashes exige tempo constante
 
 ---
 

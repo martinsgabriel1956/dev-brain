@@ -60,7 +60,7 @@ Mitigação via [[harness-de-qualidade]]: ferramentas de análise de query (APM,
 
 ## Key Sources
 
-- [[sources/banco-de-dados]]
+- [[wiki/sources/banco-de-dados]]
 - [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
 - [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]] — N+1 entre frontend e backend, origem do GraphQL, prefetch em Django, LEFT JOIN

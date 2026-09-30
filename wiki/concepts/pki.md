@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/criptografia-fundamentos]]: [[concepts/pki]]
-- Em [[wiki/sources/tls-mtls-vpn]]: [[concepts/pki]]
+- Em [[wiki/sources/criptografia-fundamentos]]: [[wiki/concepts/pki]]
+- Em [[wiki/sources/tls-mtls-vpn]]: [[wiki/concepts/pki]]
 
 ## Pendências
 

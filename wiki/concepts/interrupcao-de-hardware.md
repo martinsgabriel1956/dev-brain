@@ -39,11 +39,11 @@ Sinal elétrico enviado por um dispositivo de hardware que para o que o processa
 
 Sem interrupções, o SO não teria como retomar o controle de um processo em execução. Um processo poderia monopolizar o processador para sempre.
 
-O [[concepts/escalonador]] preemptivo depende do timer interrupt para funcionar: a cada fatia de tempo, o timer dispara, o SO assume e decide quem roda em seguida.
+O [[wiki/concepts/escalonador]] preemptivo depende do timer interrupt para funcionar: a cada fatia de tempo, o timer dispara, o SO assume e decide quem roda em seguida.
 
 ## Software interrupt (syscall)
 
-Além das interrupções de hardware, existe o **software interrupt** (trap): o processo voluntariamente chama o SO via [[concepts/syscall]] para pedir um serviço. O mecanismo é similar — CPU troca de modo e transfere controle ao kernel.
+Além das interrupções de hardware, existe o **software interrupt** (trap): o processo voluntariamente chama o SO via [[wiki/concepts/syscall]] para pedir um serviço. O mecanismo é similar — CPU troca de modo e transfere controle ao kernel.
 
 ## Interrupções customizadas em sistemas embarcados
 
@@ -51,13 +51,13 @@ Em [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]], in
 
 ## Ver também
 
-- [[concepts/escalonador]] — usa timer interrupt para preempção
-- [[concepts/context-switch]] — disparado pela interrupção do timer
-- [[concepts/syscall]] — interrupt voluntário do software para o kernel
-- [[concepts/kernel]] — recebe controle quando a interrupção ocorre
+- [[wiki/concepts/escalonador]] — usa timer interrupt para preempção
+- [[wiki/concepts/context-switch]] — disparado pela interrupção do timer
+- [[wiki/concepts/syscall]] — interrupt voluntário do software para o kernel
+- [[wiki/concepts/kernel]] — recebe controle quando a interrupção ocorre
 
 ## Key Sources
 
-- [[sources/sistema-operacional-por-baixo-dos-panos]]
-- [[sources/como-sistemas-operacionais-funcionam]]
+- [[wiki/sources/sistema-operacional-por-baixo-dos-panos]]
+- [[wiki/sources/como-sistemas-operacionais-funcionam]]
 - [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] — interrupções customizadas em embarcados; tabela de interrupções (NVIC do ARM)

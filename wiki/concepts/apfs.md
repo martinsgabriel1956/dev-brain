@@ -19,7 +19,7 @@ Sistema de arquivos padrão do macOS moderno (desde 2017), terceira geração de
 | Sistema | Ano | Notas |
 |---|---|---|
 | HFS | 1985 | Arquivos até 2 GB, volumes até 2 TB. Sem journaling |
-| HFS+ (Mac OS Estendido) | — | Aumenta limites de armazenamento, adiciona [[concepts/journaling]] |
+| HFS+ (Mac OS Estendido) | — | Aumenta limites de armazenamento, adiciona [[wiki/concepts/journaling]] |
 | APFS | 2017 | Redesenho completo, alvo é SSD/flash em vez de HD mecânico |
 
 ## O salto do HFS+ para o APFS
@@ -32,17 +32,17 @@ APFS não é uma evolução incremental do HFS+ — foi projetado do zero para s
 
 ## Compatibilidade
 
-Assim como o [[concepts/ext4|ext4]] do Linux, APFS e HFS+ não são suportados nativamente pelo Windows — ler um disco APFS num PC Windows exige software adicional. Essa falta de compatibilidade cruzada é o motivo pelo qual dispositivos portáteis compartilhados entre Mac e Windows usam [[concepts/exfat]] em vez de APFS.
+Assim como o [[wiki/concepts/ext4|ext4]] do Linux, APFS e HFS+ não são suportados nativamente pelo Windows — ler um disco APFS num PC Windows exige software adicional. Essa falta de compatibilidade cruzada é o motivo pelo qual dispositivos portáteis compartilhados entre Mac e Windows usam [[wiki/concepts/exfat]] em vez de APFS.
 
 ## Papel equivalente em outros SOs
 
-APFS ocupa, no macOS, o mesmo papel que [[concepts/ntfs]] ocupa no Windows e [[concepts/ext4]] ocupa no Linux: sistema de arquivos principal do disco de sistema, com journaling/proteção de dados e recursos avançados.
+APFS ocupa, no macOS, o mesmo papel que [[wiki/concepts/ntfs]] ocupa no Windows e [[wiki/concepts/ext4]] ocupa no Linux: sistema de arquivos principal do disco de sistema, com journaling/proteção de dados e recursos avançados.
 
 ## Ver também
 
-- [[concepts/sistema-de-arquivos]]
-- [[concepts/journaling]]
-- [[concepts/ssd]] — a mídia flash que o APFS foi desenhado para explorar; a transição HD→SSD (2017) motivou o novo formato
+- [[wiki/concepts/sistema-de-arquivos]]
+- [[wiki/concepts/journaling]]
+- [[wiki/concepts/ssd]] — a mídia flash que o APFS foi desenhado para explorar; a transição HD→SSD (2017) motivou o novo formato
 
 ## Key Sources
 

@@ -32,7 +32,7 @@ Com margem de segurança 2×: pool de 20
 
 ## Aplicação
 
-Use para dimensionar [[concepts/bulkhead]] pools. Pool menor que L = fila crescente sob carga normal. Pool muito maior = recursos desperdiçados.
+Use para dimensionar [[wiki/concepts/bulkhead]] pools. Pool menor que L = fila crescente sob carga normal. Pool muito maior = recursos desperdiçados.
 
 ## Margem de Segurança
 
@@ -40,4 +40,4 @@ Aplique 2× como piso. Picos de tráfego, GC pauses e latência p99 > média jus
 
 ## Key Sources
 
-- [[sources/bulkhead]]
+- [[wiki/sources/bulkhead]]

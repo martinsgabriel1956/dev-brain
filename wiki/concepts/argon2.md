@@ -12,7 +12,7 @@ status: stable
 
 # Argon2
 
-Algoritmo de [[concepts/password-hashing]] vencedor do **Password Hashing Competition (2015)**. Considerado o estado da arte para armazenamento de senhas por combinar [[concepts/cpu-hard]] com [[concepts/memory-hard]], tornando ataques por GPU economicamente inviáveis.
+Algoritmo de [[wiki/concepts/password-hashing]] vencedor do **Password Hashing Competition (2015)**. Considerado o estado da arte para armazenamento de senhas por combinar [[wiki/concepts/cpu-hard]] com [[wiki/concepts/memory-hard]], tornando ataques por GPU economicamente inviáveis.
 
 ---
 
@@ -44,7 +44,7 @@ $argon2id$v=19$m=65536,t=3,p=4$<salt>$<hash>
 
 ## Por Que Memory-Hard Derrota GPUs
 
-[[concepts/bcrypt]] ocupa apenas 4 KB de RAM → uma RTX 5090 (21.760 núcleos, 32 GB VRAM) paralela facilmente.
+[[wiki/concepts/bcrypt]] ocupa apenas 4 KB de RAM → uma RTX 5090 (21.760 núcleos, 32 GB VRAM) paralela facilmente.
 
 Argon2 com `m=65536` (64 MB):
 - 10 instâncias paralelas → 640 MB de RAM
@@ -75,21 +75,21 @@ $options = [
 $hash = password_hash($password . $pepper, PASSWORD_ARGON2ID, $options);
 ```
 
-Sempre usar com [[concepts/pepper]] para defesa em profundidade.
+Sempre usar com [[wiki/concepts/pepper]] para defesa em profundidade.
 
 ---
 
 ## Relação com Outros Conceitos
 
-- [[concepts/password-hashing]] — contexto geral
-- [[concepts/memory-hard]] — propriedade central do Argon2
-- [[concepts/cpu-hard]] — também presente no Argon2
-- [[concepts/bcrypt]] — predecessor, superado pelo paralelismo de GPU
-- [[concepts/salt]] — Argon2 gera automaticamente
-- [[concepts/pepper]] — camada adicional recomendada
+- [[wiki/concepts/password-hashing]] — contexto geral
+- [[wiki/concepts/memory-hard]] — propriedade central do Argon2
+- [[wiki/concepts/cpu-hard]] — também presente no Argon2
+- [[wiki/concepts/bcrypt]] — predecessor, superado pelo paralelismo de GPU
+- [[wiki/concepts/salt]] — Argon2 gera automaticamente
+- [[wiki/concepts/pepper]] — camada adicional recomendada
 
 ## Key Sources
 
-- [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
+- [[wiki/sources/seguranca-armazenamento-senhas-banco-de-dados]]
 - [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]
 - [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — citado como recomendação atual (Argon2id), com nota sobre resistência qualitativa a computação quântica

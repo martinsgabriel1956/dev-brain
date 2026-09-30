@@ -30,4 +30,4 @@ Pesquisador e autor britânico especializado em sistemas distribuídos. Professo
 
 - [[wiki/sources/redis-avancado]] — Redis Streams é o log de eventos persistente com consumer groups e ACK — superior ao Pub/Sub para entrega garantida. Redlock é o distributed lock sem SPOF (5 nós, maioria). Eviction policies...
 - [[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] — DDIA citado como leitura recente/em andamento, endossado para conceitos de escala enterprise
-- [[sources/distributed-locks-raft]]
+- [[wiki/sources/distributed-locks-raft]]

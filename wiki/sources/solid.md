@@ -40,7 +40,7 @@ SOLID: 5 princípios de design orientado a objetos (Robert C. Martin). S: Single
 - [[concepts/lsp]]
 - [[concepts/isp]]
 - [[concepts/dip]]
-- [[concepts/dependency-injection]]
+- [[wiki/concepts/dependency-injection]]
 
 ## Open Questions
 

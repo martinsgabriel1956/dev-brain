@@ -3,8 +3,8 @@ type: entity
 title: "Ronald Hulk"
 aliases: ["Roland Hulk"]
 date_created: 2026-09-29
-date_updated: 2026-09-29
-source_count: 2
+date_updated: 2026-09-30
+source_count: 3
 tags: [pessoa, criador-de-conteudo, ia, rag, harness]
 skill: tech-mentor-ai
 status: stub
@@ -20,3 +20,4 @@ Temas nas fontes: [[wiki/concepts/hybrid-search]] e RAG, [[wiki/concepts/prompt-
 
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]]
 - [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]]
+- [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] — vídeo sobre uso profissional da OpenRouter

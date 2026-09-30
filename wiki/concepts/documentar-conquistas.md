@@ -26,8 +26,8 @@ Conquistas grandes são raras. Pequenas vitórias diárias são a base real do p
 
 ## Complementa
 
-[[concepts/comunicar-progresso]] — saber o que você fez torna o update diário mais preciso e rápido.
-[[concepts/log-de-aprendizado]] — foco em aprendizado; documentar conquistas tem foco em realizações.
+[[wiki/concepts/comunicar-progresso]] — saber o que você fez torna o update diário mais preciso e rápido.
+[[wiki/concepts/log-de-aprendizado]] — foco em aprendizado; documentar conquistas tem foco em realizações.
 
 ## Alimenta os Bullet Points de Currículo
 
@@ -35,7 +35,7 @@ Conquistas grandes são raras. Pequenas vitórias diárias são a base real do p
 
 ## Documentar o Que Aprendeu ao Resolver
 
-[[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] fecha o [[wiki/concepts/ciclo-de-2-horas]] com "documente tudo o que você aprendeu": o registro vira referência para situações futuras, para outras pessoas e para o "eu do futuro" — foco em aprendizado/solução, complementando o foco em realizações desta página (ver também [[concepts/log-de-aprendizado]]).
+[[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] fecha o [[wiki/concepts/ciclo-de-2-horas]] com "documente tudo o que você aprendeu": o registro vira referência para situações futuras, para outras pessoas e para o "eu do futuro" — foco em aprendizado/solução, complementando o foco em realizações desta página (ver também [[wiki/concepts/log-de-aprendizado]]).
 
 ## Insumo para Dar Visibilidade
 
@@ -43,8 +43,8 @@ Registrar conquistas alimenta a comunicação de valor descrita em [[wiki/concep
 
 ## Key Sources
 
-- [[sources/9-habitos-programador-junior]]
-- [[sources/pensamento-estruturado-resolucao-de-problemas]] — passo 5 do método de resolução de problemas: documentar o que foi descoberto durante o diagnóstico serve de insumo pronto na próxima vez que um problema parecido aparecer
+- [[wiki/sources/9-habitos-programador-junior]]
+- [[wiki/sources/pensamento-estruturado-resolucao-de-problemas]] — passo 5 do método de resolução de problemas: documentar o que foi descoberto durante o diagnóstico serve de insumo pronto na próxima vez que um problema parecido aparecer
 - [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — bullets de currículo sem número/resultado concreto como sintoma da ausência deste hábito
 - [[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] — documentar o aprendido ao resolver bloqueios
 - [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]

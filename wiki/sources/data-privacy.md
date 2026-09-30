@@ -38,10 +38,10 @@ LGPD (Brasil) e GDPR (Europa): mesmos princípios — base legal, minimização,
 
 ## Entities & Concepts Touched
 
-- [[concepts/lgpd]]
-- [[concepts/gdpr]]
+- [[wiki/concepts/lgpd]]
+- [[wiki/concepts/gdpr]]
 - [[concepts/pii]]
-- [[concepts/right-to-erasure]]
+- [[wiki/concepts/right-to-erasure]]
 - [[concepts/crypto-shredding]]
 - [[concepts/pseudonymization]]
 - [[concepts/privacy-by-design]]

@@ -34,11 +34,11 @@ Raft é o algoritmo de consenso mais legível e amplamente usado (etcd, Cockroac
 
 ## Conceitos
 
-- [[concepts/raft-paxos]] — já existe no index
-- [[concepts/split-brain]] — o que Raft previne com quorum
+- [[wiki/concepts/raft-paxos]] — já existe no index
+- [[wiki/concepts/split-brain]] — o que Raft previne com quorum
 - [[concepts/quorum]] — fundação matemática da eleição
-- [[concepts/distributed-lock]] — leader election como forma de lock distribuído
-- [[concepts/consistency-models]] — Raft garante linearizabilidade
+- [[wiki/concepts/distributed-lock]] — leader election como forma de lock distribuído
+- [[wiki/concepts/consistency-models]] — Raft garante linearizabilidade
 
 ## Key Sources
 

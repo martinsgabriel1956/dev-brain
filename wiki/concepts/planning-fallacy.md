@@ -35,16 +35,16 @@ Realidade: auth sozinho leva 1 semana
 ## Contramedidas
 
 - **Reference class forecasting**: quanto tempo projetos *similares* levaram, não o atual
-- **[[concepts/mvp]]**: escopo mínimo reduz exposição à planning fallacy
+- **[[wiki/concepts/mvp]]**: escopo mínimo reduz exposição à planning fallacy
 - **Pre-mortem**: imaginar que o projeto falhou e identificar por quê antes de começar
 
 ## Ver Também
 
-- [[concepts/scope-creep]] — consequência direta da planning fallacy
-- [[concepts/dopamina-e-projetos]] — otimismo na ideação amplifica o viés
+- [[wiki/concepts/scope-creep]] — consequência direta da planning fallacy
+- [[wiki/concepts/dopamina-e-projetos]] — otimismo na ideação amplifica o viés
 
 ## Key Sources
 
-- [[sources/por-que-devs-nao-terminam-projetos]]
+- [[wiki/sources/por-que-devs-nao-terminam-projetos]]
 - [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — o problema grave não é errar a estimativa, é não *mensurar* o erro dela (planejar 40 pontos e entregar 30 repetidamente sem medir o gap); liga a subestimação sistemática à necessidade de [[wiki/concepts/folga-de-capacidade-slack|folga de capacidade]]
 - [[wiki/sources/por-que-estimativas-de-software-falham-como-melhorar]] — exemplo numérico de custo oculto (2h→6h) e argumento de que a redução de incerteza antes de estimar é uma contramedida estrutural ao viés, não só um ajuste de fator

@@ -20,4 +20,4 @@ Reduzir tabs para 2 ou 4 permite aninhar mais antes de sentir a dor. Isso mascar
 
 ## Key Sources
 
-- [[sources/estilo-de-codigo-convencoes]]
+- [[wiki/sources/estilo-de-codigo-convencoes]]

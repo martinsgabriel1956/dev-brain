@@ -3,8 +3,8 @@ type: concept
 title: "Debugging"
 aliases: ["depuração", "encontrar bugs"]
 date_created: 2026-07-09
-date_updated: 2026-09-29
-source_count: 3
+date_updated: 2026-09-30
+source_count: 4
 tags: [debugging, resolucao-de-problemas, pensamento-estruturado]
 skill: tech-mentor-leadership
 status: stub
@@ -35,3 +35,4 @@ Em vez de depurar via `console.log` + reiniciar servidor manualmente, [[wiki/con
 - [[wiki/sources/pensamento-estruturado-resolucao-de-problemas]]
 - [[wiki/sources/3-pilares-testes-automatizados-produtividade]] — setup de debugger integrado a live reload e testes via Node.js `--inspect` + VS Code `launch.json`
 - [[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] — limite de tempo e como transformar a investigação em pergunta
+- [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — aplicação a APIs: conferir as peças da requisição no DevTools em vez de tentar de novo (ver [[wiki/concepts/debug-de-requisicao-http]])

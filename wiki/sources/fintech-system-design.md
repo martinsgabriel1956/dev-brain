@@ -33,11 +33,11 @@ Sistemas financeiros têm três pilares: Ledger de dupla entrada (débito = cré
 
 ## Conceitos
 
-- [[concepts/ledger-dupla-entrada]] — double entry bookkeeping
-- [[concepts/idempotencia]] — pré-requisito para operações financeiras seguras
+- [[wiki/concepts/ledger-dupla-entrada]] — double entry bookkeeping
+- [[wiki/concepts/idempotencia]] — pré-requisito para operações financeiras seguras
 - [[concepts/antifraude]] — arquitetura em camadas
 - [[concepts/conciliacao-financeira]] — comparação ledger vs extrato externo
-- [[concepts/distributed-lock]] — lock por idempotency key para evitar race condition
+- [[wiki/concepts/distributed-lock]] — lock por idempotency key para evitar race condition
 - [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] — detalha o mecanismo que esta fonte assume como dado ("idempotency key + Redis lock"): corrida resolvida por INSERT atômico, lançamento e status confirmando na mesma transação local, e identidades de negócio específicas por produto (saque ID, emissão ID, crédito ID, client order ID)
 
 ## Key Sources

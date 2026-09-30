@@ -39,7 +39,7 @@ Redis Streams é o log de eventos persistente com consumer groups e ACK — supe
 - [[concepts/eviction-policies]]
 - [[concepts/pub-sub-redis]]
 - [[concepts/consumer-groups]]
-- [[entities/martin-kleppmann]]
+- [[wiki/entities/martin-kleppmann]]
 
 ## Open Questions
 

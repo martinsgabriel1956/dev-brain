@@ -34,12 +34,12 @@ Migrations são código — versionadas, revisadas, testadas. Ferramentas: Flywa
 
 ## Entities & Concepts Touched
 
-- [[concepts/schema-migration]]
-- [[concepts/expand-contract]]
+- [[wiki/concepts/schema-migration]]
+- [[wiki/concepts/expand-contract]]
 - [[concepts/ddl-lock]]
 - [[entities/flyway]]
 - [[entities/prisma-migrate]]
-- [[concepts/zero-downtime]]
+- [[wiki/concepts/zero-downtime]]
 - [[concepts/testcontainers]]
 
 ## Open Questions

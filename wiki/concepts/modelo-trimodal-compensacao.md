@@ -42,5 +42,5 @@ O modelo trimodal explica a variação por *tier de empresa*, mas [[wiki/sources
 
 ## Key Sources
 
-- [[sources/trimodal-compensacao-tech]]
+- [[wiki/sources/trimodal-compensacao-tech]]
 - [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]

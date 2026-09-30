@@ -45,7 +45,7 @@ Geohash é a técnica concreta por trás do que [[wiki/concepts/database-index|�
 
 ## Redis GEO
 
-Redis usa geohash internamente no `GEOADD`/`GEOSEARCH`. → [[concepts/redis-geo]]
+Redis usa geohash internamente no `GEOADD`/`GEOSEARCH`. → [[wiki/concepts/redis-geo]]
 
 ## Escala para 50M Motoristas
 
@@ -53,5 +53,5 @@ Sharding do Redis GEO por prefixo de 2 chars do geohash — cada cluster Redis c
 
 ## Key Sources
 
-- [[sources/case-uber]]
+- [[wiki/sources/case-uber]]
 - [[wiki/sources/indice-de-banco-de-dados]] — menção ao índice espacial como categoria de índice de banco de dados

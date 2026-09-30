@@ -44,4 +44,4 @@ Empresas tech se agrupam em três tiers de compensação. Identificar o tier de 
 
 ## Key Sources
 
-- [[sources/trimodal-compensacao-tech]]
+- [[wiki/sources/trimodal-compensacao-tech]]

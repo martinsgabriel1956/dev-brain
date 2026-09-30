@@ -26,7 +26,7 @@ O mecanismo é reforçado porque **estudar é prazeroso** — especialmente comp
 
 ## Por que é uma armadilha
 
-- Conhecimento passivo não survives no confronto com a realidade (ver [[concepts/aprendizado-deliberado]])
+- Conhecimento passivo não survives no confronto com a realidade (ver [[wiki/concepts/aprendizado-deliberado]])
 - O cérebro mantém conceitos corretos e errados juntos quando não há prática — não tem como distinguir sem o teste da realidade
 - Cria a ilusão de progresso sem evidência concreta de capacidade
 
@@ -44,10 +44,10 @@ Tutorial hell ≠ consumir conteúdo de qualidade. A diferença está na **propo
 
 ## Ver também
 
-- [[concepts/aprendizado-deliberado]] — alternativa estruturada ao consumo passivo
-- [[concepts/principio-da-inversao]] — hábito ruim nº 7: só assistir tutoriais
-- [[entities/george-hotz]] — citação sobre aprendizado na prática
+- [[wiki/concepts/aprendizado-deliberado]] — alternativa estruturada ao consumo passivo
+- [[wiki/concepts/principio-da-inversao]] — hábito ruim nº 7: só assistir tutoriais
+- [[wiki/entities/george-hotz]] — citação sobre aprendizado na prática
 
 ## Key Sources
 
-- [[sources/principio-da-inversao-programador]]
+- [[wiki/sources/principio-da-inversao-programador]]

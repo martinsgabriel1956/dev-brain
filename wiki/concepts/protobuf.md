@@ -16,9 +16,9 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/grpc]]: [[concepts/protobuf]]
-- Em [[wiki/sources/schema-registry]]: [[concepts/protobuf]]
-- Em [[wiki/sources/serialization-protocols]]: [[concepts/protobuf]]
+- Em [[wiki/sources/grpc]]: [[wiki/concepts/protobuf]]
+- Em [[wiki/sources/schema-registry]]: [[wiki/concepts/protobuf]]
+- Em [[wiki/sources/serialization-protocols]]: [[wiki/concepts/protobuf]]
 
 ## Pendências
 

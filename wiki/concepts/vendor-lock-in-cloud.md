@@ -3,8 +3,8 @@ type: concept
 title: "Vendor Lock-in em Cloud"
 aliases: ["vendor lock-in", "lock-in de nuvem", "aprisionamento a provedor"]
 date_created: 2026-08-04
-date_updated: 2026-09-29
-source_count: 3
+date_updated: 2026-09-30
+source_count: 4
 tags: ["vendor-lock-in", "aws", "cloud", "arquitetura", "infra", "custo"]
 skill: tech-mentor-infra
 status: stub
@@ -46,3 +46,4 @@ Contratar [[wiki/concepts/mainframe-as-a-service]] troca dependência de hardwar
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — MaaS troca dependência de hardware por dependência de provedor (inferência; não discutido)
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — lock-in de ferramenta de IA a um único provider de modelo, contornado via AI Gateway
+- [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] — open weight + agregador reduz dependência de um único fornecedor de modelo

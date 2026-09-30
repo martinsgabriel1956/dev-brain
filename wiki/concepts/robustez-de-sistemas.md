@@ -38,7 +38,7 @@ A [[era-agentica]] criou um paradoxo: nunca foi tão fácil gerar código, e nun
 
 A IA não garante robustez por padrão — ela entrega o que você pediu. Robustez vem do [[harness-de-qualidade]] que você constrói ao redor da IA:
 
-- **TDD**: [[concepts/tdd]] via IA gera código que passa em testes antes de ser aceito
+- **TDD**: [[wiki/concepts/tdd]] via IA gera código que passa em testes antes de ser aceito
 - **Linters com boas regras**: a IA segue regras impostas por ferramenta, não só por prompt
 - **Análise de complexidade ciclomática**: feedback objetivo sobre manutenibilidade
 - **Análise estática de segurança**: não confiar no julgamento da IA sobre segurança

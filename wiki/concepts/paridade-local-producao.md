@@ -47,10 +47,10 @@ Válido especialmente para quem está começando: nunca validar mudanças direto
 
 ## Relacionado
 
-[[concepts/observabilidade]] · [[sources/cicd-pipeline]] · [[sources/zero-downtime-deploy]]
+[[wiki/concepts/observabilidade]] · [[wiki/sources/cicd-pipeline]] · [[wiki/sources/zero-downtime-deploy]]
 
 ## Key Sources
 
-- [[sources/5-principios-programador]]
+- [[wiki/sources/5-principios-programador]]
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] — sequência dev/homologação/produção antes de abrir PR
 - [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — exemplo concreto de clonagem anonimizada do banco de produção para staging

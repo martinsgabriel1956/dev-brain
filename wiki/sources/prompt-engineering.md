@@ -43,12 +43,12 @@ Hierarquia: Zero-shot → Few-shot → CoT → Self-Consistency → Fine-tuning.
 
 ## Entities & Concepts Touched
 
-- [[concepts/chain-of-thought]]
+- [[wiki/concepts/chain-of-thought]]
 - [[concepts/few-shot-prompting]]
 - [[concepts/self-consistency]]
-- [[concepts/meta-prompting]]
+- [[wiki/concepts/meta-prompting]]
 - [[concepts/dspy]]
-- [[concepts/prompt-caching]]
+- [[wiki/concepts/prompt-caching]]
 
 ## Open Questions
 

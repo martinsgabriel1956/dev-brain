@@ -33,4 +33,4 @@ KMP compartilha lógica de negócio (domain, data, use cases) entre iOS e Androi
 
 ## Conceitos Abordados
 
-- [[concepts/mobile-kmp]] · [[concepts/mobile-cross-platform-decision]] · [[concepts/mobile-armazenamento-local]] · [[concepts/mobile-chamadas-http]]
+- [[wiki/concepts/mobile-kmp]] · [[wiki/concepts/mobile-cross-platform-decision]] · [[wiki/concepts/mobile-armazenamento-local]] · [[wiki/concepts/mobile-chamadas-http]]

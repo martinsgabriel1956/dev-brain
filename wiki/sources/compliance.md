@@ -49,13 +49,13 @@ Compliance é a prova documentada de que você seguiu as regras. É diferente de
 
 ## Entities & Concepts Touched
 
-- [[concepts/compliance]]
-- [[concepts/audit-log]]
-- [[concepts/data-residency]]
-- [[concepts/dsar]]
-- [[sources/compliance-soc2-pci]]
-- [[sources/lgpd-gdpr]]
-- [[sources/hipaa-sox]]
+- [[wiki/concepts/compliance]]
+- [[wiki/concepts/audit-log]]
+- [[wiki/concepts/data-residency]]
+- [[wiki/concepts/dsar]]
+- [[wiki/sources/compliance-soc2-pci]]
+- [[wiki/sources/lgpd-gdpr]]
+- [[wiki/sources/hipaa-sox]]
 
 ## Open Questions
 

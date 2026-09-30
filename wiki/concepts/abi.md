@@ -25,7 +25,7 @@ Define como componentes de código binário interagem entre si através do hardw
 
 ## O que a ABI especifica
 
-1. **[[concepts/calling-convention]]** — em quais registradores os parâmetros são passados, em qual ordem, quem salva/restaura registradores
+1. **[[wiki/concepts/calling-convention]]** — em quais registradores os parâmetros são passados, em qual ordem, quem salva/restaura registradores
 2. **Layout de structs em memória** — alinhamento, padding, ordem dos campos
 3. **Semântica de passagem de argumentos** — pass by value vs pass by reference
 4. **Name mangling** — como o compilador renomeia símbolos (C++ e Rust fazem mangling; C não)
@@ -73,4 +73,4 @@ Cada linguagem tem mecanismos para declarar que uma função deve seguir a ABI d
 
 ## Key Sources
 
-- [[sources/como-multiplas-linguagens-vivem-num-unico-binario]]
+- [[wiki/sources/como-multiplas-linguagens-vivem-num-unico-binario]]

@@ -76,9 +76,9 @@ Antes do TDD ser formalizado, [[wiki/entities/kent-beck]] já construía framewo
 
 ## Ver também
 
-- [[concepts/bdd]] — extensão do TDD para linguagem de negócio
-- [[concepts/test-doubles]] — como isolar dependências no ciclo TDD (taxonomia e vocabulário SUT/DOC na fonte primária [[wiki/sources/test-double-xunitpatterns-meszaros]])
-- [[concepts/piramide-de-testes]] — onde TDD vive na estratégia de testes
+- [[wiki/concepts/bdd]] — extensão do TDD para linguagem de negócio
+- [[wiki/concepts/test-doubles]] — como isolar dependências no ciclo TDD (taxonomia e vocabulário SUT/DOC na fonte primária [[wiki/sources/test-double-xunitpatterns-meszaros]])
+- [[wiki/concepts/piramide-de-testes]] — onde TDD vive na estratégia de testes
 - [[testar-proprio-codigo]] — hábito relacionado
 
 ## TDD com IA

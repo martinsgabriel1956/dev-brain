@@ -70,7 +70,7 @@ A mesma fonte descreve um exercício em sala onde 8 voluntários representam, co
 
 ## Key Sources
 
-- [[sources/como-strings-realmente-funcionam]]
+- [[wiki/sources/como-strings-realmente-funcionam]]
 - [[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] — relação exata de 32 entre maiúscula e minúscula; demonstração física com voluntários soletrando "BOW"; exercício de decode de 3 bytes (72, 73, 33 → "HI!")
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — ASCII como caso trivial (fast path) no decoder
 - [[wiki/sources/codificacao-de-caracteres-ascii-iso-8859-1-unicode]] — estrutura de bits (7 dados + verificação), tabela de contiguidade alfabética, exercício de decode

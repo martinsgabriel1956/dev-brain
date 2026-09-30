@@ -64,9 +64,9 @@ Ver [[attack-surface]]: superfície de ataque inclui os outputs do sistema, não
 
 - [[attack-surface]] — outputs (incluindo latência) são parte da superfície de ataque
 - [[defense-in-depth]] — comparação de tempo constante é uma camada de controle na validação de credenciais
-- [[concepts/bcrypt]] — já usa comparação de tempo constante internamente
-- [[concepts/argon2]] — idem; bibliotecas maduras de password hashing abstraem isso
-- [[concepts/password-hashing]] — contexto onde timing attacks em verificação de senha são relevantes
+- [[wiki/concepts/bcrypt]] — já usa comparação de tempo constante internamente
+- [[wiki/concepts/argon2]] — idem; bibliotecas maduras de password hashing abstraem isso
+- [[wiki/concepts/password-hashing]] — contexto onde timing attacks em verificação de senha são relevantes
 
 ## Timing Attack em Assinatura de Webhook
 
@@ -79,7 +79,7 @@ O mesmo princípio se aplica à validação de webhooks: comparar a assinatura H
 ## Key Sources
 
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — rate limit reduz a viabilidade de timing attack (segundo o autor)
-- [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — exemplo didático: descobrir senha de 9 chars com 26×9 tentativas em vez de 26^9
-- [[sources/seguranca-armazenamento-senhas-banco-de-dados]] — bcrypt e Argon2 como implementações que já resolvem o problema
+- [[wiki/sources/cinco-praticas-seguranca-pragmatic-programmer]] — exemplo didático: descobrir senha de 9 chars com 26×9 tentativas em vez de 26^9
+- [[wiki/sources/seguranca-armazenamento-senhas-banco-de-dados]] — bcrypt e Argon2 como implementações que já resolvem o problema
 - [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]] — timing attack aplicado à validação de assinatura de webhook
 - [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] — side-channel attacks em geral ligados a decisões de arquitetura de computadores (afirmação sem exemplo técnico detalhado)

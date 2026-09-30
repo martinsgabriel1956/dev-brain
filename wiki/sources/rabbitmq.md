@@ -41,7 +41,7 @@ RabbitMQ é um message broker AMQP com roteamento flexível via Exchanges (Direc
 - [[concepts/rabbitmq]]
 - [[concepts/amqp]]
 - [[concepts/exchange-types]]
-- [[concepts/dlq]]
+- [[wiki/concepts/dlq]]
 - [[concepts/quorum-queues]]
 - [[concepts/task-queue]]
 

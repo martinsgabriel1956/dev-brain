@@ -3,8 +3,8 @@ type: concept
 title: "SLA — Service Level Agreement"
 aliases: ["service level agreement", "sla"]
 date_created: 2026-04-22
-date_updated: 2026-08-03
-source_count: 2
+date_updated: 2026-09-30
+source_count: 3
 tags: [sre, contrato, confiabilidade]
 skill: tech-mentor-infra
 status: stable
@@ -12,7 +12,7 @@ status: stable
 
 # SLA — Service Level Agreement
 
-Contrato externo com penalidades (créditos, multas). Derivado do [[concepts/slo]] com margem de segurança — sempre menos rigoroso que o SLO interno.
+Contrato externo com penalidades (créditos, multas). Derivado do [[wiki/concepts/slo]] com margem de segurança — sempre menos rigoroso que o SLO interno.
 
 ## Estrutura
 
@@ -36,5 +36,6 @@ Isso também explica por que nem todo serviço tem SLA: um usuário final compra
 
 ## Key Sources
 
-- [[sources/sre-sli-slo-sla]]
-- [[sources/slo-sli-sla-exemplo-ecommerce]]
+- [[wiki/sources/sre-sli-slo-sla]]
+- [[wiki/sources/slo-sli-sla-exemplo-ecommerce]]
+- [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] — disponibilidade do provedor de LLM e fallback como mitigação

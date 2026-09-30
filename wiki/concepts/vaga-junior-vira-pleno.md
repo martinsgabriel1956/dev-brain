@@ -3,8 +3,8 @@ type: concept
 title: "Vaga Júnior Vira Pleno"
 aliases: ["sumiço de vagas júnior", "vaga júnior exigindo pleno", "requisito júnior inflado"]
 date_created: 2026-07-31
-date_updated: 2026-09-14
-source_count: 10
+date_updated: 2026-09-30
+source_count: 11
 tags: [carreira, mercado-de-trabalho, junior, contratacao]
 skill: tech-mentor-leadership
 status: stub
@@ -74,3 +74,4 @@ Pode ser uma manifestação específica, em nível de categoria de vaga, do padr
 - [[wiki/sources/crise-vagas-tech-juros-altos-nao-e-so-culpa-da-ia]] — mecanismo causal plausível (custo de capital), não confirmado diretamente contra este fenômeno específico
 - [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — contraponto anedótico: levantamento informal ainda mostra volume de vagas júnior com requisitos clássicos, não inflados
 - [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — exemplo concreto: vaga real rotulada "júnior" em 2026 com stack completa de Node/TypeScript/Java/React/AWS/Terraform/observabilidade
+- [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — o que muda de júnior para pleno é a forma de pensar, não a lista de tecnologias; ver [[wiki/concepts/transicao-junior-pleno-forma-de-pensar]]

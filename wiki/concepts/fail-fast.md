@@ -43,9 +43,9 @@ Pool cheio → rejeita em 1s com erro explícito, não em 30s com timeout.
 
 ## Relação
 
-[[concepts/bulkhead]] usa fail fast para evitar fila infinita. [[concepts/circuit-breaker]] usa fail fast quando o disjuntor está aberto.
+[[wiki/concepts/bulkhead]] usa fail fast para evitar fila infinita. [[wiki/concepts/circuit-breaker]] usa fail fast quando o disjuntor está aberto.
 
 ## Key Sources
 
-- [[sources/bulkhead]]
+- [[wiki/sources/bulkhead]]
 - [[wiki/sources/design-by-contract-video]] — pré-condição violada como ponto de falha cedo na fronteira ([[wiki/concepts/design-by-contract]])

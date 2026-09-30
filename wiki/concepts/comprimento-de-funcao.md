@@ -34,4 +34,4 @@ Um `switch/case` longo com muitos casos diretos e simples pode ser extenso — p
 
 ## Key Sources
 
-- [[sources/estilo-de-codigo-convencoes]]
+- [[wiki/sources/estilo-de-codigo-convencoes]]

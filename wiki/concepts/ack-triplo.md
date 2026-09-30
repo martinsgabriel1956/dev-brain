@@ -52,4 +52,4 @@ FCM (Android) / APNs (iOS) acorda o app quando há mensagens pendentes. App abre
 
 ## Key Sources
 
-- [[sources/case-whatsapp]]
+- [[wiki/sources/case-whatsapp]]

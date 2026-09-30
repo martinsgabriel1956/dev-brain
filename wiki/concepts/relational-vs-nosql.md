@@ -18,14 +18,14 @@ Não existe escolha universal. Cada tipo resolve um problema diferente.
 
 | Aspecto | Relacional | NoSQL |
 |---|---|---|
-| **Consistência** | [[concepts/acid]] completo | Eventual (geralmente) |
+| **Consistência** | [[wiki/concepts/acid]] completo | Eventual (geralmente) |
 | **Queries** | JOINs complexos, agregações | Simples, por chave |
 | **Escala de escrita** | Vertical (um primário) | Horizontal nativo |
 | **Schema** | Rígido — segurança + integridade | Flexível — agilidade |
 
 ## Decisão
 
-- Financeiro, multi-entidade, transações → **Relacional** ([[concepts/postgresql]])
+- Financeiro, multi-entidade, transações → **Relacional** ([[wiki/concepts/postgresql]])
 - Dados semi-estruturados, schema muda muito → **Document** (MongoDB)
 - Cache, sessão, acesso por chave → **Key-Value** (Redis)
 - Escrita massiva, IoT, série temporal → **Wide-Column** (Cassandra)
@@ -34,7 +34,7 @@ Não existe escolha universal. Cada tipo resolve um problema diferente.
 
 ## Antes de Migrar
 
-[[concepts/postgresql]] consegue JSONB, full-text search básico, pg_vector e Timescaledb. Avalie extensões antes de adicionar complexidade operacional.
+[[wiki/concepts/postgresql]] consegue JSONB, full-text search básico, pg_vector e Timescaledb. Avalie extensões antes de adicionar complexidade operacional.
 
 ## Eixo Diferente: SQL Embutido no Código vs. Modelo de Dados
 
@@ -76,7 +76,7 @@ Provas de concurso usam a sigla **SGBDR** (com o "R" de relacional) para diferen
 
 ## Key Sources
 
-- [[sources/banco-de-dados]]
+- [[wiki/sources/banco-de-dados]]
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] — quadro de decisão ACID vs. BASE por domínio de negócio
 - [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]

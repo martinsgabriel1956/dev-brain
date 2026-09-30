@@ -18,10 +18,10 @@ Educador e formador de líderes. Trabalhou na Pixar e na Apple. Foco principal e
 
 Palestra em evento educacional onde apresentou as três características que a Pixar buscava em candidatos:
 
-1. **[[concepts/profundidade-e-maestria]]** — maestria em qualquer assunto como prognóstico de sucesso; falhar e se recuperar como sinal de inovador
-2. **[[concepts/abrangencia-profissional]]** — ser interessado, não apenas interessante
-3. **[[concepts/comunicacao-tecnica]]** — fazer a tradução na ponta emissora
+1. **[[wiki/concepts/profundidade-e-maestria]]** — maestria em qualquer assunto como prognóstico de sucesso; falhar e se recuperar como sinal de inovador
+2. **[[wiki/concepts/abrangencia-profissional]]** — ser interessado, não apenas interessante
+3. **[[wiki/concepts/comunicacao-tecnica]]** — fazer a tradução na ponta emissora
 
 ## Key Sources
 
-- [[sources/tres-caracteristicas-melhor-candidato]]
+- [[wiki/sources/tres-caracteristicas-melhor-candidato]]

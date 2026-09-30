@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/kubernetes-security]]: [[concepts/rbac]]
-- Em [[wiki/sources/rbac-abac-rebac]]: [[concepts/rbac]]
+- Em [[wiki/sources/kubernetes-security]]: [[wiki/concepts/rbac]]
+- Em [[wiki/sources/rbac-abac-rebac]]: [[wiki/concepts/rbac]]
 
 ## Pendências
 

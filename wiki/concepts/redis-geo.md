@@ -12,7 +12,7 @@ status: stable
 
 # Redis GEO
 
-Estrutura nativa do Redis para armazenar coordenadas geográficas e fazer buscas por raio. Internamente usa [[concepts/geohash]] em sorted set.
+Estrutura nativa do Redis para armazenar coordenadas geográficas e fazer buscas por raio. Internamente usa [[wiki/concepts/geohash]] em sorted set.
 
 ## Comandos Principais
 
@@ -52,4 +52,4 @@ Dados efêmeros: se Redis cair, motoristas reenviam posição em 4s. Degradaçã
 ## Key Sources
 
 - [[wiki/sources/presence-system]] — Sistema de presença (online/offline) usa Heartbeat + Redis TTL: cliente envia ping a cada 15s, servidor atualiza `presence:{userId}` com SETEX 30s. Se TTL expirar, usuário está offline. Para...
-- [[sources/case-uber]]
+- [[wiki/sources/case-uber]]

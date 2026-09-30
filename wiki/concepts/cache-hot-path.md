@@ -63,9 +63,9 @@ Hot cache local: TTL 5min (consistência eventual aceitável)
 
 ## Relacionado
 
-[[concepts/connection-pooling]] — mesmo princípio de reutilização para economizar overhead por request.
+[[wiki/concepts/connection-pooling]] — mesmo princípio de reutilização para economizar overhead por request.
 
 ## Key Sources
 
-- [[sources/case-url-shortener]]
+- [[wiki/sources/case-url-shortener]]
 - [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — hotspot como caso canônico do cache: perfil de celebridade a 200k req/s enquanto o resto da app recebe carga normal; no encurtador de URL, URLs virais recebem cache em Redis

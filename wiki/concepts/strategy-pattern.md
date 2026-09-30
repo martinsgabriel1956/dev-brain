@@ -3,8 +3,8 @@ type: concept
 title: "Strategy Pattern"
 aliases: ["strategy", "padrão estratégia"]
 date_created: 2026-05-05
-date_updated: 2026-09-21
-source_count: 6
+date_updated: 2026-09-30
+source_count: 7
 tags: [design-patterns, behavioral, strategy, gof, open-closed, polimorfismo]
 skill: tech-mentor-backend
 status: stable
@@ -78,7 +78,7 @@ Implementação direta do [[open-closed-principle]]: a classe `Commuter` está f
 
 ## Exemplos reais
 
-- Estratégias de pricing (regular, premium, promo) — [[sources/sete-padroes-de-design-de-software]]
+- Estratégias de pricing (regular, premium, promo) — [[wiki/sources/sete-padroes-de-design-de-software]]
 - Algoritmos de sorting intercambiáveis
 - Gateways de pagamento (Stripe, PayPal, Mercado Pago)
 - Estratégias de notificação (push, email, SMS)
@@ -86,9 +86,10 @@ Implementação direta do [[open-closed-principle]]: a classe `Commuter` está f
 
 ## Key Sources
 
-- [[sources/sete-padroes-de-design-de-software]]
-- [[sources/design-pattern-strategy]]
+- [[wiki/sources/sete-padroes-de-design-de-software]]
+- [[wiki/sources/design-pattern-strategy]]
 - [[wiki/sources/principios-solid-ilustrados]] — mesma solução (objeto injetado que se auto-valida/processa) aplicada ao exemplo de processador de pagamentos
 - [[wiki/sources/seis-design-patterns-mais-usados-na-pratica]] — analogia das opções de rota do GPS; exemplo de validação de formulário por campo (CPF, telefone, senha); regra prática de quando usar classe (estado/múltiplos métodos) vs. função isolada (operação simples)
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — Strategy aplicado a múltiplos gateways de pagamento (Stripe, Abacate Pay) por uma IA em modo plan: interface `PaymentStrategy` com tipos agnósticos (sem importar SDK direto), payment context que carrega a strategy correspondente por rota — inclui a motivação de tolerância a falhas (trocar de provedor se um cair)
 - [[wiki/sources/pluggable-behavior-xunitpatterns]] — Pluggable (Method) Selector (Kent Beck, SBPP), variação mais leve com a mesma motivação: nome de método + reflection em vez de objeto Strategy completo
+- [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — regra de desconto por tipo de cliente como candidata a variação (modelagem não mostrada no vídeo)

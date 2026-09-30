@@ -90,15 +90,15 @@ kubectl rollout undo deployment/api --to-revision=3
 
 ## Conceitos Tocados
 
-- [[concepts/ci-cd]] — disciplina e distinção entre CI, CD e Continuous Deployment
-- [[concepts/pipeline-de-ci]] — estrutura de stages e princípio fail fast
-- [[concepts/github-actions]] — ferramenta de CI/CD com padrões de referência
-- [[concepts/argo-rollouts]] — progressive delivery com analysis template e rollback automático
-- [[concepts/canary-release]] — estratégia usada no deploy de produção
-- [[concepts/blue-green-deploy]] — estratégia alternativa no deploy de produção
-- [[concepts/feature-flags]] — mencionado como mecanismo de release desacoplado do deploy
-- [[concepts/zero-downtime-deploy]] — objetivo do pipeline de CD
-- [[concepts/observabilidade]] — métricas Prometheus usadas no rollback automático
+- [[wiki/concepts/ci-cd]] — disciplina e distinção entre CI, CD e Continuous Deployment
+- [[wiki/concepts/pipeline-de-ci]] — estrutura de stages e princípio fail fast
+- [[wiki/concepts/github-actions]] — ferramenta de CI/CD com padrões de referência
+- [[wiki/concepts/argo-rollouts]] — progressive delivery com analysis template e rollback automático
+- [[wiki/concepts/canary-release]] — estratégia usada no deploy de produção
+- [[wiki/concepts/blue-green-deploy]] — estratégia alternativa no deploy de produção
+- [[wiki/concepts/feature-flags]] — mencionado como mecanismo de release desacoplado do deploy
+- [[wiki/concepts/zero-downtime-deploy]] — objetivo do pipeline de CD
+- [[wiki/concepts/observabilidade]] — métricas Prometheus usadas no rollback automático
 
 ---
 

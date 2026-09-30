@@ -34,11 +34,11 @@ Mensageria resolve o acoplamento síncrono entre serviços com comunicação ass
 
 ## Conceitos
 
-- [[concepts/mensageria]] — fundamentos e escolha de broker
-- [[concepts/outbox-pattern]] — publicação atômica com escrita no banco
-- [[concepts/idempotencia]] — pré-requisito para at-least-once seguro
-- [[concepts/saga-pattern]] — orquestração/coreografia via mensageria
-- [[concepts/event-sourcing]] — streams como fonte de verdade
+- [[wiki/concepts/mensageria]] — fundamentos e escolha de broker
+- [[wiki/concepts/outbox-pattern]] — publicação atômica com escrita no banco
+- [[wiki/concepts/idempotencia]] — pré-requisito para at-least-once seguro
+- [[wiki/concepts/saga-pattern]] — orquestração/coreografia via mensageria
+- [[wiki/concepts/event-sourcing]] — streams como fonte de verdade
 
 ## Key Sources
 

@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/cloud-security]]: [[concepts/workload-identity]]
-- Em [[wiki/sources/secrets-management]]: [[concepts/workload-identity]]
+- Em [[wiki/sources/cloud-security]]: [[wiki/concepts/workload-identity]]
+- Em [[wiki/sources/secrets-management]]: [[wiki/concepts/workload-identity]]
 
 ## Pendências
 

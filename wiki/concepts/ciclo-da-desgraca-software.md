@@ -49,13 +49,13 @@ Quem entra numa empresa nova e imediatamente critica a codebase e propõe reescr
 
 ## Ver também
 
-- [[concepts/tech-debt]] — dívida técnica como causa raiz do ciclo
-- [[concepts/principio-da-inversao]] — hábito ruim nº 3: propor reescrita ao entrar numa empresa
+- [[wiki/concepts/tech-debt]] — dívida técnica como causa raiz do ciclo
+- [[wiki/concepts/principio-da-inversao]] — hábito ruim nº 3: propor reescrita ao entrar numa empresa
 - [[wiki/concepts/strangler-fig-pattern]] — alternativa à reescrita big bang
 - [[wiki/concepts/ciclo-de-mudanca-de-arquitetura]] — o processo saudável cujo desvio produz este ciclo
 
 ## Key Sources
 
 - [[wiki/sources/arquitetura-de-sacrificio]] — o antídoto de Fowler: sacrifício consciente do *próprio* código (por quem o escreveu, com modularidade) em vez da reescrita big-bang movida por ódio ao legado
-- [[sources/principio-da-inversao-programador]]
+- [[wiki/sources/principio-da-inversao-programador]]
 - [[wiki/sources/ciclo-de-mudanca-de-arquitetura]] — framing complementar: este ciclo é o resultado de pular AS-IS/POC no processo de mudança arquitetural

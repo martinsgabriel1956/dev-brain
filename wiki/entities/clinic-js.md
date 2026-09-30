@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/async-io-memory-management]]: [[entities/clinic-js]]
-- Em [[wiki/sources/flame-graph-profiling]]: [[entities/clinic-js]]
+- Em [[wiki/sources/async-io-memory-management]]: [[wiki/entities/clinic-js]]
+- Em [[wiki/sources/flame-graph-profiling]]: [[wiki/entities/clinic-js]]
 
 ## Pendências
 

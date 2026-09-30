@@ -34,7 +34,7 @@ CQRS separa o modelo de escrita (Command Side — Aggregate normalizado, regras 
 
 ## Entities & Concepts Touched
 
-- [[concepts/cqrs]]
+- [[wiki/concepts/cqrs]]
 - [[concepts/ddd-tactical]]
 - [[concepts/read-model]]
 - [[concepts/projection]]

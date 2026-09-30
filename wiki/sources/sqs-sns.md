@@ -41,10 +41,10 @@ SQS é uma fila gerenciada AWS (zero operação). Standard: alta throughput, ord
 - [[concepts/sqs]]
 - [[concepts/sns]]
 - [[concepts/visibility-timeout]]
-- [[concepts/fanout-pattern]]
-- [[concepts/dlq]]
+- [[wiki/concepts/fanout-pattern]]
+- [[wiki/concepts/dlq]]
 - [[concepts/fifo-queue]]
-- [[entities/aws]]
+- [[wiki/entities/aws]]
 
 ## Open Questions
 

@@ -69,7 +69,7 @@ body: {
 **Use:** múltiplos microsserviços com dependências, times diferentes owning consumer e provider.
 **Evite:** API pública com consumers desconhecidos → OpenAPI + Schemathesis; monólito — não faz sentido.
 
-Contract testing não substitui E2E — são camadas diferentes da [[concepts/piramide-de-testes]].
+Contract testing não substitui E2E — são camadas diferentes da [[wiki/concepts/piramide-de-testes]].
 
 ## Papel no teste de integração estreito (Fowler)
 
@@ -87,8 +87,8 @@ Em [[wiki/sources/contract-test-martin-fowler]], Fowler detalha a operação pr�
 
 ## Ver também
 
-- [[concepts/piramide-de-testes]] — onde contract testing se encaixa
-- [[concepts/bdd]] — complementar para specs de comportamento
+- [[wiki/concepts/piramide-de-testes]] — onde contract testing se encaixa
+- [[wiki/concepts/bdd]] — complementar para specs de comportamento
 - [[race-condition]] — problema que contract testing não resolve (lógica de negócio)
 - [[teste-de-integracao-estreito-vs-amplo]] — onde contract testing entra na estratégia de Fowler
 

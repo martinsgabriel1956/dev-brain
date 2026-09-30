@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/flame-graph-profiling]]: [[concepts/four-golden-signals]]
-- Em [[wiki/sources/performance-methods]]: [[concepts/four-golden-signals]]
+- Em [[wiki/sources/flame-graph-profiling]]: [[wiki/concepts/four-golden-signals]]
+- Em [[wiki/sources/performance-methods]]: [[wiki/concepts/four-golden-signals]]
 
 ## Pendências
 

@@ -12,14 +12,14 @@ status: stable
 
 # FFI — Foreign Function Interface
 
-Mecanismo que permite chamar funções de uma linguagem a partir de outra dentro do **mesmo processo**. É a camada de código que faz a [[concepts/abi]] funcionar na prática.
+Mecanismo que permite chamar funções de uma linguagem a partir de outra dentro do **mesmo processo**. É a camada de código que faz a [[wiki/concepts/abi]] funcionar na prática.
 
 ## Como funciona
 
-1. Uma linguagem compila sua função para um [[concepts/object-file]] seguindo a C ABI
+1. Uma linguagem compila sua função para um [[wiki/concepts/object-file]] seguindo a C ABI
 2. A outra linguagem declara a assinatura da função externa
 3. O linker conecta as duas — o caller sabe onde encontrar o callee
-4. Em runtime, os parâmetros são passados conforme a [[concepts/calling-convention]] acordada
+4. Em runtime, os parâmetros são passados conforme a [[wiki/concepts/calling-convention]] acordada
 
 ## Mecanismos por linguagem
 
@@ -91,4 +91,4 @@ Para chamadas frequentes em hot paths, considere minimizar cruzamentos de fronte
 
 ## Key Sources
 
-- [[sources/como-multiplas-linguagens-vivem-num-unico-binario]]
+- [[wiki/sources/como-multiplas-linguagens-vivem-num-unico-binario]]

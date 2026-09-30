@@ -50,4 +50,4 @@ Consistência eventual aceitável para presença — atraso de alguns segundos n
 ## Key Sources
 
 - [[wiki/sources/presence-system]] — Sistema de presença (online/offline) usa Heartbeat + Redis TTL: cliente envia ping a cada 15s, servidor atualiza `presence:{userId}` com SETEX 30s. Se TTL expirar, usuário está offline. Para...
-- [[sources/case-whatsapp]]
+- [[wiki/sources/case-whatsapp]]

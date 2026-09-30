@@ -12,7 +12,7 @@ status: stable
 
 # mTLS — Mutual TLS
 
-TLS onde tanto o cliente quanto o servidor apresentam certificados para autenticação mútua. No contexto de [[concepts/service-mesh]], ativado automaticamente entre todos os serviços sem alterar código da aplicação.
+TLS onde tanto o cliente quanto o servidor apresentam certificados para autenticação mútua. No contexto de [[wiki/concepts/service-mesh]], ativado automaticamente entre todos os serviços sem alterar código da aplicação.
 
 ## Com Istio
 
@@ -65,4 +65,4 @@ mTLS + AuthorizationPolicy implementa Zero Trust dentro do cluster: nenhum servi
 
 ## Key Sources
 
-- [[sources/service-mesh]]
+- [[wiki/sources/service-mesh]]

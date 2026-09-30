@@ -34,12 +34,12 @@ Microsserviços são serviços independentes com autonomia de deploy, dados isol
 
 ## Entities & Concepts Touched
 
-- [[concepts/microsservicos]]
-- [[concepts/bounded-context]]
-- [[concepts/distributed-monolith]]
-- [[concepts/circuit-breaker]]
-- [[concepts/service-discovery]]
-- [[concepts/strangler-fig]]
+- [[wiki/concepts/microsservicos]]
+- [[wiki/concepts/bounded-context]]
+- [[wiki/concepts/distributed-monolith]]
+- [[wiki/concepts/circuit-breaker]]
+- [[wiki/concepts/service-discovery]]
+- [[wiki/concepts/strangler-fig-pattern]]
 - [[concepts/conways-law]]
 
 ## Open Questions

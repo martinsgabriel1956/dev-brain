@@ -34,11 +34,11 @@ OpenTelemetry: padrão unificado para traces, métricas e logs — vendor-agnost
 
 ## Entities & Concepts Touched
 
-- [[concepts/opentelemetry]]
-- [[concepts/distributed-tracing]]
+- [[wiki/concepts/opentelemetry]]
+- [[wiki/concepts/distributed-tracing]]
 - [[concepts/spans]]
 - [[concepts/otlp]]
-- [[concepts/auto-instrumentation]]
+- [[wiki/concepts/auto-instrumentation]]
 - [[entities/jaeger]]
 - [[entities/grafana-tempo]]
 

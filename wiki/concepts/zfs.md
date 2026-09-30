@@ -16,7 +16,7 @@ Sistema de arquivos desenvolvido originalmente pela Sun Microsystems, lançado e
 
 ## O que o diferencia dos demais
 
-Todo sistema de arquivos com [[concepts/journaling]] (NTFS, ext3/4, HFS+) protege contra inconsistência causada por interrupção no meio de uma escrita. O ZFS vai além:
+Todo sistema de arquivos com [[wiki/concepts/journaling]] (NTFS, ext3/4, HFS+) protege contra inconsistência causada por interrupção no meio de uma escrita. O ZFS vai além:
 
 - **Checksums constantes** em todos os dados armazenados — não só nas transações em andamento, mas nos dados já gravados, detectando corrupção silenciosa (bit rot) que journaling não pega
 - **Auto-reparo**: se um checksum não bate e existe uma cópia redundante (RAID-Z, mirror), o ZFS corrige automaticamente o bloco corrompido
@@ -27,7 +27,7 @@ Suporta volumes na escala de zettabytes (1 zettabyte = 1 bilhão de TB) — muit
 
 ## Onde é usado
 
-Servidores, data centers, sistemas de armazenamento corporativo — qualquer contexto onde a pergunta "esse dado que voltou do disco é realmente o dado que eu escrevi?" precisa de resposta verificável, não apenas assumida. Não é o sistema de arquivos default de nenhuma distribuição Linux mainstream (esse papel é do [[concepts/ext4]]), mas está disponível como opção no Linux, FreeBSD e outros Unix.
+Servidores, data centers, sistemas de armazenamento corporativo — qualquer contexto onde a pergunta "esse dado que voltou do disco é realmente o dado que eu escrevi?" precisa de resposta verificável, não apenas assumida. Não é o sistema de arquivos default de nenhuma distribuição Linux mainstream (esse papel é do [[wiki/concepts/ext4]]), mas está disponível como opção no Linux, FreeBSD e outros Unix.
 
 ## Estado atual
 
@@ -35,9 +35,9 @@ Continua desenvolvido pelo projeto **OpenZFS**, sucessor comunitário/open-sourc
 
 ## Ver também
 
-- [[concepts/sistema-de-arquivos]]
-- [[concepts/journaling]] — proteção que o ZFS tem e vai além dela com checksums
-- [[concepts/ext4]] — o sistema de arquivos que o ZFS não substitui como default, mas complementa em cenários de alta confiabilidade
+- [[wiki/concepts/sistema-de-arquivos]]
+- [[wiki/concepts/journaling]] — proteção que o ZFS tem e vai além dela com checksums
+- [[wiki/concepts/ext4]] — o sistema de arquivos que o ZFS não substitui como default, mas complementa em cenários de alta confiabilidade
 
 ## Key Sources
 

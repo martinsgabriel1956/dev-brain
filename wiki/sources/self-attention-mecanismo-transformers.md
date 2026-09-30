@@ -47,14 +47,14 @@ Vídeo didático (série de desmistificação de LLMs para devs) explica o mecan
 
 ## Entities & Concepts Touched
 
-- [[concepts/transformer-architecture]]
-- [[concepts/self-attention]]
-- [[concepts/embedding-vectors]]
-- [[concepts/positional-encoding]]
-- [[concepts/tokenizacao]]
-- [[entities/attention-is-all-you-need-paper]]
-- [[entities/hugging-face]]
-- [[entities/google]]
+- [[wiki/concepts/transformer-architecture]]
+- [[wiki/concepts/self-attention]]
+- [[wiki/concepts/embedding-vectors]]
+- [[wiki/concepts/positional-encoding]]
+- [[wiki/concepts/tokenizacao]]
+- [[wiki/entities/attention-is-all-you-need-paper]]
+- [[wiki/entities/hugging-face]]
+- [[wiki/entities/google]]
 
 ## Open Questions
 

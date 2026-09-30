@@ -4,7 +4,7 @@ title: "Event-Driven Architecture (EDA)"
 aliases: ["arquitetura orientada a eventos", "eda", "event driven"]
 date_created: 2026-07-30
 date_updated: 2026-09-30
-source_count: 6
+source_count: 7
 tags: [event-driven, mensageria, saga-pattern, cqrs, microsservicos, arquitetura]
 skill: tech-mentor-backend
 status: stub
@@ -46,3 +46,4 @@ Ganha-se desacoplamento e ausência de gargalo síncrono; perde-se consistência
 - [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] — eventos como opção de consistência eventual no CQRS que permite transformação livre do read model; nomeia explicitamente o bug da escrita dupla como risco
 - [[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] — exemplo didático completo (cadastro + e-mail) de por que publicar um evento nunca é atômico com a escrita no banco, com a solução via outbox e CDC/Debezium
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — comunicação assíncrona como pré-requisito conceitual de EDA/CQRS/Event Sourcing; exemplo de pedidos
+- [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — evento pós-escrita ('formulário cadastrado') processado por [[wiki/concepts/event-handler]] para popular o [[wiki/concepts/read-model]]

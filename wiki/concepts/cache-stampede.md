@@ -14,7 +14,7 @@ status: stable
 
 Cache stampede (também chamado dog-piling) é quando múltiplos callers detectam um cache miss simultaneamente e todos vão ao origin (banco, API) ao mesmo tempo para reconstruir o dado.
 
-É uma instância específica do [[concepts/thundering-herd]] aplicada a caches.
+É uma instância específica do [[wiki/concepts/thundering-herd]] aplicada a caches.
 
 ## Cenário
 
@@ -114,11 +114,11 @@ async function getStaleWhileRevalidate(key: string) {
 
 ## Relação com outros conceitos
 
-- [[concepts/thundering-herd]] — cache stampede é uma instância de thundering herd
-- [[concepts/cache-hot-path]] — cache em camadas reduz a probabilidade de stampede no layer mais baixo
-- [[concepts/back-pressure]] — back pressure controla fluxo produtor→consumidor; stampede é o inverso
+- [[wiki/concepts/thundering-herd]] — cache stampede é uma instância de thundering herd
+- [[wiki/concepts/cache-hot-path]] — cache em camadas reduz a probabilidade de stampede no layer mais baixo
+- [[wiki/concepts/back-pressure]] — back pressure controla fluxo produtor→consumidor; stampede é o inverso
 
 ## Key Sources
 
 - [[wiki/sources/cache-strategies]] — Aprofundamento nas estratégias de cache com exemplos TypeScript completos. Cache-Aside é o padrão default para leituras. Write-Through para consistência forte. Write-Behind para throughput máximo de...
-- [[sources/conceitos-que-ninguem-ensina]]
+- [[wiki/sources/conceitos-que-ninguem-ensina]]

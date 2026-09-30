@@ -52,7 +52,7 @@ $hash = password_hash($password . $pepper, PASSWORD_ARGON2ID, [
 
 ## Diferença para Salt
 
-| | [[concepts/salt]] | Pepper |
+| | [[wiki/concepts/salt]] | Pepper |
 |---|---|---|
 | Unicidade | Por usuário | Global (mesmo valor para todos) |
 | Onde fica | No banco (junto ao hash) | No servidor (`.env`) |
@@ -63,7 +63,7 @@ $hash = password_hash($password . $pepper, PASSWORD_ARGON2ID, [
 
 ## Quando Pepper NÃO ajuda
 
-Se o atacante comprometeu também o servidor (acesso ao `.env`), o pepper é exposto. Por isso, pepper é defesa em profundidade — assume que servidores e bancos têm vetores de ataque diferentes e complementa [[concepts/argon2]], não o substitui.
+Se o atacante comprometeu também o servidor (acesso ao `.env`), o pepper é exposto. Por isso, pepper é defesa em profundidade — assume que servidores e bancos têm vetores de ataque diferentes e complementa [[wiki/concepts/argon2]], não o substitui.
 
 ---
 
@@ -73,19 +73,19 @@ Rotacionar pepper requer re-hash de todas as senhas, o que exige que o usuário 
 
 ## Risco Operacional de Tudo-ou-Nada
 
-Diferente de errar com [[concepts/salt]] (contido — vive na própria tabela junto ao hash), perder ou trocar por engano o valor do pepper no secrets manager **invalida todas as senhas do aplicativo de uma só vez**, para 100% dos usuários, sem possibilidade de reconstrução — o sistema não tem como saber qual era o valor anterior. Esse é o argumento central citado para o pepper ser considerado arriscado: o "raio de explosão" de um erro de deploy/rotação é o inverso do erro contido de um bug em salt ou hash.
+Diferente de errar com [[wiki/concepts/salt]] (contido — vive na própria tabela junto ao hash), perder ou trocar por engano o valor do pepper no secrets manager **invalida todas as senhas do aplicativo de uma só vez**, para 100% dos usuários, sem possibilidade de reconstrução — o sistema não tem como saber qual era o valor anterior. Esse é o argumento central citado para o pepper ser considerado arriscado: o "raio de explosão" de um erro de deploy/rotação é o inverso do erro contido de um bug em salt ou hash.
 
 ---
 
 ## Relação com Outros Conceitos
 
-- [[concepts/password-hashing]] — contexto geral
-- [[concepts/salt]] — complemento ao pepper
-- [[concepts/argon2]] — algoritmo com o qual pepper combina
-- [[concepts/bcrypt]] — também pode ser usado com pepper
+- [[wiki/concepts/password-hashing]] — contexto geral
+- [[wiki/concepts/salt]] — complemento ao pepper
+- [[wiki/concepts/argon2]] — algoritmo com o qual pepper combina
+- [[wiki/concepts/bcrypt]] — também pode ser usado com pepper
 
 ## Key Sources
 
-- [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
+- [[wiki/sources/seguranca-armazenamento-senhas-banco-de-dados]]
 - [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]
 - [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — risco de tudo-ou-nada ao perder o pepper

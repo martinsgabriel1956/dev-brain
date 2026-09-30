@@ -62,10 +62,10 @@ Ver também: [[wiki/sources/habitos-ruins-de-programador]] (ingest anterior do m
 
 ## Conceitos Abordados
 
-- [[concepts/dizer-sim-para-tudo]]
-- [[concepts/definicao-de-pronto]]
-- [[concepts/testar-proprio-codigo]]
-- [[concepts/atomic-commits]]
+- [[wiki/concepts/dizer-sim-para-tudo]]
+- [[wiki/concepts/definicao-de-pronto]]
+- [[wiki/concepts/testar-proprio-codigo]]
+- [[wiki/concepts/atomic-commits]]
 
 ## Quotes Relevantes
 

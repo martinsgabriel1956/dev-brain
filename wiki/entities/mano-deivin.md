@@ -12,7 +12,7 @@ status: stub
 
 # Mano Deivin
 
-Canal brasileiro de YouTube com conteúdo sobre carreira e produto voltado a programadores. Autoproclamado "canal mais xorume do YouTube". Produziu vídeo resumindo a metodologia [[concepts/lean-startup]] de [[entities/eric-ries]], adaptando os exemplos ao contexto de devs que consideram largar o emprego para construir produtos próprios.
+Canal brasileiro de YouTube com conteúdo sobre carreira e produto voltado a programadores. Autoproclamado "canal mais xorume do YouTube". Produziu vídeo resumindo a metodologia [[wiki/concepts/lean-startup]] de [[wiki/entities/eric-ries]], adaptando os exemplos ao contexto de devs que consideram largar o emprego para construir produtos próprios.
 
 ## Série de resumos de livros
 
@@ -26,6 +26,6 @@ Em [[wiki/sources/cinco-escolas-programacao-com-ia]], o canal produz conteúdo d
 
 ## Key Sources
 
-- [[sources/lean-startup-para-devs-mano-deivin]]
+- [[wiki/sources/lean-startup-para-devs-mano-deivin]]
 - [[wiki/sources/indistraivel-nir-eyal-mano-deivin]]
 - [[wiki/sources/cinco-escolas-programacao-com-ia]] — cinco escolas de pensamento sobre programação com IA, organizadas via "autonomy slider" de Karpathy

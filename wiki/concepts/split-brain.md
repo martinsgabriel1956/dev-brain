@@ -26,14 +26,14 @@ B: isolado, timeout       → decide ABORT
 
 ## Por que Acontece
 
-[[concepts/three-phase-commit]] e [[concepts/two-phase-commit]] não distinguem "coordinator caiu" de "coordinator está particionado". Em ambos os casos, o participant fica sem resposta — e pode tomar a decisão errada.
+[[wiki/concepts/three-phase-commit]] e [[wiki/concepts/two-phase-commit]] não distinguem "coordinator caiu" de "coordinator está particionado". Em ambos os casos, o participant fica sem resposta — e pode tomar a decisão errada.
 
 ## Como Resolver
 
-Algoritmos com **quorum**: [[concepts/raft-paxos]]. Uma decisão só avança se a maioria (quorum) dos nós concordar. Partição que isola minoria não avança — evita split-brain.
+Algoritmos com **quorum**: [[wiki/concepts/raft-paxos]]. Uma decisão só avança se a maioria (quorum) dos nós concordar. Partição que isola minoria não avança — evita split-brain.
 
 ## Key Sources
 
 - [[wiki/sources/raft-leader-election]] — Raft é o algoritmo de consenso mais legível e amplamente usado (etcd, CockroachDB, Consul, TiKV). Três papéis: Leader (único, escreve), Follower (replica), Candidate (em eleição). Eleição: timeout...
-- [[sources/3pc]]
+- [[wiki/sources/3pc]]
 - [[wiki/sources/github-2018-cap-pacelc-particao-video]] — caso real: dois data centers aceitando escritas após 43 s de partição, 24 h+ para reconciliar ([[wiki/concepts/github-incidente-2018-particao-de-rede]])

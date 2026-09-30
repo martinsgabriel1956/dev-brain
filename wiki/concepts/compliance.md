@@ -58,18 +58,18 @@ async function deleteUserData(userId: string) {
 
 ## ISO 27001 em Detalhe
 
-Ver [[concepts/iso-27001]] para a estrutura completa da norma. Resumo: framework de gestão ([[concepts/sgsi-isms]]) organizado em torno da [[concepts/triade-cia]], com um Anexo A de 93 controles (versão 2022) dos quais a empresa aplica apenas os relevantes ao seu risco, documentados na SoA (Statement of Applicability). O controle A.5.3 — [[concepts/segregacao-de-funcoes]] — é o mais tenso na prática: quem desenvolve não deveria poder fazer deploy sozinho em produção.
+Ver [[wiki/concepts/iso-27001]] para a estrutura completa da norma. Resumo: framework de gestão ([[wiki/concepts/sgsi-isms]]) organizado em torno da [[wiki/concepts/triade-cia]], com um Anexo A de 93 controles (versão 2022) dos quais a empresa aplica apenas os relevantes ao seu risco, documentados na SoA (Statement of Applicability). O controle A.5.3 — [[wiki/concepts/segregacao-de-funcoes]] — é o mais tenso na prática: quem desenvolve não deveria poder fazer deploy sozinho em produção.
 
 ## Key Sources
 
-- [[sources/compliance]] — visão geral: frameworks, security vs compliance, cenários de engenharia
-- [[sources/compliance-soc2-pci]] — SOC 2 Type I vs II, PCI-DSS tokenização, audit logging como evidência universal
-- [[sources/lgpd-gdpr]] — data mapping, lawful basis, 72h breach notification
-- [[sources/hipaa-sox]] — PHI/BAA, Segregation of Duties, S3 Object Lock
+- [[wiki/sources/compliance]] — visão geral: frameworks, security vs compliance, cenários de engenharia
+- [[wiki/sources/compliance-soc2-pci]] — SOC 2 Type I vs II, PCI-DSS tokenização, audit logging como evidência universal
+- [[wiki/sources/lgpd-gdpr]] — data mapping, lawful basis, 72h breach notification
+- [[wiki/sources/hipaa-sox]] — PHI/BAA, Segregation of Duties, S3 Object Lock
 - [[wiki/sources/iso-27001-dicionario-programador]] — estrutura da norma (cláusulas + Anexo A), SoA, controles relevantes para devs, Policy as Code, ISO 42001
 - [[wiki/sources/devsecops-origem-cultura-manifesto]] — frameworks (ITIL, COBIT, ISO 27001) e compliance como referência de reação a brechas de segurança, contraposto à resposta ágil integrada ao fluxo de desenvolvimento que [[wiki/concepts/devsecops]] defende
 - [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — [[wiki/concepts/event-sourcing|Event Sourcing]] citado como caso de mercado para opt-in/LGPD (histórico de consentimento e broadcast confiável de mudanças para parceiros) e para auditoria de operações financeiras críticas; caso de faturamento de telecomunicações sob fiscalização da Anatel como exemplo de auditoria regulatória fora do eixo LGPD/PCI/SOC2 já coberto na página
 
 ## Conceitos Relacionados
 
-[[concepts/audit-log]] · [[concepts/data-residency]] · [[concepts/dsar]] · [[concepts/zero-trust]] · [[concepts/data-privacy]] · [[concepts/iso-27001]] · [[concepts/sgsi-isms]] · [[concepts/segregacao-de-funcoes]]
+[[wiki/concepts/audit-log]] · [[wiki/concepts/data-residency]] · [[wiki/concepts/dsar]] · [[concepts/zero-trust]] · [[concepts/data-privacy]] · [[wiki/concepts/iso-27001]] · [[wiki/concepts/sgsi-isms]] · [[wiki/concepts/segregacao-de-funcoes]]

@@ -16,7 +16,7 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/terraform]]: [[concepts/terragrunt]]
+- Em [[wiki/sources/terraform]]: [[wiki/concepts/terragrunt]]
 
 ## Pendências
 

@@ -77,8 +77,8 @@ Cada tela empilhada na navigation stack não é "de graça" — ela segura estad
 
 ## Ver também
 
-- [[concepts/mobile-deep-links]] — integrar deep links com navegação
-- [[concepts/mobile-state-management-global]] — onde estado de navegação NÃO vai
+- [[wiki/concepts/mobile-deep-links]] — integrar deep links com navegação
+- [[wiki/concepts/mobile-state-management-global]] — onde estado de navegação NÃO vai
 
 ## Key Sources
 

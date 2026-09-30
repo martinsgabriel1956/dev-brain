@@ -39,7 +39,7 @@ OWASP LLM Top 10 define as ameaças específicas de sistemas com LLMs. Os 3 mais
 
 ## Entities & Concepts Touched
 
-- [[concepts/prompt-injection]]
+- [[wiki/concepts/prompt-injection]]
 - [[concepts/excessive-agency]]
 - [[concepts/rag-security]]
 - [[concepts/insecure-output-handling]]

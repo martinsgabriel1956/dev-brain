@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/ai-gateway-token-economics]]: [[concepts/semantic-cache]]
-- Em [[wiki/sources/context-engineering]]: [[concepts/semantic-cache]]
+- Em [[wiki/sources/ai-gateway-token-economics]]: [[wiki/concepts/semantic-cache]]
+- Em [[wiki/sources/context-engineering]]: [[wiki/concepts/semantic-cache]]
 
 ## Pendências
 

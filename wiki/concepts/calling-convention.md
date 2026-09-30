@@ -14,7 +14,7 @@ status: stable
 
 Conjunto de regras que define **como uma função é chamada a nível de hardware**: quais registradores carregam os parâmetros, em qual ordem, quem salva e restaura registradores, e onde o valor de retorno é depositado.
 
-Faz parte da [[concepts/abi]] e é o ponto mais comum de falha ao misturar linguagens.
+Faz parte da [[wiki/concepts/abi]] e é o ponto mais comum de falha ao misturar linguagens.
 
 ## O problema
 
@@ -54,4 +54,4 @@ C++ e Rust renomeiam símbolos internamente (ex: `namespace::Foo::bar` vira `_ZN
 
 ## Key Sources
 
-- [[sources/como-multiplas-linguagens-vivem-num-unico-binario]]
+- [[wiki/sources/como-multiplas-linguagens-vivem-num-unico-binario]]

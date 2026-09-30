@@ -3,8 +3,8 @@ type: concept
 title: "Escrever Código Para o Mantenedor"
 aliases: ["code for the maintainer", "write code for the maintainer", "código pensando em quem vai manter"]
 date_created: 2026-07-09
-date_updated: 2026-07-09
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [craftsmanship, legibilidade, manutenibilidade, clean-code, ia]
 skill: tech-mentor-leadership
 status: draft
@@ -35,3 +35,4 @@ Isso conecta com o problema de [[wiki/concepts/abstraction-bloat]] — um agente
 ## Key Sources
 
 - [[wiki/sources/5-principios-que-mudaram-como-programador]]
+- [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — 'o código será muito mais lido do que escrito'; ver [[wiki/concepts/codigo-lido-mais-que-escrito]]

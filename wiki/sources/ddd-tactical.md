@@ -44,8 +44,8 @@ Tactical Design são os building blocks: Entity (identidade única, mutável), V
 - [[concepts/aggregate-root]]
 - [[concepts/domain-service]]
 - [[concepts/specification-pattern]]
-- [[concepts/anemic-domain-model]]
-- [[concepts/repository-pattern]]
+- [[wiki/concepts/anemic-domain-model]]
+- [[wiki/concepts/repository-pattern]]
 
 ## Open Questions
 

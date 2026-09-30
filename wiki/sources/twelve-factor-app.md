@@ -34,7 +34,7 @@ Twelve-Factor App (Heroku, 2011): 12 práticas para aplicações SaaS portáveis
 
 ## Entities & Concepts Touched
 
-- [[sources/twelve-factor-app]]
+- [[wiki/sources/twelve-factor-app]]
 - [[concepts/config-as-env-vars]]
 - [[concepts/stateless-processes]]
 - [[concepts/disposability]]

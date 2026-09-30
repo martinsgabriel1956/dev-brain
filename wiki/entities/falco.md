@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/kubernetes-security]]: [[entities/falco]]
-- Em [[wiki/sources/runtime-security]]: [[entities/falco]]
+- Em [[wiki/sources/kubernetes-security]]: [[wiki/entities/falco]]
+- Em [[wiki/sources/runtime-security]]: [[wiki/entities/falco]]
 
 ## Pendências
 

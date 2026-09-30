@@ -53,7 +53,7 @@ Padrão aberto usado no YouTube. Manifesto em XML (MPD). Mais flexível, suporte
 
 - Seek é O(1) — vai direto ao segmento do timestamp
 - Troca de qualidade sem interrupção — segmentos futuros em qualidade diferente
-- Cache eficiente — segmentos são imutáveis, CDN TTL 365 dias → [[concepts/cdn-strategy]]
+- Cache eficiente — segmentos são imutáveis, CDN TTL 365 dias → [[wiki/concepts/cdn-strategy]]
 
 ## Buffer de Leitura Antecipada como Custo de Latência
 
@@ -61,5 +61,5 @@ O buffer de 30s citado acima existe para absorver oscilação de rede sem rebuff
 
 ## Key Sources
 
-- [[sources/case-youtube-streaming]]
+- [[wiki/sources/case-youtube-streaming]]
 - [[wiki/sources/delay-tv-aberta-vs-youtube-live-latencia-streaming]] — buffer de leitura antecipada em live streaming e modos de latência do YouTube

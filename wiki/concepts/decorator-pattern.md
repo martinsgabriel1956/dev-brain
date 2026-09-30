@@ -57,7 +57,7 @@ Essa fonte traz dois ângulos que reforçam a definição:
 - [[wiki/sources/decorator-xunitpatterns]]
 - [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — `java.io` como exemplo simultâneo de bom Decorator didático e péssima API de uso — verbete de "External Patterns" do xUnitPatterns.com (Meszaros): cita a definição formal original do GOF, fonte primária em inglês para a definição já registrada nesta página
 - [[wiki/sources/design-pattern-proxy]]
-- [[sources/design-pattern-strategy]] — distinção Decorator (pele) vs Strategy (miolo/algoritmo)
+- [[wiki/sources/design-pattern-strategy]] — distinção Decorator (pele) vs Strategy (miolo/algoritmo)
 - [[wiki/sources/seis-design-patterns-mais-usados-na-pratica]] — analogia dos filtros de foto do Instagram; exemplo de encadeamento de canais de notificação (e-mail → Slack → SMS); nota sobre decorators do TypeScript/Angular/NestJS
 - [[wiki/sources/design-pattern-decorator-renato-augusto]] — pipeline `ImageProcessor` (básico → marca d'água → resize); composição recursiva, vínculo com Open/Closed e contraste com Chain of Responsibility
 - [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] — citação breve como pattern-exemplo de OCP (adicionar funcionalidade à instância de um objeto sem alterar a classe original), sem exemplo de código nesta fonte

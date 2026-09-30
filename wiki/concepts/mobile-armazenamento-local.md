@@ -52,9 +52,9 @@ Usar para: tokens de autenticação sensíveis, chaves de criptografia, credenci
 
 ## Ver também
 
-- [[concepts/mobile-seguranca]] — o que nunca guardar em texto plano
-- [[concepts/mobile-offline-first-basico]] — como o storage suporta offline
-- [[concepts/mobile-biometria]] — integração Keychain + biometria
+- [[wiki/concepts/mobile-seguranca]] — o que nunca guardar em texto plano
+- [[wiki/concepts/mobile-offline-first-basico]] — como o storage suporta offline
+- [[wiki/concepts/mobile-biometria]] — integração Keychain + biometria
 
 ## Key Sources
 

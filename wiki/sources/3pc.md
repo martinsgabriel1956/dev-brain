@@ -23,21 +23,21 @@ status: stable
 
 ## Key Claims
 
-- **2PC tem blocking crítico** — se coordinator cai durante commit, participants ficam bloqueados com lock ativo indefinidamente. → [[concepts/two-phase-commit]]
-- **3PC adiciona fase PreCommit** — permite participants se recuperar consultando uns aos outros sem o coordinator. → [[concepts/three-phase-commit]]
-- **3PC não tolera partições de rede** — split-brain: A commita, B aborta, inconsistência. → [[concepts/split-brain]]
-- **Raft e Paxos resolvem com quorum** — toleram partições, são usados em produção (etcd, CockroachDB, Kafka KRaft). → [[concepts/raft-paxos]]
-- **Alternativas práticas para transações distribuídas** — Saga Pattern (compensação), Outbox + CDC (entrega sem locks), CockroachDB/Spanner (consenso correto). → [[concepts/saga-pattern]] [[concepts/outbox-pattern]] [[concepts/distributed-transactions]]
+- **2PC tem blocking crítico** — se coordinator cai durante commit, participants ficam bloqueados com lock ativo indefinidamente. → [[wiki/concepts/two-phase-commit]]
+- **3PC adiciona fase PreCommit** — permite participants se recuperar consultando uns aos outros sem o coordinator. → [[wiki/concepts/three-phase-commit]]
+- **3PC não tolera partições de rede** — split-brain: A commita, B aborta, inconsistência. → [[wiki/concepts/split-brain]]
+- **Raft e Paxos resolvem com quorum** — toleram partições, são usados em produção (etcd, CockroachDB, Kafka KRaft). → [[wiki/concepts/raft-paxos]]
+- **Alternativas práticas para transações distribuídas** — Saga Pattern (compensação), Outbox + CDC (entrega sem locks), CockroachDB/Spanner (consenso correto). → [[wiki/concepts/saga-pattern]] [[wiki/concepts/outbox-pattern]] [[wiki/concepts/distributed-transactions]]
 
 ## Entities
 
 - [[entities/etcd]]
-- [[entities/cockroachdb]]
+- [[wiki/entities/cockroachdb]]
 - [[entities/kafka]]
 
 ## Concepts
 
-[[concepts/three-phase-commit]] · [[concepts/two-phase-commit]] · [[concepts/split-brain]] · [[concepts/raft-paxos]] · [[concepts/saga-pattern]] · [[concepts/outbox-pattern]] · [[concepts/distributed-transactions]]
+[[wiki/concepts/three-phase-commit]] · [[wiki/concepts/two-phase-commit]] · [[wiki/concepts/split-brain]] · [[wiki/concepts/raft-paxos]] · [[wiki/concepts/saga-pattern]] · [[wiki/concepts/outbox-pattern]] · [[wiki/concepts/distributed-transactions]]
 
 ## Open Questions
 

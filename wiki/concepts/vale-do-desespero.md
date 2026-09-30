@@ -48,7 +48,7 @@ Ver [[reconhecimento-de-padroes]] — a diferença entre mestre e amador em xadr
 
 ## Quando Passa
 
-Não passa abruptamente. A fluidez se instala gradualmente: primeiro em problemas pequenos, depois em domínios maiores. A autora de [[sources/quanto-tempo-aprender-programacao]] levou ~3 anos até conseguir construir aplicações completas sozinha, sem ajuda de tutoriais ou programadores sêniores.
+Não passa abruptamente. A fluidez se instala gradualmente: primeiro em problemas pequenos, depois em domínios maiores. A autora de [[wiki/sources/quanto-tempo-aprender-programacao]] levou ~3 anos até conseguir construir aplicações completas sozinha, sem ajuda de tutoriais ou programadores sêniores.
 
 ## Relação com Outros Conceitos
 
@@ -59,4 +59,4 @@ Não passa abruptamente. A fluidez se instala gradualmente: primeiro em problema
 
 ## Key Sources
 
-- [[sources/quanto-tempo-aprender-programacao]] — descrição direta: "olha pra tela em branco e percebe que embora entenda cada linha isolada não tem ideia de como arquitetar uma solução"
+- [[wiki/sources/quanto-tempo-aprender-programacao]] — descrição direta: "olha pra tela em branco e percebe que embora entenda cada linha isolada não tem ideia de como arquitetar uma solução"

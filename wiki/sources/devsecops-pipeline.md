@@ -34,15 +34,15 @@ DevSecOps integra segurança no pipeline CI/CD em 4 gates: SAST (análise estát
 
 ## Entities & Concepts Touched
 
-- [[concepts/devsecops]]
-- [[concepts/sast]]
+- [[wiki/concepts/devsecops]]
+- [[wiki/concepts/sast]]
 - [[concepts/dast]]
 - [[concepts/sca]]
 - [[concepts/policy-as-code]]
 - [[entities/semgrep]]
 - [[entities/trivy]]
-- [[entities/opa]]
-- [[entities/kyverno]]
+- [[wiki/entities/opa]]
+- [[wiki/entities/kyverno]]
 
 ## Open Questions
 

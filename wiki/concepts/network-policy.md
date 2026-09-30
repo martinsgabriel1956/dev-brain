@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/k8s-networking]]: [[concepts/network-policy]]
-- Em [[wiki/sources/kubernetes-security]]: [[concepts/network-policy]]
+- Em [[wiki/sources/k8s-networking]]: [[wiki/concepts/network-policy]]
+- Em [[wiki/sources/kubernetes-security]]: [[wiki/concepts/network-policy]]
 
 ## Pendências
 

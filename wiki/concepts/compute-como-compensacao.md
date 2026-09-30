@@ -43,7 +43,7 @@ Não é mais suficiente avaliar uma oferta por salário + equity. A pergunta cer
 
 ## Risco
 
-Compute como compensação só funciona quando o dev tem **autonomia** para escolher como usar. Compute obrigatório sem método vira custo, não benefício — ver [[concepts/ia-como-chicote-de-produtividade]].
+Compute como compensação só funciona quando o dev tem **autonomia** para escolher como usar. Compute obrigatório sem método vira custo, não benefício — ver [[wiki/concepts/ia-como-chicote-de-produtividade]].
 
 ## Contraponto: O "8x" Raramente Vira "8x de Salário"
 
@@ -51,9 +51,9 @@ Compute como compensação só funciona quando o dev tem **autonomia** para esco
 
 ## Relacionado
 
-[[concepts/ia-como-chicote-de-produtividade]] · [[concepts/divida-cognitiva]] · [[concepts/vibe-coding]]
+[[wiki/concepts/ia-como-chicote-de-produtividade]] · [[wiki/concepts/divida-cognitiva]] · [[wiki/concepts/vibe-coding]]
 
 ## Key Sources
 
-- [[sources/ia-salario-ou-carga-de-trabalho]]
+- [[wiki/sources/ia-salario-ou-carga-de-trabalho]]
 - [[wiki/sources/ia-produtividade-nao-reduz-trabalho-corrida-da-ia-profecia-autorrealizavel]] — contraponto: alegação (sem fonte citada) de que produtividade relatada 5-8x maior não se traduz em salário proporcionalmente maior

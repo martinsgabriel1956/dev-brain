@@ -60,4 +60,4 @@ const request = new RequestBuilder()
 
 ## Key Sources
 
-- [[sources/sete-padroes-de-design-de-software]]
+- [[wiki/sources/sete-padroes-de-design-de-software]]

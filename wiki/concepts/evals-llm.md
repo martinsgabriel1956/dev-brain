@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/evals-sistematicas]]: [[concepts/evals-llm]]
-- Em [[wiki/sources/llmops-observabilidade]]: [[concepts/evals-llm]]
+- Em [[wiki/sources/evals-sistematicas]]: [[wiki/concepts/evals-llm]]
+- Em [[wiki/sources/llmops-observabilidade]]: [[wiki/concepts/evals-llm]]
 
 ## Pendências
 

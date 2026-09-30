@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/c4-model]]: [[concepts/architecture-documentation]]
-- Em [[wiki/sources/rfc]]: [[concepts/architecture-documentation]]
+- Em [[wiki/sources/c4-model]]: [[wiki/concepts/architecture-documentation]]
+- Em [[wiki/sources/rfc]]: [[wiki/concepts/architecture-documentation]]
 
 ## Pendências
 

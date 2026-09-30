@@ -33,10 +33,10 @@ Distributed Tracing mostra o caminho completo de um request por múltiplos servi
 
 ## Conceitos
 
-- [[concepts/distributed-tracing]] — spans, traces, propagação
-- [[concepts/observabilidade]] — três pilares: métricas, traces, logs
-- [[concepts/opentelemetry]] — padrão de instrumentação
-- [[concepts/outbox-pattern]] — propagação de trace em mensageria assíncrona
+- [[wiki/concepts/distributed-tracing]] — spans, traces, propagação
+- [[wiki/concepts/observabilidade]] — três pilares: métricas, traces, logs
+- [[wiki/concepts/opentelemetry]] — padrão de instrumentação
+- [[wiki/concepts/outbox-pattern]] — propagação de trace em mensageria assíncrona
 
 ## Key Sources
 

@@ -70,7 +70,7 @@ const reporting = new Pool({ max: 10, connectionTimeoutMillis: 10_000 });
 
 ## Dimensionamento
 
-Via [[concepts/littles-law]]: `concorrência = throughput × latência_média`. Aplique margem de 2×.
+Via [[wiki/concepts/littles-law]]: `concorrência = throughput × latência_média`. Aplique margem de 2×.
 
 ## Quando Usar
 
@@ -82,7 +82,7 @@ Via [[concepts/littles-law]]: `concorrência = throughput × latência_média`. 
 
 ## Relação com Circuit Breaker
 
-[[concepts/circuit-breaker]] decide **SE** tenta. Bulkhead decide **QUANTOS** tentam ao mesmo tempo. Ordem correta: bulkhead envolve circuit breaker.
+[[wiki/concepts/circuit-breaker]] decide **SE** tenta. Bulkhead decide **QUANTOS** tentam ao mesmo tempo. Ordem correta: bulkhead envolve circuit breaker.
 
 ## Métricas
 
@@ -96,4 +96,4 @@ Pool constantemente cheio = downstream lento ou pool subdimensionado.
 
 ## Key Sources
 
-- [[sources/bulkhead]]
+- [[wiki/sources/bulkhead]]

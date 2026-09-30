@@ -191,7 +191,7 @@ A mesma fonte cataloga relatos de terceiros (não experiência direta do autor, 
 
 Pergunta central proposta: **um teste automático sabe dizer se a tarefa ficou pronta?** Se sim, é candidata a loop; se não, é [[wiki/concepts/spec-driven-development|spec-driven]] com revisão humana no comando.
 
-- **Use spec + revisão (sem loop)**: código em produção/legado (erro afeta usuário real), UX/copy (sem critério automático de "ficou bom"), decisões de arquitetura que travam o projeto por anos (usar [[wiki/concepts/rfc-request-for-comments|RFC]] e depois [[wiki/concepts/architecture-decision-record|ADR]] em vez de ciclo cego), qualquer fluxo com pagamento ou migração de dados sensíveis.
+- **Use spec + revisão (sem loop)**: código em produção/legado (erro afeta usuário real), UX/copy (sem critério automático de "ficou bom"), decisões de arquitetura que travam o projeto por anos (usar [[wiki/concepts/rfc-request-for-comments|RFC]] e depois [[wiki/concepts/adr-architecture-decision-record|ADR]] em vez de ciclo cego), qualquer fluxo com pagamento ou migração de dados sensíveis.
 - **Solte o loop (com o checklist acima)**: projeto novo do zero (pior caso é descartar o branch), migração/porte mecânico entre frameworks, zerar fila de erros de lint/tipo, backlog com critério de aceite automático por item.
 
 Ritmo recomendado: **spec de dia, loop de noite** — specs escritas com calma viram `fixplan.md` com critério de aceite; o loop roda de madrugada em sandbox com teto de gasto; PR pequeno é revisado de manhã; repete no dia seguinte. Sem spec e sem teste, "o loop continua rodando, só que produzindo a coisa errada mais rápido" — velocidade sem direção verificável é prejuízo, não ganho.

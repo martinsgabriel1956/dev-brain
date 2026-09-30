@@ -12,7 +12,7 @@ status: stable
 
 # SRE — Site Reliability Engineering
 
-Disciplina que trata confiabilidade de sistemas como problema de engenharia. Framework central: definir o que significa "suficientemente confiável" ([[concepts/slo]]), medir se você está lá ([[concepts/sli]]), e usar a folga disponível ([[concepts/error-budget]]) para tomar decisões de velocidade vs. estabilidade.
+Disciplina que trata confiabilidade de sistemas como problema de engenharia. Framework central: definir o que significa "suficientemente confiável" ([[wiki/concepts/slo]]), medir se você está lá ([[wiki/concepts/sli]]), e usar a folga disponível ([[wiki/concepts/error-budget]]) para tomar decisões de velocidade vs. estabilidade.
 
 ## Cinco Pilares do "Sucesso" na Visão de um SRE
 
@@ -24,12 +24,12 @@ Sem esse framework, a discussão de confiabilidade fica na base de "o sistema t�
 
 ## Componentes
 
-- [[concepts/sli]] — métrica concreta (o que medir)
-- [[concepts/slo]] — meta interna (qual o target)
-- [[concepts/sla]] — contrato externo (com penalidade)
-- [[concepts/error-budget]] — folga operacional (governa velocidade vs. estabilidade)
-- [[concepts/error-budget-policy]] — regras de decisão por nível de budget
-- [[concepts/blameless-post-mortem]] — cultura de aprendizado sem blame
+- [[wiki/concepts/sli]] — métrica concreta (o que medir)
+- [[wiki/concepts/slo]] — meta interna (qual o target)
+- [[wiki/concepts/sla]] — contrato externo (com penalidade)
+- [[wiki/concepts/error-budget]] — folga operacional (governa velocidade vs. estabilidade)
+- [[wiki/concepts/error-budget-policy]] — regras de decisão por nível de budget
+- [[wiki/concepts/blameless-post-mortem]] — cultura de aprendizado sem blame
 
 ## RTO/RPO Como Indicadores do Pior Caso de Confiabilidade
 
@@ -38,6 +38,6 @@ O guarda-chuva de confiabilidade (consistência, durabilidade, tolerância a fal
 ## Key Sources
 
 - [[wiki/sources/flame-graph-profiling]] — 4 frameworks de diagnóstico: Flame Graph (onde o CPU passa o tempo), USE Method (Utilization/Saturation/Errors — para recursos de infra), RED Method (Rate/Errors/Duration — para serviços), Four...
-- [[sources/sre-sli-slo-sla]]
+- [[wiki/sources/sre-sli-slo-sla]]
 - [[wiki/sources/sre-capacidade-observabilidade-confiabilidade-custo]] — os cinco pilares de sucesso (capacidade, observabilidade, custo, release engineering, segurança) e confiabilidade como guarda-chuva
 - [[wiki/sources/rto-rpo-recovery-time-point-objective]] — RTO/RPO como indicadores de confiabilidade no cenário de desastre, definidos a partir da tolerância do negócio

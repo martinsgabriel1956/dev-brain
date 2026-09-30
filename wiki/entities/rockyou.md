@@ -35,7 +35,7 @@ O arquivo `rockyou.txt` tornou-se a base das wordlists usadas em ataques de senh
 | Original | 2009 | 32 milhões de senhas |
 | All-In-One (2026) | 2026 | ~29,6 bilhões de senhas, 317 GB |
 
-Disponível em [SecLists](https://github.com/danielmiessler/SecLists) e similares. Usada como base para [[concepts/rainbow-table]]s e ataques de [[concepts/ataque-pre-computacao]].
+Disponível em [SecLists](https://github.com/danielmiessler/SecLists) e similares. Usada como base para [[wiki/concepts/rainbow-table]]s e ataques de [[wiki/concepts/ataque-pre-computacao]].
 
 ---
 
@@ -50,11 +50,11 @@ O vazamento do RockYou demonstrou empiricamente que:
 
 ## Relação com Outros Conceitos
 
-- [[concepts/ataque-pre-computacao]] — o vazamento alimentou as tabelas pré-computadas
-- [[concepts/rainbow-table]] — rockyou.txt é a base mais comum
-- [[concepts/salt]] — técnica que invalida o reaproveitamento dessas listas
-- [[concepts/password-hashing]] — o problema que o RockYou evidenciou em escala
+- [[wiki/concepts/ataque-pre-computacao]] — o vazamento alimentou as tabelas pré-computadas
+- [[wiki/concepts/rainbow-table]] — rockyou.txt é a base mais comum
+- [[wiki/concepts/salt]] — técnica que invalida o reaproveitamento dessas listas
+- [[wiki/concepts/password-hashing]] — o problema que o RockYou evidenciou em escala
 
 ## Key Sources
 
-- [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
+- [[wiki/sources/seguranca-armazenamento-senhas-banco-de-dados]]

@@ -59,10 +59,10 @@ A IA torna padrões sofisticados *acessíveis* sem torná-los *apropriados*. Arq
 
 ## Concepts
 
-- [[concepts/abstraction-illusion]] — IA torna padrões acessíveis sem torná-los apropriados
-- [[concepts/yagni]] — princípio subjacente à abordagem constraints-first
-- [[concepts/abstraction-bloat]] — efeito prático da abstraction illusion
-- [[concepts/adr]] — Architecture Decision Record, onde documentar o rationale
+- [[wiki/concepts/abstraction-illusion]] — IA torna padrões acessíveis sem torná-los apropriados
+- [[wiki/concepts/yagni]] — princípio subjacente à abordagem constraints-first
+- [[wiki/concepts/abstraction-bloat]] — efeito prático da abstraction illusion
+- [[wiki/concepts/adr-architecture-decision-record]] — Architecture Decision Record, onde documentar o rationale
 
 ## Open Questions
 

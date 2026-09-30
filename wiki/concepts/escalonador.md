@@ -42,16 +42,16 @@ Com dezenas de processos e uma CPU, alguém precisa decidir quem roda em qual mo
 
 O processo está rodando — como o escalonador interrompe ele?
 
-Via [[concepts/interrupcao-de-hardware]]: um timer de hardware dispara a cada N ms, gerando uma interrupção que transfere controle ao SO. O escalonador decide quem roda em seguida.
+Via [[wiki/concepts/interrupcao-de-hardware]]: um timer de hardware dispara a cada N ms, gerando uma interrupção que transfere controle ao SO. O escalonador decide quem roda em seguida.
 
 ## Ver também
 
-- [[concepts/context-switch]] — operação que o escalonador executa ao trocar processos
-- [[concepts/interrupcao-de-hardware]] — mecanismo que aciona o escalonador periodicamente
-- [[concepts/processo]] — entidade agendada pelo escalonador
-- [[concepts/thread]] — unidade de execução agendada pelo kernel
+- [[wiki/concepts/context-switch]] — operação que o escalonador executa ao trocar processos
+- [[wiki/concepts/interrupcao-de-hardware]] — mecanismo que aciona o escalonador periodicamente
+- [[wiki/concepts/processo]] — entidade agendada pelo escalonador
+- [[wiki/concepts/thread]] — unidade de execução agendada pelo kernel
 
 ## Key Sources
 
-- [[sources/sistema-operacional-por-baixo-dos-panos]]
-- [[sources/como-sistemas-operacionais-funcionam]]
+- [[wiki/sources/sistema-operacional-por-baixo-dos-panos]]
+- [[wiki/sources/como-sistemas-operacionais-funcionam]]

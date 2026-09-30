@@ -42,12 +42,12 @@ A fonte generaliza o alerta: "nunca acreditar que você já está no máximo de 
 
 ## Relacionado
 
-[[concepts/pomodoro]] — técnica complementar para gerenciar o tempo dentro do bloco reservado.
+[[wiki/concepts/pomodoro]] — técnica complementar para gerenciar o tempo dentro do bloco reservado.
 
 [[wiki/concepts/side-project-como-armadilha]] — mesmo mecanismo aplicado a side projects: reservar dias/horários específicos evita que o projeto pessoal consuma tempo de forma não estruturada e vire fonte de sobrecarga.
 
 ## Key Sources
 
-- [[sources/9-habitos-programador-junior]]
+- [[wiki/sources/9-habitos-programador-junior]]
 - [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]]
 - [[wiki/sources/7-habitos-programador-altamente-eficaz]]

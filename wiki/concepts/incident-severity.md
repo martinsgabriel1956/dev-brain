@@ -29,8 +29,8 @@ Incidente pode ser promovido de severidade durante a resposta. Se SEV-3 não res
 
 ## Relação com Error Budget
 
-Cada incidente consome [[concepts/error-budget]] proporcional à duração × impacto. SEV-1 de 1h pode esgotar o budget mensal inteiro.
+Cada incidente consome [[wiki/concepts/error-budget]] proporcional à duração × impacto. SEV-1 de 1h pode esgotar o budget mensal inteiro.
 
 ## Key Sources
 
-- [[sources/sre-error-budget-incidents]]
+- [[wiki/sources/sre-error-budget-incidents]]

@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/elasticsearch-opensearch]]: [[concepts/faceted-search]]
-- Em [[wiki/sources/mongodb]]: [[concepts/faceted-search]]
+- Em [[wiki/sources/elasticsearch-opensearch]]: [[wiki/concepts/faceted-search]]
+- Em [[wiki/sources/mongodb]]: [[wiki/concepts/faceted-search]]
 
 ## Pendências
 

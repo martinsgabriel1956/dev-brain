@@ -88,7 +88,7 @@ Enterprise / HIPAA / PCI-DSS / GDPR      → DB-per-Tenant
 
 ## Tenant Context — Identificação e Propagação
 
-Ver [[concepts/tenant-context]].
+Ver [[wiki/concepts/tenant-context]].
 
 ## Migrations
 
@@ -153,4 +153,4 @@ Não é só padrão de SaaS/banco: também existe no nível de infra. Provedores
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — multitenância de infra: LPARs de um mesmo mainframe para clientes distintos
-- [[sources/multi-tenancy]]
+- [[wiki/sources/multi-tenancy]]

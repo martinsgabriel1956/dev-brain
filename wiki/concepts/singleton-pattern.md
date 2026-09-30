@@ -55,14 +55,14 @@ const logger2 = Logger.getInstance();
 
 ## Alerta
 
-> "A Singleton is basically just a glorified global variable." — [[sources/sete-padroes-de-design-de-software]]
+> "A Singleton is basically just a glorified global variable." — [[wiki/sources/sete-padroes-de-design-de-software]]
 
 Use quando a unicidade é **genuinamente necessária**, não para ter estado global conveniente. Prefira injeção de dependência para passar instâncias compartilhadas.
 
 ## Key Sources
 
-- [[sources/sete-padroes-de-design-de-software]]
-- [[sources/design-pattern-facade]] — Facade frequentemente convertida em Singleton
+- [[wiki/sources/sete-padroes-de-design-de-software]]
+- [[wiki/sources/design-pattern-facade]] — Facade frequentemente convertida em Singleton
 - [[wiki/sources/seis-design-patterns-mais-usados-na-pratica]] — analogia do elevador único do prédio; nota que frameworks atuais implementam Singleton via container de DI em vez de "na mão", evitando o acoplamento do `getInstance()` manual
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — conexão Redis compartilhada em arquitetura SSE/Pub-Sub
 - [[wiki/sources/connection-pooling-pool-vs-polling-serverless]] — pool de conexões como singleton de módulo em Node.js

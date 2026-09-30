@@ -39,7 +39,7 @@ status: stable
 ## Entities & Concepts Touched
 
 - [[concepts/dynamic-secrets]]
-- [[concepts/workload-identity]]
+- [[wiki/concepts/workload-identity]]
 - [[concepts/irsa]]
 - [[concepts/external-secrets-operator]]
 - [[concepts/secret-scanning]]

@@ -29,33 +29,33 @@ Do clique duplo até a primeira tela: o SO orquestra processos, threads, memóri
 - Fonte: transcrição do vídeo
 
 **2. Processos têm memória isolada por design**
-- Cada [[concepts/processo]] tem seu próprio espaço de endereçamento — navegador não acessa memória do editor
-- Isolamento via [[concepts/memoria-virtual]]: endereços virtuais, não físicos
+- Cada [[wiki/concepts/processo]] tem seu próprio espaço de endereçamento — navegador não acessa memória do editor
+- Isolamento via [[wiki/concepts/memoria-virtual]]: endereços virtuais, não físicos
 - Benefício de segurança: crash de um processo não derruba os outros
 - Fonte: transcrição do vídeo
 
 **3. Threads compartilham memória dentro do processo, o que tem custo**
-- [[concepts/thread|Threads]] são mais baratas de criar que processos e comunicam-se diretamente via memória
-- O preço: [[concepts/deadlock]] e race conditions quando duas threads modificam o mesmo estado
-- [[concepts/mutex]] é o mecanismo primário de sincronização — funciona como chave de porta
+- [[wiki/concepts/thread|Threads]] são mais baratas de criar que processos e comunicam-se diretamente via memória
+- O preço: [[wiki/concepts/deadlock]] e race conditions quando duas threads modificam o mesmo estado
+- [[wiki/concepts/mutex]] é o mecanismo primário de sincronização — funciona como chave de porta
 - Fonte: transcrição do vídeo
 
 **4. O escalonador usa interrupções para ser preemptivo**
-- [[concepts/escalonador]] decide quem roda via Round-Robin ou filas de prioridade
-- Retoma controle através de [[concepts/interrupcao-de-hardware]]: timer de hardware dispara a cada N ms
-- [[concepts/context-switch]] salva/restaura estado completo do processo — acontece milhares de vezes/segundo
+- [[wiki/concepts/escalonador]] decide quem roda via Round-Robin ou filas de prioridade
+- Retoma controle através de [[wiki/concepts/interrupcao-de-hardware]]: timer de hardware dispara a cada N ms
+- [[wiki/concepts/context-switch]] salva/restaura estado completo do processo — acontece milhares de vezes/segundo
 - Fonte: transcrição do vídeo
 
 **5. Memória virtual isola processos e viabiliza swap**
-- [[concepts/memoria-virtual]]: cada processo crê ter toda a memória; SO mantém tabela de tradução virtual→físico
-- Quando RAM enche, [[concepts/swap]] move páginas frias para disco — mas disco é 1.000× mais lento
+- [[wiki/concepts/memoria-virtual]]: cada processo crê ter toda a memória; SO mantém tabela de tradução virtual→físico
+- Quando RAM enche, [[wiki/concepts/swap]] move páginas frias para disco — mas disco é 1.000× mais lento
 - Uso excessivo de swap = thrashing = sistema travado
 - Fonte: transcrição do vídeo
 
 **6. Syscalls são a única ponte autorizada ao kernel**
-- Programas em user mode não acessam hardware diretamente — fazem pedidos ao [[concepts/kernel]] via [[concepts/syscall]]
+- Programas em user mode não acessam hardware diretamente — fazem pedidos ao [[wiki/concepts/kernel]] via [[wiki/concepts/syscall]]
 - CPU troca de user mode para kernel mode, executa a operação, volta
-- [[concepts/sistema-de-arquivos]] abstrai o disco: arquivos fragmentados em blocos, tabela mapeia onde cada pedaço está
+- [[wiki/concepts/sistema-de-arquivos]] abstrai o disco: arquivos fragmentados em blocos, tabela mapeia onde cada pedaço está
 - Kernel panic (BSOD, kernel panic) é fatal porque não há nada "embaixo" para segurar
 - Fonte: transcrição do vídeo
 
@@ -68,18 +68,18 @@ Do clique duplo até a primeira tela: o SO orquestra processos, threads, memóri
 
 ## Conceitos Tocados
 
-- [[concepts/processo]]
-- [[concepts/thread]]
-- [[concepts/deadlock]]
-- [[concepts/mutex]]
-- [[concepts/escalonador]]
-- [[concepts/context-switch]]
-- [[concepts/interrupcao-de-hardware]]
-- [[concepts/memoria-virtual]]
-- [[concepts/swap]]
-- [[concepts/sistema-de-arquivos]]
-- [[concepts/syscall]]
-- [[concepts/kernel]]
+- [[wiki/concepts/processo]]
+- [[wiki/concepts/thread]]
+- [[wiki/concepts/deadlock]]
+- [[wiki/concepts/mutex]]
+- [[wiki/concepts/escalonador]]
+- [[wiki/concepts/context-switch]]
+- [[wiki/concepts/interrupcao-de-hardware]]
+- [[wiki/concepts/memoria-virtual]]
+- [[wiki/concepts/swap]]
+- [[wiki/concepts/sistema-de-arquivos]]
+- [[wiki/concepts/syscall]]
+- [[wiki/concepts/kernel]]
 
 ## Questões Abertas
 

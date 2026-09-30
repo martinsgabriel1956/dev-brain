@@ -34,4 +34,4 @@ Go 1.18+ trouxe generics — eliminam duplicação mas aumentam complexidade de 
 
 ## Conceitos Abordados
 
-- [[concepts/go-avancado]] · [[concepts/go-fundamentos]] · [[concepts/go-concorrencia]] · [[concepts/go-producao]]
+- [[wiki/concepts/go-avancado]] · [[wiki/concepts/go-fundamentos]] · [[wiki/concepts/go-concorrencia]] · [[wiki/concepts/go-producao]]

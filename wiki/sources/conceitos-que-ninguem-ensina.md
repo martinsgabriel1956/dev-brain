@@ -38,13 +38,13 @@ Quatro conceitos que separam devs que entendem o sistema dos que estão na esper
 
 ## Entities & Concepts Touched
 
-- [[concepts/back-pressure]]
-- [[concepts/thundering-herd]]
-- [[concepts/temporal-coupling]]
-- [[concepts/accidental-complexity]]
-- [[concepts/essential-complexity]]
-- [[concepts/cache-stampede]]
-- [[entities/fred-brooks]]
+- [[wiki/concepts/back-pressure]]
+- [[wiki/concepts/thundering-herd]]
+- [[wiki/concepts/temporal-coupling]]
+- [[wiki/concepts/accidental-complexity]]
+- [[wiki/concepts/essential-complexity]]
+- [[wiki/concepts/cache-stampede]]
+- [[wiki/entities/fred-brooks]]
 
 ## Open Questions
 

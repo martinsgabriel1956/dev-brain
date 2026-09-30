@@ -45,7 +45,7 @@ SKIP LOCKED transforma PostgreSQL em fila de trabalho sem broker externo — mú
 
 ## Concepts & Entities Touched
 
-[[concepts/skip-locked]] · [[concepts/fencing-token]] · [[concepts/distributed-lock]] · [[concepts/two-phase-commit]] · [[concepts/raft-paxos]]
+[[wiki/concepts/skip-locked]] · [[wiki/concepts/fencing-token]] · [[wiki/concepts/distributed-lock]] · [[wiki/concepts/two-phase-commit]] · [[wiki/concepts/raft-paxos]]
 
 ## Open Questions
 

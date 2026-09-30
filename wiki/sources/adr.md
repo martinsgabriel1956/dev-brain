@@ -35,10 +35,10 @@ ADR é um documento curto que registra uma decisão arquitetural significativa: 
 
 ## Entities & Concepts Touched
 
-- [[concepts/adr]]
-- [[concepts/living-documentation]]
+- [[wiki/concepts/adr-architecture-decision-record]]
+- [[wiki/concepts/living-documentation]]
 - [[concepts/evolutionary-architecture]]
-- [[concepts/rfc]]
+- [[wiki/concepts/rfc-request-for-comments]]
 
 ## Open Questions
 

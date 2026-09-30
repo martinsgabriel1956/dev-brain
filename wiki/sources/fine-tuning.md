@@ -45,7 +45,7 @@ Fine-tuning só vale quando prompt engineering + RAG foram esgotados. LoRA é o 
 
 - [[concepts/lora]]
 - [[concepts/qlora]]
-- [[concepts/dpo]]
+- [[wiki/concepts/dpo]]
 - [[concepts/rlhf]]
 - [[concepts/catastrophic-forgetting]]
 - [[concepts/knowledge-distillation]]

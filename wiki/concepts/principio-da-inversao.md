@@ -30,17 +30,17 @@ Popularizado por **Charlie Munger** (sócio de Warren Buffett) como modelo menta
 
 ## Aplicação em programação
 
-O [[sources/principio-da-inversao-programador]] aplica o modelo para identificar os 7 hábitos do pior programador:
+O [[wiki/sources/principio-da-inversao-programador]] aplica o modelo para identificar os 7 hábitos do pior programador:
 
 | Hábito ruim (invertido) | O que ele revela |
 |---|---|
-| Nunca questionar líderes | Questione com dados — [[concepts/dados-vs-intuicao]] |
-| Complicar tudo | Simplicidade é valor — [[concepts/complexidade-como-estrategia]] |
-| Reescrever tudo ao entrar | Entenda antes de demolir — [[concepts/ciclo-da-desgraca-software]] |
-| Aprender 100% antes de praticar | Aprenda fazendo — [[concepts/pitfalls-de-linguagem]], [[concepts/tutorial-hell]] |
-| Encarar feedback como ataque | Extraia aprendizado — [[concepts/maturidade-tecnica]] |
-| Ignorar novas tecnologias | Estagnação tem custo — [[concepts/atualizacao-tecnologica]] |
-| Só assistir tutoriais | Prática é insubstituível — [[concepts/tutorial-hell]] |
+| Nunca questionar líderes | Questione com dados — [[wiki/concepts/dados-vs-intuicao]] |
+| Complicar tudo | Simplicidade é valor — [[wiki/concepts/complexidade-como-estrategia]] |
+| Reescrever tudo ao entrar | Entenda antes de demolir — [[wiki/concepts/ciclo-da-desgraca-software]] |
+| Aprender 100% antes de praticar | Aprenda fazendo — [[wiki/concepts/pitfalls-de-linguagem]], [[wiki/concepts/tutorial-hell]] |
+| Encarar feedback como ataque | Extraia aprendizado — [[wiki/concepts/maturidade-tecnica]] |
+| Ignorar novas tecnologias | Estagnação tem custo — [[wiki/concepts/atualizacao-tecnologica]] |
+| Só assistir tutoriais | Prática é insubstituível — [[wiki/concepts/tutorial-hell]] |
 
 ## Relação com outros modelos mentais de decisão
 
@@ -48,13 +48,13 @@ Assim como o princípio da inversão, [[wiki/concepts/skin-in-the-game]] e [[wik
 
 ## Ver também
 
-- [[concepts/aprendizado-deliberado]] — prática como mecanismo de seleção
-- [[entities/charlie-munger]] — principal popularizador do modelo
-- [[entities/karl-gustav-jakob-jacobi]] — origem matemática
+- [[wiki/concepts/aprendizado-deliberado]] — prática como mecanismo de seleção
+- [[wiki/entities/charlie-munger]] — principal popularizador do modelo
+- [[wiki/entities/karl-gustav-jakob-jacobi]] — origem matemática
 - [[wiki/concepts/antifragilidade]] — outro modelo mental de decisão sob incerteza
 - [[wiki/concepts/decisao-terceirizada]] — o oposto do que esses modelos propõem: decidir sem raciocínio próprio
 
 ## Key Sources
 
-- [[sources/principio-da-inversao-programador]]
+- [[wiki/sources/principio-da-inversao-programador]]
 - [[wiki/sources/pare-de-terceirizar-suas-decisoes]]

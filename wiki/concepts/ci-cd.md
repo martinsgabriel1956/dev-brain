@@ -47,13 +47,13 @@ Os dois requisitos para alcançar CD, segundo Fowler: uma [[wiki/concepts/devops
 
 Um deploy manual (SSH na máquina, `git pull`, `npm start`) e um deploy automático (pipeline disparada por merge na `main`) podem executar exatamente os mesmos comandos por baixo. A diferença não é **o que** é executado, é **o que dispara** a execução: decisão humana pontual vs. regra automática. Deploy automático reduz erro humano e torna difícil esquecer de deployar, além de permitir gates adicionais (ex.: só deploya se os testes passarem).
 
-**Exemplo concreto do lado manual:** um deploy [[concepts/blue-green-deploy]] numa VPS única, disparado inteiramente por SSH com uma sequência de scripts bash (clonar, subir instância, trocar roteamento do reverse proxy) rodados um a um pelo operador — sem CI, sem gate, sem gatilho automático. → [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]]
+**Exemplo concreto do lado manual:** um deploy [[wiki/concepts/blue-green-deploy]] numa VPS única, disparado inteiramente por SSH com uma sequência de scripts bash (clonar, subir instância, trocar roteamento do reverse proxy) rodados um a um pelo operador — sem CI, sem gate, sem gatilho automático. → [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]]
 
-Qual **estratégia** de tráfego o deploy (manual ou automático) usa — [[concepts/recreate-deployment]], [[concepts/rolling-update]], [[concepts/blue-green-deploy]], [[concepts/canary-release]] — é uma decisão ortogonal. Continuous Deployment, em particular, tende a usar Rolling como padrão de fato, mas nada o obriga.
+Qual **estratégia** de tráfego o deploy (manual ou automático) usa — [[wiki/concepts/recreate-deployment]], [[wiki/concepts/rolling-update]], [[wiki/concepts/blue-green-deploy]], [[wiki/concepts/canary-release]] — é uma decisão ortogonal. Continuous Deployment, em particular, tende a usar Rolling como padrão de fato, mas nada o obriga.
 
 ## Serverless
 
-Em ambientes serverless, a estratégia de tráfego geralmente é administrada pela cloud, não pelo time: o provedor troca o roteamento para a versão nova de forma equivalente a um [[concepts/recreate-deployment]] instantâneo ou a um [[concepts/blue-green-deploy]] invisível. Nada impede configurar Canary ou A/B manualmente sobre serverless, mas serviços simples tendem a ficar no comportamento padrão da plataforma — inclusive rollback costuma ser rápido nesse modelo.
+Em ambientes serverless, a estratégia de tráfego geralmente é administrada pela cloud, não pelo time: o provedor troca o roteamento para a versão nova de forma equivalente a um [[wiki/concepts/recreate-deployment]] instantâneo ou a um [[wiki/concepts/blue-green-deploy]] invisível. Nada impede configurar Canary ou A/B manualmente sobre serverless, mas serviços simples tendem a ficar no comportamento padrão da plataforma — inclusive rollback costuma ser rápido nesse modelo.
 
 ## Princípio Central: Fail Fast
 
@@ -123,13 +123,13 @@ Essa fonte também **contrasta** com o fluxo `feature → dev/staging → main` 
 ## Ver também
 
 - [[wiki/concepts/trunk-based-development]] — o fluxo só-`main` com single command deploy
-- [[concepts/pipeline-de-ci]] — estrutura detalhada dos stages
-- [[concepts/github-actions]] — implementação com GitHub Actions
-- [[concepts/argo-rollouts]] — progressive delivery no CD
-- [[concepts/zero-downtime-deploy]] — objetivo final do pipeline
-- [[concepts/feature-flags]] — desacopla deploy de release
-- [[concepts/walking-skeleton]] — padrão que fundamenta o deploy imediato do boilerplate
-- [[concepts/dora-metrics]] — como medir se o pipeline está de fato acelerando o time
+- [[wiki/concepts/pipeline-de-ci]] — estrutura detalhada dos stages
+- [[wiki/concepts/github-actions]] — implementação com GitHub Actions
+- [[wiki/concepts/argo-rollouts]] — progressive delivery no CD
+- [[wiki/concepts/zero-downtime-deploy]] — objetivo final do pipeline
+- [[wiki/concepts/feature-flags]] — desacopla deploy de release
+- [[wiki/concepts/walking-skeleton]] — padrão que fundamenta o deploy imediato do boilerplate
+- [[wiki/concepts/dora-metrics]] — como medir se o pipeline está de fato acelerando o time
 
 ## IA na Esteira: Gerar vs. Executar
 
@@ -143,7 +143,7 @@ Essa fonte também **contrasta** com o fluxo `feature → dev/staging → main` 
 
 - [[wiki/sources/deployment-pipeline-martin-fowler]] — fonte primária do termo "Deployment Pipeline": estágios progressivos por confiança, escopo além de testes (performance/segurança/usabilidade), colaboração e trilha de auditoria
 - [[wiki/sources/continuous-delivery-martin-fowler]] — fonte primária do termo "Continuous Delivery": quatro indicadores, distinção precisa vs. Continuous Deployment, DevOps culture, três benefícios centrais
-- [[sources/cicd-pipeline]]
+- [[wiki/sources/cicd-pipeline]]
 - [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]
 - [[wiki/sources/production-bugs-xunitpatterns]] — gate de CI contra Lost Test: falhar build acima de um limiar de testes ignorados, comparar contagem de testes antes/depois do check-in
 - [[wiki/sources/gitops-argocd]] — GitOps pull-based (ArgoCD/Flux) como modelo de deploy contínuo onde o cluster sincroniza do Git em vez de receber push do CI

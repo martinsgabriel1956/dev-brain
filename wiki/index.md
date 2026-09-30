@@ -26,6 +26,11 @@ date_updated: 2026-09-30
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] | Professor de Java: o que separa pleno de júnior não é a lista de tecnologias e sim a forma de decidir — `calcularDesconto` que antecipa ouro/prata/sazonalidade, nome de variável legível (`d` vs `valorDescontoPedido`), `Produto` que não aceita preço negativo; 'o código é mais lido do que escrito'; IA ok se entender a regra de negócio. Não mostra a modelagem alternativa do desconto |
+| [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] | Vídeo ([[wiki/entities/ronald-hulk]]): usar a [[wiki/entities/openrouter]] em produção — na OpenRouter a escolha é **modelo + provedor** (preço distribuído em [[wiki/concepts/open-weight-model|open weight]]); seis critérios (quantização, throughput, latência, região, retenção, preço por último), [[wiki/concepts/pool-de-provedores-llm|pool de ≥3 provedores]] fixado no payload, [[wiki/concepts/zero-data-retention|ZDR]] e ADR. Nomes dos campos do payload mapeados da doc, não ditos no vídeo |
+| [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] | Vídeo PT-BR: anatomia da **requisição HTTP** ([[wiki/concepts/requisicao-http]]) — método (idempotência: GET/PUT/DELETE sim, POST não), URL como recurso, headers como metadados, body; no servidor rota → [[wiki/concepts/middleware]] → controller → service → banco; [[wiki/concepts/http-status-code]] como resultado da intenção (401 vs 403, 429, 301); CORS como política do navegador e 401/CORS depurados pelo DevTools. Não cobre HTTP/2, PATCH/OPTIONS, idempotency key |
+| [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] | Como estudar **System Design**: roteiro de 5 etapas (building blocks → problemas reais → camadas → trade-offs → comparação) e caso "Instagram simplificado" — LB, CDN+S3, cache Redis (TTL 5 min), rate limit 429, fila/worker de miniatura, réplicas e sharding; pergunta central: qual o gargalo e o custo |
+| [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] | Vídeo didático de **CQRS** a partir do problema de consultas presas por locks num banco único com carga leitura/escrita desbalanceada ([[wiki/concepts/contencao-de-lock-leitura-escrita]]): comandos → command bus → banco relacional; evento → fila RabbitMQ → consumer assíncrono ([[wiki/concepts/event-handler]]) → banco de leitura NoSQL/JSON desnormalizado ([[wiki/concepts/read-model]]); ganho de escala independente, custo de [[wiki/concepts/eventual-consistency]]. Não cobre dual write nem idempotência |
 | [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]]: **[[wiki/concepts/comunicacao-assincrona|comunicação assíncrona]]** vs. [[wiki/concepts/comunicacao-sincrona|síncrona]] (bloqueio, acoplamento forte, baixa resiliência — exemplo do serviço de autenticação); três formas: polling por ID ([[wiki/concepts/async-request-reply]]), [[wiki/concepts/webhook]] e [[wiki/concepts/mensageria|mensageria]]; exemplo de pedidos com eventos consumidos por Estoque e Faturamento; desafios: debug, [[wiki/concepts/garantia-de-entrega]] e [[wiki/concepts/eventual-consistency|consistência eventual]] |
 | [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]] | Michel Leonardo: proxy em Go que carrega páginas sem HTTP, usando ICMP Echo Request/Reply sobre IPv6; HTML fatiado em 1024 B (fuga do MTU), 4 bytes iniciais = total de pedaços, remontagem por array; prova de conceito sem imagens/retransmissão |
 | [[wiki/sources/sql-injection-sqlmap-luiz-viana]] | Vídeo prático de Luiz Viana: mecanismo da aspa simples que quebra a query, depois automação com SQLMap — taxonomia de técnicas (boolean/time/error/UNION-based), leitura de arquivo no servidor (`--file-read`, `LOAD_FILE`/`INTO OUTFILE`), `--level`/`--risk` contra falso negativo, injeção via POST/cookie, bypass de WAF com tampers |
@@ -789,7 +794,7 @@ date_updated: 2026-09-30
 | [[wiki/sources/service-discovery]] | Em ambientes dinâmicos (K8s, ECS, auto-scaling), IPs mudam — service discovery é o mecanismo para serviços se encontrarem. No Kubernetes: DNS-based é o padrão (zero overhead). Fora do K8s ou multi-cloud: Consul. Client-side quando precisa de controle fino de LB; server-side quando quer clientes simples. |
 | [[wiki/sources/service-mesh]] | Service mesh move retry, timeout, circuit breaker, mTLS e tracing para a infraestrutura de rede via sidecar proxy — a aplicação não sabe que existe. Istio para traffic shaping avançado; Linkerd para mTLS + observabilidade com overhead mínimo. Menos de 10 serviços: provavelmente não justifica. |
 | [[wiki/sources/sessions]] | JWT stateless: impossível revogar antes do TTL. Sessions server-side com Redis: revogação imediata ao custo de state. MFA TOTP: mínimo aceitável. WebAuthn/Passkeys: padrão futuro sem senha, phishing-resistant. Workload Identity via SPIFFE/SPIRE: serviço-a-serviço sem segredos compartilhados, certificados X.509 com TTL de horas. |
-| [[wiki/sources/sete-padroes-de-design-de-software]] | Design patterns são soluções para problemas recorrentes de programação, independente de linguagem. Os 23 padrões [[entities/gang-of-four]] se dividem em [[creational-patterns]], [[structural-patterns]] e [[behavioral-patterns]]. Este source cobre 7 dos mais usados na prática cotidiana. |
+| [[wiki/sources/sete-padroes-de-design-de-software]] | Design patterns são soluções para problemas recorrentes de programação, independente de linguagem. Os 23 padrões [[wiki/entities/gang-of-four]] se dividem em [[creational-patterns]], [[structural-patterns]] e [[behavioral-patterns]]. Este source cobre 7 dos mais usados na prática cotidiana. |
 | [[wiki/sources/sistema-operacional-por-baixo-dos-panos]] | Do duplo-clique até a primeira tela, o SO executa centenas de operações invisíveis. O vídeo percorre a pilha completa: processos → threads → deadlock → mutex → escalonador → context switch → interrupções → memória virtual → swap → sistema de arquivos → syscalls → kernel mode. |
 | [[wiki/sources/skip-locked-fencing-token]] | SKIP LOCKED transforma PostgreSQL em fila de trabalho sem broker externo — múltiplos workers consomem jobs em paralelo sem contenção. Fencing Token resolve o problema de lock "fantasma": processo lento ressuscita após lock expirar e acha que ainda tem o lock — token monotônico rejeita escritas stale. |
 | [[wiki/sources/solid]] | SOLID: 5 princípios de design orientado a objetos (Robert C. Martin). S: Single Responsibility — uma classe, um motivo para mudar. O: Open/Closed — aberto para extensão, fechado para modificação. L: Liskov — subclasses substituem a classe pai sem quebrar o comportamento. I: Interface Segregation — interfaces específicas, não gordas. D: Dependency Inversion — dependa de abstrações, não implement... |
@@ -819,6 +824,55 @@ date_updated: 2026-09-30
 | [[wiki/sources/zero-trust]] | Zero Trust: "nunca confie, sempre verifique" — nenhum acesso é implicitamente confiável só por estar na rede interna. 7 pilares CISA: Identity, Device, Network, Workload, Data, Automation, Visibility. Acesso condicional: decisão por cada request baseada em identidade + postura do dispositivo + contexto. mTLS com SPIFFE/SPIRE para service-to-service. |
 
 ## Concepts
+
+### Carreira — Júnior → Pleno (2026-09-30)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/transicao-junior-pleno-forma-de-pensar]] | Virar pleno é mudar o critério de decisão (evolução do sistema + leitor futuro), não somar frameworks |
+| [[wiki/concepts/codigo-lido-mais-que-escrito]] | Máxima: otimizar para quem lê; nomes, métodos curtos, estado válido |
+| [[wiki/concepts/antecipar-variacao-de-regra]] | Prever que VIP→ouro/prata/sazonal vira cascata de if/else; tensão com YAGNI |
+| [[wiki/concepts/classe-como-conceito-de-dominio]] | Classe é conceito do negócio; `Produto` com preço negativo nunca deveria existir |
+
+### LLM — Seleção de Provedor na OpenRouter (2026-09-30)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/open-weight-model]] | Pesos baixáveis; preço distribuído por provedor, ao contrário do closed weight (stub) |
+| [[wiki/concepts/quantizacao-de-llm]] | FP4/FP8/16: o mesmo modelo varia de qualidade conforme o provedor (stub) |
+| [[wiki/concepts/criterios-de-selecao-de-provedor-llm]] | Tabela: quantização, throughput, latência, região, retenção; preço por último (draft) |
+| [[wiki/concepts/pool-de-provedores-llm]] | ≥3 provedores fixados no payload (`only`, `order`, `allow_fallbacks`…) para fallback controlado (draft) |
+| [[wiki/concepts/zero-data-retention]] | Provedor que não armazena dado; `data_collection: deny` / `zdr` e LGPD (stub) |
+
+### HTTP — Anatomia da Requisição (2026-09-30)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/requisicao-http]] | Método + URL + headers + body; resposta com status; fetch/Axios são só interface (stub) |
+| [[wiki/concepts/metodos-http]] | GET/POST/PUT/DELETE e idempotência (stub) |
+| [[wiki/concepts/http-headers]] | Metadados da conversa: Content-Type, Authorization, Cache-Control... (stub) |
+| [[wiki/concepts/http-status-code]] | Status como resultado da intenção; 401 vs 403, 429, 301 (stub) |
+| [[wiki/concepts/middleware]] | Pedágio entre rota e controller: auth, permissão, validação (stub) |
+| [[wiki/concepts/recurso-rest]] | Pensar em recursos, não funções (stub) |
+| [[wiki/concepts/cors]] | Política do navegador sobre origens; correção no servidor (stub) |
+| [[wiki/concepts/debug-de-requisicao-http]] | Checklist de peças no DevTools Network (stub) |
+| [[wiki/entities/eduni]] | Plataforma de planejamento de carreira divulgada na fonte (stub) |
+
+### CQRS — Banco de Leitura e Eventos (2026-09-30)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/read-model]] | Banco de leitura desnormalizado (NoSQL/JSON) no formato que a tela consome, sem joins |
+| [[wiki/concepts/event-handler]] | Consumer assíncrono que transforma eventos e grava no read model; exige idempotência (stub) |
+| [[wiki/concepts/contencao-de-lock-leitura-escrita]] | Consultas presas por locks com carga desbalanceada: o problema que motiva CQRS (stub) |
+
+### System Design — Building Blocks (2026-09-30)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/building-blocks-system-design]] | Catálogo de 7 blocos (LB, CDN, cache, rate limiter, fila, banco, réplicas/sharding): problema, quando usar, custo |
+| [[wiki/concepts/design-em-camadas]] | Começar simples e evoluir um gargalo por vez (stub) |
+| [[wiki/concepts/treino-system-design-por-cenarios]] | Treinar com cenários próprios, ex.: YouTube simplificado (stub) |
 
 ### Comunicação Assíncrona (2026-09-30)
 
@@ -2376,7 +2430,7 @@ date_updated: 2026-09-30
 | [[wiki/concepts/aws-wavelength]] | Infraestrutura AWS embutida fisicamente nas redes 5G das operadoras de telecomunicações. Permite executar aplicações com latência de milissegundo único diretamente na borda da rede móvel, sem que o tráfego precise atravessar a internet pública até uma região AWS. |
 | [[wiki/concepts/back-pressure]] | Back pressure é o mecanismo pelo qual um consumidor sinaliza ao produtor para desacelerar quando não consegue processar dados na velocidade em que são gerados. |
 | [[wiki/concepts/backbone-de-rede-aws]] | Rede privada de fibra óptica da AWS que interconecta todas as [[regiao-aws\|Regiões]], [[zona-de-disponibilidade\|AZs]], [[aws-cloudfront\|POPs CloudFront]] e data centers globalmente. O tráfego entre componentes AWS trafega nessa rede privada — não pela internet pública. |
-| [[wiki/concepts/behavioral-patterns]] | Uma das três categorias dos 23 padrões [[entities/gang-of-four]]. Tratam de **como objetos se comunicam e distribuem responsabilidades** entre si — algoritmos, fluxos de controle e delegação de tarefas. |
+| [[wiki/concepts/behavioral-patterns]] | Uma das três categorias dos 23 padrões [[wiki/entities/gang-of-four]]. Tratam de **como objetos se comunicam e distribuem responsabilidades** entre si — algoritmos, fluxos de controle e delegação de tarefas. |
 | [[wiki/concepts/blameless-post-mortem]] | Análise de incidente focada em "o que falhou no sistema" — não "quem falhou". Blame culture causa escalonamento tardio (pessoas escondem problemas) e aprendizado superficial (solução é punir, não corrigir o sistema). |
 | [[wiki/concepts/blast-radius]] | Extensão do impacto quando um componente falha. Quanto menor o blast radius, mais contida a falha. |
 | [[wiki/concepts/bloqueio-de-agenda]] | Reservar explicitamente horários para tarefas importantes — antes que outros preencham o calendário. |
@@ -2391,7 +2445,7 @@ date_updated: 2026-09-30
 | [[wiki/concepts/cdn-strategy]] | Rede de servidores de borda (PoPs) que serve conteúdo do nó mais próximo do usuário — elimina latência intercontinental. |
 | [[wiki/concepts/chain-of-responsibility-pattern]] | Padrão [[behavioral-patterns\|comportamental]] que passa um pedido por uma **corrente dinâmica de handlers** até que um deles o processe. Cada handler decide processar o pedido ou passá-lo para o próximo na corrente. |
 | [[wiki/concepts/chat-distribuido]] | Problema de roteamento de mensagem quando sender e receiver estão conectados em chat servers diferentes. |
-| [[wiki/concepts/circuit-breaker]] | Padrão de resiliência inspirado no disjuntor elétrico: quando um downstream falha com frequência, interrompe o circuito para proteger o chamador — evita [[concepts/falha-em-cascata]] e libera recursos enquanto o downstream se recupera. |
+| [[wiki/concepts/circuit-breaker]] | Padrão de resiliência inspirado no disjuntor elétrico: quando um downstream falha com frequência, interrompe o circuito para proteger o chamador — evita [[wiki/concepts/falha-em-cascata]] e libera recursos enquanto o downstream se recupera. |
 | [[wiki/concepts/cluster]] | Grupo de máquinas (nodes) que trabalham juntas e se apresentam como um sistema único para clients externos. Resolve três problemas centrais em sistemas distribuídos: |
 | [[wiki/concepts/comentarios-o-que-nao-o-como]] | Comentários devem explicar o **propósito** (o quê) do código — nunca o mecanismo interno (o como). Se você precisa de um comentário para explicar como o código funciona, o código precisa ser refatorado para ser autoexplicativo. |
 | [[wiki/concepts/compaction-intencional]] | Técnica de gerenciamento de context window que consiste em comprimir periodicamente o contexto acumulado num arquivo markdown estruturado, iniciar uma nova sessão com esse arquivo como input, e permitir que o agente retome o trabalho sem o ruído de turnos anteriores. |
@@ -2402,13 +2456,13 @@ date_updated: 2026-09-30
 | [[wiki/concepts/connection-pooling]] | Reutiliza conexões abertas ao banco. Sem pool, cada request abre/fecha uma conexão — overhead de handshake TCP + autenticação. |
 | [[wiki/concepts/container-presenter]] | Separa **lógica** (fetch, estado, mutações) de **apresentação** (JSX puro). O Presenter não tem efeitos — recebe dados e callbacks via props. |
 | [[wiki/concepts/context-api]] | Mecanismo do React para **compartilhar estado entre componentes sem prop drilling**. Ideal para dados de **baixa frequência de mudança**: tema, locale, usuário autenticado. |
-| [[wiki/concepts/control-plane]] | Componente central de um [[concepts/cluster]] responsável por decidir onde cada workload roda. Clients falam com o control plane, não com nodes individuais. |
+| [[wiki/concepts/control-plane]] | Componente central de um [[wiki/concepts/cluster]] responsável por decidir onde cada workload roda. Clients falam com o control plane, não com nodes individuais. |
 | [[wiki/concepts/crdt]] | Estrutura de dados projetada para ser replicada em múltiplos nós e sempre convergir para o mesmo estado, independente da ordem de recebimento das operações. Não precisa de servidor central de coordenação. |
-| [[wiki/concepts/creational-patterns]] | Uma das três categorias dos 23 padrões [[entities/gang-of-four]]. Tratam de **como objetos são criados**, dando flexibilidade sobre quando, como e qual objeto é instanciado — em vez de criar diretamente com `new`. |
+| [[wiki/concepts/creational-patterns]] | Uma das três categorias dos 23 padrões [[wiki/entities/gang-of-four]]. Tratam de **como objetos são criados**, dando flexibilidade sobre quando, como e qual objeto é instanciado — em vez de criar diretamente com `new`. |
 | [[wiki/concepts/custom-hooks]] | Funções que **extraem lógica stateful reutilizável** para fora de componentes. Toda função que começa com `use` e chama outros hooks é um custom hook. |
 | [[wiki/concepts/data-residency]] | Restrição legal ou regulatória que determina em qual país ou região geográfica os dados devem ser armazenados e processados. Dado do Brasil, sob LGPD, pode não sair do território nacional dependendo da base legal e do tipo de dado. |
 | [[wiki/concepts/db-sharding]] | Particionamento horizontal de um banco de dados em múltiplos nós independentes (shards) para ultrapassar os limites de uma única máquina. |
-| [[wiki/concepts/design-discussion]] | Fase de alinhamento que substitui o plano de implementação detalhado no [[concepts/rpi-workflow]]. Em vez de pedir ao agente um plano de 1.000 linhas com arquivos, funções e imports, você conduz uma **conversa sobre o design** — focando no entendimento mútuo, não no código que vai ser gerado. |
+| [[wiki/concepts/design-discussion]] | Fase de alinhamento que substitui o plano de implementação detalhado no [[wiki/concepts/rpi-workflow]]. Em vez de pedir ao agente um plano de 1.000 linhas com arquivos, funções e imports, você conduz uma **conversa sobre o design** — focando no entendimento mútuo, não no código que vai ser gerado. |
 | [[wiki/concepts/distributed-tracing]] | Técnica de observabilidade que registra o caminho completo de um request por múltiplos serviços, mostrando latência por etapa. |
 | [[wiki/concepts/distributed-transactions]] | Garantia de atomicidade entre múltiplos serviços ou bancos de dados independentes. |
 | [[wiki/concepts/dns]] | Sistema que traduz nomes de domínio legíveis (ex: `api.empresa.com`) em endereços IP. É o primeiro componente atravessado por qualquer requisição. O fluxo de resolução percorre cache local → resolver recursivo → root NS → TLD NS → authoritative NS, cacheando cada nível pelo TTL configurado. |
@@ -2422,20 +2476,20 @@ date_updated: 2026-09-30
 | [[wiki/concepts/entendimento-do-dominio]] | Software é construído para resolver algo num domínio específico. Entender esse domínio — como designers trabalham, como mercados financeiros funcionam, como fluxos clínicos ocorrem — melhora diretamente a qualidade das decisões arquiteturais e de produto. |
 | [[wiki/concepts/equity-como-diferencial]] | Equity — RSUs em Big Tech ou stock options em startups — é o maior componente de compensação em Tier 3 e o principal motivo pelo qual sites de benchmark subestimam salários do topo do mercado. Quem não entende equity subestima sistematicamente o gap entre tiers. |
 | [[wiki/concepts/error-boundary]] | Componente que **captura erros JavaScript na árvore de componentes filhos** e exibe uma UI de fallback em vez de quebrar a tela inteira. |
-| [[wiki/concepts/error-budget]] | Quantidade de falha permitida antes de violar o [[concepts/slo]]. Governa a decisão de velocidade vs. estabilidade de forma objetiva e sem negociação subjetiva. |
-| [[wiki/concepts/error-budget-policy]] | Conjunto de regras que mapeia o nível atual do [[concepts/error-budget]] para decisões de release e operação. Elimina negociação subjetiva entre Dev e Ops. |
+| [[wiki/concepts/error-budget]] | Quantidade de falha permitida antes de violar o [[wiki/concepts/slo]]. Governa a decisão de velocidade vs. estabilidade de forma objetiva e sem negociação subjetiva. |
+| [[wiki/concepts/error-budget-policy]] | Conjunto de regras que mapeia o nível atual do [[wiki/concepts/error-budget]] para decisões de release e operação. Elimina negociação subjetiva entre Dev e Ops. |
 | [[wiki/concepts/escrever-para-aprender]] | Escrever sobre o que está aprendendo — não depois de ter aprendido. |
 | [[wiki/concepts/essential-complexity]] | Complexidade essencial é inerente ao problema sendo resolvido. Não pode ser removida por melhor design, melhor abstração ou melhor tecnologia — existe porque o domínio é genuinamente difícil. |
 | [[wiki/concepts/estimativas-back-of-envelope]] | Cálculos rápidos de escala para validar decisões arquiteturais e identificar gargalos antes de desenhar o sistema. |
-| [[wiki/concepts/expand-contract]] | Padrão para DB migrations compatíveis com duas versões do código simultaneamente — obrigatório em [[concepts/blue-green-deploy]], [[concepts/canary-release]] e [[concepts/rolling-update]]. |
+| [[wiki/concepts/expand-contract]] | Padrão para DB migrations compatíveis com duas versões do código simultaneamente — obrigatório em [[wiki/concepts/blue-green-deploy]], [[wiki/concepts/canary-release]] e [[wiki/concepts/rolling-update]]. |
 | [[wiki/concepts/fail-fast]] | Rejeitar requisições imediatamente quando o sistema está sob pressão — ao invés de enfileirar e falhar após timeout longo. |
 | [[wiki/concepts/falha-em-cascata]] | Fenômeno onde a falha ou lentidão de um serviço se propaga para serviços dependentes, derrubando componentes que estavam saudáveis. |
 | [[wiki/concepts/fanout-pattern]] | Estratégia de distribuição de um evento para N destinatários. Dois modelos com trade-offs opostos. |
 | [[wiki/concepts/fault-injection]] | Injeção deliberada de falhas de rede (delay, abort) para testar resiliência de serviços sem alterar código da aplicação. No Istio, configurável via VirtualService. |
 | [[wiki/concepts/fazer-por-voce]] | O meta-hábito: crescimento profissional motivado por você mesmo — não pelo chefe, empresa ou colegas. |
 | [[wiki/concepts/feature-sliced-architecture]] | Organização de código React por **domínio/feature** em vez de por tipo de arquivo. Escala bem em aplicações médias e grandes. |
-| [[wiki/concepts/fencing-token]] | Token monotonicamente crescente emitido junto com um [[concepts/distributed-lock]]. Resolve o problema de lock "fantasma": processo lento ressuscita após o TTL expirar e acredita ainda ter o lock. |
-| [[wiki/concepts/ffi]] | Mecanismo que permite chamar funções de uma linguagem a partir de outra dentro do **mesmo processo**. É a camada de código que faz a [[concepts/abi]] funcionar na prática. |
+| [[wiki/concepts/fencing-token]] | Token monotonicamente crescente emitido junto com um [[wiki/concepts/distributed-lock]]. Resolve o problema de lock "fantasma": processo lento ressuscita após o TTL expirar e acredita ainda ter o lock. |
+| [[wiki/concepts/ffi]] | Mecanismo que permite chamar funções de uma linguagem a partir de outra dentro do **mesmo processo**. É a camada de código que faz a [[wiki/concepts/abi]] funcionar na prática. |
 | [[wiki/concepts/finops]] | Prática de tratar custo de cloud como variável de engenharia — não só responsabilidade do financeiro. |
 | [[wiki/concepts/flyweight-pattern]] | Padrão [[structural-patterns\|estrutural]] que permite acomodar mais objetos na quantidade disponível de RAM ao compartilhar partes comuns do estado entre múltiplos objetos, em vez de manter todos os dados em cada objeto. |
 | [[wiki/concepts/game-day]] | Exercício planejado onde a equipe simula falhas em staging para validar runbooks, SLOs e capacidade de resposta — antes do incidente real. |
@@ -2501,14 +2555,14 @@ date_updated: 2026-09-30
 | [[wiki/concepts/mobile-testes]] | ``` |
 | [[wiki/concepts/modelo-trimodal-compensacao]] | O mercado de tech não tem uma distribuição salarial uniforme — tem três distribuições distintas com seus próprios centros de gravidade. A mesma posição pode pagar 2–4x mais dependendo do tier da empresa. Desenvolvido por Gergely Orosz em 2021 com dados da Holanda, validado globalmente. |
 | [[wiki/concepts/monorepo-mobile]] | Estrutura de repositório único para múltiplos apps mobile que compartilham packages de infraestrutura. Recomendada quando os apps são mantidos pela mesma equipe. |
-| [[wiki/concepts/mtls]] | TLS onde tanto o cliente quanto o servidor apresentam certificados para autenticação mútua. No contexto de [[concepts/service-mesh]], ativado automaticamente entre todos os serviços sem alterar código da aplicação. |
+| [[wiki/concepts/mtls]] | TLS onde tanto o cliente quanto o servidor apresentam certificados para autenticação mútua. No contexto de [[wiki/concepts/service-mesh]], ativado automaticamente entre todos os serviços sem alterar código da aplicação. |
 | [[wiki/concepts/multi-tenancy]] | Modelo onde múltiplos clientes (tenants) compartilham a mesma infraestrutura. Padrão de SaaS. A escolha do modelo de isolamento é irreversível no curto prazo — errar cedo = migração de meses. |
 | [[wiki/concepts/naming]] | Nomear bem é uma das habilidades mais subestimadas em desenvolvimento. Nomes ruins compõem **dívida cognitiva permanente** — cada leitura futura do código custa mais do que custaria ter passado 5 minutos pensando no nome certo. |
 | [[wiki/concepts/native-module]] | Native Module é a ponte entre JavaScript e código nativo (Kotlin/Swift) no React Native. Usado quando não existe lib npm madura para uma funcionalidade específica da plataforma. |
 | [[wiki/concepts/neuroplasticidade]] | Capacidade do sistema nervoso de mudar, adaptar-se e moldar-se a nível estrutural e funcional ao longo do desenvolvimento e quando sujeito a novas experiências. É a base da formação de memórias e da aprendizagem. |
 | [[wiki/concepts/nosql]] | Categoria de bancos de dados que não seguem o modelo relacional. Cada tipo resolve um problema diferente. |
 | [[wiki/concepts/notification-system]] | Case clássico de system design. Desafio central: **fan-out** — um evento gera N notificações para N usuários por M canais (Push/FCM/APNs, Email, In-App/SSE, SMS/Twilio). |
-| [[wiki/concepts/object-file]] | Produto da fase de montagem no [[concepts/pipeline-de-compilacao]]. Contém código de máquina para as funções do arquivo-fonte, mas **ainda não é executável** — os endereços finais das funções ainda não foram resolvidos. |
+| [[wiki/concepts/object-file]] | Produto da fase de montagem no [[wiki/concepts/pipeline-de-compilacao]]. Contém código de máquina para as funções do arquivo-fonte, mas **ainda não é executável** — os endereços finais das funções ainda não foram resolvidos. |
 | [[wiki/concepts/operational-transformation]] | Algoritmo para edição colaborativa que transforma operações em relação ao estado atual antes de aplicá-las. Requer servidor central para sequenciar todas as operações — é o servidor que resolve conflitos. |
 | [[wiki/concepts/optimistic-updates]] | Técnica de UX que **atualiza a UI imediatamente** antes da resposta do servidor. Se a requisição falhar, reverte para o estado anterior. |
 | [[wiki/concepts/page-splitting]] | Operação interna do B+ Tree quando uma página (page) está cheia e precisa ser dividida para acomodar um novo valor. |
@@ -2525,17 +2579,17 @@ date_updated: 2026-09-30
 | [[wiki/concepts/principio-menor-privilegio]] | Conceder a cada identidade (usuário, serviço, processo) **apenas as permissões estritamente necessárias** para executar sua função — nada mais. |
 | [[wiki/concepts/proxy-pattern]] | Padrão estrutural que fornece um substituto ou espaço reservado para outro objeto. O proxy controla o acesso ao objeto real e pode executar ações antes ou depois que a requisição chega a ele. |
 | [[wiki/concepts/query-key]] | O `queryKey` é o **endereço do cache** no TanStack Query. Arrays são comparados por valor. Estruturar hierarquicamente permite invalidação granular. |
-| [[wiki/concepts/raft-paxos]] | Algoritmos de consenso distribuído que toleram partições de rede via quorum — diferente de [[concepts/two-phase-commit]] e [[concepts/three-phase-commit]]. |
+| [[wiki/concepts/raft-paxos]] | Algoritmos de consenso distribuído que toleram partições de rede via quorum — diferente de [[wiki/concepts/two-phase-commit]] e [[wiki/concepts/three-phase-commit]]. |
 | [[wiki/concepts/read-replicas]] | Cópias do banco primário que recebem apenas leituras. Escala reads horizontalmente sem tocar no primário. |
-| [[wiki/concepts/read-your-writes]] | Garantia de que após escrever, o mesmo cliente sempre lê o valor escrito — mesmo com [[concepts/read-replicas]]. |
+| [[wiki/concepts/read-your-writes]] | Garantia de que após escrever, o mesmo cliente sempre lê o valor escrito — mesmo com [[wiki/concepts/read-replicas]]. |
 | [[wiki/concepts/realtime-tracking]] | Propagação de posição do motorista para o passageiro em tempo real após o match. |
 | [[wiki/concepts/red-method]] | **R**ate · **E**rrors · **D**uration — três métricas que cobrem os alertas essenciais de qualquer serviço HTTP. Complemento do USE Method (Utilization, Saturation, Errors) que foca em recursos de infra. |
 | [[wiki/concepts/redis-cluster]] | Modo distribuído do Redis que divide o keyspace em **16.384 hash slots** distribuídos entre nodes. Cada node é responsável por um range contínuo de slots. |
-| [[wiki/concepts/redis-geo]] | Estrutura nativa do Redis para armazenar coordenadas geográficas e fazer buscas por raio. Internamente usa [[concepts/geohash]] em sorted set. |
+| [[wiki/concepts/redis-geo]] | Estrutura nativa do Redis para armazenar coordenadas geográficas e fazer buscas por raio. Internamente usa [[wiki/concepts/geohash]] em sorted set. |
 | [[wiki/concepts/regiao-aws]] | Área geográfica independente que contém múltiplas [[zona-de-disponibilidade\|Zonas de Disponibilidade]] fisicamente separadas. Cada região é completamente isolada das demais — falhas não se propagam entre regiões. |
-| [[wiki/concepts/retry-backoff]] | Padrão de resiliência para falhas transitórias de rede. Retry ingênuo (imediato ou intervalo fixo) amplifica o problema via [[concepts/thundering-herd]]. Backoff exponencial + jitter distribui a carga no tempo. |
+| [[wiki/concepts/retry-backoff]] | Padrão de resiliência para falhas transitórias de rede. Retry ingênuo (imediato ou intervalo fixo) amplifica o problema via [[wiki/concepts/thundering-herd]]. Backoff exponencial + jitter distribui a carga no tempo. |
 | [[wiki/concepts/ride-matching-pipeline]] | Pipeline de 5 etapas para encontrar o melhor motorista para um passageiro em <1s. |
-| [[wiki/concepts/rpi-workflow]] | Framework de três fases para trabalhar com coding agents em codebases reais. Objetivo central: manter o agente na [[concepts/dumb-zone\|smart zone]] da context window durante todo o trabalho e preservar o [[concepts/mental-alignment]] do dev sobre o que está sendo construído. |
+| [[wiki/concepts/rpi-workflow]] | Framework de três fases para trabalhar com coding agents em codebases reais. Objetivo central: manter o agente na [[wiki/concepts/dumb-zone\|smart zone]] da context window durante todo o trabalho e preservar o [[wiki/concepts/mental-alignment]] do dev sobre o que está sendo construído. |
 | [[wiki/concepts/saga-pattern]] | Padrão para transações distribuídas sem locks distribuídos — usa consistência eventual com transações de compensação. |
 | [[wiki/concepts/scope-creep]] | Expansão gradual e não planejada do escopo de um projeto além dos objetivos originais. Em side projects, ocorre antes de ter um único usuário — funcionalidades são adicionadas por entusiasmo, não por demanda. |
 | [[wiki/concepts/sem-balas-de-prata]] | Não existe arquitetura, framework ou linguagem que resolve todos os problemas. |
@@ -2543,18 +2597,18 @@ date_updated: 2026-09-30
 | [[wiki/concepts/server-state]] | Dados que **vivem no servidor** e são apenas uma cópia local (snapshot) no cliente. Diferente do client state, o server state pode ficar desatualizado e precisa de revalidação. |
 | [[wiki/concepts/service-discovery]] | Mecanismo pelo qual serviços se encontram em ambientes dinâmicos onde IPs mudam constantemente (Kubernetes, ECS, auto-scaling). Dois modelos: client-side e server-side. |
 | [[wiki/concepts/service-mesh]] | Camada de infraestrutura que move cross-cutting concerns de rede (retry, timeout, circuit breaker, mTLS, tracing) para fora do código da aplicação. A aplicação não sabe que existe — ela fala com localhost, o proxy faz o trabalho. |
-| [[wiki/concepts/shared-sdk]] | SDK compartilhado é o conjunto de módulos de infraestrutura que múltiplos apps mobile da mesma empresa consomem sem reimplementar. É o output central do [[concepts/monorepo-mobile]]. |
+| [[wiki/concepts/shared-sdk]] | SDK compartilhado é o conjunto de módulos de infraestrutura que múltiplos apps mobile da mesma empresa consomem sem reimplementar. É o output central do [[wiki/concepts/monorepo-mobile]]. |
 | [[wiki/concepts/sidecar-pattern]] | Container auxiliar injetado em cada pod que intercepta todo o tráfego de rede da aplicação principal. A aplicação não sabe que existe — fala com localhost, o sidecar faz retry, mTLS, coleta métricas. |
 | [[wiki/concepts/singleton-pattern]] | Padrão [[creational-patterns\|criacional]] que garante que uma classe tenha **apenas uma instância** e fornece um ponto de acesso global a ela. |
 | [[wiki/concepts/snowflake-id]] | ID único distribuído gerado sem coordenação central. Criado pelo Twitter. |
 | [[wiki/concepts/spaced-repetition]] | Método de memorização que espaça a exposição ao mesmo assunto ao longo dos dias. Mais eficaz que estudo concentrado para retenção de longo prazo. |
 | [[wiki/concepts/split-brain]] | Cenário onde uma partição de rede divide o cluster em dois grupos que tomam decisões conflitantes de forma independente — resultando em inconsistência. |
-| [[wiki/concepts/sre]] | Disciplina que trata confiabilidade de sistemas como problema de engenharia. Framework central: definir o que significa "suficientemente confiável" ([[concepts/slo]]), medir se você está lá ([[concepts/sli]]), e usar a folga disponível ([[concepts/error-budget]]) para tomar decisões de velocidade vs. estabilidade. |
+| [[wiki/concepts/sre]] | Disciplina que trata confiabilidade de sistemas como problema de engenharia. Framework central: definir o que significa "suficientemente confiável" ([[wiki/concepts/slo]]), medir se você está lá ([[wiki/concepts/sli]]), e usar a folga disponível ([[wiki/concepts/error-budget]]) para tomar decisões de velocidade vs. estabilidade. |
 | [[wiki/concepts/state-pattern]] | Padrão [[behavioral-patterns\|comportamental]] que permite que um objeto altere seu comportamento quando seu **estado interno muda**. O objeto parecerá ter mudado de classe. |
 | [[wiki/concepts/static-linking]] | Estratégia de linking onde o código de máquina das funções de bibliotecas externas é **copiado diretamente para dentro do executável final**. O resultado é um binário autocontido. |
 | [[wiki/concepts/strategy-pattern]] | Padrão [[behavioral-patterns\|comportamental]] que define uma **família de algoritmos**, encapsula cada um em sua própria classe e os torna intercambiáveis. Elimina `if/else` crescente para variações do mesmo comportamento. |
 | [[wiki/concepts/strings-de-log-integras]] | Strings visíveis ao usuário e mensagens de log nunca devem ser quebradas no meio. Uma mensagem dividida em duas linhas impede `grep` pela mensagem completa — o texto não existe inteiro em lugar nenhum no código. |
-| [[wiki/concepts/structural-patterns]] | Uma das três categorias dos 23 padrões [[entities/gang-of-four]]. Tratam de **como objetos se relacionam e se compõem** para formar estruturas maiores — como Legos. |
+| [[wiki/concepts/structural-patterns]] | Uma das três categorias dos 23 padrões [[wiki/entities/gang-of-four]]. Tratam de **como objetos se relacionam e se compõem** para formar estruturas maiores — como Legos. |
 | [[wiki/concepts/surge-pricing]] | Preço dinâmico baseado em ratio demand/supply por região geográfica. Desacoplado do caminho crítico do matching. |
 | [[wiki/concepts/swr]] | Biblioteca de server state da Vercel, alternativa mais leve ao [[tanstack-query]]. Nome vem da estratégia HTTP `stale-while-revalidate`: retorna dado do cache (stale) enquanto revalida em background. |
 | [[wiki/concepts/tanstack-query]] | Biblioteca de **gerenciamento de server state** para React. Resolve busca, cache, revalidação e sincronização de dados do servidor sem boilerplate manual. |
@@ -2562,7 +2616,7 @@ date_updated: 2026-09-30
 | [[wiki/concepts/tempo-variavel-capacidade-fixa]] | Modelo mental que inverte o bloqueio mais comum no aprendizado de programação. |
 | [[wiki/concepts/temporal-coupling]] | Temporal coupling ocorre quando duas ou mais partes do sistema precisam ser executadas em uma ordem específica, mas nada no código impõe ou comunica essa ordem. |
 | [[wiki/concepts/tenant-context]] | Mecanismo para identificar o tenant na borda da requisição e propagar esse contexto por toda a stack sem passar por parâmetro em cada função. |
-| [[wiki/concepts/three-phase-commit]] | Extensão do [[concepts/two-phase-commit]] que adiciona fase PreCommit para eliminar blocking quando coordinator falha. **Uso real: acadêmico.** |
+| [[wiki/concepts/three-phase-commit]] | Extensão do [[wiki/concepts/two-phase-commit]] que adiciona fase PreCommit para eliminar blocking quando coordinator falha. **Uso real: acadêmico.** |
 | [[wiki/concepts/thundering-herd]] | Fenômeno onde múltiplos clientes disparam requests simultâneos para o mesmo recurso, amplificando a carga no exato momento em que o sistema está mais vulnerável — geralmente durante recuperação de uma falha. |
 | [[wiki/concepts/tier-de-empresas-tech]] | Empresas tech se agrupam em três tiers de compensação. Identificar o tier de uma empresa antes de uma negociação ou mudança de emprego é essencial para avaliar a oferta corretamente. |
 | [[wiki/concepts/toolchain]] | Um **pipeline de ferramentas** executadas em sequência, onde cada etapa consome o output da anterior. O que chamamos casualmente de "compilador" geralmente é uma toolchain inteira. |

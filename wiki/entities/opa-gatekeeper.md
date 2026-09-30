@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/kubernetes-security]]: [[entities/opa-gatekeeper]]
-- Em [[wiki/sources/policy-as-code]]: [[entities/opa-gatekeeper]]
+- Em [[wiki/sources/kubernetes-security]]: [[wiki/entities/opa-gatekeeper]]
+- Em [[wiki/sources/policy-as-code]]: [[wiki/entities/opa-gatekeeper]]
 
 ## Pendências
 

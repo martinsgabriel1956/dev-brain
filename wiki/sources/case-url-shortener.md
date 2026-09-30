@@ -23,12 +23,12 @@ Parece trivial mas força decisões reais: geração de IDs distribuídos (Snowf
 
 ## Key Claims
 
-- **Snowflake ID + Base62 é a melhor opção** — distribuído, sem colisão garantida, sem coordenação central, ordenado por tempo. Hash truncado tem colisão. ID sequencial é enumerável. → [[concepts/snowflake-id]]
-- **302 por padrão, 301 como opção** — 302 permite analytics preciso e destino mutável. 301 é opção explícita para quem não precisa de tracking. → [[concepts/http-redirect-301-302]]
-- **95% dos redirects resolvem no cache** — power law: top 1% das URLs = 80% do tráfego. Redis 50GB resolve o volume relevante de 91TB de storage. → [[concepts/cache-hot-path]]
-- **Hot cache local na API** — top 1.000 URLs = ~60% do tráfego. LRU in-memory por instância evita round-trip ao Redis para URLs virais. → [[concepts/cache-hot-path]]
-- **Analytics async via Kafka** — analytics no caminho crítico do redirect adiciona latência. Kafka desacopla, ClickHouse agrega. Redis INCR com flush a cada 60s para contadores em tempo real. → [[concepts/analytics-pipeline]]
-- **Base62 de 7 chars = 3,5 trilhões de combinações** — suficiente para 100M/dia por ~95 anos. → [[concepts/snowflake-id]]
+- **Snowflake ID + Base62 é a melhor opção** — distribuído, sem colisão garantida, sem coordenação central, ordenado por tempo. Hash truncado tem colisão. ID sequencial é enumerável. → [[wiki/concepts/snowflake-id]]
+- **302 por padrão, 301 como opção** — 302 permite analytics preciso e destino mutável. 301 é opção explícita para quem não precisa de tracking. → [[wiki/concepts/http-redirect-301-302]]
+- **95% dos redirects resolvem no cache** — power law: top 1% das URLs = 80% do tráfego. Redis 50GB resolve o volume relevante de 91TB de storage. → [[wiki/concepts/cache-hot-path]]
+- **Hot cache local na API** — top 1.000 URLs = ~60% do tráfego. LRU in-memory por instância evita round-trip ao Redis para URLs virais. → [[wiki/concepts/cache-hot-path]]
+- **Analytics async via Kafka** — analytics no caminho crítico do redirect adiciona latência. Kafka desacopla, ClickHouse agrega. Redis INCR com flush a cada 60s para contadores em tempo real. → [[wiki/concepts/analytics-pipeline]]
+- **Base62 de 7 chars = 3,5 trilhões de combinações** — suficiente para 100M/dia por ~95 anos. → [[wiki/concepts/snowflake-id]]
 - **PostgreSQL para storage principal** — 1.160 writes/s é comportável. ACID garante integridade. Sharding por short_code para escala a 1T URLs.
 
 ## Scale Numbers
@@ -51,7 +51,7 @@ Base62 7 chars                  = 62^7 = 3,5T combinações
 
 ## Concepts
 
-[[concepts/snowflake-id]] · [[concepts/http-redirect-301-302]] · [[concepts/cache-hot-path]] · [[concepts/analytics-pipeline]] · [[concepts/estimativas-back-of-envelope]] · [[concepts/distributed-lock]]
+[[wiki/concepts/snowflake-id]] · [[wiki/concepts/http-redirect-301-302]] · [[wiki/concepts/cache-hot-path]] · [[wiki/concepts/analytics-pipeline]] · [[wiki/concepts/estimativas-back-of-envelope]] · [[wiki/concepts/distributed-lock]]
 
 ## Open Questions
 

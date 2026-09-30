@@ -25,12 +25,12 @@ Sem vocabulário técnico compartilhado:
 
 | Termo | O que nomeia |
 |---|---|
-| [[concepts/abstracao]] | Esconder complexidade sem esconder clareza |
-| [[concepts/acoplamento]] | Grau de dependência entre módulos |
+| [[wiki/concepts/abstracao]] | Esconder complexidade sem esconder clareza |
+| [[wiki/concepts/acoplamento]] | Grau de dependência entre módulos |
 | Estado | Dados que mudam ao longo do tempo no sistema |
 | Efeito colateral | Ação que modifica estado fora do escopo local |
 | Idempotência | Operação que pode ser repetida com mesmo resultado |
-| [[concepts/decomposicao-de-problemas]] | Dividir problema grande em partes resolvíveis |
+| [[wiki/concepts/decomposicao-de-problemas]] | Dividir problema grande em partes resolvíveis |
 
 ## Como adquirir
 
@@ -40,9 +40,9 @@ Sem vocabulário técnico compartilhado:
 
 ## Relações
 
-- [[concepts/abstracao]] — um dos termos centrais do vocabulário
-- [[concepts/decomposicao-de-problemas]] — outro pilar do pensamento antes de codar
+- [[wiki/concepts/abstracao]] — um dos termos centrais do vocabulário
+- [[wiki/concepts/decomposicao-de-problemas]] — outro pilar do pensamento antes de codar
 
 ## Key Sources
 
-- [[sources/roadmap-dev-senior-2026]]
+- [[wiki/sources/roadmap-dev-senior-2026]]

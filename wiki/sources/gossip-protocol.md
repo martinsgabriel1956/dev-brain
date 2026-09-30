@@ -35,8 +35,8 @@ Gossip Protocol propaga informação em clusters distribuídos de forma epidêmi
 
 - [[gossip-protocol]]
 - [[swim-protocol]]
-- [[concepts/anti-entropy]]
-- [[concepts/merkle-tree]]
+- [[wiki/concepts/anti-entropy]]
+- [[wiki/concepts/merkle-tree]]
 - [[membership-protocol]]
-- [[concepts/eventual-consistency]]
+- [[wiki/concepts/eventual-consistency]]
 - [[cluster-membership]]

@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/fine-tuning]]: [[concepts/dpo]]
-- Em [[wiki/sources/lgpd-gdpr]]: [[concepts/dpo]]
+- Em [[wiki/sources/fine-tuning]]: [[wiki/concepts/dpo]]
+- Em [[wiki/sources/lgpd-gdpr]]: [[wiki/concepts/dpo]]
 
 ## Pendências
 

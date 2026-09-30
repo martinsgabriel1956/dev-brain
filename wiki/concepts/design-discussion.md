@@ -12,7 +12,7 @@ status: draft
 
 # Design Discussion
 
-Fase de alinhamento que substitui o plano de implementação detalhado no [[concepts/rpi-workflow]]. Em vez de pedir ao agente um plano de 1.000 linhas com arquivos, funções e imports, você conduz uma **conversa sobre o design** — focando no entendimento mútuo, não no código que vai ser gerado.
+Fase de alinhamento que substitui o plano de implementação detalhado no [[wiki/concepts/rpi-workflow]]. Em vez de pedir ao agente um plano de 1.000 linhas com arquivos, funções e imports, você conduz uma **conversa sobre o design** — focando no entendimento mútuo, não no código que vai ser gerado.
 
 ## Diferença do Plano Tradicional
 
@@ -39,8 +39,8 @@ A discussão de design não gera código. Ela calibra a direção **antes** de q
 
 ## Quando Não É Necessário
 
-Para tasks simples (mudar a cor de um botão, ajustar um texto), a design discussion é overkill. O RPI completo — com research, design discussion e implement separados — é para features médias a complexas. Ver [[concepts/rpi-workflow]] para o guia de calibragem.
+Para tasks simples (mudar a cor de um botão, ajustar um texto), a design discussion é overkill. O RPI completo — com research, design discussion e implement separados — é para features médias a complexas. Ver [[wiki/concepts/rpi-workflow]] para o guia de calibragem.
 
 ## Key Sources
 
-- [[sources/erros-workflow-research-plan-implement]]
+- [[wiki/sources/erros-workflow-research-plan-implement]]

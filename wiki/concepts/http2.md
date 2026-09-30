@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/grpc]]: [[concepts/http2]]
-- Em [[wiki/sources/http-tcp-quic]]: [[concepts/http2]]
+- Em [[wiki/sources/grpc]]: [[wiki/concepts/http2]]
+- Em [[wiki/sources/http-tcp-quic]]: [[wiki/concepts/http2]]
 
 ## Pendências
 

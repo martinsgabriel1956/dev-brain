@@ -27,8 +27,8 @@ Conjunto de todos os pontos de entrada que um atacante pode explorar para compro
 
 A pergunta que guia a redução: **"Por que isso precisa estar acessível?"**
 
-- [[concepts/gatekeeper-pattern]] — centraliza todo acesso externo, eliminando portas espalhadas
-- [[concepts/valet-key-pattern]] — credenciais de escopo mínimo limitam o impacto de vazamentos
+- [[wiki/concepts/gatekeeper-pattern]] — centraliza todo acesso externo, eliminando portas espalhadas
+- [[wiki/concepts/valet-key-pattern]] — credenciais de escopo mínimo limitam o impacto de vazamentos
 - Desabilitar endpoints não usados
 - APIs internas em rede privada, sem exposição pública
 - Documentação de API (Swagger/OpenAPI) com autenticação em produção
@@ -36,7 +36,7 @@ A pergunta que guia a redução: **"Por que isso precisa estar acessível?"**
 
 ## Relação com Defense in Depth
 
-[[concepts/defense-in-depth]] e minimização de superfície são complementares: a superfície define quanto você tem para defender; a defesa em profundidade define quantas camadas cobrem cada ponto.
+[[wiki/concepts/defense-in-depth]] e minimização de superfície são complementares: a superfície define quanto você tem para defender; a defesa em profundidade define quantas camadas cobrem cada ponto.
 
 ## Exemplos Concretos de Superfície
 
@@ -67,8 +67,8 @@ Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], 
 
 ## Key Sources
 
-- [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
-- [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — exemplos: inputs do usuário, S3 público, IDs sequenciais, outputs e timing como vetores
+- [[wiki/sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
+- [[wiki/sources/cinco-praticas-seguranca-pragmatic-programmer]] — exemplos: inputs do usuário, S3 público, IDs sequenciais, outputs e timing como vetores
 - [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]] — rotas de webhook previsíveis como superfície de ataque
 - [[wiki/sources/ssh-chaves-como-funcionam]] — hardening de sshd_config como redução de superfície na camada de infraestrutura
 - [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — visibilidade/audiência como multiplicador do volume de ataques recebidos, independente de mudança técnica na superfície

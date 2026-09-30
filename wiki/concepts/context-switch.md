@@ -38,7 +38,7 @@ Troca entre **threads do mesmo processo** é mais barata — mesma memória virt
 
 ## Por que é inevitável
 
-Sem context switch, um processo poderia rodar para sempre, monopolizando a CPU. O [[concepts/escalonador]] usa [[concepts/interrupcao-de-hardware]] para forçar a troca periódica.
+Sem context switch, um processo poderia rodar para sempre, monopolizando a CPU. O [[wiki/concepts/escalonador]] usa [[wiki/concepts/interrupcao-de-hardware]] para forçar a troca periódica.
 
 ## Coroutines como alternativa
 
@@ -46,12 +46,12 @@ Coroutines (async/await, goroutines) fazem troca cooperativa **no espaço do usu
 
 ## Ver também
 
-- [[concepts/escalonador]] — decide quando o context switch acontece
-- [[concepts/interrupcao-de-hardware]] — trigger que inicia a troca
-- [[concepts/processo]] — entidade cujo estado é salvo/restaurado
-- [[concepts/memoria-virtual]] — TLB flush é o custo extra na troca entre processos
+- [[wiki/concepts/escalonador]] — decide quando o context switch acontece
+- [[wiki/concepts/interrupcao-de-hardware]] — trigger que inicia a troca
+- [[wiki/concepts/processo]] — entidade cujo estado é salvo/restaurado
+- [[wiki/concepts/memoria-virtual]] — TLB flush é o custo extra na troca entre processos
 
 ## Key Sources
 
-- [[sources/sistema-operacional-por-baixo-dos-panos]]
-- [[sources/como-sistemas-operacionais-funcionam]]
+- [[wiki/sources/sistema-operacional-por-baixo-dos-panos]]
+- [[wiki/sources/como-sistemas-operacionais-funcionam]]

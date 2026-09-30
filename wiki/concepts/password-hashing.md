@@ -14,7 +14,7 @@ status: stable
 
 Técnica de transformar uma senha em um valor irreversível antes de armazenar no banco de dados, de forma que mesmo com acesso ao banco o atacante não possa recuperar a senha original diretamente.
 
-Não confundir com [[concepts/hashing]] genérico: funções de hash de propósito geral (MD5, SHA-256) são **rápidas demais** para senhas. Password hashing usa algoritmos especializados e intencionalmente lentos.
+Não confundir com [[wiki/concepts/hashing]] genérico: funções de hash de propósito geral (MD5, SHA-256) são **rápidas demais** para senhas. Password hashing usa algoritmos especializados e intencionalmente lentos.
 
 ---
 
@@ -28,18 +28,18 @@ Senhas precisam ser verificadas (login), mas nunca lidas. A solução é armazen
 
 ## Origem Histórica: Unix (1976)
 
-O Unix foi um dos primeiros sistemas a abandonar o armazenamento de senha em texto puro, adotando hash + salt no arquivo de senhas. O salt resolveu o problema de a função de hash ser determinística (mesma senha → mesmo hash sempre): ele não precisa ser secreto, só único por usuário, o que já inviabiliza ataques de [[concepts/rainbow-table]] pré-computados para múltiplos usuários de uma vez.
+O Unix foi um dos primeiros sistemas a abandonar o armazenamento de senha em texto puro, adotando hash + salt no arquivo de senhas. O salt resolveu o problema de a função de hash ser determinística (mesma senha → mesmo hash sempre): ele não precisa ser secreto, só único por usuário, o que já inviabiliza ataques de [[wiki/concepts/rainbow-table]] pré-computados para múltiplos usuários de uma vez.
 
 ## Evolução das Técnicas
 
 | Técnica | Problema |
 |---|---|
 | Plaintext | Qualquer vazamento expõe tudo |
-| MD5/SHA sem salt | [[concepts/rainbow-table]] invalida tudo |
-| MD5/SHA + [[concepts/salt]] | Velocidade ainda permite força bruta |
-| [[concepts/bcrypt]] | [[concepts/cpu-hard]], mas GPU paralela ainda viável |
-| [[concepts/argon2]] | [[concepts/cpu-hard]] + [[concepts/memory-hard]] — derrota GPU |
-| Argon2 + [[concepts/pepper]] | Defesa em profundidade — ~99.9% seguro |
+| MD5/SHA sem salt | [[wiki/concepts/rainbow-table]] invalida tudo |
+| MD5/SHA + [[wiki/concepts/salt]] | Velocidade ainda permite força bruta |
+| [[wiki/concepts/bcrypt]] | [[wiki/concepts/cpu-hard]], mas GPU paralela ainda viável |
+| [[wiki/concepts/argon2]] | [[wiki/concepts/cpu-hard]] + [[wiki/concepts/memory-hard]] — derrota GPU |
+| Argon2 + [[wiki/concepts/pepper]] | Defesa em profundidade — ~99.9% seguro |
 
 ---
 
@@ -74,14 +74,14 @@ $hash = password_hash($password . $pepper, PASSWORD_ARGON2ID, [
 
 ## Relação com Outros Conceitos
 
-- [[concepts/hashing]] — propriedades gerais de funções de hash
-- [[concepts/salt]] — unicidade por usuário
-- [[concepts/pepper]] — segredo do servidor
-- [[concepts/bcrypt]] — algoritmo CPU-hard (legado)
-- [[concepts/argon2]] — estado da arte
-- [[concepts/rainbow-table]] — ataque que motivou o salt
-- [[concepts/ataque-pre-computacao]] — classe de ataques que password hashing mitiga
-- [[concepts/timing-attack]] — comparação de hashes deve usar tempo constante
+- [[wiki/concepts/hashing]] — propriedades gerais de funções de hash
+- [[wiki/concepts/salt]] — unicidade por usuário
+- [[wiki/concepts/pepper]] — segredo do servidor
+- [[wiki/concepts/bcrypt]] — algoritmo CPU-hard (legado)
+- [[wiki/concepts/argon2]] — estado da arte
+- [[wiki/concepts/rainbow-table]] — ataque que motivou o salt
+- [[wiki/concepts/ataque-pre-computacao]] — classe de ataques que password hashing mitiga
+- [[wiki/concepts/timing-attack]] — comparação de hashes deve usar tempo constante
 
 ## Caso Real Citado: Vazamento no Ministério da Saúde
 
@@ -95,7 +95,7 @@ $hash = password_hash($password . $pepper, PASSWORD_ARGON2ID, [
 
 ## Key Sources
 
-- [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
+- [[wiki/sources/seguranca-armazenamento-senhas-banco-de-dados]]
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]]
 - [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]
 - [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]

@@ -39,11 +39,11 @@ Background jobs processam tasks fora do request/response cycle. BullMQ (Redis-ba
 ## Entities & Concepts Touched
 
 - [[concepts/background-jobs]]
-- [[concepts/bullmq]]
-- [[concepts/skip-locked]]
+- [[wiki/concepts/bullmq]]
+- [[wiki/concepts/skip-locked]]
 - [[concepts/dead-letter-queue]]
-- [[concepts/idempotencia]]
-- [[concepts/fanout-pattern]]
+- [[wiki/concepts/idempotencia]]
+- [[wiki/concepts/fanout-pattern]]
 
 ## Open Questions
 

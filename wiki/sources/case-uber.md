@@ -23,13 +23,13 @@ Dois problemas hard juntos: geolocalização em tempo real com escrita intensa (
 
 ## Key Claims
 
-- **Redis GEO para localização de motoristas** — 1.25M writes/s, dados voláteis, busca geoespacial nativa. PostGIS não aguenta o write throughput. → [[concepts/redis-geo]]
-- **Geohash evita cálculo de distância para 5M** — busca por prefixo na célula do passageiro + 8 adjacentes. Células próximas = prefixo compartilhado. → [[concepts/geohash]]
-- **Pipeline de matching em 5 etapas** — GEOSEARCH → ETA real (Routing Service) → ranking por score → oferta via WebSocket → accept/reject com fallback e expansão de raio. → [[concepts/ride-matching-pipeline]]
-- **Distributed lock com Redis SET NX** — evita race condition onde dois passageiros recebem oferta do mesmo motorista simultaneamente. → [[concepts/distributed-lock]]
-- **Surge pricing desacoplado** — Kafka stream agrega demanda por geohash em janela de 5min, Redis cache o multiplier com TTL 30s. Não bloqueia caminho crítico do match. → [[concepts/surge-pricing]]
-- **Tracking via WebSocket + Kafka** — motorista → WebSocket → Location Service → Kafka topic `ride.{id}.location` → passageiro via WebSocket. → [[concepts/realtime-tracking]]
-- **Geohash boundary problem** — dois pontos a 100m podem ter prefixos diferentes em células adjacentes. Solução: buscar célula + 8 adjacentes sempre. → [[concepts/geohash]]
+- **Redis GEO para localização de motoristas** — 1.25M writes/s, dados voláteis, busca geoespacial nativa. PostGIS não aguenta o write throughput. → [[wiki/concepts/redis-geo]]
+- **Geohash evita cálculo de distância para 5M** — busca por prefixo na célula do passageiro + 8 adjacentes. Células próximas = prefixo compartilhado. → [[wiki/concepts/geohash]]
+- **Pipeline de matching em 5 etapas** — GEOSEARCH → ETA real (Routing Service) → ranking por score → oferta via WebSocket → accept/reject com fallback e expansão de raio. → [[wiki/concepts/ride-matching-pipeline]]
+- **Distributed lock com Redis SET NX** — evita race condition onde dois passageiros recebem oferta do mesmo motorista simultaneamente. → [[wiki/concepts/distributed-lock]]
+- **Surge pricing desacoplado** — Kafka stream agrega demanda por geohash em janela de 5min, Redis cache o multiplier com TTL 30s. Não bloqueia caminho crítico do match. → [[wiki/concepts/surge-pricing]]
+- **Tracking via WebSocket + Kafka** — motorista → WebSocket → Location Service → Kafka topic `ride.{id}.location` → passageiro via WebSocket. → [[wiki/concepts/realtime-tracking]]
+- **Geohash boundary problem** — dois pontos a 100m podem ter prefixos diferentes em células adjacentes. Solução: buscar célula + 8 adjacentes sempre. → [[wiki/concepts/geohash]]
 - **Redis cai: dados efêmeros** — perda de posição tolerável pois motoristas reenviam a cada 4s. Degradação de UX, não de correção.
 
 ## Scale Numbers
@@ -44,14 +44,14 @@ Redis GEO memory (5M drivers)  = ~350MB
 
 ## Entities
 
-- [[entities/uber]]
+- [[wiki/entities/uber]]
 - [[entities/redis]]
 - [[entities/kafka]]
 - [[entities/osrm]]
 
 ## Concepts
 
-[[concepts/geohash]] · [[concepts/redis-geo]] · [[concepts/ride-matching-pipeline]] · [[concepts/distributed-lock]] · [[concepts/surge-pricing]] · [[concepts/realtime-tracking]] · [[concepts/estimativas-back-of-envelope]] · [[concepts/circuit-breaker]]
+[[wiki/concepts/geohash]] · [[wiki/concepts/redis-geo]] · [[wiki/concepts/ride-matching-pipeline]] · [[wiki/concepts/distributed-lock]] · [[wiki/concepts/surge-pricing]] · [[wiki/concepts/realtime-tracking]] · [[wiki/concepts/estimativas-back-of-envelope]] · [[wiki/concepts/circuit-breaker]]
 
 ## Open Questions
 

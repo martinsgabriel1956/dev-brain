@@ -30,8 +30,8 @@ Não dê continuidade ao que estava fazendo. **Comece do zero.**
 
 ## Com Pomodoro
 
-[[concepts/pomodoro]]: após cada unidade de 30min, pergunte "estou em modo solução ou modo travado?" Se modo travado — mude de tarefa ou encerre por hoje.
+[[wiki/concepts/pomodoro]]: após cada unidade de 30min, pergunte "estou em modo solução ou modo travado?" Se modo travado — mude de tarefa ou encerre por hoje.
 
 ## Key Sources
 
-- [[sources/9-habitos-programador-junior]]
+- [[wiki/sources/9-habitos-programador-junior]]

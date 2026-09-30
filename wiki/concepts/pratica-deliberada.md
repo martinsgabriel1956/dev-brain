@@ -85,7 +85,7 @@ Exercício de curso é deliberadamente simplificado por razões didáticas — b
 ## Key Sources
 
 - [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] — proporção 80/20 estudo/prática dentro e fora do foco, como heurística complementar às 800–1000h
-- [[sources/quanto-tempo-aprender-programacao]] — tabela de horas/tempo, teto cognitivo diário, analogia da mangueira de incêndio
+- [[wiki/sources/quanto-tempo-aprender-programacao]] — tabela de horas/tempo, teto cognitivo diário, analogia da mangueira de incêndio
 - [[wiki/sources/the-comparison-trap-in-programming-careers]] — estratégia de "refazer exercícios antigos do zero sem ver a solução" como forma de medir progresso; equivale a prática deliberada com feedback imediato sobre velocidade e automatização
 - [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] — prática de curso vs. prática real; automações pessoais de baixo risco como veículo de prática deliberada
 - [[wiki/sources/akita-pratica-deliberada-mito-do-talento]] — zona de aprendizado, alta repetição, limite de 4-5h/dia, autoavaliação vs. validação externa; caso Mozart como evidência histórica

@@ -33,7 +33,7 @@ Se o coordinator cai **após enviar PREPARE mas antes de enviar COMMIT**, os par
 
 Resultado: indisponibilidade garantida até o coordinator se recuperar ou intervenção manual (timeout + rollback).
 
-Esse é exatamente o problema que [[concepts/three-phase-commit]] tenta resolver — sem sucesso em redes com partição.
+Esse é exatamente o problema que [[wiki/concepts/three-phase-commit]] tenta resolver — sem sucesso em redes com partição.
 
 ## XA Transactions — 2PC no PostgreSQL
 
@@ -70,12 +70,12 @@ Uma explicação didática do 2PC usa orders/payments/shipping: o serviço de or
 
 ## Alternativas
 
-- [[concepts/saga-pattern]] — consistência eventual com compensação explícita, sem coordinator
-- [[concepts/outbox-pattern]] — tabela outbox + CDC para entrega garantida sem lock distribuído
-- [[concepts/raft-paxos]] — consenso distribuído com quorum (CockroachDB usa 2PC + Raft internamente)
+- [[wiki/concepts/saga-pattern]] — consistência eventual com compensação explícita, sem coordinator
+- [[wiki/concepts/outbox-pattern]] — tabela outbox + CDC para entrega garantida sem lock distribuído
+- [[wiki/concepts/raft-paxos]] — consenso distribuído com quorum (CockroachDB usa 2PC + Raft internamente)
 
 ## Key Sources
 
-- [[sources/3pc]]
-- [[sources/two-phase-commit]]
+- [[wiki/sources/3pc]]
+- [[wiki/sources/two-phase-commit]]
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — exemplo didático orders/payments/shipping e o gargalo de coordenação que motiva a migração para Saga Pattern

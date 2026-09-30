@@ -95,8 +95,8 @@ Quando a Facade orquestra **múltiplas** chamadas a um sistema legado para produ
 ## Key Sources
 
 - [[wiki/sources/design-pattern-proxy]]
-- [[sources/sete-padroes-de-design-de-software]]
-- [[sources/design-pattern-facade]]
+- [[wiki/sources/sete-padroes-de-design-de-software]]
+- [[wiki/sources/design-pattern-facade]]
 - [[wiki/sources/design-pattern-facade-renato-augusto]]
 - [[wiki/sources/design-pattern-facade-codigo-fonte-tv]]
 - [[wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado]] — Facade como mecanismo estrutural do Anti-Corruption Layer quando o isolamento exige orquestrar múltiplas chamadas ao legado

@@ -16,7 +16,7 @@ Padrão para transações distribuídas sem locks distribuídos — usa consist�
 
 ## Problema que Resolve
 
-[[concepts/two-phase-commit]] requer locks distribuídos. Em microsserviços, isso é impraticável — serviços são independentes, não compartilham banco.
+[[wiki/concepts/two-phase-commit]] requer locks distribuídos. Em microsserviços, isso é impraticável — serviços são independentes, não compartilham banco.
 
 ## Mecanismo
 
@@ -55,7 +55,7 @@ Consistência eventual — não ACID. Compensações podem falhar também (saga 
 
 - [[wiki/sources/event-ordering-long-running]] — Event ordering: garantia de ordem só é possível dentro de uma partição (Kafka) ou para um correlation ID. Solução: particionar por entity ID (todos os eventos do pedido 123 vão para a mesma...
 - [[wiki/sources/saga-pattern]] — Saga é o padrão para transações distribuídas sem 2PC. Duas abordagens: Choreography (cada serviço reage a eventos, sem coordenador — simples mas difícil de debugar) e Orchestration (orchestrator...
-- [[sources/3pc]]
+- [[wiki/sources/3pc]]
 - [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — saga pattern/consistência eventual citado como conceito que ajuda a lidar com cenários de concorrência e integração mesmo num único banco de dados, fora de arquitetura distribuída
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — versão didática coreografada via RabbitMQ, contrastada com o gargalo de coordenação do 2PC
 - [[wiki/sources/ciclo-de-mudanca-de-arquitetura]] — coreografia vs. orquestração como exemplo de decisão de TO-BE a validar via POC

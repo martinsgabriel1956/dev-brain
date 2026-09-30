@@ -37,9 +37,9 @@ REST: recursos via HTTP com semântica de verbos e status codes. OpenAPI 3.1: sp
 - [[concepts/rest]]
 - [[concepts/openapi]]
 - [[concepts/api-first]]
-- [[concepts/api-versioning]]
+- [[wiki/concepts/api-versioning]]
 - [[concepts/status-codes]]
-- [[concepts/sunset-policy]]
+- [[wiki/concepts/sunset-policy]]
 - [[concepts/hateoas]]
 
 ## Open Questions

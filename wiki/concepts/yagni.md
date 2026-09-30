@@ -24,8 +24,8 @@ A maioria dos "e se um dia mudar X" nunca acontece. E quando acontece, a realida
 
 A IA escalou o problema do YAGNI. Antes, criar abstração preventiva levava dias de trabalho. Hoje: dois prompts e está lá. O custo de geração caiu. O custo de manutenção permanece igual — ou subiu, porque agora o codebase tem mais arquivos para agentes navegarem.
 
-Ver [[concepts/abstraction-bloat]] — o agente gera 1000 linhas onde 100 bastariam por viés de treinamento.
-Ver [[concepts/abstraction-illusion]] — a IA torna padrões acessíveis sem torná-los apropriados.
+Ver [[wiki/concepts/abstraction-bloat]] — o agente gera 1000 linhas onde 100 bastariam por viés de treinamento.
+Ver [[wiki/concepts/abstraction-illusion]] — a IA torna padrões acessíveis sem torná-los apropriados.
 
 ## Quando Aplicar
 
@@ -79,9 +79,9 @@ Ver também [[wiki/concepts/fazer-a-coisa-mais-simples-que-poderia-funcionar]] �
 - [[wiki/sources/monolith-first-martin-fowler]] — fonte primária: YAGNI como um dos dois argumentos centrais contra começar com microsserviços, via o custo do MicroservicePremium
 - [[wiki/sources/seedwork-martin-fowler]] — mesmo espírito de minimalismo pragmático aplicado a reuso de framework, sem nomear YAGNI explicitamente
 - [[wiki/sources/microsservicos-monolito-first-renato-augusto]] — microsserviços prematuros nomeados explicitamente como violação de YAGNI; tempo de infraestrutura distribuída como custo de oportunidade contra validação de MVP
-- [[sources/clean-architecture-ia-custo-real]]
-- [[sources/super-productivity-ai-architecture-guide]]
-- [[sources/addy-osmani-80-problem-agentic-coding]]
+- [[wiki/sources/clean-architecture-ia-custo-real]]
+- [[wiki/sources/super-productivity-ai-architecture-guide]]
+- [[wiki/sources/addy-osmani-80-problem-agentic-coding]]
 - [[wiki/sources/5-principios-que-mudaram-como-programador]]
 - [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] — exemplo de repositório com métodos CRUD implementados por precaução; benefícios de foco, velocidade e menor complexidade
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — "ignorar YAGNI" listado como sinal de over-engineering; exemplo de usar React Hook Form/Formik em vez de construir gerenciamento de formulário do zero

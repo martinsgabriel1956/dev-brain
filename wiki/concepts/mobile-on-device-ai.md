@@ -71,7 +71,7 @@ Requer AICore — disponível em Pixel 8+, Samsung S24+. Verificar disponibilida
 
 ## Ver também
 
-- [[concepts/mobile-profiling]] — medir impacto de inferência no FPS
+- [[wiki/concepts/mobile-profiling]] — medir impacto de inferência no FPS
 - [[como-llms-funcionam]] — como modelos funcionam internamente
 
 ## Key Sources

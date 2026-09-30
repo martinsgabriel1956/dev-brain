@@ -3,8 +3,8 @@ type: concept
 title: "HTTP Redirect: 301 vs 302"
 aliases: ["301", "302", "permanent redirect", "temporary redirect", "redirect http"]
 date_created: 2026-04-22
-date_updated: 2026-08-21
-source_count: 2
+date_updated: 2026-09-30
+source_count: 3
 tags: [http, redirect, cache, analytics, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -48,5 +48,6 @@ CDN cacheia os redirects populares para 302 também — diferença de load prát
 
 ## Key Sources
 
-- [[sources/case-url-shortener]]
+- [[wiki/sources/case-url-shortener]]
 - [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — menciona 301/302 no endpoint de redirect do framework de 7 passos, sem aprofundar o tradeoff (já coberto nesta página pela fonte-irmã)
+- [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — 301 Moved Permanently na lista de status code do dia a dia (ver [[wiki/concepts/http-status-code]])

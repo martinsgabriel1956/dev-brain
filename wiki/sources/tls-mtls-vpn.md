@@ -34,13 +34,13 @@ TLS 1.3: handshake em 1 RTT (vs 2 no TLS 1.2). mTLS: ambos os lados autenticam v
 
 ## Entities & Concepts Touched
 
-- [[concepts/tls]]
-- [[concepts/mtls]]
-- [[concepts/pki]]
+- [[wiki/concepts/tls]]
+- [[wiki/concepts/mtls]]
+- [[wiki/concepts/pki]]
 - [[concepts/cert-manager]]
 - [[concepts/wireguard]]
-- [[entities/tailscale]]
-- [[concepts/ztna]]
+- [[wiki/entities/tailscale]]
+- [[wiki/concepts/ztna]]
 - [[concepts/ocsp-stapling]]
 
 ## Open Questions

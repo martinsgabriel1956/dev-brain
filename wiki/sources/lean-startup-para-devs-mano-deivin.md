@@ -23,24 +23,24 @@ Programadores desmotivados frequentemente reagem largando o emprego pra construi
 
 ## Key Claims
 
-- **Dois ciclos de falha do dev emocionado**: construir para sempre sem lançar (perfeccionismo técnico) ou lançar e descobrir que ninguém usa, tentando compensar com mais features. → [[concepts/mvp]], [[concepts/dopamina-e-projetos]]
-- **Visão precede solução**: antes de pensar em como resolver, é preciso validar que a dor é real e compartilhada — conversando com pessoas, não assumindo a partir da própria dor. → [[concepts/validacao-de-problema]]
-- **Concorrentes invisíveis**: se as pessoas já resolvem o problema de outro jeito (ex: WhatsApp), essa é a concorrência real — não outro app. → [[concepts/validacao-de-problema]]
-- **Ciclo Construir-Medir-Aprender**: núcleo da metodologia Lean Startup — MVP de funcionalidade única sem automação prematura, medição via funil de conversão com estranhos (não amigos/família), aprendizado por conversa direta com usuários. → [[concepts/build-measure-learn]]
-- **Aprendizagem validada via teste A/B**: dividir a audiência para testar variáveis (método de pagamento, cor de botão) com dados, não achismo. → [[concepts/aprendizagem-validada]]
-- **Contabilização de inovação**: fase avançada, poucas empresas chegam — consolidar faturamento, retenção e monetização para saber se o negócio é sustentável. → [[concepts/contabilizacao-de-inovacao]]
+- **Dois ciclos de falha do dev emocionado**: construir para sempre sem lançar (perfeccionismo técnico) ou lançar e descobrir que ninguém usa, tentando compensar com mais features. → [[wiki/concepts/mvp]], [[wiki/concepts/dopamina-e-projetos]]
+- **Visão precede solução**: antes de pensar em como resolver, é preciso validar que a dor é real e compartilhada — conversando com pessoas, não assumindo a partir da própria dor. → [[wiki/concepts/validacao-de-problema]]
+- **Concorrentes invisíveis**: se as pessoas já resolvem o problema de outro jeito (ex: WhatsApp), essa é a concorrência real — não outro app. → [[wiki/concepts/validacao-de-problema]]
+- **Ciclo Construir-Medir-Aprender**: núcleo da metodologia Lean Startup — MVP de funcionalidade única sem automação prematura, medição via funil de conversão com estranhos (não amigos/família), aprendizado por conversa direta com usuários. → [[wiki/concepts/build-measure-learn]]
+- **Aprendizagem validada via teste A/B**: dividir a audiência para testar variáveis (método de pagamento, cor de botão) com dados, não achismo. → [[wiki/concepts/aprendizagem-validada]]
+- **Contabilização de inovação**: fase avançada, poucas empresas chegam — consolidar faturamento, retenção e monetização para saber se o negócio é sustentável. → [[wiki/concepts/contabilizacao-de-inovacao]]
 - **Crescimento sustentável**: testar modelos de monetização (assinatura, avulso, pacote, freemium com anúncios/missões) depois que o produto core está validado.
-- **Pivô ou persevere**: apaixonar-se pelo problema, não pela solução — a solução é descartável, o problema é o que orienta a decisão de pivotar. → [[concepts/pivotar-ou-perseverar]]
-- **Inovação contínua**: empresas maduras (Uber, iFood) mantêm a essência do produto validado e adicionam novas frentes sem perdê-la. → [[concepts/inovacao-continua]]
+- **Pivô ou persevere**: apaixonar-se pelo problema, não pela solução — a solução é descartável, o problema é o que orienta a decisão de pivotar. → [[wiki/concepts/pivotar-ou-perseverar]]
+- **Inovação contínua**: empresas maduras (Uber, iFood) mantêm a essência do produto validado e adicionam novas frentes sem perdê-la. → [[wiki/concepts/inovacao-continua]]
 
 ## Entities
 
-- [[entities/eric-ries]] — autor de *A Startup Enxuta*, ex-programador que viveu o mesmo ciclo de falha antes de criar a metodologia
-- [[entities/mano-deivin]] — canal brasileiro de YouTube, conteúdo sobre carreira e produto para devs
+- [[wiki/entities/eric-ries]] — autor de *A Startup Enxuta*, ex-programador que viveu o mesmo ciclo de falha antes de criar a metodologia
+- [[wiki/entities/mano-deivin]] — canal brasileiro de YouTube, conteúdo sobre carreira e produto para devs
 
 ## Concepts
 
-[[concepts/lean-startup]] · [[concepts/build-measure-learn]] · [[concepts/validacao-de-problema]] · [[concepts/aprendizagem-validada]] · [[concepts/contabilizacao-de-inovacao]] · [[concepts/pivotar-ou-perseverar]] · [[concepts/inovacao-continua]] · [[concepts/mvp]] · [[concepts/dopamina-e-projetos]]
+[[wiki/concepts/lean-startup]] · [[wiki/concepts/build-measure-learn]] · [[wiki/concepts/validacao-de-problema]] · [[wiki/concepts/aprendizagem-validada]] · [[wiki/concepts/contabilizacao-de-inovacao]] · [[wiki/concepts/pivotar-ou-perseverar]] · [[wiki/concepts/inovacao-continua]] · [[wiki/concepts/mvp]] · [[wiki/concepts/dopamina-e-projetos]]
 
 ## Open Questions
 

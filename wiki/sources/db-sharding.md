@@ -33,11 +33,11 @@ Sharding divide horizontalmente os dados de um banco em múltiplos nós para ult
 
 ## Conceitos
 
-- [[concepts/db-sharding]] — particionamento horizontal
-- [[concepts/consistent-hashing]] — ring circular, resharding eficiente
+- [[wiki/concepts/db-sharding]] — particionamento horizontal
+- [[wiki/concepts/consistent-hashing]] — ring circular, resharding eficiente
 - [[concepts/shard-key]] — a decisão mais importante
 - [[concepts/cross-shard-operations]] — JOINs e transações entre shards
-- [[concepts/saga-pattern]] — alternativa ao 2PC em operações cross-shard
+- [[wiki/concepts/saga-pattern]] — alternativa ao 2PC em operações cross-shard
 
 ## Open Questions
 

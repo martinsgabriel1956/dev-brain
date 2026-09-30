@@ -39,13 +39,13 @@ Aprender é diferente de entender. EAD cria ilusão de aprendizado porque o víd
 
 ## Entities & Concepts Touched
 
-- [[concepts/entender-vs-aprender]]
-- [[concepts/autoconsciencia-de-aprendizado]]
-- [[concepts/aprendizado-passivo]]
-- [[concepts/memoria-muscular]]
-- [[concepts/aprendizado-deliberado]]
-- [[concepts/autodidata]]
-- [[entities/linuxtips]]
+- [[wiki/concepts/entender-vs-aprender]]
+- [[wiki/concepts/autoconsciencia-de-aprendizado]]
+- [[wiki/concepts/aprendizado-passivo]]
+- [[wiki/concepts/memoria-muscular]]
+- [[wiki/concepts/aprendizado-deliberado]]
+- [[wiki/concepts/autodidata]]
+- [[wiki/entities/linuxtips]]
 
 ## Open Questions
 

@@ -36,11 +36,11 @@ SOC 2 Type II: controles operando efetivamente por 6-12 meses (não só existind
 
 - [[concepts/soc2]]
 - [[concepts/pci-dss]]
-- [[concepts/iso-27001]]
-- [[concepts/audit-log]]
+- [[wiki/concepts/iso-27001]]
+- [[wiki/concepts/audit-log]]
 - [[concepts/tokenization]]
 - [[concepts/isms]]
-- [[sources/compliance]]
+- [[wiki/sources/compliance]]
 
 ## Open Questions
 

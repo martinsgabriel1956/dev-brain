@@ -37,12 +37,12 @@ Cache guarda resultados de operações caras em armazenamento rápido (RAM) para
 ## Conceitos Abordados
 
 - [[cache-aside]]
-- [[concepts/write-through]]
-- [[concepts/write-behind]]
+- [[wiki/concepts/write-through]]
+- [[wiki/concepts/write-behind]]
 - [[cache-stampede]]
 - [[cache-penetration]]
 - [[cache-avalanche]]
-- [[concepts/ttl]]
+- [[wiki/concepts/ttl]]
 - [[redis-cluster]]
 - [[eviction-policy]]
 - [[distributed-lock]]

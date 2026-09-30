@@ -66,8 +66,8 @@ Gera código Kotlin type-safe por plataforma — equivalente ao sqlc.
 
 ## Ver também
 
-- [[concepts/mobile-cross-platform-decision]] — quando KMP vs Flutter vs Nativo
-- [[concepts/mobile-armazenamento-local]] — SQLDelight como alternativa ao Room
+- [[wiki/concepts/mobile-cross-platform-decision]] — quando KMP vs Flutter vs Nativo
+- [[wiki/concepts/mobile-armazenamento-local]] — SQLDelight como alternativa ao Room
 
 ## Key Sources
 

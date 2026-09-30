@@ -82,8 +82,8 @@ Linking.openSettings(); // abre configurações do app
 
 ## Ver também
 
-- [[concepts/mobile-seguranca]] — permissões como parte da postura de segurança
-- [[concepts/mobile-biometria]] — permissão de biometria
+- [[wiki/concepts/mobile-seguranca]] — permissões como parte da postura de segurança
+- [[wiki/concepts/mobile-biometria]] — permissão de biometria
 
 ## Key Sources
 

@@ -32,4 +32,4 @@ Padrão [[structural-patterns|estrutural]] que permite acomodar mais objetos na 
 
 ## Key Sources
 
-- [[sources/design-pattern-facade]] — mencionado nas relações com outros padrões
+- [[wiki/sources/design-pattern-facade]] — mencionado nas relações com outros padrões

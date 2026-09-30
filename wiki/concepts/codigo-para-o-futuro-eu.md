@@ -3,8 +3,8 @@ type: concept
 title: "Código para o Futuro Eu"
 aliases: ["future self coding", "escrever para seu eu futuro", "código para manutenção futura"]
 date_created: 2026-07-29
-date_updated: 2026-07-29
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [naming, manutenibilidade, carreira, testes, refatoracao]
 skill: tech-mentor-leadership
 status: draft
@@ -39,3 +39,4 @@ O livro nota algo contraintuitivo: mesmo os melhores programadores do mundo escr
 ## Key Sources
 
 - [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — Hábito 5, único source até o momento
+- [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — projetos de 15–20 anos e rotatividade como motivo para escrever para o próximo leitor

@@ -22,7 +22,7 @@ Release:  ligar o comportamento para o usuário
 Um deploy pode acontecer **sem** release: o código já está na máquina, mas nenhum usuário está sendo afetado por ele. Duas formas de conseguir isso:
 
 - **Feature flag** — o código novo está escondido atrás de uma flag desligada; todo o tráfego chega ao servidor, mas as linhas novas não executam.
-- **Tráfego direcionado** — duas instâncias rodando em paralelo, uma com código antigo e outra com código novo, mas 100% do tráfego real ainda vai para a antiga (base do [[concepts/canary-release]] e do [[concepts/shadow-deployment]] antes do cutover).
+- **Tráfego direcionado** — duas instâncias rodando em paralelo, uma com código antigo e outra com código novo, mas 100% do tráfego real ainda vai para a antiga (base do [[wiki/concepts/canary-release]] e do [[wiki/concepts/shadow-deployment]] antes do cutover).
 
 ## Por que separar
 
@@ -32,11 +32,11 @@ Um deploy pode acontecer **sem** release: o código já está na máquina, mas n
 
 ## Relação com Feature Flags
 
-[[concepts/feature-flags]] é o mecanismo mais comum para essa separação. Ver também a categoria "Release toggle" no framework de Martin Fowler já documentado ali.
+[[wiki/concepts/feature-flags]] é o mecanismo mais comum para essa separação. Ver também a categoria "Release toggle" no framework de Martin Fowler já documentado ali.
 
 ## Relação com Deploy Manual vs. Automático
 
-Ortogonal a essa distinção: independente de o deploy ser manual (SSH + `git pull` + `npm start`, decisão humana pontual) ou automático (pipeline "triggada" por regra, ex.: merge na `main`), deploy e release continuam sendo eventos separáveis. A diferença entre manual e automático não é o que é executado, é qual o gatilho que dispara a execução — ver [[concepts/ci-cd]].
+Ortogonal a essa distinção: independente de o deploy ser manual (SSH + `git pull` + `npm start`, decisão humana pontual) ou automático (pipeline "triggada" por regra, ex.: merge na `main`), deploy e release continuam sendo eventos separáveis. A diferença entre manual e automático não é o que é executado, é qual o gatilho que dispara a execução — ver [[wiki/concepts/ci-cd]].
 
 ## O mesmo raciocínio, um nível acima: Continuous Delivery vs. Continuous Deployment
 
@@ -44,7 +44,7 @@ Ortogonal a essa distinção: independente de o deploy ser manual (SSH + `git pu
 
 ## Key Sources
 
-- [[sources/tipos-de-deploy]]
+- [[wiki/sources/tipos-de-deploy]]
 - [[wiki/sources/rapid-release-at-massive-scale-facebook]] — Gatekeeper (Meta) como implementação real dessa separação em escala
 - [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — reforço didático da distinção com os mesmos dois mecanismos (feature flag e tráfego direcionado)
 - [[wiki/sources/continuous-delivery-martin-fowler]] — a mesma distinção capacidade-vs-ato aplicada a Continuous Delivery vs. Continuous Deployment

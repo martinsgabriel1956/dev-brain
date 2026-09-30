@@ -17,7 +17,7 @@ Um **pipeline de ferramentas** executadas em sequência, onde cada etapa consome
 ## Por que importa
 
 Pensar em "compilador" como caixa preta esconde a modularidade real. Entender que é uma toolchain explica:
-- Por que podemos misturar linguagens (cada uma produz um [[concepts/object-file]], o linker une tudo)
+- Por que podemos misturar linguagens (cada uma produz um [[wiki/concepts/object-file]], o linker une tudo)
 - Por que podemos inspecionar fases intermediárias (`gcc -S` para ver o assembly)
 - Por que podemos substituir componentes (trocar o linker, usar Clang como frontend do LLVM)
 
@@ -54,5 +54,5 @@ O último passo de qualquer toolchain passa pelo **linker** — e é aí que lin
 
 ## Key Sources
 
-- [[sources/como-multiplas-linguagens-vivem-num-unico-binario]]
+- [[wiki/sources/como-multiplas-linguagens-vivem-num-unico-binario]]
 - [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — Cargo como gerenciador de projeto unificado, além do compilador puro

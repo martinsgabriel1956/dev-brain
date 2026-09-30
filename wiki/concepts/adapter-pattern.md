@@ -84,8 +84,8 @@ As interfaces `Input Boundary`, `Output Boundary` e `Data Access` descritas em [
 ## Key Sources
 
 - [[wiki/sources/design-pattern-proxy]]
-- [[sources/sete-padroes-de-design-de-software]]
-- [[sources/design-pattern-facade]] — distinção Facade vs Adapter formalizada
+- [[wiki/sources/sete-padroes-de-design-de-software]]
+- [[wiki/sources/design-pattern-facade]] — distinção Facade vs Adapter formalizada
 - [[wiki/sources/mappers-conversao-entre-camadas]] — distinção Adapter vs Mapper
 - [[wiki/sources/design-pattern-adapter]] — caso DomPDF/TCPDF: extração de interface + adaptador concreto elimina acoplamento a lib externa e viabiliza testabilidade
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — Input/Output Boundary e Data Access interface como aplicação do mesmo princípio nas fronteiras da Clean Architecture

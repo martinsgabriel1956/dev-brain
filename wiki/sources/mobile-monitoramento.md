@@ -32,4 +32,4 @@ Firebase Crashlytics para crash reporting + symbolication automática. Sentry pa
 
 ## Conceitos Abordados
 
-- [[concepts/mobile-monitoramento]] · [[concepts/mobile-metricas-criticas]] · [[concepts/mobile-cicd]] · [[concepts/observabilidade]]
+- [[wiki/concepts/mobile-monitoramento]] · [[wiki/concepts/mobile-metricas-criticas]] · [[wiki/concepts/mobile-cicd]] · [[wiki/concepts/observabilidade]]

@@ -33,5 +33,5 @@ Se o "como" não é óbvio pela leitura → refatore. Código legível dispensa 
 
 ## Key Sources
 
-- [[sources/estilo-de-codigo-convencoes]]
+- [[wiki/sources/estilo-de-codigo-convencoes]]
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — comentários como contexto recuperável via grep por agentes de IA

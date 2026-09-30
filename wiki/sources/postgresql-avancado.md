@@ -38,14 +38,14 @@ PostgreSQL usa MVCC: UPDATE/DELETE não sobrescrevem — criam novas versões. V
 
 ## Entities & Concepts Touched
 
-- [[concepts/mvcc]]
-- [[concepts/vacuum-postgresql]]
-- [[concepts/wal]]
+- [[wiki/concepts/mvcc]]
+- [[wiki/concepts/vacuum-postgresql]]
+- [[wiki/concepts/wal]]
 - [[concepts/explain-analyze]]
 - [[concepts/gin-index]]
 - [[concepts/window-functions]]
 - [[concepts/cte-recursiva]]
-- [[concepts/isolation-levels]]
+- [[wiki/concepts/isolation-levels]]
 
 ## Open Questions
 

@@ -30,12 +30,12 @@ Space-Based Architecture: elimina o banco de dados do caminho crítico das requi
 
 ## Entities & Concepts Touched
 
-- [[concepts/space-based-architecture]]
+- [[wiki/concepts/space-based-architecture]]
 - [[entities/hazelcast]]
 - [[entities/apache-ignite]]
 - [[concepts/in-memory-grid]]
 - [[concepts/data-pump]]
-- [[concepts/eventual-consistency]]
+- [[wiki/concepts/eventual-consistency]]
 
 ## Open Questions
 

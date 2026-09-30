@@ -3,8 +3,8 @@ type: concept
 title: "Autenticação e Autorização"
 aliases: ["authn authz", "authentication vs authorization", "quem é você vs o que você pode fazer"]
 date_created: 2026-07-09
-date_updated: 2026-08-03
-source_count: 4
+date_updated: 2026-09-30
+source_count: 5
 tags: [autenticacao, autorizacao, seguranca, backend, jwt, sessao, rbac]
 skill: tech-mentor-backend
 status: stub
@@ -63,3 +63,4 @@ O backend recebe uma credencial — cookie de sessão, JWT, token de API — que
 
 - [[wiki/sources/10-conceitos-fundamentais-backend]]
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]]
+- [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — 401 (não autenticado) vs 403 (sem permissão), barrados em [[wiki/concepts/middleware]] antes do controller

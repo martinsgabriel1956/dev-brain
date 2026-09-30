@@ -54,7 +54,7 @@ Coleta:   OpenTelemetry (vendor-neutral)
 
 ## Concepts & Entities Touched
 
-[[concepts/observabilidade]] · [[concepts/red-method]] · [[concepts/structured-logs]] · [[concepts/sli]] · [[concepts/slo]] · [[concepts/error-budget]] · [[concepts/blameless-post-mortem]]
+[[wiki/concepts/observabilidade]] · [[wiki/concepts/red-method]] · [[concepts/structured-logs]] · [[wiki/concepts/sli]] · [[wiki/concepts/slo]] · [[wiki/concepts/error-budget]] · [[wiki/concepts/blameless-post-mortem]]
 
 ## Open Questions
 

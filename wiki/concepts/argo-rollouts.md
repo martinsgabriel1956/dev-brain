@@ -69,11 +69,11 @@ kubectl rollout undo deployment/api --to-revision=3
 
 ## Ver também
 
-- [[concepts/ci-cd]] — Argo Rollouts implementa o CD do pipeline
-- [[concepts/canary-release]] — estratégia de rollout progressivo
-- [[concepts/blue-green-deploy]] — estratégia alternativa suportada
-- [[concepts/observabilidade]] — métricas Prometheus que alimentam o AnalysisTemplate
+- [[wiki/concepts/ci-cd]] — Argo Rollouts implementa o CD do pipeline
+- [[wiki/concepts/canary-release]] — estratégia de rollout progressivo
+- [[wiki/concepts/blue-green-deploy]] — estratégia alternativa suportada
+- [[wiki/concepts/observabilidade]] — métricas Prometheus que alimentam o AnalysisTemplate
 
 ## Key Sources
 
-- [[sources/cicd-pipeline]]
+- [[wiki/sources/cicd-pipeline]]

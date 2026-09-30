@@ -41,7 +41,7 @@ Deixar IA escrever toda a lógica elimina o mecanismo de luta — e portanto o a
 
 > "Você não aprende sobre neuroplasticidade lendo sobre ela. Você aprende tentando resolver um problema, falhando, e ajustando."
 
-Ver [[concepts/vibe-coding]] para o risco de dependência quando a luta é terceirizada.
+Ver [[wiki/concepts/vibe-coding]] para o risco de dependência quando a luta é terceirizada.
 
 ## Caso Prático: Ficar Travado numa Entrevista de Coding
 
@@ -59,13 +59,13 @@ Esse caso amplia o padrão desta página: a luta não precisa ser imposta por um
 
 ## Relação com Outros Conceitos
 
-- [[concepts/aprendizado-deliberado]] — o ciclo deliberado intencionalmente maximiza dificuldades desejáveis
-- [[concepts/neuroplasticidade]] — a luta é o gatilho da reorganização neural
+- [[wiki/concepts/aprendizado-deliberado]] — o ciclo deliberado intencionalmente maximiza dificuldades desejáveis
+- [[wiki/concepts/neuroplasticidade]] — a luta é o gatilho da reorganização neural
 - [[wiki/concepts/curva-de-aprendizado]] — descreve *onde* as barreiras aparecem estruturalmente na área de programação; esta página descreve *por que* atravessá-las produz retenção superior
 
 ## Key Sources
 
-- [[sources/por-que-devs-nao-terminam-projetos]]
+- [[wiki/sources/por-que-devs-nao-terminam-projetos]]
 - [[wiki/sources/leetcode-como-se-preparar-entrevistas-coding-anthony-mays]] — ficar travado em entrevista técnica como sinal esperado, não fracasso
 - [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]] — o roteiro de dez etapas de prática simulada é desenhado para expor o candidato à mesma dificuldade real da entrevista, sem atalhos
 - [[wiki/sources/a-insanidade-de-ser-um-programador-hoje]] — cadeia de barreiras não óbvias para enviar um e-mail (back-end → PHP → Apache → SMTP) como exemplo concreto de aprendizado por luta

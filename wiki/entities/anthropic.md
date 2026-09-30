@@ -46,7 +46,7 @@ Opus caiu de $15.75/M (input) para ~$5/M — movimento que tornou o uso do Opus 
 
 O tokenizador do Claude usa [[byte-pair-encoding]] com foco em inglês, resultando no pior multiplicador de custo para idiomas não-ingleses entre os principais provedores (OpenAI, Google). Português paga ~1.62× mais tokens que inglês — ver [[token-tax-multilingual]]. Não é intenção maliciosa; é consequência do corpus de treinamento ser predominantemente em inglês.
 
-Demonstração via [[entities/vercel-ai-sdk]] com Claude 3.5 Haiku: o prompt `"Hello World"` (2 palavras) já consome 11 tokens de entrada — contra apenas 4 no Gemini 2.0 Flash Lite do Google para o mesmo prompt. Contagens de tokens de entrada/saída não são comparáveis entre provedores porque cada um usa um vocabulário de tokenizer próprio — ver [[tokenizacao]].
+Demonstração via [[wiki/entities/vercel-ai-sdk]] com Claude 3.5 Haiku: o prompt `"Hello World"` (2 palavras) já consome 11 tokens de entrada — contra apenas 4 no Gemini 2.0 Flash Lite do Google para o mesmo prompt. Contagens de tokens de entrada/saída não são comparáveis entre provedores porque cada um usa um vocabulário de tokenizer próprio — ver [[tokenizacao]].
 
 **Claim não verificado — mudança de tokenizer no Sonnet 5:** [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] afirma que a Anthropic mudou o tokenizer no Sonnet 5, dificultando o rastreio do custo real por tarefa (o preço por token cai, mas a mesma tarefa passa a gerar mais tokens no tokenizer novo). Confiança baixa: a fonte não cita changelog oficial nem cruza com outra fonte da wiki; é um claim diferente do token tax multilíngue documentado acima (BPE com viés para inglês), e não deve ser confundido com ele.
 

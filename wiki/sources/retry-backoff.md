@@ -49,7 +49,7 @@ Jobs em fila:   maxRetries=5, backoff exponencial, DLQ após esgotar
 
 ## Concepts & Entities Touched
 
-[[concepts/retry-backoff]] · [[concepts/idempotencia]] · [[concepts/thundering-herd]] · [[concepts/circuit-breaker]] · [[concepts/graceful-degradation]]
+[[wiki/concepts/retry-backoff]] · [[wiki/concepts/idempotencia]] · [[wiki/concepts/thundering-herd]] · [[wiki/concepts/circuit-breaker]] · [[wiki/concepts/graceful-degradation]]
 
 ## Open Questions
 

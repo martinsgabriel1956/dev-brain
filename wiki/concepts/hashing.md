@@ -48,25 +48,25 @@ Hashing é o processo de converter dados em uma representação de comprimento f
 
 ## Por Que Velocidade é um Problema em Password Hashing
 
-MD5 e SHA geram **bilhões de hashes/segundo** — ótimo para integridade de arquivos, catastrófico para senhas. Um atacante com a wordlist [[entities/rockyou]] (29 bilhões de senhas reais) testa tudo em segundos.
+MD5 e SHA geram **bilhões de hashes/segundo** — ótimo para integridade de arquivos, catastrófico para senhas. Um atacante com a wordlist [[wiki/entities/rockyou]] (29 bilhões de senhas reais) testa tudo em segundos.
 
-Algoritmos especializados ([[concepts/bcrypt]], [[concepts/argon2]]) são **intencionalmente lentos** ([[concepts/cpu-hard]]). O [[concepts/argon2]] adiciona [[concepts/memory-hard]]: ocupa RAM configurável por instância, limitando o paralelismo de GPUs. Com [[concepts/salt]] por usuário, [[concepts/rainbow-table]]s pré-computadas se tornam inviáveis.
+Algoritmos especializados ([[wiki/concepts/bcrypt]], [[wiki/concepts/argon2]]) são **intencionalmente lentos** ([[wiki/concepts/cpu-hard]]). O [[wiki/concepts/argon2]] adiciona [[wiki/concepts/memory-hard]]: ocupa RAM configurável por instância, limitando o paralelismo de GPUs. Com [[wiki/concepts/salt]] por usuário, [[wiki/concepts/rainbow-table]]s pré-computadas se tornam inviáveis.
 
-Ver [[concepts/password-hashing]] para a visão completa do problema.
+Ver [[wiki/concepts/password-hashing]] para a visão completa do problema.
 
 ## Relação com outros conceitos
 
-- [[concepts/encoding]] — reversível, sem chave. Hashing é irreversível.
-- [[concepts/encryption]] — reversível com chave. Hashing é irreversível.
-- [[concepts/password-hashing]] — aplicação especializada de hashing para senhas
-- [[concepts/salt]] — unicidade por usuário em password hashing
-- [[concepts/rainbow-table]] — ataque baseado em hashes pré-computados
+- [[wiki/concepts/encoding]] — reversível, sem chave. Hashing é irreversível.
+- [[wiki/concepts/encryption]] — reversível com chave. Hashing é irreversível.
+- [[wiki/concepts/password-hashing]] — aplicação especializada de hashing para senhas
+- [[wiki/concepts/salt]] — unicidade por usuário em password hashing
+- [[wiki/concepts/rainbow-table]] — ataque baseado em hashes pré-computados
 
 ## Key Sources
 
-- [[sources/encoding-hashing-encryption]]
-- [[sources/autenticacao-segura]]
-- [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
+- [[wiki/sources/encoding-hashing-encryption]]
+- [[wiki/sources/autenticacao-segura]]
+- [[wiki/sources/seguranca-armazenamento-senhas-banco-de-dados]]
 - [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]
 - [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — analogia hashmap (rápido) vs. hash de senha (lento de propósito)
 - [[wiki/sources/historia-do-captcha-do-teste-de-turing-ao-turnstile]] — hash com zeros à esquerda como base do [[wiki/concepts/proof-of-work]] anti-bot (nonce por força bruta, como no Bitcoin)

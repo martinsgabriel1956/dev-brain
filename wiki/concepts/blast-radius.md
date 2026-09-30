@@ -26,11 +26,11 @@ Serviço D (crítico): quer 5 threads → não tem → falha
 
 ## Como Reduzir
 
-- [[concepts/bulkhead]] — pools separados por downstream
-- [[concepts/circuit-breaker]] — corta falhas antes de cascatear
+- [[wiki/concepts/bulkhead]] — pools separados por downstream
+- [[wiki/concepts/circuit-breaker]] — corta falhas antes de cascatear
 - Filas assíncronas — desacopla produtor de consumidor
 
 ## Key Sources
 
 - [[wiki/sources/cell-based-architecture]] — Cell-Based Architecture particiona o sistema em células funcionalmente completas e independentes — cada célula serve um subconjunto de usuários ou tenants. Falha em uma célula não afeta as demais...
-- [[sources/bulkhead]]
+- [[wiki/sources/bulkhead]]

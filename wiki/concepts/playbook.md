@@ -38,7 +38,7 @@ Documento estratégico e situacional consultado **durante o incidente** quando u
 
 **Usar:** alerta disparou com causa desconhecida, múltiplas causas possíveis com passos diferentes, onboarding de novos engenheiros em resposta a incidentes.
 
-**Evitar:** operação bem definida sem decisões → use [[concepts/runbook]].
+**Evitar:** operação bem definida sem decisões → use [[wiki/concepts/runbook]].
 
 ## Playbook como System Prompt de Agente
 
@@ -51,4 +51,4 @@ Documento estratégico e situacional consultado **durante o incidente** quando u
 
 ## Conceitos Relacionados
 
-[[concepts/runbook]] · [[concepts/post-mortem]]
+[[wiki/concepts/runbook]] · [[wiki/concepts/post-mortem]]

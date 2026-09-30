@@ -16,7 +16,7 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/rag-retrieval]]: [[concepts/graphrag]]
+- Em [[wiki/sources/rag-retrieval]]: [[wiki/concepts/graphrag]]
 
 ## Pendências
 

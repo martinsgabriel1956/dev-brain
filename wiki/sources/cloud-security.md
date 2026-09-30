@@ -40,12 +40,12 @@ Cloud Security: IAM com least privilege, Permission Boundaries para delegação 
 
 - [[concepts/cloud-security]]
 - [[concepts/iam]]
-- [[concepts/least-privilege]]
-- [[concepts/workload-identity]]
+- [[wiki/concepts/least-privilege]]
+- [[wiki/concepts/workload-identity]]
 - [[concepts/cspm]]
 - [[entities/prowler]]
 - [[entities/guardduty]]
-- [[entities/aws]]
+- [[wiki/entities/aws]]
 
 ## Open Questions
 

@@ -36,9 +36,9 @@ C4 Model (Simon Brown): 4 níveis de abstração para documentar arquitetura. L1
 
 - [[concepts/c4-model]]
 - [[entities/structurizr]]
-- [[concepts/architecture-documentation]]
+- [[wiki/concepts/architecture-documentation]]
 - [[concepts/diagrams-as-code]]
-- [[concepts/adr]]
+- [[wiki/concepts/adr-architecture-decision-record]]
 
 ## Open Questions
 

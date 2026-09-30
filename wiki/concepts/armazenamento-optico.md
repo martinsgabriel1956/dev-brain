@@ -12,7 +12,7 @@ status: stub
 
 # Armazenamento Óptico (CD/DVD/Blu-ray)
 
-Grava dados em discos usando **laser**: a informação vira pequenos sulcos microscópicos (*pits*) que o laser lê pela forma como a luz reflete. Diferente de [[concepts/hd-disco-rigido|HD]] e [[concepts/ssd|SSD]], costuma guardar arquivos específicos — música, filme, sistema operacional.
+Grava dados em discos usando **laser**: a informação vira pequenos sulcos microscópicos (*pits*) que o laser lê pela forma como a luz reflete. Diferente de [[wiki/concepts/hd-disco-rigido|HD]] e [[wiki/concepts/ssd|SSD]], costuma guardar arquivos específicos — música, filme, sistema operacional.
 
 ## Capacidades
 

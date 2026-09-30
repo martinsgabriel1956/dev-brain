@@ -35,8 +35,8 @@ Incident Response (NIST SP 800-61): 4 fases — Preparação, Detecção & Anál
 ## Entities & Concepts Touched
 
 - [[concepts/incident-response]]
-- [[concepts/runbook]]
-- [[concepts/post-mortem]]
+- [[wiki/concepts/runbook]]
+- [[wiki/concepts/post-mortem]]
 - [[concepts/forensics]]
 - [[concepts/siem]]
 - [[concepts/soar]]

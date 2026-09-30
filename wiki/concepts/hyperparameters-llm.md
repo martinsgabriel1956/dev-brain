@@ -52,7 +52,7 @@ Penaliza tokens que já apareceram no completion — reduz repetição. Útil pa
 ## Relação com Outros Conceitos
 
 - [[completion]] — os hiperparâmetros controlam como o completion é gerado
-- [[concepts/prompt-engineering]] — prompt + hiperparâmetros juntos definem o output
+- [[wiki/concepts/prompt-engineering]] — prompt + hiperparâmetros juntos definem o output
 - [[context-window]] — `max_tokens` é um dos controles do context window
 
 ## Temperatura como Metadado Versionado

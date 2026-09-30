@@ -49,7 +49,7 @@ Aprender programação não é questão de dom — é questão de aceitar que a 
 
 ## Concepts & Entities Touched
 
-[[concepts/neuroplasticidade]] · [[concepts/spaced-repetition]] · [[concepts/aprendizado-deliberado]] · [[concepts/postura-de-programador]] · [[concepts/tempo-variavel-capacidade-fixa]] · [[concepts/comparacao-na-carreira]] · [[concepts/linha-de-largada]] · [[concepts/familiaridade-vs-capacidade]] · [[concepts/pausa-estrategica]] · [[concepts/log-de-aprendizado]]
+[[wiki/concepts/neuroplasticidade]] · [[wiki/concepts/spaced-repetition]] · [[wiki/concepts/aprendizado-deliberado]] · [[wiki/concepts/postura-de-programador]] · [[wiki/concepts/tempo-variavel-capacidade-fixa]] · [[wiki/concepts/comparacao-na-carreira]] · [[wiki/concepts/linha-de-largada]] · [[wiki/concepts/familiaridade-vs-capacidade]] · [[wiki/concepts/pausa-estrategica]] · [[wiki/concepts/log-de-aprendizado]]
 
 ## Open Questions
 

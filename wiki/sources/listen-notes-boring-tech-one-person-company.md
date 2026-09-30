@@ -69,12 +69,12 @@ Wenbin Fang detalha como opera o [Listen Notes](https://www.listennotes.com/) (b
 
 ## Entidades Mencionadas
 
-- [[entities/wenbin-fang]] — fundador e único funcionário do Listen Notes
-- [[entities/listen-notes]] — produto: buscador de podcasts e API
+- [[wiki/entities/wenbin-fang]] — fundador e único funcionário do Listen Notes
+- [[wiki/entities/listen-notes]] — produto: buscador de podcasts e API
 - [[django]] — framework backend
 - [[elasticsearch]] — motor de busca
 - [[celery]] — workers assíncronos Python
-- [[entities/rabbitmq]] — message broker
+- [[wiki/entities/rabbitmq]] — message broker
 - [[datadog]] — monitoramento
 - [[pagerduty]] — alertas on-call
 - [[ansible]] — provisionamento de servidores
@@ -83,10 +83,10 @@ Wenbin Fang detalha como opera o [Listen Notes](https://www.listennotes.com/) (b
 
 ## Conceitos
 
-- [[concepts/one-person-company]] — empresa operada por uma única pessoa
-- [[concepts/boring-technology]] — escolher tecnologias comprovadas em vez de novas e arriscadas
+- [[wiki/concepts/one-person-company]] — empresa operada por uma única pessoa
+- [[wiki/concepts/boring-technology]] — escolher tecnologias comprovadas em vez de novas e arriscadas
 - [[infraestrutura-assincrona]] — separação entre processamento síncrono (web) e assíncrono (workers)
-- [[concepts/monorepo]] — repositório único para todo o código
+- [[wiki/concepts/monorepo]] — repositório único para todo o código
 - [[source-of-truth]] — PostgreSQL como única fonte verdadeira de dados; mesmo princípio aplicado por [[wiki/entities/shopify]] ao mover o estoque inteiro para o MySQL — ver [[wiki/concepts/grande-rollback]] e [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]]
 
 ---

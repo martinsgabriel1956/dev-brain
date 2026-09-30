@@ -89,7 +89,7 @@ A mesma fonte cita que, de todos os ataques documentados em 2019, cerca de 74% e
 
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — XSS na lista de estudo; HttpOnly como mitigação
 - [[wiki/sources/browser-security]] — Browser Security: Same-Origin Policy é a base (scheme+host+port). CORS habilita cross-origin controlado. CSP com nonces previne XSS mesmo após injeção. COEP + COOP habilitam `SharedArrayBuffer` e...
-- [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — mencionado como exemplo de vulnerabilidade detectada por SAST (SonarQube)
+- [[wiki/sources/cinco-praticas-seguranca-pragmatic-programmer]] — mencionado como exemplo de vulnerabilidade detectada por SAST (SonarQube)
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — teste manual de injeção de script como parte de checklist de autopentest assistido por IA
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — roubo de token via localStorage vs. proteção de cookie HttpOnly; CSP como camada de defesa
 - [[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] — citado, junto de [[sql-injection]], como padrão inseguro comum em projetos públicos usados como dado de treinamento de LLMs de código

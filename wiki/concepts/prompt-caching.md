@@ -3,8 +3,8 @@ type: concept
 title: "Prompt Caching"
 aliases: ["prompt cache", "cache de prompt", "cache breakpoints"]
 date_created: 2026-09-15
-date_updated: 2026-09-15
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [prompt-caching, kv-cache, custo-de-ia, ttft, inferencia, tech-mentor-ai]
 skill: tech-mentor-ai
 status: draft
@@ -55,3 +55,4 @@ Colocar timestamp, ID de sessão ou qualquer dado que mude a cada chamada logo n
 ## Key Sources
 
 - [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]]
+- [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] — mesmo vídeo-irmão: suporte a cache e qualidade dependem de modelo+provedor

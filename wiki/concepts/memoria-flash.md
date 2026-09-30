@@ -14,13 +14,13 @@ status: stub
 
 Memória de estado sólido não volátil que retém dados sem energia, gravando-os em **células NAND**. É o substrato comum de três mídias que parecem diferentes mas são a mesma tecnologia:
 
-- [[concepts/ssd]] — flash como disco interno de alta performance
+- [[wiki/concepts/ssd]] — flash como disco interno de alta performance
 - Pen drive (flash drive) — flash portátil via USB
 - Cartão de memória (SD/microSD) — flash para câmeras, smartphones, consoles
 
 ## Por que importa
 
-Sem partes móveis → acesso eletrônico rápido, resistência a choque e vibração, e vida útil maior que mídias mecânicas como o [[concepts/hd-disco-rigido]]. A velocidade final depende da **interface**, não só do chip: USB 2.0/3.0/3.1 no pen drive, SATA/NVMe no SSD, classe de velocidade no cartão.
+Sem partes móveis → acesso eletrônico rápido, resistência a choque e vibração, e vida útil maior que mídias mecânicas como o [[wiki/concepts/hd-disco-rigido]]. A velocidade final depende da **interface**, não só do chip: USB 2.0/3.0/3.1 no pen drive, SATA/NVMe no SSD, classe de velocidade no cartão.
 
 ## Flash vs. RAM
 

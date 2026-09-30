@@ -26,4 +26,4 @@ Biblioteca open-source de CRDT de sequência para edição colaborativa em tempo
 
 ## Key Sources
 
-- [[sources/crdt-colaboracao-tempo-real]]
+- [[wiki/sources/crdt-colaboracao-tempo-real]]

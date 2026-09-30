@@ -34,8 +34,8 @@ Passkeys (WebAuthn/FIDO2): autenticação phishing-resistant sem senha. Chave pr
 
 ## Entities & Concepts Touched
 
-- [[concepts/passkeys]]
-- [[concepts/webauthn]]
+- [[wiki/concepts/passkeys]]
+- [[wiki/concepts/webauthn]]
 - [[concepts/fido2]]
 - [[concepts/phishing-resistant]]
 - [[concepts/secure-enclave]]

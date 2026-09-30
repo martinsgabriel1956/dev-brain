@@ -12,7 +12,7 @@ status: stub
 
 # A/B Testing Deployment
 
-Mecanicamente quase idêntico ao [[concepts/canary-release]] — um percentual dos usuários vê a versão A, outro percentual vê a versão B — mas com objetivo diferente: **validar uma hipótese de negócio**, não reduzir risco técnico.
+Mecanicamente quase idêntico ao [[wiki/concepts/canary-release]] — um percentual dos usuários vê a versão A, outro percentual vê a versão B — mas com objetivo diferente: **validar uma hipótese de negócio**, não reduzir risco técnico.
 
 ## Diferença central com Canary
 
@@ -27,8 +27,8 @@ Exemplo: testar se um checkout novo vende mais que o antigo. Se vender mais, mig
 
 ## Relação com Feature Flags
 
-Na prática, A/B testing quase sempre é implementado via [[concepts/feature-flags]] (categoria "Experiment toggle" no framework de Martin Fowler), não necessariamente via duas instâncias de infraestrutura separadas — mais fácil de segmentar por atributo do usuário (país, plano, cohort) do que por split de tráfego bruto no load balancer.
+Na prática, A/B testing quase sempre é implementado via [[wiki/concepts/feature-flags]] (categoria "Experiment toggle" no framework de Martin Fowler), não necessariamente via duas instâncias de infraestrutura separadas — mais fácil de segmentar por atributo do usuário (país, plano, cohort) do que por split de tráfego bruto no load balancer.
 
 ## Key Sources
 
-- [[sources/tipos-de-deploy]]
+- [[wiki/sources/tipos-de-deploy]]

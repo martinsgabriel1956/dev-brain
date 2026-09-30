@@ -16,9 +16,9 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/cloud-security]]: [[concepts/least-privilege]]
-- Em [[wiki/sources/identity-iam-avancado]]: [[concepts/least-privilege]]
-- Em [[wiki/sources/secure-design-patterns]]: [[concepts/least-privilege]]
+- Em [[wiki/sources/cloud-security]]: [[wiki/concepts/least-privilege]]
+- Em [[wiki/sources/identity-iam-avancado]]: [[wiki/concepts/least-privilege]]
+- Em [[wiki/sources/secure-design-patterns]]: [[wiki/concepts/least-privilege]]
 
 ## Pendências
 

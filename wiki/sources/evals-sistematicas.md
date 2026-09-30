@@ -43,9 +43,9 @@ Evals são testes para sistemas LLM: offline (golden dataset + métricas automá
 
 ## Entities & Concepts Touched
 
-- [[concepts/evals-llm]]
+- [[wiki/concepts/evals-llm]]
 - [[concepts/llm-as-judge]]
-- [[concepts/golden-dataset]]
+- [[wiki/concepts/golden-dataset]]
 - [[concepts/ragas]]
 - [[entities/promptfoo]]
 - [[entities/deepeval]]

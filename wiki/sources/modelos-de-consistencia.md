@@ -45,7 +45,7 @@ Consistência em sistemas distribuídos é um espectro, não binário. Quatro mo
 
 ## Concepts & Entities Touched
 
-[[concepts/consistency-models]] · [[concepts/read-your-writes]] · [[concepts/raft-paxos]] · [[concepts/split-brain]] · [[concepts/two-phase-commit]]
+[[wiki/concepts/consistency-models]] · [[wiki/concepts/read-your-writes]] · [[wiki/concepts/raft-paxos]] · [[wiki/concepts/split-brain]] · [[wiki/concepts/two-phase-commit]]
 
 ## Open Questions
 

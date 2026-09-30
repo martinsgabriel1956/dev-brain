@@ -22,7 +22,7 @@ Meio de armazenamento que grava dados em uma fita de plástico magnetizada. Cons
 
 ## Trade-off: acesso sequencial
 
-Dados são lidos **na ordem em que foram gravados** — sem acesso aleatório rápido. Isso a torna lenta para uso interativo, mas ideal para arquivamento de grande volume, onde a leitura é rara. É o equivalente físico da camada *cold* em [[concepts/storage-tiering]] (análogo ao S3 Glacier). Compartilha o princípio magnético com o [[concepts/hd-disco-rigido]] e o [[concepts/disquete]].
+Dados são lidos **na ordem em que foram gravados** — sem acesso aleatório rápido. Isso a torna lenta para uso interativo, mas ideal para arquivamento de grande volume, onde a leitura é rara. É o equivalente físico da camada *cold* em [[wiki/concepts/storage-tiering]] (análogo ao S3 Glacier). Compartilha o princípio magnético com o [[wiki/concepts/hd-disco-rigido]] e o [[wiki/concepts/disquete]].
 
 ## Key Sources
 

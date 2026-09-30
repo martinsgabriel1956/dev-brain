@@ -24,7 +24,7 @@ Fenômeno onde múltiplos clientes disparam requests simultâneos para o mesmo r
 
 | Causa | Solução |
 |---|---|
-| Retry simultâneo | [[concepts/retry-backoff]] — backoff exponencial + jitter |
+| Retry simultâneo | [[wiki/concepts/retry-backoff]] — backoff exponencial + jitter |
 | Cache stampede | Cache lock (apenas um reconstrói), probabilistic early expiration |
 | Reconexão de WebSocket | Jitter no reconnect delay |
 
@@ -34,5 +34,5 @@ O sistema em recuperação recebe carga máxima no pior momento — exatamente q
 
 ## Key Sources
 
-- [[sources/retry-backoff]]
-- [[sources/conceitos-que-ninguem-ensina]]
+- [[wiki/sources/retry-backoff]]
+- [[wiki/sources/conceitos-que-ninguem-ensina]]

@@ -12,7 +12,7 @@ status: stable
 
 # Fencing Token
 
-Token monotonicamente crescente emitido junto com um [[concepts/distributed-lock]]. Resolve o problema de lock "fantasma": processo lento ressuscita após o TTL expirar e acredita ainda ter o lock.
+Token monotonicamente crescente emitido junto com um [[wiki/concepts/distributed-lock]]. Resolve o problema de lock "fantasma": processo lento ressuscita após o TTL expirar e acredita ainda ter o lock.
 
 ## O Problema sem Fencing Token
 
@@ -69,4 +69,4 @@ Redlock (algoritmo Redis multi-nó) não implementa fencing tokens. Em falha de 
 
 ## Key Sources
 
-- [[sources/skip-locked-fencing-token]]
+- [[wiki/sources/skip-locked-fencing-token]]

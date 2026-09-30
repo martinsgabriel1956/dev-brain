@@ -44,4 +44,4 @@ Granularidade de ~5km por célula — suficiente para capturar variação de dem
 
 ## Key Sources
 
-- [[sources/case-uber]]
+- [[wiki/sources/case-uber]]

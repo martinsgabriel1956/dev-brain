@@ -29,27 +29,27 @@ A resposta para "como diferentes linguagens coexistem num único binário" é o 
 
 ### 1. Compiladores não transformam código direto em executável
 **Evidência:** O GCC passa por 4 fases — pré-processamento, compilação (→ assembly), montagem (→ object file), linking.
-**Fonte:** [[sources/como-multiplas-linguagens-vivem-num-unico-binario]]
+**Fonte:** [[wiki/sources/como-multiplas-linguagens-vivem-num-unico-binario]]
 **Confiança:** alta
 
 ### 2. O linker é o ponto de união entre linguagens
 **Evidência:** Rust, C, Fortran e assembly geram object files independentes. O linker combina todos num único executável. Isso funciona mesmo com toolchains completamente diferentes.
-**Fonte:** [[sources/como-multiplas-linguagens-vivem-num-unico-binario]]
+**Fonte:** [[wiki/sources/como-multiplas-linguagens-vivem-num-unico-binario]]
 **Confiança:** alta
 
 ### 3. ABI define o contrato binário entre linguagens
 **Evidência:** Duas linguagens podem gerar assembly válido para a mesma arquitetura e ainda assim falhar ao interoperar — se tiverem calling conventions diferentes (registradores errados) ou semânticas diferentes (pass by reference vs pass by value).
-**Fonte:** [[sources/como-multiplas-linguagens-vivem-num-unico-binario]]
+**Fonte:** [[wiki/sources/como-multiplas-linguagens-vivem-num-unico-binario]]
 **Confiança:** alta
 
 ### 4. GCC é uma toolchain, não "o compilador C"
 **Evidência:** GCC = GNU Compiler Collection. Suporta C, C++, Objective-C, Fortran, Ada, D, Go. Cada fase do pipeline é plugável e pode ser alimentada por arquivos externos.
-**Fonte:** [[sources/como-multiplas-linguagens-vivem-num-unico-binario]]
+**Fonte:** [[wiki/sources/como-multiplas-linguagens-vivem-num-unico-binario]]
 **Confiança:** alta
 
 ### 5. Projetos reais já usam essa técnica
 **Evidência:** Linux kernel, ffmpeg, OpenSSL contêm C para lógica geral e assembly para funções de performance crítica. Rust e C interoperam via FFI na mesma forma.
-**Fonte:** [[sources/como-multiplas-linguagens-vivem-num-unico-binario]]
+**Fonte:** [[wiki/sources/como-multiplas-linguagens-vivem-num-unico-binario]]
 **Confiança:** alta
 
 ---
@@ -58,19 +58,19 @@ A resposta para "como diferentes linguagens coexistem num único binário" é o 
 
 - [[entities/gcc]] — GNU Compiler Collection, toolchain para C/C++/Fortran/Ada/D/Go
 - [[entities/linux-kernel]] — usa C + assembly (citado como exemplo de projeto multi-linguagem)
-- [[entities/ffmpeg]] — C + assembly para codecs de vídeo
+- [[wiki/entities/ffmpeg]] — C + assembly para codecs de vídeo
 - [[entities/openssl]] — C + assembly para criptografia
 
 ## Conceitos Tocados
 
-- [[concepts/pipeline-de-compilacao]] — 4 fases internas do GCC
-- [[concepts/object-file]] — produto intermediário da fase de montagem
-- [[concepts/static-linking]] — cópia do código de biblioteca no executável
-- [[concepts/dynamic-linking]] — referência lazy a `.so`/`.dll` em runtime
-- [[concepts/toolchain]] — pipeline de ferramentas plugáveis vs "compilador caixa preta"
-- [[concepts/abi]] — Application Binary Interface, contrato binário entre linguagens
-- [[concepts/calling-convention]] — regras de registradores para passar parâmetros
-- [[concepts/ffi]] — Foreign Function Interface, mecanismos por linguagem (`extern`, `#[no_mangle]`, CGo)
+- [[wiki/concepts/pipeline-de-compilacao]] — 4 fases internas do GCC
+- [[wiki/concepts/object-file]] — produto intermediário da fase de montagem
+- [[wiki/concepts/static-linking]] — cópia do código de biblioteca no executável
+- [[wiki/concepts/dynamic-linking]] — referência lazy a `.so`/`.dll` em runtime
+- [[wiki/concepts/toolchain]] — pipeline de ferramentas plugáveis vs "compilador caixa preta"
+- [[wiki/concepts/abi]] — Application Binary Interface, contrato binário entre linguagens
+- [[wiki/concepts/calling-convention]] — regras de registradores para passar parâmetros
+- [[wiki/concepts/ffi]] — Foreign Function Interface, mecanismos por linguagem (`extern`, `#[no_mangle]`, CGo)
 
 ---
 

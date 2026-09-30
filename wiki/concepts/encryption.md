@@ -55,14 +55,14 @@ Encryption resolve confidencialidade — mas se o objetivo é só garantir que u
 
 ## Relação com outros conceitos
 
-- [[concepts/encoding]] — reversível sem chave. Encryption requer chave.
-- [[concepts/hashing]] — irreversível. Encryption é reversível com chave.
-- [[concepts/caesar-cipher]] — exemplo histórico do princípio de encryption.
+- [[wiki/concepts/encoding]] — reversível sem chave. Encryption requer chave.
+- [[wiki/concepts/hashing]] — irreversível. Encryption é reversível com chave.
+- [[wiki/concepts/caesar-cipher]] — exemplo histórico do princípio de encryption.
 - [[wiki/concepts/hmac]] — integridade/autenticidade via chave simétrica, sem cifrar o dado
 
 ## Key Sources
 
-- [[sources/encoding-hashing-encryption]]
-- [[sources/criptografia-fundamentos]]
+- [[wiki/sources/encoding-hashing-encryption]]
+- [[wiki/sources/criptografia-fundamentos]]
 - [[wiki/sources/ssh-chaves-como-funcionam]]
 - [[wiki/sources/hmac-integridade-mensagem-local-first-entrevista]]

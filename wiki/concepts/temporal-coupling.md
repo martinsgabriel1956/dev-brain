@@ -85,9 +85,9 @@ Solução: retry com backoff exponencial no startup + health check que falha enq
 
 ## Relação com outros conceitos
 
-- [[concepts/dependency-injection]] — DI elimina temporal coupling ao tornar dependências explícitas no construtor
-- [[concepts/hexagonal-architecture]] — ports tornam dependências de infraestrutura declarativas
-- [[concepts/accidental-complexity]] — temporal coupling implícito é uma forma de complexidade acidental
+- [[wiki/concepts/dependency-injection]] — DI elimina temporal coupling ao tornar dependências explícitas no construtor
+- [[wiki/concepts/hexagonal-architecture]] — ports tornam dependências de infraestrutura declarativas
+- [[wiki/concepts/accidental-complexity]] — temporal coupling implícito é uma forma de complexidade acidental
 
 ## Exemplo: Serviço de Autenticação Síncrono
 
@@ -95,5 +95,5 @@ Caso didático de [[wiki/entities/bernardo-lobato]]: sistema bloqueado aguardand
 
 ## Key Sources
 
-- [[sources/conceitos-que-ninguem-ensina]]
+- [[wiki/sources/conceitos-que-ninguem-ensina]]
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — exemplo de autenticação síncrona e resposta via comunicação assíncrona

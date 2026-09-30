@@ -22,4 +22,4 @@ Alinhado com o princípio central do DDD: o modelo de domínio deve refletir a l
 
 ## Key Sources
 
-- [[sources/como-aprender-um-codebase-novo]]
+- [[wiki/sources/como-aprender-um-codebase-novo]]

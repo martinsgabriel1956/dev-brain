@@ -38,10 +38,10 @@ API contract é o contrato formal entre produtor e consumidor — define o que m
 
 ## Entities & Concepts Touched
 
-- [[concepts/api-versioning]]
+- [[wiki/concepts/api-versioning]]
 - [[concepts/breaking-changes]]
-- [[concepts/contract-testing]]
-- [[concepts/sunset-policy]]
+- [[wiki/concepts/contract-testing]]
+- [[wiki/concepts/sunset-policy]]
 - [[entities/typespec]]
 
 ## Open Questions

@@ -41,7 +41,7 @@ Uma feature = uma pasta, 2–3 arquivos.
 
 ## Por Que Importa com IA
 
-O Navigation Paradox (ver [[concepts/navigation-paradox]]) mostra que arquitetura horizontal obriga o agente a abrir 7–13 arquivos para uma feature que em Vertical Slice seria 1–3. Cada arquivo a mais é token a mais e chance de perder uma dependência.
+O Navigation Paradox (ver [[wiki/concepts/navigation-paradox]]) mostra que arquitetura horizontal obriga o agente a abrir 7–13 arquivos para uma feature que em Vertical Slice seria 1–3. Cada arquivo a mais é token a mais e chance de perder uma dependência.
 
 Vertical Slice não resolve tudo — shared code (auth, logging, DB client) ainda precisa de uma camada compartilhada. Mas o core de cada feature fica contido.
 
@@ -53,7 +53,7 @@ Vertical Slice não resolve tudo — shared code (auth, logging, DB client) aind
 
 ## Limitação
 
-Sem discipline, Vertical Slice pode levar a duplicação de lógica entre features. A solução é extrair para `shared/` *depois* do segundo caso — ver [[concepts/yagni]].
+Sem discipline, Vertical Slice pode levar a duplicação de lógica entre features. A solução é extrair para `shared/` *depois* do segundo caso — ver [[wiki/concepts/yagni]].
 
 ## Vertical Slice Dentro de um Módulo (Frontend)
 
@@ -67,8 +67,8 @@ Sem discipline, Vertical Slice pode levar a duplicação de lógica entre featur
 
 ## Key Sources
 
-- [[sources/clean-architecture-ia-custo-real]]
-- [[sources/erros-workflow-research-plan-implement]] — plano vertical como aplicação do VSA a workflow de agente
-- [[sources/context-engineering-avancado-para-coding-agents]] — implementação incremental para manter context window baixa
+- [[wiki/sources/clean-architecture-ia-custo-real]]
+- [[wiki/sources/erros-workflow-research-plan-implement]] — plano vertical como aplicação do VSA a workflow de agente
+- [[wiki/sources/context-engineering-avancado-para-coding-agents]] — implementação incremental para manter context window baixa
 - [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] — vertical slice dentro de um módulo frontend como isolamento pré-extração, e o risco de virar regra filosófica rígida em vez de ferramenta prática
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — package by feature do Go como exemplo de adoção crescente, ligado ao custo medido pelo Navigation Paradox

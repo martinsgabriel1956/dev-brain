@@ -25,7 +25,7 @@ Classe ou objeto que sabe demais e faz demais. Concentra responsabilidades que d
 
 O [[facade-pattern]] tem risco explícito de virar um God Object se não houver disciplina:
 
-> "Uma fachada pode se tornar um objeto deus acoplado a todas as classes de uma aplicação." — [[sources/design-pattern-facade]]
+> "Uma fachada pode se tornar um objeto deus acoplado a todas as classes de uma aplicação." — [[wiki/sources/design-pattern-facade]]
 
 A diferença: uma Facade *bem feita* delega para o subsistema e não contém lógica própria. Quando começa a acumular lógica de negócio, vira God Object.
 
@@ -53,8 +53,8 @@ A diferença: uma Facade *bem feita* delega para o subsistema e não contém ló
 
 ## Key Sources
 
-- [[sources/design-pattern-facade]]
-- [[sources/sete-padroes-de-design-de-software]]
+- [[wiki/sources/design-pattern-facade]]
+- [[wiki/sources/sete-padroes-de-design-de-software]]
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]] — exemplo narrativo de God Class nascendo por degradação incremental sob prazo, sprint a sprint
 - [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — limite de tamanho de arquivo (exemplo: 300 linhas) como gate automático de CI contra god files
 - [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — "classe super-homem" que orquestra tudo como sintoma clássico de code base degradando; nasce de empilhar código na parte que "a gente sabia rodar"

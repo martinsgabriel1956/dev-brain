@@ -16,7 +16,7 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/elasticsearch-opensearch]]: [[entities/lucene]]
+- Em [[wiki/sources/elasticsearch-opensearch]]: [[wiki/entities/lucene]]
 
 ## Pendências
 

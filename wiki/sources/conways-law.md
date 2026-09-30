@@ -37,8 +37,8 @@ status: stable
 - [[concepts/conways-law]]
 - [[concepts/inverse-conway-maneuver]]
 - [[concepts/team-topologies]]
-- [[concepts/cognitive-load]]
-- [[concepts/platform-engineering]]
+- [[wiki/concepts/cognitive-load]]
+- [[wiki/concepts/platform-engineering]]
 
 ## Open Questions
 

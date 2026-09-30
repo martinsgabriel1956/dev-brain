@@ -55,7 +55,7 @@ Deploy sem downtime exige duas coisas: estratégia de tráfego (Rolling/Blue-Gre
 
 ## Concepts & Entities Touched
 
-[[concepts/zero-downtime-deploy]] · [[concepts/rolling-update]] · [[concepts/blue-green-deploy]] · [[concepts/canary-release]] · [[concepts/expand-contract]] · [[concepts/feature-flags]] · [[concepts/circuit-breaker]]
+[[wiki/concepts/zero-downtime-deploy]] · [[wiki/concepts/rolling-update]] · [[wiki/concepts/blue-green-deploy]] · [[wiki/concepts/canary-release]] · [[wiki/concepts/expand-contract]] · [[wiki/concepts/feature-flags]] · [[wiki/concepts/circuit-breaker]]
 
 ## Open Questions
 

@@ -12,7 +12,7 @@ status: stable
 
 # Validação de Problema
 
-Primeira fase do [[concepts/lean-startup]] (o livro chama de "Visão"). Antes de pensar em solução, é preciso confirmar que **a dor é real e compartilhada** — não apenas a dor pessoal de quem está construindo.
+Primeira fase do [[wiki/concepts/lean-startup]] (o livro chama de "Visão"). Antes de pensar em solução, é preciso confirmar que **a dor é real e compartilhada** — não apenas a dor pessoal de quem está construindo.
 
 ## Como Validar
 
@@ -20,7 +20,7 @@ Conversar com pessoas fora do próprio círculo antes de escrever código. Ao in
 
 1. **Só você tem esse problema** — sinal de parar aqui, a dor não é generalizável.
 2. **As pessoas têm o problema, mas já resolvem de outro jeito** — ex: mandam mensagem no WhatsApp pro padeiro em vez de usar um app de assinatura. Essa é a concorrência real, não outro app do mesmo nicho.
-3. **As pessoas têm o problema e não têm solução satisfatória** — sinal de que vale seguir para [[concepts/build-measure-learn]].
+3. **As pessoas têm o problema e não têm solução satisfatória** — sinal de que vale seguir para [[wiki/concepts/build-measure-learn]].
 
 ## Concorrência Invisível
 
@@ -36,13 +36,13 @@ Pular direto para a solução: "vou criar um app de delivery por assinatura" ant
 
 ## Ver Também
 
-- [[concepts/lean-startup]] — fase "Visão" dentro da metodologia completa
-- [[concepts/build-measure-learn]] — próxima fase, depois da dor validada
-- [[concepts/pivotar-ou-perseverar]] — decisão que reaparece se a validação inicial se mostrar fraca
+- [[wiki/concepts/lean-startup]] — fase "Visão" dentro da metodologia completa
+- [[wiki/concepts/build-measure-learn]] — próxima fase, depois da dor validada
+- [[wiki/concepts/pivotar-ou-perseverar]] — decisão que reaparece se a validação inicial se mostrar fraca
 - [[wiki/concepts/icp-ideal-customer-profile]] — especificação de quem exatamente sente a dor validada
 - [[wiki/concepts/lean-canvas]] — framework onde "problema" e "ICP" são os dois primeiros quadrantes
 
 ## Key Sources
 
-- [[sources/lean-startup-para-devs-mano-deivin]]
+- [[wiki/sources/lean-startup-para-devs-mano-deivin]]
 - [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]] — variante específica: dev como ICP ruim para produtos de dev, porque constrói em vez de pagar

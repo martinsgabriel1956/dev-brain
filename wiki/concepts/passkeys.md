@@ -16,10 +16,10 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/autenticacao-segura]]: [[concepts/passkeys]]
-- Em [[wiki/sources/identidade-avancada]]: [[concepts/passkeys]]
-- Em [[wiki/sources/passkeys-webauthn]]: [[concepts/passkeys]]
-- Em [[wiki/sources/sessions]]: [[concepts/passkeys]]
+- Em [[wiki/sources/autenticacao-segura]]: [[wiki/concepts/passkeys]]
+- Em [[wiki/sources/identidade-avancada]]: [[wiki/concepts/passkeys]]
+- Em [[wiki/sources/passkeys-webauthn]]: [[wiki/concepts/passkeys]]
+- Em [[wiki/sources/sessions]]: [[wiki/concepts/passkeys]]
 
 ## Pendências
 

@@ -14,18 +14,18 @@ status: stable
 
 Classe de ataque onde o trabalho computacional é realizado **antes** do ataque em si, gerando uma tabela que pode ser reutilizada contra múltiplos alvos. No contexto de senhas, consiste em pré-computar hashes de senhas candidatas e armazená-los para comparação imediata quando um banco de dados vaza.
 
-O exemplo mais comum é a [[concepts/rainbow-table]].
+O exemplo mais comum é a [[wiki/concepts/rainbow-table]].
 
 ---
 
 ## Funcionamento
 
-1. Coleta uma wordlist (ex: [[entities/rockyou]] — 29 bilhões de senhas reais vazadas)
+1. Coleta uma wordlist (ex: [[wiki/entities/rockyou]] — 29 bilhões de senhas reais vazadas)
 2. Gera `hash(senha)` para cada entrada
 3. Armazena a tabela `{hash: senha}`
 4. Quando um banco vaza, compara os hashes do banco com a tabela → senha encontrada instantaneamente
 
-O custo computacional é pago **uma vez** e o benefício é reutilizado contra qualquer banco que use o mesmo algoritmo sem [[concepts/salt]].
+O custo computacional é pago **uma vez** e o benefício é reutilizado contra qualquer banco que use o mesmo algoritmo sem [[wiki/concepts/salt]].
 
 ---
 
@@ -39,20 +39,20 @@ Com salt único por usuário, o atacante teria que recomputar a tabela inteira p
 
 | Técnica | Efeito |
 |---|---|
-| [[concepts/salt]] | Invalida reutilização de tabelas pré-computadas |
-| [[concepts/cpu-hard]] | Torna a pré-computação lenta demais |
-| [[concepts/memory-hard]] | Limita o paralelismo mesmo com hardware potente |
+| [[wiki/concepts/salt]] | Invalida reutilização de tabelas pré-computadas |
+| [[wiki/concepts/cpu-hard]] | Torna a pré-computação lenta demais |
+| [[wiki/concepts/memory-hard]] | Limita o paralelismo mesmo com hardware potente |
 
 ---
 
 ## Relação com Outros Conceitos
 
-- [[concepts/rainbow-table]] — implementação mais comum
-- [[concepts/salt]] — principal defesa
-- [[concepts/hashing]] — o que é hashado
-- [[concepts/password-hashing]] — contexto de aplicação
-- [[entities/rockyou]] — a wordlist que potencializou esses ataques
+- [[wiki/concepts/rainbow-table]] — implementação mais comum
+- [[wiki/concepts/salt]] — principal defesa
+- [[wiki/concepts/hashing]] — o que é hashado
+- [[wiki/concepts/password-hashing]] — contexto de aplicação
+- [[wiki/entities/rockyou]] — a wordlist que potencializou esses ataques
 
 ## Key Sources
 
-- [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
+- [[wiki/sources/seguranca-armazenamento-senhas-banco-de-dados]]

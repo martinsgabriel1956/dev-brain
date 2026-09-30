@@ -35,11 +35,11 @@ Identity & IAM Avançado: PAM (Privileged Access Management) com JIT para zero s
 ## Entities & Concepts Touched
 
 - [[concepts/pam]]
-- [[concepts/jit-access]]
+- [[wiki/concepts/jit-access]]
 - [[concepts/machine-identity]]
-- [[concepts/spiffe]]
+- [[wiki/concepts/spiffe]]
 - [[concepts/oauth2-1]]
-- [[concepts/least-privilege]]
+- [[wiki/concepts/least-privilege]]
 - [[entities/hashicorp-boundary]]
 
 ## Open Questions

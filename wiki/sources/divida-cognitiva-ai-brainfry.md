@@ -38,11 +38,11 @@ AI Brainfry: uso excessivo de IA está esgotando a mente de devs. O mecanismo é
 
 ## Entities & Concepts Touched
 
-- [[concepts/divida-cognitiva]]
-- [[concepts/ai-brainfry]]
-- [[concepts/vibe-coding]]
+- [[wiki/concepts/divida-cognitiva]]
+- [[wiki/concepts/ai-brainfry]]
+- [[wiki/concepts/vibe-coding]]
 - [[concepts/llmops-observabilidade]]
-- [[entities/margaret-storey]]
+- [[wiki/entities/margaret-storey]]
 
 ## Open Questions
 

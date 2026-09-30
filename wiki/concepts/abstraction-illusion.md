@@ -29,7 +29,7 @@ Esse processo filtrava naturalmente os times que não precisavam do padrão. Hoj
 
 ## Relação com Abstraction Bloat
 
-[[concepts/abstraction-bloat]] é o efeito prático da abstraction illusion: o agente gera a complexidade desnecessária porque foi pedido a "fazer bem" e "bem" é a média ponderada de blog posts de tech.
+[[wiki/concepts/abstraction-bloat]] é o efeito prático da abstraction illusion: o agente gera a complexidade desnecessária porque foi pedido a "fazer bem" e "bem" é a média ponderada de blog posts de tech.
 
 ## Como Evitar
 
@@ -39,10 +39,10 @@ A resposta é constraints-first:
 3. Aplique o teste de adequação: "esse padrão resolve um problema *real* no *meu* contexto?"
 4. Prefira a opção mais reversível quando empatado
 
-Ver [[sources/super-productivity-ai-architecture-guide]] — workflow de 7 passos e 10 perguntas de adequação.
+Ver [[wiki/sources/super-productivity-ai-architecture-guide]] — workflow de 7 passos e 10 perguntas de adequação.
 
 ## Key Sources
 
-- [[sources/super-productivity-ai-architecture-guide]]
-- [[sources/clean-architecture-ia-custo-real]]
-- [[sources/overengineering-carol-ate-quinta]]
+- [[wiki/sources/super-productivity-ai-architecture-guide]]
+- [[wiki/sources/clean-architecture-ia-custo-real]]
+- [[wiki/sources/overengineering-carol-ate-quinta]]

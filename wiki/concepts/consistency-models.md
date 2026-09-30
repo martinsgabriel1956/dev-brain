@@ -95,7 +95,7 @@ dynamodb.getItem({ ..., ConsistentRead: true });
 
 **Submodelos:**
 - **Monotonic Read:** nunca lê valor mais antigo do que já leu
-- **Read Your Writes:** sempre vê suas próprias escritas — ver [[concepts/read-your-writes]]
+- **Read Your Writes:** sempre vê suas próprias escritas — ver [[wiki/concepts/read-your-writes]]
 - **Monotonic Write:** escritas aplicadas na ordem enviada
 
 **Usado em:** Cassandra (padrão), DynamoDB (padrão), DNS, feeds sociais, analytics.
@@ -128,7 +128,7 @@ Eventual Consistency é o "E" de [[wiki/concepts/base-basically-available-soft-s
 ## Key Sources
 
 - [[wiki/sources/raft-leader-election]] — Raft é o algoritmo de consenso mais legível e amplamente usado (etcd, CockroachDB, Consul, TiKV). Três papéis: Leader (único, escreve), Follower (replica), Candidate (em eleição). Eleição: timeout...
-- [[sources/modelos-de-consistencia]]
+- [[wiki/sources/modelos-de-consistencia]]
 - [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] — exemplo de réplicas não sincronizadas e o acrônimo BASE
 - [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — consistência eventual como preço direto do write/read split: escrita no master pode não estar disponível numa leitura quase simultânea de um slave; mitigar com lock reintroduziria SPOF (escrita só confirmada após propagação)
 - [[wiki/sources/github-2018-cap-pacelc-particao-video]] — leitura local (possivelmente defasada) vs. leitura forte medidas em teste local ([[wiki/concepts/custo-da-leitura-forte-vs-local]])

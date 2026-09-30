@@ -49,12 +49,12 @@ Talk de Dex (autor de "12 Factor Agents") sobre como sua equipe de 3 pessoas con
 
 ## Conceitos Centrais
 
-- [[concepts/dumb-zone]] — zona de degradação da context window (~40%+)
-- [[concepts/compaction-intencional]] — compressão periódica do contexto em markdown
-- [[concepts/rpi-workflow]] — Research → Plan → Implement como framework de context management
-- [[concepts/mental-alignment]] — code review como sincronização do modelo mental do time
-- [[concepts/instruction-budget]] — limite implícito de instruções seguíveis com consistência
-- [[concepts/separacao-de-contextos]] — sub-agentes e sessões separadas para controle de contexto
+- [[wiki/concepts/dumb-zone]] — zona de degradação da context window (~40%+)
+- [[wiki/concepts/compaction-intencional]] — compressão periódica do contexto em markdown
+- [[wiki/concepts/rpi-workflow]] — Research → Plan → Implement como framework de context management
+- [[wiki/concepts/mental-alignment]] — code review como sincronização do modelo mental do time
+- [[wiki/concepts/instruction-budget]] — limite implícito de instruções seguíveis com consistência
+- [[wiki/concepts/separacao-de-contextos]] — sub-agentes e sessões separadas para controle de contexto
 
 ---
 
@@ -98,12 +98,12 @@ O terceiro caso é tão importante quanto os sucessos: quando o domínio exige p
 
 ## Conexões com o Wiki
 
-- [[sources/erros-workflow-research-plan-implement]] — perspectiva complementar sobre os erros do mesmo método
-- [[sources/context-engineering]] — fundamentos de sliding window, summarization, prompt cache
-- [[sources/divida-cognitiva-ai-brainfry]] — o custo cognitivo de não manter mental alignment
-- [[sources/addy-osmani-80-problem-agentic-coding]] — abstraction bloat como consequência de contexto não gerenciado
-- [[concepts/vertical-slice-architecture]] — plano vertical é VSA aplicado a workflow de agente
-- [[concepts/comprehension-debt]] — o que acontece quando você não lê o que o agente gerou
+- [[wiki/sources/erros-workflow-research-plan-implement]] — perspectiva complementar sobre os erros do mesmo método
+- [[wiki/sources/context-engineering]] — fundamentos de sliding window, summarization, prompt cache
+- [[wiki/sources/divida-cognitiva-ai-brainfry]] — o custo cognitivo de não manter mental alignment
+- [[wiki/sources/addy-osmani-80-problem-agentic-coding]] — abstraction bloat como consequência de contexto não gerenciado
+- [[wiki/concepts/vertical-slice-architecture]] — plano vertical é VSA aplicado a workflow de agente
+- [[wiki/concepts/comprehension-debt]] — o que acontece quando você não lê o que o agente gerou
 
 ---
 

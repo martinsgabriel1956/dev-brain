@@ -92,7 +92,7 @@ Propriedade desejável: **secrets configurados não são mais visíveis** — ne
 
 ## Key Sources
 
-- [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — regra de não commitar + .env + ferramentas de secrets management; história do frontend com credenciais hardcoded
+- [[wiki/sources/cinco-praticas-seguranca-pragmatic-programmer]] — regra de não commitar + .env + ferramentas de secrets management; história do frontend com credenciais hardcoded
 - [[wiki/sources/underengineering-overengineering-mario-souto]] — variáveis de ambiente configuradas na Vercel em vez de hardcode, incluindo chave de API da OpenAI; hardcode tratado como sintoma de under-engineering
 - [[wiki/sources/modelo-openai-escapa-sandbox-benchmark-cyberseguranca]] — agente de IA autônomo encontra e explora credencial de servidor vazada e indexada publicamente, sem intervenção humana entre descoberta e exploração
 - [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] — `.env` servido publicamente e encontrado via brute force de diretórios, ponto de entrada de uma cadeia completa de comprometimento

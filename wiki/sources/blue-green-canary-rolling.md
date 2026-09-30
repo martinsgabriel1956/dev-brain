@@ -23,11 +23,11 @@ Três estratégias para liberar nova versão em produção com risco controlado.
 
 ## Key Claims
 
-- **Blue/Green** — swap atômico no load balancer, rollback em segundos, custo 2x de infra durante deploy. → [[concepts/blue-green-deploy]]
-- **Canary** — tráfego vai gradualmente para v2 (5% → 20% → 100%), rollback automático se métricas degradam. Requer Prometheus + Argo Rollouts. → [[concepts/canary-release]]
-- **Rolling Update** — nativo no Kubernetes, sem custo extra, mas tráfego misto inevitável e rollback lento. → [[concepts/rolling-update]]
-- **DB migrations com Expand-Contract** — renomear coluna em 3 fases para compatibilidade com v1 e v2 simultâneas. → [[concepts/expand-contract]]
-- **Observabilidade é pré-requisito do Canary** — análise automática de error rate via Prometheus é o que torna o rollback automático possível. → [[concepts/deploy-strategies]]
+- **Blue/Green** — swap atômico no load balancer, rollback em segundos, custo 2x de infra durante deploy. → [[wiki/concepts/blue-green-deploy]]
+- **Canary** — tráfego vai gradualmente para v2 (5% → 20% → 100%), rollback automático se métricas degradam. Requer Prometheus + Argo Rollouts. → [[wiki/concepts/canary-release]]
+- **Rolling Update** — nativo no Kubernetes, sem custo extra, mas tráfego misto inevitável e rollback lento. → [[wiki/concepts/rolling-update]]
+- **DB migrations com Expand-Contract** — renomear coluna em 3 fases para compatibilidade com v1 e v2 simultâneas. → [[wiki/concepts/expand-contract]]
+- **Observabilidade é pré-requisito do Canary** — análise automática de error rate via Prometheus é o que torna o rollback automático possível. → [[wiki/concepts/deploy-strategies]]
 - **Tráfego misto exige backward compatibility** — Canary e Rolling têm v1 e v2 servindo ao mesmo tempo: API e DB schema devem suportar as duas versões.
 
 ## Entities
@@ -38,7 +38,7 @@ Três estratégias para liberar nova versão em produção com risco controlado.
 
 ## Concepts
 
-[[concepts/blue-green-deploy]] · [[concepts/canary-release]] · [[concepts/rolling-update]] · [[concepts/expand-contract]] · [[concepts/deploy-strategies]] · [[concepts/feature-flags]] · [[concepts/zero-downtime-deploy]]
+[[wiki/concepts/blue-green-deploy]] · [[wiki/concepts/canary-release]] · [[wiki/concepts/rolling-update]] · [[wiki/concepts/expand-contract]] · [[wiki/concepts/deploy-strategies]] · [[wiki/concepts/feature-flags]] · [[wiki/concepts/zero-downtime-deploy]]
 
 ## Open Questions
 

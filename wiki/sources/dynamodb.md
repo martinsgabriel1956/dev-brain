@@ -38,13 +38,13 @@ DynamoDB: NoSQL serverless AWS com escala ilimitada. Single-Table Design: todos 
 
 ## Entities & Concepts Touched
 
-- [[concepts/dynamodb]]
+- [[wiki/concepts/dynamodb]]
 - [[concepts/single-table-design]]
 - [[concepts/gsi]]
 - [[concepts/dynamodb-streams]]
 - [[entities/dax]]
 - [[concepts/access-pattern-design]]
-- [[entities/aws]]
+- [[wiki/entities/aws]]
 
 ## Open Questions
 

@@ -41,7 +41,7 @@ HIPAA: protege PHI (Protected Health Information) em sistemas de saúde. BAA (Bu
 - [[concepts/segregation-of-duties]]
 - [[concepts/change-management]]
 - [[concepts/audit-trail]]
-- [[entities/aws]]
+- [[wiki/entities/aws]]
 
 ## Open Questions
 

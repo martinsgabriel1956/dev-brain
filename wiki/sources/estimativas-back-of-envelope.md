@@ -33,10 +33,10 @@ Framework de 4 passos: (1) clarificar escopo — DAU, read/write ratio, pico vs 
 
 ## Conceitos Abordados
 
-- [[concepts/back-of-envelope]]
+- [[wiki/concepts/back-of-envelope]]
 - [[qps]]
 - [[capacity-planning]]
-- [[concepts/db-sharding]]
-- [[concepts/cache]]
-- [[concepts/consistent-hashing]]
-- [[concepts/rate-limiting]]
+- [[wiki/concepts/db-sharding]]
+- [[wiki/concepts/cache]]
+- [[wiki/concepts/consistent-hashing]]
+- [[wiki/concepts/rate-limiting]]

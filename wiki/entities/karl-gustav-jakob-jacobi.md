@@ -16,8 +16,8 @@ Matemático alemão (1804–1851). Contribuições em álgebra, teoria dos núme
 
 ## Contribuição relevante
 
-Uma de suas teorias matemáticas pode ser traduzida como *"inverter, sempre inverta"* — origem do [[concepts/principio-da-inversao]] popularizado por Charlie Munger como modelo mental de tomada de decisão.
+Uma de suas teorias matemáticas pode ser traduzida como *"inverter, sempre inverta"* — origem do [[wiki/concepts/principio-da-inversao]] popularizado por Charlie Munger como modelo mental de tomada de decisão.
 
 ## Key Sources
 
-- [[sources/principio-da-inversao-programador]]
+- [[wiki/sources/principio-da-inversao-programador]]

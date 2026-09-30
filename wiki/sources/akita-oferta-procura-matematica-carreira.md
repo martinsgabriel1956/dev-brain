@@ -43,14 +43,14 @@ Mercado de programação é regido por lei de oferta e procura em ciclos de abun
 
 ## Entities & Concepts Touched
 
-- [[concepts/ciclo-de-mercado-tech]]
-- [[concepts/raciocinio-matematico-aplicado]]
-- [[concepts/apego-a-ferramentas]]
-- [[concepts/autodidata]]
-- [[concepts/aprendizado-passivo]]
-- [[concepts/fundacao-tecnica]]
-- [[concepts/password-hashing]]
-- [[entities/fabio-akita]]
+- [[wiki/concepts/ciclo-de-mercado-tech]]
+- [[wiki/concepts/raciocinio-matematico-aplicado]]
+- [[wiki/concepts/apego-a-ferramentas]]
+- [[wiki/concepts/autodidata]]
+- [[wiki/concepts/aprendizado-passivo]]
+- [[wiki/concepts/fundacao-tecnica]]
+- [[wiki/concepts/password-hashing]]
+- [[wiki/entities/fabio-akita]]
 
 ## Open Questions
 

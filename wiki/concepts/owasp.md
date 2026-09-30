@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/api-security]]: [[concepts/owasp]]
-- Em [[wiki/sources/owasp-top10]]: [[concepts/owasp]]
+- Em [[wiki/sources/api-security]]: [[wiki/concepts/owasp]]
+- Em [[wiki/sources/owasp-top10]]: [[wiki/concepts/owasp]]
 
 ## Pendências
 

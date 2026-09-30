@@ -12,7 +12,7 @@ status: stable
 
 # Object File
 
-Produto da fase de montagem no [[concepts/pipeline-de-compilacao]]. Contém código de máquina para as funções do arquivo-fonte, mas **ainda não é executável** — os endereços finais das funções ainda não foram resolvidos.
+Produto da fase de montagem no [[wiki/concepts/pipeline-de-compilacao]]. Contém código de máquina para as funções do arquivo-fonte, mas **ainda não é executável** — os endereços finais das funções ainda não foram resolvidos.
 
 ## O que contém
 
@@ -36,8 +36,8 @@ O linker precisa resolver dois problemas:
 
 ## Ponto de Interoperabilidade
 
-O object file é o **formato neutro** que permite múltiplas linguagens coexistirem. C, Rust, Fortran e assembly escrito à mão todos geram object files para a mesma arquitetura. O [[concepts/static-linking]] e [[concepts/dynamic-linking]] operam sobre esses arquivos.
+O object file é o **formato neutro** que permite múltiplas linguagens coexistirem. C, Rust, Fortran e assembly escrito à mão todos geram object files para a mesma arquitetura. O [[wiki/concepts/static-linking]] e [[wiki/concepts/dynamic-linking]] operam sobre esses arquivos.
 
 ## Key Sources
 
-- [[sources/como-multiplas-linguagens-vivem-num-unico-binario]]
+- [[wiki/sources/como-multiplas-linguagens-vivem-num-unico-binario]]

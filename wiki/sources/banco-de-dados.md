@@ -23,14 +23,14 @@ Banco de dados persiste estado. PostgreSQL é o default — migre só quando ele
 
 ## Key Claims
 
-- **ACID é a fundação do relacional** — Atomicity, Consistency, Isolation, Durability. Dado commitado sobrevive a falha via WAL. → [[concepts/acid]]
-- **NoSQL não substitui relacional, complementa** — cada tipo resolve um problema específico: Document para schema flexível, Key-Value para acesso por chave, Wide-Column para escrita massiva, Graph para relacionamentos complexos. → [[concepts/nosql]]
-- **Índice tem custo de escrita** — cada `INSERT`/`UPDATE`/`DELETE` atualiza todos os índices. 15 índices = 15x mais trabalho por escrita. → [[concepts/database-index]]
-- **Transações são obrigatórias para operações dependentes** — dois updates dependentes sem `$transaction` podem resultar em estado inválido. → [[concepts/database-transactions]]
-- **Read replicas para workload read-heavy** — roteamento explícito read→réplica, write→primário. Read-your-writes via flag no Redis. → [[concepts/read-replicas]] [[concepts/read-your-writes]]
-- **PgBouncer elimina overhead de conexões** — 50 pods × 20 conexões = 1000 → PgBouncer → 20 conexões reais. `pool_mode = transaction` é o recomendado. → [[concepts/connection-pooling]]
-- **N+1 é o bug de performance mais comum** — 1 query + N queries em loop; solução é JOIN via `include`. → [[concepts/n-plus-one]]
-- **PostgreSQL faz mais do que parece** — JSONB, full-text search, pg_vector (busca vetorial IA), Timescaledb (série temporal). → [[concepts/postgresql]]
+- **ACID é a fundação do relacional** — Atomicity, Consistency, Isolation, Durability. Dado commitado sobrevive a falha via WAL. → [[wiki/concepts/acid]]
+- **NoSQL não substitui relacional, complementa** — cada tipo resolve um problema específico: Document para schema flexível, Key-Value para acesso por chave, Wide-Column para escrita massiva, Graph para relacionamentos complexos. → [[wiki/concepts/nosql]]
+- **Índice tem custo de escrita** — cada `INSERT`/`UPDATE`/`DELETE` atualiza todos os índices. 15 índices = 15x mais trabalho por escrita. → [[wiki/concepts/database-index]]
+- **Transações são obrigatórias para operações dependentes** — dois updates dependentes sem `$transaction` podem resultar em estado inválido. → [[wiki/concepts/database-transactions]]
+- **Read replicas para workload read-heavy** — roteamento explícito read→réplica, write→primário. Read-your-writes via flag no Redis. → [[wiki/concepts/read-replicas]] [[wiki/concepts/read-your-writes]]
+- **PgBouncer elimina overhead de conexões** — 50 pods × 20 conexões = 1000 → PgBouncer → 20 conexões reais. `pool_mode = transaction` é o recomendado. → [[wiki/concepts/connection-pooling]]
+- **N+1 é o bug de performance mais comum** — 1 query + N queries em loop; solução é JOIN via `include`. → [[wiki/concepts/n-plus-one]]
+- **PostgreSQL faz mais do que parece** — JSONB, full-text search, pg_vector (busca vetorial IA), Timescaledb (série temporal). → [[wiki/concepts/postgresql]]
 
 ## Entities
 
@@ -42,7 +42,7 @@ Banco de dados persiste estado. PostgreSQL é o default — migre só quando ele
 
 ## Concepts
 
-[[concepts/acid]] · [[concepts/nosql]] · [[concepts/database-index]] · [[concepts/database-transactions]] · [[concepts/read-replicas]] · [[concepts/read-your-writes]] · [[concepts/connection-pooling]] · [[concepts/n-plus-one]] · [[concepts/postgresql]] · [[concepts/relational-vs-nosql]]
+[[wiki/concepts/acid]] · [[wiki/concepts/nosql]] · [[wiki/concepts/database-index]] · [[wiki/concepts/database-transactions]] · [[wiki/concepts/read-replicas]] · [[wiki/concepts/read-your-writes]] · [[wiki/concepts/connection-pooling]] · [[wiki/concepts/n-plus-one]] · [[wiki/concepts/postgresql]] · [[wiki/concepts/relational-vs-nosql]]
 
 ## Open Questions
 

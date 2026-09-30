@@ -12,7 +12,7 @@ status: stable
 
 # Component Library
 
-Conjunto de componentes de UI pré-construídos e pré-estilizados que aceleram o desenvolvimento frontend. São o principal facilitador da abordagem [[concepts/code-first]].
+Conjunto de componentes de UI pré-construídos e pré-estilizados que aceleram o desenvolvimento frontend. São o principal facilitador da abordagem [[wiki/concepts/code-first]].
 
 ---
 
@@ -21,7 +21,7 @@ Conjunto de componentes de UI pré-construídos e pré-estilizados que aceleram 
 | Biblioteca | Tipo | Nota |
 |---|---|---|
 | Shadcn/UI | Componentes com estilo + headless | Cópia para o projeto, não dependência |
-| Radix UI | Headless (sem estilo) | Fundação acessível — ver [[entities/radix-ui]] |
+| Radix UI | Headless (sem estilo) | Fundação acessível — ver [[wiki/entities/radix-ui]] |
 | Headless UI | Headless | Da Tailwind Labs |
 | Vercel AI Elements | Componentes de AI UI | Para interfaces de LLM e chat |
 
@@ -33,7 +33,7 @@ Componentes de library são construídos de forma isolada, sem o contexto da apl
 - Componentes de diferentes origens coexistem sem coerência visual
 - O resultado parece uma colagem de partes que não conversam entre si
 
-**Mitigação:** usar uma única library como base + ter referências visuais antes de começar (ex: [[concepts/design-first]] ou Dribbble).
+**Mitigação:** usar uma única library como base + ter referências visuais antes de começar (ex: [[wiki/concepts/design-first]] ou Dribbble).
 
 ---
 
@@ -50,10 +50,10 @@ Componentes de library são construídos de forma isolada, sem o contexto da apl
 
 ## Relação com Outros Conceitos
 
-- [[concepts/code-first]] — component libraries são a ferramenta central da abordagem code-first
-- [[concepts/design-engineer]] — Design Engineers usam libraries mas mantêm visão coesa via referências
-- [[concepts/design-first]] — alternativa que define a coerência visual antes de escolher componentes
+- [[wiki/concepts/code-first]] — component libraries são a ferramenta central da abordagem code-first
+- [[wiki/concepts/design-engineer]] — Design Engineers usam libraries mas mantêm visão coesa via referências
+- [[wiki/concepts/design-first]] — alternativa que define a coerência visual antes de escolher componentes
 
 ## Key Sources
 
-- [[sources/design-first-vs-code-first-referencias]]
+- [[wiki/sources/design-first-vs-code-first-referencias]]

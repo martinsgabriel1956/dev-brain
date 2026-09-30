@@ -83,9 +83,9 @@ cache-to: type=gha,mode=max
 
 ## Ver também
 
-- [[concepts/ci-cd]] — disciplina e princípios
-- [[concepts/github-actions]] — implementação de referência
-- [[concepts/argo-rollouts]] — o que acontece depois que o CI passa
+- [[wiki/concepts/ci-cd]] — disciplina e princípios
+- [[wiki/concepts/github-actions]] — implementação de referência
+- [[wiki/concepts/argo-rollouts]] — o que acontece depois que o CI passa
 
 ## LLM Fora do Caminho Crítico do Build
 
@@ -93,7 +93,7 @@ Segundo [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]]
 
 ## Key Sources
 
-- [[sources/cicd-pipeline]]
+- [[wiki/sources/cicd-pipeline]]
 - [[wiki/sources/deployment-pipeline-martin-fowler]] — origem do princípio de estágios progressivos por confiança
 - [[wiki/sources/continuous-delivery-martin-fowler]] — o deployment pipeline como um dos dois requisitos de Continuous Delivery, ao lado da cultura colaborativa ([[wiki/concepts/devops-culture]])
 - [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — stages determinísticos; evals de LLM em disparo separado

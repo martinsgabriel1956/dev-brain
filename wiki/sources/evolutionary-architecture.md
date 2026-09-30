@@ -35,9 +35,9 @@ Evolutionary Architecture (Ford, Parsons, Kua): arquitetura que suporta mudança
 ## Entities & Concepts Touched
 
 - [[concepts/evolutionary-architecture]]
-- [[concepts/strangler-fig]]
-- [[concepts/fitness-functions]]
-- [[concepts/feature-flags]]
+- [[wiki/concepts/strangler-fig-pattern]]
+- [[wiki/concepts/fitness-functions]]
+- [[wiki/concepts/feature-flags]]
 - [[concepts/incremental-change]]
 - [[concepts/big-bang-rewrite]]
 

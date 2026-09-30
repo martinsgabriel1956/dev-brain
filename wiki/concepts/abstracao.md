@@ -69,8 +69,8 @@ A fonte usa uma analogia médica para justificar por que isso é necessário: um
 
 - [[acoplamento]] — boa abstração é o que permite baixo acoplamento entre camadas
 - [[single-responsibility]] — cada abstração deve representar uma única responsabilidade
-- [[concepts/hexagonal-architecture]] — Ports & Adapters é a formalização arquitetural de abstração: Port = contrato, Adapter = implementação concreta
-- [[concepts/dependency-injection]] — DI é o mecanismo que injeta a implementação concreta numa abstração
+- [[wiki/concepts/hexagonal-architecture]] — Ports & Adapters é a formalização arquitetural de abstração: Port = contrato, Adapter = implementação concreta
+- [[wiki/concepts/dependency-injection]] — DI é o mecanismo que injeta a implementação concreta numa abstração
 
 ## Linguagem Natural Como a Camada Mais Recente
 
@@ -80,7 +80,7 @@ A fonte usa uma analogia médica para justificar por que isso é necessário: um
 
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — linguagem natural como nova camada no topo da cadeia assembly→C→bytecode/JVM
 - [[wiki/sources/acoplamento-abstracao-estado]]
-- [[sources/roadmap-dev-senior-2026]] — abstração como pilar 2: camadas que escondem complexidade sem esconder clareza
+- [[wiki/sources/roadmap-dev-senior-2026]] — abstração como pilar 2: camadas que escondem complexidade sem esconder clareza
 - [[wiki/sources/10-conceitos-fundamentais-computacao]] — abstração como o #1 conceito fundamental; cada um dos 9 outros conceitos é uma camada de abstração
 - [[wiki/sources/design-pattern-adapter]] — caso concreto: extrair uma interface (`PdfAdapter`) entre a classe de negócio e uma lib externa de PDF é o que permite trocar de lib (DomPDF → TCPDF) sem tocar no consumidor
 - [[wiki/sources/7-habitos-programador-altamente-eficaz]] — pensar primeiro em abstrações e seus limites como hábito de maturidade; analogia dos órgãos do corpo humano para justificar por que limites bem definidos importam

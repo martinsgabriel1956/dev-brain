@@ -34,9 +34,9 @@ RFC (Request for Comments): documento para propor e debater decisões técnicas 
 
 ## Entities & Concepts Touched
 
-- [[concepts/rfc]]
-- [[concepts/adr]]
-- [[concepts/architecture-documentation]]
+- [[wiki/concepts/rfc-request-for-comments]]
+- [[wiki/concepts/adr-architecture-decision-record]]
+- [[wiki/concepts/architecture-documentation]]
 - [[concepts/technical-decision]]
 
 ## Open Questions

@@ -57,8 +57,8 @@ Ambos parametrizam um objeto com uma ação, mas com propósitos diferentes:
 
 ## Key Sources
 
-- [[sources/design-pattern-strategy]] — mencionado nas relações com Strategy
-- [[sources/design-pattern-observer]] — mencionado nas relações: conexão unidirecional remetente→destinatário
+- [[wiki/sources/design-pattern-strategy]] — mencionado nas relações com Strategy
+- [[wiki/sources/design-pattern-observer]] — mencionado nas relações: conexão unidirecional remetente→destinatário
 - [[wiki/sources/unit-of-work-padrao-de-design]] — comparação explícita entre Unit of Work e Command como padrões que encapsulam operação(ões) em objeto(s) antes da execução
 - [[wiki/sources/testcase-object-xunitpatterns]] — aplicação do Command Pattern ao Testcase Object da família xUnit: cada teste é um Command com método `run` padrão
 - [[wiki/sources/command-xunitpatterns]] — fonte primária isolada da definição formal do GOF, em inglês, citada por Meszaros no verbete de External Patterns

@@ -4,7 +4,7 @@ title: "Soft Skills Como Diferencial de Pleno"
 aliases: ["não seja um idiota", "soft skill como único diferencial", "reclassificação de soft skills"]
 date_created: 2026-08-19
 date_updated: 2026-09-30
-source_count: 3
+source_count: 4
 tags: [carreira, pleno, soft-skills, ia-para-devs, senioridade]
 skill: tech-mentor-leadership
 status: stub
@@ -45,3 +45,4 @@ O mesmo autor trata comunicação, visibilidade e alinhamento com o gestor como 
 - [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — origem da tese; autocorreção do próprio autor sobre uma lista de 13 itens de 4 anos antes
 - [[wiki/sources/como-se-comportar-na-entrevista-de-system-design-tier-s]] — mesma conclusão (comportamental como diferencial real), mecanismo distinto: seleção entre candidatos humanos, não comoditização por IA
 - [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]
+- [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — contraponto/complemento: o diferencial de pleno é a qualidade de decisão (legibilidade, modelagem), além de tecnologias

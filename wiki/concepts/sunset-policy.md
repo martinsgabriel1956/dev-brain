@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/api-contracts-versioning]]: [[concepts/sunset-policy]]
-- Em [[wiki/sources/rest-openapi]]: [[concepts/sunset-policy]]
+- Em [[wiki/sources/api-contracts-versioning]]: [[wiki/concepts/sunset-policy]]
+- Em [[wiki/sources/rest-openapi]]: [[wiki/concepts/sunset-policy]]
 
 ## Pendências
 

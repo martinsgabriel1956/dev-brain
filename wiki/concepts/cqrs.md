@@ -4,7 +4,7 @@ title: "CQRS — Command Query Responsibility Segregation"
 aliases: ["command query responsibility segregation", "cqrs pattern"]
 date_created: 2026-05-31
 date_updated: 2026-09-30
-source_count: 12
+source_count: 13
 tags: [cqrs, arquitetura, event-sourcing, ddd, sistemas-distribuidos]
 skill: tech-mentor-backend
 status: draft
@@ -37,7 +37,7 @@ O estado em memória (ex: saldo calculado) **nunca vai direto ao banco** — o b
 
 ## Relação com Event Sourcing
 
-[[concepts/event-sourcing]] e CQRS andam juntos mas são independentes:
+[[wiki/concepts/event-sourcing]] e CQRS andam juntos mas são independentes:
 - Event Sourcing: *como persistir* (eventos imutáveis)
 - CQRS: *como separar leitura de escrita*
 
@@ -45,7 +45,7 @@ Em prática: events persistidos, projeções (read models) construídas por CQRS
 
 ## Uso no Nubank
 
-O [[nubank]] utiliza CQRS em conjunto com [[concepts/event-sourcing]] e [[datomic]]. A separação permite que o estado atual (saldo, status) seja reconstruído a partir do event log sem poluir o modelo de domínio.
+O [[nubank]] utiliza CQRS em conjunto com [[wiki/concepts/event-sourcing]] e [[datomic]]. A separação permite que o estado atual (saldo, status) seja reconstruído a partir do event log sem poluir o modelo de domínio.
 
 ## Caso Real: CQRS Aplicado à Latência do Caminho Crítico (Nubank)
 
@@ -149,6 +149,16 @@ Antes de separar em serviços/código-fonte distintos, a forma mais simples de C
 
 No vídeo [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]], CQRS é citado como um dos estilos a que a [[wiki/concepts/comunicacao-assincrona]] dá acesso, junto com Event Sourcing, EDA e microsserviços; o autor adia os detalhes. A consistência eventual descrita ali é o mesmo custo visto na sincronização write→read.
 
+## Do Problema de Lock ao Banco de Leitura Separado
+
+[[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] parte de um sintoma operacional — consultas presas por locks/transações abertas num banco único, com carga muito desbalanceada entre leitura e escrita ([[wiki/concepts/contencao-de-lock-leitura-escrita]]) — e leva CQRS até a **separação física**:
+
+1. **Escrita:** UI → comando → [[wiki/concepts/command-bus]] → command handler (repositório, domínio, regras) → banco **relacional**.
+2. **Sincronização:** após gravar, publica-se um evento; ele vai como mensagem a uma fila do broker ([[wiki/entities/rabbitmq]]) e é lido por um consumer assíncrono ([[wiki/concepts/event-handler]]) que transforma e grava no banco de leitura.
+3. **Leitura:** a camada de queries vai direto a um banco **desnormalizado** (geralmente NoSQL/JSON — [[wiki/concepts/read-model]]), com dados no formato da tela, sem joins.
+
+Ganhos apontados: a escrita não é onerada pela atualização da leitura; o consumer escala de forma independente; cada banco é escolhido para sua carga. Custo: pequeno delay — [[wiki/concepts/eventual-consistency]]. A fonte admite também atualização imediata como alternativa. Lacunas frente às outras fontes: não trata [[wiki/concepts/dual-write-problem]] nem idempotência do consumer; e, conforme [[wiki/sources/cqrs-martin-fowler]], convém avaliar antes opções mais baratas (snapshot isolation, [[wiki/concepts/read-replicas]], reporting database).
+
 ## Key Sources
 
 - [[wiki/sources/ddd-cqrs]] — CQRS separa o modelo de escrita (Command Side — Aggregate normalizado, regras de negócio) do modelo de leitura (Query Side — Read Model desnormalizado, otimizado para queries). Projeções sincronizam...
@@ -163,3 +173,4 @@ No vídeo [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernar
 - [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — vídeo focado em Event Sourcing que recomenda CQRS como conteúdo complementar; não desenvolve CQRS diretamente, só reforça a proximidade entre os dois padrões
 - [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — caso real aplicando CQRS a um requisito de latência (não de modelagem): autorização de transação reduzida de ~10.000ms a 288ms P90 via materialização no write side
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — CQRS listado como estilo que depende da comunicação assíncrona
+- [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — problema motivador (consultas presas por locks) e CQRS com separação física: comandos → command handler → banco relacional; evento → fila (RabbitMQ) → consumer → banco de leitura NoSQL desnormalizado

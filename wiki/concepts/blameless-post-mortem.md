@@ -76,5 +76,5 @@ A seção "O que Funcionou Bem" é obrigatória — reforça blameless culture e
 
 ## Key Sources
 
-- [[sources/sre-sli-slo-sla]]
-- [[sources/sre-error-budget-incidents]]
+- [[wiki/sources/sre-sli-slo-sla]]
+- [[wiki/sources/sre-error-budget-incidents]]

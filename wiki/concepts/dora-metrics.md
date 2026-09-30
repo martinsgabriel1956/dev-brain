@@ -42,8 +42,8 @@ Não usar para comparar times entre si (contextos diferentes) nem para avaliar p
 
 - [[over-engineering]] — o "triângulo de ferro" é o mito que a pesquisa DORA refuta; medo de quebrar leva a portões de deploy excessivos (PRs grandes, muitas aprovações), que por sua vez pioram tanto a velocidade quanto a qualidade
 - [[ci-cd]] — a prática que operacionaliza deploys frequentes e lead time curto
-- [[concepts/tdd]] — testes automatizados são pré-condição para manter o sistema sempre implantável
-- [[concepts/zero-downtime-deploy]] — reduz o custo/risco percebido de cada deploy, incentivando frequência maior
+- [[wiki/concepts/tdd]] — testes automatizados são pré-condição para manter o sistema sempre implantável
+- [[wiki/concepts/zero-downtime-deploy]] — reduz o custo/risco percebido de cada deploy, incentivando frequência maior
 - [[wiki/concepts/goodharts-law]] — a mesma regra de "não usar para comparar times nem avaliar indivíduos" é uma defesa contra o mesmo risco que corrompe [[wiki/concepts/story-points]] quando forçados como meta: a métrica vira alvo e para de medir o que deveria medir
 
 ## Lead Time como Sinal Indireto de Dívida Técnica

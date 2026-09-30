@@ -12,7 +12,7 @@ status: stable
 
 # Pivotar ou Perseverar
 
-Sexta fase do [[concepts/lean-startup]]: depois de validar produto, medir e contabilizar resultados, chega o momento de decidir entre duas direções.
+Sexta fase do [[wiki/concepts/lean-startup]]: depois de validar produto, medir e contabilizar resultados, chega o momento de decidir entre duas direções.
 
 ## Persevere
 
@@ -26,14 +26,14 @@ O produto funciona (usuários usam, confiam) mas a economia não fecha — exemp
 
 > "A solução a gente consegue criar outras."
 
-O livro insiste nisso desde a fase de [[concepts/validacao-de-problema]] porque é o que torna o pivô possível sem sensação de fracasso total: se o compromisso é com o problema validado (a dor real), trocar de solução é iteração, não desistência. Se o compromisso fosse com a solução original, pivotar pareceria abandonar o projeto.
+O livro insiste nisso desde a fase de [[wiki/concepts/validacao-de-problema]] porque é o que torna o pivô possível sem sensação de fracasso total: se o compromisso é com o problema validado (a dor real), trocar de solução é iteração, não desistência. Se o compromisso fosse com a solução original, pivotar pareceria abandonar o projeto.
 
 ## Ver Também
 
-- [[concepts/contabilizacao-de-inovacao]] — métricas que embasam a decisão
-- [[concepts/validacao-de-problema]] — onde a "paixão pelo problema" começa
-- [[concepts/inovacao-continua]] — o que acontece depois de "perseverar" dar certo por muito tempo
+- [[wiki/concepts/contabilizacao-de-inovacao]] — métricas que embasam a decisão
+- [[wiki/concepts/validacao-de-problema]] — onde a "paixão pelo problema" começa
+- [[wiki/concepts/inovacao-continua]] — o que acontece depois de "perseverar" dar certo por muito tempo
 
 ## Key Sources
 
-- [[sources/lean-startup-para-devs-mano-deivin]]
+- [[wiki/sources/lean-startup-para-devs-mano-deivin]]

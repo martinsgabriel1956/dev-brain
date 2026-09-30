@@ -57,19 +57,19 @@ Comentário em vídeo, reagindo a um vídeo de David Farley sobre over-engineeri
 
 ## Conceitos
 
-- [[concepts/over-engineering]]
-- [[concepts/dora-metrics]]
-- [[concepts/walking-skeleton]]
-- [[concepts/tdd]]
-- [[concepts/ci-cd]]
-- [[concepts/kiss]]
+- [[wiki/concepts/over-engineering]]
+- [[wiki/concepts/dora-metrics]]
+- [[wiki/concepts/walking-skeleton]]
+- [[wiki/concepts/tdd]]
+- [[wiki/concepts/ci-cd]]
+- [[wiki/concepts/kiss]]
 
 ---
 
 ## Entidades
 
-- [[entities/david-farley]] — coautor de *Continuous Delivery*, criador de conteúdo sobre engenharia de software, envolvido no desenvolvimento do LMAX.
-- [[entities/martin-fowler]] — citado na anedota da Thoughtworks/origem do ágil.
+- [[wiki/entities/david-farley]] — coautor de *Continuous Delivery*, criador de conteúdo sobre engenharia de software, envolvido no desenvolvimento do LMAX.
+- [[wiki/entities/martin-fowler]] — citado na anedota da Thoughtworks/origem do ágil.
 
 ---
 

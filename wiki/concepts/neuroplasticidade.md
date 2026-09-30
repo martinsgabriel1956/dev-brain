@@ -37,5 +37,5 @@ A pausa é quando a neuroplasticidade acontece: o cérebro reorganiza os circuit
 
 ## Key Sources
 
-- [[sources/como-aprender-programacao-3-dicas]]
+- [[wiki/sources/como-aprender-programacao-3-dicas]]
 - [[wiki/sources/como-nunca-mais-esquecer-o-que-voce-estuda-programacao]] — nomeia o mecanismo como homeostase sináptica e lista os seis critérios de retenção

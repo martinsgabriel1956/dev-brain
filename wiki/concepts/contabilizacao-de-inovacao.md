@@ -12,7 +12,7 @@ status: stable
 
 # Contabilização de Inovação
 
-Quarta fase do [[concepts/lean-startup]]. Poucas empresas chegam até aqui — as fases anteriores ([[concepts/validacao-de-problema]], [[concepts/build-measure-learn]], [[concepts/aprendizagem-validada]]) já filtram a maioria dos produtos que não sobrevivem à validação inicial.
+Quarta fase do [[wiki/concepts/lean-startup]]. Poucas empresas chegam até aqui — as fases anteriores ([[wiki/concepts/validacao-de-problema]], [[wiki/concepts/build-measure-learn]], [[wiki/concepts/aprendizagem-validada]]) já filtram a maioria dos produtos que não sobrevivem à validação inicial.
 
 ## O Que É
 
@@ -26,14 +26,14 @@ Métricas típicas:
 
 ## Por Que Vem Depois da Validação de Produto
 
-Sem produto validado ([[concepts/build-measure-learn]]) e decisões consolidadas por dados ([[concepts/aprendizagem-validada]]), qualquer métrica de negócio é prematura — mede-se retenção de um produto que ninguém confirmou que resolve o problema certo. A contabilização de inovação assume que o "o quê" já foi validado, e agora mede o "vale a pena manter/escalar".
+Sem produto validado ([[wiki/concepts/build-measure-learn]]) e decisões consolidadas por dados ([[wiki/concepts/aprendizagem-validada]]), qualquer métrica de negócio é prematura — mede-se retenção de um produto que ninguém confirmou que resolve o problema certo. A contabilização de inovação assume que o "o quê" já foi validado, e agora mede o "vale a pena manter/escalar".
 
 ## Ver Também
 
-- [[concepts/aprendizagem-validada]] — fase anterior
-- [[concepts/lean-startup]] — visão geral das fases
+- [[wiki/concepts/aprendizagem-validada]] — fase anterior
+- [[wiki/concepts/lean-startup]] — visão geral das fases
 - Próxima fase da metodologia: crescimento sustentável (testar modelos de monetização) — sem página própria ainda, ver fonte
 
 ## Key Sources
 
-- [[sources/lean-startup-para-devs-mano-deivin]]
+- [[wiki/sources/lean-startup-para-devs-mano-deivin]]

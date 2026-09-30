@@ -29,5 +29,5 @@ Antes de uma página cheia precisar se dividir, ela normalmente já passou pelo 
 
 ## Key Sources
 
-- [[sources/uuid-primary-key-mysql]]
+- [[wiki/sources/uuid-primary-key-mysql]]
 - [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]] — contexto mais amplo de por que o banco organiza dado em páginas e busca por página, não por linha isolada

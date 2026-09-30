@@ -3,8 +3,8 @@ type: concept
 title: "Materialized View"
 aliases: ["view materializada", "mv", "view com cache"]
 date_created: 2026-07-03
-date_updated: 2026-08-27
-source_count: 2
+date_updated: 2026-09-30
+source_count: 3
 tags: [banco-de-dados, sql, cache, performance, postgresql]
 skill: tech-mentor-backend
 status: stub
@@ -33,3 +33,4 @@ Meio-termo entre extrair dado bruto repetidamente e cravar regra de negócio int
 
 - [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]
 - [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] — materialized views como opção de consistência forte no CQRS, classificada como "CQRS-like": resolve modelo, não resolve volume
+- [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — alternativa de read model na mesma base, contraposta ao banco de leitura físico separado da fonte

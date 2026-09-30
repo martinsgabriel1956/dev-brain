@@ -53,4 +53,4 @@ Cada middleware chama `next()` para passar adiante ou responde diretamente para 
 
 ## Key Sources
 
-- [[sources/design-pattern-observer]] — mencionado nas relações com outros padrões
+- [[wiki/sources/design-pattern-observer]] — mencionado nas relações com outros padrões

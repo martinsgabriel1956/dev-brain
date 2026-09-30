@@ -44,10 +44,10 @@ AI Gateway abstrai providers, roteia por custo/qualidade, implementa fallback e 
 ## Entities & Concepts Touched
 
 - [[concepts/ai-gateway]]
-- [[concepts/cascade-pattern-llm]]
-- [[concepts/semantic-cache]]
+- [[wiki/concepts/cascade-pattern-llm]]
+- [[wiki/concepts/semantic-cache]]
 - [[concepts/token-economics]]
-- [[concepts/finops]]
+- [[wiki/concepts/finops]]
 - [[entities/litellm]]
 - [[entities/portkey]]
 

@@ -12,11 +12,11 @@ status: stub
 
 # Raft / Paxos
 
-Algoritmos de consenso distribuído que toleram partições de rede via quorum — diferente de [[concepts/two-phase-commit]] e [[concepts/three-phase-commit]].
+Algoritmos de consenso distribuído que toleram partições de rede via quorum — diferente de [[wiki/concepts/two-phase-commit]] e [[wiki/concepts/three-phase-commit]].
 
 ## Mecanismo Central: Quorum
 
-Uma decisão só avança se a maioria dos nós (quorum) concordar. Partição que isola minoria não consegue avançar — evita [[concepts/split-brain]].
+Uma decisão só avança se a maioria dos nós (quorum) concordar. Partição que isola minoria não consegue avançar — evita [[wiki/concepts/split-brain]].
 
 ## Raft vs Paxos
 
@@ -35,10 +35,10 @@ Uma decisão só avança se a maioria dos nós (quorum) concordar. Partição qu
 
 ## Quando Usar
 
-Para **consenso de liderança** e **replicação de log** com tolerância a partição. Não é um substituto direto para transações de aplicação — para isso, veja [[concepts/saga-pattern]] e [[concepts/distributed-transactions]].
+Para **consenso de liderança** e **replicação de log** com tolerância a partição. Não é um substituto direto para transações de aplicação — para isso, veja [[wiki/concepts/saga-pattern]] e [[wiki/concepts/distributed-transactions]].
 
 ## Key Sources
 
 - [[wiki/sources/raft-leader-election]] — Raft é o algoritmo de consenso mais legível e amplamente usado (etcd, CockroachDB, Consul, TiKV). Três papéis: Leader (único, escreve), Follower (replica), Candidate (em eleição). Eleição: timeout...
-- [[sources/3pc]]
+- [[wiki/sources/3pc]]
 - [[wiki/sources/github-2018-cap-pacelc-particao-video]] — leitura forte exige round trip ao quórum (~+0,19 ms no teste local); ver [[wiki/concepts/custo-da-leitura-forte-vs-local]]

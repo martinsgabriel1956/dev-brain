@@ -25,11 +25,11 @@ Numa arquitetura de microsserviços com [[wiki/concepts/database-per-service|ban
 
 ## Relação com Transações
 
-ACID é o **contrato** que o banco oferece. `$transaction` é como o código o invoca. Sem transação explícita, operações dependentes violam Atomicity. → [[concepts/database-transactions]]
+ACID é o **contrato** que o banco oferece. `$transaction` é como o código o invoca. Sem transação explícita, operações dependentes violam Atomicity. → [[wiki/concepts/database-transactions]]
 
 ## NoSQL e ACID
 
-A maioria dos bancos NoSQL oferece consistência eventual, não ACID completo. Para operações financeiras e inventário crítico, use banco relacional. → [[concepts/relational-vs-nosql]]
+A maioria dos bancos NoSQL oferece consistência eventual, não ACID completo. Para operações financeiras e inventário crítico, use banco relacional. → [[wiki/concepts/relational-vs-nosql]]
 
 O contraponto formal de ACID é [[wiki/concepts/base-basically-available-soft-state-eventual|BASE]] (Basically Available, Soft State, Eventual Consistency) — garantias mais fracas, mas com maior disponibilidade e escalabilidade.
 
@@ -51,7 +51,7 @@ Durability não significa "gravado imediatamente no arquivo final" — significa
 
 ## Key Sources
 
-- [[sources/banco-de-dados]]
+- [[wiki/sources/banco-de-dados]]
 - [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]] — mecanismo concreto de Durability (WAL → commit → dirty page → recovery) e de Isolation (MVCC + isolation levels)
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] — contraponto com BASE e custo de performance da consistência forte

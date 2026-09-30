@@ -95,7 +95,7 @@ Um sistema pode ter CPU baixa e queries individuais rápidas e ainda assim bater
 
 ## Key Sources
 
-- [[sources/banco-de-dados]]
+- [[wiki/sources/banco-de-dados]]
 - [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] — instrumentação por tempo de conexão segurada, não latência de query
 - [[wiki/sources/connection-pooling-pool-vs-polling-serverless]] — pool como singleton, vazamento por release esquecido, pooling em serverless (RDS Proxy, Vercel, PgBouncer)
 - [[wiki/sources/monitoramento-aplicacoes-ia-grafana-cloud-opentelemetry]] — vazamento de conexão PostgreSQL nunca encerrada, diagnosticado por um assistente de IA apenas com acesso à telemetria (sem código-fonte), correlacionando timeouts em logs com tempo de conexão segurada em métricas

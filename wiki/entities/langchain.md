@@ -3,8 +3,8 @@ type: entity
 title: "LangChain"
 aliases: ["Leng Chain", "LangChain Inc."]
 date_created: 2026-08-19
-date_updated: 2026-08-19
-source_count: 2
+date_updated: 2026-09-30
+source_count: 3
 tags: [langchain, langgraph, loop-engineering, graph-engineering, agentes, orquestracao]
 skill: tech-mentor-ai
 status: stub
@@ -26,3 +26,4 @@ Nenhuma das fontes que atribuem esses termos à LangChain (incluindo esta) traz 
 
 - [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — atribuição explícita da cunhagem de "loop engineering" e "graph engineering" (ambos 2026) à LangChain
 - [[wiki/sources/graph-engineering-matematica-do-erro-composto]] — segunda atribuição, trecho de áudio impreciso sobre o momento exato do rename
+- [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] — stack do autor (LangChain/LangGraph/Deep Agents) independe do gateway: a API da OpenRouter é a mesma

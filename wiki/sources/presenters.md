@@ -33,7 +33,7 @@ Presenter é a camada que transforma a saída do UseCase em formato adequado par
 - [[concepts/presenter]]
 - [[concepts/view-model]]
 - [[concepts/output-port]]
-- [[concepts/clean-architecture]]
+- [[wiki/concepts/clean-architecture]]
 - [[concepts/interface-adapters]]
 
 ## Open Questions
@@ -47,4 +47,4 @@ Presenter é a camada que transforma a saída do UseCase em formato adequado par
 
 ## Nota de Atualização (2026-07-24)
 
-O link `[[concepts/clean-architecture]]` citado acima agora aponta para uma página real: [[wiki/concepts/clean-architecture]], criada a partir de [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — essa fonte nova descreve o fluxo completo de Clean Architecture numa aplicação web (Controller → Use Case → Entities → Presenter → View), do qual o Presenter/ViewModel descrito nesta página é apenas o trecho final (Output Data → Presenter → ViewModel → View).
+O link `[[wiki/concepts/clean-architecture]]` citado acima agora aponta para uma página real: [[wiki/concepts/clean-architecture]], criada a partir de [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — essa fonte nova descreve o fluxo completo de Clean Architecture numa aplicação web (Controller → Use Case → Entities → Presenter → View), do qual o Presenter/ViewModel descrito nesta página é apenas o trecho final (Output Data → Presenter → ViewModel → View).

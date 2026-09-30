@@ -37,10 +37,10 @@ Zero Trust: "nunca confie, sempre verifique" — nenhum acesso é implicitamente
 - [[concepts/zero-trust]]
 - [[concepts/conditional-access]]
 - [[concepts/spiffe-spire]]
-- [[concepts/ztna]]
-- [[concepts/mtls]]
-- [[entities/cloudflare]]
-- [[entities/tailscale]]
+- [[wiki/concepts/ztna]]
+- [[wiki/concepts/mtls]]
+- [[wiki/entities/cloudflare]]
+- [[wiki/entities/tailscale]]
 
 ## Open Questions
 

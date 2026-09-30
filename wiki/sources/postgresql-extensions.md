@@ -43,7 +43,7 @@ status: stable
 - [[concepts/pg-repack]]
 - [[concepts/pglogical]]
 - [[concepts/savepoints]]
-- [[concepts/vacuum-postgresql]]
+- [[wiki/concepts/vacuum-postgresql]]
 
 ## Open Questions
 

@@ -36,4 +36,4 @@ TurboModules (nova arquitetura RN via JSI) eliminam a bridge serializada — ace
 
 ## Key sources
 
-- [[sources/mobile-platform-engineering]]
+- [[wiki/sources/mobile-platform-engineering]]

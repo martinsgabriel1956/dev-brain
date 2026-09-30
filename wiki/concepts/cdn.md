@@ -3,8 +3,8 @@ type: concept
 title: "CDN"
 aliases: ["Content Delivery Network", "rede de distribuição de conteúdo", "edge cache"]
 date_created: 2026-06-26
-date_updated: 2026-09-22
-source_count: 7
+date_updated: 2026-09-30
+source_count: 8
 tags: [system-design, cdn, cache, performance, escalabilidade, rede, live-streaming]
 skill: tech-mentor-system-design
 status: draft
@@ -22,7 +22,7 @@ Usuário no Japão   → servidor em Tóquio    (latência ~5ms)
 
 ## Por que CDN escala tão bem
 
-CDN é essencialmente um **[[concepts/cache]] global**. O conteúdo é buscado da origem uma vez e servido por edge servers para todos os usuários próximos. Quanto mais popular o conteúdo, melhor o hit rate — o servidor de origem recebe cada vez menos requisições.
+CDN é essencialmente um **[[wiki/concepts/cache]] global**. O conteúdo é buscado da origem uma vez e servido por edge servers para todos os usuários próximos. Quanto mais popular o conteúdo, melhor o hit rate — o servidor de origem recebe cada vez menos requisições.
 
 ## O que serve bem via CDN
 
@@ -60,7 +60,7 @@ Em um sistema com três camadas (web, aplicação, dados), CDN é a solução ca
 
 ## Relação com outros conceitos
 
-- [[concepts/cache]] — CDN é um cache de camada L3 (edge) na hierarquia de velocidade
+- [[wiki/concepts/cache]] — CDN é um cache de camada L3 (edge) na hierarquia de velocidade
 - [[escalabilidade-horizontal]] — CDN é escalabilidade horizontal aplicada à entrega de conteúdo
 - [[protocolo-de-rede]] — CDN opera nas camadas HTTP e TCP; usa Anycast para roteamento geográfico
 
@@ -82,7 +82,12 @@ CDN reduz distância física até o espectador, mas não elimina o que é ineren
 - [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] — CDN citada como camada de [[wiki/concepts/cache]] geográfico e exemplo de que um mesmo sistema (YouTube) usa cache (CDN) e [[wiki/concepts/buffer]] (player) ao mesmo tempo
 - [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — [[wiki/concepts/aws-cloudfront|CloudFront]] (CDN da AWS) usado não só por latência mas como camada para servir um site estático do S3 via HTTPS com redirect e certificado SSL
 
+## Caso: Imagens do Instagram Simplificado
+
+Imagem de perfil lenta por latência alta: salvar em bucket ([[wiki/concepts/amazon-s3]]), gerar URL pública e servir via CDN (Cloudflare, CloudFront). Regra: sempre que houver conteúdo estático (imagens, vídeos, arquivos). Isso também retira o disco local do back end.
+
 ## Key Sources
 
 - [[wiki/sources/case-twitter-feed]] — O feed do Twitter é o caso clássico de **fan-out de escrita em escala extrema**. A solução é híbrida: fan-out on write para usuários normais (pré-computa timelines no Redis) e fan-out on read para...
 - [[wiki/sources/fase-1-fundamentos-infraestrutura]] — Fundamentos de infraestrutura: DNS (TTL, tipos de record), Load Balancer (L4 vs L7, algoritmos), CDN (edge cache, origem), Cache (hit/miss, eviction, invalidação), Banco de Dados (ACID, replicação,...
+- [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — Instagram simplificado: bucket S3 + URL pública servida por CDN resolve imagem lenta

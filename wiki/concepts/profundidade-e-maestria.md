@@ -42,7 +42,7 @@ Não precisa ser algo que nunca foi inventado na face da terra. Precisa ser um n
 
 ## Currículo vs Portfólio
 
-Currículo descreve experiência — é promessa. Portfólio demonstra maestria — é prova. Ver [[concepts/curriculo-vs-portfolio]].
+Currículo descreve experiência — é promessa. Portfólio demonstra maestria — é prova. Ver [[wiki/concepts/curriculo-vs-portfolio]].
 
 ## O sinal em entrevistas
 
@@ -50,12 +50,12 @@ Dá pra sentir maestria quase instantaneamente: tom de voz, postura, brilho no o
 
 ## Ver também
 
-- [[concepts/abrangencia-profissional]] — profundidade sem abrangência vira especialização paralisante
-- [[concepts/curriculo-vs-portfolio]] — como demonstrar profundidade
-- [[concepts/aprendizado-deliberado]] — processo estruturado que leva à maestria
-- [[concepts/maturidade-tecnica]] — resiliência como componente da profundidade real
-- [[entities/randy-nelson]] — origem do framework
+- [[wiki/concepts/abrangencia-profissional]] — profundidade sem abrangência vira especialização paralisante
+- [[wiki/concepts/curriculo-vs-portfolio]] — como demonstrar profundidade
+- [[wiki/concepts/aprendizado-deliberado]] — processo estruturado que leva à maestria
+- [[wiki/concepts/maturidade-tecnica]] — resiliência como componente da profundidade real
+- [[wiki/entities/randy-nelson]] — origem do framework
 
 ## Key Sources
 
-- [[sources/tres-caracteristicas-melhor-candidato]]
+- [[wiki/sources/tres-caracteristicas-melhor-candidato]]

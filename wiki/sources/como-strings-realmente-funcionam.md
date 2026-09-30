@@ -27,15 +27,15 @@ Uma string não é um tipo primitivo opaco — é um slice de bytes com charset 
 
 **1. Para uma string existir, são necessários três elementos.**
 Tamanho (intervalo de endereços de memória), charset (mapeamento valor → caractere) e encoding (algoritmo que interpreta a sequência de bytes).
-→ [[concepts/charset]], [[concepts/utf-8]]
+→ [[wiki/concepts/charset]], [[wiki/concepts/utf-8]]
 
 **2. ASCII é simultaneamente charset e encoding.**
 Funciona em 7 bits (128 caracteres, 0–127). Como 1 byte é suficiente para qualquer caractere ASCII, não existe ambiguidade na interpretação — não é preciso um algoritmo extra.
-→ [[concepts/ascii]]
+→ [[wiki/concepts/ascii]]
 
 **3. Unicode é apenas charset; UTF-8 é seu encoding.**
 Unicode define o mapeamento de codepoints para caracteres (cobrindo todos os idiomas, emojis, símbolos). UTF-8 define *como* armazenar esses codepoints em bytes — usando largura variável (1 a 4 bytes por caractere). UTF-8 é 100% compatível com ASCII.
-→ [[concepts/unicode]], [[concepts/utf-8]]
+→ [[wiki/concepts/unicode]], [[wiki/concepts/utf-8]]
 
 **4. String é um slice de bytes — não de caracteres.**
 Em Go (e na maioria das linguagens), `len(s)` retorna o número de bytes, não de caracteres visíveis. `"Hello, 世界"` tem 9 runas mas 13 bytes, porque os dois caracteres chineses ocupam 3 bytes cada em UTF-8.
@@ -45,7 +45,7 @@ Em Go (e na maioria das linguagens), `len(s)` retorna o número de bytes, não d
 
 **6. Strings são imutáveis para proteger o encoding.**
 Permitir `s[i] = x` tornaria trivial sobrescrever 1 byte de um caractere que ocupa 3 bytes, corrompendo silenciosamente o encoding. A imutabilidade é a proteção arquitetural contra esse bug.
-→ [[concepts/imutabilidade]]
+→ [[wiki/concepts/imutabilidade]]
 
 **7. Runa em Go = codepoint Unicode de 32 bits.**
 `rune` é um alias para `int32` e representa um codepoint Unicode inteiro — incluindo os multi-byte. Para iterar caracteres reais usa-se `range` (que itera runas) ou `utf8.RuneCountInString()`.
@@ -60,13 +60,13 @@ O UTF-8 foi criado por **Ken Thompson** e **Rob Pike** — os mesmos criadores d
 
 ## Conceitos Centrais
 
-- [[concepts/string]]
-- [[concepts/charset]]
-- [[concepts/ascii]]
-- [[concepts/unicode]]
-- [[concepts/utf-8]]
-- [[concepts/imutabilidade]]
-- [[concepts/encoding]]
+- [[wiki/concepts/string]]
+- [[wiki/concepts/charset]]
+- [[wiki/concepts/ascii]]
+- [[wiki/concepts/unicode]]
+- [[wiki/concepts/utf-8]]
+- [[wiki/concepts/imutabilidade]]
+- [[wiki/concepts/encoding]]
 
 ---
 

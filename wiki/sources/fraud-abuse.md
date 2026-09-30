@@ -38,8 +38,8 @@ Fraud & Abuse: múltiplas camadas. Device Fingerprinting (FingerprintJS) identif
 - [[concepts/device-fingerprinting]]
 - [[concepts/velocity-checks]]
 - [[concepts/fraud-scoring]]
-- [[concepts/account-takeover]]
-- [[concepts/bot-detection]]
+- [[wiki/concepts/account-takeover]]
+- [[wiki/concepts/bot-detection]]
 - [[entities/fingerprintjs]]
 
 ## Open Questions

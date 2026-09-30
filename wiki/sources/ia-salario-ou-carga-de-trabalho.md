@@ -41,7 +41,7 @@ Dois estudos da mesma semana chegam a conclusões opostas sobre IA e produtivida
 **Confidence:** alta — evidência qualitativa consistente com o dado quantitativo do ActiveTrack
 
 **Claim:** Mesmo com autonomia total, IA cria risco de burnout voluntário — o engenheiro nunca para porque sempre tem agentes rodando em paralelo.
-**Evidence:** Autor relata: antigamente terminava tarefa de 2 dias em 2h e descansava. Hoje termina uma tarefa e já tem 5 agentes em outras. "Quando você vê, você não para. A chance de burnout é muito grande — e ninguém me obrigou a fazer isso." Conexão direta com vibe coding e dívida cognitiva de [[sources/divida-cognitiva-ai-brainfry]].
+**Evidence:** Autor relata: antigamente terminava tarefa de 2 dias em 2h e descansava. Hoje termina uma tarefa e já tem 5 agentes em outras. "Quando você vê, você não para. A chance de burnout é muito grande — e ninguém me obrigou a fazer isso." Conexão direta com vibe coding e dívida cognitiva de [[wiki/sources/divida-cognitiva-ai-brainfry]].
 **Source:** relato pessoal do autor (dev AI-native)
 **Confidence:** média — evidência anedótica, mas alinhada com pesquisa de Margaret Storey
 
@@ -49,10 +49,10 @@ Dois estudos da mesma semana chegam a conclusões opostas sobre IA e produtivida
 
 ## Entities & Concepts Touched
 
-- [[concepts/compute-como-compensacao]]
-- [[concepts/ia-como-chicote-de-produtividade]]
-- [[concepts/divida-cognitiva]]
-- [[concepts/vibe-coding]]
+- [[wiki/concepts/compute-como-compensacao]]
+- [[wiki/concepts/ia-como-chicote-de-produtividade]]
+- [[wiki/concepts/divida-cognitiva]]
+- [[wiki/concepts/vibe-coding]]
 - [[entities/greg-brockman]]
 - [[entities/thomas-tungs]]
 
@@ -60,7 +60,7 @@ Dois estudos da mesma semana chegam a conclusões opostas sobre IA e produtivida
 
 ## Contradições com o wiki
 
-- [[sources/divida-cognitiva-ai-brainfry]] foca no custo cognitivo da supervisão de agentes. Esta source adiciona a dimensão econômica (compensação) e organizacional (autonomia vs. imposição) — são complementares, não contraditórias.
+- [[wiki/sources/divida-cognitiva-ai-brainfry]] foca no custo cognitivo da supervisão de agentes. Esta source adiciona a dimensão econômica (compensação) e organizacional (autonomia vs. imposição) — são complementares, não contraditórias.
 
 ## Open Questions
 

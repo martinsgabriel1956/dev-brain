@@ -49,7 +49,7 @@ Três modelos de isolamento com trade-offs opostos: Shared Schema (custo mínimo
 
 ## Concepts & Entities Touched
 
-[[concepts/multi-tenancy]] · [[concepts/tenant-context]] · [[concepts/expand-contract]] · [[concepts/connection-pooling]] · [[concepts/database-transactions]] · [[concepts/feature-flags]]
+[[wiki/concepts/multi-tenancy]] · [[wiki/concepts/tenant-context]] · [[wiki/concepts/expand-contract]] · [[wiki/concepts/connection-pooling]] · [[wiki/concepts/database-transactions]] · [[wiki/concepts/feature-flags]]
 
 ## Open Questions
 

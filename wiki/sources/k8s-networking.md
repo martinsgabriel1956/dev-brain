@@ -36,8 +36,8 @@ K8s networking tem 3 regras: Pod-to-Pod sem NAT, Node-to-Pod sem NAT, Pod vê se
 
 - [[concepts/cni-kubernetes]]
 - [[concepts/cilium]]
-- [[concepts/ebpf]]
-- [[concepts/network-policy]]
+- [[wiki/concepts/ebpf]]
+- [[wiki/concepts/network-policy]]
 - [[concepts/gateway-api]]
 - [[concepts/zero-trust]]
 

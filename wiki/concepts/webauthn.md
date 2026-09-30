@@ -16,9 +16,9 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/autenticacao-segura]]: [[concepts/webauthn]]
-- Em [[wiki/sources/identidade-avancada]]: [[concepts/webauthn]]
-- Em [[wiki/sources/passkeys-webauthn]]: [[concepts/webauthn]]
+- Em [[wiki/sources/autenticacao-segura]]: [[wiki/concepts/webauthn]]
+- Em [[wiki/sources/identidade-avancada]]: [[wiki/concepts/webauthn]]
+- Em [[wiki/sources/passkeys-webauthn]]: [[wiki/concepts/webauthn]]
 
 ## Pendências
 

@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/identidade-avancada]]: [[concepts/mfa]]
-- Em [[wiki/sources/sessions]]: [[concepts/mfa]]
+- Em [[wiki/sources/identidade-avancada]]: [[wiki/concepts/mfa]]
+- Em [[wiki/sources/sessions]]: [[wiki/concepts/mfa]]
 
 ## Pendências
 

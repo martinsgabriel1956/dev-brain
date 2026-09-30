@@ -42,10 +42,10 @@ Go prova que os princípios fundamentais de Clean Architecture — lógica isola
 
 ## Concepts
 
-- [[concepts/yagni]] — princípio que Go força pela ausência de mecanismos de over-engineering
-- [[concepts/abstraction-bloat]] — o que Go previne estruturalmente
-- [[concepts/dependency-injection]] — feita via construtor em Go, sem container
-- [[concepts/navigation-paradox]] — Go reduz o problema por não ter DI containers ocultos
+- [[wiki/concepts/yagni]] — princípio que Go força pela ausência de mecanismos de over-engineering
+- [[wiki/concepts/abstraction-bloat]] — o que Go previne estruturalmente
+- [[wiki/concepts/dependency-injection]] — feita via construtor em Go, sem container
+- [[wiki/concepts/navigation-paradox]] — Go reduz o problema por não ter DI containers ocultos
 
 ## Open Questions
 

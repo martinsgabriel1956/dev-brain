@@ -3,8 +3,8 @@ type: concept
 title: "Filas e Workers"
 aliases: ["job queue", "background processing", "async workers", "processamento assíncrono"]
 date_created: 2026-07-09
-date_updated: 2026-09-14
-source_count: 9
+date_updated: 2026-09-30
+source_count: 11
 tags: [filas, workers, background-jobs, mensageria, backend, retry, idempotencia]
 skill: tech-mentor-backend
 status: stub
@@ -53,6 +53,10 @@ Além do caso clássico de checkout (não travar a resposta principal com envio 
 - [[wiki/concepts/bullmq]] — implementação concreta em Node.js/Bun sobre Redis
 - Ver detalhamento de BullMQ, SKIP LOCKED, DLQ e fan-out em [[wiki/sources/background-jobs]] e `references/background-jobs.md` (tech-mentor-backend)
 
+## Caso: Miniatura Assíncrona no Upload
+
+Após o upload, publica-se mensagem na fila e um worker gera a miniatura; o usuário continua usando a plataforma com barra de progresso. Quando usar: resposta não precisa ser síncrona. Autor prefere RabbitMQ (mais simples) a Kafka ("muito grande") — depende do contexto.
+
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-backend]]
@@ -64,3 +68,5 @@ Além do caso clássico de checkout (não travar a resposta principal com envio 
 - [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — mesmo padrão (job pesado → mensagem na fila → resposta imediata → worker processa em background), com nomes concretos de ferramentas (RabbitMQ, Kafka, AWS SQS) e a analogia de checkout de e-commerce: "pagar" não trava a tela até o gateway confirmar, exatamente como o padrão de resposta imediata + confirmação assíncrona
 - [[wiki/sources/ambulance-pattern-priorizacao-mensagens-mark-richards]] — separar fila e instância de worker por canal de prioridade, para evitar que tráfego de alta prioridade trave o fluxo normal (starvation)
 - [[wiki/sources/node-single-thread-ssr-bloqueio-event-loop]] — filas como uma das soluções reais (junto de worker threads e cache) para SSR CPU-bound travando o event loop de Node.js, tirando o trabalho pesado do caminho síncrono da requisição
+- [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — Instagram simplificado: upload → fila → worker gera miniatura (assíncrono); RabbitMQ vs Kafka por contexto
+- [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — consumer assíncrono lê filas do RabbitMQ e grava no banco de leitura; escalável independentemente da aplicação de escrita

@@ -40,8 +40,8 @@ Começou escrevendo sem audiência por 6 meses. Descobriu que `robots.txt` bloqu
 
 ## Relacionado
 
-[[concepts/log-de-aprendizado]] — versão privada do mesmo princípio.
+[[wiki/concepts/log-de-aprendizado]] — versão privada do mesmo princípio.
 
 ## Key Sources
 
-- [[sources/9-habitos-programador-junior]]
+- [[wiki/sources/9-habitos-programador-junior]]

@@ -12,7 +12,7 @@ status: stable
 
 # Expand-Contract
 
-Padrão para DB migrations compatíveis com duas versões do código simultaneamente — obrigatório em [[concepts/blue-green-deploy]], [[concepts/canary-release]] e [[concepts/rolling-update]].
+Padrão para DB migrations compatíveis com duas versões do código simultaneamente — obrigatório em [[wiki/concepts/blue-green-deploy]], [[wiki/concepts/canary-release]] e [[wiki/concepts/rolling-update]].
 
 ## O Problema
 
@@ -46,7 +46,7 @@ Qualquer migration que renomeia, remove ou muda tipo de coluna **deve** usar Exp
 
 ## Relacionado
 
-[[concepts/database-transactions]] — cada fase é uma transação atômica separada.
+[[wiki/concepts/database-transactions]] — cada fase é uma transação atômica separada.
 
 [[wiki/concepts/database-migration]] — Expand-Contract é o padrão a aplicar quando a operação de migration não é trivial (rename, drop, mudança de tipo). Relato de incidente real: adicionar campo derivado em tabela com ~100k linhas travou a tabela por ~5 minutos em produção — exemplo do custo de pular direto para a operação final em vez de expandir/preencher/contrair.
 
@@ -54,6 +54,6 @@ Qualquer migration que renomeia, remove ou muda tipo de coluna **deve** usar Exp
 
 ## Key Sources
 
-- [[sources/blue-green-canary-rolling]]
+- [[wiki/sources/blue-green-canary-rolling]]
 - [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]] — incidente de lock em produção ao alterar tabela grande
 - [[wiki/sources/database-branching-testes-neon-fernanda-kipper]] — técnica complementar (isolamento no espaço via banco por branch, não no tempo via fases)

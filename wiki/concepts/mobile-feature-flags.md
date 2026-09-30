@@ -59,9 +59,9 @@ Sem métrica de conversão atrelada, A/B é apenas um toggle.
 
 ## Ver também
 
-- [[concepts/feature-flags]] — padrões gerais de feature flags
-- [[concepts/mobile-cicd]] — integração com pipeline de release
-- [[concepts/mobile-monitoramento]] — monitorar métricas por variant
+- [[wiki/concepts/feature-flags]] — padrões gerais de feature flags
+- [[wiki/concepts/mobile-cicd]] — integração com pipeline de release
+- [[wiki/concepts/mobile-monitoramento]] — monitorar métricas por variant
 
 ## Ciclo de Release Mobile em Escala (Meta)
 

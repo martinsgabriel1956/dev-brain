@@ -3,8 +3,8 @@ type: concept
 title: "Naming"
 aliases: ["nomeação", "naming things", "nomear variáveis", "nomes ruins"]
 date_created: 2026-04-26
-date_updated: 2026-08-21
-source_count: 5
+date_updated: 2026-09-30
+source_count: 6
 tags: [naming, clean-code, craftsmanship, legibilidade, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -50,12 +50,13 @@ Se 6 meses atrás você não entende o que `data2` significa, nomeie agora. Se v
 
 ## Relacionado
 
-[[sources/habitos-ruins-de-programador]] · [[concepts/testar-proprio-codigo]] · [[wiki/concepts/red-flags-de-design]] (Vague Name, Hard to Pick Name)
+[[wiki/sources/habitos-ruins-de-programador]] · [[wiki/concepts/testar-proprio-codigo]] · [[wiki/concepts/red-flags-de-design]] (Vague Name, Hard to Pick Name)
 
 ## Key Sources
 
 - [[wiki/sources/two-hard-things-martin-fowler]] — origem (incerta) e curadoria da citação de Phil Karlton sobre naming como um dos dois problemas difíceis
-- [[sources/5-principios-programador]]
+- [[wiki/sources/5-principios-programador]]
 - [[wiki/sources/5-principles-that-changed-me-as-a-programmer]]
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — bug do `block` no Sprite; discordância com o guia de estilo de nomes do Go
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — números mágicos e valores hard-coded (URLs, chaves de API) como falta de naming; busca textual ambígua vs. busca por nome de constante
+- [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — `double d` vs `valorDescontoPedido`: em método longo, a variável alterada várias vezes longe da declaração pesa na leitura

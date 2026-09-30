@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/async-io-memory-management]]: [[concepts/goroutines]]
-- Em [[wiki/sources/go-core]]: [[concepts/goroutines]]
+- Em [[wiki/sources/async-io-memory-management]]: [[wiki/concepts/goroutines]]
+- Em [[wiki/sources/go-core]]: [[wiki/concepts/goroutines]]
 
 ## Pendências
 

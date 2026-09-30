@@ -30,13 +30,13 @@ Isso muda o ônus: em vez de assumir que você se comunicou bem, verifique se fo
 
 ## A ligação com abrangência
 
-Pessoa com [[concepts/abrangencia-profissional]] naturalmente consegue se comunicar melhor entre domínios — porque tem vocabulário de ambos os lados. Um programador com contato com arte fala a língua do designer. Um dev que entende de negócio traduz requisitos técnicos para impacto financeiro.
+Pessoa com [[wiki/concepts/abrangencia-profissional]] naturalmente consegue se comunicar melhor entre domínios — porque tem vocabulário de ambos os lados. Um programador com contato com arte fala a língua do designer. Um dev que entende de negócio traduz requisitos técnicos para impacto financeiro.
 
 Abrangência é o substrato que torna a comunicação cross-domain possível.
 
 ## Pessoa interessada se comunica melhor
 
-Quem é genuinamente [[concepts/abrangencia-profissional|interessado]] quer entender o outro antes de falar — o que automaticamente melhora a qualidade da tradução que vai fazer. Interesse pelo interlocutor precede comunicação efetiva.
+Quem é genuinamente [[wiki/concepts/abrangencia-profissional|interessado]] quer entender o outro antes de falar — o que automaticamente melhora a qualidade da tradução que vai fazer. Interesse pelo interlocutor precede comunicação efetiva.
 
 ## Impacto na carreira
 
@@ -60,10 +60,10 @@ O princípio "tradução é responsabilidade de quem emite" tem uma aplicação 
 
 ## Ver também
 
-- [[concepts/abrangencia-profissional]] — pré-requisito para comunicação cross-domain
+- [[wiki/concepts/abrangencia-profissional]] — pré-requisito para comunicação cross-domain
 - [[wiki/concepts/metodo-star-bullet-points]] — aplicação do princípio de comunicação efetiva a bullet points de currículo
-- [[concepts/profundidade-e-maestria]] — profundidade sem comunicação fica presa na cabeça
-- [[entities/randy-nelson]] — origem do framework
+- [[wiki/concepts/profundidade-e-maestria]] — profundidade sem comunicação fica presa na cabeça
+- [[wiki/entities/randy-nelson]] — origem do framework
 - [[wiki/concepts/comunicacao-persuasiva]] — aplicação tática do mesmo princípio: traduzir para a linguagem de quem decide, não para o próprio jargão
 
 ## A Pergunta Como Comunicação Técnica
@@ -76,7 +76,7 @@ O princípio "tradução é responsabilidade de quem emite" tem uma aplicação 
 
 ## Key Sources
 
-- [[sources/tres-caracteristicas-melhor-candidato]]
+- [[wiki/sources/tres-caracteristicas-melhor-candidato]]
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]] — comunicação como acelerador de time; escuta ativa e adaptação ao público
 - [[wiki/sources/3-soft-skills-que-poucos-programadores-dominam]] — vender refatoração/decisão técnica em termos de negócio (urgência/ganância), não em jargão
 - [[wiki/sources/papinho-tech-solo-adaptabilidade]] — comunicação muda por nível hierárquico e por formato/canal, sem mudar a essência de quem comunica

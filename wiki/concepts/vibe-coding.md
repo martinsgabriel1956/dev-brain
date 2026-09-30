@@ -87,8 +87,8 @@ O uso saudável da IA por um arquiteto é para brainstorm, alternativas e explic
 
 ## Relação com outros conceitos
 
-- [[concepts/divida-cognitiva]] — vibe coding é o principal vetor de acúmulo de dívida cognitiva
-- [[concepts/ai-brainfry]] — vibe coding em excesso leva a brainfry
+- [[wiki/concepts/divida-cognitiva]] — vibe coding é o principal vetor de acúmulo de dívida cognitiva
+- [[wiki/concepts/ai-brainfry]] — vibe coding em excesso leva a brainfry
 - [[concepts/agentes-orquestracao]] — orquestração de agentes bem feita é o oposto de vibe coding
 
 ## O paradoxo do engenheiro autônomo
@@ -98,7 +98,7 @@ Vibe Coding não é exclusivo de quem perde controle. Um dev experiente e autôn
 Antes: tarefa de 2 dias → termina em 2h → para, paga tech debt.
 Agora: termina uma tarefa → 5 agentes já estão em outras → nunca para.
 
-Ver [[sources/ia-salario-ou-carga-de-trabalho]] para o relato de primeira mão.
+Ver [[wiki/sources/ia-salario-ou-carga-de-trabalho]] para o relato de primeira mão.
 
 ## Risco de Qualidade no Código Gerado
 
@@ -107,7 +107,7 @@ LLMs geram código para o caminho feliz. Os problemas invisíveis em dev que exp
 - **Race conditions** — sequências assíncronas sem considerar concorrência (→ [[property-based-testing]])
 - **Memory leaks** — caches sem TTL, filas que nunca esvaziam
 
-Quem não sabe verificar esses problemas não consegue revisar o código que a IA gerou. Ver [[sources/apagao-de-seniors-vibe-coding]] para técnicas práticas de detecção.
+Quem não sabe verificar esses problemas não consegue revisar o código que a IA gerou. Ver [[wiki/sources/apagao-de-seniors-vibe-coding]] para técnicas práticas de detecção.
 
 ## Vibe Coding como Hype em Formação
 
@@ -144,12 +144,12 @@ Em [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-o
 - [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — demo 'go horse' (sem plano, sem CLAUDE.md) mostrando por que funciona mas gera problemas de qualidade e segurança
 - [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — dois projetos construídos sem nenhum código lido ou escrito manualmente; checklist de verificação pré-commit delegado ao agente como substituto da leitura linha a linha; reinício de sessão ao notar alucinação; screenshot como referência para UI; agente único, sem swarm
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — relato de staff/tech lead/sênior sem escrever código manual há meses, 20-25 PRs/semana, revisão automatizada substituindo leitura humana
-- [[sources/divida-cognitiva-ai-brainfry]]
+- [[wiki/sources/divida-cognitiva-ai-brainfry]]
 - [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — armadilha de manutenção do vibe code por não-devs (Jira interno revertido); "quem não é da área vira TI"
-- [[sources/ia-salario-ou-carga-de-trabalho]]
-- [[sources/apagao-de-seniors-vibe-coding]]
-- [[sources/roadmap-dev-senior-2026]] — pilar 5: ciclo de degradação via IA → ver [[concepts/ia-ciclo-dependencia]]
-- [[sources/por-que-devs-nao-terminam-projetos]] — vibe coding elimina o mecanismo de luta → ver [[concepts/aprendizado-por-luta]]
+- [[wiki/sources/ia-salario-ou-carga-de-trabalho]]
+- [[wiki/sources/apagao-de-seniors-vibe-coding]]
+- [[wiki/sources/roadmap-dev-senior-2026]] — pilar 5: ciclo de degradação via IA → ver [[wiki/concepts/ia-ciclo-dependencia]]
+- [[wiki/sources/por-que-devs-nao-terminam-projetos]] — vibe coding elimina o mecanismo de luta → ver [[wiki/concepts/aprendizado-por-luta]]
 - [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — onde vibe coding brilha (MVP, docs, testes) vs. onde exige julgamento humano (arquitetura, segurança, contexto de negócio)
 - [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]] — citado como exemplo de hype em formação, no momento do vídeo
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]] — "specs to code" como vibe coding disfarçado

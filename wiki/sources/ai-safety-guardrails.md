@@ -45,7 +45,7 @@ Guardrails são camadas de defesa em profundidade para sistemas LLM: input filte
 
 - [[concepts/guardrails-llm]]
 - [[concepts/indirect-prompt-injection]]
-- [[concepts/agent-containment]]
+- [[wiki/concepts/agent-containment]]
 - [[concepts/shadow-mode]]
 - [[concepts/red-teaming-automatizado]]
 - [[entities/llama-guard]]

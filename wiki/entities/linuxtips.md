@@ -16,7 +16,7 @@ Plataforma brasileira de educação em tecnologia focada em DevOps, Cloud, Kuber
 
 ## Key Sources
 
-- [[sources/papinho-tech-solo-aprender-a-aprender]]
+- [[wiki/sources/papinho-tech-solo-aprender-a-aprender]]
 - [[wiki/sources/papinho-tech-solo-adaptabilidade]] — episódio gravado em Gramado, durante o Gramado Summit
 - [[wiki/sources/papinho-tech-solo-comunidade]] — episódio gravado a caminho do IA Summit (Exame), sobre comunidade e retribuição, com relato da viagem a São José do Alegre (MG) com o Jefferson Fernando da LinuxTips
 - [[wiki/sources/papinho-tech-solo-q-and-a-carreira]] — episódio solo em formato Q&A respondendo comentários da audiência (matemática, EAD, QA, arquiteto de soluções, formação em T)

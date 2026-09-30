@@ -12,7 +12,7 @@ status: stable
 
 # RPI Workflow
 
-Framework de três fases para trabalhar com coding agents em codebases reais. Objetivo central: manter o agente na [[concepts/dumb-zone|smart zone]] da context window durante todo o trabalho e preservar o [[concepts/mental-alignment]] do dev sobre o que está sendo construído.
+Framework de três fases para trabalhar com coding agents em codebases reais. Objetivo central: manter o agente na [[wiki/concepts/dumb-zone|smart zone]] da context window durante todo o trabalho e preservar o [[wiki/concepts/mental-alignment]] do dev sobre o que está sendo construído.
 
 ## As Três Fases
 
@@ -30,14 +30,14 @@ Framework de três fases para trabalhar com coding agents em codebases reais. Ob
 
 ### Implement
 - Executa o plano mantendo a context window baixa
-- Segue o [[concepts/plano-vertical]]: cada entrega é testável antes de continuar
+- Segue o [[wiki/concepts/plano-vertical]]: cada entrega é testável antes de continuar
 - Dev acompanha o que está sendo gerado — sem deixar o agente ir longe demais sem revisão
 
 ## Por Que Funciona
 
 LLMs são stateless. A única forma de obter melhor performance é colocar tokens melhores. O RPI estrutura o trabalho para que cada fase receba apenas os tokens que ela precisa, sem ruído de fases anteriores.
 
-A separação research/plan evita [[concepts/separacao-de-contextos|contaminação de contexto]] — o modelo não toma decisões de arquitetura escondidas numa suposta fase de observação.
+A separação research/plan evita [[wiki/concepts/separacao-de-contextos|contaminação de contexto]] — o modelo não toma decisões de arquitetura escondidas numa suposta fase de observação.
 
 ## Anti-patterns
 
@@ -76,8 +76,8 @@ Independentemente da fonte original, [[wiki/sources/spec-driven-development-otim
 
 ## Key Sources
 
-- [[sources/erros-workflow-research-plan-implement]]
-- [[sources/context-engineering-avancado-para-coding-agents]]
+- [[wiki/sources/erros-workflow-research-plan-implement]]
+- [[wiki/sources/context-engineering-avancado-para-coding-agents]]
 - [[wiki/sources/context-engineering-codebases-grandes-rpi]] — sub-planos para refatorações grandes; memória de longo prazo; progressive disclosure na prática
 - [[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] — heurística de ~200k tokens; RPI e SDD como resposta ao mesmo problema; exemplo de campo com ~90 arquivos
 - [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] — fase de Research como caso claro onde subagente sempre compensa (sem cenário testado em que piorou o resultado)

@@ -34,8 +34,8 @@ Runtime Security monitora comportamento em produção via syscalls — detecta o
 
 ## Entities & Concepts Touched
 
-- [[entities/falco]]
-- [[concepts/ebpf]]
+- [[wiki/entities/falco]]
+- [[wiki/concepts/ebpf]]
 - [[concepts/runtime-security]]
 - [[concepts/syscall-monitoring]]
 - [[entities/falco-sidekick]]

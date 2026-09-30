@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/graphql]]: [[concepts/cursor-pagination]]
-- Em [[wiki/sources/pagination]]: [[concepts/cursor-pagination]]
+- Em [[wiki/sources/graphql]]: [[wiki/concepts/cursor-pagination]]
+- Em [[wiki/sources/pagination]]: [[wiki/concepts/cursor-pagination]]
 
 ## Pendências
 

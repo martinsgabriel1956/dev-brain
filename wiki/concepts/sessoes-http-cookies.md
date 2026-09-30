@@ -4,7 +4,7 @@ title: "Sessões HTTP e Cookies"
 aliases: ["sessão HTTP", "session ID", "cookie de sessão", "sessão stateful"]
 date_created: 2026-07-27
 date_updated: 2026-09-30
-source_count: 9
+source_count: 10
 tags: [sessao, cookie, autenticacao, stateless, http, seguranca]
 skill: tech-mentor-security
 status: draft
@@ -80,3 +80,4 @@ Redis é o padrão de produção justamente por resolver o caso de múltiplos se
 - [[wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv]] — estudo de caso do "roubo de cookie de autenticação" via script hospedado em domínio externo (reflected XSS); marca `HttpOnly` como item de checklist de mitigação, sem detalhar o mecanismo
 - [[wiki/sources/anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato]] — session token formalizado como o caso clássico de token opaco, dentro da distinção arquitetural opaco vs. autocontido
 - [[wiki/sources/historia-do-captcha-do-teste-de-turing-ao-turnstile]] — idade do cookie como sinal do [[wiki/concepts/recaptcha]]: cookie maduro (>9 dias) garantia passar; geração massiva de cookies por um IP
+- [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — `Cookie` como header de sessão entre os metadados da requisição (ver [[wiki/concepts/http-headers]])

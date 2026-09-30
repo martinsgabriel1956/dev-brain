@@ -16,9 +16,9 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/autenticacao-segura]]: [[concepts/session-management]]
-- Em [[wiki/sources/oauth2-oidc-jwt]]: [[concepts/session-management]]
-- Em [[wiki/sources/sessions]]: [[concepts/session-management]]
+- Em [[wiki/sources/autenticacao-segura]]: [[wiki/concepts/session-management]]
+- Em [[wiki/sources/oauth2-oidc-jwt]]: [[wiki/concepts/session-management]]
+- Em [[wiki/sources/sessions]]: [[wiki/concepts/session-management]]
 
 ## Pendências
 

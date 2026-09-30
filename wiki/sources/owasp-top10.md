@@ -40,11 +40,11 @@ OWASP Top 10 Web: Broken Access Control (#1 mais crítico), Injection (SQL/NoSQL
 
 - [[concepts/broken-access-control]]
 - [[concepts/injection]]
-- [[concepts/xss]]
+- [[wiki/concepts/xss]]
 - [[concepts/ssrf]]
-- [[concepts/mass-assignment]]
-- [[concepts/owasp]]
-- [[concepts/timing-attack]]
+- [[wiki/concepts/mass-assignment]]
+- [[wiki/concepts/owasp]]
+- [[wiki/concepts/timing-attack]]
 
 ## Open Questions
 

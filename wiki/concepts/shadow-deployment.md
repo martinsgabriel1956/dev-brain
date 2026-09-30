@@ -27,7 +27,7 @@ Request do usuário
 
 ## Por que é valioso
 
-Valida a v2 com **tráfego de produção real** — não um teste sintético, não um percentual limitado de usuários reais como no [[concepts/canary-release]]. Mede exatamente como o sistema se comporta sob a carga e os padrões de uso reais antes de qualquer usuário depender da resposta da v2. Zero risco para o usuário: se a v2 quebra, ninguém percebe.
+Valida a v2 com **tráfego de produção real** — não um teste sintético, não um percentual limitado de usuários reais como no [[wiki/concepts/canary-release]]. Mede exatamente como o sistema se comporta sob a carga e os padrões de uso reais antes de qualquer usuário depender da resposta da v2. Zero risco para o usuário: se a v2 quebra, ninguém percebe.
 
 ## Por que é complicado e caro
 
@@ -43,10 +43,10 @@ Migrações de sistemas críticos onde o custo de um bug em produção é muito 
 
 | | Quem vê a resposta da v2 | Objetivo |
 |---|---|---|
-| [[concepts/canary-release]] | Um percentual real de usuários | Reduzir risco técnico |
-| [[concepts/ab-testing-deployment]] | Um percentual real de usuários | Validar hipótese de negócio |
+| [[wiki/concepts/canary-release]] | Um percentual real de usuários | Reduzir risco técnico |
+| [[wiki/concepts/ab-testing-deployment]] | Um percentual real de usuários | Validar hipótese de negócio |
 | Shadow | Ninguém — resposta é descartada | Validar correção/performance com tráfego real, risco zero |
 
 ## Key Sources
 
-- [[sources/tipos-de-deploy]]
+- [[wiki/sources/tipos-de-deploy]]

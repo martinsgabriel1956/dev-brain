@@ -47,15 +47,15 @@ Maturidade técnica não elimina a dor de críticas — ela muda o que você faz
 
 ## Ver também
 
-- [[concepts/principio-da-inversao]] — hábito ruim nº 5: encarar feedback como ataque
+- [[wiki/concepts/principio-da-inversao]] — hábito ruim nº 5: encarar feedback como ataque
 - [[wiki/concepts/cargo-cult-tecnologico]] — o oposto da maturidade de processo: importar a receita sem avaliar contexto
 - [[wiki/concepts/git-flow]] — caso concreto onde "não existe resposta universal" se aplica
-- [[concepts/comparacao-na-carreira]] — outra dimensão da mentalidade de crescimento
-- [[concepts/aprendizado-deliberado]] — framework que sustenta a postura de crescimento contínuo
-- [[concepts/profundidade-e-maestria]] — falhar e se recuperar como componente da profundidade real
+- [[wiki/concepts/comparacao-na-carreira]] — outra dimensão da mentalidade de crescimento
+- [[wiki/concepts/aprendizado-deliberado]] — framework que sustenta a postura de crescimento contínuo
+- [[wiki/concepts/profundidade-e-maestria]] — falhar e se recuperar como componente da profundidade real
 
 ## Key Sources
 
 - [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] — maturidade aplicada a decisões de processo (Git): buscar princípios, aceitar trade-offs, adaptar-se ao processo da empresa
-- [[sources/principio-da-inversao-programador]]
-- [[sources/tres-caracteristicas-melhor-candidato]]
+- [[wiki/sources/principio-da-inversao-programador]]
+- [[wiki/sources/tres-caracteristicas-melhor-candidato]]

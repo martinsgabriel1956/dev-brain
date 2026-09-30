@@ -3,8 +3,8 @@ type: concept
 title: "Entrevista de System Design (Whiteboard Interview)"
 aliases: ["system design interview", "whiteboard interview", "lousa branca", "entrevista de arquitetura"]
 date_created: 2026-07-20
-date_updated: 2026-09-04
-source_count: 9
+date_updated: 2026-09-30
+source_count: 10
 tags: [system-design, entrevistas, arquitetura, carreira]
 skill: tech-mentor-system-design
 status: draft
@@ -85,6 +85,10 @@ Assim como na [[wiki/concepts/entrevista-tecnica-coding|entrevista de coding]], 
 - **Tabela de dois perfis contrastados**: Desenvolvedor 1 (assume e já sai fazendo, fica defensivo com feedback, só cita tecnologia, faz monólogo) vs. Desenvolvedor 2 (pergunta antes, recebe feedback aberto, explica o porquê de cada decisão, colabora) — formalização didática da mesma régua comportamental já presente nas outras fontes desta página.
 - **"Nunca diga a tecnologia sem o porquê e o tradeoff"** — quase idêntico à "regra de ouro" já documentada na skill de system design ("nunca diga 'depende' sem completar 'depende de X, dado que X é Y, a escolha é Z porque...'"), aqui enquadrado como questão de comunicação/comportamento em vez de disciplina técnica pura.
 
+## Roteiro de Estudo em 5 Etapas
+
+Roteiro da fonte: building blocks → problemas reais → projeto em camadas → trade-offs → comparação com empresas reais ([[wiki/concepts/design-em-camadas]], [[wiki/concepts/treino-system-design-por-cenarios]]). Lacuna frente a esta página: não cita esclarecimento de requisitos nem estimativas.
+
 ## Key sources
 
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]
@@ -96,3 +100,4 @@ Assim como na [[wiki/concepts/entrevista-tecnica-coding|entrevista de coding]], 
 - [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] — checklist de três erros de concorrência que eliminam candidatos: não identificar o risco de race condition, usar lock distribuído onde não é necessário, travar linha do banco durante chamada a API externa
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — formulação negativa das três crenças que reprovam: o enunciado já define o problema, velocidade é sinal de competência, e existe "a melhor tecnologia"
 - [[wiki/sources/como-se-comportar-na-entrevista-de-system-design-tier-s]] — fechamento da série de Pedro Camaforte: mapeamento dos 7 conceitos técnicos da série de volta a features de sistemas clássicos, roteiro de 3-4 etapas antes de desenhar, e a tabela de dois perfis de candidato (que assume vs. que pergunta; monólogo vs. colaboração)
+- [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — roteiro de estudo em 5 etapas e caso Instagram simplificado; não cobre requisitos/estimativas

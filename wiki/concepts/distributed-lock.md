@@ -42,11 +42,11 @@ Lock sem TTL = deadlock se o processo que adquiriu cair antes de liberar. TTL ga
 
 ## Alternativa: Redlock
 
-Para lock com múltiplas instâncias Redis (sem ponto único de falha). Mais complexo — use apenas se a perda do lock por falha de nó único for inaceitável. **Não implementa fencing tokens** — ver [[concepts/fencing-token]].
+Para lock com múltiplas instâncias Redis (sem ponto único de falha). Mais complexo — use apenas se a perda do lock por falha de nó único for inaceitável. **Não implementa fencing tokens** — ver [[wiki/concepts/fencing-token]].
 
 ## Problema do Lock Fantasma
 
-Processo lento ressuscita após TTL expirar e acredita ainda ter o lock. Solução: [[concepts/fencing-token]] — token monotônico rejeitado pelo storage protegido.
+Processo lento ressuscita após TTL expirar e acredita ainda ter o lock. Solução: [[wiki/concepts/fencing-token]] — token monotônico rejeitado pelo storage protegido.
 
 ## Exemplo Negativo: Reserva sem Lock Atômico (Cinema)
 
@@ -58,22 +58,22 @@ Processo lento ressuscita após TTL expirar e acredita ainda ter o lock. Soluç�
 
 ### Fallback de duas camadas se o Redis cair
 
-A mesma fonte cobre o edge case "e se o Redis cair": lock via Redis no caminho feliz + [[wiki/concepts/pessimistic-locking]] (`FOR UPDATE`) no banco como segunda camada de garantia só durante a janela em que o Redis está indisponível (ex.: ~60s para subir nova instância) — garante que mesmo nesse intervalo excepcional só uma pessoa complete a compra. Isso é distinto do problema de fencing token acima: aqui o Redis está **totalmente fora do ar**, não é o caso de um processo lento ressuscitando com um lock expirado enquanto o Redis segue de pé — a fonte não cobre esse segundo cenário, que continua exigindo [[concepts/fencing-token]].
+A mesma fonte cobre o edge case "e se o Redis cair": lock via Redis no caminho feliz + [[wiki/concepts/pessimistic-locking]] (`FOR UPDATE`) no banco como segunda camada de garantia só durante a janela em que o Redis está indisponível (ex.: ~60s para subir nova instância) — garante que mesmo nesse intervalo excepcional só uma pessoa complete a compra. Isso é distinto do problema de fencing token acima: aqui o Redis está **totalmente fora do ar**, não é o caso de um processo lento ressuscitando com um lock expirado enquanto o Redis segue de pé — a fonte não cobre esse segundo cenário, que continua exigindo [[wiki/concepts/fencing-token]].
 
 ## Relacionado
 
-[[concepts/split-brain]] — Redlock tenta resolver, mas tem controvérsia (Martin Kleppmann vs antirez).
-[[concepts/fencing-token]] — complemento obrigatório para locks em recursos críticos.
-[[concepts/skip-locked]] — alternativa para filas de trabalho sem broker externo.
+[[wiki/concepts/split-brain]] — Redlock tenta resolver, mas tem controvérsia (Martin Kleppmann vs antirez).
+[[wiki/concepts/fencing-token]] — complemento obrigatório para locks em recursos críticos.
+[[wiki/concepts/skip-locked]] — alternativa para filas de trabalho sem broker externo.
 [[wiki/concepts/tuple-space]] / [[wiki/concepts/object-space]] — mesma garantia de exclusão mútua, obtida por remoção atômica (take) de uma tupla/objeto do espaço compartilhado em vez de uma primitiva de lock explícita.
 
 ## Key Sources
 
 - [[wiki/sources/cache-strategies]] — Aprofundamento nas estratégias de cache com exemplos TypeScript completos. Cache-Aside é o padrão default para leituras. Write-Through para consistência forte. Write-Behind para throughput máximo de...
 - [[wiki/sources/raft-leader-election]] — Raft é o algoritmo de consenso mais legível e amplamente usado (etcd, CockroachDB, Consul, TiKV). Três papéis: Leader (único, escreve), Follower (replica), Candidate (em eleição). Eleição: timeout...
-- [[sources/case-uber]]
-- [[sources/skip-locked-fencing-token]]
-- [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] — reserva de estoque via linhas físicas + [[concepts/skip-locked]] no MySQL, sem lock explícito de aplicação
+- [[wiki/sources/case-uber]]
+- [[wiki/sources/skip-locked-fencing-token]]
+- [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] — reserva de estoque via linhas físicas + [[wiki/concepts/skip-locked]] no MySQL, sem lock explícito de aplicação
 - [[wiki/sources/system-design-entrevista-cinema-draw-io]] — exemplo negativo: reserva de assento via Redis TTL sem check-and-reserve atômico contra a fonte de disponibilidade, gerando leitura inconsistente entre API externa e estado interno de reserva
 - [[wiki/sources/tuple-space-wikipedia]] — modelo alternativo de exclusão mútua embutida (tuple space/Object Space): a remoção atômica da tupla/objeto do espaço já é o lock, sem primitiva separada
 - [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] — contraponto positivo ao exemplo do cinema: reserva de ingresso via `SET NX EX` com check-and-set atômico de fato, mais fallback de duas camadas (Redis + lock pessimista no banco) para quando o Redis cai

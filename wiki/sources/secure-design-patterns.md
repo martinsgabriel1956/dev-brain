@@ -34,10 +34,10 @@ status: stable
 
 ## Entities & Concepts Touched
 
-- [[concepts/defense-in-depth]]
-- [[concepts/least-privilege]]
+- [[wiki/concepts/defense-in-depth]]
+- [[wiki/concepts/least-privilege]]
 - [[concepts/fail-secure]]
-- [[concepts/secure-by-default]]
+- [[wiki/concepts/secure-by-default]]
 - [[concepts/attack-surface-minimization]]
 - [[concepts/assume-breach]]
 - [[concepts/separation-of-duties]]

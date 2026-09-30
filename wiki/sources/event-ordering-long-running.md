@@ -40,7 +40,7 @@ Event ordering: garantia de ordem só é possível dentro de uma partição (Kaf
 
 - [[concepts/event-ordering]]
 - [[concepts/process-manager]]
-- [[concepts/saga-pattern]]
+- [[wiki/concepts/saga-pattern]]
 - [[concepts/state-machine]]
 - [[concepts/particionamento-kafka]]
 - [[concepts/timeout-compensation]]

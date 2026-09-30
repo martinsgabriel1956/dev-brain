@@ -39,8 +39,8 @@ Tasks específicas e pequenas ativam o goal gradient. Tasks vagas não.
 
 ## Relação com Dopamina
 
-Goal gradient e [[concepts/dopamina-e-projetos]] se reforçam mutuamente: completar tasks libera dopamina, dopamina aumenta motivação para a próxima task.
+Goal gradient e [[wiki/concepts/dopamina-e-projetos]] se reforçam mutuamente: completar tasks libera dopamina, dopamina aumenta motivação para a próxima task.
 
 ## Key Sources
 
-- [[sources/por-que-devs-nao-terminam-projetos]]
+- [[wiki/sources/por-que-devs-nao-terminam-projetos]]

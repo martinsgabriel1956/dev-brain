@@ -41,7 +41,7 @@ Modelo de distribuição de testes: muitos unitários na base, moderados de inte
 
 ## Conceitos & Entities Tocados
 
-[[concepts/piramide-de-testes]] · [[concepts/tdd]] · [[concepts/contract-testing]] · [[concepts/test-doubles]]
+[[wiki/concepts/piramide-de-testes]] · [[wiki/concepts/tdd]] · [[wiki/concepts/contract-testing]] · [[wiki/concepts/test-doubles]]
 
 ## Open Questions
 

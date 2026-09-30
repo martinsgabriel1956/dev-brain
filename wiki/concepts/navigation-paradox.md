@@ -56,10 +56,10 @@ Mesmo com uma ferramenta de navegação de grafos disponível e prompt explícit
 
 ## Relacionado
 
-- [[concepts/abstraction-bloat]] — mais abstrações = mais dependências potencialmente escondidas
-- [[concepts/yagni]] — previne a criação de dependências desnecessárias
-- [[concepts/dependency-injection]] — o mecanismo que cria G3 dependencies
-- [[sources/navigation-paradox-2026]] — o paper completo
+- [[wiki/concepts/abstraction-bloat]] — mais abstrações = mais dependências potencialmente escondidas
+- [[wiki/concepts/yagni]] — previne a criação de dependências desnecessárias
+- [[wiki/concepts/dependency-injection]] — o mecanismo que cria G3 dependencies
+- [[wiki/sources/navigation-paradox-2026]] — o paper completo
 
 ## Confirmação Independente: Estrutura em Camadas vs. Vertical Slice
 
@@ -67,6 +67,6 @@ Mesmo com uma ferramenta de navegação de grafos disponível e prompt explícit
 
 ## Key Sources
 
-- [[sources/navigation-paradox-2026]]
-- [[sources/clean-architecture-ia-custo-real]]
+- [[wiki/sources/navigation-paradox-2026]]
+- [[wiki/sources/clean-architecture-ia-custo-real]]
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — confirmação independente do custo de estrutura em camadas, com vertical slice/package-by-feature como alternativa recomendada

@@ -12,7 +12,7 @@ status: stable
 
 # Salt
 
-String aleatória e única gerada para cada usuário, concatenada à senha antes do hash. Garante que senhas iguais gerem hashes diferentes e invalida [[concepts/rainbow-table]]s pré-computadas.
+String aleatória e única gerada para cada usuário, concatenada à senha antes do hash. Garante que senhas iguais gerem hashes diferentes e invalida [[wiki/concepts/rainbow-table]]s pré-computadas.
 
 O salt **não precisa ser secreto** — fica armazenado junto ao hash no banco de dados. Sua força vem da unicidade, não do sigilo.
 
@@ -43,27 +43,27 @@ O atacante teria que recomputar toda a tabela para cada salt — inviabilizando 
 | Onde fica | No banco (público) | No ENV do servidor (secreto) |
 | Objetivo | Invalidar rainbow tables | Defesa se apenas o banco vazar |
 
-Ver [[concepts/pepper]] para a combinação ideal.
+Ver [[wiki/concepts/pepper]] para a combinação ideal.
 
 ---
 
 ## Salt em Algoritmos Modernos
 
-[[concepts/bcrypt]] e [[concepts/argon2]] geram o salt automaticamente e o embutem no hash resultante. Não é necessário gerenciar salt manualmente — o algoritmo cuida disso.
+[[wiki/concepts/bcrypt]] e [[wiki/concepts/argon2]] geram o salt automaticamente e o embutem no hash resultante. Não é necessário gerenciar salt manualmente — o algoritmo cuida disso.
 
 ---
 
 ## Relação com Outros Conceitos
 
-- [[concepts/password-hashing]] — contexto de uso
-- [[concepts/rainbow-table]] — o ataque que salt invalida
-- [[concepts/pepper]] — complemento ao salt, armazenado no servidor
-- [[concepts/bcrypt]] — gera salt automaticamente
-- [[concepts/argon2]] — gera salt automaticamente
+- [[wiki/concepts/password-hashing]] — contexto de uso
+- [[wiki/concepts/rainbow-table]] — o ataque que salt invalida
+- [[wiki/concepts/pepper]] — complemento ao salt, armazenado no servidor
+- [[wiki/concepts/bcrypt]] — gera salt automaticamente
+- [[wiki/concepts/argon2]] — gera salt automaticamente
 
 ## Key Sources
 
-- [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
+- [[wiki/sources/seguranca-armazenamento-senhas-banco-de-dados]]
 - [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]]
 - [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — exemplo didático Bob/Alice com mesma senha, salts diferentes

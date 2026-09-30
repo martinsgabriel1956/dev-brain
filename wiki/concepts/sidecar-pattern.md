@@ -42,8 +42,8 @@ kubectl get pods -n checkout
 
 ## Alternativa: Ambient Mesh
 
-[[concepts/ambient-mesh]] — proxy no nível do nó (ztunnel) elimina o sidecar por pod. Istio 1.22+.
+[[wiki/concepts/ambient-mesh]] — proxy no nível do nó (ztunnel) elimina o sidecar por pod. Istio 1.22+.
 
 ## Key Sources
 
-- [[sources/service-mesh]]
+- [[wiki/sources/service-mesh]]

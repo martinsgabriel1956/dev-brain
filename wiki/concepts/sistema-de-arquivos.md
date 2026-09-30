@@ -49,33 +49,33 @@ Por isso:
 
 | Sistema | SO | Destaques |
 |---|---|---|
-| FAT12/16/[[concepts/fat32\|32]] | Windows / universal | Sem journaling, arquivo até 4 GB (FAT32) — sobrevive por compatibilidade |
-| [[concepts/exfat]] | Windows + macOS | Sucessor do FAT32 sem o limite de 4 GB, ainda sem journaling — mídia portátil |
-| [[concepts/ntfs]] | Windows | Permissões granulares, journaling, compressão |
-| [[concepts/apfs]] (e HFS+) | macOS | Snapshots, criptografia nativa, copy-on-write |
-| [[concepts/ext4]] (e ext2/3) | Linux | Journaling, performance geral, padrão |
-| [[concepts/zfs]] | Linux/BSD | Integridade (checksums), snapshots, RAID integrado |
+| FAT12/16/[[wiki/concepts/fat32\|32]] | Windows / universal | Sem journaling, arquivo até 4 GB (FAT32) — sobrevive por compatibilidade |
+| [[wiki/concepts/exfat]] | Windows + macOS | Sucessor do FAT32 sem o limite de 4 GB, ainda sem journaling — mídia portátil |
+| [[wiki/concepts/ntfs]] | Windows | Permissões granulares, journaling, compressão |
+| [[wiki/concepts/apfs]] (e HFS+) | macOS | Snapshots, criptografia nativa, copy-on-write |
+| [[wiki/concepts/ext4]] (e ext2/3) | Linux | Journaling, performance geral, padrão |
+| [[wiki/concepts/zfs]] | Linux/BSD | Integridade (checksums), snapshots, RAID integrado |
 | **Btrfs** | Linux | Copy-on-write, snapshots, subvolumes |
 
 Linhagem histórica completa (evolução dentro de cada família) em [[wiki/sources/sistemas-de-arquivos-explicados]].
 
 ## Journaling
 
-Mecanismo que registra operações pendentes em um log antes de executá-las. Se o sistema travar no meio de uma escrita, o journal permite recuperação consistente. Detalhado em [[concepts/journaling]].
+Mecanismo que registra operações pendentes em um log antes de executá-las. Se o sistema travar no meio de uma escrita, o journal permite recuperação consistente. Detalhado em [[wiki/concepts/journaling]].
 
 ## Ver também
 
-- [[concepts/kernel]] — o kernel implementa as operações do sistema de arquivos via VFS
-- [[concepts/syscall]] — `open()`, `read()`, `write()` são syscalls que acessam o sistema de arquivos
-- [[concepts/swap]] — também usa o disco, mas gerenciado separadamente
+- [[wiki/concepts/kernel]] — o kernel implementa as operações do sistema de arquivos via VFS
+- [[wiki/concepts/syscall]] — `open()`, `read()`, `write()` são syscalls que acessam o sistema de arquivos
+- [[wiki/concepts/swap]] — também usa o disco, mas gerenciado separadamente
 
 ## A camada de baixo: a mídia física
 
-O sistema de arquivos é uma **abstração sobre uma mídia** — os "blocos do disco" moram fisicamente em um [[concepts/hd-disco-rigido]], um [[concepts/ssd]] ([[concepts/memoria-flash]]), um cartão ou um pen drive. A mídia influencia o design: o [[concepts/apfs]] é otimizado para flash (copy-on-write, sem penalidade de fragmentação), enquanto FAT/exFAT são o padrão de mídia portátil por compatibilidade. Ver o panorama de mídias em [[wiki/sources/tipos-de-armazenamento-de-dados]].
+O sistema de arquivos é uma **abstração sobre uma mídia** — os "blocos do disco" moram fisicamente em um [[wiki/concepts/hd-disco-rigido]], um [[wiki/concepts/ssd]] ([[wiki/concepts/memoria-flash]]), um cartão ou um pen drive. A mídia influencia o design: o [[wiki/concepts/apfs]] é otimizado para flash (copy-on-write, sem penalidade de fragmentação), enquanto FAT/exFAT são o padrão de mídia portátil por compatibilidade. Ver o panorama de mídias em [[wiki/sources/tipos-de-armazenamento-de-dados]].
 
 ## Key Sources
 
-- [[sources/sistema-operacional-por-baixo-dos-panos]]
-- [[sources/como-sistemas-operacionais-funcionam]]
+- [[wiki/sources/sistema-operacional-por-baixo-dos-panos]]
+- [[wiki/sources/como-sistemas-operacionais-funcionam]]
 - [[wiki/sources/sistemas-de-arquivos-explicados]]
 - [[wiki/sources/tipos-de-armazenamento-de-dados]] — as mídias físicas sob a abstração de arquivos (HD, SSD/flash, óptico, fita)

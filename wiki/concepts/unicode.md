@@ -68,7 +68,7 @@ O encoding dominante para Unicode é o [[utf-8]], criado por Ken Thompson e Rob 
 
 ## Key Sources
 
-- [[sources/como-strings-realmente-funcionam]]
+- [[wiki/sources/como-strings-realmente-funcionam]]
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — validação de codepoint máximo (`U+10FFFF`) e rejeição de surrogate pairs num decoder real
 - [[wiki/sources/codificacao-de-caracteres-ascii-iso-8859-1-unicode]] — framing didático de Unicode como "codificação" de 8–32 bits (imprecisão frente à distinção charset/encoding)
 - [[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] — emoji como caractere padronizado (não imagem); exemplo visual de divergência de renderização entre iOS/Google/Telegram para o mesmo codepoint

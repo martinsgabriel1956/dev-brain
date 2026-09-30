@@ -43,10 +43,10 @@ Pilotos de agentes funcionam. Produção quebra em 3 pontos: integração com si
 
 ## Entities & Concepts Touched
 
-- [[concepts/circuit-breaker]]
+- [[wiki/concepts/circuit-breaker]]
 - [[concepts/agent-state-management]]
-- [[concepts/llmops]]
-- [[concepts/checkpointing-agents]]
+- [[wiki/concepts/llmops]]
+- [[wiki/concepts/checkpointing-agents]]
 
 ## Open Questions
 

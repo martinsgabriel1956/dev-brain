@@ -34,8 +34,8 @@ printk("Erro ao processar usuário com id %d\n",
 
 ## Relacionado
 
-- [[concepts/observabilidade]] — logs estruturados e pesquisáveis são parte de boa observabilidade
+- [[wiki/concepts/observabilidade]] — logs estruturados e pesquisáveis são parte de boa observabilidade
 
 ## Key Sources
 
-- [[sources/estilo-de-codigo-convencoes]]
+- [[wiki/sources/estilo-de-codigo-convencoes]]

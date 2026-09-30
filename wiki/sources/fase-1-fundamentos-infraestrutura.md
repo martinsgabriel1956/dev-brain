@@ -34,11 +34,11 @@ Fundamentos de infraestrutura: DNS (TTL, tipos de record), Load Balancer (L4 vs 
 
 ## Entities & Concepts Touched
 
-- [[concepts/dns]]
-- [[concepts/load-balancer]]
-- [[concepts/cdn]]
-- [[concepts/cache]]
-- [[concepts/back-of-envelope]]
+- [[wiki/concepts/dns]]
+- [[wiki/concepts/load-balancer]]
+- [[wiki/concepts/cdn]]
+- [[wiki/concepts/cache]]
+- [[wiki/concepts/back-of-envelope]]
 - [[concepts/latency-numbers]]
 
 ## Open Questions

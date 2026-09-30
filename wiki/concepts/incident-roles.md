@@ -26,7 +26,7 @@ Lidera a investigação técnica. Não coordena — foco total na causa raiz e m
 Atualiza stakeholders externos (produto, C-level, clientes) e status page. Filtra ruído técnico para comunicação legível.
 
 **Escriba**
-Documenta a timeline em tempo real durante o incidente. Fonte primária para o [[concepts/blameless-post-mortem]] posterior. Se não houver escriba dedicado, o IC documenta minimamente no canal.
+Documenta a timeline em tempo real durante o incidente. Fonte primária para o [[wiki/concepts/blameless-post-mortem]] posterior. Se não houver escriba dedicado, o IC documenta minimamente no canal.
 
 ## Em Times Pequenos
 
@@ -34,4 +34,4 @@ Com equipe pequena, IC e Escriba podem ser a mesma pessoa. IC e TL nunca devem s
 
 ## Key Sources
 
-- [[sources/sre-error-budget-incidents]]
+- [[wiki/sources/sre-error-budget-incidents]]

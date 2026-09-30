@@ -16,9 +16,9 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/cdc-debezium]]: [[concepts/cdc]]
-- Em [[wiki/sources/elasticsearch-opensearch]]: [[concepts/cdc]]
-- Em [[wiki/sources/outbox-pattern]]: [[concepts/cdc]]
+- Em [[wiki/sources/cdc-debezium]]: [[wiki/concepts/cdc]]
+- Em [[wiki/sources/elasticsearch-opensearch]]: [[wiki/concepts/cdc]]
+- Em [[wiki/sources/outbox-pattern]]: [[wiki/concepts/cdc]]
 
 ## Pendências
 

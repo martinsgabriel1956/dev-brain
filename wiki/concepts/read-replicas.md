@@ -3,8 +3,8 @@ type: concept
 title: "Read Replicas"
 aliases: ["réplica de leitura", "read replica", "replica routing"]
 date_created: 2026-04-22
-date_updated: 2026-09-14
-source_count: 10
+date_updated: 2026-09-30
+source_count: 12
 tags: [banco-de-dados, escalabilidade, read-replicas, postgresql, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -29,11 +29,11 @@ const order = await primary.order.create({ data: orderData });      // escrita �
 - ✅ Workload read-heavy (>80% reads)
 - ✅ Queries analíticas pesadas que não podem afetar o primário
 - ❌ Quando consistência imediata é obrigatória (saldos, inventário crítico)
-- ❌ Como substituto para queries lentas — otimize [[concepts/database-index]] primeiro
+- ❌ Como substituto para queries lentas — otimize [[wiki/concepts/database-index]] primeiro
 
 ## Read-Your-Writes
 
-Problema: após escrever no primário, leitura na réplica pode não ver o dado ainda (replication lag). → [[concepts/read-your-writes]]
+Problema: após escrever no primário, leitura na réplica pode não ver o dado ainda (replication lag). → [[wiki/concepts/read-your-writes]]
 
 ## Regra Prática: Relatório Nunca Bate em Produção
 
@@ -59,9 +59,13 @@ Read replicas são o mecanismo concreto por trás do read/write split usado em [
 
 Mesmo com réplicas de leitura, bases relacionais tradicionais continuam escalando principalmente na **vertical**: o nó primário (onde chegam `INSERT`/`UPDATE`) está limitado à capacidade de hardware daquele servidor. Sharding manual pode quebrar entre servidores, mas não é um processo natural/automático do banco — diferente de um key-value store como [[wiki/concepts/dynamodb|DynamoDB]], que escala automaticamente e horizontalmente conforme o workload. Ver [[wiki/concepts/criterios-de-escolha-de-banco-de-dados]] e [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]].
 
+## Caso: Perfis com Milhões de Acessos
+
+No caso didático, milhões de acessos a perfis → várias réplicas de leitura do PostgreSQL, e, se preciso escalar mais, sharding por região. A fonte não cita replication lag após upload novo (ver lacuna em [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]]).
+
 ## Key Sources
 
-- [[sources/banco-de-dados]]
+- [[wiki/sources/banco-de-dados]]
 - [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] — read replicas como opção de consistência eventual no CQRS que preserva o schema da escrita, em contraste com eventos (que permitem transformação livre do modelo)
 - [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — read replicas como base do read/write split em CQRS, com replication lag estimado em 1-3s
@@ -71,3 +75,5 @@ Mesmo com réplicas de leitura, bases relacionais tradicionais continuam escalan
 - [[wiki/sources/world-cup-system-design]] — réplicas servindo rotas de histórico/estatística separadas do caminho de placar ao vivo (Redis), divisão por volatilidade do dado
 - [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — mesma justificativa didática ("a maioria das aplicações lê mais do que escreve"), com exemplo concreto de roteamento no Laravel (chaves `read`/`write`) e cluster Amazon Aurora
 - [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]] — réplicas de leitura não eliminam o teto vertical do nó primário de escrita, contrastado com escalabilidade horizontal automática do DynamoDB
+- [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — Instagram simplificado: réplicas de leitura do PostgreSQL antes de sharding por região; sem discutir replication lag
+- [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — alternativa mais simples ao banco de leitura NoSQL separado; a fonte separa fisicamente os bancos com transformação dos dados, não com réplica do mesmo schema

@@ -98,6 +98,6 @@ const services = await consul.health.service({ service: "order-service", passing
 
 ## Key Sources
 
-- [[sources/service-discovery]]
+- [[wiki/sources/service-discovery]]
 - [[wiki/sources/api-gateway-padrao-essencial-arquiteturas-distribuidas]]
 - [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] — pré-requisito implícito de todo algoritmo de balanceamento simulado: o load balancer precisa conhecer o conjunto de servidores disponíveis antes de poder escolher entre eles

@@ -39,18 +39,18 @@ Padrão arquitetural que emite uma credencial temporária de escopo mínimo para
 - **Azure SAS Token (Shared Access Signature)** — acesso temporário a Blob Storage
 - **Google Cloud Signed URL** — acesso temporário a objetos no GCS
 
-Ver também: [[concepts/media-upload-pattern]] — implementação do padrão para upload de mídia.
+Ver também: [[wiki/concepts/media-upload-pattern]] — implementação do padrão para upload de mídia.
 
 ## Ganhos
 
 - **Reduz carga da API:** a aplicação não precisa receber e repassar arquivos grandes (não vira proxy)
-- **Reduz [[concepts/attack-surface]]:** token interceptado tem impacto limitado em tempo e escopo
+- **Reduz [[wiki/concepts/attack-surface]]:** token interceptado tem impacto limitado em tempo e escopo
 - **Melhora performance:** cliente faz upload/download diretamente no storage — sem hop extra
 
 ## Relação com Least Privilege
 
-A Valet Key é a implementação prática do [[concepts/defense-in-depth]] em credenciais: mesmo que vaze, não há escalada de privilégio possível.
+A Valet Key é a implementação prática do [[wiki/concepts/defense-in-depth]] em credenciais: mesmo que vaze, não há escalada de privilégio possível.
 
 ## Key Sources
 
-- [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
+- [[wiki/sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]

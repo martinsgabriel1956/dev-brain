@@ -3,8 +3,8 @@ type: concept
 title: "Validação de Entrada"
 aliases: ["input validation", "validação de dados", "nunca confie no client"]
 date_created: 2026-07-09
-date_updated: 2026-08-28
-source_count: 4
+date_updated: 2026-09-30
+source_count: 5
 tags: [validacao, seguranca, backend, regra-de-negocio, arquitetura-em-camadas, celebrate, joi, schema-validation]
 skill: tech-mentor-backend
 status: stub
@@ -57,3 +57,4 @@ Essa camada **não substitui** a query parametrizada (placeholders `$1`/`$2`) �
 - [[wiki/sources/injecao-sql-aula-modulo-seguranca]] — exemplo prático de validação de schema (Celebrate/Joi) como camada extra contra SQL Injection
 - [[wiki/sources/email-address]] — sintaxe formal RFC 5322 de e-mail vs. práticas reais de validação de provedores
 - [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] — validação de formato como defesa fraca isolada contra SQLi: comportamento opaco do validador e campos de texto livre não cobertos
+- [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — 'valide, pesquise, entenda a regra de negócio'; preço/estoque negativos como entrada/estado inválido

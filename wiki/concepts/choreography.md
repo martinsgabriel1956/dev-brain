@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/event-driven-architecture]]: [[concepts/choreography]]
-- Em [[wiki/sources/saga-pattern]]: [[concepts/choreography]]
+- Em [[wiki/sources/event-driven-architecture]]: [[wiki/concepts/choreography]]
+- Em [[wiki/sources/saga-pattern]]: [[wiki/concepts/choreography]]
 
 ## Pendências
 

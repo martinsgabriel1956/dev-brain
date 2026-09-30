@@ -33,4 +33,4 @@ Hierarquia de armazenamento: MMKV para flags/tokens/prefs (síncrono, AES nativo
 
 ## Conceitos Abordados
 
-- [[concepts/mobile-armazenamento-local]] · [[concepts/mobile-offline-first-basico]] · [[concepts/mobile-seguranca]]
+- [[wiki/concepts/mobile-armazenamento-local]] · [[wiki/concepts/mobile-offline-first-basico]] · [[wiki/concepts/mobile-seguranca]]

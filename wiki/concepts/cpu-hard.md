@@ -12,7 +12,7 @@ status: stable
 
 # CPU-Hard
 
-Propriedade de algoritmos de [[concepts/password-hashing]] que os torna **intencionalmente lentos**, consumindo ciclos de CPU de forma proporcional a um fator configurável. O objetivo é que cada tentativa de brute-force seja cara o suficiente para tornar ataques inviáveis.
+Propriedade de algoritmos de [[wiki/concepts/password-hashing]] que os torna **intencionalmente lentos**, consumindo ciclos de CPU de forma proporcional a um fator configurável. O objetivo é que cada tentativa de brute-force seja cara o suficiente para tornar ataques inviáveis.
 
 Contraposição direta a algoritmos de hash genéricos (MD5, SHA-256) que são otimizados para **velocidade máxima** — exatamente o oposto do que se quer em password hashing.
 
@@ -22,13 +22,13 @@ Contraposição direta a algoritmos de hash genéricos (MD5, SHA-256) que são o
 
 MD5/SHA geram **bilhões de hashes/segundo**. Um atacante com uma wordlist de 29 bilhões de senhas consegue testar tudo em segundos.
 
-[[concepts/bcrypt]] com fator 12: ~3 hashes/segundo → mesma wordlist levaria **centenas de anos** num único núcleo de CPU.
+[[wiki/concepts/bcrypt]] com fator 12: ~3 hashes/segundo → mesma wordlist levaria **centenas de anos** num único núcleo de CPU.
 
 ---
 
 ## Fator de Trabalho
 
-O custo é configurável e cresce em escala logarítmica no BCrypt (`2^N` iterações) ou linearmente no [[concepts/argon2]] (`time_cost`).
+O custo é configurável e cresce em escala logarítmica no BCrypt (`2^N` iterações) ou linearmente no [[wiki/concepts/argon2]] (`time_cost`).
 
 **Regra:** ajustar periodicamente conforme o hardware avança, para manter o tempo de geração entre 100-500ms por hash em produção.
 
@@ -36,19 +36,19 @@ O custo é configurável e cresce em escala logarítmica no BCrypt (`2^N` itera�
 
 ## Limitação: Paralelismo de GPU
 
-CPU-hard protege contra CPU, mas GPUs têm dezenas de milhares de núcleos e podem paralelizar instâncias do algoritmo. [[concepts/bcrypt]] (apenas CPU-hard) pode ser atacado por rigs de GPU.
+CPU-hard protege contra CPU, mas GPUs têm dezenas de milhares de núcleos e podem paralelizar instâncias do algoritmo. [[wiki/concepts/bcrypt]] (apenas CPU-hard) pode ser atacado por rigs de GPU.
 
-A solução é [[concepts/memory-hard]] — ver [[concepts/argon2]].
+A solução é [[wiki/concepts/memory-hard]] — ver [[wiki/concepts/argon2]].
 
 ---
 
 ## Relação com Outros Conceitos
 
-- [[concepts/password-hashing]] — contexto de uso
-- [[concepts/bcrypt]] — implementação clássica de CPU-hard
-- [[concepts/argon2]] — combina CPU-hard com memory-hard
-- [[concepts/memory-hard]] — extensão que derrota GPU
+- [[wiki/concepts/password-hashing]] — contexto de uso
+- [[wiki/concepts/bcrypt]] — implementação clássica de CPU-hard
+- [[wiki/concepts/argon2]] — combina CPU-hard com memory-hard
+- [[wiki/concepts/memory-hard]] — extensão que derrota GPU
 
 ## Key Sources
 
-- [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
+- [[wiki/sources/seguranca-armazenamento-senhas-banco-de-dados]]

@@ -36,9 +36,9 @@ Evolução HTTP: HTTP/1.1 (keep-alive, HoL blocking por conexão) → HTTP/2 (mu
 
 - [[concepts/tcp]]
 - [[concepts/quic]]
-- [[concepts/http2]]
+- [[wiki/concepts/http2]]
 - [[concepts/http3]]
-- [[concepts/tls]]
+- [[wiki/concepts/tls]]
 - [[concepts/head-of-line-blocking]]
 - [[concepts/multiplexing]]
 

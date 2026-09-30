@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/ai-gateway-token-economics]]: [[concepts/cascade-pattern-llm]]
-- Em [[wiki/sources/open-weight-deployment]]: [[concepts/cascade-pattern-llm]]
+- Em [[wiki/sources/ai-gateway-token-economics]]: [[wiki/concepts/cascade-pattern-llm]]
+- Em [[wiki/sources/open-weight-deployment]]: [[wiki/concepts/cascade-pattern-llm]]
 
 ## Pendências
 

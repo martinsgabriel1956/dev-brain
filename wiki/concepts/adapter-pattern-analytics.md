@@ -38,6 +38,6 @@ O `AnalyticsService` itera sobre todos os providers registrados — permitindo m
 
 ## Relacionado
 
-- [[concepts/shared-sdk]] — o módulo de analytics faz parte do SDK compartilhado
-- [[concepts/analytics-pipeline]] — pipeline assíncrono de analytics no backend
-- [[sources/mobile-platform-engineering]]
+- [[wiki/concepts/shared-sdk]] — o módulo de analytics faz parte do SDK compartilhado
+- [[wiki/concepts/analytics-pipeline]] — pipeline assíncrono de analytics no backend
+- [[wiki/sources/mobile-platform-engineering]]

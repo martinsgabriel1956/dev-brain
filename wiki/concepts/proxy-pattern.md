@@ -79,7 +79,7 @@ O Controller não sabe que está lidando com um Proxy — depende apenas da inte
 ## Key Sources
 
 - [[wiki/sources/design-pattern-proxy]]
-- [[sources/design-pattern-facade]] — relações com Facade e distinção entre os dois
+- [[wiki/sources/design-pattern-facade]] — relações com Facade e distinção entre os dois
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — Remote Proxy aplicado a AI Gateway/roteamento de LLM
 - [[wiki/sources/design-pattern-decorator-renato-augusto]] — contraste Decorator vs. Proxy: mesmo wrapping de interface, mas Decorator recebe o objeto externamente e encadeia múltiplos wrappers para estender comportamento
 - [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]] — proxy de rede vs. padrão

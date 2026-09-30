@@ -34,17 +34,17 @@ Com IA, gerar código funcional virou commodity. A régua subiu: quem só execut
 
 Antes de qualquer linha, entender o problema. Maioria pula e descobre o erro só quando já tem solução errada.
 
-- [[concepts/vocabulario-tecnico]] — acoplamento, abstração, estado: entender o *porquê* dos termos
-- [[concepts/decomposicao-de-problemas]] — dividir problema grande em etapas menores executáveis
+- [[wiki/concepts/vocabulario-tecnico]] — acoplamento, abstração, estado: entender o *porquê* dos termos
+- [[wiki/concepts/decomposicao-de-problemas]] — dividir problema grande em etapas menores executáveis
 - Lógica como fluxo de decisão e estado, não só `if/else`
 
 ## Pilar 2 — Entender o Que o Código Faz de Verdade
 
 Entre código escrito e sistema executando existe memória alocada, CPU, estruturas navegadas. A maioria tem caixa-preta nesse espaço.
 
-- [[concepts/abstracao]] — camadas que escondem complexidade sem esconder clareza
+- [[wiki/concepts/abstracao]] — camadas que escondem complexidade sem esconder clareza
 - Estruturas de dados: quando usar e quando *não* usar cada uma
-- [[concepts/big-o]] — consequências das decisões de estrutura além de matemática
+- [[wiki/concepts/big-o]] — consequências das decisões de estrutura além de matemática
 - Memória e execução: o que o código faz quando roda
 
 ## Pilar 3 — Pensar em Sistema, Não em Arquivos
@@ -54,24 +54,24 @@ Diferença: código que funciona em teste vs sistema que funciona com milhares d
 - Modelar fluxo de dados e responsabilidades antes de abrir editor
 - Back-end: entender *por que* cada arquitetura existe, não apenas como usar
 - [[concepts/banco-de-dados]] — cada banco é uma decisão que altera a forma de construir
-- [[concepts/pensamento-sistemico]] — acoplamento e dependências como gargalo central de crescimento
+- [[wiki/concepts/pensamento-sistemico]] — acoplamento e dependências como gargalo central de crescimento
 
 ## Pilar 4 — Entender Sistemas em Produção
 
-- [[concepts/observabilidade]] — logs, métricas, ler o sistema como sistema vivo
-- [[concepts/paridade-local-producao]] — sistemas em prod têm comportamento diferente do dev
+- [[wiki/concepts/observabilidade]] — logs, métricas, ler o sistema como sistema vivo
+- [[wiki/concepts/paridade-local-producao]] — sistemas em prod têm comportamento diferente do dev
 - Monolito vs microsserviços: quando cada um faz e não faz sentido
 
 ## Pilar 5 — Usar IA Sem Depender 100% Dela
 
-- [[concepts/ia-ciclo-dependencia]] — armadilha: menos você entende o gerado, menos consegue avaliar
+- [[wiki/concepts/ia-ciclo-dependencia]] — armadilha: menos você entende o gerado, menos consegue avaliar
 - Validar código de IA: não só funciona — vai escalar? vai quebrar? está dentro do contexto do sistema?
-- [[concepts/piramide-de-testes]] — testes como seguro contra decisões ruins da IA e suas próprias
+- [[wiki/concepts/piramide-de-testes]] — testes como seguro contra decisões ruins da IA e suas próprias
 - Git/versionamento: único lugar para voltar quando o histórico de decisões some com IA
 
 ## Entidades
 
-- [[entities/andrej-karpathy]] — mencionado indiretamente pelo contexto de IA/vibe coding
+- [[wiki/entities/andrej-karpathy]] — mencionado indiretamente pelo contexto de IA/vibe coding
 
 ## Open Questions
 

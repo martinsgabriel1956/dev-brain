@@ -31,4 +31,4 @@ Abstract Factory pode servir como alternativa ao [[facade-pattern]] quando a pre
 
 ## Key Sources
 
-- [[sources/design-pattern-facade]] — mencionado nas relações com outros padrões
+- [[wiki/sources/design-pattern-facade]] — mencionado nas relações com outros padrões

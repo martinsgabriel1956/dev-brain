@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/3pc]]: [[entities/cockroachdb]]
-- Em [[wiki/sources/bancos-especializados]]: [[entities/cockroachdb]]
+- Em [[wiki/sources/3pc]]: [[wiki/entities/cockroachdb]]
+- Em [[wiki/sources/bancos-especializados]]: [[wiki/entities/cockroachdb]]
 
 ## Pendências
 

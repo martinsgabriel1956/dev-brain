@@ -50,4 +50,4 @@ Qualquer incidente P1 ou P2. Incidente P3 com causa nova ou recorrente. Near-mis
 
 ## Conceitos Relacionados
 
-[[concepts/runbook]] · [[concepts/playbook]]
+[[wiki/concepts/runbook]] · [[wiki/concepts/playbook]]

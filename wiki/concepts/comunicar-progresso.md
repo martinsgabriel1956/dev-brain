@@ -39,7 +39,7 @@ Daily standup. Mas mesmo com ele: tem alguém fora do ritual que deveria ser atu
 
 ## Relacionado
 
-[[concepts/documentar-conquistas]] — registrar o que foi feito ajuda a comunicar com precisão.
+[[wiki/concepts/documentar-conquistas]] — registrar o que foi feito ajuda a comunicar com precisão.
 
 ## Status Diário Como Visibilidade e Sinal de Senioridade
 
@@ -47,5 +47,5 @@ Para [[wiki/entities/andre-casciotti]], o status diário (daily ou mensagem ao g
 
 ## Key Sources
 
-- [[sources/9-habitos-programador-junior]]
+- [[wiki/sources/9-habitos-programador-junior]]
 - [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]

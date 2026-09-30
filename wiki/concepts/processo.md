@@ -35,7 +35,7 @@ new → ready → running → waiting → terminated
 
 ## Isolamento de Memória
 
-Navegador não consegue acessar a memória do editor de texto. Cada processo vive em seu próprio espaço de endereçamento (ver [[concepts/memoria-virtual]]).
+Navegador não consegue acessar a memória do editor de texto. Cada processo vive em seu próprio espaço de endereçamento (ver [[wiki/concepts/memoria-virtual]]).
 
 Benefício: se um processo travar, em geral não derruba os outros.
 
@@ -48,15 +48,15 @@ Benefício: se um processo travar, em geral não derruba os outros.
 | Custo de criação | Alto | Médio |
 | Context switch | Mais caro | Menos caro |
 
-Ver [[concepts/thread]] para a comparação completa.
+Ver [[wiki/concepts/thread]] para a comparação completa.
 
 ## Ver também
 
-- [[concepts/thread]] — unidade de execução dentro de um processo
-- [[concepts/escalonador]] — decide qual processo roda e quando
-- [[concepts/context-switch]] — troca de processo no processador
-- [[concepts/memoria-virtual]] — como o espaço de memória é isolado
-- [[concepts/syscall]] — como processos pedem serviços ao kernel
+- [[wiki/concepts/thread]] — unidade de execução dentro de um processo
+- [[wiki/concepts/escalonador]] — decide qual processo roda e quando
+- [[wiki/concepts/context-switch]] — troca de processo no processador
+- [[wiki/concepts/memoria-virtual]] — como o espaço de memória é isolado
+- [[wiki/concepts/syscall]] — como processos pedem serviços ao kernel
 
 ## Fork, herança de descritores e exec
 
@@ -65,5 +65,5 @@ Detalhe didático em [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deplo
 ## Key Sources
 
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — fork com redirecionamento de stdout demonstrado em Python
-- [[sources/sistema-operacional-por-baixo-dos-panos]]
-- [[sources/como-sistemas-operacionais-funcionam]]
+- [[wiki/sources/sistema-operacional-por-baixo-dos-panos]]
+- [[wiki/sources/como-sistemas-operacionais-funcionam]]

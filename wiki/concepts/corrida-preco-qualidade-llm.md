@@ -3,8 +3,8 @@ type: concept
 title: "Corrida de Preço vs. Qualidade em LLMs"
 aliases: ["race to the bottom llm", "corrida para baixo de preço", "guerra de preços ia"]
 date_created: 2026-07-21
-date_updated: 2026-08-25
-source_count: 5
+date_updated: 2026-09-30
+source_count: 6
 tags: [mercado-de-ia, precificacao, competicao, llm, open-source, ancoragem]
 skill: tech-mentor-ai
 status: stub
@@ -55,3 +55,4 @@ A mesma fonte cita (via reportagem da Axios, sem URL fornecida) que formuladores
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — crítica ao modelo de cobrança por token (Palantir): preço deveria ser sobre valor gerado, não volume de token
 - [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — ancoragem de preço como resposta do frontier à corrida (Opus como "novo Sonnet")
 - [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — tese de que a corrida chinesa trava o "grande rollback" regulatório; janela de atraso da China encolhendo (2 anos → 6-12 meses)
+- [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] — em open weight o preço é distribuído por provedor; preço deve ser o último critério

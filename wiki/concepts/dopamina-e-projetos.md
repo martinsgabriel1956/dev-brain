@@ -32,13 +32,13 @@ Não é falta de disciplina — é bioquímica. A solução não é "ter mais fo
 
 ## Mitigação
 
-1. **[[concepts/goal-gradient-effect]]** — micro-tasks que geram dopamina ao serem completadas
-2. **[[concepts/mvp]]** — escopo mínimo reduz o gap entre ideação e entrega
+1. **[[wiki/concepts/goal-gradient-effect]]** — micro-tasks que geram dopamina ao serem completadas
+2. **[[wiki/concepts/mvp]]** — escopo mínimo reduz o gap entre ideação e entrega
 3. **Regra do "termine antes de começar"** — não iniciar projeto novo enquanto o atual não atingiu MVP
 
 ## Padrão Análogo: o "Dev Emocionado"
 
-[[concepts/lean-startup]] descreve o mesmo mecanismo por outro ângulo: o dev desmotivado no emprego atual troca a dopamina da ideação de código por um novo projeto próprio, sem validar se a dor que ele imagina resolver é real. A metodologia Lean Startup existe justamente para redirecionar esse impulso — canalizando a energia da ideação para validação estruturada antes de construir.
+[[wiki/concepts/lean-startup]] descreve o mesmo mecanismo por outro ângulo: o dev desmotivado no emprego atual troca a dopamina da ideação de código por um novo projeto próprio, sem validar se a dor que ele imagina resolver é real. A metodologia Lean Startup existe justamente para redirecionar esse impulso — canalizando a energia da ideação para validação estruturada antes de construir.
 
 ## Tensão com "Escolher pelo Critério de Adrenalina"
 
@@ -50,7 +50,7 @@ Não é falta de disciplina — é bioquímica. A solução não é "ter mais fo
 
 ## Key Sources
 
-- [[sources/por-que-devs-nao-terminam-projetos]]
-- [[sources/lean-startup-para-devs-mano-deivin]]
+- [[wiki/sources/por-que-devs-nao-terminam-projetos]]
+- [[wiki/sources/lean-startup-para-devs-mano-deivin]]
 - [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] — tensão entre "adrenalina como critério de escolha" e o mecanismo de dopamina de antecipação
 - [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] — jogos/redes sociais treinando o circuito de recompensa para orientação a objetivos definidos por terceiros, não a ações autogeradas

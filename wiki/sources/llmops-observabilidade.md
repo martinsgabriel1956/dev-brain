@@ -43,13 +43,13 @@ LLMOps é observabilidade adaptada para LLMs: traces hierárquicos (trace→span
 
 ## Entities & Concepts Touched
 
-- [[concepts/llmops]]
+- [[wiki/concepts/llmops]]
 - [[concepts/prompt-drift]]
 - [[concepts/cost-attribution]]
-- [[concepts/evals-llm]]
+- [[wiki/concepts/evals-llm]]
 - [[entities/langfuse]]
-- [[entities/langsmith]]
-- [[concepts/slo]]
+- [[wiki/entities/langsmith]]
+- [[wiki/concepts/slo]]
 - [[concepts/prompt-versioning]]
 - [[wiki/concepts/time-to-first-token]]
 

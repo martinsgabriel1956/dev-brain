@@ -58,8 +58,8 @@ CREATE TABLE pending_messages (
 
 ## Relacionado
 
-[[concepts/nosql]] — comparativo com outros tipos de NoSQL.
+[[wiki/concepts/nosql]] — comparativo com outros tipos de NoSQL.
 
 ## Key Sources
 
-- [[sources/case-whatsapp]]
+- [[wiki/sources/case-whatsapp]]

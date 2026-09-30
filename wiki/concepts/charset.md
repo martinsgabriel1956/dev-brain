@@ -46,6 +46,6 @@ O [[unicode]] define um espaço de mais de 1 milhão de codepoints. Alguns codep
 
 ## Key Sources
 
-- [[sources/como-strings-realmente-funcionam]]
+- [[wiki/sources/como-strings-realmente-funcionam]]
 - [[wiki/sources/algoritmo-decode-utf8-com-tdd]] — implementação prática do encoding UTF-8 sobre o charset Unicode
 - [[wiki/sources/codificacao-de-caracteres-ascii-iso-8859-1-unicode]] — ISO-8859-1 como exemplo de charset regional que também é encoding

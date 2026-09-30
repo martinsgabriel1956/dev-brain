@@ -46,11 +46,11 @@ O professor pode criar condições: metodologia variada, ferramentas de prática
 
 ## Relação com Outros Conceitos
 
-- [[concepts/entender-vs-aprender]] — a autoconsciência é o que permite reconhecer quando você só entendeu vs. quando realmente aprendeu
-- [[concepts/autodidata]] — o autodidata usa autoconsciência instintivamente: investiga o porquê quando trava
-- [[concepts/aprendizado-deliberado]] — prática deliberada pressupõe saber o que falta aprender
+- [[wiki/concepts/entender-vs-aprender]] — a autoconsciência é o que permite reconhecer quando você só entendeu vs. quando realmente aprendeu
+- [[wiki/concepts/autodidata]] — o autodidata usa autoconsciência instintivamente: investiga o porquê quando trava
+- [[wiki/concepts/aprendizado-deliberado]] — prática deliberada pressupõe saber o que falta aprender
 
 ## Key Sources
 
-- [[sources/papinho-tech-solo-aprender-a-aprender]]
-- [[sources/quanto-tempo-aprender-programacao]] — a autoconsciência como ferramenta para aceitar o tempo de aprendizado; saber que o [[vale-do-desespero]] existe muda a experiência de atravessá-lo
+- [[wiki/sources/papinho-tech-solo-aprender-a-aprender]]
+- [[wiki/sources/quanto-tempo-aprender-programacao]] — a autoconsciência como ferramenta para aceitar o tempo de aprendizado; saber que o [[vale-do-desespero]] existe muda a experiência de atravessá-lo

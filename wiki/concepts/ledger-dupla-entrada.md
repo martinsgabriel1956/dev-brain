@@ -31,5 +31,5 @@ Quando o efeito financeiro mora no mesmo banco do ledger, o `ledger_entry` e a m
 
 ## Key Sources
 
-- [[sources/fintech-system-design]]
+- [[wiki/sources/fintech-system-design]]
 - [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] — lançamento e status da chave confirmando atomicamente na mesma transação local

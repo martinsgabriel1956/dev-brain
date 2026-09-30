@@ -54,12 +54,12 @@ Se o sistema começa a fazer swap constantemente (**thrashing**), a performance 
 
 ## Ver também
 
-- [[concepts/memoria-virtual]] — mecanismo que viabiliza o swap
-- [[concepts/processo]] — processos cujas páginas vão para swap ficam mais lentos
+- [[wiki/concepts/memoria-virtual]] — mecanismo que viabiliza o swap
+- [[wiki/concepts/processo]] — processos cujas páginas vão para swap ficam mais lentos
 - [[wiki/concepts/memoria-ram]] — swap existe justamente porque a RAM física é finita e ordens de magnitude mais rápida que o disco
 
 ## Key Sources
 
-- [[sources/sistema-operacional-por-baixo-dos-panos]]
-- [[sources/como-sistemas-operacionais-funcionam]]
+- [[wiki/sources/sistema-operacional-por-baixo-dos-panos]]
+- [[wiki/sources/como-sistemas-operacionais-funcionam]]
 - [[wiki/sources/evolucao-memorias-ram-ddr1-a-ddr5]] — contexto de hardware: por que a capacidade e a largura de banda da RAM instalada (geração DDR) definem o quanto o sistema pode evitar recorrer a swap

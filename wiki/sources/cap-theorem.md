@@ -34,11 +34,11 @@ CAP Theorem afirma que sistemas distribuídos só podem garantir 2 de 3 propried
 
 ## Conceitos Abordados
 
-- [[concepts/cap-theorem-concept]]
-- [[concepts/pacelc]]
-- [[concepts/linearizability]]
-- [[concepts/eventual-consistency]]
-- [[concepts/causal-consistency]]
-- [[concepts/vector-clock]]
+- [[wiki/concepts/cap-theorem-concept]]
+- [[wiki/concepts/pacelc]]
+- [[wiki/concepts/linearizability]]
+- [[wiki/concepts/eventual-consistency]]
+- [[wiki/concepts/causal-consistency]]
+- [[wiki/concepts/vector-clock]]
 - [[quorum]]
 - [[partition-tolerance]]

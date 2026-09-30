@@ -12,7 +12,7 @@ status: stable
 
 # Shared SDK Mobile
 
-SDK compartilhado é o conjunto de módulos de infraestrutura que múltiplos apps mobile da mesma empresa consomem sem reimplementar. É o output central do [[concepts/monorepo-mobile]].
+SDK compartilhado é o conjunto de módulos de infraestrutura que múltiplos apps mobile da mesma empresa consomem sem reimplementar. É o output central do [[wiki/concepts/monorepo-mobile]].
 
 ## Módulos típicos
 
@@ -40,4 +40,4 @@ packages/
 
 ## Key sources
 
-- [[sources/mobile-platform-engineering]]
+- [[wiki/sources/mobile-platform-engineering]]

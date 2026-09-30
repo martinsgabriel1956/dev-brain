@@ -3,8 +3,8 @@ type: concept
 title: "Isolation Levels (Níveis de Isolamento)"
 aliases: ["níveis de isolamento", "isolation level", "read committed", "repeatable read", "serializable"]
 date_created: 2026-07-29
-date_updated: 2026-07-29
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [banco-de-dados, isolation-level, mvcc, acid, postgresql, database-internals]
 skill: tech-mentor-data
 status: stub
@@ -39,3 +39,4 @@ Em Repeatable Read, o PostgreSQL usa snapshot e por isso não sofre *phantom rea
 ## Key Sources
 
 - [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]] — Read Committed vs. Repeatable Read explicado via exemplo de saldo de Pix mudando (ou não) entre duas leituras da mesma transação
+- [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — consultas presas por transações abertas como motivação para CQRS; snapshot isolation/MVCC seria uma alternativa a avaliar antes de separar bancos

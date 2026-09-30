@@ -37,11 +37,11 @@ Async I/O: Node.js usa single thread + event loop (libuv/epoll) — network I/O 
 - [[concepts/event-loop]]
 - [[concepts/libuv]]
 - [[concepts/io-uring]]
-- [[concepts/goroutines]]
+- [[wiki/concepts/goroutines]]
 - [[concepts/v8-heap]]
 - [[concepts/gc-tuning]]
 - [[concepts/memory-leak]]
-- [[entities/clinic-js]]
+- [[wiki/entities/clinic-js]]
 
 ## Open Questions
 

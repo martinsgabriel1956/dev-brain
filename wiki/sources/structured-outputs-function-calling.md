@@ -41,8 +41,8 @@ Structured Outputs garantem schema válido sem parsing frágil de texto livre. O
 
 - [[concepts/structured-outputs]]
 - [[concepts/function-calling]]
-- [[concepts/tool-use-agents]]
-- [[concepts/idempotencia]]
+- [[wiki/concepts/tool-use-agents]]
+- [[wiki/concepts/idempotencia]]
 - [[concepts/parallel-tool-calls]]
 
 ## Key Sources

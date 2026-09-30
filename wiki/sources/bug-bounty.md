@@ -34,13 +34,13 @@ Bug Bounty: programa de recompensa por vulnerabilidades reportadas responsavelme
 
 ## Entities & Concepts Touched
 
-- [[concepts/bug-bounty]]
+- [[wiki/concepts/bug-bounty]]
 - [[concepts/responsible-disclosure]]
-- [[concepts/cvss]]
+- [[wiki/concepts/cvss]]
 - [[entities/hackerone]]
 - [[entities/bugcrowd]]
 - [[concepts/vdp]]
-- [[concepts/pentest]]
+- [[wiki/concepts/pentest]]
 
 ## Key Sources
 

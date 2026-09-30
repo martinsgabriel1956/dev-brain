@@ -59,7 +59,7 @@ Cada fase é um programa separado e plugável. Isso permite:
 
 ## Relevância para Multi-Linguagem
 
-O ponto de encontro entre linguagens é o [[concepts/object-file]] — formato binário neutro que o linker entende. Linguagens diferentes geram object files compatíveis para a mesma arquitetura, permitindo que o [[concepts/toolchain]] as combine.
+O ponto de encontro entre linguagens é o [[wiki/concepts/object-file]] — formato binário neutro que o linker entende. Linguagens diferentes geram object files compatíveis para a mesma arquitetura, permitindo que o [[wiki/concepts/toolchain]] as combine.
 
 ## Relação com o pipeline de front-end (lexer → codegen)
 
@@ -71,6 +71,6 @@ Em vez de implementar a fase de otimização/geração de código do zero, uma l
 
 ## Key Sources
 
-- [[sources/como-multiplas-linguagens-vivem-num-unico-binario]]
+- [[wiki/sources/como-multiplas-linguagens-vivem-num-unico-binario]]
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]] — LLVM como backend plugável; visão do pipeline sob a ótica de quem projeta uma linguagem nova, não só de quem compila C
 - [[wiki/sources/como-um-compilador-transforma-codigo-em-instrucoes-de-maquina]] — pipeline interno de 6 estágios (lexer → parser → semântica → IR → otimização → codegen) que roda dentro da fase de "Compilação" deste pipeline de 4 fases

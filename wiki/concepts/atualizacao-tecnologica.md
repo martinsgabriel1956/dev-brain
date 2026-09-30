@@ -40,10 +40,10 @@ Ponto saudável:
 
 ## Ver também
 
-- [[concepts/principio-da-inversao]] — hábito ruim nº 6
-- [[concepts/tutorial-hell]] — armadilha oposta: consumo sem aplicação
-- [[concepts/aprendizado-deliberado]] — framework para aprender com propósito
+- [[wiki/concepts/principio-da-inversao]] — hábito ruim nº 6
+- [[wiki/concepts/tutorial-hell]] — armadilha oposta: consumo sem aplicação
+- [[wiki/concepts/aprendizado-deliberado]] — framework para aprender com propósito
 
 ## Key Sources
 
-- [[sources/principio-da-inversao-programador]]
+- [[wiki/sources/principio-da-inversao-programador]]

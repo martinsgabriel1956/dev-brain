@@ -51,7 +51,7 @@ Quando servidores WebSocket são replicados atrás de um [[wiki/concepts/load-ba
 
 ## Conexões
 
-- [[concepts/mensageria]] — Pub/Sub é o modelo central de mensageria assíncrona
+- [[wiki/concepts/mensageria]] — Pub/Sub é o modelo central de mensageria assíncrona
 - [[observer-pattern]] — precursor in-process do Pub/Sub distribuído
 - [[fanout-pattern]] — estratégia de distribuição usada em Pub/Sub
 - [[wiki/concepts/server-sent-events]] — SSE como consumidor final de eventos publicados via Redis Pub/Sub
@@ -62,7 +62,7 @@ Quando servidores WebSocket são replicados atrás de um [[wiki/concepts/load-ba
 ## Key Sources
 
 - [[wiki/sources/nats-jetstream]] — NATS é um sistema de mensageria cloud-native ultralleve. NATS Core: pub/sub fire-and-forget, sem persistência. JetStream adiciona persistência, consumers duráveis e ACK semântico (at-least-once). KV...
-- [[sources/design-pattern-observer]] — distinção Observer vs Pub/Sub
+- [[wiki/sources/design-pattern-observer]] — distinção Observer vs Pub/Sub
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — Redis Pub/Sub notificando um endpoint SSE em arquitetura de microsserviços
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — padrão de tópico por usuário/grupo para chat distribuído via WebSocket
 - [[wiki/sources/pub-sub-message-queue-bullmq-na-pratica]] — distinção Pub/Sub vs message queue pelo modelo de dependência (quem depende de quem)

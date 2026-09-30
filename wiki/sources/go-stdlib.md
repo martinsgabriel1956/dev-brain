@@ -34,4 +34,4 @@ A stdlib de Go é intencionalmente abrangente — `net/http`, `encoding/json`, `
 
 ## Conceitos Abordados
 
-- [[concepts/go-stdlib]] · [[concepts/go-fundamentos]] · [[concepts/go-concorrencia]] · [[concepts/go-ecossistema]] · [[concepts/go-producao]]
+- [[wiki/concepts/go-stdlib]] · [[wiki/concepts/go-fundamentos]] · [[wiki/concepts/go-concorrencia]] · [[wiki/concepts/go-ecossistema]] · [[wiki/concepts/go-producao]]

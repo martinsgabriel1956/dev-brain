@@ -49,9 +49,9 @@ Passo 4: Exibir resultado
 
 ## Concepts Touched
 
-- [[concepts/decomposicao-de-problemas]]
-- [[concepts/aprendizado-deliberado]]
-- [[concepts/postura-de-programador]]
+- [[wiki/concepts/decomposicao-de-problemas]]
+- [[wiki/concepts/aprendizado-deliberado]]
+- [[wiki/concepts/postura-de-programador]]
 
 ## Open Questions
 

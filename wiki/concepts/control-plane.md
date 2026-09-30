@@ -12,7 +12,7 @@ status: stub
 
 # Control Plane
 
-Componente central de um [[concepts/cluster]] responsável por decidir onde cada workload roda. Clients falam com o control plane, não com nodes individuais.
+Componente central de um [[wiki/concepts/cluster]] responsável por decidir onde cada workload roda. Clients falam com o control plane, não com nodes individuais.
 
 **No Kubernetes:** API Server + Scheduler + Controller Manager + etcd. O Scheduler avalia CPU/memória disponível por node e coloca pods onde há capacidade.
 
@@ -26,5 +26,5 @@ Componente central de um [[concepts/cluster]] responsável por decidir onde cada
 
 ## Key Sources
 
-- [[sources/clusters]]
+- [[wiki/sources/clusters]]
 - [[wiki/sources/large-scale-vs-complex-architecture]] — control plane como camada de coordenação de sharding em large scale architecture

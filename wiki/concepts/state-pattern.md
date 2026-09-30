@@ -40,5 +40,5 @@ O caso mais citado de State Pattern na prática é justamente a implementação 
 
 ## Key Sources
 
-- [[sources/design-pattern-strategy]] — mencionado nas relações como padrão estruturalmente similar
+- [[wiki/sources/design-pattern-strategy]] — mencionado nas relações como padrão estruturalmente similar
 - [[wiki/sources/o-que-e-uma-finite-state-machine]] — exemplo de FSM de Game Design (Pac-Man, turret) implementável via State Pattern

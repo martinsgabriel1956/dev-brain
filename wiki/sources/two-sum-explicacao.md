@@ -35,7 +35,7 @@ Two Sum: dado um array e um target, retornar índices de dois números que somam
 ## Entities & Concepts Touched
 
 - [[wiki/concepts/hashmap]]
-- [[concepts/complement-pattern]]
+- [[wiki/concepts/complement-pattern]]
 - [[wiki/concepts/time-space-tradeoff]]
 - [[wiki/concepts/two-pointer]]
 - [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — mesma técnica de hash map/set em O(n) aplicada a três problemas diferentes de entrevista

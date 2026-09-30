@@ -35,9 +35,9 @@ Tolerant Reader (Martin Fowler): consumidores devem ser liberais no que aceitam 
 ## Entities & Concepts Touched
 
 - [[concepts/tolerant-reader]]
-- [[concepts/robustness-principle]]
-- [[concepts/expand-contract]]
-- [[concepts/backward-compatibility]]
+- [[wiki/concepts/robustness-principle]]
+- [[wiki/concepts/expand-contract]]
+- [[wiki/concepts/backward-compatibility]]
 - [[concepts/event-versioning]]
 
 ## Open Questions

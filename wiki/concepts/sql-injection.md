@@ -64,7 +64,7 @@ O mesmo princípio se aplica a: XSS (injeção HTML/JS), Command Injection (shel
 
 ## Papel Histórico no Armazenamento de Senhas
 
-A popularização do SQL Injection nos anos 90 foi o gatilho que expôs o padrão de armazenar senhas em **plaintext**. Quando um atacante ganhava acesso ao banco via SQLi, recebia as senhas literalmente como o usuário havia digitado — e as reutilizava em outros serviços. Esse ciclo levou à adoção de [[concepts/password-hashing]] como resposta. O caso [[entities/rockyou]] (2009) mostrou que décadas depois empresas ainda não tinham aprendido a lição.
+A popularização do SQL Injection nos anos 90 foi o gatilho que expôs o padrão de armazenar senhas em **plaintext**. Quando um atacante ganhava acesso ao banco via SQLi, recebia as senhas literalmente como o usuário havia digitado — e as reutilizava em outros serviços. Esse ciclo levou à adoção de [[wiki/concepts/password-hashing]] como resposta. O caso [[wiki/entities/rockyou]] (2009) mostrou que décadas depois empresas ainda não tinham aprendido a lição.
 
 ## "Eliminar SQL Elimina SQL Injection"? Não Exatamente
 
@@ -81,7 +81,7 @@ Uma thread analisada em [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] prop
 - [[attack-surface]] — inputs são a superfície de ataque mais explorada
 - [[principio-do-menor-privilegio]] — reduz o impacto de uma injeção bem-sucedida
 - [[xss]] — injeção de código em contexto diferente (HTML/JS em vez de SQL)
-- [[concepts/password-hashing]] — resposta ao problema exposto pelos vazamentos via SQLi
+- [[wiki/concepts/password-hashing]] — resposta ao problema exposto pelos vazamentos via SQLi
 - [[wiki/concepts/orm]] — parametriza por padrão, mas raw queries interpoladas continuam vulneráveis
 
 ## Exploração Automatizada com SQLMap
@@ -96,8 +96,8 @@ Além de extrair linhas de tabela, a mesma injeção pode ser usada para ler e, 
 
 ## Key Sources
 
-- [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — Bobby Tables como exemplo central de sanitização de input
-- [[sources/seguranca-armazenamento-senhas-banco-de-dados]] — contexto histórico: SQLi nos anos 90 como vetor que expôs o plaintext
+- [[wiki/sources/cinco-praticas-seguranca-pragmatic-programmer]] — Bobby Tables como exemplo central de sanitização de input
+- [[wiki/sources/seguranca-armazenamento-senhas-banco-de-dados]] — contexto histórico: SQLi nos anos 90 como vetor que expôs o plaintext
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] — contradiz a simplificação "eliminar SQL elimina SQL attacks"
 - [[wiki/sources/injecao-sql-aula-modulo-seguranca]] — demonstração ao vivo (Express + `pg`) do ataque via query string e via parâmetro de rota, correção via placeholders `$1`/`$2`, e camada extra de validação de schema com Celebrate/Joi
 - [[wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv]] — citado apenas como indicação do próximo episódio da série "Dicionário do Programador" (não desenvolvido nesta fonte); mencionado como "ataque comum, mas fácil de evitar", mesmo enquadramento dado a XSS

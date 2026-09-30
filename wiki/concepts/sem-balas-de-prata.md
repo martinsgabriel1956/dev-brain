@@ -36,9 +36,9 @@ O mesmo princípio tem uma face menos óbvia: acreditar que existe "a melhor tec
 
 ## Relacionado
 
-[[concepts/flexibilidade-tecnica]] — aceitar múltiplas soluções válidas, mesma ideia pelo ângulo da liderança.
+[[wiki/concepts/flexibilidade-tecnica]] — aceitar múltiplas soluções válidas, mesma ideia pelo ângulo da liderança.
 
 ## Key Sources
 
-- [[sources/9-habitos-programador-junior]]
+- [[wiki/sources/9-habitos-programador-junior]]
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — aplicação à entrevista de arquitetura: a crença na "tecnologia perfeita" paralisa candidatos antes de começarem; a melhor alternativa é derivada do caso de uso, não conhecida de antemão

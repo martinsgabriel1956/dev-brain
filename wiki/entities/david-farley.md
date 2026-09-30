@@ -26,7 +26,7 @@ Coautor, com Jez Humble, do livro *Continuous Delivery* — obra fundacional da 
 
 ## Ver também
 
-- [[entities/martin-fowler]] — também associado à origem do movimento ágil/XP; vínculo direto entre os dois não verificado nesta wiki (mas ver citação bibliográfica acima)
+- [[wiki/entities/martin-fowler]] — também associado à origem do movimento ágil/XP; vínculo direto entre os dois não verificado nesta wiki (mas ver citação bibliográfica acima)
 - [[wiki/entities/jez-humble]] — coautor do livro *Continuous Delivery*
 
 ## Key Sources

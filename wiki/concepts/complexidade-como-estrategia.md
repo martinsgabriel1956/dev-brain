@@ -46,10 +46,10 @@ Código de alta qualidade é aquele que qualquer membro do time consegue modific
 
 ## Ver também
 
-- [[concepts/principio-da-inversao]] — hábito ruim nº 2
-- [[concepts/tech-debt]] — complexidade artificial acumula como dívida técnica
-- [[concepts/ciclo-da-desgraca-software]] — complexidade acumulada dispara o ciclo de reescrita
+- [[wiki/concepts/principio-da-inversao]] — hábito ruim nº 2
+- [[wiki/concepts/tech-debt]] — complexidade artificial acumula como dívida técnica
+- [[wiki/concepts/ciclo-da-desgraca-software]] — complexidade acumulada dispara o ciclo de reescrita
 
 ## Key Sources
 
-- [[sources/principio-da-inversao-programador]]
+- [[wiki/sources/principio-da-inversao-programador]]

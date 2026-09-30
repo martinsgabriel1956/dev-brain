@@ -40,11 +40,11 @@ Thread: funcionário novo na mesma empresa
 
 ## O Preço da Memória Compartilhada
 
-Se duas threads modificam o mesmo estado ao mesmo tempo, o resultado é imprevisível — **race condition**. A solução é sincronização via [[concepts/mutex]] ou outros mecanismos.
+Se duas threads modificam o mesmo estado ao mesmo tempo, o resultado é imprevisível — **race condition**. A solução é sincronização via [[wiki/concepts/mutex]] ou outros mecanismos.
 
 ## Deadlock
 
-Quando thread A espera thread B que espera thread A → ambas bloqueadas para sempre. Ver [[concepts/deadlock]].
+Quando thread A espera thread B que espera thread A → ambas bloqueadas para sempre. Ver [[wiki/concepts/deadlock]].
 
 ## Alternativas
 
@@ -59,16 +59,16 @@ A saída é mover esse trabalho para uma **worker thread**: uma thread separada 
 
 ## Ver também
 
-- [[concepts/processo]] — container que abriga as threads
-- [[concepts/deadlock]] — bloqueio mútuo entre threads
-- [[concepts/mutex]] — mecanismo de sincronização
-- [[concepts/escalonador]] — como o kernel agenda threads e processos
+- [[wiki/concepts/processo]] — container que abriga as threads
+- [[wiki/concepts/deadlock]] — bloqueio mútuo entre threads
+- [[wiki/concepts/mutex]] — mecanismo de sincronização
+- [[wiki/concepts/escalonador]] — como o kernel agenda threads e processos
 - [[wiki/concepts/event-loop-performance-js]] — por que Node.js precisa de worker threads para trabalho CPU-bound
 - [[wiki/concepts/renderizacao-ssr-vs-csr]] — SSR pesado como caso concreto de trabalho CPU-bound que se beneficia de worker threads
 
 ## Key Sources
 
-- [[sources/sistema-operacional-por-baixo-dos-panos]]
-- [[sources/como-sistemas-operacionais-funcionam]]
+- [[wiki/sources/sistema-operacional-por-baixo-dos-panos]]
+- [[wiki/sources/como-sistemas-operacionais-funcionam]]
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/node-single-thread-ssr-bloqueio-event-loop]] — worker threads como uma das três soluções (junto de chunking e filas) para SSR CPU-bound travando o event loop; distinção worker threads vs. cluster vs. child process calibrada com `references/nodejs-core.md` da skill `lang-dynamic`

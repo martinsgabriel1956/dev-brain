@@ -3,8 +3,8 @@ type: concept
 title: "CORS Mal Configurado"
 aliases: ["cors misconfiguration", "cors permissivo demais", "access-control-allow-origin wildcard"]
 date_created: 2026-08-03
-date_updated: 2026-08-03
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [cors, seguranca, api-security, csrf]
 skill: tech-mentor-security
 status: stub
@@ -37,3 +37,4 @@ Definir explicitamente uma **allowlist** de origens permitidas, validada no serv
 ## Key Sources
 
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]]
+- [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — CORS como política do navegador; correção certa é permitir origem específica no servidor (ver [[wiki/concepts/cors]])

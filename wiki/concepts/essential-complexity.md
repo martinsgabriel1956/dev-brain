@@ -14,7 +14,7 @@ status: stable
 
 Complexidade essencial é inerente ao problema sendo resolvido. Não pode ser removida por melhor design, melhor abstração ou melhor tecnologia — existe porque o domínio é genuinamente difícil.
 
-Conceito de Fred Brooks ("No Silver Bullet", 1986), em contraste com [[concepts/accidental-complexity]].
+Conceito de Fred Brooks ("No Silver Bullet", 1986), em contraste com [[wiki/concepts/accidental-complexity]].
 
 ## Exemplos
 
@@ -51,10 +51,10 @@ Domain-Driven Design é, em essência, uma metodologia para lidar bem com comple
 
 ## Relação com outros conceitos
 
-- [[concepts/accidental-complexity]] — o contraponto: complexidade que pode e deve ser removida
+- [[wiki/concepts/accidental-complexity]] — o contraponto: complexidade que pode e deve ser removida
 - [[wiki/concepts/arquitetura-complexa]] — legado enterprise como caso onde complexidade essencial e acidental tendem a se misturar
 - [[concepts/ddd-strategic]] — estratégia para gerenciar complexidade essencial de domínio
-- [[entities/fred-brooks]] — autor do conceito
+- [[wiki/entities/fred-brooks]] — autor do conceito
 
 ## Uso análogo: durabilidade de conhecimento técnico (não é o mesmo framing de Brooks)
 
@@ -66,7 +66,7 @@ Domain-Driven Design é, em essência, uma metodologia para lidar bem com comple
 
 ## Key Sources
 
-- [[sources/conceitos-que-ninguem-ensina]]
+- [[wiki/sources/conceitos-que-ninguem-ensina]]
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — gatilhos concretos (escala, rede, concorrência) que forçam a complexidade essencial a emergir para o operador de CRUD
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]] — uso análogo (não-Brooks) aplicado à durabilidade de princípios técnicos vs. tecnologias específicas
 - [[wiki/sources/large-scale-vs-complex-architecture]] — reconhece um núcleo essencial de complexidade de regra de negócio em enterprises legadas, misturado com a camada acidental do legado tecnológico

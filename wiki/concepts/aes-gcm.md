@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/criptografia-fundamentos]]: [[concepts/aes-gcm]]
-- Em [[wiki/sources/post-quantum-crypto]]: [[concepts/aes-gcm]]
+- Em [[wiki/sources/criptografia-fundamentos]]: [[wiki/concepts/aes-gcm]]
+- Em [[wiki/sources/post-quantum-crypto]]: [[wiki/concepts/aes-gcm]]
 
 ## Pendências
 

@@ -34,12 +34,12 @@ Computadores quânticos quebrarão RSA e ECC via algoritmo de Shor (fatoração 
 
 ## Entities & Concepts Touched
 
-- [[concepts/post-quantum-cryptography]]
+- [[wiki/concepts/post-quantum-cryptography]]
 - [[concepts/crystals-kyber]]
 - [[concepts/crystals-dilithium]]
 - [[concepts/harvest-now-decrypt-later]]
 - [[concepts/hybrid-cryptography]]
-- [[concepts/aes-gcm]]
+- [[wiki/concepts/aes-gcm]]
 
 ## Open Questions
 

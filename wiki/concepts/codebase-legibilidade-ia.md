@@ -24,9 +24,9 @@ Código fortemente acoplado numa god class de 20.000 linhas:
 - Obriga o agente a manter muito mais contexto
 - Torna impossível isolar a tarefa num módulo específico
 - Aumenta a chance de o agente quebrar partes não relacionadas ao fazer uma mudança
-- Dificulta o [[concepts/mental-alignment]] do dev sobre o que foi gerado
+- Dificulta o [[wiki/concepts/mental-alignment]] do dev sobre o que foi gerado
 
-Ver [[concepts/navigation-paradox]] — agentes perdem ~25% dos arquivos críticos em arquiteturas com forte acoplamento via DI containers.
+Ver [[wiki/concepts/navigation-paradox]] — agentes perdem ~25% dos arquivos críticos em arquiteturas com forte acoplamento via DI containers.
 
 ## O Que Torna Código Legível Para IA
 
@@ -50,7 +50,7 @@ Para 200 linhas, uma god class é perfeitamente adequada. Para 20.000 linhas e q
 
 ## Relação com Comprehension Debt
 
-[[concepts/comprehension-debt]] é causado em parte por código de difícil leitura gerado por agentes. O ciclo:
+[[wiki/concepts/comprehension-debt]] é causado em parte por código de difícil leitura gerado por agentes. O ciclo:
 1. Codebase ruim → agente gera código de baixa qualidade
 2. Dev aprova sem entender completamente
 3. Codebase piora
@@ -60,9 +60,9 @@ Manter código legível quebra o ciclo na origem.
 
 ## Padrões que Ajudam
 
-- [[concepts/hexagonal-architecture]] — ports e adapters localizam mudanças e reduzem contexto necessário por tarefa
-- [[concepts/vertical-slice-architecture]] — feature-first em vez de camada-first reduz número de arquivos por feature
-- [[concepts/single-responsibility-principle]] — uma razão para mudar = contexto mínimo para a IA
+- [[wiki/concepts/hexagonal-architecture]] — ports e adapters localizam mudanças e reduzem contexto necessário por tarefa
+- [[wiki/concepts/vertical-slice-architecture]] — feature-first em vez de camada-first reduz número de arquivos por feature
+- [[wiki/concepts/single-responsibility-principle]] — uma razão para mudar = contexto mínimo para a IA
 
 ## MVC Monolítico como Anti-Padrão Específico
 
@@ -82,8 +82,8 @@ Ver também [[wiki/concepts/codigo-grepavel]] — a mesma fonte separa dois moti
 
 ## Key Sources
 
-- [[sources/ports-and-adapters-codebase-para-ia]]
-- [[sources/navigation-paradox-2026]]
+- [[wiki/sources/ports-and-adapters-codebase-para-ia]]
+- [[wiki/sources/navigation-paradox-2026]]
 - [[wiki/sources/context-engineering-codebases-grandes-rpi]] — MVC god class vs. codebase modular; guidelines por diretório como mitigação
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — comentários próximos ao código como informação que agentes efetivamente recuperam via grep, ao contrário de documentação externa
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — teto prático de ~1000-2000 linhas por arquivo ligado ao limite de leitura por tool call, e custo simétrico de arquivo com múltiplos assuntos

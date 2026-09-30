@@ -38,14 +38,14 @@ Autenticação vs Autorização: authn = quem você é, authz = o que pode fazer
 
 ## Entities & Concepts Touched
 
-- [[concepts/bcrypt]]
-- [[concepts/argon2]]
-- [[concepts/totp]]
-- [[concepts/passkeys]]
-- [[concepts/webauthn]]
-- [[concepts/jwt]]
-- [[concepts/timing-attack]]
-- [[concepts/session-management]]
+- [[wiki/concepts/bcrypt]]
+- [[wiki/concepts/argon2]]
+- [[wiki/concepts/totp]]
+- [[wiki/concepts/passkeys]]
+- [[wiki/concepts/webauthn]]
+- [[wiki/concepts/jwt]]
+- [[wiki/concepts/timing-attack]]
+- [[wiki/concepts/session-management]]
 
 ## Open Questions
 

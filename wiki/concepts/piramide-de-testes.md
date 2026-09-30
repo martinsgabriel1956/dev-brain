@@ -130,9 +130,9 @@ Nessa leitura, o teste de maior valor por unidade de custo tende a ser um teste 
 
 ## Ver também
 
-- [[concepts/tdd]] — prática que preenche a base da pirâmide
-- [[concepts/contract-testing]] — camada entre integração e E2E em microsserviços
-- [[concepts/test-doubles]] — como isolar dependências nos unitários (fonte primária: [[wiki/sources/test-double-xunitpatterns-meszaros]])
+- [[wiki/concepts/tdd]] — prática que preenche a base da pirâmide
+- [[wiki/concepts/contract-testing]] — camada entre integração e E2E em microsserviços
+- [[wiki/concepts/test-doubles]] — como isolar dependências nos unitários (fonte primária: [[wiki/sources/test-double-xunitpatterns-meszaros]])
 - [[testar-proprio-codigo]] — hábito de cobrir além do happy path
 - [[teste-de-integracao-estreito-vs-amplo]] — a camada "Integração" desta pirâmide se divide em estreita e ampla
 - [[criterios-de-bom-teste]] — determinístico, conciso, relevante, compreensível, durável
@@ -155,12 +155,12 @@ Fonte primária: [[wiki/sources/test-first-development-xunitpatterns]] (verbete 
 
 ## Key Sources
 
-- [[sources/piramide-de-testes]]
+- [[wiki/sources/piramide-de-testes]]
 - [[wiki/sources/test-first-development-xunitpatterns]] — fonte primária: test-first development pode ser aplicado no nível de customer test (topo), não só unit test (base)
 - [[wiki/sources/storytest-driven-development-xunitpatterns]] — fonte primária: STDD é a prática de test-first no nível de customer test (topo da pirâmide), garantindo que a integração das unidades produza um todo utilizável
 - [[wiki/sources/customer-test-xunitpatterns]] — fonte primária isolada do termo "customer test": nome formal do topo da pirâmide, com o critério de independência das decisões de design do SUT
 - [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — testes automatizados reclassificados como requisito que ficou mais importante (não só mantido) na progressão de pleno, junto de tooling avançado
-- [[sources/roadmap-dev-senior-2026]] — testes como seguro contra decisões ruins da IA (pilar 5)
+- [[wiki/sources/roadmap-dev-senior-2026]] — testes como seguro contra decisões ruins da IA (pilar 5)
 - [[wiki/sources/o-que-e-refatoracao-quando-usar]] — base da pirâmide como pré-requisito de segurança para refatorar
 - [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — E2E como critério de aceite (sem acumular testes) para não perpetuar erros em loop agêntico longo
 - [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]

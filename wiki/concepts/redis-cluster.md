@@ -22,8 +22,8 @@ Modo distribuído do Redis que divide o keyspace em **16.384 hash slots** distri
 - Multi-key operations só funcionam se todas as keys estão no mesmo slot (use hash tags `{user}:id`)
 - Resharding requer migração de slots — pode ser feito sem downtime com `CLUSTER SETSLOT`
 
-Relacionado a [[concepts/db-sharding]] — mesma lógica de consistent hashing, aplicada a cache.
+Relacionado a [[wiki/concepts/db-sharding]] — mesma lógica de consistent hashing, aplicada a cache.
 
 ## Key Sources
 
-- [[sources/clusters]]
+- [[wiki/sources/clusters]]

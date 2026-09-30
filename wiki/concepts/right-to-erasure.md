@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/data-privacy]]: [[concepts/right-to-erasure]]
-- Em [[wiki/sources/lgpd-gdpr]]: [[concepts/right-to-erasure]]
+- Em [[wiki/sources/data-privacy]]: [[wiki/concepts/right-to-erasure]]
+- Em [[wiki/sources/lgpd-gdpr]]: [[wiki/concepts/right-to-erasure]]
 
 ## Pendências
 

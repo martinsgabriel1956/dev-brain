@@ -61,5 +61,5 @@ Sistemas são operados por humanos que cometem erros. Quando o default é insegu
 
 ## Key Sources
 
-- [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — exemplos: campo de senha, deleção com confirmação, 2FA no onboarding
+- [[wiki/sources/cinco-praticas-seguranca-pragmatic-programmer]] — exemplos: campo de senha, deleção com confirmação, 2FA no onboarding
 - [[wiki/sources/ssh-chaves-como-funcionam]] — hardening de sshd_config como reforço explícito sobre defaults de distro

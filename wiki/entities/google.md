@@ -12,7 +12,7 @@ status: stub
 
 ## Quem É
 
-Empresa de tecnologia, criadora da família de modelos **Gemini** (ex.: Gemini 2.0 Flash Lite) e do harness AntiGravity. Concorrente direta da [[entities/anthropic]] e da [[entities/openai]] no mercado de LLMs, com tokenizer e vocabulário próprios — o mesmo prompt gera contagens de tokens diferentes das dos outros provedores. Ver [[tokenizacao]].
+Empresa de tecnologia, criadora da família de modelos **Gemini** (ex.: Gemini 2.0 Flash Lite) e do harness AntiGravity. Concorrente direta da [[wiki/entities/anthropic]] e da [[wiki/entities/openai]] no mercado de LLMs, com tokenizer e vocabulário próprios — o mesmo prompt gera contagens de tokens diferentes das dos outros provedores. Ver [[tokenizacao]].
 
 ---
 

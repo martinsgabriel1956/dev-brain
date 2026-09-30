@@ -36,6 +36,6 @@ Vertical scaling é simples mas tem limite físico e gera SPOF. Horizontal scali
 - [[vertical-scaling]]
 - [[stateless-service]]
 - [[auto-scaling]]
-- [[concepts/load-balancer]]
+- [[wiki/concepts/load-balancer]]
 - [[connection-pooling]]
-- [[concepts/db-sharding]]
+- [[wiki/concepts/db-sharding]]

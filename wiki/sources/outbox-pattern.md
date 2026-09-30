@@ -38,12 +38,12 @@ Outbox Pattern resolve o problema de dual-write: salvar no banco E publicar no b
 
 ## Entities & Concepts Touched
 
-- [[concepts/outbox-pattern]]
+- [[wiki/concepts/outbox-pattern]]
 - [[concepts/transactional-messaging]]
-- [[concepts/cdc]]
+- [[wiki/concepts/cdc]]
 - [[concepts/debezium]]
-- [[concepts/inbox-pattern]]
-- [[concepts/idempotencia]]
+- [[wiki/concepts/inbox-pattern]]
+- [[wiki/concepts/idempotencia]]
 - [[concepts/dual-write]]
 
 ## Open Questions

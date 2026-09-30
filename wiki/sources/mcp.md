@@ -44,7 +44,7 @@ MCP é o protocolo padrão (Anthropic, 2024) para conectar LLMs a tools e dados 
 ## Entities & Concepts Touched
 
 - [[concepts/mcp-protocol]]
-- [[concepts/tool-use-agents]]
+- [[wiki/concepts/tool-use-agents]]
 - [[concepts/a2a-protocol]]
 - [[concepts/mcp-oauth]]
 - [[concepts/streamable-http]]

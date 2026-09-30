@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/postgresql-avancado]]: [[concepts/vacuum-postgresql]]
-- Em [[wiki/sources/postgresql-extensions]]: [[concepts/vacuum-postgresql]]
+- Em [[wiki/sources/postgresql-avancado]]: [[wiki/concepts/vacuum-postgresql]]
+- Em [[wiki/sources/postgresql-extensions]]: [[wiki/concepts/vacuum-postgresql]]
 
 ## Pendências
 

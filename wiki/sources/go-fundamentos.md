@@ -34,4 +34,4 @@ Go é uma linguagem compilada, estaticamente tipada, com garbage collection e fo
 
 ## Conceitos Abordados
 
-- [[concepts/go-fundamentos]] · [[concepts/go-oop-composicao]] · [[concepts/go-concorrencia]] · [[concepts/go-stdlib]]
+- [[wiki/concepts/go-fundamentos]] · [[wiki/concepts/go-oop-composicao]] · [[wiki/concepts/go-concorrencia]] · [[wiki/concepts/go-stdlib]]

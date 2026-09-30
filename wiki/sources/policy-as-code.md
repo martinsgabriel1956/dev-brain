@@ -35,12 +35,12 @@ Policy as Code: policies de segurança e compliance como código versionado e te
 ## Entities & Concepts Touched
 
 - [[concepts/policy-as-code]]
-- [[entities/opa]]
+- [[wiki/entities/opa]]
 - [[concepts/rego]]
-- [[entities/kyverno]]
+- [[wiki/entities/kyverno]]
 - [[entities/conftest]]
-- [[entities/opa-gatekeeper]]
-- [[concepts/admission-control]]
+- [[wiki/entities/opa-gatekeeper]]
+- [[wiki/concepts/admission-control]]
 
 ## Open Questions
 

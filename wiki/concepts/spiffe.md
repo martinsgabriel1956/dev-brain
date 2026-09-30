@@ -16,9 +16,9 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/identidade-avancada]]: [[concepts/spiffe]]
-- Em [[wiki/sources/identity-iam-avancado]]: [[concepts/spiffe]]
-- Em [[wiki/sources/sessions]]: [[concepts/spiffe]]
+- Em [[wiki/sources/identidade-avancada]]: [[wiki/concepts/spiffe]]
+- Em [[wiki/sources/identity-iam-avancado]]: [[wiki/concepts/spiffe]]
+- Em [[wiki/sources/sessions]]: [[wiki/concepts/spiffe]]
 
 ## Pendências
 

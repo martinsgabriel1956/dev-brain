@@ -51,15 +51,15 @@ O problema não é mais "a IA para nos 70%". O limiar cruzou para 80%+ em projet
 ## Entities
 
 - [[entities/addy-osmani]] — engenheiro Google, autor do artigo
-- [[entities/andrej-karpathy]] — AI researcher, citado sobre inversão 80/20
+- [[wiki/entities/andrej-karpathy]] — AI researcher, citado sobre inversão 80/20
 - [[entities/jeremy-twei]] — cunhou o termo "comprehension debt"
 
 ## Concepts
 
-- [[concepts/comprehension-debt]] — dívida de compreensão do código gerado por IA
-- [[concepts/abstraction-bloat]] — agentes geram complexidade desnecessária por viés de treinamento
-- [[concepts/divida-cognitiva]] — conceito relacionado (Margaret Storey) — já existe no wiki
-- [[concepts/navigation-paradox]] — custo estrutural complementar ao comprehension debt
+- [[wiki/concepts/comprehension-debt]] — dívida de compreensão do código gerado por IA
+- [[wiki/concepts/abstraction-bloat]] — agentes geram complexidade desnecessária por viés de treinamento
+- [[wiki/concepts/divida-cognitiva]] — conceito relacionado (Margaret Storey) — já existe no wiki
+- [[wiki/concepts/navigation-paradox]] — custo estrutural complementar ao comprehension debt
 
 ## Open Questions
 

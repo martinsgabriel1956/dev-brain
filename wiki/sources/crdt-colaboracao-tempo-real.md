@@ -33,17 +33,17 @@ Sistemas colaborativos (Google Docs, Figma, Notion) precisam resolver conflitos 
 
 ## Conceitos
 
-- [[concepts/crdt]] — Conflict-free Replicated Data Type
-- [[concepts/operational-transformation]] — OT, alternativa com servidor central
-- [[concepts/offline-first]] — design que aplica mudanças localmente e sincroniza depois
-- [[concepts/presenca-online]] — cursores e presença em sistemas colaborativos
-- [[concepts/websocket-vs-polling]] — transporte usado pelo relay server
+- [[wiki/concepts/crdt]] — Conflict-free Replicated Data Type
+- [[wiki/concepts/operational-transformation]] — OT, alternativa com servidor central
+- [[wiki/concepts/offline-first]] — design que aplica mudanças localmente e sincroniza depois
+- [[wiki/concepts/presenca-online]] — cursores e presença em sistemas colaborativos
+- [[wiki/concepts/websocket-vs-polling]] — transporte usado pelo relay server
 
 ## Entidades
 
-- [[entities/yjs]] — biblioteca CRDT de sequência, padrão da indústria
-- [[entities/figma]] — usa CRDT para colaboração em design
-- [[entities/linear-app]] — usa Y.js para edição colaborativa
+- [[wiki/entities/yjs]] — biblioteca CRDT de sequência, padrão da indústria
+- [[wiki/entities/figma]] — usa CRDT para colaboração em design
+- [[wiki/entities/linear-app]] — usa Y.js para edição colaborativa
 
 ## Open Questions
 

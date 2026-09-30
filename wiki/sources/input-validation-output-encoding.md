@@ -38,7 +38,7 @@ Input Validation (rejeita o que não deveria existir) ≠ Sanitização (remove 
 - [[concepts/output-encoding]]
 - [[concepts/sanitization]]
 - [[concepts/allowlist]]
-- [[concepts/xss]]
+- [[wiki/concepts/xss]]
 - [[concepts/prototype-pollution]]
 - [[concepts/unicode-normalization]]
 - [[entities/dompurify]]

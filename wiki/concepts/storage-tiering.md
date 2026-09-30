@@ -58,17 +58,17 @@ Hot/Warm/Cold não é só nomenclatura de nuvem — mapeia direto nas mídias f�
 
 | Camada | Nuvem (AWS S3) | Mídia física equivalente |
 |---|---|---|
-| **Hot** | S3 Standard | [[concepts/ssd]] / NVMe ([[concepts/memoria-flash]]) |
-| **Warm** | S3 Standard-IA | [[concepts/hd-disco-rigido]] |
-| **Cold** | S3 Glacier | [[concepts/fita-magnetica]] (LTO) |
+| **Hot** | S3 Standard | [[wiki/concepts/ssd]] / NVMe ([[wiki/concepts/memoria-flash]]) |
+| **Warm** | S3 Standard-IA | [[wiki/concepts/hd-disco-rigido]] |
+| **Cold** | S3 Glacier | [[wiki/concepts/fita-magnetica]] (LTO) |
 
-A [[concepts/fita-magnetica]] é o equivalente físico do Glacier: barata, lenta (acesso sequencial), durável e offline — usada por IBM/governos para arquivamento de longo prazo. Ver [[wiki/sources/tipos-de-armazenamento-de-dados]].
+A [[wiki/concepts/fita-magnetica]] é o equivalente físico do Glacier: barata, lenta (acesso sequencial), durável e offline — usada por IBM/governos para arquivamento de longo prazo. Ver [[wiki/sources/tipos-de-armazenamento-de-dados]].
 
 ## Relacionado
 
-[[concepts/cache-hot-path]] — mesmo princípio de concentrar recursos onde está o tráfego real.
+[[wiki/concepts/cache-hot-path]] — mesmo princípio de concentrar recursos onde está o tráfego real.
 
 ## Key Sources
 
-- [[sources/case-youtube-streaming]]
+- [[wiki/sources/case-youtube-streaming]]
 - [[wiki/sources/tipos-de-armazenamento-de-dados]] — o tiering Hot/Warm/Cold mapeado nas mídias físicas (SSD/HDD/fita)

@@ -39,4 +39,4 @@ def query_counter_middleware(request, next):
 
 ## Key Sources
 
-- [[sources/apagao-de-seniors-vibe-coding]]
+- [[wiki/sources/apagao-de-seniors-vibe-coding]]

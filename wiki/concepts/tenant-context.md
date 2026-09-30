@@ -62,4 +62,4 @@ type TenantConfig = {
 
 ## Key Sources
 
-- [[sources/multi-tenancy]]
+- [[wiki/sources/multi-tenancy]]

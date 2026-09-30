@@ -55,4 +55,4 @@ Atribuição de `worker_id` — feita uma vez no startup via ZooKeeper, etcd, ou
 ## Key Sources
 
 - [[wiki/sources/case-twitter-feed]] — O feed do Twitter é o caso clássico de **fan-out de escrita em escala extrema**. A solução é híbrida: fan-out on write para usuários normais (pré-computa timelines no Redis) e fan-out on read para...
-- [[sources/case-url-shortener]]
+- [[wiki/sources/case-url-shortener]]

@@ -34,11 +34,11 @@ status: stable
 
 ## Entities & Concepts Touched
 
-- [[concepts/protobuf]]
-- [[concepts/avro]]
+- [[wiki/concepts/protobuf]]
+- [[wiki/concepts/avro]]
 - [[concepts/messagepack]]
 - [[concepts/flatbuffers]]
-- [[concepts/schema-evolution]]
+- [[wiki/concepts/schema-evolution]]
 - [[concepts/schema-registry]]
 
 ## Open Questions

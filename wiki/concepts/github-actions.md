@@ -93,12 +93,12 @@ Caso mais simples que os exemplos acima (sem Kubernetes, sem cache avançado): u
 
 ## Ver também
 
-- [[concepts/ci-cd]] — disciplina que o GitHub Actions implementa
-- [[concepts/pipeline-de-ci]] — estrutura de stages de referência
-- [[concepts/argo-rollouts]] — ferramenta usada no CD após o CI passar
-- [[concepts/secrets-management]] — GitHub Secrets como mecanismo write-only
+- [[wiki/concepts/ci-cd]] — disciplina que o GitHub Actions implementa
+- [[wiki/concepts/pipeline-de-ci]] — estrutura de stages de referência
+- [[wiki/concepts/argo-rollouts]] — ferramenta usada no CD após o CI passar
+- [[wiki/concepts/secrets-management]] — GitHub Secrets como mecanismo write-only
 
 ## Key Sources
 
-- [[sources/cicd-pipeline]]
+- [[wiki/sources/cicd-pipeline]]
 - [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — exemplo mínimo de dois jobs (CI + deploy SSH para VPS)

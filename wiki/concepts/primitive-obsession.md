@@ -3,8 +3,8 @@ type: concept
 title: "Primitive Obsession"
 aliases: ["uso exacerbado de tipos primitivos", "obsessão por primitivos"]
 date_created: 2026-08-18
-date_updated: 2026-08-18
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [primitive-obsession, code-smells, tipagem, validacao, clean-code]
 skill: tech-mentor-backend
 status: stub
@@ -46,3 +46,4 @@ O exemplo mais forte citado na fonte é **dinheiro**: em vez de circular como `s
 ## Key Sources
 
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]]
+- [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — `double preco`/`int estoque` sem restrição permitem valores negativos

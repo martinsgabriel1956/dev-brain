@@ -47,7 +47,7 @@ spec:
 - Validar que circuit breakers disparam corretamente
 - Testar comportamento de timeout no serviço chamador
 - Confirmar que retry logic não causa cascata em caso de falha total
-- Parte de [[concepts/game-day]] — fault injection sem precisar matar pods
+- Parte de [[wiki/concepts/game-day]] — fault injection sem precisar matar pods
 
 ## Diferença de Chaos Engineering
 
@@ -55,4 +55,4 @@ Fault injection no mesh opera na camada de rede, é declarativo e reversível (b
 
 ## Key Sources
 
-- [[sources/service-mesh]]
+- [[wiki/sources/service-mesh]]

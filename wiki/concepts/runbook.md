@@ -56,7 +56,7 @@ kubectl rollout status deploy/order-api -n production
 - Alguém que nunca viu o sistema consegue executar?
 - Tem comando para cada ação descrita?
 - Tem critério explícito de quando escalonar?
-- Foi testado em [[concepts/game-day]]?
+- Foi testado em [[wiki/concepts/game-day]]?
 
 ## Onde Manter
 
@@ -64,10 +64,10 @@ Versionado junto ao código (mesmo repo) garante atualização junto com mudanç
 
 ## Pré-requisitos e Rollback
 
-Runbook efetivo inclui: **Pré-requisitos** (permissões, ferramentas), **Passos numerados** (comandos exatos), **Verificação de sucesso** e **Rollback** explícito. Quando a causa não está identificada, não use runbook — use [[concepts/playbook]].
+Runbook efetivo inclui: **Pré-requisitos** (permissões, ferramentas), **Passos numerados** (comandos exatos), **Verificação de sucesso** e **Rollback** explícito. Quando a causa não está identificada, não use runbook — use [[wiki/concepts/playbook]].
 
 ## Key Sources
 
 - [[wiki/sources/incident-response]] — Incident Response (NIST SP 800-61): 4 fases — Preparação, Detecção & Análise, Contenção/Erradicação/Recuperação, Lições Aprendidas. Preparação: playbooks por tipo de incidente prontos ANTES do...
-- [[sources/sre-error-budget-incidents]]
+- [[wiki/sources/sre-error-budget-incidents]]
 - [[wiki/sources/runbook]]

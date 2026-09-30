@@ -16,9 +16,9 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/devsecops-pipeline]]: [[entities/opa]]
-- Em [[wiki/sources/policy-as-code]]: [[entities/opa]]
-- Em [[wiki/sources/rbac-abac-rebac]]: [[entities/opa]]
+- Em [[wiki/sources/devsecops-pipeline]]: [[wiki/entities/opa]]
+- Em [[wiki/sources/policy-as-code]]: [[wiki/entities/opa]]
+- Em [[wiki/sources/rbac-abac-rebac]]: [[wiki/entities/opa]]
 
 ## Pendências
 

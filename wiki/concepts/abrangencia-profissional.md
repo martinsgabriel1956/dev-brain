@@ -55,10 +55,10 @@ A fonte nota que **líderes tendem a ser generalistas** (cita Elon Musk como exe
 
 ## Ver também
 
-- [[concepts/profundidade-e-maestria]] — o par necessário: profundidade sem abrangência trava
-- [[concepts/comunicacao-tecnica]] — abrangência habilita comunicação cross-domain
-- [[concepts/dev-e-negocio]] — exemplo de abrangência aplicada: dev que entende negócio
-- [[entities/randy-nelson]] — origem do framework
+- [[wiki/concepts/profundidade-e-maestria]] — o par necessário: profundidade sem abrangência trava
+- [[wiki/concepts/comunicacao-tecnica]] — abrangência habilita comunicação cross-domain
+- [[wiki/concepts/dev-e-negocio]] — exemplo de abrangência aplicada: dev que entende negócio
+- [[wiki/entities/randy-nelson]] — origem do framework
 
 ## Cruzamento de Funções com IA
 
@@ -66,6 +66,6 @@ A fonte nota que **líderes tendem a ser generalistas** (cita Elon Musk como exe
 
 ## Key Sources
 
-- [[sources/tres-caracteristicas-melhor-candidato]]
+- [[wiki/sources/tres-caracteristicas-melhor-candidato]]
 - [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — Hábito 12, prós/contras de especialista vs. generalista
 - [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]

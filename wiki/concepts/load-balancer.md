@@ -3,8 +3,8 @@ type: concept
 title: "Load Balancer"
 aliases: ["lb", "load balancing", "l4", "l7", "round robin"]
 date_created: 2026-04-23
-date_updated: 2026-09-22
-source_count: 21
+date_updated: 2026-09-30
+source_count: 22
 tags: [load-balancer, l4, l7, round-robin, health-check, alta-disponibilidade, infra, nginx]
 skill: tech-mentor-infra
 status: stub
@@ -80,11 +80,15 @@ Não são a mesma coisa, apesar de os dois "decidirem para onde a requisição v
 
 Nem todo [[wiki/concepts/reverse-proxy]] é um load balancer: um LB decide **entre múltiplas instâncias equivalentes** usando algum algoritmo (Round Robin, Least Connections...); um reverse proxy pode apontar para **um único destino fixo** e ainda assim já cumprir seu papel — só interceptar, inspecionar e repassar. Num deploy [[wiki/concepts/blue-green-deploy|blue/green]] de host único, o Nginx atua como reverse proxy nesse segundo sentido: nunca distribui tráfego entre blue e green ao mesmo tempo, só redireciona 100% para um dos dois por vez.
 
+## Caso: Instagram Simplificado
+
+No caso didático, o LB resolve "muitos acessos derrubando o back end": adicionar múltiplas instâncias e balancear a carga; regra de uso = sempre que houver múltiplos servidores servindo a mesma API. Primeiro bloco aplicado ao caso, antes de CDN, cache e fila (ver [[wiki/concepts/building-blocks-system-design]]).
+
 ## Key Sources
 
 - [[wiki/sources/fase-1-fundamentos-infraestrutura]] — Fundamentos de infraestrutura: DNS (TTL, tipos de record), Load Balancer (L4 vs L7, algoritmos), CDN (edge cache, origem), Cache (hit/miss, eviction, invalidação), Banco de Dados (ACID, replicação,...
-- [[sources/load-balancer]]
-- [[sources/clusters]]
+- [[wiki/sources/load-balancer]]
+- [[wiki/sources/clusters]]
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — WebSocket exige LB L4 e infra especializada; SSE não
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — por que L7 quebra o fluxo do WebSocket; LB L4 roteia por menor número de conexões
@@ -103,3 +107,4 @@ Nem todo [[wiki/concepts/reverse-proxy]] é um load balancer: um LB decide **ent
 - [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — LB na frente de múltiplas instâncias da API de ingestão, adicionado por exigência de redundância/alta disponibilidade mesmo sem alta volumetria (ver [[wiki/concepts/escalabilidade-horizontal]])
 - [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — Amazon Elastic Load Balancer distribuindo tráfego entre servidores redundantes de cada microsserviço, justificado pelo requisito não-funcional de resiliência a falhas
 - [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — ao introduzir o LB, o DNS passa a apontar para o IP público do LB (não mais dos servidores), e os servidores de aplicação passam a usar IPs privados inacessíveis diretamente da internet — citado explicitamente como boa prática de segurança, não só de escala
+- [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — Instagram simplificado: LB (Nginx/AWS) como resposta a picos que derrubam o back end; sem discutir LB como ponto único de falha

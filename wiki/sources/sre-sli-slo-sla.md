@@ -49,7 +49,7 @@ SRE trata confiabilidade como problema de engenharia. O framework: SLI mede, SLO
 
 ## Concepts & Entities Touched
 
-[[concepts/sre]] · [[concepts/sli]] · [[concepts/slo]] · [[concepts/sla]] · [[concepts/error-budget]] · [[concepts/error-budget-policy]] · [[concepts/blameless-post-mortem]] · [[concepts/graceful-degradation]] · [[concepts/circuit-breaker]]
+[[wiki/concepts/sre]] · [[wiki/concepts/sli]] · [[wiki/concepts/slo]] · [[wiki/concepts/sla]] · [[wiki/concepts/error-budget]] · [[wiki/concepts/error-budget-policy]] · [[wiki/concepts/blameless-post-mortem]] · [[wiki/concepts/graceful-degradation]] · [[wiki/concepts/circuit-breaker]]
 
 ## Open Questions
 

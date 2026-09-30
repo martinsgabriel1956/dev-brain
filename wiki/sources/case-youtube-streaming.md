@@ -23,11 +23,11 @@ Três problemas distintos: upload (presigned URL → S3 → SQS → workers para
 
 ## Key Claims
 
-- **Upload direto para S3 via presigned URL** — backend não vira gargalo de I/O de vídeo. S3 event → SQS → workers. → [[concepts/media-upload-pattern]]
-- **Transcodificação paralela por segmento** — vídeo de 2h dividido em 720 segmentos de 10s, cada um transcodificado em paralelo via SQS + workers. → [[concepts/video-transcoding]]
-- **HLS/DASH + ABR** — player consume segmentos de 2-10s, muda qualidade a cada segmento conforme bandwidth. Buffer de 30s evita rebuffering. → [[concepts/adaptive-bitrate-streaming]]
-- **Segmentos são imutáveis** — CDN TTL de 365 dias. Manifesto TTL curto (60s) porque pode mudar. → [[concepts/cdn-strategy]]
-- **Storage hierárquico** — Hot (S3 Standard), Warm (S3-IA), Cold (Glacier). 90% do volume em Cold com <5% do tráfego = 80% de economia. → [[concepts/storage-tiering]]
+- **Upload direto para S3 via presigned URL** — backend não vira gargalo de I/O de vídeo. S3 event → SQS → workers. → [[wiki/concepts/media-upload-pattern]]
+- **Transcodificação paralela por segmento** — vídeo de 2h dividido em 720 segmentos de 10s, cada um transcodificado em paralelo via SQS + workers. → [[wiki/concepts/video-transcoding]]
+- **HLS/DASH + ABR** — player consume segmentos de 2-10s, muda qualidade a cada segmento conforme bandwidth. Buffer de 30s evita rebuffering. → [[wiki/concepts/adaptive-bitrate-streaming]]
+- **Segmentos são imutáveis** — CDN TTL de 365 dias. Manifesto TTL curto (60s) porque pode mudar. → [[wiki/concepts/cdn-strategy]]
+- **Storage hierárquico** — Hot (S3 Standard), Warm (S3-IA), Cold (Glacier). 90% do volume em Cold com <5% do tráfego = 80% de economia. → [[wiki/concepts/storage-tiering]]
 - **Pré-aquecimento de CDN** — ao detectar crescimento anômalo de views, push proativo para edges evita cache miss em cascata quando vídeo viraliza.
 - **AV1 para conteúdo popular** — melhor compressão que H.264/HEVC, open-source. YouTube usa para economizar CDN e storage em vídeos com alto volume de views.
 
@@ -44,13 +44,13 @@ Total:      ~1 exabyte de storage
 ## Entities
 
 - [[entities/youtube]]
-- [[concepts/aws-cloudfront]]
+- [[wiki/concepts/aws-cloudfront]]
 - [[entities/s3]]
-- [[entities/ffmpeg]]
+- [[wiki/entities/ffmpeg]]
 
 ## Concepts
 
-[[concepts/video-transcoding]] · [[concepts/adaptive-bitrate-streaming]] · [[concepts/cdn-strategy]] · [[concepts/storage-tiering]] · [[concepts/media-upload-pattern]] · [[concepts/estimativas-back-of-envelope]]
+[[wiki/concepts/video-transcoding]] · [[wiki/concepts/adaptive-bitrate-streaming]] · [[wiki/concepts/cdn-strategy]] · [[wiki/concepts/storage-tiering]] · [[wiki/concepts/media-upload-pattern]] · [[wiki/concepts/estimativas-back-of-envelope]]
 
 ## Open Questions
 

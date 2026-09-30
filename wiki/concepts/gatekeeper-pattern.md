@@ -25,13 +25,13 @@ Padrão arquitetural de segurança que define um único ponto obrigatório por o
 ## Ganho Arquitetural
 
 Com o Gatekeeper, serviços internos recebem chamadas já filtradas e não precisam reimplementar segurança de borda. Isso:
-- Reduz [[concepts/attack-surface]] (menos pontos de entrada)
+- Reduz [[wiki/concepts/attack-surface]] (menos pontos de entrada)
 - Centraliza responsabilidade de segurança
 - Diminui inconsistência — sem risco de um serviço esquecer de validar o token
 
 ## Relação com WAF
 
-Um [[concepts/waf]] complementa mas não substitui o Gatekeeper. O WAF opera em nível de rede (bloqueia ataques HTTP conhecidos), mas não conhece identidade do usuário nem regras de negócio. O Gatekeeper opera em nível de aplicação.
+Um [[wiki/concepts/waf]] complementa mas não substitui o Gatekeeper. O WAF opera em nível de rede (bloqueia ataques HTTP conhecidos), mas não conhece identidade do usuário nem regras de negócio. O Gatekeeper opera em nível de aplicação.
 
 ## Implementações Comuns
 
@@ -51,5 +51,5 @@ A Meta/Facebook tem um sistema interno também chamado "Gatekeeper", mas que é 
 
 ## Key Sources
 
-- [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
+- [[wiki/sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
 - [[wiki/sources/api-gateway-padrao-essencial-arquiteturas-distribuidas]]

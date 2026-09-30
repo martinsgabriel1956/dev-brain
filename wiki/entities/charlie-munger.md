@@ -16,8 +16,8 @@ Investidor e advogado americano, sócio de Warren Buffett na Berkshire Hathaway.
 
 ## Contribuição relevante
 
-Popularizou o [[concepts/principio-da-inversao]] como modelo mental aplicável a qualquer domínio. Aplicou pessoalmente durante a 2ª Guerra Mundial como meteorologista: ao criar mapas de rotas aéreas, pensou em "como garantir que o máximo de pilotos morra" — e eliminou cada fator de risco identificado.
+Popularizou o [[wiki/concepts/principio-da-inversao]] como modelo mental aplicável a qualquer domínio. Aplicou pessoalmente durante a 2ª Guerra Mundial como meteorologista: ao criar mapas de rotas aéreas, pensou em "como garantir que o máximo de pilotos morra" — e eliminou cada fator de risco identificado.
 
 ## Key Sources
 
-- [[sources/principio-da-inversao-programador]]
+- [[wiki/sources/principio-da-inversao-programador]]

@@ -18,7 +18,7 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 - Em [[wiki/entities/microsoft]]: [[wiki/sources/seedwork-martin-fowler]] (2003) cita o "DLL-hell" da Microsoft — bibliotecas compartilhadas do Windows que quebravam quando versões diferentes, atualizadas em cronogramas distintos, entravam em conflito — como prova de que mesmo reuso de código maduro (não só o [[wiki/concepts/seedwork|seedwork]] improvisado) é difícil de acertar na prática. Décadas antes da economia de IA descrita 
 - Em [[wiki/sources/seedwork-martin-fowler]]: **Mesmo o reuso maduro é difícil**: bibliotecas compartilhadas que evoluem em cronogramas diferentes geram problemas de versionamento — cita explicitamente o "DLL-hell" da Microsoft e um incidente pessoal de dependências quebradas no RedHat. Antecipa, em 2003, a mesma dor que hoje justifica práticas como [[wiki/concepts/schema-evolution|schema evolution]] e versionamento semântico de contratos.
-- Em [[wiki/sources/serialization-protocols]]: [[concepts/schema-evolution]]
+- Em [[wiki/sources/serialization-protocols]]: [[wiki/concepts/schema-evolution]]
 
 ## Pendências
 

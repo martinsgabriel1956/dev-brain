@@ -30,7 +30,7 @@ Event Source (order.shipped, comment.added)
 
 ## Fan-out: Write vs Read
 
-Ver [[concepts/fanout-pattern]] para decisão de quando usar cada um.
+Ver [[wiki/concepts/fanout-pattern]] para decisão de quando usar cada um.
 
 **Regra rápida:**
 - < 1000 destinatários → fan-out on write
@@ -99,4 +99,4 @@ device_tokens:       user_id, token, platform (fcm|apns), created_at
 
 ## Key Sources
 
-- [[sources/notification-system]]
+- [[wiki/sources/notification-system]]

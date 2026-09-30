@@ -33,7 +33,7 @@ Não se limita a nomes — qualquer melhoria pequena e segura (extrair uma funç
 
 - Não é licença para expandir o escopo do PR indefinidamente — a melhoria deve ser pequena e não deve arriscar quebrar o comportamento existente.
 - Difere de refactoring dedicado: a Boy Scout Rule é sempre acoplada a uma mudança que já estava sendo feita por outro motivo, não é uma tarefa própria. [[wiki/sources/o-que-e-refatoracao-quando-usar]] chama esse mesmo tipo de aproveitamento de "refatoração oportunista" — a diferença é de escala: a Boy Scout Rule cobre micro-limpezas (nomes, comentário morto), enquanto a refatoração oportunista pode envolver restruturar um método inteiro antes de estender uma feature parecida.
-- Complementar, não substituto, de estratégias maiores de pagamento de dívida técnica como [[wiki/concepts/strangler-fig]] ou debt sprints.
+- Complementar, não substituto, de estratégias maiores de pagamento de dívida técnica como [[wiki/concepts/strangler-fig-pattern]] ou debt sprints.
 
 ## Relação com Outros Princípios
 

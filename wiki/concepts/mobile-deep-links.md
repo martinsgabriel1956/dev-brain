@@ -55,8 +55,8 @@ Linking.getInitialURL().then(url => { /* navegar para tela correta */ });
 
 ## Ver também
 
-- [[concepts/mobile-navegacao]] — integrar deep links com stack de navegação
-- [[concepts/mobile-push-notifications]] — notificações com deep link como payload
+- [[wiki/concepts/mobile-navegacao]] — integrar deep links com stack de navegação
+- [[wiki/concepts/mobile-push-notifications]] — notificações com deep link como payload
 
 ## Key Sources
 

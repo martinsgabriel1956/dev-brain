@@ -33,9 +33,9 @@ Feature flags desacoplam deploy de release — você pode deployar código desat
 
 ## Conceitos
 
-- [[concepts/feature-flags]] — mecanismo e tipos de toggle
-- [[concepts/canary-release]] — rollout gradual alternativo via infra
-- [[concepts/deploy-strategies]] — flags complementam blue/green e canary
+- [[wiki/concepts/feature-flags]] — mecanismo e tipos de toggle
+- [[wiki/concepts/canary-release]] — rollout gradual alternativo via infra
+- [[wiki/concepts/deploy-strategies]] — flags complementam blue/green e canary
 - [[concepts/ab-testing]] — Experiment Toggle para análise de conversão
 
 ## Key Sources

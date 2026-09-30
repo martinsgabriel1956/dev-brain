@@ -32,4 +32,4 @@ Virtualização é obrigatória em listas longas — renderizar apenas itens vis
 
 ## Conceitos Abordados
 
-- [[concepts/mobile-performance-listas]] · [[concepts/mobile-metricas-criticas]] · [[concepts/mobile-animacoes-performaticas]] · [[concepts/mobile-profiling]]
+- [[wiki/concepts/mobile-performance-listas]] · [[wiki/concepts/mobile-metricas-criticas]] · [[wiki/concepts/mobile-animacoes-performaticas]] · [[wiki/concepts/mobile-profiling]]

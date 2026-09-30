@@ -24,7 +24,7 @@ status: stable
 
 Histogram permite calcular percentis via PromQL (`histogram_quantile`) — média é enganosa em distribuições com cauda longa. p99 revela o pior caso que 1% dos usuários experimenta.
 
-## Relação com [[concepts/sli]]
+## Relação com [[wiki/concepts/sli]]
 
 Rate e Errors alimentam diretamente o SLI de disponibilidade. Duration alimenta o SLI de latência. RED Method é a instrumentação mínima para ter SLOs rastreáveis.
 
@@ -32,4 +32,4 @@ Rate e Errors alimentam diretamente o SLI de disponibilidade. Duration alimenta 
 
 - [[wiki/sources/flame-graph-profiling]] — 4 frameworks de diagnóstico: Flame Graph (onde o CPU passa o tempo), USE Method (Utilization/Saturation/Errors — para recursos de infra), RED Method (Rate/Errors/Duration — para serviços), Four...
 - [[wiki/sources/performance-methods]] — 3 frameworks diagnósticos: USE (Utilization/Saturation/Errors — para recursos), RED (Rate/Errors/Duration — para serviços), Four Golden Signals (Google SRE — Latency/Traffic/Errors/Saturation). k6...
-- [[sources/observabilidade]]
+- [[wiki/sources/observabilidade]]

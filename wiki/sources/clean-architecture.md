@@ -38,12 +38,12 @@ Clean Architecture organiza código em camadas concêntricas onde dependências 
 
 ## Entities & Concepts Touched
 
-- [[concepts/clean-architecture]]
+- [[wiki/concepts/clean-architecture]]
 - [[concepts/dependency-rule]]
 - [[concepts/use-cases]]
-- [[concepts/ports-adapters]]
-- [[concepts/dependency-injection]]
-- [[concepts/hexagonal-architecture]]
+- [[wiki/concepts/ports-adapters]]
+- [[wiki/concepts/dependency-injection]]
+- [[wiki/concepts/hexagonal-architecture]]
 
 ## Open Questions
 

@@ -38,13 +38,13 @@ Go: linguagem para sistemas distribuídos com concorrência nativa via CSP (Comm
 
 ## Entities & Concepts Touched
 
-- [[concepts/goroutines]]
+- [[wiki/concepts/goroutines]]
 - [[concepts/channels-go]]
 - [[concepts/context-go]]
 - [[concepts/interfaces-go]]
 - [[concepts/error-handling-go]]
-- [[concepts/csp]]
-- [[concepts/go-concorrencia]]
+- [[wiki/concepts/csp]]
+- [[wiki/concepts/go-concorrencia]]
 
 ## Open Questions
 

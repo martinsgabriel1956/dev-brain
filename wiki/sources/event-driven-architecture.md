@@ -38,14 +38,14 @@ EDA desacopla produtores de consumidores via eventos — comunicação assíncro
 
 ## Entities & Concepts Touched
 
-- [[concepts/event-driven-architecture]]
-- [[concepts/choreography]]
-- [[concepts/orchestration]]
+- [[wiki/concepts/event-driven-architecture]]
+- [[wiki/concepts/choreography]]
+- [[wiki/concepts/orchestration]]
 - [[concepts/temporal-decoupling]]
-- [[concepts/idempotencia]]
+- [[wiki/concepts/idempotencia]]
 - [[concepts/domain-events]]
 - [[concepts/integration-events]]
-- [[concepts/at-least-once-delivery]]
+- [[wiki/concepts/at-least-once-delivery]]
 
 ## Open Questions
 

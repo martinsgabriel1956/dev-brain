@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/event-driven-architecture]]: [[concepts/at-least-once-delivery]]
-- Em [[wiki/sources/webhook]]: [[concepts/at-least-once-delivery]]
+- Em [[wiki/sources/event-driven-architecture]]: [[wiki/concepts/at-least-once-delivery]]
+- Em [[wiki/sources/webhook]]: [[wiki/concepts/at-least-once-delivery]]
 
 ## Pendências
 

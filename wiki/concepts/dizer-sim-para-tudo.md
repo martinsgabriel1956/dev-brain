@@ -60,5 +60,5 @@ Não confundir com abandono. Júnior no banco de produção sem supervisão é r
 ## Key Sources
 
 - [[wiki/sources/habitos-ruins-de-programador]]
-- [[sources/9-habitos-programador-junior]]
+- [[wiki/sources/9-habitos-programador-junior]]
 - [[wiki/sources/4-habitos-programador-ineficiente]]

@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/identidade-avancada]]: [[concepts/jit-access]]
-- Em [[wiki/sources/identity-iam-avancado]]: [[concepts/jit-access]]
+- Em [[wiki/sources/identidade-avancada]]: [[wiki/concepts/jit-access]]
+- Em [[wiki/sources/identity-iam-avancado]]: [[wiki/concepts/jit-access]]
 
 ## Pendências
 

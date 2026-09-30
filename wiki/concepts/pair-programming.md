@@ -31,7 +31,7 @@ A barreira de pedir pairing aumenta no remoto — uma mensagem no Slack tem mais
 
 ## Complementa
 
-[[concepts/voluntariar-para-desconhecido]] — pairing é a forma de encarar o desafio sem ficar completamente sozinho.
+[[wiki/concepts/voluntariar-para-desconhecido]] — pairing é a forma de encarar o desafio sem ficar completamente sozinho.
 
 ## Modo de aprendizado: observar antes de participar
 
@@ -61,7 +61,7 @@ Essa observação revela o modelo mental de quem já conhece o sistema mais ráp
 
 ## Key Sources
 
-- [[sources/9-habitos-programador-junior]]
+- [[wiki/sources/9-habitos-programador-junior]]
 - [[wiki/sources/como-aprender-novas-codebases]]
 - [[wiki/sources/tech-debt-guia-completo-gestao-metricas]] — pairing como prática de prevenção de dívida técnica imprudente/inadvertida, não só ferramenta de aprendizado
 - [[wiki/sources/pull-requests-por-que-falham-alternativas-sem-pr]] — mob programming e trunk-based como substituto de PR; multiplicador de ~1,6x de velocidade citado para pair programming

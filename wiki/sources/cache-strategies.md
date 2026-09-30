@@ -36,12 +36,12 @@ Aprofundamento nas estratégias de cache com exemplos TypeScript completos. Cach
 ## Conceitos Abordados
 
 - [[cache-aside]]
-- [[concepts/write-through]]
-- [[concepts/write-behind]]
+- [[wiki/concepts/write-through]]
+- [[wiki/concepts/write-behind]]
 - [[cache-stampede]]
-- [[concepts/stale-while-revalidate]]
-- [[concepts/xfetch]]
+- [[wiki/concepts/stale-while-revalidate]]
+- [[wiki/concepts/xfetch]]
 - [[distributed-lock]]
-- [[concepts/cache-invalidation]]
-- [[concepts/ttl]]
+- [[wiki/concepts/cache-invalidation]]
+- [[wiki/concepts/ttl]]
 - [[cdc-debezium]]

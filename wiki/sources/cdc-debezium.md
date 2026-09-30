@@ -38,10 +38,10 @@ CDC (Change Data Capture) captura toda alteração no banco em tempo real via WA
 
 ## Entities & Concepts Touched
 
-- [[concepts/cdc]]
+- [[wiki/concepts/cdc]]
 - [[entities/debezium]]
-- [[concepts/wal]]
-- [[concepts/outbox-pattern]]
+- [[wiki/concepts/wal]]
+- [[wiki/concepts/outbox-pattern]]
 - [[concepts/schema-registry]]
 - [[concepts/logical-replication]]
 - [[entities/kafka]]

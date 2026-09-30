@@ -33,14 +33,14 @@ Aprofundamento sobre locks distribuídos com foco na crítica de Martin Kleppman
 
 ## Conceitos
 
-- [[concepts/distributed-lock]] — mecanismo geral
-- [[concepts/fencing-token]] — proteção correta contra falhas de lock
-- [[concepts/raft-paxos]] — consenso com garantias formais
-- [[concepts/idempotencia]] — quando o lock simples é suficiente
+- [[wiki/concepts/distributed-lock]] — mecanismo geral
+- [[wiki/concepts/fencing-token]] — proteção correta contra falhas de lock
+- [[wiki/concepts/raft-paxos]] — consenso com garantias formais
+- [[wiki/concepts/idempotencia]] — quando o lock simples é suficiente
 
 ## Entidades
 
-- [[entities/martin-kleppmann]] — autor da crítica ao Redlock, "Designing Data-Intensive Applications"
+- [[wiki/entities/martin-kleppmann]] — autor da crítica ao Redlock, "Designing Data-Intensive Applications"
 
 ## Key Sources
 

@@ -14,15 +14,15 @@ status: stable
 
 Deploy que não interrompe o serviço para usuários finais. Exige duas coisas: estratégia de tráfego + migrations backward compatible. **Regra fundamental: nunca migre schema e código no mesmo deploy.**
 
-O oposto direto é o [[concepts/recreate-deployment]] — shutdown seguido de start, com uma janela de downtime inevitável entre os dois. Toda estratégia desta página existe justamente para eliminar essa janela.
+O oposto direto é o [[wiki/concepts/recreate-deployment]] — shutdown seguido de start, com uma janela de downtime inevitável entre os dois. Toda estratégia desta página existe justamente para eliminar essa janela.
 
 ## Por Estratégia
 
 | Estratégia | Rollback | Custo Infra | Restrição |
 |---|---|---|---|
-| [[concepts/rolling-update]] | Lento | Normal | API compat obrigatória |
-| [[concepts/blue-green-deploy]] | Instantâneo | 2× durante switch | DB suporta 2 versões |
-| [[concepts/canary-release]] | Gradual/automático | Normal + roteamento | Observabilidade necessária |
+| [[wiki/concepts/rolling-update]] | Lento | Normal | API compat obrigatória |
+| [[wiki/concepts/blue-green-deploy]] | Instantâneo | 2× durante switch | DB suporta 2 versões |
+| [[wiki/concepts/canary-release]] | Gradual/automático | Normal + roteamento | Observabilidade necessária |
 
 ## Caso Base: Monolito de Servidor Único Sem as Estratégias Acima
 
@@ -30,7 +30,7 @@ O oposto direto é o [[concepts/recreate-deployment]] — shutdown seguido de st
 
 ## Pré-requisito: Expand-Contract
 
-DB migrations backward compatible via [[concepts/expand-contract]] — sem isso, o código novo quebra contra o schema antigo durante a janela de transição.
+DB migrations backward compatible via [[wiki/concepts/expand-contract]] — sem isso, o código novo quebra contra o schema antigo durante a janela de transição.
 
 ```
 Renomear coluna "email" → "email_address":
@@ -102,7 +102,7 @@ spec:
 
 ## Key Sources
 
-- [[sources/blue-green-canary-rolling]]
-- [[sources/zero-downtime-deploy]]
-- [[sources/tipos-de-deploy]]
+- [[wiki/sources/blue-green-canary-rolling]]
+- [[wiki/sources/zero-downtime-deploy]]
+- [[wiki/sources/tipos-de-deploy]]
 - [[wiki/sources/arquitetura-monolitica-vantagens-desvantagens]] — caso base sem nenhuma estratégia de zero-downtime: monolito de servidor único fica indisponível a cada deploy, empurrando times a amarrar deploys a um dia fixo da semana

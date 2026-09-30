@@ -19,7 +19,7 @@ date_ingested: 2026-04-23
 
 ## TL;DR
 
-Baseado na palestra de [[entities/randy-nelson]] (ex-Pixar, Apple), as três características que definem um candidato excepcional são: **profundidade** (maestria em qualquer assunto como prognóstico de sucesso), **abrangência** (ser interessado, não apenas interessante) e **comunicação** (fazer a tradução na ponta de quem emite, não de quem recebe).
+Baseado na palestra de [[wiki/entities/randy-nelson]] (ex-Pixar, Apple), as três características que definem um candidato excepcional são: **profundidade** (maestria em qualquer assunto como prognóstico de sucesso), **abrangência** (ser interessado, não apenas interessante) e **comunicação** (fazer a tradução na ponta de quem emite, não de quem recebe).
 
 ---
 
@@ -40,7 +40,7 @@ Baseado na palestra de [[entities/randy-nelson]] (ex-Pixar, Apple), as três car
 - "Qualquer pessoa pode ter um moicano rosa — isso é interessante mas fácil. Ser interessado é difícil."
 - Sinal de pessoa interessada: quando você compartilha algo, ela se curva para frente para saber mais
 - Problema com pessoas que chegam "já sabendo a solução" antes de ouvir o problema: expulsam as pessoas boas
-- [[concepts/curriculo-vs-portfolio]]: currículo é promessa, portfólio é prova
+- [[wiki/concepts/curriculo-vs-portfolio]]: currículo é promessa, portfólio é prova
 
 **Característica 3 — Comunicação**
 - Comunicação não é responsabilidade do receptor — é do emissor
@@ -58,18 +58,18 @@ Baseado na palestra de [[entities/randy-nelson]] (ex-Pixar, Apple), as três car
 
 ## Conceitos Tocados
 
-- [[concepts/profundidade-e-maestria]] — maestria como prognóstico universal de sucesso
-- [[concepts/abrangencia-profissional]] — interessado > interessante, T-shape saudável
-- [[concepts/comunicacao-tecnica]] — tradução na ponta emissora
-- [[concepts/curriculo-vs-portfolio]] — promessa vs prova
-- [[concepts/maturidade-tecnica]] — falhar e se recuperar como sinal de inovador
-- [[concepts/comparacao-na-carreira]] — currículo não captura o que realmente importa
+- [[wiki/concepts/profundidade-e-maestria]] — maestria como prognóstico universal de sucesso
+- [[wiki/concepts/abrangencia-profissional]] — interessado > interessante, T-shape saudável
+- [[wiki/concepts/comunicacao-tecnica]] — tradução na ponta emissora
+- [[wiki/concepts/curriculo-vs-portfolio]] — promessa vs prova
+- [[wiki/concepts/maturidade-tecnica]] — falhar e se recuperar como sinal de inovador
+- [[wiki/concepts/comparacao-na-carreira]] — currículo não captura o que realmente importa
 
 ---
 
 ## Entidades
 
-- [[entities/randy-nelson]] — ex-Pixar, Apple, educador; autor da palestra original
+- [[wiki/entities/randy-nelson]] — ex-Pixar, Apple, educador; autor da palestra original
 
 ---
 

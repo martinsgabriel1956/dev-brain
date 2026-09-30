@@ -22,7 +22,7 @@ Dispositivo de armazenamento tradicional que grava dados em **discos magnéticos
 
 ## Trade-off
 
-Barato e de alta capacidade, mas **tem partes mecânicas** — vulnerável a choque físico, superaquecimento e quedas de energia. É o oposto do [[concepts/ssd]] (rápido e sem partes móveis). Em [[concepts/storage-tiering]] ocupa a camada *warm*. O [[concepts/disquete]] e a [[concepts/fita-magnetica]] compartilham o mesmo princípio magnético.
+Barato e de alta capacidade, mas **tem partes mecânicas** — vulnerável a choque físico, superaquecimento e quedas de energia. É o oposto do [[wiki/concepts/ssd]] (rápido e sem partes móveis). Em [[wiki/concepts/storage-tiering]] ocupa a camada *warm*. O [[wiki/concepts/disquete]] e a [[wiki/concepts/fita-magnetica]] compartilham o mesmo princípio magnético.
 
 ## Key Sources
 

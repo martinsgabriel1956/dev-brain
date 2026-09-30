@@ -16,9 +16,9 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/agentes-core]]: [[concepts/tool-use-agents]]
-- Em [[wiki/sources/mcp]]: [[concepts/tool-use-agents]]
-- Em [[wiki/sources/structured-outputs-function-calling]]: [[concepts/tool-use-agents]]
+- Em [[wiki/sources/agentes-core]]: [[wiki/concepts/tool-use-agents]]
+- Em [[wiki/sources/mcp]]: [[wiki/concepts/tool-use-agents]]
+- Em [[wiki/sources/structured-outputs-function-calling]]: [[wiki/concepts/tool-use-agents]]
 
 ## Pendências
 

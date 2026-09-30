@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/schema-registry]]: [[concepts/avro]]
-- Em [[wiki/sources/serialization-protocols]]: [[concepts/avro]]
+- Em [[wiki/sources/schema-registry]]: [[wiki/concepts/avro]]
+- Em [[wiki/sources/serialization-protocols]]: [[wiki/concepts/avro]]
 
 ## Pendências
 

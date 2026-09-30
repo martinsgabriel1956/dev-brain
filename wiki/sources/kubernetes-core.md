@@ -42,7 +42,7 @@ Kubernetes orquestra containers em Pods. Deployment para workloads stateless (ro
 - [[concepts/statefulset]]
 - [[concepts/rbac-k8s]]
 - [[concepts/health-probes]]
-- [[concepts/hpa]]
+- [[wiki/concepts/hpa]]
 
 ## Open Questions
 

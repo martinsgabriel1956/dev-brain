@@ -16,20 +16,20 @@ Técnica de gerenciamento de tempo: blocos de 30 minutos de trabalho focado, seg
 
 ## Uso para Detecção de Travamento
 
-Após cada bloco, recap rápido: "estou em modo solução ou modo travado?" Se travado — mude de tarefa. → [[concepts/pausa-estrategica]]
+Após cada bloco, recap rápido: "estou em modo solução ou modo travado?" Se travado — mude de tarefa. → [[wiki/concepts/pausa-estrategica]]
 
 ## Habit Stacking
 
 Use o fim do bloco como trigger para outros hábitos:
 - Levantar e se alongar
 - Beber água
-- Atualizar status (→ [[concepts/comunicar-progresso]])
+- Atualizar status (→ [[wiki/concepts/comunicar-progresso]])
 
 Empilhar hábitos sobre o Pomodoro é eficaz porque o timer já existe — você apenas anexa o novo comportamento ao trigger existente.
 
 ## Complementa
 
-[[concepts/bloqueio-de-agenda]] define **quando** você trabalha. Pomodoro define **como** você trabalha dentro desse bloco.
+[[wiki/concepts/bloqueio-de-agenda]] define **quando** você trabalha. Pomodoro define **como** você trabalha dentro desse bloco.
 
 ## Quando o Pomodoro não funciona
 
@@ -41,6 +41,6 @@ O [[wiki/concepts/ciclo-de-2-horas]] ([[wiki/sources/como-fazer-perguntas-certas
 
 ## Key Sources
 
-- [[sources/9-habitos-programador-junior]]
+- [[wiki/sources/9-habitos-programador-junior]]
 - [[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] — relato de que o Pomodoro não funciona com hiperfoco
 - [[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] — timebox de bloqueio vs. de foco

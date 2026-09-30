@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/tls-mtls-vpn]]: [[entities/tailscale]]
-- Em [[wiki/sources/zero-trust]]: [[entities/tailscale]]
+- Em [[wiki/sources/tls-mtls-vpn]]: [[wiki/entities/tailscale]]
+- Em [[wiki/sources/zero-trust]]: [[wiki/entities/tailscale]]
 
 ## Pendências
 

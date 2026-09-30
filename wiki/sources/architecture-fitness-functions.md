@@ -34,12 +34,12 @@ Fitness Functions são testes automatizados que validam restrições arquitetura
 
 ## Entities & Concepts Touched
 
-- [[concepts/fitness-functions]]
+- [[wiki/concepts/fitness-functions]]
 - [[concepts/evolutionary-architecture]]
 - [[entities/archunit]]
 - [[entities/deptrac]]
-- [[concepts/clean-architecture]]
-- [[concepts/adr]]
+- [[wiki/concepts/clean-architecture]]
+- [[wiki/concepts/adr-architecture-decision-record]]
 
 ## Open Questions
 

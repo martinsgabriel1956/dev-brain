@@ -40,9 +40,9 @@ NATS é um sistema de mensageria cloud-native ultralleve. NATS Core: pub/sub fir
 
 - [[concepts/nats]]
 - [[concepts/nats-jetstream]]
-- [[concepts/pub-sub]]
+- [[wiki/concepts/pub-sub]]
 - [[concepts/request-reply]]
-- [[concepts/at-least-once]]
+- [[wiki/concepts/at-least-once]]
 
 ## Open Questions
 

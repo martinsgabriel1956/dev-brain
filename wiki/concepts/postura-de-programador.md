@@ -36,7 +36,7 @@ Buscar deliberadamente uma razão de futuro que faça sentido pessoal — não t
 
 ## Relação com Outros Conceitos
 
-Complementa [[concepts/tempo-variavel-capacidade-fixa]] (modelo mental) e [[concepts/aprendizado-deliberado]] (processo técnico). Sem postura, as técnicas não sustentam consistência de longo prazo.
+Complementa [[wiki/concepts/tempo-variavel-capacidade-fixa]] (modelo mental) e [[wiki/concepts/aprendizado-deliberado]] (processo técnico). Sem postura, as técnicas não sustentam consistência de longo prazo.
 
 ## Persistência Acima de Talento
 
@@ -44,6 +44,6 @@ Complementa [[concepts/tempo-variavel-capacidade-fixa]] (modelo mental) e [[conc
 
 ## Key Sources
 
-- [[sources/como-aprender-programacao-3-dicas]]
-- [[sources/logica-programacao-sem-matematica]]
+- [[wiki/sources/como-aprender-programacao-3-dicas]]
+- [[wiki/sources/logica-programacao-sem-matematica]]
 - [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]]

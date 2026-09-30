@@ -40,8 +40,8 @@ O `auditLog.create` dentro da transação é obrigatório — a deleção em si 
 
 ## Key Sources
 
-- [[sources/compliance]] — DSAR como cenário de engenharia obrigatório para LGPD/GDPR
+- [[wiki/sources/compliance]] — DSAR como cenário de engenharia obrigatório para LGPD/GDPR
 
 ## Conceitos Relacionados
 
-[[concepts/compliance]] · [[concepts/data-privacy]] · [[concepts/audit-log]] · [[concepts/soft-delete]]
+[[wiki/concepts/compliance]] · [[concepts/data-privacy]] · [[wiki/concepts/audit-log]] · [[concepts/soft-delete]]

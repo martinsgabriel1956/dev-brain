@@ -48,9 +48,9 @@ O experimento custava pouco. A decisão sem dados custaria a feature inteira.
 
 ## Ver também
 
-- [[concepts/principio-da-inversao]] — hábito ruim nº 1: nunca questionar líderes
-- [[concepts/feature-flags]] — habilita experimentos seguros em produção
+- [[wiki/concepts/principio-da-inversao]] — hábito ruim nº 1: nunca questionar líderes
+- [[wiki/concepts/feature-flags]] — habilita experimentos seguros em produção
 
 ## Key Sources
 
-- [[sources/principio-da-inversao-programador]]
+- [[wiki/sources/principio-da-inversao-programador]]

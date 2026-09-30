@@ -16,11 +16,11 @@ Núcleo do sistema operacional — a parte com acesso total ao hardware. É a fu
 
 ## Responsabilidades
 
-- Gerenciar [[concepts/processo|processos]] e [[concepts/thread|threads]]
-- Controlar acesso à memória ([[concepts/memoria-virtual]])
-- Implementar o [[concepts/sistema-de-arquivos]]
-- Receber e tratar [[concepts/interrupcao-de-hardware|interrupções]]
-- Expor serviços aos programas via [[concepts/syscall|syscalls]]
+- Gerenciar [[wiki/concepts/processo|processos]] e [[wiki/concepts/thread|threads]]
+- Controlar acesso à memória ([[wiki/concepts/memoria-virtual]])
+- Implementar o [[wiki/concepts/sistema-de-arquivos]]
+- Receber e tratar [[wiki/concepts/interrupcao-de-hardware|interrupções]]
+- Expor serviços aos programas via [[wiki/concepts/syscall|syscalls]]
 - Controlar dispositivos de hardware
 
 ## User mode vs Kernel mode
@@ -64,10 +64,10 @@ Para o contexto de propósito/mercado de cada SO que roda um destes kernels (nã
 
 ## Ver também
 
-- [[concepts/syscall]] — interface entre user mode e kernel
-- [[concepts/interrupcao-de-hardware]] — kernel recebe e processa interrupções
-- [[concepts/processo]] — kernel cria e gerencia processos
-- [[concepts/memoria-virtual]] — kernel mantém as page tables
+- [[wiki/concepts/syscall]] — interface entre user mode e kernel
+- [[wiki/concepts/interrupcao-de-hardware]] — kernel recebe e processa interrupções
+- [[wiki/concepts/processo]] — kernel cria e gerencia processos
+- [[wiki/concepts/memoria-virtual]] — kernel mantém as page tables
 
 ## Kernel e a line discipline
 
@@ -76,6 +76,6 @@ Para o contexto de propósito/mercado de cada SO que roda um destes kernels (nã
 ## Key Sources
 
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — line discipline e PTY como serviços do kernel
-- [[sources/sistema-operacional-por-baixo-dos-panos]]
-- [[sources/como-sistemas-operacionais-funcionam]]
+- [[wiki/sources/sistema-operacional-por-baixo-dos-panos]]
+- [[wiki/sources/como-sistemas-operacionais-funcionam]]
 - [[wiki/sources/8-sistemas-operacionais-explicados]] — panorama comparativo de propósito/mercado dos SOs que rodam sobre estes kernels

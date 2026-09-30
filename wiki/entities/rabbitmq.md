@@ -4,7 +4,7 @@ title: "RabbitMQ"
 aliases: ["rabbitmq", "rabbit mq"]
 date_created: 2026-07-30
 date_updated: 2026-09-30
-source_count: 2
+source_count: 4
 tags: [mensageria, message-broker, saga-pattern, event-driven]
 skill: tech-mentor-backend
 status: stub
@@ -22,7 +22,13 @@ Citado como peça central para implementar [[wiki/concepts/saga-pattern]] sem [[
 
 Citado por [[wiki/entities/bernardo-lobato]] (ao lado de Kafka) como broker de mensageria para [[wiki/concepts/comunicacao-assincrona]], em contraste com REST síncrono.
 
+## Preferência Didática: RabbitMQ vs Kafka
+
+O autor da fonte prefere RabbitMQ por ser "mais simplificado" que o Kafka ("muito grande"), ressalvando que depende do contexto; usado no caso para a fila de geração de miniaturas. Opinião, sem benchmark.
+
 ## Key Sources
 
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — RabbitMQ como fila que viabiliza Saga Pattern coreografado, citado como exemplo de broker que evita gargalo de coordenação síncrona
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — RabbitMQ/Kafka como exemplos de broker
+- [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — fila de miniaturas; preferência do autor por RabbitMQ em relação a Kafka, dependente de contexto
+- [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — exemplo de message broker que enfileira os eventos de cadastro consumidos de forma assíncrona para atualizar o banco de leitura

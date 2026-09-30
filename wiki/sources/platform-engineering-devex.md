@@ -38,14 +38,14 @@ Platform Engineering cria um IDP (Internal Developer Platform) para reduzir carg
 
 ## Entities & Concepts Touched
 
-- [[concepts/platform-engineering]]
+- [[wiki/concepts/platform-engineering]]
 - [[concepts/idp]]
 - [[concepts/backstage]]
 - [[concepts/golden-path]]
-- [[concepts/dora-metrics]]
+- [[wiki/concepts/dora-metrics]]
 - [[concepts/space-metrics]]
 - [[concepts/inner-loop]]
-- [[concepts/cognitive-load]]
+- [[wiki/concepts/cognitive-load]]
 
 ## Open Questions
 

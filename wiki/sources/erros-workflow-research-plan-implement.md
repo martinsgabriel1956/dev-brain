@@ -44,11 +44,11 @@ Uma empresa publicou o workflow **Research → Plan → Implement (RPI)** que ac
 
 ## Conceitos Centrais
 
-- [[concepts/rpi-workflow]] — Research → Plan → Implement e sua filosofia
-- [[concepts/instruction-budget]] — limite implícito de instruções seguíveis por LLMs
-- [[concepts/plano-vertical]] — fatias testáveis vs plano horizontal monolítico
-- [[concepts/design-discussion]] — alinhamento de direção antes de qualquer linha de código
-- [[concepts/separacao-de-contextos]] — research e plan em sessões distintas para evitar contaminação
+- [[wiki/concepts/rpi-workflow]] — Research → Plan → Implement e sua filosofia
+- [[wiki/concepts/instruction-budget]] — limite implícito de instruções seguíveis por LLMs
+- [[wiki/concepts/plano-vertical]] — fatias testáveis vs plano horizontal monolítico
+- [[wiki/concepts/design-discussion]] — alinhamento de direção antes de qualquer linha de código
+- [[wiki/concepts/separacao-de-contextos]] — research e plan em sessões distintas para evitar contaminação
 
 ---
 
@@ -72,11 +72,11 @@ A empresa chamou o método evoluído de **CRISPY**. Três mudanças principais:
 
 ## Conexões com o Wiki
 
-- [[sources/addy-osmani-80-problem-agentic-coding]] — abstraction bloat gerado por agentes sem método
-- [[sources/divida-cognitiva-ai-brainfry]] — o custo cognitivo de supervisar sem entender
-- [[sources/context-engineering]] — fundamentos de gerenciamento de context window
-- [[concepts/vertical-slice-architecture]] — plano vertical é a versão de workflow do VSA
-- [[concepts/comprehension-debt]] — o que acontece quando você para de ler o código gerado
+- [[wiki/sources/addy-osmani-80-problem-agentic-coding]] — abstraction bloat gerado por agentes sem método
+- [[wiki/sources/divida-cognitiva-ai-brainfry]] — o custo cognitivo de supervisar sem entender
+- [[wiki/sources/context-engineering]] — fundamentos de gerenciamento de context window
+- [[wiki/concepts/vertical-slice-architecture]] — plano vertical é a versão de workflow do VSA
+- [[wiki/concepts/comprehension-debt]] — o que acontece quando você para de ler o código gerado
 
 ---
 

@@ -49,7 +49,7 @@ Error Budget é ferramenta de alinhamento produto/engenharia — não métrica d
 
 ## Concepts & Entities Touched
 
-[[concepts/error-budget]] · [[concepts/error-budget-policy]] · [[concepts/blameless-post-mortem]] · [[concepts/incident-lifecycle]] · [[concepts/incident-severity]] · [[concepts/incident-roles]] · [[concepts/runbook]] · [[concepts/game-day]] · [[concepts/sre]]
+[[wiki/concepts/error-budget]] · [[wiki/concepts/error-budget-policy]] · [[wiki/concepts/blameless-post-mortem]] · [[wiki/concepts/incident-lifecycle]] · [[wiki/concepts/incident-severity]] · [[wiki/concepts/incident-roles]] · [[wiki/concepts/runbook]] · [[wiki/concepts/game-day]] · [[wiki/concepts/sre]]
 
 ## Open Questions
 

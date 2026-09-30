@@ -12,7 +12,7 @@ status: stable
 
 # Behavioral Patterns (Padrões Comportamentais)
 
-Uma das três categorias dos 23 padrões [[entities/gang-of-four]]. Tratam de **como objetos se comunicam e distribuem responsabilidades** entre si — algoritmos, fluxos de controle e delegação de tarefas.
+Uma das três categorias dos 23 padrões [[wiki/entities/gang-of-four]]. Tratam de **como objetos se comunicam e distribuem responsabilidades** entre si — algoritmos, fluxos de controle e delegação de tarefas.
 
 ## Os 11 Padrões Comportamentais GoF
 
@@ -36,6 +36,6 @@ Uma das três categorias dos 23 padrões [[entities/gang-of-four]]. Tratam de **
 
 ## Key Sources
 
-- [[sources/sete-padroes-de-design-de-software]]
-- [[sources/design-pattern-strategy]]
-- [[sources/design-pattern-observer]]
+- [[wiki/sources/sete-padroes-de-design-de-software]]
+- [[wiki/sources/design-pattern-strategy]]
+- [[wiki/sources/design-pattern-observer]]

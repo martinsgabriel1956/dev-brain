@@ -47,7 +47,7 @@ Segundo [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo
 ## Key Sources
 
 - [[wiki/sources/otel-sdk]] — OpenTelemetry: padrão unificado para traces, métricas e logs — vendor-agnostic. SDK TypeScript inicializa ANTES de qualquer import. Auto-instrumentation cobre HTTP, Express, Prisma, Redis...
-- [[sources/distributed-tracing]]
+- [[wiki/sources/distributed-tracing]]
 - [[wiki/sources/observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam]] — arquitetura do Collector, instrumentação de libs de baixo nível, e correlação automática via IA/MCP
 - [[wiki/sources/sre-capacidade-observabilidade-confiabilidade-custo]] — framing didático de tracing como a resposta natural a "tá muito lento" (fluxo/jornada/trace da chamada)
 - [[wiki/sources/monitoramento-aplicacoes-ia-grafana-cloud-opentelemetry]] — PromQL como barreira de aprendizado ao explorar traces manualmente antes de recorrer ao assistente de IA

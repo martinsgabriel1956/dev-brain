@@ -12,7 +12,7 @@ status: stable
 
 # Error Budget Policy
 
-Conjunto de regras que mapeia o nível atual do [[concepts/error-budget]] para decisões de release e operação. Elimina negociação subjetiva entre Dev e Ops.
+Conjunto de regras que mapeia o nível atual do [[wiki/concepts/error-budget]] para decisões de release e operação. Elimina negociação subjetiva entre Dev e Ops.
 
 ## Política
 
@@ -29,5 +29,5 @@ Remove a tensão crônica Dev vs. Ops: a política é acordada com antecedência
 
 ## Key Sources
 
-- [[sources/sre-sli-slo-sla]]
-- [[sources/sre-error-budget-incidents]]
+- [[wiki/sources/sre-sli-slo-sla]]
+- [[wiki/sources/sre-error-budget-incidents]]

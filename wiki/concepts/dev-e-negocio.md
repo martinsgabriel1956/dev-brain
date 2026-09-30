@@ -3,8 +3,8 @@ type: concept
 title: "Dev e Negócio"
 aliases: ["desenvolvedor e negócio", "business awareness dev", "entender o negócio"]
 date_created: 2026-04-22
-date_updated: 2026-08-11
-source_count: 3
+date_updated: 2026-09-30
+source_count: 4
 tags: [carreira, senioridade, negócio, receita, impacto, liderança, precificacao]
 skill: tech-mentor-leadership
 status: stable
@@ -57,3 +57,4 @@ Entender o negócio inclui saber **cobrar**. [[wiki/sources/precificacao-ancorag
 - [[wiki/sources/desenvolvedor-acima-da-media-10-itens]]
 - [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]] — aplicação do conceito à decisão arquitetural especificamente
 - [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — a camada de negócio inclui precificação/percepção de valor (ancoragem)
+- [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — 'entenda a regra de negócio' como o que diferencia o dev, inclusive ao usar IA

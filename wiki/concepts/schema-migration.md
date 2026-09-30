@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/expand-contract]]: [[concepts/schema-migration]]
-- Em [[wiki/sources/migrations-schema-evolution]]: [[concepts/schema-migration]]
+- Em [[wiki/sources/expand-contract]]: [[wiki/concepts/schema-migration]]
+- Em [[wiki/sources/migrations-schema-evolution]]: [[wiki/concepts/schema-migration]]
 
 ## Pendências
 

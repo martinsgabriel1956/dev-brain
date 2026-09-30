@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/agentes-core]]: [[concepts/prompt-injection]]
-- Em [[wiki/sources/ai-llm-security]]: [[concepts/prompt-injection]]
+- Em [[wiki/sources/agentes-core]]: [[wiki/concepts/prompt-injection]]
+- Em [[wiki/sources/ai-llm-security]]: [[wiki/concepts/prompt-injection]]
 
 ## Pendências
 

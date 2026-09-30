@@ -12,7 +12,7 @@ status: stable
 
 # FAT (FAT12/FAT16/FAT32)
 
-Família de [[concepts/sistema-de-arquivos|sistemas de arquivos]] mais antiga em uso, criada pela Microsoft. O nome vem da estrutura central: uma tabela que mapeia quais blocos do disco pertencem a cada arquivo.
+Família de [[wiki/concepts/sistema-de-arquivos|sistemas de arquivos]] mais antiga em uso, criada pela Microsoft. O nome vem da estrutura central: uma tabela que mapeia quais blocos do disco pertencem a cada arquivo.
 
 ## Linhagem
 
@@ -30,17 +30,17 @@ O limite de 4 GB por arquivo ainda é real em 2026: copiar um vídeo de 5 GB par
 
 ## Por que ainda existe
 
-FAT32 não tem [[concepts/journaling]], permissões, criptografia ou compressão — é o sistema de arquivos mais "burro" ainda em uso comum. Sobrevive por um único motivo: **compatibilidade universal**. Praticamente qualquer sistema operacional, câmera, console ou dispositivo embarcado consegue ler/escrever FAT32 sem driver adicional. Por isso ainda é o padrão de fábrica de pendrives e cartões de memória pequenos.
+FAT32 não tem [[wiki/concepts/journaling]], permissões, criptografia ou compressão — é o sistema de arquivos mais "burro" ainda em uso comum. Sobrevive por um único motivo: **compatibilidade universal**. Praticamente qualquer sistema operacional, câmera, console ou dispositivo embarcado consegue ler/escrever FAT32 sem driver adicional. Por isso ainda é o padrão de fábrica de pendrives e cartões de memória pequenos.
 
 ## Sucessores diretos
 
-- [[concepts/exfat]] — mesma simplicidade, sem o limite de 4 GB
-- [[concepts/ntfs]] — adiciona journaling, permissões e limites praticamente ilimitados, ao custo de compatibilidade fora do Windows
+- [[wiki/concepts/exfat]] — mesma simplicidade, sem o limite de 4 GB
+- [[wiki/concepts/ntfs]] — adiciona journaling, permissões e limites praticamente ilimitados, ao custo de compatibilidade fora do Windows
 
 ## Ver também
 
-- [[concepts/sistema-de-arquivos]]
-- [[concepts/journaling]]
+- [[wiki/concepts/sistema-de-arquivos]]
+- [[wiki/concepts/journaling]]
 
 ## Key Sources
 

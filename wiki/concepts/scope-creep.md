@@ -29,8 +29,8 @@ Blog simples
 
 ## Raiz do Problema
 
-- **[[concepts/planning-fallacy]]**: subestimar complexidade de cada adição
-- **[[concepts/dopamina-e-projetos]]**: cada nova feature traz dopamina de ideação
+- **[[wiki/concepts/planning-fallacy]]**: subestimar complexidade de cada adição
+- **[[wiki/concepts/dopamina-e-projetos]]**: cada nova feature traz dopamina de ideação
 - Ausência de definição clara de "pronto" permite expansão ilimitada
 
 ## Consequência
@@ -43,11 +43,11 @@ Em [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresa
 
 ## Mitigação
 
-- **[[concepts/mvp]]**: definir o menor conjunto de funcionalidades que valida a ideia
+- **[[wiki/concepts/mvp]]**: definir o menor conjunto de funcionalidades que valida a ideia
 - **"Will it wait?"**: para cada feature nova, perguntar "isso pode esperar o MVP?"
 - Lista separada de "future scope" — documenta sem bloquear o presente
 
 ## Key Sources
 
-- [[sources/por-que-devs-nao-terminam-projetos]]
+- [[wiki/sources/por-que-devs-nao-terminam-projetos]]
 - [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]] — mesma dinâmica em contexto de cliente externo pagante, não side project

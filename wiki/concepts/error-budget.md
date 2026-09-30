@@ -12,7 +12,7 @@ status: stable
 
 # Error Budget
 
-Quantidade de falha permitida antes de violar o [[concepts/slo]]. Governa a decisão de velocidade vs. estabilidade de forma objetiva e sem negociação subjetiva.
+Quantidade de falha permitida antes de violar o [[wiki/concepts/slo]]. Governa a decisão de velocidade vs. estabilidade de forma objetiva e sem negociação subjetiva.
 
 ## Cálculo
 
@@ -53,9 +53,9 @@ Burn rate é mais eficaz que threshold absoluto — detecta esgotamento antecipa
 
 FastBurn: > 14× a taxa normal em 1h → critical. SlowBurn: > 6× em 6h → warning.
 
-Ver política de decisão em [[concepts/error-budget-policy]].
+Ver política de decisão em [[wiki/concepts/error-budget-policy]].
 
 ## Key Sources
 
-- [[sources/sre-sli-slo-sla]]
-- [[sources/sre-error-budget-incidents]]
+- [[wiki/sources/sre-sli-slo-sla]]
+- [[wiki/sources/sre-error-budget-incidents]]

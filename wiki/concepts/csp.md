@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/browser-security]]: [[concepts/csp]]
-- Em [[wiki/sources/go-core]]: [[concepts/csp]]
+- Em [[wiki/sources/browser-security]]: [[wiki/concepts/csp]]
+- Em [[wiki/sources/go-core]]: [[wiki/concepts/csp]]
 
 ## Pendências
 

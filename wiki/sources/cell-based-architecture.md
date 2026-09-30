@@ -34,10 +34,10 @@ Cell-Based Architecture particiona o sistema em células funcionalmente completa
 
 ## Entities & Concepts Touched
 
-- [[concepts/cell-based-architecture]]
-- [[concepts/blast-radius]]
+- [[wiki/concepts/cell-based-architecture]]
+- [[wiki/concepts/blast-radius]]
 - [[concepts/tenant-isolation]]
-- [[concepts/sharding]]
+- [[wiki/concepts/sharding]]
 - [[concepts/availability-zones]]
 
 ## Open Questions

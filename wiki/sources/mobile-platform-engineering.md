@@ -50,11 +50,11 @@ Platform Engineering mobile é a camada de infraestrutura consumida por múltipl
 
 ## Concepts
 
-- [[concepts/shared-sdk]] — SDK compartilhado entre apps mobile
-- [[concepts/adapter-pattern-analytics]] — Adapter Pattern para troca de provider de analytics
-- [[concepts/native-module]] — módulo nativo React Native (iOS + Android)
-- [[concepts/monorepo-mobile]] — estrutura de monorepo para múltiplos apps mobile
-- [[concepts/analytics-pipeline]] — pipeline assíncrono de analytics
+- [[wiki/concepts/shared-sdk]] — SDK compartilhado entre apps mobile
+- [[wiki/concepts/adapter-pattern-analytics]] — Adapter Pattern para troca de provider de analytics
+- [[wiki/concepts/native-module]] — módulo nativo React Native (iOS + Android)
+- [[wiki/concepts/monorepo-mobile]] — estrutura de monorepo para múltiplos apps mobile
+- [[wiki/concepts/analytics-pipeline]] — pipeline assíncrono de analytics
 
 ## Open Questions
 

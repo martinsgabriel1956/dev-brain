@@ -33,18 +33,18 @@ Sem prática, o cérebro mantém conceitos errados junto com corretos — não t
 
 ## Ferramentas
 
-- [[concepts/spaced-repetition]] — espaçar exposição ao longo dos dias
-- [[concepts/neuroplasticidade]] — pausa ativa a reorganização neural
+- [[wiki/concepts/spaced-repetition]] — espaçar exposição ao longo dos dias
+- [[wiki/concepts/neuroplasticidade]] — pausa ativa a reorganização neural
 - Nunca copiar/colar código — redigitar manualmente força processamento real
 
 ## Ver também
 
-- [[concepts/tutorial-hell]] — armadilha oposta: consumo passivo sem prática real
-- [[concepts/principio-da-inversao]] — hábito ruim nº 7 reforça a importância da prática
+- [[wiki/concepts/tutorial-hell]] — armadilha oposta: consumo passivo sem prática real
+- [[wiki/concepts/principio-da-inversao]] — hábito ruim nº 7 reforça a importância da prática
 
 ## Key Sources
 
-- [[sources/como-aprender-programacao-3-dicas]]
-- [[sources/logica-programacao-sem-matematica]]
-- [[sources/principio-da-inversao-programador]]
-- [[sources/por-que-devs-nao-terminam-projetos]] — Kolb experiential learning: fazer → refletir → adaptar → ver [[concepts/aprendizado-por-luta]]
+- [[wiki/sources/como-aprender-programacao-3-dicas]]
+- [[wiki/sources/logica-programacao-sem-matematica]]
+- [[wiki/sources/principio-da-inversao-programador]]
+- [[wiki/sources/por-que-devs-nao-terminam-projetos]] — Kolb experiential learning: fazer → refletir → adaptar → ver [[wiki/concepts/aprendizado-por-luta]]

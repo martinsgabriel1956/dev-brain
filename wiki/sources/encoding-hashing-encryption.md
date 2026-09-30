@@ -58,10 +58,10 @@ Três conceitos frequentemente confundidos com propósitos radicalmente diferent
 
 ## Conceitos
 
-- [[concepts/encoding]]
-- [[concepts/hashing]]
-- [[concepts/encryption]]
-- [[concepts/caesar-cipher]]
+- [[wiki/concepts/encoding]]
+- [[wiki/concepts/hashing]]
+- [[wiki/concepts/encryption]]
+- [[wiki/concepts/caesar-cipher]]
 
 ---
 
@@ -74,5 +74,5 @@ Três conceitos frequentemente confundidos com propósitos radicalmente diferent
 
 ## Contradições / Tensões com o Wiki
 
-- [[sources/criptografia-fundamentos]] provavelmente cobre o mesmo terreno com mais profundidade — verificar sobreposição.
-- [[sources/autenticacao-segura]] cobre bcrypt/argon2 para senhas — complementa a seção de hashing deste source.
+- [[wiki/sources/criptografia-fundamentos]] provavelmente cobre o mesmo terreno com mais profundidade — verificar sobreposição.
+- [[wiki/sources/autenticacao-segura]] cobre bcrypt/argon2 para senhas — complementa a seção de hashing deste source.

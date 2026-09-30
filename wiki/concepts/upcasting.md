@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/dlq-event-patterns]]: [[concepts/upcasting]]
-- Em [[wiki/sources/event-versioning]]: [[concepts/upcasting]]
+- Em [[wiki/sources/dlq-event-patterns]]: [[wiki/concepts/upcasting]]
+- Em [[wiki/sources/event-versioning]]: [[wiki/concepts/upcasting]]
 
 ## Pendências
 

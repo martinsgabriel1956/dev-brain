@@ -32,4 +32,4 @@ Estado local: React Native usa `useState`/`useReducer` (hooks), Android Compose 
 
 ## Conceitos Abordados
 
-- [[concepts/mobile-state-management-local]] · [[concepts/mobile-state-management-global]] · [[concepts/mobile-layouts-responsivos]]
+- [[wiki/concepts/mobile-state-management-local]] · [[wiki/concepts/mobile-state-management-global]] · [[wiki/concepts/mobile-layouts-responsivos]]

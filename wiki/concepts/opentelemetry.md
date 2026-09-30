@@ -16,9 +16,9 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/distributed-tracing]]: [[concepts/opentelemetry]] — padrão de instrumentação
-- Em [[wiki/sources/otel-collector-sampling]]: [[concepts/opentelemetry]]
-- Em [[wiki/sources/otel-sdk]]: [[concepts/opentelemetry]]
+- Em [[wiki/sources/distributed-tracing]]: [[wiki/concepts/opentelemetry]] — padrão de instrumentação
+- Em [[wiki/sources/otel-collector-sampling]]: [[wiki/concepts/opentelemetry]]
+- Em [[wiki/sources/otel-sdk]]: [[wiki/concepts/opentelemetry]]
 
 ## Pendências
 

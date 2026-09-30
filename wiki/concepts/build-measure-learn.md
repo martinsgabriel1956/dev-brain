@@ -12,13 +12,13 @@ status: stable
 
 # Construir-Medir-Aprender
 
-Loop operacional central do [[concepts/lean-startup]]: um ciclo iterativo de três etapas que substitui "construir tudo de uma vez" por validação incremental.
+Loop operacional central do [[wiki/concepts/lean-startup]]: um ciclo iterativo de três etapas que substitui "construir tudo de uma vez" por validação incremental.
 
 ## As Três Etapas
 
 ### 1. Construir
 
-Um MVP com **uma única funcionalidade**, sem automação prematura. Exemplo: para validar assinatura de pão, o pagamento pode ser um Pix manual seguido de uma mensagem manual pro fornecedor — sem integrar gateway de pagamento. O objetivo não é ter um produto polido; é gerar aprendizado real com o menor investimento possível. → [[concepts/mvp]]
+Um MVP com **uma única funcionalidade**, sem automação prematura. Exemplo: para validar assinatura de pão, o pagamento pode ser um Pix manual seguido de uma mensagem manual pro fornecedor — sem integrar gateway de pagamento. O objetivo não é ter um produto polido; é gerar aprendizado real com o menor investimento possível. → [[wiki/concepts/mvp]]
 
 ### 2. Medir
 
@@ -32,18 +32,18 @@ Conversar diretamente com os usuários para entender os números do funil — al
 
 O aprendizado de uma iteração alimenta a próxima construção. Exemplo: se o aprendizado mostra que usuários preferem cartão de crédito a Pix, a próxima construção integra pagamento por cartão — ainda pela via mais simples possível, sem otimizar taxas nesse momento. **O dado do usuário real vale mais que a economia de centavos em taxa de gateway.**
 
-O ciclo continua até o produto ficar validado o suficiente para avançar para [[concepts/aprendizagem-validada]] (teste A/B) e fases posteriores.
+O ciclo continua até o produto ficar validado o suficiente para avançar para [[wiki/concepts/aprendizagem-validada]] (teste A/B) e fases posteriores.
 
 ## Erro Comum do Dev Emocionado
 
-Automatizar ou polir antes de validar — pular a etapa "Medir/Aprender" e ir direto para uma nova rodada de "Construir" mais elaborada. Isso é essencialmente [[concepts/scope-creep]] disfarçado de iteração.
+Automatizar ou polir antes de validar — pular a etapa "Medir/Aprender" e ir direto para uma nova rodada de "Construir" mais elaborada. Isso é essencialmente [[wiki/concepts/scope-creep]] disfarçado de iteração.
 
 ## Ver Também
 
-- [[concepts/lean-startup]] — metodologia que contém este ciclo
-- [[concepts/mvp]] — a unidade construída em cada iteração
-- [[concepts/validacao-de-problema]] — validação que precede o primeiro ciclo
+- [[wiki/concepts/lean-startup]] — metodologia que contém este ciclo
+- [[wiki/concepts/mvp]] — a unidade construída em cada iteração
+- [[wiki/concepts/validacao-de-problema]] — validação que precede o primeiro ciclo
 
 ## Key Sources
 
-- [[sources/lean-startup-para-devs-mano-deivin]]
+- [[wiki/sources/lean-startup-para-devs-mano-deivin]]

@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/concepts/ciclo-da-desgraca-software]]: [[concepts/tech-debt]] — dívida técnica como causa raiz do ciclo
-- Em [[wiki/concepts/complexidade-como-estrategia]]: [[concepts/tech-debt]] — complexidade artificial acumula como dívida técnica
+- Em [[wiki/concepts/ciclo-da-desgraca-software]]: [[wiki/concepts/tech-debt]] — dívida técnica como causa raiz do ciclo
+- Em [[wiki/concepts/complexidade-como-estrategia]]: [[wiki/concepts/tech-debt]] — complexidade artificial acumula como dívida técnica
 
 ## Pendências
 

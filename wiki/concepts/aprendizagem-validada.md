@@ -12,7 +12,7 @@ status: stable
 
 # Aprendizagem Validada
 
-Terceira fase do [[concepts/lean-startup]]. Depois de rodar alguns ciclos de [[concepts/build-measure-learn]], surgem hipóteses concorrentes que precisam ser decididas com dados, não com opinião — a ferramenta principal é o **teste A/B**.
+Terceira fase do [[wiki/concepts/lean-startup]]. Depois de rodar alguns ciclos de [[wiki/concepts/build-measure-learn]], surgem hipóteses concorrentes que precisam ser decididas com dados, não com opinião — a ferramenta principal é o **teste A/B**.
 
 ## Como Funciona
 
@@ -28,9 +28,9 @@ O ciclo Construir-Medir-Aprender já gera hipóteses ("acho que cartão converte
 
 ## Ver Também
 
-- [[concepts/build-measure-learn]] — fase anterior, que gera as hipóteses testadas aqui
-- [[concepts/contabilizacao-de-inovacao]] — próxima fase, consolidação de métricas de negócio
+- [[wiki/concepts/build-measure-learn]] — fase anterior, que gera as hipóteses testadas aqui
+- [[wiki/concepts/contabilizacao-de-inovacao]] — próxima fase, consolidação de métricas de negócio
 
 ## Key Sources
 
-- [[sources/lean-startup-para-devs-mano-deivin]]
+- [[wiki/sources/lean-startup-para-devs-mano-deivin]]

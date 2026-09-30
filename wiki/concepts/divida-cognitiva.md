@@ -74,20 +74,20 @@ A fonte original que cunha o termo prescreve três estratégias concretas de tim
 
 ## Relação com outros conceitos
 
-- [[concepts/ai-brainfry]] — ai brainfry é o efeito; dívida cognitiva é o mecanismo
-- [[concepts/vibe-coding]] — vibe coding amplifica acúmulo de dívida cognitiva
-- [[concepts/accidental-complexity]] — dívida cognitiva e complexidade acidental se retroalimentam
+- [[wiki/concepts/ai-brainfry]] — ai brainfry é o efeito; dívida cognitiva é o mecanismo
+- [[wiki/concepts/vibe-coding]] — vibe coding amplifica acúmulo de dívida cognitiva
+- [[wiki/concepts/accidental-complexity]] — dívida cognitiva e complexidade acidental se retroalimentam
 - [[concepts/llmops-observabilidade]] — observabilidade de LLMs ajuda a tornar o comportamento dos agentes mais explicável
-- [[concepts/comprehension-debt]] — faceta específica: erosão progressiva da capacidade de entender o próprio código gerado por IA
+- [[wiki/concepts/comprehension-debt]] — faceta específica: erosão progressiva da capacidade de entender o próprio código gerado por IA
 - [[wiki/concepts/teoria-do-programa-naur]] — base teórica (Peter Naur, 1985): dívida cognitiva é, na prática, a teoria do programa nunca tendo se formado ou tendo se perdido entre os membros do time
 
 ## Burnout voluntário com autonomia
 
 Mesmo o dev que tem controle total não está imune. Quando você tem 5 agentes rodando em paralelo, a tendência natural é nunca parar — e ninguém te obrigou. A autonomia que protege do chicote de produtividade pode criar burnout auto-imposto.
 
-> "Quando você vê, você não para. A chance de burnout é muito grande — e ninguém me obrigou a fazer isso." — [[sources/ia-salario-ou-carga-de-trabalho]]
+> "Quando você vê, você não para. A chance de burnout é muito grande — e ninguém me obrigou a fazer isso." — [[wiki/sources/ia-salario-ou-carga-de-trabalho]]
 
-Ver também: [[concepts/ia-como-chicote-de-produtividade]] para o contraste com o cenário de imposição.
+Ver também: [[wiki/concepts/ia-como-chicote-de-produtividade]] para o contraste com o cenário de imposição.
 
 ## Não é atrofia de sintaxe
 
@@ -99,9 +99,9 @@ Ver também: [[concepts/ia-como-chicote-de-produtividade]] para o contraste com 
 
 ## Key Sources
 
-- [[sources/divida-cognitiva-ai-brainfry]] — fonte secundária (HBR), citava Storey sem ser a fonte primária
+- [[wiki/sources/divida-cognitiva-ai-brainfry]] — fonte secundária (HBR), citava Storey sem ser a fonte primária
 - [[wiki/sources/ia-produtividade-nao-reduz-trabalho-corrida-da-ia-profecia-autorrealizavel]] — citação de segunda mão de estudo da Anthropic sobre formação de habilidade (resolve mas não articula o que fez)
-- [[sources/addy-osmani-80-problem-agentic-coding]]
-- [[sources/ia-salario-ou-carga-de-trabalho]]
+- [[wiki/sources/addy-osmani-80-problem-agentic-coding]]
+- [[wiki/sources/ia-salario-ou-carga-de-trabalho]]
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]] — distingue esquecimento de sintaxe (irrelevante) de dívida cognitiva real (perda de julgamento e capacidade de explicar decisões)
 - [[wiki/sources/cognitive-debt-margaret-storey]] — fonte primária do termo, ingerida diretamente: teoria do programa de Naur como base, e as três práticas concretas de prevenção

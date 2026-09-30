@@ -46,10 +46,10 @@ PostgreSQL é OLTP — agregações em bilhões de rows são lentas. ClickHouse 
 
 ## Mobile — Adapter Pattern
 
-No contexto mobile, o analytics pipeline começa no cliente com o [[concepts/adapter-pattern-analytics]] — um `AnalyticsService` que despacha eventos para múltiplos providers (Mixpanel, Firebase) sem acoplamento direto nos call sites.
+No contexto mobile, o analytics pipeline começa no cliente com o [[wiki/concepts/adapter-pattern-analytics]] — um `AnalyticsService` que despacha eventos para múltiplos providers (Mixpanel, Firebase) sem acoplamento direto nos call sites.
 
 ## Key Sources
 
-- [[sources/case-url-shortener]]
-- [[sources/mobile-platform-engineering]]
+- [[wiki/sources/case-url-shortener]]
+- [[wiki/sources/mobile-platform-engineering]]
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — definição didática simples de OLTP (operações rápidas do dia a dia, muita escrita e leitura pequena) vs. OLAP (consulta, agregação e exploração de grandes volumes), citada como um dos conceitos que estudar system design força a aprender

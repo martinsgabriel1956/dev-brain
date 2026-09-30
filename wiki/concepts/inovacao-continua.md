@@ -12,7 +12,7 @@ status: stable
 
 # Inovação Contínua
 
-Estágio posterior às seis fases do [[concepts/lean-startup]] — atingido por produtos que já passaram por validação, medição, aprendizagem validada, contabilização de inovação e decidiram [[concepts/pivotar-ou-perseverar|perseverar]] com sucesso sustentado.
+Estágio posterior às seis fases do [[wiki/concepts/lean-startup]] — atingido por produtos que já passaram por validação, medição, aprendizagem validada, contabilização de inovação e decidiram [[wiki/concepts/pivotar-ou-perseverar|perseverar]] com sucesso sustentado.
 
 ## O Que É
 
@@ -25,13 +25,13 @@ Manter a **essência do produto validado** intacta enquanto se adicionam novas f
 
 ## Por Que É um Privilégio Raro
 
-A maioria dos produtos não sobrevive até a fase de [[concepts/contabilizacao-de-inovacao]], quanto mais até este estágio. Chegar aqui significa que todo o ciclo de [[concepts/build-measure-learn]] já provou o modelo — a partir daí, novas apostas partem de uma base validada, reduzindo (mas não eliminando) o risco de cada nova frente.
+A maioria dos produtos não sobrevive até a fase de [[wiki/concepts/contabilizacao-de-inovacao]], quanto mais até este estágio. Chegar aqui significa que todo o ciclo de [[wiki/concepts/build-measure-learn]] já provou o modelo — a partir daí, novas apostas partem de uma base validada, reduzindo (mas não eliminando) o risco de cada nova frente.
 
 ## Ver Também
 
-- [[concepts/pivotar-ou-perseverar]] — decisão que precede este estágio
-- [[concepts/lean-startup]] — visão geral do funil completo de fases
+- [[wiki/concepts/pivotar-ou-perseverar]] — decisão que precede este estágio
+- [[wiki/concepts/lean-startup]] — visão geral do funil completo de fases
 
 ## Key Sources
 
-- [[sources/lean-startup-para-devs-mano-deivin]]
+- [[wiki/sources/lean-startup-para-devs-mano-deivin]]

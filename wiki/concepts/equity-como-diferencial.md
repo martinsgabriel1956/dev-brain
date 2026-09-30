@@ -37,5 +37,5 @@ A maioria dos sites de salário não captura equity porque a maioria dos emprego
 
 ## Key Sources
 
-- [[sources/trimodal-compensacao-tech]]
+- [[wiki/sources/trimodal-compensacao-tech]]
 - [[wiki/sources/como-eu-investiria-como-programador-ate-50000]] — estratégia prática de venda de RSU no momento do vesting

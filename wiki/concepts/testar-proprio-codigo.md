@@ -55,7 +55,7 @@ Código sem testes de erro não está pronto — ver [[definicao-de-pronto]].
 
 Usuários não seguem o fluxo esperado. Eles digitam emoji em campos de nome, submetem formulários 50x porque a resposta demorou 0.2s, colam SQL injection em campos de texto, e usam browsers que você nunca testou. Cada suposição sobre comportamento do usuário é um test case que falta.
 
-> "O impossível se torna possível no segundo em que alguém começa a digitar." — [[sources/5-principios-programador]]
+> "O impossível se torna possível no segundo em que alguém começa a digitar." — [[wiki/sources/5-principios-programador]]
 
 ## Testar além do happy path não garante ausência de bug
 
@@ -64,6 +64,6 @@ Mesmo cobrindo erros e edge cases previstos, teste nenhum garante que não exist
 ## Key Sources
 
 - [[wiki/sources/habitos-ruins-de-programador]]
-- [[sources/5-principios-programador]]
+- [[wiki/sources/5-principios-programador]]
 - [[wiki/sources/4-habitos-programador-ineficiente]]
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — teste não previne bug não-imaginado, só regressão do que já foi pensado

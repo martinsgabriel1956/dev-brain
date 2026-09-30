@@ -45,16 +45,16 @@ Cada camada assume que a anterior pode falhar: mesmo que o agente escape da cela
 
 ## Relação com os Padrões de Segurança
 
-- [[concepts/gatekeeper-pattern]] — implementa a camada de borda (API Gateway)
-- [[concepts/waf]] — camada antes do gateway (borda de rede)
-- [[concepts/token-relay-pattern]] — garante que identidade e autorização persistam em todas as camadas internas
-- [[concepts/valet-key-pattern]] — aplica least privilege na camada de credenciais
+- [[wiki/concepts/gatekeeper-pattern]] — implementa a camada de borda (API Gateway)
+- [[wiki/concepts/waf]] — camada antes do gateway (borda de rede)
+- [[wiki/concepts/token-relay-pattern]] — garante que identidade e autorização persistam em todas as camadas internas
+- [[wiki/concepts/valet-key-pattern]] — aplica least privilege na camada de credenciais
 - [[wiki/concepts/hardening-de-servidor]] — camada de infraestrutura (SO/serviço), fora da pilha de aplicação listada acima
 
 ## Key Sources
 
 - [[wiki/sources/secure-design-patterns]] — 7 padrões de design seguro: Defense in Depth (múltiplas camadas independentes), Least Privilege (permissão mínima necessária), Secure Defaults (configuração padrão é segura), Fail Secure/Closed...
-- [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
-- [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — as 5 práticas do Pragmatic Programmer como instâncias de camadas de defense in depth
+- [[wiki/sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
+- [[wiki/sources/cinco-praticas-seguranca-pragmatic-programmer]] — as 5 práticas do Pragmatic Programmer como instâncias de camadas de defense in depth
 - [[wiki/sources/ssh-chaves-como-funcionam]] — hardening de SSH como exemplo de camada de infraestrutura
 - [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — modelo de três camadas (sessão/AI Jail, código/Git, SO imutável) contra agentes de IA comprometidos

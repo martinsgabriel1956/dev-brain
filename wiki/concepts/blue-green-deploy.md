@@ -55,15 +55,15 @@ spec:
 ## Quando Evitar
 
 - Budget restrito — custo dobra durante o deploy
-- Migrations de DB que não são backward compatible — [[concepts/expand-contract]] é obrigatório
+- Migrations de DB que não são backward compatible — [[wiki/concepts/expand-contract]] é obrigatório
 
 ## Comparativo
 
-→ [[concepts/deploy-strategies]]
+→ [[wiki/concepts/deploy-strategies]]
 
 ## Por que o rollback é tão rápido
 
-A versão antiga (Blue) continua de pé, rodando em paralelo, mesmo depois do swap — rollback é literalmente redirecionar o tráfego de volta, sem precisar reverter código nem refazer deploy. Essa é a vantagem central que o distingue do [[concepts/rolling-update]] (rollback lento, pod a pod) e justifica pagar o custo de 2x infraestrutura durante a janela de transição.
+A versão antiga (Blue) continua de pé, rodando em paralelo, mesmo depois do swap — rollback é literalmente redirecionar o tráfego de volta, sem precisar reverter código nem refazer deploy. Essa é a vantagem central que o distingue do [[wiki/concepts/rolling-update]] (rollback lento, pod a pod) e justifica pagar o custo de 2x infraestrutura durante a janela de transição.
 
 ## Blue/Green num Host Único (sem Kubernetes)
 
@@ -71,6 +71,6 @@ O mesmo conceito — duas versões vivas em paralelo, troca atômica de roteamen
 
 ## Key Sources
 
-- [[sources/blue-green-canary-rolling]]
-- [[sources/tipos-de-deploy]]
+- [[wiki/sources/blue-green-canary-rolling]]
+- [[wiki/sources/tipos-de-deploy]]
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]] — demo prática em VPS única, sem Kubernetes: Nginx como reverse proxy trocando entre duas portas via script

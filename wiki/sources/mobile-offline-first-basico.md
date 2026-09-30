@@ -32,4 +32,4 @@ Offline-first: mostrar dados em cache imediatamente, buscar atualização em bac
 
 ## Conceitos Abordados
 
-- [[concepts/mobile-offline-first-basico]] · [[concepts/mobile-offline-first-avancado]] · [[concepts/mobile-armazenamento-local]] · [[concepts/mobile-chamadas-http]]
+- [[wiki/concepts/mobile-offline-first-basico]] · [[wiki/concepts/mobile-offline-first-avancado]] · [[wiki/concepts/mobile-armazenamento-local]] · [[wiki/concepts/mobile-chamadas-http]]

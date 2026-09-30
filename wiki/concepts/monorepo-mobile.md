@@ -49,10 +49,10 @@ Monorepo quando os apps são mantidos pelo mesmo time e compartilham UI. Repos s
 
 ## Relacionado
 
-- [[concepts/shared-sdk]] — packages do monorepo formam o shared SDK
+- [[wiki/concepts/shared-sdk]] — packages do monorepo formam o shared SDK
 - [[wiki/concepts/monorepo-vs-microfrontends-ia]] — mesmo trade-off (compartilhamento vs. blast radius) discutido sob a ótica de contexto de agentes de IA no frontend web
 
 ## Key Sources
 
-- [[sources/mobile-platform-engineering]]
+- [[wiki/sources/mobile-platform-engineering]]
 - [[wiki/sources/impacto-ia-mercado-frontend]]

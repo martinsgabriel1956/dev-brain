@@ -79,7 +79,7 @@ Arquitetura por camada (horizontal) obriga o agente a abrir 7–13 arquivos para
 | "Troque o banco de users" | refatorar tudo | criar novo adapter + trocar uma linha |
 | Contexto necessário | Alto | Baixo e localizado |
 
-Ver [[concepts/codebase-legibilidade-ia]] para o princípio geral.
+Ver [[wiki/concepts/codebase-legibilidade-ia]] para o princípio geral.
 
 ## Relação com Clean Architecture
 
@@ -136,8 +136,8 @@ it("should throw when email already exists", async () => {
 
 - [[wiki/sources/micro-kernel]] — Micro-Kernel Architecture: core system mínimo + plugins que estendem funcionalidade. Core define o contrato (interface/API) que plugins implementam. Registry gerencia plugins dinamicamente. Usado em:...
 - [[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] — distinção entre adapters contextuais (não reusáveis) e infraestrutura pura (reusável entre módulos)
-- [[sources/hexagonal-architecture]] — referência técnica aprofundada (Alistair Cockburn, driving/driven ports)
-- [[sources/ports-and-adapters-codebase-para-ia]] — antes/depois com exemplo de blog + ângulo de IA
+- [[wiki/sources/hexagonal-architecture]] — referência técnica aprofundada (Alistair Cockburn, driving/driven ports)
+- [[wiki/sources/ports-and-adapters-codebase-para-ia]] — antes/depois com exemplo de blog + ângulo de IA
 - [[wiki/sources/mappers-conversao-entre-camadas]] — mapper como peça dentro do adapter de persistência
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — equivalência Input/Output Boundary ↔ Driving/Driven Port
 - [[wiki/sources/clean-architecture-arquitetura-centrada-no-dominio]] — mesmo mecanismo (camada interna define interface, camada externa implementa) explicado via contraste com a arquitetura em 3 camadas

@@ -67,25 +67,25 @@ Observabilidade madura. Sem métricas confiáveis, análise automática não fun
 
 ## Tráfego Misto
 
-v1 e v2 servem ao mesmo tempo. API e DB schema **devem** ser backward compatible. → [[concepts/expand-contract]]
+v1 e v2 servem ao mesmo tempo. API e DB schema **devem** ser backward compatible. → [[wiki/concepts/expand-contract]]
 
 ## Canary Deployment vs. Canary Release (feature flag)
 
-Existe uma segunda forma de "Canary" que não é essa estratégia de infraestrutura: em vez de duas instâncias, você segrega usuários em grupos e mostra uma feature escondida atrás de uma [[concepts/feature-flags|feature flag]] para uma fração deles. Tecnicamente isso é um **release** gradual, não um **deploy** gradual — ver [[concepts/deploy-vs-release]]. O termo "Canary deployment" tradicionalmente se refere à versão com instâncias/tráfego separado descrita acima.
+Existe uma segunda forma de "Canary" que não é essa estratégia de infraestrutura: em vez de duas instâncias, você segrega usuários em grupos e mostra uma feature escondida atrás de uma [[wiki/concepts/feature-flags|feature flag]] para uma fração deles. Tecnicamente isso é um **release** gradual, não um **deploy** gradual — ver [[wiki/concepts/deploy-vs-release]]. O termo "Canary deployment" tradicionalmente se refere à versão com instâncias/tráfego separado descrita acima.
 
 A Meta aplica exatamente essa mesma lógica de rollout escalonado (funcionários → fração pequena de tráfego → 100%) tanto no nível de deploy de código quanto no de feature flag (via seu sistema interno Gatekeeper) — ver caso real em [[wiki/sources/rapid-release-at-massive-scale-facebook]].
 
 ## Canary vs. A/B Testing
 
-Mecanicamente parecido (split de tráfego por percentual), mas o objetivo é diferente: Canary reduz **risco técnico** (a v2 quebra alguma coisa?); [[concepts/ab-testing-deployment]] valida **hipótese de negócio** (a v2 vende/converte mais?). Ver essa página para o comparativo completo.
+Mecanicamente parecido (split de tráfego por percentual), mas o objetivo é diferente: Canary reduz **risco técnico** (a v2 quebra alguma coisa?); [[wiki/concepts/ab-testing-deployment]] valida **hipótese de negócio** (a v2 vende/converte mais?). Ver essa página para o comparativo completo.
 
 ## Comparativo
 
-→ [[concepts/deploy-strategies]]
+→ [[wiki/concepts/deploy-strategies]]
 
 ## Key Sources
 
-- [[sources/blue-green-canary-rolling]]
-- [[sources/tipos-de-deploy]]
+- [[wiki/sources/blue-green-canary-rolling]]
+- [[wiki/sources/tipos-de-deploy]]
 - [[wiki/sources/rapid-release-at-massive-scale-facebook]] — caso real (Meta/Facebook) de rollout escalonado em escala massiva
 - [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — cita o caso da Meta de segunda mão, como ilustração didática da distinção deploy/release

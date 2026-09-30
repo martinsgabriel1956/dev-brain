@@ -3,8 +3,8 @@ type: concept
 title: "Failover"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-22
-source_count: 2
+date_updated: 2026-09-30
+source_count: 3
 tags: [failover]
 skill: tech-mentor-system-design
 status: stub
@@ -27,3 +27,4 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 
 - [[wiki/sources/dns]]
 - [[wiki/sources/multi-region-global-lb]]
+- [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] — fallback entre provedores de LLM na OpenRouter; pool de ≥3

@@ -19,8 +19,8 @@ Frederick P. Brooks Jr. (1931–2022) — cientista da computação americano, g
 **"The Mythical Man-Month" (1975)** — argumenta que adicionar pessoas a um projeto de software atrasado o atrasa ainda mais (Lei de Brooks). Conceitos de comunicação exponencial e integridade conceitual de sistema.
 
 **"No Silver Bullet — Essence and Accident in Software Engineering" (1986)** — artigo seminal que introduz a distinção entre:
-- [[concepts/essential-complexity]] — inerente ao problema, não pode ser eliminada
-- [[concepts/accidental-complexity]] — introduzida pelo time, pode e deve ser eliminada
+- [[wiki/concepts/essential-complexity]] — inerente ao problema, não pode ser eliminada
+- [[wiki/concepts/accidental-complexity]] — introduzida pelo time, pode e deve ser eliminada
 
 Argumento central: não existe bala de prata em software porque a maior parte da dificuldade é complexidade essencial — nenhuma linguagem, ferramenta ou metodologia pode remover o que é inerente ao domínio.
 
@@ -36,8 +36,8 @@ Argumento central: não existe bala de prata em software porque a maior parte da
 
 ## Relação com outros conceitos
 
-- [[concepts/accidental-complexity]] — conceito cunhado por Brooks
-- [[concepts/essential-complexity]] — conceito cunhado por Brooks
+- [[wiki/concepts/accidental-complexity]] — conceito cunhado por Brooks
+- [[wiki/concepts/essential-complexity]] — conceito cunhado por Brooks
 - [[concepts/ddd-strategic]] — DDD é uma metodologia para lidar com complexidade essencial de domínio
 
 ## Citação em Vídeo sobre o Dev na Era da IA
@@ -50,7 +50,7 @@ Verbete próprio: [[wiki/concepts/lei-de-brooks]]. [[wiki/sources/times-menores-
 
 ## Key Sources
 
-- [[sources/conceitos-que-ninguem-ensina]]
+- [[wiki/sources/conceitos-que-ninguem-ensina]]
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]
 - [[wiki/sources/cognitive-debt-margaret-storey]] — coordenação/sobrecarga cognitiva aplicada a agentes de IA
 - [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — citado sem obra/frase especificada

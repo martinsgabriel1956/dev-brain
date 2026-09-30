@@ -48,11 +48,11 @@ Um agente é um LLM em loop: decide, age via tools, observa resultado, itera. A 
 ## Entities & Concepts Touched
 
 - [[concepts/react-pattern]]
-- [[concepts/tool-use-agents]]
-- [[concepts/human-in-the-loop]]
+- [[wiki/concepts/tool-use-agents]]
+- [[wiki/concepts/human-in-the-loop]]
 - [[concepts/agent-scaffolding]]
-- [[concepts/computer-use]]
-- [[concepts/prompt-injection]]
+- [[wiki/concepts/computer-use]]
+- [[wiki/concepts/prompt-injection]]
 
 ## Open Questions
 

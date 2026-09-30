@@ -3,8 +3,8 @@ type: entity
 title: "Hermes Agent"
 aliases: ["Hermes", "hermes.md"]
 date_created: 2026-07-21
-date_updated: 2026-07-21
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [tech-mentor-ai, hermes-agent, agent-memory, learning-loop, open-source, mit]
 skill: tech-mentor-ai
 status: stub
@@ -21,3 +21,4 @@ Segundo [[wiki/sources/hermes-agent-open-claw-learning-loop]], liderou o ranking
 ## Key Sources
 
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]]
+- [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] — exemplo de agente cuja qualidade oscila quando o roteamento cai em provedor de quantização menor

@@ -12,7 +12,7 @@ status: stable
 
 # Database Transactions
 
-Mecanismo que garante que operações dependentes ocorram como uma unidade atômica. → [[concepts/acid]]
+Mecanismo que garante que operações dependentes ocorram como uma unidade atômica. → [[wiki/concepts/acid]]
 
 ## Problema sem transação
 
@@ -34,7 +34,7 @@ await db.$transaction(async tx => {
 
 ## Regra
 
-Toda operação Prisma com dependência entre queries **deve** usar `$transaction`. Sem isso, qualquer falha parcial deixa o banco em estado inválido — viola Atomicity do [[concepts/acid]].
+Toda operação Prisma com dependência entre queries **deve** usar `$transaction`. Sem isso, qualquer falha parcial deixa o banco em estado inválido — viola Atomicity do [[wiki/concepts/acid]].
 
 ## Por Que É Difícil de Reimplementar
 
@@ -54,7 +54,7 @@ Uma transação de banco de dados garante atomicidade **apenas entre operações
 
 ## Key Sources
 
-- [[sources/banco-de-dados]]
+- [[wiki/sources/banco-de-dados]]
 - [[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] — por que uma transação de banco não garante atomicidade sobre uma chamada externa (Kafka, serviço de terceiros)
 - [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]] — mesmo exemplo de Pix (débito/crédito) para atomicidade, com o mecanismo de WAL por trás do commit
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]

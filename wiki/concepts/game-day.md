@@ -26,8 +26,8 @@ Exercício planejado onde a equipe simula falhas em staging para validar runbook
 
 ## Resultado Esperado
 
-- [[concepts/runbook]] atualizado com gaps descobertos
-- Time treinado para executar o fluxo de [[concepts/incident-lifecycle]] sob pressão simulada
+- [[wiki/concepts/runbook]] atualizado com gaps descobertos
+- Time treinado para executar o fluxo de [[wiki/concepts/incident-lifecycle]] sob pressão simulada
 - SLOs validados contra falhas reais (não apenas teóricas)
 - Confiança → escalona menos, resolve mais rápido
 
@@ -37,4 +37,4 @@ Game Day é chaos engineering com escopo controlado e objetivo definido. Chaos e
 
 ## Key Sources
 
-- [[sources/sre-error-budget-incidents]]
+- [[wiki/sources/sre-error-budget-incidents]]

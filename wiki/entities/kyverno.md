@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/devsecops-pipeline]]: [[entities/kyverno]]
-- Em [[wiki/sources/policy-as-code]]: [[entities/kyverno]]
+- Em [[wiki/sources/devsecops-pipeline]]: [[wiki/entities/kyverno]]
+- Em [[wiki/sources/policy-as-code]]: [[wiki/entities/kyverno]]
 
 ## Pendências
 

@@ -65,10 +65,10 @@ O pipeline acima descreve transcodificação de **VOD** (vídeo já gravado, dis
 
 ## Relacionado
 
-[[concepts/media-upload-pattern]] — upload direto para S3 sem passar pelo backend.
+[[wiki/concepts/media-upload-pattern]] — upload direto para S3 sem passar pelo backend.
 
 ## Key Sources
 
-- [[sources/case-youtube-streaming]]
+- [[wiki/sources/case-youtube-streaming]]
 - [[wiki/sources/historia-dos-formatos-de-imagem]]
 - [[wiki/sources/delay-tv-aberta-vs-youtube-live-latencia-streaming]] — transcodificação em contexto de live streaming (vs. VOD) e contraste com TV aberta

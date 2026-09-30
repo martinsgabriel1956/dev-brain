@@ -32,4 +32,4 @@ Taxonomia de Gerard Meszaros (xUnit Test Patterns, 2007): Dummy, Stub, Fake, Spy
 
 ## Conceitos Abordados
 
-- [[concepts/test-doubles]] · [[concepts/tdd]] · [[concepts/piramide-de-testes]] · [[concepts/contract-testing]]
+- [[wiki/concepts/test-doubles]] · [[wiki/concepts/tdd]] · [[wiki/concepts/piramide-de-testes]] · [[wiki/concepts/contract-testing]]

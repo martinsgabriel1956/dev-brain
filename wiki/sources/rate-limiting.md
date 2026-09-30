@@ -33,10 +33,10 @@ Rate Limiting protege APIs de abuso e sobrecarga. Quatro algoritmos: Fixed Windo
 
 ## Conceitos
 
-- [[concepts/rate-limiting]] — algoritmos e implementação
-- [[concepts/idempotencia]] — cliente que respeita rate limit retenta com mesmo key
-- [[concepts/cache-hot-path]] — Redis como storage dos contadores
-- [[concepts/load-balancer]] — rate limiting pode ser feito no LB (ex: nginx)
+- [[wiki/concepts/rate-limiting]] — algoritmos e implementação
+- [[wiki/concepts/idempotencia]] — cliente que respeita rate limit retenta com mesmo key
+- [[wiki/concepts/cache-hot-path]] — Redis como storage dos contadores
+- [[wiki/concepts/load-balancer]] — rate limiting pode ser feito no LB (ex: nginx)
 
 ## Key Sources
 

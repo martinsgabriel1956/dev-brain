@@ -38,10 +38,10 @@ Strategic Design define os limites do domínio (Bounded Contexts) e como eles se
 
 ## Entities & Concepts Touched
 
-- [[concepts/bounded-context]]
-- [[concepts/ubiquitous-language]]
-- [[concepts/context-map]]
-- [[concepts/anti-corruption-layer]]
+- [[wiki/concepts/bounded-context]]
+- [[wiki/concepts/ubiquitous-language]]
+- [[wiki/concepts/context-map]]
+- [[wiki/concepts/anti-corruption-layer]]
 - [[concepts/event-storming]]
 - [[concepts/ddd-tactical]]
 

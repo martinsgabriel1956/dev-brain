@@ -32,4 +32,4 @@ Documentação gerada automaticamente a partir do código ou testes — nunca fi
 
 ## Conceitos Abordados
 
-- [[concepts/living-documentation]] · [[concepts/bdd]] · [[concepts/tdd]] · [[concepts/contract-testing]]
+- [[wiki/concepts/living-documentation]] · [[wiki/concepts/bdd]] · [[wiki/concepts/tdd]] · [[wiki/concepts/contract-testing]]

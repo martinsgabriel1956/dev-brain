@@ -44,12 +44,12 @@ Context Engineering é a disciplina de gerenciar o que entra na context window p
 ## Entities & Concepts Touched
 
 - [[concepts/context-engineering]]
-- [[concepts/prompt-caching]]
+- [[wiki/concepts/prompt-caching]]
 - [[concepts/lost-in-the-middle]]
 - [[concepts/sliding-window-context]]
 - [[concepts/token-budget]]
 - [[concepts/rag-retrieval]]
-- [[concepts/semantic-cache]]
+- [[wiki/concepts/semantic-cache]]
 
 ## Open Questions
 

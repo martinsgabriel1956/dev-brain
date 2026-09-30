@@ -12,7 +12,7 @@ status: stub
 
 # Disquete (Floppy Disk)
 
-Armazenamento **magnético** (mesmo princípio do [[concepts/hd-disco-rigido]]): um disco flexível dentro de uma capa plástica. Popular dos anos 70 ao começo dos anos 2000; os modelos comuns guardavam apenas **1,44 MB**.
+Armazenamento **magnético** (mesmo princípio do [[wiki/concepts/hd-disco-rigido]]): um disco flexível dentro de uma capa plástica. Popular dos anos 70 ao começo dos anos 2000; os modelos comuns guardavam apenas **1,44 MB**.
 
 Foi o padrão para instalar programas e guardar documentos antes do pen drive e da nuvem. Hoje é obsoleto, mas sobrevive na cultura pop — é o famoso **ícone de "salvar"**.
 

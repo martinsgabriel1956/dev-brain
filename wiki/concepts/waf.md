@@ -23,7 +23,7 @@ Filtro de borda que inspeciona e bloqueia tráfego HTTP malicioso antes de chega
 
 ## Diferença vs. Gatekeeper
 
-| | WAF | [[concepts/gatekeeper-pattern]] |
+| | WAF | [[wiki/concepts/gatekeeper-pattern]] |
 |---|---|---|
 | Nível de operação | Rede / HTTP | Aplicação |
 | Conhece o usuário? | Não | Sim |
@@ -31,7 +31,7 @@ Filtro de borda que inspeciona e bloqueia tráfego HTTP malicioso antes de chega
 | Aplica autorização? | Não | Sim |
 | Bloqueia ataques HTTP? | Sim | Depende da impl. |
 
-O WAF complementa o Gatekeeper mas não o substitui. São camadas independentes de [[concepts/defense-in-depth]].
+O WAF complementa o Gatekeeper mas não o substitui. São camadas independentes de [[wiki/concepts/defense-in-depth]].
 
 ## Estar na frente não é suficiente — o caso do modo Under Attack
 
@@ -66,8 +66,8 @@ Um WAF inspeciona tráfego HTTP entre cliente e servidor — não tem visibilida
 ## Key Sources
 
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — WAF na lista de estudo; DDoS delegado à borda
-- [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
-- [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — WAF como complemento ao SAST: SAST age no dev, WAF age em produção
+- [[wiki/sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
+- [[wiki/sources/cinco-praticas-seguranca-pragmatic-programmer]] — WAF como complemento ao SAST: SAST age no dev, WAF age em produção
 - [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]] — Under Attack Mode desativado como falha real de configuração, não do produto
 - [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — 157 tentativas maliciosas bloqueadas, mesma origem, momento anterior ao incidente
 - [[wiki/sources/xss-cross-site-scripting-luiz-viana]] — DOM-based XSS como caso onde o WAF não tem visibilidade, porque o payload nunca é enviado ao servidor

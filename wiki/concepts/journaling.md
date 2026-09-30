@@ -16,7 +16,7 @@ Mecanismo que registra as mudanças pendentes num log (o "journal") antes de apl
 
 ## O problema que resolve
 
-Uma escrita em disco não é atômica — envolve múltiplos passos (atualizar dados, atualizar metadados, atualizar a tabela de alocação). Se o sistema travar ou perder energia no meio desse processo, o [[concepts/sistema-de-arquivos]] pode ficar num estado inconsistente: metadado aponta para blocos que não foram escritos, ou vice-versa. Isso é corrupção de dados.
+Uma escrita em disco não é atômica — envolve múltiplos passos (atualizar dados, atualizar metadados, atualizar a tabela de alocação). Se o sistema travar ou perder energia no meio desse processo, o [[wiki/concepts/sistema-de-arquivos]] pode ficar num estado inconsistente: metadado aponta para blocos que não foram escritos, ou vice-versa. Isso é corrupção de dados.
 
 ## Como funciona
 
@@ -32,7 +32,7 @@ Isso reduz drasticamente as chances de corrupção — não elimina, mas transfo
 
 | Com journaling | Sem journaling |
 |---|---|
-| [[concepts/ntfs]], HFS+, [[concepts/ext4]] (e ext3), [[concepts/zfs]] (via ZIL) | FAT12/16/[[concepts/fat32\|32]], [[concepts/exfat]], ext2, HFS (original) |
+| [[wiki/concepts/ntfs]], HFS+, [[wiki/concepts/ext4]] (e ext3), [[wiki/concepts/zfs]] (via ZIL) | FAT12/16/[[wiki/concepts/fat32\|32]], [[wiki/concepts/exfat]], ext2, HFS (original) |
 
 exFAT é o caso notável de trade-off deliberado: mantém a simplicidade do FAT em troca de não ter journaling, mesmo suportando arquivos gigantes como o NTFS.
 
@@ -42,8 +42,8 @@ Journaling não é grátis — cada escrita lógica vira (pelo menos) duas escri
 
 ## Ver também
 
-- [[concepts/sistema-de-arquivos]] — onde o journaling se encaixa na pilha do SO
-- [[concepts/database-transactions]] — o mesmo princípio de write-ahead log aparece em bancos de dados (WAL)
+- [[wiki/concepts/sistema-de-arquivos]] — onde o journaling se encaixa na pilha do SO
+- [[wiki/concepts/database-transactions]] — o mesmo princípio de write-ahead log aparece em bancos de dados (WAL)
 
 ## Key Sources
 

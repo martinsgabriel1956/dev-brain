@@ -4,7 +4,7 @@ title: "Equipe Mista Sênior-Júnior"
 aliases: ["time misto", "pedreiro vs mestre de obras", "mix de senioridade"]
 date_created: 2026-08-26
 date_updated: 2026-09-30
-source_count: 4
+source_count: 5
 tags: [carreira, liderança, mentoria, contratação, senioridade, time]
 skill: tech-mentor-leadership
 status: stub
@@ -53,3 +53,4 @@ Num time misto o sênior é procurado com frequência; [[wiki/sources/como-fazer
 - [[wiki/sources/sobre-ser-gerente-fabio-akita]] — ciclo de sucessão (sênior cria sucessor antes de assumir novo projeto); crítica à terceirização como primeira opção; analogia esportiva de rotação de reservas
 - [[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] — interrupção do sênior e regra de pedir ajuda pelo júnior
 - [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]
+- [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — duplas no mesmo ticket: mesma stack e sintaxe, mas decisões e legibilidade diferem entre júnior e pleno

@@ -122,7 +122,7 @@ Ver também: o mesmo capítulo cunha explicitamente o termo **"technical debt"**
 
 ## Relacionado
 
-[[concepts/observabilidade]] · [[sources/conceitos-que-ninguem-ensina]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/avaliar-hype-tecnologico]] · [[wiki/concepts/divida-cognitiva]] · [[wiki/concepts/debt-ratio-sqale]] · [[wiki/concepts/hotspot-analysis]] · [[wiki/concepts/paid-framework]] · [[wiki/concepts/refactor-vs-rewrite-matrix]] · [[wiki/concepts/developers-not-writing-tests]]
+[[wiki/concepts/observabilidade]] · [[wiki/sources/conceitos-que-ninguem-ensina]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/avaliar-hype-tecnologico]] · [[wiki/concepts/divida-cognitiva]] · [[wiki/concepts/debt-ratio-sqale]] · [[wiki/concepts/hotspot-analysis]] · [[wiki/concepts/paid-framework]] · [[wiki/concepts/refactor-vs-rewrite-matrix]] · [[wiki/concepts/developers-not-writing-tests]]
 
 ## Ciclos Mais Curtos Como Gatilho Para Alocar Tempo a Débito Técnico
 
@@ -142,7 +142,7 @@ Ver também: o mesmo capítulo cunha explicitamente o termo **"technical debt"**
 - [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] — "build for rebuilding": reconstrução iterativa deliberada como estratégia, não falha de planejamento
 - [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] — ciclos de sprint mais curtos via IA liberando tempo para débito técnico e quality gates; proposta de sprint dedicada a débito técnico como contrapartida ao ganho de velocidade
 - [[wiki/sources/arquitetura-de-sacrificio]] — arquitetura de sacrifício = dívida assumida *deliberadamente*, com plano de substituição, sem abrir mão da qualidade interna
-- [[sources/5-principios-programador]]
+- [[wiki/sources/5-principios-programador]]
 - [[wiki/sources/5-principles-that-changed-me-as-a-programmer]]
 - [[wiki/sources/5-principios-que-mudaram-como-programador]]
 - [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]]

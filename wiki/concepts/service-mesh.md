@@ -29,7 +29,7 @@ Com mesh:  Serviço A (só código) → [Proxy A] ↔ [Proxy B] → Serviço B (
                                    Control Plane (Istiod)
 ```
 
-Ver [[concepts/sidecar-pattern]] para o mecanismo de injeção de proxy.
+Ver [[wiki/concepts/sidecar-pattern]] para o mecanismo de injeção de proxy.
 
 ## Istio vs Linkerd
 
@@ -64,9 +64,9 @@ Kiali visualiza o service graph com taxas de erro por link e status mTLS em temp
 
 ## Conceitos Relacionados
 
-[[concepts/sidecar-pattern]] · [[concepts/mtls]] · [[concepts/fault-injection]] · [[concepts/ambient-mesh]] · [[concepts/circuit-breaker]] · [[concepts/canary-release]]
+[[wiki/concepts/sidecar-pattern]] · [[wiki/concepts/mtls]] · [[wiki/concepts/fault-injection]] · [[wiki/concepts/ambient-mesh]] · [[wiki/concepts/circuit-breaker]] · [[wiki/concepts/canary-release]]
 
 ## Key Sources
 
 - [[wiki/sources/grpc]] — gRPC usa HTTP/2 + Protobuf para comunicação entre serviços. Schema-first via `.proto`. 4 padrões de comunicação: Unary, Server Streaming, Client Streaming, Bidirectional Streaming. Vantagens vs REST:...
-- [[sources/service-mesh]]
+- [[wiki/sources/service-mesh]]

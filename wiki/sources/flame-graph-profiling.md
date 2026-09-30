@@ -34,14 +34,14 @@ status: stable
 
 ## Entities & Concepts Touched
 
-- [[concepts/flame-graph]]
-- [[concepts/use-method]]
-- [[concepts/red-method]]
-- [[concepts/four-golden-signals]]
+- [[wiki/concepts/flame-graph]]
+- [[wiki/concepts/use-method]]
+- [[wiki/concepts/red-method]]
+- [[wiki/concepts/four-golden-signals]]
 - [[concepts/cpu-profiling]]
 - [[entities/pprof]]
-- [[entities/clinic-js]]
-- [[concepts/sre]]
+- [[wiki/entities/clinic-js]]
+- [[wiki/concepts/sre]]
 
 ## Open Questions
 

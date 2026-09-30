@@ -34,7 +34,7 @@ RAM é 1000× mais rápida que SSD; SSD é 100× mais rápido que HDD. Redis ~0.
 
 - [[latencia]]
 - [[hierarquia-de-memoria]]
-- [[concepts/back-of-envelope]]
-- [[concepts/cache]]
-- [[concepts/mensageria]]
+- [[wiki/concepts/back-of-envelope]]
+- [[wiki/concepts/cache]]
+- [[wiki/concepts/mensageria]]
 - [[critical-path]]

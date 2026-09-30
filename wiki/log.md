@@ -12471,3 +12471,74 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (16):** [[wiki/concepts/processamento-assincrono]] (stub → draft), [[wiki/concepts/mensageria]], [[wiki/concepts/eventual-consistency]], [[wiki/concepts/event-driven-architecture]], [[wiki/concepts/acoplamento]], [[wiki/concepts/temporal-coupling]], [[wiki/concepts/microsservicos]], [[wiki/concepts/cqrs]], [[wiki/concepts/event-sourcing]], [[wiki/concepts/observabilidade]], [[wiki/concepts/distributed-tracing]], [[wiki/concepts/tolerancia-a-falha]], [[wiki/concepts/buffer]], [[wiki/concepts/websocket-vs-polling]], [[wiki/concepts/kafka]], [[wiki/entities/rabbitmq]], [[wiki/entities/bernardo-lobato]] — seção nova + Key sources + bump de `source_count`/`date_updated`.
 
 **Notas:** (1) Sem contradições com a wiki; reforça [[wiki/concepts/temporal-coupling]] e a tabela síncrono/assíncrono da skill. (2) Ressalvas adicionadas: "acoplamento fraco" vale no eixo temporal (o contrato da mensagem continua acoplando); "como se nada tivesse acontecido" omite duplicatas/reprocessamento (exige consumidor idempotente); o vídeo não cita outbox/dual write. (3) A afirmação de que brokers não garantem entrega "por padrão" é genérica e não foi verificada por broker. (4) Cinco conceitos novos são stubs/draft: a fonte só os apresenta em alto nível; definições extras vêm da skill e estão marcadas. (5) Vídeos prometidos sobre comunicação síncrona e mensageria não estão na wiki. (6) Pedidos de like/inscrição tratados como engajamento, sem valor técnico.
+
+
+---
+
+## [2026-09-30] ingest | Como Estudar System Design — Building Blocks e o Caso Instagram Simplificado
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/como-estudar-system-design-building-blocks-instagram-simplificado.md` (já em português; sem tradução). Autor/canal não identificados na transcrição. Erros de reconhecimento de fala corrigidos por contexto e listados no cabeçalho do raw (ex.: "Hate Limiter" → Rate Limiter, "sharing" → sharding, "Ritmkill" → RabbitMQ, "DDS" → DDoS); cinco trechos ambíguos sinalizados com [?].
+
+**Skill:** tech-mentor-system-design (SKILL.md + `references/system-design.md`; skill em `~/.claude-personal/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]], [[wiki/concepts/building-blocks-system-design]], [[wiki/concepts/design-em-camadas]], [[wiki/concepts/treino-system-design-por-cenarios]]
+
+**Tocadas (15):** [[wiki/concepts/load-balancer]], [[wiki/concepts/cdn]], [[wiki/concepts/cache]], [[wiki/concepts/rate-limiting]], [[wiki/concepts/filas-e-workers]], [[wiki/concepts/read-replicas]], [[wiki/concepts/sharding]], [[wiki/concepts/gargalo]], [[wiki/concepts/amazon-s3]], [[wiki/concepts/redis]], [[wiki/concepts/postgresql]], [[wiki/concepts/ttl]], [[wiki/entities/rabbitmq]], [[wiki/concepts/entrevista-system-design]], [[wiki/concepts/processamento-assincrono]] — seção nova + Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** (1) Sem contradições com a wiki; reforça a regra de ouro de [[wiki/concepts/gargalo]] e a escada cache → réplicas → sharding. (2) Lacunas do vídeo frente à skill/wiki: não cobre esclarecimento de requisitos nem estimativas de capacidade; não discute replication lag, LB como ponto único de falha, limites de rate limit só por IP, stampede/invalidação de cache, idempotência do worker. (3) Os três conceitos novos são draft/stubs; extensões vindas da skill estão marcadas `[skill]`. (4) Afirmações sobre como Instagram/Twitter tratam uploads não foram verificadas. (5) Pedidos de like/inscrição/comentário tratados como engajamento, sem valor técnico.
+
+---
+
+## [2026-09-30] ingest | CQRS — Desbalanço Leitura/Escrita, Banco de Leitura e Sincronização por Eventos
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos.md` (já em português; sem tradução). Autor/canal não identificados. Erros de reconhecimento de fala corrigidos por contexto e listados no cabeçalho do raw (ex.: "Rebite mico" → RabbitMQ, "novo ciclo" → NoSQL, "blog da tabela" → lock da tabela); dois trechos ambíguos marcados com [?].
+
+**Skill:** tech-mentor-backend (SKILL.md + `references/event-sourcing-cqrs.md` seção CQRS; skill em `~/.claude-personal/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]], [[wiki/concepts/read-model]], [[wiki/concepts/event-handler]], [[wiki/concepts/contencao-de-lock-leitura-escrita]]
+
+**Tocadas (15):** [[wiki/concepts/cqrs]] (seção nova), [[wiki/concepts/eventual-consistency]], [[wiki/concepts/mensageria]], [[wiki/concepts/nosql]], [[wiki/concepts/mongodb]], [[wiki/concepts/sql-server]], [[wiki/concepts/postgresql]], [[wiki/concepts/command-bus]], [[wiki/concepts/event-driven-architecture]], [[wiki/concepts/read-replicas]], [[wiki/concepts/filas-e-workers]], [[wiki/concepts/dual-write-problem]], [[wiki/concepts/materialized-view]], [[wiki/concepts/isolation-levels]], [[wiki/entities/rabbitmq]] — Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** (1) Sem contradições; complementa [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] (mesma técnica "eventos via broker") com o ângulo do problema de lock. (2) Ressalva: "consulta presa por lock" depende do SGBD/isolamento (MVCC no Postgres atenua) — não discutido no vídeo; marcado `[skill]`. (3) Lacunas: dual write/outbox, idempotência do consumer, ordenação, DLQ, read-your-writes. (4) "Geralmente NoSQL" para leitura é tendência, não regra (réplicas, views, Elasticsearch são alternativas). (5) Três conceitos novos são stub/draft; extensões da skill marcadas `[skill]`.
+
+---
+
+## [2026-09-30] ingest | Requisição HTTP por Dentro — Métodos, Headers, Body, Middleware e Status Code
+
+**Fonte:** transcrição de vídeo em PT-BR colada pelo usuário, limpa e estruturada em `raw/requisicao-http-anatomia-metodos-headers-body-status-code-middleware.md` (já em português; sem tradução). Autor/canal não identificados. Erros de reconhecimento de fala corrigidos por contexto e listados no cabeçalho do raw (ex.: "poste" → POST, "bar" → body, "course" → CORS, "o for Biden" → 403 Forbidden).
+
+**Skill:** tech-mentor-networking (SKILL.md + `references/protocols-application.md`, que cobre HTTP/2-3 e gRPC, não o básico de HTTP; skill em `~/.claude-personal/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]], [[wiki/concepts/requisicao-http]], [[wiki/concepts/metodos-http]], [[wiki/concepts/http-headers]], [[wiki/concepts/http-status-code]], [[wiki/concepts/middleware]], [[wiki/concepts/recurso-rest]], [[wiki/concepts/cors]], [[wiki/concepts/debug-de-requisicao-http]], [[wiki/entities/eduni]]
+
+**Tocadas (12):** [[wiki/concepts/idempotencia]], [[wiki/concepts/http-vs-https]], [[wiki/concepts/cors-misconfiguration]], [[wiki/concepts/jwt]], [[wiki/concepts/sessoes-http-cookies]], [[wiki/concepts/autenticacao-e-autorizacao]], [[wiki/concepts/http-caching]], [[wiki/concepts/http-redirect-301-302]], [[wiki/concepts/websocket-vs-polling]], [[wiki/concepts/rate-limiting]], [[wiki/concepts/tls]], [[wiki/concepts/debugging]] — Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** (1) Sem contradições com a wiki. (2) Lacunas: HTTP/2-3, PATCH/HEAD/OPTIONS (preflight CORS), idempotency key para POST, 204/302/409/422/502/503. (3) Nuances marcadas `[external]`: idempotência é sobre estado do servidor; CORS é imposto só pelo navegador; body inválido costuma render 400/422, não 401/403. (4) A skill de networking não cobre o básico de HTTP; complementos vêm de RFC 9110/MDN. (5) Oito conceitos e uma entidade novos são stubs. (6) Trecho sobre Eduni é promocional; só registrada a entidade.
+
+---
+
+## [2026-09-30] ingest | OpenRouter como Profissional — Provedores, Quantização, Retenção e Fallback
+
+**Fonte:** transcrição de vídeo de Ronald Hulk colada pelo usuário, limpa e estruturada em `raw/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk.md` (já em português; sem tradução). Erros de reconhecimento de fala corrigidos por contexto e listados no cabeçalho do raw (ex.: "Open Houter" → OpenRouter, "DeepSC" → DeepSeek, "trupol" → throughput, "Cory Wave" → CoreWeave).
+
+**Skill:** tech-mentor-ai (SKILL.md + `references/ai/ai-gateway.md`, `open-weight-deployment-2026.md`; skill em `~/.claude-personal/skills/synced/…`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]], [[wiki/concepts/open-weight-model]], [[wiki/concepts/quantizacao-de-llm]], [[wiki/concepts/criterios-de-selecao-de-provedor-llm]], [[wiki/concepts/pool-de-provedores-llm]], [[wiki/concepts/zero-data-retention]]
+
+**Tocadas (16):** [[wiki/entities/openrouter]] (seção nova), [[wiki/concepts/ai-gateway-llm-router]] (seção nova), [[wiki/entities/deepseek]], [[wiki/entities/ronald-hulk]], [[wiki/entities/rock-pro]], [[wiki/entities/langchain]], [[wiki/entities/hermes-agent]], [[wiki/concepts/lgpd]], [[wiki/concepts/adr-architecture-decision-record]], [[wiki/concepts/failover]], [[wiki/concepts/graceful-degradation]], [[wiki/concepts/data-residency]], [[wiki/concepts/vendor-lock-in-cloud]], [[wiki/concepts/corrida-preco-qualidade-llm]], [[wiki/concepts/prompt-caching]], [[wiki/concepts/sla]] — Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** (1) Sem contradições; complementa [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]] (modelo+provedor). (2) Nomes dos campos do payload verificados na doc da OpenRouter [external], não ditos literalmente no vídeo; `preferred_*` são preferências, não filtros; existe `zdr` além de `data_collection`. (3) "Protegido por contrato" é afirmação do autor, não verificada. (4) FP8 bom / FP4 com queda vem da experiência do autor; a skill dá ordem de grandeza só para FP8/INT4. (5) Lacunas: observabilidade de qual provedor respondeu, regressão ao trocar de pool. (6) Cinco conceitos novos são stub/draft. (7) Together AI, CoreWeave e Baidu aparecem só como exemplos; não ganharam página de entidade.
+
+---
+
+## [2026-09-30] ingest | O Que Diferencia um Dev Pleno de um Júnior — Decisões, Legibilidade e Modelagem
+
+**Fonte:** transcrição de vídeo de professor de Java (canal/autor não identificados) colada pelo usuário, limpa e estruturada em `raw/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem.md` (já em português; sem tradução). Erros de reconhecimento de fala corrigidos por contexto e listados no cabeçalho do raw (ex.: "Cafkaa" → Kafka, "chat EPT" → ChatGPT, "virtual trades" → virtual threads, "site preço" → setPreco).
+
+**Skill:** tech-mentor-leadership (SKILL.md + `references/engineering-levels-ladder.md`, `software-craftsmanship.md`; skill em `~/Documentos/skills/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]], [[wiki/concepts/transicao-junior-pleno-forma-de-pensar]], [[wiki/concepts/codigo-lido-mais-que-escrito]], [[wiki/concepts/antecipar-variacao-de-regra]], [[wiki/concepts/classe-como-conceito-de-dominio]]
+
+**Tocadas (14):** [[wiki/concepts/naming]], [[wiki/concepts/encapsulamento]], [[wiki/concepts/primitive-obsession]], [[wiki/concepts/anemic-domain-model]], [[wiki/concepts/modelo-de-dominio-anemico]], [[wiki/concepts/open-closed-principle]], [[wiki/concepts/strategy-pattern]], [[wiki/concepts/codigo-para-o-mantenedor]], [[wiki/concepts/codigo-para-o-futuro-eu]], [[wiki/concepts/equipe-mista-senior-junior]], [[wiki/concepts/soft-skills-como-diferencial-de-pleno]], [[wiki/concepts/vaga-junior-vira-pleno]], [[wiki/concepts/ia-como-amplificador]], [[wiki/concepts/dev-e-negocio]], [[wiki/concepts/validacao-de-entrada]] — Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** (1) Sem contradições; reforça [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] (julgamento > ferramentas). (2) A modelagem "de pleno" para o desconto não é dita no vídeo (código só na tela); Strategy/OCP são inferência marcada. (3) Nuances [external]: YAGNI vs. antecipação; `double` inadequado para dinheiro; atribuição da máxima "lido mais que escrito" não verificada. (4) Lacuna frente à skill: testes, colaboração e ownership (sinais de Mid) não aparecem. (5) Quatro conceitos novos são `draft`; wiki já tinha duplicatas anêmico (`anemic-domain-model` stub / `modelo-de-dominio-anemico`) — candidato a merge no próximo lint.

@@ -16,10 +16,10 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/consumer-driven-contracts-martin-fowler]]: Existe uma inconsistência estrutural pré-existente na wiki: `wiki/sources/tolerant-reader.md` é o único lugar que cobre o Robustness Principle/Postel's Law (via [[wiki/entities/martin-fowler|Tolerant Reader]] de Fowler), mas está tipado como `source`, não tem uma página de `concept` correspondente, e vários dos links que ele usa (`[[concepts/robustness-principle]]`, `[[concepts/expand-contract]]`,
-- Em [[wiki/sources/expand-contract]]: [[concepts/backward-compatibility]]
-- Em [[wiki/sources/schema-registry]]: [[concepts/backward-compatibility]]
-- Em [[wiki/sources/tolerant-reader]]: [[concepts/backward-compatibility]]
+- Em [[wiki/sources/consumer-driven-contracts-martin-fowler]]: Existe uma inconsistência estrutural pré-existente na wiki: `wiki/sources/tolerant-reader.md` é o único lugar que cobre o Robustness Principle/Postel's Law (via [[wiki/entities/martin-fowler|Tolerant Reader]] de Fowler), mas está tipado como `source`, não tem uma página de `concept` correspondente, e vários dos links que ele usa (`[[wiki/concepts/robustness-principle]]`, `[[wiki/concepts/expand-contract]]`,
+- Em [[wiki/sources/expand-contract]]: [[wiki/concepts/backward-compatibility]]
+- Em [[wiki/sources/schema-registry]]: [[wiki/concepts/backward-compatibility]]
+- Em [[wiki/sources/tolerant-reader]]: [[wiki/concepts/backward-compatibility]]
 
 ## Pendências
 

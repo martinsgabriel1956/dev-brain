@@ -49,9 +49,9 @@ Em VOD, o manifesto tem TTL de ~60s porque só muda quando o vídeo recebe capí
 
 ## Relacionado
 
-[[concepts/cache-hot-path]] — mesmo princípio de servir do mais próximo/rápido. CDN é a camada de cache mais extrema.
+[[wiki/concepts/cache-hot-path]] — mesmo princípio de servir do mais próximo/rápido. CDN é a camada de cache mais extrema.
 
 ## Key Sources
 
-- [[sources/case-youtube-streaming]]
+- [[wiki/sources/case-youtube-streaming]]
 - [[wiki/sources/delay-tv-aberta-vs-youtube-live-latencia-streaming]] — CDN em live streaming e o contraste com radiodifusão (TV aberta)

@@ -12,7 +12,7 @@ status: stable
 
 # Syscall (Chamada de Sistema)
 
-Interface pela qual programas em user mode pedem serviços ao [[concepts/kernel]]. Nenhum programa acessa hardware diretamente — tudo passa pelo kernel via syscall.
+Interface pela qual programas em user mode pedem serviços ao [[wiki/concepts/kernel]]. Nenhum programa acessa hardware diretamente — tudo passa pelo kernel via syscall.
 
 ## Por que existe
 
@@ -53,11 +53,11 @@ Syscall tem overhead — troca de modo (user → kernel → user) custa dezenas 
 
 ## Ver também
 
-- [[concepts/kernel]] — recebe e executa as syscalls
-- [[concepts/interrupcao-de-hardware]] — syscall usa mecanismo similar (software interrupt/trap)
-- [[concepts/processo]] — contexto em que a syscall é feita
+- [[wiki/concepts/kernel]] — recebe e executa as syscalls
+- [[wiki/concepts/interrupcao-de-hardware]] — syscall usa mecanismo similar (software interrupt/trap)
+- [[wiki/concepts/processo]] — contexto em que a syscall é feita
 
 ## Key Sources
 
-- [[sources/sistema-operacional-por-baixo-dos-panos]]
-- [[sources/como-sistemas-operacionais-funcionam]]
+- [[wiki/sources/sistema-operacional-por-baixo-dos-panos]]
+- [[wiki/sources/como-sistemas-operacionais-funcionam]]

@@ -52,12 +52,12 @@ Over-engineering é tão prejudicial quanto gambiarra. Programadores ganham expe
 
 ## Conceitos
 
-- [[concepts/over-engineering]]
-- [[concepts/kiss]]
-- [[concepts/ego-driven-development]]
-- [[concepts/accidental-complexity]]
-- [[concepts/abstraction-bloat]]
-- [[concepts/abstraction-illusion]]
+- [[wiki/concepts/over-engineering]]
+- [[wiki/concepts/kiss]]
+- [[wiki/concepts/ego-driven-development]]
+- [[wiki/concepts/accidental-complexity]]
+- [[wiki/concepts/abstraction-bloat]]
+- [[wiki/concepts/abstraction-illusion]]
 
 ---
 
@@ -90,6 +90,6 @@ Over-engineering é tão prejudicial quanto gambiarra. Programadores ganham expe
 
 ## Contradições / Tensões com o Wiki
 
-- [[sources/listen-notes-good-enough-engineering]] converge fortemente — Wenbin Fang defende "good enough engineering" com a mesma premissa de evitar over-engineering.
-- [[sources/clean-architecture]] e [[sources/solid]] ensinam padrões que, mal aplicados, são a fonte do over-engineering descrito aqui. A tensão não é contradição — é contexto.
-- [[concepts/abstraction-bloat]] documentou o mesmo fenômeno com IA como vetor. Este source documenta o vetor humano (ego + experiência).
+- [[wiki/sources/listen-notes-good-enough-engineering]] converge fortemente — Wenbin Fang defende "good enough engineering" com a mesma premissa de evitar over-engineering.
+- [[wiki/sources/clean-architecture]] e [[wiki/sources/solid]] ensinam padrões que, mal aplicados, são a fonte do over-engineering descrito aqui. A tensão não é contradição — é contexto.
+- [[wiki/concepts/abstraction-bloat]] documentou o mesmo fenômeno com IA como vetor. Este source documenta o vetor humano (ego + experiência).

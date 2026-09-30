@@ -49,7 +49,7 @@ Service mesh move retry, timeout, circuit breaker, mTLS e tracing para a infraes
 
 ## Concepts & Entities Touched
 
-[[concepts/service-mesh]] · [[concepts/sidecar-pattern]] · [[concepts/mtls]] · [[concepts/fault-injection]] · [[concepts/ambient-mesh]] · [[concepts/circuit-breaker]] · [[concepts/canary-release]] · [[concepts/zero-downtime-deploy]]
+[[wiki/concepts/service-mesh]] · [[wiki/concepts/sidecar-pattern]] · [[wiki/concepts/mtls]] · [[wiki/concepts/fault-injection]] · [[wiki/concepts/ambient-mesh]] · [[wiki/concepts/circuit-breaker]] · [[wiki/concepts/canary-release]] · [[wiki/concepts/zero-downtime-deploy]]
 
 ## Open Questions
 

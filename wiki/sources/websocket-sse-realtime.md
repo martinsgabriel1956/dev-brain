@@ -35,7 +35,7 @@ SSE para unidirecional (servidor → cliente): `Last-Event-ID` dá reconexão au
 ## Entities & Concepts Touched
 
 - [[concepts/websocket]]
-- [[concepts/server-sent-events]]
+- [[wiki/concepts/server-sent-events]]
 - [[concepts/redis-pubsub]]
 - [[concepts/heartbeat-protocol]]
 - [[concepts/stateful-connections]]

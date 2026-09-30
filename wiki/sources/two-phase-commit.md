@@ -68,7 +68,7 @@ date_ingested: 2026-04-22
 
 ## Concepts & Entities Touched
 
-[[concepts/two-phase-commit]] · [[concepts/three-phase-commit]] · [[concepts/saga-pattern]] · [[concepts/outbox-pattern]] · [[concepts/distributed-transactions]] · [[concepts/distributed-lock]] · [[concepts/acid]]
+[[wiki/concepts/two-phase-commit]] · [[wiki/concepts/three-phase-commit]] · [[wiki/concepts/saga-pattern]] · [[wiki/concepts/outbox-pattern]] · [[wiki/concepts/distributed-transactions]] · [[wiki/concepts/distributed-lock]] · [[wiki/concepts/acid]]
 
 ## Open Questions
 

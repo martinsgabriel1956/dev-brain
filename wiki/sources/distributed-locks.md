@@ -33,11 +33,11 @@ Locks distribuídos garantem exclusão mútua entre processos em diferentes máq
 
 ## Conceitos
 
-- [[concepts/distributed-lock]] — exclusão mútua distribuída
-- [[concepts/fencing-token]] — proteção contra lock fantasma
-- [[concepts/skip-locked]] — fila no PostgreSQL
-- [[concepts/idempotencia]] — pré-requisito para locks mais simples
-- [[concepts/raft-paxos]] — consenso real via etcd/ZooKeeper
+- [[wiki/concepts/distributed-lock]] — exclusão mútua distribuída
+- [[wiki/concepts/fencing-token]] — proteção contra lock fantasma
+- [[wiki/concepts/skip-locked]] — fila no PostgreSQL
+- [[wiki/concepts/idempotencia]] — pré-requisito para locks mais simples
+- [[wiki/concepts/raft-paxos]] — consenso real via etcd/ZooKeeper
 
 ## Key Sources
 

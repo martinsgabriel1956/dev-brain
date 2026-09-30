@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/bug-bounty]]: [[concepts/cvss]]
-- Em [[wiki/sources/pentest-redteam]]: [[concepts/cvss]]
+- Em [[wiki/sources/bug-bounty]]: [[wiki/concepts/cvss]]
+- Em [[wiki/sources/pentest-redteam]]: [[wiki/concepts/cvss]]
 
 ## Pendências
 

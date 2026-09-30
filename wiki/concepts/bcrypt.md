@@ -12,7 +12,7 @@ status: stable
 
 # BCrypt
 
-Algoritmo de [[concepts/password-hashing]] baseado no cifrador Blowfish, introduzido em 1999. Mais especificamente, usa uma variante chamada **EKS-Blowfish** (Expensive Key Schedule Blowfish), que mistura salt e senha repetidamente para forçar lentidão de propósito. Foi o padrão da indústria por mais de uma década por ser [[concepts/cpu-hard]] — intencionalmente lento. Ainda aceitável em sistemas legados com fator de trabalho alto, mas **superado pelo [[concepts/argon2]]** para novos projetos.
+Algoritmo de [[wiki/concepts/password-hashing]] baseado no cifrador Blowfish, introduzido em 1999. Mais especificamente, usa uma variante chamada **EKS-Blowfish** (Expensive Key Schedule Blowfish), que mistura salt e senha repetidamente para forçar lentidão de propósito. Foi o padrão da indústria por mais de uma década por ser [[wiki/concepts/cpu-hard]] — intencionalmente lento. Ainda aceitável em sistemas legados com fator de trabalho alto, mas **superado pelo [[wiki/concepts/argon2]]** para novos projetos.
 
 ## Limite de 72 Caracteres
 
@@ -30,7 +30,7 @@ $2a$12$<22 chars salt><31 chars hash>
 |---|---|
 | `2a` | Versão do algoritmo |
 | `12` | Fator de trabalho (work factor) |
-| Próximos 22 chars | [[concepts/salt]] gerado automaticamente |
+| Próximos 22 chars | [[wiki/concepts/salt]] gerado automaticamente |
 | Últimos 31 chars | Hash resultante |
 
 ---
@@ -60,7 +60,7 @@ BCrypt ocupa apenas **4 KB de RAM** por instância, portanto cabe em qualquer GP
 = ~2 trilhões/ano
 ```
 
-Uma rig com múltiplas GPUs varre um banco de tamanho médio em dias. Por isso o BCrypt não é mais considerado suficiente — [[concepts/argon2]] resolve via [[concepts/memory-hard]].
+Uma rig com múltiplas GPUs varre um banco de tamanho médio em dias. Por isso o BCrypt não é mais considerado suficiente — [[wiki/concepts/argon2]] resolve via [[wiki/concepts/memory-hard]].
 
 ---
 
@@ -68,20 +68,20 @@ Uma rig com múltiplas GPUs varre um banco de tamanho médio em dias. Por isso o
 
 Se o sistema é legado e não suporta Argon2:
 - Use fator de trabalho ≥ 12 (idealmente 13-14)
-- Adicione [[concepts/pepper]] no ENV
+- Adicione [[wiki/concepts/pepper]] no ENV
 - Considere migração progressiva: re-hash no próximo login do usuário
 
 ---
 
 ## Relação com Outros Conceitos
 
-- [[concepts/password-hashing]] — contexto geral
-- [[concepts/cpu-hard]] — conceito central do BCrypt
-- [[concepts/salt]] — gerado automaticamente pelo BCrypt
-- [[concepts/argon2]] — sucessor, adiciona memory-hard
-- [[concepts/memory-hard]] — propriedade que BCrypt não tem
+- [[wiki/concepts/password-hashing]] — contexto geral
+- [[wiki/concepts/cpu-hard]] — conceito central do BCrypt
+- [[wiki/concepts/salt]] — gerado automaticamente pelo BCrypt
+- [[wiki/concepts/argon2]] — sucessor, adiciona memory-hard
+- [[wiki/concepts/memory-hard]] — propriedade que BCrypt não tem
 
 ## Key Sources
 
-- [[sources/seguranca-armazenamento-senhas-banco-de-dados]]
+- [[wiki/sources/seguranca-armazenamento-senhas-banco-de-dados]]
 - [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]

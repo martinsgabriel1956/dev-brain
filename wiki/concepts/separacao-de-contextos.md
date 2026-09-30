@@ -45,7 +45,7 @@ O pai nunca acumula o ruído da exploração — sua context window permanece li
 
 ## Relação com Compaction
 
-[[concepts/compaction-intencional]] e separação de contextos são complementares:
+[[wiki/concepts/compaction-intencional]] e separação de contextos são complementares:
 - Compaction: comprime o histórico de uma sessão para reutilizar em outra
 - Separação: garante que certas informações nunca entrem em determinadas sessões
 
@@ -55,7 +55,7 @@ Separação de contextos garante que sessões não se contaminem. [[memoria-de-l
 
 ## Key Sources
 
-- [[sources/erros-workflow-research-plan-implement]]
-- [[sources/context-engineering-avancado-para-coding-agents]]
+- [[wiki/sources/erros-workflow-research-plan-implement]]
+- [[wiki/sources/context-engineering-avancado-para-coding-agents]]
 - [[wiki/sources/context-engineering-codebases-grandes-rpi]] — memória de longo prazo como extensão natural da separação de contextos; sub-agentes como implementação técnica confirmada
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — prática de iniciar um chat do zero (contexto zerado) para uma nova tarefa, evitando que a conversa anterior contamine a próxima

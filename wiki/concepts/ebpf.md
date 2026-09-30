@@ -16,9 +16,9 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/k8s-networking]]: [[concepts/ebpf]]
-- Em [[wiki/sources/otel-collector-sampling]]: [[concepts/ebpf]]
-- Em [[wiki/sources/runtime-security]]: [[concepts/ebpf]]
+- Em [[wiki/sources/k8s-networking]]: [[wiki/concepts/ebpf]]
+- Em [[wiki/sources/otel-collector-sampling]]: [[wiki/concepts/ebpf]]
+- Em [[wiki/sources/runtime-security]]: [[wiki/concepts/ebpf]]
 
 ## Pendências
 

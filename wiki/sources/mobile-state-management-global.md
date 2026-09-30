@@ -32,4 +32,4 @@ Estado global apenas para o que é verdadeiramente compartilhado: autenticação
 
 ## Conceitos Abordados
 
-- [[concepts/mobile-state-management-global]] · [[concepts/mobile-state-management-local]] · [[concepts/mobile-chamadas-http]] · [[concepts/mobile-navegacao]]
+- [[wiki/concepts/mobile-state-management-global]] · [[wiki/concepts/mobile-state-management-local]] · [[wiki/concepts/mobile-chamadas-http]] · [[wiki/concepts/mobile-navegacao]]

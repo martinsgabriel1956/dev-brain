@@ -30,11 +30,11 @@ A última palavra é do especialista, mas segurança começa nas decisões cotid
 
 **2. Minimizar a área de superfície de ataque.**
 Complexidade de código, inputs do usuário, endpoints públicos não autenticados, URLs públicas de S3, IDs sequenciais expostos, serviços internos acessíveis — tudo isso é superfície. Reduzir ao mínimo necessário.
-→ [[concepts/attack-surface]]
+→ [[wiki/concepts/attack-surface]]
 
 **3. Inputs são vetores de ataque — sanitize sempre.**
 O exemplo clássico (Bobby Tables / SQL Injection): um campo de nome que contém `Robert'; DROP TABLE students;--` executado sem sanitização destrói o banco. Todo input do usuário (nome, e-mail, senha, arquivo) deve ser sanitizado.
-→ [[concepts/sql-injection]]
+→ [[wiki/concepts/sql-injection]]
 
 **4. URLs públicas de S3 não são seguras porque "ninguém vai adivinhar o ID".**
 URLs não são senhas: ficam no histórico do browser, do roteador, em caches de rede. Recursos sensíveis no S3 sempre precisam de autenticação — sem exceção.
@@ -44,26 +44,26 @@ URLs não são senhas: ficam no histórico do browser, do roteador, em caches de
 
 **6. Outputs também são vetores — inclusive o tempo de resposta.**
 Logs com dados sensíveis são vulnerabilidade. O exemplo de timing attack: um algoritmo que verifica senha letra a letra tem tempo de resposta proporcional ao número de letras corretas. Com medição de latência é possível descobrir a senha testando 26+26+26 combinações em vez de 26^n.
-→ [[concepts/timing-attack]]
+→ [[wiki/concepts/timing-attack]]
 
 **7. Princípio do menor privilégio: permissão exata, nada além.**
 Backend com read-only no banco limita o dano mesmo se comprometido. Banco de dados dentro de VPC inacessível de fora. Acesso externo via bastion host.
-→ [[concepts/principio-do-menor-privilegio]]
+→ [[wiki/concepts/principio-do-menor-privilegio]]
 
 **8. Defaults seguros: o estado padrão deve ser o mais seguro.**
 Campo de senha mostra asteriscos por padrão. Deleção de recursos exige confirmação explícita. Onboarding exige troca de senha + 2FA na primeira semana.
-→ [[concepts/secure-by-default]]
+→ [[wiki/concepts/secure-by-default]]
 
 **9. Criptografar dados sensíveis — nunca inventar criptografia própria.**
 PII, dados bancários — use algoritmos estabelecidos e bibliotecas consolidadas.
 
 **10. Aplicar updates de segurança o mais rápido possível.**
 Dependabot alerta sobre CVEs em dependências. SAST (ex: SonarQube) detecta padrões vulneráveis no código estaticamente. WAF opera em tempo real na borda.
-→ [[concepts/sast]], [[concepts/waf]]
+→ [[wiki/concepts/sast]], [[wiki/concepts/waf]]
 
 **11. Credenciais jamais no código.**
 Se commitou uma credencial: altere-a imediatamente. Use `.env` local (gitignored), `.env.example` para template, e ferramentas de secrets management em produção (GitHub Secrets, AWS Secrets Manager).
-→ [[concepts/secrets-management]]
+→ [[wiki/concepts/secrets-management]]
 
 ---
 
@@ -80,15 +80,15 @@ Resultado: CTO demitido, dev principal promovido a CTO, equipe contratada para r
 
 ## Conceitos Centrais
 
-- [[concepts/attack-surface]]
-- [[concepts/defense-in-depth]]
-- [[concepts/principio-do-menor-privilegio]]
-- [[concepts/secure-by-default]]
-- [[concepts/sql-injection]]
-- [[concepts/timing-attack]]
-- [[concepts/sast]]
-- [[concepts/waf]]
-- [[concepts/secrets-management]]
+- [[wiki/concepts/attack-surface]]
+- [[wiki/concepts/defense-in-depth]]
+- [[wiki/concepts/principio-do-menor-privilegio]]
+- [[wiki/concepts/secure-by-default]]
+- [[wiki/concepts/sql-injection]]
+- [[wiki/concepts/timing-attack]]
+- [[wiki/concepts/sast]]
+- [[wiki/concepts/waf]]
+- [[wiki/concepts/secrets-management]]
 
 ---
 

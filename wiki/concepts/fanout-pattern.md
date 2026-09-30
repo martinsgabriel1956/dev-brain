@@ -46,12 +46,12 @@ Threshold típico: 10k–1M seguidores dependendo da arquitetura e custo de stor
 
 ## Aparece em
 
-- [[concepts/notification-system]] — fan-out de notificações por canal
+- [[wiki/concepts/notification-system]] — fan-out de notificações por canal
 - Feed de posts (Twitter, Instagram, LinkedIn)
-- [[concepts/chat-distribuido]] — fan-out de mensagem para membros do grupo
+- [[wiki/concepts/chat-distribuido]] — fan-out de mensagem para membros do grupo
 
 ## Key Sources
 
 - [[wiki/sources/sqs-sns]] — SQS é uma fila gerenciada AWS (zero operação). Standard: alta throughput, ordenação best-effort. FIFO: ordering garantido por MessageGroupId, deduplicação nativa (5 min window), limitado a 3k msg/s...
 - [[wiki/sources/webhook]] — Webhook é o inverso de polling: producer empurra eventos HTTP quando algo acontece. Problemas sérios: replay attacks, ordem de entrega, falhas de receiver, fanout. Solução: HMAC-SHA256 para...
-- [[sources/notification-system]]
+- [[wiki/sources/notification-system]]

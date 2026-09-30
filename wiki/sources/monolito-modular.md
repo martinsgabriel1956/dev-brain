@@ -38,12 +38,12 @@ Monolito Modular é a arquitetura ideal para a maioria dos projetos — deploy �
 
 ## Entities & Concepts Touched
 
-- [[concepts/monolito-modular]]
+- [[wiki/concepts/monolito-modular]]
 - [[concepts/bounded-modules]]
 - [[concepts/domain-isolation]]
-- [[concepts/event-driven-architecture]]
-- [[concepts/microsservicos]]
-- [[concepts/strangler-fig]]
+- [[wiki/concepts/event-driven-architecture]]
+- [[wiki/concepts/microsservicos]]
+- [[wiki/concepts/strangler-fig-pattern]]
 
 ## Open Questions
 

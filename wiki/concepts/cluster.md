@@ -57,6 +57,6 @@ Um mesmo cluster (MySQL Cluster, Suse Cluster, Redhat Cluster) pode ser configur
 
 ## Key Sources
 
-- [[sources/clusters]]
+- [[wiki/sources/clusters]]
 - [[wiki/sources/ha-vs-ft-alta-disponibilidade-tolerancia-a-falha]] — cluster ativo-passivo (HA) vs. ativo-ativo (Tolerância a Falha)
 - [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] — arquitetura mínima de cluster (load balancer + N nodes intercambiáveis) usada como base para simular visualmente cada algoritmo de distribuição de carga

@@ -46,13 +46,13 @@ WhatsApp comprime imagens para max 1600px antes do upload. Reduz volume de stora
 
 ## Relação com Valet Key Pattern
 
-Este fluxo é uma implementação do [[concepts/valet-key-pattern]]: a API não transporta os dados, apenas autoriza o acesso e emite uma credencial temporária (presigned URL). O cliente interage diretamente com o recurso.
+Este fluxo é uma implementação do [[wiki/concepts/valet-key-pattern]]: a API não transporta os dados, apenas autoriza o acesso e emite uma credencial temporária (presigned URL). O cliente interage diretamente com o recurso.
 
 ## Relacionado
 
-[[concepts/cache-hot-path]] — CDN é o cache de mídia, mesmo princípio de servir do edge.
+[[wiki/concepts/cache-hot-path]] — CDN é o cache de mídia, mesmo princípio de servir do edge.
 
 ## Key Sources
 
-- [[sources/case-whatsapp]]
-- [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
+- [[wiki/sources/case-whatsapp]]
+- [[wiki/sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]

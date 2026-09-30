@@ -18,14 +18,14 @@ Comparativo das estratégias principais para liberar nova versão em produção.
 
 | Estratégia | Rollback | Custo | Tráfego misto | Quando usar |
 |---|---|---|---|---|
-| [[concepts/recreate-deployment]] | Refazer o shutdown/start ao contrário | Sem custo extra | Não (mas com downtime) | Sem SLA de disponibilidade |
-| [[concepts/rolling-update]] | Lento (pod a pod) | Sem custo extra | Sim | Deploy rotineiro, mudança backward compatible |
-| [[concepts/blue-green-deploy]] | Instantâneo (segundos) | 2x infra | Não | Alto risco, rollback imediato obrigatório |
-| [[concepts/canary-release]] | Automático + rápido | +5-20% temp | Sim | Mudança de UX/comportamento, com observabilidade |
-| [[concepts/ab-testing-deployment]] | Descarta a variante perdedora | +5-20% temp | Sim | Validar hipótese de negócio, não risco técnico |
-| [[concepts/shadow-deployment]] | N/A (v2 nunca serve usuário) | 2x compute | Sim, mas invisível ao usuário | Validar sistema novo com tráfego real, risco zero |
+| [[wiki/concepts/recreate-deployment]] | Refazer o shutdown/start ao contrário | Sem custo extra | Não (mas com downtime) | Sem SLA de disponibilidade |
+| [[wiki/concepts/rolling-update]] | Lento (pod a pod) | Sem custo extra | Sim | Deploy rotineiro, mudança backward compatible |
+| [[wiki/concepts/blue-green-deploy]] | Instantâneo (segundos) | 2x infra | Não | Alto risco, rollback imediato obrigatório |
+| [[wiki/concepts/canary-release]] | Automático + rápido | +5-20% temp | Sim | Mudança de UX/comportamento, com observabilidade |
+| [[wiki/concepts/ab-testing-deployment]] | Descarta a variante perdedora | +5-20% temp | Sim | Validar hipótese de negócio, não risco técnico |
+| [[wiki/concepts/shadow-deployment]] | N/A (v2 nunca serve usuário) | 2x compute | Sim, mas invisível ao usuário | Validar sistema novo com tráfego real, risco zero |
 
-Todas decidem **como** o código chega ao usuário — independente da estratégia, deploy e release continuam sendo eventos separáveis. → [[concepts/deploy-vs-release]]
+Todas decidem **como** o código chega ao usuário — independente da estratégia, deploy e release continuam sendo eventos separáveis. → [[wiki/concepts/deploy-vs-release]]
 
 ## Decisão Rápida
 
@@ -48,7 +48,7 @@ Quer validar sistema novo com zero risco? → Shadow
 
 ## Tráfego Misto → Backward Compatibility
 
-Canary e Rolling têm v1 e v2 simultaneamente. DB schema e API **devem** suportar as duas versões. → [[concepts/expand-contract]]
+Canary e Rolling têm v1 e v2 simultaneamente. DB schema e API **devem** suportar as duas versões. → [[wiki/concepts/expand-contract]]
 
 ## Release Engineering — o Nome da Disciplina
 
@@ -56,7 +56,7 @@ Termo usado em SRE para nomear a disciplina de entrega de novas versões como um
 
 ## Key Sources
 
-- [[sources/blue-green-canary-rolling]]
-- [[sources/tipos-de-deploy]]
-- [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]] — implementação prática de [[concepts/blue-green-deploy]] num host único, via [[wiki/concepts/reverse-proxy]] e scripts manuais
+- [[wiki/sources/blue-green-canary-rolling]]
+- [[wiki/sources/tipos-de-deploy]]
+- [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]] — implementação prática de [[wiki/concepts/blue-green-deploy]] num host único, via [[wiki/concepts/reverse-proxy]] e scripts manuais
 - [[wiki/sources/sre-capacidade-observabilidade-confiabilidade-custo]] — nomeia e define Release Engineering como a disciplina que escolhe entre essas estratégias para minimizar impacto

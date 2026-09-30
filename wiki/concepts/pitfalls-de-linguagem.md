@@ -60,10 +60,10 @@ Conhecer os pitfalls permite usar a linguagem com as partes boas e evitar as arm
 
 ## Ver também
 
-- [[concepts/principio-da-inversao]] — hábito ruim nº 4: aprender 100% antes de praticar
-- [[concepts/tutorial-hell]] — armadilha de consumir sem construir
+- [[wiki/concepts/principio-da-inversao]] — hábito ruim nº 4: aprender 100% antes de praticar
+- [[wiki/concepts/tutorial-hell]] — armadilha de consumir sem construir
 
 ## Key Sources
 
-- [[sources/principio-da-inversao-programador]]
+- [[wiki/sources/principio-da-inversao-programador]]
 - [[wiki/sources/8-tipos-de-javascript]]

@@ -45,11 +45,11 @@ Para modelos com context window de 1M+ tokens (ex: Gemini Flash), o threshold em
 
 ## Estratégias para Ficar na Smart Zone
 
-- [[concepts/compaction-intencional]] — comprimir o contexto periodicamente antes de cruzar o threshold
-- [[concepts/separacao-de-contextos]] — sub-agentes com janelas novas para tarefas de exploração
-- [[concepts/rpi-workflow]] — estrutura o trabalho para manter contexto baixo por design
+- [[wiki/concepts/compaction-intencional]] — comprimir o contexto periodicamente antes de cruzar o threshold
+- [[wiki/concepts/separacao-de-contextos]] — sub-agentes com janelas novas para tarefas de exploração
+- [[wiki/concepts/rpi-workflow]] — estrutura o trabalho para manter contexto baixo por design
 - Evitar MCPs verbosos — ou configurar outputs compactos
 
 ## Key Sources
 
-- [[sources/context-engineering-avancado-para-coding-agents]]
+- [[wiki/sources/context-engineering-avancado-para-coding-agents]]

@@ -38,7 +38,7 @@ Micro-Kernel Architecture: core system mínimo + plugins que estendem funcionali
 - [[concepts/plugin-architecture]]
 - [[concepts/extensibility]]
 - [[concepts/registry-pattern]]
-- [[concepts/hexagonal-architecture]]
+- [[wiki/concepts/hexagonal-architecture]]
 
 ## Open Questions
 

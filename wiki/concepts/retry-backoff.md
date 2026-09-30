@@ -12,7 +12,7 @@ status: stable
 
 # Retry com Backoff Exponencial e Jitter
 
-Padrão de resiliência para falhas transitórias de rede. Retry ingênuo (imediato ou intervalo fixo) amplifica o problema via [[concepts/thundering-herd]]. Backoff exponencial + jitter distribui a carga no tempo.
+Padrão de resiliência para falhas transitórias de rede. Retry ingênuo (imediato ou intervalo fixo) amplifica o problema via [[wiki/concepts/thundering-herd]]. Backoff exponencial + jitter distribui a carga no tempo.
 
 ## O Problema
 
@@ -115,18 +115,18 @@ const queueConfig = {
 
 ## Pré-requisito: Idempotência
 
-Retry só é seguro se a operação for idempotente. Ver [[concepts/idempotencia]].
+Retry só é seguro se a operação for idempotente. Ver [[wiki/concepts/idempotencia]].
 
 Um timeout no cliente não diz *por que* a resposta não chegou — a operação pode ter falhado antes do servidor, estar em andamento, ou já ter sido concluída com a resposta perdida no caminho de volta. O cliente não consegue diferenciar esses três casos olhando só para o relógio, e é exatamente essa ambiguidade que torna o retry necessário e a idempotência obrigatória: o objetivo não é evitar o retry, é garantir que retentar não produza um efeito de negócio duplicado.
 
 ## Quando NÃO usar
 
 - Operação não idempotente sem idempotency key
-- Serviço downstream sabidamente em falha → usar [[concepts/circuit-breaker]] primeiro
+- Serviço downstream sabidamente em falha → usar [[wiki/concepts/circuit-breaker]] primeiro
 - Erro permanente (4xx de negócio)
 
 ## Key Sources
 
-- [[sources/retry-backoff]]
+- [[wiki/sources/retry-backoff]]
 - [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] — por que o timeout sozinho não distingue falha, processamento em andamento e sucesso com resposta perdida; teste que corta a resposta depois do efeito e antes da confirmação
 - [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — retry agressivo entre produtor e fila pode adicionar ainda mais pressão a um sistema já sobrecarregado, agravando [[wiki/concepts/back-pressure]] em vez de mitigá-lo

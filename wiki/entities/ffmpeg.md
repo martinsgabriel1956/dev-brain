@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/case-youtube-streaming]]: [[entities/ffmpeg]]
-- Em [[wiki/sources/como-multiplas-linguagens-vivem-num-unico-binario]]: [[entities/ffmpeg]] — C + assembly para codecs de vídeo
+- Em [[wiki/sources/case-youtube-streaming]]: [[wiki/entities/ffmpeg]]
+- Em [[wiki/sources/como-multiplas-linguagens-vivem-num-unico-binario]]: [[wiki/entities/ffmpeg]] — C + assembly para codecs de vídeo
 
 ## Pendências
 

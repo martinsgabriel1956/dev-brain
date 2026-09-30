@@ -44,11 +44,11 @@ O plano vertical gera PRs pequenos e focados. O plano horizontal gera o "PR hori
 
 Um PR com 2 arquivos (migration + endpoint) é trivial de revisar. Um PR com 50 arquivos cobrindo a feature inteira é uma massa impossível.
 
-Ver [[concepts/vertical-slice-architecture]] para a versão arquitetural desse princípio.
+Ver [[wiki/concepts/vertical-slice-architecture]] para a versão arquitetural desse princípio.
 
 ## Relação com Context Window
 
-Plano vertical também beneficia a [[concepts/dumb-zone|smart zone]]: cada entrega é completada e testada com contexto baixo. No plano horizontal, o agente acumula contexto por todas as camadas antes de qualquer validação.
+Plano vertical também beneficia a [[wiki/concepts/dumb-zone|smart zone]]: cada entrega é completada e testada com contexto baixo. No plano horizontal, o agente acumula contexto por todas as camadas antes de qualquer validação.
 
 ## Fatia Vertical Também na Divisão do Trabalho, Não Só no Plano do Agente
 
@@ -56,6 +56,6 @@ Plano vertical também beneficia a [[concepts/dumb-zone|smart zone]]: cada entre
 
 ## Key Sources
 
-- [[sources/erros-workflow-research-plan-implement]]
-- [[sources/context-engineering-avancado-para-coding-agents]]
+- [[wiki/sources/erros-workflow-research-plan-implement]]
+- [[wiki/sources/context-engineering-avancado-para-coding-agents]]
 - [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] — mesma lógica de fatia vertical aplicada à divisão de tarefas entre pessoas do time, não só ao plano de implementação de um agente

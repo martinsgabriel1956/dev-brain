@@ -12,7 +12,7 @@ status: stub
 
 # Outbox Pattern
 
-Garante entrega de mensagens/eventos sem [[concepts/two-phase-commit]] — usando uma tabela `outbox` no mesmo banco da transação.
+Garante entrega de mensagens/eventos sem [[wiki/concepts/two-phase-commit]] — usando uma tabela `outbox` no mesmo banco da transação.
 
 ## Mecanismo
 
@@ -34,7 +34,7 @@ Latência adicional (CDC é assíncrono). Consumidor deve ser idempotente (mensa
 
 ## Alternativa ao 2PC
 
-[[concepts/two-phase-commit]] garante entrega síncrona com risco de blocking. Outbox garante entrega assíncrona com risco de duplicação — trade-off de latência vs complexidade.
+[[wiki/concepts/two-phase-commit]] garante entrega síncrona com risco de blocking. Outbox garante entrega assíncrona com risco de duplicação — trade-off de latência vs complexidade.
 
 ## Cruzando a Fronteira de Serviço com Identidade Idempotente
 
@@ -50,7 +50,7 @@ Outbox resolve a publicação confiável de um lado da fronteira. Do outro lado,
 
 ## Key Sources
 
-- [[sources/3pc]]
+- [[wiki/sources/3pc]]
 - [[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] — desafio de entrevista de cadastro de usuário + e-mail de boas-vindas; demonstra por que envolver a chamada externa numa transação de banco não resolve o dual write, e detalha o Outbox Consumer via polling vs. CDC/Debezium como evolução
 - [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] — citação nominal do bug da escrita dupla como risco de sincronizar CQRS via eventos, sem detalhar a solução
 - [[wiki/sources/outbox-pattern]]

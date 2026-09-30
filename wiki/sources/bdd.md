@@ -32,4 +32,4 @@ Extensão do TDD que usa linguagem de domínio (Gherkin) para specs executáveis
 
 ## Conceitos Abordados
 
-- [[concepts/bdd]] · [[concepts/tdd]] · [[concepts/living-documentation]] · [[concepts/piramide-de-testes]]
+- [[wiki/concepts/bdd]] · [[wiki/concepts/tdd]] · [[wiki/concepts/living-documentation]] · [[wiki/concepts/piramide-de-testes]]

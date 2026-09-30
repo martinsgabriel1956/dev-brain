@@ -14,7 +14,7 @@ status: draft
 
 Ferramenta open source que automatiza a **detecção e exploração** de [[wiki/concepts/sql-injection]]. Identifica o SGBD, testa parâmetros em busca de pontos vulneráveis, escolhe a técnica de exploração mais adequada ao comportamento observado da aplicação e extrai dados de forma estruturada.
 
-Citada como ferramenta padrão de [[wiki/concepts/pentest]] também em [[wiki/concepts/redteam-pentest|metodologia de red team/pentest]].
+Citada como ferramenta padrão de [[wiki/concepts/pentest]] também em [[wiki/concepts/pentest|metodologia de red team/pentest]].
 
 ## Pré-requisito: entender a exploração manual
 

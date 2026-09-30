@@ -3,8 +3,8 @@ type: concept
 title: "Microsoft SQL Server"
 aliases: ["sql server", "mssql", "sqlserver"]
 date_created: 2026-07-27
-date_updated: 2026-07-27
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [sql-server, banco-de-dados, relacional, microsoft, backend]
 skill: tech-mentor-backend
 status: stub
@@ -30,3 +30,4 @@ Empresas de médio porte com stack Microsoft, mercado financeiro com Excel conec
 ## Key Sources
 
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]]
+- [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — exemplo de banco relacional do lado de escrita em CQRS; cenário de leitura presa por lock (ver [[wiki/concepts/contencao-de-lock-leitura-escrita]])

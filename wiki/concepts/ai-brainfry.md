@@ -65,14 +65,14 @@ AI Brainfry: excesso de **processamento cognitivo** em velocidade inumana, mesmo
 - Usar IA de forma sustentável: você decide, ela implementa; você revisa, você entende
 - Limitar threads paralelas de orquestração
 - Tratar explicabilidade do sistema como critério de pronto
-- Liderança técnica que inclua gestão de [[concepts/divida-cognitiva]] como responsabilidade
+- Liderança técnica que inclua gestão de [[wiki/concepts/divida-cognitiva]] como responsabilidade
 
 ## Relação com outros conceitos
 
-- [[concepts/divida-cognitiva]] — mecanismo subjacente ao brainfry
-- [[concepts/vibe-coding]] — padrão de trabalho que amplifica brainfry
+- [[wiki/concepts/divida-cognitiva]] — mecanismo subjacente ao brainfry
+- [[wiki/concepts/vibe-coding]] — padrão de trabalho que amplifica brainfry
 - [[concepts/llmops-observabilidade]] — observabilidade reduz carga cognitiva de supervisão
 
 ## Key Sources
 
-- [[sources/divida-cognitiva-ai-brainfry]]
+- [[wiki/sources/divida-cognitiva-ai-brainfry]]

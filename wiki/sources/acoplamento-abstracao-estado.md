@@ -55,7 +55,7 @@ Termos técnicos como acoplamento, abstração e estado não são para decorar �
 - [[imutabilidade]]
 - [[efeito-colateral]]
 - [[coesao]]
-- [[concepts/idempotencia]]
+- [[wiki/concepts/idempotencia]]
 - [[single-responsibility]]
 - [[lentes-de-codigo]]
 

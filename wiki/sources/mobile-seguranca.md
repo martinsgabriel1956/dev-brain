@@ -33,4 +33,4 @@ Secrets no Keychain (iOS) / Keystore (Android) — nunca em SharedPreferences ou
 
 ## Conceitos Abordados
 
-- [[concepts/mobile-seguranca]] · [[concepts/mobile-biometria]] · [[concepts/mobile-armazenamento-local]] · [[concepts/mobile-chamadas-http]] · [[mobile-security]]
+- [[wiki/concepts/mobile-seguranca]] · [[wiki/concepts/mobile-biometria]] · [[wiki/concepts/mobile-armazenamento-local]] · [[wiki/concepts/mobile-chamadas-http]] · [[mobile-security]]

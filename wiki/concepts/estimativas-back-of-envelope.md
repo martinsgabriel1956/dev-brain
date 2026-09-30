@@ -19,7 +19,7 @@ Cálculos rápidos de escala para validar decisões arquiteturais e identificar 
 ```
 Usuários ativos × frequência de ação = requests/s
 Requests/s × tamanho médio = bandwidth
-Requests/s × latência = concorrência (Little's Law → [[concepts/littles-law]])
+Requests/s × latência = concorrência (Little's Law → [[wiki/concepts/littles-law]])
 Storage = volume × retenção × fator de replicação
 ```
 
@@ -49,7 +49,7 @@ Em [[wiki/concepts/entrevista-system-design|entrevistas de system design]], esse
 
 ## Key Sources
 
-- [[sources/case-uber]]
+- [[wiki/sources/case-uber]]
 - [[wiki/sources/5-dicas-entrevistas-lousa-branca-system-design]]
 - [[wiki/sources/system-design-por-nivel-junior-pleno-senior]]
 - [[wiki/sources/anatomia-entrevista-system-design-bigtech]]

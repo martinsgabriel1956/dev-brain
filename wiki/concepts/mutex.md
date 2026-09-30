@@ -45,7 +45,7 @@ Sem sincronização, duas threads modificando o mesmo estado simultaneamente pro
 ## Custo e cuidados
 
 - Mutex bem usado: overhead baixo
-- Mutex mal usado: [[concepts/deadlock]] quando duas threads esperam uma pela outra
+- Mutex mal usado: [[wiki/concepts/deadlock]] quando duas threads esperam uma pela outra
 - **Granularidade**: mutex muito amplo = serialização desnecessária; muito fino = overhead de múltiplos locks
 
 ## Alternativas para casos específicos
@@ -56,11 +56,11 @@ Sem sincronização, duas threads modificando o mesmo estado simultaneamente pro
 
 ## Ver também
 
-- [[concepts/deadlock]] — consequência de mutex mal usado
-- [[concepts/thread]] — entidade que adquire e libera mutex
+- [[wiki/concepts/deadlock]] — consequência de mutex mal usado
+- [[wiki/concepts/thread]] — entidade que adquire e libera mutex
 
 ## Key Sources
 
-- [[sources/sistema-operacional-por-baixo-dos-panos]]
-- [[sources/como-sistemas-operacionais-funcionam]]
+- [[wiki/sources/sistema-operacional-por-baixo-dos-panos]]
+- [[wiki/sources/como-sistemas-operacionais-funcionam]]
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]

@@ -48,10 +48,10 @@ Multi-agente faz sentido quando a task tem paralelismo real ou requer especialis
 - [[concepts/swarm-pattern]]
 - [[wiki/concepts/planner-executor-critic]]
 - [[wiki/concepts/langgraph]]
-- [[concepts/durable-execution]]
+- [[wiki/concepts/durable-execution]]
 - [[entities/temporal]]
 - [[concepts/error-boundary-agents]]
-- [[concepts/checkpointing-agents]]
+- [[wiki/concepts/checkpointing-agents]]
 
 > Nota de lint (2026-07-10): `planner-executor-critic` e `langgraph` foram criados em `wiki/concepts/` durante a ingestão de [[wiki/sources/loop-engineering-planner-critic-grafo]] — links acima corrigidos para o path atual. `supervisor-pattern`, `handoff-pattern`, `swarm-pattern`, `durable-execution`, `error-boundary-agents` e `checkpointing-agents` permanecem como links quebrados (nunca criados), fora do escopo desta ingestão.
 

@@ -39,12 +39,12 @@ Browser Security: Same-Origin Policy é a base (scheme+host+port). CORS habilita
 ## Entities & Concepts Touched
 
 - [[concepts/same-origin-policy]]
-- [[concepts/csp]]
+- [[wiki/concepts/csp]]
 - [[concepts/cors]]
 - [[concepts/coep-coop]]
 - [[concepts/fetch-metadata]]
-- [[concepts/xss]]
-- [[concepts/csrf]]
+- [[wiki/concepts/xss]]
+- [[wiki/concepts/csrf]]
 - [[concepts/spectre-meltdown]]
 
 ## Open Questions

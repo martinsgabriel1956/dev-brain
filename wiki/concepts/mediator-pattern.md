@@ -31,5 +31,5 @@ Padrão [[behavioral-patterns|comportamental]] que define um objeto que encapsul
 
 ## Key Sources
 
-- [[sources/design-pattern-facade]] — mencionado nas relações com outros padrões
-- [[sources/design-pattern-observer]] — distinção Mediator vs Observer aprofundada; podem ser usados juntos
+- [[wiki/sources/design-pattern-facade]] — mencionado nas relações com outros padrões
+- [[wiki/sources/design-pattern-observer]] — distinção Mediator vs Observer aprofundada; podem ser usados juntos

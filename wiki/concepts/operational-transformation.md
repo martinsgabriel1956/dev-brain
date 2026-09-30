@@ -20,8 +20,8 @@ Algoritmo para edição colaborativa que transforma operações em relação ao 
 
 **Limitações:** algoritmo de transformação é sutil e difícil de implementar corretamente; latência depende do round-trip ao servidor; offline limitado.
 
-**Alternativa:** [[concepts/crdt]] — sem servidor central, offline-first nativo.
+**Alternativa:** [[wiki/concepts/crdt]] — sem servidor central, offline-first nativo.
 
 ## Key Sources
 
-- [[sources/crdt-colaboracao-tempo-real]]
+- [[wiki/sources/crdt-colaboracao-tempo-real]]

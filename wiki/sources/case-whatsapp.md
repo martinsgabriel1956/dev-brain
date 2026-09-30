@@ -23,12 +23,12 @@ Chat expõe os limites de arquitetura stateless: WebSocket exige estado de conex
 
 ## Key Claims
 
-- **WebSocket, não HTTP polling** — full-duplex, baixa latência, 1 conexão por usuário. Polling tem latência = intervalo; Long Polling tem overhead HTTP por mensagem. → [[concepts/websocket-vs-polling]]
-- **Cross-server delivery via Redis Pub-Sub** — A e B podem estar em chat servers diferentes. Redis Pub-Sub roteia via channel:{user_id}. Para grupos grandes: Kafka por tópico de grupo. → [[concepts/chat-distribuido]]
-- **ACK triplo com idempotência** — enviado ✓, entregue ✓✓, lido ✓✓ azul. client_message_id garante idempotência em reconexão. → [[concepts/ack-triplo]]
-- **Presença escalável: só contatos ativos na tela** — propagar para todos os 500 contatos de cada usuário com 1B DAU é inviável. Demais recebem last_seen no próximo acesso. → [[concepts/presenca-online]]
-- **Cassandra para storage de mensagens** — 1.15M writes/s, TTL nativo, scale linear, sem joins necessários. partition_key = conversation_id, clustering_key = Snowflake ID DESC. → [[concepts/cassandra-schema]]
-- **Mídia via presigned URL + S3** — não passa pelo Chat Server. Client sobe direto para S3, mensagem carrega CDN URL. → [[concepts/media-upload-pattern]]
+- **WebSocket, não HTTP polling** — full-duplex, baixa latência, 1 conexão por usuário. Polling tem latência = intervalo; Long Polling tem overhead HTTP por mensagem. → [[wiki/concepts/websocket-vs-polling]]
+- **Cross-server delivery via Redis Pub-Sub** — A e B podem estar em chat servers diferentes. Redis Pub-Sub roteia via channel:{user_id}. Para grupos grandes: Kafka por tópico de grupo. → [[wiki/concepts/chat-distribuido]]
+- **ACK triplo com idempotência** — enviado ✓, entregue ✓✓, lido ✓✓ azul. client_message_id garante idempotência em reconexão. → [[wiki/concepts/ack-triplo]]
+- **Presença escalável: só contatos ativos na tela** — propagar para todos os 500 contatos de cada usuário com 1B DAU é inviável. Demais recebem last_seen no próximo acesso. → [[wiki/concepts/presenca-online]]
+- **Cassandra para storage de mensagens** — 1.15M writes/s, TTL nativo, scale linear, sem joins necessários. partition_key = conversation_id, clustering_key = Snowflake ID DESC. → [[wiki/concepts/cassandra-schema]]
+- **Mídia via presigned URL + S3** — não passa pelo Chat Server. Client sobe direto para S3, mensagem carrega CDN URL. → [[wiki/concepts/media-upload-pattern]]
 - **Delivery offline: pending_messages com TTL 30 dias** — push notification (FCM/APNs) acorda o app, reconexão faz flush da fila.
 
 ## Scale Numbers
@@ -50,7 +50,7 @@ Latência entrega online: < 100ms p99
 
 ## Concepts
 
-[[concepts/websocket-vs-polling]] · [[concepts/chat-distribuido]] · [[concepts/ack-triplo]] · [[concepts/presenca-online]] · [[concepts/cassandra-schema]] · [[concepts/media-upload-pattern]] · [[concepts/snowflake-id]]
+[[wiki/concepts/websocket-vs-polling]] · [[wiki/concepts/chat-distribuido]] · [[wiki/concepts/ack-triplo]] · [[wiki/concepts/presenca-online]] · [[wiki/concepts/cassandra-schema]] · [[wiki/concepts/media-upload-pattern]] · [[wiki/concepts/snowflake-id]]
 
 ## Open Questions
 

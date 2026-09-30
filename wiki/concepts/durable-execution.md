@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/agentes-orquestracao]]: [[concepts/durable-execution]]
-- Em [[wiki/sources/temporal]]: [[concepts/durable-execution]]
+- Em [[wiki/sources/agentes-orquestracao]]: [[wiki/concepts/durable-execution]]
+- Em [[wiki/sources/temporal]]: [[wiki/concepts/durable-execution]]
 
 ## Pendências
 

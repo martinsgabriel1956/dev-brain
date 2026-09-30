@@ -34,7 +34,7 @@ Artefato que alinha engenheiros, PMs e stakeholders técnicos sobre a direção 
 
 ## Relação com LLD
 
-HLD define os blocos. [[concepts/low-level-design]] define como cada bloco é implementado internamente.
+HLD define os blocos. [[wiki/concepts/low-level-design]] define como cada bloco é implementado internamente.
 
 ## Em entrevista de system design
 
@@ -51,5 +51,5 @@ Em uma [[wiki/concepts/entrevista-system-design|entrevista de system design]], o
 
 ## Conceitos Relacionados
 
-[[concepts/low-level-design]] · [[adr-architecture-decision-record]] · [[concepts/trd-technical-requirements-document]] · [[wiki/concepts/entrevista-system-design]]
+[[wiki/concepts/low-level-design]] · [[adr-architecture-decision-record]] · [[wiki/concepts/trd-technical-requirements-document]] · [[wiki/concepts/entrevista-system-design]]
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — desenhar o HLD cedo demais é o antipadrão central: o desenho é consequência dos requisitos levantados, não substituto deles

@@ -32,9 +32,9 @@ Checklist de 24 domínios para Solutions Architect: Fundamentos de Arquitetura, 
 
 - [[concepts/solutions-architect]]
 - [[concepts/c4-model]]
-- [[concepts/adr]]
-- [[concepts/rfc]]
-- [[concepts/fitness-functions]]
+- [[wiki/concepts/adr-architecture-decision-record]]
+- [[wiki/concepts/rfc-request-for-comments]]
+- [[wiki/concepts/fitness-functions]]
 - [[concepts/system-design]]
 
 ## Open Questions

@@ -33,10 +33,10 @@ Load Balancer distribui tráfego entre instâncias para escalar horizontalmente 
 
 ## Conceitos
 
-- [[concepts/load-balancer]] — algoritmos e camadas
-- [[concepts/service-discovery]] — como o LB sabe quais instâncias existem
-- [[concepts/service-mesh]] — LB interno via sidecar
-- [[concepts/canary-release]] — LB L7 roteia % do tráfego
+- [[wiki/concepts/load-balancer]] — algoritmos e camadas
+- [[wiki/concepts/service-discovery]] — como o LB sabe quais instâncias existem
+- [[wiki/concepts/service-mesh]] — LB interno via sidecar
+- [[wiki/concepts/canary-release]] — LB L7 roteia % do tráfego
 - [[concepts/horizontal-vs-vertical-scaling]] — LB é pré-requisito para escala horizontal
 
 ## Key Sources

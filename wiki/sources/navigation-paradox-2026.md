@@ -63,11 +63,11 @@ Janelas de contexto maiores não resolvem dependências arquiteturais escondidas
 
 ## Concepts
 
-- [[concepts/navigation-paradox]] — o paradoxo central do paper
-- [[concepts/abstraction-bloat]] — relacionado: abstrações geram dependências escondidas
-- [[concepts/dependency-injection]] — o caso mais crítico para dependências escondidas
+- [[wiki/concepts/navigation-paradox]] — o paradoxo central do paper
+- [[wiki/concepts/abstraction-bloat]] — relacionado: abstrações geram dependências escondidas
+- [[wiki/concepts/dependency-injection]] — o caso mais crítico para dependências escondidas
 - [[concepts/mcp]] — protocolo usado pelo CodeCompass
-- [[concepts/yagni]] — princípio que previne a criação de dependências desnecessárias
+- [[wiki/concepts/yagni]] — princípio que previne a criação de dependências desnecessárias
 
 ## Open Questions
 

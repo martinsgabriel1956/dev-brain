@@ -50,7 +50,7 @@ O token pode ser:
 
 ## Relação com Defense in Depth
 
-Token Relay é a implementação de [[concepts/defense-in-depth]] para identidade: a borda autentica, mas a autorização acontece em todos os serviços.
+Token Relay é a implementação de [[wiki/concepts/defense-in-depth]] para identidade: a borda autentica, mas a autorização acontece em todos os serviços.
 
 ## Cuidados
 
@@ -64,5 +64,5 @@ O token repassado costuma ser um [[wiki/concepts/jwt]] — Access Token de curta
 
 ## Key Sources
 
-- [[sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
+- [[wiki/sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
 - [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]

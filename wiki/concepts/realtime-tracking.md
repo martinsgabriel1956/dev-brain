@@ -37,4 +37,4 @@ Kafka desacopla Location Service do Passenger WebSocket Service. Se o Passenger 
 
 ## Key Sources
 
-- [[sources/case-uber]]
+- [[wiki/sources/case-uber]]

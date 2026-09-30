@@ -59,11 +59,11 @@ O menor privilégio também se aplica ao próprio acesso SSH: [[wiki/concepts/ss
 - [[wiki/concepts/agent-containment]] — PoLP aplicado especificamente ao processo de um agente de IA, não só a serviços humanos
 - [[attack-surface]] — reduzir privilégios reduz o impacto de cada ponto de entrada
 - [[secure-by-default]] — o menor privilégio é o default seguro para permissões
-- [[concepts/secrets-management]] — secrets acessíveis apenas pelos serviços que precisam deles
+- [[wiki/concepts/secrets-management]] — secrets acessíveis apenas pelos serviços que precisam deles
 
 ## Key Sources
 
-- [[sources/cinco-praticas-seguranca-pragmatic-programmer]] — exemplos: backend read-only, banco dentro de VPC, bastion host para acesso externo
+- [[wiki/sources/cinco-praticas-seguranca-pragmatic-programmer]] — exemplos: backend read-only, banco dentro de VPC, bastion host para acesso externo
 - [[wiki/sources/ssh-chaves-como-funcionam]] — chave SSH como credencial mínima para acesso a bastion hosts
 - [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — permissões granulares de leitura/escrita por pasta para um agente de IA
 - [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] — whitelist de tool calling como um dos 4 componentes de um agente autônomo de produção

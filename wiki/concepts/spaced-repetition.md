@@ -32,7 +32,7 @@ Isso é spaced repetition em ação: ao longo de dias de prática, cada digitaç
 
 ## Relação com Neuroplasticidade
 
-Spaced repetition é a aplicação prática de [[concepts/neuroplasticidade]]: a exposição espaçada dá tempo ao cérebro para reorganizar os circuitos entre sessões.
+Spaced repetition é a aplicação prática de [[wiki/concepts/neuroplasticidade]]: a exposição espaçada dá tempo ao cérebro para reorganizar os circuitos entre sessões.
 
 ## Autocomplete como Inimigo do Aprendiz
 
@@ -40,5 +40,5 @@ Spaced repetition é a aplicação prática de [[concepts/neuroplasticidade]]: a
 
 ## Key Sources
 
-- [[sources/como-aprender-programacao-3-dicas]]
+- [[wiki/sources/como-aprender-programacao-3-dicas]]
 - [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]]

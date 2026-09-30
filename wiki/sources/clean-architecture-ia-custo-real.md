@@ -50,19 +50,19 @@ Um time SaaS B2B de 10 devs com domínio complexo (billing, contratos, fiscais) 
 
 ## Entities
 
-- [[entities/uncle-bob]] — Robert C. Martin, autor de Clean Architecture
+- [[wiki/entities/uncle-bob]] — Robert C. Martin, autor de Clean Architecture
 - [[entities/eric-evans]] — autor de Domain-Driven Design
-- [[entities/kent-beck]] — autor de Extreme Programming, cunhou YAGNI em 1999
+- [[wiki/entities/kent-beck]] — autor de Extreme Programming, cunhou YAGNI em 1999
 
 ## Concepts
 
-- [[concepts/yagni]] — You Ain't Gonna Need It, princípio de não antecipar abstração
-- [[concepts/abstraction-bloat]] — agentes geram complexidade desnecessária por viés de treinamento
-- [[concepts/abstraction-illusion]] — IA torna padrões acessíveis sem torná-los apropriados
-- [[concepts/navigation-paradox]] — mais arquivos = mais falhas de navegação do agente
-- [[concepts/comprehension-debt]] — dívida de compreensão do código gerado por IA
-- [[concepts/vertical-slice-architecture]] — organização por feature, não por camada
-- [[concepts/dependency-injection]] — injeção de dependência — backlink adicionado
+- [[wiki/concepts/yagni]] — You Ain't Gonna Need It, princípio de não antecipar abstração
+- [[wiki/concepts/abstraction-bloat]] — agentes geram complexidade desnecessária por viés de treinamento
+- [[wiki/concepts/abstraction-illusion]] — IA torna padrões acessíveis sem torná-los apropriados
+- [[wiki/concepts/navigation-paradox]] — mais arquivos = mais falhas de navegação do agente
+- [[wiki/concepts/comprehension-debt]] — dívida de compreensão do código gerado por IA
+- [[wiki/concepts/vertical-slice-architecture]] — organização por feature, não por camada
+- [[wiki/concepts/dependency-injection]] — injeção de dependência — backlink adicionado
 
 ## Open Questions
 

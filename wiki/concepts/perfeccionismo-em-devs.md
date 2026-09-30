@@ -39,15 +39,15 @@ O perfeccionismo é frequentemente **proteção psicológica**, não busca de qu
 ## Mitigação
 
 - Definir critérios de "done" antes de começar (não durante)
-- **[[concepts/mvp]]**: "bom o suficiente para shippar" como meta explícita
+- **[[wiki/concepts/mvp]]**: "bom o suficiente para shippar" como meta explícita
 - Separar "ship" de "perfeito" — iterar após feedback real é mais eficiente que polir no vácuo
 
 ## Ver Também
 
-- [[concepts/paralisia-por-analise]] — perfeccionismo na escolha de tecnologia/arquitetura
-- [[concepts/scope-creep]] — perfeccionismo gera adições infinitas
+- [[wiki/concepts/paralisia-por-analise]] — perfeccionismo na escolha de tecnologia/arquitetura
+- [[wiki/concepts/scope-creep]] — perfeccionismo gera adições infinitas
 
 ## Key Sources
 
-- [[sources/por-que-devs-nao-terminam-projetos]]
+- [[wiki/sources/por-que-devs-nao-terminam-projetos]]
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — "abandone o perfeccionismo": entregar com consciência e melhoria contínua, jogo da carreira é para ganhar ([[wiki/concepts/entregar-apesar-dos-problemas]])

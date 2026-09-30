@@ -30,9 +30,9 @@ A promessa de estar "quase lá" é o hook psicológico. Cada iteração adiciona
 
 ## Relação com Abstraction Bloat
 
-[[concepts/abstraction-bloat]] e comprehension debt se reforçam: o agente gera complexidade desnecessária → você aprova porque "parece certo" → você entende cada vez menos → você aprova ainda mais sem questionar.
+[[wiki/concepts/abstraction-bloat]] e comprehension debt se reforçam: o agente gera complexidade desnecessária → você aprova porque "parece certo" → você entende cada vez menos → você aprova ainda mais sem questionar.
 
-## Diferença de [[concepts/divida-cognitiva]]
+## Diferença de [[wiki/concepts/divida-cognitiva]]
 
 **Correção (2026-07-16, a partir da fonte primária de Storey):** a estatística de +14% de esforço mental vem de uma pesquisa citada pela HBR sobre supervisão de IA, não do post original de Margaret-Anne Storey. Na fonte primária de Storey, dívida cognitiva é definida de forma mais ampla e sem essa métrica: é a distância entre a velocidade de geração de código da IA e a capacidade real do time de reter a *teoria do programa* (ver [[wiki/concepts/teoria-do-programa-naur]]) — ou seja, um fenômeno **coletivo/de time**. Comprehension debt, por outro lado, é a erosão *individual e progressiva* da capacidade da pessoa de entender o próprio código que ela mesma aprovou. São facetas do mesmo problema em escalas diferentes: dívida cognitiva é o risco de time perder a teoria compartilhada; comprehension debt é o mecanismo pelo qual um indivíduo perde a sua própria.
 
@@ -54,8 +54,8 @@ A promessa de estar "quase lá" é o hook psicológico. Cada iteração adiciona
 ## Key Sources
 
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — caso pessoal: gerou 10 mil linhas por agente e levou ~2 meses para entender
-- [[sources/addy-osmani-80-problem-agentic-coding]]
-- [[sources/erros-workflow-research-plan-implement]] — não ler o código durante o research é o caminho direto para comprehension debt
-- [[sources/context-engineering-avancado-para-coding-agents]] — mental alignment como antídoto coletivo
+- [[wiki/sources/addy-osmani-80-problem-agentic-coding]]
+- [[wiki/sources/erros-workflow-research-plan-implement]] — não ler o código durante o research é o caminho direto para comprehension debt
+- [[wiki/sources/context-engineering-avancado-para-coding-agents]] — mental alignment como antídoto coletivo
 - [[wiki/sources/cognitive-debt-margaret-storey]] — fonte primária de "cognitive debt"; corrige a atribuição da estatística de +14% (é da HBR, não de Storey) e fundamenta a distinção individual/coletivo com a teoria do programa de Naur
 - [[wiki/sources/cinco-escolas-programacao-com-ia]] — terceira fonte independente para o mesmo fenômeno ("dívida de compreensão"), com nota de atribuição a corrigir (cunhagem vs. popularização)

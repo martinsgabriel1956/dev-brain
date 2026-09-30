@@ -43,17 +43,17 @@ Checkout Service → chama Order (sem threads disponíveis) → Checkout cai
 
 | Padrão | Como previne |
 |---|---|
-| [[concepts/circuit-breaker]] | Rejeita imediatamente no OPEN — não acumula threads |
-| [[concepts/bulkhead]] | Limita threads por downstream — esgotamento de um não afeta outros |
-| [[concepts/retry-backoff]] | Backoff exponencial reduz pressão sobre downstream degradado |
+| [[wiki/concepts/circuit-breaker]] | Rejeita imediatamente no OPEN — não acumula threads |
+| [[wiki/concepts/bulkhead]] | Limita threads por downstream — esgotamento de um não afeta outros |
+| [[wiki/concepts/retry-backoff]] | Backoff exponencial reduz pressão sobre downstream degradado |
 | [[concepts/timeout]] | Timeout curto libera thread rapidamente |
-| [[concepts/graceful-degradation]] | Fallback serve resposta degradada em vez de travar |
+| [[wiki/concepts/graceful-degradation]] | Fallback serve resposta degradada em vez de travar |
 
 ## Ver também
 
-- [[concepts/circuit-breaker]] — solução principal para falha em cascata
-- [[concepts/bulkhead]] — isolamento de pools por downstream
+- [[wiki/concepts/circuit-breaker]] — solução principal para falha em cascata
+- [[wiki/concepts/bulkhead]] — isolamento de pools por downstream
 
 ## Key Sources
 
-- [[sources/circuit-breaker]]
+- [[wiki/sources/circuit-breaker]]

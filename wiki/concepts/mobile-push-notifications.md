@@ -80,8 +80,8 @@ function shouldSend(user: User, now: Date): boolean {
 
 ## Ver também
 
-- [[concepts/mobile-deep-links]] — deep link no payload de notificação
-- [[concepts/mobile-permissoes]] — solicitar permissão de notificação
+- [[wiki/concepts/mobile-deep-links]] — deep link no payload de notificação
+- [[wiki/concepts/mobile-permissoes]] — solicitar permissão de notificação
 
 ## Key Sources
 

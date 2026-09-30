@@ -34,12 +34,12 @@ status: stable
 
 ## Entities & Concepts Touched
 
-- [[concepts/hpa]]
+- [[wiki/concepts/hpa]]
 - [[concepts/vpa]]
 - [[concepts/keda]]
 - [[concepts/karpenter]]
 - [[concepts/scale-to-zero]]
-- [[concepts/finops]]
+- [[wiki/concepts/finops]]
 
 ## Open Questions
 

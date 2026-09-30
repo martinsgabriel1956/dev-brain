@@ -16,7 +16,7 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/llmops-observabilidade]]: [[entities/langsmith]]
+- Em [[wiki/sources/llmops-observabilidade]]: [[wiki/entities/langsmith]]
 
 ## Pendências
 

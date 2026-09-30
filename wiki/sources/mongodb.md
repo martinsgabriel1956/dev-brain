@@ -38,12 +38,12 @@ MongoDB é ideal para documentos hierárquicos com schema variável. Embed vs Re
 
 ## Entities & Concepts Touched
 
-- [[concepts/mongodb]]
+- [[wiki/concepts/mongodb]]
 - [[concepts/embed-vs-reference]]
 - [[concepts/aggregation-pipeline]]
 - [[concepts/change-streams]]
 - [[concepts/schema-validation]]
-- [[concepts/faceted-search]]
+- [[wiki/concepts/faceted-search]]
 
 ## Open Questions
 

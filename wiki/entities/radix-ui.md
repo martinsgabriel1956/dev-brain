@@ -12,7 +12,7 @@ status: stable
 
 # Radix UI
 
-Biblioteca de componentes headless (sem estilo) para React, focada em acessibilidade e composabilidade. Co-criada por [[entities/pedro-duarte]]. Adquirida pela WorkOS.
+Biblioteca de componentes headless (sem estilo) para React, focada em acessibilidade e composabilidade. Co-criada por [[wiki/entities/pedro-duarte]]. Adquirida pela WorkOS.
 
 É a fundação sobre a qual o **Shadcn/UI** é construído — o que tornou Radix a base indireta de grande parte dos projetos React modernos.
 
@@ -35,10 +35,10 @@ Biblioteca CSS-in-JS criada pela mesma equipe. Descontinuada após a aquisição
 
 ## Relação com Outros Conceitos
 
-- [[concepts/component-library]] — Radix é um dos exemplos mais influentes de headless library
-- [[entities/pedro-duarte]] — co-criador
-- [[concepts/design-engineer]] — Radix é ferramenta frequente em projetos de Design Engineers
+- [[wiki/concepts/component-library]] — Radix é um dos exemplos mais influentes de headless library
+- [[wiki/entities/pedro-duarte]] — co-criador
+- [[wiki/concepts/design-engineer]] — Radix é ferramenta frequente em projetos de Design Engineers
 
 ## Key Sources
 
-- [[sources/design-first-vs-code-first-referencias]]
+- [[wiki/sources/design-first-vs-code-first-referencias]]

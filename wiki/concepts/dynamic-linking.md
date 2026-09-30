@@ -61,8 +61,8 @@ Processo chama a função normalmente
 
 ## Contraste
 
-Ver [[concepts/static-linking]] para a alternativa autocontida.
+Ver [[wiki/concepts/static-linking]] para a alternativa autocontida.
 
 ## Key Sources
 
-- [[sources/como-multiplas-linguagens-vivem-num-unico-binario]]
+- [[wiki/sources/como-multiplas-linguagens-vivem-num-unico-binario]]

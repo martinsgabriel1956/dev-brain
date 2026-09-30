@@ -55,11 +55,11 @@ Ver [[utf-8]] para encoding de texto.
 
 ## Relação com outros conceitos
 
-- [[concepts/hashing]] — irreversível, sem chave. Encoding é reversível e sem chave.
-- [[concepts/encryption]] — reversível, mas requer chave. Encoding é reversível sem chave.
+- [[wiki/concepts/hashing]] — irreversível, sem chave. Encoding é reversível e sem chave.
+- [[wiki/concepts/encryption]] — reversível, mas requer chave. Encoding é reversível sem chave.
 - [[utf-8]] — encoding de texto para [[unicode]]; conceito distinto do encoding de transporte
 
 ## Key Sources
 
-- [[sources/encoding-hashing-encryption]]
-- [[sources/como-strings-realmente-funcionam]] — distinção entre charset encoding (UTF-8) e transport encoding (Base64)
+- [[wiki/sources/encoding-hashing-encryption]]
+- [[wiki/sources/como-strings-realmente-funcionam]] — distinção entre charset encoding (UTF-8) e transport encoding (Base64)

@@ -43,12 +43,12 @@ LLMs são previsores de próximo token treinados em escala. Arquitetura Transfor
 
 ## Entities & Concepts Touched
 
-- [[concepts/transformer-architecture]]
-- [[concepts/tokenizacao]]
-- [[concepts/context-window]]
-- [[concepts/mixture-of-experts]]
-- [[concepts/mamba-ssm]]
-- [[concepts/flash-attention]]
+- [[wiki/concepts/transformer-architecture]]
+- [[wiki/concepts/tokenizacao]]
+- [[wiki/concepts/context-window]]
+- [[wiki/concepts/mixture-of-experts]]
+- [[wiki/concepts/mamba-ssm]]
+- [[wiki/concepts/flash-attention]]
 - [[concepts/text-diffusion]]
 
 ## Ver também

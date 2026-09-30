@@ -41,7 +41,7 @@ Em ambientes dinâmicos (K8s, ECS, auto-scaling), IPs mudam — service discover
 
 ## Concepts & Entities Touched
 
-[[concepts/service-discovery]] · [[concepts/service-mesh]] · [[concepts/sidecar-pattern]]
+[[wiki/concepts/service-discovery]] · [[wiki/concepts/service-mesh]] · [[wiki/concepts/sidecar-pattern]]
 
 ## Open Questions
 

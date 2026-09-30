@@ -34,7 +34,7 @@ Supply Chain Security protege 3 vetores: dependências (SCA + SBOM + hash pinnin
 
 ## Entities & Concepts Touched
 
-- [[concepts/supply-chain-security]]
+- [[wiki/concepts/supply-chain-security]]
 - [[concepts/sbom]]
 - [[concepts/slsa]]
 - [[entities/sigstore]]

@@ -33,4 +33,4 @@ Graceful shutdown em Go: capturar SIGTERM/SIGINT com `os.Signal`, chamar `http.S
 
 ## Conceitos Abordados
 
-- [[concepts/go-producao]] · [[concepts/go-arquitetura]] · [[concepts/go-ecossistema]] · [[concepts/observabilidade]] · [[concepts/zero-downtime-deploy]]
+- [[wiki/concepts/go-producao]] · [[wiki/concepts/go-arquitetura]] · [[wiki/concepts/go-ecossistema]] · [[wiki/concepts/observabilidade]] · [[wiki/concepts/zero-downtime-deploy]]

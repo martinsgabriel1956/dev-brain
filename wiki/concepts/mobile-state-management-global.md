@@ -79,8 +79,8 @@ Bloc para fluxos com eventos complexos e muitos estados — maior verbosidade, m
 
 ## Ver também
 
-- [[concepts/mobile-state-management-local]] — estado local primeiro
-- [[concepts/mobile-chamadas-http]] — TanStack Query / Riverpod para server state
+- [[wiki/concepts/mobile-state-management-local]] — estado local primeiro
+- [[wiki/concepts/mobile-chamadas-http]] — TanStack Query / Riverpod para server state
 
 ## Key Sources
 

@@ -12,7 +12,7 @@ status: stable
 
 # Pedro Duarte
 
-Desenvolvedor e designer brasileiro. Co-fundador da [[entities/radix-ui]] (Radix UI e Stitches), ambos adquiridos pela WorkOS. Atualmente trabalha na Raycast.
+Desenvolvedor e designer brasileiro. Co-fundador da [[wiki/entities/radix-ui]] (Radix UI e Stitches), ambos adquiridos pela WorkOS. Atualmente trabalha na Raycast.
 
 Entrevistado no canal Rocket City em 2019.
 
@@ -28,8 +28,8 @@ Entrevistado no canal Rocket City em 2019.
 
 ## Por que Seguir
 
-Conteúdo sobre design com foco em usabilidade e experiência, não só estética. Demonstra que [[concepts/design-como-interacao]] é o que realmente diferencia produtos.
+Conteúdo sobre design com foco em usabilidade e experiência, não só estética. Demonstra que [[wiki/concepts/design-como-interacao]] é o que realmente diferencia produtos.
 
 ## Key Sources
 
-- [[sources/design-first-vs-code-first-referencias]]
+- [[wiki/sources/design-first-vs-code-first-referencias]]

@@ -30,10 +30,10 @@ Race conditions aparecem em combinações específicas de timing que testes manu
 
 ## Relacionado
 
-- [[concepts/piramide-de-testes]] — onde property-based testing se encaixa
+- [[wiki/concepts/piramide-de-testes]] — onde property-based testing se encaixa
 - [[vibe-coding]] — técnica especialmente útil para verificar código gerado por IA
 
 ## Key Sources
 
-- [[sources/apagao-de-seniors-vibe-coding]]
+- [[wiki/sources/apagao-de-seniors-vibe-coding]]
 - [[wiki/sources/design-by-contract-video]] — autor sinaliza PBT como técnica "bem relacionada" ao [[wiki/concepts/design-by-contract]] (invariantes ↔ propriedades)

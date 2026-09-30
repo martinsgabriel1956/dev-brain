@@ -36,10 +36,10 @@ K8s Security em 5 camadas: CIS Benchmark (kube-bench), Pod Security Standards (r
 
 - [[concepts/kubernetes-security]]
 - [[concepts/pod-security-standards]]
-- [[concepts/rbac]]
-- [[concepts/network-policy]]
-- [[entities/falco]]
-- [[entities/opa-gatekeeper]]
+- [[wiki/concepts/rbac]]
+- [[wiki/concepts/network-policy]]
+- [[wiki/entities/falco]]
+- [[wiki/entities/opa-gatekeeper]]
 - [[entities/kube-bench]]
 - [[concepts/zero-trust]]
 

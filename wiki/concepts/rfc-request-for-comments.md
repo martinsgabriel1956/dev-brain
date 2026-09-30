@@ -12,7 +12,7 @@ status: draft
 
 # RFC — Request for Comments
 
-Documento de proposta aberta que busca feedback antes de uma decisão ser tomada. Diferente do [[concepts/trd-technical-requirements-document]] (especificação para implementar) e do [[adr-architecture-decision-record]] (registro de decisão já tomada).
+Documento de proposta aberta que busca feedback antes de uma decisão ser tomada. Diferente do [[wiki/concepts/trd-technical-requirements-document]] (especificação para implementar) e do [[adr-architecture-decision-record]] (registro de decisão já tomada).
 
 Uso: quando a decisão ainda está em aberto e múltiplos stakeholders devem opinar.
 

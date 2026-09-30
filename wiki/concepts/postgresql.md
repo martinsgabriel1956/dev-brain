@@ -3,8 +3,8 @@ type: concept
 title: "PostgreSQL"
 aliases: ["postgres", "pg"]
 date_created: 2026-04-22
-date_updated: 2026-09-14
-source_count: 13
+date_updated: 2026-09-30
+source_count: 15
 tags: [banco-de-dados, postgresql, relacional, jsonb, vetorial]
 skill: tech-mentor-system-design
 status: stable
@@ -26,10 +26,10 @@ Banco relacional open-source. Default para a maioria dos casos — migre só qua
 ## Regra de Ouro
 
 Não migre para NoSQL por performance antes de:
-1. Criar os [[concepts/database-index]] corretos
-2. Resolver [[concepts/n-plus-one]] queries
-3. Configurar [[concepts/connection-pooling]] com PgBouncer
-4. Avaliar [[concepts/read-replicas]] para reads
+1. Criar os [[wiki/concepts/database-index]] corretos
+2. Resolver [[wiki/concepts/n-plus-one]] queries
+3. Configurar [[wiki/concepts/connection-pooling]] com PgBouncer
+4. Avaliar [[wiki/concepts/read-replicas]] para reads
 
 ## Backend as a Service Ainda é Postgres
 
@@ -85,9 +85,13 @@ Coluna cujo valor não cabe numa página (8 KB) é movida para uma tabela auxili
 
 Volume de escrita muito alto numa base MVCC como o Postgres acumula tuplas versionadas (dead tuples) — `VACUUM`/autovacuum precisa rodar com frequência para limpar, senão a tabela sofre table bloat e a performance degrada. É um dos motivos pelos quais, em cenários de escrita muito intensa, [[wiki/concepts/mongodb|MongoDB]] (arquitetura já nascida com sharding/distribuição) tende a fazer mais sentido que forçar o Postgres a esse padrão de uso. Ver [[wiki/concepts/mvcc]].
 
+## Caso: PostgreSQL no Instagram Simplificado
+
+Banco do caso didático (tabelas `users` e `profile_url`); o autor admite que redes sociais costumam usar NoSQL, mas assume relacional por hipótese. Escala de leitura via réplicas e, depois, sharding por região ([[wiki/concepts/read-replicas]], [[wiki/concepts/sharding]]).
+
 ## Key Sources
 
-- [[sources/banco-de-dados]]
+- [[wiki/sources/banco-de-dados]]
 - [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]] — mecânica interna genérica (buffer pool, WAL, MVCC, isolation levels, checkpoint/recovery) que fundamenta o comportamento específico do Postgres já documentado acima
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/orm-sql-organizacao-regras-negocio-bancos-dados]]
@@ -100,3 +104,5 @@ Volume de escrita muito alto numa base MVCC como o Postgres acumula tuplas versi
 - [[wiki/sources/particionamento-por-hash-postgresql-sql-30-dias]] — `PARTITION BY HASH` via `MODULUS`/`REMAINDER`, distinção explícita entre particionamento HASH (mesma instância) e sharding físico (múltiplos nós), introspecção de partições via catálogo
 - [[wiki/sources/database-branching-testes-neon-fernanda-kipper]] — Neon como Postgres serverless com branching copy-on-write para bancos de teste isolados por branch
 - [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]] — Postgres como padrão otimizado para leitura (índice em shared buffer), alavancas de throughput de escrita (`UNLOGGED`, `synchronous_commit`), TOAST para valores grandes, e vacuum como custo de escrita intensa em MVCC
+- [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — banco do caso Instagram simplificado; réplicas de leitura e sharding por região
+- [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — exemplo de banco relacional do lado de escrita em CQRS; MVCC atenua a contenção leitura/escrita descrita na fonte

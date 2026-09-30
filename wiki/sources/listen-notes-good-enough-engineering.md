@@ -67,8 +67,8 @@ Exemplos citados:
 
 ## Entidades Mencionadas
 
-- [[entities/wenbin-fang]] — autor
-- [[entities/listen-notes]] — produto de referência
+- [[wiki/entities/wenbin-fang]] — autor
+- [[wiki/entities/listen-notes]] — produto de referência
 - [[digital-ocean]] — VPS inicial
 - [[aws-ec2]] — VPS de produção
 - [[facebook]] — exemplo de produto "good enough" no início
@@ -77,12 +77,12 @@ Exemplos citados:
 
 ## Conceitos
 
-- [[concepts/good-enough-engineering]] — princípio de não over-engenheirar antes de ter usuários
+- [[wiki/concepts/good-enough-engineering]] — princípio de não over-engenheirar antes de ter usuários
 - [[over-engineering]] — armadilha de construir mais do que o necessário
-- [[concepts/analise-paralitica]] — pensar demais sem agir
+- [[wiki/concepts/analise-paralitica]] — pensar demais sem agir
 - [[side-project]] — projeto paralelo ao emprego principal
-- [[concepts/one-person-company]] — empresa de uma pessoa só
-- [[concepts/processamento-assincrono]] — workers + message queue para tarefas pesadas
+- [[wiki/concepts/one-person-company]] — empresa de uma pessoa só
+- [[wiki/concepts/processamento-assincrono]] — workers + message queue para tarefas pesadas
 
 ---
 

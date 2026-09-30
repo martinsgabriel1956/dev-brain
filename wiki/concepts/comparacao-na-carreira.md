@@ -42,8 +42,8 @@ Comparação desordenada cria a sensação de que você "não tem dom" — e pod
 
 ## Key Sources
 
-- [[sources/comparacao-na-carreira-dev]]
-- [[sources/como-aprender-programacao-3-dicas]]
+- [[wiki/sources/comparacao-na-carreira-dev]]
+- [[wiki/sources/como-aprender-programacao-3-dicas]]
 - [[wiki/sources/the-comparison-trap-in-programming-careers]] — as duas formas de comparação nomeadas explicitamente; quatro estratégias práticas para mudar o referencial; "a única competição é com o meu eu do passado"
 - [[wiki/sources/como-eu-investiria-como-programador-ate-50000]] — régua de teto salarial de um professor (R$ 5.000) usada como "régua máxima" pessoal do autor, mesmo padrão de comparação externa aplicado a dinheiro em vez de código
 - [[wiki/sources/diferenciais-portfolio-backend-junior]] — o dilema de fundo da pergunta original ("como me destacar sem experiência") já é uma comparação implícita com candidatos que têm anos de mercado; a resposta desloca o referencial de "quanto tempo de experiência" para "quais fundamentos concretos você domina"

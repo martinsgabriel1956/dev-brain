@@ -34,16 +34,16 @@ Hexagonal Architecture (Alistair Cockburn) isola o domínio de todas as dependê
 
 ## Entities & Concepts Touched
 
-- [[concepts/hexagonal-architecture]]
-- [[concepts/ports-adapters]]
+- [[wiki/concepts/hexagonal-architecture]]
+- [[wiki/concepts/ports-adapters]]
 - [[concepts/in-memory-adapters]]
 - [[concepts/driving-ports]]
 - [[concepts/driven-ports]]
-- [[concepts/clean-architecture]]
+- [[wiki/concepts/clean-architecture]]
 
 ## Key Sources Adicionais
 
-- [[sources/ports-and-adapters-codebase-para-ia]] — exemplo antes/depois com blog + ângulo de IA (2026-05-04)
+- [[wiki/sources/ports-and-adapters-codebase-para-ia]] — exemplo antes/depois com blog + ângulo de IA (2026-05-04)
 
 ## Open Questions
 

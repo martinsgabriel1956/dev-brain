@@ -33,10 +33,10 @@ Idempotência é a propriedade de operações que produzem o mesmo resultado ind
 
 ## Conceitos
 
-- [[concepts/idempotencia]] — já existe no index
-- [[concepts/retry-backoff]] — retry só é seguro com idempotência
-- [[concepts/distributed-lock]] — lock por idempotency key para race condition
-- [[concepts/outbox-pattern]] — garante publicação idempotente
+- [[wiki/concepts/idempotencia]] — já existe no index
+- [[wiki/concepts/retry-backoff]] — retry só é seguro com idempotência
+- [[wiki/concepts/distributed-lock]] — lock por idempotency key para race condition
+- [[wiki/concepts/outbox-pattern]] — garante publicação idempotente
 
 ## Key Sources
 

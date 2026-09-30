@@ -29,16 +29,16 @@ Fluxo estruturado de resposta a incidente — da detecção à resolução e apr
 
 ## Princípio Central
 
-**Mitigação antes de causa raiz.** Rollback em 10 minutos é melhor que investigar 2 horas para encontrar a causa enquanto usuários são impactados. A causa raiz vai para o [[concepts/blameless-post-mortem]].
+**Mitigação antes de causa raiz.** Rollback em 10 minutos é melhor que investigar 2 horas para encontrar a causa enquanto usuários são impactados. A causa raiz vai para o [[wiki/concepts/blameless-post-mortem]].
 
 ## Papéis
 
-Ver [[concepts/incident-roles]] — IC, TL, Comunicador, Escriba são papéis distintos que não devem se misturar.
+Ver [[wiki/concepts/incident-roles]] — IC, TL, Comunicador, Escriba são papéis distintos que não devem se misturar.
 
 ## Severidade
 
-Ver [[concepts/incident-severity]] — define tempo de resposta e escalonamento.
+Ver [[wiki/concepts/incident-severity]] — define tempo de resposta e escalonamento.
 
 ## Key Sources
 
-- [[sources/sre-error-budget-incidents]]
+- [[wiki/sources/sre-error-budget-incidents]]

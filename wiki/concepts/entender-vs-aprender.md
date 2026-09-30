@@ -39,15 +39,15 @@ O teste real: fechar o tutorial, abrir um ambiente em branco e tentar reproduzir
 3. Nova tentativa com o ajuste
 4. Repetição em contextos diferentes
 
-A [[concepts/memoria-muscular]] se forma nesse ciclo — não na leitura ou na audiência passiva.
+A [[wiki/concepts/memoria-muscular]] se forma nesse ciclo — não na leitura ou na audiência passiva.
 
 ## Relação com EAD
 
-O EAD amplifica a ilusão porque vídeos de qualidade técnica alta (câmera, áudio, didática) geram mais sensação de entendimento — que é facilmente confundida com aprendizado. Ver [[concepts/aprendizado-passivo]].
+O EAD amplifica a ilusão porque vídeos de qualidade técnica alta (câmera, áudio, didática) geram mais sensação de entendimento — que é facilmente confundida com aprendizado. Ver [[wiki/concepts/aprendizado-passivo]].
 
 ## Key Sources
 
-- [[sources/papinho-tech-solo-aprender-a-aprender]]
-- [[sources/akita-como-aprender-programacao]]
-- [[sources/quanto-tempo-aprender-programacao]] — o vale do desespero como momento em que a diferença entre entender e aprender se torna inescapável: entende cada linha, mas não consegue arquitetar
+- [[wiki/sources/papinho-tech-solo-aprender-a-aprender]]
+- [[wiki/sources/akita-como-aprender-programacao]]
+- [[wiki/sources/quanto-tempo-aprender-programacao]] — o vale do desespero como momento em que a diferença entre entender e aprender se torna inescapável: entende cada linha, mas não consegue arquitetar
 - [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] — entender a explicação da IA ≠ saber fazer; [[wiki/concepts/active-recall]] e desafios sem resposta expõem a ilusão de fluência

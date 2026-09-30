@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/conways-law]]: [[concepts/cognitive-load]]
-- Em [[wiki/sources/platform-engineering-devex]]: [[concepts/cognitive-load]]
+- Em [[wiki/sources/conways-law]]: [[wiki/concepts/cognitive-load]]
+- Em [[wiki/sources/platform-engineering-devex]]: [[wiki/concepts/cognitive-load]]
 
 ## Pendências
 

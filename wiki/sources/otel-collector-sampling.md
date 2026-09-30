@@ -36,11 +36,11 @@ OTel Collector: gateway de observabilidade que recebe traces/métricas/logs e ex
 
 - [[entities/otel-collector]]
 - [[concepts/tail-sampling]]
-- [[concepts/auto-instrumentation]]
+- [[wiki/concepts/auto-instrumentation]]
 - [[entities/pyroscope]]
 - [[concepts/continuous-profiling]]
-- [[concepts/ebpf]]
-- [[concepts/opentelemetry]]
+- [[wiki/concepts/ebpf]]
+- [[wiki/concepts/opentelemetry]]
 
 ## Open Questions
 

@@ -12,7 +12,7 @@ status: stable
 
 # Circuit Breaker
 
-Padrão de resiliência inspirado no disjuntor elétrico: quando um downstream falha com frequência, interrompe o circuito para proteger o chamador — evita [[concepts/falha-em-cascata]] e libera recursos enquanto o downstream se recupera.
+Padrão de resiliência inspirado no disjuntor elétrico: quando um downstream falha com frequência, interrompe o circuito para proteger o chamador — evita [[wiki/concepts/falha-em-cascata]] e libera recursos enquanto o downstream se recupera.
 
 ## O Problema que Resolve
 
@@ -99,7 +99,7 @@ API não-crítica (analytics): threshold 30%, resetTimeout 10s
 
 ## Relação com Bulkhead
 
-Circuit breaker decide **SE** tenta. [[concepts/bulkhead]] decide **QUANTOS** tentam ao mesmo tempo. Use os dois juntos — bulkhead envolve circuit breaker.
+Circuit breaker decide **SE** tenta. [[wiki/concepts/bulkhead]] decide **QUANTOS** tentam ao mesmo tempo. Use os dois juntos — bulkhead envolve circuit breaker.
 
 ## Origem na Literatura de Microsserviços: Design for Failure
 
@@ -107,15 +107,15 @@ Circuit breaker decide **SE** tenta. [[concepts/bulkhead]] decide **QUANTOS** te
 
 ## Ver também
 
-- [[concepts/falha-em-cascata]] — problema que o circuit breaker resolve
-- [[concepts/retry-backoff]] — deve ficar dentro do breaker, não fora
-- [[concepts/bulkhead]] — complemento: limita concorrência
-- [[concepts/graceful-degradation]] — fallback é graceful degradation na prática
-- [[concepts/fail-fast]] — OPEN é o mecanismo de fail fast
+- [[wiki/concepts/falha-em-cascata]] — problema que o circuit breaker resolve
+- [[wiki/concepts/retry-backoff]] — deve ficar dentro do breaker, não fora
+- [[wiki/concepts/bulkhead]] — complemento: limita concorrência
+- [[wiki/concepts/graceful-degradation]] — fallback é graceful degradation na prática
+- [[wiki/concepts/fail-fast]] — OPEN é o mecanismo de fail fast
 
 ## Key Sources
 
 - [[wiki/sources/agentes-em-producao]] — Pilotos de agentes funcionam. Produção quebra em 3 pontos: integração com sistemas legados (APIs internas sem docs), state management (sessões longas não cabem no contexto), e governança (auditoria,...
-- [[sources/bulkhead]]
-- [[sources/circuit-breaker]]
+- [[wiki/sources/bulkhead]]
+- [[wiki/sources/circuit-breaker]]
 - [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — circuit breaker citado como conceito que se aplica em qualquer chamada de API externa (banco, serviço de pagamento, terceiro), mesmo dentro de uma aplicação única — não é exclusividade de sistemas distribuídos, ver [[wiki/concepts/microsservicos]]

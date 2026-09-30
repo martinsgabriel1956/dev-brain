@@ -14,7 +14,7 @@ status: stable
 
 ## TL;DR
 
-Padrão onde a aplicação primeiro tenta o [[concepts/cache]]; em miss vai ao banco, salva o resultado no cache com TTL e retorna. O cache é populado sob demanda — nunca antecipadamente.
+Padrão onde a aplicação primeiro tenta o [[wiki/concepts/cache]]; em miss vai ao banco, salva o resultado no cache com TTL e retorna. O cache é populado sob demanda — nunca antecipadamente.
 
 ## Fluxo
 

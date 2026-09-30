@@ -35,7 +35,7 @@ Offset Pagination (`LIMIT x OFFSET y`) é O(n) — degrada com tabelas grandes e
 ## Entities & Concepts Touched
 
 - [[concepts/keyset-pagination]]
-- [[concepts/cursor-pagination]]
+- [[wiki/concepts/cursor-pagination]]
 - [[concepts/offset-pagination]]
 - [[concepts/seek-method]]
 - [[concepts/pagination-performance]]

@@ -28,7 +28,7 @@ A exposição massiva a código (copiar, digitar, quebrar) é o mecanismo que *c
 
 ## As analogias da bicicleta e do bebê
 
-[[wiki/sources/papinho-tech-solo-aprender-a-aprender]] traz duas analogias que reforçam o mesmo ponto: ninguém aprende a andar de bicicleta só porque entendeu as regras (freio, equilíbrio, pedalada). E o bebê não aprende a andar observando adultos — aprende caindo, levantando, repetindo até a habilidade se tornar automática. A memória muscular é o mecanismo subjacente em ambos os casos. Ver [[concepts/entender-vs-aprender]].
+[[wiki/sources/papinho-tech-solo-aprender-a-aprender]] traz duas analogias que reforçam o mesmo ponto: ninguém aprende a andar de bicicleta só porque entendeu as regras (freio, equilíbrio, pedalada). E o bebê não aprende a andar observando adultos — aprende caindo, levantando, repetindo até a habilidade se tornar automática. A memória muscular é o mecanismo subjacente em ambos os casos. Ver [[wiki/concepts/entender-vs-aprender]].
 
 ## Desligar o Autocomplete para Forçar a Digitação Manual
 

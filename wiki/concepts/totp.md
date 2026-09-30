@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/autenticacao-segura]]: [[concepts/totp]]
-- Em [[wiki/sources/sessions]]: [[concepts/totp]]
+- Em [[wiki/sources/autenticacao-segura]]: [[wiki/concepts/totp]]
+- Em [[wiki/sources/sessions]]: [[wiki/concepts/totp]]
 
 ## Pendências
 

@@ -16,9 +16,9 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/dlq-event-patterns]]: [[concepts/dlq]]
-- Em [[wiki/sources/rabbitmq]]: [[concepts/dlq]]
-- Em [[wiki/sources/sqs-sns]]: [[concepts/dlq]]
+- Em [[wiki/sources/dlq-event-patterns]]: [[wiki/concepts/dlq]]
+- Em [[wiki/sources/rabbitmq]]: [[wiki/concepts/dlq]]
+- Em [[wiki/sources/sqs-sns]]: [[wiki/concepts/dlq]]
 
 ## Pendências
 

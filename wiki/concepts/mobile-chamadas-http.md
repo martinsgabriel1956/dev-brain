@@ -60,8 +60,8 @@ final userProvider = FutureProvider.family<User, String>((ref, id) async {
 
 ## Ver também
 
-- [[concepts/mobile-offline-first-basico]] — servir cache quando sem rede
-- [[concepts/mobile-state-management-global]] — onde server state NÃO vai
+- [[wiki/concepts/mobile-offline-first-basico]] — servir cache quando sem rede
+- [[wiki/concepts/mobile-state-management-global]] — onde server state NÃO vai
 
 ## Key Sources
 

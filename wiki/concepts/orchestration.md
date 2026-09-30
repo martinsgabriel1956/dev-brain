@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/event-driven-architecture]]: [[concepts/orchestration]]
-- Em [[wiki/sources/saga-pattern]]: [[concepts/orchestration]]
+- Em [[wiki/sources/event-driven-architecture]]: [[wiki/concepts/orchestration]]
+- Em [[wiki/sources/saga-pattern]]: [[wiki/concepts/orchestration]]
 
 ## Pendências
 

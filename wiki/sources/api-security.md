@@ -35,12 +35,12 @@ API Security é o subconjunto do OWASP focado em APIs. BOLA (IDOR) é o #1 — v
 ## Entities & Concepts Touched
 
 - [[concepts/bola]]
-- [[concepts/idor]]
-- [[concepts/rate-limiting]]
+- [[wiki/concepts/idor]]
+- [[wiki/concepts/rate-limiting]]
 - [[concepts/sliding-window-rate-limit]]
 - [[concepts/credential-stuffing]]
 - [[concepts/graphql-security]]
-- [[concepts/owasp]]
+- [[wiki/concepts/owasp]]
 
 ## Open Questions
 

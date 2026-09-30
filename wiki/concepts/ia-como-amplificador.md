@@ -4,7 +4,7 @@ title: "IA como Amplificador (sem julgamento)"
 aliases: ["ia amplificador", "ai as amplifier", "amplificador sem julgamento"]
 date_created: 2026-08-10
 date_updated: 2026-09-30
-source_count: 9
+source_count: 10
 tags: [ia-produtividade, seniority, codigo-legado, code-review, julgamento]
 skill: tech-mentor-leadership
 status: draft
@@ -79,3 +79,4 @@ O diferencial deixa de ser "escrever rápido" e passa a ser **julgar o que foi g
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] — formulação direta a devs iniciantes: "a IA acelera aquilo que você já faz"; quem programa bem entrega mais rápido, quem só faz código porcaria põe bug em produção mais rápido — usada para justificar que fundamentos ainda precisam ser estudados
 - [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — conhecimento como multiplicador; testes exigem conhecimento de negócio
 - [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]
+- [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — copiar código da IA é aceitável se se entende o que foi gerado e a regra de negócio

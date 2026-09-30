@@ -23,16 +23,16 @@ Dois ângulos sobre os mesmos hábitos: artigo técnico de Tom Hombergs (12+ ano
 
 ## Key Claims
 
-- **Voluntariar para o desconhecido** é o hábito mais importante e não tem prazo de validade — cada projeto é um mundo novo. → [[concepts/voluntariar-para-desconhecido]]
-- **Comunicar progresso** ao longo do processo, não no final, elimina "por que demorou tanto?" e desbloqueia problemas via discussão. → [[concepts/comunicar-progresso]]
-- **Escrever para ensinar** (blog, wiki, notas) organiza o pensamento linearmente — melhor momento é enquanto aprende, não depois. → [[concepts/escrever-para-aprender]]
-- **Bloquear agenda** para tarefas importantes — sem bloquear, o dia é consumido por outros. "Você não controla sua agenda, as outras pessoas controlam." → [[concepts/bloqueio-de-agenda]]
-- **Começar do zero** após pausa é melhor que dar continuidade — base com qualidade superior e destravar o problema com mais facilidade. → [[concepts/pausa-estrategica]]
-- **Fazer por você** — hábitos de crescimento não devem ser motivados pelo chefe ou empresa. Quem faz por si carrega o nível para qualquer lugar. → [[concepts/fazer-por-voce]]
-- **Pair programming** para kickoff de tarefas desconhecidas — discute requisitos, solução, convenções de codebase com quem tem contexto. → [[concepts/pair-programming]]
-- **Pomodoro** como trigger de outros hábitos (habit stacking) — 30min de trabalho, recap: "modo solução ou modo travado?". → [[concepts/pomodoro]]
-- **Documentar conquistas** diariamente — bullet points de pequenas vitórias. Agrega para avaliações de performance e para comunicar progresso. → [[concepts/documentar-conquistas]]
-- **Sem balas de prata** — não existe arquitetura, framework ou linguagem universal. Opinião sem argumento é ruído. → [[concepts/sem-balas-de-prata]]
+- **Voluntariar para o desconhecido** é o hábito mais importante e não tem prazo de validade — cada projeto é um mundo novo. → [[wiki/concepts/voluntariar-para-desconhecido]]
+- **Comunicar progresso** ao longo do processo, não no final, elimina "por que demorou tanto?" e desbloqueia problemas via discussão. → [[wiki/concepts/comunicar-progresso]]
+- **Escrever para ensinar** (blog, wiki, notas) organiza o pensamento linearmente — melhor momento é enquanto aprende, não depois. → [[wiki/concepts/escrever-para-aprender]]
+- **Bloquear agenda** para tarefas importantes — sem bloquear, o dia é consumido por outros. "Você não controla sua agenda, as outras pessoas controlam." → [[wiki/concepts/bloqueio-de-agenda]]
+- **Começar do zero** após pausa é melhor que dar continuidade — base com qualidade superior e destravar o problema com mais facilidade. → [[wiki/concepts/pausa-estrategica]]
+- **Fazer por você** — hábitos de crescimento não devem ser motivados pelo chefe ou empresa. Quem faz por si carrega o nível para qualquer lugar. → [[wiki/concepts/fazer-por-voce]]
+- **Pair programming** para kickoff de tarefas desconhecidas — discute requisitos, solução, convenções de codebase com quem tem contexto. → [[wiki/concepts/pair-programming]]
+- **Pomodoro** como trigger de outros hábitos (habit stacking) — 30min de trabalho, recap: "modo solução ou modo travado?". → [[wiki/concepts/pomodoro]]
+- **Documentar conquistas** diariamente — bullet points de pequenas vitórias. Agrega para avaliações de performance e para comunicar progresso. → [[wiki/concepts/documentar-conquistas]]
+- **Sem balas de prata** — não existe arquitetura, framework ou linguagem universal. Opinião sem argumento é ruído. → [[wiki/concepts/sem-balas-de-prata]]
 
 ## Entities
 
@@ -40,7 +40,7 @@ Dois ângulos sobre os mesmos hábitos: artigo técnico de Tom Hombergs (12+ ano
 
 ## Concepts
 
-[[concepts/voluntariar-para-desconhecido]] · [[concepts/comunicar-progresso]] · [[concepts/escrever-para-aprender]] · [[concepts/bloqueio-de-agenda]] · [[concepts/pausa-estrategica]] · [[concepts/fazer-por-voce]] · [[concepts/pair-programming]] · [[concepts/pomodoro]] · [[concepts/documentar-conquistas]] · [[concepts/sem-balas-de-prata]]
+[[wiki/concepts/voluntariar-para-desconhecido]] · [[wiki/concepts/comunicar-progresso]] · [[wiki/concepts/escrever-para-aprender]] · [[wiki/concepts/bloqueio-de-agenda]] · [[wiki/concepts/pausa-estrategica]] · [[wiki/concepts/fazer-por-voce]] · [[wiki/concepts/pair-programming]] · [[wiki/concepts/pomodoro]] · [[wiki/concepts/documentar-conquistas]] · [[wiki/concepts/sem-balas-de-prata]]
 
 ## Open Questions
 

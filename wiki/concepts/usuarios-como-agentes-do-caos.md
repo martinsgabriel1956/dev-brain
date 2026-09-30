@@ -35,4 +35,4 @@ Strings vazias, null, valores negativos, caracteres especiais (emoji, aspas, bar
 
 ## Key Sources
 
-- [[sources/5-principios-programador]]
+- [[wiki/sources/5-principios-programador]]

@@ -22,14 +22,14 @@ Quem cresce para impressionar o chefe para quando o chefe muda. Quem cresce para
 
 ## Contraste com Dizer Sim para Tudo
 
-[[concepts/dizer-sim-para-tudo]] vem de querer agradar outros. Fazer por você inverte: você define o que importa para seu crescimento e age em função disso — o que naturalmente resulta em contribuição melhor para o time.
+[[wiki/concepts/dizer-sim-para-tudo]] vem de querer agradar outros. Fazer por você inverte: você define o que importa para seu crescimento e age em função disso — o que naturalmente resulta em contribuição melhor para o time.
 
 ## Aplicação
 
-- Bloqueie agenda ([[concepts/bloqueio-de-agenda]]) para o que faz você crescer — não para o que o chefe quer ver.
-- Voluntarie-se ([[concepts/voluntariar-para-desconhecido]]) pelo aprendizado, não pelo reconhecimento.
-- Escreva ([[concepts/escrever-para-aprender]]) para você aprender — audiência é consequência.
+- Bloqueie agenda ([[wiki/concepts/bloqueio-de-agenda]]) para o que faz você crescer — não para o que o chefe quer ver.
+- Voluntarie-se ([[wiki/concepts/voluntariar-para-desconhecido]]) pelo aprendizado, não pelo reconhecimento.
+- Escreva ([[wiki/concepts/escrever-para-aprender]]) para você aprender — audiência é consequência.
 
 ## Key Sources
 
-- [[sources/9-habitos-programador-junior]]
+- [[wiki/sources/9-habitos-programador-junior]]

@@ -19,7 +19,7 @@ Registro imutável e estruturado de toda operação sensível em um sistema. É 
 Um único schema de audit log satisfaz múltiplos frameworks simultaneamente:
 - **SOC 2 CC7.2** — log de acesso a dados sensíveis
 - **PCI-DSS Req 10** — log de acesso a sistema de cartões
-- **ISO 27001 A.12.4** (numeração pré-2022) — log de eventos de segurança. A versão 2022 do Anexo A renumerou os controles; ver [[concepts/iso-27001]] para a numeração atual (o mapeamento exato entre A.12.4 antigo e o controle equivalente em 2022 não foi verificado contra o texto oficial da norma)
+- **ISO 27001 A.12.4** (numeração pré-2022) — log de eventos de segurança. A versão 2022 do Anexo A renumerou os controles; ver [[wiki/concepts/iso-27001]] para a numeração atual (o mapeamento exato entre A.12.4 antigo e o controle equivalente em 2022 não foi verificado contra o texto oficial da norma)
 - **LGPD Art. 37** — registro de operações de tratamento
 
 ## Schema Mínimo
@@ -46,10 +46,10 @@ Imutável: use S3 Object Lock ou append-only. Retenção mínima: 1 ano (PCI-DSS
 
 ## Key Sources
 
-- [[sources/compliance]] — cenários de engenharia onde audit log é obrigatório
-- [[sources/compliance-soc2-pci]] — audit log como evidência universal para SOC 2/PCI/ISO 27001
+- [[wiki/sources/compliance]] — cenários de engenharia onde audit log é obrigatório
+- [[wiki/sources/compliance-soc2-pci]] — audit log como evidência universal para SOC 2/PCI/ISO 27001
 - [[wiki/sources/iso-27001-dicionario-programador]] — integridade (um dos três pilares da tríade CIA) como justificativa central para logs imutáveis e assinados
 
 ## Conceitos Relacionados
 
-[[concepts/compliance]] · [[concepts/data-privacy]] · [[concepts/lgpd-gdpr]] · [[concepts/iso-27001]] · [[concepts/triade-cia]]
+[[wiki/concepts/compliance]] · [[concepts/data-privacy]] · [[concepts/lgpd-gdpr]] · [[wiki/concepts/iso-27001]] · [[wiki/concepts/triade-cia]]

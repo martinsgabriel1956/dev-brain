@@ -41,7 +41,7 @@ Devs que nunca contaram as instruções totais do seu agente frequentemente est�
 
 ## Relação com Dumb Zone
 
-Instruction budget e [[concepts/dumb-zone]] são problemas relacionados mas distintos:
+Instruction budget e [[wiki/concepts/dumb-zone]] são problemas relacionados mas distintos:
 - Dumb zone: degradação por uso excessivo da *context window* (tokens)
 - Instruction budget: degradação por excesso de *instruções* (não necessariamente tokens — uma instrução pode ser curta)
 
@@ -58,6 +58,6 @@ Isso confirma empiricamente que cada instrução adicionada ao `agents.md` ou `C
 
 ## Key Sources
 
-- [[sources/erros-workflow-research-plan-implement]]
-- [[sources/context-engineering-avancado-para-coding-agents]]
+- [[wiki/sources/erros-workflow-research-plan-implement]]
+- [[wiki/sources/context-engineering-avancado-para-coding-agents]]
 - [[wiki/sources/agents-md-vale-a-pena-paper-zurique]] — dados empíricos de custo por tamanho de arquivo de contexto

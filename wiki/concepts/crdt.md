@@ -28,5 +28,5 @@ Em arquiteturas [[wiki/concepts/local-first]], CRDT é a alternativa a [[wiki/co
 
 ## Key Sources
 
-- [[sources/crdt-colaboracao-tempo-real]]
+- [[wiki/sources/crdt-colaboracao-tempo-real]]
 - [[wiki/sources/local-first-vs-offline-first]]

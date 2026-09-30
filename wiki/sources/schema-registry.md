@@ -39,9 +39,9 @@ Schema Registry centraliza e versiona schemas de eventos Kafka. Sem ele, produce
 ## Entities & Concepts Touched
 
 - [[concepts/schema-registry]]
-- [[concepts/avro]]
-- [[concepts/protobuf]]
-- [[concepts/backward-compatibility]]
+- [[wiki/concepts/avro]]
+- [[wiki/concepts/protobuf]]
+- [[wiki/concepts/backward-compatibility]]
 - [[concepts/forward-compatibility]]
 - [[concepts/event-versioning]]
 - [[entities/confluent]]

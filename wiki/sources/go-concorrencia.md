@@ -34,4 +34,4 @@ Go implementa CSP (Communicating Sequential Processes) — goroutines se comunic
 
 ## Conceitos Abordados
 
-- [[concepts/go-concorrencia]] · [[concepts/go-fundamentos]] · [[concepts/go-stdlib]] · [[distributed-locks]]
+- [[wiki/concepts/go-concorrencia]] · [[wiki/concepts/go-fundamentos]] · [[wiki/concepts/go-stdlib]] · [[distributed-locks]]

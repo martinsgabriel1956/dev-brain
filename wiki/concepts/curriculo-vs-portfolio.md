@@ -25,7 +25,7 @@ status: stable
 
 Empresas que fazem coisas novas não podem filtrar por "anos de experiência em X" — X talvez não exista ainda. O que elas precisam é evidência de que a pessoa chegou ao topo de alguma coisa.
 
-Portfólio demonstra [[concepts/profundidade-e-maestria]] de forma tangível. Currículo apenas a descreve.
+Portfólio demonstra [[wiki/concepts/profundidade-e-maestria]] de forma tangível. Currículo apenas a descreve.
 
 ## O que conta como portfólio
 
@@ -46,9 +46,9 @@ Em revisão real de currículos de candidatos júnior, a ausência de link para 
 
 ## Ver também
 
-- [[concepts/profundidade-e-maestria]] — portfólio é a prova da profundidade
-- [[concepts/abrangencia-profissional]] — portfólio pode mostrar múltiplas dimensões
-- [[entities/randy-nelson]] — origem da distinção promessa vs prova
+- [[wiki/concepts/profundidade-e-maestria]] — portfólio é a prova da profundidade
+- [[wiki/concepts/abrangencia-profissional]] — portfólio pode mostrar múltiplas dimensões
+- [[wiki/entities/randy-nelson]] — origem da distinção promessa vs prova
 - [[wiki/concepts/ponte-fullstack-para-especializacao]] — quando não há experiência formal na stack-alvo, o portfólio (e o discurso "entrego o que um pleno entrega") substitui o currículo como prova
 - [[wiki/concepts/otimizacao-ats-curriculo]] — a barreira automática que vem antes da avaliação humana da promessa vs prova
 
@@ -66,7 +66,7 @@ Em revisão real de currículos de candidatos júnior, a ausência de link para 
 
 ## Key Sources
 
-- [[sources/tres-caracteristicas-melhor-candidato]]
+- [[wiki/sources/tres-caracteristicas-melhor-candidato]]
 - [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] — currículo/habilidades orientados ao que as vagas pedem, desenvolvidos antes da busca por emprego, não depois
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — tensão: poder de sinal do portfólio/GitHub caiu porque a IA barateou a produção do artefato que antes provava competência
 - [[wiki/sources/diferenciais-portfolio-backend-junior]]

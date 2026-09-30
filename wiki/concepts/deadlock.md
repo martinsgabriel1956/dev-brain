@@ -46,7 +46,7 @@ Quebrar qualquer uma das 4 previne deadlock.
 ## Deadlock vs Starvation
 
 - **Deadlock**: threads bloqueadas para sempre (nenhuma avança)
-- **Starvation**: thread nunca é agendada, mas o sistema avança. Solução: aging de prioridade no [[concepts/escalonador]]
+- **Starvation**: thread nunca é agendada, mas o sistema avança. Solução: aging de prioridade no [[wiki/concepts/escalonador]]
 
 ## Deadlock por Banco de Dados Compartilhado entre Microsserviços
 
@@ -58,14 +58,14 @@ Deadlock não é só de threads em memória — bancos relacionais também sofre
 
 ## Ver também
 
-- [[concepts/mutex]] — mecanismo que, se mal usado, causa deadlock
-- [[concepts/thread]] — unidade de execução que pode entrar em deadlock
-- [[concepts/escalonador]] — aging evita starvation mas não resolve deadlock
+- [[wiki/concepts/mutex]] — mecanismo que, se mal usado, causa deadlock
+- [[wiki/concepts/thread]] — unidade de execução que pode entrar em deadlock
+- [[wiki/concepts/escalonador]] — aging evita starvation mas não resolve deadlock
 
 ## Key Sources
 
-- [[sources/sistema-operacional-por-baixo-dos-panos]]
-- [[sources/como-sistemas-operacionais-funcionam]]
+- [[wiki/sources/sistema-operacional-por-baixo-dos-panos]]
+- [[wiki/sources/como-sistemas-operacionais-funcionam]]
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]] — gap locking do MySQL como causa de deadlock em reserva de estoque de alta concorrência
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — deadlock por banco de dados compartilhado entre microsserviços, resolvido isolando um banco por serviço

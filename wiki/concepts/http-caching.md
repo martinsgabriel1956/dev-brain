@@ -3,8 +3,8 @@ type: concept
 title: "HTTP Caching (Browser)"
 aliases: ["cache do browser", "cache HTTP"]
 date_created: 2026-07-28
-date_updated: 2026-07-28
-source_count: 1
+date_updated: 2026-09-30
+source_count: 2
 tags: [http, cache, browser, critical-rendering-path, performance]
 skill: tech-mentor-frontend
 status: stub
@@ -17,3 +17,4 @@ Primeira checagem do browser ao processar uma URL, antes de qualquer etapa de re
 
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
+- [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — `Cache-Control` como header que define se a resposta pode ser guardada e reaproveitada (ver [[wiki/concepts/http-headers]])

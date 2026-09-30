@@ -23,16 +23,16 @@ Devs não terminam projetos por quatro razões psicológicas encadeadas: dopamin
 
 ## Key Claims
 
-- **Dopamina e antecipação**: o cérebro libera mais dopamina antecipando a recompensa do que ao recebê-la — ideação é quimicamente mais prazerosa que construção. → [[concepts/dopamina-e-projetos]]
-- **Planning fallacy**: subestimamos brutalmente quanto tempo tarefas levam, especialmente em domínios novos. Some a Dunning-Kruger e o scope explode. → [[concepts/planning-fallacy]]
-- **Scope creep**: blog simples → auth → dark mode → CMS → email → IA. Funcionalidades se acumulam antes de ter um usuário. → [[concepts/scope-creep]]
-- **Cognitive load sem sistema**: sem roadmap e tracking, a memória de trabalho satura e gera burnout — ciência é chamada de Cognitive Load Theory. → [[concepts/carga-cognitiva]]
-- **Goal gradient effect**: progresso visível impulsiona motivação; ambiguidade a mata. Tasks checkadas = micro-dopamina = continuidade. → [[concepts/goal-gradient-effect]]
-- **Perfeccionismo como self-handicapping**: procrastinar ou superperfeicionar é mecanismo de defesa contra falha/julgamento. → [[concepts/perfeccionismo-em-devs]]
-- **Paralisia por análise**: muitas escolhas levam a menos ação. → [[concepts/paralisia-por-analise]]
-- **Desirable difficulties**: aprender através da luta produz melhores resultados a longo prazo — Kolb, experiential learning. → [[concepts/aprendizado-por-luta]]
-- **Vibe coding ≠ aprendizado**: deixar IA escrever toda a lógica = LARPar de dev. IA é ferramenta, não piloto. → [[concepts/vibe-coding]]
-- **MVP real**: "bom o suficiente para shippar" > perfeito mas eterno em dev. → [[concepts/mvp]]
+- **Dopamina e antecipação**: o cérebro libera mais dopamina antecipando a recompensa do que ao recebê-la — ideação é quimicamente mais prazerosa que construção. → [[wiki/concepts/dopamina-e-projetos]]
+- **Planning fallacy**: subestimamos brutalmente quanto tempo tarefas levam, especialmente em domínios novos. Some a Dunning-Kruger e o scope explode. → [[wiki/concepts/planning-fallacy]]
+- **Scope creep**: blog simples → auth → dark mode → CMS → email → IA. Funcionalidades se acumulam antes de ter um usuário. → [[wiki/concepts/scope-creep]]
+- **Cognitive load sem sistema**: sem roadmap e tracking, a memória de trabalho satura e gera burnout — ciência é chamada de Cognitive Load Theory. → [[wiki/concepts/carga-cognitiva]]
+- **Goal gradient effect**: progresso visível impulsiona motivação; ambiguidade a mata. Tasks checkadas = micro-dopamina = continuidade. → [[wiki/concepts/goal-gradient-effect]]
+- **Perfeccionismo como self-handicapping**: procrastinar ou superperfeicionar é mecanismo de defesa contra falha/julgamento. → [[wiki/concepts/perfeccionismo-em-devs]]
+- **Paralisia por análise**: muitas escolhas levam a menos ação. → [[wiki/concepts/paralisia-por-analise]]
+- **Desirable difficulties**: aprender através da luta produz melhores resultados a longo prazo — Kolb, experiential learning. → [[wiki/concepts/aprendizado-por-luta]]
+- **Vibe coding ≠ aprendizado**: deixar IA escrever toda a lógica = LARPar de dev. IA é ferramenta, não piloto. → [[wiki/concepts/vibe-coding]]
+- **MVP real**: "bom o suficiente para shippar" > perfeito mas eterno em dev. → [[wiki/concepts/mvp]]
 
 ## Entities
 
@@ -40,7 +40,7 @@ Devs não terminam projetos por quatro razões psicológicas encadeadas: dopamin
 
 ## Concepts
 
-[[concepts/dopamina-e-projetos]] · [[concepts/planning-fallacy]] · [[concepts/scope-creep]] · [[concepts/carga-cognitiva]] · [[concepts/goal-gradient-effect]] · [[concepts/perfeccionismo-em-devs]] · [[concepts/paralisia-por-analise]] · [[concepts/aprendizado-por-luta]] · [[concepts/vibe-coding]] · [[concepts/mvp]]
+[[wiki/concepts/dopamina-e-projetos]] · [[wiki/concepts/planning-fallacy]] · [[wiki/concepts/scope-creep]] · [[wiki/concepts/carga-cognitiva]] · [[wiki/concepts/goal-gradient-effect]] · [[wiki/concepts/perfeccionismo-em-devs]] · [[wiki/concepts/paralisia-por-analise]] · [[wiki/concepts/aprendizado-por-luta]] · [[wiki/concepts/vibe-coding]] · [[wiki/concepts/mvp]]
 
 ## Open Questions
 

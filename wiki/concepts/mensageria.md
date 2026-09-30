@@ -4,7 +4,7 @@ title: "Mensageria"
 aliases: ["message broker", "queue", "stream", "eda", "event driven"]
 date_created: 2026-04-23
 date_updated: 2026-09-30
-source_count: 14
+source_count: 15
 tags: [mensageria, kafka, rabbitmq, sqs, queue, stream, eda, at-least-once, dlq]
 skill: tech-mentor-backend
 status: stub
@@ -45,8 +45,8 @@ No vídeo de [[wiki/entities/bernardo-lobato]], o broker de tópicos/eventos (Ka
 
 - [[wiki/sources/case-twitter-feed]] — O feed do Twitter é o caso clássico de **fan-out de escrita em escala extrema**. A solução é híbrida: fan-out on write para usuários normais (pré-computa timelines no Redis) e fan-out on read para...
 - [[wiki/sources/numeros-de-latencia]] — RAM é 1000× mais rápida que SSD; SSD é 100× mais rápido que HDD. Redis ~0.1ms, PostgreSQL com índice 1-10ms, cross-region 130-250ms. Cada hop de rede no mesmo DC custa ~0.5ms — 10 microserviços no...
-- [[sources/mensageria]]
-- [[sources/design-pattern-observer]] — distinção Observer (in-process) vs Pub/Sub (broker distribuído)
+- [[wiki/sources/mensageria]]
+- [[wiki/sources/design-pattern-observer]] — distinção Observer (in-process) vs Pub/Sub (broker distribuído)
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — Redis Pub/Sub como notificador entre microsserviços, sem persistência nem replay
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — mitigação da perda de mensagem via tabela de pendentes, quando o assinante Redis Pub/Sub está offline
 - [[wiki/sources/pub-sub-message-queue-bullmq-na-pratica]] — distinção prática Pub/Sub vs queue e quickstart de BullMQ sobre Redis
@@ -57,3 +57,4 @@ No vídeo de [[wiki/entities/bernardo-lobato]], o broker de tópicos/eventos (Ka
 - [[wiki/sources/ambulance-pattern-priorizacao-mensagens-mark-richards]] — por que prioridade embutida na mensagem causa starvation, e por que separar em duas filas físicas (opcionalmente com instância dedicada por fila) resolve sem esse efeito colateral
 - [[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] — publicar numa fila/broker logo após um INSERT no banco não é atômico por padrão (dual write problem); solução via [[wiki/concepts/outbox-pattern]]
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — publicar evento "pedido criado" em fila/tópico consumido por Estoque e Faturamento; broker vs. polling vs. webhook
+- [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — eventos de CQRS transportados como mensagens numa fila gerenciada por broker; consumer assíncrono apartado da aplicação de escrita

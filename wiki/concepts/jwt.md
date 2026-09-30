@@ -3,8 +3,8 @@ type: concept
 title: "JWT — JSON Web Token"
 aliases: ["JWT", "JSON Web Token", "access token", "refresh token"]
 date_created: 2026-07-27
-date_updated: 2026-09-22
-source_count: 7
+date_updated: 2026-09-30
+source_count: 8
 tags: [jwt, autenticacao, stateless, token, seguranca]
 skill: tech-mentor-security
 status: draft
@@ -117,3 +117,4 @@ No contexto de [[wiki/concepts/openid-connect]], o ID Token é especificamente u
 - [[wiki/sources/refresh-token-pattern-access-token-de-curta-duracao]] — janela de exposição, por que Access Token de longa duração é falha de segurança, e por que armazenar refresh token só no backend quebra o fluxo stateless
 - [[wiki/sources/jose-jws-jwe-jwk-jwa-algorithm-confusion-paseto]] — ecossistema JOSE (JWS/JWE/JWK/JWA) por trás do JWT, ataque de algorithm confusion (`alg: none` e RS256→HS256), e o PASETO como alternativa de cipher rigidity
 - [[wiki/sources/anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato]] — "Anatomia de um Token 1", vídeo predecessor da fonte acima: contraste formal entre token autocontido (JWT) e token opaco, e introdução em nível superficial do JOSE
+- [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — `Authorization: Bearer <token>` como header; erros de formato (esquecer `Bearer`, espaço) geram 401

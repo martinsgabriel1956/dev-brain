@@ -38,13 +38,13 @@ Saga é o padrão para transações distribuídas sem 2PC. Duas abordagens: Chor
 
 ## Entities & Concepts Touched
 
-- [[concepts/saga-pattern]]
-- [[concepts/choreography]]
-- [[concepts/orchestration]]
+- [[wiki/concepts/saga-pattern]]
+- [[wiki/concepts/choreography]]
+- [[wiki/concepts/orchestration]]
 - [[concepts/compensating-transaction]]
-- [[concepts/idempotencia]]
+- [[wiki/concepts/idempotencia]]
 - [[entities/temporal]]
-- [[concepts/distributed-transactions]]
+- [[wiki/concepts/distributed-transactions]]
 
 ## Open Questions
 

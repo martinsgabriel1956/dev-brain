@@ -62,7 +62,7 @@ function addItem(cart: Cart, item: Item): Cart {
 
 [[datomic]] implementa imutabilidade no nível do banco de dados: acumula fatos (datoms) em um log append-only. Histórico completo sempre preservado com time-travel nativo.
 
-[[concepts/event-sourcing]] aplica o mesmo princípio ao nível do domínio: eventos são fatos imutáveis, estado é derivado por replay.
+[[wiki/concepts/event-sourcing]] aplica o mesmo princípio ao nível do domínio: eventos são fatos imutáveis, estado é derivado por replay.
 
 ## Por que Resolve Complexidade
 
@@ -82,4 +82,4 @@ Exemplo: o caractere chinês `世` ocupa 3 bytes em UTF-8. Sobrescrever apenas o
 
 - [[wiki/sources/acoplamento-abstracao-estado]]
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
-- [[sources/como-strings-realmente-funcionam]] — motivação técnica para imutabilidade de strings: proteger encoding UTF-8 de corrupção por indexação de bytes
+- [[wiki/sources/como-strings-realmente-funcionam]] — motivação técnica para imutabilidade de strings: proteger encoding UTF-8 de corrupção por indexação de bytes

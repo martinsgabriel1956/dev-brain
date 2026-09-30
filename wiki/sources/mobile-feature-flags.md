@@ -32,4 +32,4 @@ Feature flags dissociam deploy de release — código vai para produção, ativa
 
 ## Conceitos Abordados
 
-- [[concepts/mobile-feature-flags]] · [[concepts/mobile-cicd]] · [[concepts/feature-flags]] · [[concepts/mobile-monitoramento]]
+- [[wiki/concepts/mobile-feature-flags]] · [[wiki/concepts/mobile-cicd]] · [[wiki/concepts/feature-flags]] · [[wiki/concepts/mobile-monitoramento]]

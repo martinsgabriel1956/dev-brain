@@ -34,11 +34,11 @@ Expand-Contract (também: Parallel Change) é o padrão para mudar contratos —
 
 ## Entities & Concepts Touched
 
-- [[concepts/expand-contract]]
+- [[wiki/concepts/expand-contract]]
 - [[concepts/parallel-change]]
-- [[concepts/zero-downtime]]
-- [[concepts/schema-migration]]
-- [[concepts/backward-compatibility]]
+- [[wiki/concepts/zero-downtime]]
+- [[wiki/concepts/schema-migration]]
+- [[wiki/concepts/backward-compatibility]]
 - [[concepts/schema-registry]]
 
 ## Open Questions

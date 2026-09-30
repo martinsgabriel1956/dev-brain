@@ -16,8 +16,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 ## Contexto das citações
 
-- Em [[wiki/sources/agentes-core]]: [[concepts/computer-use]]
-- Em [[wiki/sources/reasoning-models]]: [[concepts/computer-use]]
+- Em [[wiki/sources/agentes-core]]: [[wiki/concepts/computer-use]]
+- Em [[wiki/sources/reasoning-models]]: [[wiki/concepts/computer-use]]
 
 ## Pendências
 

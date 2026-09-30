@@ -48,9 +48,9 @@ IA amplifica o que você já sabe. Dev que entende sistemas usa IA para acelerar
 
 ## Relações
 
-- [[concepts/vibe-coding]] — padrão de uso irrefletido de IA que acelera o ciclo
-- [[concepts/piramide-de-testes]] — testes como seguro contra decisões ruins da IA
-- [[concepts/pensamento-sistemico]] — o que se perde quando a dependência cresce
+- [[wiki/concepts/vibe-coding]] — padrão de uso irrefletido de IA que acelera o ciclo
+- [[wiki/concepts/piramide-de-testes]] — testes como seguro contra decisões ruins da IA
+- [[wiki/concepts/pensamento-sistemico]] — o que se perde quando a dependência cresce
 
 ## IA Como Etapa de Consulta, Não Atalho
 
@@ -58,7 +58,7 @@ IA amplifica o que você já sabe. Dev que entende sistemas usa IA para acelerar
 
 ## Key Sources
 
-- [[sources/roadmap-dev-senior-2026]]
-- [[sources/apagao-de-seniors-vibe-coding]]
-- [[sources/pensamento-estruturado-resolucao-de-problemas]] — sem pensamento estruturado, a IA devolve "um milhão de possibilidades" em vez de uma solução específica; pensar bem é o que torna o uso de IA produtivo em vez de mais um ciclo de dependência
+- [[wiki/sources/roadmap-dev-senior-2026]]
+- [[wiki/sources/apagao-de-seniors-vibe-coding]]
+- [[wiki/sources/pensamento-estruturado-resolucao-de-problemas]] — sem pensamento estruturado, a IA devolve "um milhão de possibilidades" em vez de uma solução específica; pensar bem é o que torna o uso de IA produtivo em vez de mais um ciclo de dependência
 - [[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] — IA como consulta na etapa 2; sem discussão de risco
