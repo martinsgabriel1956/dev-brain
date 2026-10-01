@@ -3,8 +3,8 @@ type: concept
 title: "Bounded Context"
 aliases: ["bounded context", "contexto delimitado"]
 date_created: 2026-08-18
-date_updated: 2026-09-30
-source_count: 5
+date_updated: 2026-10-01
+source_count: 6
 tags: [ddd, arquitetura, cqrs, microsservicos]
 skill: tech-mentor-backend
 status: stub
@@ -45,3 +45,4 @@ Fowler é explícito: aplicar CQRS como estilo arquitetural geral para um sistem
 - [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] — bounded context como base conceitual de "uma e somente uma responsabilidade" dentro de um serviço de microsserviços
 - [[wiki/sources/cqrs-martin-fowler]]
 - [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — fonte primária do bounded context como limite linguístico; duas classes "Produto" (Vendas/Suporte); ≠ subdomínio, ≠ linguagem ubíqua
+- [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] — duas representações de Usuário por slice como a mesma lógica de fronteira semântica, em granularidade mais fina; ver [[wiki/concepts/dominio-centralizado-vs-modelo-por-slice]]

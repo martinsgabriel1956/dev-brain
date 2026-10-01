@@ -3,8 +3,8 @@ type: concept
 title: "BASE (Basically Available, Soft State, Eventual Consistency)"
 aliases: ["base", "basically available soft state eventual consistency", "garantias base"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 1
+date_updated: 2026-10-01
+source_count: 2
 tags: [banco-de-dados, base, nosql, consistencia-eventual, disponibilidade, system-design]
 skill: tech-mentor-system-design
 status: stub
@@ -42,3 +42,4 @@ Contextos onde uma inconsistência temporária não importa: redes sociais (cont
 ## Key Sources
 
 - [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]]
+- [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] — exemplos AP de feed/comentários

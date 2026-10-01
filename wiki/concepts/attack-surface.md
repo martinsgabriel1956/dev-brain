@@ -3,8 +3,8 @@ type: concept
 title: "Attack Surface (Superfície de Ataque)"
 aliases: ["attack surface", "superfície de ataque", "minimização de superfície", "surface minimization"]
 date_created: 2026-06-05
-date_updated: 2026-09-08
-source_count: 8
+date_updated: 2026-10-01
+source_count: 9
 tags: [attack-surface, security, arquitetura-seguranca, defense-in-depth, gatekeeper]
 skill: tech-mentor-security
 status: stable
@@ -65,6 +65,10 @@ Nem toda superfície é intencional. [[wiki/sources/vibe-coding-env-exposto-idor
 
 Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], o autor generaliza um princípio observacional: quanto mais visibilidade um projeto tem (canal com audiência, presença ativa em rede social), mais ataques ele atrai — não porque a superfície técnica mudou, mas porque mais gente sabe que ela existe e tem motivo para testá-la (script kiddies, estudantes de segurança praticando). Cita como exemplo negativo o caso do "Cinema Hub" de Abraham, que deixou um arquivo `.env` publicamente acessível e teve a base de dados inteira exportada — mesma classe de falha (dotfile de configuração exposto) documentada acima via [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]], em um caso independente e não relacionado.
 
+## Credenciais Visadas por Categoria, Não Só por Exposição
+
+[[wiki/sources/secrets-vazadas-no-github-conceitos-e-riscos]] acrescenta uma dimensão diferente das já documentadas acima (URLs públicas, IDs sequenciais, rotas previsíveis): a superfície de ataque não é só "o que está exposto", mas também "o que é mais visado dentro do que está exposto". Termos de busca associados a gateways de pagamento (Pix, postback URL) funcionam como sinal indireto de que um repositório lida com sistemas financeiros reais — ou seja, mesmo dentro de um universo de credenciais vazadas, chaves de LLM e de pagamento concentram mais interesse ofensivo do que tokens genéricos, pelo valor de revenda/uso imediato.
+
 ## Key Sources
 
 - [[wiki/sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
@@ -75,3 +79,4 @@ Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], 
 - [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] — brute force de diretórios (dirsearch) como técnica de recon que descobre superfície não intencional
 - [[wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv]] — campo de busca sem sanitização como ponto de entrada explorável (reflected XSS); exemplo didático de que qualquer campo que reflete input do usuário na resposta é superfície de ataque
 - [[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] — segundo caso independente de dirsearch revelando superfície não linkada (painel admin `/admin` e `/dashboard`, em vez de um `.env`)
+- [[wiki/sources/secrets-vazadas-no-github-conceitos-e-riscos]] — categorias de credencial mais visadas (LLM, gateway de pagamento) como dimensão adicional da superfície além da exposição pura

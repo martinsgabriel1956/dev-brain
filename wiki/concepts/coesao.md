@@ -3,8 +3,8 @@ type: concept
 title: "Coesão"
 aliases: ["cohesion", "alta coesão", "baixa coesão"]
 date_created: 2026-04-25
-date_updated: 2026-09-30
-source_count: 4
+date_updated: 2026-10-01
+source_count: 5
 tags: [coesao, software-design, clean-code, arquitetura]
 skill: tech-mentor-backend
 status: stub
@@ -66,3 +66,4 @@ O critério de coesão não se limita a funções e módulos. [[wiki/sources/3-d
 - [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] — coesão como critério para dividir mudanças de processo, não só código
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]] — god object (agrupamento indevido) e data clumps (falta de agrupamento devido) como baixa coesão em direções opostas
 - [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — módulo mantém só o que interessa ao seu contexto
+- [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] — alta coesão como benefício do Vertical Slice: todo o código de uma funcionalidade agrupado na slice

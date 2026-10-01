@@ -3,8 +3,8 @@ type: concept
 title: "MongoDB"
 aliases: ["mongo", "bson"]
 date_created: 2026-07-27
-date_updated: 2026-09-30
-source_count: 4
+date_updated: 2026-10-01
+source_count: 5
 tags: [mongodb, nosql, banco-de-dados, document-database, backend]
 skill: tech-mentor-backend
 status: stub
@@ -44,3 +44,4 @@ Diferente do [[wiki/concepts/postgresql|Postgres]] (otimizado para leitura por p
 - [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] — citado como exemplo canônico de SGBD NoSQL orientado a documentos em prova de concurso
 - [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]] — arquitetura nativamente distribuída/otimizada para escrita como critério de escolha independente do formato do dado
 - [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — banco de documentos é candidato típico a read model JSON em CQRS (a fonte fala de NoSQL em geral, não cita o produto)
+- [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — citado como exemplo de garantias configuráveis (read/write concern); ver [[wiki/concepts/cap-classificacao-por-comportamento]]

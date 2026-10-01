@@ -3,8 +3,8 @@ type: concept
 title: "Modelos de Consistência"
 aliases: ["modelos de consistência", "consistency models", "linearizability", "sequential consistency", "causal consistency", "eventual consistency"]
 date_created: 2026-04-22
-date_updated: 2026-09-23
-source_count: 5
+date_updated: 2026-10-01
+source_count: 7
 tags: [sistemas-distribuidos, consistencia, cap, linearizability, eventual, causal]
 skill: tech-mentor-system-design
 status: stable
@@ -132,3 +132,5 @@ Eventual Consistency é o "E" de [[wiki/concepts/base-basically-available-soft-s
 - [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] — exemplo de réplicas não sincronizadas e o acrônimo BASE
 - [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — consistência eventual como preço direto do write/read split: escrita no master pode não estar disponível numa leitura quase simultânea de um slave; mitigar com lock reintroduziria SPOF (escrita só confirmada após propagação)
 - [[wiki/sources/github-2018-cap-pacelc-particao-video]] — leitura local (possivelmente defasada) vs. leitura forte medidas em teste local ([[wiki/concepts/custo-da-leitura-forte-vs-local]])
+- [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] — consistência tratada como binária (lacuna frente aos modelos intermediários)
+- [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — "consistência" do CAP (leitura vê o mais recente em qualquer nó) vs. do ACID; ver [[wiki/concepts/consistencia-cap-vs-consistencia-acid]]

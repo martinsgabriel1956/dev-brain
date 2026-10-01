@@ -3,8 +3,8 @@ type: concept
 title: "Amazon DynamoDB"
 aliases: ["DynamoDB", "Dynamo"]
 date_created: 2026-08-04
-date_updated: 2026-09-22
-source_count: 6
+date_updated: 2026-10-01
+source_count: 7
 tags: ["aws", "dynamodb", "nosql", "banco-de-dados", "infra", "cloud"]
 skill: tech-mentor-infra
 status: stub
@@ -56,3 +56,4 @@ Cenário concreto onde DynamoDB supera Postgres: base de dados grande (muito sto
 - [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]] — uso via LocalStack para desenvolvimento local, em conjunto com PostgreSQL como banco principal
 - [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — escolha de NoSQL sobre SQL justificada por dois fatores concretos aplicados a um encurtador de URL: dados naturalmente chave-valor (short-code → URL longa) e requisito não-funcional de baixa latência
 - [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]] — modelo de cobrança WCU/RCU por KB de payload, e cenário de storage alto + transação baixa onde DynamoDB compensa mais que Postgres
+- [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — consistência configurável por operação como exemplo de CAP por comportamento (citado a partir da skill, não do vídeo)

@@ -3,8 +3,8 @@ type: concept
 title: "Monolito Modular"
 aliases: ["monolito modular", "modular monolith", "majestic monolith", "bounded modules"]
 date_created: 2026-08-10
-date_updated: 2026-09-30
-source_count: 9
+date_updated: 2026-10-01
+source_count: 10
 tags: [monolito-modular, monolito, arquitetura, ports-adapters, migracao, backend]
 skill: tech-mentor-backend
 status: draft
@@ -67,3 +67,4 @@ Contratos entre módulos garantem [[wiki/concepts/separation-of-concerns]] e [[w
 - [[wiki/sources/os-10-principios-arquitetura-modular-valdemar-neto]] — distinção formal monolito modular vs. [[wiki/concepts/arquitetura-modular|arquitetura modular]], os 10 princípios para escalar arquitetura modular, argumento de que microsserviços não compõem
 - [[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] — os três tipos de módulo (domínio, infraestrutura pura, feature) e a estrutura interna Core/Supporting Infrastructure/Infraestrutura Pura
 - [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — bounded context como critério de modularização
+- [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] — slice como unidade de isolamento por funcionalidade dentro de um monólito, antes da extração

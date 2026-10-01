@@ -3,8 +3,8 @@ type: concept
 title: "Navigation Paradox"
 aliases: ["navigation paradox", "paradoxo de navegação", "dependência escondida agente"]
 date_created: 2026-04-23
-date_updated: 2026-08-04
-source_count: 3
+date_updated: 2026-10-01
+source_count: 4
 tags: [ia, agentes, arquitetura, dependencias, tokens, benchmark, pesquisa]
 skill: tech-mentor-ai
 status: stable
@@ -70,3 +70,4 @@ Mesmo com uma ferramenta de navegação de grafos disponível e prompt explícit
 - [[wiki/sources/navigation-paradox-2026]]
 - [[wiki/sources/clean-architecture-ia-custo-real]]
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — confirmação independente do custo de estrutura em camadas, com vertical slice/package-by-feature como alternativa recomendada
+- [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] — mesmo custo de navegar por várias camadas, visto do lado humano (mudança mínima mexe em muitos arquivos)

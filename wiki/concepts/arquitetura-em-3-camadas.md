@@ -3,8 +3,8 @@ type: concept
 title: "Arquitetura em 3 Camadas (3-Tier)"
 aliases: ["3-tier architecture", "layered architecture", "arquitetura em camadas"]
 date_created: 2026-07-30
-date_updated: 2026-08-19
-source_count: 2
+date_updated: 2026-10-01
+source_count: 3
 tags: [3-tier, arquitetura-em-camadas, business-layer, data-access-layer, presentation-layer]
 skill: tech-mentor-backend
 status: draft
@@ -34,7 +34,12 @@ Diferente da [[wiki/concepts/clean-architecture]], onde todas as dependências a
 
 [[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] descreve uma variante próxima com o mesmo espírito de separação (Presentation/Business/Data Access), mas nomeada como uma alternativa mais leve às arquiteturas concêntricas (Clean, Hexagonal, Onion): menos abstrações, setup mais simples e mais rápida para aplicações CRUD. A fonte não detalha se essa variante evita o problema de vazamento transitivo já documentado acima — vale tratar como a mesma família estrutural (3-tier) com um nome de marketing diferente, não como solução distinta ao problema de acoplamento.
 
+## Limite: Architecture Sinkhole
+
+Com camadas fechadas, requests podem atravessar camadas sem lógica própria ([[wiki/concepts/architecture-sinkhole]]); a alternativa de corte por funcionalidade está em [[wiki/concepts/vertical-slice-architecture]] ([[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]]).
+
 ## Key Sources
 
 - [[wiki/sources/clean-architecture-arquitetura-centrada-no-dominio]] — comparação direta entre os dois diagramas, usada para explicar por que Clean Architecture é chamada de "domain-centric"
 - [[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] — variante "Layered" citada como mais simples e mais rápida para CRUDs, com menos abstrações que Clean/Hexagonal/Onion
+- [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] — antipadrão Architecture Sinkhole como problema das camadas fechadas e Vertical Slice como alternativa por funcionalidade

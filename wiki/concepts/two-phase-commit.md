@@ -3,8 +3,8 @@ type: concept
 title: "Two-Phase Commit (2PC)"
 aliases: ["2pc", "two phase commit", "protocolo de duas fases", "xa transactions"]
 date_created: 2026-04-22
-date_updated: 2026-07-30
-source_count: 3
+date_updated: 2026-10-01
+source_count: 4
 tags: [sistemas-distribuidos, consistencia, transacoes, 2pc, xa]
 skill: tech-mentor-system-design
 status: stable
@@ -79,3 +79,4 @@ Uma explicação didática do 2PC usa orders/payments/shipping: o serviço de or
 - [[wiki/sources/3pc]]
 - [[wiki/sources/two-phase-commit]]
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — exemplo didático orders/payments/shipping e o gargalo de coordenação que motiva a migração para Saga Pattern
+- [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — mencionado como tema para reconciliação posterior, fora do escopo do CAP

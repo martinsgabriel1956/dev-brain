@@ -3,8 +3,8 @@ type: concept
 title: "Saga Pattern"
 aliases: ["saga", "saga distribuída", "compensating transactions"]
 date_created: 2026-04-22
-date_updated: 2026-09-22
-source_count: 9
+date_updated: 2026-10-01
+source_count: 10
 tags: [sistemas-distribuidos, consistencia, saga, microsservicos, compensação]
 skill: tech-mentor-system-design
 status: stub
@@ -62,3 +62,4 @@ Consistência eventual — não ACID. Compensações podem falhar também (saga 
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — Saga aplicado a transações que cruzam shards de banco de dados (exemplo de transferência financeira entre usuários em shards diferentes)
 - [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] — teaser no fechamento do vídeo (ainda não desenvolvido como fonte própria): cartão já cobrado quando uma etapa posterior de um fluxo multi-step falha, cenário canônico de compensação que aponta para saga
 - [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — Saga citado como um dos principais motivadores práticos para aplicar Event Sourcing em microsserviços sem transação de banco garantida
+- [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — citado como o assunto que vem depois do CAP: reconciliar Pedido e Estoque após a partição ([[wiki/concepts/reconciliacao-pos-particao]])

@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-09-30
+date_updated: 2026-10-01
 ---
 
 
@@ -26,6 +26,9 @@ date_updated: 2026-09-30
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]] sobre o [[wiki/concepts/vertical-slice-architecture|Vertical Slice]]: separar por **funcionalidade e não por camada técnica** para escapar do [[wiki/concepts/architecture-sinkhole]]; cada slice tem controller→dados e **sua própria representação** de entidades como `Usuário` ([[wiki/concepts/dominio-centralizado-vs-modelo-por-slice]]); ganhos de coesão e testes, risco de [[wiki/concepts/acoplamento-entre-slices]]; slice como passo antes de extrair serviço ([[wiki/concepts/extracao-de-slice-para-servico]]). Não é bala de prata; pode ser mesclado com outros estilos |
+| [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] | [[wiki/entities/pedro-camaforte\|Pedro Camaforte]] sobre o [[wiki/concepts/cap-theorem\|Teorema CAP]] em entrevistas: o triângulo "2 de 3" é um erro didático — o **P é a pré-condição que ativa a escolha entre C e A**, não uma opção; CA só existe em nó único; consistência para ingressos/estoque/finanças, disponibilidade para feeds/comentários ("feeling de produto"); nível sênior = escolha por serviço (booking = C, search = A). Divergência: define disponibilidade incluindo resposta de erro; Brewer [external] corrigiu o "2 de 3" em 2012 |
+| [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]] sobre o [[wiki/concepts/cap-theorem|Teorema CAP]] como decisão de arquitetura: história (Brewer 2000, Gilbert/Lynch 2002), P intrínseco, **CP/AP como comportamento e não rótulo de tecnologia** (bancos gerenciados não eliminam o CAP), **só é CAP com estado compartilhado** (Estoque/Pedido), C do CAP ≠ C do ACID, exemplos Netflix (A) e voos (busca = A, compra = C); o CAP não resolve a reconciliação pós-falha (saga/2PC) |
 | [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] | Professor de Java: o que separa pleno de júnior não é a lista de tecnologias e sim a forma de decidir — `calcularDesconto` que antecipa ouro/prata/sazonalidade, nome de variável legível (`d` vs `valorDescontoPedido`), `Produto` que não aceita preço negativo; 'o código é mais lido do que escrito'; IA ok se entender a regra de negócio. Não mostra a modelagem alternativa do desconto |
 | [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] | Vídeo ([[wiki/entities/ronald-hulk]]): usar a [[wiki/entities/openrouter]] em produção — na OpenRouter a escolha é **modelo + provedor** (preço distribuído em [[wiki/concepts/open-weight-model|open weight]]); seis critérios (quantização, throughput, latência, região, retenção, preço por último), [[wiki/concepts/pool-de-provedores-llm|pool de ≥3 provedores]] fixado no payload, [[wiki/concepts/zero-data-retention|ZDR]] e ADR. Nomes dos campos do payload mapeados da doc, não ditos no vídeo |
 | [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] | Vídeo PT-BR: anatomia da **requisição HTTP** ([[wiki/concepts/requisicao-http]]) — método (idempotência: GET/PUT/DELETE sim, POST não), URL como recurso, headers como metadados, body; no servidor rota → [[wiki/concepts/middleware]] → controller → service → banco; [[wiki/concepts/http-status-code]] como resultado da intenção (401 vs 403, 429, 301); CORS como política do navegador e 401/CORS depurados pelo DevTools. Não cobre HTTP/2, PATCH/OPTIONS, idempotency key |
@@ -788,6 +791,7 @@ date_updated: 2026-09-30
 | [[wiki/sources/saga-pattern]] | Saga é o padrão para transações distribuídas sem 2PC. Duas abordagens: Choreography (cada serviço reage a eventos, sem coordenador — simples mas difícil de debugar) e Orchestration (orchestrator central coordena a saga — visível mas moderadamente acoplado). Compensações são obrigatórias e devem ser idempotentes. Temporal resolve sagas longas com durable execution. |
 | [[wiki/sources/schema-registry]] | Schema Registry centraliza e versiona schemas de eventos Kafka. Sem ele, producer pode mudar formato e quebrar consumers silenciosamente. Confluent Schema Registry (open source) suporta Avro, Protobuf e JSON Schema. Compatibilidade: BACKWARD (consumers antigos leem novos eventos), FORWARD (consumers novos leem eventos antigos), FULL (ambos). Producer valida contra schema antes de publicar — fal... |
 | [[wiki/sources/secret-scanning]] | Secret Scanning: 3 camadas. Pre-commit (Gitleaks hook): bloqueia antes de commitar. CI/CD (Gitleaks + TruffleHog): escaneia cada PR com histórico completo. GitHub Advanced Security (GHAS): escaneia repositório inteiro + push protection nativo. Se vazar: revogar imediatamente, rotacionar, assumir comprometido, auditar logs. Nunca: hardcode de API keys, tokens, passwords no código. |
+| [[wiki/sources/secrets-vazadas-no-github-conceitos-e-riscos]] | Versão expurgada de uma transcrição sobre vazamento de secrets no GitHub: o que é uma secret, por que `.env`/credenciais hardcoded vazam, formato reconhecível por prefixo de chaves de grandes provedores, e os limites técnicos pouco conhecidos da busca de código do GitHub (indexação não-instantânea, teto de 1000 resultados, sem ordenação por data) que explicam por que buscar por prefixo não encontra o que acabou de vazar. |
 | [[wiki/sources/secrets-management]] | .env em produção é um anti-pattern — secrets em texto plano, sem auditoria, sem rotação. HashiCorp Vault e AWS Secrets Manager são as soluções padrão. Dynamic Secrets (Vault): credenciais geradas sob demanda com TTL — sem credenciais estáticas. Workload Identity (IRSA/GCP WI): zero static secrets para serviços em cloud. External Secrets Operator para K8s. |
 | [[wiki/sources/secure-design-patterns]] | 7 padrões de design seguro: Defense in Depth (múltiplas camadas independentes), Least Privilege (permissão mínima necessária), Secure Defaults (configuração padrão é segura), Fail Secure/Closed (falha fecha o acesso), Minimização de Superfície de Ataque (menos código = menos bugs), Separação de Responsabilidades (uma função = um propósito), Assume Breach (se comprometido, o dano é limitado). |
 | [[wiki/sources/seguranca-armazenamento-senhas-banco-de-dados]] | Armazenar senhas corretamente exige entender a evolução histórica dos ataques. O caminho vai de plaintext (inseguro) → MD5/SHA (vulnerável a rainbow tables e velocidade) → bcrypt com salt (insuficiente contra rigs de GPU) → **Argon2id + pepper** (estado da arte). A chave é entender que velocidade é um problema, paralelismo é uma ameaça e memória RAM é o gargalo que derrota GPUs. |
@@ -824,6 +828,27 @@ date_updated: 2026-09-30
 | [[wiki/sources/zero-trust]] | Zero Trust: "nunca confie, sempre verifique" — nenhum acesso é implicitamente confiável só por estar na rede interna. 7 pilares CISA: Identity, Device, Network, Workload, Data, Automation, Visibility. Acesso condicional: decisão por cada request baseada em identidade + postura do dispositivo + contexto. mTLS com SPIFFE/SPIRE para service-to-service. |
 
 ## Concepts
+
+### Vertical Slice — arquitetura por funcionalidade (2026-10-01)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/architecture-sinkhole]] | Antipadrão das camadas fechadas: request atravessa camadas sem lógica própria |
+| [[wiki/concepts/dominio-centralizado-vs-modelo-por-slice]] | Um `Usuário` central que infla vs. representação enxuta por slice |
+| [[wiki/concepts/acoplamento-entre-slices]] | Slices podem se chamar como clientes; o autoacoplamento pode voltar |
+| [[wiki/concepts/extracao-de-slice-para-servico]] | Isolar a slice, provar com testes, só então extrair como serviço |
+
+### Teorema CAP — leitura de entrevista (2026-10-01)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/particao-como-pre-condicao-do-cap]] | P não é uma carta do triângulo, é o gatilho do dilema C vs. A; CA só em nó único |
+| [[wiki/concepts/cap-por-servico]] | A escolha C/A é por serviço/feature: booking = C, search = A |
+| [[wiki/concepts/feeling-de-produto-em-consistencia-vs-disponibilidade]] | Critério de produto e heurística de domínios (ingressos/estoque/finanças vs. feeds/comentários) |
+| [[wiki/concepts/cap-exige-estado-compartilhado]] | Nem toda falha entre serviços é CAP: precisa de estado compartilhado a coordenar (Estoque/Pedido) |
+| [[wiki/concepts/cap-classificacao-por-comportamento]] | CP/AP descrevem comportamento por operação, não rótulo de produto; banco gerenciado não elimina o CAP |
+| [[wiki/concepts/consistencia-cap-vs-consistencia-acid]] | Homônimos: leitura mais recente em qualquer nó vs. integridade transacional |
+| [[wiki/concepts/reconciliacao-pos-particao]] | O que o CAP não resolve: voltar ao consistente depois (saga, 2PC) |
 
 ### Carreira — Júnior → Pleno (2026-09-30)
 
@@ -2058,6 +2083,8 @@ date_updated: 2026-09-30
 | [[wiki/concepts/cors-misconfiguration]] | `Access-Control-Allow-Origin: *` + `Allow-Credentials: true` permite requisições autenticadas de qualquer site na internet |
 | [[wiki/concepts/timing-attack]] | Tempo de resposta como canal de informação — variação de latência revela segredos |
 | [[wiki/concepts/sast]] | Análise estática de segurança no código — detecta padrões vulneráveis antes do deploy |
+| [[wiki/concepts/secret-scanning]] | Detecção automatizada de credenciais commitadas: pre-commit (Gitleaks), CI/CD (Gitleaks + TruffleHog com histórico completo), GitHub Advanced Security (push protection). Resposta a vazamento: revogar antes de investigar. |
+| [[wiki/concepts/github-search-api-limites]] | A API de busca de código do GitHub consulta um índice não-instantâneo (prioriza repositórios grandes/populares), devolve no máximo 1000 resultados por consulta e ordena só por relevância — sem ordenação por data. Explica por que buscar por prefixo de chave vazada não encontra o que foi commitado mais recentemente. |
 | [[wiki/concepts/secrets-management]] | Credenciais nunca no código — .env local, GitHub Secrets/AWS SM em produção; caso real de agente de IA autônomo encontrando e explorando credencial vazada sem intervenção humana; `.env` publicamente servido como ponto de entrada de um pentest real |
 | [[wiki/concepts/idor]] | Recurso acessado por ID sem checar ownership — #1 do OWASP API Top 10 (BOLA); pode escalar até account takeover quando o dado vazado é uma credencial |
 | [[wiki/concepts/multitenancy]] | Múltiplos clientes compartilhando as mesmas tabelas — amplia a superfície de IDOR se a checagem de tenant falhar em alguma query |
@@ -2649,6 +2676,14 @@ date_updated: 2026-09-30
 
 ## Entities
 
+### Teorema CAP (2026-10-01)
+
+| Página | Hook |
+|---|---|
+| [[wiki/entities/eric-brewer]] | Formulador do CAP; revisou o "2 de 3" em 2012 [external] |
+| [[wiki/entities/nancy-lynch]] | Pesquisadora do MIT; com Seth Gilbert provou o CAP em 2002 (segundo o vídeo) |
+| [[wiki/entities/seth-gilbert]] | Pesquisador do MIT; coautor da prova formal do CAP (2002) |
+
 ### ICMP Browser (2026-09-30)
 
 | Página | Hook |
@@ -3019,5 +3054,6 @@ date_updated: 2026-09-30
 
 | Página | Hook |
 |---|---|
+| [[wiki/questions/disponibilidade-cap-resposta-de-erro-vs-resposta-sem-erro]] | Vídeo diz que erro 404 conta como resposta disponível; definição formal exige resposta sem erro — pendente verificar Gilbert & Lynch |
 | [[wiki/questions/facade-fere-srp-video-comparison]] | Renato Augusto defende que Facade não fere SRP (motivo único de mudança); Código Fonte TV discorda (orquestração pura já é responsabilidade demais) — sem resolução, ambas são opinião de autor sem citação de fonte primária |
 | [[wiki/questions/local-first-definicoes-conflitantes]] | Duas fontes usam "local-first" para conceitos incompatíveis: dado efêmero validado por HMAC (servidor continua autoridade) vs. definição canônica de réplica primária com posse do usuário — resolvido por revisão do conceito, não por fusão |

@@ -3,8 +3,8 @@ type: concept
 title: "Strangler Fig Pattern"
 aliases: ["strangler pattern", "figueira mata-pau", "migração incremental"]
 date_created: 2026-08-03
-date_updated: 2026-09-30
-source_count: 6
+date_updated: 2026-10-01
+source_count: 7
 tags: [strangler-fig, migração, legado, proxy, cdc, feature-flags, arquitetura]
 skill: tech-mentor-system-design
 status: stub
@@ -63,3 +63,4 @@ O caso mais extremo de "legado que não se reescreve" é justamente sistemas [[w
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — COBOL e SOAP como exemplos reais de "modernizar a borda, manter o núcleo legado" em vez de reescrita total
 - [[wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado]] — o componente de tradução (ACL) que evita dependência forte entre sistema novo e legado durante a coexistência
 - [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — ACL em modernização de legado
+- [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] — slice isolada e testada antes de ser recriada como serviço externo (auth); ver [[wiki/concepts/extracao-de-slice-para-servico]]

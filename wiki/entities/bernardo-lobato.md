@@ -3,8 +3,8 @@ type: entity
 title: "Bernardo Lobato"
 aliases: ["Bernardo Lobato"]
 date_created: 2026-06-05
-date_updated: 2026-09-30
-source_count: 18
+date_updated: 2026-10-01
+source_count: 20
 tags: [arquitetura-software, segurança, criador-de-conteudo, youtube, backend]
 skill: tech-mentor-security
 status: stub
@@ -34,3 +34,5 @@ Desenvolvedor e criador de conteúdo brasileiro. Publica vídeos toda sexta-feir
 - [[wiki/sources/anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato]] — "Anatomia de um Token 1", predecessor direto do vídeo acima: distinção formal token opaco vs. autocontido, geração segura via CSPRNG (256 bits), token vs. ID, session token e API key, introdução superficial ao JOSE, e o CWT (CBOR Web Token) para IoT
 - [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — quarto vídeo da série *Dominando DDD*: bounded context como limite linguístico/semântico, exemplo Produto em Vendas vs. Suporte, distinção de subdomínio e linguagem ubíqua, prévia de Shared Kernel/Customer-Supplier/Conformist/ACL
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — vídeo introdutório às arquiteturas distribuídas: comunicação síncrona vs. assíncrona, três formas (polling por ID, webhook, mensageria), exemplo de pedidos e três desafios (debug, garantia de entrega, consistência eventual)
+- [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — vídeo sobre CAP como decisão de arquitetura, com exemplos Netflix, voos e Estoque/Pedido
+- [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] — vídeo sobre Vertical Slice: separação por funcionalidade, domínio por slice, Architecture Sinkhole e extração para serviço

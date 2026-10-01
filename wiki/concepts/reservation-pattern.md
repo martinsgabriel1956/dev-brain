@@ -3,8 +3,8 @@ type: concept
 title: "Reservation Pattern (Reservations)"
 aliases: ["padrão de reserva", "reservations", "reserva temporizada", "TTL reservation", "assento reservado 10 minutos"]
 date_created: 2026-08-25
-date_updated: 2026-08-25
-source_count: 1
+date_updated: 2026-10-01
+source_count: 3
 tags: [concorrencia, race-condition, ux, redis, ttl, system-design, e-commerce]
 skill: tech-mentor-system-design
 status: draft
@@ -58,3 +58,5 @@ Fluxos com interação direta do usuário e recurso limitado/disputado: compra d
 ## Key Sources
 
 - [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] — introdução completa do padrão, comparação cron job vs. Redis `SET NX EX`, e o fallback de duas camadas para queda do Redis
+- [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] — booking como serviço de consistência forte no CAP
+- [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — compra do bilhete como caso de consistência forte (assento único)

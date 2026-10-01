@@ -3,8 +3,8 @@ type: concept
 title: "Acoplamento"
 aliases: ["coupling", "baixo acoplamento", "alto acoplamento"]
 date_created: 2026-04-25
-date_updated: 2026-09-30
-source_count: 13
+date_updated: 2026-10-01
+source_count: 14
 tags: [acoplamento, software-design, clean-code, arquitetura, under-engineering]
 skill: tech-mentor-backend
 status: stable
@@ -121,3 +121,4 @@ Em [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-loba
 - [[wiki/sources/classes-vs-estruturas-de-dados-uncle-bob]] — direção da dependência de arquivo-fonte como manifestação concreta de acoplamento: `switch` sobre união discriminada acopla quem chama a cada implementação (recompilação em cascata); polimorfismo com interface inverte essa direção ([[wiki/concepts/dependency-inversion-principle]])
 - [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — modelos duplicados por contexto reduzem acoplamento entre times
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — acoplamento forte na síncrona vs. fraco na assíncrona (exemplo de autenticação)
+- [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] — autoacoplamento via domínio centralizado compartilhado e acoplamento entre slices; ver [[wiki/concepts/dominio-centralizado-vs-modelo-por-slice]] e [[wiki/concepts/acoplamento-entre-slices]]

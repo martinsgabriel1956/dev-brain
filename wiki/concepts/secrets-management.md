@@ -3,8 +3,8 @@ type: concept
 title: "Secrets Management"
 aliases: ["secrets management", "gerenciamento de segredos", "env variables", "credenciais", ".env"]
 date_created: 2026-06-10
-date_updated: 2026-08-04
-source_count: 7
+date_updated: 2026-10-01
+source_count: 8
 tags: [security, secrets-management, env, credenciais, devsecops, ci-cd, under-engineering]
 skill: tech-mentor-security
 status: stable
@@ -83,6 +83,10 @@ Propriedade desejável: **secrets configurados não são mais visíveis** — ne
 
 [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] documenta o caso mais direto e evitável desta página: um `.env` acessível diretamente por URL, sem nenhuma autenticação, numa loja gerada por ferramentas de vibe coding. Encontrado com uma ferramenta trivial de brute force de diretórios (dirsearch), continha secret key, chaves do Stripe, e um usuário de teste esquecido em produção — que virou o ponto de entrada de toda uma cadeia de ataque (IDOR → [[wiki/concepts/account-takeover]] → escalonamento a admin → [[wiki/concepts/upload-arbitrario-rce|RCE]]). Diferente do cenário de "git history com segredo antigo" já documentado acima, aqui o arquivo estava servido como recurso estático comum — a mitigação não é rotação ou scanning, é configuração do servidor web para recusar qualquer requisição a arquivos iniciados por ponto (`.env`, `.git`, etc.), tratada pela fonte como regra número um.
 
+## Descoberta em Escala: Por Que Busca por Prefixo de Chave Não É Confiável
+
+[[wiki/sources/secrets-vazadas-no-github-conceitos-e-riscos]] complementa esta página do lado da **descoberta**, não da prevenção: provedores geram chaves em formatos reconhecíveis por prefixo (Anthropic `sk-`, AWS `AKIA`, Stripe `sk_live`), o que as torna buscáveis em escala — mas a própria busca de código do GitHub tem limites técnicos (indexação não-instantânea, teto de 1000 resultados por consulta, ordenação só por relevância) documentados em [[wiki/concepts/github-search-api-limites]]. A fonte reforça a regra central desta página por outro caminho: enquanto uma secret estiver pública, bots de varredura automatizada (defensivos e ofensivos) a monitoram continuamente — não é preciso um atacante ativo procurando manualmente.
+
 ## Relação com Outros Conceitos
 
 - [[principio-do-menor-privilegio]] — cada secret deve ter escopo mínimo (API key com permissão só do que precisa)
@@ -99,3 +103,4 @@ Propriedade desejável: **secrets configurados não são mais visíveis** — ne
 - [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — demonstração ao vivo de que GitHub Secrets não pode ser visualizado após salvo, só atualizado
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — scanner de histórico de git como último item de checklist de autopentest
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]] — menção rápida do AWS Secrets Manager dentro de um tour geral do toolkit da AWS, sem detalhamento além do escopo já documentado nesta página (chaves de API, credenciais de banco de dados)
+- [[wiki/sources/secrets-vazadas-no-github-conceitos-e-riscos]] — ângulo da descoberta em escala: formato reconhecível de chaves por prefixo, limites de indexação da busca do GitHub, por que histórico de git precisa ser varrido

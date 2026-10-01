@@ -3,8 +3,8 @@ type: concept
 title: "Teorema CAP"
 aliases: ["CAP theorem", "CAP", "consistência disponibilidade partição", "PACELC"]
 date_created: 2026-06-26
-date_updated: 2026-09-23
-source_count: 9
+date_updated: 2026-10-01
+source_count: 11
 tags: [system-design, sistemas-distribuidos, cap-theorem, consistencia, disponibilidade]
 skill: tech-mentor-system-design
 status: stub
@@ -71,6 +71,14 @@ Material de prova de concurso costuma ensinar o CAP com categorização fixa por
 
 [[wiki/sources/local-first-vs-offline-first]] descreve, para arquiteturas de sincronização client-side, um trade-off estruturalmente parecido com CP vs. AP: em [[wiki/concepts/offline-first]] o servidor é a autoridade e a escrita local só é definitiva após aceite remoto (análogo a priorizar consistência); em [[wiki/concepts/local-first]] cada réplica local aceita escritas offline e converge depois (análogo a priorizar disponibilidade). Não é o mesmo teorema (CAP é sobre partição de rede em sistemas distribuídos server-side; local-first é sobre onde reside a autoridade do dado entre cliente e servidor), mas a pergunta de fundo — "se duas cópias divergem, quem tem razão?" — é a mesma forma de decisão.
 
+## Leitura de entrevista: P é pré-condição, escolha é por serviço
+
+[[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] reforça que o triângulo "2 de 3" engana: o P ativa o dilema e a escolha C vs. A é feita por serviço/feature, guiada por produto. Ver [[wiki/concepts/particao-como-pre-condicao-do-cap]], [[wiki/concepts/cap-por-servico]], [[wiki/concepts/feeling-de-produto-em-consistencia-vs-disponibilidade]]. Correção do próprio [[wiki/entities/eric-brewer]] [external] confirma as duas teses.
+
+## Leitura de Bernardo Lobato: CP/AP é comportamento
+
+A tabela CP/AP por produto é simplificação: as garantias dependem de configuração e operação, e bancos gerenciados em nuvem não eliminam a escolha. O CAP só se aplica quando há estado compartilhado a coordenar, e não cobre a reconciliação posterior. Ver [[wiki/concepts/cap-classificacao-por-comportamento]], [[wiki/concepts/cap-exige-estado-compartilhado]], [[wiki/concepts/consistencia-cap-vs-consistencia-acid]].
+
 ## Key sources
 
 - [[wiki/sources/local-first-vs-offline-first]] — paralelo estrutural entre CP/AP e offline-first/local-first
@@ -82,3 +90,5 @@ Material de prova de concurso costuma ensinar o CAP com categorização fixa por
 - [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] — categorização CA/CP/AP fixa por produto, como cobrada em prova de concurso
 - [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]] — consistência eventual em réplicas de leitura e em bases NoSQL com sharding apresentada como um dos 8 critérios práticos de escolha de banco; ver [[wiki/concepts/criterios-de-escolha-de-banco-de-dados]]
 - [[wiki/sources/github-2018-cap-pacelc-particao-video]] — incidente do GitHub 2018 como caso real de escolha por disponibilidade; definição formal de disponibilidade; ver [[wiki/concepts/disponibilidade-no-teorema-cap]]
+- [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] — P como pré-condição e escolha por serviço (booking = C, search = A); ver [[wiki/concepts/particao-como-pre-condicao-do-cap]], [[wiki/concepts/cap-por-servico]]
+- [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — história (Brewer 2000 → Gilbert/Lynch 2002), CP/AP como comportamento e não rótulo ([[wiki/concepts/cap-classificacao-por-comportamento]]), exige estado compartilhado ([[wiki/concepts/cap-exige-estado-compartilhado]]), C do CAP ≠ C do ACID, pós-falha em [[wiki/concepts/reconciliacao-pos-particao]]

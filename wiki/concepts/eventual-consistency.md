@@ -3,8 +3,8 @@ type: concept
 title: "Eventual Consistency"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-30
-source_count: 9
+date_updated: 2026-10-01
+source_count: 11
 tags: [eventual-consistency]
 skill: tech-mentor-system-design
 status: stub
@@ -41,3 +41,5 @@ Terceiro desafio da [[wiki/concepts/comunicacao-assincrona]] segundo [[wiki/enti
 - [[wiki/sources/github-2018-cap-pacelc-particao-video]] — leitura local no nó isolado devolve dado pré-partição; divergência de escritas no GitHub 2018
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — exemplo pedido/pagamento: dado desatualizado entre serviços; "vender" o modelo à liderança
 - [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — delay entre banco de escrita e banco de leitura como custo da atualização assíncrona do read model via eventos
+- [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] — lado A aceito para busca/perfil/comentários
+- [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — lado A aceita divergência temporária durante a partição

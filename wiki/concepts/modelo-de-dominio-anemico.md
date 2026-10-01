@@ -3,8 +3,8 @@ type: concept
 title: "Modelo de Domínio Anêmico"
 aliases: ["anemic domain model", "domínio anêmico", "entidade anêmica", "classe anêmica", "anemic model"]
 date_created: 2026-08-13
-date_updated: 2026-09-30
-source_count: 2
+date_updated: 2026-10-01
+source_count: 3
 tags: [oop, ddd, encapsulamento, invariante, regra-de-negocio, anti-pattern, backend]
 skill: tech-mentor-backend
 status: stub
@@ -50,3 +50,4 @@ que rejeita `x <= 0` protege a invariante.
 - [[wiki/sources/encapsulamento-proteger-estado-invalido]] — a classe "não anêmica" como fim do
 - [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — `Produto` só com campos e setters como exemplo de modelo que aceita estado inválido
   encapsulamento: toda mutação passa pelas regras de negócio do próprio objeto
+- [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] — crítica a modelo de domínio centralizado que infla com todas as features; ver [[wiki/concepts/dominio-centralizado-vs-modelo-por-slice]]

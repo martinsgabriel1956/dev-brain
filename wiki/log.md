@@ -12542,3 +12542,59 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (14):** [[wiki/concepts/naming]], [[wiki/concepts/encapsulamento]], [[wiki/concepts/primitive-obsession]], [[wiki/concepts/anemic-domain-model]], [[wiki/concepts/modelo-de-dominio-anemico]], [[wiki/concepts/open-closed-principle]], [[wiki/concepts/strategy-pattern]], [[wiki/concepts/codigo-para-o-mantenedor]], [[wiki/concepts/codigo-para-o-futuro-eu]], [[wiki/concepts/equipe-mista-senior-junior]], [[wiki/concepts/soft-skills-como-diferencial-de-pleno]], [[wiki/concepts/vaga-junior-vira-pleno]], [[wiki/concepts/ia-como-amplificador]], [[wiki/concepts/dev-e-negocio]], [[wiki/concepts/validacao-de-entrada]] — Key sources + bump de `source_count`/`date_updated`.
 
 **Notas:** (1) Sem contradições; reforça [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] (julgamento > ferramentas). (2) A modelagem "de pleno" para o desconto não é dita no vídeo (código só na tela); Strategy/OCP são inferência marcada. (3) Nuances [external]: YAGNI vs. antecipação; `double` inadequado para dinheiro; atribuição da máxima "lido mais que escrito" não verificada. (4) Lacuna frente à skill: testes, colaboração e ownership (sinais de Mid) não aparecem. (5) Quatro conceitos novos são `draft`; wiki já tinha duplicatas anêmico (`anemic-domain-model` stub / `modelo-de-dominio-anemico`) — candidato a merge no próximo lint.
+
+---
+
+## [2026-10-01] ingest | Secrets Vazadas no GitHub — Por Que Acontece e Os Limites da Busca
+
+**Fonte:** transcrição de vídeo em português (autor/canal não identificados) colada pelo usuário, sobre vazamento de secrets em repositórios do GitHub. **Ingerida em versão expurgada**: o vídeo original demonstra, na prática, acesso não autorizado a bancos de dados de terceiros e sobrescrita de credencial de admin em um sistema de produção real — recusei reproduzir esses trechos (metodologia de exploração contra alvos reais) e, com a concordância do usuário, criei `raw/secrets-vazadas-no-github-conceitos-e-riscos.md` contendo apenas o conteúdo conceitual (o que é uma secret, por que vaza, formato de chaves por prefixo, limites de indexação da busca do GitHub, por que scanning precisa olhar o histórico de commits). Erros de transcrição corrigidos por contexto, listados no cabeçalho do raw.
+
+**Skill:** tech-mentor-security (SKILL.md + `references/secret-scanning.md`, `references/secrets-management.md`; skill em `~/Documentos/skills/`, path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md). Complementado com verificação [external] dos limites reais da API de busca de código do GitHub (documentação oficial, via WebFetch) e de push protection.
+
+**Criado:** [[wiki/sources/secrets-vazadas-no-github-conceitos-e-riscos]], [[wiki/concepts/github-search-api-limites]], [[wiki/concepts/secret-scanning]] (stub que já era referenciado por [[wiki/sources/secret-scanning]] mas nunca existia como página própria)
+
+**Tocadas (4):** [[wiki/concepts/secrets-management]] (seção nova sobre descoberta em escala), [[wiki/concepts/api-key]] (seção nova sobre formato por prefixo), [[wiki/concepts/attack-surface]] (seção nova sobre categorias de credencial mais visadas), [[wiki/entities/github]] (corpo + key source) — Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** (1) Escopo de touches abaixo do padrão de 10–15 por decisão deliberada: a fonte foi reduzida a conteúdo puramente conceitual, então o número de conceitos/entidades genuinamente novos é menor do que numa ingestão completa. (2) Sem contradições com a wiki; reforça [[wiki/concepts/secrets-management]] e [[wiki/sources/secret-scanning]] por um ângulo não coberto antes (busca/descoberta em escala, não gestão/prevenção). (3) Números citados pelo autor do vídeo original (quantidade de secrets encontradas, nome de ferramentas de automação em massa) foram omitidos — ligados à parte removida. (4) [[wiki/concepts/secret-scanning]] existia como link quebrado há tempos (referenciado por [[wiki/sources/secret-scanning]] desde 2026-04-23 sem nunca ter sido criado) — corrigido aqui como efeito colateral do ingest; candidato a nota de lint resolvida. (5) Três conceitos são stub/draft.
+
+---
+
+## [2026-10-01] ingest | Teorema CAP — O P Não É Uma Opção, É a Pré-condição da Escolha entre C e A
+
+**Fonte:** transcrição de vídeo de [[wiki/entities/pedro-camaforte]] colada pelo usuário, limpa e estruturada em `raw/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte.md` (já em português; sem tradução). Erros de fala corrigidos por contexto e listados no cabeçalho do raw.
+
+**Skill:** tech-mentor-system-design (SKILL.md + `references/distributed-systems-core.md`; skill em `~/Documentos/skills/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md). Verificação [external] da correção do próprio Brewer (2012) via WebFetch.
+
+**Criado:** [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]], [[wiki/concepts/particao-como-pre-condicao-do-cap]], [[wiki/concepts/cap-por-servico]], [[wiki/concepts/feeling-de-produto-em-consistencia-vs-disponibilidade]], [[wiki/entities/eric-brewer]], [[wiki/questions/disponibilidade-cap-resposta-de-erro-vs-resposta-sem-erro]]
+
+**Tocadas (14):** [[wiki/concepts/cap-theorem]] (seção nova), [[wiki/concepts/cap-theorem-concept]], [[wiki/concepts/disponibilidade-no-teorema-cap]], [[wiki/concepts/pacelc]], [[wiki/concepts/eventual-consistency]], [[wiki/concepts/consistency-models]], [[wiki/concepts/reservation-pattern]], [[wiki/concepts/pessimistic-locking]], [[wiki/concepts/microsservicos]], [[wiki/concepts/niveis-de-senioridade-system-design]], [[wiki/concepts/alta-disponibilidade]], [[wiki/concepts/base-basically-available-soft-state-eventual]], [[wiki/entities/pedro-camaforte]], [[wiki/entities/google]] — Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** (1) Contradição parcial: o vídeo conta resposta de erro como "disponível"; a wiki/definição formal não — aberto em [[wiki/questions/disponibilidade-cap-resposta-de-erro-vs-resposta-sem-erro]]. (2) Reforça [[wiki/sources/cap-theorem]] (CA só em single-node) e [[wiki/sources/github-2018-cap-pacelc-particao-video]] por ângulo de entrevista. (3) [external] Brewer 2012 confirma as duas teses (P como pré-condição, escolha por subsistema). (4) Lacunas: PACELC, modelos intermediários de consistência e quórum não aparecem no vídeo. (5) "VP de infraestrutura do Google" não verificado. (6) Três conceitos novos são `draft`; [[wiki/concepts/cap-theorem-concept]] segue como stub duplicado de [[wiki/concepts/cap-theorem]] — candidato a merge no lint.
+
+---
+
+## [2026-10-01] ingest | Teorema CAP — A Decisão de Arquitetura quando a Comunicação Falha (Bernardo Lobato)
+
+**Fonte:** transcrição de vídeo de [[wiki/entities/bernardo-lobato]] colada pelo usuário, limpa em `raw/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato.md` (já em português; sem tradução; erros de fala corrigidos e listados no cabeçalho).
+
+**Skill:** tech-mentor-system-design (SKILL.md + `references/distributed-systems-core.md`; skill em `~/Documentos/skills/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md). Verificação [external] do artigo de Brewer (2012) via WebFetch.
+
+**Criado:** [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]], [[wiki/concepts/cap-exige-estado-compartilhado]], [[wiki/concepts/cap-classificacao-por-comportamento]], [[wiki/concepts/consistencia-cap-vs-consistencia-acid]], [[wiki/concepts/reconciliacao-pos-particao]], [[wiki/entities/nancy-lynch]], [[wiki/entities/seth-gilbert]]
+
+**Tocadas (20):** [[wiki/concepts/cap-theorem]], [[wiki/concepts/cap-por-servico]], [[wiki/concepts/particao-como-pre-condicao-do-cap]], [[wiki/concepts/feeling-de-produto-em-consistencia-vs-disponibilidade]], [[wiki/concepts/disponibilidade-no-teorema-cap]], [[wiki/concepts/eventual-consistency]], [[wiki/concepts/consistency-models]], [[wiki/concepts/acid]], [[wiki/concepts/saga-pattern]], [[wiki/concepts/distributed-transactions]], [[wiki/concepts/two-phase-commit]], [[wiki/concepts/pacelc]], [[wiki/concepts/microsservicos]], [[wiki/concepts/reservation-pattern]], [[wiki/concepts/mongodb]], [[wiki/concepts/dynamodb]], [[wiki/entities/eric-brewer]], [[wiki/entities/bernardo-lobato]], [[wiki/entities/netflix]], [[wiki/entities/amazon-web-services]], [[wiki/questions/disponibilidade-cap-resposta-de-erro-vs-resposta-sem-erro]] — Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** (1) Sem contradição com a wiki; este vídeo usa a definição formal de disponibilidade, ao contrário de [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] — reforça a leitura em [[wiki/questions/disponibilidade-cap-resposta-de-erro-vs-resposta-sem-erro]]. (2) Tensão com a skill: a tabela CP/AP por produto é justamente o que o vídeo alerta ser simplificação. (3) [external] Brewer 2012 confirma keynote PODC 2000, granularidade fina e recuperação pós-partição; **não** cita Gilbert & Lynch (2002), atribuição vinda do vídeo, não verificada. (4) Lacunas: PACELC, quórum, modelos intermediários. (5) Quatro conceitos novos são `draft`/`stub`; [[wiki/concepts/cap-theorem-concept]] segue como duplicata de [[wiki/concepts/cap-theorem]] (candidato a merge no lint).
+
+---
+
+## [2026-10-01] ingest | Vertical Slice — Organizando o Código por Funcionalidade (Bernardo Lobato)
+
+**Fonte:** transcrição de vídeo de [[wiki/entities/bernardo-lobato]] colada pelo usuário, limpa em `raw/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato.md` (já em português; sem tradução; erros de fala corrigidos e listados no cabeçalho, incluindo a inversão de terminologia camadas/slices feita pelo autor).
+
+**Skill:** tech-mentor-backend (SKILL.md + `references/architecture-foundations.md`; skill em `~/Documentos/skills/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md). A skill não trata Vertical Slice diretamente. Verificação [external] da definição de Jimmy Bogard via WebFetch.
+
+**Criado:** [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]], [[wiki/concepts/architecture-sinkhole]], [[wiki/concepts/dominio-centralizado-vs-modelo-por-slice]], [[wiki/concepts/acoplamento-entre-slices]], [[wiki/concepts/extracao-de-slice-para-servico]]
+
+**Tocadas (13):** [[wiki/concepts/vertical-slice-architecture]] (seção nova), [[wiki/concepts/arquitetura-em-3-camadas]] (seção nova), [[wiki/concepts/coesao]], [[wiki/concepts/acoplamento]], [[wiki/concepts/microsservicos]], [[wiki/concepts/monolito-modular]], [[wiki/concepts/strangler-fig-pattern]], [[wiki/concepts/bounded-context]], [[wiki/concepts/feature-sliced-architecture]], [[wiki/concepts/clean-architecture]], [[wiki/concepts/modelo-de-dominio-anemico]], [[wiki/concepts/navigation-paradox]], [[wiki/entities/bernardo-lobato]] — Key sources + bump de `source_count`/`date_updated`.
+
+**Notas:** (1) Sem contradição com a wiki; complementa [[wiki/concepts/vertical-slice-architecture]], antes ancorado em frontend e agentes de IA, com a visão backend/DDD. (2) [external] Bogard confirma "minimize coupling between slices, maximize coupling in a slice" e cada slice decidir sua implementação; a atribuição do Architecture Sinkhole a Mark Richards **não foi verificada** (O'Reilly retornou 403). (3) Lacunas: duplicação de regras entre slices, mecanismo de chamada entre slices e persistência do "mesmo usuário" não são tratados. (4) Contagem de tocadas (13) dentro do padrão 10–15. (5) Novos conceitos: um `draft`+`draft`, dois `stub`.

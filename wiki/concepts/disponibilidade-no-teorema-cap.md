@@ -3,8 +3,8 @@ type: concept
 title: "Disponibilidade no teorema CAP"
 aliases: ["availability no CAP", "disponibilidade formal"]
 date_created: 2026-09-23
-date_updated: 2026-09-23
-source_count: 1
+date_updated: 2026-10-01
+source_count: 3
 tags: [system-design, sistemas-distribuidos, cap-theorem, disponibilidade]
 skill: tech-mentor-system-design
 status: draft
@@ -22,3 +22,5 @@ Consequências:
 ## Key sources
 
 - [[wiki/sources/github-2018-cap-pacelc-particao-video]]
+- [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] — definição divergente (erro conta como resposta?); ver [[wiki/questions/disponibilidade-cap-resposta-de-erro-vs-resposta-sem-erro]]
+- [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — definição alinhada à formal (nó que recebe responde, mesmo particionado); ver [[wiki/questions/disponibilidade-cap-resposta-de-erro-vs-resposta-sem-erro]]

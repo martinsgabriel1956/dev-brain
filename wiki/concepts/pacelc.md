@@ -3,8 +3,8 @@ type: concept
 title: "Pacelc"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-23
-source_count: 3
+date_updated: 2026-10-01
+source_count: 5
 tags: [pacelc, system-design, cap-theorem, latencia, consistencia]
 skill: tech-mentor-system-design
 status: draft
@@ -23,3 +23,5 @@ Base intuitiva: duas falácias, "a rede é confiável" e "a latência é zero" (
 - [[wiki/sources/github-2018-cap-pacelc-particao-video]]
 - [[wiki/sources/cap-pacelc-consistencia]]
 - [[wiki/sources/cap-theorem]]
+- [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] — lacuna: o vídeo não cobre PACELC; complementar
+- [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — lacuna: o vídeo também não cobre PACELC

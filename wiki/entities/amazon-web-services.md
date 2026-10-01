@@ -3,8 +3,8 @@ type: entity
 title: "Amazon Web Services"
 aliases: ["AWS", "Amazon Cloud"]
 date_created: 2026-05-06
-date_updated: 2026-08-18
-source_count: 8
+date_updated: 2026-10-01
+source_count: 9
 tags: ["aws", "cloud-provider", "amazon", "infraestrutura"]
 skill: tech-mentor-infra
 status: stable
@@ -79,3 +79,4 @@ Panorama didático (não exaustivo de todos os produtos) que ordena os serviços
 - [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — quatro serviços AWS combinados na demo de domínio + HTTPS: [[wiki/concepts/aws-route-53|Route 53]] (DNS), [[wiki/concepts/certificado-ssl-acm|Certificate Manager]] (SSL), [[wiki/concepts/aws-cloudfront|CloudFront]] (CDN/HTTPS) e [[wiki/concepts/amazon-s3|S3]] (site estático)
 - [[wiki/sources/talk-about-platforms-evan-bottcher]] — AWS como o "self-service real" para onde os times fugiram da infra centralizada travada (casos BigCo e WebBiz), trazendo o mantra [[wiki/concepts/you-build-it-you-run-it|you build it, you run it]]
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — Amazon citada como uma das pioneiras de API pública (anos 2000, ao lado de eBay e Salesforce); AWS citada nos anos 2010 como parte da expansão de "API economy" via centenas de APIs de infraestrutura como produto
+- [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — bancos gerenciados em nuvem (AWS/Azure/GCP) não eliminam o CAP

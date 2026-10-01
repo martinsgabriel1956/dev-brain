@@ -3,8 +3,8 @@ type: concept
 title: "Vertical Slice Architecture"
 aliases: ["vertical slice", "feature-first architecture", "slice por feature"]
 date_created: 2026-04-23
-date_updated: 2026-08-04
-source_count: 5
+date_updated: 2026-10-01
+source_count: 6
 tags: [arquitetura, modularidade, feature-first, agentes, tokens, frontend]
 skill: tech-mentor-backend
 status: stub
@@ -65,6 +65,10 @@ Sem discipline, Vertical Slice pode levar a duplicação de lógica entre featur
 
 [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] cita o padrão *package by feature* do Go como exemplo concreto de vertical slice ganhando tração fora do contexto original de VSA em .NET, e liga isso diretamente ao [[wiki/concepts/navigation-paradox]]: estrutura horizontal em camadas obriga o agente a atravessar múltiplos arquivos (mappers, DTOs) para uma única funcionalidade, com risco real de deixar arquivos para trás; vertical slice reduz esse custo por ser mais óbvia tanto para agente quanto para humano — mesma conclusão já registrada acima via [[wiki/concepts/monolito-modular-frontend]] e a comparação horizontal-vs-vertical no topo desta página.
 
+## Visão de Bernardo Lobato: Domínio por Slice, Sinkhole e Extração
+
+[[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] motiva o padrão pelo [[wiki/concepts/architecture-sinkhole]] das camadas fechadas e destaca três pontos novos: (1) cada slice pode ter **sua própria representação** de entidades como `Usuário` ([[wiki/concepts/dominio-centralizado-vs-modelo-por-slice]]); (2) slices podem chamar-se como clientes, risco de [[wiki/concepts/acoplamento-entre-slices]]; (3) a slice serve de passo intermediário para extrair serviço ([[wiki/concepts/extracao-de-slice-para-servico]]). Pode ser mesclado com outros estilos no mesmo projeto. [external] Terminologia de Jimmy Bogard: "minimize coupling between slices, and maximize coupling in a slice" (https://www.jimmybogard.com/vertical-slice-architecture/).
+
 ## Key Sources
 
 - [[wiki/sources/clean-architecture-ia-custo-real]]
@@ -72,3 +76,4 @@ Sem discipline, Vertical Slice pode levar a duplicação de lógica entre featur
 - [[wiki/sources/context-engineering-avancado-para-coding-agents]] — implementação incremental para manter context window baixa
 - [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] — vertical slice dentro de um módulo frontend como isolamento pré-extração, e o risco de virar regra filosófica rígida em vez de ferramenta prática
 - [[wiki/sources/uncle-bob-direito-de-nao-ler-codigo-agentes-ia]] — package by feature do Go como exemplo de adoção crescente, ligado ao custo medido pelo Navigation Paradox
+- [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] — Fonte primária em português para o padrão em backend: separação por intenção/funcionalidade, modelo de domínio por slice, acoplamento entre slices e extração para serviço

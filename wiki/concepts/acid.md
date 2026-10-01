@@ -3,8 +3,8 @@ type: concept
 title: "ACID"
 aliases: ["atomicity", "consistency isolation durability", "acid properties"]
 date_created: 2026-04-22
-date_updated: 2026-07-30
-source_count: 7
+date_updated: 2026-10-01
+source_count: 8
 tags: [banco-de-dados, acid, transactions, postgresql, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -58,3 +58,4 @@ Durability não significa "gravado imediatamente no arquivo final" — significa
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — origem histórica do modelo relacional (Codd, 1970) e por que sistemas financeiros/saúde dependem de ACID
 - [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] — definição formal cobrada em prova de concurso, termo SGBDR
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — por que atomicidade quebra entre microsserviços com banco por serviço, motivando 2PC e Saga Pattern
+- [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — C do ACID (integridade) não é o C do CAP; ver [[wiki/concepts/consistencia-cap-vs-consistencia-acid]]

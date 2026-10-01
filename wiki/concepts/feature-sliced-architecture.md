@@ -3,8 +3,8 @@ type: concept
 title: "Feature-Sliced Architecture"
 aliases: ["feature-based structure", "arquitetura por feature React", "feature slices"]
 date_created: 2026-04-22
-date_updated: 2026-07-27
-source_count: 2
+date_updated: 2026-10-01
+source_count: 3
 tags: [react, arquitetura, organização, escalabilidade, frontend-architecture]
 skill: tech-mentor-frontend
 status: stable
@@ -68,3 +68,4 @@ Feature-Sliced Architecture organiza o *código dentro de um único build*; [[wi
 
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
 - [[wiki/sources/arquitetura-frontend-microfrontends-monolito-modular-vertical-slice]] — mesmo princípio de fronteira por domínio aplicado um nível acima, como base da transição de monolito modular para microfrontend baseado em rotas
+- [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] — organização por funcionalidade (negócio) em vez de tecnologia, no lado backend; regra de features não se chamarem diretamente ecoa o acoplamento entre slices

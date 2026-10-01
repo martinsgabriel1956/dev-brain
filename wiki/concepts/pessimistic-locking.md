@@ -3,8 +3,8 @@ type: concept
 title: "Pessimistic Locking"
 aliases: ["locking pessimista", "lock pessimista", "SELECT FOR UPDATE", "for update"]
 date_created: 2026-08-25
-date_updated: 2026-08-25
-source_count: 1
+date_updated: 2026-10-01
+source_count: 2
 tags: [concorrencia, race-condition, locking, sql, transactions, system-design]
 skill: tech-mentor-system-design
 status: draft
@@ -53,3 +53,4 @@ Nunca abrir uma transação, travar uma linha com `FOR UPDATE`, e dentro dela fa
 ## Key Sources
 
 - [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] — introdução da técnica com exemplo de venda de ingresso concorrente; demonstração empírica com 5 conexões simultâneas no PostgreSQL confirmando que só a primeira consegue reservar
+- [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] — mecanismo citado para o serviço de booking (consistência)

@@ -3,8 +3,8 @@ type: entity
 title: "Netflix"
 aliases: ["Netflix"]
 date_created: 2026-08-12
-date_updated: 2026-08-12
-source_count: 1
+date_updated: 2026-10-01
+source_count: 2
 tags: [netflix, platform-engineering, paved-road, devops, resiliencia, streaming]
 skill: tech-mentor-infra
 status: stub
@@ -21,3 +21,4 @@ Empresa de streaming frequentemente citada como referência em engenharia de pla
 ## Key sources
 
 - [[wiki/sources/talk-about-platforms-evan-bottcher]] — Evan Bottcher, *What I Talk About When I Talk About Platforms* (2018)
+- [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — exemplo hipotético de catálogo: priorizar disponibilidade no CAP (não é descrição da arquitetura real da empresa)
