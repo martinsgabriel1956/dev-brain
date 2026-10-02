@@ -3,8 +3,8 @@ type: concept
 title: "Rust — Fundamentos, Tooling e Adoção"
 aliases: ["rust option result", "rust enum exaustivo", "cargo", "crates.io", "rust traits", "quando usar rust"]
 date_created: 2026-07-16
-date_updated: 2026-07-16
-source_count: 1
+date_updated: 2026-10-02
+source_count: 2
 tags: [rust, traits, option, result, pattern-matching, cargo, enum, adocao-de-linguagem]
 skill: lang-systems
 status: stable
@@ -105,3 +105,11 @@ Nenhum desses exemplos foi verificado contra fonte primária nesta ingestão —
 ## Key Sources
 
 - [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]]
+
+## Rust na era da IA
+
+[[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] cita o Rust como "adicionando complexidade em compile-time"; contra-argumento: essa verificação elimina bugs de memória, o que importa mais quando a IA gera volume. Ver [[wiki/concepts/c-como-linguagem-alvo-de-codigo-gerado-por-ia]].
+
+## Key sources
+
+- [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — crítica ao Rust e contra-argumento

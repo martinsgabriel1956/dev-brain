@@ -3,8 +3,8 @@ type: concept
 title: "Sem Balas de Prata"
 aliases: ["no silver bullets", "não existe solução universal", "pragmatismo técnico"]
 date_created: 2026-04-22
-date_updated: 2026-09-03
-source_count: 2
+date_updated: 2026-10-02
+source_count: 3
 tags: [carreira, habitos, arquitetura, pragmatismo, liderança]
 skill: tech-mentor-leadership
 status: stable
@@ -42,3 +42,4 @@ O mesmo princípio tem uma face menos óbvia: acreditar que existe "a melhor tec
 
 - [[wiki/sources/9-habitos-programador-junior]]
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — aplicação à entrevista de arquitetura: a crença na "tecnologia perfeita" paralisa candidatos antes de começarem; a melhor alternativa é derivada do caso de uso, não conhecida de antemão
+- [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — fecho do vídeo: arquitetura distribuída não é moda, mas não existe bala de prata; decidir com embasamento

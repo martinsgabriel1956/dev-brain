@@ -3,8 +3,8 @@ type: concept
 title: "Alta Disponibilidade"
 aliases: ["HA", "High Availability", "Alta Disponibilidade Cloud"]
 date_created: 2026-05-06
-date_updated: 2026-10-01
-source_count: 9
+date_updated: 2026-10-02
+source_count: 10
 tags: ["alta-disponibilidade", "resiliência", "aws", "arquitetura", "sre"]
 skill: tech-mentor-infra
 status: stub
@@ -71,3 +71,4 @@ Framing complementar (mais amplo que redundância multi-AZ acima): disponibilida
 - [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] — indisponibilidade visualizada no nível mais granular: uma requisição dropada por um servidor saturado é o sintoma direto e imediato de falta de disponibilidade, antes de qualquer discussão de AZ/região
 - [[wiki/sources/github-2018-cap-pacelc-particao-video]] — contraste: disponibilidade formal do CAP (nó vivo responde) vs. uptime ([[wiki/concepts/disponibilidade-no-teorema-cap]])
 - [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] — distinção CAP-availability vs. HA operacional; ver [[wiki/concepts/disponibilidade-no-teorema-cap]]
+- [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — alta disponibilidade, escalabilidade e tolerância a falhas como razão de a arquitetura distribuída ser hoje 'praticamente padrão'

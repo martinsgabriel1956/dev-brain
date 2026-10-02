@@ -3,8 +3,8 @@ type: entity
 title: "Netflix"
 aliases: ["Netflix"]
 date_created: 2026-08-12
-date_updated: 2026-10-01
-source_count: 2
+date_updated: 2026-10-02
+source_count: 3
 tags: [netflix, platform-engineering, paved-road, devops, resiliencia, streaming]
 skill: tech-mentor-infra
 status: stub
@@ -22,3 +22,4 @@ Empresa de streaming frequentemente citada como referência em engenharia de pla
 
 - [[wiki/sources/talk-about-platforms-evan-bottcher]] — Evan Bottcher, *What I Talk About When I Talk About Platforms* (2018)
 - [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — exemplo hipotético de catálogo: priorizar disponibilidade no CAP (não é descrição da arquitetura real da empresa)
+- [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — streaming 'tipo Netflix' como exemplo **hipotético** de arquitetura distribuída (autenticação, catálogo, recomendação, pagamento…); a Netflix também é citada como justificativa errada de adoção ('a Netflix usa')

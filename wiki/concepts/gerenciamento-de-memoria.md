@@ -3,8 +3,8 @@ type: concept
 title: "Gerenciamento de Memória (Linguagens de Programação)"
 aliases: ["memory management", "garbage collector", "GC", "ownership", "manual memory management"]
 date_created: 2026-07-09
-date_updated: 2026-08-27
-source_count: 4
+date_updated: 2026-10-02
+source_count: 5
 tags: [cs-fundamentals, lang-systems, linguagens-de-programacao, memoria, garbage-collector, rust, runtime, raii, cpp, baixo-nivel]
 skill: cs-fundamentals
 status: draft
@@ -45,9 +45,14 @@ Em [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]], o 
 - [[wiki/concepts/concorrencia]] — modelo de memória e modelo de concorrência do runtime são decisões acopladas (memória compartilhada entre threads exige sincronização; ownership em Rust é o que torna "fearless concurrency" possível sem data races)
 - [[wiki/concepts/ponteiros-cpp-stack-heap-raii]] — o mesmo bug (retornar endereço de variável local) é undefined behavior em C++ manual, mas não existe em Go (escape analysis realoca a variável para a heap) nem em C# (reference types já vivem na heap sob GC)
 
+## Memória manual quando o autor é IA
+
+[[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] argumenta que a IA "não esquece de liberar memória", tornando o modelo manual viável; a apresentadora contesta (instruções se perdem na janela de contexto). Ver [[wiki/concepts/c-como-linguagem-alvo-de-codigo-gerado-por-ia]] e [[wiki/concepts/custo-de-abstracao-em-runtime]].
+
 ## Key sources
 
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]]
 - [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — aprofundamento de ownership em Rust: move semantics, regra de exclusividade do borrowing (N leitores OU 1 escritor) e lifetimes como garantia de que referência não outlive o valor
 - [[wiki/sources/ponteiros-cpp-go-csharp]] — comparação prática C++/Go/C#: stack vs. heap, escape analysis em Go, RAII e `unique_ptr` em C++ moderno
 - [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] — gerenciamento manual (malloc, memory leak, double free) como motivação de estudo e como responsabilidade central de um sistema operacional
+- [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — IA como autora de código com memória manual: tese e ressalva

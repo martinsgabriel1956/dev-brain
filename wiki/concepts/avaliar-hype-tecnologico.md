@@ -3,8 +3,8 @@ type: concept
 title: "Avaliar Hype Tecnológico com a Tríade Retorno-Risco-Liquidez"
 aliases: ["como identificar hype", "avaliação de tecnologia emergente", "quando adotar tecnologia nova", "hype tecnológico"]
 date_created: 2026-07-09
-date_updated: 2026-09-29
-source_count: 6
+date_updated: 2026-10-02
+source_count: 7
 tags: [hype, tomada-de-decisao, escolha-de-stack, carreira, tech-debt]
 skill: tech-mentor-leadership
 status: stable
@@ -79,3 +79,4 @@ A tríade avalia o hype do ponto de vista de quem decide; [[wiki/concepts/isomor
 - [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]] — aplicação da tríade ao hype consumido pelo cliente de um projeto de IA, não pelo próprio profissional
 - [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] — microsserviços como hype adotado sem saber que problema resolve; 'elegante' e 'moderno' como justificativas vagas
 - [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — perspectiva organizacional do hype: ondas de modernização e isomorfismo mimético
+- [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — aplicação do alerta a arquitetura distribuída: decisão tomada por hype pode comprometer tudo o que foi investido

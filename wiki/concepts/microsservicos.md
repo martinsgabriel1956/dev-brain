@@ -3,8 +3,8 @@ type: concept
 title: "Microsserviços"
 aliases: ["microsservicos", "microservices", "arquitetura de microsserviços", "decomposição por domínio"]
 date_created: 2026-07-24
-date_updated: 2026-10-01
-source_count: 28
+date_updated: 2026-10-02
+source_count: 29
 tags: [microsservicos, arquitetura, bounded-context, distributed-monolith, circuit-breaker, resiliencia]
 skill: tech-mentor-backend
 status: draft
@@ -152,3 +152,4 @@ A mesma fonte reafirma a regra de acesso exclusivo via API (nunca via banco comp
 - [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] — escolha CAP por serviço; ver [[wiki/concepts/cap-por-servico]]
 - [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — CAP só entra em microsserviços quando há estado compartilhado (Estoque/Pedido); ver [[wiki/concepts/cap-exige-estado-compartilhado]]
 - [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] — Vertical Slice como caminho intermediário para microsserviços; ver [[wiki/concepts/extracao-de-slice-para-servico]]
+- [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — microsserviços como a explosão dos anos 2010 de [[wiki/concepts/arquitetura-distribuida]], com a nuvem; motivos, desafios e motivos errados de adoção

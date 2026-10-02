@@ -3,8 +3,8 @@ type: concept
 title: "Linguagem C"
 aliases: ["C", "C language", "linguagem C como fundação"]
 date_created: 2026-08-13
-date_updated: 2026-08-27
-source_count: 2
+date_updated: 2026-10-02
+source_count: 3
 tags: [cs-fundamentals, lang-systems, linguagens, aprendizado, fundamentos, performance, baixo-nivel]
 skill: cs-fundamentals
 status: stub
@@ -41,7 +41,12 @@ Em [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]], a 
 - [[wiki/concepts/rust-fundamentos]] — alternativa moderna que tenta ensinar os mesmos primeiros princípios com memória segura (ownership/borrowing)
 - [[wiki/concepts/gerenciamento-de-memoria]] — manual (C), garbage collector ou ownership
 
+## C na era da IA (tese de opinião)
+
+Em [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]], um artigo defende que C "volta a ser o rei" quando a IA escreve o código: zero overhead, binários mínimos, controle de hardware. Detalhes e contrapontos (segurança, janela de contexto, humanos que revisam) em [[wiki/concepts/c-como-linguagem-alvo-de-codigo-gerado-por-ia]]; dificuldades humanas em [[wiki/concepts/aritmetica-de-ponteiros]].
+
 ## Key sources
 
 - [[wiki/sources/por-que-comecar-com-c-em-2026-cs50-david-malan]] — C como fundação pedagógica; construir as próprias estruturas de dados; andaime para Python
 - [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] — C como exigência prática (não só pedagógica) para qualquer projeto de baixo nível
+- [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — tese de opinião: C como linguagem-alvo de código gerado por IA

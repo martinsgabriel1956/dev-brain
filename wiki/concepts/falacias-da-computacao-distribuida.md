@@ -3,8 +3,8 @@ type: concept
 title: "Falácias da computação distribuída"
 aliases: ["fallacies of distributed computing", "a rede é confiável"]
 date_created: 2026-09-23
-date_updated: 2026-09-23
-source_count: 1
+date_updated: 2026-10-02
+source_count: 2
 tags: [system-design, sistemas-distribuidos, falacias, rede, latencia]
 skill: tech-mentor-system-design
 status: stub
@@ -22,3 +22,4 @@ Suposições falsas comuns sobre sistemas distribuídos. A fonte destaca duas:
 ## Key sources
 
 - [[wiki/sources/github-2018-cap-pacelc-particao-video]]
+- [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — falhas de rede e latência listadas como desafio de comunicação em [[wiki/concepts/arquitetura-distribuida]]

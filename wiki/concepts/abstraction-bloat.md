@@ -3,8 +3,8 @@ type: concept
 title: "Abstraction Bloat"
 aliases: ["abstraction bloat", "over-engineering ia", "complexidade gerada por agente"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
-source_count: 4
+date_updated: 2026-10-02
+source_count: 5
 tags: [ia, agentes, arquitetura, over-engineering, qualidade, tokens]
 skill: tech-mentor-ai
 status: stable
@@ -48,3 +48,11 @@ Abstraction bloat cria um loop de custo:
 - [[wiki/sources/clean-architecture-ia-custo-real]]
 - [[wiki/sources/super-productivity-ai-architecture-guide]]
 - [[wiki/sources/overengineering-carol-ate-quinta]]
+
+## Contraponto: IA e abstrações de linguagem
+
+O oposto do bloat: [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] propõe descartar as abstrações de linguagem quando a IA escreve; ver [[wiki/concepts/abstracoes-como-protecao-cognitiva-humana]].
+
+## Key sources
+
+- [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — contraponto sobre abstrações quando a IA é autora

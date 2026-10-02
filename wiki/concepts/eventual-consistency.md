@@ -3,8 +3,8 @@ type: concept
 title: "Eventual Consistency"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-10-01
-source_count: 11
+date_updated: 2026-10-02
+source_count: 12
 tags: [eventual-consistency]
 skill: tech-mentor-system-design
 status: stub
@@ -43,3 +43,4 @@ Terceiro desafio da [[wiki/concepts/comunicacao-assincrona]] segundo [[wiki/enti
 - [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — delay entre banco de escrita e banco de leitura como custo da atualização assíncrona do read model via eventos
 - [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] — lado A aceito para busca/perfil/comentários
 - [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — lado A aceita divergência temporária durante a partição
+- [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — consistência de dados entre serviços como um dos seis desafios de [[wiki/concepts/arquitetura-distribuida]]

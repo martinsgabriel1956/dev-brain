@@ -12598,3 +12598,45 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (13):** [[wiki/concepts/vertical-slice-architecture]] (seção nova), [[wiki/concepts/arquitetura-em-3-camadas]] (seção nova), [[wiki/concepts/coesao]], [[wiki/concepts/acoplamento]], [[wiki/concepts/microsservicos]], [[wiki/concepts/monolito-modular]], [[wiki/concepts/strangler-fig-pattern]], [[wiki/concepts/bounded-context]], [[wiki/concepts/feature-sliced-architecture]], [[wiki/concepts/clean-architecture]], [[wiki/concepts/modelo-de-dominio-anemico]], [[wiki/concepts/navigation-paradox]], [[wiki/entities/bernardo-lobato]] — Key sources + bump de `source_count`/`date_updated`.
 
 **Notas:** (1) Sem contradição com a wiki; complementa [[wiki/concepts/vertical-slice-architecture]], antes ancorado em frontend e agentes de IA, com a visão backend/DDD. (2) [external] Bogard confirma "minimize coupling between slices, maximize coupling in a slice" e cada slice decidir sua implementação; a atribuição do Architecture Sinkhole a Mark Richards **não foi verificada** (O'Reilly retornou 403). (3) Lacunas: duplicação de regras entre slices, mecanismo de chamada entre slices e persistência do "mesmo usuário" não são tratados. (4) Contagem de tocadas (13) dentro do padrão 10–15. (5) Novos conceitos: um `draft`+`draft`, dois `stub`.
+
+---
+
+## [2026-10-02] ingest | Segurança de rede Wi-Fi em pequeno comércio: isolando clientes com MikroTik
+
+**Fonte:** transcrição de vídeo colada pelo usuário, limpa em `raw/seguranca-rede-wifi-pequeno-comercio-mikrotik-isolamento-clientes.md` (já em português; sem tradução; erros de fala corrigidos e listados no cabeçalho). Autor não identificado.
+
+**Skill:** tech-mentor-networking (SKILL.md + `references/network-security.md`, `networking-infra-containers.md`, `wireless-mobile-networking.md`; skill em `~/Documentos/skills/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/seguranca-rede-wifi-pequeno-comercio-mikrotik-isolamento-clientes]], [[wiki/entities/mikrotik]], [[wiki/concepts/rede-plana]], [[wiki/concepts/segmentacao-de-rede-por-faixa-de-ip-e-firewall]], [[wiki/concepts/client-isolation]], [[wiki/concepts/ip-fixo-em-rede-interna]], [[wiki/concepts/protecao-unidirecional-vs-bidirecional]], [[wiki/concepts/degradacao-de-ap-por-numero-de-conexoes]]
+
+**Tocadas (7):** [[wiki/concepts/attack-surface]], [[wiki/concepts/defense-in-depth]], [[wiki/concepts/least-privilege]], [[wiki/concepts/blast-radius]], [[wiki/concepts/pentest]], [[wiki/concepts/network-policy]], [[wiki/sources/zero-trust]].
+
+**Notas:** (1) Sem contradição com a wiki. (2) Complementos [external]/inferência, marcados nas páginas e **não verificados na web**: stateful firewall e retorno de conexões (skill), limite de ~50 clientes é regra prática do autor, IP fixo não impede IP manual na LAN. (3) Lacunas do vídeo: WPA2/3, VLAN/SSID, ordem das regras, as 5 regras bidirecionais (só em slide), DNS/DHCP do guest. (4) Contagem de tocadas+criadas = 14 (padrão 10–15). (5) Sete novas páginas: seis conceitos `draft`, uma entidade `stub`.
+
+---
+
+## [2026-10-02] ingest | C como linguagem do futuro na era da IA (quadro Bora tomar café)
+
+**Fonte:** transcrição de vídeo (corte do canal de [[wiki/entities/fernanda-kipper]]) colada pelo usuário, limpa em `raw/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe.md` (já em português; sem tradução; erros de fala corrigidos e listados no cabeçalho; artigo lido separado do comentário). Autor do artigo e apresentadora não identificados.
+
+**Skill:** lang-systems (SKILL.md + `references/c-cpp.md`, `languages-transversal.md`; skill em `~/Documentos/skills/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]], [[wiki/concepts/c-como-linguagem-alvo-de-codigo-gerado-por-ia]], [[wiki/concepts/custo-de-abstracao-em-runtime]], [[wiki/concepts/abstracoes-como-protecao-cognitiva-humana]], [[wiki/concepts/linguagem-de-programacao-pensada-para-ia]], [[wiki/concepts/aritmetica-de-ponteiros]]
+
+**Tocadas (10):** [[wiki/concepts/linguagem-c]], [[wiki/concepts/gerenciamento-de-memoria]], [[wiki/concepts/abstracao]], [[wiki/concepts/compilador]], [[wiki/concepts/abstraction-bloat]], [[wiki/concepts/vibe-coding]], [[wiki/concepts/governanca-de-codigo-gerado-por-ia]], [[wiki/concepts/linguagem-natural-como-camada-de-abstracao]], [[wiki/concepts/rust-fundamentos]], [[wiki/concepts/ponteiros-cpp-stack-heap-raii]], [[wiki/entities/fernanda-kipper]] (11 com a entidade).
+
+**Notas:** (1) Tensão (não contradição formal) com [[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]]: C amplificaria o impacto das falhas que a IA já introduz mais. (2) Complementa [[wiki/sources/por-que-comecar-com-c-em-2026-cs50-david-malan]] e [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] (C como fundação) com a visão de C como alvo de geração. (3) Números do artigo (Python 10–100× mais lento, runtime de 50 MB) **não verificados na web**; marcados [external]/alegação. (4) Lacunas: sem benchmark, sem discussão de verificação de C gerado, nem de I/O-bound. (5) Cinco conceitos novos: três `draft` e dois `stub`.
+
+---
+
+## [2026-10-02] ingest | Arquitetura Distribuída — Introdução, Histórico e Desafios (Bernardo Lobato)
+
+**Fonte:** transcrição de vídeo colada pelo usuário, limpa em `raw/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato.md` (já em português; sem tradução; erros de fala corrigidos e listados no cabeçalho). Primeiro vídeo da série de arquiteturas distribuídas de [[wiki/entities/bernardo-lobato]].
+
+**Skill:** tech-mentor-system-design (SKILL.md + `references/architecture-foundations-core.md`, `distributed-systems-core.md`; skill em `~/Documentos/skills/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]], [[wiki/concepts/arquitetura-distribuida]], [[wiki/concepts/soa-service-oriented-architecture]], [[wiki/concepts/escalabilidade-independente]], [[wiki/concepts/desenhar-distribuido-implementar-monolito]]
+
+**Tocadas (18):** [[wiki/entities/bernardo-lobato]], [[wiki/entities/netflix]], [[wiki/concepts/microsservicos]], [[wiki/concepts/monolito]], [[wiki/concepts/monolith-first]], [[wiki/concepts/distributed-monolith]], [[wiki/concepts/comunicacao-sincrona]], [[wiki/concepts/comunicacao-assincrona]], [[wiki/concepts/eventual-consistency]], [[wiki/concepts/observabilidade]], [[wiki/concepts/tolerancia-a-falha]], [[wiki/concepts/escalabilidade-horizontal]], [[wiki/concepts/cargo-cult-tecnologico]], [[wiki/concepts/avaliar-hype-tecnologico]], [[wiki/concepts/sem-balas-de-prata]], [[wiki/concepts/esb-enterprise-service-bus]], [[wiki/concepts/falacias-da-computacao-distribuida]], [[wiki/concepts/alta-disponibilidade]].
+
+**Notas:** (1) Sem contradição com a wiki; complementa [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]], [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] e [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] (mesma série). (2) O exemplo de streaming é suposição do autor, não a arquitetura real da Netflix. (3) Histórico e datas do vídeo são aproximados e **não foram verificados na web**; complementos marcados [skill]/inferência (resiliência condicional a timeout/circuit breaker; distribuição amplia a superfície de ataque). (4) Lacunas: sem critério de "arquitetura preparada para distribuir", sem transações distribuídas nem versionamento de contratos; trecho "nem 30 por…" truncado. (5) Quatro conceitos novos: um `draft` e três `stub`. (6) Prometidos e ainda ausentes: vídeos "por que não/por que sim" e série de observabilidade.

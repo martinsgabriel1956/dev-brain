@@ -3,8 +3,8 @@ type: concept
 title: "Observabilidade"
 aliases: ["observabilidade", "observability", "três pilares", "metrics logs traces"]
 date_created: 2026-04-22
-date_updated: 2026-09-30
-source_count: 14
+date_updated: 2026-10-02
+source_count: 15
 tags: [observabilidade, metricas, logs, traces, prometheus, sre, infraestrutura]
 skill: tech-mentor-system-design
 status: stable
@@ -187,3 +187,4 @@ A entrada de agentes de IA na pipeline adiciona uma pergunta específica aos tr�
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — tracing de LLM e latência entre chamadas de agentes como extensão dos três pilares clássicos; Open Telemetry incorporando instrumentação orientada a IA
 - [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — caso Alexandria: plataforma de logs construída internamente por custo de escala (600 TB/dia), arquitetura de 4 componentes (ingestão Kafka microbatch, processamento, storage S3 colunar 95% compressão, query engine distribuída), 50% mais barata que a solução terceirizada anterior
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — debug em fluxo assíncrono como motivação para rastreabilidade
+- [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — tracing/logs/métricas como desafio de [[wiki/concepts/arquitetura-distribuida]]; debug 'disciplina à parte'; série própria anunciada

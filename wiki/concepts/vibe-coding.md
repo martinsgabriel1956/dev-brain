@@ -3,8 +3,8 @@ type: concept
 title: "Vibe Coding"
 aliases: ["vibe coding", "vibe-coding", "coding por vibração", "agentic coding", "orquestração de agentes"]
 date_created: 2026-04-23
-date_updated: 2026-09-30
-source_count: 24
+date_updated: 2026-10-02
+source_count: 25
 tags: [vibe-coding, agentes-ia, produtividade, divida-cognitiva, ai-brainfry, paralelismo-cognitivo]
 skill: tech-mentor-ai
 status: stable
@@ -185,3 +185,11 @@ O ponto novo trazido por essa fonte, em relação ao que já estava documentado:
 ## Relato de Mercado: Staff/Tech Lead/Sênior Sem Escrever Código Manualmente Há Meses
 
 [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] traz um relato de primeira mão, não estatística formal: em grandes empresas, staff engineers, tech leads e sêniores relatam não escrever código manualmente há meses, com times liberando "milhares de dólares por dia" de uso de IA e produzindo 20-25 PRs por semana — a ponto de a revisão de código deixar de ser leitura humana linha a linha e virar estrutura de verificação automatizada (ver [[wiki/concepts/quality-gate]]). A mesma fonte nota que a previsão de [[wiki/entities/anthropic|Dario Amodei]] sobre o fim do código escrito manualmente em ~6 meses, motivo de piada quando feita, "errou o prazo por 8-12 meses, não a tese" — se confirma como realidade atrasada, não como exagero.
+
+## Relação
+
+Se humanos não leem o código, o argumento de [[wiki/concepts/c-como-linguagem-alvo-de-codigo-gerado-por-ia]] ganha força; mas o ônus de verificação cresce [inferência].
+
+## Key sources
+
+- [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — implicação para a escolha de linguagem

@@ -3,8 +3,8 @@ type: concept
 title: "Attack Surface (Superfície de Ataque)"
 aliases: ["attack surface", "superfície de ataque", "minimização de superfície", "surface minimization"]
 date_created: 2026-06-05
-date_updated: 2026-10-01
-source_count: 9
+date_updated: 2026-10-02
+source_count: 10
 tags: [attack-surface, security, arquitetura-seguranca, defense-in-depth, gatekeeper]
 skill: tech-mentor-security
 status: stable
@@ -80,3 +80,4 @@ Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], 
 - [[wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv]] — campo de busca sem sanitização como ponto de entrada explorável (reflected XSS); exemplo didático de que qualquer campo que reflete input do usuário na resposta é superfície de ataque
 - [[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] — segundo caso independente de dirsearch revelando superfície não linkada (painel admin `/admin` e `/dashboard`, em vez de um `.env`)
 - [[wiki/sources/secrets-vazadas-no-github-conceitos-e-riscos]] — categorias de credencial mais visadas (LLM, gateway de pagamento) como dimensão adicional da superfície além da exposição pura
+- [[wiki/sources/seguranca-rede-wifi-pequeno-comercio-mikrotik-isolamento-clientes]] — Wi-Fi de clientes na mesma rede da empresa (rede plana) é superfície de ataque local: quem recebe a senha pode varrer PDV, financeiro e câmeras. Reduz-se com [[wiki/concepts/segmentacao-de-rede-por-faixa-de-ip-e-firewall]].

@@ -3,8 +3,8 @@ type: entity
 title: "Fernanda Kipper"
 aliases: ["Fernanda Kipper", "fernandakipper"]
 date_created: 2026-08-12
-date_updated: 2026-09-29
-source_count: 1
+date_updated: 2026-10-02
+source_count: 2
 tags: [criadora-de-conteudo, youtube, desenvolvimento-web, ensino]
 skill: tech-mentor-networking
 status: stub
@@ -20,3 +20,7 @@ Desenvolvedora e criadora de conteúdo técnico (canal no YouTube), com material
 - [[wiki/sources/busca-binaria-fila-protocolos-atendimento-live-coding]] — corte de um live coding quinzenal (2º e 4º domingo do mês) do canal principal "Fernanda Kiperdev": exercício de [[wiki/concepts/algoritmos-de-busca|busca binária]] resolvido em conjunto com o chat, com leitura de trechos do livro *Entendendo Algoritmos*
 - [[wiki/sources/database-branching-testes-neon-fernanda-kipper]] — [[wiki/concepts/database-branching|database branching]] com [[wiki/entities/neon-database|Neon]]: caso real de conflitos de migrations concorrentes no portal `fernandakipper.com`, resolvido com bancos de teste isolados por branch via copy-on-write, integrado à [[wiki/entities/vercel|Vercel]]
 - [[wiki/sources/ordenacao-selection-quicksort-bubble-sort-live-coding]] — segundo corte de live coding do canal sobre *Entendendo Algoritmos*: [[wiki/concepts/selection-sort]], [[wiki/concepts/quicksort]] e [[wiki/concepts/bubble-sort]]; continuação da live de busca binária
+
+## Key sources
+
+- [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — corte do quadro *Bora tomar café* (sextas): C como linguagem do futuro na era da IA

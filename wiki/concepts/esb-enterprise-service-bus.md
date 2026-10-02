@@ -3,8 +3,8 @@ type: concept
 title: "ESB (Enterprise Service Bus)"
 aliases: ["Enterprise Service Bus", "barramento de serviços", "iPaaS"]
 date_created: 2026-08-04
-date_updated: 2026-08-21
-source_count: 2
+date_updated: 2026-10-02
+source_count: 3
 tags: [esb, integracao, legado, arquitetura, mensageria, ipaas]
 skill: tech-mentor-backend
 status: draft
@@ -36,3 +36,4 @@ Organizações que passaram décadas construindo sistemas dificilmente substitue
 
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]]
 - [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] — SOA como estilo arquitetural em torno do ESB, contraponto histórico direto ao surgimento de "microsserviços" (Peter Rogers, 2005), WSO2 ESB como exemplo open source
+- [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — SOA (e seu ESB) como consolidação de meados dos anos 2000 na linha do tempo de [[wiki/concepts/arquitetura-distribuida]]

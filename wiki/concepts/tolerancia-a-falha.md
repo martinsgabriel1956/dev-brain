@@ -3,8 +3,8 @@ type: concept
 title: "Tolerância a Falha (Fault Tolerance)"
 aliases: ["FT", "Fault Tolerance", "fault-tolerant", "ativo-ativo"]
 date_created: 2026-08-03
-date_updated: 2026-09-30
-source_count: 2
+date_updated: 2026-10-02
+source_count: 3
 tags: ["tolerancia-a-falha", "alta-disponibilidade", "failover", "cluster", "arquitetura", "infra"]
 skill: tech-mentor-infra
 status: stub
@@ -51,3 +51,4 @@ O custo estrutural mais alto de FT vem de dois fatores, segundo a fonte:
 
 - [[wiki/sources/ha-vs-ft-alta-disponibilidade-tolerancia-a-falha]]
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — serviço que cai relê mensagens perdidas ao voltar
+- [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — resiliência como motivo de adoção: falha pontual não interrompe todo o sistema, usuário conclui o objetivo 'nem que parcialmente'

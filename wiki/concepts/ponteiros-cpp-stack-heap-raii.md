@@ -3,8 +3,8 @@ type: concept
 title: "Ponteiros, Stack/Heap e RAII (C++ vs. Go vs. C#)"
 aliases: ["ponteiros c++", "stack vs heap", "raii", "unique_ptr", "dangling pointer", "escape analysis", "smart pointers"]
 date_created: 2026-07-28
-date_updated: 2026-07-28
-source_count: 1
+date_updated: 2026-10-02
+source_count: 2
 tags: [cpp, ponteiros, stack, heap, raii, smart-pointers, gerenciamento-de-memoria, go, csharp, undefined-behavior]
 skill: lang-systems
 status: draft
@@ -66,6 +66,9 @@ Esse design tem uma linha direta de influência sobre padrões de outras linguag
 - [[wiki/concepts/go-fundamentos]] — sintaxe de ponteiro em Go (`&`, `*`) idêntica à de C, protegida por escape analysis + GC
 - [[wiki/concepts/lista-encadeada]] — estrutura de dados cujo custo O(1) de inserção/remoção depende diretamente de redirecionar ponteiros
 
+Ver [[wiki/concepts/aritmetica-de-ponteiros]] (manipulação manual em C).
+
 ## Key sources
 
 - [[wiki/sources/ponteiros-cpp-go-csharp]]
+- [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — aritmética de ponteiros em C

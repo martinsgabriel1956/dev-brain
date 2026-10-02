@@ -3,8 +3,8 @@ type: concept
 title: "Distributed Monolith"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-22
-source_count: 3
+date_updated: 2026-10-02
+source_count: 4
 tags: [distributed-monolith]
 skill: tech-mentor-backend
 status: stub
@@ -31,3 +31,4 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 - [[wiki/sources/anti-patterns]]
 - [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]]
 - [[wiki/sources/microsservicos]]
+- [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — contexto: distribuir sem os benefícios é o risco da adoção por motivo errado (hype)

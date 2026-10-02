@@ -3,8 +3,8 @@ type: concept
 title: "Network Policy"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-22
-source_count: 2
+date_updated: 2026-10-02
+source_count: 3
 tags: [network-policy]
 skill: tech-mentor-infra
 status: stub
@@ -27,3 +27,4 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 
 - [[wiki/sources/k8s-networking]]
 - [[wiki/sources/kubernetes-security]]
+- [[wiki/sources/seguranca-rede-wifi-pequeno-comercio-mikrotik-isolamento-clientes]] — Análogo em rede física/SOHO: firewall `forward`+`drop` entre faixas faz o papel de NetworkPolicy ([[wiki/concepts/segmentacao-de-rede-por-faixa-de-ip-e-firewall]]).

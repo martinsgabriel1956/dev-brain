@@ -3,8 +3,8 @@ type: concept
 title: "Comunicação Assíncrona"
 aliases: ["asynchronous communication", "comunicação assincrona", "async communication"]
 date_created: 2026-09-30
-date_updated: 2026-09-30
-source_count: 1
+date_updated: 2026-10-02
+source_count: 2
 tags: [comunicacao-assincrona, mensageria, polling, webhook, acoplamento, resiliencia, consistencia-eventual, arquiteturas-distribuidas]
 skill: tech-mentor-backend
 status: draft
@@ -52,3 +52,4 @@ Polling e webhook são comuns quando não se controla todos os sistemas (ex.: AP
 ## Key sources
 
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — definição, formas, exemplo de pedidos e três desafios
+- [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — retomada no vídeo de abertura da série: escolha impacta escalabilidade, disponibilidade e complexidade

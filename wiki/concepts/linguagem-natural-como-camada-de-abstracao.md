@@ -3,8 +3,8 @@ type: concept
 title: "Linguagem Natural como Camada de Abstração"
 aliases: ["natural language as abstraction layer", "prompt como linguagem de programação", "inglês como linguagem de alto nível"]
 date_created: 2026-08-27
-date_updated: 2026-09-14
-source_count: 2
+date_updated: 2026-10-02
+source_count: 3
 tags: [abstracao, ia-e-programacao, compiladores, llm, camadas-de-abstracao]
 skill: tech-mentor-leadership
 status: draft
@@ -39,3 +39,11 @@ A fonte propõe um critério concreto pra separar "mais uma camada" de "ruptura 
 
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — formulação original da tese via paralelo assembly→C e Java→bytecode→JVM
 - [[wiki/sources/ia-paradoxo-de-jevons-camada-de-abstracao-futuro-do-programador]] — segunda formulação independente via resistência histórica a compiladores (Grace Hopper, Jean Sammet, pai de Kent Beck); ressalva de que a analogia não é perfeita por LLMs serem estocásticas
+
+## Relação
+
+Nova camada acima das linguagens: [[wiki/concepts/abstracoes-como-protecao-cognitiva-humana]] pergunta se as camadas de baixo ainda são necessárias.
+
+## Key sources
+
+- [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — IA como camada acima; debate sobre camadas abaixo

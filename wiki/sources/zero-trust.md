@@ -3,12 +3,12 @@ type: source
 title: "Zero Trust"
 aliases: ["zero trust", "never trust always verify", "ztna", "spiffe spire", "conditional access"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
+date_updated: 2026-10-02
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/zero-trust.md
 source_url: ""
 date_published: ""
 date_ingested: 2026-04-23
-source_count: 0
+source_count: 1
 tags: [zero-trust, ztna, spiffe, spire, mtls, cloudflare-access, tailscale, conditional-access, microsegmentacao, identity-first]
 skill: tech-mentor-security
 status: stable
@@ -46,3 +46,8 @@ Zero Trust: "nunca confie, sempre verifique" — nenhum acesso é implicitamente
 
 - Zero Trust para workloads serverless (Lambda) — SPIFFE não funciona sem processo persistente. Qual a alternativa?
 - Modelo de maturidade CISA ZTM: como priorizar em qual pilar investir primeiro?
+
+## Key sources
+
+
+> Veja também: Contraponto prático em pequeno comércio: não tratar a rede interna como confiável; ver [[wiki/sources/seguranca-rede-wifi-pequeno-comercio-mikrotik-isolamento-clientes]].

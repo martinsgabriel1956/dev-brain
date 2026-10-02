@@ -3,8 +3,8 @@ type: concept
 title: "Cargo Cult Tecnológico"
 aliases: ["copiar stack de big tech", "solução Netflix Google Facebook sem contexto", "cargo cult de arquitetura"]
 date_created: 2026-07-03
-date_updated: 2026-09-29
-source_count: 7
+date_updated: 2026-10-02
+source_count: 8
 tags: [arquitetura, tomada-de-decisao, carreira, escala, contexto, processo, git]
 skill: tech-mentor-leadership
 status: draft
@@ -77,3 +77,4 @@ O [[wiki/concepts/isomorfismo-mimetico]] dá base organizacional ao cargo cult: 
 - [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] — a variante de processo (Git Flow como "padrão industrial" de influenciador); influenciadores como "modificadores de cultura"
 - [[wiki/sources/sobre-ser-gerente-fabio-akita]] — a variante de orçamento/nível salarial: "você pode pagar o que a Netflix paga?" como filtro anterior ao de escala de usuários
 - [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — a variante mimética (DiMaggio e Powell): imitação por incerteza e busca de legitimidade, sem necessariamente haver irracionalidade
+- [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — motivos errados de adotar arquitetura distribuída: hype, 'é moderno', 'a Netflix/Amazon usam', 'escala melhor', 'é mais seguro'

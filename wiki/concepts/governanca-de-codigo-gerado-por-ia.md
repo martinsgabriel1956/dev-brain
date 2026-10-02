@@ -3,8 +3,8 @@ type: concept
 title: "Governança de Código Gerado por IA"
 aliases: ["paradoxo da ia no codigo", "governar codigo de ia"]
 date_created: 2026-07-03
-date_updated: 2026-09-21
-source_count: 10
+date_updated: 2026-10-02
+source_count: 11
 tags: [ia-no-processo-de-engenharia, arquitetura, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -84,3 +84,11 @@ A mesma fonte descreve, do lado do [[wiki/concepts/worktree-paralelismo#Variante
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]] — caso limite: pessoa não técnica gerando tickets via IA conectada ao repositório, sem nenhum julgamento de engenharia no fluxo
 - [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — caso limite: vender sistema vibe-coded como pronto para produção sem revisão humana
 - [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] — paralelismo via worktree multiplica tanto o ganho de produtividade quanto o risco de código mal fundamentado
+
+## Escolha de linguagem
+
+Trocar para C reduz overhead, mas aumenta o risco de falhas de memória no que a IA gera: [[wiki/concepts/c-como-linguagem-alvo-de-codigo-gerado-por-ia]].
+
+## Key sources
+
+- [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — risco de linguagem sem segurança de memória

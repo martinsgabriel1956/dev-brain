@@ -3,8 +3,8 @@ type: concept
 title: "Comunicação Síncrona"
 aliases: ["synchronous communication", "chamada síncrona", "request-response bloqueante"]
 date_created: 2026-09-30
-date_updated: 2026-09-30
-source_count: 1
+date_updated: 2026-10-02
+source_count: 2
 tags: [comunicacao-sincrona, rest, acoplamento, resiliencia, arquiteturas-distribuidas]
 skill: tech-mentor-backend
 status: stub
@@ -25,3 +25,4 @@ Contraste: [[wiki/concepts/comunicacao-assincrona]].
 ## Key sources
 
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — definição, exemplo de autenticação e tabela comparativa com a assíncrona
+- [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — escolha síncrono vs. assíncrono apontada como decisão a tomar 'o quanto antes' em arquitetura distribuída

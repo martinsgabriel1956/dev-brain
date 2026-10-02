@@ -3,8 +3,8 @@ type: concept
 title: "Blast Radius"
 aliases: ["raio de explosão", "failure blast radius"]
 date_created: 2026-04-22
-date_updated: 2026-09-22
-source_count: 2
+date_updated: 2026-10-02
+source_count: 3
 tags: [resiliencia, blast-radius, system-design, isolamento]
 skill: tech-mentor-system-design
 status: stub
@@ -34,3 +34,4 @@ Serviço D (crítico): quer 5 threads → não tem → falha
 
 - [[wiki/sources/cell-based-architecture]] — Cell-Based Architecture particiona o sistema em células funcionalmente completas e independentes — cada célula serve um subconjunto de usuários ou tenants. Falha em uma célula não afeta as demais...
 - [[wiki/sources/bulkhead]]
+- [[wiki/sources/seguranca-rede-wifi-pequeno-comercio-mikrotik-isolamento-clientes]] — Rede plana = raio total: um dispositivo de visitante comprometido enxerga tudo ([[wiki/concepts/rede-plana]]); separar APs também isola a falha de capacidade ([[wiki/concepts/degradacao-de-ap-por-numero-de-conexoes]]).

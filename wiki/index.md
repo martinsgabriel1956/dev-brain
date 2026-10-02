@@ -26,6 +26,8 @@ date_updated: 2026-10-01
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] | Corte do quadro *Bora tomar café* ([[wiki/entities/fernanda-kipper]]) lendo artigo do Twitter: com IA escrevendo o código, o custo de runtime das linguagens de alto nível vira desperdício e [[wiki/concepts/linguagem-c]] "volta a ser o rei" ([[wiki/concepts/c-como-linguagem-alvo-de-codigo-gerado-por-ia]]). Apresentadora concorda no desempenho, contesta "IA não esquece" (janela de contexto) e sugere linguagem nova pensada para erros de IA. Tese de opinião, sem benchmark |
+| [[wiki/sources/seguranca-rede-wifi-pequeno-comercio-mikrotik-isolamento-clientes]] | Pequeno comércio: Wi-Fi de clientes na mesma [[wiki/concepts/rede-plana]] expõe PDV/financeiro/câmeras a scan. Solução: operadora com Wi-Fi off → [[wiki/entities/mikrotik]] → um AP por finalidade, faixas distintas e firewall `forward`+`drop` ([[wiki/concepts/segmentacao-de-rede-por-faixa-de-ip-e-firewall]]); [[wiki/concepts/ip-fixo-em-rede-interna]], [[wiki/concepts/client-isolation]] só nos APs de clientes/funcionários, 3 redes = [[wiki/concepts/protecao-unidirecional-vs-bidirecional]]; ~50 conexões degradam o AP ([[wiki/concepts/degradacao-de-ap-por-numero-de-conexoes]]). Serviço ~R$ 600/2 h. Faltam WPA, VLAN/SSID, ordem de regras |
 | [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]] sobre o [[wiki/concepts/vertical-slice-architecture|Vertical Slice]]: separar por **funcionalidade e não por camada técnica** para escapar do [[wiki/concepts/architecture-sinkhole]]; cada slice tem controller→dados e **sua própria representação** de entidades como `Usuário` ([[wiki/concepts/dominio-centralizado-vs-modelo-por-slice]]); ganhos de coesão e testes, risco de [[wiki/concepts/acoplamento-entre-slices]]; slice como passo antes de extrair serviço ([[wiki/concepts/extracao-de-slice-para-servico]]). Não é bala de prata; pode ser mesclado com outros estilos |
 | [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] | [[wiki/entities/pedro-camaforte\|Pedro Camaforte]] sobre o [[wiki/concepts/cap-theorem\|Teorema CAP]] em entrevistas: o triângulo "2 de 3" é um erro didático — o **P é a pré-condição que ativa a escolha entre C e A**, não uma opção; CA só existe em nó único; consistência para ingressos/estoque/finanças, disponibilidade para feeds/comentários ("feeling de produto"); nível sênior = escolha por serviço (booking = C, search = A). Divergência: define disponibilidade incluindo resposta de erro; Brewer [external] corrigiu o "2 de 3" em 2012 |
 | [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]] sobre o [[wiki/concepts/cap-theorem|Teorema CAP]] como decisão de arquitetura: história (Brewer 2000, Gilbert/Lynch 2002), P intrínseco, **CP/AP como comportamento e não rótulo de tecnologia** (bancos gerenciados não eliminam o CAP), **só é CAP com estado compartilhado** (Estoque/Pedido), C do CAP ≠ C do ACID, exemplos Netflix (A) e voos (busca = A, compra = C); o CAP não resolve a reconciliação pós-falha (saga/2PC) |
@@ -826,8 +828,40 @@ date_updated: 2026-10-01
 | [[wiki/sources/websocket-sse-realtime]] | SSE para unidirecional (servidor → cliente): `Last-Event-ID` dá reconexão automática gratuita, simples sobre HTTP/1.1. WebSocket para bidirecional: full-duplex, mas stateful — problema em cluster. Solução cluster: Redis Pub/Sub como bus entre nodes (socket.io-redis-adapter). Autenticação: token no handshake (não em headers após upgrade). Heartbeat obrigatório para detectar conexões zumbis. |
 | [[wiki/sources/zero-downtime-deploy]] | Deploy sem downtime exige duas coisas: estratégia de tráfego (Rolling/Blue-Green/Canary) + migrations backward compatible via Expand-Contract. Regra fundamental: nunca migre schema e código no mesmo deploy. |
 | [[wiki/sources/zero-trust]] | Zero Trust: "nunca confie, sempre verifique" — nenhum acesso é implicitamente confiável só por estar na rede interna. 7 pilares CISA: Identity, Device, Network, Workload, Data, Automation, Visibility. Acesso condicional: decisão por cada request baseada em identidade + postura do dispositivo + contexto. mTLS com SPIFFE/SPIRE para service-to-service. |
+| [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]], abertura da série: **[[wiki/concepts/arquitetura-distribuida|arquitetura distribuída]]** (serviços tecnicamente independentes pela rede vs. [[wiki/concepts/monolito|monolito]]); exemplo hipotético de streaming; histórico (Arpanet → cliente-servidor → web em escala → [[wiki/concepts/soa-service-oriented-architecture|SOA]] → microsserviços/nuvem); 4 motivos ([[wiki/concepts/escalabilidade-independente|escala independente]], resiliência, stack, equipes) e 6 desafios (operação, observabilidade, comunicação, consistência, custo, capacitação); alerta contra adoção por hype; [[wiki/concepts/desenhar-distribuido-implementar-monolito|desenhar distribuído, implementar monolito]] |
 
 ## Concepts
+
+### Arquitetura Distribuída — Introdução (2026-10-02)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/arquitetura-distribuida]] | Serviços independentes pela rede; motivos, desafios, histórico e o risco do motivo errado |
+| [[wiki/concepts/soa-service-oriented-architecture]] | Estilo baseado em serviços e ESB, consolidado em meados dos anos 2000, antes dos microsserviços |
+| [[wiki/concepts/escalabilidade-independente]] | Escalar só o módulo sobrecarregado (pagamentos na Black Friday, vídeo no lançamento) |
+| [[wiki/concepts/desenhar-distribuido-implementar-monolito]] | Pensar em componentes mas implementar monolito preparado para distribuir com mínimo impacto |
+
+### C na Era da IA (2026-10-02)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/c-como-linguagem-alvo-de-codigo-gerado-por-ia]] | Tese "C volta a ser o rei" e seus contrapontos (segurança, contexto, revisão humana) |
+| [[wiki/concepts/custo-de-abstracao-em-runtime]] | Overhead de interpretador/VM/GC vs. C, Rust e manual |
+| [[wiki/concepts/abstracoes-como-protecao-cognitiva-humana]] | Alto nível existe para o humano; "aluguel de prédio vazio" |
+| [[wiki/concepts/linguagem-de-programacao-pensada-para-ia]] | Hipótese: validações desenhadas para os erros da IA (stub) |
+| [[wiki/concepts/aritmetica-de-ponteiros]] | Mover ponteiros manualmente em C (stub) |
+
+### Segurança de Rede Wi-Fi em Pequeno Comércio (2026-10-02)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/rede-plana]] | Uma rede só: visitante com senha escaneia PDV e câmeras |
+| [[wiki/concepts/segmentacao-de-rede-por-faixa-de-ip-e-firewall]] | Faixas separadas + `forward drop` no MikroTik; o firewall protege, não a faixa |
+| [[wiki/concepts/client-isolation]] | AP isolation nos APs de clientes/funcionários, nunca no da empresa |
+| [[wiki/concepts/ip-fixo-em-rede-interna]] | IPs fixos permitem regras por host (ressalva: não impede IP manual na LAN) |
+| [[wiki/concepts/protecao-unidirecional-vs-bidirecional]] | 1 regra drop vs. 3 redes com ~5 regras |
+| [[wiki/concepts/degradacao-de-ap-por-numero-de-conexoes]] | ~50 conexões degradam o AP; separar APs isola a falha |
+| [[wiki/entities/mikrotik]] | Roteador/firewall de 5 portas usado como saída única |
 
 ### Vertical Slice — arquitetura por funcionalidade (2026-10-01)
 

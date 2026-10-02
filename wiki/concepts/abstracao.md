@@ -3,8 +3,8 @@ type: concept
 title: "Abstração"
 aliases: ["abstraction", "esconder detalhes", "contrato genérico"]
 date_created: 2026-04-25
-date_updated: 2026-08-27
-source_count: 7
+date_updated: 2026-10-02
+source_count: 8
 tags: [abstracao, software-design, clean-code, arquitetura, interfaces]
 skill: tech-mentor-backend
 status: stable
@@ -76,6 +76,10 @@ A fonte usa uma analogia médica para justificar por que isso é necessário: um
 
 [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] estende a cadeia de abstrações de programação para incluir a geração de código via LLM: assembly → C → linguagens com máquina virtual (Java/bytecode/JVM) → agora, prompt em linguagem natural → código-fonte convencional. A fonte propõe que isso não é ruptura qualitativa, é só mais um degrau — o mesmo tipo de "abrir mão de controle íntimo pela caixa mágica de tradução" que um engenheiro de 15 anos em assembly descreve ao migrar para C. Ver detalhamento em [[wiki/concepts/linguagem-natural-como-camada-de-abstracao]].
 
+## Abstração como custo e como proteção humana
+
+Ver [[wiki/concepts/abstracoes-como-protecao-cognitiva-humana]] e [[wiki/concepts/custo-de-abstracao-em-runtime]]: na tese de [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]], abstrações de linguagem existem para o humano e cobram overhead de runtime.
+
 ## Key sources
 
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — linguagem natural como nova camada no topo da cadeia assembly→C→bytecode/JVM
@@ -85,3 +89,4 @@ A fonte usa uma analogia médica para justificar por que isso é necessário: um
 - [[wiki/sources/design-pattern-adapter]] — caso concreto: extrair uma interface (`PdfAdapter`) entre a classe de negócio e uma lib externa de PDF é o que permite trocar de lib (DomPDF → TCPDF) sem tocar no consumidor
 - [[wiki/sources/7-habitos-programador-altamente-eficaz]] — pensar primeiro em abstrações e seus limites como hábito de maturidade; analogia dos órgãos do corpo humano para justificar por que limites bem definidos importam
 - [[wiki/sources/por-que-comecar-com-c-em-2026-cs50-david-malan]] — abstração por camadas no ensino: hash table de C (semana 5) → `dict` de uma linha em Python (semana 6); entender de baixo para cima o que a abstração esconde
+- [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — abstração de linguagem como proteção cognitiva com custo de runtime

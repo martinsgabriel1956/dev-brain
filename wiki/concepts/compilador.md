@@ -3,8 +3,8 @@ type: concept
 title: "Compilador"
 aliases: ["compiler", "compilação", "interpretador", "AST", "análise léxica"]
 date_created: 2026-06-26
-date_updated: 2026-09-28
-source_count: 6
+date_updated: 2026-10-02
+source_count: 7
 tags: [cs-fundamentals, compiladores, interpretadores, ast, linguagens-de-programacao]
 skill: cs-fundamentals
 status: draft
@@ -99,6 +99,10 @@ O compilador é a [[abstracao]] que permite escrever `let x = 10` e não se preo
 
 [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] recomenda, para quem está começando (ou mesmo experiente sem essa base), estudar o pipeline de compilação da própria linguagem escolhida e a VM que a executa — no caso do C#, Roslyn (compilador) e a CLR/GC (ver [[wiki/concepts/clr-e-garbage-collector]]) — não em profundidade teórica isolada, mas em paralelo com a prática, deixando os assuntos "pipocarem" conforme erros de build, warnings do compilador ou problemas de performance aparecem no dia a dia.
 
+## Overhead de runtime
+
+Compilado direto para máquina (C) vs interpretador/VM/GC: ver [[wiki/concepts/custo-de-abstracao-em-runtime]].
+
 ## Key sources
 
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]]
@@ -107,3 +111,4 @@ O compilador é a [[abstracao]] que permite escrever `let x = 10` e não se preo
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]] — decisões de design (propósito, gramática, tipos, memória, ecossistema) que antecedem e envolvem o pipeline de compilação
 - [[wiki/sources/como-um-compilador-transforma-codigo-em-instrucoes-de-maquina]] — detalhamento da análise semântica (tabela de símbolos), da IR como forma atômica que evita explosão N×M, e da alocação de registradores na geração de código
 - [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — borrow checker como passada de análise semântica adicional, própria de Rust
+- [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — compilação nativa vs runtime: argumento de overhead

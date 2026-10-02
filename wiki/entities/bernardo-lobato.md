@@ -3,8 +3,8 @@ type: entity
 title: "Bernardo Lobato"
 aliases: ["Bernardo Lobato"]
 date_created: 2026-06-05
-date_updated: 2026-10-01
-source_count: 20
+date_updated: 2026-10-02
+source_count: 21
 tags: [arquitetura-software, segurança, criador-de-conteudo, youtube, backend]
 skill: tech-mentor-security
 status: stub
@@ -36,3 +36,4 @@ Desenvolvedor e criador de conteúdo brasileiro. Publica vídeos toda sexta-feir
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — vídeo introdutório às arquiteturas distribuídas: comunicação síncrona vs. assíncrona, três formas (polling por ID, webhook, mensageria), exemplo de pedidos e três desafios (debug, garantia de entrega, consistência eventual)
 - [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — vídeo sobre CAP como decisão de arquitetura, com exemplos Netflix, voos e Estoque/Pedido
 - [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] — vídeo sobre Vertical Slice: separação por funcionalidade, domínio por slice, Architecture Sinkhole e extração para serviço
+- [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — primeiro vídeo da série de arquiteturas distribuídas: definição, histórico (Arpanet → SOA → microsserviços/nuvem), quatro motivos, seis desafios e alerta contra adoção por hype

@@ -3,8 +3,8 @@ type: concept
 title: "Monolito"
 aliases: ["monolito", "monolith", "monolito tradicional"]
 date_created: 2026-08-10
-date_updated: 2026-09-03
-source_count: 6
+date_updated: 2026-10-02
+source_count: 7
 tags: [monolito, arquitetura, deploy, mvp, backend]
 skill: tech-mentor-backend
 status: stub
@@ -54,3 +54,4 @@ Monolitos levam MVPs muito longe. Exemplo citado: produtos solo do Pieter Levels
 - [[wiki/sources/arquitetura-de-sacrificio]] — Fowler recomenda o monolito como a melhor *arquitetura de sacrifício* por padrão (microsserviços adicionam distribuição/assincronia cedo demais)
 - [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]]
 - [[wiki/sources/arquitetura-monolitica-vantagens-desvantagens]] — fonte introdutória: cadência de deploy caindo conforme o time cresce, SPOF de módulo (bug em estoque derruba vendas), reuso de código via classe compartilhada, custo operacional de escalar verticalmente um servidor único
+- [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — perguntas-gatilho do monolito (pico em um módulo derruba tudo, onboarding de semanas, deploy de horas, build quebrada para todos) e a postura 'monolito preparado para distribuir'
