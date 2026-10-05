@@ -3,8 +3,8 @@ type: concept
 title: "Saga Pattern"
 aliases: ["saga", "saga distribuída", "compensating transactions"]
 date_created: 2026-04-22
-date_updated: 2026-10-01
-source_count: 10
+date_updated: 2026-10-05
+source_count: 11
 tags: [sistemas-distribuidos, consistencia, saga, microsservicos, compensação]
 skill: tech-mentor-system-design
 status: stub
@@ -51,6 +51,10 @@ Consistência eventual — não ACID. Compensações podem falhar também (saga 
 
 [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] cita a aplicação do Saga em microsserviços como um dos casos de mercado mais comuns onde o apresentador precisou aplicar [[wiki/concepts/event-sourcing]]: sem uma transação de banco garantida entre serviços, é necessário registrar o histórico das transações (total ou parcialmente, no espírito do padrão) para poder desfazer uma etapa caso alguma falhe no meio do fluxo — o mecanismo de compensação depende de saber exatamente o que já foi feito.
 
+## Gancho: desfazer quando estoque/nota falha
+
+O vídeo enuncia o problema de desfazer o processo se algo falhar no meio, que a mensageria isolada não resolve; compensação é o papel da Saga ([[wiki/concepts/monolito-distribuido]]). [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]]
+
 ## Key Sources
 
 - [[wiki/sources/event-ordering-long-running]] — Event ordering: garantia de ordem só é possível dentro de uma partição (Kafka) ou para um correlation ID. Solução: particionar por entity ID (todos os eventos do pedido 123 vão para a mesma...
@@ -63,3 +67,4 @@ Consistência eventual — não ACID. Compensações podem falhar também (saga 
 - [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] — teaser no fechamento do vídeo (ainda não desenvolvido como fonte própria): cartão já cobrado quando uma etapa posterior de um fluxo multi-step falha, cenário canônico de compensação que aponta para saga
 - [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — Saga citado como um dos principais motivadores práticos para aplicar Event Sourcing em microsserviços sem transação de banco garantida
 - [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — citado como o assunto que vem depois do CAP: reconciliar Pedido e Estoque após a partição ([[wiki/concepts/reconciliacao-pos-particao]])
+- [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — problema de desfazer fluxo enunciado, sem solução

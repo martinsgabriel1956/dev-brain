@@ -3,8 +3,8 @@ type: concept
 title: "Singleton Pattern"
 aliases: ["singleton"]
 date_created: 2026-05-05
-date_updated: 2026-08-06
-source_count: 6
+date_updated: 2026-10-05
+source_count: 7
 tags: [design-patterns, creational, singleton, gof]
 skill: tech-mentor-backend
 status: stable
@@ -67,3 +67,7 @@ Use quando a unicidade é **genuinamente necessária**, não para ter estado glo
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — conexão Redis compartilhada em arquitetura SSE/Pub-Sub
 - [[wiki/sources/connection-pooling-pool-vs-polling-serverless]] — pool de conexões como singleton de módulo em Node.js
 - [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]] — store de estado global (estilo Zustand) como singleton de módulo no front end
+
+## Key sources (adição 2026-10-05)
+
+- [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]] — Estado estático vive com a aplicação toda e acopla quem o consome, dificultando teste ([[wiki/concepts/metodo-estatico-e-testabilidade]]).

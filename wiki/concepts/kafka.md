@@ -3,8 +3,8 @@ type: concept
 title: "Apache Kafka"
 aliases: ["kafka", "topics e partitions", "consumer groups", "kafka producer", "kafka consumer"]
 date_created: 2026-08-19
-date_updated: 2026-09-30
-source_count: 8
+date_updated: 2026-10-05
+source_count: 10
 tags: [kafka, topics, partitions, consumer-groups, mensageria, event-sourcing, murmur-hash, offset-commit, rebalance]
 skill: tech-mentor-backend
 status: draft
@@ -106,8 +106,18 @@ A taxonomia de eventos de partida é fechada: `MATCH_STARTED`, `GOAL`, `YELLOW_C
 
 Kafka (ao lado de RabbitMQ) é citado como exemplo de broker de [[wiki/concepts/comunicacao-assincrona]] em [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]]; o vídeo não entra em partições nem offsets.
 
+## Código Fonte TV — cinco tipos de armazenamento
+
+Tecnicamente não é fila tradicional, e sim **log distribuído** (registro ordenado de eventos); no mapa de armazenamento cumpre o papel de transportar mensagens, ao lado de RabbitMQ e Amazon SQS.
+
+## Contraste com RabbitMQ
+
+Kafka retém histórico (stream) enquanto RabbitMQ remove o que foi lido (tarefa). Ver [[wiki/concepts/rabbitmq-vs-kafka]]. [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]]
+
 ## Key Sources
 
+
+- [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] — Kafka como log distribuído, na mesma família de mensageria
 - [[wiki/sources/integration-patterns-eip]] — Enterprise Integration Patterns (Hohpe & Woolf) são padrões reutilizáveis para integração assíncrona. Os 3 mais práticos: Claim Check (armazena payload grande externamente, envia referência),...
 - [[wiki/sources/kafka]] — partition key e ordenação por entidade, paralelismo limitado ao número de partições, Kafka vs. RabbitMQ, configuração segura de producer (`acks=all`, `enable.idempotence=true`)
 - [[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] — Kafka como o broker do exemplo de dual write problem (cadastro + e-mail de boas-vindas); Kafka Connect citado como mecanismo de integração nativa do Debezium
@@ -116,3 +126,4 @@ Kafka (ao lado de RabbitMQ) é citado como exemplo de broker de [[wiki/concepts/
 - [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — Kafka tratado como "black box" de streaming na arquitetura de referência de Event Sourcing (microsserviços coreografados publicam/consomem mudanças de estado); autor nota explicitamente que não precisa ser Kafka — qualquer ferramenta de streaming de grandes volumes de dados não transacionais serve
 - [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — 72 bilhões de eventos/dia em produção; batch jobs modelados como streams (citação InfoQ); desacoplamento radical entre serviço de aprovação de transação e serviço de notificação via consumo independente do mesmo tópico
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — Kafka/RabbitMQ citados como brokers de mensageria (exemplo de assíncrono)
+- [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — contraste 'tarefa vs stream de eventos'

@@ -3,8 +3,8 @@ type: concept
 title: "Cache"
 aliases: ["caching", "cache de aplicação"]
 date_created: 2026-06-26
-date_updated: 2026-09-30
-source_count: 18
+date_updated: 2026-10-05
+source_count: 19
 tags: [cache, performance, redis, arquitetura, backend, grande-rollback, buffer]
 skill: tech-mentor-backend
 status: stable
@@ -88,8 +88,14 @@ SSR puro recomputa o mesmo HTML a cada requisição — 100 usuários acessando 
 
 Guardar `user_id` → `photo_url` no Redis com TTL de 5 min, atualizando a chave a cada novo upload; indicado para dado muito lido que muda pouco. O TTL é a janela máxima de dado desatualizado se a atualização falhar (inferência; o vídeo não discute).
 
+## Código Fonte TV — cinco tipos de armazenamento
+
+Aviso: cache é cópia temporária reconstruível; tratá-lo como única fonte de dado importante é "roleta-russa" ([[wiki/concepts/fonte-de-verdade-vs-copia-derivada]]).
+
 ## Key Sources
 
+
+- [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] — definição de cache (home dos mais acessados) e o erro de torná-lo fonte única
 - [[wiki/sources/case-twitter-feed]] — O feed do Twitter é o caso clássico de **fan-out de escrita em escala extrema**. A solução é híbrida: fan-out on write para usuários normais (pré-computa timelines no Redis) e fan-out on read para...
 - [[wiki/sources/estimativas-back-of-envelope]] — Framework de 4 passos: (1) clarificar escopo — DAU, read/write ratio, pico vs média; (2) estimar QPS; (3) estimar storage; (4) estimar bandwidth. O objetivo é ordem de grandeza para evitar...
 - [[wiki/sources/fase-1-fundamentos-infraestrutura]] — Fundamentos de infraestrutura: DNS (TTL, tipos de record), Load Balancer (L4 vs L7, algoritmos), CDN (edge cache, origem), Cache (hit/miss, eviction, invalidação), Banco de Dados (ACID, replicação,...

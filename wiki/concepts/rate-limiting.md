@@ -3,8 +3,8 @@ type: concept
 title: "Rate Limiting"
 aliases: ["throttling", "rate limit", "token bucket", "sliding window"]
 date_created: 2026-04-23
-date_updated: 2026-09-30
-source_count: 15
+date_updated: 2026-10-05
+source_count: 16
 tags: [rate-limiting, token-bucket, sliding-window, redis, throttling, protecao-api, gatekeeper, attack-surface]
 skill: tech-mentor-backend
 status: stub
@@ -58,8 +58,14 @@ No [[wiki/entities/omxterm]] ([[wiki/sources/omxterm-terminal-web-pty-websocket-
 
 Exemplo de endpoint público de escrita: 10 uploads/min por IP; acima disso, **429 Too Many Requests**. Justificativa: alguém fazendo 1.000–10.000 uploads/s. Ressalva (inferência): limite só por IP não cobre ataque distribuído nem usuários atrás de NAT; combinar com limite por usuário/token.
 
+## Código Fonte TV — cinco tipos de armazenamento
+
+Contador de limite de requisições citado como dado de vida curta típico de chave-valor ([[wiki/concepts/chave-valor]]).
+
 ## Key Sources
 
+
+- [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] — contador de rate limit em key-value
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — rate limit em duas camadas (Traefik + app: 10 tentativas/60 s)
 - [[wiki/sources/estimativas-back-of-envelope]] — Framework de 4 passos: (1) clarificar escopo — DAU, read/write ratio, pico vs média; (2) estimar QPS; (3) estimar storage; (4) estimar bandwidth. O objetivo é ordem de grandeza para evitar...
 - [[wiki/sources/rate-limiting]]

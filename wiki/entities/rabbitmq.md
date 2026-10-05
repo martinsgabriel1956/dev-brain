@@ -3,8 +3,8 @@ type: entity
 title: "RabbitMQ"
 aliases: ["rabbitmq", "rabbit mq"]
 date_created: 2026-07-30
-date_updated: 2026-09-30
-source_count: 4
+date_updated: 2026-10-05
+source_count: 6
 tags: [mensageria, message-broker, saga-pattern, event-driven]
 skill: tech-mentor-backend
 status: stub
@@ -26,9 +26,20 @@ Citado por [[wiki/entities/bernardo-lobato]] (ao lado de Kafka) como broker de m
 
 O autor da fonte prefere RabbitMQ por ser "mais simplificado" que o Kafka ("muito grande"), ressalvando que depende do contexto; usado no caso para a fila de geração de miniaturas. Opinião, sem benchmark.
 
+## Código Fonte TV — cinco tipos de armazenamento
+
+Citado com Amazon SQS e Apache Kafka como exemplo de mensageria no mapa de armazenamento.
+
+## Modelo e exchanges
+
+Modelo producer → exchange → fila → consumer, quatro tipos de exchange ([[wiki/concepts/exchange-rabbitmq]]), [[wiki/concepts/ack-de-mensagem]] e comparação 'tarefa vs stream' ([[wiki/concepts/rabbitmq-vs-kafka]]). Ver [[wiki/concepts/modelo-mental-rabbitmq]]. [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]]
+
 ## Key Sources
 
+
+- [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] — RabbitMQ no mapa de mensageria
 - [[wiki/sources/microsservicos-do-zero-deadlock-2pc-saga-cqrs]] — RabbitMQ como fila que viabiliza Saga Pattern coreografado, citado como exemplo de broker que evita gargalo de coordenação síncrona
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — RabbitMQ/Kafka como exemplos de broker
 - [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — fila de miniaturas; preferência do autor por RabbitMQ em relação a Kafka, dependente de contexto
 - [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — exemplo de message broker que enfileira os eventos de cadastro consumidos de forma assíncrona para atualizar o banco de leitura
+- [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — modelo mental, exchanges, ack e quando usar

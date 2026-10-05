@@ -3,8 +3,8 @@ type: concept
 title: "MongoDB"
 aliases: ["mongo", "bson"]
 date_created: 2026-07-27
-date_updated: 2026-10-01
-source_count: 5
+date_updated: 2026-10-05
+source_count: 6
 tags: [mongodb, nosql, banco-de-dados, document-database, backend]
 skill: tech-mentor-backend
 status: stub
@@ -38,8 +38,14 @@ Mercado Livre e Amazon (catálogo de produtos), plataformas de analytics de comp
 
 Diferente do [[wiki/concepts/postgresql|Postgres]] (otimizado para leitura por padrão), o MongoDB já vem, por arquitetura, com sharding/separação em múltiplas instâncias — mais otimizado para volume maior de escrita, embora suporte também carga de leitura alta. É um dos critérios (não só o formato do dado) que leva à escolha do Mongo em cenários de escrita muito intensa. Ver [[wiki/concepts/criterios-de-escolha-de-banco-de-dados]] e [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]].
 
+## Código Fonte TV — cinco tipos de armazenamento
+
+Exemplo canônico de banco de documentos para catálogo com atributos variáveis por produto ([[wiki/concepts/dado-semiestruturado]]).
+
 ## Key Sources
 
+
+- [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] — MongoDB para produtos de formato variável
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]]
 - [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] — citado como exemplo canônico de SGBD NoSQL orientado a documentos em prova de concurso
 - [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]] — arquitetura nativamente distribuída/otimizada para escrita como critério de escolha independente do formato do dado

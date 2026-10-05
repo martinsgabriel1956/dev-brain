@@ -3,8 +3,8 @@ type: concept
 title: "Separation of Concerns"
 aliases: ["separation of concerns", "soc", "separacao de responsabilidades"]
 date_created: 2026-08-10
-date_updated: 2026-08-10
-source_count: 1
+date_updated: 2026-10-05
+source_count: 2
 tags: [separation-of-concerns, encapsulamento, arquitetura, modularidade, backend]
 skill: tech-mentor-backend
 status: stub
@@ -17,3 +17,7 @@ Princípio de dividir um sistema em partes onde cada uma cuida de uma responsabi
 ## Key sources
 
 - [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]]
+
+## Key sources (adição 2026-10-05)
+
+- [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]] — Misturar contexto de tecnologia (HTTP) com negócio via herança ou estático impede o teste ([[wiki/concepts/acoplamento-que-impede-teste-unitario]]).

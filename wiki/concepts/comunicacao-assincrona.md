@@ -3,8 +3,8 @@ type: concept
 title: "Comunicação Assíncrona"
 aliases: ["asynchronous communication", "comunicação assincrona", "async communication"]
 date_created: 2026-09-30
-date_updated: 2026-10-02
-source_count: 2
+date_updated: 2026-10-05
+source_count: 3
 tags: [comunicacao-assincrona, mensageria, polling, webhook, acoplamento, resiliencia, consistencia-eventual, arquiteturas-distribuidas]
 skill: tech-mentor-backend
 status: draft
@@ -49,7 +49,12 @@ Polling e webhook são comuns quando não se controla todos os sistemas (ex.: AP
 
 [[wiki/concepts/cqrs]], [[wiki/concepts/event-sourcing]], [[wiki/concepts/event-driven-architecture]], [[wiki/concepts/microsservicos]]. Ver também [[wiki/concepts/processamento-assincrono]] (workers + fila para tarefas pesadas).
 
+## Exemplo: loja com RabbitMQ
+
+Pedidos publica 'pedido criado' e responde ao usuário; Pagamentos e E-mail reagem depois ([[wiki/concepts/monolito-distribuido]] é o que acontece sem isso). [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]]
+
 ## Key sources
 
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — definição, formas, exemplo de pedidos e três desafios
 - [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — retomada no vídeo de abertura da série: escolha impacta escalabilidade, disponibilidade e complexidade
+- [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — fluxo de loja síncrono vs por eventos

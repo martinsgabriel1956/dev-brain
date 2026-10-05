@@ -3,8 +3,8 @@ type: source
 title: "C como linguagem do futuro na era da IA (quadro Bora tomar café)"
 aliases: ["c linguagem do futuro ia", "bora tomar café c linguagem ia", "c volta a ser o rei"]
 date_created: 2026-10-02
-date_updated: 2026-10-02
-source_count: 0
+date_updated: 2026-10-05
+source_count: 1
 tags: [linguagem-c, lang-systems, ia, codigo-gerado-por-ia, desempenho, abstracao, gerenciamento-de-memoria, memory-safety, opiniao]
 skill: lang-systems
 status: draft
@@ -85,3 +85,4 @@ Corte do quadro *Bora tomar café* que lê um artigo do Twitter com a tese de qu
 > "As linguagens que a gente tem foram pensadas pros erros que a gente cometia. Quem sabe os erros que a IA comete vão ser diferentes."
 
 > "O C roda na velocidade do hardware. Tudo o mais roda na velocidade da camada de abstração."
+- [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — mesmo tweet comentado por outro apresentador, com contra-argumentos distintos (assembly/opcode e legibilidade)

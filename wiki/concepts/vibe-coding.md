@@ -3,8 +3,8 @@ type: concept
 title: "Vibe Coding"
 aliases: ["vibe coding", "vibe-coding", "coding por vibração", "agentic coding", "orquestração de agentes"]
 date_created: 2026-04-23
-date_updated: 2026-10-02
-source_count: 25
+date_updated: 2026-10-05
+source_count: 26
 tags: [vibe-coding, agentes-ia, produtividade, divida-cognitiva, ai-brainfry, paralelismo-cognitivo]
 skill: tech-mentor-ai
 status: stable
@@ -193,3 +193,4 @@ Se humanos não leem o código, o argumento de [[wiki/concepts/c-como-linguagem-
 ## Key sources
 
 - [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — implicação para a escolha de linguagem
+- [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — IA já gera código de nível de produção segundo o autor; implicação para linguagem-alvo

@@ -3,8 +3,8 @@ type: concept
 title: "MySQL"
 aliases: ["mysql", "innodb"]
 date_created: 2026-07-07
-date_updated: 2026-07-29
-source_count: 3
+date_updated: 2026-10-05
+source_count: 4
 tags: [mysql, banco-de-dados, sql, innodb, gap-locking, skip-locked, backend]
 skill: tech-mentor-backend
 status: draft
@@ -46,8 +46,14 @@ MySQL suporta [[wiki/concepts/full-text-search|Full-Text Search]] nativo via `CR
 
 Padrão de fábrica sem alterar `my.cnf`: 151 conexões. Em servidores com 128–256 GB de RAM, 5.000–10.000 conexões são operacionalmente viáveis; configurações documentadas em 512 GB chegam a 100.000. Cada conexão consome ~1 MB de RAM só para gerenciar a thread — 10.000 conexões já são ~10 GB de overhead antes de processar qualquer linha de dado. Acima de ~5.000 conexões em instância única, context switching de threads costuma virar gargalo. Ao estourar o limite configurado, o MySQL não enfileira — retorna imediatamente o erro `1040 Too many connections`; uma conexão extra é reservada exclusivamente para `root`, para permitir diagnóstico mesmo com o limite esgotado. Ver [[wiki/concepts/cap-theorem]] para o porquê de bancos relacionais como o MySQL priorizarem recusar conexão a arriscar inconsistência.
 
+## Código Fonte TV — cinco tipos de armazenamento
+
+Citado na família relacional madura (ao lado de PostgreSQL, MariaDB, SQLite, SQL Server, Oracle).
+
 ## Key Sources
 
+
+- [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] — família relacional
 - [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]]
 - [[wiki/sources/uuid-primary-key-mysql]] — UUID como PK degrada performance de índice B-tree no InnoDB
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]] — limites reais de conexão em instância única e a distinção conexão vs. usuário online

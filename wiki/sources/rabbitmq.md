@@ -3,12 +3,12 @@ type: source
 title: "RabbitMQ"
 aliases: ["rabbitmq", "amqp", "exchange", "fanout", "topic exchange", "dlx", "quorum queues"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
+date_updated: 2026-10-05
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/rabbitmq.md
 source_url: ""
 date_published: ""
 date_ingested: 2026-04-23
-source_count: 0
+source_count: 1
 tags: [rabbitmq, amqp, exchange, fanout, topic, dlx, quorum-queues, messaging, task-queue]
 skill: tech-mentor-backend
 status: stable
@@ -49,3 +49,10 @@ RabbitMQ é um message broker AMQP com roteamento flexível via Exchanges (Direc
 
 - Quorum Queues em clusters grandes (5+ nós) — qual o impacto de latência vs Classic Queues em produção?
 - RabbitMQ Streams (novo em 3.9+) — quando preferir sobre JetStream ou Kafka para casos de replay?
+
+## Ver também
+
+Visão didática com simulador: [[wiki/concepts/exchange-rabbitmq]] e [[wiki/concepts/rabbitmq-vs-kafka]]. [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]]
+
+## Key sources
+- [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — complemento didático

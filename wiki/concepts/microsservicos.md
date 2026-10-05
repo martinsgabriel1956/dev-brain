@@ -3,8 +3,8 @@ type: concept
 title: "Microsserviços"
 aliases: ["microsservicos", "microservices", "arquitetura de microsserviços", "decomposição por domínio"]
 date_created: 2026-07-24
-date_updated: 2026-10-02
-source_count: 29
+date_updated: 2026-10-05
+source_count: 30
 tags: [microsservicos, arquitetura, bounded-context, distributed-monolith, circuit-breaker, resiliencia]
 skill: tech-mentor-backend
 status: draft
@@ -122,6 +122,10 @@ A mesma fonte reafirma a regra de acesso exclusivo via API (nunca via banco comp
 
 [[wiki/entities/bernardo-lobato]] trata a [[wiki/concepts/comunicacao-assincrona]] como conceito obrigatório antes das arquiteturas distribuídas: desacopla serviços, tolera falhas (serviço que volta relê as mensagens perdidas) e permite times pequenos focados em um serviço. Alerta: exige capacitação, e emular síncrono sobre assíncrono não funciona.
 
+## Armadilha: monolito distribuído
+
+Microsserviço com dependência síncrona externa é [[wiki/concepts/monolito-distribuido]]; mensageria é a saída ([[wiki/concepts/quando-usar-mensageria]]). [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]]
+
 ## Key Sources
 
 - [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] — origem histórica (Peter Rogers 2005, SOA/ESB como contraponto, "Microservices — Java, the Unix Way" 2012), três requisitos práticos (standalone, deploy independente, funcionalidade útil), e o desafio de capacitação de time como diferença entre projetos que dão certo e os que fracassam
@@ -153,3 +157,4 @@ A mesma fonte reafirma a regra de acesso exclusivo via API (nunca via banco comp
 - [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — CAP só entra em microsserviços quando há estado compartilhado (Estoque/Pedido); ver [[wiki/concepts/cap-exige-estado-compartilhado]]
 - [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] — Vertical Slice como caminho intermediário para microsserviços; ver [[wiki/concepts/extracao-de-slice-para-servico]]
 - [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — microsserviços como a explosão dos anos 2010 de [[wiki/concepts/arquitetura-distribuida]], com a nuvem; motivos, desafios e motivos errados de adoção
+- [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — monolito distribuído como armadilha

@@ -3,8 +3,8 @@ type: concept
 title: "Fila (Queue)"
 aliases: ["queue", "FIFO", "fila de dados"]
 date_created: 2026-06-01
-date_updated: 2026-08-14
-source_count: 5
+date_updated: 2026-10-05
+source_count: 7
 tags: [cs-fundamentals, estruturas-de-dados, fila, queue, fifo]
 skill: cs-fundamentals
 status: draft
@@ -54,10 +54,21 @@ Esta página trata da **estrutura de dados** fila. Sistemas de mensageria como K
 - [[wiki/concepts/filas-e-workers]] — o padrão arquitetural de processamento assíncrono construído sobre esta estrutura
 - [[wiki/concepts/bullmq]] — implementação concreta dessa estrutura sobre Redis, com producer/worker como processos independentes
 
+## Código Fonte TV — cinco tipos de armazenamento
+
+Fila como armazenamento para trabalho que pode acontecer depois; cuidado com mensagem travada que bloqueia as seguintes (analogia da fila de impressão).
+
+## Fila no RabbitMQ
+
+No RabbitMQ a fila FIFO fica atrás de uma exchange, que decide o roteamento ([[wiki/concepts/modelo-mental-rabbitmq]]); mensagem sem ack volta à fila ([[wiki/concepts/ack-de-mensagem]]). [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]]
+
 ## Key sources
 
+
+- [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] — fila no mapa de cinco armazenamentos
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
 - [[wiki/sources/pub-sub-message-queue-bullmq-na-pratica]]
 - [[wiki/sources/estruturas-de-dados-algoritmos-big-o-como-escolher]] — "pegar o próximo job" como exemplo canônico de operação onde a ordem de chegada é o critério de escolha da estrutura
 - [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] — a fila como mecanismo de [[wiki/concepts/buffer]] que absorve picos e desacopla produtor de consumidor
 - [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — por que a fila precisa ser **bounded** (limitada): sem limite, itens envelhecem e o uso de memória pode crescer até crashar o sistema
+- [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — fila FIFO atrás da exchange e reentrega sem ack

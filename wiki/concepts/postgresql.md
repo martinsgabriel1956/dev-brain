@@ -3,8 +3,8 @@ type: concept
 title: "PostgreSQL"
 aliases: ["postgres", "pg"]
 date_created: 2026-04-22
-date_updated: 2026-09-30
-source_count: 15
+date_updated: 2026-10-05
+source_count: 16
 tags: [banco-de-dados, postgresql, relacional, jsonb, vetorial]
 skill: tech-mentor-system-design
 status: stable
@@ -89,8 +89,14 @@ Volume de escrita muito alto numa base MVCC como o Postgres acumula tuplas versi
 
 Banco do caso didático (tabelas `users` e `profile_url`); o autor admite que redes sociais costumam usar NoSQL, mas assume relacional por hipótese. Escala de leitura via réplicas e, depois, sharding por região ([[wiki/concepts/read-replicas]], [[wiki/concepts/sharding]]).
 
+## Código Fonte TV — cinco tipos de armazenamento
+
+Citado na família relacional (com MySQL, MariaDB, SQLite, SQL Server, Oracle) como padrão para pedidos, pagamentos e estoque.
+
 ## Key Sources
 
+
+- [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] — família relacional e ponto de partida recomendado
 - [[wiki/sources/banco-de-dados]]
 - [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]] — mecânica interna genérica (buffer pool, WAL, MVCC, isolation levels, checkpoint/recovery) que fundamenta o comportamento específico do Postgres já documentado acima
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]

@@ -3,8 +3,8 @@ type: concept
 title: "Test Doubles"
 aliases: ["dublê de teste", "mock stub fake spy", "xunit test patterns"]
 date_created: 2026-04-22
-date_updated: 2026-09-22
-source_count: 32
+date_updated: 2026-10-05
+source_count: 33
 tags: [testes, test-doubles, mock, stub, fake, spy, dummy]
 skill: tech-mentor-testing
 status: stable
@@ -150,3 +150,7 @@ Mockar um banco de dados permite verificar que `db.save` foi chamado, mas não c
 - [[wiki/sources/production-code-xunitpatterns]] — verbete de glossário dedicado ao termo "production code": define formalmente o contraponto de "test code" que SUT e DOC sempre são, fechando a lacuna de um termo já citado várias vezes sem fonte própria
 - [[wiki/sources/test-code-xunitpatterns]] — verbete de glossário dedicado ao termo-irmão "test code": código escrito para testar outro código, seja production code ou outro test code — cobre explicitamente o caso de um test double customizado precisar ele próprio de teste
 - [[wiki/sources/frequent-debugging-xunitpatterns]] — nomeia a consequência prática de um Mock Object dessincronizado do comportamento real do DOC: depuração manual, não apenas risco abstrato de integração mascarada
+
+## Key sources (adição 2026-10-05)
+
+- [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]] — Exemplo do reflexo errado de mockar o detalhe interno (`IMongoCollection`) em vez de injetar a abstração do repositório ([[wiki/concepts/acoplamento-que-impede-teste-unitario]]); premissa em [[wiki/concepts/teste-unitario-sem-io]].

@@ -3,8 +3,8 @@ type: concept
 title: "Custo de abstração em runtime"
 aliases: ["runtime overhead", "sobrecarga de linguagem de alto nível"]
 date_created: 2026-10-02
-date_updated: 2026-10-02
-source_count: 1
+date_updated: 2026-10-05
+source_count: 2
 tags: [lang-systems, desempenho, runtime, abstracao, gc, interpretador]
 skill: lang-systems
 status: draft
@@ -36,3 +36,4 @@ O custo é a contrapartida de [[wiki/concepts/abstracao]] e segurança. Quando v
 ## Key sources
 
 - [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — o argumento de overhead de Python/JS/Java/Go/Rust vs C
+- [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — mesmo argumento de overhead (GC, JVM, runtime JS, Python 10–100×) endossado por segunda fonte

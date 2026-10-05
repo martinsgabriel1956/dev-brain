@@ -3,8 +3,8 @@ type: concept
 title: "NoSQL"
 aliases: ["not only sql", "bancos não relacionais"]
 date_created: 2026-04-22
-date_updated: 2026-09-30
-source_count: 8
+date_updated: 2026-10-05
+source_count: 9
 tags: [banco-de-dados, nosql, mongodb, redis, cassandra, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -48,8 +48,14 @@ Caso didático de [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]
 
 Provas de concurso brasileiras tratam "SGBD NoSQL" como termo formal (em oposição a SGBDR) e cobram os quatro modelos com listas de exemplos mais extensas que o uso corrente: **chave-valor** (DynamoDB, Redis, Riak, Memcached, Berkeley DB, LevelDB), **documento** (MongoDB, CouchBase, CouchDB, MarkLogic, RavenDB), **colunas** (Cassandra, HBase, Hypertable) e **grafos** (Neo4j, ArangoDB, AllegroGraph, InfoGrid, OrientDB/FlockDB, HyperGraphDB). Ver [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]].
 
+## Código Fonte TV — cinco tipos de armazenamento
+
+"NoSQL" é um guarda-chuva: documentos (MongoDB), colunas largas (Cassandra, Bigtable), chave-valor — ver [[wiki/concepts/dado-semiestruturado]] e [[wiki/concepts/chave-valor]].
+
 ## Key Sources
 
+
+- [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] — NoSQL como famílias distintas; "sem esquema ≠ sem modelagem"
 - [[wiki/sources/banco-de-dados]]
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]

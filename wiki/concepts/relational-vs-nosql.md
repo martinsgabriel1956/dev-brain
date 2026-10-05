@@ -3,8 +3,8 @@ type: concept
 title: "Relacional vs NoSQL"
 aliases: ["sql vs nosql", "relational vs document", "escolha de banco"]
 date_created: 2026-04-22
-date_updated: 2026-07-28
-source_count: 6
+date_updated: 2026-10-05
+source_count: 7
 tags: [banco-de-dados, nosql, postgresql, system-design, trade-offs]
 skill: tech-mentor-system-design
 status: stable
@@ -74,8 +74,14 @@ A mesma fonte reforça que todo número de conexão/volume/latência citado assu
 
 Provas de concurso usam a sigla **SGBDR** (com o "R" de relacional) para diferenciar explicitamente de **SGBD NoSQL** — reforçando que a distinção relacional/não-relacional é tratada como taxonomia formal, não apenas prática de mercado. Exemplos típicos de gabarito: MySQL/Oracle/SQL Server/Firebird = SGBDR; MongoDB/Neo4j = NoSQL. Ver [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]].
 
+## Código Fonte TV — cinco tipos de armazenamento
+
+Critério do Código Fonte TV: relacional resolve produtos variáveis, mas pode virar "lutar contra a estrutura" (esquema por tipo novo); documento ajuda se a estrutura varia de fato — [[wiki/concepts/dado-semiestruturado]].
+
 ## Key Sources
 
+
+- [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] — relacional primeiro; documento quando a estrutura varia; não fugir de migration por si só
 - [[wiki/sources/banco-de-dados]]
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] — quadro de decisão ACID vs. BASE por domínio de negócio

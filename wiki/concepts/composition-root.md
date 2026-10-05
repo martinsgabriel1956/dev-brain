@@ -3,8 +3,8 @@ type: concept
 title: "Composition Root"
 aliases: ["composition root", "composição grude", "raiz de composição", "main layer"]
 date_created: 2026-09-08
-date_updated: 2026-09-08
-source_count: 2
+date_updated: 2026-10-05
+source_count: 3
 tags: [design-patterns, dependency-injection, clean-architecture, factory-pattern, acoplamento]
 skill: tech-mentor-backend
 status: stub
@@ -34,3 +34,7 @@ O mesmo mecanismo que dá testabilidade e substituibilidade (trocar `PostgresUse
 
 - [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] — exemplo concreto no frontend (`LoginFactory` como composition root de uma tela de login em Vue), termo informal "composição grude"
 - [[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] — menção inline do termo (sem exemplo de código), no contexto do custo de rastreabilidade de implementação escondida
+
+## Key sources (adição 2026-10-05)
+
+- [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]] — Onde as implementações concretas tiradas dos `new` passam a ser montadas ([[wiki/concepts/acoplamento-que-impede-teste-unitario]]).

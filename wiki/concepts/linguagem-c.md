@@ -3,8 +3,8 @@ type: concept
 title: "Linguagem C"
 aliases: ["C", "C language", "linguagem C como fundação"]
 date_created: 2026-08-13
-date_updated: 2026-10-02
-source_count: 3
+date_updated: 2026-10-05
+source_count: 4
 tags: [cs-fundamentals, lang-systems, linguagens, aprendizado, fundamentos, performance, baixo-nivel]
 skill: cs-fundamentals
 status: stub
@@ -50,3 +50,4 @@ Em [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]], um artig
 - [[wiki/sources/por-que-comecar-com-c-em-2026-cs50-david-malan]] — C como fundação pedagógica; construir as próprias estruturas de dados; andaime para Python
 - [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] — C como exigência prática (não só pedagógica) para qualquer projeto de baixo nível
 - [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — tese de opinião: C como linguagem-alvo de código gerado por IA
+- [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — segunda leitura do mesmo tweet: C como ponto de equilíbrio entre desempenho e legibilidade (legível por muitos, ao contrário de assembly)

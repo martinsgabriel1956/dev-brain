@@ -3,8 +3,8 @@ type: concept
 title: "Abstração"
 aliases: ["abstraction", "esconder detalhes", "contrato genérico"]
 date_created: 2026-04-25
-date_updated: 2026-10-02
-source_count: 8
+date_updated: 2026-10-05
+source_count: 9
 tags: [abstracao, software-design, clean-code, arquitetura, interfaces]
 skill: tech-mentor-backend
 status: stable
@@ -90,3 +90,4 @@ Ver [[wiki/concepts/abstracoes-como-protecao-cognitiva-humana]] e [[wiki/concept
 - [[wiki/sources/7-habitos-programador-altamente-eficaz]] — pensar primeiro em abstrações e seus limites como hábito de maturidade; analogia dos órgãos do corpo humano para justificar por que limites bem definidos importam
 - [[wiki/sources/por-que-comecar-com-c-em-2026-cs50-david-malan]] — abstração por camadas no ensino: hash table de C (semana 5) → `dict` de uma linha em Python (semana 6); entender de baixo para cima o que a abstração esconde
 - [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — abstração de linguagem como proteção cognitiva com custo de runtime
+- [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — cadeia de abstrações até o opcode; se o humano sai, onde parar? ([[wiki/concepts/ia-gerando-binario-direto]])

@@ -3,8 +3,8 @@ type: concept
 title: "Hard-to-Test Code"
 aliases: ["código difícil de testar", "highly coupled code", "hard-coded dependency", "código altamente acoplado"]
 date_created: 2026-09-22
-date_updated: 2026-09-22
-source_count: 1
+date_updated: 2026-10-05
+source_count: 2
 tags: [testes, test-smell, xunit, terminologia, acoplamento, testabilidade]
 skill: tech-mentor-testing
 status: stub
@@ -31,3 +31,7 @@ Criado a partir de uma fonte primária dedicada. **Humble Object**, **Obscure Te
 ## Key Sources
 
 - [[wiki/sources/hard-to-test-code-xunitpatterns]] — **fonte primária dedicada**: três causas raiz completas, cada uma com sintoma/impacto/causa-raiz/solução
+
+## Key sources (adição 2026-10-05)
+
+- [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]] — Demonstração em C#/.NET de *Highly Coupled Code*: `new`, herança e estáticos fazem o teste sair pela rede ([[wiki/concepts/acoplamento-que-impede-teste-unitario]]).

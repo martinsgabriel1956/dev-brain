@@ -3,8 +3,8 @@ type: concept
 title: "Abstrações como proteção cognitiva humana"
 aliases: ["abstração protege o cérebro humano", "prédio onde ninguém trabalha"]
 date_created: 2026-10-02
-date_updated: 2026-10-02
-source_count: 1
+date_updated: 2026-10-05
+source_count: 2
 tags: [abstracao, ia, linguagens, cognicao, codigo-gerado-por-ia]
 skill: lang-systems
 status: draft
@@ -24,3 +24,4 @@ Argumento de [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]]
 ## Key sources
 
 - [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — a abstração como custo pago em nome do humano
+- [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — contraponto: a leitura humana do código da IA continua sendo controle ([[wiki/concepts/legibilidade-humana-do-codigo-gerado-por-ia]])

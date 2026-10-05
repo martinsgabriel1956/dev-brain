@@ -3,8 +3,8 @@ type: concept
 title: "Pub/Sub (Publish-Subscribe)"
 aliases: ["publish-subscribe", "pub sub", "publicador-assinante"]
 date_created: 2026-05-05
-date_updated: 2026-09-22
-source_count: 8
+date_updated: 2026-10-05
+source_count: 9
 tags: [design-patterns, event-driven, pub-sub, mensageria, broker, observer]
 skill: tech-mentor-backend
 status: stable
@@ -59,6 +59,10 @@ Quando servidores WebSocket são replicados atrás de um [[wiki/concepts/load-ba
 - [[wiki/concepts/filas-e-workers]] — modelo mental oposto: message queue distribui trabalho, não fatos
 - [[wiki/concepts/bullmq]] — implementação concreta do lado message queue, contrastada com Pub/Sub na fonte que introduziu essa distinção
 
+## Exchanges como mecanismo de pub/sub no RabbitMQ
+
+Fanout faz broadcast; topic filtra por padrão ([[wiki/concepts/exchange-rabbitmq]]). [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]]
+
 ## Key Sources
 
 - [[wiki/sources/nats-jetstream]] — NATS é um sistema de mensageria cloud-native ultralleve. NATS Core: pub/sub fire-and-forget, sem persistência. JetStream adiciona persistência, consumers duráveis e ACK semântico (at-least-once). KV...
@@ -69,3 +73,4 @@ Quando servidores WebSocket são replicados atrás de um [[wiki/concepts/load-ba
 - [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] — fila de requisições na frente de cada servidor (implementável com brokers como Redis/RabbitMQ) como mitigação de drops em load balancing; trade-off explícito entre menos drops e mais latência
 - [[wiki/sources/design-pattern-observer-codigo-fonte-tv]] — trata Observer e Pub/Sub como sinônimos de nomenclatura, em tensão com a distinção estrutural já documentada nesta página
 - [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — exemplo ponta a ponta: um consumer Kafka publica no Redis Pub/Sub num canal por `match_id`; servidores web se inscrevem no canal daquele ID e repassam a atualização às conexões SSE interessadas via um mapa em memória
+- [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — fanout e topic como variantes de pub/sub

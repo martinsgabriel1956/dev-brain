@@ -3,8 +3,8 @@ type: concept
 title: "Monolito"
 aliases: ["monolito", "monolith", "monolito tradicional"]
 date_created: 2026-08-10
-date_updated: 2026-10-02
-source_count: 7
+date_updated: 2026-10-05
+source_count: 8
 tags: [monolito, arquitetura, deploy, mvp, backend]
 skill: tech-mentor-backend
 status: stub
@@ -46,6 +46,10 @@ Monolitos levam MVPs muito longe. Exemplo citado: produtos solo do Pieter Levels
 
 [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] usa a imagem do canivete suíço para o monolito (uma unidade única concentrando tudo) contra a caixa de ferramentas dos microsserviços (peças especializadas e independentes) — aplicada a um encurtador de URL com proporção leitura:escrita de 100:1, onde a limitação central do monolito é não conseguir escalar seletivamente só o serviço de redirect. Ver [[wiki/concepts/microsservicos]] para o critério de decisão completo.
 
+## Relação: monolito distribuído
+
+Quebrar em serviços sem remover dependências síncronas gera [[wiki/concepts/monolito-distribuido]]. [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]]
+
 ## Key sources
 
 - [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — analogia do canivete suíço (monolito) vs. caixa de ferramentas (microsserviços), aplicada à decisão prática de escalabilidade seletiva
@@ -55,3 +59,4 @@ Monolitos levam MVPs muito longe. Exemplo citado: produtos solo do Pieter Levels
 - [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]]
 - [[wiki/sources/arquitetura-monolitica-vantagens-desvantagens]] — fonte introdutória: cadência de deploy caindo conforme o time cresce, SPOF de módulo (bug em estoque derruba vendas), reuso de código via classe compartilhada, custo operacional de escalar verticalmente um servidor único
 - [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — perguntas-gatilho do monolito (pico em um módulo derruba tudo, onboarding de semanas, deploy de horas, build quebrada para todos) e a postura 'monolito preparado para distribuir'
+- [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — monolito distribuído como risco de quebrar mal

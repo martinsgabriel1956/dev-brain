@@ -3,8 +3,8 @@ type: concept
 title: "Idempotência"
 aliases: ["idempotência", "idempotency", "idempotency key"]
 date_created: 2026-04-22
-date_updated: 2026-09-30
-source_count: 11
+date_updated: 2026-10-05
+source_count: 12
 tags: [distribuidos, resiliencia, api, retry, mensageria, double-spend, double-submit, webhook, fintech]
 skill: tech-mentor-system-design
 status: stable
@@ -172,8 +172,14 @@ O mesmo mecanismo (chave + TTL) também controla **volume de notificações por 
 
 Um riff citado em [[wiki/sources/two-hard-things-martin-fowler]] (autoria de Mathias Verraes) substitui os dois problemas clássicos de Phil Karlton — [[wiki/concepts/naming|naming]] e [[wiki/concepts/tradeoff-de-cache|cache invalidation]] — por "guaranteed order of messages" e "exactly-once delivery" em sistemas distribuídos. É piada, não claim técnico, mas a substituição funciona porque aponta certo: entrega exactly-once é precisamente o problema que idempotência resolve (via [[wiki/concepts/retry-backoff|retry]] seguro). Ver [[wiki/concepts/two-hard-things]].
 
+## Código Fonte TV — cinco tipos de armazenamento
+
+Exemplo do Código Fonte TV: consumidor falha no meio, mensagem volta e "cobrar o cliente" cobraria duas vezes — o efeito deve ocorrer uma só vez.
+
 ## Key Sources
 
+
+- [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] — exemplo de cobrança duplicada em reprocessamento de fila
 - [[wiki/sources/event-driven-architecture]] — EDA desacopla produtores de consumidores via eventos — comunicação assíncrona, temporal decoupling. Dois padrões de coordenação: Choreography (cada serviço reage a eventos, sem coordenador) e...
 - [[wiki/sources/two-hard-things-martin-fowler]] — riff de folclore que cita "exactly-once delivery" como um dos dois problemas difíceis de sistemas distribuídos
 - [[wiki/sources/retry-backoff]]

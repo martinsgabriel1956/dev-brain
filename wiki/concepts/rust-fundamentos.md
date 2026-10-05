@@ -3,8 +3,8 @@ type: concept
 title: "Rust — Fundamentos, Tooling e Adoção"
 aliases: ["rust option result", "rust enum exaustivo", "cargo", "crates.io", "rust traits", "quando usar rust"]
 date_created: 2026-07-16
-date_updated: 2026-10-02
-source_count: 2
+date_updated: 2026-10-05
+source_count: 3
 tags: [rust, traits, option, result, pattern-matching, cargo, enum, adocao-de-linguagem]
 skill: lang-systems
 status: stable
@@ -113,3 +113,4 @@ Nenhum desses exemplos foi verificado contra fonte primária nesta ingestão —
 ## Key sources
 
 - [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — crítica ao Rust e contra-argumento
+- [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — Rust citado como migração recomendada por memória, mas ausente da conta final do autor; ver [[wiki/concepts/memory-safety]]

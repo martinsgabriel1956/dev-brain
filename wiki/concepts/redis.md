@@ -3,8 +3,8 @@ type: concept
 title: "Redis"
 aliases: ["redis cache", "redis db"]
 date_created: 2026-06-26
-date_updated: 2026-09-30
-source_count: 13
+date_updated: 2026-10-05
+source_count: 14
 tags: [redis, cache, nosql, banco-in-memory, chave-valor, backend, grande-rollback]
 skill: tech-mentor-backend
 status: stable
@@ -91,8 +91,14 @@ Reforço direto do caso Shopify acima: em quase 100% dos casos reais, Redis não
 
 Citado como o cache mais comum: guarda `user_id` → `photo_url` com TTL de 5 min, atualizado em novo upload ([[wiki/concepts/cache]]).
 
+## Código Fonte TV — cinco tipos de armazenamento
+
+Como chave-valor: sessão, código de verificação, contador de rate limit e cache — nunca fonte única ([[wiki/concepts/fonte-de-verdade-vs-copia-derivada]], [[wiki/concepts/chave-valor]]).
+
 ## Key Sources
 
+
+- [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] — demonstração com Redis no Dokploy; cache como cópia temporária, não fonte de verdade
 - [[wiki/sources/sessions]] — JWT stateless: impossível revogar antes do TTL. Sessions server-side com Redis: revogação imediata ao custo de state. MFA TOTP: mínimo aceitável. WebAuthn/Passkeys: padrão futuro sem senha,...
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — Redis Pub/Sub como notificador entre microsserviços, armadilha da conexão sem Singleton

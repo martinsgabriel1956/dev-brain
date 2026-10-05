@@ -3,8 +3,8 @@ type: concept
 title: "Full-Text Search"
 aliases: ["busca full text", "FULLTEXT INDEX", "match against", "tsvector tsquery", "busca por relevância em SQL"]
 date_created: 2026-07-29
-date_updated: 2026-09-29
-source_count: 3
+date_updated: 2026-10-05
+source_count: 4
 tags: [banco-de-dados, full-text-search, mysql, postgresql, sql, performance, relevancia, gin]
 skill: tech-mentor-data
 status: stable
@@ -74,8 +74,14 @@ A fonte cita a existência, mas não demonstra ao vivo, os seguintes recursos av
 
 Tanto `FULLTEXT INDEX` (MySQL) quanto o índice `GIN` sobre `tsvector` (PostgreSQL) implementam a mesma ideia estrutural: tokenização (quebra em palavras, remoção de stop words) seguida de um [[wiki/concepts/indice-invertido|índice invertido]] palavra → lista de IDs. Buscas compostas retornam a interseção dos IDs de cada termo. Ver [[wiki/concepts/indice-invertido]] para o mecanismo isolado da técnica de busca.
 
+## Código Fonte TV — cinco tipos de armazenamento
+
+O relacional dá conta de catálogo pequeno e busca simples; mecanismo dedicado (Elasticsearch/OpenSearch, índice invertido) entra quando cresce — e é sempre cópia reconstruível ([[wiki/concepts/fonte-de-verdade-vs-copia-derivada]]). Aparte: IA pode substituir a busca ao receber dados brutos.
+
 ## Key Sources
 
+
+- [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] — quando sair do FTS do banco; índice como "índice remissivo"; delay de segundos
 - [[wiki/sources/full-text-search-mysql-postgresql]] — fonte principal: LIKE vs. Full-Text Search, MySQL FULLTEXT/MATCH AGAINST, PostgreSQL tsvector/tsquery/GIN, lexemas
 - [[wiki/sources/elasticsearch-opensearch]] — próximo degrau quando o Full-Text Search nativo não é mais suficiente (BM25, facets, >10M docs)
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — outra implementação possível da [[wiki/concepts/busca-por-palavra-chave]] em RAG híbrido (a fonte não especifica)

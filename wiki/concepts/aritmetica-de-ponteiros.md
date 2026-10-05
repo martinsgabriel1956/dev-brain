@@ -3,8 +3,8 @@ type: concept
 title: "Aritmética de ponteiros"
 aliases: ["pointer arithmetic", "manipulação manual de ponteiros"]
 date_created: 2026-10-02
-date_updated: 2026-10-02
-source_count: 1
+date_updated: 2026-10-05
+source_count: 2
 tags: [linguagem-c, ponteiros, memoria, baixo-nivel, aprendizado]
 skill: lang-systems
 status: stub
@@ -21,3 +21,4 @@ Relacionado: [[wiki/concepts/ponteiros-cpp-stack-heap-raii]], [[wiki/concepts/ge
 ## Key sources
 
 - [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — anedota de aprendizado e definição
+- [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — sintaxe de ponteiro como exemplo do que é pouco natural ao humano

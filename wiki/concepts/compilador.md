@@ -3,8 +3,8 @@ type: concept
 title: "Compilador"
 aliases: ["compiler", "compilação", "interpretador", "AST", "análise léxica"]
 date_created: 2026-06-26
-date_updated: 2026-10-02
-source_count: 7
+date_updated: 2026-10-05
+source_count: 8
 tags: [cs-fundamentals, compiladores, interpretadores, ast, linguagens-de-programacao]
 skill: cs-fundamentals
 status: draft
@@ -112,3 +112,4 @@ Compilado direto para máquina (C) vs interpretador/VM/GC: ver [[wiki/concepts/c
 - [[wiki/sources/como-um-compilador-transforma-codigo-em-instrucoes-de-maquina]] — detalhamento da análise semântica (tabela de símbolos), da IR como forma atômica que evita explosão N×M, e da alocação de registradores na geração de código
 - [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — borrow checker como passada de análise semântica adicional, própria de Rust
 - [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — compilação nativa vs runtime: argumento de overhead
+- [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — o que se perde ao dispensar o compilador (IA gerando assembly/opcode direto)

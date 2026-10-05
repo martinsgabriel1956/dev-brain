@@ -3,8 +3,8 @@ type: concept
 title: "Gerenciamento de Memória (Linguagens de Programação)"
 aliases: ["memory management", "garbage collector", "GC", "ownership", "manual memory management"]
 date_created: 2026-07-09
-date_updated: 2026-10-02
-source_count: 5
+date_updated: 2026-10-05
+source_count: 6
 tags: [cs-fundamentals, lang-systems, linguagens-de-programacao, memoria, garbage-collector, rust, runtime, raii, cpp, baixo-nivel]
 skill: cs-fundamentals
 status: draft
@@ -56,3 +56,4 @@ Em [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]], o 
 - [[wiki/sources/ponteiros-cpp-go-csharp]] — comparação prática C++/Go/C#: stack vs. heap, escape analysis em Go, RAII e `unique_ptr` em C++ moderno
 - [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] — gerenciamento manual (malloc, memory leak, double free) como motivação de estudo e como responsabilidade central de um sistema operacional
 - [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — IA como autora de código com memória manual: tese e ressalva
+- [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — erros humanos recorrentes (ponteiro solto, use-after-free) e ataques; ver [[wiki/concepts/memory-safety]]

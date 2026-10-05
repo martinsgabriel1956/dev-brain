@@ -3,8 +3,8 @@ type: concept
 title: "Event-Driven Architecture (EDA)"
 aliases: ["arquitetura orientada a eventos", "eda", "event driven"]
 date_created: 2026-07-30
-date_updated: 2026-09-30
-source_count: 7
+date_updated: 2026-10-05
+source_count: 8
 tags: [event-driven, mensageria, saga-pattern, cqrs, microsservicos, arquitetura]
 skill: tech-mentor-backend
 status: stub
@@ -38,6 +38,10 @@ Ganha-se desacoplamento e ausência de gargalo síncrono; perde-se consistência
 
 [[wiki/entities/bernardo-lobato]] apresenta a [[wiki/concepts/comunicacao-assincrona]] como conceito prévio a EDA, [[wiki/concepts/cqrs]], [[wiki/concepts/event-sourcing]] e [[wiki/concepts/microsservicos]]; o exemplo de pedidos (um evento, vários consumidores independentes) é a forma mais simples de EDA. Risco citado: adotar sem estudo ou emular síncrono sobre assíncrono.
 
+## Exemplo mínimo: pedido criado → consumidores
+
+Evento 'pedido criado' consumido por Pagamentos, que publica 'pagamento aprovado/reprovado' consumido por E-mail ([[wiki/concepts/modelo-mental-rabbitmq]]). [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]]
+
 ## Key Sources
 
 - [[wiki/sources/event-driven-architecture]] — EDA desacopla produtores de consumidores via eventos — comunicação assíncrona, temporal decoupling. Dois padrões de coordenação: Choreography (cada serviço reage a eventos, sem coordenador) e...
@@ -47,3 +51,4 @@ Ganha-se desacoplamento e ausência de gargalo síncrono; perde-se consistência
 - [[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] — exemplo didático completo (cadastro + e-mail) de por que publicar um evento nunca é atômico com a escrita no banco, com a solução via outbox e CDC/Debezium
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — comunicação assíncrona como pré-requisito conceitual de EDA/CQRS/Event Sourcing; exemplo de pedidos
 - [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — evento pós-escrita ('formulário cadastrado') processado por [[wiki/concepts/event-handler]] para popular o [[wiki/concepts/read-model]]
+- [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — encadeamento de eventos no RabbitMQ

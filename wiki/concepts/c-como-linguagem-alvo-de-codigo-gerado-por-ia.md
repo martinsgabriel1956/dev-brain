@@ -3,8 +3,8 @@ type: concept
 title: "C como linguagem-alvo de código gerado por IA"
 aliases: ["c volta a ser o rei", "c na era da ia"]
 date_created: 2026-10-02
-date_updated: 2026-10-02
-source_count: 1
+date_updated: 2026-10-05
+source_count: 2
 tags: [linguagem-c, ia, codigo-gerado-por-ia, desempenho, memory-safety, opiniao]
 skill: lang-systems
 status: draft
@@ -33,3 +33,4 @@ Tese de opinião sem benchmark ou caso real; confiança baixa-média.
 ## Key sources
 
 - [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — tese central e contrapontos da apresentadora
+- [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — endosso do desempenho + dois contra-argumentos: por que não assembly/opcode ([[wiki/concepts/ia-gerando-binario-direto]]) e legibilidade como controle ([[wiki/concepts/legibilidade-humana-do-codigo-gerado-por-ia]])

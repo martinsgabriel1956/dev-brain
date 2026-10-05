@@ -3,8 +3,8 @@ type: concept
 title: "Linguagem de programação pensada para IA"
 aliases: ["linguagem para IA", "AI-first language"]
 date_created: 2026-10-02
-date_updated: 2026-10-02
-source_count: 1
+date_updated: 2026-10-05
+source_count: 2
 tags: [linguagens, ia, design-de-linguagem, validacao, hipotese]
 skill: lang-systems
 status: stub
@@ -25,3 +25,4 @@ Como seria uma checagem de "contexto perdido"? Seria compile-time? Relacionado a
 ## Key sources
 
 - [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — hipótese da apresentadora
+- [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — alternativa extrema na mesma discussão: IA gerando binário direto ([[wiki/concepts/ia-gerando-binario-direto]])

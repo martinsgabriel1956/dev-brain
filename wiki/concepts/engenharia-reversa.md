@@ -3,8 +3,8 @@ type: concept
 title: "Engenharia Reversa"
 aliases: ["reverse engineering", "disassembly", "decompilação"]
 date_created: 2026-08-27
-date_updated: 2026-09-29
-source_count: 3
+date_updated: 2026-10-05
+source_count: 4
 tags: [cs-fundamentals, lang-systems, seguranca, baixo-nivel, ia]
 skill: lang-systems
 status: stub
@@ -23,3 +23,4 @@ Processo de analisar um binário compilado — tipicamente partindo de **assembl
 - [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] — engenharia reversa de comportamento de agente de IA para extração de dados corporativos expostos, com poucas interações
 - [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]]
 - [[wiki/sources/historia-do-captcha-do-teste-de-turing-ao-turnstile]] — pesquisadores reverteram o "Não sou um robô" (cookie + fingerprint) e quebraram-no; alvo típico de [[wiki/concepts/seguranca-por-obscuridade]]
+- [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — relato de inspeção de assembly de drivers e DLLs sem código-fonte; assembly legível por poucos, opcode por ninguém

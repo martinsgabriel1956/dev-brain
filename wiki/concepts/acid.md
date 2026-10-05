@@ -3,8 +3,8 @@ type: concept
 title: "ACID"
 aliases: ["atomicity", "consistency isolation durability", "acid properties"]
 date_created: 2026-04-22
-date_updated: 2026-10-01
-source_count: 8
+date_updated: 2026-10-05
+source_count: 9
 tags: [banco-de-dados, acid, transactions, postgresql, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -49,8 +49,14 @@ Provas de concurso brasileiras chamam o banco relacional de **SGBDR** (Sistema G
 
 Durability não significa "gravado imediatamente no arquivo final" — significa que o banco tem informação suficiente para reconstruir o estado confirmado depois de uma queda. Na prática: a mudança é gravada primeiro no [[wiki/concepts/write-ahead-log]] (mais barato, sequencial), o banco já responde "commit OK", e só depois a página suja no [[wiki/concepts/buffer-pool]] é persistida no arquivo de dados definitivo, de forma assíncrona. Se o processo cai no meio, o [[wiki/concepts/database-recovery|recovery]] relê o WAL e reaplica o que estava confirmado. Isolation, por sua vez, é ajustável via [[wiki/concepts/isolation-levels]] e sustentado por [[wiki/concepts/mvcc]] — ver [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]].
 
+## Código Fonte TV — cinco tipos de armazenamento
+
+Exemplo didático: se o servidor cai após registrar o pagamento e antes de baixar o estoque, cobra-se por produto "ainda na prateleira"; a transação garante que "não existe metade da compra".
+
 ## Key Sources
 
+
+- [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] — transação como "tudo ou nada" no fluxo de compra; gaveta vs. cartório
 - [[wiki/sources/banco-de-dados]]
 - [[wiki/sources/como-um-banco-de-dados-funciona-por-dentro]] — mecanismo concreto de Durability (WAL → commit → dirty page → recovery) e de Isolation (MVCC + isolation levels)
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]

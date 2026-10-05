@@ -3,8 +3,8 @@ type: concept
 title: "Governança de Código Gerado por IA"
 aliases: ["paradoxo da ia no codigo", "governar codigo de ia"]
 date_created: 2026-07-03
-date_updated: 2026-10-02
-source_count: 11
+date_updated: 2026-10-05
+source_count: 12
 tags: [ia-no-processo-de-engenharia, arquitetura, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -92,3 +92,4 @@ Trocar para C reduz overhead, mas aumenta o risco de falhas de memória no que a
 ## Key sources
 
 - [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — risco de linguagem sem segurança de memória
+- [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — legibilidade humana como controle de segurança ([[wiki/concepts/legibilidade-humana-do-codigo-gerado-por-ia]])

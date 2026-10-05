@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-10-01
+date_updated: 2026-10-05
 ---
 
 
@@ -26,7 +26,10 @@ date_updated: 2026-10-01
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]] | [[wiki/entities/andre-casciotti|André Casciotti]]: **três acoplamentos que impedem o teste unitário** ([[wiki/concepts/acoplamento-que-impede-teste-unitario]]) — `new` de infraestrutura ([[wiki/concepts/acoplamento-desejavel-vs-indesejavel]]), herança ([[wiki/concepts/heranca-vs-composicao]]) e estáticos ([[wiki/concepts/metodo-estatico-e-testabilidade]]); o teste sai pela rede e quebra ([[wiki/concepts/teste-unitario-sem-io]]); cura: interface + DI. Exemplos em C#/.NET; quarto tipo (processo) não explicado |
+| [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] | Código Fonte TV: cinco necessidades da loja virtual → cinco armazenamentos — relacional (transação, SQL), documento ([[wiki/concepts/dado-semiestruturado]]), chave-valor (sessão/cache), full-text e fila ([[wiki/concepts/persistencia-poliglota]]). Cache e índice são cópias ([[wiki/concepts/fonte-de-verdade-vs-copia-derivada]]); "sem esquema ≠ sem modelagem"; comece no relacional ([[wiki/concepts/comecar-simples-adicionar-peca-quando-doer]]). Faltam outbox/CDC |
 | [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] | Corte do quadro *Bora tomar café* ([[wiki/entities/fernanda-kipper]]) lendo artigo do Twitter: com IA escrevendo o código, o custo de runtime das linguagens de alto nível vira desperdício e [[wiki/concepts/linguagem-c]] "volta a ser o rei" ([[wiki/concepts/c-como-linguagem-alvo-de-codigo-gerado-por-ia]]). Apresentadora concorda no desempenho, contesta "IA não esquece" (janela de contexto) e sugere linguagem nova pensada para erros de IA. Tese de opinião, sem benchmark |
+| [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] | Safe Source ([[wiki/entities/ricardo-albuquerque]]) comenta o mesmo tweet: concorda com o desempenho do C, mas pergunta por que não assembly/opcode e defende a legibilidade humana do código da IA como controle de segurança. |
 | [[wiki/sources/seguranca-rede-wifi-pequeno-comercio-mikrotik-isolamento-clientes]] | Pequeno comércio: Wi-Fi de clientes na mesma [[wiki/concepts/rede-plana]] expõe PDV/financeiro/câmeras a scan. Solução: operadora com Wi-Fi off → [[wiki/entities/mikrotik]] → um AP por finalidade, faixas distintas e firewall `forward`+`drop` ([[wiki/concepts/segmentacao-de-rede-por-faixa-de-ip-e-firewall]]); [[wiki/concepts/ip-fixo-em-rede-interna]], [[wiki/concepts/client-isolation]] só nos APs de clientes/funcionários, 3 redes = [[wiki/concepts/protecao-unidirecional-vs-bidirecional]]; ~50 conexões degradam o AP ([[wiki/concepts/degradacao-de-ap-por-numero-de-conexoes]]). Serviço ~R$ 600/2 h. Faltam WPA, VLAN/SSID, ordem de regras |
 | [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]] sobre o [[wiki/concepts/vertical-slice-architecture|Vertical Slice]]: separar por **funcionalidade e não por camada técnica** para escapar do [[wiki/concepts/architecture-sinkhole]]; cada slice tem controller→dados e **sua própria representação** de entidades como `Usuário` ([[wiki/concepts/dominio-centralizado-vs-modelo-por-slice]]); ganhos de coesão e testes, risco de [[wiki/concepts/acoplamento-entre-slices]]; slice como passo antes de extrair serviço ([[wiki/concepts/extracao-de-slice-para-servico]]). Não é bala de prata; pode ser mesclado com outros estilos |
 | [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] | [[wiki/entities/pedro-camaforte\|Pedro Camaforte]] sobre o [[wiki/concepts/cap-theorem\|Teorema CAP]] em entrevistas: o triângulo "2 de 3" é um erro didático — o **P é a pré-condição que ativa a escolha entre C e A**, não uma opção; CA só existe em nó único; consistência para ingressos/estoque/finanças, disponibilidade para feeds/comentários ("feeling de produto"); nível sênior = escolha por serviço (booking = C, search = A). Divergência: define disponibilidade incluindo resposta de erro; Brewer [external] corrigiu o "2 de 3" em 2012 |
@@ -779,6 +782,7 @@ date_updated: 2026-10-01
 | [[wiki/sources/prompt-engineering]] | Hierarquia: Zero-shot → Few-shot → CoT → Self-Consistency → Fine-tuning. Experimente da esquerda para direita antes de escalar custo. CoT com "pense passo a passo" melhora raciocínio em modelos grandes. Self-Consistency (vote majority com N amostras) melhora confiabilidade em tarefas com resposta única correta. DSPy compila prompts automaticamente como código. |
 | [[wiki/sources/quorum]] | Quorum permite sistemas distribuídos balancear consistência e disponibilidade na replicação via parâmetros N (réplicas), W (write quorum) e R (read quorum). A regra R + W > N garante strong consistency. Sloppy Quorum com Hinted Handoff mantém alta disponibilidade mesmo com nós indisponíveis. |
 | [[wiki/sources/rabbitmq]] | RabbitMQ é um message broker AMQP com roteamento flexível via Exchanges (Direct, Fanout, Topic, Headers). Vence Kafka em: latência sub-milissegundo, roteamento complexo, task queues e RPC assíncrono. Perde em: replay, múltiplos consumer groups independentes e throughput (cap ~100k msg/s vs milhões no Kafka). Quorum Queues para HA. DLX (Dead Letter Exchange) para mensagens que falham ou expiram. |
+| [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] | Vídeo didático com simulador: loja síncrona vira [[wiki/concepts/monolito-distribuido]]; solução com [[wiki/entities/rabbitmq]] — producer → [[wiki/concepts/exchange-rabbitmq]] → fila → consumer (direct, fanout, topic, headers), [[wiki/concepts/ack-de-mensagem]], RabbitMQ (tarefa) vs Kafka (stream) e quando não usar |
 | [[wiki/sources/raft-leader-election]] | Raft é o algoritmo de consenso mais legível e amplamente usado (etcd, CockroachDB, Consul, TiKV). Três papéis: Leader (único, escreve), Follower (replica), Candidate (em eleição). Eleição: timeout aleatório (150–300ms) evita split vote; precisa de quorum (N/2+1) para ganhar. Replicação de log: leader envia AppendEntries; só committa quando maioria confirma. Safety: nenhum nó com log incompleto ... |
 | [[wiki/sources/rag-retrieval]] | RAG injeta contexto relevante no prompt para reduzir alucinações e manter conhecimento atualizado. Pipeline: chunking → embedding → vector store → busca → prompt + LLM. Chunking é o gargalo de qualidade. Hybrid Search (vetorial + BM25) é o padrão de produção. Re-ranking melhora precisão pós-busca. RAGAS para avaliação. |
 | [[wiki/sources/rate-limiting]] | Rate Limiting protege APIs de abuso e sobrecarga. Quatro algoritmos: Fixed Window (simples, boundary burst), Token Bucket (bursts controlados), Sliding Window Log (exato, memória O(N)), Sliding Window Counter (~90% precisão, O(1) memória). Escolha padrão: Sliding Window Counter para APIs. Implementação em Redis com Lua script para atomicidade. Hierarquia de limites: global → por IP → por usuári... |
@@ -832,6 +836,26 @@ date_updated: 2026-10-01
 
 ## Concepts
 
+### Testabilidade e Acoplamento — Teste Unitário (2026-10-05)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/acoplamento-que-impede-teste-unitario]] | Três acoplamentos (new, herança, static) que fazem o teste unitário sair pela rede e quebrar |
+| [[wiki/concepts/teste-unitario-sem-io]] | Premissa: sem rede nem disco, para rodar em qualquer máquina e no build |
+| [[wiki/concepts/acoplamento-desejavel-vs-indesejavel]] | Runtime e domínio podem ter `new`; infraestrutura vai atrás de interface |
+| [[wiki/concepts/heranca-vs-composicao]] | Herdar classe com tecnologia impede mock; prefira composição injetada |
+| [[wiki/concepts/metodo-estatico-e-testabilidade]] | Estático move o acoplamento, não o remove; válido se puro e sem limites furados |
+
+### Armazenamento de Dados — Cinco Tipos (2026-10-05)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/persistencia-poliglota]] | Um armazenamento por necessidade: relacional, documento, chave-valor, full-text, fila — mapa de possibilidades |
+| [[wiki/concepts/dado-semiestruturado]] | Estrutura que varia por registro; "sem esquema" não é "sem modelagem" |
+| [[wiki/concepts/chave-valor]] | Lookup por chave, em memória, para sessão/cache/rate limit; dado que pode expirar |
+| [[wiki/concepts/fonte-de-verdade-vs-copia-derivada]] | Cache e índice de busca são cópias reconstruíveis, nunca a fonte oficial |
+| [[wiki/concepts/comecar-simples-adicionar-peca-quando-doer]] | Comece no relacional; adicione peças quando o problema chegar com nome e sobrenome |
+
 ### Arquitetura Distribuída — Introdução (2026-10-02)
 
 | Página | Hook |
@@ -846,6 +870,10 @@ date_updated: 2026-10-01
 | Página | Hook |
 |---|---|
 | [[wiki/concepts/c-como-linguagem-alvo-de-codigo-gerado-por-ia]] | Tese "C volta a ser o rei" e seus contrapontos (segurança, contexto, revisão humana) |
+| [[wiki/concepts/assembly]] | Mnemônicos das instruções de máquina; intercambiável com opcode; legível por pouquíssimas pessoas. |
+| [[wiki/concepts/ia-gerando-binario-direto]] | Hipótese: se a abstração é só para humanos, a IA poderia gerar assembly/opcode e dispensar o compilador. |
+| [[wiki/concepts/legibilidade-humana-do-codigo-gerado-por-ia]] | Ler o código da IA como controle de segurança; gradiente C > assembly > opcode. |
+| [[wiki/concepts/memory-safety]] | Buffer overflow, use-after-free; GC vs ARC vs ownership vs manual. |
 | [[wiki/concepts/custo-de-abstracao-em-runtime]] | Overhead de interpretador/VM/GC vs. C, Rust e manual |
 | [[wiki/concepts/abstracoes-como-protecao-cognitiva-humana]] | Alto nível existe para o humano; "aluguel de prédio vazio" |
 | [[wiki/concepts/linguagem-de-programacao-pensada-para-ia]] | Hipótese: validações desenhadas para os erros da IA (stub) |
@@ -1336,6 +1364,13 @@ date_updated: 2026-10-01
 | [[wiki/concepts/fila]] | FIFO — primeiro a entrar, primeiro a sair; filas de jobs, mensageria, BFS |
 | [[wiki/concepts/pub-sub]] | Publisher/subscriber — publica um fato para quem estiver ouvindo; fan-out, desacoplamento total via broker |
 | [[wiki/concepts/mensageria]] | Comunicação assíncrona via broker — queue (consumo único) vs. stream (replay); Kafka, SQS, RabbitMQ |
+| [[wiki/concepts/modelo-mental-rabbitmq]] | Producer → exchange → fila → consumer; o produtor nunca publica direto na fila |
+| [[wiki/concepts/exchange-rabbitmq]] | Quatro tipos: direct (match exato), fanout (broadcast), topic (`*` e `#`), headers |
+| [[wiki/concepts/routing-key-e-binding-key]] | Chave da mensagem vs chave da ligação exchange-fila |
+| [[wiki/concepts/ack-de-mensagem]] | Confirmação de leitura; sem ack a mensagem volta à fila |
+| [[wiki/concepts/rabbitmq-vs-kafka]] | RabbitMQ = tarefa (remove lido); Kafka = stream (retém histórico) |
+| [[wiki/concepts/quando-usar-mensageria]] | Use para desacoplar/background/retry; sistema simples → HTTP |
+| [[wiki/concepts/monolito-distribuido]] | Serviços separados com dependências síncronas externas: derrubam-se em cadeia |
 | [[wiki/concepts/kafka]] | Log distribuído que retém eventos após entrega — partições como unidade de paralelismo, chave de partição via hash murmur + módulo, consumer group só entrega a próxima mensagem após offset commit |
 | [[wiki/concepts/bullmq]] | Lib de filas para Node.js/Bun sobre Redis — producer/worker como processos independentes, sem chamada de função direta |
 | [[wiki/concepts/pilha]] | LIFO — último a entrar, primeiro a sair; undo, call stack, DFS |
@@ -2796,6 +2831,8 @@ date_updated: 2026-10-01
 | [[wiki/entities/netflix]] | Referência em engenharia de plataforma — modelo *paved road* (estrada pavimentada): ferramental central opcional, mas quem sai paga o custo da alternativa |
 | [[wiki/entities/phil-calcado]] | Engenheiro (microsserviços/DevOps) citado por Bottcher: "perdemos a batalha do 'DevOps não é cargo/time/ferramentas'" |
 | [[wiki/entities/fernanda-kipper]] | Desenvolvedora e criadora de conteúdo (YouTube) — aula de fundamentos de rede + configuração de domínio na AWS; site pessoal hospedado na Vercel |
+| [[wiki/entities/ricardo-albuquerque]] | Apresentador do Safe Source; ex-programador C, inspeção de código/assembly. |
+| [[wiki/entities/safe-source]] | Canal/site de notícias de tecnologia e segurança (safesrc.com). |
 | [[wiki/entities/godaddy]] | Registrador de domínios (domain registrar) — painel de DNS onde se configuram os name servers que decidem para qual servidor o domínio aponta |
 | [[wiki/entities/alura]] | Escola de tecnologia brasileira e canal educativo — publica a aula de algoritmos de busca (busca linear vs. binária) apresentada por Giovana |
 | [[wiki/entities/david-gelernter]] | Cientista da computação, Yale — criou Linda e o paradigma Object Spaces com Nicholas Carriero (1986) |
@@ -2821,6 +2858,7 @@ date_updated: 2026-10-01
 | [[wiki/entities/knight-capital]] | Trading de alta frequência: código morto reativado por engano num deploy (2012) causou perda de ~$440-460 milhões em 45 minutos — caso extremo de custo de não seguir a Boy Scout Rule |
 | [[wiki/entities/edgar-codd]] | IBM, 1970: paper do modelo relacional e independência de dados — fundamento de tudo que veio depois |
 | [[wiki/entities/rabbitmq]] | Message broker AMQP — fila que viabiliza Saga Pattern coreografado sem gargalo de coordenação síncrona |
+| [[wiki/entities/masstransit]] | Biblioteca .NET de pub/sub; usa bastante headers exchange (stub) |
 | [[wiki/entities/rsa-security]] | Criadora do SecurID — token de hardware que popularizou o segundo fator de autenticação nos anos 90 |
 | [[wiki/entities/leetcode]] | Plataforma de prática de algoritmos e formato de referência para entrevistas técnicas de coding |
 | [[wiki/entities/ietf]] | Padronizou HOTP (RFC 4226) e TOTP (RFC 6238), tirando a autenticação por OTP das mãos de fornecedores proprietários |

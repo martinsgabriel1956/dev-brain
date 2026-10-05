@@ -3,8 +3,8 @@ type: concept
 title: "Sistema Binário, Bit e Byte"
 aliases: ["bit", "byte", "sistema binário", "binary digit", "representação binária"]
 date_created: 2026-08-07
-date_updated: 2026-08-25
-source_count: 3
+date_updated: 2026-10-05
+source_count: 4
 tags: [cs-fundamentals, sistema-binario, bit, byte, numero-binario, representacao, rgb, unicode]
 skill: cs-fundamentals
 status: draft
@@ -70,3 +70,4 @@ O padrão se repete: representar qualquer tipo de mídia é uma questão de conv
 - [[wiki/sources/conceitos-que-regem-a-computacao-bits-turing-complexidade]] — bit como binary digit (2 estados / transistores), byte como 8 bits representando um caractere, e a lógica binária como base do processamento
 - [[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] — unário vs. binário com demonstração física (dedos/lâmpadas); 2⁸=256 e 2³²/2⁶⁴ como tamanhos modernos de palavra; generalização do princípio para RGB, vídeo e som
 - [[wiki/sources/como-transistores-formam-portas-logicas-celulas-padrao-cmos]] — como o transistor implementa fisicamente o estado 0V/1V que o bit representa
+- [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — opcode como bytes de instrução; relação com [[wiki/concepts/assembly]]

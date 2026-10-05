@@ -3,8 +3,8 @@ type: entity
 title: "Hostinger"
 aliases: ["Hostinger VPS"]
 date_created: 2026-07-21
-date_updated: 2026-09-30
-source_count: 9
+date_updated: 2026-10-05
+source_count: 10
 tags: [tech-mentor-infra, vps, hosting, patrocinio, coolify]
 skill: tech-mentor-ai
 status: stub
@@ -34,8 +34,14 @@ Também citada (sétimo bloco patrocinado) em [[wiki/sources/mcp-stateless-fim-d
 
 Também citada (oitavo bloco patrocinado) em [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]], por [[wiki/entities/otavio-miranda]]: usa o **KVM4** (KVM2 recomendado como o mais popular/melhor custo-benefício), período de 24 meses, template Ubuntu 24.04 com Docker, cupom "Otávio Miranda". Publicidade, não avaliação técnica; servidor então usado para o deploy do [[wiki/entities/omxterm]] com [[wiki/entities/traefik]].
 
+## Código Fonte TV — cinco tipos de armazenamento
+
+Patrocínio do vídeo: VPS (custo previsível, qualquer tecnologia) com Dokploy para deploy GitHub → contêiner Docker; usam há +10 anos; cupom "códigofonte".
+
 ## Key Sources
 
+
+- [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] — patrocínio VPS + Dokploy
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — KVM4/KVM2, Ubuntu 24.04 + Docker, cupom "Otávio Miranda"
 - [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] — plano KVM2, cupom "Lucas Montano", usada como ambiente de experimentação para implementar um MCP server stateless
 - [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] — deploy de landing page em staging via MCP da Hostinger dentro de um loop agêntico, incluindo reset/reconfiguração da VPS pelo próprio agente

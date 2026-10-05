@@ -3,8 +3,8 @@ type: concept
 title: "Critérios de Escolha de Banco de Dados"
 aliases: ["como escolher banco de dados", "framework de escolha de banco", "database selection criteria"]
 date_created: 2026-09-14
-date_updated: 2026-09-14
-source_count: 1
+date_updated: 2026-10-05
+source_count: 2
 tags: [banco-de-dados, system-design, postgresql, mongodb, dynamodb, entrevista-tecnica, backend, arquitetura]
 skill: tech-mentor-backend
 status: stable
@@ -63,6 +63,12 @@ Em alguns cenários não há liberdade de escolha (empresa já padronizada em um
 - [[wiki/concepts/sharding]] — mecanismo por trás da escalabilidade horizontal citada no critério 7
 - [[wiki/concepts/read-replicas]] — mecanismo concreto de escalabilidade vertical com alívio de leitura
 
+## Código Fonte TV — cinco tipos de armazenamento
+
+Complemento: [[wiki/concepts/persistencia-poliglota]] — antes de escolher *qual* banco, decidir *que tipos* de armazenamento a aplicação precisa; ver [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]].
+
 ## Key Sources
 
+
+- [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] — framework por tipo de necessidade do dado (relacional, documento, chave-valor, busca, fila)
 - [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]] — framework completo dos 8 critérios, com exemplos de Postgres/MongoDB/DynamoDB

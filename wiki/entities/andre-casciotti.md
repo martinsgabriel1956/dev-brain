@@ -3,8 +3,8 @@ type: entity
 title: "André Casciotti"
 aliases: ["Próximo Nível (canal)"]
 date_created: 2026-07-03
-date_updated: 2026-09-30
-source_count: 7
+date_updated: 2026-10-05
+source_count: 8
 tags: [carreira, mentoria, youtube, criador-de-conteudo]
 skill: tech-mentor-leadership
 status: stub
@@ -57,3 +57,7 @@ Criador de conteúdo técnico, apresentador do quadro "Próximo Nível" (canal n
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] — quinta fonte: guia do que estudar sendo iniciante (aprender com foco no problema, escolher caminho rápido, mentalidade de crescimento) + lista técnica pessoal (C#/ASP.NET MVC, teste unitário cedo, SQL ANSI, Git/GitHub, fundamentos de CLR/GC, cliente-servidor); conceitos-chave [[wiki/concepts/aprender-com-foco-no-problema]], [[wiki/concepts/escolha-rapida-de-caminho-de-carreira]], [[wiki/concepts/mentalidade-de-crescimento]]
 - [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] — sexta fonte: por que sempre vai faltar conhecimento técnico (condição permanente, não falha pessoal) e três táticas — estudar por demanda (fechar o leque, abrir por necessidade), praticar cedo na proporção 20/80 (estudo/prática) dentro do foco, e fortalecer fundamentos (linguagem/runtime, lógica, rede, resolver problemas, qualidade); conceitos-chave [[wiki/concepts/mito-da-falta-de-conhecimento-tecnico]], [[wiki/concepts/estudar-por-demanda]], [[wiki/concepts/proporcao-8020-estudo-pratica]]
 - [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]] — sétima fonte: por que o dev não é promovido — promoção depende de cultura, equipe e chefe, mas o dev influencia com 3 dicas (objetivos explícitos, visibilidade das entregas, overdelivery calibrado por subnível); conceitos-chave [[wiki/concepts/jogar-o-jogo-da-carreira]], [[wiki/concepts/objetivos-de-carreira-explicitos]], [[wiki/concepts/visibilidade-das-entregas]], [[wiki/concepts/overdelivery-calibrado]]
+
+## Key sources (adição 2026-10-05)
+
+- [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]] — Vídeo técnico sobre testabilidade: [[wiki/concepts/acoplamento-que-impede-teste-unitario]], [[wiki/concepts/teste-unitario-sem-io]], [[wiki/concepts/heranca-vs-composicao]], [[wiki/concepts/metodo-estatico-e-testabilidade]] (cita o curso "Dev que Resolve", arquitetura para devs e teste unitário).

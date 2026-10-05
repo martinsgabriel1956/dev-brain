@@ -3,8 +3,8 @@ type: concept
 title: "Dependency Injection"
 aliases: ["DI", "injeção de dependência"]
 date_created: 2026-08-04
-date_updated: 2026-09-11
-source_count: 7
+date_updated: 2026-10-05
+source_count: 8
 tags: [design-patterns, acoplamento, testabilidade, di]
 skill: tech-mentor-backend
 status: stub
@@ -51,3 +51,7 @@ Técnica em que um componente recebe suas dependências de fora (via construtor,
 - [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] — camada Main/Factory (`LoginFactory`) como composition root concreto numa tela Vue.js
 - [[wiki/sources/substitutable-dependency-xunitpatterns]] — fonte primária do termo guarda-chuva "substitutable dependency"; situa DI como um dos três mecanismos formais para obtê-la, ao lado de Dependency Lookup e Test-Specific Subclass
 - [[wiki/sources/extract-interface-xunitpatterns]] — mecanismo concreto por trás do pré-requisito "Extract Interface" citado nas duas fontes acima: retipar a variável injetada para uma interface extraída, viabilizando a troca da implementação real por um Test Double sem alterar o SUT
+
+## Key sources (adição 2026-10-05)
+
+- [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]] — Cura comum dos três acoplamentos que impedem o teste: trocar `new`, herança de classe com tecnologia e métodos estáticos por interface injetada ([[wiki/concepts/acoplamento-que-impede-teste-unitario]], [[wiki/concepts/heranca-vs-composicao]]). Sem DI o teste carrega dependências que não deveria ver.

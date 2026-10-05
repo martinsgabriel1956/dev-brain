@@ -3,8 +3,8 @@ type: concept
 title: "Alto Nível Antes do Fundamento"
 aliases: ["ordem invertida de aprendizado", "top-down learning path", "fundamento sob demanda"]
 date_created: 2026-08-17
-date_updated: 2026-09-28
-source_count: 3
+date_updated: 2026-10-05
+source_count: 4
 tags: [aprendizado, carreira, junior, ensino, fundamentos]
 skill: tech-mentor-leadership
 status: stub
@@ -58,3 +58,7 @@ Esta tese está em tensão parcial, não em contradição direta, com a leitura 
 - [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] — tensão de ênfase (fortalecer bases proativamente vs. puxar fundamento pela dor); conciliada por [[wiki/concepts/estudar-por-demanda]]
 - [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]]
 - [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] — querer 'testes avançados' sem saber testar/mockar; divisão básico/avançado é inventada e relativa
+
+## Key sources (adição 2026-10-05)
+
+- [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]] — Reforço: entender runtime (static, herança, instanciação) evita acoplar sem perceber ([[wiki/concepts/acoplamento-que-impede-teste-unitario]]).

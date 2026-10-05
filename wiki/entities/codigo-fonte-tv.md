@@ -3,8 +3,8 @@ type: entity
 title: "Código Fonte TV"
 aliases: ["Codigo Fonte TV", "CDF"]
 date_created: 2026-07-10
-date_updated: 2026-09-01
-source_count: 8
+date_updated: 2026-10-05
+source_count: 9
 tags: [canal, youtube, mercado-de-trabalho, pesquisa-salarial, brasil, design-patterns, typescript]
 skill: tech-mentor-leadership
 status: stub
@@ -29,8 +29,14 @@ O texto do vídeo sobre Observer se autorreferencia como "Código Fonte TV" ao c
 
 Além de mercado/carreira (pesquisa salarial, CDF Café) e "mão no código" com design patterns, [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] mostra uma terceira frente: panoramas de vocabulário técnico de IA para devs (Loop Engineering, Graph Engineering, Memory Layers, Spec-Driven Development), cruzando com a própria pesquisa salarial do canal (adesão de devs a IA: 83% em 2024 → 98,5% em 2026) como evidência de mercado.
 
+## Código Fonte TV — cinco tipos de armazenamento
+
+Episódio sobre os cinco tipos de armazenamento da série "Dicionário do Programador": [[wiki/concepts/persistencia-poliglota]].
+
 ## Key Sources
 
+
+- [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] — episódio "cinco tipos de armazenamento" (relacional, documento, chave-valor, busca, fila)
 - [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]
 - [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — panorama de vocabulário técnico de IA em 2026 (loop/graph engineering, memory layers, spec-driven, list agents); pesquisa salarial mostrando adesão de 83% (2024) para 98,5% (2026)
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] — episódio do CDF Café sobre custo real de IA, token economics e demissões

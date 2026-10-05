@@ -3,8 +3,8 @@ type: concept
 title: "Unit Test Solitário vs. Sociável"
 aliases: ["solitary unit test", "sociable unit test", "teste unitário solitário", "teste unitário sociável"]
 date_created: 2026-07-07
-date_updated: 2026-09-29
-source_count: 9
+date_updated: 2026-10-05
+source_count: 10
 tags: [testes, unit-test, tdd, martin-fowler, terminologia]
 skill: tech-mentor-testing
 status: stable
@@ -66,3 +66,7 @@ Continua usando "unit test" para os dois casos, qualificando com **"solitary"** 
 - [[wiki/sources/unit-test-xunitpatterns]] — fonte primária isolada da definição-raiz de "unit test": critério é o tamanho do SUT, não a técnica de isolamento; contraste formal com customer test
 - [[wiki/sources/jmock]] — verbete de "Tools" do xUnitPatterns.com: JMock como ferramenta que operacionaliza o unit test solitário via Configuration Interface
 - [[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] — classe como menor unidade a testar
+
+## Key sources (adição 2026-10-05)
+
+- [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]] — Premissa de não fazer I/O vale em ambas as escolas ([[wiki/concepts/teste-unitario-sem-io]]).

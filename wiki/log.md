@@ -12640,3 +12640,59 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (18):** [[wiki/entities/bernardo-lobato]], [[wiki/entities/netflix]], [[wiki/concepts/microsservicos]], [[wiki/concepts/monolito]], [[wiki/concepts/monolith-first]], [[wiki/concepts/distributed-monolith]], [[wiki/concepts/comunicacao-sincrona]], [[wiki/concepts/comunicacao-assincrona]], [[wiki/concepts/eventual-consistency]], [[wiki/concepts/observabilidade]], [[wiki/concepts/tolerancia-a-falha]], [[wiki/concepts/escalabilidade-horizontal]], [[wiki/concepts/cargo-cult-tecnologico]], [[wiki/concepts/avaliar-hype-tecnologico]], [[wiki/concepts/sem-balas-de-prata]], [[wiki/concepts/esb-enterprise-service-bus]], [[wiki/concepts/falacias-da-computacao-distribuida]], [[wiki/concepts/alta-disponibilidade]].
 
 **Notas:** (1) Sem contradição com a wiki; complementa [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]], [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] e [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] (mesma série). (2) O exemplo de streaming é suposição do autor, não a arquitetura real da Netflix. (3) Histórico e datas do vídeo são aproximados e **não foram verificados na web**; complementos marcados [skill]/inferência (resiliência condicional a timeout/circuit breaker; distribuição amplia a superfície de ataque). (4) Lacunas: sem critério de "arquitetura preparada para distribuir", sem transações distribuídas nem versionamento de contratos; trecho "nem 30 por…" truncado. (5) Quatro conceitos novos: um `draft` e três `stub`. (6) Prometidos e ainda ausentes: vídeos "por que não/por que sim" e série de observabilidade.
+
+---
+
+## [2026-10-05] ingest | Cinco Tipos de Armazenamento de Dados: Qual Usar em Cada Problema (Código Fonte TV)
+
+**Fonte:** transcrição de vídeo colada pelo usuário, limpa em `raw/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv.md` (já em português; sem tradução; erros de fala corrigidos e listados no cabeçalho). Episódio do "Dicionário do Programador" de [[wiki/entities/codigo-fonte-tv]], com trecho patrocinado da [[wiki/entities/hostinger]].
+
+**Skill:** tech-mentor-data (SKILL.md + `references/databases/nosql.md`; skill em `~/Documentos/skills/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]], [[wiki/concepts/persistencia-poliglota]], [[wiki/concepts/dado-semiestruturado]], [[wiki/concepts/chave-valor]], [[wiki/concepts/fonte-de-verdade-vs-copia-derivada]], [[wiki/concepts/comecar-simples-adicionar-peca-quando-doer]]
+
+**Tocadas (22):** [[wiki/concepts/criterios-de-escolha-de-banco-de-dados]], [[wiki/concepts/nosql]], [[wiki/concepts/relational-vs-nosql]], [[wiki/concepts/acid]], [[wiki/concepts/postgresql]], [[wiki/concepts/mysql]], [[wiki/concepts/mongodb]], [[wiki/concepts/redis]], [[wiki/concepts/cache]], [[wiki/concepts/session-management]], [[wiki/concepts/rate-limiting]], [[wiki/concepts/full-text-search]], [[wiki/concepts/mensageria]], [[wiki/concepts/fila]], [[wiki/concepts/kafka]], [[wiki/concepts/idempotencia]], [[wiki/concepts/processamento-assincrono]], [[wiki/concepts/yagni]], [[wiki/concepts/over-engineering]], [[wiki/entities/rabbitmq]], [[wiki/entities/hostinger]], [[wiki/entities/codigo-fonte-tv]].
+
+**Notas:** (1) Sem contradição com a wiki; complementa [[wiki/concepts/criterios-de-escolha-de-banco-de-dados]] (8 critérios) com o eixo "quais tipos coexistem". (2) Afirmações históricas (modelo relacional nos anos 70) e a anedota de IA substituindo busca **não verificadas na web**; a segunda marcada como confiança baixa-média. (3) Lacunas: sem outbox/CDC para sincronizar cache e índice, sem arquivos/objetos, séries temporais, grafos ou vetores. (4) Cinco conceitos novos: quatro `draft` e um `stub`. (5) Episódios do Dicionário do Programador sobre NoSQL, SQL, Elasticsearch e Kafka citados, ainda ausentes.
+
+---
+
+## [2026-10-05] ingest | A Linguagem do Futuro é C? E Por Que Não Assembly ou Opcode Direto (Safe Source — Ricardo Albuquerque)
+
+**Fonte:** transcrição de vídeo colada pelo usuário, limpa em `raw/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque.md` (já em português; sem tradução; erros de fala corrigidos e listados no cabeçalho). Gravado em 2026-09-16 por [[wiki/entities/ricardo-albuquerque]] ([[wiki/entities/safe-source]]); comenta o mesmo tweet de [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]].
+
+**Skill:** lang-systems (SKILL.md + `references/languages-transversal.md` [memory safety], `references/c-cpp.md`; skill em `~/Documentos/skills/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]], [[wiki/concepts/assembly]], [[wiki/concepts/ia-gerando-binario-direto]], [[wiki/concepts/legibilidade-humana-do-codigo-gerado-por-ia]], [[wiki/concepts/memory-safety]], [[wiki/entities/ricardo-albuquerque]], [[wiki/entities/safe-source]]
+
+**Tocadas (15):** [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]], [[wiki/concepts/linguagem-c]], [[wiki/concepts/c-como-linguagem-alvo-de-codigo-gerado-por-ia]], [[wiki/concepts/custo-de-abstracao-em-runtime]], [[wiki/concepts/abstracoes-como-protecao-cognitiva-humana]], [[wiki/concepts/linguagem-de-programacao-pensada-para-ia]], [[wiki/concepts/gerenciamento-de-memoria]], [[wiki/concepts/abstracao]], [[wiki/concepts/compilador]], [[wiki/concepts/vibe-coding]], [[wiki/concepts/governanca-de-codigo-gerado-por-ia]], [[wiki/concepts/rust-fundamentos]], [[wiki/concepts/engenharia-reversa]], [[wiki/concepts/aritmetica-de-ponteiros]], [[wiki/concepts/sistema-binario-bit-byte]], [[wiki/concepts/code-review]].
+
+**Notas:** (1) Sem contradição, mas **mesma tese-fonte, contra-argumentos diferentes**: a fonte anterior questiona "a IA não esquece" e propõe linguagem nova; esta pergunta "por que parar no C?" e defende legibilidade como controle. (2) Autor do tweet ("Racel Rossen") com grafia incerta; sem página. (3) Números do tweet (Python 10–100×) **não verificados na web**. (4) Lacunas: sem discussão de sanitizers/fuzzing, do valor do compilador, nem de Rust como meio-termo. (5) Quatro conceitos novos: um `draft` e três `stub`; duas entidades `stub`. (6) Contador `source_count` das páginas tocadas incrementado em 1.
+
+---
+
+## [2026-10-05] ingest | 3 Tipos de Acoplamento que Atrapalham o Teste Unitário (André Casciotti)
+
+**Fonte:** transcrição de vídeo colada pelo usuário, limpa em `raw/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti.md` (já em português; sem tradução; erros de fala corrigidos e listados no cabeçalho). Autor: [[wiki/entities/andre-casciotti]].
+
+**Skill:** tech-mentor-testing (SKILL.md + `references/test-patterns.md`, via grep; skill em `~/.claude-personal/skills/synced/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]], [[wiki/concepts/acoplamento-que-impede-teste-unitario]], [[wiki/concepts/teste-unitario-sem-io]], [[wiki/concepts/acoplamento-desejavel-vs-indesejavel]], [[wiki/concepts/heranca-vs-composicao]], [[wiki/concepts/metodo-estatico-e-testabilidade]]
+
+**Tocadas (11):** [[wiki/concepts/acoplamento]], [[wiki/concepts/dependency-injection]], [[wiki/concepts/hard-to-test-code]], [[wiki/concepts/test-doubles]], [[wiki/entities/andre-casciotti]], [[wiki/concepts/singleton-pattern]], [[wiki/concepts/ports-adapters]], [[wiki/concepts/separation-of-concerns]], [[wiki/concepts/composition-root]], [[wiki/concepts/alto-nivel-antes-do-fundamento]], [[wiki/concepts/unit-test-solitario-vs-sociavel]], [[wiki/concepts/testes-como-aprendizado]].
+
+**Notas:** (1) Sem contradição; complementa o estágio 2 de [[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] e o catálogo [[wiki/sources/hard-to-test-code-xunitpatterns]]. (2) "André Casac" e o nome do quadro foram grafados por reconhecimento automático; assumido André Casciotti (mesmo estilo/curso das fontes anteriores). (3) Estático puro não prejudica o teste — **inferência** minha, marcada. (4) Semântica de `static` em outras linguagens, não verificada. (5) Lacunas: acoplamento por processo, teste de integração do repositório, migração de legado. (6) Cinco conceitos novos, todos `draft`.
+
+---
+
+## [2026-10-05] ingest | RabbitMQ: como funciona, para que serve e quando usar (com simulador)
+
+**Fonte:** transcrição de vídeo colada pelo usuário, limpa em `raw/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador.md` (já em português; sem tradução; erros de reconhecimento corrigidos e listados no cabeçalho). Autor/canal não identificados.
+
+**Skill:** tech-mentor-backend (SKILL.md + `references/brokers-comparison.md`; skill em `~/.claude-personal/skills/synced/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]], [[wiki/concepts/modelo-mental-rabbitmq]], [[wiki/concepts/exchange-rabbitmq]], [[wiki/concepts/routing-key-e-binding-key]], [[wiki/concepts/ack-de-mensagem]], [[wiki/concepts/rabbitmq-vs-kafka]], [[wiki/concepts/quando-usar-mensageria]], [[wiki/concepts/monolito-distribuido]], [[wiki/entities/masstransit]]
+
+**Tocadas (16):** [[wiki/entities/rabbitmq]], [[wiki/sources/rabbitmq]], [[wiki/concepts/mensageria]], [[wiki/concepts/kafka]], [[wiki/concepts/fila]], [[wiki/concepts/pub-sub]], [[wiki/concepts/dlq]], [[wiki/concepts/comunicacao-assincrona]], [[wiki/concepts/comunicacao-sincrona]], [[wiki/concepts/acoplamento]], [[wiki/concepts/event-driven-architecture]], [[wiki/concepts/garantia-de-entrega]], [[wiki/concepts/processamento-assincrono]], [[wiki/concepts/saga-pattern]], [[wiki/concepts/monolito]], [[wiki/concepts/microsservicos]].
+
+**Notas:** (1) Sem contradição; só nuance: a nota [[wiki/sources/rabbitmq]] diz `#` = "múltiplos segmentos", o vídeo "zero ou mais" (a segunda é a semântica AMQP **[external, não verificado na web]**). (2) Lacunas: DLQ, retry, idempotência, publisher confirms, compensação de Saga. (3) Ack → reentrega → idempotência é **inferência minha**, marcada. (4) Nome do autor e do simulador desconhecidos; sem página de entidade. (5) Sete conceitos novos `draft`, uma entidade `stub`; `source_count` das tocadas +1.
