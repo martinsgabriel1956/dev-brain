@@ -3,8 +3,8 @@ type: concept
 title: "Datomic"
 aliases: ["datomic db", "immutable database"]
 date_created: 2026-05-31
-date_updated: 2026-09-15
-source_count: 4
+date_updated: 2026-10-06
+source_count: 5
 tags: [datomic, event-sourcing, imutabilidade, clojure, fintech, time-travel]
 skill: tech-mentor-backend
 status: draft
@@ -61,6 +61,8 @@ Datomic é citado em [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]] como ex
 
 ## Key Sources
 
+
+- [[wiki/sources/senioridade-nao-e-so-tecnica-especializacao-negocio-dados-confianca-em-crise]] — citado como exemplo de ferramenta de ponta usada em produção pelo Nubank em 2015/2016, com palestras da época
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]] — usado como exemplo didático de banco imutável ao explicar Event Sourcing

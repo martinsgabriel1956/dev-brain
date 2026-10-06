@@ -3,8 +3,8 @@ type: concept
 title: "Singleton Pattern"
 aliases: ["singleton"]
 date_created: 2026-05-05
-date_updated: 2026-10-05
-source_count: 7
+date_updated: 2026-10-06
+source_count: 8
 tags: [design-patterns, creational, singleton, gof]
 skill: tech-mentor-backend
 status: stable
@@ -71,3 +71,7 @@ Use quando a unicidade é **genuinamente necessária**, não para ter estado glo
 ## Key sources (adição 2026-10-05)
 
 - [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]] — Estado estático vive com a aplicação toda e acopla quem o consome, dificultando teste ([[wiki/concepts/metodo-estatico-e-testabilidade]]).
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — em JS o módulo se comporta como singleton: variável de topo (`port = 3000`) vira global do sistema; mutável por requisição é problema ([[wiki/concepts/estado-global-em-servidor]]); constante é OK ([[wiki/concepts/estado-global-inofensivo]]).

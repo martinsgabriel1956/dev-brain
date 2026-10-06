@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-10-01
-source_count: 12
+date_updated: 2026-10-06
+source_count: 13
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -62,3 +62,4 @@ Em [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-
 - [[wiki/sources/historia-do-captcha-do-teste-de-turing-ao-turnstile]] — comprou o [[wiki/concepts/recaptcha]] (2009), matou o CAPTCHA de texto com IA (99%, 2014), lançou "Não sou um robô" e o v3
 - [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — Gemini como modelo de exemplo nos metadados de versão
 - [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] — citação: Eric Brewer, descrito como VP de infraestrutura do Google
+- [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — modelos Gemini de chat e de embedding usados via [[wiki/entities/spring-ai]] no demo de RAG

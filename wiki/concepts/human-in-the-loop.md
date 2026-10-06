@@ -3,8 +3,8 @@ type: concept
 title: "Human-in-the-Loop (HITL)"
 aliases: ["HITL", "human in the loop", "aprovação humana agente"]
 date_created: 2026-06-02
-date_updated: 2026-09-22
-source_count: 9
+date_updated: 2026-10-06
+source_count: 10
 tags: [hitl, human-in-the-loop, agente, spec-driven, aprovacao, controle, checkpoint, erros-compostos]
 skill: tech-mentor-ai
 status: stable
@@ -67,6 +67,10 @@ O [[wiki/concepts/plan-mode|Plan Mode]] é uma forma leve de HITL: o humano revi
 
 [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] descreve uma variante de granularidade "por deploy" (ver tabela acima) onde o próprio checkpoint deixa de ser humano: em vez de o humano ler o diff antes do commit, o autor pede ao agente que audite a si mesmo contra uma lista explícita de critérios (best practices, comentários, consistência, segurança, dados sensíveis) antes de cada commit. Diferente do "Humano 'Sobe um Andar'" já registrado acima — ali o humano ainda define política que outro agente aplica — aqui não há segundo agente nem humano verificando o resultado do checklist; o mesmo agente que gerou o código também audita a própria geração.
 
+## Revisão Técnica + de Negócio em Discovery de Legado
+
+No [[wiki/entities/california-dmv]], a saída de ARC + watsonx passa por revisores técnicos (COBOL) e de negócio (legislação/processos), e a revisão realimenta o ciclo — ver [[wiki/concepts/descoberta-de-regras-de-negocio-legado]].
+
 ## Key Sources
 
 - [[wiki/sources/agentes-core]] — Um agente é um LLM em loop: decide, age via tools, observa resultado, itera. A diferença para um pipeline é a capacidade de roteamento dinâmico — o LLM escolhe o próximo passo. Complexidade...
@@ -78,3 +82,4 @@ O [[wiki/concepts/plan-mode|Plan Mode]] é uma forma leve de HITL: o humano revi
 - [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — HITL como nível 3 do dev loop; loop engineering automatiza a execução entre specs mas não a decisão de intenção/roadmap
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — checkpoints como uma das quatro formas de mitigar erros compostos num processo agêntico de múltiplas etapas
 - [[wiki/sources/oracle-demite-milhares-anatomia-agente-dba-autonomo]] — escape hatch por limiar de confiança auto-reportada, em agente de DBA disparado por trigger
+- [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]] — revisores técnicos e de negócio validam regras geradas por LLM

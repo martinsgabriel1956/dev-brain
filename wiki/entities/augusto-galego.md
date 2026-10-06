@@ -3,8 +3,8 @@ type: entity
 title: "Augusto Galego"
 aliases: ["Augusto Galego", "augustogalego.com"]
 date_created: 2026-07-20
-date_updated: 2026-08-28
-source_count: 13
+date_updated: 2026-10-06
+source_count: 14
 tags: [pessoa, programador, youtuber, brasil, devops, system-design, carreira, agentes-ia, code-review]
 skill: tech-mentor-infra
 status: stub
@@ -71,3 +71,7 @@ Continuando a linha de conteúdo introdutório de segurança iniciada com hash/s
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — autoria confirmada por autorreferência direta ao próprio nome na fala; reação a tweet sobre LeetCode/System Design como filtro de entrevista vs. diferencial real de trabalho
 - [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — autoria confirmada por autorreferência ("cupom galego"); introdução a hash/salt/pepper organizada por modelo de ameaça (online vs. offline), com escada de recomendação até identity providers e passwordless
 - [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] — autoria confirmada por "cupom Galego"; SQL Injection explicado do zero com sete camadas de defesa concêntricas, do banco (query parametrizada, prepared statement) à borda (WAF)
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — vídeo sobre estado global/stateless/side effects/reprodutibilidade; divulga o curso de System Design e um patrocinador de cadeira ergonômica.

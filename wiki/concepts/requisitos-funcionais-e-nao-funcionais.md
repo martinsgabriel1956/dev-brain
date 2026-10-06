@@ -3,8 +3,8 @@ type: concept
 title: "Requisitos Funcionais e Não Funcionais"
 aliases: ["requisitos funcionais", "requisitos não funcionais", "RNF", "functional requirements", "non-functional requirements", "levantamento de requisitos"]
 date_created: 2026-09-03
-date_updated: 2026-09-30
-source_count: 7
+date_updated: 2026-10-06
+source_count: 8
 tags: [system-design, requisitos, arquitetura, entrevistas, escopo]
 skill: tech-mentor-system-design
 status: stub
@@ -41,6 +41,10 @@ Um enunciado de entrevista é, por construção, um [[wiki/concepts/problema-de-
 
 [[wiki/entities/andre-casciotti]] a apresenta como habilidade básica que desenvolve comunicação, contexto, urgência e importância. Ver [[wiki/concepts/entender-contexto-da-demanda]].
 
+## Requisitos arquiteturais como critério de adoção de padrão
+
+[[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] decide a adoção da ACL pela criticidade de time to market, manutenibilidade, integrabilidade, adaptabilidade vs. performance, escalabilidade, elasticidade. Ver [[wiki/concepts/acl-requisitos-arquiteturais]].
+
 ## Key Sources
 
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — as três perguntas mínimas; pular esta etapa é a "mentira nº 1" (achar que o enunciado já define o problema)
@@ -50,3 +54,4 @@ Um enunciado de entrevista é, por construção, um [[wiki/concepts/problema-de-
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — análise de requisitos como base de conhecimento de negócio e de completar requisitos incompletos perguntando ([[wiki/concepts/desenrolar-demandas]])
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] — "caçar problemas" num sistema de estudo (modelo real + implementações como autenticação, filtro/índice, permissão) como prática autodirigida de levantamento de requisitos; ver [[wiki/concepts/aprender-com-foco-no-problema]]; SQL como DML mínimo (select/insert/update/delete) recomendado antes de DDL
 - [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]
+- [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] — Requisitos arquiteturais como critério de adoção de padrão

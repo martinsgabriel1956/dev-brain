@@ -3,8 +3,8 @@ type: concept
 title: "Requisição HTTP"
 aliases: ["http request", "anatomia da requisição", "http request response"]
 date_created: 2026-09-30
-date_updated: 2026-09-30
-source_count: 1
+date_updated: 2026-10-06
+source_count: 2
 tags: [http, api, protocolo, cliente-servidor]
 skill: tech-mentor-networking
 status: stub
@@ -35,3 +35,7 @@ rota → [[wiki/concepts/middleware]] → controller → service → banco → r
 
 ## Key sources
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — anatomia completa do clique até a resposta
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — HTTP stateless: cada requisição carrega a identificação do usuário; ver [[wiki/concepts/request-context]] e [[wiki/concepts/estado-global-em-servidor]].

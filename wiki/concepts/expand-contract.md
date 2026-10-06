@@ -3,8 +3,8 @@ type: concept
 title: "Expand-Contract"
 aliases: ["expand contract pattern", "parallel change", "migration em 3 fases"]
 date_created: 2026-04-22
-date_updated: 2026-09-02
-source_count: 3
+date_updated: 2026-10-06
+source_count: 4
 tags: [devops, deploy, database, migration, backward-compatibility, infra]
 skill: tech-mentor-infra
 status: stable
@@ -57,3 +57,4 @@ Qualquer migration que renomeia, remove ou muda tipo de coluna **deve** usar Exp
 - [[wiki/sources/blue-green-canary-rolling]]
 - [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]] — incidente de lock em produção ao alterar tabela grande
 - [[wiki/sources/database-branching-testes-neon-fernanda-kipper]] — técnica complementar (isolamento no espaço via banco por branch, não no tempo via fases)
+- [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — limite do demo: só `ADD COLUMN` simples; sem lock/duas versões do código, onde Expand-Contract entra

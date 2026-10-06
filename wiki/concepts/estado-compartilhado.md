@@ -3,8 +3,8 @@ type: concept
 title: "Estado Compartilhado"
 aliases: ["shared state", "estado global", "estado mutável", "estado"]
 date_created: 2026-04-25
-date_updated: 2026-04-25
-source_count: 1
+date_updated: 2026-10-06
+source_count: 2
 tags: [estado, estado-compartilhado, software-design, imutabilidade, debugging]
 skill: tech-mentor-backend
 status: stable
@@ -72,3 +72,7 @@ Estado compartilhado via `useState` que passa por props cria prop drilling e aco
 ## Key sources
 
 - [[wiki/sources/acoplamento-abstracao-estado]]
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — versão específica de servidor: [[wiki/concepts/estado-global-em-servidor]]; exceções aceitáveis em [[wiki/concepts/estado-global-inofensivo]]; reprodutibilidade em [[wiki/concepts/reprodutibilidade-de-bugs]].

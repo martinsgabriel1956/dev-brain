@@ -3,8 +3,8 @@ type: concept
 title: "Distributed Transactions"
 aliases: ["transações distribuídas", "transações em microsserviços"]
 date_created: 2026-04-22
-date_updated: 2026-10-01
-source_count: 4
+date_updated: 2026-10-06
+source_count: 5
 tags: [sistemas-distribuidos, consistencia, transacoes, microsservicos, idempotencia]
 skill: tech-mentor-system-design
 status: stub
@@ -38,9 +38,14 @@ Para a maioria dos casos em microsserviços: **Saga + Outbox**. Para consenso de
 
 Transação e [[wiki/concepts/idempotencia]] resolvem problemas diferentes e complementares, não intercambiáveis: a transação impede que uma operação fique **pela metade** (débito sem crédito correspondente); a idempotência impede que a operação **inteira** aconteça duas vezes por retry. Um pagamento pode estar perfeitamente atômico (ou aconteceu por completo, ou não aconteceu) e ainda assim ser cobrado duas vezes se nenhuma chave idempotente identificar que duas tentativas representam a mesma intenção. Produtos financeiros geralmente precisam das duas proteções no mesmo fluxo.
 
+## Transação forte do legado atravessando a ACL
+
+[[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]]: timeout, rollback nos microsserviços e propagação de contexto transacional (SOAP/SQL Server, não verificado). Ver [[wiki/concepts/acl-consistencia-transacional-legado-microsservico]].
+
 ## Key Sources
 
 - [[wiki/sources/saga-pattern]] — Saga é o padrão para transações distribuídas sem 2PC. Duas abordagens: Choreography (cada serviço reage a eventos, sem coordenador — simples mas difícil de debugar) e Orchestration (orchestrator...
 - [[wiki/sources/3pc]]
 - [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] — distinção explícita entre o que a transação resolve e o que a idempotência resolve
 - [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — CAP decide a falha; transações distribuídas tratam a volta ao consistente
+- [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] — Transação forte do legado atravessando a ACL

@@ -3,8 +3,8 @@ type: entity
 title: "Spring Boot"
 aliases: ["Spring", "Spring Framework"]
 date_created: 2026-08-24
-date_updated: 2026-08-24
-source_count: 1
+date_updated: 2026-10-06
+source_count: 3
 tags: [java, spring-boot, framework, backend]
 skill: tech-mentor-leadership
 status: stub
@@ -28,3 +28,5 @@ Convenção de nomenclatura de métodos de repositório que gera a query automat
 ## Key Sources
 
 - [[wiki/sources/como-ler-documentacao-de-uma-linguagem-de-programacao]]
+- [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — [[wiki/entities/spring-ai]] como projeto do ecossistema usado para RAG (Spring Boot 4, Java 25)
+- [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — Flyway integrado ao Spring Boot (Java 21, Spring Data JPA, Spring Web); scripts em `db/migration` rodam na subida

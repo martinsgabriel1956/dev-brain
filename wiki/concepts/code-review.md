@@ -3,8 +3,8 @@ type: concept
 title: "Code Review"
 aliases: ["revisão de código", "pull request review", "PR review"]
 date_created: 2026-07-03
-date_updated: 2026-10-05
-source_count: 22
+date_updated: 2026-10-06
+source_count: 23
 tags: [code-review, qualidade, carreira, júnior, mentoria, grill-me, babysitting-de-agentes, quality-gate, under-engineering]
 skill: tech-mentor-leadership
 status: draft
@@ -160,3 +160,4 @@ A tensão que explica a diferença: responsabilizar cada dev pelo que coloca em 
 - [[wiki/sources/potencial-programador-atitude-mindset]] — review como palco de [[wiki/concepts/ownership-proativo|ownership]] (ir atrás da própria aprovação) e o anti-padrão do revisor que sugere melhoria sem colocar a mão no código
 - [[wiki/sources/pull-requests-por-que-falham-alternativas-sem-pr]] — tempo de revisão não escala com tamanho do PR; tamanho ótimo ~100-300 linhas; cadência diária/2x-dia via inventário-é-custo; fast follow e draft PR
 - [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — revisão humana de código gerado por IA como controle; gradiente de auditabilidade C > assembly > opcode
+- [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — migrations são código versionado: scripts novos passam por PR em vez de edição direta do banco ([[wiki/concepts/imutabilidade-de-migration]])

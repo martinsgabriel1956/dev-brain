@@ -3,8 +3,8 @@ type: concept
 title: "Git"
 aliases: ["git", "git init", ".git", "controle de versão"]
 date_created: 2026-08-11
-date_updated: 2026-09-29
-source_count: 3
+date_updated: 2026-10-06
+source_count: 4
 tags: [git, controle-de-versao, cli, tech-mentor-leadership]
 skill: tech-mentor-infra
 status: stub
@@ -37,3 +37,4 @@ Segundo [[wiki/entities/andre-casciotti]] ([[wiki/sources/o-que-estudar-guia-par
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]]
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] — distinção Git (versionamento local) vs. GitHub (repositório descentralizado)
 - [[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] — commits atômicos e cherry-pick como motivo
+- [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — mesma disciplina de histórico imutável aplicada ao banco: scripts versionados junto do código, com [[wiki/concepts/flyway-schema-history]]

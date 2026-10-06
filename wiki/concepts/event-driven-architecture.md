@@ -3,8 +3,8 @@ type: concept
 title: "Event-Driven Architecture (EDA)"
 aliases: ["arquitetura orientada a eventos", "eda", "event driven"]
 date_created: 2026-07-30
-date_updated: 2026-10-05
-source_count: 8
+date_updated: 2026-10-06
+source_count: 9
 tags: [event-driven, mensageria, saga-pattern, cqrs, microsservicos, arquitetura]
 skill: tech-mentor-backend
 status: stub
@@ -52,3 +52,4 @@ Evento 'pedido criado' consumido por Pagamentos, que publica 'pagamento aprovado
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — comunicação assíncrona como pré-requisito conceitual de EDA/CQRS/Event Sourcing; exemplo de pedidos
 - [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — evento pós-escrita ('formulário cadastrado') processado por [[wiki/concepts/event-handler]] para popular o [[wiki/concepts/read-model]]
 - [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — encadeamento de eventos no RabbitMQ
+- [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — eventos de order/produto disparam indexação e recomendação em um [[wiki/concepts/microagente]]

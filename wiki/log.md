@@ -12696,3 +12696,87 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (16):** [[wiki/entities/rabbitmq]], [[wiki/sources/rabbitmq]], [[wiki/concepts/mensageria]], [[wiki/concepts/kafka]], [[wiki/concepts/fila]], [[wiki/concepts/pub-sub]], [[wiki/concepts/dlq]], [[wiki/concepts/comunicacao-assincrona]], [[wiki/concepts/comunicacao-sincrona]], [[wiki/concepts/acoplamento]], [[wiki/concepts/event-driven-architecture]], [[wiki/concepts/garantia-de-entrega]], [[wiki/concepts/processamento-assincrono]], [[wiki/concepts/saga-pattern]], [[wiki/concepts/monolito]], [[wiki/concepts/microsservicos]].
 
 **Notas:** (1) Sem contradição; só nuance: a nota [[wiki/sources/rabbitmq]] diz `#` = "múltiplos segmentos", o vídeo "zero ou mais" (a segunda é a semântica AMQP **[external, não verificado na web]**). (2) Lacunas: DLQ, retry, idempotência, publisher confirms, compensação de Saga. (3) Ack → reentrega → idempotência é **inferência minha**, marcada. (4) Nome do autor e do simulador desconhecidos; sem página de entidade. (5) Sete conceitos novos `draft`, uma entidade `stub`; `source_count` das tocadas +1.
+
+---
+
+## [2026-10-06] ingest | DMV da Califórnia: IA para descobrir as regras de negócio de 6 milhões de linhas de COBOL
+
+**Fonte:** transcrição de vídeo colada pelo usuário, limpa em `raw/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol.md` (já em português; sem tradução; erros de reconhecimento corrigidos e listados no cabeçalho). Autor/canal não identificados.
+
+**Skill:** tech-mentor-ai (SKILL.md + índice; referência `agentic-production-2026` sobre legado só tangencial; skill em `~/.claude-personal/skills/synced/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]], [[wiki/concepts/descoberta-de-regras-de-negocio-legado]], [[wiki/concepts/analise-estatica-como-ancora-de-llm]], [[wiki/concepts/conhecimento-perdido-em-legado]], [[wiki/concepts/ondas-de-migracao-por-risco-e-dependencia]], [[wiki/entities/california-dmv]], [[wiki/entities/ibm-arc]], [[wiki/entities/watsonx]]
+
+**Tocadas (11):** [[wiki/concepts/modernizacao-de-mainframe]], [[wiki/concepts/mainframe]], [[wiki/concepts/cobol]], [[wiki/concepts/mercado-de-trabalho-mainframe-cobol]], [[wiki/concepts/human-in-the-loop]], [[wiki/concepts/alucinacao-llm]], [[wiki/concepts/engenharia-reversa]], [[wiki/concepts/teoria-do-programa-naur]], [[wiki/concepts/strangler-fig-pattern]], [[wiki/concepts/ondas-de-modernizacao-tecnologica]], [[wiki/concepts/ia-como-amplificador]], [[wiki/entities/ibm]].
+
+**Notas:** (1) Sem contradição; nuance: [[wiki/concepts/modernizacao-de-mainframe]] registra tendência de integrar, o DMV substitui. (2) Números (5 anos manual, 15 meses, US$ 767M, nota vermelha, 2029) vêm só do autor, **[external, não verificado]**; ano do go-live truncado no áudio. (3) "Eliminou boa parte das alucinações" sem métrica. (4) Ligações com Naur, Strangler Fig e verificadores determinísticos são **inferência minha**, marcadas. (5) Quatro conceitos/três entidades novos, `draft`/`stub`; `source_count` das tocadas +1.
+
+---
+
+## [2026-10-06] ingest | Estado global: stateless, side effects e reprodutibilidade de bugs (Galego)
+
+**Fonte:** transcrição de vídeo colada pelo usuário, limpa em `raw/estado-global-stateless-side-effects-reprodutibilidade-galego.md` (já em português; sem tradução; erros de reconhecimento corrigidos e listados no cabeçalho). Autor inferido: [[wiki/entities/augusto-galego]].
+
+**Skill:** tech-mentor-backend (SKILL.md; sem referência específica sobre estado global, só menções a stateless/AsyncLocalStorage; skill em `~/.claude-personal/skills/synced/<uuid>/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]], [[wiki/concepts/estado-global-em-servidor]], [[wiki/concepts/dependencia-externa-oculta]], [[wiki/concepts/reprodutibilidade-de-bugs]], [[wiki/concepts/request-context]], [[wiki/concepts/estado-global-inofensivo]]
+
+**Tocadas (13):** [[wiki/concepts/stateless]], [[wiki/concepts/estado-compartilhado]], [[wiki/concepts/efeito-colateral]], [[wiki/concepts/efeitos-colaterais]], [[wiki/concepts/race-condition]], [[wiki/concepts/singleton-pattern]], [[wiki/concepts/cache]], [[wiki/concepts/dependency-injection]], [[wiki/concepts/programacao-funcional]], [[wiki/concepts/imutabilidade]], [[wiki/concepts/composition-root]], [[wiki/concepts/requisicao-http]], [[wiki/concepts/observabilidade]], [[wiki/entities/augusto-galego]].
+
+**Notas:** (1) Sem contradição; tensão leve com [[wiki/concepts/singleton-pattern]] (cache em processo único como uso legítimo) — conciliação é **inferência minha**, marcada. (2) Autoria inferida; "IA sem noção" e "pelo em ovo" são leituras prováveis do áudio. (3) Lacunas: request context na prática (AsyncLocalStorage), cache local vs. distribuído. (4) Cinco conceitos novos `draft`; `source_count` das tocadas +1. (5) Trecho de patrocínio (cadeira) e promoção do curso ignorados como conteúdo técnico.
+
+---
+
+## [2026-10-06] ingest | RAG com Spring AI: microagente de recomendação de passeios (Michele Brito)
+
+**Fonte:** transcrição de vídeo colada pelo usuário, limpa em `raw/rag-spring-ai-microagente-recomendacao-michele-brito.md` (já em português; sem tradução; erros de reconhecimento corrigidos e listados no cabeçalho). Autora: [[wiki/entities/michele-brito]].
+
+**Skill:** tech-mentor-ai (SKILL.md; referência `rag-advanced` lida para calibrar; skill em `~/.claude-personal/skills/synced/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]], [[wiki/concepts/rag-tres-etapas]], [[wiki/concepts/indexacao-vetorial]], [[wiki/concepts/vector-store]], [[wiki/concepts/recuperacao-com-filtro-de-metadados]], [[wiki/concepts/prompt-aumentado-rag]], [[wiki/concepts/microagente]], [[wiki/entities/spring-ai]], [[wiki/entities/pgvector]], [[wiki/entities/michele-brito]], [[wiki/entities/patrick-lewis]], [[wiki/entities/danqi-chen]]
+
+**Tocadas (15):** [[wiki/concepts/rag-arquitetura-avancada]], [[wiki/concepts/busca-semantica]], [[wiki/concepts/chunking]], [[wiki/concepts/top-k-retrieval]], [[wiki/concepts/alucinacao-llm]], [[wiki/concepts/postgresql]], [[wiki/concepts/agente-ia]], [[wiki/concepts/comunicacao-assincrona]], [[wiki/concepts/comunicacao-sincrona]], [[wiki/concepts/event-driven-architecture]], [[wiki/concepts/embedding-vectors]], [[wiki/concepts/prompt-engineering]], [[wiki/entities/spring-boot]], [[wiki/entities/neon-database]], [[wiki/entities/google]].
+
+**Notas:** (1) Sem contradição; tensão leve: "microagente" da fonte é um fluxo RAG fixo, enquanto [[wiki/concepts/agente-ia]] e [[wiki/sources/rag-introducao-pipeline-completo]] distinguem RAG de agente (leitura minha, marcada). (2) Histórico 2017/2020 (Chen, Lewis) e API do Spring AI **[external, não verificados]**. (3) Lacunas do vídeo: avaliação, threshold de similaridade, validação da saída (o "só recomendar do catálogo" depende só do prompt), falha/fallback do LLM, idempotência de eventos. (4) Seis conceitos e cinco entidades novos (`draft`/`stub`); `source_count` das tocadas +1. (5) Pedido de curtir/inscrever no canal ignorado.
+
+---
+
+## [2026-10-06] ingest | Senioridade não é só técnica: especialização, negócio, dados e confiança em crise
+
+**Fonte:** transcrição de vídeo colada pelo usuário, limpa em `raw/senioridade-nao-e-so-tecnica-especializacao-negocio-dados-confianca-em-crise.md` (já em português; sem tradução; erros de reconhecimento corrigidos e listados no cabeçalho). Autor não identificado.
+
+**Skill:** tech-mentor-leadership (SKILL.md; `references/career-progression.md` lida para calibrar; skill em `~/.claude-personal/skills/synced/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/senioridade-nao-e-so-tecnica-especializacao-negocio-dados-confianca-em-crise]], [[wiki/concepts/senioridade-por-especializacao]], [[wiki/concepts/especialista-de-dominio-de-negocio]], [[wiki/concepts/programacao-de-baixo-nivel-como-carreira]], [[wiki/concepts/cientista-vs-engenheiro-de-dados]], [[wiki/concepts/regulacao-e-liberdade-tecnologica]], [[wiki/concepts/confianca-do-time-em-crise]], [[wiki/entities/linus-torvalds]]
+
+**Tocadas (13):** [[wiki/concepts/dev-e-negocio]], [[wiki/concepts/visao-de-negocio-do-desenvolvedor]], [[wiki/concepts/trabalhar-para-produto-vs-consultoria]], [[wiki/concepts/engenheiro-vs-programador]], [[wiki/concepts/subniveis-de-senioridade]], [[wiki/concepts/confianca-profissional-dev]], [[wiki/entities/nubank]], [[wiki/entities/uncle-bob]], [[wiki/concepts/datomic]], [[wiki/concepts/compliance]], [[wiki/concepts/escolha-rapida-de-caminho-de-carreira]], [[wiki/concepts/incident-lifecycle]], [[wiki/concepts/entendimento-de-dominio]].
+
+**Notas:** (1) Sem contradição; tensão leve com [[wiki/concepts/engenheiro-vs-programador]] (baixo nível como prova de repertório vs. "não é o único caminho") — leitura minha: eixos complementares. (2) Afirmações de mercado e o status do Nubank como "não banco" são relato do autor, **[external, não verificado]**. (3) Lacunas: autor/vídeo anterior (Uncle Bob × Linus sobre IA) não identificados, "Joel" ambíguo, "Basileia"/"Datomic"/"Linus" são leituras prováveis do áudio. (4) Seis conceitos e uma entidade novos (`draft`/`stub`); `source_count` das tocadas +1. (5) Pedido de comentários ignorado.
+
+---
+
+## [2026-10-06] ingest | Migrations com Flyway e Spring Boot: versionamento do banco de dados
+
+**Fonte:** transcrição de vídeo colada pelo usuário, limpa em `raw/migrations-flyway-spring-boot-versionamento-de-banco.md` (já em português; sem tradução; erros de reconhecimento corrigidos e listados no cabeçalho). Autor não identificado.
+
+**Skill:** tech-mentor-backend (SKILL.md; `references/database-migrations.md` e `references/schema-evolution.md` lidas para calibrar; skill em `~/.claude-personal/skills/synced/…/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]], [[wiki/concepts/flyway-schema-history]], [[wiki/concepts/imutabilidade-de-migration]], [[wiki/concepts/convencao-de-nomes-flyway]], [[wiki/concepts/hibernate-ddl-auto-validate]], [[wiki/concepts/drift-de-schema-entre-ambientes]], [[wiki/entities/flyway]]
+
+**Tocadas (13):** [[wiki/concepts/database-migration]], [[wiki/concepts/schema-migration]], [[wiki/concepts/orm]], [[wiki/concepts/expand-contract]], [[wiki/concepts/postgresql]], [[wiki/entities/spring-boot]], [[wiki/concepts/ci-cd]], [[wiki/concepts/checklist-primeiro-dia-projeto]], [[wiki/concepts/drift-detection]], [[wiki/concepts/idempotencia]], [[wiki/concepts/code-review]], [[wiki/concepts/git]], [[wiki/concepts/database-branching]].
+
+**Notas:** (1) Sem contradição com [[wiki/concepts/database-migration]]; diferença de modelo: o vídeo não usa par up/down, e "reversíveis às vezes" fica sem explicação (leitura minha: desfazer = nova migration). (2) Pasta `db/migration` "criada" pelo Flyway é ambígua no áudio; "Spring Boot 4.1.1" é leitura provável. (3) Lacunas: lock em tabela grande, falha no meio da migration, conflito de versão entre branches, baseline de banco legado, migration em CI/CD; erro de checksum descrito, não demonstrado. (4) Cinco conceitos e uma entidade novos (`draft`/`stub`); `source_count` das tocadas +1; [[wiki/concepts/schema-migration]] continua stub. (5) Pedido de like/comentário e senha local do demo ignorados.
+
+---
+
+## [2026-10-06] ingest | Anti-Corruption Layer em Microsserviços: funcionamento, problemas e requisitos arquiteturais
+
+**Fonte:** transcrição de vídeo colada pelo usuário (parte 2 de [[wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado]]), limpa em `raw/anti-corruption-layer-microsservicos-requisitos-arquiteturais.md` (já em português; sem tradução; erros de ASR corrigidos e listados no cabeçalho). Autor não identificado.
+
+**Skill:** tech-mentor-backend (SKILL.md; `references/architecture/ddd-advanced.md` e `architecture-patterns-all.md` para calibrar; skill em `~/.claude-personal/skills/synced/…/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]], [[wiki/concepts/acl-requisitos-arquiteturais]], [[wiki/concepts/acl-consistencia-transacional-legado-microsservico]], [[wiki/concepts/acl-permanencia-como-debito-tecnico]], [[wiki/concepts/acl-nao-resolve-responsabilidade-dividida]], [[wiki/concepts/diferenca-semantica-entre-sistemas]], [[wiki/entities/chris-richardson]], [[wiki/entities/eric-evans]], [[wiki/questions/acl-facade-vs-adapter-criterio-por-lado-ou-por-chamadas]]
+
+**Tocadas (14):** [[wiki/concepts/anti-corruption-layer]], [[wiki/concepts/strangler-fig-pattern]], [[wiki/concepts/facade-pattern]], [[wiki/concepts/adapter-pattern]], [[wiki/concepts/saga-pattern]], [[wiki/concepts/distributed-transactions]], [[wiki/concepts/tech-debt]], [[wiki/concepts/observabilidade]], [[wiki/concepts/requisitos-funcionais-e-nao-funcionais]], [[wiki/concepts/bounded-context]], [[wiki/concepts/choreography]], [[wiki/concepts/orchestration]], [[wiki/concepts/mainframe]], [[wiki/concepts/microsservicos]].
+
+**Notas:** (1) Sem contradição direta, mas duas divergências com o skill (Facade/Adapter por lado vs. por função; ACL por consumidor vs. OHS + Published Language), registradas em [[wiki/questions/acl-facade-vs-adapter-criterio-por-lado-ou-por-chamadas]]. (2) Detalhes de SOAP/SQL Server e as referências (Microsoft, livro de Richardson) são relato do áudio, **[external, não verificado]**. (3) A matriz "atendido/parcial/inferido" é julgamento do autor; a leitura dos termos é minha. (4) Cinco conceitos, duas entidades e uma pergunta novos (`draft`/`stub`); `source_count` das tocadas +1.

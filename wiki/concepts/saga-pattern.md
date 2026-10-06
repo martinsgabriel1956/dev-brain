@@ -3,8 +3,8 @@ type: concept
 title: "Saga Pattern"
 aliases: ["saga", "saga distribuída", "compensating transactions"]
 date_created: 2026-04-22
-date_updated: 2026-10-05
-source_count: 11
+date_updated: 2026-10-06
+source_count: 12
 tags: [sistemas-distribuidos, consistencia, saga, microsservicos, compensação]
 skill: tech-mentor-system-design
 status: stub
@@ -55,6 +55,10 @@ Consistência eventual — não ACID. Compensações podem falhar também (saga 
 
 O vídeo enuncia o problema de desfazer o processo se algo falhar no meio, que a mensageria isolada não resolve; compensação é o papel da Saga ([[wiki/concepts/monolito-distribuido]]). [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]]
 
+## Saga do lado novo de uma ACL
+
+[[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]]: do lado dos microsserviços pode-se usar Saga, mas casar com transação forte do legado "dá voltas"; ver [[wiki/concepts/acl-consistencia-transacional-legado-microsservico]].
+
 ## Key Sources
 
 - [[wiki/sources/event-ordering-long-running]] — Event ordering: garantia de ordem só é possível dentro de uma partição (Kafka) ou para um correlation ID. Solução: particionar por entity ID (todos os eventos do pedido 123 vão para a mesma...
@@ -68,3 +72,4 @@ O vídeo enuncia o problema de desfazer o processo se algo falhar no meio, que a
 - [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — Saga citado como um dos principais motivadores práticos para aplicar Event Sourcing em microsserviços sem transação de banco garantida
 - [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — citado como o assunto que vem depois do CAP: reconciliar Pedido e Estoque após a partição ([[wiki/concepts/reconciliacao-pos-particao]])
 - [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — problema de desfazer fluxo enunciado, sem solução
+- [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] — Saga do lado novo de uma ACL

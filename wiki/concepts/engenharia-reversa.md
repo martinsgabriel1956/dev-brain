@@ -3,8 +3,8 @@ type: concept
 title: "Engenharia Reversa"
 aliases: ["reverse engineering", "disassembly", "decompilação"]
 date_created: 2026-08-27
-date_updated: 2026-10-05
-source_count: 4
+date_updated: 2026-10-06
+source_count: 5
 tags: [cs-fundamentals, lang-systems, seguranca, baixo-nivel, ia]
 skill: lang-systems
 status: stub
@@ -18,9 +18,14 @@ Processo de analisar um binário compilado — tipicamente partindo de **assembl
 
 [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] usa o mesmo termo num contexto diferente do binário/assembly acima: engenharia reversa do **comportamento de um agente de IA**, não de um programa compilado. Com poucas interações bem desenhadas (5-6, segundo a fonte), um atacante consegue reconstruir e extrair dados/regras de negócio que a empresa expôs ao agente, sem precisar de acesso a código-fonte nem a um binário — o "programa" sendo reconstruído é o comportamento do sistema de prompt/contexto por trás do agente. Ver [[wiki/concepts/ataque-de-destilacao-e-extracao-de-dados-llm]] para a distinção com ataques de destilação em escala.
 
+## Aplicada a Legado: Recuperar Regras de Negócio
+
+Variante em código-fonte: reconstruir o "porquê" de milhões de linhas COBOL — [[wiki/concepts/descoberta-de-regras-de-negocio-legado]].
+
 ## Key sources
 
 - [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] — engenharia reversa de comportamento de agente de IA para extração de dados corporativos expostos, com poucas interações
 - [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]]
 - [[wiki/sources/historia-do-captcha-do-teste-de-turing-ao-turnstile]] — pesquisadores reverteram o "Não sou um robô" (cookie + fingerprint) e quebraram-no; alvo típico de [[wiki/concepts/seguranca-por-obscuridade]]
 - [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — relato de inspeção de assembly de drivers e DLLs sem código-fonte; assembly legível por poucos, opcode por ninguém
+- [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]] — recuperação de regras de negócio de 6M de linhas COBOL

@@ -3,8 +3,8 @@ type: concept
 title: "Visão de Negócio do Desenvolvedor"
 aliases: ["lado sombrio da força", "dev entende de negócio", "business acumen para devs"]
 date_created: 2026-07-29
-date_updated: 2026-09-14
-source_count: 4
+date_updated: 2026-10-06
+source_count: 5
 tags: [carreira, negocio, comunicacao, priorizacao, precificacao]
 skill: tech-mentor-leadership
 status: draft
@@ -45,6 +45,8 @@ Não existe fórmula única por indústria, mas o ponto de entrada recomendado �
 
 ## Key Sources
 
+
+- [[wiki/sources/senioridade-nao-e-so-tecnica-especializacao-negocio-dados-confianca-em-crise]] — negócio como especialização que vira reconhecimento e remuneração, inclusive em áreas reguladas
 - [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] — "conhecimento técnico + negócio vira ouro"; contra-argumento à tese de que o profissional de negócio passa a mandar no desenvolvedor
 - [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — Hábito 7, único source até o momento
 - [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — demanda por software crescendo apesar da IA (não-devs vibe codam scripts); serviço virando produto via orquestração de agentes; framework de [[wiki/concepts/estagios-de-maturidade-de-produto]] e [[wiki/concepts/canais-de-distribuicao]]

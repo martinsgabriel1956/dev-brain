@@ -3,8 +3,8 @@ type: concept
 title: "Subníveis de Senioridade"
 aliases: ["subníveis júnior pleno sênior", "carreira é uma escada", "degrau por vez"]
 date_created: 2026-09-30
-date_updated: 2026-09-30
-source_count: 1
+date_updated: 2026-10-06
+source_count: 2
 tags: [carreira, senioridade, niveis, expectativas, mentoria]
 skill: tech-mentor-leadership
 status: draft
@@ -36,4 +36,6 @@ Divisão em subníveis não é validada por fonte externa; comparar com a rubric
 
 ## Key Sources
 
+
+- [[wiki/sources/senioridade-nao-e-so-tecnica-especializacao-negocio-dados-confianca-em-crise]] — senioridade também por especialização (baixo nível, negócio, dados), não só por nível
 - [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]

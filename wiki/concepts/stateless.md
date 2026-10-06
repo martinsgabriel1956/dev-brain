@@ -3,8 +3,8 @@ type: concept
 title: "Stateless"
 aliases: ["servidor stateless", "sem estado", "stateless server", "stateless architecture"]
 date_created: 2026-06-26
-date_updated: 2026-08-14
-source_count: 4
+date_updated: 2026-10-06
+source_count: 5
 tags: [system-design, stateless, escalabilidade, load-balancer, sessao]
 skill: tech-mentor-system-design
 status: draft
@@ -68,3 +68,7 @@ O mesmo trade-off aparece na dupla access token / refresh token: manter o access
 - [[wiki/sources/10-conceitos-fundamentais-backend]] — mesmo argumento com exemplo de sessão e job em andamento: "uma sessão que existia na máquina A não vai existir na máquina B"
 - [[wiki/sources/escalar-para-um-milhao-de-usuarios]] — se o login fica num servidor e o próximo request cai em outro, o usuário aparece deslogado; sessões e preferências vão para um NoSQL externo, que não pode viver dentro de nenhum servidor web
 - [[wiki/sources/refresh-token-pattern-access-token-de-curta-duracao]] — access token stateless vs. refresh token stateful como o mesmo trade-off aplicado à autenticação
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — estado global no servidor (cache in-process, variável de módulo, config mutável) torna o servidor stateful sem querer: uma requisição contamina a outra e a ordem das chamadas muda o resultado. Ver [[wiki/concepts/estado-global-em-servidor]].

@@ -3,8 +3,8 @@ type: concept
 title: "Alucinação de LLM"
 aliases: ["hallucination", "llm hallucination", "alucinacao", "llm mente"]
 date_created: 2026-07-30
-date_updated: 2026-09-21
-source_count: 5
+date_updated: 2026-10-06
+source_count: 7
 tags: [alucinacao, hallucination, ai-safety, rag, guardrails, llm-as-judge, faithfulness]
 skill: tech-mentor-ai
 status: draft
@@ -62,6 +62,10 @@ Esse fluxo é a aplicação concreta do modelo de guardrails de entrada/saída j
 
 [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] documenta uma versão informal da mitigação `/clear` + nova sessão já registrada em [[wiki/concepts/degradacao-de-contexto]]: em vez de disparar por contagem de tokens ou threshold técnico, o autor reinicia a conversa ao perceber subjetivamente que as respostas pioraram — encerra com uma frase de fechamento, fecha o terminal e começa do zero. Para recuperar contexto de conversas anteriores sem manter a sessão longa viva, pede ao agente para buscar a discussão relevante em conversas passadas em vez de simplesmente confiar na memória da sessão atual. É a mesma lógica técnica já documentada, aplicada por sinal qualitativo em vez de métrica.
 
+## Mitigação: Ancorar em Análise Estática
+
+Alimentar o LLM com fatos determinísticos do código reduziu alucinações no DMV ("boa parte", sem métrica), mas não dispensou revisão — [[wiki/concepts/analise-estatica-como-ancora-de-llm]].
+
 ## Key Sources
 
 - [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — reinício heurístico de sessão (sem threshold técnico) como mitigação prática de alucinação/degradação
@@ -69,3 +73,5 @@ Esse fluxo é a aplicação concreta do modelo de guardrails de entrada/saída j
 - [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] — "informações falsas" como o principal risco factual do estudo com IA; exige [[wiki/concepts/pensamento-critico]], sobretudo em conteúdo complexo
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — alucinação de pacotes/métodos/componentes em código corporativo explicada pelo treino em código público; [[wiki/concepts/skills-agente|skills]] propostas como mitigação (injetar padrões e esquemas internos)
 - [[wiki/sources/rag-introducao-pipeline-completo]] — conceito de "chunks elegíveis" com threshold de confiança: se nenhum chunk recuperado for elegível, o sistema deve recusar responder em vez de alucinar com contexto ruim
+- [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]] — análise estática como contexto restrito reduz alucinação
+- [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — RAG apresentado como forma de reduzir respostas genéricas/alucinadas; regras só no prompt, sem validação da saída (ver Open questions da fonte)

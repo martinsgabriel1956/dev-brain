@@ -3,8 +3,8 @@ type: concept
 title: "Composition Root"
 aliases: ["composition root", "composição grude", "raiz de composição", "main layer"]
 date_created: 2026-09-08
-date_updated: 2026-10-05
-source_count: 3
+date_updated: 2026-10-06
+source_count: 4
 tags: [design-patterns, dependency-injection, clean-architecture, factory-pattern, acoplamento]
 skill: tech-mentor-backend
 status: stub
@@ -38,3 +38,7 @@ O mesmo mecanismo que dá testabilidade e substituibilidade (trocar `PostgresUse
 ## Key sources (adição 2026-10-05)
 
 - [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]] — Onde as implementações concretas tiradas dos `new` passam a ser montadas ([[wiki/concepts/acoplamento-que-impede-teste-unitario]]).
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — ponto onde as dependências injetadas (provedor de pagamento, logger) são escolhidas; ver [[wiki/concepts/dependencia-externa-oculta]].

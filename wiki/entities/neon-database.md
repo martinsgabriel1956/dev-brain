@@ -3,8 +3,8 @@ type: entity
 title: "Neon (Database)"
 aliases: ["Neon", "Neon Database", "Neon Postgres"]
 date_created: 2026-09-02
-date_updated: 2026-09-02
-source_count: 1
+date_updated: 2026-10-06
+source_count: 2
 tags: [banco-de-dados, postgresql, serverless, cloud, database-branching]
 skill: tech-mentor-backend
 status: stub
@@ -29,3 +29,4 @@ Integração nativa: a cada deploy de preview de uma branch no GitHub, a Vercel 
 ## Key Sources
 
 - [[wiki/sources/database-branching-testes-neon-fernanda-kipper]]
+- [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — Postgres do Neon com [[wiki/entities/pgvector]] como base vetorial no demo de RAG; SQL Editor para inspecionar os documentos

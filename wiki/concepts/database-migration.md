@@ -3,8 +3,8 @@ type: concept
 title: "Database Migration"
 aliases: ["migration", "migrations", "migrate up", "migrate down", "migração de banco de dados"]
 date_created: 2026-07-28
-date_updated: 2026-09-02
-source_count: 3
+date_updated: 2026-10-06
+source_count: 4
 tags: [banco-de-dados, migrations, versionamento, orm, postgresql, git]
 skill: tech-mentor-backend
 status: draft
@@ -57,3 +57,4 @@ Quando várias branches de código aplicam migrations concorrentes num único ba
 - [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]]
 - [[wiki/sources/migrations-schema-evolution]] — aprofunda zero-downtime, expand-contract e locks de DDL especificamente
 - [[wiki/sources/database-branching-testes-neon-fernanda-kipper]] — onde testar migrations concorrentes sem colisão de schema entre branches
+- [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — Flyway + Spring Boot: scripts `V<n>__*.sql`, histórico em [[wiki/concepts/flyway-schema-history]], [[wiki/concepts/imutabilidade-de-migration]] (checksum) e Hibernate só validando; tese de que alterar o banco à mão gera [[wiki/concepts/drift-de-schema-entre-ambientes]]

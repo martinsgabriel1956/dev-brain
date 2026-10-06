@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-10-05
+date_updated: 2026-10-06
 ---
 
 
@@ -26,6 +26,10 @@ date_updated: 2026-10-05
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] | Migrations com [[wiki/entities/flyway]] + Spring Boot: scripts `V<n>__*.sql` versionados, histórico em [[wiki/concepts/flyway-schema-history]], migration aplicada não se edita (checksum) e Hibernate só valida; demo com tabela `cliente` + coluna `cpf` no PostgreSQL |
+| [[wiki/sources/senioridade-nao-e-so-tecnica-especializacao-negocio-dados-confianca-em-crise]] | Carreira além de júnior→sênior: 'sênior em quê?' — baixo nível (Linus), especialista de negócio, dados (cientista vs. engenheiro), regulação em bancos e confiança do time em crise |
+| [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] | [[wiki/entities/michele-brito|Michele Brito]]: RAG em três etapas ([[wiki/concepts/rag-tres-etapas]]) implementado com [[wiki/entities/spring-ai]] num [[wiki/concepts/microagente]] de recomendação de tours: [[wiki/concepts/indexacao-vetorial]] em [[wiki/entities/pgvector]], busca com [[wiki/concepts/recuperacao-com-filtro-de-metadados|filtro de metadados]], [[wiki/concepts/prompt-aumentado-rag]] e LLM via ChatClient. Demo com 21 tours; sem avaliação nem validação da saída |
+| [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] | [[wiki/entities/augusto-galego\|Augusto Galego]]: estado global (cache in-process, variável de módulo, config) quebra o [[wiki/concepts/stateless]] do HTTP — side effects, ordem de chamada importa, race e bugs irreproduzíveis ([[wiki/concepts/reprodutibilidade-de-bugs]]); remédios: estado local explícito, [[wiki/concepts/request-context]], [[wiki/concepts/dependency-injection]], config read-only; nem todo global é ruim |
 | [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]] | [[wiki/entities/andre-casciotti|André Casciotti]]: **três acoplamentos que impedem o teste unitário** ([[wiki/concepts/acoplamento-que-impede-teste-unitario]]) — `new` de infraestrutura ([[wiki/concepts/acoplamento-desejavel-vs-indesejavel]]), herança ([[wiki/concepts/heranca-vs-composicao]]) e estáticos ([[wiki/concepts/metodo-estatico-e-testabilidade]]); o teste sai pela rede e quebra ([[wiki/concepts/teste-unitario-sem-io]]); cura: interface + DI. Exemplos em C#/.NET; quarto tipo (processo) não explicado |
 | [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] | Código Fonte TV: cinco necessidades da loja virtual → cinco armazenamentos — relacional (transação, SQL), documento ([[wiki/concepts/dado-semiestruturado]]), chave-valor (sessão/cache), full-text e fila ([[wiki/concepts/persistencia-poliglota]]). Cache e índice são cópias ([[wiki/concepts/fonte-de-verdade-vs-copia-derivada]]); "sem esquema ≠ sem modelagem"; comece no relacional ([[wiki/concepts/comecar-simples-adicionar-peca-quando-doer]]). Faltam outbox/CDC |
 | [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] | Corte do quadro *Bora tomar café* ([[wiki/entities/fernanda-kipper]]) lendo artigo do Twitter: com IA escrevendo o código, o custo de runtime das linguagens de alto nível vira desperdício e [[wiki/concepts/linguagem-c]] "volta a ser o rei" ([[wiki/concepts/c-como-linguagem-alvo-de-codigo-gerado-por-ia]]). Apresentadora concorda no desempenho, contesta "IA não esquece" (janela de contexto) e sugere linguagem nova pensada para erros de IA. Tese de opinião, sem benchmark |
@@ -783,6 +787,7 @@ date_updated: 2026-10-05
 | [[wiki/sources/quorum]] | Quorum permite sistemas distribuídos balancear consistência e disponibilidade na replicação via parâmetros N (réplicas), W (write quorum) e R (read quorum). A regra R + W > N garante strong consistency. Sloppy Quorum com Hinted Handoff mantém alta disponibilidade mesmo com nós indisponíveis. |
 | [[wiki/sources/rabbitmq]] | RabbitMQ é um message broker AMQP com roteamento flexível via Exchanges (Direct, Fanout, Topic, Headers). Vence Kafka em: latência sub-milissegundo, roteamento complexo, task queues e RPC assíncrono. Perde em: replay, múltiplos consumer groups independentes e throughput (cap ~100k msg/s vs milhões no Kafka). Quorum Queues para HA. DLX (Dead Letter Exchange) para mensagens que falham ou expiram. |
 | [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] | Vídeo didático com simulador: loja síncrona vira [[wiki/concepts/monolito-distribuido]]; solução com [[wiki/entities/rabbitmq]] — producer → [[wiki/concepts/exchange-rabbitmq]] → fila → consumer (direct, fanout, topic, headers), [[wiki/concepts/ack-de-mensagem]], RabbitMQ (tarefa) vs Kafka (stream) e quando não usar |
+| [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]] | DMV da Califórnia: substituir 6M de linhas de COBOL exigiu antes [[wiki/concepts/descoberta-de-regras-de-negocio-legado]]; [[wiki/entities/ibm-arc]] (estática) → [[wiki/entities/watsonx]] (LLM) → revisão técnica e de negócio; 15 meses vs ~5 anos, mas projeto atrasado |
 | [[wiki/sources/raft-leader-election]] | Raft é o algoritmo de consenso mais legível e amplamente usado (etcd, CockroachDB, Consul, TiKV). Três papéis: Leader (único, escreve), Follower (replica), Candidate (em eleição). Eleição: timeout aleatório (150–300ms) evita split vote; precisa de quorum (N/2+1) para ganhar. Replicação de log: leader envia AppendEntries; só committa quando maioria confirma. Safety: nenhum nó com log incompleto ... |
 | [[wiki/sources/rag-retrieval]] | RAG injeta contexto relevante no prompt para reduzir alucinações e manter conhecimento atualizado. Pipeline: chunking → embedding → vector store → busca → prompt + LLM. Chunking é o gargalo de qualidade. Hybrid Search (vetorial + BM25) é o padrão de produção. Re-ranking melhora precisão pós-busca. RAGAS para avaliação. |
 | [[wiki/sources/rate-limiting]] | Rate Limiting protege APIs de abuso e sobrecarga. Quatro algoritmos: Fixed Window (simples, boundary burst), Token Bucket (bursts controlados), Sliding Window Log (exato, memória O(N)), Sliding Window Counter (~90% precisão, O(1) memória). Escolha padrão: Sliding Window Counter para APIs. Implementação em Redis com Lua script para atomicidade. Hierarquia de limites: global → por IP → por usuári... |
@@ -833,8 +838,71 @@ date_updated: 2026-10-05
 | [[wiki/sources/zero-downtime-deploy]] | Deploy sem downtime exige duas coisas: estratégia de tráfego (Rolling/Blue-Green/Canary) + migrations backward compatible via Expand-Contract. Regra fundamental: nunca migre schema e código no mesmo deploy. |
 | [[wiki/sources/zero-trust]] | Zero Trust: "nunca confie, sempre verifique" — nenhum acesso é implicitamente confiável só por estar na rede interna. 7 pilares CISA: Identity, Device, Network, Workload, Data, Automation, Visibility. Acesso condicional: decisão por cada request baseada em identidade + postura do dispositivo + contexto. mTLS com SPIFFE/SPIRE para service-to-service. |
 | [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]], abertura da série: **[[wiki/concepts/arquitetura-distribuida|arquitetura distribuída]]** (serviços tecnicamente independentes pela rede vs. [[wiki/concepts/monolito|monolito]]); exemplo hipotético de streaming; histórico (Arpanet → cliente-servidor → web em escala → [[wiki/concepts/soa-service-oriented-architecture|SOA]] → microsserviços/nuvem); 4 motivos ([[wiki/concepts/escalabilidade-independente|escala independente]], resiliência, stack, equipes) e 6 desafios (operação, observabilidade, comunicação, consistência, custo, capacitação); alerta contra adoção por hype; [[wiki/concepts/desenhar-distribuido-implementar-monolito|desenhar distribuído, implementar monolito]] |
+| [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] | Parte 2 do vídeo do ACL (autor não identificado): ACL na migração legado→microsserviços; Facade no lado legado, Adapters no lado novo; custos (escala, latência, observabilidade, transação, débito técnico); matriz de requisitos arquiteturais; quando não usar (semântica distinta) |
 
 ## Concepts
+
+### Migrations com Flyway (2026-10-06)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/flyway-schema-history]] | Tabela que registra versões aplicadas + checksum; reiniciar não reaplica |
+| [[wiki/concepts/imutabilidade-de-migration]] | Migration aplicada não se edita (erro de checksum); correção = script novo |
+| [[wiki/concepts/convencao-de-nomes-flyway]] | `V<n>__descricao.sql` em `db/migration`; prefixo obrigatório |
+| [[wiki/concepts/hibernate-ddl-auto-validate]] | Hibernate só valida o schema; migrations o evoluem |
+| [[wiki/concepts/drift-de-schema-entre-ambientes]] | Coluna criada à mão no local quebra produção e o colega |
+| [[wiki/concepts/acl-requisitos-arquiteturais]] | Matriz de requisitos que a ACL ajuda (time to market, manutenibilidade, integrabilidade, adaptabilidade) ou degrada (performance, escalabilidade, elasticidade) |
+| [[wiki/concepts/acl-consistencia-transacional-legado-microsservico]] | Transação forte do legado atravessando a ACL: timeout, rollback, propagação de contexto, Saga vs. ACL dentro do legado |
+| [[wiki/concepts/acl-permanencia-como-debito-tecnico]] | ACL de migração que sobrevive ao legado e vira débito técnico |
+| [[wiki/concepts/acl-nao-resolve-responsabilidade-dividida]] | ACL não conserta responsabilidade partida; migrar a entidade inteira |
+| [[wiki/concepts/diferenca-semantica-entre-sistemas]] | Quando não usar ACL: semântica muito distinta (LOB vs. jornadas); exceção com versão intermediária |
+
+### Carreira — Sênior em Quê? Especialização e Confiança (2026-10-06)
+
+| Página | Hook |
+|---|---|
+| [[wiki/sources/senioridade-nao-e-so-tecnica-especializacao-negocio-dados-confianca-em-crise]] | Fonte: caminhos de carreira (baixo nível, negócio, dados), regulação e confiança em crise |
+| [[wiki/concepts/senioridade-por-especializacao]] | Sênior não é só nível: é sênior *em quê* (baixo nível, negócio, dados, liderança) |
+| [[wiki/concepts/especialista-de-dominio-de-negocio]] | Dev que domina uma área (financeiro, portuário, saúde) é valorizado e retido; régua de carreira em banco |
+| [[wiki/concepts/programacao-de-baixo-nivel-como-carreira]] | Perto do processador/SO: recurso escasso, drivers; um eixo, não sinônimo de sênior |
+| [[wiki/concepts/cientista-vs-engenheiro-de-dados]] | Estatística + negócio vs. acesso rápido, alta disponibilidade e custo |
+| [[wiki/concepts/regulacao-e-liberdade-tecnologica]] | Virar banco / grandes bancos: mais regra, menos liberdade de ferramentas |
+| [[wiki/concepts/confianca-do-time-em-crise]] | Em crise: ser parceiro, não crítico; restabelecer sistema e confiança com lições aprendidas |
+| [[wiki/entities/linus-torvalds]] | Stub: exemplo de carreira perto do SO, em contraste com Uncle Bob |
+
+### RAG em Microsserviços com Spring AI (2026-10-06)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/rag-tres-etapas]] | Recuperar → aumentar → gerar; origem Chen 2017 / Lewis 2020 |
+| [[wiki/concepts/indexacao-vetorial]] | Fase offline: chunking, texto em linguagem natural, embedding, gravação com metadados |
+| [[wiki/concepts/vector-store]] | Base de embeddings (id, content, metadata, embedding): pgvector, Pinecone |
+| [[wiki/concepts/recuperacao-com-filtro-de-metadados]] | Busca por similaridade com query + topK + filtro (catálogo vs. histórico) |
+| [[wiki/concepts/prompt-aumentado-rag]] | Entrada + contexto recuperado + regras/políticas no prompt |
+| [[wiki/concepts/microagente]] | Microsserviço com RAG + LLM acionado por HTTP ou evento; tensão com "agente de IA" |
+
+### Estado Global, Stateless e Side Effects (2026-10-06)
+
+| Página | Hook |
+|---|---|
+| [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] | Galego: estado global quebra o stateless, gera side effects, race e bugs irreproduzíveis; remédios |
+| [[wiki/concepts/estado-global-em-servidor]] | Cache in-process, variável de módulo, config mutável: contaminação entre requests |
+| [[wiki/concepts/dependencia-externa-oculta]] | Função cujo resultado depende do que não está nos parâmetros |
+| [[wiki/concepts/reprodutibilidade-de-bugs]] | Por que o bug de produção não reproduz localmente |
+| [[wiki/concepts/request-context]] | Contexto por requisição passado adiante |
+| [[wiki/concepts/estado-global-inofensivo]] | Constantes e config read-only: global aceitável |
+
+### Modernização de Legado — DMV da Califórnia (2026-10-06)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/descoberta-de-regras-de-negocio-legado]] | Extrair regras do código antes de reescrever; IA + revisão humana |
+| [[wiki/concepts/analise-estatica-como-ancora-de-llm]] | Fatos determinísticos restringem o LLM e reduzem alucinação |
+| [[wiki/concepts/conhecimento-perdido-em-legado]] | Aposentadorias levam o saber; o código vira a única documentação |
+| [[wiki/concepts/ondas-de-migracao-por-risco-e-dependencia]] | Ordem de migração por dependência e risco |
+| [[wiki/entities/california-dmv]] | DMV: DXP 2021–2029, US$ 767M, 6M de linhas COBOL |
+| [[wiki/entities/ibm-arc]] | Ferramenta IBM de análise estática de COBOL/Assembly |
+| [[wiki/entities/watsonx]] | LLM da IBM que escreveu as regras em linguagem humana |
 
 ### Testabilidade e Acoplamento — Teste Unitário (2026-10-05)
 
@@ -2745,6 +2813,24 @@ date_updated: 2026-10-05
 
 ## Entities
 
+### Migrations com Flyway (2026-10-06)
+
+| Página | Descrição |
+|---|---|
+| [[wiki/entities/flyway]] | Ferramenta de migrations (JVM/Spring Boot); SQL versionado com histórico e checksum |
+| [[wiki/entities/chris-richardson]] | Autor de microservices.io e livro sobre padrões de microsserviços; referência do ACL em migração |
+| [[wiki/entities/eric-evans]] | Criador do DDD; origem da Anti-Corruption Layer |
+
+### RAG com Spring AI (2026-10-06)
+
+| Página | Descrição |
+|---|---|
+| [[wiki/entities/spring-ai]] | Projeto Spring para IA: VectorStore, Document, ChatClient, modelos de embedding |
+| [[wiki/entities/pgvector]] | Extensão do PostgreSQL para busca vetorial |
+| [[wiki/entities/michele-brito]] | Criadora de conteúdo (microservices, IA, Java, Spring) |
+| [[wiki/entities/patrick-lewis]] | Autor citado do artigo de 2020 que cunhou "RAG" |
+| [[wiki/entities/danqi-chen]] | Autora citada do artigo de 2017 (precursor do recuperar-então-gerar) |
+
 ### Teorema CAP (2026-10-01)
 
 | Página | Hook |
@@ -3129,3 +3215,4 @@ date_updated: 2026-10-05
 | [[wiki/questions/disponibilidade-cap-resposta-de-erro-vs-resposta-sem-erro]] | Vídeo diz que erro 404 conta como resposta disponível; definição formal exige resposta sem erro — pendente verificar Gilbert & Lynch |
 | [[wiki/questions/facade-fere-srp-video-comparison]] | Renato Augusto defende que Facade não fere SRP (motivo único de mudança); Código Fonte TV discorda (orquestração pura já é responsabilidade demais) — sem resolução, ambas são opinião de autor sem citação de fonte primária |
 | [[wiki/questions/local-first-definicoes-conflitantes]] | Duas fontes usam "local-first" para conceitos incompatíveis: dado efêmero validado por HMAC (servidor continua autoridade) vs. definição canônica de réplica primária com posse do usuário — resolvido por revisão do conceito, não por fusão |
+| [[wiki/questions/acl-facade-vs-adapter-criterio-por-lado-ou-por-chamadas]] | Facade/Adapter por lado da camada (vídeo) vs. por nº de chamadas (skill); ACL por consumidor vs. OHS + Published Language |

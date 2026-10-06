@@ -3,8 +3,8 @@ type: concept
 title: "Engenheiro vs. Programador"
 aliases: ["programador vs engenheiro", "mentalidade de engenharia", "software engineer vs coder"]
 date_created: 2026-07-03
-date_updated: 2026-09-18
-source_count: 11
+date_updated: 2026-10-06
+source_count: 12
 tags: [carreira, mentalidade, arquitetura, senioridade]
 skill: tech-mentor-leadership
 status: draft
@@ -84,6 +84,8 @@ Não é acumular ferramentas (ver [[wiki/concepts/apego-a-ferramentas]]), mas de
 
 ## Key Sources
 
+
+- [[wiki/sources/senioridade-nao-e-so-tecnica-especializacao-negocio-dados-confianca-em-crise]] — contraponto: baixo nível não é o único caminho de senioridade; 'sênior em quê?' ([[wiki/concepts/senioridade-por-especializacao]])
 - [[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] — a distinção traduzida em plano de estudo concreto (arquitetura, DDIA, observabilidade), não só em descrição de mentalidade
 - [[wiki/sources/pipeline-agentes-ia-pentest-idor-critica-nao-substitui]] — aplicação da dicotomia a pentest: pipeline de agentes acha o que humanos não acham, mas quem desenha/audita a esteira é quem sustenta valor
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — concordância parcial com "programar é fácil, decidir é difícil"; devs absorvendo trabalho de produto/gestão por layoff em cargos de PM/EM

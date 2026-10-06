@@ -3,8 +3,8 @@ type: concept
 title: "Adapter Pattern"
 aliases: ["padrão adapter", "design pattern adapter", "adaptador"]
 date_created: 2026-05-01
-date_updated: 2026-09-21
-source_count: 10
+date_updated: 2026-10-06
+source_count: 11
 tags: [design-patterns, structural, adapter, oop, integracao]
 skill: tech-mentor-backend
 status: stable
@@ -81,6 +81,10 @@ Quando o Adapter é usado especificamente para proteger o modelo de domínio de 
 
 As interfaces `Input Boundary`, `Output Boundary` e `Data Access` descritas em [[wiki/concepts/clean-architecture]] são o mesmo mecanismo estrutural do Adapter — uma interface própria do domínio que isola o código de alto nível de uma dependência concreta — aplicado nas fronteiras entre Controller/Use Case, Use Case/Presenter e Use Case/persistência. Ver [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]], que chama essas interfaces de "protocolo".
 
+## Adapters no lado dos microsserviços da ACL
+
+[[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]]: Adapters absorvem versão intermediária vs. definitiva, parametrização, 1..N serviços e coreografia/orquestração, sem tocar o legado. Ver [[wiki/questions/acl-facade-vs-adapter-criterio-por-lado-ou-por-chamadas]].
+
 ## Key Sources
 
 - [[wiki/sources/design-pattern-proxy]]
@@ -93,3 +97,4 @@ As interfaces `Input Boundary`, `Output Boundary` e `Data Access` descritas em [
 - [[wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado]] — Adapter como mecanismo estrutural do Anti-Corruption Layer, isolando dependência forte entre sistema novo e legado
 - [[wiki/sources/test-fixture-fit-xunitpatterns]] — verbete de glossário do xUnitPatterns.com: no framework Fit, "fixture" é o nome dado ao Adapter que interpreta uma tabela de dados e invoca o SUT, implementando um Data-Driven Test
 - [[wiki/sources/adapter-xunitpatterns]] — verbete de External Patterns do xUnitPatterns.com: citação direta da definição canônica do Adapter do GOF, fonte primária isolada em inglês que fecha a lacuna deixada pela aplicação ao Fit
+- [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] — Adapters no lado dos microsserviços da ACL

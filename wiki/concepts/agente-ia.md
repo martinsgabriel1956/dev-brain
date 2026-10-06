@@ -3,8 +3,8 @@ type: concept
 title: "Agente de IA"
 aliases: ["agente", "AI agent", "agentes de ia"]
 date_created: 2026-05-18
-date_updated: 2026-09-30
-source_count: 8
+date_updated: 2026-10-06
+source_count: 9
 tags: [agentes-ia, llm, llmops, automacao]
 skill: tech-mentor-ai
 status: draft
@@ -87,3 +87,4 @@ Na demo de [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-me
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — quatro arquiteturas de orquestração multiagente (paralela, sequencial, customizada, autônoma) e a tese de que o dev vai atuar cada vez mais como arquiteto para pilotar IA
 - [[wiki/sources/rag-introducao-pipeline-completo]] — distinção explícita entre RAG e agente de IA: chamar um modelo com contexto injetado é uma consulta de API, não um agente
 - [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — agente montado a partir da versão ativa do prompt
+- [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — o 'microagente' da fonte é um fluxo RAG fixo, sem laço de decisão: ver [[wiki/concepts/microagente]] (tensão com a distinção RAG vs. agente)

@@ -3,8 +3,8 @@ type: concept
 title: "Bounded Context"
 aliases: ["bounded context", "contexto delimitado"]
 date_created: 2026-08-18
-date_updated: 2026-10-01
-source_count: 6
+date_updated: 2026-10-06
+source_count: 7
 tags: [ddd, arquitetura, cqrs, microsservicos]
 skill: tech-mentor-backend
 status: stub
@@ -38,6 +38,10 @@ Fowler é explícito: aplicar CQRS como estilo arquitetural geral para um sistem
 
 **Distinções:** ≠ [[wiki/concepts/subdominio]] (divisão do *negócio*; um subdomínio pode ter 1+ contextos) e ≠ [[wiki/concepts/ubiquitous-language]] (o contexto define onde a linguagem vale; analogia país/dialeto). **Como identificar:** conflito de vocabulário entre times em refinamento/discovery. **Integração entre contextos:** [[wiki/concepts/shared-kernel]], [[wiki/concepts/customer-supplier]], [[wiki/concepts/conformist]], [[wiki/concepts/anti-corruption-layer]] — ver [[wiki/concepts/context-map]].
 
+## Isolamento de responsabilidade na migração
+
+[[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]]: isolar subsistemas com responsabilidades claras é "quase como pensar em Bounded Contexts"; ver [[wiki/concepts/acl-nao-resolve-responsabilidade-dividida]].
+
 ## Key Sources
 
 - [[wiki/sources/monolith-first-martin-fowler]] — fonte primária: dificuldade de acertar bounded contexts no início como segundo argumento contra começar com microsserviços
@@ -46,3 +50,4 @@ Fowler é explícito: aplicar CQRS como estilo arquitetural geral para um sistem
 - [[wiki/sources/cqrs-martin-fowler]]
 - [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — fonte primária do bounded context como limite linguístico; duas classes "Produto" (Vendas/Suporte); ≠ subdomínio, ≠ linguagem ubíqua
 - [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] — duas representações de Usuário por slice como a mesma lógica de fronteira semântica, em granularidade mais fina; ver [[wiki/concepts/dominio-centralizado-vs-modelo-por-slice]]
+- [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] — Isolamento de responsabilidade na migração

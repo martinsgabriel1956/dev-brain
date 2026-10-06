@@ -3,8 +3,8 @@ type: concept
 title: "Compliance"
 aliases: ["conformidade", "regulatory compliance", "compliance técnico"]
 date_created: 2026-05-05
-date_updated: 2026-09-01
-source_count: 7
+date_updated: 2026-10-06
+source_count: 8
 tags: [compliance, lgpd, gdpr, pci-dss, soc2, hipaa, iso-27001, security, audit]
 skill: tech-mentor-security
 status: stable
@@ -62,6 +62,8 @@ Ver [[wiki/concepts/iso-27001]] para a estrutura completa da norma. Resumo: fram
 
 ## Key Sources
 
+
+- [[wiki/sources/senioridade-nao-e-so-tecnica-especializacao-negocio-dados-confianca-em-crise]] — regulação (ex.: Basileia) como especialização de carreira e restrição de ferramentas em bancos ([[wiki/concepts/regulacao-e-liberdade-tecnologica]])
 - [[wiki/sources/compliance]] — visão geral: frameworks, security vs compliance, cenários de engenharia
 - [[wiki/sources/compliance-soc2-pci]] — SOC 2 Type I vs II, PCI-DSS tokenização, audit logging como evidência universal
 - [[wiki/sources/lgpd-gdpr]] — data mapping, lawful basis, 72h breach notification

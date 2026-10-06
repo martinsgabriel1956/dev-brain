@@ -3,8 +3,8 @@ type: concept
 title: "Escolha Rápida de Caminho de Carreira"
 aliases: ["escolher caminho rápido", "definir stack de carreira logo no início", "não abraçar o mundo"]
 date_created: 2026-09-28
-date_updated: 2026-09-30
-source_count: 3
+date_updated: 2026-10-06
+source_count: 4
 tags: [carreira, iniciante, decisao, stack, foco]
 skill: tech-mentor-leadership
 status: stub
@@ -47,6 +47,8 @@ No contexto de promoção, o autor pede um plano de carreira de **dois passos**,
 
 ## Key Sources
 
+
+- [[wiki/sources/senioridade-nao-e-so-tecnica-especializacao-negocio-dados-confianca-em-crise]] — caminhos de especialização (baixo nível, negócio, dados, liderança) — 'sênior em quê?'
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]]
 - [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] — foco como pré-requisito para "fechar o leque"; liga com [[wiki/concepts/estudar-por-demanda]]
 - [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]

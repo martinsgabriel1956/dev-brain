@@ -3,8 +3,8 @@ type: concept
 title: "Strangler Fig Pattern"
 aliases: ["strangler pattern", "figueira mata-pau", "migração incremental"]
 date_created: 2026-08-03
-date_updated: 2026-10-01
-source_count: 7
+date_updated: 2026-10-06
+source_count: 9
 tags: [strangler-fig, migração, legado, proxy, cdc, feature-flags, arquitetura]
 skill: tech-mentor-system-design
 status: stub
@@ -55,6 +55,14 @@ O caso mais extremo de "legado que não se reescreve" é justamente sistemas [[w
 
 [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] cita a [[wiki/concepts/anti-corruption-layer]] como camada de tradução "bastante utilizada quando estamos modernizando sistema legado" — o mesmo uso que faz par com o Strangler Fig durante a coexistência novo/legado (relação sugerida; o vídeo não cita o Strangler Fig).
 
+## Ordem das Ondas por Risco
+
+[[wiki/concepts/ondas-de-migracao-por-risco-e-dependencia]]: dependências e risco definem a sequência (caso DMV). Relação com o padrão é inferência minha.
+
+## ACL na coexistência: custos e saída
+
+Segundo [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]], a ACL da fase Coexist custa escala, latência e observabilidade e tende a virar [[wiki/concepts/acl-permanencia-como-debito-tecnico|débito técnico]] se não for removida na fase Eliminate; entidades devem migrar inteiras ([[wiki/concepts/acl-nao-resolve-responsabilidade-dividida]]); semântica muito distinta pede versão intermediária ([[wiki/concepts/diferenca-semantica-entre-sistemas]]).
+
 ## Key Sources
 
 - [[wiki/sources/arquitetura-de-sacrificio]] — o "introduzir microsserviços depois para desmontar o monolito gradualmente" de Fowler é, na prática, este padrão
@@ -64,3 +72,5 @@ O caso mais extremo de "legado que não se reescreve" é justamente sistemas [[w
 - [[wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado]] — o componente de tradução (ACL) que evita dependência forte entre sistema novo e legado durante a coexistência
 - [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — ACL em modernização de legado
 - [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] — slice isolada e testada antes de ser recriada como serviço externo (auth); ver [[wiki/concepts/extracao-de-slice-para-servico]]
+- [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]] — ondas de migração ordenadas por risco e dependência
+- [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] — ACL na coexistência: custos e saída

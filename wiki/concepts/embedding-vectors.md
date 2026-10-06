@@ -3,8 +3,8 @@ type: concept
 title: "Embedding Vectors"
 aliases: ["embeddings de token", "word embeddings", "token embeddings", "matriz de embeddings"]
 date_created: 2026-09-18
-date_updated: 2026-09-29
-source_count: 2
+date_updated: 2026-10-06
+source_count: 3
 tags: [embeddings, llm-fundamentals, tokenizacao, transformers, self-attention]
 skill: tech-mentor-ai
 status: stable
@@ -42,3 +42,4 @@ Um embedding vector representa a média de **todos** os usos do token no corpus 
 
 - [[wiki/sources/self-attention-mecanismo-transformers]] — explicação didática de como a matriz de embeddings é treinada e por que sozinha não resolve ambiguidade contextual; cita demonstrações do Hugging Face e do TensorFlow Embedding Projector
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — no uso em RAG, chunk e pergunta viram embeddings e são comparados por [[wiki/concepts/similaridade-de-cosseno]] ([[wiki/concepts/busca-semantica]])
+- [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — uso de embeddings de documento/consulta (modelos OpenAI/Gemini) para busca por similaridade num [[wiki/concepts/vector-store]]; distinto do embedding de token desta página

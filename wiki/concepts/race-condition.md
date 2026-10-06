@@ -3,8 +3,8 @@ type: concept
 title: "Race Condition"
 aliases: ["condição de corrida", "race condition fetch React", "request fora de ordem"]
 date_created: 2026-04-22
-date_updated: 2026-08-25
-source_count: 3
+date_updated: 2026-10-06
+source_count: 4
 tags: [react, bug, fetch, async, useEffect, race-condition]
 skill: tech-mentor-frontend
 status: stable
@@ -103,3 +103,7 @@ A race condition acima é específica de frontend (ordem de respostas de rede so
 - [[wiki/sources/useeffect-problemas-e-solucoes]]
 - [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]]
 - [[wiki/sources/race-condition-locking-pessimista-otimista-reservations-tier-s]] — variante backend com locking pessimista, OCC e reservations
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — outra origem, no backend: dois requests em paralelo alterando o mesmo [[wiki/concepts/estado-global-em-servidor]] (o artigo acima trata de race no front, com fetch fora de ordem).

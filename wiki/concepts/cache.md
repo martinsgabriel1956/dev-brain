@@ -3,8 +3,8 @@ type: concept
 title: "Cache"
 aliases: ["caching", "cache de aplicação"]
 date_created: 2026-06-26
-date_updated: 2026-10-05
-source_count: 19
+date_updated: 2026-10-06
+source_count: 20
 tags: [cache, performance, redis, arquitetura, backend, grande-rollback, buffer]
 skill: tech-mentor-backend
 status: stable
@@ -114,3 +114,7 @@ Aviso: cache é cópia temporária reconstruível; tratá-lo como única fonte d
 - [[wiki/sources/agent-waves-custo-modelos-fortes-fracos-kimi]] — preços reais de cache hit vs. miss da Moonshot AI (Kimi K3 e K2.7 Code), diferença de até 10× no custo de input tokens
 - [[wiki/sources/node-single-thread-ssr-bloqueio-event-loop]] — cache de renderização (e ISR do Next.js) como mitigação para SSR CPU-bound recomputado a cada requisição, reduzindo tanto latência quanto risco de travar o event loop sob carga concorrente
 - [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — Instagram simplificado: cache de foto de perfil (Redis, TTL 5 min, atualizado no upload) para não bater no banco
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — cache in-memory dentro do servidor (`Map`, Redis local) é estado global e quebra [[wiki/concepts/stateless]]. Ver [[wiki/concepts/estado-global-em-servidor]].

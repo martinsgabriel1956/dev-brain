@@ -3,8 +3,8 @@ type: concept
 title: "Prompt Engineering"
 aliases: ["engenharia de prompt", "prompt design"]
 date_created: 2026-05-17
-date_updated: 2026-09-30
-source_count: 16
+date_updated: 2026-10-06
+source_count: 17
 tags: [prompt-engineering, llm, few-shot, codex, software-3]
 skill: tech-mentor-ai
 status: stable
@@ -133,3 +133,4 @@ Uma nova versão de prompt pode quebrar o comportamento do sistema da mesma form
 - [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] — limite estrutural do prompt bem escrito quando a informação necessária nunca esteve na janela de contexto; crítica ao "prompt mágico" como bala de prata (Frederick Brooks)
 - [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]] — a mesma estrutura "estático → variável" recomendada para clareza também é o requisito técnico para acionar [[wiki/concepts/prompt-caching]]; dado dinâmico (timestamp) no início do prompt quebra o cache do provider
 - [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — versionamento como ecossistema (não só string), reprodutibilidade, semver de prompt e rollback
+- [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — montagem de [[wiki/concepts/prompt-aumentado-rag]]: entrada + contexto recuperado + regras/políticas

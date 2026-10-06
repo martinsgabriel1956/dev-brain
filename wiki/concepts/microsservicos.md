@@ -3,8 +3,8 @@ type: concept
 title: "Microsserviços"
 aliases: ["microsservicos", "microservices", "arquitetura de microsserviços", "decomposição por domínio"]
 date_created: 2026-07-24
-date_updated: 2026-10-05
-source_count: 30
+date_updated: 2026-10-06
+source_count: 31
 tags: [microsservicos, arquitetura, bounded-context, distributed-monolith, circuit-breaker, resiliencia]
 skill: tech-mentor-backend
 status: draft
@@ -126,6 +126,10 @@ A mesma fonte reafirma a regra de acesso exclusivo via API (nunca via banco comp
 
 Microsserviço com dependência síncrona externa é [[wiki/concepts/monolito-distribuido]]; mensageria é a saída ([[wiki/concepts/quando-usar-mensageria]]). [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]]
 
+## ACL na migração para microsserviços
+
+[[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]]: custos e critérios de adoção da camada anticorrupção na migração; ver [[wiki/concepts/acl-requisitos-arquiteturais]]. Referência: [[wiki/entities/chris-richardson]].
+
 ## Key Sources
 
 - [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] — origem histórica (Peter Rogers 2005, SOA/ESB como contraponto, "Microservices — Java, the Unix Way" 2012), três requisitos práticos (standalone, deploy independente, funcionalidade útil), e o desafio de capacitação de time como diferença entre projetos que dão certo e os que fracassam
@@ -158,3 +162,4 @@ Microsserviço com dependência síncrona externa é [[wiki/concepts/monolito-di
 - [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] — Vertical Slice como caminho intermediário para microsserviços; ver [[wiki/concepts/extracao-de-slice-para-servico]]
 - [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — microsserviços como a explosão dos anos 2010 de [[wiki/concepts/arquitetura-distribuida]], com a nuvem; motivos, desafios e motivos errados de adoção
 - [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — monolito distribuído como armadilha
+- [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] — ACL na migração para microsserviços

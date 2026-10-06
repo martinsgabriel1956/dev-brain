@@ -3,8 +3,8 @@ type: concept
 title: "IA como Amplificador (sem julgamento)"
 aliases: ["ia amplificador", "ai as amplifier", "amplificador sem julgamento"]
 date_created: 2026-08-10
-date_updated: 2026-09-30
-source_count: 10
+date_updated: 2026-10-06
+source_count: 11
 tags: [ia-produtividade, seniority, codigo-legado, code-review, julgamento]
 skill: tech-mentor-leadership
 status: draft
@@ -68,6 +68,10 @@ O diferencial deixa de ser "escrever rápido" e passa a ser **julgar o que foi g
 
 [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]] sugere que o julgamento amplificado pela IA é o de quem concentra contexto (dev + PM + PO). Ver [[wiki/concepts/contexto-concentrado-como-valor]] e [[wiki/concepts/framework-compressao-cruzamento-valorizacao]].
 
+## IA Acelera a Leitura, Humano Valida
+
+No [[wiki/entities/california-dmv]] a IA varreu o código numa fração do tempo, mas a pergunta certa e a verificação continuaram humanas.
+
 ## Key Sources
 
 - [[wiki/sources/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico]] — tensão entre julgamento (portável) e acesso à ferramenta (não portável) como dois componentes distintos do ganho amplificado
@@ -80,3 +84,4 @@ O diferencial deixa de ser "escrever rápido" e passa a ser **julgar o que foi g
 - [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — conhecimento como multiplicador; testes exigem conhecimento de negócio
 - [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]
 - [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — copiar código da IA é aceitável se se entende o que foi gerado e a regra de negócio
+- [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]] — IA acelera descoberta; especialistas validam

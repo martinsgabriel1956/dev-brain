@@ -3,8 +3,8 @@ type: concept
 title: "Anti-Corruption Layer (ACL)"
 aliases: ["camada de anticorrupção", "acl pattern", "anti corruption layer"]
 date_created: 2026-08-18
-date_updated: 2026-09-30
-source_count: 2
+date_updated: 2026-10-06
+source_count: 3
 tags: [ddd, context-map, facade-pattern, adapter-pattern, strangler-fig, sistemas-legados, acoplamento, dependencia-oculta]
 skill: tech-mentor-backend
 status: draft
@@ -87,7 +87,12 @@ Nem toda integração com um sistema legado justifica um ACL — o custo de mant
 
 [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] cita a ACL como "camada de tradução" entre contextos delimitados, bastante usada na **modernização de sistemas legados** (detalhamento prometido no vídeo seguinte da série). Junto de [[wiki/concepts/shared-kernel]], [[wiki/concepts/customer-supplier]] e [[wiki/concepts/conformist]], compõe o [[wiki/concepts/context-map]]. Nota: o autor chama a ACL de "mais abrangente" que os demais — opinião dele; aqui ela é tratada como mais um padrão de Context Mapping.
 
+## Parte 2: ACL na migração para microsserviços
+
+[[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] detalha a ACL na migração: camada isolada (microsserviço/API Gateway) com Facade do lado legado e Adapters do lado dos microsserviços; custo em escala, latência e observabilidade; ver [[wiki/concepts/acl-requisitos-arquiteturais]], [[wiki/concepts/acl-consistencia-transacional-legado-microsservico]], [[wiki/concepts/acl-permanencia-como-debito-tecnico]], [[wiki/concepts/acl-nao-resolve-responsabilidade-dividida]], [[wiki/concepts/diferenca-semantica-entre-sistemas]]. Origem em [[wiki/entities/eric-evans]]. Divergência com o skill (uma ACL por consumidor vs. OHS): [[wiki/questions/acl-facade-vs-adapter-criterio-por-lado-ou-por-chamadas]].
+
 ## Key Sources
 
 - [[wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado]] — motivação de alto nível (dependência forte, dependência escondida, múltiplos legados); skill `tech-mentor-backend` (`references/architecture/ddd-advanced.md`) supriu o nome formal do padrão, o exemplo de código e os padrões vizinhos de Context Map (OHS, Published Language, Separate Ways)
 - [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — ACL citada como camada de tradução na modernização de legado
+- [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] — Parte 2: ACL na migração para microsserviços

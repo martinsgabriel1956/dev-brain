@@ -3,8 +3,8 @@ type: entity
 title: "Uncle Bob (Robert C. Martin)"
 aliases: ["uncle bob", "robert c. martin", "robert cecil martin"]
 date_created: 2026-07-03
-date_updated: 2026-09-18
-source_count: 15
+date_updated: 2026-10-06
+source_count: 16
 tags: [clean-code, clean-architecture, solid, autor, quality-gate]
 skill: tech-mentor-backend
 status: stub
@@ -82,6 +82,8 @@ Em [[wiki/sources/agilidade-manifesto-agil-fabio-akita]], citado como um dos 17 
 
 ## Key Sources
 
+
+- [[wiki/sources/senioridade-nao-e-so-tecnica-especializacao-negocio-dados-confianca-em-crise]] — contraste com a visão de Linus Torvalds: foco no dia a dia (TDD) vs. perto do processador; ambas válidas
 - [[wiki/sources/prompt-context-harness-engineering-tres-pilares]] — citado de memória (sem capítulo/página) pelo gráfico de complexidade-versus-tempo de Clean Architecture, usado como justificativa para investir em [[wiki/concepts/harness|harness engineering]]
 - [[wiki/sources/medindo-e-entendendo-acoplamento-matheus-castiglioni]] — métricas de acoplamento de pacote (A, I, D, aferente/eferente, zonas de dor/inutilidade), atribuição inferida
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]

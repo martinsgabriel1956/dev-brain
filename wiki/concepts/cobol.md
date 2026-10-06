@@ -3,8 +3,8 @@ type: concept
 title: "COBOL"
 aliases: ["Common Business-Oriented Language"]
 date_created: 2026-08-04
-date_updated: 2026-09-29
-source_count: 3
+date_updated: 2026-10-06
+source_count: 4
 tags: [cobol, mainframe, legado, sistema-financeiro, linguagem-de-programacao]
 skill: tech-mentor-backend
 status: stub
@@ -43,8 +43,13 @@ Pesquisa da Vanson Bourne para a [[wiki/entities/micro-focus|Micro Focus]] (47 p
 
 É possível "ir para a nuvem" mantendo milhões de linhas de COBOL: no [[wiki/concepts/mainframe-as-a-service]] o código roda como está, só muda o consumo da infraestrutura ([[wiki/concepts/cloud-como-modelo-de-consumo]]).
 
+## Caso DMV da Califórnia
+
+Em vez de traduzir COBOL direto, o DMV extraiu regras de negócio com [[wiki/entities/ibm-arc]] + [[wiki/entities/watsonx]] — [[wiki/concepts/descoberta-de-regras-de-negocio-legado]].
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — COBOL/DB2/CICS seguem rodando em MaaS, sem reescrita
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]]
 - [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] — pesquisa Vanson Bourne/Micro Focus: 92% dos especialistas tratam sistemas COBOL da própria organização como críticos
+- [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]] — COBOL/Assembly de 6M de linhas; regras só existem no código

@@ -3,8 +3,8 @@ type: concept
 title: "Mercado de Trabalho em Mainframe/COBOL"
 aliases: ["demanda por profissionais mainframe", "escassez de profissional cobol", "vagas mainframe"]
 date_created: 2026-09-14
-date_updated: 2026-09-29
-source_count: 2
+date_updated: 2026-10-06
+source_count: 3
 tags: [mainframe, cobol, mercado-de-trabalho, carreira, contratacao]
 skill: tech-mentor-backend
 status: stub
@@ -33,7 +33,12 @@ A demanda concentrada em mid-level (79%) reflete uma dinâmica geracional: por d
 
 No [[wiki/concepts/mainframe-as-a-service]] o provedor assume e compartilha os especialistas (CICS, DB2, z/OS, storage, performance) entre clientes — para algumas empresas isso pesa mais que a economia de infra. Sugere demanda concentrada em provedores; inferência, sem dado.
 
+## Opinião: Essencial por Muitos Anos
+
+O autor de [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]] diz que quem conhece mainframe/COBOL seguirá essencial para levar projetos de modernização até o fim (opinião, sem dados).
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — provedores de MaaS absorvem/compartilham especialistas (opinião do autor)
 - [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] — as quatro pesquisas citadas acima (Futuro um grupo/IBM/Broadcom/21 CS; Arcati; Kyndryl; Vanson Bourne/Micro Focus)
+- [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]] — opinião: profissional COBOL essencial em projetos de modernização

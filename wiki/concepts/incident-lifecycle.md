@@ -3,8 +3,8 @@ type: concept
 title: "Incident Lifecycle"
 aliases: ["ciclo de vida de incidente", "incident response", "resposta a incidente"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-10-06
+source_count: 2
 tags: [sre, incidentes, operações, on-call]
 skill: tech-mentor-infra
 status: stable
@@ -41,4 +41,6 @@ Ver [[wiki/concepts/incident-severity]] — define tempo de resposta e escalonam
 
 ## Key Sources
 
+
+- [[wiki/sources/senioridade-nao-e-so-tecnica-especializacao-negocio-dados-confianca-em-crise]] — lado humano da crise: restabelecer confiança do time e sair com lições aprendidas ([[wiki/concepts/confianca-do-time-em-crise]])
 - [[wiki/sources/sre-error-budget-incidents]]

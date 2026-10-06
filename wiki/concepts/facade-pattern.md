@@ -3,8 +3,8 @@ type: concept
 title: "Facade Pattern"
 aliases: ["padrão facade", "design pattern facade", "fachada"]
 date_created: 2026-05-01
-date_updated: 2026-08-18
-source_count: 6
+date_updated: 2026-10-06
+source_count: 7
 tags: [design-patterns, structural, facade, oop, encapsulamento]
 skill: tech-mentor-backend
 status: stable
@@ -92,6 +92,10 @@ Quando a Facade orquestra **múltiplas** chamadas a um sistema legado para produ
 - `ArrayList` Java — esconde resize de array
 - Qualquer ORM — esconde SQL gerado
 
+## Facade no lado legado da ACL
+
+[[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]]: no lado do legado a Facade oferece interface comum e "praticamente imutável", escondendo adaptações (ex.: mainframe sem chamada direta a microsserviço). Critério por lado vs. por chamadas: [[wiki/questions/acl-facade-vs-adapter-criterio-por-lado-ou-por-chamadas]].
+
 ## Key Sources
 
 - [[wiki/sources/design-pattern-proxy]]
@@ -100,3 +104,4 @@ Quando a Facade orquestra **múltiplas** chamadas a um sistema legado para produ
 - [[wiki/sources/design-pattern-facade-renato-augusto]]
 - [[wiki/sources/design-pattern-facade-codigo-fonte-tv]]
 - [[wiki/sources/anti-corruption-layer-facade-adapter-sistema-legado]] — Facade como mecanismo estrutural do Anti-Corruption Layer quando o isolamento exige orquestrar múltiplas chamadas ao legado
+- [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] — Facade no lado legado da ACL

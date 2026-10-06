@@ -3,8 +3,8 @@ type: concept
 title: "CI/CD"
 aliases: ["CI/CD", "continuous integration", "continuous delivery", "continuous deployment", "pipeline de entrega", "deployment pipeline"]
 date_created: 2026-04-22
-date_updated: 2026-09-30
-source_count: 15
+date_updated: 2026-10-06
+source_count: 16
 tags: [devops, cicd, deploy, automação, qualidade, projetos-novos, dora, trunk-based-development]
 skill: tech-mentor-infra
 status: stable
@@ -157,3 +157,4 @@ Essa fonte também **contrasta** com o fluxo `feature → dev/staging → main` 
 - [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] — CI como single command deploy frictionless para times pequenos; contra a branch `dev` de vida longa
 - [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — IA na esteira: gerar vs. executar; evals agendados
 - [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — prompt versionado como artefato de entrega, com rollback
+- [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — ambientes (teste, produção) construídos pelos mesmos scripts de migration, sem DDL manual

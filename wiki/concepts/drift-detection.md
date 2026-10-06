@@ -3,8 +3,8 @@ type: concept
 title: "Drift Detection"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-30
-source_count: 3
+date_updated: 2026-10-06
+source_count: 4
 tags: [drift-detection, behavior-drift, llm, infraestrutura]
 skill: tech-mentor-infra
 status: stub
@@ -36,3 +36,4 @@ Saber qual versão de prompt está ativa e o que mudou ([[wiki/concepts/metadado
 - [[wiki/sources/terraform]]
 - [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — sentido de behavior drift de LLM e cadência de verificação
 - [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — rastreabilidade de versão como base para investigar mudança de comportamento
+- [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — [[wiki/concepts/drift-de-schema-entre-ambientes]]: o equivalente em banco de dados (alteração manual fora do código)

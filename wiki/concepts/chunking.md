@@ -3,8 +3,8 @@ type: concept
 title: "Chunking"
 aliases: ["chunk", "divisão de documentos", "fatiamento de documentos"]
 date_created: 2026-08-26
-date_updated: 2026-09-29
-source_count: 2
+date_updated: 2026-10-06
+source_count: 3
 tags: [rag, chunking, embeddings, retrieval]
 skill: tech-mentor-ai
 status: stub
@@ -29,3 +29,4 @@ Chunking não é uma unidade de busca 100% eficaz — cortar por tamanho fixo po
 
 - [[wiki/sources/rag-introducao-pipeline-completo]] — descrição do chunking como o fundamento do pipeline de ingestão, com exemplo de descontextualização por corte ruim
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — o autor reforça que o documento não vai inteiro ao banco (eficiência, precisão e janela de contexto limitada); chunk vira contexto/evidência e é transformado em embedding
+- [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — chunking como primeiro passo da [[wiki/concepts/indexacao-vetorial]], antes do embedding e da gravação no [[wiki/concepts/vector-store]]

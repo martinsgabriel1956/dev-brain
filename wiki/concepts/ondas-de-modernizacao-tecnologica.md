@@ -3,8 +3,8 @@ type: concept
 title: "Ondas de Modernização Tecnológica"
 aliases: ["ondas tecnológicas", "modernidade em TI ao longo do tempo", "mainframe cliente-servidor ERP nuvem microsserviços IA"]
 date_created: 2026-09-29
-date_updated: 2026-09-29
-source_count: 1
+date_updated: 2026-10-06
+source_count: 2
 tags: [historia-da-ti, modernizacao, hype, mainframe, cloud, microsservicos, ia, cultura-organizacional]
 skill: tech-mentor-leadership
 status: draft
@@ -30,6 +30,11 @@ Sequência do que a área de TI considerou "modernidade" ao longo do tempo, segu
 - Ciclos de hype: [[wiki/concepts/hype-de-ia]], [[wiki/concepts/avaliar-hype-tecnologico]], [[wiki/concepts/ciclo-de-mercado-tech]].
 - Obsolescência real ≠ ciclo de hype: [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]].
 
+## Conexões: Migração em Ondas no DMV
+
+Não confundir com [[wiki/concepts/ondas-de-migracao-por-risco-e-dependencia]] (ondas de um projeto específico, não de mercado).
+
 ## Key Sources
 
 - [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]]
+- [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]] — distinção: ondas de migração de projeto vs ondas de mercado

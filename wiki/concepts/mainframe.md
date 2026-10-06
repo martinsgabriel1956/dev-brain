@@ -3,8 +3,8 @@ type: concept
 title: "Mainframe"
 aliases: ["computador de grande porte", "IBM System/360"]
 date_created: 2026-08-18
-date_updated: 2026-09-29
-source_count: 4
+date_updated: 2026-10-06
+source_count: 6
 tags: [mainframe, hardware, historia-da-computacao, ibm, sistema-operacional]
 skill: tech-mentor-backend
 status: stub
@@ -32,9 +32,19 @@ O mainframe também pode ser **consumido como serviço**: [[wiki/entities/casas-
 
 Relato de 1991: escolher mainframe (IBM ES/9000) quando o mercado migrava para cliente-servidor rendeu manchete "na contramão do downsizing"; o sistema durou mais de 20 anos. Ver [[wiki/concepts/ondas-de-modernizacao-tecnologica]].
 
+## Caso DMV da Califórnia
+
+Core de ~6M de linhas e 2.500 programas dos anos 70 no [[wiki/entities/california-dmv]]; parte do conhecimento já perdida — ver [[wiki/concepts/conhecimento-perdido-em-legado]].
+
+## Mainframe e ACL
+
+[[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]]: exemplo de legado (talvez mainframe) que nem chama microsserviço direto; a Facade da [[wiki/concepts/anti-corruption-layer]] fica no meio, às vezes indo direto ao banco.
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — MaaS: mainframe consumido como serviço multitenant; virtualização nasceu aqui
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — mainframes e IBM System/360 como origem das primeiras interfaces de programação, anos 60-70
 - [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] — pesquisas de mercado: 91% dos empregadores contratando para posições novas, só 3,2% planejando desativar o mainframe
 - [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — relato de 1991: mainframe escolhido "na contramão do downsizing"; sistema durou 20+ anos
+- [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]] — DMV da Califórnia: 6M de linhas COBOL/Assembly, discovery com IA
+- [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] — Mainframe e ACL

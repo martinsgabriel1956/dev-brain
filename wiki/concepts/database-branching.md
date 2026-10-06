@@ -3,8 +3,8 @@ type: concept
 title: "Database Branching"
 aliases: ["database branching", "banco de dados por branch", "copy-on-write database", "branch de banco de dados"]
 date_created: 2026-09-02
-date_updated: 2026-09-02
-source_count: 1
+date_updated: 2026-10-06
+source_count: 2
 tags: [banco-de-dados, testes, migrations, postgresql, neon, ci-cd, copy-on-write]
 skill: tech-mentor-backend
 status: draft
@@ -56,3 +56,4 @@ Times com migrations frequentes e concorrentes entre branches, e/ou dados sensí
 ## Key Sources
 
 - [[wiki/sources/database-branching-testes-neon-fernanda-kipper]] — caso real (`fernandakipper.com`) com Neon + Vercel, incluindo o mecanismo de copy-on-write e o setup de dois projetos (`certificates app` produção / `certificates dev` staging + branches efêmeras)
+- [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — contraponto: Flyway garante mesmo schema em ambientes compartilhados; branching isola o banco por branch

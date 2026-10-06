@@ -3,8 +3,8 @@ type: concept
 title: "Entendimento de Domínio"
 aliases: ["domain understanding", "contexto de negócio", "entender o domínio"]
 date_created: 2026-06-20
-date_updated: 2026-07-09
-source_count: 3
+date_updated: 2026-10-06
+source_count: 4
 tags: [dominio, negocio, arquitetura, onboarding, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -49,6 +49,8 @@ Decisões arquiteturais sempre refletem restrições e prioridades do domínio. 
 
 ## Key sources
 
+
+- [[wiki/sources/senioridade-nao-e-so-tecnica-especializacao-negocio-dados-confianca-em-crise]] — conhecimento de domínio como base da especialização e dos bons modelos de dados ([[wiki/concepts/cientista-vs-engenheiro-de-dados]])
 - [[wiki/sources/como-aprender-novas-codebases]]
 - [[wiki/sources/engenheiro-vs-programador-mercado-ia]]
 - [[wiki/sources/fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia]]

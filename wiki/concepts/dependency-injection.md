@@ -3,8 +3,8 @@ type: concept
 title: "Dependency Injection"
 aliases: ["DI", "injeção de dependência"]
 date_created: 2026-08-04
-date_updated: 2026-10-05
-source_count: 8
+date_updated: 2026-10-06
+source_count: 9
 tags: [design-patterns, acoplamento, testabilidade, di]
 skill: tech-mentor-backend
 status: stub
@@ -55,3 +55,7 @@ Técnica em que um componente recebe suas dependências de fora (via construtor,
 ## Key sources (adição 2026-10-05)
 
 - [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]] — Cura comum dos três acoplamentos que impedem o teste: trocar `new`, herança de classe com tecnologia e métodos estáticos por interface injetada ([[wiki/concepts/acoplamento-que-impede-teste-unitario]], [[wiki/concepts/heranca-vs-composicao]]). Sem DI o teste carrega dependências que não deveria ver.
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — DI como remédio para a [[wiki/concepts/dependencia-externa-oculta]]: `CheckoutService` recebe `PaymentProvider` e `Logger` no construtor; o estado da instância revela qual provedor estava em uso.

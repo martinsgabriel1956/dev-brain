@@ -3,8 +3,8 @@ type: entity
 title: "Nubank"
 aliases: ["Nu", "Nu Holdings", "Nu Bank"]
 date_created: 2026-05-31
-date_updated: 2026-09-15
-source_count: 4
+date_updated: 2026-10-06
+source_count: 5
 tags: [nubank, fintech, banco-digital, clojure, datomic, event-sourcing, iso-27001, security, cell-based-architecture, observabilidade]
 skill: tech-mentor-backend
 status: stable
@@ -53,6 +53,8 @@ Possui certificação [[wiki/concepts/iso-27001]], usada como garantia formal a 
 
 ## Key Sources
 
+
+- [[wiki/sources/senioridade-nao-e-so-tecnica-especializacao-negocio-dados-confianca-em-crise]] — relato de que, ao virar banco, a liberdade de ferramentas/inovação tende a diminuir (afirmação do autor, não verificada); palestras sobre Datomic em 2015/2016
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
 - [[wiki/sources/iso-27001-dicionario-programador]] — certificação ISO 27001 e "modo rua" como controle de acesso contextual
 - [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]] — citado como caso de uso do Datomic ao explicar Event Sourcing

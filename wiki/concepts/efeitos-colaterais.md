@@ -3,8 +3,8 @@ type: concept
 title: "Efeitos Colaterais"
 aliases: ["side effects", "side-effects"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 1
+date_updated: 2026-10-06
+source_count: 2
 tags: [efeitos-colaterais, programacao-funcional, complexidade-acidental, ddd]
 skill: tech-mentor-backend
 status: stable
@@ -70,3 +70,7 @@ O domínio não sabe que existe banco de dados. Isso o torna testável com funç
 ## Key Sources
 
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — no backend, efeitos sobre estado global do servidor contaminam requests paralelas. Ver [[wiki/concepts/estado-global-em-servidor]].

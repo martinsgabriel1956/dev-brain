@@ -3,8 +3,8 @@ type: concept
 title: "Imutabilidade"
 aliases: ["immutability", "dados imutáveis", "readonly"]
 date_created: 2026-04-25
-date_updated: 2026-06-10
-source_count: 3
+date_updated: 2026-10-06
+source_count: 4
 tags: [imutabilidade, software-design, estado, clean-code, programacao-funcional, datomic, event-sourcing, strings, encoding]
 skill: tech-mentor-backend
 status: stable
@@ -83,3 +83,7 @@ Exemplo: o caractere chinês `世` ocupa 3 bytes em UTF-8. Sobrescrever apenas o
 - [[wiki/sources/acoplamento-abstracao-estado]]
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
 - [[wiki/sources/como-strings-realmente-funcionam]] — motivação técnica para imutabilidade de strings: proteger encoding UTF-8 de corrupção por indexação de bytes
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — config carregada uma vez e exposta read-only: [[wiki/concepts/estado-global-inofensivo]].

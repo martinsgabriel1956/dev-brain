@@ -3,8 +3,8 @@ type: concept
 title: "Programação Funcional"
 aliases: ["functional programming", "FP", "paradigma funcional"]
 date_created: 2026-05-31
-date_updated: 2026-05-31
-source_count: 1
+date_updated: 2026-10-06
+source_count: 2
 tags: [programacao-funcional, imutabilidade, efeitos-colaterais, clojure, scala, paradigma]
 skill: tech-mentor-backend
 status: stable
@@ -77,3 +77,7 @@ O [[nubank]] escolheu [[clojure]] (Lisp funcional sobre JVM) como linguagem prin
 ## Key Sources
 
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — o vídeo cita a tração de FP (funções autocontidas, sem side effects) e traços de FP em Python/TypeScript; ver [[wiki/concepts/dependencia-externa-oculta]].

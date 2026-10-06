@@ -3,8 +3,8 @@ type: concept
 title: "Modernização de Mainframe"
 aliases: ["integração de mainframe com nuvem híbrida", "mainframe modernization"]
 date_created: 2026-09-14
-date_updated: 2026-09-29
-source_count: 3
+date_updated: 2026-10-06
+source_count: 4
 tags: [mainframe, modernizacao, nuvem-hibrida, devops, legado]
 skill: tech-mentor-backend
 status: stub
@@ -30,8 +30,13 @@ Uma forma de modernização é trocar o **modelo de consumo** da infraestrutura 
 
 Em 1991 migrar um minicomputador para um mainframe mais novo foi chamado de "na contramão do downsizing", pois modernizar significava ir para cliente-servidor; o sistema durou 20+ anos. Ilustra que "modernização" costuma ser definida pela direção do mercado, não pela adequação — ver [[wiki/concepts/ondas-de-modernizacao-tecnologica]] e [[wiki/concepts/cliente-servidor-como-onda-de-modernizacao]].
 
+## Caso DMV da Califórnia: Substituir, Não Integrar
+
+O [[wiki/entities/california-dmv]] substitui gradualmente o mainframe (DXP, 2021–2029 previsto, US$ 767M) e começou por [[wiki/concepts/descoberta-de-regras-de-negocio-legado]] com IA. Contraponto à tendência de integração acima.
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — modernização via MaaS: nuvem e mainframe juntos, sem reescrita
 - [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] — pesquisa da Kyndryl sobre modernização de mainframe; efeito direto na demanda por perfil combinado (legado + integração)
 - [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — caso pessoal de 1991: sistema em mainframe "na contramão do downsizing" durou 20+ anos; modernização definida pela direção do mercado
+- [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]] — caso de substituição: discovery com IA em 15 meses vs ~5 anos manual

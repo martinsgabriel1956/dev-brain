@@ -3,8 +3,8 @@ type: concept
 title: "Checklist do Primeiro Dia de um Projeto Novo"
 aliases: ["primeiro dia de projeto", "setup inicial de codebase", "day one checklist", "deploy desde o dia um"]
 date_created: 2026-07-07
-date_updated: 2026-09-02
-source_count: 4
+date_updated: 2026-10-06
+source_count: 5
 tags: [projetos, deploy, mvp, ci-cd, boas-praticas, setup]
 skill: tech-mentor-leadership
 status: stable
@@ -57,3 +57,4 @@ A etapa 4 (migrations automáticas desde o dia 1) resolve reprodutibilidade *den
 - [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]] — detalha o mecanismo da etapa 4: [[wiki/concepts/database-migration|migrations]] versionadas e reproduzíveis, com ou sem ORM
 - [[wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub]] — reforço independente do checklist `.md`, com user stories como técnica de descoberta dos itens e o complemento de engineering stories
 - [[wiki/sources/database-branching-testes-neon-fernanda-kipper]] — o que fazer quando migrations automáticas do dia 1 param de bastar por causa de colisão entre branches concorrentes de um time maior
+- [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — exemplo concreto da etapa de migrations automáticas desde o dia 1 com [[wiki/entities/flyway]]
