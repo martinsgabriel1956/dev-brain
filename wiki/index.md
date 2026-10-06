@@ -26,6 +26,9 @@ date_updated: 2026-10-06
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] | [[wiki/entities/kiper-academy|Kiper Academy]]: introdução à [[wiki/concepts/arquitetura-de-software]] — papel (dividir, comunicar, restrições, qualidades, dados), limite de "aplicação", dimensões estrutural vs design e 5 perguntas-guia: stateless, síncrono/assíncrono, acoplamento, idempotência, cache |
+| [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]]: [[wiki/concepts/rate-limiting]] como decisão de arquitetura — origem em redes de pacotes (token/leaky bucket), 429 (RFC 6585), três camadas (aplicação, gateway/LB, borda), estado compartilhado (3 × 100 = 300) e SPOF do limiter; algoritmos de janela ficam para a parte 2 |
+| [[wiki/sources/rate-limit-estrategias-fixed-sliding-token-leaky-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]], parte 2 de rate limit: fixed window (cota simples, burst na fronteira), sliding window (últimos 60 s, mais estado), token bucket (taxa média + pico; caso real com pesos 1 vs. ~1000 e 429 pedagógico) e leaky bucket (saída previsível, legado/jobs); client rate limit contra APIs de parceiros; "sem bala de prata"; parte 3 (produção) é proposta |
 | [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] | Migrations com [[wiki/entities/flyway]] + Spring Boot: scripts `V<n>__*.sql` versionados, histórico em [[wiki/concepts/flyway-schema-history]], migration aplicada não se edita (checksum) e Hibernate só valida; demo com tabela `cliente` + coluna `cpf` no PostgreSQL |
 | [[wiki/sources/senioridade-nao-e-so-tecnica-especializacao-negocio-dados-confianca-em-crise]] | Carreira além de júnior→sênior: 'sênior em quê?' — baixo nível (Linus), especialista de negócio, dados (cientista vs. engenheiro), regulação em bancos e confiança do time em crise |
 | [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] | [[wiki/entities/michele-brito|Michele Brito]]: RAG em três etapas ([[wiki/concepts/rag-tres-etapas]]) implementado com [[wiki/entities/spring-ai]] num [[wiki/concepts/microagente]] de recomendação de tours: [[wiki/concepts/indexacao-vetorial]] em [[wiki/entities/pgvector]], busca com [[wiki/concepts/recuperacao-com-filtro-de-metadados|filtro de metadados]], [[wiki/concepts/prompt-aumentado-rag]] e LLM via ChatClient. Demo com 21 tours; sem avaliação nem validação da saída |
@@ -839,8 +842,35 @@ date_updated: 2026-10-06
 | [[wiki/sources/zero-trust]] | Zero Trust: "nunca confie, sempre verifique" — nenhum acesso é implicitamente confiável só por estar na rede interna. 7 pilares CISA: Identity, Device, Network, Workload, Data, Automation, Visibility. Acesso condicional: decisão por cada request baseada em identidade + postura do dispositivo + contexto. mTLS com SPIFFE/SPIRE para service-to-service. |
 | [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]], abertura da série: **[[wiki/concepts/arquitetura-distribuida|arquitetura distribuída]]** (serviços tecnicamente independentes pela rede vs. [[wiki/concepts/monolito|monolito]]); exemplo hipotético de streaming; histórico (Arpanet → cliente-servidor → web em escala → [[wiki/concepts/soa-service-oriented-architecture|SOA]] → microsserviços/nuvem); 4 motivos ([[wiki/concepts/escalabilidade-independente|escala independente]], resiliência, stack, equipes) e 6 desafios (operação, observabilidade, comunicação, consistência, custo, capacitação); alerta contra adoção por hype; [[wiki/concepts/desenhar-distribuido-implementar-monolito|desenhar distribuído, implementar monolito]] |
 | [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] | Parte 2 do vídeo do ACL (autor não identificado): ACL na migração legado→microsserviços; Facade no lado legado, Adapters no lado novo; custos (escala, latência, observabilidade, transação, débito técnico); matriz de requisitos arquiteturais; quando não usar (semântica distinta) |
+| [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] | Dicionário do Programador: harness = tudo menos o modelo; princípio de Hashimoto (trava determinística); guias (feed-forward) vs. sensores (feedback) de Böckeler; de-para de Trivedy; três camadas; DeepSeek Harness; exemplo em crédito |
 
 ## Concepts
+
+### Arquitetura de Software — Introdução e Perguntas-guia (2026-10-06)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/dimensoes-de-decisao-arquitetural]] | Decisão estrutural (deploy, serviços, infra) vs. design de código (Clean, Hexagonal, Onion, MVC) |
+| [[wiki/concepts/acoplamento-de-negocio-vs-detalhe-interno]] | Acoplamento legítimo restrito ao contrato (status) vs. dependência de detalhes internos |
+| [[wiki/concepts/tolerancia-a-desatualizacao-de-cache]] | Quanta desatualização aceitar: saldo bancário vs. post de blog |
+| [[wiki/entities/kiper-academy]] | Canal/plataforma de ensino; série de arquitetura backend |
+
+### Rate Limit — Arquitetura (2026-10-06)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/rate-limit-camadas-de-posicionamento]] | Aplicação × gateway/LB × borda: contexto vs. proximidade; as camadas se combinam |
+| [[wiki/concepts/rate-limit-estado-compartilhado]] | N instâncias com contador local = limite × N; store compartilhado traz latência, consistência e vira SPOF |
+| [[wiki/concepts/token-bucket]] | Fichas repostas a taxa fixa; permite picos controlados |
+| [[wiki/concepts/leaky-bucket]] | Saída a taxa previsível; suaviza o tráfego |
+| [[wiki/concepts/traffic-shaping-e-traffic-policing]] | Reter (shaping) vs. descartar/marcar (policing): ancestrais do rate limit |
+| [[wiki/concepts/http-429-too-many-requests]] | RFC 6585 (2012), Retry-After; o cliente precisa de backoff/retry |
+| [[wiki/concepts/fixed-window-rate-limit]] | Janelas fixas com contador; simples, ideal para cota contratual e login; sofre burst na fronteira |
+| [[wiki/concepts/sliding-window-rate-limit]] | Janela dos últimos 60 s; sem fronteira fixa, mais memória/I/O (Log vs. Counter) |
+| [[wiki/concepts/burst-na-fronteira-da-janela]] | 100 + 100 requisições em ~2 s sem violar o fixed window |
+| [[wiki/concepts/rate-limit-pesos-por-endpoint]] | Token bucket com custo por endpoint; caso 10.000 tokens/h, 1 vs. ~1000 |
+| [[wiki/concepts/client-rate-limit]] | Limitar as próprias chamadas a APIs de parceiros |
+| [[wiki/concepts/rate-limit-escolha-de-algoritmo]] | Tabela comparativa dos quatro algoritmos; escolher pelo comportamento |
 
 ### Migrations com Flyway (2026-10-06)
 
@@ -2810,11 +2840,18 @@ date_updated: 2026-10-06
 | [[wiki/concepts/analogia-agencias-bancarias-cap]] | Malote não chega: recusar saque (C) ou pagar com caixa local (A) |
 | [[wiki/concepts/custo-da-leitura-forte-vs-local]] | Leitura local ~0,05 ms vs. forte +0,19 ms de round trip ao quórum |
 | [[wiki/concepts/falacias-da-computacao-distribuida]] | "A rede é confiável" e "a latência é zero" |
+| [[wiki/concepts/harness-em-dominios-regulados-credito]] | Harness em crédito: teto, explicação auditável, conformidade |
+| [[wiki/concepts/harness-componentes-por-capacidade]] | De-para de Trivedy: comportamento desejado → componente de harness |
+| [[wiki/concepts/trava-deterministica-no-harness]] | Erro do agente vira trava no harness, não só ajuste de prompt (Hashimoto) |
 
 ## Entities
 
 ### Migrations com Flyway (2026-10-06)
 
+| [[wiki/entities/kong]] | Gateway/proxy que centraliza políticas de rate limit para vários serviços |
+| [[wiki/entities/spring-cloud-gateway]] | Gateway Spring; filtro RequestRateLimiter (token bucket + Redis, chave customizada) |
+| [[wiki/entities/bucket4j]] | Biblioteca Java de token bucket na aplicação, integrável ao Spring |
+| [[wiki/entities/nestjs-throttler]] | Rate limit do NestJS via guards, global ou por rota, storage plugável |
 | Página | Descrição |
 |---|---|
 | [[wiki/entities/flyway]] | Ferramenta de migrations (JVM/Spring Boot); SQL versionado com histórico e checksum |
@@ -3207,6 +3244,10 @@ date_updated: 2026-10-06
 | [[wiki/entities/tanstack]] | Organização open-source criada por Tanner Linsley. Mantém um ecossistema de bibliotecas agnósticas de framework focadas em problemas de UI de alta performance. |
 | [[wiki/entities/yjs]] | Biblioteca open-source de CRDT de sequência para edição colaborativa em tempo real. Padrão da indústria para texto e estruturas colaborativas. |
 | [[wiki/entities/zeno-rocha]] | Criador e programador brasileiro, autor de *14 Hábitos de Desenvolvedores Altamente Produtivos* (2020). Segundo o próprio livro, no momento da publicação vivia em Los Angeles, Califórnia, e era Chief Product Officer na Liferay Cloud, tendo antes trabalhado em empresas latino-americanas como Globo e Petrobras. Palestrou em mais de 100 conferências de tecnologia ao redor do mundo e chegou a estar... |
+| [[wiki/entities/deepseek-harness]] | Harness open source da DeepSeek, "everything is a plugin" (não verificado) |
+| [[wiki/entities/vivek-trivedy]] | LangChain; de-para modelo→harness |
+| [[wiki/entities/birgitta-bockeler]] | Thoughtworks; guias (feed-forward) vs. sensores (feedback) |
+| [[wiki/entities/mitchell-hashimoto]] | Criador do Terraform; princípio da trava determinística no harness |
 
 ## Questions
 
@@ -3216,3 +3257,5 @@ date_updated: 2026-10-06
 | [[wiki/questions/facade-fere-srp-video-comparison]] | Renato Augusto defende que Facade não fere SRP (motivo único de mudança); Código Fonte TV discorda (orquestração pura já é responsabilidade demais) — sem resolução, ambas são opinião de autor sem citação de fonte primária |
 | [[wiki/questions/local-first-definicoes-conflitantes]] | Duas fontes usam "local-first" para conceitos incompatíveis: dado efêmero validado por HMAC (servidor continua autoridade) vs. definição canônica de réplica primária com posse do usuário — resolvido por revisão do conceito, não por fusão |
 | [[wiki/questions/acl-facade-vs-adapter-criterio-por-lado-ou-por-chamadas]] | Facade/Adapter por lado da camada (vídeo) vs. por nº de chamadas (skill); ACL por consumidor vs. OHS + Published Language |
+| [[wiki/questions/rate-limit-contabilizar-requisicao-falha-e-chave-de-identificacao]] | O que conta no rate limit: requisição com falha, chave (usuário/API key/IP), ação ao atingir o limite — levantadas no vídeo, sem resposta |
+| [[wiki/questions/rate-limit-producao-atomicidade-fail-open-e-janela-distribuida]] | Rate limit em produção: atomicidade no Redis, fail-open/closed, janela distribuída, pesos |

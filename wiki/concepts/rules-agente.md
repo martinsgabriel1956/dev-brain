@@ -3,8 +3,8 @@ type: concept
 title: "Rules (Padrão de Harness)"
 aliases: ["rules harness", "agents.md", "cursorrules", "guardrails ia", "regras agente"]
 date_created: 2026-06-02
-date_updated: 2026-07-07
-source_count: 3
+date_updated: 2026-10-06
+source_count: 4
 tags: [rules, agents-md, harness, system-prompt, guardrails, code-quality, projetos-novos]
 skill: tech-mentor-ai
 status: stable
@@ -75,8 +75,13 @@ Rules são a formalização em Markdown do conhecimento que a LLM não tem sobre
 
 No [[wiki/concepts/checklist-primeiro-dia-projeto]], escrever o `AGENTS.md` é a última etapa do dia 1, junto com o README (para humanos). O conteúdo recomendado é concreto: como rodar os testes, se o projeto segue TDD, quais os padrões de tipagem, qual a arquitetura e estrutura dos repositórios/serviços, e qual o objetivo explícito do projeto — na prática, uma aplicação direta de "o que vai numa rule" acima, só que documentada desde antes de existir qualquer feature.
 
+## Rules em Subpastas
+
+Boa prática relatada: `AGENTS.md` principal na raiz + adicionais por módulo, com contexto relevante àquela parte do código.
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-02-rules]]
 - [[wiki/sources/formacao-ia-devs-aula-03-skills]]
 - [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]
+- [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — AGENTS.md por módulo

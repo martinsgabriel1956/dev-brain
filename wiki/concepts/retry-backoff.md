@@ -3,8 +3,8 @@ type: concept
 title: "Retry com Backoff Exponencial e Jitter"
 aliases: ["retry backoff", "exponential backoff", "jitter retry", "retry pattern"]
 date_created: 2026-04-22
-date_updated: 2026-08-14
-source_count: 3
+date_updated: 2026-10-06
+source_count: 5
 tags: [resiliencia, retry, backoff, jitter, thundering-herd, network, idempotencia]
 skill: tech-mentor-system-design
 status: stable
@@ -125,8 +125,14 @@ Um timeout no cliente não diz *por que* a resposta não chegou — a operação
 - Serviço downstream sabidamente em falha → usar [[wiki/concepts/circuit-breaker]] primeiro
 - Erro permanente (4xx de negócio)
 
+## Cliente que Recebe 429
+
+Rate limit altera o comportamento do cliente: ao receber [[wiki/concepts/http-429-too-many-requests]] ele precisa de backoff/retry (respeitando `Retry-After`) ou desistir.
+
 ## Key Sources
 
 - [[wiki/sources/retry-backoff]]
 - [[wiki/sources/idempotencia-pagamentos-retry-sistemas-distribuidos]] — por que o timeout sozinho não distingue falha, processamento em andamento e sucesso com resposta perdida; teste que corta a resposta depois do efeito e antes da confirmação
 - [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — retry agressivo entre produtor e fila pode adicionar ainda mais pressão a um sistema já sobrecarregado, agravando [[wiki/concepts/back-pressure]] em vez de mitigá-lo
+- [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — cliente que recebe 429 precisa de backoff
+- [[wiki/sources/rate-limit-estrategias-fixed-sliding-token-leaky-bernardo-lobato]] — clientes que paralelizam sincronização e recebem 429 precisam ajustar o processo; também no [[wiki/concepts/client-rate-limit]]

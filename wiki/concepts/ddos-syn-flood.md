@@ -3,8 +3,8 @@ type: concept
 title: "DDoS e SYN Flood"
 aliases: ["syn flood", "ddos", "denial of service distribuído", "under attack mode"]
 date_created: 2026-07-31
-date_updated: 2026-09-30
-source_count: 3
+date_updated: 2026-10-06
+source_count: 4
 tags: [ddos, syn-flood, tcp, cloudflare, under-attack-mode, syn-cookies, seguranca, rede]
 skill: tech-mentor-security
 status: draft
@@ -55,8 +55,13 @@ Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] �
 
 Tráfego ICMP não solicitado é comum em interfaces expostas ([[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]]); filtrar por tipo é a defesa mínima — ver [[wiki/concepts/icmp]].
 
+## Rate Limit na Mitigação de DDoS
+
+Rate limit na borda é parte da estratégia de proteção contra DDoS, mas não a substitui. Ver [[wiki/concepts/rate-limit-camadas-de-posicionamento]].
+
 ## Key sources
 
 - [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]]
 - [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — 157 tentativas maliciosas bloqueadas, precursor ao incidente acima
 - [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]] — ICMP não solicitado e filtragem por tipo
+- [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — rate limit na borda como parte da defesa

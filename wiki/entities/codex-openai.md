@@ -3,8 +3,8 @@ type: entity
 title: "Codex (OpenAI)"
 aliases: ["Codex", "OpenAI Codex", "codex app"]
 date_created: 2026-06-02
-date_updated: 2026-09-30
-source_count: 9
+date_updated: 2026-10-06
+source_count: 10
 tags: [codex, openai, harness, ia-para-devs]
 skill: tech-mentor-ai
 status: stable
@@ -55,6 +55,10 @@ Segundo [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]], a [[wiki/enti
 
 [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] afirma, sem demonstrar, que as dicas de paralelismo, worktree e sessões funcionam também no Codex. Ver [[wiki/concepts/modalidades-de-paralelismo-claude-code]].
 
+## Harness Próprio
+
+Citado como ferramenta com harness embutido; contraste com [[wiki/entities/deepseek-harness]].
+
 ## Key Sources
 
 - [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] — posicionado, com o Claude Code, como meio-termo de controle de harness (entre Cursor e OpenClaw)
@@ -66,3 +70,4 @@ Segundo [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]], a [[wiki/enti
 - [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — `/go` e compactação de contexto como diferencial no loop agêntico; ciclo de retroalimentação entre logs do Codex e treinamento do próximo GPT
 - [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — citado como harness de preferência de parte do time (portabilidade de skills)
 - [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — menção de transferibilidade
+- [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — harness embutido

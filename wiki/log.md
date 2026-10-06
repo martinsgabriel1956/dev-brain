@@ -12780,3 +12780,59 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (14):** [[wiki/concepts/anti-corruption-layer]], [[wiki/concepts/strangler-fig-pattern]], [[wiki/concepts/facade-pattern]], [[wiki/concepts/adapter-pattern]], [[wiki/concepts/saga-pattern]], [[wiki/concepts/distributed-transactions]], [[wiki/concepts/tech-debt]], [[wiki/concepts/observabilidade]], [[wiki/concepts/requisitos-funcionais-e-nao-funcionais]], [[wiki/concepts/bounded-context]], [[wiki/concepts/choreography]], [[wiki/concepts/orchestration]], [[wiki/concepts/mainframe]], [[wiki/concepts/microsservicos]].
 
 **Notas:** (1) Sem contradição direta, mas duas divergências com o skill (Facade/Adapter por lado vs. por função; ACL por consumidor vs. OHS + Published Language), registradas em [[wiki/questions/acl-facade-vs-adapter-criterio-por-lado-ou-por-chamadas]]. (2) Detalhes de SOAP/SQL Server e as referências (Microsoft, livro de Richardson) são relato do áudio, **[external, não verificado]**. (3) A matriz "atendido/parcial/inferido" é julgamento do autor; a leitura dos termos é minha. (4) Cinco conceitos, duas entidades e uma pergunta novos (`draft`/`stub`); `source_count` das tocadas +1.
+
+---
+
+## [2026-10-06] ingest | Rate Limit em APIs: história, onde aplicar e estado compartilhado
+
+**Fonte:** transcrição de vídeo de [[wiki/entities/bernardo-lobato]] colada pelo usuário, limpa em `raw/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato.md` (já em português; sem tradução; erros de ASR corrigidos e listados no cabeçalho).
+
+**Skill:** tech-mentor-backend (SKILL.md; `references/rate-limiting.md`; skill em `~/.claude-personal/skills/synced/…/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]], [[wiki/concepts/rate-limit-camadas-de-posicionamento]], [[wiki/concepts/rate-limit-estado-compartilhado]], [[wiki/concepts/token-bucket]], [[wiki/concepts/leaky-bucket]], [[wiki/concepts/traffic-shaping-e-traffic-policing]], [[wiki/concepts/http-429-too-many-requests]], [[wiki/entities/kong]], [[wiki/entities/spring-cloud-gateway]], [[wiki/entities/bucket4j]], [[wiki/entities/nestjs-throttler]], [[wiki/questions/rate-limit-contabilizar-requisicao-falha-e-chave-de-identificacao]]
+
+**Tocadas (14):** [[wiki/concepts/rate-limiting]], [[wiki/concepts/api-gateway]], [[wiki/concepts/waf]], [[wiki/entities/cloudflare]], [[wiki/concepts/load-balancer]], [[wiki/concepts/redis]], [[wiki/concepts/retry-backoff]], [[wiki/concepts/cdn]], [[wiki/concepts/http-status-code]], [[wiki/concepts/single-point-of-failure]], [[wiki/concepts/api-economy]], [[wiki/concepts/ddos-syn-flood]], [[wiki/concepts/estado-compartilhado]], [[wiki/entities/bernardo-lobato]], [[wiki/entities/spring-boot]].
+
+**Notas:** (1) Sem contradição; duas nuances com o skill: `Retry-After` "opcional" (vídeo) vs. praticamente obrigatório (skill), e leaky bucket só por analogia (skill: fila FIFO). (2) "Kong ou ox" ambíguo no ASR: só Kong virou entidade. (3) Lacunas: algoritmos de janela (parte 2 do vídeo), atomicidade no Redis, fail-open/closed, o que conta como requisição. (4) Cloud equivalentes (Memorystore, Azure Cache for Redis, DynamoDB) são relato do áudio `[external, não verificado]`. (5) Sete conceitos/entidades novos além da pergunta (`draft`/`stub`); `source_count` das tocadas +1; [[wiki/concepts/rate-limiting]] segue `stub`. (6) Pedidos de like/inscrição ignorados.
+
+---
+
+## [2026-10-06] ingest | Rate Limit: estratégias de implementação (fixed, sliding, token bucket, leaky bucket)
+
+**Fonte:** transcrição de vídeo de [[wiki/entities/bernardo-lobato]] (parte 2 de [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]]) colada pelo usuário, limpa em `raw/rate-limit-estrategias-fixed-sliding-token-leaky-bernardo-lobato.md` (já em português; sem tradução; erros de ASR e valores corrigidos listados no cabeçalho).
+
+**Skill:** tech-mentor-backend (SKILL.md; `references/rate-limiting.md`; skill em `~/.claude-personal/skills/synced/…/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/rate-limit-estrategias-fixed-sliding-token-leaky-bernardo-lobato]], [[wiki/concepts/fixed-window-rate-limit]], [[wiki/concepts/sliding-window-rate-limit]], [[wiki/concepts/burst-na-fronteira-da-janela]], [[wiki/concepts/rate-limit-pesos-por-endpoint]], [[wiki/concepts/client-rate-limit]], [[wiki/concepts/rate-limit-escolha-de-algoritmo]], [[wiki/questions/rate-limit-producao-atomicidade-fail-open-e-janela-distribuida]]
+
+**Tocadas (15):** [[wiki/concepts/rate-limiting]], [[wiki/concepts/token-bucket]], [[wiki/concepts/leaky-bucket]], [[wiki/concepts/sliding-window]], [[wiki/entities/kong]], [[wiki/entities/bernardo-lobato]], [[wiki/concepts/http-429-too-many-requests]], [[wiki/concepts/retry-backoff]], [[wiki/concepts/api-gateway]], [[wiki/concepts/rate-limit-estado-compartilhado]], [[wiki/concepts/rate-limit-camadas-de-posicionamento]], [[wiki/concepts/redis]], [[wiki/concepts/traffic-shaping-e-traffic-policing]], [[wiki/concepts/back-pressure]], [[wiki/concepts/ataque-online-vs-offline-senha]] (+ pergunta [[wiki/questions/rate-limit-contabilizar-requisicao-falha-e-chave-de-identificacao]]).
+
+**Notas:** (1) Sem contradição direta; nuance com o skill: o vídeo trata "sliding window" como uma coisa só (custo do Log), o skill distingue Log (O(N)) de Counter (O(1), padrão recomendado). (2) Homônimo: [[wiki/concepts/sliding-window]] (cs-fundamentals) ganhou desambiguação. (3) Suporte do Kong a fixed/sliding/leaky é relato do áudio `[external, não verificado]`. (4) Caso real dos pesos é relato único, sem métricas; exemplos iFood/ingresso.com são ilustrativos. (5) Valores do ASR corrigidos pelo contexto (ex.: "seis requisições" = 100, "6 segundos" = 60 s). (6) Seis conceitos e uma pergunta novos (`draft`); `source_count` das tocadas +1.
+
+---
+
+## [2026-10-06] ingest | Introdução à Arquitetura de Software: conceitos para decisões arquiteturais (Kiper Academy)
+
+**Fonte:** transcrição de vídeo da [[wiki/entities/kiper-academy]] colada pelo usuário, limpa em `raw/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy.md` (já em português; sem tradução; correções de ASR listadas no cabeçalho).
+
+**Skill:** tech-mentor-system-design (SKILL.md; `references/architecture-foundations-core.md` consultado para stateless/idempotência; skill em `~/.claude-personal/skills/synced/…/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]], [[wiki/concepts/dimensoes-de-decisao-arquitetural]], [[wiki/concepts/acoplamento-de-negocio-vs-detalhe-interno]], [[wiki/concepts/tolerancia-a-desatualizacao-de-cache]], [[wiki/entities/kiper-academy]]
+
+**Tocadas (19):** [[wiki/concepts/arquitetura-de-software]], [[wiki/concepts/application-boundary]], [[wiki/entities/martin-fowler]], [[wiki/entities/shopify]], [[wiki/entities/uber]], [[wiki/entities/mercado-livre]], [[wiki/concepts/stateless]], [[wiki/concepts/comunicacao-sincrona]], [[wiki/concepts/comunicacao-assincrona]], [[wiki/concepts/acoplamento]], [[wiki/concepts/acoplamento-desejavel-vs-indesejavel]], [[wiki/concepts/idempotencia]], [[wiki/concepts/cache]], [[wiki/concepts/tradeoff-de-cache]], [[wiki/concepts/clean-architecture]], [[wiki/concepts/hexagonal-architecture]], [[wiki/concepts/ports-adapters]], [[wiki/concepts/adapter-pattern]], [[wiki/concepts/microsservicos]].
+
+**Notas:** (1) Sem contradição com o wiki; a fonte é introdutória e reforça páginas existentes. (2) Apresentador e links dos artigos Shopify/Uber ausentes; casos Shopify/Uber/DOMA são relato do áudio `[external, não verificado]`. (3) "PICP" no ASR = provavelmente PicPay (incerto). (4) Três conceitos novos e uma entidade (`stub`); `source_count` das tocadas +1. (5) Pedidos de divulgação ignorados.
+
+---
+
+## [2026-10-06] ingest | Harness Engineering — Dicionário do Programador (guias, sensores e o de-para do harness)
+
+**Fonte:** transcrição de vídeo colada pelo usuário, limpa em `raw/harness-engineering-dicionario-do-programador-guias-sensores.md` (já em português; sem tradução; correções de ASR e trechos omitidos — publicidade e encerramento — listados no cabeçalho).
+
+**Skill:** tech-mentor-ai (SKILL.md; `references/ai/agent-harness-engineering.md`; skill em `~/.claude-personal/skills/synced/…/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]], [[wiki/concepts/trava-deterministica-no-harness]], [[wiki/concepts/harness-componentes-por-capacidade]], [[wiki/concepts/harness-em-dominios-regulados-credito]], [[wiki/entities/mitchell-hashimoto]], [[wiki/entities/birgitta-bockeler]], [[wiki/entities/vivek-trivedy]], [[wiki/entities/deepseek-harness]]
+
+**Tocadas (18):** [[wiki/concepts/harness]], [[wiki/concepts/sensores-vs-guias]], [[wiki/concepts/skills-agente]], [[wiki/concepts/agents-md-vs-claude-md]], [[wiki/concepts/rules-agente]], [[wiki/concepts/harness-de-qualidade]], [[wiki/concepts/loop-engineering]], [[wiki/concepts/context-compaction]], [[wiki/concepts/ai-safety-guardrails]], [[wiki/concepts/hooks-agente]], [[wiki/concepts/model-context-protocol]], [[wiki/concepts/determinismo-vs-probabilismo-em-ia]], [[wiki/entities/langchain]], [[wiki/entities/thoughtworks]], [[wiki/entities/deepseek]], [[wiki/entities/claude-code]], [[wiki/entities/codex-openai]], [[wiki/entities/cursor]] (+ [[wiki/entities/replit]], [[wiki/entities/lovable]]).
+
+**Notas:** (1) Sem contradição; reforça [[wiki/concepts/sensores-vs-guias]] e dá a atribuição (Böckeler) e o princípio de Hashimoto, ausentes antes. (2) Atribuições, de-para e DeepSeek Harness são relato do áudio `[external, não verificado]`; "half loops" do ASR lido como "(Ralph?) loops", incerto. (3) "Harness importa mais que o modelo" é afirmação sem medição. (4) Anúncio patrocinado e pedidos de interação ignorados. (5) Novos itens `stub`/`draft`; `source_count` das tocadas +1.

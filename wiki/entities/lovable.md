@@ -3,8 +3,8 @@ type: entity
 title: "Lovable"
 aliases: ["lovable.dev", "GPT Engineer"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-10-06
+source_count: 2
 tags: [lovable, ai, produto, design, no-code, vibe-coding]
 skill: tech-mentor-frontend
 status: stub
@@ -22,6 +22,11 @@ O sucesso do Lovable não é só tecnológico — é de **design de produto**. T
 
 Lovable demonstra que design vai além do visual — é conhecer o público e construir algo direcionado para ele.
 
+## Harness Próprio
+
+Citado entre as ferramentas de código com IA que já trazem harness próprio.
+
 ## Key Sources
 
 - [[wiki/sources/design-first-vs-code-first-referencias]]
+- [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — harness embutido

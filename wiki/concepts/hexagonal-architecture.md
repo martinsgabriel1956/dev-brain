@@ -3,8 +3,8 @@ type: concept
 title: "Hexagonal Architecture (Ports & Adapters)"
 aliases: ["arquitetura hexagonal", "ports and adapters", "ports adapters", "hexagonal"]
 date_created: 2026-05-04
-date_updated: 2026-09-22
-source_count: 10
+date_updated: 2026-10-06
+source_count: 11
 tags: [arquitetura, hexagonal, ports-adapters, acoplamento, testabilidade]
 skill: tech-mentor-backend
 status: stable
@@ -144,3 +144,7 @@ it("should throw when email already exists", async () => {
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — motivação original de Cockburn (regras de negócio "vazando" para UI e banco); caso real da Netflix trocando fonte de dados via troca de adapter em uma linha
 - [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]] — Ports & Adapters como a forma de comunicação entre módulos de um [[wiki/concepts/monolito-modular]]; e como "interface já exposta" reduz a extração de um módulo para microsserviço a trocar o transporte (função → gRPC)
 - [[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] — leitura direta de que Hexagonal e Clean Architecture diferem só na nomenclatura (domain vs. entidades/use cases)
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — idem; exemplo de interface de pagamento com adapter por provedor.

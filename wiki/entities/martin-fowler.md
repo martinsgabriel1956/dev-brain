@@ -3,8 +3,8 @@ type: entity
 title: "Martin Fowler"
 aliases: ["Fowler", "martinfowler.com"]
 date_created: 2026-07-07
-date_updated: 2026-09-30
-source_count: 36
+date_updated: 2026-10-06
+source_count: 37
 tags: [thoughtworks, autor, testes, arquitetura, tech-debt, refactoring, agile]
 skill: tech-mentor-testing
 status: stable
@@ -147,3 +147,7 @@ Em [[wiki/sources/agilidade-manifesto-agil-fabio-akita]], citado como um dos 17 
 - [[wiki/sources/test-discovery-xunitpatterns]] — cita a refatoração **Rename Method** [Fowler] como técnica de migração de Test Methods para descoberta por convenção de nomenclatura
 - [[wiki/sources/rename-method-xunitpatterns]] — verbete-irmão de "Code Refactorings", terceira confirmação do padrão host≠autor: fecha a fonte primária dedicada de Rename Method, citada em test-discovery-xunitpatterns; preserva citação direta de Fowler sobre métodos pequenos demais
 - [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — imagem de contextos Vendas/Suporte citada como retirada do site de Fowler (artigo exato não verificado)
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — citado: arquitetura como o entendimento compartilhado dos desenvolvedores especialistas; decisões variam com a escala do contexto.

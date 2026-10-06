@@ -3,8 +3,8 @@ type: concept
 title: "Back Pressure"
 aliases: ["back pressure", "backpressure", "pressão de volta", "producer consumer imbalance"]
 date_created: 2026-04-23
-date_updated: 2026-09-02
-source_count: 5
+date_updated: 2026-10-06
+source_count: 6
 tags: [back-pressure, streaming, reactive, producer-consumer, flow-control]
 skill: tech-mentor-system-design
 status: stable
@@ -101,3 +101,4 @@ fromEvent(eventSource, "data").pipe(
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — back pressure citado como exemplo do "mundo debaixo do CRUD": produtor mais rápido que consumidor exige decidir entre descartar, segurar ou derrubar
 - [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — identificar o gargalo antes de escalar, técnicas baratas (poda de stale jobs, priorização, batching), e demonstração prática de admission control com low/high watermark via BullMQ + Redis
 - [[wiki/sources/ambulance-pattern-priorizacao-mensagens-mark-richards]] — starvation por competição de prioridade dentro da mesma fila, resolvida com separação física de filas em vez de controle de fluxo
+- [[wiki/sources/rate-limit-estrategias-fixed-sliding-token-leaky-bernardo-lobato]] — leaky bucket e [[wiki/concepts/client-rate-limit]] como formas de ajustar a taxa de produção à capacidade do consumidor (inferência)

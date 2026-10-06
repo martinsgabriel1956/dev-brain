@@ -3,8 +3,8 @@ type: concept
 title: "Hooks de Agente"
 aliases: ["hooks claude code", "agent hooks", "hooks automação"]
 date_created: 2026-05-31
-date_updated: 2026-07-21
-source_count: 3
+date_updated: 2026-10-06
+source_count: 4
 tags: [claude-code, hooks, automacao, agente-ia, llmops, context-engineering, harness]
 skill: tech-mentor-ai
 status: stable
@@ -124,8 +124,13 @@ Use os dois em conjunto: CLAUDE.md para contexto e diretrizes gerais, hooks para
 
 [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] cita hooks como um dos sete componentes documentados de um harness completo (ver [[wiki/concepts/harness]]): pontos onde um humano ou sistema automatizado intervém, definidos explicitamente por quem constrói o harness — não é o agente decidindo por conta própria quando escalar ou parar.
 
+## Hooks como Sensores
+
+Sensores "acionam hooks de correção" quando detectam problema após a ação do agente.
+
 ## Key Sources
 
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]] — hook de `Stop` como pattern extraction manual, precursor do closed-loop skill learning
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — hooks como componente nomeado do harness: pontos de intervenção definidos explicitamente, não decididos pelo agente
+- [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — hooks de correção acionados por sensores

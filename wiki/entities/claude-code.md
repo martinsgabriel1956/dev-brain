@@ -3,8 +3,8 @@ type: entity
 title: "Claude Code"
 aliases: ["claude code cli"]
 date_created: 2026-05-18
-date_updated: 2026-09-30
-source_count: 20
+date_updated: 2026-10-06
+source_count: 21
 tags: [ferramenta, agentes-ia, anthropic, llmops, cli, mcp, hooks]
 skill: tech-mentor-ai
 status: stable
@@ -137,6 +137,10 @@ O mecanismo de [[context-compaction]] da janela de contexto do Claude Code é um
 
 [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] reúne recursos de trabalho em escala: worktrees ([[wiki/concepts/worktree-paralelismo]]), cinco modalidades de paralelismo ([[wiki/concepts/modalidades-de-paralelismo-claude-code]]), [[wiki/concepts/agent-teams]] (experimental), [[wiki/concepts/rotinas-agendadas-claude-code]], [[wiki/concepts/integracao-navegador-claude-code]], [[wiki/concepts/computer-use]], [[wiki/concepts/sessoes-remotas-claude-code]] e [[wiki/concepts/fork-de-sessao-claude-code]]. O autor afirma que a maioria vale também para Codex, OpenCode e Cursor. Nomes e sintaxes não foram verificados na documentação atual.
 
+## Harness Próprio
+
+Citado como exemplo de ferramenta com harness embutido; `CLAUDE.md` costuma importar `AGENTS.md`.
+
 ## Key Sources
 
 
@@ -167,3 +171,4 @@ O mecanismo de [[context-compaction]] da janela de contexto do Claude Code é um
 - [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — exemplo de ferramenta cujo comportamento (skills, decisões não pedidas) precisa ser contido
 - [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — estrutura `.claude/skills/` e uso do skill-creator para avaliar skills
 - [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — dicas de paralelismo, rotinas, sessões remotas, fork
+- [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — harness embutido; CLAUDE.md importa AGENTS.md

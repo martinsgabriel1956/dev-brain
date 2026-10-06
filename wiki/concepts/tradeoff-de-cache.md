@@ -3,8 +3,8 @@ type: concept
 title: "Tradeoff de Cache"
 aliases: ["custo de cache", "complexidade de cache", "cache complexity"]
 date_created: 2026-06-26
-date_updated: 2026-08-21
-source_count: 3
+date_updated: 2026-10-06
+source_count: 4
 tags: [cache, tradeoff, arquitetura, decisao, backend]
 skill: tech-mentor-backend
 status: stable
@@ -57,3 +57,7 @@ Saber **quando invalidar** é mais difícil que implementar o cache em si. A cit
 - [[wiki/sources/two-hard-things-martin-fowler]] — origem (incerta) e curadoria da citação de Phil Karlton sobre invalidação de cache como um dos dois problemas difíceis
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
 - [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — invalidação como o problema central do cache, com três estratégias: TTL/expiração (simples, pode servir dado velho), deletar no write e atualizar no write (ambas exigem coordenação entre sistemas); citar o tradeoff é o que separa sênior de pleno na entrevista
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — saldo bancário (intolerante) vs. post de blog (tolerante) como critério de decisão.

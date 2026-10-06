@@ -4,7 +4,7 @@ title: "Adapter Pattern"
 aliases: ["padrão adapter", "design pattern adapter", "adaptador"]
 date_created: 2026-05-01
 date_updated: 2026-10-06
-source_count: 11
+source_count: 12
 tags: [design-patterns, structural, adapter, oop, integracao]
 skill: tech-mentor-backend
 status: stable
@@ -98,3 +98,7 @@ As interfaces `Input Boundary`, `Output Boundary` e `Data Access` descritas em [
 - [[wiki/sources/test-fixture-fit-xunitpatterns]] — verbete de glossário do xUnitPatterns.com: no framework Fit, "fixture" é o nome dado ao Adapter que interpreta uma tabela de dados e invoca o SUT, implementando um Data-Driven Test
 - [[wiki/sources/adapter-xunitpatterns]] — verbete de External Patterns do xUnitPatterns.com: citação direta da definição canônica do Adapter do GOF, fonte primária isolada em inglês que fecha a lacuna deixada pela aplicação ao Fit
 - [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] — Adapters no lado dos microsserviços da ACL
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — adapter do provedor de pagamento como "carinha do meio" que desacopla.

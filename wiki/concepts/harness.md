@@ -3,8 +3,8 @@ type: concept
 title: "Harness"
 aliases: ["AI harness", "harness de IA", "coding harness"]
 date_created: 2026-06-02
-date_updated: 2026-09-30
-source_count: 25
+date_updated: 2026-10-06
+source_count: 26
 tags: [harness, llm, tool-call, agente, context-engineering, erros-compostos, verificacao]
 skill: tech-mentor-ai
 status: stable
@@ -172,6 +172,10 @@ A fonte [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]]
 
 O autor de [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] argumenta que as dicas de Claude Code valem em Codex, OpenCode, Cursor e outros harnesses "porque fundamentalmente todos esses sistemas funcionam meio que da mesma maneira". É claim não verificado: os nomes das features são específicos; a ideia (isolar por worktree, paralelizar com limites, agendar, bifurcar sessão) é o que se transfere. Leitura sugerida: [[wiki/entities/anthropic-engineering-blog]].
 
+## Princípio de Hashimoto e Três Camadas (Dicionário do Programador)
+
+Fonte curta que define harness como tudo menos o modelo e traz o princípio de [[wiki/entities/mitchell-hashimoto]]: cada erro vira uma [[wiki/concepts/trava-deterministica-no-harness]]. Dois propósitos: acertar de primeira (guias) e fechar ciclo de feedback (sensores). Três camadas: modelo → harness da ferramenta → user harness. De-para de componentes em [[wiki/concepts/harness-componentes-por-capacidade]]. Ferramenta alternativa: [[wiki/entities/deepseek-harness]].
+
 ## Key Sources
 
 
@@ -200,3 +204,4 @@ O autor de [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoe
 - [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — portabilidade de workflow/skills entre Claude Code, Codex e OpenCode (alegação)
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — [[wiki/entities/rock-pro]]: harness de aprendizado que é 'literalmente uma RAG'; o autor critica confundir harness/loop engineering com 'usar Claude Code'
 - [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — transferibilidade das dicas entre harnesses
+- [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — definição, princípio de Hashimoto, três camadas, DeepSeek Harness

@@ -4,7 +4,7 @@ title: "Cache"
 aliases: ["caching", "cache de aplicação"]
 date_created: 2026-06-26
 date_updated: 2026-10-06
-source_count: 20
+source_count: 21
 tags: [cache, performance, redis, arquitetura, backend, grande-rollback, buffer]
 skill: tech-mentor-backend
 status: stable
@@ -118,3 +118,7 @@ Aviso: cache é cópia temporária reconstruível; tratá-lo como única fonte d
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — cache in-memory dentro do servidor (`Map`, Redis local) é estado global e quebra [[wiki/concepts/stateless]]. Ver [[wiki/concepts/estado-global-em-servidor]].
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — cache como troca de frescor por latência/custo; ver [[wiki/concepts/tolerancia-a-desatualizacao-de-cache]].

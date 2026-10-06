@@ -3,8 +3,8 @@ type: concept
 title: "Application Boundary — Aplicações como Construções Sociais"
 aliases: ["fronteira de aplicação", "limite de aplicação", "applications are social constructions"]
 date_created: 2026-07-20
-date_updated: 2026-08-21
-source_count: 5
+date_updated: 2026-10-06
+source_count: 6
 tags: [arquitetura, ddd, bounded-context, contexto-organizacional, martin-fowler]
 skill: tech-mentor-backend
 status: stub
@@ -53,3 +53,7 @@ Fowler publicou [[wiki/sources/seedwork-martin-fowler]] no mesmo dia (11 de sete
 - [[wiki/sources/seedwork-martin-fowler]] — mesma tese (fronteira como construção social) aplicada ao porquê de reuso de código entre aplicações ser difícil
 - [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — mesma tese aplicada à fronteira de serviço, via Lei de Conway
 - [[wiki/sources/talk-about-platforms-evan-bottcher]] — mesma tese na fronteira de time/plataforma: onde uma plataforma "termina" é decisão organizacional (funding de produto, ownership), não só técnica
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — "aplicação" varia por observador: dev (repositório), cliente (interface), negócio (verba única); exemplos Globoplay e Mercado Livre.

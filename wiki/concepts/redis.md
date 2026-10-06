@@ -3,8 +3,8 @@ type: concept
 title: "Redis"
 aliases: ["redis cache", "redis db"]
 date_created: 2026-06-26
-date_updated: 2026-10-05
-source_count: 14
+date_updated: 2026-10-06
+source_count: 16
 tags: [redis, cache, nosql, banco-in-memory, chave-valor, backend, grande-rollback]
 skill: tech-mentor-backend
 status: stable
@@ -95,6 +95,10 @@ Citado como o cache mais comum: guarda `user_id` → `photo_url` com TTL de 5 mi
 
 Como chave-valor: sessão, código de verificação, contador de rate limit e cache — nunca fonte única ([[wiki/concepts/fonte-de-verdade-vs-copia-derivada]], [[wiki/concepts/chave-valor]]).
 
+## Contador de Rate Limit Compartilhado
+
+Store típico do estado de [[wiki/concepts/rate-limit-estado-compartilhado]]: todas as instâncias consultam o mesmo contador; vira dependência crítica/possível gargalo. Alternativas de nuvem citadas: Memorystore, Azure Cache for Redis, DynamoDB.
+
 ## Key Sources
 
 
@@ -112,3 +116,5 @@ Como chave-valor: sessão, código de verificação, contador de rate limit e ca
 - [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — cache de placar pré-computado alimentado por um consumer group Kafka dedicado, evitando recalcular a timeline completa a cada leitura; Redis Pub/Sub propagando atualizações para conexões SSE distribuídas entre instâncias
 - [[wiki/sources/world-cup-system-design]] — slide deck da mesma aula: Redis de cache e Redis Pub/Sub desenhados como duas instâncias separadas, só a de cache clusterizada na arquitetura final
 - [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — Instagram simplificado: Redis como cache da URL da foto de perfil (TTL 5 min)
+- [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — contador compartilhado de rate limit
+- [[wiki/sources/rate-limit-estrategias-fixed-sliding-token-leaky-bernardo-lobato]] — citado como próximo tema (estado compartilhado do rate limit) na parte 2

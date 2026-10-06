@@ -4,7 +4,7 @@ title: "Comunicação Síncrona"
 aliases: ["synchronous communication", "chamada síncrona", "request-response bloqueante"]
 date_created: 2026-09-30
 date_updated: 2026-10-06
-source_count: 4
+source_count: 5
 tags: [comunicacao-sincrona, rest, acoplamento, resiliencia, arquiteturas-distribuidas]
 skill: tech-mentor-backend
 status: stub
@@ -32,3 +32,7 @@ Cadeia de HTTP entre serviços com dependências externas vira [[wiki/concepts/m
 - [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — escolha síncrono vs. assíncrono apontada como decisão a tomar 'o quanto antes' em arquitetura distribuída
 - [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — cadeia HTTP Pedidos→Pagamentos→Nota→Estoque→E-mail
 - [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — gatilho HTTP síncrono de um [[wiki/concepts/microagente]], alternativa à via por eventos
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — pergunta-guia "preciso do resultado agora?"; verificação de CNH/CPF de até 30 min força o assíncrono.

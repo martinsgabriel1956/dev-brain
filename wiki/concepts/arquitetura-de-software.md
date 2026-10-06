@@ -3,8 +3,8 @@ type: concept
 title: "Arquitetura de Software"
 aliases: ["software architecture", "decisao arquitetural"]
 date_created: 2026-07-03
-date_updated: 2026-08-21
-source_count: 13
+date_updated: 2026-10-06
+source_count: 14
 tags: [arquitetura, carreira, fundamentos, ia, pos-graduacao]
 skill: tech-mentor-leadership
 status: draft
@@ -89,3 +89,7 @@ Nenhum desses livros foi lido/ingerido diretamente ainda no wiki — são citaç
 - [[wiki/sources/objetos-vs-estruturas-de-dados-clean-architecture]] — fluxo detalhado de Clean Architecture numa aplicação web e a distinção objeto vs. estrutura de dados que o sustenta
 - [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — definição de abertura ("determinar componentes, definir comunicação, garantir requisitos e padrões de qualidade") e a palavra-chave **tradeoff** como fio condutor de toda decisão arquitetural, demonstrada passo a passo sobre um encurtador de URL
 - [[wiki/sources/filosofia-do-design-de-software-livro-completo]] — camadas adjacentes devem ter abstrações diferentes (Cap. 7); pass-through methods, decorators e variáveis de contexto
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — definição pelo papel (dividir, comunicar, restrições, qualidades, dados), Fowler como entendimento compartilhado, e as perguntas-guia stateless/síncrono/acoplamento/idempotência/cache. Ver [[wiki/concepts/dimensoes-de-decisao-arquitetural]].

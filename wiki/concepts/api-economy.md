@@ -3,8 +3,8 @@ type: concept
 title: "API Economy"
 aliases: ["economia das APIs", "API como produto", "API-as-a-product"]
 date_created: 2026-08-18
-date_updated: 2026-08-24
-source_count: 2
+date_updated: 2026-10-06
+source_count: 3
 tags: [api-economy, modelo-de-negocio, api, historia-da-computacao]
 skill: tech-mentor-backend
 status: stub
@@ -27,7 +27,12 @@ A API Economy é o pano de fundo direto da criação do [[wiki/concepts/oauth2|O
 
 O crescimento do consumo massivo de APIs públicas/comerciais é uma das forças que empurra a necessidade de padrões de segurança e governança (OAuth, OpenID Connect, API Gateway) nos anos seguintes — sem eles, expor API como produto em escala vira risco de abuso e falta de controle de acesso.
 
+## Rate Limit e API Economy
+
+Com a popularização das APIs e da API Economy, o controle de taxa migrou das redes para APIs, gateways e LBs. Ver [[wiki/concepts/rate-limiting]].
+
 ## Key Sources
 
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — as duas ondas de API economy (anos 2000 abertura pública, anos 2010 API como produto), e a pressão resultante por segurança/governança nos anos 2020
 - [[wiki/sources/historia-oauth2-antipadrao-senha-bernardo-lobato]] — 2006 como o momento em que o antipadrão da senha se tornou insustentável frente ao crescimento da API Economy, motivando a criação do OAuth
+- [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — controle de taxa chega a APIs e gateways

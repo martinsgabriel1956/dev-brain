@@ -3,8 +3,8 @@ type: entity
 title: "Replit"
 aliases: ["Replit", "Replit Core", "Replit Agent"]
 date_created: 2026-07-24
-date_updated: 2026-07-24
-source_count: 1
+date_updated: 2026-10-06
+source_count: 2
 tags: [ferramenta, agentes-ia, saas, plataforma, vibe-coding]
 skill: tech-mentor-system-design
 status: stub
@@ -21,6 +21,11 @@ Plataforma de desenvolvimento com agentes de IA (Replit Agent) usada para protot
 - **Colaboração multiplayer**: convite de colaboradores como editores do mesmo projeto, com tarefas atribuídas a diferentes pessoas visíveis no mesmo taskboard.
 - **Plano Replit Core**: $10 de crédito de bônus, 20 dólares/mês em créditos, até cinco colaboradores convidados, trabalho em paralelo com até dois agentes, publicação em qualquer região, múltiplos workspaces.
 
+## Harness Próprio
+
+Citado (ASR "RLIT") entre as ferramentas de código com IA que já trazem harness próprio.
+
 ## Key Sources
 
 - [[wiki/sources/system-design-simulador-hotel-booking-replit]] — demonstração de criação de um SaaS (simulador de system design) do zero, incluindo fluxo de tarefas paralelas e teste automático end-to-end
+- [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — harness embutido

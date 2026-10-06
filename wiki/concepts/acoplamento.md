@@ -3,8 +3,8 @@ type: concept
 title: "Acoplamento"
 aliases: ["coupling", "baixo acoplamento", "alto acoplamento"]
 date_created: 2026-04-25
-date_updated: 2026-10-05
-source_count: 16
+date_updated: 2026-10-06
+source_count: 17
 tags: [acoplamento, software-design, clean-code, arquitetura, under-engineering]
 skill: tech-mentor-backend
 status: stable
@@ -131,3 +131,7 @@ Ver [[wiki/concepts/monolito-distribuido]]: dependências externas síncronas ac
 
 - [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]] — Os três acoplamentos que mais impedem o teste unitário — `new` de infraestrutura, herança com tecnologia e métodos estáticos — estão em [[wiki/concepts/acoplamento-que-impede-teste-unitario]]; a distinção entre dependência desejável (runtime, domínio) e indesejável (infraestrutura) em [[wiki/concepts/acoplamento-desejavel-vs-indesejavel]].
 - [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — acoplamento de disponibilidade em microsserviços
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — acoplamento legítimo (regra de negócio) restrito ao status vs. acoplamento a detalhes internos. Ver [[wiki/concepts/acoplamento-de-negocio-vs-detalhe-interno]].

@@ -3,8 +3,8 @@ type: concept
 title: "Skills (Padrão de Harness)"
 aliases: ["skills harness", "agents skills", "skill pattern ia", "skills.sh"]
 date_created: 2026-06-02
-date_updated: 2026-09-29
-source_count: 12
+date_updated: 2026-10-06
+source_count: 13
 tags: [skills, harness, context-engineering, lazy-loading, system-prompt, grill-me, rfc, babysitting-de-agentes, produto-de-consumo]
 skill: tech-mentor-ai
 status: stable
@@ -124,6 +124,10 @@ Relato em [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes
 
 [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] mostra como medir uma skill em vez de confiar na intuição: (1) a description é otimizada em loop com queries *should trigger* ([[wiki/concepts/otimizacao-de-descricao-de-skill]]); (2) o valor da skill é medido rodando com e sem ela por modelo ([[wiki/concepts/benchmark-com-e-sem-skill]]) — no relato, ~90% vs. ~50% no Haiku e 100/100 nos dois casos no Opus, ou seja, a skill compensa modelo menor e pode ser dispensável em modelo forte. Ver [[wiki/concepts/avaliacao-de-skills]] e [[wiki/entities/skill-creator]].
 
+## Exemplo: Skill de Validação de Migração de Banco
+
+Skill que identifica alterações destrutivas ou com lock (drop de coluna), roda script de validação de sintaxe e emite relatório aprovando/bloqueando. Skills = biblioteca sob demanda em vez de tudo no contexto inicial.
+
 ## Key Sources
 
 
@@ -139,3 +143,4 @@ Relato em [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes
 - [[wiki/sources/guia-pratico-subagents-claude-code-configuracao-fork-invocacao]] — campo `skills` na configuração de um subagent customizado: pré-injeção explícita de skills relevantes ao papel do agente, ou bloqueio via `disallowedTools`
 - [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — skill que piora o modelo (relato, sem medição)
 - [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — avaliação de skills: loop de description e benchmark com/sem skill em Haiku vs. Opus
+- [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — exemplo de skill de validação de migração

@@ -4,7 +4,7 @@ title: "Spring Boot"
 aliases: ["Spring", "Spring Framework"]
 date_created: 2026-08-24
 date_updated: 2026-10-06
-source_count: 3
+source_count: 4
 tags: [java, spring-boot, framework, backend]
 skill: tech-mentor-leadership
 status: stub
@@ -25,8 +25,13 @@ Framework Java para construção de aplicações backend, usado como estudo de c
 
 Convenção de nomenclatura de métodos de repositório que gera a query automaticamente a partir do nome — ex.: `findDistinctByLastnameAndFirstname` gera um `SELECT DISTINCT` filtrando por sobrenome e nome, sem escrever SQL/JPQL manualmente.
 
+## Rate Limit no Ecossistema Spring
+
+[[wiki/entities/spring-cloud-gateway]] (RequestRateLimiter) e [[wiki/entities/bucket4j]] (token bucket na aplicação, integrável ao Spring Security).
+
 ## Key Sources
 
 - [[wiki/sources/como-ler-documentacao-de-uma-linguagem-de-programacao]]
 - [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — [[wiki/entities/spring-ai]] como projeto do ecossistema usado para RAG (Spring Boot 4, Java 25)
 - [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — Flyway integrado ao Spring Boot (Java 21, Spring Data JPA, Spring Web); scripts em `db/migration` rodam na subida
+- [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — Spring Cloud Gateway e Bucket4j para rate limit

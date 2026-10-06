@@ -3,8 +3,8 @@ type: concept
 title: "Sliding Window"
 aliases: ["janela deslizante", "sliding window", "janela móvel"]
 date_created: 2026-08-12
-date_updated: 2026-08-12
-source_count: 1
+date_updated: 2026-10-06
+source_count: 2
 tags: [cs-fundamentals, algoritmos, array, string, two-pointer]
 skill: cs-fundamentals
 status: stub
@@ -22,6 +22,9 @@ Padrão que mantém uma **janela contígua** (subarray/substring) sobre uma estr
 - [[wiki/concepts/array]] — depende de acesso O(1) por índice
 - [[wiki/concepts/reconhecimento-de-padroes]] — reconhecer "subarray/substring contíguo ótimo" ≈ sliding window
 
+Desambiguação: o uso em rate limit (janela dos últimos 60 s por cliente) está em [[wiki/concepts/sliding-window-rate-limit]]; esta página trata da técnica de algoritmos.
+
 ## Key Sources
 
 - [[wiki/sources/como-ficar-bom-em-leetcode]] — listado entre os padrões prioritários a dominar sobre arrays
+- [[wiki/sources/rate-limit-estrategias-fixed-sliding-token-leaky-bernardo-lobato]] — homônimo em rate limit: ver [[wiki/concepts/sliding-window-rate-limit]]

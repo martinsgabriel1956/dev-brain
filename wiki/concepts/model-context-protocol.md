@@ -3,8 +3,8 @@ type: concept
 title: "Model Context Protocol (MCP)"
 aliases: ["MCP", "model context protocol", "protocol mcp"]
 date_created: 2026-06-02
-date_updated: 2026-09-29
-source_count: 8
+date_updated: 2026-10-06
+source_count: 9
 tags: [mcp, model-context-protocol, tools, harness, json-rpc, anthropic]
 skill: tech-mentor-ai
 status: stable
@@ -61,6 +61,10 @@ A tendência é que empresas como Salesforce passem a oferecer MCPs como interfa
 
 MCPs de domínio (Tools que expõem um backend inteiro, não uma função isolada) permitem que um agente correlacione dados sem que o humano escreva a query manualmente — ex. um MCP de Grafana expondo Prometheus/Loki/Tempo para investigação de incidentes. Ver [[wiki/concepts/investigacao-de-incidentes-com-ia-e-mcp]].
 
+## MCP no De-Para
+
+MCPs aparecem como parte da capacidade "lembrar e acessar novos conhecimentos" ao lado de arquivos de memória e web search.
+
 ## Key Sources
 
 
@@ -72,3 +76,4 @@ MCPs de domínio (Tools que expõem um backend inteiro, não uma função isolad
 - [[wiki/sources/monitoramento-aplicacoes-ia-grafana-cloud-opentelemetry]] — configuração de "skills" no assistente do Grafana Cloud como exemplo prático da distinção MCP vs Skills fora do ecossistema Claude
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — migração de STDIO para streamable HTTP como requisito de escala e SSE como transporte depreciado
 - [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] — mudança de spec (2026) removendo handshake/sessão stateful do core do protocolo; método `server discover`; cross-call state via handle assinado pelo servidor
+- [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — MCP como memória/conhecimento

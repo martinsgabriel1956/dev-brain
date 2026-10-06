@@ -3,8 +3,8 @@ type: concept
 title: "Sensores vs Guias (User Harness)"
 aliases: ["sensores harness", "guias harness", "sensors guides ai", "feedback loop ia"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
-source_count: 2
+date_updated: 2026-10-06
+source_count: 3
 tags: [harness, sensores, guias, feedback-loop, context-engineering, autocorrecao]
 skill: tech-mentor-ai
 status: stable
@@ -61,7 +61,12 @@ Em projetos com 1 milhão de linhas de código, não é possível fazer `node he
 - Cada iteração aumenta a janela de contexto (custo)
 - Usuário precisa supervisionar manualmente (L1/L2)
 
+## Origem da Dicotomia: Böckeler
+
+[[wiki/entities/birgitta-bockeler]] ([[wiki/entities/thoughtworks]]) é citada como origem da divisão guias=feed-forward / sensores=feedback. Sensores listados: testes, linters, type checkers, testes de integração, logs, métricas/observabilidade. Guias: `AGENTS.md`, `CLAUDE.md`, skills. Ver [[wiki/concepts/trava-deterministica-no-harness]].
+
 ## Key Sources
 
 - [[wiki/sources/formacao-ia-devs-aula-01-context-harness-engineering]]
 - [[wiki/sources/formacao-ia-devs-aula-02-mcp-parte2]]
+- [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — origem (Böckeler), sensores = feedback com hooks de correção

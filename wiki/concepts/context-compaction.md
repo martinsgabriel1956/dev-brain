@@ -3,8 +3,8 @@ type: concept
 title: "Compactação de Contexto"
 aliases: ["context compaction", "compact", "context compression", "sumarização de contexto"]
 date_created: 2026-05-31
-date_updated: 2026-07-21
-source_count: 2
+date_updated: 2026-10-06
+source_count: 3
 tags: [claude-code, context-window, compactacao, agente-ia, llmops, context-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -88,7 +88,12 @@ A compactação automática é um dos mecanismos que alimenta o fenômeno [[toke
 
 A compactação não é idêntica a um reset completo — mas é uma degradação do contexto que pode ser frustrante quando você estava em um estado rico de raciocínio.
 
+## Compactação como Componente de Harness
+
+Citada no de-para de Trivedy ao lado de tool-offloading e skills como mecanismo para manter desempenho em contexto longo.
+
 ## Key Sources
 
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — `/clear` para contexto não relacionado, `/context` para inspeção, escopo de diretório mínimo
+- [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — compactação + tool-offloading + skills

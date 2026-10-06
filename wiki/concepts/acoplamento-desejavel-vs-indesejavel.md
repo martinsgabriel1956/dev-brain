@@ -3,8 +3,8 @@ type: concept
 title: "Acoplamento Desejável vs. Indesejável (new)"
 aliases: ["quando usar new", "new de domínio vs infraestrutura"]
 date_created: 2026-10-05
-date_updated: 2026-10-05
-source_count: 1
+date_updated: 2026-10-06
+source_count: 2
 tags: [acoplamento, new, dominio, infraestrutura, injecao-de-dependencia]
 skill: tech-mentor-testing
 status: draft
@@ -22,3 +22,7 @@ Critério prático: *se o teste não deveria precisar saber que isso existe, é 
 ## Key sources
 
 - [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]]
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — mesma ideia no nível de serviços: matrícula × cobrança. Ver [[wiki/concepts/acoplamento-de-negocio-vs-detalhe-interno]].

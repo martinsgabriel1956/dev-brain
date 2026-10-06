@@ -3,8 +3,8 @@ type: concept
 title: "Load Balancer"
 aliases: ["lb", "load balancing", "l4", "l7", "round robin"]
 date_created: 2026-04-23
-date_updated: 2026-09-30
-source_count: 22
+date_updated: 2026-10-06
+source_count: 23
 tags: [load-balancer, l4, l7, round-robin, health-check, alta-disponibilidade, infra, nginx]
 skill: tech-mentor-infra
 status: stub
@@ -84,6 +84,10 @@ Nem todo [[wiki/concepts/reverse-proxy]] é um load balancer: um LB decide **ent
 
 No caso didático, o LB resolve "muitos acessos derrubando o back end": adicionar múltiplas instâncias e balancear a carga; regra de uso = sempre que houver múltiplos servidores servindo a mesma API. Primeiro bloco aplicado ao caso, antes de CDN, cache e fila (ver [[wiki/concepts/building-blocks-system-design]]).
 
+## Rate Limit no Load Balancer
+
+LB/proxy reverso aplica rate limit com regras mais genéricas que um API Gateway. Ver [[wiki/concepts/rate-limit-camadas-de-posicionamento]].
+
 ## Key Sources
 
 - [[wiki/sources/fase-1-fundamentos-infraestrutura]] — Fundamentos de infraestrutura: DNS (TTL, tipos de record), Load Balancer (L4 vs L7, algoritmos), CDN (edge cache, origem), Cache (hit/miss, eviction, invalidação), Banco de Dados (ACID, replicação,...
@@ -108,3 +112,4 @@ No caso didático, o LB resolve "muitos acessos derrubando o back end": adiciona
 - [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — Amazon Elastic Load Balancer distribuindo tráfego entre servidores redundantes de cada microsserviço, justificado pelo requisito não-funcional de resiliência a falhas
 - [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — ao introduzir o LB, o DNS passa a apontar para o IP público do LB (não mais dos servidores), e os servidores de aplicação passam a usar IPs privados inacessíveis diretamente da internet — citado explicitamente como boa prática de segurança, não só de escala
 - [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — Instagram simplificado: LB (Nginx/AWS) como resposta a picos que derrubam o back end; sem discutir LB como ponto único de falha
+- [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — rate limit genérico em LB/proxy

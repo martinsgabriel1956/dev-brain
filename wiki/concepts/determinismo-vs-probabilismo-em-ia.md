@@ -3,8 +3,8 @@ type: concept
 title: "Determinismo vs. Probabilismo em IA"
 aliases: ["ferramenta certa para a tarefa ia", "analise semantica vs analise deterministica", "llm como juiz determinístico"]
 date_created: 2026-07-27
-date_updated: 2026-09-30
-source_count: 3
+date_updated: 2026-10-06
+source_count: 4
 tags: [determinismo, robustez-de-sistemas, tokenizacao, era-agentica, harness-de-qualidade]
 skill: tech-mentor-ai
 status: draft
@@ -38,8 +38,13 @@ Usar um LLM para validação determinística é como usar um carro de corrida pa
 
 [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] busca "reproduzir exatamente" o comportamento de uma versão antiga registrando prompt, modelo e temperatura. Como o LLM é probabilístico, isso reduz mas não elimina a variação `[inferência]`; ver [[wiki/concepts/versionamento-de-prompt]].
 
+## Trava Determinística
+
+Prompt é probabilístico; trava no harness é determinística — [[wiki/concepts/trava-deterministica-no-harness]].
+
 ## Key Sources
 
 - [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]]
 - [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — determinismo aplicado à execução da esteira
 - [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — reprodutibilidade de prompt e seus limites
+- [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — trava determinística vs prompt

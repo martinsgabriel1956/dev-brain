@@ -3,8 +3,8 @@ type: concept
 title: "WAF (Web Application Firewall)"
 aliases: ["waf", "web application firewall", "firewall de aplicação"]
 date_created: 2026-06-05
-date_updated: 2026-09-30
-source_count: 8
+date_updated: 2026-10-06
+source_count: 9
 tags: [waf, ddos, owasp, borda, attack-surface, cloud-security, aws-waf, cloudflare, under-attack-mode, syn-flood]
 skill: tech-mentor-security
 status: stable
@@ -63,6 +63,10 @@ Um WAF inspeciona tráfego HTTP entre cliente e servidor — não tem visibilida
 
 [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] cita o WAF (que controla também a saída) na lista de estudo, e diz que **DoS/DDoS não é tratado no app**, dependendo de proteção de borda (Hostinger/Cloudflare).
 
+## WAF e Rate Limit na Borda
+
+Na borda (CDN/WAF/nuvem) o rate limit bloqueia cedo e barato e compõe a defesa contra DDoS, mas conhece pouco do domínio. Ver [[wiki/concepts/rate-limit-camadas-de-posicionamento]].
+
 ## Key Sources
 
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — WAF na lista de estudo; DDoS delegado à borda
@@ -73,3 +77,4 @@ Um WAF inspeciona tráfego HTTP entre cliente e servidor — não tem visibilida
 - [[wiki/sources/xss-cross-site-scripting-luiz-viana]] — DOM-based XSS como caso onde o WAF não tem visibilidade, porque o payload nunca é enviado ao servidor
 - [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] — WAF posicionado como última de sete camadas de defesa contra SQLi, sem expectativa de cobertura total
 - [[wiki/sources/sql-injection-sqlmap-luiz-viana]] — lado ofensivo: tampers do SQLMap (`space2comment`, `randomcase`) e `--random-agent`/`--delay` como técnicas de bypass de WAF/filtro anti-injeção
+- [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — rate limit na borda

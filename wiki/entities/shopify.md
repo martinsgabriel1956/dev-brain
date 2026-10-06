@@ -3,8 +3,8 @@ type: entity
 title: "Shopify"
 aliases: ["shopify inc"]
 date_created: 2026-07-07
-date_updated: 2026-09-14
-source_count: 2
+date_updated: 2026-10-06
+source_count: 3
 tags: [e-commerce, mysql, redis, skip-locked, escala, grande-rollback, claude-code, agents-md, agentes-ia]
 skill: tech-mentor-backend
 status: stub
@@ -36,3 +36,7 @@ Tobi Lütke declarou publicamente estar considerando banir o [[wiki/entities/cla
 
 - [[wiki/sources/shopify-redis-para-mysql-skip-locked-black-friday]]
 - [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] — CEO técnico shipando código, contrato antecipado com OpenAI, controvérsia AGENTS.md
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — citada como caso de transição de monolito para microsserviços (relato do áudio, não verificado).

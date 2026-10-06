@@ -3,8 +3,8 @@ type: concept
 title: "Ports Adapters"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-10-05
-source_count: 3
+date_updated: 2026-10-06
+source_count: 4
 tags: [ports-adapters]
 skill: tech-mentor-backend
 status: stub
@@ -31,3 +31,7 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 ## Key sources (adição 2026-10-05)
 
 - [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]] — Classes de infraestrutura atrás de interface, fora do método de negócio, é a mesma ideia aplicada ao teste unitário ([[wiki/concepts/acoplamento-que-impede-teste-unitario]], [[wiki/concepts/acoplamento-desejavel-vs-indesejavel]]).
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — interface de pagamento implementada por adapters (PicPay/Itaú) para a cobrança não depender do provedor.

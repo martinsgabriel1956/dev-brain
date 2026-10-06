@@ -3,8 +3,8 @@ type: concept
 title: "Status Code HTTP"
 aliases: ["status code", "códigos de status http", "401 vs 403", "200 404 500"]
 date_created: 2026-09-30
-date_updated: 2026-09-30
-source_count: 1
+date_updated: 2026-10-06
+source_count: 2
 tags: [http, api, status-code, erros]
 skill: tech-mentor-networking
 status: stub
@@ -30,5 +30,10 @@ Número na resposta que **comunica o resultado da intenção** do cliente. Pergu
 
 [external] Famílias: 1xx informativo, 2xx sucesso, 3xx redirecionamento, 4xx erro do cliente, 5xx erro do servidor (RFC 9110 §15, https://www.rfc-editor.org/rfc/rfc9110#name-status-codes).
 
+## 429 Too Many Requests
+
+Definido pela RFC 6585 (2012), com `Retry-After` opcional. Ver [[wiki/concepts/http-429-too-many-requests]].
+
 ## Key sources
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — lista comentada de status e mudança de pergunta
+- [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — 429 e RFC 6585

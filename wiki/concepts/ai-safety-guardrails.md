@@ -3,8 +3,8 @@ type: concept
 title: "Guardrails de IA"
 aliases: ["guardrails", "ai guardrails", "input/output filters llm"]
 date_created: 2026-08-14
-date_updated: 2026-08-27
-source_count: 4
+date_updated: 2026-10-06
+source_count: 5
 tags: [guardrails, seguranca, ai-safety, prompt-injection, agent-containment]
 skill: tech-mentor-security
 status: stub
@@ -38,9 +38,14 @@ A mesma fonte descreve o guardrail como um **eixo de roteamento de modelo**, ort
 - [[wiki/concepts/agent-containment]] — a camada de contenção (sandboxing) é a última linha de defesa do modelo de guardrails, para quando input/output filters já falharam.
 - [[wiki/concepts/design-patterns-ia]] — guardrails como uma das categorias de "pattern de segurança" focado em IA.
 
+## Limites Rígidos em Crédito
+
+Exemplo de guardrail de domínio regulado: teto de aprovação automática, explicação auditável, conformidade regulatória ([[wiki/concepts/harness-em-dominios-regulados-credito]]).
+
 ## Key Sources
 
 - [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] — guardrail sobre resultado de tool (não só sobre input/output do modelo) como ponto de aplicação dentro do agent loop
 - [[wiki/sources/ai-safety-guardrails]]
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — guardrails como validação antes/depois de chamar agente ou tool, ao lado de jailbreak/prompt injection e OWASP Top 10 LLM
 - [[wiki/sources/levelsio-china-guardrails-multi-modelo-opus-5]] — caso Levelsio (falso positivo/downgrade Opus→Sonnet, sermão de saúde) como fricção real de guardrail agressivo; guardrail como eixo de roteamento de modelo
+- [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — guardrails de crédito

@@ -3,8 +3,8 @@ type: concept
 title: "API Gateway"
 aliases: ["api gateway", "gateway de api", "ponto único de entrada de api"]
 date_created: 2026-07-23
-date_updated: 2026-08-27
-source_count: 9
+date_updated: 2026-10-06
+source_count: 11
 tags: [api-gateway, arquitetura-distribuida, gatekeeper, roteamento, edge-functions, single-point-of-failure]
 skill: tech-mentor-backend
 status: stable
@@ -90,6 +90,10 @@ Segundo [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]], o API Gat
 
 [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] atribui explicitamente ao API Gateway a responsabilidade de rotear requisições entre os ecossistemas de escrita e leitura em [[wiki/concepts/cqrs]] — por método HTTP (POST/PUT → escrita, GET → leitura) mesmo quando ambos os lados compartilham o mesmo código-fonte, ou por host/serviço quando write e read já são deployments distintos. A recomendação central: essa segmentação deve ficar no Gateway, não ser empurrada para o frontend — senão o cliente passa a carregar a responsabilidade de saber qual host chamar.
 
+## Rate Limit no Gateway
+
+Gateway centraliza rate limit com políticas mais sofisticadas que LB (auth, identificação de cliente, roteamento): [[wiki/entities/spring-cloud-gateway]] (RequestRateLimiter + Redis, token bucket) e [[wiki/entities/kong]]. Ver [[wiki/concepts/rate-limit-camadas-de-posicionamento]].
+
 ## Key Sources
 
 - [[wiki/sources/api-gateway-bff]]
@@ -101,3 +105,5 @@ Segundo [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]], o API Gat
 - [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — REST API vs. HTTP API, integração com Lambda/EC2/ECS/DynamoDB, e as três formas de autorização (IAM, Cognito, Lambda Authorizer)
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — API Gateway como resposta de governança/segurança ao consumo massivo de API nos anos 2020, junto de OAuth e OpenID Connect
 - [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — Amazon API Gateway como ponto de entrada único da stack de exemplo de um encurtador de URL, integrado ao Cognito para autorizar endpoints protegidos
+- [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — rate limit centralizado no gateway (Spring Cloud Gateway, Kong)
+- [[wiki/sources/rate-limit-estrategias-fixed-sliding-token-leaky-bernardo-lobato]] — gateways oferecem fixed window e token bucket; cotas contratuais de API em SaaS/gateway

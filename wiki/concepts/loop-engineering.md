@@ -3,8 +3,8 @@ type: concept
 title: "Loop Engineering"
 aliases: ["loop engineering", "engenharia de loop", "loop de harness", "loop fixo", "loop criador"]
 date_created: 2026-07-10
-date_updated: 2026-09-30
-source_count: 11
+date_updated: 2026-10-06
+source_count: 12
 tags: [loop-engineering, harness, agente, automacao, planner-executor-critic, loop-fixo, loop-criador, spec-driven, ralph-loop, anthropic, graph-engineering, loop-deterministico, loop-agentico, judge-pattern, orquestracao-de-modelos, langchain, erro-composto, quality-gate, agent-containment]
 skill: tech-mentor-ai
 status: stable
@@ -218,6 +218,10 @@ O autor reforça, com outras palavras, a mesma distinção já registrada acima 
 
 [[wiki/concepts/rotinas-agendadas-claude-code]] cobre `/loop` local e rotinas na nuvem do [[wiki/entities/claude-code]] (health check, revisão de PRs abertos): um loop disparado por horário, contraparte do loop disparado por evento acima. Fonte: [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]].
 
+## Loops no De-Para de Trivedy
+
+Na última linha do de-para, trabalho de longo prazo = loops + planejamento + verificação ([[wiki/concepts/harness-componentes-por-capacidade]]); o vídeo cita meta harness, loop e graph engineering como termos subsequentes.
+
 ## Key Sources
 
 - [[wiki/sources/loop-engineering-planner-critic-grafo]]
@@ -231,3 +235,4 @@ O autor reforça, com outras palavras, a mesma distinção já registrada acima 
 - [[wiki/sources/graph-engineering-matematica-do-erro-composto]] — continuação direta de [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]]; data concreta do tweet-origem (18 de julho); extensão da composição de erro para handoffs entre agentes (85%→44% em 5 saltos); grafo exige verificador por nó, não um único gargalo
 - [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] — estrutura operacional dos quatro arquivos (`prompt.md`/`fixplan.md`/specs/`agents.md`) e do gate; checklist de seis itens de segurança; desastres reais (banco apagado no Replit, teste trapaceado, estudo de 19% mais lento); casos de sucesso relatados; árvore de decisão spec vs. loop; demonstração de `/loop` nativo com deploy via MCP da Hostinger
 - [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — loop por tempo (rotinas)
+- [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — loops como componente de trabalho longo

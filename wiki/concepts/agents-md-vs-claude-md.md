@@ -3,8 +3,8 @@ type: concept
 title: "AGENTS.md vs. CLAUDE.md"
 aliases: ["agents.md", "fragmentação de config de agentes", "controvérsia agents md shopify"]
 date_created: 2026-09-14
-date_updated: 2026-09-21
-source_count: 2
+date_updated: 2026-10-06
+source_count: 3
 tags: [claude-code, agents-md, claude-md, padronizacao, interoperabilidade, multi-agente, shopify]
 skill: tech-mentor-ai
 status: stub
@@ -44,7 +44,12 @@ Independente da controvérsia pública específica, a fonte aponta que compartil
 - [[wiki/concepts/sdlc-nativo-de-ia]] — listado como uma das lacunas do framework de 5 regras
 - [[wiki/entities/codex-openai]] — agente que lê `AGENTS.md`
 
+## `AGENTS.md` como README para Agentes
+
+`AGENTS.md` na raiz com regras globais + arquivos adicionais em subpastas/módulos; `CLAUDE.md` frequentemente importa o `AGENTS.md` e acrescenta só o específico do Claude Code.
+
 ## Key Sources
 
 - [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]]
 - [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] — enquadra `AGENTS.md`/`CLAUDE.md` como documentação para uma "terceira audiência" (o agente), além de compilador e humano
+- [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — AGENTS.md hierárquico; CLAUDE.md importa AGENTS.md

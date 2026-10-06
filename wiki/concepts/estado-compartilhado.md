@@ -4,7 +4,7 @@ title: "Estado Compartilhado"
 aliases: ["shared state", "estado global", "estado mutável", "estado"]
 date_created: 2026-04-25
 date_updated: 2026-10-06
-source_count: 2
+source_count: 3
 tags: [estado, estado-compartilhado, software-design, imutabilidade, debugging]
 skill: tech-mentor-backend
 status: stable
@@ -73,6 +73,11 @@ Estado compartilhado via `useState` que passa por props cria prop drilling e aco
 
 - [[wiki/sources/acoplamento-abstracao-estado]]
 
+## Caso: Contador de Rate Limit
+
+Contadores em memória por instância quebram o limite (3 × 100 = 300); o estado compartilhado resolve, ao custo de latência, concorrência, consistência e dependência crítica. Ver [[wiki/concepts/rate-limit-estado-compartilhado]].
+
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — versão específica de servidor: [[wiki/concepts/estado-global-em-servidor]]; exceções aceitáveis em [[wiki/concepts/estado-global-inofensivo]]; reprodutibilidade em [[wiki/concepts/reprodutibilidade-de-bugs]].
+- [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — caso do contador de rate limit

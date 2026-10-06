@@ -4,7 +4,7 @@ title: "Idempotência"
 aliases: ["idempotência", "idempotency", "idempotency key"]
 date_created: 2026-04-22
 date_updated: 2026-10-06
-source_count: 13
+source_count: 14
 tags: [distribuidos, resiliencia, api, retry, mensageria, double-spend, double-submit, webhook, fintech]
 skill: tech-mentor-system-design
 status: stable
@@ -192,3 +192,7 @@ Exemplo do Código Fonte TV: consumidor falha no meio, mensagem volta e "cobrar 
 - [[wiki/sources/idempotencia-redis-controle-mensagens-whatsapp-tulio-faria]] — caso real de notificações (WhatsApp/SMS): chave composta por telefone + tipo + hash da mensagem; janela de 5 minutos como decisão de produto; `redis.set(key, val, "EX", ttl, "GET")` como check-and-set atômico; mesmo mecanismo usado para limitar volume de SMS por usuário
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — POST não é idempotente, GET/PUT/DELETE são; clique duplo em pagamento pode cobrar duas vezes (explicação básica de método HTTP)
 - [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — [[wiki/concepts/flyway-schema-history]] torna a subida idempotente: reiniciar não reaplica versões já registradas
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — chave de idempotência (ID/hash trafegado entre serviços) para evento duplicado; não é bala de prata: concorrência e registro confiável do resultado seguem na implementação.

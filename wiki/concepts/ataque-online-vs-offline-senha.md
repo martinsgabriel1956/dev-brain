@@ -3,8 +3,8 @@ type: concept
 title: "Ataque Online vs. Offline a Senha"
 aliases: ["online attack", "offline attack", "modelo de ameaça de senha"]
 date_created: 2026-08-26
-date_updated: 2026-09-08
-source_count: 2
+date_updated: 2026-10-06
+source_count: 3
 tags: [segurança, autenticação, password-hashing, rate-limiting, mfa, modelo-de-ameaca, user-enumeration, brute-force]
 skill: tech-mentor-security
 status: draft
@@ -49,7 +49,10 @@ Um erro comum é achar que implementar Argon2 + salt + pepper "resolve seguranç
 - [[wiki/concepts/rate-limiting]] — defesa do lado online
 - [[wiki/concepts/mfa-multifator-autenticacao]] — defesa do lado online, também mitiga parte do offline (senha vazada sozinha não basta)
 
+Parte 2: endpoint de login como caso típico de [[wiki/concepts/fixed-window-rate-limit]] contra força bruta.
+
 ## Key Sources
 
 - [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]]
 - [[wiki/sources/brute-force-painel-admin-vibe-coding-pizzaria-burp-ffuf-hydra]] — demonstração prática do ataque online com três ferramentas (Burp Intruder, ffuf, Hydra) e user enumeration como pré-condição habilitadora
+- [[wiki/sources/rate-limit-estrategias-fixed-sliding-token-leaky-bernardo-lobato]] — login protegido por fixed window

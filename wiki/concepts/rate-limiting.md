@@ -3,8 +3,8 @@ type: concept
 title: "Rate Limiting"
 aliases: ["throttling", "rate limit", "token bucket", "sliding window"]
 date_created: 2026-04-23
-date_updated: 2026-10-05
-source_count: 16
+date_updated: 2026-10-06
+source_count: 18
 tags: [rate-limiting, token-bucket, sliding-window, redis, throttling, protecao-api, gatekeeper, attack-surface]
 skill: tech-mentor-backend
 status: stub
@@ -62,6 +62,12 @@ Exemplo de endpoint público de escrita: 10 uploads/min por IP; acima disso, **4
 
 Contador de limite de requisições citado como dado de vida curta típico de chave-valor ([[wiki/concepts/chave-valor]]).
 
+## Visão Arquitetural: Onde Aplicar e Estado Compartilhado
+
+Rate limit como decisão de arquitetura: origem em redes de pacotes ([[wiki/concepts/traffic-shaping-e-traffic-policing]], [[wiki/concepts/token-bucket]], [[wiki/concepts/leaky-bucket]]), três camadas de posicionamento ([[wiki/concepts/rate-limit-camadas-de-posicionamento]]), estado compartilhado com N instâncias ([[wiki/concepts/rate-limit-estado-compartilhado]]) e resposta [[wiki/concepts/http-429-too-many-requests]]. Rejeitar não é a única resposta possível.
+
+Os quatro algoritmos da parte 2 têm páginas próprias: [[wiki/concepts/fixed-window-rate-limit]], [[wiki/concepts/sliding-window-rate-limit]], [[wiki/concepts/token-bucket]], [[wiki/concepts/leaky-bucket]]; critério de escolha em [[wiki/concepts/rate-limit-escolha-de-algoritmo]]; também [[wiki/concepts/client-rate-limit]] e [[wiki/concepts/rate-limit-pesos-por-endpoint]].
+
 ## Key Sources
 
 
@@ -81,3 +87,5 @@ Contador de limite de requisições citado como dado de vida curta típico de ch
 - [[wiki/sources/historia-do-captcha-do-teste-de-turing-ao-turnstile]] — CAPTCHA/[[wiki/concepts/servico-de-resolucao-de-captcha]] só encarece a ação; limites por identidade/IP seguem necessários em camadas com [[wiki/concepts/bot-detection]]
 - [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — Instagram simplificado: 10 uploads/min por IP com 429 como defesa contra spam em endpoint público de escrita
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — 429 Too Many Requests como o status do rate limit (ver [[wiki/concepts/http-status-code]])
+- [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — visão arquitetural: camadas, estado compartilhado, 429 e comportamento do cliente
+- [[wiki/sources/rate-limit-estrategias-fixed-sliding-token-leaky-bernardo-lobato]] — estratégias de implementação: fixed/sliding/token/leaky, caso real de pesos e client rate limit

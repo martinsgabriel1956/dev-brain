@@ -3,8 +3,8 @@ type: concept
 title: "CDN"
 aliases: ["Content Delivery Network", "rede de distribuição de conteúdo", "edge cache"]
 date_created: 2026-06-26
-date_updated: 2026-09-30
-source_count: 8
+date_updated: 2026-10-06
+source_count: 9
 tags: [system-design, cdn, cache, performance, escalabilidade, rede, live-streaming]
 skill: tech-mentor-system-design
 status: draft
@@ -86,8 +86,13 @@ CDN reduz distância física até o espectador, mas não elimina o que é ineren
 
 Imagem de perfil lenta por latência alta: salvar em bucket ([[wiki/concepts/amazon-s3]]), gerar URL pública e servir via CDN (Cloudflare, CloudFront). Regra: sempre que houver conteúdo estático (imagens, vídeos, arquivos). Isso também retira o disco local do back end.
 
+## Rate Limit na Borda
+
+CDN/WAF bloqueia tráfego abusivo cedo, parte da proteção contra DDoS; sem contexto de negócio. Ver [[wiki/concepts/rate-limit-camadas-de-posicionamento]].
+
 ## Key Sources
 
 - [[wiki/sources/case-twitter-feed]] — O feed do Twitter é o caso clássico de **fan-out de escrita em escala extrema**. A solução é híbrida: fan-out on write para usuários normais (pré-computa timelines no Redis) e fan-out on read para...
 - [[wiki/sources/fase-1-fundamentos-infraestrutura]] — Fundamentos de infraestrutura: DNS (TTL, tipos de record), Load Balancer (L4 vs L7, algoritmos), CDN (edge cache, origem), Cache (hit/miss, eviction, invalidação), Banco de Dados (ACID, replicação,...
 - [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — Instagram simplificado: bucket S3 + URL pública servida por CDN resolve imagem lenta
+- [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — rate limit na borda

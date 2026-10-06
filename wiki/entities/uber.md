@@ -3,8 +3,8 @@ type: entity
 title: "Uber"
 aliases: []
 date_created: 2026-07-16
-date_updated: 2026-07-31
-source_count: 2
+date_updated: 2026-10-06
+source_count: 3
 tags: [empresa, custo-ia, token-economics, caso-real]
 skill: tech-mentor-ai
 status: stub
@@ -24,3 +24,7 @@ O caso ilustra o [[wiki/concepts/paradoxo-de-jevons]] em escala corporativa: mes
 
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]]
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — reforça o caso como exemplo motivador de FinOps para IA
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — DOMA: microsserviços orientados a domínio para reduzir o caos de 50+ microsserviços por equipe (relato do áudio, não verificado).

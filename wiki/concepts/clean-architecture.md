@@ -3,8 +3,8 @@ type: concept
 title: "Clean Architecture"
 aliases: ["arquitetura limpa", "clean arch"]
 date_created: 2026-07-24
-date_updated: 2026-10-01
-source_count: 13
+date_updated: 2026-10-06
+source_count: 14
 tags: [clean-architecture, uncle-bob, dependency-inversion, use-case, presenter, view-model, arquitetura, dci, bce]
 skill: tech-mentor-backend
 status: draft
@@ -128,3 +128,7 @@ A mesma fonte nomeia uma divergência deliberada frente ao fluxo Controller/Pres
 - [[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] — exemplo prático de DI (`CreateUser`/`UserRepository`/adapter Postgres), custo de debugar implementação "escondida" atrás da interface, boilerplate, atrito com frameworks opinativos, e leitura de que a popularidade vem mais da fama de Uncle Bob que de mérito técnico exclusivo
 - [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] — aplicação a um componente de tela (login, Vue.js): Main como composition root implementado via Factory, e a divergência pragmática de fundir Presenter/View em frameworks reativos
 - [[wiki/sources/vertical-slice-organizar-codigo-por-funcionalidade-bernardo-lobato]] — contraste: camadas/centralização de domínio vs. slices com modelo próprio; ver [[wiki/concepts/vertical-slice-architecture]]
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — listada com hexagonal, Onion e MVC como decisão de design de código ([[wiki/concepts/dimensoes-de-decisao-arquitetural]]).

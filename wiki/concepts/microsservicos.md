@@ -4,7 +4,7 @@ title: "Microsserviços"
 aliases: ["microsservicos", "microservices", "arquitetura de microsserviços", "decomposição por domínio"]
 date_created: 2026-07-24
 date_updated: 2026-10-06
-source_count: 31
+source_count: 32
 tags: [microsservicos, arquitetura, bounded-context, distributed-monolith, circuit-breaker, resiliencia]
 skill: tech-mentor-backend
 status: draft
@@ -163,3 +163,7 @@ Microsserviço com dependência síncrona externa é [[wiki/concepts/monolito-di
 - [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — microsserviços como a explosão dos anos 2010 de [[wiki/concepts/arquitetura-distribuida]], com a nuvem; motivos, desafios e motivos errados de adoção
 - [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — monolito distribuído como armadilha
 - [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] — ACL na migração para microsserviços
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — Shopify (monolito → microsserviços) e Uber (DOMA após 50+ microsserviços por equipe); decisão estrutural.

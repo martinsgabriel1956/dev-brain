@@ -3,8 +3,8 @@ type: entity
 title: "LangChain"
 aliases: ["Leng Chain", "LangChain Inc."]
 date_created: 2026-08-19
-date_updated: 2026-09-30
-source_count: 3
+date_updated: 2026-10-06
+source_count: 4
 tags: [langchain, langgraph, loop-engineering, graph-engineering, agentes, orquestracao]
 skill: tech-mentor-ai
 status: stub
@@ -22,8 +22,13 @@ Nenhuma das fontes que atribuem esses termos à LangChain (incluindo esta) traz 
 
 [[wiki/sources/graph-engineering-matematica-do-erro-composto]] também atribui à LangChain a virada de "loop engineering" para "graph engineering", mas o trecho de áudio correspondente é garbled na transcrição ("Lang Shen renomeou 3 anos atrás de trabalho pra Graph Engineering e quatro dias depois graph engineering") — preservado literalmente no raw como incerto, sem resolução nesta ingestão. Não contradiz a atribuição já registrada, apenas reforça com confiança textual mais baixa que a primeira fonte.
 
+## Vivek Trivedy
+
+[[wiki/entities/vivek-trivedy]] é citado como da LangChain, autor do de-para modelo→harness ([[wiki/concepts/harness-componentes-por-capacidade]]).
+
 ## Key Sources
 
 - [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — atribuição explícita da cunhagem de "loop engineering" e "graph engineering" (ambos 2026) à LangChain
 - [[wiki/sources/graph-engineering-matematica-do-erro-composto]] — segunda atribuição, trecho de áudio impreciso sobre o momento exato do rename
 - [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] — stack do autor (LangChain/LangGraph/Deep Agents) independe do gateway: a API da OpenRouter é a mesma
+- [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — Trivedy e o de-para

@@ -4,7 +4,7 @@ title: "Comunicação Assíncrona"
 aliases: ["asynchronous communication", "comunicação assincrona", "async communication"]
 date_created: 2026-09-30
 date_updated: 2026-10-06
-source_count: 4
+source_count: 5
 tags: [comunicacao-assincrona, mensageria, polling, webhook, acoplamento, resiliencia, consistencia-eventual, arquiteturas-distribuidas]
 skill: tech-mentor-backend
 status: draft
@@ -59,3 +59,7 @@ Pedidos publica 'pedido criado' e responde ao usuário; Pagamentos e E-mail reag
 - [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — retomada no vídeo de abertura da série: escolha impacta escalabilidade, disponibilidade e complexidade
 - [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — fluxo de loja síncrono vs por eventos
 - [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — gatilho por eventos de um [[wiki/concepts/microagente]] (menor acoplamento) em contraste com HTTP síncrono
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — responder 200 OK e avisar depois quando o processamento depende de terceiro lento.

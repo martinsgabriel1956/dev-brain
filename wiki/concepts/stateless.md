@@ -4,7 +4,7 @@ title: "Stateless"
 aliases: ["servidor stateless", "sem estado", "stateless server", "stateless architecture"]
 date_created: 2026-06-26
 date_updated: 2026-10-06
-source_count: 5
+source_count: 6
 tags: [system-design, stateless, escalabilidade, load-balancer, sessao]
 skill: tech-mentor-system-design
 status: draft
@@ -72,3 +72,7 @@ O mesmo trade-off aparece na dupla access token / refresh token: manter o access
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — estado global no servidor (cache in-process, variável de módulo, config mutável) torna o servidor stateful sem querer: uma requisição contamina a outra e a ordem das chamadas muda o resultado. Ver [[wiki/concepts/estado-global-em-servidor]].
+
+## Key sources (adição 2026-10-06)
+
+- [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — analogia do crachá: token apresentado a cada requisição; stateless permite 100 instâncias e substituição sem perda; stateful faz sentido em multiplayer em tempo real.
