@@ -3,8 +3,8 @@ type: concept
 title: "Context Engineering (nível Harness)"
 aliases: ["context engineering harness", "engenharia de contexto", "project knowledge ia"]
 date_created: 2026-06-02
-date_updated: 2026-08-27
-source_count: 10
+date_updated: 2026-10-07
+source_count: 11
 tags: [context-engineering, harness, rules, skills, project-knowledge]
 skill: tech-mentor-ai
 status: draft
@@ -106,3 +106,7 @@ Context engineering não é gerar documentação estática uma vez — é fazer 
 - [[wiki/sources/8-pontos-arquitetura-de-software-na-era-da-ia]] — contexto (docs, design docs, playbooks) como ativo de longo prazo análogo a teste automatizado; busca de documentação em tempo real vs. estática
 - [[wiki/sources/spec-writer-skill-criterios-de-boa-spec]] — exemplo didático de guia faltando (login sem redirect especificado) e framework de 7 critérios para fechar lacunas de contexto numa spec
 - [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] — caso do serviço de cobrança recorrente (regra de fila de auditoria fora da janela); prompt caprichado + resultado medíocre como sintoma de contexto ausente, não de técnica de prompt; crítica do "prompt mágico" como bala de prata
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] — quatro estratégias operacionais (Write/Select/Compress/Isolate) e medição prévia do contexto; demo 8.339 → 2.426 tokens ([[wiki/concepts/write-select-compress-isolate]])

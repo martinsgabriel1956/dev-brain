@@ -3,8 +3,8 @@ type: concept
 title: "Arquitetura Distribuída"
 aliases: ["distributed architecture", "sistema distribuído", "arquiteturas distribuídas"]
 date_created: 2026-10-02
-date_updated: 2026-10-02
-source_count: 1
+date_updated: 2026-10-07
+source_count: 2
 tags: [arquitetura-distribuida, sistemas-distribuidos, arquitetura, microsservicos, escalabilidade, resiliencia]
 skill: tech-mentor-system-design
 status: draft
@@ -33,3 +33,5 @@ Adoção por hype ou imitação ("a Netflix usa") é [[wiki/concepts/cargo-cult-
 ## Key sources
 
 - [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — introdução da série de arquiteturas distribuídas de [[wiki/entities/bernardo-lobato]]
+
+- [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — custos da distribuição (rede, latência, observabilidade, consistência, timeouts/retries, transações distribuídas) como lado "pago" do trade-off; nem todo gargalo pede distribuir.

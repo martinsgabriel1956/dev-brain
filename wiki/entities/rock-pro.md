@@ -3,8 +3,8 @@ type: entity
 title: "Rock Pro"
 aliases: ["harness de aprendizado do Ronald Hulk"]
 date_created: 2026-09-29
-date_updated: 2026-09-30
-source_count: 3
+date_updated: 2026-10-07
+source_count: 4
 tags: [produto, harness, rag, demo]
 skill: tech-mentor-ai
 status: stub
@@ -19,6 +19,7 @@ A grafia "Rock Pro" vem das transcrições; nome real não verificado.
 Ver [[wiki/concepts/harness]].
 
 ## Key sources
+- [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]] — usada como exemplo de sistema vertical (agente 'olá' = back, front, API, banco) e plataforma AI-first de educação do autor
 
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]]
 - [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]] — usada como exemplo de prefixo cacheável

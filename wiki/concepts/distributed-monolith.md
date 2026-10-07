@@ -3,8 +3,8 @@ type: concept
 title: "Distributed Monolith"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-10-02
-source_count: 4
+date_updated: 2026-10-07
+source_count: 5
 tags: [distributed-monolith]
 skill: tech-mentor-backend
 status: stub
@@ -32,3 +32,5 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 - [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]]
 - [[wiki/sources/microsservicos]]
 - [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — contexto: distribuir sem os benefícios é o risco da adoção por motivo errado (hype)
+
+- [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — complexidade de distribuição sem o ganho quando o gargalo (ex.: banco) não era resolvido pela divisão.

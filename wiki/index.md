@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-10-06
+date_updated: 2026-10-07
 ---
 
 
@@ -26,6 +26,13 @@ date_updated: 2026-10-06
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] | Ana: sistema de notificação reprova seniores por hábito — [[wiki/concepts/api-e-consequencia-nao-ponto-de-partida|API primeiro]], ignorar custo, sem entidades; resposta: [[wiki/concepts/filas-separadas-por-prioridade|3 tópicos por prioridade]], [[wiki/concepts/channel-router-custo-fallback|channel router]], [[wiki/concepts/confirmacao-de-entrega-nao-confiavel|reconciliação]] |
+| [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] | [[wiki/entities/augusto-galego|Augusto Galego]]: sete erros de devs brasileiros ao aplicar para a gringa — [[wiki/concepts/ingles-tecnico-suficiente-vs-perfeito|inglês técnico suficiente]], [[wiki/concepts/storytelling-em-entrevista|storytelling]], LeetCode/System Design (building blocks antes de praticar), [[wiki/concepts/explicar-o-porque-das-decisoes|explicar o porquê]], [[wiki/concepts/pensar-em-voz-alta-na-entrevista|pensar em voz alta]] e [[wiki/concepts/pesquisar-a-empresa-antes-da-entrevista|pesquisar a empresa]] (15 min); tese: [[wiki/concepts/vaga-internacional-sem-mistica|sem mística]], processo parecido com o do Brasil |
+| [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] | [[wiki/entities/felipe-fagundes|Felipe Fagundes]]: agente SRE de 8.339 para 2.426 tokens (~−71%) com [[wiki/concepts/write-select-compress-isolate|Write, Select, Compress, Isolate]]; [[wiki/concepts/inspecao-de-contexto-antes-de-otimizar|medir antes]] e reduzir a [[wiki/concepts/superficie-probabilistica-do-agente|superfície probabilística]] |
+| [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] | [[wiki/entities/andre-casciotti|André Casciotti]]: estresse como [[wiki/concepts/risco-ocupacional-do-dev|risco ocupacional]] (criar software é fácil, manter cai nos devs) e três mantras — [[wiki/concepts/foco-no-que-esta-ao-seu-alcance|foco no que está ao seu alcance]] (+ [[wiki/concepts/reclamar-menos-e-fazer-mais|reclamar menos]]), [[wiki/concepts/melhor-possivel-com-o-tempo-disponivel|melhor possível no tempo que tem]] (+ [[wiki/concepts/priorizacao-pelo-negocio|priorização pelo negócio]]) e [[wiki/concepts/complexidade-e-organizacao|complexidade e organização]] ([[wiki/concepts/poder-da-barra-de-progresso-e-do-check|barra de progresso e check]]) |
+| [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]] | [[wiki/entities/ronald-hulk|Ronald Hulk]]: empresa não contratou engenheiro de IA (take-homes feitos com IA sem acabamento; ninguém com [[wiki/concepts/conhecimento-vertical-do-problema|conhecimento vertical]]) e treinou o time interno; tese do [[wiki/concepts/fim-da-era-do-parecer|fim da era do parecer]], [[wiki/concepts/ciclo-construir-e-aprender-em-ia|ciclo construir-e-aprender]] e [[wiki/concepts/competencias-do-engenheiro-de-ia|seis competências]] |
+| [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]]: monolito com ~20.000 acessos/dia e lentidão — "não dá para saber", **falta contexto**; [[wiki/concepts/diagnostico-antes-de-reestruturar|diagnosticar antes de reestruturar]] (índice, fila, acoplamento ou componente isolado); [[wiki/concepts/mito-da-padronizacao-de-arquitetura|mito da padronização]]; [[wiki/concepts/contexto-na-decisao-arquitetural|"depende" = início da investigação]]; [[wiki/concepts/tradeoff-arquitetural|trade-off]] como tese; [[wiki/concepts/escolher-os-problemas-que-voce-quer-ter|escolha os problemas que você quer ter]] |
+| [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] | Ana: cargos pós-IA ([[wiki/concepts/forward-deployed-engineer|FDE]], [[wiki/concepts/ai-engineer|AI]]/[[wiki/concepts/agent-engineer|Agent Engineer]], [[wiki/concepts/design-engineer|Design Engineer]]) e hunting de vagas direto nos [[wiki/concepts/applicant-tracking-system|ATS]] (Ashby/Greenhouse/Lever) em vez do LinkedIn; conflito de dados de FDE |
 | [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] | [[wiki/entities/kiper-academy|Kiper Academy]]: introdução à [[wiki/concepts/arquitetura-de-software]] — papel (dividir, comunicar, restrições, qualidades, dados), limite de "aplicação", dimensões estrutural vs design e 5 perguntas-guia: stateless, síncrono/assíncrono, acoplamento, idempotência, cache |
 | [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]]: [[wiki/concepts/rate-limiting]] como decisão de arquitetura — origem em redes de pacotes (token/leaky bucket), 429 (RFC 6585), três camadas (aplicação, gateway/LB, borda), estado compartilhado (3 × 100 = 300) e SPOF do limiter; algoritmos de janela ficam para a parte 2 |
 | [[wiki/sources/rate-limit-estrategias-fixed-sliding-token-leaky-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]], parte 2 de rate limit: fixed window (cota simples, burst na fronteira), sliding window (últimos 60 s, mais estado), token bucket (taxa média + pico; caso real com pesos 1 vs. ~1000 e 429 pedagógico) e leaky bucket (saída previsível, legado/jobs); client rate limit contra APIs de parceiros; "sem bala de prata"; parte 3 (produção) é proposta |
@@ -846,10 +853,85 @@ date_updated: 2026-10-06
 
 ## Concepts
 
+### System Design — Caso Notificação (2026-10-07)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/api-e-consequencia-nao-ponto-de-partida]] | Progresso falso: API é consequência; requisitos → entidades → alto nível → API |
+| [[wiki/concepts/entidades-de-primeira-classe-system-design]] | UserPreference e DeliveryAttempt viabilizam rate limit, fallback e rastreio |
+| [[wiki/concepts/filas-separadas-por-prioridade]] | Tópicos crítico/normal/baixo evitam marketing atrasar autenticação |
+| [[wiki/concepts/channel-router-custo-fallback]] | Roteia por prioridade+preferência+custo: push → e-mail → SMS |
+| [[wiki/concepts/confirmacao-de-entrega-nao-confiavel]] | Push enviado ≠ entregue: callback + job de reconciliação |
+| [[wiki/concepts/palavras-do-enunciado-mudam-a-arquitetura]] | 'Cost-aware' no enunciado muda a arquitetura |
+
+### Engenharia de Contexto — Write/Select/Compress/Isolate (2026-10-07)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/write-select-compress-isolate]] | Quatro estratégias para controlar o que entra na janela |
+| [[wiki/concepts/inspecao-de-contexto-antes-de-otimizar]] | Medir mensagens, tokens e tools por turno antes de cortar |
+| [[wiki/concepts/superficie-probabilistica-do-agente]] | Menos ruído/decisões = respostas mais assertivas |
+| [[wiki/concepts/escrever-memoria-fora-da-janela]] | Salvar em store (namespace + id) em vez de apagar |
+| [[wiki/concepts/selecao-de-memoria-e-tools-por-turno]] | Filtros por tempo, importância e meia-vida; tools dinâmicas |
+| [[wiki/concepts/clip-e-offload-de-tool-output]] | Acima de 1.200 tokens guarda o original e mantém só o sinal |
+| [[wiki/concepts/tipos-de-memoria-de-agente]] | Semântica, episódica e procedural |
+
+### Candidatura a Vagas Internacionais e Entrevista (2026-10-07)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/ingles-tecnico-suficiente-vs-perfeito]] | Inglês para conversar sobre software, não perfeito nem "cara de pau" |
+| [[wiki/concepts/storytelling-em-entrevista]] | Contar desafio, ação, impacto e medição; ensaiar sem decorar |
+| [[wiki/concepts/explicar-o-porque-das-decisoes]] | Por que e como (monólito → microsserviços, login com Google) |
+| [[wiki/concepts/pensar-em-voz-alta-na-entrevista]] | Perguntar e narrar; entrevistador é colaborativo |
+| [[wiki/concepts/pesquisar-a-empresa-antes-da-entrevista]] | 15 min com IA: resumo e perguntas ao recrutador |
+| [[wiki/concepts/vaga-internacional-sem-mistica]] | Processo parecido com o do Brasil; gate é o idioma |
+
+### Saúde Mental e Estresse do Dev (2026-10-07)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/risco-ocupacional-do-dev]] | Estresse inerente ao ofício: criar software é fácil, manter cai nos devs |
+| [[wiki/concepts/foco-no-que-esta-ao-seu-alcance]] | Mantra 1: entender o jogo, mudar o que é seu; autonomia vem de resolver |
+| [[wiki/concepts/reclamar-menos-e-fazer-mais]] | Reclamar aumenta a raiva e terceiriza o problema |
+| [[wiki/concepts/melhor-possivel-com-o-tempo-disponivel]] | Mantra 2: o perfeito não existe; sem data não sai; entregue |
+| [[wiki/concepts/priorizacao-pelo-negocio]] | Prioridade vem do negócio, não da cabeça do dev |
+| [[wiki/concepts/complexidade-e-organizacao]] | Mantra 3: quanto mais complexo, mais organização |
+| [[wiki/concepts/poder-da-barra-de-progresso-e-do-check]] | Lista de tarefas reduz ansiedade e dá microvitórias |
+
+### Engenheiro de IA — Entrega e Conhecimento Vertical (2026-10-07)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/fim-da-era-do-parecer]] | Diploma/discurso não provam capacidade; a entrega é a prova |
+| [[wiki/concepts/acabamento-em-take-home]] | Take-home feito com IA sem acabamento reprova; avalia energia e foco |
+| [[wiki/concepts/conhecimento-vertical-do-problema]] | Compreender, decidir, construir, operar e responder pelo resultado |
+| [[wiki/concepts/engenharia-de-ia-ao-redor-do-modelo]] | Parte-se de modelo pronto; fine-tuning só se o problema for estático |
+| [[wiki/concepts/ciclo-construir-e-aprender-em-ia]] | Sem roadmap: comece, construa vertical, bata no muro, repita |
+| [[wiki/concepts/competencias-do-engenheiro-de-ia]] | Arquitetura, dados, falhas/riscos, qualidade, operação, problema de negócio |
+
+### Decisão Arquitetural — Contexto e Trade-offs (2026-10-07)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/tradeoff-arquitetural]] | Toda decisão prioriza características e aceita consequências; tabela ganha × paga (distribuição, abstração, cache, assíncrono, escala) |
+| [[wiki/concepts/contexto-na-decisao-arquitetural]] | "Depende" como início da investigação: problema, sistema, infra, time, custo, consequências administráveis; muda no tempo |
+| [[wiki/concepts/diagnostico-antes-de-reestruturar]] | Achar a causa (consulta, síncrono, acoplamento, componente sobrecarregado) antes de migrar; ferramentas de tracing, métricas e EXPLAIN |
+| [[wiki/concepts/mito-da-padronizacao-de-arquitetura]] | Crença de que um estilo (monolito, microsserviço, clean...) é universalmente melhor |
+| [[wiki/concepts/escolher-os-problemas-que-voce-quer-ter]] | Todo projeto terá problema; arquitetura é escolher quais, compatíveis com a capacidade do time |
+
 ### Arquitetura de Software — Introdução e Perguntas-guia (2026-10-06)
 
 | Página | Hook |
 |---|---|
+| [[wiki/concepts/applicant-tracking-system]] | ATS: onde a vaga nasce antes de chegar ao LinkedIn; Ashby, Greenhouse, Lever |
+| [[wiki/concepts/busca-de-vagas-direto-no-ats]] | Buscar vagas com `site:` e APIs JSON públicas dos ATS, com agente diário |
+| [[wiki/concepts/cacar-a-empresa-nao-a-vaga]] | Lista de 30–50 empresas-alvo, 3–4 currículos, varredura semanal |
+| [[wiki/concepts/sinais-de-vaga-real-vs-fantasma]] | LATAM/worldwide, faixa salarial e data recente vs. vaga sem movimento |
+| [[wiki/concepts/fragmentacao-de-titulos-de-cargos-ia]] | Aliases de FDE, AI, Agent e Design Engineer nas vagas |
+| [[wiki/concepts/ai-engineer]] | Cargo de produto/modelos; exige ML e backend |
+| [[wiki/concepts/agent-engineer]] | Automatiza problemas do time com agentes, skills e orquestração |
+| [[wiki/concepts/autonomia-de-sugerir-vs-pegar-para-si]] | Resolver ponta a ponta sem invadir o escopo de outro time |
 | [[wiki/concepts/dimensoes-de-decisao-arquitetural]] | Decisão estrutural (deploy, serviços, infra) vs. design de código (Clean, Hexagonal, Onion, MVC) |
 | [[wiki/concepts/acoplamento-de-negocio-vs-detalhe-interno]] | Acoplamento legítimo restrito ao contrato (status) vs. dependência de detalhes internos |
 | [[wiki/concepts/tolerancia-a-desatualizacao-de-cache]] | Quanta desatualização aceitar: saldo bancário vs. post de blog |
@@ -2846,6 +2928,13 @@ date_updated: 2026-10-06
 
 ## Entities
 
+### Observabilidade — Ferramentas (2026-10-07)
+
+| Página | Hook |
+|---|---|
+| [[wiki/entities/opentelemetry]] | Padrão aberto de instrumentação (traces, métricas, logs); primeira ferramenta no diagnóstico de gargalo |
+| [[wiki/entities/prometheus]] | Métricas de séries temporais (CPU, memória, disco, rede), par do Grafana |
+
 ### Migrations com Flyway (2026-10-06)
 
 | [[wiki/entities/kong]] | Gateway/proxy que centraliza políticas de rate limit para vários serviços |
@@ -2854,6 +2943,10 @@ date_updated: 2026-10-06
 | [[wiki/entities/nestjs-throttler]] | Rate limit do NestJS via guards, global ou por rota, storage plugável |
 | Página | Descrição |
 |---|---|
+| [[wiki/entities/ashby]] | ATS com API pública JSON; includeCompensation traz faixa salarial |
+| [[wiki/entities/greenhouse]] | ATS de startups de IA com API pública |
+| [[wiki/entities/lever]] | ATS de startups de IA com API pública |
+| [[wiki/entities/y-combinator]] | Aceleradora; fonte de lista de empresas-alvo |
 | [[wiki/entities/flyway]] | Ferramenta de migrations (JVM/Spring Boot); SQL versionado com histórico e checksum |
 | [[wiki/entities/chris-richardson]] | Autor de microservices.io e livro sobre padrões de microsserviços; referência do ACL em migração |
 | [[wiki/entities/eric-evans]] | Criador do DDD; origem da Anti-Corruption Layer |
@@ -3253,9 +3346,11 @@ date_updated: 2026-10-06
 
 | Página | Hook |
 |---|---|
+| [[wiki/questions/forward-deployed-engineer-demanda-crescendo-vs-pequena]] | FDE: "cargo que mais cresceu" vs. <1.000 vagas nos EUA — crescimento sobre base pequena? |
 | [[wiki/questions/disponibilidade-cap-resposta-de-erro-vs-resposta-sem-erro]] | Vídeo diz que erro 404 conta como resposta disponível; definição formal exige resposta sem erro — pendente verificar Gilbert & Lynch |
 | [[wiki/questions/facade-fere-srp-video-comparison]] | Renato Augusto defende que Facade não fere SRP (motivo único de mudança); Código Fonte TV discorda (orquestração pura já é responsabilidade demais) — sem resolução, ambas são opinião de autor sem citação de fonte primária |
 | [[wiki/questions/local-first-definicoes-conflitantes]] | Duas fontes usam "local-first" para conceitos incompatíveis: dado efêmero validado por HMAC (servidor continua autoridade) vs. definição canônica de réplica primária com posse do usuário — resolvido por revisão do conceito, não por fusão |
 | [[wiki/questions/acl-facade-vs-adapter-criterio-por-lado-ou-por-chamadas]] | Facade/Adapter por lado da camada (vídeo) vs. por nº de chamadas (skill); ACL por consumidor vs. OHS + Published Language |
 | [[wiki/questions/rate-limit-contabilizar-requisicao-falha-e-chave-de-identificacao]] | O que conta no rate limit: requisição com falha, chave (usuário/API key/IP), ação ao atingir o limite — levantadas no vídeo, sem resposta |
 | [[wiki/questions/rate-limit-producao-atomicidade-fail-open-e-janela-distribuida]] | Rate limit em produção: atomicidade no Redis, fail-open/closed, janela distribuída, pesos |
+| [[wiki/questions/ai-engineer-exige-ml-vs-usar-modelo-pronto]] | AI Engineer exige aprofundamento em ML (Ana) ou parte de modelo pronto, fine-tuning como último recurso (Ronald Hulk)? Provável efeito de títulos fragmentados |

@@ -3,8 +3,8 @@ type: concept
 title: "Evals Llm"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-30
-source_count: 4
+date_updated: 2026-10-07
+source_count: 5
 tags: [evals-llm]
 skill: tech-mentor-ai
 status: stub
@@ -33,3 +33,7 @@ Ver [[wiki/concepts/golden-dataset]] e [[wiki/concepts/teste-de-regressao-de-pro
 - [[wiki/sources/llmops-observabilidade]]
 - [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — evals aplicados a skills (description e benchmark com/sem skill)
 - [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — golden dataset / regressão de prompt
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] — lacuna: a demo mede tokens, não qualidade das respostas — pede eval

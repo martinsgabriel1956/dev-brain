@@ -3,8 +3,8 @@ type: concept
 title: "Forward Deployed Engineer"
 aliases: ["fde", "forward deployed ai engineer", "applied ai engineer", "deployment solutions engineer"]
 date_created: 2026-09-14
-date_updated: 2026-09-18
-source_count: 3
+date_updated: 2026-10-07
+source_count: 4
 tags: [carreira, mercado-de-trabalho, forward-deployed-engineer, ai-engineer, solutions-architect]
 skill: tech-mentor-leadership
 status: draft
@@ -54,8 +54,13 @@ Segundo o case de [[wiki/entities/thalis-pereira]] na fonte: certificação clou
 - [[wiki/concepts/product-engineer]] — cargo comparado, avaliado como mais interessante para carreira
 - [[wiki/concepts/novo-perfil-dev-ia]] — contexto mais amplo da progressão "dev que sabe usar IA → especialização em agentes"
 
+## Quarta Fonte: Visão de Quem Está no Cargo (SaaS) e Busca de Vagas
+
+[[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] descreve o FDE no contexto de um SaaS: implementar o produto no cliente exige personalização e código; background de dev permite automatizar a implementação e reduzir o tempo de configuração. Indica o cargo a quem vem de suporte N3/Customer Experience com código, cloud e inglês, e diz que foi o que mais cresceu em 2026 — o que **conflita** com a avaliação de demanda pequena acima: ver [[wiki/questions/forward-deployed-engineer-demanda-crescendo-vs-pequena]]. Aliases para busca: [[wiki/concepts/fragmentacao-de-titulos-de-cargos-ia]].
+
 ## Key Sources
 
+- [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — visão de SaaS; quem migra de suporte N3; conflito de demanda
 - [[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] — menção breve, sem dado novo: cargo citado como exemplo de "sênior decide, não só codifica"
 - [[wiki/sources/ai-engineer-forward-deployed-engineer-mercado-vagas-2026]] — definição, dados de demanda (True Up/Indeed), case real de entrevista e avaliação de carreira
 - [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]] — origem histórica na Palantir (2007-2010), etimologia militar do termo, adoção por AWS/nuvem e por OpenAI/Anthropic/Cohere/Cognition, recomendação de preparo (fundamentos)

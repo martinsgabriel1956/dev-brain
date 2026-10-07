@@ -3,8 +3,8 @@ type: concept
 title: "Arquiteto de Soluções"
 aliases: ["arquiteto de solucoes", "engenheiro de solucoes", "solutions architect", "technical solution architect"]
 date_created: 2026-08-13
-date_updated: 2026-09-14
-source_count: 3
+date_updated: 2026-10-07
+source_count: 4
 tags: [carreira, arquiteto-de-solucoes, solutions-architect, t-shaped, ia, qa]
 skill: tech-mentor-leadership
 status: stub
@@ -43,8 +43,13 @@ O que torna esse papel acessível agora é a IA como **multiplicador**: um profi
 
 [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]] complementa a seção acima com a origem concreta do rótulo: a [[wiki/entities/palantir]] criou o modelo entre 2007 e 2010 para clientes de inteligência (CIA, FBI) que não conseguiam especificar requisitos nem compartilhar dados por sigilo. Provedores de nuvem como a [[wiki/entities/aws]] replicaram o modelo depois (caso relatado: dentro do [[wiki/entities/itau]]), e agora empresas de IA como [[wiki/entities/openai]], [[wiki/entities/anthropic]], [[wiki/entities/cohere]] e [[wiki/entities/cognition]] fazem o mesmo. Reforça a tese desta página — o papel não é novo, muda o rótulo conforme a tecnologia da vez (nuvem, depois IA).
 
+## Cargos Vizinhos nas Vagas
+
+[[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] lista "solutions engineer" entre os aliases de vaga de [[wiki/concepts/forward-deployed-engineer]] ([[wiki/concepts/fragmentacao-de-titulos-de-cargos-ia]]).
+
 ## Key Sources
 
+- [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — solutions engineer como alias de FDE
 - [[wiki/sources/papinho-tech-solo-q-and-a-carreira]] — QA convergindo para arquiteto de soluções; IA como habilitador da fusão de papéis
 - [[wiki/sources/ai-engineer-forward-deployed-engineer-mercado-vagas-2026]] — mesmo papel sob o nome Forward Deployed Engineer; dados de demanda e avaliação cética de carreira
 - [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]] — origem histórica do rótulo na Palantir; precedente em cloud (AWS/Itaú) antes da onda de IA

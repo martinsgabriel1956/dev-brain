@@ -3,8 +3,8 @@ type: entity
 title: "Lovable"
 aliases: ["lovable.dev", "GPT Engineer"]
 date_created: 2026-04-22
-date_updated: 2026-10-06
-source_count: 2
+date_updated: 2026-10-07
+source_count: 3
 tags: [lovable, ai, produto, design, no-code, vibe-coding]
 skill: tech-mentor-frontend
 status: stub
@@ -30,3 +30,7 @@ Citado entre as ferramentas de código com IA que já trazem harness próprio.
 
 - [[wiki/sources/design-first-vs-code-first-referencias]]
 - [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — harness embutido
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — citado como exemplo de ferramenta que cria software bonito em horas, mesmo para não programadores

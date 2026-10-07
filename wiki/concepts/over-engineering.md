@@ -3,8 +3,8 @@ type: concept
 title: "Over-Engineering"
 aliases: ["overengineering", "verde neném", "engenharia excessiva", "gold plating"]
 date_created: 2026-06-09
-date_updated: 2026-10-05
-source_count: 16
+date_updated: 2026-10-07
+source_count: 18
 tags: [design, qualidade, anti-pattern, aprendizado, design-patterns, dora, under-engineering]
 skill: tech-mentor-leadership
 status: stable
@@ -123,6 +123,7 @@ Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], 
 Caso de dados: colocar cinco tecnologias de armazenamento numa loja pequena; ver [[wiki/concepts/comecar-simples-adicionar-peca-quando-doer]].
 
 ## Key Sources
+- [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]] — complexidade adicionada para satisfazer o ego/currículo vs. resolver o problema de negócio ([[wiki/concepts/competencias-do-engenheiro-de-ia]])
 
 
 - [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]] — mapa de armazenamento é possibilidade, não lista obrigatória
@@ -141,3 +142,5 @@ Caso de dados: colocar cinco tecnologias de armazenamento numa loja pequena; ver
 - [[wiki/sources/large-scale-vs-complex-architecture]] — distinção terminológica entre over-engineering (excesso de ferramental, comum em large scale) e over-thinking (excesso de pensamento sobre regras, comum em arquitetura complexa)
 - [[wiki/sources/arquitetura-limpa-por-que-e-tao-popular]] — Clean Architecture como exemplo de trade-off dependente do tempo de vida do projeto: boilerplate só se paga em projetos de longa duração onde a regra de negócio não vaza para outras camadas
 - [[wiki/sources/system-design-load-balancer-nivel-macaco]] — heurística concreta e demonstrada em simulador: introduzir load balancer/múltiplos servidores sem carga real que os justifique é over-engineering; o gatilho correto é saturação observável, não uma meta de escala antecipada
+
+- [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — migrar para microsserviços sem diagnosticar o gargalo adiciona complexidade sem ganho ("de brinde"); decisão válida só após entender o problema ([[wiki/concepts/diagnostico-antes-de-reestruturar]]).

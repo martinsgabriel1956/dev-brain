@@ -3,8 +3,8 @@ type: concept
 title: "Vaga Júnior Vira Pleno"
 aliases: ["sumiço de vagas júnior", "vaga júnior exigindo pleno", "requisito júnior inflado"]
 date_created: 2026-07-31
-date_updated: 2026-09-30
-source_count: 11
+date_updated: 2026-10-07
+source_count: 12
 tags: [carreira, mercado-de-trabalho, junior, contratacao]
 skill: tech-mentor-leadership
 status: stub
@@ -63,6 +63,7 @@ Pode ser uma manifestação específica, em nível de categoria de vaga, do padr
 [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] traz um dado de nicho que não confirma nem contradiz diretamente o padrão desta página, mas vale registrar como comparação: no mercado de [[wiki/concepts/mainframe|mainframe]]/[[wiki/concepts/cobol|COBOL]], **79%** das empresas buscam mid-level e **51%** buscam entry-level (ambos os números altos, sem indicar concorrência entre faixas) — o motivo apontado pela fonte é geracional (ver [[wiki/concepts/apagao-de-seniors]]), não aperto orçamentário. A fonte não analisa se as vagas "entry-level" de mainframe sofrem a mesma inflação de requisito documentada nesta página para o mercado geral; fica como pergunta em aberto registrada em [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]].
 
 ## Key Sources
+- [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]] — relato de que júniores com postura vertical são vistos como 'ouro' e de empresa que promoveu estagiário em vez de contratar
 
 - [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] — contraponto setorial (mainframe/COBOL): demanda alta simultânea por mid-level (79%) e entry-level (51%), motivada por aposentadoria geracional, não por aperto de mercado
 - [[wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos]]

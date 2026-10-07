@@ -3,8 +3,8 @@ type: concept
 title: "Tradeoff de Cache"
 aliases: ["custo de cache", "complexidade de cache", "cache complexity"]
 date_created: 2026-06-26
-date_updated: 2026-10-06
-source_count: 4
+date_updated: 2026-10-07
+source_count: 5
 tags: [cache, tradeoff, arquitetura, decisao, backend]
 skill: tech-mentor-backend
 status: stable
@@ -61,3 +61,5 @@ Saber **quando invalidar** é mais difícil que implementar o cache em si. A cit
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — saldo bancário (intolerante) vs. post de blog (tolerante) como critério de decisão.
+
+- [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — cache como um dos exemplos do trade-off geral (menor latência × risco de consistência); ver [[wiki/concepts/tradeoff-arquitetural]].

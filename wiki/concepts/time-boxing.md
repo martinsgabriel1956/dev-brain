@@ -3,8 +3,8 @@ type: concept
 title: "Time Boxing"
 aliases: ["timeboxing", "time box", "blocos de tempo"]
 date_created: 2026-07-20
-date_updated: 2026-07-20
-source_count: 1
+date_updated: 2026-10-07
+source_count: 2
 tags: [produtividade, foco, planejamento, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -38,3 +38,7 @@ Sem time boxing, uma tarefa complexa fica exposta a [[wiki/concepts/gatilho-inte
 ## Key Sources
 
 - [[wiki/sources/indistraivel-nir-eyal-mano-deivin]]
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — o tempo como limitador que tira o projeto do papel; sem data não sai ([[wiki/concepts/melhor-possivel-com-o-tempo-disponivel]])

@@ -3,8 +3,8 @@ type: concept
 title: "Compactação de Contexto"
 aliases: ["context compaction", "compact", "context compression", "sumarização de contexto"]
 date_created: 2026-05-31
-date_updated: 2026-10-06
-source_count: 3
+date_updated: 2026-10-07
+source_count: 4
 tags: [claude-code, context-window, compactacao, agente-ia, llmops, context-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -97,3 +97,7 @@ Citada no de-para de Trivedy ao lado de tool-offloading e skills como mecanismo 
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — `/clear` para contexto não relacionado, `/context` para inspeção, escopo de diretório mínimo
 - [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — compactação + tool-offloading + skills
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] — compactação em código: sumarizar a 3.500 tokens + clip/offload a 1.200 sem excluir o original ([[wiki/concepts/clip-e-offload-de-tool-output]])

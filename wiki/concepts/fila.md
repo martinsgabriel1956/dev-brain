@@ -3,8 +3,8 @@ type: concept
 title: "Fila (Queue)"
 aliases: ["queue", "FIFO", "fila de dados"]
 date_created: 2026-06-01
-date_updated: 2026-10-05
-source_count: 7
+date_updated: 2026-10-07
+source_count: 8
 tags: [cs-fundamentals, estruturas-de-dados, fila, queue, fifo]
 skill: cs-fundamentals
 status: draft
@@ -72,3 +72,8 @@ No RabbitMQ a fila FIFO fica atrás de uma exchange, que decide o roteamento ([[
 - [[wiki/sources/cache-vs-buffer-diferenca-conceitual]] — a fila como mecanismo de [[wiki/concepts/buffer]] que absorve picos e desacopla produtor de consumidor
 - [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — por que a fila precisa ser **bounded** (limitada): sem limite, itens envelhecem e o uso de memória pode crescer até crashar o sistema
 - [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — fila FIFO atrás da exchange e reentrega sem ack
+
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] — isolamento de prioridade por fila/tópico separado em vez de lógica no consumidor.

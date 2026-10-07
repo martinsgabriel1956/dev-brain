@@ -3,8 +3,8 @@ type: concept
 title: "Dolarização de Renda e Patrimônio"
 aliases: ["dolarizar salário", "renda em dólar", "proteção cambial pessoal"]
 date_created: 2026-07-09
-date_updated: 2026-09-14
-source_count: 3
+date_updated: 2026-10-07
+source_count: 4
 tags: [financas-pessoais, carreira, dolar, tributacao, pj]
 skill: tech-mentor-leadership
 status: stub
@@ -42,3 +42,4 @@ Recomendada a partir de ~R$ 25.000/mês em [[wiki/sources/como-eu-investiria-com
 - [[wiki/sources/como-eu-investiria-como-programador-ate-50000]]
 - [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]
 - [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] — inglês como pré-requisito de acesso ao mercado global, anterior à escolha de stack
+- [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — vaga fora é acessível: processo semelhante ao do Brasil, gate é o idioma ([[wiki/concepts/vaga-internacional-sem-mistica]])

@@ -3,8 +3,8 @@ type: concept
 title: "Vibe Coding"
 aliases: ["vibe coding", "vibe-coding", "coding por vibração", "agentic coding", "orquestração de agentes"]
 date_created: 2026-04-23
-date_updated: 2026-10-05
-source_count: 26
+date_updated: 2026-10-07
+source_count: 27
 tags: [vibe-coding, agentes-ia, produtividade, divida-cognitiva, ai-brainfry, paralelismo-cognitivo]
 skill: tech-mentor-ai
 status: stable
@@ -138,6 +138,7 @@ Citado como exemplo de hype tecnológico em formação (junto com MCP) no moment
 Em [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] o autor diz que **não** fez vibe coding (tinha PRD, issues auditadas, revisão por agentes), e mesmo assim perdeu o controle do entendimento do código. Indica que processo rígido de geração não elimina a [[wiki/concepts/comprehension-debt]]. Ver [[wiki/concepts/auditoria-de-issue-por-agente-de-contexto-limpo]].
 
 ## Key Sources
+- [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]] — vibe coding sem acabamento deixou de ser vantagem em take-home ([[wiki/concepts/acabamento-em-take-home]]); ponto de partida para quem não é de software ([[wiki/concepts/ciclo-construir-e-aprender-em-ia]])
 
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — processo rígido com agentes ainda gera dívida de entendimento
 

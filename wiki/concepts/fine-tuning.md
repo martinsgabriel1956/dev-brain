@@ -3,8 +3,8 @@ type: concept
 title: "Fine-Tuning"
 aliases: ["fine-tune", "ajuste fino", "task-specific fine-tuning"]
 date_created: 2026-05-17
-date_updated: 2026-05-17
-source_count: 3
+date_updated: 2026-10-07
+source_count: 4
 tags: [llm, treinamento, fine-tuning, adaptação]
 skill: tech-mentor-ai
 status: draft
@@ -54,3 +54,7 @@ Zero-shot → Few-shot ICL → Fine-tuning (LoRA) → Full fine-tuning → RLHF
 - [[wiki/sources/gpt3-language-models-are-few-shot-learners]]
 - [[wiki/sources/microsoft-prompt-engineering-guide]]
 - [[wiki/sources/chain-of-thought-prompting]]
+
+## Key sources
+
+- [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]] — último recurso, só se o problema for estático ([[wiki/concepts/engenharia-de-ia-ao-redor-do-modelo]])

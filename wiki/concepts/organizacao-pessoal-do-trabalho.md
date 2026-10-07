@@ -3,8 +3,8 @@ type: concept
 title: "Organização Pessoal do Trabalho"
 aliases: ["anotar em papel", "lista de tarefas priorizada", "loop aberto", "efeito zeigarnik no trabalho"]
 date_created: 2026-07-23
-date_updated: 2026-07-23
-source_count: 2
+date_updated: 2026-10-07
+source_count: 3
 tags: [organizacao, produtividade, carreira, junior, gestao-de-tarefas]
 skill: tech-mentor-leadership
 status: draft
@@ -43,3 +43,7 @@ Toda tarefa iniciada e não registrada como concluída fica como um "loop aberto
 
 - [[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]]
 - [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]]
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — organizar o próprio trabalho como antídoto de estresse ([[wiki/concepts/complexidade-e-organizacao]], [[wiki/concepts/poder-da-barra-de-progresso-e-do-check]])

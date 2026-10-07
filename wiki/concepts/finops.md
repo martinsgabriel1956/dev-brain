@@ -3,8 +3,8 @@ type: concept
 title: "FinOps — Cost-Aware Architecture"
 aliases: ["finops", "cloud cost", "unit economics", "cost optimization"]
 date_created: 2026-04-23
-date_updated: 2026-09-29
-source_count: 6
+date_updated: 2026-10-07
+source_count: 7
 tags: [finops, cloud-cost, unit-economics, right-sizing, spot-instances, egress, aws]
 skill: tech-mentor-infra
 status: stub
@@ -54,3 +54,8 @@ Terceirizar infra converte [[wiki/concepts/capex-vs-opex|CAPEX em OPEX]] e elimi
 - [[wiki/sources/sre-capacidade-observabilidade-confiabilidade-custo]] — otimização de custo como "gastar mais para perder menos"; ligação com planejamento de capacidade
 - [[wiki/sources/escalabilidade-horizontal-vertical-custo-grafico]] — exemplo gráfico de desperdício quando escalar verticalmente força dobrar o tier da instância
 - [[wiki/sources/rto-rpo-recovery-time-point-objective]] — custo de downtime ($/minuto) como justificativa direta para o RTO tolerável de uma arquitetura
+
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] — custo como requisito de arquitetura: SMS vs push/e-mail, [[wiki/concepts/channel-router-custo-fallback]].

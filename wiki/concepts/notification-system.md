@@ -3,8 +3,8 @@ type: concept
 title: "Notification System"
 aliases: ["sistema de notificação", "notification system", "push email sms in-app"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-10-07
+source_count: 2
 tags: [system-design, notificacao, fanout, push, fcm, apns, redis, filas]
 skill: tech-mentor-system-design
 status: stable
@@ -100,3 +100,8 @@ device_tokens:       user_id, token, platform (fcm|apns), created_at
 ## Key Sources
 
 - [[wiki/sources/notification-system]]
+
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] — versão de entrevista: ingestão (idempotency key, preferência, rate limit) → 3 tópicos Kafka por prioridade → [[wiki/concepts/channel-router-custo-fallback|channel router]] → workers → callback → [[wiki/concepts/confirmacao-de-entrega-nao-confiavel|reconciliação]].

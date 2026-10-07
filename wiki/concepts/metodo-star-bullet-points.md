@@ -3,8 +3,8 @@ type: concept
 title: "Método STAR em Bullet Points de Currículo"
 aliases: ["método STAR", "STAR method resume", "método XYZ do Google", "bullet points objetivos"]
 date_created: 2026-09-04
-date_updated: 2026-09-04
-source_count: 1
+date_updated: 2026-10-07
+source_count: 2
 tags: [carreira, currículo, entrevistas, comunicação]
 skill: tech-mentor-leadership
 status: stub
@@ -39,3 +39,4 @@ Bullet points objetivos, além de comunicarem melhor para um leitor humano, tend
 ## Key Sources
 
 - [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — exemplos concretos de bullet vago vs. objetivo tirados de currículos reais de candidatos júnior
+- [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — versão falada do mesmo princípio: resposta com desafio, ação e impacto medido ([[wiki/concepts/storytelling-em-entrevista]])

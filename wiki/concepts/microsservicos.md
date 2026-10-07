@@ -3,8 +3,8 @@ type: concept
 title: "Microsserviços"
 aliases: ["microsservicos", "microservices", "arquitetura de microsserviços", "decomposição por domínio"]
 date_created: 2026-07-24
-date_updated: 2026-10-06
-source_count: 32
+date_updated: 2026-10-07
+source_count: 34
 tags: [microsservicos, arquitetura, bounded-context, distributed-monolith, circuit-breaker, resiliencia]
 skill: tech-mentor-backend
 status: draft
@@ -167,3 +167,6 @@ Microsserviço com dependência síncrona externa é [[wiki/concepts/monolito-di
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — Shopify (monolito → microsserviços) e Uber (DOMA após 50+ microsserviços por equipe); decisão estrutural.
+
+- [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — "quebrar em microsserviços" como resposta a lentidão só faz sentido após diagnóstico: índice, fila, fronteiras ou componente isolado podem bastar; microsserviços trocam problemas por rede, consistência e operação ([[wiki/concepts/tradeoff-arquitetural]]).
+- [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — exemplo de entrevista: migração de monólito para microsserviços exige explicar por que (e não só escalar o servidor) e como a decisão foi tomada ([[wiki/concepts/explicar-o-porque-das-decisoes]])

@@ -3,8 +3,8 @@ type: concept
 title: "Política Organizacional (Navigating Politics)"
 aliases: ["company politics", "política da empresa", "navigating org politics", "diagrama de influência"]
 date_created: 2026-09-21
-date_updated: 2026-09-30
-source_count: 3
+date_updated: 2026-10-07
+source_count: 4
 tags: [politica-organizacional, lideranca, influencia, credibilidade, carreira, gestao-de-pessoas]
 skill: tech-mentor-leadership
 status: draft
@@ -52,3 +52,7 @@ A política de uma empresa raramente muda sem uma mudança drástica na lideran�
 - [[wiki/sources/como-lidar-com-politica-empresarial-lideranca-engenharia]] — origem desta página: diagrama de influência vs. organograma, relacionamento como redutor de risco percebido, política boa vs. ruim, overreach sem capital político, cultura tóxica raramente muda de dentro
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — pergunta de abertura "técnico ou político?" — o autor responde com habilidades comportamentais, não com escalada hierárquica; cuidado com quando/onde resmungar
 - [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — entender o jogo e os interesses por trás de processos (gerente PMI vs. Agile) antes de tentar mudá-los; reclamar com cuidado ([[wiki/concepts/reclamar-menos-e-fazer-mais]])

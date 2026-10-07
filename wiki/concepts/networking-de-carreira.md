@@ -3,8 +3,8 @@ type: concept
 title: "Networking de Carreira"
 aliases: ["networking", "mercado invisível de vagas", "mercado de indicações"]
 date_created: 2026-07-20
-date_updated: 2026-09-14
-source_count: 6
+date_updated: 2026-10-07
+source_count: 7
 tags: [carreira, networking, contratacao, senioridade]
 skill: tech-mentor-leadership
 status: stub
@@ -38,8 +38,13 @@ Ambientes que reúnem profissionais com o mesmo objetivo por um período prolong
 
 [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] acrescenta uma função de networking à publicação de projetos pessoais que outras fontes desta página tratam mais como prova de competência (ver [[wiki/concepts/curriculo-vs-portfolio]]): postar projetos no LinkedIn é citado explicitamente como forma de **achar usuários** — o projeto funciona simultaneamente como prova técnica e como gancho de rede/visibilidade, reforçando o mesmo mercado visível já documentado abaixo via [[wiki/entities/linkedin]].
 
+## Recruiters Após Achar a Vaga no ATS
+
+[[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]]: depois de achar a vaga pelo ATS, pesquisar a empresa no LinkedIn, localizar o recruiter, conectar e mandar mensagem — sobretudo para empresas muito desejadas ([[wiki/concepts/busca-de-vagas-direto-no-ats]]).
+
 ## Key Sources
 
+- [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — recruiter + mensagem após achar vaga no ATS
 - [[wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos]] — network de ex-alunos de graduação (não só pós) como benefício complementar ao diploma; reconhecimento explícito do papel da sorte
 - [[wiki/sources/pos-graduacao-arquitetura-software-vale-a-pena]]
 - [[wiki/sources/papinho-tech-solo-comunidade]] — mesmo mecanismo de indicação via presença recorrente, aplicado a meetups/eventos de comunidade

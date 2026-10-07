@@ -3,8 +3,8 @@ type: concept
 title: "Dev Essencial e Raridade"
 aliases: ["dev essencial", "dev necessário", "salário baseado em raridade"]
 date_created: 2026-09-23
-date_updated: 2026-09-30
-source_count: 2
+date_updated: 2026-10-07
+source_count: 3
 tags: [carreira, salario, valorizacao, soft-skills]
 skill: tech-mentor-leadership
 status: draft
@@ -40,3 +40,7 @@ Base comum: [[wiki/concepts/resolver-problemas-como-habilidade-central]]. Alavan
 
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]]
 - [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — criar software ficou fácil, manter em produção não: demanda sobre devs cresce ([[wiki/concepts/risco-ocupacional-do-dev]])

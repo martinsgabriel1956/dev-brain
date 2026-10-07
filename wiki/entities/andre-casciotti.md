@@ -3,8 +3,8 @@ type: entity
 title: "André Casciotti"
 aliases: ["Próximo Nível (canal)"]
 date_created: 2026-07-03
-date_updated: 2026-10-05
-source_count: 8
+date_updated: 2026-10-07
+source_count: 9
 tags: [carreira, mentoria, youtube, criador-de-conteudo]
 skill: tech-mentor-leadership
 status: stub
@@ -61,3 +61,7 @@ Criador de conteúdo técnico, apresentador do quadro "Próximo Nível" (canal n
 ## Key sources (adição 2026-10-05)
 
 - [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]] — Vídeo técnico sobre testabilidade: [[wiki/concepts/acoplamento-que-impede-teste-unitario]], [[wiki/concepts/teste-unitario-sem-io]], [[wiki/concepts/heranca-vs-composicao]], [[wiki/concepts/metodo-estatico-e-testabilidade]] (cita o curso "Dev que Resolve", arquitetura para devs e teste unitário).
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — nona fonte: estresse como [[wiki/concepts/risco-ocupacional-do-dev]] e três mantras ([[wiki/concepts/foco-no-que-esta-ao-seu-alcance]], [[wiki/concepts/melhor-possivel-com-o-tempo-disponivel]], [[wiki/concepts/complexidade-e-organizacao]])

@@ -3,8 +3,8 @@ type: concept
 title: "Capital de Tokens"
 aliases: ["token capital", "capital computacional vs capital humano"]
 date_created: 2026-07-16
-date_updated: 2026-07-19
-source_count: 3
+date_updated: 2026-10-07
+source_count: 4
 tags: [capital-de-tokens, token-economics, custo-ia, roi-de-ia, organizacoes, incentivo-do-provedor]
 skill: tech-mentor-ai
 status: draft
@@ -39,3 +39,7 @@ Em outro artigo (segunda menção na wiki a Nadella comentando sobre a economia 
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]]
 - [[wiki/sources/rfcs-grill-me-e-o-risco-da-preguica-no-vibe-coding]] — "paradoxo da informação invertida" de Nadella (traces, evals, adapted weights, memory accumulates)
 - [[wiki/sources/quality-gate-ratchet-multiplos-agentes-ia]] — hipótese não verificada de incentivo comercial do provedor para output imperfeito de primeira, gerando mais consumo de tokens ao longo do ciclo de correção
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] — redução de ~71% de tokens no pico por curadoria de contexto; possibilidade de modelo menor (não medido)

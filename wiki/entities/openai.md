@@ -3,8 +3,8 @@ type: entity
 title: "OpenAI"
 aliases: ["Open AI"]
 date_created: 2026-05-17
-date_updated: 2026-09-21
-source_count: 22
+date_updated: 2026-10-07
+source_count: 23
 tags: [openai, organização, llm, ia, cartao-corporativo, prompt-caching]
 skill: tech-mentor-ai
 status: stable
@@ -109,3 +109,11 @@ Segundo [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]], a OpenAI rela
 - [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]] — citada como uma das empresas de IA que adotam o modelo Forward Deployed Engineer
 - [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]] — citada como caso mais simples de prompt caching: cache implícito/automático, sem configuração manual, ao contrário do breakpoint explícito da Anthropic
 - [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] — produto interno com ~1M linhas geradas via Codex sob restrição de zero código escrito manualmente
+
+## Vagas no Ashby
+
+[[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] usa vagas da OpenAI no [[wiki/entities/ashby]] como exemplo de resultado da busca `site:` por AI Engineer.
+
+## Key Sources
+
+- [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — vagas da OpenAI no Ashby como exemplo

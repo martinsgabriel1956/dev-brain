@@ -3,8 +3,8 @@ type: concept
 title: "Skills (Padrão de Harness)"
 aliases: ["skills harness", "agents skills", "skill pattern ia", "skills.sh"]
 date_created: 2026-06-02
-date_updated: 2026-10-06
-source_count: 13
+date_updated: 2026-10-07
+source_count: 14
 tags: [skills, harness, context-engineering, lazy-loading, system-prompt, grill-me, rfc, babysitting-de-agentes, produto-de-consumo]
 skill: tech-mentor-ai
 status: stable
@@ -128,8 +128,13 @@ Relato em [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes
 
 Skill que identifica alterações destrutivas ou com lock (drop de coluna), roda script de validação de sintaxe e emite relatório aprovando/bloqueando. Skills = biblioteca sob demanda em vez de tudo no contexto inicial.
 
+## Agent Engineer Cria Skills
+
+[[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]]: o [[wiki/concepts/agent-engineer]] cria skills e automações para o time como parte do cargo.
+
 ## Key Sources
 
+- [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — agent engineer cria skills
 
 - [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — 'falsa sensação' de saber criar uma skill decente; a diferença entre boa e ruim é grande e a frustração vem do resultado
 - [[wiki/sources/formacao-ia-devs-aula-03-skills]]

@@ -3,8 +3,8 @@ type: concept
 title: "Contexto Organizacional para Arquitetura"
 aliases: ["maturidade organizacional", "restricoes organizacionais de arquitetura", "arquitetura e processo da empresa"]
 date_created: 2026-07-03
-date_updated: 2026-09-15
-source_count: 5
+date_updated: 2026-10-07
+source_count: 6
 tags: [arquitetura, processo, carreira, ia]
 skill: tech-mentor-leadership
 status: stub
@@ -56,3 +56,5 @@ A IA consegue gerar um desenho de arquitetura "ideal" em segundos, mas não sabe
 - [[wiki/sources/application-boundary-martin-fowler]] — fronteiras de aplicação como construção social, precursor de 2003 do mesmo argumento
 - [[wiki/sources/microsservicos-martin-fowler-james-lewis]] — Lei de Conway como justificativa central para decompor por capacidade de negócio, não por camada técnica
 - [[wiki/sources/talk-about-platforms-evan-bottcher]] — plataforma como problema organizacional; silos técnicos → acoplamento de backlog
+
+- [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — experiência do time e capacidade de operar a complexidade como variáveis da decisão arquitetural ([[wiki/concepts/contexto-na-decisao-arquitetural]]).

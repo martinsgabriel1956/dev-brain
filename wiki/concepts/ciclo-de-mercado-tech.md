@@ -3,8 +3,8 @@ type: concept
 title: "Ciclo de Mercado Tech"
 aliases: ["ciclo de abundância e depressão", "lei da oferta e procura em tech", "ciclo de contratação tech"]
 date_created: 2026-07-03
-date_updated: 2026-09-14
-source_count: 12
+date_updated: 2026-10-07
+source_count: 14
 tags: [carreira, mercado-de-trabalho, oferta-e-procura, ciclo-economico]
 skill: tech-mentor-leadership
 status: draft
@@ -94,8 +94,14 @@ A mesma fonte cita, como contraponto histórico, o Google (nascido de restriçã
 
 Um dado anedótico (nome de consultoria não confirmado com segurança na transcrição, possivelmente "Mackin") reforça a "Defasagem EUA → Brasil como Preditor de Onda" já documentada acima: vagas júnior nos EUA em queda de ~1-2%, revertendo uma tendência anterior de crescimento — sem dado equivalente citado para o Brasil.
 
-## Key Sources
+## Defasagem EUA → Brasil: Segunda Fonte e Recomendação de Ação
 
+[[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] repete a heurística ("tudo começa lá e depois vem para cá") e dela tira uma ação: entrevistar no mercado internacional cedo, buscando vagas na origem ([[wiki/concepts/busca-de-vagas-direto-no-ats]]). Também enquadra a IA como mais uma onda de transformação seguida de novo status quo.
+
+## Key Sources
+- [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]] — indústria de engenharia de IA ainda não estabilizada: conhecimento 'nas ruas', não em livro
+
+- [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — defasagem EUA→Brasil reforçada; ação prática
 - [[wiki/sources/formar-para-pleno-nao-junior-mercado-fundamentos-livros-algoritmos]] — bootcamp de frontend como via de entrada saturada antes da IA; dado anedótico (fonte não confirmada) de queda de vagas júnior nos EUA
 - [[wiki/sources/code-was-never-the-hard-part-reacao-lucas-montana]] — salários altos e estresse pré-ZIRP/pré-IA como evidência contra "programar sempre foi fácil"
 - [[wiki/sources/akita-oferta-procura-matematica-carreira]]

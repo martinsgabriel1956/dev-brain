@@ -3,8 +3,8 @@ type: concept
 title: "Monolith First"
 aliases: ["monolito primeiro", "monolith first", "martinfowler.com/bliki/monolithfirst"]
 date_created: 2026-08-18
-date_updated: 2026-10-02
-source_count: 6
+date_updated: 2026-10-07
+source_count: 7
 tags: [monolito, monolito-modular, microsservicos, martin-fowler, arquitetura, ddd, yagni, bounded-context]
 skill: tech-mentor-backend
 status: stable
@@ -57,3 +57,5 @@ Distinto mas complementar a [[wiki/sources/arquitetura-de-sacrificio]] (outro ar
 - [[wiki/sources/seedwork-martin-fowler]] — mesmo padrão retórico de Fowler (pragmatismo imperfeito sobre ideal inalcançável), aplicado a reuso de framework em vez de arquitetura de serviços
 - [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] — quarta fonte independente reforçando a mesma recomendação: monolito bem estruturado para projetos pequenos/MVPs que precisam validar rápido, com responsabilidades desenhadas para permitir quebra futura pouco traumática
 - [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — mesma ideia por outro ângulo: [[wiki/concepts/desenhar-distribuido-implementar-monolito]]; autor não escolhe lado, exige que o sistema possa mudar com mínimo efeito colateral
+
+- [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — decidir por contexto e diagnóstico, não por estilo "melhor"; migração pode ser fila, cache, índice ou reorganizar módulos.

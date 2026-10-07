@@ -3,8 +3,8 @@ type: entity
 title: "Codex (OpenAI)"
 aliases: ["Codex", "OpenAI Codex", "codex app"]
 date_created: 2026-06-02
-date_updated: 2026-10-06
-source_count: 10
+date_updated: 2026-10-07
+source_count: 11
 tags: [codex, openai, harness, ia-para-devs]
 skill: tech-mentor-ai
 status: stable
@@ -71,3 +71,7 @@ Citado como ferramenta com harness embutido; contraste com [[wiki/entities/deeps
 - [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — citado como harness de preferência de parte do time (portabilidade de skills)
 - [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — menção de transferibilidade
 - [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — harness embutido
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] — citado (com Claude) como exemplo de produto que dispara subagentes em pesquisas extensas

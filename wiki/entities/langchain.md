@@ -3,8 +3,8 @@ type: entity
 title: "LangChain"
 aliases: ["Leng Chain", "LangChain Inc."]
 date_created: 2026-08-19
-date_updated: 2026-10-06
-source_count: 4
+date_updated: 2026-10-07
+source_count: 5
 tags: [langchain, langgraph, loop-engineering, graph-engineering, agentes, orquestracao]
 skill: tech-mentor-ai
 status: stub
@@ -32,3 +32,7 @@ Nenhuma das fontes que atribuem esses termos à LangChain (incluindo esta) traz 
 - [[wiki/sources/graph-engineering-matematica-do-erro-composto]] — segunda atribuição, trecho de áudio impreciso sobre o momento exato do rename
 - [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] — stack do autor (LangChain/LangGraph/Deep Agents) independe do gateway: a API da OpenRouter é a mesma
 - [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — Trivedy e o de-para
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] — demo usa `store.put` com namespace/id para memória do agente (API exata não verificada)

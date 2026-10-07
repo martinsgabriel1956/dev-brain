@@ -3,8 +3,8 @@ type: concept
 title: "Apache Kafka"
 aliases: ["kafka", "topics e partitions", "consumer groups", "kafka producer", "kafka consumer"]
 date_created: 2026-08-19
-date_updated: 2026-10-05
-source_count: 10
+date_updated: 2026-10-07
+source_count: 11
 tags: [kafka, topics, partitions, consumer-groups, mensageria, event-sourcing, murmur-hash, offset-commit, rebalance]
 skill: tech-mentor-backend
 status: draft
@@ -127,3 +127,8 @@ Kafka retém histórico (stream) enquanto RabbitMQ remove o que foi lido (tarefa
 - [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — 72 bilhões de eventos/dia em produção; batch jobs modelados como streams (citação InfoQ); desacoplamento radical entre serviço de aprovação de transação e serviço de notificação via consumo independente do mesmo tópico
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — Kafka/RabbitMQ citados como brokers de mensageria (exemplo de assíncrono)
 - [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — contraste 'tarefa vs stream de eventos'
+
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] — um tópico por prioridade ([[wiki/concepts/filas-separadas-por-prioridade]]) para impedir que marketing atrase mensagens críticas.

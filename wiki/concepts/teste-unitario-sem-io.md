@@ -3,8 +3,8 @@ type: concept
 title: "Teste Unitário sem I/O"
 aliases: ["unit test sem rede e disco", "premissa do teste unitário"]
 date_created: 2026-10-05
-date_updated: 2026-10-05
-source_count: 1
+date_updated: 2026-10-07
+source_count: 2
 tags: [testes, teste-unitario, io, ci, isolamento]
 skill: tech-mentor-testing
 status: draft
@@ -25,3 +25,7 @@ Ver [[wiki/concepts/acoplamento-que-impede-teste-unitario]]. Observação **[ski
 ## Key sources
 
 - [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]]
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — exemplo de mudança ao alcance do dev: reservar 2 h de 8 h para teste unitário e rodar testes/SonarQube na pipeline

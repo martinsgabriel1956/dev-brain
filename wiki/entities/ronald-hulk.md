@@ -3,8 +3,8 @@ type: entity
 title: "Ronald Hulk"
 aliases: ["Roland Hulk"]
 date_created: 2026-09-29
-date_updated: 2026-09-30
-source_count: 3
+date_updated: 2026-10-07
+source_count: 4
 tags: [pessoa, criador-de-conteudo, ia, rag, harness]
 skill: tech-mentor-ai
 status: stub
@@ -17,6 +17,7 @@ Criador de conteúdo (vídeos) que diz ajudar indivíduos e empresas a colocar s
 Temas nas fontes: [[wiki/concepts/hybrid-search]] e RAG, [[wiki/concepts/prompt-caching]], harness engineering.
 
 ## Key sources
+- [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]] — vídeo sobre o que faz um engenheiro de IA ser bom: take-home sem acabamento, conhecimento vertical, ciclo construir-e-aprender
 
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]]
 - [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]]

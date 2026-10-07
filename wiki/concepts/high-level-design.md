@@ -3,8 +3,8 @@ type: concept
 title: "High Level Design (HLD)"
 aliases: ["HLD", "High-Level Design"]
 date_created: 2026-05-17
-date_updated: 2026-09-03
-source_count: 6
+date_updated: 2026-10-07
+source_count: 7
 tags: [system-design, arquitetura, hld, documentacao]
 skill: tech-mentor-system-design
 status: stable
@@ -53,3 +53,8 @@ Em uma [[wiki/concepts/entrevista-system-design|entrevista de system design]], o
 
 [[wiki/concepts/low-level-design]] · [[adr-architecture-decision-record]] · [[wiki/concepts/trd-technical-requirements-document]] · [[wiki/concepts/entrevista-system-design]]
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — desenhar o HLD cedo demais é o antipadrão central: o desenho é consequência dos requisitos levantados, não substituto deles
+
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] — alto nível (client→server→infra) antes da API.

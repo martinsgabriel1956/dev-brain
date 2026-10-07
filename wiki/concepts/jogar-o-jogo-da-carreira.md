@@ -3,8 +3,8 @@ type: concept
 title: "Jogar o Jogo da Carreira"
 aliases: ["jogar para ganhar", "jogo da carreira", "aprender a jogar o jogo"]
 date_created: 2026-09-30
-date_updated: 2026-09-30
-source_count: 1
+date_updated: 2026-10-07
+source_count: 2
 tags: [carreira, promocao, politica, expectativas]
 skill: tech-mentor-leadership
 status: draft
@@ -35,3 +35,7 @@ Evidência é anedótica (experiência do autor). "Jogar para ganhar" pode ser l
 ## Key Sources
 
 - [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — "entender o jogo que você joga": hierarquia e interesses; gestão quer resultado, tático/operacional cuida do como ([[wiki/concepts/foco-no-que-esta-ao-seu-alcance]])

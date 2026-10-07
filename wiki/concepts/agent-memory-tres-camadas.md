@@ -3,8 +3,8 @@ type: concept
 title: "Memória de Agente em Três Camadas (Sessão / Persistente / Skill)"
 aliases: ["three-layer agent memory", "memória de três camadas", "session/persistent/skill memory"]
 date_created: 2026-07-21
-date_updated: 2026-09-29
-source_count: 5
+date_updated: 2026-10-07
+source_count: 6
 tags: [tech-mentor-ai, agent-memory, learning-loop, sqlite, fts5, hermes-agent, claude-md, memory-layers]
 skill: tech-mentor-ai
 status: draft
@@ -57,3 +57,7 @@ A fonte também documenta uma prática de campo (não formalizada como spec ou l
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]]
 - [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] — variante de memória multiplayer por canal (não por usuário individual)
 - [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — distinção de três partes atribuída à Anthropic (contexto de trabalho / memória futura / artefatos revisados); hierarquia do CLAUDE.md enquadrada como memory layer; prática de campo de gerar docs em `docs/` ao fim de cada tarefa
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] — memórias semântica/episódica/procedural com namespace + id em store ([[wiki/concepts/tipos-de-memoria-de-agente]])

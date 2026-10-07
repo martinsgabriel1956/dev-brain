@@ -3,8 +3,8 @@ type: concept
 title: "Novo Perfil do Desenvolvedor na Era da IA"
 aliases: ["dev ia", "engenheiro ia 2026", "novo dev", "perfil profissional ia"]
 date_created: 2026-06-02
-date_updated: 2026-09-29
-source_count: 12
+date_updated: 2026-10-07
+source_count: 14
 tags: [carreira, perfil-profissional, ia-para-devs, arquitetura, planejamento]
 skill: tech-mentor-ai
 status: draft
@@ -88,8 +88,14 @@ O conceito descrito aqui ganhou nome formal confirmado por dados de campo do Val
 
 [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]]: "não é uma fase de extinção do desenvolvedor, é uma fase de migração" — mudança de paradigma em que surgem mais preocupações (qualidade, esteira, feedback à IA), e o conhecimento *enterprise* correspondente ainda não chegou aos cursos. Ver [[wiki/concepts/valor-do-codigo-com-tempo-achatado]].
 
-## Key Sources
+## Dev Genérico × Dev que Resolve Problemas (Visão do Mercado Internacional)
 
+[[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] divide o mercado em "dev genérico" (um ecossistema, ticket de uma camada; vagas ~-50%) e o dev que usa IA e resolve o problema ponta a ponta (vagas ~+59%) — números da autora, sem fonte. Desdobra o perfil nos cargos [[wiki/concepts/forward-deployed-engineer]], [[wiki/concepts/ai-engineer]], [[wiki/concepts/agent-engineer]] e [[wiki/concepts/design-engineer]]; ver [[wiki/concepts/autonomia-de-sugerir-vs-pegar-para-si]].
+
+## Key Sources
+- [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]] — engenheiro de IA procurado não cabe em caixinha: assume o problema ponta a ponta ([[wiki/concepts/conhecimento-vertical-do-problema]]) e tem seis competências mínimas ([[wiki/concepts/competencias-do-engenheiro-de-ia]])
+
+- [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — dev genérico × dev que resolve problemas; cargos derivados
 - [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] — "everyone ships" como reforço de campo à tese de deslocamento para julgamento/revisão
 - [[wiki/sources/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico]] — contraponto emocional de primeira pessoa à Analogia do Gerente; "babá de IA"; valor atrelado à ferramenta da empresa
 - [[wiki/sources/ia-paradoxo-de-jevons-camada-de-abstracao-futuro-do-programador]] — citação de Kent Beck (90% desvalorizado / 10% mil vezes mais valioso); qualidades humanas (comunicação, resiliência) como valor crescente

@@ -3,8 +3,8 @@ type: concept
 title: "Memory Rot"
 aliases: ["memória obsoleta", "apodrecimento de memória"]
 date_created: 2026-09-29
-date_updated: 2026-09-29
-source_count: 1
+date_updated: 2026-10-07
+source_count: 2
 tags: [memory-rot, memoria, agentes, harness, documentacao]
 skill: tech-mentor-ai
 status: stub
@@ -21,3 +21,7 @@ A fonte só **nomeia** o problema; não propõe mitigação. Práticas plausíve
 ## Key sources
 
 - [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]]
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] — meia-vida de 72 h na importância da memória como mitigação de envelhecimento

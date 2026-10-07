@@ -3,8 +3,8 @@ type: concept
 title: "Resolver Problemas como Habilidade Central"
 aliases: ["dev que resolve", "resolver problema de verdade"]
 date_created: 2026-09-23
-date_updated: 2026-09-28
-source_count: 3
+date_updated: 2026-10-07
+source_count: 4
 tags: [carreira, resolucao-de-problemas, requisitos, arquitetura, testes, refatoracao]
 skill: tech-mentor-leadership
 status: draft
@@ -37,3 +37,7 @@ Relacionado: [[wiki/concepts/pensamento-critico]] (causa raiz), [[wiki/concepts/
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]]
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] — mesma tese aplicada ao método de estudo do iniciante ([[wiki/concepts/aprender-com-foco-no-problema]])
 - [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] — resolver problema às vezes é só análise, não código; um dos fundamentos que sustentam a carreira apesar dos ciclos de hype
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — resolver pequenos problemas amplia autonomia; teste e refatoração entre os quatro pilares do "dev que resolve"

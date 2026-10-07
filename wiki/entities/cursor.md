@@ -3,8 +3,8 @@ type: entity
 title: "Cursor"
 aliases: ["Cursor IDE", "Cursor AI"]
 date_created: 2026-08-27
-date_updated: 2026-10-06
-source_count: 4
+date_updated: 2026-10-07
+source_count: 5
 tags: [cursor, harness, ide, agentes-ia, ia-para-devs]
 skill: tech-mentor-ai
 status: stub
@@ -44,3 +44,7 @@ Citado como ferramenta com harness embutido (user harness configurável por cima
 - [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] — Cursor Automations (evento/schedule), execução multi-modelo em worktrees paralelas, desktop operável por agente
 - [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — menção de transferibilidade
 - [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — harness embutido
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — citado (com Claude Code e Lovable) como ferramenta que torna criar software fácil; manter em produção continua com devs

@@ -3,8 +3,8 @@ type: concept
 title: "Comunicação Técnica"
 aliases: ["comunicação", "comunicação efetiva", "tradução técnica", "emissor receptor"]
 date_created: 2026-04-23
-date_updated: 2026-09-30
-source_count: 11
+date_updated: 2026-10-07
+source_count: 12
 tags: [carreira, comunicação, liderança, soft-skills]
 skill: tech-mentor-leadership
 status: stable
@@ -87,3 +87,4 @@ O princípio "tradução é responsabilidade de quem emite" tem uma aplicação 
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — comunicação como habilidade de desenrolar demandas: escutar, escrever, ler o momento, expor fatos sem culpar pessoas, conversa informal ([[wiki/concepts/expor-problemas-construtivamente]])
 - [[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] — pergunta de ajuda como caso de comunicação clara
 - [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]
+- [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — comunicação em entrevista: contar história com impacto, explicar o porquê e narrar o raciocínio ([[wiki/concepts/storytelling-em-entrevista]])

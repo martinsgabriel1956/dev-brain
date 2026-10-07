@@ -3,8 +3,8 @@ type: concept
 title: "Product Engineer"
 aliases: ["product engineer", "produto engineer", "engenheiro de produto"]
 date_created: 2026-06-09
-date_updated: 2026-09-14
-source_count: 3
+date_updated: 2026-10-07
+source_count: 4
 tags: [carreira, perfil-profissional, harness, produto, taste, ia-para-devs, builders]
 skill: tech-mentor-ai
 status: stable
@@ -95,8 +95,13 @@ Os quatro movimentos práticos para começar essa semana — segundo [[wiki/sour
 
 [[wiki/sources/ai-engineer-forward-deployed-engineer-mercado-vagas-2026]] posiciona o Product Engineer dentro de uma hierarquia de quatro cargos comparados por demanda real, não por hype: Machine Learning Platform Engineer (infra interna) → AI Engineer (fundamentos + entrega ao cliente) → Product Engineer (foco em entregar ao cliente, ponta a ponta) → [[wiki/concepts/forward-deployed-engineer]] (execução dentro do cliente). A fonte avalia Product Engineer e AI Engineer como as opções mais interessantes de carreira entre as quatro, em contraste explícito com Forward Deployed Engineer (nichado, pouca progressão, quase inexistente no Brasil).
 
+## Alias em Vagas
+
+[[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] lista "product engineer" como um dos títulos sob os quais o perfil de design engineer aparece ([[wiki/concepts/fragmentacao-de-titulos-de-cargos-ia]]).
+
 ## Key Sources
 
+- [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — alias de design engineer em vagas
 - [[wiki/sources/product-engineer-vale-do-silicio-2026]]
 - [[wiki/sources/impacto-ia-mercado-frontend]]
 - [[wiki/sources/ai-engineer-forward-deployed-engineer-mercado-vagas-2026]] — comparação de demanda real contra AI Engineer, Forward Deployed Engineer e Machine Learning Engineer

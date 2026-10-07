@@ -3,8 +3,8 @@ type: concept
 title: "Push Notifications Mobile — FCM, APNs"
 aliases: ["fcm push", "apns push ios", "firebase cloud messaging", "onesignal mobile"]
 date_created: 2026-04-24
-date_updated: 2026-04-24
-source_count: 1
+date_updated: 2026-10-07
+source_count: 2
 tags: [mobile, push-notifications, fcm, apns, onesignal, deep-links]
 skill: tech-mentor-mobile
 status: stable
@@ -86,3 +86,8 @@ function shouldSend(user: User, now: Date): boolean {
 ## Key Sources
 
 - [[wiki/sources/mobile-push-notifications]]
+
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] — entrega de push via FCM/APNs não é confirmada: [[wiki/concepts/confirmacao-de-entrega-nao-confiavel]].

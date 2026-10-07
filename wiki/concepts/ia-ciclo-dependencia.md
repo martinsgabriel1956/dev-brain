@@ -3,8 +3,8 @@ type: concept
 title: "IA — Ciclo de Dependência"
 aliases: ["ia dependencia", "degradacao por ia", "vibe coding dependencia", "ciclo de degradacao"]
 date_created: 2026-04-29
-date_updated: 2026-09-29
-source_count: 4
+date_updated: 2026-10-07
+source_count: 5
 tags: [ia, carreira, vibe-coding, competencia, fundamentos]
 skill: tech-mentor-leadership
 status: stable
@@ -57,6 +57,7 @@ IA amplifica o que você já sabe. Dev que entende sistemas usa IA para acelerar
 [[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] inclui a IA (o autor cita o ChatGPT) na 2ª etapa do [[wiki/concepts/ciclo-de-2-horas]], junto à documentação — **antes** da tentativa própria e de pedir ajuda a uma pessoa. A fonte não discute o risco de dependência; ver o ciclo acima para o contraponto (a IA consultada, mas com o esforço de entender e validar mantido).
 
 ## Key Sources
+- [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]] — contrapartida: quem entrega sem acabamento/entendimento é filtrado em take-home e entrevista ([[wiki/concepts/fim-da-era-do-parecer]])
 
 - [[wiki/sources/roadmap-dev-senior-2026]]
 - [[wiki/sources/apagao-de-seniors-vibe-coding]]

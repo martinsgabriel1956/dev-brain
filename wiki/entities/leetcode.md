@@ -3,8 +3,8 @@ type: entity
 title: "LeetCode"
 aliases: ["leit code", "leetcode.com"]
 date_created: 2026-08-04
-date_updated: 2026-08-27
-source_count: 6
+date_updated: 2026-10-07
+source_count: 7
 tags: [entrevista-tecnica, coding-interview, plataforma, algoritmos]
 skill: cs-fundamentals
 status: stub
@@ -28,3 +28,4 @@ Convenção observada em [[wiki/sources/binary-search-em-5-minutos]]: para probl
 - [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]]
 - [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — três problemas resolvidos e submetidos na plataforma (Longest Consecutive Sequence, Top K Frequent Elements, Reverse Only Letters)
 - [[wiki/sources/como-ficar-bom-em-leetcode]] — método iterativo de estudo na plataforma: filtrar por tema, ordenar por acceptance rate/dificuldade, ler *Solutions* após timebox; convenção de retornar soma de nós em BST via DFS
+- [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — roteiro de início: array → two pointer → sliding window; ~10 problemas por padrão antes de mudar

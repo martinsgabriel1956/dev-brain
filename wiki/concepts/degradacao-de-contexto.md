@@ -3,8 +3,8 @@ type: concept
 title: "Degradação de Contexto"
 aliases: ["context degradation", "lost in the middle", "degradação janela contexto"]
 date_created: 2026-06-02
-date_updated: 2026-09-29
-source_count: 6
+date_updated: 2026-10-07
+source_count: 7
 tags: [contexto, degradacao, janela-de-contexto, llm, qualidade]
 skill: tech-mentor-ai
 status: stable
@@ -71,3 +71,7 @@ Ter uma janela grande não significa que devo preenchê-la. Quanto mais informa�
 - [[wiki/sources/codigo-gerado-por-ia-mais-falhas-seguranca-degradacao-iterativa]] — possível variante de domínio (segurança) do mesmo tipo de degradação por perda de memória/atenção entre rodadas
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — "mais informação nem sempre é melhor": contexto demais/irrelevante confunde o modelo; justifica o lazy loading das [[wiki/concepts/skills-agente|skills]] (só a descrição no system prompt) como economia de janela
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — o autor cita queda de desempenho em contextos muito longos (número provavelmente corrompido na transcrição) como motivo para controlar chunks e top-K
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] — ferramentas inúteis e histórico acumulado como ruído ([[wiki/concepts/superficie-probabilistica-do-agente]])

@@ -3,8 +3,8 @@ type: concept
 title: "Entrevista de System Design (Whiteboard Interview)"
 aliases: ["system design interview", "whiteboard interview", "lousa branca", "entrevista de arquitetura"]
 date_created: 2026-07-20
-date_updated: 2026-09-30
-source_count: 10
+date_updated: 2026-10-07
+source_count: 12
 tags: [system-design, entrevistas, arquitetura, carreira]
 skill: tech-mentor-system-design
 status: draft
@@ -101,3 +101,9 @@ Roteiro da fonte: building blocks → problemas reais → projeto em camadas →
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — formulação negativa das três crenças que reprovam: o enunciado já define o problema, velocidade é sinal de competência, e existe "a melhor tecnologia"
 - [[wiki/sources/como-se-comportar-na-entrevista-de-system-design-tier-s]] — fechamento da série de Pedro Camaforte: mapeamento dos 7 conceitos técnicos da série de volta a features de sistemas clássicos, roteiro de 3-4 etapas antes de desenhar, e a tabela de dois perfis de candidato (que assume vs. que pergunta; monólogo vs. colaboração)
 - [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — roteiro de estudo em 5 etapas e caso Instagram simplificado; não cobre requisitos/estimativas
+- [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — estudar os building blocks antes de praticar; explicar o porquê das decisões ([[wiki/concepts/explicar-o-porque-das-decisoes]]) e conversar com o entrevistador
+
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] — caso de notificação: não comece pela [[wiki/concepts/api-e-consequencia-nao-ponto-de-partida|API]]; 3 min de [[wiki/concepts/entidades-de-primeira-classe-system-design|entidades]]; perguntar sobre custo.

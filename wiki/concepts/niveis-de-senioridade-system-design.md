@@ -3,8 +3,8 @@ type: concept
 title: "System Design por Nível de Senioridade"
 aliases: ["system design junior pleno senior", "expectativas de system design por nível", "o que esperar de cada senioridade em arquitetura"]
 date_created: 2026-07-27
-date_updated: 2026-10-01
-source_count: 8
+date_updated: 2026-10-07
+source_count: 9
 tags: [system-design, carreira, senioridade, junior, pleno, senior, entrevistas]
 skill: tech-mentor-system-design
 status: draft
@@ -70,3 +70,8 @@ Desenvolver um sistema inteiro do zero para uma equipe trabalhar em cima — dec
 - [[wiki/sources/escalar-leituras-banco-de-dados-entrevista-tier-s]] — gradação prática num problema de banco de dados: pleno dá a solução pronta ("cache + réplicas"), sênior investiga contexto (RPS, hotspots, criticidade) antes de responder e sabe que 10k req/s se resolve só com índice + pooling
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — fundamentos de sistemas como conhecimento transferível entre stacks, em oposição a domínio de tecnologias específicas
 - [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] — CAP por serviço como diferencial sênior na resposta
+
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] — reprovação de sênior por hábito (progresso falso, ignorar custo, não pensar em falha), não por conteúdo.

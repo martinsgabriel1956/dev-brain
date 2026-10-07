@@ -3,8 +3,8 @@ type: concept
 title: "Inglês para Desenvolvedores"
 aliases: ["inglês como pré-requisito de carreira", "sem inglês não tem mercado global"]
 date_created: 2026-09-14
-date_updated: 2026-09-14
-source_count: 1
+date_updated: 2026-10-07
+source_count: 2
 tags: [carreira, ingles, mercado-global, remoto-internacional]
 skill: tech-mentor-leadership
 status: stub
@@ -36,3 +36,4 @@ O inglês é o habilitador direto da forma mais citada de [[wiki/concepts/dolari
 ## Key Sources
 
 - [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]]
+- [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — contrapeso: inglês perfeito não é exigido, mas precisa ser OK para conversar sobre software ([[wiki/concepts/ingles-tecnico-suficiente-vs-perfeito]])

@@ -3,8 +3,8 @@ type: concept
 title: "Model Context Protocol (MCP)"
 aliases: ["MCP", "model context protocol", "protocol mcp"]
 date_created: 2026-06-02
-date_updated: 2026-10-06
-source_count: 9
+date_updated: 2026-10-07
+source_count: 10
 tags: [mcp, model-context-protocol, tools, harness, json-rpc, anthropic]
 skill: tech-mentor-ai
 status: stable
@@ -65,8 +65,13 @@ MCPs de domínio (Tools que expõem um backend inteiro, não uma função isolad
 
 MCPs aparecem como parte da capacidade "lembrar e acessar novos conhecimentos" ao lado de arquivos de memória e web search.
 
+## MCPs de Busca Web na Caça de Vagas
+
+[[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] cita os MCPs de busca web do Google como apoio a um agente que roda as queries de vagas ([[wiki/concepts/busca-de-vagas-direto-no-ats]]); menção breve, sem detalhe.
+
 ## Key Sources
 
+- [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — menção a MCP de busca web para agente de vagas
 
 - [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — MCPs 'na quantidade adequada': inicializar muitos servidores ocupa a janela de contexto
 - [[wiki/sources/mcp]]

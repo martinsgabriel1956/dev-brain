@@ -3,8 +3,8 @@ type: concept
 title: "Tool Use Agents"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-29
-source_count: 4
+date_updated: 2026-10-07
+source_count: 5
 tags: [tool-use-agents]
 skill: tech-mentor-ai
 status: stub
@@ -30,3 +30,7 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 - [[wiki/sources/mcp]]
 - [[wiki/sources/structured-outputs-function-calling]]
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — RAG moderna = retrieval exposto como ferramenta ao agente ([[wiki/concepts/rag-como-ferramenta-de-busca]])
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] — seleção dinâmica de tools por turno via palavras-chave da última mensagem ([[wiki/concepts/selecao-de-memoria-e-tools-por-turno]])

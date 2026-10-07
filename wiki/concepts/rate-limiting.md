@@ -3,8 +3,8 @@ type: concept
 title: "Rate Limiting"
 aliases: ["throttling", "rate limit", "token bucket", "sliding window"]
 date_created: 2026-04-23
-date_updated: 2026-10-06
-source_count: 18
+date_updated: 2026-10-07
+source_count: 19
 tags: [rate-limiting, token-bucket, sliding-window, redis, throttling, protecao-api, gatekeeper, attack-surface]
 skill: tech-mentor-backend
 status: stub
@@ -89,3 +89,8 @@ Os quatro algoritmos da parte 2 têm páginas próprias: [[wiki/concepts/fixed-w
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — 429 Too Many Requests como o status do rate limit (ver [[wiki/concepts/http-status-code]])
 - [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — visão arquitetural: camadas, estado compartilhado, 429 e comportamento do cliente
 - [[wiki/sources/rate-limit-estrategias-fixed-sliding-token-leaky-bernardo-lobato]] — estratégias de implementação: fixed/sliding/token/leaky, caso real de pesos e client rate limit
+
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] — rate limit por usuário na API de ingestão de notificações.

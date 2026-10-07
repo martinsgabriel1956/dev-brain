@@ -3,8 +3,8 @@ type: concept
 title: "Building Blocks de System Design"
 aliases: ["building blocks", "blocos de construção", "componentes de system design"]
 date_created: 2026-09-30
-date_updated: 2026-09-30
-source_count: 1
+date_updated: 2026-10-07
+source_count: 2
 tags: [system-design, building-blocks, load-balancer, cache, cdn, filas, sharding, rate-limiter]
 skill: tech-mentor-system-design
 status: draft
@@ -35,3 +35,4 @@ Escolher o bloco pelo [[wiki/concepts/gargalo]] observado, não pelo catálogo, 
 ## Key sources
 
 - [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — catálogo de 7 blocos (LB, rate limiter, cache, fila, database, CDN, sharding) com problema/quando usar/decisão no caso Instagram simplificado
+- [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — lista mínima de pré-estudo (banco, load balancer, API gateway, lambda/serverless, networking, client-server, micro/monolito) antes de praticar system design

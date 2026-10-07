@@ -3,8 +3,8 @@ type: concept
 title: "Filas e Workers"
 aliases: ["job queue", "background processing", "async workers", "processamento assíncrono"]
 date_created: 2026-07-09
-date_updated: 2026-09-30
-source_count: 11
+date_updated: 2026-10-07
+source_count: 13
 tags: [filas, workers, background-jobs, mensageria, backend, retry, idempotencia]
 skill: tech-mentor-backend
 status: stub
@@ -70,3 +70,10 @@ Após o upload, publica-se mensagem na fila e um worker gera a miniatura; o usu�
 - [[wiki/sources/node-single-thread-ssr-bloqueio-event-loop]] — filas como uma das soluções reais (junto de worker threads e cache) para SSR CPU-bound travando o event loop de Node.js, tirando o trabalho pesado do caminho síncrono da requisição
 - [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — Instagram simplificado: upload → fila → worker gera miniatura (assíncrono); RabbitMQ vs Kafka por contexto
 - [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — consumer assíncrono lê filas do RabbitMQ e grava no banco de leitura; escalável independentemente da aplicação de escrita
+
+- [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — fila/processamento assíncrono como alternativa mais barata que microsserviços quando o gargalo é trabalho pesado síncrono na requisição; custo: fluxo mais difícil de acompanhar.
+
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] — workers por canal (push/e-mail/SMS) atrás de filas por prioridade.

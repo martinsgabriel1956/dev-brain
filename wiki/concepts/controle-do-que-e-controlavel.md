@@ -3,8 +3,8 @@ type: concept
 title: "Controle do que é Controlável"
 aliases: ["controle suas variáveis", "dicotomia do controle", "locus of control para devs"]
 date_created: 2026-07-29
-date_updated: 2026-07-29
-source_count: 1
+date_updated: 2026-10-07
+source_count: 2
 tags: [carreira, mentalidade, estoicismo, ansiedade, produtividade]
 skill: tech-mentor-leadership
 status: draft
@@ -32,3 +32,7 @@ A fonte propõe um exercício simples: listar as variáveis que estão te preocu
 ## Key Sources
 
 - [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — Hábito 13, único source até o momento
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — aplicação ao dev: [[wiki/concepts/foco-no-que-esta-ao-seu-alcance]] (frustração vem de querer mudar o que não se controla)

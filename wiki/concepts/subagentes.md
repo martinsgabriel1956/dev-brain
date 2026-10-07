@@ -3,8 +3,8 @@ type: concept
 title: "Subagentes"
 aliases: ["subagents", "sub-agentes", "Task tool", ".claude/agents"]
 date_created: 2026-07-03
-date_updated: 2026-09-30
-source_count: 13
+date_updated: 2026-10-07
+source_count: 14
 tags: [subagentes, claude-code, multi-agent, paralelismo, context-engineering, harness, list-agents, mensagens-cruzadas, fork, permission-mode]
 skill: tech-mentor-ai
 status: draft
@@ -151,3 +151,7 @@ Na taxonomia da fonte, subagentes são a modalidade em que o Claude **delega e c
 - [[wiki/sources/guia-pratico-subagents-claude-code-configuracao-fork-invocacao]] — distinção fork (`/fork`, clona toda a conversa) vs. subagent (não herda conversa); três formas de invocação (linguagem natural, `@nome`, `claude --agent`); campos `permission mode`, `isolation`, `max turns`, `skills`, `memory` (user/projeto/local), `background`; opinião do autor de que o ganho do subagent está no isolamento de contexto, não no paralelismo massivo
 - [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — subagentes encadeados rodando prompts com/sem skill em paralelo para o benchmark
 - [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — subagentes na taxonomia de paralelismo; fork roda num subagente
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] — Isolate: subagente processa ~2,5k tokens e devolve ~180–200; contexto principal sobe só 1.815 → 1.999; custo adicional reconhecido

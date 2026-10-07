@@ -3,8 +3,8 @@ type: concept
 title: "Idempotência"
 aliases: ["idempotência", "idempotency", "idempotency key"]
 date_created: 2026-04-22
-date_updated: 2026-10-06
-source_count: 14
+date_updated: 2026-10-07
+source_count: 15
 tags: [distribuidos, resiliencia, api, retry, mensageria, double-spend, double-submit, webhook, fintech]
 skill: tech-mentor-system-design
 status: stable
@@ -196,3 +196,8 @@ Exemplo do Código Fonte TV: consumidor falha no meio, mensagem volta e "cobrar 
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — chave de idempotência (ID/hash trafegado entre serviços) para evento duplicado; não é bala de prata: concorrência e registro confiável do resultado seguem na implementação.
+
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] — idempotency key (Redis, TTL) na API de ingestão de notificações.

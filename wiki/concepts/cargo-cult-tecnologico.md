@@ -3,8 +3,8 @@ type: concept
 title: "Cargo Cult Tecnológico"
 aliases: ["copiar stack de big tech", "solução Netflix Google Facebook sem contexto", "cargo cult de arquitetura"]
 date_created: 2026-07-03
-date_updated: 2026-10-02
-source_count: 8
+date_updated: 2026-10-07
+source_count: 10
 tags: [arquitetura, tomada-de-decisao, carreira, escala, contexto, processo, git]
 skill: tech-mentor-leadership
 status: draft
@@ -69,6 +69,7 @@ Assistir a uma palestra de um ciclista profissional sobre a bicicleta de 8 mil d
 O [[wiki/concepts/isomorfismo-mimetico]] dá base organizacional ao cargo cult: sob incerteza, imitar quem parece acertar é racional e sinaliza legitimidade ao mercado. Difere da variante de escala: aqui o gatilho não é ignorar o contexto do outro, e sim a pressão de "não estar fazendo o que os outros fazem" ([[wiki/concepts/isomorfismo-institucional]]).
 
 ## Key Sources
+- [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]] — admissão de que se adotou tecnologia desnecessária 'para o currículo'; hoje a solução precisa vender
 
 - [[wiki/sources/pare-de-terceirizar-suas-decisoes]]
 - [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] — a variante por vaidade tecnológica pessoal, não por autoridade de big tech
@@ -78,3 +79,5 @@ O [[wiki/concepts/isomorfismo-mimetico]] dá base organizacional ao cargo cult: 
 - [[wiki/sources/sobre-ser-gerente-fabio-akita]] — a variante de orçamento/nível salarial: "você pode pagar o que a Netflix paga?" como filtro anterior ao de escala de usuários
 - [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — a variante mimética (DiMaggio e Powell): imitação por incerteza e busca de legitimidade, sem necessariamente haver irracionalidade
 - [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — motivos errados de adotar arquitetura distribuída: hype, 'é moderno', 'a Netflix/Amazon usam', 'escala melhor', 'é mais seguro'
+
+- [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — "microsservicos/event-driven/clean architecture é melhor" como regra universal ([[wiki/concepts/mito-da-padronizacao-de-arquitetura]]).

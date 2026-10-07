@@ -3,8 +3,8 @@ type: concept
 title: "Monolito"
 aliases: ["monolito", "monolith", "monolito tradicional"]
 date_created: 2026-08-10
-date_updated: 2026-10-05
-source_count: 8
+date_updated: 2026-10-07
+source_count: 9
 tags: [monolito, arquitetura, deploy, mvp, backend]
 skill: tech-mentor-backend
 status: stub
@@ -60,3 +60,5 @@ Quebrar em serviços sem remover dependências síncronas gera [[wiki/concepts/m
 - [[wiki/sources/arquitetura-monolitica-vantagens-desvantagens]] — fonte introdutória: cadência de deploy caindo conforme o time cresce, SPOF de módulo (bug em estoque derruba vendas), reuso de código via classe compartilhada, custo operacional de escalar verticalmente um servidor único
 - [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — perguntas-gatilho do monolito (pico em um módulo derruba tudo, onboarding de semanas, deploy de horas, build quebrada para todos) e a postura 'monolito preparado para distribuir'
 - [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — monolito distribuído como risco de quebrar mal
+
+- [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — monolito com ~20.000 acessos/dia e lentidão: antes de migrar, achar o gargalo ([[wiki/concepts/diagnostico-antes-de-reestruturar]]); monolito não é o problema por padrão.

@@ -3,8 +3,8 @@ type: concept
 title: "Comunicar Progresso"
 aliases: ["talk about what you're doing", "status update", "regular updates"]
 date_created: 2026-04-22
-date_updated: 2026-09-30
-source_count: 2
+date_updated: 2026-10-07
+source_count: 3
 tags: [carreira, comunicação, habitos, estimativas, liderança]
 skill: tech-mentor-leadership
 status: stable
@@ -49,3 +49,7 @@ Para [[wiki/entities/andre-casciotti]], o status diário (daily ou mensagem ao g
 
 - [[wiki/sources/9-habitos-programador-junior]]
 - [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — ver progresso na lista (barra de progresso e check) reduz ansiedade ([[wiki/concepts/poder-da-barra-de-progresso-e-do-check]])

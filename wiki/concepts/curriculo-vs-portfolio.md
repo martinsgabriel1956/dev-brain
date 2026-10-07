@@ -3,8 +3,8 @@ type: concept
 title: "Currículo vs Portfólio"
 aliases: ["currículo vs portfólio", "promise vs proof", "promessa vs prova"]
 date_created: 2026-04-23
-date_updated: 2026-09-14
-source_count: 8
+date_updated: 2026-10-07
+source_count: 10
 tags: [carreira, contratação, portfólio, evidência]
 skill: tech-mentor-leadership
 status: stable
@@ -64,8 +64,14 @@ Em revisão real de currículos de candidatos júnior, a ausência de link para 
 
 [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] acrescenta um erro distinto dos já documentados nesta página: não é sobre currículo vs. portfólio, mas sobre a *direção* do desenvolvimento de habilidades antes de montar qualquer um dos dois. O autor relata ter passado os dois primeiros anos de faculdade focado só na grade acadêmica, sem entender o que o mercado real pedia — ao procurar emprego, descobriu que as vagas exigiam habilidades que não tinha. A recomendação é inverter a ordem: olhar o que as vagas pedem **antes** de desenvolver a habilidade, não depois. O autor estima que essa falta de orientação atrasou a própria carreira em 1 a 1,5 ano.
 
-## Key Sources
+## Vários Currículos por Trilha
 
+[[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] recomenda 3 a 4 currículos em PDF, um por trilha de cargo (ex.: experiência com cliente para FDE; software engineer), derivados da lista de empresas-alvo ([[wiki/concepts/cacar-a-empresa-nao-a-vaga]]).
+
+## Key Sources
+- [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]] — 'fim da era do parecer': diploma não garante capacidade, a entrega é a prova ([[wiki/concepts/fim-da-era-do-parecer]])
+
+- [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — 3–4 currículos por trilha
 - [[wiki/sources/tres-caracteristicas-melhor-candidato]]
 - [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] — currículo/habilidades orientados ao que as vagas pedem, desenvolvidos antes da busca por emprego, não depois
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — tensão: poder de sinal do portfólio/GitHub caiu porque a IA barateou a produção do artefato que antes provava competência

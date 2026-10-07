@@ -3,8 +3,8 @@ type: entity
 title: "Claude Code"
 aliases: ["claude code cli"]
 date_created: 2026-05-18
-date_updated: 2026-10-06
-source_count: 21
+date_updated: 2026-10-07
+source_count: 25
 tags: [ferramenta, agentes-ia, anthropic, llmops, cli, mcp, hooks]
 skill: tech-mentor-ai
 status: stable
@@ -141,8 +141,13 @@ O mecanismo de [[context-compaction]] da janela de contexto do Claude Code é um
 
 Citado como exemplo de ferramenta com harness embutido; `CLAUDE.md` costuma importar `AGENTS.md`.
 
+## Uso na Busca de Vagas e no Design
+
+[[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]]: usar Claude Code/Codex para montar a lista de 30–50 empresas-alvo, automatizar a busca em ATS e "conversar com o código" (designer pedindo varredura do projeto).
+
 ## Key Sources
 
+- [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — lista de empresas, automação de busca, designer conversando com o código
 
 - [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — CLI usada na demo do Kanban (Sonnet, effort high, /clear) sem CLAUDE.md/plano
 - [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] — menção tangencial e não confirmada a "cowork" rodando na nuvem via Claude Desktop App
@@ -172,3 +177,180 @@ Citado como exemplo de ferramenta com harness embutido; `CLAUDE.md` costuma impo
 - [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — estrutura `.claude/skills/` e uso do skill-creator para avaliar skills
 - [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — dicas de paralelismo, rotinas, sessões remotas, fork
 - [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — harness embutido; CLAUDE.md importa AGENTS.md
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — citado como ferramenta que permite criar software do zero sem ser programador; manter em produção continua com devs
+## O Que É
+
+CLI da Anthropic que age como [[agente-ia]] de desenvolvimento diretamente no terminal. Lê/escreve arquivos, executa comandos, navega na web e se integra a servidores [[mcp-server|MCP]] externos. Integra com qualquer IDE baseada em VS Code via extensão oficial.
+
+---
+
+## Recursos Principais
+
+| Recurso | O que faz |
+|---------|-----------|
+| [[claude-md]] | Arquivo de memória e regras persistentes; lido em toda sessão |
+| [[plan-mode]] | Modo de planejamento antes de executar (Shift+Tab) |
+| [[slash-commands-agente]] | Commands customizados em `.claude/commands/*.md` |
+| [[hooks-agente]] | Automação garantida em eventos (PreToolUse, PostToolUse, Stop) |
+| [[mcp-server]] | Integração com ferramentas externas via protocolo MCP |
+| [[context-compaction]] | Compactação automática da janela de contexto (~200k tokens) |
+| [[wiki/concepts/worktree-paralelismo]] | `claude --worktree <nome>` — cópia isolada do repo por agente, paralelismo de file system |
+| [[wiki/concepts/subagentes]] | `.claude/agents/*.md` — paralelismo de contexto, model/tools customizáveis por subagente |
+| [[wiki/concepts/rewind-checkpoints-claude-code]] | Checkpoints ao longo da conversa; `rewind` volta a um ponto anterior sem depender só de commits Git |
+| [[wiki/concepts/gerenciamento-de-sessoes-claude-code]] | Renomear e retomar sessões salvas localmente; `/go` para objetivos verificáveis de longo prazo |
+| [[wiki/concepts/modelo-por-leverage-tarefa]] | Alocar modelos mais fortes (Fable) para planejamento/arquitetura, mais leves (Sonnet) para execução rotineira |
+
+## Planos (referência da gravação — verificar preços atuais)
+
+| Plano | Preço/mês | Características |
+|-------|-----------|-----------------|
+| Free | $0 | Uso muito limitado |
+| Pro | ~$20 | Rate limiting rápido; uso ocasional |
+| Max | $100 | 5× mais que Pro; acesso ao Opus |
+| Max | $200 | 20× mais que Pro |
+
+**Armadilha:** usar API Key diretamente (sem plano) cobra por token e pode custar centenas de dólares sem que o usuário perceba. Sempre autenticar com "Claude account with subscription".
+
+## Integração com IDE
+
+1. Instale a extensão "Claude Code" no VS Code/Cursor
+2. Clique em "Run Claude Code" para abrir painel lateral
+3. Dentro do Claude Code: `/ide` para conectar ao projeto aberto
+
+## Configuração
+
+Arquivos em `.claude/`:
+- `settings.json` — commitado, compartilhado com o time
+- `settings.local.json` — pessoal, não commitado (permissões, MCPs locais)
+
+## Comandos Essenciais
+
+```
+/init          → gera CLAUDE.md analisando o codebase
+/memory        → edita memória (CLAUDE.md) do projeto ou usuário
+/ide           → conecta ao IDE aberta
+/mcp           → lista servidores MCP ativos
+/hooks         → gerencia hooks de eventos
+/permissions   → visualiza permissões configuradas
+/compact       → compacta o histórico para liberar contexto
+Shift+Tab      → alterna entre Auto-accept e Plan Mode
+Esc            → para a execução atual
+```
+
+---
+
+## Seleção Automática de Ferramentas
+
+As tools do Claude Code carregam descrições que entram no contexto do modelo — não é necessário nomear explicitamente qual ferramenta usar (ex.: "use o Playwright para testar isso"). Um pedido genérico como "testa aí no navegador" já é suficiente para o agente inferir e selecionar a ferramenta certa, embora nomear explicitamente também funcione e continue sendo válido quando há ambiguidade real entre ferramentas equivalentes.
+
+## Playbook da Anthropic com Startups Nativas de IA
+
+Segundo [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]], a Anthropic publicou um relatório/playbook baseado em entrevistas com mais de uma dúzia de startups de rápido crescimento usando o Claude Code, descrevendo um framework de cinco regras operacionais — ver [[wiki/concepts/sdlc-nativo-de-ia]]. Estatísticas citadas de segunda mão (não verificadas contra a publicação original): ClickHouse com 30% a mais de funcionalidades entregues, Clay com 100% de triagem de bugs automatizada, Artemis Security com mais de 6.000 PRs/semana.
+
+## Controvérsia: Claude Code Não Lê AGENTS.md
+
+O Claude Code lê apenas `CLAUDE.md`, não o formato compartilhado `AGENTS.md` usado por outros agentes (ex. Codex da OpenAI) — ver [[wiki/concepts/agents-md-vs-claude-md]] para a controvérsia pública com Tobi Lütke (CEO da [[wiki/entities/shopify]]) e a contradição registrada com outra fonte da wiki que já mencionava uma suposta preferência da Anthropic por `AGENTS.md`.
+
+## Retenção de Dados de Sessão
+
+Sessões ficam retidas localmente em `~/.claude/projects` por padrão durante 30 dias, período configurável. Sessões individuais podem ser deletadas manualmente; enquanto não deletadas, ficam disponíveis para consulta, leitura ou análise.
+
+## Sandbox Nativo
+
+Desde outubro de 2025, o Claude Code tem sandbox próprio usando [[wiki/entities/bubblewrap]] no Linux e Sandbox-exec no Mac — o mesmo stack técnico usado pelo projeto independente [[wiki/concepts/agent-containment|AI Jail]]. Diferença apontada por [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]]: por padrão, quando um comando falha por restrição do sandbox, o próprio agente pode tentar de novo pulando a restrição (padrão de retry ativado por padrão de fábrica) — mecanismo de opt-out não verificado contra a documentação oficial nesta ingestão, mas que, se real, muda quem controla a saída da cela (o agente, não só o usuário). Ver [[wiki/concepts/defense-in-depth]] para a comparação completa com o AI Jail, que não tem esse opt-out.
+
+## Relevância para Token Anxiety
+
+O mecanismo de [[context-compaction]] da janela de contexto do Claude Code é um dos principais catalisadores do fenômeno [[token-anxiety]]: desenvolvedores sentem urgência de maximizar o uso dos tokens disponíveis antes do reset, distorcendo rotinas e prioridades.
+
+---
+
+## Comparação com Harnesses de Learning Loop (Hermes Agent, Open Claw)
+
+[[wiki/sources/hermes-agent-open-claw-learning-loop]] compara o Claude Code a projetos open source como [[wiki/entities/hermes-agent]] e [[wiki/entities/open-claw]], que embutem um [[wiki/concepts/closed-loop-skill-learning|closed-loop skill learning system]] sobre uma [[wiki/concepts/agent-memory-tres-camadas|memória em três camadas]]. Tese central da fonte: "Hermes não é o Claude Code com mais memória" — a diferença não é quantidade de memória, mas o loop que gera e refina skills automaticamente a partir do histórico de tarefas. O Claude Code foi citado no ranking global de uso de tokens do OpenRouter (perdendo para o Hermes Agent na semana anterior à publicação da fonte), e a Anthropic respondeu ao mesmo padrão com a feature "Dreaming in Claude" (ver [[wiki/entities/anthropic]]).
+
+## VPS com Claude Code Pré-instalado (Oferta de Provedor)
+
+[[wiki/sources/continuous-integration-delivery-deploy-vs-release]] menciona, em bloco patrocinado da [[wiki/entities/hostgator]], uma oferta de VPS com Claude Code pré-instalado — promovida como alternativa a rodar localmente: não exige deixar o computador ligado, e permite interagir remotamente (ex.: via celular). Conteúdo patrocinado, sem avaliação técnica independente da oferta em si.
+
+## Citação de Boris (Criador) sobre Loop Engineering
+
+[[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] cita Boris, criador do Claude Code, dizendo que trabalha "em loops que decidem o que fazer" em vez de dar prompts — citação usada (junto com uma fala similar do criador do OpenCode) como gatilho do hype recente em torno de [[wiki/concepts/loop-engineering]].
+
+## "By The Way" e Recuperação de Contexto em Múltiplos Agentes Paralelos
+
+[[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] cita o recurso "By The Way" como útil para recuperar contexto ao alternar entre vários agentes rodando em paralelo (o autor cita até 8 simultâneos) — mas trata o próprio uso do recurso como sintoma do problema mais amplo de custo: reconstruir contexto perdido consome tokens adicionais sem ganho de valor equivalente. A mesma fonte cita devs trocando o Claude Code pelo [[wiki/entities/opencode]] alegando loops de correção supérflua (bug suspeito → sugestão → reescreve testes → reescreve código) que multiplicam consumo de token — anedota sem confirmação/benchmark independente.
+
+## Uso como "Professor" em Autopentest, Não Como Executor Autônomo
+
+[[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] descreve um uso deliberadamente diferente de vibe coding: a autora usou o Claude Code para conduzir um autopentest guiado no próprio SaaS ([[wiki/entities/pulsar-saas]]), documentando e tentando entender cada decisão em vez de apenas aceitar o resultado. O padrão de prompt que ela descreve — apontar para documentação existente do sistema, testar um escopo por vez em sessões separadas, e declarar explicitamente o que a IA não pode fazer sem nova autorização — é apresentado como defesa contra dois problemas: a IA "delirar" ao lidar com escopo grande demais, e refatoração não solicitada quando uma autorização ampla é mal-interpretada como permissão permanente. → [[wiki/concepts/prompt-engineering]]
+
+## Prompt de Manter/Descartar Worktree ao Sair
+
+[[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] confirma, numa demonstração independente, o comportamento de `claude --worktree <nome>`: a worktree é criada em `.claude/worktrees/<nome>`, e ao rodar `/quit` o Claude Code pergunta explicitamente se o usuário quer mantê-la — reforçando a boa prática já documentada de encerrar a worktree deliberadamente ao final do trabalho. Comparação lado a lado com o suporte nativo do [[wiki/entities/codex-openai|Codex]] (que guarda a worktree fora do repositório, em local não confirmado) em [[wiki/concepts/worktree-paralelismo]].
+
+## Citado Como Ferramenta de Vibe Coding em Cadeia de Ataque Real
+
+[[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] cita o Claude Code, ao lado do Cursor e do Lovable, como uma das ferramentas usadas para construir do zero a loja fictícia posteriormente comprometida por um pentester (`.env` exposto → [[wiki/concepts/idor]] → [[wiki/concepts/account-takeover]] → RCE). Uso apenas mencionado como exemplo de ferramenta de vibe coding, sem detalhamento técnico de como especificamente o Claude Code gerou o código vulnerável — contraste direto com o uso documentado logo acima, onde o mesmo agente foi usado deliberadamente como guia de segurança em vez de gerador autônomo.
+
+## Claim Não Verificado: Open Source Após Vazamento na Anthropic
+
+[[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] afirma que o Claude Code se tornou open source no GitHub depois de um vazamento na Anthropic — o código do harness completo construído em volta dos modelos Claude estaria publicamente disponível para clonar e adaptar. **Confiança: não verificado nesta ingestão** — nenhuma outra fonte já presente na wiki confirma este claim, e a fonte não cita data, escopo (código completo vs. parcial) ou link do repositório. Tratar como afirmação do autor do vídeo até confirmação por fonte primária (anúncio oficial da Anthropic ou o próprio repositório).
+
+## Claim Não Verificado: "Cowork" Rodando na Nuvem via Claude Desktop App
+
+[[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] menciona, de passagem e com o próprio autor manifestando incerteza ("eu nem sei se a Anthropic tá utilizando isso"), que o Claude Desktop App teria divulgado a possibilidade de rodar tarefas de "cowork" na nuvem. Não fica claro se "cowork" se refere a uma feature distinta do Claude Code ou é confusão de nomenclatura com outro produto/feature da Anthropic (ex. execução remota de tarefas já documentada em outras fontes da wiki). **Confiança: baixa** — claim tangencial, sem detalhamento nem confirmação de fonte primária nesta ingestão.
+
+## Dicas de Paralelismo, Agendamento e Sessões da Documentação
+
+[[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] reúne recursos de trabalho em escala: worktrees ([[wiki/concepts/worktree-paralelismo]]), cinco modalidades de paralelismo ([[wiki/concepts/modalidades-de-paralelismo-claude-code]]), [[wiki/concepts/agent-teams]] (experimental), [[wiki/concepts/rotinas-agendadas-claude-code]], [[wiki/concepts/integracao-navegador-claude-code]], [[wiki/concepts/computer-use]], [[wiki/concepts/sessoes-remotas-claude-code]] e [[wiki/concepts/fork-de-sessao-claude-code]]. O autor afirma que a maioria vale também para Codex, OpenCode e Cursor. Nomes e sintaxes não foram verificados na documentação atual.
+
+## Harness Próprio
+
+Citado como exemplo de ferramenta com harness embutido; `CLAUDE.md` costuma importar `AGENTS.md`.
+
+## Uso na Busca de Vagas e no Design
+
+[[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]]: usar Claude Code/Codex para montar a lista de 30–50 empresas-alvo, automatizar a busca em ATS e "conversar com o código" (designer pedindo varredura do projeto).
+
+## Key Sources
+
+- [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — lista de empresas, automação de busca, designer conversando com o código
+
+- [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — CLI usada na demo do Kanban (Sonnet, effort high, /clear) sem CLAUDE.md/plano
+- [[wiki/sources/mcp-stateless-fim-do-handshake-server-discover-lucas-montano]] — menção tangencial e não confirmada a "cowork" rodando na nuvem via Claude Desktop App
+- [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] — claim não verificado de ter se tornado open source no GitHub após um vazamento na Anthropic; citado como exemplo de meio-termo de controle de harness (entre Cursor e OpenClaw)
+- [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — autopentest guiado (autenticação, IDOR, CSRF, XSS/SQLi, rate limiting, secrets, dependências); método de seis passos para prompt de segurança
+- [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]] — citado como uma das ferramentas de vibe coding usadas para construir a aplicação posteriormente comprometida
+- [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
+- [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — recurso "By The Way" como sintoma de custo; devs trocando para OpenCode por loops de correção supérflua
+- [[wiki/sources/claude-code-guia-pratico-full-cycle]]
+- [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
+- [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — sandbox nativo (Bubblewrap/Sandbox-exec) e comparação com o AI Jail
+- [[wiki/sources/hermes-agent-open-claw-learning-loop]] — comparação com harnesses de learning loop (Hermes Agent, Open Claw)
+- [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — checkpoints/rewind, gerenciamento de sessões, `/go`, alocação de modelo por leverage, seleção automática de ferramentas, retenção de 30 dias
+- [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — citação de Boris sobre trabalhar "em loops que decidem o que fazer"
+- [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — seleção manual de modelo por tarefa na UI, e automação da escolha via skill + subagentes (um subagente por modelo)
+- [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — oferta patrocinada de VPS (HostGator) com Claude Code pré-instalado
+- [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] — demonstração de `claude --worktree`, local de armazenamento (`.claude/worktrees/`) e prompt de manter/descartar ao sair
+- [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — apontar `ANTHROPIC_BASE_URL` para um [[wiki/concepts/ai-gateway-llm-router|AI Gateway]] self-hosted permite usar o Claude Code sem login real e com modelos não-Anthropic por trás (GLM, MiMo), contornando o lockin de modelo descrito em [[wiki/concepts/vendor-lock-in-cloud]]
+
+## Lockin de Modelo Contornável via Base URL Customizada
+
+[[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] demonstra que o Claude Code aceita qualquer endpoint compatível com o formato da API da Anthropic via `ANTHROPIC_BASE_URL` em `.claude/settings.json` — inclusive um [[wiki/concepts/ai-gateway-llm-router|AI Gateway]] self-hosted que redireciona as chamadas para modelos de outros providers (ex.: GLM 5.2 via OpenRouter, MiMo da Xiaomi via Kiro) sem exigir login com uma conta Anthropic real. O autor da fonte descreve isso como "quebrar o lockin" do Claude Code — a ferramenta continua funcionando normalmente, mas o modelo real por trás pode ser qualquer um compatível com o gateway. Ver [[wiki/concepts/rotacao-de-contas-free-tier]] para o mecanismo relacionado de rotação entre múltiplas contas free tier do mesmo provider.
+
+## Key Sources
+
+- [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — exemplo de ferramenta cujo comportamento (skills, decisões não pedidas) precisa ser contido
+- [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — estrutura `.claude/skills/` e uso do skill-creator para avaliar skills
+- [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — dicas de paralelismo, rotinas, sessões remotas, fork
+- [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — harness embutido; CLAUDE.md importa AGENTS.md
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — citado como ferramenta que permite criar software do zero sem ser programador; manter em produção continua com devs
+- [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] — citado (com Codex) como exemplo de produto que dispara subagentes em pesquisas extensas
+- [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — usado para resumir uma empresa e gerar perguntas ao recrutador em ~15 min ([[wiki/concepts/pesquisar-a-empresa-antes-da-entrevista]])

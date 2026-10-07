@@ -3,8 +3,8 @@ type: concept
 title: "Burnout em Desenvolvimento"
 aliases: ["burnout", "esgotamento profissional", "developer burnout"]
 date_created: 2026-05-18
-date_updated: 2026-08-27
-source_count: 5
+date_updated: 2026-10-07
+source_count: 6
 tags: [burnout, saude-mental, produtividade, comportamento, carreira]
 skill: tech-mentor-ai
 status: draft
@@ -64,3 +64,7 @@ Dado da Faros AI em [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metri
 - [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]] — 30% dos devs batendo limites de uso de IA como sinal de adoção insustentável
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]] — inteligência emocional como proteção direta contra burnout; lidar com pressão e prazos sem perder equilíbrio
 - [[wiki/sources/produtividade-falsa-vs-verdadeira]] — atividade disfarçada de produtividade como caminho lento para o esgotamento e a amargura
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — estresse como [[wiki/concepts/risco-ocupacional-do-dev]]; três mantras individuais (foco no alcance, melhor possível no tempo, organização) para reconhecer e lidar com ansiedade/frustração

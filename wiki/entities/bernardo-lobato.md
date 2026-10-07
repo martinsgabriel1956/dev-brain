@@ -3,8 +3,8 @@ type: entity
 title: "Bernardo Lobato"
 aliases: ["Bernardo Lobato"]
 date_created: 2026-06-05
-date_updated: 2026-10-06
-source_count: 23
+date_updated: 2026-10-07
+source_count: 24
 tags: [arquitetura-software, segurança, criador-de-conteudo, youtube, backend]
 skill: tech-mentor-security
 status: stub
@@ -39,3 +39,5 @@ Desenvolvedor e criador de conteúdo brasileiro. Publica vídeos toda sexta-feir
 - [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — primeiro vídeo da série de arquiteturas distribuídas: definição, histórico (Arpanet → SOA → microsserviços/nuvem), quatro motivos, seis desafios e alerta contra adoção por hype
 - [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — vídeo sobre rate limit: história (redes de pacotes, token/leaky bucket, 429), três camadas de posicionamento e estado compartilhado; algoritmos ficam para parte 2
 - [[wiki/sources/rate-limit-estrategias-fixed-sliding-token-leaky-bernardo-lobato]] — segundo vídeo sobre rate limit: fixed/sliding window, token bucket (caso real com pesos), leaky bucket e client rate limit
+
+- [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — vídeo sobre decisão arquitetural: cenário de monolito lento, "depende" como investigação, mito da padronização, trade-off como tese e "escolha os problemas que você quer ter"

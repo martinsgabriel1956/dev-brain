@@ -3,8 +3,8 @@ type: concept
 title: "Dlq"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-10-05
-source_count: 4
+date_updated: 2026-10-07
+source_count: 5
 tags: [dlq]
 skill: tech-mentor-backend
 status: stub
@@ -34,3 +34,8 @@ Ack manual devolve a mensagem à fila quando o consumidor cai ([[wiki/concepts/a
 - [[wiki/sources/rabbitmq]]
 - [[wiki/sources/sqs-sns]]
 - [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — reentrega por ack; DLQ não coberta
+
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] — falhas de entrega alimentam reprocessamento/reconciliação.

@@ -12836,3 +12836,105 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (18):** [[wiki/concepts/harness]], [[wiki/concepts/sensores-vs-guias]], [[wiki/concepts/skills-agente]], [[wiki/concepts/agents-md-vs-claude-md]], [[wiki/concepts/rules-agente]], [[wiki/concepts/harness-de-qualidade]], [[wiki/concepts/loop-engineering]], [[wiki/concepts/context-compaction]], [[wiki/concepts/ai-safety-guardrails]], [[wiki/concepts/hooks-agente]], [[wiki/concepts/model-context-protocol]], [[wiki/concepts/determinismo-vs-probabilismo-em-ia]], [[wiki/entities/langchain]], [[wiki/entities/thoughtworks]], [[wiki/entities/deepseek]], [[wiki/entities/claude-code]], [[wiki/entities/codex-openai]], [[wiki/entities/cursor]] (+ [[wiki/entities/replit]], [[wiki/entities/lovable]]).
 
 **Notas:** (1) Sem contradição; reforça [[wiki/concepts/sensores-vs-guias]] e dá a atribuição (Böckeler) e o princípio de Hashimoto, ausentes antes. (2) Atribuições, de-para e DeepSeek Harness são relato do áudio `[external, não verificado]`; "half loops" do ASR lido como "(Ralph?) loops", incerto. (3) "Harness importa mais que o modelo" é afirmação sem medição. (4) Anúncio patrocinado e pedidos de interação ignorados. (5) Novos itens `stub`/`draft`; `source_count` das tocadas +1.
+
+
+---
+
+## [2026-10-07] ingest | Novos cargos pós-IA e hunting de vagas fora do LinkedIn
+
+**Fonte:** transcrição de vídeo colada pelo usuário, limpa em `raw/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin.md` (já em português; sem tradução; correções de ASR e trechos omitidos — propaganda da mentoria Coders e encerramento — listados no cabeçalho).
+
+**Skill:** tech-mentor-leadership (SKILL.md; índice de carreira — a skill não tem referência específica de busca de vagas; path do CLAUDE.md não existe nesta máquina, usada a cópia em `~/.claude-personal/skills/synced/…/`; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]], [[wiki/concepts/applicant-tracking-system]], [[wiki/concepts/busca-de-vagas-direto-no-ats]], [[wiki/concepts/cacar-a-empresa-nao-a-vaga]], [[wiki/concepts/sinais-de-vaga-real-vs-fantasma]], [[wiki/concepts/fragmentacao-de-titulos-de-cargos-ia]], [[wiki/concepts/ai-engineer]], [[wiki/concepts/agent-engineer]], [[wiki/concepts/autonomia-de-sugerir-vs-pegar-para-si]], [[wiki/entities/ashby]], [[wiki/entities/greenhouse]], [[wiki/entities/lever]], [[wiki/entities/y-combinator]], [[wiki/questions/forward-deployed-engineer-demanda-crescendo-vs-pequena]]
+
+**Tocadas (14):** [[wiki/concepts/forward-deployed-engineer]], [[wiki/concepts/design-engineer]], [[wiki/concepts/novo-perfil-dev-ia]], [[wiki/concepts/ciclo-de-mercado-tech]], [[wiki/entities/linkedin]], [[wiki/concepts/curriculo-vs-portfolio]], [[wiki/concepts/networking-de-carreira]], [[wiki/concepts/product-engineer]], [[wiki/entities/claude-code]], [[wiki/concepts/model-context-protocol]], [[wiki/entities/figma]], [[wiki/concepts/skills-agente]], [[wiki/concepts/arquiteto-de-solucoes]], [[wiki/entities/openai]].
+
+**Notas:** (1) **Contradição** com [[wiki/sources/ai-engineer-forward-deployed-engineer-mercado-vagas-2026]]: FDE "cargo que mais cresceu" vs. demanda pequena (<1.000 vagas) — aberta em [[wiki/questions/forward-deployed-engineer-demanda-crescendo-vs-pequena]]. (2) Percentuais (-50%, +59%, +280%) sem fonte `[external, não verificado]`; endpoints das APIs só descritos oralmente. (3) ASR incerto: "Laurer", "Scally Draw", "dearremote.com". (4) Novos itens `stub`/`draft`; `source_count` das tocadas +1. (5) Propaganda da mentoria ignorada.
+
+---
+
+## [2026-10-07] ingest | Decisões de arquitetura — contexto, "depende" e trade-offs (Bernardo Lobato)
+
+**Fonte:** transcrição de vídeo colada pelo usuário, limpa em `raw/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato.md` (já em português; sem tradução; erros de ASR corrigidos e listados no cabeçalho; final do áudio truncado).
+
+**Skill:** tech-mentor-system-design (SKILL.md; `references/architecture-foundations-core.md` para monolito/microsserviços e Cargo Cult Architecture; skill em `~/.claude-personal/skills/synced/…/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]], [[wiki/concepts/tradeoff-arquitetural]], [[wiki/concepts/contexto-na-decisao-arquitetural]], [[wiki/concepts/diagnostico-antes-de-reestruturar]], [[wiki/concepts/mito-da-padronizacao-de-arquitetura]], [[wiki/concepts/escolher-os-problemas-que-voce-quer-ter]], [[wiki/entities/opentelemetry]], [[wiki/entities/prometheus]]
+
+**Tocadas (15):** [[wiki/concepts/microsservicos]], [[wiki/concepts/monolito]], [[wiki/concepts/gargalo]], [[wiki/concepts/observabilidade]], [[wiki/concepts/over-engineering]], [[wiki/concepts/filas-e-workers]], [[wiki/concepts/tradeoff-de-cache]], [[wiki/concepts/arquitetura-distribuida]], [[wiki/concepts/sem-balas-de-prata]], [[wiki/concepts/cargo-cult-tecnologico]], [[wiki/concepts/distributed-tracing]], [[wiki/concepts/database-index]], [[wiki/concepts/contexto-organizacional-para-arquitetura]], [[wiki/concepts/distributed-monolith]], [[wiki/concepts/monolith-first]], [[wiki/entities/bernardo-lobato]].
+
+**Notas:** (1) Sem contradição; reforça o vídeo anterior do autor ([[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]]) e adiciona o método (diagnosticar antes de migrar). (2) O vídeo não dá limiares nem cita ADR; 20.000/dia ≈ 0,23 req/s é cálculo próprio `[inferência]`. (3) Final truncado ("escolha quais"). (4) Novos itens `stub`/`draft`; `source_count` das tocadas +1.
+
+---
+
+## [2026-10-07] ingest | O que faz um engenheiro de IA ser bom (Ronald Hulk)
+
+**Fonte:** transcrição de vídeo colada pelo usuário, limpa em `raw/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk.md` (já em português; sem tradução; correções de ASR e trechos omitidos — autopromoção, divulgação de curso e encerramento — listados no cabeçalho).
+
+**Skill:** tech-mentor-leadership (SKILL.md; `references/leadership/engineering-hiring.md` para take-home; cópia em `~/.claude-personal/skills/synced/…/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md). Secundário: tech-mentor-ai.
+
+**Criado:** [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]], [[wiki/concepts/fim-da-era-do-parecer]], [[wiki/concepts/acabamento-em-take-home]], [[wiki/concepts/conhecimento-vertical-do-problema]], [[wiki/concepts/engenharia-de-ia-ao-redor-do-modelo]], [[wiki/concepts/ciclo-construir-e-aprender-em-ia]], [[wiki/concepts/competencias-do-engenheiro-de-ia]], [[wiki/questions/ai-engineer-exige-ml-vs-usar-modelo-pronto]]
+
+**Tocadas (14):** [[wiki/entities/ronald-hulk]], [[wiki/entities/rock-pro]], [[wiki/concepts/novo-perfil-dev-ia]], [[wiki/concepts/vibe-coding]], [[wiki/concepts/curriculo-vs-portfolio]], [[wiki/concepts/cargo-cult-tecnologico]], [[wiki/concepts/over-engineering]], [[wiki/concepts/harness]], [[wiki/concepts/ai-engineer]], [[wiki/concepts/fine-tuning]], [[wiki/concepts/autonomia-de-sugerir-vs-pegar-para-si]], [[wiki/concepts/vaga-junior-vira-pleno]], [[wiki/concepts/ciclo-de-mercado-tech]], [[wiki/concepts/ia-ciclo-dependencia]].
+
+**Notas:** (1) **Contradição de ênfase** com [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] sobre AI Engineer exigir ML — aberta em [[wiki/questions/ai-engineer-exige-ml-vs-usar-modelo-pronto]]. (2) Caso do cliente anônimo, n=1, e autor vende treinamento (viés). (3) "Ronald Rock" do ASR = Ronald Hulk. (4) Novos itens `stub`/`draft`; `source_count` das tocadas +1.
+
+---
+
+## [2026-10-07] ingest | Como trabalhar com projeto caótico sem surtar (André Casciotti)
+
+**Fonte:** transcrição de vídeo colada pelo usuário, limpa em `raw/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti.md` (já em português; sem tradução; erros de ASR corrigidos e listados no cabeçalho; divulgações omitidas).
+
+**Skill:** tech-mentor-leadership (SKILL.md; `references/individual-development-plan.md` seção Burnout; skill em `~/.claude-personal/skills/synced/…/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]], [[wiki/concepts/risco-ocupacional-do-dev]], [[wiki/concepts/foco-no-que-esta-ao-seu-alcance]], [[wiki/concepts/reclamar-menos-e-fazer-mais]], [[wiki/concepts/melhor-possivel-com-o-tempo-disponivel]], [[wiki/concepts/priorizacao-pelo-negocio]], [[wiki/concepts/complexidade-e-organizacao]], [[wiki/concepts/poder-da-barra-de-progresso-e-do-check]]
+
+**Tocadas (22):** [[wiki/concepts/burnout-dev]], [[wiki/concepts/controle-do-que-e-controlavel]], [[wiki/concepts/politica-organizacional]], [[wiki/concepts/jogar-o-jogo-da-carreira]], [[wiki/concepts/organizacao-pessoal-do-trabalho]], [[wiki/concepts/divisao-de-tarefas-em-partes-menores]], [[wiki/concepts/refatoracao]], [[wiki/concepts/fluencia-vs-perfeicao]], [[wiki/concepts/time-boxing]], [[wiki/concepts/medo-do-prazo-vs-medo-do-bug]], [[wiki/concepts/autonomia-responsabilidade]], [[wiki/concepts/dev-essencial-e-raridade]], [[wiki/concepts/resolver-problemas-como-habilidade-central]], [[wiki/concepts/tarefa-principal-do-dia]], [[wiki/concepts/matriz-de-eisenhower]], [[wiki/concepts/autonomia-de-sugerir-vs-pegar-para-si]], [[wiki/concepts/comunicar-progresso]], [[wiki/concepts/teste-unitario-sem-io]], [[wiki/entities/lovable]], [[wiki/entities/cursor]], [[wiki/entities/claude-code]], [[wiki/entities/andre-casciotti]]
+
+**Notas:** (1) Sem contradição direta; tensão com [[wiki/concepts/autonomia-de-sugerir-vs-pegar-para-si]] registrada em [[wiki/concepts/foco-no-que-esta-ao-seu-alcance]]. (2) Afirmações sobre reclamar, lista de tarefas e "criar é fácil, manter é difícil" são opinião do autor, sem dados `[external não verificado]`. (3) Novos itens `draft`; `source_count` das tocadas +1.
+
+
+---
+
+## [2026-10-07] ingest | Engenharia de contexto na prática: Write, Select, Compress, Isolate (Felipe Fagundes)
+
+**Fonte:** transcrição de vídeo colada pelo usuário, limpa em `raw/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes.md` (já em português; sem tradução; erros de ASR corrigidos e listados no cabeçalho; autopromoção omitida).
+
+**Skill:** tech-mentor-ai (SKILL.md; `references/ai/context-engineering.md`; cópia em `~/.claude-personal/skills/synced/…/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]], [[wiki/entities/felipe-fagundes]], [[wiki/concepts/write-select-compress-isolate]], [[wiki/concepts/inspecao-de-contexto-antes-de-otimizar]], [[wiki/concepts/superficie-probabilistica-do-agente]], [[wiki/concepts/escrever-memoria-fora-da-janela]], [[wiki/concepts/selecao-de-memoria-e-tools-por-turno]], [[wiki/concepts/clip-e-offload-de-tool-output]], [[wiki/concepts/tipos-de-memoria-de-agente]]
+
+**Tocadas (16):** [[wiki/concepts/context-engineering-harness]], [[wiki/concepts/context-compaction]], [[wiki/concepts/subagentes]], [[wiki/concepts/agent-memory-tres-camadas]], [[wiki/concepts/janela-de-contexto]], [[wiki/concepts/degradacao-de-contexto]], [[wiki/concepts/memoria-de-longo-prazo-ia]], [[wiki/concepts/tool-use-agents]], [[wiki/concepts/memory-rot]], [[wiki/concepts/separacao-de-contextos]], [[wiki/concepts/capital-de-tokens]], [[wiki/concepts/harness]], [[wiki/concepts/evals-llm]], [[wiki/entities/langchain]], [[wiki/entities/claude-code]], [[wiki/entities/codex-openai]].
+
+**Notas:** (1) Sem contradição com a wiki; reforça subagentes/compactação e adiciona o método (medir → Write/Select/Compress/Isolate). (2) Números (8.339 → 2.426, ~−71%) vêm de demo fictícia do autor, sem avaliação de qualidade `[external não verificado]`. (3) "Superfície probabilística" é termo informal do autor. (4) API `store.put` atribuída a LangChain não verificada. (5) Novos itens `stub`/`draft`; `source_count` das tocadas +1.
+
+
+---
+
+## [2026-10-07] ingest | Erros de devs brasileiros ao aplicar para a gringa (Augusto Galego)
+
+**Fonte:** transcrição de vídeo colada pelo usuário, limpa em `raw/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego.md` (já em português; sem tradução; erros de ASR corrigidos e listados no cabeçalho; patrocínio de investimentos e divulgação de curso omitidos).
+
+**Skill:** tech-mentor-leadership (SKILL.md; `references/exec-communication.md`, storytelling técnico; skill em `~/.claude-personal/skills/synced/…/`, pois o path do CLAUDE.md não existe nesta máquina; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]], [[wiki/concepts/ingles-tecnico-suficiente-vs-perfeito]], [[wiki/concepts/storytelling-em-entrevista]], [[wiki/concepts/explicar-o-porque-das-decisoes]], [[wiki/concepts/pensar-em-voz-alta-na-entrevista]], [[wiki/concepts/pesquisar-a-empresa-antes-da-entrevista]], [[wiki/concepts/vaga-internacional-sem-mistica]]
+
+**Tocadas (13):** [[wiki/concepts/ingles-para-desenvolvedores]], [[wiki/concepts/soft-skills]], [[wiki/concepts/entrevista-tecnica-coding]], [[wiki/concepts/entrevista-system-design]], [[wiki/concepts/building-blocks-system-design]], [[wiki/concepts/comunicacao-tecnica]], [[wiki/concepts/metodo-star-bullet-points]], [[wiki/concepts/reconhecimento-de-padroes]], [[wiki/concepts/cacar-a-empresa-nao-a-vaga]], [[wiki/concepts/dolarizacao-de-renda]], [[wiki/concepts/microsservicos]], [[wiki/entities/leetcode]], [[wiki/entities/claude-code]], [[wiki/entities/augusto-galego]]
+
+**Notas:** (1) Tensão leve: "decorar a resolução" vs. "memorize o padrão, não o problema" (registrada na fonte). (2) Volta do LeetCode/System Design presencial nas Big Techs é afirmação do autor `[external não verificado]`. (3) Autoria inferida por autorreferência ("Galego"). (4) Novos itens `draft`; `source_count` das tocadas +1.
+
+
+---
+
+## [2026-10-07] ingest | O desafio simples de System Design que reprova seniores: sistema de notificação (Ana)
+
+**Fonte:** transcrição colada pelo usuário, limpa em `raw/desafio-sistema-notificacao-system-design-reprova-senior-ana.md` (já em português; sem tradução; ASR corrigido; patrocínio Locaweb Cloud omitido).
+
+**Skill:** tech-mentor-system-design (SKILL.md; `references/system-design-gaps.md`, seção Notification Service; cópia em `~/.claude-personal/skills/synced/…/`; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]], [[wiki/concepts/api-e-consequencia-nao-ponto-de-partida]], [[wiki/concepts/entidades-de-primeira-classe-system-design]], [[wiki/concepts/filas-separadas-por-prioridade]], [[wiki/concepts/channel-router-custo-fallback]], [[wiki/concepts/confirmacao-de-entrega-nao-confiavel]], [[wiki/concepts/palavras-do-enunciado-mudam-a-arquitetura]]
+
+**Tocadas (15):** notification-system, entrevista-system-design, kafka, filas-e-workers, fila, idempotencia, mobile-push-notifications, requisitos-funcionais-e-nao-funcionais, high-level-design, reconciliacao, finops, facade-pattern, rate-limiting, pensar-em-voz-alta-na-entrevista, niveis-de-senioridade-system-design, dlq (todas em `wiki/concepts/`).
+
+**Notas:** (1) Sem contradição; a skill sugere SQS FIFO/Standard por prioridade, o vídeo tópicos Kafka — mesma ideia, tecnologia distinta. (2) Faixa de custo SMS (10–500×; 5–25 mil/dia) `[external não verificado]`. (3) Autoria só "Ana"; sem entidade criada. (4) Novos itens `draft`.

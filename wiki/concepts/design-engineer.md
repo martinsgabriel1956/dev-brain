@@ -3,8 +3,8 @@ type: concept
 title: "Design Engineer"
 aliases: ["design engineering", "dev com visão de design", "frontend designer"]
 date_created: 2026-04-22
-date_updated: 2026-07-21
-source_count: 2
+date_updated: 2026-10-07
+source_count: 3
 tags: [design, frontend, cargo, design-engineer, workflow]
 skill: tech-mentor-frontend
 status: stable
@@ -59,7 +59,12 @@ Ferramentas de geração de UI por IA (ex.: [[wiki/entities/ux-pilot]], Cursor) 
 - [[wiki/concepts/hierarquia-visual]] — princípio de design aplicável tanto no código quanto em prompts de geração de UI
 - [[wiki/concepts/affordance]] — sinalização de interatividade, um dos detalhes que Design Engineers cuidam por padrão
 
+## Design System + IA: Recorte de Vagas
+
+[[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] vê o design não como extinto, mas como design + front: o front especialista monta o design system (Storybook) para o design prototipar com IA ([[wiki/entities/claude-code]]/Claude Desktop). Em vagas, o cargo aparece como product engineer ou UI engineer ([[wiki/concepts/fragmentacao-de-titulos-de-cargos-ia]]). Designer com código consegue "conversar com o código" em vez de esperar resposta do time.
+
 ## Key Sources
 
+- [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design system + IA; aliases de vaga (product/UI engineer)
 - [[wiki/sources/design-first-vs-code-first-referencias]]
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]

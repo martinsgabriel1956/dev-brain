@@ -3,8 +3,8 @@ type: concept
 title: "Harness"
 aliases: ["AI harness", "harness de IA", "coding harness"]
 date_created: 2026-06-02
-date_updated: 2026-10-06
-source_count: 26
+date_updated: 2026-10-07
+source_count: 28
 tags: [harness, llm, tool-call, agente, context-engineering, erros-compostos, verificacao]
 skill: tech-mentor-ai
 status: stable
@@ -177,6 +177,7 @@ O autor de [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoe
 Fonte curta que define harness como tudo menos o modelo e traz o princípio de [[wiki/entities/mitchell-hashimoto]]: cada erro vira uma [[wiki/concepts/trava-deterministica-no-harness]]. Dois propósitos: acertar de primeira (guias) e fechar ciclo de feedback (sensores). Três camadas: modelo → harness da ferramenta → user harness. De-para de componentes em [[wiki/concepts/harness-componentes-por-capacidade]]. Ferramenta alternativa: [[wiki/entities/deepseek-harness]].
 
 ## Key Sources
+- [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]] — o nome Harness Engineering surgiu da prática, não de livro; novas harnesses são melhoria incremental (opinião do autor)
 
 
 - [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — IDEs/CLIs como harness e agentes especializáveis; gates de qualidade como parte forte do harness (script de linter/arquitetura/camadas rodado a cada execução); demo do harness mínimo (só Claude Code + AGENTS.md do Next.js)
@@ -205,3 +206,7 @@ Fonte curta que define harness como tudo menos o modelo e traz o princípio de [
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — [[wiki/entities/rock-pro]]: harness de aprendizado que é 'literalmente uma RAG'; o autor critica confundir harness/loop engineering com 'usar Claude Code'
 - [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — transferibilidade das dicas entre harnesses
 - [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — definição, princípio de Hashimoto, três camadas, DeepSeek Harness
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] — middlewares de contexto (select de memória/tools, compactação) como parte do harness do agente

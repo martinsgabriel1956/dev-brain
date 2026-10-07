@@ -3,8 +3,8 @@ type: concept
 title: "Refatoração"
 aliases: ["refactoring", "refatorar"]
 date_created: 2026-07-15
-date_updated: 2026-09-28
-source_count: 10
+date_updated: 2026-10-07
+source_count: 11
 tags: [refactoring, clean-code, craftsmanship, design-de-software, tech-debt]
 skill: tech-mentor-backend
 status: draft
@@ -117,3 +117,7 @@ Refatoração idealmente não é um "projeto" à parte que precisa de aprovaçã
 - [[wiki/sources/extract-interface-xunitpatterns]] — verbete de "Code Refactorings" (xUnitPatterns.com/Meszaros, conteúdo atribuído a Fowler): Extract Interface como refatoração estrutural de tipos, pré-requisito técnico para Test Doubles em linguagens estaticamente tipadas
 - [[wiki/sources/extract-method-xunitpatterns]] — verbete-irmão de "Code Refactorings" (mesma proveniência host≠autor): Extract Method como refatoração de comportamento, técnica recomendada para eliminar Test Code Duplication
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — melhoria contínua: melhorar código próprio e alheio quando houver janela; refatoração como uma das bases de resolver problemas ([[wiki/concepts/resolver-problemas-como-habilidade-central]])
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — refatorar sustenta a melhoria contínua: entregar "mais ou menos" agora com segurança de melhorar depois ([[wiki/concepts/melhor-possivel-com-o-tempo-disponivel]])

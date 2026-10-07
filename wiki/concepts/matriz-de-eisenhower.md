@@ -3,8 +3,8 @@ type: concept
 title: "Matriz de Eisenhower"
 aliases: ["eisenhower matrix", "matriz urgente x importante", "quadrantes de priorização"]
 date_created: 2026-07-19
-date_updated: 2026-07-19
-source_count: 1
+date_updated: 2026-10-07
+source_count: 2
 tags: [produtividade, priorizacao, carreira, matriz-eisenhower]
 skill: tech-mentor-leadership
 status: draft
@@ -39,3 +39,7 @@ Categorizar uma lista de tarefas dentro da matriz resolve o erro mais comum de p
 ## Key Sources
 
 - [[wiki/sources/sistema-produtividade-ia-adapta]]
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — priorização guiada pelo negócio, não pela cabeça do dev ([[wiki/concepts/priorizacao-pelo-negocio]])

@@ -3,8 +3,8 @@ type: concept
 title: "Distributed Tracing"
 aliases: ["tracing distribuído", "opentelemetry", "spans", "trace context"]
 date_created: 2026-04-23
-date_updated: 2026-09-30
-source_count: 6
+date_updated: 2026-10-07
+source_count: 7
 tags: [distributed-tracing, observabilidade, opentelemetry, jaeger, spans, w3c-trace-context]
 skill: tech-mentor-infra
 status: draft
@@ -52,3 +52,5 @@ Segundo [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo
 - [[wiki/sources/sre-capacidade-observabilidade-confiabilidade-custo]] — framing didático de tracing como a resposta natural a "tá muito lento" (fluxo/jornada/trace da chamada)
 - [[wiki/sources/monitoramento-aplicacoes-ia-grafana-cloud-opentelemetry]] — PromQL como barreira de aprendizado ao explorar traces manualmente antes de recorrer ao assistente de IA
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — debug assíncrono como motivação (sem ferramenta específica)
+
+- [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — tracing (OpenTelemetry, Jaeger, Zipkin) como ferramenta de diagnóstico de gargalo antes de reestruturar o sistema.

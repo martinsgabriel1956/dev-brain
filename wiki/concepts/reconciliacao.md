@@ -3,8 +3,8 @@ type: concept
 title: "Reconciliação (Reconciliation)"
 aliases: ["reconciliation", "algoritmo de diffing", "keys em listas"]
 date_created: 2026-08-03
-date_updated: 2026-08-04
-source_count: 2
+date_updated: 2026-10-07
+source_count: 3
 tags: [frontend, react, virtual-dom, reconciliacao, keys, performance]
 skill: tech-mentor-frontend
 status: stable
@@ -46,3 +46,8 @@ Só que gerar essa nova versão não significa que o DOM real vai ser tocado. No
 
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
 - [[wiki/sources/react-reconciliacao-memo-usememo-usecallback]]
+
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] — job de reconciliação que reescala canal para notificação crítica sem confirmação.

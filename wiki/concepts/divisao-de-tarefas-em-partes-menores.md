@@ -3,8 +3,8 @@ type: concept
 title: "Divisão de Tarefas em Partes Menores"
 aliases: ["quebrar tarefa em partes menores", "duas perguntas de decomposição", "critério de parada da decomposição"]
 date_created: 2026-07-23
-date_updated: 2026-08-18
-source_count: 2
+date_updated: 2026-10-07
+source_count: 3
 tags: [carreira, decomposicao-de-tarefas, junior, planejamento, estimativa]
 skill: tech-mentor-leadership
 status: draft
@@ -63,3 +63,7 @@ Alterar um cadastro (não sei bem o que precisa mudar)
 
 - [[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]]
 - [[wiki/sources/por-que-estimativas-de-software-falham-como-melhorar]] — "tarefas pequenas e bem definidas" e "priorizar o menos conhecido" como boas práticas complementares, em escala de desenho de sistema
+
+## Key sources (adição 2026-10-07)
+
+- [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — detalhar do macro ao micro e listar tarefas ([[wiki/concepts/complexidade-e-organizacao]]); dividir tarefas = arquitetura na prática (limites e responsabilidades)
