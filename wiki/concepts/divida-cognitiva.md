@@ -3,8 +3,8 @@ type: concept
 title: "Dívida Cognitiva"
 aliases: ["divida cognitiva", "cognitive debt", "acumulo de falta de entendimento", "debt cognitivo"]
 date_created: 2026-04-23
-date_updated: 2026-09-15
-source_count: 6
+date_updated: 2026-10-08
+source_count: 7
 tags: [divida-cognitiva, saude-mental, ai-brainfry, tech-debt, modelo-mental, agentes-ia]
 skill: tech-mentor-ai
 status: stable
@@ -105,3 +105,7 @@ Ver também: [[wiki/concepts/ia-como-chicote-de-produtividade]] para o contraste
 - [[wiki/sources/ia-salario-ou-carga-de-trabalho]]
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]] — distingue esquecimento de sintaxe (irrelevante) de dívida cognitiva real (perda de julgamento e capacidade de explicar decisões)
 - [[wiki/sources/cognitive-debt-margaret-storey]] — fonte primária do termo, ingerida diretamente: teoria do programa de Naur como base, e as três práticas concretas de prevenção
+
+## Key sources (adição 2026-10-08)
+
+- [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — IA perdida por dias gera dívida técnica e desperdício de tokens ([[wiki/concepts/ia-perdida-e-confiante]]).

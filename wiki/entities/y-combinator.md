@@ -4,7 +4,7 @@ title: "Y Combinator"
 aliases: ["yc"]
 date_created: 2026-10-07
 date_updated: 2026-10-07
-source_count: 1
+source_count: 2
 tags: [contratacao, carreira, busca-de-vagas]
 skill: tech-mentor-leadership
 status: stub
@@ -17,3 +17,5 @@ Aceleradora de startups; a página de companies serve de fonte para montar a lis
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]]
+
+- [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] — princípios de contratação/fundadores (2021): primeiros funcionários mais produtivos; investidores, não chefes

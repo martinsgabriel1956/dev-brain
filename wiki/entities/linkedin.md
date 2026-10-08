@@ -3,8 +3,8 @@ type: entity
 title: "LinkedIn"
 aliases: []
 date_created: 2026-08-24
-date_updated: 2026-10-07
-source_count: 3
+date_updated: 2026-10-08
+source_count: 4
 tags: [plataforma, contratacao, networking, carreira]
 skill: tech-mentor-leadership
 status: stub
@@ -25,3 +25,7 @@ Alvo comum de crítica por conteúdo performático (posts de superação, humild
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — atraso, volume, fantasmas; uso em paralelo
 - [[wiki/sources/duas-perguntas-linkedin-cursos-online-lei-de-sturgeon]] — canal principal de contratação de uma consultoria (700+ contratações/ano) e citado por outros CEOs/CTOs entrevistados informalmente pelo autor como principal canal de contratação inclusive para vagas sênior/liderança
 - [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — vaga fake de desenvolvedor júnior usada como base do exercício de análise de currículo foi retirada de uma publicação real no LinkedIn
+
+## Key sources (adição 2026-10-08)
+
+- [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — Origem do post de Balta sobre prompts e programadores.

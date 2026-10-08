@@ -3,8 +3,8 @@ type: concept
 title: "Memória Flash (NAND)"
 aliases: ["memória flash", "flash memory", "NAND", "célula NAND"]
 date_created: 2026-08-13
-date_updated: 2026-08-26
-source_count: 2
+date_updated: 2026-10-08
+source_count: 3
 tags: [storage, hardware, flash, nand, cs-fundamentals]
 skill: tech-mentor-data
 status: stub
@@ -30,3 +30,4 @@ Flash é **não volátil** (retém dado sem energia) mas ordens de magnitude mai
 
 - [[wiki/sources/tipos-de-armazenamento-de-dados]] — NAND como base comum de SSD, pen drive e cartão
 - [[wiki/sources/evolucao-memorias-ram-ddr1-a-ddr5]] — contraste com RAM volátil (DDR), que é a camada de trabalho acima da flash na hierarquia de memória
+- [[wiki/sources/tipos-de-ssd-sata-ahci-m2-pci-express-nvme-explicados]]: [[wiki/concepts/ahci]] não foi feito para flash; [[wiki/concepts/nvme]] sim

@@ -3,8 +3,8 @@ type: concept
 title: "Saída Estruturada (Structured Output)"
 aliases: ["structured output", "structured outputs", "output estruturado"]
 date_created: 2026-09-30
-date_updated: 2026-09-30
-source_count: 1
+date_updated: 2026-10-08
+source_count: 2
 tags: [llm, saida-estruturada, json-schema, zod, pydantic, sdk]
 skill: tech-mentor-ai
 status: draft
@@ -35,3 +35,5 @@ A skill trata o tema em `references/ai/structured-outputs-function-calling.md`: 
 ## Key Sources
 
 - [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]]
+
+- [[wiki/sources/jev-typesafe-ai-system-one-model-decisoes-tipadas-codigo-fonte-tv]] — alternativa: [[wiki/concepts/system-one-model]] devolve tipos nativos com confiança; ver [[wiki/concepts/zero-erro-de-schema-nao-e-correcao-semantica]]

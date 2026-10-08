@@ -3,8 +3,8 @@ type: concept
 title: "Alta Disponibilidade"
 aliases: ["HA", "High Availability", "Alta Disponibilidade Cloud"]
 date_created: 2026-05-06
-date_updated: 2026-10-02
-source_count: 10
+date_updated: 2026-10-08
+source_count: 11
 tags: ["alta-disponibilidade", "resiliência", "aws", "arquitetura", "sre"]
 skill: tech-mentor-infra
 status: stub
@@ -72,3 +72,4 @@ Framing complementar (mais amplo que redundância multi-AZ acima): disponibilida
 - [[wiki/sources/github-2018-cap-pacelc-particao-video]] — contraste: disponibilidade formal do CAP (nó vivo responde) vs. uptime ([[wiki/concepts/disponibilidade-no-teorema-cap]])
 - [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] — distinção CAP-availability vs. HA operacional; ver [[wiki/concepts/disponibilidade-no-teorema-cap]]
 - [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — alta disponibilidade, escalabilidade e tolerância a falhas como razão de a arquitetura distribuída ser hoje 'praticamente padrão'
+- [[wiki/sources/load-balancer-como-funciona-algoritmos-health-check-nginx-haproxy]] — health check tira instância morta do rodízio, permitindo "falhar sem ninguém perceber"

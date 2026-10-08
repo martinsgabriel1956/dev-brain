@@ -3,8 +3,8 @@ type: concept
 title: "Observabilidade"
 aliases: ["observabilidade", "observability", "três pilares", "metrics logs traces"]
 date_created: 2026-04-22
-date_updated: 2026-10-07
-source_count: 18
+date_updated: 2026-10-08
+source_count: 19
 tags: [observabilidade, metricas, logs, traces, prometheus, sre, infraestrutura]
 skill: tech-mentor-system-design
 status: stable
@@ -199,3 +199,4 @@ A entrada de agentes de IA na pipeline adiciona uma pergunta específica aos tr�
 - [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] — Observabilidade com camada anticorrupção
 
 - [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — observabilidade como *pré-requisito* do diagnóstico: OpenTelemetry/Jaeger/Zipkin, APM, Prometheus/Grafana e `EXPLAIN` para localizar o problema antes de qualquer migração; não usar todas as ferramentas ao mesmo tempo.
+- [[wiki/sources/load-balancer-como-funciona-algoritmos-health-check-nginx-haproxy]] — recomendação de logs e alertas para avisar quando LB/aplicação detectar queda, complementando o health check

@@ -4,7 +4,7 @@ title: "Soft Skills"
 aliases: ["habilidades humanas", "habilidades interpessoais", "people skills"]
 date_created: 2026-05-19
 date_updated: 2026-10-07
-source_count: 6
+source_count: 7
 tags: [soft-skills, carreira, liderança, comunicação, colaboração]
 skill: tech-mentor-leadership
 status: stable
@@ -50,3 +50,5 @@ Hard skills abrem a porta. Soft skills determinam o quanto você avança depois 
 - [[wiki/sources/potencial-programador-atitude-mindset]] — atitude/mindset acima da tech skill ao avaliar potencial; "para de ser idiota, seja proativo" como a soft skill de base (ver [[wiki/concepts/atitude-mindset-vs-tech-skill]])
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — comunicação, proatividade e conversa informal como parte de desenrolar demandas; soft skills valorizadas na prática do dia a dia (ver [[wiki/concepts/dev-essencial-e-raridade]])
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — soft skill treinável: ensaiar histórias de projeto ([[wiki/concepts/storytelling-em-entrevista]]) e narrar o raciocínio ([[wiki/concepts/pensar-em-voz-alta-na-entrevista]])
+
+- [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] — comunicação, resiliência e curiosidade como traços recorrentes em Amazon/Stripe/YC

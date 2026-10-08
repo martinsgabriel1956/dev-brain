@@ -3,8 +3,8 @@ type: concept
 title: "Autonomia Técnica"
 aliases: ["technical autonomy", "autonomia de código", "independência técnica"]
 date_created: 2026-05-31
-date_updated: 2026-09-14
-source_count: 4
+date_updated: 2026-10-07
+source_count: 5
 tags: [autonomia-tecnica, carreira-dev, aprendizado, iniciante, dependencia-ia]
 skill: tech-mentor-leadership
 status: stable
@@ -80,3 +80,5 @@ Na [[escala-maturidade-ia-dev]], o nível 4 (Diretor) exige **mais** conheciment
 - [[wiki/sources/ia-e-aprendizado-programacao-iniciantes]]
 - [[wiki/sources/escala-niveis-uso-ia-engenheiros]] — paradoxo do nível 4: mais delegação exige mais conhecimento de domínio
 - [[wiki/sources/vale-a-pena-estudar-microsservicos-mesmo-sem-usar]] — repertório de arquitetura (construído estudando microsserviços) como o que permite curar entre 10 sugestões de arquitetura que uma IA pode gerar; sem fundamentos, o dev não sabe distinguir uma boa sugestão de "salada de letrinhas bonitas"
+
+- [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] — autonomia/high agency como o que separa o [[wiki/concepts/contribuidor-de-alto-impacto]] do [[wiki/concepts/fim-do-comedor-de-ticket|comedor de ticket]]

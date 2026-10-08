@@ -3,8 +3,8 @@ type: concept
 title: "Lgpd"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-30
-source_count: 3
+date_updated: 2026-10-08
+source_count: 4
 tags: [lgpd]
 skill: tech-mentor-security
 status: stub
@@ -28,3 +28,4 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 - [[wiki/sources/data-privacy]]
 - [[wiki/sources/lgpd-gdpr]]
 - [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] — retenção de dados do provedor de LLM como ponto de conformidade; ZDR e `data_collection: deny`
+- [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] — evento enxuto (só ID) evita expor dado pessoal; dado completo passa por API com gestão de quem consome ([[wiki/concepts/evento-enxuto-vs-evento-gordo]])

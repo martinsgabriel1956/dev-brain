@@ -3,8 +3,8 @@ type: entity
 title: "Amazon Web Services"
 aliases: ["AWS", "Amazon Cloud"]
 date_created: 2026-05-06
-date_updated: 2026-10-01
-source_count: 9
+date_updated: 2026-10-08
+source_count: 11
 tags: ["aws", "cloud-provider", "amazon", "infraestrutura"]
 skill: tech-mentor-infra
 status: stable
@@ -80,3 +80,6 @@ Panorama didático (não exaustivo de todos os produtos) que ordena os serviços
 - [[wiki/sources/talk-about-platforms-evan-bottcher]] — AWS como o "self-service real" para onde os times fugiram da infra centralizada travada (casos BigCo e WebBiz), trazendo o mantra [[wiki/concepts/you-build-it-you-run-it|you build it, you run it]]
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — Amazon citada como uma das pioneiras de API pública (anos 2000, ao lado de eBay e Salesforce); AWS citada nos anos 2010 como parte da expansão de "API economy" via centenas de APIs de infraestrutura como produto
 - [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — bancos gerenciados em nuvem (AWS/Azure/GCP) não eliminam o CAP
+
+- [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] — princípios de liderança da Amazon: [[wiki/concepts/amazon-leadership-principles]]
+- [[wiki/sources/load-balancer-como-funciona-algoritmos-health-check-nginx-haproxy]] — ALB (camada de aplicação) e NLB (rede/transporte) citados como LBs gerenciados

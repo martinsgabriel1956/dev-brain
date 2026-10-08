@@ -3,8 +3,8 @@ type: entity
 title: "RabbitMQ"
 aliases: ["rabbitmq", "rabbit mq"]
 date_created: 2026-07-30
-date_updated: 2026-10-05
-source_count: 6
+date_updated: 2026-10-08
+source_count: 7
 tags: [mensageria, message-broker, saga-pattern, event-driven]
 skill: tech-mentor-backend
 status: stub
@@ -43,3 +43,4 @@ Modelo producer → exchange → fila → consumer, quatro tipos de exchange ([[
 - [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — fila de miniaturas; preferência do autor por RabbitMQ em relação a Kafka, dependente de contexto
 - [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — exemplo de message broker que enfileira os eventos de cadastro consumidos de forma assíncrona para atualizar o banco de leitura
 - [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — modelo mental, exchanges, ack e quando usar
+- [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] — comentário (ASR ambíguo) de que não propaga trace automaticamente em EDA

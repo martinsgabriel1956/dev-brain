@@ -3,8 +3,8 @@ type: entity
 title: "Alura"
 aliases: ["alura", "escola alura"]
 date_created: 2026-08-12
-date_updated: 2026-09-01
-source_count: 2
+date_updated: 2026-10-08
+source_count: 3
 tags: [educacao, escola-de-tecnologia, cursos, canal]
 skill: cs-fundamentals
 status: stub
@@ -23,3 +23,4 @@ Escola de tecnologia brasileira com cursos em programação, front-end, dados, D
 
 - [[wiki/sources/busca-linear-e-binaria-giovana]] — aula de algoritmos de busca (busca linear vs. binária, complexidade O(n) vs. O(log n))
 - [[wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv]] — patrocínio mencionado no episódio sobre XSS do Código Fonte TV, citando a formação de Segurança de Aplicações
+- [[wiki/sources/tipos-de-ssd-sata-ahci-m2-pci-express-nvme-explicados]]: patrocínio (plano Pro, IA "Lu", Tech Guide, comunidade)

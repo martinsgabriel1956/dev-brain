@@ -3,8 +3,8 @@ type: entity
 title: "Vercel"
 aliases: ["Vercel"]
 date_created: 2026-07-28
-date_updated: 2026-09-02
-source_count: 3
+date_updated: 2026-10-08
+source_count: 4
 tags: [tech-mentor-ai, harness, tool-call, deploy, serverless]
 skill: tech-mentor-ai
 status: stub
@@ -31,3 +31,5 @@ Plataforma de deploy amplamente usada por devs, especialmente com IA. Já entida
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]]
 - [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — Vercel como host do site pessoal da autora; name servers do domínio (na GoDaddy) apontando para a Vercel
 - [[wiki/sources/database-branching-testes-neon-fernanda-kipper]] — integração automática Vercel↔Neon para banco de teste isolado por branch
+
+- [[wiki/sources/jev-typesafe-ai-system-one-model-decisoes-tipadas-codigo-fonte-tv]] — caso: comandos de segurança via [[wiki/entities/jev]], até 18x mais rápido (reportagem citada, não verificada)

@@ -3,8 +3,8 @@ type: concept
 title: "Paradoxo da Aceleração"
 aliases: ["acceleration paradox", "paradoxo da aceleracao", "velocidade individual atrito sistemico"]
 date_created: 2026-08-10
-date_updated: 2026-08-20
-source_count: 2
+date_updated: 2026-10-08
+source_count: 3
 tags: [ia-produtividade, engineering-metrics, code-review, faros-ai, gargalo]
 skill: tech-mentor-leadership
 status: draft
@@ -67,3 +67,7 @@ Estrutura análoga ao [[wiki/concepts/roi-de-ia]] (ganho individual que não sob
 
 - [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]]
 - [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] — mesma dinâmica via raciocínio de ciclo completo (refinamento→deploy); distinção evolução (plugar IA no processo existente) vs. revolução (redesenhar processo) como causa raiz
+
+## Key sources (adição 2026-10-08)
+
+- [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — A IA acelera também o erro: 3–4 semanas viram ~20 min ([[wiki/concepts/erro-na-velocidade-da-ia]]).

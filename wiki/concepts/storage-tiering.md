@@ -3,8 +3,8 @@ type: concept
 title: "Storage Tiering"
 aliases: ["storage hierárquico", "hot warm cold", "s3 glacier", "tiered storage"]
 date_created: 2026-04-22
-date_updated: 2026-08-13
-source_count: 2
+date_updated: 2026-10-08
+source_count: 3
 tags: [system-design, storage, s3, glacier, custo, infra, hardware]
 skill: tech-mentor-system-design
 status: stable
@@ -72,3 +72,4 @@ A [[wiki/concepts/fita-magnetica]] é o equivalente físico do Glacier: barata, 
 
 - [[wiki/sources/case-youtube-streaming]]
 - [[wiki/sources/tipos-de-armazenamento-de-dados]] — o tiering Hot/Warm/Cold mapeado nas mídias físicas (SSD/HDD/fita)
+- [[wiki/sources/tipos-de-ssd-sata-ahci-m2-pci-express-nvme-explicados]]: camada *hot* local: [[wiki/concepts/nvme]] sobre [[wiki/concepts/pci-express]]

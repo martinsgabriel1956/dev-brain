@@ -3,8 +3,8 @@ type: concept
 title: "Separação de Contextos"
 aliases: ["context separation", "context isolation", "sessões separadas"]
 date_created: 2026-05-04
-date_updated: 2026-10-07
-source_count: 5
+date_updated: 2026-10-08
+source_count: 6
 tags: [context-engineering, coding-agents, workflow]
 skill: tech-mentor-ai
 status: stable
@@ -63,3 +63,7 @@ Separação de contextos garante que sessões não se contaminem. [[memoria-de-l
 ## Key sources (adição 2026-10-07)
 
 - [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] — Isolate via subagentes como implementação da separação de contextos
+
+## Key sources (adição 2026-10-08)
+
+- [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — Recomenda sessão nova de "cabeça limpa" após resposta errada ([[wiki/concepts/ia-perdida-e-confiante]]).

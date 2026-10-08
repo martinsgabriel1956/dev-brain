@@ -3,8 +3,8 @@ type: concept
 title: "Single Point of Failure (SPOF)"
 aliases: ["spof", "ponto único de falha", "single point of failure"]
 date_created: 2026-08-10
-date_updated: 2026-10-06
-source_count: 4
+date_updated: 2026-10-08
+source_count: 5
 tags: [system-design, spof, alta-disponibilidade, resiliencia, arquitetura, escalabilidade]
 skill: tech-mentor-system-design
 status: stub
@@ -47,3 +47,4 @@ O store compartilhado do rate limit pode virar SPOF/gargalo do sistema que prote
 - [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — mesma progressão de eliminação de SPOF, com um nível adicional explícito: o data center inteiro como SPOF de nível mais alto, resolvido replicando toda a arquitetura em um segundo data center/região
 - [[wiki/sources/arquitetura-monolitica-vantagens-desvantagens]] — variante lógica do SPOF: bug num módulo derruba módulos não relacionados, porque monolito compartilha processo e deploy
 - [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — store de rate limit como SPOF
+- [[wiki/sources/load-balancer-como-funciona-algoritmos-health-check-nginx-haproxy]] — servidor único como causa da queda sob pico; o LB em si pode ser gargalo, mas o autor o considera leve demais para saturar em aplicações de pequeno/médio porte (alegação não quantificada)

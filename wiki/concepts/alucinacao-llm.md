@@ -3,8 +3,8 @@ type: concept
 title: "Alucinação de LLM"
 aliases: ["hallucination", "llm hallucination", "alucinacao", "llm mente"]
 date_created: 2026-07-30
-date_updated: 2026-10-06
-source_count: 7
+date_updated: 2026-10-08
+source_count: 9
 tags: [alucinacao, hallucination, ai-safety, rag, guardrails, llm-as-judge, faithfulness]
 skill: tech-mentor-ai
 status: draft
@@ -75,3 +75,9 @@ Alimentar o LLM com fatos determinísticos do código reduziu alucinações no D
 - [[wiki/sources/rag-introducao-pipeline-completo]] — conceito de "chunks elegíveis" com threshold de confiança: se nenhum chunk recuperado for elegível, o sistema deve recusar responder em vez de alucinar com contexto ruim
 - [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]] — análise estática como contexto restrito reduz alucinação
 - [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — RAG apresentado como forma de reduzir respostas genéricas/alucinadas; regras só no prompt, sem validação da saída (ver Open questions da fonte)
+
+## Key sources (adição 2026-10-08)
+
+- [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — Prompt vago leva o modelo a preencher lacunas com o padrão do treino ([[wiki/concepts/prompt-vago-vs-prompt-especifico-demais]]).
+
+- [[wiki/sources/jev-typesafe-ai-system-one-model-decisoes-tipadas-codigo-fonte-tv]] — modelo que expõe confiança calibrada ([[wiki/concepts/rlcd]]) mitiga; schema válido não garante acerto

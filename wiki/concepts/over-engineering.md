@@ -3,8 +3,8 @@ type: concept
 title: "Over-Engineering"
 aliases: ["overengineering", "verde neném", "engenharia excessiva", "gold plating"]
 date_created: 2026-06-09
-date_updated: 2026-10-07
-source_count: 18
+date_updated: 2026-10-08
+source_count: 19
 tags: [design, qualidade, anti-pattern, aprendizado, design-patterns, dora, under-engineering]
 skill: tech-mentor-leadership
 status: stable
@@ -144,3 +144,4 @@ Caso de dados: colocar cinco tecnologias de armazenamento numa loja pequena; ver
 - [[wiki/sources/system-design-load-balancer-nivel-macaco]] — heurística concreta e demonstrada em simulador: introduzir load balancer/múltiplos servidores sem carga real que os justifique é over-engineering; o gatilho correto é saturação observável, não uma meta de escala antecipada
 
 - [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — migrar para microsserviços sem diagnosticar o gargalo adiciona complexidade sem ganho ("de brinde"); decisão válida só após entender o problema ([[wiki/concepts/diagnostico-antes-de-reestruturar]]).
+- [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] — EDA, DDD e microsserviços 'de fachada' como over-engineering sem benefício ([[wiki/concepts/eda-de-fachada]]); startup parada 3 meses

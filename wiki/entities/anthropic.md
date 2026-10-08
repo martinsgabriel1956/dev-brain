@@ -3,8 +3,8 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-09-30
-source_count: 35
+date_updated: 2026-10-08
+source_count: 36
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack, memory-layers, prompt-caching]
 skill: tech-mentor-ai
 status: stable
@@ -167,3 +167,7 @@ A documentação do Claude Code é a fonte declarada das dicas em [[wiki/sources
 - [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]] — citada como uma das empresas de IA que adotam o modelo Forward Deployed Engineer
 - [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — skill-creator como skill oficial de avaliação de skills; Haiku vs. Opus no benchmark
 - [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — documentação, blog de engenharia, rotinas e saída estruturada
+
+## Key sources (adição 2026-10-08)
+
+- [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — Artigo sobre prompting dos modelos Claude resumido por Balta (artigo não identificado).

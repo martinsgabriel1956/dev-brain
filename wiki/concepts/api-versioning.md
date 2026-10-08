@@ -3,8 +3,8 @@ type: concept
 title: "Api Versioning"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-30
-source_count: 3
+date_updated: 2026-10-08
+source_count: 4
 tags: [api-versioning]
 skill: tech-mentor-backend
 status: stub
@@ -32,3 +32,4 @@ Aplicar major/minor/correção a prompts ([[wiki/concepts/versionamento-semantic
 - [[wiki/sources/api-contracts-versioning]]
 - [[wiki/sources/rest-openapi]]
 - [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — semver aplicado a prompts (analogia)
+- [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] — fim de vida (EOL) com prazo respeitado é condição para versões paralelas de eventos/APIs funcionarem ([[wiki/concepts/evento-enxuto-vs-evento-gordo]])

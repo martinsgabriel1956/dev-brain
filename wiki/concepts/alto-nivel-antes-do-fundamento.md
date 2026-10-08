@@ -3,8 +3,8 @@ type: concept
 title: "Alto Nível Antes do Fundamento"
 aliases: ["ordem invertida de aprendizado", "top-down learning path", "fundamento sob demanda"]
 date_created: 2026-08-17
-date_updated: 2026-10-05
-source_count: 4
+date_updated: 2026-10-08
+source_count: 5
 tags: [aprendizado, carreira, junior, ensino, fundamentos]
 skill: tech-mentor-leadership
 status: stub
@@ -62,3 +62,7 @@ Esta tese está em tensão parcial, não em contradição direta, com a leitura 
 ## Key sources (adição 2026-10-05)
 
 - [[wiki/sources/tres-tipos-de-acoplamento-que-impedem-teste-unitario-andre-casciotti]] — Reforço: entender runtime (static, herança, instanciação) evita acoplar sem perceber ([[wiki/concepts/acoplamento-que-impede-teste-unitario]]).
+
+## Key sources (adição 2026-10-08)
+
+- [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — Contraponto: Balta defende que teoria/fundamentos são o que sobra ao dev quando a IA escreve o código ([[wiki/concepts/fundamentos-e-teoria-na-era-da-ia]]).

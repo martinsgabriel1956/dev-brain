@@ -3,13 +3,13 @@ type: source
 title: "Todos os principais tipos de armazenamento de dados (em menos de 8 minutos)"
 aliases: ["tipos de armazenamento", "storage media", "HD SSD nuvem NAS fita", "meios de armazenamento"]
 date_created: 2026-08-13
-date_updated: 2026-08-13
+date_updated: 2026-10-08
 source_file: /home/gabriel-martins/Documentos/dev-brain/raw/tipos-de-armazenamento-de-dados.md
 source_url: ""
 author: ""
 date_published: ""
 date_ingested: 2026-08-13
-source_count: 1
+source_count: 2
 tags: [storage, hardware, hdd, ssd, nand, flash, nuvem, nas, fita-magnetica, lto, armazenamento-optico, cs-fundamentals]
 skill: tech-mentor-data
 status: stable
@@ -80,3 +80,7 @@ O vídeo é hardware, mas o princípio é o mesmo do **[[wiki/concepts/storage-t
 > "Existem empresas bilionárias que ainda armazenam seus dados em fitas magnéticas — e que, dependendo do caso, esse tipo de armazenamento pode ser melhor que SSDs de última geração."
 
 > "É o meio mais seguro, pois não está conectado à rede o tempo todo e é menos vulnerável a invasões." (sobre a fita)
+
+## Veja também
+
+- [[wiki/sources/tipos-de-ssd-sata-ahci-m2-pci-express-nvme-explicados]]: aprofundamento em SSD (SATA/AHCI/M.2/PCIe/NVMe)

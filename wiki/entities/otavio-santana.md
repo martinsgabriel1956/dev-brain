@@ -3,8 +3,8 @@ type: entity
 title: "Otávio Santana"
 aliases: ["otavio santana"]
 date_created: 2026-09-08
-date_updated: 2026-09-08
-source_count: 1
+date_updated: 2026-10-08
+source_count: 2
 tags: [engenheiro-de-software, java, ddd, api-design]
 skill: tech-mentor-backend
 status: stub
@@ -28,3 +28,4 @@ Em [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana
 ## Key Sources
 
 - [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]]
+- [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] — co-apresentador da conversa sobre EDA com [[wiki/entities/luiz-carlos-faria]]; levanta versionamento de eventos, hype/paradoxo da escolha e risco de antecipar o futuro

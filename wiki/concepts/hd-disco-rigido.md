@@ -3,8 +3,8 @@ type: concept
 title: "HD (Disco Rígido / HDD)"
 aliases: ["HD", "HDD", "disco rígido", "hard disk drive", "disco magnético"]
 date_created: 2026-08-13
-date_updated: 2026-08-13
-source_count: 1
+date_updated: 2026-10-08
+source_count: 2
 tags: [storage, hardware, hdd, magnetico, cs-fundamentals]
 skill: tech-mentor-data
 status: stub
@@ -27,3 +27,4 @@ Barato e de alta capacidade, mas **tem partes mecânicas** — vulnerável a cho
 ## Key Sources
 
 - [[wiki/sources/tipos-de-armazenamento-de-dados]] — HD como baseline de custo/capacidade vs. SSD
+- [[wiki/sources/tipos-de-ssd-sata-ahci-m2-pci-express-nvme-explicados]]: SSD SATA reaproveitou portas e o protocolo [[wiki/concepts/ahci]], criado para HD

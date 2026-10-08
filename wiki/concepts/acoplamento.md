@@ -3,8 +3,8 @@ type: concept
 title: "Acoplamento"
 aliases: ["coupling", "baixo acoplamento", "alto acoplamento"]
 date_created: 2026-04-25
-date_updated: 2026-10-06
-source_count: 17
+date_updated: 2026-10-08
+source_count: 18
 tags: [acoplamento, software-design, clean-code, arquitetura, under-engineering]
 skill: tech-mentor-backend
 status: stable
@@ -135,3 +135,4 @@ Ver [[wiki/concepts/monolito-distribuido]]: dependências externas síncronas ac
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — acoplamento legítimo (regra de negócio) restrito ao status vs. acoplamento a detalhes internos. Ver [[wiki/concepts/acoplamento-de-negocio-vs-detalhe-interno]].
+- [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] — acoplamento é sempre custo; comando é acoplamento direto, evento inverte a dependência ([[wiki/concepts/evento-vs-comando]])

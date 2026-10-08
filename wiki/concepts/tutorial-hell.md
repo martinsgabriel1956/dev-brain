@@ -3,8 +3,8 @@ type: concept
 title: "Tutorial Hell"
 aliases: ["tutorial hell", "espiral de tutoriais", "consumo passivo de conteúdo"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-10-08
+source_count: 2
 tags: [aprendizado, anti-pattern, iniciante, carreira, mentalidade]
 skill: tech-mentor-leadership
 status: stable
@@ -51,3 +51,7 @@ Tutorial hell ≠ consumir conteúdo de qualidade. A diferença está na **propo
 ## Key Sources
 
 - [[wiki/sources/principio-da-inversao-programador]]
+
+## Key sources (adição 2026-10-08)
+
+- [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — Seguir tutoriais (CRUD) dá falsa sensação de aprendizado; no mundo real faltam fundamentos ([[wiki/concepts/fundamentos-e-teoria-na-era-da-ia]]).

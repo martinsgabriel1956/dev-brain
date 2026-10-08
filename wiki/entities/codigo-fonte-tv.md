@@ -3,8 +3,8 @@ type: entity
 title: "Código Fonte TV"
 aliases: ["Codigo Fonte TV", "CDF"]
 date_created: 2026-07-10
-date_updated: 2026-10-05
-source_count: 9
+date_updated: 2026-10-08
+source_count: 10
 tags: [canal, youtube, mercado-de-trabalho, pesquisa-salarial, brasil, design-patterns, typescript]
 skill: tech-mentor-leadership
 status: stub
@@ -45,3 +45,5 @@ Episódio sobre os cinco tipos de armazenamento da série "Dicionário do Progra
 - [[wiki/sources/cqrs-dicionario-programador-codigo-fonte-tv]] — episódio "Dicionário do Programador" sobre CQRS: progressão de cenários de motivação, task-based UI, command bus, estratégias de sincronização e menção a Event Sourcing
 - [[wiki/sources/design-pattern-facade-codigo-fonte-tv]] — segundo episódio "mão no código" da minissérie de design patterns (depois de Strategy): Facade via exemplo de remoção de conta sob LGPD, com posição própria (diverge de Renato Augusto) de que a implementação fere o SRP
 - [[wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv]] — episódio "Dicionário do Programador" sobre XSS: estudo de caso narrativo (loja do Bob) para reflected vs. stored XSS, patrocínio da [[wiki/entities/alura]], indicação de SQL Injection como próximo episódio da série
+
+- [[wiki/sources/jev-typesafe-ai-system-one-model-decisoes-tipadas-codigo-fonte-tv]] — cobertura de novidade de IA (Jev/System One) com explicação técnica e ressalvas

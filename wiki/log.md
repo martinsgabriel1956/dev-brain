@@ -12938,3 +12938,88 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (15):** notification-system, entrevista-system-design, kafka, filas-e-workers, fila, idempotencia, mobile-push-notifications, requisitos-funcionais-e-nao-funcionais, high-level-design, reconciliacao, finops, facade-pattern, rate-limiting, pensar-em-voz-alta-na-entrevista, niveis-de-senioridade-system-design, dlq (todas em `wiki/concepts/`).
 
 **Notas:** (1) Sem contradição; a skill sugere SQS FIFO/Standard por prioridade, o vídeo tópicos Kafka — mesma ideia, tecnologia distinta. (2) Faixa de custo SMS (10–500×; 5–25 mil/dia) `[external não verificado]`. (3) Autoria só "Ana"; sem entidade criada. (4) Novos itens `draft`.
+
+
+---
+
+## [2026-10-07] ingest | Contribuidor de Alto Impacto: High Agency e Founder Mode (Galego)
+
+**Fonte:** transcrição colada pelo usuário, limpa em `raw/contribuidor-de-alto-impacto-high-agency-founder-mode-galego.md` (já em PT-BR; sem tradução; ASR corrigido; patrocínio de gateway de pagamentos omitido).
+
+**Skill:** tech-mentor-leadership (SKILL.md; `references/career-progression.md`, scope/impact; path `/home/gabriel-martins/Documentos/skills/`; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]], [[wiki/concepts/contribuidor-de-alto-impacto]], [[wiki/concepts/high-agency-founder-mode]], [[wiki/concepts/fim-do-comedor-de-ticket]], [[wiki/concepts/taste-do-desenvolvedor]], [[wiki/concepts/interdisciplinaridade-double-major]], [[wiki/concepts/empresas-grandes-em-modo-startup]], [[wiki/concepts/amazon-leadership-principles]], [[wiki/entities/paul-graham]], [[wiki/entities/stripe]], [[wiki/entities/greg-brockman]]
+
+**Tocadas (13):** ownership-proativo, autonomia-tecnica, profissional-t-shaped, dev-e-negocio, visao-de-negocio-do-desenvolvedor, soft-skills, ia-como-amplificador, extreme-ownership, jogar-o-jogo-da-carreira (concepts); y-combinator, openai, augusto-galego, amazon-web-services (entities).
+
+**Notas:** (1) Sem contradição direta; leve tensão "execução vale menos" vs. qualidade/[[wiki/concepts/extreme-ownership]]. (2) Autoria inferida pela autorreferência "galego" → [[wiki/entities/augusto-galego]]. (3) Dados de YC/Stripe/Amazon citados pelo autor, `[external não verificado]`. (4) Novos itens `draft`.
+
+---
+
+## [2026-10-08] ingest | Arquitetura Orientada a Eventos (Gago, Macris e Santana)
+
+**Fonte:** transcrição colada pelo usuário, limpa em `raw/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris.md` (já em PT-BR; sem tradução; ASR corrigido; trechos ambíguos marcados).
+
+**Skill:** tech-mentor-backend (SKILL.md; `references/architecture-eda-patterns.md`; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]], [[wiki/concepts/evento-vs-comando]], [[wiki/concepts/mensageria-vs-eda]], [[wiki/concepts/evento-enxuto-vs-evento-gordo]], [[wiki/concepts/primeira-adocao-de-tecnologia-com-conforto]], [[wiki/concepts/eda-de-fachada]], [[wiki/entities/luiz-carlos-faria]], [[wiki/entities/eduardo-macris]]
+
+**Tocadas (14):** event-driven-architecture, mensageria, acoplamento, over-engineering, avaliar-hype-tecnologico, choreography, microsservicos, pub-sub, distributed-tracing, api-versioning, lgpd, api-gateway, cqrs (concepts); otavio-santana, rabbitmq (entities).
+
+**Notas:** (1) Sem contradição; a fonte cobre decisão (quando/por quê), a skill cobre Outbox/Inbox/Saga. (2) Os "quatro padrões" citados de memória parecem vir de Martin Fowler `[external não verificado]`; o quarto (provável Event Sourcing) é inferência. (3) Afirmação sobre RabbitMQ e tracing vem de trecho ASR ambíguo. (4) Anedotas (diretoria caindo, startup parada 3 meses) sem dados. (5) Novos itens `draft`/`stub`.
+
+---
+
+## [2026-10-08] ingest | Por que programadores têm os melhores prompts (Balta)
+
+**Fonte:** transcrição colada pelo usuário, limpa em `raw/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta.md` (já em PT-BR; sem tradução; ASR corrigido; "família CCO" marcado ambíguo).
+
+**Skill:** tech-mentor-ai (SKILL.md; `references/ai/prompt-engineering.md`, `context-engineering.md`; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]], 8 conceitos (clareza-antes-do-prompt, zonas-de-desconhecimento, prompt-vago-vs-prompt-especifico-demais, ia-perdida-e-confiante, erro-na-velocidade-da-ia, especialista-leva-vantagem-com-ia, fundamentos-e-teoria-na-era-da-ia, software-como-construcao-civil), [[wiki/entities/balta]].
+
+**Tocadas (12):** ia-como-amplificador, prompt-engineering, alucinacao-llm, tutorial-hell, alto-nivel-antes-do-fundamento, degradacao-de-contexto, separacao-de-contextos, human-in-the-loop, divida-cognitiva, vibe-coding, paradoxo-da-aceleracao (concepts); anthropic, linkedin (entities).
+
+**Notas:** (1) Sem contradição; tensão leve com [[wiki/concepts/alto-nivel-antes-do-fundamento]]. (2) Autoria inferida ("Balta"). (3) Artigo citado não identificado. (4) Números (3–4 sem vs 20 min) ilustrativos. (5) Novos itens `draft`/`stub`.
+
+---
+
+## [2026-10-08] ingest | Jev (TypeSafe AI): System One model (Código Fonte TV)
+
+**Fonte:** transcrição colada pelo usuário, limpa em `raw/jev-typesafe-ai-system-one-model-decisoes-tipadas-codigo-fonte-tv.md` (já em PT-BR; sem tradução; ASR corrigido: "JV/Jeev/Jeff" → Jev, "Typeesave" → TypeSafe AI; grafia confirmada por busca web).
+
+**Skill:** tech-mentor-ai (SKILL.md; `references/ai/structured-outputs-function-calling.md`, `model-routing-selection.md`; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/jev-typesafe-ai-system-one-model-decisoes-tipadas-codigo-fonte-tv]]; conceitos system-one-model, rlcd, perguntas-tipadas-choice-score-noul, jev-para-ramificar-llm-para-ler, zero-erro-de-schema-nao-e-correcao-semantica; entidades jev, typesafe-ai, diogo-almeida, motherduck.
+
+**Tocadas (10):** saida-estruturada-llm, alucinacao-llm, cascade-pattern-llm, tool-call, agente-ia, human-in-the-loop (concepts); vercel, openai, hostinger, codigo-fonte-tv (entities).
+
+**Notas:** (1) Sem contradição. (2) Números de Vercel/MotherDuck e "Luna 5.6" não verificados/ASR ambíguo. (3) Calibração é alegação do fornecedor. (4) Primitiva "no" = "noul" segundo fonte externa. (5) Novos itens `draft`/`stub`.
+
+---
+
+## [2026-10-08] ingest | Tipos de SSD: SATA, AHCI, M.2, PCIe e NVMe
+
+**Fonte:** transcrição colada pelo usuário, limpa em `raw/tipos-de-ssd-sata-ahci-m2-pci-express-nvme-explicados.md` (já em PT-BR; sem tradução; ASR corrigido: HCI→AHCI, NVMA→NVMe, PC Express→PCI Express).
+
+**Skill:** cs-fundamentals (SKILL.md; `references/storage-filesystems.md` § SSD/NVMe; sem `.obsidian/templates`, usado o schema do CLAUDE.md).
+
+**Criado:** [[wiki/sources/tipos-de-ssd-sata-ahci-m2-pci-express-nvme-explicados]]; conceitos ssd-sata, ahci, m2-formato-fisico, pci-express, nvme.
+
+**Tocadas (6):** ssd, hd-disco-rigido, memoria-flash, storage-tiering (concepts); alura (entity); tipos-de-armazenamento-de-dados (source).
+
+**Notas:** (1) Sem contradição com [[wiki/sources/tipos-de-armazenamento-de-dados]] (~600 vs ~550 MB/s é bruto vs útil). (2) Latência 30→10 µs e velocidades PCIe são arredondadas/não verificadas. (3) Canal não identificado. (4) Novos itens `draft`.
+
+---
+
+## [2026-10-08] ingest | Load Balancer: como funciona, algoritmos, health check, Nginx e HAProxy
+
+**Fonte:** transcrição colada pelo usuário, limpa em `raw/load-balancer-como-funciona-algoritmos-health-check-nginx-haproxy.md` (já em PT-BR; sem tradução; ASR corrigido: round hobbing→round robin, list connections→least connections, NeNex→Nginx, ARB→ALB).
+
+**Skill:** tech-mentor-infra (SKILL.md; `references/networking-infra.md` § Load Balancing Algorithms).
+
+**Criado:** [[wiki/sources/load-balancer-como-funciona-algoritmos-health-check-nginx-haproxy]]; conceito health-check; entidades nginx, haproxy.
+
+**Tocadas (11):** load-balancer, sticky-session, reverse-proxy, escalabilidade-horizontal, alta-disponibilidade, stateless, single-point-of-failure, observabilidade, session-management, microsservicos (concepts); amazon-web-services (entity).
+
+**Notas:** (1) Sem contradição. (2) Canal/autor não identificado. (3) "LB nunca satura" é alegação sem números. (4) Novos itens `stub`.

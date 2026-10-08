@@ -3,8 +3,8 @@ type: concept
 title: "Degradação de Contexto"
 aliases: ["context degradation", "lost in the middle", "degradação janela contexto"]
 date_created: 2026-06-02
-date_updated: 2026-10-07
-source_count: 7
+date_updated: 2026-10-08
+source_count: 8
 tags: [contexto, degradacao, janela-de-contexto, llm, qualidade]
 skill: tech-mentor-ai
 status: stable
@@ -75,3 +75,7 @@ Ter uma janela grande não significa que devo preenchê-la. Quanto mais informa�
 ## Key sources (adição 2026-10-07)
 
 - [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] — ferramentas inúteis e histórico acumulado como ruído ([[wiki/concepts/superficie-probabilistica-do-agente]])
+
+## Key sources (adição 2026-10-08)
+
+- [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — Errou/não entendeu: descartar o contexto e começar conversa nova em vez de recuperá-lo ([[wiki/concepts/ia-perdida-e-confiante]]).

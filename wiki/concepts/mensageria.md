@@ -3,8 +3,8 @@ type: concept
 title: "Mensageria"
 aliases: ["message broker", "queue", "stream", "eda", "event driven"]
 date_created: 2026-04-23
-date_updated: 2026-10-05
-source_count: 17
+date_updated: 2026-10-08
+source_count: 18
 tags: [mensageria, kafka, rabbitmq, sqs, queue, stream, eda, at-least-once, dlq]
 skill: tech-mentor-backend
 status: stub
@@ -69,3 +69,4 @@ O produtor publica numa exchange, não na fila ([[wiki/concepts/modelo-mental-ra
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — publicar evento "pedido criado" em fila/tópico consumido por Estoque e Faturamento; broker vs. polling vs. webhook
 - [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — eventos de CQRS transportados como mensagens numa fila gerenciada por broker; consumer assíncrono apartado da aplicação de escrita
 - [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — exemplo de loja síncrona vs eventos, exchanges e ack
+- [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] — mensageria sozinha (broker como mediador, ex.: webhook→fila) não é EDA; ver [[wiki/concepts/mensageria-vs-eda]]

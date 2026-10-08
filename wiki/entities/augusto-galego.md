@@ -4,7 +4,7 @@ title: "Augusto Galego"
 aliases: ["Augusto Galego", "augustogalego.com"]
 date_created: 2026-07-20
 date_updated: 2026-10-07
-source_count: 15
+source_count: 16
 tags: [pessoa, programador, youtuber, brasil, devops, system-design, carreira, agentes-ia, code-review]
 skill: tech-mentor-infra
 status: stub
@@ -80,3 +80,5 @@ Continuando a linha de conteúdo introdutório de segurança iniciada com hash/s
 
 Vídeo de carreira sobre sete erros comuns de devs brasileiros ao aplicar para empresas de fora ([[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]]). Declara ~6 anos de trabalho no Brasil e ~5 para empresas estrangeiras, além de já ter contratado brasileiros para a gringa; menciona canal e cursos de LeetCode/System Design e um curso de carreira (viés comercial possível). Autoria inferida por autorreferência ('Galego Solutions') e pelo tema.
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — lista de erros ao aplicar para vagas na gringa (inglês, storytelling, LeetCode/System Design, pesquisa da empresa); autoria por autorreferência 'Galego'
+
+- [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] — vídeo sobre [[wiki/concepts/contribuidor-de-alto-impacto]] (autoria inferida)

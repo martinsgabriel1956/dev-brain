@@ -3,8 +3,8 @@ type: concept
 title: "Pub/Sub (Publish-Subscribe)"
 aliases: ["publish-subscribe", "pub sub", "publicador-assinante"]
 date_created: 2026-05-05
-date_updated: 2026-10-05
-source_count: 9
+date_updated: 2026-10-08
+source_count: 10
 tags: [design-patterns, event-driven, pub-sub, mensageria, broker, observer]
 skill: tech-mentor-backend
 status: stable
@@ -74,3 +74,4 @@ Fanout faz broadcast; topic filtra por padrão ([[wiki/concepts/exchange-rabbitm
 - [[wiki/sources/design-pattern-observer-codigo-fonte-tv]] — trata Observer e Pub/Sub como sinônimos de nomenclatura, em tensão com a distinção estrutural já documentada nesta página
 - [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — exemplo ponta a ponta: um consumer Kafka publica no Redis Pub/Sub num canal por `match_id`; servidores web se inscrevem no canal daquele ID e repassam a atualização às conexões SSE interessadas via um mapa em memória
 - [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — fanout e topic como variantes de pub/sub
+- [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] — produtor→consumidores 1→N ou 1→0: publicar sem consumidor é válido ([[wiki/concepts/evento-vs-comando]])

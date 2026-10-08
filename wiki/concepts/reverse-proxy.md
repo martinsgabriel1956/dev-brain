@@ -3,8 +3,8 @@ type: concept
 title: "Reverse Proxy"
 aliases: ["proxy reverso", "reverse proxy", "web server como proxy"]
 date_created: 2026-07-20
-date_updated: 2026-09-30
-source_count: 5
+date_updated: 2026-10-08
+source_count: 6
 tags: [nginx, reverse-proxy, infra, deploy, web-server, traefik, coolify, auto-update, disponibilidade]
 skill: tech-mentor-infra
 status: stub
@@ -50,3 +50,4 @@ O reverse proxy age pelo servidor; o [[wiki/concepts/forward-proxy]] age pelo cl
 - [[wiki/sources/ddos-sim-flood-servidor-find-my-saas]] — auto-update de proxy (Traefik via Coolify) como causa raiz de um bug de CPU/memory leak que agravou um SYN flood
 - [[wiki/sources/reacao-artigo-visual-algoritmos-load-balancing]] — Nginx citado como exemplo de reverse proxy/LB HTTP com Round Robin como algoritmo padrão (afirmação repetida na fonte, ainda não verificada contra a documentação oficial)
 - [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]] — contraste com forward proxy
+- [[wiki/sources/load-balancer-como-funciona-algoritmos-health-check-nginx-haproxy]] — LB na camada 7 também age como proxy reverso, roteando por path (`/api` → um grupo, `/images` → outro) para serviços diferentes, não só instâncias do mesmo serviço

@@ -3,8 +3,8 @@ type: concept
 title: "Session Management"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-10-05
-source_count: 4
+date_updated: 2026-10-08
+source_count: 5
 tags: [session-management]
 skill: tech-mentor-security
 status: stub
@@ -35,3 +35,4 @@ Sessão como dado key-value com TTL: consultada a cada clique, sem relações, p
 - [[wiki/sources/autenticacao-segura]]
 - [[wiki/sources/oauth2-oidc-jwt]]
 - [[wiki/sources/sessions]]
+- [[wiki/sources/load-balancer-como-funciona-algoritmos-health-check-nginx-haproxy]] — sessão local em memória + escala horizontal = perda de estado; IP hash como paliativo

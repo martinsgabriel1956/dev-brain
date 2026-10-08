@@ -3,8 +3,8 @@ type: concept
 title: "Visão de Negócio do Desenvolvedor"
 aliases: ["lado sombrio da força", "dev entende de negócio", "business acumen para devs"]
 date_created: 2026-07-29
-date_updated: 2026-10-06
-source_count: 5
+date_updated: 2026-10-07
+source_count: 6
 tags: [carreira, negocio, comunicacao, priorizacao, precificacao]
 skill: tech-mentor-leadership
 status: draft
@@ -51,3 +51,5 @@ Não existe fórmula única por indústria, mas o ponto de entrada recomendado �
 - [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — Hábito 7, único source até o momento
 - [[wiki/sources/vibe-coding-jogos-um-prompt-vs-varios-estagios-produto]] — demanda por software crescendo apesar da IA (não-devs vibe codam scripts); serviço virando produto via orquestração de agentes; framework de [[wiki/concepts/estagios-de-maturidade-de-produto]] e [[wiki/concepts/canais-de-distribuicao]]
 - [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — visão de negócio aplicada a precificação (ancoragem); técnica + negócio inseparáveis para fechar grandes contratos
+
+- [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] — saber de onde vem o dinheiro e ter [[wiki/concepts/taste-do-desenvolvedor|taste]] como base do alto impacto

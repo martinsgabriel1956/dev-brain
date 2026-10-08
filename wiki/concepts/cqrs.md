@@ -3,8 +3,8 @@ type: concept
 title: "CQRS — Command Query Responsibility Segregation"
 aliases: ["command query responsibility segregation", "cqrs pattern"]
 date_created: 2026-05-31
-date_updated: 2026-09-30
-source_count: 13
+date_updated: 2026-10-08
+source_count: 14
 tags: [cqrs, arquitetura, event-sourcing, ddd, sistemas-distribuidos]
 skill: tech-mentor-backend
 status: draft
@@ -174,3 +174,4 @@ Ganhos apontados: a escrita não é onerada pela atualização da leitura; o con
 - [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — caso real aplicando CQRS a um requisito de latência (não de modelagem): autorização de transação reduzida de ~10.000ms a 288ms P90 via materialização no write side
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — CQRS listado como estilo que depende da comunicação assíncrona
 - [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — problema motivador (consultas presas por locks) e CQRS com separação física: comandos → command handler → banco relacional; evento → fila (RabbitMQ) → consumer → banco de leitura NoSQL desnormalizado
+- [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] — citado como um dos quatro padrões distintos sob 'eventos' ([[wiki/concepts/mensageria-vs-eda]])

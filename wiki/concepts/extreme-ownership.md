@@ -3,8 +3,8 @@ type: concept
 title: "Extreme Ownership"
 aliases: ["ownership extremo", "Jocko Willink", "responsabilidade total"]
 date_created: 2026-04-22
-date_updated: 2026-09-30
-source_count: 5
+date_updated: 2026-10-07
+source_count: 6
 tags: [liderança, carreira, responsabilidade, ego, ownership]
 skill: tech-mentor-leadership
 status: stable
@@ -74,3 +74,5 @@ Sêniors e tech leads que praticam extreme ownership constroem confiança mais r
 - [[wiki/sources/potencial-programador-atitude-mindset]] — versão cotidiana do princípio: assumir a responsabilidade pela própria entrega e se desbloquear sozinho, ligada a [[wiki/concepts/ownership-proativo]]
 - [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] — cuidar do resultado ("se importar") como traço mais raro e mais difícil de ensinar do que habilidade técnica
 - [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]
+
+- [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] — ownership aparece como princípio comum de Amazon, Stripe e YC

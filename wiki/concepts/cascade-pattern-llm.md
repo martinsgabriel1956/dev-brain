@@ -3,8 +3,8 @@ type: concept
 title: "Cascade Pattern Llm"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-22
-source_count: 2
+date_updated: 2026-10-08
+source_count: 3
 tags: [cascade-pattern-llm]
 skill: tech-mentor-ai
 status: stub
@@ -27,3 +27,5 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 
 - [[wiki/sources/ai-gateway-token-economics]]
 - [[wiki/sources/open-weight-deployment]]
+
+- [[wiki/sources/jev-typesafe-ai-system-one-model-decisoes-tipadas-codigo-fonte-tv]] — decisões de roteamento/classificação podem ir a um [[wiki/concepts/system-one-model]] em vez de LLM

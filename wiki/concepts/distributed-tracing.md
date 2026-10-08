@@ -3,8 +3,8 @@ type: concept
 title: "Distributed Tracing"
 aliases: ["tracing distribuído", "opentelemetry", "spans", "trace context"]
 date_created: 2026-04-23
-date_updated: 2026-10-07
-source_count: 7
+date_updated: 2026-10-08
+source_count: 8
 tags: [distributed-tracing, observabilidade, opentelemetry, jaeger, spans, w3c-trace-context]
 skill: tech-mentor-infra
 status: draft
@@ -54,3 +54,4 @@ Segundo [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — debug assíncrono como motivação (sem ferramenta específica)
 
 - [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — tracing (OpenTelemetry, Jaeger, Zipkin) como ferramenta de diagnóstico de gargalo antes de reestruturar o sistema.
+- [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] — rastrear origem/destino/falha de eventos é custo real de EDA; nem todo broker propaga trace sozinho ([[wiki/concepts/event-driven-architecture]])

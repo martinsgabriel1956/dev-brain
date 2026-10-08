@@ -3,8 +3,8 @@ type: concept
 title: "API Gateway"
 aliases: ["api gateway", "gateway de api", "ponto único de entrada de api"]
 date_created: 2026-07-23
-date_updated: 2026-10-06
-source_count: 11
+date_updated: 2026-10-08
+source_count: 12
 tags: [api-gateway, arquitetura-distribuida, gatekeeper, roteamento, edge-functions, single-point-of-failure]
 skill: tech-mentor-backend
 status: stable
@@ -107,3 +107,4 @@ Gateway centraliza rate limit com políticas mais sofisticadas que LB (auth, ide
 - [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — Amazon API Gateway como ponto de entrada único da stack de exemplo de um encurtador de URL, integrado ao Cognito para autorizar endpoints protegidos
 - [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — rate limit centralizado no gateway (Spring Cloud Gateway, Kong)
 - [[wiki/sources/rate-limit-estrategias-fixed-sliding-token-leaky-bernardo-lobato]] — gateways oferecem fixed window e token bucket; cotas contratuais de API em SaaS/gateway
+- [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] — gestão de API (credenciais, quem consome qual dado) é reaproveitada ao buscar o dado completo após evento enxuto

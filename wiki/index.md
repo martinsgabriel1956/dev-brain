@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-10-07
+date_updated: 2026-10-08
 ---
 
 
@@ -26,6 +26,10 @@ date_updated: 2026-10-07
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/load-balancer-como-funciona-algoritmos-health-check-nginx-haproxy]] | Vídeo curto: pico viral derruba servidor único; [[wiki/concepts/load-balancer|LB]] com Round Robin/Weighted/Least Connections/IP Hash, L7 como proxy reverso, [[wiki/concepts/health-check|health check]], Nginx/HAProxy/ALB e erros comuns |
+| [[wiki/sources/tipos-de-ssd-sata-ahci-m2-pci-express-nvme-explicados | Tipos de SSD: velocidade = formato ([[wiki/concepts/m2-formato-fisico|M.2]]) × barramento ([[wiki/concepts/ssd-sata|SATA ~550 MB/s]] vs. [[wiki/concepts/pci-express|PCIe]] 3.0/4.0/5.0 ≈ 3.5/7.5/14 GB/s) × protocolo ([[wiki/concepts/ahci|AHCI]] 1×32 vs. [[wiki/concepts/nvme|NVMe]] 64k×64k); M.2 ≠ NVMe; patrocínio [[wiki/entities/alura|Alura]] |
+| [[wiki/sources/jev-typesafe-ai-system-one-model-decisoes-tipadas-codigo-fonte-tv]] | [[wiki/entities/codigo-fonte-tv|Código Fonte TV]]: [[wiki/entities/jev]] ([[wiki/entities/typesafe-ai]]), primeiro [[wiki/concepts/system-one-model]]: estado + [[wiki/concepts/perguntas-tipadas-choice-score-noul|perguntas tipadas]] → decisões com confiança ([[wiki/concepts/rlcd]]); [[wiki/concepts/jev-para-ramificar-llm-para-ler|Jev para ramificar, LLM para ler]] |
+| [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] | [[wiki/entities/balta|Balta]]: IA não dá poder, só ajuda quem sabe o que quer; quatro pontos de contexto (tamanho do prompt, clareza, ambiguidade, especialista) e tese de que a IA [[wiki/concepts/especialista-leva-vantagem-com-ia|ampliou a distância]]; [[wiki/concepts/fundamentos-e-teoria-na-era-da-ia|fundamentos e teoria]] como o que sobra |
 | [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] | Ana: sistema de notificação reprova seniores por hábito — [[wiki/concepts/api-e-consequencia-nao-ponto-de-partida|API primeiro]], ignorar custo, sem entidades; resposta: [[wiki/concepts/filas-separadas-por-prioridade|3 tópicos por prioridade]], [[wiki/concepts/channel-router-custo-fallback|channel router]], [[wiki/concepts/confirmacao-de-entrega-nao-confiavel|reconciliação]] |
 | [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] | [[wiki/entities/augusto-galego|Augusto Galego]]: sete erros de devs brasileiros ao aplicar para a gringa — [[wiki/concepts/ingles-tecnico-suficiente-vs-perfeito|inglês técnico suficiente]], [[wiki/concepts/storytelling-em-entrevista|storytelling]], LeetCode/System Design (building blocks antes de praticar), [[wiki/concepts/explicar-o-porque-das-decisoes|explicar o porquê]], [[wiki/concepts/pensar-em-voz-alta-na-entrevista|pensar em voz alta]] e [[wiki/concepts/pesquisar-a-empresa-antes-da-entrevista|pesquisar a empresa]] (15 min); tese: [[wiki/concepts/vaga-internacional-sem-mistica|sem mística]], processo parecido com o do Brasil |
 | [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] | [[wiki/entities/felipe-fagundes|Felipe Fagundes]]: agente SRE de 8.339 para 2.426 tokens (~−71%) com [[wiki/concepts/write-select-compress-isolate|Write, Select, Compress, Isolate]]; [[wiki/concepts/inspecao-de-contexto-antes-de-otimizar|medir antes]] e reduzir a [[wiki/concepts/superficie-probabilistica-do-agente|superfície probabilística]] |
@@ -850,13 +854,34 @@ date_updated: 2026-10-07
 | [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]], abertura da série: **[[wiki/concepts/arquitetura-distribuida|arquitetura distribuída]]** (serviços tecnicamente independentes pela rede vs. [[wiki/concepts/monolito|monolito]]); exemplo hipotético de streaming; histórico (Arpanet → cliente-servidor → web em escala → [[wiki/concepts/soa-service-oriented-architecture|SOA]] → microsserviços/nuvem); 4 motivos ([[wiki/concepts/escalabilidade-independente|escala independente]], resiliência, stack, equipes) e 6 desafios (operação, observabilidade, comunicação, consistência, custo, capacitação); alerta contra adoção por hype; [[wiki/concepts/desenhar-distribuido-implementar-monolito|desenhar distribuído, implementar monolito]] |
 | [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] | Parte 2 do vídeo do ACL (autor não identificado): ACL na migração legado→microsserviços; Facade no lado legado, Adapters no lado novo; custos (escala, latência, observabilidade, transação, débito técnico); matriz de requisitos arquiteturais; quando não usar (semântica distinta) |
 | [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] | Dicionário do Programador: harness = tudo menos o modelo; princípio de Hashimoto (trava determinística); guias (feed-forward) vs. sensores (feedback) de Böckeler; de-para de Trivedy; três camadas; DeepSeek Harness; exemplo em crédito |
+| [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] | Galego: [[wiki/concepts/contribuidor-de-alto-impacto]] (receita, não horas) e [[wiki/concepts/high-agency-founder-mode|high agency]]; fim do [[wiki/concepts/fim-do-comedor-de-ticket|comedor de ticket]]; Paul Graham, YC, Stripe, Amazon e Greg Brockman convergem em curiosidade/ownership/autonomia; grandes empresas em modo startup por causa da IA |
+| [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] | Gago, Macris e Santana: EDA para reduzir acoplamento, evento≠comando, mensageria≠EDA, evento enxuto vs gordo, EOL de versões, EDA de fachada e primeira adoção segura |
 
 ## Concepts
+
+### System One / Decisões Tipadas (2026-10-08)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/health-check]] | Sondagem `/health` que tira instância morta do rodízio do LB |
+| [[wiki/concepts/system-one-model]] | Modelo que decide em vez de escrever texto |
+| [[wiki/concepts/rlcd]] | Treino para decisão + confiança calibrada |
+| [[wiki/concepts/perguntas-tipadas-choice-score-noul]] | Primitivas choice/score/no |
+| [[wiki/concepts/jev-para-ramificar-llm-para-ler]] | Quando usar Jev vs LLM |
+| [[wiki/concepts/zero-erro-de-schema-nao-e-correcao-semantica]] | Schema válido ≠ decisão certa |
 
 ### System Design — Caso Notificação (2026-10-07)
 
 | Página | Hook |
 |---|---|
+| [[wiki/concepts/clareza-antes-do-prompt]] | IA só ajuda quem sabe o que quer |
+| [[wiki/concepts/zonas-de-desconhecimento]] | Falso positivo e não saber que está errado |
+| [[wiki/concepts/prompt-vago-vs-prompt-especifico-demais]] | Dois extremos do tamanho do prompt |
+| [[wiki/concepts/ia-perdida-e-confiante]] | IA se perde por dias sem saber; descartar contexto |
+| [[wiki/concepts/erro-na-velocidade-da-ia]] | IA acelera também o erro |
+| [[wiki/concepts/especialista-leva-vantagem-com-ia]] | A IA ampliou a distância |
+| [[wiki/concepts/fundamentos-e-teoria-na-era-da-ia]] | Fundamentos sobram ao dev |
+| [[wiki/concepts/software-como-construcao-civil]] | Analogia casa/alicerce/muro |
 | [[wiki/concepts/api-e-consequencia-nao-ponto-de-partida]] | Progresso falso: API é consequência; requisitos → entidades → alto nível → API |
 | [[wiki/concepts/entidades-de-primeira-classe-system-design]] | UserPreference e DeliveryAttempt viabilizam rate limit, fallback e rastreio |
 | [[wiki/concepts/filas-separadas-por-prioridade]] | Tópicos crítico/normal/baixo evitam marketing atrasar autenticação |
@@ -1809,6 +1834,11 @@ date_updated: 2026-10-07
 |---|---|
 | [[wiki/concepts/hd-disco-rigido]] | Disco magnético giratório — melhor custo/GB, mas partes mecânicas (5400/7200 RPM, 100–160 MB/s) o tornam lento e frágil a choque; camada *warm* |
 | [[wiki/concepts/ssd]] | Flash NAND sem partes móveis — rápido, durável, resistente; SATA (~600 MB/s) vs. NVMe (vários GB/s, cuidado com form factor); camada *hot* |
+| [[wiki/concepts/ssd-sata]] | SSD no barramento SATA, ~550 MB/s, AHCI |
+| [[wiki/concepts/ahci]] | Protocolo do SATA: 1 fila × 32 comandos, gargalo para flash |
+| [[wiki/concepts/m2-formato-fisico]] | M.2 é só formato; pode ser SATA ou NVMe |
+| [[wiki/concepts/pci-express]] | Barramento de pistas; 3.0/4.0/5.0 ≈ 3.5/7.5/14 GB/s em x4 |
+| [[wiki/concepts/nvme]] | Protocolo para flash: até 64k filas × 64k comandos |
 | [[wiki/concepts/memoria-flash]] | Substrato NAND comum a SSD, pen drive e cartão de memória — a velocidade final vem da interface (USB/SATA/NVMe), não só do chip |
 | [[wiki/concepts/fita-magnetica]] | LTO — acesso sequencial, barata, durável (30+ anos) e **offline**; usada por IBM/governos para arquivamento; equivalente físico do S3 Glacier (*cold*) |
 | [[wiki/concepts/armazenamento-optico]] | CD (700 MB) / DVD (4,7–8,5 GB) / Blu-ray (25–50 GB) — laser lê pits; em desuso por download e streaming, morre com um risco |
@@ -2925,13 +2955,32 @@ date_updated: 2026-10-07
 | [[wiki/concepts/harness-em-dominios-regulados-credito]] | Harness em crédito: teto, explicação auditável, conformidade |
 | [[wiki/concepts/harness-componentes-por-capacidade]] | De-para de Trivedy: comportamento desejado → componente de harness |
 | [[wiki/concepts/trava-deterministica-no-harness]] | Erro do agente vira trava no harness, não só ajuste de prompt (Hashimoto) |
+| [[wiki/concepts/contribuidor-de-alto-impacto]] | Quem gera o maior impacto (receita), não mais horas nem melhor código |
+| [[wiki/concepts/high-agency-founder-mode]] | Alta autonomia: agir proativamente para melhorar a empresa |
+| [[wiki/concepts/fim-do-comedor-de-ticket]] | Dev que só executa ticket está sendo substituído por quem entende o negócio |
+| [[wiki/concepts/taste-do-desenvolvedor]] | Feeling de implementar o que o cliente quer |
+| [[wiki/concepts/interdisciplinaridade-double-major]] | Dominar duas áreas para melhorar processos fora da própria |
+| [[wiki/concepts/empresas-grandes-em-modo-startup]] | IA leva grandes empresas ao modelo de times autônomos |
+| [[wiki/concepts/amazon-leadership-principles]] | Princípios da Amazon como evidência do perfil high agency |
+| [[wiki/concepts/evento-vs-comando]] | Evento diz o que aconteceu (produtor dono da informação); comando é acoplamento direto |
+| [[wiki/concepts/mensageria-vs-eda]] | Broker como mediador não é arquitetura orientada a eventos |
+| [[wiki/concepts/evento-enxuto-vs-evento-gordo]] | Só IDs vs. estado completo: acoplamento, LGPD, versionamento e EOL |
+| [[wiki/concepts/primeira-adocao-de-tecnologia-com-conforto]] | Primeira adoção em caso de baixo risco para ganhar confiança |
+| [[wiki/concepts/eda-de-fachada]] | Vocabulário de eventos com banco compartilhado e alto acoplamento |
 
 ## Entities
 
+- [[wiki/entities/jev]] — modelo System One da TypeSafe AI
+- [[wiki/entities/typesafe-ai]] — empresa criadora do Jev
+- [[wiki/entities/diogo-almeida]] — fundador, ex-OpenAI (RLHF)
+- [[wiki/entities/motherduck]] — caso de classificação via Jev
 ### Observabilidade — Ferramentas (2026-10-07)
 
 | Página | Hook |
 |---|---|
+| [[wiki/entities/nginx]] | Proxy reverso/LB mais popular |
+| [[wiki/entities/haproxy]] | LB dedicado, usado em empresas grandes |
+| [[wiki/entities/balta]] | Criador de conteúdo C#/.NET; fundamentos com IA |
 | [[wiki/entities/opentelemetry]] | Padrão aberto de instrumentação (traces, métricas, logs); primeira ferramenta no diagnóstico de gargalo |
 | [[wiki/entities/prometheus]] | Métricas de séries temporais (CPU, memória, disco, rede), par do Grafana |
 
@@ -3341,6 +3390,11 @@ date_updated: 2026-10-07
 | [[wiki/entities/vivek-trivedy]] | LangChain; de-para modelo→harness |
 | [[wiki/entities/birgitta-bockeler]] | Thoughtworks; guias (feed-forward) vs. sensores (feedback) |
 | [[wiki/entities/mitchell-hashimoto]] | Criador do Terraform; princípio da trava determinística no harness |
+| [[wiki/entities/paul-graham]] | Cofundador da YC; great hacker e founder mode |
+| [[wiki/entities/stripe]] | Pagamentos; missão, curiosidade e double major |
+| [[wiki/entities/greg-brockman]] | Cofundador da OpenAI; especialista que vira generalista |
+| [[wiki/entities/luiz-carlos-faria]] | Gago, arquiteto de soluções; convidado sobre EDA |
+| [[wiki/entities/eduardo-macris]] | Apresentador da série de arquitetura |
 
 ## Questions
 

@@ -4,7 +4,7 @@ title: "Jogar o Jogo da Carreira"
 aliases: ["jogar para ganhar", "jogo da carreira", "aprender a jogar o jogo"]
 date_created: 2026-09-30
 date_updated: 2026-10-07
-source_count: 2
+source_count: 3
 tags: [carreira, promocao, politica, expectativas]
 skill: tech-mentor-leadership
 status: draft
@@ -39,3 +39,5 @@ Evidência é anedótica (experiência do autor). "Jogar para ganhar" pode ser l
 ## Key sources (adição 2026-10-07)
 
 - [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — "entender o jogo que você joga": hierarquia e interesses; gestão quer resultado, tático/operacional cuida do como ([[wiki/concepts/foco-no-que-esta-ao-seu-alcance]])
+
+- [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] — demonstrar o impacto financeiro das melhorias como fonte de valor

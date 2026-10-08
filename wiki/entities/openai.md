@@ -3,8 +3,8 @@ type: entity
 title: "OpenAI"
 aliases: ["Open AI"]
 date_created: 2026-05-17
-date_updated: 2026-10-07
-source_count: 23
+date_updated: 2026-10-08
+source_count: 25
 tags: [openai, organização, llm, ia, cartao-corporativo, prompt-caching]
 skill: tech-mentor-ai
 status: stable
@@ -117,3 +117,7 @@ Segundo [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]], a OpenAI rela
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — vagas da OpenAI no Ashby como exemplo
+
+- [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] — [[wiki/entities/greg-brockman]] como exemplo de cofundador técnico que assume funções não técnicas
+
+- [[wiki/sources/jev-typesafe-ai-system-one-model-decisoes-tipadas-codigo-fonte-tv]] — [[wiki/entities/diogo-almeida]] (ex-OpenAI, RLHF) fundou a [[wiki/entities/typesafe-ai]]; modelo barato da OpenAI substituído no caso Vercel

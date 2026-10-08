@@ -3,8 +3,8 @@ type: concept
 title: "SSD (Solid State Drive)"
 aliases: ["SSD", "solid state drive", "NVMe", "SATA SSD", "disco de estado sólido"]
 date_created: 2026-08-13
-date_updated: 2026-08-13
-source_count: 1
+date_updated: 2026-10-08
+source_count: 2
 tags: [storage, hardware, ssd, nvme, sata, flash, cs-fundamentals]
 skill: tech-mentor-data
 status: stub
@@ -30,3 +30,4 @@ Mais rápido e resistente, mas custo/GB maior que HD. Capacidades típicas de 25
 ## Key Sources
 
 - [[wiki/sources/tipos-de-armazenamento-de-dados]] — SSD (SATA/NVMe), NAND e form factors
+- [[wiki/sources/tipos-de-ssd-sata-ahci-m2-pci-express-nvme-explicados]]: SSD SATA vs. NVMe em detalhe ([[wiki/concepts/ssd-sata]], [[wiki/concepts/ahci]], [[wiki/concepts/nvme]], [[wiki/concepts/pci-express]], [[wiki/concepts/m2-formato-fisico]]); M.2 é só formato

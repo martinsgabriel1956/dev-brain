@@ -3,8 +3,8 @@ type: concept
 title: "Escalabilidade Horizontal"
 aliases: ["horizontal scaling", "scale out", "escalar horizontalmente"]
 date_created: 2026-06-26
-date_updated: 2026-10-02
-source_count: 21
+date_updated: 2026-10-08
+source_count: 22
 tags: [escalabilidade, arquitetura, sistemas-distribuidos, nosql, redis, backend]
 skill: tech-mentor-backend
 status: stable
@@ -89,3 +89,4 @@ Escalar horizontalmente um serviço de conexões longas (WebSocket) tem uma rest
 - [[wiki/sources/como-projetar-sistemas-encurtador-de-urls-passo-a-passo]] — redundância de servidores (mínimo dois por microsserviço via EC2 + Elastic Load Balancer) como tática concreta para atender ao requisito não-funcional de resiliência a falhas, não só de volumetria
 - [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — versão de autoria explícita (Renato Augusto) do mesmo desenho SPOF-a-SPOF de [[wiki/sources/escalar-para-um-milhao-de-usuarios]]; reforça que servidores atrás do LB passam a usar IPs privados, inacessíveis diretamente da internet, como prática de segurança adicional à escala
 - [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — [[wiki/concepts/escalabilidade-independente]]: escalar só o serviço sobrecarregado (pagamentos na Black Friday, entrega de vídeo no lançamento)
+- [[wiki/sources/load-balancer-como-funciona-algoritmos-health-check-nginx-haproxy]] — vários servidores idênticos dividem a carga (500 req/s → 100 por servidor) e a falha de um não derruba o serviço; erro típico: escalar sem pensar em sessão local

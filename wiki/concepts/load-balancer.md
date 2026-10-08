@@ -3,8 +3,8 @@ type: concept
 title: "Load Balancer"
 aliases: ["lb", "load balancing", "l4", "l7", "round robin"]
 date_created: 2026-04-23
-date_updated: 2026-10-06
-source_count: 23
+date_updated: 2026-10-08
+source_count: 24
 tags: [load-balancer, l4, l7, round-robin, health-check, alta-disponibilidade, infra, nginx]
 skill: tech-mentor-infra
 status: stub
@@ -113,3 +113,4 @@ LB/proxy reverso aplica rate limit com regras mais genéricas que um API Gateway
 - [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — ao introduzir o LB, o DNS passa a apontar para o IP público do LB (não mais dos servidores), e os servidores de aplicação passam a usar IPs privados inacessíveis diretamente da internet — citado explicitamente como boa prática de segurança, não só de escala
 - [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — Instagram simplificado: LB (Nginx/AWS) como resposta a picos que derrubam o back end; sem discutir LB como ponto único de falha
 - [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — rate limit genérico em LB/proxy
+- [[wiki/sources/load-balancer-como-funciona-algoritmos-health-check-nginx-haproxy]] — versão curta e didática: motivação (pico viral → 503), algoritmos RR/Weighted RR/Least Connections/IP Hash, LB L7 como proxy reverso roteando `/api` vs `/images`, [[wiki/concepts/health-check|rota `/health`]], erros comuns (sem health check, sessão local, "LB não corrige código ruim")
