@@ -3,8 +3,8 @@ type: concept
 title: "Sharding"
 aliases: ["database sharding", "particionamento horizontal", "shard", "shard key"]
 date_created: 2026-06-26
-date_updated: 2026-09-30
-source_count: 8
+date_updated: 2026-10-08
+source_count: 9
 tags: [system-design, banco-de-dados, sharding, escalabilidade, distribuido]
 skill: tech-mentor-system-design
 status: stub
@@ -106,3 +106,5 @@ No fecho do caso Instagram simplificado, sharding por região aparece como últi
 
 - [[wiki/sources/cell-based-architecture]] — Cell-Based Architecture particiona o sistema em células funcionalmente completas e independentes — cada célula serve um subconjunto de usuários ou tenants. Falha em uma célula não afeta as demais...
 - [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — Instagram simplificado: sharding por região como passo após réplicas de leitura
+
+- [[wiki/sources/sharding-milhoes-de-escritas-partition-key-consistent-hashing-pedro-camaforte]] — receita de entrevista: [[wiki/concepts/partition-key]] → distribuição ([[wiki/concepts/hash-based-sharding]] + consistent hashing) → desafios ([[wiki/concepts/hot-shard]], [[wiki/concepts/cross-shard-query]], Saga); "faça conta" antes de shardear

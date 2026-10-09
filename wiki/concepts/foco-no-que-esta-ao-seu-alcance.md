@@ -3,8 +3,8 @@ type: concept
 title: "Foco no que Está ao seu Alcance"
 aliases: ["mantra 1", "círculo de influência do dev"]
 date_created: 2026-10-07
-date_updated: 2026-10-07
-source_count: 1
+date_updated: 2026-10-09
+source_count: 2
 tags: [carreira, autonomia, mentalidade, estresse]
 skill: tech-mentor-leadership
 status: draft
@@ -17,3 +17,5 @@ Mantra 1 de [[wiki/entities/andre-casciotti]]. Todo projeto tem atraso, gestão,
 ## Key Sources
 
 - [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — origem desta página
+
+- [[wiki/sources/como-acabar-com-inseguranca-ao-entregar-codigo-andre-casciotti]] — Aceitar o cenário sem abaixar a cabeça ([[wiki/concepts/escolhas-conscientes-sob-pressao]])

@@ -3,8 +3,8 @@ type: entity
 title: "IETF — Internet Engineering Task Force"
 aliases: ["Internet Engineering Task Force"]
 date_created: 2026-07-27
-date_updated: 2026-08-24
-source_count: 2
+date_updated: 2026-10-09
+source_count: 3
 tags: [ietf, padronizacao, rfc, autenticacao, oauth2]
 skill: tech-mentor-security
 status: stub
@@ -22,3 +22,6 @@ Publicou a **RFC 5849** (abril de 2010), especificando o [[wiki/concepts/oauth2|
 
 - [[wiki/sources/historia-autenticacao-senha-mfa-oauth-jwt]]
 - [[wiki/sources/historia-oauth2-antipadrao-senha-bernardo-lobato]] — publicação da RFC 5849 (OAuth 1.0) e RFC 6749 (OAuth 2.0)
+
+## Key sources (adição 2026-10-09)
+- [[wiki/sources/url-vs-uri-diferenca-urn-identificacao-localizacao]] — [external] RFC 3986 (sintaxe de URI) e RFC 8141 (URN) são do IETF; a fonte não as cita

@@ -3,12 +3,12 @@ type: source
 title: "Twelve-Factor App"
 aliases: ["twelve factor app", "12 factor", "12 factor app", "cloud native methodology", "heroku twelve factor"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
+date_updated: 2026-10-09
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/twelve-factor-app.md
 source_url: ""
 date_published: ""
 date_ingested: 2026-04-23
-source_count: 0
+source_count: 1
 tags: [twelve-factor, cloud-native, configuration, stateless, disposability, dev-prod-parity, backing-services, logs-as-streams]
 skill: tech-mentor-infra
 status: stable
@@ -45,3 +45,7 @@ Twelve-Factor App (Heroku, 2011): 12 práticas para aplicações SaaS portáveis
 
 - Beyond Twelve-Factor (Kevin Hoffman, 2016) — quais fatores adicionais são relevantes para microserviços modernos?
 - Twelve-Factor com secrets (não podem ser env vars plaintext) — como conciliar o Fator III com secrets managers?
+
+## Atualização 2026-10-09
+
+Fator III aplicado na prática: [[wiki/sources/dotenv-arquivo-env-boas-praticas-secret-manager]] ([[wiki/concepts/dotenv]], [[wiki/concepts/secret-manager]]) responde parcialmente à pergunta aberta sobre secrets: cofre injeta no ambiente.

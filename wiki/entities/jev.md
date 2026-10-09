@@ -3,8 +3,8 @@ type: entity
 title: "Jev"
 aliases: ["jeev", "jv"]
 date_created: 2026-10-08
-date_updated: 2026-10-08
-source_count: 1
+date_updated: 2026-10-09
+source_count: 2
 tags: [produto, ia, system-one-model]
 skill: tech-mentor-ai
 status: stub
@@ -16,3 +16,11 @@ Primeiro [[wiki/concepts/system-one-model]] da [[wiki/entities/typesafe-ai]]. Fo
 
 ## Key sources
 - [[wiki/sources/jev-typesafe-ai-system-one-model-decisoes-tipadas-codigo-fonte-tv]]
+
+## Menção
+
+[[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] cita o Jev como o assunto que dominou a conversa dos devs no dia do lançamento do [[wiki/entities/gemini-live]], ofuscando-o.
+
+## Key Sources
+
+- [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] — citado como assunto que ofuscou o lançamento do Gemini Live

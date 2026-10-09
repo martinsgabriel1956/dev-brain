@@ -3,8 +3,8 @@ type: concept
 title: "Lógica de Programação"
 aliases: ["programming logic", "raciocínio lógico em código"]
 date_created: 2026-05-13
-date_updated: 2026-06-09
-source_count: 3
+date_updated: 2026-10-09
+source_count: 4
 tags: [logica-de-programacao, fundamentos, cs-fundamentals, carreira, aprendizado]
 skill: cs-fundamentals
 status: stable
@@ -70,3 +70,4 @@ Quanto mais próxima da máquina, maior a especificidade exigida. Python não ex
 - [[wiki/sources/logica-de-programacao-quatro-passos]] — framework de 4 passos: entender, decompor, criar fluxo, traduzir
 - [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — os 5 pilares; programação = descrição inambígua; DSA como parte pequena do todo
 - [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]] — estágio 1 da progressão incremental; fundamento inegociável antes de OOP e design patterns
+- [[wiki/sources/o-que-e-um-algoritmo-propriedades-pseudocodigo-sistemas-de-recomendacao]] — algoritmo como 'lógica pura' e a linguagem como mera ferramenta de tradução; ver [[wiki/concepts/algoritmo]]

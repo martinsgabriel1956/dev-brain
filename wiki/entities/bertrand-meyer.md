@@ -3,8 +3,8 @@ type: entity
 title: "Bertrand Meyer"
 aliases: ["meyer"]
 date_created: 2026-09-23
-date_updated: 2026-09-23
-source_count: 1
+date_updated: 2026-10-09
+source_count: 2
 tags: [pessoa, oop, eiffel, design-by-contract, solid]
 skill: tech-mentor-backend
 status: stub
@@ -17,3 +17,7 @@ Cientista da computação francês. Criador da linguagem [[wiki/entities/eiffel]
 ## Key Sources
 
 - [[wiki/sources/design-by-contract-video]]
+
+## Key Sources (adição 2026-10-09)
+
+- [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — autor do princípio [[wiki/concepts/cqs]] (*Object-Oriented Software Construction*, 1988; livro gratuito segundo o vídeo)

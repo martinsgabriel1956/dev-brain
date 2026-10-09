@@ -3,8 +3,8 @@ type: entity
 title: "Attention Is All You Need (paper)"
 aliases: ["attention is all you need", "paper transformers 2017", "vaswani et al 2017"]
 date_created: 2026-09-18
-date_updated: 2026-09-18
-source_count: 1
+date_updated: 2026-10-09
+source_count: 2
 tags: [paper, transformers, self-attention, attention-is-all-you-need, llm-fundamentals]
 skill: tech-mentor-ai
 status: stub
@@ -24,6 +24,11 @@ Paper publicado em 2017 (equipe do Google, [external] Vaswani et al., NeurIPS 20
 - [[wiki/concepts/self-attention]] — mecanismo central descrito pelo paper
 - [[wiki/entities/google]] — origem institucional dos autores
 
+## Legado
+
+[[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] lembra que o paper saiu do Google e que o mesmo Google segue pesquisando eficiência ([[wiki/entities/google-research]], [[wiki/concepts/memory-caching-rnn]]).
+
 ## Key Sources
 
 - [[wiki/sources/self-attention-mecanismo-transformers]] — cita o paper como marco histórico (nome + ano), sem leitura direta do texto original
+- [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] — origem Google; pesquisa de eficiência posterior

@@ -3,8 +3,8 @@ type: concept
 title: "Over-Engineering"
 aliases: ["overengineering", "verde neném", "engenharia excessiva", "gold plating"]
 date_created: 2026-06-09
-date_updated: 2026-10-08
-source_count: 19
+date_updated: 2026-10-09
+source_count: 20
 tags: [design, qualidade, anti-pattern, aprendizado, design-patterns, dora, under-engineering]
 skill: tech-mentor-leadership
 status: stable
@@ -145,3 +145,7 @@ Caso de dados: colocar cinco tecnologias de armazenamento numa loja pequena; ver
 
 - [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — migrar para microsserviços sem diagnosticar o gargalo adiciona complexidade sem ganho ("de brinde"); decisão válida só após entender o problema ([[wiki/concepts/diagnostico-antes-de-reestruturar]]).
 - [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] — EDA, DDD e microsserviços 'de fachada' como over-engineering sem benefício ([[wiki/concepts/eda-de-fachada]]); startup parada 3 meses
+
+## Key sources (adição 2026-10-09)
+
+- [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — CQRS em CRUD simples/baixo volume é complexidade sem benefício: "complexidade do sistema por si só não justifica"; critério: o problema concreto compensa o custo? Ver [[wiki/concepts/assimetria-leitura-escrita]]

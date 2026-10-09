@@ -3,8 +3,8 @@ type: concept
 title: "Tech Debt"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-10-06
-source_count: 3
+date_updated: 2026-10-09
+source_count: 4
 tags: [tech-debt]
 skill: tech-mentor-leadership
 status: stub
@@ -34,3 +34,5 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 - [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] — entregar com dívida é aceitável se for decisão consciente e alinhada com o time; correr por medo do prazo acumula dívida e bugs
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — expor dívida ao chefe com impacto concreto (1h vira 5h) e sinalizar ao time o que ficou faltando ao entregar
 - [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] — Caso: ACL que sobrevive à migração
+
+- [[wiki/sources/como-acabar-com-inseguranca-ao-entregar-codigo-andre-casciotti]] — Gambiarra por pressa só é aceitável se consciente e reportada ([[wiki/concepts/escolhas-conscientes-sob-pressao]])

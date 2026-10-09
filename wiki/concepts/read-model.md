@@ -3,8 +3,8 @@ type: concept
 title: "Read Model (Banco de Leitura Desnormalizado)"
 aliases: ["modelo de leitura", "banco de leitura", "query side", "projeção de leitura"]
 date_created: 2026-09-30
-date_updated: 2026-09-30
-source_count: 1
+date_updated: 2026-10-09
+source_count: 2
 tags: [cqrs, read-model, desnormalizacao, nosql, projecao]
 skill: tech-mentor-backend
 status: draft
@@ -32,3 +32,7 @@ NoSQL não é obrigatório. Um read model pode ser [[wiki/concepts/read-replicas
 
 - [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — banco de leitura desnormalizado (JSON/NoSQL), alimentado por eventos via fila
 - [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]] — alternativas de read model (replicas, views, Elasticsearch)
+
+## Key sources (adição 2026-10-09)
+
+- [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — read model como modelo feito para a tela (extrato, pedido consolidado), mais simples e desnormalizado; várias projeções do mesmo dado (usuário, dashboard, relatório, integração)

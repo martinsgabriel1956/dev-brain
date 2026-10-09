@@ -3,8 +3,8 @@ type: concept
 title: "Contenção de Lock entre Leitura e Escrita"
 aliases: ["lock contention", "consultas presas por transação aberta", "desbalanço leitura/escrita"]
 date_created: 2026-09-30
-date_updated: 2026-09-30
-source_count: 1
+date_updated: 2026-10-09
+source_count: 2
 tags: [banco-de-dados, lock, concorrencia, cqrs, escalabilidade]
 skill: tech-mentor-backend
 status: stub
@@ -32,3 +32,7 @@ Separar o modelo de escrita (banco relacional, regras de domínio) do de leitura
 ## Key sources
 
 - [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — enuncia o problema (consultas presas por transação aberta) e a saída via CQRS com banco de leitura separado
+
+## Key sources (adição 2026-10-09)
+
+- [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — exemplo do contador de views: tabela travada por escrita impedindo o acesso de quem quer ver o vídeo; modelo de escrita para alta frequência + modelo de leitura simples

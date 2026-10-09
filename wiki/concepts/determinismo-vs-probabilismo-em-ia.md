@@ -3,8 +3,8 @@ type: concept
 title: "Determinismo vs. Probabilismo em IA"
 aliases: ["ferramenta certa para a tarefa ia", "analise semantica vs analise deterministica", "llm como juiz determinístico"]
 date_created: 2026-07-27
-date_updated: 2026-10-06
-source_count: 4
+date_updated: 2026-10-09
+source_count: 5
 tags: [determinismo, robustez-de-sistemas, tokenizacao, era-agentica, harness-de-qualidade]
 skill: tech-mentor-ai
 status: draft
@@ -48,3 +48,4 @@ Prompt é probabilístico; trava no harness é determinística — [[wiki/concep
 - [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — determinismo aplicado à execução da esteira
 - [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — reprodutibilidade de prompt e seus limites
 - [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — trava determinística vs prompt
+- [[wiki/sources/o-que-e-um-algoritmo-propriedades-pseudocodigo-sistemas-de-recomendacao]] — 'algoritmo' de redes sociais = [[wiki/concepts/sistema-de-recomendacao]], 'sem mágica' mas com modelos estatísticos

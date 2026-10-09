@@ -13023,3 +13023,101 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (11):** load-balancer, sticky-session, reverse-proxy, escalabilidade-horizontal, alta-disponibilidade, stateless, single-point-of-failure, observabilidade, session-management, microsservicos (concepts); amazon-web-services (entity).
 
 **Notas:** (1) Sem contradição. (2) Canal/autor não identificado. (3) "LB nunca satura" é alegação sem números. (4) Novos itens `stub`.
+
+---
+
+## [2026-10-08] ingest | Sharding: milhões de escritas, partition key e consistent hashing (Pedro Camaforte)
+
+**Fonte:** transcrição colada pelo usuário, limpa em `raw/sharding-milhoes-de-escritas-partition-key-consistent-hashing-pedro-camaforte.md` (já em PT-BR; sem tradução; ASR corrigido: charging/chard→sharding/shard, inscritas→escritas, to PC→2PC, Cila DB→ScyllaDB).
+
+**Skill:** tech-mentor-system-design (SKILL.md; `references/db-sharding.md`).
+
+**Criado:** [[wiki/sources/sharding-milhoes-de-escritas-partition-key-consistent-hashing-pedro-camaforte]]; conceitos partition-key, range-based-sharding, directory-based-sharding, hash-based-sharding, virtual-node, hot-shard, cross-shard-query, desnormalizacao; entidades cassandra, scylladb.
+
+**Tocadas (13):** sharding, db-sharding, consistent-hashing, saga-pattern, two-phase-commit, hotspot-analysis, cache-layer, back-of-envelope, entrevista-system-design, escalabilidade-vertical, escalabilidade-horizontal, postgresql (concepts); pedro-camaforte (entity).
+
+**Notas:** (1) Sem contradição com [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]]; enquadramento levemente diferente de range-based. (2) Título cita Instagram/Discord/Notion sem evidência no conteúdo. (3) Números de Postgres (10k/50k escritas/s) sem benchmark. (4) Migração online ao adicionar shard não coberta. (5) Novos itens `draft`/`stub`.
+
+---
+
+## [2026-10-09] ingest | O arquivo .env: o que é, para que serve e boas práticas
+
+**Fonte:** transcrição colada pelo usuário, limpa em `raw/dotenv-arquivo-env-boas-praticas-secret-manager.md` (já em PT-BR; sem tradução; ASR corrigido: ponenv→.env, Volt→Vault, Heroco→Heroku, Hosinger→Hostinger, Google Secrets→Secret Manager).
+
+**Skill:** tech-mentor-security (SKILL.md; `references/secrets-management.md`).
+
+**Criado:** [[wiki/sources/dotenv-arquivo-env-boas-praticas-secret-manager]]; conceitos dotenv, variavel-de-ambiente, ambiente-de-execucao, configuracao-vs-regra-de-negocio, secret-manager; entidade heroku.
+
+**Tocadas (11):** secrets-management, secret-scanning, defense-in-depth, least-privilege, logs-em-producao, paridade-local-producao, compliance (concepts); twelve-factor-app (source); hostinger, google, amazon-web-services (entities).
+
+**Notas:** (1) Sem contradição. (2) "Heroku pai da AWS" é impreciso. (3) Claim de latência 10–20 ms sem medição. (4) Autor não identificado. (5) Novos itens `draft`/`stub`.
+
+---
+
+## [2026-10-09] ingest | CQRS: o que é, de onde veio (CQS) e quando faz sentido (Bernardo Lobato)
+
+**Fonte:** transcrição colada pelo usuário, limpa em `raw/cqrs-quando-faz-sentido-cqs-bernardo-lobato.md` (já em PT-BR; sem tradução; ASR corrigido: Cqs/RS→CQRS, Cafca→Kafka, eventour→event sourcing, Mayer→Meyer, queres→queries, consistência virtual→eventual).
+
+**Skill:** tech-mentor-system-design (SKILL.md; `references/messaging-patterns.md` — seção CQRS — consultada).
+
+**Criado:** [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]]; conceitos cqs, assimetria-leitura-escrita.
+
+**Tocadas (17):** cqrs, read-model, projecao, efeito-colateral, command-bus, over-engineering, eventual-consistency, materialized-view, desnormalizacao, ddd, precondicao-poscondicao-invariante, event-driven-architecture, event-sourcing, contencao-de-lock-leitura-escrita, tradeoff-arquitetural (concepts); bernardo-lobato, bertrand-meyer, greg-young (entities).
+
+**Notas:** (1) Sem contradição com as 14 fontes de CQRS existentes; reforça Fowler (cautela) e a tese "dois motivadores" de [[wiki/sources/cqrs-volume-modelo-consistencia-forte-eventual]]. (2) Sem estratégias de sincronização (autor promete parte 2). (3) Contador do YouTube é hipotético. (4) Novos itens `draft`.
+
+---
+
+## [2026-10-09] ingest | O Google está perdendo a corrida da IA? Memory Caching, Gemini 3.8 Live e o negócio por trás
+
+**Fonte:** transcrição colada pelo usuário, limpa em `raw/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live.md` (já em PT-BR; sem tradução; ASR corrigido: gemnight→Gemini, rns→RNNs, speeit to speit→speech-to-speech, alfa alphabet→Alphabet; segmento patrocinado Higlobe marcado e ignorado).
+
+**Skill:** tech-mentor-ai (SKILL.md; `llm-architectures-2026`, `llm-providers-2026`, `multimodal-audio` consultadas). Paper verificado [external]: https://arxiv.org/abs/2602.24281.
+
+**Criado:** [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]]; conceitos recurrent-neural-network, memory-caching-rnn, speech-to-speech, needle-in-a-haystack, tensor-processing-unit; entidades google-cloud-platform, google-research, gemini-live.
+
+**Tocadas (10):** transformer-architecture, self-attention, time-to-first-token, context-window, modelo-por-leverage-tarefa (concepts); google, openai, xai, nvidia, attention-is-all-you-need-paper, jev (entities).
+
+**Notas:** (1) Sem contradição direta. (2) Números de Cloud/benchmark/preço vêm de telas do vídeo, não verificados; unidade do "0,75 por milhão" ambígua. (3) Nomes de ASR incertos (GRM, DLA, GPT Live 1 Astra). (4) Autor não identificado. (5) Novos itens `draft`/`stub`.
+
+---
+
+## [2026-10-09] ingest | O que é um algoritmo: propriedades, pseudocódigo e o "algoritmo" das redes sociais
+
+**Fonte:** transcrição colada pelo usuário, limpa em `raw/o-que-e-um-algoritmo-propriedades-pseudocodigo-sistemas-de-recomendacao.md` (já em PT-BR; sem tradução; ASR corrigido: afinitude→finitude, células→cédulas, ácido→açúcar).
+
+**Skill:** cs-fundamentals (SKILL.md; `references/algorithms-complexity.md` mapeado). Carregada de `/home/gabriel-martins/Documentos/skills/` (o caminho do CLAUDE.md não existe nesta máquina).
+
+**Criado:** [[wiki/sources/o-que-e-um-algoritmo-propriedades-pseudocodigo-sistemas-de-recomendacao]]; conceitos algoritmo, pseudocodigo, sistema-de-recomendacao.
+
+**Tocadas (9):** algoritmos-e-estruturas-de-dados, fluxo-logico, fluxo-de-controle, logica-de-programacao, traducao-logica-para-codigo, decomposicao-de-problemas, edge-case, big-o, determinismo-vs-probabilismo-em-ia (concepts).
+
+**Notas:** (1) Sem contradição. (2) Fonte lista 4 propriedades; Knuth [external] lista 5 (efetividade). (3) Finitude vs. serviços de longa duração não tratada. (4) Autor não identificado. (5) Novos itens `draft`/`stub`; nenhuma entidade criada.
+
+---
+
+## [2026-10-09] ingest | Como acabar com a insegurança ao entregar código (André Casciotti)
+
+**Fonte:** transcrição colada pelo usuário, limpa em `raw/como-acabar-com-inseguranca-ao-entregar-codigo-andre-casciotti.md` (já em PT-BR; sem tradução; ASR corrigido: André Casac→Casciotti, sior/senner→sênior, Selenum/Cypers/Playwght→Selenium/Cypress/Playwright).
+
+**Skill:** tech-mentor-leadership (SKILL.md; `software-craftsmanship` consultada; testing como domínio secundário em `tags`). Carregada de `/home/gabriel-martins/Documentos/skills/` (caminho do CLAUDE.md não existe nesta máquina).
+
+**Criado:** [[wiki/sources/como-acabar-com-inseguranca-ao-entregar-codigo-andre-casciotti]]; conceitos inseguranca-na-entrega, o-certo-e-um-combinado, plano-de-testes-escrito, escolhas-conscientes-sob-pressao, funcionar-e-resolver-problema.
+
+**Tocadas (12):** testar-proprio-codigo, developers-not-writing-tests, entender-contexto-da-demanda, melhor-possivel-com-o-tempo-disponivel, medo-do-prazo-vs-medo-do-bug, confianca-profissional-dev, sindrome-do-impostor, tech-debt, definicao-de-pronto, comunicacao-tecnica, requisitos-funcionais-e-nao-funcionais, foco-no-que-esta-ao-seu-alcance (concepts); andre-casciotti (entity, fonte nº 10).
+
+**Notas:** (1) Sem contradição; reforça fontes anteriores do mesmo autor. (2) Tensão aberta: "aceitar e entregar" vs. "melhorar na próxima" sem critério de limite. (3) "Formalizar" sem artefato concreto. (4) Evidência anedótica; vídeo promove curso. (5) Novos itens `draft`.
+
+---
+
+## [2026-10-09] ingest | URL vs URI: qual é a diferença (e onde entra a URN)
+
+**Fonte:** transcrição colada pelo usuário em inglês, **traduzida para PT-BR** e limpa em `raw/url-vs-uri-diferenca-urn-identificacao-localizacao.md` (exemplos de endereço eram só falados; nada inventado).
+
+**Skill:** tech-mentor-networking (SKILL.md; sem referência específica sobre URI — `protocols-application.md` não cobre; RFCs marcados `[external]`). Carregada de `/home/gabriel-martins/Documentos/skills/` (caminho do CLAUDE.md não existe nesta máquina).
+
+**Criado:** [[wiki/sources/url-vs-uri-diferenca-urn-identificacao-localizacao]]; conceitos uri, url, urn, referencia-relativa-de-uri.
+
+**Tocadas (8):** fragment-identifier-url, recurso-rest, protocolo-de-rede, requisicao-http, dns, http-vs-https, debug-de-requisicao-http (concepts); ietf (entity).
+
+**Notas:** (1) Sem contradição. (2) Taxonomia URL/URN é a didática clássica; [external] RFC 3986 a trata como informal e o WHATWG URL Standard só usa "URL". (3) Fonte não cobre sintaxe nem data URIs. (4) Autor não identificado. (5) Novos itens `draft`/`stub`; nenhuma entidade criada.

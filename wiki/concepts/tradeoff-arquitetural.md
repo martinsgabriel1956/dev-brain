@@ -3,8 +3,8 @@ type: concept
 title: "Trade-off Arquitetural"
 aliases: ["trade-off", "tradeoff de arquitetura", "troca arquitetural"]
 date_created: 2026-10-07
-date_updated: 2026-10-07
-source_count: 1
+date_updated: 2026-10-09
+source_count: 2
 tags: [arquitetura, decisao-arquitetural, trade-off]
 skill: tech-mentor-system-design
 status: draft
@@ -27,3 +27,7 @@ Pergunta de trabalho: *qual característica quero melhorar e quais consequência
 ## Key sources
 
 - [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]]
+
+## Key sources (adição 2026-10-09)
+
+- [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — "o benefício precisa justificar a complexidade": CQRS como trade-off modelado, não padrão por default

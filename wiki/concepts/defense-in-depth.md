@@ -3,8 +3,8 @@ type: concept
 title: "Defense in Depth"
 aliases: ["defense in depth", "defesa em profundidade", "camadas de segurança", "layered security"]
 date_created: 2026-06-05
-date_updated: 2026-10-02
-source_count: 6
+date_updated: 2026-10-09
+source_count: 7
 tags: [defense-in-depth, security, arquitetura-seguranca, least-privilege, gatekeeper, waf]
 skill: tech-mentor-security
 status: stable
@@ -59,3 +59,4 @@ Cada camada assume que a anterior pode falhar: mesmo que o agente escape da cela
 - [[wiki/sources/ssh-chaves-como-funcionam]] — hardening de SSH como exemplo de camada de infraestrutura
 - [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — modelo de três camadas (sessão/AI Jail, código/Git, SO imutável) contra agentes de IA comprometidos
 - [[wiki/sources/seguranca-rede-wifi-pequeno-comercio-mikrotik-isolamento-clientes]] — Em pequeno comércio, as camadas são: Wi-Fi da operadora off → AP separado por finalidade → firewall `drop` entre faixas → IP fixo → [[wiki/concepts/client-isolation]]; ver [[wiki/concepts/segmentacao-de-rede-por-faixa-de-ip-e-firewall]].
+- [[wiki/sources/dotenv-arquivo-env-boas-praticas-secret-manager]] — analogia das casas (câmera, cerca, cachorro): camadas de acesso SSH/credenciais/cofre

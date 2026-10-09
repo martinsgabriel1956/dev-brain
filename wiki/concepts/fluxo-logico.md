@@ -3,8 +3,8 @@ type: concept
 title: "Fluxo Lógico"
 aliases: ["logical flow", "fluxo de decisão", "mapa de decisões"]
 date_created: 2026-05-13
-date_updated: 2026-05-13
-source_count: 1
+date_updated: 2026-10-09
+source_count: 2
 tags: [fluxo-logico, decisao, fundamentos, cs-fundamentals]
 skill: cs-fundamentals
 status: draft
@@ -48,3 +48,4 @@ Cada `→` é uma ramificação. Cada ramificação vira um `if` ou `while` no [
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-quatro-passos]]
+- [[wiki/sources/o-que-e-um-algoritmo-propriedades-pseudocodigo-sistemas-de-recomendacao]] — fluxograma/pseudocódigo como etapa anterior à linguagem; ver [[wiki/concepts/pseudocodigo]]

@@ -3,8 +3,8 @@ type: concept
 title: "Fluxo de Controle"
 aliases: ["control flow", "estruturas de controle", "if while for"]
 date_created: 2026-05-13
-date_updated: 2026-05-13
-source_count: 1
+date_updated: 2026-10-09
+source_count: 2
 tags: [fluxo-de-controle, control-flow, fundamentos, cs-fundamentals]
 skill: cs-fundamentals
 status: draft
@@ -46,3 +46,4 @@ O `while` captura "repita até chegar no limite". O `if` captura "senha correta?
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-quatro-passos]]
+- [[wiki/sources/o-que-e-um-algoritmo-propriedades-pseudocodigo-sistemas-de-recomendacao]] — decisões condicionais e repetições como partes essenciais de algoritmos complexos

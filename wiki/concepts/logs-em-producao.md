@@ -3,8 +3,8 @@ type: concept
 title: "Logs em Produção"
 aliases: ["logging estruturado", "logs com contexto", "logs > código"]
 date_created: 2026-04-29
-date_updated: 2026-04-29
-source_count: 1
+date_updated: 2026-10-09
+source_count: 2
 tags: [logging, observabilidade, producao, debugging, craftsmanship]
 skill: tech-mentor-leadership
 status: stub
@@ -38,3 +38,4 @@ logger.error("Falha ao processar pagamento", extra={
 ## Key Sources
 
 - [[wiki/sources/5-principios-programador]]
+- [[wiki/sources/dotenv-arquivo-env-boas-praticas-secret-manager]] — nível de log é variável por ambiente (`.env`): muito em dev, pouco em produção (log excessivo deixa lento)

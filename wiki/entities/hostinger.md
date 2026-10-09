@@ -3,8 +3,8 @@ type: entity
 title: "Hostinger"
 aliases: ["Hostinger VPS"]
 date_created: 2026-07-21
-date_updated: 2026-10-08
-source_count: 11
+date_updated: 2026-10-09
+source_count: 12
 tags: [tech-mentor-infra, vps, hosting, patrocinio, coolify]
 skill: tech-mentor-ai
 status: stub
@@ -53,3 +53,4 @@ Patrocínio do vídeo: VPS (custo previsível, qualquer tecnologia) com Dokploy 
 - [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — Horizons (MVP com IA), serviço de GPU em lista de espera, Hermes Agent, Dokploy
 
 - [[wiki/sources/jev-typesafe-ai-system-one-model-decisoes-tipadas-codigo-fonte-tv]] — patrocínio: VPS + Dokploy (GitHub → Docker), cupom do canal
+- [[wiki/sources/dotenv-arquivo-env-boas-praticas-secret-manager]] — exemplo de hospedagem cujo painel permite configurar variáveis de ambiente sem entrar no servidor

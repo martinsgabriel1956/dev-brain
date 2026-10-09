@@ -3,8 +3,8 @@ type: concept
 title: "PostgreSQL"
 aliases: ["postgres", "pg"]
 date_created: 2026-04-22
-date_updated: 2026-10-06
-source_count: 18
+date_updated: 2026-10-08
+source_count: 19
 tags: [banco-de-dados, postgresql, relacional, jsonb, vetorial]
 skill: tech-mentor-system-design
 status: stable
@@ -114,3 +114,5 @@ Citado na família relacional (com MySQL, MariaDB, SQLite, SQL Server, Oracle) c
 - [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — exemplo de banco relacional do lado de escrita em CQRS; MVCC atenua a contenção leitura/escrita descrita na fonte
 - [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — [[wiki/entities/pgvector]] no [[wiki/entities/neon-database]] como [[wiki/concepts/vector-store]] de um RAG em Spring AI (tabela `vector_store`: id, content, metadata, embedding)
 - [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — Postgres como banco do demo de migrations com [[wiki/entities/flyway]] (`BIGSERIAL`, `VARCHAR`, `ALTER TABLE ADD COLUMN`)
+
+- [[wiki/sources/sharding-milhoes-de-escritas-partition-key-consistent-hashing-pedro-camaforte]] — ~10k escritas/s configurado, ~50k na maior instância; sharding não é nativo (exige extensões), ao contrário de Cassandra/ScyllaDB

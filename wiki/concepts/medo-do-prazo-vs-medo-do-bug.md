@@ -3,8 +3,8 @@ type: concept
 title: "Medo do Prazo vs. Medo do Bug"
 aliases: ["subir assim mesmo", "correr para entregar", "loop prazo-bug"]
 date_created: 2026-09-23
-date_updated: 2026-10-07
-source_count: 3
+date_updated: 2026-10-09
+source_count: 4
 tags: [qualidade, carreira, entrega, testes, divida-tecnica, dev-junior]
 skill: tech-mentor-leadership
 status: draft
@@ -40,3 +40,5 @@ Correr para mostrar serviço → bug em produção → reclamação → tentar m
 ## Key sources (adição 2026-10-07)
 
 - [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — não entregar custa o emprego agora; entregar imperfeito é risco futuro e talvez menor ([[wiki/concepts/melhor-possivel-com-o-tempo-disponivel]])
+
+- [[wiki/sources/como-acabar-com-inseguranca-ao-entregar-codigo-andre-casciotti]] — Pressa→gambiarra→insegurança ([[wiki/concepts/escolhas-conscientes-sob-pressao]])

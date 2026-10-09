@@ -3,8 +3,8 @@ type: concept
 title: "Efeito Colateral"
 aliases: ["side effect", "efeitos colaterais", "funções puras"]
 date_created: 2026-04-25
-date_updated: 2026-10-06
-source_count: 2
+date_updated: 2026-10-09
+source_count: 3
 tags: [efeito-colateral, software-design, clean-code, funcional]
 skill: tech-mentor-backend
 status: stub
@@ -52,3 +52,7 @@ Sistemas úteis precisam de efeitos (persistir dados, enviar notificações, faz
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — `enableBlackFriday` só muta um `discount` global e não retorna nada: a ordem das chamadas altera o resultado. Ver [[wiki/concepts/dependencia-externa-oculta]].
+
+## Key sources (adição 2026-10-09)
+
+- [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — [[wiki/concepts/cqs]]: query não pode ter efeito colateral observável; exemplo `visualizarNotificacoes` que também marca como lida, separado em `obterNaoLidas` + `marcarComoLidas`

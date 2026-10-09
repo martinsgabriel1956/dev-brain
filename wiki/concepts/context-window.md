@@ -3,8 +3,8 @@ type: concept
 title: "Context Window"
 aliases: ["janela de contexto", "context length", "token limit"]
 date_created: 2026-05-17
-date_updated: 2026-08-27
-source_count: 4
+date_updated: 2026-10-09
+source_count: 5
 tags: [llm, context-window, tokens, prompt-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -63,3 +63,11 @@ Isso é uma das causas do fenômeno [[token-anxiety]]: a consciência de que o c
 - [[wiki/sources/microsoft-prompt-engineering-guide]]
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — sessão longa via troca de modelo/conta com contexto compartilhado, em vez de compactação
+
+## Memória crescente em RNNs
+
+[[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]]: [[wiki/concepts/memory-caching-rnn]] e [[wiki/concepts/needle-in-a-haystack]] como eixo de comparação RNN × Transformer em contexto longo.
+
+## Key Sources
+
+- [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] — RNN com Memory Caching e agulha no palheiro

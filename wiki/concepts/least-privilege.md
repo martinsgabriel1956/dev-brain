@@ -3,8 +3,8 @@ type: concept
 title: "Least Privilege"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-10-02
-source_count: 4
+date_updated: 2026-10-09
+source_count: 5
 tags: [least-privilege]
 skill: tech-mentor-security
 status: stub
@@ -30,3 +30,4 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 - [[wiki/sources/identity-iam-avancado]]
 - [[wiki/sources/secure-design-patterns]]
 - [[wiki/sources/seguranca-rede-wifi-pequeno-comercio-mikrotik-isolamento-clientes]] — Aplicado à rede local: cliente só alcança a internet, funcionário só o necessário, nada alcança a rede da empresa ([[wiki/concepts/protecao-unidirecional-vs-bidirecional]]).
+- [[wiki/sources/dotenv-arquivo-env-boas-praticas-secret-manager]] — quanto menos gente com acesso ao `.env` de produção, melhor

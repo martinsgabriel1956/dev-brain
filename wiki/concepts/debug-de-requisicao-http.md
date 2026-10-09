@@ -3,8 +3,8 @@ type: concept
 title: "Debug de Requisição HTTP"
 aliases: ["debugar api", "devtools network", "debug http"]
 date_created: 2026-09-30
-date_updated: 2026-09-30
-source_count: 1
+date_updated: 2026-10-09
+source_count: 2
 tags: [debugging, http, devtools, api]
 skill: tech-mentor-networking
 status: stub
@@ -26,3 +26,6 @@ Ver método geral em [[wiki/concepts/debugging]] e [[wiki/concepts/requisicao-ht
 
 ## Key sources
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — exemplos 401 e CORS
+
+## Key sources (adição 2026-10-09)
+- [[wiki/sources/url-vs-uri-diferenca-urn-identificacao-localizacao]] — vocabulário: o que o DevTools chama de URL é URI + localização

@@ -3,8 +3,8 @@ type: concept
 title: "Command Bus"
 aliases: ["barramento de comando"]
 date_created: 2026-08-17
-date_updated: 2026-09-30
-source_count: 4
+date_updated: 2026-10-09
+source_count: 5
 tags: [cqrs, arquitetura, ddd]
 skill: tech-mentor-system-design
 status: stub
@@ -26,3 +26,7 @@ Um Command processado pelo command bus deveria retornar **void** — no máximo 
 - [[wiki/sources/cqrs-e-event-sourcing-explicado-na-pratica]] — descreve o mecanismo (ex.: Kafka) que consome eventos do write model e os transforma em projeções de leitura, equivalente ao papel do command bus no lado de escrita
 - [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]] — reforça a regra "Commands retornam void" como sinal de maturidade no design de sistemas orientados a comando
 - [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — comandos construídos e roteados por um bus até o command handler, que usa repositório/domínio e persiste no banco relacional
+
+## Key sources (adição 2026-10-09)
+
+- [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — enquadra commands como operações que mudam estado (origem em [[wiki/concepts/cqs]]); command bus e infraestrutura não são requisito do CQRS

@@ -3,8 +3,8 @@ type: entity
 title: "André Casciotti"
 aliases: ["Próximo Nível (canal)"]
 date_created: 2026-07-03
-date_updated: 2026-10-07
-source_count: 9
+date_updated: 2026-10-09
+source_count: 10
 tags: [carreira, mentoria, youtube, criador-de-conteudo]
 skill: tech-mentor-leadership
 status: stub
@@ -65,3 +65,7 @@ Criador de conteúdo técnico, apresentador do quadro "Próximo Nível" (canal n
 ## Key sources (adição 2026-10-07)
 
 - [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — nona fonte: estresse como [[wiki/concepts/risco-ocupacional-do-dev]] e três mantras ([[wiki/concepts/foco-no-que-esta-ao-seu-alcance]], [[wiki/concepts/melhor-possivel-com-o-tempo-disponivel]], [[wiki/concepts/complexidade-e-organizacao]])
+
+## Key sources (adição 2026-10-09)
+
+- [[wiki/sources/como-acabar-com-inseguranca-ao-entregar-codigo-andre-casciotti]] — décima fonte: insegurança na entrega vem de falta de clareza; 3 dicas: [[wiki/concepts/o-certo-e-um-combinado]], [[wiki/concepts/plano-de-testes-escrito]], [[wiki/concepts/escolhas-conscientes-sob-pressao]] (+ [[wiki/concepts/inseguranca-na-entrega]], [[wiki/concepts/funcionar-e-resolver-problema]])

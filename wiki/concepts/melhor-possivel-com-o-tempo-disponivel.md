@@ -3,8 +3,8 @@ type: concept
 title: "Melhor Possível com o Tempo Disponível"
 aliases: ["mantra 2", "feliz nunca satisfeito", "código perfeito não existe"]
 date_created: 2026-10-07
-date_updated: 2026-10-07
-source_count: 1
+date_updated: 2026-10-09
+source_count: 2
 tags: [carreira, prazo, perfeccionismo, produtividade]
 skill: tech-mentor-leadership
 status: draft
@@ -17,3 +17,5 @@ Mantra 2 de [[wiki/entities/andre-casciotti]]. Devs começam projetos tentando "
 ## Key Sources
 
 - [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — origem desta página
+
+- [[wiki/sources/como-acabar-com-inseguranca-ao-entregar-codigo-andre-casciotti]] — Complemento: decidir com consciência, reportar risco, melhorar na próxima

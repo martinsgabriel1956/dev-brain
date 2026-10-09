@@ -3,8 +3,8 @@ type: concept
 title: "CQRS — Command Query Responsibility Segregation"
 aliases: ["command query responsibility segregation", "cqrs pattern"]
 date_created: 2026-05-31
-date_updated: 2026-10-08
-source_count: 14
+date_updated: 2026-10-09
+source_count: 15
 tags: [cqrs, arquitetura, event-sourcing, ddd, sistemas-distribuidos]
 skill: tech-mentor-backend
 status: draft
@@ -175,3 +175,7 @@ Ganhos apontados: a escrita não é onerada pela atualização da leitura; o con
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — CQRS listado como estilo que depende da comunicação assíncrona
 - [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — problema motivador (consultas presas por locks) e CQRS com separação física: comandos → command handler → banco relacional; evento → fila (RabbitMQ) → consumer → banco de leitura NoSQL desnormalizado
 - [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] — citado como um dos quatro padrões distintos sob 'eventos' ([[wiki/concepts/mensageria-vs-eda]])
+
+## Key sources (adição 2026-10-09)
+
+- [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — [[wiki/entities/bernardo-lobato|Bernardo Lobato]]: CQRS = [[wiki/concepts/cqs|CQS]] (Meyer, 1988) elevado de operação a modelo; quatro critérios de adoção ([[wiki/concepts/assimetria-leitura-escrita]]); exemplos pedido/e-commerce, contador de views e extrato; não exige microsserviços, event sourcing, Kafka nem dois bancos; pergunta-guia: "existe diferença entre leitura e escrita que justifique a complexidade?"

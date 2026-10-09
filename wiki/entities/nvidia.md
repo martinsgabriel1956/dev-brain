@@ -3,8 +3,8 @@ type: entity
 title: "NVIDIA"
 aliases: ["Nvidia"]
 date_created: 2026-07-21
-date_updated: 2026-07-31
-source_count: 2
+date_updated: 2026-10-09
+source_count: 3
 tags: [nvidia, gpu, hardware, organização, palantir]
 skill: tech-mentor-ai
 status: stub
@@ -18,7 +18,12 @@ Fabricante de GPUs, hardware dominante para treinamento e inferência de LLMs em
 
 [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] descreve um deal entre a Nvidia e a [[wiki/entities/palantir-technologies]] (contexto de uma entrevista do CEO da Palantir à CNBC) e trata a Nvidia como a única parte "correta" na dinâmica de mercado de IA: vende hardware e não fica — não custeia o dado do cliente, não retreina modelos em cima do workflow do cliente, e (segundo o autor, sem confirmação) provavelmente não cobra por resultado — em contraste direto com a crítica feita a [[wiki/entities/openai]] e [[wiki/entities/anthropic]] no mesmo vídeo. A visão da Palantir para o próprio produto combina modelo aberto + camada de aplicação + compute Nvidia.
 
+## TPU do Google como complemento
+
+[[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] enquadra os [[wiki/concepts/tensor-processing-unit|TPUs]] do Google como complemento (não substituto direto) à Nvidia na infraestrutura de IA.
+
 ## Key Sources
 
 - [[wiki/sources/kimi-k3-china-mercado-ia-open-source]]
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — deal com a Palantir; Nvidia como a única parte "correta" na economia de IA
+- [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] — TPUs do Google como complemento

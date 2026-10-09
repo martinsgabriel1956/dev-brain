@@ -3,8 +3,8 @@ type: concept
 title: "Síndrome do Impostor"
 aliases: ["impostor syndrome", "medo de ser descoberto", "sensação de fraude"]
 date_created: 2026-07-03
-date_updated: 2026-09-29
-source_count: 8
+date_updated: 2026-10-09
+source_count: 9
 tags: [carreira, saúde-mental, júnior, inteligência-emocional]
 skill: tech-mentor-leadership
 status: draft
@@ -70,3 +70,5 @@ Isso conecta com [[wiki/concepts/persistencia-em-processo-seletivo]] numa sequê
 - [[wiki/sources/escopo-de-projetos-processo-nao-resultado-lorehub]] — variante anterior no tempo: medo de aplicar para a vaga, antes mesmo de existir reprovação; recomendação de agir apesar da sensação de despreparo permanente
 - [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] — autor trata a subestimação como hábito mental corrigível que atinge júnior, pleno e sênior; ver [[wiki/concepts/palco-vs-bastidores]]
 - [[wiki/sources/como-fazer-perguntas-certas-ciclo-de-2-horas]] — medo de perguntar e o ciclo de 2 horas como método
+
+- [[wiki/sources/como-acabar-com-inseguranca-ao-entregar-codigo-andre-casciotti]] — Insegurança de entrega vem de falta de clareza, não de talento ([[wiki/concepts/inseguranca-na-entrega]])

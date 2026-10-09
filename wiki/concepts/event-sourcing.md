@@ -3,8 +3,8 @@ type: concept
 title: "Event Sourcing"
 aliases: ["event store", "append-only log", "eventsourcing"]
 date_created: 2026-05-31
-date_updated: 2026-09-30
-source_count: 10
+date_updated: 2026-10-09
+source_count: 11
 tags: [event-sourcing, arquitetura, cqrs, ddd, imutabilidade, fintech]
 skill: tech-mentor-backend
 status: stable
@@ -142,3 +142,7 @@ Citado em [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernar
 - [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — variante leve via insert + flag `enabled` sem event store completo; arquitetura de referência (streaming + componente de registro + componente de replay); cases de mercado (Saga, opt-in/LGPD, auditoria financeira, faturamento de telecom sob fiscalização Anatel); prós/contras consolidados (reprodutibilidade total vs. volume de dados/complexidade/tempo de desenvolvimento)
 - [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — reforço de segunda fonte: filosofia de stream processing mantida em escala (72 bilhões de eventos/dia), batch jobs modelados como streams
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — Event Sourcing listado como estilo que depende da comunicação assíncrona
+
+## Key sources (adição 2026-10-09)
+
+- [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — event sourcing, mensageria e Kafka não fazem parte da definição de CQRS; podem ser combinados

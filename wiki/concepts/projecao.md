@@ -3,8 +3,8 @@ type: concept
 title: "Projecao"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-22
-source_count: 2
+date_updated: 2026-10-09
+source_count: 3
 tags: [projecao]
 skill: tech-mentor-backend
 status: stub
@@ -27,3 +27,7 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 
 - [[wiki/sources/cqrs]]
 - [[wiki/sources/event-sourcing]]
+
+## Key sources (adição 2026-10-09)
+
+- [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — projeção do write model como read model; exige mecanismo de sincronização e pode introduzir consistência eventual; múltiplas projeções por necessidade (tela, dashboard, relatório)

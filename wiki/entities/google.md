@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-10-06
-source_count: 13
+date_updated: 2026-10-09
+source_count: 15
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -48,6 +48,10 @@ Google Cloud citado entre os hyperscalers do imaginário de "ir para a nuvem" ([
 
 Em [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]], uma versão de prompt registra o modelo Gemini com temperatura 0, contra outra versão com modelo da OpenAI ([[wiki/concepts/metadados-de-prompt]]).
 
+## Google na Corrida da IA: Negócio e Eficiência
+
+[[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] defende que o Google perde na percepção dos devs (Antigravity ruim, timing de lançamento), mas ganha em negócio ([[wiki/entities/google-cloud-platform]] +82% a/a; [[wiki/concepts/tensor-processing-unit|TPUs]]) e em pesquisa de eficiência ([[wiki/entities/google-research]], [[wiki/concepts/memory-caching-rnn]]); produto de voz: [[wiki/entities/gemini-live]].
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — Google Cloud entre os hyperscalers do imaginário de nuvem
@@ -63,3 +67,5 @@ Em [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-
 - [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — Gemini como modelo de exemplo nos metadados de versão
 - [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] — citação: Eric Brewer, descrito como VP de infraestrutura do Google
 - [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — modelos Gemini de chat e de embedding usados via [[wiki/entities/spring-ai]] no demo de RAG
+- [[wiki/sources/dotenv-arquivo-env-boas-praticas-secret-manager]] — Google Secret Manager citado como cofre
+- [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] — debate sobre corrida da IA: cloud +82%, TPU, Memory Caching, Gemini 3.8 Live

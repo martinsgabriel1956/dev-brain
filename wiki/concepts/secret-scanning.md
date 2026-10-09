@@ -3,8 +3,8 @@ type: concept
 title: "Secret Scanning"
 aliases: ["secret scanning", "gitleaks", "trufflehog", "credential leak scanning", "ghas"]
 date_created: 2026-10-01
-date_updated: 2026-10-01
-source_count: 2
+date_updated: 2026-10-09
+source_count: 3
 tags: [secret-scanning, gitleaks, trufflehog, devsecops, security]
 skill: tech-mentor-security
 status: draft
@@ -38,3 +38,4 @@ Sequência correta se um secret vazar: **revogar/rotacionar imediatamente** → 
 
 - [[wiki/sources/secret-scanning]] — três camadas (pre-commit, CI/CD, GHAS); sequência de resposta a vazamento; TruffleHog `--only-verified`
 - [[wiki/sources/secrets-vazadas-no-github-conceitos-e-riscos]] — ângulo da descoberta em escala (por que histórico de commits precisa ser varrido, não só o estado atual)
+- [[wiki/sources/dotenv-arquivo-env-boas-praticas-secret-manager]] — senha apagada continua no histórico do git; testar `/.env` na URL

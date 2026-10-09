@@ -3,8 +3,8 @@ type: concept
 title: "Definição de Pronto"
 aliases: ["definition of done", "DoD", "o que é pronto", "pronto de verdade"]
 date_created: 2026-04-22
-date_updated: 2026-07-19
-source_count: 3
+date_updated: 2026-10-09
+source_count: 4
 tags: [hábitos, qualidade, craftsmanship, código, entrega, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -61,3 +61,5 @@ A ordem importa. Primeiro confirmar que a implementação cobre a regra de negó
 - [[wiki/sources/habitos-ruins-de-programador]]
 - [[wiki/sources/4-habitos-programador-ineficiente]]
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] — regra de negócio como critério #1, antes de estilo
+
+- [[wiki/sources/como-acabar-com-inseguranca-ao-entregar-codigo-andre-casciotti]] — "Pronto" para o usuário = resolve o problema ([[wiki/concepts/funcionar-e-resolver-problema]])

@@ -3,8 +3,8 @@ type: concept
 title: "Protocolo de Rede"
 aliases: ["network protocol", "TCP/IP", "HTTP", "modelo em camadas", "OSI"]
 date_created: 2026-06-26
-date_updated: 2026-07-15
-source_count: 6
+date_updated: 2026-10-09
+source_count: 7
 tags: [cs-fundamentals, redes, protocolos, tcp-ip, http, networking]
 skill: cs-fundamentals
 status: draft
@@ -94,3 +94,6 @@ Antes de qualquer resposta HTTP chegar, três etapas já consumiram latência: *
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — handshake HTTP→TCP do WebSocket e por que exige LB de camada 4
 - [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] — UDP em jogos e videochamada; analogia dos Correios para camada 4 (caminhoneiro) vs camada 7 (atendente/triagem)
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — DNS → TCP handshake → TLS → HTTP como latência escondida atrás de "digitar uma URL e apertar enter"
+
+## Key sources (adição 2026-10-09)
+- [[wiki/sources/url-vs-uri-diferenca-urn-identificacao-localizacao]] — a URL carrega protocolo + host + recurso: o ponto de entrada das camadas descritas aqui

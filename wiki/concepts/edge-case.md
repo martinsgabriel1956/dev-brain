@@ -3,8 +3,8 @@ type: concept
 title: "Edge Case"
 aliases: ["caso de borda", "cenário de erro", "caso extremo"]
 date_created: 2026-05-13
-date_updated: 2026-09-29
-source_count: 2
+date_updated: 2026-10-09
+source_count: 3
 tags: [edge-case, caso-de-borda, fundamentos, cs-fundamentals]
 skill: cs-fundamentals
 status: draft
@@ -43,6 +43,7 @@ Edge cases são onde os sistemas falham em produção. Mapear edge cases no iní
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-quatro-passos]]
+- [[wiki/sources/o-que-e-um-algoritmo-propriedades-pseudocodigo-sistemas-de-recomendacao]] — exemplo do caixa eletrônico: senha errada e saldo insuficiente como ramos além do caminho feliz
 
 ## Casos extremos no BDD
 

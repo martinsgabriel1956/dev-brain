@@ -3,8 +3,8 @@ type: concept
 title: "Paridade Local–Produção"
 aliases: ["staging parity", "works on my machine", "local vs prod", "paridade de ambiente"]
 date_created: 2026-04-26
-date_updated: 2026-07-31
-source_count: 3
+date_updated: 2026-10-09
+source_count: 4
 tags: [staging, producao, docker, devops, debugging, ambiente]
 skill: tech-mentor-leadership
 status: draft
@@ -54,3 +54,4 @@ Válido especialmente para quem está começando: nunca validar mudanças direto
 - [[wiki/sources/5-principios-programador]]
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] — sequência dev/homologação/produção antes de abrir PR
 - [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — exemplo concreto de clonagem anonimizada do banco de produção para staging
+- [[wiki/sources/dotenv-arquivo-env-boas-praticas-secret-manager]] — mesma aplicação, `.env` diferente por ambiente; [[wiki/concepts/ambiente-de-execucao]]

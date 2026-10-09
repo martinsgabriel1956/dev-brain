@@ -3,8 +3,8 @@ type: concept
 title: "DDD — Domain-Driven Design"
 aliases: ["domain-driven design", "ddd", "domínio"]
 date_created: 2026-05-31
-date_updated: 2026-09-30
-source_count: 15
+date_updated: 2026-10-09
+source_count: 16
 tags: [ddd, arquitetura, bounded-context, aggregate, domain-events, hexagonal]
 skill: tech-mentor-backend
 status: draft
@@ -117,3 +117,7 @@ No DDD, o agregado é responsável por proteger suas próprias invariantes — r
 - [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]] — exemplo de agregado (ordem de serviço → pedido → cliente → indicação) usado para motivar a separação entre modelo de comando e modelo de leitura em [[wiki/concepts/cqrs]]
 - [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] — Repository com nomes CRUD genéricos como erro comum de aplicação superficial de DDD; exemplo da "garagem" para vocabulário de domínio
 - [[wiki/sources/bounded-context-contextos-delimitados-bernardo-lobato]] — terceiro pilar do DDD (bounded context) na série Dominando DDD
+
+## Key Sources (adição 2026-10-09)
+
+- [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — o write model carrega agregados e invariantes do domínio; o read model dispensa essa estrutura ([[wiki/concepts/assimetria-leitura-escrita]])

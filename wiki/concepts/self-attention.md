@@ -3,8 +3,8 @@ type: concept
 title: "Self-Attention"
 aliases: ["mecanismo de atenção", "attention mechanism", "scaled dot-product attention"]
 date_created: 2026-09-18
-date_updated: 2026-09-18
-source_count: 1
+date_updated: 2026-10-09
+source_count: 2
 tags: [self-attention, transformers, llm-fundamentals, attention-is-all-you-need]
 skill: tech-mentor-ai
 status: stable
@@ -60,6 +60,11 @@ Para n tokens, a matriz de atenção é n×n — custo quadrático no compriment
 - [[wiki/entities/attention-is-all-you-need-paper]] — paper que introduziu o mecanismo (2017)
 - [[wiki/concepts/flash-attention]] — implementação IO-aware do mesmo cálculo matemático, muito mais eficiente
 
+## Contraponto
+
+[[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] (via [[wiki/concepts/memory-caching-rnn]]) mostra que cachear estados em RNNs aproxima o desempenho do Transformer em benchmarks de 1,3B, sem atenção sobre toda a sequência.
+
 ## Key Sources
 
 - [[wiki/sources/self-attention-mecanismo-transformers]] — explicação didática completa do mecanismo (tokens → embeddings → Q/K → attention score → output), com a ressalva de que a fonte não cobre V nem detalha o cálculo matemático exato
+- [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] — Memory Caching como alternativa à atenção total

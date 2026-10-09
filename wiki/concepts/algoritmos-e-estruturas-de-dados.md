@@ -3,8 +3,8 @@ type: concept
 title: "Algoritmos e Estruturas de Dados"
 aliases: ["DSA", "data structures", "estruturas de dados", "algoritmos"]
 date_created: 2026-05-16
-date_updated: 2026-09-29
-source_count: 23
+date_updated: 2026-10-09
+source_count: 24
 tags: [fundamentos, cs-fundamentals, algoritmos, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -123,3 +123,4 @@ Cada estrutura tem sua própria página com complexidade, analogias e quando usa
 - [[wiki/sources/algoritmos-de-ordenacao-bubble-insertion-selection-merge-quicksort-heapsort]] — seis algoritmos de ordenação (passo 2 da sequência de aprendizado acima), com Selection Sort, Quicksort e Heapsort cobertos pela primeira vez com mecanismo detalhado
 - [[wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization]] — recursão vs. iteração como equivalência formal (tese de Church-Turing), não hierarquia de eficiência; call stack como estrutura de dados alocável manualmente; tail call optimization
 - [[wiki/sources/ordenacao-selection-quicksort-bubble-sort-live-coding]] — terceira fonte de live coding do canal sobre o livro *Entendendo Algoritmos*: Selection Sort, Quicksort e Bubble Sort; ênfase em visão crítica sobre funções nativas (saber qual algoritmo roda por trás)
+- [[wiki/sources/o-que-e-um-algoritmo-propriedades-pseudocodigo-sistemas-de-recomendacao]] — definição de algoritmo e suas quatro propriedades (entrada, precisão, finitude, saída); ver [[wiki/concepts/algoritmo]]

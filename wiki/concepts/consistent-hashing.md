@@ -3,8 +3,8 @@ type: concept
 title: "Consistent Hashing"
 aliases: ["hash consistente", "anel de hashing", "consistent hash ring"]
 date_created: 2026-08-03
-date_updated: 2026-09-22
-source_count: 4
+date_updated: 2026-10-08
+source_count: 5
 tags: [consistent-hashing, sharding, sistemas-distribuidos, escalabilidade, banco-de-dados]
 skill: tech-mentor-system-design
 status: stub
@@ -38,3 +38,5 @@ Shards são posicionados em pontos de um anel (0° a 360°, ou um espaço de has
 - [[wiki/sources/estimativas-back-of-envelope]] — Framework de 4 passos: (1) clarificar escopo — DAU, read/write ratio, pico vs média; (2) estimar QPS; (3) estimar storage; (4) estimar bandwidth. O objetivo é ordem de grandeza para evitar...
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — anel virtual como solução ao custo de resharding do módulo simples, citado como mecanismo interno de bancos não relacionais com sharding nativo
 - [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — contra-exemplo prático: o particionamento do Kafka usa hash + módulo simples (não um anel), sofrendo a mesma limitação de resharding total ao mudar o número de partições
+
+- [[wiki/sources/sharding-milhoes-de-escritas-partition-key-consistent-hashing-pedro-camaforte]] — anel 0–99 com shard 4 em 82 (só a faixa 66–82 migra), [[wiki/concepts/virtual-node]], uso por Cassandra/ScyllaDB e papel de padrão de entrevista

@@ -3,8 +3,8 @@ type: concept
 title: "Developers Not Writing Tests"
 aliases: ["desenvolvedores não escrevem testes", "test debt", "dívida de teste"]
 date_created: 2026-09-22
-date_updated: 2026-09-22
-source_count: 4
+date_updated: 2026-10-09
+source_count: 5
 tags: [testes, test-smell, project-smell, xunit, terminologia, test-debt]
 skill: tech-mentor-testing
 status: stub
@@ -46,3 +46,5 @@ Criado a partir de uma fonte primária dedicada. **Hard-to-Test Code** já fecho
 - [[wiki/sources/test-debt-xunitpatterns]] — verbete de glossário isolando a definição formal do termo **test debt**, com a origem do vocabulário de "dívida"
 - [[wiki/sources/hard-to-test-code-xunitpatterns]] — fonte primária dedicada da causa "código difícil de testar", com árvore completa de três sub-causas
 - [[wiki/sources/frequent-debugging-xunitpatterns]] — sintoma observável de testes insuficientes: depuração manual frequente por falta de Defect Localization
+
+- [[wiki/sources/como-acabar-com-inseguranca-ao-entregar-codigo-andre-casciotti]] — Autor BR: teste é a 1ª coisa cortada na correria e ninguém ensina a testar

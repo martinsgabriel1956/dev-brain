@@ -3,8 +3,8 @@ type: entity
 title: "OpenAI"
 aliases: ["Open AI"]
 date_created: 2026-05-17
-date_updated: 2026-10-08
-source_count: 25
+date_updated: 2026-10-09
+source_count: 26
 tags: [openai, organização, llm, ia, cartao-corporativo, prompt-caching]
 skill: tech-mentor-ai
 status: stable
@@ -114,6 +114,10 @@ Segundo [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]], a OpenAI rela
 
 [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] usa vagas da OpenAI no [[wiki/entities/ashby]] como exemplo de resultado da busca `site:` por AI Engineer.
 
+## GPT Live 1 (speech-to-speech)
+
+[[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] compara o GPT Live 1 (~US$ 0,05/min ≈ US$ 3/h) ao [[wiki/entities/gemini-live]] (~US$ 0,84/h), que o superaria em benchmark e custo ([[wiki/concepts/speech-to-speech]]).
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — vagas da OpenAI no Ashby como exemplo
@@ -121,3 +125,4 @@ Segundo [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]], a OpenAI rela
 - [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] — [[wiki/entities/greg-brockman]] como exemplo de cofundador técnico que assume funções não técnicas
 
 - [[wiki/sources/jev-typesafe-ai-system-one-model-decisoes-tipadas-codigo-fonte-tv]] — [[wiki/entities/diogo-almeida]] (ex-OpenAI, RLHF) fundou a [[wiki/entities/typesafe-ai]]; modelo barato da OpenAI substituído no caso Vercel
+- [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] — GPT Live 1 vs Gemini 3.8 Live em custo e benchmark de voz

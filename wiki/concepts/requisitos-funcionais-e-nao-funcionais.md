@@ -3,8 +3,8 @@ type: concept
 title: "Requisitos Funcionais e Não Funcionais"
 aliases: ["requisitos funcionais", "requisitos não funcionais", "RNF", "functional requirements", "non-functional requirements", "levantamento de requisitos"]
 date_created: 2026-09-03
-date_updated: 2026-10-07
-source_count: 9
+date_updated: 2026-10-09
+source_count: 10
 tags: [system-design, requisitos, arquitetura, entrevistas, escopo]
 skill: tech-mentor-system-design
 status: stub
@@ -60,3 +60,5 @@ Um enunciado de entrevista é, por construção, um [[wiki/concepts/problema-de-
 ## Key sources (adição 2026-10-07)
 
 - [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] — perguntas que revelam requisitos: multi-canal, opt-out, templates, prioridade, custo, picos.
+
+- [[wiki/sources/como-acabar-com-inseguranca-ao-entregar-codigo-andre-casciotti]] — O requisito é um combinado formalizado ([[wiki/concepts/o-certo-e-um-combinado]])

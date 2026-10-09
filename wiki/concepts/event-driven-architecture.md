@@ -3,8 +3,8 @@ type: concept
 title: "Event-Driven Architecture (EDA)"
 aliases: ["arquitetura orientada a eventos", "eda", "event driven"]
 date_created: 2026-07-30
-date_updated: 2026-10-08
-source_count: 10
+date_updated: 2026-10-09
+source_count: 11
 tags: [event-driven, mensageria, saga-pattern, cqrs, microsservicos, arquitetura]
 skill: tech-mentor-backend
 status: stub
@@ -54,3 +54,7 @@ Evento 'pedido criado' consumido por Pagamentos, que publica 'pagamento aprovado
 - [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — encadeamento de eventos no RabbitMQ
 - [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — eventos de order/produto disparam indexação e recomendação em um [[wiki/concepts/microagente]]
 - [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] — visão de decisão: desacoplamento, evento≠comando, trade-offs (complexidade, rastreabilidade, versionamento), hype e maturidade. Ver [[wiki/concepts/evento-vs-comando]], [[wiki/concepts/mensageria-vs-eda]], [[wiki/concepts/evento-enxuto-vs-evento-gordo]], [[wiki/concepts/eda-de-fachada]]
+
+## Key sources (adição 2026-10-09)
+
+- [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — EDA é opcional no CQRS: evento do write model consumido para atualizar o read model é uma combinação possível, não requisito

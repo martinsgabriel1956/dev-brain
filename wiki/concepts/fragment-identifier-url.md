@@ -3,8 +3,8 @@ type: concept
 title: "Fragment Identifier (Hash da URL)"
 aliases: ["fragment identifier", "url fragment", "location.hash", "hashtag da url", "#fragment"]
 date_created: 2026-08-28
-date_updated: 2026-08-28
-source_count: 0
+date_updated: 2026-10-09
+source_count: 1
 tags: [browser, url, http, xss, dom, javascript]
 skill: tech-mentor-security
 status: draft
@@ -33,3 +33,6 @@ Diferente de query parameters (`?busca=...`), que trafegam na requisição HTTP 
 ## Nota de nomenclatura
 
 O termo técnico correto é "fragment identifier" (RFC 3986); "hashtag" ou "hash da URL" são apelidos coloquiais para a mesma coisa.
+
+## Key sources
+- [[wiki/sources/url-vs-uri-diferenca-urn-identificacao-localizacao]] — fragment é a parte final da URI/URL; URL é URI localizável, mas o fragment não vai ao servidor

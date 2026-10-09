@@ -3,8 +3,8 @@ type: concept
 title: "Compliance"
 aliases: ["conformidade", "regulatory compliance", "compliance técnico"]
 date_created: 2026-05-05
-date_updated: 2026-10-06
-source_count: 8
+date_updated: 2026-10-09
+source_count: 9
 tags: [compliance, lgpd, gdpr, pci-dss, soc2, hipaa, iso-27001, security, audit]
 skill: tech-mentor-security
 status: stable
@@ -71,6 +71,7 @@ Ver [[wiki/concepts/iso-27001]] para a estrutura completa da norma. Resumo: fram
 - [[wiki/sources/iso-27001-dicionario-programador]] — estrutura da norma (cláusulas + Anexo A), SoA, controles relevantes para devs, Policy as Code, ISO 42001
 - [[wiki/sources/devsecops-origem-cultura-manifesto]] — frameworks (ITIL, COBIT, ISO 27001) e compliance como referência de reação a brechas de segurança, contraposto à resposta ágil integrada ao fluxo de desenvolvimento que [[wiki/concepts/devsecops]] defende
 - [[wiki/sources/event-sourcing-conceito-pros-contras-cases-mercado]] — [[wiki/concepts/event-sourcing|Event Sourcing]] citado como caso de mercado para opt-in/LGPD (histórico de consentimento e broadcast confiável de mudanças para parceiros) e para auditoria de operações financeiras críticas; caso de faturamento de telecomunicações sob fiscalização da Anatel como exemplo de auditoria regulatória fora do eixo LGPD/PCI/SOC2 já coberto na página
+- [[wiki/sources/dotenv-arquivo-env-boas-praticas-secret-manager]] — checar regras de compliance antes de escolher `.env` vs cofre
 
 ## Conceitos Relacionados
 

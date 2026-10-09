@@ -3,8 +3,8 @@ type: entity
 title: "Amazon Web Services"
 aliases: ["AWS", "Amazon Cloud"]
 date_created: 2026-05-06
-date_updated: 2026-10-08
-source_count: 11
+date_updated: 2026-10-09
+source_count: 12
 tags: ["aws", "cloud-provider", "amazon", "infraestrutura"]
 skill: tech-mentor-infra
 status: stable
@@ -83,3 +83,4 @@ Panorama didático (não exaustivo de todos os produtos) que ordena os serviços
 
 - [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] — princípios de liderança da Amazon: [[wiki/concepts/amazon-leadership-principles]]
 - [[wiki/sources/load-balancer-como-funciona-algoritmos-health-check-nginx-haproxy]] — ALB (camada de aplicação) e NLB (rede/transporte) citados como LBs gerenciados
+- [[wiki/sources/dotenv-arquivo-env-boas-praticas-secret-manager]] — AWS Secrets Manager citado como cofre com rotação (e erro de atribuição: Heroku não é 'pai da AWS')

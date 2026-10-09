@@ -3,8 +3,8 @@ type: concept
 title: "Eventual Consistency"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-10-02
-source_count: 12
+date_updated: 2026-10-09
+source_count: 13
 tags: [eventual-consistency]
 skill: tech-mentor-system-design
 status: stub
@@ -44,3 +44,7 @@ Terceiro desafio da [[wiki/concepts/comunicacao-assincrona]] segundo [[wiki/enti
 - [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] — lado A aceito para busca/perfil/comentários
 - [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — lado A aceita divergência temporária durante a partição
 - [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — consistência de dados entre serviços como um dos seis desafios de [[wiki/concepts/arquitetura-distribuida]]
+
+## Key sources (adição 2026-10-09)
+
+- [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — consistência eventual como custo opcional do CQRS: alteração na escrita demora a aparecer na leitura, se o negócio tolerar; muda como operar e depurar (gravou → publicou → projetou → atualizou)

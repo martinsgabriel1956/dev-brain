@@ -3,8 +3,8 @@ type: concept
 title: "Transformer Architecture"
 aliases: ["transformers", "arquitetura transformer"]
 date_created: 2026-09-18
-date_updated: 2026-09-18
-source_count: 2
+date_updated: 2026-10-09
+source_count: 3
 tags: [transformers, llm-fundamentals, self-attention, embeddings, attention-is-all-you-need]
 skill: tech-mentor-ai
 status: stable
@@ -48,7 +48,12 @@ Self-attention é O(n²) no comprimento da sequência — para n tokens, a matri
 - [[wiki/concepts/flash-attention]] — otimização de implementação do cálculo de atenção
 - [[wiki/concepts/mamba-ssm]] — arquitetura alternativa O(n) para sequências longas
 
+## Alternativa recorrente com memória crescente
+
+[[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] apresenta [[wiki/concepts/memory-caching-rnn]]: RNNs com checkpoints de estado fecham parte do gap de recall vs Transformer sem custo O(L²) — mas o Transformer segue líder em recall *in-context*. Contraste com [[wiki/concepts/recurrent-neural-network]].
+
 ## Key Sources
 
 - [[wiki/sources/como-llms-funcionam]] — visão geral da arquitetura, complexidade O(n²), FlashAttention, MoE, Mamba/SSM como alternativas
 - [[wiki/sources/self-attention-mecanismo-transformers]] — deep dive no mecanismo de self-attention especificamente (tokens → embeddings → Q/K → attention score)
+- [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] — RNN com Memory Caching como alternativa ao custo quadrático

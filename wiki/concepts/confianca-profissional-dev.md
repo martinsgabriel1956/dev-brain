@@ -3,8 +3,8 @@ type: concept
 title: "Confiança Profissional do Dev"
 aliases: ["confiança no trabalho", "autoconfiança dev", "loop de erro"]
 date_created: 2026-09-23
-date_updated: 2026-10-06
-source_count: 3
+date_updated: 2026-10-09
+source_count: 4
 tags: [carreira, confianca, mentalidade, dialogo-interno, soft-skills]
 skill: tech-mentor-leadership
 status: draft
@@ -40,3 +40,5 @@ Confiança sem resultado não sustenta o emprego. Evidência: apenas a experiên
 - [[wiki/sources/senioridade-nao-e-so-tecnica-especializacao-negocio-dados-confianca-em-crise]] — confiança do time em crise: parceiro vs. ameaça ([[wiki/concepts/confianca-do-time-em-crise]])
 - [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]]
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — mesmo autor: essencialidade e confiança do gestor vêm de entregar apesar dos problemas e de autonomia ([[wiki/concepts/dev-essencial-e-raridade]])
+
+- [[wiki/sources/como-acabar-com-inseguranca-ao-entregar-codigo-andre-casciotti]] — Insegurança na entrega e antídotos ([[wiki/concepts/inseguranca-na-entrega]])

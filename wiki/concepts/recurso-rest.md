@@ -3,8 +3,8 @@ type: concept
 title: "Recurso (REST)"
 aliases: ["resource", "pensar em recursos", "rest resource"]
 date_created: 2026-09-30
-date_updated: 2026-09-30
-source_count: 1
+date_updated: 2026-10-09
+source_count: 2
 tags: [rest, api, recurso, design-de-api]
 skill: tech-mentor-networking
 status: stub
@@ -18,3 +18,6 @@ Relacionado: [[wiki/concepts/requisicao-http]], [[wiki/concepts/contrato-de-api]
 
 ## Key sources
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — mudança de mentalidade função → recurso
+
+## Key sources (adição 2026-10-09)
+- [[wiki/sources/url-vs-uri-diferenca-urn-identificacao-localizacao]] — a URI identifica o recurso; num endpoint HTTP ela é também URL ([[wiki/concepts/uri]], [[wiki/concepts/url]])

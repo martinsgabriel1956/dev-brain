@@ -3,8 +3,8 @@ type: concept
 title: "Decomposição de Problemas"
 aliases: ["problem decomposition", "quebrar em partes menores"]
 date_created: 2026-05-13
-date_updated: 2026-07-24
-source_count: 4
+date_updated: 2026-10-09
+source_count: 5
 tags: [decomposicao, fundamentos, cs-fundamentals]
 skill: cs-fundamentals
 status: draft
@@ -68,3 +68,4 @@ Fora do design de sistemas, a mesma técnica se aplica a diagnosticar um problem
 - [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — primeiro pilar dos 5; exemplo com clone de Netflix e remoção de elemento de array
 - [[wiki/sources/pensamento-estruturado-resolucao-de-problemas]] — aplicação da decomposição ao debugging de produção via árvore de perguntas (onde/quando/para quem)
 - [[wiki/sources/problemas-de-escopo-aberto-vs-fechado]] — "operacionalizar" um problema de escopo aberto de carreira/vida, generalizando a técnica além do contexto técnico
+- [[wiki/sources/o-que-e-um-algoritmo-propriedades-pseudocodigo-sistemas-de-recomendacao]] — algoritmo como receita de passos sequenciais não ambíguos

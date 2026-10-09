@@ -3,8 +3,8 @@ type: concept
 title: "Secrets Management"
 aliases: ["secrets management", "gerenciamento de segredos", "env variables", "credenciais", ".env"]
 date_created: 2026-06-10
-date_updated: 2026-10-01
-source_count: 8
+date_updated: 2026-10-09
+source_count: 9
 tags: [security, secrets-management, env, credenciais, devsecops, ci-cd, under-engineering]
 skill: tech-mentor-security
 status: stable
@@ -104,3 +104,4 @@ Propriedade desejável: **secrets configurados não são mais visíveis** — ne
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]] — scanner de histórico de git como último item de checklist de autopentest
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]] — menção rápida do AWS Secrets Manager dentro de um tour geral do toolkit da AWS, sem detalhamento além do escopo já documentado nesta página (chaves de API, credenciais de banco de dados)
 - [[wiki/sources/secrets-vazadas-no-github-conceitos-e-riscos]] — ângulo da descoberta em escala: formato reconhecível de chaves por prefixo, limites de indexação da busca do GitHub, por que histórico de git precisa ser varrido
+- [[wiki/sources/dotenv-arquivo-env-boas-praticas-secret-manager]] — `.env` vs cofre: quando usar cada um, fallback ambiente→arquivo, o que não vai no `.env`; ver [[wiki/concepts/dotenv]], [[wiki/concepts/secret-manager]]

@@ -3,8 +3,8 @@ type: concept
 title: "Pré-condição, Pós-condição e Invariante"
 aliases: ["precondition", "postcondition", "invariant", "pré-condições", "pós-condições", "invariantes"]
 date_created: 2026-09-23
-date_updated: 2026-09-23
-source_count: 1
+date_updated: 2026-10-09
+source_count: 2
 tags: [design-by-contract, pre-condicao, pos-condicao, invariante, asserção]
 skill: tech-mentor-backend
 status: draft
@@ -36,3 +36,7 @@ Os três componentes de um contrato em [[wiki/concepts/design-by-contract]]. [[w
 ## Key Sources
 
 - [[wiki/sources/design-by-contract-video]]
+
+## Key Sources (adição 2026-10-09)
+
+- [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — mesmo autor ([[wiki/entities/bertrand-meyer]]) do [[wiki/concepts/cqs]]; invariantes de domínio são o que o write model protege

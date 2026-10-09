@@ -3,8 +3,8 @@ type: entity
 title: "Greg Young"
 aliases: []
 date_created: 2026-08-17
-date_updated: 2026-08-17
-source_count: 1
+date_updated: 2026-10-09
+source_count: 2
 tags: [cqrs, event-sourcing, arquitetura]
 skill: tech-mentor-backend
 status: stub
@@ -17,3 +17,7 @@ Criador do padrão [[wiki/concepts/cqrs|CQRS]] (Command Query Responsibility Seg
 ## Key sources
 
 - [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]]
+
+## Key sources (adição 2026-10-09)
+
+- [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — não cita Young; CQRS descrito como CQS elevado ao nível de modelos

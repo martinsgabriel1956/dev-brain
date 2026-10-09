@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-10-08
+date_updated: 2026-10-09
 ---
 
 
@@ -26,6 +26,12 @@ date_updated: 2026-10-08
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/url-vs-uri-diferenca-urn-identificacao-localizacao]] | Vídeo EN (traduzido): [[wiki/concepts/uri]] identifica um recurso; [[wiki/concepts/url]] identifica e localiza (onde/como); [[wiki/concepts/urn]] identifica por nome persistente (ISBN). Toda URL é URI, não o inverso; em APIs o termo é intercambiável; URI pode ser [[wiki/concepts/referencia-relativa-de-uri|relativa]] |
+| [[wiki/sources/como-acabar-com-inseguranca-ao-entregar-codigo-andre-casciotti]] | [[wiki/entities/andre-casciotti|André Casciotti]]: insegurança ao entregar vem de falta de clareza — 3 dicas: descobrir [[wiki/concepts/o-certo-e-um-combinado|o certo (um combinado formalizado)]], hábito de testar com [[wiki/concepts/plano-de-testes-escrito|roteiro escrito]], [[wiki/concepts/escolhas-conscientes-sob-pressao|escolhas conscientes sob pressão]] (contexto, aceitar, reportar risco, melhorar na próxima); "funcionar" = [[wiki/concepts/funcionar-e-resolver-problema|resolver o problema do usuário]] |
+| [[wiki/sources/o-que-e-um-algoritmo-propriedades-pseudocodigo-sistemas-de-recomendacao]] | Vídeo PT-BR introdutório: [[wiki/concepts/algoritmo]] = receita passo a passo com 4 propriedades (entrada, clareza/precisão, finitude, saída); [[wiki/concepts/pseudocodigo]]/fluxograma antes do código (caixa eletrônico); "algoritmo do TikTok" = [[wiki/concepts/sistema-de-recomendacao]] (centenas de modelos → score de relevância). Omite efetividade (Knuth) e complexidade |
+| [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] | Vídeo PT-BR: Google não está perdendo — ganha em negócio ([[wiki/entities/google-cloud-platform|GCP]] +82%, [[wiki/concepts/tensor-processing-unit|TPU]]) e eficiência ([[wiki/concepts/memory-caching-rnn|Memory Caching]] em [[wiki/concepts/recurrent-neural-network|RNNs]]); [[wiki/entities/gemini-live|Gemini 3.8 Live]] >3× mais barato que GPT Live 1 |
+| [[wiki/sources/dotenv-arquivo-env-boas-praticas-secret-manager]] | O `.env`: [[wiki/concepts/dotenv]] separa config do código (12-factor); o que vai e o que não vai ([[wiki/concepts/configuracao-vs-regra-de-negocio]]); [[wiki/concepts/secret-manager]] em produção; segurança em camadas; nenhuma senha no código |
+| [[wiki/sources/sharding-milhoes-de-escritas-partition-key-consistent-hashing-pedro-camaforte]] | Pedro Camaforte: sharding de ponta a ponta — Postgres ~10k/50k escritas/s, [[wiki/concepts/partition-key]], range vs directory vs hash, consistent hashing + virtual nodes, hot spots, cross-shard (cache/desnormalização), Saga vs 2PC e "faça conta" antes de shardear |
 | [[wiki/sources/load-balancer-como-funciona-algoritmos-health-check-nginx-haproxy]] | Vídeo curto: pico viral derruba servidor único; [[wiki/concepts/load-balancer|LB]] com Round Robin/Weighted/Least Connections/IP Hash, L7 como proxy reverso, [[wiki/concepts/health-check|health check]], Nginx/HAProxy/ALB e erros comuns |
 | [[wiki/sources/tipos-de-ssd-sata-ahci-m2-pci-express-nvme-explicados | Tipos de SSD: velocidade = formato ([[wiki/concepts/m2-formato-fisico|M.2]]) × barramento ([[wiki/concepts/ssd-sata|SATA ~550 MB/s]] vs. [[wiki/concepts/pci-express|PCIe]] 3.0/4.0/5.0 ≈ 3.5/7.5/14 GB/s) × protocolo ([[wiki/concepts/ahci|AHCI]] 1×32 vs. [[wiki/concepts/nvme|NVMe]] 64k×64k); M.2 ≠ NVMe; patrocínio [[wiki/entities/alura|Alura]] |
 | [[wiki/sources/jev-typesafe-ai-system-one-model-decisoes-tipadas-codigo-fonte-tv]] | [[wiki/entities/codigo-fonte-tv|Código Fonte TV]]: [[wiki/entities/jev]] ([[wiki/entities/typesafe-ai]]), primeiro [[wiki/concepts/system-one-model]]: estado + [[wiki/concepts/perguntas-tipadas-choice-score-noul|perguntas tipadas]] → decisões com confiança ([[wiki/concepts/rlcd]]); [[wiki/concepts/jev-para-ramificar-llm-para-ler|Jev para ramificar, LLM para ler]] |
@@ -856,8 +862,77 @@ date_updated: 2026-10-08
 | [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] | Dicionário do Programador: harness = tudo menos o modelo; princípio de Hashimoto (trava determinística); guias (feed-forward) vs. sensores (feedback) de Böckeler; de-para de Trivedy; três camadas; DeepSeek Harness; exemplo em crédito |
 | [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] | Galego: [[wiki/concepts/contribuidor-de-alto-impacto]] (receita, não horas) e [[wiki/concepts/high-agency-founder-mode|high agency]]; fim do [[wiki/concepts/fim-do-comedor-de-ticket|comedor de ticket]]; Paul Graham, YC, Stripe, Amazon e Greg Brockman convergem em curiosidade/ownership/autonomia; grandes empresas em modo startup por causa da IA |
 | [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] | Gago, Macris e Santana: EDA para reduzir acoplamento, evento≠comando, mensageria≠EDA, evento enxuto vs gordo, EOL de versões, EDA de fachada e primeira adoção segura |
+| [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]]: **CQRS** como [[wiki/concepts/cqs|CQS]] (Meyer, 1988) elevado a modelos; quatro critérios de adoção, custos (sincronização, consistência eventual, debug) e quando não usar; independe de microsserviços/ES/Kafka |
 
 ## Concepts
+
+### URI, URL e URN — Identificar vs. Localizar (2026-10-09)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/uri]] | Categoria ampla: identifica um recurso (URL e URN são tipos) |
+| [[wiki/concepts/url]] | URI que diz onde e como acessar (protocolo + host + recurso) |
+| [[wiki/concepts/urn]] | URI que nomeia de forma persistente (ex.: ISBN) |
+| [[wiki/concepts/referencia-relativa-de-uri]] | URI sem endereço completo, resolvida contra uma base (stub) |
+
+### Insegurança na Entrega — Clareza, Teste e Decisão (2026-10-09)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/inseguranca-na-entrega]] | Dúvida "está certo?" vem de falta de clareza; só é problema se constante |
+| [[wiki/concepts/o-certo-e-um-combinado]] | O certo = convergência usuário/dev, com curiosidade, desenho e formalização |
+| [[wiki/concepts/plano-de-testes-escrito]] | Saber o certo, escrever roteiro, executar — prova que o código faz o certo |
+| [[wiki/concepts/escolhas-conscientes-sob-pressao]] | Pressa→gambiarra→insegurança; contexto, aceitar, reportar risco, melhorar |
+| [[wiki/concepts/funcionar-e-resolver-problema]] | Funcionar para o usuário é resolver seu problema, não só não dar exception |
+
+### Algoritmo — Definição e Propriedades (2026-10-09)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/algoritmo]] | Receita finita e precisa: entrada, clareza, finitude, saída |
+| [[wiki/concepts/pseudocodigo]] | Raciocínio em linguagem natural/fluxograma antes do código |
+| [[wiki/concepts/sistema-de-recomendacao]] | O "algoritmo do feed": modelos → score de relevância (stub) |
+
+### Google, RNNs e Voz em Tempo Real (2026-10-09)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/recurrent-neural-network]] | RNN: estado fixo, custo linear, esquece o início |
+| [[wiki/concepts/memory-caching-rnn]] | Cachear checkpoints de estado dá memória crescente à RNN |
+| [[wiki/concepts/needle-in-a-haystack]] | Teste de recall em contexto longo |
+| [[wiki/concepts/speech-to-speech]] | Modelos voz→voz; custo/h é o gargalo |
+| [[wiki/concepts/tensor-processing-unit]] | Chip do Google, complemento à Nvidia |
+
+### CQRS — CQS e Critérios de Adoção (2026-10-09)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/cqs]] | Command Query Separation (Meyer): operação ou muda estado ou consulta, nunca os dois |
+| [[wiki/concepts/assimetria-leitura-escrita]] | Critério que justifica CQRS: modelos/cargas de leitura e escrita realmente diferentes |
+
+### .env e Configuração por Ambiente (2026-10-09)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/dotenv]] | Arquivo de variáveis por ambiente; nunca versionar |
+| [[wiki/concepts/variavel-de-ambiente]] | Config externa ao código; ambiente antes do arquivo |
+| [[wiki/concepts/ambiente-de-execucao]] | Dev, QA, staging, produção; um por cliente |
+| [[wiki/concepts/configuracao-vs-regra-de-negocio]] | Server config no .env; regra de negócio no banco |
+| [[wiki/concepts/secret-manager]] | Cofre que injeta no ambiente, com rotação e auditoria |
+| [[wiki/entities/heroku]] | Origem do manifesto 12-factor |
+
+### Sharding — estratégias e desafios (2026-10-08)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/partition-key]] | Alta cardinalidade, distribuição equilibrada, alinhada às queries |
+| [[wiki/concepts/range-based-sharding]] | Faixas: limite, concentração inicial e hot shard recente |
+| [[wiki/concepts/directory-based-sharding]] | Shard map: flexível, mas SPOF e overhead dobrado |
+| [[wiki/concepts/hash-based-sharding]] | hash % N: uniforme, mas remapeia tudo ao mudar N |
+| [[wiki/concepts/virtual-node]] | Vários pontos do anel por shard |
+| [[wiki/concepts/hot-shard]] | Celebridade/post viral: shard dedicado ou chave composta |
+| [[wiki/concepts/cross-shard-query]] | Exceção, não regra; cache ou desnormalização |
+| [[wiki/concepts/desnormalizacao]] | Escrita dupla para leitura rápida |
 
 ### System One / Decisões Tipadas (2026-10-08)
 
@@ -2969,6 +3044,13 @@ date_updated: 2026-10-08
 | [[wiki/concepts/eda-de-fachada]] | Vocabulário de eventos com banco compartilhado e alto acoplamento |
 
 ## Entities
+
+- [[wiki/entities/google-cloud-platform]] — Cloud do Google: +82% a/a, backlog ~US$ 514 bi
+- [[wiki/entities/google-research]] — pesquisa de eficiência (Memory Caching)
+- [[wiki/entities/gemini-live]] — Gemini 3.8 Live, speech-to-speech barato
+
+- [[wiki/entities/cassandra]] — NoSQL com sharding nativo por consistent hashing
+- [[wiki/entities/scylladb]] — "Cassandra tunado", alta taxa de escrita
 
 - [[wiki/entities/jev]] — modelo System One da TypeSafe AI
 - [[wiki/entities/typesafe-ai]] — empresa criadora do Jev

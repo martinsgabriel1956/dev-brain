@@ -3,8 +3,8 @@ type: concept
 title: "Tradução de Lógica para Código"
 aliases: ["código como tradução", "logic to code", "implementação como tradução"]
 date_created: 2026-05-13
-date_updated: 2026-05-13
-source_count: 1
+date_updated: 2026-10-09
+source_count: 2
 tags: [traducao, implementacao, fundamentos, cs-fundamentals]
 skill: cs-fundamentals
 status: draft
@@ -40,3 +40,4 @@ A lógica **não muda**. O mesmo fluxo de autenticação do caixa eletrônico po
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-quatro-passos]]
+- [[wiki/sources/o-que-e-um-algoritmo-propriedades-pseudocodigo-sistemas-de-recomendacao]] — linguagem de programação como ferramenta que traduz a lógica (algoritmo) para a máquina

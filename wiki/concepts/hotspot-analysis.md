@@ -3,8 +3,8 @@ type: concept
 title: "Hotspot Analysis (Dívida Técnica)"
 aliases: ["análise de hotspots", "code churn", "complexidade ciclomática", "code hotspot"]
 date_created: 2026-07-28
-date_updated: 2026-07-28
-source_count: 1
+date_updated: 2026-10-08
+source_count: 2
 tags: [tech-debt, metricas, complexidade-ciclomatica, code-churn, sonarqube, codescene]
 skill: tech-mentor-leadership
 status: stub
@@ -45,3 +45,5 @@ CodeScene (hotspots + comportamento de time), SonarQube (métricas de qualidade,
 ## Key Sources
 
 - [[wiki/sources/tech-debt-guia-completo-gestao-metricas]]
+
+- [[wiki/sources/sharding-milhoes-de-escritas-partition-key-consistent-hashing-pedro-camaforte]] — hot shard (celebridade/post viral) e soluções; ver [[wiki/concepts/hot-shard]]

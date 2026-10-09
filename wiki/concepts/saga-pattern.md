@@ -3,8 +3,8 @@ type: concept
 title: "Saga Pattern"
 aliases: ["saga", "saga distribuída", "compensating transactions"]
 date_created: 2026-04-22
-date_updated: 2026-10-06
-source_count: 12
+date_updated: 2026-10-08
+source_count: 13
 tags: [sistemas-distribuidos, consistencia, saga, microsservicos, compensação]
 skill: tech-mentor-system-design
 status: stub
@@ -73,3 +73,5 @@ O vídeo enuncia o problema de desfazer o processo se algo falhar no meio, que a
 - [[wiki/sources/teorema-cap-decisao-de-arquitetura-quando-a-comunicacao-falha-bernardo-lobato]] — citado como o assunto que vem depois do CAP: reconciliar Pedido e Estoque após a partição ([[wiki/concepts/reconciliacao-pos-particao]])
 - [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — problema de desfazer fluxo enunciado, sem solução
 - [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] — Saga do lado novo de uma ACL
+
+- [[wiki/sources/sharding-milhoes-de-escritas-partition-key-consistent-hashing-pedro-camaforte]] — Saga como solução de consistência entre shards (Maria→João) vs 2PC

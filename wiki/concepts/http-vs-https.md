@@ -3,8 +3,8 @@ type: concept
 title: "HTTP vs HTTPS"
 aliases: ["HTTP", "HTTPS", "http vs https", "hypertext transfer protocol secure"]
 date_created: 2026-08-12
-date_updated: 2026-09-30
-source_count: 3
+date_updated: 2026-10-09
+source_count: 4
 tags: [rede, http, https, ssl, tls, seguranca, man-in-the-middle]
 skill: tech-mentor-networking
 status: stub
@@ -35,3 +35,6 @@ Ambos são **HyperText Transfer Protocol** — o protocolo de transferência de 
 - [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — HTTP sem criptografia vs HTTPS seguro; Man-in-the-Middle; o que o SSL garante (e o que não garante)
 - [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo]] — trecho sem HTTP/TLS
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — HTTPS como camada criptografada negociada antes da requisição; cadeado do navegador
+
+## Key sources (adição 2026-10-09)
+- [[wiki/sources/url-vs-uri-diferenca-urn-identificacao-localizacao]] — protocolo (`http`/`https`) como a parte da URL que diz como acessar

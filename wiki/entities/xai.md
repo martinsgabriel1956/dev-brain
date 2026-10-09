@@ -3,8 +3,8 @@ type: entity
 title: "xAI"
 aliases: ["xAI Corp", "x.ai"]
 date_created: 2026-07-31
-date_updated: 2026-08-11
-source_count: 2
+date_updated: 2026-10-09
+source_count: 3
 tags: [empresa, elon-musk, llm, token-economics, data-centers, grok]
 skill: tech-mentor-ai
 status: stub
@@ -18,7 +18,12 @@ Empresa de IA fundada por [[wiki/entities/elon-musk]], com data centers e modelo
 
 [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] descreve o lançamento do **Grok 4.5** como jogada de posicionamento de marca: em preço, é mais em conta que o [[wiki/entities/moonshot-ai|Kimi K3]] e mais performático que o Sonnet, ocupando (junto ao Kimi) o *mid-tier* mais barato que o Opus da [[wiki/entities/anthropic]]. É parte da pressão competitiva que levou a Anthropic a usar [[wiki/concepts/ancoragem-de-preco|ancoragem de preço]] no lançamento do Opus 5.
 
+## Grok Voice
+
+[[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] cita o Grok Voice (plataforma de dev com API e números de telefone) como caro para atendimento por bot e abaixo do [[wiki/entities/gemini-live]] no Speech-to-Speech Index ([[wiki/concepts/speech-to-speech]]).
+
 ## Key Sources
 
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]]
 - [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — Grok 4.5 no mid-tier abaixo do Opus
+- [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] — Grok Voice caro e abaixo do Gemini 3.8 Live

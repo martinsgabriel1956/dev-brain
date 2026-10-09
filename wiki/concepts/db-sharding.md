@@ -3,8 +3,8 @@ type: concept
 title: "DB Sharding"
 aliases: ["sharding", "database sharding", "horizontal partitioning"]
 date_created: 2026-04-23
-date_updated: 2026-09-22
-source_count: 9
+date_updated: 2026-10-08
+source_count: 10
 tags: [sharding, escalabilidade, banco-de-dados, consistent-hashing, shard-key]
 skill: tech-mentor-system-design
 status: stub
@@ -46,3 +46,5 @@ Um risco prático de usar chaves sequenciais (auto-incremento) em bases separada
 - [[wiki/sources/large-scale-vs-complex-architecture]] — sharding apresentado como resposta ao limite finito de TPS de qualquer banco de dados, dentro do princípio geral de "dividir para conquistar" em [[wiki/concepts/large-scale-architecture]]
 - [[wiki/sources/sharding-charging-fragmentacao-banco-de-dados]] — exemplo passo a passo do cálculo de módulo (por que a numeração de shard começa em zero) e do fluxo de geração de ID distribuído antes do roteamento
 - [[wiki/sources/uuid-quando-usar-pergunta-diogo]] — merge de bases shardeadas com chave sequencial gera colisão; UUID evita o problema
+
+- [[wiki/sources/sharding-milhoes-de-escritas-partition-key-consistent-hashing-pedro-camaforte]] — comparação range/directory/hash/consistent hashing detalhada; ver [[wiki/concepts/range-based-sharding]], [[wiki/concepts/directory-based-sharding]], [[wiki/concepts/hash-based-sharding]]
