@@ -3,8 +3,8 @@ type: concept
 title: "Alucinação de LLM"
 aliases: ["hallucination", "llm hallucination", "alucinacao", "llm mente"]
 date_created: 2026-07-30
-date_updated: 2026-10-08
-source_count: 9
+date_updated: 2026-10-14
+source_count: 10
 tags: [alucinacao, hallucination, ai-safety, rag, guardrails, llm-as-judge, faithfulness]
 skill: tech-mentor-ai
 status: draft
@@ -66,6 +66,10 @@ Esse fluxo é a aplicação concreta do modelo de guardrails de entrada/saída j
 
 Alimentar o LLM com fatos determinísticos do código reduziu alucinações no DMV ("boa parte", sem métrica), mas não dispensou revisão — [[wiki/concepts/analise-estatica-como-ancora-de-llm]].
 
+## Adição (2026-10-14)
+
+Causa conceitual no nível mais básico: o LLM prevê a sequência de tokens mais provável e não consulta base de fatos, logo não há garantia de correção. [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
+
 ## Key Sources
 
 - [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — reinício heurístico de sessão (sem threshold técnico) como mitigação prática de alucinação/degradação
@@ -75,6 +79,7 @@ Alimentar o LLM com fatos determinísticos do código reduziu alucinações no D
 - [[wiki/sources/rag-introducao-pipeline-completo]] — conceito de "chunks elegíveis" com threshold de confiança: se nenhum chunk recuperado for elegível, o sistema deve recusar responder em vez de alucinar com contexto ruim
 - [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]] — análise estática como contexto restrito reduz alucinação
 - [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — RAG apresentado como forma de reduzir respostas genéricas/alucinadas; regras só no prompt, sem validação da saída (ver Open questions da fonte)
+- [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — causa básica: previsão probabilística de tokens, sem consulta a base de fatos
 
 ## Key sources (adição 2026-10-08)
 

@@ -3,8 +3,8 @@ type: entity
 title: "W3C (World Wide Web Consortium)"
 aliases: ["World Wide Web Consortium"]
 date_created: 2026-08-04
-date_updated: 2026-08-04
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [padronizacao, web, xml, soap]
 skill: tech-mentor-backend
 status: stub
@@ -17,3 +17,6 @@ Organização responsável pela padronização de tecnologias web. Padronizou o 
 ## Key Sources
 
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]]
+
+## Key sources (adição 2026-10-14)
+- [[wiki/sources/historia-do-front-end-akita-ep4]] — aceleração do HTML5/CSS3 (oficiais em 2014) após o fim do Flash

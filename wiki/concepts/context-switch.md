@@ -3,8 +3,8 @@ type: concept
 title: "Context Switch"
 aliases: ["context switch", "troca de contexto", "context switching"]
 date_created: 2026-04-22
-date_updated: 2026-06-26
-source_count: 2
+date_updated: 2026-10-14
+source_count: 3
 tags: [sistema-operacional, scheduling, performance, cs-fundamentals]
 skill: cs-fundamentals
 status: stable
@@ -55,3 +55,7 @@ Coroutines (async/await, goroutines) fazem troca cooperativa **no espaço do usu
 
 - [[wiki/sources/sistema-operacional-por-baixo-dos-panos]]
 - [[wiki/sources/como-sistemas-operacionais-funcionam]]
+
+## Key sources (adição 2026-10-14)
+
+- [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]] — exemplo de tarefa que só assembly resolve: salvar/restaurar todo o estado do processador, incl. registradores

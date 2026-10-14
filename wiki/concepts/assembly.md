@@ -3,8 +3,8 @@ type: concept
 title: "Assembly"
 aliases: ["linguagem de montagem", "assembler", "opcode"]
 date_created: 2026-10-05
-date_updated: 2026-10-05
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [lang-systems, baixo-nivel, assembly, opcode, cs-fundamentals]
 skill: lang-systems
 status: stub
@@ -21,3 +21,7 @@ Possível de inspecionar (device drivers, DLLs sem código-fonte, avaliação de
 ## Key sources
 
 - [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — assembly como degrau abaixo do C e relação com opcode
+
+## Key sources (adição 2026-10-14)
+
+- [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]] — assembly como representação mais baixa possível da ISA, sem conceitos abstratos; só portável dentro da mesma família; ainda necessário para registradores fora de memória e troca de contexto ([[wiki/concepts/alto-nivel-vs-baixo-nivel]], [[wiki/concepts/isa-instruction-set-architecture]])

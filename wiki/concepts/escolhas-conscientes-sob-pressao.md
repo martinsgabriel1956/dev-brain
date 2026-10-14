@@ -3,8 +3,8 @@ type: concept
 title: "Escolhas Conscientes sob Pressão"
 aliases: ["decisão consciente", "dívida consciente", "aceitar o cenário"]
 date_created: 2026-10-09
-date_updated: 2026-10-09
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [carreira, pressa, tech-debt, decisao, comunicacao]
 skill: tech-mentor-leadership
 status: draft
@@ -24,3 +24,7 @@ Equivale a assumir [[wiki/concepts/tech-debt]] de forma deliberada. Relacionados
 ## Key Sources
 
 - [[wiki/sources/como-acabar-com-inseguranca-ao-entregar-codigo-andre-casciotti]]
+
+## Key sources (adição 2026-10-14)
+
+- [[wiki/sources/como-sair-do-ciclo-de-bugs-e-retrabalho-andre-casciotti]] — pressão → pressa → correção sem prova é o [[wiki/concepts/ciclo-de-bugs-e-retrabalho]]; 'pare e respire' antes de mexer

@@ -3,8 +3,8 @@ type: concept
 title: "ABI — Application Binary Interface"
 aliases: ["ABI", "application binary interface", "interface binária"]
 date_created: 2026-05-02
-date_updated: 2026-05-02
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [abi, sistemas, linking, ffi, interoperabilidade]
 skill: lang-systems
 status: stable
@@ -74,3 +74,7 @@ Cada linguagem tem mecanismos para declarar que uma função deve seguir a ABI d
 ## Key Sources
 
 - [[wiki/sources/como-multiplas-linguagens-vivem-num-unico-binario]]
+
+## Key sources (adição 2026-10-14)
+
+- [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]] — a ABI de C como interface binária "universal" ([[wiki/concepts/portabilidade-de-codigo-entre-arquiteturas]])

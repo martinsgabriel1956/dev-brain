@@ -3,8 +3,8 @@ type: concept
 title: "DNS — Domain Name System"
 aliases: [Domain Name System]
 date_created: 2026-04-22
-date_updated: 2026-10-09
-source_count: 9
+date_updated: 2026-10-14
+source_count: 10
 tags: [dns, rede, infraestrutura]
 skill: tech-mentor-system-design
 status: stub
@@ -53,3 +53,6 @@ Segundo [[wiki/sources/icmp-browser-navegar-na-internet-via-ping-go-michel-leona
 
 ## Key sources (adição 2026-10-09)
 - [[wiki/sources/url-vs-uri-diferenca-urn-identificacao-localizacao]] — o host da URL é o que o DNS resolve
+
+## Key sources (adição 2026-10-14)
+- [[wiki/sources/historia-do-front-end-akita-ep4]] — primeira etapa ao digitar uma URL: "lista telefônica" nome → IP

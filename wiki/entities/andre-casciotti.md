@@ -3,8 +3,8 @@ type: entity
 title: "André Casciotti"
 aliases: ["Próximo Nível (canal)"]
 date_created: 2026-07-03
-date_updated: 2026-10-09
-source_count: 10
+date_updated: 2026-10-14
+source_count: 11
 tags: [carreira, mentoria, youtube, criador-de-conteudo]
 skill: tech-mentor-leadership
 status: stub
@@ -69,3 +69,7 @@ Criador de conteúdo técnico, apresentador do quadro "Próximo Nível" (canal n
 ## Key sources (adição 2026-10-09)
 
 - [[wiki/sources/como-acabar-com-inseguranca-ao-entregar-codigo-andre-casciotti]] — décima fonte: insegurança na entrega vem de falta de clareza; 3 dicas: [[wiki/concepts/o-certo-e-um-combinado]], [[wiki/concepts/plano-de-testes-escrito]], [[wiki/concepts/escolhas-conscientes-sob-pressao]] (+ [[wiki/concepts/inseguranca-na-entrega]], [[wiki/concepts/funcionar-e-resolver-problema]])
+
+## Key sources (adição 2026-10-14)
+
+- [[wiki/sources/como-sair-do-ciclo-de-bugs-e-retrabalho-andre-casciotti]] — décima primeira fonte: sair do ciclo de bugs e retrabalho com 3 passos — causa raiz, evidenciar, provar; conceitos-chave [[wiki/concepts/ciclo-de-bugs-e-retrabalho]], [[wiki/concepts/tres-passos-para-lidar-com-bug]], [[wiki/concepts/evidenciar-o-problema]], [[wiki/concepts/provar-que-corrigiu]], [[wiki/concepts/analise-de-impacto-da-correcao]], [[wiki/concepts/armadilha-da-certeza-do-dev-experiente]], [[wiki/concepts/analise-de-requisitos-aplicada-a-bugs]]; cita o curso 'Dev que Resolve'

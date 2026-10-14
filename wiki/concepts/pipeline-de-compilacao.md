@@ -3,8 +3,8 @@ type: concept
 title: "Pipeline de Compilação"
 aliases: ["compilation pipeline", "fases do compilador", "GCC phases"]
 date_created: 2026-05-02
-date_updated: 2026-07-09
-source_count: 3
+date_updated: 2026-10-14
+source_count: 4
 tags: [compilacao, gcc, toolchain, sistemas, assembly]
 skill: lang-systems
 status: stable
@@ -74,3 +74,6 @@ Em vez de implementar a fase de otimização/geração de código do zero, uma l
 - [[wiki/sources/como-multiplas-linguagens-vivem-num-unico-binario]]
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]] — LLVM como backend plugável; visão do pipeline sob a ótica de quem projeta uma linguagem nova, não só de quem compila C
 - [[wiki/sources/como-um-compilador-transforma-codigo-em-instrucoes-de-maquina]] — pipeline interno de 6 estágios (lexer → parser → semântica → IR → otimização → codegen) que roda dentro da fase de "Compilação" deste pipeline de 4 fases
+
+## Key sources (adição 2026-10-14)
+- [[wiki/sources/historia-do-front-end-akita-ep4]] — análogo no front end: [[wiki/concepts/pipeline-de-assets]] e [[wiki/concepts/transpilador]]

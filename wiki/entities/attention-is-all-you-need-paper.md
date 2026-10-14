@@ -3,8 +3,8 @@ type: entity
 title: "Attention Is All You Need (paper)"
 aliases: ["attention is all you need", "paper transformers 2017", "vaswani et al 2017"]
 date_created: 2026-09-18
-date_updated: 2026-10-09
-source_count: 2
+date_updated: 2026-10-14
+source_count: 3
 tags: [paper, transformers, self-attention, attention-is-all-you-need, llm-fundamentals]
 skill: tech-mentor-ai
 status: stub
@@ -28,7 +28,12 @@ Paper publicado em 2017 (equipe do Google, [external] Vaswani et al., NeurIPS 20
 
 [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] lembra que o paper saiu do Google e que o mesmo Google segue pesquisando eficiência ([[wiki/entities/google-research]], [[wiki/concepts/memory-caching-rnn]]).
 
+## Adição (2026-10-14)
+
+Citado como artigo do Google (2017) que apresentou o Transformer, base dos LLMs; o vídeo o apresenta como a arquitetura que "mudou a história da IA moderna". [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
+
 ## Key Sources
 
 - [[wiki/sources/self-attention-mecanismo-transformers]] — cita o paper como marco histórico (nome + ano), sem leitura direta do texto original
 - [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] — origem Google; pesquisa de eficiência posterior
+- [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — citado como origem do Transformer (Google, 2017)

@@ -3,8 +3,8 @@ type: concept
 title: "Conhecimento vertical do problema"
 aliases: ["assumir o problema verticalmente","ownership ponta a ponta","engenheiro de IA vertical"]
 date_created: 2026-10-07
-date_updated: 2026-10-07
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [carreira, engenharia-de-ia, ownership, ponta-a-ponta]
 skill: tech-mentor-leadership
 status: draft
@@ -21,3 +21,9 @@ Cuidado de escopo: ownership vertical não é invadir o time dono — ver [[wiki
 ## Key Sources
 
 - [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]]
+
+## Atualização 2026-10-14
+
+[[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]: no nível do negócio, o equivalente é a [[wiki/concepts/ia-vertical]] — vender numa direção só, com engenharia e negócio inseparáveis, base do modelo [[wiki/concepts/operacao-como-servico-de-ia|operação]].
+
+- [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]

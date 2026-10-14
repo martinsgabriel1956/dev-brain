@@ -3,8 +3,8 @@ type: concept
 title: "Hybrid Search"
 aliases: ["busca híbrida", "busca híbrida em RAG", "semantic + keyword search"]
 date_created: 2026-09-22
-date_updated: 2026-09-29
-source_count: 2
+date_updated: 2026-10-14
+source_count: 3
 tags: [hybrid-search, rag, retrieval, busca-semantica, busca-textual, fusion]
 skill: tech-mentor-ai
 status: draft
@@ -37,3 +37,9 @@ Busca que combina [[wiki/concepts/busca-semantica]] (significado, via embeddings
 
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — explicação com demo (busca por uma palavra achando a aula certa só pela palavra-chave) e o papel do fusion
 - [[wiki/sources/rag-retrieval]]
+
+## Adição (2026-10-14)
+
+Em catálogos, vetores de imagem e de metadados podem coexistir ([[wiki/concepts/busca-visual-por-similaridade]]).
+
+- [[wiki/sources/gemini-embedding-2-embedding-multimodal-google]] — busca por metadados + semântica multimodal em catálogo

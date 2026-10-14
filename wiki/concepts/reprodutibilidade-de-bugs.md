@@ -3,8 +3,8 @@ type: concept
 title: "Reprodutibilidade de Bugs"
 aliases: ["bug não reproduzível", "reproduzir bug em produção"]
 date_created: 2026-10-06
-date_updated: 2026-10-06
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [debugging, reprodutibilidade, estado-externo, logs]
 skill: tech-mentor-backend
 status: draft
@@ -25,3 +25,7 @@ Entradas explícitas (parâmetros/[[wiki/concepts/request-context]]) para que o 
 ## Key sources
 
 - [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]]
+
+## Key sources (adição 2026-10-14)
+
+- [[wiki/sources/como-sair-do-ciclo-de-bugs-e-retrabalho-andre-casciotti]] — na prática de sustentação, evidenciar o bug por log, print do usuário ou conversa com QA e simular em outro ambiente sem dado de produção ([[wiki/concepts/evidenciar-o-problema]])

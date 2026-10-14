@@ -3,8 +3,8 @@ type: entity
 title: "Microsoft"
 aliases: []
 date_created: 2026-07-16
-date_updated: 2026-09-29
-source_count: 8
+date_updated: 2026-10-14
+source_count: 9
 tags: [empresa, custo-ia, token-economics, demissao, capital-de-tokens]
 skill: tech-mentor-ai
 status: stub
@@ -48,3 +48,6 @@ Azure citado (transcrição "Acer") entre os hyperscalers do imaginário de "ir 
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — citada (sem detalhamento numérico) como uma das big techs estourando orçamento de engenharia de IA em 2026
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — participação na criação original do SOAP (1998) e no WCF
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — criadora da [[wiki/concepts/windows-api|WinAPI]] nos anos 80, marco de popularização de API fora de ambientes corporativos gigantes
+
+## Key sources (adição 2026-10-14)
+- [[wiki/sources/historia-do-front-end-akita-ep4]] — IE, IIS, ASP, ActiveX, Silverlight e a acusação de monopólio na [[wiki/concepts/guerra-dos-navegadores]]

@@ -3,8 +3,8 @@ type: concept
 title: "Busca Semântica"
 aliases: ["semantic search", "dense retrieval", "busca vetorial"]
 date_created: 2026-09-29
-date_updated: 2026-10-06
-source_count: 2
+date_updated: 2026-10-14
+source_count: 3
 tags: [rag, busca-semantica, embeddings, retrieval, dense-retrieval]
 skill: tech-mentor-ai
 status: draft
@@ -30,3 +30,9 @@ Busca que se preocupa com **significado**, não com palavras exatas. Chunks são
 
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — mecânica (pergunta → embedding → comparação) e limite com palavras-chave isoladas
 - [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — recuperação semântica (não exata como SQL) via embedding da query + topK + filtro: [[wiki/concepts/recuperacao-com-filtro-de-metadados]]
+
+## Adição (2026-10-14)
+
+Estende-se a imagens, vídeo e áudio com [[wiki/concepts/embedding-multimodal]] ([[wiki/entities/gemini-embedding-2]]); exemplo de e-commerce em [[wiki/concepts/busca-visual-por-similaridade]].
+
+- [[wiki/sources/gemini-embedding-2-embedding-multimodal-google]] — busca semântica sobre arquivos de várias mídias (ex.: "foto de camisa azul") com embedding multimodal

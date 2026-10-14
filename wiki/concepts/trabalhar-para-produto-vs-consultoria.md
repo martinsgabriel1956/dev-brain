@@ -3,8 +3,8 @@ type: concept
 title: "Trabalhar para Produto vs. Consultoria"
 aliases: ["produto vs consultoria", "empresa de produto vs empresa de serviço"]
 date_created: 2026-09-18
-date_updated: 2026-10-06
-source_count: 2
+date_updated: 2026-10-14
+source_count: 3
 tags: [carreira, consultoria, produto, remuneração, mercado-de-trabalho]
 skill: tech-mentor-leadership
 status: stub
@@ -38,3 +38,9 @@ Essas duas vantagens de produto não tornam consultoria uma escolha inferior por
 
 - [[wiki/sources/senioridade-nao-e-so-tecnica-especializacao-negocio-dados-confianca-em-crise]] — relato de atuação em consultoria entrando em times em crise; confiança como skill ([[wiki/concepts/confianca-do-time-em-crise]]); banco com régua de carreira agressiva
 - [[wiki/sources/consultoria-e-uma-boa-opcao-de-carreira]]
+
+## Atualização 2026-10-14
+
+[[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]] acrescenta o lado de quem **vende** o serviço: a consultoria pode virar operação escalável (harness reutilizada) em vez de alocação de pessoas; risco de body shop se a solução não generalizar ([[wiki/concepts/operacao-como-servico-de-ia]]).
+
+- [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]

@@ -3,8 +3,8 @@ type: concept
 title: "AI Washing"
 aliases: ["ai washing", "ia como desculpa", "demissão por ia"]
 date_created: 2026-05-31
-date_updated: 2026-09-29
-source_count: 3
+date_updated: 2026-10-14
+source_count: 4
 tags: [ai-washing, organizacoes, demissao, roi-de-ia, etica-ia]
 skill: tech-mentor-ai
 status: stable
@@ -78,8 +78,13 @@ Diferente do padrão GitLab (justificar sem recuar), o CEO da [[wiki/entities/me
 
 A fonte de isomorfismo institucional oferece uma explicação não maliciosa para parte do AI washing: sob incerteza, empresas anunciam projetos de IA para **sinalizar legitimidade** ([[wiki/concepts/isomorfismo-mimetico]]) — "mimetismo não é irracionalidade nem incompetência". Não confirma intenção enganosa; só que a sinalização pode ser motivo tão forte quanto o problema real.
 
+## Adição (2026-10-14)
+
+Relação: entender o que "IA" realmente significa (ML, deep learning, LLM) é a defesa contra produtos rotulados "com IA" (ex.: eletrodomésticos) sem substância. [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
+
 ## Key Sources
 
 - [[wiki/sources/ia-custo-roi-bolha-ou-realidade]]
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]] — pesquisa Resume Templates (59%/9%/45%/45%) e caso Meta/Zuckerberg
 - [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — leitura institucional: anunciar projetos de IA para sinalizar legitimidade (mimetismo), não necessariamente por má-fé
+- [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — compreensão dos termos como defesa contra rótulo "com IA" sem substância

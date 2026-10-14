@@ -3,8 +3,8 @@ type: concept
 title: "Plano de Testes Escrito"
 aliases: ["roteiro de testes", "hábito de testar"]
 date_created: 2026-10-09
-date_updated: 2026-10-09
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [testes, habitos, qualidade, carreira, testing]
 skill: tech-mentor-leadership
 status: draft
@@ -17,3 +17,7 @@ Hábito de testar segundo [[wiki/entities/andre-casciotti]]: (1) saber **o que �
 ## Key Sources
 
 - [[wiki/sources/como-acabar-com-inseguranca-ao-entregar-codigo-andre-casciotti]]
+
+## Key sources (adição 2026-10-14)
+
+- [[wiki/sources/como-sair-do-ciclo-de-bugs-e-retrabalho-andre-casciotti]] — complemento: provar a correção repetindo o mesmo teste ([[wiki/concepts/provar-que-corrigiu]])

@@ -3,8 +3,8 @@ type: concept
 title: "Agente de IA"
 aliases: ["agente", "AI agent", "agentes de ia"]
 date_created: 2026-05-18
-date_updated: 2026-10-08
-source_count: 10
+date_updated: 2026-10-14
+source_count: 11
 tags: [agentes-ia, llm, llmops, automacao]
 skill: tech-mentor-ai
 status: draft
@@ -77,6 +77,10 @@ Não pensar nessa arquitetura antes de implementar é apontado como causa recorr
 
 Na demo de [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]], um *agent builder* cria o agente lendo a versão ativa do prompt, com modelo e temperatura ([[wiki/concepts/prompt-registry-local]]): trocar a versão ativa reconfigura o agente sem editar código.
 
+## Adição (2026-10-14)
+
+Definição de entrada: agente = sistema que usa modelo na decisão **e** interage com ferramentas/informação externa e age; o modelo é um componente, não o produto; geralmente não é um modelo novo, e sim aplicação sobre modelos existentes. O autor recomenda cautela com processos críticos e segurança até a tecnologia passar pelo teste do tempo. [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
+
 ## Key Sources
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
@@ -90,3 +94,4 @@ Na demo de [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-me
 - [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — o 'microagente' da fonte é um fluxo RAG fixo, sem laço de decisão: ver [[wiki/concepts/microagente]] (tensão com a distinção RAG vs. agente)
 
 - [[wiki/sources/jev-typesafe-ai-system-one-model-decisoes-tipadas-codigo-fonte-tv]] — LLM para raciocínio, [[wiki/entities/jev]] para decisões rápidas do laço: [[wiki/concepts/jev-para-ramificar-llm-para-ler]]
+- [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — definição introdutória (modelo como componente) e postura cautelosa

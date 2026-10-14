@@ -3,8 +3,8 @@ type: concept
 title: "Freelance Como Alavanca de Renda"
 aliases: ["freela para aumentar renda", "side income dev", "renda extra programador"]
 date_created: 2026-07-09
-date_updated: 2026-09-04
-source_count: 3
+date_updated: 2026-10-14
+source_count: 4
 tags: [financas-pessoais, carreira, freelance, renda, precificacao]
 skill: tech-mentor-leadership
 status: stub
@@ -37,3 +37,9 @@ Fechar um contrato grande não encerra o funil: [[wiki/sources/3-fatores-nao-tec
 - [[wiki/sources/como-eu-investiria-como-programador-ate-50000]]
 - [[wiki/sources/precificacao-ancoragem-anthropic-opus-5-lancamento]] — precificação (ancoragem) como alavanca para sair do freela pequeno rumo a grandes contratos
 - [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]] — próximo estágio do funil: sustentar recorrência depois de já ter fechado contratos maiores de IA
+
+## Atualização 2026-10-14
+
+Passo seguinte do funil: [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]] mostra como sair de freelancer — vender o segundo projeto, somar sustentação mensal ([[wiki/concepts/sustentacao-de-software-como-receita-recorrente]]) ou migrar para operação. Ver [[wiki/concepts/modelos-de-cobranca-de-servicos-de-ia]].
+
+- [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]

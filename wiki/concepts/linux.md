@@ -3,8 +3,8 @@ type: concept
 title: "Linux"
 aliases: ["distro Linux", "GNU/Linux", "Linux kernel"]
 date_created: 2026-07-20
-date_updated: 2026-08-11
-source_count: 2
+date_updated: 2026-10-14
+source_count: 3
 tags: [sistema-operacional, linux, servidor, open-source, cs-fundamentals]
 skill: cs-fundamentals
 status: stub
@@ -41,3 +41,6 @@ Segundo [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]]
 
 - [[wiki/sources/8-sistemas-operacionais-explicados]] — panorama comparativo de propósito e mercado
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — comandos básicos de shell e por que devs precisam reconhecê-los na era dos agentes
+
+## Key sources (adição 2026-10-14)
+- [[wiki/sources/historia-do-front-end-akita-ep4]] — ep. 4 reforça: estudar distros e subir um Nginx

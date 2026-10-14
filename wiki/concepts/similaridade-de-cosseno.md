@@ -3,8 +3,8 @@ type: concept
 title: "Similaridade de Cosseno"
 aliases: ["cosine similarity", "distância de cosseno"]
 date_created: 2026-09-29
-date_updated: 2026-09-29
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [embeddings, busca-semantica, similaridade, algebra-linear]
 skill: tech-mentor-ai
 status: stub
@@ -21,3 +21,9 @@ Ver [[wiki/concepts/embedding-vectors]] para o que os vetores representam.
 ## Key sources
 
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]]
+
+## Adição (2026-10-14)
+
+O vídeo afirma que o cosseno é a métrica normalmente usada; vale para vetores multimodais ([[wiki/concepts/embedding-multimodal]]) e para vetores de CNN ([[wiki/concepts/busca-visual-por-similaridade]]).
+
+- [[wiki/sources/gemini-embedding-2-embedding-multimodal-google]] — cosseno (ou euclidiana) como métrica usual entre vetores de mídias distintas e em busca visual com CNN

@@ -13121,3 +13121,87 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (8):** fragment-identifier-url, recurso-rest, protocolo-de-rede, requisicao-http, dns, http-vs-https, debug-de-requisicao-http (concepts); ietf (entity).
 
 **Notas:** (1) Sem contradição. (2) Taxonomia URL/URN é a didática clássica; [external] RFC 3986 a trata como informal e o WHATWG URL Standard só usa "URL". (3) Fonte não cobre sintaxe nem data URIs. (4) Autor não identificado. (5) Novos itens `draft`/`stub`; nenhuma entidade criada.
+
+---
+
+## [2026-10-14] ingest | 10 conceitos fundamentais para entender a IA moderna (Bernardo Lobato)
+
+**Fonte:** transcrição colada pelo usuário, limpa em `raw/10-conceitos-fundamentais-ia-moderna-bernardo-lobato.md` (já em PT-BR; sem tradução; ASR corrigido: Dat→Dartmouth, Mcluck→McCulloch, Percepton→Perceptron, Msk/Papers→Minsky/Papert, "shore"→XOR (inferido), net→ImageNet, "AT isolid"→*Attention Is All You Need*, Cloud 3 Ops→Claude 3 Opus).
+
+**Skill:** tech-mentor-ai (SKILL.md + `references/ai/fundamentals.md`). Carregada de `/home/gabriel-martins/Documentos/skills/` (caminho do CLAUDE.md não existe nesta máquina).
+
+**Criado:** [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]; conceitos inteligencia-artificial, sistema-especialista, machine-learning, aprendizado-supervisionado, modelo-de-machine-learning, rede-neural-artificial, backpropagation, inverno-da-ia, deep-learning, ia-generativa, llm-large-language-model; entidades arthur-samuel, frank-rosenblatt, alexnet.
+
+**Tocadas (12):** transformer-architecture, self-attention, tokenizacao, agente-ia, alucinacao-llm, hype-de-ia, determinismo-vs-probabilismo-em-ia, janela-de-contexto, recurrent-neural-network, ai-washing, embedding-vectors (concepts); attention-is-all-you-need-paper, bernardo-lobato (entities).
+
+**Notas:** (1) Sem contradição com o wiki. (2) Tensão [external]: "a rede nunca planeja o texto" vs. pesquisa de interpretabilidade da Anthropic que mostra planejamento antecipado; tratada como simplificação didática. (3) Perceptrons/1969 vale para perceptron de camada única. (4) Título diz 10 conceitos; vídeo cobre ~11. (5) Opinião do autor sobre agentes é juízo pessoal, sem dados. (6) Novos itens `draft`/`stub`.
+
+---
+
+## [2026-10-14] ingest | A história do front end (Akita — ep. 4 do Developer World Map)
+
+**Fonte:** transcrição colada pelo usuário (legenda automática, PT-BR), limpa em `raw/historia-do-front-end-akita-ep4.md` (sem tradução; ASR corrigido e inferências marcadas no cabeçalho do raw).
+
+**Skill:** tech-mentor-frontend (SKILL.md + `frontend-rendering.md`/`frontend-build.md` conferidos para nomenclatura). Carregada de `/home/gabriel-martins/Documentos/skills/`.
+
+**Criado:** [[wiki/sources/historia-do-front-end-akita-ep4]]; 18 conceitos (historia-do-front-end, cgi-common-gateway-interface, regex-expressao-regular, servidor-web-vs-servidor-de-aplicacao, html-hipertexto, css, guerra-dos-navegadores, framework-web, biblioteca-javascript-de-compatibilidade, ajax, single-page-application, design-responsivo, plugin-de-navegador, transpilador, gerenciador-de-pacotes, pipeline-de-assets, aplicativo-hibrido, sandbox); 6 entidades (apache-http-server, netscape, ruby-on-rails, adobe-flash, gmail, twitter-bootstrap).
+
+**Tocadas (15):** fabio-akita, microsoft, react, w3c, twitter (entities); jquery, virtual-dom, dns, porta-de-rede, xml-extensible-markup-language, renderizacao-ssr-vs-csr, linux, hydration, pipeline-de-compilacao, http2 (concepts).
+
+**Notas:** (1) Sem contradição. (2) Autor atribui AJAX à Mozilla; [external] XMLHttpRequest nasceu na Microsoft. (3) Legenda automática: nomes inferidos (Dojo, Grunt/Gulp). (4) Datas do autor não checadas contra o W3C. (5) Novos itens `draft`/`stub`.
+
+---
+
+## [2026-10-14] ingest | 5 modelos econômicos para vender serviços de IA (Ronald Hulk)
+
+**Fonte:** transcrição colada pelo usuário, limpa em `raw/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk.md` (já em PT-BR; sem tradução; ASR corrigido: Hawk→Hulk, Entropic→Anthropic, Rockpr→Rock Pro, IPI→API, size→SaaS; "constrói e faz sustentação", "runtime" e "esse eu apliquei" inferidos).
+
+**Skill:** tech-mentor-ai (SKILL.md + `ai-product-patterns.md` e `agentic-commerce-payments.md` para o contexto de métrica de resultado e pagamento entre agentes). Carregada de `/home/gabriel-martins/Documentos/skills/`. Não há referência específica de modelo de negócio de serviços de IA.
+
+**Criado:** [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]; conceitos modelos-de-cobranca-de-servicos-de-ia, transformacao-como-produto-de-servico-de-ia, venda-por-projeto-de-ia, sustentacao-de-software-como-receita-recorrente, operacao-como-servico-de-ia, ia-vertical, white-label-licenca-de-ia, cobranca-por-resultado-em-servicos-de-ia.
+
+**Tocadas (13):** forward-deployed-engineer, recorrencia-em-servicos-de-ia, output-vs-outcome, harness, conhecimento-vertical-do-problema, equity-como-diferencial, freelance-como-alavanca-de-renda, trabalhar-para-produto-vs-consultoria, gerenciamento-de-expectativa-em-servicos-de-ia (concepts); ronald-hulk, rock-pro, openai, anthropic (entities).
+
+**Notas:** (1) Sem contradição direta; tensão leve: FDE como modelo escalável de receita (aqui) vs. cargo pouco atraente/demanda pequena ([[wiki/concepts/forward-deployed-engineer]]). (2) Valores (100K/50K/X%) são exemplos do autor, não dados. (3) Alegação de que OpenAI/Anthropic passaram a vender harness + FDE não tem fonte (confiança média, igual ao já registrado). (4) Tabela comparativa final só aparece em tela, não transcrita. (5) Autor tem interesse comercial; "resultado como futuro" é previsão. (6) Novos itens `draft`; nenhuma entidade criada.
+
+---
+
+## [2026-10-14] ingest | Como sair do ciclo de bugs e retrabalho (André Casciotti)
+
+**Fonte:** transcrição colada pelo usuário (legenda automática, PT-BR), limpa em `raw/como-sair-do-ciclo-de-bugs-e-retrabalho-andre-casciotti.md` (sem tradução; ASR corrigido: "André Casarc"→Casciotti; "mundo de Alício"→"mundo de Alice" e "mod de documento"→"modelo de documento" inferidos).
+
+**Skill:** tech-mentor-testing (SKILL.md + `test-strategy-risk-architecture.md` para regressão/teste antes de corrigir bug). Carregada de `/home/gabriel-martins/Documentos/skills/` (o caminho `/home/nemomartins/...` do CLAUDE.md não existe neste ambiente). Domínio secundário: leadership (carreira/hábitos).
+
+**Criado:** [[wiki/sources/como-sair-do-ciclo-de-bugs-e-retrabalho-andre-casciotti]]; conceitos ciclo-de-bugs-e-retrabalho, tres-passos-para-lidar-com-bug, evidenciar-o-problema, provar-que-corrigiu, analise-de-impacto-da-correcao, armadilha-da-certeza-do-dev-experiente, analise-de-requisitos-aplicada-a-bugs.
+
+**Tocadas (15):** causa-raiz, debugging, reprodutibilidade-de-bugs, production-bugs, escolhas-conscientes-sob-pressao, plano-de-testes-escrito, medo-do-prazo-vs-medo-do-bug, foco-no-que-esta-ao-seu-alcance, risco-ocupacional-do-dev, tdd, testar-proprio-codigo, entender-contexto-da-demanda, hipotese-e-validacao, lgpd (concepts); andre-casciotti (entity).
+
+**Notas:** (1) Sem contradição; reforça [[wiki/concepts/medo-do-prazo-vs-medo-do-bug]] e converge com [[wiki/sources/test-driven-bug-fixing-xunitpatterns]]. (2) Tensão leve: o autor recomenda teste unitário "sempre que puder" mas o núcleo da prova é reprodução manual/log, não TDD estrito. (3) Afirmações de que o retrabalho vem sobretudo de bugs e de que o experiente erra mais são opinião, sem dado. (4) Exemplo do Mercado Livre é hipotético. (5) Curso "Dev que Resolve" é divulgação comercial; sem página própria. (6) Novos itens `draft`/`stub`.
+
+---
+
+## [2026-10-14] ingest | Por que C é considerado alto nível? (alto vs. baixo nível, ISA, portabilidade)
+
+**Fonte:** transcrição colada pelo usuário (legenda automática, PT-BR), limpa em `raw/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware.md` (sem tradução; ASR corrigido: assemble→assembly, "ser"→C, "a B"→ABI, isa→ISA, risque→RISC, unde defined→undefined; nomes do apresentador e dos usuários do Discord não identificados).
+
+**Skill:** lang-systems (SKILL.md + `c-cpp.md`; apoio de cs-fundamentals `os-fundamentals.md` e `hardware-for-engineers.md`). Carregada de `/home/gabriel-martins/Documentos/skills/` (o caminho `/home/nemomartins/...` do CLAUDE.md não existe neste ambiente). Não há referência específica de ISA/história de linguagens.
+
+**Criado:** [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]]; conceitos alto-nivel-vs-baixo-nivel, isa-instruction-set-architecture, portabilidade-de-codigo-entre-arquiteturas, comportamento-indefinido, retrocompatibilidade-x86, dependencia-de-caminho-em-tecnologia; entidade zig.
+
+**Tocadas (12):** assembly, linguagem-c, compilador, arquitetura-de-computadores, sistemas-operacionais, abstracao, programacao-de-baixo-nivel-como-carreira, linguagem-natural-como-camada-de-abstracao, alto-nivel-antes-do-fundamento, abi, context-switch, transpilador (concepts); ffmpeg (entity).
+
+**Notas:** (1) Tensão de vocabulário, não factual: [[wiki/concepts/linguagem-c]] a chama de "baixo nível"; a fonte a trata como alto nível (registrado em [[wiki/concepts/alto-nivel-vs-baixo-nivel]]). (2) Explicação de UB como consequência só de diferenças de arquitetura é parcial. (3) Relato histórico (BCPL/PL/M, 8080) é do orador, não verificado externamente. (4) Autor e interlocutores do Discord não identificados. (5) Novos itens `draft`/`stub`.
+
+---
+
+## [2026-10-14] ingest | Gemini Embedding 2 — embedding multimodal do Google (resumo técnico)
+
+**Fonte:** transcrição colada pelo usuário (legenda automática, PT-BR), limpa em `raw/gemini-embedding-2-embedding-multimodal-google.md` (sem tradução, já em português; ASR corrigido: "Bering 2"/"beding 2"→Gemini Embedding 2, "Rug"→RAG, "Ligo"→leigo, "BTECs"→big techs; "mo"→MOV e "Vertex"→Vertex AI inferidos; apresentador não identificado).
+
+**Skill:** tech-mentor-ai (SKILL.md + `references/ai/embeddings-semantic-search.md`; `multimodal-unified.md` indicado no índice). Carregada de `/home/gabriel-martins/Documentos/skills/` (o caminho `/home/nemomartins/...` do CLAUDE.md não existe neste ambiente). A skill não cobre o Gemini Embedding 2 especificamente; cobre MRL, CLIP/ImageBind e BGE-M3.
+
+**Criado:** [[wiki/sources/gemini-embedding-2-embedding-multimodal-google]]; conceitos embedding-multimodal, aritmetica-de-vetores-semanticos, reducao-de-dimensoes-de-embedding, busca-visual-por-similaridade, cnn-rede-neural-convolucional (stub), custo-e-privacidade-de-embedding-via-api; entidade gemini-embedding-2.
+
+**Tocadas (12):** embedding-vectors, busca-semantica, similaridade-de-cosseno, vector-store, chunking, busca-por-palavra-chave, rag-como-ferramenta-de-busca, confidencialidade-de-dados-em-prompts-ia, recurrent-neural-network, ocr, hybrid-search (concepts); google (entity).
+
+**Notas:** (1) Sem contradição com a wiki; estende [[wiki/concepts/embedding-vectors]] (antes só token/texto) para multimodal. (2) Limites por chamada, 3072 dims e 100+ idiomas são relatados pelo apresentador a partir da página do Google; não verificados na documentação oficial. (3) Afirmação de que o Google treinaria com os dados enviados é especulação (ToS não lidos). (4) Apresentador não testou o modelo; "muito poderoso" é impressão. (5) Exemplo de site de roupas e rei−homem+mulher são hipotéticos/didáticos. (6) Novos itens `draft`/`stub`.

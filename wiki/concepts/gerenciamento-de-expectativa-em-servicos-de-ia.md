@@ -3,8 +3,8 @@ type: concept
 title: "Gerenciamento de Expectativa em Serviços de IA"
 aliases: ["gestão de expectativa com cliente", "MVP como ferramenta de descoberta de escopo", "controle de hype do cliente", "e-mail semanal de status"]
 date_created: 2026-09-04
-date_updated: 2026-09-04
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [servicos-de-ia, consultoria, escopo, mvp, gerenciamento-de-expectativas, hype, clientes]
 skill: tech-mentor-leadership
 status: draft
@@ -53,3 +53,9 @@ O fenômeno de fundo é o mesmo [[wiki/concepts/scope-creep]] já descrito para 
 ## Key Sources
 
 - [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]]
+
+## Atualização 2026-10-14
+
+[[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]: o autor critica quem promete a transformação e não entrega; no modelo por resultado ([[wiki/concepts/cobranca-por-resultado-em-servicos-de-ia]]) o cliente precisa entender a oferta e a métrica — gerenciar expectativa vira parte do contrato.
+
+- [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]

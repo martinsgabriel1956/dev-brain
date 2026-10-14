@@ -3,8 +3,8 @@ type: concept
 title: "Virtual DOM"
 aliases: ["VDOM", "virtual dom diffing"]
 date_created: 2026-08-03
-date_updated: 2026-08-04
-source_count: 2
+date_updated: 2026-10-14
+source_count: 3
 tags: [frontend, virtual-dom, reatividade, react, vue, performance]
 skill: tech-mentor-frontend
 status: stable
@@ -37,3 +37,6 @@ Frameworks baseados em [[wiki/concepts/signals]] (Solid.js, Svelte, Vue via `ref
 
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
 - [[wiki/sources/react-reconciliacao-memo-usememo-usecallback]] — demonstração prática no React DevTools Profiler de que gerar uma nova versão na Virtual DOM não implica tocar o DOM real
+
+## Key sources (adição 2026-10-14)
+- [[wiki/sources/historia-do-front-end-akita-ep4]] — contexto histórico: mudar o estado e deixar o Virtual DOM redesenhar ([[wiki/concepts/single-page-application]])

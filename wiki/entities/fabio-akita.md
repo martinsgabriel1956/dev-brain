@@ -3,8 +3,8 @@ type: entity
 title: "Fábio Akita"
 aliases: ["Akita", "Akita On Rails"]
 date_created: 2026-05-16
-date_updated: 2026-09-23
-source_count: 13
+date_updated: 2026-10-14
+source_count: 14
 tags: [pessoa, programador, youtuber, brasil]
 skill: tech-mentor-leadership
 status: stable
@@ -89,3 +89,6 @@ Em [[wiki/sources/sobre-ser-gerente-fabio-akita]], apresenta sua visão mais amp
 - [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]] — vídeo dos 300 mil inscritos; teoria geral sobre aprendizado/gestão via quebra do determinismo newtoniano, origem do movimento de qualidade (Deming, Goldratt, Six Sigma), tese "PDCA=DMAIC=Kaizen=Scrum=método científico", hipótese da beira do caos
 - [[wiki/sources/sobre-ser-gerente-fabio-akita]] — teoria consolidada sobre gestão de projetos e pessoas: crítica a PMP/MBA, quarta variável invisível (qualidade), programador como arquiteto (não operário), "nível A contrata nível A", gestor precisa ter sido praticante, confiança ≠ amizade
 - [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] — citado por André Casciotti: 'não terceirize suas decisões'
+
+## Key sources (adição 2026-10-14)
+- [[wiki/sources/historia-do-front-end-akita-ep4]] — episódio 4 do Developer World Map: história do front end como método de estudo ([[wiki/concepts/historia-do-front-end]])

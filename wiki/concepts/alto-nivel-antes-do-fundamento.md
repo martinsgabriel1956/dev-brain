@@ -3,8 +3,8 @@ type: concept
 title: "Alto Nível Antes do Fundamento"
 aliases: ["ordem invertida de aprendizado", "top-down learning path", "fundamento sob demanda"]
 date_created: 2026-08-17
-date_updated: 2026-10-08
-source_count: 5
+date_updated: 2026-10-14
+source_count: 6
 tags: [aprendizado, carreira, junior, ensino, fundamentos]
 skill: tech-mentor-leadership
 status: stub
@@ -66,3 +66,7 @@ Esta tese está em tensão parcial, não em contradição direta, com a leitura 
 ## Key sources (adição 2026-10-08)
 
 - [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — Contraponto: Balta defende que teoria/fundamentos são o que sobra ao dev quando a IA escreve o código ([[wiki/concepts/fundamentos-e-teoria-na-era-da-ia]]).
+
+## Key sources (adição 2026-10-14)
+
+- [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]] — nota de vocabulário: "alto nível" aqui é ordem de aprendizado, distinto de "alto nível" como abstração sobre hardware ([[wiki/concepts/alto-nivel-vs-baixo-nivel]])

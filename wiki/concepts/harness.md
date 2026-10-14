@@ -3,8 +3,8 @@ type: concept
 title: "Harness"
 aliases: ["AI harness", "harness de IA", "coding harness"]
 date_created: 2026-06-02
-date_updated: 2026-10-07
-source_count: 28
+date_updated: 2026-10-14
+source_count: 29
 tags: [harness, llm, tool-call, agente, context-engineering, erros-compostos, verificacao]
 skill: tech-mentor-ai
 status: stable
@@ -210,3 +210,9 @@ Fonte curta que define harness como tudo menos o modelo e traz o princípio de [
 ## Key sources (adição 2026-10-07)
 
 - [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] — middlewares de contexto (select de memória/tools, compactação) como parte do harness do agente
+
+## Atualização 2026-10-14
+
+[[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]: na [[wiki/concepts/operacao-como-servico-de-ia|operação como serviço]], a harness do prestador é melhorada com dado real de cada cliente da mesma vertical ([[wiki/concepts/ia-vertical]]), virando vantagem competitiva e permitindo escalar sem crescer a equipe na mesma proporção (alegação do autor).
+
+- [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]

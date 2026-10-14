@@ -3,8 +3,8 @@ type: entity
 title: "Ffmpeg"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-22
-source_count: 2
+date_updated: 2026-10-14
+source_count: 3
 tags: [ffmpeg]
 skill: tech-mentor-system-design
 status: stub
@@ -27,3 +27,7 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 
 - [[wiki/sources/case-youtube-streaming]]
 - [[wiki/sources/como-multiplas-linguagens-vivem-num-unico-binario]]
+
+## Key sources (adição 2026-10-14)
+
+- [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]] — exemplo de projeto com partes em assembly por requisito de desempenho, misturado a código portável

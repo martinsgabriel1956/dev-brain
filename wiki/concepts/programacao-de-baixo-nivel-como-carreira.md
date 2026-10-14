@@ -3,8 +3,8 @@ type: concept
 title: "Programação de Baixo Nível como Caminho de Carreira"
 aliases: ["baixo nível como carreira", "drivers e recursos escassos", "carreira perto do SO"]
 date_created: 2026-10-06
-date_updated: 2026-10-06
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [carreira, baixo-nivel, sistema-operacional, drivers, especializacao]
 skill: tech-mentor-leadership
 status: stub
@@ -30,3 +30,7 @@ Trabalhar perto do processador e do SO (onde rodam inclusive sistemas web) é um
 ## Key sources
 
 - [[wiki/sources/senioridade-nao-e-so-tecnica-especializacao-negocio-dados-confianca-em-crise]]
+
+## Key sources (adição 2026-10-14)
+
+- [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]] — o que "baixo nível" significa tecnicamente (1:1 com a ISA) e que na prática se mistura com alto nível ([[wiki/concepts/alto-nivel-vs-baixo-nivel]])

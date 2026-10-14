@@ -3,8 +3,8 @@ type: concept
 title: "Arquitetura e Organização de Computadores"
 aliases: ["computer architecture", "arquitetura de von neumann", "organização de computadores", "pipeline de execução", "registradores"]
 date_created: 2026-08-27
-date_updated: 2026-08-27
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [cs-fundamentals, lang-systems, arquitetura, hardware, baixo-nivel]
 skill: cs-fundamentals
 status: stub
@@ -34,3 +34,7 @@ Dois livros de **John Hennessy** e **David Patterson** (Prêmio Turing 2017) sã
 ## Key sources
 
 - [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]]
+
+## Key sources (adição 2026-10-14)
+
+- [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]] — ISA, registradores e modos de endereçamento como o modelo da máquina ([[wiki/concepts/isa-instruction-set-architecture]]); retrocompatibilidade em [[wiki/concepts/retrocompatibilidade-x86]]

@@ -3,8 +3,8 @@ type: concept
 title: "Determinismo vs. Probabilismo em IA"
 aliases: ["ferramenta certa para a tarefa ia", "analise semantica vs analise deterministica", "llm como juiz determinístico"]
 date_created: 2026-07-27
-date_updated: 2026-10-09
-source_count: 5
+date_updated: 2026-10-14
+source_count: 6
 tags: [determinismo, robustez-de-sistemas, tokenizacao, era-agentica, harness-de-qualidade]
 skill: tech-mentor-ai
 status: draft
@@ -42,6 +42,10 @@ Usar um LLM para validação determinística é como usar um carro de corrida pa
 
 Prompt é probabilístico; trava no harness é determinística — [[wiki/concepts/trava-deterministica-no-harness]].
 
+## Adição (2026-10-14)
+
+Base conceitual: o LLM é probabilístico por construção (prevê o próximo token mais provável), diferente do software tradicional que devolve a mesma saída para a mesma entrada. [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
+
 ## Key Sources
 
 - [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]]
@@ -49,3 +53,4 @@ Prompt é probabilístico; trava no harness é determinística — [[wiki/concep
 - [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — reprodutibilidade de prompt e seus limites
 - [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — trava determinística vs prompt
 - [[wiki/sources/o-que-e-um-algoritmo-propriedades-pseudocodigo-sistemas-de-recomendacao]] — 'algoritmo' de redes sociais = [[wiki/concepts/sistema-de-recomendacao]], 'sem mágica' mas com modelos estatísticos
+- [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — LLM probabilístico vs. software tradicional, explicação de base

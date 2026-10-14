@@ -3,8 +3,8 @@ type: concept
 title: "Forward Deployed Engineer"
 aliases: ["fde", "forward deployed ai engineer", "applied ai engineer", "deployment solutions engineer"]
 date_created: 2026-09-14
-date_updated: 2026-10-07
-source_count: 4
+date_updated: 2026-10-14
+source_count: 5
 tags: [carreira, mercado-de-trabalho, forward-deployed-engineer, ai-engineer, solutions-architect]
 skill: tech-mentor-leadership
 status: draft
@@ -64,3 +64,9 @@ Segundo o case de [[wiki/entities/thalis-pereira]] na fonte: certificação clou
 - [[wiki/sources/o-que-estudar-vale-a-pena-aprender-programar-com-ia]] — menção breve, sem dado novo: cargo citado como exemplo de "sênior decide, não só codifica"
 - [[wiki/sources/ai-engineer-forward-deployed-engineer-mercado-vagas-2026]] — definição, dados de demanda (True Up/Indeed), case real de entrevista e avaliação de carreira
 - [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]] — origem histórica na Palantir (2007-2010), etimologia militar do termo, adoção por AWS/nuvem e por OpenAI/Anthropic/Cohere/Cognition, recomendação de preparo (fundamentos)
+
+## Atualização 2026-10-14
+
+Quinta fonte: [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]] trata o FDE como peça do modelo [[wiki/concepts/operacao-como-servico-de-ia|operação]] — o prestador aloca um profissional dentro do cliente e gerencia a operação; cita OpenAI e Anthropic como migradas de só-API para harness + FDE (afirmação do autor, sem fonte; mesma confiança média já registrada). Ângulo novo: o FDE como **modelo de receita escalável** (a harness aprende com cada cliente), não só cargo.
+
+- [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]

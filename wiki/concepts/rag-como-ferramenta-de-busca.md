@@ -3,8 +3,8 @@ type: concept
 title: "RAG como Ferramenta de Busca"
 aliases: ["RAG é um problema de busca", "retrieval como tool", "agentic RAG (visão prática)"]
 date_created: 2026-09-29
-date_updated: 2026-09-29
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [rag, tool-use, retrieval, agentes]
 skill: tech-mentor-ai
 status: draft
@@ -24,3 +24,9 @@ Enquadramento em que RAG é, acima de tudo, um **problema de busca**. Depois que
 ## Key sources
 
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]]
+
+## Adição (2026-10-14)
+
+Um agente pode usar embedding multimodal como ferramenta de busca em arquivos de texto, imagem e vídeo: [[wiki/concepts/embedding-multimodal]].
+
+- [[wiki/sources/gemini-embedding-2-embedding-multimodal-google]] — RAG sobre arquivos locais de várias mídias via embedding multimodal

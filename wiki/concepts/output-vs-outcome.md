@@ -3,8 +3,8 @@ type: concept
 title: "Output vs. Outcome (métricas de produtividade)"
 aliases: ["output vs outcome", "metricas de output", "metricas de outcome", "volume vs valor"]
 date_created: 2026-08-10
-date_updated: 2026-09-15
-source_count: 3
+date_updated: 2026-10-14
+source_count: 4
 tags: [engineering-metrics, ia-produtividade, dora, space, goodharts-law]
 skill: tech-mentor-leadership
 status: draft
@@ -47,3 +47,9 @@ São escolhas diferentes que produzem resultados diferentes — e as métricas d
 - [[wiki/sources/paradoxo-da-aceleracao-ia-produtividade-metricas]]
 - [[wiki/sources/fatores-nao-tecnicos-codigo-ruim-bons-desenvolvedores-bernardo-lobato]] — caso sem IA: tickets fechados/deadline cumprido como métrica de output que não captura qualidade
 - [[wiki/sources/ia-produtividade-nao-reduz-trabalho-corrida-da-ia-profecia-autorrealizavel]] — mesma distinção elevada ao nível de sociedade: produtividade como output vs. bem-estar como outcome
+
+## Atualização 2026-10-14
+
+[[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]] aplica a distinção a vendas: o que se cobra deve ser a transformação (outcome), levado ao limite na [[wiki/concepts/cobranca-por-resultado-em-servicos-de-ia|cobrança por resultado]] (% das vendas do agente).
+
+- [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]

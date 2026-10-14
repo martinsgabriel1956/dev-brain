@@ -3,8 +3,8 @@ type: concept
 title: "Hipótese e Validação"
 aliases: ["hypothesis testing", "validar hipóteses", "testar suposições"]
 date_created: 2026-05-01
-date_updated: 2026-05-01
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [debugging, resolucao-de-problemas, pensamento-estruturado, dados]
 skill: tech-mentor-leadership
 status: stable
@@ -37,3 +37,7 @@ Sem validação, você pode passar dias resolvendo o ponto errado. Exemplo: acho
 ## Key Sources
 
 - [[wiki/sources/pensamento-estruturado-resolucao-de-problemas]]
+
+## Key sources (adição 2026-10-14)
+
+- [[wiki/sources/como-sair-do-ciclo-de-bugs-e-retrabalho-andre-casciotti]] — evidenciar o erro e provar a correção são a versão de bug da hipótese e validação ([[wiki/concepts/evidenciar-o-problema]], [[wiki/concepts/provar-que-corrigiu]])

@@ -3,8 +3,8 @@ type: concept
 title: "Testar o Próprio Código"
 aliases: ["self testing", "testes automatizados", "testar antes de entregar", "happy path só"]
 date_created: 2026-04-22
-date_updated: 2026-10-09
-source_count: 5
+date_updated: 2026-10-14
+source_count: 6
 tags: [testes, hábitos, qualidade, craftsmanship, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -69,3 +69,7 @@ Mesmo cobrindo erros e edge cases previstos, teste nenhum garante que não exist
 - [[wiki/sources/teste-unitario-integracao-e2e-opiniao]] — teste não previne bug não-imaginado, só regressão do que já foi pensado
 
 - [[wiki/sources/como-acabar-com-inseguranca-ao-entregar-codigo-andre-casciotti]] — Testar de verdade é validar o certo; roteiro escrito e cenário que escapou entra no plano ([[wiki/concepts/plano-de-testes-escrito]])
+
+## Key sources (adição 2026-10-14)
+
+- [[wiki/sources/como-sair-do-ciclo-de-bugs-e-retrabalho-andre-casciotti]] — testar a correção do próprio bug com o mesmo teste antes/depois ([[wiki/concepts/provar-que-corrigiu]]); confiança no 'olho' do experiente ([[wiki/concepts/armadilha-da-certeza-do-dev-experiente]])

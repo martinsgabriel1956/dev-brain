@@ -3,8 +3,8 @@ type: concept
 title: "Entender o Contexto da Demanda"
 aliases: ["análise de requisitos como habilidade de carreira", "urgência e importância", "contexto cumulativo"]
 date_created: 2026-09-30
-date_updated: 2026-10-09
-source_count: 2
+date_updated: 2026-10-14
+source_count: 3
 tags: [carreira, requisitos, contexto, senioridade, comunicacao]
 skill: tech-mentor-leadership
 status: draft
@@ -32,3 +32,7 @@ Para [[wiki/entities/andre-casciotti]], pegar uma demanda **sem saber urgência 
 - [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]
 
 - [[wiki/sources/como-acabar-com-inseguranca-ao-entregar-codigo-andre-casciotti]] — Contexto como base de escolhas conscientes ([[wiki/concepts/escolhas-conscientes-sob-pressao]])
+
+## Key sources (adição 2026-10-14)
+
+- [[wiki/sources/como-sair-do-ciclo-de-bugs-e-retrabalho-andre-casciotti]] — aplicado a bugs: entender o fluxo de negócio e por que o código está assim antes de editar ([[wiki/concepts/tres-passos-para-lidar-com-bug]])

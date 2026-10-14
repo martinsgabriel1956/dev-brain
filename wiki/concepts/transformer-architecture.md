@@ -3,8 +3,8 @@ type: concept
 title: "Transformer Architecture"
 aliases: ["transformers", "arquitetura transformer"]
 date_created: 2026-09-18
-date_updated: 2026-10-09
-source_count: 3
+date_updated: 2026-10-14
+source_count: 4
 tags: [transformers, llm-fundamentals, self-attention, embeddings, attention-is-all-you-need]
 skill: tech-mentor-ai
 status: stable
@@ -52,8 +52,13 @@ Self-attention é O(n²) no comprimento da sequência — para n tokens, a matri
 
 [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] apresenta [[wiki/concepts/memory-caching-rnn]]: RNNs com checkpoints de estado fecham parte do gap de recall vs Transformer sem custo O(L²) — mas o Transformer segue líder em recall *in-context*. Contraste com [[wiki/concepts/recurrent-neural-network]].
 
+## Adição (2026-10-14)
+
+Visão introdutória: o Transformer analisa todos os tokens **simultaneamente** (não em sequência), pesa relevância por atenção e prevê o próximo token; é uma arquitetura de rede neural, ou seja, ainda [[wiki/concepts/deep-learning]]; o treino paralelo em GPUs viabilizou modelos enormes. Exemplos: "ele/ela" (animal/rua) e "banco". [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
+
 ## Key Sources
 
 - [[wiki/sources/como-llms-funcionam]] — visão geral da arquitetura, complexidade O(n²), FlashAttention, MoE, Mamba/SSM como alternativas
 - [[wiki/sources/self-attention-mecanismo-transformers]] — deep dive no mecanismo de self-attention especificamente (tokens → embeddings → Q/K → attention score)
 - [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] — RNN com Memory Caching como alternativa ao custo quadrático
+- [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — visão didática: processamento simultâneo, atenção, previsão do próximo token, situado entre deep learning e LLM

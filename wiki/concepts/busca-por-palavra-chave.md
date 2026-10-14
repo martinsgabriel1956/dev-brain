@@ -3,8 +3,8 @@ type: concept
 title: "Busca por Palavra-chave"
 aliases: ["busca textual", "keyword search", "lexical search", "sparse retrieval"]
 date_created: 2026-09-29
-date_updated: 2026-09-29
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [rag, busca-textual, keyword-search, retrieval, bm25]
 skill: tech-mentor-ai
 status: draft
@@ -26,3 +26,9 @@ A fonte não diz qual algoritmo usa. Opções conhecidas: [[wiki/concepts/bm25]]
 ## Key sources
 
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — papel da palavra-chave e demo
+
+## Adição (2026-10-14)
+
+Na evolução do e-commerce, a busca por termos/metadados vem antes da [[wiki/concepts/busca-visual-por-similaridade]] e da busca semântica multimodal.
+
+- [[wiki/sources/gemini-embedding-2-embedding-multimodal-google]] — busca por metadados/termos como etapa anterior à busca visual e semântica

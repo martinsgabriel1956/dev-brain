@@ -3,8 +3,8 @@ type: concept
 title: "Equity Como Diferencial de Compensação"
 aliases: ["equity compensation", "rsu", "stock options", "equity tech"]
 date_created: 2026-04-29
-date_updated: 2026-07-09
-source_count: 2
+date_updated: 2026-10-14
+source_count: 3
 tags: [equity, compensacao, rsu, stock-options, big-tech, carreira]
 skill: tech-mentor-leadership
 status: stub
@@ -39,3 +39,9 @@ A maioria dos sites de salário não captura equity porque a maioria dos emprego
 
 - [[wiki/sources/trimodal-compensacao-tech]]
 - [[wiki/sources/como-eu-investiria-como-programador-ate-50000]] — estratégia prática de venda de RSU no momento do vesting
+
+## Atualização 2026-10-14
+
+[[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]] traz uma forma de equity fora do emprego: cobrar menos no projeto em troca de X% do produto do cliente ([[wiki/concepts/venda-por-projeto-de-ia]]), postergando o recebimento; o autor ressalva que não serve a quem precisa de capital agora.
+
+- [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]

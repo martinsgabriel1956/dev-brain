@@ -3,8 +3,8 @@ type: concept
 title: "jQuery"
 aliases: ["JQuery", "write less do more"]
 date_created: 2026-08-04
-date_updated: 2026-08-04
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [jquery, javascript, frontend, dom, legado, biblioteca]
 skill: tech-mentor-backend
 status: stub
@@ -29,3 +29,6 @@ Extremamente presente em aplicações corporativas, sistemas internos e portais 
 ## Key Sources
 
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]]
+
+## Key sources (adição 2026-10-14)
+- [[wiki/sources/historia-do-front-end-akita-ep4]] — 1ª geração de bibliotecas de compatibilidade entre navegadores ([[wiki/concepts/biblioteca-javascript-de-compatibilidade]])

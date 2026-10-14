@@ -3,8 +3,8 @@ type: concept
 title: "Production Bugs"
 aliases: ["bugs em produção", "project smell: production bugs", "lost test", "teste perdido", "missing unit test", "untested requirement", "neverfail test"]
 date_created: 2026-09-21
-date_updated: 2026-09-22
-source_count: 6
+date_updated: 2026-10-14
+source_count: 7
 tags: [testes, test-smell, project-smell, xunit, terminologia]
 skill: tech-mentor-testing
 status: stub
@@ -45,3 +45,7 @@ Criado a partir de uma fonte primária dedicada. As variações individuais (Los
 - [[wiki/sources/hard-to-test-code-xunitpatterns]] — segunda fonte a citar o padrão Humble Object, agora para código assíncrono em geral (não só Neverfail Test)
 - [[wiki/sources/frequent-debugging-xunitpatterns]] — segunda ocorrência independente de Infrequently Run Tests, agora como causa de depuração manual cara em vez de bug escapando para produção; cenário adjacente de Untested Requirement
 - [[wiki/sources/test-driven-bug-fixing-xunitpatterns]] — a resposta formalizada para o cenário de Untested Requirement: escrever o unit test que reproduz o bug antes de depurar e corrigir
+
+## Key sources (adição 2026-10-14)
+
+- [[wiki/sources/como-sair-do-ciclo-de-bugs-e-retrabalho-andre-casciotti]] — visão do dev: bugs em produção alimentam o [[wiki/concepts/ciclo-de-bugs-e-retrabalho]] quando a correção é feita e testada 'de qualquer jeito'

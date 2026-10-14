@@ -3,8 +3,8 @@ type: entity
 title: "Twitter"
 aliases: ["Twitter", "X"]
 date_created: 2026-08-24
-date_updated: 2026-08-24
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [oauth2, historia, api-economy]
 skill: tech-mentor-security
 status: stub
@@ -17,3 +17,6 @@ Rede social onde [[wiki/entities/blaine-cook]] trabalhava por volta de 2006-2007
 ## Key Sources
 
 - [[wiki/sources/historia-oauth2-antipadrao-senha-bernardo-lobato]] — origem do OAuth via Blaine Cook, engenheiro do Twitter
+
+## Key sources (adição 2026-10-14)
+- [[wiki/sources/historia-do-front-end-akita-ep4]] — criou o Less e o Bootstrap ([[wiki/entities/twitter-bootstrap]])

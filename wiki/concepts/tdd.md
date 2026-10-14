@@ -3,8 +3,8 @@ type: concept
 title: "TDD — Test-Driven Development"
 aliases: ["test driven development", "red green refactor", "desenvolvimento guiado por testes"]
 date_created: 2026-04-22
-date_updated: 2026-09-29
-source_count: 37
+date_updated: 2026-10-14
+source_count: 38
 tags: [testes, tdd, design, red-green-refactor, qualidade, dora, emergent-design]
 skill: tech-mentor-testing
 status: stable
@@ -192,3 +192,7 @@ Ambos insistem numa distinção que DHH, na leitura deles, mistura: **design de 
 - [[wiki/sources/test-driven-bug-fixing-xunitpatterns]] — fonte primária isolada da extensão do TDD para correção de bugs: escrever o unit test que reproduz o defeito antes de depurar e corrigir
 - [[wiki/sources/design-by-contract-video]] — DbC como técnica complementar de corretude, ao lado de testes ([[wiki/concepts/design-by-contract]])
 - [[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] — crítica opinativa ao TDD em nível de método; classe como unidade
+
+## Key sources (adição 2026-10-14)
+
+- [[wiki/sources/como-sair-do-ciclo-de-bugs-e-retrabalho-andre-casciotti]] — teste unitário como prova de correção e detector de mudança de entrada/saída em bugs, sem exigir cobertura total ([[wiki/concepts/provar-que-corrigiu]], [[wiki/concepts/analise-de-impacto-da-correcao]])

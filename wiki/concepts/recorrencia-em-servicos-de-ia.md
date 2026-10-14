@@ -3,8 +3,8 @@ type: concept
 title: "Recorrência em Serviços de IA"
 aliases: ["negócio de recorrência vs venda única", "retenção de cliente em consultoria de IA", "por que satisfação do cliente importa em serviços"]
 date_created: 2026-09-04
-date_updated: 2026-09-04
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [servicos-de-ia, consultoria, recorrencia, retencao, satisfacao-do-cliente, modelo-de-negocio]
 skill: tech-mentor-leadership
 status: draft
@@ -50,3 +50,9 @@ O hype de IA (ver [[wiki/concepts/hype-de-ia]]) pode ajudar a *vender* o primeir
 ## Key Sources
 
 - [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]]
+
+## Atualização 2026-10-14
+
+[[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]] dá a mecânica de recorrência por modelo: mensalidade de [[wiki/concepts/sustentacao-de-software-como-receita-recorrente|sustentação]], [[wiki/concepts/operacao-como-servico-de-ia|operação]] contínua e [[wiki/concepts/cobranca-por-resultado-em-servicos-de-ia|cobrança por resultado]]. Ver [[wiki/concepts/modelos-de-cobranca-de-servicos-de-ia]].
+
+- [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]

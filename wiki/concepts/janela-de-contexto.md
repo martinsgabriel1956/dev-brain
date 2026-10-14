@@ -3,8 +3,8 @@ type: concept
 title: "Janela de Contexto"
 aliases: ["context window", "context length", "janela de tokens"]
 date_created: 2026-05-18
-date_updated: 2026-10-07
-source_count: 8
+date_updated: 2026-10-14
+source_count: 9
 tags: [llm, tokens, agentes-ia, llmops]
 skill: tech-mentor-ai
 status: draft
@@ -60,6 +60,10 @@ Mesmo com janelas de contexto de até 1M de tokens disponíveis, a recomendaçã
 
 [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] mostra um mecanismo direto de como o número de subagentes afeta a janela do agente principal: cada subagente retorna um output ao terminar, e é o **acúmulo desses outputs** — não o volume de trabalho de cada subagente individualmente — que polui a janela do principal. Num benchmark de campo (mesma spec de 17 tasks), rodar tudo sem subagentes terminou com a janela do principal em 74%; agrupar as tasks em poucos subagentes coesos (3, no sweet spot testado) terminou com a janela em apenas 26% — margem que importa porque qualquer correção pós-implementação num one-shot já em 74% tende a saturar a janela de 200k tokens e degradar qualidade. Ver [[wiki/concepts/subagentes]].
 
+## Adição (2026-10-14)
+
+Janela de 128k tokens não equivale a 128k palavras: a razão tokens/palavra varia por idioma e conteúdo (≈1,3–1,7 em português). [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
+
 ## Key Sources
 
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
@@ -69,6 +73,7 @@ Mesmo com janelas de contexto de até 1M de tokens disponíveis, a recomendaçã
 - [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] — caso concreto de regra de negócio fora da janela (fila de auditoria de cobrança) e a analogia da pessoa vendada
 - [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] — outputs de subagentes acumulados na janela do principal escalam com o número de subagentes, não com o volume de trabalho; benchmark mostrando janela final de 26% (3 subagentes) vs. 74% (sem subagentes)
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — argumento para top-K enxuto: desempenho cai com contexto muito grande e chunks irrelevantes poluem a resposta ([[wiki/concepts/top-k-retrieval]])
+- [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — 128k tokens ≠ 128k palavras; razão varia por idioma
 
 ## Key sources (adição 2026-10-07)
 

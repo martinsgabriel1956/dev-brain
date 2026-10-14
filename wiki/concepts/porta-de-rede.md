@@ -3,8 +3,8 @@ type: concept
 title: "Porta de Rede"
 aliases: ["port", "port number", "well-known ports", "registered ports", "dynamic ports", "ephemeral ports"]
 date_created: 2026-07-15
-date_updated: 2026-07-15
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [porta, tcp-ip, iana, networking, cs-fundamentals]
 skill: tech-mentor-networking
 status: draft
@@ -52,3 +52,6 @@ No Windows, `netstat -n` lista conexões ativas (colunas: `Proto`, `Local Addres
 ## Key sources
 
 - [[wiki/sources/portas-de-rede-como-funcionam]]
+
+## Key sources (adição 2026-10-14)
+- [[wiki/sources/historia-do-front-end-akita-ep4]] — 80/22/443 e 3000/5000/8080 como convenções arbitrárias

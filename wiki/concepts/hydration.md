@@ -3,8 +3,8 @@ type: concept
 title: "Hydration"
 aliases: ["hidratação", "hydration mismatch", "arquitetura de ilhas", "islands architecture"]
 date_created: 2026-08-03
-date_updated: 2026-09-14
-source_count: 2
+date_updated: 2026-10-14
+source_count: 3
 tags: [frontend, ssr, hydration, islands-architecture, performance]
 skill: tech-mentor-frontend
 status: stable
@@ -38,3 +38,6 @@ Se só uma fração da página é interativa, hidratar tudo desperdiça JavaScri
 
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
 - [[wiki/sources/node-single-thread-ssr-bloqueio-event-loop]] — contexto de onde a hydration se encaixa: depois que o servidor já pagou o custo de CPU renderizando o HTML (potencialmente travando o event loop sob carga), o cliente ainda paga o custo de hidratar a página
+
+## Key sources (adição 2026-10-14)
+- [[wiki/sources/historia-do-front-end-akita-ep4]] — contexto: SPAs e renderização no cliente ([[wiki/concepts/single-page-application]])

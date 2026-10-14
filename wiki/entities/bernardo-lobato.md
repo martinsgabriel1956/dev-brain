@@ -3,8 +3,8 @@ type: entity
 title: "Bernardo Lobato"
 aliases: ["Bernardo Lobato"]
 date_created: 2026-06-05
-date_updated: 2026-10-09
-source_count: 25
+date_updated: 2026-10-14
+source_count: 26
 tags: [arquitetura-software, segurança, criador-de-conteudo, youtube, backend]
 skill: tech-mentor-security
 status: stub
@@ -43,3 +43,4 @@ Desenvolvedor e criador de conteúdo brasileiro. Publica vídeos toda sexta-feir
 - [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — vídeo sobre decisão arquitetural: cenário de monolito lento, "depende" como investigação, mito da padronização, trade-off como tese e "escolha os problemas que você quer ter"
 
 - [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — vídeo sobre CQRS: origem em CQS (Meyer), separação de modelos, quatro critérios de adoção, custos e casos em que não usar
+- [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — vídeo de fundamentos: mapa mental de 11 conceitos de IA (IA → ML → redes neurais → deep learning → IA generativa → Transformers → tokens → LLM → agentes), com opinião cautelosa sobre agentes

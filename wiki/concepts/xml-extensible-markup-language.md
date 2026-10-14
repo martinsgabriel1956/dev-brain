@@ -3,8 +3,8 @@ type: concept
 title: "XML (Extensible Markup Language)"
 aliases: ["Extensible Markup Language", "XML data format"]
 date_created: 2026-08-04
-date_updated: 2026-08-04
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [xml, formato-de-dados, interoperabilidade, legado, serializacao]
 skill: tech-mentor-backend
 status: stub
@@ -31,3 +31,6 @@ Documentos do Microsoft Office, projetos Java, arquivos de configuração, nota 
 ## Key Sources
 
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]]
+
+## Key sources (adição 2026-10-14)
+- [[wiki/sources/historia-do-front-end-akita-ep4]] — XML/XHTML e o abuso do XML como linguagem (ColdFusion, JSP)

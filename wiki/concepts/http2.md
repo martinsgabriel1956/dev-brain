@@ -3,8 +3,8 @@ type: concept
 title: "Http2"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-22
-source_count: 2
+date_updated: 2026-10-14
+source_count: 3
 tags: [http2]
 skill: tech-mentor-backend
 status: stub
@@ -27,3 +27,6 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 
 - [[wiki/sources/grpc]]
 - [[wiki/sources/http-tcp-quic]]
+
+## Key sources (adição 2026-10-14)
+- [[wiki/sources/historia-do-front-end-akita-ep4]] — reduz a necessidade de concatenar assets ([[wiki/concepts/pipeline-de-assets]])

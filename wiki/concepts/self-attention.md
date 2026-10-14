@@ -3,8 +3,8 @@ type: concept
 title: "Self-Attention"
 aliases: ["mecanismo de atenção", "attention mechanism", "scaled dot-product attention"]
 date_created: 2026-09-18
-date_updated: 2026-10-09
-source_count: 2
+date_updated: 2026-10-14
+source_count: 3
 tags: [self-attention, transformers, llm-fundamentals, attention-is-all-you-need]
 skill: tech-mentor-ai
 status: stable
@@ -64,7 +64,12 @@ Para n tokens, a matriz de atenção é n×n — custo quadrático no compriment
 
 [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] (via [[wiki/concepts/memory-caching-rnn]]) mostra que cachear estados em RNNs aproxima o desempenho do Transformer em benchmarks de 1,3B, sem atenção sobre toda a sequência.
 
+## Adição (2026-10-14)
+
+Explicação intuitiva: a atenção responde "quais partes da frase importam para entender esta palavra?"; o contexto desambigua "banco" (instituição vs. praça) e resolve referências ("ele" = animal ou rua). [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
+
 ## Key Sources
 
 - [[wiki/sources/self-attention-mecanismo-transformers]] — explicação didática completa do mecanismo (tokens → embeddings → Q/K → attention score → output), com a ressalva de que a fonte não cobre V nem detalha o cálculo matemático exato
 - [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] — Memory Caching como alternativa à atenção total
+- [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — intuição de atenção com exemplos de desambiguação (banco, animal/rua)

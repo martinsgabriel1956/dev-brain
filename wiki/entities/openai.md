@@ -3,8 +3,8 @@ type: entity
 title: "OpenAI"
 aliases: ["Open AI"]
 date_created: 2026-05-17
-date_updated: 2026-10-09
-source_count: 26
+date_updated: 2026-10-14
+source_count: 27
 tags: [openai, organização, llm, ia, cartao-corporativo, prompt-caching]
 skill: tech-mentor-ai
 status: stable
@@ -126,3 +126,9 @@ Segundo [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]], a OpenAI rela
 
 - [[wiki/sources/jev-typesafe-ai-system-one-model-decisoes-tipadas-codigo-fonte-tv]] — [[wiki/entities/diogo-almeida]] (ex-OpenAI, RLHF) fundou a [[wiki/entities/typesafe-ai]]; modelo barato da OpenAI substituído no caso Vercel
 - [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] — GPT Live 1 vs Gemini 3.8 Live em custo e benchmark de voz
+
+## Atualização 2026-10-14
+
+Citada em [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]] (afirmação do autor, sem fonte) como empresa que passou de só-API a harness + FDE em clientes B2B — ver [[wiki/concepts/operacao-como-servico-de-ia]].
+
+- [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]

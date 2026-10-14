@@ -3,8 +3,8 @@ type: concept
 title: "Tokenização"
 aliases: ["token", "tokens", "encode/decode llm", "vocabulário de tokens"]
 date_created: 2026-07-03
-date_updated: 2026-09-18
-source_count: 4
+date_updated: 2026-10-14
+source_count: 5
 tags: [tokenizacao, llm-fundamentals, tokens, vocabulario, bpe]
 skill: tech-mentor-ai
 status: stable
@@ -68,9 +68,14 @@ O ID de um token (posição no vocabulário) não carrega significado — só o 
 
 [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] traz um exemplo concreto do custo de a IA operar sobre tokens em vez de texto: um LLM não lê um programa fonte linha a linha como um humano — ele tokeniza o conteúdo, monta contexto e gera resposta por probabilidade. Isso explicou, no relato do autor, por que três LLMs diferentes (ChatGPT, Claude, Gemini) falhavam de forma inconsistente em uma checagem sintática trivial (identificar se um programa COBOL estava em free format ou fixed format) — uma tarefa que um parser determinístico resolve sem ambiguidade, mas que depende de reconstrução probabilística a partir de tokens para um LLM. Ver [[wiki/concepts/determinismo-vs-probabilismo-em-ia]].
 
+## Adição (2026-10-14)
+
+Visão introdutória: o modelo nunca vê palavras, só IDs numéricos sem significado próprio; subpalavras permitem representar milhões de palavras reutilizando tokens; português ≈ 1,3–1,7 tokens/palavra (aproximação); cobrança e janela são medidas em tokens. [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
+
 ## Key Sources
 
 - [[wiki/sources/tokens-llm-fundamentos-typescript]]
 - [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]] — caso real de falha em checagem sintática trivial por processamento via tokens em vez de leitura linha a linha
 - [[wiki/sources/tokens-o-que-sao-e-por-que-custam-caro]] — por que subword tokens vencem letra-por-letra e palavra-por-palavra; experimento comparando GPT-4o vs. Claude Opus 5
 - [[wiki/sources/self-attention-mecanismo-transformers]] — o que acontece depois da tokenização: ID de token → embedding vector → contexto via self-attention
+- [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — tokens como ponte texto→número, subpalavras, 1,3–1,7 tokens/palavra em português

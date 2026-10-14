@@ -3,8 +3,8 @@ type: concept
 title: "Risco Ocupacional do Dev"
 aliases: ["estresse de dev", "vender coco na praia", "cabeça inchada"]
 date_created: 2026-10-07
-date_updated: 2026-10-07
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [carreira, saude-mental, estresse, burnout]
 skill: tech-mentor-leadership
 status: draft
@@ -17,3 +17,7 @@ Para [[wiki/entities/andre-casciotti]], o estresse do dev é inerente à profiss
 ## Key Sources
 
 - [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — origem desta página
+
+## Key sources (adição 2026-10-14)
+
+- [[wiki/sources/como-sair-do-ciclo-de-bugs-e-retrabalho-andre-casciotti]] — carga mental de lidar com bug atrás de bug e gambiarra como parte normalizada da rotina ([[wiki/concepts/ciclo-de-bugs-e-retrabalho]])

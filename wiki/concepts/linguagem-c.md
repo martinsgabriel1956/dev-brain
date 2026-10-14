@@ -3,8 +3,8 @@ type: concept
 title: "Linguagem C"
 aliases: ["C", "C language", "linguagem C como fundação"]
 date_created: 2026-08-13
-date_updated: 2026-10-05
-source_count: 4
+date_updated: 2026-10-14
+source_count: 5
 tags: [cs-fundamentals, lang-systems, linguagens, aprendizado, fundamentos, performance, baixo-nivel]
 skill: cs-fundamentals
 status: stub
@@ -51,3 +51,7 @@ Em [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]], um artig
 - [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] — C como exigência prática (não só pedagógica) para qualquer projeto de baixo nível
 - [[wiki/sources/c-linguagem-do-futuro-na-era-da-ia-bora-tomar-cafe]] — tese de opinião: C como linguagem-alvo de código gerado por IA
 - [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — segunda leitura do mesmo tweet: C como ponto de equilíbrio entre desempenho e legibilidade (legível por muitos, ao contrário de assembly)
+
+## Key sources (adição 2026-10-14)
+
+- [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]] — por que C é "alto nível" para quem é de baixo nível: abstrai a arquitetura e ganha portabilidade ([[wiki/concepts/alto-nivel-vs-baixo-nivel]], [[wiki/concepts/portabilidade-de-codigo-entre-arquiteturas]], [[wiki/concepts/comportamento-indefinido]])

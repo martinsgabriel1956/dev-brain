@@ -3,8 +3,8 @@ type: concept
 title: "Causa Raiz (Root Cause)"
 aliases: ["root cause", "root cause analysis", "RCA", "causa raiz"]
 date_created: 2026-05-01
-date_updated: 2026-07-30
-source_count: 2
+date_updated: 2026-10-14
+source_count: 3
 tags: [debugging, resolucao-de-problemas, sre, pensamento-estruturado]
 skill: tech-mentor-leadership
 status: stable
@@ -54,3 +54,7 @@ Por que não existe o índice?
 
 - [[wiki/sources/pensamento-estruturado-resolucao-de-problemas]]
 - [[wiki/sources/arquitetura-frontend-dash-fornecedores-vs-microfrontends-super-roupas]] — aplicação em nível de decisão arquitetural (frontend/BFF vs. microfrontends)
+
+## Key sources (adição 2026-10-14)
+
+- [[wiki/sources/como-sair-do-ciclo-de-bugs-e-retrabalho-andre-casciotti]] — corrigir sintoma vs. causa raiz em bugs de código: um `if` no ponto do erro gera novos bugs e empilha gambiarra; 3 perguntas antes de editar (estado, fluxo de negócio, por que está assim); ver [[wiki/concepts/tres-passos-para-lidar-com-bug]]

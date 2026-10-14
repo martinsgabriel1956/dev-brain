@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-10-09
+date_updated: 2026-10-14
 ---
 
 
@@ -26,6 +26,12 @@ date_updated: 2026-10-09
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/gemini-embedding-2-embedding-multimodal-google]] | [[wiki/entities/gemini-embedding-2|Gemini Embedding 2]] (Google): [[wiki/concepts/embedding-multimodal|embedding multimodal]] (texto, imagem, vídeo, áudio, documento num só espaço, até 3072 dims) — limites por chamada exigem [[wiki/concepts/chunking|chunking]]; intuição ([[wiki/concepts/aritmetica-de-vetores-semanticos|rei−homem+mulher]]); quando CNN leve basta ([[wiki/concepts/busca-visual-por-similaridade|busca visual]]); custo e privacidade |
+| [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]] | Discussão de Discord (Recursive vs. anônimo) comentada: por que [[wiki/concepts/linguagem-c\|C]] é alto nível — baixo nível é 1:1 com a [[wiki/concepts/isa-instruction-set-architecture\|ISA]] (assembly), alto nível é abstração sobre o hardware que dá [[wiki/concepts/portabilidade-de-codigo-entre-arquiteturas\|portabilidade]]; assembly ainda necessário (troca de contexto, registradores fora de memória); história BCPL → B → C, [[wiki/concepts/retrocompatibilidade-x86\|retrocompatibilidade do x86]], [[wiki/concepts/comportamento-indefinido\|UB]] e [[wiki/concepts/dependencia-de-caminho-em-tecnologia\|dependência de caminho]] |
+| [[wiki/sources/como-sair-do-ciclo-de-bugs-e-retrabalho-andre-casciotti]] | [[wiki/entities/andre-casciotti|André Casciotti]]: sair do [[wiki/concepts/ciclo-de-bugs-e-retrabalho|ciclo de bugs e retrabalho]] (pressão→pressa→correção sem prova) com [[wiki/concepts/tres-passos-para-lidar-com-bug|3 passos]]: [[wiki/concepts/causa-raiz|causa raiz]], [[wiki/concepts/evidenciar-o-problema|evidenciar]], [[wiki/concepts/provar-que-corrigiu|provar que corrigiu]] (+ [[wiki/concepts/analise-de-impacto-da-correcao|impacto]], [[wiki/concepts/armadilha-da-certeza-do-dev-experiente|certeza do experiente]]); debug não é prova |
+| [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]] | [[wiki/entities/ronald-hulk|Ronald Hulk]]: serviço de IA vende [[wiki/concepts/transformacao-como-produto-de-servico-de-ia|transformação]], não modelo; cinco modelos de cobrança — [[wiki/concepts/venda-por-projeto-de-ia|projeto]] (ou preço menor + % do produto), [[wiki/concepts/sustentacao-de-software-como-receita-recorrente|constrói + sustentação]], [[wiki/concepts/operacao-como-servico-de-ia|operação]] ([[wiki/concepts/ia-vertical|IA vertical]] + [[wiki/concepts/forward-deployed-engineer|FDE]]), [[wiki/concepts/white-label-licenca-de-ia|white label]], [[wiki/concepts/cobranca-por-resultado-em-servicos-de-ia|resultado]] (risco dividido, exige métrica). Valores são exemplos; sem dados de mercado |
+| [[wiki/sources/historia-do-front-end-akita-ep4]] | [[wiki/entities/fabio-akita|Akita]] (ep. 4 do world map): história do front end como método de estudo — CGI → CSS → guerra dos navegadores → Rails/AJAX/Gmail → fim dos plugins → transpiladores/pipelines → SPAs e híbridos |
+| [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]]: mapa mental da IA moderna — [[wiki/concepts/inteligencia-artificial|IA]] → [[wiki/concepts/sistema-especialista|sistemas especialistas]] → [[wiki/concepts/machine-learning|ML]] → [[wiki/concepts/rede-neural-artificial|redes neurais]] → [[wiki/concepts/deep-learning|deep learning]] → [[wiki/concepts/ia-generativa|IA generativa]] → [[wiki/concepts/transformer-architecture|Transformers]] → [[wiki/concepts/tokenizacao|tokens]] → [[wiki/concepts/llm-large-language-model|LLM]] (probabilístico) → [[wiki/concepts/agente-ia|agentes]]; cada conceito resolve a limitação do anterior; fundamento vs. hype |
 | [[wiki/sources/url-vs-uri-diferenca-urn-identificacao-localizacao]] | Vídeo EN (traduzido): [[wiki/concepts/uri]] identifica um recurso; [[wiki/concepts/url]] identifica e localiza (onde/como); [[wiki/concepts/urn]] identifica por nome persistente (ISBN). Toda URL é URI, não o inverso; em APIs o termo é intercambiável; URI pode ser [[wiki/concepts/referencia-relativa-de-uri|relativa]] |
 | [[wiki/sources/como-acabar-com-inseguranca-ao-entregar-codigo-andre-casciotti]] | [[wiki/entities/andre-casciotti|André Casciotti]]: insegurança ao entregar vem de falta de clareza — 3 dicas: descobrir [[wiki/concepts/o-certo-e-um-combinado|o certo (um combinado formalizado)]], hábito de testar com [[wiki/concepts/plano-de-testes-escrito|roteiro escrito]], [[wiki/concepts/escolhas-conscientes-sob-pressao|escolhas conscientes sob pressão]] (contexto, aceitar, reportar risco, melhorar na próxima); "funcionar" = [[wiki/concepts/funcionar-e-resolver-problema|resolver o problema do usuário]] |
 | [[wiki/sources/o-que-e-um-algoritmo-propriedades-pseudocodigo-sistemas-de-recomendacao]] | Vídeo PT-BR introdutório: [[wiki/concepts/algoritmo]] = receita passo a passo com 4 propriedades (entrada, clareza/precisão, finitude, saída); [[wiki/concepts/pseudocodigo]]/fluxograma antes do código (caixa eletrônico); "algoritmo do TikTok" = [[wiki/concepts/sistema-de-recomendacao]] (centenas de modelos → score de relevância). Omite efetividade (Knuth) e complexidade |
@@ -865,6 +871,85 @@ date_updated: 2026-10-09
 | [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]]: **CQRS** como [[wiki/concepts/cqs|CQS]] (Meyer, 1988) elevado a modelos; quatro critérios de adoção, custos (sincronização, consistência eventual, debug) e quando não usar; independe de microsserviços/ES/Kafka |
 
 ## Concepts
+
+### Embeddings Multimodais — Gemini Embedding 2 (2026-10-14)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/embedding-multimodal]] | Várias mídias no mesmo espaço vetorial; busca cross-modal e pipeline unificado |
+| [[wiki/concepts/aritmetica-de-vetores-semanticos]] | rei − homem + mulher ≈ rainha: significado nas direções, não nas dimensões |
+| [[wiki/concepts/reducao-de-dimensoes-de-embedding]] | Pedir menos que 3072 dims: menos storage/latência, menos recall |
+| [[wiki/concepts/busca-visual-por-similaridade]] | CNN sem cabeça de classificação + cosseno; evolução metadados → visual → semântica |
+| [[wiki/concepts/cnn-rede-neural-convolucional]] | CNN/VGG16 como extrator de vetores de imagem (stub) |
+| [[wiki/concepts/custo-e-privacidade-de-embedding-via-api]] | Embedding proprietário: custo por chamada e envio de dados ao provedor |
+
+### Alto vs. Baixo Nível, ISA e Portabilidade (2026-10-14)
+
+- [[wiki/concepts/alto-nivel-vs-baixo-nivel]] — baixo = 1:1 com a ISA; alto = abstração sobre o hardware; C é alto nível por essa régua
+- [[wiki/concepts/isa-instruction-set-architecture]] — conjunto de instruções, endereçamento, registradores e extensões da CPU
+- [[wiki/concepts/portabilidade-de-codigo-entre-arquiteturas]] — mesmo programa em várias ISAs; o ganho central do alto nível
+- [[wiki/concepts/comportamento-indefinido]] — resíduo de C abstrair arquiteturas diferentes
+- [[wiki/concepts/retrocompatibilidade-x86]] — binários dos anos 80 sem fonte mantêm o x86 compatível
+- [[wiki/concepts/dependencia-de-caminho-em-tecnologia]] — C venceu por história e compiladores, não por perfeição
+- [[wiki/entities/zig]] — alternativa a C citada (stub)
+
+### Bugs, causa raiz e prova de correção (2026-10-14)
+
+- [[wiki/concepts/ciclo-de-bugs-e-retrabalho]] — pressão→pressa→correção/teste de qualquer jeito→bug volta
+- [[wiki/concepts/tres-passos-para-lidar-com-bug]] — hub: causa raiz → evidenciar → provar
+- [[wiki/concepts/evidenciar-o-problema]] — simular o erro antes de alterar (log, tela, QA, usuário)
+- [[wiki/concepts/provar-que-corrigiu]] — mesmo teste antes/depois; debug não é prova
+- [[wiki/concepts/analise-de-impacto-da-correcao]] — reuso e mudança de entrada/saída após corrigir
+- [[wiki/concepts/armadilha-da-certeza-do-dev-experiente]] — certeza vira correção e teste no olho
+- [[wiki/concepts/analise-de-requisitos-aplicada-a-bugs]] — validar = evidenciar e provar
+
+### Modelos de negócio de serviços de IA (2026-10-14)
+
+- [[wiki/concepts/modelos-de-cobranca-de-servicos-de-ia]] — hub: os 5 jeitos de cobrar serviço de IA, em tabela
+- [[wiki/concepts/transformacao-como-produto-de-servico-de-ia]] — vende-se a transformação do processo, não o modelo
+- [[wiki/concepts/venda-por-projeto-de-ia]] — projeto com aceite; variante preço menor + % do produto
+- [[wiki/concepts/sustentacao-de-software-como-receita-recorrente]] — projeto grande + mensalidade de suporte/manutenção/disponibilidade
+- [[wiki/concepts/operacao-como-servico-de-ia]] — prestador opera dentro do cliente (FDE); harness generaliza e escala
+- [[wiki/concepts/ia-vertical]] — vender numa direção só; engenharia e negócio inseparáveis
+- [[wiki/concepts/white-label-licenca-de-ia]] — licença com marca do revendedor (B2B2C)
+- [[wiki/concepts/cobranca-por-resultado-em-servicos-de-ia]] — % do resultado do agente; risco dividido; exige métrica clara
+
+### História do Front End (2026-10-14)
+
+- [[wiki/concepts/historia-do-front-end]] — linha do tempo da web como método de estudo
+- [[wiki/concepts/cgi-common-gateway-interface]] — web dinâmica via executáveis
+- [[wiki/concepts/regex-expressao-regular]] — regex, via Perl/CGI
+- [[wiki/concepts/servidor-web-vs-servidor-de-aplicacao]] — servir HTML vs. executar programas
+- [[wiki/concepts/html-hipertexto]] — HTML e hipertexto
+- [[wiki/concepts/css]] — estilo separado de conteúdo
+- [[wiki/concepts/guerra-dos-navegadores]] — IE × Netscape
+- [[wiki/concepts/framework-web]] — frameworks server-side e Rails
+- [[wiki/concepts/biblioteca-javascript-de-compatibilidade]] — jQuery/Prototype
+- [[wiki/concepts/ajax]] — requisições assíncronas
+- [[wiki/concepts/single-page-application]] — SPAs e componentes
+- [[wiki/concepts/design-responsivo]] — media queries, mobile
+- [[wiki/concepts/plugin-de-navegador]] — applets, ActiveX, Flash
+- [[wiki/concepts/transpilador]] — Sass, Less, CoffeeScript, Babel
+- [[wiki/concepts/gerenciador-de-pacotes]] — CPAN, Bundler, npm
+- [[wiki/concepts/pipeline-de-assets]] — minificar, concatenar, Webpack
+- [[wiki/concepts/aplicativo-hibrido]] — Electron, React Native
+- [[wiki/concepts/sandbox]] — execução com baixo privilégio
+
+### Fundamentos da IA Moderna — de regras a agentes (2026-10-14)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/inteligencia-artificial]] | Guarda-chuva (Dartmouth, 1956) e mapa da evolução |
+| [[wiki/concepts/sistema-especialista]] | Regras escritas à mão: base de conhecimento + motor de inferência |
+| [[wiki/concepts/machine-learning]] | Aprender de exemplos em vez de regras (Samuel, 1959) |
+| [[wiki/concepts/aprendizado-supervisionado]] | Treino com gabarito (stub) |
+| [[wiki/concepts/modelo-de-machine-learning]] | O artefato treinado que roda em produção |
+| [[wiki/concepts/rede-neural-artificial]] | Neurônios + pesos; exemplo dos dígitos 28×28 |
+| [[wiki/concepts/backpropagation]] | Ajuste coordenado de pesos pelo erro (stub) |
+| [[wiki/concepts/inverno-da-ia]] | Perceptrons (1969) e o primeiro inverno (stub) |
+| [[wiki/concepts/deep-learning]] | Muitas camadas = abstrações hierárquicas; AlexNet 2012 |
+| [[wiki/concepts/ia-generativa]] | Definida pelo objetivo: criar conteúdo novo |
+| [[wiki/concepts/llm-large-language-model]] | Transformer em escala; probabilístico, prevê o próximo token |
 
 ### URI, URL e URN — Identificar vs. Localizar (2026-10-09)
 
@@ -3045,6 +3130,13 @@ date_updated: 2026-10-09
 
 ## Entities
 
+- [[wiki/entities/gemini-embedding-2]] — embedding multimodal do Google (texto, imagem, vídeo, áudio, documento; 3072 dims)
+- [[wiki/entities/apache-http-server]] — servidor web open source ("patchy")
+- [[wiki/entities/netscape]] — perdeu a guerra e originou a Mozilla
+- [[wiki/entities/ruby-on-rails]] — framework que moldou o front moderno
+- [[wiki/entities/adobe-flash]] — plugin que morreu com o iPhone
+- [[wiki/entities/gmail]] — 1ª web app a substituir um app nativo
+- [[wiki/entities/twitter-bootstrap]] — framework de CSS
 - [[wiki/entities/google-cloud-platform]] — Cloud do Google: +82% a/a, backlog ~US$ 514 bi
 - [[wiki/entities/google-research]] — pesquisa de eficiência (Memory Caching)
 - [[wiki/entities/gemini-live]] — Gemini 3.8 Live, speech-to-speech barato
@@ -3242,6 +3334,9 @@ date_updated: 2026-10-09
 | [[wiki/entities/margaret-storey]] | Professora, University of Victoria, Canada Research Chair — cunhou "cognitive debt" (2026) sobre a base teórica de Peter Naur |
 | [[wiki/entities/peter-naur]] | Turing Award 2005 — Backus-Naur Form (gramática) e "Programming as Theory Building" (1985), base de "cognitive debt" |
 | [[wiki/entities/bernardo-lobato]] | Desenvolvedor e criador de conteúdo brasileiro — arquitetura de software e padrões avançados |
+| [[wiki/entities/arthur-samuel]] | Pesquisador da IBM que cunhou "machine learning" (1959) com um programa de damas |
+| [[wiki/entities/frank-rosenblatt]] | Criador do Perceptron (1958), primeiro modelo de rede neural que aprende de exemplos |
+| [[wiki/entities/alexnet]] | Rede profunda que venceu a ImageNet em 2012 e marcou a virada do deep learning |
 | [[wiki/entities/linuxtips]] | Plataforma brasileira de educação em tecnologia — DevOps, Cloud, Kubernetes, podcast Papinho Tech Solo |
 | [[wiki/entities/renato-augusto]] | Desenvolvedor e criador de conteúdo brasileiro — padrões de projeto GoF e orientação a objetos, carreira e soft skills |
 | [[wiki/entities/dale-carnegie]] | Autor de "Como Fazer Amigos e Influenciar Pessoas" (1936) — confiança e influência genuína como base da habilidade interpessoal |

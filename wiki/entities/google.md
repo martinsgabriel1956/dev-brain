@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-10-09
-source_count: 15
+date_updated: 2026-10-14
+source_count: 16
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -69,3 +69,9 @@ Em [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-
 - [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — modelos Gemini de chat e de embedding usados via [[wiki/entities/spring-ai]] no demo de RAG
 - [[wiki/sources/dotenv-arquivo-env-boas-praticas-secret-manager]] — Google Secret Manager citado como cofre
 - [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] — debate sobre corrida da IA: cloud +82%, TPU, Memory Caching, Gemini 3.8 Live
+
+## Adição (2026-10-14)
+
+Lançou o [[wiki/entities/gemini-embedding-2]] (embedding multimodal); crítica do apresentador: custo e envio de dados à API ([[wiki/concepts/custo-e-privacidade-de-embedding-via-api]]).
+
+- [[wiki/sources/gemini-embedding-2-embedding-multimodal-google]] — Gemini Embedding 2, embedding multimodal em 3072 dimensões

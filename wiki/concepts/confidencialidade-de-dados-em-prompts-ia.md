@@ -3,8 +3,8 @@ type: concept
 title: "Confidencialidade de Dados em Prompts de IA"
 aliases: ["nao jogar dado sigiloso na ia", "confidencialidade prompt", "vazamento de dados via chatgpt"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [ia, seguranca, confidencialidade, dados-sensiveis]
 skill: tech-mentor-ai
 status: stub
@@ -26,3 +26,9 @@ Um arquiteto pode usar IA para brainstorm de arquitetura, discutir alternativas 
 ## Key Sources
 
 - [[wiki/sources/vibe-coding-limites-maturidade-profissional]]
+
+## Adição (2026-10-14)
+
+O mesmo risco vale para embeddings: ver [[wiki/concepts/custo-e-privacidade-de-embedding-via-api]].
+
+- [[wiki/sources/gemini-embedding-2-embedding-multimodal-google]] — enviar documentos a API de embedding também expõe dados ao provedor

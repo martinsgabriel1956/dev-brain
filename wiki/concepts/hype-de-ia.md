@@ -3,8 +3,8 @@ type: concept
 title: "Hype de IA"
 aliases: ["hype ia", "ia hype", "narrativa ia investidores"]
 date_created: 2026-05-31
-date_updated: 2026-09-29
-source_count: 5
+date_updated: 2026-10-14
+source_count: 6
 tags: [hype-de-ia, fomo-tecnologico, era-agentica, roi-de-ia, ai-washing]
 skill: tech-mentor-ai
 status: stable
@@ -80,6 +80,10 @@ Este documento foca no hype de IA especificamente (financiado por VC), mas o pad
 
 Além do ciclo de capital, há a pressão organizacional: cases anunciados, fornecedores "com IA" e conferências levam acionistas/clientes a pressionar o CEO, que pergunta ao CIO pela "estratégia de IA" antes de existir um problema — [[wiki/concepts/isomorfismo-mimetico]]. Teste: a empresa precisa de IA para resolver um problema real ou para mostrar que também usa IA? ([[wiki/concepts/problema-antes-da-tecnologia]]).
 
+## Adição (2026-10-14)
+
+Uso conceitual: confusão de termos (IA, IA generativa, LLM, agentes) facilita comprar produto sem entender o que é; o autor propõe aprender a evolução dos conceitos como antídoto. Cautela com agentes como "expectativa puxada pelo hype" (opinião, sem dados). [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
+
 ## Key Sources
 
 - [[wiki/sources/ia-nao-vai-substituir-desenvolvedor-2026-governanca-seguranca]] — governança e segurança como temas centrais internamente nas empresas, mas ausentes do mainstream por não gerarem hype/engajamento
@@ -87,3 +91,4 @@ Além do ciclo de capital, há a pressão organizacional: cases anunciados, forn
 - [[wiki/sources/como-identificar-o-proximo-hype-tecnologico]]
 - [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]] — hype como risco de scope creep vindo do cliente, em vez de fenômeno de mercado
 - [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — hype de IA como pressão institucional: CEO/acionistas/clientes → "estratégia de IA" antes do problema (isomorfismo mimético)
+- [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — antídoto conceitual: entender a evolução dos termos; cautela com agentes

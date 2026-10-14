@@ -3,8 +3,8 @@ type: concept
 title: "Embedding Vectors"
 aliases: ["embeddings de token", "word embeddings", "token embeddings", "matriz de embeddings"]
 date_created: 2026-09-18
-date_updated: 2026-10-06
-source_count: 3
+date_updated: 2026-10-14
+source_count: 5
 tags: [embeddings, llm-fundamentals, tokenizacao, transformers, self-attention]
 skill: tech-mentor-ai
 status: stable
@@ -38,8 +38,19 @@ Um embedding vector representa a média de **todos** os usos do token no corpus 
 - [[positional-encoding]] — vetor somado ao embedding para injetar informação de ordem
 - [[transformer-architecture]] — arquitetura onde embeddings são a primeira camada de processamento
 
+## Adição (2026-10-14)
+
+Nota: o vídeo trata a conversão texto→IDs numéricos de tokens, mas não aprofunda embeddings; ver [[wiki/concepts/tokenizacao]] para o passo anterior. [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
+
 ## Key Sources
 
 - [[wiki/sources/self-attention-mecanismo-transformers]] — explicação didática de como a matriz de embeddings é treinada e por que sozinha não resolve ambiguidade contextual; cita demonstrações do Hugging Face e do TensorFlow Embedding Projector
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — no uso em RAG, chunk e pergunta viram embeddings e são comparados por [[wiki/concepts/similaridade-de-cosseno]] ([[wiki/concepts/busca-semantica]])
 - [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — uso de embeddings de documento/consulta (modelos OpenAI/Gemini) para busca por similaridade num [[wiki/concepts/vector-store]]; distinto do embedding de token desta página
+- [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — contexto: tokens → IDs; embeddings não aprofundados
+
+## Adição (2026-10-14)
+
+Embeddings não são só de texto: ver [[wiki/concepts/embedding-multimodal]] (mesmo espaço para várias mídias), [[wiki/concepts/aritmetica-de-vetores-semanticos]] (significado nas direções, não nas dimensões isoladas) e [[wiki/concepts/reducao-de-dimensoes-de-embedding]].
+
+- [[wiki/sources/gemini-embedding-2-embedding-multimodal-google]] — versão multimodal do embedding (texto, imagem, vídeo, áudio) em 3072 dimensões; intuição rei − homem + mulher

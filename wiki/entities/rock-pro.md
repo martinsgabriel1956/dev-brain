@@ -3,8 +3,8 @@ type: entity
 title: "Rock Pro"
 aliases: ["harness de aprendizado do Ronald Hulk"]
 date_created: 2026-09-29
-date_updated: 2026-10-07
-source_count: 4
+date_updated: 2026-10-14
+source_count: 5
 tags: [produto, harness, rag, demo]
 skill: tech-mentor-ai
 status: stub
@@ -24,3 +24,9 @@ Ver [[wiki/concepts/harness]].
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]]
 - [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]] — usada como exemplo de prefixo cacheável
 - [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] — usada para explicar quantização e demonstrar throughput ao vivo
+
+## Atualização 2026-10-14
+
+Citada em [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]] como um dos negócios do autor (operação/harness); a transcrição grafa "Rockpr" (corrigido).
+
+- [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]

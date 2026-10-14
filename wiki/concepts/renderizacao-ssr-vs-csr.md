@@ -3,8 +3,8 @@ type: concept
 title: "Renderização SSR vs. CSR"
 aliases: ["server-side rendering", "client-side rendering", "SSR", "CSR", "SSR vs CSR"]
 date_created: 2026-09-14
-date_updated: 2026-09-14
-source_count: 1
+date_updated: 2026-10-14
+source_count: 2
 tags: [frontend, ssr, csr, nodejs, event-loop, performance, nextjs]
 skill: lang-dynamic
 status: stable
@@ -49,3 +49,6 @@ No CSR puro não há esse passo; no SSR, depois que o HTML chega pronto, o JavaS
 ## Key Sources
 
 - [[wiki/sources/node-single-thread-ssr-bloqueio-event-loop]]
+
+## Key sources (adição 2026-10-14)
+- [[wiki/sources/historia-do-front-end-akita-ep4]] — origem histórica: templates no servidor (PHP/ASP) vs. SPAs que movem o estado ao cliente
