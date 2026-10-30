@@ -3,8 +3,8 @@ type: concept
 title: "Canary Release"
 aliases: ["canary deploy", "canary release", "lançamento canário"]
 date_created: 2026-04-22
-date_updated: 2026-07-31
-source_count: 4
+date_updated: 2026-10-26
+source_count: 5
 tags: [devops, deploy, cicd, canary, observabilidade, argo-rollouts, infra]
 skill: tech-mentor-infra
 status: stable
@@ -89,3 +89,7 @@ Mecanicamente parecido (split de tráfego por percentual), mas o objetivo é dif
 - [[wiki/sources/tipos-de-deploy]]
 - [[wiki/sources/rapid-release-at-massive-scale-facebook]] — caso real (Meta/Facebook) de rollout escalonado em escala massiva
 - [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — cita o caso da Meta de segunda mão, como ilustração didática da distinção deploy/release
+
+## Key sources (adição 2026-10-26)
+
+- [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]] — a camada 7 da Anthropic (flag interna → release gradual → conserto/revert) é descrita como "parecida com canary" e sustenta a tolerância a menos revisão ([[wiki/concepts/confianca-por-reversibilidade]]).

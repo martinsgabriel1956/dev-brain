@@ -3,8 +3,8 @@ type: concept
 title: "Evals Llm"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-10-07
-source_count: 5
+date_updated: 2026-10-26
+source_count: 6
 tags: [evals-llm]
 skill: tech-mentor-ai
 status: stub
@@ -37,3 +37,7 @@ Ver [[wiki/concepts/golden-dataset]] e [[wiki/concepts/teste-de-regressao-de-pro
 ## Key sources (adição 2026-10-07)
 
 - [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] — lacuna: a demo mede tokens, não qualidade das respostas — pede eval
+
+## Key sources (adição 2026-10-26)
+
+- [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]] — incidentes viram casos de eval do revisor; toda mudança de prompt/modelo/ferramenta roda contra eles ([[wiki/concepts/eval-de-revisor-a-partir-de-incidentes]]); juiz de IA em [[wiki/concepts/llm-as-judge]].

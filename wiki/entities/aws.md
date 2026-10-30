@@ -3,8 +3,8 @@ type: entity
 title: "AWS"
 aliases: ["amazon web services"]
 date_created: 2026-09-15
-date_updated: 2026-09-29
-source_count: 5
+date_updated: 2026-10-30
+source_count: 7
 tags: [empresa, cloud, forward-deployed-engineer, solutions-architect]
 skill: tech-mentor-leadership
 status: stub
@@ -24,6 +24,8 @@ Segundo [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]],
 
 Citada como exemplo do modelo em que se compra **capacidade, não hardware**; a fonte diz que a virtualização não nasceu com ela ([[wiki/concepts/virtualizacao]]).
 
+**Atualização 2026-10-26:** Provider AWS do Terraform: [[wiki/concepts/terraform-provider]], [[wiki/concepts/ec2]].
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — hyperscaler como referência do modelo de consumo
@@ -31,3 +33,8 @@ Citada como exemplo do modelo em que se compra **capacidade, não hardware**; a 
 - [[wiki/sources/dynamodb]] — DynamoDB: NoSQL serverless AWS com escala ilimitada. Single-Table Design: todos os tipos de entidade em uma tabela, acesso por PK+SK patterns. GSI (Global Secondary Index) permite queries por outras...
 - [[wiki/sources/sqs-sns]] — SQS é uma fila gerenciada AWS (zero operação). Standard: alta throughput, ordenação best-effort. FIFO: ordering garantido por MessageGroupId, deduplicação nativa (5 min window), limitado a 3k msg/s...
 - [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]] — relato de engenheiros AWS atuando dentro do Itaú, modelo Solutions Architect como precursor do FDE em cloud
+- [[wiki/sources/introducao-ao-terraform-iac-devops]] — Introdução ao Terraform: provider oficial AWS e EC2
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — S3 (presigned URL, multipart até 50 TB), SQS para evento de conclusão, CloudFront com egress S3→CF gratuito

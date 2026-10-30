@@ -3,8 +3,8 @@ type: concept
 title: "Múltiplos Papéis em Times Pequenos"
 aliases: ["multi-papel", "tech lead dev PM PO", "quebrar caixinhas", "times menores de software"]
 date_created: 2026-09-30
-date_updated: 2026-09-30
-source_count: 1
+date_updated: 2026-10-30
+source_count: 2
 tags: [lideranca, times-pequenos, multiplos-papeis, generalista, ia-e-emprego]
 skill: tech-mentor-leadership
 status: draft
@@ -41,3 +41,11 @@ A fonte é relato de um caso, sem medição. Não discute o custo de acumular pa
 ## Key sources
 
 - [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]
+
+## Versão Extrema: Fim do Squad
+
+Uma fonte vai além de "times menores": o squad back/front/PM/design "não faz mais sentido" e a responsabilidade vai para um indivíduo (exceto ~5% de softwares de escala extrema — número sem fonte). Não discute bus factor nem sobrecarga, as ressalvas já registradas aqui. Ver [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]].
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]] — fim do squad multidisciplinar (versão extrema da tese)

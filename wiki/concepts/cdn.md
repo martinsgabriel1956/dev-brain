@@ -3,8 +3,8 @@ type: concept
 title: "CDN"
 aliases: ["Content Delivery Network", "rede de distribuição de conteúdo", "edge cache"]
 date_created: 2026-06-26
-date_updated: 2026-10-06
-source_count: 9
+date_updated: 2026-10-30
+source_count: 10
 tags: [system-design, cdn, cache, performance, escalabilidade, rede, live-streaming]
 skill: tech-mentor-system-design
 status: draft
@@ -96,3 +96,11 @@ CDN/WAF bloqueia tráfego abusivo cedo, parte da proteção contra DDoS; sem con
 - [[wiki/sources/fase-1-fundamentos-infraestrutura]] — Fundamentos de infraestrutura: DNS (TTL, tipos de record), Load Balancer (L4 vs L7, algoritmos), CDN (edge cache, origem), Cache (hit/miss, eviction, invalidação), Banco de Dados (ACID, replicação,...
 - [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — Instagram simplificado: bucket S3 + URL pública servida por CDN resolve imagem lenta
 - [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — rate limit na borda
+
+## CDN na Frente de Download Privado do S3
+
+Para downloads de arquivos grandes, CDN entre usuário e S3 reduz latência (Japão→EUA ~500 ms → ~10-20 ms) e custo de [[wiki/concepts/custo-de-egress|egress]]. A fonte superestima o ganho por GB ("90%" vs. ~5,6% real); o ganho de custo relevante é o cache evitando leituras na origem. Ver [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]].
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — CDN como terceiro passo do framework de upload/download (acesso frequente → cache na borda)

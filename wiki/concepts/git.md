@@ -3,8 +3,8 @@ type: concept
 title: "Git"
 aliases: ["git", "git init", ".git", "controle de versão"]
 date_created: 2026-08-11
-date_updated: 2026-10-06
-source_count: 4
+date_updated: 2026-10-26
+source_count: 5
 tags: [git, controle-de-versao, cli, tech-mentor-leadership]
 skill: tech-mentor-infra
 status: stub
@@ -32,9 +32,12 @@ Segundo [[wiki/entities/andre-casciotti]] ([[wiki/sources/o-que-estudar-guia-par
 
 [[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] usa o Git como ferramenta de planejamento via commits atômicos ([[wiki/concepts/atomic-commits]]) e cita `cherry-pick` como motivo para o menor commit possível.
 
+**Atualização 2026-10-26:** Versionar arquivos `.tf` mostra histórico e quem mudou a infraestrutura ([[wiki/concepts/infraestrutura-como-codigo]]).
+
 ## Key Sources
 
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]]
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] — distinção Git (versionamento local) vs. GitHub (repositório descentralizado)
 - [[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] — commits atômicos e cherry-pick como motivo
 - [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — mesma disciplina de histórico imutável aplicada ao banco: scripts versionados junto do código, com [[wiki/concepts/flyway-schema-history]]
+- [[wiki/sources/introducao-ao-terraform-iac-devops]] — Introdução ao Terraform: versionamento da infra

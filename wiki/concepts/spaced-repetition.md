@@ -3,8 +3,8 @@ type: concept
 title: "Spaced Repetition (Efeito do Espaçamento)"
 aliases: ["spaced repetition", "efeito do espaçamento", "repetição espaçada"]
 date_created: 2026-04-22
-date_updated: 2026-07-21
-source_count: 2
+date_updated: 2026-10-30
+source_count: 3
 tags: [aprendizado, memoria, tecnica, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -38,7 +38,15 @@ Spaced repetition é a aplicação prática de [[wiki/concepts/neuroplasticidade
 
 [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] chega à mesma regra de "nunca copiar/colar" por outro caminho: recomenda desligar autocomplete e corretores automáticos durante a fase de aprendizado, porque eles eliminam a necessidade de digitar manualmente — o mecanismo que, na prática, gera as reexposições espaçadas necessárias para reter o conteúdo. A fonte cita o curso "Learning How to Learn" ("[[wiki/concepts/aprender-a-aprender]]") como origem do princípio de espaçar a exposição ao mesmo conteúdo ao longo dos dias, em vez de concentrá-la num único bloco de estudo. A ressalva: essa recomendação vale para a fase de aprendizado — não é uma regra geral contra autocomplete no dia a dia profissional de quem já é produtivo.
 
+## Quiz da IA Não Substitui Espaçamento
+
+Em [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]], o argumento contra deixar a IA fazer a tarefa e depois responder a um questionário é exatamente a falta de espaçamento e esforço: dá para acertar as perguntas meia hora depois, como com o resumo de um livro, mas isso não é memória de longo prazo. Exemplo de matemática: resolver o mesmo tipo de exercício hoje, semana que vem e daqui a duas semanas.
+
 ## Key Sources
 
 - [[wiki/sources/como-aprender-programacao-3-dicas]]
 - [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]]
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — quiz pós-tarefa da IA ≠ repetição espaçada

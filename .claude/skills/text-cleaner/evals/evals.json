@@ -1,0 +1,17 @@
+{
+  "skill_name": "text-cleaner",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Clean this text:\n[00:00] [Music] Welcome to the podcast! [laughter]\n[00:05] Today we discuss photosynthesis in plants.\n[00:10] It is very simple. (laughs) Let's jump in.",
+      "expected_output": "Markdown note with Title, clean paragraphs without timestamps (00:00, 00:05, etc.) or verbal/sound cues ([Music], [laughter], (laughs)). Preserves words 'Welcome to the podcast! Today we discuss photosynthesis in plants. It is very simple. Let's jump in.'",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Очисти цей текст від сміття:\n<p class=\"text\">Привіт всім! 😊</p>\n<div>Підписуйтесь на канал (Subscribe to the channel)!</div>\n<span>Це тестове повідомлення.</span>",
+      "expected_output": "Clean text in Markdown. Emojis (😊) and HTML tags (<p>, <div>, <span>) are removed. System subscription prompts are cleaned. Text remains: 'Привіт всім! Це тестове повідомлення.'",
+      "files": []
+    }
+  ]
+}

@@ -3,8 +3,8 @@ type: concept
 title: "Revisão por Agente Independente"
 aliases: ["revisor independente", "implementador ≠ revisor", "agent reviewer separation"]
 date_created: 2026-09-29
-date_updated: 2026-09-30
-source_count: 2
+date_updated: 2026-10-26
+source_count: 3
 tags: [revisao-por-ia, code-review, agentes, contrato-de-revisao, separacao-de-contextos]
 skill: tech-mentor-ai
 status: draft
@@ -38,3 +38,7 @@ Além de revisar código, [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-
 
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — auditoria de issue + orquestrador/writer/reviewer em contexto limpo
 - [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]]
+
+## Key sources (adição 2026-10-26)
+
+- [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]] — a Anthropic aplica a mesma separação: segundo agente de **contexto limpo** revisa só o diff (camada 1), com o argumento de que o raciocínio do autor contamina a revisão. Ver [[wiki/concepts/revisao-em-camadas-queijo-suico]].

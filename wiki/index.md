@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-10-14
+date_updated: 2026-10-26
 ---
 
 
@@ -26,6 +26,13 @@ date_updated: 2026-10-14
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/historia-do-computador-da-antikythera-ao-computador-quantico]] | [[wiki/entities/link-nacional\|Link Nacional]]: [[wiki/concepts/historia-da-computacao\|linha do tempo]] de Antikythera a Babbage/Ada, Z1, Mark I, [[wiki/entities/eniac\|ENIAC]]; [[wiki/concepts/geracoes-de-computadores\|gerações]]; Altair e Apple I; armazenamento do [[wiki/concepts/cartao-perfurado\|cartão]] à nuvem; Brasil ([[wiki/entities/patinho-feio\|Patinho Feio]], Cobra); [[wiki/concepts/computacao-quantica\|quântico]]. Vários erros de divulgação corrigidos |
+| [[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]] | Paper [[wiki/entities/spec2cobolrot\|Spec2COBOLRot]] (AISM/ASE 2026, Munique): agente gera COBOL de especificações e outro o envelhece com 26 padrões legados até as métricas baterem com programas reais (até 25 mil linhas) — [[wiki/concepts/corpus-sintetico-de-codigo-legado\|corpus sintético]]; ainda "sintético demais". Lição: [[wiki/concepts/entropia-historica-vs-complexidade-estrutural\|complexidade estrutural ≠ entropia histórica]]; modernizar não é traduzir |
+| [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] | Reação (autoria inferida: [[wiki/entities/augusto-galego\|Galego]]) ao "No Robots in the Gym" de [[wiki/entities/daniel-miessler\|Miessler]]: [[wiki/concepts/tarefa-de-academia-vs-trabalho\|academia vs. trabalho]] no uso de IA; discorda do "IA faz + quiz depois" (= ler o resumo); [[wiki/concepts/vibe-leitura\|vibe ler]] = vibe codar; estudos Microsoft e PNAS; antídotos: livros com [[wiki/concepts/efeito-lindy\|efeito Lindy]] e escrever (Paul Graham) |
+| [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]] | Vídeo curto em Palo Alto (autoria inferida: [[wiki/entities/pedro-nauke\|Pedro Nauke]]): empresas do Vale querem [[wiki/concepts/programador-generalista\|generalistas]] porque [[wiki/concepts/codigo-como-commodity\|código virou commodity]]; fim do squad multidisciplinar e dos rituais ágeis; app pessoal em 6 h num voo com Opus 5.5; menos vagas. Contradiz [[wiki/concepts/especialista-leva-vantagem-com-ia\|especialista leva vantagem]] — ver [[wiki/questions/generalista-ou-especialista-na-era-da-ia\|questão]] |
+| [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] | Vídeo 5 da série Tier S de [[wiki/entities/pedro-camaforte\|Pedro Camaforte]]: o servidor nunca encosta no arquivo — banco → disco local → volume compartilhado → [[wiki/concepts/object-storage\|object storage]]; [[wiki/concepts/presigned-url\|presigned URL]] (PUT < 100 MB) vs. [[wiki/concepts/multipart-upload\|multipart]] (uploadId, ETags, retomada, cron, até 50 TB); download privado + CDN e [[wiki/concepts/custo-de-egress\|egress]] ("90%" é erro: ~5,6%); [[wiki/concepts/bucket-de-quarentena\|bucket de quarentena]] |
+| [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]] | Como a [[wiki/entities/anthropic|Anthropic]] revisa ~30 mil mudanças/dia com agentes: [[wiki/concepts/revisao-em-camadas-queijo-suico|sete camadas]] (contexto limpo, CI, [[wiki/concepts/consenso-multiagente-em-code-review|consenso multiagente]], [[wiki/concepts/classificador-de-risco-de-revisao-humana|humanos por risco]], flag + release gradual); [[wiki/concepts/review-md|REVIEW.md]], [[wiki/concepts/eval-de-revisor-a-partir-de-incidentes|incidentes viram evals]], teto de rodadas; limites dos papers |
+| [[wiki/sources/introducao-ao-terraform-iac-devops]] | [[wiki/entities/terraform|Terraform]] para iniciantes: [[wiki/concepts/infraestrutura-como-codigo|IaC]] [[wiki/concepts/infraestrutura-declarativa|declarativa]] (automação, versionamento, multi-provedor); pilares [[wiki/concepts/hcl|HCL]], [[wiki/concepts/terraform-provider|providers]] e [[wiki/concepts/terraform-state|state]]; fluxo [[wiki/concepts/terraform-workflow|init/plan/apply]]; laboratório criando uma [[wiki/concepts/ec2|EC2]] (erro de [[wiki/concepts/ami|AMI]] proposital) |
 | [[wiki/sources/gemini-embedding-2-embedding-multimodal-google]] | [[wiki/entities/gemini-embedding-2|Gemini Embedding 2]] (Google): [[wiki/concepts/embedding-multimodal|embedding multimodal]] (texto, imagem, vídeo, áudio, documento num só espaço, até 3072 dims) — limites por chamada exigem [[wiki/concepts/chunking|chunking]]; intuição ([[wiki/concepts/aritmetica-de-vetores-semanticos|rei−homem+mulher]]); quando CNN leve basta ([[wiki/concepts/busca-visual-por-similaridade|busca visual]]); custo e privacidade |
 | [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]] | Discussão de Discord (Recursive vs. anônimo) comentada: por que [[wiki/concepts/linguagem-c\|C]] é alto nível — baixo nível é 1:1 com a [[wiki/concepts/isa-instruction-set-architecture\|ISA]] (assembly), alto nível é abstração sobre o hardware que dá [[wiki/concepts/portabilidade-de-codigo-entre-arquiteturas\|portabilidade]]; assembly ainda necessário (troca de contexto, registradores fora de memória); história BCPL → B → C, [[wiki/concepts/retrocompatibilidade-x86\|retrocompatibilidade do x86]], [[wiki/concepts/comportamento-indefinido\|UB]] e [[wiki/concepts/dependencia-de-caminho-em-tecnologia\|dependência de caminho]] |
 | [[wiki/sources/como-sair-do-ciclo-de-bugs-e-retrabalho-andre-casciotti]] | [[wiki/entities/andre-casciotti|André Casciotti]]: sair do [[wiki/concepts/ciclo-de-bugs-e-retrabalho|ciclo de bugs e retrabalho]] (pressão→pressa→correção sem prova) com [[wiki/concepts/tres-passos-para-lidar-com-bug|3 passos]]: [[wiki/concepts/causa-raiz|causa raiz]], [[wiki/concepts/evidenciar-o-problema|evidenciar]], [[wiki/concepts/provar-que-corrigiu|provar que corrigiu]] (+ [[wiki/concepts/analise-de-impacto-da-correcao|impacto]], [[wiki/concepts/armadilha-da-certeza-do-dev-experiente|certeza do experiente]]); debug não é prova |
@@ -871,6 +878,61 @@ date_updated: 2026-10-14
 | [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]]: **CQRS** como [[wiki/concepts/cqs|CQS]] (Meyer, 1988) elevado a modelos; quatro critérios de adoção, custos (sincronização, consistência eventual, debug) e quando não usar; independe de microsserviços/ES/Kafka |
 
 ## Concepts
+
+### História do Computador — Link Nacional (2026-10-30)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/historia-da-computacao]] | Hub da linha do tempo: Antikythera → Babbage → ENIAC → microprocessador → quântico; Brasil |
+| [[wiki/concepts/geracoes-de-computadores]] | Válvula, transistor, CI, microprocessador, "IA": periodização didática com datas variáveis |
+| [[wiki/concepts/computacao-quantica]] | Qubits, superposição, emaranhamento; ganho só em problemas específicos |
+| [[wiki/concepts/cartao-perfurado]] | De Babbage/Jacquard ao censo de Hollerith; sobreviveu até os anos 70 |
+
+### Spec2COBOLRot — Legado Sintético e Entropia Histórica (2026-10-30)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/entropia-historica-vs-complexidade-estrutural]] | Código feio é fácil de fabricar; legado é o acúmulo de regras localmente justificáveis |
+| [[wiki/concepts/corpus-sintetico-de-codigo-legado]] | Gerar e envelhecer COBOL com IA para testar ferramentas de modernização |
+
+### No Robots in the Gym — IA e Aprendizado (2026-10-30)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/tarefa-de-academia-vs-trabalho]] | Delegue à IA o que é trabalho (resultado); não o que é academia (o esforço é o objetivo) |
+| [[wiki/concepts/vibe-leitura]] | "Ler" um livro pelo resumo da IA; não ensina, assim como vibe codar |
+| [[wiki/concepts/efeito-lindy]] | Quanto mais tempo algo segue relevante, mais tende a continuar; filtro de leitura |
+
+### Generalista vs. Especialista — Vale do Silício (2026-10-30)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/programador-generalista]] | Quem shipa o produto inteiro e entende negócio; tese de contratação do Vale, sem dados |
+| [[wiki/concepts/codigo-como-commodity]] | Escrever código deixou de ser diferencial; valor migra para especificar e verificar |
+
+### Upload/Download de Arquivos Gigantes — Tier S (2026-10-30)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/object-storage]] | Blob storage: bytes fora do banco e do servidor; banco guarda só metadados + S3 key |
+| [[wiki/concepts/presigned-url]] | URL temporária assinada pelo servidor localmente; cliente faz PUT/GET direto no S3 |
+| [[wiki/concepts/multipart-upload]] | ≥ 100 MB: partes de 5 MB em paralelo, retomada via uploadId, ETags como prova, até 50 TB |
+| [[wiki/concepts/custo-de-egress]] | S3→internet US$ 0,09/GB; S3→CloudFront grátis; CDN economiza por cache, não "90%" por GB |
+| [[wiki/concepts/bucket-de-quarentena]] | Upload valida num bucket/máquina isolada antes de ir ao bucket final |
+
+### Code Review por Agentes — Anthropic (2026-10-26)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/revisao-em-camadas-queijo-suico]] | Sete camadas de checagem imperfeitas empilhadas; "o que pode dar errado e qual checagem pega melhor?" |
+| [[wiki/concepts/consenso-multiagente-em-code-review]] | Vários agentes caçam bugs, outro grupo verifica; só consenso vira comentário |
+| [[wiki/concepts/review-md]] | Colinha do revisor escrita pelo dono do código; erro recorrente → regra, falso positivo → linha |
+| [[wiki/concepts/classificador-de-risco-de-revisao-humana]] | Agente define 0/1/2 revisores humanos; segundo classificador confere |
+| [[wiki/concepts/eval-de-revisor-a-partir-de-incidentes]] | Incidente confirmado vira eval; mudanças no revisor rodam contra o histórico |
+| [[wiki/concepts/ruido-e-loop-de-nitpick-em-revisao-por-agente]] | Loop de 50+ rodadas; teto de 3 rodadas, olhar só o delta |
+| [[wiki/concepts/confianca-por-reversibilidade]] | Reverter em minutos (flag + observabilidade + ownership) torna a revisão tolerável |
+| [[wiki/concepts/limites-empiricos-de-revisao-por-ia]] | Três papers: código fechado, testes gerados por agente, retrabalho de PR de agente |
+| [[wiki/concepts/llm-as-judge]] | LLM avaliando saída de LLM (stub) |
 
 ### Embeddings Multimodais — Gemini Embedding 2 (2026-10-14)
 
@@ -3127,9 +3189,24 @@ date_updated: 2026-10-14
 | [[wiki/concepts/evento-enxuto-vs-evento-gordo]] | Só IDs vs. estado completo: acoplamento, LGPD, versionamento e EOL |
 | [[wiki/concepts/primeira-adocao-de-tecnologia-com-conforto]] | Primeira adoção em caso de baixo risco para ganhar confiança |
 | [[wiki/concepts/eda-de-fachada]] | Vocabulário de eventos com banco compartilhado e alto acoplamento |
+| [[wiki/concepts/infraestrutura-declarativa]] | Estado desejado declarado; a ferramenta compara com o state e aplica só a diferença |
+| [[wiki/concepts/hcl]] | Linguagem do Terraform (arquivos .tf, blocos) |
+| [[wiki/concepts/terraform-provider]] | Plugin que fala com a API do provedor (AWS, GCP, Azure, Kubernetes) |
+| [[wiki/concepts/terraform-workflow]] | terraform init → plan → apply |
+| [[wiki/concepts/terraform-blocos]] | provider, resource, variable e demais blocos do HCL |
+| [[wiki/concepts/terraform-registry]] | Documentação de providers e módulos; preferir oficiais |
+| [[wiki/concepts/terraform-argumentos-e-atributos]] | Inputs (argumentos) e outputs (atributos) de um resource |
+| [[wiki/concepts/ami]] | Imagem/SO da EC2; obrigatória sem launch_template |
 
 ## Entities
 
+- [[wiki/entities/link-nacional]] — empresa/canal brasileiro; roteiro de história do computador
+- [[wiki/entities/charles-babbage]] — Máquina Analítica (1837), programável, nunca construída
+- [[wiki/entities/ada-lovelace]] — primeiro algoritmo para a Máquina Analítica
+- [[wiki/entities/eniac]] — eletrônico de propósito geral (1946), Mauchly e Eckert
+- [[wiki/entities/patinho-feio]] — computador da Poli-USP (1972), 4 KB, base do G-10
+- [[wiki/entities/spec2cobolrot]] — paper/projeto (Inria + Sopra Steria) que gera e envelhece COBOL com dois agentes; samples públicos no GitHub
+- [[wiki/entities/daniel-miessler]] — autor de "No Robots in the Gym" e da newsletter Unsupervised Learning; assistente pessoal Kai
 - [[wiki/entities/gemini-embedding-2]] — embedding multimodal do Google (texto, imagem, vídeo, áudio, documento; 3072 dims)
 - [[wiki/entities/apache-http-server]] — servidor web open source ("patchy")
 - [[wiki/entities/netscape]] — perdeu a guerra e originou a Mozilla
@@ -3572,11 +3649,13 @@ date_updated: 2026-10-14
 | [[wiki/entities/greg-brockman]] | Cofundador da OpenAI; especialista que vira generalista |
 | [[wiki/entities/luiz-carlos-faria]] | Gago, arquiteto de soluções; convidado sobre EDA |
 | [[wiki/entities/eduardo-macris]] | Apresentador da série de arquitetura |
+| [[wiki/entities/terraform]] | Ferramenta open source de IaC (HashiCorp); providers, state, init/plan/apply |
 
 ## Questions
 
 | Página | Hook |
 |---|---|
+| [[wiki/questions/generalista-ou-especialista-na-era-da-ia]] | Generalista vence (Vale) × especialista vence (Balta) × júnior especializa mais rápido — provável conciliação via T-shaped |
 | [[wiki/questions/forward-deployed-engineer-demanda-crescendo-vs-pequena]] | FDE: "cargo que mais cresceu" vs. <1.000 vagas nos EUA — crescimento sobre base pequena? |
 | [[wiki/questions/disponibilidade-cap-resposta-de-erro-vs-resposta-sem-erro]] | Vídeo diz que erro 404 conta como resposta disponível; definição formal exige resposta sem erro — pendente verificar Gilbert & Lynch |
 | [[wiki/questions/facade-fere-srp-video-comparison]] | Renato Augusto defende que Facade não fere SRP (motivo único de mudança); Código Fonte TV discorda (orquestração pura já é responsabilidade demais) — sem resolução, ambas são opinião de autor sem citação de fonte primária |

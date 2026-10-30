@@ -3,8 +3,8 @@ type: concept
 title: "AWS VPC (Virtual Private Cloud)"
 aliases: ["VPC", "Virtual Private Cloud", "rede isolada AWS"]
 date_created: 2026-08-17
-date_updated: 2026-08-17
-source_count: 1
+date_updated: 2026-10-26
+source_count: 2
 tags: ["aws", "vpc", "rede", "subnet", "security-group", "infra", "cloud"]
 skill: tech-mentor-infra
 status: stub
@@ -40,6 +40,9 @@ Três camadas de defesa: cada camada só é alcançável pela camada imediatamen
 - [[wiki/concepts/load-balancer]] — tipicamente vive na subnet pública, distribuindo tráfego para a aplicação na subnet privada
 - [[wiki/concepts/ec2]] — instâncias rodam dentro de subnets da VPC
 
+**Atualização 2026-10-26:** Exemplo de resource Terraform `aws_vpc` ([[wiki/concepts/terraform-blocos]]).
+
 ## Key Sources
 
 - [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — subnets públicas/privadas, Security Groups, e a arquitetura de três camadas (LB público → app privada → banco ainda mais isolado)
+- [[wiki/sources/introducao-ao-terraform-iac-devops]] — Introdução ao Terraform: aws_vpc como exemplo de bloco resource

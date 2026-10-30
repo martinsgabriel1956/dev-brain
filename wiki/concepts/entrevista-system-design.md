@@ -3,8 +3,8 @@ type: concept
 title: "Entrevista de System Design (Whiteboard Interview)"
 aliases: ["system design interview", "whiteboard interview", "lousa branca", "entrevista de arquitetura"]
 date_created: 2026-07-20
-date_updated: 2026-10-08
-source_count: 13
+date_updated: 2026-10-30
+source_count: 14
 tags: [system-design, entrevistas, arquitetura, carreira]
 skill: tech-mentor-system-design
 status: draft
@@ -109,3 +109,11 @@ Roteiro da fonte: building blocks → problemas reais → projeto em camadas →
 - [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] — caso de notificação: não comece pela [[wiki/concepts/api-e-consequencia-nao-ponto-de-partida|API]]; 3 min de [[wiki/concepts/entidades-de-primeira-classe-system-design|entidades]]; perguntar sobre custo.
 
 - [[wiki/sources/sharding-milhoes-de-escritas-partition-key-consistent-hashing-pedro-camaforte]] — roteiro de sharding em entrevista (partition key → hash + consistent hashing → trade-offs → crescimento) e senioridade de concluir que sharding não é necessário
+
+## Red Flags em Upload de Arquivos
+
+Passar o arquivo pelo servidor (em vez de [[wiki/concepts/presigned-url]]) e usar [[wiki/concepts/multipart-upload]] para arquivo pequeno (10-15 MB). Diferencial citado: edge case do cron que finaliza uploads órfãos. Ver [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]].
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — red flags de upload: servidor como intermediário e multipart para arquivo pequeno

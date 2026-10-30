@@ -3,8 +3,8 @@ type: concept
 title: "Descoberta de Regras de Negócio em Legado"
 aliases: ["business rule discovery", "recuperação de regras de negócio", "discovery de legado"]
 date_created: 2026-10-06
-date_updated: 2026-10-06
-source_count: 1
+date_updated: 2026-10-30
+source_count: 2
 tags: [legado, modernizacao, regras-de-negocio, mainframe, ia]
 skill: tech-mentor-ai
 status: draft
@@ -27,6 +27,14 @@ Traduzir sem entender replica regras erradas ou perde regras implícitas; num si
 
 Relacionados: [[wiki/concepts/conhecimento-perdido-em-legado]], [[wiki/concepts/engenharia-reversa]], [[wiki/concepts/modernizacao-de-mainframe]].
 
+## Por que as Regras São o Difícil
+
+[[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]] reforça o argumento por outro ângulo: até um benchmark sintético de COBOL, que bate as métricas estruturais de legado real, falha em reproduzir a evolução das regras de negócio. É essa evolução que a fase de descoberta tenta recuperar ([[wiki/concepts/entropia-historica-vs-complexidade-estrutural]]).
+
 ## Key sources
 
 - [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]]
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]] — regras de negócio acumuladas são o que nem benchmark sintético reproduz

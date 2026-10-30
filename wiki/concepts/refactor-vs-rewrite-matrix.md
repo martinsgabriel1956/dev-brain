@@ -3,8 +3,8 @@ type: concept
 title: "Matriz Refatorar vs. Reescrever"
 aliases: ["refactor vs rewrite", "matriz de decisão refatoracao reescrita"]
 date_created: 2026-07-28
-date_updated: 2026-08-10
-source_count: 4
+date_updated: 2026-10-30
+source_count: 5
 tags: [tech-debt, refactoring, rewrite, decisao, arquitetura]
 skill: tech-mentor-leadership
 status: stub
@@ -42,9 +42,17 @@ Esse risco é o mesmo documentado como anti-padrão de "rewrite fantasma" na ges
 
 [[wiki/sources/ciclo-de-mudanca-de-arquitetura]] descreve o mesmo risco de "reescrever tudo" sob um ângulo de processo, não de decisão pontual: a fonte enfatiza que ser assertivo na escolha do TO-BE importa porque descobrir "no meio do caminho" que o caminho está errado consome tempo real do negócio — o mesmo raciocínio de custo de oportunidade que justifica esta matriz preferir refatoração a reescrita sempre que o risco técnico permitir. Ver [[wiki/concepts/ciclo-de-mudanca-de-arquitetura]].
 
+## Reescrever Exige a História
+
+[[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]]: "para modernizar, não bastava só traduzir a linguagem". Uma reescrita que só reproduz a estrutura perde as regras que a entropia histórica embutiu ([[wiki/concepts/entropia-historica-vs-complexidade-estrutural]]).
+
 ## Key Sources
 
 - [[wiki/sources/tech-debt-guia-completo-gestao-metricas]]
 - [[wiki/sources/large-scale-vs-complex-architecture]] — caso enterprise de refatoração gradual multi-plataforma (mainframe/AS-400/Linux/Windows) como origem típica de arquitetura complexa
 - [[wiki/sources/ciclo-de-mudanca-de-arquitetura]] — custo de descobrir tarde que o TO-BE escolhido está errado, mesmo raciocínio de custo de oportunidade da matriz
 - [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — descreve o padrão da "V2 do zero" como resposta tentadora à degradação, alertando que a reescrita envelhece e reapresenta os mesmos problemas se as práticas contínuas não mudarem
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]] — reescrita/tradução perde a entropia histórica

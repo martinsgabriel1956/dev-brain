@@ -3,8 +3,8 @@ type: concept
 title: "Matriz Risco × Dificuldade para Revisão de Código de IA"
 aliases: ["matriz risco dificuldade", "quando revisar código de IA", "migração review manual para automático", "sampling de code review", "merge automático por risco"]
 date_created: 2026-08-11
-date_updated: 2026-08-11
-source_count: 1
+date_updated: 2026-10-26
+source_count: 2
 tags: [code-review, quality-gate, agentes-ia, merge-automatico, risco, gestao-de-mudanca, era-agentica]
 skill: tech-mentor-leadership
 status: draft
@@ -49,3 +49,7 @@ A matriz existe para operacionalizar uma regra de gestão de risco: **a melhor f
 ## Key Sources
 
 - [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — origem da matriz risco × dificuldade e dos três regimes (merge automático / amostragem / revisão manual em pares)
+
+## Key sources (adição 2026-10-26)
+
+- [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]] — versão em regime pleno da mesma ideia: classificador + segundo classificador decidem 0/1/2 revisores humanos ([[wiki/concepts/classificador-de-risco-de-revisao-humana]]); a matriz do wiki é a transição para times que ainda revisam 100%.

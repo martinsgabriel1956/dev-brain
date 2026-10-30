@@ -3,8 +3,8 @@ type: concept
 title: "Read Replicas"
 aliases: ["réplica de leitura", "read replica", "replica routing"]
 date_created: 2026-04-22
-date_updated: 2026-09-30
-source_count: 12
+date_updated: 2026-10-30
+source_count: 13
 tags: [banco-de-dados, escalabilidade, read-replicas, postgresql, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -77,3 +77,11 @@ No caso didático, milhões de acessos a perfis → várias réplicas de leitura
 - [[wiki/sources/como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado]] — réplicas de leitura não eliminam o teto vertical do nó primário de escrita, contrastado com escalabilidade horizontal automática do DynamoDB
 - [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — Instagram simplificado: réplicas de leitura do PostgreSQL antes de sharding por região; sem discutir replication lag
 - [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — alternativa mais simples ao banco de leitura NoSQL separado; a fonte separa fisicamente os bancos com transformação dos dados, não com réplica do mesmo schema
+
+## Binários no Banco Inviabilizam Réplicas
+
+Guardar vídeos como binário no banco obriga cada réplica a copiar GBs de arquivo, além de alongar backup/restore de minutos para horas — argumento para [[wiki/concepts/object-storage]]. Ver [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]].
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — binário no banco: replicação, backup e restore inviáveis

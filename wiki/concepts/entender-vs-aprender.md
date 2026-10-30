@@ -3,8 +3,8 @@ type: concept
 title: "Entender vs. Aprender"
 aliases: ["entender vs aprender", "compreensão vs habilidade", "ilusão de fluência", "illusion of knowing"]
 date_created: 2026-06-05
-date_updated: 2026-08-10
-source_count: 4
+date_updated: 2026-10-30
+source_count: 5
 tags: [aprendizado, pratica, metacognicao, ead, aprendizado-passivo]
 skill: tech-mentor-leadership
 status: stable
@@ -45,9 +45,17 @@ A [[wiki/concepts/memoria-muscular]] se forma nesse ciclo — não na leitura ou
 
 O EAD amplifica a ilusão porque vídeos de qualidade técnica alta (câmera, áudio, didática) geram mais sensação de entendimento — que é facilmente confundida com aprendizado. Ver [[wiki/concepts/aprendizado-passivo]].
 
+## Quiz Pós-Tarefa como Ilusão de Fluência
+
+[[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] aplica a distinção à IA: deixar o assistente fazer a tarefa e depois responder a um questionário sobre ela é como ler o resumo de um livro — você entende e acerta as perguntas, mas não aprende. Anedota do autor: lembra até hoje de *A Hora da Estrela*, que leu, e não lembrava que *Helena* existia, da qual leu só o resumo.
+
 ## Key Sources
 
 - [[wiki/sources/papinho-tech-solo-aprender-a-aprender]]
 - [[wiki/sources/akita-como-aprender-programacao]]
 - [[wiki/sources/quanto-tempo-aprender-programacao]] — o vale do desespero como momento em que a diferença entre entender e aprender se torna inescapável: entende cada linha, mas não consegue arquitetar
 - [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] — entender a explicação da IA ≠ saber fazer; [[wiki/concepts/active-recall]] e desafios sem resposta expõem a ilusão de fluência
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — IA faz + quiz depois = ler o resumo; vibe leitura

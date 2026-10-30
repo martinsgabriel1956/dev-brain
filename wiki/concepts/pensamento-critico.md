@@ -3,8 +3,8 @@ type: concept
 title: "Pensamento Crítico"
 aliases: ["critical thinking", "resolução de problemas", "raciocínio analítico"]
 date_created: 2026-05-19
-date_updated: 2026-08-10
-source_count: 3
+date_updated: 2026-10-30
+source_count: 4
 tags: [soft-skills, pensamento-critico, resolução-de-problemas, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -43,8 +43,16 @@ No uso de IA para gerar software ou arquitetura, pensamento crítico é exatamen
 - [[wiki/concepts/aprendizado-continuo]] — pensar criticamente sobre o que aprender é parte do aprendizado contínuo
 - [[wiki/concepts/engenheiro-vs-programador]] — a mesma distinção entre executar e julgar, aplicada à mentalidade de engenharia
 
+## Pensamento Crítico como Tarefa de Academia
+
+[[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] (via [[wiki/entities/daniel-miessler]]) põe pensamento crítico, resolução de problemas e criar argumentos na lista de [[wiki/concepts/tarefa-de-academia-vs-trabalho|tarefas de academia]] — as que não se delega porque o objetivo é ficar melhor nelas. Cita o estudo da [[wiki/entities/microsoft]] sobre o impacto da IA generativa no pensamento crítico (autorrelato de menos esforço e menos confiança) e propõe ler e escrever como forma de proteger essa capacidade.
+
 ## Key Sources
 
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]
 - [[wiki/sources/vibe-coding-limites-maturidade-profissional]] — pensamento crítico como o que separa uso saudável de IA de vibe coding irresponsável
 - [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] — pensamento crítico necessário para filtrar [[wiki/concepts/alucinacao-llm|informações falsas]] da IA; delegar demais o atrofia
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — pensamento crítico como tarefa de academia; estudo Microsoft (autorrelato)

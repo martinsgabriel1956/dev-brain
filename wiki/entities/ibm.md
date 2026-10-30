@@ -3,8 +3,8 @@ type: entity
 title: "IBM"
 aliases: ["IBM", "International Business Machines"]
 date_created: 2026-08-13
-date_updated: 2026-10-06
-source_count: 6
+date_updated: 2026-10-30
+source_count: 7
 tags: [ibm, hardware, storage, fita-magnetica, lto, organização]
 skill: tech-mentor-data
 status: stub
@@ -30,6 +30,10 @@ O PR/SM e as [[wiki/concepts/lpar|LPARs]] (particionamento do mainframe) são te
 
 Participou da fase de discovery do DXP e estimou ~5 anos para análise manual; ferramentas [[wiki/entities/ibm-arc]] e [[wiki/entities/watsonx]].
 
+## Na História do Computador
+
+[[wiki/sources/historia-do-computador-da-antikythera-ao-computador-quantico]]: construiu a Harvard Mark I com Harvard (proposta de Howard Aiken em 1937, pronta em 1944), lançou o IBM 1401 (~1959) e o RAMAC 305 (1956, primeiro disco rígido). A fonte chama Hollerith de fundador da IBM; `[external]` a empresa dele entrou na CTR (1911), que virou IBM em 1924.
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — LPAR/PR/SM e virtualização no mainframe (inferido)
@@ -38,3 +42,7 @@ Participou da fase de discovery do DXP e estimou ~5 anos para análise manual; f
 - [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] — parceira da pesquisa global de skills e mainframe (com Broadcom e 21 CS)
 - [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — IBM 9221/ES/9000 como o mainframe do projeto de 1991 relatado, "na contramão do downsizing"
 - [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]] — discovery do DMV: ARC + watsonx
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/historia-do-computador-da-antikythera-ao-computador-quantico]] — Harvard Mark I, IBM 1401, RAMAC; Hollerith como antecessor

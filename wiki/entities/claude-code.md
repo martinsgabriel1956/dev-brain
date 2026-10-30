@@ -3,8 +3,8 @@ type: entity
 title: "Claude Code"
 aliases: ["claude code cli"]
 date_created: 2026-05-18
-date_updated: 2026-10-07
-source_count: 25
+date_updated: 2026-10-30
+source_count: 27
 tags: [ferramenta, agentes-ia, anthropic, llmops, cli, mcp, hooks]
 skill: tech-mentor-ai
 status: stable
@@ -354,3 +354,11 @@ Citado como exemplo de ferramenta com harness embutido; `CLAUDE.md` costuma impo
 - [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] — citado como ferramenta que permite criar software do zero sem ser programador; manter em produção continua com devs
 - [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] — citado (com Codex) como exemplo de produto que dispara subagentes em pesquisas extensas
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — usado para resumir uma empresa e gerar perguntas ao recrutador em ~15 min ([[wiki/concepts/pesquisar-a-empresa-antes-da-entrevista]])
+
+## Key sources (adição 2026-10-26)
+
+- [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]] — "Claude Code Review" roda em todo PR (diff × repositório × intenção), multiagente com verificação por consenso e rótulos de severidade ([[wiki/concepts/consenso-multiagente-em-code-review]]); o código do próprio Claude Code é o caso de uso da Anthropic.
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — exemplo de tarefa de trabalho delegável (triar e arquivar e-mails) vs. tarefa de academia (ler um livro)

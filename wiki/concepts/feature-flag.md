@@ -3,8 +3,8 @@ type: concept
 title: "Feature Flag (Feature Toggle)"
 aliases: ["feature toggle", "feature flags", "interruptor de funcionalidade"]
 date_created: 2026-06-26
-date_updated: 2026-09-30
-source_count: 4
+date_updated: 2026-10-26
+source_count: 5
 tags: [feature-flag, feature-toggle, redis, cache, trunk-based-development, backend]
 skill: tech-mentor-backend
 status: stable
@@ -68,3 +68,7 @@ O ponteiro de "versão ativa" de um prompt ([[wiki/concepts/rollback-de-prompt]]
 - [[wiki/sources/como-arquitetar-com-cache-e-redis]]
 - [[wiki/sources/pull-requests-por-que-falham-alternativas-sem-pr]] — feature flag como peça que viabiliza trunk-based sem branch de feature nem PR; rollout progressivo interno → grupo pequeno → base toda
 - [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — analogia com rollback de prompt por troca de versão ativa
+
+## Key sources (adição 2026-10-26)
+
+- [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]] — código atrás de flag é nível de revisão humana zero na Anthropic e base da [[wiki/concepts/confianca-por-reversibilidade]] (mudança pequena + flag + revert em minutos).

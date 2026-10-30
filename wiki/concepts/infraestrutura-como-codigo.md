@@ -3,8 +3,8 @@ type: concept
 title: "Infrastructure as Code (IaC)"
 aliases: ["IaC", "infra as code", "infraestrutura como código"]
 date_created: 2026-08-05
-date_updated: 2026-08-05
-source_count: 1
+date_updated: 2026-10-26
+source_count: 2
 tags: ["iac", "infra", "devops", "cloud", "versionamento", "gitops"]
 skill: tech-mentor-infra
 status: stub
@@ -44,6 +44,9 @@ A progressão natural sugerida por uma fonte é: começar configurando manualmen
 - [[wiki/concepts/aws-lambda]] — recurso tipicamente provisionado via IaC no exemplo demonstrado
 - [[wiki/concepts/api-gateway]] — componente da arquitetura de exemplo usada para ilustrar uma "stack"
 
+**Atualização 2026-10-26:** Terraform na prática (EC2 via `init → plan → apply`): [[wiki/entities/terraform]], [[wiki/concepts/infraestrutura-declarativa]].
+
 ## Key Sources
 
 - [[wiki/sources/infraestrutura-como-codigo-cdk-aws]]
+- [[wiki/sources/introducao-ao-terraform-iac-devops]] — Introdução ao Terraform: automação, versionamento e multi-provedor; EC2 criada por código

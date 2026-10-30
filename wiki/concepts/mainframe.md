@@ -3,8 +3,8 @@ type: concept
 title: "Mainframe"
 aliases: ["computador de grande porte", "IBM System/360"]
 date_created: 2026-08-18
-date_updated: 2026-10-06
-source_count: 6
+date_updated: 2026-10-30
+source_count: 8
 tags: [mainframe, hardware, historia-da-computacao, ibm, sistema-operacional]
 skill: tech-mentor-backend
 status: stub
@@ -40,6 +40,10 @@ Core de ~6M de linhas e 2.500 programas dos anos 70 no [[wiki/entities/californi
 
 [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]]: exemplo de legado (talvez mainframe) que nem chama microsserviço direto; a Facade da [[wiki/concepts/anti-corruption-layer]] fica no meio, às vezes indo direto ao banco.
 
+## CDC 6600
+
+[[wiki/sources/historia-do-computador-da-antikythera-ao-computador-quantico]] chama o CDC 6600 (Control Data, 1964) de mainframe e de primeiro supercomputador, o mais veloz do mundo até o CDC 7600. A classificação como mainframe é imprecisa: era uma máquina de cálculo científico, não de processamento comercial em lote.
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — MaaS: mainframe consumido como serviço multitenant; virtualização nasceu aqui
@@ -48,3 +52,8 @@ Core de ~6M de linhas e 2.500 programas dos anos 70 no [[wiki/entities/californi
 - [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — relato de 1991: mainframe escolhido "na contramão do downsizing"; sistema durou 20+ anos
 - [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]] — DMV da Califórnia: 6M de linhas COBOL/Assembly, discovery com IA
 - [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]] — Mainframe e ACL
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]] — processamento batch, arquivo sequencial e campos binários como características de plataforma, não defeitos
+- [[wiki/sources/historia-do-computador-da-antikythera-ao-computador-quantico]] — CDC 6600 rotulado como mainframe/supercomputador

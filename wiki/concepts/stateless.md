@@ -3,8 +3,8 @@ type: concept
 title: "Stateless"
 aliases: ["servidor stateless", "sem estado", "stateless server", "stateless architecture"]
 date_created: 2026-06-26
-date_updated: 2026-10-08
-source_count: 7
+date_updated: 2026-10-30
+source_count: 8
 tags: [system-design, stateless, escalabilidade, load-balancer, sessao]
 skill: tech-mentor-system-design
 status: draft
@@ -77,3 +77,11 @@ O mesmo trade-off aparece na dupla access token / refresh token: manter o access
 
 - [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — analogia do crachá: token apresentado a cada requisição; stateless permite 100 instâncias e substituição sem perda; stateful faz sentido em multiplayer em tempo real.
 - [[wiki/sources/load-balancer-como-funciona-algoritmos-health-check-nginx-haproxy]] — sessão em memória do servidor quebra ao escalar atrás de um LB (segunda requisição cai em outro servidor e perde o dado da primeira)
+
+## Arquivos Também São Estado
+
+Upload salvo no disco local torna o servidor stateful: o load balancer manda o download para outra instância e o arquivo não está lá. Solução: [[wiki/concepts/object-storage]] + [[wiki/concepts/presigned-url]]. Ver [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]].
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — upload no disco local quebra com load balancer e auto scaling

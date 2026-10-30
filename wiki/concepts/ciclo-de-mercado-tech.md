@@ -3,8 +3,8 @@ type: concept
 title: "Ciclo de Mercado Tech"
 aliases: ["ciclo de abundância e depressão", "lei da oferta e procura em tech", "ciclo de contratação tech"]
 date_created: 2026-07-03
-date_updated: 2026-10-07
-source_count: 14
+date_updated: 2026-10-30
+source_count: 15
 tags: [carreira, mercado-de-trabalho, oferta-e-procura, ciclo-economico]
 skill: tech-mentor-leadership
 status: draft
@@ -114,3 +114,11 @@ Um dado anedótico (nome de consultoria não confirmado com segurança na transc
 - [[wiki/sources/impacto-ia-mercado-frontend]]
 - [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — possível manifestação em nível de categoria de vaga (júnior exigindo pleno), causa não identificada
 - [[wiki/sources/crise-vagas-tech-juros-altos-nao-e-so-culpa-da-ia]] — mecanismo financeiro (custo de capital/Selic) por trás do ciclo de depressão atual
+
+## "Excesso de Vagas" e Contração
+
+Leitura de opinião: o programador viveu "no pedestal" e havia excesso de vagas; com IA, o dono prefere menos programadores — "pode ser que depois volte". Ver [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]].
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]] — excesso de vagas e contração; programador no pedestal

@@ -3,8 +3,8 @@ type: concept
 title: "Code Smells"
 aliases: ["code smell", "cheiro de código", "sinais de código ruim"]
 date_created: 2026-08-18
-date_updated: 2026-09-22
-source_count: 5
+date_updated: 2026-10-30
+source_count: 6
 tags: [code-smells, clean-code, refactoring, craftsmanship]
 skill: tech-mentor-backend
 status: draft
@@ -46,6 +46,10 @@ O catálogo de Meszaros divide "Test Smells" em três subcategorias: **Code Smel
 
 [[wiki/concepts/red-flags-de-design]] · [[wiki/concepts/refatoracao]] · [[wiki/concepts/god-object]] · [[wiki/concepts/acoplamento]] · [[wiki/concepts/coesao]] · [[wiki/concepts/tech-debt-como-ferramenta]] · [[wiki/concepts/naming]] · [[wiki/concepts/production-bugs]]
 
+## Smells Injetados para Simular Legado
+
+`[external]` O catálogo do Spec2COBOLRot ([[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]]) separa 15 *smells* (GO TO não estruturado, working-storage inchada, I/O misturado com regra) de 8 *idioms* (padrões normais da plataforma, como laço por fim de arquivo) e 3 *mismatches* (REDEFINES, decimal compactado). Lição: nem tudo que parece estranho num legado é smell; parte é idioma da plataforma.
+
 ## Key Sources
 
 - [[wiki/sources/9-code-smells-como-identificar-codigo-ruim]]
@@ -53,3 +57,7 @@ O catálogo de Meszaros divide "Test Smells" em três subcategorias: **Code Smel
 - [[wiki/sources/developers-not-writing-tests-xunitpatterns]] — segundo Project Smell da mesma taxonomia irmã; cunha o termo "test debt"
 - [[wiki/sources/hard-to-test-code-xunitpatterns]] — Test Smell (categoria distinta de Project Smell) com três causas nomeadas: Highly Coupled Code, Asynchronous Code, Untestable Test Code
 - [[wiki/sources/frequent-debugging-xunitpatterns]] — primeira fonte da subcategoria "Behavior Smells": Frequent Debugging, causado por falta de Defect Localization
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]] — smells vs. idioms no catálogo de envelhecimento de COBOL

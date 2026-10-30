@@ -3,8 +3,8 @@ type: concept
 title: "Planning Poker"
 aliases: ["Poker de Planejamento", "Scrum Poker"]
 date_created: 2026-07-28
-date_updated: 2026-08-18
-source_count: 2
+date_updated: 2026-10-30
+source_count: 3
 tags: [agile, scrum, estimativa, engineering-management]
 skill: tech-mentor-leadership
 status: stable
@@ -44,3 +44,11 @@ O valor final atribuído a uma história é quase um efeito colateral do process
 
 - [[wiki/sources/story-points-po-forcando-30-40-pontos-por-sprint]]
 - [[wiki/sources/por-que-estimativas-de-software-falham-como-melhorar]] — reforça a participação de quem tem expertise específica na estimativa de cada tarefa
+
+## Crítica: "Deixa de Existir" na Era da IA
+
+Fonte de opinião afirma que sprint, cards e planning poker viram burocracia com entrega rápida. Ressalva da wiki: o valor declarado do ritual (revelar divergência de entendimento) não depende da velocidade de entrega; o que muda é o custo relativo da cerimônia. Ver [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]].
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]] — crítica ao ritual como burocracia na era da IA

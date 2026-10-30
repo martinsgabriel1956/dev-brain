@@ -3,8 +3,8 @@ type: concept
 title: "AWS SQS (Simple Queue Service)"
 aliases: ["SQS", "Simple Queue Service", "fila AWS"]
 date_created: 2026-08-17
-date_updated: 2026-08-17
-source_count: 1
+date_updated: 2026-10-30
+source_count: 2
 tags: ["aws", "sqs", "fila", "mensageria", "event-driven", "infra", "cloud"]
 skill: tech-mentor-infra
 status: stub
@@ -37,3 +37,11 @@ SQS entrega para **um** consumidor por mensagem (fila). Ver [[wiki/concepts/aws-
 ## Key Sources
 
 - [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — Standard vs. FIFO, Dead Letter Queue, e a comparação de papéis SQS vs. SNS vs. EventBridge
+
+## Caso: Evento de Conclusão de Upload
+
+S3 publica evento ao concluir um upload (PUT ou [[wiki/concepts/multipart-upload]]) numa fila SQS; um worker consome e marca o upload como completo no banco. Ver [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]].
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — S3 → SQS → worker para atualizar status do upload

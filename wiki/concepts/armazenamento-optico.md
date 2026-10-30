@@ -3,8 +3,8 @@ type: concept
 title: "Armazenamento Óptico (CD/DVD/Blu-ray)"
 aliases: ["armazenamento óptico", "disco óptico", "CD", "DVD", "Blu-ray", "optical storage"]
 date_created: 2026-08-13
-date_updated: 2026-08-13
-source_count: 1
+date_updated: 2026-10-30
+source_count: 2
 tags: [storage, hardware, optico, cd, dvd, blu-ray, cs-fundamentals]
 skill: tech-mentor-data
 status: stub
@@ -29,3 +29,7 @@ Substituído por download digital e streaming. Fragilidade conhecida: um **risco
 ## Key Sources
 
 - [[wiki/sources/tipos-de-armazenamento-de-dados]] — óptico como mídia de distribuição, hoje em declínio
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/historia-do-computador-da-antikythera-ao-computador-quantico]] — CD-ROM e DVD na linha do tempo do armazenamento

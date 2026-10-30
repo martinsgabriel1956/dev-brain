@@ -3,8 +3,8 @@ type: concept
 title: "Manifesto Ágil Como Adjetivo, Não Substantivo"
 aliases: ["ágil é adjetivo", "não existe metodologia ágil", "ágil não é um nome"]
 date_created: 2026-09-18
-date_updated: 2026-09-18
-source_count: 1
+date_updated: 2026-10-30
+source_count: 2
 tags: [agile, manifesto-agil, engineering-management, historia]
 skill: tech-mentor-leadership
 status: stub
@@ -39,3 +39,11 @@ A fonte insiste em nomear os autores originais do manifesto (Martin Fowler, Kent
 ## Key Sources
 
 - [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — fonte primária desta ingestão, único source até o momento
+
+## Ágil-Processo Sob Pressão da IA
+
+A crítica "sprint/cards/planning poker deixam de existir" mira o ágil como processo vendável, coerente com a distinção adjetivo × substantivo desta página. Ver [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]].
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]] — rituais ágeis como carga burocrática

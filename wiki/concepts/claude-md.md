@@ -3,8 +3,8 @@ type: concept
 title: "CLAUDE.md"
 aliases: ["claude md", "project memory", "user memory", "memory claude code"]
 date_created: 2026-05-31
-date_updated: 2026-09-14
-source_count: 6
+date_updated: 2026-10-26
+source_count: 7
 tags: [claude-code, claude-md, memory, context-engineering, agente-ia]
 skill: tech-mentor-ai
 status: stable
@@ -133,3 +133,7 @@ Devido à [[token-tax-multilingual]], um `CLAUDE.md` escrito em português conso
 - [[wiki/sources/agents-md-vale-a-pena-paper-zurique]] — paper de Zurique; evidência empírica de custo e efetividade; estratégia enxuto + links
 - [[wiki/sources/custo-tokens-portugues-vs-ingles]] — token tax de 62% para português; impacto direto no context budget por sessão
 - [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — recomendação de comitar `.claude/` de projeto (não o pessoal) para alinhamento de equipe
+
+## Key sources (adição 2026-10-26)
+
+- [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]] — `REVIEW.md` ganhou página própria ([[wiki/concepts/review-md]]): CLAUDE.md ensina a escrever, REVIEW.md ensina a revisar; erro recorrente real vira regra/skill, falso positivo vira linha no REVIEW.md.

@@ -3,8 +3,8 @@ type: entity
 title: "Augusto Galego"
 aliases: ["Augusto Galego", "augustogalego.com"]
 date_created: 2026-07-20
-date_updated: 2026-10-07
-source_count: 16
+date_updated: 2026-10-30
+source_count: 17
 tags: [pessoa, programador, youtuber, brasil, devops, system-design, carreira, agentes-ia, code-review]
 skill: tech-mentor-infra
 status: stub
@@ -56,6 +56,10 @@ Além de infra/deploy, carreira/system design e reação a agentes de IA, produz
 
 Continuando a linha de conteúdo introdutório de segurança iniciada com hash/salt/pepper, em [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] explica SQL Injection do zero e organiza a defesa em sete camadas concêntricas (query parametrizada, prepared statement, menor privilégio no banco, solução nativa do backend, ORM/query builder, validação de input, WAF), fechando com a mesma disciplina prática de "corrija primeiro a nível de código" e o mesmo padrão de patrocínio ("cupom Galego") que confirma autoria.
 
+## Reação a "No Robots in the Gym" (Autoria Inferida)
+
+Em [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]], reage ao artigo de [[wiki/entities/daniel-miessler]] e recomenda ler e escrever como [[wiki/concepts/tarefa-de-academia-vs-trabalho|tarefas de academia]]. Autoria inferida por HostGator (VPS, n8n, OpenClaw), catálogo de cursos (LeetCode, roadmap de emprego, System Design "o mais extenso") e viagem ao Reino Unido (Glasgow/Sheffield); o nome não aparece.
+
 ## Key Sources
 
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]]
@@ -82,3 +86,7 @@ Vídeo de carreira sobre sete erros comuns de devs brasileiros ao aplicar para e
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — lista de erros ao aplicar para vagas na gringa (inglês, storytelling, LeetCode/System Design, pesquisa da empresa); autoria por autorreferência 'Galego'
 
 - [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] — vídeo sobre [[wiki/concepts/contribuidor-de-alto-impacto]] (autoria inferida)
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — no robots in the gym; vibe ler; ler e escrever (autoria inferida)

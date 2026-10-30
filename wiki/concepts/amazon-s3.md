@@ -3,8 +3,8 @@ type: concept
 title: "Amazon S3"
 aliases: ["S3", "Simple Storage Service"]
 date_created: 2026-08-04
-date_updated: 2026-09-30
-source_count: 4
+date_updated: 2026-10-30
+source_count: 5
 tags: ["aws", "s3", "storage", "cdn", "infra", "cloud"]
 skill: tech-mentor-infra
 status: stub
@@ -32,7 +32,7 @@ Serviço de object storage da AWS — um "bucket" para armazenar dados de forma 
 
 ## Storage Classes, Lifecycle e Event Notifications
 
-Objetos podem ter até 5 TB, durabilidade de 11 noves. Três storage classes principais: **Standard** (acesso frequente), **Standard-IA** (raramente acessado, mas precisa estar disponível rápido), **Glacier** (arquivo de longo prazo, recuperação em minutos a horas). **Lifecycle policies** movem objetos entre classes automaticamente (ex: 30 dias → IA, 90 dias → Glacier) sem intervenção manual — mitiga o contra de "custo por acesso" já registrado acima ao migrar dados frios automaticamente. **Versioning** protege contra deleção acidental; **Block Public Access** bloqueia acesso público mesmo com configuração errada. **S3 Event Notifications** disparam Lambda (upload) ou mandam mensagem para [[wiki/concepts/aws-sqs|SQS]] (deleção) — cola comum de arquiteturas event-driven. Ver [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]].
+Objetos podem ter até 5 TB (50 TB desde dez/2025 — ver "Limites de Upload" abaixo), durabilidade de 11 noves. Três storage classes principais: **Standard** (acesso frequente), **Standard-IA** (raramente acessado, mas precisa estar disponível rápido), **Glacier** (arquivo de longo prazo, recuperação em minutos a horas). **Lifecycle policies** movem objetos entre classes automaticamente (ex: 30 dias → IA, 90 dias → Glacier) sem intervenção manual — mitiga o contra de "custo por acesso" já registrado acima ao migrar dados frios automaticamente. **Versioning** protege contra deleção acidental; **Block Public Access** bloqueia acesso público mesmo com configuração errada. **S3 Event Notifications** disparam Lambda (upload) ou mandam mensagem para [[wiki/concepts/aws-sqs|SQS]] (deleção) — cola comum de arquiteturas event-driven. Ver [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]].
 
 ## Caso: Bucket para Imagens Servidas via CDN
 
@@ -44,3 +44,11 @@ No Instagram simplificado, a imagem sai do disco local do back end para um bucke
 - [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — storage classes, lifecycle policies, versioning, Block Public Access e Event Notifications como gatilho de arquiteturas event-driven
 - [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — bucket S3 público hospedando site estático; o **endpoint de site estático é HTTP puro** (sem SSL → navegador marca "not secure"), motivando a camada [[wiki/concepts/aws-cloudfront|CloudFront]] + [[wiki/concepts/certificado-ssl-acm|ACM]] para obter HTTPS
 - [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — Instagram simplificado: bucket S3 + URL pública + CDN para imagens de perfil
+
+## Limites de Upload (atualização 2026-10-30)
+
+PUT único: até 5 GB; AWS recomenda [[wiki/concepts/multipart-upload]] a partir de 100 MB. Tamanho máximo de objeto passou de 5 TB para **50 TB** em dez/2025 [external: [anúncio AWS](https://aws.amazon.com/about-aws/whats-new/2025/12/amazon-s3-maximum-object-size-50-tb/)] — a menção a "5 TB" acima é anterior a isso. Acesso por clientes via [[wiki/concepts/presigned-url]]; categoria geral: [[wiki/concepts/object-storage]]. Ver [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]].
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — presigned URL (PUT/GET), multipart até 50 TB, durabilidade, integração com SQS/CloudFront

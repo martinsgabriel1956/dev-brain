@@ -3,8 +3,8 @@ type: concept
 title: "Separação de Contextos"
 aliases: ["context separation", "context isolation", "sessões separadas"]
 date_created: 2026-05-04
-date_updated: 2026-10-08
-source_count: 6
+date_updated: 2026-10-26
+source_count: 7
 tags: [context-engineering, coding-agents, workflow]
 skill: tech-mentor-ai
 status: stable
@@ -67,3 +67,7 @@ Separação de contextos garante que sessões não se contaminem. [[memoria-de-l
 ## Key sources (adição 2026-10-08)
 
 - [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — Recomenda sessão nova de "cabeça limpa" após resposta errada ([[wiki/concepts/ia-perdida-e-confiante]]).
+
+## Key sources (adição 2026-10-26)
+
+- [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]] — revisão por subagente de contexto limpo (só o diff) como camada 1 de um pipeline de produção; exemplo didático do viés de contexto ("febre" herdando "dor de cabeça" de semana anterior). Ver [[wiki/concepts/revisao-em-camadas-queijo-suico]].

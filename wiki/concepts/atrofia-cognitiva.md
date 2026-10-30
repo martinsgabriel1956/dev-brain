@@ -3,8 +3,8 @@ type: concept
 title: "Atrofia Cognitiva"
 aliases: ["atrofiação cognitiva", "cognitive atrophy", "cognitive offloading", "atrofia cognitiva", "skill decay por ia"]
 date_created: 2026-08-10
-date_updated: 2026-09-15
-source_count: 4
+date_updated: 2026-10-30
+source_count: 5
 tags: [atrofia-cognitiva, aprendizado, ia-e-programacao, dependencia-ia, pensamento-critico, risco]
 skill: tech-mentor-leadership
 status: draft
@@ -54,9 +54,17 @@ A mesma fonte cita, de segunda mão (artigo não lido diretamente nesta ingestã
 
 [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]] conecta o mesmo mecanismo a uma consequência de mercado, não só de aprendizado individual: no contexto do cargo [[wiki/concepts/forward-deployed-engineer]], quem não entender pelo menos superficialmente como funciona um token, uma rede neural ou uma LLM vai "tratar aquilo como uma caixa preta" — e por isso não vai conseguir extrair o máximo potencial da ferramenta nem configurá-la com segurança dentro de uma empresa cliente. É o mesmo risco de atrofia/dependência sem entendimento já documentado nesta página, mas aplicado à ferramenta de IA em si (não ao código gerado por ela), e com um custo profissional concreto: perder empregabilidade num papel que exige justamente aplicar (não só consumir) modelos.
 
+## Tarefa de Academia: o Critério de Quando Não Delegar
+
+[[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] dá um critério prático para evitar a atrofia: separar [[wiki/concepts/tarefa-de-academia-vs-trabalho|tarefas de academia]] (o esforço é o objetivo) de trabalho (o resultado é o objetivo) e só delegar o segundo. Cita dois estudos `[external]`: o da [[wiki/entities/microsoft]] (Lee et al., CHI 2025), em que usuários de IA generativa **relatam** menos esforço cognitivo e menos confiança no próprio trabalho intelectual, e Bastani et al. (PNAS 2025), em que estudantes de matemática com GPT sem guardrails foram melhor na prática e pior na prova sem IA. Antídotos propostos: ler livros que passaram pelo [[wiki/concepts/efeito-lindy]] e escrever.
+
 ## Key Sources
 
 - [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] — define a atrofia cognitiva como consequência de fugir da dificuldade delegando à IA.
 - [[wiki/sources/atrofia-cognitiva-ia-programacao]] — distinção reversível (base existe) vs. irreversível (nunca houve base); memorizar sintaxe já era irrelevante antes da IA.
 - [[wiki/sources/ia-produtividade-nao-reduz-trabalho-corrida-da-ia-profecia-autorrealizavel]] — analogia muscular, exemplo dos números de telefone, e citação de segunda mão de estudo da Anthropic sobre formação de habilidade
 - [[wiki/sources/forward-deployed-engineers-origem-palantir-onda-brasil]] — caixa-preta de LLM/token como risco de empregabilidade no cargo Forward Deployed Engineer, não só de aprendizado
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — no robots in the gym; estudos Microsoft (autorrelato) e PNAS (matemática, sem guardrails); ler e escrever como antídoto

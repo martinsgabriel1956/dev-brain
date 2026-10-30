@@ -3,8 +3,8 @@ type: concept
 title: "Extreme Ownership"
 aliases: ["ownership extremo", "Jocko Willink", "responsabilidade total"]
 date_created: 2026-04-22
-date_updated: 2026-10-07
-source_count: 6
+date_updated: 2026-10-26
+source_count: 7
 tags: [liderança, carreira, responsabilidade, ego, ownership]
 skill: tech-mentor-leadership
 status: stable
@@ -76,3 +76,7 @@ Sêniors e tech leads que praticam extreme ownership constroem confiança mais r
 - [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]
 
 - [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] — ownership aparece como princípio comum de Amazon, Stripe e YC
+
+## Key sources (adição 2026-10-26)
+
+- [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]] — regra "você mergeou, você é o dono" aplicada a PRs de agente; explicitamente não é para achar culpado.

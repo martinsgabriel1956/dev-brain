@@ -3,8 +3,8 @@ type: entity
 title: "Microsoft"
 aliases: []
 date_created: 2026-07-16
-date_updated: 2026-10-14
-source_count: 9
+date_updated: 2026-10-30
+source_count: 11
 tags: [empresa, custo-ia, token-economics, demissao, capital-de-tokens]
 skill: tech-mentor-ai
 status: stub
@@ -38,6 +38,10 @@ Citada, junto com Google e Apple, como uma das big techs que adotaram em massa o
 
 Azure citado (transcrição "Acer") entre os hyperscalers do imaginário de "ir para a nuvem" ([[wiki/concepts/cloud-como-modelo-de-consumo]]).
 
+## Estudo sobre IA Generativa e Pensamento Crítico
+
+[[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] cita um "pequeno estudo" da Microsoft: usuários relatam menos esforço cognitivo e menos confiança no próprio trabalho intelectual ao usar muita IA generativa. `[external]` Provavelmente Lee et al., CHI 2025 (survey com 319 trabalhadores do conhecimento; dado autorrelatado). Ver [[wiki/concepts/atrofia-cognitiva]].
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — Azure entre os hyperscalers do imaginário de nuvem
@@ -51,3 +55,11 @@ Azure citado (transcrição "Acer") entre os hyperscalers do imaginário de "ir 
 
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — IE, IIS, ASP, ActiveX, Silverlight e a acusação de monopólio na [[wiki/concepts/guerra-dos-navegadores]]
+
+## Key sources (adição 2026-10-26)
+
+- [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]] — apresentador atribui à Microsoft um benchmark de revisores de código (71% nos 5 primeiros comentários em repositórios abertos, queda em fechados) ([[wiki/concepts/limites-empiricos-de-revisao-por-ia]]); não verificado.
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — estudo IA generativa × pensamento crítico (autorrelato)

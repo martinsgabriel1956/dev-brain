@@ -3,8 +3,8 @@ type: concept
 title: "Região AWS"
 aliases: ["AWS Region", "Region", "Região Geográfica AWS"]
 date_created: 2026-05-06
-date_updated: 2026-05-06
-source_count: 1
+date_updated: 2026-10-26
+source_count: 2
 tags: ["aws", "infraestrutura", "região", "cloud"]
 skill: tech-mentor-infra
 status: stable
@@ -45,6 +45,9 @@ status: stable
 3. **Disponibilidade de serviços** — nem todo serviço está em todas as regiões
 4. **Custo** — preços variam por região (us-east-1 costuma ser o mais barato)
 
+**Atualização 2026-10-26:** Exemplo de região no bloco `provider` do Terraform: `us-east-1` (Norte da Virgínia) — [[wiki/concepts/terraform-provider]].
+
 ## Key Sources
 
 - [[wiki/sources/aws-infraestrutura-global]]
+- [[wiki/sources/introducao-ao-terraform-iac-devops]] — Introdução ao Terraform: região us-east-1 no provider

@@ -3,8 +3,8 @@ type: concept
 title: "Golden Dataset"
 aliases: ["golden test", "dataset dourado", "golden set"]
 date_created: 2026-09-30
-date_updated: 2026-09-30
-source_count: 1
+date_updated: 2026-10-30
+source_count: 3
 tags: [evals, testes, llm, golden-dataset]
 skill: tech-mentor-ai
 status: stub
@@ -29,3 +29,11 @@ Fonte não explica como as respostas esperadas são comparadas (igualdade exata,
 ## Key sources
 
 - [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]]
+
+## Key sources (adição 2026-10-26)
+
+- [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]] — golden dataset do revisor construído de incidentes reais confirmados ([[wiki/concepts/eval-de-revisor-a-partir-de-incidentes]]).
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]] — paralelo: [[wiki/concepts/corpus-sintetico-de-codigo-legado]] só vale o quanto representa a produção

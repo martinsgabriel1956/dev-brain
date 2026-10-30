@@ -3,8 +3,8 @@ type: concept
 title: "FinOps — Cost-Aware Architecture"
 aliases: ["finops", "cloud cost", "unit economics", "cost optimization"]
 date_created: 2026-04-23
-date_updated: 2026-10-07
-source_count: 7
+date_updated: 2026-10-30
+source_count: 8
 tags: [finops, cloud-cost, unit-economics, right-sizing, spot-instances, egress, aws]
 skill: tech-mentor-infra
 status: stub
@@ -59,3 +59,11 @@ Terceirizar infra converte [[wiki/concepts/capex-vs-opex|CAPEX em OPEX]] e elimi
 ## Key sources (adição 2026-10-07)
 
 - [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] — custo como requisito de arquitetura: SMS vs push/e-mail, [[wiki/concepts/channel-router-custo-fallback]].
+
+## Egress como Linha de Custo
+
+Servir arquivos grandes direto do S3 paga egress por GB; CDN na frente muda a conta. Ver [[wiki/concepts/custo-de-egress]]. Ver [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]].
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — egress S3 vs. CloudFront

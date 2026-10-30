@@ -3,8 +3,8 @@ type: concept
 title: "Dependência de IA"
 aliases: ["ai dependency", "dependência ferramenta", "loop de prompts"]
 date_created: 2026-05-31
-date_updated: 2026-09-14
-source_count: 7
+date_updated: 2026-10-30
+source_count: 8
 tags: [dependencia-ia, ia-e-programacao, aprendizado-passivo, autonomia-tecnica, iniciante]
 skill: tech-mentor-leadership
 status: stable
@@ -94,6 +94,10 @@ Pedir para uma IA revisar/sugerir melhorias no próprio código antes de abrir u
 
 [[wiki/sources/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico]] contribui uma variante que as fontes anteriores desta página não cobriam: um profissional sênior, já empregado e produtivo, pode desenvolver dependência de IA mesmo sem os sintomas clássicos de "não sabe explicar o código" — o relato é de ansiedade crescente e proporcional ao uso, não de incapacidade técnica imediata. A fonte também estende o conselho de carreira: assim como um diretor de cinema não deveria começar dirigindo sem passar pela produção, um dev não deveria iniciar a carreira dependendo de IA — ver [[wiki/concepts/diretor-de-ia-metafora-do-cinema]] e [[wiki/concepts/fundacao-tecnica]].
 
+## Delegar Academia vs. Delegar Trabalho
+
+[[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] propõe a linha de corte: delegar trabalho (triar e-mails) é saudável; delegar academia (ler o livro, fazer o vestibular, fazer a faculdade) leva, no limite, a "virar um analfabeto funcional". Ver [[wiki/concepts/tarefa-de-academia-vs-trabalho]] e [[wiki/concepts/vibe-leitura]].
+
 ## Key Sources
 
 - [[wiki/sources/cinema-e-programacao-diretor-de-ia-carreira-lucas-badico]] — variante sênior: ansiedade crescente proporcional ao uso, mesmo sem perda de emprego; conselho de carreira via metáfora de diretor de cinema
@@ -103,3 +107,7 @@ Pedir para uma IA revisar/sugerir melhorias no próprio código antes de abrir u
 - [[wiki/sources/escala-niveis-uso-ia-engenheiros]] — níveis 0–2 como zona de estagnação e dependência
 - [[wiki/sources/como-nao-ser-humilhado-no-primeiro-code-review]] — revisar código com IA antes do PR só funciona se vier com "por que" explicado
 - [[wiki/sources/como-usar-ia-para-aprender-programacao-sem-atrofiar]] — IA como "muleta" para fugir da dificuldade → [[wiki/concepts/atrofia-cognitiva]]; contraste com IA que *cria* dificuldade calibrada
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — linha de corte entre delegar trabalho e delegar academia

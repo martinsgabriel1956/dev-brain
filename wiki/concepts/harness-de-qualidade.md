@@ -3,8 +3,8 @@ type: concept
 title: "Harness de Qualidade"
 aliases: ["quality harness", "harness ia", "ferramental de qualidade"]
 date_created: 2026-05-31
-date_updated: 2026-10-06
-source_count: 11
+date_updated: 2026-10-26
+source_count: 12
 tags: [harness, qualidade, pipeline-de-qualidade, tdd, testes, era-agentica, robustez]
 skill: tech-mentor-backend
 status: stable
@@ -109,3 +109,7 @@ Harness de qualidade é a aplicação do [[wiki/concepts/trava-deterministica-no
 - [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — gerar com IA ≠ executar com LLM; tempo ganho reinvestido em qualidade
 - [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — skills avaliadas com asserções e baseline sem skill como sensor de qualidade
 - [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — princípio de Hashimoto
+
+## Key sources (adição 2026-10-26)
+
+- [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]] — pipeline de sete camadas como harness de produção; erro recorrente aponta o que falta no harness (lint, CLAUDE.md, skill) em vez de corrigir PR a PR ([[wiki/concepts/review-md]]). Papers sobre testes gerados por agente: [[wiki/concepts/limites-empiricos-de-revisao-por-ia]].

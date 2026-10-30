@@ -3,8 +3,8 @@ type: concept
 title: "DevOps Culture"
 aliases: ["devops", "cultura devops"]
 date_created: 2026-08-23
-date_updated: 2026-08-23
-source_count: 1
+date_updated: 2026-10-26
+source_count: 2
 tags: [devops, cicd, cultura, colaboração]
 skill: tech-mentor-infra
 status: stub
@@ -22,6 +22,9 @@ Fowler faz questão de esclarecer, via nota de rodapé, que apesar do nome, "dev
 
 O segundo requisito citado junto (automação extensiva via [[wiki/concepts/pipeline-de-ci|deployment pipeline]]) é necessário mas não suficiente sozinho — sem a cultura colaborativa, a automação técnica não sustenta a capacidade de deploy a qualquer momento que define Continuous Delivery.
 
+**Atualização 2026-10-26:** Terraform citado como ferramenta fundamental para quem atua como engenheiro DevOps ([[wiki/entities/terraform]]).
+
 ## Key Sources
 
 - [[wiki/sources/continuous-delivery-martin-fowler]]
+- [[wiki/sources/introducao-ao-terraform-iac-devops]] — Introdução ao Terraform: ferramenta-chave de DevOps

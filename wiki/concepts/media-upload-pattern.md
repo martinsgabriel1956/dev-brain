@@ -3,8 +3,8 @@ type: concept
 title: "Media Upload Pattern"
 aliases: ["presigned url", "upload direto s3", "media upload", "direct upload"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 2
+date_updated: 2026-10-30
+source_count: 3
 tags: [system-design, s3, upload, cdn, performance, infra, valet-key, presigned-url]
 skill: tech-mentor-system-design
 status: stable
@@ -56,3 +56,11 @@ Este fluxo é uma implementação do [[wiki/concepts/valet-key-pattern]]: a API 
 
 - [[wiki/sources/case-whatsapp]]
 - [[wiki/sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
+
+## Multipart, Retomada e Download Privado
+
+O fluxo acima cobre o PUT único. Para arquivos ≥ 100 MB, o mesmo padrão evolui para [[wiki/concepts/multipart-upload]] (array de [[wiki/concepts/presigned-url|URLs pré-assinadas]] numeradas, retomada via `uploadId`, ETags como prova de conclusão, evento S3 → SQS → worker). O download de arquivo privado segue o caminho inverso: permissão → S3 key → URL de GET assinada, com CDN na frente. Ver [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]].
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — vídeo 5 da série Tier S: PUT < 100 MB vs. multipart, cron de limpeza/reconciliação, download privado

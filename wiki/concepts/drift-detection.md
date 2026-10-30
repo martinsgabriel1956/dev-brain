@@ -3,8 +3,8 @@ type: concept
 title: "Drift Detection"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-10-06
-source_count: 4
+date_updated: 2026-10-26
+source_count: 5
 tags: [drift-detection, behavior-drift, llm, infraestrutura]
 skill: tech-mentor-infra
 status: stub
@@ -31,9 +31,12 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 
 Saber qual versão de prompt está ativa e o que mudou ([[wiki/concepts/metadados-de-prompt]]) é pré-condição para diagnosticar mudança de comportamento ([[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]]).
 
+**Atualização 2026-10-26:** O vídeo só cita o benefício de histórico/versionamento contra mudanças manuais não registradas; drift em si não é tratado ([[wiki/concepts/infraestrutura-declarativa]]).
+
 ## Key sources
 
 - [[wiki/sources/terraform]]
 - [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — sentido de behavior drift de LLM e cadência de verificação
 - [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — rastreabilidade de versão como base para investigar mudança de comportamento
 - [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — [[wiki/concepts/drift-de-schema-entre-ambientes]]: o equivalente em banco de dados (alteração manual fora do código)
+- [[wiki/sources/introducao-ao-terraform-iac-devops]] — Introdução ao Terraform: mudanças manuais no console não deixam registro

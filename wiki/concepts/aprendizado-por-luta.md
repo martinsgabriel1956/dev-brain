@@ -3,8 +3,8 @@ type: concept
 title: "Aprendizado por Luta"
 aliases: ["desirable difficulties", "dificuldades desejáveis", "aprender pela dificuldade", "Kolb experiential learning"]
 date_created: 2026-04-29
-date_updated: 2026-07-28
-source_count: 5
+date_updated: 2026-10-30
+source_count: 6
 tags: [aprendizado, psicologia, carreira, pratica, ia]
 skill: tech-mentor-leadership
 status: stable
@@ -63,6 +63,10 @@ Esse caso amplia o padrão desta página: a luta não precisa ser imposta por um
 - [[wiki/concepts/neuroplasticidade]] — a luta é o gatilho da reorganização neural
 - [[wiki/concepts/curva-de-aprendizado]] — descreve *onde* as barreiras aparecem estruturalmente na área de programação; esta página descreve *por que* atravessá-las produz retenção superior
 
+## Tempo sob Tensão com as Ideias
+
+[[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] resume o mecanismo na metáfora da academia: o peso tem que ser levantado por você. "Tem que ter repetição espaçada, tem que ter esforço, tem que ter tempo sobre tensão ali com as ideias." Delegar à IA a parte difícil e conferir depois remove justamente a luta. Ver [[wiki/concepts/tarefa-de-academia-vs-trabalho]].
+
 ## Key Sources
 
 - [[wiki/sources/por-que-devs-nao-terminam-projetos]]
@@ -70,3 +74,7 @@ Esse caso amplia o padrão desta página: a luta não precisa ser imposta por um
 - [[wiki/sources/como-praticar-leetcode-da-forma-certa-anthony-mays]] — o roteiro de dez etapas de prática simulada é desenhado para expor o candidato à mesma dificuldade real da entrevista, sem atalhos
 - [[wiki/sources/a-insanidade-de-ser-um-programador-hoje]] — cadeia de barreiras não óbvias para enviar um e-mail (back-end → PHP → Apache → SMTP) como exemplo concreto de aprendizado por luta
 - [[wiki/sources/aprenda-a-programar-do-jeito-dificil]] — bot de Discord de Tibia: recusa deliberada de usar biblioteca pronta de concorrência para entender o problema por debaixo dos panos
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — metáfora da academia; delegar + conferir remove a luta

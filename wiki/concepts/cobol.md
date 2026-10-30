@@ -3,8 +3,8 @@ type: concept
 title: "COBOL"
 aliases: ["Common Business-Oriented Language"]
 date_created: 2026-08-04
-date_updated: 2026-10-06
-source_count: 4
+date_updated: 2026-10-30
+source_count: 5
 tags: [cobol, mainframe, legado, sistema-financeiro, linguagem-de-programacao]
 skill: tech-mentor-backend
 status: stub
@@ -47,9 +47,17 @@ Pesquisa da Vanson Bourne para a [[wiki/entities/micro-focus|Micro Focus]] (47 p
 
 Em vez de traduzir COBOL direto, o DMV extraiu regras de negócio com [[wiki/entities/ibm-arc]] + [[wiki/entities/watsonx]] — [[wiki/concepts/descoberta-de-regras-de-negocio-legado]].
 
+## Corpus Sintético: Spec2COBOLRot
+
+[[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]]: como legado COBOL real quase nunca é público, pesquisadores geraram programas COBOL com IA e os envelheceram com 26 padrões típicos (laço por fim de arquivo, tabela indexada, registros rejeitados, GO TO, working-storage inchada, REDEFINES, decimal compactado). Alguns são idioms da linguagem/plataforma, não defeitos. Ver [[wiki/entities/spec2cobolrot]].
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — COBOL/DB2/CICS seguem rodando em MaaS, sem reescrita
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]]
 - [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] — pesquisa Vanson Bourne/Micro Focus: 92% dos especialistas tratam sistemas COBOL da própria organização como críticos
 - [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]] — COBOL/Assembly de 6M de linhas; regras só existem no código
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]] — 26 padrões legados (idioms, smells, mismatches) e corpus sintético

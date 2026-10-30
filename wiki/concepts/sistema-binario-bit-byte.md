@@ -3,8 +3,8 @@ type: concept
 title: "Sistema Binário, Bit e Byte"
 aliases: ["bit", "byte", "sistema binário", "binary digit", "representação binária"]
 date_created: 2026-08-07
-date_updated: 2026-10-05
-source_count: 4
+date_updated: 2026-10-30
+source_count: 5
 tags: [cs-fundamentals, sistema-binario, bit, byte, numero-binario, representacao, rgb, unicode]
 skill: cs-fundamentals
 status: draft
@@ -65,9 +65,17 @@ O padrão se repete: representar qualquer tipo de mídia é uma questão de conv
 - [[wiki/concepts/transistor]] — o componente físico que implementa o estado 0/1 via tensão no gate (0V/1V)
 - [[wiki/concepts/celula-padrao]] — como bits (saídas de transistores) se combinam em portas lógicas físicas
 
+## Origem Histórica
+
+[[wiki/sources/historia-do-computador-da-antikythera-ao-computador-quantico]] credita a Leibniz (séc. XVII) a defesa da numeração binária e ao Z1 de Zuse (1938) o primeiro equipamento binário programável. `[external]` O Z1 era mecânico, não eletromecânico como diz a fonte. O qubit da [[wiki/concepts/computacao-quantica]] generaliza o bit.
+
 ## Key sources
 
 - [[wiki/sources/conceitos-que-regem-a-computacao-bits-turing-complexidade]] — bit como binary digit (2 estados / transistores), byte como 8 bits representando um caractere, e a lógica binária como base do processamento
 - [[wiki/sources/cs50-2026-semana-0-representacao-dados-algoritmos-scratch]] — unário vs. binário com demonstração física (dedos/lâmpadas); 2⁸=256 e 2³²/2⁶⁴ como tamanhos modernos de palavra; generalização do princípio para RGB, vídeo e som
 - [[wiki/sources/como-transistores-formam-portas-logicas-celulas-padrao-cmos]] — como o transistor implementa fisicamente o estado 0V/1V que o bit representa
 - [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — opcode como bytes de instrução; relação com [[wiki/concepts/assembly]]
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/historia-do-computador-da-antikythera-ao-computador-quantico]] — Leibniz e o binário; Z1 de Zuse

@@ -3,8 +3,8 @@ type: concept
 title: "Processamento Assincrono"
 aliases: ["processamento assíncrono", "background processing"]
 date_created: 2026-09-22
-date_updated: 2026-10-05
-source_count: 6
+date_updated: 2026-10-30
+source_count: 7
 tags: [processamento-assincrono, comunicacao-assincrona, workers, filas]
 skill: tech-mentor-backend
 status: draft
@@ -43,3 +43,11 @@ Nota fiscal, e-mail e estoque rodam após publicar o evento ([[wiki/concepts/qua
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — receptor processa em background e notifica depois
 - [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — geração de miniatura de imagem em background via fila/worker
 - [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — tarefas externas fora do caminho do usuário
+
+## Caso: Status de Upload Atualizado por Worker
+
+Upload direto para o S3 deixa o registro em `pendente`; a conclusão é observada de forma assíncrona (evento S3 → [[wiki/concepts/aws-sqs|SQS]] → worker) e por um cron de reconciliação que finaliza uploads órfãos. Ver [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]].
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — fecha o gancho de processamento assíncrono do vídeo 3 da série com o evento de conclusão de upload

@@ -3,8 +3,8 @@ type: concept
 title: "Modernização de Mainframe"
 aliases: ["integração de mainframe com nuvem híbrida", "mainframe modernization"]
 date_created: 2026-09-14
-date_updated: 2026-10-06
-source_count: 4
+date_updated: 2026-10-30
+source_count: 5
 tags: [mainframe, modernizacao, nuvem-hibrida, devops, legado]
 skill: tech-mentor-backend
 status: stub
@@ -34,9 +34,17 @@ Em 1991 migrar um minicomputador para um mainframe mais novo foi chamado de "na 
 
 O [[wiki/entities/california-dmv]] substitui gradualmente o mainframe (DXP, 2021–2029 previsto, US$ 767M) e começou por [[wiki/concepts/descoberta-de-regras-de-negocio-legado]] com IA. Contraponto à tendência de integração acima.
 
+## Modernizar Não É Só Traduzir a Linguagem
+
+[[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]] fecha com a lição de que muitos projetos descobrem tarde que traduzir COBOL não basta: o difícil é a entropia histórica (regras acumuladas, compromissos, dependências), não o código feio. Também mostra que nem benchmarks de ferramentas de modernização conseguem simulá-la só com métricas. Ver [[wiki/concepts/entropia-historica-vs-complexidade-estrutural]] e [[wiki/concepts/corpus-sintetico-de-codigo-legado]].
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — modernização via MaaS: nuvem e mainframe juntos, sem reescrita
 - [[wiki/sources/mercado-cobol-mainframe-pesquisas-retorno-ti]] — pesquisa da Kyndryl sobre modernização de mainframe; efeito direto na demanda por perfil combinado (legado + integração)
 - [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — caso pessoal de 1991: sistema em mainframe "na contramão do downsizing" durou 20+ anos; modernização definida pela direção do mercado
 - [[wiki/sources/dmv-california-ia-descoberta-regras-negocio-mainframe-cobol]] — caso de substituição: discovery com IA em 15 meses vs ~5 anos manual
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]] — modernizar não é traduzir; benchmarks sintéticos não reproduzem a história

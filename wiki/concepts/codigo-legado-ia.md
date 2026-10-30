@@ -3,8 +3,8 @@ type: concept
 title: "Código Legado e IA"
 aliases: ["legacy code ia", "migracao legado ia", "modernizacao ia"]
 date_created: 2026-06-02
-date_updated: 2026-09-29
-source_count: 5
+date_updated: 2026-10-30
+source_count: 6
 tags: [legado, migracao, ia-para-devs, spec-driven, modernizacao]
 skill: tech-mentor-ai
 status: draft
@@ -66,6 +66,10 @@ Para esses casos, a abordagem de **reconstruir a partir da documentação oficia
 
 Alternativa a migrar/reescrever o legado: manter o código e mudar só o consumo da infraestrutura ([[wiki/concepts/mainframe-as-a-service]]).
 
+## IA para Fabricar Legado de Teste
+
+Na direção inversa à usual (IA para entender ou migrar legado), [[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]] comenta o uso de agentes para **gerar** legado: um agente escreve COBOL a partir de especificações e outro o envelhece, para criar um [[wiki/concepts/corpus-sintetico-de-codigo-legado]] que sirva de benchmark a ferramentas de modernização. Funciona para métricas, não para a história de regras de negócio ([[wiki/concepts/entropia-historica-vs-complexidade-estrutural]]).
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — alternativa à reescrita: MaaS mantém o código legado
@@ -73,3 +77,7 @@ Alternativa a migrar/reescrever o legado: manter o código e mudar só o consumo
 - [[wiki/sources/formacao-ia-devs-aula-06-qa]]
 - [[wiki/sources/large-scale-vs-complex-architecture]] — descreve a origem histórica (migração multi-plataforma sem desligamento completo) do tipo de legado enterprise que este conceito endereça
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — cenário de abertura: refatorar código legado desorganizado com IA; falha comum é pedir sem planejar e sem contexto, levando a quebra de testes por dependências mal entendidas
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]] — agentes gerando e envelhecendo COBOL para benchmark de modernização

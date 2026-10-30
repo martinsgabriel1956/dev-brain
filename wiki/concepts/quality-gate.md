@@ -3,8 +3,8 @@ type: concept
 title: "Quality Gate"
 aliases: ["quality gates", "portão de qualidade", "gate de qualidade", "análise estática em pull request"]
 date_created: 2026-07-16
-date_updated: 2026-09-29
-source_count: 11
+date_updated: 2026-10-26
+source_count: 12
 tags: [quality-gate, linter, analise-estatica, clean-code, modularizacao, ia, milestone, criterios-de-qualidade, ratchet, babysitting-de-agentes, branch-protection]
 skill: tech-mentor-testing
 status: draft
@@ -99,3 +99,7 @@ A fonte enquadra essas quatro técnicas como a resposta prática ao mesmo proble
 - [[wiki/sources/quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob]] — quatro gates concretos (CCN, cobertura+mutation, tamanho de módulo, dependency structure) para transformar a lista de métricas de Uncle Bob num pipeline de CI real
 - [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — "qualidade de código é mensurável, não subjetiva"; o quality gate no CD como o substituto que "já surgiu" para a revisão linha a linha (contra o "algo precisa surgir no lugar" de Gergely Orosz)
 - [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — IA gera o gate, mas não o executa; contraste com babysit
+
+## Key sources (adição 2026-10-26)
+
+- [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]] — camadas 2 e 6 (CI e fila de merge re-rodando checagens sobre a main) são quality gates determinísticos dentro de [[wiki/concepts/revisao-em-camadas-queijo-suico]].

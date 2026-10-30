@@ -3,8 +3,8 @@ type: concept
 title: "Ownership Proativo"
 aliases: ["puxar responsabilidade", "proactive ownership", "projeto de alto impacto"]
 date_created: 2026-04-22
-date_updated: 2026-10-07
-source_count: 7
+date_updated: 2026-10-26
+source_count: 8
 tags: [carreira, senioridade, ownership, liderança, destaque]
 skill: tech-mentor-leadership
 status: stable
@@ -66,3 +66,7 @@ A mesma fonte descreve o comportamento como "ser antes de ter" e o limita: não 
 - [[wiki/sources/como-ser-promovido-dev-jogar-o-jogo-da-carreira-andre-casciotti]]
 
 - [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] — ownership como marca do [[wiki/concepts/high-agency-founder-mode|high agency]]; Amazon, Stripe e YC convergem nisso
+
+## Key sources (adição 2026-10-26)
+
+- [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]] — "mergeou, é o dono; quebrou, conserta", sem *blame*: quem fez tem mais contexto e conserta mais rápido; ownership como condição para pular revisão ([[wiki/concepts/confianca-por-reversibilidade]]).

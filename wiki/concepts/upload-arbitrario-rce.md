@@ -3,8 +3,8 @@ type: concept
 title: "Upload Arbitrário → RCE"
 aliases: ["arbitrary file upload", "upload malicioso", "rce via upload", "unrestricted file upload"]
 date_created: 2026-07-31
-date_updated: 2026-07-31
-source_count: 1
+date_updated: 2026-10-30
+source_count: 2
 tags: [rce, upload, appsec, mime-type, plugin, code-execution, owasp]
 skill: tech-mentor-security
 status: stub
@@ -36,3 +36,11 @@ Extensão de arquivo é metadado controlado pelo cliente — renomear `shell.php
 ## Key Sources
 
 - [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]]
+
+## Mitigação: Bucket de Quarentena
+
+Para uploads que chegam direto ao object storage, validar num [[wiki/concepts/bucket-de-quarentena]] isolado antes de mover ao bucket final. Ver [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]].
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — bucket de quarentena para escanear malware antes do bucket final

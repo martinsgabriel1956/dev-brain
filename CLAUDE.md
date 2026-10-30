@@ -146,6 +146,17 @@ Source pages also carry: `source_file` (absolute path under `raw/`), `source_url
 - **Links use `[[wikilink]]` form, not Markdown links.** Obsidian is configured with `useMarkdownLinks: false`.
 - **One concept per page.** If a page sprawls, split it and backlink.
 
+## Transcripts → `raw/` (always use `text-cleaner`)
+
+Whenever a transcript (pasted video/podcast transcript, auto-generated captions, SRT/VTT) has to be turned into a Markdown file in `raw/`, **always invoke the `text-cleaner` skill first** and follow it:
+
+- **Verbatim.** Never paraphrase, condense, or summarize. Only add punctuation, paragraphs, one `#` title and a few `##`. Keep the author's spoken CTAs and hesitations.
+- **Fix ASR errors** to the correct spelling only (e.g. "sior"→sênior, "Chrome job"→cron job). Mark words the captions clearly dropped as `[word]`. Leave ambiguous passages literal.
+- **No header notes/YAML in the raw file.** ASR corrections, ambiguous passages, and inferred authorship go in the `wiki/log.md` ingest entry instead.
+- **Self-check.** Run a word-by-word diff of the original against the cleaned file. The only differences allowed are ASR fixes and `[bracketed]` insertions.
+- **Translate** to Portuguese only if the source is in another language; still preserve every sentence.
+- **Filename** follows this repo's rule (kebab-case slug, no date), not the skill's `YYYY-MM-DD-` prefix.
+
 ## Workflow 1 — Ingest
 
 Triggered by phrases like "ingest this", "ingest raw/<file>", "add this to the wiki".

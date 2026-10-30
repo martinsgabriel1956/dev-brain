@@ -3,8 +3,8 @@ type: entity
 title: "Anthropic"
 aliases: ["Anthropic", "Antrópica"]
 date_created: 2026-06-02
-date_updated: 2026-10-14
-source_count: 37
+date_updated: 2026-10-26
+source_count: 38
 tags: [anthropic, claude, llm, harness, mcp, ia-para-devs, custo-de-ia, loop-engineering, claude-tag, slack, memory-layers, prompt-caching]
 skill: tech-mentor-ai
 status: stable
@@ -177,3 +177,7 @@ A documentação do Claude Code é a fonte declarada das dicas em [[wiki/sources
 Citada em [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]] (grafada "Entropic" na legenda) junto à OpenAI como exemplo do modelo operação/FDE — afirmação do autor, não verificada. Ver [[wiki/concepts/operacao-como-servico-de-ia]].
 
 - [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]
+
+## Key sources (adição 2026-10-26)
+
+- [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]] — pipeline interno de revisão: ~30 mil mudanças/dia em setembro, ~90% escritas e revisadas pelo Claude, sete camadas, `REVIEW.md`, classificador de risco e evals de incidentes (números do post lidos de segunda mão). Ver [[wiki/concepts/revisao-em-camadas-queijo-suico]].

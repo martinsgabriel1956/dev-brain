@@ -3,8 +3,8 @@ type: entity
 title: "Pedro Camaforte"
 aliases: ["Camaforte"]
 date_created: 2026-07-03
-date_updated: 2026-10-08
-source_count: 6
+date_updated: 2026-10-30
+source_count: 7
 tags: [instrutor, system-design, entrevistas, backend, youtube]
 skill: tech-mentor-backend
 status: stub
@@ -25,3 +25,7 @@ A série é baseada num artigo de [[wiki/entities/lucas-faria]] sobre os sete co
 - [[wiki/sources/teorema-cap-p-e-pre-condicao-escolha-entre-c-e-a-pedro-camaforte]] — vídeo sobre o Teorema CAP (não numerado na série de sete; tema complementar de system design) (P como pré-condição, CAP por serviço)
 
 - [[wiki/sources/sharding-milhoes-de-escritas-partition-key-consistent-hashing-pedro-camaforte]] — vídeo sobre sharding: partition key, hash + consistent hashing, hot spots, cross-shard, Saga
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — quinto vídeo da série: upload/download de arquivos gigantes — object storage, presigned URL, multipart (ETag, uploadId, cron), CDN e egress, bucket de quarentena

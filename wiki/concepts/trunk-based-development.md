@@ -3,8 +3,8 @@ type: concept
 title: "Trunk-Based Development"
 aliases: ["trunk based development", "desenvolvimento baseado em tronco", "só main", "single long-lived branch", "main como fonte de verdade"]
 date_created: 2026-08-11
-date_updated: 2026-08-13
-source_count: 2
+date_updated: 2026-10-26
+source_count: 3
 tags: [git, branching, processo, ci-cd, versionamento, times-pequenos, tech-mentor-leadership]
 skill: tech-mentor-leadership
 status: stub
@@ -49,3 +49,7 @@ Isso é uma instância diferente do trade-off já registrado acima na variante d
 
 - [[wiki/sources/git-flow-farsa-solucao-maturidade-rebase-lucas-montano]] — variante rebase-flow só-main para times pequenos; por que não escala
 - [[wiki/sources/pull-requests-por-que-falham-alternativas-sem-pr]] — pacote completo sem PR: pair/mob programming + pipeline de testes de integração como gate + feature flags para rollout progressivo
+
+## Key sources (adição 2026-10-26)
+
+- [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]] — apresentador usa PRs ≤300 linhas, deploy feito pelo autor e flags como contexto que torna a revisão "um detalhe" ([[wiki/concepts/confianca-por-reversibilidade]]).

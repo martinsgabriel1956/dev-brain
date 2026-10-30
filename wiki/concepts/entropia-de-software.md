@@ -3,8 +3,8 @@ type: concept
 title: "Entropia de Software"
 aliases: ["software entropy", "software decay", "degradação de código"]
 date_created: 2026-07-27
-date_updated: 2026-08-14
-source_count: 3
+date_updated: 2026-10-30
+source_count: 4
 tags: [refactoring, tech-debt, craftsmanship, design-de-software, code-rot, big-ball-of-mud]
 skill: tech-mentor-backend
 status: draft
@@ -28,8 +28,16 @@ Essa é a mesma dinâmica descrita, com outro vocabulário, em [[wiki/concepts/g
 
 [[wiki/concepts/refatoracao]] · [[wiki/concepts/tech-debt-como-ferramenta]] · [[wiki/concepts/god-object]]
 
+## Entropia Histórica: o que as Métricas Não Capturam
+
+[[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]] separa o rastro estrutural da entropia (GO TO, variáveis sobrando, complexidade ciclomática) da sua causa histórica: décadas de regras de negócio implementadas por equipes diferentes, cada uma "localmente justificável" e nunca reorganizada como um todo. O paper Spec2COBOLRot mostrou `[external]` que fabricar o rastro não reproduz a causa. Ver [[wiki/concepts/entropia-historica-vs-complexidade-estrutural]].
+
 ## Key Sources
 
 - [[wiki/sources/refatoracao-pragmatic-programmer-martin-fowler-2a-edicao]]
 - [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — enumera as quatro forças da degradação (requisitos sobre arquitetura estática, perda de contexto entre equipes, hotfix sob pressão, casos não previstos) e propõe contramedidas majoritariamente organizacionais contra o code rot
 - [[wiki/sources/codigo-espaguete-wikipedia]] — entropia como uma das três forças que geram a Big Ball of Mud
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]] — entropia como acúmulo de soluções localmente justificáveis; complexidade estrutural ≠ entropia histórica

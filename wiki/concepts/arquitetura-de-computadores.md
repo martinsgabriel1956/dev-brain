@@ -3,8 +3,8 @@ type: concept
 title: "Arquitetura e Organização de Computadores"
 aliases: ["computer architecture", "arquitetura de von neumann", "organização de computadores", "pipeline de execução", "registradores"]
 date_created: 2026-08-27
-date_updated: 2026-10-14
-source_count: 2
+date_updated: 2026-10-30
+source_count: 3
 tags: [cs-fundamentals, lang-systems, arquitetura, hardware, baixo-nivel]
 skill: cs-fundamentals
 status: stub
@@ -31,6 +31,10 @@ Segundo a fonte, ninguém programa em baixo nível sem um motivo concreto — si
 
 Dois livros de **John Hennessy** e **David Patterson** (Prêmio Turing 2017) são citados como referência canônica em [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]]: um voltado a nível de mestrado/aprofundamento e outro de nível de graduação, cobrindo a interface hardware/software. Como projeto prático, a fonte sugere construir uma CPU do zero usando linguagens de descrição de hardware (VHDL ou Verilog).
 
+## Antecedentes Históricos
+
+A Máquina Analítica de [[wiki/entities/charles-babbage]] (1837) já separava processamento, memória e entrada de dados, segundo [[wiki/sources/historia-do-computador-da-antikythera-ao-computador-quantico]]. A fonte não menciona von Neumann nem o programa armazenado, que são a base da arquitetura moderna. Ver [[wiki/concepts/historia-da-computacao]].
+
 ## Key sources
 
 - [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]]
@@ -38,3 +42,7 @@ Dois livros de **John Hennessy** e **David Patterson** (Prêmio Turing 2017) sã
 ## Key sources (adição 2026-10-14)
 
 - [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]] — ISA, registradores e modos de endereçamento como o modelo da máquina ([[wiki/concepts/isa-instruction-set-architecture]]); retrocompatibilidade em [[wiki/concepts/retrocompatibilidade-x86]]
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/historia-do-computador-da-antikythera-ao-computador-quantico]] — Máquina Analítica como precursora; lacuna sobre von Neumann

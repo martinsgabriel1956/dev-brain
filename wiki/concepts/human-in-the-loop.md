@@ -3,8 +3,8 @@ type: concept
 title: "Human-in-the-Loop (HITL)"
 aliases: ["HITL", "human in the loop", "aprovação humana agente"]
 date_created: 2026-06-02
-date_updated: 2026-10-08
-source_count: 12
+date_updated: 2026-10-26
+source_count: 13
 tags: [hitl, human-in-the-loop, agente, spec-driven, aprovacao, controle, checkpoint, erros-compostos]
 skill: tech-mentor-ai
 status: stable
@@ -89,3 +89,7 @@ No [[wiki/entities/california-dmv]], a saída de ARC + watsonx passa por revisor
 - [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — Sem revisão humana a IA se perde por dias e segue confiante ([[wiki/concepts/ia-perdida-e-confiante]], [[wiki/concepts/erro-na-velocidade-da-ia]]).
 
 - [[wiki/sources/jev-typesafe-ai-system-one-model-decisoes-tipadas-codigo-fonte-tv]] — confiança calibrada ([[wiki/concepts/rlcd]]) como gatilho para escalar a um humano
+
+## Key sources (adição 2026-10-26)
+
+- [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]] — humano dimensionado por risco (0/1/2) e teto de 3–4 rodadas antes de escalar a uma pessoa ([[wiki/concepts/classificador-de-risco-de-revisao-humana]], [[wiki/concepts/ruido-e-loop-de-nitpick-em-revisao-por-agente]]).

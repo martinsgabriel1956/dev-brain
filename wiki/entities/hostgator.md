@@ -3,8 +3,8 @@ type: entity
 title: "HostGator"
 aliases: ["HostGator", "HostGator VPS"]
 date_created: 2026-07-20
-date_updated: 2026-08-17
-source_count: 3
+date_updated: 2026-10-30
+source_count: 4
 tags: [empresa, hosting, vps, infra, patrocinio]
 skill: tech-mentor-infra
 status: stub
@@ -32,3 +32,7 @@ Citada em [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]]
 - [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — segunda aparição, agora como alvo de deploy contínuo via GitHub Actions; oferta de VPS com Claude Code pré-instalado
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — terceira aparição, produto "Allstack" de agregação de assinaturas de IA
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — quarta aparição como patrocinadora (VPS para site, SaaS, n8n ou OpenClaw)

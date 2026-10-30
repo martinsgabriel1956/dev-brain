@@ -3,8 +3,8 @@ type: concept
 title: "Vibe Coding"
 aliases: ["vibe coding", "vibe-coding", "coding por vibração", "agentic coding", "orquestração de agentes"]
 date_created: 2026-04-23
-date_updated: 2026-10-08
-source_count: 28
+date_updated: 2026-10-30
+source_count: 30
 tags: [vibe-coding, agentes-ia, produtividade, divida-cognitiva, ai-brainfry, paralelismo-cognitivo]
 skill: tech-mentor-ai
 status: stable
@@ -137,6 +137,10 @@ Citado como exemplo de hype tecnológico em formação (junto com MCP) no moment
 
 Em [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] o autor diz que **não** fez vibe coding (tinha PRD, issues auditadas, revisão por agentes), e mesmo assim perdeu o controle do entendimento do código. Indica que processo rígido de geração não elimina a [[wiki/concepts/comprehension-debt]]. Ver [[wiki/concepts/auditoria-de-issue-por-agente-de-contexto-limpo]].
 
+## Vibe Codar = Vibe Ler
+
+[[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] iguala vibe coding a [[wiki/concepts/vibe-leitura]]: assim como pedir à IA o resumo de um livro não ensina literatura, fazer 90% vibe codando não forma um bom escritor de código manual. Usar a IA "como professor", aqui e ali, pode funcionar. O autor deixa em aberto se escrever código à mão ainda importa.
+
 ## Key Sources
 - [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]] — vibe coding sem acabamento deixou de ser vantagem em take-home ([[wiki/concepts/acabamento-em-take-home]]); ponto de partida para quem não é de software ([[wiki/concepts/ciclo-construir-e-aprender-em-ia]])
 
@@ -199,3 +203,12 @@ Se humanos não leem o código, o argumento de [[wiki/concepts/c-como-linguagem-
 ## Key sources (adição 2026-10-08)
 
 - [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — Pedir sem saber o que quer produz "cara bonita enfeitando sonho ruim" ([[wiki/concepts/clareza-antes-do-prompt]]).
+
+## Caso: App Pessoal Feito num Voo
+
+App de viagem em 6 h com Opus 5.5 (agregador de recomendações + LLM como classificador + Maps/calendário), declaradamente sem virar SaaS — uso legítimo de protótipo pessoal; não prova substituição de um squad em produto com usuários. Ver [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]].
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]] — app pessoal em 6 h num voo como argumento pró-generalista
+- [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — vibe codar = vibe ler; 90% vibe codando não ensina a escrever código à mão

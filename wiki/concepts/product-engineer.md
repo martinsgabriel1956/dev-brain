@@ -3,8 +3,8 @@ type: concept
 title: "Product Engineer"
 aliases: ["product engineer", "produto engineer", "engenheiro de produto"]
 date_created: 2026-06-09
-date_updated: 2026-10-07
-source_count: 4
+date_updated: 2026-10-30
+source_count: 5
 tags: [carreira, perfil-profissional, harness, produto, taste, ia-para-devs, builders]
 skill: tech-mentor-ai
 status: stable
@@ -105,3 +105,11 @@ Os quatro movimentos práticos para começar essa semana — segundo [[wiki/sour
 - [[wiki/sources/product-engineer-vale-do-silicio-2026]]
 - [[wiki/sources/impacto-ia-mercado-frontend]]
 - [[wiki/sources/ai-engineer-forward-deployed-engineer-mercado-vagas-2026]] — comparação de demanda real contra AI Engineer, Forward Deployed Engineer e Machine Learning Engineer
+
+## Terceiro Relato do Vale na Mesma Direção
+
+Generalista que entende produto, conversa com vendas e shipa do início ao fim — mesma direção de Valdemar Neto, sem dados de vaga. Ver [[wiki/concepts/programador-generalista]]. Ver [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]].
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]] — generalista que shipa produto inteiro como tendência do Vale

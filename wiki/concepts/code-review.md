@@ -3,8 +3,8 @@ type: concept
 title: "Code Review"
 aliases: ["revisão de código", "pull request review", "PR review"]
 date_created: 2026-07-03
-date_updated: 2026-10-06
-source_count: 23
+date_updated: 2026-10-26
+source_count: 24
 tags: [code-review, qualidade, carreira, júnior, mentoria, grill-me, babysitting-de-agentes, quality-gate, under-engineering]
 skill: tech-mentor-leadership
 status: draft
@@ -161,3 +161,7 @@ A tensão que explica a diferença: responsabilizar cada dev pelo que coloca em 
 - [[wiki/sources/pull-requests-por-que-falham-alternativas-sem-pr]] — tempo de revisão não escala com tamanho do PR; tamanho ótimo ~100-300 linhas; cadência diária/2x-dia via inventário-é-custo; fast follow e draft PR
 - [[wiki/sources/c-linguagem-do-futuro-ia-assembly-opcode-safe-source-ricardo-albuquerque]] — revisão humana de código gerado por IA como controle; gradiente de auditabilidade C > assembly > opcode
 - [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — migrations são código versionado: scripts novos passam por PR em vez de edição direta do banco ([[wiki/concepts/imutabilidade-de-migration]])
+
+## Key sources (adição 2026-10-26)
+
+- [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]] descreve o pipeline em sete camadas da Anthropic para ~30 mil mudanças/dia: a pergunta passa de "alguém leu?" para "o que pode dar errado e qual checagem pega melhor?", com revisor agente de contexto limpo, consenso multiagente e humanos dimensionados por classificador. Ver [[wiki/concepts/revisao-em-camadas-queijo-suico]], [[wiki/concepts/consenso-multiagente-em-code-review]], [[wiki/concepts/classificador-de-risco-de-revisao-humana]] e [[wiki/concepts/review-md]]; limites em [[wiki/concepts/limites-empiricos-de-revisao-por-ia]].

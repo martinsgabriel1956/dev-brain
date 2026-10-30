@@ -3,8 +3,8 @@ type: concept
 title: "Valet Key Pattern"
 aliases: ["valet key", "presigned url", "credencial temporária", "scoped token", "signed url"]
 date_created: 2026-06-05
-date_updated: 2026-06-05
-source_count: 1
+date_updated: 2026-10-30
+source_count: 2
 tags: [valet-key, presigned-url, s3, attack-surface, arquitetura-seguranca, least-privilege, upload, storage]
 skill: tech-mentor-security
 status: stable
@@ -54,3 +54,11 @@ A Valet Key é a implementação prática do [[wiki/concepts/defense-in-depth]] 
 ## Key Sources
 
 - [[wiki/sources/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay]]
+
+## Caso: Multipart e Download Privado
+
+A mesma "chave de manobrista" aparece como array de URLs por parte em [[wiki/concepts/multipart-upload]] e como URL de GET para download privado. Página dedicada: [[wiki/concepts/presigned-url]]. Ver [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]].
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — presigned URL para upload (PUT/multipart) e download privado

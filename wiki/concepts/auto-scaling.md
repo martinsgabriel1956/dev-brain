@@ -3,8 +3,8 @@ type: concept
 title: "Auto Scaling"
 aliases: ["autoscaling", "escalamento automático", "horizontal pod autoscaler", "HPA"]
 date_created: 2026-06-26
-date_updated: 2026-09-03
-source_count: 5
+date_updated: 2026-10-30
+source_count: 6
 tags: [system-design, escalabilidade, cloud, infra, automatizacao, performance]
 skill: tech-mentor-system-design
 status: draft
@@ -88,3 +88,11 @@ Na AWS, o ASG define três números: mínimo, desejado e máximo de instâncias 
 - [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — auto scaling baseado no tamanho da fila como resposta a [[wiki/concepts/back-pressure]]; citado como viável mas mais difícil de configurar do que as alternativas mais baratas (poda de stale jobs, batching, admission control)
 - [[wiki/sources/escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto]] — motivação de negócio para elasticidade: pico sazonal de tráfego (Black Friday numa API de e-commerce) torna provisionamento manual impraticável (custo de esquecer desprovisionar vs. indisponibilidade por não provisionar a tempo)
 - [[wiki/sources/arquitetura-monolitica-vantagens-desvantagens]] — descreve auto scaling como mais difícil em monolito, citando o processo manual de resize vertical (desligar/trocar tipo/religar); conflates monolito com single-server sem réplicas, ver ressalva acima
+
+## Auto Scaling Destrói Arquivos em Disco Local
+
+Se uploads ficam no disco do servidor, o auto scaler pode matar a instância que guardava o arquivo (ex.: reduzindo para dois servidores às 3h) — arquivo perdido. Motivo para [[wiki/concepts/object-storage]]. Ver [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]].
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — auto scaler destruindo servidor com upload local

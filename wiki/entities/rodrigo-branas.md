@@ -3,8 +3,8 @@ type: entity
 title: "Rodrigo Branas"
 aliases: ["Branas", "Rodrigo Branas"]
 date_created: 2026-06-02
-date_updated: 2026-09-08
-source_count: 7
+date_updated: 2026-10-30
+source_count: 8
 tags: [instrutor, ia-para-devs, clean-architecture, ddd, brasil]
 skill: tech-mentor-ai
 status: stable
@@ -43,3 +43,7 @@ Desenvolvedor e instrutor brasileiro com 25 anos de experiência em desenvolvime
 - [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]
 - [[wiki/sources/formacao-ia-devs-aula-06-qa]]
 - [[wiki/sources/clean-architecture-frontend-vue-diagrama-camadas-login]] — autoria inferida (não confirmada) por padrão de nomenclatura de classes idêntico a `clean-ts-api`/`clean-react`
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]] — citado como parceiro ("eu e o Rodrigo") que alerta os alunos da formação sobre a virada para o generalista há ~1 ano

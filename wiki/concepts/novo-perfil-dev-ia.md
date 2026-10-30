@@ -3,8 +3,8 @@ type: concept
 title: "Novo Perfil do Desenvolvedor na Era da IA"
 aliases: ["dev ia", "engenheiro ia 2026", "novo dev", "perfil profissional ia"]
 date_created: 2026-06-02
-date_updated: 2026-10-07
-source_count: 14
+date_updated: 2026-10-30
+source_count: 15
 tags: [carreira, perfil-profissional, ia-para-devs, arquitetura, planejamento]
 skill: tech-mentor-ai
 status: draft
@@ -108,3 +108,11 @@ O conceito descrito aqui ganhou nome formal confirmado por dados de campo do Val
 - [[wiki/sources/product-engineer-vale-do-silicio-2026]]
 - [[wiki/sources/impacto-ia-mercado-frontend]]
 - [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — migração (não extinção) e novas preocupações
+
+## Do Especialista em Código ao Generalista
+
+Versão mais radical da tese: "LLM faz código muito melhor que o ser humano" e o squad multidisciplinar perde sentido. Ver [[wiki/concepts/codigo-como-commodity]] e [[wiki/concepts/programador-generalista]]. Ver [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]].
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]] — código commodity, generalista, fim do squad

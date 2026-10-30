@@ -1,0 +1,839 @@
+# Auditoria raw/ e wiki/sources (2026-10-30)
+
+## Raws sem parágrafos (blocos gigantes)
+
+- Aula 01 - Abertura.md
+- Aula 01 - Context e Harness Engineering.md
+- Aula 01 - MCPs - Parte 1.md
+- Aula 02 - MCPs - Parte 2.md
+- Aula 02 - Mercado, Principais Mudanças e Novo Perfil Profissional.md
+- Aula 02 - Rules.md
+- Aula 03 - LLM.md
+- Aula 03 - Plan Mode.md
+- Aula 03 - Skills.md
+- Aula 04 - Agentes de Planejamento (Negócio, Design e Arquitetura, Tarefas).md
+- Aula 04 - Harness.md
+- Aula 04 - Q&A.md
+- Aula 05 - Hands-on - Harness e Prompt Engineering.md
+- Aula 05 - Q&A.md
+- Aula 06 - Q&A.md
+- anti-corruption-layer-microsservicos-requisitos-arquiteturais.md
+- como-ser-dev-essencial-e-ganhar-mais.md
+- comparacao-na-carreira-dev.md
+- desenvolvedor-acima-da-media-10-itens.md
+- sistema-operacional-por-baixo-dos-panos.md
+- tres-caracteristicas-melhor-candidato.md
+- useeffect-problemas-e-solucoes.md
+
+## Raws sem título # na primeira linha
+
+- Aula 01 - IAM Introduction - Users, Groups, Policies.md
+- ai-jail-sandbox-para-agentes-de-ia-akita.md
+- ciclo-de-mudanca-de-arquitetura.md
+- codificacao-de-caracteres-ascii-iso-8859-1-unicode.md
+- como-ler-documentacao-de-uma-linguagem-de-programacao.md
+- como-praticar-leetcode-da-forma-certa-anthony-mays.md
+- como-se-comportar-na-entrevista-de-system-design-tier-s.md
+- duas-perguntas-linkedin-cursos-online-lei-de-sturgeon.md
+- fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia.md
+- golang-profissional-sem-grandes-frameworks.md
+- guia-pratico-subagents-claude-code-configuracao-fork-invocacao.md
+- hermes-agent-open-claw-learning-loop.md
+- leetcode-como-se-preparar-entrevistas-coding-anthony-mays.md
+- o-que-e-uma-finite-state-machine.md
+- palantir-ceo-token-tax-nvidia-scam-ia.md
+- papinho-tech-solo-comunidade.md
+- por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti.md
+- rapid-release-at-massive-scale-facebook.md
+- recursao-vs-iteracao-call-stack-tail-call-optimization.md
+- resolvendo-3-problemas-classicos-entrevista-coding-dsa.md
+- rto-rpo-recovery-time-point-objective.md
+- server-sent-events-sse-tempo-real.md
+- updates-tempo-real-polling-sse-websocket.md
+
+## Raws com emoji
+
+- checklist-solutions-architect.md (28)
+- uuid-primary-key-mysql.md (27)
+- sete-padroes-de-design-de-software.md (17)
+- como-llms-funcionam.md (16)
+- horizontal-vs-vertical-scaling.md (10)
+- llmops-observabilidade.md (9)
+- como-projetar-sistemas-encurtador-de-urls-passo-a-passo.md (8)
+- cqrs.md (8)
+- event-sourcing.md (8)
+- migrations-schema-evolution.md (8)
+- db-sharding.md (7)
+- feature-flags.md (7)
+- fine-tuning.md (7)
+- mensageria.md (7)
+- circuit-breaker.md (6)
+- fase-1-fundamentos-infraestrutura.md (6)
+- graceful-degradation.md (6)
+- rbac-abac-rebac.md (6)
+- retry-backoff.md (6)
+- two-sum-explicacao.md (6)
+- agents-md-vale-a-pena-paper-zurique.md (5)
+- bulkhead.md (5)
+- case-whatsapp.md (5)
+- criptografia-fundamentos.md (5)
+- distributed-tracing.md (5)
+- event-versioning.md (5)
+- ia-custo-roi-bolha-ou-realidade.md (5)
+- serialization-protocols.md (5)
+- zero-downtime-deploy.md (5)
+- ai-gateway-token-economics.md (4)
+- banco-de-dados.md (4)
+- cdn.md (4)
+- ia-e-aprendizado-programacao-iniciantes.md (4)
+- load-balancer.md (4)
+- schema-registry.md (4)
+- mcp.md (3)
+- react-tudo-que-voce-precisa-saber.md (3)
+- sharding-milhoes-de-escritas-partition-key-consistent-hashing-pedro-camaforte.md (3)
+- system-design-entrevista-cinema-draw-io.md (3)
+- claude-code-guia-pratico-full-cycle.md (2)
+- design-pattern-facade.md (2)
+- design-pattern-observer.md (2)
+- design-pattern-strategy.md (2)
+- mobile-deep-links.md (2)
+- service-mesh.md (2)
+- building-projects-in-the-ai-era-for-software-engineers.md (1)
+- busca-linear-e-binaria-giovana.md (1)
+- case-url-shortener.md (1)
+- context-engineering.md (1)
+- escala-niveis-uso-ia-engenheiros.md (1)
+
+## Sources com source_file apontando para caminho antigo (arquivo existe em raw/)
+
+- 10-conceitos-fundamentais-computacao.md -> /home/nemomartins/Documentos/new/dev-study/raw/10-conceitos-fundamentais-computacao.md
+- 14-habitos-desenvolvedores-altamente-produtivos.md -> /home/nemomartins/Documentos/new/dev-study/raw/14-habitos-de-desenvolvedores-altamente-produtivos.md
+- 3pc.md -> /home/gabriel-martins/Documentos/dev-study/raw/3pc.md
+- 4-habitos-programador-ineficiente.md -> /home/nemomartins/Documentos/new/dev-study/raw/4-habitos-programador-ineficiente.md
+- 5-dicas-performance-javascript.md -> /home/nemomartins/Documentos/new/dev-study/raw/5-dicas-performance-javascript.md
+- 5-ou-6-dicas-para-projetos-novos.md -> /home/nemomartins/Documentos/new/dev-study/raw/5-ou-6-dicas-para-projetos-novos.md
+- 5-principios-programador.md -> /home/nemomartins/Documentos/new/dev-study/raw/5-principles-that-changed-me-as-a-programmer.md
+- 5-principles-that-changed-me-as-a-programmer.md -> /home/nemomartins/Documentos/new/dev-study/raw/5-principles-that-changed-me-as-a-programmer.md
+- 9-habitos-programador-junior.md -> /home/gabriel-martins/Documentos/dev-study/raw/9-habitos-programador-junior.md
+- acoplamento-abstracao-estado.md -> /home/nemomartins/Documentos/new/dev-study/raw/acoplamento-abstracao-estado.md
+- adapter-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/adapter-xunitpatterns.md
+- addy-osmani-80-problem-agentic-coding.md -> /home/nemomartins/Documentos/new/dev-study/raw/addy-osmani-80-problem-agentic-coding.md
+- adr.md -> /home/nemomartins/Documentos/new/dev-study/raw/adr.md
+- agent-memory.md -> /home/nemomartins/Documentos/new/dev-study/raw/agent-memory.md
+- agentes-core.md -> /home/nemomartins/Documentos/new/dev-study/raw/agentes-core.md
+- agentes-em-producao.md -> /home/nemomartins/Documentos/new/dev-study/raw/agentes-em-producao.md
+- agentes-orquestracao.md -> /home/nemomartins/Documentos/new/dev-study/raw/agentes-orquestracao.md
+- agents-md-vale-a-pena-paper-zurique.md -> /home/nemomartins/Documentos/new/dev-study/raw/agents-md-vale-a-pena-paper-zurique.md
+- ai-gateway-token-economics.md -> /home/nemomartins/Documentos/new/dev-study/raw/ai-gateway-token-economics.md
+- ai-llm-security.md -> /home/nemomartins/Documentos/new/dev-study/raw/ai-llm-security.md
+- ai-safety-guardrails.md -> /home/nemomartins/Documentos/new/dev-study/raw/ai-safety-guardrails.md
+- akita-como-aprender-programacao.md -> /home/nemomartins/Documentos/new/dev-study/raw/akita-como-aprender-programacao.md
+- akita-discurso-howard-roark-a-nascente-ayn-rand.md -> /home/nemomartins/Documentos/new/dev-study/raw/akita-discurso-howard-roark-a-nascente-ayn-rand.md
+- akita-oferta-procura-matematica-carreira.md -> /home/nemomartins/Documentos/new/dev-study/raw/akita-oferta-procura-matematica-carreira.md
+- algoritmo-decode-utf8-com-tdd.md -> /home/nemomartins/Documentos/new/dev-study/raw/algoritmo-decode-utf8-com-tdd.md
+- annotation-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/annotation-xunitpatterns.md
+- anti-patterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/anti-patterns.md
+- apagao-de-seniors-vibe-coding.md -> /home/nemomartins/Documentos/new/dev-study/raw/apagao-de-seniors-vibe-coding.md
+- api-contracts-versioning.md -> /home/nemomartins/Documentos/new/dev-study/raw/api-contracts-versioning.md
+- api-gateway-bff.md -> /home/nemomartins/Documentos/new/dev-study/raw/api-gateway-bff.md
+- api-security.md -> /home/nemomartins/Documentos/new/dev-study/raw/api-security.md
+- application-boundary-martin-fowler.md -> /home/nemomartins/Documentos/new/dev-study/raw/application-boundary-martin-fowler.md
+- aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura.md -> /home/nemomartins/Documentos/new/dev-study/raw/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura.md
+- architecture-decision-record.md -> /home/nemomartins/Documentos/new/dev-study/raw/architecture-decision-record.md
+- architecture-fitness-functions.md -> /home/nemomartins/Documentos/new/dev-study/raw/architecture-fitness-functions.md
+- async-io-memory-management.md -> /home/nemomartins/Documentos/new/dev-study/raw/async-io-memory-management.md
+- atrofia-cognitiva-ia-programacao.md -> /home/nemomartins/Documentos/new/dev-study/raw/atrofia-cognitiva-ia-programacao.md
+- attribute-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/attribute-xunitpatterns.md
+- autenticacao-segura.md -> /home/nemomartins/Documentos/new/dev-study/raw/autenticacao-segura.md
+- aws-infraestrutura-global.md -> /home/nemomartins/Documentos/new/dev-study/raw/aws-infraestrutura-global.md
+- background-jobs.md -> /home/nemomartins/Documentos/new/dev-study/raw/background-jobs.md
+- banco-de-dados.md -> /home/gabriel-martins/Documentos/dev-study/raw/banco-de-dados.md
+- bancos-especializados.md -> /home/nemomartins/Documentos/new/dev-study/raw/bancos-especializados.md
+- bdd.md -> /home/nemomartins/Documentos/new/dev-study/raw/bdd.md
+- blue-green-canary-rolling.md -> /home/gabriel-martins/Documentos/dev-study/raw/blue-green-canary-rolling.md
+- browser-security.md -> /home/nemomartins/Documentos/new/dev-study/raw/browser-security.md
+- bug-bounty.md -> /home/nemomartins/Documentos/new/dev-study/raw/bug-bounty.md
+- bulkhead.md -> /home/gabriel-martins/Documentos/dev-study/raw/bulkhead.md
+- c3-martin-fowler.md -> /home/nemomartins/Documentos/new/dev-study/raw/c3-martin-fowler.md
+- c4-model.md -> /home/nemomartins/Documentos/new/dev-study/raw/c4-model.md
+- cache-stampede-invalidation.md -> /home/gabriel-martins/Documentos/dev-study/raw/cache-stampede-invalidation.md
+- cache-strategies.md -> /home/gabriel-martins/Documentos/dev-study/raw/cache-strategies.md
+- cache.md -> /home/gabriel-martins/Documentos/dev-study/raw/cache.md
+- cap-pacelc-consistencia.md -> /home/gabriel-martins/Documentos/dev-study/raw/cap-pacelc-consistencia.md
+- cap-theorem.md -> /home/gabriel-martins/Documentos/dev-study/raw/cap-theorem.md
+- case-twitter-feed.md -> /home/gabriel-martins/Documentos/dev-study/raw/case-twitter-feed.md
+- case-uber.md -> /home/gabriel-martins/Documentos/dev-study/raw/case-uber.md
+- case-url-shortener.md -> /home/gabriel-martins/Documentos/dev-study/raw/case-url-shortener.md
+- case-whatsapp.md -> /home/gabriel-martins/Documentos/dev-study/raw/case-whatsapp.md
+- case-youtube-streaming.md -> /home/gabriel-martins/Documentos/dev-study/raw/case-youtube-streaming.md
+- cdc-debezium.md -> /home/nemomartins/Documentos/new/dev-study/raw/cdc-debezium.md
+- cdn.md -> /home/gabriel-martins/Documentos/dev-study/raw/cdn.md
+- cell-based-architecture.md -> /home/nemomartins/Documentos/new/dev-study/raw/cell-based-architecture.md
+- chain-of-thought-prompting.md -> /home/nemomartins/Documentos/new/dev-study/raw/chain-of-thought-prompting.md
+- checklist-solutions-architect.md -> /home/nemomartins/Documentos/new/dev-study/raw/checklist-solutions-architect.md
+- cicd-pipeline.md -> /home/nemomartins/Documentos/new/dev-study/raw/cicd-pipeline.md
+- cinco-praticas-seguranca-pragmatic-programmer.md -> /home/nemomartins/Documentos/new/dev-study/raw/cinco-praticas-seguranca-pragmatic-programmer.md
+- circuit-breaker.md -> /home/nemomartins/Documentos/new/dev-study/raw/circuit-breaker.md
+- classes-vs-estruturas-de-dados-uncle-bob.md -> /home/nemomartins/Documentos/new/dev-study/raw/classes-vs-estruturas-de-dados-uncle-bob.md
+- claude-code-guia-pratico-full-cycle.md -> /home/nemomartins/Documentos/new/dev-study/raw/claude-code-guia-pratico-full-cycle.md
+- clean-architecture-ia-custo-real.md -> /home/nemomartins/Documentos/new/dev-study/raw/clean-architecture-ia-custo-real.md
+- clean-architecture.md -> /home/nemomartins/Documentos/new/dev-study/raw/clean-architecture.md
+- cloud-security.md -> /home/nemomartins/Documentos/new/dev-study/raw/cloud-security.md
+- clusters.md -> /home/nemomartins/Documentos/new/dev-study/raw/clusters.md
+- codigo-espaguete-wikipedia.md -> /home/nemomartins/Documentos/new/dev-study/raw/codigo-espaguete-wikipedia.md
+- command-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/command-xunitpatterns.md
+- como-aprender-novas-codebases.md -> /home/nemomartins/Documentos/new/dev-study/raw/como-aprender-novas-codebases.md
+- como-aprender-programacao-3-dicas.md -> /home/gabriel-martins/Documentos/dev-study/raw/como-aprender-programacao-3-dicas.md
+- como-aprender-um-codebase-novo.md -> /home/nemomartins/Documentos/new/dev-study/raw/como-aprender-um-codebase-novo.md
+- como-arquitetar-com-cache-e-redis.md -> /home/nemomartins/Documentos/new/dev-study/raw/como-arquitetar-com-cache-e-redis.md
+- como-llms-funcionam.md -> /home/nemomartins/Documentos/new/dev-study/raw/como-llms-funcionam.md
+- como-multiplas-linguagens-vivem-num-unico-binario.md -> /home/nemomartins/Documentos/new/dev-study/raw/como-multiplas-linguagens-vivem-num-unico-binario.md
+- como-sistemas-operacionais-funcionam.md -> /home/nemomartins/Documentos/new/dev-study/raw/como-sistemas-operacionais-funcionam.md
+- como-strings-realmente-funcionam.md -> /home/nemomartins/Documentos/new/dev-study/raw/como-strings-realmente-funcionam.md
+- comparacao-na-carreira-dev.md -> /home/nemomartins/Documentos/new/dev-study/raw/comparacao-na-carreira-dev.md
+- compliance-soc2-pci.md -> /home/nemomartins/Documentos/new/dev-study/raw/compliance-soc2-pci.md
+- compliance.md -> /home/nemomartins/Documentos/new/dev-study/raw/compliance.md
+- conceitos-que-ninguem-ensina.md -> /home/nemomartins/Documentos/new/dev-study/raw/conceitos-que-ninguem-ensina.md
+- consistent-hashing.md -> /home/gabriel-martins/Documentos/dev-study/raw/consistent-hashing.md
+- consumer-driven-contracts-martin-fowler.md -> /home/nemomartins/Documentos/new/dev-study/raw/consumer-driven-contracts-martin-fowler.md
+- container-hardening.md -> /home/nemomartins/Documentos/new/dev-study/raw/container-hardening.md
+- conteudo-tecnico-ia-hype-sistemas-robustos.md -> /home/nemomartins/Documentos/new/dev-study/raw/conteudo-tecnico-ia-hype-sistemas-robustos.md
+- conteudo-tecnico-ia-robustez-sistemas.md -> /home/nemomartins/Documentos/new/dev-study/raw/conteudo-tecnico-ia-robustez-sistemas.md
+- context-engineering-avancado-para-coding-agents.md -> /home/nemomartins/Documentos/new/dev-study/raw/context-engineering-avancado-para-coding-agents.md
+- context-engineering-codebases-grandes-rpi.md -> /home/nemomartins/Documentos/new/dev-study/raw/context-engineering-codebases-grandes-rpi.md
+- context-engineering.md -> /home/nemomartins/Documentos/new/dev-study/raw/context-engineering.md
+- continuous-delivery-martin-fowler.md -> /home/nemomartins/Documentos/new/dev-study/raw/continuous-delivery-martin-fowler.md
+- contract-test-martin-fowler.md -> /home/nemomartins/Documentos/new/dev-study/raw/contract-test-martin-fowler.md
+- contract-testing.md -> /home/nemomartins/Documentos/new/dev-study/raw/contract-testing.md
+- control-point-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/control-point-xunitpatterns.md
+- conways-law.md -> /home/nemomartins/Documentos/new/dev-study/raw/conways-law.md
+- cqrs.md -> /home/gabriel-martins/Documentos/dev-study/raw/cqrs.md
+- crdt-colaboracao-tempo-real.md -> /home/nemomartins/Documentos/new/dev-study/raw/crdt-colaboracao-tempo-real.md
+- criptografia-fundamentos.md -> /home/nemomartins/Documentos/new/dev-study/raw/criptografia-fundamentos.md
+- custo-tokens-portugues-vs-ingles.md -> /home/nemomartins/Documentos/new/dev-study/raw/custo-tokens-portugues-vs-ingles.md
+- customer-test-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/customer-test-xunitpatterns.md
+- data-privacy.md -> /home/nemomartins/Documentos/new/dev-study/raw/data-privacy.md
+- db-sharding.md -> /home/nemomartins/Documentos/new/dev-study/raw/db-sharding.md
+- ddd-cqrs.md -> /home/nemomartins/Documentos/new/dev-study/raw/ddd-cqrs.md
+- ddd-strategic.md -> /home/nemomartins/Documentos/new/dev-study/raw/ddd-strategic.md
+- ddd-tactical.md -> /home/nemomartins/Documentos/new/dev-study/raw/ddd-tactical.md
+- decorator-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/decorator-xunitpatterns.md
+- depended-on-component-doc-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/depended-on-component-doc-xunitpatterns.md
+- dependency-injection.md -> /home/nemomartins/Documentos/new/dev-study/raw/dependency-injection.md
+- deployment-pipeline-martin-fowler.md -> /home/nemomartins/Documentos/new/dev-study/raw/deployment-pipeline-martin-fowler.md
+- desenvolvedor-acima-da-media-10-itens.md -> /home/nemomartins/Documentos/new/dev-study/raw/desenvolvedor-acima-da-media-10-itens.md
+- design-first-vs-code-first-referencias.md -> /home/nemomartins/Documentos/new/dev-study/raw/design-first-vs-code-first-referencias.md
+- design-pattern-facade.md -> /home/nemomartins/Documentos/new/dev-study/raw/design-pattern-facade.md
+- design-pattern-observer.md -> /home/nemomartins/Documentos/new/dev-study/raw/design-pattern-observer.md
+- design-pattern-proxy.md -> /home/nemomartins/Documentos/new/dev-study/raw/design-pattern-proxy.md
+- design-pattern-strategy.md -> /home/nemomartins/Documentos/new/dev-study/raw/design-pattern-strategy.md
+- design-patterns-gof.md -> /home/nemomartins/Documentos/new/dev-study/raw/design-patterns-gof.md
+- devsecops-pipeline.md -> /home/nemomartins/Documentos/new/dev-study/raw/devsecops-pipeline.md
+- distributed-locks-raft.md -> /home/nemomartins/Documentos/new/dev-study/raw/distributed-locks-raft.md
+- distributed-locks.md -> /home/nemomartins/Documentos/new/dev-study/raw/distributed-locks.md
+- distributed-tracing.md -> /home/nemomartins/Documentos/new/dev-study/raw/distributed-tracing.md
+- divida-cognitiva-ai-brainfry.md -> /home/nemomartins/Documentos/new/dev-study/raw/divida-cognitiva-ai-brainfry.md
+- dlq-event-patterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/dlq-event-patterns.md
+- dns.md -> /home/gabriel-martins/Documentos/dev-study/raw/dns.md
+- dynamodb.md -> /home/nemomartins/Documentos/new/dev-study/raw/dynamodb.md
+- elasticsearch-opensearch.md -> /home/nemomartins/Documentos/new/dev-study/raw/elasticsearch-opensearch.md
+- engenheiro-vs-programador-mercado-ia.md -> /home/nemomartins/Documentos/new/dev-study/raw/engenheiro-vs-programador-mercado-ia.md
+- erros-workflow-research-plan-implement.md -> /home/nemomartins/Documentos/new/dev-study/raw/erros-workflow-research-plan-implement.md
+- escala-niveis-uso-ia-engenheiros.md -> /home/nemomartins/Documentos/new/dev-study/raw/escala-niveis-uso-ia-engenheiros.md
+- escalabilidade-vertical-horizontal-system-design.md -> /home/nemomartins/Documentos/new/dev-study/raw/escalabilidade-vertical-horizontal-system-design.md
+- estilo-de-codigo-convencoes.md -> /home/nemomartins/Documentos/new/dev-study/raw/estilo-de-codigo-convencoes.md
+- estimativas-back-of-envelope.md -> /home/gabriel-martins/Documentos/dev-study/raw/estimativas-back-of-envelope.md
+- estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore.md -> /home/nemomartins/Documentos/new/dev-study/raw/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore.md
+- evals-sistematicas.md -> /home/nemomartins/Documentos/new/dev-study/raw/evals-sistematicas.md
+- event-driven-architecture.md -> /home/nemomartins/Documentos/new/dev-study/raw/event-driven-architecture.md
+- event-ordering-long-running.md -> /home/nemomartins/Documentos/new/dev-study/raw/event-ordering-long-running.md
+- event-sourcing.md -> /home/gabriel-martins/Documentos/dev-study/raw/event-sourcing.md
+- event-versioning.md -> /home/nemomartins/Documentos/new/dev-study/raw/event-versioning.md
+- evolutionary-architecture.md -> /home/nemomartins/Documentos/new/dev-study/raw/evolutionary-architecture.md
+- expand-contract.md -> /home/nemomartins/Documentos/new/dev-study/raw/expand-contract.md
+- extract-interface-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/extract-interface-xunitpatterns.md
+- extreme-programming-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/extreme-programming-xunitpatterns.md
+- fase-1-fundamentos-infraestrutura.md -> /home/nemomartins/Documentos/new/dev-study/raw/fase-1-fundamentos-infraestrutura.md
+- feature-flags.md -> /home/nemomartins/Documentos/new/dev-study/raw/feature-flags.md
+- federated-identity.md -> /home/nemomartins/Documentos/new/dev-study/raw/federated-identity.md
+- filosofia-do-design-de-software-livro-completo.md -> /home/nemomartins/Documentos/new/dev-study/raw/a-philosophy-of-software-design.md
+- fine-tuning.md -> /home/nemomartins/Documentos/new/dev-study/raw/fine-tuning.md
+- finops-cost-aware-architecture.md -> /home/nemomartins/Documentos/new/dev-study/raw/finops-cost-aware-architecture.md
+- fintech-system-design.md -> /home/nemomartins/Documentos/new/dev-study/raw/fintech-system-design.md
+- fixture-setup-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/fixture-setup-xunitpatterns.md
+- flame-graph-profiling.md -> /home/nemomartins/Documentos/new/dev-study/raw/flame-graph-profiling.md
+- formacao-ia-devs-aula-01-abertura.md -> /home/nemomartins/Documentos/new/dev-study/raw/Aula 01 - Abertura.md
+- formacao-ia-devs-aula-01-context-harness-engineering.md -> /home/nemomartins/Documentos/new/dev-study/raw/Aula 01 - Context e Harness Engineering.md
+- formacao-ia-devs-aula-01-mcp-parte1.md -> /home/nemomartins/Documentos/new/dev-study/raw/Aula 01 - MCPs - Parte 1.md
+- formacao-ia-devs-aula-02-mcp-parte2.md -> /home/nemomartins/Documentos/new/dev-study/raw/Aula 02 - MCPs - Parte 2.md
+- formacao-ia-devs-aula-02-mercado-perfil-profissional.md -> /home/nemomartins/Documentos/new/dev-study/raw/Aula 02 - Mercado, Principais Mudanças e Novo Perfil Profissional.md
+- formacao-ia-devs-aula-02-rules.md -> /home/nemomartins/Documentos/new/dev-study/raw/Aula 02 - Rules.md
+- formacao-ia-devs-aula-03-llm.md -> /home/nemomartins/Documentos/new/dev-study/raw/Aula 03 - LLM.md
+- formacao-ia-devs-aula-03-plan-mode.md -> /home/nemomartins/Documentos/new/dev-study/raw/Aula 03 - Plan Mode.md
+- formacao-ia-devs-aula-03-skills.md -> /home/nemomartins/Documentos/new/dev-study/raw/Aula 03 - Skills.md
+- formacao-ia-devs-aula-04-agentes-planejamento.md -> /home/nemomartins/Documentos/new/dev-study/raw/Aula 04 - Agentes de Planejamento (Negócio, Design e Arquitetura, Tarefas).md
+- formacao-ia-devs-aula-04-harness.md -> /home/nemomartins/Documentos/new/dev-study/raw/Aula 04 - Harness.md
+- formacao-ia-devs-aula-04-qa.md -> /home/nemomartins/Documentos/new/dev-study/raw/Aula 04 - Q&A.md
+- formacao-ia-devs-aula-05-hands-on.md -> /home/nemomartins/Documentos/new/dev-study/raw/Aula 05 - Hands-on - Harness e Prompt Engineering.md
+- formacao-ia-devs-aula-05-qa.md -> /home/nemomartins/Documentos/new/dev-study/raw/Aula 05 - Q&A.md
+- formacao-ia-devs-aula-06-qa.md -> /home/nemomartins/Documentos/new/dev-study/raw/Aula 06 - Q&A.md
+- fraud-abuse.md -> /home/nemomartins/Documentos/new/dev-study/raw/fraud-abuse.md
+- frd.md -> /home/nemomartins/Documentos/new/dev-study/raw/frd.md
+- gate-de-qualidade-definicoes-formais.md -> /home/nemomartins/Documentos/new/dev-study/raw/gate-de-qualidade-definicoes-formais.md
+- gitops-argocd.md -> /home/nemomartins/Documentos/new/dev-study/raw/gitops-argocd.md
+- go-arquitetura.md -> /home/nemomartins/Documentos/new/dev-study/raw/go-arquitetura.md
+- go-avancado.md -> /home/nemomartins/Documentos/new/dev-study/raw/go-avancado.md
+- go-concorrencia.md -> /home/nemomartins/Documentos/new/dev-study/raw/go-concorrencia.md
+- go-core.md -> /home/nemomartins/Documentos/new/dev-study/raw/go-core.md
+- go-ecossistema.md -> /home/nemomartins/Documentos/new/dev-study/raw/go-ecossistema.md
+- go-fundamentos.md -> /home/nemomartins/Documentos/new/dev-study/raw/go-fundamentos.md
+- go-is-not-java.md -> /home/nemomartinis/Documentos/new/dev-study/raw/go-is-not-java.md
+- go-oop-composicao.md -> /home/nemomartins/Documentos/new/dev-study/raw/go-oop-composicao.md
+- go-producao.md -> /home/nemomartins/Documentos/new/dev-study/raw/go-producao.md
+- go-stdlib.md -> /home/nemomartins/Documentos/new/dev-study/raw/go-stdlib.md
+- golang-mercado-trabalho-frontend-para-backend.md -> /home/nemomartins/Documentos/new/dev-study/raw/golang-mercado-trabalho-frontend-para-backend.md
+- gossip-protocol.md -> /home/gabriel-martins/Documentos/dev-study/raw/gossip-protocol.md
+- gpt3-language-models-are-few-shot-learners.md -> /home/nemomartins/Documentos/new/dev-study/raw/gpt3-language-models-are-few-shot-learners.md
+- graceful-degradation.md -> /home/nemomartins/Documentos/new/dev-study/raw/graceful-degradation.md
+- graphql.md -> /home/nemomartins/Documentos/new/dev-study/raw/graphql.md
+- grpc.md -> /home/nemomartins/Documentos/new/dev-study/raw/grpc.md
+- habitos-ruins-de-programador.md -> /home/nemomartins/Documentos/new/dev-study/raw/habitos-ruins-de-programador.md
+- hexagonal-architecture.md -> /home/nemomartins/Documentos/new/dev-study/raw/hexagonal-architecture.md
+- high-level-design.md -> /home/nemomartins/Documentos/new/dev-study/raw/high-level-design.md
+- hipaa-sox.md -> /home/nemomartins/Documentos/new/dev-study/raw/hipaa-sox.md
+- horizontal-vs-vertical-scaling.md -> /home/gabriel-martins/Documentos/dev-study/raw/horizontal-vs-vertical-scaling.md
+- http-tcp-quic.md -> /home/nemomartins/Documentos/new/dev-study/raw/http-tcp-quic.md
+- ia-custo-roi-bolha-ou-realidade.md -> /home/nemomartins/Documentos/new/dev-study/raw/ia-custo-roi-bolha-ou-realidade.md
+- ia-e-aprendizado-programacao-iniciantes.md -> /home/nemomartins/Documentos/new/dev-study/raw/ia-e-aprendizado-programacao-iniciantes.md
+- ia-salario-ou-carga-de-trabalho.md -> /home/nemomartins/Documentos/new/dev-study/raw/ia-salario-ou-carga-de-trabalho.md
+- iam-introduction-users-groups-policies.md -> /home/nemomartins/Documentos/new/dev-study/raw/Aula 01 - IAM Introduction - Users, Groups, Policies.md
+- idempotencia-pagamentos-retry-sistemas-distribuidos.md -> /home/nemomartins/Documentos/new/dev-study/raw/idempotencia-pagamentos-retry-sistemas-distribuidos.md
+- idempotencia.md -> /home/nemomartins/Documentos/new/dev-study/raw/idempotencia.md
+- identidade-avancada.md -> /home/nemomartins/Documentos/new/dev-study/raw/identidade-avancada.md
+- identity-iam-avancado.md -> /home/nemomartins/Documentos/new/dev-study/raw/identity-iam-avancado.md
+- incident-response.md -> /home/nemomartins/Documentos/new/dev-study/raw/incident-response.md
+- indirect-input-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/indirect-input-xunitpatterns.md
+- indistraivel-nir-eyal-mano-deivin.md -> /home/nemomartins/Documentos/new/dev-study/raw/indistraivel-nir-eyal-mano-deivin.md
+- input-validation-output-encoding.md -> /home/nemomartins/Documentos/new/dev-study/raw/input-validation-output-encoding.md
+- instance-variable-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/instance-variable-xunitpatterns.md
+- integration-patterns-eip.md -> /home/nemomartins/Documentos/new/dev-study/raw/integration-patterns-eip.md
+- integration-test-martin-fowler.md -> /home/nemomartins/Documentos/new/dev-study/raw/integration-test-martin-fowler.md
+- interaction-point-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/interaction-point-xunitpatterns.md
+- jmock.md -> /home/nemomartins/Documentos/new/dev-study/raw/jmock.md
+- k8s-autoscaling.md -> /home/nemomartins/Documentos/new/dev-study/raw/k8s-autoscaling.md
+- k8s-networking.md -> /home/nemomartins/Documentos/new/dev-study/raw/k8s-networking.md
+- kafka.md -> /home/nemomartins/Documentos/new/dev-study/raw/kafka.md
+- kiss-yagni-entrega-rapida-qualidade.md -> /home/nemomartins/Documentos/new/dev-study/raw/kiss-yagni-entrega-rapida-qualidade.md
+- kubernetes-core.md -> /home/nemomartins/Documentos/new/dev-study/raw/kubernetes-core.md
+- kubernetes-security.md -> /home/nemomartins/Documentos/new/dev-study/raw/kubernetes-security.md
+- lean-startup-para-devs-mano-deivin.md -> /home/nemomartins/Documentos/new/dev-study/raw/lean-startup-para-devs-mano-deivin.md
+- let-it-crash-nodejs-asynclocalstorage.md -> /home/nemomartins/Documentos/new/dev-study/raw/let-it-crash-nodejs-asynclocalstorage.md
+- lgpd-gdpr.md -> /home/nemomartins/Documentos/new/dev-study/raw/lgpd-gdpr.md
+- listen-notes-boring-tech-one-person-company.md -> /home/nemomartins/Documentos/new/dev-study/raw/listen-notes-boring-tech-one-person-company.md
+- listen-notes-good-enough-engineering.md -> /home/nemomartins/Documentos/new/dev-study/raw/listen-notes-good-enough-engineering.md
+- listen-notes-one-person-startup.md -> /home/nemomartins/Documentos/new/dev-study/raw/listen-notes-one-person-startup.md
+- listen-notes-podcasts-nova-wikipedia.md -> /home/nemomartins/Documentos/new/dev-study/raw/listen-notes-podcasts-nova-wikipedia.md
+- living-documentation.md -> /home/nemomartins/Documentos/new/dev-study/raw/living-documentation.md
+- llmops-observabilidade.md -> /home/nemomartins/Documentos/new/dev-study/raw/llmops-observabilidade.md
+- load-balancer.md -> /home/nemomartins/Documentos/new/dev-study/raw/load-balancer.md
+- local-variable-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/local-variable-xunitpatterns.md
+- logica-de-programacao-o-que-e-de-verdade.md -> /home/nemomartins/Documentos/new/dev-study/raw/logica-de-programacao-o-que-e-de-verdade.md
+- logica-de-programacao-quatro-passos.md -> /home/nemomartins/Documentos/new/dev-study/raw/logica-de-programacao-quatro-passos.md
+- logica-programacao-sem-matematica.md -> /home/gabriel-martins/Documentos/dev-study/raw/logica-programacao-sem-matematica.md
+- low-level-design.md -> /home/nemomartins/Documentos/new/dev-study/raw/low-level-design.md
+- mcp.md -> /home/nemomartins/Documentos/new/dev-study/raw/mcp.md
+- mensageria.md -> /home/nemomartins/Documentos/new/dev-study/raw/mensageria.md
+- micro-kernel.md -> /home/nemomartins/Documentos/new/dev-study/raw/micro-kernel.md
+- microservicos-vs-monolito-modular.md -> /home/gabriel-martins/Documentos/dev-study/raw/microservicos-vs-monolito-modular.md
+- microsoft-prompt-engineering-guide.md -> /home/nemomartins/Documentos/new/dev-study/raw/microsoft-prompt-engineering-guide.md
+- microsservicos.md -> /home/nemomartins/Documentos/new/dev-study/raw/microsservicos.md
+- migrations-schema-evolution.md -> /home/nemomartins/Documentos/new/dev-study/raw/migrations-schema-evolution.md
+- mobile-animacoes-performaticas.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-animacoes-performaticas.md
+- mobile-armazenamento-local.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-armazenamento-local.md
+- mobile-baseline-profiles.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-baseline-profiles.md
+- mobile-biometria.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-biometria.md
+- mobile-chamadas-http.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-chamadas-http.md
+- mobile-cicd.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-cicd.md
+- mobile-cross-platform-decision.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-cross-platform-decision.md
+- mobile-deep-links.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-deep-links.md
+- mobile-design-system.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-design-system.md
+- mobile-feature-flags.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-feature-flags.md
+- mobile-kmp.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-kmp.md
+- mobile-layouts-responsivos.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-layouts-responsivos.md
+- mobile-metricas-criticas.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-metricas-criticas.md
+- mobile-monetizacao.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-monetizacao.md
+- mobile-monitoramento.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-monitoramento.md
+- mobile-navegacao.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-navegacao.md
+- mobile-offline-first-avancado.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-offline-first-avancado.md
+- mobile-offline-first-basico.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-offline-first-basico.md
+- mobile-on-device-ai.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-on-device-ai.md
+- mobile-performance-listas.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-performance-listas.md
+- mobile-permissoes.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-permissoes.md
+- mobile-platform-engineering.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-platform-engineering.md
+- mobile-profiling.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-profiling.md
+- mobile-publicacao-aso.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-publicacao-aso.md
+- mobile-push-notifications.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-push-notifications.md
+- mobile-security.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-security.md
+- mobile-seguranca.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-seguranca.md
+- mobile-state-management-global.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-state-management-global.md
+- mobile-state-management-local.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-state-management-local.md
+- mobile-testes.md -> /home/nemomartins/Documentos/new/dev-study/raw/mobile-testes.md
+- modelos-de-consistencia.md -> /home/gabriel-martins/Documentos/dev-study/raw/modelos-de-consistencia.md
+- mongodb.md -> /home/nemomartins/Documentos/new/dev-study/raw/mongodb.md
+- monolito-modular.md -> /home/nemomartins/Documentos/new/dev-study/raw/monolito-modular.md
+- multi-region-global-lb.md -> /home/gabriel-martins/Documentos/dev-study/raw/multi-region-global-lb.md
+- multi-tenancy.md -> /home/gabriel-martins/Documentos/dev-study/raw/multi-tenancy.md
+- multiplos-agentes-worktrees-subagentes-claude-code.md -> /home/nemomartins/Documentos/new/dev-study/raw/multiplos-agentes-worktrees-subagentes-claude-code.md
+- nats-jetstream.md -> /home/nemomartins/Documentos/new/dev-study/raw/nats-jetstream.md
+- navigation-paradox-2026.md -> /home/nemomartins/Documentos/new/dev-study/raw/navigation-paradox-2026.md
+- notification-system.md -> /home/gabriel-martins/Documentos/dev-study/raw/notification-system.md
+- nubank-clojure-datomic-event-sourcing.md -> /home/nemomartins/Documentos/new/dev-study/raw/nubank-clojure-datomic-event-sourcing.md
+- numeros-de-latencia.md -> /home/gabriel-martins/Documentos/dev-study/raw/numeros-de-latencia.md
+- oauth2-oidc-jwt.md -> /home/nemomartins/Documentos/new/dev-study/raw/oauth2-oidc-jwt.md
+- objetos-vs-estruturas-de-dados-clean-architecture.md -> /home/nemomartins/Documentos/new/dev-study/raw/objetos-vs-estruturas-de-dados-clean-architecture.md
+- observabilidade.md -> /home/gabriel-martins/Documentos/dev-study/raw/observabilidade.md
+- observation-point-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/observation-point-xunitpatterns.md
+- open-weight-deployment.md -> /home/nemomartins/Documentos/new/dev-study/raw/open-weight-deployment.md
+- otel-collector-sampling.md -> /home/nemomartins/Documentos/new/dev-study/raw/otel-collector-sampling.md
+- otel-sdk.md -> /home/nemomartins/Documentos/new/dev-study/raw/otel-sdk.md
+- outbox-pattern.md -> /home/nemomartins/Documentos/new/dev-study/raw/outbox-pattern.md
+- owasp-top10.md -> /home/nemomartins/Documentos/new/dev-study/raw/owasp-top10.md
+- padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay.md -> /home/nemomartins/Documentos/new/dev-study/raw/padroes-arquiteturais-seguranca-gatekeeper-valet-key-token-relay.md
+- pagination.md -> /home/nemomartins/Documentos/new/dev-study/raw/pagination.md
+- papinho-tech-solo-aprender-a-aprender.md -> /home/nemomartins/Documentos/new/dev-study/raw/papinho-tech-solo-aprender-a-aprender.md
+- passkeys-webauthn.md -> /home/nemomartins/Documentos/new/dev-study/raw/passkeys-webauthn.md
+- pensamento-estruturado-resolucao-de-problemas.md -> /home/nemomartins/Documentos/new/dev-study/raw/pensamento-estruturado-resolucao-de-problemas.md
+- pentest-redteam.md -> /home/nemomartins/Documentos/new/dev-study/raw/pentest-redteam.md
+- performance-methods.md -> /home/nemomartins/Documentos/new/dev-study/raw/performance-methods.md
+- piramide-de-testes.md -> /home/gabriel-martins/Documentos/dev-study/raw/piramide-de-testes.md
+- platform-engineering-devex.md -> /home/nemomartins/Documentos/new/dev-study/raw/platform-engineering-devex.md
+- playbook.md -> /home/nemomartins/Documentos/new/dev-study/raw/playbook.md
+- pluggable-behavior-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/pluggable-behavior-xunitpatterns.md
+- policy-as-code.md -> /home/nemomartins/Documentos/new/dev-study/raw/policy-as-code.md
+- ports-and-adapters-codebase-para-ia.md -> /home/nemomartins/Documentos/new/dev-study/raw/ports-and-adapters-codebase-para-ia.md
+- post-mortem.md -> /home/nemomartins/Documentos/new/dev-study/raw/post-mortem.md
+- post-quantum-crypto.md -> /home/nemomartins/Documentos/new/dev-study/raw/post-quantum-crypto.md
+- postgresql-avancado.md -> /home/nemomartins/Documentos/new/dev-study/raw/postgresql-avancado.md
+- postgresql-extensions.md -> /home/nemomartins/Documentos/new/dev-study/raw/postgresql-extensions.md
+- prd.md -> /home/nemomartins/Documentos/new/dev-study/raw/prd.md
+- presence-system.md -> /home/nemomartins/Documentos/new/dev-study/raw/presence-system.md
+- presenters.md -> /home/nemomartins/Documentos/new/dev-study/raw/presenters.md
+- principio-da-inversao-programador.md -> /home/nemomartins/Documentos/new/dev-study/raw/principio-da-inversao-programador.md
+- procedure-variable-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/procedure-variable-xunitpatterns.md
+- product-engineer-vale-do-silicio-2026.md -> /home/nemomartins/Documentos/new/dev-study/raw/product-engineer-vale-do-silicio-2026.md
+- produtividade-falsa-vs-verdadeira.md -> /home/nemomartins/Documentos/dev-brain/raw/produtividade-falsa-vs-verdadeira.md
+- profissional-do-futuro-ia-identidade-aprendizado.md -> /home/nemomartins/Documentos/new/dev-study/raw/profissional-do-futuro-ia-identidade-aprendizado.md
+- prompt-engineering.md -> /home/nemomartins/Documentos/new/dev-study/raw/prompt-engineering.md
+- quality-gate-ratchet-multiplos-agentes-ia.md -> /home/nemomartins/Documentos/new/dev-study/raw/quality-gate-ratchet-multiplos-agentes-ia.md
+- quanto-tempo-aprender-programacao.md -> /home/nemomartins/Documentos/new/dev-study/raw/quanto-tempo-aprender-programacao.md
+- quorum.md -> /home/gabriel-martins/Documentos/dev-study/raw/quorum.md
+- rabbitmq.md -> /home/nemomartins/Documentos/new/dev-study/raw/rabbitmq.md
+- raft-leader-election.md -> /home/nemomartins/Documentos/new/dev-study/raw/raft-leader-election.md
+- rag-retrieval.md -> /home/nemomartins/Documentos/new/dev-study/raw/rag-retrieval.md
+- rate-limiting.md -> /home/nemomartins/Documentos/new/dev-study/raw/rate-limiting.md
+- rbac-abac-rebac.md -> /home/nemomartins/Documentos/new/dev-study/raw/rbac-abac-rebac.md
+- react-19-memoization-sem-usememo-usecallback.md -> /home/nemomartins/Documentos/dev-brain/raw/react-19-memoization-sem-usememo-usecallback.md
+- react-tudo-que-voce-precisa-saber.md -> /home/nemomartins/Documentos/new/dev-study/raw/react-tudo-que-voce-precisa-saber.md
+- reactive-architecture.md -> /home/nemomartins/Documentos/new/dev-study/raw/reactive-architecture.md
+- read-replicas-connection-pooling.md -> /home/nemomartins/Documentos/new/dev-study/raw/read-replicas-connection-pooling.md
+- reasoning-models.md -> /home/nemomartins/Documentos/new/dev-study/raw/reasoning-models.md
+- redis-avancado.md -> /home/nemomartins/Documentos/new/dev-study/raw/redis-avancado.md
+- replace-dependency-with-test-double-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/replace-dependency-with-test-double-xunitpatterns.md
+- request-for-comments.md -> /home/nemomartins/Documentos/new/dev-study/raw/request-for-comments.md
+- rest-openapi.md -> /home/nemomartins/Documentos/new/dev-study/raw/rest-openapi.md
+- retry-backoff.md -> /home/gabriel-martins/Documentos/dev-study/raw/retry-backoff.md
+- rfc.md -> /home/nemomartins/Documentos/new/dev-study/raw/rfc.md
+- runbook.md -> /home/nemomartins/Documentos/new/dev-study/raw/runbook.md
+- runtime-security.md -> /home/nemomartins/Documentos/new/dev-study/raw/runtime-security.md
+- saga-pattern.md -> /home/nemomartins/Documentos/new/dev-study/raw/saga-pattern.md
+- schema-registry.md -> /home/nemomartins/Documentos/new/dev-study/raw/schema-registry.md
+- secret-scanning.md -> /home/nemomartins/Documentos/new/dev-study/raw/secret-scanning.md
+- secrets-management.md -> /home/nemomartins/Documentos/new/dev-study/raw/secrets-management.md
+- secure-design-patterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/secure-design-patterns.md
+- seedwork-martin-fowler.md -> /home/nemomartins/Documentos/new/dev-study/raw/seedwork-martin-fowler.md
+- seguranca-armazenamento-senhas-banco-de-dados.md -> /home/nemomartins/Documentos/new/dev-study/raw/seguranca-armazenamento-senhas-banco-de-dados.md
+- self-initializing-fake-martin-fowler.md -> /home/nemomartins/Documentos/new/dev-study/raw/self-initializing-fake-martin-fowler.md
+- serialization-protocols.md -> /home/nemomartins/Documentos/new/dev-study/raw/serialization-protocols.md
+- server-sent-events-sse-tempo-real.md -> /home/nemomartins/Documentos/new/dev-study/raw/server-sent-events-sse-tempo-real.md
+- service-discovery.md -> /home/gabriel-martins/Documentos/dev-study/raw/service-discovery.md
+- service-mesh.md -> /home/gabriel-martins/Documentos/dev-study/raw/service-mesh.md
+- sessions.md -> /home/nemomartins/Documentos/new/dev-study/raw/sessions.md
+- sete-padroes-de-design-de-software.md -> /home/nemomartins/Documentos/new/dev-study/raw/sete-padroes-de-design-de-software.md
+- shopify-redis-para-mysql-skip-locked-black-friday.md -> /home/nemomartins/Documentos/new/dev-study/raw/shopify-redis-para-mysql-skip-locked-black-friday.md
+- sistema-operacional-por-baixo-dos-panos.md -> /home/nemomartins/Documentos/new/dev-study/raw/sistema-operacional-por-baixo-dos-panos.md
+- sistema-produtividade-ia-adapta.md -> /home/nemomartins/Documentos/new/dev-study/raw/sistema-produtividade-ia-adapta.md
+- skip-locked-fencing-token.md -> /home/gabriel-martins/Documentos/dev-study/raw/skip-locked-fencing-token.md
+- soft-skills-carreira-tecnologia-eduarda.md -> /home/nemomartins/Documentos/new/dev-study/raw/soft-skills-carreira-tecnologia-eduarda.md
+- solid.md -> /home/nemomartins/Documentos/new/dev-study/raw/solid.md
+- space-based-architecture.md -> /home/nemomartins/Documentos/new/dev-study/raw/space-based-architecture.md
+- sql-nao-e-banco-de-dados-uncle-bob.md -> /home/nemomartins/Documentos/new/dev-study/raw/sql-nao-e-banco-de-dados-uncle-bob.md
+- sqs-sns.md -> /home/nemomartins/Documentos/new/dev-study/raw/sqs-sns.md
+- sre-error-budget-incidents.md -> /home/gabriel-martins/Documentos/dev-study/raw/sre-error-budget-incidents.md
+- sre-sli-slo-sla.md -> /home/gabriel-martins/Documentos/dev-study/raw/sre-sli-slo-sla.md
+- strangler-fig.md -> /home/gabriel-martins/Documentos/dev-study/raw/strangler-fig.md
+- structured-outputs-function-calling.md -> /home/nemomartins/Documentos/new/dev-study/raw/structured-outputs-function-calling.md
+- substitutable-dependency-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/substitutable-dependency-xunitpatterns.md
+- sunit-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/sunit-xunitpatterns.md
+- super-productivity-ai-architecture-guide.md -> /home/nemomartinis/Documentos/new/dev-study/raw/super-productivity-ai-architecture-guide.md
+- supply-chain-security.md -> /home/nemomartins/Documentos/new/dev-study/raw/supply-chain-security.md
+- sut-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/sut-xunitpatterns.md
+- tanstack-query-tudo-que-voce-precisa-saber.md -> /home/nemomartins/Documentos/new/dev-study/raw/tanstack-query-tudo-que-voce-precisa-saber.md
+- tdd-sdd-bdd-era-ia.md -> /home/nemomartins/Documentos/new/dev-study/raw/tdd-sdd-bdd-era-ia.md
+- tdd.md -> /home/nemomartins/Documentos/new/dev-study/raw/tdd.md
+- temporal.md -> /home/nemomartins/Documentos/new/dev-study/raw/temporal.md
+- terraform.md -> /home/nemomartins/Documentos/new/dev-study/raw/terraform.md
+- test-automater-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/test-automater-xunitpatterns.md
+- test-case-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/test-case-xunitpatterns.md
+- test-double-martin-fowler.md -> /home/nemomartins/Documentos/new/dev-study/raw/test-double-martin-fowler.md
+- test-double-xunitpatterns-meszaros.md -> /home/nemomartins/Documentos/new/dev-study/raw/test-double-xunitpatterns-meszaros.md
+- test-doubles.md -> /home/nemomartins/Documentos/new/dev-study/raw/test-doubles.md
+- test-fixture-fit-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/test-fixture-fit-xunitpatterns.md
+- test-fixture-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/test-fixture-xunitpatterns.md
+- test-stub-xunitpatterns-meszaros.md -> /home/nemomartins/Documentos/new/dev-study/raw/test-stub-xunitpatterns-meszaros.md
+- test-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/test-xunitpatterns.md
+- testcase-class-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/testcase-class-xunitpatterns.md
+- threat-modeling.md -> /home/nemomartins/Documentos/new/dev-study/raw/threat-modeling.md
+- tls-mtls-vpn.md -> /home/nemomartins/Documentos/new/dev-study/raw/tls-mtls-vpn.md
+- token-anxiety-agentes-ia-comportamento-devs.md -> /home/nemomartins/Documentos/new/dev-study/raw/token-anxiety-agentes-ia-comportamento-devs.md
+- tokens-llm-fundamentos-typescript.md -> /home/nemomartins/Documentos/new/dev-study/raw/tokens-llm-fundamentos-typescript.md
+- tolerant-reader.md -> /home/nemomartins/Documentos/new/dev-study/raw/tolerant-reader.md
+- trd-technical-requirements-document.md -> /home/nemomartins/Documentos/new/dev-study/raw/trd-technical-requirements-document.md
+- tres-caracteristicas-melhor-candidato.md -> /home/nemomartins/Documentos/new/dev-study/raw/tres-caracteristicas-melhor-candidato.md
+- trimodal-compensacao-tech.md -> /home/nemomartins/Documentos/new/dev-study/raw/trimodal-compensacao-tech.md
+- twelve-factor-app.md -> /home/nemomartins/Documentos/new/dev-study/raw/twelve-factor-app.md
+- two-hard-things-martin-fowler.md -> /home/nemomartins/Documentos/new/dev-study/raw/two-hard-things-martin-fowler.md
+- two-phase-commit.md -> /home/gabriel-martins/Documentos/dev-study/raw/two-phase-commit.md
+- two-sum-explicacao.md -> /home/nemomartins/Documentos/new/dev-study/raw/two-sum-explicacao.md
+- typescript-avancado.md -> /home/nemomartins/Documentos/new/dev-study/raw/typescript-avancado.md
+- underengineering-overengineering-mario-souto.md -> /home/nemomartins/Documentos/new/dev-study/raw/underengineering-overengineering-mario-souto.md
+- unit-test-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/unit-test-xunitpatterns.md
+- updates-tempo-real-polling-sse-websocket.md -> /home/nemomartins/Documentos/new/dev-study/raw/updates-tempo-real-polling-sse-websocket.md
+- useeffect-problemas-e-solucoes.md -> /home/nemomartins/Documentos/new/dev-study/raw/useeffect-problemas-e-solucoes.md
+- user-stories.md -> /home/nemomartins/Documentos/new/dev-study/raw/user-stories.md
+- utwhcm-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/utwhcm.md
+- uuid-primary-key-mysql.md -> /home/nemomartins/Documentos/new/dev-study/raw/uuid-primary-key-mysql.md
+- vector-clocks.md -> /home/gabriel-martins/Documentos/dev-study/raw/vector-clocks.md
+- very-low-defect-project-martin-fowler.md -> /home/nemomartins/Documentos/new/dev-study/raw/very-low-defect-project-martin-fowler.md
+- vulnerabilidades-comuns-seguranca-apps.md -> /home/nemomartins/Documentos/dev-brain/raw/vulnerabilidades-comuns-seguranca-apps.md
+- wardley-maps.md -> /home/nemomartins/Documentos/new/dev-study/raw/wardley-maps.md
+- webhook.md -> /home/nemomartins/Documentos/new/dev-study/raw/webhook.md
+- websocket-sse-realtime.md -> /home/nemomartins/Documentos/new/dev-study/raw/websocket-sse-realtime.md
+- xunit-martin-fowler.md -> /home/nemomartins/Documentos/new/dev-study/raw/xunit-martin-fowler.md
+- xunit-xunitpatterns.md -> /home/nemomartins/Documentos/new/dev-study/raw/xunit-xunitpatterns.md
+- zero-downtime-deploy.md -> /home/gabriel-martins/Documentos/dev-study/raw/zero-downtime-deploy.md
+- zero-trust.md -> /home/nemomartins/Documentos/new/dev-study/raw/zero-trust.md
+
+## Citações (Raw Quotes) não encontradas no raw
+
+- 10-conceitos-fundamentais-backend.md (0.44): Um backend bem feito não usa cash só porque é rápido ele também vai ter que saber como e quando invalidar.
+- 10-conceitos-fundamentais-ia-moderna-bernardo-lobato.md (0.25): Em vez de ensinar regras passamos a ensinar através de exemplos.
+- 3-erros-que-minam-confianca-como-dev-andre-casciotti.md (0.0): Errar é humano, mas persistir no erro é burrice.
+- 3-erros-que-minam-confianca-como-dev-andre-casciotti.md (0.23): Não é preciso fazer tudo mais perfeito possível, mas você tem que aprender a avaliar a situação, fazer escolha
+- 3-erros-que-minam-confianca-como-dev-andre-casciotti.md (0.0): É o simples que não é fácil.
+- 5-boas-praticas-uiux-ux-pilot.md (0.05): Como a ação de ver cursos disponíveis é mais fácil do que preencher o formulário, muito provavelmente eu vou t
+- 5-boas-praticas-uiux-ux-pilot.md (0.0): É muito comum a gente acessar frontends que buscam dados e não têm um loading na tela
+- 5-dicas-entrevistas-lousa-branca-system-design.md (0.12): Não tente sair desenhando nada de cara, porque vão faltar elementos.
+- 5-dicas-entrevistas-lousa-branca-system-design.md (0.15): Comece pelos requisitos... pergunte para as pessoas que estão te entrevistando quais são as funcionalidades co
+- 5-dicas-entrevistas-lousa-branca-system-design.md (0.29): Nunca, absolutamente nunca, coloque tecnologias que você não teve experiência.
+- 5-dicas-entrevistas-lousa-branca-system-design.md (0.07): Todos esses tipos de entrevista têm um único objetivo: fazer você falar 'não sei'... e tá tudo bem.
+- 5-principios-que-mudaram-como-programador.md (0.0): Leave the campground cleaner than you found it.
+- 5-principios-que-mudaram-como-programador.md (0.0): You aren't going to need it.
+- 5-principios-que-mudaram-como-programador.md (0.0): Do the simplest thing that could possibly work.
+- 6-conselhos-carreira-programador-10-anos-experiencia.md (0.13): Você tem o problema do paradoxo da empregabilidade que você precisa de experiência para conseguir um emprego e
+- 6-conselhos-carreira-programador-10-anos-experiencia.md (0.18): Nenhum deles saiu com uma ideia na cabeça. Nenhum deles saiu com um curso de marketing digital ou de IA debaix
+- 6-conselhos-carreira-programador-10-anos-experiencia.md (0.17): Sem acesso ao mercado global a sua renda tá completamente dependente do Brasil, o seu ciclo econômico ele tá j
+- 6-conselhos-carreira-programador-10-anos-experiencia.md (0.0): Ao invés de pensar em 10.000 horas, pensa em 10.000 feedbacks
+- 6-conselhos-carreira-programador-10-anos-experiencia.md (0.0): Eu consigo ensinar alguém que não sabe programar a programar. Eu consigo encontrar um excelente programador. E
+- 7-habitos-programador-altamente-eficaz.md (0.0): O seu cérebro tem que ser igual uma lâmpada, só que ao invés de corrente elétrica passando pela resistência, t
+- 7-habitos-programador-altamente-eficaz.md (0.2): Um programador altamente eficaz sempre vai se perguntar: isso precisa realmente ser resolvido [desse jeito]?
+- 7-habitos-programador-altamente-eficaz.md (0.25): Um projeto funcionando muitas vezes é melhor do que qualquer documentação.
+- 7-habitos-programador-altamente-eficaz.md (0.13): Ao invés de você ter medo do código, o código é quem tem que agradecer pela sua existência.
+- agent-waves-custo-modelos-fortes-fracos-kimi.md (0.04): Se vocês esverem trabalhando com Agent Waves mas na Agent Wave de vocês vocês usam sempre o mesmo modelo que é
+- agent-waves-custo-modelos-fortes-fracos-kimi.md (0.0): Eu não tenho que olhar só para tokens, eu tenho que olhar para custo final também.
+- agent-waves-custo-modelos-fortes-fracos-kimi.md (0.0): A estratégia ali de Agent Wave que eu segui foi a pior de todas, a mais porca possível.
+- algoritmos-de-ordenacao-bubble-insertion-selection-merge-quicksort-heapsort.md (0.47): É como se você tivesse ordenando ali um conjunto de cartas que você acabou de receber num jogo.
+- algoritmos-de-ordenacao-bubble-insertion-selection-merge-quicksort-heapsort.md (0.0): Lembra quando fala de *merge*, lembra que tem esse processo de mesclar
+- ambulance-pattern-priorizacao-mensagens-mark-richards.md (0.0): The ambulance pattern creates a fast-path for requests that need to go ahead of others - just like cars pullin
+- ambulance-pattern-priorizacao-mensagens-mark-richards.md (0.0): Notice how these messages are normally being processed, but now we have a high priority message, and this is a
+- ambulance-pattern-priorizacao-mensagens-mark-richards.md (0.0): Because those are set to high priority, those will always go to the head of the queue, and slow down or even s
+- ambulance-pattern-priorizacao-mensagens-mark-richards.md (0.0): Now, without having to play around with message priority, notice both of these messages can now be processed a
+- analise-curriculo-vaga-junior-desenvolvedor.md (0.0): Se o seu currículo não dá para dar um Ctrl+F no PDF e encontrar pela palavra-chave da empresa, seu currículo s
+- analise-curriculo-vaga-junior-desenvolvedor.md (0.08): Ter o Java escrito aqui, mas não ter ele em nenhum lugar do currículo, é algo que chama um pouco de atenção. E
+- analise-curriculo-vaga-junior-desenvolvedor.md (0.37): Para mim, ter uma seção de projetos pessoais bem feita é um diferencial muito grande para quem está no início 
+- anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato.md (0.06): O ID v4 usa somente 122 bits de aleatoriedade, enquanto um token de 256 bits é exponencialmente mais difícil d
+- anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato.md (0.21): API Keys são identificadores usados para autenticar aplicações, e não usuários... também chamadas de chaves de
+- anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato.md (0.26): A escolha entre o token opaco e um token autocontido não é simplesmente uma questão de gostos, mas chega a env
+- anatomia-entrevista-system-design-bigtech.md (0.29): A gente precisa saber quantos usuários vão utilizar, quais são as features que esses usuários vão utilizar, qu
+- anatomia-entrevista-system-design-bigtech.md (0.35): A minha solução que funciona na minha máquina para mim não vai funcionar para milhões de clientes distribuídos
+- anatomia-entrevista-system-design-bigtech.md (0.0): O código é o detalhe de implementação quase. Aqui a gente tá muito mais preocupado com arquitetura, com a infr
+- anatomia-entrevista-system-design-bigtech.md (0.0): Se o número verdadeiro de likes for 301, só que para você aparece o número 302, tem alguma diferença? Não tem.
+- anatomia-entrevista-system-design-bigtech.md (0.0): Numa entrevista o que eu recomendo é que você esteja sempre expondo aquilo que você tá pensando, expondo o seu
+- armazenamento-seguro-de-senhas-hash-salt-pepper-galego.md (0.2): não existe armazenar a senha em texto plano, tá errado em todas as circunstâncias, em todas as situações
+- armazenamento-seguro-de-senhas-hash-salt-pepper-galego.md (0.0): quando a gente tá guardando uma senha, a gente quer que esse cálculo seja mais lento e mais difícil
+- armazenamento-seguro-de-senhas-hash-salt-pepper-galego.md (0.06): se você perder esse valor [pepper], nenhum usuário vai conseguir fazer login, você vai quebrar a produção para
+- armazenamento-seguro-de-senhas-hash-salt-pepper-galego.md (0.0): eu pessoalmente prefiro fazer um login via Google, via GitHub, via algo nesse sentido, porque eu elimino um po
+- autenticacao-federada-sso-saml-bernardo-lobato.md (0.12): Pense no LDAP como se fosse uma espécie de chmod corporativo
+- autenticacao-federada-sso-saml-bernardo-lobato.md (0.48): Em vez de você provar quem é para cada servidor que acabaria exigindo múltiplas senhas, você prova quem é para
+- autenticacao-federada-sso-saml-bernardo-lobato.md (0.43): A aplicação original, o service provider, nunca tem acesso nem visualiza a senha digitada, pois isso acontece 
+- avaliacao-de-skills-skill-creator-description-e-benchmark.md (0.08): Se eu utilizo o modelo um pouco menos inteligente, olha a diferença: com skill eu tenho 90% de assertividade, 
+- binary-search-em-5-minutos.md (0.21): Como criar e recriar array recursivamente ia ser muito computacionalmente caro, existe uma implementação com b
+- binary-search-em-5-minutos.md (0.43): A gente efetivamente encontrou ele em dois passos só, em log de n, ao invés de n
+- busca-binaria-fila-protocolos-atendimento-live-coding.md (0.22): Se ela não tivesse ordenada, toda essa lógica cairia por terra. Se a lista tá desordenada, daí eu tenho outro 
+- busca-linear-e-binaria-giovana.md (0.1): A busca linear eu preciso começar desde o primeiro elemento e ir fazendo uma verificação a cada elemento... O 
+- busca-linear-e-binaria-giovana.md (0.4): A gente vai fazendo uma divisão pela metade a cada etapa desse processo.
+- busca-linear-e-binaria-giovana.md (0.12): Esse algoritmo ele só funciona se a sua lista estiver ordenada.
+- busca-linear-e-binaria-giovana.md (0.0): A base sempre vai ser dois quando a gente fala sobre complexidade logarítmica, porque a gente está falando do 
+- cinema-e-programacao-diretor-de-ia-carreira-lucas-badico.md (0.25): Antes o output do meu trabalho era diretamente proporcional ao meu conhecimento; agora o output do meu trabalh
+- cinema-e-programacao-diretor-de-ia-carreira-lucas-badico.md (0.03): A gente até brinca lá, o pessoal que trabalha comigo: a gente é babá de IA. Ganha bem para ser babá de IA, tod
+- cinema-e-programacao-diretor-de-ia-carreira-lucas-badico.md (0.0): Não é bom que a sua carreira dependa da IA, porque a minha carreira atualmente não depende
+- code-review-morreu-uncle-bob-push-force-prod-lucas-montano.md (0.14): Se tu revisa cada linha que a IA está escrevendo, isso passa a ser uma red flag
+- code-review-morreu-uncle-bob-push-force-prod-lucas-montano.md (0.27): Uma grande empresa não quer isso, ela quer processos." (sobre accountability individual × substituibilidade)
+- como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado.md (0.0): Escolher banco de dados errado não é um problema que aparece no dia 1"
+- como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado.md (0.32): Percebam que eu escolhi aqui entre Dynamo, Mongo e Postgres sem me preocupar com o formato da informação, mas 
+- como-escolher-banco-de-dados-criterios-alem-do-tipo-de-dado.md (0.0): O custo... é exatamente um resumo entre tudo que tá aqui.
+- como-escolher-banco-de-dados-historia-acid-cap.md (0.2): Todos os números aqui citados — conexões, volume, latência
+- como-fazer-perguntas-certas-ciclo-de-2-horas.md (0.29): Uma pergunta ruim rouba muito o tempo do desenvolvedor sênior e uma pergunta boa respeita esse tempo.
+- como-fazer-perguntas-certas-ciclo-de-2-horas.md (0.37): Documente tudo o que você aprendeu … o teu documento também vai servir para outras pessoas, até para o seu eu 
+- como-ficar-bom-em-leetcode.md (0.0): Não memorize o problema, memorize o padrão.
+- como-ficar-bom-em-leetcode.md (0.4): Se você não sabe resolver um problema, você não sabe resolver esse problema. Não tem nada que você vai aprende
+- como-ficar-bom-em-leetcode.md (0.0): Two pointer sempre cai. Eu acho que esse é o primeiro que você devia focar.
+- como-ficar-bom-em-leetcode.md (0.38): Tem que saber Big O para ficar bom em LeetCode. Ponto.
+- como-identificar-o-proximo-hype-tecnologico.md (0.25): Nunca eu entro furioso e querendo extrair o máximo de dinheiro possível, porque eu entendi que a vida ela func
+- como-identificar-o-proximo-hype-tecnologico.md (0.2): Da próxima vez que alguém te oferecer algo que é praticamente milagroso — retorno altíssimo, risco baixíssimo,
+- como-identificar-o-proximo-hype-tecnologico.md (0.0): É mais fácil destruir a iniciativa das outras pessoas do que construir a sua, porque você não está emocionalme
+- como-nunca-mais-esquecer-o-que-voce-estuda-programacao.md (0.0): Você mesmo pode fabricar os problemas
+- como-nunca-mais-esquecer-o-que-voce-estuda-programacao.md (0.06): Não é o número de cursos que você fez ou o número de tecnologiazinha bonita que você colocou no LinkedIn
+- como-nunca-mais-esquecer-o-que-voce-estuda-programacao.md (0.0): As tecnologias sempre mudam, mas os fundamentos sempre permanecem.
+- como-se-comportar-na-entrevista-de-system-design-tier-s.md (0.17): Comunicar a sua ideia, o seu processo de raciocínio, aí isso é o que diferencia
+- como-se-comportar-na-entrevista-de-system-design-tier-s.md (0.03): Isso aqui não é um monólogo, isso aqui é uma conversa. Você vai conversar com o entrevistador, ele não tá aqui
+- como-se-comportar-na-entrevista-de-system-design-tier-s.md (0.0): Sempre explique o porquê das suas tomadas de decisões e sempre explique o tradeoff que alguma decisão que você
+- como-se-comportar-na-entrevista-de-system-design-tier-s.md (0.05): Ele já sabe a solução que precisa ser feita, ele já sabe qual que é a resposta mais adequada que você precisa 
+- como-se-comportar-na-entrevista-de-system-design-tier-s.md (0.07): O que mais vai importar e pesar durante a entrevista, por incrível que pareça, é o seu comportamental, e não o
+- como-se-comportar-na-entrevista-de-system-design-tier-s.md (0.47): Um salário desses não se alcança de uma semana para outra [...] eu demorei 4 anos para conseguir meu primeiro 
+- como-ser-dev-essencial-e-ganhar-mais-andre-casciotti.md (0.43): Conhecimento técnico te ajuda a entrar nas empresas, mas ele não ajuda tanto a ficar nas empresas.
+- como-ser-dev-essencial-e-ganhar-mais-andre-casciotti.md (0.33): Quem não entrega vai pra rua.
+- como-ser-dev-essencial-e-ganhar-mais-andre-casciotti.md (0.38): O que é raro é valioso. O salário que você ganha é baseado na sua raridade.
+- como-ser-dev-essencial-e-ganhar-mais-andre-casciotti.md (0.33): Se você quer ser um dev diferente, você precisa fazer coisas diferentes.
+- como-ser-otimo-programador-sem-usar-o-cerebro.md (0.26): O que vai te fazer uma pessoa produtiva que entrega código de qualidade não é necessariamente seguir um BDD, u
+- como-transistores-formam-portas-logicas-celulas-padrao-cmos.md (0.25): quando você monta meticulosamente milhares de peças de Lego juntas você pode construir uma criação de Lego imp
+- como-transistores-formam-portas-logicas-celulas-padrao-cmos.md (0.14): as CPUs são dispositivos incrivelmente poderosos mas no fundo são apenas um monte de transistores e portas lóg
+- conceitos-que-regem-a-computacao-bits-turing-complexidade.md (0.38): Com a mesma entrada nós sempre teremos a mesma saída." (sobre a máquina de Turing determinística)
+- cqrs-martin-fowler.md (0.0): The rationale is that for many problems, particularly in more complicated domains, having the same conceptual 
+- cqrs-martin-fowler.md (0.0): CQRS should be used only on specific portions of a system and not the whole thing
+- cqrs-martin-fowler.md (0.0): My primary worry is that people will use CQRS because it's the cool thing to do, [...] most of the systems I'v
+- cqrs-volume-modelo-consistencia-forte-eventual.md (0.15): Se eu tô escrevendo dentro de uma transação nessa base e depois faço uma escrita no serviço de query, o serviç
+- cqrs-volume-modelo-consistencia-forte-eventual.md (0.0): Eu preciso garantir consistência na minha base e no meu evento
+- custo-real-ia-tokens-produtividade-demissoes.md (0.0): Estão botando aumento, eles estão mentindo, gente, essa é a verdade [...] estão botando de bode expiatório.
+- custo-real-ia-tokens-produtividade-demissoes.md (0.48): Sem visibilidade clara do uso de token em tarefas de desenvolvimento, as organizações arriscam estouros no orç
+- database-branching-testes-neon-fernanda-kipper.md (0.22): Como a Vercel faz automático, a gente nem precisa se preocupar com isso: ele já atualiza meu `DATABASE_URL` al
+- deploy-blue-green-na-pratica-vps-nginx.md (0.03): A blue tá rodando na 3001 tá e a green é a V2, é que tá rodando no 3002 [...] mas tradicionalmente quando a ge
+- deploy-blue-green-na-pratica-vps-nginx.md (0.0): Ele tá apenas mudando essa setinha aqui
+- deploy-blue-green-na-pratica-vps-nginx.md (0.0): Eu vou subir uma instância green, eu vou testar ali a minha instância green [...] quando eu garantir que tá fu
+- dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes.md (0.0): O código gera ações que são determinísticas; quando você trabalha com LLM ela gera um valor… coisas que são in
+- dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes.md (0.09): A execução dele não tem que depender de uma LLM para você não ter um consumo de token em alta ou mesmo termina
+- dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes.md (0.05): Talvez esse disparo por exemplo não seja cada commit, mas seja a cada duas semanas… ou quando tiver uma mudanç
+- dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes.md (0.03): Como é que a gente dá de maneira eficiente feedback pra IA que tá gerando esse código para toda vez que você f
+- enderecos-ip-dns-dominios-https-aws-fernanda-kipper.md (0.42): Servidores DNS são servidores espalhados por todo o mundo que funcionam como uma agenda telefônica.
+- enderecos-ip-dns-dominios-https-aws-fernanda-kipper.md (0.35): O HTTPS adiciona uma camada de segurança nas requisições... uma criptografia que envolve uma troca de chaves e
+- enderecos-ip-dns-dominios-https-aws-fernanda-kipper.md (0.0): O SSL me garante que a pessoa que é dona do domínio é realmente a pessoa que tá respondendo, não que ela é a A
+- escalabilidade-horizontal-load-balancer-algoritmos.md (0.0): Não faz sentido você escalar nada horizontalmente se você ainda não tentou uma escala vertical.
+- escalabilidade-horizontal-load-balancer-algoritmos.md (0.11): Load balancer de camada quatro vai ser muito mais rápido que load balancer de camada sete... ele é cego, ele é
+- escalabilidade-horizontal-load-balancer-algoritmos.md (0.0): O balanceador de camada sete intercepta a requisição, ele pode descompactar esse HTTP, ele vai olhar o que tá 
+- escalabilidade-horizontal-load-balancer-algoritmos.md (0.0): Não é simplesmente pegar um load balanceiro aqui e colocar ele aleatório para sair rodando, você precisa confi
+- escalabilidade-horizontal-vertical-custo-grafico.md (0.17): Eu tive a capacidade de aumentar aqui, ó, só um servidor. Eu não precisei dobrar o tamanho de um meu servidor.
+- escalabilidade-horizontal-vertical-custo-grafico.md (0.0): Olha o desperdício que eu tenho aqui. Essa quantidade de memória eu não precisava dela [...] Isso aqui é um fo
+- escalabilidade-horizontal-vertical-custo-grafico.md (0.07): Quanto mais servidores, quer dizer que se um deu problema e tudo mais, os outros continuam operando.
+- escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto.md (0.0): Nossa missão aqui basicamente vai ser o seguinte: a gente vai pegar essa arquitetura inicial e vamos evoluir e
+- escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto.md (0.0): A escala vertical não vai nos atender
+- escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto.md (0.07): Quem é que vai chorar agora? Quem é que vai abrir o bico? É o banco de dados, porque ele é quem vai se tornar 
+- escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto.md (0.0): Toda vez que você tiver alguma demanda muito pesada que demanda muito recurso, joga isso para processamento as
+- escalando-aplicacao-zero-a-um-milhao-usuarios-renato-augusto.md (0.33): Essa nossa arquitetura aqui é para milhões de usuários
+- escalar-leituras-banco-de-dados-entrevista-tier-s.md (0.27): A solução desse gargalo vai depender do motivo por trás do gargalo, que nem sempre é o mesmo.
+- escalar-leituras-banco-de-dados-entrevista-tier-s.md (0.15): Read Replica nada mais é do que a gente pegar um banco que tava recebendo tanto a escrita quanto a leitura e s
+- escalar-leituras-banco-de-dados-entrevista-tier-s.md (0.2): Não caia na cilada de sair adicionando cache sem antes otimizar as tabelas, sem antes aplicar connection pooli
+- escalar-leituras-banco-de-dados-entrevista-tier-s.md (0.35): O erro mais comum que faz os entrevistadores eliminarem 90% dos candidatos é quando o candidato não tenta ente
+- escalar-para-um-milhao-de-usuarios.md (0.0): Você nunca vai ver uma aplicação tipo uma Netflix rodando em um único servidor.
+- escalar-para-um-milhao-de-usuarios.md (0.07): O nosso servidor é um single point of failure. Se o servidor cair, a nossa aplicação cai.
+- escalar-para-um-milhao-de-usuarios.md (0.06): Como todos eles compartilham dos mesmos dados, a gente pode simplesmente promover ele para um banco de dados d
+- escalar-para-um-milhao-de-usuarios.md (0.0): Se a nossa página inicial do site tá numa CDN, o usuário recebe a primeira página muito mais rápido do que se 
+- escalar-para-um-milhao-de-usuarios.md (0.06): Muito provavelmente, mesmo sem usar múltiplos data centers, a gente já teria chegado no milhão de usuários ali
+- evolucao-memorias-ram-ddr1-a-ddr5.md (0.22): quando falta RAM o resultado é muito óbvio: travamentos, lentidão e aquela raiva de ver o PC engasgar sem moti
+- evolucao-memorias-ram-ddr1-a-ddr5.md (0.09): era muito comum os usuários da época acreditarem que simplesmente adicionar mais memória no computador resolve
+- evolucao-memorias-ram-ddr1-a-ddr5.md (0.39): a DDR3 foi provavelmente a que mais durou... dominou praticamente todos os PCs, notebooks e até servidores por
+- evolucao-memorias-ram-ddr1-a-ddr5.md (0.3): mesmo com toda essa potência, a diferença real em jogos do dia a dia comparado com o DDR4 nem sempre é tão per
+- filosofia-do-design-de-software-introducao.md (0.0): Complexity is anything related to the structure of a software system that makes it hard to understand and modi
+- filosofia-do-design-de-software-introducao.md (0.0): As a program evolves and acquires more features, it becomes complicated, with subtle dependencies between its 
+- filosofia-do-design-de-software-introducao.md (0.0): Incremental development means that software design is never done.
+- filosofia-do-design-de-software-introducao.md (0.0): It's easier to see design problems in someone else's code than your own.
+- fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia.md (0.0): Bad code is the most expensive it's ever been.
+- fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia.md (0.0): Code is not cheap. In fact bad code is the most expensive it's ever been.
+- fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia.md (0.0): No one knows exactly what they want
+- fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia.md (0.0): Design the interface, delegate the implementation.
+- fundamentos-de-software-importam-mais-que-nunca-na-era-da-ia.md (0.0): Invest in the design of the system every day."
+- github-2018-cap-pacelc-particao-video.md (0.32): mesmo quando não há partição de rede ainda assim a gente tem um tradeoff que é justamente escolher entre latên
+- golang-mercado-salarios-pesquisa-2024.md (0.0): A gente vê que realmente o mercado de gol é um mercado mais seleto e que paga bem.
+- golang-mercado-salarios-pesquisa-2024.md (0.05): As empresas pagam melhor para quem coda em Go justamente por ser uma linguagem que muitos devs ainda não perce
+- graph-engineering-matematica-do-erro-composto.md (0.0): Você não faz o prompt no agente, você desenha o sistema que faz o prompt." (repetição da formulação já central
+- guia-claude-code-para-startups-anthropic-ai-native-sdlc.md (0.31): O Claude não consegue entender o que não vê. Conecte as fontes confiáveis às ferramentas das suas equipes diár
+- gzip-deflate-huffman-lz77.md (0.0): Ele vai transformar essa sequência num triplet, que basicamente é uma tupla com três itens: primeiro item é o 
+- gzip-deflate-huffman-lz77.md (0.42): Enquanto no ASCII os caracteres sempre têm uma quantidade fixa de bits, aqui [na árvore de Huffman] cada carac
+- gzip-deflate-huffman-lz77.md (0.0): Mano, eu acho isso simplesmente genial.
+- hmac-integridade-mensagem-local-first-entrevista.md (0.0): A criptografia ela é muito interessante quando você quer garantir consistência, só que por outro lado se você 
+- hmac-integridade-mensagem-local-first-entrevista.md (0.17): Se você tem tempo e computação suficiente, só concatenando um segredo na frente de uma mensagem não gera entro
+- hmac-integridade-mensagem-local-first-entrevista.md (0.0): A grande vantagem [de validar um payload que o próprio servidor gerou] é: no modelo local-first, eu não precis
+- hospedando-site-completo-em-url-fragment-brotli-webassembly.md (0.12): A gente tá com pacote comprimido nas mãos, mas o navegador cruza os braços e se recusa a descomprimir.
+- ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv.md (0.05): Em 2026, a Leng Chain [LangChain] passou a usar esse termo de loop engineering para discutir ali como esses ci
+- ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv.md (0.0): Você não faz o prompt no agente, você desenha o sistema que faz o prompt." *(paráfrase do próprio raciocínio d
+- ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv.md (0.24): Ele tem um recurso chamado list agents onde ele lista todos os agentes disponíveis ali naquele contexto e ele 
+- ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv.md (0.09): Talvez a nova skill de um desenvolvedor não seja 'ah, eu sei usar IA'
+- icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo.md (0.33): o ICMP não é igual o TCP, ele não tem garantia de entrega nem retransmissão.
+- icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo.md (0.25): a gente acabou de criar um proxy.
+- icmp-browser-navegar-na-internet-via-ping-go-michel-leonardo.md (0.08): esse projeto obviamente tem muitas limitações por conta que ele é apenas uma prova de conceito.
+- idempotencia-redis-controle-mensagens-whatsapp-tulio-faria.md (0.44): O grande trabalho que você vai ter na hora de definir idempotência é exatamente identificar quais característi
+- idempotencia-redis-controle-mensagens-whatsapp-tulio-faria.md (0.25): A idempotência não é para mandar de verdade essa mensagem para o WhatsApp [se] chegar mais de uma mensagem com
+- idempotencia-redis-controle-mensagens-whatsapp-tulio-faria.md (0.0): Ele [o Redis] dá um GET antes e seta depois"
+- impacto-ia-mercado-frontend.md (0.19): Spec driven hoje é obrigatório, cara. Não tem para onde correr. Se você não sabe isso aqui eu mesmo te reprova
+- infraestrutura-como-codigo-cdk-aws.md (0.0): Toda vez que eu altero esse código aqui e eu rodo o meu CDK de novo, ele vai atualizando o código que tá lá no
+- kimi-k3-china-mercado-ia-open-source.md (0.0): Eu tenho aqui o modelo, eu ensino vocês como fazerem inferência, e todos os outros provedores do mundo que qui
+- leetcode-como-se-preparar-entrevistas-coding-anthony-mays.md (0.0): Don't memorize the problem, memorize the pattern
+- leetcode-como-se-preparar-entrevistas-coding-anthony-mays.md (0.0): I need to see how you work through a problem from A to B and what you did to get between those two points.
+- leetcode-como-se-preparar-entrevistas-coding-anthony-mays.md (0.0): I usually know when people are going to fail an interview because the first thing they do after they hear the 
+- loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano.md (0.0): Regra no prompt é pedido, bloqueio de verdade é igual a permissão
+- loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano.md (0.43): Quanto maior o código, mais ele trapaceia para conseguir concluir
+- mercado-cobol-mainframe-pesquisas-retorno-ti.md (0.27): sim, tem mercado, e sim, existe uma dificuldade real para se conseguir profissional qualificado nessa platafor
+- mercado-cobol-mainframe-pesquisas-retorno-ti.md (0.17): quando esse sujeito sai da empresa, não tá indo embora só o conhecimento de COBOL... o conhecimento de arquite
+- mercado-cobol-mainframe-pesquisas-retorno-ti.md (0.0): você pode precisar atualizar seus conhecimentos, ferramentas e métodos e processos... mas tem uma coisa que vo
+- microsservicos-do-zero-deadlock-2pc-saga-cqrs.md (0.48): Toda operação ela tem que ter um rollback, toda operação ela tem que poder ser revertida. Isso é um princípio 
+- microsservicos-do-zero-deadlock-2pc-saga-cqrs.md (0.43): Escalabilidade não necessariamente significa mais performance pro seu usuário na resposta para ele... escalabi
+- microsservicos-monolito-first-renato-augusto.md (0.35): É como construir uma casa sem ter uma planta completa. Você pode até começar a levantar as paredes, mas a chan
+- microsservicos-monolito-first-renato-augusto.md (0.08): Você precisa entender que o monolito é que tem que ser o ponto de partida
+- monitoramento-aplicacoes-ia-grafana-cloud-opentelemetry.md (0.0): O que você pode fazer é você pode criar skills, ou seja, eu posso ensinar a IA como ela pode obter os dados, q
+- monitoramento-aplicacoes-ia-grafana-cloud-opentelemetry.md (0.0): Se você não usa [observabilidade] na sua aplicação em produção, você provavelmente ou tá gastando muito dinhei
+- monitoramento-aplicacoes-ia-grafana-cloud-opentelemetry.md (0.0): Não fique preso a nenhum vendor
+- o-que-estudar-guia-para-iniciantes-andre-casciotti.md (0.0): Se você ficar esperando para definir [seu caminho], você se perde.
+- o-que-estudar-guia-para-iniciantes-andre-casciotti.md (0.0): Você não é do jeito que você é agora. Você está como você está agora
+- o-que-estudar-guia-para-iniciantes-andre-casciotti.md (0.41): A IA acelera aquilo que você já faz. [...] Se você só sabe fazer código porcaria, a IA vai te ajudar a fazer i
+- observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam.md (0.06): O ouro não está na investigação, o ouro não está na inteligência artificial, ele está na coleta dos dados.
+- observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam.md (0.0): Sem dados, você fica no escuro.
+- observabilidade-ponta-a-ponta-opentelemetry-ia-amsterdam.md (0.0): Todos os concorrentes se juntaram em um único lugar para transformar uma ferramenta em algo melhor.
+- ordenacao-selection-quicksort-bubble-sort-live-coding.md (0.08): Quando a gente utiliza o ponto sort do JavaScript… qual algoritmo tá rodando por trás? Qual a eficiência daque
+- ordenacao-selection-quicksort-bubble-sort-live-coding.md (0.3): Sempre quando a gente tem uma constante atrelada dentro dessa função que calcula o tempo de execução do algori
+- ordenacao-selection-quicksort-bubble-sort-live-coding.md (0.19): Sempre quando eu tenho um for dentro de outro loop for eu vou ter essa complexidade que a gente chama de O de 
+- ordenacao-selection-quicksort-bubble-sort-live-coding.md (0.12): A cada recursão eu tô diminuindo o número do array, eu tô dividindo esse array ao meio, literalmente. Então is
+- ordenacao-selection-quicksort-bubble-sort-live-coding.md (0.4): A eficiência do quicksort também vai tá muito atrelada à escolha do pivô.
+- organizando-equipes-de-tecnologia-fabio-akita.md (0.27): Quantidade de pessoas é diretamente oposto à eficiência, porque quanto mais pessoas, mais esforço de coordenaç
+- os-3-estagios-de-maturidade-para-testar-codigo.md (0.13): Cada passo que eu dava na evolução do sistema, cada vez menos mobilidade eu tinha dentro do código.
+- os-3-estagios-de-maturidade-para-testar-codigo.md (0.19): A expectativa tá certa, a request deveria ser negada para um usuário anônimo. Quem tá errado é o código.
+- overengineering-carol-ate-quinta.md (0.33): O código abstrato extremamente complexo pode ser tão prejudicial quanto a gambiarra.
+- overengineering-carol-ate-quinta.md (0.0): Você está ali aumentando a complexidade só para dizer: eu que fiz. Olha só que bonito. Como se um código socia
+- papinho-tech-solo-q-and-a-carreira.md (0.33): Aprender a usar uma ferramenta de IA não é grande coisa. O que vai realmente te tornar um profissional diferen
+- papinho-tech-solo-q-and-a-carreira.md (0.42): Você não pode deixar que um professor faça você mudar a sua ideia de carreira.
+- papinho-tech-solo-q-and-a-carreira.md (0.21): A régua cada vez vai subindo mais. Você precisa cada vez saber mais sobre mais assuntos, e a IA vem para conse
+- particionamento-por-list-postgresql-sql-30-dias.md (0.0): se eu não tenho uma partição específica para um determinado estado pode dar problema durante a inserção de dad
+- pilares-desenvolvimento-com-ia-contrato-de-revisao-waves.md (0.23): O mesmo agente que programou não vai ser o mesmo agente que revisou, porque o cara que programou vai ficar com
+- pilares-desenvolvimento-com-ia-contrato-de-revisao-waves.md (0.25): O contrato vai ter tudo que precisa para que esse cara revise sem entender nada do contexto do projeto.
+- pilares-desenvolvimento-com-ia-contrato-de-revisao-waves.md (0.0): A gente sempre foi acostumado a fazer uma tarefa de cada vez. Agora eu posso fazer 10 de cada vez, então a nos
+- pilares-desenvolvimento-com-ia-contrato-de-revisao-waves.md (0.11): O que a gente está fazendo agora é um processo improdutivo que não tem consistência para funcionar ao longo do
+- por-que-estimativas-de-software-falham-como-melhorar.md (0.29): Isso não é necessariamente culpa da empresa, é porque a empresa tá tentando fazer algo que não necessariamente
+- por-que-estimativas-de-software-falham-como-melhorar.md (0.38): É impossível estimar algo que você nunca fez e você não sabe como você vai fazer... também não é possível dar 
+- por-que-estimativas-de-software-falham-como-melhorar.md (0.04): Se se você tiver sempre prometendo que vai entregar 40 story points... e você entrega 30... a sua estimativa é
+- por-que-estimativas-de-software-falham-como-melhorar.md (0.21): Rapidamente a gente consegue [ver] que uma tarefa que em teoria leva duas horas pode realisticamente demorar s
+- por-que-letras-minusculas-economizam-dados.md (0.26): Vale reforçar novamente aqui que antes de se preocupar com a árvore de Huffman, [você deveria] começar preocup
+- pos-graduacao-arquitetura-software-vale-a-pena.md (0.0): Tecnologia a gente ensina, disciplina não.
+- pos-graduacao-arquitetura-software-vale-a-pena.md (0.12): A pós-graduação em si você tem que enxergar ela como parte do caminho e não como o caminho inteiro.
+- precificacao-ancoragem-anthropic-opus-5-lancamento.md (0.29): Você cria uma oferta premium muito premium... assim como o iPhone faz com o Pro Max: a maioria não precisa daq
+- production-code-xunitpatterns.md (0.0): I needed a term to distinguish test code from the code that we are testing. 'Test code' is obvious. What to ca
+- production-xunitpatterns.md (0.03): In IT shops, the environment in which applications being used by real users run is often called 'Production'. 
+- pull-requests-por-que-falham-alternativas-sem-pr.md (0.07): Se o intuito é evitar retrabalho o mais rápido possível, se o intuito é pegar feedback o mais rápido possível,
+- pull-requests-por-que-falham-alternativas-sem-pr.md (0.14): Se nesse PR aqui em 20 a 30 minutos você conseguiu achar 5, 10 bugs, nesse outro PR aqui de 2.000 linhas de có
+- pull-requests-por-que-falham-alternativas-sem-pr.md (0.19): Se você manda um PR com 10 linhas de código, a pessoa vai querer sentir que fez alguma contribuição, então vai
+- pull-requests-por-que-falham-alternativas-sem-pr.md (0.13): Se esse PR tá aberto há uma semana, é uma semana que o código não tá gerando dinheiro.
+- pull-requests-por-que-falham-alternativas-sem-pr.md (0.0): Existem vários estudos demonstrando [que] pair programming [...] vai fazer tipo assim 1,6 vezes a velocidade d
+- pull-requests-por-que-falham-alternativas-sem-pr.md (0.17): Eu ainda criaria um PR aqui, na minha opinião
+- quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob.md (0.3): A pergunta parou de ser se esse for loop tá bonito ou não. Virou basicamente se esse código passa em cinco pro
+- quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob.md (0.0): LLM cara ela adora escrever função lá de 120 linhas com 15 iffs aninhados porque sei lá resolve todos os casos
+- quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob.md (0.0): Ele fez aqui 400 mutações e 50 sobreviveram. Essas 50 aqui que sobreviveram são os bugs que nenhum teste teu t
+- quatro-tecnicas-ci-cd-gate-qualidade-codigo-ia-uncle-bob.md (0.27): Uma das minhas maiores preocupações ultimamente tem sido como que eu posso continuar gerando 10.000 linhas de 
+- race-condition-locking-pessimista-otimista-reservations-tier-s.md (0.36): Nesse meio tempo, nesses milissegundos de diferença, o nosso sistema deu um falso positivo
+- race-condition-locking-pessimista-otimista-reservations-tier-s.md (0.21): O for update vai controlar o nosso lock pessimista: banco, não deixe ninguém modificar essa linha dessa tabela
+- race-condition-locking-pessimista-otimista-reservations-tier-s.md (0.31): É muito melhor a gente ter um conflito de reserva de assento do que um conflito no pagamento, concorda?
+- race-condition-locking-pessimista-otimista-reservations-tier-s.md (0.0): Nunca jamais abra uma transação com o banco de dados, loque uma linha da tabela, e vá fazer outras operações c
+- react-reconciliacao-memo-usememo-usecallback.md (0.2): Renderizar nada mais é do que um conjunto de três etapas: criar o seu HTML, verificar se existe uma mudança de
+- react-reconciliacao-memo-usememo-usecallback.md (0.07): O mesmo [memo] ele faz essa verificação: opa, mudou alguma propriedade, não mudou o estado, não mudou alguma i
+- react-reconciliacao-memo-usememo-usecallback.md (0.18): Quando o JavaScript faz uma comparação se uma função é igual à outra, ele verifica se ambas as funções ocupam 
+- recursao-vs-iteracao-call-stack-tail-call-optimization.md (0.33): Recursão é basicamente jumps, é basicamente gotos, é basicamente uma iteração cuja stack vai ser lidada pelo c
+- resolvendo-3-problemas-classicos-entrevista-coding-dsa.md (0.15): Vamos primeiro ver como que a gente soluciona esse problema de qualquer jeito, do da primeira maneira que surg
+- resolvendo-3-problemas-classicos-entrevista-coding-dsa.md (0.0): A gente ordenar um array não é de graça
+- resolvendo-3-problemas-classicos-entrevista-coding-dsa.md (0.21): Não faz sentido procurar o quatro se a gente já olhou a sequência 1, 2, 3, 4
+- resolvendo-3-problemas-classicos-entrevista-coding-dsa.md (0.07): Ser um programador, a estrutura de dados dictionary/hashmap é uma das mais úteis no seu trabalho
+- resolvendo-3-problemas-classicos-entrevista-coding-dsa.md (0.0): Não é odn, é n log n
+- sgbd-conceitos-fundamentais-questoes-concurso.md (0.45): O sgbd acaba gerenciando uma coleção de dados que estão ali na base de dados e que estão inter-relacionados e 
+- sgbd-conceitos-fundamentais-questoes-concurso.md (0.12): Os diversos sistemas gerenciadores de bancos de dados eles não conseguem nunca os três pontos do teorema CAP a
+- sgbd-conceitos-fundamentais-questoes-concurso.md (0.38): É preciso garantir que todos os servidores de um cluster terão cópias consistentes dos dados... a consistência
+- sistema-mentoria-golang-monolito-modular-live-lucas-badico.md (0.46): Eu queria pegar a ideia de monolito modular que eu vi muitos projetos aplicando, inclusive o Nest, que eu não 
+- sistema-mentoria-golang-monolito-modular-live-lucas-badico.md (0.11): Digamos que payment eu preciso delegar para um time específico que vai trabalhar só com payment e vai querer t
+- sistema-mentoria-golang-monolito-modular-live-lucas-badico.md (0.13): Consigo pensar em três libs do Go que eu tô usando no projeto: um é o Gorilla Mux, para HTTP; outro é o pacote
+- sistema-mentoria-golang-monolito-modular-live-lucas-badico.md (0.0): A arquitetura modular tá só embrionária
+- sistemas-de-arquivos-explicados.md (0.0): Quando um sistema é bem feito, tudo funciona muito rápido, organizado e sem desperdício. Já quando não é, você
+- spec-driven-development-otimizando-contexto-agentes.md (0.25): Quanto maior a janela de contexto, mais chance de alucinar tem.
+- spec-driven-development-otimizando-contexto-agentes.md (0.08): A gente termina a fase de research, salva tudo que a gente aprendeu em arquivos Markdown
+- spec-driven-development-otimizando-contexto-agentes.md (0.0): Isso aqui é que nem um plano
+- spec-driven-development-otimizando-contexto-agentes.md (0.16): O estado vai guardando decisões importantes que o agente criou durante a implementação [...] a gente pode simp
+- sql-injection-guia-completo-solucoes-galego.md (0.27): O Drop Table Users não deveria ser possível a nossa aplicação executar esse comando
+- sql-injection-sqlmap-luiz-viana.md (0.0): Se você já é da área, você já deve ter ouvido daquele truque do `or 1=1` para pular o login
+- sql-injection-sqlmap-luiz-viana.md (0.0): Não se deve fazer concatenação de string para criar uma query de consulta SQL, e sim, além de sanitizar as ent
+- sql-injection-sqlmap-luiz-viana.md (0.0): Quem não domina a exploração manual dificilmente vai conseguir usar o SQLMap com eficiência
+- sql-injection-sqlmap-luiz-viana.md (0.0): De maneira alguma eu digo que confiar só no modo padrão do SQLMap é suficiente
+- ssh-chaves-como-funcionam.md (0.0): Você pode imaginar isso aqui como uma senha para você usar a chave [...] mas na prática, eu mesmo, fazendo mea
+- ssh-chaves-como-funcionam.md (0.0): Nunca pegue o que não tem o .pub, porque é essa parte aqui que você compartilha [...] você nunca tira isso aqu
+- story-points-po-forcando-30-40-pontos-por-sprint.md (0.1): Quando o seu PO tá pedindo um número X de pontos, ele não tá nem aí pro valor que tá sendo entregue — o que el
+- story-points-po-forcando-30-40-pontos-por-sprint.md (0.21): O número arbitrário não significa nada. Quando uma quantidade é forçada no time, essa métrica de pontos deixa 
+- story-points-po-forcando-30-40-pontos-por-sprint.md (0.1): A gente entende que o Agile é mais veloz — mas ele é veloz porque valoriza o aprendizado e melhora o bem-estar
+- subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven.md (0.0): Muita granularidade não vale a pena. Tem um custo extremamente alto e muito lento.
+- subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven.md (0.0): Toda a leitura, varredura de código, é muito bom [usar subagente]
+- subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven.md (0.0): A gente pode dar uma... Pesquisando mais a fundo, eu fui ver se isso batia com as últimas coisas da indústria.
+- system-design-por-nivel-junior-pleno-senior.md (0.35): Ninguém, nenhuma empresa sequer concorda na definição de o que é um júnior, o que é um pleno, o que é um sênio
+- system-design-por-nivel-junior-pleno-senior.md (0.06): Para pleno já não cola tanto: sua decisão precisa ter um racional do porquê você tá escolhendo um tradeoff aqu
+- system-design-por-nivel-junior-pleno-senior.md (0.13): Não tô vendo se você sabe o que é um load balancer, se você sabe que ele existe
+- system-design-por-nivel-junior-pleno-senior.md (0.45): Para júnior e para pleno a entrevista é muito mais reativa. Para sênior é muito mais esperado que você inverta
+- system-design-simulador-hotel-booking-replit.md (0.0): A gente identificou um gargalo, o SQL database tá piscando em vermelho, tá na capacidade máxima.
+- system-design-simulador-hotel-booking-replit.md (0.0): O mesmo número de tráfego, mas o uso do database caiu
+- system-design-simulador-hotel-booking-replit.md (0.07): Pode ser um over engineering aqui, mas para um sistema de bucagem de hotel talvez não seja.
+- system-design-simulador-hotel-booking-replit.md (0.0): Ambos juízes concordam que a gente fez certo load balancer, o cash, o database... mas tá faltando SQL Replica,
+- test-code-xunitpatterns.md (0.0): Code written specifically to test other code whether that code is production code or other test code.
+- testcase-object-xunitpatterns.md (0.0): We create a Command object for each test and call the run method when we wish to execute it.
+- testcase-object-xunitpatterns.md (0.0): Treating tests as first-class objects opens up a lot of possibilities that are not available to us if we treat
+- testcase-object-xunitpatterns.md (0.0): The constructor of the Testcase Class takes the name of the method to be invoked as a parameter and stores thi
+- the-comparison-trap-in-programming-careers.md (0.0): Eu estava cometendo o erro clássico de comparar o meu bastidor, o meu corre, com o palco dos outros.
+- the-comparison-trap-in-programming-careers.md (0.0): Eu media o meu primeiro degrau pela régua de quem já tava no meio da escada.
+- the-comparison-trap-in-programming-careers.md (0.0): Significa apenas que a nossa linha de largada foi um ponto totalmente diferente.
+- the-comparison-trap-in-programming-careers.md (0.0): A disciplina nos estudos supera muito o talento.
+- the-comparison-trap-in-programming-careers.md (0.0): A minha única competição vai ser sempre com o meu eu do passado. E o resto é ruído.
+- the-comparison-trap-in-programming-careers.md (0.0): Se eu olhasse e pensasse 'Nossa, que código feio
+- there-is-always-an-exception-xunitpatterns.md (0.09): Whether we are learning to conjugate verbs in a new language or looking for patterns in how software is built,
+- there-is-always-an-exception-xunitpatterns.md (0.0): I think one of the biggest screw-ups that was made when we wrote NUnit V2.0 was to not create a new instance o
+- there-is-always-an-exception-xunitpatterns.md (0.0): Since it would be difficult to change the way that NUnit works now, too many people would complain, I now make
+- tipos-de-deploy.md (0.31): A diferença entre um deploy manual e um automático não é o que está sendo feito
+- tipos-de-deploy.md (0.14): Canary é sobre reduzir risco... o AB é sobre ver se, de repente, a gente implementou um checkout novo, esse ch
+- tipos-de-deploy.md (0.38): Você tá validando o seu V2 com clones do tráfego real.
+- tokens-o-que-sao-e-por-que-custam-caro.md (0.05): A LLM ela só consegue lidar com números, ela não lida com palavras, ela não lida com letras, ela está lidando 
+- tokens-o-que-sao-e-por-que-custam-caro.md (0.29): O token é uma maneira eficiente de traduzir a nossa linguagem para algo entendível para as LLMs.
+- tokens-o-que-sao-e-por-que-custam-caro.md (0.0): Isso aqui gastou um total de 22 tokens... agora quando a gente analisa o Cloud Opus, a gente vai ver que ele g
+- tokens-o-que-sao-e-por-que-custam-caro.md (0.29): Para cada novo token que a LLM vai gerar, ela vai precisar reprocessar todo o texto imputado anteriormente e m
+- tokens-o-que-sao-e-por-que-custam-caro.md (0.13): O processo de geração do output ele é recursivo... e é por isso que o preço de output é aqui o dobro no caso d
+- toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis.md (0.0): Você pediu para a AWS executar um trilhão de computações ali, a AWS vai fazer.
+- toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis.md (0.17): A dificuldade de configuração parece até proposital, porque quanto mais difícil configurar o negócio, mais dif
+- toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis.md (0.12): RDS é onde fica o banco de dados. Tipo, é isso.
+- toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis.md (0.1): O legal do Dynamo é que eles têm uma global table [...] você consegue ter uma escalabilidade global e distribu
+- toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis.md (0.38): Dentro da sua própria lógica interna do servidor [...] você provavelmente já tem coisas que se assemelham a má
+- topicos-desenvolvimento-software-mudei-de-ideia-6-anos.md (0.0): A shitty implementation of a good abstraction causes no net harm to the code base. A bad abstraction or missin
+- topicos-desenvolvimento-software-mudei-de-ideia-6-anos.md (0.0): So called 'best practices' are contextual and not broadly applicable. Blindly following them makes you an idio
+- topicos-desenvolvimento-software-mudei-de-ideia-6-anos.md (0.0): DRY is about avoiding a specific problem, not an end goal unto itself.
+- topicos-desenvolvimento-software-mudei-de-ideia-6-anos.md (0.0): YAGNI, SOLID, DRY. In that order.
+- transactional-outbox-pattern-entrevista-cadastro-usuario.md (0.0): A operação atômica ou ela vai garantir tudo, ou ela não vai garantir nada.
+- transactional-outbox-pattern-entrevista-cadastro-usuario.md (0.24): Você precisa estar preparado para que o seu sistema esteja pronto para falhar, ele precisa ter a liberdade de 
+- tres-projetos-para-aprender-programar.md (0.36): Construir um programa não funciona assim... software é mais parecido com modelagem com argila. Eu pego um mont
+- uncle-bob-direito-de-nao-ler-codigo-agentes-ia.md (0.19): A gente cruzou as regras do Clean Code com estudos controlados e principalmente a regra mais famosa do livro
+- uncle-bob-direito-de-nao-ler-codigo-agentes-ia.md (0.24): A grande vantagem de refatorar um código grande dentro do mesmo arquivo para funções menores é tornar aquelas 
+- xss-cross-site-scripting-luiz-viana.md (0.44): Esse tipo [DOM-based] é especialmente perigoso porque acontece totalmente no lado do cliente, então nem sempre
+- xss-cross-site-scripting-luiz-viana.md (0.0): O que seria a sanitização: ao invés dele ser mostrado como código, ele seria mostrado como texto encodado

@@ -3,8 +3,8 @@ type: concept
 title: "Profissional T-Shaped (Formação em T)"
 aliases: ["formacao em T", "T-shaped", "profissional em T", "especialista generalista"]
 date_created: 2026-08-13
-date_updated: 2026-10-07
-source_count: 3
+date_updated: 2026-10-30
+source_count: 4
 tags: [carreira, t-shaped, formacao-em-t, generalista, especialista, arquiteto-de-solucoes]
 skill: tech-mentor-leadership
 status: stub
@@ -50,3 +50,11 @@ Com a IA nivelando a execução técnica isolada, a vantagem migra para quem con
 - [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]
 
 - [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] — [[wiki/concepts/interdisciplinaridade-double-major|double major]] e generalista sob demanda ([[wiki/entities/greg-brockman]])
+
+## T-Shaped como Conciliação Generalista × Especialista
+
+[[wiki/concepts/programador-generalista]] ("pau para toda obra") só se sustenta com uma barra vertical de profundidade de domínio; o T é a síntese entre a tese generalista e [[wiki/concepts/especialista-leva-vantagem-com-ia]]. Ver [[wiki/questions/generalista-ou-especialista-na-era-da-ia]]. Ver [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]].
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]] — tese generalista do Vale; T como conciliação

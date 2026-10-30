@@ -3,8 +3,8 @@ type: concept
 title: "AWS CloudFront"
 aliases: ["CloudFront", "CDN AWS", "AWS CDN"]
 date_created: 2026-05-06
-date_updated: 2026-08-17
-source_count: 4
+date_updated: 2026-10-30
+source_count: 5
 tags: ["aws", "cdn", "edge", "performance", "cache"]
 skill: tech-mentor-infra
 status: stub
@@ -64,3 +64,11 @@ Usuário
 - [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — cache behaviors por path, Origin Access Control e WAF como camada de proteção na borda
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]] — combinação CloudFront + [[wiki/concepts/amazon-s3|S3]] citada como forma comum de hospedar um site inteiro só a partir de um arquivo estático (`index.html`) no bucket
 - [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — CloudFront como caminho para servir um site estático do S3 via **HTTPS**: distribuição com origem no bucket (website endpoint), viewer "Redirect HTTP→HTTPS", Custom SSL do [[wiki/concepts/certificado-ssl-acm|ACM]] e alternate name = domínio; apontado pelo [[wiki/concepts/aws-route-53|Route 53]] via registro A/Alias. (Backend em Lambda/EC2 usaria [[wiki/concepts/load-balancer|Load Balancer]] no lugar.)
+
+## Custo: Egress S3 → CloudFront Gratuito
+
+Transferência S3 → CloudFront não é cobrada; CloudFront → internet ≈ US$ 0,085/GB vs. S3 → internet ≈ US$ 0,09/GB. A fonte chama isso de "economia de 90%", mas pelos números é ~5,6% por GB — o ganho real vem de cache hit e free tier. Ver [[wiki/concepts/custo-de-egress]]. Ver [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]].
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — CloudFront na frente do S3 para download: latência ~500 ms → ~10-20 ms e argumento de egress (com erro de cálculo apontado)

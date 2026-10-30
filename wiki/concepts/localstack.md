@@ -3,8 +3,8 @@ type: concept
 title: "LocalStack"
 aliases: ["local stack", "aws local dev", "aws local emulation"]
 date_created: 2026-08-18
-date_updated: 2026-08-18
-source_count: 1
+date_updated: 2026-10-26
+source_count: 2
 tags: [aws, localstack, desenvolvimento-local, dynamodb, lambda, cloud, testing]
 skill: tech-mentor-backend
 status: stub
@@ -22,6 +22,9 @@ Ferramenta que emula serviços da AWS (DynamoDB, Lambda, S3, SQS, entre outros) 
 
 Ganha-se velocidade de iteração e custo zero durante desenvolvimento; perde-se fidelidade total ao comportamento da AWS real (emulação nunca é 100% idêntica) — normalmente mitigado com testes de integração/staging contra a AWS real antes de produção.
 
+**Atualização 2026-10-26:** Usado no sandbox oficial do Terraform junto com a CLI da AWS: [[wiki/concepts/terraform-workflow]].
+
 ## Key Sources
 
 - [[wiki/sources/sistema-mentoria-golang-monolito-modular-live-lucas-badico]] — setup de LocalStack para DynamoDB e Lambdas no desenvolvimento do core em Go
+- [[wiki/sources/introducao-ao-terraform-iac-devops]] — Introdução ao Terraform: LocalStack no sandbox de laboratório

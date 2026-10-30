@@ -13205,3 +13205,118 @@ Investigação da claim suspeita: `raw/escopo-de-projetos-processo-nao-resultado
 **Tocadas (12):** embedding-vectors, busca-semantica, similaridade-de-cosseno, vector-store, chunking, busca-por-palavra-chave, rag-como-ferramenta-de-busca, confidencialidade-de-dados-em-prompts-ia, recurrent-neural-network, ocr, hybrid-search (concepts); google (entity).
 
 **Notas:** (1) Sem contradição com a wiki; estende [[wiki/concepts/embedding-vectors]] (antes só token/texto) para multimodal. (2) Limites por chamada, 3072 dims e 100+ idiomas são relatados pelo apresentador a partir da página do Google; não verificados na documentação oficial. (3) Afirmação de que o Google treinaria com os dados enviados é especulação (ToS não lidos). (4) Apresentador não testou o modelo; "muito poderoso" é impressão. (5) Exemplo de site de roupas e rei−homem+mulher são hipotéticos/didáticos. (6) Novos itens `draft`/`stub`.
+
+---
+
+## [2026-10-26] ingest | Introdução ao Terraform — o que é, para que serve e como funciona (com prática)
+
+**Fonte:** transcrição colada pelo usuário (legenda automática, PT-BR), limpa em `raw/introducao-ao-terraform-iac-devops.md` (sem tradução, já em português; ASR corrigido: "Terraformer/Terraforme"→Terraform, "Terraformit"→init, "Plane"→plan, "WS"→AWS, "S2/E2/C2"→EC2, "MI"→AMI, "Gitab"→GitLab, "Cubernets"→Kubernetes, "Asure/Ager"→Azure; versão do Ubuntu ilegível mantida genérica; apresentador não identificado).
+
+**Skill:** tech-mentor-infra (SKILL.md + `references/terraform.md`). Carregada de `/home/gabriel-martins/Documentos/skills/` (o caminho `/home/nemomartins/...` do CLAUDE.md não existe neste ambiente).
+
+**Criado:** [[wiki/sources/introducao-ao-terraform-iac-devops]]; conceitos infraestrutura-declarativa, hcl, terraform-provider, terraform-workflow, terraform-blocos, terraform-registry, terraform-argumentos-e-atributos, ami; entidade terraform.
+
+**Tocadas (14):** iac, infraestrutura-como-codigo, terraform-state, terraform-modules, ec2, localstack, regiao-aws, drift-detection, vpc, git, devops-culture, least-privilege (concepts); aws, google-cloud-platform, mitchell-hashimoto (entities).
+
+**Notas:** (1) Sem contradição com a wiki; complementa [[wiki/sources/terraform]] (avançado: state remoto, módulos, drift) com a visão introdutória. (2) O vídeo não cobre state remoto/locking, módulos, `data`/`output` nem alternativas de autenticação — só citados; a skill acrescenta S3 + DynamoDB locking [skill: tech-mentor-infra]. (3) Versão 6.54 do provider AWS, Ubuntu "26.04" e o ID de AMI são do laboratório do vídeo, não verificados. (4) Expansão de "HCL" é [external]. (5) `iac`, `terraform-state` e `terraform-modules` continuam `stub` (receberam só nota). (6) Novos itens `draft`.
+
+---
+
+## [2026-10-26] ingest | Como a Anthropic faz code review com agentes — as sete camadas
+
+**Fonte:** transcrição colada pelo usuário (legenda automática, PT-BR), limpa em `raw/anthropic-code-review-por-agentes-sete-camadas.md` (sem tradução, já em português; ASR corrigido: "Tropic"→Anthropic, "Cloud"→Claude, "review MD"→REVIEW.md, "nitpak"→nitpick, "LMA Jud"→LLM-as-a-judge, "EE ETH"→ETH Zurique; trechos ambíguos mantidos entre colchetes: "200.500" por dia, "SCV MD", valor de PRs com 5+ rodadas, nome do paper "Shura…"; apresentador não identificado; links do post e dos papers não fornecidos).
+
+**Skill:** tech-mentor-ai (SKILL.md + `references/ai-assisted-engineering.md`, `references/ai/production-evals.md`). Carregada de `/home/gabriel-martins/Documentos/skills/` (o caminho `/home/nemomartins/...` do CLAUDE.md não existe neste ambiente). Secundário: tech-mentor-leadership (code review, ownership).
+
+**Criado:** [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]]; conceitos revisao-em-camadas-queijo-suico, consenso-multiagente-em-code-review, review-md, classificador-de-risco-de-revisao-humana, eval-de-revisor-a-partir-de-incidentes, ruido-e-loop-de-nitpick-em-revisao-por-agente, confianca-por-reversibilidade, limites-empiricos-de-revisao-por-ia, llm-as-judge (stub).
+
+**Tocadas (19):** code-review, claude-md, matriz-risco-dificuldade-review-ia, revisao-por-agente-independente, separacao-de-contextos, canary-release, feature-flag, evals-llm, harness-de-qualidade, ownership-proativo, extreme-ownership, blameless-post-mortem, trunk-based-development, quality-gate, golden-dataset, human-in-the-loop (concepts); anthropic, claude-code, microsoft (entities).
+
+**Notas:** (1) Sem contradição direta; estende [[wiki/concepts/matriz-risco-dificuldade-review-ia]] (transição) com o regime pleno da Anthropic e dá página própria ao [[wiki/concepts/review-md]], antes só uma seção em claude-md. (2) Números da Anthropic (30 mil/dia, 90%, 65%→78%, reverts −40%) vêm de relato oral de segunda mão; "200.500" e o dado de 5+ rodadas estão ilegíveis. (3) Os três papers (Microsoft, ETH Zurique, 67.774 PRs) não foram verificados; contagem de tarefas abertas/fechadas do benchmark é ambígua. (4) "Reversibilidade como metade do segredo" é inferência do apresentador. (5) Camada 4 (segurança) só citada de passagem. (6) Novos itens `draft`/`stub`.
+
+
+---
+
+## [2026-10-30] ingest | Upload e Download de Arquivos Gigantes — Presigned URL, Multipart e CDN (Tier S, vídeo 5)
+
+**Fonte:** transcrição colada pelo usuário (legenda automática, PT-BR), limpa em `raw/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s.md` (sem tradução, já em português; ASR corrigido: "sior"→sênior, "ORL/persign"→URL/presigned, "XZ signature"→X-Amz-Signature, "inspiração"→expiração, "SKS"→SQS, "Chrome job"→cron job, "Postb"→Postgres, "PEF"→path, "maler"→malware; números ambíguos marcados: durabilidade "9,99999", CloudFront "0,85 centavos").
+
+**Skill:** tech-mentor-system-design (SKILL.md + `references/architecture-ops.md` — Signed URLs, Resumable Uploads/tus; `references/system-design-cases.md` — pipeline de upload do YouTube). Secundário: tech-mentor-infra (S3/CloudFront/SQS), finops.
+
+**Criado:** [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]]; conceitos object-storage, presigned-url, multipart-upload, custo-de-egress, bucket-de-quarentena (stub).
+
+**Tocadas (16):** media-upload-pattern, amazon-s3, aws-cloudfront, cdn, aws-sqs, processamento-assincrono, auto-scaling, stateless, read-replicas, valet-key-pattern, upload-arbitrario-rce, entrevista-system-design, finops, sandbox (concepts); pedro-camaforte, aws (entities).
+
+**Notas:** (1) **Contradição corrigida:** [[wiki/concepts/amazon-s3]] dizia objeto máximo de 5 TB; desde dez/2025 é 50 TB (confirmado no anúncio AWS) — página atualizada. (2) **Erro da fonte:** "economia de 90%" com CloudFront não fecha com os próprios preços citados (0,09 → 0,085 US$/GB ≈ 5,6%); registrado em source e em custo-de-egress. (3) Durabilidade real: 11 noves. (4) [external] lifecycle `AbortIncompleteMultipartUpload` substitui o cron de limpeza; CORS precisa expor `ETag`; PUT pré-assinado não impõe tamanho. (5) Vídeo 3 da série (processamento assíncrono) ainda não ingerido.
+
+---
+
+## [2026-10-30] ingest | A Tendência no Vale do Silício: Empresas Querem Programadores Generalistas
+
+**Fonte:** transcrição colada pelo usuário (legenda automática, PT-BR), limpa em `raw/tendencia-vale-do-silicio-programador-generalista-vs-especialista.md` (sem tradução, já em português; ASR corrigido: "Palot Alto"→Palo Alto, "penning poker"→planning poker, "chipar"→shipar, "OP 5.5"→Opus 5.5, "umas"→um SaaS; ambíguos marcados: modelo "GEV/Jeev", "Deepsic V4.1 um flash", "já trabalhei como Extra"). Autoria inferida: Pedro Nauke ("eu e o Rodrigo", "alunos da formação").
+
+**Skill:** tech-mentor-leadership (SKILL.md + `references/leadership/ai-native-engineering-teams.md` — vibe coding legítimo em protótipo pessoal, revisão de especialista em áreas sensíveis, impacto em carreira). Secundário: tech-mentor-ai.
+
+**Criado:** [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]]; conceitos programador-generalista, codigo-como-commodity; questão [[wiki/questions/generalista-ou-especialista-na-era-da-ia]].
+
+**Tocadas (12):** especialista-leva-vantagem-com-ia, profissional-t-shaped, product-engineer, novo-perfil-dev-ia, multiplos-papeis-em-times-pequenos, one-person-company, planning-poker, manifesto-agil-como-adjetivo, vibe-coding, ciclo-de-mercado-tech (concepts); pedro-nauke, rodrigo-branas (entities).
+
+**Notas:** (1) **Contradição** com [[wiki/concepts/especialista-leva-vantagem-com-ia]] e com a fala (do provável mesmo autor) de que juniores devem se especializar mais rápido — registrada em questão; conciliação provável via T-shaped (eixos diferentes: domínio vs. escrever código). (2) Vídeo de opinião sem dados: "LLM faz código muito melhor que humano" e "5% dos softwares" sem evidência. (3) Caso do app no voo é protótipo pessoal — não prova substituição de squad em produto real. (4) Fonte ignora bus factor e revisão especializada em áreas sensíveis.
+
+---
+
+## [2026-10-30] clean | Raws de upload/download (Tier S, vídeo 5) e de generalista vs. especialista reprocessados com a skill text-cleaner
+
+**Fontes:** `raw/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s.md` e `raw/tendencia-vale-do-silicio-programador-generalista-vs-especialista.md`, regerados a partir das transcrições originais coladas pelo usuário, a pedido dele, com a skill **text-cleaner** (v1.0.5, instalada globalmente sem auto-update).
+
+**O que mudou:** as versões anteriores eram edições levemente parafraseadas e condensadas; agora o texto é **literal**. Só foram aplicados: pontuação, divisão em parágrafos, título `#` e poucos `##`, além da correção ortográfica de erros de reconhecimento de fala (ASR). Palavras claramente perdidas na legenda aparecem entre `[colchetes]`. Hesitações ("eh", "ah", repetições) e as chamadas faladas pelo autor (like/inscreva-se) foram mantidas, porque fazem parte da fala. O bloco de nota de cabeçalho dos raws foi removido (a skill proíbe blocos extras); as notas de ASR ficam neste log e nas entradas de ingest acima.
+
+**Verificação:** diff palavra a palavra contra o original. As únicas diferenças restantes são correções de ASR, como "sior"→sênior, "Chrome job"→cron job, "SKS"→SQS, "ORL"→URL, "OP 5.5"→Opus 5.5, "chipar"→shipar e "Palot Alto"→Palo Alto, mais as inserções entre colchetes: tier [S], system [design], upload [ID], [que], CDN [na] frente, [O] entrevistador, qual [parte]. Trechos ambíguos mantidos literalmente: "9,99999", "0,85 centavos de dólar", "GEV/Jeev", "DeepSeek V4.1 um flash", "já trabalhei como Extra", "nenhum mal".
+
+**Ingests ajustados:** as seções "Raw Quotes" das duas páginas de fonte foram substituídas por citações literais do novo raw, conferidas por script. Os claims e as demais páginas não mudaram: o conteúdo é o mesmo, só a redação do raw mudou.
+
+**Nomes de arquivo:** foi mantido o padrão do `raw/` (slug sem data) em vez do `YYYY-MM-DD-slug` da skill, para não quebrar o `source_file` das páginas.
+
+---
+
+## [2026-10-30] ingest | No Robots in the Gym: Tarefas de Academia, IA e Por Que Ler e Escrever
+
+**Fonte:** transcrição colada pelo usuário (legenda automática, PT-BR), limpa com a skill **text-cleaner** em `raw/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever.md` (sem tradução, já em português). Diff palavra a palavra conferido: só correções de ASR e inserções entre colchetes. ASR corrigido: "SAS"→SaaS, "N8N/OpenCla"→n8n/OpenClaw, "Host Gator"→HostGator, "deixar e a levantar"→deixar a IA levantar, "exato posto"→exato oposto, "Iá/Ia/EA"→IA, "o que fui feito"→o que foi feito, "internacionalizar"→internalizar, "pediu para ir a resumir"→pediu para IA resumir, "e A fizer"→e a IA fizer, "vai becodar/bicodando/culodado"→vibe codar/vibe codando, "esparço"→esparso, "Cloud Code"→Claude Code, "paixinha"→caixinha, "o impacto de a generativa / muita e a generativa / aí a generativa"→IA generativa, "guard rails"→guardrails, "lind effect"→Lindy effect, "t mais"→têm mais, "Paul Gram/program"→Paul Graham, "escritora"→escritor, "writes and write nots"→Writes and Write-Nots, "elite code"→LeetCode. Colchetes: "a [IA] vai dar um prompt", "dar o braço [a] torcer", "System [Design]". Ambíguos mantidos literalmente: "ao pedir pra tarefa exercer" (provavelmente "pra IA"), "a assistentes de sob demanda", "tempo sobre tensão" (provavelmente "sob tensão"), "mesacast". Autoria inferida: Augusto Galego (HostGator, cursos de LeetCode/roadmap/System Design, viagem a Glasgow/Sheffield); o nome não aparece.
+
+**Skill:** tech-mentor-leadership (SKILL.md + `references/leadership/ai-native-engineering-teams.md` — "tarefas sem IA para fundamentos", "pedir explicações do código que entregam"). Secundário: tech-mentor-ai.
+
+**Criado:** [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]]; conceitos tarefa-de-academia-vs-trabalho, vibe-leitura (stub), efeito-lindy (stub); entidade daniel-miessler (stub).
+
+**Tocadas (13):** atrofia-cognitiva, escrever-para-aprender, spaced-repetition, pensamento-critico, entender-vs-aprender, aprendizado-por-luta, dependencia-ia, vibe-coding (concepts); paul-graham, microsoft, hostgator, augusto-galego, claude-code (entities).
+
+**Notas:** (1) Artigo de origem identificado `[external]`: Daniel Miessler, "No Robots in the Gym" (URL danielmiessler.com/blog/keep-the-robots-out-of-the-gym, vista na newsletter Unsupervised Learning nº 508, não lida). Keith Hoodlet (blog 1Password) descreve a regra como "não use IA para o que você quer cultivar" — a crítica do vídeo ao quiz pode estar mirando o uso para *trabalho*, não para *academia*; registrado como open question. (2) Estudos citados sem nome, casados `[external]`: Microsoft = Lee et al., CHI 2025 (autorrelato); matemática = Bastani et al., PNAS 2025. "Assistentes sob demanda" não identificado. (3) **Número fraco:** "80% dos brasileiros têm muita dificuldade em ler" — o INAF mede ~29% de analfabetos funcionais; o próprio autor diz não lembrar a fonte. (4) Sem contradição direta com a wiki; reforça atrofia-cognitiva e entender-vs-aprender. Tensão leve com codigo-como-commodity: o autor deixa em aberto se escrever código à mão ainda é tarefa de academia.
+
+---
+
+## [2026-10-30] ingest | Spec2COBOLRot: Envelhecer COBOL com IA e a Diferença entre Complexidade Estrutural e Entropia Histórica
+
+**Fonte:** transcrição colada pelo usuário (legenda automática, PT-BR), limpa com a skill **text-cleaner** em `raw/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica.md` (sem tradução, já em português). Diff palavra a palavra conferido: só correções de ASR, nenhuma inserção entre colchetes. ASR corrigido: "Spec 2 Coball Rot/Hot"→Spec2COBOLRot, "Guinucoball/Glucoball/Guinucobol"→GnuCOBOL, "paraa"→para a, "processo BET"→processo batch, "Goldu/got"→GO TO, "campos desse mais compactados"→campos decimais compactados, "sistema legal"→sistema legado, "mete um wif"→mete um if, "duas IAIS"→duas IAs. Ambíguos mantidos literalmente: "testados no GnuCOBOL para uma ou outra equipe", "se é o padrão", "que é racionalmente faziam", "do COBOL, do Nat" (talvez Natural). Autor não identificado (canal de mainframe/COBOL).
+
+**Skill:** tech-mentor-backend (SKILL.md; `references/architecture-evolutionary.md` só cobre *architectural smells* e *technical debt quadrant* — sem referência específica para modernização de legado). Secundário: tech-mentor-ai.
+
+**Verificação externa:** paper lido no PDF do arXiv (2609.26835): Espinasse, Khelladi, Acher (Inria/DiverSe, IRISA, INSA Rennes) + Sopra Steria; AISM '26 / ASE 2026, Munique, 12/out; GPT-5.4 nos dois agentes; 26 assets (8 idioms, 15 smells, 3 mismatches); referência = 14 programas batch de folha (360–28.387 SLOC); níveis L1–L4 até 20–25 mil SLOC; samples em github.com/jbespi/spec2cobolrot-samples.
+
+**Criado:** [[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]]; conceitos entropia-historica-vs-complexidade-estrutural, corpus-sintetico-de-codigo-legado (stub); entidade spec2cobolrot (stub).
+
+**Tocadas (12):** entropia-de-software, codigo-legado-ia, cobol, modernizacao-de-mainframe, complexidade-ciclomatica, code-smells, conhecimento-perdido-em-legado, descoberta-de-regras-de-negocio-legado, refactor-vs-rewrite-matrix, mainframe, golden-dataset (concepts); github (entities).
+
+**Notas:** (1) **Imprecisões do vídeo:** a fase 1 não é uma equipe refazendo a especificação, e sim um loop automático de compilação/execução (até 5×); "palavras definidas pelo usuário" não é métrica do paper (o mais próximo é VUR); REDEFINES está no catálogo, mas o agente raramente conseguiu introduzi-lo. (2) **O paper reforça a tese do vídeo:** em escala, o LLM duplica parágrafos para bater o tamanho; comportamento preservado em só 5/9 execuções no L1; especialistas acharam "sintético demais". (3) Sem contradição com a wiki; conecta-se ao caso DMV (descoberta de regras antes de traduzir).
+
+---
+
+## [2026-10-30] ingest | História do Computador: da Máquina de Antikythera ao Computador Quântico (Link Nacional)
+
+**Fonte:** roteiro colado pelo usuário (PT-BR, texto com quebras de linha fixas e grafias fonéticas), limpo com a skill **text-cleaner** em `raw/historia-do-computador-da-antikythera-ao-computador-quantico.md` (sem tradução). Diff palavra a palavra conferido. Correções de grafia: "Bleise"→Blaise, "possuia"→possuía, "Láibniz"→Leibniz, "Plankálkül"→Plankalkül, "Máuchly/Présper Éckert"→Mauchly/Presper Eckert, "Numérical Integrêitor And Compíuter"→Numerical Integrator And Computer, "Control ata"→Control Data, "kabaites"→kilobytes, "Zézinho"→Zezinho, "amazenamento"→armazenamento; escapes `\.` removidos. Os dois intertítulos do original ("A primeira calculadora automática", "Evolução da memória física para memória virtual") viraram `##`. Mantidos: "válvulas à vácuo", "um um dispositivo", "chegamos ao períodos", "lançado pelo Cobra", CTAs do canal.
+
+**Skill:** cs-fundamentals (SKILL.md; ⚠️ sem arquivo de referência para história da computação — checagem com fontes externas e conhecimento base).
+
+**Criado:** [[wiki/sources/historia-do-computador-da-antikythera-ao-computador-quantico]]; conceitos historia-da-computacao, geracoes-de-computadores, computacao-quantica (stub), cartao-perfurado (stub); entidades link-nacional, charles-babbage, ada-lovelace, eniac, patinho-feio (stubs).
+
+**Tocadas (10):** transistor, sistema-binario-bit-byte, arquitetura-de-computadores, hd-disco-rigido, armazenamento-optico, mainframe, post-quantum-cryptography (concepts); ibm, harvard-university, alan-turing (entities).
+
+**Notas:** (1) **Erros factuais da fonte** (registrados na página de fonte com correção `[external]`): Z1 era mecânico, não eletromecânico; Harvard Mark I não foi "em larga escala" (só uma; *large-scale* = grande porte); ENIAC calculava tabelas de artilharia, não mísseis; programa armazenado é da 1ª geração, não da 2ª; Intel 4004 era só a CPU; Apple I vinha sem caixa nem teclado e tinha ~60 chips, não 30; Hollerith não fundou a IBM; fita magnética existe desde 1951; quântico não é mais rápido nem mais econômico em geral. (2) Brasil confirmado por Revista Pesquisa FAPESP e outras: Patinho Feio demonstrado em 24/jul/1972; Cisne Branco (Unicamp) nunca concluído; G-10 entregue em 1975, base do MC 500 da Cobra. (3) Lacuna: a fonte omite Turing e von Neumann.

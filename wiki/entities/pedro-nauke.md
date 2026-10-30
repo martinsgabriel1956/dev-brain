@@ -3,8 +3,8 @@ type: entity
 title: "Pedro Nauke"
 aliases: ["Nauke", "Nauck", "Pedro Nauke", "Pedro Nauck", "pernop"]
 date_created: 2026-06-02
-date_updated: 2026-09-22
-source_count: 10
+date_updated: 2026-10-30
+source_count: 11
 tags: [instrutor, ia-para-devs, compose, tooling, brasil, open-source, carreira]
 skill: tech-mentor-ai
 status: stable
@@ -69,3 +69,7 @@ Ferramenta de orquestração spec-driven que:
 - [[wiki/sources/verdades-duras-programador-20-anos-pedro-nauck]]
 - [[wiki/sources/loop-engineering-harness-e-a-frase-que-viralizou]]
 - [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — vídeo 2 da série (autoria inferida): loop determinístico vs. agêntico, padrão judge, padrão orquestrador, gerenciamento de estado, skills
+
+## Key sources (adição 2026-10-30)
+
+- [[wiki/sources/tendencia-vale-do-silicio-programador-generalista-vs-especialista]] — vídeo curto em Palo Alto (autoria inferida): empresas do Vale querem generalistas; código commodity; fim do squad e dos rituais ágeis; app pessoal em 6 h no voo com Opus 5.5. Tensão com sua própria fala sobre juniores se especializarem mais rápido

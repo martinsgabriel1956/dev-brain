@@ -3,8 +3,8 @@ type: concept
 title: "Blameless Post-mortem"
 aliases: ["post-mortem", "blameless postmortem", "post mortem sem blame"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 2
+date_updated: 2026-10-26
+source_count: 3
 tags: [sre, cultura, incidentes, aprendizado]
 skill: tech-mentor-infra
 status: stable
@@ -78,3 +78,7 @@ A seção "O que Funcionou Bem" é obrigatória — reforça blameless culture e
 
 - [[wiki/sources/sre-sli-slo-sla]]
 - [[wiki/sources/sre-error-budget-incidents]]
+
+## Key sources (adição 2026-10-26)
+
+- [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]] — post-mortem como fonte de evals do revisor: cada incidente confirmado por engenheiro vira caso de teste ([[wiki/concepts/eval-de-revisor-a-partir-de-incidentes]]).

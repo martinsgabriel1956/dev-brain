@@ -3,8 +3,8 @@ type: concept
 title: "Least Privilege"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-10-09
-source_count: 5
+date_updated: 2026-10-26
+source_count: 6
 tags: [least-privilege]
 skill: tech-mentor-security
 status: stub
@@ -24,6 +24,8 @@ Stub criado durante sweep de lint (links quebrados) a partir de referências em 
 
 Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a partir do texto das páginas que a citam. Precisa de fonte dedicada para virar `draft`/`stable`.
 
+**Atualização 2026-10-26:** Terraform precisa de credenciais com permissão; chaves no código são má prática ([[wiki/concepts/terraform-provider]]).
+
 ## Key sources
 
 - [[wiki/sources/cloud-security]]
@@ -31,3 +33,4 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 - [[wiki/sources/secure-design-patterns]]
 - [[wiki/sources/seguranca-rede-wifi-pequeno-comercio-mikrotik-isolamento-clientes]] — Aplicado à rede local: cliente só alcança a internet, funcionário só o necessário, nada alcança a rede da empresa ([[wiki/concepts/protecao-unidirecional-vs-bidirecional]]).
 - [[wiki/sources/dotenv-arquivo-env-boas-praticas-secret-manager]] — quanto menos gente com acesso ao `.env` de produção, melhor
+- [[wiki/sources/introducao-ao-terraform-iac-devops]] — Introdução ao Terraform: credenciais do provider
