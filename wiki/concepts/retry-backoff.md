@@ -3,8 +3,8 @@ type: concept
 title: "Retry com Backoff Exponencial e Jitter"
 aliases: ["retry backoff", "exponential backoff", "jitter retry", "retry pattern"]
 date_created: 2026-04-22
-date_updated: 2026-10-06
-source_count: 5
+date_updated: 2026-11-03
+source_count: 6
 tags: [resiliencia, retry, backoff, jitter, thundering-herd, network, idempotencia]
 skill: tech-mentor-system-design
 status: stable
@@ -122,12 +122,18 @@ Um timeout no cliente não diz *por que* a resposta não chegou — a operação
 ## Quando NÃO usar
 
 - Operação não idempotente sem idempotency key
-- Serviço downstream sabidamente em falha → usar [[wiki/concepts/circuit-breaker]] primeiro
+- Serviço downstream sabidamente em falha → usar [[wiki/concepts/circuit-breaker]] primeiro (ordem entre os dois: [[wiki/questions/ordem-retry-circuit-breaker]])
 - Erro permanente (4xx de negócio)
 
 ## Cliente que Recebe 429
 
 Rate limit altera o comportamento do cliente: ao receber [[wiki/concepts/http-429-too-many-requests]] ele precisa de backoff/retry (respeitando `Retry-After`) ou desistir.
+
+## Da versão ingênua ao jitter
+
+[[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] monta a evolução em passos: `while true` (chama sem parar) → `for attempt in range(3)` (limita, sem espera) → espera fixa de 1 s (pode agir como um DDoS contra o próprio sistema) → backoff exponencial de 1, 2 e 4 s → jitter (1,x e 2,x s, para as chamadas não coincidirem) → [[wiki/concepts/circuit-breaker]].
+
+**Lacuna perigosa:** a fonte aplica retry a provedores de pagamento sem citar o pré-requisito de idempotência desta página nem separar erro transitório de permanente. `[skill: tech-mentor-backend]` Em `references/resilience-tail-latency.md`, a skill usa *full jitter*, `rand(0, min(cap, base * 2^n))`, e acrescenta o *retry budget*.
 
 ## Key Sources
 
@@ -136,3 +142,4 @@ Rate limit altera o comportamento do cliente: ao receber [[wiki/concepts/http-42
 - [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — retry agressivo entre produtor e fila pode adicionar ainda mais pressão a um sistema já sobrecarregado, agravando [[wiki/concepts/back-pressure]] em vez de mitigá-lo
 - [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — cliente que recebe 429 precisa de backoff
 - [[wiki/sources/rate-limit-estrategias-fixed-sliding-token-leaky-bernardo-lobato]] — clientes que paralelizam sincronização e recebem 429 precisam ajustar o processo; também no [[wiki/concepts/client-rate-limit]]
+- [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] — progressão do `while true` ao backoff com jitter, aplicada a provedores de pagamento e de IA; não menciona idempotência

@@ -3,8 +3,8 @@ type: concept
 title: "Programação Funcional"
 aliases: ["functional programming", "FP", "paradigma funcional"]
 date_created: 2026-05-31
-date_updated: 2026-10-06
-source_count: 2
+date_updated: 2026-11-03
+source_count: 3
 tags: [programacao-funcional, imutabilidade, efeitos-colaterais, clojure, scala, paradigma]
 skill: tech-mentor-backend
 status: stable
@@ -74,6 +74,10 @@ Sistemas funcionais com [[ddd]] e [[wiki/concepts/event-sourcing]] têm menor ta
 
 O [[nubank]] escolheu [[clojure]] (Lisp funcional sobre JVM) como linguagem principal baseado explicitamente nos benefícios de [[imutabilidade]] e controle de [[efeitos-colaterais]] para sistemas financeiros de alta escala.
 
+## Influência sobre linguagens orientadas a objetos
+
+[[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] lembra as raízes no cálculo lambda e em Lisp, e cita lambdas e streams em Java como influência funcional sobre linguagens tradicionalmente associadas à [[wiki/concepts/programacao-orientada-a-objetos|POO]]. Segundo o autor, conhecer FP valia pouco profissionalmente nas décadas de 1990 e 2000, comparado a dominar POO.
+
 ## Key Sources
 
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
@@ -81,3 +85,4 @@ O [[nubank]] escolheu [[clojure]] (Lisp funcional sobre JVM) como linguagem prin
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — o vídeo cita a tração de FP (funções autocontidas, sem side effects) e traços de FP em Python/TypeScript; ver [[wiki/concepts/dependencia-externa-oculta]].
+- [[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] — FP como paradigma paralelo à POO e influência posterior sobre Java e TypeScript

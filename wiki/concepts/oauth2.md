@@ -3,7 +3,7 @@ type: concept
 title: "OAuth 2.0"
 aliases: ["OAuth", "OAuth 2.0", "delegação de acesso", "authorization code flow"]
 date_created: 2026-07-27
-date_updated: 2026-08-24
+date_updated: 2026-11-03
 source_count: 10
 tags: [oauth2, autorizacao, autenticacao, seguranca, delegacao-de-acesso]
 skill: tech-mentor-security
@@ -61,7 +61,7 @@ Se o Authorization Server não valida a `redirect_uri` de forma exata — aceita
 
 ## O Parâmetro `state` Contra CSRF
 
-Sem um `state` aleatório vinculado à sessão do usuário e verificado no retorno, o fluxo OAuth fica vulnerável a CSRF: o atacante inicia um login com a própria conta e induz a vítima a completar o callback — se a vítima não perceber, a conta do atacante fica vinculada ao perfil dela. `state` é o que garante que o callback recebido corresponde a um fluxo que o próprio usuário iniciou.
+Sem um `state` aleatório vinculado à sessão do usuário e verificado no retorno, o fluxo OAuth fica vulnerável a CSRF: o atacante inicia um login com a própria conta e induz a vítima a completar o callback — se a vítima não perceber, a conta do atacante fica vinculada ao perfil dela. `state` é o que garante que o callback recebido corresponde a um fluxo que o próprio usuário iniciou. Inferência da wiki: é o mesmo princípio do [[wiki/concepts/csrf-token]], um valor imprevisível que o atacante não consegue forjar.
 
 ## Device Flow
 

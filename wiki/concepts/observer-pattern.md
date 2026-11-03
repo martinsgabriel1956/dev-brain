@@ -3,8 +3,8 @@ type: concept
 title: "Observer Pattern"
 aliases: ["observer", "pub/sub pattern", "event listener pattern"]
 date_created: 2026-05-05
-date_updated: 2026-08-06
-source_count: 6
+date_updated: 2026-11-03
+source_count: 7
 tags: [design-patterns, behavioral, observer, gof, event-driven, pub-sub]
 skill: tech-mentor-backend
 status: stable
@@ -119,6 +119,10 @@ function createGame() {
 - Domain Events em DDD usam o mesmo princípio
 - Diferença de Pub/Sub: Observer tem referência direta ao Subject; Pub/Sub usa broker intermediário
 
+## Quando "Observer" na prática quer dizer pub/sub
+
+[[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] descreve um emissor que encerra o trabalho ao emitir e não sabe quem ouve: em vez de `finalizarCompra` chamar `saveAnalytics` de forma síncrona, emite um evento que o analytics pode ou não ouvir. A implementação sugerida vai de solução nativa na cloud até Redis ou BullMQ. Pela distinção desta página, isso está mais perto de Pub/Sub ou de fila do que do Observer clássico, em que o subject conhece os observers e, nos exemplos acima, os chama em sequência no mesmo processo (inferência da wiki). Em [[wiki/concepts/bullmq]], cada job vai para um único worker, então não há uma cópia por ouvinte.
+
 ## Key Sources
 
 - [[wiki/sources/sete-padroes-de-design-de-software]]
@@ -127,3 +131,4 @@ function createGame() {
 - [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]] — implementação minimalista com `Set`, usada como base de uma store estilo Zustand
 - [[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] — Observer como terceiro estágio de desacoplamento (vs. acoplamento estático via Factory); implementação `subscribe`/`notifySubscribers` sem `update()` padronizado; trade-off complexidade vs. número de observers
 - [[wiki/sources/design-pattern-observer-codigo-fonte-tv]] — implementação em TypeScript/Deno com `Subject`/`Observer` genéricos e exemplo de notificação de vídeo do YouTube com dois tipos de observer (`Subscriber` e `Feed`)
+- [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] — compra finalizada e analytics como ouvinte opcional; Observer como caso mais específico que event driven; uso amplo do termo, perto de pub/sub

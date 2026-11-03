@@ -3,8 +3,8 @@ type: concept
 title: "MVP (Minimum Viable Product)"
 aliases: ["mvp", "produto mínimo viável", "minimum viable product"]
 date_created: 2026-04-29
-date_updated: 2026-09-18
-source_count: 11
+date_updated: 2026-11-03
+source_count: 12
 tags: [projetos, produtividade, entrega, planejamento, carreira, startup]
 skill: tech-mentor-leadership
 status: stable
@@ -79,6 +79,10 @@ Em [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]], o autor argu
 - [[wiki/concepts/checklist-primeiro-dia-projeto]] — sequência tática do dia 1 a serviço do MVP
 - [[wiki/concepts/vibe-coding]] — ferramenta natural para construir MVPs rápido
 
+## MVP como defesa contra over-engineering
+
+[[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] coloca o MVP dentro da [[wiki/concepts/abordagem-evolutiva]]: o feedback do público-alvo é o dado que substitui a imaginação na escolha do próximo passo. Cita, sem caso nomeado, o produto que levou um ano para sair e não atendia o público.
+
 ## Key Sources
 
 - [[wiki/sources/por-que-devs-nao-terminam-projetos]]
@@ -92,3 +96,4 @@ Em [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]], o autor argu
 - [[wiki/sources/pare-de-ter-ideias-icp-lean-canvas-obsoleto-ia]] — gargalo do MVP mudou de "programar" para "validar" com IA; estudos GitHub (2022) e Y Combinator sobre ganho de velocidade
 - [[wiki/sources/3-fatores-nao-tecnicos-para-entregar-projetos-de-ia-em-empresas]] — MVP integrado como ferramenta de descoberta de escopo em serviços de IA para cliente externo
 - [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]] — definir custo/tempo primeiro e encaixar escopo depois; nunca comprometer-se com planejamento de longo prazo adiantado
+- [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] — feedback do MVP como dado para decidir o caminho

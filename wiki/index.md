@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-10-26
+date_updated: 2026-11-03
 ---
 
 
@@ -26,6 +26,11 @@ date_updated: 2026-10-26
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] | Vídeo, autor não identificado: [[wiki/concepts/power-wall\|power wall]] travou a frequência da CPU, e o ganho migrou para [[wiki/concepts/multicore]], [[wiki/concepts/microarquitetura]] e [[wiki/concepts/gpu\|GPUs]]. Tese confere; data, frequências e stack na GPU têm erros |
+| [[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] | [[wiki/entities/bernardo-lobato]]: história do software e tese de que a [[wiki/concepts/programacao-orientada-a-objetos]] **desceu um degrau**, de forma obrigatória de organizar o sistema a ferramenta dentro do serviço. Origem (Simula, Alan Kay) confere com fontes primárias; a perda de relevância se apoia em anedotas |
+| [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] | Vídeo, autor não identificado: Strategy, Observer, Adapter, máquina de estados e retry com circuit breaker; destaque para [[wiki/concepts/strategy-com-adapter]]. Aplica retry a pagamentos sem citar idempotência |
+| [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] | Trecho de live, autor não identificado: cinco defesas contra [[wiki/concepts/over-engineering]] — KISS, YAGNI com requisitos, razão em vez de empolgação, números de testes e PoCs, abordagem evolutiva. Começar simples não é o erro; manter mal é. Só experiência declarada, sem caso nem dado medido |
+| [[wiki/sources/utilizar-ou-nao-kubernetes-fluxo-de-decisao-cloud]] | [[wiki/entities/fabricio-veronez|Fabrício]]: [[wiki/concepts/kubernetes]] é opcional, [[wiki/concepts/conteinerizacao|contêineres]] quase não são; percorre o fluxograma de compute do Azure até o Container Apps, de-para com AWS/Google, lock-in e quatro critérios de adoção. Datado: Spring Apps em aposentadoria, App Runner fechado a novos clientes |
 | [[wiki/sources/historia-do-computador-da-antikythera-ao-computador-quantico]] | [[wiki/entities/link-nacional\|Link Nacional]]: [[wiki/concepts/historia-da-computacao\|linha do tempo]] de Antikythera a Babbage/Ada, Z1, Mark I, [[wiki/entities/eniac\|ENIAC]]; [[wiki/concepts/geracoes-de-computadores\|gerações]]; Altair e Apple I; armazenamento do [[wiki/concepts/cartao-perfurado\|cartão]] à nuvem; Brasil ([[wiki/entities/patinho-feio\|Patinho Feio]], Cobra); [[wiki/concepts/computacao-quantica\|quântico]]. Vários erros de divulgação corrigidos |
 | [[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]] | Paper [[wiki/entities/spec2cobolrot\|Spec2COBOLRot]] (AISM/ASE 2026, Munique): agente gera COBOL de especificações e outro o envelhece com 26 padrões legados até as métricas baterem com programas reais (até 25 mil linhas) — [[wiki/concepts/corpus-sintetico-de-codigo-legado\|corpus sintético]]; ainda "sintético demais". Lição: [[wiki/concepts/entropia-historica-vs-complexidade-estrutural\|complexidade estrutural ≠ entropia histórica]]; modernizar não é traduzir |
 | [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] | Reação (autoria inferida: [[wiki/entities/augusto-galego\|Galego]]) ao "No Robots in the Gym" de [[wiki/entities/daniel-miessler\|Miessler]]: [[wiki/concepts/tarefa-de-academia-vs-trabalho\|academia vs. trabalho]] no uso de IA; discorda do "IA faz + quiz depois" (= ler o resumo); [[wiki/concepts/vibe-leitura\|vibe ler]] = vibe codar; estudos Microsoft e PNAS; antídotos: livros com [[wiki/concepts/efeito-lindy\|efeito Lindy]] e escrever (Paul Graham) |
@@ -372,7 +377,7 @@ date_updated: 2026-10-26
 | [[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] | Três estágios de acoplamento via refatoração de um jogo em JS — tudo misturado → Factory com chamada estática → Observer sem conhecimento estático; heurística "de quem é essa linha?" |
 | [[wiki/sources/custo-tokens-portugues-vs-ingles]] | Português custa 62% mais tokens que inglês no Anthropic — BPE treinado em corpus inglês é a causa; impacto direto no CLAUDE.md e specs |
 | [[wiki/sources/product-engineer-vale-do-silicio-2026]] | Relato do Vale do Silício: o Product Engineer constrói a coisa que constrói a coisa — duas faces (senso de produto + harness), 40-50% dos usuários do Cursor não são devs |
-| [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]] | Progressão incremental de aprendizado em 3 estágios; over-engineering ("verde neném"); otimização prematura é a raiz de todo mal (Knuth) |
+| [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]] | Progressão incremental de aprendizado em 3 estágios; over-engineering ingênuo; otimização prematura é a raiz de todo mal (Knuth) |
 | [[wiki/sources/principio-da-inversao-programador]] | 7 conselhos do pior programador invertidos via Munger/Jacobi — revela o que um bom programador deve ser; geohot: não há substituto para construir |
 | [[wiki/sources/design-first-vs-code-first-referencias]] | Design First vs Code First, Design Engineer como cargo do meio, fake delay, Linear como referência máxima — design é interação, não só visual |
 | [[wiki/sources/como-aprender-novas-codebases]] | Método iterativo de 10 etapas para absorver qualquer codebase — leitura como primer, exploração com intenção, tarefas core, pair programming e ciclo de revisita |
@@ -876,8 +881,61 @@ date_updated: 2026-10-26
 | [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] | Galego: [[wiki/concepts/contribuidor-de-alto-impacto]] (receita, não horas) e [[wiki/concepts/high-agency-founder-mode|high agency]]; fim do [[wiki/concepts/fim-do-comedor-de-ticket|comedor de ticket]]; Paul Graham, YC, Stripe, Amazon e Greg Brockman convergem em curiosidade/ownership/autonomia; grandes empresas em modo startup por causa da IA |
 | [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] | Gago, Macris e Santana: EDA para reduzir acoplamento, evento≠comando, mensageria≠EDA, evento enxuto vs gordo, EOL de versões, EDA de fachada e primeira adoção segura |
 | [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] | [[wiki/entities/bernardo-lobato|Bernardo Lobato]]: **CQRS** como [[wiki/concepts/cqs|CQS]] (Meyer, 1988) elevado a modelos; quatro critérios de adoção, custos (sincronização, consistência eventual, debug) e quando não usar; independe de microsserviços/ES/Kafka |
+| [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### Power Wall, CPU e GPU (2026-11-03)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/power-wall]] | Potência ∝ C·V²·f; a tensão parou de cair e o calor travou o avanço rápido da frequência em meados dos anos 2000 |
+| [[wiki/concepts/lei-de-moore]] | Transistores dobram a cada dois anos (revisão de 1975); não fala de frequência nem de desempenho |
+| [[wiki/concepts/multicore]] | Mais núcleos para somar instruções por segundo; ganho depende do código ser paralelizável |
+| [[wiki/concepts/microarquitetura]] | Como a ISA é implementada: cache, pipeline, execução fora de ordem |
+| [[wiki/concepts/gpu]] | Muitos núcleos simples, foco em throughput; tolera latência em vez de reduzi-la |
+| [[wiki/concepts/simd]] | Uma instrução sobre vários dados; existe também em CPU, e a GPU usa a variante SIMT |
+
+### CSRF — Mesma Origem, Cookies e Defesas (2026-11-03)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/same-origin-policy]] | Protocolo + domínio + porta; bloqueia leitura, mas geralmente deixa passar escrita e embedding |
+| [[wiki/concepts/csrf-token]] | Valor imprevisível do backend exigido nas ações sensíveis; XSS derruba a defesa |
+| [[wiki/concepts/samesite-cookie]] | `Strict`/`Lax`/`None`; compara site, não origem, e tem bypasses documentados |
+
+### Onde Foi Parar a POO (2026-11-03)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/programacao-orientada-a-objetos]] | Dados e comportamento juntos; dominou 1990-2000 e hoje vive dentro do serviço |
+| [[wiki/concepts/programacao-procedural]] | Lista de instruções com dados separados; a estruturada é sua disciplina, sem `goto` indiscriminado |
+
+### Cinco Design Patterns — Strategy a Circuit Breaker (2026-11-03)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/strategy-com-adapter]] | A estratégia escolhe o provedor; o adaptador esconde o SDK dele |
+| [[wiki/concepts/mapa-de-transicoes]] | Máquina de estados como dado: estados válidos e transições permitidas, validadas num só lugar |
+
+### Como Evitar Overengineering (2026-11-03)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/abordagem-evolutiva]] | Começar pequeno e evoluir com dados de uso; depende de refatorar no caminho |
+| [[wiki/concepts/decisao-tecnica-embasada-em-metricas]] | Justificar adoção com números de testes e PoCs, para si e para o gestor |
+| [[wiki/concepts/empresa-como-laboratorio-de-testes]] | Anti-padrão: levar para produção o que empolgou, em vez de testar em PoC ou P&D |
+
+### Utilizar ou Não Kubernetes — Compute em Nuvem (2026-11-03)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/kubernetes]] | Orquestrador de contêineres: principal do mercado, mas não obrigatório |
+| [[wiki/concepts/conteinerizacao]] | Processos isolados em contêineres; pré-requisito de K8s, serve para monolito, dá portabilidade |
+| [[wiki/concepts/conteineres-gerenciados-sem-kubernetes]] | Container Apps, Cloud Run, Fargate: contêiner sem operar cluster, com mais lock-in |
+| [[wiki/concepts/arvore-de-decisao-de-computacao-em-nuvem]] | Fluxograma que reduz serviços a um candidato: migrar ou criar, contêiner, controle, carga |
+| [[wiki/concepts/criterios-de-adocao-de-servico-cloud]] | Requisitos, conhecimento da equipe, adoção de mercado e custo |
+| [[wiki/concepts/lift-and-shift]] | Rehost: migrar sem reestruturar, tipicamente para VM; pouco esforço, pouco benefício |
 
 ### História do Computador — Link Nacional (2026-10-30)
 
@@ -1368,7 +1426,7 @@ date_updated: 2026-10-26
 | [[wiki/concepts/http-status-code]] | Status como resultado da intenção; 401 vs 403, 429, 301 (stub) |
 | [[wiki/concepts/middleware]] | Pedágio entre rota e controller: auth, permissão, validação (stub) |
 | [[wiki/concepts/recurso-rest]] | Pensar em recursos, não funções (stub) |
-| [[wiki/concepts/cors]] | Política do navegador sobre origens; correção no servidor (stub) |
+| [[wiki/concepts/cors]] | Relaxa a same-origin policy a partir do servidor; não defende contra CSRF (stub) |
 | [[wiki/concepts/debug-de-requisicao-http]] | Checklist de peças no DevTools Network (stub) |
 | [[wiki/entities/eduni]] | Plataforma de planejamento de carreira divulgada na fonte (stub) |
 
@@ -1441,7 +1499,7 @@ date_updated: 2026-10-26
 | [[wiki/concepts/terminal-web-broker-websocket-ssh]] | Navegador → WebSocket → broker → SSH; auth em duas fases |
 | [[wiki/concepts/ticket-de-uso-unico-websocket]] | Ticket de 60 s apagado ao usar; WebSocket sem cookies |
 | [[wiki/concepts/cross-site-websocket-hijacking]] | CSRF aplicado a WebSocket; evitado com ticket (stub) |
-| [[wiki/concepts/csrf]] | Site malicioso usando cookies do usuário logado; SameSite (stub) |
+| [[wiki/concepts/csrf]] | Site malicioso dispara ação autenticada com os cookies da vítima; mecanismo, exemplos e defesas |
 | [[wiki/concepts/dns-rebinding]] | Resolver uma vez e usar só o IP (stub) |
 | [[wiki/concepts/allowlist-de-destino-ssh]] | Egress por IP, replicada no app e no UFW |
 | [[wiki/concepts/design-efemero-zero-persistencia]] | Não salvar nada; só hashes de tokens (stub) |
@@ -2792,7 +2850,7 @@ date_updated: 2026-10-26
 | [[wiki/concepts/big-ball-of-mud]] | Sistema sem arquitetura perceptível — escala macro do código espaguete; estado *default* sob pressão de negócio, turnover e entropia (Foote & Yoder, 1997) |
 | [[wiki/concepts/lasagna-code]] | Camadas tão entrelaçadas que mudar uma obriga a mudar as outras — estratificação aparente, acoplamento real |
 | [[wiki/concepts/ravioli-code]] | Classes boas isoladamente, design ruim no todo — o excesso de fragmentação, oposto do espaguete; termo ambivalente (elogioso vs. pejorativo) |
-| [[wiki/concepts/over-engineering]] | "Verde neném" — aplicar patterns sem base; pular etapas da progressão produz complexidade sem valor; under-engineering é o problema mais comum |
+| [[wiki/concepts/over-engineering]] | Aplicar patterns sem base; pular etapas da progressão produz complexidade sem valor; under-engineering é o problema mais comum |
 | [[wiki/concepts/under-engineering]] | Fazer menos do que o projeto exige — acoplamento, hardcode, sem CI, copy-paste sem estrutura; mais comum que over-engineering, e o antídoto não exige nenhuma técnica sofisticada |
 | [[wiki/concepts/otimizacao-prematura]] | Raiz de todo mal (Knuth) — otimizar antes de ter projeto bom torna o código rígido e difícil |
 | [[wiki/concepts/modelagem-orientada-a-objetos]] | Pré-requisito obrigatório para design patterns — classes, atributos, relacionamentos antes de GoF |
@@ -3200,6 +3258,9 @@ date_updated: 2026-10-26
 
 ## Entities
 
+- [[wiki/entities/portswigger]] — plataforma do laboratório de CSRF e referência sobre bypasses de `SameSite`
+- [[wiki/entities/alan-kay]] — cunhou o termo *object-oriented programming*; define POO por mensagens, não por herança
+- [[wiki/entities/fabricio-veronez]] — criador de conteúdo de cloud e DevOps, dono da Formação DevOps Pro; identificação inferida
 - [[wiki/entities/link-nacional]] — empresa/canal brasileiro; roteiro de história do computador
 - [[wiki/entities/charles-babbage]] — Máquina Analítica (1837), programável, nunca construída
 - [[wiki/entities/ada-lovelace]] — primeiro algoritmo para a Máquina Analítica
@@ -3655,6 +3716,7 @@ date_updated: 2026-10-26
 
 | Página | Hook |
 |---|---|
+| [[wiki/questions/ordem-retry-circuit-breaker]] | Resolvida: não há ordem universal. O retry por fora não é erro (é o padrão do Resilience4j), e a escolha muda o que o breaker mede |
 | [[wiki/questions/generalista-ou-especialista-na-era-da-ia]] | Generalista vence (Vale) × especialista vence (Balta) × júnior especializa mais rápido — provável conciliação via T-shaped |
 | [[wiki/questions/forward-deployed-engineer-demanda-crescendo-vs-pequena]] | FDE: "cargo que mais cresceu" vs. <1.000 vagas nos EUA — crescimento sobre base pequena? |
 | [[wiki/questions/disponibilidade-cap-resposta-de-erro-vs-resposta-sem-erro]] | Vídeo diz que erro 404 conta como resposta disponível; definição formal exige resposta sem erro — pendente verificar Gilbert & Lynch |

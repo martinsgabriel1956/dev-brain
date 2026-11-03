@@ -3,8 +3,8 @@ type: concept
 title: "Finite State Machine (FSM)"
 aliases: ["FSM", "máquina de estado finita", "máquina de estados finitos", "autômato finito"]
 date_created: 2026-09-21
-date_updated: 2026-09-21
-source_count: 1
+date_updated: 2026-11-03
+source_count: 2
 tags: [cs-fundamentals, teoria-da-computacao, fsm, automatos, game-design, game-ai]
 skill: cs-fundamentals
 status: draft
@@ -46,6 +46,11 @@ FSM foi uma das primeiras técnicas usadas para modelar IA de inimigos/NPCs, e a
 - [[wiki/concepts/maquina-de-estados-ui]] — aplicação de FSM a componentes de interface (loading/erro/sucesso), com a mesma regra de exclusividade mútua de estados.
 - [[wiki/concepts/hierarchical-finite-state-machine]] — extensão hierárquica da FSM: cada estado pode conter subestados com seu próprio conjunto de transições, evitando que a FSM plana cresça descontroladamente.
 
+## Aplicação em backend: pedido e agentes
+
+[[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] traz o conceito para o dia a dia: um pedido vai de pending para paid ou erro, depois para shipped, entregue e talvez refund. Em vez de `if`s espalhados, define os estados válidos e um [[wiki/concepts/mapa-de-transicoes]], o mesmo desenho do exemplo em TypeScript acima. A fonte recomenda o modelo também para orquestrar agentes de IA, com requisitos, validação e gatilhos por transição (ver [[wiki/concepts/grafo-como-abstracao-de-agentes]]). O próprio [[wiki/concepts/circuit-breaker]] é uma máquina de três estados (conexão da wiki, não da fonte).
+
 ## Key sources
 
 - [[wiki/sources/o-que-e-uma-finite-state-machine]] — definição via exemplos de Game Design (Pac-Man, turret), incluindo transições disparadas por regras definidas pelo Game Designer e o papel histórico da FSM como IA de jogos
+- [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] — ciclo de vida de pedido implementado com mapa de transições, no lugar de `if`s; uso na orquestração de agentes de IA

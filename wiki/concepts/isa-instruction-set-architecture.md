@@ -3,8 +3,8 @@ type: concept
 title: "ISA — Instruction Set Architecture"
 aliases: ["ISA", "conjunto de instruções", "arquitetura de conjunto de instruções"]
 date_created: 2026-10-14
-date_updated: 2026-10-14
-source_count: 1
+date_updated: 2026-11-03
+source_count: 2
 tags: [lang-systems, cs-fundamentals, hardware, assembly, cpu]
 skill: lang-systems
 status: draft
@@ -16,6 +16,11 @@ Especificação do que a CPU faz e como: **conjunto de instruções, modelo de e
 
 Variar de ISA (x86, ARM, RISC, RISC-V) é o que torna necessária a [[wiki/concepts/portabilidade-de-codigo-entre-arquiteturas]] por meio de linguagens de [[wiki/concepts/alto-nivel-vs-baixo-nivel|alto nível]]; a compatibilidade entre gerações é tema de [[wiki/concepts/retrocompatibilidade-x86]]. Contexto: [[wiki/concepts/arquitetura-de-computadores]]. [skill: lang-systems] `systems-emerging-topics-2026.md` cobre RISC-V.
 
+## ISA não é implementação
+
+Para [[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]], a ISA muda pouco (é "Arm ou x86"), e a diferença de desempenho vem da [[wiki/concepts/microarquitetura]], a forma de implementá-la.
+
 ## Key sources
 
 - [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]]
+- [[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] — ISA estável, diferença de desempenho na microarquitetura

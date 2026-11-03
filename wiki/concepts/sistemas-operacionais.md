@@ -3,8 +3,8 @@ type: concept
 title: "Sistemas Operacionais (Conceito Central)"
 aliases: ["SO", "operating system", "OS"]
 date_created: 2026-08-27
-date_updated: 2026-10-14
-source_count: 2
+date_updated: 2026-11-03
+source_count: 3
 tags: [cs-fundamentals, sistemas-operacionais, baixo-nivel, aprendizado]
 skill: cs-fundamentals
 status: stub
@@ -24,6 +24,10 @@ Diferença apontada frente a [[wiki/concepts/sistemas-embarcados]]: ao estudar S
 
 [[wiki/entities/carlos-maziero]] (UFPR) — livro de sistemas operacionais com projeto acompanhante de construção de SO do zero (citado como "PingOS", baseado em POSIX/Unix), citado como usado pelo autor de [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] durante a graduação.
 
+## Por que não rodar em GPU
+
+[[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] usa o SO como exemplo de programa inadequado para [[wiki/concepts/gpu]]: há controle variado e [[wiki/concepts/context-switch|troca de contexto]] rápida, e não a mesma operação sobre muitos dados. A fonte fala em "throughput alto", mas o raciocínio pede baixa latência (inferência da wiki).
+
 ## Key sources
 
 - [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]]
@@ -31,3 +35,4 @@ Diferença apontada frente a [[wiki/concepts/sistemas-embarcados]]: ao estudar S
 ## Key sources (adição 2026-10-14)
 
 - [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]] — troca de contexto exige assembly (salvar/restaurar registradores); C não alcança isso
+- [[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] — SO como exemplo de carga inadequada para GPU

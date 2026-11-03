@@ -3,8 +3,8 @@ type: concept
 title: "Transistor"
 aliases: ["FinFET", "transistor tipo N", "transistor tipo P", "gate/canal/dielétrico"]
 date_created: 2026-08-25
-date_updated: 2026-10-30
-source_count: 3
+date_updated: 2026-11-03
+source_count: 4
 tags: [cs-fundamentals, hardware, transistor, finfet, cmos]
 skill: cs-fundamentals
 status: stub
@@ -53,6 +53,10 @@ A transição de estado de um transistor individual — e a lógica completa de 
 
 [[wiki/sources/historia-do-computador-da-antikythera-ao-computador-quantico]]: a troca de válvulas por transistores define a 2ª das [[wiki/concepts/geracoes-de-computadores]] (1956–1963), com máquinas menores e mais rápidas; a miniaturização em chips de silício (Kilby, Noyce) define a 3ª; o microprocessador (Intel 4004, 1971), a 4ª.
 
+## Limite de escala
+
+[[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] conta que, até o início dos anos 2000, somar transistores e frequência bastava para ganhar desempenho, e que hoje adicionar transistores também ficou difícil. A contagem é o tema da [[wiki/concepts/lei-de-moore]]; a frequência esbarrou no [[wiki/concepts/power-wall]].
+
 ## Key sources
 
 - [[wiki/sources/como-transistores-formam-portas-logicas-celulas-padrao-cmos]] — anatomia do FinFET, comportamento tipo N vs. tipo P, e a analogia "transistor = pino de Lego"
@@ -61,3 +65,4 @@ A transição de estado de um transistor individual — e a lógica completa de 
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/historia-do-computador-da-antikythera-ao-computador-quantico]] — transistor como marco da 2ª geração; CI e microprocessador como 3ª e 4ª
+- [[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] — mais transistor e frequência como receita antiga de desempenho; dificuldade atual

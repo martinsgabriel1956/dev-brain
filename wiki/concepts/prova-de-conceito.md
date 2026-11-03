@@ -3,8 +3,8 @@ type: concept
 title: "Prova de Conceito (PoC)"
 aliases: ["proof of concept", "PoC", "protótipo técnico", "spike"]
 date_created: 2026-04-22
-date_updated: 2026-08-18
-source_count: 3
+date_updated: 2026-11-03
+source_count: 4
 tags: [processo, tecnologia, inovação, risco, protótipo]
 skill: tech-mentor-leadership
 status: stable
@@ -53,8 +53,13 @@ Fazer PoCs regularmente evita virar o dev que "sempre usa X" porque nunca experi
 
 [[wiki/sources/por-que-estimativas-de-software-falham-como-melhorar]] usa a PoC num contexto ligeiramente diferente das seções acima: não para decidir se adotar uma tecnologia nova, mas para **tornar uma estimativa possível** quando parte do sistema envolve algo desconhecido. Antes de estimar uma feature com incerteza real (ex.: gerar PDFs em escala para 1 milhão de clientes), a fonte recomenda uma PoC isolada em cada presunção desconhecida (a lib de PDF resolve o formato desejado? o banco de dados aguenta a carga de leitura?) — sem isso, qualquer número dado é um chute disfarçado de estimativa. A fonte também nota que uma PoC nem sempre precisa ser código executado: ler relatos de terceiros que já resolveram um problema semelhante pode dar ~95% de confiança de viabilidade, funcionando como um substituto mais barato da PoC quando o objetivo é só reduzir incerteza, não validar uma decisão de adoção de longo prazo. Ver [[wiki/concepts/reducao-de-incerteza-antes-de-estimar]] para o método completo.
 
+## PoC como base numérica e caminho até homologação
+
+[[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] usa a PoC para gerar os números de uma decisão técnica ([[wiki/concepts/decisao-tecnica-embasada-em-metricas]]) e como forma legítima de testar na empresa, ao lado de P&D, antes de escalar para homologação. O oposto é [[wiki/concepts/empresa-como-laboratorio-de-testes]].
+
 ## Key Sources
 
 - [[wiki/sources/desenvolvedor-acima-da-media-10-itens]]
 - [[wiki/sources/ciclo-de-mudanca-de-arquitetura]] — PoC de migração de arquitetura precisa ser testada na escala real esperada, não numa fração dela
 - [[wiki/sources/por-que-estimativas-de-software-falham-como-melhorar]] — PoC como redução de incerteza pré-estimativa, não só validação de tecnologia nova
+- [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] — PoC e P&D como forma legítima de testar; base para justificar adoção

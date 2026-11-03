@@ -3,8 +3,8 @@ type: concept
 title: "CQRS — Command Query Responsibility Segregation"
 aliases: ["command query responsibility segregation", "cqrs pattern"]
 date_created: 2026-05-31
-date_updated: 2026-10-09
-source_count: 15
+date_updated: 2026-11-03
+source_count: 16
 tags: [cqrs, arquitetura, event-sourcing, ddd, sistemas-distribuidos]
 skill: tech-mentor-backend
 status: draft
@@ -159,6 +159,10 @@ No vídeo [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernar
 
 Ganhos apontados: a escrita não é onerada pela atualização da leitura; o consumer escala de forma independente; cada banco é escolhido para sua carga. Custo: pequeno delay — [[wiki/concepts/eventual-consistency]]. A fonte admite também atualização imediata como alternativa. Lacunas frente às outras fontes: não trata [[wiki/concepts/dual-write-problem]] nem idempotência do consumer; e, conforme [[wiki/sources/cqrs-martin-fowler]], convém avaliar antes opções mais baratas (snapshot isolation, [[wiki/concepts/read-replicas]], reporting database).
 
+## Perguntas de custo antes de adotar
+
+[[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] cita CQRS, com Mediator, Command pattern e handlers, como exemplo do que analisar antes de adotar: vantagens e desvantagens, se faz sentido no negócio, impacto de memória e processamento, e complexidade de código adicional. Não define critérios próprios; os critérios desta página continuam sendo a referência.
+
 ## Key Sources
 
 - [[wiki/sources/ddd-cqrs]] — CQRS separa o modelo de escrita (Command Side — Aggregate normalizado, regras de negócio) do modelo de leitura (Query Side — Read Model desnormalizado, otimizado para queries). Projeções sincronizam...
@@ -175,6 +179,7 @@ Ganhos apontados: a escrita não é onerada pela atualização da leitura; o con
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — CQRS listado como estilo que depende da comunicação assíncrona
 - [[wiki/sources/cqrs-desbalanco-leitura-escrita-banco-de-leitura-eventos]] — problema motivador (consultas presas por locks) e CQRS com separação física: comandos → command handler → banco relacional; evento → fila (RabbitMQ) → consumer → banco de leitura NoSQL desnormalizado
 - [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] — citado como um dos quatro padrões distintos sob 'eventos' ([[wiki/concepts/mensageria-vs-eda]])
+- [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] — CQRS como exemplo de adoção a justificar
 
 ## Key sources (adição 2026-10-09)
 

@@ -3,8 +3,8 @@ type: concept
 title: "State Pattern"
 aliases: ["state", "padrão estado"]
 date_created: 2026-05-05
-date_updated: 2026-09-21
-source_count: 2
+date_updated: 2026-11-03
+source_count: 3
 tags: [design-patterns, behavioral, state, gof]
 skill: tech-mentor-backend
 status: stub
@@ -38,7 +38,12 @@ Estruturalmente muito similar ao [[strategy-pattern]], mas com intenção difere
 
 O caso mais citado de State Pattern na prática é justamente a implementação de uma [[wiki/concepts/finite-state-machine|Finite State Machine (FSM)]] de comportamento de inimigo/NPC: cada estado (`patrulhar`, `perseguir`, `atacar`, `fugir`) vira uma classe própria, e o objeto de contexto (o inimigo) delega para o estado atual, que pode iniciar sua própria transição quando uma regra de design é satisfeita (distância do jogador, HP, evento de som). Ver [[wiki/sources/o-que-e-uma-finite-state-machine]].
 
+## State Pattern não é a única forma de fazer FSM
+
+[[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] implementa a máquina de estados com um [[wiki/concepts/mapa-de-transicoes]], sem uma classe por estado. O State Pattern compensa quando o comportamento muda conforme o estado; o mapa basta quando só é preciso validar as transições (inferência da wiki).
+
 ## Key Sources
 
 - [[wiki/sources/design-pattern-strategy]] — mencionado nas relações como padrão estruturalmente similar
 - [[wiki/sources/o-que-e-uma-finite-state-machine]] — exemplo de FSM de Game Design (Pac-Man, turret) implementável via State Pattern
+- [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] — contraste: a fonte chama de máquina de estados um mapa de transições, sem classes por estado

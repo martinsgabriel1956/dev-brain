@@ -3,8 +3,8 @@ type: concept
 title: "AWS Elastic Beanstalk"
 aliases: ["Elastic Beanstalk", "Beanstalk"]
 date_created: 2026-08-04
-date_updated: 2026-08-04
-source_count: 1
+date_updated: 2026-11-03
+source_count: 2
 tags: ["aws", "elastic-beanstalk", "paas", "infra", "cloud", "deploy"]
 skill: tech-mentor-infra
 status: stub
@@ -32,3 +32,4 @@ Para aplicações web relativamente simples (front-end + back-end, sem grande co
 ## Key Sources
 
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]
+- [[wiki/sources/utilizar-ou-nao-kubernetes-fluxo-de-decisao-cloud]] — equivalente na AWS do Azure App Service no de-para

@@ -3,8 +3,8 @@ type: concept
 title: "Microsserviços"
 aliases: ["microsservicos", "microservices", "arquitetura de microsserviços", "decomposição por domínio"]
 date_created: 2026-07-24
-date_updated: 2026-10-08
-source_count: 36
+date_updated: 2026-11-03
+source_count: 37
 tags: [microsservicos, arquitetura, bounded-context, distributed-monolith, circuit-breaker, resiliencia]
 skill: tech-mentor-backend
 status: draft
@@ -130,6 +130,10 @@ Microsserviço com dependência síncrona externa é [[wiki/concepts/monolito-di
 
 [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]]: custos e critérios de adoção da camada anticorrupção na migração; ver [[wiki/concepts/acl-requisitos-arquiteturais]]. Referência: [[wiki/entities/chris-richardson]].
 
+## Onde a POO fica nessa arquitetura
+
+Para [[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]], microsserviços levaram a [[wiki/concepts/programacao-orientada-a-objetos|POO]] um degrau abaixo: ela pode ser útil dentro de cada serviço, mas não precisa organizar o sistema distribuído. É uma tese sem dados.
+
 ## Key Sources
 
 - [[wiki/sources/microsservicos-historia-soa-esb-bernardo-lobato]] — origem histórica (Peter Rogers 2005, SOA/ESB como contraponto, "Microservices — Java, the Unix Way" 2012), três requisitos práticos (standalone, deploy independente, funcionalidade útil), e o desafio de capacitação de time como diferença entre projetos que dão certo e os que fracassam
@@ -172,3 +176,4 @@ Microsserviço com dependência síncrona externa é [[wiki/concepts/monolito-di
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — exemplo de entrevista: migração de monólito para microsserviços exige explicar por que (e não só escalar o servidor) e como a decisão foi tomada ([[wiki/concepts/explicar-o-porque-das-decisoes]])
 - [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] — EDA preserva a independência de roadmap dos microsserviços; banco compartilhado a destrói ([[wiki/concepts/eda-de-fachada]])
 - [[wiki/sources/load-balancer-como-funciona-algoritmos-health-check-nginx-haproxy]] — exemplo de serviço de pedidos (orders) com 3–50 instâncias atrás de um LB, invisíveis ao cliente
+- [[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] — microsserviços como ponto em que a POO ficou dentro do serviço

@@ -3,7 +3,7 @@ type: source
 title: "Circuit Breaker"
 aliases: ["circuit breaker pattern", "opossum", "falha em cascata"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
+date_updated: 2026-11-03
 source_count: 0
 tags: [resiliencia, circuit-breaker, system-design, node]
 skill: tech-mentor-system-design
@@ -63,6 +63,8 @@ breaker.fallback(order => ({
    → cada retry conta como nova falha — abre o circuito prematuramente
 ```
 
+> **Correção (2026-11-03):** esta é a posição do artigo, mantida aqui por fidelidade. Como regra geral, a documentação oficial não a confirma: retry por fora é o padrão do Resilience4j. Ver [[wiki/questions/ordem-retry-circuit-breaker]].
+
 **Métricas essenciais**
 ```
 circuit_breaker_state{service}          # 0=closed, 1=open, 2=half-open
@@ -88,7 +90,7 @@ API não-crítica (analytics): threshold 30%, resetTimeout 10s
 
 - [[wiki/concepts/circuit-breaker]] — o padrão em si
 - [[wiki/concepts/falha-em-cascata]] — problema que o circuit breaker resolve
-- [[wiki/concepts/retry-backoff]] — deve ficar dentro do circuit breaker, não fora
+- [[wiki/concepts/retry-backoff]] — segundo o artigo, deve ficar dentro do circuit breaker, não fora (contestado: [[wiki/questions/ordem-retry-circuit-breaker]])
 - [[wiki/concepts/bulkhead]] — decide QUANTOS tentam; circuit breaker decide SE tenta
 - [[wiki/concepts/graceful-degradation]] — fallback é a expressão prática de graceful degradation
 - [[wiki/concepts/observabilidade]] — métricas de state e calls_total

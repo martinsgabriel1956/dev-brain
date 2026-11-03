@@ -3,8 +3,8 @@ type: concept
 title: "Context Switch"
 aliases: ["context switch", "troca de contexto", "context switching"]
 date_created: 2026-04-22
-date_updated: 2026-10-14
-source_count: 3
+date_updated: 2026-11-03
+source_count: 4
 tags: [sistema-operacional, scheduling, performance, cs-fundamentals]
 skill: cs-fundamentals
 status: stable
@@ -51,6 +51,10 @@ Coroutines (async/await, goroutines) fazem troca cooperativa **no espaço do usu
 - [[wiki/concepts/processo]] — entidade cujo estado é salvo/restaurado
 - [[wiki/concepts/memoria-virtual]] — TLB flush é o custo extra na troca entre processos
 
+## Por que pesa contra a GPU
+
+[[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] usa a necessidade de troca de contexto rápida como argumento para um sistema operacional não aproveitar uma [[wiki/concepts/gpu]], feita para repetir a mesma operação sobre muitos dados.
+
 ## Key Sources
 
 - [[wiki/sources/sistema-operacional-por-baixo-dos-panos]]
@@ -59,3 +63,4 @@ Coroutines (async/await, goroutines) fazem troca cooperativa **no espaço do usu
 ## Key sources (adição 2026-10-14)
 
 - [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]] — exemplo de tarefa que só assembly resolve: salvar/restaurar todo o estado do processador, incl. registradores
+- [[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] — troca de contexto rápida como requisito que a GPU não atende

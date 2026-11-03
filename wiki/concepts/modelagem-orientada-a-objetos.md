@@ -3,8 +3,8 @@ type: concept
 title: "Modelagem Orientada a Objetos"
 aliases: ["OOP modeling", "modelagem OO", "object-oriented modeling", "modelagem de domínio"]
 date_created: 2026-06-09
-date_updated: 2026-08-13
-source_count: 2
+date_updated: 2026-11-03
+source_count: 3
 tags: [oo, modelagem, fundamentos, design-patterns, arquitetura, encapsulamento, modelo-de-dominio-anemico]
 skill: tech-mentor-leadership
 status: stable
@@ -37,7 +37,7 @@ Para qualquer domínio, o modelador precisa responder:
 - Saber quando um pattern é adequado
 - Evitar o [[over-engineering]] de aplicar patterns onde não há problema correspondente
 
-O resultado de pular esse pré-requisito é o "verde neném": patterns aplicados em todo lugar sem critério, tornando o código mais complexo sem melhorá-lo.
+O resultado de pular esse pré-requisito é [[wiki/concepts/over-engineering|over-engineering]]: patterns aplicados em todo lugar sem critério, tornando o código mais complexo sem melhorá-lo.
 
 ---
 
@@ -67,7 +67,12 @@ Tentar ir direto do estágio 1 para o 3 é a causa mais comum de [[over-engineer
 
 ---
 
+## Escopo do "pré-requisito"
+
+[[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] diz que a [[wiki/concepts/programacao-orientada-a-objetos|POO]] deixou de ser a forma obrigatória de organizar todo o software, mas segue forte para representar estado, invariantes e responsabilidades dentro de um domínio. Isso limita o escopo desta página: a modelagem OO é pré-requisito para design patterns e arquitetura OO, não para todo tipo de sistema.
+
 ## Key Sources
 
 - [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]]
 - [[wiki/sources/encapsulamento-proteger-estado-invalido]] — exemplo prático de modelagem de domínio: regras de negócio (preço > 0, estoque não negativo) viram invariantes da classe `Product`
+- [[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] — modelagem por objetos como ferramenta de domínio, sem resolver sozinha problemas distribuídos

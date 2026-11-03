@@ -3,8 +3,8 @@ type: concept
 title: "Refatoração"
 aliases: ["refactoring", "refatorar"]
 date_created: 2026-07-15
-date_updated: 2026-10-07
-source_count: 11
+date_updated: 2026-11-03
+source_count: 12
 tags: [refactoring, clean-code, craftsmanship, design-de-software, tech-debt]
 skill: tech-mentor-backend
 status: draft
@@ -105,6 +105,10 @@ Refatoração idealmente não é um "projeto" à parte que precisa de aprovaçã
 
 [[wiki/concepts/dois-chapeus-kent-beck]] · [[wiki/concepts/tech-debt-como-ferramenta]] · [[wiki/concepts/boy-scout-rule]] · [[wiki/concepts/piramide-de-testes]] · [[wiki/concepts/god-object]] · [[wiki/concepts/entropia-de-software]] · [[wiki/concepts/essential-complexity]] · [[wiki/concepts/accidental-complexity]] · [[wiki/entities/martin-fowler]] · [[wiki/entities/kent-beck]] · [[wiki/concepts/comentarios-como-ferramenta-de-design]] · [[wiki/concepts/extract-interface]] · [[wiki/concepts/extract-method]]
 
+## Refatorar é o que torna seguro começar simples
+
+[[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] afirma que alterar e refatorar código simples para algo maior é muito mais fácil do que cortar partes de algo inflado. Não apresenta dados. Ver [[wiki/concepts/abordagem-evolutiva]].
+
 ## Key Sources
 
 - [[wiki/sources/arquitetura-de-sacrificio]] — substituir *módulos individuais* (com boas fronteiras) é a alternativa incremental ao descarte total do sistema
@@ -117,6 +121,7 @@ Refatoração idealmente não é um "projeto" à parte que precisa de aprovaçã
 - [[wiki/sources/extract-interface-xunitpatterns]] — verbete de "Code Refactorings" (xUnitPatterns.com/Meszaros, conteúdo atribuído a Fowler): Extract Interface como refatoração estrutural de tipos, pré-requisito técnico para Test Doubles em linguagens estaticamente tipadas
 - [[wiki/sources/extract-method-xunitpatterns]] — verbete-irmão de "Code Refactorings" (mesma proveniência host≠autor): Extract Method como refatoração de comportamento, técnica recomendada para eliminar Test Code Duplication
 - [[wiki/sources/como-ser-dev-essencial-e-ganhar-mais-andre-casciotti]] — melhoria contínua: melhorar código próprio e alheio quando houver janela; refatoração como uma das bases de resolver problemas ([[wiki/concepts/resolver-problemas-como-habilidade-central]])
+- [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] — evoluir o simples seria mais fácil do que cortar o inflado (sem dados)
 
 ## Key sources (adição 2026-10-07)
 

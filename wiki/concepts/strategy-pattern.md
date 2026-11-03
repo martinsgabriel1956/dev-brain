@@ -3,8 +3,8 @@ type: concept
 title: "Strategy Pattern"
 aliases: ["strategy", "padrão estratégia"]
 date_created: 2026-05-05
-date_updated: 2026-09-30
-source_count: 7
+date_updated: 2026-11-03
+source_count: 8
 tags: [design-patterns, behavioral, strategy, gof, open-closed, polimorfismo]
 skill: tech-mentor-backend
 status: stable
@@ -84,6 +84,10 @@ Implementação direta do [[open-closed-principle]]: a classe `Commuter` está f
 - Estratégias de notificação (push, email, SMS)
 - Validação de formulário por campo — cada regra (CPF, telefone, senha) vira uma strategy que o validador usa, em vez de um `if/else` gigante — [[wiki/sources/seis-design-patterns-mais-usados-na-pratica]]
 
+## Testar sem efeito colateral e combinar com Adapter
+
+[[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] destaca um ganho além de trocar de algoritmo: cada estratégia pode ser instanciada com a dependência injetada e testada sozinha, sem mandar e-mail de verdade a um cliente (ver [[wiki/concepts/efeito-colateral]] e [[wiki/concepts/dependency-injection]]). A fonte também admite que `if/elif` funciona no início; o problema aparece quando as variações crescem. Para pagamentos, a estratégia escolhe o provedor e um Adapter esconde o SDK: [[wiki/concepts/strategy-com-adapter]].
+
 ## Key Sources
 
 - [[wiki/sources/sete-padroes-de-design-de-software]]
@@ -93,3 +97,4 @@ Implementação direta do [[open-closed-principle]]: a classe `Commuter` está f
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — Strategy aplicado a múltiplos gateways de pagamento (Stripe, Abacate Pay) por uma IA em modo plan: interface `PaymentStrategy` com tipos agnósticos (sem importar SDK direto), payment context que carrega a strategy correspondente por rota — inclui a motivação de tolerância a falhas (trocar de provedor se um cair)
 - [[wiki/sources/pluggable-behavior-xunitpatterns]] — Pluggable (Method) Selector (Kent Beck, SBPP), variação mais leve com a mesma motivação: nome de método + reflection em vez de objeto Strategy completo
 - [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — regra de desconto por tipo de cliente como candidata a variação (modelagem não mostrada no vídeo)
+- [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] — notificação por e-mail, SMS e push com método `send`; testabilidade sem efeito colateral; combinação com Adapter

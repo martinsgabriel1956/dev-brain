@@ -3,7 +3,7 @@ type: concept
 title: "CORS Mal Configurado"
 aliases: ["cors misconfiguration", "cors permissivo demais", "access-control-allow-origin wildcard"]
 date_created: 2026-08-03
-date_updated: 2026-09-30
+date_updated: 2026-11-03
 source_count: 2
 tags: [cors, seguranca, api-security, csrf]
 skill: tech-mentor-security
@@ -31,7 +31,7 @@ Definir explicitamente uma **allowlist** de origens permitidas, validada no serv
 
 ## Relação com outros conceitos
 
-- [[wiki/concepts/sessoes-http-cookies]] — CORS mal configurado neutraliza parte da proteção que `SameSite` oferece contra requisições cross-origin com credenciais
+- [[wiki/concepts/sessoes-http-cookies]] — CORS mal configurado neutraliza parte da proteção que `SameSite` oferece contra requisições cross-origin com credenciais. **Aviso (2026-11-03):** afirmação a revisar. [external] Segundo a [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie), `Lax` já não envia cookie em `fetch()` entre sites. Inferência da wiki: quem decide o envio é o atributo do cookie, não o CORS; o risco afeta cookies `None` e pedidos same-site entre origens. Ver [[wiki/concepts/samesite-cookie]].
 - [[wiki/concepts/sql-injection]] / [[wiki/concepts/xss]] — mesma família de falha: confiar em input/origem externa sem validação explícita na fronteira do sistema
 
 ## Key Sources

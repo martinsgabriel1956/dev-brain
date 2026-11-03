@@ -3,8 +3,8 @@ type: concept
 title: "Monolito"
 aliases: ["monolito", "monolith", "monolito tradicional"]
 date_created: 2026-08-10
-date_updated: 2026-10-07
-source_count: 9
+date_updated: 2026-11-03
+source_count: 10
 tags: [monolito, arquitetura, deploy, mvp, backend]
 skill: tech-mentor-backend
 status: stub
@@ -62,3 +62,4 @@ Quebrar em serviços sem remover dependências síncronas gera [[wiki/concepts/m
 - [[wiki/sources/rabbitmq-como-funciona-producer-exchange-fila-consumer-simulador]] — monolito distribuído como risco de quebrar mal
 
 - [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — monolito com ~20.000 acessos/dia e lentidão: antes de migrar, achar o gargalo ([[wiki/concepts/diagnostico-antes-de-reestruturar]]); monolito não é o problema por padrão.
+- [[wiki/sources/utilizar-ou-nao-kubernetes-fluxo-de-decisao-cloud]] — monolito roda em Docker; dizer o contrário é "balela" ([[wiki/concepts/conteinerizacao]])

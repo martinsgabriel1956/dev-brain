@@ -3,8 +3,8 @@ type: concept
 title: "Grafo Como Abstração de Agentes"
 aliases: ["grafo de agentes", "G = (V, E) agentes", "nós e arestas de harness"]
 date_created: 2026-07-10
-date_updated: 2026-08-19
-source_count: 4
+date_updated: 2026-11-03
+source_count: 5
 tags: [grafo, abstracao, agentes, langgraph, controle-de-fluxo, determinismo, graph-engineering, ltv-cac, langchain, boris, erro-composto, graphrag]
 skill: tech-mentor-ai
 status: draft
@@ -71,3 +71,4 @@ Gestão de projeto (épico → história → tarefa → subtarefa) é citada em 
 - [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — mesma tese (grafo como abstração correta para agentes) aplicada a métricas de negócio interdependentes em vez de subtarefas de código
 - [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — atribuição explícita da cunhagem do termo à LangChain (2026); Boris (Claude Code) citado como voz pública sobre o tema
 - [[wiki/sources/graph-engineering-matematica-do-erro-composto]] — formalização com estado e verificação como componentes nomeados; exigência de ciclicidade; verificador por nó (não um único gargalo); erro composto também nos handoffs entre agentes (85%→44% em 5 saltos); contraponto do paper de GraphRAG; data do tweet-origem (18 de julho)
+- [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] — máquina de estados para fluxos complexos de agentes; n8n citado como exemplo (analogia, sem justificativa na fonte)

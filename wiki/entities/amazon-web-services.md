@@ -3,8 +3,8 @@ type: entity
 title: "Amazon Web Services"
 aliases: ["AWS", "Amazon Cloud"]
 date_created: 2026-05-06
-date_updated: 2026-10-09
-source_count: 12
+date_updated: 2026-11-03
+source_count: 13
 tags: ["aws", "cloud-provider", "amazon", "infraestrutura"]
 skill: tech-mentor-infra
 status: stable
@@ -69,6 +69,10 @@ O console web da AWS (criar recursos clicando em botões — ex.: "create functi
 
 Panorama didático (não exaustivo de todos os produtos) que ordena os serviços mais usados por dependência lógica de uma pilha típica, e não por categoria: [[wiki/concepts/aws-iam|IAM]] (segurança) → [[wiki/concepts/vpc|VPC]] (rede) → [[wiki/concepts/ec2|EC2]] (computação) → [[wiki/concepts/auto-scaling|Auto Scaling]] + [[wiki/concepts/load-balancer|ALB]] (elasticidade) → [[wiki/concepts/amazon-s3|S3]] (objetos) → [[wiki/concepts/rds|RDS]]/Aurora (relacional) → [[wiki/concepts/aws-lambda|Lambda]] (serverless) → [[wiki/concepts/dynamodb|DynamoDB]] (NoSQL) → [[wiki/concepts/api-gateway|API Gateway]] (exposição) → [[wiki/concepts/aws-cloudfront|CloudFront]] (CDN) → [[wiki/concepts/aws-cloudwatch|CloudWatch]] (observabilidade) → [[wiki/concepts/aws-sqs|SQS]]/[[wiki/concepts/aws-sns|SNS]]/EventBridge (mensageria) → [[wiki/concepts/ecs|ECS]]/EKS/ECR (containers), fechando com [[wiki/concepts/aws-route-53|Route 53]], Cognito, Secrets Manager, [[wiki/concepts/step-functions|Step Functions]] e [[wiki/concepts/aws-elasticache|ElastiCache]]. Ver [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]].
 
+## App Runner e o De-para de Compute
+
+Citada com Elastic Beanstalk e App Runner como equivalentes do Azure App Service. `[external]` O App Runner [não aceita novos clientes desde 30/abr/2026](https://docs.aws.amazon.com/ja_jp/apprunner/latest/dg/apprunner-availability-change.html); a AWS sugere ECS Express Mode.
+
 ## Key Sources
 
 - [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — panorama dos 15 serviços mais usados, ordenados por dependência lógica de pilha, com arquitetura de referência ponta a ponta
@@ -84,3 +88,4 @@ Panorama didático (não exaustivo de todos os produtos) que ordena os serviços
 - [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] — princípios de liderança da Amazon: [[wiki/concepts/amazon-leadership-principles]]
 - [[wiki/sources/load-balancer-como-funciona-algoritmos-health-check-nginx-haproxy]] — ALB (camada de aplicação) e NLB (rede/transporte) citados como LBs gerenciados
 - [[wiki/sources/dotenv-arquivo-env-boas-praticas-secret-manager]] — AWS Secrets Manager citado como cofre com rotação (e erro de atribuição: Heroku não é 'pai da AWS')
+- [[wiki/sources/utilizar-ou-nao-kubernetes-fluxo-de-decisao-cloud]] — de-para de compute (Elastic Beanstalk, App Runner, EC2)

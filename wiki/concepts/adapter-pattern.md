@@ -3,8 +3,8 @@ type: concept
 title: "Adapter Pattern"
 aliases: ["padrão adapter", "design pattern adapter", "adaptador"]
 date_created: 2026-05-01
-date_updated: 2026-10-06
-source_count: 12
+date_updated: 2026-11-03
+source_count: 13
 tags: [design-patterns, structural, adapter, oop, integracao]
 skill: tech-mentor-backend
 status: stable
@@ -85,6 +85,10 @@ As interfaces `Input Boundary`, `Output Boundary` e `Data Access` descritas em [
 
 [[wiki/sources/anti-corruption-layer-microsservicos-requisitos-arquiteturais]]: Adapters absorvem versão intermediária vs. definitiva, parametrização, 1..N serviços e coreografia/orquestração, sem tocar o legado. Ver [[wiki/questions/acl-facade-vs-adapter-criterio-por-lado-ou-por-chamadas]].
 
+## Exemplo de pagamento: `charge` sobre `PayPal.pay`
+
+[[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] usa um app que espera `charge(amount)` diante de um PayPal que expõe `pay(amount, currency)`. O `PayPalAdapter` implementa `charge` e chama `pay` passando USD. Trocar de provedor passa a mexer só no adaptador. A moeda fixa é simplificação didática: um adaptador real precisa recebê-la, ou perde informação na tradução (inferência). Junto com a escolha de provedor, vira [[wiki/concepts/strategy-com-adapter]].
+
 ## Key Sources
 
 - [[wiki/sources/design-pattern-proxy]]
@@ -102,3 +106,4 @@ As interfaces `Input Boundary`, `Output Boundary` e `Data Access` descritas em [
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — adapter do provedor de pagamento como "carinha do meio" que desacopla.
+- [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] — `charge` traduzido para `PayPal.pay`; SDK só no último momento possível; uso conjunto com Strategy

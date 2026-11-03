@@ -3,8 +3,8 @@ type: entity
 title: "Bernardo Lobato"
 aliases: ["Bernardo Lobato"]
 date_created: 2026-06-05
-date_updated: 2026-10-14
-source_count: 26
+date_updated: 2026-11-03
+source_count: 27
 tags: [arquitetura-software, segurança, criador-de-conteudo, youtube, backend]
 skill: tech-mentor-security
 status: stub
@@ -44,3 +44,4 @@ Desenvolvedor e criador de conteúdo brasileiro. Publica vídeos toda sexta-feir
 
 - [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — vídeo sobre CQRS: origem em CQS (Meyer), separação de modelos, quatro critérios de adoção, custos e casos em que não usar
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — vídeo de fundamentos: mapa mental de 11 conceitos de IA (IA → ML → redes neurais → deep learning → IA generativa → Transformers → tokens → LLM → agentes), com opinião cautelosa sobre agentes
+- [[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] — vídeo de reflexão: história do software e tese de que a [[wiki/concepts/programacao-orientada-a-objetos|POO]] desceu um degrau; continuação do vídeo sobre CQRS

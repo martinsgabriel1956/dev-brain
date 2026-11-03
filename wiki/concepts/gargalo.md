@@ -3,7 +3,7 @@ type: concept
 title: "Gargalo"
 aliases: ["bottleneck", "gargalo de sistema", "ponto de contenção"]
 date_created: 2026-06-26
-date_updated: 2026-10-07
+date_updated: 2026-11-03
 source_count: 6
 tags: [system-design, performance, escalabilidade, debugging, monitoramento]
 skill: tech-mentor-system-design
@@ -69,6 +69,10 @@ Na maioria dos sistemas web, a camada de aplicação escala facilmente (é [[sta
 
 Mensagem central da fonte: a pergunta não é "o que é um load balancer", e sim "qual é o gargalo atual e qual o custo da decisão" (latência, consistência, resiliência, custo). No caso, cada problema observado (back end lento, imagem lenta, picos, spam) é mapeado a um bloco ([[wiki/concepts/building-blocks-system-design]], [[wiki/concepts/design-em-camadas]]).
 
+## Memória como gargalo no processador
+
+[[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] lembra que boa parte dos programas é limitada pela leitura e escrita em memória ou disco, e não pela CPU. A [[wiki/concepts/gpu]] ataca o problema escondendo essa latência com outro trabalho em paralelo.
+
 ## Key sources
 
 - [[wiki/sources/escalabilidade-vertical-horizontal-system-design]]
@@ -78,3 +82,4 @@ Mensagem central da fonte: a pergunta não é "o que é um load balancer", e sim
 - [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — gargalo atual + custo da decisão como pergunta central; quatro problemas observados mapeados a blocos
 
 - [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — mesmo sintoma (lentidão) com quatro causas possíveis (consulta, síncrono, acoplamento, componente sobrecarregado); diagnóstico com tracing/APM, métricas e `EXPLAIN` antes de reestruturar ([[wiki/concepts/diagnostico-antes-de-reestruturar]]).
+- [[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] — memória e disco como limite dos programas; GPU esconde essa latência

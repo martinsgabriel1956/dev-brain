@@ -3,8 +3,8 @@ type: concept
 title: "Sessões HTTP e Cookies"
 aliases: ["sessão HTTP", "session ID", "cookie de sessão", "sessão stateful"]
 date_created: 2026-07-27
-date_updated: 2026-09-30
-source_count: 10
+date_updated: 2026-11-03
+source_count: 11
 tags: [sessao, cookie, autenticacao, stateless, http, seguranca]
 skill: tech-mentor-security
 status: draft
@@ -34,8 +34,12 @@ Em arquitetura com múltiplos servidores, todos precisam acessar o **mesmo** arm
 
 - **`HttpOnly`**: inacessível via JavaScript — protege contra roubo de sessão por XSS.
 - **`Secure`**: só trafega em HTTPS.
-- **`SameSite`**: mitiga CSRF (`Strict` bloqueia todo cross-site; `Lax` permite navegação top-level).
+- **`SameSite`**: mitiga CSRF (`Strict` bloqueia todo cross-site; `Lax` permite navegação top-level). Tem bypasses: ver [[wiki/concepts/samesite-cookie]].
 - **Regenerar o ID após login**: previne [[wiki/concepts/session-fixation|session fixation]] (atacante força uma sessão conhecida antes do usuário autenticar).
+
+## O Envio Automático Como Superfície de Ataque
+
+O passo 4 acima é o que mantém a sessão autenticada e também o que torna [[wiki/concepts/csrf]] possível: o navegador anexa o cookie mesmo quando a requisição foi disparada por outro site ([[wiki/sources/csrf-cross-site-request-forgery]]).
 
 ## Invalidar Sessões Antigas ao Trocar a Senha
 
@@ -81,3 +85,4 @@ Redis é o padrão de produção justamente por resolver o caso de múltiplos se
 - [[wiki/sources/anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato]] — session token formalizado como o caso clássico de token opaco, dentro da distinção arquitetural opaco vs. autocontido
 - [[wiki/sources/historia-do-captcha-do-teste-de-turing-ao-turnstile]] — idade do cookie como sinal do [[wiki/concepts/recaptcha]]: cookie maduro (>9 dias) garantia passar; geração massiva de cookies por um IP
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — `Cookie` como header de sessão entre os metadados da requisição (ver [[wiki/concepts/http-headers]])
+- [[wiki/sources/csrf-cross-site-request-forgery]] — o envio automático de cookies como peça central do CSRF

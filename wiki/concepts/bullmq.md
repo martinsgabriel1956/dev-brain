@@ -3,8 +3,8 @@ type: concept
 title: "BullMQ"
 aliases: ["Bull MQ", "Bull Queue"]
 date_created: 2026-07-09
-date_updated: 2026-08-14
-source_count: 2
+date_updated: 2026-11-03
+source_count: 3
 tags: [bullmq, redis, mensageria, filas, workers, nodejs, background-jobs, tech-mentor-backend]
 skill: tech-mentor-backend
 status: stub
@@ -38,3 +38,4 @@ Producer e worker são processos independentes — param e retomam sem perder es
 
 - [[wiki/sources/pub-sub-message-queue-bullmq-na-pratica]]
 - [[wiki/sources/back-pressure-producer-consumer-filas-bounded-admission-control]] — demo de admission control com low/high watermark sobre uma fila BullMQ + Redis: o produtor pausa acima de 100 jobs e retoma abaixo de 30
+- [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] — citada como opção de emissor de eventos, com ressalva do próprio autor; cada job vai para um único worker, sem cópia por ouvinte

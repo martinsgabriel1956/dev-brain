@@ -3,8 +3,8 @@ type: concept
 title: "Dependency Injection"
 aliases: ["DI", "injeção de dependência"]
 date_created: 2026-08-04
-date_updated: 2026-10-06
-source_count: 9
+date_updated: 2026-11-03
+source_count: 10
 tags: [design-patterns, acoplamento, testabilidade, di]
 skill: tech-mentor-backend
 status: stub
@@ -59,3 +59,7 @@ Técnica em que um componente recebe suas dependências de fora (via construtor,
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — DI como remédio para a [[wiki/concepts/dependencia-externa-oculta]]: `CheckoutService` recebe `PaymentProvider` e `Logger` no construtor; o estado da instância revela qual provedor estava em uso.
+
+## Key sources (adição 2026-11-03)
+
+- [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] — injetar dependência na classe de estratégia facilita testar e trocar o provedor de e-mail

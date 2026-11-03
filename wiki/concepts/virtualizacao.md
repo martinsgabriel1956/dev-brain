@@ -3,8 +3,8 @@ type: concept
 title: "Virtualização"
 aliases: ["virtualization", "virtualização de servidores"]
 date_created: 2026-09-29
-date_updated: 2026-09-29
-source_count: 1
+date_updated: 2026-11-03
+source_count: 2
 tags: [virtualizacao, mainframe, cloud, hypervisor, isolamento]
 skill: tech-mentor-infra
 status: stub
@@ -19,3 +19,4 @@ Consequência conceitual: numa instância de hyperscaler, o cliente compra **cap
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — virtualização e compartilhamento nasceram no mainframe
+- [[wiki/sources/utilizar-ou-nao-kubernetes-fluxo-de-decisao-cloud]] — VM como ambiente mais parecido com data center, destino de [[wiki/concepts/lift-and-shift]]

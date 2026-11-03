@@ -3,8 +3,8 @@ type: concept
 title: "Vendor Lock-in em Cloud"
 aliases: ["vendor lock-in", "lock-in de nuvem", "aprisionamento a provedor"]
 date_created: 2026-08-04
-date_updated: 2026-09-30
-source_count: 4
+date_updated: 2026-11-03
+source_count: 5
 tags: ["vendor-lock-in", "aws", "cloud", "arquitetura", "infra", "custo"]
 skill: tech-mentor-infra
 status: stub
@@ -41,9 +41,14 @@ Serviços mais integrados ao ecossistema de um provedor tendem a ser mais simple
 
 Contratar [[wiki/concepts/mainframe-as-a-service]] troca dependência de hardware próprio por dependência de provedor/contrato. A fonte não discute esse risco — inferência marcada como tal.
 
+## Kubernetes e Contêiner como Atenuantes
+
+Fonte sobre compute em nuvem: rodar em serviço proprietário prende ao provedor. O autor coloca [[wiki/concepts/kubernetes]] como a saída mais portátil, por ser padrão entre provedores, e [[wiki/concepts/conteinerizacao|contêineres]] como atenuante intermediário ("não vai ser um mistério" migrar). A afirmação de que Kubernetes "não tem" lock-in é exagero: ver [[wiki/concepts/kubernetes]].
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — MaaS troca dependência de hardware por dependência de provedor (inferência; não discutido)
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]] — lock-in de ferramenta de IA a um único provider de modelo, contornado via AI Gateway
 - [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] — open weight + agregador reduz dependência de um único fornecedor de modelo
+- [[wiki/sources/utilizar-ou-nao-kubernetes-fluxo-de-decisao-cloud]] — lock-in de serviços proprietários vs. portabilidade de Kubernetes e contêineres

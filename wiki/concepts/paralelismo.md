@@ -1,10 +1,10 @@
 ---
 type: concept
 title: "Paralelismo"
-aliases: ["parallelism", "execução paralela", "multicore", "multithreading"]
+aliases: ["parallelism", "execução paralela", "multithreading"]
 date_created: 2026-06-26
-date_updated: 2026-08-27
-source_count: 2
+date_updated: 2026-11-03
+source_count: 3
 tags: [cs-fundamentals, lang-systems, paralelismo, concorrencia, multicore, performance, hpc]
 skill: cs-fundamentals
 status: draft
@@ -58,7 +58,12 @@ Adicionar mais threads sem sincronização cria mais oportunidades de [[race-con
 - [[mutex]] — necessário quando threads paralelas compartilham estado
 - [[deadlock]] — patologia que ocorre quando a coordenação de threads paralelas falha
 
+## Multicore e GPU depois do power wall
+
+[[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] situa o paralelismo como resposta ao [[wiki/concepts/power-wall]]: com a frequência limitada, o ganho passou a vir de [[wiki/concepts/multicore|mais núcleos]] e de [[wiki/concepts/gpu|GPUs]], que usam [[wiki/concepts/simd|SIMD]] em escala. Nesta wiki, cada um tem página própria.
+
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]] — HPC (GPU, multicore, MPI/OpenMPI) como motivação para baixo nível
+- [[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] — power wall como motor do multicore e das GPUs

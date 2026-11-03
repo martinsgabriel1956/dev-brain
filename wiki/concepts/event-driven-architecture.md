@@ -3,8 +3,8 @@ type: concept
 title: "Event-Driven Architecture (EDA)"
 aliases: ["arquitetura orientada a eventos", "eda", "event driven"]
 date_created: 2026-07-30
-date_updated: 2026-10-09
-source_count: 11
+date_updated: 2026-11-03
+source_count: 12
 tags: [event-driven, mensageria, saga-pattern, cqrs, microsservicos, arquitetura]
 skill: tech-mentor-backend
 status: stub
@@ -58,3 +58,7 @@ Evento 'pedido criado' consumido por Pagamentos, que publica 'pagamento aprovado
 ## Key sources (adição 2026-10-09)
 
 - [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — EDA é opcional no CQRS: evento do write model consumido para atualizar o read model é uma combinação possível, não requisito
+
+## Key sources (adição 2026-11-03)
+
+- [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] — emissor desacoplado dos ouvintes no exemplo de compra e analytics; o autor trata event driven como mais amplo que Observer

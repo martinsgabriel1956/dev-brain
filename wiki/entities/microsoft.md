@@ -3,8 +3,8 @@ type: entity
 title: "Microsoft"
 aliases: []
 date_created: 2026-07-16
-date_updated: 2026-10-30
-source_count: 11
+date_updated: 2026-11-03
+source_count: 12
 tags: [empresa, custo-ia, token-economics, demissao, capital-de-tokens]
 skill: tech-mentor-ai
 status: stub
@@ -38,6 +38,8 @@ Citada, junto com Google e Apple, como uma das big techs que adotaram em massa o
 
 Azure citado (transcrição "Acer") entre os hyperscalers do imaginário de "ir para a nuvem" ([[wiki/concepts/cloud-como-modelo-de-consumo]]).
 
+A documentação do Azure publica um fluxograma de escolha de compute, usado em [[wiki/concepts/arvore-de-decisao-de-computacao-em-nuvem]]. Ele vai de VM a App Service, Functions, AKS e Container Apps. `[external]` O Azure Spring Apps será [aposentado em 31/mar/2028](https://learn.microsoft.com/en-my/azure/spring-apps/basic-standard/retirement-announcement), e a migração recomendada é para Container Apps.
+
 ## Estudo sobre IA Generativa e Pensamento Crítico
 
 [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] cita um "pequeno estudo" da Microsoft: usuários relatam menos esforço cognitivo e menos confiança no próprio trabalho intelectual ao usar muita IA generativa. `[external]` Provavelmente Lee et al., CHI 2025 (survey com 319 trabalhadores do conhecimento; dado autorrelatado). Ver [[wiki/concepts/atrofia-cognitiva]].
@@ -63,3 +65,7 @@ Azure citado (transcrição "Acer") entre os hyperscalers do imaginário de "ir 
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — estudo IA generativa × pensamento crítico (autorrelato)
+
+## Key sources (adição 2026-11-03)
+
+- [[wiki/sources/utilizar-ou-nao-kubernetes-fluxo-de-decisao-cloud]] — fluxograma de compute do Azure como base da decisão

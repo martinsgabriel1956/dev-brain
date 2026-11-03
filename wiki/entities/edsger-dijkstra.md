@@ -3,8 +3,8 @@ type: entity
 title: "Edsger Dijkstra"
 aliases: ["Dijkstra", "EWD"]
 date_created: 2026-06-01
-date_updated: 2026-08-14
-source_count: 2
+date_updated: 2026-11-03
+source_count: 3
 tags: [cs-fundamentals, linguagem, programacao, matematica, fluxo-de-controle]
 skill: cs-fundamentals
 status: stub
@@ -34,3 +34,4 @@ O manifesto mais citado contra o [[wiki/concepts/code-espaguete|código espaguet
 
 - [[wiki/sources/logica-de-programacao-o-que-e-de-verdade]] — argumento sobre notação matemática vs. linguagem natural
 - [[wiki/sources/codigo-espaguete-wikipedia]] — "Go To Statement Considered Harmful" como origem da luta contra o código espaguete
+- [[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] — a carta sobre `goto` como marco da programação estruturada; [external] [publicada na CACM em março de 1968](https://en.wikipedia.org/wiki/Considered_harmful), com título dado pelo editor Niklaus Wirth

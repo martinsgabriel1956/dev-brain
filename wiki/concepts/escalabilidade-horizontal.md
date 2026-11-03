@@ -3,8 +3,8 @@ type: concept
 title: "Escalabilidade Horizontal"
 aliases: ["horizontal scaling", "scale out", "escalar horizontalmente"]
 date_created: 2026-06-26
-date_updated: 2026-10-08
-source_count: 23
+date_updated: 2026-11-03
+source_count: 24
 tags: [escalabilidade, arquitetura, sistemas-distribuidos, nosql, redis, backend]
 skill: tech-mentor-backend
 status: stable
@@ -92,3 +92,4 @@ Escalar horizontalmente um serviço de conexões longas (WebSocket) tem uma rest
 - [[wiki/sources/load-balancer-como-funciona-algoritmos-health-check-nginx-haproxy]] — vários servidores idênticos dividem a carga (500 req/s → 100 por servidor) e a falha de um não derruba o serviço; erro típico: escalar sem pensar em sessão local
 
 - [[wiki/sources/sharding-milhoes-de-escritas-partition-key-consistent-hashing-pedro-camaforte]] — sharding como escala horizontal do banco após o teto vertical
+- [[wiki/sources/utilizar-ou-nao-kubernetes-fluxo-de-decisao-cloud]] — escala por réplicas como papel do [[wiki/concepts/kubernetes]], mas alcançável sem ele

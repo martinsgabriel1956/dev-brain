@@ -3,8 +3,8 @@ type: concept
 title: "Efeito Colateral"
 aliases: ["side effect", "efeitos colaterais", "funções puras"]
 date_created: 2026-04-25
-date_updated: 2026-10-09
-source_count: 3
+date_updated: 2026-11-03
+source_count: 4
 tags: [efeito-colateral, software-design, clean-code, funcional]
 skill: tech-mentor-backend
 status: stub
@@ -56,3 +56,7 @@ Sistemas úteis precisam de efeitos (persistir dados, enviar notificações, faz
 ## Key sources (adição 2026-10-09)
 
 - [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — [[wiki/concepts/cqs]]: query não pode ter efeito colateral observável; exemplo `visualizarNotificacoes` que também marca como lida, separado em `obterNaoLidas` + `marcarComoLidas`
+
+## Key sources (adição 2026-11-03)
+
+- [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] — testar notificações exige não enviar e-mail de verdade ao cliente; Strategy com dependência injetada como solução

@@ -3,7 +3,7 @@ type: source
 title: "Aprenda antes de aplicar — Fundamentos e Otimização Prematura"
 aliases: ["aprender antes aplicar", "progressão aprendizado", "otimização prematura"]
 date_created: 2026-06-09
-date_updated: 2026-06-09
+date_updated: 2026-11-03
 source_count: 0
 tags: [aprendizado, fundamentos, progressao, otimizacao-prematura, over-engineering, design-patterns, oo]
 skill: tech-mentor-leadership
@@ -26,7 +26,7 @@ Tanto iniciantes quanto devs experientes caem na armadilha de querer aplicar con
 ## Key Claims
 
 ### 1. Aplicar conceitos sem entendê-los gera over-engineering
-**Evidência:** Quem aprende design patterns sem dominar OOP tende a aplicar todos os patterns em todos os lugares — o "verde neném" (overengineering ingênuo). O código fica mais complexo, não melhor.
+**Evidência:** Quem aprende design patterns sem dominar OOP tende a aplicar todos os patterns em todos os lugares — overengineering ingênuo. O raw escreve "verde neném", provável erro de legenda para "over engineering" (inferência; ver [[wiki/concepts/over-engineering]]). O código fica mais complexo, não melhor.
 **Ocorre em:** iniciantes (por querer aprender tudo de uma vez) e devs experientes (por afoiteza diferente).
 **Confiança:** Alta (observação amplamente compartilhada na comunidade)
 
@@ -56,7 +56,7 @@ _(autor não identificado na fonte)_
 
 ## Concepts
 
-- [[wiki/concepts/over-engineering]] — verde neném; aplicar patterns sem base
+- [[wiki/concepts/over-engineering]] — aplicar patterns sem base
 - [[wiki/concepts/otimizacao-prematura]] — raiz de todo mal; otimizar antes de ter projeto bom
 - [[wiki/concepts/modelagem-orientada-a-objetos]] — pré-requisito obrigatório para design patterns
 - [[wiki/concepts/fundacao-tecnica]] — progressão de estágios reforça este conceito

@@ -3,8 +3,8 @@ type: concept
 title: "Under-Engineering"
 aliases: ["underengineering", "engenharia insuficiente", "fazer menos do que deveria"]
 date_created: 2026-07-19
-date_updated: 2026-08-21
-source_count: 2
+date_updated: 2026-11-03
+source_count: 3
 tags: [under-engineering, over-engineering, qualidade, anti-pattern, tech-debt, acoplamento, ci-cd]
 skill: tech-mentor-leadership
 status: draft
@@ -59,7 +59,12 @@ O atalho que gera under-engineering (não configurar CI, hardcodar um valor "só
 - [[wiki/concepts/quality-gate]]
 - [[wiki/concepts/tech-debt-como-ferramenta]]
 
+## Começar simples não é under-engineering
+
+[[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] responde à objeção de que produto simples vira bagunça: o erro não foi começar simples, e sim não seguir princípios de código e evolução durante a manutenção. A fonte não usa o termo under-engineering; a ligação é inferência minha. Ver [[wiki/concepts/abordagem-evolutiva]].
+
 ## Key Sources
 
 - [[wiki/sources/underengineering-overengineering-mario-souto]]
 - [[wiki/sources/seedwork-martin-fowler]] — contraponto contextual ao sinal "copy-paste sem estrutura"
+- [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] — distingue começo simples de manutenção descuidada

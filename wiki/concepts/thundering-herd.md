@@ -3,8 +3,8 @@ type: concept
 title: "Thundering Herd"
 aliases: ["thundering herd", "retry storm", "cache stampede"]
 date_created: 2026-04-22
-date_updated: 2026-04-23
-source_count: 2
+date_updated: 2026-11-03
+source_count: 3
 tags: [resiliencia, distribuidos, retry, cache, performance]
 skill: tech-mentor-system-design
 status: stable
@@ -36,3 +36,4 @@ O sistema em recuperação recebe carga máxima no pior momento — exatamente q
 
 - [[wiki/sources/retry-backoff]]
 - [[wiki/sources/conceitos-que-ninguem-ensina]]
+- [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] — retry sem espera comparado a um DDoS contra o próprio sistema; jitter para as chamadas não coincidirem

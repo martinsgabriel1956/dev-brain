@@ -3,7 +3,7 @@ type: concept
 title: "XSS (Cross-Site Scripting)"
 aliases: ["xss", "cross-site scripting", "injeção javascript", "script injection"]
 date_created: 2026-06-10
-date_updated: 2026-09-30
+date_updated: 2026-11-03
 source_count: 11
 tags: [security, xss, owasp, appsec, input-sanitization, attack-surface, dvwa, csp]
 skill: tech-mentor-security
@@ -25,7 +25,7 @@ Vulnerabilidade que permite injetar código JavaScript malicioso em páginas ser
 ## O Que um Atacante Consegue
 
 - Roubar cookies de sessão (`document.cookie`)
-- Fazer requisições autenticadas em nome da vítima (CSRF via XSS)
+- Fazer requisições autenticadas em nome da vítima (CSRF via XSS). [external] Segundo o [cheat sheet da OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html), XSS derruba todas as mitigações de [[wiki/concepts/csrf]], incluindo o [[wiki/concepts/csrf-token]]
 - Redirecionar para sites de phishing
 - Keylogging, captura de formulários
 

@@ -3,8 +3,8 @@ type: concept
 title: "Arquitetura e Organização de Computadores"
 aliases: ["computer architecture", "arquitetura de von neumann", "organização de computadores", "pipeline de execução", "registradores"]
 date_created: 2026-08-27
-date_updated: 2026-10-30
-source_count: 3
+date_updated: 2026-11-03
+source_count: 4
 tags: [cs-fundamentals, lang-systems, arquitetura, hardware, baixo-nivel]
 skill: cs-fundamentals
 status: stub
@@ -35,6 +35,10 @@ Dois livros de **John Hennessy** e **David Patterson** (Prêmio Turing 2017) sã
 
 A Máquina Analítica de [[wiki/entities/charles-babbage]] (1837) já separava processamento, memória e entrada de dados, segundo [[wiki/sources/historia-do-computador-da-antikythera-ao-computador-quantico]]. A fonte não menciona von Neumann nem o programa armazenado, que são a base da arquitetura moderna. Ver [[wiki/concepts/historia-da-computacao]].
 
+## Depois do power wall
+
+[[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] mostra por que esta área ganhou peso: com o [[wiki/concepts/power-wall]], o desempenho da CPU passou a depender de [[wiki/concepts/microarquitetura]] e [[wiki/concepts/multicore]], e a [[wiki/concepts/gpu]] seguiu outro desenho, voltado a throughput.
+
 ## Key sources
 
 - [[wiki/sources/guia-programacao-baixo-nivel-c-arquitetura-so-embarcados]]
@@ -46,3 +50,4 @@ A Máquina Analítica de [[wiki/entities/charles-babbage]] (1837) já separava p
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/historia-do-computador-da-antikythera-ao-computador-quantico]] — Máquina Analítica como precursora; lacuna sobre von Neumann
+- [[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] — power wall, microarquitetura, multicore e GPU

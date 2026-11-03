@@ -3,8 +3,8 @@ type: concept
 title: "Código Espaguete"
 aliases: ["code espaguete", "codigo espaguete", "spaghetti code", "codigo sopa"]
 date_created: 2026-08-10
-date_updated: 2026-08-14
-source_count: 2
+date_updated: 2026-11-03
+source_count: 3
 tags: [code-espaguete, acoplamento, legado, arquitetura, backend, anti-patterns, fluxo-de-controle]
 skill: tech-mentor-backend
 status: draft
@@ -33,3 +33,4 @@ Ver [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]].
 
 - [[wiki/sources/monolito-modular-transicao-mvp-empresa-madura]]
 - [[wiki/sources/codigo-espaguete-wikipedia]] — definição formal (fluxo de controle convoluto), etimologia via Hamming, família de anti-padrões e ponte para Big Ball of Mud
+- [[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] — contexto histórico: a crítica ao `goto` dentro da [[wiki/concepts/programacao-procedural|programação estruturada]]

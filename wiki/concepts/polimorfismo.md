@@ -3,8 +3,8 @@ type: concept
 title: "Polimorfismo"
 aliases: ["polymorphism", "polimorfismo dinâmico", "dynamic dispatch"]
 date_created: 2026-08-23
-date_updated: 2026-09-02
-source_count: 2
+date_updated: 2026-11-03
+source_count: 3
 tags: [oop, polimorfismo, dynamic-dispatch, expression-problem]
 skill: tech-mentor-backend
 status: stub
@@ -22,7 +22,12 @@ Mecanismo pelo qual chamar a mesma operação nomeada (ex.: `area()`) sobre obje
 
 [[wiki/sources/procedure-variable-xunitpatterns]] (Gerard Meszaros, glossário xUnitPatterns.com) situa o despacho dinâmico numa camada abaixo da linguagem: uma **procedure variable** (também chamada *function pointer*, ou *delegate* em .Net) é uma variável que referencia um procedimento em vez de um dado, permitindo que o código chamado seja decidido em tempo de execução (dynamic binding) em vez de tempo de compilação. A fonte afirma que *procedure variables* foram precursoras das OOPLs verdadeiras: C++ inicial as usava em tabelas (arrays) de estruturas de dados para montar manualmente as *dispatch tables* de objetos/classes — o mesmo efeito que hoje `area()` obtém automaticamente via polimorfismo, mas antes de existir sintaxe de classe/método virtual na linguagem.
 
+## Fora da conversa, não da prática?
+
+[[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] descreve o polimorfismo como forma de desacoplar quem usa um componente da implementação concreta, e o inclui entre os temas que os times quase não discutem mais. Inferência da wiki: interface mais injeção de dependência continua sendo polimorfismo no dia a dia, então o que sumiu pode ser só o debate.
+
 ## Key Sources
 
 - [[wiki/sources/classes-vs-estruturas-de-dados-uncle-bob]] — exemplo Square/Circle/Triangle contrastando polimorfismo dinâmico com switch sobre união discriminada
 - [[wiki/sources/procedure-variable-xunitpatterns]] — verbete de glossário do xUnitPatterns.com (Meszaros) isolando "procedure variable"/function pointer/delegate como precursor pré-OOP do despacho dinâmico, via tabelas manuais de dispatch em C++ inicial
+- [[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] — polimorfismo como mecanismo de desacoplamento na história da POO

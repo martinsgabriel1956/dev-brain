@@ -3,8 +3,8 @@ type: concept
 title: "Amazon ECS"
 aliases: ["ECS", "Elastic Container Service"]
 date_created: 2026-08-04
-date_updated: 2026-08-17
-source_count: 2
+date_updated: 2026-11-03
+source_count: 3
 tags: ["aws", "ecs", "containers", "orquestracao", "docker", "infra", "cloud"]
 skill: tech-mentor-infra
 status: stub
@@ -39,3 +39,4 @@ Você define **task definitions** (imagem, CPU, memória); **services** mantêm 
 
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]
 - [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — task definitions, services, ECR, e a comparação direta ECS vs. EKS (simplicidade/integração nativa vs. portabilidade/complexidade)
+- [[wiki/sources/utilizar-ou-nao-kubernetes-fluxo-de-decisao-cloud]] — [skill] equivalente na AWS de [[wiki/concepts/conteineres-gerenciados-sem-kubernetes]]; não nomeado na transcrição

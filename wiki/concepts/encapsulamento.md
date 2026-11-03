@@ -3,8 +3,8 @@ type: concept
 title: "Encapsulamento"
 aliases: ["encapsulamento", "encapsulation", "information hiding"]
 date_created: 2026-08-10
-date_updated: 2026-09-30
-source_count: 4
+date_updated: 2026-11-03
+source_count: 5
 tags: [encapsulamento, separation-of-concerns, arquitetura, modularidade, backend, oop, invariante]
 skill: tech-mentor-backend
 status: draft
@@ -45,3 +45,4 @@ Uma classe que expõe só setters de atribuição, sem comportamento, é um [[wi
 - [[wiki/sources/encapsulamento-proteger-estado-invalido]] — o objetivo real é proteger o estado contra estados inválidos; `private` é meio, invariante é fim; encapsulamento ≠ acesso
 - [[wiki/sources/design-by-contract-video]] — invariantes de [[wiki/concepts/precondicao-poscondicao-invariante]] como formalização do estado válido a proteger
 - [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — `Produto` com setters aceita `setPreco(-30)`; ver [[wiki/concepts/classe-como-conceito-de-dominio]]
+- [[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] — encapsulamento como um dos mecanismos com que a [[wiki/concepts/programacao-orientada-a-objetos|POO]] controlava o acoplamento

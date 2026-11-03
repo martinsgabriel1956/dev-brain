@@ -3,8 +3,8 @@ type: concept
 title: "Pilha (Stack)"
 aliases: ["stack", "LIFO", "call stack"]
 date_created: 2026-06-01
-date_updated: 2026-09-03
-source_count: 3
+date_updated: 2026-11-03
+source_count: 4
 tags: [cs-fundamentals, estruturas-de-dados, pilha, stack, lifo]
 skill: cs-fundamentals
 status: draft
@@ -51,8 +51,13 @@ A call stack usada por chamadas de função é administrada automaticamente pelo
 - [[excecao-vs-erro]] — stack trace é a representação da call stack no momento da exceção
 - [[wiki/concepts/tail-call-optimization]] — otimização que evita o crescimento da call stack em certas recursões
 
+## Stack na GPU
+
+[[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] afirma que na [[wiki/concepts/gpu]] não existe stack, nem push e pop. Como afirmação absoluta, é exagero. [external] [Respostas de fórum da NVIDIA](https://forums.developer.nvidia.com/t/does-cuda-support-recursion/37139) indicam recursão em CUDA desde a versão 3.1, com stack por thread configurável e restrição nos kernels `__global__`. As fontes são antigas, e o guia atual não pôde ser conferido nesse ponto.
+
 ## Key sources
 
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
 - [[wiki/sources/recursao-fatorial-fibonacci-javascript]] — trace passo a passo do desenrolar da call stack em fatorial e Fibonacci recursivos
 - [[wiki/sources/recursao-vs-iteracao-call-stack-tail-call-optimization]] — call stack como estrutura de dados alocável manualmente; leitura de assembly (`call` vs. `jump`)
+- [[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] — alegação de que GPU não tem stack, com ressalva

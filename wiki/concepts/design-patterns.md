@@ -3,8 +3,8 @@ type: concept
 title: "Design Patterns"
 aliases: ["padrões de projeto", "GoF", "Gang of Four patterns"]
 date_created: 2026-05-16
-date_updated: 2026-08-11
-source_count: 7
+date_updated: 2026-11-03
+source_count: 8
 tags: [design, arquitetura, padroes, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -52,14 +52,19 @@ Estudar a [[wiki/concepts/fundacao-tecnica|fundação]] antes de estudar framewo
 
 ## Pré-requisito: Modelagem OO
 
-Antes de estudar design patterns é obrigatório dominar [[modelagem-orientada-a-objetos]] — saber o que vira classe, o que vira atributo e como os objetos se relacionam. Sem esse fundamento, o dev não tem critério para avaliar quando um pattern é adequado. O resultado é [[over-engineering]]: patterns aplicados em todo lugar sem problema correspondente ("verde neném").
+Antes de estudar design patterns é obrigatório dominar [[modelagem-orientada-a-objetos]] — saber o que vira classe, o que vira atributo e como os objetos se relacionam. Sem esse fundamento, o dev não tem critério para avaliar quando um pattern é adequado. O resultado é [[over-engineering]]: patterns aplicados em todo lugar sem problema correspondente.
+
+## Recorte prático: cinco padrões
+
+[[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] seleciona [[wiki/concepts/strategy-pattern|Strategy]], [[wiki/concepts/observer-pattern|Observer]], [[wiki/concepts/adapter-pattern|Adapter]], [[wiki/concepts/finite-state-machine|máquina de estados]] e [[wiki/concepts/retry-backoff|retry]] com [[wiki/concepts/circuit-breaker|circuit breaker]]. Só os três primeiros são do catálogo GoF: os outros usam "design pattern" no sentido amplo de solução recorrente. A fonte não diz quando não aplicar, e é aí que entra [[wiki/concepts/over-engineering]].
 
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]] — quando *não* estudar patterns; origem em Christopher Alexander; relação com GoF e Java; patterns como nomes para o que você já fazia
-- [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]] — modelagem OO como pré-requisito; verde neném como sintoma de pular estágios
+- [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]] — modelagem OO como pré-requisito; over-engineering como sintoma de pular estágios
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — [[wiki/concepts/template-method-pattern|Template Method]] implementado via composição (não herança) num controlador web, citando a recomendação do próprio livro GoF de favorecer composição sobre herança
 - [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]] — [[wiki/concepts/observer-pattern|Observer]] e [[wiki/concepts/singleton-pattern|Singleton]] combinados para recriar o mecanismo central do [[wiki/concepts/zustand|Zustand]] com JavaScript puro
 - [[wiki/sources/tres-estagios-de-acoplamento-observer-pattern-na-pratica]] — [[wiki/concepts/factory-pattern|Factory]] e [[wiki/concepts/observer-pattern|Observer]] usados lado a lado como dois estágios progressivos de desacoplamento (não como escolhas concorrentes), numa refatoração incremental de um jogo em JavaScript
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — catálogo do [[wiki/entities/refactoring-guru|Refactoring Guru]] empacotado como `references/design-patterns.md` de uma skill, para a IA escolher e aplicar o pattern certo em refatorações
 - [[wiki/sources/design-pattern-decorator-renato-augusto]] — [[wiki/concepts/decorator-pattern|Decorator]] (estrutural) ensinado via pipeline de `ImageProcessor`, com foco em composição recursiva e Open/Closed
+- [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] — recorte prático com cinco padrões; mistura GoF com padrões de resiliência e máquina de estados

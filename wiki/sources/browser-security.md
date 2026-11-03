@@ -3,7 +3,7 @@ type: source
 title: "Browser Security"
 aliases: ["browser security", "csp", "cors", "same-origin policy", "spectre browser", "fetch metadata", "coep coop"]
 date_created: 2026-04-23
-date_updated: 2026-04-23
+date_updated: 2026-11-03
 source_file: /home/nemomartins/Documentos/new/dev-study/raw/browser-security.md
 source_url: ""
 date_published: ""
@@ -35,10 +35,11 @@ Browser Security: Same-Origin Policy é a base (scheme+host+port). CORS habilita
 **Claim:** SameSite=Strict elimina CSRF mas pode quebrar fluxos legítimos de login via link externo.
 **Evidence:** Cookie com `SameSite=Strict` não é enviado em requests cross-site, incluindo navegação por link. Usuário clica em link no email → abre o site → cookie não enviado → não está logado. Trade-off: `SameSite=Lax` (default) envia apenas em GET de top-level navigation — proteção parcial mas sem quebrar UX.
 **Confidence:** alta
+**Correção (2026-11-03):** "elimina" é forte demais, e `Lax` não é default em todo navegador. [external] A [PortSwigger](https://portswigger.net/web-security/csrf/bypassing-samesite-restrictions) documenta bypasses de `Strict` e a [MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie) diz que só alguns navegadores usam `Lax` como padrão. Ver [[wiki/concepts/samesite-cookie]], levantado na ingestão de [[wiki/sources/csrf-cross-site-request-forgery]].
 
 ## Entities & Concepts Touched
 
-- [[concepts/same-origin-policy]]
+- [[wiki/concepts/same-origin-policy]]
 - [[wiki/concepts/csp]]
 - [[concepts/cors]]
 - [[concepts/coep-coop]]

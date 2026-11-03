@@ -3,8 +3,8 @@ type: concept
 title: "CQS — Command Query Separation"
 aliases: ["command query separation", "separação comando-consulta"]
 date_created: 2026-10-09
-date_updated: 2026-10-09
-source_count: 1
+date_updated: 2026-11-03
+source_count: 2
 tags: [cqs, design, oop, cqrs, efeito-colateral]
 skill: tech-mentor-system-design
 status: draft
@@ -32,7 +32,12 @@ Princípio de design de [[wiki/entities/bertrand-meyer|Bertrand Meyer]] (*Object
 
 CQRS é CQS levado a outro nível de abstração (e atribuído a [[wiki/entities/greg-young]]). Ver também [[wiki/concepts/precondicao-poscondicao-invariante]] (Design by Contract, mesmo autor).
 
+## Em baixa?
+
+[[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] põe o CQS entre os conceitos clássicos que hoje aparecem menos nas discussões de arquitetura. A afirmação é percepção do autor, e o CQRS, que deriva dele, segue em debate.
+
 ## Key sources
 
 - [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — definição, exemplo Customer e notificações
 - [[wiki/sources/cqrs-e-event-sourcing-explicado-na-pratica]] — CQS como `get`/`set` em nível de função
+- [[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] — CQS como exemplo de repertório clássico menos discutido hoje; percepção, sem dados

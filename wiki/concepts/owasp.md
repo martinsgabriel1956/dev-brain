@@ -3,7 +3,7 @@ type: concept
 title: "Owasp"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-30
+date_updated: 2026-11-03
 source_count: 4
 tags: [owasp]
 skill: tech-mentor-security
@@ -26,6 +26,10 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 ## OWASP Cheat Sheet Series como origem de decisões de projeto
 
 [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]]: o autor recomenda ler todo o Cheat Sheet Series ("se você publica qualquer coisa") e diz que conheceu ali o [[wiki/concepts/cross-site-websocket-hijacking]], que moldou o desenho do [[wiki/entities/omxterm]].
+
+## Cheat Sheet de CSRF como Referência
+
+[external] O [cheat sheet de prevenção a CSRF](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html) foi usado para conferir [[wiki/sources/csrf-cross-site-request-forgery]], que não cita a OWASP. Ele coloca `SameSite` em defesa em profundidade, não como defesa principal ([[wiki/concepts/samesite-cookie]]).
 
 ## SQL Injection como Item Histórico do Top 10
 

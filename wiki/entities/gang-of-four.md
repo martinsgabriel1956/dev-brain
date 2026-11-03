@@ -3,8 +3,8 @@ type: entity
 title: "Gang of Four (GoF)"
 aliases: ["GoF", "gang of four", "Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"]
 date_created: 2026-05-01
-date_updated: 2026-09-22
-source_count: 8
+date_updated: 2026-11-03
+source_count: 9
 tags: [design-patterns, books, oop, junit, testes, gof, livro, arquitetura]
 skill: tech-mentor-backend
 status: stable
@@ -46,3 +46,4 @@ Todos os 23 padrões permanecem aplicáveis. Os mais frequentes em decisões arq
 - [[wiki/sources/adapter-xunitpatterns]] — verbete de External Patterns dedicado à definição canônica do **Adapter**, citada diretamente ("convert the interface of a class into another interface clients expect...")
 - [[wiki/sources/sete-padroes-de-design-de-software]] — livro de 1994, 23 padrões, base de toda a discussão
 - [[wiki/sources/decorator-xunitpatterns]] — xUnitPatterns.com (Meszaros) cita diretamente a definição original do GOF para o [[wiki/concepts/decorator-pattern|Decorator]], como parte da categoria "External Patterns" do site (padrões gerais emprestados de outros catálogos, não específicos de teste)
+- [[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] — citada pela recomendação de preferir composição a herança; ver [[wiki/concepts/heranca-vs-composicao]]

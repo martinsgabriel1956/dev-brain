@@ -3,8 +3,8 @@ type: concept
 title: "Over-Engineering"
 aliases: ["overengineering", "verde neném", "engenharia excessiva", "gold plating"]
 date_created: 2026-06-09
-date_updated: 2026-10-09
-source_count: 20
+date_updated: 2026-11-03
+source_count: 21
 tags: [design, qualidade, anti-pattern, aprendizado, design-patterns, dora, under-engineering]
 skill: tech-mentor-leadership
 status: stable
@@ -14,7 +14,7 @@ status: stable
 
 Aplicar soluções mais complexas do que o problema exige — frequentemente por falta de entendimento do domínio, por querer usar um conceito recém-aprendido, ou por antecipar requisitos que nunca chegarão.
 
-No contexto de aprendizado, a forma mais comum é o **"verde neném"**: alguém que acabou de aprender design patterns tenta aplicar todos eles em tudo, tornando o código mais difícil, não melhor.
+No contexto de aprendizado, a forma mais comum é a de alguém que acabou de aprender design patterns e tenta aplicar todos eles em tudo, tornando o código mais difícil, não melhor.
 
 ---
 
@@ -106,7 +106,7 @@ Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], 
 - [[otimizacao-prematura]] — análogo em performance
 - [[anti-pattern]] — over-engineering é um anti-pattern clássico
 - [[design-patterns]] — fonte mais comum de over-engineering em quem está aprendendo
-- [[modelagem-orientada-a-objetos]] — o pré-requisito que, quando pulado, leva ao verde neném
+- [[modelagem-orientada-a-objetos]] — o pré-requisito que, quando pulado, leva ao over-engineering
 - [[fundacao-tecnica]] — base necessária para o julgamento de quando não sobre-engenheirar
 - [[walking-skeleton]] — técnica concreta para evitar over-engineering por falta de confiança
 - [[dora-metrics]] — evidência empírica de que a disciplina que evita over-engineering também melhora velocidade de entrega
@@ -121,6 +121,12 @@ Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], 
 ## Código Fonte TV — cinco tipos de armazenamento
 
 Caso de dados: colocar cinco tecnologias de armazenamento numa loja pequena; ver [[wiki/concepts/comecar-simples-adicionar-peca-quando-doer]].
+
+## Como se blindar: cinco defesas
+
+[[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] organiza a prevenção em cinco defesas: [[wiki/concepts/kiss]]; [[wiki/concepts/yagni]] com levantamento de requisitos; razão em vez de empolgação ([[wiki/concepts/empresa-como-laboratorio-de-testes]]); números de testes e PoCs ([[wiki/concepts/decisao-tecnica-embasada-em-metricas]]); e [[wiki/concepts/abordagem-evolutiva]]. Os argumentos vêm de experiência declarada, sem caso nomeado.
+
+**Nota sobre "verde neném":** o termo vem só do raw de [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]] e foi removido das páginas da wiki em 2026-11-03. Inferência minha, não confirmada: é erro de legenda automática para "over engineering", já que a transcrição desta fonte produziu formas parecidas ("o verde nire", "ver engineer", "vem dinheiro"). Fica só como alias, para quem buscar a grafia do raw.
 
 ## Key Sources
 - [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]] — complexidade adicionada para satisfazer o ego/currículo vs. resolver o problema de negócio ([[wiki/concepts/competencias-do-engenheiro-de-ia]])
@@ -145,6 +151,7 @@ Caso de dados: colocar cinco tecnologias de armazenamento numa loja pequena; ver
 
 - [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — migrar para microsserviços sem diagnosticar o gargalo adiciona complexidade sem ganho ("de brinde"); decisão válida só após entender o problema ([[wiki/concepts/diagnostico-antes-de-reestruturar]]).
 - [[wiki/sources/arquitetura-orientada-a-eventos-luiz-gago-faria-otavio-santana-eduardo-macris]] — EDA, DDD e microsserviços 'de fachada' como over-engineering sem benefício ([[wiki/concepts/eda-de-fachada]]); startup parada 3 meses
+- [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] — cinco defesas práticas contra o excesso; começar simples não é o erro, manter mal é
 
 ## Key sources (adição 2026-10-09)
 

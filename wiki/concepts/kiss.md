@@ -3,8 +3,8 @@ type: concept
 title: "KISS — Keep It Simple"
 aliases: ["kiss", "keep it simple", "pensar simples", "simplicidade intencional"]
 date_created: 2026-04-29
-date_updated: 2026-07-27
-source_count: 4
+date_updated: 2026-11-03
+source_count: 5
 tags: [kiss, over-engineering, principios, qualidade, design-patterns, testes]
 skill: tech-mentor-backend
 status: stable
@@ -92,9 +92,14 @@ O ganho não é só linhas de código — é a legibilidade para quem lê depois
 
 [[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]] (Chris Kiehl) formula, de outro ângulo, o mesmo espírito do Teste KISS acima: "boas práticas são contextuais e não amplamente aplicáveis — segui-las cegamente faz de você um idiota". A fonte também afirma que projetar sistemas escaláveis sem necessidade real "faz de você um engenheiro ruim" — reforço direto e sem ressalvas do vínculo já documentado nesta página entre KISS e evitar escalabilidade hipotética.
 
+## Analogia do martelo
+
+[[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] ilustra o princípio com a escolha entre o martelo convencional e uma supermáquina com propulsão e mil features para bater um prego. A regra: manter-se tão simples quanto necessário.
+
 ## Key Sources
 
 - [[wiki/sources/overengineering-carol-ate-quinta]]
 - [[wiki/sources/5-principios-que-mudaram-como-programador]]
 - [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] — origem na Marinha dos EUA, KISS aplicado a testes, exemplo de refactor de validação de status, benefício de retenção de usuário via UX simples
 - [[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]] — "boas práticas" como contextuais, não leis; escalar sem necessidade real como sinal de mau engenheiro
+- [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] — analogia do martelo; primeira defesa contra over-engineering

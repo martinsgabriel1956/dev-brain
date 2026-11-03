@@ -3,8 +3,8 @@ type: entity
 title: "Stripe"
 aliases: []
 date_created: 2026-10-07
-date_updated: 2026-10-07
-source_count: 1
+date_updated: 2026-11-03
+source_count: 2
 tags: [organizacao, pagamentos, cultura]
 skill: tech-mentor-leadership
 status: draft
@@ -17,3 +17,4 @@ Empresa de pagamentos; missão de impulsionar o crescimento econômico. Citada p
 ## Key Sources
 
 - [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]]
+- [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] — provedor de cartão no exemplo de Strategy com Adapter, com o SDK isolado atrás de um adaptador

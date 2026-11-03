@@ -3,8 +3,8 @@ type: concept
 title: "Começar no Relacional e Adicionar Peças Quando o Problema Aparecer"
 aliases: ["maturidade é começar simples","problema com nome e sobrenome","relacional primeiro"]
 date_created: 2026-10-05
-date_updated: 2026-10-05
-source_count: 1
+date_updated: 2026-11-03
+source_count: 2
 tags: [arquitetura, banco-de-dados, yagni, tomada-de-decisao, maturidade]
 skill: tech-mentor-data
 status: stub
@@ -16,6 +16,11 @@ Conclusão de [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-cod
 
 Variante específica de [[wiki/concepts/yagni]] e [[wiki/concepts/over-engineering]] para dados; paralelo com [[wiki/concepts/monolith-first]] e [[wiki/concepts/cargo-cult-tecnologico]] (escolher "o que a gigante usa"). Cuidado do mesmo vídeo: começar no relacional ≠ usá-lo para tudo (sessão, log, fila improvisada) quando o problema já apareceu. Ver [[wiki/concepts/persistencia-poliglota]].
 
+## Generalização além de armazenamento
+
+[[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] defende a mesma lógica para produto e arquitetura em geral, sob o nome de [[wiki/concepts/abordagem-evolutiva]]: não antecipar problemas e evoluir conforme a necessidade.
+
 ## Key Sources
 
 - [[wiki/sources/cinco-tipos-de-armazenamento-de-dados-qual-usar-codigo-fonte-tv]]
+- [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] — mesma lógica generalizada para produto e arquitetura

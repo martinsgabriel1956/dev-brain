@@ -3,8 +3,8 @@ type: concept
 title: "Escolha de Stack"
 aliases: ["escolher stack", "stack choice", "framework batteries included", "escolha de framework"]
 date_created: 2026-07-07
-date_updated: 2026-09-28
-source_count: 5
+date_updated: 2026-11-03
+source_count: 6
 tags: [stack, framework, projetos, mvp, saas, carreira]
 skill: tech-mentor-leadership
 status: stable
@@ -63,3 +63,4 @@ Em [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]], 
 - [[wiki/sources/15-dias-depois-lancar-sas-numeros-ataques-vulnerabilidades]] — rejeição de pressão externa para trocar de stack (Ruby → TypeScript) sem justificativa técnica real
 - [[wiki/sources/tres-mentiras-que-te-reprovam-em-entrevistas-de-arquitetura-de-sistemas]] — escolha de tecnologia reposicionada como exercício de tradeoff contextual (caso de uso × prós e contras), não de repertório memorizado
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]] — escolha de stack de carreira (critério de empregabilidade) para iniciante, distinta da escolha de stack de projeto
+- [[wiki/sources/utilizar-ou-nao-kubernetes-fluxo-de-decisao-cloud]] — mesma lógica aplicada a provedor e serviço: [[wiki/concepts/criterios-de-adocao-de-servico-cloud]]

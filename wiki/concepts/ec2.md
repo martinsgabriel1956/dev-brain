@@ -3,8 +3,8 @@ type: concept
 title: "Amazon EC2"
 aliases: ["EC2", "Elastic Compute Cloud"]
 date_created: 2026-08-04
-date_updated: 2026-10-26
-source_count: 3
+date_updated: 2026-11-03
+source_count: 4
 tags: ["aws", "ec2", "compute", "servidor", "infra", "cloud"]
 skill: tech-mentor-infra
 status: stub
@@ -49,3 +49,4 @@ Regra prática: produção estável em Reserved, picos em On-Demand, batch em Sp
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]
 - [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — famílias de instância (T/M/C/R) e os três modelos de preço com regra de uso por perfil de carga
 - [[wiki/sources/introducao-ao-terraform-iac-devops]] — Introdução ao Terraform: provisionando uma EC2 t3.micro com Terraform
+- [[wiki/sources/utilizar-ou-nao-kubernetes-fluxo-de-decisao-cloud]] — EC2 como equivalente de VM no de-para; controle total com SO e runtime "no braço"
