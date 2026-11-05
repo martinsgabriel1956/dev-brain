@@ -3,8 +3,8 @@ type: concept
 title: "Accountability em Equipes Ágeis"
 aliases: ["ser ágil é ser adulto", "accountability vs autonomia", "processo como muleta"]
 date_created: 2026-09-18
-date_updated: 2026-09-18
-source_count: 1
+date_updated: 2026-11-05
+source_count: 2
 tags: [agile, engineering-management, accountability, cultura, liderança]
 skill: tech-mentor-leadership
 status: stub
@@ -38,6 +38,11 @@ Nenhuma metodologia transforma uma equipe de pessoas imaturas em adultos — *ac
 - [[wiki/concepts/gestao-de-riscos-e-controle-ilusorio]] — a versão organizacional/de liderança da mesma tese
 - [[wiki/concepts/scrum-master]] — o papel que deveria proteger o time, mas vira fiscal de números quando o accountability real é substituído por checklist
 
+## O Limite da Metodologia, em 2014
+
+[[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] já defendia que nenhuma metodologia muda a personalidade de alguém e que a função de quem gere é entregar valor. Acrescenta uma consequência dura: quem é responsável pela empresa precisa agir sobre as pessoas quando o método expõe o problema. A generalização é contestável, ver a tensão 3 na página da fonte.
+
 ## Key Sources
 
-- [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — fonte primária desta ingestão, único source até o momento
+- [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — fonte primária do conceito
+- [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] — nenhuma metodologia muda personalidade; responsabilidade do dono da empresa de agir sobre o que foi exposto

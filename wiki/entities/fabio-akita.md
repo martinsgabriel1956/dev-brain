@@ -3,8 +3,8 @@ type: entity
 title: "Fábio Akita"
 aliases: ["Akita", "Akita On Rails"]
 date_created: 2026-05-16
-date_updated: 2026-10-14
-source_count: 14
+date_updated: 2026-11-05
+source_count: 15
 tags: [pessoa, programador, youtuber, brasil]
 skill: tech-mentor-leadership
 status: stable
@@ -74,6 +74,10 @@ Em [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]], vídeo comem
 
 Em [[wiki/sources/sobre-ser-gerente-fabio-akita]], apresenta sua visão mais ampla e consolidada sobre o papel de gerente. Rejeita certificações formais (PMP, MBA) como garantia de competência — descreve tê-las tratado como "colecionar papel" — e define gestão, na essência, como a capacidade de tomar decisões com informação incompleta. Reformula a tríade clássica de projeto (escopo-tempo-custo) acrescentando uma quarta variável invisível, qualidade, que absorve a pressão quando as outras três são mantidas fixas — ver [[wiki/concepts/triade-escopo-tempo-custo-qualidade]]. Aprofunda, com nova analogia (compilador como "operário automatizado", orquestra clássica vs. jazz), a tese já registrada em [[wiki/concepts/software-nao-e-engenharia-de-producao]] de que o programador é arquiteto, não operário. Introduz duas teses de contratação e liderança não documentadas em fontes anteriores: [[wiki/concepts/nivel-a-contrata-nivel-a]] (só nível A reconhece e contrata nível A) e [[wiki/concepts/gestor-deve-ter-sido-praticante]] (um gestor sem experiência prática na função nunca conquista respeito genuíno da equipe). Fecha com a tese central: "gerenciar projetos é gerenciar pessoas, e gerenciar pessoas é gerenciar expectativas" — confiança não é amizade, e feedback honesto é o que de fato preserva a confiança dentro de uma equipe.
 
+## Ágil Exige Boa Equipe (2014)
+
+Em [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]], post de 28/09/2014, defende que nenhuma prática ágil salva equipe ruim, porque elas apenas [[wiki/concepts/agil-como-exposicao-de-problemas|expõem problemas]], e que consertar uma equipe depressa exige trocar pessoas, linha de seu artigo de 2009 sobre o [[wiki/concepts/net-negative-producing-programmer|NNPP]]. Diz não usar os rótulos "Ágil" e "Scrum" na própria empresa. É uma das primeiras versões, na wiki, da crítica desenvolvida em [[wiki/sources/agilidade-manifesto-agil-fabio-akita]], e destoa de falas suas sobre talento inato e sobre iniciantes.
+
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]]
@@ -89,6 +93,7 @@ Em [[wiki/sources/sobre-ser-gerente-fabio-akita]], apresenta sua visão mais amp
 - [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]] — vídeo dos 300 mil inscritos; teoria geral sobre aprendizado/gestão via quebra do determinismo newtoniano, origem do movimento de qualidade (Deming, Goldratt, Six Sigma), tese "PDCA=DMAIC=Kaizen=Scrum=método científico", hipótese da beira do caos
 - [[wiki/sources/sobre-ser-gerente-fabio-akita]] — teoria consolidada sobre gestão de projetos e pessoas: crítica a PMP/MBA, quarta variável invisível (qualidade), programador como arquiteto (não operário), "nível A contrata nível A", gestor precisa ter sido praticante, confiança ≠ amizade
 - [[wiki/sources/3-erros-que-minam-confianca-como-dev-andre-casciotti]] — citado por André Casciotti: 'não terceirize suas decisões'
+- [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] — post de 2014: ágil exige boa equipe e expõe problemas; trocar pessoas como conserto rápido
 
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — episódio 4 do Developer World Map: história do front end como método de estudo ([[wiki/concepts/historia-do-front-end]])

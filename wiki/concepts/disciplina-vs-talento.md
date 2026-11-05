@@ -3,8 +3,8 @@ type: concept
 title: "Disciplina vs Talento"
 aliases: ["talento não é determinante", "disciplina supera talento", "dom para programação"]
 date_created: 2026-06-26
-date_updated: 2026-09-02
-source_count: 7
+date_updated: 2026-11-05
+source_count: 8
 tags: [carreira, mentalidade, aprendizado, disciplina, talento, iniciante]
 skill: tech-mentor-leadership
 status: stable
@@ -67,6 +67,10 @@ A única variável que o iniciante controla é a constância da prática. Talent
 - [[comparacao-na-carreira]] — contexto em que a crença no talento é mais destrutiva
 - [[linha-de-largada]] — por que comparação inicial é injusta
 
+## Oitava Fonte: Contraponto do Próprio Akita
+
+[[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]], de 2014, defende que só a prática forma o profissional, mas também afirma que parte das pessoas não tem talento nem predisposição e não vai mudar. Isso destoa de [[wiki/sources/akita-pratica-deliberada-mito-do-talento]], em que o mesmo autor diz que talento inato não existe. A wiki registra a divergência sem decidir, e o vídeo não tem data confirmada aqui para indicar qual posição é a mais recente.
+
 ## Key Sources
 
 - [[wiki/sources/the-comparison-trap-in-programming-careers]] — conclusão central: "disciplina supera talento"
@@ -76,3 +80,4 @@ A única variável que o iniciante controla é a constância da prática. Talent
 - [[wiki/sources/14-habitos-desenvolvedores-altamente-produtivos]] — quinta fonte; Hábitos 4 e 6, consistência vs. intensidade e investimento fora do 9-às-5
 - [[wiki/sources/papinho-tech-solo-q-and-a-carreira]] — sexta fonte; autodisciplina como fator decisivo no EAD sem cobrança externa
 - [[wiki/sources/akita-pratica-deliberada-mito-do-talento]] — sétima fonte; talento inato não existe, caso Mozart como evidência histórica, mecanismo estrutural da prática deliberada
+- [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] — oitava fonte; fala de falta de talento, em tensão com a posição de Akita sobre talento inato

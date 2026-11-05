@@ -3,8 +3,8 @@ type: concept
 title: "Gestão de Riscos vs. Controle Ilusório"
 aliases: ["ter controle vs achar que tem controle", "risco zero não existe", "microgerenciamento como falso controle"]
 date_created: 2026-09-18
-date_updated: 2026-09-22
-source_count: 3
+date_updated: 2026-11-05
+source_count: 4
 tags: [agile, engineering-management, gestao-de-riscos, tomada-de-decisao]
 skill: tech-mentor-leadership
 status: stub
@@ -44,8 +44,13 @@ Em empresas com muitas equipes, frequentemente é possível identificar equipes 
 - [[wiki/concepts/manifesto-agil-como-adjetivo]] — processo/ferramenta usado como substituto de decisão real é a mesma distorção do manifesto original
 - [[wiki/concepts/beira-do-caos]] — assumir risco deliberadamente como instância de "caos controlado" em vez de ordem/controle absoluto
 
+## Ágil Como Mecanismo de Risco
+
+[[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]], de 2014, antecipa o argumento: práticas ágeis servem para reduzir e gerenciar risco, descobrindo obstáculos quando surgem. O risco que a organização costuma evitar é o da decisão sobre pessoas. Ver [[wiki/concepts/agil-como-exposicao-de-problemas]].
+
 ## Key Sources
 
 - [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — fonte primária desta ingestão, único source até o momento
 - [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]] — repete a analogia do seguro quase verbatim, acrescentando a máxima "se você tem risco, vai acabar tendo perda"
 - [[wiki/sources/sobre-ser-gerente-fabio-akita]] — dimensão comportamental: saber dizer não como habilidade central; escolha de batalhas como analogia militar de gestão de risco sob recursos finitos
+- [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] — ágil como redução e gerenciamento de risco, em texto de 2014

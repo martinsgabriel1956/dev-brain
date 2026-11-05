@@ -3,8 +3,8 @@ type: concept
 title: "Manifesto Ágil Como Adjetivo, Não Substantivo"
 aliases: ["ágil é adjetivo", "não existe metodologia ágil", "ágil não é um nome"]
 date_created: 2026-09-18
-date_updated: 2026-10-30
-source_count: 2
+date_updated: 2026-11-05
+source_count: 3
 tags: [agile, manifesto-agil, engineering-management, historia]
 skill: tech-mentor-leadership
 status: stub
@@ -36,9 +36,16 @@ A fonte insiste em nomear os autores originais do manifesto (Martin Fowler, Kent
 - [[wiki/concepts/scrum-master]] e [[wiki/concepts/goodharts-law]] — exemplos concretos já documentados na wiki de "ágil industrializado"
 - [[wiki/entities/dave-thomas]]
 
+## Antes da Formulação: Críticas de 2014
+
+Em [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]], de 2014, [[wiki/entities/fabio-akita]] ainda fala em "implementar" práticas, mas já põe o termo entre aspas e evita os rótulos na própria empresa. O texto trata a certificação e o Scrum como pacote comercial, sem usar o argumento gramatical.
+
+O post de [[wiki/entities/dave-thomas]] de 04/03/2014 confirma que o argumento do adjetivo já estava ali, antes da palestra de 2015 ([external](https://pragdave.me/thoughts/active/2014-03-04-time-to-kill-agile.html)).
+
 ## Key Sources
 
 - [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — fonte primária desta ingestão, único source até o momento
+- [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] — post de 2014 com a crítica ao pacote comercial, antes do argumento do adjetivo aparecer nos textos de Akita
 
 ## Ágil-Processo Sob Pressão da IA
 

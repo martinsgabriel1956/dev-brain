@@ -3,8 +3,8 @@ type: entity
 title: "Uncle Bob (Robert C. Martin)"
 aliases: ["uncle bob", "robert c. martin", "robert cecil martin"]
 date_created: 2026-07-03
-date_updated: 2026-10-06
-source_count: 16
+date_updated: 2026-11-05
+source_count: 17
 tags: [clean-code, clean-architecture, solid, autor, quality-gate]
 skill: tech-mentor-backend
 status: stub
@@ -80,6 +80,10 @@ Em [[wiki/sources/agilidade-manifesto-agil-fabio-akita]], citado como um dos 17 
 
 **Nota de verificação**: mesma cautela de atribuição das menções anteriores — a citação é parafraseada pela transcrição de Akita, sem link, data ou texto exato do post/palestra original de Uncle Bob.
 
+## Décima Terceira Menção: Entrevista na RailsConf 2010
+
+Em [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]], [[wiki/entities/fabio-akita]] conta ter dito a Martin, na RailsConf 2010, sua teoria sobre o que motivou Ken Schwaber a criar a certificação de Scrum. A página da entrevista confirma a conversa sobre certificações e Ágil e a história do manifesto ([external](https://www.akitaonrails.com/2010/06/16/railsconf-2010-video-entrevista-robert-martin/)), mas a teoria só estaria no vídeo, não assistido.
+
 ## Key Sources
 
 
@@ -99,3 +103,4 @@ Em [[wiki/sources/agilidade-manifesto-agil-fabio-akita]], citado como um dos 17 
 - [[wiki/sources/code-review-morreu-uncle-bob-push-force-prod-lucas-montano]] — vídeo de Lucas Montano: treta com "Fernando" sobre estar on call, origem nos anos 60, citação "code quality still matters... tools that measure", projetos GitHub como play projects
 - [[wiki/sources/busca-linear-e-binaria-giovana]] — menção contextual: seu livro *Código Limpo* (*Clean Code*) usado como objeto físico na analogia da busca (procurar a página 310)
 - [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — signatário do manifesto de 2001; citação parafraseada "não existe metodologia ágil, existe ser ágil"
+- [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] — entrevista de 2010 sobre certificações e Ágil; teoria sobre Schwaber não conferida

@@ -3,8 +3,8 @@ type: entity
 title: "Fred Brooks"
 aliases: ["fred brooks", "Frederick Brooks", "No Silver Bullet", "Mythical Man-Month"]
 date_created: 2026-04-23
-date_updated: 2026-09-30
-source_count: 5
+date_updated: 2026-11-05
+source_count: 6
 tags: [fred-brooks, essential-complexity, accidental-complexity, software-engineering, mythical-man-month, design-concept]
 skill: tech-mentor-system-design
 status: stable
@@ -48,6 +48,10 @@ Argumento central: não existe bala de prata em software porque a maior parte da
 
 Verbete próprio: [[wiki/concepts/lei-de-brooks]]. [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]] usa a lei para defender times pequenos e recomenda ler o capítulo sobre "time cirúrgico" de um livro antigo (grafia ilegível na transcrição; provavelmente *The Mythical Man-Month*, inferência). Ver [[wiki/concepts/time-cirurgico]].
 
+## Leitura Recomendada Contra a Ideia de Novidade Ágil
+
+[[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] recomenda *The Mythical Man-Month* para mostrar que as práticas vêm evoluindo muito antes do manifesto. O artigo de 2009 do mesmo autor, citado em [[wiki/concepts/net-negative-producing-programmer]], atribui ao livro a diferença de 10 vezes entre programadores; não conferido.
+
 ## Key Sources
 
 - [[wiki/sources/conceitos-que-ninguem-ensina]]
@@ -55,3 +59,4 @@ Verbete próprio: [[wiki/concepts/lei-de-brooks]]. [[wiki/sources/times-menores-
 - [[wiki/sources/cognitive-debt-margaret-storey]] — coordenação/sobrecarga cognitiva aplicada a agentes de IA
 - [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — citado sem obra/frase especificada
 - [[wiki/sources/times-menores-multiplos-papeis-ia-compressao-cruzamento-valorizacao]]
+- [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] — *The Mythical Man-Month* como prova de que as práticas antecedem o manifesto

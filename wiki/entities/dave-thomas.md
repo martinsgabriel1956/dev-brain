@@ -3,8 +3,8 @@ type: entity
 title: "Dave Thomas (Pragmatic Programmer)"
 aliases: ["dave thomas", "pragmatic dave"]
 date_created: 2026-09-18
-date_updated: 2026-09-18
-source_count: 1
+date_updated: 2026-11-05
+source_count: 2
 tags: [autor, agile, manifesto-agil, pragmatic-programmer]
 skill: tech-mentor-leadership
 status: stub
@@ -22,8 +22,15 @@ Segundo [[wiki/sources/agilidade-manifesto-agil-fabio-akita]], numa palestra na 
 
 O mesmo blog post de 2014 é citado como contemporâneo ao artigo "Ágil está morto", escrito por [[wiki/entities/fabio-akita]] na mesma época — ambos os autores, de forma independente, já declaravam a "morte" do termo ágil devido à sua distorção comercial.
 
-**Nota de verificação:** nem a palestra GOTO 2015 nem o blog post de 2014 foram assistidos/lidos diretamente nesta ingestão — o relato vem inteiramente da transcrição de Akita, que recomenda assistir à palestra na íntegra. Candidato a ingestão futura como fonte primária independente.
+**Nota de verificação:** a palestra GOTO 2015 segue não assistida; o relato dela vem da transcrição de Akita. O post de 2014 foi lido em 2026-11-05, ver abaixo.
+
+## Post de 2014 Lido na Fonte Primária
+
+O post "Agile is Dead (Long Live Agility)", de 04/03/2014, foi lido nesta ingestão ([external](https://pragdave.me/thoughts/active/2014-03-04-time-to-kill-agile.html)). Ele confirma o argumento gramatical, propõe aposentar a palavra por ter virado termo de marketing e critica consultores e vendedores. Como alternativa, resume a agilidade a um ciclo: ver onde se está, dar um passo pequeno, ajustar a partir do aprendido e repetir, preferindo o caminho que facilita mudanças futuras.
+
+Esse post é o gatilho de [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]]. Thomas mira a palavra e o mercado em volta dela, não os valores, que diz continuar defendendo.
 
 ## Key Sources
 
-- [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — único source até o momento; relato de segunda mão da palestra GOTO 2015 e do blog post de 2014
+- [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — relato de segunda mão da palestra GOTO 2015 e do blog post de 2014
+- [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] — post de Akita (2014) que parte da declaração de Thomas; o post original de Thomas foi lido nesta ingestão como conferência

@@ -3,8 +3,8 @@ type: concept
 title: "Prática Deliberada"
 aliases: ["deliberate practice", "10000 horas", "regra das 10000 horas", "800 horas júnior", "horas de prática"]
 date_created: 2026-06-10
-date_updated: 2026-09-28
-source_count: 5
+date_updated: 2026-11-05
+source_count: 6
 tags: [aprendizado, carreira, mentalidade, iniciante, maestria]
 skill: tech-mentor-leadership
 status: stable
@@ -82,6 +82,10 @@ Exercício de curso é deliberadamente simplificado por razões didáticas — b
 
 [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] contribui uma heurística de alocação de tempo complementar (não uma medição rigorosa como as 800–1000h citadas acima): dentro do foco de carreira, 20% do tempo em estudo e 80% em prática; fora do foco, a proporção se inverte. É uma regra prática pessoal do autor, sem dado empírico citado — ver [[wiki/concepts/proporcao-8020-estudo-pratica]] para o detalhamento e o anti-padrão do "dev pitaqueiro" que ela busca evitar.
 
+## Profissão de Prática: Analogia do Goleador
+
+[[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] compara o programador novato ao jogador de futebol: dois dias de treinamento não fazem um artilheiro, só a prática contínua com pequenas melhorias, e mesmo assim sem garantia. Usa isso para dizer que adicionar métodos não transforma um programador ruim em bom.
+
 ## Key Sources
 
 - [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] — proporção 80/20 estudo/prática dentro e fora do foco, como heurística complementar às 800–1000h
@@ -89,3 +93,4 @@ Exercício de curso é deliberadamente simplificado por razões didáticas — b
 - [[wiki/sources/the-comparison-trap-in-programming-careers]] — estratégia de "refazer exercícios antigos do zero sem ver a solução" como forma de medir progresso; equivale a prática deliberada com feedback imediato sobre velocidade e automatização
 - [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] — prática de curso vs. prática real; automações pessoais de baixo risco como veículo de prática deliberada
 - [[wiki/sources/akita-pratica-deliberada-mito-do-talento]] — zona de aprendizado, alta repetição, limite de 4-5h/dia, autoavaliação vs. validação externa; caso Mozart como evidência histórica
+- [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] — analogia do goleador: método não substitui prática contínua

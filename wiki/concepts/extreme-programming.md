@@ -3,8 +3,8 @@ type: concept
 title: "Extreme Programming (XP)"
 aliases: ["xp", "programação extrema"]
 date_created: 2026-08-23
-date_updated: 2026-09-18
-source_count: 6
+date_updated: 2026-11-05
+source_count: 7
 tags: [extreme-programming, kent-beck, agile, historia, craftsmanship]
 skill: tech-mentor-testing
 status: stub
@@ -52,6 +52,12 @@ Fonte primária isolada: [[wiki/sources/ixp-industrial-xp-xunitpatterns]] (verbe
 - [[wiki/entities/c3-project]]
 - [[wiki/concepts/very-low-defect-project]]
 
+## Scrum Sem as Práticas do XP
+
+[[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] observa que o Scrum, sozinho, não inclui as práticas de programação do XP. O Scrum Guide de 2020 confirma para a versão atual: não cita TDD, pair programming, integração contínua nem refatoração ([external](https://scrumguides.org/scrum-guide.html)).
+
+O mesmo post diz que essas práticas nascem entre programadores experientes e não ajudam uma equipe novata, o que contrasta com a recomendação de XP para iniciantes registrada acima. A tensão está detalhada na página da fonte.
+
 ## Key Sources
 
 - [[wiki/sources/c3-martin-fowler]]
@@ -60,3 +66,4 @@ Fonte primária isolada: [[wiki/sources/ixp-industrial-xp-xunitpatterns]] (verbe
 - [[wiki/sources/extreme-programming-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição mais genérica do próprio termo "eXtreme Programming"
 - [[wiki/sources/ixp-industrial-xp-xunitpatterns]] — verbete de glossário do mesmo site, isolando a definição de Industrial XP (IXP) como variante de escala do XP, criada por Joshua Kerievsky
 - [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — recomenda XP (não Scrum) como ponto de partida para iniciantes; Kent Beck e Ward Cunningham como criadores, no contexto dos 17 signatários do manifesto de 2001
+- [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] — Scrum não inclui as práticas de XP; práticas não ajudariam equipe novata (tensão com a recomendação a iniciantes)

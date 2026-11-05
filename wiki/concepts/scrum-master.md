@@ -3,8 +3,8 @@ type: concept
 title: "Scrum Master"
 aliases: ["SM", "Facilitador Scrum"]
 date_created: 2026-07-28
-date_updated: 2026-09-22
-source_count: 4
+date_updated: 2026-11-05
+source_count: 5
 tags: [agile, scrum, engineering-management, papeis]
 skill: tech-mentor-leadership
 status: stable
@@ -48,9 +48,14 @@ O Agile nasceu porque desenvolvedores estavam exaustos de fazer *crunch* e entre
 
 [[wiki/concepts/story-points]] · [[wiki/concepts/planning-poker]] · [[wiki/concepts/goodharts-law]] · [[wiki/concepts/manifesto-agil-como-adjetivo]] · [[wiki/concepts/tentativa-e-erro-como-metodo-cientifico]]
 
+## Scrum Como Pacote Comercial
+
+[[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] trata o Scrum como o principal pacote comercial das ideias ágeis e chama a certificação de Scrum de idiota, opinião forte do autor. Isso ajuda a explicar a pressão sobre o papel: o que a certificação vende é o rótulo, e o método só ajuda se [[wiki/concepts/agil-como-exposicao-de-problemas|os problemas expostos forem tratados]].
+
 ## Key Sources
 
 - [[wiki/sources/story-points-po-forcando-30-40-pontos-por-sprint]]
 - [[wiki/sources/agilidade-manifesto-agil-fabio-akita]] — Scrum como distorção posterior do manifesto original, não sua implementação canônica
 - [[wiki/sources/aprendizado-gestao-e-beira-do-caos-fabio-akita]] — Sprint/retrospectiva como instância do mesmo ciclo estrutural do PDCA/Kaizen do Modelo Toyota
 - [[wiki/sources/sobre-ser-gerente-fabio-akita]] — sprint acima de 2 semanas como sintoma de reunião longa demais ou interrupção constante, não escolha neutra de processo
+- [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] — Scrum como pacote comercial e crítica à certificação

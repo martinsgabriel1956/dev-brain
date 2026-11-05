@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-11-03
+date_updated: 2026-11-05
 ---
 
 
@@ -26,6 +26,7 @@ date_updated: 2026-11-03
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] | Post de [[wiki/entities/fabio-akita]] (2014): nenhuma prática ágil salva equipe ruim; elas [[wiki/concepts/agil-como-exposicao-de-problemas\|expõem problemas e reduzem risco]], e consertar uma equipe depressa exigiria trocar pessoas |
 | [[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] | Vídeo, autor não identificado: [[wiki/concepts/power-wall\|power wall]] travou a frequência da CPU, e o ganho migrou para [[wiki/concepts/multicore]], [[wiki/concepts/microarquitetura]] e [[wiki/concepts/gpu\|GPUs]]. Tese confere; data, frequências e stack na GPU têm erros |
 | [[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] | [[wiki/entities/bernardo-lobato]]: história do software e tese de que a [[wiki/concepts/programacao-orientada-a-objetos]] **desceu um degrau**, de forma obrigatória de organizar o sistema a ferramenta dentro do serviço. Origem (Simula, Alan Kay) confere com fontes primárias; a perda de relevância se apoia em anedotas |
 | [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] | Vídeo, autor não identificado: Strategy, Observer, Adapter, máquina de estados e retry com circuit breaker; destaque para [[wiki/concepts/strategy-com-adapter]]. Aplica retry a pagamentos sem citar idempotência |
@@ -884,6 +885,13 @@ date_updated: 2026-11-03
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### Ágil Como Exposição de Problemas (2026-11-05)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/agil-como-exposicao-de-problemas]] | Práticas ágeis não melhoram a equipe por si; encurtam o tempo até o problema aparecer, e o ganho depende de agir sobre ele |
+| [[wiki/concepts/net-negative-producing-programmer]] | Programador cuja presença reduz a produção da equipe; tese de 2009 de Akita, sem dados próprios |
 
 ### Power Wall, CPU e GPU (2026-11-03)
 

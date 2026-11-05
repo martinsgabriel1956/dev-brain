@@ -3,7 +3,7 @@ type: source
 title: "Agilidade e o Manifesto Ágil"
 aliases: ["ágil está morto", "agilidade é ser adulto", "crítica ao movimento ágil akita"]
 date_created: 2026-09-18
-date_updated: 2026-09-18
+date_updated: 2026-11-05
 source_count: 0
 source_file: "/home/gabriel-martins/Documentos/dev-brain/raw/agilidade-manifesto-agil-fabio-akita.md"
 source_url: ""
@@ -73,3 +73,4 @@ Rant de [[wiki/entities/fabio-akita]] contra a indústria de consultoria/coachin
 - (2) **O artigo do próprio Akita, "Ágil está morto" (2014)**, mencionado como escrito na mesma época do blog post de Dave Thomas, também não foi lido nesta ingestão — é uma fonte separada em potencial.
 - (3) A citação atribuída a Uncle Bob ("não existe metodologia ágil, existe ser ágil") é parafraseada pela transcrição, sem link ou data ao post/vídeo original — mesma cautela de atribuição já registrada em várias outras menções a Uncle Bob nesta wiki (ver [[wiki/entities/uncle-bob]]).
 - (4) Comparação factual entre o Kanban de manufatura da Toyota e o Kanban de software (claim 3) é afirmada qualitativamente pelo autor, sem detalhamento ponto a ponto nesta fonte — candidato a uma página dedicada de comparação, se surgir uma fonte que faça essa análise em profundidade.
+- (5) **Atualização 2026-11-05:** o post de Thomas de 2014, parte da questão (1), foi lido e confirma o argumento do adjetivo; a palestra GOTO segue não assistida. Sobre a questão (2), [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] é um post de Akita de 2014 que parte de Thomas, mas não há confirmação de que seja o "Ágil está morto". Esse post também diverge desta fonte sobre iniciantes (claim 12), ver a tensão 2 na página dele.
