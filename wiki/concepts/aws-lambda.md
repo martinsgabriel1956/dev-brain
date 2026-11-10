@@ -3,7 +3,7 @@ type: concept
 title: "AWS Lambda"
 aliases: ["Lambda", "AWS Lambda Function"]
 date_created: 2026-08-04
-date_updated: 2026-08-17
+date_updated: 2026-11-10
 source_count: 3
 tags: ["aws", "lambda", "serverless", "faas", "infra", "cloud"]
 skill: tech-mentor-infra
@@ -48,3 +48,11 @@ Triggers mais comuns: [[wiki/concepts/api-gateway|API Gateway]] (HTTP), [[wiki/c
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]
 - [[wiki/sources/infraestrutura-como-codigo-cdk-aws]] — deploy e atualização de um Lambda via AWS CDK, incluindo concessão de permissão de escrita num bucket S3
 - [[wiki/sources/15-servicos-essenciais-aws-para-dominar-qualquer-arquitetura]] — triggers mais comuns, Provisioned Concurrency, timeout de 15min, e quando EC2 é mais barato que Lambda
+
+## WebSocket e serverless (2026-11-10)
+
+[[wiki/sources/polling-sse-websocket-comunicacao-em-tempo-real]] diz que não dá para usar WebSocket em toda aplicação, "como por exemplo um serverless". A função Lambda de fato não mantém a conexão, mas o API Gateway oferece WebSocket APIs "bidirectional" que guardam a conexão e invocam Lambda por rota ([external](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api.html)). Com uma camada gerenciada, WebSocket em serverless é viável.
+
+## Key sources (adição 2026-11-10)
+
+- [[wiki/sources/polling-sse-websocket-comunicacao-em-tempo-real]] — limite de WebSocket em serverless, relativizado pelo API Gateway WebSocket

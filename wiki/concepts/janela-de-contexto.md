@@ -3,8 +3,8 @@ type: concept
 title: "Janela de Contexto"
 aliases: ["context window", "context length", "janela de tokens"]
 date_created: 2026-05-18
-date_updated: 2026-10-14
-source_count: 9
+date_updated: 2026-11-10
+source_count: 11
 tags: [llm, tokens, agentes-ia, llmops]
 skill: tech-mentor-ai
 status: draft
@@ -64,8 +64,18 @@ Mesmo com janelas de contexto de até 1M de tokens disponíveis, a recomendaçã
 
 Janela de 128k tokens não equivale a 128k palavras: a razão tokens/palavra varia por idioma e conteúdo (≈1,3–1,7 em português). [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
 
+## Sintomas de Janela Cheia
+
+[[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] lista sinais práticos para abrir nova sessão: esquecer instrução inicial, repetir erro já corrigido, reler arquivos recém-lidos e responder genérico sem citar o código. É heurística de uso, sem medição.
+
+## Meta de 30% e Contexto Novo por Fase
+
+[[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] recomenda ficar em no máximo 30% de uma janela de 200.000 tokens e abrir contexto novo a cada fase. Na demonstração, os planos terminam em 31%, 34% e 37%, e a conversa de quebra em 44%. É heurística sem medição, mais conservadora que os ~40% de [[wiki/concepts/dumb-zone]].
+
 ## Key Sources
 
+- [[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] — meta de 30% e percentuais observados na demonstração
+- [[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] — sintomas de janela cheia
 - [[wiki/sources/token-anxiety-agentes-ia-comportamento-devs]]
 - [[wiki/sources/custo-tokens-portugues-vs-ingles]]
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]

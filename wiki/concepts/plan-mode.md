@@ -3,8 +3,8 @@ type: concept
 title: "Plan Mode"
 aliases: ["modo planejamento", "auto-accept", "shift tab claude code"]
 date_created: 2026-05-31
-date_updated: 2026-08-11
-source_count: 3
+date_updated: 2026-11-10
+source_count: 5
 tags: [claude-code, plan-mode, agente-ia, workflow, context-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -87,8 +87,18 @@ Uma boa prática é salvar o plano aprovado em arquivo dentro do projeto (com ti
 
 O Codex não salva o plano automaticamente — configure o harness para fazê-lo se necessário.
 
+## Código Certo Para o Problema Errado
+
+[[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] justifica o modo com a frase "o erro mais caro não é o código errado, é o código certo pro problema errado" e o ciclo explorar, planejar, implementar, verificar. O comando direto é `/plan`. Ver [[wiki/concepts/modos-de-permissao-claude-code]].
+
+## Plano num Agente, Execução em Outro
+
+[[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] gera o plano em modo de plano, revisa contra os padrões do projeto e o envia a um agente novo para executar, porque criar o plano já consumiu mais de 30% da janela. Assim, correções posteriores não acontecem numa janela cheia.
+
 ## Key Sources
 
+- [[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] — plano enviado a agente novo para executar
+- [[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] — justificativa e ciclo de quatro etapas
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/formacao-ia-devs-aula-03-plan-mode]]
 - [[wiki/sources/extrair-melhor-codigo-de-agentes-ia-planejamento-plan-mode-skills]] — modo plan na IDE [[wiki/entities/verdent-ai|Verdent]]: mapeia dependências, gera especificação técnica com diagrama Mermaid, pergunta em pontos ambíguos e só codifica ("build") após o plano ser revisado e comentado

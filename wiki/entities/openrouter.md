@@ -3,8 +3,8 @@ type: entity
 title: "OpenRouter"
 aliases: ["open router"]
 date_created: 2026-08-05
-date_updated: 2026-09-30
-source_count: 4
+date_updated: 2026-11-10
+source_count: 5
 tags: [tech-mentor-ai, ai-gateway, multi-provider, llm, prompt-caching]
 skill: tech-mentor-ai
 status: stub
@@ -26,9 +26,14 @@ Em [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-
 
 Segundo [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]], a chamada crua roteia para qualquer provedor; o uso profissional fixa um [[wiki/concepts/pool-de-provedores-llm|pool de ≥3 provedores]] avaliados por [[wiki/concepts/criterios-de-selecao-de-provedor-llm|seis critérios]] e restringe quantização, preço e retenção de dados no payload. Modelos [[wiki/concepts/open-weight-model|open weight]] têm preço distribuído por provedor.
 
+## Modelos por Nó em Workflow
+
+[[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]] usa a OpenRouter para trocar o modelo de cada nó no env file, incluindo [Qwen 3.7 Max](https://openrouter.ai/qwen/qwen3.7-max) `[external]` na síntese.
+
 ## Key Sources
 
 - [[wiki/sources/rotacao-de-contas-free-tier-llm-router-hostinger]]
 - [[wiki/sources/prompt-caching-kv-cache-engenharia-de-contexto-ronald-hulk]] — suporte a prompt caching como propriedade da combinação modelo+provedor, não da OpenRouter isoladamente
 - [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-golden-dataset]] — IDs de modelo do OpenRouter no registro de versões de prompt
 - [[wiki/sources/openrouter-como-profissional-provedores-quantizacao-retencao-fallback-ronald-hulk]] — guia de uso profissional: modelo+provedor, pool, quantização, ZDR e payload `provider`
+- [[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]] — um modelo por nó, configurado por variável

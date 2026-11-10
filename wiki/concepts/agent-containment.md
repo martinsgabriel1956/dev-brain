@@ -3,7 +3,7 @@ type: concept
 title: "Agent Containment (Contenção de Agentes de IA)"
 aliases: ["agent containment", "contenção de agente", "sandboxing de agente de ia", "ai jail"]
 date_created: 2026-07-20
-date_updated: 2026-09-21
+date_updated: 2026-11-10
 source_count: 7
 tags: [agent-containment, sandboxing, security, defense-in-depth, principio-do-menor-privilegio, ai-safety, harness]
 skill: tech-mentor-security
@@ -47,7 +47,7 @@ Isso reforça o ponto central desta página — "quem controla a saída da cela"
 
 ## Recomendação Oficial: Sandbox para Loops Não Interrompidos
 
-A própria Anthropic recomenda usar algum mecanismo de sandbox (VM, container ou dev container) sempre que o [[wiki/entities/claude-code]] roda em um loop não interrompido — sem um humano aprovando cada passo, como em automações de longa duração (`/go`, ver [[wiki/concepts/gerenciamento-de-sessoes-claude-code]]). A justificativa é a mesma da contenção de sessão descrita acima: sem alguém revisando cada ação em tempo real, o isolamento do processo passa a ser a única barreira prática contra um comando destrutivo ou uma dependência maliciosa.
+A própria Anthropic recomenda usar algum mecanismo de sandbox (VM, container ou dev container) sempre que o [[wiki/entities/claude-code]] roda em um loop não interrompido — sem um humano aprovando cada passo, como em automações de longa duração (`/goal`, ver [[wiki/concepts/gerenciamento-de-sessoes-claude-code]]). A justificativa é a mesma da contenção de sessão descrita acima: sem alguém revisando cada ação em tempo real, o isolamento do processo passa a ser a única barreira prática contra um comando destrutivo ou uma dependência maliciosa.
 
 ## Relação com Outros Conceitos
 

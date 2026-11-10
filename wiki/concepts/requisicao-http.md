@@ -3,8 +3,8 @@ type: concept
 title: "Requisição HTTP"
 aliases: ["http request", "anatomia da requisição", "http request response"]
 date_created: 2026-09-30
-date_updated: 2026-10-09
-source_count: 3
+date_updated: 2026-11-10
+source_count: 4
 tags: [http, api, protocolo, cliente-servidor]
 skill: tech-mentor-networking
 status: stub
@@ -42,3 +42,7 @@ rota → [[wiki/concepts/middleware]] → controller → service → banco → r
 
 ## Key sources (adição 2026-10-09)
 - [[wiki/sources/url-vs-uri-diferenca-urn-identificacao-localizacao]] — a URL da requisição é uma URI que localiza o recurso; query param seleciona o recurso (ver [[wiki/concepts/url]])
+
+## Key sources (adição 2026-11-10)
+
+- [[wiki/sources/polling-sse-websocket-comunicacao-em-tempo-real]] — HTTP como pergunta e resposta: sem gatilho do cliente o servidor não fala, origem do problema de tempo real

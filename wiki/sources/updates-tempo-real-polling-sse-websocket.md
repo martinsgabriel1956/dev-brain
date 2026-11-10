@@ -3,7 +3,7 @@ type: source
 title: "Updates em Tempo Real: Polling, SSE e WebSocket na Entrevista"
 aliases: ["real-time updates system design", "polling vs sse vs websocket entrevista", "load balancer L4 websocket"]
 date_created: 2026-07-03
-date_updated: 2026-07-03
+date_updated: 2026-11-10
 source_count: 0
 tags: [realtime, polling, long-polling, sse, websocket, load-balancer, redis, pub-sub, system-design, entrevista, backend]
 skill: tech-mentor-backend
@@ -69,3 +69,7 @@ Quarto vídeo de uma série de system design para entrevistas: percorre as três
 > "Quando o usuário 1 se conecta no servidor, ele se inscreve em um tópico do Redis chamado, por exemplo, user:1 [...] Quando aperta enter e manda a mensagem, o servidor publica essa mensagem no tópico user:2."
 
 > "Não caia nessa cilada de usar uma arquitetura super forte para um sistema que é super simples."
+
+## Fontes relacionadas (adição 2026-11-10)
+
+- [[wiki/sources/polling-sse-websocket-comunicacao-em-tempo-real]] — versão introdutória do mesmo trio, com a regra "só vá pro WebSocket se os outros dois não funcionarem"; não trata de escala horizontal nem de LB L4

@@ -3,8 +3,8 @@ type: concept
 title: "Harness"
 aliases: ["AI harness", "harness de IA", "coding harness"]
 date_created: 2026-06-02
-date_updated: 2026-10-14
-source_count: 29
+date_updated: 2026-11-10
+source_count: 31
 tags: [harness, llm, tool-call, agente, context-engineering, erros-compostos, verificacao]
 skill: tech-mentor-ai
 status: stable
@@ -176,7 +176,13 @@ O autor de [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoe
 
 Fonte curta que define harness como tudo menos o modelo e traz o princípio de [[wiki/entities/mitchell-hashimoto]]: cada erro vira uma [[wiki/concepts/trava-deterministica-no-harness]]. Dois propósitos: acertar de primeira (guias) e fechar ciclo de feedback (sensores). Três camadas: modelo → harness da ferramenta → user harness. De-para de componentes em [[wiki/concepts/harness-componentes-por-capacidade]]. Ferramenta alternativa: [[wiki/entities/deepseek-harness]].
 
+## O Modelo Para Quando Acha Que Terminou
+
+[[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] reforça a divisão de trabalho: o harness executa, aplica permissões e monta contexto; o modelo decide e para quando acha que terminou, e por isso precisa de verificador. Trocar de modelo muda a decisão, não as ferramentas. A tese de fecho é que o harness "não faz mágica" sem configuração.
+
 ## Key Sources
+
+- [[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] — divisão harness/modelo no Claude Code; "o harness não faz mágica"
 - [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]] — o nome Harness Engineering surgiu da prática, não de livro; novas harnesses são melhoria incremental (opinião do autor)
 
 
@@ -199,13 +205,17 @@ Fonte curta que define harness como tudo menos o modelo e traz o princípio de [
 - [[wiki/sources/loop-engineering-harness-e-a-frase-que-viralizou]] — corrige a leitura "loop engineering matou harness engineering": o loop contém o harness, não o substitui; três fatores que tornaram loops longos viáveis em 2026 (modelo, harness, estado persistente)
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] — matemática de erros compostos (99%ⁿ), quatro mecanismos de mitigação (verificação, checkpoints, ferramentas, contexto limpo), caso Vercel (remoção de 80% das ferramentas), doze componentes do harness (sete documentados)
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]] — a harness executa comandos de shell nativos (`cat`, `echo`, `grep`, `sed`) na máquina do usuário e envia o output ao servidor da Anthropic; "puro suco da harness"
-- [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — qualidade de compactação de contexto do Codex como diferencial do harness no comando `/go`; stop hook como ponto de extensão determinístico para o padrão judge
+- [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — qualidade de compactação de contexto do Codex como diferencial do harness no comando `/goal`; stop hook como ponto de extensão determinístico para o padrão judge
 - [[wiki/sources/harness-explicado-function-calling-hag-evals]] — harness mínima em ~1 arquivo Python (system prompt + 1 tool + loop while true) como esqueleto didático do mecanismo por trás de Claude Code/Codex; workaround via tags XML antes do function calling nativo existir em todo provider; sistema RAG corporativo pré-termo "harness" como exemplo de "user harness" informal
 - [[wiki/sources/dev-na-era-da-ia-qualidade-esteira-e-novas-preocupacoes]] — a pergunta em aberto: como fazer a retrospectiva de bugs quando o autor do código é a LLM
 - [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — portabilidade de workflow/skills entre Claude Code, Codex e OpenCode (alegação)
 - [[wiki/sources/rag-busca-hibrida-semantica-e-textual-ronald-hulk]] — [[wiki/entities/rock-pro]]: harness de aprendizado que é 'literalmente uma RAG'; o autor critica confundir harness/loop engineering com 'usar Claude Code'
 - [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — transferibilidade das dicas entre harnesses
 - [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — definição, princípio de Hashimoto, três camadas, DeepSeek Harness
+
+## Harness Gerada por Execução
+
+[[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]] chama de "montar a harness" o nó que transforma o plano em workflow spec: parte da harness passa a ser gerada a cada problema, sobre um esqueleto fixo. Ver [[wiki/concepts/dynamic-workflow]].
 
 ## Key sources (adição 2026-10-07)
 
@@ -216,3 +226,4 @@ Fonte curta que define harness como tudo menos o modelo e traz o princípio de [
 [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]: na [[wiki/concepts/operacao-como-servico-de-ia|operação como serviço]], a harness do prestador é melhorada com dado real de cada cliente da mesma vertical ([[wiki/concepts/ia-vertical]]), virando vantagem competitiva e permitindo escalar sem crescer a equipe na mesma proporção (alegação do autor).
 
 - [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]
+- [[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]] — harness montada dinamicamente por nó do grafo

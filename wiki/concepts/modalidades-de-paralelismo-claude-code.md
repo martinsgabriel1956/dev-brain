@@ -3,8 +3,8 @@ type: concept
 title: "Modalidades de Paralelismo no Claude Code"
 aliases: ["formas de paralelizar claude code"]
 date_created: 2026-09-30
-date_updated: 2026-09-30
-source_count: 1
+date_updated: 2026-11-10
+source_count: 2
 tags: [claude-code, paralelismo, subagentes, agent-teams, custo]
 skill: tech-mentor-ai
 status: draft
@@ -36,6 +36,11 @@ O [[wiki/entities/claude-code]] oferece cinco formas de paralelizar trabalho, ca
 
 O nome "Agents View" e o comportamento de "workflows dinâmicos" vêm só da fala do autor; não verificados contra a documentação atual.
 
+## Workflows Dinâmicos Conferidos
+
+A ressalva acima foi resolvida para "workflows dinâmicos": a [documentação](https://code.claude.com/docs/en/workflows) `[external]` descreve o recurso como script JavaScript que orquestra subagentes. Ver [[wiki/concepts/dynamic-workflow]] e [[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]]. "Agents View" não foi conferido.
+
 ## Key Sources
 
 - [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]]
+- [[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]] — recurso comparado a uma reimplementação em grafo

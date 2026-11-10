@@ -3,8 +3,8 @@ type: concept
 title: "TanStack Query"
 aliases: ["React Query", "react-query", "tanstack-query", "@tanstack/react-query"]
 date_created: 2026-04-22
-date_updated: 2026-07-07
-source_count: 2
+date_updated: 2026-11-10
+source_count: 3
 tags: [tanstack-query, server-state, cache, frontend, react]
 skill: tech-mentor-frontend
 status: stable
@@ -75,7 +75,15 @@ gcTime    → quanto tempo o dado fica no cache após não ter consumidores
 - [[swr]] — alternativa mais leve
 - [[server-state]] — conceito base
 
+## Refetch ao Remontar
+
+Com dado stale, nova montagem da query refaz a busca. Em interfaces de expandir e recolher, cada abertura pode voltar ao servidor, o que reduz a economia do lazy; `staleTime` controla isso. Ver [[wiki/concepts/lazy-vs-eager-loading]] e [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]].
+
 ## Key Sources
 
 - [[wiki/sources/tanstack-query-tudo-que-voce-precisa-saber]]
 - [[wiki/sources/useeffect-problemas-e-solucoes]]
+
+## Key sources (adição 2026-11-10)
+
+- [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]] — recarga ao abrir e fechar um componente, via tRPC

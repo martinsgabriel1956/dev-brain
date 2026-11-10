@@ -3,8 +3,8 @@ type: concept
 title: "CLAUDE.md"
 aliases: ["claude md", "project memory", "user memory", "memory claude code"]
 date_created: 2026-05-31
-date_updated: 2026-10-26
-source_count: 7
+date_updated: 2026-11-10
+source_count: 8
 tags: [claude-code, claude-md, memory, context-engineering, agente-ia]
 skill: tech-mentor-ai
 status: stable
@@ -125,8 +125,13 @@ Devido à [[token-tax-multilingual]], um `CLAUDE.md` escrito em português conso
 
 [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] relata que o Claude Code lê apenas `CLAUDE.md`, recusando o formato compartilhado `AGENTS.md` (lido por outros agentes, como o Codex da OpenAI) — o que motivou Tobi Lütke, CEO da [[wiki/entities/shopify]], a cogitar publicamente banir o Claude Code na empresa. Ver [[wiki/concepts/agents-md-vs-claude-md]] para o detalhamento completo, incluindo a **contradição registrada** com a nota logo acima desta seção (que atribui à Anthropic uma preferência pelo `AGENTS.md`) — nenhuma das duas fontes é primária, e a contradição não foi resolvida nesta sessão.
 
+## Custo Permanente e Limite de 200 Linhas
+
+[[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] coloca o CLAUDE.md como o mecanismo mais caro por estar em toda sessão, com "limite" de 200 linhas e referência a outros Markdown. A [documentação](https://code.claude.com/docs/en/memory.md) `[external]` trata o número como recomendação: ficar abaixo de 200 linhas por arquivo.
+
 ## Key Sources
 
+- [[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] — custo permanente; 200 linhas como recomendação
 - [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]] — controvérsia pública Shopify/Tobi Lütke sobre Claude Code não ler AGENTS.md
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/ninguem-mais-revisa-codigo-ia-migracao-review-galego]] — `review.md` como CLAUDE.md do revisor automático; docs como o novo trabalho de engenharia (Boris); CLAUDE.md como destino do aprendizado de sampling

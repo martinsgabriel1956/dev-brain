@@ -3,8 +3,8 @@ type: concept
 title: "Subagentes"
 aliases: ["subagents", "sub-agentes", "Task tool", ".claude/agents"]
 date_created: 2026-07-03
-date_updated: 2026-10-07
-source_count: 14
+date_updated: 2026-11-10
+source_count: 16
 tags: [subagentes, claude-code, multi-agent, paralelismo, context-engineering, harness, list-agents, mensagens-cruzadas, fork, permission-mode]
 skill: tech-mentor-ai
 status: draft
@@ -135,9 +135,13 @@ Isso é complementar, não substituto, ao benchmark de granularidade da seção 
 
 Na taxonomia da fonte, subagentes são a modalidade em que o Claude **delega e coleta resultados dentro de uma única conversa**; difere de Agents View (tarefas individuais vistas depois) e de [[wiki/concepts/agent-teams]] (grupo de sessões supervisionado, experimental). O `/fork` ([[wiki/concepts/fork-de-sessao-claude-code]]) também roda num subagente. Quadro completo em [[wiki/concepts/modalidades-de-paralelismo-claude-code]].
 
+## `/subtask` e `/batch`
+
+[[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] cita `/subtask`, que manda o trabalho a um subagente e devolve só o resultado, e `/batch`, que divide uma mudança entre 5 e 30 unidades com worktree e PR próprios ([documentação](https://code.claude.com/docs/en/commands.md) `[external]`). O uso típico é pesquisa: ler 40 arquivos no contexto do subagente e devolver só a conclusão.
+
 ## Key Sources
 
-
+- [[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] — `/subtask`, `/batch` e economia da janela principal
 - [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — agentes especializados (definir os próprios) para ser intencional com o domínio; agentes que se autorrevisam nas PRs de cada wave
 - [[wiki/sources/building-projects-in-the-ai-era-himanshu-singh]] — relato anedótico de agente único suficiente para baixo volume de trabalho, sem crítica técnica a swarms
 - [[wiki/sources/graph-engineering-matematica-do-erro-composto]] — organização típica organizador/researchers/builders/reviewers, arestas decidindo dependência entre subagentes
@@ -152,6 +156,11 @@ Na taxonomia da fonte, subagentes são a modalidade em que o Claude **delega e c
 - [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — subagentes encadeados rodando prompts com/sem skill em paralelo para o benchmark
 - [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — subagentes na taxonomia de paralelismo; fork roda num subagente
 
+## Subagentes Criados pelo Planner
+
+Em [[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]], o planner decide quantos subagentes abrir (teto configurado em 160) e o que cada um faz, em vez de deixar um agente abri-los sem método. No Claude Code, os workflows têm limite padrão de 16 concorrentes e 1.000 por execução ([docs](https://code.claude.com/docs/en/workflows) `[external]`).
+
 ## Key sources (adição 2026-10-07)
 
 - [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] — Isolate: subagente processa ~2,5k tokens e devolve ~180–200; contexto principal sobe só 1.815 → 1.999; custo adicional reconhecido
+- [[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]] — subagentes como subgrafos, criados por plano

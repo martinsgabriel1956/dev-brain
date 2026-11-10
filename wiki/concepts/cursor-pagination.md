@@ -3,8 +3,8 @@ type: concept
 title: "Cursor Pagination"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-22
-source_count: 2
+date_updated: 2026-11-10
+source_count: 3
 tags: [cursor-pagination]
 skill: tech-mentor-backend
 status: stub
@@ -27,3 +27,7 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 
 - [[wiki/sources/graphql]]
 - [[wiki/sources/pagination]]
+
+## Key sources (adição 2026-11-10)
+
+- [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]] — limitar a listagem (por data) como teto de leitura; a fonte não fala de cursor

@@ -3,7 +3,7 @@ type: source
 title: "Loop Engineering: Padrões para o Loop Trabalhar Sozinho (Determinístico vs. Agêntico, Judge, Orquestrador, Estado, Skills)"
 aliases: ["loop determinístico vs agêntico", "padrão judge", "padrão orquestrador de modelos", "loop engineering vídeo 2"]
 date_created: 2026-08-12
-date_updated: 2026-08-12
+date_updated: 2026-11-10
 source_count: 0
 tags: [loop-engineering, harness, spec-driven, ai-para-devs, compose, codex, reasoning-level, planner-executor-critic, judge-pattern, orquestracao-de-modelos, gerenciamento-de-estado, skills]
 skill: tech-mentor-ai
@@ -17,7 +17,7 @@ date_ingested: 2026-08-12
 
 ## TL;DR
 
-Segundo vídeo da série de três de [[wiki/entities/pedro-nauke]] sobre Loop Engineering (o primeiro é [[wiki/sources/loop-engineering-harness-e-a-frase-que-viralizou]]). Propõe a divisão mais importante em loop engineering prático: **loop determinístico** (script que abre sessão nova a cada round, depende de memória transitória gravada em disco; pior com modelos de reasoning alto por pagar o custo de contexto inicial run atrás de run) vs. **loop agêntico** (via `/go` do harness, nunca abre run nova, compacta em vez de reiniciar, quem julga se terminou é o próprio modelo). Relata teste comparativo do autor — spec driven sem quebra de tasks teve pior resultado que spec driven com breakdown prévio, mesmo em loop agêntico. Descreve quatro padrões operacionais: **padrão judge** (segundo agente em background, via stop hook, julga se a run realmente terminou), **padrão orquestrador** (modelo caro/denso orquestra modelos baratos por tipo de tarefa em vez de implementar ele mesmo), **gerenciamento de estado via arquivo** (`state.md` trackeando tasks, decisões, erros, arquivos modificados) e **skills que encapsulam o loop** (exemplo próprio: skill de spec-driven + report + QA + deep review + PR/squash merge, tudo numa run). Fecha afirmando que, nos testes do autor, o loop agêntico tem substituído partes do loop determinístico (mesmo o próprio Compose) para modelos de reasoning alto, por evitar o autoconsumo de contexto do modelo determinístico.
+Segundo vídeo da série de três de [[wiki/entities/pedro-nauke]] sobre Loop Engineering (o primeiro é [[wiki/sources/loop-engineering-harness-e-a-frase-que-viralizou]]). Propõe a divisão mais importante em loop engineering prático: **loop determinístico** (script que abre sessão nova a cada round, depende de memória transitória gravada em disco; pior com modelos de reasoning alto por pagar o custo de contexto inicial run atrás de run) vs. **loop agêntico** (via `/goal` do harness, nunca abre run nova, compacta em vez de reiniciar, quem julga se terminou é o próprio modelo). Relata teste comparativo do autor — spec driven sem quebra de tasks teve pior resultado que spec driven com breakdown prévio, mesmo em loop agêntico. Descreve quatro padrões operacionais: **padrão judge** (segundo agente em background, via stop hook, julga se a run realmente terminou), **padrão orquestrador** (modelo caro/denso orquestra modelos baratos por tipo de tarefa em vez de implementar ele mesmo), **gerenciamento de estado via arquivo** (`state.md` trackeando tasks, decisões, erros, arquivos modificados) e **skills que encapsulam o loop** (exemplo próprio: skill de spec-driven + report + QA + deep review + PR/squash merge, tudo numa run). Fecha afirmando que, nos testes do autor, o loop agêntico tem substituído partes do loop determinístico (mesmo o próprio Compose) para modelos de reasoning alto, por evitar o autoconsumo de contexto do modelo determinístico.
 
 ## Nota de Identificação do Autor
 
@@ -25,7 +25,7 @@ O texto colado não traz nome, canal ou data de publicação. A atribuição a [
 
 ## Key Claims
 
-1. **Divisão central: loop determinístico vs. loop agêntico.** Loop determinístico = script que, a cada round, abre uma sessão nova (contexto anterior descartado) — exemplo dado é o próprio Compose. Loop agêntico = via comando `/go` (implementado, com variações, pela maioria dos harnesses — Claude Code, Codex, Hermes), nunca abre run nova, fica iterando na mesma run e compactando o contexto conforme enche. A escolha entre os dois decide qual modelo usar e quanto se gasta.
+1. **Divisão central: loop determinístico vs. loop agêntico.** Loop determinístico = script que, a cada round, abre uma sessão nova (contexto anterior descartado) — exemplo dado é o próprio Compose. Loop agêntico = via comando `/goal` (implementado, com variações, pela maioria dos harnesses — Claude Code, Codex, Hermes), nunca abre run nova, fica iterando na mesma run e compactando o contexto conforme enche. A escolha entre os dois decide qual modelo usar e quanto se gasta.
 
 2. **Loop determinístico precisa de memória transitória gravada em disco**, porque cada round começa do zero. Instrução via system prompt: ao fechar uma run ou antes de compactar, gravar tudo que aconteceu num arquivo em disco para a próxima run recuperar contexto.
 
@@ -33,7 +33,7 @@ O texto colado não traz nome, canal ou data de publicação. A atribuição a [
 
 4. **Aplicação ao spec driven quebrado em tasks**: como cada task já tem artefatos bem definidos, colocar reasoning muito alto (GPT 5.6, Fable) faz cada task demorar mais do que precisaria, porque o modelo sempre faz um reasoning alto mesmo quando a tarefa já está bem especificada.
 
-5. **Codex é, para o autor, o harness que melhor entrega o loop agêntico via `/go`** — evoluiu muito em compactação de contexto, a ponto de a compactação "quase não fazer mais efeito perceptível" de tão eficiente. Combinado a um modelo como GPT 5.6, que é treinado sobre os próprios logs (JSON) gerados pelo Codex, existe um ciclo de retroalimentação: cada novo modelo GPT fica melhor em long-running tasks por causa do treinamento sobre dados do próprio Codex.
+5. **Codex é, para o autor, o harness que melhor entrega o loop agêntico via `/goal`** — evoluiu muito em compactação de contexto, a ponto de a compactação "quase não fazer mais efeito perceptível" de tão eficiente. Combinado a um modelo como GPT 5.6, que é treinado sobre os próprios logs (JSON) gerados pelo Codex, existe um ciclo de retroalimentação: cada novo modelo GPT fica melhor em long-running tasks por causa do treinamento sobre dados do próprio Codex.
 
 6. **No loop agêntico, quem julga se a run terminou é o próprio modelo** — daí a recomendação de sempre ter bons gates de verificação, para evitar que o modelo se perca no meio do caminho.
 
@@ -85,3 +85,7 @@ O texto colado não traz nome, canal ou data de publicação. A atribuição a [
 - Atribuição de autoria a Pedro Nauke é inferida (ver nota acima), não confirmada por metadado externo (sem nome de canal, data ou URL na transcrição colada). Se o usuário confirmar ou corrigir a autoria, atualizar esta fonte e [[wiki/entities/pedro-nauke]].
 - Não fica claro no vídeo se "GPT 5.6" e "Sol" seguem sendo o mesmo modelo (já registrado como ambíguo em [[wiki/concepts/modelo-frontier]]) — a fonte usa os dois nomes de forma intercambiável sem esclarecer.
 - **Tensão nova registrada em [[wiki/concepts/modelo-frontier]]:** esta fonte trata GPT 5.6 como modelo comercial de uso diário (reasoning medium selecionável, usado para backend), enquanto [[wiki/sources/mitos-fable-5-bloqueio-governo-eua-cyberseguranca]] registra GPT 5.6 como modelo bloqueado pelo governo dos EUA por capacidade ofensiva de cybersegurança. Não resolvido — pode ser colisão de nome entre modelos distintos.
+
+## Nota de correção (2026-11-10)
+
+A transcrição em `raw/` grafa o comando como `/go`. Esta página usa `/goal`, o nome na [documentação do Claude Code](https://code.claude.com/docs/en/commands.md) e na [do Codex](https://learn.chatgpt.com/codex/reference/slash-commands) `[external]`.

@@ -3,8 +3,8 @@ type: concept
 title: "Planner-Executor-Critic (PEC)"
 aliases: ["PEC", "planner executor critic", "loop reflexivo", "planner critic"]
 date_created: 2026-07-10
-date_updated: 2026-08-12
-source_count: 4
+date_updated: 2026-11-10
+source_count: 5
 tags: [planner-executor-critic, agentes, multi-agente, orquestracao, rubrica, verificador]
 skill: tech-mentor-ai
 status: stable
@@ -57,9 +57,14 @@ PEC generaliza o padrão de Reflection Loop (gerar → criticar → regenerar, u
 
 Sem rúbrica explícita e sem limite de tentativas definido deterministicamente, o padrão degenera no problema histórico de loops autônomos tipo AutoGPT — roda indefinidamente sem garantia de convergência. Ver [[wiki/concepts/loop-engineering]].
 
+## Avaliador Global
+
+[[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]] acrescenta ao ciclo um avaliador global depois dos verificadores por subagente, antes da síntese. O verificador pode mandar refazer ou só registrar um warning no estado e deixar o fluxo seguir, o que é uma terceira saída além de aprovar e devolver. O autor usa um modelo pequeno para verificar, por considerar a tarefa fácil.
+
 ## Key Sources
 
 - [[wiki/sources/agentes-orquestracao]] — definição original do padrão como "loop reflexivo", citado junto com Supervisor, Handoff e Swarm como um dos 4 padrões principais de multi-agente
 - [[wiki/sources/loop-engineering-planner-critic-grafo]] — demonstração em vídeo do padrão em produção: planner gerando 4 prompts+rúbricas simultâneos, verificador com 3 tentativas de follow-up
 - [[wiki/sources/graph-engineering-do-loop-ao-grafo]] — reforça o papel da rúbrica/checklist como o "peso" da aresta num [[wiki/concepts/grafo-como-abstracao-de-agentes|grafo]], notando que esse checklist em algum momento envolve aprovação humana
 - [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — padrão judge como variante pós-hoc do Critic, disparada por stop hook, "dono da verdade" separado do executor
+- [[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]] — verificador por subagente, warning no estado e avaliador global

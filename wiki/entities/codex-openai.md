@@ -3,7 +3,7 @@ type: entity
 title: "Codex (OpenAI)"
 aliases: ["Codex", "OpenAI Codex", "codex app"]
 date_created: 2026-06-02
-date_updated: 2026-10-07
+date_updated: 2026-11-10
 source_count: 11
 tags: [codex, openai, harness, ia-para-devs]
 skill: tech-mentor-ai
@@ -35,9 +35,11 @@ A OpenAI não tinha harness de codificação próprio até ~2025 (apenas partici
 | Custo | Reset 5h | Reset 5h |
 | Preferência | Backend complexo (Nauke) | Frontend/design (Nauke) |
 
-## `/go` e Compactação de Contexto no Loop Agêntico
+## `/goal` e Compactação de Contexto no Loop Agêntico
 
-Segundo [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]], o Codex é, na visão do autor (Pedro Nauke), o harness que melhor entrega hoje o loop agêntico via comando `/go` — evoluiu muito em compactação de contexto, a ponto de a compactação "quase não fazer mais efeito perceptível" de tão eficiente. Combinado a um modelo como GPT 5.6, que é treinado sobre os próprios logs (JSON) gerados pelo Codex, existe um ciclo de retroalimentação: cada novo modelo GPT tenderia a ficar melhor em long-running tasks por causa do treinamento sobre dados de uso do próprio Codex. Ver [[wiki/concepts/loop-engineering#Loop Determinístico vs. Loop Agêntico]].
+A fonte grafa o comando como `/go`; a [documentação do Codex](https://learn.chatgpt.com/codex/reference/slash-commands) `[external]` o nomeia `/goal`.
+
+Segundo [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]], o Codex é, na visão do autor (Pedro Nauke), o harness que melhor entrega hoje o loop agêntico via comando `/goal` — evoluiu muito em compactação de contexto, a ponto de a compactação "quase não fazer mais efeito perceptível" de tão eficiente. Combinado a um modelo como GPT 5.6, que é treinado sobre os próprios logs (JSON) gerados pelo Codex, existe um ciclo de retroalimentação: cada novo modelo GPT tenderia a ficar melhor em long-running tasks por causa do treinamento sobre dados de uso do próprio Codex. Ver [[wiki/concepts/loop-engineering#Loop Determinístico vs. Loop Agêntico]].
 
 ## Suporte Nativo a Worktree (App)
 
@@ -67,7 +69,7 @@ Citado como ferramenta com harness embutido; contraste com [[wiki/entities/deeps
 - [[wiki/sources/formacao-ia-devs-aula-05-hands-on]]
 - [[wiki/sources/formacao-ia-devs-aula-03-llm]]
 - [[wiki/sources/git-worktree-paralelismo-ia-codex-claude-abacus]] — suporte nativo a worktree no app ("new worktree" / "create permanent worktree")
-- [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — `/go` e compactação de contexto como diferencial no loop agêntico; ciclo de retroalimentação entre logs do Codex e treinamento do próximo GPT
+- [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] — `/goal` e compactação de contexto como diferencial no loop agêntico; ciclo de retroalimentação entre logs do Codex e treinamento do próximo GPT
 - [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — citado como harness de preferência de parte do time (portabilidade de skills)
 - [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — menção de transferibilidade
 - [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — harness embutido

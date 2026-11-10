@@ -3,8 +3,8 @@ type: concept
 title: "Worktree e Paralelismo de Tarefas"
 aliases: ["worktree parallelism", "git worktree IA", "paralelismo de tarefas ia"]
 date_created: 2026-06-02
-date_updated: 2026-09-30
-source_count: 16
+date_updated: 2026-11-10
+source_count: 18
 tags: [worktree, paralelismo, git, spec-driven, produtividade]
 skill: tech-mentor-ai
 status: stable
@@ -110,9 +110,18 @@ Ao encerrar a sessão (`/quit`), o Claude Code pergunta explicitamente se o usu�
 
 Segundo [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]], a flag de worktree do [[wiki/entities/claude-code]] existe para que duas sessões (feature A e feature B) não colidam: sem isso podem editar o mesmo arquivo ou uma pode commitar trabalho incompleto da outra. Com duas worktrees há duas versões do código e cada sessão trabalha numa. Ver também [[wiki/concepts/modalidades-de-paralelismo-claude-code]] e [[wiki/concepts/agent-teams]], onde a regra é não compartilhar arquivos entre colegas.
 
+## Requisitos e `.worktreeinclude`
+
+[[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] registra que é preciso ao menos um commit no repositório e que `.worktreeinclude` leva arquivos fora do git. A [documentação](https://code.claude.com/docs/en/worktrees.md) `[external]` confirma e detalha: copia só o que casa com o padrão e está no gitignore. A fonte fala em "clonar para uma branch", o que é impreciso: worktree é um diretório extra do mesmo repositório.
+
+## Worktree Para Aproveitar a Espera, no Cursor
+
+[[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] usa worktree para um bug independente enquanto uma feature não paralelizável roda em outro agente, e depois aplica o resultado na branch principal. O autor já rodou três assim, só quando tem tempo. Chamar worktree de "nova branch" é impreciso, pelo mesmo motivo já anotado acima. A [documentação do Cursor](https://cursor.com/docs/configuration/worktrees) `[external]` descreve checkouts isolados e `/apply-worktree`.
+
 ## Key Sources
 
-
+- [[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] — bug em worktree durante a espera de outro agente; apply no Cursor
+- [[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] — requisito de commit e `.worktreeinclude`
 - [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — git/worktrees paralelos não eliminam a sensação de perder tempo sozinhos; organização em waves com PR por tarefa — ver [[wiki/concepts/waves-de-desenvolvimento]]
 - [[wiki/sources/formacao-ia-devs-aula-02-mercado-perfil-profissional]]
 - [[wiki/sources/loop-engineering-guia-pratico-casos-reais-desastres-lucas-montano]] — worktree como mecanismo de paralelismo dentro de um loop de Spec Driven, sessões headless separadas mergeadas ao final

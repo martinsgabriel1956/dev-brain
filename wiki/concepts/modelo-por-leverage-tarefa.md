@@ -3,8 +3,8 @@ type: concept
 title: "Alocação de Modelo por Alavancagem da Tarefa"
 aliases: ["model routing by leverage", "leverage-based model selection", "alavancagem de tarefa"]
 date_created: 2026-07-21
-date_updated: 2026-10-09
-source_count: 4
+date_updated: 2026-11-10
+source_count: 6
 tags: [claude-code, model-routing, agentes, custo, arquitetura-de-agentes]
 skill: tech-mentor-ai
 status: draft
@@ -46,8 +46,18 @@ No benchmark de [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-b
 
 [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]]: modelos baratos (Gemini 3.7/3.8 Flash) só importam se embutidos em produto que entrega resultado ao usuário final.
 
+## Aliases e Esforço no Claude Code
+
+[[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] liga a heurística aos aliases `best`, `opusplan` (Opus planeja, Sonnet executa) e `sonnet[1m]`, e ao nível de esforço (low a max). Alerta útil: esforço alto não conserta prompt ruim. A [documentação](https://code.claude.com/docs/en/model-config.md) `[external]` diverge da fonte em dois pontos: o padrão é `medium` nos modelos 5.x, e `ultracode` é configuração, não nível.
+
+## Sonnet Planeja, Composer Executa
+
+[[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] planeja com Sonnet e executa com o Composer, do [[wiki/entities/cursor|Cursor]], porque "o plano é um monte de steps". A [tabela atual](https://cursor.com/docs/models) `[external]` lista Composer 2.5 a US$ 0,50/2,50 por milhão de tokens e Claude 4.6 Sonnet a US$ 3/15; a variante Fast do Composer custa como o Sonnet. O vídeo não informa a versão usada.
+
 ## Key Sources
 
+- [[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] — plano com Sonnet e execução com Composer
+- [[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] — aliases, esforço e `opusplan`
 - [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]]
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — adiciona velocidade como terceiro eixo de decisão, além de alavancagem/custo
 - [[wiki/sources/avaliacao-de-skills-skill-creator-description-e-benchmark]] — skill eleva Haiku de ~50% a ~90%; Opus dispensa a skill

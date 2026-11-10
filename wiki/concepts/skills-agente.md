@@ -3,8 +3,8 @@ type: concept
 title: "Skills (Padrão de Harness)"
 aliases: ["skills harness", "agents skills", "skill pattern ia", "skills.sh"]
 date_created: 2026-06-02
-date_updated: 2026-10-07
-source_count: 14
+date_updated: 2026-11-10
+source_count: 16
 tags: [skills, harness, context-engineering, lazy-loading, system-prompt, grill-me, rfc, babysitting-de-agentes, produto-de-consumo]
 skill: tech-mentor-ai
 status: stable
@@ -132,8 +132,18 @@ Skill que identifica alterações destrutivas ou com lock (drop de coluna), roda
 
 [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]]: o [[wiki/concepts/agent-engineer]] cria skills e automações para o time como parte do cargo.
 
+## Critério Rule ou Skill
+
+[[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] propõe uma regra simples: "se tem numeração de passos, é uma skill". Chama skills de "o mecanismo mais subestimado" e as descreve como um manual que o agente só abre quando precisa. A [documentação](https://code.claude.com/docs/en/skills.md) `[external]` confirma que a description fica sempre no contexto e o corpo carrega sob demanda.
+
+## Skill Para Não Repetir Prompt de Ferramenta
+
+[[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] usa skills de Confluence e Jira que guardam a instância e como acionar o MCP da Atlassian: "eu não vou ficar dando prompt para isso toda vez". A skill empacota o conhecimento local, e o MCP faz a chamada remota.
+
 ## Key Sources
 
+- [[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] — skills de Confluence e Jira sobre o MCP da Atlassian
+- [[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] — critério rule ou skill; manual sob demanda
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — agent engineer cria skills
 
 - [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — 'falsa sensação' de saber criar uma skill decente; a diferença entre boa e ruim é grande e a frustração vem do resultado

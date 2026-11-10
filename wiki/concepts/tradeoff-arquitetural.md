@@ -3,8 +3,8 @@ type: concept
 title: "Trade-off Arquitetural"
 aliases: ["trade-off", "tradeoff de arquitetura", "troca arquitetural"]
 date_created: 2026-10-07
-date_updated: 2026-10-09
-source_count: 2
+date_updated: 2026-11-10
+source_count: 4
 tags: [arquitetura, decisao-arquitetural, trade-off]
 skill: tech-mentor-system-design
 status: draft
@@ -31,3 +31,8 @@ Pergunta de trabalho: *qual característica quero melhorar e quais consequência
 ## Key sources (adição 2026-10-09)
 
 - [[wiki/sources/cqrs-quando-faz-sentido-cqs-bernardo-lobato]] — "o benefício precisa justificar a complexidade": CQRS como trade-off modelado, não padrão por default
+
+## Key sources (adição 2026-11-10)
+
+- [[wiki/sources/polling-sse-websocket-comunicacao-em-tempo-real]] — polling, SSE e WebSocket como três respostas válidas; a certa depende de quais problemas você aceita
+- [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]] — lazy troca volume lido por número de requisições

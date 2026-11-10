@@ -3,8 +3,8 @@ type: concept
 title: "ORM (Object-Relational Mapping)"
 aliases: ["orm", "object relational mapping", "mapeamento objeto-relacional"]
 date_created: 2026-07-03
-date_updated: 2026-10-06
-source_count: 7
+date_updated: 2026-11-10
+source_count: 8
 tags: [orm, sql, banco-de-dados, prisma, hibernate, doctrine, abstracao, drizzle, migrations, n-plus-one, lazy-loading, django]
 skill: tech-mentor-backend
 status: stub
@@ -74,6 +74,10 @@ Com SQL cru, a migration é escrita diretamente. Com ORM, o fluxo é o inverso: 
 - **Raw SQL parametrizado** — mais controle, mais responsabilidade
 - **Backend as a Service** (Supabase, Firebase) — abstrai a API, mas por baixo continua havendo um banco (Postgres, no caso do Supabase) executando SQL
 
+## Lazy e Eager Dependem do ORM
+
+O Hibernate configura a estratégia por associação. O Prisma pede `include` explícito, e o TypeORM oferece relações lazy como `Promise`. Ver [[wiki/concepts/lazy-vs-eager-loading]] e [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]].
+
 ## Key Sources
 
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
@@ -83,3 +87,7 @@ Com SQL cru, a migration é escrita diretamente. Com ORM, o fluxo é o inverso: 
 - [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]] — lazy loading e N+1, prefetch em Django, LEFT JOIN equivalente
 - [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] — ORM/query builder como uma das sete camadas de defesa contra SQLi ("previne por padrão ou tem solução dedicada" — verificar na ferramenta específica, sem mencionar a ressalva de raw query interpolada)
 - [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — [[wiki/concepts/hibernate-ddl-auto-validate]]: o Hibernate deixa de criar o schema e só valida; migrations assumem a evolução
+
+## Key sources (adição 2026-11-10)
+
+- [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]] — lazy e eager no Hibernate e no Prisma; listagem enxuta com detalhe no `get by id`

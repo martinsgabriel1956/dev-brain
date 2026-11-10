@@ -3,8 +3,8 @@ type: concept
 title: "Model Context Protocol (MCP)"
 aliases: ["MCP", "model context protocol", "protocol mcp"]
 date_created: 2026-06-02
-date_updated: 2026-10-07
-source_count: 10
+date_updated: 2026-11-10
+source_count: 11
 tags: [mcp, model-context-protocol, tools, harness, json-rpc, anthropic]
 skill: tech-mentor-ai
 status: stable
@@ -69,8 +69,13 @@ MCPs aparecem como parte da capacidade "lembrar e acessar novos conhecimentos" a
 
 [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] cita os MCPs de busca web do Google como apoio a um agente que roda as queries de vagas ([[wiki/concepts/busca-de-vagas-direto-no-ats]]); menção breve, sem detalhe.
 
+## MCP Remoto, Skill Local
+
+[[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] resume: MCP é para o conhecimento que está em outro lugar, skill é local e tática. Vale como regra de bolso, mas MCP também roda localmente sobre STDIO, como registrado acima. O exemplo usa só dois servidores, Atlassian e Context7, "para não confundir ninguém".
+
 ## Key Sources
 
+- [[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] — MCP para o remoto; uso de só dois servidores
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — menção a MCP de busca web para agente de vagas
 
 - [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — MCPs 'na quantidade adequada': inicializar muitos servidores ocupa a janela de contexto

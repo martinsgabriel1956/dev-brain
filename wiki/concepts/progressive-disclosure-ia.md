@@ -3,8 +3,8 @@ type: concept
 title: "Progressive Disclosure para IA"
 aliases: ["progressive disclosure", "entrega gradual de contexto", "context by directory"]
 date_created: 2026-06-01
-date_updated: 2026-09-29
-source_count: 4
+date_updated: 2026-11-10
+source_count: 5
 tags: [context-engineering, coding-agents, on-demand-loading, claude-md, cursor-rules]
 skill: tech-mentor-ai
 status: draft
@@ -71,8 +71,13 @@ Progressive disclosure é a implementação prática do orçamento de instruçõ
 - [[on-demand-loading]] — o mecanismo técnico que viabiliza progressive disclosure em ferramentas modernas
 - [[separacao-de-contextos]] — sessões separadas é o equivalente temporal; progressive disclosure é o equivalente espacial
 
+## Rule como Mapa da Documentação
+
+[[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] mostra uma variante enxuta: uma rule sempre carregada com o básico da estrutura e um mapa condicional ("se envolve entidades do banco, usa esse aqui"), apontando para arquivos em `docs/`. O agente busca sob demanda. A documentação cobre só o que é específico do projeto.
+
 ## Key sources
 
+- [[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] — rule sempre carregada como mapa para `docs/`
 - [[wiki/sources/context-engineering-codebases-grandes-rpi]] — demonstração prática com codebase de streaming; Cursor Rules com alwaysApply e gatilhos
 - [[wiki/sources/agents-md-vale-a-pena-paper-zurique]] — links para arquivos específicos como estratégia de custo
 - [[wiki/sources/engenharia-de-contexto-vs-prompt-engineering-gargalo-real-times-ia]] — analogia "mapa antes da rua" para dosagem de contexto

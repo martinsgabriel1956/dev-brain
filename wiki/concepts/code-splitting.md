@@ -3,8 +3,8 @@ type: concept
 title: "Code Splitting"
 aliases: ["lazy loading de componentes", "chunking de bundle"]
 date_created: 2026-08-03
-date_updated: 2026-08-03
-source_count: 1
+date_updated: 2026-11-10
+source_count: 2
 tags: [frontend, bundler, code-splitting, lazy-loading, performance]
 skill: tech-mentor-frontend
 status: stable
@@ -30,3 +30,7 @@ Um usuário que acessa a Home baixa só o JavaScript necessário para a Home; ao
 ## Key Sources
 
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
+
+## Key sources (adição 2026-11-10)
+
+- [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]] — lazy loading de JavaScript e embeds pesados como extensão de [[wiki/concepts/lazy-vs-eager-loading]]

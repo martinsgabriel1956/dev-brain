@@ -3,8 +3,8 @@ type: concept
 title: "Server-Sent Events (SSE)"
 aliases: ["sse", "event stream", "text/event-stream"]
 date_created: 2026-07-03
-date_updated: 2026-08-19
-source_count: 4
+date_updated: 2026-11-10
+source_count: 5
 tags: [sse, realtime, http, redis, backend, tempo-real]
 skill: tech-mentor-backend
 status: stable
@@ -120,3 +120,13 @@ Ao chegar uma mensagem no canal `match_id_1`, o servidor consulta o mapa e escre
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — mesmo mecanismo de Redis Pub/Sub usado para WebSocket também propaga eventos SSE entre instâncias diferentes
 - [[wiki/sources/system-design-copa-do-mundo-tempo-real-kafka-event-sourcing-renato-augusto]] — mapa em memória `match_id → conexões` para rotear atualizações do Redis Pub/Sub às conexões SSE corretas; fluxo completo desde consumer Kafka até o cliente
 - [[wiki/sources/world-cup-system-design]] — superfície completa de endpoints do Web Server ao redor do `/stream` (snapshot, estatística, histórico de time/jogador), servidos por réplicas de leitura em vez do Redis
+
+## SSE na prática do dia a dia (2026-11-10)
+
+[[wiki/sources/polling-sse-websocket-comunicacao-em-tempo-real]] usa o streaming do ChatGPT como exemplo de SSE. A OpenAI confirma que o streaming da API é "HTTP streaming (`stream=true`) over server-sent events" ([external](https://developers.openai.com/api/docs/guides/streaming-responses)). Nesse padrão a ida é uma requisição HTTP comum e a volta é SSE, ou seja, SSE com outro canal para o sentido cliente→servidor, combinação que a fonte diz não ver motivo para usar.
+
+A fonte também afirma que o SSE "funciona atrás de CDN, load balancer e proxy reverso" por ser HTTP. Duas ressalvas: proxies que fazem buffer precisam de `X-Accel-Buffering: no` `[skill: tech-mentor-backend]`, e sem HTTP/2 o navegador limita a 6 conexões por domínio, contra cerca de 100 negociadas em HTTP/2 ([external](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events)).
+
+## Key sources (adição 2026-11-10)
+
+- [[wiki/sources/polling-sse-websocket-comunicacao-em-tempo-real]] — ChatGPT/LLM streaming como SSE; ressalvas de proxy e do limite de 6 conexões

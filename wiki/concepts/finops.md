@@ -3,8 +3,8 @@ type: concept
 title: "FinOps — Cost-Aware Architecture"
 aliases: ["finops", "cloud cost", "unit economics", "cost optimization"]
 date_created: 2026-04-23
-date_updated: 2026-10-30
-source_count: 8
+date_updated: 2026-11-10
+source_count: 9
 tags: [finops, cloud-cost, unit-economics, right-sizing, spot-instances, egress, aws]
 skill: tech-mentor-infra
 status: stub
@@ -46,6 +46,10 @@ Reforço direto do exemplo acima ("gastar mais pode ser otimizar custo"), agora 
 
 Terceirizar infra converte [[wiki/concepts/capex-vs-opex|CAPEX em OPEX]] e elimina a ociosidade de [[wiki/concepts/dimensionamento-para-o-pico]] — exemplo em mainframe: [[wiki/concepts/mainframe-as-a-service]]. Sem quantificação na fonte.
 
+## Leitura Como Custo Direto
+
+Em banco serverless cobrado por uso, evitar leituras é decisão de custo. Tulio Faria atribui a permanência do SaaS dele no plano gratuito ao [[wiki/concepts/lazy-vs-eager-loading]], relato não auditável. Ver [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]].
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — CAPEX→OPEX e ociosidade eliminada no exemplo de MaaS (sem números)
@@ -67,3 +71,7 @@ Servir arquivos grandes direto do S3 paga egress por GB; CDN na frente muda a co
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — egress S3 vs. CloudFront
+
+## Key sources (adição 2026-11-10)
+
+- [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]] — lazy loading para manter o banco no plano gratuito

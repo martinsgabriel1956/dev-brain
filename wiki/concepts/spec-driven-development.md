@@ -3,8 +3,8 @@ type: concept
 title: "Spec-Driven Development"
 aliases: ["SDD", "spec driven", "desenvolvimento orientado a especificação", "planning-first"]
 date_created: 2026-06-02
-date_updated: 2026-09-29
-source_count: 23
+date_updated: 2026-11-10
+source_count: 24
 tags: [spec-driven, planejamento, ia-para-devs, harness, agente, qualidade, loop-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -163,9 +163,13 @@ O ponto não invalida SDD como definido acima (spec como contrato de execução,
 
 [[wiki/sources/como-ser-otimo-programador-sem-usar-o-cerebro]] defende pensar muito e escrever as especificações antes de codar (chamando de BDD); depois só fazê-las passar — ideia afim a SDD ([[wiki/concepts/pensar-na-hora-certa]]), sem mencionar agentes de IA.
 
+## Especificação Como Economia de Tokens
+
+[[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] argumenta que o modelo forte deve especificar e o simples executar, porque "a gente gasta muito mais pedindo correção do que mandando um prompt bem detalhado". ADR, RFC e PRD dão à IA o porquê das decisões. É argumento, sem medição.
+
 ## Key Sources
 
-
+- [[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] — modelo forte especifica, simples executa
 - [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — SDD sozinho não basta: falta o contrato de revisão auditável entre implementador e revisor; plano em etapas (não lista de tarefas) e specs por tarefa para waves paralelas — ver [[wiki/concepts/contrato-de-revisao]]
 - [[wiki/sources/graph-engineering-matematica-do-erro-composto]] — mapeamento de SDD para os quatro componentes de um grafo de agentes (tasks=nós, paralelismo=arestas, testes=verificação por nó, review final=convergência, aprovação do plano=humano)
 - [[wiki/sources/formacao-ia-devs-aula-01-abertura]]

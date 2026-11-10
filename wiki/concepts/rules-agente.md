@@ -3,8 +3,8 @@ type: concept
 title: "Rules (Padrão de Harness)"
 aliases: ["rules harness", "agents.md", "cursorrules", "guardrails ia", "regras agente"]
 date_created: 2026-06-02
-date_updated: 2026-10-06
-source_count: 4
+date_updated: 2026-11-10
+source_count: 6
 tags: [rules, agents-md, harness, system-prompt, guardrails, code-quality, projetos-novos]
 skill: tech-mentor-ai
 status: stable
@@ -79,8 +79,18 @@ No [[wiki/concepts/checklist-primeiro-dia-projeto]], escrever o `AGENTS.md` é a
 
 Boa prática relatada: `AGENTS.md` principal na raiz + adicionais por módulo, com contexto relevante àquela parte do código.
 
+## Rules Condicionais por `paths` no Claude Code
+
+Em `.claude/rules/`, uma rule sem `paths` carrega sempre, junto do CLAUDE.md; com `paths`, só quando o Claude toca um arquivo correspondente ([[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]]; [documentação](https://code.claude.com/docs/en/memory.md) `[external]`). Isso matiza a tabela acima, que trata a rule como sempre global. O critério do autor: rule é conhecimento passivo; se há passos numerados, é skill.
+
+## Rule Curta Com Regra Aprendida
+
+[[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] mantém na rule o básico do projeto e acrescenta instruções quando um plano erra, como os comandos corretos de migration. A afirmação de que rules "são do Cursor" é imprecisa diante da tabela acima.
+
 ## Key Sources
 
+- [[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] — rule curta, melhorada a cada lacuna de plano
+- [[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] — rules com `paths`; critério rule ou skill
 - [[wiki/sources/formacao-ia-devs-aula-02-rules]]
 - [[wiki/sources/formacao-ia-devs-aula-03-skills]]
 - [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]

@@ -3,7 +3,7 @@ type: concept
 title: "CDN"
 aliases: ["Content Delivery Network", "rede de distribuição de conteúdo", "edge cache"]
 date_created: 2026-06-26
-date_updated: 2026-10-30
+date_updated: 2026-11-10
 source_count: 10
 tags: [system-design, cdn, cache, performance, escalabilidade, rede, live-streaming]
 skill: tech-mentor-system-design
@@ -104,3 +104,7 @@ Para downloads de arquivos grandes, CDN entre usuário e S3 reduz latência (Jap
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — CDN como terceiro passo do framework de upload/download (acesso frequente → cache na borda)
+
+## Key sources (adição 2026-11-10)
+
+- [[wiki/sources/polling-sse-websocket-comunicacao-em-tempo-real]] — afirma que SSE funciona atrás de CDN; sem detalhe de configuração

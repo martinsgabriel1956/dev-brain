@@ -1,10 +1,10 @@
 ---
 type: concept
 title: "Gerenciamento de Sessões (Claude Code)"
-aliases: ["sessões claude code", "claude --resume", "/rename", "/go"]
+aliases: ["sessões claude code", "claude --resume", "/rename", "/go", "/goal"]
 date_created: 2026-07-21
-date_updated: 2026-09-30
-source_count: 2
+date_updated: 2026-11-10
+source_count: 3
 tags: [claude-code, sessoes, contexto, agente-ia, retencao-de-dados]
 skill: tech-mentor-ai
 status: draft
@@ -26,7 +26,7 @@ Fluxo comum sem gerenciamento de sessão: o dev chega a um commit no Git, mas to
 - Uma sessão pode ser renomeada para facilitar localização posterior, quando uma tarefa é pausada no meio para ser retomada depois.
 - Uma sessão nomeada pode ser retomada mais tarde recuperando o histórico e o contexto completo — diferente de recomeçar do zero a partir de um commit específico no Git.
 
-## `/go` — Objetivo Verificável de Longo Prazo
+## `/goal` — Objetivo Verificável de Longo Prazo
 
 Quando o objetivo é grande e tem um critério de sucesso verificável automaticamente (ex.: "abra um PR só quando todos os testes passarem", "chegue a zero erros de lint"), um comando dedicado mantém o agente trabalhando em prol desse objetivo sem precisar de reforço manual a cada iteração.
 
@@ -42,7 +42,12 @@ Gerenciar sessões é complementar a [[wiki/concepts/context-compaction]]: a est
 
 Duas extensões do ciclo de vida da sessão: [[wiki/concepts/fork-de-sessao-claude-code]] (bifurca a sessão atual numa cópia exata) e [[wiki/concepts/sessoes-remotas-claude-code]] (nuvem e Remote Control, para trabalhos longos). A fonte compara sessões a branches/commits do Git.
 
+## Nome do Comando: `/goal`
+
+Esta página registrava o comando como `/go`, grafia vinda de uma transcrição anterior. A [documentação](https://code.claude.com/docs/en/commands.md) `[external]` e [[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] o nomeiam `/goal`.
+
 ## Key Sources
 
+- [[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] — nome correto do comando: `/goal`
 - [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]]
 - [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — fork e sessões remotas

@@ -3,8 +3,8 @@ type: concept
 title: "Camada de Aplicação vs. Camada de Modelo"
 aliases: ["application layer llm", "camada de aplicação IA", "app layer vs model layer"]
 date_created: 2026-07-21
-date_updated: 2026-07-30
-source_count: 2
+date_updated: 2026-11-10
+source_count: 3
 tags: [mercado-de-ia, produto, camada-de-aplicacao, estrategia]
 skill: tech-mentor-ai
 status: stub
@@ -24,7 +24,12 @@ Se o modelo deixa de ser o diferencial (porque a concorrência já entrega quali
 
 Ver [[wiki/concepts/lock-in-vendor-ia]] para a mesma tese aplicada a um risco mais específico: não o lock-in de modelo, mas o de **memória organizacional** acumulada num produto de agente de um único fornecedor (ex.: Claude Tag).
 
+## Modelo por Nó
+
+[[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]] demonstra a escolha por etapa: modelo maior no planner, pequeno na verificação, outro na síntese, todos trocáveis por variável de ambiente. O autor resume que a solução é tão boa quanto a harness e o dado.
+
 ## Key Sources
 
 - [[wiki/sources/kimi-k3-china-mercado-ia-open-source]]
 - [[wiki/sources/claude-tag-slack-terceiro-paradigma-llm]] — variante de lock-in via memória organizacional acumulada em produto de agente de fornecedor único
+- [[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]] — modelo escolhido por nó do grafo

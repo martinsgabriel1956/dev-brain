@@ -3,8 +3,8 @@ type: concept
 title: "Grafo Como Abstração de Agentes"
 aliases: ["grafo de agentes", "G = (V, E) agentes", "nós e arestas de harness"]
 date_created: 2026-07-10
-date_updated: 2026-11-03
-source_count: 5
+date_updated: 2026-11-10
+source_count: 6
 tags: [grafo, abstracao, agentes, langgraph, controle-de-fluxo, determinismo, graph-engineering, ltv-cac, langchain, boris, erro-composto, graphrag]
 skill: tech-mentor-ai
 status: draft
@@ -65,6 +65,10 @@ A mesma fonte cita um paper (não identificado por título/link) sobre GraphRAG 
 
 Gestão de projeto (épico → história → tarefa → subtarefa) é citada em [[wiki/sources/graph-engineering-do-loop-ao-grafo]] como exemplo de que uma estrutura pode parecer árvore e não ser: dependências cruzadas entre itens (uma história depende de outra, uma subtarefa bloqueia outra) quebram a propriedade de árvore e determinam quantos devs/agentes podem trabalhar em paralelo sem se bloquear — o mesmo raciocínio de nós e arestas aplicado antes mesmo de existir um agente de IA no processo.
 
+## Grafo Fixo, Conteúdo Dinâmico
+
+[[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]] separa a estrutura do que muda: os nós e arestas existem antes da execução, e uma workflow spec gerada por LLM preenche prompts, fases e critérios. "Nada é dinâmico magicamente." Ver [[wiki/concepts/dynamic-workflow]].
+
 ## Key Sources
 
 - [[wiki/sources/loop-engineering-planner-critic-grafo]]
@@ -72,3 +76,4 @@ Gestão de projeto (épico → história → tarefa → subtarefa) é citada em 
 - [[wiki/sources/ia-2026-nao-e-so-prompt-nem-so-agente-codigo-fonte-tv]] — atribuição explícita da cunhagem do termo à LangChain (2026); Boris (Claude Code) citado como voz pública sobre o tema
 - [[wiki/sources/graph-engineering-matematica-do-erro-composto]] — formalização com estado e verificação como componentes nomeados; exigência de ciclicidade; verificador por nó (não um único gargalo); erro composto também nos handoffs entre agentes (85%→44% em 5 saltos); contraponto do paper de GraphRAG; data do tweet-origem (18 de julho)
 - [[wiki/sources/cinco-design-patterns-strategy-observer-adapter-state-machine-retry-circuit-breaker]] — máquina de estados para fluxos complexos de agentes; n8n citado como exemplo (analogia, sem justificativa na fonte)
+- [[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]] — esqueleto físico parametrizado por workflow spec

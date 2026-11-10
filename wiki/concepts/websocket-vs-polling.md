@@ -3,8 +3,8 @@ type: concept
 title: "WebSocket vs Polling"
 aliases: ["websocket", "long polling", "http polling", "sse"]
 date_created: 2026-04-22
-date_updated: 2026-09-30
-source_count: 8
+date_updated: 2026-11-10
+source_count: 9
 tags: [system-design, websocket, realtime, protocolo, chat]
 skill: tech-mentor-system-design
 status: stable
@@ -70,3 +70,13 @@ Polling de um endpoint de status com um ID de operação é uma das três formas
 - [[wiki/sources/escalabilidade-horizontal-load-balancer-algoritmos]] — WhatsApp citado como exemplo de arquitetura que exige LB de camada 4 por usar WebSocket (vídeo dedicado à arquitetura completa ainda não ingerido)
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — polling por ID de operação como forma de assíncrono
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — HTTP = pergunta/resposta pontual; WebSocket = conexão aberta bidirecional, ambos iniciados por negociação parecida
+
+## Regra de escalada: polling → SSE → WebSocket (2026-11-10)
+
+[[wiki/sources/polling-sse-websocket-comunicacao-em-tempo-real]] ordena as três técnicas da mais simples à mais poderosa e fecha com uma heurística: só vá para o WebSocket se polling e SSE não resolverem, porque ele traz gestão de conexão, perda de mensagem e limite em serverless. O polling descrito é *short polling* com cursor (timestamp da última alteração reenviado a cada pergunta), e o custo é aritmético: 1000 clientes a cada 2 s dão cerca de 500 req/s, quase todas vazias. Intervalo de 30 s a 1 min serve para dados lentos, como status de atividade.
+
+**Ressalva sobre LB:** a regra "WebSocket exige LB de camada 4, nunca 7" acima vem de uma única fonte. A skill de backend faz proxy de WebSocket no nginx, que é camada 7, repassando `Upgrade`/`Connection` `[skill: tech-mentor-backend]`, e a RFC 6455 define o handshake como um HTTP Upgrade com resposta `101` ([external](https://datatracker.ietf.org/doc/html/rfc6455)). A leitura mais segura é que o LB L7 precisa suportar upgrade e conexões longas, não que seja proibido.
+
+## Key sources (adição 2026-11-10)
+
+- [[wiki/sources/polling-sse-websocket-comunicacao-em-tempo-real]] — regra de escalada polling → SSE → WebSocket; polling com cursor; custo 500 req/s; WebSocket não é bala de prata

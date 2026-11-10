@@ -3,8 +3,8 @@ type: entity
 title: "Claude Code"
 aliases: ["claude code cli"]
 date_created: 2026-05-18
-date_updated: 2026-10-30
-source_count: 27
+date_updated: 2026-11-10
+source_count: 29
 tags: [ferramenta, agentes-ia, anthropic, llmops, cli, mcp, hooks]
 skill: tech-mentor-ai
 status: stable
@@ -29,7 +29,7 @@ CLI da Anthropic que age como [[agente-ia]] de desenvolvimento diretamente no te
 | [[wiki/concepts/worktree-paralelismo]] | `claude --worktree <nome>` — cópia isolada do repo por agente, paralelismo de file system |
 | [[wiki/concepts/subagentes]] | `.claude/agents/*.md` — paralelismo de contexto, model/tools customizáveis por subagente |
 | [[wiki/concepts/rewind-checkpoints-claude-code]] | Checkpoints ao longo da conversa; `rewind` volta a um ponto anterior sem depender só de commits Git |
-| [[wiki/concepts/gerenciamento-de-sessoes-claude-code]] | Renomear e retomar sessões salvas localmente; `/go` para objetivos verificáveis de longo prazo |
+| [[wiki/concepts/gerenciamento-de-sessoes-claude-code]] | Renomear e retomar sessões salvas localmente; `/goal` para objetivos verificáveis de longo prazo |
 | [[wiki/concepts/modelo-por-leverage-tarefa]] | Alocar modelos mais fortes (Fable) para planejamento/arquitetura, mais leves (Sonnet) para execução rotineira |
 
 ## Planos (referência da gravação — verificar preços atuais)
@@ -145,8 +145,13 @@ Citado como exemplo de ferramenta com harness embutido; `CLAUDE.md` costuma impo
 
 [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]]: usar Claude Code/Codex para montar a lista de 30–50 empresas-alvo, automatizar a busca em ATS e "conversar com o código" (designer pedindo varredura do projeto).
 
+## Comandos e Superfícies (2026-11)
+
+[[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] percorre os comandos atuais: `claude auth login`, `setup-token`, `--safe-mode`, `/powerup`, `/btw`, `/batch` (5 a 30 subagentes, cada um com worktree e PR) e `/goal`, além de [[wiki/concepts/modos-de-permissao-claude-code|seis modos de permissão]]. Existência conferida na [documentação](https://code.claude.com/docs/en/commands.md) `[external]`. O vídeo erra ao dizer que `Ctrl+O` mostra raciocínio escondido (é o visualizador de transcrição) e ao listar Deep Research, Design e Dataviz como embutidos.
+
 ## Key Sources
 
+- [[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] — panorama de comandos, modelos, esforço e permissões
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — lista de empresas, automação de busca, designer conversando com o código
 
 - [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]] — CLI usada na demo do Kanban (Sonnet, effort high, /clear) sem CLAUDE.md/plano
@@ -160,7 +165,7 @@ Citado como exemplo de ferramenta com harness embutido; `CLAUDE.md` costuma impo
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
 - [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — sandbox nativo (Bubblewrap/Sandbox-exec) e comparação com o AI Jail
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]] — comparação com harnesses de learning loop (Hermes Agent, Open Claw)
-- [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — checkpoints/rewind, gerenciamento de sessões, `/go`, alocação de modelo por leverage, seleção automática de ferramentas, retenção de 30 dias
+- [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — checkpoints/rewind, gerenciamento de sessões, `/goal`, alocação de modelo por leverage, seleção automática de ferramentas, retenção de 30 dias
 - [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — citação de Boris sobre trabalhar "em loops que decidem o que fazer"
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — seleção manual de modelo por tarefa na UI, e automação da escolha via skill + subagentes (um subagente por modelo)
 - [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — oferta patrocinada de VPS (HostGator) com Claude Code pré-instalado
@@ -200,7 +205,7 @@ CLI da Anthropic que age como [[agente-ia]] de desenvolvimento diretamente no te
 | [[wiki/concepts/worktree-paralelismo]] | `claude --worktree <nome>` — cópia isolada do repo por agente, paralelismo de file system |
 | [[wiki/concepts/subagentes]] | `.claude/agents/*.md` — paralelismo de contexto, model/tools customizáveis por subagente |
 | [[wiki/concepts/rewind-checkpoints-claude-code]] | Checkpoints ao longo da conversa; `rewind` volta a um ponto anterior sem depender só de commits Git |
-| [[wiki/concepts/gerenciamento-de-sessoes-claude-code]] | Renomear e retomar sessões salvas localmente; `/go` para objetivos verificáveis de longo prazo |
+| [[wiki/concepts/gerenciamento-de-sessoes-claude-code]] | Renomear e retomar sessões salvas localmente; `/goal` para objetivos verificáveis de longo prazo |
 | [[wiki/concepts/modelo-por-leverage-tarefa]] | Alocar modelos mais fortes (Fable) para planejamento/arquitetura, mais leves (Sonnet) para execução rotineira |
 
 ## Planos (referência da gravação — verificar preços atuais)
@@ -331,7 +336,7 @@ Citado como exemplo de ferramenta com harness embutido; `CLAUDE.md` costuma impo
 - [[wiki/sources/multiplos-agentes-worktrees-subagentes-claude-code]]
 - [[wiki/sources/ai-jail-sandbox-para-agentes-de-ia-akita]] — sandbox nativo (Bubblewrap/Sandbox-exec) e comparação com o AI Jail
 - [[wiki/sources/hermes-agent-open-claw-learning-loop]] — comparação com harnesses de learning loop (Hermes Agent, Open Claw)
-- [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — checkpoints/rewind, gerenciamento de sessões, `/go`, alocação de modelo por leverage, seleção automática de ferramentas, retenção de 30 dias
+- [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — checkpoints/rewind, gerenciamento de sessões, `/goal`, alocação de modelo por leverage, seleção automática de ferramentas, retenção de 30 dias
 - [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] — citação de Boris sobre trabalhar "em loops que decidem o que fazer"
 - [[wiki/sources/gestao-de-custo-velocidade-modelos-de-ia-fable-sol]] — seleção manual de modelo por tarefa na UI, e automação da escolha via skill + subagentes (um subagente por modelo)
 - [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — oferta patrocinada de VPS (HostGator) com Claude Code pré-instalado
@@ -359,6 +364,11 @@ Citado como exemplo de ferramenta com harness embutido; `CLAUDE.md` costuma impo
 
 - [[wiki/sources/anthropic-code-review-por-agentes-sete-camadas]] — "Claude Code Review" roda em todo PR (diff × repositório × intenção), multiagente com verificação por consenso e rótulos de severidade ([[wiki/concepts/consenso-multiagente-em-code-review]]); o código do próprio Claude Code é o caso de uso da Anthropic.
 
+## Dynamic Workflows
+
+Recurso anunciado em 28/05/2026 ([blog](https://claude.com/blog/introducing-dynamic-workflows-in-claude-code) `[external]`): o Claude escreve um script JavaScript que orquestra subagentes em runtime isolado. [[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]] o reimplementa fora do produto. Ver [[wiki/concepts/dynamic-workflow]].
+
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — exemplo de tarefa de trabalho delegável (triar e arquivar e-mails) vs. tarefa de academia (ler um livro)
+- [[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]] — Dynamic Workflows e diferenças para uma versão em servidor

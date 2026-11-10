@@ -3,8 +3,8 @@ type: concept
 title: "Chat Distribuído"
 aliases: ["cross-server chat", "chat distribuído", "websocket routing"]
 date_created: 2026-04-22
-date_updated: 2026-09-22
-source_count: 3
+date_updated: 2026-11-10
+source_count: 4
 tags: [system-design, chat, websocket, redis, kafka, distribuído]
 skill: tech-mentor-system-design
 status: stable
@@ -58,3 +58,7 @@ Alternativa sem tabela dedicada: o cliente informa o timestamp/ID da última men
 - [[wiki/sources/presence-system]] — Sistema de presença (online/offline) usa Heartbeat + Redis TTL: cliente envia ping a cada 15s, servidor atualiza `presence:{userId}` com SETEX 30s. Se TTL expirar, usuário está offline. Para...
 - [[wiki/sources/case-whatsapp]]
 - [[wiki/sources/updates-tempo-real-polling-sse-websocket]] — tópico por usuário/grupo no Redis Pub/Sub, tabela de mensagens pendentes, viés WhatsApp de limpeza pós-entrega
+
+## Key sources (adição 2026-11-10)
+
+- [[wiki/sources/polling-sse-websocket-comunicacao-em-tempo-real]] — indicador de "digitando" como caso típico de WebSocket bidirecional; eventos de mensagem, notificação e reação nos dois lados

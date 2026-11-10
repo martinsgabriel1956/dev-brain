@@ -3,8 +3,8 @@ type: concept
 title: "Lazy Initialization"
 aliases: ["inicialização lazy", "lazy loading", "virtual proxy"]
 date_created: 2026-05-01
-date_updated: 2026-06-05
-source_count: 1
+date_updated: 2026-11-10
+source_count: 2
 tags: [performance, design-patterns, proxy]
 skill: tech-mentor-backend
 status: stub
@@ -18,6 +18,14 @@ Técnica que adia a criação ou inicialização de um objeto até o momento em 
 
 O **Virtual Proxy** é uma variação do [[proxy-pattern]] que implementa lazy initialization: o proxy age como se fosse o objeto real, mas só cria a instância custosa quando o primeiro método é chamado.
 
+## Relação com Carregamento de Dados
+
+O mesmo adiamento, aplicado a dados relacionados e assets, está em [[wiki/concepts/lazy-vs-eager-loading]].
+
 ## Key Sources
 
 - [[wiki/sources/design-pattern-proxy]]
+
+## Key sources (adição 2026-11-10)
+
+- [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]] — o princípio aplicado a relações de banco e a assets

@@ -3,8 +3,8 @@ type: concept
 title: "Sem Balas de Prata"
 aliases: ["no silver bullets", "não existe solução universal", "pragmatismo técnico"]
 date_created: 2026-04-22
-date_updated: 2026-10-07
-source_count: 4
+date_updated: 2026-11-10
+source_count: 5
 tags: [carreira, habitos, arquitetura, pragmatismo, liderança]
 skill: tech-mentor-leadership
 status: stable
@@ -45,3 +45,7 @@ O mesmo princípio tem uma face menos óbvia: acreditar que existe "a melhor tec
 - [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — fecho do vídeo: arquitetura distribuída não é moda, mas não existe bala de prata; decidir com embasamento
 
 - [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — mito da padronização: "X é melhor" como regra universal; ver [[wiki/concepts/mito-da-padronizacao-de-arquitetura]] e [[wiki/concepts/escolher-os-problemas-que-voce-quer-ter]].
+
+## Key sources (adição 2026-11-10)
+
+- [[wiki/sources/polling-sse-websocket-comunicacao-em-tempo-real]] — WebSocket "não é bala de prata": desconexão, perda de mensagem, limite em serverless

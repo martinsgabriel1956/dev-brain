@@ -3,8 +3,8 @@ type: entity
 title: "Cursor"
 aliases: ["Cursor IDE", "Cursor AI"]
 date_created: 2026-08-27
-date_updated: 2026-10-07
-source_count: 5
+date_updated: 2026-11-10
+source_count: 6
 tags: [cursor, harness, ide, agentes-ia, ia-para-devs]
 skill: tech-mentor-ai
 status: stub
@@ -38,8 +38,13 @@ Agentes na nuvem do Cursor podem operar um desktop completo: abrir a aplicação
 
 Citado como ferramenta com harness embutido (user harness configurável por cima).
 
+## Fluxo Completo de Feature
+
+[[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] usa o Cursor como ferramenta central: rules, skills, MCPs, modo de plano, envio do plano a novo agente, Composer para executar e worktree com apply. A [documentação atual](https://cursor.com/docs/configuration/worktrees) `[external]` restringe a interface nativa de worktree à Agents Window; na IDE, o caminho é `/worktree` e `/apply-worktree`.
+
 ## Key Sources
 
+- [[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] — ferramenta central do fluxo com design doc, plano e worktree
 - [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] — menor grau de controle de harness entre as ferramentas comparadas; exemplo de modelo (Opus) intercambiável entre Cursor e Claude Code
 - [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] — Cursor Automations (evento/schedule), execução multi-modelo em worktrees paralelas, desktop operável por agente
 - [[wiki/sources/claude-code-dicas-worktrees-paralelismo-rotinas-sessoes-remotas-output-estruturado]] — menção de transferibilidade

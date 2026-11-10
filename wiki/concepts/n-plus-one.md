@@ -3,8 +3,8 @@ type: concept
 title: "N+1 Query Problem"
 aliases: ["n+1", "n mais um", "n plus one"]
 date_created: 2026-04-22
-date_updated: 2026-07-28
-source_count: 4
+date_updated: 2026-11-10
+source_count: 5
 tags: [banco-de-dados, performance, orm, prisma, n-plus-one, graphql, api-design]
 skill: tech-mentor-system-design
 status: stable
@@ -34,6 +34,8 @@ const orders = await db.order.findMany({
 
 ORMs lazy-load relacionamentos por padrão. O loop parece inofensivo mas é uma query por iteração.
 
+**Ressalva:** isso varia por ORM. No Hibernate, `@ManyToOne` é EAGER por padrão, e o Prisma pede `include` explícito; no exemplo acima, o N+1 vem do `findUnique` escrito no loop. Ver [[wiki/concepts/lazy-vs-eager-loading]].
+
 ## Diagnóstico
 
 Habilite query logging no Prisma ou use `EXPLAIN ANALYZE`. Se ver dezenas de queries idênticas com IDs diferentes — é N+1.
@@ -58,9 +60,17 @@ O problema N+1 é um dos erros estruturais mais frequentes da IA gerando código
 
 Mitigação via [[harness-de-qualidade]]: ferramentas de análise de query (APM, slow query log, testes de performance) detectam N+1 de forma determinística. O dev sênior que sabe o que procurar consegue configurar o harness para bloquear esse padrão antes do commit.
 
+## N+1 Causado por Componentes de Lista
+
+No front-end, o N+1 aparece quando cada item da lista é um componente que busca o próprio detalhe: 1 `get all` + 10 `get by id`, visível na aba Network. Mover a busca para um componente montado só ao expandir reduz as requisições ao que o usuário abre. Ver [[wiki/concepts/lazy-vs-eager-loading]] e [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]].
+
 ## Key Sources
 
 - [[wiki/sources/banco-de-dados]]
 - [[wiki/sources/conteudo-tecnico-ia-robustez-sistemas]]
 - [[wiki/sources/conteudo-tecnico-ia-hype-sistemas-robustos]]
 - [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]] — N+1 entre frontend e backend, origem do GraphQL, prefetch em Django, LEFT JOIN
+
+## Key sources (adição 2026-11-10)
+
+- [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]] — 1 + 10 requisições por componente de lista, chamadas de eager na fonte

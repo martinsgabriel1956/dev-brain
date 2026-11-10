@@ -3,8 +3,8 @@ type: concept
 title: "AGENTS.md vs. CLAUDE.md"
 aliases: ["agents.md", "fragmentação de config de agentes", "controvérsia agents md shopify"]
 date_created: 2026-09-14
-date_updated: 2026-10-06
-source_count: 3
+date_updated: 2026-11-10
+source_count: 4
 tags: [claude-code, agents-md, claude-md, padronizacao, interoperabilidade, multi-agente, shopify]
 skill: tech-mentor-ai
 status: stub
@@ -48,8 +48,13 @@ Independente da controvérsia pública específica, a fonte aponta que compartil
 
 `AGENTS.md` na raiz com regras globais + arquivos adicionais em subpastas/módulos; `CLAUDE.md` frequentemente importa o `AGENTS.md` e acrescenta só o específico do Claude Code.
 
+## Cursor Adota os Dois Formatos
+
+[[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] descreve a divisão do mercado: documentação no `AGENTS.md`, capacidades em skills, e rules no Cursor cobrindo o mesmo papel. A [documentação do Cursor](https://cursor.com/docs/context/rules) `[external]` confirma suporte a `AGENTS.md` na raiz e em subpastas, como alternativa simples a `.cursor/rules`.
+
 ## Key Sources
 
+- [[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] — Cursor com rules e AGENTS.md
 - [[wiki/sources/guia-claude-code-para-startups-anthropic-ai-native-sdlc]]
 - [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]] — enquadra `AGENTS.md`/`CLAUDE.md` como documentação para uma "terceira audiência" (o agente), além de compilador e humano
 - [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — AGENTS.md hierárquico; CLAUDE.md importa AGENTS.md

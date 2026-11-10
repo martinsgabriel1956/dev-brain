@@ -3,7 +3,7 @@ type: concept
 title: "Loop Engineering"
 aliases: ["loop engineering", "engenharia de loop", "loop de harness", "loop fixo", "loop criador"]
 date_created: 2026-07-10
-date_updated: 2026-10-06
+date_updated: 2026-11-10
 source_count: 12
 tags: [loop-engineering, harness, agente, automacao, planner-executor-critic, loop-fixo, loop-criador, spec-driven, ralph-loop, anthropic, graph-engineering, loop-deterministico, loop-agentico, judge-pattern, orquestracao-de-modelos, langchain, erro-composto, quality-gate, agent-containment]
 skill: tech-mentor-ai
@@ -59,7 +59,7 @@ Três artefatos usados para dar contexto a cada nova iteração do loop: `lesson
 Divisão prática proposta em [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] (vídeo 2 da série de [[wiki/entities/pedro-nauke]]) como "a mais importante de todas" na hora de decidir modelo e custo:
 
 - **Loop determinístico** — um script que, a cada novo round, abre uma sessão nova: todo o contexto anterior é descartado e um novo contexto é iniciado do zero. Exemplo: o [[wiki/concepts/spec-driven-development|Compose]]. Como cada round não lembra do anterior, precisa de um arquivo de **memória transitória** gravado em disco (via system prompt: ao fechar a run ou antes de compactar, grava o que aconteceu) para a próxima run recuperar contexto.
-- **Loop agêntico** — via comando `/go` (implementado, com variações, pela maioria dos harnesses atuais — Claude Code, Codex, Hermes), nunca abre uma run nova: fica iterando na mesma run, compactando o contexto conforme enche. Depende não só do modelo, mas também da qualidade de compactação do harness. Quem julga se a run terminou é o próprio modelo — daí a importância de bons gates de verificação.
+- **Loop agêntico** — via comando `/goal` (implementado, com variações, pela maioria dos harnesses atuais — Claude Code, Codex, Hermes), nunca abre uma run nova: fica iterando na mesma run, compactando o contexto conforme enche. Depende não só do modelo, mas também da qualidade de compactação do harness. Quem julga se a run terminou é o próprio modelo — daí a importância de bons gates de verificação.
 
 ### Custo do Contexto Inicial em Modelos de Reasoning Alto
 

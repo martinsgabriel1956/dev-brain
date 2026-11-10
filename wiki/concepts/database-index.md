@@ -3,8 +3,8 @@ type: concept
 title: "Database Index"
 aliases: ["índice de banco de dados", "índice composto", "índice parcial"]
 date_created: 2026-04-22
-date_updated: 2026-10-07
-source_count: 10
+date_updated: 2026-11-10
+source_count: 11
 tags: [banco-de-dados, performance, postgresql, index, system-design]
 skill: tech-mentor-system-design
 status: stable
@@ -86,3 +86,7 @@ Um índice composto (ex.: `account_id` + `created_at` para acelerar a tela de ex
 - [[wiki/sources/indice-de-banco-de-dados]] — demonstração visual de B-tree se reordenando a cada inserção e busca resolvida em O(log n); índice hash (match exato, O(1), sem range) e índice espacial como tipos adicionais
 
 - [[wiki/sources/decisoes-de-arquitetura-tradeoffs-e-contexto-bernardo-lobato]] — índice como solução mais barata para lentidão por consulta pesada, antes de cogitar quebrar a aplicação em serviços.
+
+## Key sources (adição 2026-11-10)
+
+- [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]] — queries complexas indexadas para calcular regras por item, mesmo assim caras em eager

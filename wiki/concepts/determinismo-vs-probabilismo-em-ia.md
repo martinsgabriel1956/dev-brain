@@ -3,8 +3,8 @@ type: concept
 title: "Determinismo vs. Probabilismo em IA"
 aliases: ["ferramenta certa para a tarefa ia", "analise semantica vs analise deterministica", "llm como juiz determinístico"]
 date_created: 2026-07-27
-date_updated: 2026-10-14
-source_count: 6
+date_updated: 2026-11-10
+source_count: 7
 tags: [determinismo, robustez-de-sistemas, tokenizacao, era-agentica, harness-de-qualidade]
 skill: tech-mentor-ai
 status: draft
@@ -46,6 +46,10 @@ Prompt é probabilístico; trava no harness é determinística — [[wiki/concep
 
 Base conceitual: o LLM é probabilístico por construção (prevê o próximo token mais provável), diferente do software tradicional que devolve a mesma saída para a mesma entrada. [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]]
 
+## Workflow Determinístico e Agente
+
+[[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]] coloca workflows no lado determinístico, com repetibilidade e auditoria, e agentes no não determinístico. Ressalva: a garantia cobre o fluxo de controle, não a saída de um nó com LLM. Em [[wiki/concepts/dynamic-workflow|workflows dinâmicos]], o plano também varia (inferência).
+
 ## Key Sources
 
 - [[wiki/sources/ia-nao-substitui-sistemas-corporativos-deterministicos]]
@@ -54,3 +58,4 @@ Base conceitual: o LLM é probabilístico por construção (prevê o próximo to
 - [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — trava determinística vs prompt
 - [[wiki/sources/o-que-e-um-algoritmo-propriedades-pseudocodigo-sistemas-de-recomendacao]] — 'algoritmo' de redes sociais = [[wiki/concepts/sistema-de-recomendacao]], 'sem mágica' mas com modelos estatísticos
 - [[wiki/sources/10-conceitos-fundamentais-ia-moderna-bernardo-lobato]] — LLM probabilístico vs. software tradicional, explicação de base
+- [[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]] — workflow como garantia de processo, com ressalva

@@ -3,8 +3,8 @@ type: concept
 title: "Compactação de Contexto"
 aliases: ["context compaction", "compact", "context compression", "sumarização de contexto"]
 date_created: 2026-05-31
-date_updated: 2026-10-07
-source_count: 4
+date_updated: 2026-11-10
+source_count: 5
 tags: [claude-code, context-window, compactacao, agente-ia, llmops, context-engineering]
 skill: tech-mentor-ai
 status: stable
@@ -92,8 +92,13 @@ A compactação não é idêntica a um reset completo — mas é uma degradaçã
 
 Citada no de-para de Trivedy ao lado de tool-offloading e skills como mecanismo para manter desempenho em contexto longo.
 
+## Summarize From Here e Auto Compact Configurável
+
+[[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] acrescenta "Summarize from here" no menu de `Esc Esc`, que comprime só um trecho e mantém o começo intacto, e `/btw` para perguntas laterais fora do histórico. O gatilho do auto compact é configurável com `/autocompact` ou `CLAUDE_CODE_AUTO_COMPACT_WINDOW` ([documentação](https://code.claude.com/docs/en/model-config.md) `[external]`), então o limite de cerca de 200k citado nesta wiki não é fixo. O autor prefere abrir nova sessão a compactar.
+
 ## Key Sources
 
+- [[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] — Summarize from here; auto compact configurável; preferência por nova sessão
 - [[wiki/sources/claude-code-guia-pratico-full-cycle]]
 - [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] — `/clear` para contexto não relacionado, `/context` para inspeção, escopo de diretório mínimo
 - [[wiki/sources/harness-engineering-dicionario-do-programador-guias-sensores]] — compactação + tool-offloading + skills

@@ -3,8 +3,8 @@ type: concept
 title: "Revisão por Agente Independente"
 aliases: ["revisor independente", "implementador ≠ revisor", "agent reviewer separation"]
 date_created: 2026-09-29
-date_updated: 2026-10-26
-source_count: 3
+date_updated: 2026-11-10
+source_count: 4
 tags: [revisao-por-ia, code-review, agentes, contrato-de-revisao, separacao-de-contextos]
 skill: tech-mentor-ai
 status: draft
@@ -34,8 +34,13 @@ O "orgulho" é uma metáfora; o mecanismo mais plausível é o revisor herdar a 
 
 Além de revisar código, [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] usa agentes de contexto limpo para **explicar de volta** a issue antes da implementação, e um segundo agente limpo para julgar o entendimento ([[wiki/concepts/auditoria-de-issue-por-agente-de-contexto-limpo]]); depois, orquestrador → writer → reviewer, sempre com contextos limpos. Custo em tokens declarado como alto.
 
+## Variante Entre Sessões
+
+[[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] descreve o truque manual: a sessão A implementa, a sessão B revisa, e a revisão é colada de volta em A. Motivo dado: "contexto novo não tem apego ao código que acabou de escrever". Variação: uma sessão escreve os testes e outra o código que passa neles.
+
 ## Key sources
 
+- [[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] — revisão entre duas sessões; testes e código separados
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — auditoria de issue + orquestrador/writer/reviewer em contexto limpo
 - [[wiki/sources/pilares-desenvolvimento-com-ia-contrato-de-revisao-waves]]
 

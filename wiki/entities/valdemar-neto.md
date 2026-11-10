@@ -3,8 +3,8 @@ type: entity
 title: "Valdemar Neto"
 aliases: ["Valdemar Neto"]
 date_created: 2026-09-01
-date_updated: 2026-09-03
-source_count: 3
+date_updated: 2026-11-10
+source_count: 4
 tags: [arquitetura-software, monolito-modular, criador-de-conteudo, tech-leads-club, backend, ia-para-devs]
 skill: tech-mentor-backend
 status: stub
@@ -18,8 +18,13 @@ Cofundador da [[wiki/entities/tech-leads-club]], com passagens por Atlassian e T
 
 Duas fontes da wiki sobre spec-driven development e subagentes ([[wiki/sources/spec-driven-development-otimizando-contexto-agentes]] e [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]]) referenciam diretamente a skill **"TLC Spec Driven"**, da Tech Leads Club — mesma skill em ambas, mesma comunidade — o que é indício (não confirmação) de que sejam do mesmo autor/canal. Nenhuma das duas transcrições identifica o autor por nome completo. Tratado como candidato a autoria, não como fato — ver nota de confiança em cada fonte.
 
+## Conteúdo Sobre Desenvolvimento com IA (Confirmado)
+
+Em [[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] ele se apresenta pelo nome e demonstra um fluxo completo com IA no [[wiki/entities/cursor|Cursor]]. O vídeo remete a um anterior sobre progressive disclosure e RPI, tema de [[wiki/sources/context-engineering-codebases-grandes-rpi]], já atribuído a ele. Isso confirma que produz conteúdo sobre IA, mas não resolve a autoria das duas fontes citadas na seção acima.
+
 ## Key Sources
 
+- [[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] — fluxo completo com IA; mesmo sistema "FakeFlix"
 - [[wiki/sources/os-10-principios-arquitetura-modular-valdemar-neto]] — distinção monolito modular vs. [[wiki/concepts/arquitetura-modular]], os 10 princípios nomeados, exemplo de sistema de streaming em NestJS/NX
 - [[wiki/sources/tres-tipos-de-modulos-arquitetura-modular-valdemar-neto]] — taxonomia de [[wiki/concepts/tipos-de-modulos|três tipos de módulo]] (domínio, infraestrutura pura, feature), estrutura Core/Supporting Infrastructure/Infraestrutura Pura, mesmo exemplo "Fake Flix"
 - [[wiki/sources/subagentes-quando-vale-a-pena-custo-velocidade-tlc-spec-driven]] — autoria não confirmada, mas referência direta à skill "TLC Spec Driven" (mesma da fonte de spec-driven-development) é indício de mesmo autor/canal

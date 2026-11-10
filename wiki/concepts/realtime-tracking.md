@@ -3,8 +3,8 @@ type: concept
 title: "Realtime Tracking"
 aliases: ["tracking em tempo real", "location tracking", "websocket tracking"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-11-10
+source_count: 2
 tags: [system-design, websocket, kafka, realtime, localização, uber]
 skill: tech-mentor-system-design
 status: stub
@@ -38,3 +38,11 @@ Kafka desacopla Location Service do Passenger WebSocket Service. Se o Passenger 
 ## Key Sources
 
 - [[wiki/sources/case-uber]]
+
+## Lado do espectador via SSE (2026-11-10)
+
+[[wiki/sources/polling-sse-websocket-comunicacao-em-tempo-real]] usa o rastreamento de um caminhão no mapa como exemplo de SSE: quem só assiste recebe posições de GPS sem precisar enviar nada. Não contradiz o case Uber acima, porque ali o motorista também envia a posição. Uma arquitetura possível é WebSocket (ou HTTP comum) no lado de quem envia e SSE no lado de quem assiste; essa combinação é inferência, não está nas fontes.
+
+## Key sources (adição 2026-11-10)
+
+- [[wiki/sources/polling-sse-websocket-comunicacao-em-tempo-real]] — mapa de caminhão via SSE (lado de quem só recebe)

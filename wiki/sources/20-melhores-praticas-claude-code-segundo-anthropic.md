@@ -3,7 +3,7 @@ type: source
 title: "20 Melhores Práticas de Claude Code Segundo a Própria Anthropic"
 aliases: []
 date_created: 2026-07-21
-date_updated: 2026-07-21
+date_updated: 2026-11-10
 source_count: 0
 tags: [claude-code, boas-praticas, agente-ia, context-engineering, prompt-engineering, code-review, sessoes, sandboxing]
 skill: tech-mentor-ai
@@ -17,7 +17,7 @@ date_ingested: 2026-07-21
 
 ## TL;DR
 
-Vídeo em português que resume ~19-20 boas práticas extraídas de uma leitura completa da documentação oficial do Claude Code, atribuídas à Anthropic. Cobre desde técnicas de prompt (descrever resultado e verificação, não passos) até mecânica operacional do CLI (checkpoints/rewind, gerenciamento de sessões, `/go`, sandboxing para loops longos, retenção de dados local de 30 dias).
+Vídeo em português que resume ~19-20 boas práticas extraídas de uma leitura completa da documentação oficial do Claude Code, atribuídas à Anthropic. Cobre desde técnicas de prompt (descrever resultado e verificação, não passos) até mecânica operacional do CLI (checkpoints/rewind, gerenciamento de sessões, `/goal`, sandboxing para loops longos, retenção de dados local de 30 dias).
 
 ## Key Claims
 
@@ -32,7 +32,7 @@ Vídeo em português que resume ~19-20 boas práticas extraídas de uma leitura 
 9. **Alocar modelos por alavancagem (leverage) da tarefa** — modelos fortes para planejamento/arquitetura, modelos leves para execução rotineira; workflow sugerido: modelo forte cria spec → modelo intermediário quebra em tarefas → Sonnet implementa.
 10. **Checkpoints e comando `rewind`** para voltar a um ponto anterior da conversa sem depender só de commits Git.
 11. **Gerenciamento de sessões** — sessões salvas localmente, podem ser renomeadas (`/rename`) e retomadas (`--resume`), preservando contexto que se perderia ao só voltar a um commit Git.
-12. **Comando `/go`** para manter o Claude Code trabalhando até um objetivo verificável de longo prazo (ex.: PR até zero erros de teste).
+12. **Comando `/goal`** para manter o Claude Code trabalhando até um objetivo verificável de longo prazo (ex.: PR até zero erros de teste).
 13. **Arquivo dedicado a code review** (`review`), separado do `CLAUDE.md`, contendo só instruções pertinentes a revisão; comando `/code-review` com effort "ultra" recomendado para revisões complexas.
 14. **Comando `/context`** para inspecionar e limpar o contexto ativo.
 15. **Comitar o `.claude/` do projeto** (não o pessoal) para alinhamento de equipe.
@@ -60,7 +60,7 @@ Vídeo em português que resume ~19-20 boas práticas extraídas de uma leitura 
 ## Open Questions
 
 - Autor do vídeo não se identifica explicitamente na transcrição.
-- Sintaxe exata dos comandos citados (`/rename`, `/rewind`, `/go`, flags de retenção) não foi verificada contra a documentação oficial atual nesta ingestão — os nomes usados na transcrição podem divergir levemente da nomenclatura real da CLI em versões futuras.
+- Sintaxe exata dos comandos citados (`/rename`, `/rewind`, `/goal`, flags de retenção) não foi verificada contra a documentação oficial atual nesta ingestão — os nomes usados na transcrição podem divergir levemente da nomenclatura real da CLI em versões futuras.
 - Referência a "Fable" como um dos modelos mais fortes é consistente com a nomenclatura usada em outras fontes já ingeridas na wiki, mas não há link direto para uma página de comparação de modelos Anthropic nesta fonte.
 
 ## Quotes
@@ -72,3 +72,7 @@ Vídeo em português que resume ~19-20 boas práticas extraídas de uma leitura 
 ## Raw Source
 
 [[raw/20-melhores-praticas-claude-code-segundo-anthropic]]
+
+## Nota de correção (2026-11-10)
+
+A transcrição em `raw/` grafa o comando como `/go`. Esta página usa `/goal`, o nome na [documentação do Claude Code](https://code.claude.com/docs/en/commands.md) e na [do Codex](https://learn.chatgpt.com/codex/reference/slash-commands) `[external]`.

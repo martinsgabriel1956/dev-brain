@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-11-05
+date_updated: 2026-11-10
 ---
 
 
@@ -26,6 +26,11 @@ date_updated: 2026-11-05
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/fluxo-completo-feature-com-ia-design-doc-worktrees-valdemar-neto]] | Vídeo de [[wiki/entities/valdemar-neto\|Valdemar Neto]]: integração com o Stripe no [[wiki/entities/cursor\|Cursor]], de [[wiki/concepts/design-doc\|design doc]] a tasks, plano em contexto novo, execução com modelo mais barato e [[wiki/concepts/worktree-paralelismo\|worktrees]] na espera; conferido na documentação, com tensões apontadas |
+| [[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]] | Vídeo de [[wiki/entities/ronald-hulk]]: reimplementa em [[wiki/concepts/langgraph\|LangGraph]] os [[wiki/concepts/dynamic-workflow\|Dynamic Workflows]] do Claude Code, com esqueleto fixo e workflow spec gerada por execução; dois de seis [[wiki/concepts/padroes-de-workflow-dinamico\|padrões]] completos; conferido na documentação, com erros apontados |
+| [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]] | Vídeo de [[wiki/entities/tulio-faria]]: lazy vs. eager em relações 1:N, demonstração em React e tRPC (busca em componente montado só ao expandir), listagem enxuta e banco serverless no plano gratuito |
+| [[wiki/sources/claude-code-tudo-que-precisa-saber-harness-comandos-contexto]] | Aula em vídeo sobre o [[wiki/entities/claude-code\|Claude Code]] como [[wiki/concepts/harness\|harness]]: loop agêntico, janela de contexto, seis [[wiki/concepts/modos-de-permissao-claude-code\|modos de permissão]], comandos, modelos e esforço, CLAUDE.md, rules, skills, MCP, worktrees e headless; conferida na documentação oficial, com erros apontados |
+| [[wiki/sources/polling-sse-websocket-comunicacao-em-tempo-real]] | Vídeo introdutório: polling (cursor por timestamp), [[wiki/concepts/server-sent-events\|SSE]] (mão única, reconexão, ChatGPT) e WebSocket (handshake + full-duplex); regra "só vá pro WebSocket se os outros dois não funcionarem" |
 | [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] | Post de [[wiki/entities/fabio-akita]] (2014): nenhuma prática ágil salva equipe ruim; elas [[wiki/concepts/agil-como-exposicao-de-problemas\|expõem problemas e reduzem risco]], e consertar uma equipe depressa exigiria trocar pessoas |
 | [[wiki/sources/por-que-cpus-nao-evoluem-como-antes-power-wall-gpus]] | Vídeo, autor não identificado: [[wiki/concepts/power-wall\|power wall]] travou a frequência da CPU, e o ganho migrou para [[wiki/concepts/multicore]], [[wiki/concepts/microarquitetura]] e [[wiki/concepts/gpu\|GPUs]]. Tese confere; data, frequências e stack na GPU têm erros |
 | [[wiki/sources/onde-foi-parar-programacao-orientada-a-objetos-bernardo-lobato]] | [[wiki/entities/bernardo-lobato]]: história do software e tese de que a [[wiki/concepts/programacao-orientada-a-objetos]] **desceu um degrau**, de forma obrigatória de organizar o sistema a ferramenta dentro do serviço. Origem (Simula, Alan Kay) confere com fontes primárias; a perda de relevância se apoia em anedotas |
@@ -269,7 +274,7 @@ date_updated: 2026-11-05
 | [[wiki/sources/monolith-first-martin-fowler]] | Fonte primária do bliki de Fowler (2015): princípio Monolith First, o termo MicroservicePremium, dois argumentos (YAGNI e dificuldade de bounded contexts no início), quatro caminhos práticos de execução e o contra-argumento a favor de começar direto com microsserviços em substituições de sistema |
 | [[wiki/sources/loop-engineering-niveis-dev-loop-jogo-mmo]] | Três níveis do dev loop (React → spec driven → humano) e loop engineering como quarta camada; distinção loop fixo (sem side effect) vs. loop criador (roadmap iterativo, risco de perpetuar bugs); caso Ban→Rust e jogo MMO completo construído em um final de semana; quatro perguntas para decidir se vale usar loop |
 | [[wiki/sources/loop-engineering-harness-e-a-frase-que-viralizou]] | Pedro Nauke (Compose): loop = 4 peças (objetivo checável, ação, feedback, condição de parada); origem no padrão ReAct (2022/2023); três fatores que destravaram loops longos em 2026 (modelo, harness, estado persistente); correção da frase viral "loop engineering matou harness engineering" — o loop contém o harness, não o substitui |
-| [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] | Vídeo 2 da série de Pedro Nauke: divisão **loop determinístico** (reinicia sessão a cada round, precisa de memória transitória em disco, pior com reasoning alto) vs. **loop agêntico** (via `/go`, compacta em vez de reiniciar, quem julga se terminou é o modelo); teste próprio mostra que breakdown de tasks melhora resultado mesmo em loop agêntico; **padrão judge** (agente separado via stop hook julga se a run terminou, útil com modelos menos densos); **padrão orquestrador** (modelo caro orquestra modelos baratos por tipo de tarefa); gerenciamento de estado via `state.md`; skills que encapsulam spec-driven + report + deep review + PR/squash merge numa run |
+| [[wiki/sources/loop-engineering-padroes-loop-deterministico-agentico]] | Vídeo 2 da série de Pedro Nauke: divisão **loop determinístico** (reinicia sessão a cada round, precisa de memória transitória em disco, pior com reasoning alto) vs. **loop agêntico** (via `/goal`, compacta em vez de reiniciar, quem julga se terminou é o modelo); teste próprio mostra que breakdown de tasks melhora resultado mesmo em loop agêntico; **padrão judge** (agente separado via stop hook julga se a run terminou, útil com modelos menos densos); **padrão orquestrador** (modelo caro orquestra modelos baratos por tipo de tarefa); gerenciamento de estado via `state.md`; skills que encapsulam spec-driven + report + deep review + PR/squash merge numa run |
 | [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]] | Frase viral de Peter Steinberger; matemática de erros compostos (0,99ⁿ) em processos de múltiplas etapas; quatro mitigações (verificação, checkpoints, ferramentas, contexto limpo); caso Vercel (remoção de 80% das ferramentas); Ralph Loop (Geoffrey Huntley, 2025); quatro níveis oficiais de loop da Anthropic (turn/goal/time/proactive); doze componentes do harness (sete documentados) |
 | [[wiki/sources/harness-anatomia-tecnica-alem-do-claude-md]] | Define harness como tudo ao redor do modelo; distingue user harness (rules/skills/CLAUDE.md) do harness embutido na ferramenta; detalha agent run em cinco partes (assemble de contexto/RAG com user/episodic/semantic/procedural memory, tools, agent loop com limites, guardrails, observabilidade com retries/evals); gradiente de controle por ferramenta (OpenClaw > Codex/Claude Code > Cursor); claim não verificado de Claude Code open source pós-vazamento na Anthropic |
 | [[wiki/sources/jspace-cerebro-cloud-antropic]] | Lucas Montano reage à pesquisa "J-Space" da Anthropic: espaço interno de ativações do Claude vinculável a palavras nunca ditas, lido via Jacobian Lens; não é chain-of-thought; tese pessoal do autor de que isso vira base de cobrança/auditoria de agentes |
@@ -278,7 +283,7 @@ date_updated: 2026-11-05
 | [[wiki/sources/api-gateway-padrao-essencial-arquiteturas-distribuidas]] | Bernardo Lobato: API Gateway como ponto único de entrada (roteamento, auth, mapeamento de payload, edge functions); API Composition/API Composer para orquestrar e agregar múltiplos endpoints; BFF como Gateway especializado por tipo de cliente; desafios centrais são single point of failure e Gateway virando gargalo por acúmulo de funções de borda |
 | [[wiki/sources/como-lidar-com-tarefas-dificeis-sendo-junior]] | André Casciotti: tarefas difíceis parecem mais difíceis do que são — síndrome do impostor ataca em todo nível, tarefas complexas naturalmente vão para seniores; 3 técnicas: seguir o fluxo do código desde a ação do usuário, dividir tarefas até responder "seguro?"/"tenho prazo?", organizar trabalho com lista escrita e progresso visível |
 | [[wiki/sources/os-3-estagios-de-maturidade-para-testar-codigo]] | Filipe Deschamps (autoria inferida): três estágios de maturidade para testar código — clicar manualmente na UI, Postman contra API-first/dogfooding no Pagar.me, e testes automatizados em modo watch (Jest); expectativa que quebra expõe vulnerabilidade real de autorização (403 vs 200) e o mesmo teste pega regressão futura sem verificação manual |
-| [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] | ~19 boas práticas de Claude Code atribuídas à documentação oficial da Anthropic: verificação embutida no prompt, descrever resultado e não passos, checkpoints/rewind, gerenciamento de sessões, `/go`, alocação de modelo por leverage, sandbox para loops não interrompidos, retenção de 30 dias |
+| [[wiki/sources/20-melhores-praticas-claude-code-segundo-anthropic]] | ~19 boas práticas de Claude Code atribuídas à documentação oficial da Anthropic: verificação embutida no prompt, descrever resultado e não passos, checkpoints/rewind, gerenciamento de sessões, `/goal`, alocação de modelo por leverage, sandbox para loops não interrompidos, retenção de 30 dias |
 | [[wiki/sources/3-pilares-testes-automatizados-produtividade]] | Erick Wendel: 3 pilares — entender a tarefa antes de codificar (loop de confirmação de entendimento), setup de live reload/debug/testes integrados (node --watch/--inspect/--test + launch.json), e decompor tarefa em entrada/processamento/saída + Given/When/Then antes de implementar (exemplo Rinha de Backend); tipagem forte via JSDoc sem TypeScript |
 | [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] | Autoria inferida (Filipe Deschamps): 5 armadilhas de mentalidade ao aprender a programar — bomba de efeito moral (choque de complexidade que paralisa), relação criador-criatura (pedestal técnico), programar sem mirar impacto real, escolher o projeto (com "adrenalina") antes da tecnologia, e desligar autocomplete para não sabotar a spaced repetition |
 | [[wiki/sources/kimi-k3-china-mercado-ia-open-source]] | Kimi K3 (Moonshot, 2,8T parâmetros, MoE 896/16 experts, até 75% economia de KV Cache) como estudo de caso: sanções de exportação de chips forçam inovação arquitetural que, ao virar open source, espalha conhecimento de inferência barata — tese central: a camada de aplicação importa mais que o modelo, lock-in em um único provedor não faz sentido |
@@ -885,6 +890,31 @@ date_updated: 2026-11-05
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### Design Doc como Fonte do Contexto (2026-11-10)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/design-doc]] | Documento revisado por humanos que serve de fonte da verdade para quebrar tasks e planos com agentes |
+
+### Dynamic Workflows (2026-11-10)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/dynamic-workflow]] | Workflow gerado por modelo para cada problema e executado com controle programático |
+| [[wiki/concepts/padroes-de-workflow-dinamico]] | Os seis padrões da Anthropic, de classify-and-act a loop until done |
+
+### Lazy e Eager Loading (2026-11-10)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/lazy-vs-eager-loading]] | Quando carregar dados relacionados: eager lê tudo em uma query, lazy lê sob demanda e arrisca N+1 |
+
+### Modos de Permissão — Claude Code (2026-11-10)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/modos-de-permissao-claude-code]] | Seis modos (Default, Accept Edits, Plan, Auto, Don't Ask, Bypass) que definem o que o harness libera sem perguntar |
 
 ### Ágil Como Exposição de Problemas (2026-11-05)
 
@@ -1996,7 +2026,7 @@ date_updated: 2026-11-05
 | [[wiki/concepts/worktree-paralelismo]] | Git worktrees isolam tarefas paralelas; base do trabalho L3 — múltiplas specs rodando simultaneamente |
 | [[wiki/concepts/subagentes]] | Paralelismo a nível de contexto — subtarefas convergem numa única PR; model/tools customizáveis por agente |
 | [[wiki/concepts/rewind-checkpoints-claude-code]] | Checkpoints e `rewind` no Claude Code — voltar a um ponto anterior da conversa sem depender só de commits Git |
-| [[wiki/concepts/gerenciamento-de-sessoes-claude-code]] | Renomear/retomar sessões locais do Claude Code; `/go` para objetivos verificáveis de longo prazo; retenção de 30 dias |
+| [[wiki/concepts/gerenciamento-de-sessoes-claude-code]] | Renomear/retomar sessões locais do Claude Code; `/goal` para objetivos verificáveis de longo prazo; retenção de 30 dias |
 | [[wiki/concepts/modelo-por-leverage-tarefa]] | Modelo mais forte para planejamento/arquitetura, mais leve para execução rotineira — alocação por alavancagem da tarefa |
 | [[wiki/concepts/context-engineering-harness]] | Rules + skills + MCPs formam o "mapa" do projeto — fator decisivo de qualidade acima do modelo escolhido |
 | [[wiki/concepts/rules-agente]] | Guardrails sempre no system prompt — agents.md/CLAUDE.md; onboarding digital do projeto |

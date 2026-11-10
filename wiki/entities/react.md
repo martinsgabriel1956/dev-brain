@@ -3,8 +3,8 @@ type: entity
 title: "React"
 aliases: ["ReactJS", "React.js"]
 date_created: 2026-04-22
-date_updated: 2026-10-14
-source_count: 7
+date_updated: 2026-11-10
+source_count: 8
 tags: [react, frontend, biblioteca, facebook, meta]
 skill: tech-mentor-frontend
 status: stable
@@ -50,3 +50,7 @@ React usa [[wiki/concepts/virtual-dom]] + [[wiki/concepts/reconciliacao]] como e
 
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — surge do Facebook como evolução das SPAs; Virtual DOM; React Native ([[wiki/concepts/single-page-application]], [[wiki/concepts/aplicativo-hibrido]])
+
+## Key sources (adição 2026-11-10)
+
+- [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]] — renderização condicional como mecanismo de [[wiki/concepts/lazy-vs-eager-loading]]

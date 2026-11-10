@@ -3,8 +3,8 @@ type: entity
 title: "OpenAI"
 aliases: ["Open AI"]
 date_created: 2026-05-17
-date_updated: 2026-10-14
-source_count: 27
+date_updated: 2026-11-10
+source_count: 28
 tags: [openai, organização, llm, ia, cartao-corporativo, prompt-caching]
 skill: tech-mentor-ai
 status: stable
@@ -132,3 +132,7 @@ Segundo [[wiki/sources/7-coisas-desenvolvedores-2026-max-lorian]], a OpenAI rela
 Citada em [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]] (afirmação do autor, sem fonte) como empresa que passou de só-API a harness + FDE em clientes B2B — ver [[wiki/concepts/operacao-como-servico-de-ia]].
 
 - [[wiki/sources/5-modelos-economicos-para-vender-servicos-de-ia-ronald-hulk]]
+
+## Key sources (adição 2026-11-10)
+
+- [[wiki/sources/polling-sse-websocket-comunicacao-em-tempo-real]] — streaming do ChatGPT citado como "SSE puro"; a documentação da API confirma SSE e oferece também modo WebSocket

@@ -3,8 +3,8 @@ type: concept
 title: "Degradação de Contexto"
 aliases: ["context degradation", "lost in the middle", "degradação janela contexto"]
 date_created: 2026-06-02
-date_updated: 2026-10-08
-source_count: 8
+date_updated: 2026-11-10
+source_count: 9
 tags: [contexto, degradacao, janela-de-contexto, llm, qualidade]
 skill: tech-mentor-ai
 status: stable
@@ -76,6 +76,11 @@ Ter uma janela grande não significa que devo preenchê-la. Quanto mais informa�
 
 - [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] — ferramentas inúteis e histórico acumulado como ruído ([[wiki/concepts/superficie-probabilistica-do-agente]])
 
+## Workflow Como Mitigação
+
+[[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]] usa a degradação como razão para separar o trabalho em nós: cada LLM só vê o necessário, e o restante fica no estado do grafo. O efeito é medido em [Context Rot](https://www.trychroma.com/research/context-rot) `[external]`, com 18 LLMs; o vídeo não mede o ganho.
+
 ## Key sources (adição 2026-10-08)
 
 - [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — Errou/não entendeu: descartar o contexto e começar conversa nova em vez de recuperá-lo ([[wiki/concepts/ia-perdida-e-confiante]]).
+- [[wiki/sources/dynamic-workflows-langgraph-engenharia-reversa-ronald-hulk]] — isolamento por nó como resposta à perda de qualidade
