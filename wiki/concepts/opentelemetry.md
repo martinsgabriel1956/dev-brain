@@ -3,8 +3,8 @@ type: concept
 title: "Opentelemetry"
 aliases: []
 date_created: 2026-09-22
-date_updated: 2026-09-22
-source_count: 3
+date_updated: 2026-11-11
+source_count: 4
 tags: [opentelemetry]
 skill: tech-mentor-infra
 status: stub
@@ -29,3 +29,4 @@ Página não nasceu de um ingest próprio; TL;DR acima é reconstruído apenas a
 - [[wiki/sources/distributed-tracing]]
 - [[wiki/sources/otel-collector-sampling]]
 - [[wiki/sources/otel-sdk]]
+- [[wiki/sources/cpu-profiling-nodejs-inspector-autocannon-erick-wendel]]: recomendado como primeira opção de visibilidade; sem ele no cliente, o autor caiu para [[wiki/concepts/cpu-profiling]] com `node:inspector`

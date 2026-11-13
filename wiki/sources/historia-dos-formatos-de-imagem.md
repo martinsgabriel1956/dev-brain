@@ -3,7 +3,7 @@ type: source
 title: "A História dos Formatos de Imagem"
 aliases: ["formatos de imagem", "image formats history", "tga png jpeg gif svg webp heic avif"]
 date_created: 2026-07-29
-date_updated: 2026-07-29
+date_updated: 2026-11-13
 source_file: "/home/gabriel-martins/Documentos/dev-brain/raw/historia-dos-formatos-de-imagem.md"
 source_url: ""
 author: "desconhecido (canal YouTube)"
@@ -51,6 +51,10 @@ Percurso cronológico pelos principais formatos de imagem (TGA 1984 → PDF), mo
 - [[wiki/concepts/compressao-com-perdas-vs-sem-perdas]]
 - [[wiki/concepts/compactacao-de-texto]] — mesma base teórica (Huffman coding) aparece como passo final da compressão do JPEG e do PNG, generalizando o que essa página já documentava só para texto/HTTP
 - [[wiki/concepts/video-transcoding]] — HEIC e AVIF reaproveitam os mesmos codecs de vídeo (HEVC, AV1) já catalogados nessa página
+
+## Desdobramentos
+
+A regra prática de formato para UI (foto → JPG, transparência → PNG, ícone e ilustração → SVG, WebP como versão otimizada) aparece em [[wiki/sources/imagens-e-ilustracoes-formatos-bancos-otimizacao]], que bate com a cronologia desta fonte.
 
 ## Open Questions
 

@@ -3,8 +3,8 @@ type: concept
 title: "Event Loop e Performance JavaScript"
 aliases: ["event loop js", "bloqueio event loop", "nodejs performance", "single thread js"]
 date_created: 2026-06-02
-date_updated: 2026-09-14
-source_count: 2
+date_updated: 2026-11-11
+source_count: 3
 tags: [javascript, nodejs, event-loop, performance, web-streams, async]
 skill: lang-dynamic
 status: stable
@@ -73,7 +73,12 @@ Cliente envia CSV
 
 Benefícios: custo de VM menor, responsabilidades isoladas, falhas contidas.
 
+## Achar o código que segura a thread
+
+Quando não se sabe qual função é cara, um [[wiki/concepts/cpu-profiling|CPU profile]] gravado durante um [[wiki/concepts/teste-de-carga]] mostra onde a thread passa o tempo. Em [[wiki/sources/cpu-profiling-nodejs-inspector-autocannon-erick-wendel]], o vilão era uma cópia profunda dos dados a cada requisição.
+
 ## Key Sources
 
 - [[wiki/sources/5-dicas-performance-javascript]]
 - [[wiki/sources/node-single-thread-ssr-bloqueio-event-loop]] — caso concreto de SSR pesado (CPU-bound) travando o event loop inteiro e causando tela em branco para todos os usuários; distinção explícita I/O-bound vs. CPU-bound e por que `await`/`setTimeout` não resolvem bloqueio de CPU
+- [[wiki/sources/cpu-profiling-nodejs-inspector-autocannon-erick-wendel]]: CPU gasto por requisição (cópia profunda com `cloneDeep`) derruba a capacidade da rota de 11.000 para 2000 requisições; como achar o culpado com [[wiki/concepts/cpu-profiling]]

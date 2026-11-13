@@ -3,8 +3,8 @@ type: entity
 title: "HostGator"
 aliases: ["HostGator", "HostGator VPS"]
 date_created: 2026-07-20
-date_updated: 2026-10-30
-source_count: 4
+date_updated: 2026-11-13
+source_count: 5
 tags: [empresa, hosting, vps, infra, patrocinio]
 skill: tech-mentor-infra
 status: stub
@@ -36,3 +36,4 @@ Citada em [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — quarta aparição como patrocinadora (VPS para site, SaaS, n8n ou OpenClaw)
+- [[wiki/sources/imagens-e-ilustracoes-ilustracoes-mascotes-consistencia-svg]] — citada como exemplo de mascote de marca (aula de UI, não patrocínio)

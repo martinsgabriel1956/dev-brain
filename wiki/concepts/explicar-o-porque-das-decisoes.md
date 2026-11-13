@@ -3,7 +3,7 @@ type: concept
 title: "Explicar o Porquê das Decisões"
 aliases: ["por que e como", "justificar decisões técnicas em entrevista"]
 date_created: 2026-10-07
-date_updated: 2026-10-07
+date_updated: 2026-11-13
 source_count: 1
 tags: [carreira, entrevista, arquitetura, comunicacao]
 skill: tech-mentor-leadership
@@ -17,6 +17,10 @@ Ao falar de trabalho passado, explicar **por que** e **como** algo foi feito, n�
 ## Por que importa
 
 Entrevistadores usam o *porquê* para distinguir quem executou tarefas de quem entendeu o problema. Alinha-se a [[wiki/concepts/tradeoff-arquitetural]] e a [[wiki/concepts/contexto-na-decisao-arquitetural]] (a resposta certa depende do contexto) e ao exemplo de [[wiki/concepts/microsservicos]]; é o complemento de conteúdo para [[wiki/concepts/storytelling-em-entrevista]].
+
+## Em design
+
+[[wiki/concepts/porque-das-decisoes-de-design]]: em UI, o porquê de cada escolha visual é o que convence o cliente e distingue quem copia de quem entende ([[wiki/sources/como-aprender-ui]]).
 
 ## Key sources
 

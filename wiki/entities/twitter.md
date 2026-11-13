@@ -3,8 +3,8 @@ type: entity
 title: "Twitter"
 aliases: ["Twitter", "X"]
 date_created: 2026-08-24
-date_updated: 2026-10-14
-source_count: 2
+date_updated: 2026-11-13
+source_count: 3
 tags: [oauth2, historia, api-economy]
 skill: tech-mentor-security
 status: stub
@@ -20,3 +20,4 @@ Rede social onde [[wiki/entities/blaine-cook]] trabalhava por volta de 2006-2007
 
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — criou o Less e o Bootstrap ([[wiki/entities/twitter-bootstrap]])
+- [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — retweet/resposta deslocados no feed como eixo de reforço (UI)

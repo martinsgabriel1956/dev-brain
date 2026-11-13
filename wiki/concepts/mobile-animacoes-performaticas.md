@@ -3,8 +3,8 @@ type: concept
 title: "Animações Performáticas — Mobile"
 aliases: ["reanimated 3", "compose animation", "flutter animations", "mobile jank"]
 date_created: 2026-04-24
-date_updated: 2026-04-24
-source_count: 1
+date_updated: 2026-11-13
+source_count: 3
 tags: [mobile, animacoes, reanimated, compose, flutter, ui-thread, jank]
 skill: tech-mentor-mobile
 status: stable
@@ -56,3 +56,5 @@ val offsetX by animateFloatAsState(
 ## Key Sources
 
 - [[wiki/sources/mobile-animacoes-performaticas]]
+- [[wiki/sources/imagens-e-ilustracoes-svg-no-figma-undraw-mockup-iphone-codigo]] — filtros SVG exportados do Figma (sombra) têm custo de renderização ao animar (nota do agente)
+- [[wiki/sources/imagens-e-ilustracoes-vetorizar-icones-figma-pen-tool-bend-tool]] — ícones animados com sombra interna e externa no SVG (filtros com custo de renderização; nota do agente)

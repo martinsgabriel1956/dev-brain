@@ -3,7 +3,7 @@ type: source
 title: "10 Conceitos que os Frameworks Front-end Resolvem por Debaixo dos Panos"
 aliases: ["10 conceitos internos de frameworks frontend", "o que React/Vue/Angular fazem por baixo dos panos"]
 date_created: 2026-08-03
-date_updated: 2026-08-03
+date_updated: 2026-11-12
 source_file: /home/gabriel-martins/Documentos/dev-brain/raw/10-conceitos-internos-frameworks-frontend.md
 source_url: null
 author: null
@@ -37,7 +37,7 @@ Vídeo curto (short) em português, sem autor identificado na transcrição, lis
 
 ## Entities
 
-[[wiki/entities/react]]
+[[wiki/entities/react]] · [[wiki/entities/vue]]
 
 ## Concepts
 
@@ -58,3 +58,7 @@ Vídeo curto (short) em português, sem autor identificado na transcrição, lis
 > "Mexer no DOM de forma descontrolada é muito caro, e esse é um dos motivos pelos quais os frameworks existem."
 
 *(Transcrição completa e cleanup em `raw/10-conceitos-internos-frameworks-frontend.md`.)*
+
+## Relação com fontes posteriores
+
+- [[wiki/sources/configurando-ambiente-vue-node-npm-vue-cli]]: o lado prático, com a instalação das ferramentas antes do primeiro projeto Vue.

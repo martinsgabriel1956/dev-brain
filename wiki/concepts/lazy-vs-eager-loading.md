@@ -3,8 +3,8 @@ type: concept
 title: "Lazy Loading vs. Eager Loading"
 aliases: ["lazy load", "eager load", "carregamento preguiçoso", "carregamento antecipado", "modo fominha"]
 date_created: 2026-11-10
-date_updated: 2026-11-10
-source_count: 1
+date_updated: 2026-11-13
+source_count: 2
 tags: [lazy-loading, eager-loading, orm, performance, banco-de-dados, frontend, custo]
 skill: tech-mentor-backend
 status: draft
@@ -64,3 +64,4 @@ O mesmo princípio vale para `loading="lazy"` em imagens e iframes ([external](h
 ## Key Sources
 
 - [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]]
+- [[wiki/sources/imagens-e-ilustracoes-aspect-ratio-pessoas-ponto-focal-texto]] — "carregamento sob demanda" citado como otimização de imagem do lado do código, sem detalhe

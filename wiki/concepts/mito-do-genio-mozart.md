@@ -3,8 +3,8 @@ type: concept
 title: "Mito do Gênio (Mozart)"
 aliases: ["faísca divina", "mito de Mozart", "gênio nato", "child prodigy myth"]
 date_created: 2026-09-02
-date_updated: 2026-09-02
-source_count: 1
+date_updated: 2026-11-13
+source_count: 2
 tags: [talento, pratica-deliberada, mito, carreira, mentalidade]
 skill: tech-mentor-leadership
 status: stub
@@ -31,6 +31,10 @@ Isso não torna Mozart "uma fraude" nem diminui a qualidade do resultado — ele
 
 O mesmo argumento aparece em outros domínios citados na mesma fonte: recordes olímpicos de 1908 hoje batidos por colegiais comuns; Roger Bacon (séc. 13) estimando 30-40 anos para dominar uma matemática hoje ensinada a adolescentes; o Concerto para Violino de Tchaikovsky (1878), recusado como "impossível" pelo violinista Leopold Auer, hoje tocado por qualquer estudante de Juilliard. O padrão sobe porque o método de treino melhora — não porque o cérebro ou o corpo humano mudou.
 
+## Em Design: "Criatividade se Constrói"
+
+[[wiki/sources/como-aprender-ui]] responde ao "sou bloqueado criativamente" com o mesmo argumento: criar parece fácil para quem vê de fora, mas "é muito treino". Pesquisa, [[wiki/concepts/mood-board]] e repetição formam o repertório que parece talento.
+
 ## Relação com Outros Conceitos
 
 - [[wiki/concepts/disciplina-vs-talento]] — este caso é a evidência histórica mais detalhada por trás da tese geral de que disciplina supera talento aparente
@@ -40,3 +44,4 @@ O mesmo argumento aparece em outros domínios citados na mesma fonte: recordes o
 ## Key Sources
 
 - [[wiki/sources/akita-pratica-deliberada-mito-do-talento]] — desconstrução completa do mito, citando *Talent Is Overrated* de [[wiki/entities/geoff-colvin]]
+- [[wiki/sources/como-aprender-ui]] — criatividade em UI como treino acumulado, não dom

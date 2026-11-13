@@ -3,8 +3,8 @@ type: entity
 title: "Meta"
 aliases: ["Facebook", "Meta Platforms"]
 date_created: 2026-07-16
-date_updated: 2026-08-18
-source_count: 6
+date_updated: 2026-11-13
+source_count: 9
 tags: [empresa, demissao, ai-washing, era-agentica, graphql, api-design, ci-cd, deploy]
 skill: tech-mentor-ai
 status: stub
@@ -28,6 +28,14 @@ A Meta (então Facebook) criou o [[wiki/concepts/graphql]], motivada pela necess
 
 Antes de ser conhecida por IA, a Meta (então Facebook) já era referência em [[wiki/concepts/ci-cd]]: em 2017, migrou o deploy web de ~700 cherry-picks manuais/dia para push quase-contínuo direto da master, escalando via [[wiki/concepts/canary-release|rollout gradual]] (funcionários → 2% → 100%) e usando seu sistema interno de feature flag, o Gatekeeper, para desacoplar deploy de release (→ [[wiki/concepts/deploy-vs-release]]). Ver [[wiki/sources/rapid-release-at-massive-scale-facebook]].
 
+## Facebook em japonês
+
+Exemplo de Násser: com o Facebook em japonês, os ícones (caixa de entrada, sininho, engrenagem, lápis, escudo) ainda guiam o usuário ([[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]]).
+
+## Facebook denso
+
+Na aula de espaçamento e linhas, o Facebook é o exemplo de interface densa: feed em cards, informações mais juntas dentro do card, linha de ponta a ponta separando conteúdo de interação ([[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]]). Ver [[wiki/concepts/densidade-de-informacao]].
+
 ## Key Sources
 
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]]
@@ -36,3 +44,6 @@ Antes de ser conhecida por IA, a Meta (então Facebook) já era referência em [
 - [[wiki/sources/continuous-integration-delivery-deploy-vs-release]] — caso citado de segunda mão como ilustração didática de deploy vs. release
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — citada (sem detalhamento numérico) como uma das big techs estourando orçamento de engenharia de IA em 2026
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — criadora do [[wiki/concepts/graphql]], situado na linha do tempo dos anos 2010; também citada (então Facebook) como uma das pioneiras de API pública nos anos 2000
+- [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — Explorar do Instagram: grid assimétrico e eixo de continuidade para feed infinito; Reels maiores como hierarquia
+- [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — Facebook em japonês, navegável pelos ícones
+- [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — Facebook denso organizado com cards e linhas

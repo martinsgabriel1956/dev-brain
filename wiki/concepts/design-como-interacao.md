@@ -3,8 +3,8 @@ type: concept
 title: "Design como Interação"
 aliases: ["design is interaction", "design além do visual", "design funcional"]
 date_created: 2026-06-11
-date_updated: 2026-07-21
-source_count: 2
+date_updated: 2026-11-13
+source_count: 5
 tags: [design, ux, interação, micro-interações, performance-percebida]
 skill: tech-mentor-frontend
 status: stable
@@ -62,7 +62,13 @@ Antes de a interação acontecer, três decisões estruturais já influenciam co
 
 Erros recorrentes em UI gerada rapidamente por IA — como a ausência de `cursor: pointer`, hover ou sublinhado em links — são falhas de affordance, não só de estética: quebram a promessa implícita de "isto é interativo" antes mesmo da micro-interação acontecer.
 
+## O visual importa, mas a serviço do objetivo
+
+[[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] insiste que "o visual importa também" (o autor escolhe produtos e carros pelo design). Não contradiz "a ilusão do bonito" acima: o visual da aula está subordinado ao [[wiki/concepts/objetivo-da-interface|objetivo da interface]], como o azul escasso que isola o CTA.
+
 ## Relação com Outros Conceitos
+
+- [[wiki/concepts/ui-design]] e [[wiki/concepts/ux-design]]: a distinção de base; a UI é parte da UX ([[wiki/sources/o-que-e-ux-ui-design]])
 
 - [[wiki/concepts/fake-delay]] — exemplo prático de design de interação
 - [[wiki/concepts/design-engineer]] — o papel que implementa design como interação
@@ -70,7 +76,14 @@ Erros recorrentes em UI gerada rapidamente por IA — como a ausência de `curso
 - [[wiki/concepts/hierarquia-visual]] — estrutura de atenção que precede a interação
 - [[wiki/concepts/affordance]] — sinalização de como interagir com um elemento
 
+## Antecipar a interação
+
+[[wiki/sources/elementos-da-interface-introducao-ui-design]] define design de interface pela interação, não pelo visual: antecipar o que o usuário vai precisar fazer para facilitar a interação com o produto. O visual entra como consistência "agradável visualmente", a serviço disso.
+
 ## Key Sources
 
 - [[wiki/sources/design-first-vs-code-first-referencias]]
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
+- [[wiki/sources/o-que-e-ux-ui-design]]
+- [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — o visual importa quando serve ao objetivo
+- [[wiki/sources/elementos-da-interface-introducao-ui-design]] — design de interface como antecipação da interação

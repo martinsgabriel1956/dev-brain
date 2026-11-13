@@ -3,8 +3,8 @@ type: concept
 title: "Compressão Com Perdas vs. Sem Perdas (Lossy vs. Lossless)"
 aliases: ["lossy compression", "lossless compression", "compressão com perdas", "compressão sem perdas"]
 date_created: 2026-07-29
-date_updated: 2026-07-29
-source_count: 1
+date_updated: 2026-11-13
+source_count: 3
 tags: [compressao, cs-fundamentals, jpeg, png, information-theory]
 skill: cs-fundamentals
 status: stub
@@ -34,6 +34,12 @@ A entropia de Shannon define o limite teórico de quanto uma fonte pode ser comp
 - [[wiki/concepts/formato-png]] — exemplo canônico de compressão sem perdas em imagem
 - [[wiki/concepts/compactacao-de-texto]] — Huffman coding, o passo final tanto em JPEG quanto em PNG
 
+## Na prática de UI
+
+Em UI a escolha aparece como regra de formato (foto → JPG com perdas, transparência → PNG sem perdas) e como passo de compressão antes de publicar: o TinyImage escolhe a qualidade (90%, 80%) e pode cortar até 80% do peso, segundo [[wiki/entities/nasser|Násser]] ([[wiki/sources/imagens-e-ilustracoes-formatos-bancos-otimizacao]]). Ver [[wiki/concepts/otimizacao-de-imagens]].
+
 ## Key Sources
 
 - [[wiki/sources/historia-dos-formatos-de-imagem]]
+- [[wiki/sources/imagens-e-ilustracoes-formatos-bancos-otimizacao]] — compressão com qualidade ajustável (TinyImage) em fluxo de UI
+- [[wiki/sources/imagens-e-ilustracoes-pratica-figma-importar-editor-plugins-exportacao]] — demo do TinyImage Compressor: controle de qualidade pela relação peso x compressão

@@ -3,8 +3,8 @@ type: concept
 title: "Lei da Proximidade (Gestalt)"
 aliases: ["law of proximity", "gestalt proximity", "princípios de gestalt", "gestalt design"]
 date_created: 2026-07-21
-date_updated: 2026-07-21
-source_count: 1
+date_updated: 2026-11-13
+source_count: 6
 tags: [ui, ux, design, gestalt, frontend]
 skill: tech-mentor-frontend
 status: draft
@@ -35,6 +35,27 @@ Pode ser declarada explicitamente num prompt de refatoração de layout: agrupar
 - [[wiki/concepts/hierarquia-visual]] — proximidade agrupa elementos; hierarquia define a ordem em que os grupos são vistos.
 - [[wiki/concepts/design-como-interacao]] — Gestalt é um princípio de percepção que informa decisões de design que vão além do visual isolado.
 
+## Eixo de reforço
+
+Em [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]], deslocar um item para fora do [[wiki/concepts/eixo-visual|eixo]] principal faz o usuário lê-lo como parte do item de cima (retweet e resposta no feed do Twitter). É agrupamento por posição, o mesmo mecanismo desta lei. `[skill: ux-ui-mentor]` O sistema de espaçamento relacional (8 a 16px entre relacionados, 48 a 64px entre grupos) é esta lei implementada; ver [[wiki/concepts/espaco-em-branco]].
+
+## Micro espaço e resultados do Google
+
+Em [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]], a lei aparece como **micro espaço**: espaço pequeno entre elementos indica grupo, espaço grande indica coisas diferentes. No [[wiki/concepts/wireframe]] de menu, links próximos e equidistantes formam um grupo, separados da logo e do CTA por vãos maiores. Nos resultados de busca do [[wiki/entities/google]], anúncio e título formam um "card" sem borda nenhuma, só por estarem mais perto, e um bloco recuado à esquerda é lido como parte do bloco de cima mesmo estando mais longe: o recuo (alinhamento) reforça a proximidade. Para fixar os valores dos vãos, a aula usa o [[wiki/concepts/grid-de-8-pontos]].
+
+## Google na visão geral
+
+A visão geral dos elementos repete o exemplo: o texto pertence ao título "por ele estar mais próximo", o recuo maior marca sublinks e cada resultado é "uma caixinha" sem borda ([[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]]).
+
+## Espaço curto agrupa, longo separa
+
+O slide da aula de espaçamento e linhas resume a lei em duas linhas: "Agrupa elementos: espaço curto / Separa os elementos: espaço longo". Em interfaces densas (Facebook, G1), o espaço encolhe e linhas e cards reforçam a separação ([[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]]; ver [[wiki/concepts/densidade-de-informacao]]).
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
+- [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — eixo de reforço como agrupamento por posição
+- [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]] — micro espaço; agrupamento sem bordas na busca do Google
+- [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — mesmo exemplo do Google, na visão geral do módulo
+- [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — slide: espaço curto agrupa, longo separa
+- [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — agrupar (Ctrl + G) e dar 16 dentro do grupo e 32 entre grupos

@@ -3,7 +3,7 @@ type: concept
 title: "Comunicação Persuasiva"
 aliases: ["gatilhos mentais", "venda de ideia técnica", "persuasão técnica"]
 date_created: 2026-07-03
-date_updated: 2026-09-21
+date_updated: 2026-11-13
 source_count: 4
 tags: [comunicacao, persuasao, soft-skills, carreira, negociacao]
 skill: tech-mentor-leadership
@@ -43,6 +43,7 @@ O mesmo princípio — não expor o argumento cru, traduzi-lo para a moeda que o
 
 ## Ver também
 
+- [[wiki/concepts/design-persuasivo]] — persuasão aplicada a interfaces (padrões persuasivos, nudge vs. dark pattern)
 - [[wiki/concepts/comunicacao-tecnica]] — princípio geral de que a tradução é responsabilidade de quem fala
 - [[wiki/concepts/habilidade-de-lidar-com-pessoas]] — persuasão é um caso aplicado de influência interpessoal
 - [[wiki/concepts/soft-skills]]

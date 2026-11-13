@@ -3,7 +3,7 @@ type: source
 title: "5 Boas Práticas de UI/UX (com Cursor e UX Pilot)"
 aliases: ["5 boas praticas uiux", "hierarquia visual gestalt affordance", "boas praticas ux pilot"]
 date_created: 2026-07-21
-date_updated: 2026-07-21
+date_updated: 2026-11-13
 source_count: 0
 tags: [ui, ux, design, frontend, ux-pilot, figma, prompt-engineering, gestalt, affordance]
 skill: tech-mentor-frontend
@@ -45,6 +45,8 @@ Nenhuma entidade com página própria na wiki é o foco central deste vídeo. UX
 - [[wiki/concepts/design-engineer]]
 - [[wiki/concepts/design-first]]
 - [[wiki/concepts/estado]]
+
+Base conceitual (UX vs. UI): [[wiki/concepts/ui-design]], [[wiki/concepts/ux-design]], [[wiki/sources/o-que-e-ux-ui-design]].
 
 ## Open Questions
 

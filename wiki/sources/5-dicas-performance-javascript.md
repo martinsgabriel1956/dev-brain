@@ -3,7 +3,7 @@ type: source
 title: "5 Dicas para Elevar a Performance de Aplicações JavaScript"
 aliases: ["5 dicas js performance", "erick wendel performance javascript"]
 date_created: 2026-06-02
-date_updated: 2026-06-02
+date_updated: 2026-11-11
 source_count: 0
 tags: [javascript, nodejs, performance, event-loop, web-streams, opentelemetry, testes-de-carga]
 skill: lang-dynamic
@@ -107,3 +107,7 @@ Stack recomendada:
 ## Entidades Mencionadas
 
 - Erick Wendel — JavaScript Expert, autor da série YouTube Performance JavaScript
+
+## Fontes relacionadas
+
+- [[wiki/sources/cpu-profiling-nodejs-inspector-autocannon-erick-wendel]]: continuação do mesmo autor para quando não há OpenTelemetry: CPU profiling nativo com autocannon

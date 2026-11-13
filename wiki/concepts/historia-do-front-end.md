@@ -3,8 +3,8 @@ type: concept
 title: "História do Front End"
 aliases: ['front-end history', 'linha do tempo da web']
 date_created: 2026-10-14
-date_updated: 2026-10-14
-source_count: 1
+date_updated: 2026-11-12
+source_count: 2
 tags: [frontend, historia, web, fundamentos]
 skill: tech-mentor-frontend
 status: stable
@@ -34,3 +34,4 @@ Estrutura recorrente a ter na cabeça: **árvores** (elementos HTML, atributos d
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
+- [[wiki/sources/configurando-ambiente-vue-node-npm-vue-cli]]: o npm já como pré-requisito dado, sem o contexto histórico

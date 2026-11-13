@@ -3,8 +3,8 @@ type: concept
 title: "Reconhecimento de Padrões"
 aliases: ["pattern recognition", "padrões de solução", "padrões de problema", "repertório de padrões"]
 date_created: 2026-06-10
-date_updated: 2026-10-07
-source_count: 6
+date_updated: 2026-11-13
+source_count: 7
 tags: [aprendizado, maestria, pratica-deliberada, cognicao, programacao]
 skill: tech-mentor-leadership
 status: stable
@@ -64,6 +64,10 @@ Daí a afirmação: "tu não leva tempo para decorar uma sintaxe — tu leva mui
 - [[vale-do-desespero]] — o período anterior à formação do repertório suficiente para arquitetar soluções
 - [[memoria-muscular]] — a outra face do mesmo fenômeno: automatismo que libera cognição consciente
 
+## Em interfaces
+
+O mesmo mecanismo de exposição explica por que ícones funcionam: quem usa o Google todo dia aprende que a engrenagem configura, e o ícone vira "senso comum" ([[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]]). Ver [[wiki/concepts/padroes-de-interface]].
+
 ## Key Sources
 
 - [[wiki/sources/quanto-tempo-aprender-programacao]] — pesquisa dos xadrezistas como analogia central; "tu não leva tempo para decorar sintaxe, leva tempo pro cérebro reconhecer padrões"
@@ -72,3 +76,4 @@ Daí a afirmação: "tu não leva tempo para decorar uma sintaxe — tu leva mui
 - [[wiki/sources/resolvendo-3-problemas-classicos-entrevista-coding-dsa]] — três padrões concretos e reaplicáveis (hash set para início de sequência, bucket sort por índice conhecido, two pointers com movimento independente) demonstrados em problemas diferentes
 - [[wiki/sources/como-ficar-bom-em-leetcode]] — o método de estudo operacionaliza o conceito: repetir 2-4 problemas do mesmo padrão até reconhecê-lo no enunciado; "memorize o padrão, não o problema"
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — ~10 exercícios de two pointer antes de passar a outro padrão; se travar, ler a solução, reescrevê-la e seguir (tensão com 'memorize o padrão, não o problema' registrada na fonte)
+- [[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]] — exposição diária transforma ícones em senso comum

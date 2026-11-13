@@ -3,8 +3,8 @@ type: concept
 title: "JPEG"
 aliases: ["jpg", "jpeg", "joint photographic experts group"]
 date_created: 2026-07-29
-date_updated: 2026-07-29
-source_count: 1
+date_updated: 2026-11-13
+source_count: 4
 tags: [formatos-de-imagem, compressao, jpeg, exif]
 skill: cs-fundamentals
 status: stub
@@ -38,6 +38,13 @@ Ver [[wiki/concepts/exif-metadados]] — arquivos JPEG carregam metadados que po
 - [[wiki/concepts/formato-png]] — contraparte sem perdas
 - [[wiki/concepts/formato-webp]], [[wiki/concepts/formato-heic-avif]] — sucessores modernos com compressão superior
 
+## Na prática de UI
+
+[[wiki/entities/nasser|Násser]] indica JPG para "toda e qualquer fotografia realista": qualidade comparável ao PNG, arquivo mais leve e suporte universal, ou seja, bom custo-benefício entre qualidade e peso ([[wiki/sources/imagens-e-ilustracoes-formatos-bancos-otimizacao]]). Ver [[wiki/concepts/otimizacao-de-imagens]]. Para ícone não serve: "o JPG não tem a propriedade de deixar o fundo transparente", e o fundo sai branco ([[wiki/sources/imagens-e-ilustracoes-aspect-ratio-pessoas-ponto-focal-texto]]).
+
 ## Key Sources
 
 - [[wiki/sources/historia-dos-formatos-de-imagem]]
+- [[wiki/sources/imagens-e-ilustracoes-formatos-bancos-otimizacao]] — JPG como padrão para fotografia em interfaces web
+- [[wiki/sources/imagens-e-ilustracoes-aspect-ratio-pessoas-ponto-focal-texto]] — ícone exportado em JPG fica com fundo branco (sem transparência)
+- [[wiki/sources/imagens-e-ilustracoes-introducao-svg-bancos-texto-branco-resolucoes-formatos]] — edição "W7": o mais difundido; fotografia e ilustração realista; boa relação qualidade/peso

@@ -3,8 +3,8 @@ type: concept
 title: "Prática Deliberada"
 aliases: ["deliberate practice", "10000 horas", "regra das 10000 horas", "800 horas júnior", "horas de prática"]
 date_created: 2026-06-10
-date_updated: 2026-11-05
-source_count: 6
+date_updated: 2026-11-13
+source_count: 7
 tags: [aprendizado, carreira, mentalidade, iniciante, maestria]
 skill: tech-mentor-leadership
 status: stable
@@ -86,6 +86,10 @@ Exercício de curso é deliberadamente simplificado por razões didáticas — b
 
 [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] compara o programador novato ao jogador de futebol: dois dias de treinamento não fazem um artilheiro, só a prática contínua com pequenas melhorias, e mesmo assim sem garantia. Usa isso para dizer que adicionar métodos não transforma um programador ruim em bom.
 
+## Aplicação em UI Design: Copiar, Depois Perguntar o Porquê
+
+[[wiki/sources/como-aprender-ui]] aplica a ideia a design: "criatividade se constrói", e de tanto treinar se forma "uma biblioteca na minha cabeça" que torna as decisões mais assertivas. O roteiro começa copiando interfaces, o que a tabela acima classificaria como "não conta". A diferença está no passo seguinte: a cópia só vira prática quando a pessoa pergunta por que cada escolha foi feita ([[wiki/concepts/porque-das-decisoes-de-design]]) e depois exercita em [[wiki/concepts/redesign-como-exercicio|redesigns]] próprios.
+
 ## Key Sources
 
 - [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] — proporção 80/20 estudo/prática dentro e fora do foco, como heurística complementar às 800–1000h
@@ -94,3 +98,4 @@ Exercício de curso é deliberadamente simplificado por razões didáticas — b
 - [[wiki/sources/3-dicas-colocar-conhecimento-em-pratica]] — prática de curso vs. prática real; automações pessoais de baixo risco como veículo de prática deliberada
 - [[wiki/sources/akita-pratica-deliberada-mito-do-talento]] — zona de aprendizado, alta repetição, limite de 4-5h/dia, autoavaliação vs. validação externa; caso Mozart como evidência histórica
 - [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] — analogia do goleador: método não substitui prática contínua
+- [[wiki/sources/como-aprender-ui]] — criatividade em UI como músculo; copiar só como ponto de partida, seguido do porquê

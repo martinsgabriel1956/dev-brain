@@ -3,8 +3,8 @@ type: concept
 title: "Aprendizado Deliberado"
 aliases: ["deliberate learning", "aprendizado intencional", "prática deliberada"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 4
+date_updated: 2026-11-13
+source_count: 5
 tags: [aprendizado, tecnica, carreira, pratica]
 skill: tech-mentor-leadership
 status: stable
@@ -42,9 +42,14 @@ Sem prática, o cérebro mantém conceitos errados junto com corretos — não t
 - [[wiki/concepts/tutorial-hell]] — armadilha oposta: consumo passivo sem prática real
 - [[wiki/concepts/principio-da-inversao]] — hábito ruim nº 7 reforça a importância da prática
 
+## Tensão: Copiar Interfaces em Design
+
+A regra "nunca copiar/colar código" acima entra em tensão com [[wiki/sources/como-aprender-ui]], que manda copiar interfaces "sem se preocupar" no início do estudo de UI. Leitura conciliadora (inferência): em design, reproduzir uma tela à mão na ferramenta já é redigitar, e a aula exige o passo seguinte de entender [[wiki/concepts/porque-das-decisoes-de-design|o porquê]]. O que as duas fontes rejeitam é a cópia passiva.
+
 ## Key Sources
 
 - [[wiki/sources/como-aprender-programacao-3-dicas]]
 - [[wiki/sources/logica-programacao-sem-matematica]]
 - [[wiki/sources/principio-da-inversao-programador]]
 - [[wiki/sources/por-que-devs-nao-terminam-projetos]] — Kolb experiential learning: fazer → refletir → adaptar → ver [[wiki/concepts/aprendizado-por-luta]]
+- [[wiki/sources/como-aprender-ui]] — copiar interfaces como primeiro passo em UI, com tensão sobre a regra de nunca copiar

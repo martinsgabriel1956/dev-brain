@@ -3,8 +3,8 @@ type: concept
 title: "Sobrecarga de Informação"
 aliases: ["information overload", "riqueza de informação pobreza de atenção", "superestimulação"]
 date_created: 2026-07-04
-date_updated: 2026-09-28
-source_count: 2
+date_updated: 2026-11-13
+source_count: 6
 tags: [produtividade, atencao, comportamento, carreira]
 skill: tech-mentor-leadership
 status: draft
@@ -35,7 +35,23 @@ Sobrecarga de informação alimenta diretamente o padrão de estar "ativo" sem s
 
 [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] aplica o mesmo mecanismo (riqueza de informação → escassez de atenção/capacidade de processar) especificamente à sensação de "sempre falta conhecimento técnico": informação abundante gera distração abundante e crenças limitantes abundantes, alimentando um loop onde se estuda muito sem sair do lugar. Acrescenta um argumento neurológico informal: a memória de curto prazo retém melhor que a de longo prazo, e sem prática que consolide o aprendizado, o cérebro desloca conhecimento antigo para abrir espaço ao novo — reforçando que o problema não é a quantidade de informação disponível, é a ausência de um mecanismo de consolidação (prática). Ver [[wiki/concepts/mito-da-falta-de-conhecimento-tecnico]].
 
+## Dentro da interface
+
+[[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] mostra o mesmo fenômeno numa tela: o ERP que reúne financeiro, nota fiscal, idioma, telefone, e-mail e comprador "não conduz para nada", porque há jornadas demais competindo pela atenção. A resposta de design é [[wiki/concepts/simplicidade-visual]].
+
+## Funções demais
+
+Na UI, a sobrecarga aparece como sistema com "inúmeras e muitas informações" em que o usuário "só utiliza 20% das funcionalidades"; a saída é a [[wiki/concepts/simplicidade-visual|simplicidade]] ([[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]]).
+
+## Densidade não é sobrecarga
+
+Facebook e portais de notícia são densos e ainda assim legíveis porque espaço, linhas e cards organizam o conteúdo ([[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]]). Ver [[wiki/concepts/densidade-de-informacao]].
+
 ## Key Sources
 
 - [[wiki/sources/produtividade-falsa-vs-verdadeira]]
 - [[wiki/sources/por-que-sempre-vai-faltar-conhecimento-tecnico-andre-casciotti]] — aplicação à ansiedade de conhecimento técnico insuficiente; limite cognitivo (memória curto vs. longo prazo) como razão para o retorno decrescente de estudar sem praticar
+- [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — sobrecarga de informação numa tela de ERP
+- [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referencias]] — grade densa do curso resumida em cards com ícones
+- [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — sistemas cheios de funções pouco usadas
+- [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — interfaces densas organizadas por espaço, linhas e cards

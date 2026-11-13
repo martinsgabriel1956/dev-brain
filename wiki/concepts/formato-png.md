@@ -3,8 +3,8 @@ type: concept
 title: "PNG"
 aliases: ["png", "portable network graphics", "apng"]
 date_created: 2026-07-29
-date_updated: 2026-07-29
-source_count: 1
+date_updated: 2026-11-13
+source_count: 5
 tags: [formatos-de-imagem, compressao, png]
 skill: cs-fundamentals
 status: stub
@@ -27,6 +27,14 @@ Formato de imagem lançado em 1996 como resposta direta a um problema de licenci
 - [[wiki/concepts/formato-gif]] — formato que o PNG foi criado para substituir
 - [[wiki/concepts/compactacao-de-texto]] — Huffman coding + deflate são a base da compressão sem perdas do PNG
 
+## Na prática de UI
+
+Na aula de imagens de [[wiki/entities/nasser|Násser]], PNG fica para fotos com transparência que não dá para vetorizar (recortes aplicados sobre outros artboards); para fotografia realista ele indica JPG, mais leve. A afirmação de que JPG e PNG são "muito parecidos em qualidade" vale para foto; em texto e bordas nítidas o PNG sem perdas ganha ([[wiki/sources/imagens-e-ilustracoes-formatos-bancos-otimizacao]]). Para ícones, PNG resolvia a transparência, mas hoje é "um modelo mais arcaico" diante do [[wiki/concepts/formato-svg|SVG]] ([[wiki/sources/imagens-e-ilustracoes-aspect-ratio-pessoas-ponto-focal-texto]]).
+
 ## Key Sources
 
 - [[wiki/sources/historia-dos-formatos-de-imagem]]
+- [[wiki/sources/imagens-e-ilustracoes-formatos-bancos-otimizacao]] — regra de uso em UI: só quando precisa de transparência
+- [[wiki/sources/imagens-e-ilustracoes-aspect-ratio-pessoas-ponto-focal-texto]] — PNG para ícone com transparência virou "modelo mais arcaico" diante do SVG
+- [[wiki/sources/imagens-e-ilustracoes-introducao-svg-bancos-texto-branco-resolucoes-formatos]] — edição "W7": "não vai sumir" por causa da transparência; um pouco mais pesado que o JPG
+- [[wiki/sources/imagens-e-ilustracoes-pratica-figma-importar-editor-plugins-exportacao]] — export do frame em PNG pelo painel do Figma

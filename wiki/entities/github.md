@@ -3,8 +3,8 @@ type: entity
 title: "GitHub"
 aliases: ["github.com"]
 date_created: 2026-09-23
-date_updated: 2026-10-30
-source_count: 4
+date_updated: 2026-11-13
+source_count: 5
 tags: [plataforma, git, incidente, sistemas-distribuidos, security]
 skill: tech-mentor-system-design
 status: stub
@@ -13,6 +13,10 @@ status: stub
 # GitHub
 
 Plataforma de hospedagem de código. Na wiki aparece como estudo de caso de falha distribuída (o incidente de outubro de 2018, [[wiki/concepts/github-incidente-2018-particao-de-rede]]) e, mais recentemente, como alvo e ferramenta de segurança: a API de busca de código tem limites de indexação relevantes para secret scanning ([[wiki/concepts/github-search-api-limites]]), e a plataforma oferece defesas nativas contra vazamento de credenciais (push protection, GitHub Advanced Security — ver [[wiki/concepts/secret-scanning]]).
+
+## Logo nos ícones do FrontPUSH
+
+Em [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referencias]], o gato do GitHub ("bem arredondado, tem as orelhinhas") é redesenhado "totalmente reto" para a família de ícones do [[wiki/entities/frontpush]]. `[external]` As diretrizes de logo do GitHub pedem para não modificá-lo (https://github.com/logos).
 
 ## Key sources
 
@@ -23,3 +27,4 @@ Plataforma de hospedagem de código. Na wiki aparece como estudo de caso de falh
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/spec2cobolrot-envelhecer-cobol-com-ia-complexidade-vs-entropia-historica]] — hospeda os samples públicos do Spec2COBOLRot (jbespi/spec2cobolrot-samples)
+- [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referencias]] — Invertocat redesenhado reto em ícone do FrontPUSH

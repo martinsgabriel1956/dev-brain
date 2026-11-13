@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-10-14
-source_count: 16
+date_updated: 2026-11-13
+source_count: 23
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -52,6 +52,14 @@ Em [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-
 
 [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] defende que o Google perde na percepção dos devs (Antigravity ruim, timing de lançamento), mas ganha em negócio ([[wiki/entities/google-cloud-platform]] +82% a/a; [[wiki/concepts/tensor-processing-unit|TPUs]]) e em pesquisa de eficiência ([[wiki/entities/google-research]], [[wiki/concepts/memory-caching-rnn]]); produto de voz: [[wiki/entities/gemini-live]].
 
+## Ícones como pattern
+
+Engrenagem para configurar e "nove pontinhos" para os apps do Google: exemplo de Násser de ícone aprendido pelo uso diário ([[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]]).
+
+## Espaço e linhas nos resultados de busca
+
+Na visão geral dos elementos de Násser, os resultados do Google mostram espaço que agrupa e separa e linha que reforça a divisão ([[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]]).
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — Google Cloud entre os hyperscalers do imaginário de nuvem
@@ -69,9 +77,16 @@ Em [[wiki/sources/versionamento-de-prompts-reprodutibilidade-rollback-metadados-
 - [[wiki/sources/rag-spring-ai-microagente-recomendacao-michele-brito]] — modelos Gemini de chat e de embedding usados via [[wiki/entities/spring-ai]] no demo de RAG
 - [[wiki/sources/dotenv-arquivo-env-boas-praticas-secret-manager]] — Google Secret Manager citado como cofre
 - [[wiki/sources/google-nao-esta-perdendo-corrida-ia-memory-caching-gemini-live]] — debate sobre corrida da IA: cloud +82%, TPU, Memory Caching, Gemini 3.8 Live
+- [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — resultados de busca como exemplo de espaço e linhas
+- [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — resultados separados pelo espaço maior entre eles
+- [[wiki/sources/imagens-e-ilustracoes-introducao-svg-bancos-texto-branco-resolucoes-formatos]] — buscar "pessoas conversando" no Google como exemplo de foto genérica
 
 ## Adição (2026-10-14)
 
 Lançou o [[wiki/entities/gemini-embedding-2]] (embedding multimodal); crítica do apresentador: custo e envio de dados à API ([[wiki/concepts/custo-e-privacidade-de-embedding-via-api]]).
 
 - [[wiki/sources/gemini-embedding-2-embedding-multimodal-google]] — Gemini Embedding 2, embedding multimodal em 3072 dimensões
+- [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — home do Google como exemplo de simplicidade e espaço em branco: um ponto focal, recursos atrás de "mais do Google"
+- [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]] — home como macro espaço (foco); resultados de busca agrupados só com espaçamento e recuo, sem bordas de card
+- [[wiki/sources/imagens-e-ilustracoes-ilustracoes-mascotes-consistencia-svg]] — Material Design recomendado para diretrizes de imagem; ver [[wiki/entities/material-design]]
+- [[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]] — engrenagem e nove pontinhos como pattern aprendido

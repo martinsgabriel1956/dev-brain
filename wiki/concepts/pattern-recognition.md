@@ -3,8 +3,8 @@ type: concept
 title: "Reconhecimento de Padrões (Pattern Recognition)"
 aliases: ["pattern recognition", "detecção de padrões", "reconhecimento de padrão"]
 date_created: 2026-05-16
-date_updated: 2026-05-16
-source_count: 1
+date_updated: 2026-11-13
+source_count: 3
 tags: [aprendizado, cognicao, padroes]
 skill: tech-mentor-leadership
 status: stable
@@ -35,6 +35,12 @@ O sistema de reconhecimento de padrões humano é poderoso mas falível:
 
 [[wiki/concepts/design-patterns|Design Patterns]] são patterns *nomeados* — repetições que já foram observadas por muitas pessoas e receberam um nome para facilitar a comunicação. Quem aprende os nomes *antes* de ver os padrões na prática tende a aplicar os patterns errado. A sequência correta é: exposição → reconhecimento espontâneo → nomeação via estudo formal.
 
+## Em interfaces
+
+"O cérebro humano trabalha com padrões": o usuário procura a busca no topo e lê três tracinhos como menu ([[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]). A UI deve jogar a favor desse reconhecimento ([[wiki/concepts/padroes-de-interface]], [[wiki/concepts/lei-de-jakob]]). O [[wiki/entities/ui-patterns-com]] lista Pattern Recognition e Recognition over Recall entre os padrões persuasivos de compreensão ([[wiki/sources/ui-patterns-com-biblioteca-de-padroes]]).
+
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]] — distinção entre standard/default/pattern; faca de dois gumes; relação com aprendizado de português
+- [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — o cérebro trabalha com padrões; aplicação em UI
+- [[wiki/sources/ui-patterns-com-biblioteca-de-padroes]] — Pattern Recognition como padrão de compreensão

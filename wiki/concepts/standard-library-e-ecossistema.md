@@ -3,8 +3,8 @@ type: concept
 title: "Standard Library e Ecossistema de uma Linguagem"
 aliases: ["standard library", "batteries included", "package manager", "ecossistema de linguagem de programação"]
 date_created: 2026-07-09
-date_updated: 2026-07-09
-source_count: 1
+date_updated: 2026-11-11
+source_count: 2
 tags: [cs-fundamentals, linguagens-de-programacao, tooling, ecossistema]
 skill: cs-fundamentals
 status: draft
@@ -38,6 +38,11 @@ Ver [[wiki/concepts/language-server-protocol]] para o papel do tooling de editor
 - [[wiki/concepts/language-server-protocol]] — parte do tooling que compõe a experiência do ecossistema
 - [[wiki/concepts/compilador]] — o ecossistema é a camada que existe *acima* do runtime/compilador, mas que determina se alguém vai efetivamente usar a linguagem
 
+## Nativo no caminho quente
+
+[[wiki/sources/cpu-profiling-nodejs-inspector-autocannon-erick-wendel]] mostra o lado de performance da escolha: na rota medida, trocar `_.filter` pelo `filter` nativo subiu de 11.000 para 13.000 requisições, e a troca do `map` ficou inconclusiva. O ganho maior veio de remover uma cópia profunda, não de trocar de biblioteca. A dependência deve ser medida, não presumida lenta.
+
 ## Key sources
 
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]]
+- [[wiki/sources/cpu-profiling-nodejs-inspector-autocannon-erick-wendel]]: `filter` nativo no lugar de `_.filter` e remoção do `cloneDeep` do [[wiki/entities/lodash]] no caminho quente; "conhecer JavaScript a fundo" para cortar dependências

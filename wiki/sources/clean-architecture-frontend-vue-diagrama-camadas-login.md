@@ -3,7 +3,7 @@ type: source
 title: "Clean Architecture no Frontend — Diagrama de Camadas Aplicado a uma Tela de Login (Vue.js)"
 aliases: ["clean architecture vue login", "diagrama camadas login vue"]
 date_created: 2026-09-08
-date_updated: 2026-09-08
+date_updated: 2026-11-12
 source_file: /home/gabriel-martins/Documentos/dev-brain/raw/clean-architecture-frontend-vue-diagrama-camadas-login.md
 source_url: ""
 author: "não identificado no texto — provável Rodrigo Branas (ver Open Questions)"
@@ -52,7 +52,7 @@ Aula introdutória (antes de escrever código) de um curso que aplica Clean Arch
 ## Entidades e Conceitos Mencionados
 
 - **Conceitos centrais:** [[wiki/concepts/clean-architecture]], [[wiki/concepts/single-responsibility-principle|SRP]], [[wiki/concepts/dependency-inversion-principle|DIP]], [[wiki/concepts/dependency-injection|DI]], [[wiki/concepts/open-closed-principle|OCP]], [[wiki/concepts/interface-segregation-principle|ISP]], [[wiki/concepts/factory-pattern|Factory]], [[wiki/concepts/decorator-pattern|Decorator]], Composite (Composição — ver novo stub [[wiki/concepts/composite-pattern]]), Composition Root (ver novo stub [[wiki/concepts/composition-root]]).
-- **Tecnologias citadas:** Vue.js, Vue Router, Axios, Node.js (API externa consumida pelo front, desenvolvida em outro curso do mesmo autor), draw.io (ferramenta de diagrama).
+- **Tecnologias citadas:** [[wiki/entities/vue|Vue.js]], Vue Router, Axios, Node.js (API externa consumida pelo front, desenvolvida em outro curso do mesmo autor), draw.io (ferramenta de diagrama).
 - **Pessoas/entidades:** nenhuma citada nominalmente no áudio — ver Open Questions sobre autoria provável.
 
 ## Open Questions
@@ -60,3 +60,7 @@ Aula introdutória (antes de escrever código) de um curso que aplica Clean Arch
 - **Autoria não identificada no texto:** o instrutor não se nomeia na transcrição. A nomenclatura das classes do exemplo (`RemoteAuthentication`, `HttpPostClient`, `AxiosHttpClient`, `ValidationComposite`, `EmailValidation`, `RequiredFieldValidation`, uso do termo "composição grude" para composition root, e a menção de uma API em Node desenvolvida "em outro curso") é idêntica à nomenclatura dos repositórios públicos `clean-ts-api` e `clean-react` de [[wiki/entities/rodrigo-branas]], que já tem página na wiki (associada até agora só à Formação IA para Devs). É uma correspondência de padrão muito forte, mas fica registrada como inferência, não confirmação — nenhuma fala da transcrição cita o nome do instrutor.
 - Os princípios OCP e ISP são citados apenas como promessa de aprofundamento futuro (aulas seguintes do mesmo curso), sem exemplo de código nesta aula — não há como avaliar a claim de forma independente ainda; ficam registrados como "confidence média" até uma eventual aula seguinte ser ingerida.
 - O curso completo (próximas aulas, com código) não foi ingerido — esta fonte cobre só a aula de introdução/diagrama.
+
+## Relação com fontes posteriores
+
+- [[wiki/sources/configurando-ambiente-vue-node-npm-vue-cli]]: aula de preparação do ambiente (Node, npm, Vue CLI) que vem antes de um projeto como este.

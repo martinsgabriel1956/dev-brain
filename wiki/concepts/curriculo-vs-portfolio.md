@@ -3,7 +3,7 @@ type: concept
 title: "Currículo vs Portfólio"
 aliases: ["currículo vs portfólio", "promise vs proof", "promessa vs prova"]
 date_created: 2026-04-23
-date_updated: 2026-10-07
+date_updated: 2026-11-13
 source_count: 10
 tags: [carreira, contratação, portfólio, evidência]
 skill: tech-mentor-leadership
@@ -67,6 +67,10 @@ Em revisão real de currículos de candidatos júnior, a ausência de link para 
 ## Vários Currículos por Trilha
 
 [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] recomenda 3 a 4 currículos em PDF, um por trilha de cargo (ex.: experiência com cliente para FDE; software engineer), derivados da lista de empresas-alvo ([[wiki/concepts/cacar-a-empresa-nao-a-vaga]]).
+
+## Em Design: Redesign com Raciocínio
+
+[[wiki/concepts/redesign-como-exercicio]], proposto em [[wiki/sources/como-aprender-ui]], é uma forma de gerar portfólio de UI sem cliente. `[skill: ux-ui-mentor]` Só vale como prova se mostrar raciocínio (problema, opções, decisões anotadas), não apenas telas finais.
 
 ## Key Sources
 - [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]] — 'fim da era do parecer': diploma não garante capacidade, a entrega é a prova ([[wiki/concepts/fim-da-era-do-parecer]])

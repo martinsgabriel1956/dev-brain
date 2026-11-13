@@ -3,8 +3,8 @@ type: entity
 title: "Christopher Alexander"
 aliases: ["Alexander", "A Pattern Language"]
 date_created: 2026-05-16
-date_updated: 2026-05-16
-source_count: 1
+date_updated: 2026-11-13
+source_count: 2
 tags: [pessoa, arquitetura, patterns]
 skill: tech-mentor-leadership
 status: stub
@@ -23,3 +23,4 @@ O Gang of Four se inspirou explicitamente nesse trabalho ao criar o catálogo de
 ## Key Sources
 
 - [[wiki/sources/akita-como-aprender-programacao]] — mencionado como origem intelectual dos Design Patterns
+- [[wiki/sources/ui-patterns-com-biblioteca-de-padroes]] — a ideia de linguagem comum de padrões reaparece no catálogo de padrões de interface (ligação feita pela wiki)

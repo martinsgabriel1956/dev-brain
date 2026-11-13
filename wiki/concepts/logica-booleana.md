@@ -3,8 +3,8 @@ type: concept
 title: "Lógica Booleana"
 aliases: ["lógica binária", "portas lógicas", "boolean logic", "AND OR NOT"]
 date_created: 2026-06-26
-date_updated: 2026-08-25
-source_count: 3
+date_updated: 2026-11-13
+source_count: 4
 tags: [cs-fundamentals, binario, logica-booleana, hardware, circuitos]
 skill: cs-fundamentals
 status: draft
@@ -53,9 +53,11 @@ Cada uma dessas operações corresponde a uma **porta lógica** física — um c
 - [[wiki/concepts/transistor]] — o componente elétrico (tipo N/tipo P) que implementa fisicamente cada porta
 - [[wiki/concepts/celula-padrao]] — a estrutura física real (transistores + fios) por trás de cada porta lógica
 - [[wiki/concepts/cmos]] — a topologia elétrica complementar usada para construir essas portas com baixo consumo
+- [[wiki/concepts/operacoes-booleanas-em-formas]] — a mesma álgebra aplicada a áreas vetoriais (union, subtract, intersect, exclude)
 
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
 - [[wiki/sources/conceitos-que-regem-a-computacao-bits-turing-complexidade]] — AND, OR e XOR sobre bytes como base do processamento binário (ex: representar uma soma só com operações lógicas)
 - [[wiki/sources/como-transistores-formam-portas-logicas-celulas-padrao-cmos]] — implementação física exata (contagem de transistores e topologia série/paralelo) de inversor, NAND, AND, NOR, OR, XOR e XNOR
+- [[wiki/sources/imagens-e-ilustracoes-svg-no-figma-undraw-mockup-iphone-codigo]] — operações booleanas aplicadas a formas vetoriais no Figma (subtrair, interseção)

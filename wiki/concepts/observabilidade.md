@@ -3,8 +3,8 @@ type: concept
 title: "Observabilidade"
 aliases: ["observabilidade", "observability", "três pilares", "metrics logs traces"]
 date_created: 2026-04-22
-date_updated: 2026-10-08
-source_count: 19
+date_updated: 2026-11-11
+source_count: 20
 tags: [observabilidade, metricas, logs, traces, prometheus, sre, infraestrutura]
 skill: tech-mentor-system-design
 status: stable
@@ -188,6 +188,7 @@ A entrada de agentes de IA na pipeline adiciona uma pergunta específica aos tr�
 - [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — caso Alexandria: plataforma de logs construída internamente por custo de escala (600 TB/dia), arquitetura de 4 componentes (ingestão Kafka microbatch, processamento, storage S3 colunar 95% compressão, query engine distribuída), 50% mais barata que a solução terceirizada anterior
 - [[wiki/sources/comunicacao-assincrona-arquiteturas-distribuidas-bernardo-lobato]] — debug em fluxo assíncrono como motivação para rastreabilidade
 - [[wiki/sources/arquitetura-distribuida-introducao-historico-desafios-bernardo-lobato]] — tracing/logs/métricas como desafio de [[wiki/concepts/arquitetura-distribuida]]; debug 'disciplina à parte'; série própria anunciada
+- [[wiki/sources/cpu-profiling-nodejs-inspector-autocannon-erick-wendel]]: sem APM, visibilidade improvisada com [[wiki/concepts/cpu-profiling]] nativo do Node.js; o autor diz que o difícil é ver, não corrigir
 
 ## Observabilidade com camada anticorrupção
 

@@ -3,8 +3,8 @@ type: entity
 title: "Nubank"
 aliases: ["Nu", "Nu Holdings", "Nu Bank"]
 date_created: 2026-05-31
-date_updated: 2026-10-06
-source_count: 5
+date_updated: 2026-11-13
+source_count: 9
 tags: [nubank, fintech, banco-digital, clojure, datomic, event-sourcing, iso-27001, security, cell-based-architecture, observabilidade]
 skill: tech-mentor-backend
 status: stable
@@ -51,6 +51,14 @@ A escolha de [[datomic]] veio da pergunta: "E o banco de dados? Como ter um banc
 
 Possui certificação [[wiki/concepts/iso-27001]], usada como garantia formal a investidores e reguladores de que os dados de mais de 100 milhões de clientes estão protegidos. O recurso "modo rua" do app — que limita transações quando o usuário sai de uma rede Wi-Fi segura — é citado como exemplo de controle de acesso contextual alinhado aos controles de segurança móvel e acesso lógico da norma.
 
+## Na aula de formas
+
+Na versão "W7" da aula de formas, o site do Nubank é exemplo de predominância geométrica amenizada por bordas arredondadas e por fotos de pessoas, que trazem comunidade e realidade ([[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]]).
+
+## Botões circulares
+
+Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]: botão "continuar", links do topo (Pix) e CTAs ("entre para Nubank", "quero ser Nubank") "totalmente circulares para poder trazer mais para perto".
+
 ## Key Sources
 
 
@@ -59,3 +67,7 @@ Possui certificação [[wiki/concepts/iso-27001]], usada como garantia formal a 
 - [[wiki/sources/iso-27001-dicionario-programador]] — certificação ISO 27001 e "modo rua" como controle de acesso contextual
 - [[wiki/sources/cqrs-event-sourcing-full-cycle-wesley-williams]] — citado como caso de uso do Datomic ao explicar Event Sourcing
 - [[wiki/sources/nubank-arquitetura-escala-122-milhoes-clientes]] — números de 2025 (122M clientes, 4.000 microsserviços, 20 shards), Scalability Units, otimização da latência de autorização de transação (10.000ms → 288ms P90), plataforma antifraude (450M eventos/dia, DAG), Alexandria (observabilidade in-house)
+- [[wiki/sources/imagens-e-ilustracoes-formatos-bancos-otimizacao]] — citado de passagem por Násser como projeto dele feito todo em SVG (clone de estudo do autor, não o produto oficial; confirmado pelo usuário em 2026-11-13)
+- [[wiki/sources/formas-exemplos-praticos-radius-consistencia-projetos]] — página institucional citada por Násser como exemplo de botão (aparentemente totalmente arredondado)
+- [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — site como exemplo de formas: geométrico, bordas arredondadas, fotos de pessoas
+- [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — botões e links totalmente circulares para aproximar

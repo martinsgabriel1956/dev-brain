@@ -3,8 +3,8 @@ type: entity
 title: "Erick Wendel"
 aliases: ["Erick Wendel"]
 date_created: 2026-07-21
-date_updated: 2026-08-19
-source_count: 3
+date_updated: 2026-11-11
+source_count: 4
 tags: [criador-de-conteudo, node-js, testes, brasil, carreira, junior]
 skill: tech-mentor-testing
 status: stub
@@ -20,8 +20,13 @@ Criador de conteúdo brasileiro sobre Node.js e testes automatizados, com quase 
 
 [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] registra Erick Wendel não como autor, mas como gatilho: ele tuitou marcando o apresentador de outro canal ao encontrar um vídeo antigo desse apresentador (4 anos, ~51 mil visualizações) sobre requisitos de pleno — motivando a releitura ponto a ponto que constitui essa fonte. Sinal adicional (não conclusivo) de que Erick Wendel é referência recorrente e reconhecida no nicho de conteúdo de carreira/educação em programação no Brasil.
 
+## Consultoria em performance
+
+Em [[wiki/sources/cpu-profiling-nodejs-inspector-autocannon-erick-wendel]], apresenta-se como consultor de performance em aplicações JavaScript, com clientes cujas aplicações travavam sob muitos usuários. Mostra [[wiki/concepts/cpu-profiling]] com o módulo nativo `node:inspector/promises`, que diz ter ajudado a implementar no Node.js (não conferido), e [[wiki/concepts/teste-de-carga]] com autocannon. Vende o treinamento JavaScript Expert.
+
 ## Key Sources
 
 - [[wiki/sources/3-pilares-testes-automatizados-produtividade]]
 - [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — reflexão sobre o futuro do Dev Júnior na era da IA; comparação de sua trajetória com a dos irmãos que estão começando agora
 - [[wiki/sources/o-que-esperam-de-pleno-2026-revisao]] — citado como gatilho (tweet) de um vídeo de outro apresentador sobre requisitos de pleno, não como autor
+- [[wiki/sources/cpu-profiling-nodejs-inspector-autocannon-erick-wendel]]: CPU profiling com `node:inspector/promises` e autocannon num caso de consultoria; diz ter contribuído com o módulo (não conferido)

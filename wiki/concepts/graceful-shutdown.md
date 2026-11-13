@@ -3,8 +3,8 @@ type: concept
 title: "Graceful Shutdown"
 aliases: ["desligamento gracioso", "encerramento controlado", "shutdown sequence"]
 date_created: 2026-06-01
-date_updated: 2026-07-03
-source_count: 2
+date_updated: 2026-11-11
+source_count: 3
 tags: [resiliencia, backend, nodejs, processo, orquestrador, infraestrutura]
 skill: tech-mentor-backend
 status: draft
@@ -91,3 +91,4 @@ O mesmo princípio se aplica por conexão individual, não só no shutdown do pr
 
 - [[wiki/sources/let-it-crash-nodejs-asynclocalstorage]] — implementação completa em Node.js com Sequelize e AsyncLocalStorage
 - [[wiki/sources/server-sent-events-sse-tempo-real]] — cleanup de conexões SSE individuais ao detectar fechamento pelo cliente
+- [[wiki/sources/cpu-profiling-nodejs-inspector-autocannon-erick-wendel]]: `process.on` para SIGTERM e SIGQUIT grava o CPU profile antes de sair com código 0; o Ctrl+C manda SIGINT, que não estava na lista falada
