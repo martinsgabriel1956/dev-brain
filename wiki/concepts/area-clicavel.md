@@ -3,8 +3,8 @@ type: concept
 title: "Área clicável"
 aliases: ["touch target", "alvo de toque", "target size", "área de toque", "hit area", "altura mínima de 44 px"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 1
+date_updated: 2026-11-14
+source_count: 2
 tags: [ui, ux, acessibilidade, mobile, responsividade, botoes, wcag]
 skill: ux-ui-mentor
 status: stub
@@ -40,6 +40,11 @@ Fonte da WCAG: https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.h
 
 `[skill: ux-ui-mentor]` Aumentar a área sem mudar o visual: `padding` no elemento, ou `min-height` / `min-width`. Ícone sem texto também precisa de `aria-label`.
 
+## Na prática
+
+A aula prática repete a regra ("coloque um mínimo de 44 pixels") e constrói o botão com 56 ([[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]).
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — altura mínima de 44 px; mouse x dedo
+- [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — mínimo de 44 px repetido; botão de 56 no Figma

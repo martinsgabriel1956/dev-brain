@@ -3,7 +3,7 @@ type: source
 title: "Botões e links (edição \"W7\"): guiar a jornada, consistência, anatomia e hover"
 aliases: ["aula teórica de botões W7", "botões e links W7", "UX em botões", "anatomia dos botões"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
+date_updated: 2026-11-14
 source_count: 0
 tags: [ui, ui-design, design, botoes, links, hierarquia-visual, consistencia, area-clicavel, acessibilidade, hover, motion, sombra]
 skill: ux-ui-mentor
@@ -97,11 +97,11 @@ Aula teórica (cerca de 16 min) que abre o bloco de [[wiki/concepts/botoes-em-in
 
 ## Open Questions
 
-- **"80% do elemento"**: lido como a opacidade da sombra de hover (0.8 no slide, na cor do botão). Confiança média; o post do Instagram não foi consultado.
+- **"80% do elemento"**: lido como a opacidade da sombra de hover (0.8 no slide, na cor do botão). Confiança média; o post do Instagram não foi consultado. **Revisto** em [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]: lá "80%" é a parte do elemento coberta pela sombra (só embaixo, encurtada por spread negativo), não a opacidade.
 - **"Melhora a opacidade, o botão fica um pouco mais opaco"**: não diz se a opacidade sobe ou desce. Mantido literal.
 - **"See pricing"** (legenda "Se pricing"): leitura do botão do Sketch, confiança média.
 - **"Há de ter de uma boa área clicável"**, "um botão é tamanho diferente": mantidos literais.
-- **Aula prática no Figma** e **próxima aula de sombras** prometidas; ainda não ingeridas.
+- **Aula prática no Figma** ingerida em [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]; a **aula de sombras** prometida ainda não.
 - `date_published` vazio.
 
 ## Raw Quotes
@@ -119,3 +119,4 @@ Aula teórica (cerca de 16 min) que abre o bloco de [[wiki/concepts/botoes-em-in
 - [[wiki/sources/formas-exemplos-praticos-radius-consistencia-projetos]] — o mesmo radius em botões, cards e ícones
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — a escala geométrica de espaçamento
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — a aula seguinte: as seis formas de botão
+- [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — a aula prática no Figma: padding, gradiente, Smooth Shadow, sombra "curinga"

@@ -3,8 +3,8 @@ type: concept
 title: "Escala de Espaçamento"
 aliases: ["sistema de espaçamento", "spacing system", "escala linear", "escala geométrica", "spacing tokens"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 4
+date_updated: 2026-11-14
+source_count: 5
 tags: [ui, ui-design, layout, espacamento, escala-de-espacamento, consistencia, design-tokens, grid-de-8-pontos]
 skill: ux-ui-mentor
 status: stub
@@ -47,9 +47,14 @@ Na prática ([[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-n
 
 Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: o padding do botão vem "do sistema adotado", "não é qualquer valor aleatório", e é o mesmo em todos os botões. O slide lista 2, 4, 8, 16, 32, 64; a fala diz "2, 4, 6, 8, 32, 64" (provável lapso). Ver [[wiki/concepts/botoes-em-interfaces]].
 
+## Padding medido à mão
+
+Na aula prática, o padding lateral do botão é 64 de cada lado e depois 96; "não é uma regra que a gente leva muito ao pé da letra" ([[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]). Os dois são múltiplos de 8 ([[wiki/concepts/grid-de-8-pontos]]), mas 96 fica fora da escala geométrica 2, 4, 8, 16, 32, 64.
+
 ## Key Sources
 
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — sistema fixo ou por porcentagem; linear x geométrica; preferência pela geométrica
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]] — grid de 8 como escala de "bons números"
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — 16 / 32 / 128 aplicados como hierarquia no Figma
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — padding de botão tirado da escala (2, 4, 8, 16, 32, 64)
+- [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — padding de botão 64 e 96; "não é uma regra"

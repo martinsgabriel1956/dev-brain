@@ -3,8 +3,8 @@ type: concept
 title: "Feedback do Sistema"
 aliases: ["feedback em UI", "visibilidade do status do sistema", "system feedback", "feedback de interface"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 3
+date_updated: 2026-11-14
+source_count: 4
 tags: [ui, ux, ui-design, feedback, estados, heuristicas-nielsen, acessibilidade]
 skill: ux-ui-mentor
 status: stub
@@ -40,8 +40,13 @@ Sem resposta, o usuário repete a ação, desiste ou não sabe se concluiu. Para
 
 Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]], o hover é feedback de interação: o botão cresce um pouco, ganha sombra da cor dele (no slide, `rgba(252,189,56,0.8)`) ou muda a opacidade; no [[wiki/entities/sketch]], o link clareia. "O objetivo do movimento é melhorar a interatividade." `[skill: ux-ui-mentor]` Micro-hover dura 100–150 ms e precisa de par: focus visível e estado active para toque. Ver [[wiki/concepts/botoes-em-interfaces]].
 
+## Sombra como hover
+
+A aula prática constrói o hover como uma [[wiki/concepts/sombra-em-interfaces|sombra]] suave na cor da marca e manda "deixar isso muito bem claro no meu style guide" ([[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]). "A grande questão do momento é saber aplicar o efeito hover e como a gente exporta depois isso para o CSS."
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]] — definição e exemplos
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — feedback listado sob acessibilidade (slide)
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — hover: crescer, sombra da cor do botão, opacidade
+- [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — hover como sombra suave na cor da marca, documentado no style guide

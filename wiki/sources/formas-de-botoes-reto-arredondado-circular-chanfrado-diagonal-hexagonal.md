@@ -3,7 +3,7 @@ type: source
 title: "Formas de botões (edição \"W7\"): reto, arredondado, circular, chanfrado, diagonal e hexagonal"
 aliases: ["formas de botões W7", "estilização dos botões", "botões retangulares, arredondados e circulares", "botão chanfrado", "botão hexagonal"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
+date_updated: 2026-11-14
 source_count: 0
 tags: [ui, ui-design, design, botoes, formas, geometrico, organico, border-radius, predominancia, contraste, tipografia, gamificacao]
 skill: ux-ui-mentor
@@ -115,3 +115,4 @@ Segunda aula teórica do bloco de [[wiki/concepts/botoes-em-interfaces|botões e
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — a aula de formas "W7" que esta continua
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]] — versão FrontPUSH da aula de formas
 - [[wiki/sources/formas-exemplos-praticos-radius-consistencia-projetos]] — raio de 8 px, 3–4 px e pill em três projetos
+- [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — aula prática de botões no Figma: padding, gradiente e sombras

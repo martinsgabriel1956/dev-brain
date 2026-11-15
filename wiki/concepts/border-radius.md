@@ -3,8 +3,8 @@ type: concept
 title: "Border Radius"
 aliases: ["radius", "raio de borda", "cantos arredondados", "arredondamento", "8-radius"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 5
+date_updated: 2026-11-14
+source_count: 6
 tags: [ui, ui-design, formas, border-radius, consistencia, design-tokens, botao]
 skill: ux-ui-mentor
 status: stub
@@ -47,6 +47,10 @@ Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: pr
 
 Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]: reto (0) passa seriedade e serve de contraste em sites orgânicos (Madero); arredondado é o "ótimo coringa"; circular (pill) "traz mais para perto". O [[wiki/entities/nubank]] usa botões e links "totalmente circulares", o que confirma a linha "pill (inferido)" da tabela acima. Chanfrado, diagonal e hexagonal saem da escala de raio ([[wiki/concepts/formas-de-botoes]]).
 
+## Radius 16 na prática
+
+O botão da aula prática usa `border-radius` de 16, o mesmo valor do slide da aula teórica ([[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]).
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]] — arredondado vs. reto muda a mensagem
@@ -54,3 +58,4 @@ Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — Nubank arredonda bordas para aproximar
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — mesmo radius em primário e secundário (16 px no slide)
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — reto, arredondado e circular nos botões; Nubank totalmente circular
+- [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — radius 16 aplicado no botão do Figma
