@@ -3,8 +3,8 @@ type: concept
 title: "O Porquê das Decisões de Design"
 aliases: ["porquê das decisões", "justificar decisões de design", "design rationale", "argumentos de design"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 5
+date_updated: 2026-11-15
+source_count: 6
 tags: [ui, ui-design, design, aprendizado, freelance, design-rationale]
 skill: ux-ui-mentor
 status: stub
@@ -56,6 +56,10 @@ Na parte 2 da aula de formas, Násser explica cada radius dos próprios projetos
 
 Na visão geral dos elementos, o porquê vira critério de boa interface: **propósito**. "Eu deixei esse link azul aqui porque é legal" não serve; tudo "tem que comunicar ou interagir de alguma forma, não está ali à toa" ([[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]]).
 
+## O porquê de cada dobra
+
+No [[wiki/concepts/pagemap]], cada dobra é definida "estabelecendo o porquê, sempre puxando para essa ideia de ser algo proposital"; no [[wiki/concepts/style-guide]], fica registrado "por que eu escolho essas cores" ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]).
+
 ## Key Sources
 
 - [[wiki/sources/como-aprender-ui]]
@@ -63,3 +67,4 @@ Na visão geral dos elementos, o porquê vira critério de boa interface: **prop
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]] — frase de Victor Berriel; não levar ao pé da letra
 - [[wiki/sources/formas-exemplos-praticos-radius-consistencia-projetos]] — explica cada radius dos próprios projetos
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — propósito como primeiro critério de boa interface
+- [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — o porquê de cada dobra e de cada cor

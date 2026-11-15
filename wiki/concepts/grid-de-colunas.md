@@ -3,8 +3,8 @@ type: concept
 title: "Grid de Colunas"
 aliases: ["column grid", "layout grid", "grid de 12 colunas", "12-column grid", "gutter", "calha"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 1
+date_updated: 2026-11-15
+source_count: 2
 tags: [ui, ui-design, layout, grid, grid-de-colunas, alinhamento, consistencia, figma]
 skill: ux-ui-mentor
 status: stub
@@ -44,6 +44,11 @@ O gutter de 32 da aula corresponde à linha "wide" da skill. Os valores de colun
 - [[wiki/concepts/grid-de-icones]] — o mesmo princípio de "réguas", em escala de ícone.
 - [[wiki/concepts/design-responsivo]] — o número de colunas cai em telas menores.
 
+## Containers por dispositivo
+
+Na abertura do módulo de interfaces web: "você precisa saber e desenhar containers de acordo com o dispositivo", seguindo "padrões [...] de colunas, de grids, de alinhamento", para "quebrar em blocos depois" e servir o mesmo conteúdo em vários dispositivos ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]). Grids estão na etapa de wireframes do [[wiki/concepts/workflow-de-interface-web]] e no [[wiki/concepts/style-guide]]. `[skill: ux-ui-mentor]` Padrão típico: 4 colunas no mobile, 8 no tablet, 12 no desktop.
+
 ## Key Sources
 
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — 12 colunas de 72, gutter de 32, centralizado; 12 pelos bons múltiplos
+- [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — containers e colunas por dispositivo; grids no workflow e no style guide
