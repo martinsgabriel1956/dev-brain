@@ -18,7 +18,7 @@ Quantos caracteres ou palavras cabem numa linha. Junto com a [[wiki/concepts/alt
 
 | Referência | Faixa |
 |---|---|
-| Aula ([[wiki/entities/nasser\|Násser]], inferido) | 60 a 90 caracteres; 9 a 15 palavras por linha |
+| Aula ([[wiki/entities/nasser\|Násser]]) | 60 a 90 caracteres; 9 a 15 palavras por linha |
 | `[skill: ux-ui-mentor]` | 45 a 75 caracteres no corpo; `max-width: 65ch` |
 | `[external]` WCAG 2.1, 1.4.8 (AAA) | no máximo 80 caracteres (https://www.w3.org/WAI/WCAG21/Understanding/visual-presentation.html) |
 

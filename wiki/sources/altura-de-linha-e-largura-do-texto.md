@@ -10,7 +10,7 @@ skill: ux-ui-mentor
 status: draft
 source_file: "/home/nemomartins/Documentos/new/dev-study/raw/altura-de-linha-e-largura-do-texto.md"
 source_url: ""
-author: "Násser (inferido)"
+author: "Násser"
 date_published: ""
 date_ingested: 2026-11-15
 ---
@@ -51,7 +51,7 @@ Aula 03 do módulo de [[wiki/concepts/tipografia]] (cerca de 6,5 min), a primeir
 
 ## Entities
 
-- [[wiki/entities/nasser]]: autor **inferido**. O nome não é dito. Indícios: o slide anexado tem o logo "W7" das aulas de ícones, botões e formas, confirmadas como dele pelo usuário; o arquivo está na pasta `FrontPush`.
+- [[wiki/entities/nasser]]: autor (confirmado pelo usuário em 2026-11-15; o nome não é dito na aula). Indícios que já apontavam: o slide anexado tem o logo "W7" das aulas de ícones, botões e formas, confirmadas como dele pelo usuário; o arquivo está na pasta `FrontPush`.
 - [[wiki/entities/whatfont]] (novo): plugin de navegador usado para ler o line-height de sites.
 - [[wiki/entities/wikipedia]] (novo): contraexemplo de largura de texto.
 - [[wiki/entities/new-york-times]]: coluna limitada por container e texto em parágrafos.
@@ -84,7 +84,6 @@ Aula 03 do módulo de [[wiki/concepts/tipografia]] (cerca de 6,5 min), a primeir
 - **"Line-height de 172"**: 172% ou 172 px? Pelo contexto (comparado com 150 e 140), parece porcentagem.
 - **"Deixei de 9 a 15"**: provável "disse"; mantido literal.
 - **Qual site da Globo** (G1, ge?) não é dito.
-- **Autoria inferida** (Násser); confirmar.
 - `date_published` vazio.
 
 ## Raw Quotes

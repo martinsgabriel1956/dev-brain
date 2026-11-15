@@ -14009,3 +14009,7 @@ O usuário confirmou que [[wiki/sources/formas-de-botoes-reto-arredondado-circul
 **Tocadas (11 existentes):** tipografia (intro + seção), hierarquia-visual, espaco-em-branco, design-responsivo, porque-das-decisoes-de-design (concepts, com seção nova); new-york-times, frontpush, figma (seções novas), nasser (Key Sources) (entities); espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt e como-aprender-ui ("Ver também"). Também index.md e log.md.
 
 **Notas:** (1) **Primeira aula do módulo de tipografia** na wiki; as aulas 01 (introdução) e 02 (escala e tamanho) são citadas e não foram ingeridas. (2) **Títulos 90–120% no slide, "110, 100%" na fala**; a skill pede 1.1–1.2. (3) **60–90 caracteres** passa dos 45–75 da skill e dos 80 da WCAG 1.4.8 (AAA) `[external]`. (4) **"Curto acelera"** x skill "curto quebra o ritmo": escanear x ler longo (leitura conciliadora). (5) **Fecha a pendência** da aula prática de espaçamento: line-height é a caixa do texto. (6) **Autoria inferida** (Násser): logo "W7" no slide e pasta `FrontPush`; o nome não é dito. Sem página própria: Globo. `date_published` vazio.
+
+## [2026-11-15] update | Autoria confirmada: altura de linha e largura do texto
+
+O usuário confirmou que [[wiki/sources/altura-de-linha-e-largura-do-texto]] é de [[wiki/entities/nasser]]. Atualizados: `author`, Entities e Open Questions da fonte, a linha em Key Sources de nasser.md, a tabela de [[wiki/concepts/largura-do-texto]] e a linha no index.md. A nota (6) da entrada de ingest anterior fica superada.
