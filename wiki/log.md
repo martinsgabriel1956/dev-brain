@@ -13997,3 +13997,15 @@ O usuário confirmou que [[wiki/sources/botoes-e-links-guiar-jornada-consistenci
 ## [2026-11-13] update | Autoria confirmada: formas de botões (edição "W7")
 
 O usuário confirmou que [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] é de [[wiki/entities/nasser]]. Atualizados: `author`, Entities e Open Questions da fonte, a linha em Key Sources de nasser.md e a linha no index.md. A nota (6) da entrada de ingest anterior fica superada.
+
+## [2026-11-15] ingest | Altura de linha e largura do texto (módulo de tipografia, edição "W7")
+
+**Fonte:** legenda SRT `/home/nemomartins/Documentos/new/transcribe/transcricoes/FrontPush/03 - Altura de Linha & Largura de texto.pt_br.srt` (PT-BR), limpa com a skill **text-cleaner** em `raw/altura-de-linha-e-largura-do-texto.md` (sem tradução). Diff palavra a palavra conferido: 929 tokens no original e 929 na limpa; única correção de ASR: "AttaFonte"→WhatFont (contexto: "deixa eu sair aqui do plugin"; confiança média-alta). Ajustes de espaçamento: "line -height"→line-height, "140 %"→140%, "1 .14"→1.14, "1 ,4"/"1 ,6"→1,4/1,6, "certo ?"→certo?. Sem inserções entre colchetes. Mantidos literalmente: "esse negócio de mais confortável", "porque e se você deixar", "line-height de 172", "deixei de 9 a 15" (provável "disse"), "10 caracteres por linha" (contava palavras), "o Wikipedia". Subtítulos `##`: Altura de linha, Largura do texto. Slide anexado pelo usuário: corpo 140% a 160%, títulos 90% a 120%; 60–90 caracteres, 9 a 15 palavras por linha; "muito longo dificulta a leitura", "quanto mais curto, mais rápida a leitura".
+
+**Skill:** ux-ui-mentor (SKILL.md; `references/tipografia.md`: entrelinha por contexto, medida de 45–75 caracteres com `max-width: 65ch`, legibilidade x leiturabilidade). Mesma escolha das aulas anteriores do curso.
+
+**Criado:** [[wiki/sources/altura-de-linha-e-largura-do-texto]]; conceitos [[wiki/concepts/altura-de-linha]] e [[wiki/concepts/largura-do-texto]]; entidades [[wiki/entities/whatfont]] e [[wiki/entities/wikipedia]].
+
+**Tocadas (11 existentes):** tipografia (intro + seção), hierarquia-visual, espaco-em-branco, design-responsivo, porque-das-decisoes-de-design (concepts, com seção nova); new-york-times, frontpush, figma (seções novas), nasser (Key Sources) (entities); espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt e como-aprender-ui ("Ver também"). Também index.md e log.md.
+
+**Notas:** (1) **Primeira aula do módulo de tipografia** na wiki; as aulas 01 (introdução) e 02 (escala e tamanho) são citadas e não foram ingeridas. (2) **Títulos 90–120% no slide, "110, 100%" na fala**; a skill pede 1.1–1.2. (3) **60–90 caracteres** passa dos 45–75 da skill e dos 80 da WCAG 1.4.8 (AAA) `[external]`. (4) **"Curto acelera"** x skill "curto quebra o ritmo": escanear x ler longo (leitura conciliadora). (5) **Fecha a pendência** da aula prática de espaçamento: line-height é a caixa do texto. (6) **Autoria inferida** (Násser): logo "W7" no slide e pasta `FrontPush`; o nome não é dito. Sem página própria: Globo. `date_published` vazio.

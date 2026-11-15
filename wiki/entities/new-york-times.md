@@ -3,8 +3,8 @@ type: entity
 title: "The New York Times"
 aliases: ["NYT"]
 date_created: 2026-09-29
-date_updated: 2026-09-29
-source_count: 1
+date_updated: 2026-11-15
+source_count: 2
 tags: [organizacao, midia, captcha]
 skill: tech-mentor-security
 status: stub
@@ -14,6 +14,11 @@ status: stub
 
 Jornal que digitalizava seu arquivo (13 mi+ de artigos desde 1850, segundo a fonte); o [[wiki/concepts/ocr]] falhava em parte dele, e essas palavras alimentaram o [[wiki/concepts/recaptcha]] (2007).
 
+## Largura de texto
+
+Em [[wiki/sources/altura-de-linha-e-largura-do-texto]], exemplo positivo de [[wiki/concepts/largura-do-texto]]: a coluna é "curtinha", contida por um container que não deixa o texto ir "de ponta a ponta", e a notícia é separada em parágrafos.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-captcha-do-teste-de-turing-ao-turnstile]]
+- [[wiki/sources/altura-de-linha-e-largura-do-texto]] — coluna contida e parágrafos como exemplo de largura de texto

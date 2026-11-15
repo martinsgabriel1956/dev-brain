@@ -3,8 +3,8 @@ type: concept
 title: "O Porquê das Decisões de Design"
 aliases: ["porquê das decisões", "justificar decisões de design", "design rationale", "argumentos de design"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 5
+date_updated: 2026-11-15
+source_count: 6
 tags: [ui, ui-design, design, aprendizado, freelance, design-rationale]
 skill: ux-ui-mentor
 status: stub
@@ -56,6 +56,10 @@ Na parte 2 da aula de formas, Násser explica cada radius dos próprios projetos
 
 Na visão geral dos elementos, o porquê vira critério de boa interface: **propósito**. "Eu deixei esse link azul aqui porque é legal" não serve; tudo "tem que comunicar ou interagir de alguma forma, não está ali à toa" ([[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]]).
 
+## Aprender o line-height dos outros
+
+A aula de tipografia mostra como tirar o porquê de um site de referência: o [[wiki/entities/whatfont]] dá o line-height em px, e dividir pelo tamanho da fonte revela a razão (64 / 56 = 1.14 no título, 28 / 20 = 1,4 no corpo) ([[wiki/sources/altura-de-linha-e-largura-do-texto]]). As faixas da aula (corpo 140–160%, títulos 90–120%) ficam perto da tabela acima; ver [[wiki/concepts/altura-de-linha]].
+
 ## Key Sources
 
 - [[wiki/sources/como-aprender-ui]]
@@ -63,3 +67,4 @@ Na visão geral dos elementos, o porquê vira critério de boa interface: **prop
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]] — frase de Victor Berriel; não levar ao pé da letra
 - [[wiki/sources/formas-exemplos-praticos-radius-consistencia-projetos]] — explica cada radius dos próprios projetos
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — propósito como primeiro critério de boa interface
+- [[wiki/sources/altura-de-linha-e-largura-do-texto]] — dividir line-height pelo tamanho da fonte para entender a escolha

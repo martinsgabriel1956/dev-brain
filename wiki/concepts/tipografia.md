@@ -1,10 +1,10 @@
 ---
 type: concept
 title: "Tipografia"
-aliases: ["fonte", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
+aliases: ["fonte", "módulo de tipografia", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 7
+date_updated: 2026-11-15
+source_count: 8
 tags: [ui, ui-design, tipografia, fonte, serifa, elementos-da-interface]
 skill: ux-ui-mentor
 status: stub
@@ -12,7 +12,7 @@ status: stub
 
 # Tipografia
 
-Um dos [[wiki/concepts/elementos-da-interface]]; o curso de [[wiki/entities/nasser|Násser]] promete um módulo próprio por ser "tão denso". Por enquanto a wiki só tem o papel da tipografia na [[wiki/concepts/harmonia-visual|harmonia]] com as formas.
+Um dos [[wiki/concepts/elementos-da-interface]]; o curso de [[wiki/entities/nasser|Násser]] promete um módulo próprio por ser "tão denso". A wiki tem o papel da tipografia na [[wiki/concepts/harmonia-visual|harmonia]] com as formas e, do módulo próprio, a aula de [[wiki/concepts/altura-de-linha|altura de linha]] e [[wiki/concepts/largura-do-texto|largura do texto]].
 
 ## Tipografia comunica
 
@@ -50,6 +50,10 @@ Na versão "W7" da aula de formas ([[wiki/sources/formas-geometricas-organicas-e
 
 Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]], "a tipografia do Madero é com serifa" e o restante do site usa "uma tipografia um pouco mais limpa", sem serifa. O site de arquitetura usa letras sem serifa "buscando o minimalismo", com mais espaçamento entre letras no título. Na aula de formas "W7" o mesmo site de arquitetura aparecia com serifa: ver Tensões da fonte.
 
+## Altura de linha e largura do texto
+
+A aula 03 do módulo de tipografia ([[wiki/sources/altura-de-linha-e-largura-do-texto]]) trata as duas propriedades que deixam o texto "mais confortável ao ler": [[wiki/concepts/altura-de-linha]] (140% a 160% no corpo, 90% a 120% nos títulos; "quanto menor o texto, maior a altura de linha") e [[wiki/concepts/largura-do-texto]] (60 a 90 caracteres, 9 a 15 palavras por linha). Ela também fecha a pendência acima: line-height é "a caixa que circunda o texto".
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -59,3 +63,4 @@ Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — caixa de texto inclui o line-height ao medir distâncias
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — serifa x sem serifa; letra de mão do Coco Bambu; sem serifa do Madero
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — Madero serifado + corpo sem serifa; arquitetura sem serifa (tensão)
+- [[wiki/sources/altura-de-linha-e-largura-do-texto]] — altura de linha e largura do texto; primeira aula do módulo de tipografia na wiki

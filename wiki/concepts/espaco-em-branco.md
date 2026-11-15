@@ -3,8 +3,8 @@ type: concept
 title: "Espaço em Branco"
 aliases: ["whitespace", "espaço negativo", "negative space", "respiro", "micro espaço", "macro espaço", "micro e macro espaço"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 8
+date_updated: 2026-11-15
+source_count: 9
 tags: [ui, ui-design, layout, espaco-em-branco, simplicidade, hierarquia-visual, espacamento, grid-de-8-pontos]
 skill: ux-ui-mentor
 status: draft
@@ -58,6 +58,10 @@ Espaço é o recurso padrão para separar. A linha aparece quando é preciso "um
 
 Na aula de espaçamento e linhas, o espaço dentro do elemento é o **padding** do CSS. Num card, afastar o conteúdo da borda deixa o design "mais clean"; o autor faz isso em todos os cards do site dele. A mesma aula diz que o tamanho do espaço depende do meio: conteúdo simples aceita espaços grandes, conteúdo denso pede espaços menores com linhas e cards ([[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]]). Ver [[wiki/concepts/densidade-de-informacao]] e [[wiki/concepts/escala-de-espacamento]].
 
+## Container e parágrafos no texto longo
+
+O [[wiki/entities/new-york-times]] limita a coluna com um container, para o texto não ir "de ponta a ponta", e quebra a notícia em parágrafos, "também de pausa", em vez de "texto corridão" ([[wiki/sources/altura-de-linha-e-largura-do-texto]]). Ver [[wiki/concepts/largura-do-texto]].
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — espaço em branco como ferramenta de simplicidade
@@ -68,3 +72,4 @@ Na aula de espaçamento e linhas, o espaço dentro do elemento é o **padding** 
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — linha como reforço quando o espaço não basta
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — padding no card; tamanho do espaço depende do meio
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — prática no Figma: vãos de 16, 32 e 128 medidos com Alt
+- [[wiki/sources/altura-de-linha-e-largura-do-texto]] — container do NYT e parágrafos como pausa

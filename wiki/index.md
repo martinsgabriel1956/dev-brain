@@ -26,6 +26,7 @@ date_updated: 2026-11-13
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/altura-de-linha-e-largura-do-texto]] | Aula 03 do módulo de [[wiki/concepts/tipografia]] (edição "W7", de [[wiki/entities/nasser\|Násser]], inferido): [[wiki/concepts/altura-de-linha\|altura de linha]] 140–160% no corpo e 90–120% nos títulos; [[wiki/concepts/largura-do-texto\|largura]] de 60–90 caracteres (9–15 palavras); razão = line-height ÷ fonte no [[wiki/entities/whatfont\|WhatFont]]; Wikipedia cansa, NYT contém a coluna |
 | [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] | Aula teórica de [[wiki/concepts/botoes-em-interfaces\|botões e links]] da edição "W7" (de [[wiki/entities/nasser\|Násser]]): botões guiam a jornada de A a B; exemplos [[wiki/entities/frontpush]] (grade do curso + inscreva-se), [[wiki/entities/apple]] (link branco, texto cinza), [[wiki/entities/sketch]] (See pricing, tente de graça), Framer e Adobe XD; [[wiki/concepts/consistencia-visual\|consistência]] (altura, padding, radius iguais); primário preenchido + secundário vazio; [[wiki/concepts/area-clicavel\|área clicável]] de 44 px (usa 56); label curto; cor de [[wiki/concepts/contraste]]; hover com sombra da cor do botão |
 | [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] | Aula teórica de [[wiki/concepts/formas-de-botoes|formas de botões]] da edição "W7" (de [[wiki/entities/nasser|Násser]]): retangular (seriedade; Madero e arquitetura como contraste), arredondado (o "coringa"), circular ([[wiki/entities/nubank]], [[wiki/entities/apple]]; aproxima), chanfrado (futurista; jogo do Homem-Aranha), diagonal (movimento; PES, FIFA) e hexagonal (gamificado, crianças); geométrico puro "fica muito longe da pessoa" |
 | [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] | Aula prática de [[wiki/concepts/icones-em-interfaces\|ícones]] da edição "W7" (de [[wiki/entities/nasser\|Násser]]): plugins da comunidade do [[wiki/entities/figma]] ([[wiki/entities/feather-icons]], Bootstrap Icons, Material Design Icons, Iconify); arquivo do Piqo ([[wiki/entities/iconly]]) com bold, bulk, light, broken, two-tone; ícones próprios para os módulos do site (laranja = UI Design) + Feather, as duas [[wiki/concepts/familia-de-icones\|famílias]]; ícone dentro de círculo ou card para equilibrar; [[wiki/concepts/constraints-no-figma\|constraints]] para não deformar |
@@ -971,6 +972,8 @@ date_updated: 2026-11-13
 | [[wiki/concepts/grid-de-colunas]] | Colunas e gutters como réguas do layout; 12 no desktop por dividir em 2, 3, 4 e 6; 72 + gutter 32 na aula; colunas por breakpoint |
 | [[wiki/concepts/constraints-no-figma]] | Como a camada reage quando o frame muda de tamanho: top/left (padrão), left & right, center, scale; evita que o ícone deforme |
 | [[wiki/concepts/botoes-em-interfaces]] | Botões guiam a jornada; primário preenchido x secundário vazio; mesma altura, padding e radius, largura pelo texto; label curto; cor de contraste; hover |
+| [[wiki/concepts/altura-de-linha]] | Line-height: a caixa que circunda o texto; corpo 140–160%, títulos 90–120%; quanto menor o texto, maior a entrelinha; em CSS, razão sem unidade |
+| [[wiki/concepts/largura-do-texto]] | Medida de linha: 60–90 caracteres ou 9–15 palavras na aula, 45–75 na skill, máx. 80 na WCAG 1.4.8; longo cansa, curto acelera |
 | [[wiki/concepts/formas-de-botoes]] | Seis formas de botão e o que comunicam: reto, arredondado, circular (pill), chanfrado, diagonal, hexagonal; botão como contraste à predominância; `clip-path` corta foco e sombra |
 | [[wiki/concepts/area-clicavel]] | Área que responde ao toque; dedo é menos preciso que mouse; 44 px na aula, 44 pt Apple, 48 dp Material, 24 px WCAG 2.2 AA |
 | [[wiki/concepts/grid-de-icones]] | Formas-guia no frame do ícone (área útil 20×20 em 24, quadrado, círculo, X); Material keylines; travado no Figma para consistência |
@@ -3399,6 +3402,8 @@ date_updated: 2026-11-13
 
 ## Entities
 
+- [[wiki/entities/whatfont]] — extensão de navegador que mostra fonte, tamanho e line-height de um texto; usada para estudar sites de referência
+- [[wiki/entities/wikipedia]] — enciclopédia on-line; contraexemplo de largura de texto ("te cansa um pouco rápido")
 - [[wiki/entities/apple]] — big tech usada como referência de UI; links destacados, link branco x texto cinza, botões que não encolhem no mobile
 - [[wiki/entities/sketch]] — ferramenta de design para Mac; site como exemplo de CTAs ("See pricing", "tente de graça") e de botões consistentes
 - [[wiki/entities/nasser]] — instrutor do curso de UI Design do FrontPUSH (aulas 1 e 2, patterns, princípios do design); legendas o transcreviam como "Nácia"
@@ -3520,7 +3525,7 @@ date_updated: 2026-11-13
 | [[wiki/entities/rock-pro]] | Harness online de aprendizado do Ronald Hulk; demo de RAG híbrida |
 | [[wiki/entities/the-iron-cage-revisited-paper]] | Artigo de DiMaggio e Powell (1983) que define isomorfismo institucional — coercitivo, normativo, mimético |
 | [[wiki/entities/moni-naor]] | Propôs o teste de Turing para web em 1996 — origem do CAPTCHA |
-| [[wiki/entities/new-york-times]] | Arquivo digitalizado via reCAPTCHA |
+| [[wiki/entities/new-york-times]] | Arquivo digitalizado via reCAPTCHA; coluna contida por container como exemplo de largura de texto |
 | [[wiki/entities/bill-gates]] | Citação atribuída sobre a pessoa preguiçosa para trabalho difícil (atribuição não verificada) |
 | [[wiki/entities/cal-newport]] | Autor de *Deep Work*, referência para trabalho profundo |
 | [[wiki/entities/cloudflare]] | CDN/segurança; criadora do Turnstile |
