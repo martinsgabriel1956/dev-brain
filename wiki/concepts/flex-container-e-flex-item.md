@@ -4,7 +4,7 @@ title: "Flex container e flex items"
 aliases: ["flex-container", "flex-item", "flex-itens", "flex container", "flex items", "propriedades do flex-container", "propriedades do flex-item"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 8
+source_count: 9
 tags: [frontend, css, flexbox, layout]
 skill: tech-mentor-frontend
 status: stub
@@ -54,3 +54,4 @@ Em [[wiki/sources/frontpush-order-e-align-self]], [[wiki/entities/nasser|Násser
 - [[wiki/sources/frontpush-flex-grow-crescer-espaco-disponivel]]: aula 06: fim das propriedades do contêiner; `flex-grow` abre as dos itens; ver [[wiki/concepts/flex-grow-shrink-basis]]
 - [[wiki/sources/frontpush-order-e-align-self]]: aula 09: order e align-self, as últimas dos itens
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: prática 2: itens internos "precisam ser filhos direto" do pai flex; um filho só, `display: block`
+- [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: mesma lógica de pai e filhos diretos, agora grid container e grid itens

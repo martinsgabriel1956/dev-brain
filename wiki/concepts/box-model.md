@@ -4,7 +4,7 @@ title: "Box Model (CSS)"
 aliases: ["CSS box model", "content-padding-border-margin"]
 date_created: 2026-07-28
 date_updated: 2026-11-16
-source_count: 18
+source_count: 19
 tags: [browser, css, box-model, layout, html-semantico, shorthand-css, padding, margin]
 skill: tech-mentor-frontend
 status: draft
@@ -78,3 +78,4 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: "todo e qualque
 - [[wiki/sources/frontpush-justify-content-align-items-box-sizing]]: `box-sizing: border-box` em todo projeto; explicação mistura com o tamanho do conteúdo
 - [[wiki/sources/frontpush-order-e-align-self]]: `[external]` `margin-left: auto` como o "justify-self" que o flexbox não tem
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: caixa, shorthand horário, box-sizing com exemplo
+- [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: reset com `box-sizing: border-box`; padding de 16 px nos itens

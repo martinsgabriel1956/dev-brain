@@ -4,7 +4,7 @@ title: "Webfonts"
 aliases: ["fontes web", "carregar fonte no CSS", "font-family", "@import de fonte", "link de fonte", "font-weight", "@font-face"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [frontend, css, tipografia, google-fonts, performance, font-family, font-weight]
 skill: ux-ui-mentor
 status: stub
@@ -48,3 +48,4 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], a Poppins vem p
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: link no index, font-family no H1; download family só para instalar
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: um `<link>` para duas famílias; smoothing
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: link não basta, falta a regra
+- [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: Roboto do Google Fonts com copiar link e font-family

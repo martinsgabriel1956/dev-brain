@@ -4,7 +4,7 @@ title: "Grid de Colunas"
 aliases: ["column grid", "layout grid", "grid de 12 colunas", "12-column grid", "gutter", "calha"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 9
+source_count: 10
 tags: [ui, ui-design, layout, grid, grid-de-colunas, alinhamento, consistencia, figma]
 skill: ux-ui-mentor
 status: draft
@@ -103,3 +103,4 @@ Em [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]], [
 - [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: o grid do Figma levado ao código como grid system em Sass (hoje CSS Grid faz sem float)
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: 12 colunas de 96 px + gutter 24 px ≈ 1440 px viram o container
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: container de 1.200 ou 1.440 px "de acordo com o grid que você estabeleceu"
+- [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: container de 1.440 px; a malha 5 × 5 sai do menor card, não de um grid de 12 colunas

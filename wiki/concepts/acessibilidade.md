@@ -4,7 +4,7 @@ title: "Acessibilidade (em interfaces)"
 aliases: ["a11y", "acessibilidade digital", "acessibilidade web", "design acessível", "design inclusivo", "accessibility"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 13
+source_count: 14
 tags: [acessibilidade, a11y, ux, ui-design, wcag, contraste, alt-text, carga-cognitiva, html-semantico]
 skill: ux-ui-mentor
 status: stub
@@ -78,3 +78,4 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o `la
 - [[wiki/sources/frontpush-order-e-align-self]]: `order` para reordenar texto e ilustração no mobile; a ordem lida continua a do HTML `[external]`
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: RN sem semântica não é RN sem acessibilidade
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: label, outline e foco no select
+- [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: reposicionar áreas muda só o visual, como `order` `[external]`

@@ -1,10 +1,10 @@
 ---
 type: concept
 title: "CSS Grid"
-aliases: ["grid", "display: grid", "grid layout", "grid-template-columns"]
+aliases: ["grid", "display: grid", "grid layout", "grid-template-columns", "grid-template-areas", "grid-area"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [css, layout, grid, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -30,9 +30,16 @@ Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta
 
 Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], a landing do Proffy no desktop usa `grid-template-columns: 2fr 1fr 2fr`, `grid-template-rows: 350px 1fr` e `grid-template-areas: "proffy image image" "button button texting"`, com `grid-area` em cada bloco e `gap: 60px`. Sem áreas, "o grid vai tentando se ajustar". Alinha com `align-self` e `justify-self` ("o justify do grid"). Na página study, os filtros usam `repeat(4, 1fr)`. O DevTools desenha as linhas do grid ao passar o mouse no container.
 
+## Na mentoria do FrontPUSH (Násser, inferido)
+
+Em [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]], o layout é tratado como planilha: "uma tabela cheia de células pequenas", em que cada card é um "mesclar e centralizar" do Excel. A altura da linha sai do **menor elemento**. O resultado é uma matriz 5 × 5 escrita em `grid-template-areas` "em forma de matriz", com `grid-area` em cada item e `grid-gap` no lugar de margin. Para outra tela, a media query redefine só o template. A regra de bolso: duas dimensões, grid; uma dimensão, [[wiki/concepts/flexbox]].
+
+`[external]` Os nomes da matriz vão separados por espaço (`"A A A B B"`); colados (`"AAABB"`), viram uma célula só. Cada área precisa ser um retângulo, e `.` marca uma célula vazia: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas. `grid-gap` é o nome antigo de `gap`.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: grid de três colunas com `fr` e `gap`; uma coluna no mobile
 - [[wiki/sources/frontpush-flex-basis-tamanho-base-flex-itens]]: `[external]` `repeat(auto-fit, minmax(200px, 1fr))` como alternativa aos cards com `flex-basis` + `wrap`, sem a última linha esticada
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: o esqueleto de duas colunas do layout do YouTube, feito só com flexbox no exercício, também caberia em grid `[external]`
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: template-areas, grid-area, fr, self-alignment
+- [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria: `grid-template-areas` desenhado como "mesclar e centralizar" no Excel, `grid-area` por item, `grid-gap`; nova matriz numa media query

@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 64
+source_count: 65
 tags: [curso, frontend, ui-design, landing-page, css]
 skill: ux-ui-mentor
 status: stub
@@ -289,3 +289,4 @@ Em [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: um se
 - [[wiki/sources/frontpush-order-e-align-self]]: aula 09 do módulo de Flexbox: order e align-self
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: aula 10 do módulo de Flexbox: prática 1, HTML do layout do YouTube
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: aula 11 do módulo de Flexbox: prática 2, desafio
+- [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: sessão de mentoria: prática com CSS Grid e `grid-template-areas`

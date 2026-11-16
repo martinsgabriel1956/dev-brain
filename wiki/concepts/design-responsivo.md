@@ -4,7 +4,7 @@ title: "Design Responsivo"
 aliases: ['responsive design', 'media queries']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 33
+source_count: 34
 tags: [css, responsivo, mobile, historia, unidades-de-medida-css]
 skill: tech-mentor-frontend
 status: draft
@@ -122,3 +122,4 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], responsividade 
 - [[wiki/sources/frontpush-order-e-align-self]]: `order` para pôr o texto antes da ilustração no mobile (`[external]` melhor: HTML na ordem de leitura)
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: "estrutura ABC [...] vai quebrar em ABC em coluna": media query ou `flex-wrap` + `flex-basis`
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: definição e mobile first no Proffy
+- [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: só o `grid-template-areas` muda dentro da media query, de 5 × 5 para 4 × 4

@@ -4,7 +4,7 @@ title: "Estilos padrão do navegador e reset CSS"
 aliases: ["user agent stylesheet", "folha de estilo do navegador", "reset CSS", "CSS reset", "normalize", "estilos padrão"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [css, reset, user-agent, cascata, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -29,3 +29,4 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], o reset é `* {
 - [[wiki/sources/frontpush-justify-content-align-items-box-sizing]]: `box-sizing: border-box` "em todos os projetos"
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: reset de margin/padding e "border-size" (é `box-sizing`) em border-box no início do projeto
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: reset com box-sizing; margin 8px do body; botão sem herança
+- [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: o "hack" de margin, padding e box-sizing no início do projeto

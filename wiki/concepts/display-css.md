@@ -4,7 +4,7 @@ title: "display no CSS (block x inline)"
 aliases: ["display", "display block", "display inline", "elemento de bloco", "elemento inline", "inline-block"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 9
+source_count: 10
 tags: [frontend, css, display, layout, box-model]
 skill: tech-mentor-frontend
 status: stub
@@ -63,3 +63,4 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o `la
 - [[wiki/sources/frontpush-display-flex-flex-container-filhos-diretos]]: aula 02: inline, block, inline-block e flex; "todas as tags são elementos de bloco" (deslize)
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: block, inline, flex
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: label inline; margin-top em inline
+- [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: `display: grid` sem template empilha os itens "como se tivesse em display block"

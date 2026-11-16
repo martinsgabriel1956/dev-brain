@@ -4,7 +4,7 @@ title: "Flexbox (display: flex)"
 aliases: ["flexbox", "display flex", "flex", "flex-direction", "justify-content", "align-items", "flex: 1"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 21
+source_count: 22
 tags: [frontend, css, flexbox, layout, display, alinhamento]
 skill: tech-mentor-frontend
 status: stub
@@ -97,6 +97,8 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], `display: flex`
 
 Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: `justify-content: space-between` ("between significa entre"), `space-evenly` ("espaçamentos [...] meio que constantes"), `flex-start` para desfazer o center no desktop, `flex-direction: column` no header e `flex: 1 1` no `.header-content`, que "parece que não fez diferença" até o resto do layout entrar.
 
+Na [[wiki/sources/frontpush-mentoria-pratica-com-css-grid|mentoria de CSS Grid]] do [[wiki/entities/frontpush|FrontPUSH]], o critério fica explícito: layout de linhas sem mescla, flexbox; linhas e colunas mescladas, grid, porque em flex seria "flexbox dentro do flexbox, que fica dentro do flexbox, vai virando uma salada".
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: header, coluna com `flex: 1`, botão com span + strong
@@ -120,3 +122,4 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: `just
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: RN: tudo é flex, eixo padrão coluna
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: centralizar o container no body
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: space-between, space-evenly, flex 1 1
+- [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: flex é "unidimensional"; layout com linhas e colunas mescladas em flex vira "flexbox dentro do flexbox [...] uma salada"

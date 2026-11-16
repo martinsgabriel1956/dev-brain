@@ -4,7 +4,7 @@ title: "Breakpoint"
 aliases: ["breakpoints", "ponto de quebra", "media query breakpoint", "small medium large extra-large", "sm md lg xl xxl"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 9
+source_count: 10
 tags: [ui, ui-design, layout, grid, responsividade, design-responsivo, breakpoint, breakpoints, media-query, resolucao, css]
 skill: ux-ui-mentor
 status: stub
@@ -97,3 +97,4 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], os br
 - [[wiki/sources/frontpush-flex-direction-flex-wrap-flex-flow]]: `@media (max-width: 960px)` troca `flex-direction` para `column` (desktop-first); 720 px demora mais para quebrar
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: media query para "sumir com os itens" do menu e trocar por hambúrguer quando há muitos links
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: 700 e 1100 px com min-width
+- [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: `max-width: 960px` (desktop-first, mesmo valor da aula de flex-direction) troca o `grid-template-areas`

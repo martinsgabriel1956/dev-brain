@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 87
+source_count: 88
 tags: [pessoa, instrutor, ui-design, design, curso, css]
 skill: ux-ui-mentor
 status: stub
@@ -155,3 +155,4 @@ Em [[wiki/sources/seletores-e-pseudo-elements-css]], Násser prega "a menor quan
 - [[wiki/sources/frontpush-order-e-align-self]]: aula 09 do módulo de Flexbox: order e align-self
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: aula 10 do módulo de Flexbox: prática 1, estrutura do layout do YouTube; fundo agora `#0c0c0c`
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: aula 11 do módulo de Flexbox: prática 2, layout-desafio sem código
+- [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria (inferido): prática com CSS Grid; fundos `#070707`/`#090909`/`#0B0B0B`

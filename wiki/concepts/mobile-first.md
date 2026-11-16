@@ -4,7 +4,7 @@ title: "Mobile first"
 aliases: ["mobile-first", "mobile first CSS", "primeiro o mobile"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [css, responsivo, mobile-first, media-query, breakpoint, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -30,3 +30,4 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o mob
 
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: mobile first anunciado para o Proffy, com rem e porcentagem como unidades
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: min-width de 700 e 1100 px
+- [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: contraexemplo desktop-first, `max-width: 960px`
