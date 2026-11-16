@@ -3,8 +3,8 @@ type: entity
 title: "Meta"
 aliases: ["Facebook", "Meta Platforms"]
 date_created: 2026-07-16
-date_updated: 2026-11-13
-source_count: 9
+date_updated: 2026-11-14
+source_count: 10
 tags: [empresa, demissao, ai-washing, era-agentica, graphql, api-design, ci-cd, deploy]
 skill: tech-mentor-ai
 status: stub
@@ -36,6 +36,10 @@ Exemplo de Násser: com o Facebook em japonês, os ícones (caixa de entrada, si
 
 Na aula de espaçamento e linhas, o Facebook é o exemplo de interface densa: feed em cards, informações mais juntas dentro do card, linha de ponta a ponta separando conteúdo de interação ([[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]]). Ver [[wiki/concepts/densidade-de-informacao]].
 
+## Cores de marca
+
+Na aula de paleta de Násser, Facebook (azul) e WhatsApp (verde) são exemplos de cor de base que "define o branding da marca" ([[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]]). Ver [[wiki/concepts/identidade-visual]].
+
 ## Key Sources
 
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]]
@@ -47,3 +51,4 @@ Na aula de espaçamento e linhas, o Facebook é o exemplo de interface densa: fe
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — Explorar do Instagram: grid assimétrico e eixo de continuidade para feed infinito; Reels maiores como hierarquia
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — Facebook em japonês, navegável pelos ícones
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — Facebook denso organizado com cards e linhas
+- [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — Facebook azul e WhatsApp verde como cor de branding

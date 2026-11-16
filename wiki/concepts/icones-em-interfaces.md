@@ -3,8 +3,8 @@ type: concept
 title: "Ícones em interfaces"
 aliases: ["ícone", "ícones", "iconografia", "icon", "icons", "ícones de sistema", "system icons"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 7
+date_updated: 2026-11-14
+source_count: 8
 tags: [ui, ui-design, elementos-da-interface, icones, iconografia, carga-cognitiva, padroes-de-interface, acessibilidade]
 skill: ux-ui-mentor
 status: stub
@@ -70,6 +70,10 @@ Na aula teórica da edição "W7" ([[wiki/sources/icones-comunicacao-senso-comum
 
 Em [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]]: plugins da comunidade do [[wiki/entities/figma]] (Feather, Bootstrap Icons, Material Design Icons, Iconify); ícones próprios para os módulos do site, cada um dizendo o que o módulo trata (computador + smartphone = interface web responsiva; átomo = React; colunas mescladas = grid x Flexbox; presente = bônus); e o ícone dentro de círculo, card ou quadrado para equilibrar proporções diferentes, com [[wiki/concepts/constraints-no-figma|constraints]] para não deformar.
 
+## Tons pastéis
+
+Na aula de paleta, ícones em tons pastéis são o exemplo de por que a [[wiki/concepts/paleta-de-cores]] precisa de variação: "a gente precisa dar conta dessa variação e entender como se dá essa variação" ([[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]]). `[skill: ux-ui-mentor]` Ícone que informa precisa de 3:1 contra o fundo; pastel sobre branco costuma falhar, então o pastel vai no fundo do círculo e o traço em tom escuro da mesma matiz.
+
 ## Key Sources
 
 - [[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]] — aula teórica de ícones: definição, patterns, objeto x ação, Material Design, identidade visual, famílias
@@ -79,3 +83,4 @@ Em [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints
 - [[wiki/sources/imagens-e-ilustracoes-vetorizar-icones-figma-pen-tool-bend-tool]] — ícone de app (telefone) vetorizado à mão com Pen Tool e Bend Tool
 - [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] — aula teórica "W7": pistas visuais, senso comum, clareza, legibilidade, alinhamento em cards, personalidade, no máximo duas famílias
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — aula prática "W7": plugins, ícones próprios dos módulos, ícone dentro de círculo, constraints
+- [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — ícones em tons pastéis como exemplo de variação de cor

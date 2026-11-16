@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-11-13
+date_updated: 2026-11-14
 ---
 
 
@@ -28,6 +28,7 @@ date_updated: 2026-11-13
 |---|---|
 | [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] | Aula teórica de [[wiki/concepts/botoes-em-interfaces\|botões e links]] da edição "W7" (de [[wiki/entities/nasser\|Násser]]): botões guiam a jornada de A a B; exemplos [[wiki/entities/frontpush]] (grade do curso + inscreva-se), [[wiki/entities/apple]] (link branco, texto cinza), [[wiki/entities/sketch]] (See pricing, tente de graça), Framer e Adobe XD; [[wiki/concepts/consistencia-visual\|consistência]] (altura, padding, radius iguais); primário preenchido + secundário vazio; [[wiki/concepts/area-clicavel\|área clicável]] de 44 px (usa 56); label curto; cor de [[wiki/concepts/contraste]]; hover com sombra da cor do botão |
 | [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] | Aula teórica de [[wiki/concepts/formas-de-botoes|formas de botões]] da edição "W7" (de [[wiki/entities/nasser|Násser]]): retangular (seriedade; Madero e arquitetura como contraste), arredondado (o "coringa"), circular ([[wiki/entities/nubank]], [[wiki/entities/apple]]; aproxima), chanfrado (futurista; jogo do Homem-Aranha), diagonal (movimento; PES, FIFA) e hexagonal (gamificado, crianças); geométrico puro "fica muito longe da pessoa" |
+| [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] | Aula teórica de [[wiki/concepts/paleta-de-cores\|paleta de cores]] da edição "W7" (de [[wiki/entities/nasser\|Násser]]): "princípios, não regras"; paleta garante [[wiki/concepts/contraste]], sentimento e [[wiki/concepts/identidade-visual]] (McDonald's); base + enfoque (roxo + verde da [[wiki/entities/rocketseat]]) pela [[wiki/concepts/regra-60-30-10]]; monocromática, análoga e triádica pelo [[wiki/concepts/harmonia-de-cores\|círculo cromático]]; classificar paletas no [[wiki/entities/color-hunt]] |
 | [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] | Aula prática de [[wiki/concepts/icones-em-interfaces\|ícones]] da edição "W7" (de [[wiki/entities/nasser\|Násser]]): plugins da comunidade do [[wiki/entities/figma]] ([[wiki/entities/feather-icons]], Bootstrap Icons, Material Design Icons, Iconify); arquivo do Piqo ([[wiki/entities/iconly]]) com bold, bulk, light, broken, two-tone; ícones próprios para os módulos do site (laranja = UI Design) + Feather, as duas [[wiki/concepts/familia-de-icones\|famílias]]; ícone dentro de círculo ou card para equilibrar; [[wiki/concepts/constraints-no-figma\|constraints]] para não deformar |
 | [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] | Aula teórica de [[wiki/concepts/icones-em-interfaces\|ícones]] da edição "W7" (de [[wiki/entities/nasser\|Násser]]): ícones como pistas visuais; senso comum (engrenagem > chave de boca; carta, balão, escudo, carrinho) e a viagem a Viena ([[wiki/concepts/padroes-de-interface\|patterns]]); dicas: clareza com label, legibilidade (simples + [[wiki/concepts/formato-svg\|SVG]]), alinhamento em cards ([[wiki/concepts/centralizacao-optica]]), personalidade linha x preenchido; [[wiki/concepts/familia-de-icones\|uma família]], no máximo duas; [[wiki/entities/feather-icons]], [[wiki/entities/eva-icons]], Basicons gratuitos |
 | [[wiki/sources/imagens-e-ilustracoes-vetorizar-icones-figma-pen-tool-bend-tool]] | Vetorizar ícones no [[wiki/entities/figma]] (edição "W7"; de [[wiki/entities/nasser\|Násser]]): o "app telefone" é todo vetor (fundo como união, gradiente verde, sombras); telefone traçado com a [[wiki/concepts/vetorizacao-com-pen-tool\|Pen Tool]] sobre imagem de referência, com o mínimo de pontos e simetria; Bend Tool para arredondar; alças para refinar; export em [[wiki/concepts/formato-svg\|SVG]] |
@@ -979,6 +980,10 @@ date_updated: 2026-11-13
 | [[wiki/concepts/cor-semantica]] | Cor que informa: azul link/info, vermelho erro/alerta, amarelo warning, preenchimento como hierarquia; nunca só a cor (WCAG 1.4.1) |
 | [[wiki/concepts/elementos-de-composicao]] | Fundo que dá ambiência (estrelas, ondas, gradientes, texturas) alinhado à branding; baixo contraste para não competir com o ponto focal |
 | [[wiki/concepts/empty-state]] | Tela sem conteúdo (conversa vazia); ilustração/mascote + título + descrição + CTA; momento de ensinar o próximo passo |
+| [[wiki/concepts/paleta-de-cores]] | Conjunto de cores pré-selecionadas usadas em harmonia; contraste, sentimento, identidade; receita mínima (contraste + cor característica + branco e preto); base + enfoque, monocromática, análoga, triádica; vira tokens primitivos → semânticos |
+| [[wiki/concepts/harmonia-de-cores]] | Círculo cromático: monocromático, análogo, complementar, complementar dividido, triádico; princípios, não regras; RYB x HSL/OKLCH; esquema harmônico não garante WCAG |
+| [[wiki/concepts/regra-60-30-10]] | Proporção de área do design de interiores: 60 dominante, 30 secundária, 10 destaque; origem da base + enfoque; em UI, fundo / marca / CTA |
+| [[wiki/concepts/identidade-visual]] | Escolhas visuais que fazem a marca ser reconhecida; a paleta como identidade (McDonald's, Facebook, WhatsApp, Spotify, Rocketseat); ícones, ilustrações e fundo acompanham |
 
 ### Ambiente Vue — Node, npm e Scaffolding (2026-11-12)
 
@@ -3402,6 +3407,7 @@ date_updated: 2026-11-13
 - [[wiki/entities/apple]] — big tech usada como referência de UI; links destacados, link branco x texto cinza, botões que não encolhem no mobile
 - [[wiki/entities/sketch]] — ferramenta de design para Mac; site como exemplo de CTAs ("See pricing", "tente de graça") e de botões consistentes
 - [[wiki/entities/nasser]] — instrutor do curso de UI Design do FrontPUSH (aulas 1 e 2, patterns, princípios do design); legendas o transcreviam como "Nácia"
+- [[wiki/entities/color-hunt]] — site de paletas gratuitas com hexadecimais; exercício de classificar paletas na aula de paleta de Násser
 - [[wiki/entities/frontpush]] — curso "sobre fazer sites" de Násser, com módulo de UI Design; landing page preta com azul só no CTA, paleta de três cores consistente
 - [[wiki/entities/unsplash]] — banco de imagens de uso livre (licença própria, sem atribuição obrigatória), favorito de Násser; plugin no Figma
 - [[wiki/entities/shutterstock]] — banco de imagens pago; Násser usa como referência de branding ("Letter B Logo")
