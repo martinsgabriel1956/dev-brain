@@ -3,8 +3,8 @@ type: concept
 title: "Tier de Empresas Tech"
 aliases: ["tier 1 2 3 empresas", "big tech tier", "classificacao empresas tech"]
 date_created: 2026-04-29
-date_updated: 2026-04-29
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [carreira, mercado, tier, big-tech, startups, compensacao]
 skill: tech-mentor-leadership
 status: stub
@@ -42,6 +42,11 @@ Empresas tech se agrupam em três tiers de compensação. Identificar o tier de 
 - [[modelo-trimodal-compensacao]] — o modelo que explica por que os tiers existem
 - [[equity-como-diferencial]] — equity distingue Tier 3 dos demais
 
+## Big Tech fora dos buscadores
+
+[[wiki/sources/introducao-mapeando-vagas]] acrescenta um efeito do tier na busca de vagas: Big Techs "muitas vezes" não postam no [[wiki/entities/linkedin]], então a busca precisa ir ao site de carreiras delas. Também separa a faixa salarial das Big Techs da de "empresas comuns".
+
 ## Key Sources
 
 - [[wiki/sources/trimodal-compensacao-tech]]
+- [[wiki/sources/introducao-mapeando-vagas]] — Big Tech com faixa separada e vagas fora do LinkedIn

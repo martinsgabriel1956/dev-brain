@@ -3,8 +3,8 @@ type: concept
 title: "Networking de Carreira"
 aliases: ["networking", "mercado invisível de vagas", "mercado de indicações"]
 date_created: 2026-07-20
-date_updated: 2026-10-07
-source_count: 7
+date_updated: 2026-11-16
+source_count: 8
 tags: [carreira, networking, contratacao, senioridade]
 skill: tech-mentor-leadership
 status: stub
@@ -42,6 +42,10 @@ Ambientes que reúnem profissionais com o mesmo objetivo por um período prolong
 
 [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]]: depois de achar a vaga pelo ATS, pesquisar a empresa no LinkedIn, localizar o recruiter, conectar e mandar mensagem — sobretudo para empresas muito desejadas ([[wiki/concepts/busca-de-vagas-direto-no-ats]]).
 
+## Mensagem ao recrutador no funil
+
+[[wiki/sources/introducao-mapeando-vagas]] põe "talvez mandar mensagem para o recrutador" entre aplicar e a primeira entrevista, como um dos estados do [[wiki/concepts/acompanhamento-de-candidaturas|board de candidaturas]].
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — recruiter + mensagem após achar vaga no ATS
@@ -51,3 +55,4 @@ Ambientes que reúnem profissionais com o mesmo objetivo por um período prolong
 - [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — autofiltragem excessiva (distância, "encaixe perfeito") como erro recorrente de candidatos júnior no mercado visível
 - [[wiki/sources/duas-perguntas-linkedin-cursos-online-lei-de-sturgeon]] — dados de volume de contratação via LinkedIn (700+/ano) e custo da licença de recrutamento, mostrando que o mercado visível tem peso real mesmo em vagas sênior/liderança
 - [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] — projetos pessoais publicados no LinkedIn como forma de atrair usuários, dupla função de prova técnica e gatilho de rede
+- [[wiki/sources/introducao-mapeando-vagas]] — mensagem ao recrutador como etapa do funil

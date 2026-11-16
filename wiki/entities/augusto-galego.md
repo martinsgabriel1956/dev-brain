@@ -3,8 +3,8 @@ type: entity
 title: "Augusto Galego"
 aliases: ["Augusto Galego", "augustogalego.com"]
 date_created: 2026-07-20
-date_updated: 2026-10-30
-source_count: 17
+date_updated: 2026-11-16
+source_count: 18
 tags: [pessoa, programador, youtuber, brasil, devops, system-design, carreira, agentes-ia, code-review]
 skill: tech-mentor-infra
 status: stub
@@ -60,6 +60,10 @@ Continuando a linha de conteúdo introdutório de segurança iniciada com hash/s
 
 Em [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]], reage ao artigo de [[wiki/entities/daniel-miessler]] e recomenda ler e escrever como [[wiki/concepts/tarefa-de-academia-vs-trabalho|tarefas de academia]]. Autoria inferida por HostGator (VPS, n8n, OpenClaw), catálogo de cursos (LeetCode, roadmap de emprego, System Design "o mais extenso") e viagem ao Reino Unido (Glasgow/Sheffield); o nome não aparece.
 
+## Curso de carreira: módulo Mapeando Vagas (autoria inferida)
+
+[[wiki/sources/introducao-mapeando-vagas]] é a abertura de um módulo de curso sobre onde achar vagas (buscadores, outsourcing, Big Techs), mapear requisitos, acompanhar candidaturas e faixas salariais por país e tipo de empresa, com aula bônus de um "professor Matheus". Autoria inferida pela pasta de transcrições "galego" e pelo catálogo de cursos de carreira; o nome não é dito.
+
 ## Key Sources
 
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]]
@@ -90,3 +94,4 @@ Vídeo de carreira sobre sete erros comuns de devs brasileiros ao aplicar para e
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — no robots in the gym; vibe ler; ler e escrever (autoria inferida)
+- [[wiki/sources/introducao-mapeando-vagas]] — abertura do módulo Mapeando Vagas (autoria inferida pela pasta)

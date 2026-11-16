@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-11-15
-source_count: 27
+date_updated: 2026-11-16
+source_count: 28
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -76,6 +76,10 @@ Na abertura do módulo de tipografia, o Google aparece como interface que é "a 
 
 O catálogo [[wiki/entities/google-fonts]] aparece em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] como fonte gratuita de fontes, espelhada no Figma.
 
+## Salário de júnior em São Paulo
+
+Em [[wiki/sources/introducao-mapeando-vagas]], o que o Google paga a um desenvolvedor júnior em São Paulo é o exemplo de faixa "totalmente separada" da média salarial local ([[wiki/concepts/modelo-trimodal-compensacao]]).
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — Google Cloud entre os hyperscalers do imaginário de nuvem
@@ -110,3 +114,4 @@ Lançou o [[wiki/entities/gemini-embedding-2]] (embedding multimodal); crítica 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]] — home como macro espaço (foco); resultados de busca agrupados só com espaçamento e recuo, sem bordas de card
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-mascotes-consistencia-svg]] — Material Design recomendado para diretrizes de imagem; ver [[wiki/entities/material-design]]
 - [[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]] — engrenagem e nove pontinhos como pattern aprendido
+- [[wiki/sources/introducao-mapeando-vagas]] — salário de júnior do Google em SP acima da média local

@@ -3,8 +3,8 @@ type: concept
 title: "Vaga Internacional sem Mística"
 aliases: ["empresa gringa não é especial", "perder o medo da vaga fora"]
 date_created: 2026-10-07
-date_updated: 2026-10-07
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [carreira, vaga-internacional, mercado-global]
 skill: tech-mentor-leadership
 status: draft
@@ -21,6 +21,11 @@ Tese de [[wiki/entities/augusto-galego]] (visão de uma pessoa, ~6 anos no Brasi
 - Resultado financeiro possível: [[wiki/concepts/dolarizacao-de-renda]].
 - Ressalva: n=1; o autor vende cursos de carreira (viés possível).
 
+## Onde achar a vaga
+
+Num curso de carreira atribuído ao mesmo autor, [[wiki/sources/introducao-mapeando-vagas]] organiza a busca em três frentes (buscadores, outsourcing como porta de entrada, site de carreiras das Big Techs) e promete tratar de diferentes países e faixas salariais.
+
 ## Key sources
 
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]]
+- [[wiki/sources/introducao-mapeando-vagas]] — módulo de busca de vagas: buscadores, outsourcing, Big Techs
