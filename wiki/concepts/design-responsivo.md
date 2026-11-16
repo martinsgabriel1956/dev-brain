@@ -46,6 +46,10 @@ Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]: 12 col
 
 Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]]: "aquele design que é horizontal e a gente sempre projeta ele para ele quebrar na vertical". Duas caixas lado a lado no desktop viram coluna no tablet; no mobile o formulário da home vira "um botãozinho", porque um formulário grande "pode atrapalhar o fluir". Exemplos: [[wiki/entities/dropbox]], [[wiki/entities/dribbble]]. Responsivo e adaptativo são "dois conceitos diferentes"; ver [[wiki/concepts/design-adaptativo]] e [[wiki/concepts/breakpoint]].
 
+## Desenhar já pensando nos breakpoints
+
+Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]], a escolha do grid é de responsividade. Ele usa grid centralizado com max-width (1260) em vez de esticado, porque o esticado pede "uma série de breakpoints maior". E desenha em blocos: "eu já vou desenhando a minha interface interpretando como é que vai ser a caixinha, como é que vai ser a responsividade". Blocos iguais viram uma classe com flex-basis; pares viram flexbox dentro de flexbox. Ilustração deslocada para preencher a tela "é algo que você tem que se atentar depois que você voltar para o mobile".
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -60,3 +64,4 @@ Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-fl
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — fixo, fluido, adaptativo e responsivo; breakpoint de 960; testar em vários aparelhos
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — 12/6/4 colunas; blocos horizontais que quebram na vertical; resolução x tamanho; teto 1440
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — empilhar no tablet, suprimir no mobile; responsivo x adaptativo
+- [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — Center (max-width) para reduzir breakpoints; blocos que já viram classe e flexbox

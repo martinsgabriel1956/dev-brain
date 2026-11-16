@@ -103,3 +103,7 @@ A prática prometida em [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-siste
 ## Ver também
 
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — a Grid System Library calcula a coluna a partir de largura, colunas (12) e gutter (32); Bootstrap como origem de "alguns valores"
+
+## Ver também
+
+- [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]]: a aula prática de grids; o mesmo grid com gutter de 36 (1260) como principal, tabela de max-widths, pensar em blocos e equilíbrio do menu

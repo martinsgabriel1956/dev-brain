@@ -102,6 +102,10 @@ Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]: Prefer
 
 Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]]: kit gratuito de grids de iOS, Android e Bootstrap com versão para Figma (doação opcional de US$ 4).
 
+## Layout Grid
+
+Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]]: seleciona o frame e adiciona em Layout Grid (o padrão é um grid de 8 pontos). No módulo colunas, 12, tipo Center, width 72 e gutter 36. O olhinho esconde o grid quando "fica muito poluído". Distribuir horizontal spacing iguala o espaço entre elementos agrupados. `[external]` Tipos de column grid: Stretch, Left, Center, Right (https://help.figma.com/hc/en-us/articles/360040450513).
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -134,3 +138,4 @@ Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-fl
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — wireframe por "clicar e arrastar"
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — Big Nudge de 8; menu de tamanhos de texto
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — Grid System Library para Figma
+- [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — Layout Grid de 12 colunas tipo Center, olhinho do grid, distribuir horizontal spacing

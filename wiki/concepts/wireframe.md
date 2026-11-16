@@ -81,6 +81,10 @@ Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]], o grid
 
 Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] o autor convida: "venham aqui nos meus wireframes, vejam se tem alguma coisa errada, pergunta para mim".
 
+## Wireframes no grid
+
+Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]], os wireframes do curso (features, menu) estão todos no grid de 12 colunas de 72. Basta clicar no olhinho do grid para conferir. O bloco de features ocupa seis colunas, com título, parágrafo e lista alinhados à esquerda. Ele admite "alguns wireframes que eu pequei em determinado alinhamento" e corrige ao vivo uma ilustração torta. O exercício é abrir os wireframes do arquivo e conferir o alinhamento.
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
@@ -98,3 +102,4 @@ Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-fl
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — wireframe com conteúdo nas seis colunas centrais
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — grids para alinhar wireframes de baixa e média fidelidade
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — convite para revisar os wireframes do curso
+- [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — wireframes de features e de menu conferidos no grid; exercício de verificar o alinhamento

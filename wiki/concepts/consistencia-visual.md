@@ -147,3 +147,4 @@ Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]: "sempr
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — estrutura repetida nas seções da Apple
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — grid como alinhamento e "consistência de distância"
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — valores sempre da regra dos oito pontos; nunca 53 ou 55
+- [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — blocos do mesmo tamanho como a mesma classe; textos sempre alinhados a uma coluna

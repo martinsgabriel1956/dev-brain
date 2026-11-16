@@ -143,3 +143,4 @@ Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-fl
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — 12 colunas (7–8 + 4–5; 4 + 8 no design); quebra no breakpoint; site responsivo
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — blocos horizontais do site que quebram na vertical (design fluido)
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — Notion com os links de grids
+- [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — wireframes de features e de menu do curso, todos no grid de 12 colunas
