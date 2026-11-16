@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-11-13
-source_count: 23
+date_updated: 2026-11-14
+source_count: 24
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -60,6 +60,10 @@ Engrenagem para configurar e "nove pontinhos" para os apps do Google: exemplo de
 
 Na visão geral dos elementos de Násser, os resultados do Google mostram espaço que agrupa e separa e linha que reforça a divisão ([[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]]).
 
+## Google Maps: cor como informação
+
+Via vermelha ou laranja no Google Maps (ou no Waze) se lê como bloqueio ou engarrafamento: exemplo de [[wiki/concepts/cor-semantica]] na abertura do módulo de cores ([[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]]).
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — Google Cloud entre os hyperscalers do imaginário de nuvem
@@ -80,6 +84,7 @@ Na visão geral dos elementos de Násser, os resultados do Google mostram espaç
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — resultados de busca como exemplo de espaço e linhas
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — resultados separados pelo espaço maior entre eles
 - [[wiki/sources/imagens-e-ilustracoes-introducao-svg-bancos-texto-branco-resolucoes-formatos]] — buscar "pessoas conversando" no Google como exemplo de foto genérica
+- [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — Google Maps: vermelho/laranja = trânsito
 
 ## Adição (2026-10-14)
 

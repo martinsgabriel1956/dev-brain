@@ -4,7 +4,7 @@ title: "Contraste"
 aliases: ["contraste de cor", "color contrast", "contraste em UI", "isolation effect", "efeito Von Restorff"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 20
+source_count: 21
 tags: [ui, ui-design, cor, acessibilidade, hierarquia-visual, cta]
 skill: ux-ui-mentor
 status: stub
@@ -90,6 +90,10 @@ No processo de wireframes, o "contraste bem colocado entre as cores" é decisão
 
 Na prática de elementos de composição, os planetinhas usam "a cor de contraste do branding" (laranja no slide "W7"), com sombra da mesma cor a 30%; o resto (órbitas pontilhadas, linhas) fica em cinza baixo sobre preto ([[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]]). `[skill: ux-ui-mentor]` sombra colorida no escuro lê como brilho, não como elevação.
 
+## Contraste como objetivo da cor
+
+Na abertura do módulo de [[wiki/concepts/teoria-das-cores]], contraste é o primeiro dos seis objetivos da cor. Para mandar algo para segundo plano, "eu diminuo o contraste dela com relação ao background"; para acentuar, aumento. Sites de notícia e a [[wiki/entities/apple]] (mesmo peso tipográfico, branco x cinza) são os exemplos ([[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]]). `[skill: ux-ui-mentor]` O texto secundário de baixo contraste ainda precisa de 4.5:1. Pares complementares dão contraste forte ([[wiki/concepts/harmonia-de-cores]]); a [[wiki/concepts/regra-60-30-10]] reserva o acento para o CTA.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — contraste para acessibilidade e para o CTA
@@ -114,3 +118,4 @@ Na prática de elementos de composição, os planetinhas usam "a cor de contrast
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — contraste e tamanho como pontos de atenção na leitura em Z
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — contraste é decisão do protótipo final, não do wireframe cinza
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — planetinhas na cor de contraste com sombra da própria cor
+- [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — contraste como objetivo da cor; segundo plano com contraste menor; 60-30-10

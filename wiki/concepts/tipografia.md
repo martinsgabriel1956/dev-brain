@@ -4,7 +4,7 @@ title: "Tipografia"
 aliases: ["fonte", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 9
+source_count: 10
 tags: [ui, ui-design, tipografia, fonte, serifa, elementos-da-interface]
 skill: ux-ui-mentor
 status: stub
@@ -70,6 +70,10 @@ Os headings viram text styles (`Heads / H1`, `H2`), com grupos desktop e mobile.
 
 Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]: o menu de tamanhos do Figma (14, 18, 24, 36, 48) "é muito próximo da regra dos oito pontos". 36 fica fora (32 + 8 = 40), mas é válido quando nem 32 nem 40 servem. Ver [[wiki/concepts/grid-de-8-pontos]].
 
+## Tipografia e cor em sites de notícia
+
+Em plataformas de notícia, "basicamente é texto" e "a tipografia é muito, muito trabalhada": títulos maiores com mais contraste, informação secundária com contraste menor. Com o mesmo peso tipográfico, só a cor separa os níveis ([[wiki/concepts/hierarquia-visual]]; [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]]).
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -84,3 +88,4 @@ Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]: o menu
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — h1 a span, desktop x mobile; 48/36/24 no Nubank
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — text styles Heads/H1, H2; Sora 48/36/24, line-height 110; "medium" = 600 (tensão)
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — tamanhos 14/18/24/36/48 perto da regra dos oito; 36 entre 32 e 40
+- [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — sites de notícia: tipografia trabalhada, contraste de cor por nível

@@ -3,7 +3,7 @@ type: source
 title: "Elementos da interface: introdução (UI Design)"
 aliases: ["aula elementos da interface", "introdução elementos da interface", "design de interface melhores práticas"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
+date_updated: 2026-11-14
 source_count: 0
 tags: [ui, ui-design, design, elementos-da-interface, feedback, contraste, consistencia, hierarquia-visual, simplicidade, padroes-de-interface, acessibilidade, cultura]
 skill: ux-ui-mentor
@@ -113,3 +113,4 @@ Abertura do módulo "elementos da interface" do curso de UI Design do [[wiki/ent
 ## Ver também
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — a aula de botões e links anunciada aqui (edição "W7")
+- [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — a abertura do módulo de cores anunciado aqui

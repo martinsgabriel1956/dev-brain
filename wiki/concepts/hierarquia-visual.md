@@ -4,7 +4,7 @@ title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
 date_updated: 2026-11-15
-source_count: 19
+source_count: 20
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -129,6 +129,10 @@ No site da [[wiki/entities/apple]], cada seção tem "uma headline maior, uma he
 
 "Não é para poder tirar a atenção do seu usuário, é simplesmente para compor um cenário": o fundo de órbitas e cometas fica atrás do texto, sem disputar o ponto focal ([[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]]).
 
+## Cor como peso de hierarquia
+
+Na [[wiki/entities/apple]], dois textos com "exatamente o mesmo peso tipográfico", um branco e outro cinza: "a cor funcionando como um peso de hierarquia visual". Sites de notícia fazem o mesmo: títulos com mais contraste, informação secundária com menos ([[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]]). A [[wiki/concepts/regra-60-30-10]] é a versão em proporção da cor de destaque escassa.
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -155,3 +159,4 @@ No site da [[wiki/entities/apple]], cada seção tem "uma headline maior, uma he
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — hero como primeira informação da página
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — seções da Apple com headline, subtítulo e link
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — fundo de órbitas e cometas não disputa o ponto focal
+- [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — cor como peso de hierarquia (Apple, sites de notícia)

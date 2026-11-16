@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 32
+source_count: 33
 tags: [pessoa, instrutor, ui-design, design, curso]
 skill: ux-ui-mentor
 status: stub
@@ -47,6 +47,7 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - Bom design se confirma no outro, não em quem desenhou: útil, fácil aprendizado, memorável, eficaz, desejável, prazeroso; a interface é ruim no começo e melhora com teste e treino ([[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]]).
 - Usabilidade é alcançar o objetivo "facilmente"; se ninguém nota, ela existe; o caminho é seguir padrões e "não reinventar a roda" ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]).
 - Grid é o esqueleto do design e o caminho para a responsividade; Bootstrap e oito pontos se complementam; responsivo = fluido + adaptativo, e é preciso testar em vários aparelhos ([[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]]).
+- Cor tem caráter subjetivo, mas a natureza é o guia (céu = gradiente suave; pássaro e arara = complementares); cor serve a contraste, hierarquia, informação, estilo, categorização e identidade ([[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]]).
 
 ## Key Sources
 
@@ -97,3 +98,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — aula prática 2 de grids (autoria inferida): links do Notion (Grid System Library, Bootstrap, Material Design, Flexbox Grid, responsivo x adaptativo, exemplos Dropbox/Dribbble)
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — primeira aula prática de grids (FrontPUSH; autoria inferida): 12 colunas tipo Center, 72 + 36 = 1260, pensar em blocos, grid como guia, equilíbrio do menu
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — elementos de composição na prática (edição "W7"; autoria inferida): stroke, pontilhado 2, 10, planetas, cometas, PlayStation
+- [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — abertura do módulo de teoria das cores (edição "W7"; autoria inferida): natureza, objetivos, espectro, 60-30-10

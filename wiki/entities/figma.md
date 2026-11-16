@@ -4,7 +4,7 @@ title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
 date_updated: 2026-11-15
-source_count: 25
+source_count: 26
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -110,6 +110,10 @@ Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-m
 
 Em [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]]: stroke 3 sem preenchimento, dash "2, 10" com cap round em elipses, Shift para crescer de forma proporcional, conta-gotas para a cor da sombra, drop shadow com spread negativo, gradiente linear a 45° numa linha para cometas.
 
+## Cores em código
+
+A abertura do módulo de cores promete uma aula prática para representar cores em código no Figma (HSB, hexadecimal, RGB x CMYK), base para compor paleta e variar cores ([[wiki/concepts/modelos-de-cor]]; [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]]).
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -144,3 +148,4 @@ Em [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-comet
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — Grid System Library para Figma
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — Layout Grid de 12 colunas tipo Center, olhinho do grid, distribuir horizontal spacing
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — stroke, dash 2, 10, cap round, conta-gotas, sombra, gradiente
+- [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — aula prática de códigos de cor prometida

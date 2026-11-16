@@ -4,7 +4,7 @@ title: "UI Design"
 aliases: ["user interface design", "design de interface", "UI", "UI designer"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 8
+source_count: 9
 tags: [ui, ui-design, design, frontend, tipografia, cor, hierarquia-visual]
 skill: ux-ui-mentor
 status: draft
@@ -68,6 +68,10 @@ O módulo de interfaces web aplica os elementos e princípios num processo: pesq
 
 Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]], a interface começa em papel e caneta e passa ao [[wiki/concepts/wireframe]] antes do design completo, para que as correções aconteçam na prototipagem e não "direto no software".
 
+## Teoria das cores
+
+O curso de [[wiki/entities/nasser|Násser]] dedica um módulo inteiro à cor: natureza como guia, objetivos (contraste, hierarquia, informação, estilo, categorização, identidade), cor como fenômeno físico e representação em código. Ver [[wiki/concepts/teoria-das-cores]] ([[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]]).
+
 ## Key Sources
 
 - [[wiki/sources/o-que-e-ux-ui-design]]
@@ -79,3 +83,4 @@ Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]],
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]] — formas geométricas e orgânicas, predominância e harmonia
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — workflow pesquisa → wireframes → protótipo final
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — wireframe e papel e caneta antes do design completo
+- [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — módulo de teoria das cores

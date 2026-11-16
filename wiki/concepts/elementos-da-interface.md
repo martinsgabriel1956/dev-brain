@@ -75,6 +75,10 @@ A aula teórica de botões e links ([[wiki/sources/botoes-e-links-guiar-jornada-
 
 A edição "W7" trata elementos de composição numa aula prática no Figma: stroke, pontilhado, planetas com sombra e cometas, com as funções apoio, refino, background, branding e consistência ([[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]]).
 
+## Cores em módulo próprio
+
+Cor é um dos elementos, mas "por ele ser tão importante" ganhou módulo à parte, como a abertura do módulo de elementos anunciava. A abertura do módulo de [[wiki/concepts/teoria-das-cores]] está em [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]].
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]]
@@ -88,3 +92,4 @@ A edição "W7" trata elementos de composição numa aula prática no Figma: str
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — formas, versão "W7": exemplos de sites reais
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — aula de botões e links (edição "W7")
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — elementos de composição (edição "W7"), aula prática
+- [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — abertura do módulo de teoria das cores (edição "W7")
