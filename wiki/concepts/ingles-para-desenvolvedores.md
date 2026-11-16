@@ -3,8 +3,8 @@ type: concept
 title: "Inglês para Desenvolvedores"
 aliases: ["inglês como pré-requisito de carreira", "sem inglês não tem mercado global"]
 date_created: 2026-09-14
-date_updated: 2026-10-07
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [carreira, ingles, mercado-global, remoto-internacional]
 skill: tech-mentor-leadership
 status: stub
@@ -37,3 +37,9 @@ O inglês é o habilitador direto da forma mais citada de [[wiki/concepts/dolari
 
 - [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]]
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — contrapeso: inglês perfeito não é exigido, mas precisa ser OK para conversar sobre software ([[wiki/concepts/ingles-tecnico-suficiente-vs-perfeito]])
+
+## Língua local vs. inglês por país (adição 2026-11-16)
+
+[[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]]: o inglês basta nos EUA, Austrália, Canadá, Irlanda, Reino Unido, Holanda, Dinamarca, Berlim e em parte da Espanha. França e Itália em geral exigem a língua local. Quem fala francês ou italiano ganha vantagem justamente nesses mercados. Ver [[wiki/concepts/criterios-para-escolher-pais-de-vaga]].
+
+- [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] — mapa de onde só inglês basta

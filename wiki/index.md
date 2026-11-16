@@ -134,6 +134,7 @@ date_updated: 2026-11-16
 | [[wiki/sources/desafio-sistema-notificacao-system-design-reprova-senior-ana]] | Ana: sistema de notificação reprova seniores por hábito — [[wiki/concepts/api-e-consequencia-nao-ponto-de-partida|API primeiro]], ignorar custo, sem entidades; resposta: [[wiki/concepts/filas-separadas-por-prioridade|3 tópicos por prioridade]], [[wiki/concepts/channel-router-custo-fallback|channel router]], [[wiki/concepts/confirmacao-de-entrega-nao-confiavel|reconciliação]] |
 | [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] | [[wiki/entities/augusto-galego|Augusto Galego]]: sete erros de devs brasileiros ao aplicar para a gringa — [[wiki/concepts/ingles-tecnico-suficiente-vs-perfeito|inglês técnico suficiente]], [[wiki/concepts/storytelling-em-entrevista|storytelling]], LeetCode/System Design (building blocks antes de praticar), [[wiki/concepts/explicar-o-porque-das-decisoes|explicar o porquê]], [[wiki/concepts/pensar-em-voz-alta-na-entrevista|pensar em voz alta]] e [[wiki/concepts/pesquisar-a-empresa-antes-da-entrevista|pesquisar a empresa]] (15 min); tese: [[wiki/concepts/vaga-internacional-sem-mistica|sem mística]], processo parecido com o do Brasil |
 | [[wiki/sources/introducao-mapeando-vagas]] | [[wiki/entities/augusto-galego|Augusto Galego]] (inferido): abertura do módulo Mapeando Vagas — buscadores, outsourcing e Big Techs; requisitos, board de candidaturas e faixas salariais |
+| [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] | [[wiki/entities/augusto-galego|Augusto Galego]] (módulo Mapeando Vagas): [[wiki/concepts/criterios-para-escolher-pais-de-vaga|país por salário, língua e facilidade]]; EUA primeiro para remoto do Brasil; [[wiki/concepts/remoto-com-restricao-de-residencia|"Remote" ≠ global]]; Irlanda/Londres com [[wiki/concepts/visa-sponsorship|visa sponsor]]; Portugal e Bálticos como [[wiki/concepts/porta-de-entrada-na-uniao-europeia|porta de entrada na UE]]; [[wiki/concepts/arbitragem-geografica-de-salario|arbitragem geográfica]] |
 | [[wiki/sources/engenharia-de-contexto-write-select-compress-isolate-felipe-fagundes]] | [[wiki/entities/felipe-fagundes|Felipe Fagundes]]: agente SRE de 8.339 para 2.426 tokens (~−71%) com [[wiki/concepts/write-select-compress-isolate|Write, Select, Compress, Isolate]]; [[wiki/concepts/inspecao-de-contexto-antes-de-otimizar|medir antes]] e reduzir a [[wiki/concepts/superficie-probabilistica-do-agente|superfície probabilística]] |
 | [[wiki/sources/como-trabalhar-com-projeto-caotico-sem-surtar-andre-casciotti]] | [[wiki/entities/andre-casciotti|André Casciotti]]: estresse como [[wiki/concepts/risco-ocupacional-do-dev|risco ocupacional]] (criar software é fácil, manter cai nos devs) e três mantras — [[wiki/concepts/foco-no-que-esta-ao-seu-alcance|foco no que está ao seu alcance]] (+ [[wiki/concepts/reclamar-menos-e-fazer-mais|reclamar menos]]), [[wiki/concepts/melhor-possivel-com-o-tempo-disponivel|melhor possível no tempo que tem]] (+ [[wiki/concepts/priorizacao-pelo-negocio|priorização pelo negócio]]) e [[wiki/concepts/complexidade-e-organizacao|complexidade e organização]] ([[wiki/concepts/poder-da-barra-de-progresso-e-do-check|barra de progresso e check]]) |
 | [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]] | [[wiki/entities/ronald-hulk|Ronald Hulk]]: empresa não contratou engenheiro de IA (take-homes feitos com IA sem acabamento; ninguém com [[wiki/concepts/conhecimento-vertical-do-problema|conhecimento vertical]]) e treinou o time interno; tese do [[wiki/concepts/fim-da-era-do-parecer|fim da era do parecer]], [[wiki/concepts/ciclo-construir-e-aprender-em-ia|ciclo construir-e-aprender]] e [[wiki/concepts/competencias-do-engenheiro-de-ia|seis competências]] |
@@ -1460,6 +1461,16 @@ date_updated: 2026-11-16
 | [[wiki/concepts/pensar-em-voz-alta-na-entrevista]] | Perguntar e narrar; entrevistador é colaborativo |
 | [[wiki/concepts/pesquisar-a-empresa-antes-da-entrevista]] | 15 min com IA: resumo e perguntas ao recrutador |
 | [[wiki/concepts/vaga-internacional-sem-mistica]] | Processo parecido com o do Brasil; gate é o idioma |
+
+### Vagas Internacionais — Escolha de País (2026-11-16)
+
+| Página | Hook |
+|---|---|
+| [[wiki/concepts/criterios-para-escolher-pais-de-vaga]] | Salário médio, língua e facilidade; filtrar por país em vez de buscar "qualquer lugar" |
+| [[wiki/concepts/remoto-com-restricao-de-residencia]] | "Remote" costuma exigir residência; "contractor"/"LATAM"/"Global" abrem para quem mora fora |
+| [[wiki/concepts/arbitragem-geografica-de-salario]] | Contrato "remoto UE" alemão morando em Portugal; remoto em dólar do Brasil |
+| [[wiki/concepts/porta-de-entrada-na-uniao-europeia]] | Outsourcing em Portugal e job boards bálticos para obter residência legal na UE |
+| [[wiki/concepts/visa-sponsorship]] | EUA por sorteio (ou O-1); Big Techs em Dublin/Londres, Suécia e Portugal patrocinam |
 
 ### Saúde Mental e Estresse do Dev (2026-10-07)
 

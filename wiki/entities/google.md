@@ -123,3 +123,9 @@ Lançou o [[wiki/entities/gemini-embedding-2]] (embedding multimodal); crítica 
 - [[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]] — engrenagem e nove pontinhos como pattern aprendido
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — tags semânticas como ajuda ao buscador
 - [[wiki/sources/introducao-mapeando-vagas]] — salário de júnior do Google em SP acima da média local
+
+## Big Tech em Dublin e Londres
+
+Em [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]], o Google aparece entre as Big Techs que contratam presencialmente em Dublin, com visa sponsor e salários ≥ 100 mil €/ano, e em Londres ([[wiki/concepts/visa-sponsorship]]).
+
+- [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] — contratação em Dublin/Londres como rota de imigração

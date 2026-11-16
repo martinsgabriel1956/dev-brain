@@ -48,3 +48,9 @@ Recomendada a partir de ~R$ 25.000/mês em [[wiki/sources/como-eu-investiria-com
 - [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] — inglês como pré-requisito de acesso ao mercado global, anterior à escolha de stack
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — vaga fora é acessível: processo semelhante ao do Brasil, gate é o idioma ([[wiki/concepts/vaga-internacional-sem-mistica]])
 - [[wiki/sources/introducao-mapeando-vagas]] — outsourcing como porta de entrada para a gringa
+
+## Dólar vs. euro e o caminho remoto (adição 2026-11-16)
+
+[[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]]: as vagas internacionais pagam sobretudo em dólar (quase sempre EUA) ou euro. Para quem quer dolarizar morando no Brasil, remoto para os EUA "converte muito melhor" do que se mudar para lá. Vagas globais na faixa de US$ 4.200–6.000/mês são "um range normal", mas muito concorridas. É a versão Brasil da [[wiki/concepts/arbitragem-geografica-de-salario]].
+
+- [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] — EUA como primeiro alvo para renda em dólar sem emigrar

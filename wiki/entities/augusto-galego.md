@@ -95,3 +95,9 @@ Vídeo de carreira sobre sete erros comuns de devs brasileiros ao aplicar para e
 
 - [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — no robots in the gym; vibe ler; ler e escrever (autoria inferida)
 - [[wiki/sources/introducao-mapeando-vagas]] — abertura do módulo Mapeando Vagas (autoria inferida pela pasta)
+
+## Aula "Quais países podem fazer sentido?" (módulo Mapeando Vagas)
+
+Aula de um curso de busca de vagas. Avalia países por salário, língua e facilidade de contratação ([[wiki/concepts/criterios-para-escolher-pais-de-vaga]]) e coloca os EUA em primeiro lugar para quem fica no Brasil. Relatos pessoais: morava na Alemanha na gravação; antes trabalhou para uma empresa espanhola e depois para uma de Berlim morando na Itália ([[wiki/concepts/arbitragem-geografica-de-salario]]); já trabalhou para uma empresa australiana que pagava em USD; participou de processos para os Emirados (via outsourcing) e Bangkok. Autoria inferida pela pasta de origem "galego" e pela coerência com relatos anteriores; o nome não é dito.
+
+- [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] — critérios por país, "remote" com restrição de residência, visa sponsorship, Portugal/Bálticos como porta de entrada (autoria inferida)

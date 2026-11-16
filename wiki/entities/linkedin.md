@@ -39,3 +39,9 @@ Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-ct
 
 - [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — Origem do post de Balta sobre prompts e programadores.
 - [[wiki/sources/introducao-mapeando-vagas]] — buscador; Big Techs muitas vezes fora dele
+
+## Busca por país e leitura de "Remote"
+
+Em [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]], o LinkedIn aparece como ferramenta para filtrar vagas **por país** (Luxemburgo, Holanda, Austrália) com o filtro Remote. A ressalva é que "Remote" pode significar remoto dentro de um país ou bloco: é preciso ler a descrição ([[wiki/concepts/remoto-com-restricao-de-residencia]]). Complementa a crítica de [[wiki/concepts/busca-de-vagas-direto-no-ats]] em vez de contradizê-la.
+
+- [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] — filtro por país e por Remote; "Remote US" + "Not eligible for visa sponsorship"

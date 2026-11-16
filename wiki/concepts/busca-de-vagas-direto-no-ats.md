@@ -31,3 +31,9 @@ Estratégia mais ampla: [[wiki/concepts/cacar-a-empresa-nao-a-vaga]].
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]]
 - [[wiki/sources/introducao-mapeando-vagas]] — Big Techs no próprio site; três categorias de vaga
+
+## Complemento: busca por país (adição 2026-11-16)
+
+[[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] propõe outra alavanca contra a concorrência: em vez de sair do LinkedIn, filtrar países pouco procurados (Luxemburgo) e usar job boards nacionais de imigração (Work in Estonia, Work in Lithuania). Confirma que "Remote" costuma ser restrito ([[wiki/concepts/remoto-com-restricao-de-residencia]]) e acrescenta buscar o termo "contractor". As duas estratégias se somam.
+
+- [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]]

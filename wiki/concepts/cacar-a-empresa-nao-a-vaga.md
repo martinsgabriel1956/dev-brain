@@ -29,3 +29,9 @@ Inversão de método proposta em [[wiki/sources/novos-cargos-ia-e-hunting-de-vag
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]]
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — depois de escolher a empresa, pesquisá-la 15 min antes da entrevista ([[wiki/concepts/pesquisar-a-empresa-antes-da-entrevista]])
 - [[wiki/sources/introducao-mapeando-vagas]] — vagas de Big Tech direto no site; board de candidaturas
+
+## Por geografia (adição 2026-11-16)
+
+[[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] aplica a mesma lógica a países: em vez de "qualquer vaga em qualquer lugar", escolher países e procurar neles empresas grandes que fazem visa sponsor (ex.: Booking na Holanda). Ver [[wiki/concepts/criterios-para-escolher-pais-de-vaga]].
+
+- [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] — filtrar por país e buscar a empresa grande que patrocina visto

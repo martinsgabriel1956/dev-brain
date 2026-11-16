@@ -29,3 +29,9 @@ Num curso de carreira atribuído ao mesmo autor, [[wiki/sources/introducao-mapea
 
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]]
 - [[wiki/sources/introducao-mapeando-vagas]] — módulo de busca de vagas: buscadores, outsourcing, Big Techs
+
+## Onde procurar (adição 2026-11-16)
+
+Desmistificado o processo, falta escolher o país. Em [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]], o mesmo autor dá o mapa: EUA para quem fica no Brasil, Irlanda/Londres/Holanda/Alemanha para imigrar, Portugal e Bálticos como porta de entrada. Ver [[wiki/concepts/criterios-para-escolher-pais-de-vaga]].
+
+- [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]]
