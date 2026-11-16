@@ -3,11 +3,11 @@ type: concept
 title: "Tipografia"
 aliases: ["fonte", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 7
+date_updated: 2026-11-15
+source_count: 8
 tags: [ui, ui-design, tipografia, fonte, serifa, elementos-da-interface]
 skill: ux-ui-mentor
-status: stub
+status: draft
 ---
 
 # Tipografia
@@ -50,6 +50,16 @@ Na versão "W7" da aula de formas ([[wiki/sources/formas-geometricas-organicas-e
 
 Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]], "a tipografia do Madero é com serifa" e o restante do site usa "uma tipografia um pouco mais limpa", sem serifa. O site de arquitetura usa letras sem serifa "buscando o minimalismo", com mais espaçamento entre letras no título. Na aula de formas "W7" o mesmo site de arquitetura aparecia com serifa: ver Tensões da fonte.
 
+## Panorama do módulo (aula de abertura "W7")
+
+A aula de abertura do módulo ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]) define tipografia como "a maneira correta e melhor possível da gente dispor o texto para o usuário"; o slide traz a etimologia (grego *typos*, "forma", e *graphein*, "escrita"). O roteiro:
+
+- **Variáveis tipográficas:** [[wiki/concepts/escala-tipografica|escala]], [[wiki/concepts/altura-de-linha|altura de linha]] e [[wiki/concepts/largura-de-linha|largura de texto]]; alinhamento (esquerda ou centro na web, justificado raro), [[wiki/concepts/kerning-e-tracking|tracking e kerning]]; negrito, itálico, versalete e maiúscula; cores; identidade.
+- **[[wiki/concepts/classificacao-tipografica|Classificações]]:** serifadas, sem serifas, serifas grossas, script, blackletter, display.
+- **Tipografia no CSS:** [[wiki/entities/google-fonts]] e Adobe Fonts, `<link>` em vez de `@import`, `font-family`. Ver [[wiki/concepts/webfonts]].
+
+Ferramenta: a extensão WhatFont, que mostra família, peso, tamanho e altura de linha de qualquer texto. Slide: maiúsculas passam "imponente, grandioso, elegante, épico, sóbrio"; minúsculas, "amigável, próximo, simpático, descontraído, jovem". O módulo também alimenta identidade visual e guia de estilo.
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -59,3 +69,4 @@ Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — caixa de texto inclui o line-height ao medir distâncias
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — serifa x sem serifa; letra de mão do Coco Bambu; sem serifa do Madero
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — Madero serifado + corpo sem serifa; arquitetura sem serifa (tensão)
+- [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — abertura do módulo (edição "W7"): definição, variáveis, classificações, CSS

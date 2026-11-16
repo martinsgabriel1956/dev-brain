@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-11-13
+date_updated: 2026-11-15
 ---
 
 
@@ -26,6 +26,7 @@ date_updated: 2026-11-13
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] | Abertura do módulo de [[wiki/concepts/tipografia]] da edição "W7" (de [[wiki/entities/nasser\|Násser]]): "a maioria da web é texto"; WhatFont; escala, altura de linha, largura de texto, alinhamento, kerning/tracking; classificações; Google Fonts e `<link>` x `@import` |
 | [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] | Aula teórica de [[wiki/concepts/botoes-em-interfaces\|botões e links]] da edição "W7" (de [[wiki/entities/nasser\|Násser]]): botões guiam a jornada de A a B; exemplos [[wiki/entities/frontpush]] (grade do curso + inscreva-se), [[wiki/entities/apple]] (link branco, texto cinza), [[wiki/entities/sketch]] (See pricing, tente de graça), Framer e Adobe XD; [[wiki/concepts/consistencia-visual\|consistência]] (altura, padding, radius iguais); primário preenchido + secundário vazio; [[wiki/concepts/area-clicavel\|área clicável]] de 44 px (usa 56); label curto; cor de [[wiki/concepts/contraste]]; hover com sombra da cor do botão |
 | [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] | Aula teórica de [[wiki/concepts/formas-de-botoes|formas de botões]] da edição "W7" (de [[wiki/entities/nasser|Násser]]): retangular (seriedade; Madero e arquitetura como contraste), arredondado (o "coringa"), circular ([[wiki/entities/nubank]], [[wiki/entities/apple]]; aproxima), chanfrado (futurista; jogo do Homem-Aranha), diagonal (movimento; PES, FIFA) e hexagonal (gamificado, crianças); geométrico puro "fica muito longe da pessoa" |
 | [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] | Aula prática de [[wiki/concepts/icones-em-interfaces\|ícones]] da edição "W7" (de [[wiki/entities/nasser\|Násser]]): plugins da comunidade do [[wiki/entities/figma]] ([[wiki/entities/feather-icons]], Bootstrap Icons, Material Design Icons, Iconify); arquivo do Piqo ([[wiki/entities/iconly]]) com bold, bulk, light, broken, two-tone; ícones próprios para os módulos do site (laranja = UI Design) + Feather, as duas [[wiki/concepts/familia-de-icones\|famílias]]; ícone dentro de círculo ou card para equilibrar; [[wiki/concepts/constraints-no-figma\|constraints]] para não deformar |
@@ -972,6 +973,12 @@ date_updated: 2026-11-13
 | [[wiki/concepts/constraints-no-figma]] | Como a camada reage quando o frame muda de tamanho: top/left (padrão), left & right, center, scale; evita que o ícone deforme |
 | [[wiki/concepts/botoes-em-interfaces]] | Botões guiam a jornada; primário preenchido x secundário vazio; mesma altura, padding e radius, largura pelo texto; label curto; cor de contraste; hover |
 | [[wiki/concepts/formas-de-botoes]] | Seis formas de botão e o que comunicam: reto, arredondado, circular (pill), chanfrado, diagonal, hexagonal; botão como contraste à predominância; `clip-path` corta foco e sombra |
+| [[wiki/concepts/escala-tipografica]] | Escala = tamanho do texto; um tamanho por nível de hierarquia; escala modular (1.25 em UI), corpo nunca abaixo de 16 px |
+| [[wiki/concepts/altura-de-linha]] | Line-height: caixa maior que a fonte para conforto; título 1.1–1.2, corpo 1.5–1.6; WCAG 1.4.12 |
+| [[wiki/concepts/largura-de-linha]] | Quanto texto cabe na linha: aula conta palavras (9 na Globo), padrão é 45–75 caracteres (`65ch`); Wikipedia como contraexemplo de 2020 |
+| [[wiki/concepts/kerning-e-tracking]] | Aula chama de kerning o espaçamento entre letras (logo da Tesla); tecnicamente é tracking (`letter-spacing`); kerning é entre pares |
+| [[wiki/concepts/classificacao-tipografica]] | Serifada, sem serifa, serifa grossa (slab), script, blackletter, display, monospace; a categoria passa identidade |
+| [[wiki/concepts/webfonts]] | Fonte do design ao site: Google Fonts, pesos, `<link>` (mais rápido) em vez de `@import`, `font-family` e pilha de reserva |
 | [[wiki/concepts/area-clicavel]] | Área que responde ao toque; dedo é menos preciso que mouse; 44 px na aula, 44 pt Apple, 48 dp Material, 24 px WCAG 2.2 AA |
 | [[wiki/concepts/grid-de-icones]] | Formas-guia no frame do ícone (área útil 20×20 em 24, quadrado, círculo, X); Material keylines; travado no Figma para consistência |
 | [[wiki/concepts/centralizacao-optica]] | Centralizar pelo olho, não pelas coordenadas: triângulo do play e círculo ímpar parecem tortos |
@@ -3416,6 +3423,7 @@ date_updated: 2026-11-13
 - [[wiki/entities/eva-icons]] — biblioteca open source de ícones (Akveo) que Násser usa como referência de linha minimalista
 - [[wiki/entities/font-awesome]] — biblioteca de ícones (solid, regular, light, thin, duotone) que Násser usa; botões com e sem preenchimento como exemplo de hierarquia
 - [[wiki/entities/iconly]] — pacote de ícones com plugin no Figma e várias famílias (bold, bulk, light...); arredondado e preenchido no Creator Push
+- [[wiki/entities/google-fonts]] — catálogo aberto de fontes do Google; principal referência de Násser, filtros por classificação, `<link>` x `@import`
 - [[wiki/entities/creatorpush]] — projeto de Násser "mais baixo nível" que o FrontPUSH; mesma fonte, formas mais arredondadas
 - [[wiki/entities/spider-man-projeto-nasser]] — projeto de Násser com style guide fora da caixa: radius 3–4 px, elementos inclinados, transparência
 - [[wiki/entities/codesec]] — projeto de UI do FrontPUSH: landing page de hacker ético com efeito Matrix na hero

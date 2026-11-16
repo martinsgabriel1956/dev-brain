@@ -3,8 +3,8 @@ type: concept
 title: "Elementos da Interface"
 aliases: ["elementos de interface", "elementos da UI", "UI elements"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 10
+date_updated: 2026-11-15
+source_count: 11
 tags: [ui, ui-design, design, elementos-da-interface, tipografia, cor, icones, botoes]
 skill: ux-ui-mentor
 status: stub
@@ -71,6 +71,10 @@ Primeira aula de aprofundamento da edição "W7": organização, ênfase, consis
 
 A aula teórica de botões e links ([[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]) cumpre a ordem anunciada: botões guiam a jornada, com consistência, primário e secundário, [[wiki/concepts/area-clicavel|área clicável]], label objetivo, cor de contraste e hover. Ver [[wiki/concepts/botoes-em-interfaces]].
 
+## Tipografia em módulo próprio
+
+"Assim como a gente fez com cores", a tipografia é um elemento da interface que ganhou módulo próprio por ser importante e vasta. A abertura percorre variáveis, classificações e CSS ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]). Ver [[wiki/concepts/tipografia]].
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]]
@@ -83,3 +87,4 @@ A aula teórica de botões e links ([[wiki/sources/botoes-e-links-guiar-jornada-
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — aprofundamento de espaçamento e linhas
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — formas, versão "W7": exemplos de sites reais
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — aula de botões e links (edição "W7")
+- [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — abertura do módulo de tipografia (edição "W7")
