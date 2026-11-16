@@ -3,8 +3,8 @@ type: entity
 title: "LinkedIn"
 aliases: []
 date_created: 2026-08-24
-date_updated: 2026-11-15
-source_count: 5
+date_updated: 2026-11-16
+source_count: 7
 tags: [plataforma, contratacao, networking, carreira]
 skill: tech-mentor-leadership
 status: stub
@@ -34,3 +34,12 @@ Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-ct
 ## Key sources (adição 2026-10-08)
 
 - [[wiki/sources/por-que-programadores-tem-os-melhores-prompts-ia-amplia-distancia-balta]] — Origem do post de Balta sobre prompts e programadores.
+
+## O LinkedIn como "varejão" e a busca por posts
+
+[[wiki/entities/augusto-galego]] chama o LinkedIn de "varejão, que tem tudo", mas lembra que as Big Techs nem sempre publicam lá e que os posts promovidos atrapalham ([[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]). Duas técnicas: [[wiki/concepts/busca-booleana-de-vagas|busca booleana]] na barra principal com filtros nativos ([[wiki/sources/onde-procurar-vagas-guia-definitivo]]) e busca por **posts** das últimas 24 h para achar o recrutador que publicou a vaga.
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
+- [[wiki/sources/onde-procurar-vagas-guia-definitivo]]

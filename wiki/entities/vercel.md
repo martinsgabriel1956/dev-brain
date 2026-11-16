@@ -3,8 +3,8 @@ type: entity
 title: "Vercel"
 aliases: ["Vercel"]
 date_created: 2026-07-28
-date_updated: 2026-10-08
-source_count: 4
+date_updated: 2026-11-16
+source_count: 5
 tags: [tech-mentor-ai, harness, tool-call, deploy, serverless]
 skill: tech-mentor-ai
 status: stub
@@ -33,3 +33,11 @@ Plataforma de deploy amplamente usada por devs, especialmente com IA. Já entida
 - [[wiki/sources/database-branching-testes-neon-fernanda-kipper]] — integração automática Vercel↔Neon para banco de teste isolado por branch
 
 - [[wiki/sources/jev-typesafe-ai-system-one-model-decisoes-tipadas-codigo-fonte-tv]] — caso: comandos de segurança via [[wiki/entities/jev]], até 18x mais rápido (reportagem citada, não verificada)
+
+## Empregadora remota worldwide
+
+Em [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]], a Vercel aparece no repositório `remoteintech/remote-jobs` como "worldwide", com vagas remotas em vários países e híbridas em São Francisco; o autor supõe que, "sendo quase uma Big Tech", ela também faça relocação.
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]

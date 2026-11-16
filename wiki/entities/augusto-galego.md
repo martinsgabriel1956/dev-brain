@@ -3,8 +3,8 @@ type: entity
 title: "Augusto Galego"
 aliases: ["Augusto Galego", "augustogalego.com"]
 date_created: 2026-07-20
-date_updated: 2026-10-30
-source_count: 17
+date_updated: 2026-11-16
+source_count: 19
 tags: [pessoa, programador, youtuber, brasil, devops, system-design, carreira, agentes-ia, code-review]
 skill: tech-mentor-infra
 status: stub
@@ -90,3 +90,12 @@ Vídeo de carreira sobre sete erros comuns de devs brasileiros ao aplicar para e
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — no robots in the gym; vibe ler; ler e escrever (autoria inferida)
+
+## Workshop Roadmap pro seu próximo emprego: onde encontrar vagas
+
+Aula e PDF do workshop pago de carreira ([[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]], [[wiki/sources/onde-procurar-vagas-guia-definitivo]]). Organiza a busca em [[wiki/concepts/tres-canais-de-vaga-internacional|três canais]] e recomenda [[wiki/concepts/outsourcing-como-porta-de-entrada-internacional|outsourcing]] para o primeiro emprego fora, que foi o caminho dele. Diz estar morando na Alemanha na gravação (abril de 2025). Autoria inferida pela pasta da transcrição e pelo nome do workshop, que já constava no catálogo de cursos dele.
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]] — três canais, Total Compensation, outsourcing PJ (autoria inferida)
+- [[wiki/sources/onde-procurar-vagas-guia-definitivo]] — PDF com links e manual de busca booleana (autoria inferida)

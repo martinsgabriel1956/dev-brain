@@ -3,8 +3,8 @@ type: concept
 title: "Lógica Booleana"
 aliases: ["lógica binária", "portas lógicas", "boolean logic", "AND OR NOT"]
 date_created: 2026-06-26
-date_updated: 2026-11-13
-source_count: 4
+date_updated: 2026-11-16
+source_count: 5
 tags: [cs-fundamentals, binario, logica-booleana, hardware, circuitos]
 skill: cs-fundamentals
 status: draft
@@ -61,3 +61,11 @@ Cada uma dessas operações corresponde a uma **porta lógica** física — um c
 - [[wiki/sources/conceitos-que-regem-a-computacao-bits-turing-complexidade]] — AND, OR e XOR sobre bytes como base do processamento binário (ex: representar uma soma só com operações lógicas)
 - [[wiki/sources/como-transistores-formam-portas-logicas-celulas-padrao-cmos]] — implementação física exata (contagem de transistores e topologia série/paralelo) de inversor, NAND, AND, NOR, OR, XOR e XNOR
 - [[wiki/sources/imagens-e-ilustracoes-svg-no-figma-undraw-mockup-iphone-codigo]] — operações booleanas aplicadas a formas vetoriais no Figma (subtrair, interseção)
+
+## Aplicação: busca de vagas
+
+AND, OR, NOT, aspas e parênteses aplicados à busca de vagas no LinkedIn e no Google: [[wiki/concepts/busca-booleana-de-vagas]] ([[wiki/sources/onde-procurar-vagas-guia-definitivo]]).
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/onde-procurar-vagas-guia-definitivo]]

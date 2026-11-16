@@ -3,8 +3,8 @@ type: concept
 title: "Caçar a empresa, não a vaga"
 aliases: ["target company list","lista de empresas-alvo"]
 date_created: 2026-10-07
-date_updated: 2026-10-07
-source_count: 2
+date_updated: 2026-11-16
+source_count: 4
 tags: [carreira, busca-de-vagas, estrategia, mercado-internacional]
 skill: tech-mentor-leadership
 status: stub
@@ -24,3 +24,12 @@ Inversão de método proposta em [[wiki/sources/novos-cargos-ia-e-hunting-de-vag
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]]
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — depois de escolher a empresa, pesquisá-la 15 min antes da entrevista ([[wiki/concepts/pesquisar-a-empresa-antes-da-entrevista]])
+
+## Canal "direto no site da empresa"
+
+O primeiro dos [[wiki/concepts/tres-canais-de-vaga-internacional]] de [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]] é a mesma ideia: ir ao board de cada empresa-alvo. Fonte extra de listas: o repositório `remoteintech/remote-jobs` no GitHub, com ~300 empresas remote-friendly e a região em que cada uma contrata. O PDF [[wiki/sources/onde-procurar-vagas-guia-definitivo]] traz os links de 24 Big Techs.
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
+- [[wiki/sources/onde-procurar-vagas-guia-definitivo]]

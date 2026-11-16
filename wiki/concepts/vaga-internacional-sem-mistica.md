@@ -3,8 +3,8 @@ type: concept
 title: "Vaga Internacional sem Mística"
 aliases: ["empresa gringa não é especial", "perder o medo da vaga fora"]
 date_created: 2026-10-07
-date_updated: 2026-10-07
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [carreira, vaga-internacional, mercado-global]
 skill: tech-mentor-leadership
 status: draft
@@ -24,3 +24,11 @@ Tese de [[wiki/entities/augusto-galego]] (visão de uma pessoa, ~6 anos no Brasi
 ## Key sources
 
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]]
+
+## Do mesmo autor: por onde entrar
+
+Em [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]], [[wiki/entities/augusto-galego]] completa a tese com o "onde": [[wiki/concepts/tres-canais-de-vaga-internacional]], e o conselho de usar [[wiki/concepts/outsourcing-como-porta-de-entrada-internacional|outsourcing]] como primeiro degrau, porque aplicar direto para fora "é difícil".
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]

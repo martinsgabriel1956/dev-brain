@@ -3,8 +3,8 @@ type: concept
 title: "Networking de Carreira"
 aliases: ["networking", "mercado invisível de vagas", "mercado de indicações"]
 date_created: 2026-07-20
-date_updated: 2026-10-07
-source_count: 7
+date_updated: 2026-11-16
+source_count: 9
 tags: [carreira, networking, contratacao, senioridade]
 skill: tech-mentor-leadership
 status: stub
@@ -51,3 +51,12 @@ Ambientes que reúnem profissionais com o mesmo objetivo por um período prolong
 - [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — autofiltragem excessiva (distância, "encaixe perfeito") como erro recorrente de candidatos júnior no mercado visível
 - [[wiki/sources/duas-perguntas-linkedin-cursos-online-lei-de-sturgeon]] — dados de volume de contratação via LinkedIn (700+/ano) e custo da licença de recrutamento, mostrando que o mercado visível tem peso real mesmo em vagas sênior/liderança
 - [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] — projetos pessoais publicados no LinkedIn como forma de atrair usuários, dupla função de prova técnica e gatilho de rede
+
+## Achar o recrutador pelo post da vaga
+
+[[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]: buscar **posts** (não vagas) no LinkedIn nas últimas 24 h mostra o recrutador que publicou; dá para seguir ou mandar mensagem dizendo que se interessa. O PDF [[wiki/sources/onde-procurar-vagas-guia-definitivo]] sugere usar a mesma lógica booleana em "Pessoas" para achar recrutadores de tech na região e "conectar-se antes de precisar".
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
+- [[wiki/sources/onde-procurar-vagas-guia-definitivo]]
