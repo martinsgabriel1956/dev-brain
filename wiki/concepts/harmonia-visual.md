@@ -3,8 +3,8 @@ type: concept
 title: "Harmonia Visual"
 aliases: ["harmonia", "harmonia entre elementos", "predominância", "conjunto da obra", "coerência visual"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 8
+date_updated: 2026-11-14
+source_count: 9
 tags: [ui, ui-design, harmonia, branding, tipografia, cor, formas, predominancia]
 skill: ux-ui-mentor
 status: stub
@@ -54,6 +54,10 @@ Os [[wiki/concepts/elementos-de-composicao]] acompanham "a branding, a ideia, um
 
 Predominância não é pureza também no botão: o Madero é orgânico e usa botão reto; o site de arquitetura é reto e põe uma foto de pessoa no fim da seção. "Precisa de um tempero, não tem como" ([[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]).
 
+## Fugir da cor pura
+
+Em [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]]: com saturação e brilho no máximo, "aquela cor pura", Násser "sempre" indica não usar, "porque esse tipo de cor aqui a gente não acha na natureza". É heurística estética, sem dado citado. `[skill: ux-ui-mentor]` Na prática, saturação máxima em áreas grandes cansa e vibra ao lado da complementar. Ver [[wiki/concepts/modelos-de-cor]].
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -64,3 +68,4 @@ Predominância não é pureza também no botão: o Madero é orgânico e usa bot
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — predominância com pontos orgânicos (Dropbox, Nubank)
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-compreensao-consistencia-svg-tinyimage]] — ilustração do unDraw baixada na cor da marca (5FE36A)
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — botão reto em site orgânico, foto em site reto
+- [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — evitar a cor pura (S e B no máximo) do seletor HSB

@@ -3,8 +3,8 @@ type: concept
 title: "Cor semântica"
 aliases: ["cores semânticas", "cor de feedback", "cor de estado", "semantic color", "status colors"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-14
+source_count: 3
 tags: [ui, ui-design, cor, cor-semantica, feedback, acessibilidade, design-tokens]
 skill: ux-ui-mentor
 status: stub
@@ -37,7 +37,12 @@ Cor usada para dizer algo, não para enfeitar: o usuário lê o estado ou o tipo
 
 Em [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]]: nos ícones do site do autor, "tudo que é laranja está remetendo ao curso de UI Design", "uma seleção que o seu cérebro faz até pela cor". É convenção de marca, não de estado; vale a mesma regra de nunca depender só da cor.
 
+## Do token ao hex
+
+Em [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]]: a cor vira código em hexadecimal ou RGB, e o HSB fica para compor a paleta. A cor semântica é a camada de cima: `--color-error` aponta para um valor cru (`#…`) que pode mudar sem que o nome mude. Ver [[wiki/concepts/modelos-de-cor]].
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — azul link, vermelho alerta, amarelo warning; botão preenchido como hierarquia
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — laranja = curso de UI Design nos ícones do site
+- [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — de onde vêm os valores crus (HSB, hex, RGB) que os tokens semânticos nomeiam

@@ -13997,3 +13997,15 @@ O usuário confirmou que [[wiki/sources/botoes-e-links-guiar-jornada-consistenci
 ## [2026-11-13] update | Autoria confirmada: formas de botões (edição "W7")
 
 O usuário confirmou que [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] é de [[wiki/entities/nasser]]. Atualizados: `author`, Entities e Open Questions da fonte, a linha em Key Sources de nasser.md e a linha no index.md. A nota (6) da entrada de ingest anterior fica superada.
+
+## [2026-11-14] ingest | Representação da cor em códigos: HSB, hexadecimal e RGB
+
+**Fonte:** legenda SRT `/home/nemomartins/Documentos/new/transcribe/master-pkg-t-1745369185000.pt_br.srt` (PT-BR), limpa com a skill **text-cleaner** em `raw/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb.md` (sem tradução). Diff palavra a palavra conferido: 1470 tokens no original e 1470 na versão limpa. Correções de ASR: "ser MIC"→CMYK; "fio"→fill (painel de preenchimento do Figma, confiança média); "sei que eu posso dizer assim"→"se é que eu posso dizer assim" (ele usa "se é que podemos dizer assim" antes); "Ctrl -C, Ctrl -V"→Ctrl+C, Ctrl+V; "o que?"→"o quê?" (6×, ortografia). Sem inserções entre colchetes. Mantidos literalmente: "É 8FF00" (a cor real é #8FFF00), "tem caráter 8", "o caráter alfa", "ele não é esse bem um algarismo", "não precisa ficar preocupado, esse aqui só tem no Figma". Lacuna de ~21 s na legenda (00:31 → 00:52), logo antes de "RRGGBB". Subtítulos `##`: HSB, Hexadecimal, RGB e o modo CSS. Slide anexado pelo usuário: "Representação em códigos": HSB (Hue 0–359, Saturation 0–100, Brightness 0–100), Hexadecimal, RGB x CMYK.
+
+**Skill:** ux-ui-mentor (SKILL.md; `references/cor.md` (HSL para escalas, OKLCH perceptualmente uniforme, primitivos → tokens semânticos)). Mesma escolha das aulas anteriores do curso.
+
+**Criado:** [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]]; conceitos [[wiki/concepts/modelos-de-cor]] e [[wiki/concepts/sistema-hexadecimal]].
+
+**Tocadas (10 existentes):** cor-semantica, sistema-binario-bit-byte, harmonia-visual, contraste, elementos-da-interface, ui-design (concepts, todas com seção nova); bitwise-operations (Relação com outros conceitos); figma (seção nova), nasser (ideia recorrente + Key Sources) (entities); elementos-da-interface-visao-geral-proposito-consistencia-simplicidade ("Ver também"). Também index.md e log.md.
+
+**Notas:** (1) **Erro de conta na aula**: F tratado como 16, o que dá vermelho 144; o certo é 143, que é o que o próprio Figma mostra. (2) **HSB ≠ HSL** e nenhum dos dois é luminância percebida `[skill]`, então contraste se confere à parte. (3) `[external]` Alfa também no hex de 8 dígitos e em `rgb(r g b / a)` (MDN). (4) **RGB x CMYK** e a "aula passada" do espectro visível estão pendentes. (5) **Autoria inferida** (Násser): mesmo lote de legendas `master-pkg-t-17453691…` das aulas "W7" confirmadas; o nome não é dito. `date_published` vazio.

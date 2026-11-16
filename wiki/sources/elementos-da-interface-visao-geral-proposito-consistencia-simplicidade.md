@@ -3,7 +3,7 @@ type: source
 title: "Elementos da interface: visão geral, propósito, consistência e simplicidade"
 aliases: ["visão geral dos elementos da interface", "o que faz uma boa interface", "aula introdutória elementos da interface (versão 2)"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
+date_updated: 2026-11-14
 source_count: 0
 tags: [ui, ui-design, design, elementos-da-interface, espaco-em-branco, formas, cor, cor-semantica, tipografia, icones, botoes, links, consistencia, simplicidade, hierarquia-visual]
 skill: ux-ui-mentor
@@ -136,3 +136,4 @@ A aula de formas da mesma edição ("vamos dar continuidade"): [[wiki/sources/fo
 ## Ver também
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — botões e links em profundidade: primário x secundário, área clicável, hover
+- [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — o bloco de cor na prática (HSB, hex, RGB)

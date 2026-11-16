@@ -3,8 +3,8 @@ type: concept
 title: "UI Design"
 aliases: ["user interface design", "design de interface", "UI", "UI designer"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 7
+date_updated: 2026-11-14
+source_count: 8
 tags: [ui, ui-design, design, frontend, tipografia, cor, hierarquia-visual]
 skill: ux-ui-mentor
 status: draft
@@ -60,6 +60,10 @@ Roteiro de [[wiki/sources/como-aprender-ui]]: escolher uma ferramenta de prototi
 
 [[wiki/sources/elementos-da-interface-introducao-ui-design]] define design de interface como "antecipar o que os usuários podem precisar fazer para facilitar a interação" com o produto. Fatores a responder: objetivo, preferências, comportamento, usuário, cultura, posicionamento ([[wiki/concepts/contexto-do-usuario]]). Melhores práticas: simplicidade, consistência, hierarquia, cor e contraste, [[wiki/concepts/feedback-do-sistema]] e patterns. Os [[wiki/concepts/elementos-da-interface]] são o meio de cumpri-las.
 
+## Cor como ponte com o dev
+
+Em [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]], saber hexadecimal e RGB é "muito importante [...] quando a gente for estudar também programação". A paleta se compõe em HSB, mas é entregue em hex ou RGB. Ver [[wiki/concepts/modelos-de-cor]].
+
 ## Key Sources
 
 - [[wiki/sources/o-que-e-ux-ui-design]]
@@ -69,3 +73,4 @@ Roteiro de [[wiki/sources/como-aprender-ui]]: escolher uma ferramenta de prototi
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]] — definição, fatores, melhores práticas e elementos
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]] — espaço em branco, micro e macro espaço, grid de 8 pontos
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]] — formas geométricas e orgânicas, predominância e harmonia
+- [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — HSB, hex e RGB; a cor como código entregue ao dev

@@ -3,8 +3,8 @@ type: concept
 title: "Sistema Binário, Bit e Byte"
 aliases: ["bit", "byte", "sistema binário", "binary digit", "representação binária"]
 date_created: 2026-08-07
-date_updated: 2026-10-30
-source_count: 5
+date_updated: 2026-11-14
+source_count: 6
 tags: [cs-fundamentals, sistema-binario, bit, byte, numero-binario, representacao, rgb, unicode]
 skill: cs-fundamentals
 status: draft
@@ -69,6 +69,10 @@ O padrão se repete: representar qualquer tipo de mídia é uma questão de conv
 
 [[wiki/sources/historia-do-computador-da-antikythera-ao-computador-quantico]] credita a Leibniz (séc. XVII) a defesa da numeração binária e ao Z1 de Zuse (1938) o primeiro equipamento binário programável. `[external]` O Z1 era mecânico, não eletromecânico como diz a fonte. O qubit da [[wiki/concepts/computacao-quantica]] generaliza o bit.
 
+## A conta de conversão hex → decimal
+
+[[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] faz a conversão que a seção sobre RGB só cita. `8F` = 8 × 16 + 15 = 143. Dois dígitos hex são um byte, por isso cada canal vai de `00` a `FF` (0–255). A aula erra o F (usa 16 e chega a 144); ver [[wiki/concepts/sistema-hexadecimal]] e [[wiki/concepts/modelos-de-cor]].
+
 ## Key sources
 
 - [[wiki/sources/conceitos-que-regem-a-computacao-bits-turing-complexidade]] — bit como binary digit (2 estados / transistores), byte como 8 bits representando um caractere, e a lógica binária como base do processamento
@@ -79,3 +83,4 @@ O padrão se repete: representar qualquer tipo de mídia é uma questão de conv
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/historia-do-computador-da-antikythera-ao-computador-quantico]] — Leibniz e o binário; Z1 de Zuse
+- [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — hexadecimal como base 16 e conversão de um canal de cor (com o erro F = 16 apontado)
