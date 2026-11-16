@@ -3,8 +3,8 @@ type: concept
 title: "Consistência Visual"
 aliases: ["consistência", "consistência em UI", "consistency", "identidade visual", "família de ícones"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 20
+date_updated: 2026-11-15
+source_count: 21
 tags: [ui, ui-design, consistencia, icones, cor, identidade-visual, design-system]
 skill: ux-ui-mentor
 status: stub
@@ -112,3 +112,4 @@ Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: "e
 - [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] — ícones: uma família, no máximo duas com papéis distintos
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — ícones próprios como exercício de consistência; mesma estrutura e escala
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — mesmo botão em toda a interface: altura, padding e radius iguais
+- [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — blocos do mesmo tamanho como a mesma classe; textos sempre alinhados a uma coluna

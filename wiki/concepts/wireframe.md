@@ -3,8 +3,8 @@ type: concept
 title: "Wireframe"
 aliases: ["wireframes", "rascunho de tela", "protótipo de baixa fidelidade"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 5
+date_updated: 2026-11-15
+source_count: 6
 tags: [ui, ux, ui-design, prototipagem, wireframe, figma]
 skill: ux-ui-mentor
 status: stub
@@ -29,6 +29,10 @@ Na aula de ilustrações, "o wireframe hero" é "aquela primeira seção do seu 
 
 Em [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]], um wireframe da futura seção de interface web é desalinhado de propósito e refeito no grid de 12 colunas com a escala 16/32/128.
 
+## Wireframes no grid
+
+Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]], os wireframes do curso (features, menu) estão todos no grid de 12 colunas de 72. Basta clicar no olhinho do grid para conferir. O bloco de features ocupa seis colunas, com título, parágrafo e lista alinhados à esquerda. Ele admite "alguns wireframes que eu pequei em determinado alinhamento" e corrige ao vivo uma ilustração torta. O exercício é abrir os wireframes do arquivo e conferir o alinhamento.
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
@@ -36,3 +40,4 @@ Em [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]]
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — wireframe desalinhado e refeito no grid de 12 colunas
 - [[wiki/sources/imagens-e-ilustracoes-pratica-figma-importar-editor-plugins-exportacao]] — blobs (plugin Blobs) como bolhas na composição de wireframes
 - [[wiki/sources/imagens-e-ilustracoes-svg-no-figma-undraw-mockup-iphone-codigo]] — wireframes isométricos com gradiente linear embaixo e sombra
+- [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — wireframes de features e de menu conferidos no grid; exercício de verificar o alinhamento

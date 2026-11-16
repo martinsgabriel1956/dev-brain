@@ -3,11 +3,11 @@ type: concept
 title: "Grid de Colunas"
 aliases: ["column grid", "layout grid", "grid de 12 colunas", "12-column grid", "gutter", "calha"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 1
+date_updated: 2026-11-15
+source_count: 2
 tags: [ui, ui-design, layout, grid, grid-de-colunas, alinhamento, consistencia, figma]
 skill: ux-ui-mentor
-status: stub
+status: draft
 ---
 
 # Grid de Colunas
@@ -44,6 +44,23 @@ O gutter de 32 da aula corresponde à linha "wide" da skill. Os valores de colun
 - [[wiki/concepts/grid-de-icones]] — o mesmo princípio de "réguas", em escala de ícone.
 - [[wiki/concepts/design-responsivo]] — o número de colunas cai em telas menores.
 
+## Max-width: coluna + gutter
+
+Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]], o grid sai do Figma no tipo **Center** (coluna fixa, grid centralizado), e não Stretch. Stretch "sempre vai preencher a tela inteira", mas pede "uma série de breakpoints maior". Coluna e gutter definem o max-width do conteúdo (12 × coluna + 11 × gutter, conta do agente):
+
+| Coluna | Gutter | Max-width |
+|---|---|---|
+| 72 | 32 | 1216 |
+| 72 | 36 | **1260** (o que ele mais usa) |
+| 96 | 24 | 1416 (rumo a 1440) |
+| 96 | 32 | 1504 |
+| 96 | 36 | 1548 (TV, rumo a 1600) |
+
+O grid é "um guia", não uma régua de precisão: figuras de 88 ou ilustrações que saem da coluna são normais se o alinhamento continua no grid. Blocos do mesmo número de colunas viram a mesma classe no código ("tudo é div, tudo é bloco"). Onde 12 não divide (três elementos com sobras), agrupar e usar distribuir horizontal spacing. Ver também [[wiki/concepts/equilibrio-visual]]: o grid deixa contar o peso de cada lado.
+
+`[external]` O Bootstrap 5, que ele cita como origem, usa colunas fluidas e gutter de 24 px; containers até 1320 (https://getbootstrap.com/docs/5.3/layout/containers/).
+
 ## Key Sources
 
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — 12 colunas de 72, gutter de 32, centralizado; 12 pelos bons múltiplos
+- [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — 72 + 36 = 1260 (o principal), 1216, 1416, 1504, 1548; Center x Stretch; pensar em blocos; grid como guia; equilíbrio do menu

@@ -3,7 +3,7 @@ type: source
 title: "Espaçamento e linhas na prática no Figma: grid de 12 colunas, nudge de 8pt e medição com Alt"
 aliases: ["aula prática de espaçamento no Figma", "nudge de 8pt", "big nudge 8", "grid de 12 colunas aula", "medir distância com Alt no Figma"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
+date_updated: 2026-11-15
 source_count: 0
 tags: [ui, ui-design, design, elementos-da-interface, espacamento, figma, grid, grid-de-colunas, escala-de-espacamento, grid-de-8-pontos, consistencia, hierarquia-visual, wireframe, line-height]
 skill: ux-ui-mentor
@@ -91,3 +91,7 @@ A prática prometida em [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-siste
 > "Sempre que você apertar shift para cima ou para baixo, ele vai se mover de 8pt em 8pt."
 
 > "Muito cuidado ao aplicar essa distância em textos."
+
+## Ver também
+
+- [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]]: a aula prática de grids; o mesmo grid com gutter de 36 (1260) como principal, tabela de max-widths, pensar em blocos e equilíbrio do menu

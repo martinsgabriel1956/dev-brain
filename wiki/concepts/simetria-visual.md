@@ -1,10 +1,10 @@
 ---
 type: concept
 title: "Simetria Visual"
-aliases: ["simetria", "assimetria", "equilíbrio visual", "simétrico e assimétrico"]
+aliases: ["simetria", "assimetria", "simétrico e assimétrico"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 3
+date_updated: 2026-11-15
+source_count: 4
 tags: [ui, ui-design, layout, grid, equilibrio]
 skill: ux-ui-mentor
 status: stub
@@ -12,7 +12,7 @@ status: stub
 
 # Simetria Visual
 
-Elementos organizados em relação ao [[wiki/concepts/eixo-visual|eixo]] da mesma maneira (slide de [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]]). O autor usa "equilíbrio" como sinônimo.
+Elementos organizados em relação ao [[wiki/concepts/eixo-visual|eixo]] da mesma maneira (slide de [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]]). O autor usa "equilíbrio" como sinônimo; o equilíbrio por peso, simétrico ou não, está em [[wiki/concepts/equilibrio-visual]].
 
 ## Simétrico: sensação de fim
 
@@ -34,8 +34,13 @@ Em [[wiki/sources/icones-parte-2-hierarquia-tamanho-simetria-grid-constraints]]:
 
 Ao vetorizar o ícone de telefone, Násser aplica os pontos "de maneira [...] simétrica": o que faz de um lado, repete do outro ([[wiki/sources/imagens-e-ilustracoes-vetorizar-icones-figma-pen-tool-bend-tool]]; ver [[wiki/concepts/vetorizacao-com-pen-tool]]).
 
+## Simetria no menu
+
+Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]], um menu com três ênfases (links, logo, ações) espaçado por igual ainda "incomoda": "você tem que tentar deixar um pouco simétrico também em determinados wireframes". Ele junta dois grupos e deixa 5 colunas contra quase 5. O equilíbrio por peso, simétrico ou não, tem página própria: [[wiki/concepts/equilibrio-visual]].
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]]
 - [[wiki/sources/icones-parte-2-hierarquia-tamanho-simetria-grid-constraints]] — simetria e tamanhos pares em ícones; triângulo do play
 - [[wiki/sources/imagens-e-ilustracoes-vetorizar-icones-figma-pen-tool-bend-tool]] — pontos aplicados de forma simétrica ao vetorizar
+- [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — menu de três ênfases deixado simétrico (5 e quase 5 colunas)

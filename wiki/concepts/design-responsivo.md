@@ -3,8 +3,8 @@ type: concept
 title: "Design Responsivo"
 aliases: ['responsive design', 'media queries']
 date_created: 2026-10-14
-date_updated: 2026-11-13
-source_count: 7
+date_updated: 2026-11-15
+source_count: 8
 tags: [css, responsivo, mobile, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -26,6 +26,10 @@ Exportar a mesma imagem em várias escalas (2x/1x desktop, 0,5x/0,3x mobile) e d
 
 Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: "a precisão que eu tenho no mouse é muito maior do que a que eu tenho com o meu dedo". O botão não pode encolher na tela pequena; na [[wiki/entities/apple]], eles mantêm o tamanho. Ver [[wiki/concepts/area-clicavel]].
 
+## Desenhar já pensando nos breakpoints
+
+Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]], a escolha do grid é de responsividade. Ele usa grid centralizado com max-width (1260) em vez de esticado, porque o esticado pede "uma série de breakpoints maior". E desenha em blocos: "eu já vou desenhando a minha interface interpretando como é que vai ser a caixinha, como é que vai ser a responsividade". Blocos iguais viram uma classe com flex-basis; pares viram flexbox dentro de flexbox. Ilustração deslocada para preencher a tela "é algo que você tem que se atentar depois que você voltar para o mobile".
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -35,3 +39,4 @@ Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: "a
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — grid de 12 colunas para desktop; ver [[wiki/concepts/grid-de-colunas]] para colunas por breakpoint
 - [[wiki/sources/imagens-e-ilustracoes-introducao-svg-bancos-texto-branco-resolucoes-formatos]] — edição "W7": exportar tamanhos diferentes e carregar por media query; mobile, tablet e desktop
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — mouse x dedo; botões não encolhem no mobile
+- [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — Center (max-width) para reduzir breakpoints; blocos que já viram classe e flexbox
