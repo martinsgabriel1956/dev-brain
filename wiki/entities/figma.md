@@ -4,7 +4,7 @@ title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
 date_updated: 2026-11-15
-source_count: 31
+source_count: 32
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -134,6 +134,10 @@ Na aula de variação de cores, o tipo de layer luminosity transforma o espectro
 
 Násser recomenda "a escala do próprio Figma" para fontes: começa em 9 e cresce em passos maiores no topo (96 → 144 → 288) ([[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]]). Lista exata não verificada.
 
+## Line-height no Figma
+
+Em [[wiki/sources/altura-de-linha-e-largura-do-texto]], alterar o line-height no Figma faz a caixa do texto crescer; o valor é dado em porcentagem (140% equivale a `line-height: 1.4` no CSS). Ver [[wiki/concepts/altura-de-linha]].
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -174,3 +178,4 @@ Násser recomenda "a escala do próprio Figma" para fontes: começa em 9 e cresc
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — HSB, conta-gotas, overlay para neutros
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — modo luminosity no tipo de layer; prática de variação prometida
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — escala de fonte do Figma
+- [[wiki/sources/altura-de-linha-e-largura-do-texto]] — line-height em % aumenta a caixa do texto

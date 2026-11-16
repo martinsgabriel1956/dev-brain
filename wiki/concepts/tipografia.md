@@ -1,10 +1,10 @@
 ---
 type: concept
 title: "Tipografia"
-aliases: ["fonte", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
+aliases: ["fonte", "módulo de tipografia", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 14
+source_count: 15
 tags: [ui, ui-design, tipografia, fonte, serifa, elementos-da-interface]
 skill: ux-ui-mentor
 status: draft
@@ -12,7 +12,7 @@ status: draft
 
 # Tipografia
 
-Um dos [[wiki/concepts/elementos-da-interface]]; o curso de [[wiki/entities/nasser|Násser]] promete um módulo próprio por ser "tão denso". Por enquanto a wiki só tem o papel da tipografia na [[wiki/concepts/harmonia-visual|harmonia]] com as formas.
+Um dos [[wiki/concepts/elementos-da-interface]]; o curso de [[wiki/entities/nasser|Násser]] promete um módulo próprio por ser "tão denso". A wiki tem o papel da tipografia na [[wiki/concepts/harmonia-visual|harmonia]] com as formas e, do módulo próprio, a aula de [[wiki/concepts/altura-de-linha|altura de linha]] e [[wiki/concepts/largura-do-texto|largura do texto]].
 
 ## Tipografia comunica
 
@@ -96,6 +96,10 @@ Ferramenta: a extensão WhatFont, que mostra família, peso, tamanho e altura de
 
 Na aula de escala ([[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]]): seguir uma [[wiki/concepts/escala-tipografica|escala]] por consistência; primeira preocupação é [[wiki/concepts/legibilidade-e-leiturabilidade|legibilidade e leiturabilidade]]; corpo de 14 a 21 px como regra geral, ajustado por tamanho versus espaço (NYT com 14 px, Framer com 32 px no corpo). Até 6 variações (h1–h6), ele usa 4. O slide esquecido da aula anterior: a placa "PARE" serifada "não combina"; maiúsculas passam imponência e elegância, minúsculas são amigáveis; em um par de fontes, a de maiúsculas tem hierarquia maior. Etimologia: *týpos* (forma) + *graphein* (escrita).
 
+## Altura de linha e largura do texto
+
+A aula 03 do módulo de tipografia ([[wiki/sources/altura-de-linha-e-largura-do-texto]]) trata as duas propriedades que deixam o texto "mais confortável ao ler": [[wiki/concepts/altura-de-linha]] (140% a 160% no corpo, 90% a 120% nos títulos; "quanto menor o texto, maior a altura de linha") e [[wiki/concepts/largura-do-texto]] (60 a 90 caracteres, 9 a 15 palavras por linha). Ela também fecha a pendência acima: line-height é "a caixa que circunda o texto".
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -115,3 +119,4 @@ Na aula de escala ([[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-e
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — hierarquia textual por escala, peso, caixa alta e cinza; contraste como objetivo
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — abertura do módulo (edição "W7"): definição, variáveis, classificações, CSS
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — escala, 14–21 px, maiúsculas x minúsculas, h1–h6, escala do Figma + 8pt
+- [[wiki/sources/altura-de-linha-e-largura-do-texto]] — altura de linha e largura do texto; primeira aula do módulo de tipografia na wiki

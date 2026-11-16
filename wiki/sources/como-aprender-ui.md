@@ -3,7 +3,7 @@ type: source
 title: "Como aprender UI"
 aliases: ["como aprender ui design", "bloqueio criativo em ui", "aula 02 ui design"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
+date_updated: 2026-11-15
 source_count: 0
 tags: [ui, ui-design, design, aprendizado, pratica-deliberada, mood-board, redesign, freelance, figma, carreira]
 skill: ux-ui-mentor
@@ -73,3 +73,7 @@ Aula 2 do mesmo módulo de UI Design de [[wiki/sources/o-que-e-ux-ui-design]], d
 > "Então, eu digo que criatividade se constrói."
 
 > "Um redesign sempre tem que vir acompanhado do porquê."
+
+## Ver também
+
+- [[wiki/sources/altura-de-linha-e-largura-do-texto]] — o porquê do line-height na prática: faixas por escala e cálculo da razão com o WhatFont

@@ -54,6 +54,10 @@ Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-m
 
 "Tamanho versus espaço": o Framer cai de 106/32 px para 45/23 px em tela menor; o style guide do [[wiki/entities/nubank]] em produção define h1–h3 em versão desktop e mobile ([[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]]). Ver [[wiki/concepts/escala-tipografica]]. `[skill: ux-ui-mentor]` `clamp()` faz isso sem breakpoints.
 
+## Escala de texto por tela
+
+"Se você deixar uma escala justamente muito grande, uma tela muito pequena, fica muito ruim" ([[wiki/sources/altura-de-linha-e-largura-do-texto]]). A [[wiki/concepts/largura-do-texto]] também depende da tela: em telas largas, um container segura a coluna, como no NYT.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -70,3 +74,4 @@ Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-m
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — empilhar no tablet, suprimir no mobile; responsivo x adaptativo
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — Center (max-width) para reduzir breakpoints; blocos que já viram classe e flexbox
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — escalas tipográficas desktop e mobile
+- [[wiki/sources/altura-de-linha-e-largura-do-texto]] — escala grande em tela pequena; container limita a largura

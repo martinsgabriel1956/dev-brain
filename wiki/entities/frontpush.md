@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 21
+source_count: 22
 tags: [curso, frontend, ui-design, landing-page]
 skill: ux-ui-mentor
 status: stub
@@ -122,6 +122,10 @@ Na edição "W7" ([[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-p
 
 Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]]: o título "O que compõe o FrontPUSH" é o exemplo de hierarquia textual; os botões verde e laranja levam texto preto porque reprovam com branco (verde a 1.65, provável `#5FE36A`); o secundário branco vira azul no hover e mantém o texto branco, o que o autor chama de "até um erro" de consistência.
 
+## Módulo de tipografia
+
+A transcrição de [[wiki/sources/altura-de-linha-e-largura-do-texto]] está na pasta `FrontPush`. A aula promete levar line-height e largura para o guia de estilos, "tanto no Figma como no CSS".
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -159,3 +163,4 @@ Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-infor
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — branding de "boost": foguete, órbitas e planetas
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — preto + uma cor + gradiente (inferido)
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — título como hierarquia; botões verde e laranja com texto preto
+- [[wiki/sources/altura-de-linha-e-largura-do-texto]] — aula 03 de tipografia; altura de linha e largura do texto

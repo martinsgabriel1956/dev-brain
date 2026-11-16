@@ -107,3 +107,7 @@ A prática prometida em [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-siste
 ## Ver também
 
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]]: a aula prática de grids; o mesmo grid com gutter de 36 (1260) como principal, tabela de max-widths, pensar em blocos e equilíbrio do menu
+
+## Ver também
+
+- [[wiki/sources/altura-de-linha-e-largura-do-texto]] — a aula de tipografia prometida: line-height é a caixa que circunda o texto

@@ -4,7 +4,7 @@ title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
 date_updated: 2026-11-15
-source_count: 27
+source_count: 28
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -161,6 +161,10 @@ Na abertura do módulo de tipografia, o erro apontado é dar tamanhos diferentes
 
 "Aquilo que é maior você enxerga primeiro": a manchete da Globo sobre Maradona, maior e alinhada à esquerda, porque o leitor ocidental lê da esquerda para a direita ([[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]]). O NYT mostra a outra via: título de 16 px quase do tamanho do corpo, separado por cor mais escura e peso 700 contra 400. Ver [[wiki/concepts/escala-tipografica]].
 
+## Entrelinha também marca o nível
+
+Títulos e corpo não diferem só no tamanho: o título leva line-height menor ("110, 100%"; slide 90% a 120%) e o corpo, maior (140% a 160%). Título com 140% fica "estranho" ([[wiki/sources/altura-de-linha-e-largura-do-texto]]). Ver [[wiki/concepts/altura-de-linha]].
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -195,3 +199,4 @@ Na abertura do módulo de tipografia, o erro apontado é dar tamanhos diferentes
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — escala de cinza como hierarquia textual; títulos do FrontPUSH e do Google
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — escala tipográfica inconsistente quebra a hierarquia
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — o maior se enxerga primeiro; peso e cor no NYT
+- [[wiki/sources/altura-de-linha-e-largura-do-texto]] — line-height menor no título, maior no corpo

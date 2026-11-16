@@ -62,6 +62,10 @@ Na aula de espaçamento e linhas, o espaço dentro do elemento é o **padding** 
 
 Na interface preta com destaque laranja, Násser diz aplicar "um princípio de deixar o espaço em branco para poder o seu olho ter foco" ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]). Ver [[wiki/concepts/regra-60-30-10]].
 
+## Container e parágrafos no texto longo
+
+O [[wiki/entities/new-york-times]] limita a coluna com um container, para o texto não ir "de ponta a ponta", e quebra a notícia em parágrafos, "também de pausa", em vez de "texto corridão" ([[wiki/sources/altura-de-linha-e-largura-do-texto]]). Ver [[wiki/concepts/largura-do-texto]].
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — espaço em branco como ferramenta de simplicidade
@@ -73,3 +77,4 @@ Na interface preta com destaque laranja, Násser diz aplicar "um princípio de d
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — padding no card; tamanho do espaço depende do meio
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — prática no Figma: vãos de 16, 32 e 128 medidos com Alt
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — espaço em branco para o olho focar no destaque laranja
+- [[wiki/sources/altura-de-linha-e-largura-do-texto]] — container do NYT e parágrafos como pausa
