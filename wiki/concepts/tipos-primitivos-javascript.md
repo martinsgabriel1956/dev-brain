@@ -4,7 +4,7 @@ title: "Tipos Primitivos em JavaScript"
 aliases: ["8 tipos de javascript", "typeof javascript", "primitive types javascript", "Object.prototype.toString"]
 date_created: 2026-07-10
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [javascript, tipagem, type-checking, fundamentos]
 skill: lang-dynamic
 status: draft
@@ -65,7 +65,12 @@ Já expressões booleanas com `||` (`a = a || [1, 2, 3]`) reagem a **qualquer** 
 
 Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] percorre string, number, boolean e undefined (variável sem valor, propriedade inexistente, função sem `return`). Mostra a coerção do `+`: `1 + 12` dá 13, `"1" + 12` dá `"112"`, porque "já que eu não consigo fazer soma de string com número [...] eu vou concatenar".
 
+## Na NLW #2, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], aparecem string (aspas simples ou duplas), boolean (`true` no `cloneNode`, "o famoso 8 ou 80"), null (o retorno de `querySelector` sem resultado) e objetos tipados como NodeList.
+
 ## Key sources
 
 - [[wiki/sources/8-tipos-de-javascript]]
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: coerção string + number; undefined
+- [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: string, boolean, null, NodeList

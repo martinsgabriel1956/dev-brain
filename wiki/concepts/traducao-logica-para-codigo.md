@@ -3,8 +3,8 @@ type: concept
 title: "Tradução de Lógica para Código"
 aliases: ["código como tradução", "logic to code", "implementação como tradução"]
 date_created: 2026-05-13
-date_updated: 2026-10-09
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [traducao, implementacao, fundamentos, cs-fundamentals]
 skill: cs-fundamentals
 status: draft
@@ -37,7 +37,12 @@ A lógica **não muda**. O mesmo fluxo de autenticação do caixa eletrônico po
 - Usa [[fluxo-de-controle]] como vocabulário
 - O [[estado]] identificado no fluxo vira variáveis no código
 
+## Na NLW #2, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], Mayk escreve os passos do botão em português antes do código (procurar o botão; ao clicar, executar uma ação; duplicar os campos; colocar na página) e deixa o computador "perguntar": que campos? onde? "Primeiro você verbaliza [...] conforme você for construindo, você vai percebendo outras coisas que talvez estavam faltando."
+
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-quatro-passos]]
 - [[wiki/sources/o-que-e-um-algoritmo-propriedades-pseudocodigo-sistemas-de-recomendacao]] — linguagem de programação como ferramenta que traduz a lógica (algoritmo) para a máquina
+- [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: passos em português antes do código

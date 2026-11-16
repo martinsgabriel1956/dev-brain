@@ -4,7 +4,7 @@ title: "Flexbox (display: flex)"
 aliases: ["flexbox", "display flex", "flex", "flex-direction", "justify-content", "align-items", "flex: 1"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 22
+source_count: 23
 tags: [frontend, css, flexbox, layout, display, alinhamento]
 skill: tech-mentor-frontend
 status: stub
@@ -99,6 +99,10 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: `just
 
 Na [[wiki/sources/frontpush-mentoria-pratica-com-css-grid|mentoria de CSS Grid]] do [[wiki/entities/frontpush|FrontPUSH]], o critério fica explícito: layout de linhas sem mescla, flexbox; linhas e colunas mescladas, grid, porque em flex seria "flexbox dentro do flexbox, que fica dentro do flexbox, vai virando uma salada".
 
+## Na NLW #2, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o `legend` usa `space-between` para preparar o lugar do botão "Novo horário", e o footer do formulário usa o mesmo no desktop. Mayk diz que o flex "não modifica o display de cada um dos itens"; na verdade, os filhos viram itens flex e são "blockificados".
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: header, coluna com `flex: 1`, botão com span + strong
@@ -123,3 +127,4 @@ Na [[wiki/sources/frontpush-mentoria-pratica-com-css-grid|mentoria de CSS Grid]]
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: centralizar o container no body
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: space-between, space-evenly, flex 1 1
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: flex é "unidimensional"; layout com linhas e colunas mescladas em flex vira "flexbox dentro do flexbox [...] uma salada"
+- [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: space-between; itens flex blockificados

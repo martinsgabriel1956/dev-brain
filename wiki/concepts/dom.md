@@ -4,7 +4,7 @@ title: "DOM — Document Object Model"
 aliases: ["Document Object Model"]
 date_created: 2026-07-28
 date_updated: 2026-11-16
-source_count: 9
+source_count: 10
 tags: [browser, dom, html-parsing, rendering-pipeline, frontend-frameworks]
 skill: tech-mentor-frontend
 status: draft
@@ -46,6 +46,10 @@ Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]], o "View Page Source" mostra só a `div#root`, enquanto o inspetor mostra o `h1`: a DOM é "uma árvore de elementos em tempo real", montada pelo `react-dom`.
 
+## Na NLW #2, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o primeiro contato com o DOM na NLW #2: `document` é "o objeto que eu tenho disponível para acessar a página"; `querySelector` devolve um elemento com `.style`; o DOM é uma árvore de nós ("Document Object Model"), por isso `cloneNode` e `appendChild`. Mayk separa a linguagem das APIs do navegador: essas funcionalidades não são "do JavaScript, é do JavaScript no browser".
+
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
@@ -56,3 +60,4 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet
 - [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: selecionar no CSS "é muito similar ou deveras igual" ao JavaScript (`querySelector`); pseudo-elements não estão no DOM
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: querySelectorAll x querySelector; cache do elemento
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: DOM em tempo real x HTML de origem
+- [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: document, querySelector, cloneNode, appendChild

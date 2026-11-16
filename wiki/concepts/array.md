@@ -4,7 +4,7 @@ title: "Array"
 aliases: ["vetor", "lista indexada", "indexed array"]
 date_created: 2026-06-01
 date_updated: 2026-11-16
-source_count: 12
+source_count: 13
 tags: [cs-fundamentals, estruturas-de-dados, array, performance, big-o]
 skill: cs-fundamentals
 status: draft
@@ -81,6 +81,10 @@ O array vai para um `input hidden` e vira o texto `4,6,2`.
 
 Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] passa um array de valores para os placeholders `?` do INSERT e recebe de volta `rows`, sempre um array, mesmo com um registro. `rows.length` dá o total de pontos. Lembra que o array JavaScript aceita vírgula no fim, "o que eu não posso ter é no SQL".
 
+## Na NLW #2, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], `querySelectorAll('input')` devolve uma NodeList, parecida com um array: posições a partir de 0 ("eu não sei porquê"), acesso por `fields[0]` e `forEach` para repetir em vez de escrever 20 linhas iguais.
+
 ## Key sources
 
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
@@ -95,3 +99,4 @@ Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]],
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: coleção de dados, índice a partir de 0
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: findIndex, filter e push na seleção de itens
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: values do INSERT, rows e length
+- [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: NodeList, índice 0 e forEach

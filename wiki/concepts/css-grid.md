@@ -4,7 +4,7 @@ title: "CSS Grid"
 aliases: ["grid", "display: grid", "grid layout", "grid-template-columns", "grid-template-areas", "grid-area"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [css, layout, grid, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -36,6 +36,10 @@ Em [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]], o layout é tratado
 
 `[external]` Os nomes da matriz vão separados por espaço (`"A A A B B"`); colados (`"AAABB"`), viram uma célula só. Cada área precisa ser um retângulo, e `.` marca uma célula vazia: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas. `grid-gap` é o nome antigo de `gap`.
 
+## Na NLW #2, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], no desktop o `.schedule-item` (dia da semana, das, até) vira grid `2fr 1fr 1fr` com `column-gap: 1.6rem`.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: grid de três colunas com `fr` e `gap`; uma coluna no mobile
@@ -43,3 +47,4 @@ Em [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]], o layout é tratado
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: o esqueleto de duas colunas do layout do YouTube, feito só com flexbox no exercício, também caberia em grid `[external]`
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: template-areas, grid-area, fr, self-alignment
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria: `grid-template-areas` desenhado como "mesclar e centralizar" no Excel, `grid-area` por item, `grid-gap`; nova matriz numa media query
+- [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: schedule-item em 2fr 1fr 1fr

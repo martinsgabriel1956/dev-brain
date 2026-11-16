@@ -4,7 +4,7 @@ title: "var, let e const (JavaScript)"
 aliases: ["var", "let", "const", "declaração de variável", "variáveis em JavaScript"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [javascript, variaveis, escopo, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -27,7 +27,12 @@ Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[w
 
 Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] explica por que `selectedItems` é `let`: "se eu deixasse ele como const, eu não ia conseguir sobrescrever esses valores. Porque const é uma constante. Let é uma variável." O dia 2 dizia "tanto faz". No dia 3 o `push` muda o array e o `filter` reatribui, e só a reatribuição exige `let`.
 
+## Na NLW #2, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], `const newFieldContainer` e `const fields`: "eu não gostaria que [...] fosse trocado"; "como uma variável pode ser constante?". `const` impede reatribuir o nome, não alterar o objeto, e é recriado a cada chamada da função.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: variável como memória; var, let e const "tanto faz" (impreciso)
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: let porque reatribui; const não impede push
+- [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: const no cloneField

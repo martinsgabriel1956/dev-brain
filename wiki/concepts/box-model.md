@@ -4,7 +4,7 @@ title: "Box Model (CSS)"
 aliases: ["CSS box model", "content-padding-border-margin"]
 date_created: 2026-07-28
 date_updated: 2026-11-16
-source_count: 19
+source_count: 20
 tags: [browser, css, box-model, layout, html-semantico, shorthand-css, padding, margin]
 skill: tech-mentor-frontend
 status: draft
@@ -59,6 +59,10 @@ Em [[wiki/sources/frontpush-justify-content-align-items-box-sizing]], [[wiki/ent
 
 Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: "todo e qualquer elemento HTML, quando trabalhado com o CSS, ele está sendo uma caixa". [[wiki/entities/mayk-brito|Mayk]] mostra a caixa com `border: 1px solid red`, padding e margin em sentido horário, `width: 300px` que gera rolagem e o box model no DevTools. Explica `box-sizing`: o padrão `content-box` soma o padding por fora; com `border-box`, uma caixa de 100 px com 50 px de padding continua com 100 px.
 
+## Na NLW #2, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o `padding-bottom` do `legend` separa o texto do `border-bottom`: "o preenchimento vem e depois vem a borda". Sem o padding, a borda fica grudada no texto.
+
 ## Key sources
 
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
@@ -79,3 +83,4 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: "todo e qualque
 - [[wiki/sources/frontpush-order-e-align-self]]: `[external]` `margin-left: auto` como o "justify-self" que o flexbox não tem
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: caixa, shorthand horário, box-sizing com exemplo
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: reset com `box-sizing: border-box`; padding de 16 px nos itens
+- [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: padding antes da borda no legend

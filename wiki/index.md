@@ -26,6 +26,7 @@ date_updated: 2026-11-16
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]] | Dia 3 da [[wiki/entities/next-level-week\|NLW #2]] com [[wiki/entities/mayk-brito\|Mayk Brito]]: favicon e theme-color; `header.css` e `forms.css` ([[wiki/concepts/refatoracao\|refatoração]]); give-classes com [[wiki/concepts/formulario-html\|fieldset/legend]], required, url/number/time, textarea, `name[]` e `form=`; irmão adjacente `+`, `!important` evitado, transition + translateY, grid no desktop; primeiro JavaScript: objetos, `document.location.href`, querySelector, `<script>` no fim do body, [[wiki/concepts/null-e-undefined\|null]] e [[wiki/concepts/carregamento-de-scripts\|defer]], addEventListener + cloneNode + appendChild + querySelectorAll/forEach; imprecisões: labels soltos sem id, `[]` é convenção do servidor, WhatsApp em number, flex "não muda o display", defer "depois de um tempo", const "constante" |
 | [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]] | Mentoria do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], inferido): grid em vez de flex quando linhas e colunas se mesclam ("flexbox dentro do flexbox [...] uma salada"); layout desenhado como "mesclar e centralizar" no Excel, linha do tamanho do menor card; matriz 5 × 5 em `grid-template-areas` + `grid-area` + `grid-gap`; media query `max-width: 960px` troca só o template. Na fala, a área D some da matriz e os nomes vêm colados (precisam de espaço) |
 | [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]] | Dia 2 da [[wiki/entities/next-level-week\|NLW #2]] com [[wiki/entities/mayk-brito\|Mayk Brito]]: CSS em `styles/partials`; landing do Proffy no celular (hero image, botões com border-radius, hover e transition) e no desktop com [[wiki/concepts/css-grid\|grid]] (`2fr 1fr 2fr`, template-areas, align/justify-self) a partir de 1100 px; root 62,5% acima de 700 px; página study com header, [[wiki/concepts/formulario-html\|form]] (label, select, input time, submit), linha de foco com `:focus-within::after` + absolute, card de professor em `article` e filtros em `repeat(4, 1fr)`; imprecisões: label `for` → `name` (é `id`), root 40%, media query "sobrescrita" é ordem da cascata, text-align/width tratados como herança, `::after` "elemento HTML", select sem [[wiki/concepts/indicador-de-foco\|indicador de foco]] |
 | [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]] | Dia 1 da [[wiki/entities/next-level-week\|NLW]] #2 (Proffy) com [[wiki/entities/mayk-brito\|Mayk Brito]]: mesmo roteiro do dia 1 da NLW #1 (algoritmo, cliente-servidor, HTTP/URL, VS Code, Live Server) e esqueleto da página inicial; fundamentos de CSS: [[wiki/concepts/especificidade-css\|id > classe > tag]], pais e filhos ([[wiki/concepts/heranca-css\|herança]]), `/style.css` a partir da raiz, variáveis do Figma, px/%/rem/em com root 60%, [[wiki/concepts/mobile-first]], box model com `box-sizing`, block/inline/flex, Poppins; imprecisões: "força de cascata" = especificidade, herança tratada como força, rem "flexível" ao dispositivo, px num 4K, 60% ≠ 10 px, "Universal Resource Location" |
@@ -999,6 +1000,13 @@ date_updated: 2026-11-16
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### NLW #2 — dia 3 (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/null-e-undefined]] | `undefined` é ausência automática, `null` é vazio intencional (ou de API, como querySelector sem resultado); nenhum tem propriedades; `?.` e `??` |
+| [[wiki/concepts/carregamento-de-scripts]] | Script comum trava o parser e só vê o que veio antes; `defer` executa após a leitura do HTML, em ordem; `async` executa ao chegar; module já é defer; inline ignora os dois |
 
 ### NLW #2 — dia 2 (2026-11-16)
 

@@ -4,7 +4,7 @@ title: "Seletores CSS"
 aliases: [seletor CSS, seletores, classe e ID, class e id, seletor de classe, seletor de ID, seletor universal, CSS selectors, combinadores CSS, seletor descendente, seletor filho, seletor adjacente, seletor de atributo]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 8
+source_count: 9
 tags: [css, html, seletores, classe, id, frontend, seletores-css, combinadores]
 skill: tech-mentor-frontend
 status: draft
@@ -84,6 +84,10 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], seletor é o "i
 
 Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], `.teacher-item p` pegava também o `p` do footer; `.teacher-item > p` ("eu coloco uma setinha assim") pega só o primeiro nível. Mayk prefere `.teacher-item` a `article` porque outro `article` na página "poderia ter algum problema".
 
+## Na NLW #2, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o seletor de irmão adjacente `+` (`.input-block + .input-block`, `fieldset + fieldset`, `.schedule-item + .schedule-item`) dá margem só ao elemento que tem outro igual logo antes; o primeiro fica sem. "A primeira vez que eu aprendi isso aqui eu achei bem confuso." O `>` volta em `.top-bar-container > img`.
+
 ## Key sources
 
 - [[wiki/sources/classes-e-ids-no-css]] — classe x ID (CPF), `#` e `.`, reset universal, estilos por tag, `.btn` com variações, ID de checkout
@@ -94,3 +98,4 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], `.tea
 - [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: filho direto x descendente, `+`, `*`, atributo e vírgula na prática
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: tag, classe, id e agrupamento
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: seletor de filho direto (>)
+- [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: irmão adjacente (+)

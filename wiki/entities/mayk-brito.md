@@ -4,7 +4,7 @@ title: "Mayk Brito"
 aliases: ["Mayk", "Maykão"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 8
+source_count: 9
 tags: [pessoa, educador, rocketseat, frontend, html, css, javascript]
 skill: tech-mentor-frontend
 status: stub
@@ -44,6 +44,10 @@ Conduz o dia 1 da NLW #2, a do Proffy ([[wiki/sources/nlw-2-dia-1-programacao-we
 
 Também conduz o dia 2 ([[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]): a landing page do Proffy em grid e a página de estudo com formulário e card de professor. Agradece a Camila, professora de inglês da Rocketseat, por achar o `secundary` com U, e repete o mote: "na minha aula você está entendendo as coisas. Aprender, de fato, é você com o tempo e prática". Passa a pedir pausas de cinco minutos.
 
+## Na NLW #2, dia 3 (Mayk Brito)
+
+Também conduz o dia 3 ([[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]): a página de dar aulas e o primeiro JavaScript da NLW #2. Repete o método de escrever os passos em português antes do código e tranquiliza quem sente que só copia: "a gente tem a sensação de estar copiando o que os outros estão fazendo [...] É essa sensação mesmo".
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: NLW #1, dia 1, página inicial do Ecoleta em HTML e CSS
@@ -54,3 +58,4 @@ Também conduz o dia 2 ([[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-e
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: a outra trilha da NLW #1; "full MVC" nos dois sentidos
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2 (Proffy), dia 1: HTML e CSS, especificidade, unidades, box model
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: landing page em grid e página study
+- [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: página give-classes e primeiro JavaScript

@@ -4,7 +4,7 @@ title: "Lógica de Programação"
 aliases: ["programming logic", "raciocínio lógico em código"]
 date_created: 2026-05-13
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [logica-de-programacao, fundamentos, cs-fundamentals, carreira, aprendizado]
 skill: cs-fundamentals
 status: stable
@@ -77,6 +77,10 @@ Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[w
 
 Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], a ordem muda o resultado: escovar os dentes antes do café deixa o café "com um gosto meio de pasta de dente"; depois, "deixa os dentes limpos".
 
+## Na NLW #2, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], as variáveis (está chovendo? está frio?) "afeta[m] o jeito, o passo a passo", e "a sua maneira de pensar está completamente ligada ao seu passo a passo".
+
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-quatro-passos]] — framework de 4 passos: entender, decompor, criar fluxo, traduzir
@@ -86,3 +90,4 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], a ordem muda o 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: lógica como ordem dos passos; sintaxe
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: if/else, for clássico e for...of
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: a ordem dos passos muda o resultado
+- [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: variáveis mudam o caminho

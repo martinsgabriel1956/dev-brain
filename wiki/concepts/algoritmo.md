@@ -4,7 +4,7 @@ title: "Algoritmo"
 aliases: ["algorithm", "propriedades do algoritmo"]
 date_created: 2026-10-09
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [algoritmo, fundamentos, cs-fundamentals]
 skill: cs-fundamentals
 status: draft
@@ -46,9 +46,14 @@ Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta
 
 Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], [[wiki/entities/mayk-brito|Mayk]] volta à rotina matinal e acrescenta o detalhe: o computador "não sabe aonde está o café" nem "o que é escovar os dentes", então o algoritmo tem que ser ensinado "de uma maneira muito detalhada".
 
+## Na NLW #2, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o algoritmo ganha caminhos: "se estiver chovendo, você vai pegar um guarda-chuva [...] se estiver frio, você vai pegar uma jaqueta". Para Mayk, é a existência de opções que faz algo ser linguagem de programação, e HTML e CSS "não é programar de fato".
+
 ## Key sources
 
 - [[wiki/sources/o-que-e-um-algoritmo-propriedades-pseudocodigo-sistemas-de-recomendacao]] — definição, quatro propriedades, receita de bolo
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: rotina da manhã como algoritmo
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: algoritmo em comentários antes do código
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: rotina matinal detalhada
+- [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: caminhos e condições

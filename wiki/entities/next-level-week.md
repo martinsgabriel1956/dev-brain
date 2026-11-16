@@ -4,7 +4,7 @@ title: "Next Level Week (NLW)"
 aliases: ["NLW", "Next Level Week", "NLW #1", "Ecoleta", "NLW #2", "Proffy"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 12
+source_count: 13
 tags: [evento, educacao, rocketseat, frontend, ecoleta, proffy]
 skill: tech-mentor-frontend
 status: stub
@@ -54,6 +54,10 @@ A segunda edição (NLW #2) tem como projeto o **Proffy**, "nossa plataforma de 
 
 No dia 2 da NLW #2 ([[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]), o Proffy ganha a landing page responsiva (celular e desktop com grid) e a página `study.html`, com filtros de matéria, dia e hora e o card do professor. O envio do formulário e a página de dar aulas ficam para os dias seguintes.
 
+## Na NLW #2, dia 3 (Mayk Brito)
+
+No dia 3 da NLW #2 ([[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]), o Proffy ganha `give-classes.html`, com o formulário de cadastro do professor, e o primeiro JavaScript: o botão "Novo horário" clona o bloco de horários. O front-end fica completo; back-end e banco ficam para os dias 4 e 5.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: dia 1, apresentação do Ecoleta e página inicial em HTML e CSS ([[wiki/entities/mayk-brito]])
@@ -68,3 +72,4 @@ No dia 2 da NLW #2 ([[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estud
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: dia 5 da trilha de Diego: fechamento
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: apresentação do Proffy e página inicial em HTML e CSS
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: landing page e página study do Proffy
+- [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: give-classes e JavaScript

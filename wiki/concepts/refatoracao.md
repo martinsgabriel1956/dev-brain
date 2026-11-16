@@ -4,7 +4,7 @@ title: "Refatoração"
 aliases: ["refactoring", "refatorar"]
 date_created: 2026-07-15
 date_updated: 2026-11-16
-source_count: 14
+source_count: 15
 tags: [refactoring, clean-code, craftsmanship, design-de-software, tech-debt]
 skill: tech-mentor-backend
 status: draft
@@ -117,6 +117,10 @@ Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[w
 
 Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], [[wiki/entities/mayk-brito|Mayk]] reorganiza o CSS do Proffy em `styles/main.css` e `styles/partials/page-landing.css` ("a gente chama isso de refatorar") e diz que o HTML pode mudar "quantas vezes forem necessárias, até que você atinja o layout que você deseja".
 
+## Na NLW #2, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: "refatorar é melhorar o seu código, é você reescrever parte do seu código a fim de melhorá-lo". Como o cabeçalho e os campos se repetem entre as páginas, o CSS sai para `partials/header.css` e `partials/forms.css`, importados por study e give-classes.
+
 ## Key Sources
 
 - [[wiki/sources/arquitetura-de-sacrificio]] — substituir *módulos individuais* (com boas fronteiras) é a alternativa incremental ao descarte total do sistema
@@ -132,6 +136,7 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], [[wik
 - [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] — evoluir o simples seria mais fácil do que cortar o inflado (sem dados)
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: CSS dividido em três arquivos sem mudar o resultado
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: styles/ e partials/
+- [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: header.css e forms.css compartilhados
 
 ## Key sources (adição 2026-10-07)
 

@@ -3,8 +3,8 @@ type: concept
 title: "Critical Rendering Path"
 aliases: ["pipeline de renderização do browser", "caminho crítico de renderização", "URL para pixel"]
 date_created: 2026-07-28
-date_updated: 2026-07-28
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [browser, rendering-pipeline, critical-rendering-path, performance, dom, cssom]
 skill: tech-mentor-frontend
 status: draft
@@ -35,5 +35,10 @@ Cada otimização ataca uma etapa específica do pipeline:
 - CSS raso (seletores simples) → acelera layout.
 - `transform`/`opacity` em vez de `top`/`left`/`width` → pula layout e paint, vai direto pro compositing.
 
+## Na NLW #2, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o `<script>` no começo do body falha porque o HTML é lido "linha a linha" e o elemento ainda não existe; no head, `defer` resolve para scripts externos. Ver [[wiki/concepts/carregamento-de-scripts]].
+
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
+- [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: script no começo do body x defer

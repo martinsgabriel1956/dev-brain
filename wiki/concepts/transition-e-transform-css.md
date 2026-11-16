@@ -4,7 +4,7 @@ title: "transition e transform no CSS (hover suave)"
 aliases: ["transition", "transform", "scale", "transform: scale", "hover animado", "transição CSS"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [css, transition, transform, animacao, hover, acessibilidade, performance, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -28,9 +28,14 @@ Na aula de layout do [[wiki/entities/frontpush]] ([[wiki/sources/frontpush-layou
 
 Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], `transition: background 0.2s` nos botões ("um segundo é muito, eu quero só aquele detalhezinho") e `transition: opacity 0.2s` no link de voltar, que no hover vai a 0.6 e "parece que ele tá tipo dando uma respirada". `transition` é shorthand de `transition-duration` e outras.
 
+## Na NLW #2, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], `transition: 0.2s` sem nome de propriedade anima todas as que mudarem (o padrão é `all`). De brincadeira, `:hover { transform: translateY(-5px) }` com 1 s faz o botão subir. A margem superior negativa do formulário também "sobe" a caixa sobre o header, mas pelo fluxo.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: `:hover` com `transform: scale` e `transition` de 1 s / 300 ms `ease`
 - [[wiki/sources/frontpush-position-css-relative-absolute-coordenadas]]: bolinhas animadas por `top`/`left` (layout a cada quadro); `transform: translate()` faria o mesmo no compositor
 - [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: `@keyframes` anunciado como "módulo de animação" para micro-interações
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: transition de background e opacity
+- [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: transition sem propriedade; translateY

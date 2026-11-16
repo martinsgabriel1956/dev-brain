@@ -4,7 +4,7 @@ title: "Visual Studio Code"
 aliases: ["VS Code", "VSCode"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 15
+source_count: 16
 tags: [ferramenta, editor, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -57,6 +57,10 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], [[wiki/entities
 
 Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: Emmet com classe (`.logo-container` + Tab, `p.total-connections`), Ctrl+D para selecionar a próxima ocorrência, Alt + clique para vários cursores, Ctrl+F e Alt+Z. O editor acusa o ponto e vírgula esquecido, mas na linha seguinte: "ele não soube interpretar que o erro, na verdade, estava aqui".
 
+## Na NLW #2, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: Ctrl+P abre qualquer arquivo pelo nome, clique + Shift + clique seleciona um bloco inteiro e Ctrl+D troca `study` por `give-classes` de uma vez. O Emmet completa `small` + Enter.
+
 ## Key sources
 
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — Emmet e Live Server na aula de básico de CSS
@@ -74,3 +78,4 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: Emmet
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: multicursor para gerar código repetitivo
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: Emmet, Live Server, Alt+Z, Ctrl+/, color picker
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: Ctrl+D, Alt + clique, aviso de sintaxe
+- [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: Ctrl+P, Shift + clique, Ctrl+D

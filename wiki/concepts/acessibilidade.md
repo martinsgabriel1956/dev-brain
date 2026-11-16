@@ -4,7 +4,7 @@ title: "Acessibilidade (em interfaces)"
 aliases: ["a11y", "acessibilidade digital", "acessibilidade web", "design acessível", "design inclusivo", "accessibility"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 14
+source_count: 15
 tags: [acessibilidade, a11y, ux, ui-design, wcag, contraste, alt-text, carga-cognitiva, html-semantico]
 skill: ux-ui-mentor
 status: stub
@@ -65,6 +65,10 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]
 
 Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o `label` "vai ajudar muito a acessibilidade", e tirar o outline "não é uma prática muito, muito adequada". O substituto (linha com `:focus-within::after`) cobre só o input; os select ficam sem indicador para quem navega com Tab. Ver [[wiki/concepts/indicador-de-foco]].
 
+## Na NLW #2, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], tirar o `id` dos campos de horário (para não duplicar ao clonar) desliga os labels "Das" e "Até" dos campos; o leitor de tela não anuncia o rótulo. Input dentro do label, ou ids únicos gerados no clone, mantêm a ligação.
+
 ## Key Sources
 
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — aula dedicada: nós não somos o usuário; contraste A/AA/AAA; textos invisíveis; KISS; patterns e guidelines
@@ -79,3 +83,4 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o `la
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: RN sem semântica não é RN sem acessibilidade
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: label, outline e foco no select
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: reposicionar áreas muda só o visual, como `order` `[external]`
+- [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: labels soltos nos campos clonados

@@ -4,7 +4,7 @@ title: "Google Fonts"
 aliases: ["fonts.google.com", "Google Web Fonts"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 10
+source_count: 11
 tags: [ferramenta, produto, google, tipografia, fonte, fontes, gratuito, css, frontend]
 skill: ux-ui-mentor
 status: stub
@@ -57,6 +57,10 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], a Poppins entra
 
 Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], os botões e títulos usam Archivo, importada só nos pesos 400 e 700. Pedir 600 sem importar muda pouco; importar o 600 é possível, mas "não vale a pena" pelo peso extra.
 
+## Na NLW #2, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], legends e botões do formulário de dar aulas usam `font: 700 ... Archivo`.
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]: principal referência de fontes; filtros, pesos, `<link>` x `@import`
@@ -69,3 +73,4 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], os bo
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: Poppins no Proffy
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: Archivo 400 e 700
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: Roboto
+- [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: Archivo nos legends

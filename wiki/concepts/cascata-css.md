@@ -4,7 +4,7 @@ title: "Cascata do CSS (prioridade entre estilos)"
 aliases: ["cascade", "cascata CSS", "prioridade do CSS", "estilo inline", "estilo incorporado", "CSS externo", "formas de aplicar CSS"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 8
+source_count: 9
 tags: [css, cascata, especificidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -54,6 +54,10 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], de novo a casca
 
 Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o `:root { font-size: 62.5% }` dentro da media query aparece riscado no DevTools porque um `:root` sem condição, de mesma especificidade, vinha depois e "sobrescreve o outro que não deveria". Media query não dá força; a ordem decide. Mayk resolve pondo o outro root em `max-width: 699px`.
 
+## Na NLW #2, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], a mesma confusão: "profundidade de cascata" para o que é especificidade. `!important` é apresentado como "a força maior de tudo", o que é a etapa de importância da cascata, acima da especificidade.
+
 ## Key sources
 
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — externo, incorporado e inline; "quanto mais para baixo, maior a prioridade"; demo em que o externo vence o incorporado
@@ -64,3 +68,4 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o `:r
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: sem cascata no React Native
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: "força de cascata" (contradição com a definição)
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: media query não dá força, a ordem decide
+- [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: "profundidade de cascata" e !important

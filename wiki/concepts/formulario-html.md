@@ -4,7 +4,7 @@ title: "Formulário HTML (form, fieldset, label, input, select)"
 aliases: ["form", "formulário", "fieldset", "legend", "label", "input", "select", "option", "input hidden", "button submit"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [html, formulario-html, acessibilidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -50,6 +50,10 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet
 
 Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o filtro do Proffy é `form#search-teachers` sem `action` (fica para o back-end), com `label`, `select` (`option` com `value`, a primeira `disabled`), `input type="time"` (antes testado como `number` com `min`/`max` e como `text`) e `button type="submit"`, que "vai pegar o form e enviar". O `name` é o que o back-end recebe. Tensão: a aula diz que o `for` do label procura o `name`; ele procura o `id`, e funciona porque os dois são iguais.
 
+## Na NLW #2, dia 3 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o cadastro do professor usa três `fieldset` com `legend`; `required`; `type="url"`, `number` e `time`; `textarea` (sem quebra de linha entre as tags); `small`; `name="weekday[]"` para valores repetidos; `button type="button"` para não enviar; e `form="create-class"` num botão fora do form. Tensões: os campos de horário perdem o `id` e os labels ficam soltos; colchetes no name são convenção do servidor; WhatsApp deveria ser `type="tel"`; `required` não substitui validação no back-end.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: cadastro do Ecoleta, fieldset, name, number, disabled, hidden
@@ -59,3 +63,4 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o fil
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: method post, action /savepoint, name → req.body
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: formulário em React com onSubmit e preventDefault
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: filtros do Proffy; for liga ao id
+- [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: fieldset, required, form=, name[]
