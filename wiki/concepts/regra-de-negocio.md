@@ -4,7 +4,7 @@ title: "Regra de negócio"
 aliases: ["regras de negócio", "business rule", "business logic", "lógica de negócio"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [backend, dominio, regra-de-negocio, seguranca, validacao]
 skill: tech-mentor-backend
 status: stub
@@ -20,6 +20,11 @@ O que o front-end faz com a regra é ajudar a experiência, como mostrar o preç
 
 Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], [[wiki/entities/mayk-brito|Mayk]] define a preparação dos pedidos no back-end como "regra de negócio": "todo negócio tem regras". Os exemplos são desconto no sapato no Natal e presente para quem está a 10 km. "Dá para fazer no front-end? Até que dá", mas quem "entende um pouquinho mais de programação" muda o preço no navegador; por isso o back-end "vai verificar se realmente o preço daquele sapato é aquele mesmo". "O cliente não pode meter o pé na porta do cozinheiro lá." Na mesma aula, o cadastro de professor entra na lista sem nenhuma verificação no servidor: a regra é anunciada, mas não aplicada ao Proffy.
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], "é muito mais responsabilidade da aplicação fazer a regra de negócio, como eu falei ontem", e o banco guarda os dados. O cadastro continua sem validação nenhuma no servidor, e a regra de horário (`time_from <= x < time_to`) é a única regra da aula escrita em código.
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: regra de negócio no back-end (o preço do sapato) e o cadastro sem validação
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: aplicação regra, banco guarda

@@ -4,7 +4,7 @@ title: "Refatoração"
 aliases: ["refactoring", "refatorar"]
 date_created: 2026-07-15
 date_updated: 2026-11-16
-source_count: 16
+source_count: 17
 tags: [refactoring, clean-code, craftsmanship, design-de-software, tech-debt]
 skill: tech-mentor-backend
 status: draft
@@ -125,6 +125,10 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: "refator
 
 Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], a estrutura do Proffy vira `src/` (views, server.js) e `public/` (images, scripts, styles), e as rotas ganham funções nomeadas (`pageLanding`, `pageStudy`, `pageGiveClasses`) porque "me parece um pouquinho mais organizado".
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o `server.js` encolhe: dados fake vão para `fake-data.js`, as listas e a conversão de horas para `utils/format.js` e as rotas para `pages.js`. Mayk vai "bem devagar" por um feedback de que estava rápido, e confere que o erro esperado ("proffys is not defined") é o único.
+
 ## Key Sources
 
 - [[wiki/sources/arquitetura-de-sacrificio]] — substituir *módulos individuais* (com boas fronteiras) é a alternativa incremental ao descarte total do sistema
@@ -142,6 +146,7 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], a estrutu
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: styles/ e partials/
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: header.css e forms.css compartilhados
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: src/public e funções nomeadas
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: utils/format, pages.js
 
 ## Key sources (adição 2026-10-07)
 

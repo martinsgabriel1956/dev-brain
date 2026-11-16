@@ -4,7 +4,7 @@ title: "Chave primária"
 aliases: ["primary key", "PK", "chave primária", "AUTOINCREMENT", "INTEGER PRIMARY KEY", "id"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [banco-de-dados, sql, modelagem, sqlite]
 skill: tech-mentor-data
 status: stub
@@ -32,7 +32,12 @@ Ele também explica, com clientes e estados, como um número que aponta para out
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]], `table.increments('id').primary()` gera o id auto-incremento ("1, 2, 3, 4") nas três tabelas do Ecoleta. A pivô `point_items` ficou sem chave composta.
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], as três tabelas do Proffy têm `id INTEGER PRIMARY KEY AUTOINCREMENT`: "se eu tenho o prof 1 de id 1, eu não posso ter outro prof com id 1". O `lastID` de cada `INSERT` alimenta a chave estrangeira da tabela seguinte.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: `id INTEGER PRIMARY KEY AUTOINCREMENT` na tabela places; ids não reaproveitados
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: increments().primary() no Knex; pivô sem PK composta
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: id em três tabelas e lastID

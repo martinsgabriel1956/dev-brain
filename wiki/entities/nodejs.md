@@ -4,7 +4,7 @@ title: "Node.js"
 aliases: ["Node", "node"]
 date_created: 2026-11-12
 date_updated: 2026-11-16
-source_count: 9
+source_count: 10
 tags: [nodejs, javascript, runtime, v8, backend, tooling]
 skill: tech-mentor-frontend
 status: stub
@@ -37,6 +37,10 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 
 Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o Node "nasceu com o intuito de rodar o JavaScript na máquina"; a aula instala a LTS 12.18.3 (fora de suporte desde abril de 2022), confere com `node -v`/`npm -v` e roda `node src/server.js`. "O console do back-end é o terminal."
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], `module.exports` exporta a promessa do banco e objetos de funções (`utils/format.js`, `pages.js`), e `require` os recupera com desestruturação. `__dirname` monta o caminho do `database.sqlite`, o que evita o problema de caminho relativo da NLW #1.
+
 ## Key sources
 
 - [[wiki/sources/configurando-ambiente-vue-node-npm-vue-cli]]
@@ -48,3 +52,4 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o Node "n
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: Node 12 LTS por gerenciador de pacotes, npx, ts-node
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: crypto e path no upload
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: LTS 12, node -v, console no terminal
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: module.exports, require, __dirname

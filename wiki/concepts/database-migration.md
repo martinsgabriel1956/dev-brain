@@ -4,7 +4,7 @@ title: "Database Migration"
 aliases: ["migration", "migrations", "migrate up", "migrate down", "migração de banco de dados"]
 date_created: 2026-07-28
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [banco-de-dados, migrations, versionamento, orm, postgresql, git]
 skill: tech-mentor-backend
 status: draft
@@ -54,6 +54,10 @@ Quando várias branches de código aplicam migrations concorrentes num único ba
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]], as migrations são "o histórico, o controle de versão do seu banco de dados", com `up`/`down` ("um vai e um volta") no Knex. O caso de uso apresentado é a equipe: um comando e todos têm o mesmo schema.
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], `subject` passa de `TEXT` a `INTEGER` editando o `CREATE TABLE IF NOT EXISTS`, o que não muda um arquivo que já existe. Funcionou porque o banco tinha sido apagado. É o caso típico que pede migration.
+
 ## Key Sources
 
 - [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]]
@@ -61,3 +65,4 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecole
 - [[wiki/sources/database-branching-testes-neon-fernanda-kipper]] — onde testar migrations concorrentes sem colisão de schema entre branches
 - [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — Flyway + Spring Boot: scripts `V<n>__*.sql`, histórico em [[wiki/concepts/flyway-schema-history]], [[wiki/concepts/imutabilidade-de-migration]] (checksum) e Hibernate só validando; tese de que alterar o banco à mão gera [[wiki/concepts/drift-de-schema-entre-ambientes]]
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: migrations como versão do banco; up/down no Knex
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: IF NOT EXISTS não muda o esquema

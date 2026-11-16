@@ -4,7 +4,7 @@ title: "Database Transactions"
 aliases: ["transações", "prisma transaction", "$transaction"]
 date_created: 2026-04-22
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [banco-de-dados, acid, transactions, prisma, postgresql]
 skill: tech-mentor-system-design
 status: stable
@@ -54,6 +54,10 @@ Uma transação de banco de dados garante atomicidade **apenas entre operações
 
 Exemplo ao vivo em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: ponto + `point_items` numa transação Knex. O teste de "rollback" parecia funcionar só porque faltava o `trx.commit()`, então nada era gravado. A forma com callback (`knex.transaction(async trx => ...)`) evita o esquecimento.
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o cadastro faz três `INSERT` em sequência (professor, aula, horários) sem transação. Os testes com erro deixaram "outros Diego Fernandes" nas tabelas. `BEGIN`/`COMMIT` com `ROLLBACK` no `catch` evitaria cadastros pela metade.
+
 ## Key Sources
 
 - [[wiki/sources/banco-de-dados]]
@@ -63,3 +67,4 @@ Exemplo ao vivo em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-k
 - [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] — mesmo exemplo de transferência bancária para atomicidade; nuance sobre isolamento em escritas concorrentes
 - [[wiki/sources/10-conceitos-fundamentais-backend]] — mesmo exemplo de transferência bancária (R$100), reforçado com o caso de duas compras simultâneas do último item em estoque
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: commit esquecido e falso rollback; forma com callback
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: três INSERT sem transação

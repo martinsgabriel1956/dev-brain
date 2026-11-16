@@ -4,7 +4,7 @@ title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
 date_updated: 2026-11-16
-source_count: 48
+source_count: 49
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -162,6 +162,10 @@ Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], [[wiki/entities
 
 Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], [[wiki/entities/mayk-brito|Mayk]] compara a página com o layout de Thiago (1440 × 820) e mede os espaços do grid (86 e 87 px), mas avisa: "não precisa dessa minúcia toda".
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o layout tem um estado vazio ("Nenhum professor encontrado com a sua pesquisa") e uma versão 2.0 com página de sucesso do cadastro, que vira desafio.
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -212,3 +216,4 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], [[wik
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: design do layout do YouTube com grid de 12 colunas (96 px, gutter 24) que vira o container (ferramenta inferida)
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: cores do Proffy copiadas do Figma
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: medir o layout e não exagerar na minúcia
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: estado vazio e versão 2.0

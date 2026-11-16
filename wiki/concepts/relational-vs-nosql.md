@@ -4,7 +4,7 @@ title: "Relacional vs NoSQL"
 aliases: ["sql vs nosql", "relational vs document", "escolha de banco"]
 date_created: 2026-04-22
 date_updated: 2026-11-16
-source_count: 9
+source_count: 10
 tags: [banco-de-dados, nosql, postgresql, system-design, trade-offs]
 skill: tech-mentor-system-design
 status: stable
@@ -84,6 +84,10 @@ Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]],
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]], Diego escolhe SQL por ser "o mais tradicional" do mercado e corrige um mito: NoSQL "pode ser menos performático se você tentar utilizar ele da forma errada".
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], "SQL é um tipo de banco de dados chamado de banco de dados relacional, porque ele consegue relacionar uma tabela com a outra". É a mesma leitura imprecisa da NLW #1: "relação" é a tabela, como Mayk tinha dito minutos antes.
+
 ## Key Sources
 
 
@@ -96,3 +100,4 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecole
 - [[wiki/sources/sgbd-conceitos-fundamentais-questoes-concurso]] — terminologia formal SGBDR vs. SGBD NoSQL cobrada em concurso
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: clientes/estados; "relacional porque faz relações" (impreciso)
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: SQL por padrão; NoSQL não é mais rápido por definição
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: "relacional porque relaciona"

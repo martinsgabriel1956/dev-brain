@@ -3,8 +3,8 @@ type: concept
 title: "Password Hashing"
 aliases: ["hashing de senhas", "armazenamento seguro de senhas", "password storage"]
 date_created: 2026-06-11
-date_updated: 2026-08-26
-source_count: 6
+date_updated: 2026-11-16
+source_count: 7
 tags: [segurança, criptografia, password-hashing, autenticação]
 skill: tech-mentor-security
 status: stable
@@ -93,6 +93,10 @@ $hash = password_hash($password . $pepper, PASSWORD_ARGON2ID, [
 - [[wiki/concepts/ataque-online-vs-offline-senha]] — password hashing é a defesa do ataque offline; rate limit/MFA cobrem o ataque online, que hash sozinho não previne
 - [[wiki/concepts/identity-provider-terceirizacao-autenticacao]] — escada de terceirização (lib → framework → identity provider → passwordless) para quem não quer implementar isso do zero
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], a abertura fala de senha "criptografada", que você "precisa fazer uma lógica para poder desvendar". Senha não se criptografa: passa por um hash lento com sal, que só se compara.
+
 ## Key Sources
 
 - [[wiki/sources/seguranca-armazenamento-senhas-banco-de-dados]]
@@ -101,3 +105,4 @@ $hash = password_hash($password . $pepper, PASSWORD_ARGON2ID, [
 - [[wiki/sources/criptografia-cesar-vigenere-rsa-aes-hashing-quantica]]
 - [[wiki/sources/autenticacao-moderna-senha-sessao-jwt-oauth-mfa-passkeys]] — comparação numérica SHA-256 (1 bilhão hashes/s em GPU) vs. work factor de bcrypt/Argon2
 - [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — enquadra hash/salt/pepper como defesa do ataque offline especificamente, distinto de rate limit/MFA para o ataque online
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: senha "criptografada"

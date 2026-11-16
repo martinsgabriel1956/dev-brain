@@ -4,7 +4,7 @@ title: "Igualdade em JavaScript (== x ===)"
 aliases: ["==", "===", "igualdade estrita", "igualdade abstrata", "comparação em JavaScript"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [javascript, tipos, coercao, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -28,7 +28,12 @@ Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta
 
 Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o `{% if filters.subject == loop.index %}` do Nunjucks só funciona porque o `==` é frouxo: a query traz a string "2" e o loop dá o número 2. Com `===` nenhuma opção seria selecionada.
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], `{% if proffys == "" %}` reconhece a lista vazia porque `[] == ""` é verdadeiro: o array vira string vazia. É a segunda vez na NLW #2 que o `==` frouxo faz o template funcionar.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: `==` e `!=` em findIndex/filter; "tanto faz" (impreciso)
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: == frouxo salva a comparação string x número
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: [] == "" no estado vazio

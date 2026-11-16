@@ -4,7 +4,7 @@ title: "Express"
 aliases: ["Express.js", "express", "ExpressJS"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [nodejs, backend, framework, http, javascript]
 skill: lang-dynamic
 status: stub
@@ -44,6 +44,10 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 
 Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o Proffy usa `const server = express()`, `server.use(express.static("public"))`, rotas `get` com `(req, res)`, `res.send`, `res.sendFile(__dirname + ...)`, `res.render` e `res.redirect("/study")`, `req.query` para os filtros e `listen(5500)`. Tensão: `express.static("public")` é relativo ao diretório de onde o processo roda.
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], `server.use(express.urlencoded({ extended: true }))` habilita o `req.body`, e `server.post("/save-classes", saveClasses)` recebe o cadastro. O fim é `res.redirect("/study" + queryString)`. Os handlers viram `async`; no `catch`, só `console.log`, e a requisição fica sem resposta.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: servidor, rotas GET, `express.static` e integração com Nunjucks (Express 4, 2020)
@@ -52,3 +56,4 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o Proffy 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: Router, express.json, express.static, cors, controllers
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: Multer e celebrate como middlewares de rota
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: static, rotas, req.query, redirect
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: urlencoded, post, redirect filtrado

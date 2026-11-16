@@ -4,7 +4,7 @@ title: "Debugging"
 aliases: ["depuração", "encontrar bugs"]
 date_created: 2026-07-09
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [debugging, resolucao-de-problemas, pensamento-estruturado]
 skill: tech-mentor-leadership
 status: stub
@@ -43,6 +43,10 @@ Usa `console.log` em cada passo do algoritmo: "Console log tira todas as dúvida
 
 Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] rastreia o dado com `console.log` nas duas pontas: no navegador, com "Preserve log" para não perder no reload, e no terminal, para o servidor. Também simula um erro de propósito (`INSERT INT`) para testar o `res.send("Erro no cadastro")`, e usa a aba Network para ver as requisições.
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], Mayk lê os erros em voz alta: `near "Fernandes": syntax error` (faltavam aspas), uma vírgula sobrando, `no such column`, `filter is not defined`, "Cannot POST /save-classes" (rota com nome diferente) e um espaço solto na query. "Identificar, entender, resolver." O SQL "não fala exatamente onde tá o erro".
+
 ## Key Sources
 
 - [[wiki/sources/pensamento-estruturado-resolucao-de-problemas]]
@@ -51,6 +55,7 @@ Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]],
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — aplicação a APIs: conferir as peças da requisição no DevTools em vez de tentar de novo (ver [[wiki/concepts/debug-de-requisicao-http]])
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: três bugs ao vivo; console.log como sonda
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: console.log nas duas pontas; erro simulado; Network
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: lendo erros de SQL e de rota
 
 ## Key sources (adição 2026-10-14)
 

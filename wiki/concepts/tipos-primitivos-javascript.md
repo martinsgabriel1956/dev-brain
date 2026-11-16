@@ -4,7 +4,7 @@ title: "Tipos Primitivos em JavaScript"
 aliases: ["8 tipos de javascript", "typeof javascript", "primitive types javascript", "Object.prototype.toString"]
 date_created: 2026-07-10
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [javascript, tipagem, type-checking, fundamentos]
 skill: lang-dynamic
 status: draft
@@ -69,8 +69,13 @@ Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[w
 
 Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], aparecem string (aspas simples ou duplas), boolean (`true` no `cloneNode`, "o famoso 8 ou 80"), null (o retorno de `querySelector` sem resultado) e objetos tipados como NodeList.
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], `Number((hour * 60) + minutes)` concatena: `"09" * 60` vira 540, mas `540 + "00"` vira `"54000"`. O filtro funciona por acaso, porque cadastro e busca usam a mesma função. O certo é `Number(hour) * 60 + Number(minutes)`.
+
 ## Key sources
 
 - [[wiki/sources/8-tipos-de-javascript]]
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: coerção string + number; undefined
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: string, boolean, null, NodeList
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: + concatena string em convertHoursToMinutes

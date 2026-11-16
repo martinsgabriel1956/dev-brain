@@ -4,7 +4,7 @@ title: "Array"
 aliases: ["vetor", "lista indexada", "indexed array"]
 date_created: 2026-06-01
 date_updated: 2026-11-16
-source_count: 14
+source_count: 15
 tags: [cs-fundamentals, estruturas-de-dados, array, performance, big-o]
 skill: cs-fundamentals
 status: draft
@@ -89,6 +89,10 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], `querySe
 
 Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], os professores são "um objeto dentro de uma lista de objetos"; `profs.push(data)` ("push significa empurrar") adiciona, `Object.keys(data).length` diz se o objeto tem chaves e `subjects[+n - 1]` corrige o índice que começa em 0.
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], `map` x `forEach`: o `map` monta "um novo array" com os retornos, e o segundo argumento "é a posição do array". É usado para os `db.run` dos horários e para casar `weekday[index]` com `time_from[index]`. No fim, um `proffys.map` só muda os objetos, que é trabalho de `forEach`.
+
 ## Key sources
 
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]]
@@ -105,3 +109,4 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], os profes
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: values do INSERT, rows e length
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: NodeList, índice 0 e forEach
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: array de objetos, push, Object.keys
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: map com index, map x forEach

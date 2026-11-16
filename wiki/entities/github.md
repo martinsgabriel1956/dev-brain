@@ -4,7 +4,7 @@ title: "GitHub"
 aliases: ["github.com"]
 date_created: 2026-09-23
 date_updated: 2026-11-16
-source_count: 9
+source_count: 10
 tags: [plataforma, git, incidente, sistemas-distribuidos, security]
 skill: tech-mentor-system-design
 status: stub
@@ -32,6 +32,10 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], [[wik
 
 Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], os avatares dos professores de exemplo (Diego, Mayk, Clayton Souza) vêm do Copy Image Link nos perfis do GitHub.
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o avatar do professor de exemplo é o link da imagem de perfil do GitHub de [[wiki/entities/mayk-brito|Mayk]] (Copy Image Link).
+
 ## Key sources
 
 - [[wiki/sources/github-2018-cap-pacelc-particao-video]] — incidente de 2018 usado para explicar CAP/PACELC
@@ -39,6 +43,7 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], os avatar
 - [[wiki/sources/secrets-vazadas-no-github-conceitos-e-riscos]] — limites técnicos da API de busca de código (indexação, teto de resultados) relevantes para a descoberta de secrets vazadas
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: link do avatar para o card
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: avatares do array
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: avatar de exemplo
 
 ## Key sources (adição 2026-10-30)
 

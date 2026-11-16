@@ -4,7 +4,7 @@ title: "Visual Studio Code"
 aliases: ["VS Code", "VSCode"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 18
+source_count: 19
 tags: [ferramenta, editor, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -69,6 +69,10 @@ Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], o VS
 
 Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o terminal integrado passa a usar o Git Bash (Select Default Shell), com split para dois terminais; fechar o painel deixa o processo rodando, a lixeira mata. Shift + End seleciona até o fim da linha, Alt + clique cria vários cursores.
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], a extensão SQLite abre o `database.sqlite` (Open Database) no SQLite Explorer, com Show Table. O editor deixa cinza uma variável não usada, e foi assim que Mayk achou `insertedClass` trocado; Alt+clique põe aspas em vários `${}` de uma vez.
+
 ## Key sources
 
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — Emmet e Live Server na aula de básico de CSS
@@ -89,3 +93,4 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o termina
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: Ctrl+P, Shift + clique, Ctrl+D
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: Live Sass Compiler e Live Server
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: Git Bash no terminal integrado
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: extensão SQLite e variável não usada

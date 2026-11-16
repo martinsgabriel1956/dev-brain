@@ -4,7 +4,7 @@ title: "Rocketseat"
 aliases: ["Rocket Seat", "Rocket City"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 20
+source_count: 21
 tags: [empresa, educacao, programacao, branding]
 skill: ux-ui-mentor
 status: stub
@@ -64,6 +64,10 @@ O dia 3 da NLW #2 ([[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-pr
 
 No dia 4 da NLW #2 ([[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]), Clayton Souza, "colaborador da Rocketseat", vira professor de exemplo no cadastro; [[wiki/entities/mayk-brito|Mayk]] agradece por ter conhecido a Rocketseat (a transcrição dizia "Rocket City").
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+No fim do dia 5 da NLW #2 ([[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]), [[wiki/entities/mayk-brito|Mayk]] avisa que não haverá turma do Launchbase porque a Rocketseat prepara "uma tonelada de mudanças e melhorias em todos os projetos", e promete uma novidade gratuita para a comunidade.
+
 ## Key Sources
 
 - [[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-screens]]
@@ -86,3 +90,4 @@ No dia 4 da NLW #2 ([[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-pr
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: Camila, professora de inglês
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: fim do front-end do Proffy
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: Clayton Souza como exemplo
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: sem Launchbase, novidade gratuita

@@ -4,7 +4,7 @@ title: "Post/Redirect/Get (PRG)"
 aliases: ["PRG pattern", "redirect after post", "303 see other"]
 date_created: 2026-07-09
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [http, formularios, ux, double-submit]
 skill: tech-mentor-backend
 status: stub
@@ -36,8 +36,13 @@ Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]],
 
 Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], depois de adicionar o professor, o servidor faz `res.redirect("/study")` em vez de renderizar a página. O envio ainda é GET; o POST entra no dia 5.
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o Proffy aplica o padrão: depois do `INSERT`, `res.redirect("/study" + queryString)` leva a uma página GET já filtrada pela primeira aula cadastrada. Recarregar depois disso não duplica o cadastro, ao contrário da NLW #1.
+
 ## Key Sources
 
 - [[wiki/sources/double-spend-double-submit]] — documento primário
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: POST sem redirect no Ecoleta: reload duplica
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: redirect após cadastro, ainda via GET
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: redirect com filtro após o POST

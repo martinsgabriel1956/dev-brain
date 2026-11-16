@@ -4,7 +4,7 @@ title: "Diego Fernandes"
 aliases: ["Diego", "Diego Fernandes Rocketseat"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [pessoa, educador, rocketseat, nodejs, react, react-native, typescript]
 skill: lang-dynamic
 status: stub
@@ -36,6 +36,10 @@ No dia 2 da NLW #2 ([[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estud
 
 No dia 4 da NLW #2 ([[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]), Diego é o primeiro objeto do array `profs` no servidor (Química, R$ 20), copiado do card estático do dia 2.
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+No dia 5 da NLW #2 ([[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]), os dados do Diego (Química, R$ 20) são o primeiro professor inserido no SQLite; o nome sem aspas gera o erro `near "Fernandes"`. [[wiki/entities/mayk-brito|Mayk]] cita o GoStack, "que o Diego é o professor".
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: dia 1, API REST, TypeScript, React e React Native
@@ -45,3 +49,4 @@ No dia 4 da NLW #2 ([[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-pr
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: dia 5: upload, validação, GitHub, deploy
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: exemplo no card de professor do Proffy
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: primeiro professor do array
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: primeiro INSERT e o erro de aspas

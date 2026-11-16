@@ -4,7 +4,7 @@ title: "Validação de Entrada"
 aliases: ["input validation", "validação de dados", "nunca confie no client"]
 date_created: 2026-07-09
 date_updated: 2026-11-16
-source_count: 10
+source_count: 11
 tags: [validacao, seguranca, backend, regra-de-negocio, arquitetura-em-camadas, celebrate, joi, schema-validation]
 skill: tech-mentor-backend
 status: stub
@@ -63,6 +63,10 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], a validação finalmente chega ao back-end com celebrate e Joi (`abortEarly: false`, 400 com todas as mensagens). Ficam brechas: o arquivo grava antes de validar, a imagem não é obrigatória (500), e `uf` aceita "s".
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], a página de estudo confere só se os filtros existem (`if (!filters.subject || !filters.weekday || !filters.time)`), não se são números válidos. O cadastro não confere nada antes de gravar. Validar tipo e formato e usar placeholders `?` fecharia a injeção.
+
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-backend]]
@@ -75,3 +79,4 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: front-end sem validação: '0' e [0,0] vão para a API
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: texto livre comparado por igualdade
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: celebrate/Joi no POST e o que ficou de fora
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: só checa presença dos filtros

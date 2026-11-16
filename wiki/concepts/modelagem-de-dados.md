@@ -3,8 +3,8 @@ type: concept
 title: "Modelagem de Dados"
 aliases: ["data modeling", "modelagem relacional", "normalização"]
 date_created: 2026-07-09
-date_updated: 2026-07-31
-source_count: 5
+date_updated: 2026-11-16
+source_count: 6
 tags: [banco-de-dados, modelagem, normalizacao, indice, backend]
 skill: tech-mentor-backend
 status: stub
@@ -48,6 +48,10 @@ Um simulador de supermercado é citado como projeto ideal para exercitar modelag
 
 [[wiki/sources/system-design-entrevista-cinema-draw-io]] oferece um critério simples e verbalizável em entrevista: usar MySQL para a tabela de filmes (id, nome, categoria) "por motivos didáticos", mas reconhecer que, se filmes "não têm relação com outra coisa" no domínio real, um banco não relacional (MongoDB) seria uma escolha igualmente válida. Não substitui o esquema híbrido SQL+NoSQL de [[wiki/sources/anatomia-entrevista-system-design-bigtech]] acima — é um caso mais simples, de entidade isolada, sem relacionamento a modelar.
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o Proffy é modelado em três tabelas (professor 1:N aula 1:N horário). Os horários viram inteiros para permitir `<=` e `>`, e a matéria vira um número que o servidor traduz com `getSubject`. Ver [[wiki/concepts/normalizacao-de-dados]].
+
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-backend]]
@@ -55,3 +59,4 @@ Um simulador de supermercado é citado como projeto ideal para exercitar modelag
 - [[wiki/sources/anatomia-entrevista-system-design-bigtech]]
 - [[wiki/sources/system-design-entrevista-cinema-draw-io]] — critério prático de escolha SQL vs. NoSQL baseado em existência de relação entre entidades
 - [[wiki/sources/tres-projetos-para-aprender-programar]] — simulador de supermercado como projeto de aprendizado de modelagem de domínio
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: proffys, classes, class_schedule

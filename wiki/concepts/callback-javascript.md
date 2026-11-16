@@ -4,7 +4,7 @@ title: "Callback (JavaScript)"
 aliases: ["callback", "função de callback", "callback hell", "error-first callback"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [javascript, nodejs, assincrono, funcoes, lang-dynamic]
 skill: lang-dynamic
 status: stub
@@ -36,8 +36,13 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], o `filename` do Multer recebe `callback(error, filename)`, o padrão error-first, com `null` quando não há erro.
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o `then(execute)` recebe a função pelo nome, sem executá-la, e a chama quando o banco termina de abrir. Encadear `then` dentro de `then` vira "uma bagunça", e por isso a aula passa a [[wiki/concepts/async-await]]. A NLW #1 fazia o mesmo com callbacks do `sqlite3`.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: callbacks do sqlite3 (run/all), error-first, referência x execução, `this` x arrow
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: referência x execução no onClick do React
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: callback error-first do Multer
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: then com função nomeada, rumo ao await

@@ -4,7 +4,7 @@ title: "SQLite"
 aliases: ["sqlite3", "banco embarcado"]
 date_created: 2026-07-27
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [sqlite, banco-de-dados, embarcado, mobile, backend]
 skill: tech-mentor-backend
 status: stub
@@ -40,9 +40,14 @@ Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]],
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]], o SQLite é escolhido para não instalar nada ("um arquivo físico mesmo") e usado via [[wiki/entities/knex]] com `useNullAsDefault`. Ele vem com chaves estrangeiras desligadas; ver [[wiki/concepts/chave-estrangeira]].
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o Proffy usa o pacote `sqlite-async` (`Database.open(__dirname + "/database.sqlite")`, `exec`, `run`, `all`, `lastID`), com três tabelas. O SQLite aceita as aspas duplas da aula como texto só por compatibilidade, não valida chaves estrangeiras sem `PRAGMA foreign_keys = ON` e não altera tabela existente com `CREATE TABLE IF NOT EXISTS`.
+
 ## Key Sources
 
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]]
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: anunciado para o dia 5
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: CRUD com sqlite3 no Ecoleta; concorrência
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: SQLite via Knex; FKs desligadas por padrão
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: sqlite-async, três tabelas, aspas duplas

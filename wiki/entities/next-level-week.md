@@ -4,7 +4,7 @@ title: "Next Level Week (NLW)"
 aliases: ["NLW", "Next Level Week", "NLW #1", "Ecoleta", "NLW #2", "Proffy"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 14
+source_count: 15
 tags: [evento, educacao, rocketseat, frontend, ecoleta, proffy]
 skill: tech-mentor-frontend
 status: stub
@@ -62,6 +62,10 @@ No dia 3 da NLW #2 ([[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-p
 
 No dia 4 da NLW #2 ([[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]), o Proffy ganha servidor Express, rotas, Nunjucks, filtros que voltam preenchidos e cadastro em memória. O banco de dados (SQLite) fica para o dia 5.
 
+## Na NLW #2, dia 5 (Mayk Brito)
+
+O dia 5 da NLW #2 ([[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]) fecha a trilha Discovery: o Proffy grava professores, aulas e horários no SQLite e filtra por matéria, dia e hora. Não haverá turma do Launchbase desta vez; há encontro ao vivo no domingo e três desafios (página de sucesso, campos de horário vazios, layout 2.0).
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: dia 1, apresentação do Ecoleta e página inicial em HTML e CSS ([[wiki/entities/mayk-brito]])
@@ -78,3 +82,4 @@ No dia 4 da NLW #2 ([[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-pr
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: landing page e página study do Proffy
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: give-classes e JavaScript
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: back-end do Proffy
+- [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: SQLite, filtros e desafios
