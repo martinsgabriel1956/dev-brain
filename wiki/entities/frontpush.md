@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 18
+source_count: 19
 tags: [curso, frontend, ui-design, landing-page]
 skill: ux-ui-mentor
 status: stub
@@ -110,6 +110,10 @@ Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-res
 
 Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]]: "sempre o Notion funcionando como material de apoio", com os links de cada aula. Um módulo vai tratar grid e flexbox no código.
 
+## Branding de boost: foguete e órbitas
+
+Na edição "W7" ([[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]]), o branding do site é "boost", "um empurrão na sua carreira"; daí o foguete e as órbitas com planetas que aparecem nas aulas. A edição FrontPUSH descreve o mesmo fundo como eclipse.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -144,3 +148,4 @@ Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-fl
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — blocos horizontais do site que quebram na vertical (design fluido)
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — Notion com os links de grids
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — wireframes de features e de menu do curso, todos no grid de 12 colunas
+- [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — branding de "boost": foguete, órbitas e planetas

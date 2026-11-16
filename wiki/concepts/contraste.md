@@ -4,7 +4,7 @@ title: "Contraste"
 aliases: ["contraste de cor", "color contrast", "contraste em UI", "isolation effect", "efeito Von Restorff"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 19
+source_count: 20
 tags: [ui, ui-design, cor, acessibilidade, hierarquia-visual, cta]
 skill: ux-ui-mentor
 status: stub
@@ -86,6 +86,10 @@ Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]]: "
 
 No processo de wireframes, o "contraste bem colocado entre as cores" é decisão do protótipo final, com o [[wiki/concepts/style-guide]]; o [[wiki/concepts/wireframe]] fica em escala de cinza para continuar fácil de mudar ([[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]]).
 
+## Cor de contraste no fundo, em pouca quantidade
+
+Na prática de elementos de composição, os planetinhas usam "a cor de contraste do branding" (laranja no slide "W7"), com sombra da mesma cor a 30%; o resto (órbitas pontilhadas, linhas) fica em cinza baixo sobre preto ([[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]]). `[skill: ux-ui-mentor]` sombra colorida no escuro lê como brilho, não como elevação.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — contraste para acessibilidade e para o CTA
@@ -109,3 +113,4 @@ No processo de wireframes, o "contraste bem colocado entre as cores" é decisão
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — aula de acessibilidade: contraste guia a jornada; A/AA/AAA; AA no mínimo, AAA para governo
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — contraste e tamanho como pontos de atenção na leitura em Z
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — contraste é decisão do protótipo final, não do wireframe cinza
+- [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — planetinhas na cor de contraste com sombra da própria cor

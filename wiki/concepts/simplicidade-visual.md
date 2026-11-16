@@ -4,7 +4,7 @@ title: "Simplicidade Visual"
 aliases: ["simplicidade", "menos é mais", "less is more", "design minimalista", "ponto focal"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 8
+source_count: 9
 tags: [ui, ui-design, simplicidade, minimalismo, carga-cognitiva, espaco-em-branco]
 skill: ux-ui-mentor
 status: stub
@@ -59,6 +59,10 @@ Em [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-efi
 
 "Se você não conseguir identificar o que é usabilidade em determinada interface, é porque provavelmente ela tem." A regra final da aula: "sempre use o menos possível"; uma interface "muito carregada [...] com muitas funções" não é "necessariamente boa para se utilizar". O programa de gestão em que "usa-se em torno de 20%" das funções volta como argumento ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]). Ver [[wiki/concepts/usabilidade]].
 
+## Simplicidade no background
+
+Elemento de composição "tem que ser simples para poder formar o background, não pode tirar a atenção do usuário": pontinhos, linhas e uma elipse de 6 px bastam para sugerir um cometa ([[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]]).
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]]
@@ -71,3 +75,4 @@ Em [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-efi
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — wireframe como desenho com "a maior simplicidade possível"
 - [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — "mais recursos do que deveria"; KISS no slide
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — usabilidade invisível; "use o menos possível"; os 20% de novo
+- [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — elementos de composição simples para não roubar atenção

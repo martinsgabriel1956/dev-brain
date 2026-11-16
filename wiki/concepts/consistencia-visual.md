@@ -4,7 +4,7 @@ title: "Consistência Visual"
 aliases: ["consistência", "consistência em UI", "consistency", "identidade visual", "família de ícones"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 21
+source_count: 22
 tags: [ui, ui-design, consistencia, icones, cor, identidade-visual, design-system]
 skill: ux-ui-mentor
 status: stub
@@ -118,6 +118,10 @@ Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-res
 
 Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]: "sempre quando eu penso em algum valor, eu já penso nesses valores aqui [...] e aí eu criei consistência no meu design". Nada de 53 ou 55 px; os valores saem do [[wiki/concepts/grid-de-8-pontos]], e o alinhamento sai do [[wiki/concepts/grid-de-colunas]].
 
+## Consistência nos elementos de composição
+
+A aula prática de elementos de composição fecha com ela: "sempre a querida consistência no princípio de design ajudando a gente". As órbitas, planetas e cometas repetem a mesma cor de contraste, o mesmo stroke e o mesmo tema em todas as telas ([[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]]).
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — ícones, paleta e identidade visual
@@ -148,3 +152,4 @@ Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]: "sempr
 - [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — grid como alinhamento e "consistência de distância"
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — valores sempre da regra dos oito pontos; nunca 53 ou 55
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — blocos do mesmo tamanho como a mesma classe; textos sempre alinhados a uma coluna
+- [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — elementos de composição fecham com consistência

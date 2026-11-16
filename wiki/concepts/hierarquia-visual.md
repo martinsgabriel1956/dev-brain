@@ -4,7 +4,7 @@ title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
 date_updated: 2026-11-15
-source_count: 18
+source_count: 19
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -125,6 +125,10 @@ O [[wiki/concepts/secao-hero|hero]] é "a primeira informação" e "a primeira i
 
 No site da [[wiki/entities/apple]], cada seção tem "uma headline maior, uma headline segunda com a hierarquia de texto onde descreve um pouco mais" e um link, repetido em todos os produtos ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]).
 
+## Composição só para compor o cenário
+
+"Não é para poder tirar a atenção do seu usuário, é simplesmente para compor um cenário": o fundo de órbitas e cometas fica atrás do texto, sem disputar o ponto focal ([[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]]).
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -150,3 +154,4 @@ No site da [[wiki/entities/apple]], cada seção tem "uma headline maior, uma he
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — F para conteúdo pesado, Z para pontos de atenção (contraste e tamanho)
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — hero como primeira informação da página
 - [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — seções da Apple com headline, subtítulo e link
+- [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — fundo de órbitas e cometas não disputa o ponto focal

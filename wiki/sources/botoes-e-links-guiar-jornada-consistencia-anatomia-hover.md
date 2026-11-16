@@ -121,3 +121,4 @@ Aula teórica (cerca de 16 min) que abre o bloco de [[wiki/concepts/botoes-em-in
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — a aula seguinte: as seis formas de botão
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — a aula prática no Figma: padding, gradiente, Smooth Shadow, sombra "curinga"
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]]: "inscreva-se" repetido como pattern de página de venda; objetivo da interface no briefing
+- [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — a mesma sombra da cor do elemento aplicada aos planetinhas dos elementos de composição

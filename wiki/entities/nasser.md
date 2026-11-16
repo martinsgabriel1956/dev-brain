@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 31
+source_count: 32
 tags: [pessoa, instrutor, ui-design, design, curso]
 skill: ux-ui-mentor
 status: stub
@@ -96,3 +96,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — aula de grids, parte 2, da edição "W7" (autoria inferida): width, columns, gutter e max-width por dispositivo, breakpoints, resolução, regra dos oito pontos
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — aula prática 2 de grids (autoria inferida): links do Notion (Grid System Library, Bootstrap, Material Design, Flexbox Grid, responsivo x adaptativo, exemplos Dropbox/Dribbble)
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — primeira aula prática de grids (FrontPUSH; autoria inferida): 12 colunas tipo Center, 72 + 36 = 1260, pensar em blocos, grid como guia, equilíbrio do menu
+- [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — elementos de composição na prática (edição "W7"; autoria inferida): stroke, pontilhado 2, 10, planetas, cometas, PlayStation

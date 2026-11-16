@@ -3,7 +3,7 @@ type: source
 title: "Elementos da interface: elementos de composição (ambiência, background, branding e empty screens)"
 aliases: ["aula de elementos de composição", "elementos de composição", "ambiência na interface"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
+date_updated: 2026-11-14
 source_count: 0
 tags: [ui, ui-design, design, elementos-da-interface, elementos-de-composicao, ambiencia, background, branding, identidade-visual, contraste, ponto-focal, empty-state, gradiente, landing-page]
 skill: ux-ui-mentor
@@ -120,3 +120,7 @@ Aula de [[wiki/entities/nasser|Násser]] no módulo de [[wiki/concepts/elementos
 > "Literalmente isso aqui foi uma bolinha, está vendo? É uma bolinha, só que ela está com layer blur em 400."
 
 > "É lógico que depende do projeto, não é uma regra, mas eu estou mostrando um recurso a mais que eu coloco nos meus projetos."
+
+## Ver também
+
+- [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — versão da edição "W7": prática no Figma (stroke, pontilhado, planetas, cometas)
