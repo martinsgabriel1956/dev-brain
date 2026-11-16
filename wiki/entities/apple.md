@@ -3,8 +3,8 @@ type: entity
 title: "Apple"
 aliases: ["Apple Inc.", "apple.com"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [empresa, big-tech, ui-design, referencia]
 skill: ux-ui-mentor
 status: stub
@@ -25,7 +25,12 @@ Empresa de tecnologia (iPhone, Mac). Nas aulas de UI, o site é referência: emp
 
 Citada como usuária de botão de bordas circulares, "para poder trazer mais para perto" ([[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]).
 
+## Padrões de usabilidade no site
+
+Em [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]], o site é o exemplo de boas práticas de [[wiki/concepts/usabilidade]]. O menu é horizontal, no topo, fixo, com todos os produtos, "que é justamente onde você procura" ([[wiki/concepts/lei-de-jakob]]). As seções repetem ilustração, "headline maior", "headline segunda" e link ([[wiki/concepts/consistencia-visual]]). O submenu do iPhone usa ícones que se entendem "por mais que eu não saiba ler" ([[wiki/concepts/icones-em-interfaces]]). "As interfaces da Apple têm notas boas em quesito usabilidade", segundo "diversas declarações" que ele ouviu.
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — links e botões do site; demo no modo celular
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — exemplo de botão circular
+- [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — menu fixo, seções repetidas e ícones como padrões de usabilidade

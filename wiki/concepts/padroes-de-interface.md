@@ -3,8 +3,8 @@ type: concept
 title: "Padrões de Interface (UI Patterns)"
 aliases: ["ui patterns", "padrões de ui", "design patterns de interface", "interaction patterns", "padrões de interação"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 7
+date_updated: 2026-11-15
+source_count: 8
 tags: [ui, ux, design, padroes-de-interface, usabilidade]
 skill: ux-ui-mentor
 status: draft
@@ -60,6 +60,10 @@ Prova prática do pattern: com o Facebook em japonês, os ícones continuam guia
 
 Na edição "W7" da aula de ícones ([[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]]): "entender o senso comum de ícones e não mudar drasticamente", para atingir mais usuários, "justamente por ter criado um padrão na cabeça do ser humano". Engrenagem bate chave de boca para configuração; carta, balão, escudo, carrinho e sacola são universais; o smartphone, "não sei se é tão universal assim". Em Viena, sem opção de inglês, o autor se guiou pelos ícones.
 
+## Padrões como caminho para a usabilidade
+
+"A usabilidade se dá muito, muito, muito pelo bom uso de boas heurísticas, de patterns, de padrões que já estão bem estabelecidos no mercado." O exemplo é o site da [[wiki/entities/apple]]: menu horizontal fixo no topo, seções sempre com ilustração, headline, subtítulo e link, e ícones no submenu. "As empresas já trabalharam para poder instalar esses padrões na sua cabeça"; "é literalmente não reinventar a roda" ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]). Ver [[wiki/concepts/usabilidade]].
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — o cérebro trabalha com padrões; busca, hambúrguer, lupinha
@@ -69,3 +73,4 @@ Na edição "W7" da aula de ícones ([[wiki/sources/icones-comunicacao-senso-com
 - [[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]] — ícones como patterns aprendidos; o "compartilhar" que a avó não reconhece
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — Facebook em japonês como prova de pattern
 - [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] — senso comum de ícones; engrenagem mais forte que chave de boca; Viena
+- [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — padrões e heurísticas como base da usabilidade; "não reinventar a roda"

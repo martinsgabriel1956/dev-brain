@@ -3,8 +3,8 @@ type: concept
 title: "UX Design"
 aliases: ["user experience", "experiência do usuário", "UX", "UX designer"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [ux, ux-design, design, produto, pesquisa]
 skill: ux-ui-mentor
 status: draft
@@ -45,7 +45,12 @@ Em [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]], um e-commerce falha p
 - [[wiki/concepts/design-como-interacao]]: experiência sentida no uso, não só na primeira impressão.
 - [[wiki/concepts/user-stories]]: outro jeito de pôr a necessidade do usuário no centro da decisão.
 
+## Usabilidade como termo de UX
+
+Na aula de usabilidade do módulo de interfaces web, [[wiki/concepts/usabilidade]] é "um termo mais aplicado ao UX Design", "importantíssimo", que "muita gente simplesmente não dá a devida importância". A aula abre o "pilar de pesquisa" do módulo, a base teórica antes da prática ([[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]]).
+
 ## Key Sources
 
 - [[wiki/sources/o-que-e-ux-ui-design]]
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — UI e UX alinhados; jornada de e-commerce
+- [[wiki/sources/usabilidade-facilmente-tres-esferas-boas-praticas-auxilio-emergencial]] — usabilidade como termo de UX; abre o pilar de pesquisa do módulo de interfaces web
