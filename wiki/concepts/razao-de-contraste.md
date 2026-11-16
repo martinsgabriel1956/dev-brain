@@ -1,0 +1,41 @@
+---
+type: concept
+title: "Razão de contraste"
+aliases: ["contrast ratio", "razão de contraste WCAG", "contraste WCAG", "nota de contraste"]
+date_created: 2026-11-15
+date_updated: 2026-11-15
+source_count: 1
+tags: [ui, acessibilidade, wcag, contraste, cor, tipografia]
+skill: ux-ui-mentor
+status: stub
+---
+
+# Razão de contraste
+
+Número que mede a diferença de [[wiki/concepts/luminosidade-das-cores|luminância]] entre a cor do texto e a do fundo. É o que checkers como o [[wiki/entities/who-can-use]] calculam. Na aula de [[wiki/entities/nasser|Násser]], é "uma nota de 0 a 21" que a WCAG "elaborou" para trabalhar o contraste de textos "abrangendo as dificuldades visuais" ([[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]]).
+
+## Como se calcula
+
+`[external]` Razão = (L1 + 0,05) / (L2 + 0,05), com L1 a luminância relativa da cor mais clara. Vai de **1:1** (mesma cor) a **21:1** (preto no branco). Não existe 0 (https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html).
+
+## Os limites
+
+| Caso | AA | AAA |
+|---|---|---|
+| Texto normal | 4.5:1 | 7:1 |
+| Texto grande | 3:1 | 4.5:1 |
+| Componentes e ícones informativos (1.4.11) | 3:1 | — |
+
+`[external]` "Grande" na WCAG é **18 pt (~24 px)** ou **14 pt (~18,7 px) em negrito**. `[skill: ux-ui-mentor]` A skill escreve "18px+ ou 14px bold"; a unidade certa é pt.
+
+## As três notas da aula
+
+O checker mostrado na aula colore o resultado: **vermelho** reprova; **laranja** passa só com peso e tamanho maiores ("em botões você pode utilizar, só que em corpo de texto é um pouco mais complicado"); verde passa. Corresponde a falhar, passar só em texto grande (3:1) e passar em texto normal (4.5:1). Leitura do agente: a faixa laranja não cobre um label comum de botão de 16 px, que não é "texto grande".
+
+## Exemplo: o verde do FrontPUSH
+
+O verde do [[wiki/entities/frontpush]] dá 1.65 contra o branco e reprova. O hex falado ("5F36A") tem cinco dígitos; `#5FE36A` é a única inserção de um dígito que dá ~1,65 (cálculo do agente: 1,66:1 no branco, 12,68:1 no preto). Por isso o botão verde leva texto preto.
+
+## Key Sources
+
+- [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — nota de 0 a 21 (na verdade 1 a 21); notas vermelha, laranja e verde; verde do FrontPUSH a 1.65

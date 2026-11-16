@@ -3,8 +3,8 @@ type: concept
 title: "Cor semântica"
 aliases: ["cores semânticas", "cor de feedback", "cor de estado", "semantic color", "status colors"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [ui, ui-design, cor, cor-semantica, feedback, acessibilidade, design-tokens]
 skill: ux-ui-mentor
 status: stub
@@ -37,7 +37,12 @@ Cor usada para dizer algo, não para enfeitar: o usuário lê o estado ou o tipo
 
 Em [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]]: nos ícones do site do autor, "tudo que é laranja está remetendo ao curso de UI Design", "uma seleção que o seu cérebro faz até pela cor". É convenção de marca, não de estado; vale a mesma regra de nunca depender só da cor.
 
+## Em tipografia: cores auxiliares
+
+Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]], Násser retoma as convenções com o [[wiki/entities/twitter-bootstrap|Bootstrap]] aberto e completa o mapa com o **verde**: "sucesso, deu certo, cadastrado, entregue". Azul é "simplesmente informativo, então é algum link"; vermelho, erro; amarelo, alerta. Recomenda definir "cores auxiliares" para a passagem de informação.
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — azul link, vermelho alerta, amarelo warning; botão preenchido como hierarquia
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — laranja = curso de UI Design nos ícones do site
+- [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — verde = sucesso; cores auxiliares; Bootstrap como referência

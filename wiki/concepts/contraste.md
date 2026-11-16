@@ -3,8 +3,8 @@ type: concept
 title: "Contraste"
 aliases: ["contraste de cor", "color contrast", "contraste em UI", "isolation effect", "efeito Von Restorff"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 17
+date_updated: 2026-11-15
+source_count: 18
 tags: [ui, ui-design, cor, acessibilidade, hierarquia-visual, cta]
 skill: ux-ui-mentor
 status: stub
@@ -70,6 +70,10 @@ Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: o 
 
 No Madero, botões retos e letra sem serifa "vêm aqui justamente para poder causar um contraste maior" com as fotos de comida e de pessoas ([[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]). Ver [[wiki/concepts/formas-de-botoes]].
 
+## Melhorar o contraste sem trocar a paleta
+
+Na aula de tipografia e cores ([[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]]), Násser dá uma escada para quando a paleta não ajuda: observar a [[wiki/concepts/luminosidade-das-cores|luminosidade das cores]] (amarelo, ciano e verde brigam com o branco), aumentar o peso, aumentar a escala, inverter as cores e, em imagem, escurecer o fundo. Último recurso: baixar saturação ou brilho, "sacrificar a sua paleta" nos CTAs. O verde e o laranja do [[wiki/entities/frontpush]] reprovam com texto branco (verde a 1.65) e passam com preto. Ver [[wiki/concepts/razao-de-contraste]].
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — contraste para acessibilidade e para o CTA
@@ -89,3 +93,4 @@ No Madero, botões retos e letra sem serifa "vêm aqui justamente para poder cau
 - [[wiki/sources/imagens-e-ilustracoes-pratica-figma-importar-editor-plugins-exportacao]] — retângulo preto a 20% de opacidade atrás do título branco; editor de imagem do Figma (exposição, contraste)
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — fundo do botão na cor de contraste da paleta; o "ímã"
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — botões retos como contraste no Madero
+- [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — escada para melhorar contraste sem trocar a paleta; verde e laranja do FrontPUSH com texto preto

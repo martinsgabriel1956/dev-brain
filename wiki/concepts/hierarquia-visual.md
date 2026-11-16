@@ -3,8 +3,8 @@ type: concept
 title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
-date_updated: 2026-11-13
-source_count: 17
+date_updated: 2026-11-15
+source_count: 18
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -101,6 +101,10 @@ Em [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]]
 
 Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: botão primário preenchido e secundário "vazio", sem background, criam hierarquia entre ações. Na [[wiki/entities/apple]], links em branco e texto em cinza; no [[wiki/entities/sketch]], o link "tem a hierarquia visual maior do corpo de texto". Ver [[wiki/concepts/botoes-em-interfaces]].
 
+## Hierarquia textual pela escala de cinza
+
+Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]]: no texto, a hierarquia vem de escala, peso, caixa alta e cor, e a cor entra como escala de cinza (títulos mais escuros, apoio mais claro). No [[wiki/entities/frontpush]], o título "O que compõe o FrontPUSH" é maior, mais pesado e com mais contraste, e o leitor decide por ele se lê o resto; no [[wiki/entities/google]], o título azul vem antes da descrição. `[skill: ux-ui-mentor]` Cada nível de cinza ainda precisa de 4.5:1 com o fundo.
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -120,3 +124,4 @@ Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: bo
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — 16 / 32 / 128 como níveis de hierarquia
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-compreensao-consistencia-svg-tinyimage]] — destaque por cor nas ilustrações aponta onde está o motion
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — botão primário x secundário; link branco x texto cinza (Apple)
+- [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — escala de cinza como hierarquia textual; títulos do FrontPUSH e do Google

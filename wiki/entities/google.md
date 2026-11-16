@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-11-13
-source_count: 23
+date_updated: 2026-11-15
+source_count: 24
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -60,6 +60,10 @@ Engrenagem para configurar e "nove pontinhos" para os apps do Google: exemplo de
 
 Na visão geral dos elementos de Násser, os resultados do Google mostram espaço que agrupa e separa e linha que reforça a divisão ([[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]]).
 
+## Títulos azuis como hierarquia
+
+Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]]: na busca, o usuário "vai procurar primeiro pelos itens em azul", maiores e com mais contraste; lê o título e só então clica ou lê a descrição. Ver [[wiki/concepts/hierarquia-visual]].
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — Google Cloud entre os hyperscalers do imaginário de nuvem
@@ -80,6 +84,7 @@ Na visão geral dos elementos de Násser, os resultados do Google mostram espaç
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — resultados de busca como exemplo de espaço e linhas
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — resultados separados pelo espaço maior entre eles
 - [[wiki/sources/imagens-e-ilustracoes-introducao-svg-bancos-texto-branco-resolucoes-formatos]] — buscar "pessoas conversando" no Google como exemplo de foto genérica
+- [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — títulos azuis da busca como hierarquia textual
 
 ## Adição (2026-10-14)
 

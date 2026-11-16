@@ -3,8 +3,8 @@ type: entity
 title: "Who Can Use"
 aliases: ["whocanuse", "whocanuse.com", "WhoCanUse"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 1
+date_updated: 2026-11-15
+source_count: 2
 tags: [ferramenta, acessibilidade, contraste, wcag, cor, tipografia]
 skill: ux-ui-mentor
 status: stub
@@ -20,6 +20,11 @@ Ferramenta web de [[wiki/concepts/contraste]]: recebe a cor do texto e a cor do 
 
 Compara duas cores sólidas. Sobre foto, o fundo varia ponto a ponto; meça no pior ponto atrás do texto. Ver [[wiki/concepts/texto-sobre-imagem]].
 
+## Na aula de tipografia
+
+Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]], Násser testa o verde do [[wiki/entities/frontpush]] ("deu feio, está falho") e mostra a lista de condições (Trichromatic, dificuldade com vermelho, Red blind, dificuldade com verde) e as simulações de glaucoma e catarata. Com texto preto, o laranja "passou em todas". O "68%" que ele lê como "quase foi satisfeito" provavelmente é a fatia da população com aquela visão (inferência). Ver [[wiki/concepts/razao-de-contraste]].
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-bom-senso-contraste-padronizacao-blend-modes]] — complemento à seção de contraste; notas "A, 2A, 3A"
+- [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — teste do verde e do laranja do FrontPUSH; condições de visão

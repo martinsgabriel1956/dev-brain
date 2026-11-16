@@ -3,8 +3,8 @@ type: concept
 title: "Texto sobre imagem (capa de gradiente)"
 aliases: ["como escrever em imagens", "texto em cima de imagem", "overlay de gradiente", "capa de gradiente", "scrim", "linear gradient sobre imagem"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 4
+date_updated: 2026-11-15
+source_count: 5
 tags: [ui, ui-design, imagens, contraste, legibilidade, gradiente, acessibilidade, css]
 skill: ux-ui-mentor
 status: stub
@@ -53,9 +53,14 @@ Na edição "W7" o texto branco é "um coringa", e outras cores são exceção. 
 
 Na prática da edição "W7", em vez de baixar a exposição da foto, ele deixa a foto original, desenha um retângulo preto com 20% de opacidade e traz o título branco para a frente (bring to front) ([[wiki/sources/imagens-e-ilustracoes-pratica-figma-importar-editor-plugins-exportacao]]). `[skill: ux-ui-mentor]` Os 20% são ponto de partida: conferir 4,5:1 no pior ponto da foto atrás do texto.
 
+## Na aula de tipografia
+
+Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]], "em imagens sempre escureça o fundo para garantir o contraste" entra na escada de saídas de contraste, ao lado de peso, escala e inversão.
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-aspect-ratio-pessoas-ponto-focal-texto]] — letra branca, capa de gradiente, gradiente na cor do fundo
 - [[wiki/sources/imagens-e-ilustracoes-bom-senso-contraste-padronizacao-blend-modes]] — card do blog com linear-gradiente conferido no Who Can Use
 - [[wiki/sources/imagens-e-ilustracoes-introducao-svg-bancos-texto-branco-resolucoes-formatos]] — edição "W7": texto branco como coringa; capa preta com opacidade, saturação e brilho
 - [[wiki/sources/imagens-e-ilustracoes-pratica-figma-importar-editor-plugins-exportacao]] — prática "W7": retângulo preto a 20% de opacidade atrás do título
+- [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — "em imagens sempre escureça o fundo"
