@@ -3,8 +3,8 @@ type: concept
 title: "Drizzle ORM"
 aliases: ["drizzle", "drizzle-orm", "drizzle-kit"]
 date_created: 2026-07-28
-date_updated: 2026-07-28
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [orm, typescript, drizzle, migrations, postgresql, sql, graphql, n-plus-one, left-join]
 skill: tech-mentor-backend
 status: stub
@@ -47,7 +47,10 @@ db.query.users.findMany({
 
 Isso **não é GraphQL** — é syntax sugar para trazer, na camada backend↔banco, uma ergonomia parecida com a que o GraphQL oferece na camada frontend↔backend, resolvendo o mesmo tipo de [[wiki/concepts/n-plus-one|N+1]] sem precisar compor um LEFT JOIN manual. Ver [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]].
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]], o Ecoleta de 2020 usa [[wiki/entities/knex]]. `[skill: lang-dynamic]` Hoje, em TypeScript, a escolha seria Drizzle, Kysely ou Prisma.
+
 ## Key Sources
 
 - [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]]
 - [[wiki/sources/problema-n-mais-1-graphql-orm-solucoes]] — relational queries inspiradas em GraphQL, LEFT JOIN equivalente
+- [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: alternativa atual ao Knex do Ecoleta

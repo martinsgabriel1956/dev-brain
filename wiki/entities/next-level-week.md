@@ -4,7 +4,7 @@ title: "Next Level Week (NLW)"
 aliases: ["NLW", "Next Level Week", "NLW #1", "Ecoleta"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 5
+source_count: 10
 tags: [evento, educacao, rocketseat, frontend, ecoleta]
 skill: tech-mentor-frontend
 status: stub
@@ -32,6 +32,20 @@ Dia 4 da NLW #1 ([[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecole
 
 Dia 5 da NLW #1 ([[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]): o Ecoleta fica completo, com SQLite, cadastro por POST e busca por cidade. A semana termina com um encontro ao vivo no domingo e a abertura das inscrições do Launchbase.
 
+## Na NLW #1, trilha de Diego Fernandes
+
+A mesma edição tem uma segunda trilha, com [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]): o Ecoleta vira uma API REST em Node com [[wiki/entities/typescript]], consumida por uma web em [[wiki/entities/react]] (cadastro de pontos) e por um app em [[wiki/entities/react-native]] com [[wiki/entities/expo]] (mapa, filtro por item, WhatsApp e e-mail). No dia 1, Diego descreve a semana como a "Semana Internacional do Meio Ambiente".
+
+No dia 2 da trilha de [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]), a API do Ecoleta fica pronta com Express, [[wiki/entities/knex]] e SQLite: itens por seed, cadastro de ponto em transação, filtros por UF, cidade e itens, e CORS. Só o upload de imagens fica para depois.
+
+No dia 3 da trilha de [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]), o Ecoleta ganha o front-end web em React: Home, cadastro com mapa Leaflet, itens da API, UF e cidade do IBGE, e envio para `POST /points`.
+
+No dia 4 da trilha de [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]), o Ecoleta ganha o app Android/iOS em React Native com Expo: Home com UF e cidade, mapa filtrado por itens e detalhe com WhatsApp e e-mail.
+
+No dia 5 da trilha de [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]), o Ecoleta ganha upload de imagens (Multer + react-dropzone), validação com celebrate/Joi, repositório no GitHub e um panorama de deploy. Com isso, as duas trilhas da NLW #1 estão completas na wiki.
+
+Comparação das duas trilhas: [[wiki/questions/nlw-1-duas-trilhas-ecoleta-comparacao]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: dia 1, apresentação do Ecoleta e página inicial em HTML e CSS ([[wiki/entities/mayk-brito]])
@@ -39,3 +53,8 @@ Dia 5 da NLW #1 ([[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesqu
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: dia 3: fim do front-end do Ecoleta
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: dia 4: Node, Express, Nunjucks
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: dia 5: Ecoleta completo
+- [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: dia 1 da trilha de Diego Fernandes: layout web e mobile, API REST, TypeScript, React e Expo
+- [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: dia 2 da trilha de Diego: a API completa do Ecoleta
+- [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: dia 3 da trilha de Diego: front-end web em React
+- [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: dia 4 da trilha de Diego: app mobile
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: dia 5 da trilha de Diego: fechamento

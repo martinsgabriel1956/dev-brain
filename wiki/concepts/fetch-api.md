@@ -4,7 +4,7 @@ title: "Fetch API"
 aliases: ["fetch", "fetch()", "window.fetch"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 4
 tags: [frontend, javascript, fetch-api, http, promise, json]
 skill: tech-mentor-frontend
 status: stub
@@ -24,6 +24,13 @@ Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[w
 - `[skill: tech-mentor-frontend]` `AbortSignal.timeout(ms)` cancela requisições lentas sem `setTimeout` manual; retry com backoff exponencial dá resiliência; `AbortController` cancela ao desmontar um componente.
 - `async`/`await` escreve o mesmo encadeamento de forma linear: `const res = await fetch(url); const data = await res.json();`.
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]], Diego diz que o navegador só faz GET. O `fetch` (e o axios, que o front-end costuma usar) faz POST, PUT e DELETE.
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]], Diego escolhe o Axios em vez do `fetch` pela `baseURL` compartilhada; o `fetch` com um wrapper faria o mesmo.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: estados e municípios do IBGE com fetch + then
+- [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: "chamada AJAX [...] desde a época do jQuery"; o termo AJAX (2005) é anterior ao jQuery (2006)
+- [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: o navegador faz outros métodos via fetch
+- [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: Axios x fetch: baseURL

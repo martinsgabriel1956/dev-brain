@@ -4,7 +4,7 @@ title: "Nunjucks"
 aliases: ["nunjucks", "njk", "Nunjucks templates"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [nodejs, template-engine, html, mozilla, javascript]
 skill: lang-dynamic
 status: stub
@@ -33,7 +33,10 @@ No VS Code, a extensão Nunjucks Template exige `files.associations` e `emmet.in
 
 Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] usa `{% for place in places %}` para os cards, `{% if total > 0 %}...{% else %}` para "Nenhum local encontrado" e `{% if saved %}` com `include` do partial `point-created.html`. `[external]` O `for` do Nunjucks aceita `{% else %}` para lista vazia (https://mozilla.github.io/nunjucks/templating.html#for).
 
+Na trilha de [[wiki/entities/diego-fernandes|Diego Fernandes]] da NLW #1 ([[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]), o Nunjucks aparece ao lado de Handlebars e EJS como exemplo do template engine que a API REST deixa de usar.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: configure, render, variáveis, include, extends/block e set no Ecoleta
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: for, if/else, include condicional
+- [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: citado como template engine do Node, em contraste com a API REST

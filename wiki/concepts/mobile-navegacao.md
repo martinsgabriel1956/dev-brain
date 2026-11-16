@@ -4,7 +4,7 @@ title: "Navegação Mobile"
 aliases: ["react navigation", "navigation compose", "gorouter flutter", "mobile routing"]
 date_created: 2026-04-24
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [mobile, navegacao, react-navigation, navigation-compose, gorouter, stack, tab]
 skill: tech-mentor-mobile
 status: stable
@@ -80,8 +80,11 @@ Cada tela empilhada na navigation stack não é "de graça" — ela segura estad
 - [[wiki/concepts/mobile-deep-links]] — integrar deep links com navegação
 - [[wiki/concepts/mobile-state-management-global]] — onde estado de navegação NÃO vai
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: o stack do React Navigation (Home → Points → Detail), o voltar por gesto no iOS e a menção a abas e drawer. Ver [[wiki/concepts/navegacao-em-pilha]].
+
 ## Key Sources
 
 - [[wiki/sources/mobile-navegacao]]
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — vazamento de memória por navigation stack e ciclo de vida mal gerenciados; OOM kill como sintoma final
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: menu web: com poucos itens não precisa de hambúrguer; com muitos, media query troca os links pelo ícone (FrontPUSH)
+- [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: stack no Ecoleta mobile

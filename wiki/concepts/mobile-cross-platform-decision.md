@@ -3,8 +3,8 @@ type: concept
 title: "Decisão Cross-Platform Mobile"
 aliases: ["flutter vs react native", "cross platform decision", "mobile platform choice"]
 date_created: 2026-04-24
-date_updated: 2026-04-24
-source_count: 1
+date_updated: 2026-11-16
+source_count: 3
 tags: [mobile, cross-platform, flutter, react-native, kmp, nativo, decisao]
 skill: tech-mentor-mobile
 status: stable
@@ -46,6 +46,12 @@ Obrigatório para: ARKit/ARCore intensivo, Bluetooth BLE avançado, HealthKit/He
 - [[wiki/concepts/mobile-kmp]] — KMP em profundidade
 - [[wiki/concepts/mobile-design-system]] — como manter consistência entre plataformas
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]], a defesa de iniciante do [[wiki/entities/react-native]]: uma base em vez de um app em Objective-C/Swift e outro em Java/Kotlin, e interface nativa ao contrário de Ionic/PhoneGap.
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], a defesa prática: o mesmo React da web, com estilos em CSS-em-JS via Yoga, roda em Android e iOS.
+
 ## Key Sources
 
 - [[wiki/sources/mobile-cross-platform-decision]]
+- [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: React Native x dois apps nativos
+- [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: prática do RN + Expo no Ecoleta

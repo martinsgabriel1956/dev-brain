@@ -3,8 +3,8 @@ type: concept
 title: "Sistema de Tipos"
 aliases: ["type system", "tipagem estática", "tipagem dinâmica", "inferência de tipos", "static vs dynamic typing"]
 date_created: 2026-07-09
-date_updated: 2026-07-16
-source_count: 3
+date_updated: 2026-11-16
+source_count: 4
 tags: [cs-fundamentals, linguagens-de-programacao, tipagem, compiladores]
 skill: cs-fundamentals
 status: draft
@@ -47,8 +47,11 @@ Rust representa ausência de valor com `Option<T>` (`Some`/`None`) em vez de um 
 - [[wiki/concepts/gerenciamento-de-memoria]] — em Rust, o *type checker* e o *borrow checker* trabalham juntos: ownership é, em parte, verificação de tipos em tempo de compilação
 - [[wiki/concepts/rust-fundamentos]] — `Option`/`Result`/`enum` exaustivo como exemplo concreto de sistema de tipos carregando comportamento possível
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]], o argumento prático da tipagem estática no [[wiki/entities/typescript]]: a função esquecida há três meses não diz se o campo é `user.city` ou `user.address.city`, e o tipo declarado faz o editor responder.
+
 ## Key sources
 
 - [[wiki/sources/como-criar-uma-linguagem-de-programacao]]
 - [[wiki/sources/8-tipos-de-javascript]]
 - [[wiki/sources/rust-por-que-tanto-hype-ownership-borrowing-lifetimes]] — `Option`/`Result`/`match` exaustivo como caso concreto de tipo carregando o comportamento possível
+- [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: TypeScript: tipagem estática e IntelliSense

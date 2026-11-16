@@ -4,7 +4,7 @@ title: "Chave primária"
 aliases: ["primary key", "PK", "chave primária", "AUTOINCREMENT", "INTEGER PRIMARY KEY", "id"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [banco-de-dados, sql, modelagem, sqlite]
 skill: tech-mentor-data
 status: stub
@@ -30,6 +30,9 @@ Com `AUTOINCREMENT`, depois de apagar o 5 o próximo é o 6, e a listagem mostra
 
 Ele também explica, com clientes e estados, como um número que aponta para outra tabela evita repetir "São Paulo" dois mil vezes. É a ideia da chave estrangeira, sem dizer o nome.
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]], `table.increments('id').primary()` gera o id auto-incremento ("1, 2, 3, 4") nas três tabelas do Ecoleta. A pivô `point_items` ficou sem chave composta.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: `id INTEGER PRIMARY KEY AUTOINCREMENT` na tabela places; ids não reaproveitados
+- [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: increments().primary() no Knex; pivô sem PK composta

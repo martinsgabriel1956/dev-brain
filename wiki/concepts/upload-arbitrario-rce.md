@@ -3,8 +3,8 @@ type: concept
 title: "Upload Arbitrário → RCE"
 aliases: ["arbitrary file upload", "upload malicioso", "rce via upload", "unrestricted file upload"]
 date_created: 2026-07-31
-date_updated: 2026-10-30
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [rce, upload, appsec, mime-type, plugin, code-execution, owasp]
 skill: tech-mentor-security
 status: stub
@@ -33,6 +33,8 @@ Extensão de arquivo é metadado controlado pelo cliente — renomear `shell.php
 - [[wiki/concepts/secrets-management]] — parte da mesma cadeia de ataque, na origem
 - [[wiki/concepts/attack-surface]] — uma funcionalidade de "plugin custom" é superfície de ataque de alto risco por definição; deveria exigir camadas extras de confiança/validação, não as mesmas de um upload comum
 
+Caso didático em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: Multer sem `limits` nem `fileFilter`, tipo confiado no `mimetype` do cliente e arquivos servidos estaticamente.
+
 ## Key Sources
 
 - [[wiki/sources/vibe-coding-env-exposto-idor-account-takeover-rce-loja-ia]]
@@ -44,3 +46,4 @@ Para uploads que chegam direto ao object storage, validar num [[wiki/concepts/bu
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — bucket de quarentena para escanear malware antes do bucket final
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: upload sem filtro no Ecoleta

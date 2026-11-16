@@ -202,6 +202,7 @@ Citados sem página: pacote `sqlite3`, Excel, Notion (roteiro das aulas), Thiago
 - O Ecoleta termina sem edição, sem exclusão pela interface, sem autenticação e sem deploy. O "de quebra" do DELETE só roda pelo terminal.
 - A tabela de itens normalizada, que o exemplo de clientes e estados prepara, fica sem implementação.
 - Data provável: 5 de junho de 2020, o quinto dia da NLW #1 `[external, não verificado]`. Mayk se refere a ela como "a última aula".
+- A mesma semana teve outra trilha (Diego Fernandes: API, React, React Native). Comparação em [[wiki/questions/nlw-1-duas-trilhas-ecoleta-comparacao]].
 
 ## Raw quotes
 

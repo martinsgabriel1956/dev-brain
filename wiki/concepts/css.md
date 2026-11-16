@@ -4,7 +4,7 @@ title: "CSS (Cascading Style Sheets)"
 aliases: ['CSS', 'folhas de estilo em cascata']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 19
+source_count: 20
 tags: [css, frontend, web, historia, box-model, shorthand-css]
 skill: tech-mentor-frontend
 status: draft
@@ -69,6 +69,8 @@ Em [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-document
 
 Em [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]], [[wiki/entities/nasser|Násser]] separa de novo as duas funções: "a estilização é literalmente utilização do CSS básico; a parte de Flexbox é construir layout responsivo".
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], as propriedades CSS sobrevivem no React Native como objetos JS (`StyleSheet.create`), em camelCase e sem `px`, traduzidas pelo Yoga para o nativo.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -90,3 +92,4 @@ Em [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]], [[wiki/ent
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: as duas funções do CSS: estilização e layout
 - [[wiki/sources/frontpush-conclusao-modulo-css-estilo-layout-animacao-documentacao]]: estilo, layout e animação; "versão 3" (CSS é modular desde o 2.1)
 - [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]]: estilização = CSS básico; layout = Flexbox
+- [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: CSS-em-JS do React Native

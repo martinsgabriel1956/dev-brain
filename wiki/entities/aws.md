@@ -3,8 +3,8 @@ type: entity
 title: "AWS"
 aliases: ["amazon web services"]
 date_created: 2026-09-15
-date_updated: 2026-10-30
-source_count: 7
+date_updated: 2026-11-16
+source_count: 8
 tags: [empresa, cloud, forward-deployed-engineer, solutions-architect]
 skill: tech-mentor-leadership
 status: stub
@@ -26,6 +26,8 @@ Citada como exemplo do modelo em que se compra **capacidade, não hardware**; a 
 
 **Atualização 2026-10-26:** Provider AWS do Terraform: [[wiki/concepts/terraform-provider]], [[wiki/concepts/ec2]].
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], AWS, GCP e Azure são o destino quando a aplicação cresce, "com uma pessoa [...] de SRE". O S3 aparece para hospedar o front-end estático.
+
 ## Key Sources
 
 - [[wiki/sources/mainframe-as-a-service-casas-bahia-sulamerica-kyndryl]] — hyperscaler como referência do modelo de consumo
@@ -38,3 +40,4 @@ Citada como exemplo do modelo em que se compra **capacidade, não hardware**; a 
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — S3 (presigned URL, multipart até 50 TB), SQS para evento de conclusão, CloudFront com egress S3→CF gratuito
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: escala e S3 para front estático

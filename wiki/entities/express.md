@@ -4,7 +4,7 @@ title: "Express"
 aliases: ["Express.js", "express", "ExpressJS"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 5
 tags: [nodejs, backend, framework, http, javascript]
 skill: lang-dynamic
 status: stub
@@ -34,7 +34,16 @@ Ver [[wiki/concepts/metodos-http]] e [[wiki/concepts/requisicao-http]].
 
 Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] adiciona `server.post("/savepoint", ...)`, `server.use(express.urlencoded({ extended: true }))` (sem ele, `req.body` vem `undefined`), `req.query.search` para a busca e respostas dentro dos callbacks do banco. `[skill: lang-dynamic]` No Express 5, `urlencoded` passa a ter `extended: false` por padrão.
 
+Na NLW #1 com [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]), o Express é "um micro framework para lidar com rotas", agora em TypeScript: `@types/express -D`, `app.get('/users')`, `response.json([...])` e `app.listen(3333)`.
+
+Na API de [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]): `express.Router()` em `routes.ts`, `app.use(express.json())` para ler o body, `express.static` para `/uploads`, `cors()`, e handlers `async` em controllers. `[skill: lang-dynamic]` No Express 4, erro em handler async não chega ao tratador e deixa a requisição pendurada; o Express 5 resolve.
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: `upload.single('image')` (Multer) e `celebrate(...)` como middlewares encadeados na rota `POST /points`, mais `app.use(errors())` para devolver 400 com as mensagens do Joi.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: servidor, rotas GET, `express.static` e integração com Nunjucks (Express 4, 2020)
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: POST, urlencoded, req.body, req.query
+- [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: Express com TypeScript e @types/express, response.json
+- [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: Router, express.json, express.static, cors, controllers
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: Multer e celebrate como middlewares de rota

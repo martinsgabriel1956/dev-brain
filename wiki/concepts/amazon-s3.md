@@ -3,8 +3,8 @@ type: concept
 title: "Amazon S3"
 aliases: ["S3", "Simple Storage Service"]
 date_created: 2026-08-04
-date_updated: 2026-10-30
-source_count: 5
+date_updated: 2026-11-16
+source_count: 6
 tags: ["aws", "s3", "storage", "cdn", "infra", "cloud"]
 skill: tech-mentor-infra
 status: stub
@@ -38,6 +38,8 @@ Objetos podem ter até 5 TB (50 TB desde dez/2025 — ver "Limites de Upload" ab
 
 No Instagram simplificado, a imagem sai do disco local do back end para um bucket S3 com URL pública servida por CDN ([[wiki/concepts/cdn]]).
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], citado como hospedagem do front-end React "conforme a sua aplicação for crescendo".
+
 ## Key Sources
 
 - [[wiki/sources/toolkit-aws-servicos-essenciais-para-aplicacoes-escalaveis]]
@@ -52,3 +54,4 @@ PUT único: até 5 GB; AWS recomenda [[wiki/concepts/multipart-upload]] a partir
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — presigned URL (PUT/GET), multipart até 50 TB, durabilidade, integração com SQS/CloudFront
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: hospedagem de front estático

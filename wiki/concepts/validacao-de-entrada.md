@@ -4,7 +4,7 @@ title: "Validação de Entrada"
 aliases: ["input validation", "validação de dados", "nunca confie no client"]
 date_created: 2026-07-09
 date_updated: 2026-11-16
-source_count: 6
+source_count: 10
 tags: [validacao, seguranca, backend, regra-de-negocio, arquitetura-em-camadas, celebrate, joi, schema-validation]
 skill: tech-mentor-backend
 status: stub
@@ -55,6 +55,14 @@ Essa camada **não substitui** a query parametrizada (placeholders `$1`/`$2`) �
 
 Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]], os valores de `req.body` vão direto para o INSERT, sem validação no servidor. Só valem o `required` e o `type="url"` do navegador, que qualquer requisição feita fora da página ignora.
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]], `Number()` e `String()` nos params e no query servem só para calar o TypeScript, e nada é validado (`items=abc` vira `NaN`, filtro sem `city` procura "undefined"). Mesma lacuna do [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta|dia 5 de Mayk]].
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]], o formulário React envia `'0'` como UF ou cidade e `[0, 0]` como posição quando nada é escolhido: sem `required`, sem checagem antes do `api.post`.
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], UF e cidade são digitadas livremente e comparadas por igualdade exata no back-end: "rio do sul" não acha "Rio do Sul".
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], a validação finalmente chega ao back-end com celebrate e Joi (`abortEarly: false`, 400 com todas as mensagens). Ficam brechas: o arquivo grava antes de validar, a imagem não é obrigatória (500), e `uf` aceita "s".
+
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-backend]]
@@ -63,3 +71,7 @@ Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]],
 - [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] — validação de formato como defesa fraca isolada contra SQLi: comportamento opaco do validador e campos de texto livre não cobertos
 - [[wiki/sources/o-que-diferencia-pleno-de-junior-decisoes-legibilidade-modelagem]] — 'valide, pesquise, entenda a regra de negócio'; preço/estoque negativos como entrada/estado inválido
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: sem validação no servidor no Ecoleta
+- [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: coerção de tipos no lugar de validação
+- [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: front-end sem validação: '0' e [0,0] vão para a API
+- [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: texto livre comparado por igualdade
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: celebrate/Joi no POST e o que ficou de fora

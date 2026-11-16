@@ -4,7 +4,7 @@ title: "package.json"
 aliases: ["package.json", "package-lock.json", "npm init", "manifesto do projeto Node"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [nodejs, npm, dependencias, json, tooling]
 skill: lang-dynamic
 status: stub
@@ -29,6 +29,9 @@ Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/e
 - **Dependências:** o `npm install express` aparece em `dependencies`. Quem clona o projeto roda `npm install`, e "sozinho o npm já baixa de novo todas as dependências".
 - **Aviso:** com o `package.json` aberto e não salvo durante a instalação, a dependência pode não ser gravada.
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: `npm init -y`, `dependencies` x `devDependencies` (`-D` para `@types/express`, `ts-node`, `typescript`) e o script `dev`. Diego chama o `package-lock.json` de "arquivo de cache"; não é, é o lockfile, e vai para o repositório.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: npm init -y, scripts start, dependencies e devDependencies; node_modules fora do Git
+- [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: npm init -y, -D, script dev; package-lock como "cache" (incorreto)

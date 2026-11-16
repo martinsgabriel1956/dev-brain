@@ -3,8 +3,8 @@ type: concept
 title: "Permissões Runtime — Mobile"
 aliases: ["runtime permissions android", "ios permissions", "privacy manifest apple"]
 date_created: 2026-04-24
-date_updated: 2026-04-24
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [mobile, permissoes, runtime-permissions, privacy-manifest, ios, android]
 skill: tech-mentor-mobile
 status: stable
@@ -85,6 +85,9 @@ Linking.openSettings(); // abre configurações do app
 - [[wiki/concepts/mobile-seguranca]] — permissões como parte da postura de segurança
 - [[wiki/concepts/mobile-biometria]] — permissão de biometria
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], `Location.requestPermissionsAsync()` (hoje `requestForegroundPermissionsAsync`) e `Alert` quando a permissão é negada. O app fica sem mapa porque não há alternativa à recusa.
+
 ## Key Sources
 
 - [[wiki/sources/mobile-permissoes]]
+- [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: permissão de localização sem fallback

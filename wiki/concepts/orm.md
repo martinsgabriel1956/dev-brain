@@ -3,8 +3,8 @@ type: concept
 title: "ORM (Object-Relational Mapping)"
 aliases: ["orm", "object relational mapping", "mapeamento objeto-relacional"]
 date_created: 2026-07-03
-date_updated: 2026-11-10
-source_count: 8
+date_updated: 2026-11-16
+source_count: 9
 tags: [orm, sql, banco-de-dados, prisma, hibernate, doctrine, abstracao, drizzle, migrations, n-plus-one, lazy-loading, django]
 skill: tech-mentor-backend
 status: stub
@@ -78,6 +78,8 @@ Com SQL cru, a migration é escrita diretamente. Com ORM, o fluxo é o inverso: 
 
 O Hibernate configura a estratégia por associação. O Prisma pede `include` explícito, e o TypeORM oferece relações lazy como `Promise`. Ver [[wiki/concepts/lazy-vs-eager-loading]] e [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]].
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]], o [[wiki/entities/knex]] é um [[wiki/concepts/query-builder]], não um ORM, e Diego chama o Repository de "data mapper". No catálogo de Fowler, são padrões diferentes.
+
 ## Key Sources
 
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
@@ -91,3 +93,4 @@ O Hibernate configura a estratégia por associação. O Prisma pede `include` ex
 ## Key sources (adição 2026-11-10)
 
 - [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]] — lazy e eager no Hibernate e no Prisma; listagem enxuta com detalhe no `get by id`
+- [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: query builder x ORM; Repository ≠ Data Mapper

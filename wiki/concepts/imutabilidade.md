@@ -3,8 +3,8 @@ type: concept
 title: "Imutabilidade"
 aliases: ["immutability", "dados imutáveis", "readonly"]
 date_created: 2026-04-25
-date_updated: 2026-10-06
-source_count: 4
+date_updated: 2026-11-16
+source_count: 6
 tags: [imutabilidade, software-design, estado, clean-code, programacao-funcional, datomic, event-sourcing, strings, encoding]
 skill: tech-mentor-backend
 status: stable
@@ -78,6 +78,10 @@ Em quase todas as linguagens (Go, Java, Python, JavaScript, C#, Rust), [[string|
 
 Exemplo: o caractere chinês `世` ocupa 3 bytes em UTF-8. Sobrescrever apenas o primeiro byte resultaria em uma sequência inválida — o computador não saberia interpretar os bytes restantes. Por isso, ao invés de mutar, linguagens como Go forçam criar uma nova string.
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]], Diego explica a imutabilidade do estado React ("criar um novo valor [...] com as modificações"), o spread em `formData` e `[...selectedItems, id]` em vez de `push`. A justificação é "performance", mas o motivo primário é que o React detecta mudança comparando referências.
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], o `handleSelectItem` com `filter` e spread é copiado da web sem mudança, e os estilos em array (`[styles.item, cond ? styles.selectedItem : {}]`) seguem a mesma lógica.
+
 ## Key sources
 
 - [[wiki/sources/acoplamento-abstracao-estado]]
@@ -87,3 +91,5 @@ Exemplo: o caractere chinês `世` ocupa 3 bytes em UTF-8. Sobrescrever apenas o
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — config carregada uma vez e exposta read-only: [[wiki/concepts/estado-global-inofensivo]].
+- [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: estado React: spread em vez de push
+- [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: mesma seleção imutável no mobile

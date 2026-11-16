@@ -3,8 +3,8 @@ type: entity
 title: "Linus Torvalds"
 aliases: ["linus", "criador do linux"]
 date_created: 2026-10-06
-date_updated: 2026-11-05
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [linux, kernel, baixo-nivel, pessoa]
 skill: tech-mentor-leadership
 status: stub
@@ -20,7 +20,10 @@ Ver [[wiki/concepts/programacao-de-baixo-nivel-como-carreira]], [[wiki/concepts/
 
 [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] cita Torvalds para dizer que no open source nem toda opinião pesa igual, com link para uma notícia de 2013 sobre uma desenvolvedora do kernel pedindo que ele parasse de usar linguagem abusiva. A notícia, a julgar pela URL, é uma contestação da conduta, o que enfraquece o exemplo. A página não foi lida.
 
+[[wiki/entities/diego-fernandes|Diego Fernandes]] fecha o dia 1 da NLW #1 ([[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]) com a frase "talk is cheap, show me the code", atribuída a Linus numa mensagem à lista do kernel em 2000 `[external]` (https://lkml.org/lkml/2000/8/25/132).
+
 ## Key sources
 
 - [[wiki/sources/senioridade-nao-e-so-tecnica-especializacao-negocio-dados-confianca-em-crise]]
 - [[wiki/sources/agile-a-verdade-por-tras-do-metodo-akita]] — citado como exemplo de que nem toda opinião pesa igual no open source
+- [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: citado: "talk is cheap, show me the code"

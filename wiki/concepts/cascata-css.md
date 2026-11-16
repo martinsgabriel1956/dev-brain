@@ -4,7 +4,7 @@ title: "Cascata do CSS (prioridade entre estilos)"
 aliases: ["cascade", "cascata CSS", "prioridade do CSS", "estilo inline", "estilo incorporado", "CSS externo", "formas de aplicar CSS"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [css, cascata, especificidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -44,6 +44,8 @@ Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[w
 
 Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] responde uma dúvida da turma: o `responsive.css` tem de vir por último, porque se vier antes, as regras seguintes "sobrescrevem" as da media query. É a cascata por ordem de origem, agora explicada direito (o dia 1 chamava seletor descendente de cascata).
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], o React Native não tem cascata nem herança `View` → `Text`: cada `Text` recebe o próprio estilo. A exceção é `Text` dentro de `Text`, que herda.
+
 ## Key sources
 
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — externo, incorporado e inline; "quanto mais para baixo, maior a prioridade"; demo em que o externo vence o incorporado
@@ -51,3 +53,4 @@ Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: ordem dos arquivos CSS
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: estilos padrão do navegador sobrescritos pelo autor; ver [[wiki/concepts/estilos-padrao-do-navegador-e-reset]]
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: ordem dos links e sobrescrita
+- [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: sem cascata no React Native

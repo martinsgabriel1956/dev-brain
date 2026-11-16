@@ -3,8 +3,8 @@ type: concept
 title: "Same-Origin Policy"
 aliases: ["same-origin policy", "sop", "política de mesma origem", "cross-origin read", "cross-origin write"]
 date_created: 2026-11-03
-date_updated: 2026-11-03
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [same-origin-policy, navegador, seguranca, origem, cross-origin]
 skill: tech-mentor-security
 status: draft
@@ -38,7 +38,10 @@ Origem compara protocolo, domínio e porta. [[wiki/concepts/samesite-cookie|`Sam
 - [[wiki/concepts/cors-misconfiguration]] — quando esse relaxamento é amplo demais
 - [[wiki/concepts/xss]] — o script injetado roda na própria origem da vítima, então a política não o contém `[external — conhecimento geral]`
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]], o React em `localhost:3000` chamando a API em `localhost:3333` é uma origem diferente (outra porta), daí o CORS.
+
 ## Key sources
 
 - [[wiki/sources/csrf-cross-site-request-forgery]] — os três cenários e por que CSRF não quebra a política
 - [[wiki/sources/browser-security]] — a política como base da segurança do navegador (scheme + host + port)
+- [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: porta diferente = origem diferente

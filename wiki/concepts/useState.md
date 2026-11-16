@@ -3,8 +3,8 @@ type: concept
 title: "useState"
 aliases: ["use state", "estado local React"]
 date_created: 2026-04-22
-date_updated: 2026-08-03
-source_count: 3
+date_updated: 2026-11-16
+source_count: 4
 tags: [react, hooks, estado, useState]
 skill: tech-mentor-frontend
 status: stable
@@ -59,8 +59,11 @@ Quando há mais de 2-3 estados relacionados que mudam juntos → ver [[useReduce
 
 O padrão de "callback form" (`setValue(prev => ...)`) não é exclusivo de estado interno do componente — o mesmo `typeof value === "function"` é reaproveitado para implementar setters de stores externas ao React (estilo [[wiki/concepts/zustand]]), permitindo que o setter aceite tanto um valor direto quanto uma função atualizadora, igual à API nativa do `useState`. Ver [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]].
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: o contador que só muda no `console.log` com `let`, `const [counter, setCounter] = useState(0)`, "retorna sempre um array", e `useState<Item[]>([])` tipado. Faltou a forma funcional `setCounter(c => c + 1)` para quando o novo valor depende do anterior.
+
 ## Key Sources
 
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
 - [[wiki/sources/useeffect-problemas-e-solucoes]]
 - [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]] — `useState` como cópia local sincronizada com uma store externa
+- [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: contador, array [valor, set], estado tipado

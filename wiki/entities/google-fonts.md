@@ -4,7 +4,7 @@ title: "Google Fonts"
 aliases: ["fonts.google.com", "Google Web Fonts"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 5
+source_count: 7
 tags: [ferramenta, produto, google, tipografia, fonte, fontes, gratuito, css, frontend]
 skill: ux-ui-mentor
 status: stub
@@ -45,6 +45,10 @@ Em [[wiki/sources/principais-propriedades-css-color-background-font]], [[wiki/en
 
 Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] escolhe Roboto 300/700 para o texto e Ubuntu 700 para os títulos, copiando o `<link>` e a regra `font-family` sugerida. Fonte de nome único dispensa aspas.
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]], Roboto 400 e Ubuntu 700 são carregadas por `<link>` no `index.html` do React; Diego chama o serviço de "o repositório de fontes mais confiável".
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], o Expo Google Fonts (`@expo-google-fonts/roboto` e `/ubuntu`, `useFonts`) carrega Roboto 400/500 e Ubuntu 700 no app. Para Diego, "pergunta para qualquer desenvolvedor o trabalho que dá" fazer isso à mão.
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]: principal referência de fontes; filtros, pesos, `<link>` x `@import`
@@ -52,3 +56,5 @@ Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entitie
 - [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]]: origem dos oito pares; Mukta como exemplo de família ampla e gratuita
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: download family x select style + link; font-family no H1
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: Roboto e Ubuntu na NLW #1
+- [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: Roboto e Ubuntu no Ecoleta web
+- [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: Expo Google Fonts no app

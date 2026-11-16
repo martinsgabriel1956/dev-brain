@@ -4,7 +4,7 @@ title: "Callback (JavaScript)"
 aliases: ["callback", "função de callback", "callback hell", "error-first callback"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 3
 tags: [javascript, nodejs, assincrono, funcoes, lang-dynamic]
 skill: lang-dynamic
 status: stub
@@ -32,6 +32,12 @@ O que ele mostra no código:
 - **Escopo:** o `res.render` vai para dentro do callback, porque `rows` só existe ali.
 - **`this`:** dentro do callback, `this` é o `Statement`, com `lastID`. Por isso ele usa `function` e não arrow function, que não tem `this` próprio.
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: `onClick={() => handleSelectItem(item.id)}`, porque passar `handleSelectItem(item.id)` "está executando a função, ele não está passando a função como referência".
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], o `filename` do Multer recebe `callback(error, filename)`, o padrão error-first, com `null` quando não há erro.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: callbacks do sqlite3 (run/all), error-first, referência x execução, `this` x arrow
+- [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: referência x execução no onClick do React
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: callback error-first do Multer

@@ -4,7 +4,7 @@ title: "Git"
 aliases: ["git", "git init", ".git", "controle de versão"]
 date_created: 2026-08-11
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [git, controle-de-versao, cli, tech-mentor-leadership]
 skill: tech-mentor-infra
 status: stub
@@ -38,6 +38,8 @@ Segundo [[wiki/entities/andre-casciotti]] ([[wiki/sources/o-que-estudar-guia-par
 
 Na aula de ambiente do [[wiki/entities/frontpush]] ([[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]), [[wiki/entities/nasser|Násser]] dá dois motivos para o Git: voltar a uma versão estável quando uma atualização sobe com bug, e organizar time em que cada um sobe um pedaço do código. Vale "mesmo que a gente esteja mexendo com HTML"; em time, "é obrigatório". GitHub e GitLab aparecem como "repositórios online" que usam o Git, o que reforça a distinção Git ≠ GitHub acima. Instalação: Git for Windows (com o Git Bash) antes do [[wiki/entities/vs-code]], para o editor detectá-lo; `sudo apt install git` no Linux. `[external]` A aula diz que o Git for Windows instala "um núcleo do Linux"; na verdade traz Bash e utilitários portados (MSYS2), sem kernel: https://gitforwindows.org/.
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: `git init` no monorepo, `.gitignore`, `git remote add origin`, `git push origin master` e o conselho "um git commit para cada [...] feature". "O Git [...] chega a ser [...] tão importante quanto a linguagem de programação."
+
 ## Key Sources
 
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]]
@@ -46,3 +48,4 @@ Na aula de ambiente do [[wiki/entities/frontpush]] ([[wiki/sources/frontpush-con
 - [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — mesma disciplina de histórico imutável aplicada ao banco: scripts versionados junto do código, com [[wiki/concepts/flyway-schema-history]]
 - [[wiki/sources/introducao-ao-terraform-iac-devops]] — Introdução ao Terraform: versionamento da infra
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Git for Windows, motivos para versionar (rollback e time)
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: fluxo básico até o push

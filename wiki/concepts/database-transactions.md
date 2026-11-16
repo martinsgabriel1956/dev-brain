@@ -3,8 +3,8 @@ type: concept
 title: "Database Transactions"
 aliases: ["transações", "prisma transaction", "$transaction"]
 date_created: 2026-04-22
-date_updated: 2026-09-14
-source_count: 6
+date_updated: 2026-11-16
+source_count: 7
 tags: [banco-de-dados, acid, transactions, prisma, postgresql]
 skill: tech-mentor-system-design
 status: stable
@@ -52,6 +52,8 @@ O agrupamento `BEGIN`/updates/`COMMIT` não implica que tudo já esteja persisti
 
 Uma transação de banco de dados garante atomicidade **apenas entre operações no mesmo banco**. [[wiki/sources/transactional-outbox-pattern-entrevista-cadastro-usuario]] mostra o erro comum de tentar estender essa garantia a uma chamada externa (publicar num broker, chamar um serviço de terceiros) simplesmente envolvendo-a num `BEGIN`/`COMMIT` — se a aplicação ou o banco falharem entre a chamada externa e o commit, a operação externa já aconteceu mas o commit nunca se efetiva (ou vice-versa). Esse é o [[wiki/concepts/dual-write-problem]]; a solução é gravar a intenção da chamada externa como um dado local (tabela outbox) dentro da própria transação, ver [[wiki/concepts/outbox-pattern]].
 
+Exemplo ao vivo em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: ponto + `point_items` numa transação Knex. O teste de "rollback" parecia funcionar só porque faltava o `trx.commit()`, então nada era gravado. A forma com callback (`knex.transaction(async trx => ...)`) evita o esquecimento.
+
 ## Key Sources
 
 - [[wiki/sources/banco-de-dados]]
@@ -60,3 +62,4 @@ Uma transação de banco de dados garante atomicidade **apenas entre operações
 - [[wiki/sources/sql-nao-e-banco-de-dados-uncle-bob]]
 - [[wiki/sources/acid-vs-base-garantias-bancos-de-dados]] — mesmo exemplo de transferência bancária para atomicidade; nuance sobre isolamento em escritas concorrentes
 - [[wiki/sources/10-conceitos-fundamentais-backend]] — mesmo exemplo de transferência bancária (R$100), reforçado com o caso de duas compras simultâneas do último item em estoque
+- [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: commit esquecido e falso rollback; forma com callback

@@ -4,7 +4,7 @@ title: "Métodos HTTP"
 aliases: ["http methods", "get post put delete", "verbos http"]
 date_created: 2026-09-30
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [http, api, rest, idempotencia]
 skill: tech-mentor-networking
 status: stub
@@ -40,8 +40,11 @@ Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/e
 
 Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] completa o dia 4. O formulário passa de GET (dados na URL, `req.query`) para `method="post"` (dados no corpo, `req.body` com `express.urlencoded`). Diz que o POST envia "de uma maneira um pouco mais escondida", mas sem HTTPS o corpo também viaja exposto. Digitar uma URL na barra "só será o verbo get", por isso `/savepoint` dá Cannot GET. Ver [[wiki/concepts/query-string]].
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: GET busca, POST cria, PUT atualiza, DELETE remove, com o Insomnia para testar. Diego diz que "o navegador não sabe fazer outras requisições", mas isso vale só para a barra de endereço; formulários fazem POST e `fetch` usa qualquer método. PUT substitui o recurso inteiro; atualização parcial é PATCH.
+
 ## Key sources
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — GET/PUT/DELETE idempotentes, POST não
 - [[wiki/sources/csrf-cross-site-request-forgery]] — POST de troca de e-mail explorado por CSRF
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: GET em rotas Express; Cannot GET /; POST adiado
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: GET x POST; req.query x req.body
+- [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: GET/POST/PUT/DELETE; "o navegador só faz GET" (só a barra de endereço)

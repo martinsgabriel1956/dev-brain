@@ -4,7 +4,7 @@ title: "Promise (JavaScript)"
 aliases: ["promise", "promessa", "then", "catch", "Promise"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [javascript, promise, assincronia, fetch-api, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -23,6 +23,9 @@ Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[w
 - Um erro não tratado numa promise vira *unhandled rejection*; uma cadeia sem `catch` falha em silêncio para o usuário `[external]` (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 - `async`/`await` é açúcar sintático sobre promises; `try/catch` substitui o `.catch`.
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]], `.then` dentro do `useEffect` (que não aceita `async`) e `await api.post` no `handleSubmit`, sem `catch`.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: promessa pendente, then encadeado, catch citado
+- [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: then no useEffect, await no submit sem catch

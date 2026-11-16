@@ -3,8 +3,8 @@ type: concept
 title: "Currículo vs Portfólio"
 aliases: ["currículo vs portfólio", "promise vs proof", "promessa vs prova"]
 date_created: 2026-04-23
-date_updated: 2026-11-13
-source_count: 10
+date_updated: 2026-11-16
+source_count: 11
 tags: [carreira, contratação, portfólio, evidência]
 skill: tech-mentor-leadership
 status: stable
@@ -72,6 +72,8 @@ Em revisão real de currículos de candidatos júnior, a ausência de link para 
 
 [[wiki/concepts/redesign-como-exercicio]], proposto em [[wiki/sources/como-aprender-ui]], é uma forma de gerar portfólio de UI sem cliente. `[skill: ux-ui-mentor]` Só vale como prova se mostrar raciocínio (problema, opções, decisões anotadas), não apenas telas finais.
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], o README com imagens e tecnologias "chama a atenção de quem tá olhando teu GitHub".
+
 ## Key Sources
 - [[wiki/sources/o-que-faz-um-engenheiro-de-ia-ser-bom-ronald-hulk]] — 'fim da era do parecer': diploma não garante capacidade, a entrega é a prova ([[wiki/concepts/fim-da-era-do-parecer]])
 
@@ -84,3 +86,4 @@ Em revisão real de currículos de candidatos júnior, a ausência de link para 
 - [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]] — reação a currículos reais: ausência de link de GitHub como motivo de descarte explícito, independente de boa formatação
 - [[wiki/sources/o-que-sobrou-pro-dev-junior-eric-wendel]] — projeto pessoal alinhado aos requisitos reais de uma vaga como forma de gerar "o que falar" em entrevista, mesmo sem experiência profissional prévia
 - [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — estudo de caso: currículo com pior formatação venceu na avaliação de trajetória por causa da seção de projetos pessoais com link, ferramentas e data
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: README como vitrine

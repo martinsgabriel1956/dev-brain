@@ -3,8 +3,8 @@ type: concept
 title: "Deploy Strategies"
 aliases: ["estratégias de deploy", "deployment strategies"]
 date_created: 2026-04-22
-date_updated: 2026-08-03
-source_count: 4
+date_updated: 2026-11-16
+source_count: 5
 tags: [devops, deploy, cicd, infra, system-design]
 skill: tech-mentor-infra
 status: stable
@@ -54,9 +54,12 @@ Canary e Rolling têm v1 e v2 simultaneamente. DB schema e API **devem** suporta
 
 Termo usado em SRE para nomear a disciplina de entrega de novas versões como um todo — a escolha entre as estratégias acima (gradual ou não) é a decisão central de Release Engineering, cujo objetivo é sempre minimizar o impacto do deploy no usuário. Ver [[wiki/concepts/sre]].
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], o mapa de onde hospedar por fase: Heroku (teste) → DigitalOcean (pequeno) → AWS/GCP/Azure com SRE; Netlify/Vercel → S3/GCS para o front.
+
 ## Key Sources
 
 - [[wiki/sources/blue-green-canary-rolling]]
 - [[wiki/sources/tipos-de-deploy]]
 - [[wiki/sources/deploy-blue-green-na-pratica-vps-nginx]] — implementação prática de [[wiki/concepts/blue-green-deploy]] num host único, via [[wiki/concepts/reverse-proxy]] e scripts manuais
 - [[wiki/sources/sre-capacidade-observabilidade-confiabilidade-custo]] — nomeia e define Release Engineering como a disciplina que escolhe entre essas estratégias para minimizar impacto
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: onde hospedar por fase do produto

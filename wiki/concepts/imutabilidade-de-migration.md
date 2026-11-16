@@ -3,8 +3,8 @@ type: concept
 title: "Imutabilidade de Migration"
 aliases: ["erro de checksum", "não editar migration aplicada", "flyway checksum"]
 date_created: 2026-10-06
-date_updated: 2026-10-06
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [flyway, migrations, checksum, imutabilidade]
 skill: tech-mentor-backend
 status: draft
@@ -28,6 +28,9 @@ O [[wiki/entities/flyway]] guarda o checksum de cada script em [[wiki/concepts/f
 
 Errou na V2? A correção é a V3 (ex.: `ALTER`/`DROP COLUMN`), mesmo que "feio". Para mudanças destrutivas em produção, o padrão sequencial é [[wiki/concepts/expand-contract]]. Ver também [[wiki/concepts/database-migration]].
 
+Contraexemplo de iniciante em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: migrations vazias foram executadas e o conserto foi apagar o `.sqlite` e rodar de novo. Isso só vale em desenvolvimento; em produção, cria-se uma nova migration.
+
 ## Key sources
 
 - [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] (o erro é descrito, não demonstrado)
+- [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: apagar o banco como atalho de desenvolvimento

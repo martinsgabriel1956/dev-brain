@@ -3,8 +3,8 @@ type: concept
 title: "Separação de Responsabilidades"
 aliases: ["separation of concerns", "SoC", "cada parte cuida de uma coisa só"]
 date_created: 2026-05-13
-date_updated: 2026-05-13
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [separacao-de-responsabilidades, arquitetura, fundamentos, cs-fundamentals]
 skill: cs-fundamentals
 status: draft
@@ -30,6 +30,9 @@ No caixa eletrônico, o módulo de autenticação não precisa saber nada sobre 
 - Aparece em escalas diferentes: funções, módulos, serviços, microsserviços
 - Base do princípio Single Responsibility (SOLID)
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]], a divisão é entre camadas: o back-end fica com regras de negócio e banco, o front-end com interface, CSS e interação.
+
 ## Key sources
 
 - [[wiki/sources/logica-de-programacao-quatro-passos]]
+- [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: back-end x front-end no par API + SPA

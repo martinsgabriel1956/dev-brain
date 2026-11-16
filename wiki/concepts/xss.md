@@ -3,8 +3,8 @@ type: concept
 title: "XSS (Cross-Site Scripting)"
 aliases: ["xss", "cross-site scripting", "injeção javascript", "script injection"]
 date_created: 2026-06-10
-date_updated: 2026-11-03
-source_count: 11
+date_updated: 2026-11-16
+source_count: 12
 tags: [security, xss, owasp, appsec, input-sanitization, attack-surface, dvwa, csp]
 skill: tech-mentor-security
 status: draft
@@ -85,6 +85,8 @@ A mesma fonte cita que, de todos os ataques documentados em 2019, cerca de 74% e
 
 [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] lista XSS junto a CSRF e cookies como base "básica" da segurança web; o `HttpOnly` dos cookies de sessão impede que um XSS os leia via JavaScript ([[wiki/concepts/sessoes-http-cookies]], [[wiki/concepts/csrf]]).
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], o upload sem `fileFilter`, servido pelo `express.static` no mesmo domínio da API, permite subir um HTML/SVG com script e gerar XSS armazenado.
+
 ## Key Sources
 
 - [[wiki/sources/omxterm-terminal-web-pty-websocket-ssh-deploy-docker-traefik-otavio-miranda]] — XSS na lista de estudo; HttpOnly como mitigação
@@ -98,3 +100,4 @@ A mesma fonte cita que, de todos os ataques documentados em 2019, cerca de 74% e
 - [[wiki/sources/hospedando-site-completo-em-url-fragment-brotli-webassembly]] — extensão criativa (não-maliciosa) do mesmo mecanismo de DOM XSS: usa o fragment identifier como canal de dados invisível ao servidor para hospedar um site inteiro sem servidor
 - [[wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv]] — introdução didática com estudo de caso narrativo (loja do Bob): reflected XSS como ataque que exige engenharia social vs. stored XSS entregue automaticamente pelo próprio site; estatísticas de mercado não verificadas (74%/60%)
 - [[wiki/sources/sql-injection-sqlmap-luiz-viana]] — citado como par estrutural (mesmo autor, mesmo formato pedagógico) aplicado a SQL Injection em vez de XSS
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: XSS armazenado via upload sem filtro

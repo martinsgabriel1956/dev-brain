@@ -3,8 +3,8 @@ type: concept
 title: "Autenticação e Autorização"
 aliases: ["authn authz", "authentication vs authorization", "quem é você vs o que você pode fazer"]
 date_created: 2026-07-09
-date_updated: 2026-09-30
-source_count: 5
+date_updated: 2026-11-16
+source_count: 6
 tags: [autenticacao, autorizacao, seguranca, backend, jwt, sessao, rbac]
 skill: tech-mentor-backend
 status: stub
@@ -52,6 +52,8 @@ O backend recebe uma credencial — cookie de sessão, JWT, token de API — que
 - [[wiki/concepts/account-takeover]] — quando uma falha de autenticação (credencial de fator único aceita sem verificação adicional) se combina com uma falha de autorização (IDOR expondo essa credencial)
 - Ver detalhamento de OAuth2/OIDC/JWT/RBAC/ABAC em `references/auth-authz.md` (tech-mentor-backend)
 
+Na explicação de iniciante de [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: autenticação é "logar e deslogar"; autorização é "o que o usuário [...] tem permissão para fazer". As duas ficam no back-end.
+
 ## Key Sources
 
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]]
@@ -64,3 +66,4 @@ O backend recebe uma credencial — cookie de sessão, JWT, token de API — que
 - [[wiki/sources/10-conceitos-fundamentais-backend]]
 - [[wiki/sources/testes-de-seguranca-pentest-com-claude-code-pulsar-saas]]
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — 401 (não autenticado) vs 403 (sem permissão), barrados em [[wiki/concepts/middleware]] antes do controller
+- [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: definição de iniciante, responsabilidade do back-end

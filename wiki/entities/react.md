@@ -4,7 +4,7 @@ title: "React"
 aliases: ["ReactJS", "React.js"]
 date_created: 2026-04-22
 date_updated: 2026-11-16
-source_count: 9
+source_count: 13
 tags: [react, frontend, biblioteca, facebook, meta]
 skill: tech-mentor-frontend
 status: stable
@@ -39,6 +39,14 @@ Biblioteca JavaScript para construção de interfaces de usuário. Criada pelo F
 
 React usa [[wiki/concepts/virtual-dom]] + [[wiki/concepts/reconciliacao]] como estratégia de reatividade e [[wiki/concepts/batching]] para agrupar atualizações de estado — em contraste com frameworks baseados em [[wiki/concepts/signals]] (Solid.js, Svelte). Compartilha com Vue e Angular a necessidade de resolver os mesmos dez problemas estruturais: gerenciamento de estado (evitar prop drilling — ver [[wiki/concepts/context-api]]), [[wiki/concepts/component-lifecycle]], compilação (JSX → JS), [[wiki/concepts/client-side-routing]], [[wiki/concepts/hydration]] em SSR, e otimização de bundle via [[wiki/concepts/tree-shaking]] + [[wiki/concepts/code-splitting]].
 
+Na NLW #1 com [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]), o React é "uma biblioteca para construção de interfaces" para [[wiki/concepts/single-page-application|SPAs]], com o pacote `react` compartilhado com o [[wiki/entities/react-native]] e [[wiki/concepts/componentizacao]] como primeira vantagem. O projeto sai do `create-react-app --template typescript`, descontinuado em fevereiro de 2025 `[external]` (https://react.dev/blog/2025/02/14/sunsetting-create-react-app).
+
+No dia 3 da NLW #1 com [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]), o front-end do Ecoleta mostra os fundamentos de 2020: JSX, componentes, props com `React.FC`, `useState`, `useEffect` e `ReactDOM.render`. Para Diego, "se você entendeu componente, propriedade e estado [...] acabou". Várias dessas APIs mudaram: o `import React` deixou de ser obrigatório (React 17), `createRoot` (18) e `React.FC` em desuso.
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], o mesmo modelo de componentes, props, estado e efeitos roda no React Native; Diego até copia o `handleSelectItem` da web. O fragment `<>...</>` aparece para retornar dois irmãos sem elemento extra.
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: componente `Dropzone` com `react-dropzone`, preview por `URL.createObjectURL`, função como prop para subir o arquivo ao pai e `useCallback`.
+
 ## Key Sources
 
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
@@ -55,3 +63,7 @@ React usa [[wiki/concepts/virtual-dom]] + [[wiki/concepts/reconciliacao]] como e
 
 - [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]] — renderização condicional como mecanismo de [[wiki/concepts/lazy-vs-eager-loading]]
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: o React é o motivo para instalar Node e Yarn no curso; sem biblioteca, só um editor
+- [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: biblioteca x framework, SPA, componentização, create-react-app com TypeScript
+- [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: componentes, props, estado e efeitos no Ecoleta web
+- [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: mesmos conceitos no mobile; fragment
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: Dropzone e comunicação filho → pai

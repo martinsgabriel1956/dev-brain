@@ -3,8 +3,8 @@ type: concept
 title: "Virtual DOM"
 aliases: ["VDOM", "virtual dom diffing"]
 date_created: 2026-08-03
-date_updated: 2026-10-14
-source_count: 3
+date_updated: 2026-11-16
+source_count: 4
 tags: [frontend, virtual-dom, reatividade, react, vue, performance]
 skill: tech-mentor-frontend
 status: stable
@@ -33,6 +33,8 @@ Frameworks baseados em [[wiki/concepts/signals]] (Solid.js, Svelte, Vue via `ref
 - [[wiki/concepts/signals]] — abordagem concorrente sem diffing
 - [[wiki/concepts/dom]] — o que está sendo evitado de tocar sem necessidade
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]], o aviso "Each child in a list should have a unique key prop" e a explicação: a `key` serve "pro React conseguir encontrar esse elemento na hora de atualizar".
+
 ## Key Sources
 
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
@@ -40,3 +42,4 @@ Frameworks baseados em [[wiki/concepts/signals]] (Solid.js, Svelte, Vue via `ref
 
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — contexto histórico: mudar o estado e deixar o Virtual DOM redesenhar ([[wiki/concepts/single-page-application]])
+- [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: key em listas para reconciliação

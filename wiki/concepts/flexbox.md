@@ -4,7 +4,7 @@ title: "Flexbox (display: flex)"
 aliases: ["flexbox", "display flex", "flex", "flex-direction", "justify-content", "align-items", "flex: 1"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 17
+source_count: 19
 tags: [frontend, css, flexbox, layout, display, alinhamento]
 skill: tech-mentor-frontend
 status: stub
@@ -69,6 +69,8 @@ Em [[wiki/sources/frontpush-flex-grow-crescer-espaco-disponivel]], [[wiki/entiti
 
 Em [[wiki/sources/frontpush-flex-basis-tamanho-base-flex-itens]], [[wiki/entities/nasser|Násser]] explica `flex-basis` e o combina com `flex-grow` e `flex-wrap` para cards que "conseguem variar em vários tamanhos de tela". Ver [[wiki/concepts/flex-grow-shrink-basis]].
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]], o CSS pronto do Ecoleta web usa flexbox em quase tudo: "eu utilizo esse display flex pra tudo na minha vida".
+
 ## No módulo de Flexbox do FrontPUSH (aula 08)
 
 Em [[wiki/sources/frontpush-flex-shrink-e-flex-shorthand]], [[wiki/entities/nasser|Násser]] fecha as propriedades de tamanho dos itens com `flex-shrink` e o atalho `flex`, "o que eu mais utilizo"; `flex: 1` = grow 1, shrink 1, basis 0, o mesmo `flex: 1` da NLW #1. Ver [[wiki/concepts/flex-grow-shrink-basis]].
@@ -85,6 +87,8 @@ Em [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]], [
 
 Em [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]], [[wiki/entities/nasser|Násser]] propõe um layout-desafio sem código: container no grid, três flex-itens que quebram de "ABC" para "ABC em coluna" (media query `row` → `column` ou `flex-wrap` + `flex-basis`), e flex dentro de flex, com os itens como "filhos direto" do pai.
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], "todos os elementos são display flex por natureza" no React Native, via Yoga. Diferença: o eixo padrão é coluna, não linha.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: header, coluna com `flex: 1`, botão com span + strong
@@ -100,7 +104,9 @@ Em [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]], [[wik
 - [[wiki/sources/frontpush-align-content-linhas-flex-wrap]]: aula 05: align-content só com várias linhas (flex-wrap); pouco usado
 - [[wiki/sources/frontpush-flex-grow-crescer-espaco-disponivel]]: aula 06: flex-grow só age com espaço livre; fatores 1, 2, 4
 - [[wiki/sources/frontpush-flex-basis-tamanho-base-flex-itens]]: aula 07: flex-basis; cards com base fixa + wrap + grow
+- [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: CSS do Ecoleta web
 - [[wiki/sources/frontpush-flex-shrink-e-flex-shorthand]]: aula 08: flex-shrink e o shorthand flex
 - [[wiki/sources/frontpush-order-e-align-self]]: aula 09: order e align-self; fim da teoria
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: prática 1: planejar as caixas sobre o design do YouTube
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: prática 2: desafio; três colunas que quebram; flex dentro de flex
+- [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: RN: tudo é flex, eixo padrão coluna

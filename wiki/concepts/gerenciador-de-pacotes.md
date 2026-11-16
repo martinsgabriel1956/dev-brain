@@ -4,7 +4,7 @@ title: "Gerenciador de Pacotes (CPAN, Bundler, npm, Bower)"
 aliases: ['package manager', 'npm']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [dependencias, npm, build, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -24,9 +24,12 @@ Em [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extens
 
 Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]]: npm é o "Node Package Manager", o "gerenciador de dependências do Node". `npm init -y`, `npm install express` e `npm install nodemon -D` criam o `node_modules` e o `package-lock.json`. Ver [[wiki/concepts/package-json]].
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]], dois níveis: npm para bibliotecas (comparado a Composer, pip e RubyGems) e gerenciadores do sistema (Homebrew, Chocolatey, apt) para instalar o próprio Node. `[skill: lang-dynamic]` Para alternar versões, use nvm, fnm, Volta ou mise.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
 - [[wiki/sources/configurando-ambiente-vue-node-npm-vue-cli]]
 - [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]]: Yarn ao lado do npm; `npm install` x `yarn add`
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: npm init, install, -D
+- [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: npm x Composer/pip/RubyGems; Homebrew e Chocolatey para o Node

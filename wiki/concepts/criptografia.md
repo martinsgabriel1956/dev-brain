@@ -3,8 +3,8 @@ type: concept
 title: "Criptografia"
 aliases: ["cryptography", "encryption", "hashing", "criptografia assimétrica", "criptografia simétrica"]
 date_created: 2026-06-26
-date_updated: 2026-09-14
-source_count: 7
+date_updated: 2026-11-16
+source_count: 8
 tags: [cs-fundamentals, criptografia, seguranca, hashing, tls, https, hmac]
 skill: cs-fundamentals
 status: draft
@@ -115,6 +115,8 @@ A garantia de segurança não é mágica: é [[wiki/concepts/complexidade-comput
 
 Uma VPN aplica criptografia (tipicamente simétrica, AES, após um handshake inicial) sobre o tráfego que passa por um túnel virtual — mesma lógica do HTTPS descrita acima, mas encapsulando conexões de rede inteiras em vez de uma sessão HTTP.
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], `crypto.randomBytes` é usado só para gerar nomes únicos de arquivo, aleatoriedade e não cifragem. `crypto.randomUUID()` faz o mesmo de forma direta.
+
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-computacao]]
@@ -124,3 +126,4 @@ Uma VPN aplica criptografia (tipicamente simétrica, AES, após um handshake ini
 - [[wiki/sources/conceitos-que-regem-a-computacao-bits-turing-complexidade]] — segurança criptográfica como aplicação da inviabilidade da complexidade exponencial conforme a chave cresce
 - [[wiki/sources/anatomia-de-um-token-1-opaco-vs-autocontido-bernardo-lobato]] — CSPRNG como mecanismo de geração de token opaco seguro, com exemplos por linguagem (Node.js/Java/Python)
 - [[wiki/sources/vpn-conceito-tunelamento-acesso-remoto]] — VPN como aplicação de criptografia sobre tráfego de rede tunelado
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: randomBytes para nomes únicos

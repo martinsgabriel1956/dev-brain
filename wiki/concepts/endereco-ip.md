@@ -4,7 +4,7 @@ title: "Endereço IP (IPv4 / IPv6)"
 aliases: ["IP", "endereço IP", "IPv4", "IPv6", "IP address"]
 date_created: 2026-08-12
 date_updated: 2026-11-16
-source_count: 2
+source_count: 4
 tags: [rede, endereco-ip, ipv4, ipv6, tcp-ip, cs-fundamentals]
 skill: tech-mentor-networking
 status: stub
@@ -37,6 +37,12 @@ Versão 6, criada para resolver o esgotamento. Novo formato: 128 bits (2¹²⁸ 
 
 Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]]: nomes como youtube.com são "convertidos para números depois, e esses números nós chamamos de endereço de IP", endereços únicos que mostram onde está o servidor. `localhost` e `127.0.0.1` são a própria máquina. Ver [[wiki/concepts/dns]].
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: "localhost na verdade ele não existe para o seu celular". O app e as URLs de imagem passam a usar o IP local (`192.168.1.13`), e o emulador Android usa `10.0.2.2`.
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], o IP local mudou de .13 para .12 entre os dias, e foi preciso editar a `image_url` no código.
+
 ## Key sources
 - [[wiki/sources/enderecos-ip-dns-dominios-https-aws-fernanda-kipper]] — IP como sequência que identifica dispositivo; IPv4 (4 octetos, ~4,3 bi) vs IPv6; coexistência
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: nome → IP; localhost/127.0.0.1
+- [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: localhost x IP da máquina no app
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: IP mudou durante a semana

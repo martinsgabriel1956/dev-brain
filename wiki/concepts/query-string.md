@@ -4,7 +4,7 @@ title: "Query string"
 aliases: ["query string", "query strings", "parâmetros de URL", "req.query", "URLSearchParams"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 3
 tags: [http, url, formulario, backend, web]
 skill: lang-dynamic
 status: stub
@@ -24,6 +24,12 @@ Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]],
 
 Depois muda o formulário para POST, porque "não é assim que a gente faz, que a gente envia formulários pela internet". A busca por cidade continua em GET: `req.query.search`.
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: `?search=on` filtra uma lista e `?city=Rio do Sul&uf=SC&items=1,2` filtra os pontos. Query params são "opcionais, para filtros, paginação" e podem se repetir e virar array. Ver [[wiki/concepts/parametros-de-requisicao]].
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], `api.get('points', { params: { city, uf, items } })` vira `items[]=1&items[]=2`, e o filtro do back-end só funciona porque o `qs` do Express 4 o converte em array.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: req.query no Express; GET x POST no formulário do Ecoleta
+- [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: filtros e paginação; repetição vira array
+- [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: arrays em query string por acaso compatíveis

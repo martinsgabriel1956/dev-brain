@@ -3,8 +3,8 @@ type: concept
 title: "Client-Side Routing (Roteamento no Cliente)"
 aliases: ["roteamento no cliente", "SPA routing", "History API", "pushState", "popstate"]
 date_created: 2026-08-03
-date_updated: 2026-08-03
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [frontend, spa, routing, history-api, browser]
 skill: tech-mentor-frontend
 status: stable
@@ -34,6 +34,9 @@ Se o usuário digita `seusite.com/produtos` diretamente na barra do navegador (e
 
 - [[wiki/concepts/hydration]] — outro mecanismo de troca de conteúdo sem reload completo, mas no contexto SSR
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]], o React Router v5 (`BrowserRouter`, `Route exact`, `Link`, `useHistory`) faz o roteamento no cliente do Ecoleta. O `exact` existe porque o v5 casava por prefixo.
+
 ## Key Sources
 
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
+- [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: React Router v5 no Ecoleta

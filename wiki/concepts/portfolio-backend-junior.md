@@ -3,8 +3,8 @@ type: concept
 title: "Portfólio Backend Júnior"
 aliases: ["portfólio primeira vaga", "diferenciais backend junior", "primeira vaga backend"]
 date_created: 2026-04-25
-date_updated: 2026-09-04
-source_count: 7
+date_updated: 2026-11-16
+source_count: 8
 tags: [carreira, backend, junior, portfolio]
 skill: tech-mentor-leadership
 status: stable
@@ -73,6 +73,8 @@ Em processo real de triagem de currículos júnior, dois filtros vêm antes de q
 
 [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] argumenta que gerar um SaaS funcional deixou de provar competência por si só, já que a IA barateou a produção do artefato — ver detalhamento em [[wiki/concepts/curriculo-vs-portfolio]]. Isso reforça, e não contradiz, o checklist desta página: os itens listados (testes, SQL além do básico, observabilidade, error handling) são justamente o que a IA não gera bem sozinha e o recrutador leigo não sabe avaliar de olhar rápido — a tensão é sobre o que basta *mostrar* (rodar bonito na tela), não sobre o que basta *ter*.
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: "uma das coisas mais importantes dessa Next Level Week é colocar sempre o projeto no seu portfólio", mesmo incompleto, com README e imagens.
+
 ## Key sources
 
 - [[wiki/sources/diferenciais-portfolio-backend-junior]]
@@ -82,3 +84,4 @@ Em processo real de triagem de currículos júnior, dois filtros vêm antes de q
 - [[wiki/sources/analise-curriculos-programador-junior-dicas-ats]] — triagem de currículos reais confirmando GitHub/portfólio como filtro eliminatório, não apenas diferencial
 - [[wiki/sources/5-cuidados-antes-de-comecar-a-programar]] — estratégia de implementar sozinho uma feature da empresa-alvo
 - [[wiki/sources/analise-curriculo-vaga-junior-desenvolvedor]] — comparação de três currículos reais: trajetória + projetos pessoais documentados venceu formatação de currículo na avaliação
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: projeto da NLW no GitHub como portfólio

@@ -3,8 +3,8 @@ type: concept
 title: "Deep Links Mobile — Universal Links, App Links"
 aliases: ["universal links ios", "app links android", "deferred deep links", "mobile url scheme"]
 date_created: 2026-04-24
-date_updated: 2026-04-24
-source_count: 1
+date_updated: 2026-11-16
+source_count: 3
 tags: [mobile, deep-links, universal-links, app-links, deferred-deep-links]
 skill: tech-mentor-mobile
 status: stable
@@ -58,6 +58,12 @@ Linking.getInitialURL().then(url => { /* navegar para tela correta */ });
 - [[wiki/concepts/mobile-navegacao]] — integrar deep links com stack de navegação
 - [[wiki/concepts/mobile-push-notifications]] — notificações com deep link como payload
 
+No app do Ecoleta ([[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]), o botão do WhatsApp usa "um recurso chamado Deep Linking" para abrir o app instalado no celular.
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], `Linking.openURL('whatsapp://send?phone=...&text=...')` abre o WhatsApp pelo esquema do app. O texto vai sem `encodeURIComponent`. O link universal `https://wa.me/` funciona mesmo sem o app.
+
 ## Key Sources
 
 - [[wiki/sources/mobile-deep-links]]
+- [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: deep link para o WhatsApp no Ecoleta
+- [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: whatsapp://send no Ecoleta; wa.me como alternativa

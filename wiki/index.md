@@ -45,6 +45,11 @@ date_updated: 2026-11-16
 | [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]] | Aula 03 do módulo de front-end do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]): menu `header` > `nav` > [[wiki/concepts/listas-html\|ul/li]]; HTML "pobre visualmente", CSS como "segundo agente"; `style.css` por `<link>` com [[wiki/concepts/caminho-relativo\|caminho relativo]]; fundo `#0f0f0f`, links e listas [[wiki/concepts/estilos-padrao-do-navegador-e-reset\|resetados]]; "tudo são caixinhas"; [[wiki/concepts/seletores-css\|seletor]] de tag x classe (`.`) x ID (`#`, "dois CPFs"); classe vence tag ([[wiki/concepts/especificidade-css\|especificidade]], sem o termo) |
 | [[wiki/sources/frontpush-o-que-e-html-linguagem-de-marcacao-tags-semantica]] | Aula 02 do módulo de front-end do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]]): [[wiki/concepts/html-hipertexto\|HTML]] é linguagem de marcação, tags como etiquetas do conteúdo; Emmet `html:5` no [[wiki/entities/vs-code]]; tags de título, seção, texto, `img`, `form`/`input`; [[wiki/concepts/html-semantico]] contra div dentro de div (Google, refatoração); aninhamento, `html`/`head`/`body`, [[wiki/concepts/head-html-metadados\|meta charset, viewport, title]]; erros: h1–h6 como escala tipográfica, UTF-8 ligado ao teclado ABNT2, "sinal de maior" |
 | [[wiki/sources/frontpush-configurando-o-ambiente-git-node-yarn-vs-code-extensoes]] | Aula 01 do módulo de front-end do [[wiki/entities/frontpush\|FrontPUSH]] ([[wiki/entities/nasser\|Násser]], diz o nome): só HTML, CSS e JS pedem apenas um editor; ordem [[wiki/concepts/git\|Git]] → [[wiki/entities/nodejs\|Node]] LTS → Yarn → [[wiki/entities/vs-code]]; versionamento (rollback, time), GitHub x GitLab; Can I use e `backdrop-filter` no Firefox ([[wiki/concepts/compatibilidade-entre-navegadores]]); extensões: vscode-icons, Thunder Client, Prettier, Live Server, Live Sass Compiler ([[wiki/concepts/pre-processador-css]]), Color Highlight, temas; Git Bash como terminal; erros: Git for Windows "é um kernel", su = "super user" |
+| [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]] | Dia 5 (último) da trilha de [[wiki/entities/diego-fernandes|Diego Fernandes]] na [[wiki/entities/next-level-week|NLW #1]]: upload com [[wiki/entities/multer]] (diskStorage, nome com crypto), [[wiki/concepts/multipart-form-data]], image_url serializada; Dropzone no React com [[wiki/concepts/levantamento-de-estado|callback como prop]] e FormData; validação com celebrate + [[wiki/entities/joi]]; GitHub com [[wiki/concepts/gitignore]]; mapa de deploy (Heroku, DigitalOcean, AWS; [[wiki/entities/netlify]], Vercel, S3); imprecisões: uploads em disco somem no PaaS ([[wiki/concepts/sistema-de-arquivos-efemero|disco efêmero]]), upload sem filtro → XSS armazenado, arquivo gravado antes da validação, gitignore apaga os SVGs dos itens, master/HTTPS/Heroku free datados |
+| [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]] | Dia 4 da trilha de [[wiki/entities/diego-fernandes|Diego Fernandes]] na [[wiki/entities/next-level-week|NLW #1]]: app Android/iOS com [[wiki/entities/react-native]] e [[wiki/entities/expo]]; [[wiki/entities/metro-bundler]], QR code, emulador e Snack; View/Text, StyleSheet e Yoga, tudo flexbox, sem cascata; [[wiki/concepts/densidade-de-pixels|imagens 1x/2x/3x]], Expo Google Fonts, RectButton; [[wiki/entities/react-navigation]] em [[wiki/concepts/navegacao-em-pilha|pilha]]; [[wiki/entities/react-native-maps]], IP no lugar de localhost, expo-location e [[wiki/concepts/renderizacao-condicional]]; route.params; MailComposer e WhatsApp por Linking; [[wiki/concepts/safe-area]], KeyboardAvoidingView; imprecisões: densidade com números errados, "map é reservada", RN "sem semântica", key string, SafeAreaView só iOS, APIs de 2020 |
+| [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]] | Dia 3 da trilha de [[wiki/entities/diego-fernandes|Diego Fernandes]] na [[wiki/entities/next-level-week|NLW #1]]: div#root e CSR, JSX, componentes, [[wiki/concepts/props-react|props]] com React.FC e [[wiki/concepts/generics-typescript|generics]], useState e imutabilidade; Home, [[wiki/entities/react-router]], formulário com [[wiki/entities/leaflet]], itens via [[wiki/entities/axios]] + useEffect, UF/cidades do IBGE, [[wiki/concepts/componente-controlado|inputs controlados]], [[wiki/concepts/geolocation-api]], submit; imprecisões: APIs de 2020 (import React, ReactDOM.render, React.FC, RR v5, react-leaflet v2), race UF→cidades sem cleanup, '0' e [0,0] enviados, li clicável inacessível |
+| [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]] | Dia 2 da trilha de [[wiki/entities/diego-fernandes|Diego Fernandes]] na [[wiki/entities/next-level-week|NLW #1]]: rota x recurso, métodos HTTP, [[wiki/entities/insomnia]], [[wiki/concepts/parametros-de-requisicao|params, query e body]]; SQL x NoSQL, SQLite e o [[wiki/concepts/query-builder]] [[wiki/entities/knex]]; migrations up/down, [[wiki/concepts/seed-de-banco-de-dados|seeds]], pivô [[wiki/concepts/relacionamento-muitos-para-muitos|N:N]] com [[wiki/concepts/chave-estrangeira|FKs]]; express.static, transação, controllers, whereIn + distinct, CORS; imprecisões: commit esquecido e falso rollback (FKs desligadas no SQLite), 400 em vez de 404, "navegador só faz GET", insert/decimal não portáveis, CORS como controle de acesso |
+| [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]] | Dia 1 da trilha de [[wiki/entities/diego-fernandes|Diego Fernandes]] na [[wiki/entities/next-level-week|NLW #1]]: layout web e mobile do Ecoleta; Node LTS por Homebrew/Chocolatey; por que [[wiki/concepts/api-rest|API REST]] (JSON para vários clientes) e não MVC com template engine; por que [[wiki/entities/typescript]] (IntelliSense, cinco mitos); Express em TS com [[wiki/concepts/arquivo-de-declaracao-de-tipos|@types]], ts-node e ts-node-dev; [[wiki/entities/react]] e SPA, [[wiki/concepts/componentizacao]], create-react-app; [[wiki/entities/react-native]] e [[wiki/entities/expo]]; imprecisões: Node 11 "LTS", package-lock "cache", cinst removido, CRA descontinuado, JavaScriptCore → Hermes |
 | [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]] | Dia 5 (último) da [[wiki/entities/next-level-week\|NLW #1]] com [[wiki/entities/mayk-brito\|Mayk Brito]]: por que um banco; SQL, tabelas e relacionamento; [[wiki/concepts/sqlite\|SQLite]] com `sqlite3` (CREATE/INSERT com `?`/SELECT/DELETE), [[wiki/concepts/chave-primaria\|chave primária]] AUTOINCREMENT, [[wiki/concepts/callback-javascript\|callbacks]] e `this`; `for`/`if` no Nunjucks; [[wiki/concepts/query-string\|query strings]] → POST com `req.body`; busca com LIKE; imprecisões: [[wiki/concepts/sql-injection\|SQL injection]] na busca, POST "escondido", sem PRG nem validação, items em texto, rem |
 | [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]] | Dia 4 da [[wiki/entities/next-level-week\|NLW #1]] com [[wiki/entities/mayk-brito\|Mayk Brito]]: back-end como cozinheiro (regras de negócio, dados); [[wiki/entities/nodejs\|Node.js]] LTS, Git Bash, localhost/IP/portas; `public/` + `src/`; [[wiki/concepts/package-json\|package.json]] e npm; servidor [[wiki/entities/express]] em três linhas, rotas GET, req/res, nodemon, `express.static`; [[wiki/concepts/template-engine\|template engine]] [[wiki/entities/nunjucks]] (variáveis, include, extends/block, set); imprecisões: "2 a 6 meses", porta 80 x 443, Git Bash não é Linux, package-lock opcional, noCache sem condição |
 | [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]] | Dia 3 da [[wiki/entities/next-level-week\|NLW #1]] com [[wiki/entities/mayk-brito\|Mayk Brito]] (autoria confirmada): bug das cidades corrigido e `required`; itens de coleta em [[wiki/concepts/css-grid\|grid]] com [[wiki/concepts/atributos-data-html\|data-id]], [[wiki/concepts/classlist-javascript\|classList.toggle]] e findIndex/filter/push; [[wiki/concepts/modal]] de busca com position fixed e classe `hide`; página de resultados com cards, `object-fit`, `body::after` + `z-index`; imprecisões: `li` sem `ul`, [[wiki/concepts/igualdade-javascript\|== x ===]] "tanto faz", modal sem foco/Esc |
@@ -1017,6 +1022,51 @@ date_updated: 2026-11-16
 |---|---|
 | [[wiki/concepts/compatibilidade-entre-navegadores]] | Navegadores interpretam e adotam recursos em tempos diferentes: Can I use, Baseline (newly x widely available), browserslist, `@supports`; `backdrop-filter` no Firefox até a v103 |
 | [[wiki/concepts/pre-processador-css]] | Sass compila para CSS e soma recursos de programação (`if/else`, mixins); nesting, custom properties e `if()` nativos tiram parte do motivo |
+
+### NLW #1 com Diego Fernandes — dia 5 (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/multipart-form-data]] | Corpo em partes com boundary; aceita arquivos; tudo vira texto; não fixar Content-Type ao enviar FormData |
+| [[wiki/concepts/levantamento-de-estado]] | Estado no ancestral comum; filho avisa por função recebida em props; prop drilling → Context |
+| [[wiki/concepts/gitignore]] | node_modules, uploads/* + !.gitkeep, *.sqlite, .env; não misturar assets do projeto com uploads |
+| [[wiki/concepts/sistema-de-arquivos-efemero]] | Disco de PaaS/containers some no restart; uploads e SQLite vão para object storage e banco gerenciado |
+
+### NLW #1 com Diego Fernandes — dia 4 (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/densidade-de-pixels]] | Pixels físicos por unidade lógica; exportar @1x/@2x/@3x ou usar SVG; o exemplo Galaxy S2 x iPhone 8 da aula tem números errados |
+| [[wiki/concepts/navegacao-em-pilha]] | Telas empilhadas que continuam montadas; navigate x push; voltar visível no Android |
+| [[wiki/concepts/safe-area]] | Área livre de notch, status bar e barra de gestos; SafeAreaView do core só no iOS → react-native-safe-area-context |
+| [[wiki/concepts/renderizacao-condicional]] | Ternário, && e early return; && com 0 quebra no RN; sentinela 0 x estado explícito |
+
+### NLW #1 com Diego Fernandes — dia 3 (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/props-react]] | Entradas do componente, só leitura; tipadas por interface; React.FC em desuso; key não é prop |
+| [[wiki/concepts/componente-controlado]] | value + onChange com o estado como fonte da verdade; handler genérico com [name]; trade-off x React Hook Form |
+| [[wiki/concepts/generics-typescript]] | Parâmetros de tipo: useState<T>, axios.get<T>, ChangeEvent<E>; T de resposta é promessa, não verificação |
+| [[wiki/concepts/geolocation-api]] | getCurrentPosition exige HTTPS e permissão; tratar erro, pedir após gesto, ter alternativa |
+
+### NLW #1 com Diego Fernandes — dia 2 (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/parametros-de-requisicao]] | Route params identificam, query filtra e pagina, body cria e edita; tudo chega como texto e precisa de validação |
+| [[wiki/concepts/query-builder]] | SQL montado em código (Knex, Kysely): valores parametrizados e composição; sintaxe portável, comportamento não |
+| [[wiki/concepts/relacionamento-muitos-para-muitos]] | Tabela pivô com duas FKs; PK composta evita duplicatas; IN = "algum item", HAVING COUNT = "todos" |
+| [[wiki/concepts/chave-estrangeira]] | Integridade referencial; no SQLite só vale com `PRAGMA foreign_keys = ON` |
+| [[wiki/concepts/seed-de-banco-de-dados]] | Dados iniciais (referência ou exemplo); o seed do Knex não tem histórico e duplica se rodar duas vezes |
+
+### NLW #1 com Diego Fernandes — dia 1 (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/api-rest]] | Estilo de Fielding: recursos, interface uniforme, sem estado; a rota devolve JSON em vez de HTML e serve web e mobile; não é o oposto de MVC |
+| [[wiki/concepts/arquivo-de-declaracao-de-tipos]] | `.d.ts` descreve a forma de uma lib JS sem código; tipos embutidos ou `@types/*` (DefinitelyTyped) como devDependency |
+| [[wiki/concepts/componentizacao]] | UI em peças isoladas e reutilizáveis; muda num lugar só; no React, função que retorna JSX |
 
 ### NLW #1 — dia 5 (2026-11-16)
 
@@ -3673,6 +3723,22 @@ date_updated: 2026-11-16
 
 ## Entities
 
+- [[wiki/entities/multer]] — middleware multipart do Express; diskStorage, single/array; falta limits/fileFilter e storage externo
+- [[wiki/entities/joi]] — validação de schema (via celebrate no Express); @hapi/joi → joi; Zod hoje une front e back
+- [[wiki/entities/netlify]] — hospedagem de front-end com build por push e CDN; SPA precisa de redirect para index.html
+- [[wiki/entities/metro-bundler]] — bundler do React Native; fast refresh em dev, minifica só em release; `expo start -c` limpa cache
+- [[wiki/entities/react-navigation]] — navegação do RN: NavigationContainer, stack, abas, drawer; v5 → native stack e Expo Router
+- [[wiki/entities/react-native-maps]] — MapView e Marker nativos; latitudeDelta é a altura da região em graus
+- [[wiki/entities/react-router]] — roteamento SPA do React; v5 (exact, useHistory) → v6 (Routes, element, useNavigate) → v7 (absorveu o Remix)
+- [[wiki/entities/leaflet]] — mapas open source com react-leaflet e OpenStreetMap; Map → MapContainer e useMapEvents no v3
+- [[wiki/entities/axios]] — cliente HTTP com baseURL e rejeição em 4xx/5xx; genérico de resposta não valida
+- [[wiki/entities/create-react-app]] — gerador de projetos React (2016–2025), descontinuado em favor de frameworks e Vite
+- [[wiki/entities/knex]] — query builder SQL para Node: migrations, seeds, transações; insert/returning e decimal variam por banco
+- [[wiki/entities/insomnia]] — cliente HTTP de desktop para testar APIs; login obrigatório desde a v8 (2023)
+- [[wiki/entities/diego-fernandes]] — educador da Rocketseat; trilha de Node, React e React Native da NLW #1
+- [[wiki/entities/typescript]] — superset tipado do JavaScript; IntelliSense, inferência, `@types`, type stripping no Node 24+
+- [[wiki/entities/react-native]] — apps iOS/Android com React e interface nativa; JavaScriptCore → Hermes, Nova Arquitetura
+- [[wiki/entities/expo]] — framework e app que encapsulam as SDKs nativas do React Native; Expo Go x development builds
 - [[wiki/entities/mdn-web-docs]] — documentação de referência de HTML, CSS e JS da Mozilla (com Open Web Docs); tabela de compatibilidade e selo Baseline; Násser a indica como "MDN da Firefox"
 - [[wiki/entities/ibge]] — API aberta de localidades (estados e municípios) usada no formulário do Ecoleta
 - [[wiki/entities/codepen]] — editor online de HTML/CSS/JS com prévia automática; ambiente do beabá de JavaScript da NLW #1
@@ -4187,6 +4253,7 @@ date_updated: 2026-11-16
 
 | Página | Hook |
 |---|---|
+| [[wiki/questions/nlw-1-duas-trilhas-ecoleta-comparacao]] | As duas trilhas do Ecoleta lado a lado: SSR com Nunjucks e SQL cru (Mayk) x API REST + React + React Native com Knex e TypeScript (Diego); quem comete qual falha (SQL injection x XSS por upload, falso rollback, race, disco efêmero) e o que ambas deixam sem validar |
 | [[wiki/questions/linkedin-principal-ou-ultimo-recurso-para-vaga-internacional]] | LinkedIn é o melhor job board (Galego) x último recurso para vaga internacional (hunting no ATS); provavelmente medem volume x chance |
 | [[wiki/questions/ordem-retry-circuit-breaker]] | Resolvida: não há ordem universal. O retry por fora não é erro (é o padrão do Resilience4j), e a escolha muda o que o breaker mede |
 | [[wiki/questions/generalista-ou-especialista-na-era-da-ia]] | Generalista vence (Vale) × especialista vence (Balta) × júnior especializa mais rápido — provável conciliação via T-shaped |

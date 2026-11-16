@@ -4,7 +4,7 @@ title: "SQLite"
 aliases: ["sqlite3", "banco embarcado"]
 date_created: 2026-07-27
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [sqlite, banco-de-dados, embarcado, mobile, backend]
 skill: tech-mentor-backend
 status: stub
@@ -38,8 +38,11 @@ Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/e
 
 Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] usa o pacote `sqlite3` (`require('sqlite3').verbose()`, `new sqlite3.Database('./src/database/database.db')`) para o CRUD do Ecoleta: `db.serialize`, `db.run` para CREATE, INSERT e DELETE, e `db.all` para SELECT. As vantagens que ele cita: é open source, "muito facinho de configurar" e "reside na própria aplicação". Os pontos fracos: segurança (sem login) e "alguns conflitos". `[skill: tech-mentor-data]` Os conflitos são de concorrência, uma escrita por vez; em servidor, use WAL e `busy_timeout`.
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]], o SQLite é escolhido para não instalar nada ("um arquivo físico mesmo") e usado via [[wiki/entities/knex]] com `useNullAsDefault`. Ele vem com chaves estrangeiras desligadas; ver [[wiki/concepts/chave-estrangeira]].
+
 ## Key Sources
 
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]]
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: anunciado para o dia 5
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: CRUD com sqlite3 no Ecoleta; concorrência
+- [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: SQLite via Knex; FKs desligadas por padrão

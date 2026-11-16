@@ -4,7 +4,7 @@ title: "Renderização SSR vs. CSR"
 aliases: ["server-side rendering", "client-side rendering", "SSR", "CSR", "SSR vs CSR"]
 date_created: 2026-09-14
 date_updated: 2026-11-16
-source_count: 3
+source_count: 5
 tags: [frontend, ssr, csr, nodejs, event-loop, performance, nextjs]
 skill: lang-dynamic
 status: stable
@@ -50,6 +50,12 @@ No CSR puro não há esse passo; no SSR, depois que o HTML chega pronto, o JavaS
 
 Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] monta renderização no servidor com o [[wiki/entities/nunjucks]]: `res.render` passa o HTML "pelo motor" e devolve "o HTML puro" com os dados do servidor. Chama a arquitetura de "full MVC" e "full stack". Ver [[wiki/concepts/template-engine]].
 
+A NLW #1 traz o mesmo produto, o Ecoleta, nos dois modelos. Na trilha de [[wiki/entities/mayk-brito]], o HTML é renderizado no servidor com Nunjucks ([[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]). Na de [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]), uma API JSON é consumida por um SPA em React e por um app React Native.
+
+Demonstração de CSR em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: a página do Ecoleta vem vazia (só `div#root`) e o JavaScript monta tudo depois. É o contraponto direto ao SSR com Nunjucks da trilha de Mayk.
+
+O Ecoleta nos dois modelos, lado a lado: [[wiki/questions/nlw-1-duas-trilhas-ecoleta-comparacao]].
+
 ## Key Sources
 
 - [[wiki/sources/node-single-thread-ssr-bloqueio-event-loop]]
@@ -57,3 +63,5 @@ Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/e
 
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — origem histórica: templates no servidor (PHP/ASP) vs. SPAs que movem o estado ao cliente
+- [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: o Ecoleta em CSR (API + React) x a versão SSR com Nunjucks
+- [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: Ecoleta web em CSR (div#root vazia)

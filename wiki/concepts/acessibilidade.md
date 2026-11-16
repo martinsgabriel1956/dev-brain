@@ -4,7 +4,7 @@ title: "Acessibilidade (em interfaces)"
 aliases: ["a11y", "acessibilidade digital", "acessibilidade web", "design acessível", "design inclusivo", "accessibility"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 10
+source_count: 12
 tags: [acessibilidade, a11y, ux, ui-design, wcag, contraste, alt-text, carga-cognitiva, html-semantico]
 skill: ux-ui-mentor
 status: stub
@@ -53,9 +53,13 @@ Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta
 
 Ver [[wiki/concepts/modal]].
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: acerto em `fieldset`/`legend` e no `alt` das imagens; erro nos itens de coleta como `li` com `onClick`, sem foco, teclado ou estado anunciado. O certo seria `button aria-pressed` ou checkbox.
+
 ## `order` e a ordem do HTML (FrontPUSH, módulo de Flexbox)
 
 Em [[wiki/sources/frontpush-order-e-align-self]], [[wiki/entities/nasser|Násser]] usa `order` para mostrar o texto antes da ilustração no mobile. `[external]` O leitor de tela e o Tab seguem o HTML, não o `order`; o melhor é escrever o HTML na ordem de leitura e reordenar só o visual (WCAG 1.3.2 e 2.4.3: https://www.w3.org/WAI/WCAG21/Understanding/meaningful-sequence.html).
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], "no React Native nós não temos nenhum componente que ele tem um valor semântico [...] a gente não precisa de significado". No mobile, a semântica vai em `accessibilityRole`, `accessibilityLabel` e `accessibilityState`, que os itens de coleta não têm.
 
 ## Key Sources
 
@@ -66,4 +70,6 @@ Em [[wiki/sources/frontpush-order-e-align-self]], [[wiki/entities/nasser|Násser
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: label na busca; texto oculto; lacunas de teclado e foco
 - [[wiki/sources/frontpush-intro-flexbox-flex-container-flex-item]]: `order` no slide do Flexbox; muda só a ordem visual `[external]`
 - [[wiki/sources/frontpush-flex-direction-flex-wrap-flex-flow]]: `row-reverse`/`column-reverse` mudam só a ordem visual `[external]`
+- [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: fieldset certo; li clicável inacessível
 - [[wiki/sources/frontpush-order-e-align-self]]: `order` para reordenar texto e ilustração no mobile; a ordem lida continua a do HTML `[external]`
+- [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: RN sem semântica não é RN sem acessibilidade

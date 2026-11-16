@@ -3,8 +3,8 @@ type: concept
 title: "Transpilador (Sass, Less, CoffeeScript, Babel)"
 aliases: ['transpiler', 'pré-processador']
 date_created: 2026-10-14
-date_updated: 2026-10-14
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [transpilador, build, javascript, css, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -14,6 +14,8 @@ status: draft
 
 Traduz uma linguagem em outra (não gera código de máquina). Sass/Less → [[wiki/concepts/css]]; CoffeeScript (Jeremy Ashkenas, 2009) → JavaScript, deixando legados como interpolação de string, escopo e arrow functions, incorporados ao ES6 (2015) e tornando-o obsoleto; Babel mantém essa função. Etapa do [[wiki/concepts/pipeline-de-assets]]. Contraste: [[wiki/concepts/pipeline-de-compilacao]].
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]], o TypeScript "é convertido para JavaScript". `[skill: lang-dynamic]` No Node 24+, o type stripping apaga os tipos sem gerar código novo, e o `tsc` fica só para checar tipos ou gerar o build.
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -21,3 +23,4 @@ Traduz uma linguagem em outra (não gera código de máquina). Sass/Less → [[w
 ## Key sources (adição 2026-10-14)
 
 - [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]] — alternativa citada para melhorar o ecossistema de C: linguagens que transpilam para C ([[wiki/concepts/dependencia-de-caminho-em-tecnologia]])
+- [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: TypeScript convertido para JS; type stripping no Node

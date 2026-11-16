@@ -4,7 +4,7 @@ title: "DOM — Document Object Model"
 aliases: ["Document Object Model"]
 date_created: 2026-07-28
 date_updated: 2026-11-16
-source_count: 8
+source_count: 9
 tags: [browser, dom, html-parsing, rendering-pipeline, frontend-frameworks]
 skill: tech-mentor-frontend
 status: draft
@@ -44,6 +44,8 @@ Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[w
 
 Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] esbarra em um bug clássico: `querySelectorAll` devolve uma NodeList, e "não consigo colocar numa lista o add event listener [...] ele funciona num elemento". Também tira o `querySelector` de dentro da função, para não buscar o elemento "toda hora". Ver [[wiki/concepts/classlist-javascript]] e [[wiki/concepts/atributos-data-html]].
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]], o "View Page Source" mostra só a `div#root`, enquanto o inspetor mostra o `h1`: a DOM é "uma árvore de elementos em tempo real", montada pelo `react-dom`.
+
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
@@ -53,3 +55,4 @@ Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: classe e ID como etiquetas para o JavaScript "puxar e manipular esses elementos"
 - [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: selecionar no CSS "é muito similar ou deveras igual" ao JavaScript (`querySelector`); pseudo-elements não estão no DOM
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: querySelectorAll x querySelector; cache do elemento
+- [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: DOM em tempo real x HTML de origem

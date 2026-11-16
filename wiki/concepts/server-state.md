@@ -3,8 +3,8 @@ type: concept
 title: "Server State"
 aliases: ["estado do servidor", "remote state", "server data"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [server-state, cache, frontend, tanstack-query]
 skill: tech-mentor-frontend
 status: stable
@@ -46,6 +46,9 @@ const store = create(set => ({
 const { data, isLoading } = useQuery({ queryKey: ["orders"], queryFn: fetchOrders });
 ```
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]], os itens, as UFs e as cidades são estado de servidor guardados à mão em `useState` + `useEffect`. `[skill: tech-mentor-frontend]` A skill recomenda TanStack Query para cache, deduplicação, cancelamento e estados de loading e erro.
+
 ## Key Sources
 
 - [[wiki/sources/tanstack-query-tudo-que-voce-precisa-saber]]
+- [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: fetch manual em useState no Ecoleta

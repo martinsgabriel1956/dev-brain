@@ -3,8 +3,8 @@ type: concept
 title: "Repository Pattern"
 aliases: ["padrão repositório", "repository"]
 date_created: 2026-05-01
-date_updated: 2026-09-08
-source_count: 7
+date_updated: 2026-11-16
+source_count: 8
 tags: [design-patterns, data-access, repository, infrastructure]
 skill: tech-mentor-backend
 status: stub
@@ -35,6 +35,8 @@ Na prática de um repositório Data Mapper, a conversão campo-a-campo entre ent
 
 [[wiki/sources/filosofia-design-software-podcast-eduardo-matos-otavio-santana-mauricio-linhares]] cita como erro recorrente aplicar sufixo "Repository" a uma classe com métodos genéricos de CRUD ("inserir", "deletar", "atualizar") e considerar isso suficiente para "estar fazendo DDD". O propósito do padrão é abstrair a implementação com vocabulário do domínio: um repositório de carros de uma locadora deveria ser conceitualmente uma "garagem", com "registrar" ou "estacionar" em vez de "inserir". Ver [[wiki/concepts/ddd]] para o mesmo ponto do lado do pilar Ubiquitous Language.
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]], Diego cita "repository pattern, que a gente chama também de data mapper" e deixa para depois. Pelo catálogo de Fowler, o Repository fica sobre a camada de mapeamento, não é sinônimo dela.
+
 ## Key Sources
 
 - [[wiki/sources/design-pattern-proxy]]
@@ -44,3 +46,4 @@ Na prática de um repositório Data Mapper, a conversão campo-a-campo entre ent
 - [[wiki/sources/arquitetura-limpa-na-pratica]] — exemplo de repositório MongoDB (schemaless), crítica a ORMs que anotam entidades de domínio, e Unit of Work como alternativa para concorrência
 - [[wiki/sources/unit-of-work-padrao-de-design]] — SQLAlchemy como implementação real de Repository + Unit of Work combinados (ORM classes + Session)
 - [[wiki/sources/unit-of-work-martin-fowler]] — fonte primária de Unit of Work: definição formal do padrão como alternativa a repositórios simples para coordenar escritas e concorrência
+- [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: citado como sinônimo de Data Mapper (impreciso)

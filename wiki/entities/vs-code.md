@@ -4,7 +4,7 @@ title: "Visual Studio Code"
 aliases: ["VS Code", "VSCode"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 9
+source_count: 13
 tags: [ferramenta, editor, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -41,6 +41,14 @@ Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/e
 
 Usa ainda Format Document para indentar e Reveal in File Explorer.
 
+Na NLW #1 com [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]): tema Omni (derivado do Dracula), Material Icon Theme, `code .` via "Install Code Command in Path" e o IntelliSense como argumento a favor do [[wiki/entities/typescript]].
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: a extensão SQLite (Open Database, SQLite Explorer, Show Table, Run Query), o terminal dividido, `material-icon-theme.folders.associations` e o atalho Copy Line Down.
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: Emmet habilitado em JSX (`emmet.includeLanguages`, `javascript: javascriptreact`) e a fonte FiraCode com ligaduras.
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: Ctrl+D, *Add Cursors to Line Ends* (Shift+Alt+I) e Shift+Ctrl+→ para gerar os `data.append(...)` em lote ("umas 46 hotkeys").
+
 ## Key sources
 
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — Emmet e Live Server na aula de básico de CSS
@@ -51,4 +59,8 @@ Usa ainda Format Document para indentar e Reveal in File Explorer.
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: Emmet `link:css`; autocompletar de caminho com `./`
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: Ctrl+D, localizar e substituir, minimapa
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: Git Bash no terminal; extensão Nunjucks, Emmet e settings.json
+- [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: tema Omni, Material Icon Theme, IntelliSense
+- [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: extensão SQLite, terminal split, ícones por pasta
+- [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: Emmet em JSX, FiraCode
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: pasta "Flexbox aula", index.html + css/style.css e Live Server na prática 1 de flexbox
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: multicursor para gerar código repetitivo

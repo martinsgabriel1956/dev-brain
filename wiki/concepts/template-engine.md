@@ -4,7 +4,7 @@ title: "Template engine"
 aliases: ["template engine", "motor de templates", "templating", "view engine"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [backend, html, ssr, template-engine, frontend]
 skill: lang-dynamic
 status: stub
@@ -31,7 +31,10 @@ A herança de layout evita repetir `head` e `body` em cada página, como pede o 
 
 Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]], o template de resultados passa a ser alimentado pelo banco: `{% for place in places %}`, `{{ total }}` e `{% if total > 0 %} ... {% else %}`. No cadastro, `{% if saved %}{% include ... %}{% endif %}` mostra o modal de sucesso. Ver [[wiki/entities/nunjucks]].
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]], [[wiki/entities/diego-fernandes|Diego Fernandes]] usa o template engine (Blade, Handlebars, EJS, Nunjucks) como marca do "MVC" que a trilha dele *não* segue: no lugar de HTML, a rota devolve JSON ([[wiki/concepts/api-rest]]).
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: motivação, variáveis, include e extends/block com Nunjucks
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: for/if com dados do banco
+- [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: template engine como contraste da API REST

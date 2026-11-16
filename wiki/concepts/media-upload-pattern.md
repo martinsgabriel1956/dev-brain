@@ -3,8 +3,8 @@ type: concept
 title: "Media Upload Pattern"
 aliases: ["presigned url", "upload direto s3", "media upload", "direct upload"]
 date_created: 2026-04-22
-date_updated: 2026-10-30
-source_count: 3
+date_updated: 2026-11-16
+source_count: 4
 tags: [system-design, s3, upload, cdn, performance, infra, valet-key, presigned-url]
 skill: tech-mentor-system-design
 status: stable
@@ -52,6 +52,8 @@ Este fluxo é uma implementação do [[wiki/concepts/valet-key-pattern]]: a API 
 
 [[wiki/concepts/cache-hot-path]] — CDN é o cache de mídia, mesmo princípio de servir do edge.
 
+Contraexemplo em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: a imagem passa pela API (multipart → disco local) em vez de ir direto ao storage por URL assinada.
+
 ## Key Sources
 
 - [[wiki/sources/case-whatsapp]]
@@ -64,3 +66,4 @@ O fluxo acima cobre o PUT único. Para arquivos ≥ 100 MB, o mesmo padrão evol
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — vídeo 5 da série Tier S: PUT < 100 MB vs. multipart, cron de limpeza/reconciliação, download privado
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: upload passando pela API

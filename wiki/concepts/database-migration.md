@@ -3,8 +3,8 @@ type: concept
 title: "Database Migration"
 aliases: ["migration", "migrations", "migrate up", "migrate down", "migração de banco de dados"]
 date_created: 2026-07-28
-date_updated: 2026-10-06
-source_count: 4
+date_updated: 2026-11-16
+source_count: 5
 tags: [banco-de-dados, migrations, versionamento, orm, postgresql, git]
 skill: tech-mentor-backend
 status: draft
@@ -52,9 +52,12 @@ Quando várias branches de código aplicam migrations concorrentes num único ba
 - [[wiki/concepts/code-review]] — migrations tratadas com a mesma seriedade que código de aplicação
 - [[wiki/concepts/checklist-primeiro-dia-projeto]] — migrations automáticas desde o primeiro deploy
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]], as migrations são "o histórico, o controle de versão do seu banco de dados", com `up`/`down` ("um vai e um volta") no Knex. O caso de uso apresentado é a equipe: um comando e todos têm o mesmo schema.
+
 ## Key Sources
 
 - [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]]
 - [[wiki/sources/migrations-schema-evolution]] — aprofunda zero-downtime, expand-contract e locks de DDL especificamente
 - [[wiki/sources/database-branching-testes-neon-fernanda-kipper]] — onde testar migrations concorrentes sem colisão de schema entre branches
 - [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — Flyway + Spring Boot: scripts `V<n>__*.sql`, histórico em [[wiki/concepts/flyway-schema-history]], [[wiki/concepts/imutabilidade-de-migration]] (checksum) e Hibernate só validando; tese de que alterar o banco à mão gera [[wiki/concepts/drift-de-schema-entre-ambientes]]
+- [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: migrations como versão do banco; up/down no Knex

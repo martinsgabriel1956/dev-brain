@@ -4,7 +4,7 @@ title: "Formulário HTML (form, fieldset, label, input, select)"
 aliases: ["form", "formulário", "fieldset", "legend", "label", "input", "select", "option", "input hidden", "button submit"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [html, formulario-html, acessibilidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -44,6 +44,8 @@ No modal, o form de busca ganha `action="/search-results"`. O `label for="search
 
 Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]], o formulário do Ecoleta ganha `method="post"` e `action="/savepoint"`, e cada `name` vira uma chave de `req.body`. Os `data-id` dos itens passam a ser os próprios nomes ("Lâmpadas"...) para gravar texto no banco. [[wiki/entities/mayk-brito|Mayk Brito]] mostra antes a versão GET, com os campos em query string.
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]], o formulário do Ecoleta em React: `htmlFor`, `type="email"`, selects controlados, `onSubmit` no `form` ("pode ser submitado clicando no botão ou apertando o Enter") e `event.preventDefault()`.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: cadastro do Ecoleta, fieldset, name, number, disabled, hidden
@@ -51,3 +53,4 @@ Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]],
 - [[wiki/sources/frontpush-seletores-css-filho-irmao-atributo-nth-child-pseudo-elements]]: `input[type="text"]` muda só o input de texto; `input:button`/`input:text` do Emmet
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: required, hidden de itens, action; label for sem id de novo
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: method post, action /savepoint, name → req.body
+- [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: formulário em React com onSubmit e preventDefault

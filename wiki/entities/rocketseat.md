@@ -4,7 +4,7 @@ title: "Rocketseat"
 aliases: ["Rocket Seat", "Rocket City"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 11
+source_count: 16
 tags: [empresa, educacao, programacao, branding]
 skill: ux-ui-mentor
 status: stub
@@ -38,6 +38,16 @@ Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], a aula f
 
 Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]], a NLW #1 termina com o anúncio do Launchbase: bootcamp de oito semanas, 100% online, R$ 960, com 30 dias de garantia e "vagas limitadas".
 
+Na trilha de [[wiki/entities/diego-fernandes|Diego Fernandes]] da NLW #1 ([[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]), o roxo `#7159c1` e o tema Omni do VS Code, "desenvolvido aqui dentro da própria Rocket" a partir do Dracula, aparecem como marcas da casa.
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]], Rio do Sul (SC) é "a cidade aqui da Rocket", e Diego diz que seeds, transactions e TypeScript estreiam nos conteúdos gratuitos da casa.
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]], Diego repete que "a gente nunca tinha passado tanto conteúdo gratuito"; o roxo `#7159c1` e o tema Dracula seguem como marca.
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], Diego indica o vídeo de emuladores do canal e o repositório "Expo Common Issues" da Rocketseat ("já está com 900 stars").
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], Diego conta que a Rocketseat usa a DigitalOcean para serviços com poucos usuários e indica os vídeos de deploy (Heroku, DigitalOcean) do canal.
+
 ## Key Sources
 
 - [[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-screens]]
@@ -51,3 +61,8 @@ Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]],
 - [[wiki/sources/estruturas-de-dados-pratica-array-hashmap-fila-pilha-arvore]] — canal parceiro
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: NLW #1, dia 4; Launchbase
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: NLW #1, dia 5; Launchbase
+- [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: NLW #1 com Diego Fernandes: tema Omni e roxo #7159c1
+- [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: Rio do Sul; primeiros conteúdos gratuitos com seeds, transactions e TS
+- [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: dia 3: React no conteúdo gratuito
+- [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: Expo Common Issues; vídeo de emuladores
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: DigitalOcean na casa; vídeos de deploy

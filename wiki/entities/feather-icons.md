@@ -3,8 +3,8 @@ type: entity
 title: "Feather Icons"
 aliases: ["Feather", "feathericons", "fetter icons", "pattern icons"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 6
+date_updated: 2026-11-16
+source_count: 9
 tags: [icones, biblioteca, open-source, ui-design]
 skill: ux-ui-mentor
 status: stub
@@ -30,6 +30,12 @@ Em [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints
 
 A família de ícones declarada no style guide do autor ([[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]).
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]], entra no React via `react-icons/fi` (`FiLogIn`, `FiArrowLeft`), com ícones como componentes.
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], vem pelo `@expo/vector-icons` (`<Feather name="arrow-left" />`). O WhatsApp sai do FontAwesome, porque "ele não tem no Feather".
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], `FiUpload` ilustra o Dropzone.
+
 ## Key Sources
 
 - [[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]] — família de linha, stroke 2; comparação com o Iconly
@@ -38,3 +44,6 @@ A família de ícones declarada no style guide do autor ([[wiki/sources/style-gu
 - [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] — pack gratuito preferido; tour de ícones universais pelo plugin
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — plugin preferido; ícone vem como frame; família simples ao lado dos ícones próprios
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — família do style guide
+- [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: react-icons/fi no Ecoleta web
+- [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: @expo/vector-icons no Ecoleta mobile
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: FiUpload no Dropzone

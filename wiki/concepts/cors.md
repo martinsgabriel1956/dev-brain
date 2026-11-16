@@ -3,8 +3,8 @@ type: concept
 title: "CORS"
 aliases: ["cross-origin resource sharing", "erro de cors"]
 date_created: 2026-09-30
-date_updated: 2026-11-03
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [cors, navegador, seguranca, http, origem]
 skill: tech-mentor-networking
 status: stub
@@ -20,5 +20,8 @@ Erro de CORS **não é bug aleatório**: é o **navegador** aplicando uma polít
 - Configuração frouxa (`*` com credenciais ou reflexo da origem) vira falha: [[wiki/concepts/cors-misconfiguration]].
 - Diagnóstico: comparar headers na aba Network ([[wiki/concepts/debug-de-requisicao-http]]); relacionados [[wiki/concepts/http-headers]], [[wiki/concepts/sessoes-http-cookies]].
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]], o CORS "define [...] quais endereços externos vão ter acesso" à API, com `app.use(cors())` aberto em desenvolvimento e o domínio do front-end em produção. A nuance: é o navegador que aplica a regra; Insomnia e React Native não são afetados, e CORS não substitui autenticação.
+
 ## Key sources
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — CORS como política do navegador e correção no servidor
+- [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: cors() no Express; não é controle de acesso

@@ -3,8 +3,8 @@ type: concept
 title: "Object Storage (Blob Storage)"
 aliases: ["object storage", "blob storage", "BLOB", "binary large object", "armazenamento de objetos"]
 date_created: 2026-10-30
-date_updated: 2026-10-30
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [system-design, storage, object-storage, s3, infra]
 skill: tech-mentor-system-design
 status: draft
@@ -28,6 +28,9 @@ Padrão resultante: banco guarda só metadados + **chave do objeto** (S3 key); b
 
 [[wiki/concepts/amazon-s3]] · [[wiki/concepts/presigned-url]] · [[wiki/concepts/multipart-upload]] · [[wiki/concepts/media-upload-pattern]] · [[wiki/concepts/cdn]] · [[wiki/concepts/storage-tiering]]
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], o S3 aparece só para o front-end estático. Os uploads do back-end, gravados em disco local, são o caso que mais pede object storage.
+
 ## Key Sources
 
 - [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — evolução banco → disco local → volume compartilhado → object storage
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: uploads em disco deveriam ir para object storage

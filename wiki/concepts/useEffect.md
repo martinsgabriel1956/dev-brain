@@ -3,8 +3,8 @@ type: concept
 title: "useEffect"
 aliases: ["use effect", "efeitos React", "side effects React"]
 date_created: 2026-04-22
-date_updated: 2026-08-03
-source_count: 4
+date_updated: 2026-11-16
+source_count: 6
 tags: [react, hooks, efeitos, side-effects, useEffect]
 skill: tech-mentor-frontend
 status: stable
@@ -91,9 +91,15 @@ Se é efeito externo ao React → aí sim use useEffect
 
 `useEffect` também serve para inscrever um componente num "sistema externo" que é, na verdade, estado próprio da aplicação — não uma API ou um DOM. É assim que hooks estilo `useDataSet`/`useStore` (base de [[wiki/concepts/zustand]]) funcionam: o `useEffect` chama `subscribe` num [[wiki/concepts/observer-pattern|observer]] externo e retorna o `unsubscribe` como cleanup, mantendo o `useState` local sincronizado com o valor externo. Ver [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]]. A ressalva: React 18+ tem `useSyncExternalStore`, desenhado especificamente para esse caso com garantias de Concurrent Mode que uma combinação manual de `useState`/`useEffect` não oferece.
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: `useEffect(fn, [])` "uma única vez" para buscar itens e UFs, `[selectedUf]` para recarregar cidades, e `.then` porque não aceita `async` direto. Faltou o cleanup (flag ou AbortController), o que deixa uma race na troca rápida de UF.
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: o padrão `async function` dentro do efeito chamada em seguida, para usar `await`, e a dependência `[selectedItems]` para refazer a busca de pontos.
+
 ## Key Sources
 
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
 - [[wiki/sources/useeffect-problemas-e-solucoes]]
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
 - [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]] — `useEffect` sincronizando estado externo (Observer) com estado local
+- [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: fetch na montagem e por dependência; sem cleanup
+- [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: async function interna; dependência por itens

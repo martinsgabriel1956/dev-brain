@@ -4,7 +4,7 @@ title: "Unsplash"
 aliases: ["unsplash.com", "Unsplash+"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 7
+source_count: 9
 tags: [banco-de-imagens, fotografia, licenca, figma]
 skill: ux-ui-mentor
 status: stub
@@ -32,6 +32,10 @@ Em [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta
 
 Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] copia o link de imagens de reciclagem do Unsplash para o campo `image` dos pontos cadastrados no SQLite.
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]], a imagem fixa dos pontos de coleta vem do Unsplash, reduzida pela URL com `w=400&q=60`.
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], a foto de teste do upload também vem do Unsplash.
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-formatos-bancos-otimizacao]]
@@ -41,3 +45,5 @@ Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]],
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — fotos usadas para medir tons claros e escuros com o ColorZilla
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: imagens provisórias dos cards do Ecoleta
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: imagens dos pontos no banco
+- [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: imagem provisória dos pontos, redimensionada pela URL
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: imagem de teste do upload

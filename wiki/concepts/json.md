@@ -4,7 +4,7 @@ title: "JSON (JavaScript Object Notation)"
 aliases: ["JSON", "JavaScript Object Notation", "res.json()"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 4
 tags: [json, javascript, api, formato-de-dados]
 skill: tech-mentor-frontend
 status: stub
@@ -22,7 +22,13 @@ Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[w
 
 Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] retoma o JSON ao abrir o `package.json`: "um jeito de você escrever textos que parece se assemelhar muito com o JavaScript", com todas as propriedades entre aspas duplas. Ver [[wiki/concepts/package-json]].
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]], o JSON é o formato da [[wiki/concepts/api-rest]]: a rota devolve os dados e não o HTML, e o mesmo JSON serve a web e o celular. No Express, `response.json()` aceita objeto ou array.
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]], o body JSON do Insomnia só é lido depois de `app.use(express.json())`. A API devolve itens "serializados" com `image_url`.
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: JSON x objeto JavaScript, resposta do IBGE
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: package.json como JSON
+- [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: JSON como contrato entre API, React e React Native
+- [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: body JSON e serialização

@@ -4,7 +4,7 @@ title: "Vercel"
 aliases: ["Vercel"]
 date_created: 2026-07-28
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [tech-mentor-ai, harness, tool-call, deploy, serverless]
 skill: tech-mentor-ai
 status: stub
@@ -26,6 +26,8 @@ Plataforma de deploy amplamente usada por devs, especialmente com IA. Já entida
 
 [[wiki/sources/database-branching-testes-neon-fernanda-kipper]]: a cada deploy de preview de uma branch de código, a Vercel aciona automaticamente a criação de uma branch de banco correspondente no [[wiki/entities/neon-database|Neon]] (copy-on-write a partir de uma branch-mãe de staging), atualiza a [[wiki/concepts/variaveis-de-ambiente|variável de ambiente]] `DATABASE_URL` do ambiente de preview, e roda as migrations pendentes no momento do deploy — sem exigir mecanismo manual. Ver [[wiki/concepts/database-branching]].
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], "a antiga ZEIT" aparece como alternativa ao Netlify para o front-end React.
+
 ## Key Sources
 
 - [[wiki/sources/harness-engineering-voce-e-o-harness-nao-o-modelo]]
@@ -41,3 +43,4 @@ Em [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]], a Verc
 ## Key sources (adição 2026-11-16)
 
 - [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: deploy do front-end (ex-ZEIT)

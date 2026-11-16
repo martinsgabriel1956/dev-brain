@@ -3,8 +3,8 @@ type: concept
 title: "Status Code HTTP"
 aliases: ["status code", "códigos de status http", "401 vs 403", "200 404 500"]
 date_created: 2026-09-30
-date_updated: 2026-10-06
-source_count: 2
+date_updated: 2026-11-16
+source_count: 4
 tags: [http, api, status-code, erros]
 skill: tech-mentor-networking
 status: stub
@@ -34,6 +34,12 @@ Número na resposta que **comunica o resultado da intenção** do cliente. Pergu
 
 Definido pela RFC 6585 (2012), com `Retry-After` opcional. Ver [[wiki/concepts/http-429-too-many-requests]].
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]], "ponto não encontrado" responde 400, mas o código certo é 404. 400 é requisição malformada, como um `id` que não é número.
+
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], o `errors()` do celebrate responde 400 com `message` e as chaves inválidas. Sem imagem, o controller quebra com 500.
+
 ## Key sources
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — lista comentada de status e mudança de pergunta
 - [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — 429 e RFC 6585
+- [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: 400 usado para not found (deveria ser 404)
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: 400 do celebrate; 500 por req.file ausente

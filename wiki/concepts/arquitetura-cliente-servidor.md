@@ -4,7 +4,7 @@ title: "Arquitetura Cliente-Servidor"
 aliases: ["client-server", "cliente servidor", "browser e servidor", "arquitetura web básica"]
 date_created: 2026-09-28
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [fundamentos, http, rede, backend, iniciante]
 skill: tech-mentor-leadership
 status: stub
@@ -42,9 +42,12 @@ Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entitie
 
 Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] retoma o restaurante do dia 1, agora com o cozinheiro como back-end: "receber os pedidos do cliente", aplicar "regras de negócio" (no login, validar o CPF e conferir a senha), guardar os dados e "enviar as respostas". O mesmo JavaScript roda nos dois lados.
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: um back-end (Node) e vários clientes (React, React Native, Angular, Vue). O back-end decide "como que a nossa aplicação se comporta", e o front-end é "a parte visual".
+
 ## Key Sources
 
 - [[wiki/sources/o-que-estudar-guia-para-iniciantes-andre-casciotti]]
 - [[wiki/sources/isomorfismo-institucional-gaiola-de-ferro-ia-e-mimetismo]] — o movimento de mercado "cliente-servidor" dos anos 90 (downsizing) como onda de modernização — ver [[wiki/concepts/cliente-servidor-como-onda-de-modernizacao]]
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: restaurante, front-end x back-end para iniciantes
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: cozinheiro = back-end; regras de negócio no login
+- [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: um back-end, vários clientes

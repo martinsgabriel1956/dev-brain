@@ -3,8 +3,8 @@ type: concept
 title: "useCallback"
 aliases: ["use callback", "memoizar função React"]
 date_created: 2026-04-22
-date_updated: 2026-08-04
-source_count: 3
+date_updated: 2026-11-16
+source_count: 4
 tags: [react, hooks, performance, memoização, useCallback]
 skill: tech-mentor-frontend
 status: stable
@@ -73,8 +73,11 @@ O [[react-compiler]] (React 19) pode eliminar `useCallback` manual na maioria do
 - [[shallow-compare]] — o algoritmo de comparação por trás do problema que `useCallback` resolve
 - [[react-memo]] — o componente filho que se beneficia de receber uma função com referência estável
 
+Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], Diego justifica o `useCallback` do Dropzone com "a função é recriada na memória do zero". O ganho real é manter a identidade da função para `memo` e dependências; recriar funções é barato.
+
 ## Key Sources
 
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
 - [[wiki/sources/react-19-memoization-sem-usememo-usecallback]]
 - [[wiki/sources/react-reconciliacao-memo-usememo-usecallback]]
+- [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: justificativa imprecisa (identidade, não memória)

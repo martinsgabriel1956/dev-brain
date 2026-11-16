@@ -4,7 +4,7 @@ title: "Mayk Brito"
 aliases: ["Mayk", "Maykão"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [pessoa, educador, rocketseat, frontend, html, css, javascript]
 skill: tech-mentor-frontend
 status: stub
@@ -32,6 +32,10 @@ Também conduz o dia 4 ([[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjuck
 
 Também conduz o dia 5 ([[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]), a última aula da NLW #1: o SQLite e o cadastro e a pesquisa de ponta a ponta. Conta da analogia da loja de roupas para callback e fecha vendendo o Launchbase (oito semanas, R$ 960).
 
+A NLW #1 teve outra trilha, com [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]): o mesmo Ecoleta, mas como API REST + React + React Native. Os dois usam "full MVC" para o modelo com template engine: Mayk para o que faz, Diego para o que evita.
+
+Comparação com a trilha de Diego: [[wiki/questions/nlw-1-duas-trilhas-ecoleta-comparacao]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: NLW #1, dia 1, página inicial do Ecoleta em HTML e CSS
@@ -39,3 +43,4 @@ Também conduz o dia 5 ([[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastr
 - [[wiki/sources/nlw-1-dia-3-itens-de-coleta-modal-pagina-de-resultados-ecoleta]]: dia 3; autoria confirmada
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: dia 4: back-end; caixinha mágica; Launchbase
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: dia 5: banco de dados; Launchbase
+- [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: a outra trilha da NLW #1; "full MVC" nos dois sentidos
