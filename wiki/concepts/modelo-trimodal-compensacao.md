@@ -3,8 +3,8 @@ type: concept
 title: "Modelo Trimodal de Compensação"
 aliases: ["trimodal compensation", "tres tiers salario tech", "trimodal nature"]
 date_created: 2026-04-29
-date_updated: 2026-07-10
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [compensacao, salario, carreira, mercado, tier, trimodal]
 skill: tech-mentor-leadership
 status: stable
@@ -44,3 +44,8 @@ O modelo trimodal explica a variação por *tier de empresa*, mas [[wiki/sources
 
 - [[wiki/sources/trimodal-compensacao-tech]]
 - [[wiki/sources/golang-mercado-salarios-pesquisa-2024]]
+- [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — Google x Amazon no Brasil
+
+## Exemplo em reais: Google x Amazon no Brasil (2026-11-16)
+
+[[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]]: anual de entrada no Brasil R$ 277 mil no Google x R$ 189 mil na Amazon (Levels.fyi). Mesmo dentro do tier de topo há diferença relevante entre empresas; o salário base da Amazon é "bem menor".

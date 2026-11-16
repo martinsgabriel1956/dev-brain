@@ -3,8 +3,8 @@ type: entity
 title: "Meta"
 aliases: ["Facebook", "Meta Platforms"]
 date_created: 2026-07-16
-date_updated: 2026-11-15
-source_count: 11
+date_updated: 2026-11-16
+source_count: 12
 tags: [empresa, demissao, ai-washing, era-agentica, graphql, api-design, ci-cd, deploy]
 skill: tech-mentor-ai
 status: stub
@@ -57,3 +57,8 @@ Em aula de UI, o Facebook é exemplo de neutro tingido: "não é um preto totalm
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — Facebook denso organizado com cards e linhas
 - [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — Facebook azul e WhatsApp verde como cor de branding
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — preto e branco do Facebook tingidos de azul
+- [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — FANG; rumor de codebase excelente
+
+## Meta como empregadora (rumor)
+
+Em [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]], parte da FANG; "dizem que a Meta tem uma codebase excelente", rumor que o autor pede para não tomar como recomendação.

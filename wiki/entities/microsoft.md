@@ -3,8 +3,8 @@ type: entity
 title: "Microsoft"
 aliases: []
 date_created: 2026-07-16
-date_updated: 2026-11-03
-source_count: 12
+date_updated: 2026-11-16
+source_count: 13
 tags: [empresa, custo-ia, token-economics, demissao, capital-de-tokens]
 skill: tech-mentor-ai
 status: stub
@@ -54,6 +54,7 @@ A documentação do Azure publica um fluxograma de escolha de compute, usado em 
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — citada (sem detalhamento numérico) como uma das big techs estourando orçamento de engenharia de IA em 2026
 - [[wiki/sources/tecnologias-hype-passado-soap-xml-esb-jquery-cobol]] — participação na criação original do SOAP (1998) e no WCF
 - [[wiki/sources/historia-e-evolucao-das-apis-bernardo-lobato]] — criadora da [[wiki/concepts/windows-api|WinAPI]] nos anos 80, marco de popularização de API fora de ambientes corporativos gigantes
+- [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — FANG; rumor de ambiente tranquilo
 
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — IE, IIS, ASP, ActiveX, Silverlight e a acusação de monopólio na [[wiki/concepts/guerra-dos-navegadores]]
@@ -69,3 +70,7 @@ A documentação do Azure publica um fluxograma de escolha de compute, usado em 
 ## Key sources (adição 2026-11-03)
 
 - [[wiki/sources/utilizar-ou-nao-kubernetes-fluxo-de-decisao-cloud]] — fluxograma de compute do Azure como base da decisão
+
+## Microsoft como empregadora (rumor)
+
+Em [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]], parte da FANG; "tranquilo de se trabalhar", rumor declarado como tal.

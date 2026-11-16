@@ -3,8 +3,8 @@ type: concept
 title: "Entrevista de System Design (Whiteboard Interview)"
 aliases: ["system design interview", "whiteboard interview", "lousa branca", "entrevista de arquitetura"]
 date_created: 2026-07-20
-date_updated: 2026-10-30
-source_count: 14
+date_updated: 2026-11-16
+source_count: 15
 tags: [system-design, entrevistas, arquitetura, carreira]
 skill: tech-mentor-system-design
 status: draft
@@ -102,6 +102,7 @@ Roteiro da fonte: building blocks → problemas reais → projeto em camadas →
 - [[wiki/sources/como-se-comportar-na-entrevista-de-system-design-tier-s]] — fechamento da série de Pedro Camaforte: mapeamento dos 7 conceitos técnicos da série de volta a features de sistemas clássicos, roteiro de 3-4 etapas antes de desenhar, e a tabela de dois perfis de candidato (que assume vs. que pergunta; monólogo vs. colaboração)
 - [[wiki/sources/como-estudar-system-design-building-blocks-instagram-simplificado]] — roteiro de estudo em 5 etapas e caso Instagram simplificado; não cobre requisitos/estimativas
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — estudar os building blocks antes de praticar; explicar o porquê das decisões ([[wiki/concepts/explicar-o-porque-das-decisoes]]) e conversar com o entrevistador
+- [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — System Design na bateria on-site
 
 
 ## Key sources (adição 2026-10-07)
@@ -117,3 +118,7 @@ Passar o arquivo pelo servidor (em vez de [[wiki/concepts/presigned-url]]) e usa
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/upload-download-arquivos-gigantes-presigned-url-multipart-tier-s]] — red flags de upload: servidor como intermediário e multipart para arquivo pequeno
+
+## System Design na on-site de Big Tech (2026-11-16)
+
+[[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] lista System Design entre os temas da bateria on-site, ao lado de DSA e projetos anteriores ([[wiki/concepts/processo-de-entrevista-big-tech]]).

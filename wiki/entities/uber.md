@@ -3,8 +3,8 @@ type: entity
 title: "Uber"
 aliases: []
 date_created: 2026-07-16
-date_updated: 2026-10-06
-source_count: 3
+date_updated: 2026-11-16
+source_count: 4
 tags: [empresa, custo-ia, token-economics, caso-real]
 skill: tech-mentor-ai
 status: stub
@@ -24,7 +24,12 @@ O caso ilustra o [[wiki/concepts/paradoxo-de-jevons]] em escala corporativa: mes
 
 - [[wiki/sources/custo-real-ia-tokens-produtividade-demissoes]]
 - [[wiki/sources/palantir-ceo-token-tax-nvidia-scam-ia]] — reforça o caso como exemplo motivador de FinOps para IA
+- [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — Big Tech adjacente à FANG
 
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/introducao-arquitetura-de-software-conceitos-decisoes-kiper-academy]] — DOMA: microsserviços orientados a domínio para reduzir o caos de 50+ microsserviços por equipe (relato do áudio, não verificado).
+
+## Uber como Big Tech adjacente
+
+Em [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]], listada entre as [[wiki/concepts/big-tech|Big Techs]] fora da FANG; conhecidos do autor "gostam bastante" de trabalhar lá.

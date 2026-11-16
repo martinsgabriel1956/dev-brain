@@ -3,8 +3,8 @@ type: concept
 title: "Networking de Carreira"
 aliases: ["networking", "mercado invisível de vagas", "mercado de indicações"]
 date_created: 2026-07-20
-date_updated: 2026-10-07
-source_count: 7
+date_updated: 2026-11-16
+source_count: 8
 tags: [carreira, networking, contratacao, senioridade]
 skill: tech-mentor-leadership
 status: stub
@@ -51,3 +51,8 @@ Ambientes que reúnem profissionais com o mesmo objetivo por um período prolong
 - [[wiki/sources/marco-bruno-3-dicas-vaga-junior]] — autofiltragem excessiva (distância, "encaixe perfeito") como erro recorrente de candidatos júnior no mercado visível
 - [[wiki/sources/duas-perguntas-linkedin-cursos-online-lei-de-sturgeon]] — dados de volume de contratação via LinkedIn (700+/ano) e custo da licença de recrutamento, mostrando que o mercado visível tem peso real mesmo em vagas sênior/liderança
 - [[wiki/sources/6-conselhos-carreira-programador-10-anos-experiencia]] — projetos pessoais publicados no LinkedIn como forma de atrair usuários, dupla função de prova técnica e gatilho de rede
+- [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — referral acelera mas não garante em Big Tech
+
+## Referral em Big Tech (2026-11-16)
+
+[[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]]: a indicação de quem trabalha na empresa "pode acelerar um pouco o processo" e aumentar a chance, mas "nunca vai ser garantida de nada, especialmente numa Big Tech"; a decisão não se baseia em quem indica. Ver [[wiki/concepts/contratacao-por-time-em-big-tech]].

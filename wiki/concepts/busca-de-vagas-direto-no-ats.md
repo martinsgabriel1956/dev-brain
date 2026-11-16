@@ -3,8 +3,8 @@ type: concept
 title: "Busca de vagas direto no ATS"
 aliases: ["hunting de vagas","job hunting fora do LinkedIn","site: ashby greenhouse lever"]
 date_created: 2026-10-07
-date_updated: 2026-10-07
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [carreira, busca-de-vagas, ats, mercado-internacional, automacao]
 skill: tech-mentor-leadership
 status: draft
@@ -26,3 +26,8 @@ Estratégia mais ampla: [[wiki/concepts/cacar-a-empresa-nao-a-vaga]].
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]]
+- [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — página de carreiras: filtro por país, várias vagas
+
+## Página de carreiras da Big Tech (2026-11-16)
+
+[[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]]: buscar "<empresa> Careers" leva à página de vagas (Google Careers, jobs.netflix); filtrar por cargo e país (Software Engineer Brasil: 18 vagas na gravação) e ler qualificações mínimas e preferidas antes de aplicar para várias vagas ([[wiki/concepts/contratacao-por-time-em-big-tech]]).

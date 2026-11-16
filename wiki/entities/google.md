@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-11-15
-source_count: 27
+date_updated: 2026-11-16
+source_count: 28
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -100,6 +100,7 @@ O catálogo [[wiki/entities/google-fonts]] aparece em [[wiki/sources/classificac
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — títulos azuis da busca como hierarquia textual
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — Google como interface de texto; Google Fonts; WhatFont no Chrome
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — Google Fonts como catálogo gratuito espelhado no Figma
+- [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — Google Brasil no Levels.fyi, vesting, vagas por país, contratação por time
 
 ## Adição (2026-10-14)
 
@@ -110,3 +111,7 @@ Lançou o [[wiki/entities/gemini-embedding-2]] (embedding multimodal); crítica 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]] — home como macro espaço (foco); resultados de busca agrupados só com espaçamento e recuo, sem bordas de card
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-mascotes-consistencia-svg]] — Material Design recomendado para diretrizes de imagem; ver [[wiki/entities/material-design]]
 - [[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]] — engrenagem e nove pontinhos como pattern aprendido
+
+## Google como empregador: faixa salarial e vagas no Brasil
+
+[[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] usa o Google como exemplo de [[wiki/concepts/big-tech]]: no [[wiki/entities/levels-fyi]], Brasil, L3 ≈ R$ 15 mil/mês e L5 ≈ R$ 33 mil; anual de entrada R$ 277 mil; ações com vesting 38/32/20/10% ([[wiki/concepts/equity-como-diferencial]]). No Google Careers havia 18 vagas de Software Engineer no Brasil, 4 em Málaga e 0 em Portugal na data da gravação. Times como YouTube e Google Ads contratam separadamente ([[wiki/concepts/contratacao-por-time-em-big-tech]]).

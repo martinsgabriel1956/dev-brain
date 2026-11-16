@@ -3,8 +3,8 @@ type: concept
 title: "Vaga Internacional sem Mística"
 aliases: ["empresa gringa não é especial", "perder o medo da vaga fora"]
 date_created: 2026-10-07
-date_updated: 2026-10-07
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [carreira, vaga-internacional, mercado-global]
 skill: tech-mentor-leadership
 status: draft
@@ -24,3 +24,8 @@ Tese de [[wiki/entities/augusto-galego]] (visão de uma pessoa, ~6 anos no Brasi
 ## Key sources
 
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]]
+- [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — relocation, visa sponsor e passagem paga para on-site
+
+## Big Tech: relocation e visto (2026-11-16)
+
+[[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]]: Big Techs têm escritórios em vários países, oferecem relocation interno (Spotify Suécia → Madrid) e [[wiki/concepts/visa-sponsorship]] "para basicamente qualquer país" se você for bom o suficiente; EUA é o mais difícil. Costumam pagar a passagem para a entrevista on-site.

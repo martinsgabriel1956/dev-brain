@@ -3,8 +3,8 @@ type: concept
 title: "Tier de Empresas Tech"
 aliases: ["tier 1 2 3 empresas", "big tech tier", "classificacao empresas tech"]
 date_created: 2026-04-29
-date_updated: 2026-04-29
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [carreira, mercado, tier, big-tech, startups, compensacao]
 skill: tech-mentor-leadership
 status: stub
@@ -45,3 +45,8 @@ Empresas tech se agrupam em três tiers de compensação. Identificar o tier de 
 ## Key Sources
 
 - [[wiki/sources/trimodal-compensacao-tech]]
+- [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — lista de Big Techs adjacentes; Levels.fyi + Glassdoor
+
+## Big Tech além da FANG (2026-11-16)
+
+[[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] estende o grupo de topo para além da FANG: Uber, Spotify, Airbnb, Klarna, SAP, NVIDIA, IBM, Oracle, Intel, Cisco, Alibaba e Tencent ([[wiki/concepts/big-tech]]). Usa o [[wiki/entities/levels-fyi]] e o [[wiki/entities/glassdoor]] para confirmar a faixa por nível e país.

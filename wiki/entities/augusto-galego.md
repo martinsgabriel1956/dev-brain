@@ -3,8 +3,8 @@ type: entity
 title: "Augusto Galego"
 aliases: ["Augusto Galego", "augustogalego.com"]
 date_created: 2026-07-20
-date_updated: 2026-10-30
-source_count: 17
+date_updated: 2026-11-16
+source_count: 18
 tags: [pessoa, programador, youtuber, brasil, devops, system-design, carreira, agentes-ia, code-review]
 skill: tech-mentor-infra
 status: stub
@@ -75,6 +75,7 @@ Em [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]], 
 - [[wiki/sources/leetcode-system-design-entrevista-versus-trabalho-real-na-era-da-ia]] — autoria confirmada por autorreferência direta ao próprio nome na fala; reação a tweet sobre LeetCode/System Design como filtro de entrevista vs. diferencial real de trabalho
 - [[wiki/sources/armazenamento-seguro-de-senhas-hash-salt-pepper-galego]] — autoria confirmada por autorreferência ("cupom galego"); introdução a hash/salt/pepper organizada por modelo de ameaça (online vs. offline), com escada de recomendação até identity providers e passwordless
 - [[wiki/sources/sql-injection-guia-completo-solucoes-galego]] — autoria confirmada por "cupom Galego"; SQL Injection explicado do zero com sete camadas de defesa concêntricas, do banco (query parametrizada, prepared statement) à borda (WAF)
+- [[wiki/sources/big-techs-salarios-vagas-processo-de-aplicacao]] — aula Big Techs (Mapeando Vagas): Levels.fyi, vesting, contratação por time, processo de entrevista; autoria inferida
 
 ## Key sources (adição 2026-10-06)
 
@@ -90,3 +91,7 @@ Vídeo de carreira sobre sete erros comuns de devs brasileiros ao aplicar para e
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — no robots in the gym; vibe ler; ler e escrever (autoria inferida)
+
+## Módulo "Mapeando Vagas": aula sobre Big Techs
+
+Na aula sobre Big Techs do curso de busca de vagas ([[wiki/concepts/big-tech]]), pesquisa salário no [[wiki/entities/levels-fyi]] e no [[wiki/entities/glassdoor]], filtra vagas na página de carreiras do Google e resume o [[wiki/concepts/processo-de-entrevista-big-tech]]. Relato pessoal: aplicou para ~10 vagas na Amazon, 9 rejeitaram o currículo e 1 time o chamou, mas ele não passou da segunda etapa ([[wiki/concepts/contratacao-por-time-em-big-tech]]). Autoria inferida pela pasta das transcrições e pelo módulo; o nome não é dito.
