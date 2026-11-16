@@ -3,8 +3,8 @@ type: entity
 title: "Nubank"
 aliases: ["Nu", "Nu Holdings", "Nu Bank"]
 date_created: 2026-05-31
-date_updated: 2026-11-13
-source_count: 9
+date_updated: 2026-11-15
+source_count: 10
 tags: [nubank, fintech, banco-digital, clojure, datomic, event-sourcing, iso-27001, security, cell-based-architecture, observabilidade]
 skill: tech-mentor-backend
 status: stable
@@ -59,6 +59,10 @@ Na versão "W7" da aula de formas, o site do Nubank é exemplo de predominância
 
 Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]: botão "continuar", links do topo (Pix) e CTAs ("entre para Nubank", "quero ser Nubank") "totalmente circulares para poder trazer mais para perto".
 
+## Style guide do curso
+
+Násser está fazendo um Style Guide do Nubank para o curso, com h1–h3 em versão desktop e mobile ([[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]]).
+
 ## Key Sources
 
 
@@ -71,3 +75,4 @@ Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-
 - [[wiki/sources/formas-exemplos-praticos-radius-consistencia-projetos]] — página institucional citada por Násser como exemplo de botão (aparentemente totalmente arredondado)
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — site como exemplo de formas: geométrico, bordas arredondadas, fotos de pessoas
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — botões e links totalmente circulares para aproximar
+- [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — style guide do Nubank (escalas desktop e mobile)

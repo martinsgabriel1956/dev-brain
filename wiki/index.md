@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-11-13
+date_updated: 2026-11-15
 ---
 
 
@@ -26,6 +26,7 @@ date_updated: 2026-11-13
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] | Aula de [[wiki/concepts/tipografia]] da edição "W7" ([[wiki/entities/nasser\|Násser]], inferido): seguir uma [[wiki/concepts/escala-tipografica\|escala]] por consistência; [[wiki/concepts/legibilidade-e-leiturabilidade\|legibilidade]] primeiro, corpo de 14 a 21 px; tamanho versus espaço ([[wiki/entities/new-york-times\|NYT]] 14 px, Framer 106/32, [[wiki/entities/apple]] 80/28); o maior se enxerga primeiro; style guide do [[wiki/entities/nubank]] com desktop e mobile; até 6 variações (h1–h6), usa 4; escala do [[wiki/entities/figma]] + 8pt: 14, 16, 18, 24, 36, 48, 52, 64, 72, 84, 96 |
 | [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] | Aula teórica de [[wiki/concepts/botoes-em-interfaces\|botões e links]] da edição "W7" (de [[wiki/entities/nasser\|Násser]]): botões guiam a jornada de A a B; exemplos [[wiki/entities/frontpush]] (grade do curso + inscreva-se), [[wiki/entities/apple]] (link branco, texto cinza), [[wiki/entities/sketch]] (See pricing, tente de graça), Framer e Adobe XD; [[wiki/concepts/consistencia-visual\|consistência]] (altura, padding, radius iguais); primário preenchido + secundário vazio; [[wiki/concepts/area-clicavel\|área clicável]] de 44 px (usa 56); label curto; cor de [[wiki/concepts/contraste]]; hover com sombra da cor do botão |
 | [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] | Aula teórica de [[wiki/concepts/formas-de-botoes|formas de botões]] da edição "W7" (de [[wiki/entities/nasser|Násser]]): retangular (seriedade; Madero e arquitetura como contraste), arredondado (o "coringa"), circular ([[wiki/entities/nubank]], [[wiki/entities/apple]]; aproxima), chanfrado (futurista; jogo do Homem-Aranha), diagonal (movimento; PES, FIFA) e hexagonal (gamificado, crianças); geométrico puro "fica muito longe da pessoa" |
 | [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] | Aula prática de [[wiki/concepts/icones-em-interfaces\|ícones]] da edição "W7" (de [[wiki/entities/nasser\|Násser]]): plugins da comunidade do [[wiki/entities/figma]] ([[wiki/entities/feather-icons]], Bootstrap Icons, Material Design Icons, Iconify); arquivo do Piqo ([[wiki/entities/iconly]]) com bold, bulk, light, broken, two-tone; ícones próprios para os módulos do site (laranja = UI Design) + Feather, as duas [[wiki/concepts/familia-de-icones\|famílias]]; ícone dentro de círculo ou card para equilibrar; [[wiki/concepts/constraints-no-figma\|constraints]] para não deformar |
@@ -973,6 +974,8 @@ date_updated: 2026-11-13
 | [[wiki/concepts/botoes-em-interfaces]] | Botões guiam a jornada; primário preenchido x secundário vazio; mesma altura, padding e radius, largura pelo texto; label curto; cor de contraste; hover |
 | [[wiki/concepts/formas-de-botoes]] | Seis formas de botão e o que comunicam: reto, arredondado, circular (pill), chanfrado, diagonal, hexagonal; botão como contraste à predominância; `clip-path` corta foco e sombra |
 | [[wiki/concepts/area-clicavel]] | Área que responde ao toque; dedo é menos preciso que mouse; 44 px na aula, 44 pt Apple, 48 dp Material, 24 px WCAG 2.2 AA |
+| [[wiki/concepts/escala-tipografica]] | Conjunto fechado de tamanhos de fonte; corpo de 14–21 px, passos maiores no topo (96 → 144 → 288), até 6 degraus (usa 4), uma escala para desktop e outra para mobile; escala modular como versão sistemática |
+| [[wiki/concepts/legibilidade-e-leiturabilidade]] | Legibilidade = reconhecer o caractere (fonte); leiturabilidade = ler o bloco (tamanho, entrelinha, contraste, medida); primeira preocupação ao montar a escala |
 | [[wiki/concepts/grid-de-icones]] | Formas-guia no frame do ícone (área útil 20×20 em 24, quadrado, círculo, X); Material keylines; travado no Figma para consistência |
 | [[wiki/concepts/centralizacao-optica]] | Centralizar pelo olho, não pelas coordenadas: triângulo do play e círculo ímpar parecem tortos |
 | [[wiki/concepts/familia-de-icones]] | Ícones com o mesmo estilo e traço; linha (sóbrio) x preenchido (amigável); escolha pela identidade visual e use uma só |
