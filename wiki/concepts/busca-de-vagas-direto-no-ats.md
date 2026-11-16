@@ -4,7 +4,7 @@ title: "Busca de vagas direto no ATS"
 aliases: ["hunting de vagas","job hunting fora do LinkedIn","site: ashby greenhouse lever","busca booleana"]
 date_created: 2026-10-07
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [carreira, busca-de-vagas, ats, mercado-internacional, automacao]
 skill: tech-mentor-leadership
 status: draft
@@ -45,3 +45,12 @@ Estratégia mais ampla: [[wiki/concepts/cacar-a-empresa-nao-a-vaga]].
 ## Key sources (adição 2026-11-16)
 
 - [[wiki/sources/buscadores-e-outsourcing-galego]]
+
+## Mesma tática numa segunda fonte
+
+[[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]] chega ao mesmo método por outro caminho: busca booleana no Google com `site:` (Indeed, LinkedIn, `lever.co`), sem passar pela busca de cada plataforma. O PDF [[wiki/sources/onde-procurar-vagas-guia-definitivo]] acrescenta `intitle:`, `inurl:`, `filetype:` e o Google for Jobs. Ver [[wiki/concepts/busca-booleana-de-vagas]].
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
+- [[wiki/sources/onde-procurar-vagas-guia-definitivo]]

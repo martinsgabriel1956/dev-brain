@@ -4,7 +4,7 @@ title: "LinkedIn"
 aliases: []
 date_created: 2026-08-24
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [plataforma, contratacao, networking, carreira]
 skill: tech-mentor-leadership
 status: stub
@@ -53,3 +53,12 @@ Em [[wiki/sources/buscadores-e-outsourcing-galego]], o LinkedIn é "o melhor de 
 ## Key sources (adição 2026-11-16)
 
 - [[wiki/sources/buscadores-e-outsourcing-galego]] — LinkedIn como job board nº 1
+
+## O LinkedIn como "varejão" e a busca por posts
+
+[[wiki/entities/augusto-galego]] chama o LinkedIn de "varejão, que tem tudo", mas lembra que as Big Techs nem sempre publicam lá e que os posts promovidos atrapalham ([[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]). Duas técnicas: [[wiki/concepts/busca-booleana-de-vagas|busca booleana]] na barra principal com filtros nativos ([[wiki/sources/onde-procurar-vagas-guia-definitivo]]) e busca por **posts** das últimas 24 h para achar o recrutador que publicou a vaga.
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
+- [[wiki/sources/onde-procurar-vagas-guia-definitivo]]

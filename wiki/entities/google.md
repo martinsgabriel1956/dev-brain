@@ -4,7 +4,7 @@ title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
 date_updated: 2026-11-16
-source_count: 28
+source_count: 29
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -129,3 +129,12 @@ Lançou o [[wiki/entities/gemini-embedding-2]] (embedding multimodal); crítica 
 Em [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]], o Google aparece entre as Big Techs que contratam presencialmente em Dublin, com visa sponsor e salários ≥ 100 mil €/ano, e em Londres ([[wiki/concepts/visa-sponsorship]]).
 
 - [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] — contratação em Dublin/Londres como rota de imigração
+
+## Google Careers como fonte da verdade das vagas
+
+Em [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]], o board próprio do Google é "a fonte da verdade" das vagas abertas, que nem sempre chegam ao LinkedIn: 28 vagas em Zürich e 9 em Madrid na demo de abril de 2025, e a decomposição da [[wiki/concepts/total-compensation]] de um L3 via [[wiki/entities/levels-fyi]]. O PDF [[wiki/sources/onde-procurar-vagas-guia-definitivo]] indica o Google também como motor de [[wiki/concepts/busca-booleana-de-vagas|busca booleana]] e o bloco Google for Jobs.
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
+- [[wiki/sources/onde-procurar-vagas-guia-definitivo]]

@@ -54,3 +54,11 @@ Recomendada a partir de ~R$ 25.000/mês em [[wiki/sources/como-eu-investiria-com
 [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]]: as vagas internacionais pagam sobretudo em dólar (quase sempre EUA) ou euro. Para quem quer dolarizar morando no Brasil, remoto para os EUA "converte muito melhor" do que se mudar para lá. Vagas globais na faixa de US$ 4.200–6.000/mês são "um range normal", mas muito concorridas. É a versão Brasil da [[wiki/concepts/arbitragem-geografica-de-salario]].
 
 - [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] — EUA como primeiro alvo para renda em dólar sem emigrar
+
+## Outsourcing como via de acesso
+
+[[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]] dá números para a via "trabalho remoto para empresa estrangeira" por outsourcing: ~35 USD/h pleno/sênior dá ~5.600 USD/mês (160 h), quase sempre PJ sem férias pagas nem décimo terceiro. Ver [[wiki/concepts/outsourcing-como-porta-de-entrada-internacional]].
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]

@@ -3,8 +3,8 @@ type: entity
 title: "37signals"
 aliases: ["thirty seven signals", "basecamp company", "37 signals"]
 date_created: 2026-07-07
-date_updated: 2026-07-07
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [basecamp, rails, boring-technology, grande-rollback, cloud-exit]
 skill: tech-mentor-backend
 status: stub
@@ -29,3 +29,11 @@ Cofundada por **[[wiki/entities/dhh]]**, criador do Ruby on Rails — ver a pág
 ## Open Questions
 
 - O nome foi transcrito de forma pouco clara na fonte de áudio original ("Thury Syve Sos") — vale confirmar contra a fonte primária da 37signals quando ingerida diretamente.
+
+## Contrata no mundo todo, mesmo salário
+
+Em [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]], a 37signals aparece no repositório `remoteintech/remote-jobs` como empresa que contrata no mundo inteiro e paga o mesmo salário independente de onde você está, com vagas de Junior e Senior Rails Programmer. A grafia "37 Signals" está clara nessa transcrição, o que ajuda a fechar a open question sobre o nome.
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]

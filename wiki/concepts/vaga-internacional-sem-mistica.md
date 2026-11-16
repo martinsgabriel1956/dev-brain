@@ -43,3 +43,11 @@ No curso de carreira do mesmo autor, [[wiki/sources/buscadores-e-outsourcing-gal
 ## Key sources (adição 2026-11-16)
 
 - [[wiki/sources/buscadores-e-outsourcing-galego]]
+
+## Do mesmo autor: por onde entrar
+
+Em [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]], [[wiki/entities/augusto-galego]] completa a tese com o "onde": [[wiki/concepts/tres-canais-de-vaga-internacional]], e o conselho de usar [[wiki/concepts/outsourcing-como-porta-de-entrada-internacional|outsourcing]] como primeiro degrau, porque aplicar direto para fora "é difícil".
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]

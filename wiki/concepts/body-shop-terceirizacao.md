@@ -56,3 +56,11 @@ Em ciclos de mercado com liquidez abundante, os Body Shops ficam saturados (sem 
 ## Key sources (adição 2026-11-16)
 
 - [[wiki/sources/buscadores-e-outsourcing-galego]] — outsourcing visto pelo candidato
+
+## Contraponto: outsourcing como degrau internacional
+
+[[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]] recomenda outsourcing para o primeiro emprego fora, com ressalvas que conversam com a crítica desta página: margem de 20% a 50% que o dev não vê, PJ sem direitos, e a orientação de pesquisar reclamações e escolher as melhores. Ver [[wiki/concepts/outsourcing-como-porta-de-entrada-internacional]].
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]

@@ -33,6 +33,8 @@ date_updated: 2026-11-16
 | [[wiki/sources/principais-propriedades-css-color-background-font]] | Aula 04 de "Básico CSS" do [[wiki/entities/frontpush\|FrontPUSH]] (de [[wiki/entities/nasser\|Násser]], inferido), a primeira de código na wiki: color x background-color; imagem por `<img>` (caminho do HTML, `width: 100%`, `margin: 0 auto`) ou [[wiki/concepts/background-css\|background-image]] (caminho do CSS com `../`, cover x contain, no-repeat, position); [[wiki/concepts/display-css\|block x inline]]; border vermelho "como printf"; [[wiki/entities/google-fonts]] por `<link>`, font-weight, small-caps, line-height, letter-spacing; erros: `<img>` não é bloco, small-caps não é caixa alta |
 | [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]] | Aula 06 do Básico CSS do [[wiki/entities/frontpush\|FrontPUSH]] (de [[wiki/entities/nasser\|Násser]], inferido): [[wiki/concepts/css-position\|position]] com dois quadrados; static é o padrão; relative "em relação a ele mesmo" (−1000 px + `transition` para o menu mobile); absolute pelo pai posicionado (slide: "diferente de static"); fixed "só olha para a sua tela" ([[wiki/concepts/menu-fixo]]); sticky "transita" para fixed; `body` com `100vh` ([[wiki/concepts/unidades-de-viewport]]) |
 | [[wiki/sources/buscadores-e-outsourcing-galego]] | Aula curta do curso de carreira de [[wiki/entities/augusto-galego]] (inferido): onde procurar vaga primeiro. [[wiki/concepts/job-board\|Job boards]]: [[wiki/entities/linkedin]] (o melhor, Brasil e gringa), [[wiki/entities/lever]] com busca booleana, [[wiki/entities/indeed]], [[wiki/entities/glassdoor]], [[wiki/entities/wellfound]]. [[wiki/concepts/empresa-de-outsourcing-remoto\|Outsourcing]]: [[wiki/entities/bairesdev]] (volume, opiniões mistas), [[wiki/entities/x-team]] e Cake (qualidade), [[wiki/entities/toptal]] e [[wiki/entities/revelo]] |
+| [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]] | Aula do workshop "Roadmap pro seu próximo emprego" ([[wiki/entities/augusto-galego]], inferido): [[wiki/concepts/tres-canais-de-vaga-internacional\|três canais]] (site da empresa, job boards, outsourcing); Total Compensation via levels.fyi; busca booleana, posts de recrutadores, Lever, Who is Hiring; [[wiki/concepts/outsourcing-como-porta-de-entrada-internacional\|outsourcing]] PJ como primeiro degrau |
+| [[wiki/sources/onde-procurar-vagas-guia-definitivo]] | PDF do mesmo workshop: links de 24 Big Techs, 10 job boards e 12 outsourcings; manual de [[wiki/concepts/busca-booleana-de-vagas\|busca booleana]] no LinkedIn e no Google (`site:`, `intitle:`, Google for Jobs) |
 | [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] | Abertura do módulo de interfaces web da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): "vamos projetar de verdade"; [[wiki/concepts/workflow-de-interface-web\|workflow]] pesquisa → [[wiki/concepts/wireframe\|wireframes]] → protótipo final UI; grids por dispositivo; [[wiki/concepts/page-map]] como flow de dobras; biblioteca de wireframes; [[wiki/concepts/style-guide]] (branding, cor, tipografia desktop/mobile, componentes); case [[wiki/entities/nubank]] |
 | [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] | Parte 1 de [[wiki/concepts/wireframe\|wireframes]] da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): "design barato e rápido", telinhas preto e branco para levantar requisitos com o cliente e corrigir na prototipagem, não no software; foco em proporção, jornada, conteúdo e posição, não em visual; [[wiki/concepts/page-map]] das dobras; começa em papel e caneta (brinde: sketchbook) |
 | [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] | Aula 2 de [[wiki/concepts/wireframe\|wireframes]] da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): [[wiki/concepts/briefing]] como levantamento de requisitos (marca, [[wiki/concepts/branding]], diferencial, carro-chefe, objetivo da interface); [[wiki/concepts/page-map]] a partir de patterns pesquisados ([[wiki/entities/ui-movement]]); CTA repetido do FrontPUSH; leitura em F (conteúdo pesado) e em Z (pontos de atenção) |
@@ -1004,6 +1006,14 @@ date_updated: 2026-11-16
 |---|---|
 | [[wiki/concepts/job-board]] | Site onde vagas são publicadas/agregadas; ordem de prioridade do Galego (LinkedIn primeiro) |
 | [[wiki/concepts/empresa-de-outsourcing-remoto]] | Outsourcing que aloca devs em clientes de fora; porta paralela aos job boards (volume x qualidade) |
+### Onde Encontrar Vagas na Gringa (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/tres-canais-de-vaga-internacional]] | Direto no site da empresa, job boards, outsourcing; direto/board pode ser PJ ou CLT, outsourcing quase sempre PJ |
+| [[wiki/concepts/outsourcing-como-porta-de-entrada-internacional]] | Intermediária vende suas horas; margem 20–50%, ~35 USD/h, PJ sem direitos; mais fácil, segurança em layoff, degrau para o próximo emprego |
+| [[wiki/concepts/busca-booleana-de-vagas]] | AND/OR/NOT/aspas/parênteses no LinkedIn; `site:`/`intitle:`/`inurl:` no Google; posts de recrutadores; Google for Jobs |
+| [[wiki/concepts/total-compensation]] | Base + bônus + ações + benefícios; só a base cai todo mês, ações por vesting |
 
 ### Paleta de Cores na Prática (2026-11-15)
 
@@ -3561,6 +3571,11 @@ date_updated: 2026-11-16
 - [[wiki/entities/indeed]] — job board com bastante vaga fora do Brasil
 - [[wiki/entities/glassdoor]] — job board e avaliações/salários
 - [[wiki/entities/wellfound]] — job board de startups (ex-AngelList Talent); poucas vagas, boas
+- [[wiki/entities/x-team]] — outsourcing de devs; exemplo "bem positivo" de porta de entrada internacional
+- [[wiki/entities/wellfound]] — job board de startups de ponta, salário publicado, muitas vagas remotas
+- [[wiki/entities/levels-fyi]] — salários por empresa/nível/local; decomposição da Total Compensation
+- [[wiki/entities/hacker-news]] — fórum da Y Combinator; post mensal "Who is Hiring?"
+
 - [[wiki/entities/whatfont]] — extensão de navegador que mostra fonte, tamanho e line-height de um texto; usada para estudar sites de referência
 - [[wiki/entities/wikipedia]] — enciclopédia on-line; contraexemplo de largura de texto ("te cansa um pouco rápido")
 - [[wiki/entities/apple]] — big tech usada como referência de UI; links destacados, link branco x texto cinza, botões que não encolhem no mobile

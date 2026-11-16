@@ -25,3 +25,10 @@ Em [[wiki/sources/buscadores-e-outsourcing-galego]], o Lever aparece como o segu
 ## Key sources (adição 2026-11-16)
 
 - [[wiki/sources/buscadores-e-outsourcing-galego]]
+## Ruim de buscar no site, bom via Google
+
+Segundo [[wiki/entities/augusto-galego]], o Lever é difícil de buscar no próprio site, mas aparece bem com busca booleana no Google (`lever.co`), e o autopreenchimento do currículo "te ajuda a ser preguiçoso" ([[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]). Mesma tática de [[wiki/concepts/busca-de-vagas-direto-no-ats]].
+
+## Key sources (adição 2026-11-16)
+
+- [[wiki/sources/onde-encontrar-vagas-workshop-roadmap-emprego-galego]]
