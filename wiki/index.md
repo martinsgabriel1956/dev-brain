@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-11-13
+date_updated: 2026-11-15
 ---
 
 
@@ -26,6 +26,7 @@ date_updated: 2026-11-13
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] | Aula 05 do módulo de [[wiki/concepts/tipografia]] do [[wiki/entities/frontpush\|FrontPUSH]] (edição "W7", de [[wiki/entities/nasser\|Násser]]): negrito e itálico como [[wiki/concepts/contraste]] ([[wiki/concepts/peso-tipografico]]); [[wiki/concepts/tracking]] aberto em maiúsculas, menus e botões; Inspect do [[wiki/entities/figma]] → `letter-spacing` e `font-weight`; estilo "falso" quando o peso não foi carregado; [[wiki/concepts/kerning]] para marcas (KernType); [[wiki/concepts/texto-em-maiusculas\|maiúsculas]] sobem a hierarquia no mesmo tamanho |
 | [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] | Aula teórica de [[wiki/concepts/botoes-em-interfaces\|botões e links]] da edição "W7" (de [[wiki/entities/nasser\|Násser]]): botões guiam a jornada de A a B; exemplos [[wiki/entities/frontpush]] (grade do curso + inscreva-se), [[wiki/entities/apple]] (link branco, texto cinza), [[wiki/entities/sketch]] (See pricing, tente de graça), Framer e Adobe XD; [[wiki/concepts/consistencia-visual\|consistência]] (altura, padding, radius iguais); primário preenchido + secundário vazio; [[wiki/concepts/area-clicavel\|área clicável]] de 44 px (usa 56); label curto; cor de [[wiki/concepts/contraste]]; hover com sombra da cor do botão |
 | [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] | Aula teórica de [[wiki/concepts/formas-de-botoes|formas de botões]] da edição "W7" (de [[wiki/entities/nasser|Násser]]): retangular (seriedade; Madero e arquitetura como contraste), arredondado (o "coringa"), circular ([[wiki/entities/nubank]], [[wiki/entities/apple]]; aproxima), chanfrado (futurista; jogo do Homem-Aranha), diagonal (movimento; PES, FIFA) e hexagonal (gamificado, crianças); geométrico puro "fica muito longe da pessoa" |
 | [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] | Aula prática de [[wiki/concepts/icones-em-interfaces\|ícones]] da edição "W7" (de [[wiki/entities/nasser\|Násser]]): plugins da comunidade do [[wiki/entities/figma]] ([[wiki/entities/feather-icons]], Bootstrap Icons, Material Design Icons, Iconify); arquivo do Piqo ([[wiki/entities/iconly]]) com bold, bulk, light, broken, two-tone; ícones próprios para os módulos do site (laranja = UI Design) + Feather, as duas [[wiki/concepts/familia-de-icones\|famílias]]; ícone dentro de círculo ou card para equilibrar; [[wiki/concepts/constraints-no-figma\|constraints]] para não deformar |
@@ -927,6 +928,10 @@ date_updated: 2026-11-13
 
 | Page | Hook |
 |---|---|
+| [[wiki/concepts/peso-tipografico]] | Espessura da fonte (`font-weight`); negrito e itálico destacam por contraste, só em detalhes; peso não carregado vira estilo falso |
+| [[wiki/concepts/tracking]] | Mesma distância entre todas as letras (`letter-spacing`); abrir em maiúsculas, menus e botões; 0 no corpo |
+| [[wiki/concepts/kerning]] | Distância entre um par de caracteres; ajuste manual em logotipos e marcas; KernType para treinar |
+| [[wiki/concepts/texto-em-maiusculas]] | Caixa alta sobe a hierarquia no mesmo tamanho; botões, CTAs e links, com tracking aberto; curto, via text-transform |
 | [[wiki/concepts/ui-design]] | Desenho da interação usuário-dispositivo, não só sites e apps; parte do pior cenário e é subconjunto da UX |
 | [[wiki/concepts/ux-design]] | Termo amplo (toda experiência com produto ou serviço) vs. profissão (pesquisa, validação, tríade usuário-empresa-produto) |
 | [[wiki/concepts/porque-das-decisoes-de-design]] | Saber justificar tipografia, escala, line-height e cor; separa cópia de aprendizado e convence o cliente |

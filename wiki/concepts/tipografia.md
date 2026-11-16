@@ -3,8 +3,8 @@ type: concept
 title: "Tipografia"
 aliases: ["fonte", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 7
+date_updated: 2026-11-15
+source_count: 8
 tags: [ui, ui-design, tipografia, fonte, serifa, elementos-da-interface]
 skill: ux-ui-mentor
 status: stub
@@ -50,6 +50,10 @@ Na versão "W7" da aula de formas ([[wiki/sources/formas-geometricas-organicas-e
 
 Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]], "a tipografia do Madero é com serifa" e o restante do site usa "uma tipografia um pouco mais limpa", sem serifa. O site de arquitetura usa letras sem serifa "buscando o minimalismo", com mais espaçamento entre letras no título. Na aula de formas "W7" o mesmo site de arquitetura aparecia com serifa: ver Tensões da fonte.
 
+## Variáveis tipográficas (aula 05)
+
+Primeira aula do módulo de tipografia na wiki ([[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]]): negrito e itálico como [[wiki/concepts/contraste]] ([[wiki/concepts/peso-tipografico]]), [[wiki/concepts/tracking]] (distância igual entre todas as letras), [[wiki/concepts/kerning]] (distância entre um par, coisa de marca) e [[wiki/concepts/texto-em-maiusculas|maiúsculas]], que sobem a hierarquia no mesmo tamanho. De passagem: o justificado deixa distâncias de "X" e de "3, 4X" entre palavras, por isso "quase não usa". `[skill: ux-ui-mentor]` A skill também manda evitar justificado ("rios de espaço"). As aulas 03 (altura de linha e largura) e 04 (alinhamento e espaçamento) ainda não foram ingeridas.
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -59,3 +63,4 @@ Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — caixa de texto inclui o line-height ao medir distâncias
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — serifa x sem serifa; letra de mão do Coco Bambu; sem serifa do Madero
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — Madero serifado + corpo sem serifa; arquitetura sem serifa (tensão)
+- [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — negrito, itálico, tracking, kerning, maiúsculas; estilo falso; justificado

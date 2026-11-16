@@ -13997,3 +13997,15 @@ O usuário confirmou que [[wiki/sources/botoes-e-links-guiar-jornada-consistenci
 ## [2026-11-13] update | Autoria confirmada: formas de botões (edição "W7")
 
 O usuário confirmou que [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] é de [[wiki/entities/nasser]]. Atualizados: `author`, Entities e Open Questions da fonte, a linha em Key Sources de nasser.md e a linha no index.md. A nota (6) da entrada de ingest anterior fica superada.
+
+## [2026-11-15] ingest | Tipografia: negrito, itálico, tracking, kerning e maiúsculas
+
+**Fonte:** legenda SRT `/home/nemomartins/Documentos/new/transcribe/transcricoes/FrontPush/05 - Negrito, Tracking, Kerning & Maiúsculas.pt_br.srt` (PT-BR), limpa com a skill **text-cleaner** em `raw/tipografia-negrito-italico-tracking-kerning-maiusculas.md` (sem tradução). Diff palavra a palavra conferido: só correções de ASR, "passamento"→espaçamento (o slide da aula tem a seção Espaçamento) e "sem bold"→semibold; hífens soltos juntados ("e -mails", "letter -spacing", "font -weight"), "10 %"→10%, "type .method .ac"→type.method.ac. Sem inserções entre colchetes. Mantidos literalmente: "como o próprio nome não sugere", "só que com case" (provável opção Case do Figma), "fazer a ligatura", "que a gente vir aqui", "distância 3, 4X". Subtítulos `##` por tema.
+
+**Skill:** ux-ui-mentor (SKILL.md; `references/tipografia.md`: tabela de tracking, casing com tracking aberto, itálico para citações e metadados, evitar justificado). Mesma escolha das aulas anteriores do curso.
+
+**Criado:** [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]]; conceitos [[wiki/concepts/peso-tipografico]], [[wiki/concepts/tracking]], [[wiki/concepts/kerning]] e [[wiki/concepts/texto-em-maiusculas]].
+
+**Tocadas (8 existentes):** tipografia, contraste, hierarquia-visual, css, botoes-em-interfaces (concepts, com seção nova); figma, frontpush (seção nova), nasser (Key Sources) (entities). Também index.md e log.md.
+
+**Notas:** (1) **"De 100 até 700"** contradiz a própria Mukta da aula (extra bold = 800); CSS aceita 1–1000 `[external]`. (2) **"`em` se baseia em 16 pixels"**: é relativo ao font-size do elemento `[external]`. (3) **Kerning ≠ ligatura** `[external]`. (4) **Itálico em e-mails e endereços** diverge da skill (citações, ênfase, metadados). (5) **Autoria inferida** (Násser): logo "W7" no slide e pasta FrontPush; "meu website" provavelmente o FrontPUSH. (6) Slide repete "Distância entre 2 caracteres" em Maiúsculas (erro de cópia). (7) Aulas 03 e 04 do módulo estão na pasta de transcrições e não foram ingeridas. Sem página própria: Google Fonts, Adobe Fonts, Mukta, KernType. `date_published` vazio.

@@ -3,8 +3,8 @@ type: concept
 title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
-date_updated: 2026-11-13
-source_count: 17
+date_updated: 2026-11-15
+source_count: 18
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -101,6 +101,10 @@ Em [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]]
 
 Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: botão primário preenchido e secundário "vazio", sem background, criam hierarquia entre ações. Na [[wiki/entities/apple]], links em branco e texto em cinza; no [[wiki/entities/sketch]], o link "tem a hierarquia visual maior do corpo de texto". Ver [[wiki/concepts/botoes-em-interfaces]].
 
+## Maiúsculas no mesmo tamanho
+
+Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]], o mesmo texto em 16 px fica mais alto na hierarquia só por estar em [[wiki/concepts/texto-em-maiusculas|maiúsculas]]; negrito em títulos é o outro recurso tipográfico ([[wiki/concepts/peso-tipografico]]).
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -120,3 +124,4 @@ Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: bo
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — 16 / 32 / 128 como níveis de hierarquia
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-compreensao-consistencia-svg-tinyimage]] — destaque por cor nas ilustrações aponta onde está o motion
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — botão primário x secundário; link branco x texto cinza (Apple)
+- [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — maiúsculas em 16 px sobem a hierarquia

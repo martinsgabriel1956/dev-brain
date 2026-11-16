@@ -3,8 +3,8 @@ type: concept
 title: "CSS (Cascading Style Sheets)"
 aliases: ['CSS', 'folhas de estilo em cascata']
 date_created: 2026-10-14
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [css, frontend, web, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -18,7 +18,12 @@ Linguagem **declarativa** que separa estilo de conteúdo: regras visuais aplicad
 
 Por ser código com tags, um [[wiki/concepts/formato-svg|SVG]] inline pode ter os caminhos estilizados e animados pelo CSS; para [[wiki/entities/nasser|Násser]], é daí que "a magia do Motion surgiu" ([[wiki/sources/imagens-e-ilustracoes-svg-no-figma-undraw-mockup-iphone-codigo]]). `[external]` Via `<img>` ou `background-image` o CSS da página não alcança os caminhos.
 
+## Propriedades tipográficas
+
+Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]], o Inspect do [[wiki/entities/figma]] traduz o design em `letter-spacing` ([[wiki/concepts/tracking]]), `font-family`, `font-style` e `font-weight` ([[wiki/concepts/peso-tipografico]]). Peso usado no CSS sem ter sido carregado do Google Fonts ou Adobe Fonts vira estilo "falso".
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
 - [[wiki/sources/imagens-e-ilustracoes-svg-no-figma-undraw-mockup-iphone-codigo]] — SVG é código com tags, então o CSS manipula seus caminhos (base do motion)
+- [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — letter-spacing, font-weight e estilo falso
