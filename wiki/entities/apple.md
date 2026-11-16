@@ -3,8 +3,8 @@ type: entity
 title: "Apple"
 aliases: ["Apple Inc.", "apple.com"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [empresa, big-tech, ui-design, referencia]
 skill: ux-ui-mentor
 status: stub
@@ -25,7 +25,12 @@ Empresa de tecnologia (iPhone, Mac). Nas aulas de UI, o site é referência: emp
 
 Citada como usuária de botão de bordas circulares, "para poder trazer mais para perto" ([[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]).
 
+## Branding e objetivo
+
+Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], a Apple é o exemplo de [[wiki/concepts/branding]]: produtos premium, clean, "referência no mercado", e uma pegada que se repete em produto, serviço e site ("um conversa com o outro"). É também exemplo de [[wiki/concepts/objetivo-da-interface|objetivo]]: "mostrar os seus produtos e fazer com que você compre", com a sacolinha de e-commerce.
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — links e botões do site; demo no modo celular
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — exemplo de botão circular
+- [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — branding coerente e objetivo de e-commerce

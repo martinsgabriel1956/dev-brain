@@ -3,8 +3,8 @@ type: concept
 title: "Soft Skills"
 aliases: ["habilidades humanas", "habilidades interpessoais", "people skills"]
 date_created: 2026-05-19
-date_updated: 2026-10-07
-source_count: 7
+date_updated: 2026-11-15
+source_count: 8
 tags: [soft-skills, carreira, liderança, comunicação, colaboração]
 skill: tech-mentor-leadership
 status: stable
@@ -42,6 +42,10 @@ Hard skills abrem a porta. Soft skills determinam o quanto você avança depois 
 - [[wiki/concepts/habilidade-de-lidar-com-pessoas]] — recorte de Renato Augusto/Dale Carnegie sobre confiança e influência interpessoal
 - [[wiki/concepts/imagem-profissional]] — aparência e autopercepção como soft skill negligenciada
 
+## Comunicação no briefing de design
+
+Na aula de wireframes de [[wiki/entities/nasser|Násser]] ([[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]]), o levantamento de requisitos com o cliente ([[wiki/concepts/briefing]]) vale "em toda e qualquer profissão", e a comunicação é "a soft skills que você mais tem que ter desenvolvido nesse processo".
+
 ## Key Sources
 
 - [[wiki/sources/soft-skills-carreira-tecnologia-eduarda]]
@@ -52,3 +56,4 @@ Hard skills abrem a porta. Soft skills determinam o quanto você avança depois 
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — soft skill treinável: ensaiar histórias de projeto ([[wiki/concepts/storytelling-em-entrevista]]) e narrar o raciocínio ([[wiki/concepts/pensar-em-voz-alta-na-entrevista]])
 
 - [[wiki/sources/contribuidor-de-alto-impacto-high-agency-founder-mode-galego]] — comunicação, resiliência e curiosidade como traços recorrentes em Amazon/Stripe/YC
+- [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — comunicação como soft skill central do briefing

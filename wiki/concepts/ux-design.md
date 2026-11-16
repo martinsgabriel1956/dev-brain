@@ -3,8 +3,8 @@ type: concept
 title: "UX Design"
 aliases: ["user experience", "experiência do usuário", "UX", "UX designer"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [ux, ux-design, design, produto, pesquisa]
 skill: ux-ui-mentor
 status: draft
@@ -45,7 +45,12 @@ Em [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]], um e-commerce falha p
 - [[wiki/concepts/design-como-interacao]]: experiência sentida no uso, não só na primeira impressão.
 - [[wiki/concepts/user-stories]]: outro jeito de pôr a necessidade do usuário no centro da decisão.
 
+## UX no briefing
+
+Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], o cliente "muito provavelmente [...] não sabe exatamente como mostrar" o diferencial do produto; o designer usa "UX", "as heurísticas" e o que estudou para "agregar mais valor" ao que ouviu no [[wiki/concepts/briefing]]. "Todo o processo de design tem um processo de pesquisa por trás."
+
 ## Key Sources
 
 - [[wiki/sources/o-que-e-ux-ui-design]]
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — UI e UX alinhados; jornada de e-commerce
+- [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — UX como tradução do briefing; design sempre com pesquisa por trás

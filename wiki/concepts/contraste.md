@@ -3,8 +3,8 @@ type: concept
 title: "Contraste"
 aliases: ["contraste de cor", "color contrast", "contraste em UI", "isolation effect", "efeito Von Restorff"]
 date_created: 2026-11-13
-date_updated: 2026-11-14
-source_count: 18
+date_updated: 2026-11-15
+source_count: 19
 tags: [ui, ui-design, cor, acessibilidade, hierarquia-visual, cta]
 skill: ux-ui-mentor
 status: stub
@@ -74,6 +74,10 @@ No Madero, botões retos e letra sem serifa "vêm aqui justamente para poder cau
 
 "Sempre é importante a gente garantir a melhor legibilidade possível": no gradiente laranja, branco e preto servem, mas "o preto vai ter um contraste melhor"; no amarelo, só o preto ([[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]). `[external]` Texto de 16 px pede 4,5:1 (WCAG 1.4.3), medido no ponto mais claro do gradiente.
 
+## Contraste e tamanho puxam a leitura em Z
+
+Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]]: "pelo contraste e pelo tamanho, eu tendo a olhar aquilo que é maior". Na leitura em Z, headline, ilustração e CTA viram pontos de atenção por contraste ([[wiki/concepts/hierarquia-visual]]).
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — contraste para acessibilidade e para o CTA
@@ -94,3 +98,4 @@ No Madero, botões retos e letra sem serifa "vêm aqui justamente para poder cau
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — fundo do botão na cor de contraste da paleta; o "ímã"
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — botões retos como contraste no Madero
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — branco ou preto no gradiente laranja; preto obrigatório no amarelo
+- [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — contraste e tamanho como pontos de atenção na leitura em Z

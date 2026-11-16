@@ -3,8 +3,8 @@ type: concept
 title: "Wireframe"
 aliases: ["wireframes", "rascunho de tela", "protótipo de baixa fidelidade"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 5
+date_updated: 2026-11-15
+source_count: 6
 tags: [ui, ux, ui-design, prototipagem, wireframe, figma]
 skill: ux-ui-mentor
 status: stub
@@ -29,6 +29,10 @@ Na aula de ilustrações, "o wireframe hero" é "aquela primeira seção do seu 
 
 Em [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]], um wireframe da futura seção de interface web é desalinhado de propósito e refeito no grid de 12 colunas com a escala 16/32/128.
 
+## Antes do wireframe: briefing e page map
+
+Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], o wireframe é a última etapa de uma sequência: [[wiki/concepts/briefing]] (marca, diferencial, carro-chefe, objetivo), depois flow, site map e [[wiki/concepts/page-map]], e só então os "wireframes que condizem com esse page map". O page map de portfólio começa pelo hero: headline "objetiva e direta" e um parágrafo mais detalhado abaixo. Os padrões de leitura em F e em Z entram como boa prática ao projetar ([[wiki/concepts/hierarquia-visual]]).
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
@@ -36,3 +40,4 @@ Em [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]]
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — wireframe desalinhado e refeito no grid de 12 colunas
 - [[wiki/sources/imagens-e-ilustracoes-pratica-figma-importar-editor-plugins-exportacao]] — blobs (plugin Blobs) como bolhas na composição de wireframes
 - [[wiki/sources/imagens-e-ilustracoes-svg-no-figma-undraw-mockup-iphone-codigo]] — wireframes isométricos com gradiente linear embaixo e sombra
+- [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — pt.2 da série: briefing, objetivo, page map, leitura em F e em Z

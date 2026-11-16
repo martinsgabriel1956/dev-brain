@@ -26,6 +26,7 @@ date_updated: 2026-11-14
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] | Aula 2 de [[wiki/concepts/wireframe\|wireframes]] da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): [[wiki/concepts/briefing]] como levantamento de requisitos (marca, [[wiki/concepts/branding]], diferencial, carro-chefe, objetivo da interface); [[wiki/concepts/page-map]] a partir de patterns pesquisados ([[wiki/entities/ui-movement]]); CTA repetido do FrontPUSH; leitura em F (conteúdo pesado) e em Z (pontos de atenção) |
 | [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] | Aula teórica de [[wiki/concepts/botoes-em-interfaces\|botões e links]] da edição "W7" (de [[wiki/entities/nasser\|Násser]]): botões guiam a jornada de A a B; exemplos [[wiki/entities/frontpush]] (grade do curso + inscreva-se), [[wiki/entities/apple]] (link branco, texto cinza), [[wiki/entities/sketch]] (See pricing, tente de graça), Framer e Adobe XD; [[wiki/concepts/consistencia-visual\|consistência]] (altura, padding, radius iguais); primário preenchido + secundário vazio; [[wiki/concepts/area-clicavel\|área clicável]] de 44 px (usa 56); label curto; cor de [[wiki/concepts/contraste]]; hover com sombra da cor do botão |
 | [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] | Aula teórica de [[wiki/concepts/formas-de-botoes|formas de botões]] da edição "W7" (de [[wiki/entities/nasser|Násser]]): retangular (seriedade; Madero e arquitetura como contraste), arredondado (o "coringa"), circular ([[wiki/entities/nubank]], [[wiki/entities/apple]]; aproxima), chanfrado (futurista; jogo do Homem-Aranha), diagonal (movimento; PES, FIFA) e hexagonal (gamificado, crianças); geométrico puro "fica muito longe da pessoa" |
 | [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] | Aula prática de [[wiki/concepts/botoes-em-interfaces\|botões]] no [[wiki/entities/figma]] da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): 56 px de altura, padding 64/96 medido à mão ("no CSS é muito fácil"), gradiente da marca, branco ou preto pelo [[wiki/concepts/contraste]], radius 16; [[wiki/concepts/sombra-em-interfaces\|sombra]] com Smooth Shadow (4–6 layers), [[wiki/entities/pegasus-design-system]] e o "curinga" (blur = 2× offset, marca a ≤40%, spread negativo, 80% do elemento) |
@@ -981,6 +982,9 @@ date_updated: 2026-11-14
 | [[wiki/concepts/cor-semantica]] | Cor que informa: azul link/info, vermelho erro/alerta, amarelo warning, preenchimento como hierarquia; nunca só a cor (WCAG 1.4.1) |
 | [[wiki/concepts/elementos-de-composicao]] | Fundo que dá ambiência (estrelas, ondas, gradientes, texturas) alinhado à branding; baixo contraste para não competir com o ponto focal |
 | [[wiki/concepts/empty-state]] | Tela sem conteúdo (conversa vazia); ilustração/mascote + título + descrição + CTA; momento de ensinar o próximo passo |
+| [[wiki/concepts/briefing]] | Conversa inicial para extrair do cliente o que ele quer; levantamento de requisitos do design: marca, branding, diferencial, carro-chefe, objetivo |
+| [[wiki/concepts/branding]] | Como a marca se apresenta e a "pegada" que se repete em produto, serviço e site (Apple); no módulo, a cor/gradiente da marca |
+| [[wiki/concepts/page-map]] | Ordem das seções de uma página, tirada do objetivo e dos patterns do tipo de página; guia os wireframes |
 
 ### Ambiente Vue — Node, npm e Scaffolding (2026-11-12)
 
@@ -3404,6 +3408,7 @@ date_updated: 2026-11-14
 - [[wiki/entities/apple]] — big tech usada como referência de UI; links destacados, link branco x texto cinza, botões que não encolhem no mobile
 - [[wiki/entities/sketch]] — ferramenta de design para Mac; site como exemplo de CTAs ("See pricing", "tente de graça") e de botões consistentes
 - [[wiki/entities/pegasus-design-system]] — design system da Community do Figma; sombra dos cards (y 32, blur 64, 8% de #111) como referência na aula prática de botões
+- [[wiki/entities/ui-movement]] — site de inspiração de UI; Násser estuda ali landing pages e pricing para montar page maps
 - [[wiki/entities/nasser]] — instrutor do curso de UI Design do FrontPUSH (aulas 1 e 2, patterns, princípios do design); legendas o transcreviam como "Nácia"
 - [[wiki/entities/frontpush]] — curso "sobre fazer sites" de Násser, com módulo de UI Design; landing page preta com azul só no CTA, paleta de três cores consistente
 - [[wiki/entities/unsplash]] — banco de imagens de uso livre (licença própria, sem atribuição obrigatória), favorito de Násser; plugin no Figma
