@@ -3,8 +3,8 @@ type: entity
 title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
-date_updated: 2026-11-14
-source_count: 30
+date_updated: 2026-11-15
+source_count: 31
 tags: [pessoa, instrutor, ui-design, design, curso]
 skill: ux-ui-mentor
 status: stub
@@ -69,3 +69,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — aula teórica de botões e links da edição "W7" (autoria confirmada pelo usuário): guiar a jornada, consistência, primário e secundário, área clicável de 44 px, hover
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — aula teórica de formas de botões da edição "W7" (autoria confirmada pelo usuário): reto, arredondado (o coringa que ele usa), circular, chanfrado, diagonal, hexagonal
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — aula prática de botões da edição "W7" (autoria inferida): padding, gradiente da marca, contraste do texto, Smooth Shadow, sombra "curinga" com spread negativo
+- [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — aula teórica de style guide da edição "W7" (nome dito na pergunta dos alunos, legenda "Nácio"): levels de complexidade, padronização dos elementos, evolução por link, inspect, labels

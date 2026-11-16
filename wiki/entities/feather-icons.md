@@ -3,8 +3,8 @@ type: entity
 title: "Feather Icons"
 aliases: ["Feather", "feathericons", "fetter icons", "pattern icons"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 5
+date_updated: 2026-11-15
+source_count: 6
 tags: [icones, biblioteca, open-source, ui-design]
 skill: ux-ui-mentor
 status: stub
@@ -26,6 +26,10 @@ Biblioteca open source de ícones de linha. É a família que [[wiki/entities/na
 
 Em [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]]: "o queridinho, queridinho, meu queridinho", com opção de exportar para SVG; a família simples ao lado dos ícones próprios do site. O ícone chega no Figma como frame com vetores separados. Na legenda saiu como "Fetter icons", "fetter -icons" e "pattern icons".
 
+## No style guide
+
+A família de ícones declarada no style guide do autor ([[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]).
+
 ## Key Sources
 
 - [[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]] — família de linha, stroke 2; comparação com o Iconly
@@ -33,3 +37,4 @@ Em [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints
 - [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referencias]] — "eu me baseio muito nele"; referência dos ícones do FrontPUSH, ao lado do [[wiki/entities/eva-icons]]
 - [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] — pack gratuito preferido; tour de ícones universais pelo plugin
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — plugin preferido; ícone vem como frame; família simples ao lado dos ícones próprios
+- [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — família do style guide

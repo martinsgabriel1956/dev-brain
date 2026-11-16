@@ -3,8 +3,8 @@ type: concept
 title: "Living Documentation"
 aliases: ["documentação viva", "docs from tests", "cucumber report", "structurizr"]
 date_created: 2026-04-22
-date_updated: 2026-08-10
-source_count: 4
+date_updated: 2026-11-15
+source_count: 5
 tags: [testes, documentação, bdd, openapi, ci, living-docs, readme, agents-md]
 skill: tech-mentor-testing
 status: stable
@@ -99,9 +99,14 @@ Esse "evite" é exatamente o contexto do [[wiki/concepts/checklist-primeiro-dia-
 - [[wiki/concepts/contract-testing]] — documentação de contratos entre serviços
 - [[wiki/concepts/piramide-de-testes]] — contexto estratégico
 
+## Em design: o style guide compartilhado
+
+[[wiki/entities/nasser|Násser]] compartilha o arquivo do Figma por link e continua editando; quem tem o link recebe as mudanças "em tempo real". "Não esperar [...] um documento ficar totalmente perfeito para você disponibilizar ele" ([[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]). É um sentido mais solto que o desta página: a doc é viva por ser o próprio artefato de trabalho, não por ser executável.
+
 ## Key Sources
 
 - [[wiki/sources/living-documentation]]
 - [[wiki/sources/5-ou-6-dicas-para-projetos-novos]]
 - [[wiki/sources/7-habitos-programador-altamente-eficaz]] — relato pessoal de aprender comportamento de sistemas legados só pela leitura de testes
 - [[wiki/sources/por-que-code-bases-degradam-estrategias-code-rot]] — teste cujo título enforça uma regra de negócio ("um usuário não pode criar mais que quatro produtos") documenta *e* garante a regra; parte do arsenal para reduzir a dependência do [[wiki/concepts/bus-factor|Dev Gandalf]]
+- [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — style guide do Figma compartilhado por link e evoluído (sentido solto)
