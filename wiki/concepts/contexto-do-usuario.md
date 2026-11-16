@@ -58,6 +58,10 @@ Num app em japonês ou chinês, "uma boa ilustração ou uma boa imagem" dá ao 
 
 "Você sempre projeta para o outro" ([[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]]): quem desenha conhece o processo, então vai "pensar, talvez, que está muito fácil, que está muito útil", "mas não necessariamente está". A saída é conhecer o projeto, fazer perguntas e testar com pessoas.
 
+## Público e tipografia
+
+Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]], "qual o público?" é uma das quatro perguntas de escolha de fonte. Público mais velho pode ter mais problema de visão: "a escala tem que ser um pouco maior, o contraste tem que ser maior", e a seleção de typefaces fica mais "ríspida". O autor lembra que também usa óculos, mesmo sendo novo.
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]]
@@ -66,3 +70,4 @@ Num app em japonês ou chinês, "uma boa ilustração ou uma boa imagem" dá ao 
 - [[wiki/sources/formas-exemplos-praticos-radius-consistencia-projetos]] — Creator Push mais redondo; arquitetura mais reta
 - [[wiki/sources/imagens-e-ilustracoes-bom-senso-contraste-padronizacao-blend-modes]] — imagem como guia em app de idioma desconhecido e na biometria
 - [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — "você sempre projeta para o outro"
+- [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — público mais velho pede escala e contraste maiores

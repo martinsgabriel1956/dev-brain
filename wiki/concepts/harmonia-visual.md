@@ -4,7 +4,7 @@ title: "Harmonia Visual"
 aliases: ["harmonia", "harmonia entre elementos", "predominância", "conjunto da obra", "coerência visual"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 16
+source_count: 17
 tags: [ui, ui-design, harmonia, branding, tipografia, cor, formas, predominancia]
 skill: ux-ui-mentor
 status: stub
@@ -82,6 +82,10 @@ Dar aos neutros "um pouco da cor de base" (overlay, ou branco na matiz 247 com s
 
 Fundos, ilustrações e neutros com "um pingo" da cor de base deixam o ambiente "mais harmonizado"; o preto do Facebook tem um pouco de azul ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]). Estados de hover mudam a cor sem sair da paleta. Ver [[wiki/concepts/variacao-de-cores]].
 
+## Fonte que condiz com a situação
+
+Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]]: serifa em placa de pare "fica estranho, porque aquilo que a serifa transmite não condiz muito com a situação"; sem serifa "totalmente reta" em convite de casamento "talvez também não traga aquela proximidade". Harmonia entre fonte e mensagem, além de entre fonte e formas.
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -100,3 +104,4 @@ Fundos, ilustrações e neutros com "um pingo" da cor de base deixam o ambiente 
 - [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]] — evitar a cor pura (S e B no máximo) do seletor HSB
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — neutros tingidos com a matiz da base
 - [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — variação no mesmo matiz e neutros tingidos harmonizam o ambiente
+- [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — placa de pare e convite de casamento

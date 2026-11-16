@@ -4,7 +4,7 @@ title: "O Porquê das Decisões de Design"
 aliases: ["porquê das decisões", "justificar decisões de design", "design rationale", "argumentos de design"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 9
+source_count: 10
 tags: [ui, ui-design, design, aprendizado, freelance, design-rationale]
 skill: ux-ui-mentor
 status: stub
@@ -76,6 +76,10 @@ A aula de tipografia mostra como tirar o porquê de um site de referência: o [[
 
 Em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]], entender as [[wiki/concepts/classificacao-tipografica|classificações tipográficas]] serve para "entender o porquê que a gente escolheu uma, porquê que a gente escolheu a outra".
 
+## O porquê da fonte
+
+Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]], escolher fonte faz parte do processo de pesquisa, e "ter um porquê para você selecionar isso da melhor forma possível [...] demonstra a sua maturidade". Exemplo dado pelo autor: Ubuntu no próprio site para lembrar um terminal do Linux.
+
 ## Key Sources
 
 - [[wiki/sources/como-aprender-ui]]
@@ -88,3 +92,4 @@ Em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespac
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — arara, céu, super-heróis e cinema explicados pela harmonia
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — dividir line-height pelo tamanho da fonte para entender a escolha
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — classificação tipográfica como base para justificar a fonte
+- [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — ter um porquê na escolha de fonte

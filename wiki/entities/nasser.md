@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 45
+source_count: 46
 tags: [pessoa, instrutor, ui-design, design, curso]
 skill: ux-ui-mentor
 status: stub
@@ -55,6 +55,7 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - Paleta nasce de referências (Dribbble, conta-gotas); HSB no primeiro quadrante; escurecer = brilho para baixo e saturação para cima; neutros levam a matiz da base ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]).
 - Variação de cores: tom mais claro = mais brilho e menos saturação, mais escuro = menos brilho e mais saturação; cada matiz tem luminosidade própria (amarelo claro, azul escuro); "não basta que ela seja bonita, ela precisa ser acessível" ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]).
 - Tipografia é dispor o texto da melhor forma, porque "a maioria da web é texto"; escala consistente, entrelinha confortável, linha curta; `<link>` do Google Fonts em vez de `@import` ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]).
+- Fonte se escolhe por pesquisa (mensagem, similares, público, licença) e se combina em duas typefaces com contraste; no próprio site usa Ubuntu + Mukta ([[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]]).
 
 ## Key Sources
 
@@ -118,3 +119,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — aula 03 do módulo de tipografia (autoria confirmada pelo usuário): altura de linha 140–160% no corpo, largura 60–90 caracteres, WhatFont, Wikipedia x NYT
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — aula 07 de classificações tipográficas (autoria inferida pela pasta FrontPush): serifa, sem serifa, script, blackletter, monoespaçada, display; Google Fonts e Adobe Fonts
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — aula 05 do módulo de tipografia da edição "W7" (autoria inferida pelo logo W7 e pela pasta FrontPush): negrito, itálico, tracking, kerning e maiúsculas
+- [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — escolher e combinar tipografias (edição "W7"; autoria inferida): pesquisa, duas typefaces, oito pares do Google Fonts

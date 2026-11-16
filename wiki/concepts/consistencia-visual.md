@@ -4,7 +4,7 @@ title: "Consistência Visual"
 aliases: ["consistência", "consistência em UI", "consistency", "identidade visual", "família de ícones"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 26
+source_count: 27
 tags: [ui, ui-design, consistencia, icones, cor, identidade-visual, design-system]
 skill: ux-ui-mentor
 status: stub
@@ -138,6 +138,10 @@ A paleta montada na aula prática (base, destaque, neutros e variações) é "o 
 
 A [[wiki/concepts/escala-tipografica]] existe para consistência, "aquele princípio do design" que "sempre" volta; até 6 tamanhos, na prática 4 ([[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]]).
 
+## Consistência tipográfica
+
+Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]]: "selecionou essas duas typefaces, siga utilizando sempre essas duas", uma para título e outra para corpo. O assunto volta no guia de estilo. Ver [[wiki/concepts/combinacao-de-fontes]].
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — ícones, paleta e identidade visual
@@ -173,3 +177,4 @@ A [[wiki/concepts/escala-tipografica]] existe para consistência, "aquele princ�
 - [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]] — paleta como primeiro passo do style guide
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — escala tipográfica: um tamanho por nível de hierarquia
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — escala tipográfica como consistência
+- [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — as mesmas duas typefaces no projeto todo

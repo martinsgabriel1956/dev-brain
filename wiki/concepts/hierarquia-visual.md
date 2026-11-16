@@ -4,7 +4,7 @@ title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
 date_updated: 2026-11-15
-source_count: 30
+source_count: 31
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -173,6 +173,10 @@ Em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespac
 
 Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]], o mesmo texto em 16 px fica mais alto na hierarquia só por estar em [[wiki/concepts/texto-em-maiusculas|maiúsculas]]; negrito em títulos é o outro recurso tipográfico ([[wiki/concepts/peso-tipografico]]).
 
+## Título característico, corpo sóbrio
+
+Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]], a hierarquia também passa pela família: no título, fonte "mais temática", "diferenciada"; no corpo, sem serifa legível e família ampla de pesos, que dá margem para variar o peso. Sem serifa "totalmente padrão" no título "não é uma escolha muito boa", mas "não é uma regra". Ver [[wiki/concepts/combinacao-de-fontes]].
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -210,3 +214,4 @@ Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]], o me
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — line-height menor no título, maior no corpo
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — fonte expressiva no título, sem serifa no corpo
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — maiúsculas em 16 px sobem a hierarquia
+- [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — fonte característica no título, sem serifa no corpo

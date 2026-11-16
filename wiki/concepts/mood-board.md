@@ -34,8 +34,13 @@ Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-ct
 
 Em [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]], a busca de referências é o terceiro passo, depois do [[wiki/concepts/page-map]]: Pinterest, [[wiki/entities/dribbble]], [[wiki/entities/ui-movement]] e guidelines. A preferência é por empresas grandes com time de UX, que "não estão tomando decisão com base em achismo", e a pergunta é por que as seções estão naquela ordem. A "biblioteca na mente" volta como o segredo dos wireframes.
 
+## Pesquisa de fontes por referência
+
+Em [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]], a escolha de fonte parte de pesquisar o que outros fazem: buscar "restaurante italiano" e cardápios no Google, "casamento convites", "convite espacial", "festa country". É a mesma lógica do repertório: ver como os outros aplicam antes de escolher. O autor promete posts com seus pares "para a gente ter como biblioteca".
+
 ## Key Sources
 
 - [[wiki/sources/como-aprender-ui]]
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — referências de estrutura (menu, hero, seções) para montar o page map
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — busca de referências como passo 3 do processo de wireframes
+- [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — pesquisar referências antes de escolher fonte

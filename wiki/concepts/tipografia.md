@@ -4,7 +4,7 @@ title: "Tipografia"
 aliases: ["fonte", "módulo de tipografia", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 17
+source_count: 18
 tags: [ui, ui-design, tipografia, fonte, serifa, elementos-da-interface]
 skill: ux-ui-mentor
 status: draft
@@ -108,6 +108,12 @@ A aula própria do módulo ([[wiki/sources/classificacoes-tipograficas-serifa-se
 
 Primeira aula do módulo de tipografia na wiki ([[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]]): negrito e itálico como [[wiki/concepts/contraste]] ([[wiki/concepts/peso-tipografico]]), [[wiki/concepts/tracking]] (distância igual entre todas as letras), [[wiki/concepts/kerning]] (distância entre um par, coisa de marca) e [[wiki/concepts/texto-em-maiusculas|maiúsculas]], que sobem a hierarquia no mesmo tamanho. De passagem: o justificado deixa distâncias de "X" e de "3, 4X" entre palavras, por isso "quase não usa". `[skill: ux-ui-mentor]` A skill também manda evitar justificado ("rios de espaço"). As aulas 03 (altura de linha e largura) e 04 (alinhamento e espaçamento) ainda não foram ingeridas.
 
+## Escolher e combinar
+
+A aula que fecha a parte de tipografia ([[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]]) dá o método. **Escolher:** pesquisa com quatro perguntas (qual a mensagem, o que empresas similares usam, qual o público, pago ou gratuito; ver [[wiki/concepts/licenca-de-fontes]]). Placa de pare pede sem serifa; restaurante italiano, "orgânico", tende à serifada; público mais velho pede escala e contraste maiores. **Combinar** ([[wiki/concepts/combinacao-de-fontes]]): duas typefaces, contraste visível, título "mais temático", corpo sem serifa com família ampla de pesos, consistência. O site do autor usa Ubuntu + Mukta, todos os pares sugeridos vêm do [[wiki/entities/google-fonts]], e a pesquisa por tema passa pela [[wiki/concepts/classificacao-tipografica]] (country → serifas grossas, festa alemã → blackletter).
+
+`[external]` A regra "corpo sempre sem serifa" é princípio da aula: em telas de alta resolução não há diferença consistente de legibilidade (https://www.nngroup.com/articles/serif-vs-sans-serif-fonts-hd-screens/).
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -130,3 +136,4 @@ Primeira aula do módulo de tipografia na wiki ([[wiki/sources/tipografia-negrit
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — altura de linha e largura do texto; primeira aula do módulo de tipografia na wiki
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — classificações tipográficas; sem serifa no corpo, decorativas no título; Google Fonts e Adobe Fonts
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — negrito, itálico, tracking, kerning, maiúsculas; estilo falso; justificado
+- [[wiki/sources/escolhendo-e-combinando-tipografias-pesquisa-contraste-duas-typefaces]] — método de escolha (mensagem, similares, público, licença) e de combinação (duas typefaces, contraste, consistência)
