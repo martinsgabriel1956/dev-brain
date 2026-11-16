@@ -4,7 +4,7 @@ title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
 date_updated: 2026-11-15
-source_count: 33
+source_count: 34
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -142,6 +142,10 @@ Em [[wiki/sources/altura-de-linha-e-largura-do-texto]], alterar o line-height no
 
 Em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]], o Figma "espelha de forma automática" o [[wiki/entities/google-fonts]]: fonte nova aparece sem baixar nem instalar. A demonstração da monoespaçada (fileira de "i" contra "Monospaced") também roda no Figma. `[external]` No Linux o Figma não usa fontes locais (https://help.figma.com/hc/articles/360039956894).
 
+## Inspect e tipografia
+
+Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]]: a aba Inspect mostra o [[wiki/concepts/css]] do texto (`letter-spacing` em `em`, `font-family`, `font-style`, `font-weight`); trocar para Medium vira `font-weight: 500`. O Figma só lista os pesos que a fonte tem (a Mukta vai de extra light a extra bold), o que evita o "estilo falso" ([[wiki/concepts/peso-tipografico]]). A opção "case" põe o texto em [[wiki/concepts/texto-em-maiusculas|maiúsculas]].
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -184,3 +188,4 @@ Em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespac
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — escala de fonte do Figma
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — line-height em % aumenta a caixa do texto
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — espelho do Google Fonts; demonstração da monoespaçada
+- [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — Inspect para letter-spacing e font-weight; pesos reais da fonte

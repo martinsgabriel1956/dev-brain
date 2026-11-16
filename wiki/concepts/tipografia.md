@@ -4,7 +4,7 @@ title: "Tipografia"
 aliases: ["fonte", "módulo de tipografia", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 16
+source_count: 17
 tags: [ui, ui-design, tipografia, fonte, serifa, elementos-da-interface]
 skill: ux-ui-mentor
 status: draft
@@ -104,6 +104,10 @@ A aula 03 do módulo de tipografia ([[wiki/sources/altura-de-linha-e-largura-do-
 
 A aula própria do módulo ([[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]]) abre pelas [[wiki/concepts/classificacao-tipografica|classificações]]. Serifada (clássica, elegante, Times New Roman) e sem serifa (neutra, moderna, Helvetica e Arial) dominam a web; a sem serifa é a indicada "principalmente para corpo de texto". Serifadas grossas, script, blackletter e display ficam em títulos, anúncios e botões, por [[wiki/concepts/legibilidade-tipografica|legibilidade]]; a monoespaçada serve a código. Script é classificação própria, o que fecha a ressalva `[external]` da seção "Serifa, sem serifa e letra de mão". Aqui serifa em site de leitura é "incomum" (exceção: [[wiki/entities/new-york-times]]), enquanto a aula de formas chamava serifadas de "fontes de leitura": tensão registrada na fonte.
 
+## Variáveis tipográficas (aula 05)
+
+Primeira aula do módulo de tipografia na wiki ([[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]]): negrito e itálico como [[wiki/concepts/contraste]] ([[wiki/concepts/peso-tipografico]]), [[wiki/concepts/tracking]] (distância igual entre todas as letras), [[wiki/concepts/kerning]] (distância entre um par, coisa de marca) e [[wiki/concepts/texto-em-maiusculas|maiúsculas]], que sobem a hierarquia no mesmo tamanho. De passagem: o justificado deixa distâncias de "X" e de "3, 4X" entre palavras, por isso "quase não usa". `[skill: ux-ui-mentor]` A skill também manda evitar justificado ("rios de espaço"). As aulas 03 (altura de linha e largura) e 04 (alinhamento e espaçamento) ainda não foram ingeridas.
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]]
@@ -125,3 +129,4 @@ A aula própria do módulo ([[wiki/sources/classificacoes-tipograficas-serifa-se
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — escala, 14–21 px, maiúsculas x minúsculas, h1–h6, escala do Figma + 8pt
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — altura de linha e largura do texto; primeira aula do módulo de tipografia na wiki
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — classificações tipográficas; sem serifa no corpo, decorativas no título; Google Fonts e Adobe Fonts
+- [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — negrito, itálico, tracking, kerning, maiúsculas; estilo falso; justificado

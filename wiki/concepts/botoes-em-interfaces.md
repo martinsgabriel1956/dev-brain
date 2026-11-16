@@ -4,7 +4,7 @@ title: "Botões em interfaces"
 aliases: ["botões", "botões e links", "button", "botão primário", "botão secundário", "primary button", "secondary button", "CTA"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 7
+source_count: 8
 tags: [ui, ui-design, botoes, links, hierarquia-visual, consistencia, acessibilidade, design-system]
 skill: ux-ui-mentor
 status: stub
@@ -85,6 +85,10 @@ Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-infor
 
 Em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]], botões entram junto com títulos e anúncios na lista de lugares onde serifadas grossas, script, blackletter e display são aceitas: texto curto, feito para passar emoção. `[skill: ux-ui-mentor]` Texto curto não dispensa legibilidade: o label do botão precisa ser lido de relance, então a fonte expressiva no botão pede teste de contraste e tamanho.
 
+## Maiúsculas e tracking no label
+
+Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]], [[wiki/entities/nasser|Násser]] põe os botões do site "totalmente em maiúsculas" com letter-spacing "para poder chamar mais atenção", sobretudo em CTAs e itens de menu. Ver [[wiki/concepts/texto-em-maiusculas]] e [[wiki/concepts/tracking]].
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — aula teórica de botões e links (edição "W7")
@@ -100,3 +104,4 @@ Em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespac
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — complementar como guia da jornada
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — verde e laranja com texto preto; hover azul do secundário
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — classificações expressivas aceitas em botões
+- [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — label em maiúsculas com tracking aberto

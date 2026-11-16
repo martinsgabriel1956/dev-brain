@@ -4,7 +4,7 @@ title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
 date_updated: 2026-11-15
-source_count: 29
+source_count: 30
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -169,6 +169,10 @@ Títulos e corpo não diferem só no tamanho: o título leva line-height menor (
 
 Em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]], a classificação tipográfica divide papéis: script, blackletter, display e serifadas grossas vão para títulos, anúncios e botões, onde "passam o sentimento"; o corpo fica em sem serifa. No convite de casamento, o nome dos noivos em script e o endereço em sem serifa. Ver [[wiki/concepts/legibilidade-tipografica]].
 
+## Maiúsculas no mesmo tamanho
+
+Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]], o mesmo texto em 16 px fica mais alto na hierarquia só por estar em [[wiki/concepts/texto-em-maiusculas|maiúsculas]]; negrito em títulos é o outro recurso tipográfico ([[wiki/concepts/peso-tipografico]]).
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -205,3 +209,4 @@ Em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespac
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — o maior se enxerga primeiro; peso e cor no NYT
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — line-height menor no título, maior no corpo
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — fonte expressiva no título, sem serifa no corpo
+- [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — maiúsculas em 16 px sobem a hierarquia

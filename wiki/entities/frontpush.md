@@ -4,7 +4,7 @@ title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 23
+source_count: 24
 tags: [curso, frontend, ui-design, landing-page]
 skill: ux-ui-mentor
 status: stub
@@ -126,6 +126,10 @@ Em [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-infor
 
 A transcrição de [[wiki/sources/altura-de-linha-e-largura-do-texto]] está na pasta `FrontPush`. A aula promete levar line-height e largura para o guia de estilos, "tanto no Figma como no CSS".
 
+## Tipografia: botões em maiúsculas
+
+Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]], Násser diz que nos botões do "meu website" usou maiúsculas e letter-spacing para chamar atenção. Pelo histórico (CTAs azuis da landing), provavelmente o FrontPUSH; ele não nomeia o site. Ver [[wiki/concepts/tracking]].
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -165,3 +169,4 @@ A transcrição de [[wiki/sources/altura-de-linha-e-largura-do-texto]] está na 
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — título como hierarquia; botões verde e laranja com texto preto
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — aula 03 de tipografia; altura de linha e largura do texto
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — aula 07 do módulo: classificações tipográficas
+- [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — botões do site em maiúsculas com letter-spacing

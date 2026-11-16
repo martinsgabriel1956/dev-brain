@@ -4,7 +4,7 @@ title: "Contraste"
 aliases: ["contraste de cor", "color contrast", "contraste em UI", "isolation effect", "efeito Von Restorff"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 30
+source_count: 31
 tags: [ui, ui-design, cor, acessibilidade, hierarquia-visual, cta]
 skill: ux-ui-mentor
 status: stub
@@ -130,6 +130,10 @@ Na abertura do módulo de [[wiki/concepts/tipografia]], saber "criar hierarquia 
 
 Contraste visual na tipografia é "definir tamanhos que têm diferenças significativas": 144 e 160 lado a lado mal se distinguem, por isso a escala do Figma salta de 144 para 288 ([[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]]). Ver [[wiki/concepts/escala-tipografica]].
 
+## Negrito, itálico e maiúsculas
+
+Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]]: "Lembre gente, sempre é contraste". Cor, forma, tamanho e, no texto, [[wiki/concepts/peso-tipografico|negrito e itálico]]: um "pingo em meio a um universo diferente", então só em detalhes. [[wiki/concepts/texto-em-maiusculas|Maiúsculas]] também "geram maior contraste".
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — contraste para acessibilidade e para o CTA
@@ -164,3 +168,4 @@ Contraste visual na tipografia é "definir tamanhos que têm diferenças signifi
 - [[wiki/sources/tipografia-e-cores-contraste-hierarquia-textual-cor-como-informacao]] — escada para melhorar contraste sem trocar a paleta; verde e laranja do FrontPUSH com texto preto
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — tipografia: hierarquia e contraste para acessibilidade; cor no texto
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — diferenças significativas entre tamanhos de fonte
+- [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — negrito e itálico como contraste; o pingo no universo
