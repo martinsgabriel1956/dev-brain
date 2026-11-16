@@ -67,6 +67,10 @@ Cada modelo de seção tem sua situação: app, desktop, depoimentos, lista de e
 
 Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]], o objetivo do portfólio de [[wiki/entities/jonas-miller]] "é que você entre no site dele, conheça o trabalho dele e solicite alguma proposta". Por isso o CTA aparece no hero e de novo no fim, onde é "o objetivo principal do seu site". O menu fixo de quatro itens serve para "deixar os objetivos muito bem claros".
 
+## Objetivo da interface vs. necessidade do usuário
+
+A aula [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] põe "útil" como primeiro [[wiki/concepts/atributos-de-bom-design|atributo de um bom design]]: o produto faz algo que o usuário realmente precisa. São perguntas complementares: o objetivo é o que a interface quer que o usuário faça (comprar, cadastrar); a utilidade é se aquilo resolve uma necessidade dele.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -78,3 +82,4 @@ Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-ct
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — o objetivo como pergunta do briefing e base do page map
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — cada modelo de wireframe tem a sua situação de uso
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — portfólio freelancer: o objetivo é o pedido de proposta, no hero e no fim
+- [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — "útil" como necessidade do usuário, complementar ao objetivo

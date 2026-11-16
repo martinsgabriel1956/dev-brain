@@ -51,6 +51,10 @@ Nada entra na tela "porque é legal": se não comunica nem interage, é inútil 
 
 Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]], o [[wiki/concepts/wireframe]] é "a maneira de desenhar interfaces [...] com a maior simplicidade possível": preto e branco, sem detalhe visual, para discutir conteúdo e estrutura antes da cor. Aqui a simplicidade é do processo, não só da tela final.
 
+## Mais recursos do que deveria
+
+Em [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]], a pergunta de fácil aprendizado é "sua interface tem mais recursos do que deveria?", e o slide fecha com o princípio [[wiki/concepts/kiss|KISS]]. Ver [[wiki/concepts/atributos-de-bom-design]].
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]]
@@ -61,3 +65,4 @@ Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]],
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — simplicidade como corte do que não tem propósito; os "20% das funcionalidades"
 - [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] — ícone simples para ser legível de longe e em vários tamanhos
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — wireframe como desenho com "a maior simplicidade possível"
+- [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — "mais recursos do que deveria"; KISS no slide

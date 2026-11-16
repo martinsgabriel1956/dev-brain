@@ -94,6 +94,10 @@ Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-ct
 
 Em [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]], Násser mostra os wireframes do FrontPUSH: um protótipo de baixa fidelidade que virou a landing page. "Nesse passo aqui eu pulei o wireframe cinza, mas se dá pela experiência, por eu fazer isso muitas vezes e por estar muito corrido na época." Ver [[wiki/concepts/fidelidade-de-prototipo]].
 
+## O que é um bom design
+
+A aula 04 da pasta do curso (edição "W7") resume os [[wiki/concepts/atributos-de-bom-design|atributos de um bom design]] em seis itens e fecha com KISS no slide ([[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]]).
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -122,3 +126,4 @@ Em [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-se
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — página de vendas como Frankenstein de wireframes; protótipo inicial
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — nasceu do redesign do site pessoal; protótipos de baixa e alta fidelidade
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — esboço de baixa fidelidade → landing page, pulando o wireframe cinza
+- [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — aula 04 (edição "W7"): seis atributos de um bom design

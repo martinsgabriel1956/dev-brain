@@ -3,7 +3,7 @@ type: source
 title: "Patterns: o que faz uma boa UI e o que são padrões"
 aliases: ["aula patterns ui design", "o que faz uma boa ui", "o que são padrões em ui"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
+date_updated: 2026-11-15
 source_count: 0
 tags: [ui, ui-design, ux, design, padroes-de-interface, contraste, lei-de-jakob, e-commerce, landing-page, cta]
 skill: ux-ui-mentor
@@ -68,6 +68,10 @@ Aula do módulo de UI Design do [[wiki/entities/frontpush|FrontPUSH]], provavelm
 - ~~O instrutor é mesmo Násser e o curso é o FrontPUSH?~~ Resolvido em [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]]: Násser diz o próprio nome e mostra frontpush.com.br como "a minha interface".
 - O que dizia o trecho perdido entre "carcaça bem estabelecida" e "Requisitos para poder eu decidir naquele carro"?
 - A aula promete "muitos exemplos" de padrões; o slide lista "Exemplos", mas a fala só dá três (busca no topo, hambúrguer, lupinha). Vêm em aula futura?
+
+## Ver também
+
+- [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — aula seguinte da pasta: "você sempre projeta para o outro" retoma o "o usuário talvez não seja você"; patterns voltam como base de fácil aprendizado e memorabilidade.
 
 ## Raw Quotes
 

@@ -80,6 +80,10 @@ A [[wiki/concepts/biblioteca-de-wireframes]] é um repertório de "padrões de s
 
 Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]], os portfólios de [[wiki/entities/jonas-miller]] e [[wiki/entities/fabio-freire]] "estão na mesma linha, têm mais ou menos o mesmo page map". Násser parte desse esqueleto comum e só acrescenta o que o caso dele pede. Ver [[wiki/concepts/page-map]].
 
+## Padrão como apoio ao aprendizado e à memória
+
+Em [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]], padrões sustentam dois dos [[wiki/concepts/atributos-de-bom-design|atributos de um bom design]]: fácil aprendizado ("conversei isso com vocês sobre os patterns") e memorável ("já tem um padrão que você meio que entende"). O contraexemplo é o Photoshop, que mudou atalhos de teclado já aprendidos e obrigou o usuário a reaprender: o padrão também pode ser interno ao produto.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — o cérebro trabalha com padrões; busca, hambúrguer, lupinha
@@ -94,3 +98,4 @@ Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-ct
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — patterns por tipo de página (cadastro, venda, pricing) como base do page map
 - [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — seções prontas (hero, depoimentos, cadastro) como padrões a combinar
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — portfólios de freelancer convergem no mesmo page map
+- [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — patterns como base de fácil aprendizado e memorabilidade; atalhos do Photoshop

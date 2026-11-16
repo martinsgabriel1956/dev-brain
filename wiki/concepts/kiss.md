@@ -100,6 +100,10 @@ O ganho não é só linhas de código — é a legibilidade para quem lê depois
 
 Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]], KISS sai do código e vai para a UI: "projete a interface como se fosse de maneira simples e estúpida, mais fácil possível, bem passo a passo, dando feedback para o usuário, dando confirmação visual, utilizando ícones, fazendo uso adequado das cores". É uma das recomendações de [[wiki/concepts/acessibilidade]], ao lado dos textos invisíveis ("esses dois conceitos conversam muito").
 
+## KISS em interfaces
+
+O slide da aula [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]], do curso de UI Design de [[wiki/entities/nasser|Násser]], fecha com "Projete interfaces com o princípio KISS — Keep It Simple Stupid", ao lado de "conheça o projeto, faça perguntas". A fala não chega a comentar o item. Na mesma aula, a pergunta de [[wiki/concepts/atributos-de-bom-design|fácil aprendizado]] ("sua interface tem mais recursos do que deveria?") é o KISS visto pelo usuário. Ver também [[wiki/concepts/simplicidade-visual]].
+
 ## Key Sources
 
 - [[wiki/sources/overengineering-carol-ate-quinta]]
@@ -108,3 +112,4 @@ Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]
 - [[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]] — "boas práticas" como contextuais, não leis; escalar sem necessidade real como sinal de mau engenheiro
 - [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] — analogia do martelo; primeira defesa contra over-engineering
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — KISS aplicado à interface como recomendação de acessibilidade
+- [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — princípio KISS no slide de atributos de um bom design (UI)

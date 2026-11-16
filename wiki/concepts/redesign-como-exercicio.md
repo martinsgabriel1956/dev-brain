@@ -39,7 +39,12 @@ Inferência: sem acesso a dados e pesquisa da empresa, o redesign externo mostra
 
 Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]], Násser conta que redesenhou o próprio site "muitas vezes para poder chegar no patamar que está hoje". A página pessoal virou a base do [[wiki/entities/frontpush]].
 
+## Treino, treino, treino
+
+[[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] reforça o mesmo espírito: "provavelmente a sua interface sempre vai ser ruim no começo, mas você não pode deixar de aprimorar"; o caminho é testar, refazer, "treino, treino, treino".
+
 ## Key Sources
 
 - [[wiki/sources/como-aprender-ui]]
 - [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — redesign repetido do site pessoal, que virou o FrontPUSH
+- [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — interface ruim no começo; aprimorar por treino

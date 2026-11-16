@@ -36,9 +36,14 @@ A aula de ícones da edição "W7" aplica a ideia a ícones: "sempre procurar co
 
 Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]]: "se você projetar algo totalmente novo, o usuário vai ter que gastar tempo para poder aprender como é que utiliza a sua interface". Patterns já testados poupam isso. Ver [[wiki/concepts/padroes-de-interface]].
 
+## Padrões internos: os atalhos do Photoshop
+
+[[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] aplica a ideia dentro de um produto: a Adobe mudou atalhos de teclado do Photoshop que já eram usados, e o usuário teve que reaprender. "Deve ter um bom motivo", mas no critério de aprendizado "pode ter sido um pecado". Aqui a expectativa não vem de outros sites, vem das versões anteriores do mesmo software, mais perto da heurística 4 (consistência e padrões) que da lei de Jakob em sentido estrito.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]] — menu embaixo em website fere o padrão aprendido
 - [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] — ícones de senso comum, "não mudar drasticamente"
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — interface totalmente nova obriga o usuário a reaprender
+- [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — atalhos do Photoshop: expectativa formada pelo próprio produto

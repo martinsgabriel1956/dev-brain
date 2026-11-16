@@ -30,7 +30,12 @@ Na aula [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] aparece um caso s
 
 Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]], o [[wiki/concepts/page-map]] serve "para poder aplicar os gatilhos" ao longo das dobras de uma página de vendas. A aula não detalha quais.
 
+## Desejável: jogos que instigam a voltar
+
+Em [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]], "desejável" é um dos [[wiki/concepts/atributos-de-bom-design|atributos de um bom design]], e o exemplo é a plataforma de jogos que joga "com esse desejo de você sempre entrar, ter um desafio novo". A aula elogia sem ressalva. `[skill: ux-ui-mentor]` Gamificação funciona quando o comportamento incentivado tem valor real e a recompensa é percebida como justa; falha quando disfarça produto ruim (efeito de superjustificação) ou quando cria competição onde o usuário não quer competir.
+
 ## Key Sources
 
 - [[wiki/sources/ui-patterns-com-biblioteca-de-padroes]]
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — page map como lugar para aplicar os gatilhos
+- [[wiki/sources/o-que-e-um-bom-design-atributos-util-aprendizado-memoravel-eficaz-desejavel-prazeroso]] — "desejável" via mecânicas de jogo, sem a ressalva ética
