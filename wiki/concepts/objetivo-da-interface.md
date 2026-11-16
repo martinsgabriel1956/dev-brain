@@ -59,6 +59,10 @@ Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]],
 
 Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], "qual é o principal objetivo da sua interface?" é a pergunta que o [[wiki/concepts/briefing]] não pode pular: "o que você quer que o usuário faça". Portfólio quer que o visitante mande "uma mensagem, uma proposta"; página de venda quer "a inscrição" (e-mail, telefone); a [[wiki/entities/apple]] quer a compra ("tem aqui a sacolinha, então é um e-commerce"). O objetivo vem antes de tudo: "para que você construa o flow, o site map, o page map, a interface, os wireframes com base nisso" ([[wiki/concepts/page-map]]).
 
+## O hero diz o que o site faz
+
+Cada modelo de seção tem sua situação: app, desktop, depoimentos, lista de espera. O [[wiki/concepts/secao-hero|hero]] serve para "dar a primeira informação do que o seu site faz" ([[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]]).
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -68,3 +72,4 @@ Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], "
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — forma do botão escolhida pelo que se quer comunicar
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — levantamento de requisitos e objetivos principais no wireframe
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — o objetivo como pergunta do briefing e base do page map
+- [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — cada modelo de wireframe tem a sua situação de uso

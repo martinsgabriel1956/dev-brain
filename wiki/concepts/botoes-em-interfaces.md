@@ -61,6 +61,10 @@ Documentar o estado normal, o hover (sombra ou crescer) e "como é que vai ser a
 
 Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]]: no botão, "esse tipo de dimensão é importante", mas "não necessariamente eu preciso estabelecer o tamanho fixo total, porque depende do conteúdo do texto". O [[wiki/concepts/style-guide]] registra o padding (48 px de cada lado no exemplo). Ver [[wiki/concepts/handoff-design-dev]].
 
+## Primary button no hero de cadastro
+
+No catálogo de wireframes Hero, a variante de cadastro leva um primary button ao lado do campo, para "cadastrar ou simplesmente informar"; o protótipo do FrontPUSH já tinha "os botões de quero me inscrever" ([[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]]).
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — aula teórica de botões e links (edição "W7")
@@ -70,3 +74,4 @@ Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradi
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — aula prática no Figma: 56 px, padding 64/96, gradiente, sombra suave de hover
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — estados normal e hover e a transição no style guide
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — documentar o padding (48 px) em vez da largura fixa
+- [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — primary button no wireframe de cadastro; "quero me inscrever"

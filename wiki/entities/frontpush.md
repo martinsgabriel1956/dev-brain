@@ -82,6 +82,10 @@ Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]],
 
 Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], Násser mostra o próprio site como caso de pattern de página de venda: "inscreva-se", "quero me inscrever" repetido, apresentação e detalhes do produto. "Eu simplesmente segui isso no page map e montei o meu estilo." O objetivo é o clique em "inscrever-se". Ver [[wiki/concepts/page-map]].
 
+## A página de vendas como Frankenstein
+
+A página de vendas é "um Frankenstein" dos modelos de wireframe, "feita na correria". O protótipo já previa animação, botões "quero me inscrever", vídeo de apresentação (não feito) e ilustrações de como "o curso de wire, o curso de front, o curso de motion" se conectam, antes da alta fidelidade ([[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]]).
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -107,3 +111,4 @@ Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], N
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — aula 03 do módulo de interfaces web: acessibilidade
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — wireframes no módulo de interface web; brinde sketchbook
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — CTA repetido como pattern; page map seguido de patterns
+- [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — página de vendas como Frankenstein de wireframes; protótipo inicial

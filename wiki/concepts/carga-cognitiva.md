@@ -38,6 +38,10 @@ Em [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referenc
 
 Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]]: usar UX/UI patterns consagrados "reduz a carga cognitiva do usuário", porque algo "totalmente novo" obriga o usuário a "gastar tempo para poder aprender como é que utiliza a sua interface". `[skill: ux-ui-mentor]` A acessibilidade cognitiva (progressive disclosure, chunking, linguagem simples) beneficia todos em algum momento. Ver [[wiki/concepts/acessibilidade]].
 
+## Parágrafo em tópicos
+
+"Se o parágrafo está muito grande, procure deixar o parágrafo em tópicos": as vantagens do cartão do [[wiki/entities/nubank]] viram três itens curtos, porque "se você colocar só texto e estiver muito carregado na interface é capaz que ele não leia" ([[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]]).
+
 ## Key sources
 
 - [[wiki/sources/por-que-devs-nao-terminam-projetos]]
@@ -45,3 +49,4 @@ Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]
 - [[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]] — ícones simples e patterns aprendidos reduzem a carga cognitiva
 - [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referencias]] — ícone por módulo como "redução cognitiva"; só o objeto
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — patterns reduzem a carga cognitiva; não reinventar a roda
+- [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — parágrafo longo vira tópicos para o usuário de fato ler

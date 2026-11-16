@@ -55,6 +55,10 @@ Na aula de [[wiki/concepts/style-guide]], wireframe é uma das três etapas (pes
 
 Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], o wireframe é a última etapa de uma sequência: [[wiki/concepts/briefing]] (marca, diferencial, carro-chefe, objetivo), depois flow, site map e [[wiki/concepts/page-map]], e só então os "wireframes que condizem com esse page map". O page map de portfólio começa pelo hero: headline "objetiva e direta" e um parágrafo mais detalhado abaixo. Os padrões de leitura em F e em Z entram como boa prática ao projetar ([[wiki/concepts/hierarquia-visual]]).
 
+## Na prática: catálogo de seções e o Frankenstein
+
+A primeira aula prática de wireframes do [[wiki/entities/frontpush|FrontPUSH]] mostra um catálogo de modelos de seção, quase todos de [[wiki/concepts/secao-hero|hero]]: app, headline + ilustração, perspectiva, texto em tópicos, desktop, depoimentos e cadastro. A tese é montar a página como um "Frankenstein" desses modelos, guiado pelo [[wiki/concepts/page-map]] e por uma [[wiki/concepts/biblioteca-de-wireframes]] ([[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]]). Os modelos já usam perspectiva e ilustração, e ele anuncia os wireframes "de baixa fidelidade" do [[wiki/entities/nubank]] e a passagem do protótipo do FrontPUSH "para o protótipo de alta fidelidade".
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
@@ -66,3 +70,4 @@ Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], o
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — pesquisa, wireframe e grids antes do style guide; arquivo compartilhado por link
 - [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — aula dedicada: definição, uso com cliente, foco, page map, papel e caneta
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — pt.2 da série: briefing, objetivo, page map, leitura em F e em Z
+- [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — catálogo de wireframes de seção (Hero), PageMap e o Frankenstein

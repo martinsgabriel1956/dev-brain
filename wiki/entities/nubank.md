@@ -75,6 +75,10 @@ O clone de estudo de [[wiki/entities/nasser]] no Figma tem o link guardado no "M
 
 Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]], o projeto Nubank "vai servir de case" para demonstrar o [[wiki/concepts/style-guide]] e os estados dos componentes.
 
+## Wireframes do módulo Nubank
+
+O curso tem "um módulo específico só para a gente desenvolver o Nubank". Na aula 08, o wireframe do Nubank troca um parágrafo por tópicos ("resolvo tudo pelo app", "100% gratuito", "não tem taxas"); os wireframes de baixa fidelidade ficam para a aula seguinte ([[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]]).
+
 ## Key Sources
 
 
@@ -91,3 +95,4 @@ Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradi
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — style guide do projeto prático: tipografia 48/36/24, família de ícones
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — arquivo de estudo no Figma: link no Notion, fonte Sora, headings 48/36/24
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — projeto Nubank anunciado como case do style guide
+- [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — wireframe com benefícios em tópicos; módulo próprio no curso

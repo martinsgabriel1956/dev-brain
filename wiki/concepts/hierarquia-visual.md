@@ -117,6 +117,10 @@ Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]
 
 Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], Násser apresenta os dois padrões como "boas práticas de leitura" para projetar wireframes. **F** para "conteúdo mais pesado", como portais de notícia (G1): "lê um pouquinho, desce, lê um pouquinho, desce", e volta para cima para reler. **Z** para "conteúdo que exige um pouco mais de atenção": "eu crio pontos de atenção de forma que a sua leitura seja em Z", com headline, ilustração e CTA puxando o olho "pelo contraste e pelo tamanho". O critério da aula (atenção) difere do desta página (quantidade de texto), mas os dois apontam para landing pages no Z. `[external]` A Nielsen Norman Group trata o F como sintoma de texto mal formatado, não como layout a imitar (https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/).
 
+## O hero na frente
+
+O [[wiki/concepts/secao-hero|hero]] é "a primeira informação" e "a primeira ilustração" do site e precisa "dar impacto" ([[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]]).
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -140,3 +144,4 @@ Em [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]], N
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — código do style guide mais brando para dar hierarquia
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — texto branco x cinza como hierarquia de texto
 - [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] — F para conteúdo pesado, Z para pontos de atenção (contraste e tamanho)
+- [[wiki/sources/wireframes-pratica-1-hero-page-map-frankenstein-referencias]] — hero como primeira informação da página
