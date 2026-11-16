@@ -3,8 +3,8 @@ type: concept
 title: "Mood Board"
 aliases: ["moodboard", "painel de referências", "painel semântico", "referências visuais"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 1
+date_updated: 2026-11-15
+source_count: 2
 tags: [ui, ui-design, design, pesquisa, referencias, criatividade]
 skill: ux-ui-mentor
 status: stub
@@ -18,7 +18,7 @@ Painel de referências visuais (telas, paletas, tipografia, imagens) reunido ant
 
 [[wiki/sources/como-aprender-ui]]: antes de cada interface, o autor faz "muita pesquisa" e "literalmente um mood board", e passa muito tempo "quebrando cabeça, rabiscando" até chegar na tela. O mood board vem junto de seguir bons profissionais da área. Combate a sensação de bloqueio criativo: a criatividade sai do repertório acumulado, não de inspiração espontânea.
 
-A fonte promete explicar o método de pesquisa em aula futura; ainda não ingerida.
+A fonte promete explicar o método de pesquisa em aula futura; respondida em parte por [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] (ver abaixo).
 
 ## Relação com outros conceitos
 
@@ -26,6 +26,11 @@ A fonte promete explicar o método de pesquisa em aula futura; ainda não ingeri
 - [[wiki/concepts/mito-do-genio-mozart]] — criatividade como produto de treino, não dom.
 - [[wiki/concepts/ui-design]] — o mood board alimenta escolhas de cor, tipografia e forma.
 
+## Referências de estrutura
+
+Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]], a pesquisa de referências mira a estrutura, não paleta ou tipografia. Ele salva portfólios de freelancers (num site de referências que a legenda chama de "iMovement") e compara menu fixo, primeira dobra e seções até montar o [[wiki/concepts/page-map]]: "eu construo as minhas interfaces observando as interfaces de outras pessoas que eu considerei como boas interfaces".
+
 ## Key Sources
 
 - [[wiki/sources/como-aprender-ui]]
+- [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — referências de estrutura (menu, hero, seções) para montar o page map

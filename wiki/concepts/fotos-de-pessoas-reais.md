@@ -3,8 +3,8 @@ type: concept
 title: "Fotos de pessoas reais (humanização)"
 aliases: ["fotos de pessoas", "fotos reais", "não usar fotos fake", "humanizar a interface", "pessoas negociam com pessoas"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 4
+date_updated: 2026-11-15
+source_count: 5
 tags: [ui, ui-design, imagens, fotografia, confianca, marca, humanizacao]
 skill: ux-ui-mentor
 status: stub
@@ -44,9 +44,14 @@ O site do [[wiki/entities/nubank]] "sempre coloca foto de pessoas" para trazer �
 
 O site de arquitetura, todo de cantos retos, "contrastou com a foto do responsável" no fim da seção para "trazer um pouco mais perto" ([[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]).
 
+## Quem sou eu no portfólio
+
+Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]], a seção "quem sou eu" serve "para poder trazer mais a pessoa para a realidade, dizer que existe alguém que está fazendo isso aí": "coloca a sua foto, um pouco da sua história".
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-aspect-ratio-pessoas-ponto-focal-texto]] — "pessoas negociam com pessoas"; Santa Monica Studio; contrate um fotógrafo
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — Nubank usa fotos de pessoas como ponto orgânico
 - [[wiki/sources/imagens-e-ilustracoes-introducao-svg-bancos-texto-branco-resolucoes-formatos]] — edição "W7": foto do time com fotógrafo contratado; "imagens de gringos" não transmitem a realidade
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — foto do arquiteto como orgânico num site reto
+- [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — seção "quem sou eu" com foto para passar realidade

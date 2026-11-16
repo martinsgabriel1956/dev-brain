@@ -3,8 +3,8 @@ type: concept
 title: "Redesign como Exercício"
 aliases: ["redesign de estudo", "propor melhorias em interfaces", "redesign não solicitado", "unsolicited redesign"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 1
+date_updated: 2026-11-15
+source_count: 2
 tags: [ui, ui-design, design, aprendizado, portfolio, redesign]
 skill: ux-ui-mentor
 status: stub
@@ -35,6 +35,11 @@ Inferência: sem acesso a dados e pesquisa da empresa, o redesign externo mostra
 - [[wiki/concepts/pratica-deliberada]] — exercício no limite da competência, com feedback.
 - [[wiki/concepts/ui-design]]
 
+## Redesenhar o próprio site
+
+Em [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]], Násser conta que redesenhou o próprio site "muitas vezes para poder chegar no patamar que está hoje". A página pessoal virou a base do [[wiki/entities/frontpush]].
+
 ## Key Sources
 
 - [[wiki/sources/como-aprender-ui]]
+- [[wiki/sources/wireframes-pratica-2-page-map-por-referencias-hero-processo-cta]] — redesign repetido do site pessoal, que virou o FrontPUSH
