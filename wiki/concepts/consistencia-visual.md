@@ -4,7 +4,7 @@ title: "Consistência Visual"
 aliases: ["consistência", "consistência em UI", "consistency", "identidade visual", "família de ícones"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 22
+source_count: 23
 tags: [ui, ui-design, consistencia, icones, cor, identidade-visual, design-system]
 skill: ux-ui-mentor
 status: stub
@@ -122,6 +122,10 @@ Em [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]]: "sempr
 
 A aula prática de elementos de composição fecha com ela: "sempre a querida consistência no princípio de design ajudando a gente". As órbitas, planetas e cometas repetem a mesma cor de contraste, o mesmo stroke e o mesmo tema em todas as telas ([[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]]).
 
+## A paleta aplicada
+
+Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]]: a mesma paleta (roxo de base, amarelo de destaque, neutros) vai do card aos ícones e ao layout do site, e será a base do style guide. Ver [[wiki/concepts/paleta-de-cores]].
+
 ## Key Sources
 
 - [[wiki/sources/principios-do-design-eixo-simetria-consistencia-simplicidade]] — ícones, paleta e identidade visual
@@ -153,3 +157,4 @@ A aula prática de elementos de composição fecha com ela: "sempre a querida co
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — valores sempre da regra dos oito pontos; nunca 53 ou 55
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — blocos do mesmo tamanho como a mesma classe; textos sempre alinhados a uma coluna
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — elementos de composição fecham com consistência
+- [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — a mesma paleta no card, nos ícones e no layout

@@ -4,7 +4,7 @@ title: "Cor semântica"
 aliases: ["cores semânticas", "cor de feedback", "cor de estado", "semantic color", "status colors"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 6
+source_count: 7
 tags: [ui, ui-design, cor, cor-semantica, feedback, acessibilidade, design-tokens]
 skill: ux-ui-mentor
 status: stub
@@ -57,6 +57,10 @@ A aula de [[wiki/concepts/harmonia-de-cores]] escolhe cores pela posição no c�
 
 A aula de paleta ([[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]]) trata a cor de base como branding (Facebook azul, WhatsApp verde) e a de enfoque como destaque (o verde da [[wiki/entities/rocketseat]]). Quando a cor de enfoque coincide com uma convenção semântica (verde = sucesso), as leituras se misturam; tokens separados (`--color-accent` x `--color-feedback-success`) evitam o conflito no código. Ver [[wiki/concepts/paleta-de-cores]].
 
+## Amarelo como cor de marca
+
+Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]], o amarelo é a cor de destaque da paleta, não warning. `[skill: ux-ui-mentor]` Se o produto também usa amarelo para warning, os dois viram tokens diferentes e o warning vem sempre com ícone e texto. Ver [[wiki/concepts/paleta-de-cores]].
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]] — azul link, vermelho alerta, amarelo warning; botão preenchido como hierarquia
@@ -66,3 +70,4 @@ A aula de paleta ([[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-anal
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — trânsito no mapa, card verde/vermelho/amarelo, categorias da Globo
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — harmonia de cores x convenção semântica
 - [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — cor de base (marca) e de enfoque (destaque), distintas da cor de estado
+- [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — amarelo como destaque de marca, não warning

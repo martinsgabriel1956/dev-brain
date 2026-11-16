@@ -4,7 +4,7 @@ title: "Elementos de composição"
 aliases: ["elemento de composição", "ambiência", "elementos de ambiência", "elementos decorativos de fundo", "background decorativo"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 5
+source_count: 6
 tags: [ui, ui-design, elementos-da-interface, elementos-de-composicao, ambiencia, background, branding, identidade-visual]
 skill: ux-ui-mentor
 status: stub
@@ -52,6 +52,10 @@ Em [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-comet
 
 Cores análogas, "pela transição entre elas ser suave", são "muitíssimo aplicadas para gradientes", um dos recursos de fundo desta página ([[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]]). A "variação monocromática" de azul do FrontPUSH ganha definição na mesma aula. Ver [[wiki/concepts/harmonia-de-cores]].
 
+## Gradiente atrás do texto
+
+Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]]: um elemento de composição amarelo atrás de texto branco tira o contraste ("você está dificultando a vida do usuário"). A correção é um gradiente linear: o amarelo vira "um detalhezinho, um entalhe" que some antes do texto. Ver [[wiki/concepts/contraste]] e [[wiki/concepts/paleta-de-cores]].
+
 ## Key Sources
 
 - [[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-screens]]
@@ -59,3 +63,4 @@ Cores análogas, "pela transição entre elas ser suave", são "muitíssimo apli
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — branding de elementos de composição no style guide
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — versão prática "W7": stroke, pontilhado 2, 10, planetas com sombra, cometas
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — análogas para gradiente; definição de monocromática
+- [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — elemento amarelo atrás do texto corrigido com gradiente linear

@@ -4,7 +4,7 @@ title: "Contraste"
 aliases: ["contraste de cor", "color contrast", "contraste em UI", "isolation effect", "efeito Von Restorff"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 23
+source_count: 24
 tags: [ui, ui-design, cor, acessibilidade, hierarquia-visual, cta]
 skill: ux-ui-mentor
 status: stub
@@ -102,6 +102,10 @@ Cores complementares (opostas no [[wiki/concepts/circulo-cromatico]]) são "muit
 
 Na aula de paleta ([[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]]), garantir contraste é a primeira função da [[wiki/concepts/paleta-de-cores]], "para poder guiar o usuário". Cada tipo resolve de um jeito: a base + enfoque usa uma cor complementar como destaque; a monocromática, "tons mais claros e tons mais escuros" e neutros; a análoga, uma cor escura e outra clara (azul escuro + turquesa claro). `[skill: ux-ui-mentor]` Esquema harmônico não garante WCAG: duas complementares de mesma luminosidade podem falhar 4.5:1. Ver [[wiki/concepts/harmonia-de-cores]].
 
+## Contraste como objetivo da paleta
+
+Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]]: "um dos objetivos da paleta de cores é ter um bom contraste". Branco e amarelo contrastam com o roxo de base. Um elemento de composição amarelo atrás de texto branco perde o contraste; a saída da aula é um gradiente linear que some antes do texto. `[skill: ux-ui-mentor]` Branco sobre amarelo fica bem abaixo de 4.5:1. Ver [[wiki/concepts/paleta-de-cores]].
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] — contraste para acessibilidade e para o CTA
@@ -129,3 +133,4 @@ Na aula de paleta ([[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-ana
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — contraste como objetivo da cor; segundo plano com contraste menor; 60-30-10
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — complementares: "ótimo contraste" para destacar
 - [[wiki/sources/paleta-de-cores-base-enfoque-monocromatica-analoga-triadica]] — contraste como função da paleta: enfoque complementar, claro x escuro
+- [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — objetivo de contraste da paleta; branco sobre amarelo amenizado com gradiente

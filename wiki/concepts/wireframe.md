@@ -85,6 +85,10 @@ Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-fl
 
 Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]], os wireframes do curso (features, menu) estão todos no grid de 12 colunas de 72. Basta clicar no olhinho do grid para conferir. O bloco de features ocupa seis colunas, com título, parágrafo e lista alinhados à esquerda. Ele admite "alguns wireframes que eu pequei em determinado alinhamento" e corrige ao vivo uma ilustração torta. O exercício é abrir os wireframes do arquivo e conferir o alinhamento.
 
+## Cor de base só no hero
+
+Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]]: o site pode ser todo branco, com blocos em cinza, e só o banner principal ("no wireframe hero") na cor de base. Ver [[wiki/concepts/paleta-de-cores]].
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
@@ -103,3 +107,4 @@ Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-m
 - [[wiki/sources/grids-parte-2-colunas-bootstrap-breakpoints-8-pontos]] — grids para alinhar wireframes de baixa e média fidelidade
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — convite para revisar os wireframes do curso
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — wireframes de features e de menu conferidos no grid; exercício de verificar o alinhamento
+- [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — hero em roxo, resto branco e cinza

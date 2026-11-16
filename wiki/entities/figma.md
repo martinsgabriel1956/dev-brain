@@ -4,7 +4,7 @@ title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
 date_updated: 2026-11-15
-source_count: 26
+source_count: 27
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -114,6 +114,10 @@ Em [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-comet
 
 A abertura do módulo de cores promete uma aula prática para representar cores em código no Figma (HSB, hexadecimal, RGB x CMYK), base para compor paleta e variar cores ([[wiki/concepts/modelos-de-cor]]; [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]]).
 
+## Move x Scale e agrupar
+
+Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]]: Ctrl+G agrupa e Ctrl+Shift+G desagrupa; Fill e stroke pintados por parte do ícone. Aumentar com o Move (V), mesmo com Shift, mantém a espessura do stroke; o Scale aumenta "de forma proporcional". `[external]` O atalho do Scale é K (https://help.figma.com).
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -149,3 +153,4 @@ A abertura do módulo de cores promete uma aula prática para representar cores 
 - [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-menu]] — Layout Grid de 12 colunas tipo Center, olhinho do grid, distribuir horizontal spacing
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — stroke, dash 2, 10, cap round, conta-gotas, sombra, gradiente
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — aula prática de códigos de cor prometida
+- [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — Ctrl+G / Ctrl+Shift+G; Move mantém o stroke, Scale aumenta proporcional

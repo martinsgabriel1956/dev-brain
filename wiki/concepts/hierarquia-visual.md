@@ -4,7 +4,7 @@ title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
 date_updated: 2026-11-15
-source_count: 21
+source_count: 22
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -137,6 +137,10 @@ Na [[wiki/entities/apple]], dois textos com "exatamente o mesmo peso tipográfic
 
 Na aula de harmonia das cores, a variação monocromática (mais claro e mais escuro na mesma matiz) serve "justamente na produção de texto para poder garantir a hierarquia": o de maior contraste destaca, o de menor fica "como uma informação em segundo plano" ([[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]]). Ver [[wiki/concepts/harmonia-de-cores]].
 
+## Hierarquia pela cor da paleta
+
+Em [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]]: num card roxo, o que importa (perfil, nome) vai na cor de destaque, amarela, e o resto em branco. Numa interface monocromática, a mesma hierarquia sairia de um branco mais forte e um cinza mais claro, com variações grandes o bastante para se notar. No [[wiki/entities/quarto-criativo]], a hierarquia do texto usa um tom pastel. Ver [[wiki/concepts/paleta-de-cores]].
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -165,3 +169,4 @@ Na aula de harmonia das cores, a variação monocromática (mais claro e mais es
 - [[wiki/sources/elementos-de-composicao-pratica-figma-orbitas-pontilhado-cometas-playstation]] — fundo de órbitas e cometas não disputa o ponto focal
 - [[wiki/sources/teoria-das-cores-introducao-natureza-objetivos-fenomeno-fisico]] — cor como peso de hierarquia (Apple, sites de notícia)
 - [[wiki/sources/harmonia-das-cores-monocromatica-complementar-analoga-triadica]] — variação monocromática no texto como hierarquia
+- [[wiki/sources/aplicando-paleta-de-cores-base-destaque-hierarquia-gradiente-icones]] — amarelo no que importa, branco no resto; escala de cinza na versão monocromática
