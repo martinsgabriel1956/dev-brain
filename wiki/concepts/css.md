@@ -49,6 +49,9 @@ O módulo "Básico CSS" do [[wiki/entities/frontpush|FrontPUSH]] ensina que "tud
 ## Propriedades básicas na prática
 
 Em [[wiki/sources/principais-propriedades-css-color-background-font]], primeira aula de código do [[wiki/entities/frontpush|FrontPUSH]] na wiki, [[wiki/entities/nasser|Násser]] percorre as propriedades principais: `color` (texto) e `background-color` (fundo); imagem por `<img>` ou por [[wiki/concepts/background-css|background-image]]; `margin: 0 auto` com largura em % para centralizar; [[wiki/concepts/display-css|display]] block x inline; `font-family`, `font-size`, `font-weight`, `font-variant`; `line-height`, `text-align`, `vertical-align`, `text-shadow`, `box-shadow`, `letter-spacing`, `text-decoration`. A atitude: aprender as principais e descobrir o resto no [[wiki/entities/w3schools]], e depurar com `border: 1px solid red`, "como se fosse um printf".
+## Position
+
+Na aula 06 do módulo "Básico CSS" do [[wiki/entities/frontpush|FrontPUSH]], `position` é "um CSS básico que muita gente não sabe": `static` (padrão), `relative`, `absolute`, `fixed` e `sticky`, este "antes só [...] com o JavaScript" ([[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]). Ver [[wiki/concepts/css-position]] e [[wiki/concepts/unidades-de-viewport]].
 
 ## Key sources
 
@@ -63,3 +66,4 @@ Em [[wiki/sources/principais-propriedades-css-color-background-font]], primeira 
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — três famílias (estilo, layout, motion); regra; externo, incorporado e inline
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — box model, shorthand (TRBL), unidades, W3Schools como referência
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: primeiras propriedades: color, background, display, font, texto; border como printf
+- [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: os cinco valores de `position`; `100vh` no body

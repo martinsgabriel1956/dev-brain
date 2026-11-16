@@ -23,6 +23,9 @@ Em [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]], o Emm
 ## Antes do HTML5, tudo era div
 
 Segundo a aula de box model do [[wiki/entities/frontpush|FrontPUSH]], antes do HTML5 "basicamente todo o site era composto por divs", além das tags "desde a fundação do HTML" (link, parágrafo, título, body, head). section, article e as demais [[wiki/concepts/html-semantico|tags semânticas]] vieram com o HTML5 ([[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]]).
+## Tags semânticas
+
+Em [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]], `section` em vez de `div` "para poder ficar um pouco mais interessante na questão da semântica", e o menu é `nav` com `ul`/`li` ("lista não ordenada, só com pontinhos"). `[external]` `section` e `nav` são elementos do HTML5 que leitores de tela anunciam como regiões: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav.
 
 ## Key sources
 
@@ -30,3 +33,4 @@ Segundo a aula de box model do [[wiki/entities/frontpush|FrontPUSH]], antes do H
 - [[wiki/sources/classes-e-ids-no-css]] — atributos class e id
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — estrutura do HTML5, `<head>`, `<title>`, `style` inline
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — antes do HTML5, interfaces feitas de divs; tags semânticas vieram com o HTML5
+- [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: `section` e `nav` por semântica

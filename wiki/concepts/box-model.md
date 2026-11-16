@@ -43,3 +43,10 @@ Em [[wiki/sources/principais-propriedades-css-color-background-font]], `margin: 
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: margin 0 auto; link forçado a bloco para usar o box model; border como printf
+## Deslocar a caixa sem mexer no fluxo
+
+Em [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]], `position: relative` com `top` desloca a caixa inteira, mas a posição original continua reservada ("imagine" o contorno tracejado). Já `absolute` tira a caixa do fluxo, e o irmão sobe para ocupar o espaço. A margem empurra os vizinhos; `top` e `left` não empurram. Ver [[wiki/concepts/css-position]].
+
+## Key sources
+- [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
+- [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: relative mantém o espaço da caixa; absolute o libera

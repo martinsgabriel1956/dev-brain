@@ -3,7 +3,7 @@ type: source
 title: "Usabilidade (FrontPUSH, interfaces web): alcançar facilmente os objetivos, as três esferas e as boas práticas"
 aliases: ["aula de usabilidade", "usabilidade FrontPUSH", "auxílio emergencial Caixa", "usabilidade nas três esferas"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
+date_updated: 2026-11-16
 source_count: 0
 tags: [ux, ux-design, usabilidade, padroes, heuristicas, apple, jornada, icones, cor, feedback, teste-de-usabilidade, simplicidade]
 skill: ux-ui-mentor
@@ -113,3 +113,4 @@ Aula 2 do módulo de **interfaces web** do [[wiki/entities/frontpush]] (cerca de
 - [[wiki/sources/elementos-da-interface-visao-geral-proposito-consistencia-simplicidade]]: propósito, simplicidade e os "20% das funcionalidades"
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: o site da Apple pela ótica dos links
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]: a última aula do módulo de UI Design, que já cita o style guide de interfaces web
+- [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: como o menu fixo se faz no CSS (`fixed` e `sticky`); ver [[wiki/concepts/menu-fixo]]

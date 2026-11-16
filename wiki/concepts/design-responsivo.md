@@ -71,6 +71,9 @@ Na aula de box model ([[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padd
 ## Porcentagem como primeiro passo
 
 Em [[wiki/sources/principais-propriedades-css-color-background-font]], antes de media queries: imagem com `width: 100%` do pai e section de 80% com `margin: 0 auto` "meio que já se torna responsivo"; "porcentagem é muito importante para [...] elementos responsivos". `[external]` Para imagem, `max-width: 100%` evita ampliar além do tamanho natural.
+## Unidades de viewport
+
+Em [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]], as viewport units (`vh`, `vw`) existem porque "hoje em dia nós temos vários dispositivos e a gente quer construir interfaces responsivas"; o `body` recebe `100vh`. Posição em porcentagem é "meio que responsivo". `[external]` No celular, `100dvh` em vez de `100vh`. Ver [[wiki/concepts/unidades-de-viewport]].
 
 ## Key sources
 
@@ -93,3 +96,4 @@ Em [[wiki/sources/principais-propriedades-css-color-background-font]], antes de 
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — layout como família de propriedades do CSS que dá a responsividade
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — % e rem como medidas relativas para a responsividade
 - [[wiki/sources/principais-propriedades-css-color-background-font]]: width em %, margin 0 auto; porcentagem como base do responsivo
+- [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: viewport units para várias telas; menu mobile que entra e sai
