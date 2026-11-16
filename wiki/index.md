@@ -26,6 +26,7 @@ date_updated: 2026-11-15
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/principais-propriedades-css-color-background-font]] | Aula 04 de "Básico CSS" do [[wiki/entities/frontpush\|FrontPUSH]] (de [[wiki/entities/nasser\|Násser]], inferido), a primeira de código na wiki: color x background-color; imagem por `<img>` (caminho do HTML, `width: 100%`, `margin: 0 auto`) ou [[wiki/concepts/background-css\|background-image]] (caminho do CSS com `../`, cover x contain, no-repeat, position); [[wiki/concepts/display-css\|block x inline]]; border vermelho "como printf"; [[wiki/entities/google-fonts]] por `<link>`, font-weight, small-caps, line-height, letter-spacing; erros: `<img>` não é bloco, small-caps não é caixa alta |
 | [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] | Abertura do módulo de interfaces web da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): "vamos projetar de verdade"; [[wiki/concepts/workflow-de-interface-web\|workflow]] pesquisa → [[wiki/concepts/wireframe\|wireframes]] → protótipo final UI; grids por dispositivo; [[wiki/concepts/page-map]] como flow de dobras; biblioteca de wireframes; [[wiki/concepts/style-guide]] (branding, cor, tipografia desktop/mobile, componentes); case [[wiki/entities/nubank]] |
 | [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] | Parte 1 de [[wiki/concepts/wireframe\|wireframes]] da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): "design barato e rápido", telinhas preto e branco para levantar requisitos com o cliente e corrigir na prototipagem, não no software; foco em proporção, jornada, conteúdo e posição, não em visual; [[wiki/concepts/page-map]] das dobras; começa em papel e caneta (brinde: sketchbook) |
 | [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] | Aula 2 de [[wiki/concepts/wireframe\|wireframes]] da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): [[wiki/concepts/briefing]] como levantamento de requisitos (marca, [[wiki/concepts/branding]], diferencial, carro-chefe, objetivo da interface); [[wiki/concepts/page-map]] a partir de patterns pesquisados ([[wiki/entities/ui-movement]]); CTA repetido do FrontPUSH; leitura em F (conteúdo pesado) e em Z (pontos de atenção) |
@@ -2963,6 +2964,9 @@ date_updated: 2026-11-15
 | [[wiki/concepts/script-async-defer]] | Parser para em `<script>` síncrono porque não sabe se ele muta o DOM — `defer` executa após DOM pronto, na ordem do documento |
 | [[wiki/concepts/layout-thrashing]] | Ler geometria e escrever estilo alternadamente em loop força reflow síncrono repetido |
 | [[wiki/concepts/box-model]] | Content, padding, border, margin — camadas que definem o tamanho final de cada caixa |
+| [[wiki/concepts/background-css]] | `background-image` x `<img>`; `background-size` cover (corta) x contain (sobra e repete), `background-repeat`, `background-position` (x depois y); caixa sem conteúdo precisa de altura |
+| [[wiki/concepts/display-css]] | Bloco empilha e aceita medidas, inline ignora width/height/margem vertical; `<img>` é inline substituído; link forçado a bloco no botão |
+| [[wiki/concepts/caminho-relativo]] | `src` parte do HTML, `url()` parte do arquivo CSS; `../` sobe um nível, `/` parte da raiz |
 | [[wiki/concepts/tcp-three-way-handshake]] | SYN → SYN-ACK → ACK — abre a conexão antes do TLS e do request HTTP |
 | [[wiki/concepts/tls-handshake]] | Negociação de certificados/chaves em HTTPS — round trips extras antes do primeiro byte |
 | [[wiki/concepts/http-caching]] | Cache válido pula toda a navegação de rede — fonte não distingue cache HTTP comum de bfcache |
@@ -3487,6 +3491,7 @@ date_updated: 2026-11-15
 
 ## Entities
 
+- [[wiki/entities/w3schools]] — site de tutoriais de HTML/CSS (sem ligação com o W3C); Násser o indica para descobrir valores de propriedades como `background-size`
 - [[wiki/entities/whatfont]] — extensão de navegador que mostra fonte, tamanho e line-height de um texto; usada para estudar sites de referência
 - [[wiki/entities/wikipedia]] — enciclopédia on-line; contraexemplo de largura de texto ("te cansa um pouco rápido")
 - [[wiki/entities/apple]] — big tech usada como referência de UI; links destacados, link branco x texto cinza, botões que não encolhem no mobile

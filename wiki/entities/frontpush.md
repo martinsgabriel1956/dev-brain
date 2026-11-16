@@ -3,8 +3,8 @@ type: entity
 title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 39
+date_updated: 2026-11-16
+source_count: 40
 tags: [curso, frontend, ui-design, landing-page]
 skill: ux-ui-mentor
 status: stub
@@ -134,6 +134,10 @@ Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]], Nás
 
 Na aula de alinhamento ([[wiki/sources/alinhamento-e-espacamento-de-texto]]), o autor mostra "o meu próprio site": tudo à esquerda, exceto uma seção de cards com título e texto curtos centralizados. Se o site é o do FrontPUSH, a aula não diz (inferência pela pasta da transcrição).
 
+## Módulo Básico CSS
+
+O curso tem um módulo "Básico CSS" (pasta "CSS Basics" no VS Code). A aula 04, [[wiki/sources/principais-propriedades-css-color-background-font]], é a primeira aula de código do curso na wiki: color, background, display, fontes do [[wiki/entities/google-fonts]] e propriedades de texto. As aulas 01 a 03 (seletores, id com `#`) não foram ingeridas.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -175,3 +179,4 @@ Na aula de alinhamento ([[wiki/sources/alinhamento-e-espacamento-de-texto]]), o 
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — aula 07 do módulo: classificações tipográficas
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — botões do site em maiúsculas com letter-spacing
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — site do autor à esquerda, cards curtos centralizados
+- [[wiki/sources/principais-propriedades-css-color-background-font]]: aula 04 do módulo Básico CSS

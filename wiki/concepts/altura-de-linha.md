@@ -3,8 +3,8 @@ type: concept
 title: "Altura de linha (line-height)"
 aliases: ["line-height", "entrelinha", "leading", "altura da linha", "espaçamento entre linhas"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 4
+date_updated: 2026-11-16
+source_count: 5
 tags: [ui, ui-design, tipografia, line-height, legibilidade, leiturabilidade, acessibilidade, css]
 skill: ux-ui-mentor
 status: stub
@@ -51,9 +51,14 @@ Dois critérios WCAG diferentes tocam no valor 1,5:
 
 A caixa de texto inclui o espaço do line-height, então o Alt do [[wiki/entities/figma]] mede distâncias maiores do que o vão visível entre as letras (17 em vez de 16 em [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]]). Pelo mesmo motivo, o vão entre título e descrição pode ser só 4 a 8 px: "a altura de linha do título já dá espaço" ([[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]). Ver [[wiki/concepts/espaco-em-branco]].
 
+## Na aula de CSS
+
+Em [[wiki/sources/principais-propriedades-css-color-background-font]], `line-height` é "aquela propriedade que a gente vê em UI" para melhorar "a leitura, a legibilidade". A aula a descreve como "espaçamento de uma letra da outra, que é a altura da linha": a primeira metade descreve `letter-spacing` ([[wiki/concepts/tracking]]); a segunda é a correta.
+
 ## Key Sources
 
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]]: definição, faixas por escala, cálculo da razão com o WhatFont
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]: a caixa azul da seleção; título com entrelinha menor
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]]: line-height engana a medição de distâncias
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]: vão de 4 a 8 px entre título e descrição
+- [[wiki/sources/principais-propriedades-css-color-background-font]]: line-height descrito como espaço entre letras (confusão com letter-spacing)

@@ -3,8 +3,8 @@ type: concept
 title: "Sombra em interfaces"
 aliases: ["sombra", "drop shadow", "box-shadow", "elevação", "sombra suave", "smooth shadow", "sombra em camadas", "layered shadow"]
 date_created: 2026-11-14
-date_updated: 2026-11-15
-source_count: 5
+date_updated: 2026-11-16
+source_count: 6
 tags: [ui, ui-design, sombra, drop-shadow, elevacao, botoes, hover, design-system, css]
 skill: ux-ui-mentor
 status: stub
@@ -60,6 +60,10 @@ Sombras viram effect styles com grupo e nome (`Shadow / Shadow purple 2`), reord
 
 Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]]: "para o desenvolvedor é muito complicado dizer quais são as sombras do CSS". O Inspect do [[wiki/entities/figma]] entrega o `box-shadow` pronto, com as quatro camadas de drop shadow, o RGBA e as opacidades; basta copiar para o [[wiki/concepts/style-guide]]. Ver [[wiki/concepts/handoff-design-dev]].
 
+## text-shadow x box-shadow
+
+Em [[wiki/sources/principais-propriedades-css-color-background-font]]: `text-shadow` aplica sombra no texto e `box-shadow` "sombra em caixa". `[external]` `text-shadow` não tem spread nem `inset`; as várias camadas do Smooth Shadow só funcionam em `box-shadow` com valores separados por vírgula (https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow).
+
 ## Key Sources
 
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]: Smooth Shadow, Pegasus, o "curinga", spread negativo, 80% do elemento
@@ -67,3 +71,4 @@ Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradi
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — sombra de hover documentada; box-shadow do inspect; grupo de estilo de sombra
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]]: sombras como effect styles; Smooth Shadow com offset centralizado (tensão)
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — copiar o box-shadow de quatro camadas do Inspect para o style guide
+- [[wiki/sources/principais-propriedades-css-color-background-font]]: text-shadow no texto, box-shadow na caixa

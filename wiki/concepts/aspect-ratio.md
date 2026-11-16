@@ -3,8 +3,8 @@ type: concept
 title: "Aspect ratio (proporção da imagem)"
 aliases: ["aspect ratio", "proporção", "proporção de aspecto", "relação de aspecto", "não distorcer imagens"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 4
+date_updated: 2026-11-16
+source_count: 5
 tags: [ui, ui-design, imagens, aspect-ratio, figma, css, core-web-vitals]
 skill: ux-ui-mentor
 status: stub
@@ -36,9 +36,14 @@ A parte 3 acrescenta o outro lado: além de não distorcer cada imagem, entregar
 
 Na parte 4, as diretrizes do [[wiki/entities/material-design]] são citadas com 16 por 9, 3 por 4 e 1 por 1 ([[wiki/sources/imagens-e-ilustracoes-ilustracoes-mascotes-consistencia-svg]]); lista não conferida no guia.
 
+## cover x contain no CSS
+
+Em [[wiki/sources/principais-propriedades-css-color-background-font]], a proporção aparece no código: a section de 80% × 500 px não é quadrada e a foto é, então `background-size: cover` corta parte do passarinho e `contain` deixa sobra (e repete, até `no-repeat`). Ver [[wiki/concepts/background-css]].
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-aspect-ratio-pessoas-ponto-focal-texto]] — "não distorça as imagens"; crop automático do Figma
 - [[wiki/sources/imagens-e-ilustracoes-bom-senso-contraste-padronizacao-blend-modes]] — padronizar a proporção de todas as imagens de uma seção para o handoff
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-mascotes-consistencia-svg]] — proporções citadas do Material Design
 - [[wiki/sources/imagens-e-ilustracoes-introducao-svg-bancos-texto-branco-resolucoes-formatos]] — edição "W7": não esticar uma 1920×1080 para caber num banner; o Figma mantém a proporção e centraliza
+- [[wiki/sources/principais-propriedades-css-color-background-font]]: cover corta, contain deixa sobra numa caixa não quadrada

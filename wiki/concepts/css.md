@@ -3,8 +3,8 @@ type: concept
 title: "CSS (Cascading Style Sheets)"
 aliases: ['CSS', 'folhas de estilo em cascata']
 date_created: 2026-10-14
-date_updated: 2026-11-15
-source_count: 6
+date_updated: 2026-11-16
+source_count: 7
 tags: [css, frontend, web, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -34,6 +34,10 @@ Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]], o In
 
 Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], alinhar à esquerda é "o padrão do CSS": as tags de texto e de título já vêm assim. `[external]` Mais precisamente, o valor inicial de `text-align` é `start`, que segue a direção do idioma: https://developer.mozilla.org/en-US/docs/Web/CSS/text-align. Ver [[wiki/concepts/alinhamento-de-texto]].
 
+## Propriedades básicas na prática
+
+Em [[wiki/sources/principais-propriedades-css-color-background-font]], primeira aula de código do [[wiki/entities/frontpush|FrontPUSH]] na wiki, [[wiki/entities/nasser|Násser]] percorre as propriedades principais: `color` (texto) e `background-color` (fundo); imagem por `<img>` ou por [[wiki/concepts/background-css|background-image]]; `margin: 0 auto` com largura em % para centralizar; [[wiki/concepts/display-css|display]] block x inline; `font-family`, `font-size`, `font-weight`, `font-variant`; `line-height`, `text-align`, `vertical-align`, `text-shadow`, `box-shadow`, `letter-spacing`, `text-decoration`. A atitude: aprender as principais e descobrir o resto no [[wiki/entities/w3schools]], e depurar com `border: 1px solid red`, "como se fosse um printf".
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -42,3 +46,4 @@ Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], alinhar à esquerda é "
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — tipografia: font-family, pesos, `<link>` x `@import`
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — letter-spacing, font-weight e estilo falso
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — text-align à esquerda como padrão (inicial `start`)
+- [[wiki/sources/principais-propriedades-css-color-background-font]]: primeiras propriedades: color, background, display, font, texto; border como printf

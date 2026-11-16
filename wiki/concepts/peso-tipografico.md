@@ -3,8 +3,8 @@ type: concept
 title: "Peso tipográfico"
 aliases: ["font-weight", "negrito", "bold", "itálico", "estilo falso", "faux bold"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [ui, ui-design, tipografia, font-weight, negrito, italico, contraste, css]
 skill: ux-ui-mentor
 status: stub
@@ -28,6 +28,11 @@ No Inspect do [[wiki/entities/figma]], trocar a fonte para Medium muda `font-wei
 
 No Google Fonts ou no Adobe Fonts só vêm os pesos selecionados. Se o CSS pede um peso que não foi carregado, "ele vai se tornar falso". O Figma "se preocupa em ser real" e só oferece os pesos que a fonte tem. `[external]` O navegador sintetiza negrito e itálico ausentes engrossando ou inclinando o glifo; a propriedade `font-synthesis` controla isso (https://developer.mozilla.org/en-US/docs/Web/CSS/font-synthesis).
 
+## font-weight no código
+
+Em [[wiki/sources/principais-propriedades-css-color-background-font]], com só regular e bold carregados do [[wiki/entities/google-fonts]], `font-weight: 500` "não mudou ainda" e 700 ficou negrito. É o lado do código do estilo falso: o navegador cai no peso carregado mais próximo (500 → 400) `[external]` (https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight#fallback_weights).
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — negrito e itálico como contraste; font-weight no Inspect; estilo falso
+- [[wiki/sources/principais-propriedades-css-color-background-font]]: 500 sem efeito, 700 negrito, com só regular e bold carregados
