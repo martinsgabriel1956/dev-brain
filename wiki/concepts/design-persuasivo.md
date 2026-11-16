@@ -3,8 +3,8 @@ type: concept
 title: "Design Persuasivo"
 aliases: ["persuasive design", "persuasive design patterns", "padrões persuasivos", "nudge"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 1
+date_updated: 2026-11-15
+source_count: 2
 tags: [ux, design, design-persuasivo, vieses-cognitivos, gamificacao, etica]
 skill: ux-ui-mentor
 status: stub
@@ -26,6 +26,11 @@ Na aula [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]] aparece um caso s
 - [[wiki/concepts/comunicacao-persuasiva]] — persuasão aplicada a argumentos e pessoas, não a interfaces.
 - [[wiki/concepts/hierarquia-visual]] — persuasão por atenção.
 
+## Gatilhos no page map
+
+Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]], o [[wiki/concepts/page-map]] serve "para poder aplicar os gatilhos" ao longo das dobras de uma página de vendas. A aula não detalha quais.
+
 ## Key Sources
 
 - [[wiki/sources/ui-patterns-com-biblioteca-de-padroes]]
+- [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — page map como lugar para aplicar os gatilhos

@@ -3,8 +3,8 @@ type: concept
 title: "Objetivo da Interface"
 aliases: ["qual o objetivo da UI", "o que faz uma boa UI", "boa UI depende do objetivo"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 5
+date_updated: 2026-11-15
+source_count: 6
 tags: [ui, ui-design, ux, design, conversao, cta]
 skill: ux-ui-mentor
 status: stub
@@ -51,6 +51,10 @@ Na aula de formas, a pergunta-guia é "o que você está querendo passar?": prec
 
 "Qual a ideia que a interface está querendo passar" decide a forma do botão: o segredo está na predominância "daquilo que é o seu produto ou serviço" ([[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]).
 
+## Objetivos principais no wireframe
+
+Em [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]], o wireframe em preto e branco existe para discutir "o conteúdo, é o grosso, são o levantamento de requisitos, são os objetivos principais". O exemplo é uma página de vendas de curso cujo objetivo é a chamada para cadastro. O [[wiki/concepts/page-map]] monta a jornada "em acordo com os objetivos" (slide).
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -58,3 +62,4 @@ Na aula de formas, a pergunta-guia é "o que você está querendo passar?": prec
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]] — o que se quer comunicar define forma, tipo e cor
 - [[wiki/sources/formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank]] — "o que você está querendo comunicar?" como pergunta de partida para escolher formas
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — forma do botão escolhida pelo que se quer comunicar
+- [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] — levantamento de requisitos e objetivos principais no wireframe

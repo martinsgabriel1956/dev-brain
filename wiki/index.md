@@ -1,6 +1,6 @@
 ---
 type: index
-date_updated: 2026-11-14
+date_updated: 2026-11-15
 ---
 
 
@@ -26,6 +26,7 @@ date_updated: 2026-11-14
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] | Parte 1 de [[wiki/concepts/wireframe\|wireframes]] da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): "design barato e rápido", telinhas preto e branco para levantar requisitos com o cliente e corrigir na prototipagem, não no software; foco em proporção, jornada, conteúdo e posição, não em visual; [[wiki/concepts/page-map]] das dobras; começa em papel e caneta (brinde: sketchbook) |
 | [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] | Aula teórica de [[wiki/concepts/botoes-em-interfaces\|botões e links]] da edição "W7" (de [[wiki/entities/nasser\|Násser]]): botões guiam a jornada de A a B; exemplos [[wiki/entities/frontpush]] (grade do curso + inscreva-se), [[wiki/entities/apple]] (link branco, texto cinza), [[wiki/entities/sketch]] (See pricing, tente de graça), Framer e Adobe XD; [[wiki/concepts/consistencia-visual\|consistência]] (altura, padding, radius iguais); primário preenchido + secundário vazio; [[wiki/concepts/area-clicavel\|área clicável]] de 44 px (usa 56); label curto; cor de [[wiki/concepts/contraste]]; hover com sombra da cor do botão |
 | [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] | Aula teórica de [[wiki/concepts/formas-de-botoes|formas de botões]] da edição "W7" (de [[wiki/entities/nasser|Násser]]): retangular (seriedade; Madero e arquitetura como contraste), arredondado (o "coringa"), circular ([[wiki/entities/nubank]], [[wiki/entities/apple]]; aproxima), chanfrado (futurista; jogo do Homem-Aranha), diagonal (movimento; PES, FIFA) e hexagonal (gamificado, crianças); geométrico puro "fica muito longe da pessoa" |
 | [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] | Aula prática de [[wiki/concepts/botoes-em-interfaces\|botões]] no [[wiki/entities/figma]] da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): 56 px de altura, padding 64/96 medido à mão ("no CSS é muito fácil"), gradiente da marca, branco ou preto pelo [[wiki/concepts/contraste]], radius 16; [[wiki/concepts/sombra-em-interfaces\|sombra]] com Smooth Shadow (4–6 layers), [[wiki/entities/pegasus-design-system]] e o "curinga" (blur = 2× offset, marca a ≤40%, spread negativo, 80% do elemento) |
@@ -974,6 +975,7 @@ date_updated: 2026-11-14
 | [[wiki/concepts/botoes-em-interfaces]] | Botões guiam a jornada; primário preenchido x secundário vazio; mesma altura, padding e radius, largura pelo texto; label curto; cor de contraste; hover |
 | [[wiki/concepts/formas-de-botoes]] | Seis formas de botão e o que comunicam: reto, arredondado, circular (pill), chanfrado, diagonal, hexagonal; botão como contraste à predominância; `clip-path` corta foco e sombra |
 | [[wiki/concepts/sombra-em-interfaces]] | Drop shadow suave, embaixo e não em volta: offset para baixo, blur igual ou o dobro, cor da marca a ≤40%, spread negativo até 80% do elemento; camadas (Smooth Shadow); vira o hover; some no dark mode |
+| [[wiki/concepts/page-map]] | Flow das dobras (seções) de uma página: ordem que monta a jornada do usuário e posiciona os gatilhos; nasce antes do wireframe; não é sitemap (árvore de páginas) |
 | [[wiki/concepts/area-clicavel]] | Área que responde ao toque; dedo é menos preciso que mouse; 44 px na aula, 44 pt Apple, 48 dp Material, 24 px WCAG 2.2 AA |
 | [[wiki/concepts/grid-de-icones]] | Formas-guia no frame do ícone (área útil 20×20 em 24, quadrado, círculo, X); Material keylines; travado no Figma para consistência |
 | [[wiki/concepts/centralizacao-optica]] | Centralizar pelo olho, não pelas coordenadas: triângulo do play e círculo ímpar parecem tortos |
