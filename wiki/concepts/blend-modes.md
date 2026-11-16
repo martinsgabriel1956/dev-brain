@@ -3,8 +3,8 @@ type: concept
 title: "Blend modes (modos de mesclagem)"
 aliases: ["blend mode", "modos de mesclagem", "modo de mesclagem", "mix-blend-mode", "background-blend-mode", "color dodge", "lighten", "screen", "multiply", "overlay", "difference"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 2
+date_updated: 2026-11-15
+source_count: 3
 tags: [ui-design, imagens, figma, composicao-de-imagens, blend-modes, css, gradiente]
 skill: ux-ui-mentor
 status: stub
@@ -51,7 +51,12 @@ Cor neutra é a que deixa o fundo como está. Por isso o preto "desaparece" nos 
 
 Os wallpapers feitos com blend modes são uma das camadas de ambiência do FrontPUSH; a aula de [[wiki/concepts/elementos-de-composicao]] mostra as outras (layer blur, preenchimento radial, estrelas) ([[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-screens]]).
 
+## Luminosity para ler o brilho das cores
+
+Na aula de variação de cores, uma barra com o ciclo cromático muda de pass-through para luminosity e vira escala de cinza: o brilho de cada matiz fica visível (amarelo 89%, azul 11%) ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]). Ver [[wiki/concepts/padrao-de-luminosidade]]. `[external]` No modo luminosity, a camada cede só a luminosidade e mantém matiz e saturação do que está embaixo; sobre fundo neutro, sobra o cinza.
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-bom-senso-contraste-padronizacao-blend-modes]] — máscara com gradiente radial, color dodge e lighten para tirar o fundo preto, wallpapers do FrontPUSH
 - [[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-screens]] — as outras camadas da ambiência do FrontPUSH
+- [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — modo luminosity revela o brilho de cada matiz

@@ -3,8 +3,8 @@ type: entity
 title: "Unsplash"
 aliases: ["unsplash.com", "Unsplash+"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 4
+date_updated: 2026-11-15
+source_count: 5
 tags: [banco-de-imagens, fotografia, licenca, figma]
 skill: ux-ui-mentor
 status: stub
@@ -20,9 +20,14 @@ status: stub
 
 Na parte 3, as fotos de fundo preto do Unsplash viram os wallpapers do [[wiki/entities/frontpush]]: modo lighten e temperatura mais fria ([[wiki/sources/imagens-e-ilustracoes-bom-senso-contraste-padronizacao-blend-modes]]). Ver [[wiki/concepts/blend-modes]].
 
+## Medir variações naturais
+
+Na aula de variação de cores, Násser abre fotos do Unsplash e mede com o ColorZilla os tons de uma mesma cor: os claros têm menos saturação e mais brilho ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]). Ver [[wiki/concepts/variacao-de-cores]].
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-formatos-bancos-otimizacao]]
 - [[wiki/sources/imagens-e-ilustracoes-bom-senso-contraste-padronizacao-blend-modes]] — fotos de fundo preto usadas com blend modes nos wallpapers do FrontPUSH
 - [[wiki/sources/imagens-e-ilustracoes-introducao-svg-bancos-texto-branco-resolucoes-formatos]] — edição "W7": o mais usado "de disparado", 0800, uso pessoal e comercial; plugin no Figma
 - [[wiki/sources/imagens-e-ilustracoes-pratica-figma-importar-editor-plugins-exportacao]] — exemplo de instalação de plugin pela Community
+- [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]] — fotos usadas para medir tons claros e escuros com o ColorZilla
