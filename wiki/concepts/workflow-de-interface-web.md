@@ -22,7 +22,7 @@ Sequência de etapas que [[wiki/entities/nasser|Násser]] usa para levar uma int
 | 4. Codificação front-end | HTML, CSS, JS; responsividade; testes | código |
 | 5. Motion design | HTML, CSS, JS; responsividade; testes | código |
 
-O módulo de interfaces web cobre as três primeiras. A pesquisa é "o embrião de uma interface web": saber "o que tem que ter de informação" antes de projetar. Os wireframes são "protótipos de baixa fidelidade" que permitem "projetar de maneira simples". O protótipo final aplica o style guide e as cores, "maior fidelidade na prototipagem". Dentro dos wireframes, o [[wiki/concepts/pagemap]] vem primeiro.
+O módulo de interfaces web cobre as três primeiras. A pesquisa é "o embrião de uma interface web": saber "o que tem que ter de informação" antes de projetar. Os wireframes são "protótipos de baixa fidelidade" que permitem "projetar de maneira simples". O protótipo final aplica o style guide e as cores, "maior fidelidade na prototipagem". Dentro dos wireframes, o [[wiki/concepts/page-map]] vem primeiro.
 
 A fidelidade cresce a cada etapa: estrutura primeiro, visual depois.
 
@@ -30,7 +30,7 @@ A fidelidade cresce a cada etapa: estrutura primeiro, visual depois.
 
 ## Relação com outros conceitos
 
-- [[wiki/concepts/wireframe]], [[wiki/concepts/pagemap]], [[wiki/concepts/style-guide]]: as peças das etapas 2 e 3.
+- [[wiki/concepts/wireframe]], [[wiki/concepts/page-map]], [[wiki/concepts/style-guide]]: as peças das etapas 2 e 3.
 - [[wiki/concepts/mood-board]]: forma de juntar as "referências" da pesquisa.
 - [[wiki/concepts/ui-design]]: o processo que produz a UI.
 

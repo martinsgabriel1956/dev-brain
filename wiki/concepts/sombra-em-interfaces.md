@@ -4,7 +4,7 @@ title: "Sombra em interfaces"
 aliases: ["sombra", "drop shadow", "box-shadow", "elevação", "sombra suave", "smooth shadow", "sombra em camadas", "layered shadow"]
 date_created: 2026-11-14
 date_updated: 2026-11-15
-source_count: 3
+source_count: 5
 tags: [ui, ui-design, sombra, drop-shadow, elevacao, botoes, hover, design-system, css]
 skill: ux-ui-mentor
 status: stub

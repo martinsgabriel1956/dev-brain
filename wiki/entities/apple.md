@@ -4,7 +4,7 @@ title: "Apple"
 aliases: ["Apple Inc.", "apple.com"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 5
+source_count: 8
 tags: [empresa, big-tech, ui-design, referencia]
 skill: ux-ui-mentor
 status: stub

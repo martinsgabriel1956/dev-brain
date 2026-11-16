@@ -4,7 +4,7 @@ title: "Dropbox"
 aliases: []
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 2
+source_count: 3
 tags: [empresa, armazenamento-em-nuvem, saas, ui-design, formas]
 skill: ux-ui-mentor
 status: stub

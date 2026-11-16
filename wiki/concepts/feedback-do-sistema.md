@@ -4,7 +4,7 @@ title: "Feedback do Sistema"
 aliases: ["feedback em UI", "visibilidade do status do sistema", "system feedback", "feedback de interface"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 6
+source_count: 9
 tags: [ui, ux, ui-design, feedback, estados, heuristicas-nielsen, acessibilidade]
 skill: ux-ui-mentor
 status: stub

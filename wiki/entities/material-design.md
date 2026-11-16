@@ -4,7 +4,7 @@ title: "Material Design"
 aliases: ["Material", "Material Design 2", "Material Design 3", "M2", "M3"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 6
+source_count: 7
 tags: [design-system, google, diretrizes, imagens, acessibilidade]
 skill: ux-ui-mentor
 status: stub

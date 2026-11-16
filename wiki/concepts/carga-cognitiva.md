@@ -4,7 +4,7 @@ title: "Carga Cognitiva"
 aliases: []
 date_created: 2026-09-22
 date_updated: 2026-11-15
-source_count: 5
+source_count: 6
 tags: [carga-cognitiva]
 skill: tech-mentor-leadership
 status: stub

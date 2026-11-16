@@ -4,7 +4,7 @@ title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
 date_updated: 2026-11-15
-source_count: 35
+source_count: 42
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -128,7 +128,7 @@ Seletor em [[wiki/concepts/modelo-de-cor-hsb|modo HSB]], conta-gotas sobre um pr
 
 ## Modo luminosity
 
-Na aula de variação de cores, o tipo de layer luminosity transforma o espectro em escala de cinza e mostra o [[wiki/concepts/padrao-de-luminosidade]]; a prática de variação no Figma fica para a aula seguinte ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]).
+Na aula de variação de cores, o tipo de layer luminosity transforma o espectro em escala de cinza e mostra o [[wiki/concepts/luminosidade-das-cores]]; a prática de variação no Figma fica para a aula seguinte ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]).
 
 ## Escala de tamanhos de fonte
 

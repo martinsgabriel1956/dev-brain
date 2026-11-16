@@ -19,7 +19,7 @@ date_ingested: 2026-11-15
 
 ## TL;DR
 
-Primeira aula prática do bloco de cores do curso de UI de [[wiki/entities/nasser|Násser]] (cerca de 15 min), no [[wiki/entities/figma]]. Ele parte de esquemas prontos (complementar, neutra + uma cor, monocromática, análoga) e escolhe um par complementar: roxo como **cor de base**, amarelo como **cor de destaque**, mais um claro (F1/F2) e um escuro (30 30 30, 20 20 20) neutros ([[wiki/concepts/paleta-de-cores]]). As cores vêm de [[wiki/concepts/repertorio|referências]]: print de um shot do [[wiki/entities/dribbble]], conta-gotas no Figma e busca por hexadecimal no próprio Dribbble. No seletor, use o [[wiki/concepts/modelo-de-cor-hsb|modo HSB]] e fique no "primeiro quadrante", sem saturação nem brilho no máximo. A [[wiki/concepts/variacao-tonal-de-cor|variação]] mais escura baixa o brilho 10–15 pontos e sobe a saturação; a mais clara faz o contrário. O resultado manual fica perto do que uma ferramenta gera. Por fim, os [[wiki/concepts/neutros-tingidos|neutros recebem um pouco da matiz da base]] (overlay ou HSB com matiz 247 e saturação 4), com passos menores, e o preto vira uma escada de cinza. Tudo isso alimenta o style guide.
+Primeira aula prática do bloco de cores do curso de UI de [[wiki/entities/nasser|Násser]] (cerca de 15 min), no [[wiki/entities/figma]]. Ele parte de esquemas prontos (complementar, neutra + uma cor, monocromática, análoga) e escolhe um par complementar: roxo como **cor de base**, amarelo como **cor de destaque**, mais um claro (F1/F2) e um escuro (30 30 30, 20 20 20) neutros ([[wiki/concepts/paleta-de-cores]]). As cores vêm de [[wiki/concepts/repertorio|referências]]: print de um shot do [[wiki/entities/dribbble]], conta-gotas no Figma e busca por hexadecimal no próprio Dribbble. No seletor, use o [[wiki/concepts/modelo-de-cor-hsb|modo HSB]] e fique no "primeiro quadrante", sem saturação nem brilho no máximo. A [[wiki/concepts/variacao-de-cores|variação]] mais escura baixa o brilho 10–15 pontos e sobe a saturação; a mais clara faz o contrário. O resultado manual fica perto do que uma ferramenta gera. Por fim, os [[wiki/concepts/neutros-tingidos|neutros recebem um pouco da matiz da base]] (overlay ou HSB com matiz 247 e saturação 4), com passos menores, e o preto vira uma escada de cinza. Tudo isso alimenta o style guide.
 
 ## Key Claims
 
@@ -48,7 +48,7 @@ Primeira aula prática do bloco de cores do curso de UI de [[wiki/entities/nasse
 
 ### Variações mais escuras e mais claras
 
-- **Escurecer = brilho para baixo e saturação para cima.** "Pela intuição, diminuo o brilho" de 10 a 15 pontos (78 → 62), mas "isso não é suficiente": aumente também a saturação, "não necessariamente na mesma proporção". Ver [[wiki/concepts/variacao-tonal-de-cor]].
+- **Escurecer = brilho para baixo e saturação para cima.** "Pela intuição, diminuo o brilho" de 10 a 15 pontos (78 → 62), mas "isso não é suficiente": aumente também a saturação, "não necessariamente na mesma proporção". Ver [[wiki/concepts/variacao-de-cores]].
 - **Por quê:** a variação "fica mais natural". Só baixar o brilho (78 → 61) parece "balela" de tão próximo; com mais distância (brilho 50, saturação 67–68), a diferença fica "mais acentuada".
 - **Clarear = brilho para cima e saturação para baixo:** brilho 90 e saturação cerca de 10 pontos menor; depois brilho 96–97 e saturação 30.
 - **"Muito, muito, muito de um teste":** vá mexendo "até que a paleta de cores te agrade ou se encaixa ao branding, ao cliente"; "meio que não existe regra".
@@ -82,7 +82,7 @@ Primeira aula prática do bloco de cores do curso de UI de [[wiki/entities/nasse
 
 - [[wiki/concepts/paleta-de-cores]] (novo)
 - [[wiki/concepts/modelo-de-cor-hsb]] (novo)
-- [[wiki/concepts/variacao-tonal-de-cor]] (novo)
+- [[wiki/concepts/variacao-de-cores]] (novo)
 - [[wiki/concepts/neutros-tingidos]] (novo)
 - [[wiki/concepts/repertorio]]
 - [[wiki/concepts/contraste]]

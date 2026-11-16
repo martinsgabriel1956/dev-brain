@@ -4,7 +4,7 @@ title: "Espaçamento entre Parágrafos"
 aliases: ["paragraph spacing", "espaço entre parágrafos", "quebra de parágrafo", "margin entre parágrafos", "enter clássico"]
 date_created: 2026-11-15
 date_updated: 2026-11-15
-source_count: 1
+source_count: 2
 tags: [ui, ui-design, tipografia, espacamento, espacamento-entre-paragrafos, line-height, legibilidade, consistencia]
 skill: ux-ui-mentor
 status: stub

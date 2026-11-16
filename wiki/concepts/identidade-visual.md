@@ -4,7 +4,7 @@ title: "Identidade visual"
 aliases: ["identidade de marca", "branding", "visual identity", "cor de marca", "cor de branding"]
 date_created: 2026-11-14
 date_updated: 2026-11-14
-source_count: 1
+source_count: 2
 tags: [ui, ui-design, identidade-visual, branding, cor, paleta-de-cores]
 skill: ux-ui-mentor
 status: stub

@@ -4,7 +4,7 @@ title: "Estilos no Figma (color, text e effect styles)"
 aliases: ["styles do Figma", "color styles", "text styles", "effect styles", "estilos de cor", "estilos de texto", "estilos de efeito", "create style", "edit style", "detach style"]
 date_created: 2026-11-15
 date_updated: 2026-11-15
-source_count: 1
+source_count: 2
 tags: [figma, style-guide, design-tokens, design-system, cor, tipografia, sombra, consistencia]
 skill: ux-ui-mentor
 status: stub

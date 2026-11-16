@@ -4,7 +4,7 @@ title: "Simplicidade Visual"
 aliases: ["simplicidade", "menos é mais", "less is more", "design minimalista", "ponto focal"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 10
+source_count: 12
 tags: [ui, ui-design, simplicidade, minimalismo, carga-cognitiva, espaco-em-branco]
 skill: ux-ui-mentor
 status: stub

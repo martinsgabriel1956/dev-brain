@@ -4,7 +4,7 @@ title: "Násser"
 aliases: ["Nasser"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 47
+source_count: 62
 tags: [pessoa, instrutor, ui-design, design, curso]
 skill: ux-ui-mentor
 status: stub
@@ -36,7 +36,7 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - Botões guiam o usuário na jornada; o mesmo botão em toda a interface, primário e secundário, área clicável de 44 px ([[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]).
 - A forma do botão segue o que se quer comunicar; arredondado é o coringa, circular aproxima, reto dá seriedade ([[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]]).
 - Sombra de botão suave, embaixo e não em volta: blur igual ou o dobro do offset, cor da marca a no máximo 40%, spread negativo até cobrir 80% do elemento ([[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]).
-- Projetar de verdade segue um workflow: pesquisa (o "embrião"), wireframes de baixa fidelidade a partir de um [[wiki/concepts/pagemap]] de dobras, protótipo final com [[wiki/concepts/style-guide]] para manter a consistência ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]).
+- Projetar de verdade segue um workflow: pesquisa (o "embrião"), wireframes de baixa fidelidade a partir de um [[wiki/concepts/page-map]] de dobras, protótipo final com [[wiki/concepts/style-guide]] para manter a consistência ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]).
 - O style guide é o mapa que traduz o design para o CSS: documentar sempre gradiente, camadas de sombra, cor e radius por tamanho; descartar o position do Figma; três estados por módulo ([[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]]).
 - Nós não somos o usuário: contraste no mínimo AA, textos invisíveis em imagens, KISS e patterns consagrados como acessibilidade ([[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]]).
 - Wireframe é design barato e rápido: preto e branco, estrutura antes do visual, corrigir na prototipagem e não no software; page map das dobras antes; começa em papel e caneta ([[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]]).

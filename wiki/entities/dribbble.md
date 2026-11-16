@@ -4,7 +4,7 @@ title: "Dribbble"
 aliases: ["dribble", "dribbble.com"]
 date_created: 2026-04-22
 date_updated: 2026-11-15
-source_count: 2
+source_count: 7
 tags: [dribbble, design, referências, inspiração]
 skill: tech-mentor-frontend
 status: stub

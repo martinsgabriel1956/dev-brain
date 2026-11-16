@@ -4,7 +4,7 @@ title: "KISS — Keep It Simple"
 aliases: ["kiss", "keep it simple", "pensar simples", "simplicidade intencional"]
 date_created: 2026-04-29
 date_updated: 2026-11-15
-source_count: 6
+source_count: 7
 tags: [kiss, over-engineering, principios, qualidade, design-patterns, testes]
 skill: tech-mentor-backend
 status: stable

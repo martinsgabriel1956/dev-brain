@@ -14016,7 +14016,7 @@ O usuário confirmou que [[wiki/sources/formas-de-botoes-reto-arredondado-circul
 
 **Skill:** ux-ui-mentor (SKILL.md; `references/prototipagem-validacao.md` (espectro de fidelidade, armadilha de pular o teste da estrutura), `references/fluxos-ia.md` (sitemaps), `references/grid-layout.md` (colunas por breakpoint), `references/design-system.md` (camadas do design system)). Mesma escolha das aulas anteriores do curso.
 
-**Criado:** [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]; conceitos [[wiki/concepts/workflow-de-interface-web]], [[wiki/concepts/pagemap]], [[wiki/concepts/style-guide]].
+**Criado:** [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]; conceitos [[wiki/concepts/workflow-de-interface-web]], [[wiki/concepts/page-map]], [[wiki/concepts/style-guide]].
 
 **Tocadas (12 existentes):** wireframe, grid-de-colunas, design-responsivo, consistencia-visual, tipografia, ui-design, repertorio, porque-das-decisoes-de-design (concepts, todas com seção nova); nubank, figma, frontpush (seções novas), nasser (ideia recorrente + Key Sources) (entities). Também index.md e log.md.
 
@@ -14284,7 +14284,7 @@ O usuário confirmou que [[wiki/sources/harmonia-das-cores-monocromatica-complem
 
 **Skill:** ux-ui-mentor (SKILL.md; `references/cor.md`: HSL/OKLCH, três camadas de tokens, contraste 4.5:1). Mesma escolha das aulas anteriores do curso.
 
-**Criado:** [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]; conceitos [[wiki/concepts/paleta-de-cores]], [[wiki/concepts/modelo-de-cor-hsb]], [[wiki/concepts/variacao-tonal-de-cor]] e [[wiki/concepts/neutros-tingidos]].
+**Criado:** [[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]; conceitos [[wiki/concepts/paleta-de-cores]], [[wiki/concepts/modelo-de-cor-hsb]], [[wiki/concepts/variacao-de-cores]] e [[wiki/concepts/neutros-tingidos]].
 
 **Tocadas (11 existentes):** contraste, harmonia-visual, blend-modes, consistencia-visual, repertorio, hierarquia-visual (concepts, todas com seção nova); dribbble, figma, nubank, frontpush (seções novas), nasser (ideia recorrente + Key Sources) (entities). Também index.md e log.md.
 
@@ -14296,7 +14296,7 @@ O usuário confirmou que [[wiki/sources/harmonia-das-cores-monocromatica-complem
 
 **Skill:** ux-ui-mentor (SKILL.md; `references/cor.md` (HSL x OKLCH, primitivos x semânticos, contraste), `references/design-system.md` (sem preto puro no dark mode)). Mesma escolha das aulas anteriores do módulo; o domínio do CLAUDE.md seria tech-mentor-frontend, mas o módulo inteiro foi calibrado com ux-ui-mentor.
 
-**Criado:** [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]; conceitos [[wiki/concepts/variacao-de-cores]], [[wiki/concepts/padrao-de-luminosidade]] e [[wiki/concepts/regra-60-30-10]].
+**Criado:** [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]; conceitos [[wiki/concepts/variacao-de-cores]], [[wiki/concepts/luminosidade-das-cores]] e [[wiki/concepts/regra-60-30-10]].
 
 **Tocadas (13 existentes):** contraste, harmonia-visual, feedback-do-sistema, hierarquia-visual, espaco-em-branco, blend-modes (concepts, todas com seção nova); who-can-use, stripe, dribbble, unsplash, figma, meta (seções novas), nasser (ideia recorrente + Key Sources) (entities). Também index.md e log.md.
 
@@ -14324,7 +14324,7 @@ A entrada de ingest anterior citava `raw/tipografia-e-cores-contraste-hierarquia
 
 **Skill:** ux-ui-mentor (SKILL.md; `references/tipografia.md` (escala modular, entrelinha por contexto, 45–75 caracteres / `65ch`, tracking, pairing, tokens tipográficos)). Mesma skill das aulas anteriores do curso.
 
-**Criado:** [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]; conceitos [[wiki/concepts/escala-tipografica]], [[wiki/concepts/altura-de-linha]], [[wiki/concepts/largura-de-linha]], [[wiki/concepts/kerning-e-tracking]], [[wiki/concepts/classificacao-tipografica]], [[wiki/concepts/webfonts]]; entidade [[wiki/entities/google-fonts]].
+**Criado:** [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]; conceitos [[wiki/concepts/escala-tipografica]], [[wiki/concepts/altura-de-linha]], [[wiki/concepts/largura-do-texto]], [[wiki/concepts/kerning]], [[wiki/concepts/classificacao-tipografica]], [[wiki/concepts/webfonts]]; entidade [[wiki/entities/google-fonts]].
 
 **Tocadas (10 existentes):** tipografia (seção nova, status stub→draft), contraste, hierarquia-visual, elementos-da-interface, consistencia-visual, formas-geometricas-e-organicas, css (concepts, todas com seção nova); google, who-can-use (seções novas), nasser (ideia recorrente + Key Sources) (entities). Também index.md e log.md.
 
@@ -14364,7 +14364,7 @@ O usuário confirmou que [[wiki/sources/altura-de-linha-e-largura-do-texto]] é 
 
 **Skill:** ux-ui-mentor (SKILL.md; `references/tipografia.md` (legibilidade x leiturabilidade, máx. 2 famílias, tokens `display`/`body`/`serif`/`mono`, tabular-nums)). Mesma escolha das aulas anteriores do módulo.
 
-**Criado:** [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]]; conceitos [[wiki/concepts/classificacao-tipografica]] e [[wiki/concepts/legibilidade-tipografica]]; entidades [[wiki/entities/google-fonts]] e [[wiki/entities/adobe-fonts]].
+**Criado:** [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]]; conceitos [[wiki/concepts/classificacao-tipografica]] e [[wiki/concepts/legibilidade-e-leiturabilidade]]; entidades [[wiki/entities/google-fonts]] e [[wiki/entities/adobe-fonts]].
 
 **Tocadas (12 existentes):** tipografia, hierarquia-visual, formas-geometricas-e-organicas, botoes-em-interfaces, porque-das-decisoes-de-design (concepts, todas com seção nova); new-york-times, figma, google (seções novas), nasser, frontpush (Key Sources) (entities); formas-geometricas-organicas-predominancia-harmonia e formas-geometricas-organicas-exemplos-dropbox-madero-coco-bambu-nubank ("Ver também"). Também index.md e log.md.
 
@@ -14405,3 +14405,17 @@ O usuário confirmou que [[wiki/sources/altura-de-linha-e-largura-do-texto]] é 
 **Tocadas (14 existentes):** tipografia, eixo-visual, espaco-em-branco, lei-da-proximidade-gestalt, consistencia-visual, design-responsivo, densidade-de-informacao, css (concepts, seção nova); new-york-times, figma, frontpush (seção nova), nasser (ideia recorrente + Key Sources) (entities); espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding e espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt ("Ver também"). Também index.md e log.md.
 
 **Notas:** (1) **Vão = line-height** fica abaixo da WCAG 1.4.8 (AAA, ≥ 1,5× o espaço entre linhas) `[external]`; o G1 "um pouquinho maior" se aproxima. (2) **"Sem hifenização automática"** vale para o Figma; na web há `hyphens: auto` `[external]`. (3) **`text-align` inicial é `start`**, não `left` `[external]`; a regra da esquerda é cultural (LTR). (4) **"90%"** reaparece com outro sentido (antes: tipografia = 90% da web). (5) **Autoria inferida** (Násser): "meu próprio site", pasta FrontPush, slide "W7"; o nome não é dito. (6) **Aula 3** (altura de linha e largura de texto) está no mesmo diretório e ainda não foi ingerida. Sem página própria: G1. `date_published` vazio.
+
+## [2026-11-15] lint | Consolidação dos ingests feitos em worktrees separados
+
+**Contexto:** 34 ingests do curso de UI Design (FrontPUSH / edição "W7") ficaram em worktrees separados: 9 commitados em branches sem merge e 25 nunca commitados. Os 23 pendentes válidos foram commitados nos próprios branches e os 32 branches foram mesclados na main. Conflitos em index, log e páginas centrais (nasser, figma, contraste, hierarquia-visual, tipografia...) foram resolvidos mantendo as adições dos dois lados; frontmatter somado (source_count) ou unido (tags, aliases).
+
+**Ingests descartados (duplicados, 98,9% das palavras iguais):** "Botões na prática no Figma" reingerido em outro worktree (já estava na main como [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]); "Representação da cor em códigos" ingerido duas vezes — mantida [[wiki/sources/representacao-da-cor-em-codigos-hsb-hexadecimal-rgb]].
+
+**Páginas criadas em mais de um branch, fundidas numa só (cada afirmação com sua fonte, divergências registradas):** [[wiki/concepts/style-guide]] (5 versões), [[wiki/concepts/page-map]] (5), [[wiki/concepts/paleta-de-cores]] (4), [[wiki/concepts/regra-60-30-10]] (4), [[wiki/concepts/harmonia-de-cores]] (3), [[wiki/concepts/classificacao-tipografica]] (3), [[wiki/concepts/breakpoint]] (3), [[wiki/entities/google-fonts]] (3), [[wiki/concepts/altura-de-linha]], [[wiki/concepts/escala-tipografica]], [[wiki/concepts/modelos-de-cor]], [[wiki/entities/color-hunt]], [[wiki/entities/ui-movement]] (2 cada).
+
+**Mesmo conceito com nomes diferentes, absorvido e removido (links redirecionados, nome antigo vira alias):** pagemap → [[wiki/concepts/page-map]]; largura-de-linha → [[wiki/concepts/largura-do-texto]]; legibilidade-tipografica → [[wiki/concepts/legibilidade-e-leiturabilidade]]; kerning-e-tracking → [[wiki/concepts/kerning]] (e [[wiki/concepts/tracking]]); variacao-tonal-de-cor → [[wiki/concepts/variacao-de-cores]]; padrao-de-luminosidade → [[wiki/concepts/luminosidade-das-cores]].
+
+**Também:** linhas duplicadas do index.md fundidas numa por página; source_count recalculado (fontes distintas citadas) nas 50 páginas tocadas.
+
+**Contradições registradas nas páginas fundidas:** valores de breakpoint (aula <576/720/960/1200 x Bootstrap 5 576/768/992/1200/1400); line-height do corpo (aula 140–160% x skill 1.5–1.6); medida de linha (aula 60–90 caracteres x skill 45–75 x WCAG máx. 80); corpo mínimo (aula 14 px x skill 16 px); complementares em RYB x RGB/HSL; número de classificações tipográficas (6 x 7); page map "não é" x "equivale a" sitemap; aula que chama tracking de "kerning".

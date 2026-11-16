@@ -4,7 +4,7 @@ title: "Repertório Técnico"
 aliases: ["repertorio", "repertório de programador", "padrões acumulados"]
 date_created: 2026-06-01
 date_updated: 2026-11-15
-source_count: 6
+source_count: 7
 tags: [aprendizado, fundamentos, programacao, carreira, pattern-recognition]
 skill: tech-mentor-leadership
 status: draft
@@ -53,7 +53,7 @@ Repetir a mesma receita 20 vezes não constrói repertório — constrói profic
 
 ## Repertório de wireframes
 
-No design de interfaces, saber "qual wireframe colocar, em qual flow de pagemap você vai encaixar" "vai muito do estudo e do grande repertório que você tem"; por isso uma biblioteca de wireframes é atualizada para que o repertório "na cabeça de vocês" fique "o maior possível" ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]). Ver [[wiki/concepts/pagemap]].
+No design de interfaces, saber "qual wireframe colocar, em qual flow de pagemap você vai encaixar" "vai muito do estudo e do grande repertório que você tem"; por isso uma biblioteca de wireframes é atualizada para que o repertório "na cabeça de vocês" fique "o maior possível" ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]). Ver [[wiki/concepts/page-map]].
 
 ## Repertório de cores
 

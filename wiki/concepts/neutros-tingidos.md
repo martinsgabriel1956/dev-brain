@@ -19,7 +19,7 @@ Branco, cinzas e preto que carregam um pouco da matiz da cor de base, em vez de 
 1. **Overlay:** copiar a cor de base, pôr em modo overlay sobre o neutro e trazer para a frente ([[wiki/concepts/blend-modes]]). No branco, fica "bem clarinho"; no preto, a saturação sobe demais e ele baixa a opacidade (50% → saturação 22; 10% → saturação 9).
 2. **HSB direto:** pôr o neutro na matiz da base (247/245 para o roxo) e dar "um pouquinho de saturação" (cerca de 4). Ver [[wiki/concepts/modelo-de-cor-hsb]].
 
-Depois, a mesma [[wiki/concepts/variacao-tonal-de-cor]], com passos menores: brilho de 3 em 3 e saturação de 1 em 1.
+Depois, a mesma [[wiki/concepts/variacao-de-cores]], com passos menores: brilho de 3 em 3 e saturação de 1 em 1.
 
 ## Escada de cinza
 

@@ -4,7 +4,7 @@ title: "Objetivo da Interface"
 aliases: ["qual o objetivo da UI", "o que faz uma boa UI", "boa UI depende do objetivo"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 6
+source_count: 11
 tags: [ui, ui-design, ux, design, conversao, cta]
 skill: ux-ui-mentor
 status: stub

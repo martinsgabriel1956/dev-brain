@@ -19,7 +19,7 @@ date_ingested: 2026-11-15
 
 ## TL;DR
 
-Última aula teórica do bloco de cores (cerca de 19 min), antes da prática no [[wiki/entities/figma]]. A pergunta: como conseguir **tons mais claros e mais escuros** da paleta sem perder a harmonia. Para que serve: **mudança de estado** (hover mais escuro ou mais claro), hierarquia, paletas monocromáticas com contraste, e fundos, ilustrações e neutros "com um pingo" da cor de base, como o preto azulado do Facebook ([[wiki/entities/meta]]). A regra, tirada da natureza e conferida com o ColorZilla em fotos do [[wiki/entities/unsplash]]: em HSB, **tom mais claro = mais brilho e menos saturação; tom mais escuro = menos brilho e mais saturação**. Mexer só no brilho funciona, mas fica pior. O segundo eixo é o **[[wiki/concepts/padrao-de-luminosidade|padrão de luminosidade]]**: cada matiz tem um brilho próprio (amarelo 89%, ciano 70%, verde 60%, rosa 41%, vermelho cerca de 30%, azul 11% no slide). Isso explica por que branco sobre amarelo não se lê, por que o azul é o queridinho dos fundos, e como girar o Hue quando o brilho já está no máximo (ele mesmo "não indica" esse recurso). Fecha com a [[wiki/concepts/regra-60-30-10]], o conselho de evitar branco e preto puros e sombras pretas, uma ferramenta geradora de variações (nome não dito) e o [[wiki/entities/who-can-use]]: verde claro com texto branco reprova, com preto tira AAA (10.50:1). "Não basta que ela seja bonita, ela precisa ser acessível."
+Última aula teórica do bloco de cores (cerca de 19 min), antes da prática no [[wiki/entities/figma]]. A pergunta: como conseguir **tons mais claros e mais escuros** da paleta sem perder a harmonia. Para que serve: **mudança de estado** (hover mais escuro ou mais claro), hierarquia, paletas monocromáticas com contraste, e fundos, ilustrações e neutros "com um pingo" da cor de base, como o preto azulado do Facebook ([[wiki/entities/meta]]). A regra, tirada da natureza e conferida com o ColorZilla em fotos do [[wiki/entities/unsplash]]: em HSB, **tom mais claro = mais brilho e menos saturação; tom mais escuro = menos brilho e mais saturação**. Mexer só no brilho funciona, mas fica pior. O segundo eixo é o **[[wiki/concepts/luminosidade-das-cores|padrão de luminosidade]]**: cada matiz tem um brilho próprio (amarelo 89%, ciano 70%, verde 60%, rosa 41%, vermelho cerca de 30%, azul 11% no slide). Isso explica por que branco sobre amarelo não se lê, por que o azul é o queridinho dos fundos, e como girar o Hue quando o brilho já está no máximo (ele mesmo "não indica" esse recurso). Fecha com a [[wiki/concepts/regra-60-30-10]], o conselho de evitar branco e preto puros e sombras pretas, uma ferramenta geradora de variações (nome não dito) e o [[wiki/entities/who-can-use]]: verde claro com texto branco reprova, com preto tira AAA (10.50:1). "Não basta que ela seja bonita, ela precisa ser acessível."
 
 ## Key Claims
 
@@ -45,7 +45,7 @@ date_ingested: 2026-11-15
 
 ### Padrão de luminosidade
 
-- **Demonstração:** uma barra com gradiente linear passando por vermelho, laranja, amarelo, verde, ciano, azul, roxo, rosa e de volta ao vermelho ("um ciclo cromático só que disposto em barra"). No tipo de layer, de pass-through para **luminosity**, a barra vira escala de cinza. Ver [[wiki/concepts/blend-modes]] e [[wiki/concepts/padrao-de-luminosidade]].
+- **Demonstração:** uma barra com gradiente linear passando por vermelho, laranja, amarelo, verde, ciano, azul, roxo, rosa e de volta ao vermelho ("um ciclo cromático só que disposto em barra"). No tipo de layer, de pass-through para **luminosity**, a barra vira escala de cinza. Ver [[wiki/concepts/blend-modes]] e [[wiki/concepts/luminosidade-das-cores]].
 - **Valores "de maneira aproximada":** vermelho "aproximadamente 30%", amarelo 89% ("a parte mais clara de todo o espectro"), verde 60%, ciano 70%, rosa 41%. O azul (11%) está só no slide.
 - **Amarelo:** explica "porque o contraste fica tão ruim, mas tão ruim do branco com o amarelo"; ele cita "bad UIs" de branco com amarelo.
 - **Na própria marca:** branco sobre laranja ele "consegue até ler dependendo do tamanho da tipografia e do peso"; sobre amarelo não. Por isso o texto ao lado do logo ficou em preto ("ao invés de colocar script FE na frente do logo [...] como eu fiz aqui no script WD"). O ciano tem o mesmo problema.
@@ -77,7 +77,7 @@ date_ingested: 2026-11-15
 ## Concepts
 
 - [[wiki/concepts/variacao-de-cores]] (novo)
-- [[wiki/concepts/padrao-de-luminosidade]] (novo)
+- [[wiki/concepts/luminosidade-das-cores]] (novo)
 - [[wiki/concepts/regra-60-30-10]] (novo)
 - [[wiki/concepts/contraste]]
 - [[wiki/concepts/harmonia-visual]]

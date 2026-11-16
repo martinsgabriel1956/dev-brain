@@ -4,7 +4,7 @@ title: "Tipografia"
 aliases: ["fonte", "módulo de tipografia", "typeface", "serifa", "sem serifa", "sans-serif", "escala tipográfica"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 19
+source_count: 22
 tags: [ui, ui-design, tipografia, fonte, serifa, elementos-da-interface]
 skill: ux-ui-mentor
 status: draft
@@ -86,7 +86,7 @@ Aula 06 do módulo de tipografia do FrontPUSH ([[wiki/sources/tipografia-e-cores
 
 A aula de abertura do módulo ([[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]) define tipografia como "a maneira correta e melhor possível da gente dispor o texto para o usuário"; o slide traz a etimologia (grego *typos*, "forma", e *graphein*, "escrita"). O roteiro:
 
-- **Variáveis tipográficas:** [[wiki/concepts/escala-tipografica|escala]], [[wiki/concepts/altura-de-linha|altura de linha]] e [[wiki/concepts/largura-de-linha|largura de texto]]; alinhamento (esquerda ou centro na web, justificado raro), [[wiki/concepts/kerning-e-tracking|tracking e kerning]]; negrito, itálico, versalete e maiúscula; cores; identidade.
+- **Variáveis tipográficas:** [[wiki/concepts/escala-tipografica|escala]], [[wiki/concepts/altura-de-linha|altura de linha]] e [[wiki/concepts/largura-do-texto|largura de texto]]; alinhamento (esquerda ou centro na web, justificado raro), [[wiki/concepts/kerning|tracking e kerning]]; negrito, itálico, versalete e maiúscula; cores; identidade.
 - **[[wiki/concepts/classificacao-tipografica|Classificações]]:** serifadas, sem serifas, serifas grossas, script, blackletter, display.
 - **Tipografia no CSS:** [[wiki/entities/google-fonts]] e Adobe Fonts, `<link>` em vez de `@import`, `font-family`. Ver [[wiki/concepts/webfonts]].
 
@@ -102,7 +102,7 @@ A aula 03 do módulo de tipografia ([[wiki/sources/altura-de-linha-e-largura-do-
 
 ## Classificações: serifa, sem serifa e o resto
 
-A aula própria do módulo ([[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]]) abre pelas [[wiki/concepts/classificacao-tipografica|classificações]]. Serifada (clássica, elegante, Times New Roman) e sem serifa (neutra, moderna, Helvetica e Arial) dominam a web; a sem serifa é a indicada "principalmente para corpo de texto". Serifadas grossas, script, blackletter e display ficam em títulos, anúncios e botões, por [[wiki/concepts/legibilidade-tipografica|legibilidade]]; a monoespaçada serve a código. Script é classificação própria, o que fecha a ressalva `[external]` da seção "Serifa, sem serifa e letra de mão". Aqui serifa em site de leitura é "incomum" (exceção: [[wiki/entities/new-york-times]]), enquanto a aula de formas chamava serifadas de "fontes de leitura": tensão registrada na fonte.
+A aula própria do módulo ([[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]]) abre pelas [[wiki/concepts/classificacao-tipografica|classificações]]. Serifada (clássica, elegante, Times New Roman) e sem serifa (neutra, moderna, Helvetica e Arial) dominam a web; a sem serifa é a indicada "principalmente para corpo de texto". Serifadas grossas, script, blackletter e display ficam em títulos, anúncios e botões, por [[wiki/concepts/legibilidade-e-leiturabilidade|legibilidade]]; a monoespaçada serve a código. Script é classificação própria, o que fecha a ressalva `[external]` da seção "Serifa, sem serifa e letra de mão". Aqui serifa em site de leitura é "incomum" (exceção: [[wiki/entities/new-york-times]]), enquanto a aula de formas chamava serifadas de "fontes de leitura": tensão registrada na fonte.
 
 ## Variáveis tipográficas (aula 05)
 

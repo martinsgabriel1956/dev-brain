@@ -4,7 +4,7 @@ title: "Espaço em Branco"
 aliases: ["whitespace", "espaço negativo", "negative space", "respiro", "micro espaço", "macro espaço", "micro e macro espaço"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 9
+source_count: 11
 tags: [ui, ui-design, layout, espaco-em-branco, simplicidade, hierarquia-visual, espacamento, grid-de-8-pontos]
 skill: ux-ui-mentor
 status: draft

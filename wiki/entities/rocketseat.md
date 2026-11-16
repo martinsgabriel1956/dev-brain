@@ -4,7 +4,7 @@ title: "Rocketseat"
 aliases: ["Rocket Seat"]
 date_created: 2026-11-13
 date_updated: 2026-11-14
-source_count: 2
+source_count: 3
 tags: [empresa, educacao, programacao, branding]
 skill: ux-ui-mentor
 status: stub

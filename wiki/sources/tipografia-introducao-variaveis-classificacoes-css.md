@@ -19,7 +19,7 @@ date_ingested: 2026-11-15
 
 ## TL;DR
 
-Aula de abertura do módulo de [[wiki/concepts/tipografia]] da edição "W7" do curso de UI de [[wiki/entities/nasser|Násser]] (cerca de 11 min). É um panorama, não um aprofundamento: "nas próximas aulas a gente vai trabalhar cada uma dessas variáveis". Definição didática: tipografia é "a maneira correta e melhor possível da gente dispor o texto para o usuário". A justificativa é que "a maioria da web é texto" (Notion, Globo, Google, Wikipedia). Depois ele percorre o roteiro do módulo: **variáveis tipográficas** ([[wiki/concepts/escala-tipografica|escala]], [[wiki/concepts/altura-de-linha|altura de linha]], [[wiki/concepts/largura-de-linha|largura de texto]], alinhamento, [[wiki/concepts/kerning-e-tracking|tracking e kerning]], negrito/itálico/versalete/maiúscula, cores, identidade), **[[wiki/concepts/classificacao-tipografica|classificações]]** (serifada, sem serifa, serifa grossa, script, blackletter, display) e **tipografia no CSS** ([[wiki/entities/google-fonts]], Adobe Fonts, `<link>` x `@import`, `font-family`; ver [[wiki/concepts/webfonts]]). A ferramenta de inspeção é a extensão WhatFont no Chrome, usada sobre uma notícia da morte de Maradona.
+Aula de abertura do módulo de [[wiki/concepts/tipografia]] da edição "W7" do curso de UI de [[wiki/entities/nasser|Násser]] (cerca de 11 min). É um panorama, não um aprofundamento: "nas próximas aulas a gente vai trabalhar cada uma dessas variáveis". Definição didática: tipografia é "a maneira correta e melhor possível da gente dispor o texto para o usuário". A justificativa é que "a maioria da web é texto" (Notion, Globo, Google, Wikipedia). Depois ele percorre o roteiro do módulo: **variáveis tipográficas** ([[wiki/concepts/escala-tipografica|escala]], [[wiki/concepts/altura-de-linha|altura de linha]], [[wiki/concepts/largura-do-texto|largura de texto]], alinhamento, [[wiki/concepts/kerning|tracking e kerning]], negrito/itálico/versalete/maiúscula, cores, identidade), **[[wiki/concepts/classificacao-tipografica|classificações]]** (serifada, sem serifa, serifa grossa, script, blackletter, display) e **tipografia no CSS** ([[wiki/entities/google-fonts]], Adobe Fonts, `<link>` x `@import`, `font-family`; ver [[wiki/concepts/webfonts]]). A ferramenta de inspeção é a extensão WhatFont no Chrome, usada sobre uma notícia da morte de Maradona.
 
 ## Key Claims
 
@@ -48,13 +48,13 @@ Aula de abertura do módulo de [[wiki/concepts/tipografia]] da edição "W7" do 
 
 ### Largura de texto
 
-- **Definição:** "a quantidade de palavras que tem uma linha", contando só palavras de duas letras ou mais. No exemplo da Globo dá 9. Ver [[wiki/concepts/largura-de-linha]].
+- **Definição:** "a quantidade de palavras que tem uma linha", contando só palavras de duas letras ou mais. No exemplo da Globo dá 9. Ver [[wiki/concepts/largura-do-texto]].
 - **Wikipedia como contraexemplo:** "deixa muito extenso", "muitas palavras em uma linha", "mais cansativo para ler". A Globo "se preocupa com isso": poderia esticar o texto, mas "com estudos, percebe-se que deixar assim mais curtinho [...] fica mais confortável de se ler".
 
 ### Alinhamento, tracking e kerning
 
 - **Alinhamento:** na web o texto é quase sempre alinhado à esquerda ou centralizado; justificado e à direita são raros, "e isso tem um porquê" (adiado).
-- **Kerning:** "literalmente o espaçamento entre as letras". Demonstra na ferramenta de texto e cita o logo da Tesla, "bem espaçada": é um recurso "para criar branding, para criar coisa de logo", que "traz uma ideia também por trás". Ver [[wiki/concepts/kerning-e-tracking]] (a definição dita é a de tracking; ver Tensões).
+- **Kerning:** "literalmente o espaçamento entre as letras". Demonstra na ferramenta de texto e cita o logo da Tesla, "bem espaçada": é um recurso "para criar branding, para criar coisa de logo", que "traz uma ideia também por trás". Ver [[wiki/concepts/kerning]] (a definição dita é a de tracking; ver Tensões).
 
 ### Ênfase, cor e identidade
 
@@ -92,8 +92,8 @@ Duas telas do slide da aula, fora da transcrição:
 - [[wiki/concepts/tipografia]]
 - [[wiki/concepts/escala-tipografica]] (novo)
 - [[wiki/concepts/altura-de-linha]] (novo)
-- [[wiki/concepts/largura-de-linha]] (novo)
-- [[wiki/concepts/kerning-e-tracking]] (novo)
+- [[wiki/concepts/largura-do-texto]] (novo)
+- [[wiki/concepts/kerning]] (novo)
 - [[wiki/concepts/classificacao-tipografica]] (novo)
 - [[wiki/concepts/webfonts]] (novo)
 - [[wiki/concepts/hierarquia-visual]]

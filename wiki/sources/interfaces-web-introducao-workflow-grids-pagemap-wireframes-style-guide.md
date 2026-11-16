@@ -19,7 +19,7 @@ date_ingested: 2026-11-15
 
 ## TL;DR
 
-Abertura (cerca de 6 min) do módulo de interfaces web, em que "nós vamos projetar de verdade": pegar os módulos anteriores e "definitivamente aplicar" em pequenas páginas, landing pages e portfólios. O módulo cobre os **três primeiros passos** do [[wiki/concepts/workflow-de-interface-web|workflow]] do autor: **pesquisa** (briefing, documentação, referências, "o embrião de uma interface web"), **[[wiki/concepts/wireframe|wireframes]]** ("protótipos de baixa fidelidade") e **protótipo final de UI** ([[wiki/concepts/style-guide|style guide]], cores, layout). Codificação front-end e motion design ficam fora. Os tópicos do slide: introdução, workflow, usabilidade, atributos de um bom design, acessibilidade (os teóricos), depois grids, pagemap, wireframes, style guide e protótipo de alta fidelidade (os práticos). **Grids** são containers e colunas desenhados por dispositivo, para quebrar o conteúdo em blocos e servir o mesmo conteúdo em várias telas ([[wiki/concepts/grid-de-colunas]], [[wiki/concepts/design-responsivo]]). O **[[wiki/concepts/pagemap]]** é o flow de seções, de "dobras", da página, definido antes dos wireframes e sempre com um porquê. O case do curso é um projeto do [[wiki/entities/nubank]] no [[wiki/entities/figma]]. Uma biblioteca de wireframes no Notion vai crescer para ampliar o [[wiki/concepts/repertorio]] dos alunos. O **style guide** é "um guia para poder ter consistência no meu design": branding, cor e o porquê da cor, tipografia no desktop e no mobile, botões, inputs, grids, ícones, cards, mockups.
+Abertura (cerca de 6 min) do módulo de interfaces web, em que "nós vamos projetar de verdade": pegar os módulos anteriores e "definitivamente aplicar" em pequenas páginas, landing pages e portfólios. O módulo cobre os **três primeiros passos** do [[wiki/concepts/workflow-de-interface-web|workflow]] do autor: **pesquisa** (briefing, documentação, referências, "o embrião de uma interface web"), **[[wiki/concepts/wireframe|wireframes]]** ("protótipos de baixa fidelidade") e **protótipo final de UI** ([[wiki/concepts/style-guide|style guide]], cores, layout). Codificação front-end e motion design ficam fora. Os tópicos do slide: introdução, workflow, usabilidade, atributos de um bom design, acessibilidade (os teóricos), depois grids, pagemap, wireframes, style guide e protótipo de alta fidelidade (os práticos). **Grids** são containers e colunas desenhados por dispositivo, para quebrar o conteúdo em blocos e servir o mesmo conteúdo em várias telas ([[wiki/concepts/grid-de-colunas]], [[wiki/concepts/design-responsivo]]). O **[[wiki/concepts/page-map]]** é o flow de seções, de "dobras", da página, definido antes dos wireframes e sempre com um porquê. O case do curso é um projeto do [[wiki/entities/nubank]] no [[wiki/entities/figma]]. Uma biblioteca de wireframes no Notion vai crescer para ampliar o [[wiki/concepts/repertorio]] dos alunos. O **style guide** é "um guia para poder ter consistência no meu design": branding, cor e o porquê da cor, tipografia no desktop e no mobile, botões, inputs, grids, ícones, cards, mockups.
 
 ## Key Claims
 
@@ -48,7 +48,7 @@ Abertura (cerca de 6 min) do módulo de interfaces web, em que "nós vamos proje
 
 ### Pagemap e wireframes
 
-- **Pagemap é o flow de seções:** "eu tenho que definir o flow de seções, de dobras da minha página". Ver [[wiki/concepts/pagemap]].
+- **Pagemap é o flow de seções:** "eu tenho que definir o flow de seções, de dobras da minha página". Ver [[wiki/concepts/page-map]].
 - **Case do curso:** "o projeto da Nubank, que vai ser o case do nosso curso". Os wireframes partiram de "wireframes de baixa fidelidade, onde eu fui definindo primeira dobra, segunda dobra, terceira dobra". Ver [[wiki/entities/nubank]].
 - **Sempre com um porquê:** "estabelecendo o porquê, sempre puxando para essa ideia de ser algo proposital, de literalmente ser algo pensado". Ver [[wiki/concepts/porque-das-decisoes-de-design]].
 - **Ordem:** "a gente estabelece o pagemap. Depois a gente vai para os wireframes".
@@ -72,7 +72,7 @@ Abertura (cerca de 6 min) do módulo de interfaces web, em que "nós vamos proje
 ## Concepts
 
 - [[wiki/concepts/workflow-de-interface-web]] (novo)
-- [[wiki/concepts/pagemap]] (novo)
+- [[wiki/concepts/page-map]] (novo)
 - [[wiki/concepts/style-guide]] (novo)
 - [[wiki/concepts/wireframe]]
 - [[wiki/concepts/grid-de-colunas]]

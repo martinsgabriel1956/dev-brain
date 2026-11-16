@@ -4,7 +4,7 @@ title: "Psicologia das cores"
 aliases: ["psicologia da cor", "color psychology", "significado das cores"]
 date_created: 2026-11-14
 date_updated: 2026-11-14
-source_count: 1
+source_count: 2
 tags: [ui, ui-design, cor, psicologia, cultura, identidade]
 skill: ux-ui-mentor
 status: stub

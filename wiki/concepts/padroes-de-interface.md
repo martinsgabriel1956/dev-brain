@@ -4,7 +4,7 @@ title: "Padrões de Interface (UI Patterns)"
 aliases: ["ui patterns", "padrões de ui", "design patterns de interface", "interaction patterns", "padrões de interação"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 8
+source_count: 14
 tags: [ui, ux, design, padroes-de-interface, usabilidade]
 skill: ux-ui-mentor
 status: draft

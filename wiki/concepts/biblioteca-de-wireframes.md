@@ -4,7 +4,7 @@ title: "Biblioteca de wireframes"
 aliases: ["Frankenstein de wireframes", "biblioteca de referências", "repertório de seções", "modelos pré-prontos"]
 date_created: 2026-11-15
 date_updated: 2026-11-15
-source_count: 1
+source_count: 2
 tags: [ui, ux, ui-design, wireframe, referencias, processo-criativo]
 skill: ux-ui-mentor
 status: stub

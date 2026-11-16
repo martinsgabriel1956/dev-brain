@@ -4,7 +4,7 @@ title: "UI Design"
 aliases: ["user interface design", "design de interface", "UI", "UI designer"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 11
+source_count: 13
 tags: [ui, ui-design, design, frontend, tipografia, cor, hierarquia-visual]
 skill: ux-ui-mentor
 status: draft

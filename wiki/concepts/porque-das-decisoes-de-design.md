@@ -4,7 +4,7 @@ title: "O Porquê das Decisões de Design"
 aliases: ["porquê das decisões", "justificar decisões de design", "design rationale", "argumentos de design"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 10
+source_count: 11
 tags: [ui, ui-design, design, aprendizado, freelance, design-rationale]
 skill: ux-ui-mentor
 status: stub
@@ -58,7 +58,7 @@ Na visão geral dos elementos, o porquê vira critério de boa interface: **prop
 
 ## O porquê de cada dobra
 
-No [[wiki/concepts/pagemap]], cada dobra é definida "estabelecendo o porquê, sempre puxando para essa ideia de ser algo proposital"; no [[wiki/concepts/style-guide]], fica registrado "por que eu escolho essas cores" ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]).
+No [[wiki/concepts/page-map]], cada dobra é definida "estabelecendo o porquê, sempre puxando para essa ideia de ser algo proposital"; no [[wiki/concepts/style-guide]], fica registrado "por que eu escolho essas cores" ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]).
 
 ## Referências de quem tem processo
 

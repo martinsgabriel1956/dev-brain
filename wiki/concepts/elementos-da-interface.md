@@ -4,7 +4,7 @@ title: "Elementos da Interface"
 aliases: ["elementos de interface", "elementos da UI", "UI elements"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 13
+source_count: 16
 tags: [ui, ui-design, design, elementos-da-interface, tipografia, cor, icones, botoes]
 skill: ux-ui-mentor
 status: stub

@@ -4,7 +4,7 @@ title: "The New York Times"
 aliases: ["NYT"]
 date_created: 2026-09-29
 date_updated: 2026-11-15
-source_count: 2
+source_count: 5
 tags: [organizacao, midia, captcha]
 skill: tech-mentor-security
 status: stub

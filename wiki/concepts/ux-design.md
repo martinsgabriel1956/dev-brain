@@ -4,7 +4,7 @@ title: "UX Design"
 aliases: ["user experience", "experiência do usuário", "UX", "UX designer"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 3
+source_count: 7
 tags: [ux, ux-design, design, produto, pesquisa]
 skill: ux-ui-mentor
 status: draft

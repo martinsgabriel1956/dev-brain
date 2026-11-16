@@ -4,7 +4,7 @@ title: "Grid de 8 Pontos"
 aliases: ["8pt grid", "8-point grid", "grid de oito pontos", "escala de espaçamento", "spacing scale"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 4
+source_count: 9
 tags: [ui, ui-design, layout, espacamento, grid, consistencia, design-tokens]
 skill: ux-ui-mentor
 status: stub

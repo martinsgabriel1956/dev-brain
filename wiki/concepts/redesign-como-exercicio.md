@@ -4,7 +4,7 @@ title: "Redesign como Exercício"
 aliases: ["redesign de estudo", "propor melhorias em interfaces", "redesign não solicitado", "unsolicited redesign"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 2
+source_count: 3
 tags: [ui, ui-design, design, aprendizado, portfolio, redesign]
 skill: ux-ui-mentor
 status: stub

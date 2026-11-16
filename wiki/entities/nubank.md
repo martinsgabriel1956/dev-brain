@@ -4,7 +4,7 @@ title: "Nubank"
 aliases: ["Nu", "Nu Holdings", "Nu Bank"]
 date_created: 2026-05-31
 date_updated: 2026-11-15
-source_count: 10
+source_count: 17
 tags: [nubank, fintech, banco-digital, clojure, datomic, event-sourcing, iso-27001, security, cell-based-architecture, observabilidade]
 skill: tech-mentor-backend
 status: stable
@@ -61,7 +61,7 @@ Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-
 
 ## Case do módulo de interfaces web
 
-Na abertura do módulo de interfaces web, um projeto do Nubank é "o case do nosso curso": wireframes de baixa fidelidade por dobra (o [[wiki/concepts/pagemap]]) e um [[wiki/concepts/style-guide]] editável ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]).
+Na abertura do módulo de interfaces web, um projeto do Nubank é "o case do nosso curso": wireframes de baixa fidelidade por dobra (o [[wiki/concepts/page-map]]) e um [[wiki/concepts/style-guide]] editável ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]).
 
 ## Projeto prático do curso de UI
 

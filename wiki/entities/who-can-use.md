@@ -4,7 +4,7 @@ title: "Who Can Use"
 aliases: ["whocanuse", "whocanuse.com", "WhoCanUse"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 2
+source_count: 5
 tags: [ferramenta, acessibilidade, contraste, wcag, cor, tipografia]
 skill: ux-ui-mentor
 status: stub

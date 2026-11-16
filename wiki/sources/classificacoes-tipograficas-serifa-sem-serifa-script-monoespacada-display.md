@@ -19,7 +19,7 @@ date_ingested: 2026-11-15
 
 ## TL;DR
 
-Aula 07 do módulo de UI Design do [[wiki/entities/frontpush|FrontPUSH]] (cerca de 16 min), a primeira dedicada só a [[wiki/concepts/tipografia]]. Apresenta sete [[wiki/concepts/classificacao-tipografica|classificações]] para que a escolha da fonte tenha um porquê. **Serifada** (clássica, elegante; Times New Roman como "vitrine") e **sem serifa** (neutra, moderna, ligada à tecnologia; Helvetica e Arial) dominam a web, e a sem serifa é a indicada "principalmente para corpo de texto". **Serifada grossa**, **cursiva/script**, **blackletter** e **display** têm [[wiki/concepts/legibilidade-tipografica|legibilidade]] pior e ficam em títulos, anúncios e botões, nunca no corpo. A **monoespaçada** (cada caractere ocupa o mesmo espaço) serve a código. Fecha com dois catálogos: [[wiki/entities/google-fonts]] (gratuito, espelhado no [[wiki/entities/figma]]) e [[wiki/entities/adobe-fonts]] (filtro melhor, para combinar fontes na próxima aula).
+Aula 07 do módulo de UI Design do [[wiki/entities/frontpush|FrontPUSH]] (cerca de 16 min), a primeira dedicada só a [[wiki/concepts/tipografia]]. Apresenta sete [[wiki/concepts/classificacao-tipografica|classificações]] para que a escolha da fonte tenha um porquê. **Serifada** (clássica, elegante; Times New Roman como "vitrine") e **sem serifa** (neutra, moderna, ligada à tecnologia; Helvetica e Arial) dominam a web, e a sem serifa é a indicada "principalmente para corpo de texto". **Serifada grossa**, **cursiva/script**, **blackletter** e **display** têm [[wiki/concepts/legibilidade-e-leiturabilidade|legibilidade]] pior e ficam em títulos, anúncios e botões, nunca no corpo. A **monoespaçada** (cada caractere ocupa o mesmo espaço) serve a código. Fecha com dois catálogos: [[wiki/entities/google-fonts]] (gratuito, espelhado no [[wiki/entities/figma]]) e [[wiki/entities/adobe-fonts]] (filtro melhor, para combinar fontes na próxima aula).
 
 ## Key Claims
 
@@ -46,7 +46,7 @@ Aula 07 do módulo de UI Design do [[wiki/entities/frontpush|FrontPUSH]] (cerca 
 
 ### Classificações menos comuns: só em título, anúncio e botão
 
-- **Regra comum:** serifadas grossas, script, blackletter e display "são mais utilizadas em títulos, em anúncios, em botões", para "passar o sentimento, passar a emoção"; "não as coloque em corpo de texto". O motivo é legibilidade: com outras classificações "a sua legibilidade não é tão boa assim". Ver [[wiki/concepts/legibilidade-tipografica]], [[wiki/concepts/hierarquia-visual]] e [[wiki/concepts/botoes-em-interfaces]].
+- **Regra comum:** serifadas grossas, script, blackletter e display "são mais utilizadas em títulos, em anúncios, em botões", para "passar o sentimento, passar a emoção"; "não as coloque em corpo de texto". O motivo é legibilidade: com outras classificações "a sua legibilidade não é tão boa assim". Ver [[wiki/concepts/legibilidade-e-leiturabilidade]], [[wiki/concepts/hierarquia-visual]] e [[wiki/concepts/botoes-em-interfaces]].
 - **Serifadas grossas:** a egípcia é uma delas; "mais impactantes", serifada "mais encorpada", com "peso tipográfico bem maior". No Adobe Fonts aparece como Slab Serif.
 - **Cursivas/scripts:** "dão a impressão de que foram feitas à mão"; no Google Fonts aparecem como handwriting. Usadas em eventos (casamentos, festas) "para poder passar essa ideia de estar mais perto da pessoa".
 - **Erro comum com script:** convites com script no corpo; "eu já vi muita gente confundindo, por exemplo, endereço". O nome dos noivos vai em script; o corpo e o endereço, em sem serifa.
@@ -78,7 +78,7 @@ Aula 07 do módulo de UI Design do [[wiki/entities/frontpush|FrontPUSH]] (cerca 
 ## Concepts
 
 - [[wiki/concepts/classificacao-tipografica]] (novo)
-- [[wiki/concepts/legibilidade-tipografica]] (novo)
+- [[wiki/concepts/legibilidade-e-leiturabilidade]] (novo)
 - [[wiki/concepts/tipografia]]
 - [[wiki/concepts/hierarquia-visual]]
 - [[wiki/concepts/botoes-em-interfaces]]
@@ -93,7 +93,7 @@ Aula 07 do módulo de UI Design do [[wiki/entities/frontpush|FrontPUSH]] (cerca 
 - **Garamond como humanista.** `[external]` No sistema Vox-ATypI, Garamond é garalde; "humanista" (venetian) é a categoria anterior, como a Jenson. A ATypI aposentou o Vox-ATypI em 2021, então a divisão é convenção, não norma (https://en.wikipedia.org/wiki/Vox-ATypI_classification). Confiança média.
 - **ABNT e Times New Roman.** `[external]` A NBR 14724 pede corpo 12 para o texto, mas não fixa família; Times e Arial vêm das normas das instituições. Confiança média: a revisão mais recente da norma não foi conferida.
 - **Helvetica e Arial "padrão do sistema".** `[external]` O Windows traz Arial, não Helvetica; o macOS traz as duas; distribuições Linux costumam trazer substitutas métricas (Liberation Sans) e não a Arial.
-- **Legibilidade x leiturabilidade.** `[skill: ux-ui-mentor]` A aula usa "legibilidade" para os dois sentidos; a skill separa reconhecer o caractere (legibilidade) de ler blocos (leiturabilidade). Uma display pode ser legível em título e ruim como corpo. Ver [[wiki/concepts/legibilidade-tipografica]].
+- **Legibilidade x leiturabilidade.** `[skill: ux-ui-mentor]` A aula usa "legibilidade" para os dois sentidos; a skill separa reconhecer o caractere (legibilidade) de ler blocos (leiturabilidade). Uma display pode ser legível em título e ruim como corpo. Ver [[wiki/concepts/legibilidade-e-leiturabilidade]].
 - **Máximo de famílias.** `[skill: ux-ui-mentor]` A skill recomenda no máximo 2 famílias, com papéis definidos (display/título e corpo); a aula prepara isso com a regra título x corpo, mas não fixa número.
 - **Monoespaçada fora do código.** `[skill: ux-ui-mentor]` Em tabelas e dashboards, números alinhados não pedem fonte mono: `font-variant-numeric: tabular-nums` resolve numa fonte proporcional.
 

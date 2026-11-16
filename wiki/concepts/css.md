@@ -4,7 +4,7 @@ title: "CSS (Cascading Style Sheets)"
 aliases: ['CSS', 'folhas de estilo em cascata']
 date_created: 2026-10-14
 date_updated: 2026-11-15
-source_count: 3
+source_count: 6
 tags: [css, frontend, web, historia]
 skill: tech-mentor-frontend
 status: draft

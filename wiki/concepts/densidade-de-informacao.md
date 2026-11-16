@@ -4,7 +4,7 @@ title: "Densidade de Informação"
 aliases: ["espaço vs. meio", "espaço versus meio", "information density", "densidade", "compacto vs. confortável"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 3
+source_count: 4
 tags: [ui, ui-design, layout, espacamento, densidade-de-informacao, espaco-em-branco, cards, linhas]
 skill: ux-ui-mentor
 status: stub

@@ -4,7 +4,7 @@ title: "Blend modes (modos de mesclagem)"
 aliases: ["blend mode", "modos de mesclagem", "modo de mesclagem", "mix-blend-mode", "background-blend-mode", "color dodge", "lighten", "screen", "multiply", "overlay", "difference"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 3
+source_count: 4
 tags: [ui-design, imagens, figma, composicao-de-imagens, blend-modes, css, gradiente]
 skill: ux-ui-mentor
 status: stub
@@ -57,7 +57,7 @@ Na aula prática de cores, o overlay da cor de base sobre o branco e o preto tin
 
 ## Luminosity para ler o brilho das cores
 
-Na aula de variação de cores, uma barra com o ciclo cromático muda de pass-through para luminosity e vira escala de cinza: o brilho de cada matiz fica visível (amarelo 89%, azul 11%) ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]). Ver [[wiki/concepts/padrao-de-luminosidade]]. `[external]` No modo luminosity, a camada cede só a luminosidade e mantém matiz e saturação do que está embaixo; sobre fundo neutro, sobra o cinza.
+Na aula de variação de cores, uma barra com o ciclo cromático muda de pass-through para luminosity e vira escala de cinza: o brilho de cada matiz fica visível (amarelo 89%, azul 11%) ([[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]]). Ver [[wiki/concepts/luminosidade-das-cores]]. `[external]` No modo luminosity, a camada cede só a luminosidade e mantém matiz e saturação do que está embaixo; sobre fundo neutro, sobra o cinza.
 
 ## Key Sources
 

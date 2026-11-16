@@ -4,7 +4,7 @@ title: "Hierarquia Visual"
 aliases: ["visual hierarchy", "hierarquia de elementos", "padrão Z", "padrão F", "Z-pattern", "F-pattern"]
 date_created: 2026-07-21
 date_updated: 2026-11-15
-source_count: 31
+source_count: 36
 tags: [ui, ux, design, frontend, hierarquia-visual]
 skill: tech-mentor-frontend
 status: draft
@@ -167,7 +167,7 @@ Títulos e corpo não diferem só no tamanho: o título leva line-height menor (
 
 ## Fonte de título x fonte de corpo
 
-Em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]], a classificação tipográfica divide papéis: script, blackletter, display e serifadas grossas vão para títulos, anúncios e botões, onde "passam o sentimento"; o corpo fica em sem serifa. No convite de casamento, o nome dos noivos em script e o endereço em sem serifa. Ver [[wiki/concepts/legibilidade-tipografica]].
+Em [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]], a classificação tipográfica divide papéis: script, blackletter, display e serifadas grossas vão para títulos, anúncios e botões, onde "passam o sentimento"; o corpo fica em sem serifa. No convite de casamento, o nome dos noivos em script e o endereço em sem serifa. Ver [[wiki/concepts/legibilidade-e-leiturabilidade]].
 
 ## Maiúsculas no mesmo tamanho
 

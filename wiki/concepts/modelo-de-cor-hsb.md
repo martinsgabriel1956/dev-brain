@@ -12,12 +12,12 @@ status: stub
 
 # Modelo de cor HSB
 
-Descreve a cor por **matiz** (H, a volta do círculo), **saturação** (S, de cinza a cor pura) e **brilho** (B, de preto a cheio). É o modo que [[wiki/entities/nasser|Násser]] deixa ligado no seletor do [[wiki/entities/figma]] para compor a paleta ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]).
+Descreve a cor por **matiz** (H, a volta do círculo), **saturação** (S, de cinza a cor pura) e **brilho** (B, de preto a cheio). É o modo que [[wiki/entities/nasser|Násser]] deixa ligado no seletor do [[wiki/entities/figma]] para compor a paleta ([[wiki/sources/paleta-de-cores-na-pratica-dribbble-hsb-variacoes-cores-neutras]]). Comparação com RGB, hexadecimal e CMYK em [[wiki/concepts/modelos-de-cor]].
 
 ## Regras de bolso da aula
 
 - **Primeiro quadrante:** divida o quadrado do seletor em quatro e prefira o primeiro. "Não é uma regra, mas são boas práticas."
-- **Nada no máximo:** não "topar" saturação nem brilho na cor de partida; fica difícil gerar as [[wiki/concepts/variacao-tonal-de-cor|variações]].
+- **Nada no máximo:** não "topar" saturação nem brilho na cor de partida; fica difícil gerar as [[wiki/concepts/variacao-de-cores|variações]].
 - **Pastel é leve:** um tom mais para o pastel "transmite isso de ser mais leve, de ser mais suave".
 - **A referência é ponto de partida:** mexa na matiz "até você achar um tom que seja parecido".
 - **Neutros com a matiz da base:** branco na matiz da cor de base, com saturação 2–4 ([[wiki/concepts/neutros-tingidos]]).

@@ -4,7 +4,7 @@ title: "Contexto do Usuário no Design"
 aliases: ["perfil do usuário", "preferências e comportamento do usuário", "cultura no design", "design para idosos", "público-alvo da interface"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 6
+source_count: 7
 tags: [ui, ux, ui-design, usuario, cultura, acessibilidade, idosos, design-inclusivo]
 skill: ux-ui-mentor
 status: stub

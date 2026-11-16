@@ -4,7 +4,7 @@ title: "Design Persuasivo"
 aliases: ["persuasive design", "persuasive design patterns", "padrões persuasivos", "nudge"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 2
+source_count: 4
 tags: [ux, design, design-persuasivo, vieses-cognitivos, gamificacao, etica]
 skill: ux-ui-mentor
 status: stub

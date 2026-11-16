@@ -4,7 +4,7 @@ title: "Interface como Máquina de Estados"
 aliases: ["UI state machine", "estados de componente", "componente como máquina de estados"]
 date_created: 2026-07-21
 date_updated: 2026-11-15
-source_count: 3
+source_count: 4
 tags: [ui, ux, design, frontend, estado, state-machine]
 skill: tech-mentor-frontend
 status: draft

@@ -4,7 +4,7 @@ title: "Lei de Jakob"
 aliases: ["Jakob's Law", "jakobs law", "lei de jakob nielsen"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 4
+source_count: 6
 tags: [ux, ui, design, leis-de-ux, padroes-de-interface, usabilidade]
 skill: ux-ui-mentor
 status: stub

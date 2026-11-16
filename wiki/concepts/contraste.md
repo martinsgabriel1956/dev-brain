@@ -4,7 +4,7 @@ title: "Contraste"
 aliases: ["contraste de cor", "color contrast", "contraste em UI", "isolation effect", "efeito Von Restorff"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 32
+source_count: 34
 tags: [ui, ui-design, cor, acessibilidade, hierarquia-visual, cta]
 skill: ux-ui-mentor
 status: stub
@@ -116,7 +116,7 @@ Na aula prática de cores, o par complementar define os papéis: roxo de base, a
 
 ## Contraste e luminosidade do matiz
 
-Em [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]], o [[wiki/concepts/padrao-de-luminosidade]] explica pares ruins: amarelo (89%) e ciano (70%) já são claros, então branco sobre eles quase não se lê; branco sobre laranja passa "dependendo do tamanho da tipografia e do peso". O azul, "já escuro", dá o maior contraste como fundo. No [[wiki/entities/who-can-use]], o verde claro da marca dele com texto branco reprova; com preto, AAA e 10.50:1. "Não basta que ela seja bonita, ela precisa ser acessível." `[external]` WCAG mede luminância relativa (pesos 0,2126 / 0,7152 / 0,0722), não a luma do slide; a ordem dos matizes é a mesma.
+Em [[wiki/sources/variacao-de-cores-tons-claros-escuros-hsb-padrao-de-luminosidade]], o [[wiki/concepts/luminosidade-das-cores]] explica pares ruins: amarelo (89%) e ciano (70%) já são claros, então branco sobre eles quase não se lê; branco sobre laranja passa "dependendo do tamanho da tipografia e do peso". O azul, "já escuro", dá o maior contraste como fundo. No [[wiki/entities/who-can-use]], o verde claro da marca dele com texto branco reprova; com preto, AAA e 10.50:1. "Não basta que ela seja bonita, ela precisa ser acessível." `[external]` WCAG mede luminância relativa (pesos 0,2126 / 0,7152 / 0,0722), não a luma do slide; a ordem dos matizes é a mesma.
 
 ## Melhorar o contraste sem trocar a paleta
 

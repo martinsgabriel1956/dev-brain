@@ -4,7 +4,7 @@ title: "Mood Board"
 aliases: ["moodboard", "painel de referências", "painel semântico", "referências visuais"]
 date_created: 2026-11-13
 date_updated: 2026-11-15
-source_count: 2
+source_count: 4
 tags: [ui, ui-design, design, pesquisa, referencias, criatividade]
 skill: ux-ui-mentor
 status: stub
