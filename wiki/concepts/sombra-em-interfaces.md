@@ -56,9 +56,14 @@ A sombra do card no hover precisa estar escrita, com o CSS, porque o dev pode n�
 
 Sombras viram effect styles com grupo e nome (`Shadow / Shadow purple 2`), reordenáveis e editáveis em um lugar ([[wiki/concepts/estilos-no-figma]]). Na mesma aula, o Smooth Shadow é ajustado com offset "o mais centralizado possível", ao contrário da regra "deslocada para baixo" da aula de botões; os estilos shadow purple e shadow black seguem a regra antiga ([[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]]).
 
+## Documentar a sombra
+
+Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]]: "para o desenvolvedor é muito complicado dizer quais são as sombras do CSS". O Inspect do [[wiki/entities/figma]] entrega o `box-shadow` pronto, com as quatro camadas de drop shadow, o RGBA e as opacidades; basta copiar para o [[wiki/concepts/style-guide]]. Ver [[wiki/concepts/handoff-design-dev]].
+
 ## Key Sources
 
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]: Smooth Shadow, Pegasus, o "curinga", spread negativo, 80% do elemento
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: sombra de hover da cor do botão; valores do slide
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — sombra de hover documentada; box-shadow do inspect; grupo de estilo de sombra
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]]: sombras como effect styles; Smooth Shadow com offset centralizado (tensão)
+- [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — copiar o box-shadow de quatro camadas do Inspect para o style guide

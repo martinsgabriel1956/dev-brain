@@ -48,6 +48,10 @@ A aula prática constrói o hover como uma [[wiki/concepts/sombra-em-interfaces|
 
 Os inputs têm estados próprios: hover (o placeholder "acende"), focus (borda cinza), sucesso (verde), erro (borda vermelha, ícone e mensagem no lugar certo) e warning. São "respostas ao usuário", e o style guide padroniza "o que vai acontecer, aonde e por quê" ([[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]).
 
+## Três estados por módulo
+
+Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]]: todo módulo ganha "o modo normal, [...] o modo hover, quando você passa o mouse, e [...] o modo clicável", no card, nos ícones e nos inputs, e o style guide diz o que muda de um para o outro. `[skill: ux-ui-mentor]` Faltam focus e disabled; hover não existe no toque. Ver [[wiki/concepts/maquina-de-estados-ui]].
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]] — definição e exemplos
@@ -55,3 +59,4 @@ Os inputs têm estados próprios: hover (o placeholder "acende"), focus (borda c
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — hover: crescer, sombra da cor do botão, opacidade
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — hover como sombra suave na cor da marca, documentado no style guide
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — estados de input: hover, focus, sucesso, erro, warning
+- [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — normal, hover e clicável para card, ícone e input

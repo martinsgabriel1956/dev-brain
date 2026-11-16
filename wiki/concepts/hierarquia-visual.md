@@ -105,6 +105,10 @@ Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: bo
 
 Três tons de branco e três de preto, ou uma escala de cinzas, servem "para poder definir hierarquias textuais" e ficam salvos como estilos de cor ([[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]]).
 
+## Documentação discreta
+
+Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]], o código colado na prancha do [[wiki/concepts/style-guide]] fica "um pouco mais brando", "para poder dar essa hierarquia": o componente aparece, a especificação fica em segundo plano (leitura provável da fala).
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -125,3 +129,4 @@ Três tons de branco e três de preto, ou uma escala de cinzas, servem "para pod
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-compreensao-consistencia-svg-tinyimage]] — destaque por cor nas ilustrações aponta onde está o motion
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — botão primário x secundário; link branco x texto cinza (Apple)
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — três tons de branco/preto como estilos para hierarquia textual
+- [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — código do style guide mais brando para dar hierarquia

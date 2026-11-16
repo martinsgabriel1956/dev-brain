@@ -86,6 +86,10 @@ Share por link para os alunos copiarem e receberem as atualizações; grupos de 
 
 Na aula prática de [[wiki/concepts/style-guide]], color, text e effect styles com nome `Grupo / nome`, edit style, add description e detach ("correntinha quebrando"); ver [[wiki/concepts/estilos-no-figma]]. Também: share por link (ver ou editar), set as thumbnail para a capa, save local copy e a Community como fonte de design systems, wireframes e UI Kits ([[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]]).
 
+## Inspect e style guide
+
+Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]]: o Inspect dá width, height e o CSS de `box-shadow` e gradiente, e "com relação ao estilo em si, o Figma acerta muito"; o posicionamento gerado "não condiz muito com a realidade" e é descartado (flexbox e grid no código). Padding ajustado na aba Design. `[external]` Com Auto Layout, o CSS gerado sai em flexbox. Ver [[wiki/concepts/handoff-design-dev]].
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -114,3 +118,4 @@ Na aula prática de [[wiki/concepts/style-guide]], color, text e effect styles c
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — três primeiros passos do workflow; biblioteca de wireframes copiada para o Figma
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — share por link, grupos de estilo, aba inspect
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — color, text e effect styles; edit style, detach; share, set as thumbnail, save local copy
+- [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — Inspect: copiar box-shadow e gradiente; descartar position

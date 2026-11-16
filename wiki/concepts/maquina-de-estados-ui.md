@@ -49,8 +49,13 @@ Não exige desenhar um diagrama de estados formal para todo componente simples �
 
 Na aula de [[wiki/concepts/style-guide]], os estados aparecem por componente: card (normal, hover, selecionado em roxo) e input (hover, focus, sucesso, erro, warning). O style guide é onde esse mapeamento chega ao dev, com o CSS de cada estado ([[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]).
 
+## Estados no style guide
+
+Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]], a versão de design do mesmo hábito: cada módulo (card, ícone, input) é desenhado em três estados (normal, hover, clicável) e o [[wiki/concepts/style-guide]] registra o que muda entre eles. `[skill: ux-ui-mentor]` Um handoff completo lista sete: default, hover, focus, active, disabled, loading, error ([[wiki/concepts/handoff-design-dev]]).
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
 - [[wiki/sources/o-que-e-uma-finite-state-machine]] — mencionada como fonte geral de FSM, para contraste entre a aplicação de UI e a aplicação de Game Design (Pac-Man)
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — estados de card e input documentados no style guide
+- [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — três estados visuais por módulo no style guide (design, não código)

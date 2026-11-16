@@ -57,6 +57,10 @@ Na aula prática ([[wiki/sources/botoes-pratica-figma-padding-gradiente-contrast
 
 Documentar o estado normal, o hover (sombra ou crescer) e "como é que vai ser a transição entre esses dois estados" ([[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]). `[skill: ux-ui-mentor]` Faltam focus visível, active, disabled e loading. Ver [[wiki/concepts/style-guide]].
 
+## Documentar o padding, não a largura
+
+Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]]: no botão, "esse tipo de dimensão é importante", mas "não necessariamente eu preciso estabelecer o tamanho fixo total, porque depende do conteúdo do texto". O [[wiki/concepts/style-guide]] registra o padding (48 px de cada lado no exemplo). Ver [[wiki/concepts/handoff-design-dev]].
+
 ## Key Sources
 
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — aula teórica de botões e links (edição "W7")
@@ -65,3 +69,4 @@ Documentar o estado normal, o hover (sombra ou crescer) e "como é que vai ser a
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — formas: reto, arredondado, circular, chanfrado, diagonal, hexagonal
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — aula prática no Figma: 56 px, padding 64/96, gradiente, sombra suave de hover
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — estados normal e hover e a transição no style guide
+- [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — documentar o padding (48 px) em vez da largura fixa

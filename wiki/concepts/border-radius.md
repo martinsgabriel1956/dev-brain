@@ -3,8 +3,8 @@ type: concept
 title: "Border Radius"
 aliases: ["radius", "raio de borda", "cantos arredondados", "arredondamento", "8-radius"]
 date_created: 2026-11-13
-date_updated: 2026-11-14
-source_count: 6
+date_updated: 2026-11-15
+source_count: 7
 tags: [ui, ui-design, formas, border-radius, consistencia, design-tokens, botao]
 skill: ux-ui-mentor
 status: stub
@@ -51,6 +51,10 @@ Em [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-
 
 O botão da aula prática usa `border-radius` de 16, o mesmo valor do slide da aula teórica ([[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]).
 
+## Radius proporcional ao card
+
+Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]]: "o border-radius varia de acordo com o tamanho do card". O mesmo valor num card pequeno o deforma, e num card muito grande "perde a identidade dele ter esse arredondadinho". Por isso o [[wiki/concepts/style-guide]] documenta cada tamanho de card junto com o seu radius (38 px no card da aula). `[external]` Em CSS, `border-radius` em porcentagem é relativo à largura e à altura e vira elipse em retângulos; o "relativo" da aula é um valor por tamanho, que `[skill: ux-ui-mentor]` cabe em tokens como `radius-sm`, `radius-md`, `radius-lg`.
+
 ## Key Sources
 
 - [[wiki/sources/formas-geometricas-organicas-predominancia-harmonia]] — arredondado vs. reto muda a mensagem
@@ -59,3 +63,4 @@ O botão da aula prática usa `border-radius` de 16, o mesmo valor do slide da a
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — mesmo radius em primário e secundário (16 px no slide)
 - [[wiki/sources/formas-de-botoes-reto-arredondado-circular-chanfrado-diagonal-hexagonal]] — reto, arredondado e circular nos botões; Nubank totalmente circular
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — radius 16 aplicado no botão do Figma
+- [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — radius varia com o tamanho do card; documentar tamanho e radius juntos (38 px)

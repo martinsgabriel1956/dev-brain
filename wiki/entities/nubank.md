@@ -71,6 +71,10 @@ Projeto isolado do curso de [[wiki/entities/nasser|Násser]]: wireframes e depoi
 
 O clone de estudo de [[wiki/entities/nasser]] no Figma tem o link guardado no "Master File, no Notion" e já usa estilos de texto: fonte Sora, headings de 48, 36 e 24, line-height 110 ([[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]]).
 
+## Case do módulo de Interfaces Web
+
+Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]], o projeto Nubank "vai servir de case" para demonstrar o [[wiki/concepts/style-guide]] e os estados dos componentes.
+
 ## Key Sources
 
 
@@ -86,3 +90,4 @@ O clone de estudo de [[wiki/entities/nasser]] no Figma tem o link guardado no "M
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — case do curso: pagemap por dobras e style guide
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — style guide do projeto prático: tipografia 48/36/24, família de ícones
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — arquivo de estudo no Figma: link no Notion, fonte Sora, headings 48/36/24
+- [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — projeto Nubank anunciado como case do style guide

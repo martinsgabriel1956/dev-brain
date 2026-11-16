@@ -66,6 +66,10 @@ A legenda da abertura do módulo de interfaces web está na pasta "FrontPush"; o
 
 O módulo de interface web chega à reta final com o [[wiki/concepts/style-guide]] prático, compartilhado por link ([[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]]).
 
+## Módulo de Interfaces Web: style guide
+
+Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]], aula 16 do módulo de Interfaces Web (o primeiro desse módulo na wiki): o [[wiki/concepts/style-guide]] como mapa do design para o CSS e o [[wiki/concepts/handoff-design-dev]] de um card.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -87,3 +91,4 @@ O módulo de interface web chega à reta final com o [[wiki/concepts/style-guide
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — "grade do curso" + "inscreva-se"; azul como ímã
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — abertura do módulo de interfaces web; case do Nubank
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — aula prática de style guide do módulo de interface web
+- [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — módulo de Interfaces Web, aula 16: style guide e documentação para o dev

@@ -3,7 +3,7 @@ type: source
 title: "Ícones na prática no Figma (edição \"W7\"): plugins, ícones próprios, cards e constraints"
 aliases: ["aula prática de ícones W7", "ícones na prática W7", "ícones dentro de cards", "plugins de ícones no Figma"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
+date_updated: 2026-11-15
 source_count: 0
 tags: [ui, ui-design, design, figma, icones, iconografia, familia-de-icones, consistencia, constraints, svg, cards]
 skill: ux-ui-mentor
@@ -104,3 +104,4 @@ Aula prática (cerca de 12 min) que fecha o bloco de [[wiki/concepts/icones-em-i
 - [[wiki/sources/icones-comunicacao-senso-comum-dicas-consistencia]] — a aula teórica desta edição: senso comum, dicas, no máximo duas famílias
 - [[wiki/sources/icones-parte-2-hierarquia-tamanho-simetria-grid-constraints]] — constraints e componente na outra edição; grid 20×20
 - [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referencias]] — os ícones próprios do FrontPUSH em cards
+- [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — a aula de style guide prometida (parte 2): estados de card e ícone

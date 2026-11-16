@@ -113,3 +113,4 @@ A aula prática (cerca de 10 min) que [[wiki/sources/botoes-e-links-guiar-jornad
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]]: cor de branding desconectada do estilo para mudar a opacidade
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]]: a aula teórica de style guide, onde o hover de sombra é documentado
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]]: a aula prática de style guide (parte 1): estilos de cor, texto e efeito
+- [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]]: o style guide prometido: copiar o box-shadow do Inspect e documentar os estados
