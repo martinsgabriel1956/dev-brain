@@ -3,8 +3,8 @@ type: concept
 title: "Busca de vagas direto no ATS"
 aliases: ["hunting de vagas","job hunting fora do LinkedIn","site: ashby greenhouse lever"]
 date_created: 2026-10-07
-date_updated: 2026-10-07
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [carreira, busca-de-vagas, ats, mercado-internacional, automacao]
 skill: tech-mentor-leadership
 status: draft
@@ -26,3 +26,9 @@ Estratégia mais ampla: [[wiki/concepts/cacar-a-empresa-nao-a-vaga]].
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]]
+
+## Complemento: busca por país (adição 2026-11-16)
+
+[[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] propõe outra alavanca contra a concorrência: em vez de sair do LinkedIn, filtrar países pouco procurados (Luxemburgo) e usar job boards nacionais de imigração (Work in Estonia, Work in Lithuania). Confirma que "Remote" costuma ser restrito ([[wiki/concepts/remoto-com-restricao-de-residencia]]) e acrescenta buscar o termo "contractor". As duas estratégias se somam.
+
+- [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]]

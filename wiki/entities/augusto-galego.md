@@ -3,8 +3,8 @@ type: entity
 title: "Augusto Galego"
 aliases: ["Augusto Galego", "augustogalego.com"]
 date_created: 2026-07-20
-date_updated: 2026-10-30
-source_count: 17
+date_updated: 2026-11-16
+source_count: 18
 tags: [pessoa, programador, youtuber, brasil, devops, system-design, carreira, agentes-ia, code-review]
 skill: tech-mentor-infra
 status: stub
@@ -90,3 +90,9 @@ Vídeo de carreira sobre sete erros comuns de devs brasileiros ao aplicar para e
 ## Key sources (adição 2026-10-30)
 
 - [[wiki/sources/no-robots-in-the-gym-ia-tarefas-de-academia-ler-e-escrever]] — no robots in the gym; vibe ler; ler e escrever (autoria inferida)
+
+## Aula "Quais países podem fazer sentido?" (módulo Mapeando Vagas)
+
+Aula de um curso de busca de vagas. Avalia países por salário, língua e facilidade de contratação ([[wiki/concepts/criterios-para-escolher-pais-de-vaga]]) e coloca os EUA em primeiro lugar para quem fica no Brasil. Relatos pessoais: morava na Alemanha na gravação; antes trabalhou para uma empresa espanhola e depois para uma de Berlim morando na Itália ([[wiki/concepts/arbitragem-geografica-de-salario]]); já trabalhou para uma empresa australiana que pagava em USD; participou de processos para os Emirados (via outsourcing) e Bangkok. Autoria inferida pela pasta de origem "galego" e pela coerência com relatos anteriores; o nome não é dito.
+
+- [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] — critérios por país, "remote" com restrição de residência, visa sponsorship, Portugal/Bálticos como porta de entrada (autoria inferida)

@@ -3,8 +3,8 @@ type: concept
 title: "Caçar a empresa, não a vaga"
 aliases: ["target company list","lista de empresas-alvo"]
 date_created: 2026-10-07
-date_updated: 2026-10-07
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [carreira, busca-de-vagas, estrategia, mercado-internacional]
 skill: tech-mentor-leadership
 status: stub
@@ -24,3 +24,9 @@ Inversão de método proposta em [[wiki/sources/novos-cargos-ia-e-hunting-de-vag
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]]
 - [[wiki/sources/erros-dev-brasileiro-aplicar-vaga-gringa-augusto-galego]] — depois de escolher a empresa, pesquisá-la 15 min antes da entrevista ([[wiki/concepts/pesquisar-a-empresa-antes-da-entrevista]])
+
+## Por geografia (adição 2026-11-16)
+
+[[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] aplica a mesma lógica a países: em vez de "qualquer vaga em qualquer lugar", escolher países e procurar neles empresas grandes que fazem visa sponsor (ex.: Booking na Holanda). Ver [[wiki/concepts/criterios-para-escolher-pais-de-vaga]].
+
+- [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] — filtrar por país e buscar a empresa grande que patrocina visto

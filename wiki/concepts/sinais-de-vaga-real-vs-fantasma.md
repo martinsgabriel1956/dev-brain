@@ -3,8 +3,8 @@ type: concept
 title: "Sinais de vaga real vs. vaga fantasma"
 aliases: ["vaga fantasma","ghost job","triagem de vagas internacionais"]
 date_created: 2026-10-07
-date_updated: 2026-10-07
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [carreira, busca-de-vagas, mercado-internacional]
 skill: tech-mentor-leadership
 status: stub
@@ -24,3 +24,9 @@ Ver [[wiki/concepts/busca-de-vagas-direto-no-ats]].
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]]
+
+## Sinais de elegibilidade geográfica (adição 2026-11-16)
+
+Antes de avaliar se a vaga é real, conferir se você é elegível. Segundo [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]], "Remote US", "Not eligible for visa sponsorship" ou uma lista de países de residência excluem quem mora fora. "Full Remote", "Remote Global", "LATAM" e "contractor" incluem. Ver [[wiki/concepts/remoto-com-restricao-de-residencia]].
+
+- [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]]

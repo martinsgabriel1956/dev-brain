@@ -3,8 +3,8 @@ type: entity
 title: "Google"
 aliases: ["Google DeepMind", "Gemini"]
 date_created: 2026-07-03
-date_updated: 2026-11-15
-source_count: 27
+date_updated: 2026-11-16
+source_count: 28
 tags: [google, gemini, llm, storage, organização]
 skill: tech-mentor-ai
 status: stub
@@ -110,3 +110,9 @@ Lançou o [[wiki/entities/gemini-embedding-2]] (embedding multimodal); crítica 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]] — home como macro espaço (foco); resultados de busca agrupados só com espaçamento e recuo, sem bordas de card
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-mascotes-consistencia-svg]] — Material Design recomendado para diretrizes de imagem; ver [[wiki/entities/material-design]]
 - [[wiki/sources/icones-parte-1-conceito-comunicacao-identidade-visual-familias]] — engrenagem e nove pontinhos como pattern aprendido
+
+## Big Tech em Dublin e Londres
+
+Em [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]], o Google aparece entre as Big Techs que contratam presencialmente em Dublin, com visa sponsor e salários ≥ 100 mil €/ano, e em Londres ([[wiki/concepts/visa-sponsorship]]).
+
+- [[wiki/sources/quais-paises-podem-fazer-sentido-vagas-internacionais-galego]] — contratação em Dublin/Londres como rota de imigração
