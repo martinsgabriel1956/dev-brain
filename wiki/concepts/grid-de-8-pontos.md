@@ -3,8 +3,8 @@ type: concept
 title: "Grid de 8 Pontos"
 aliases: ["8pt grid", "8-point grid", "grid de oito pontos", "escala de espaçamento", "spacing scale"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
-source_count: 3
+date_updated: 2026-11-15
+source_count: 4
 tags: [ui, ui-design, layout, espacamento, grid, consistencia, design-tokens]
 skill: ux-ui-mentor
 status: stub
@@ -44,8 +44,13 @@ O grid de 8 da aula de whitespace é, na prática, uma escala **linear** (passo 
 
 Em [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]], o grid vira atalho: big nudge de 8 no [[wiki/entities/figma]] faz cada Shift + seta andar 8, e os vãos da aula (16, 32, 128) saem de dois, quatro e dezesseis toques. As colunas de 72 e o gutter de 32 do [[wiki/concepts/grid-de-colunas]] também são múltiplos de 8.
 
+## Um dos dois padrões
+
+Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]], a "regra de oito pontos" e o grid do Bootstrap são "os dois mais utilizados" e "meio que se complementam". A regra é "utilizada demais em sistemas de apps, tanto o Android como o iOS". `[external]` O Material Design fixa 8 dp com sub-grade de 4 dp (https://m2.material.io/design/layout/spacing-methods.html). As HIG da Apple não fixam uma grade de 8 pt. Confiança média para o iOS.
+
 ## Key Sources
 
 - [[wiki/sources/espaco-em-branco-whitespace-micro-macro-grid-8-pontos]]
 - [[wiki/sources/espacamento-e-linhas-espaco-vs-meio-sistema-geometrico-padding]] — escala geométrica preferida à linear de passo 8
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — big nudge de 8 no Figma; colunas e gutter múltiplos de 8
+- [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — um dos dois padrões mais usados, ao lado do Bootstrap; Android e iOS

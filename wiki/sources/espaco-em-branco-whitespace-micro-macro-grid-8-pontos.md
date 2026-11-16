@@ -3,7 +3,7 @@ type: source
 title: "Elementos da interface: espaço em branco (whitespace), parte 1"
 aliases: ["aula whitespace", "aula espaço em branco", "micro e macro espaço", "grid de 8 pontos aula"]
 date_created: 2026-11-13
-date_updated: 2026-11-13
+date_updated: 2026-11-15
 source_count: 0
 tags: [ui, ui-design, design, elementos-da-interface, espaco-em-branco, whitespace, grid-de-8-pontos, espacamento, lei-da-proximidade, consistencia, wireframe, figma]
 skill: ux-ui-mentor
@@ -106,3 +106,7 @@ Primeira aula de elemento do módulo "elementos da interface" do [[wiki/entities
 > "Somente com o espaçamento ele consegue separar ou agrupar grupos de elementos."
 
 > "Eu não posso generalizar que eu só vou utilizar múltiplos de oito."
+
+## Ver também
+
+- [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]]: grids (parte 1); grid como esqueleto, Bootstrap e oito pontos, layouts responsivos

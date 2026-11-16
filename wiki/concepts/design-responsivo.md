@@ -3,8 +3,8 @@ type: concept
 title: "Design Responsivo"
 aliases: ['responsive design', 'media queries']
 date_created: 2026-10-14
-date_updated: 2026-11-13
-source_count: 7
+date_updated: 2026-11-15
+source_count: 8
 tags: [css, responsivo, mobile, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -26,6 +26,10 @@ Exportar a mesma imagem em várias escalas (2x/1x desktop, 0,5x/0,3x mobile) e d
 
 Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: "a precisão que eu tenho no mouse é muito maior do que a que eu tenho com o meu dedo". O botão não pode encolher na tela pequena; na [[wiki/entities/apple]], eles mantêm o tamanho. Ver [[wiki/concepts/area-clicavel]].
 
+## Fixo, fluido, adaptativo, responsivo
+
+Em [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]]: o responsivo "mistura o melhor de todos os mundos". Junta o fluido (larguras em porcentagem, seções que encolhem com a tela) e o adaptativo (media query que troca o estilo num [[wiki/concepts/breakpoint]], como 960 px). O fixo serve a uma tela só. Com tantos modelos de aparelho, fazer adaptativo "é praticamente suicídio", e o responsivo é "o queridinho". Mesmo assim, "isso nunca vai invalidar sempre você testar em vários tipos de dispositivos". Ver [[wiki/concepts/layout-fixo-fluido-adaptativo-responsivo]].
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -35,3 +39,4 @@ Em [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]]: "a
 - [[wiki/sources/espacamento-e-linhas-pratica-figma-grid-12-colunas-nudge-8pt]] — grid de 12 colunas para desktop; ver [[wiki/concepts/grid-de-colunas]] para colunas por breakpoint
 - [[wiki/sources/imagens-e-ilustracoes-introducao-svg-bancos-texto-branco-resolucoes-formatos]] — edição "W7": exportar tamanhos diferentes e carregar por media query; mobile, tablet e desktop
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — mouse x dedo; botões não encolhem no mobile
+- [[wiki/sources/grids-parte-1-colunas-bootstrap-8pt-fixo-fluido-adaptativo-responsivo]] — fixo, fluido, adaptativo e responsivo; breakpoint de 960; testar em vários aparelhos
