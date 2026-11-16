@@ -3,8 +3,8 @@ type: entity
 title: "FrontPUSH"
 aliases: ["Front Push", "FrontPush"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 39
+date_updated: 2026-11-16
+source_count: 40
 tags: [curso, frontend, ui-design, landing-page]
 skill: ux-ui-mentor
 status: stub
@@ -134,6 +134,10 @@ Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]], Nás
 
 Na aula de alinhamento ([[wiki/sources/alinhamento-e-espacamento-de-texto]]), o autor mostra "o meu próprio site": tudo à esquerda, exceto uma seção de cards com título e texto curtos centralizados. Se o site é o do FrontPUSH, a aula não diz (inferência pela pasta da transcrição).
 
+## Módulo Básico CSS
+
+A pasta da transcrição também traz um módulo "Básico CSS" (aulas 01 a 06: básico, classes e IDs, box model, propriedades, seletores e pseudo-elements, position). A aula 06, sobre [[wiki/concepts/css-position]], é a primeira desse módulo na wiki ([[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]). O slide lista as unidades px, pt, em, rem, cm e %.
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -175,3 +179,4 @@ Na aula de alinhamento ([[wiki/sources/alinhamento-e-espacamento-de-texto]]), o 
 - [[wiki/sources/classificacoes-tipograficas-serifa-sem-serifa-script-monoespacada-display]] — aula 07 do módulo: classificações tipográficas
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — botões do site em maiúsculas com letter-spacing
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — site do autor à esquerda, cards curtos centralizados
+- [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: aula 06 do módulo Básico CSS; position static, relative, absolute, fixed e sticky

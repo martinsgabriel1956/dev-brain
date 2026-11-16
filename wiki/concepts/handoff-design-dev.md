@@ -3,8 +3,8 @@ type: concept
 title: "Handoff design ↔ dev"
 aliases: ["handoff", "handoff de design", "passagem para o desenvolvedor", "redlines", "spec de componente", "documentação para o dev"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [ui, ui-design, handoff, documentacao, figma, css, design-system, estados]
 skill: ux-ui-mentor
 status: stub
@@ -31,6 +31,11 @@ Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradi
 
 `[external]` O Auto Layout do Figma corresponde ao flexbox, e frames com Auto Layout saem como `display: flex` no CSS gerado; o `position` absoluto vem de frames sem Auto Layout (https://help.figma.com/hc/en-us/articles/360040451373). Desenhar com Auto Layout torna o próprio Inspect mais útil. O gradiente vira `background: linear-gradient(220deg, … 14.43%, … 85%)`; `background-linear-gradient` não existe como propriedade (https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient).
 
+## Quando position entra no código
+
+A regra "posição nunca" vale para o `position` que o Figma gera. Na aula de CSS do mesmo curso ([[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]), position é ferramenta para o que flexbox e grid não fazem: menu `fixed` ou `sticky`, um item `absolute` dentro de um card `relative`. O handoff deve dizer quando o elemento é fixo ou gruda no scroll. Isso é comportamento, e o Inspect não mostra. Ver [[wiki/concepts/css-position]], [[wiki/concepts/menu-fixo]].
+
 ## Key Sources
 
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]]: o que documentar para o dev num card e num botão; position descartado; três estados
+- [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: position como ferramenta de layout pontual (fixed, sticky, absolute)

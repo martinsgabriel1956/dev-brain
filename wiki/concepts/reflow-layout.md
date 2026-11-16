@@ -3,8 +3,8 @@ type: concept
 title: "Layout (Reflow)"
 aliases: ["reflow", "layout do browser"]
 date_created: 2026-07-28
-date_updated: 2026-07-28
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [browser, layout, reflow, rendering-pipeline, box-model, performance]
 skill: tech-mentor-frontend
 status: draft
@@ -19,5 +19,10 @@ Unidades relativas viram absolutas nessa etapa: `width: 50%` vira um valor em pi
 
 **Layout thrashing**: ler uma propriedade de layout (ex. `offsetHeight`) e escrever estilos alternadamente dentro de um loop força reflow síncrono repetido. Ver [[wiki/concepts/layout-thrashing]].
 
+## Animar top e left
+
+O truque do menu mobile em [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]] (`position: relative` com −1000 px, zero no clique, `transition`) anima `top`/`left`, que refazem o layout a cada quadro. `transform: translateX()` dá o mesmo efeito sem reflow `[skill: tech-mentor-frontend]`. Ver [[wiki/concepts/paint-composite]] e [[wiki/concepts/css-position]].
+
 ## Key sources
 - [[wiki/sources/pipeline-de-renderizacao-do-browser-url-ate-pixel]]
+- [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: menu animado por `top`/`left` (reflow) x `transform`

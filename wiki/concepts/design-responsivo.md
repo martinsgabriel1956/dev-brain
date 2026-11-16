@@ -3,8 +3,8 @@ type: concept
 title: "Design Responsivo"
 aliases: ['responsive design', 'media queries']
 date_created: 2026-10-14
-date_updated: 2026-11-15
-source_count: 16
+date_updated: 2026-11-16
+source_count: 17
 tags: [css, responsivo, mobile, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -62,6 +62,10 @@ Em [[wiki/sources/grids-pratica-figma-12-colunas-alinhamento-blocos-equilibrio-m
 
 Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], um dos porquês do [[wiki/concepts/alinhamento-de-texto|alinhamento à esquerda]] é a responsividade: "em todos os dispositivos móveis" a borda esquerda fica fixa e a direita é que se move, então o texto não muda de ponto de partida.
 
+## Unidades de viewport
+
+Em [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]], as viewport units (`vh`, `vw`) existem porque "hoje em dia nós temos vários dispositivos e a gente quer construir interfaces responsivas"; o `body` recebe `100vh`. Posição em porcentagem é "meio que responsivo". `[external]` No celular, `100dvh` em vez de `100vh`. Ver [[wiki/concepts/unidades-de-viewport]].
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -80,3 +84,4 @@ Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], um dos porquês do [[wik
 - [[wiki/sources/tipografia-escala-tamanho-hierarquia-textual-escala-do-figma]] — escalas tipográficas desktop e mobile
 - [[wiki/sources/altura-de-linha-e-largura-do-texto]] — escala grande em tela pequena; container limita a largura
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — esquerda fica fixa entre telas; texto à esquerda facilita a responsividade
+- [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: viewport units para várias telas; menu mobile que entra e sai

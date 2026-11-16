@@ -26,6 +26,7 @@ date_updated: 2026-11-15
 
 | Página | TL;DR |
 |---|---|
+| [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]] | Aula 06 do Básico CSS do [[wiki/entities/frontpush\|FrontPUSH]] (de [[wiki/entities/nasser\|Násser]], inferido): [[wiki/concepts/css-position\|position]] com dois quadrados; static é o padrão; relative "em relação a ele mesmo" (−1000 px + `transition` para o menu mobile); absolute pelo pai posicionado (slide: "diferente de static"); fixed "só olha para a sua tela" ([[wiki/concepts/menu-fixo]]); sticky "transita" para fixed; `body` com `100vh` ([[wiki/concepts/unidades-de-viewport]]) |
 | [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] | Abertura do módulo de interfaces web da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): "vamos projetar de verdade"; [[wiki/concepts/workflow-de-interface-web\|workflow]] pesquisa → [[wiki/concepts/wireframe\|wireframes]] → protótipo final UI; grids por dispositivo; [[wiki/concepts/page-map]] como flow de dobras; biblioteca de wireframes; [[wiki/concepts/style-guide]] (branding, cor, tipografia desktop/mobile, componentes); case [[wiki/entities/nubank]] |
 | [[wiki/sources/wireframes-parte-1-o-que-e-uso-foco-page-map-papel-e-caneta]] | Parte 1 de [[wiki/concepts/wireframe\|wireframes]] da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): "design barato e rápido", telinhas preto e branco para levantar requisitos com o cliente e corrigir na prototipagem, não no software; foco em proporção, jornada, conteúdo e posição, não em visual; [[wiki/concepts/page-map]] das dobras; começa em papel e caneta (brinde: sketchbook) |
 | [[wiki/sources/wireframes-parte-2-briefing-objetivo-page-map-leitura-f-z]] | Aula 2 de [[wiki/concepts/wireframe\|wireframes]] da edição "W7" (de [[wiki/entities/nasser\|Násser]], inferido): [[wiki/concepts/briefing]] como levantamento de requisitos (marca, [[wiki/concepts/branding]], diferencial, carro-chefe, objetivo da interface); [[wiki/concepts/page-map]] a partir de patterns pesquisados ([[wiki/entities/ui-movement]]); CTA repetido do FrontPUSH; leitura em F (conteúdo pesado) e em Z (pontos de atenção) |
@@ -955,6 +956,14 @@ date_updated: 2026-11-15
 | [[wiki/sources/csrf-cross-site-request-forgery]] | Vídeo didático (autor não identificado): CSRF não quebra a same-origin policy; escrita entre origens + cookie automático bastam. Banco com iframe invisível, laboratório da PortSwigger, token e `SameSite` (sem as ressalvas) |
 
 ## Concepts
+
+### Position no CSS (2026-11-16)
+
+| Page | Hook |
+|---|---|
+| [[wiki/concepts/css-position]] | static, relative, absolute, fixed, sticky: de onde contam `top`/`left` e se o elemento fica no fluxo; bloco de contenção = ancestral posicionado; sticky só gruda enquanto o pai está visível |
+| [[wiki/concepts/unidades-de-viewport]] | `vh`/`vw` = 1% da tela; `100vh` corta no celular, use `dvh`/`svh`; `100vw` inclui a barra de rolagem |
+| [[wiki/concepts/menu-fixo]] | Menu visível no scroll (padrão da Apple): `fixed` sai do fluxo e cobre conteúdo, `sticky` gruda no topo; animar com `transform`; WCAG 2.4.11 |
 
 ### Paleta de Cores na Prática (2026-11-15)
 

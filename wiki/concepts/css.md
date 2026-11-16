@@ -3,8 +3,8 @@ type: concept
 title: "CSS (Cascading Style Sheets)"
 aliases: ['CSS', 'folhas de estilo em cascata']
 date_created: 2026-10-14
-date_updated: 2026-11-15
-source_count: 6
+date_updated: 2026-11-16
+source_count: 7
 tags: [css, frontend, web, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -34,6 +34,10 @@ Em [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]], o In
 
 Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], alinhar à esquerda é "o padrão do CSS": as tags de texto e de título já vêm assim. `[external]` Mais precisamente, o valor inicial de `text-align` é `start`, que segue a direção do idioma: https://developer.mozilla.org/en-US/docs/Web/CSS/text-align. Ver [[wiki/concepts/alinhamento-de-texto]].
 
+## Position
+
+Na aula 06 do módulo "Básico CSS" do [[wiki/entities/frontpush|FrontPUSH]], `position` é "um CSS básico que muita gente não sabe": `static` (padrão), `relative`, `absolute`, `fixed` e `sticky`, este "antes só [...] com o JavaScript" ([[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]). Ver [[wiki/concepts/css-position]] e [[wiki/concepts/unidades-de-viewport]].
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -42,3 +46,4 @@ Em [[wiki/sources/alinhamento-e-espacamento-de-texto]], alinhar à esquerda é "
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]] — tipografia: font-family, pesos, `<link>` x `@import`
 - [[wiki/sources/tipografia-negrito-italico-tracking-kerning-maiusculas]] — letter-spacing, font-weight e estilo falso
 - [[wiki/sources/alinhamento-e-espacamento-de-texto]] — text-align à esquerda como padrão (inicial `start`)
+- [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: os cinco valores de `position`; `100vh` no body

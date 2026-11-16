@@ -3,8 +3,8 @@ type: concept
 title: "Style guide (guia de estilo)"
 aliases: ["guia de estilo", "styleguide", "style-guide", "guia de estilos", "UI kit", "guia visual", "style guide de UI", "guia de estilo de interface", "style guide de interface", "mapa de design"]
 date_created: 2026-11-15
-date_updated: 2026-11-15
-source_count: 7
+date_updated: 2026-11-16
+source_count: 8
 tags: [ui, ui-design, style-guide, design-system, consistencia, cor, tipografia, figma, documentacao, handoff, design-tokens, css, prototipagem]
 skill: ux-ui-mentor
 status: stub
@@ -95,6 +95,10 @@ Community do Figma (design systems, wireframes, UI Kits) e guidelines de [[wiki/
 - [[wiki/concepts/handoff-design-dev]]: o style guide é o veículo da entrega ao dev.
 - [[wiki/concepts/design-tokens]]: os nomes que o style guide ainda não dá aos valores.
 
+## Position fica fora, comportamento fica dentro
+
+O style guide descarta o `position` do Figma, mas a aula de CSS do curso ([[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]) mostra que menu fixo e sticky são decisões de interface. Cabe anotar esse comportamento no guia ("menu gruda no topo"). Ver [[wiki/concepts/menu-fixo]].
+
 ## Key Sources
 
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — definição, momento no workflow e conteúdo do style guide do Nubank
@@ -104,3 +108,4 @@ Community do Figma (design systems, wireframes, UI Kits) e guidelines de [[wiki/
 - [[wiki/sources/wireframes-parte-3-passo-a-passo-fidelidade-escala-de-cinza-segredo]] — último passo do processo; entra só no protótipo de alta fidelidade
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — hover a documentar "muito bem claro no meu style guide"; tamanhos de texto; style guide para download prometido
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — seção de style guide para ícones próprios prometida
+- [[wiki/sources/position-css-static-relative-absolute-fixed-sticky]]: menu fixed/sticky como comportamento a documentar
