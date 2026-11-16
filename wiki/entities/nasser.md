@@ -38,6 +38,7 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - Sombra de botão suave, embaixo e não em volta: blur igual ou o dobro do offset, cor da marca a no máximo 40%, spread negativo até cobrir 80% do elemento ([[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]]).
 - Projetar de verdade segue um workflow: pesquisa (o "embrião"), wireframes de baixa fidelidade a partir de um [[wiki/concepts/pagemap]] de dobras, protótipo final com [[wiki/concepts/style-guide]] para manter a consistência ([[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]]).
 - O style guide é o mapa que traduz o design para o CSS: documentar sempre gradiente, camadas de sombra, cor e radius por tamanho; descartar o position do Figma; três estados por módulo ([[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]]).
+- Nós não somos o usuário: contraste no mínimo AA, textos invisíveis em imagens, KISS e patterns consagrados como acessibilidade ([[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]]).
 
 ## Key Sources
 
@@ -75,3 +76,4 @@ Curso: [[wiki/entities/frontpush]]. A ligação, antes inferida, foi confirmada 
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — aula teórica de style guide da edição "W7" (nome dito na pergunta dos alunos, legenda "Nácio"): levels de complexidade, padronização dos elementos, evolução por link, inspect, labels
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — aula prática de style guide, parte 1 (autoria inferida): documentação viva por link, estilos de cor, texto e efeito, nomes `Grupo / nome`
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — aula 16 do módulo de Interfaces Web (autoria inferida): o que documentar para o dev, radius proporcional, position contra flexbox e grid, normal/hover/clicável
+- [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — aula de acessibilidade do módulo de interfaces web do FrontPUSH (logo "W7"; autoria inferida): WCAG, contraste A/AA/AAA, textos invisíveis, KISS, patterns e guidelines

@@ -52,6 +52,10 @@ Os inputs têm estados próprios: hover (o placeholder "acende"), focus (borda c
 
 Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]]: todo módulo ganha "o modo normal, [...] o modo hover, quando você passa o mouse, e [...] o modo clicável", no card, nos ícones e nos inputs, e o style guide diz o que muda de um para o outro. `[skill: ux-ui-mentor]` Faltam focus e disabled; hover não existe no toque. Ver [[wiki/concepts/maquina-de-estados-ui]].
 
+## Feedback como acessibilidade
+
+Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]], feedback e "confirmação visual" fazem parte da receita de [[wiki/concepts/kiss]] para uma interface acessível, com ícones e uso adequado das cores. Ver [[wiki/concepts/acessibilidade]].
+
 ## Key Sources
 
 - [[wiki/sources/elementos-da-interface-introducao-ui-design]] — definição e exemplos
@@ -60,3 +64,4 @@ Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradi
 - [[wiki/sources/botoes-pratica-figma-padding-gradiente-contraste-smooth-shadow]] — hover como sombra suave na cor da marca, documentado no style guide
 - [[wiki/sources/style-guide-documentacao-padronizacao-elementos-visao-do-desenvolvedor]] — estados de input: hover, focus, sucesso, erro, warning
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — normal, hover e clicável para card, ícone e input
+- [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — feedback e confirmação visual na receita KISS de acessibilidade

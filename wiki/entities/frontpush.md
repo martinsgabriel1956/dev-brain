@@ -70,6 +70,10 @@ O módulo de interface web chega à reta final com o [[wiki/concepts/style-guide
 
 Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]], aula 16 do módulo de Interfaces Web (o primeiro desse módulo na wiki): o [[wiki/concepts/style-guide]] como mapa do design para o CSS e o [[wiki/concepts/handoff-design-dev]] de um card.
 
+## Módulo de interfaces web: acessibilidade
+
+Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]]: terceira aula do módulo de interfaces web, na parte de pesquisa e prototipagem inicial, logo depois de usabilidade (ainda não ingerida). O slide traz o logo "W7". Os links (WCAG, Contrast Ratio, Who Can Use, UI Kits e guidelines) ficam no Notion/"Master File" do curso. Ver [[wiki/concepts/acessibilidade]].
+
 ## Key Sources
 
 - [[wiki/sources/patterns-o-que-faz-uma-boa-ui-padroes]]
@@ -92,3 +96,4 @@ Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradi
 - [[wiki/sources/interfaces-web-introducao-workflow-grids-pagemap-wireframes-style-guide]] — abertura do módulo de interfaces web; case do Nubank
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — aula prática de style guide do módulo de interface web
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — módulo de Interfaces Web, aula 16: style guide e documentação para o dev
+- [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — aula 03 do módulo de interfaces web: acessibilidade

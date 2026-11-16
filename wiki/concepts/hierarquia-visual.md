@@ -109,6 +109,10 @@ Três tons de branco e três de preto, ou uma escala de cinzas, servem "para pod
 
 Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]], o código colado na prancha do [[wiki/concepts/style-guide]] fica "um pouco mais brando", "para poder dar essa hierarquia": o componente aparece, a especificação fica em segundo plano (leitura provável da fala).
 
+## Hierarquia de texto por contraste
+
+Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]], Násser mostra a própria interface: um texto branco, outro em escala de cinza, para criar hierarquia de texto sem "uma palette de cor pobre". Ver [[wiki/concepts/contraste]].
+
 ## Key Sources
 
 - [[wiki/sources/5-boas-praticas-uiux-ux-pilot]]
@@ -130,3 +134,4 @@ Em [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradi
 - [[wiki/sources/botoes-e-links-guiar-jornada-consistencia-anatomia-hover]] — botão primário x secundário; link branco x texto cinza (Apple)
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — três tons de branco/preto como estilos para hierarquia textual
 - [[wiki/sources/style-guide-pratica-parte-2-documentacao-para-dev-sombra-gradiente-estados]] — código do style guide mais brando para dar hierarquia
+- [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — texto branco x cinza como hierarquia de texto

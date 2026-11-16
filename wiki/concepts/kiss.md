@@ -3,8 +3,8 @@ type: concept
 title: "KISS — Keep It Simple"
 aliases: ["kiss", "keep it simple", "pensar simples", "simplicidade intencional"]
 date_created: 2026-04-29
-date_updated: 2026-11-03
-source_count: 5
+date_updated: 2026-11-15
+source_count: 6
 tags: [kiss, over-engineering, principios, qualidade, design-patterns, testes]
 skill: tech-mentor-backend
 status: stable
@@ -96,6 +96,10 @@ O ganho não é só linhas de código — é a legibilidade para quem lê depois
 
 [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] ilustra o princípio com a escolha entre o martelo convencional e uma supermáquina com propulsão e mil features para bater um prego. A regra: manter-se tão simples quanto necessário.
 
+## KISS em interfaces: acessibilidade
+
+Em [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]], KISS sai do código e vai para a UI: "projete a interface como se fosse de maneira simples e estúpida, mais fácil possível, bem passo a passo, dando feedback para o usuário, dando confirmação visual, utilizando ícones, fazendo uso adequado das cores". É uma das recomendações de [[wiki/concepts/acessibilidade]], ao lado dos textos invisíveis ("esses dois conceitos conversam muito").
+
 ## Key Sources
 
 - [[wiki/sources/overengineering-carol-ate-quinta]]
@@ -103,3 +107,4 @@ O ganho não é só linhas de código — é a legibilidade para quem lê depois
 - [[wiki/sources/kiss-yagni-entrega-rapida-qualidade]] — origem na Marinha dos EUA, KISS aplicado a testes, exemplo de refactor de validação de status, benefício de retenção de usuário via UX simples
 - [[wiki/sources/topicos-desenvolvimento-software-mudei-de-ideia-6-anos]] — "boas práticas" como contextuais, não leis; escalar sem necessidade real como sinal de mau engenheiro
 - [[wiki/sources/como-evitar-overengineering-kiss-yagni-decisoes-embasadas-abordagem-evolutiva]] — analogia do martelo; primeira defesa contra over-engineering
+- [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — KISS aplicado à interface como recomendação de acessibilidade
