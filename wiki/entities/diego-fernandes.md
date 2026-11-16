@@ -4,7 +4,7 @@ title: "Diego Fernandes"
 aliases: ["Diego", "Diego Fernandes Rocketseat"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 8
+source_count: 13
 tags: [pessoa, educador, rocketseat, nodejs, react, react-native, typescript]
 skill: lang-dynamic
 status: stub
@@ -28,6 +28,8 @@ No dia 5 ([[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-dep
 
 Comparação com a trilha de Mayk: [[wiki/questions/nlw-1-duas-trilhas-ecoleta-comparacao]].
 
+Na NLW #2 (Proffy): [[wiki/questions/nlw-2-duas-trilhas-proffy-comparacao]].
+
 ## Na NLW #2, dia 2 (Mayk Brito)
 
 No dia 2 da NLW #2 ([[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]), o avatar e o nome de Diego são o exemplo do card de professor do Proffy: [[wiki/entities/mayk-brito|Mayk]] copia o link da imagem do perfil do GitHub e usa `alt="Diego Fernandes"`.
@@ -40,6 +42,26 @@ No dia 4 da NLW #2 ([[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-pr
 
 No dia 5 da NLW #2 ([[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]), os dados do Diego (Química, R$ 20) são o primeiro professor inserido no SQLite; o nome sem aspas gera o erro `near "Fernandes"`. [[wiki/entities/mayk-brito|Mayk]] cita o GoStack, "que o Diego é o professor".
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+Dia 1 da trilha na NLW #2: React do zero no Proffy, desta vez escrevendo também HTML e CSS ("na última NLW, eu pulei a etapa do HTML e CSS"), em Mobile First. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+Dia 2 da trilha na NLW #2: API do Proffy com Express, Knex e SQLite; "foi a primeira NLW que a gente fez uma query no banco mais complexa". Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+Dia 3 da trilha na NLW #2: termina o front-end do Proffy, explica estado e liga React à API. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+Dia 4 da trilha na NLW #2: interface do app Proffy, "eu me empolgo muito desenvolvendo aplicações mobile [...] até mais que a web". Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+Dia 5 da trilha na NLW #2: fecha o app com API e favoritos e entrega a versão 2.0 como desafio. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: dia 1, API REST, TypeScript, React e React Native
@@ -50,3 +72,8 @@ No dia 5 da NLW #2 ([[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]), 
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: exemplo no card de professor do Proffy
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: primeiro professor do array
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: primeiro INSERT e o erro de aspas
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: NLW #2, dia 1: Proffy em React
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: NLW #2, dia 2: API do Proffy
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: NLW #2, dia 3: estado e conexão com a API
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: NLW #2, dia 4: app mobile
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: NLW #2, dia 5: fim do app

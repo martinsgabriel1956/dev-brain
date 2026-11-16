@@ -4,7 +4,7 @@ title: "JSON (JavaScript Object Notation)"
 aliases: ["JSON", "JavaScript Object Notation", "res.json()"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 5
+source_count: 7
 tags: [json, javascript, api, formato-de-dados]
 skill: tech-mentor-frontend
 status: stub
@@ -30,6 +30,14 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecole
 
 Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], JSON é "JavaScript Object Notation": chaves e valores com aspas duplas, vírgula só entre itens, colchetes para listas. No objeto JavaScript as aspas nas chaves "são facultativas".
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+"Um objeto escrito da mesma forma que a gente escreve no JavaScript", entendido por web e mobile; a lista é um array de objetos. Vírgula no fim do último item é erro em JSON. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+O AsyncStorage só guarda texto, então os favoritos vão com `JSON.stringify` e voltam com `JSON.parse`: "o mesmo JSON [...] entre o backend e frontend". Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: JSON x objeto JavaScript, resposta do IBGE
@@ -37,3 +45,5 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], JSON é "
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: JSON como contrato entre API, React e React Native
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: body JSON e serialização
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: JSON x objeto JavaScript
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: JSON como formato da API REST
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: JSON no AsyncStorage

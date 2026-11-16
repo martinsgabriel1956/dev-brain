@@ -4,7 +4,7 @@ title: "Status Code HTTP"
 aliases: ["status code", "códigos de status http", "401 vs 403", "200 404 500"]
 date_created: 2026-09-30
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [http, api, status-code, erros]
 skill: tech-mentor-networking
 status: stub
@@ -38,8 +38,13 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecole
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], o `errors()` do celebrate responde 400 com `message` e as chaves inválidas. Sem imagem, o controller quebra com 500.
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+201 no `POST /classes` e no `POST /connections`; 400 para filtros ausentes (certo) e para "erro inesperado" ao gravar, que seria 500. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Key sources
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — lista comentada de status e mudança de pergunta
 - [[wiki/sources/rate-limit-arquitetura-onde-aplicar-estado-compartilhado-bernardo-lobato]] — 429 e RFC 6585
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: 400 usado para not found (deveria ser 404)
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: 400 do celebrate; 500 por req.file ausente
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: 201 e 400; 400 no lugar de 500

@@ -4,7 +4,7 @@ title: "SQLite"
 aliases: ["sqlite3", "banco embarcado"]
 date_created: 2026-07-27
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [sqlite, banco-de-dados, embarcado, mobile, backend]
 skill: tech-mentor-backend
 status: stub
@@ -44,6 +44,10 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecole
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o Proffy usa o pacote `sqlite-async` (`Database.open(__dirname + "/database.sqlite")`, `exec`, `run`, `all`, `lastID`), com três tabelas. O SQLite aceita as aspas duplas da aula como texto só por compatibilidade, não valida chaves estrangeiras sem `PRAGMA foreign_keys = ON` e não altera tabela existente com `CREATE TABLE IF NOT EXISTS`.
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+Escolhido "porque você não precisa instalar nada". Quirks que aparecem na aula: `defaultTo('now')` grava o texto (resolvido com `knex.raw('CURRENT_TIMESTAMP')`), `decimal` é só afinidade e FKs ficam desligadas sem PRAGMA. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/como-escolher-banco-de-dados-historia-acid-cap]]
@@ -51,3 +55,4 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o Proffy usa o pac
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: CRUD com sqlite3 no Ecoleta; concorrência
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: SQLite via Knex; FKs desligadas por padrão
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: sqlite-async, três tabelas, aspas duplas
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: now, decimal e FKs no Proffy

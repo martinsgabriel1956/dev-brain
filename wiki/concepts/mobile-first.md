@@ -4,7 +4,7 @@ title: "Mobile first"
 aliases: ["mobile-first", "mobile first CSS", "primeiro o mobile"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [css, responsivo, mobile-first, media-query, breakpoint, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -30,9 +30,14 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o mob
 
 Em [[wiki/sources/frontpush-mixin-e-content-sass]], o mixin de responsividade usa `max-width` (960 e 720): "aqui fora eu aplico para desktop, e aqui dentro eu aplico para dispositivos tablets ou mobile". Continua o padrão desktop-first do curso.
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+Novidade da edição: a interface web é feita "primeiro para dispositivos móveis", porque "a grande maioria das pessoas [...] tá acessando os websites utilizando o próprio celular". `min-width: 700px` sobe a raiz para 62,5%, e `min-width: 1100px` troca a landing para grid. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: mobile first anunciado para o Proffy, com rem e porcentagem como unidades
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: min-width de 700 e 1100 px
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: contraexemplo desktop-first, `max-width: 960px`
 - [[wiki/sources/frontpush-mixin-e-content-sass]]: mixin `responsive` em `max-width` (desktop-first)
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: Mobile First em React, 700 e 1100 px

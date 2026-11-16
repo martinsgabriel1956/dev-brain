@@ -4,7 +4,7 @@ title: "Gerenciador de Pacotes (CPAN, Bundler, npm, Bower)"
 aliases: ['package manager', 'npm']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [dependencias, npm, build, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -30,6 +30,10 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-
 
 Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], npm é o "gerenciador de pacotes do Node", de "sub-aplicações": `npm init -y`, `npm install express`, `npm install nunjucks` e `npm install nodemon -D`. Tensão: `-D` grava em devDependencies, na mesma `node_modules`.
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+Node, npm e Yarn ("opcional, porém recomendável"); `yarn create react-app` ou `npx create-react-app`; `yarn.lock` com as versões; o `node_modules` cresce porque "cada dependência tem suas próprias dependências". Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
@@ -38,3 +42,4 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], npm é o 
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: npm init, install, -D
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: npm x Composer/pip/RubyGems; Homebrew e Chocolatey para o Node
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: init, install, -D
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: yarn create, npx, yarn.lock e dependências transitivas

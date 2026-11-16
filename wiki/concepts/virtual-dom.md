@@ -4,7 +4,7 @@ title: "Virtual DOM"
 aliases: ["VDOM", "virtual dom diffing"]
 date_created: 2026-08-03
 date_updated: 2026-11-16
-source_count: 4
+source_count: 6
 tags: [frontend, virtual-dom, reatividade, react, vue, performance]
 skill: tech-mentor-frontend
 status: stable
@@ -40,6 +40,16 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
 - [[wiki/sources/react-reconciliacao-memo-usememo-usecallback]] — demonstração prática no React DevTools Profiler de que gerar uma nova versão na Virtual DOM não implica tocar o DOM real
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+Diego explica o React pela ideia de SPA ("só muda [...] as coisas que são diferentes de uma tela para outra"), sem citar a virtual DOM; o que o React trouxe foi a re-renderização declarativa de componentes, não a SPA em si. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+"Each child in a list should have a unique key prop": a key vai no primeiro elemento do `map` e "ajuda o React a conseguir identificar os elementos". Nos horários, a key é o `week_day`, que duplica no primeiro clique (os dois itens começam com 0). Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — contexto histórico: mudar o estado e deixar o Virtual DOM redesenhar ([[wiki/concepts/single-page-application]])
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: key em listas para reconciliação
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: SPA × re-renderização declarativa
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: key nas options e nos horários

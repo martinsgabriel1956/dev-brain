@@ -3,8 +3,8 @@ type: concept
 title: "Chamadas HTTP — Mobile"
 aliases: ["mobile networking", "mobile http client", "tanstack query mobile", "okhttp interceptor"]
 date_created: 2026-04-24
-date_updated: 2026-04-24
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [mobile, networking, http, tanstack-query, retrofit, okhttp, interceptor, loading-states]
 skill: tech-mentor-mobile
 status: stable
@@ -63,6 +63,11 @@ final userProvider = FutureProvider.family<User, String>((ref, id) async {
 - [[wiki/concepts/mobile-offline-first-basico]] — servir cache quando sem rede
 - [[wiki/concepts/mobile-state-management-global]] — onde server state NÃO vai
 
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+Axios com o IP do computador na rede (do painel do Expo, porta 3333), porque `localhost` não funciona no emulador nem no aparelho; o código web de `useEffect` + `api.get` roda igual. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/mobile-chamadas-http]]
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: IP da máquina no baseURL

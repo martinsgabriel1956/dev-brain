@@ -4,7 +4,7 @@ title: "Flexbox (display: flex)"
 aliases: ["flexbox", "display flex", "flex", "flex-direction", "justify-content", "align-items", "flex: 1"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 25
+source_count: 26
 tags: [frontend, css, flexbox, layout, display, alinhamento]
 skill: tech-mentor-frontend
 status: stub
@@ -111,6 +111,10 @@ Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], `dis
 
 Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: `display: flex` faz dos filhos diretos flex-items, e `flex-grow` divide o espaço por proporção. Para o curso, isso se aproxima do layout, mas não reproduz larguras exatas de colunas; daí o grid system de classes.
 
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+"Todos os elementos já vêm com o display flex" e `flexDirection: 'column'` por padrão; `flex: 1` para ocupar o espaço e `space-between` + `48%` nos botões. O RN também muda `flexShrink` e `alignContent` padrão. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: header, coluna com `flex: 1`, botão com span + strong
@@ -138,3 +142,4 @@ Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: `display: flex` faz dos 
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: space-between; itens flex blockificados
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: combo de centralização no primeiro `.scss`
 - [[wiki/sources/frontpush-grid-system-sass-parte-1]]: flexbox como contraexemplo de precisão
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: column padrão e flex: 1 no RN

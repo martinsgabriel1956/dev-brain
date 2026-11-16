@@ -4,7 +4,7 @@ title: "useEffect"
 aliases: ["use effect", "efeitos React", "side effects React"]
 date_created: 2026-04-22
 date_updated: 2026-11-16
-source_count: 6
+source_count: 8
 tags: [react, hooks, efeitos, side-effects, useEffect]
 skill: tech-mentor-frontend
 status: stable
@@ -95,6 +95,14 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: o padrão `async function` dentro do efeito chamada em seguida, para usar `await`, e a dependência `[selectedItems]` para refazer a busca de pontos.
 
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+`useEffect(() => { api.get('connections').then(...) }, [])` para o total de conexões; o array de dependências explicado como "informações que quando forem alteradas vão disparar essa função novamente" (exemplo dos likes). Sem cleanup, o que no StrictMode do React 18 duplica a chamada em desenvolvimento. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+O `useEffect([])` do total de conexões é colado da web; o dos favoritos vira `loadFavorites()` no submit e depois `useFocusEffect`, que precisa de `useCallback`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
@@ -103,3 +111,5 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]
 - [[wiki/sources/recriando-zustand-javascript-puro-sem-provider]] — `useEffect` sincronizando estado externo (Observer) com estado local
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: fetch na montagem e por dependência; sem cleanup
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: async function interna; dependência por itens
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: total de conexões com array vazio
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: useEffect × useFocusEffect

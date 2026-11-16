@@ -4,7 +4,7 @@ title: "React"
 aliases: ["ReactJS", "React.js"]
 date_created: 2026-04-22
 date_updated: 2026-11-16
-source_count: 13
+source_count: 15
 tags: [react, frontend, biblioteca, facebook, meta]
 skill: tech-mentor-frontend
 status: stable
@@ -59,6 +59,14 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — surge do Facebook como evolução das SPAs; Virtual DOM; React Native ([[wiki/concepts/single-page-application]], [[wiki/concepts/aplicativo-hibrido]])
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+"Uma biblioteca de construção de interfaces que visa a construção de single page applications." O pacote `react` é o núcleo, e `react-dom`/React Native são renderizadores; Diego cita React TV, React VR e o React Native Windows/macOS da Microsoft. Conceitos do dia: componentes, JSX e props; estado fica para depois. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+Dia 3 da NLW #2: interface declarativa ("a gente não vai no HTML [...] e adiciona uma nova div", como no jQuery), `useState`, `useEffect`, componentes de formulário com `HTMLAttributes` e o front ligado à API. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
 ## Key sources (adição 2026-11-10)
 
 - [[wiki/sources/lazy-load-eager-load-economia-dados-react-trpc]] — renderização condicional como mecanismo de [[wiki/concepts/lazy-vs-eager-loading]]
@@ -67,3 +75,5 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: componentes, props, estado e efeitos no Ecoleta web
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: mesmos conceitos no mobile; fragment
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: Dropzone e comunicação filho → pai
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: núcleo × renderizadores; componentes e props
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: estado, efeitos e o front conectado

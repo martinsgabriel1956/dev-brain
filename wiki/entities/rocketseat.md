@@ -4,7 +4,7 @@ title: "Rocketseat"
 aliases: ["Rocket Seat", "Rocket City"]
 date_created: 2026-11-13
 date_updated: 2026-11-16
-source_count: 21
+source_count: 26
 tags: [empresa, educacao, programacao, branding]
 skill: ux-ui-mentor
 status: stub
@@ -68,6 +68,26 @@ No dia 4 da NLW #2 ([[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-pr
 
 No fim do dia 5 da NLW #2 ([[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]), [[wiki/entities/mayk-brito|Mayk]] avisa que não haverá turma do Launchbase porque a Rocketseat prepara "uma tonelada de mudanças e melhorias em todos os projetos", e promete uma novidade gratuita para a comunidade.
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+O projeto inédito de cada NLW como o que "mais cria hype"; desafios no fim da semana com "alguns conteúdos da Rocketseat". Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+Wireframe do Proffy feito no Whimsical "pra enviar pro designer aqui dentro da Rocketseat"; comunidade de dúvidas do evento. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+Professores de teste são pessoas da casa (Vini Fraga, Thiago Marinho), puxados do feed do GitHub do Diego. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+Repositório Expo Common Issues e vídeo de emuladores no YouTube como apoio ao evento. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+Desafios pós-evento com Notion de requisitos, layout no Figma e links para conteúdos da Rocketseat por funcionalidade. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/elementos-de-composicao-ambiencia-background-branding-empty-screens]]
@@ -91,3 +111,8 @@ No fim do dia 5 da NLW #2 ([[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-prof
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: fim do front-end do Proffy
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: Clayton Souza como exemplo
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: sem Launchbase, novidade gratuita
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: NLW #2, trilha do Diego, dia 1
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: NLW #2, trilha do Diego, dia 2
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: NLW #2, trilha do Diego, dia 3
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: NLW #2, trilha do Diego, dia 4
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: desafios da versão 2.0

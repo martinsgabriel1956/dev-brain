@@ -4,7 +4,7 @@ title: "TypeScript"
 aliases: ["TS", "tsc"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 5
+source_count: 8
 tags: [linguagem, typescript, javascript, tipagem, microsoft]
 skill: lang-dynamic
 status: stub
@@ -30,6 +30,18 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: `useState<File>()`, `interface Props { onFileUploaded: (file: File) => void }` e o TS reclamando de `selectedFile` possivelmente indefinido no `FormData` ("o TypeScript já ajuda a gente a evitar esses errinhos").
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+Template `--template typescript` no CRA ("a tipagem auxilia na sua produtividade"), `interface PageHeaderProps`, `React.FC<>` e `@types/react-router-dom`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+`tsc --init`, `target: ES2017`, `interface ScheduleItem` em vez de `any` ("qualquer coisa é muito aberto"), `Request`/`Response` do Express e `as string` nos filtros. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+`InputHTMLAttributes<HTMLInputElement>` (chamado de "global do Visual Studio Code", mas vem do `lib.dom.d.ts`), `FormEvent`, `Array<{ value: string; label: string }>` e `export interface Teacher` reaproveitada. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: definição, função esquecida e IntelliSense, cinco mitos, `@types/express`, `ts-node`, `tsc --init`
@@ -37,3 +49,6 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: props, generics, estado e eventos tipados no React
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: asserções de tipo em parâmetros de rota
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: File, callback tipado e undefined
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: template, interface de props e @types
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: interface, any e as string na API
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: HTMLAttributes, FormEvent e interfaces exportadas

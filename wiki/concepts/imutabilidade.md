@@ -4,7 +4,7 @@ title: "Imutabilidade"
 aliases: ["immutability", "dados imutáveis", "readonly"]
 date_created: 2026-04-25
 date_updated: 2026-11-16
-source_count: 6
+source_count: 8
 tags: [imutabilidade, software-design, estado, clean-code, programacao-funcional, datomic, event-sourcing, strings, encoding]
 skill: tech-mentor-backend
 status: stable
@@ -88,8 +88,18 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]
 - [[wiki/sources/nubank-clojure-datomic-event-sourcing]]
 - [[wiki/sources/como-strings-realmente-funcionam]] — motivação técnica para imutabilidade de strings: proteger encoding UTF-8 de corrupção por indexação de bytes
 
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+"As variáveis [...] não são modificáveis" e "o React não fica observando variáveis comuns": na prática o JS permite mutar e o React re-renderiza quando o `set` é chamado com outra referência. Cópia com spread no `addNewScheduleItem` e `map` + `{ ...item, [field]: value }` no `setScheduleItemValue`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+O toggle de favorito usa `push` e `splice` no array lido do storage; como é uma cópia vinda do `JSON.parse`, funciona, mas `splice(-1, 1)` apaga o último se o id não existir. `filter` seria mais seguro. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key sources (adição 2026-10-06)
 
 - [[wiki/sources/estado-global-stateless-side-effects-reprodutibilidade-galego]] — config carregada uma vez e exposta read-only: [[wiki/concepts/estado-global-inofensivo]].
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: estado React: spread em vez de push
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: mesma seleção imutável no mobile
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: spread e map nos horários
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: push/splice no array de favoritos

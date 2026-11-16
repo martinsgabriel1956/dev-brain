@@ -4,7 +4,7 @@ title: "Variáveis CSS (custom properties)"
 aliases: ["custom properties", "variáveis no CSS", "var()", ":root", "CSS variables"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 8
+source_count: 10
 tags: [frontend, css, variaveis-css, design-tokens, cores]
 skill: tech-mentor-frontend
 status: stub
@@ -47,6 +47,14 @@ Em [[wiki/sources/frontpush-variaveis-sass]], as variáveis são as do Sass (`$b
 
 Em [[wiki/sources/frontpush-if-else-sass]], o tema light/dark é escolhido por `$layout` na compilação: sai um CSS com um tema só. Para o usuário trocar, ou para seguir `prefers-color-scheme`, as cores têm de ser custom properties redefinidas por `[data-theme]` ou media query.
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+As cores do layout vêm prontas como custom properties no `global.css`, "caso você queira customizar o tema [...] para algum tema dark", e o CSS nunca usa cor fixa. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+No RN não há custom properties; constantes de JS funcionariam, mas Diego prefere Styled Components com tema em projetos maiores. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: `--title-color` e `--primary-color` em `:root`
@@ -57,3 +65,5 @@ Em [[wiki/sources/frontpush-if-else-sass]], o tema light/dark é escolhido por `
 - [[wiki/sources/frontpush-import-e-partials-sass]]: Sass: arquivo de cores importado
 - [[wiki/sources/frontpush-variaveis-sass]]: aula de variáveis do Sass; comparação em variaveis-sass
 - [[wiki/sources/frontpush-if-else-sass]]: tema de compilação (Sass) × tema em tempo de execução
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: cores em variáveis para trocar o tema
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: sem variáveis de CSS no RN

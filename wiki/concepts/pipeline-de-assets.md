@@ -4,7 +4,7 @@ title: "Pipeline de Assets (minificação e concatenação)"
 aliases: ['asset pipeline', 'minify', 'bundling']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [build, minificacao, webpack, performance, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -22,8 +22,13 @@ Em [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]], o [[
 
 Em [[wiki/sources/frontpush-import-e-partials-sass]]: dividir em vários `.scss` e compilar para um só é "a maneira mais otimizada [...] porque tem menos arquivos para carregar"; vincular vários CSS "prejudica a otimização", com "vários requests". É a concatenação desta página. `[skill: tech-mentor-frontend]` Com HTTP/2, o ganho de juntar tudo diminuiu; hoje se divide por página ou rota.
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+No `react-scripts`, o Webpack "faz a automatização desse processo" e permite importar SVG e CSS pelo JavaScript (`import logoImg from '.../logo.svg'`, `import './styles.css'`). Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: Sass `compressed` e `.map`
 - [[wiki/sources/frontpush-import-e-partials-sass]]: Sass aula 03: concatenação por `@import`
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: Webpack do CRA: imagem e CSS por import

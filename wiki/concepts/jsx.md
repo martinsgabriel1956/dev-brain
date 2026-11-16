@@ -4,7 +4,7 @@ title: "JSX"
 aliases: ["JavaScript XML", "React markup"]
 date_created: 2026-04-22
 date_updated: 2026-11-16
-source_count: 4
+source_count: 6
 tags: [react, jsx, sintaxe, compilador]
 skill: tech-mentor-frontend
 status: stable
@@ -50,9 +50,19 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], o JSX do React Native usa `View`, `Text` e `Image` no lugar das tags HTML, e todo texto precisa estar em `<Text>` ("Text strings must be rendered within a `<Text>` component").
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+JSX é "JavaScript mais XML" e TSX, "TypeScript com XML". Chaves inserem variáveis (`src={logoImg}`); `className` e `htmlFor` porque `class` e `for` são reservadas. O `import React` era obrigatório em 2020 e deixou de ser com o JSX transform do React 17. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+No RN, `{'\n'}` no lugar de `<br>`, `{' '}` para espaço, fragment `<>...</>` para não criar view a mais e "text strings must be rendered within a text component" para texto solto. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/react-tudo-que-voce-precisa-saber]]
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: "função que retorna HTML"; JSX e bundler
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: JSX x createElement; className e htmlFor
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: JSX sem HTML no React Native
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: JSX/TSX, chaves, className e htmlFor
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: quebra de linha, espaço e fragment no RN

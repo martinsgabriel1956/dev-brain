@@ -3,8 +3,8 @@ type: concept
 title: "Armazenamento Local — Mobile"
 aliases: ["mmkv mobile", "sqlite mobile", "asyncstorage", "room android", "keychain mobile"]
 date_created: 2026-04-24
-date_updated: 2026-04-24
-source_count: 1
+date_updated: 2026-11-16
+source_count: 3
 tags: [mobile, armazenamento, mmkv, sqlite, keychain, keystore, room]
 skill: tech-mentor-mobile
 status: stable
@@ -56,6 +56,16 @@ Usar para: tokens de autenticação sensíveis, chaves de criptografia, credenci
 - [[wiki/concepts/mobile-offline-first-basico]] — como o storage suporta offline
 - [[wiki/concepts/mobile-biometria]] — integração Keychain + biometria
 
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+Favoritos no AsyncStorage "como se fosse o local storage lá da web", porque não há login; a API é assíncrona e sem criptografia. A implementação fica para o dia 5. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+Favoritos do Proffy em AsyncStorage: só texto, então JSON sob a chave `favorites`; ids para marcar a lista e objetos inteiros na aba Favoritos (que congelam preço e bio). Sem `try/catch` no `JSON.parse` e com `splice(-1, 1)` possível quando o id não é achado. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/mobile-armazenamento-local]]
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: favoritos do Proffy no AsyncStorage
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: favoritos em JSON no AsyncStorage

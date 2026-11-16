@@ -3,8 +3,8 @@ type: entity
 title: "Material Design"
 aliases: ["Material", "Material Design 2", "Material Design 3", "M2", "M3"]
 date_created: 2026-11-13
-date_updated: 2026-11-15
-source_count: 7
+date_updated: 2026-11-16
+source_count: 8
 tags: [design-system, google, diretrizes, imagens, acessibilidade]
 skill: ux-ui-mentor
 status: stub
@@ -32,6 +32,10 @@ Em [[wiki/sources/icones-parte-3-icones-do-frontpush-formas-geometricas-referenc
 
 Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]]: breakpoints, 4, 8 e 12 colunas, margens, gutters, o grid fluido ("conforme aumenta a tela também, aumenta o sistema de grids") e regiões de UI para dashboards. Ver [[wiki/concepts/breakpoint]].
 
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+O header automático do stack segue o Material Design no Android (título à esquerda) e é desligado com `headerShown: false`; o ripple do `RectButton` é o efeito do Material. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/imagens-e-ilustracoes-ilustracoes-mascotes-consistencia-svg]] — diretrizes de imagem recomendadas no fim da aula
@@ -41,3 +45,4 @@ Em [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-fl
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — plugin Material Design Icons no Figma
 - [[wiki/sources/style-guide-pratica-figma-estilos-de-cor-texto-e-efeito]] — guideline do Google citada como referência para montar style guide
 - [[wiki/sources/grids-pratica-2-material-de-apoio-bootstrap-material-design-flexbox-grid]] — breakpoints, colunas, grid fluido, regiões de UI
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: App Bar e ripple

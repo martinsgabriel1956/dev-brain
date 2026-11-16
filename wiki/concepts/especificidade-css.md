@@ -4,7 +4,7 @@ title: "Especificidade no CSS"
 aliases: ["especificidade", "CSS specificity", "specificity"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 6
+source_count: 8
 tags: [css, cascata, seletores, especificidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -46,6 +46,14 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], um `marg
 
 Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], o slide diz que o nesting "pode emendar n cascatas". `[skill: tech-mentor-frontend]` Cada nível entra no seletor final: `.list li a:hover` = (0,2,2), contra (0,2,0) de um `.list__link:hover`. Quanto mais fundo, mais difícil sobrescrever depois; regra comum: até três níveis.
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+`#page-landing-content { max-width: 1100px }` vence `.container` porque "o id ele é sempre mais poderoso que a classe": é especificidade 1-0-0 contra 0-1-0. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+`margin-top: 0 !important` dentro do `.schedule-item` para anular `.input-block + .input-block`; um seletor mais específico bastaria. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/classes-e-ids-no-css]]: estilo por ID sem tratar de especificidade (tensão registrada na fonte)
@@ -54,3 +62,5 @@ Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], o slide diz que o nestin
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: id > classe > tag; "força de cascata" é especificidade
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: !important e a alternativa por seletor
 - [[wiki/sources/frontpush-nesting-aninhamento-sass]]: Sass aula 05: especificidade de seletores aninhados
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: id × classe no container
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: !important no schedule-item

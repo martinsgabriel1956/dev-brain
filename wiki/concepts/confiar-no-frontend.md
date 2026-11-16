@@ -4,7 +4,7 @@ title: "Confiar no Frontend (Client-Side Trust Anti-Pattern)"
 aliases: ["confiar no frontend", "nunca confie no cliente", "client-side validation bypass", "trust boundary violation"]
 date_created: 2026-07-04
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [appsec, trust-boundary, business-logic, client-side-security, owasp]
 skill: tech-mentor-security
 status: stable
@@ -53,6 +53,10 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o exemplo
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o cadastro sai de `req.query` para `req.body`, mas segue sem verificação. Os valores entram interpolados na SQL, e um `weekday` que não seja array derruba o `map`. O `required` dos campos de horário é a única proteção, e só vale no navegador.
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+Credenciais do banco, SMTP e chave de hash ficam no back-end porque "tudo que está no frontend, o usuário tem acesso". A API do Proffy, porém, aceita qualquer `user_id` em `/connections` e não valida o cadastro. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/vulnerabilidades-comuns-seguranca-apps]]
@@ -61,3 +65,4 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o cadastro sai de 
 - [[wiki/sources/xss-attack-dicionario-programador-codigo-fonte-tv]] — reforça o mesmo princípio de forma indireta: a recomendação de "nunca confiar em nada enviado pelo usuário" é dada como resumo de fechamento, generalizando a lição do caso da loja do Bob (busca não sanitizada) para qualquer input
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: o preço do sapato; cadastro sem validação
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: req.body direto na SQL
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: o que fica no back-end

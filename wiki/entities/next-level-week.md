@@ -4,7 +4,7 @@ title: "Next Level Week (NLW)"
 aliases: ["NLW", "Next Level Week", "NLW #1", "Ecoleta", "NLW #2", "Proffy"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 15
+source_count: 20
 tags: [evento, educacao, rocketseat, frontend, ecoleta, proffy]
 skill: tech-mentor-frontend
 status: stub
@@ -46,6 +46,8 @@ No dia 5 da trilha de [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki/
 
 Comparação das duas trilhas: [[wiki/questions/nlw-1-duas-trilhas-ecoleta-comparacao]].
 
+Na NLW #2 (Proffy): [[wiki/questions/nlw-2-duas-trilhas-proffy-comparacao]].
+
 ## Na NLW #2, dia 1 (Mayk Brito)
 
 A segunda edição (NLW #2) tem como projeto o **Proffy**, "nossa plataforma de estudos online", na "versão 1.0": quem dá aula preenche nome, foto, WhatsApp, biografia, matéria e horários; quem estuda busca a matéria e vê os professores disponíveis. A semana coincide com o "dia 6, que é o dia dos profissionais da educação", e o layout é de Thiago, da Rocketseat ([[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]). A transcrição só diz "NLW"; a edição foi confirmada pelo usuário, e a data (agosto de 2020) segue inferida `[external, não verificado]`. O dia 1, com [[wiki/entities/mayk-brito|Mayk]], termina com o esqueleto da página inicial e manda o feedback para a "comunidade exclusiva do NLW", onde também rolam os desafios.
@@ -66,6 +68,26 @@ No dia 4 da NLW #2 ([[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-pr
 
 O dia 5 da NLW #2 ([[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]) fecha a trilha Discovery: o Proffy grava professores, aulas e horários no SQLite e filtra por matéria, dia e hora. Não haverá turma do Launchbase desta vez; há encontro ao vivo no domingo e três desafios (página de sucesso, campos de horário vazios, layout 2.0).
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+NLW #2, trilha de Diego Fernandes, dia 1: o Proffy (escolhido pelo 6 de agosto, Dia do Profissional da Educação), com o ambiente de desenvolvimento num Notion à parte e uma "versão 2.0" de desafios no fim. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+NLW #2, trilha de Diego Fernandes, dia 2: API REST do Proffy (aulas, horários em minutos, conexões). Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+NLW #2, trilha de Diego Fernandes, dia 3: formulário de aulas, estado e front conectado ao back-end. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+NLW #2, trilha de Diego Fernandes, dia 4: app do Proffy em React Native, só para alunos. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+NLW #2, trilha de Diego Fernandes, dia 5: app conectado à API, favoritos offline e desafios da versão 2.0 com layout e conteúdos. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: dia 1, apresentação do Ecoleta e página inicial em HTML e CSS ([[wiki/entities/mayk-brito]])
@@ -83,3 +105,8 @@ O dia 5 da NLW #2 ([[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]) fe
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: give-classes e JavaScript
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: back-end do Proffy
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: SQLite, filtros e desafios
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: NLW #2, dia 1 da trilha React
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: NLW #2, dia 2 da trilha React
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: NLW #2, dia 3 da trilha React
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: NLW #2, dia 4 da trilha React
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: NLW #2, dia 5 da trilha React

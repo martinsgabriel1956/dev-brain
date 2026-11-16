@@ -250,6 +250,7 @@ Citados sem página: pacote `sqlite-async`, SQLite Explorer, Excel, Discord, Not
 - O Proffy termina sem edição, exclusão, login e deploy. A "novidade de graça" anunciada no fim fica sem nome.
 - A data provável é agosto de 2020, o quinto dia da NLW #2 `[external, não verificado]`.
 - As tabelas e variáveis aparecem na transcrição como "profi", "profis" e "profits". O vocabulário da aula ("Proffy", a tabela "com S") indica `proffys`/`proffyValue`/`createProffy`, e é essa a grafia desta página. Os trechos em que a legenda deu "prof"/"profs"/`createProf` ficaram literais no raw.
+- A mesma semana teve outra trilha (Diego Fernandes: API com Knex, React, React Native). Comparação em [[wiki/questions/nlw-2-duas-trilhas-proffy-comparacao]].
 - Comparação das duas aulas de banco de dados (NLW #1 com `sqlite3` e callbacks; NLW #2 com `sqlite-async` e `await`) ainda sem página em `questions/`.
 
 ## Raw quotes

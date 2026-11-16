@@ -4,7 +4,7 @@ title: "Navegação Mobile"
 aliases: ["react navigation", "navigation compose", "gorouter flutter", "mobile routing"]
 date_created: 2026-04-24
 date_updated: 2026-11-16
-source_count: 4
+source_count: 6
 tags: [mobile, navegacao, react-navigation, navigation-compose, gorouter, stack, tab]
 skill: tech-mentor-mobile
 status: stable
@@ -82,9 +82,19 @@ Cada tela empilhada na navigation stack não é "de graça" — ela segura estad
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: o stack do React Navigation (Home → Points → Detail), o voltar por gesto no iOS e a menção a abas e drawer. Ver [[wiki/concepts/navegacao-em-pilha]].
 
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+Proffy: stack (`AppStack`) com Landing, GiveClasses e Study, e a rota Study sendo um `createBottomTabNavigator` com Proffys e Favoritos: "uma navegação de abas dentro de uma outra navegação". O `NavigationContainer` aparece uma vez só, e o header volta sempre para a Landing com `navigate`, não `goBack`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+Abas não remontam ao trocar ("já existem desde o começo"), então `useFocusEffect` recarrega os favoritos ao focar; a documentação pede `useCallback` em volta da função. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/mobile-navegacao]]
 - [[wiki/sources/operador-de-crud-vs-engenheiro-repertorio]] — vazamento de memória por navigation stack e ciclo de vida mal gerenciados; OOM kill como sintoma final
 - [[wiki/sources/frontpush-flexbox-pratica-2-desafio-estrutura-de-divs]]: menu web: com poucos itens não precisa de hambúrguer; com muitos, media query troca os links pelo ícone (FrontPUSH)
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: stack no Ecoleta mobile
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: abas dentro da pilha
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: useFocusEffect nas abas

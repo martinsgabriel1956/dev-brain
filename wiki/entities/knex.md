@@ -4,7 +4,7 @@ title: "Knex.js"
 aliases: ["Knex", "knex", "knexfile"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [nodejs, sql, query-builder, migrations, biblioteca]
 skill: lang-dynamic
 status: stub
@@ -26,6 +26,11 @@ Na NLW #1 com [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki/sources/
 
 `[skill: lang-dynamic]` Hoje, em projeto TypeScript, a skill prefere Kysely (query builder com tipos do schema), Drizzle ([[wiki/concepts/drizzle-orm]]) ou Prisma.
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+Proffy: `connection.ts`, `knexfile.ts` com `module.exports`, migrations TS numeradas, `references/inTable/onDelete('CASCADE')`, transaction manual, `whereExists` com `function` (por causa do `this`), `whereRaw` com crases, `count('* as total')` e `knex.raw('CURRENT_TIMESTAMP')`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: conexão, migrations, seeds, transação, join/whereIn
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: Proffy: migrations, transaction, whereExists

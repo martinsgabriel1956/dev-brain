@@ -3,8 +3,8 @@ type: concept
 title: "Otimização Prematura"
 aliases: ["premature optimization", "otimizar prematuramente", "premature optimization root of all evil"]
 date_created: 2026-06-09
-date_updated: 2026-07-09
-source_count: 2
+date_updated: 2026-11-16
+source_count: 3
 tags: [performance, qualidade, design, engenharia-de-software, anti-pattern]
 skill: tech-mentor-leadership
 status: stable
@@ -68,7 +68,12 @@ Reforçado por uma segunda fonte: usar microsserviços para uma base de 100 usu�
 
 ---
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+O controller faz os inserts direto, e Diego diz que "não deveria", mas "não tem porque a gente ficar também otimizando de forma prematura [...] sendo que a aplicação nem tem vida ainda". Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/aprender-antes-de-aplicar-fundamentos-e-otimizacao-prematura]]
 - [[wiki/sources/5-principios-que-mudaram-como-programador]]
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: controller gordo de propósito

@@ -4,7 +4,7 @@ title: "Densidade de pixels"
 aliases: ["pixel density", "@2x @3x", "DPR", "device pixel ratio", "dp", "pt"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [mobile, imagens, design, telas]
 skill: tech-mentor-mobile
 status: stub
@@ -26,7 +26,12 @@ Relacionado: [[wiki/concepts/unidades-de-medida-css]], [[wiki/concepts/imagens-e
 
 Em [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]], [[wiki/entities/mayk-brito|Mayk]] diz que "numa tela de 4K, 16 pixels não é nada". O px do CSS é escalado pela densidade, então num 4K com escala do sistema a medida visual se mantém.
 
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+PNGs em 1x/@2x/@3x escolhidos pelo RN; o exemplo do iPhone X ("mil pixels" × 3) mistura pontos e pixels: são 375 pt e 1125 px. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: exportar 1x/2x/3x do Figma
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: NLW #2, dia 1: "16 pixels num 4K" (imprecisão)
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: iPhone X: pontos × pixels

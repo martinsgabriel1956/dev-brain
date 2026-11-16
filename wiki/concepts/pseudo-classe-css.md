@@ -4,7 +4,7 @@ title: "Pseudo-classe CSS"
 aliases: ["pseudo-classe", "pseudo-class", "pseudo-classes CSS", ":hover", ":focus", ":checked", ":nth-child", ":root"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 11
+source_count: 12
 tags: [css, frontend, seletores-css, pseudo-classe, estados, formularios]
 skill: tech-mentor-frontend
 status: draft
@@ -58,6 +58,10 @@ Em [[wiki/sources/frontpush-variaveis-sass]], o `:hover` do `.link` recebe `box-
 
 Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], o hover do link aninhado precisa de `&:hover`; sem o `&`, o Sass gera `a :hover` (com espaço), que mira os descendentes do `a`. Para o link da página atual, `.active`; `[external]` melhor junto com `aria-current="page"`.
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+`:focus-within` no `.input-block` "vai verificar se dentro desse input block existe um input que tenha focus". Diego primeiro chamou de pseudo-elemento e corrigiu. Também `:hover`, `:first-child` e o irmão adjacente `.input-block + .input-block`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — lista do W3Schools: checked, disabled, focus, hover, nth-child, root
@@ -71,3 +75,4 @@ Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], o hover do link aninhado
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: introdução ao Sass: estados como vantagem
 - [[wiki/sources/frontpush-variaveis-sass]]: Sass aula 04: hover com sombra em variável
 - [[wiki/sources/frontpush-nesting-aninhamento-sass]]: Sass aula 05: `&:hover`
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: :focus-within, :hover, :first-child

@@ -3,8 +3,8 @@ type: concept
 title: "State Management Global — Mobile"
 aliases: ["zustand mobile", "redux toolkit mobile", "riverpod flutter", "bloc flutter"]
 date_created: 2026-04-24
-date_updated: 2026-04-24
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [mobile, state-management, zustand, redux, riverpod, bloc, global-state]
 skill: tech-mentor-mobile
 status: stable
@@ -82,6 +82,11 @@ Bloc para fluxos com eventos complexos e muitos estados — maior verbosidade, m
 - [[wiki/concepts/mobile-state-management-local]] — estado local primeiro
 - [[wiki/concepts/mobile-chamadas-http]] — TanStack Query / Riverpod para server state
 
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+O favorito removido numa aba continua marcado na outra; Diego aponta Context API ou Redux como saída. Parte do problema é local: `useState(favorited)` não acompanha a prop. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/mobile-state-management-global]]
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: favoritos entre abas

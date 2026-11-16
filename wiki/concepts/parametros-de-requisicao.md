@@ -4,7 +4,7 @@ title: "Parâmetros de requisição (route, query e body)"
 aliases: ["route params", "request params", "query params", "request body", "tipos de parâmetros"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [http, api, rest, express, backend]
 skill: lang-dynamic
 status: stub
@@ -28,6 +28,11 @@ Os três lugares onde um cliente manda dados para uma rota HTTP, como [[wiki/ent
 
 Relacionado: [[wiki/concepts/recurso-rest]], [[wiki/concepts/metodos-http]], [[wiki/concepts/requisicao-http]], [[wiki/concepts/middleware]].
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+Os três tipos: body (`express.json()`, senão `undefined`), route params (`/users/:id`, "para identificar [o] recurso") e query params (paginação, filtro, ordenação). A listagem do Proffy filtra por `week_day`, `subject` e `time` na query, com `as string` que ignora o caso de array. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: route params, query params e body no Insomnia e no Express
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: body, route e query params; filtros do Proffy

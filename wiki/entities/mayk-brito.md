@@ -4,7 +4,7 @@ title: "Mayk Brito"
 aliases: ["Mayk", "Maykão"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 11
+source_count: 12
 tags: [pessoa, educador, rocketseat, frontend, html, css, javascript]
 skill: tech-mentor-frontend
 status: stub
@@ -36,6 +36,8 @@ A NLW #1 teve outra trilha, com [[wiki/entities/diego-fernandes|Diego Fernandes]
 
 Comparação com a trilha de Diego: [[wiki/questions/nlw-1-duas-trilhas-ecoleta-comparacao]].
 
+Na NLW #2 (Proffy): [[wiki/questions/nlw-2-duas-trilhas-proffy-comparacao]].
+
 ## Na NLW #2, dia 1 (Mayk Brito)
 
 Conduz o dia 1 da NLW #2, a do Proffy ([[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]), que abre com "Mayk Brito na área" (a transcrição automática dizia "Mike Brito"). Repete o roteiro conceitual do dia 1 da NLW #1, com as mesmas analogias (garçom e cozinheiro, corpo humano, rotina matinal), e gasta a segunda metade em fundamentos de CSS: força dos seletores, pais e filhos, `rem` x `em`, box model, `box-sizing`, display. Diz ter "muita dificuldade de digitação" e por isso cola o código: "ainda assim é possível ser um bom desenvolvedor, mesmo tendo dificuldades, igual eu".
@@ -56,6 +58,10 @@ Também conduz o dia 4 ([[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjuck
 
 Fecha a NLW #2 com o dia 5 ([[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]): SQLite, `async`/`await`, JOIN e o cadastro por POST no Proffy. Deixa os erros de sintaxe no vídeo ("o seu trabalho é resolver erros"), conta que guardava prints das aulas do GoStack no Notion e anuncia uma "novidade incrível [...] totalmente de graça" sem detalhes.
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+Citado por Diego como autor da analogia do restaurante (front = salão, back = cozinha) e de um vídeo sobre REST × RESTful; aparece "mexendo" na transmissão. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: NLW #1, dia 1, página inicial do Ecoleta em HTML e CSS
@@ -69,3 +75,4 @@ Fecha a NLW #2 com o dia 5 ([[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-pro
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: página give-classes e primeiro JavaScript
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: back-end do Proffy
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: banco de dados do Proffy
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: a analogia do restaurante

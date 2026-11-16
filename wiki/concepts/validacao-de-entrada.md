@@ -4,7 +4,7 @@ title: "Validação de Entrada"
 aliases: ["input validation", "validação de dados", "nunca confie no client"]
 date_created: 2026-07-09
 date_updated: 2026-11-16
-source_count: 11
+source_count: 14
 tags: [validacao, seguranca, backend, regra-de-negocio, arquitetura-em-camadas, celebrate, joi, schema-validation]
 skill: tech-mentor-backend
 status: stub
@@ -67,6 +67,18 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], a página de estudo confere só se os filtros existem (`if (!filters.subject || !filters.weekday || !filters.time)`), não se são números válidos. O cadastro não confere nada antes de gravar. Validar tipo e formato e usar placeholders `?` fecharia a injeção.
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+Só a listagem valida presença dos filtros (400). O `POST /classes` aceita `cost` negativo, `week_day` 9 e `from > to`, e o usuário duplica a cada envio; os `as string` não checam tipo em tempo de execução. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+O front só converte `cost` com `Number`; `week_day` vai como string, o WhatsApp vai sem normalização para o `wa.me`, e nada impede dois horários no mesmo dia. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+Os filtros são texto livre: "segunda-feira" não casa com o `week_day` numérico, e a busca "não aconteceu"; o Picker sugerido e validação resolveriam. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/10-conceitos-fundamentais-backend]]
@@ -80,3 +92,6 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], a página de estud
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: texto livre comparado por igualdade
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: celebrate/Joi no POST e o que ficou de fora
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: só checa presença dos filtros
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: sem validação no cadastro de aula
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: cadastro e WhatsApp sem validação
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: filtros em texto livre

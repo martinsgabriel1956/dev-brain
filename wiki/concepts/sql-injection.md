@@ -4,7 +4,7 @@ title: "SQL Injection"
 aliases: ["sql injection", "sqli", "injeção sql", "bobby tables"]
 date_created: 2026-06-10
 date_updated: 2026-11-16
-source_count: 13
+source_count: 14
 tags: [security, sql-injection, owasp, input-sanitization, appsec, attack-surface]
 skill: tech-mentor-security
 status: stable
@@ -102,6 +102,10 @@ Em [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]],
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], tudo é interpolado: o `INSERT` coloca `"${proffyValue.name}"` vindo de `req.body`, e a busca coloca `filters.subject`, `weekday` e o horário de `req.query`. Uma bio com aspas já quebra o cadastro, e um `subject` como `1' OR '1'='1` traz todos os professores. A NLW #1 pelo menos usava `?` no INSERT.
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+Nenhuma entrada é interpolada: o builder e os bindings do `whereRaw` parametrizam (embora com `??` onde caberia `?`). Contraste com o dia 5 do Mayk, que interpolava `req.query`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/cinco-praticas-seguranca-pragmatic-programmer]] — Bobby Tables como exemplo central de sanitização de input
@@ -117,3 +121,4 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], tudo é interpolad
 - [[wiki/sources/sql-injection-sqlmap-luiz-viana]] — exploração automatizada com SQLMap: taxonomia de técnicas (blind/error/UNION-based), leitura/escrita de arquivo no servidor via `LOAD_FILE`/`INTO OUTFILE`, `--level`/`--risk` para reduzir falso negativo, injeção via POST/cookie e bypass de WAF com tampers
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: LIKE com interpolação na busca do Ecoleta
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: INSERT e busca interpolados
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: bindings × interpolação no Proffy

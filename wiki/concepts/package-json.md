@@ -4,7 +4,7 @@ title: "package.json"
 aliases: ["package.json", "package-lock.json", "npm init", "manifesto do projeto Node"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [nodejs, npm, dependencias, json, tooling]
 skill: lang-dynamic
 status: stub
@@ -35,8 +35,13 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-
 
 Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], `npm init -y` cria o `package.json`; as dependências aparecem nele, o `package-lock.json` "mapeia" a árvore e um script `dev` com nodemon roda por `npm run dev`.
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+`yarn init -y`; script `start` com `tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts` e `knex:migrate` com `--knexfile knexfile.ts`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: npm init -y, scripts start, dependencies e devDependencies; node_modules fora do Git
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: npm init -y, -D, script dev; package-lock como "cache" (incorreto)
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: script dev
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: scripts start e knex:migrate

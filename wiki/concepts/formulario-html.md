@@ -4,7 +4,7 @@ title: "Formulário HTML (form, fieldset, label, input, select)"
 aliases: ["form", "formulário", "fieldset", "legend", "label", "input", "select", "option", "input hidden", "button submit"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 8
+source_count: 9
 tags: [html, formulario-html, acessibilidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -54,6 +54,10 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], o fil
 
 Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o cadastro do professor usa três `fieldset` com `legend`; `required`; `type="url"`, `number` e `time`; `textarea` (sem quebra de linha entre as tags); `small`; `name="weekday[]"` para valores repetidos; `button type="button"` para não enviar; e `form="create-class"` num botão fora do form. Tensões: os campos de horário perdem o `id` e os labels ficam soltos; colchetes no name são convenção do servidor; WhatsApp deveria ser `type="tel"`; `required` não substitui validação no back-end.
 
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+`main` com três `fieldset`/`legend` ("usar as tags do HTML a nosso favor"), botão dentro do `legend`, `select` com placeholder `value="" disabled hidden`, `input type="time"` (valor sempre em 24 h), `textarea` com `resize: vertical`, `type="submit"` vs `type="button"`. Os ids repetem a cada linha de horário (`from`, `to`). Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: cadastro do Ecoleta, fieldset, name, number, disabled, hidden
@@ -64,3 +68,4 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], o cadast
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: formulário em React com onSubmit e preventDefault
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: filtros do Proffy; for liga ao id
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: fieldset, required, form=, name[]
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: fieldsets do cadastro de aula; ids duplicados

@@ -4,7 +4,7 @@ title: "Acessibilidade (em interfaces)"
 aliases: ["a11y", "acessibilidade digital", "acessibilidade web", "design acessível", "design inclusivo", "accessibility"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 16
+source_count: 19
 tags: [acessibilidade, a11y, ux, ui-design, wcag, contraste, alt-text, carga-cognitiva, html-semantico]
 skill: ux-ui-mentor
 status: stub
@@ -73,6 +73,18 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], tirar o 
 
 Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], o link da página atual fica rosa com uma classe `.active`. `[external]` Para leitor de tela, `aria-current="page"` no link; o estilo pode mirar o atributo e dispensar a classe.
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+A raiz em porcentagem é defendida "principalmente também para acessibilidade", e o `alt` serve "para a gente descrever exatamente o que aquela imagem está querendo dizer". Ficam dois detalhes: o ícone do WhatsApp com `alt` repete o texto do botão (seria `alt=""`), e a linha de foco substitui o `outline` removido. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+Botão "Buscar" no lugar de submeter ao mudar o horário, porque "o botão seria muito melhor" para a acessibilidade; mas os horários repetem `id`/`htmlFor`, e a label da segunda linha aponta para o campo da primeira. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+O voltar do header é um `BorderlessButton` só com imagem, sem `accessibilityLabel`; as abas ganham rótulo pelo `tabBarLabel`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/acessibilidade-wcag-contraste-textos-invisiveis-kiss-patterns]] — aula dedicada: nós não somos o usuário; contraste A/AA/AAA; textos invisíveis; KISS; patterns e guidelines
@@ -89,3 +101,6 @@ Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], o link da página atual 
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: reposicionar áreas muda só o visual, como `order` `[external]`
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: labels soltos nos campos clonados
 - [[wiki/sources/frontpush-nesting-aninhamento-sass]]: link ativo: `.active` × `aria-current`
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: rem, alt e linha de foco
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: botão Buscar; ids repetidos
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: botão de voltar sem rótulo

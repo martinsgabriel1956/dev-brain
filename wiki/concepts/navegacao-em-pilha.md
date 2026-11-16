@@ -4,7 +4,7 @@ title: "Navegação em pilha (stack navigation)"
 aliases: ["stack navigation", "stack navigator", "pilha de telas"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [mobile, navegacao, react-native, ux]
 skill: tech-mentor-mobile
 status: stub
@@ -24,6 +24,11 @@ Na explicação de [[wiki/entities/diego-fernandes]] ([[wiki/sources/nlw-1-diego
 
 Relacionado: [[wiki/concepts/mobile-navegacao]], [[wiki/concepts/client-side-routing]].
 
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+"Quando geralmente eu tenho um botão de voltar [...] a tela anterior ela não deixa de existir." `goBack()` na tela "dar aulas"; `navigate('Landing')` no header das abas, para não voltar à aba anterior. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: Home → Points → Detail
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: goBack × navigate('Landing')

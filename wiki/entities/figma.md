@@ -4,7 +4,7 @@ title: "Figma"
 aliases: ["figma.com"]
 date_created: 2026-04-22
 date_updated: 2026-11-16
-source_count: 51
+source_count: 52
 tags: [figma, design, ferramenta, design-first]
 skill: tech-mentor-frontend
 status: stub
@@ -174,6 +174,10 @@ Em [[wiki/sources/frontpush-variaveis-sass]], a sombra do botão é feita com o 
 
 Em [[wiki/sources/frontpush-funcoes-sass]]: as versões clara e escura das cores saem do Figma e viram variáveis do Sass, em vez de `darken`/`lighten`; o bloco vermelho de 30% no layout do Nubank aparece como RGBA no Inspect.
 
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+Layout da versão 2.0 do Proffy (web e mobile: login, cadastro, perfil, onboarding) entregue como desafio. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/novos-cargos-ia-e-hunting-de-vagas-fora-do-linkedin]] — design deixa de montar do zero no Figma
@@ -227,3 +231,4 @@ Em [[wiki/sources/frontpush-funcoes-sass]]: as versões clara e escura das cores
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: estado vazio e versão 2.0
 - [[wiki/sources/frontpush-variaveis-sass]]: Smooth Shadow e Inspect → variável Sass
 - [[wiki/sources/frontpush-funcoes-sass]]: variações de cor no Figma, não no Sass
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: Proffy 2.0

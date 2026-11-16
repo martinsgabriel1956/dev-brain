@@ -4,7 +4,7 @@ title: "Renderização SSR vs. CSR"
 aliases: ["server-side rendering", "client-side rendering", "SSR", "CSR", "SSR vs CSR"]
 date_created: 2026-09-14
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [frontend, ssr, csr, nodejs, event-loop, performance, nextjs]
 skill: lang-dynamic
 status: stable
@@ -56,12 +56,19 @@ Demonstração de CSR em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-re
 
 O Ecoleta nos dois modelos, lado a lado: [[wiki/questions/nlw-1-duas-trilhas-ecoleta-comparacao]].
 
+O Proffy nos dois modelos (formulário com POST e Nunjucks x estado do React com `api.post`): [[wiki/questions/nlw-2-duas-trilhas-proffy-comparacao]].
+
 ## Key Sources
 
 - [[wiki/sources/node-single-thread-ssr-bloqueio-event-loop]]
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: SSR com Nunjucks; "full MVC"
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+De novo a `div#root` vazia: o React "vai rodar sempre a partir do lado do cliente", e com JavaScript desabilitado "não vai ter nada". Antes, no MVC, "o HTML [...] já vinha pronto lá do servidor". Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — origem histórica: templates no servidor (PHP/ASP) vs. SPAs que movem o estado ao cliente
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: o Ecoleta em CSR (API + React) x a versão SSR com Nunjucks
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: Ecoleta web em CSR (div#root vazia)
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: div#root e MVC × SPA

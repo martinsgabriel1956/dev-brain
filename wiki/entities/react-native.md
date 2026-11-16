@@ -4,7 +4,7 @@ title: "React Native"
 aliases: ["RN"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 5
 tags: [mobile, react-native, react, javascript, ios, android, cross-platform]
 skill: tech-mentor-mobile
 status: stub
@@ -25,7 +25,22 @@ Na aula de [[wiki/entities/diego-fernandes]] ([[wiki/sources/nlw-1-diego-fernand
 
 No dia 4 da NLW #1 com [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]), o Ecoleta ganha o app: `View`/`Text` no lugar do HTML, `StyleSheet` com Yoga (tudo flexbox, sem cascata), `RectButton`, React Navigation, react-native-maps, `Linking` e `KeyboardAvoidingView`. "O resto é tudo igual" ao React da web.
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+Citado como renderizador irmão do `react-dom`: o mesmo núcleo `react`, com a interface "nativa do iOS, do Android". Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+NLW #2: "90%, se não mais" do React web reaproveitado; `View`/`Text`, `StyleSheet` em camelCase, sem herança, flexbox em column, `ImageBackground`, `resizeMode`, `elevation` no Android. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+Dia 5: `source={{ uri }}` exige largura e altura, sem atalho `border`, `ScrollView` com `contentContainerStyle`, `TextInput` com `onChangeText` e `placeholderTextColor`, `Linking.openURL`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: abordagem tradicional x React Native, JavaScriptCore, interface nativa
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: o app do Ecoleta: diferenças da web, navegação, mapa e deep link
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: renderizador irmão do react-dom
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: Proffy: View/Text, StyleSheet, ImageBackground
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: uri, ScrollView, TextInput e Linking

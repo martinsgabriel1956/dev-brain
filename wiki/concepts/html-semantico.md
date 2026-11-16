@@ -4,7 +4,7 @@ title: "HTML semântico (tags semânticas do HTML5)"
 aliases: ["tags semânticas", "semantic HTML", "HTML5 semântico", "elementos semânticos"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 10
+source_count: 12
 tags: [html, html5, semantica, seo, acessibilidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -48,6 +48,14 @@ Em [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]], [
 
 Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], a página study usa `header`, `main` ("o conteúdo principal da página") e `article` ("um tipo de conteúdo que vai se repetir aqui várias vezes"), cada um com `header`, `p` e `footer`. O título do header vai em `strong`, que "já vem com o bold".
 
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+`main` para a caixa do formulário e `fieldset` para cada bloco, contra o hábito de `div`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+"No mobile nós não temos elementos com resultado semântico": `View` para todo bloco e `Text` para todo texto; a semântica, porém, vai em `accessibilityRole`/`accessibilityLabel`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — header, nav, section, article, figure, footer; visual igual à div; motivo dado: Google
@@ -60,3 +68,5 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], a pá
 - [[wiki/sources/frontpush-order-e-align-self]]: ordem do HTML como ordem de leitura; `order` do flexbox só muda o visual `[external]`
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: header/ul/section, mas nav em div e sem h1 `[external]`
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: header, main, article, strong
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: main e fieldset no Proffy
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: View/Text e semântica por props

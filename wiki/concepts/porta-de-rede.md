@@ -4,7 +4,7 @@ title: "Porta de Rede"
 aliases: ["port", "port number", "well-known ports", "registered ports", "dynamic ports", "ephemeral ports"]
 date_created: 2026-07-15
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [porta, tcp-ip, iana, networking, cs-fundamentals]
 skill: tech-mentor-networking
 status: draft
@@ -72,6 +72,11 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o servido
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: 5500, 3000, 80; 443 para HTTPS
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: 5500; 80 x 443
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+"Quando nós não temos a porta, quer dizer que a porta é 80" (é o padrão do HTTP; HTTPS usa 443); em desenvolvimento, 3333 para a API e 3000 para o front. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Key sources (adição 2026-10-14)
 - [[wiki/sources/historia-do-front-end-akita-ep4]] — 80/22/443 e 3000/5000/8080 como convenções arbitrárias
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: porta 5500 do Live Server (FrontPUSH)
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: 3333 × 3000; 80 e 443

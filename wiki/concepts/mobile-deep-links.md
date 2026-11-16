@@ -4,7 +4,7 @@ title: "Deep Links Mobile — Universal Links, App Links"
 aliases: ["universal links ios", "app links android", "deferred deep links", "mobile url scheme"]
 date_created: 2026-04-24
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [mobile, deep-links, universal-links, app-links, deferred-deep-links]
 skill: tech-mentor-mobile
 status: stable
@@ -62,8 +62,13 @@ No app do Ecoleta ([[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-t
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], `Linking.openURL('whatsapp://send?phone=...&text=...')` abre o WhatsApp pelo esquema do app. O texto vai sem `encodeURIComponent`. O link universal `https://wa.me/` funciona mesmo sem o app.
 
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+"Uma aplicação abrir outra": `Linking.openURL('whatsapp://send?phone=...')`, testado no celular físico; sem `canOpenURL` nem `catch`, e o `https://wa.me/` seria o fallback universal. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/mobile-deep-links]]
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: deep link para o WhatsApp no Ecoleta
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: whatsapp://send no Ecoleta; wa.me como alternativa
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: whatsapp://send no Proffy

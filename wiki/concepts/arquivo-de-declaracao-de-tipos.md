@@ -4,7 +4,7 @@ title: "Arquivo de declaração de tipos (.d.ts e @types)"
 aliases: [".d.ts", "@types", "DefinitelyTyped", "declaration file", "definição de tipos"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 4
+source_count: 7
 tags: [typescript, tipagem, npm, dependencias]
 skill: lang-dynamic
 status: stub
@@ -33,9 +33,24 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], `@types/multer` e `@types/hapi__joi`: pacotes com escopo (`@hapi/joi`) viram `escopo__nome` no DefinitelyTyped. Hoje o `joi` traz os próprios tipos.
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+`yarn add @types/react-router-dom -D`, porque alguns módulos "não incluem a tipagem do TypeScript" e só servem em desenvolvimento. O React Router v6+ já traz os próprios tipos. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+`@types/express` e `@types/cors` como devDependencies, "porque não vamos utilizar isso aqui em produção"; o `Request`/`Response` do Express tipa o controller. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+`src/@types/index.d.ts` com `declare module '*.png'`, "lido somente pelo TypeScript", para importar imagens no app. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: aviso do import, `@types/express -D`, navegação até os tipos
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: @types de react-router-dom e react-leaflet; axios com tipos
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: declaração de módulo para imagens
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: convenção hapi__joi
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: @types/react-router-dom como devDependency
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: @types/express e @types/cors
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: declare module '*.png'

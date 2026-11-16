@@ -4,7 +4,7 @@ title: "React Router"
 aliases: ["react-router-dom", "React Router DOM", "BrowserRouter"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 4
 tags: [react, roteamento, spa, biblioteca]
 skill: tech-mentor-frontend
 status: stub
@@ -28,7 +28,17 @@ Na NLW #1 com [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki/sources/
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], Diego compara o `NavigationContainer` do React Navigation ao `BrowserRouter`. No mobile as telas têm nome, não URL.
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+v5 no Proffy: `BrowserRouter`, `Route path exact component`, `Link to`, e a aba Network mostrando que o `Link` não recarrega a página. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+`useHistory().push('/')` depois do cadastro, para redirecionar "depois que alguma ação acontece", e não por clique (que é o `Link`). No v6 virou `useNavigate`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: BrowserRouter, Route exact, Link, useHistory
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: comparação com o React Navigation
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: rotas /, /study e /give-classes
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: useHistory no cadastro de aula

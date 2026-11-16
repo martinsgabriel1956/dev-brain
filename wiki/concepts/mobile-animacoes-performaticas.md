@@ -4,7 +4,7 @@ title: "Animações Performáticas — Mobile"
 aliases: ["reanimated 3", "compose animation", "flutter animations", "mobile jank"]
 date_created: 2026-04-24
 date_updated: 2026-11-16
-source_count: 4
+source_count: 5
 tags: [mobile, animacoes, reanimated, compose, flutter, ui-thread, jank]
 skill: tech-mentor-mobile
 status: stable
@@ -53,9 +53,14 @@ val offsetX by animateFloatAsState(
 - [[wiki/concepts/mobile-performance-listas]] — virtualização para listas animadas
 - [[wiki/concepts/mobile-profiling]] — medir jank antes de otimizar
 
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+"Não tem a parte de animações" refere-se ao CSS; o RN tem `Animated`/Reanimated, e o ripple do `RectButton` vem do Gesture Handler. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/mobile-animacoes-performaticas]]
 - [[wiki/sources/imagens-e-ilustracoes-svg-no-figma-undraw-mockup-iphone-codigo]] — filtros SVG exportados do Figma (sombra) têm custo de renderização ao animar (nota do agente)
 - [[wiki/sources/imagens-e-ilustracoes-vetorizar-icones-figma-pen-tool-bend-tool]] — ícones animados com sombra interna e externa no SVG (filtros com custo de renderização; nota do agente)
 - [[wiki/sources/frontpush-layout-css-botao-hover-flexbox-media-query]]: hover com `transform: scale` (compositor) no CSS da web; ver [[wiki/concepts/transition-e-transform-css]]
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: animações × CSS no RN

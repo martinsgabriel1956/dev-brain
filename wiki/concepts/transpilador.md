@@ -4,7 +4,7 @@ title: "Transpilador (Sass, Less, CoffeeScript, Babel)"
 aliases: ['transpiler', 'pré-processador']
 date_created: 2026-10-14
 date_updated: 2026-11-16
-source_count: 3
+source_count: 5
 tags: [transpilador, build, javascript, css, historia]
 skill: tech-mentor-frontend
 status: draft
@@ -20,7 +20,17 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-
 
 - [[wiki/sources/historia-do-front-end-akita-ep4]]
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+O `react-scripts` esconde Babel ("o JavaScript mais moderno para um JavaScript um pouquinho mais antigo") e Webpack. O Babel também transforma o JSX e apaga os tipos do TypeScript, sem checá-los. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+`tsc --init` com `target: ES2017`, "as funcionalidades que o Node entende"; o ts-node-dev com `--transpile-only` só converte, sem checar tipos. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Key sources (adição 2026-10-14)
 
 - [[wiki/sources/por-que-c-e-alto-nivel-abstracao-portabilidade-hardware]] — alternativa citada para melhorar o ecossistema de C: linguagens que transpilam para C ([[wiki/concepts/dependencia-de-caminho-em-tecnologia]])
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: TypeScript convertido para JS; type stripping no Node
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: Babel no react-scripts
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: target ES2017 e transpile-only

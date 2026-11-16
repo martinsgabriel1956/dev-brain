@@ -3,8 +3,8 @@ type: concept
 title: "Performance de Listas Mobile"
 aliases: ["flashlist react native", "lazycol android", "listview builder flutter", "mobile virtualization"]
 date_created: 2026-04-24
-date_updated: 2026-04-24
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [mobile, listas, flashlist, flatlist, lazycol, virtualizacao, performance]
 skill: tech-mentor-mobile
 status: stable
@@ -67,6 +67,11 @@ ListView.builder(
 - [[wiki/concepts/mobile-animacoes-performaticas]] — animações em itens de lista
 - [[wiki/concepts/mobile-profiling]] — medir jank com Perfetto/Instruments
 
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+Lista de professores em `ScrollView` "da maneira mais fácil possível", com `contentContainerStyle` para o padding; `FlatList`/FlashList virtualizariam, o que a paginação infinita da versão 2.0 vai exigir. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/mobile-performance-listas]]
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: ScrollView × FlatList no Proffy

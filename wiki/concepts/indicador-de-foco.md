@@ -4,7 +4,7 @@ title: "Indicador de foco (outline, :focus-visible, :focus-within)"
 aliases: ["indicador de foco", "focus indicator", "outline", "outline: none", "focus visible", ":focus-visible", ":focus-within"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [css, acessibilidade, foco, teclado, wcag, formulario, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -27,6 +27,11 @@ Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], [[wik
 
 O substituto cobre só o `input`. Nos `select`, que também perderam o outline, ele dispensa a linha porque "quando a gente clica nele automaticamente ele abre". Isso vale para o mouse; quem chega pelo Tab não vê onde está. Inferência do agente com base no critério 2.4.7.
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+Mesma linha de foco do Mayk, agora em React: `outline: 0` no input e `.input-block:focus-within::after` como substituto. O indicador existe; falta só conferir o contraste. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: `outline: 0` nos campos, linha com `:focus-within::after` só no input, select sem substituto
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: :focus-within::after em React

@@ -4,7 +4,7 @@ title: "Visual Studio Code"
 aliases: ["VS Code", "VSCode"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 19
+source_count: 23
 tags: [ferramenta, editor, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -73,6 +73,22 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o termina
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], a extensão SQLite abre o `database.sqlite` (Open Database) no SQLite Explorer, com Show Table. O editor deixa cinza uma variável não usada, e foi assim que Mayk achou `insertedClass` trocado; Alt+clique põe aspas em vários `${}` de uma vez.
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+`code .` e "Install code command in PATH", terminal integrado, Emmet em TSX, auto import (`suggest.autoImports`), `Ctrl+.` para importar e a fonte Fira Code com ligaduras. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+Extensão SQLite (Open Database, SQLite Explorer, Show Table, New Query + Run Query) com o bug de tabela em branco resolvido por Reload Window; Material Icon Theme com ícone para `migrations`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+Multicursor e `Ctrl+Shift+L` ("select all occurrences of find match") para trocar `input` por `textarea`/`select` e replicar `value`/`onChange`: "essas mandingas do VS Code". Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+Criar pasta e arquivo de uma vez digitando `favorites/index.tsx` no "new file". Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/basico-css-o-que-e-sintaxe-inline-incorporado-externo]] — Emmet e Live Server na aula de básico de CSS
@@ -94,3 +110,7 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], a extensão SQLite
 - [[wiki/sources/frontpush-instalacao-sass-live-sass-compiler-scout-app]]: Live Sass Compiler e Live Server
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: Git Bash no terminal integrado
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: extensão SQLite e variável não usada
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: code ., auto import, Emmet, Fira Code
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: extensão SQLite e Reload Window
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: multicursor e Ctrl+Shift+L
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: pasta e arquivo no new file

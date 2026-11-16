@@ -4,7 +4,7 @@ title: "Breakpoint"
 aliases: ["breakpoints", "ponto de quebra", "media query breakpoint", "small medium large extra-large", "sm md lg xl xxl"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 13
+source_count: 14
 tags: [ui, ui-design, layout, grid, responsividade, design-responsivo, breakpoint, breakpoints, media-query, resolucao, css]
 skill: ux-ui-mentor
 status: stub
@@ -94,6 +94,10 @@ Em [[wiki/sources/frontpush-mixin-e-content-sass]], os breakpoints do curso (960
 
 Em [[wiki/sources/frontpush-if-else-sass]]: `xl` acima de 1440, `l` 1140–1440, `m` 960–1140, `s` abaixo de 960, `xs` abaixo de 540, escolhidos por `@if` num mixin de layout com `@content`.
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+1100 px para a landing ("cada layout é um layout diferente", sem regra fixa) e 700 px para raiz, listagem e header. Diego cita 1366 px como a menor tela comum de desktop. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
 ## Mixin responsive do projeto Nubank (FrontPUSH, Sass aula 10)
 
 Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: `xl` > 1440, `l` 1140–1440, `m` 960–1140, `s` < 960, `xs` < 540, "boas divisões com base no próprio sistema de grids do Bootstrap", mas "na maioria das vezes, eu simplesmente aplico de 960 pixels para baixo". `[external]` 540/720/960/1140 são as larguras de container do Bootstrap 4; os breakpoints dele são 576/768/992/1200.
@@ -112,4 +116,5 @@ Em [[wiki/sources/frontpush-grid-system-sass-parte-1]]: `xl` > 1440, `l` 1140–
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: `max-width: 960px` (desktop-first, mesmo valor da aula de flex-direction) troca o `grid-template-areas`
 - [[wiki/sources/frontpush-mixin-e-content-sass]]: 960/720 como mixins `responsive-tablet`/`-mobile`
 - [[wiki/sources/frontpush-if-else-sass]]: escala xl/l/m/s/xs (1440/1140/960/540)
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: 1100 e 700 px no Proffy em React
 - [[wiki/sources/frontpush-grid-system-sass-parte-1]]: escala xl–xs; 540/960/1140 são containers do Bootstrap 4

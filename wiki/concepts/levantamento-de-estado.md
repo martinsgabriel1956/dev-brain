@@ -4,7 +4,7 @@ title: "Levantamento de estado (lifting state up)"
 aliases: ["lifting state up", "levantar estado", "callback como prop", "comunicação filho → pai"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [react, estado, componentes, props]
 skill: lang-dynamic
 status: stub
@@ -20,6 +20,11 @@ No Ecoleta ([[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-d
 
 Relacionado: [[wiki/concepts/props-react]], [[wiki/concepts/useState]], [[wiki/concepts/estado-compartilhado]], [[wiki/concepts/callback-javascript]].
 
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+O `TeacherItem` copia `favorited` para um estado próprio e perde a sincronia; manter os ids no `TeacherList` e passar `favorited` + `onToggle` seria a fonte de verdade única. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: Dropzone → CreatePoint
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: favorito: estado no pai

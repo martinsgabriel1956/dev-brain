@@ -4,7 +4,7 @@ title: "Desestruturação (JavaScript)"
 aliases: ["desestruturação", "destructuring", "destructuring assignment", "desestruturar objeto", "desestruturar array"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 3
 tags: [javascript, sintaxe, objeto, array, lang-dynamic]
 skill: tech-mentor-data
 status: stub
@@ -30,6 +30,16 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], [[wiki/entities/ma
 
 Ele também usa a forma curta de propriedade, `{ weekday }` no lugar de `{ weekday: weekday }`: "se eu repito os nomes eu não preciso ficar repetindo".
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+`const { name, avatar, whatsapp, bio, subject, cost, schedule } = request.body`, `const [hour, minutes] = time.split(':').map(Number)` e `const { total } = totalConnections[0]`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+`({ label, name, ...rest })` (rest) e `{...rest}` no JSX (spread); `const { total } = response.data`; `[...scheduleItems, novo]` e `{ ...scheduleItem, [field]: value }` com chave computada. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: desestruturação no require, no split e nos parâmetros do createProffy
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: body, split e count
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: rest, spread e chave computada

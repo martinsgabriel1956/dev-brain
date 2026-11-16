@@ -4,7 +4,7 @@ title: "SVG (Scalable Vector Graphics)"
 aliases: ["svg", "scalable vector graphics", "imagem vetorial", "vector image"]
 date_created: 2026-07-29
 date_updated: 2026-11-16
-source_count: 14
+source_count: 15
 tags: [formatos-de-imagem, svg, vetorial, frontend]
 skill: cs-fundamentals
 status: stub
@@ -62,6 +62,10 @@ Em [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]], [[wiki/entitie
 
 Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[wiki/entities/mayk-brito|Mayk Brito]] edita o SVG à mão para colorir um ícone: a seta de voltar herda preto porque o `stroke` é `currentColor`, e ele cola o `stroke` verde do `log-in.svg`.
 
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+O RN "não lê SVG" sem `react-native-svg`, então o app usa PNG; o SVG faria falta para tingir ícones, o que a aula resolve com fonte de ícones. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/historia-dos-formatos-de-imagem]]
@@ -78,3 +82,4 @@ Em [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]], [[w
 - [[wiki/sources/icones-pratica-figma-plugins-icones-proprios-cards-constraints]] — Feather exporta SVG ("sempre isso é muito bom"); ícone do módulo "propriedade do SVG"
 - [[wiki/sources/nlw-1-dia-1-programacao-web-html-css-ecoleta]]: fundo e ícones do Ecoleta
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: stroke currentColor trocado à mão
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: PNG no lugar de SVG no app

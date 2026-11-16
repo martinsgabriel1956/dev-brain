@@ -4,7 +4,7 @@ title: "Query string"
 aliases: ["query string", "query strings", "parâmetros de URL", "req.query", "URLSearchParams"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 6
+source_count: 8
 tags: [http, url, formulario, backend, web]
 skill: lang-dynamic
 status: stub
@@ -40,6 +40,14 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], os filtro
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o redirect monta `?subject=...&weekday=...&time=...` concatenando `req.body` à mão; os valores são números e horas, mas texto livre pediria `URLSearchParams` ou `encodeURIComponent`. A busca lê os mesmos nomes em `req.query`.
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+`GET /classes?week_day=1&subject=Matemática&time=9:00`; o Insomnia monta a query pela aba Query. O valor chega como string (daí `Number(week_day)`) e pode chegar como array. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+No Axios, os filtros do GET vão em `{ params: { subject, week_day, time } }`, porque o segundo argumento direto só vale para POST/PUT. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: req.query no Express; GET x POST no formulário do Ecoleta
@@ -48,3 +56,5 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o redirect monta `
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: form sem action manda os campos na URL
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: req.query nos filtros e no cadastro
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: query string montada para o redirect
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: filtros de aulas na query
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: params do Axios

@@ -4,7 +4,7 @@ title: "Renderização condicional (React)"
 aliases: ["conditional rendering", "&& no JSX", "ternário no JSX", "early return"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 4
 tags: [react, react-native, jsx]
 skill: tech-mentor-mobile
 status: stub
@@ -24,6 +24,21 @@ Na aula de [[wiki/entities/diego-fernandes]] ([[wiki/sources/nlw-1-diego-fernand
 
 Relacionado: [[wiki/concepts/jsx]], [[wiki/concepts/useState]], [[wiki/concepts/maquina-de-estados-ui]].
 
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+`{props.description && <p>...</p>}` no lugar do ternário com `null`, explicado pelo truthy. Funciona com string; com número, o `0` seria renderizado. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+`if (!fontsLoaded) return <AppLoading />` até as fontes do `useFonts` carregarem, para "parecer que o app ainda está carregando". Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+`{isFiltersVisible && (<View>...</View>)}` para mostrar e esconder os filtros, e `{headerRight}` no header; ternário para ícone e estilo do favorito. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: MapView condicionado à posição; early return no detalhe
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: && para a descrição opcional
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: AppLoading até as fontes
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: filtros com && e headerRight

@@ -4,7 +4,7 @@ title: "Listas no HTML (ul, ol, li) e list-style"
 aliases: ["ul", "ol", "li", "lista não ordenada", "lista ordenada", "list-style", "list-style-type"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [html, css, listas, menu, acessibilidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -26,6 +26,10 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet
 
 Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], `ul.list` > `li` > `a` é a estrutura do menu, estilizada com `list-style: none` e aninhamento no SCSS.
 
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+`options.map(...)` gerando `<option key value>`, `teachers.map(...)` gerando `TeacherItem key={teacher.id}`; key duplicada no `scheduleItems` por usar o dia da semana. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/frontpush-css-classes-e-ids-seletores-link-style-css]]: ul x ol, menu com ul/li, list-style none/square
@@ -33,3 +37,4 @@ Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], `ul.list` > `li` > `a` �
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: ul/li gerados por map com key
 - [[wiki/sources/frontpush-flexbox-pratica-1-layout-youtube-estrutura-html]]: menu como `ul.nav-menu` > `li.nav-item` > `a.nav-link`
 - [[wiki/sources/frontpush-nesting-aninhamento-sass]]: menu `ul > li > a` no Sass
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: map com key no Proffy

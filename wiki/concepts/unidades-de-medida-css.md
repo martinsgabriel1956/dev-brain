@@ -4,7 +4,7 @@ title: "Unidades de medida no CSS (px, pt, em, rem, cm, %)"
 aliases: ["unidades CSS", "medidas relativas", "medidas absolutas", "px rem em", "CSS units"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 10
+source_count: 11
 tags: [css, unidades, responsividade, rem, em, porcentagem]
 skill: tech-mentor-frontend
 status: stub
@@ -48,6 +48,10 @@ Em [[wiki/sources/frontpush-mixin-e-content-sass]], os tamanhos responsivos est�
 
 Em [[wiki/sources/frontpush-funcoes-sass]], `($col / $total) * 100%` devolve `%` porque o Sass carrega unidades nas contas: `0.25 * 100%` = `25%`. `[skill: tech-mentor-frontend]` No CSS puro, `calc(3 / 12 * 100%)` faz o mesmo.
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+Raiz em 60% (1 rem = 9,6 px) e 62,5% a partir de 700 px (1 rem = 10 px), com a conta certa. A explicação de `1.6rem` como "60% a mais do font size do meu elemento" confunde rem com em: é 1,6 × a raiz. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/box-model-tudo-e-caixa-tags-semanticas-padding-margin-border]] — lista do slide; fixas x relativas; % e rem para responsividade
@@ -60,3 +64,4 @@ Em [[wiki/sources/frontpush-funcoes-sass]], `($col / $total) * 100%` devolve `%`
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: root 40% e 62,5%; fr; px no desktop
 - [[wiki/sources/frontpush-mixin-e-content-sass]]: tipografia em px; rem respeita a preferência do usuário
 - [[wiki/sources/frontpush-funcoes-sass]]: % calculada com unidade no Sass
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: 60% = 9,6 px, 62,5% = 10 px; rem × em

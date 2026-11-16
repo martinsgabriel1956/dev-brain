@@ -4,7 +4,7 @@ title: "Métodos HTTP"
 aliases: ["http methods", "get post put delete", "verbos http"]
 date_created: 2026-09-30
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [http, api, rest, idempotencia]
 skill: tech-mentor-networking
 status: stub
@@ -50,6 +50,10 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], GET é "o
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o cadastro passa a `method="post"` com `server.post("/save-classes")`. POST "quer dizer [...] eu vou criar um conteúdo". A aula diz que só o formulário acessa "essa rota escondida", mas qualquer cliente HTTP (curl, fetch) envia POST.
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+GET busca ou lista, POST cria, PUT atualiza e DELETE apaga; o navegador "sempre" faz GET, daí o Insomnia. O mesmo recurso com métodos diferentes são rotas diferentes (`GET`/`POST /users`). Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Key sources
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — GET/PUT/DELETE idempotentes, POST não
 - [[wiki/sources/csrf-cross-site-request-forgery]] — POST de troca de e-mail explorado por CSRF
@@ -58,3 +62,4 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], o cadastro passa a
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: GET/POST/PUT/DELETE; "o navegador só faz GET" (só a barra de endereço)
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: GET e o "Cannot GET"
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: POST para criar; não é só formulário
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: GET/POST/PUT/DELETE e o Insomnia

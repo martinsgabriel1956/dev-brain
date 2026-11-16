@@ -4,7 +4,7 @@ title: "async/await (JavaScript)"
 aliases: ["async await", "await", "async function", "Promise.all", "função assíncrona"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 3
 tags: [javascript, assincronia, promise, async-await, promise-all, nodejs, lang-dynamic]
 skill: tech-mentor-data
 status: stub
@@ -24,6 +24,16 @@ status: stub
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], [[wiki/entities/mayk-brito|Mayk]] chega ao `await` pelo incômodo do `then` dentro de `then`: "a palavra do momento chama-se espera". O `createProffy` é `async` e faz `await db.run(...)` três vezes, usando o `lastID` de cada inserção na próxima. "Não consigo [usar o await] se essa função não tiver na frente dela uma palavra chamada async." Os horários viram um array de `db.run` sem `await` ("eu quero guardar ele no array para executar depois"), esperado com `await Promise.all(...)`, que "vai um por um". As duas explicações estão erradas: os `db.run` disparam no `map`, e quem enfileira as escritas é o SQLite. Também faltou uma transação, e uma falha nos horários deixa professor e aula gravados.
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+Handlers `async` e `await` em cada operação do Knex, "a famosa promise". Sem `try/catch`, a rejeição não chega ao middleware de erro do Express 4. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+`async function searchTeachers` com `await api.get('classes', { params })`; sem `try/catch`, o 400 por filtro ausente vira rejeição não tratada. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: await no createProffy, async obrigatório, Promise.all explicado como sequencial
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: await no Knex e Express 4
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: busca de professores sem catch

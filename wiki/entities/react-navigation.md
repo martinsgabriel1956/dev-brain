@@ -4,7 +4,7 @@ title: "React Navigation"
 aliases: ["@react-navigation/native", "react-navigation", "createStackNavigator", "NavigationContainer"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 3
 tags: [react-native, navegacao, mobile, biblioteca]
 skill: tech-mentor-mobile
 status: stub
@@ -29,6 +29,16 @@ Na NLW #1 com [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki/sources/
 
 Relacionado: [[wiki/concepts/mobile-navegacao]], [[wiki/concepts/client-side-routing]].
 
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+v5: `createStackNavigator` + `createBottomTabNavigator` encadeados, `screenOptions={{ headerShown: false }}`, `tabBarOptions` (removido no v6), `useNavigation`, `navigate`/`goBack`; traz o `react-native-gesture-handler` (RectButton, BorderlessButton). Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+`useFocusEffect` para recarregar a aba Favoritos (as abas não remontam); a documentação pede `useCallback`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: stack navigator do Ecoleta mobile
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: stack + tabs encadeados no Proffy
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: useFocusEffect

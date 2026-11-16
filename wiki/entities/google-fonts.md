@@ -4,7 +4,7 @@ title: "Google Fonts"
 aliases: ["fonts.google.com", "Google Web Fonts"]
 date_created: 2026-11-15
 date_updated: 2026-11-16
-source_count: 12
+source_count: 14
 tags: [ferramenta, produto, google, tipografia, fonte, fontes, gratuito, css, frontend]
 skill: ux-ui-mentor
 status: stub
@@ -65,6 +65,14 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], legends 
 
 Em [[wiki/sources/frontpush-if-else-sass]], as fontes do projeto Nubank: Sora para títulos e Source Sans Pro para texto (inferência: as duas estão no Google Fonts).
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+Archivo 400/700 e Poppins 400 pelo embed `<link>`. O `font-weight: 500` padrão do `body` não tem face carregada e cai na 400. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+No app, `@expo-google-fonts/archivo` e `/poppins` com `useFonts`; o negrito é outro `fontFamily` (Poppins_600SemiBold), e não `fontWeight`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/tipografia-introducao-variaveis-classificacoes-css]]: principal referência de fontes; filtros, pesos, `<link>` x `@import`
@@ -79,3 +87,5 @@ Em [[wiki/sources/frontpush-if-else-sass]], as fontes do projeto Nubank: Sora pa
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria de grid: Roboto
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: Archivo nos legends
 - [[wiki/sources/frontpush-if-else-sass]]: Sora e Source Sans Pro do projeto Nubank
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: Archivo e Poppins; peso 500 sem face
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: Archivo e Poppins no RN

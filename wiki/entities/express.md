@@ -4,7 +4,7 @@ title: "Express"
 aliases: ["Express.js", "express", "ExpressJS"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 7
+source_count: 8
 tags: [nodejs, backend, framework, http, javascript]
 skill: lang-dynamic
 status: stub
@@ -48,6 +48,10 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o Proffy 
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], `server.use(express.urlencoded({ extended: true }))` habilita o `req.body`, e `server.post("/save-classes", saveClasses)` recebe o cadastro. O fim é `res.redirect("/study" + queryString)`. Os handlers viram `async`; no `catch`, só `console.log`, e a requisição fica sem resposta.
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+"Micro framework": `express()`, `app.listen(3333)`, `express.json()`, `express.Router()` em `routes.ts`, `Request`/`Response` tipados no controller e `cors()`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]]: servidor, rotas GET, `express.static` e integração com Nunjucks (Express 4, 2020)
@@ -57,3 +61,4 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], `server.use(expres
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: Multer e celebrate como middlewares de rota
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: static, rotas, req.query, redirect
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: urlencoded, post, redirect filtrado
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: API do Proffy

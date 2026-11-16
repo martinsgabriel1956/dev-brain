@@ -4,7 +4,7 @@ title: "Herança no CSS"
 aliases: ["herança", "inheritance", "CSS inheritance", "inherit", "propriedade herdada"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 4
 tags: [css, heranca, cascata, especificidade, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -26,7 +26,17 @@ Duas exceções aparecem na mesma aula. O `button` não fica vermelho ("tem uma 
 
 Em [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]], duas falas tratam como herança o que não é: a imagem centralizada pelo `text-align` (ela é inline) e a hero image que "vai herdar a largura do pai" com `width: 100%` (porcentagem calculada contra o bloco que contém).
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+`body, input, button, textarea` recebem a fonte juntos, porque os campos "utilizam uma fonte própria, eles não seguem a fonte do próprio body". Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+No RN "nós não temos herança de estilos": o `color` do container não chega ao `Text`. A exceção é `Text` dentro de `Text`, usada para o "O que deseja fazer?" em negrito. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-2-dia-1-programacao-web-html-css-proffy]]: cor do body propagada aos filhos; filho com regra própria vence; botão que não herda cor nem fonte
 - [[wiki/sources/nlw-2-dia-2-landing-page-grid-pagina-de-estudo-proffy]]: NLW #2, dia 2: text-align e width 100% não são herança
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: fonte em input/button/textarea
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: Text aninhado como única herança

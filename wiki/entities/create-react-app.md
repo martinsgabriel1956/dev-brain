@@ -4,7 +4,7 @@ title: "Create React App"
 aliases: ["CRA", "create-react-app", "react-scripts"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [react, build, scaffolding, ferramenta, descontinuado]
 skill: tech-mentor-frontend
 status: stub
@@ -20,7 +20,12 @@ Na NLW #1 com [[wiki/entities/diego-fernandes|Diego Fernandes]] ([[wiki/sources/
 
 Relacionado: [[wiki/entities/react]], [[wiki/entities/typescript]].
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+`yarn create react-app web --template typescript`; limpeza de README, CSS, teste, logo, `serviceWorker` (PWA) e `setupTests`; o `react-scripts` com Webpack e Babel. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: criação do projeto com template TypeScript
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: limpeza e estrutura
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: template TypeScript e react-scripts

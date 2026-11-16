@@ -4,7 +4,7 @@ title: "CORS"
 aliases: ["cross-origin resource sharing", "erro de cors"]
 date_created: 2026-09-30
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [cors, navegador, seguranca, http, origem]
 skill: tech-mentor-networking
 status: stub
@@ -22,6 +22,11 @@ Erro de CORS **não é bug aleatório**: é o **navegador** aplicando uma polít
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]], o CORS "define [...] quais endereços externos vão ter acesso" à API, com `app.use(cors())` aberto em desenvolvimento e o domínio do front-end em produção. A nuance: é o navegador que aplica a regra; Insomnia e React Native não são afetados, e CORS não substitui autenticação.
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+`app.use(cors())` para o front em `localhost:3000` chamar a API em `:3333`. A aula atribui o bloqueio ao servidor ("por padrão, ele permite apenas [...] o mesmo endereço"), mas quem aplica é o navegador; `cors()` sem opções libera `*`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Key sources
 - [[wiki/sources/requisicao-http-anatomia-metodos-headers-body-status-code-middleware]] — CORS como política do navegador e correção no servidor
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: cors() no Express; não é controle de acesso
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: cors() para o front em :3000

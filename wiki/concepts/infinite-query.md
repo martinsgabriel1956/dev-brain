@@ -3,8 +3,8 @@ type: concept
 title: "Infinite Query"
 aliases: ["useInfiniteQuery", "infinite scroll", "paginação cursor"]
 date_created: 2026-04-22
-date_updated: 2026-04-22
-source_count: 1
+date_updated: 2026-11-16
+source_count: 2
 tags: [tanstack-query, paginação, infinite-scroll, ux]
 skill: tech-mentor-frontend
 status: stable
@@ -64,6 +64,11 @@ return (
 | Scroll infinito | Ideal | Problemático |
 | Links diretos | Difícil | Fácil |
 
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+A versão 2.0 do Proffy pede paginação infinita na listagem ("esses são todos os resultados" no fim). Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/tanstack-query-tudo-que-voce-precisa-saber]]
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: desafio de paginação infinita

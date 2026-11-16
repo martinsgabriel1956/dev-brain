@@ -4,7 +4,7 @@ title: "Componente controlado (input controlado)"
 aliases: ["controlled component", "input controlado", "formulário controlado", "uncontrolled"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 4
 tags: [react, formularios, estado]
 skill: tech-mentor-frontend
 status: stub
@@ -25,7 +25,17 @@ Relacionado: [[wiki/concepts/formulario-html]], [[wiki/concepts/useState]], [[wi
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]], `TextInput` com `value` e `onChangeText={setUf}`, que "recebe diretamente já o texto digitado", mais `maxLength`, `autoCapitalize` e `autoCorrect`.
 
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+"A forma mais raiz possível": um estado por campo com `value` e `onChange={e => setX(e.target.value)}`, inclusive `select` e `textarea`; os horários usam `setScheduleItemValue(index, field, value)`. O React pede `value` ou `defaultValue` no select, "but not both". Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+No RN, `value` + `onChangeText={text => setX(text)}`, que "vai receber diretamente o texto digitado", sem o `e.target.value` da web. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: selects de UF/cidade e formData genérico
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: TextInput controlado no RN
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: cadastro de aula todo controlado
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: onChangeText no RN

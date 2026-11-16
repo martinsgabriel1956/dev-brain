@@ -4,7 +4,7 @@ title: "Promise (JavaScript)"
 aliases: ["promise", "promessa", "then", "catch", "Promise"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [javascript, promise, assincronia, fetch-api, lang-dynamic]
 skill: tech-mentor-frontend
 status: stub
@@ -29,8 +29,13 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], `Database.open(...)` devolve uma promessa: "eu vou tentar. Se eu conseguir, então eu vou fazer o restante". O `.then(execute)` vira `await`, e os horários são esperados com `Promise.all`, que a aula descreve como "um por um". Ver [[wiki/concepts/async-await]].
 
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+`api.get(...).then(...)` no `useEffect`, `api.post(...).then(alert).catch(alert)` no cadastro e `await api.get` na busca, sem `catch`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-2-media-queries-formulario-javascript-ecoleta]]: promessa pendente, then encadeado, catch citado
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: then no useEffect, await no submit sem catch
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: promessa do banco, then e Promise.all
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: then/catch × await no front

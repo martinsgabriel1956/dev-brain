@@ -4,7 +4,7 @@ title: "Chave estrangeira"
 aliases: ["foreign key", "FK", "integridade referencial", "references"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [banco-de-dados, sql, integridade, modelagem]
 skill: tech-mentor-data
 status: stub
@@ -24,7 +24,12 @@ Relacionado: [[wiki/concepts/relacionamento-muitos-para-muitos]], [[wiki/concept
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], `classes.proffy_id` e `class_schedule.class_id` ligam as tabelas (cada aula "está sempre referenciando" um professor), mas são só `INTEGER`, sem `REFERENCES`. "A classe só cadastra no banco de dados se eu tiver um professor" não é garantido; no SQLite, nem com `REFERENCES` sem `PRAGMA foreign_keys = ON`.
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+`classes.user_id`, `class_schedule.class_id` e `connections.user_id` com `references().inTable()` e `onUpdate`/`onDelete('CASCADE')` ("99,9% das vezes eu uso cascade"). No SQLite, sem `PRAGMA foreign_keys = ON`, nada disso é verificado. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: references/inTable na pivô; teste com item 9
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: proffy_id e class_id sem REFERENCES
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: CASCADE sem PRAGMA no SQLite

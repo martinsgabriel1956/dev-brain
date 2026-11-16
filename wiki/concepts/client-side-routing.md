@@ -4,7 +4,7 @@ title: "Client-Side Routing (Roteamento no Cliente)"
 aliases: ["roteamento no cliente", "SPA routing", "History API", "pushState", "popstate"]
 date_created: 2026-08-03
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [frontend, spa, routing, history-api, browser]
 skill: tech-mentor-frontend
 status: stable
@@ -36,7 +36,12 @@ Se o usuário digita `seusite.com/produtos` diretamente na barra do navegador (e
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]], o React Router v5 (`BrowserRouter`, `Route exact`, `Link`, `useHistory`) faz o roteamento no cliente do Ecoleta. O `exact` existe porque o v5 casava por prefixo.
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+React Router v5 com `BrowserRouter`, `Route exact` e `Link to`. Sem `exact`, a landing aparece em `/study`; Diego chama de "verificação de conteúdo", mas o v5 testa prefixo por segmento. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/10-conceitos-internos-frameworks-frontend]]
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: React Router v5 no Ecoleta
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: Route exact e Link no Proffy

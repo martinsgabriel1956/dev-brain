@@ -4,7 +4,7 @@ title: "Database Migration"
 aliases: ["migration", "migrations", "migrate up", "migrate down", "migração de banco de dados"]
 date_created: 2026-07-28
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [banco-de-dados, migrations, versionamento, orm, postgresql, git]
 skill: tech-mentor-backend
 status: draft
@@ -58,6 +58,10 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecole
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], `subject` passa de `TEXT` a `INTEGER` editando o `CREATE TABLE IF NOT EXISTS`, o que não muda um arquivo que já existe. Funcionou porque o banco tinha sido apagado. É o caso típico que pede migration.
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+Migrations são "a mesma coisa que o Git faz [...] no código dentro do banco de dados": o Knex compara a pasta com `knex_migrations`. Arquivos TS numerados (`00_create_users`...) com `up`/`down` e script `knex:migrate` com `--knexfile knexfile.ts`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/database-migrations-sql-cru-vs-orm-drizzle]]
@@ -66,3 +70,4 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], `subject` passa de
 - [[wiki/sources/migrations-flyway-spring-boot-versionamento-de-banco]] — Flyway + Spring Boot: scripts `V<n>__*.sql`, histórico em [[wiki/concepts/flyway-schema-history]], [[wiki/concepts/imutabilidade-de-migration]] (checksum) e Hibernate só validando; tese de que alterar o banco à mão gera [[wiki/concepts/drift-de-schema-entre-ambientes]]
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: migrations como versão do banco; up/down no Knex
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: IF NOT EXISTS não muda o esquema
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: migrations do Proffy com Knex

@@ -4,7 +4,7 @@ title: "CSS Grid"
 aliases: ["grid", "display: grid", "grid layout", "grid-template-columns", "grid-template-areas", "grid-area"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 8
+source_count: 10
 tags: [css, layout, grid, frontend]
 skill: tech-mentor-frontend
 status: stub
@@ -44,9 +44,17 @@ Em [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]], no deskt
 
 Em [[wiki/sources/frontpush-for-while-each-sass]], o "sistema de grids" do curso é feito de classes `.grid-N` com largura em px geradas por `@for`. `[skill: tech-mentor-frontend]` O equivalente nativo é `repeat(12, 1fr)` com `gap` e `grid-column: span N`, sem conta de gutter e fluido.
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+Landing no desktop com `grid-template-rows: 350px 1fr`, `grid-template-columns: 2fr 1fr 1fr` e áreas `"logo hero hero" "buttons buttons total"`; `1fr` é "ocupe o espaço que sobrar". Para o mesmo layout, Mayk usou `2fr 1fr 2fr`. O form de busca usa `repeat(3, 1fr)` com `column-gap`. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
 ## Grid system sem Grid Layout (FrontPUSH, Sass aula 10)
 
 Em [[wiki/sources/frontpush-grid-system-sass-parte-1]], o grid system é feito "nem flexbox, nem grid layout", com largura em %. `[skill: tech-mentor-frontend]` É o modelo pré-Grid (floats do Bootstrap 3); `repeat(12, 1fr)` + `gap` + `grid-column: span N` faz o mesmo com gutter exato.
+
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+`.schedule-item` com `grid-template-columns: 2fr 1fr 1fr` (dia ocupa metade) e `column-gap`; filtros passam a quatro colunas com o botão Buscar. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
 
 ## Key sources
 
@@ -57,4 +65,6 @@ Em [[wiki/sources/frontpush-grid-system-sass-parte-1]], o grid system é feito "
 - [[wiki/sources/frontpush-mentoria-pratica-com-css-grid]]: mentoria: `grid-template-areas` desenhado como "mesclar e centralizar" no Excel, `grid-area` por item, `grid-gap`; nova matriz numa media query
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: schedule-item em 2fr 1fr 1fr
 - [[wiki/sources/frontpush-for-while-each-sass]]: sistema de classes × `grid-column: span`
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: 2fr 1fr 1fr com template-areas; repeat(3, 1fr)
 - [[wiki/sources/frontpush-grid-system-sass-parte-1]]: grid system de % sem Grid Layout
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: schedule-item 2fr 1fr 1fr

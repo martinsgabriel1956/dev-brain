@@ -4,7 +4,7 @@ title: "Requisição HTTP"
 aliases: ["http request", "anatomia da requisição", "http request response"]
 date_created: 2026-09-30
 date_updated: 2026-11-16
-source_count: 5
+source_count: 6
 tags: [http, api, protocolo, cliente-servidor]
 skill: tech-mentor-networking
 status: stub
@@ -48,6 +48,11 @@ Em [[wiki/sources/nlw-1-dia-4-back-end-node-express-nunjucks-ecoleta]], [[wiki/e
 ## Key sources (adição 2026-10-09)
 - [[wiki/sources/url-vs-uri-diferenca-urn-identificacao-localizacao]] — a URL da requisição é uma URI que localiza o recurso; query param seleciona o recurso (ver [[wiki/concepts/url]])
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+"Toda mensagem [...] ela tem cabeçalho e corpo": cabeçalho como metadados, corpo como conteúdo. A aula põe no cabeçalho o "tipo da mensagem" (criar, listar), que na verdade é o método da linha de requisição. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Key sources (adição 2026-11-10)
 
 - [[wiki/sources/polling-sse-websocket-comunicacao-em-tempo-real]] — HTTP como pergunta e resposta: sem gatilho do cliente o servidor não fala, origem do problema de tempo real
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: cabeçalho e corpo; o método fora do header

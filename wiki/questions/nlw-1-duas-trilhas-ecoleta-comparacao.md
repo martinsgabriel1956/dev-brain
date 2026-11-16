@@ -69,6 +69,7 @@ Esta página é uma síntese das dez fontes da wiki. Nada aqui vem de fora, salv
 - Qual trilha um iniciante deveria fazer primeiro? As fontes não dizem. *Inferência:* Mayk → Diego segue a ordem natural, a plataforma antes das abstrações. A trilha de Diego assume JavaScript e noções de HTTP que a de Mayk constrói.
 - As datas de cada dia (1 a 5 de junho de 2020) seguem `[external, não verificado]` nas dez fontes.
 - O nome oficial de cada trilha não aparece nas transcrições.
+- A NLW #2 repetiu o formato com o Proffy: [[wiki/questions/nlw-2-duas-trilhas-proffy-comparacao]]. Na comparação, Diego acerta a transação e Mayk acerta o redirect depois do POST, mas a SQL de Mayk fica pior (toda interpolada).
 
 ## Key sources
 

@@ -4,7 +4,7 @@ title: "Pseudo-elemento CSS"
 aliases: ["pseudo-elemento", "pseudo-element", "pseudo-elements", "::before", "::after", "::first-letter", "::first-line", "::placeholder"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 8
+source_count: 9
 tags: [css, frontend, seletores-css, pseudo-elemento]
 skill: tech-mentor-frontend
 status: stub
@@ -46,6 +46,10 @@ Em [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]], "fac
 
 Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], [[wiki/entities/nasser|Násser]] diz usar `::before`/`::after` "demais" em links para criar efeitos, aninhados com `&` (como no projeto Nubank). O `content: ""` é o que faz o pseudo-elemento existir.
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+`::after` gera a linha de foco (`content: ''`, 2 px, `position: absolute`, `calc(100% - 3.2rem)`); o `content` é "obrigatório sempre que a gente coloca o after e o before". Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/seletores-e-pseudo-elements-css]] — first-letter e first-line; o termo usado para tudo
@@ -56,3 +60,4 @@ Em [[wiki/sources/frontpush-nesting-aninhamento-sass]], [[wiki/entities/nasser|N
 - [[wiki/sources/nlw-2-dia-3-formulario-dar-aulas-javascript-proffy]]: NLW #2, dia 3: linha de foco estendida ao textarea
 - [[wiki/sources/frontpush-introducao-sass-pre-processador-sass-vs-scss]]: introdução ao Sass: pseudo-elementos como vantagem
 - [[wiki/sources/frontpush-nesting-aninhamento-sass]]: Sass aula 05: `&::before` com `content` vazio
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: ::after como linha de foco

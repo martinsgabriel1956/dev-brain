@@ -4,7 +4,7 @@ title: "Chave primária"
 aliases: ["primary key", "PK", "chave primária", "AUTOINCREMENT", "INTEGER PRIMARY KEY", "id"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 3
+source_count: 4
 tags: [banco-de-dados, sql, modelagem, sqlite]
 skill: tech-mentor-data
 status: stub
@@ -36,8 +36,13 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecole
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], as três tabelas do Proffy têm `id INTEGER PRIMARY KEY AUTOINCREMENT`: "se eu tenho o prof 1 de id 1, eu não posso ter outro prof com id 1". O `lastID` de cada `INSERT` alimenta a chave estrangeira da tabela seguinte.
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+`increments('id').primary()` nas quatro tabelas; o `insert` devolve o array de ids, e o código usa a posição 0. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-dia-5-banco-de-dados-sqlite-cadastro-pesquisa-ecoleta]]: `id INTEGER PRIMARY KEY AUTOINCREMENT` na tabela places; ids não reaproveitados
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: increments().primary() no Knex; pivô sem PK composta
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: id em três tabelas e lastID
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: increments e ids do insert

@@ -4,7 +4,7 @@ title: "Insomnia"
 aliases: ["insomnia.rest", "Insomnia REST client"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 2
+source_count: 5
 tags: [ferramenta, http, api, testes, cliente-http]
 skill: lang-dynamic
 status: stub
@@ -22,7 +22,22 @@ Relacionado: [[wiki/concepts/metodos-http]], [[wiki/concepts/api-rest]], [[wiki/
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], o body muda de JSON para *Multipart* com um campo do tipo *File* para testar o upload.
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+Workspace "NLW02", pastas por recurso (classes, connections), body JSON, aba Query para os filtros e "No Body" nas listagens. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+Usado para conferir que o back-end está de pé e que os professores cadastrados pelo front (Vini Fraga, Thiago Marinho) aparecem na busca. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+Usado para conferir que o servidor responde antes de ligar o app. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: testar GET/POST, query e body JSON
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: teste de upload multipart
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: workspace NLW02
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: conferência dos cadastros do front
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: conferência do servidor

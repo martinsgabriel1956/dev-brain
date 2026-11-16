@@ -4,7 +4,7 @@ title: "Node.js"
 aliases: ["Node", "node"]
 date_created: 2026-11-12
 date_updated: 2026-11-16
-source_count: 10
+source_count: 11
 tags: [nodejs, javascript, runtime, v8, backend, tooling]
 skill: tech-mentor-frontend
 status: stub
@@ -41,6 +41,10 @@ Em [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]], o Node "n
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], `module.exports` exporta a promessa do banco e objetos de funções (`utils/format.js`, `pages.js`), e `require` os recupera com desestruturação. `__dirname` monta o caminho do `database.sqlite`, o que evita o problema de caminho relativo da NLW #1.
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+Defendido pelo mesmo JavaScript do front e do mobile e pelo non-blocking I/O; streams e worker threads como "as coisas mais legais"; Deno como "o irmão do Node". Node 12.18 LTS na gravação. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/configurando-ambiente-vue-node-npm-vue-cli]]
@@ -53,3 +57,4 @@ Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], `module.exports` e
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: crypto e path no upload
 - [[wiki/sources/nlw-2-dia-4-back-end-node-express-nunjucks-proffy]]: NLW #2, dia 4: LTS 12, node -v, console no terminal
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: module.exports, require, __dirname
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: por que Node; streams e worker threads

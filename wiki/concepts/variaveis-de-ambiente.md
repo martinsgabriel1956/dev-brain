@@ -4,7 +4,7 @@ title: "Variáveis de Ambiente (.env, export)"
 aliases: ["variáveis de ambiente", "env", ".env", "export", "environment variables", "zshrc", "bashrc"]
 date_created: 2026-08-11
 date_updated: 2026-11-16
-source_count: 6
+source_count: 7
 tags: [linux, shell, variaveis-de-ambiente, env, configuracao, tech-mentor-infra]
 skill: tech-mentor-infra
 status: stub
@@ -39,6 +39,10 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]
 
 Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]], a terceira troca manual de URL base na semana (agora .12) reforça o caso para configuração por ambiente.
 
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+O IP da API vai fixo no `services/api.ts` e muda a cada rede; variável de ambiente ou `expo-constants` (`hostUri`) evitariam editar o código. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key Sources
 
 - [[wiki/sources/comandos-basicos-linux-todo-dev-precisa-conhecer-galego]]
@@ -47,3 +51,4 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-eco
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: baseURL do front-end fixa no código
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: IP fixo no app e na API
 - [[wiki/sources/nlw-1-diego-fernandes-dia-5-upload-validacao-github-deploy-ecoleta]]: mais uma URL fixa trocada à mão
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: IP fixo no app

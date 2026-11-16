@@ -4,7 +4,7 @@ title: "Componentização"
 aliases: ["componentes", "component-based UI", "componente React"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 4
+source_count: 8
 tags: [frontend, react, componentes, reuso, organizacao]
 skill: tech-mentor-frontend
 status: stub
@@ -26,9 +26,29 @@ Em [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]
 
 Em [[wiki/sources/frontpush-import-e-partials-sass]], separar cores, tipografia, layout e botões em partials "utiliza mais ou menos o conceito de componentes" no CSS. Ver [[wiki/concepts/import-e-partials-sass]].
 
+## Na NLW #2, dia 1 (Diego Fernandes)
+
+"Componentes [...] são funções que retornam um HTML", com nome em maiúscula. O `PageHeader` é extraído para `components/` e reaproveitado entre listagem e cadastro; o `TeacherItem` vai para lá porque "bem provavelmente vai ser utilizado em mais lugares". Ver [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]].
+
+## Na NLW #2, dia 3 (Diego Fernandes)
+
+`Input`, `Textarea` e `Select` extraídos porque o campo do cadastro "é exatamente igual" ao da busca; o CSS vai junto, menos a cor da label, que só muda na listagem. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
+## Na NLW #2, dia 4 (Diego Fernandes)
+
+`PageHeader` mobile reaproveitado entre Proffys e Favoritos, com título por prop e `children` previsto para os filtros, "muito semelhante com o que a gente tinha lá na web". Ver [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]].
+
+## Na NLW #2, dia 5 (Diego Fernandes)
+
+`TeacherItem` mobile compartilhado entre Proffys e Favoritos, com a `interface Teacher` copiada da web. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-1-ecoleta-api-rest-typescript-react-native]]: botão reutilizável, diagrama de comentários
 - [[wiki/sources/nlw-1-diego-fernandes-dia-3-front-end-react-typescript-leaflet-ecoleta]]: Header reutilizável; uma pasta por página
 - [[wiki/sources/nlw-1-diego-fernandes-dia-4-mobile-react-native-expo-ecoleta]]: telas como componentes no RN
 - [[wiki/sources/frontpush-import-e-partials-sass]]: partials do Sass por categoria
+- [[wiki/sources/nlw-2-diego-fernandes-dia-1-react-typescript-mobile-first-proffy]]: NLW #2, Diego, dia 1: PageHeader e TeacherItem como componentes compartilhados
+- [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]]: NLW #2, Diego, dia 3: Input, Textarea e Select compartilhados
+- [[wiki/sources/nlw-2-diego-fernandes-dia-4-mobile-react-native-expo-navegacao-proffy]]: NLW #2, Diego, dia 4: PageHeader no app
+- [[wiki/sources/nlw-2-diego-fernandes-dia-5-listagem-filtros-api-favoritos-mobile-proffy]]: NLW #2, Diego, dia 5: TeacherItem no app

@@ -4,7 +4,7 @@ title: "Query builder"
 aliases: ["construtor de queries", "query-builder SQL"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [sql, banco-de-dados, nodejs, abstracao]
 skill: lang-dynamic
 status: stub
@@ -24,6 +24,11 @@ Na aula de [[wiki/entities/diego-fernandes]] ([[wiki/sources/nlw-1-diego-fernand
 
 `[skill: lang-dynamic]` Em TypeScript, o Kysely tipa o resultado a partir do schema, coisa que o Knex não faz.
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+Knex como "escrever SQL usando JavaScript" (`knex('users').select('*')`). A listagem mistura `where`/`join` do builder com `whereExists` + `whereRaw`; no `whereRaw`, `?` é valor e `??` é identificador, e a aula usou `??` para valores. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/nlw-1-diego-fernandes-dia-2-back-end-express-knex-sqlite-ecoleta]]: Knex x SQL; "um formato unificado para todos os bancos"
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: Knex no Proffy; ? × ??

@@ -4,7 +4,7 @@ title: "Error Handling Estruturado"
 aliases: ["tratamento de erros", "error handler global", "classes de erro"]
 date_created: 2026-04-25
 date_updated: 2026-11-16
-source_count: 2
+source_count: 3
 tags: [error-handling, backend, http, portfolio, clean-code]
 skill: tech-mentor-leadership
 status: stable
@@ -85,7 +85,12 @@ Retornar 500 para tudo (ou não tratar erros) é um sinal de descuido. HTTP code
 
 Em [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]], `try/catch` envolve os `await` ("toda vez que eu entrar num await da vida [...] try catch faz muito sentido"), mas o `catch` só faz `console.log(error)`. O usuário fica com a página carregando sem resposta; faltou um `res.status(500)`.
 
+## Na NLW #2, dia 2 (Diego Fernandes)
+
+`try/catch` com rollback e 400 genérico no `POST /classes`; o `index` e as rotas de conexões ficam sem `catch`, o que no Express 4 pendura a requisição quando a promise rejeita. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Key sources
 
 - [[wiki/sources/diferenciais-portfolio-backend-junior]]
 - [[wiki/sources/nlw-2-dia-5-banco-de-dados-sqlite-proffy]]: NLW #2, dia 5: catch só loga, requisição sem resposta
+- [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]]: NLW #2, Diego, dia 2: try/catch só no create
