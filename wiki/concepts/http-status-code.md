@@ -45,6 +45,7 @@ Em [[wiki/sources/jstack-http-e-apis-rest]], as famílias pelo primeiro dígito 
 ## Na NLW #2, dia 2 (Diego Fernandes)
 
 201 no `POST /classes` e no `POST /connections`; 400 para filtros ausentes (certo) e para "erro inesperado" ao gravar, que seria 500. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## No JStack, aula 04
 
 Em [[wiki/sources/jstack-criando-o-servidor-http]], `response.writeHead(200, {...})`: o status é o primeiro argumento, e 200 "porque a gente não tem regra de negócio nenhuma". No Node também dá para usar `response.statusCode = 201`.

@@ -57,6 +57,7 @@ Em [[wiki/sources/jstack-http-e-apis-rest]]: GET consulta, POST cria, PUT altera
 ## Na NLW #2, dia 2 (Diego Fernandes)
 
 GET busca ou lista, POST cria, PUT atualiza e DELETE apaga; o navegador "sempre" faz GET, daí o Insomnia. O mesmo recurso com métodos diferentes são rotas diferentes (`GET`/`POST /users`). Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## No JStack, aula 05
 
 Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], `request.method` vem em maiúsculas (`'GET'`), e pela barra do navegador é sempre GET. A rota compara método e caminho; método errado numa rota existente deveria dar 405, mas a aula usa 404 "para facilitar".

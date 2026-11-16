@@ -4,7 +4,7 @@ title: "Métodos de array em JavaScript (forEach, map, filter, reduce...)"
 aliases: ["forEach", "map", "filter", "reduce", "find", "some", "every", "métodos de array", "array methods", "pop", "push"]
 date_created: 2026-11-16
 date_updated: 2026-11-16
-source_count: 1
+source_count: 2
 tags: [javascript, array, foreach, map, filter, reduce, callback, imutabilidade]
 skill: lang-dynamic
 status: stub
@@ -44,6 +44,11 @@ Relacionado: [[wiki/concepts/array]], [[wiki/concepts/funcoes-javascript]].
 
 Em [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]], [[wiki/entities/nasser|Násser]] mostra o `forEach` (item, índice, array, "o que importa é a ordem") e o `map`, que "devolve um array modificado, enquanto o forEach não devolve nada", juntando `marcas` e `carros` pela posição. Na [[wiki/sources/frontpush-arrays-e-loops-for-while-javascript|aula 06]], `pop`, `push` e `length`.
 
+## No JStack, aula 06
+
+Em [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]], `routes.find(routeObject => ...)` devolve o primeiro objeto de rota que casa método e caminho, ou `undefined`; o `if (route)` decide entre chamar o handler e responder 404.
+
 ## Key sources
 
 - [[wiki/sources/frontpush-arrays-e-iteracoes-foreach-map-javascript]]: FrontPUSH, JavaScript aula 07: forEach, map e a diferença entre os dois
+- [[wiki/sources/jstack-controller-de-usuarios-e-sistema-de-rotas]]: find na tabela de rotas

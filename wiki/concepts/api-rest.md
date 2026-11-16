@@ -39,6 +39,7 @@ Em [[wiki/sources/jstack-http-e-apis-rest]], [[wiki/entities/mateus-silva|Mateus
 ## Na NLW #2, dia 2 (Diego Fernandes)
 
 "Full MVC" (HTML pronto do servidor) contra API REST (só dados em JSON), porque "o único dispositivo na Terra capaz de entender HTML é o navegador" e o mesmo back-end serve web e mobile. A comparação é de quem renderiza; REST em si é o estilo de Fielding, não o formato JSON. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-2-api-rest-node-express-knex-proffy]].
+
 ## Primeira rota no JStack (aula 05)
 
 Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], a regra vira código: GET em `/users`, sem ID, é listagem, e a resposta é JSON (`application/json`). Ver [[wiki/concepts/roteamento-http]].

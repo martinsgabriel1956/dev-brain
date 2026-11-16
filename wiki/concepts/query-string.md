@@ -51,6 +51,7 @@ Em [[wiki/sources/jstack-http-e-apis-rest]], query params são "parâmetros adic
 ## Na NLW #2, dia 3 (Diego Fernandes)
 
 No Axios, os filtros do GET vão em `{ params: { subject, week_day, time } }`, porque o segundo argumento direto só vale para POST/PUT. Ver [[wiki/sources/nlw-2-diego-fernandes-dia-3-formulario-estado-axios-proffy]].
+
 ## No JStack, aula 05
 
 Em [[wiki/sources/jstack-criando-a-primeira-rota-da-api]], a rota compara `request.url === '/users'`. No Node, `request.url` traz a query string junto, então `/users?page=2` não casa e cai no 404. Separar com `new URL(request.url, 'http://localhost')`: `pathname` para a rota, `searchParams` para os parâmetros.

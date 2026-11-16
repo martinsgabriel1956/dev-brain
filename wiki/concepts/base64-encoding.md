@@ -25,6 +25,7 @@ Variante desenhada especificamente para ser segura dentro de URLs: troca `+` por
 ## Uso documentado nesta wiki
 
 [[wiki/sources/hospedando-site-completo-em-url-fragment-brotli-webassembly]] usa Base64URL para transportar o binário comprimido em [[wiki/concepts/brotli]] dentro do [[wiki/concepts/fragment-identifier-url]] de uma URL. Colocar bytes crus (não-Base64) diretamente na URL faria o navegador aplicar percent-encoding em cada byte especial, inflando cada byte problemático para até 3 caracteres — Base64URL evita esse inchaço ao já restringir a saída a caracteres seguros de URL desde o início.
+
 ## Base64 para arquivos em JSON (JStack)
 
 Em [[wiki/sources/jstack-http-e-apis-rest]], converter um arquivo para Base64 e mandá-lo como string no JSON é uma "gambiarrinha" que "acaba pesando mais a nossa requisição". O custo é o aumento de ~33% acima, mais a string inteira em memória dos dois lados; para arquivos, [[wiki/concepts/multipart-form-data]] ou upload direto para storage.
